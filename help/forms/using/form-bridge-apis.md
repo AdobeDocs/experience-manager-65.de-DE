@@ -19,7 +19,7 @@ ht-degree: 42%
 
 # Form Bridge APIs für HTML5-Formulare {#form-bridge-apis-for-html-forms}
 
-Sie können die Form Bridge-APIs verwenden, um einen Kanal für die Kommunikation zwischen XFA-basierten HTML5-Formularen und Ihren Anwendungen zu öffnen. The Form Bridge APIs provides a **connect** API to create the connection.
+Sie können die Form Bridge-APIs verwenden, um einen Kanal für die Kommunikation zwischen XFA-basierten HTML5-Formularen und Ihren Anwendungen zu öffnen. Die Form Bridge-APIs stellen eine **connect**-API zum Erstellen der Verbindung bereit.
 
 Die **Verbindungs**-API akzeptiert einen Handler als ein Argument. Nachdem eine erfolgreiche Verbindung zwischen XFA-basierten HTML5-Formularen und Form Bridge erstellt wurde, wird der Handle aufgerufen.
 
@@ -53,7 +53,7 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 **isConnected()** Überprüft, ob der Formularstatus initialisiert wurde
 
 * **Eingabe:** keine
-* **Ausgabe**: **True** , wenn der XFA-Formularstatus initialisiert wurde
+* **Ausgabe**:  **** Vertrauenswürdigkeit, wenn der XFA-Formularstatus initialisiert wurde
 
 * **Fehler:** keine
 
@@ -62,7 +62,7 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 * **Eingabe**:
 
    * **handler:** Funktion, die ausgeführt wird, wenn Form Bridge verbunden ist.
-   * **context**: Das Objekt, auf das der Kontext (dies) der *handler* -Funktion festgelegt wird.
+   * **context**: Das Objekt, auf das der Kontext (dies) der  ** handlerFunktion festgelegt wird.
 
 * **Ausgabe:** keine
 * **Fehler:** keine
@@ -92,7 +92,7 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 
          *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
 
-      * **pagingConfig:** Ermöglicht dem Benutzer, das Standardverhalten des Renderns nur der ersten Seite zu überschreiben. Die Konfiguration wird überschrieben wie folgt:
+      * **pagingConfig:** Ermöglicht dem Benutzer, das Standardverhalten beim Rendern nur der ersten Seite zu überschreiben. Die Konfiguration wird überschrieben wie folgt:
 
          *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true | false>, shrinkPageDisabled: &lt;true | false> }).*
 
@@ -155,7 +155,7 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 **getFormState()** Gibt die JSON zurück, die den Formularstatus darstellt
 
 * **Eingabe:** keine
-* **Ausgabe:** Objekt mit JSON, das den aktuellen Formularstatus in der *data* -Eigenschaft darstellt.
+* **Ausgabe:** Objekt, das JSON enthält, welches den aktuellen Formularstatus in der  ** dataproperty darstellt.
 
 * **Fehler:** keine
 
@@ -167,7 +167,7 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 
       * **Error:** Fehlerhandler-Funktion
       * **success:** Erfolgshandler-Funktion
-      * **context**: Das Objekt, auf das der Kontext (dies) der *success* -Funktion festgelegt wird
+      * **context**: Das Objekt, auf das der Kontext (dies) der  ** successFunktion festgelegt wird
       * **formState:** JSON-Status des Formulars. Das Formular wird im JSON-Status wiederhergestellt.
 
 * **Ausgabe:** keine
@@ -175,7 +175,7 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 
 **setFocus (som)** Legt den Fokus auf das im SOM-Ausdruck angegebene Feld fest
 
-* **Eingabe:** Einige Ausdrücke des Felds, auf das der Fokus gelegt werden soll
+* **Eingabe:** SOM-Ausdruck des Felds, auf das der Fokus gelegt werden soll
 * **Ausgabe:** keine
 * **Fehler:** Gibt im Fall eines falschen SOM-Ausdrucks einen Ausnahmefehler aus.
 
@@ -184,15 +184,15 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 * **Eingabe:**
 
    * **som:** Array, das SOM-Ausdrücke des Felds enthält. Der som-Ausdruck, mit dem die Feldwerte festgelegt werden.
-   * **Wert:** Array, das Werte enthält, die den SOM-Ausdrücken entsprechen, die in einem **** somarray bereitgestellt werden. Wenn der Datentyp des Werts nicht mit fieldType identisch ist, wird der Wert nicht geändert.
+   * **value:** Array, das Werte enthält, die den SOM-Ausdrücken entsprechen, die in einem  **** somarray bereitgestellt werden. Wenn der Datentyp des Werts nicht mit fieldType identisch ist, wird der Wert nicht geändert.
 
 * **Ausgabe:** keine
-* **Fehler:** Gibt bei einem falschen SOM-Ausdruck eine Ausnahme aus
+* **Fehler:** Gibt bei einem fehlerhaften SOM-Ausdruck eine Ausnahme aus
 
 **getFieldValue (som)** Gibt den Feldwert für die angegebenen SOM-Ausdruck zurück
 
-* **Eingabe:** Array, das SOM-Ausdrücke der Felder enthält, deren Wert abgerufen werden muss
-* **Ausgabe:** Objekt, das das Ergebnis als Array in der **data** -Eigenschaft enthält.
+* **Eingabe:** Array, das SOM-Ausdruck der Felder enthält, deren Wert abgerufen werden muss
+* **Ausgabe:** Objekt, das das Ergebnis als Array in der  **** dataproperty enthält.
 
 * **Fehler:** keine
 
@@ -209,14 +209,14 @@ if(a.errors) {
 }
 ```
 
-**getFieldProperties(som, property)** Rufen Sie die Liste der Werte für die angegebene Eigenschaft der in SOM-Ausdrücken angegebenen Felder ab
+**getFieldProperties(som, property)** Abrufen der Liste der Werte für die angegebene Eigenschaft der in SOM-Ausdrücken angegebenen Felder
 
 * **Eingabe:**
 
    * **som:** Array, das SOM-Ausdrücke für die Felder enthält.
    * **property:** Name der Eigenschaft, deren Wert erforderlich ist.
 
-* **Ausgabe:** Objekt, das das Ergebnis als Array in der *data* -Eigenschaft enthält
+* **Ausgabe:** Objekt, das das Ergebnis als Array in der  ** dataProperty enthält
 
 * **Fehler:** keine
 
@@ -224,9 +224,9 @@ if(a.errors) {
 
 * **Eingabe:**
 
-   * **som:** Array, das SOM-Ausdrücke der Felder enthält, deren Wert festgelegt werden muss
+   * **som:** Array mit SOM-Ausdrücken der Felder, deren Wert festgelegt werden muss
    * **property:** Eigenschaft, deren Wert festgelegt werden soll.
-   * **Wert:** Array, das Werte der angegebenen Eigenschaft für in SOM-Ausdrücken angegebene Felder enthält
+   * **value:** Array, das die Werte der angegebenen Eigenschaft für in SOM-Ausdrücken angegebene Felder enthält
 
 * **Ausgabe:** keine
 * **Fehler:** keine
