@@ -57,9 +57,9 @@ Diese Snippets ermöglichen die Erfassung von Daten und Generierung von Berichte
 
 >[!CAUTION]
 >
->The Geometrixx-Outdoors demo site is configured so that the attributes provided in the Page Properties are appended to the html source code (just above the `</html>` endtag) in the corresponding `js` script.
+>Die Demo-Site &quot;Geometrixx-Outdoors&quot;ist so konfiguriert, dass die in den Seiteneigenschaften angegebenen Attribute an den HTML-Quellcode (direkt über dem Endtag `</html>`) im entsprechenden Skript `js` angehängt werden.
 >
->If your own `/apps` do not inherit from the default page component ( `/libs/foundation/components/page`) you (or your developers) have to make sure that the corresponding `js` scripts are included, for example by either including `cq/cloudserviceconfigs/components/servicescomponents`, or using a similar mechanism.
+>Wenn Sie Ihre eigenen `/apps` nicht von der Standardseitenkomponente ( `/libs/foundation/components/page`) übernehmen, müssen Sie (oder Ihre Entwickler) sicherstellen, dass die entsprechenden `js`-Skripte eingeschlossen sind, z. B. indem Sie `cq/cloudserviceconfigs/components/servicescomponents` einschließen oder einen ähnlichen Mechanismus verwenden.
 >
 >Ohne diese Komponente funktioniert keiner der Dienste (generisch, Analytics, Target usw.).
 
@@ -94,7 +94,7 @@ Nach der Erstellung der Dienstkonfiguration müssen Sie nun die erforderlichen S
    ![](assets/analytics_selectservice.png)
 
 1. Klicken Sie zum Speichern auf **OK**.
-1. Sie werden zur Registerkarte **Cloud-Services** zurückgeleitet. The **Generic Analytics Snippet** is now listed with the message `Configuration reference missing`. Wählen Sie in der Dropdown-Liste die spezifische Dienstinstanz aus, zum Beispiel Google Analytics:
+1. Sie werden zur Registerkarte **Cloud-Services** zurückgeleitet. Das **Generic Analytics Snippet** wird jetzt mit der Meldung `Configuration reference missing` angezeigt. Wählen Sie in der Dropdown-Liste die spezifische Dienstinstanz aus, zum Beispiel Google Analytics:
 
    ![](assets/analytics_selectspecificservice.png)
 
