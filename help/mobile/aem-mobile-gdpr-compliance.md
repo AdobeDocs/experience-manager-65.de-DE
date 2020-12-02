@@ -8,6 +8,9 @@ contentOwner: trushton
 discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
 translation-type: tm+mt
 source-git-commit: 85a3dac5db940b81da9e74902a6aa475ec8f1780
+workflow-type: tm+mt
+source-wordcount: '694'
+ht-degree: 89%
 
 ---
 
@@ -26,11 +29,11 @@ AEM Mobile kann Kunden bei der Erfüllung ihrer DSGVO-Compliancepflichten unters
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-Das Produkt von Adobe für digitales Publishing (Vorgänger von AEM Mobile) unterstützt die Initiativen von Adobe zur Einhaltung der Datenschutz-Grundverordnung. Weitere Informationen finden Sie unter [https://www.adobe.com/de/privacy/general-data-protection-regulation.html](https://www.adobe.com/privacy/general-data-protection-regulation.html). Im Folgenden erhalten Sie nähere Informationen zur Unterstützung für DSGVO-relevante Funktionen in Digital Publishing Suite. Dazu gehören auch Informationen, wie Sie zusammen mit Adobe DSGVO-Anfragen intitiieren können.
+Das Produkt von Adobe für digitales Publishing (Vorgänger von AEM Mobile) unterstützt die Initiativen von Adobe zur Einhaltung der Datenschutz-Grundverordnung. Weitere Informationen finden Sie unter [https://www.adobe.com/de/privacy/general-data-protection-regulation.html](https://www.adobe.com/de/privacy/general-data-protection-regulation.html). Im Folgenden erhalten Sie nähere Informationen zur Unterstützung für DSGVO-relevante Funktionen in Digital Publishing Suite. Dazu gehören auch Informationen, wie Sie zusammen mit Adobe DSGVO-Anfragen intitiieren können.
 
 Um sicherzustellen, dass Sie AEM Mobile nicht mit dem älteren Produkt Digital Publishing Suite verwechseln, können Sie sich hier bei Digital Publishing Suite anmelden:
 
-[https://digitalpublishing.acrobat.com/de/welcome.html](https://digitalpublishing.acrobat.com/welcome.html)
+[https://digitalpublishing.acrobat.com/de/welcome.html](https://digitalpublishing.acrobat.com/de/welcome.html)
 
 ### Initiieren von DSGVO-Anfragen {#initiating-a-gdpr-request}
 
@@ -54,11 +57,11 @@ Geben Sie mindestens 1 der folgenden Punkte ein:
 
 Adobe löscht vorhandene Informationen zu App Store-Käufen (Abonnements usw.), doch die Käufe sind nach wie vor in den App Stores verzeichnet. Wenn die App (der Endbenutzer) im App Store angemeldet ist, werden diese Kaufbelege wieder aufgenommen und anschließend an Adobe geschickt. Diese werden dann als neue Käufe betrachtet und von der App wiederhergestellt, um wieder Zugriff zu erlangen.
 
-**Löscht Adobe beim Initiieren einer DELETE-Anforderung vom Kunden bereitgestellte Berechtigungen?**
+**Löscht die Adobe die vom Kunden angegebenen Berechtigungen, wenn eine DELETE-Anforderung initiiert wird?**
 
 Adobe löscht Informationen, die Adobe zu zusätzlichen direkten Berechtigungsgenehmigungen von Kunden vorliegen. Wenn sich die App (der Endbenutzer) beim OAuth-Mechanismus anmeldet, den der Kunde genutzt hat, sendet sie (er) Informationen an Adobe. Die Services greifen dabei die zusätzlichen Berechtigungen erneut auf.
 
-**Was wird vom Endbenutzer erwartet?**
+**Was ist vom Endbenutzer zu erwarten?**
 
 Da der Schlüssel für die Zuweisung von Berechtigungen zur App sich auf dem Gerät als Teil der Viewer-Software befindet, sollte der Endbenutzer die App deinstallieren. Der Endbenutzer sollte wissen, dass bei einer Deinstallation der App vorhandene (mit dem App Store-Benutzer verknüpfte) Käufe und direkte (mit dem OAuth-Benutzer des Kunden verknüpfte) Berechtigungsgenehmigungen dennoch wiederhergestellt werden.
 
@@ -68,9 +71,9 @@ Adobe verfügt nur über sehr wenige Informationen, die direkt mit einem bestimm
 
 **Welche personenbezogenen Daten werden mit Analytics verfolgt?**
 
-Keine. Es werden Daten zurückverfolgt. Dabei handelt es sich jedoch um Daten auf App-Ebene (und nicht um personenbezogene Daten). Hierzu gehören Ereignisse wie Starts, Abstürze, Schließvorgänge, Aktivitäten, Käufe oder Folio-Überlagerungen. Geografische Orte, Namen, Geräte-IDs oder IP-Adressen werden nicht zurückverfolgt.
+Kein. Es werden Daten zurückverfolgt. Dabei handelt es sich jedoch um Daten auf App-Ebene (und nicht um personenbezogene Daten). Hierzu gehören Ereignisse wie Starts, Abstürze, Schließvorgänge, Aktivitäten, Käufe oder Folio-Überlagerungen. Geografische Orte, Namen, Geräte-IDs oder IP-Adressen werden nicht zurückverfolgt.
 
-**Der Endbenutzer hat Informationen bereitgestellt, es wurde jedoch nichts gefunden. Why not?**
+**Der Endbenutzer hat Informationen bereitgestellt, es wurde jedoch nichts gefunden. Warum nicht?**
 
 Während der Weiterentwicklung von Digital Publishing Suite wurden Veränderungen an Dienstimplementierungen vorgenommen und mehr und mehr Daten wurden verschleiert. Wenn keine Daten anhand der vom Benutzer bereitgestellten Daten gefunden wurden, können die Daten des Benutzers nicht zu diesem zurückverfolgt werden.
 
