@@ -1,6 +1,6 @@
 ---
 title: Markdown
-seo-title: Markdown
+seo-title: Markup
 description: Wenn Sie Inhalt erstellen oder bearbeiten, verwendet der Inhaltsfragment-Editor die Markdown-Syntax, um Ihnen die Erstellung oder Bearbeitung von Inhalt zu erleichtern.
 seo-description: Wenn Sie Inhalt erstellen oder bearbeiten, verwendet der Inhaltsfragment-Editor die Markdown-Syntax, um Ihnen die Erstellung oder Bearbeitung von Inhalt zu erleichtern.
 uuid: afcbf82f-3a75-4491-9172-706188db65bb
