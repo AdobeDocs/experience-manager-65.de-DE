@@ -22,11 +22,11 @@ Das Verwalten von Dynamic Media-Assets – Bildern, Videos und interaktiven Asse
 
 In der Vorschau können Sie auch Bildvorgaben (nur für Bilder) oder Viewer-Vorgaben (für Videos und Bilder) anwenden. Sie können aber nicht beide Vorgabetypen auf ein Asset anwenden. Siehe [Anwenden von Viewer-Vorgaben](/help/assets/viewer-presets.md) und [Anwenden von Bildvorgaben](/help/assets/image-sets.md).
 
-Allgemeine Informationen zum Verwalten von Assets finden Sie unter [Verwalten von Assets](/help/assets/manage-assets.md).
+Allgemeine Informationen zum Verwalten von Assets finden Sie unter [Assets verwalten](/help/assets/manage-assets.md).
 
 In den folgenden Themen wird beschrieben, wie Sie Dynamic Media-Assets verwalten:
 
 * [Best Practices für die Optimierung der Bildqualität](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
 * [Anzeigen von Dynamic Media-Assets in der Vorschau](/help/assets/previewing-assets.md)
-* [Veröffentlichen von Dynamic Media-Assets   ](/help/assets/publishing-dynamicmedia-assets.md)
+* [Veröffentlichen von Dynamic Media-Assets ](/help/assets/publishing-dynamicmedia-assets.md)
 * [Arbeiten mit Selektoren](/help/assets/working-with-selectors.md)
