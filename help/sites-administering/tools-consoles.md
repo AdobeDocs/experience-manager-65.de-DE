@@ -12,13 +12,16 @@ discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
 translation-type: tm+mt
 source-git-commit: d366e9f9a1c44ff4866907e83432ab2b1438bbb3
+workflow-type: tm+mt
+source-wordcount: '618'
+ht-degree: 99%
 
 ---
 
 
 # Die Tools-Konsolen{#tools-consoles}
 
-Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen Sie Ihre Websites, digitalen Assets und andere Bereiche Ihres Inhalts-Repositorys verwalten können. Aktuell gibt es zwei Varianten der **Tools-Konsole** – abhängig von der verwendeten Benutzeroberfläche:
+Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen Sie Ihre Websites, digitalen Assets und andere Bereiche Ihres Content-Repositorys verwalten können. Aktuell gibt es zwei Varianten der **Tools-Konsole** – abhängig von der verwendeten Benutzeroberfläche:
 
 * [Tools – Touch-optimierte Benutzeroberfläche](#tools-touch-optimized-ui)
 * [Tools – klassische Benutzeroberfläche](#tools-classic-ui)
@@ -37,7 +40,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
  <tbody>
   <tr>
    <td>Abschnitt</td>
-   <td>Wahl</td>
+   <td>Option</td>
   </tr>
   <tr>
    <td>Allgemein</td>
@@ -61,7 +64,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   </tr>
   <tr>
    <td> </td>
-   <td>Konfigurationsbrowser</td>
+   <td>Konfigurations-Browser</td>
   </tr>
   <tr>
    <td> </td>
@@ -96,7 +99,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
    <td>Fehlschläge</td>
   </tr>
   <tr>
-   <td>Vorgänge</td>
+   <td>Betrieb</td>
    <td> </td>
   </tr>
   <tr>
@@ -109,7 +112,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   </tr>
   <tr>
    <td> </td>
-   <td>Testen</td>
+   <td>Tests</td>
   </tr>
   <tr>
    <td> </td>
@@ -137,7 +140,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   </tr>
   <tr>
    <td> </td>
-   <td>Jobs</td>
+   <td>Aufträge</td>
   </tr>
   <tr>
    <td>Sites</td>
@@ -253,7 +256,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   </tr>
   <tr>
    <td> </td>
-   <td>OAuth Clients</td>
+   <td>OAuth-Clients</td>
   </tr>
   <tr>
    <td> </td>
@@ -272,7 +275,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
    <td>Adobe IMS-Konfigurationen</td>
   </tr>
   <tr>
-   <td>Cloud-Services<br /> </td>
+   <td>Cloud Services<br /> </td>
    <td> </td>
   </tr>
   <tr>
@@ -325,7 +328,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   </tr>
   <tr>
    <td> </td>
-   <td>Speicher  Konfiguration</td>
+   <td>Speicherkonfiguration</td>
   </tr>
   <tr>
    <td> </td>
@@ -379,7 +382,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
    <td>ClientContext ist eine dynamische Zusammenstellung von erfassten Benutzerdaten. Hier werden die Standard- und Marketing-Cloudkonfigurationen gespeichert.<br /> </td>
   </tr>
   <tr>
-   <td>Cloud Service-Konfigurationen<br /> </td>
+   <td>Cloud Services-Konfigurationen<br /> </td>
    <td>Speichert Konfigurationen zum Integrieren mit Adobe Marketing Cloud</td>
   </tr>
   <tr>
@@ -411,7 +414,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
    <td>Enthält die Liste der erhaltenen Formulareinsendungen</td>
   </tr>
   <tr>
-   <td>Einführer </td>
+   <td>Importeure </td>
    <td>Bietet Zugriff auf verschiedene Optionen.</td>
   </tr>
   <tr>
@@ -443,7 +446,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
    <td>Ermöglicht Ihnen die Konfiguration der E-Mails, die Benutzer automatisch erhalten, wenn sie ein Konto erstellen oder ein Kennwort zurücksetzen und ein zurückgesetztes Kennwort bestätigen müssen</td>
   </tr>
   <tr>
-   <td>Segmentierung</td>
+   <td>Segmentierung </td>
    <td>Besucher von Websites haben unterschiedliche Interessen und Ziele, wenn sie eine Site besuchen. Das Verstehen dieser Ziele und das Erfüllen der Erwartungen sind wichtige Erfolgsfaktoren beim Onlinemarketing. Die Segmentierung unterstützt Sie durch die Analyse und Charakterisierung der Benutzerdetails dabei.<br /> </td>
   </tr>
   <tr>
@@ -459,7 +462,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
    <td>Ermöglicht es Ihnen, Seitenversionen bei Bedarf zu bereinigen</td>
   </tr>
   <tr>
-   <td>Workflow</td>
+   <td>Arbeitsablauf</td>
    <td>Workflows steuern eine Serie von Aktionen auf Seiten oder digitalen Assets, die jeden Bearbeitungsvorgang unterstützen.</td>
   </tr>
  </tbody>
