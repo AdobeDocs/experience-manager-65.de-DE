@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f9bcb6eb-1df4-4709-bcec-bef0931f797a
 translation-type: tm+mt
 source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+workflow-type: tm+mt
+source-wordcount: '389'
+ht-degree: 63%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
 
 >[!CAUTION]
 >
->In diesem Artikel wird beschrieben, wie Sie eine Website basierend auf der klassischen Benutzeroberfläche erstellen. Adobe empfiehlt, die neuesten AEM-Technologien für Ihre Websites zu nutzen, wie ausführlich im Artikel [Erste Schritte bei der Entwicklung von AEM-Websites](/help/sites-developing/getting-started.md) beschrieben.
+>In diesem Artikel wird beschrieben, wie Sie eine Website basierend auf der klassischen Benutzeroberfläche erstellen. Adobe empfiehlt, die neuesten AEM-Technologien für Ihre Websites zu nutzen, wie ausführlich im Artikel [Erste Schritte bei der Entwicklung von AEM Sites](/help/sites-developing/getting-started.md) beschrieben.
 
 Sie müssen ein Design für Ihre Website erstellen. In AEM verwenden Sie dazu den Designer.
 
@@ -29,13 +32,13 @@ Sie müssen ein Design für Ihre Website erstellen. In AEM verwenden Sie dazu de
 
 ## Verwenden des Designers {#using-the-designer}
 
-Your design can be defined in the **designs** section of the **Tools** tab:
+Ihr Entwurf kann im Abschnitt **Designs** der Registerkarte **Tools** definiert werden:
 
 ![screen_shot_2012-02-01at30237pm](assets/screen_shot_2012-02-01at30237pm.png)
 
 Hier erstellen Sie die Struktur, die zum Speichern des Designs erforderlich ist, und laden dann die erforderlichen Cascaded Style Sheet und Bilder hoch.
 
-Designs are stored under `/etc/designs`. Der Pfad zu einem Design, das für eine Website verwendet wird, wird anhand der Eigenschaft `cq:designPath` des Knotens `jcr:content` angegeben.
+Entwürfe werden unter `/etc/designs` gespeichert. Der Pfad zu einem Design, das für eine Website verwendet wird, wird anhand der Eigenschaft `cq:designPath` des Knotens `jcr:content` angegeben.
 
 ![chlimage_1-74](assets/chlimage_1-74a.png)
 
@@ -43,25 +46,25 @@ Designs are stored under `/etc/designs`. Der Pfad zu einem Design, das für eine
 >
 >Alle Änderungen, die im Designmodus an einer Seite vorgenommen werden, werden unterhalb des Designknotens der Website beibehalten und automatisch auf alle Seiten mit demselben Design angewendet.
 
-## Voraussetzungen {#what-you-will-need}
+## Voraussetzungen  {#what-you-will-need}
 
 Zur Realisierung des Design benötigen Sie:
 
-**CSS** - Die Cascading Stylesheets definieren die Formate bestimmter Bereiche auf Ihren Seiten.
+**CSS**  - Die Cascading Stylesheets definieren die Formate bestimmter Bereiche auf Ihren Seiten.
 **Bilder** : Alle Bilder, die Sie für Funktionen wie Hintergründe und Schaltflächen verwenden.
 
 ### Überlegungen zum Entwurf Ihrer Website {#considerations-when-designing-your-website}
 
-When developing a website, it is highly recommended to store images and CSS files under `/etc/design/<project>` so you can reference your resources based on the current design like described by the following snippet.
+Beim Entwickeln einer Website wird dringend empfohlen, Bilder und CSS-Dateien unter `/etc/design/<project>` zu speichern, damit Sie auf Ihre Ressourcen basierend auf dem aktuellen Design verweisen können, wie im folgenden Codefragment beschrieben.
 
 ```xml
 <%= currentDesign.getPath() + "/static/img/icon.gif %>
 ```
 
-Das vorstehende Beispiel bietet mehrere Vorteile:
+Im obigen Angebot werden mehrere Leistungen angeboten:
 
 * Je nach Designpfad verschiedener Websites erwecken Komponenten einen anderen Eindruck.
-* Re-design of the website can be simply done by pointing the design path to a different node at the root of the site from `design/v1` to `design/v2.`
+* Die Neugestaltung der Website kann einfach erfolgen, indem Sie den Designpfad auf einen anderen Knoten im Stammverzeichnis der Website von `design/v1` bis `design/v2.` zeigen.
 
-* `/etc/designs` und `/content` sind die einzigen externen URLs, die der Browser sieht, um Sie davor zu schützen, dass ein externer Benutzer neugierig darauf wird, was unter Ihrer `/apps` Struktur ist. Die obigen URL-Vorteile helfen auch Ihrem Systemadministrator, bessere Sicherheitsmaßnahmen einzurichten, weil die Angriffsfläche der Assets auf wenige spezifische Orte beschränkt wird.
+* `/etc/designs` und  `/content` sind die einzigen externen URLs, die der Browser sieht, um Sie davor zu schützen, dass ein externer Benutzer neugierig darauf wird, was sich unter Ihrem  `/apps` Baum befindet. Die obigen URL-Vorteile helfen auch Ihrem Systemadministrator, bessere Sicherheitsmaßnahmen einzurichten, weil die Angriffsfläche der Assets auf wenige spezifische Orte beschränkt wird.
 
