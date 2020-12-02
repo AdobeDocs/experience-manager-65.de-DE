@@ -27,7 +27,7 @@ ht-degree: 82%
 * [Erstellen von adaptiven Formularen](../../forms/using/creating-adaptive-form.md)
 * [Bearbeiten adaptiver Formulare](../../forms/using/introduction-forms-authoring.md)
 
-## Verfahren zum dynamischen Füllen von Dropdownlisten {#procedure-to-dynamically-populate-drop-down-lists}
+## Verfahren zum dynamischen Füllen von Dropdownlisten  {#procedure-to-dynamically-populate-drop-down-lists}
 
 Gehen Sie von einem Szenario aus, in dem Sie die Dropdownliste **Bundesland** basierend auf einem Wert füllen möchten, den Sie in der Dropdownliste **Land** auswählen. Wenn Sie in der Dropdownliste **Land** den Eintrag „Australien“ wählen, werden in der Dropdownliste **Bundesland** die australischen Bundesstaaten angezeigt. Im folgenden Verfahren wird beschrieben, wie Sie dabei vorgehen.
 
@@ -147,7 +147,7 @@ Gehen Sie von einem Szenario aus, in dem Sie die Dropdownliste **Bundesland** ba
    }
    ```
 
-1. Erstellen Sie einen Dropdown-Knoten unter einer bestimmten Ordnerhierarchie in Apps (erstellen Sie beispielsweise einen Knoten unter /apps/myfolder/demo). Ensure that the `sling:resourceType` parameter for the node is the same as that to which the servlet points (/apps/populatedropdown).
+1. Erstellen Sie einen Dropdown-Knoten unter einer bestimmten Ordnerhierarchie in Apps (erstellen Sie beispielsweise einen Knoten unter /apps/myfolder/demo). Stellen Sie sicher, dass der Parameter `sling:resourceType` für den Knoten mit dem Parameter übereinstimmt, auf den das Servlet verweist (/apps/populatedropdown).
 
    ![Erstellen eines Dropdownknotens](assets/dropdown-node.png)
 
@@ -156,7 +156,7 @@ Gehen Sie von einem Szenario aus, in dem Sie die Dropdownliste **Bundesland** ba
 
    Fügen Sie die Namen der Länder hinzu, die Sie in der Liste „Land“ anzeigen möchten. Fügen Sie in der Liste „Bundesland“ ein Skript hinzu, mit dem sie basierend auf dem in der Liste „Land“ gewählten Land gefüllt wird.
 
-   ![Hinzufügen von Ländernamen](assets/country-dropdown.png) ![Hinzufügen von Skripten zum Ausfüllen der Dropdown-Listen](assets/state-dropdown.png) &quot; ![Land&quot;und &quot;Bundesland&quot;](assets/2dropdowns.png)
+   ![Hinzufügen ](assets/country-dropdown.png) ![von LändernamenHinzufügen von Skripten zum Ausfüllen von ](assets/state-dropdown.png) ![StatusnamenDropdown-Listen &quot;Land&quot;und &quot;Bundesland&quot;zum Zusammenstellen](assets/2dropdowns.png)
 
    ```javascript
    JSON.parse(
