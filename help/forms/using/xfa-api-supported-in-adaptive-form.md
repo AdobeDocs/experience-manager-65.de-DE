@@ -141,7 +141,7 @@ Die folgende Tabelle erfasst, wie verschiedene XFA-Skripte, die in den XDP-Datei
    <td><p>Der short description-Eigenschaft im adaptiven Formular zugeordnet.</p> </td>
   </tr>
   <tr>
-   <td><p>caption<em> (all Field types)</em></p> </td>
+   <td><p>caption<em> (alle Feldtypen)</em></p> </td>
    <td><p>Der Title-Eigenschaft im adaptiven Formular zugeordnet.</p> </td>
   </tr>
   <tr>
@@ -153,11 +153,11 @@ Die folgende Tabelle erfasst, wie verschiedene XFA-Skripte, die in den XDP-Datei
    <td><p>Der value-Eigenschaft im adaptiven Formular zugeordnet.</p> </td>
   </tr>
   <tr>
-   <td><p>items<em> (List Box, Check Box)</em></p> </td>
+   <td><p>items<em> (Liste, Kontrollkästchen)</em></p> </td>
    <td><p>Der options-Eigenschaft im adaptiven Formular zugeordnet. Mit dem Optionsausdruck überschreibbar.</p> </td>
   </tr>
   <tr>
-   <td><p>maxChar<em> (Text Field)</em></p> </td>
+   <td><p>maxChar<em> (Textfeld)</em></p> </td>
    <td><p>Der Maximum characters allowed-Eigenschaft im adaptiven Formular zugeordnet.</p> </td>
   </tr>
   <tr>
@@ -173,7 +173,7 @@ Die folgende Tabelle erfasst, wie verschiedene XFA-Skripte, die in den XDP-Datei
    <td><p>Der Lead digits-Eigenschaft im adaptiven Formular zugeordnet.</p> </td>
   </tr>
   <tr>
-   <td><p>multiSelect<em> (List Box)</em></p> </td>
+   <td><p>multiSelect<em> (Liste Box)</em></p> </td>
    <td><p>Der Allows multiple selection-Eigenschaft im adaptiven Formular zugeordnet.</p> </td>
   </tr>
  </tbody>
