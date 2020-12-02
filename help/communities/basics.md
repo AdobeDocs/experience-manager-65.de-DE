@@ -20,11 +20,11 @@ ht-degree: 61%
 
 # Grundlagen zu Communities-Komponenten {#communities-components-basics}
 
-## Überblick {#overview}
+## Überblick{#overview}
 
 Im Autorenabschnitt der Dokumentation finden Sie Informationen zum Hinzufügen von Communities-Funktionen zu AEM Sites im Bearbeitungsmodus sowie eine Beschreibung der Komponentenkonfigurationen.
 
-Components may be explored using an AEM instance and the interactive [Community Components guide](components-guide.md).
+Komponenten können mithilfe einer AEM Instanz und des interaktiven [Community Components guide](components-guide.md)-Handbuchs untersucht werden.
 
 ## Auf Communities-Komponenten zugreifen {#accessing-communities-components}
 
@@ -34,15 +34,15 @@ Die verfügbaren Communities-Komponenten sind [hier](author-communities.md#avail
 
 >[!NOTE]
 >
->For general authoring information, view the [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
+>Ansicht der [Quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md) für allgemeine Authoring-Informationen.
 >
->If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md).
+>Wenn Sie mit AEM nicht vertraut sind, Ansicht der Dokumentation unter [Basisbehandlung](../../help/sites-authoring/basic-handling.md).
 
 ### Designmodus aktivieren {#entering-design-mode}
 
-If a **Communities** component is not found in the components browser (sidekick), it will be necessary to enter `Design Mode` to add other Communities components. Möglicherweise müssen Sie zudem [erforderliche Client-seitige Bibliotheken](#required-clientlibs) (clientlibs) hinzufügen.
+Wenn keine Komponente **Communities** im Komponenten-Browser (Sidekick) gefunden wird, müssen Sie `Design Mode` eingeben, um weitere Communities-Komponenten hinzuzufügen. Möglicherweise müssen Sie zudem [erforderliche Client-seitige Bibliotheken](#required-clientlibs) (clientlibs) hinzufügen.
 
-For details, see [Configuring Components in Design Mode](../../help/sites-authoring/default-components-designmode.md).
+Weitere Informationen finden Sie unter [Konfigurieren von Komponenten im Designmodus](../../help/sites-authoring/default-components-designmode.md).
 
 Im Folgenden finden Sie Bilder zur Auswahl einiger Communities-Komponenten und zur Anzeige im Komponenten-Browser:
 
@@ -58,11 +58,11 @@ Die ausgewählten Komponenten werden jetzt im Komponenten-Browser angezeigt:
 
 Wird eine Communities-Komponente einer Seite hinzugefügt und führt dies zur Ausgabe einer Fehlermeldung sowie einem unerwarteten Layoutergebnis, sollte zunächst überprüft werden, ob die für die Communities-Komponente erforderlichen clientlibs hinzugefügt wurden. Weitere Informationen finden Sie unter [Clientlibs für Communities-Komponenten](clientlibs.md).
 
-### Example: Initially placed reviews without client libraries... {#example-initially-placed-reviews-without-client-libraries}
+### Beispiel: Ursprünglich platzierte Reviews ohne Client-Bibliotheken... {#example-initially-placed-reviews-without-client-libraries}
 
 ![clientlibs1](assets/clientlibs1.png)
 
-### ... And with client libraries {#and-with-client-libraries}
+### ... Und mit Client-Bibliotheken {#and-with-client-libraries}
 
 ![clientlibs2](assets/clientlibs2.png)
 
@@ -72,9 +72,9 @@ Viele Communities-Funktionen lassen sich so konfigurieren, dass Mitglieder verö
 
 Ist das Tagging von Inhalten freigeschaltet, werden die für Mitglieder in der Veröffentlichungsumgebung verfügbaren Namespaces möglicherweise durch die Konfiguration der Community-Site beschränkt. Informationen hierzu finden Sie in der [Community-Sites-Konsole](sites-console.md#tagging).
 
-Features which allow tagging: [blog](blog-feature.md), [calendar](calendar.md), [file library](file-library.md), [forum](forum.md)
+Funktionen, die Tags ermöglichen: [Blog](blog-feature.md), [Kalender](calendar.md), [Dateibibliothek](file-library.md), [Forum](forum.md)
 
-Features which use tags: [catalog](catalog.md), [search](search.md), [social tag cloud](tagcloud.md)
+Funktionen, die Tags verwenden: [Katalog](catalog.md), [Suche](search.md), [Social Tag-Cloud](tagcloud.md)
 
 Informationen zum Verfassen:
 
@@ -82,8 +82,8 @@ Informationen zum Verfassen:
 
 Verwaltungsinformationen:
 
-* Creating tag namespaces (taxonomy): [Administering Tags](../../help/sites-administering/tags.md)
-* Community Site configuration: see [TAGGING](sites-console.md#tagging)
+* Erstellen von Tag-Namensräumen (taxonomy): [Verwalten von Tags](../../help/sites-administering/tags.md)
+* Community-Site-Konfiguration: siehe [TAGGING](sites-console.md#tagging)
 * [Tagging benutzergenerierter Inhalte](../../help/sites-authoring/tags.md)
 * [Tagging von Aktivierungsressourcen](tag-resources.md)
 
