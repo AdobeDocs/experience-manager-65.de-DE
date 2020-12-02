@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 198098c0-432b-4a93-a94e-2552337435dd
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '317'
+ht-degree: 95%
 
 ---
 
@@ -48,7 +51,7 @@ Diese Benennungskonventionen werden auf verschiedenen Ebenen implementiert:
 
 [PageManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) stellt basierend auf [JCRUtil](#jcr-utilities) Methoden für Vorgänge auf Seitenebene bereit.
 
-### Standard-UI {#standard-ui}
+### Standard-Benutzeroberfläche {#standard-ui}
 
 Die standardmäßige Touch-optimierte Benutzeroberfläche:
 
