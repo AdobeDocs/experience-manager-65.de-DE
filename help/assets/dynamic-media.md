@@ -49,7 +49,7 @@ Siehe auch [Einrichten dynamischer Medien](administering-dynamic-media.md).
 
 >[!NOTE]
 >
->Informationen zu den Unterschieden zwischen der Verwendung von dynamischen Medien und der Integration von Dynamic Media Classic in AEM finden Sie unter Integration von [Dynamic Media Classic und dynamischen Medien](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media).
+>Informationen zu den Unterschieden zwischen der Verwendung von dynamischen Medien und der Integration von Dynamic Media Classic in AEM finden Sie unter [Integration von Dynamic Media Classic und Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media).
 
 ## Aktivierte und deaktivierte Dynamic Media-Funktion im Vergleich {#dynamic-media-on-versus-dynamic-media-off}
 
@@ -59,7 +59,7 @@ Anhand der folgenden Merkmale können Sie erkennen, ob Dynamic Media aktiviert i
 * Bild-Sets, Rotations-Sets und Sets für gemischte Medien sind verfügbar.
 * PTIFF-Ausgabeformate werden erstellt.
 
-When you click an image asset, the view of the asset is different with Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). Dynamic Media nutzt die On-Demand-HTML5-Viewer.
+Wenn Sie auf ein Bild-Asset klicken, unterscheidet sich die Ansicht des Assets von der Option &quot;Dynamische Medien [aktiviert](config-dynamic.md#enabling-dynamic-media)&quot;. Dynamic Media nutzt die On-Demand-HTML5-Viewer.
 
 ### Dynamische Ausgabeformate {#dynamic-renditions}
 
