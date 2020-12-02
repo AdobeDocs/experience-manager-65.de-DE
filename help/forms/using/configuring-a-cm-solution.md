@@ -22,9 +22,9 @@ ht-degree: 78%
 
 Führen Sie die folgenden Schritte aus, um eine URL der Autorinstanz zur Wiederherstellung der Autorinstanzversion:
 
-1. Go to *https://:&lt;PublishHost>:&lt;PublishPort>/lc/system/console/configMgr*. Melden Sie sich mit den Anmeldedaten der OSGi Management Console an. Standardmäßig lauten die Anmeldedaten: admin/admin.
+1. Gehen Sie zu *https://:&lt;PublishHost>:&lt;PublishPort>/lc/system/console/configMgr*. Melden Sie sich mit den Anmeldedaten der OSGi Management Console an. Standardmäßig lauten die Anmeldedaten: admin/admin.
 1. Klicken Sie auf **[!UICONTROL Bearbeiten]** neben der Einstellung **[!UICONTROL com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name]**.
-1. In the **[!UICONTROL VersionRestoreManager Author URL]** field, specify the URL of Author instance of VersionRestoreManager.
+1. Geben Sie im Feld **[!UICONTROL VersionRestoreManager-Autor-URL]** die URL der Autoreninstanz von VersionRestoreManager an.
 
    **URL-Zeichenfolge**:
 
@@ -32,15 +32,15 @@ Führen Sie die folgenden Schritte aus, um eine URL der Autorinstanz zur Wiederh
 
    >[!NOTE]
    >
-   >If there are multiple author instances (Clustered) fronted by a Load Balancer, specify the URL to the load balancer in the **[!UICONTROL VersionRestoreManager Author URL]** field.
+   >Wenn mehrere Instanzen im Autorenmodus (gruppiert) mit der Frontierung eines Lastenausgleichs vorhanden sind, geben Sie die URL für den Lastenausgleich im Feld **[!UICONTROL VersionRestoreManager-Autor-URL]** an.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-## URL der Instanz im Veröffentlichungsmodus für ActivationManagerImpl festlegen (Aktivierungsmanager der öffentlichen Instanz) {#defining-the-publish-instance-url-for-activationmanagerimpl-public-instance-activation-manager}
+## URL der Instanz im Veröffentlichungsmodus für ActivationManagerImpl festlegen (Aktivierungsmanager der öffentlichen Instanz)  {#defining-the-publish-instance-url-for-activationmanagerimpl-public-instance-activation-manager}
 
 Folgen Sie diesen Schritten, um die „URL-Instanz veröffentlichen“ für den Aktivierungsmanager der Veröffentlichungsinstanz zu definieren:
 
-1. Go to *https://:&lt;authorHost>:&lt;authorPort>/lc/system/console/configMgr*. Melden Sie sich mit den Anmeldedaten der OSGi Management Console an. Standardmäßig lauten die Anmeldedaten: admin/admin.
+1. Gehen Sie zu *https://:&lt;authorHost>:&lt;authorPort>/lc/system/console/configMgr*. Melden Sie sich mit den Anmeldedaten der OSGi Management Console an. Standardmäßig lauten die Anmeldedaten: admin/admin.
 1. Klicken Sie auf das **[!UICONTROL Bearbeitungs]** symbol neben der Einstellung **[!UICONTROL com.adobe.livecycle.content.activate.impl.ActivationManagerImpl.name]**.
 1. Geben Sie im Feld für die **[!UICONTROL Veröffentlichungs-URL von ActivationManage]** r die URL für den Zugriff auf die Instanz im Veröffentlichungsmodus in ActivationManager an. Sie können die folgenden URLs angeben.
 
