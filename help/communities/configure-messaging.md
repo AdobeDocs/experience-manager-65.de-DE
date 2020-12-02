@@ -23,21 +23,21 @@ ht-degree: 13%
 
 Zusätzlich zu den öffentlich sichtbaren Interaktionen, die in Foren und Kommentaren auftreten, ermöglicht die Messaging-Funktion von AEM Communities Community-Mitgliedern, privat miteinander zu interagieren.
 
-This feature can be included when a [community site](/help/communities/overview.md#communitiessites) is created.
+Diese Funktion kann einbezogen werden, wenn eine [Community-Site](/help/communities/overview.md#communitiessites) erstellt wird.
 
 Die Messaging-Funktion bietet folgende Funktionen:
 
-**A** - Senden einer Nachricht an einen oder mehrere Community-Mitglieder
+**A** : Senden Sie eine Nachricht an einen oder mehrere Community-Mitglieder
 
-**B** - Direktnachrichten [stapelweise an Community-Mitgliedsgruppen senden](/help/communities/messaging.md#group-messaging)
+**B** - Direktnachrichten  [stapelweise an Community-Mitgliedsgruppen senden](/help/communities/messaging.md#group-messaging)
 
 **C** - Nachricht mit Anlagen senden
 
-**D** - Weiterleiten einer Nachricht
+**D**  - Weiterleiten einer Nachricht
 
 **E** - Antwort auf eine Nachricht
 
-**F** - Löschen einer Nachricht
+**F**  - Löschen einer Nachricht
 
 **G** - gelöschte Meldung wiederherstellen
 
@@ -47,42 +47,42 @@ Die Messaging-Funktion bietet folgende Funktionen:
 
 Informationen zum Aktivieren und Ändern der Messaging-Funktion finden Sie unter:
 
-* [Messaging](/help/communities/messaging.md) für Administratoren konfigurieren
-* [Messaging Essentials](/help/communities/essentials-messaging.md) für Entwickler
+* [Konfigurieren der ](/help/communities/messaging.md) Nachrichten für Administratoren
+* [Messaging ](/help/communities/essentials-messaging.md) Essentials für Entwickler
 
 >[!NOTE]
 >
->Es wird nicht unterstützt, `Compose Message, Message, or Message List` Komponenten (in der `Communities`Komponentengruppe) einer Seite im Bearbeitungsmodus des Autors hinzuzufügen.
+>Es wird nicht unterstützt, `Compose Message, Message, or Message List`-Komponenten (in `Communities`Komponentengruppe gefunden) zu einer Seite im Autorenbearbeitungsmodus hinzuzufügen.
 
-## Messaging-Komponenten konfigurieren {#configure-messaging-components}
+## Messaging-Komponenten {#configure-messaging-components} konfigurieren
 
 Wenn Messaging für eine Community-Site aktiviert ist, wird es ohne weitere Konfiguration eingerichtet. Die Informationen werden bereitgestellt, wenn die Standardkonfiguration geändert werden muss.
 
-### Liste der Nachricht konfigurieren (Meldungsfeld) {#configure-message-list-message-box}
+### Message-Liste konfigurieren (Meldungsfeld) {#configure-message-list-message-box}
 
-Um die Konfiguration der Liste der Nachrichten für **Posteingänge**, **Gesendete Elemente** und **Papierkorbseiten** der Nachrichtenfunktion zu ändern, öffnen Sie die Site im [Autorenbearbeitungsmodus](/help/communities/sites-console.md#authoring-site-content).
+Um die Liste der Nachrichten für **Inbox**-, **Gesendete Elemente**- und **Papierkorb**-Seiten der Nachrichtenfunktion zu ändern, öffnen Sie die Site im Bearbeitungsmodus [Autor](/help/communities/sites-console.md#authoring-site-content).
 
-1. Wählen Sie im `Preview` Modus den Link &quot; **Nachrichten** &quot;, um die Haupt-Messaging-Seite zu öffnen. Wählen Sie dann entweder &quot; **Posteingang**&quot;, &quot; **Gesendete Elemente** &quot;oder &quot; **Papierkorb** &quot;, um die Liste für diese Nachricht zu konfigurieren.
+1. Wählen Sie im Modus `Preview` den Link **Nachrichten**, um die Hauptseite der Nachrichten zu öffnen. Wählen Sie dann entweder **Inbox**, **Gesendete Elemente** oder **Papierkorb** aus, um die Liste für diese Nachricht zu konfigurieren.
 
-1. Wählen Sie im `Edit` Modus die Komponente auf der Seite aus.
-1. Um auf das Konfigurationsdialogfeld zuzugreifen, brechen Sie die Vererbung ab, indem Sie auf das `link` Symbol klicken.
+1. Wählen Sie im Modus `Edit` die Komponente auf der Seite aus.
+1. Um auf das Konfigurationsdialogfeld zuzugreifen, brechen Sie die Vererbung ab, indem Sie auf das Symbol `link` klicken.
 Nach dem Abbrechen der Vererbung können Sie das Symbol &quot;Konfigurieren&quot;auswählen, um das Konfigurationsdialogfeld zu öffnen.
 
-1. Nach Abschluss der Konfiguration muss die Vererbung durch Auswahl des `broken link` Symbols wiederhergestellt werden.
+1. Nach Abschluss der Konfiguration muss die Vererbung durch Auswahl des Symbols `broken link` wiederhergestellt werden.
 
 ![configure-message-Liste](assets/configure-message-list.png)
 
-#### Basic tab {#basic-tab}
+#### Einfache Registerkarte {#basic-tab}
 
 ![basic-tab-messagelist](assets/basic-tab-messagelist.png)
 
 * **Dienstauswahl**
 
-   (*Required*) Set this to the value of the property **`serviceSelector.name`** from the [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service).
+   (*Erforderlich*) Legen Sie dies auf den Wert der Eigenschaft **`serviceSelector.name`** vom [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service) fest.
 
 * **Seite erstellen**
 
-   (*Erforderlich*) Die Seite, die geöffnet wird, wenn ein Mitglied auf die **`Reply`** Schaltfläche klickt. Die Zielseite sollte das Formular **Nachricht erstellen** enthalten.
+   (*Erforderlich*) Die Seite, die geöffnet werden soll, wenn ein Mitglied auf die Schaltfläche **`Reply`** klickt. Die Zielseite sollte das Formular **Nachricht erstellen** enthalten.
 
 * **Antwort/Ansicht als Ressource**
 
@@ -98,27 +98,27 @@ Nach dem Abbrechen der Vererbung können Sie das Symbol &quot;Konfigurieren&quot
 
 * **Ordnerpfade**
 
-   (*Erforderlich*) Verweisen auf die Werte, die für **inbox.path.name** und **sentitems.path.name** im [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service)festgelegt wurden. Bei der Konfiguration für einen `Inbox`Eintrag fügen Sie einen Eintrag mit dem Wert **inbox.path.name** hinzu. Bei der Konfiguration für einen `Outbox`Eintrag fügen Sie einen Eintrag mit dem Wert von **sentitems.path.name** hinzu. Fügen Sie beim Konfigurieren für `Trash`zwei Einträge mit beiden Werten hinzu.
+   (*Erforderlich*) Verweis auf die Werte, die für **inbox.path.name** und **sentitems.path.name** im [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service) festgelegt wurden. Bei der Konfiguration für ein `Inbox` fügen Sie einen Eintrag mit dem Wert **inbox.path.name** hinzu. Bei der Konfiguration für ein `Outbox` fügen Sie einen Eintrag mit dem Wert **sentitems.path.name** hinzu. Fügen Sie bei der Konfiguration für `Trash` zwei Einträge mit beiden Werten hinzu.
 
-#### Registerkarte anzeigen {#display-tab}
+#### Display tab {#display-tab}
 
 ![display-tab-message-Liste](assets/display-tab-message-list.png)
 
 * **Schaltfläche &quot;Gelesen&quot;**
 
-   If checked, displays a `Read`button allowing a message to be marked as read.
+   Wenn diese Option aktiviert ist, wird die Schaltfläche `Read`angezeigt, mit der eine Nachricht als gelesen markiert werden kann.
 
 * **Schaltfläche &quot;Ungelesen markieren&quot;**
 
-   If checked, displays a `Mark Unread` button allowing a message to be marked as read.
+   Wenn diese Option aktiviert ist, wird die Schaltfläche `Mark Unread` angezeigt, mit der eine Nachricht als gelesen markiert werden kann.
 
 * **Schaltfläche &quot;Löschen&quot;**
 
-   If checked, displays a `Delete` button allowing a message to be marked as read. Will duplicate the delete functionality if **`Message Options`** is also checked.
+   Wenn diese Option aktiviert ist, wird die Schaltfläche `Delete` angezeigt, mit der eine Nachricht als gelesen markiert werden kann. Wird die Funktion zum Löschen Duplikat, wenn **`Message Options`** ebenfalls aktiviert ist.
 
 * **Nachrichtenoptionen**
 
-   Wenn diese Option aktiviert ist, werden Schaltflächen **`Reply`**, **`Reply All`** und **`Forward`** **`Delete`** Schaltflächen angezeigt, mit denen eine Nachricht erneut gesendet oder gelöscht werden kann. Will duplicate the delete functionality if **`Delete Button`** is also checked.
+   Wenn diese Option aktiviert ist, werden die Schaltflächen **`Reply`**, **`Reply All`**, **`Forward`** und **`Delete`** angezeigt, mit denen eine Nachricht erneut gesendet oder gelöscht werden kann. Wird die Funktion zum Löschen Duplikat, wenn **`Delete Button`** ebenfalls aktiviert ist.
 
 * **Nachrichten pro Seite**
 
@@ -130,23 +130,23 @@ Nach dem Abbrechen der Vererbung können Sie das Symbol &quot;Konfigurieren&quot
 
 * **Benutzer anzeigen**
 
-   Wählen Sie entweder **`Sender`** oder **`Recipients`** , um festzulegen, ob der Absender oder die Empfänger angezeigt werden sollen.
+   Wählen Sie entweder **`Sender`** oder **`Recipients`**, um festzulegen, ob der Sender oder die Empfänger angezeigt werden sollen.
 
-### Nachricht konfigurieren {#configure-compose-message}
+### Konfigurieren Sie die Nachricht &#39;Erstellen&#39; {#configure-compose-message}
 
-Um die Konfiguration der Seite mit der Nachricht zum Erstellen zu ändern, öffnen Sie die Site im [Autorenbearbeitungsmodus](/help/communities/sites-console.md#authoring-site-content).
+Um die Konfiguration der Seite mit der Nachricht zum Erstellen zu ändern, öffnen Sie die Site im Bearbeitungsmodus [Autor](/help/communities/sites-console.md#authoring-site-content).
 
-* Wählen Sie im `Preview` Modus den Link &quot; **Nachrichten** &quot;, um die Haupt-Messaging-Seite zu öffnen. Klicken Sie dann auf &quot;Neue Nachricht&quot;, um die `Compose Message` Seite zu öffnen.
+* Wählen Sie im Modus `Preview` den Link **Nachrichten**, um die Hauptseite der Nachrichten zu öffnen. Klicken Sie dann auf &quot;Neue Nachricht&quot;, um die Seite `Compose Message` zu öffnen.
 
-* Wählen Sie im `Edit` Modus die Hauptkomponente auf der Seite aus, die den Nachrichtentext enthält.
-* Um auf das Konfigurationsdialogfeld zuzugreifen, brechen Sie die Vererbung ab, indem Sie auf das `link` Symbol klicken.
+* Wählen Sie im Modus `Edit` die Hauptkomponente auf der Seite aus, die den Nachrichtentext enthält.
+* Um auf das Konfigurationsdialogfeld zuzugreifen, brechen Sie die Vererbung ab, indem Sie das Symbol `link` auswählen.
 Nach dem Abbrechen der Vererbung können Sie das Symbol &quot;Konfigurieren&quot;auswählen, um das Konfigurationsdialogfeld zu öffnen.
 
-* Nach Abschluss der Konfiguration muss die Vererbung durch Auswahl des `broken link` Symbols wiederhergestellt werden.
+* Nach Abschluss der Konfiguration muss die Vererbung durch Auswahl des Symbols `broken link` wiederhergestellt werden.
 
 ![config-component-message](assets/config-compose-message.png)
 
-#### Basic tab {#basic-tab-1}
+#### Einfache Registerkarte {#basic-tab-1}
 
 ![basic-tab-compse](assets/basic-tab-compose.png)
 
@@ -168,35 +168,35 @@ Nach dem Abbrechen der Vererbung können Sie das Symbol &quot;Konfigurieren&quot
 
 * **Dienstauswahl**
 
-   (*Required*) Set this to the value of the property **`serviceSelector.name`** from the [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service).
+   (*Erforderlich*) Legen Sie dies auf den Wert der Eigenschaft **`serviceSelector.name`** vom [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service) fest.
 
-#### Registerkarte anzeigen {#display-tab-1}
+#### Display tab {#display-tab-1}
 
 ![display-tab-component](assets/display-tab-compose.png)
 
 * **Themenfeld anzeigen**
 
-   Wenn diese Option aktiviert ist, zeigen Sie das `Subject` Feld an und aktivieren Sie die Option Betreff zur Nachricht hinzufügen. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, zeigen Sie das Feld `Subject` an und aktivieren Sie das Hinzufügen eines Betreffs zur Nachricht. Diese Option ist standardmäßig deaktiviert.
 
 * **Subject Label**
 
-   Geben Sie den Text ein, der neben dem `Subject` Feld angezeigt werden soll. Der Standardwert ist `Subject`.
+   Geben Sie den Text ein, der neben dem Feld `Subject` angezeigt werden soll. Der Standardwert ist `Subject`.
 
 * **Angehängtes Dateifeld anzeigen**
 
-   Wenn diese Option aktiviert ist, zeigen Sie das `Attachment` Feld an und aktivieren Sie das Hinzufügen von Dateianlagen zur Nachricht. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, zeigen Sie das Feld `Attachment` an und aktivieren Sie das Hinzufügen von Dateianlagen zur Nachricht. Diese Option ist standardmäßig deaktiviert.
 
 * **Dateietikett anhängen**
 
-   Geben Sie den Text ein, der neben dem `Attachment` Feld angezeigt werden soll. Der Standardwert ist **`Attach File`**.
+   Geben Sie den Text ein, der neben dem Feld `Attachment` angezeigt werden soll. Der Standardwert ist **`Attach File`**.
 
 * **Inhaltsfeld anzeigen**
 
-   Wenn diese Option aktiviert ist, zeigen Sie das `Content` Feld an und aktivieren Sie das Hinzufügen eines Nachrichtentextes. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, zeigen Sie das Feld `Content` an und aktivieren Sie das Hinzufügen eines Nachrichtentextes. Diese Option ist standardmäßig deaktiviert.
 
 * **Inhaltsbeschriftung**
 
-   Geben Sie den Text ein, der neben dem `Content` Feld angezeigt werden soll. Der Standardwert ist **`Body`**.
+   Geben Sie den Text ein, der neben dem Feld `Content` angezeigt werden soll. Der Standardwert ist **`Body`**.
 
 * **Mit Rich-Text-Editor**
 
