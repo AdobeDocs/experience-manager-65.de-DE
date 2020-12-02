@@ -21,7 +21,7 @@ ht-degree: 82%
 
 >[!CAUTION]
 >
->AEM Forms bieten die [Design-Editor](/help/forms/using/themes.md) -Funktion zum Erstellen und Ändern von [Themen](/help/forms/using/themes.md)für adaptive Formulare. Führen Sie die in diesem Artikel aufgelisteten Schritte nur dann aus, wenn Sie ein Upgrade von einer Version durchgeführt haben, die keinen [Design-Editor](/help/forms/using/themes.md) hat, und wenn Sie bereits über eine Investition in Themen verfügen, die mit weniger/CSS-Dateien erstellt wurden (Bearbeitungsmethode vor dem Design).
+>AEM Forms bietet die Funktion [Design-Editor](/help/forms/using/themes.md) zum Erstellen und Ändern adaptiver Formulare [Themen](/help/forms/using/themes.md). Führen Sie die in diesem Artikel aufgelisteten Schritte nur dann aus, wenn Sie ein Upgrade von einer Version durchgeführt haben, die nicht über [Design-Editor](/help/forms/using/themes.md) verfügt, und wenn Sie bereits über eine Investition in Themen verfügen, die mit &quot;Less-/CSS-Dateien&quot;erstellt wurden (Bearbeitungsmethode vor dem Thema).
 
 ## Voraussetzungen {#prerequisites}
 
@@ -45,9 +45,10 @@ Sie erstellen ein **adaptives Formular** und wenden das Design auf das Formular 
 >
 >Wenn Sie diesen Schritten mithilfe der Namen folgen, sollte die resultierende Vorlage in etwa dem folgenden Snapshot ähneln:
 
-![Snapshot](assets/thumbnail.png)zum adaptiven Formular für Wälder **Abbildung:** *Waldthemenbeispiel*
+![Snapshot ](assets/thumbnail.png)
+**zum adaptiven Formular für WälderAbbildung: Beispiel für** *Walddesign*
 
-1. Create a node of type `cq:ClientLibraryFolder` under the `/apps`node.
+1. Erstellen Sie eine Node des Typs `cq:ClientLibraryFolder` unter der Node `/apps`.
 
    Erstellen Sie beispielsweise den folgenden Knoten:
 
@@ -59,9 +60,9 @@ Sie erstellen ein **adaptives Formular** und wenden das Design auf das Formular 
 
    ![Snapshot zum CRX-Repository](assets/3-2.png)
 
-1. Add two folders, `less` and `css`, and a file `css.txt` to the node created in step 1:
+1. hinzufügen zwei Ordner `less` und `css` und eine Datei `css.txt` auf den in Schritt 1 erstellten Knoten:
 
-   * `less` folder: Enthält die `less` Variablendateien, in denen Sie die `less` Variablen definieren und `less mixins` die zur Verwaltung der .css-Stile verwendet werden.
+   * `less` folder: Enthält die  `less` Variablendateien, in denen Sie die  `less` Variablen definieren und  `less mixins` die zur Verwaltung der .css-Stile verwendet werden.
 
       Dieser Ordner besteht aus den Variablendateien `less`, mixin-Dateien `less` und den Dateien `less`, mit deren Hilfe Stile mit mit Mixins und Variablen definiert werden. Diese Dateien werden dann alle in „styles.less“ importiert.
 
@@ -94,7 +95,7 @@ Sie erstellen ein **adaptives Formular** und wenden das Design auf das Formular 
    @button-font-color: #ffffff;
    ```
 
-   To override the `less`variables:
+   So überschreiben Sie die Variablen `less`
 
    1. Adaptive Standardformularvariablen importieren:
 
@@ -212,7 +213,7 @@ Nachdem Sie das Thema für adaptives Formular erstellt haben, führen Sie die fo
 
    Beispiel: `/apps/myAfCustomizations/myAfPages/forestPage`
 
-   1. Add a `sling:resourceSuperType` property and set its value as `fd/af/components/page/base`.
+   1. hinzufügen Sie eine `sling:resourceSuperType`-Eigenschaft und legen Sie als Wert `fd/af/components/page/base` fest.
 
       ![Snapshot zum CRX-Repository](assets/1-2.png)
 
@@ -229,7 +230,7 @@ Nachdem Sie das Thema für adaptives Formular erstellt haben, führen Sie die fo
 
    1. **Optional:** Überschreiben Sie die benutzerdefinierte Seite, überschreiben Sie je nach Bedarf „header.hsp“, „footer.jsp“ und „body.jsp“.
 
-1. Create a cutom template (for example: `/apps/myAfCustomizations/myAfTemplates/forestTemplate`) whose the jcr:content points to custom page created in the previous step (for example: `myAfCustomizations/myAfPages/forestPage)`.
+1. Erstellen Sie eine benutzerdefinierte Vorlage (z. B.: `/apps/myAfCustomizations/myAfTemplates/forestTemplate`), deren jcr:content auf eine benutzerdefinierte Seite verweist, die im vorherigen Schritt erstellt wurde (z. B.: `myAfCustomizations/myAfPages/forestPage)`.
 
    ![Snapshot zum CRX-Repository](assets/2-1.png)
 
