@@ -9,6 +9,9 @@ contentOwner: jsyal
 discoiquuid: dbc16a51-74c4-43bb-9501-081de1eb2f7d
 translation-type: tm+mt
 source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 100%
 
 ---
 
@@ -62,15 +65,15 @@ aem-screens-player-ios-3.3.0.ipa.zip
   </tr>
   <tr>
    <td><strong>AEM 6.3+SP1+Screens FP1 (1.0.64_B002)</strong></td> 
-   <td><strong>1.0.12</strong><br /> </td> 
+   <td><strong>1,0,12</strong><br /> </td> 
   </tr>
   <tr>
    <td><strong><strong>AEM 6.3+SP1+Screens FP2 (1.0.298)</strong></strong></td> 
-   <td><strong>1.0.48 </strong></td> 
+   <td><strong>1,0,48 </strong></td> 
   </tr>
   <tr>
    <td><strong>AEM 6.4</strong></td> 
-   <td><p><strong>1.0.48 </strong></p> </td> 
+   <td><p><strong>1,0,48 </strong></p> </td> 
   </tr>
  </tbody>
 </table>
