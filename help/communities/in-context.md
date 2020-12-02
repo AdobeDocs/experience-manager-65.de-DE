@@ -18,15 +18,15 @@ ht-degree: 1%
 ---
 
 
-# Kontextbezogene Moderation {#in-context-moderation}
+# In-Context-Moderation {#in-context-moderation}
 
-Bei AEM Communities kann die Moderation von Administratoren und vertrauenswürdigen Community-Mitgliedern direkt auf der veröffentlichten Seite, auf der die Community-Inhalte veröffentlicht wurden, durchgeführt werden.
+Für AEM Communities kann die Moderation von Administratoren und vertrauenswürdigen Community-Mitgliedern direkt auf der veröffentlichten Seite durchgeführt werden, auf der die Community-Inhalte veröffentlicht wurden.
 
-Bei Verwendung einer [Moderationskonsole](moderation.md)enthalten die für den Inhalt angezeigten Informationen einen Link zur veröffentlichten Seite, um den Zugriff auf zusätzliche Moderationsaktionen zu ermöglichen, die beim Moderieren im Kontext verfügbar sind.
+Bei Verwendung einer [Moderationskonsole](moderation.md) enthalten die für den Inhalt angezeigten Informationen einen Link zur veröffentlichten Seite, um Zugriff auf zusätzliche Moderationsaktionen zu gewähren, die bei der Moderation im Kontext verfügbar sind.
 
 ## Moderationsaktionen {#moderation-actions}
 
-Eine Beschreibung der [Moderationsaktionen](moderate-ugc.md#moderation-actions)finden Sie in der Moderationsübersicht.
+In der Moderationsübersicht finden Sie eine Beschreibung der [Moderationsaktionen](moderate-ugc.md#moderation-actions).
 
 ## Moderations-Benutzeroberfläche {#moderation-ui}
 
@@ -40,15 +40,15 @@ Die Benutzeroberfläche, die dem Moderator auf der Veröffentlichungsinstanz ang
 
 ## Beispiel {#example}
 
-Mithilfe der [Geometrixx-Engage](http://localhost:4503/content/sites/engage/en.html) -Website, die beim [Einstieg in AEM Communities](getting-started.md)erstellt wurde, können Sie schnell einen Thread in einem Forum einrichten, in dem Sie verschiedene Moderationsaktivitäten in der Umgebung &quot;Veröffentlichen&quot;erleben können, wie unten dargestellt.
+Mithilfe der Site [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html), die beim [Erste Schritte mit AEM Communities](getting-started.md) erstellt wurde, ist es möglich, schnell einen Thread in einem Forum einzurichten, auf dem verschiedene Moderationsaktivitäten in der Umgebung &quot;Veröffentlichen&quot;durchgeführt werden können, wie unten dargestellt.
 
 Aaron McDonald (aaron.mcdonald@mailinator.com) wurde als vertrauenswürdiges Community-Mitglied identifiziert, indem er ihn bei der Erstellung der Site zur Community-Interaktions-Moderatorengruppe hinzufügte.
 
-Rebekah Larsen (rebekah.larsen@trashymail.com) kann als Mitglied einer Community-Interaktionsgruppe über die [Members-Konsole](members.md)hinzugefügt werden.
+Rebekah Larsen (rebekah.larsen@trashymail.com) kann als Mitglied der Community-Interaktionsgruppe mithilfe der [Members console](members.md) hinzugefügt werden.
 
 Weitere Informationen zu Community-Benutzergruppen finden Sie unter [Verwalten von Benutzern und Benutzergruppen](users.md).
 
-### Forumbeiträge erstellen {#create-the-forum-posts}
+### Forumbeiträge {#create-the-forum-posts} erstellen
 
 * Als Rebekah Larsen anmelden (rebekah.larsen@trashymail.com)
 
@@ -97,9 +97,9 @@ Ein anonymer Site-Besucher kann nur die Ansicht des Forums durchführen, darf je
 
 ### Neues Mitglied (#4) {#new-member}
 
-Melden Sie sich beim Autor als Admin an und fügen Sie Boyd Larsen (boyd.larsen@dodgit.com) als neues Mitglied der Community-Interaktionsgruppe mithilfe der [Members-Konsole](members.md)hinzu und melden Sie sich dann ab.
+Melden Sie sich beim Autor als Admin an und fügen Sie Boyd Larsen (boyd.larsen@dodgit.com) als neues Mitglied der Community-Interaktionsmitglieder-Gruppe mit der [Members-Konsole](members.md) hinzu und melden Sie sich dann ab.
 
-Melden Sie sich bei der Veröffentlichung als Boyd Larsen an und greifen Sie auf den Thread zu, indem Sie ihn auswählen `Forum`und dann `Read more` für den Beitrag Hummingbird.
+Melden Sie sich bei der Veröffentlichung als Boyd Larsen an und greifen Sie auf den Thread zu, indem Sie `Forum` und dann `Read more` für den hummingbird-Beitrag auswählen.
 
 Hinweis:
 
@@ -124,9 +124,9 @@ Hinweis:
 
 ![community-admin-forum](assets/community-admin-forum.png)
 
-Wählen Sie im Menü &quot;Administration&quot;die Option zum Zugriff auf die [Moderationskonsole](moderation.md) in der Umgebung &quot;Veröffentlichen&quot;.
+Wählen Sie im Menü &quot;Administration&quot;die Option [Moderationskonsole](moderation.md) aus der Umgebung &quot;publish&quot;aus.
 
-Beachten Sie, dass für einen Administrator alle moderierbaren Inhalte sichtbar sind, nicht nur Inhalte von der Geometrixx Engage Community-Site.
+Beachten Sie, dass für einen Administrator alle moderierbaren Inhalte sichtbar sind, nicht nur Inhalte von der Community-Site von Geometrixx Engage.
 
 Der Suchfilter ist ein Sidepanel, das geöffnet oder geschlossen wird.
 
@@ -147,17 +147,17 @@ Hinweis:
 
 ![community-forum-moderator](assets/community-forum-moderator.png)
 
-Wählen Sie im Menü &quot;Administration&quot;die Option zum Zugriff auf die [Moderationskonsole](moderation.md) in der Umgebung &quot;Veröffentlichen&quot;.
+Wählen Sie im Menü &quot;Administration&quot;die Option [Moderationskonsole](moderation.md) aus der Umgebung &quot;publish&quot;aus.
 
-Beachten Sie, dass für einen Community-Moderator nur moderierbare Inhalte von der Geometrixx Engage-Community-Site sichtbar sind.
+Beachten Sie, dass für einen Community-Moderator nur moderierbare Inhalte von der Geometrixx Engage Community-Site sichtbar sind.
 
-Beachten Sie, dass der Community-Moderator dieselben Optionen wie der Administrator hat (Bild ist bei geschlossener Suchseitenleiste geschlossen), aber keinen Zugriff auf andere AEM-Konsolen hat.
+Beachten Sie, dass der Community-Moderator dieselben Optionen wie der Administrator hat (Bild ist bei geschlossener Suchseitenleiste geschlossen), aber keinen Zugriff auf andere AEM Konsolen hat.
 
 Abmelden.
 
 ![moderator-access](assets/moderator-access.png)
 
-### Content Author (#1) {#content-author}
+### Inhaltsautor (#1) {#content-author}
 
 Melden Sie sich bei Rebekah Larsen (rebekah.larsen@mailinator.com) an, einem Community-Mitglied, das den Thread gestartet hat, und greifen Sie auf den Thread zu, indem Sie Forum auswählen und dann mehr für den Beitrag von hummingbird lesen.
 
