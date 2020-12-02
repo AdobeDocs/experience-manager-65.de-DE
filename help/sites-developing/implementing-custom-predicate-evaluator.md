@@ -12,6 +12,9 @@ discoiquuid: ef253905-87da-4fa2-9f6c-778f1b12bd58
 docset: aem65
 translation-type: tm+mt
 source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+workflow-type: tm+mt
+source-wordcount: '795'
+ht-degree: 72%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
 
 In diesem Abschnitt ist beschrieben, wie Sie den [Query Builder](/help/sites-developing/querybuilder-api.md) durch Implementieren eines benutzerdefinierten Prädikat-Auswerters erweitern können.
 
-## Überblick {#overview}
+## Überblick{#overview}
 
 Mit dem [Query Builder](/help/sites-developing/querybuilder-api.md) können Sie problemlos das Inhalts-Repository abfragen. Im Lieferumfang sind eine Reihe Prädikat-Auswerter enthalten, die Ihnen den Umgang mit Daten erleichtern.
 
@@ -43,8 +46,8 @@ CODE AUF GITHUB
 
 Den Code dieser Seite finden Sie auf GitHub
 
-* [Open aem-search-custom-Predicate-evaluation project on GitHub](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
-* Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip) herunter
+* [Öffnen Sie das Projekt aem-search-custom-Predicate-evaluation auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
+* Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip) herunter.
 
 ### Prädikat-Auswerter im Detail {#predicate-evaluator-in-detail}
 
@@ -54,7 +57,7 @@ Dabei wird eine allgemeinere Sucheinschränkung (z. B. &quot;width > 200&quot;)
 
 >[!NOTE]
 >
->For more information about the `PredicateEvaluator` and the `com.day.cq.search` package see the [Java documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/search/package-summary.html).
+>Weitere Informationen zum `PredicateEvaluator`- und zum `com.day.cq.search`-Paket finden Sie in der [Java-Dokumentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/search/package-summary.html).
 
 ### Implementieren eines benutzerdefinierten Prädikat-Auswerters für Replikationsmetadaten {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
@@ -68,7 +71,7 @@ In diesem Beispiel wird in diesem Abschnitt beschrieben, wie ein benutzerdefinie
 
 #### Abfragen von Replikationsmetadaten mit Standard-Prädikat-Auswertern {#querying-replication-metadata-with-default-predicate-evaluators}
 
-The following query fetches the list of nodes in `/content` branch that have been activated by `admin` since the beginning of the year.
+Die folgende Abfrage ruft die Liste der Knoten in der `/content`-Verzweigung ab, die seit Jahresbeginn von `admin` aktiviert wurden.
 
 ```xml
 path=/content
@@ -98,7 +101,7 @@ replic.since=2013-01-01T00:00:00.000+01:00
 replic.action=Activate
 ```
 
-Durch die Gruppierung von Replikationsmetadaten wird eine aussagekräftige Abfrage mithilfe eines benutzerspezifischen Prädikatsauswerters erstellt.
+Durch die Gruppierung von Replikationsmetadaten wird eine aussagekräftige Abfrage mit einem benutzerdefinierten Prädikat-Evaluator ermöglicht.
 
 #### Aktualisieren von Maven-Abhängigkeiten {#updating-maven-dependencies}
 
@@ -110,11 +113,11 @@ Sie müssen zunächst die Maven-Abhängigkeiten Ihres Projekts aktualisieren. `P
 
 >[!NOTE]
 >
->The scope of the `cq-search` dependency is set to `provided` because `cq-search` will be provided by the `OSGi` container.
+>Der Gültigkeitsbereich der `cq-search`-Abhängigkeit ist auf `provided` eingestellt, da `cq-search` vom `OSGi`-Container bereitgestellt wird.
 
 pom.xml
 
-The following snippet shows the differences, in [unified diff format](https://en.wikipedia.org/wiki/Diff#Unified_format)
+Das folgende Codefragment zeigt die Unterschiede im Format [Unified diff](https://en.wikipedia.org/wiki/Diff#Unified_format)
 
 ```
 @@ -120,6 +120,12 @@
@@ -131,22 +134,22 @@ The following snippet shows the differences, in [unified diff format](https://en
              <version>3.8.1</version></dependency>
 ```
 
-[aem-search-custom-Predicate-evaluation ator](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)- [pom.xml](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/raw/7aed6b35b4c8dd3655296e1b10cf40c0dd1eaa61/pom.xml)
+[aem-search-custom-Predicate-evaluation ator](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)-  [pom.xml](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/raw/7aed6b35b4c8dd3655296e1b10cf40c0dd1eaa61/pom.xml)
 
 #### Schreiben von ReplicationPredicateEvaluator {#writing-the-replicationpredicateevaluator}
 
-The `cq-search` project contains the `AbstractPredicateEvaluator` abstract class. This can be extended with a few steps to implement your own custom predicate evaluator `(PredicateEvaluator`).
+Das `cq-search`-Projekt enthält die abstrakte Klasse `AbstractPredicateEvaluator`. Dies kann um einige Schritte erweitert werden, um Ihre eigenen benutzerdefinierten Prognoseauswerter `(PredicateEvaluator` zu implementieren.
 
 >[!NOTE]
 >
->Im folgenden Abschnitt wird erläutert, wie Sie einen `Xpath`-Ausdruck zum Filtern von Daten erstellen. Another option would be to implement the `includes` method that selects data on a row basis. Weitere Informationen finden Sie in der [Java-Dokumentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29).
+>Im folgenden Abschnitt wird erläutert, wie Sie einen `Xpath`-Ausdruck zum Filtern von Daten erstellen. Eine andere Möglichkeit wäre die Implementierung der `includes`-Methode, mit der Daten auf Zeilenbasis ausgewählt werden. Weitere Informationen finden Sie in der [Java-Dokumentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29).
 
 1. Erstellen Sie eine neue Java-Klasse zum Erweitern von `com.day.cq.search.eval.AbstractPredicateEvaluator`
-1. Annotate your class with a `@Component` like the following
+1. Kommentieren Sie Ihre Klasse mit einem `@Component` wie dem folgenden
 
    src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java
 
-   The following snippet shows the differences, in [unified diff format](https://en.wikipedia.org/wiki/Diff#Unified_format)
+   Das folgende Codefragment zeigt die Unterschiede im Format [Unified diff](https://en.wikipedia.org/wiki/Diff#Unified_format)
 
 ```
 @@ -19,8 +19,11 @@
@@ -163,11 +166,11 @@ The `cq-search` project contains the `AbstractPredicateEvaluator` abstract class
  }
 ```
 
-[aem-search-custom-Predicate-evaluation](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)- [src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/raw/ec70fac35fbd0d132e00c6066a204804e9cbe70f/src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java)
+[aem-search-custom-Predicate-evaluation](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)-  [src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/raw/ec70fac35fbd0d132e00c6066a204804e9cbe70f/src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java)
 
 >[!NOTE]
 >
->The `factory`must be a unique string starting with `com.day.cq.search.eval.PredicateEvaluator/`and ending with the name of your custom `PredicateEvaluator`.
+>Die `factory`muss eine eindeutige Zeichenfolge sein, die mit `com.day.cq.search.eval.PredicateEvaluator/`beginnt und mit dem Namen Ihres benutzerspezifischen `PredicateEvaluator` endet.
 
 >[!NOTE]
 >
@@ -306,4 +309,4 @@ public class ReplicationPredicateEvaluator extends AbstractPredicateEvaluator {
 }
 ```
 
-[aem-search-custom-Predicate-evaluation](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)- [src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/blob/master/src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java)
+[aem-search-custom-Predicate-evaluation](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)-  [src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/blob/master/src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java)
