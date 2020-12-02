@@ -12,6 +12,9 @@ discoiquuid: 666b967a-e94b-4f94-a676-00adf150580f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 100%
 
 ---
 
@@ -34,7 +37,7 @@ Wenn ein Launch für eine Seite (oder eine Reihe von Seiten) erstellt wurde, kö
    >
    >Sie können die Registerkarte **Seite** des Sidekicks verwenden, um Aktionen wie **Untergeordnete Seite erstellen** durchzuführen. 
 
-## Bearbeiten einer Launch-Konfiguration {#editing-a-launch-configuration}
+## Bearbeiten einer Launch-Konfiguration   {#editing-a-launch-configuration}
 
 Wenn Sie einen Launch erstellt haben, können Sie den Namen und das Datum des Launches ändern. Sie können auch ein Bild angeben, das Sie dem Launch zuweisen möchten.
 
@@ -47,6 +50,7 @@ Wenn Sie einen Launch erstellt haben, können Sie den Namen und das Datum des La
       * **Titel**
       * **Live-Datum**: dieses entspricht dem Launch-Datum 
       * **Produktionsbereit**
+
       Unter [Launches: Reihenfolge von Ereignissen](/help/sites-authoring/launches.md#launches-the-order-of-events) finden Sie Informationen über den Zweck und die Interaktion dieser Felder.
 
    * Auf der Registerkarte **Bild** können Sie eine Bilddatei hochladen.
@@ -54,7 +58,7 @@ Wenn Sie einen Launch erstellt haben, können Sie den Namen und das Datum des La
 
 1. Klicken Sie auf **Speichern**.
 
-## Ermitteln des Launch-Status einer Seite {#discovering-the-launch-status-of-a-page}
+## Ermitteln des Launch-Status einer Seite    {#discovering-the-launch-status-of-a-page}
 
 Wenn Sie den Launch einer Seite bearbeiten, werden unten auf der Registerkarte **Versionierung** des Sidekicks Informationen zum Launch angezeigt:
 
