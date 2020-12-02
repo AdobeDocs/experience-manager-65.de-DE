@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7d0d4f96-fc72-4e2b-a2cc-5741b0a30f74
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '386'
+ht-degree: 100%
 
 ---
 
@@ -49,7 +52,7 @@ Wenn mit Diensten Probleme auftreten, deaktivieren Sie die zugeordneten Endpunkt
 1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Endpunktverwaltung“.
 1. Aktivieren bzw. deaktivieren Sie auf der Seite „Endpunktverwaltung“ das Kontrollkästchen für den zu aktivierenden oder zu deaktivierenden Endpunkt und klicken Sie auf „Aktivieren“ oder „Deaktivieren“.
 
-## Endpunkt ändern {#modify-an-endpoint}
+## Endpunkt ändern  {#modify-an-endpoint}
 
 >[!NOTE]
 >
@@ -67,7 +70,7 @@ Wenn mit Diensten Probleme auftreten, deaktivieren Sie die zugeordneten Endpunkt
 
 Diese Aufgabe kann auch auf der Seite „Dienstverwaltung“ durchgeführt werden, indem Sie einen Dienst auswählen und dann auf die Registerkarte „Endpunkte“ klicken.
 
-## Endpunkt entfernen {#remove-an-endpoint}
+## Endpunkt entfernen  {#remove-an-endpoint}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Endpunktverwaltung“.
 1. Aktivieren Sie auf der Seite „Endpunktverwaltung“ das Kontrollkästchen für den zu entfernenden Endpunkt und klicken Sie auf „Entfernen“. Der Endpunkt wird nicht mehr angezeigt.
