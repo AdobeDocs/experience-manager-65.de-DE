@@ -50,11 +50,11 @@ Sie können die einmalige Anmeldung auch über SPNEGO aktivieren. (Siehe [Einmal
 
       Domäne3=UMdomain3
 
-### Zulässige Referenzen konfigurieren {#configure-allowed-referers}
+### Zulässige Referenzen konfigurieren  {#configure-allowed-referers}
 
 Die Schritte für die Konfiguration zulässiger Referenzen finden Sie unter [Zulässige Referenzen konfigurieren](/help/forms/using/admin-help/preventing-csrf-attacks.md#configure-allowed-referers).
 
-## Einmalige Anmeldung über SPNEGO aktivieren {#enable-sso-using-spnego}
+## Einmalige Anmeldung über SPNEGO aktivieren  {#enable-sso-using-spnego}
 
 Über SPNEGO (Simple and Protected GSSAPI Negotiation Mechanism) können Sie die einmalige Anmeldung (SSO) aktivieren, wenn Sie Active Directory als LDAP-Server in einer Windows-Umgebung verwenden. Wenn die einmalige Anmeldung aktiviert ist, sind die AEM Forms-Seiten für die Benutzeranmeldung nicht erforderlich und werden nicht angezeigt.
 
@@ -84,7 +84,7 @@ Sie können die einmalige Anmeldung auch über HTTP-Kopfzeilen aktivieren. (Sieh
 
 1. Konfigurieren Sie SPNEGO-Clientbrowsereinstellungen. (Siehe [Konfigurieren von SPNEGO-Clientbrowsereinstellungen](enabling-single-sign-on-aem.md#configuring-spnego-client-browser-settings).)
 
-### Benutzerkonto erstellen {#create-a-user-account}
+### Benutzerkonto erstellen  {#create-a-user-account}
 
 1. Sie müssen in SPNEGO einen Dienst als Benutzer in Active Directory auf dem Domänencontroller registrieren, der AEM Forms repräsentiert. Wechseln Sie auf dem Domänencontroller zu „Start“ > „Verwaltung“ > „Active Directory-Benutzer und -Computer“. Wenn der Eintrag nicht im Startmenü vorhanden ist, verwenden Sie die Systemsteuerung.
 1. Klicken Sie auf den Ordner „Benutzer“, um eine Liste der Benutzer anzuzeigen.
@@ -97,12 +97,12 @@ Sie können die einmalige Anmeldung auch über HTTP-Kopfzeilen aktivieren. (Sieh
 1. Geben Sie ein Kennwort ein. Legen Sie es beispielsweise auf *password* fest. Stellen Sie sicher, dass nur „Kennwort läuft nie ab“ und keine anderen Optionen aktiviert sind.
 1. Klicken Sie auf „Weiter“ und dann auf „Fertig stellen“.
 
-### Dienstprinzipalnamen (SPN) zuweisen {#map-a-service-principal-name-spn}
+### Dienstprinzipalnamen (SPN) zuweisen  {#map-a-service-principal-name-spn}
 
 1. Besorgen Sie sich das Dienstprogramm „KtPass“. Mit dessen Hilfe wird ein SPN einem Bereich zugewiesen. Sie können das Dienstprogramm „KtPass“ als Teil des Windows Server Tool Packs oder Resource Kits erhalten. (Siehe [Windows Server 2003 Service Pack 1 Support Tools](https://support.microsoft.com/kb/892777).)
 1. Führen Sie an einer Eingabeaufforderung den Befehl `ktpass` mit folgenden Argumenten aus:
 
-   `ktpass -princ HTTP/`*Host *`@`*REALM* - `-mapuser`*Benutzer *
+   `ktpass -princ HTTP/`** `@`** `-mapuser`*hostREALMuser*
 
    Geben Sie beispielsweise folgenden Text ein:
 
@@ -132,7 +132,7 @@ Versuchen Sie, den Benutzer als „spnegodemo@um.lc.com“ anzugeben:
 ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 ```
 
-### Fehler bei der Kerberos-Integritätsprüfung verhindern {#prevent-kerberos-integrity-check-failures}
+### Fehler bei der Kerberos-Integritätsprüfung verhindern  {#prevent-kerberos-integrity-check-failures}
 
 1. Wechseln Sie auf dem Domänencontroller zu „Start“ > „Verwaltung“ > „Active Directory-Benutzer und -Computer“. Wenn der Eintrag nicht im Startmenü vorhanden ist, verwenden Sie die Systemsteuerung.
 1. Klicken Sie auf den Ordner „Benutzer“, um eine Liste der Benutzer anzuzeigen.
@@ -141,7 +141,7 @@ ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 1. Geben Sie dasselbe Kennwort wie das zuvor eingegebene ein und bestätigen Sie es durch erneute Eingabe. In diesem Beispiel ist es auf `password` festgelegt.
 1. Deaktivieren Sie die Option „Benutzer muss Kennwort bei der nächsten Anmeldung ändern“ und klicken Sie dann auf „OK“.
 
-### SPNEGO-Clientbrowsereinstellungen konfigurieren {#configuring-spnego-client-browser-settings}
+### SPNEGO-Clientbrowsereinstellungen konfigurieren  {#configuring-spnego-client-browser-settings}
 
 Damit die SPNEGO-basierte Authentifizierung funktioniert, muss der Clientcomputer zu der Domäne gehören, in der das Benutzerkonto erstellt wurde. Sie müssen außerdem den Clientbrowser so konfigurieren, dass SPNEGO-basierte Authentifizierung zulässig ist. Ebenso muss die Site, die SPNEGO-basierte Authentifizierung erfordert, eine vertrauenswürdige Site sein.
 
@@ -153,11 +153,11 @@ Wenn der Zugriff auf den Server über den Computernamen, z. B. https://lcserver:
 1. Klicken Sie auf das Symbol „Lokales Intranet“ und klicken Sie auf „Websites“.
 1. Klicken Sie auf „Erweitert“ und geben Sie in das Feld „Diese Website zur Zone hinzufügen“ die URL Ihres Formularservers ein. Geben Sie beispielsweise `https://lcserver.um.lc.com`
 1. Klicken Sie wiederholt auf „OK“, bis alle Dialogfelder geschlossen sind.
-1. Testen Sie die Konfiguration durch Zugriff auf die URL Ihres AEM Forms-Servers. Geben Sie beispielsweise in das Feld &quot;Browser-URL&quot;Folgendes ein: `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`
+1. Testen Sie die Konfiguration durch Zugriff auf die URL Ihres AEM Forms-Servers. Geben Sie beispielsweise in das Feld Browser-URL `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true` ein.
 
 **Mozilla Firefox konfigurieren**
 
-1. In the browser URL box, type `about:config`
+1. Geben Sie in das Feld Browser-URL `about:config` ein
 
    Das Mozilla Firefox-Dialogfeld „about:config“ wird angezeigt.
 
