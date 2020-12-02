@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: 9cfe5f11-8a0e-4a27-9681-a8d50835c864
 translation-type: tm+mt
 source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+workflow-type: tm+mt
+source-wordcount: '1788'
+ht-degree: 76%
 
 ---
 
 
 # Dienstbenutzer in AEM{#service-users-in-aem}
 
-## Überblick {#overview}
+## Überblick{#overview}
 
-The main way of getting an administrative session or resource resolver in AEM was using the `SlingRepository.loginAdministrative()` and `ResourceResolverFactory.getAdministrativeResourceResolver()` methods provided by Sling.
+Die Hauptmethode zum Abrufen einer Verwaltungssitzung oder eines Ressourcenauflösers in AEM war die Verwendung der von Sling bereitgestellten `SlingRepository.loginAdministrative()`- und `ResourceResolverFactory.getAdministrativeResourceResolver()`-Methoden.
 
-Allerdings waren diese beiden Methoden um das sogenannte [Principle of Least Privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege) (Prinzip der geringsten Berechtigung) aufgebaut und sie machen es Entwicklern zu einfach, anfangs eine angemessene Struktur und entsprechende Zugriffssteuerungsebenen für die Inhalte zu ignorieren. If a vulnerability is present in such a service it often leads to privilege escalations to the `admin` user, even if the code itself would not need administrative privileges to work.
+Allerdings waren diese beiden Methoden um das sogenannte [Principle of Least Privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege) (Prinzip der geringsten Berechtigung) aufgebaut und sie machen es Entwicklern zu einfach, anfangs eine angemessene Struktur und entsprechende Zugriffssteuerungsebenen für die Inhalte zu ignorieren. Wenn eine Schwachstelle in einem solchen Dienst vorhanden ist, führt dies oft zu Privilegien-Eskalationen für den `admin`-Benutzer, selbst wenn der Code selbst keine Administratorrechte benötigt, um zu funktionieren.
 
 ## So werden Adminsitzungen abgebaut {#how-to-phase-out-admin-sessions}
 
@@ -63,29 +66,29 @@ Achten Sie außerdem darauf, dass alle neu entwickelten Funktionen diesen Richtl
 
 * **Datenschutzeinstellungen respektieren**
 
-   * In the case of private profiles, one example would be to not expose the profile picture, email or full name found on the private `/profile` node.
+   * Bei privaten Profilen wäre es beispielsweise nicht möglich, das Profil-, E-Mail- oder den vollständigen Namen auf dem privaten Knoten `/profile` anzuzeigen.
 
 ## Strenge Zugriffssteuerung {#strict-access-control}
 
-Unabhängig davon, ob Sie die Zugriffssteuerung während der Umstrukturierung von Inhalten oder bei einem neuen Dienstbenutzer anwenden, müssen Sie strengste Zugriffssteuerungslisten wie möglich anwenden. Verwenden Sie alle verfügbaren Funktionen für die Zugriffssteuerung:
+Unabhängig davon, ob Sie Zugriffskontrolle bei der Umstrukturierung von Inhalten oder bei einem neuen Dienstbenutzer anwenden, müssen Sie strengste Zugriffssteuerungslisten anwenden. Verwenden Sie alle verfügbaren Funktionen für die Zugriffssteuerung:
 
-* For example, instead of applying `jcr:read` on `/apps`, only apply it to `/apps/*/components/*/analytics`
+* Anstatt beispielsweise `jcr:read` auf `/apps` anzuwenden, wenden Sie es nur auf `/apps/*/components/*/analytics` an
 
 * Verwenden Sie [Einschränkungen](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
 
 * Wenden Sie Zugriffssteuerungsebenen für alle Knotentypen an.
 * Schränken Sie Berechtigungen ein.
 
-   * for example, when only needing to write properties, do not give the `jcr:write` permission; use `jcr:modifyProperties` instead
+   * Wenn Sie beispielsweise nur Eigenschaften schreiben müssen, geben Sie die `jcr:write`-Berechtigung nicht ein. Verwenden Sie stattdessen `jcr:modifyProperties`
 
 ## Dienstbenutzer und Zuordnungen {#service-users-and-mappings}
 
-If the above fails, Sling 7 offers a Service User Mapping service, which allows to configure a bundle-to-user mapping and two corresponding API methods: ` [SlingRepository.loginService()](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)` and ` [ResourceResolverFactory.getServiceResourceResolver()](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)` which return a session/resource resolver with the privileges of a configured user only. Diese Methoden verfügen über die folgenden Merkmale:
+Wenn die oben genannten Fehler fehlschlagen, stellt Sling 7 einen Dienst für die Dienstbenutzerzuordnung bereit, mit dem eine Bundle-zu-Benutzer-Zuordnung und zwei entsprechende API-Methoden konfiguriert werden können: ` [SlingRepository.loginService()](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)` und ` [ResourceResolverFactory.getServiceResourceResolver()](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)`, die einen Sitzungs-/Ressourcenauflöser mit den Rechten eines konfigurierten Benutzers zurückgeben. Diese Methoden verfügen über die folgenden Merkmale:
 
 * Sie ermöglichen die Zuordnung von Diensten zu Benutzern.
 * Sie ermöglichen die Definition von Unterdienstbenutzern.
 * Der zentrale Konfigurationspunkt ist: `org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl`.
-* `service-id` = `service-name` [ &quot;:&quot; subservice-name ] 
+* `service-id` =  `service-name` [ &quot;:&quot; subservice-name  ] 
 
 * `service-id` wird einem Resource Resolver und/oder einer JCR-Repository-Benutzer-ID zur Authentifizierung zugewiesen.
 * `service-name` ist der symbolische Name des Bundles, das den Service zur Verfügung stellt.
@@ -103,23 +106,23 @@ Ersetzen Sie eine Adminsitzung wie folgt durch einen Dienstbenutzer:
 1. Identifizieren Sie die erforderlichen Berechtigungen für den Dienst. Berücksichtigen Sie dabei das Prinzip der geringsten Berechtigung.
 1. Überprüfen Sie, ob bereits ein Benutzer mit denselben Berechtigungen, die Sie benötigen, vorhanden ist. Erstellen Sie einen neuen Systemdienstbenutzer, falls kein vorhandener Benutzer Ihren Anforderungen entspricht. RTC ist erforderlich, um einen neuen Dienstbenutzer zu erstellen. Manchmal ist es sinnvoll, mehrere Unterdienstbenutzer zu erstellen (beispielsweise einen zum Schreiben und einen zum Lesen), um den Zugriff noch weiter aufzuteilen.
 1. Richten Sie für Ihren Benutzer ACEs ein und testen Sie sie.
-1. Hinzufügen einer `service-user` Zuordnung für Ihren Dienst und für `user/sub-users`
+1. hinzufügen Sie eine `service-user`-Zuordnung für Ihren Dienst und für `user/sub-users`
 
 1. Stellen Sie das Dienstbenutzer-Sling-Feature Ihrem Bundle zur Verfügung: Aktualisieren Sie auf die neueste Version von `org.apache.sling.api`.
 
-1. Replace the `admin-session` in your code with the `loginService` or `getServiceResourceResolver` APIs.
+1. Ersetzen Sie `admin-session` in Ihrem Code durch die APIs `loginService` oder `getServiceResourceResolver`.
 
 ## Erstellen eines neuen Dienstbenutzers {#creating-a-new-service-user}
 
 Nachdem Sie überprüft haben, dass kein Benutzer in der Liste der AEM-Dienstbenutzer Ihrem Anwendungsfall entspricht und die jeweiligen RTC-Ausgaben genehmigt wurden, können Sie den neuen Benutzer zum Standardinhalt hinzufügen.
 
-The recommended approach is to create a service user to use the repository explorer at *https://&lt;server>:&lt;port>/crx/explorer/index.jsp*
+Es wird empfohlen, einen Dienstbenutzer zu erstellen, der den Repository Explorer unter *https://&lt;server>:&lt;port>/crx/explorer/index.jsp* verwendet
 
 Das Ziel ist, eine gültige Eigenschaft `jcr:uuid` zu erhalten, die erforderlich ist, um den Benutzer anhand einer Inhaltspaketinstallation zu erstellen.
 
 Dienstbenutzer erstellen Sie wie folgt:
 
-1. Going to the repository explorer at *https://&lt;server>:&lt;port>/crx/explorer/index.jsp*
+1. Wechseln Sie zum Repository Explorer unter *https://&lt;server>:&lt;port>/crx/explorer/index.jsp*
 1. Melden Sie sich als Administrator an, indem Sie oben links auf dem Bildschirm auf **Anmelden** klicken.
 1. Als Nächstes erstellen und benennen Sie Ihren Systembenutzer. Um den Benutzer als Systembenutzer zu erstellen, legen Sie für den intermediate-Pfad `system` fest und fügen Sie je nach Bedarf optionale Unterordner hinzu:
 
@@ -144,14 +147,14 @@ Vergewissern Sie sich beim Hinzufügen der entsprechenden „.content.xml“ zum
     rep:authorizableId="authentication-service"/>
 ```
 
-## Hinzufügen einer Konfigurationsänderung zur ServiceUserMapper-Konfiguration {#adding-a-configuration-amendment-to-the-serviceusermapper-configuration}
+## Hinzufügen einer Konfigurationsänderung zur ServiceUserMapper-Konfiguration  {#adding-a-configuration-amendment-to-the-serviceusermapper-configuration}
 
 Um eine Zuordnung vom Dienst zu den entsprechenden Systembenutzern hinzuzufügen, müssen Sie eine Werkskonfiguration für den Dienst ` [ServiceUserMapper](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html)` erstellen. Um die Modularität zu gewährleisten, können derartige Konfigurationen mithilfe des [Sling-Änderungsmechanismus](https://issues.apache.org/jira/browse/SLING-3578) bereitgestellt werden. Zum Installieren solcher Konfigurationen mit Ihrem Bundle wird [Sling Initial Content Loading](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html) empfohlen:
 
 1. Erstellen Sie einen Unterordner SLING-INF/content unterhalb des Ordners src/main/resources Ihres Bundles
 1. Erstellen Sie in diesem Ordner eine Datei mit dem Namen &quot;org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.changed-&lt;irgendein eindeutiger Name für Ihre Factory-Konfiguration>.xml mit dem Inhalt Ihrer Factory-Konfiguration (einschließlich aller Zuordnungen von Unterdienst-Benutzern). Beispiel:
 
-1. Create a `SLING-INF/content` folder below the `src/main/resources` folder of your bundle;
+1. Erstellen Sie einen Ordner `SLING-INF/content` unter dem Ordner `src/main/resources` Ihres Bundles.
 1. Erstellen Sie in diesem Ordner eine Datei `named org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-<a unique name for your factory configuration>.xml` mit dem Inhalt Ihrer Factory-Konfiguration, einschließlich aller Zuordnungen von Unterdienst-Benutzern.
 
    Wählen Sie zu Illustrationszwecken die Datei `org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-com.adobe.granite.auth.saml.xml` aus:
@@ -173,7 +176,7 @@ Um eine Zuordnung vom Dienst zu den entsprechenden Systembenutzern hinzuzufügen
    </node>
    ```
 
-1. Reference the Sling initial content in the configuration of the `maven-bundle-plugin` in the `pom.xml` of your bundle. Beispiel:
+1. Verweisen Sie auf den anfänglichen Sling-Inhalt in der Konfiguration von `maven-bundle-plugin` im `pom.xml` Ihres Bundles. Beispiel:
 
    ```xml
    <Sling-Initial-Content>
@@ -183,24 +186,24 @@ Um eine Zuordnung vom Dienst zu den entsprechenden Systembenutzern hinzuzufügen
 
 1. Installieren Sie das Bundle und prüfen Sie, ob die Werkskonfiguration installiert wurde. Gehen Sie dazu wie folgt vor:
 
-   * Going to the Web Console at *https://serverhost:serveraddress/system/console/configMgr*
+   * Gehen Sie zur Web-Konsole unter *https://serverhost:serveraddress/system/console/configMgr*
    * Suchen Sie nach **Apache Sling Service User Mapper Service Amendment**.
    * Klicken Sie auf den Link, um zu sehen, ob die korrekte Konfiguration vorhanden ist.
 
 ## Umgang mit freigegebenen Sitzungen in Diensten {#dealing-with-shared-sessions-in-services}
 
-Calls to `loginAdministrative()` often appear together with shared sessions. Diese Sitzungen werden bei Aktivierung des Diensts abgerufen und erst abgemeldet, wenn der Dienst gestoppt wird. Dies ist zwar gängige Praxis, führt aber zu zwei Problemen:
+Aufrufe von `loginAdministrative()` werden oft zusammen mit freigegebenen Sitzungen angezeigt. Diese Sitzungen werden bei Aktivierung des Diensts abgerufen und erst abgemeldet, wenn der Dienst gestoppt wird. Dies ist zwar gängige Praxis, führt aber zu zwei Problemen:
 
 * **Sicherheit:** Derartige Adminsitzungen werden verwendet, um Ressourcen oder andere Objekte, die an die freigegebene Sitzung gebunden sind, zwischenzuspeichern und zurückzugeben. Später im Aufrufstapel könnten diese Objekte für Sitzungen oder Resource Resolvers mit erhöhten Berechtigungen angepasst werden. Oft ist der aufrufenden Person nicht klar, dass sie mit einer Adminsitzung arbeitet.
 * **Leistung:** In Oak können freigegebene Sitzungen Leistungsprobleme verursachen, daher wird derzeit davon abgeraten, sie zu nutzen.
 
-The most obvious solution for the security risk is to simply replace the `loginAdministrative()` call with a `loginService()` one to a user with restricted privileges. Dies hat jedoch keine Auswirkungen auf potenzielle Leistungsbeeinträchtigungen. Eine Chance, dies zu verringern, besteht darin, alle erforderlichen Informationen in einem Objekt zu verpacken, das keine Verbindung zur Sitzung aufweist. Erstellen (oder zerstören) Sie die Sitzung dann bei Bedarf.
+Die offensichtlichste Lösung für das Sicherheitsrisiko besteht darin, den `loginAdministrative()`-Aufruf durch einen `loginService()`-Aufruf an einen Benutzer mit eingeschränkten Rechten zu ersetzen. Dies hat jedoch keine Auswirkungen auf potenzielle Leistungsbeeinträchtigungen. Eine Chance, dies zu verringern, besteht darin, alle erforderlichen Informationen in einem Objekt zu verpacken, das keine Verbindung zur Sitzung aufweist. Erstellen (oder zerstören) Sie die Sitzung dann bei Bedarf.
 
 Die empfohlene Vorgehensweise besteht darin, die API des Dienstes zu refaktorieren, um der aufrufenden Person die Kontrolle über die Erstellung bzw. Zerstörung der Sitzung zu gewähren.
 
-## Adminsitzungen in JSPs {#administrative-sessions-in-jsps}
+## Adminsitzungen in JSPs  {#administrative-sessions-in-jsps}
 
-JSPs cannot use `loginService()`, because there is no associated service. Verwaltungssitzungen in JSPs sind jedoch in der Regel ein Zeichen für eine Verletzung des MVC-Paradigmas.
+JSPs können `loginService()` nicht verwenden, da kein zugehöriger Dienst vorhanden ist. Verwaltungssitzungen in JSPs sind jedoch in der Regel ein Zeichen für eine Verletzung des MVC-Paradigmas.
 
 Dies kann auf zwei Arten behoben werden:
 
@@ -217,19 +220,19 @@ Bei der Verarbeitung von Ereignissen oder Aufträgen und in manchen Fällen Work
 
    **Vorteile:** Benutzerfreundlich.
 
-   **** Nachteile: Verwendet immer noch `loginAdministrative()`. Authentifiziert eine Anfrage erneut, die bereits authentifiziert wurde.
+   **Nachteile:** noch verwendet  `loginAdministrative()`. Authentifiziert eine Anfrage erneut, die bereits authentifiziert wurde.
 
 1. Erstellen oder erneutes Verwenden eines Dienstbenutzers, der Zugriff auf die Daten hat
 
    **Vorteile:** Entspricht aktuellem Design. Erfordert minimale Änderung.
 
-   **** Nachteile: Benötigt sehr leistungsstarke Dienstbenutzer, um flexibel zu sein, was leicht zu Privilegien-Eskalationen führen kann. Umgeht das Sicherheitsmodell.
+   **Nachteile:** Benötigt sehr leistungsstarke Dienstbenutzer, die flexibel sein können, was leicht zu Privilegien-Eskalationen führen kann. Umgeht das Sicherheitsmodell.
 
-1. Pass a serialization of the `Subject` in the event payload, and create a `ResourceResolver` based on that subject. Ein Beispiel ist die Verwendung des JAAS `doAsPrivileged` in der `ResourceResolverFactory`.
+1. Übergeben Sie eine Serialisierung von `Subject` in der Ereignis-Nutzlast und erstellen Sie eine `ResourceResolver`, die auf diesem Betreff basiert. Ein Beispiel ist die Verwendung des JAAS `doAsPrivileged` in der `ResourceResolverFactory`.
 
    **Vorteile:** Saubere Implementierung von einem Sicherheitsstandpunkt aus. Diese Methode vermeidet die erneute Authentifizierung und nutzt die ursprünglichen Berechtigungen. Sicherheitsrelevanter Code ist für den Verbraucher des Ereignisses nicht sichtbar.
 
-   **** Nachteile: Muss umgestaltet werden. Die Tatsache, dass sicherheitsrelevanter Code für den Verbraucher nicht sichtbar ist, kann auch zu Problemen führen.
+   **Nachteile:** Umgestaltung erforderlich. Die Tatsache, dass sicherheitsrelevanter Code für den Verbraucher nicht sichtbar ist, kann auch zu Problemen führen.
 
 Der dritte Ansatz ist derzeit die bevorzugte Verarbeitungsweise.
 
@@ -239,6 +242,6 @@ Innerhalb von Workflow-Prozessimplementierungen geht die entsprechende Benutzers
 
 Zur Behebung dieser Probleme sollten ebenfalls die Ansätze im Abschnitt [Verarbeiten von Ereignissen, Replikationsvorprozessen und Aufträgen](/help/sites-administering/security-service-users.md#processing-events-replication-preprocessors-and-jobs) verwendet werden.
 
-## Sling-POST-Prozesse und gelöschte Seiten {#sling-post-processors-and-deleted-pages}
+## Sling-POST-Prozesse und gelöschte Seiten  {#sling-post-processors-and-deleted-pages}
 
 In Sling-POST-Prozessimplementierungen werden mehrere Adminsitzungen verwendet. In der Regel werden Adminsitzungen verwendet, um auf Knoten zuzugreifen, die im verarbeiteten POST zur Löschung markiert sind. Daher sind sie nicht mehr über die Anfragesitzung verfügbar. Auf zur Löschung markierte Knoten kann zugegriffen werden, um Metadaten anzuzeigen, die ansonsten nicht sichtbar sein sollten.
