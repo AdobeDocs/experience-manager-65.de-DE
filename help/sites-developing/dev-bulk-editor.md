@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e9a1ff95-e88e-41f0-9731-9a59159b4653
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1849'
+ht-degree: 65%
 
 ---
 
@@ -53,14 +56,14 @@ Nachstehend finden Sie eine Liste der Abfrageparameter für den Bulk Editor:
    <td> Suchstammpfad</td>
   </tr>
   <tr>
-   <td> queryParams/qp<br /> </td>
+   <td> queryParams / qp<br /> </td>
    <td> Zeichenfolge</td>
-   <td> Suchabfrage</td>
+   <td> abfrage suchen</td>
   </tr>
   <tr>
    <td> contentMode / cm<br /> </td>
-   <td> Boolesch </td>
-   <td> Wenn true, ist der Inhaltsmodus aktiviert<br /> </td>
+   <td> Boolesch</td>
+   <td> Wenn "true", ist der Inhaltsmodus aktiviert<br /> </td>
   </tr>
   <tr>
    <td> colValue / cv<br /> </td>
@@ -74,87 +77,87 @@ Nachstehend finden Sie eine Liste der Abfrageparameter für den Bulk Editor:
   </tr>
   <tr>
    <td> initialSearch / is<br /> </td>
-   <td> Boolesch </td>
+   <td> Boolesch</td>
    <td> Wenn true, wird die Abfrage beim Laden der Seite ausgeführt<br /> </td>
   </tr>
   <tr>
-   <td> colsSelection/cs<br /> </td>
+   <td> colSelection / cs<br /> </td>
    <td> Zeichenfolge[]</td>
-   <td> Auswahl gesuchter Eigenschaften (als Kontrollkästchen angezeigt)</td>
+   <td> Auswahl der gesuchten Eigenschaften (als Kontrollkästchen angezeigt)</td>
   </tr>
   <tr>
-   <td> showGridOnly/sgo<br /> </td>
-   <td> Boolesch </td>
-   <td> Wenn "true", wird nur das Raster und nicht das Suchfeld angezeigt <br /> </td>
+   <td> showGridOnly / sgo<br /> </td>
+   <td> Boolesch</td>
+   <td> Wenn true, wird nur das Raster und nicht das Suchfeld <br /> angezeigt </td>
   </tr>
   <tr>
    <td> searchPanelCollapsed/spc</td>
-   <td> Boolesch </td>
+   <td> Boolesch</td>
    <td> Wenn "true", wird das Suchfeld beim Laden reduziert</td>
   </tr>
   <tr>
    <td> hideRootPath / hrp</td>
-   <td> Boolesch </td>
+   <td> Boolesch</td>
    <td> Wenn true, wird das Feld für den Stammpfad ausgeblendet</td>
   </tr>
   <tr>
    <td> hideQueryParams/hqp</td>
-   <td> Boolesch </td>
-   <td> Wenn true, wird das Abfragefeld ausgeblendet</td>
+   <td> Boolesch</td>
+   <td> Wenn "true", wird das Feld "Abfrage"ausgeblendet</td>
   </tr>
   <tr>
    <td> hideContentMode/hcm</td>
-   <td> Boolesch </td>
+   <td> Boolesch</td>
    <td> Wenn "true", wird das Feld "Inhaltsmodus"ausgeblendet</td>
   </tr>
   <tr>
    <td> hideColsSelection / hcs</td>
-   <td> Boolesch </td>
-   <td> blendet bei "true"das Auswahlfeld für Spalten aus</td>
+   <td> Boolesch</td>
+   <td> Wenn "true", wird das Auswahlfeld für Spalten ausgeblendet</td>
   </tr>
   <tr>
    <td> hideExtraCols / hec</td>
-   <td> Boolesch </td>
+   <td> Boolesch</td>
    <td> Wenn true, wird das Feld für zusätzliche Spalten ausgeblendet</td>
   </tr>
   <tr>
    <td> hideSearchButton</td>
-   <td> Boolesch </td>
-   <td> Wenn "true", wird die Suchschaltfläche ausgeblendet</td>
+   <td> Boolesch</td>
+   <td> Wenn true, wird die Suchschaltfläche ausgeblendet</td>
   </tr>
   <tr>
    <td> hideSaveButton/hsavep</td>
-   <td> Boolesch </td>
-   <td> bei "true"die Schaltfläche "Speichern"</td>
+   <td> Boolesch</td>
+   <td> Wenn "true", wird die Schaltfläche "Speichern"ausgeblendet</td>
   </tr>
   <tr>
    <td> hideExportButton/hexpb</td>
-   <td> Boolesch </td>
+   <td> Boolesch</td>
    <td> Wenn "true", wird die Exportschaltfläche ausgeblendet</td>
   </tr>
   <tr>
    <td> hideImportButton/hib</td>
-   <td> Boolesch </td>
-   <td> bei "true"die Importschaltfläche</td>
+   <td> Boolesch</td>
+   <td> Wenn "true", wird die Importschaltfläche ausgeblendet</td>
   </tr>
   <tr>
    <td> hideResultNumber / hrn</td>
-   <td> Boolesch </td>
+   <td> Boolesch</td>
    <td> Wenn "true", wird der Text der Rastersuchergebnisnummer ausgeblendet</td>
   </tr>
   <tr>
    <td> hideInsertButton / hinsertb</td>
-   <td> Boolesch </td>
+   <td> Boolesch</td>
    <td> Wenn "true", wird die Rastereinfügeschaltfläche ausgeblendet</td>
   </tr>
   <tr>
    <td> hideDeleteButton/hdelb</td>
-   <td> Boolesch </td>
+   <td> Boolesch</td>
    <td> Wenn "true", wird die Schaltfläche zum Löschen des Rasters ausgeblendet</td>
   </tr>
   <tr>
    <td> hidePathCol/hpc</td>
-   <td> Boolesch </td>
+   <td> Boolesch</td>
    <td> bei "true"wird die Rasterspalte "path"ausgeblendet</td>
   </tr>
  </tbody>
@@ -168,7 +171,7 @@ Mit der Produktlisten-Komponente können Benutzer eine Tabelle mit Daten anzeige
 
 Mit dem Bulk Editor können Sie Zeilen hinzufügen, ändern, löschen, filtern und exportieren, Änderungen speichern und einen Satz an Zeilen importieren. Jede Zeile wird als Knoten unter der Instanz der Produktlisten-Komponente gespeichert. Jede Zelle ist eine Eigenschaft eines jeden Knotens. Dies wurde bei der Entwicklung festgelegt und kann leicht geändert werden. Sie können Knoten beispielsweise auch an anderer Stelle im Repository speichern. Die Aufgabe des Abfrage-Servlets besteht darin, eine Liste der anzuzeigenden Knoten zurückzugeben; der Suchpfad ist als Produktliste-Instanz definiert.
 
-Der Quellcode der Komponente &quot;Produktliste&quot;ist im Repository unter /apps/geometrixx/components/productlist verfügbar und besteht aus mehreren Teilen wie allen AEM-Komponenten:
+Der Quellcode der Produktkomponenten-Liste ist im Repository unter /apps/geometrixx/components/productlist verfügbar und besteht aus mehreren Komponenten wie allen AEM:
 
 * HTML-Rendering: Das Rendering erfolgt in einer JSP-Datei (/apps/geometrixx/components/productlist/productlist.jsp). Die JSP-Datei liest die untergeordneten Knoten der aktuellen Produktlisten-Komponente und zeigt jeden dieser Knoten als Zeile einer HTML-Tabelle an.
 * Dialogfeld „Bearbeiten“: Hier definieren Sie die Bulk Editor-Konfiguration. Passen Sie das Dialogfeld an die Anforderungen der Komponente an: verfügbare Spalten und mögliche Aktionen, die beim Raster oder bei der Suche ausgeführt werden sollen. Informationen zu allen Konfigurationseigenschaften finden Sie unter [Konfigurationseigenschaften des Bulk Editors](#bulk-editor-configuration-properties).
@@ -264,7 +267,7 @@ Hier sehen Sie eine XML-Darstellung der untergeordneten Knoten des Dialogfelds:
         </editor>
 ```
 
-### Konfigurationseigenschaften des Bulk Editors {#bulk-editor-configuration-properties}
+### Konfigurationseigenschaften des Bulk Editors  {#bulk-editor-configuration-properties}
 
 Jeder Teil des Bulk Editors kann konfiguriert werden. In der folgenden Tabelle sind alle Konfigurationseigenschaften für den Bulk Editor aufgeführt.
 
@@ -284,7 +287,7 @@ Jeder Teil des Bulk Editors kann konfiguriert werden. In der folgenden Tabelle s
   </tr>
   <tr>
    <td>contentMode</td>
-   <td>True zum Aktivieren des Inhaltsmodus: Eigenschaften werden auf dem Knoten "jcr:content"und nicht auf dem Knoten "Suchergebnis"gelesen</td>
+   <td>True, um den Inhaltsmodus zu aktivieren: Eigenschaften werden auf dem Knoten "jcr:content"und nicht auf dem Knoten "Suchergebnis"gelesen</td>
   </tr>
   <tr>
    <td>colsValue</td>
@@ -296,7 +299,7 @@ Jeder Teil des Bulk Editors kann konfiguriert werden. In der folgenden Tabelle s
   </tr>
   <tr>
    <td>initialSearch</td>
-   <td>True für die Durchführung der Abfrage beim Laden der Seite</td>
+   <td>True für die Ausführung der Abfrage beim Laden der Seite</td>
   </tr>
   <tr>
    <td>colsSelection</td>
@@ -316,7 +319,7 @@ Jeder Teil des Bulk Editors kann konfiguriert werden. In der folgenden Tabelle s
   </tr>
   <tr>
    <td>hideQueryParams</td>
-   <td>Suchfeld ausblenden</td>
+   <td>Feld Abfrage ausblenden</td>
   </tr>
   <tr>
    <td>hideContentMode</td>
@@ -364,7 +367,7 @@ Jeder Teil des Bulk Editors kann konfiguriert werden. In der folgenden Tabelle s
   </tr>
   <tr>
    <td>queryURL</td>
-   <td>Pfad zum Abfrageservlet</td>
+   <td>Pfad zum Abfrage-Servlet</td>
   </tr>
   <tr>
    <td>exportURL</td>
@@ -520,9 +523,9 @@ Mit forcedPosition, den Metadaten für die erzwungene Position, können Sie fest
 
 Im vorhergehenden Beispiel ist die Auswahlspalte die erste Spalte mit forcedPosition = &quot;0&quot;.
 
-### Abfrage-Servlet {#query-servlet}
+### Abfrage-Servlet  {#query-servlet}
 
-By default, the Query servlet can be found at `/libs/wcm/core/components/bulkeditor/json.java`. Sie können einen anderen Pfad konfigurieren, um die Daten abzurufen.
+Standardmäßig befindet sich das Abfrage-Servlet unter `/libs/wcm/core/components/bulkeditor/json.java`. Sie können einen anderen Pfad konfigurieren, um die Daten abzurufen.
 
 Das Abfrage-Servlet funktioniert wie folgt: Es erhält eine GQL-Abfrage und die zurückzugebenden Spalten, berechnet die Ergebnisse und sendet sie als JSON-Stream zurück an den Bulk Editor.
 
@@ -570,6 +573,6 @@ Jede aktualisierte Eigenschaft wird im folgenden Format an das Servlet gesendet:
 
 Das Servlet muss wissen, wo die Eigenschaft catalogCode gespeichert ist.
 
-Eine standardmäßige Save-Servlet-Implementierung ist unter /libs/wcm/bulkeditor/save/POST.jsp verfügbar und wird in der Produktlistenkomponente verwendet. Es nimmt alle Parameter aus der Anforderung (mit dem Format &lt;jcr path>/&lt;property name>) und schreibt Eigenschaften mithilfe der JCR-API auf Knoten. Außerdem erstellt das Servlet Knoten, wenn sie nicht vorhanden sind (in das Raster eingefügte Zeilen).
+Eine standardmäßige Save-Servlet-Implementierung ist unter /libs/wcm/bulkeditor/save/POST.jsp verfügbar und wird in der Produktkomponente verwendet. Es nimmt alle Parameter aus der Anforderung (mit dem Format &lt;jcr path>/&lt;property name>) und schreibt Eigenschaften mithilfe der JCR-API auf Knoten. Außerdem erstellt das Servlet Knoten, wenn sie nicht vorhanden sind (in das Raster eingefügte Zeilen).
 
-Der Standardcode sollte nicht so verwendet werden, wie er das, was der Server nativ tut (ein POST unter &lt;jcr path>/&lt;property name>), erneut implementiert, und ist daher nur ein guter Ausgangspunkt zum Erstellen eines Save-Servlets, das ein Eigenschaftsvererbungsmodell verwaltet.
+Der Standardcode sollte nicht so verwendet werden, wie er es nativ implementiert (eine POST auf &lt;jcr path>/&lt;property name>), und ist daher nur ein guter Ausgangspunkt zum Erstellen eines Save-Servlets, das ein Eigenschaftsvererbungsmodell verwaltet.
