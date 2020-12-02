@@ -20,9 +20,9 @@ ht-degree: 4%
 
 # Konfiguration von Aktivierungsfunktionen {#configuring-enablement-features}
 
-## Übersicht {#overview}
+## Überblick{#overview}
 
-Die Aktivierungsfunktionen bieten die Möglichkeit, [Aktivierungsgemeinschaften](overview.md#enablement-community)zu erstellen.
+Die Aktivierungsfunktionen bieten die Möglichkeit, [Aktivierungsgemeinschaften](overview.md#enablement-community) zu erstellen.
 
 * Für diese Funktion sind zusätzliche Lizenzen für die Verwendung in einer Produktions-Umgebung erforderlich.
 
@@ -40,13 +40,13 @@ Installation von:
 
 * **FFmpeg**
 
-   FFmpeg ist eine Lösung zum Konvertieren und Streaming von Audio und Video und wird, wenn sie installiert ist, für die ordnungsgemäße Transkodierung von [Video-Assets](../../help/sites-authoring/default-components-foundation.md#video)verwendet. Bei Aktivierungs-Communities wird sie in der Autorenressource verwendet, um Metadaten für hochgeladene Umgebung abzurufen und eine Miniaturansicht zu generieren, die bei der Auflistung der Ressource angezeigt werden soll.
+   FFmpeg ist eine Lösung zum Konvertieren und Streaming von Audio und Video und wird bei Installation für die ordnungsgemäße Transkodierung von [Video Assets](../../help/sites-authoring/default-components-foundation.md#video) verwendet. Bei Aktivierungs-Communities wird sie in der Autorenressource verwendet, um Metadaten für hochgeladene Umgebung abzurufen und eine Miniaturansicht zu generieren, die bei der Auflistung der Ressource angezeigt werden soll.
 
 Einrichtung von:
 
 * **Community-Manager**
 
-   Bei aktivierten Communities können nur Mitglieder der `Community Enablement Managers` Benutzergruppe die Rolle zugewiesen werden, `Community Site Enablement Manager`deren Berechtigungen die Inhaltserstellung, Zuweisungen und Mitgliederverwaltung in der Umgebung &quot;Veröffentlichen&quot;umfassen können.
+   Bei Aktivierungsgemeinschaften können nur Mitglieder der Benutzergruppe `Community Enablement Managers` die Rolle `Community Site Enablement Manager` zugewiesen werden, deren Berechtigungen die Inhaltserstellung, Zuweisungen und Mitgliederverwaltung in der Umgebung &quot;Veröffentlichen&quot;umfassen können.
 
 Optionale Konfiguration von:
 
@@ -68,7 +68,7 @@ Jeder Schritt ist mit der Dokumentation verknüpft, die die erforderlichen Detai
 
    Web-Konsole verwenden (Pakete): *http://localhost:4502/system/console/bundles*
 
-   Installieren Sie *vor* der Installation des SCORM-Pakets
+   Installieren Sie *vor* das SCORM-Paket
 
 1. **[SCORM-Paket installieren](deploy-communities.md#scorm-package)**
 
@@ -105,9 +105,9 @@ Jeder Schritt ist mit der Dokumentation verknüpft, die die erforderlichen Detai
 
 **Auf Autoreninstanz:**
 
-1. (*Optional*) Analytics-Dienst **[konfigurieren](analytics.md)**
+1. (*Optional*) **[Konfigurieren des Analytics-Dienstes](analytics.md)**
 
-   Verwenden Sie Tools, Bereitstellung, Cloud Service-Konsole: *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
+   Verwenden Sie Tools, Bereitstellung, Cloud Services-Konsole: *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
 1. **[FFmpeg konfigurieren](ffmpeg.md#configure-ffmpeg-transcoding-service)**
 
@@ -123,11 +123,11 @@ Jeder Schritt ist mit der Dokumentation verknüpft, die die erforderlichen Detai
 
    Benutzer mit Pfad erstellen = /home/users/community
 
-   * Hinzufügen Mitglieder zu folgenden Gruppen:
+   * hinzufügen Mitglieder zu folgenden Gruppen:
 
       * Community-Aktivierungsmanager
       * Communities Administratoren
 
 ## Dispatcher {#dispatcher}
 
-Wenn die Bereitstellung den [AEM-Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)enthält, müssen die Aktivierungsfunktionen `clientheader` und - `filter` abschnitte geändert werden, damit die Funktionen ordnungsgemäß funktionieren. Siehe [Konfigurieren von Dispatcher für Communities](dispatcher.md#enablement).
+Wenn die Bereitstellung [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) enthält, müssen die Abschnitte `clientheader` und `filter` geändert werden, damit die Aktivierungsfunktionen ordnungsgemäß funktionieren. Siehe [Konfigurieren von Dispatcher für Communities](dispatcher.md#enablement).
