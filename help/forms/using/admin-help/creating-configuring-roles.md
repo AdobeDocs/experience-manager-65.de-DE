@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 737fb4d1-adef-47e1-9a0d-8cddd13132cb
 translation-type: tm+mt
 source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
+workflow-type: tm+mt
+source-wordcount: '2556'
+ht-degree: 51%
 
 ---
 
@@ -21,9 +24,9 @@ Auf den Webseiten von User Management können Sie Benutzer und Gruppen Rollen zu
 
 In User Management sind zwei Rollentypen verfügbar:
 
-**** Veränderliche Rollen: Dieser Rollentyp kann bearbeitet und gelöscht werden. Rollenberechtigungen können hinzugefügt und aus diesen Rollentypen gelöscht werden. Alle von Ihnen erstellten Rollen sind veränderliche Rollen. Sie können Benutzer und Gruppen, die veränderlichen Rollen zugewiesen sind, hinzufügen und entfernen.
+**Veränderliche Rollen:** Dieser Rollentyp kann bearbeitet und gelöscht werden. Rollenberechtigungen können hinzugefügt und aus diesen Rollentypen gelöscht werden. Alle von Ihnen erstellten Rollen sind veränderliche Rollen. Sie können Benutzer und Gruppen, die veränderlichen Rollen zugewiesen sind, hinzufügen und entfernen.
 
-**** Unveränderliche Rollen: Die in User Management enthaltenen Standardrollen sind unveränderliche Rollen. Diese Rollen können nicht bearbeitet oder gelöscht werden. Sie können jedoch Benutzer und Gruppen, die unveränderlichen Rollen zugewiesen sind, hinzufügen und entfernen.
+**Unveränderliche Rollen:** Die Standardrollen, die in User Management enthalten sind, sind unveränderliche Rollen. Diese Rollen können nicht bearbeitet oder gelöscht werden. Sie können jedoch Benutzer und Gruppen, die unveränderlichen Rollen zugewiesen sind, hinzufügen und entfernen.
 
 Über die AEM Forms-APIs können ebenfalls sowohl veränderliche als auch unveränderliche Rollen erstellt werden.
 
@@ -31,63 +34,63 @@ In User Management sind zwei Rollentypen verfügbar:
 
 Die folgenden Standardrollen sind in der User Management-Datenbank enthalten:
 
-**** Administration Console-Benutzer: Kann auf Administration Console zugreifen.
+**Administration Console-Benutzer:** Kann auf Administration Console zugreifen.
 
-**** Anwendungsadministrator: Kann alle Workbench-Funktionen verwenden. Kann die Seiten „Anwendungen“ und „Dienste“ in der Administration Console verwenden, um Laufzeiteigenschaften, Endpunkte und Sicherheit von Diensten zu konfigurieren.
+**Anwendungsadministrator:** Kann alle Funktionen von Workbench verwenden. Kann die Seiten „Anwendungen“ und „Dienste“ in der Administration Console verwenden, um Laufzeiteigenschaften, Endpunkte und Sicherheit von Diensten zu konfigurieren.
 
-**** AEM Forms-Administrator: Kann alle Aufgaben für alle installierten Dienste ausführen.
+**AEM Forms-Administrator:** Kann alle Aufgaben für alle installierten Dienste ausführen.
 
-**** Sicherheitsadministrator: Steuert User Management-Einstellungen und verwaltet Benutzer und Gruppen, die mit einer User Manager-Domäne verknüpft sind
+**Sicherheitsadministrator:** Steuert User Management-Einstellungen und verwaltet Benutzer und Gruppen, die mit einer User Manager-Domäne verknüpft sind
 
-**** Dienstbenutzer: Kann alle Dienste anzeigen und aufrufen
+**Dienste-Benutzer:** Kann einen Dienst aufrufen und Ansicht ausführen
 
-**** Superadministrator: Hat Zugriff auf alle Verwaltungsfunktionen im System, einschließlich Dienste
+**Superadministrator:** Hat Zugriff auf alle Verwaltungsfunktionen im System, einschließlich Dienste
 
-**** Vertrauensadministrator: Kann die PKI-Vertrauenseinstellungen und PKI-Berechtigungen verwalten, die über die Seite &quot;Trust Store-Verwaltung&quot;in Administration Console verwaltet werden
+**Vertrauensadministrator:** Kann die PKI-Vertrauenseinstellungen und PKI-Berechtigungen verwalten, die über die Seite &quot;Trust Store-Verwaltung&quot;in Administration Console verwaltet werden
 
 ### Zusätzliche Standardrollen {#additional-default-roles}
 
 Je nach den installierten AEM Forms-Komponenten können die folgenden zusätzlichen Standardrollen vorhanden sein:
 
-**** Benutzer der Anwendung zum Hochladen von Dokumenten: Kann Dokumente mit Flex Remoting hochladen.
+**Anwendungsbenutzer zum Hochladen von Dokumenten:** Kann Dokumente mit Flex Remoting hochladen.
 
-**** Forms-Administrator: Kann Einstellungen in Administration Console auf der Seite &quot;Formulare&quot;anzeigen und ändern
+**Forms-Administrator:** Kann Einstellungen in Administration Console auf der Seite &quot;Forms&quot;Ansicht und Änderung vornehmen
 
-**** AEM Forms Contentspace-Administrator: Kann Einstellungen in Administration Console auf der Seite &quot;Content Services&quot;(nicht mehr unterstützt) anzeigen und ändern
+**AEM Forms Contentspace-Administrator:** Kann Einstellungen auf der Seite &quot;Content Services&quot;(nicht mehr unterstützt) in Administration Console Ansicht und ändern
 
-**** AEM Forms Contentspace-Benutzer: Kann sich bei den Contentspace-Webseiten (nicht mehr unterstützt) anmelden
+**AEM Forms Contentspace-Benutzer:** Kann sich auf den Contentspace-Webseiten (nicht mehr unterstützt) anmelden
 
-**** Documentum Connector-Administrator: Kann Einstellungen in Administration Console auf der Seite &quot;Connector für EMC Documentum&quot;anzeigen und ändern
+**Documentum Connector-Administrator:** Kann Einstellungen auf der Seite &quot;Connector für EMC Documentum&quot;in Administration Console Ansicht und ändern.
 
-**** AEM Forms FileNet Connector-Administrator: Kann Einstellungen in Administration Console auf der Seite &quot;Connector für IBM FileNet&quot;anzeigen und ändern
+**AEM Forms FileNet Connector-Administrator: Kann Einstellungen auf der Seite &quot;Connector für IBM FileNet&quot;in Administration Console Ansicht und ändern.** 
 
-**** AEM Forms IBM CM Connector-Administrator: Kann Einstellungen in Administration Console auf der Seite &quot;Connector für IBM Content Manager&quot;anzeigen und ändern
+**AEM Formulare IBM CM Connector-Administrator:** Kann Einstellungen auf der Seite &quot;Connector für IBM Content Manager&quot;in Administration Console Ansicht und ändern
 
-**** Rights Management-Administrator: Führt alle für alle Serverkonfigurationen erforderlichen Aufgaben auf den entsprechenden Rights Management-Seiten aus
+**Rights Management-Administrator:** Führt alle Aufgaben aus, die für alle Serverkonfigurationen auf den entsprechenden Rights Management-Seiten erforderlich sind
 
-**** Rights Management-Endbenutzer: Kann auf Rights Management-Webseiten für Endbenutzer zugreifen
+**Endbenutzer des Rights Managements:** Kann auf Rights Management-Webseiten für Endbenutzer zugreifen
 
-**** Rights Management - Benutzer einladen: Kann Benutzer einladen
+**Rights Management-Einladungsbenutzer:** Kann Benutzer einladen
 
-**** Rights Management - Eingeladene und lokale Benutzer verwalten: Kann Aufgaben ausführen, die zur Verwaltung aller eingeladenen und lokalen Benutzer auf den entsprechenden Rights Management-Seiten erforderlich sind
+**Rights Management eingeladene und lokale Benutzer verwalten:** Kann Aufgaben durchführen, die zum Verwalten aller eingeladenen und lokalen Benutzer auf den entsprechenden Rights Management-Seiten erforderlich sind
 
-**** Rights Management-Richtliniensatzadministrator: Führt alle Aufgaben aus, die für alle Richtliniensätze auf den entsprechenden Rights Management-Seiten erforderlich sind
+**Rights Management-Richtliniensatzadministrator:** Führt alle Aufgaben aus, die für alle Richtliniensätze auf den entsprechenden Rights Management-Seiten erforderlich sind
 
-**** Rights Management Superadministrator: Führt alle erforderlichen Aufgaben auf der Seite &quot;Rights Management&quot;aus
+**Rights Management Super Administrator:** Führt alle erforderlichen Aufgaben auf der Seite &quot;Rights Management&quot;aus
 
-**** AEM forms Workspace-Administrator: Kann Einstellungen in Administration Console auf der Seite &quot;Workspace&quot;anzeigen und ändern
+**AEM forms Workspace-Administrator:** Kann Einstellungen auf der Seite &quot;Workspace&quot;in Administration Console Ansicht und ändern
 
 ***Hinweis **: Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.*
 
-**** Workspace-Benutzer: Kann sich bei der Workspace-Anwendung für Endbenutzer anmelden
+**Workspace-Benutzer:** Kann sich bei der Workspace-Endbenutzeranwendung anmelden
 
-**** Output-Administrator: Kann Einstellungen in Administration Console auf der Seite &quot;Ausgabe&quot;anzeigen und ändern
+**Output-Administrator:** Kann Einstellungen auf der Seite &quot;Ausgabe&quot;in Administration Console Ansicht und ändern
 
-**** PDFG-Administrator: Kann Einstellungen in Administration Console auf der Seite &quot;PDF Generator&quot;anzeigen und ändern
+**PDFG-Administrator:** Kann Einstellungen auf der Seite &quot;PDF Generator&quot;in Administration Console Ansicht und ändern
 
-**** PDFG-Benutzer: Kann auf alle nicht administrativen Funktionen von PDF Generator zugreifen
+**PDFG-Benutzer:** Kann auf alle nicht administrativen Funktionen für PDF Generator zugreifen
 
-**** Acrobat Reader DC Extensions-Webanwendung: Kann die Acrobat Reader DC Extensions-Webanwendung verwenden
+**Acrobat Reader DC Extensions-Webanwendung:** Kann die Acrobat Reader DC Extensions-Webanwendung verwenden
 
 >[!NOTE]
 >
@@ -119,7 +122,7 @@ Je nach den installierten AEM Forms-Komponenten können die folgenden zusätzlic
 1. Um Benutzer- und Gruppendetails anzuzeigen, wählen Sie die Entität aus.
 1. Klicken Sie auf „OK“ und dann auf „Fertig stellen“.
 
-## Rollen bearbeiten {#edit-a-role}
+## Rollen bearbeiten  {#edit-a-role}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Rollenverwaltung“ und dann auf „Rollenname“.
 
@@ -136,7 +139,7 @@ Je nach den installierten AEM Forms-Komponenten können die folgenden zusätzlic
    * Um die Rolle neuen Benutzern und Gruppen zuzuweisen, klicken Sie auf „Benutzer/Gruppen suchen“ und geben die Suchinformationen ein. Aktivieren Sie die Kontrollkästchen für die Benutzer bzw. Gruppen, die dieser Rolle zugewiesen werden sollen, klicken Sie auf „OK“ und anschließend auf „Speichern“.
    * Um die Rolle zu entfernen, aktivieren Sie das Kontrollkästchen für die betreffenden Benutzer oder Gruppen, klicken auf „Zuweisung aufheben“ und anschließend auf „Speichern“.
 
-## Rollen löschen {#delete-a-role}
+## Rollen löschen  {#delete-a-role}
 
 Sie können alle von Ihnen erstellten Rollen löschen, jedoch nicht die AEM Forms-Standardrollen, die im Produkt enthalten sind.
 
@@ -146,7 +149,7 @@ Sie können alle von Ihnen erstellten Rollen löschen, jedoch nicht die AEM Form
 
 1. Aktivieren Sie das Kontrollkästchen der zu löschenden Rolle und klicken Sie erst auf „Löschen“ und anschließend auf „OK“.
 
-## Rollen Benutzern und Gruppen zuweisen {#assign-a-role-to-users-and-groups}
+## Rollen Benutzern und Gruppen zuweisen  {#assign-a-role-to-users-and-groups}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Benutzer und Gruppen“.
 1. Geben Sie Informationen zum Eingrenzen der Suche ein und klicken Sie auf „Suchen“. Die Suchergebnisse werden im unteren Seitenbereich angezeigt. Sie können die Liste durch Klicken auf die Spaltenüberschriften sortieren.
@@ -155,7 +158,7 @@ Sie können alle von Ihnen erstellten Rollen löschen, jedoch nicht die AEM Form
 
 Die Rollenzuweisung ist auch über die Seite „Rollenverwaltung“ möglich.
 
-## Die einer Rolle zugewiesenen Benutzer oder Gruppen ermitteln {#determine-who-is-assigned-to-a-role}
+## Die einer Rolle zugewiesenen Benutzer oder Gruppen ermitteln  {#determine-who-is-assigned-to-a-role}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Rollenverwaltung“ und dann auf „Rollenname“.
 
@@ -163,7 +166,7 @@ Die Rollenzuweisung ist auch über die Seite „Rollenverwaltung“ möglich.
 
 1. Klicken Sie auf der Seite „Rollendetails“ auf die Registerkarte „Rollenbenutzer“. Daraufhin wird eine Liste mit Benutzern und Gruppen angezeigt, die direkt mit der Rolle verknüpft sind.
 
-## Rollenberechtigungen ändern {#change-role-permissions}
+## Rollenberechtigungen ändern  {#change-role-permissions}
 
 Sie können die Berechtigungen für alle Rollen, die Sie erstellt haben, ändern. Sie können die Berechtigungen für die AEM Forms-Standardrollen, die in dem Produkt enthalten sind, nicht ändern.
 
@@ -175,167 +178,167 @@ Sie können die Berechtigungen für alle Rollen, die Sie erstellt haben, ändern
 1. Um diese Berechtigungen zu ändern, klicken Sie auf „Berechtigungen suchen“, aktivieren die Kontrollkästchen für die zur Rolle hinzuzufügenden Berechtigungen, klicken auf „OK“ und anschließend auf „Speichern“.
 1. Um eine Berechtigung zu löschen, wählen Sie die Berechtigung aus, klicken auf „Löschen“ und anschließend auf „Speichern“.
 
-### AEM Forms-Berechtigungen {#aem-forms-permissions}
+### AEM Forms-Berechtigungen  {#aem-forms-permissions}
 
-**** ADD_REMOVE_ENDPOINT_PERM: Endpunkte für einen Dienst hinzufügen, entfernen und ändern
+**hinzufügen_REMOVE_ENDPOINT_PERM:** Hinzufügen, Entfernen und Ändern von Endpunkten für einen Dienst
 
-**** Admin-Konsole Anmeldung: Administration Console anzeigen
+**Admin Console Login:** Ansicht der Verwaltungskonsole
 
-**** Zertifikat ändern: Die Vertrauenseinstellungen aller Zertifikate im Trust Store ändern
+**Zertifikat ändern:** Ändern Sie die Vertrauenseinstellungen aller Zertifikate im Trust Store
 
-**** Zertifikat lesen: Jedes Zertifikat im Trust Store lesen
+**Zertifikat gelesen: Jedes Zertifikat im Trust Store** lesen
 
-**** Zertifikat schreiben: Zertifikat zum Trust Store hinzufügen
+**Zertifikat schreiben:** Hinzufügen ein Zertifikat an den Trust Store
 
-**** Komponente hinzufügen: Neue Komponente im System installieren
+**Komponente Hinzufügen:Neue Komponente im System** installieren
 
-**** Komponente löschen: Alle Komponenten im System löschen
+**Komponente löschen: Komponenten im System** löschen
 
-**** Komponente lesen: Beliebige Komponenten im System lesen
+**Komponente lesen:Komponenten im System** lesen
 
-**** Contentspace-Administrator: Berechtigung für Contentspace-Administrator (nicht mehr unterstützt)
+**Contentspace-Administrator:** Berechtigung für Contentspace-Administrator (nicht mehr unterstützt)
 
-**** Contentspace-Konsolenanmeldung: Berechtigung für Anmeldung bei der Contentspace-Konsole (nicht mehr unterstützt)
+**Contentspace-Konsolenanmeldung:** Berechtigung für die Anmeldung bei der Contentspace-Konsole (nicht mehr unterstützt)
 
-**** Core Settings Control: Einstellungen auf der Seite &quot;Core-Systemeinstellungen&quot;in Administration Console verwalten
+**Core-Einstellungssteuerung:Einstellungen auf der Seite &quot;Core-Systemeinstellungen&quot;in Administration Console** verwalten
 
-**** CREATE_VERSION_PERM: Neue Version eines Dienstes erstellen
+**CREATE_VERSION_PERM:** Neue Version eines Dienstes erstellen
 
-**** Berechtigung ändern: Signaturberechtigung im Trust Store ändern
+**Berechtigung ändern:** Unterschriftsberechtigungen im Trust Store ändern
 
-**** Berechtigung lesen: Signierberechtigung im Trust Store lesen
+**Berechtigung gelesen:** Signaturberechtigung im Trust Store lesen
 
-**** Berechtigung schreiben: Berechtigung zum Signieren zum Trust Store hinzufügen
+**Berechtigung schreiben:** Hinzufügen eine Berechtigung zum Signieren im Trust Store
 
-**** CRL ändern: Alle Zertifikatsperrlisten im Trust Store ändern
+**Zertifikatsperrliste ändern:Zertifikatsperrliste (Certificate Revocation Liste) im Trust Store** ändern
 
-**** CRL lesen: Alle Zertifikatsperrlisten im Trust Store lesen
+**CRL lesen:Zertifikatsperrlisten im Trust Store** lesen
 
-**** CRL schreiben: Zertifikatsperrliste zum Trust Store hinzufügen
+**Zertifikatsperrliste schreiben:** Hinzufügen eine Zertifikatsperrliste in den Trust Store
 
-**** Delegate: Eine ACL für eine Ressource festlegen
+**Delegate:ACL für eine Ressource** festlegen
 
-**** DELETE_VERSION_PERM: Eine Version eines Dienstes löschen
+**DELETE_VERSION_PERM:Dienstversion** löschen
 
-**** Dokument hochladen: Dokumente in AEM forms hochladen
+**Dokument-Upload:Dokumente in AEM Formularen** hochladen
 
-**** Domänensteuerung: Einstellungen für eine beliebige User Management-Domäne einschließlich Authentifizierung und Ordneranbieter erstellen, löschen oder ändern
+**Domänensteuerung:Einstellungen für jede User Management-Domäne, einschließlich Authentifizierungs- und Ordneranbietern,** erstellen, löschen oder ändern
 
-**** Ereignistyp bearbeiten: Bearbeiten zu Ereignistypen
+**Ereignistyp bearbeiten:** Zu Ereignistypen bearbeiten
 
-**** Identitäts-Impersonation kontrollieren: Identität in User Manager imitieren
+**Identitäts-Impersonation-Steuerelement:Identität** imitieren in User Manager
 
-**** INVOKE_PERM: Aufrufen aller Vorgänge für einen Dienst
+**INVOKE_PERM:** Alle Vorgänge für einen Dienst aufrufen
 
-**** LCDS-Datenmodellsteuerung: Datenmodelle in Data Services lesen und bereitstellen
+**LCDS-Datenmodellsteuerung:Datenmodelle** lesen und bereitstellen in Data Services
 
-**** License Manager-Aktualisierung: Lizenzinformationen aktualisieren
+**License Manager-Update:Lizenzinformationen** aktualisieren
 
-**** MODIFY_CONFIG_PERM: Konfiguration eines Dienstes ändern
+**MODIFY_CONFIG_PERM:Konfiguration eines Dienstes** ändern
 
-**TERM** Ändern der Version eines Dienstes
+**Ändern** der Version eines Dienstes
 
-**** PDFGAdminPermission: PDFG-Administrator
+**PDFGAdminPermission:** PDFG-Administrator
 
-**** PDFGUserPermission: PDFG-Benutzer
+**PDFGUserPermission:** PDFG-Benutzer
 
-**** PERM_DCTM_ADMIN: Documentum Connector-Administrator
+**PERM_DCTM_ADMIN:** Documentum Connector-Administrator
 
-**** PERM_FILENET_ADMIN: FileNet Connector-Administrator
+**PERM_FILENET_ADMIN:** FileNet Connector-Administrator
 
-**** PERM_FORMS_ADMIN: Forms-Administrator
+**PERM_FORMS_ADMIN:** Forms-Administrator
 
-**** PERM_IBMCM_ADMIN: IBM CM Connector-Administrator
+**PERM_IBMCM_ADMIN:** IBM CM Connector-Administrator
 
-**** PERM_OUTPUT_ADMIN: Output-Administrator
+**PERM_OUTPUT_ADMIN:** Output-Administrator
 
-**** PERM_READER_EXTENSIONS_WEB_APPLICATION: Verwenden der Acrobat Reader DC Extensions-Webanwendung
+**PERM_READER_EXTENSIONS_WEB_APPLICATION:** Verwenden der Acrobat Reader DC Extensions-Webanwendung
 
-**** PERM_SP_ADMIN: SharePoint Connector-Einstellungen verwalten
+**PERM_SP_ADMIN:SharePoint-Connector-Einstellungen** verwalten
 
-**** PERM_WORKSPACE_ADMIN: Einstellungen für Arbeitsflächen verwalten
+**PERM_WORKSPACE_ADMIN:Workspace-Einstellungen** verwalten
 
-**** PERM_WORKSPACE_USER: Bei der Workspace-Anwendung für Endbenutzer anmelden
+**PERM_WORKSPACE_USER:** Melden Sie sich bei der Workspace-Endbenutzeranwendung an
 
-**** Hauptsteuerung: Benutzer und Gruppen für jede Domäne verwalten und Rollenzuweisungen für alle Benutzer und Gruppen in jeder Domäne verwalten
+**Prinzipalsteuerung:Benutzer und Gruppen für jede Domäne** verwalten und Rollenzuweisungen für alle Benutzer und Gruppen in jeder Domäne verwalten
 
-**** Prozessaufzeichnung lesen/löschen: Workflow-Prüfinstanzen auflisten und abrufen
+**Prozessaufzeichnung lesen/löschen:** Liste und Abrufen von Workflow-Prüfinstanzen
 
-**** PROCESS_OWNER_PERM: Trenddaten anzeigen und Verwaltungsaktionen für einen Dienst ausführen, der aus einem Prozess erstellt wurde
+**PROCESS_OWNER_PERM:Trenddaten zur** Ansicht und Verwaltungsaktionen für einen Dienst, der aus einem Prozess erstellt wurde
 
-**** Lesen: Inhalt einer Ressource lesen
+**Lesen:Inhalt einer Ressource** lesen
 
-**** READ_PERM: Dienst lesen oder anzeigen
+**READ_PERM:Dienst** lesen oder Ansicht
 
-**** Bestätigung erneuern: erneuern von Zusicherungen in User Management
+**Verlängerung der Bestätigung:** erneute Zusicherungen in User Management
 
-**** Repository-Delegate: Eine ACL für eine Ressource festlegen
+**Repository-Delegate:ACL für eine Ressource** festlegen
 
-**** Repository lesen: Inhalt einer Ressource lesen
+**Repository lesen:Inhalt einer Ressource** lesen
 
-**** Repository durchlaufen: Eine Ressource in eine Listenressourcenanforderung einschließen oder die Metadaten einer Ressource lesen
+**Repository durchlaufen: Eine Ressource in eine Ressourcenanforderung** einschließen oder die Metadaten einer Liste lesen
 
-**** Repository schreiben: Repository-Metadaten und -Inhalte schreiben
+**Repository schreiben:Repository-Metadaten und -Inhalte** schreiben
 
-**** Rights Management - Richtlinieneigentümer ändern: Richtlinieneigentümer ändern
+**Richtlinieneigentümer für Rights Management ändern:Richtlinieneigentümer** ändern
 
-**** Rights Management-Endbenutzerkonsole - Anmeldung: Bei der Rights Management-Benutzeroberfläche für Endbenutzer anmelden
+**Rights Management-Endbenutzerkonsole - Anmeldung:** Anmelden bei der Benutzeroberfläche für Endbenutzer des Rights Managements
 
-**** Rights Management - Konfiguration verwalten: Serverkonfiguration verwalten
+**Rights Management - Konfiguration verwalten:Serverkonfiguration** verwalten
 
-**** Rights Management - Eingeladene und lokale Benutzer verwalten: Verwalten eingeladener und lokaler Benutzer
+**Rights Management eingeladene und lokale Benutzer verwalten:eingeladene und lokale Benutzer** verwalten
 
-**** Rights Management - Richtliniensätze verwalten: Alle Richtlinien und Dokumente in einem Richtliniensatz verwalten
+**Rights Management - Richtliniensätze verwalten: Alle Richtlinien und Dokumente in einem Richtliniensatz** verwalten
 
-**** Rights Management-Richtliniensatz - Koordinator hinzufügen: Berechtigungen für Richtliniensatzkoordinatoren hinzufügen, entfernen und ändern
+**Rights Management-Richtliniensatz Hinzufügen Koordinator:** Hinzufügen, entfernen und ändern Sie die Berechtigungen für Richtliniensatzkoordinatoren
 
-**** Rights Management-Richtliniensatz - Richtlinie erstellen: Neue Richtlinie für einen Richtliniensatz erstellen
+**Rights Management-Richtliniensatz Richtlinie erstellen: Neue Richtlinie für einen Richtliniensatz** erstellen
 
-**** Rights Management-Richtliniensatz - Richtlinie löschen: Richtlinie aus einem Richtliniensatz entfernen
+**Richtliniensatz löschen: Richtlinie** entfernen
 
-**** Rights Management-Richtliniensatz - Richtlinie bearbeiten: Eine Richtlinie in einem Richtliniensatz bearbeiten
+**Rights Management-Richtliniensatz - Richtlinie bearbeiten: Richtlinie in einem Richtliniensatz** bearbeiten
 
-**** Rights Management-Richtliniensatz - Dokumentherausgeber verwalten: Beim Erstellen von Richtliniensätzen weisen Sie Benutzern die Rolle des Dokumentherausgebers zu. Der Dokumentherausgeber ist der Benutzer, der das Dokument mit einer Richtlinie schützt.
+**Rights Management-Richtliniensatz Dokument Publisher verwalten:** Beim Erstellen von Richtliniensätzen weisen Sie den Benutzern die Rolle des Dokument-Herausgebers zu. Der Dokumentherausgeber ist der Benutzer, der das Dokument mit einer Richtlinie schützt.
 
-**** Rights Management-Richtliniensatz - Koordinator entfernen: Richtliniensatzkoordinator aus einem Richtliniensatz entfernen
+**Rights Management-Richtliniensatz - Koordinator entfernen: Richtliniensatzkoordinator aus einem Richtliniensatz** entfernen
 
-**** Rights Management-Richtliniensatz Dokument sperren: Zugriff auf Dokumente in einem Richtliniensatz sperren
+**Rights Management-Richtliniensatz Dokument sperren: Zugriff auf Dokumente in einem Richtliniensatz** sperren
 
-**** Rights Management-Richtliniensatz - Richtlinie wechseln: Richtlinien für ein Dokument wechseln
+**Rights Management Policy Set Switch Policy:Richtlinien für ein Dokument** wechseln
 
-**** Rights Management-Richtliniensatz Aufhebung der Dokumentsperrung: Dokumentsperrung aufheben
+**Rights Management-Richtliniensatz Widerrufen des Dokuments:** Aufhebung der Sperrung eines Dokuments
 
-**** Rights Management-Richtliniensatz - Ereignis anzeigen: Richtlinien- und Dokumentereignisse für Richtlinien oder Dokumente in einem Richtliniensatz anzeigen
+**Rights Management-Richtliniensatz-Ansicht Ereignis:Ereignis für** Ansichten und Dokumente für Richtlinien oder Dokumente in einem Richtliniensatz
 
-**** Rights Management Serverereignisse anzeigen: Alle Prüfereignisse suchen und anzeigen
+**Rights Management Ansicht Server-Ereignis:alle Audit-Ereignis** suchen und Ansicht
 
-**** Rollenkontrolle: Rollen in User Management erstellen, löschen und ändern
+**Rollensteuerung:Rollen in User Management** erstellen, löschen und ändern
 
-**** Dienst aktivieren: Einen Dienst starten und zum Aufruf bereitstellen
+**Dienst aktivieren:** Beginn aller Dienste, die sie für den Aufruf verfügbar machen
 
-**** Dienst hinzufügen: Stellen Sie einen neuen Dienst in der Dienstregistrierung bereit. Das schließt das Hinzufügen neuer Prozesse und Prozessvarianten ein.
+**Dienst-Hinzufügen:** Bereitstellung eines neuen Dienstes in der Dienstregistrierung. Das schließt das Hinzufügen neuer Prozesse und Prozessvarianten ein.
 
-**** Dienst deaktivieren: Alle Dienste im System beenden
+**Dienst deaktivieren:Dienst im System** beenden
 
-**** Dienst löschen: Löschen Sie alle Dienste im System, einschließlich Prozesse und Prozessvarianten
+**Dienst löschen: Alle Dienste im System** löschen, einschließlich Prozesse und Prozessvarianten
 
-**** Dienst aufrufen: Aufrufen aller Dienste in der zur Laufzeit verfügbaren Dienstregistrierung
+**Dienst aufrufen:** Rufen Sie alle Dienste in der Dienstregistrierung auf, die zur Laufzeit verfügbar sind
 
-**** Dienst ändern: Ändern Sie die Konfigurationseigenschaften eines Dienstes im System. Dazu gehört auch das Sperren und Entsperren eines Dienstes in der integrierten Entwicklungsumgebung (IDE) sowie das Hinzufügen oder Entfernen von Endpunkten zu bzw. von einem Dienst.
+**Dienst ändern:** Ändern Sie die Konfigurationseigenschaften eines Dienstes im System. Dazu gehört auch das Sperren und Entsperren eines Dienstes in der integrierten Entwicklungsumgebung (IDE) sowie das Hinzufügen oder Entfernen von Endpunkten zu bzw. von einem Dienst.
 
-**** Dienst lesen: Lesen Sie alle Dienste im System. Dazu gehören alle Prozesse und Prozessvarianten.
+**Dienst lesen:Alle Dienste im System** lesen. Dazu gehören alle Prozesse und Prozessvarianten.
 
-**** SERVICE_AGENT_PERM: Daten anzeigen und mit Prozessinstanzen für einen Dienst interagieren, der aus einem Prozess erstellt wurde
+**SERVICE_AGENT_PERM:** Ansicht-Daten und Interaktion mit Prozessinstanzen für einen Dienst, der aus einem Prozess erstellt wurde
 
-**** SERVICE_MANAGER_PERM: Lastenausgleich und andere Verwaltungsaktionen für einen Dienst ausführen, der aus einem Prozess erstellt wurde
+**SERVICE_MANAGER_PERM:** Lastenausgleich und andere Verwaltungsaktionen für einen Dienst durchführen, der aus einem Prozess erstellt wurde
 
-**** START_STOP_PERM: Dienst starten oder beenden
+**BEGINN_STOP_PERM:** Beginn oder Beenden eines Dienstes
 
-**** SUPERVISOR_PERM: Prozessinstanzdaten für einen Dienst anzeigen, der aus einem Prozess erstellt wurde
+**SUPERVISOR_PERM:Prozessinstanzdaten** für einen Dienst, der aus einem Prozess erstellt wurde
 
-**** Durchlaufen: Eine Ressource in eine Listenressourcenanforderung einschließen oder die Metadaten einer Ressource lesen
+**Umgekehrt:Eine Ressource in eine Ressourcenanforderung** einschließen oder Metadaten einer Liste lesen
 
-**** Schreiben: Repository-Metadaten und -Inhalte schreiben
+**Schreiben:Repository-Metadaten und -Inhalte** schreiben
 
 **Dateien in Workbench öffnen**
 
@@ -346,7 +349,7 @@ Damit ein Benutzer die Inhalte der Ressourcenansicht in Workbench anzeigen und D
 * Dienst aufrufen
 * Dienst lesen
 
-## Benutzer und Gruppen aus einer Rolle entfernen {#remove-a-user-or-group-from-a-role}
+## Benutzer und Gruppen aus einer Rolle entfernen  {#remove-a-user-or-group-from-a-role}
 
 Auf der Seite „Rollenverwaltung“ können Sie Benutzer und Gruppen aus einer bestimmten Rolle entfernen. Hat der Benutzer bzw. die Gruppe die Rollenzuweisung geerbt, kann die Rolle nicht auf Benutzer- bzw. Gruppenebene entfernt werden. Löschen Sie den Benutzer bzw. die Gruppe dann entweder aus der Vererbungsstruktur oder entfernen Sie die Rolle aus der übergeordneten Entität.
 
