@@ -1,6 +1,6 @@
 ---
-title: Creating an Invite External Users Handler
-description: Creating an Invite External Users Handler
+title: Erstellen eines Handlers für eingeladene externe Benutzer
+description: Erstellen eines Handlers für eingeladene externe Benutzer
 translation-type: tm+mt
 source-git-commit: 92e5cc0b1934dad641357a22894e70a3660b774a
 workflow-type: tm+mt
@@ -10,45 +10,45 @@ ht-degree: 1%
 ---
 
 
-# Creating an Invite External Users Handler {#create-invite-external-users-handler}
+# Erstellen eines Handlers für die Einladung externer Benutzer {#create-invite-external-users-handler}
 
-You can create an Invite External Users Handler for the Rights Management service. An Invite External Users Handler enables the Rights Management service to invite external users to become Rights Management users. After a user becomes a Rights Management user, the user is able to perform tasks, such as opening a policy-protected PDF document. After the Invite External Users Handler is deployed to AEM Forms, you can use administration console to interact with it.
+Sie können einen Handler für die Einladung externer Benutzer für den Rights Management-Dienst erstellen. Ein Handler &quot;Externe Benutzer einladen&quot;ermöglicht es dem Rights Management-Dienst, externe Benutzer einzuladen, um Rights Management zu werden. Nachdem ein Benutzer zum Rights Management-Benutzer wurde, kann er Aufgaben ausführen, z. B. das Öffnen eines richtliniengeschützten PDF-Dokuments. Nachdem der Handler &quot;Externe Benutzer einladen&quot;in AEM Forms bereitgestellt wurde, können Sie mit Administration Console interagieren.
 
 >[!NOTE]
 >
->An Invite External Users Handler is a AEM Forms component. Before you create an Invite External Users Handler, it is recommended that you become familiar with creating components.
+>Ein Handler zum Einladen externer Benutzer ist eine AEM Forms-Komponente. Bevor Sie einen Handler für die Einladung externer Benutzer erstellen, sollten Sie sich mit dem Erstellen von Komponenten vertraut machen.
 
-**Summary of steps**
+**Zusammenfassung der Schritte**
 
-To develop an Invite External Users Handler, you must perform the following steps:
+Um einen Handler für die Einladung externer Benutzer zu entwickeln, müssen Sie die folgenden Schritte ausführen:
 
-1. Set up your development environment.
-1. Define the Invite External Users Handler implementation.
-1. Define the component XML file.
-1. Deploy the Invite External Users Handler.
-1. Test the Invite External Users Handler.
+1. Richten Sie Ihre Entwicklungs-Umgebung ein.
+1. Definieren Sie die Implementierung des Handlers &quot;Externe Benutzer einladen&quot;.
+1. Definieren Sie die XML-Komponentendatei.
+1. Stellen Sie den Handler &quot;Externe Benutzer einladen&quot;bereit.
+1. Testen Sie den Handler &quot;Externe Benutzer einladen&quot;.
 
-## Einrichten Ihrer Entwicklungs-Umgebung {#setting-up-development-environment}
+## Einrichten der Development-Umgebung {#setting-up-development-environment}
 
 Um Ihre Entwicklungs-Umgebung einzurichten, müssen Sie ein neues Java-Projekt erstellen, z. B. ein Eclipse-Projekt. Die unterstützte Eclipse-Version ist `3.2.1` oder höher.
 
-Die Rights Management-SPI erfordert, dass die `edc-server-spi.jar` Datei im Klassenpfad des Projekts festgelegt wird. Wenn Sie diese JAR-Datei nicht referenzieren, können Sie die Rights Management-SPI nicht in Ihrem Java-Projekt verwenden. Diese JAR-Datei wird zusammen mit dem AEM Forms SDK im `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi` Ordner installiert.
+Für die Rights Management-SPI muss die `edc-server-spi.jar`-Datei im Klassenpfad des Projekts festgelegt werden. Wenn Sie diese JAR-Datei nicht referenzieren, können Sie die Rights Management-SPI nicht in Ihrem Java-Projekt verwenden. Diese JAR-Datei wird zusammen mit dem AEM Forms SDK im Ordner `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi` installiert.
 
-Zusätzlich zum Hinzufügen der `edc-server-spi.jar` Datei zum Klassenpfad Ihres Projekts müssen Sie auch die JAR-Dateien hinzufügen, die zur Verwendung der Rights Management Service API erforderlich sind. Diese Dateien werden benötigt, um die Rights Management Service API im Handler &quot;Externe Benutzer einladen&quot;zu verwenden.
+Zusätzlich zum Hinzufügen der Datei `edc-server-spi.jar` zum Klassenpfad Ihres Projekts müssen Sie auch die JAR-Dateien hinzufügen, die zur Verwendung der Rights Management Service API erforderlich sind. Diese Dateien werden benötigt, um die Rights Management Service API im Handler &quot;Externe Benutzer einladen&quot;zu verwenden.
 
 ## Definieren der Implementierung des Handlers für eingeladene externe Benutzer {#define-invite-external-users-handler}
 
-Zum Entwickeln eines Handlers für eingeladene externe Benutzer müssen Sie eine Java-Klasse erstellen, die die `com.adobe.edc.server.spi.ersp.InvitedUserProvider` Schnittstelle implementiert. Diese Klasse enthält eine Methode mit dem Namen `invitedUser`, die der Rights Management-Dienst aufruft, wenn E-Mail-Adressen über die Seite &quot; **Hinzufügen eingeladene Benutzer** &quot;gesendet werden, auf die über Administration Console zugegriffen werden kann.
+Um einen Einladungs-Handler für externe Benutzer zu entwickeln, müssen Sie eine Java-Klasse erstellen, die die `com.adobe.edc.server.spi.ersp.InvitedUserProvider`-Schnittstelle implementiert. Diese Klasse enthält eine Methode mit dem Namen `invitedUser`, die der Rights Management-Dienst aufruft, wenn E-Mail-Adressen mit der Seite **Hinzufügen Eingeladene Benutzer** gesendet werden, auf die über Administration Console zugegriffen werden kann.
 
-Die `invitedUser` Methode akzeptiert eine `java.util.List` Instanz, die als Zeichenfolge typisierte E-Mail-Adressen enthält, die von der Seite &quot; **Eingeladene Benutzer** &quot;gesendet werden. Die `invitedUser` Methode gibt ein Array von `InvitedUserProviderResult` Objekten zurück, bei dem es sich im Allgemeinen um eine Zuordnung von E-Mail-Adressen zu Benutzerobjekten handelt (geben Sie nicht null zurück).
+Die `invitedUser`-Methode akzeptiert eine `java.util.List`-Instanz, die als Zeichenfolge typisierte E-Mail-Adressen enthält, die von der Seite **Hinzufügen Eingeladene Benutzer** gesendet werden. Die `invitedUser`-Methode gibt ein Array von `InvitedUserProviderResult`-Objekten zurück, bei denen es sich im Allgemeinen um eine Zuordnung von E-Mail-Adressen zu Benutzerobjekten handelt (geben Sie nicht null zurück).
 
 >[!NOTE]
 >
 >Dieser Abschnitt demonstriert nicht nur, wie Sie einen Handler für externe eingeladene Benutzer erstellen, sondern verwendet auch die AEM Forms-API.
 
-Die Implementierung des Handlers für eingeladene externe Benutzer enthält eine benutzerdefinierte Methode mit dem Namen `createLocalPrincipalAccount`. Diese Methode akzeptiert einen Zeichenfolgenwert, der eine E-Mail-Adresse als Parameterwert angibt. Die `createLocalPrincipalAccount` Methode setzt voraus, dass eine lokale Domäne namens `EDC_EXTERNAL_REGISTERED`vorhanden ist. Sie können diesen Domänennamen beliebig konfigurieren. Bei einer Produktionsanwendung sollten Sie jedoch möglicherweise in eine Unternehmensdomäne integrieren.
+Die Implementierung des Handlers für eingeladene externe Benutzer enthält eine benutzerdefinierte Methode mit dem Namen `createLocalPrincipalAccount`. Diese Methode akzeptiert einen Zeichenfolgenwert, der eine E-Mail-Adresse als Parameterwert angibt. Die `createLocalPrincipalAccount`-Methode setzt voraus, dass eine lokale Domäne mit dem Namen `EDC_EXTERNAL_REGISTERED` vorhanden ist. Sie können diesen Domänennamen beliebig konfigurieren. Bei einer Produktionsanwendung sollten Sie jedoch möglicherweise in eine Unternehmensdomäne integrieren.
 
-Die `createUsers` Methode durchläuft jede E-Mail-Adresse und erstellt ein entsprechendes User-Objekt (einen lokalen Benutzer in der `EDC_EXTERNAL_REGISTERED` Domäne). Schließlich wird die `doEmails` Methode aufgerufen. Diese Methode wird absichtlich als Stub in der Probe hinterlassen. In einer Produktionsimplementierung enthält sie Anwendungslogik zum Senden von Einladungs-E-Mail-Nachrichten an die neu erstellten Benutzer. Es bleibt im Beispiel, um den Ablauf der Anwendungslogik einer echten Anwendung zu demonstrieren.
+Die `createUsers`-Methode iteriert jede E-Mail-Adresse und erstellt ein entsprechendes Benutzerobjekt (einen lokalen Benutzer in der `EDC_EXTERNAL_REGISTERED`-Domäne). Schließlich wird die `doEmails`-Methode aufgerufen. Diese Methode wird absichtlich als Stub in der Probe hinterlassen. In einer Produktionsimplementierung enthält sie Anwendungslogik zum Senden von Einladungs-E-Mail-Nachrichten an die neu erstellten Benutzer. Es bleibt im Beispiel, um den Ablauf der Anwendungslogik einer echten Anwendung zu demonstrieren.
 
 ### Definieren der Implementierung des Handlers für eingeladene externe Benutzer {#user-handler-implementation}
 
@@ -170,9 +170,9 @@ public class InviteExternalUsersSample implements InvitedUserProvider
 
 Sie müssen eine XML-Komponentendatei definieren, um die Komponente für die einladende externe Benutzerhandler bereitzustellen. Für jede Komponente ist eine XML-Datei vorhanden, die Metadaten zur Komponente enthält.
 
-Die folgende `component.xml` Datei wird für den Handler zum Einladen externer Benutzer verwendet. Beachten Sie, dass der Dienstname `InviteExternalUsersSample` und der von diesem Dienst bereitgestellte Vorgang benannt sind `invitedUser`. Der Eingabeparameter ist eine `java.util.List` Instanz und der Ausgabewert ist ein Array von `com.adobe.edc.server.spi.esrp.InvitedUserProviderResult` Instanzen.
+Die folgende `component.xml`-Datei wird für den Handler für externe eingeladene Benutzer verwendet. Beachten Sie, dass der Dienstname `InviteExternalUsersSample` lautet und der von diesem Dienst bereitgestellte Vorgang `invitedUser` heißt. Der Eingabeparameter ist eine `java.util.List`-Instanz und der Ausgabewert ist ein Array von `com.adobe.edc.server.spi.esrp.InvitedUserProviderResult`-Instanzen.
 
-### Definieren der XML-Komponentendatei für den Handler zum Einladen externer Benutzer {#component-xml-invite-external-users-handler}
+### Definieren der XML-Komponentendatei für den Handler für eingeladene externe Benutzer {#component-xml-invite-external-users-handler}
 
 ```as3
 <component xmlns="http://adobe.com/idp/dsc/component/document"> 
@@ -201,11 +201,11 @@ Die folgende `component.xml` Datei wird für den Handler zum Einladen externer B
 
 ## Verpacken des Handlers für eingeladene externe Benutzer {#packaging-invite-external-users-handler}
 
-Um den Handler für eingeladene externe Benutzer unter AEM Forms bereitzustellen, müssen Sie Ihr Java-Projekt in einer JAR-Datei verpacken. Sie müssen sicherstellen, dass die externen JAR-Dateien, von denen die Geschäftslogik des Handlers für externe eingeladene Benutzer abhängt, z. B. die Dateien `edc-server-spi.jar` und `adobe-rightsmanagement-client.jar` Dateien, ebenfalls in der JAR-Datei enthalten sind. Außerdem muss die XML-Komponentendatei vorhanden sein. Die `component.xml` Datei und die externen JAR-Dateien müssen sich im Stammverzeichnis der JAR-Datei befinden.
+Um den Handler für eingeladene externe Benutzer unter AEM Forms bereitzustellen, müssen Sie Ihr Java-Projekt in einer JAR-Datei verpacken. Sie müssen sicherstellen, dass die externen JAR-Dateien, von denen die Geschäftslogik des Handlers für externe eingeladene Benutzer abhängt, wie z. B. die Dateien `edc-server-spi.jar` und `adobe-rightsmanagement-client.jar` ebenfalls in der JAR-Datei enthalten sind. Außerdem muss die XML-Komponentendatei vorhanden sein. Die `component.xml`-Datei und die externen JAR-Dateien müssen sich im Stammverzeichnis der JAR-Datei befinden.
 
 >[!NOTE]
 >
->In unten stehender Abbildung wird eine `BootstrapImpl` Klasse angezeigt. In diesem Abschnitt wird nicht erläutert, wie eine `BootstrapImpl` Klasse erstellt wird.
+>In unten stehender Abbildung wird eine `BootstrapImpl`-Klasse angezeigt. In diesem Abschnitt wird nicht erläutert, wie eine `BootstrapImpl`-Klasse erstellt wird.
 
 Die folgende Abbildung zeigt den Inhalt des Java-Projekts, der in der JAR-Datei des Handlers für die Einladung externer Benutzer verpackt ist.
 
@@ -213,33 +213,33 @@ Die folgende Abbildung zeigt den Inhalt des Java-Projekts, der in der JAR-Datei 
 
 A. Externe JAR-Dateien, die für die Komponente B erforderlich sind. JAVA-Datei
 
-Sie müssen den Handler für eingeladene externe Benutzer in einer JAR-Datei verpacken. Beachten Sie, dass im vorherigen Diagramm .JAVA-Dateien aufgelistet sind. Nach dem Verpacken in eine JAR-Datei müssen auch die entsprechenden .CLASS-Dateien angegeben werden. Without the .CLASS files, the authorization handler does not work.
+Sie müssen den Handler für eingeladene externe Benutzer in einer JAR-Datei verpacken. Beachten Sie, dass im vorherigen Diagramm .JAVA-Dateien aufgelistet sind. Nach dem Verpacken in eine JAR-Datei müssen auch die entsprechenden .CLASS-Dateien angegeben werden. Ohne die .CLASS-Dateien funktioniert der Autorisierungs-Handler nicht.
 
 >[!NOTE]
 >
->After you package the external authorization handler into a JAR file, you can deploy the component to AEM Forms. Only one invite external users handler can be deployed at a given time.
+>Nachdem Sie den externen Autorisierungs-Handler in eine JAR-Datei verpackt haben, können Sie die Komponente auf AEM Forms bereitstellen. Es kann jeweils nur ein einladender Handler für externe Benutzer bereitgestellt werden.
 
 >[!NOTE]
 >
->You can also programmatically deploy a component.
+>Sie können eine Komponente auch programmgesteuert bereitstellen.
 
-## Testing the invite external users handler {#testing-invite-external-users-handler}
+## Testen des Handlers für eingeladene externe Benutzer {#testing-invite-external-users-handler}
 
-To test the invite external users handler, you can add external users to invite by using administration console.
+Zum Testen des Handlers für eingeladene externe Benutzer können Sie externe Benutzer hinzufügen, die Sie einladen möchten, indem Sie Administration Console verwenden.
 
-To add external users to invite using administration console:
+So fügen Sie externe Benutzer zur Einladung mit Administration Console hinzu:
 
-1. Deploy the invite external users handler’s JAR file using Workbench.
+1. Stellen Sie mithilfe von Workbench die JAR-Datei des Handlers für eingeladene externe Benutzer bereit.
 1. Starten Sie den Anwendungsserver neu.
 1. Melden Sie sich bei Administration Console an.
-1. Click **[!UICONTROL Services]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Configuration]** > Invited **[!UICONTROL User Registration]**.
-1. Enable invited user registration by checking the **[!UICONTROL Enable invited user registration]** box. Under **[!UICONTROL Use Built-in registration system]**, click **[!UICONTROL No]**. Save your settings.
-1. From the administration console home page, click **[!UICONTROL Settings]** > **[!UICONTROL User Management]** > **[!UICONTROL Domain Management]**.
-1. Click **[!UICONTROL New Local Domain]**. On the following page, create a domain with the name and identifier value of `EDC_EXTERNAL_REGISTERED`. Speichern Sie Ihre Änderungen.
-1. From the administration console home page, click **[!UICONTROL Services]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Invited and Local Users]**. Die Seite **[!UICONTROL Hinzufügen eingeladenen Benutzer]** wird angezeigt.
+1. Klicken Sie auf **[!UICONTROL Dienste]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Konfiguration]** > Eingeladene **[!UICONTROL Benutzerregistrierung]**.
+1. Aktivieren Sie die Registrierung für eingeladene Benutzer, indem Sie das Kontrollkästchen **[!UICONTROL Registrierung für eingeladene Benutzer aktivieren]** aktivieren. Klicken Sie unter **[!UICONTROL Integriertes Registrierungssystem]** verwenden auf **[!UICONTROL Nein]**. Speichern Sie Ihre Einstellungen.
+1. Klicken Sie in der Startseite Administration Console auf **[!UICONTROL Settings]** > **[!UICONTROL User Management]** > **[!UICONTROL Domänenverwaltung]**.
+1. Klicken Sie auf **[!UICONTROL Neue lokale Domäne]**. Erstellen Sie auf der folgenden Seite eine Domäne mit dem Namen und dem Bezeichnerwert `EDC_EXTERNAL_REGISTERED`. Speichern Sie Ihre Änderungen.
+1. Klicken Sie in der Startseite Administration Console auf **[!UICONTROL Dienste]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Eingeladene und lokale Benutzer]**. Die Seite **[!UICONTROL Hinzufügen eingeladene Benutzer]** wird angezeigt.
 1. Geben Sie E-Mail-Adressen ein (da der aktuelle Einladungs-Handler für externe Benutzer keine E-Mail-Nachrichten sendet, muss die adressierte E-Mail-Adresse nicht gültig sein). Klicken Sie auf **[!UICONTROL OK]**. Die Benutzer werden zum System eingeladen.
-1. Klicken Sie in der Startseite Administration Console auf **[!UICONTROL Einstellungen]** > **[!UICONTROL Benutzerverwaltung]** > **[!UICONTROL Benutzer und Gruppen]**.
-1. Geben Sie im Feld **[!UICONTROL Suchen]** eine von Ihnen angegebene E-Mail-Adresse ein. Klicken Sie auf &quot;Suchen &quot;.**** Der eingeladene Benutzer wird als Benutzer in der lokalen `EDC_EXTERNAL_REGISTERED` Domäne angezeigt.
+1. Klicken Sie in der Startseite Administration Console auf **[!UICONTROL Settings]** > **[!UICONTROL User Management]** > **[!UICONTROL Users and Groups]**.
+1. Geben Sie im Feld **[!UICONTROL Suchen]** eine von Ihnen angegebene E-Mail-Adresse ein. Klicken Sie auf &quot;Suchen &quot;.**** Der eingeladene Benutzer wird als Benutzer in der lokalen `EDC_EXTERNAL_REGISTERED`-Domäne angezeigt.
 
 >[!NOTE]
 >
