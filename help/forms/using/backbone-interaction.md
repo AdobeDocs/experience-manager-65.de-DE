@@ -11,23 +11,26 @@ discoiquuid: 538591fe-29e4-40c4-a045-06095cc0c6b8
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '448'
+ht-degree: 81%
 
 ---
 
 
 # Interaktion mit Backbone{#backbone-interaction}
 
-Backbone ist eine Bibliothek, die das Erstellen und Verfolgen von MVC-Architektur in Webanwendungen unterstützt. Die Grundidee von Backbone ist, Ihre Benutzeroberfläche in logischen Ansichten zu organisieren, unterstützt von Modellen, die bei Modelländerungen jeweils einzeln aktualisiert werden können, ohne dass die Seite neu gezeichnet werden muss. For more information about Backbone, see [https://backbonejs.org](https://backbonejs.org/).
+Backbone ist eine Bibliothek, die das Erstellen und Verfolgen von MVC-Architektur in Webanwendungen unterstützt. Die Grundidee von Backbone ist, Ihre Benutzeroberfläche in logischen Ansichten zu organisieren, unterstützt von Modellen, die bei Modelländerungen jeweils einzeln aktualisiert werden können, ohne dass die Seite neu gezeichnet werden muss. Weitere Informationen zu Backbone finden Sie unter [https://backbonejs.org](https://backbonejs.org/).
 
 Einige Hauptkonzepte sind die folgenden:
 
-**Backbone-Modell** Enthält Daten und den Großteil der Logik, die sich auf diese Daten bezieht.
+**Backbone-** ModellEnthält Daten und die meisten mit diesen Daten zusammenhängenden Logiken.
 
-**Backbone-Ansicht** , die zur Darstellung des Zustands des entsprechenden Modells verwendet wird. Eine Backbone-Ansicht verhält sich im Prinzip wie ein Controller, der Benutzeroberflächenereignisse wie Benutzerklicks oder Modellereignisse (wie Datenänderungen) erfasst und die Benutzeroberfläche entsprechend ändert.
+**Backbone-** AnsichtWird zur Darstellung des Status des entsprechenden Modells verwendet. Eine Backbone-Ansicht verhält sich im Prinzip wie ein Controller, der Benutzeroberflächenereignisse wie Benutzerklicks oder Modellereignisse (wie Datenänderungen) erfasst und die Benutzeroberfläche entsprechend ändert.
 
-**HTML-Vorlage** Eine Wrapper-Vorlage mit vom Modell ausgefüllten Platzhaltern.
+**HTML-** VorlageEine Wrapper-Vorlage mit vom Modell ausgefüllten Platzhaltern.
 
-**AEM Forms Workspace** enthält mehrere einzelne Komponenten. Jede Komponente:
+**AEM Forms** WorkspaceEnthält mehrere einzelne Komponenten. Jede Komponente:
 
 * Stellt ein einzelnes logischen Element der Benutzeroberfläche dar.
 * Kann eine Sammlung ähnlicher Komponenten sein.
@@ -51,8 +54,8 @@ Ein Beispiel:
 
 1. Benutzer klickt in der Aufgabenliste auf eine Aufgabenvorlage.
 1. Aufgabenansicht erfasst den Klick und ruft Renderfunktion im Aufgabenmodell auf.
-1. Das Aufgabe-Modell ruft anschließend den Dienst auf, der ein gemeinsamer Punkt für die gesamte Kommunikation mit dem AEM Forms-Server ist.
-1. Dienstklasse ruft AEM Forms REST-Endpunkt für die Rendermethode über AJAX auf.
+1. Das Aufgabe-Modell ruft anschließend den Dienst auf, der ein gemeinsamer Punkt für die Kommunikation mit dem AEM Forms-Server ist.
+1. Die Dienstklasse ruft den AEM Forms REST-Endpunkt für die Rendermethode über AJAX auf.
 1. Der Erfolgsrückruf für diesen Ajax-Aufruf wird im Aufgabenmodell definiert.
 1. Aufgabenmodell erstellt ein Backbone-Ereignis als Benachrichtigung, dass der Renderaufruf abgeschlossen ist.
 1. Eine andere Ansicht, die Aufgabendetailansicht, überwacht dieses Ereignis des Aufgabenmodells.
