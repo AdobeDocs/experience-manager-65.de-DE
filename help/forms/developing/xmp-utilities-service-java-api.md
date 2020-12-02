@@ -22,19 +22,19 @@ ht-degree: 2%
 
 Die folgenden Quick-Beginn sind für den XMP Utilities-Dienst verfügbar.
 
-[Quick Beginn (SOAP-Modus): Exportieren von XMP-Metadaten mit der Java-API](xmp-utilities-service-java-api.md#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Exportieren XMP Metadaten mit der Java-API](xmp-utilities-service-java-api.md#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api)
 
-[Quick Beginn (SOAP-Modus): Importieren von XMP-Metadaten mit der Java-API](xmp-utilities-service-java-api.md#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Importieren XMP Metadaten mit der Java-API](xmp-utilities-service-java-api.md#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten API von AEM Forms ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt sein.
 
 >[!NOTE]
 >
->Quick-Beginn, die sich unter Programmieren mit AEM Forms befinden, basieren auf dem Forms-Server, wenn Sie ein anderes Betriebssystem verwenden, z. B. UNIX, ersetzen Sie fensterspezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick-Beginn, die sich unter Programmieren mit AEM Formularen befinden, basieren auf dem Forms-Server, wenn Sie ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie fensterspezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Quick Beginn (SOAP-Modus): Exportieren von XMP-Metadaten mit der Java-API {#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Exportieren XMP Metadaten mit der Java-API {#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api}
 
-Im folgenden Codebeispiel werden XMP-Metadaten abgerufen, geprüft und gespeichert. (Siehe [Exportieren von Metadaten aus PDF-Dokumenten](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents).)
+Im folgenden Codebeispiel werden XMP Metadaten abgerufen, geprüft und gespeichert. (Siehe [Exportieren von Metadaten aus PDF-Dokumenten](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents).)
 
 ```java
  /*
@@ -137,9 +137,9 @@ Im folgenden Codebeispiel werden XMP-Metadaten abgerufen, geprüft und gespeiche
  
 ```
 
-## Quick Beginn (SOAP-Modus): Importieren von XMP-Metadaten mit der Java-API {#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Importieren XMP Metadaten mit der Java-API {#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api}
 
-Im folgenden Codebeispiel werden XMP-Metadaten importiert und die neue PDF-Datei auf der Festplatte gespeichert. Das PDF-Dokument basiert auf einer PDF-Datei mit dem Namen &quot;Loan.pdf&quot;. Das XML-Dokument, das die in das PDF-Dokument zu importierenden Metadaten enthält, basiert auf einer XML-Datei mit dem Namen *LoanMetaData.xml*. Weitere Informationen zu dieser XML-Datei finden Sie unter [Importieren von Metadaten in PDF-Dokumente](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents).
+Im folgenden Codebeispiel werden XMP Metadaten importiert und die neue PDF-Datei auf der Festplatte gespeichert. Das PDF-Dokument basiert auf einer PDF-Datei mit dem Namen &quot;Loan.pdf&quot;. Das XML-Dokument, das die in das PDF-Dokument zu importierenden Metadaten enthält, basiert auf einer XML-Datei mit dem Namen *LoanMetaData.xml*. Weitere Informationen zu dieser XML-Datei finden Sie unter [Importieren von Metadaten in PDF-Dokumente](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents).
 
 ```java
  /*
