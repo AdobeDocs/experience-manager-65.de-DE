@@ -12,6 +12,9 @@ discoiquuid: f01eb2aa-6891-4f5d-8a4a-43fc1534c222
 docset: aem65
 translation-type: tm+mt
 source-git-commit: da08613be784f43ad3e3c3652b7e015640a48a9d
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 77%
 
 ---
 
@@ -47,17 +50,18 @@ Die Automatisierung von Testfällen ist jedoch eine erhebliche Investition, dahe
 * Nur tatsächlich praktikabel für große Projekte.
 * Gut, wenn mehrere Versionen entweder zum Testen oder im langfristigen Freigabeplan generiert werden.
 
-## Testen spezifischer Aspekte {#testing-specific-aspects}
+## Testen bestimmter Aspekte {#testing-specific-aspects}
 
-Beim Testen von AEM sind einige spezifische Details von besonderem Interesse:
+Beim Testen AEM einige spezifische Details von besonderem Interesse sind:
 
 **Autor- und Veröffentlichungsumgebung**
 
-Although, covered in [Environments](/help/sites-developing/the-basics.md#environments) it is worth highlighting a deciding factor of AEM with regard to testing.
+Obwohl in [Umgebung](/help/sites-developing/the-basics.md#environments) behandelt, lohnt es sich, einen entscheidenden Faktor für AEM in Bezug auf Tests hervorzuheben.
 
 Sie müssen AEM als zwei Anwendungen betrachten:
 
-* die *Authoring* -UmgebungDiese Instanz ermöglicht Autoren die Eingabe und Veröffentlichung von Inhalten.
+* die Umgebung *Autor*
+Diese Instanz ermöglicht es Autoren, Inhalte einzugeben und zu veröffentlichen.
 Sie hat einen klein(er)en, vorhersehbaren Benutzerkreis, für den spezielle Funktionen und Leistung äußerst wichtig sind.
 
 * die *Veröffentlichungsumgebung*
@@ -86,15 +90,20 @@ Bei den meisten Projekte installieren Sie den Dispatcher für Caching und Lasten
 
 Das Testen ist schwierig (Caching tritt auf unterschiedlichen Ebenen und in verschiedenen Orten auf) und muss auf Blackboxbasis vorgenommen werden. Die zu prüfenden Hauptaspekte sind:
 
-* **Genauigkeit** stellt sicher, dass Inhaltsaktualisierungen vom Website-Besucher angezeigt werden.
+* ****
+Achten Sie darauf, dass der Besucher der Website Inhaltsaktualisierungen anzeigt.
 
-* **Kontinuität** gewährleistet, dass die Website weiterhin verfügbar ist, wenn ein Server heruntergefahren wird.
+* **Stellen Sie**
+sicher, dass die Website weiterhin verfügbar ist, wenn ein Server heruntergefahren wird.
 
-* **Cluster** werden verwendet, um Folgendes bereitzustellen:
+* ****
+ClusterCluster werden verwendet, um Folgendes bereitzustellen:
 
-   * **Failover** Wenn ein Server ausfällt, übernehmen andere Server im Cluster die Verarbeitung.
+   * ****
+FailoverWenn ein Server ausfällt, übernehmen andere Server im Cluster die Verarbeitung.
 
-   * **Performance**-Lastenausgleich mit vollständigem Failover erhöht die Leistung eines Clusters.
+   * **Der**
+PerformanceLoad-Balancing mit vollständigem Failover erhöht die Leistung eines Clusters.
 Wenn dies für ein Kundenprojekt verwendet wird, muss der Cluster getestet werden, um den korrekten Ablauf der Konfiguration zu bestätigen.
 
 ## Testen von Software von Drittanbietern {#testing-third-party-software}
