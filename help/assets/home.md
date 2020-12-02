@@ -13,9 +13,9 @@ ht-degree: 16%
 
 # Assets-Anleitung
 
-In diesem Handbuch werden alle [!DNL Experience Manager Assets] Aufgaben behandelt, z. B. wie digitale Assets erstellt, verwaltet, bereitgestellt und optimiert werden.
+Dieses Handbuch behandelt alle [!DNL Experience Manager Assets]-Aufgaben, z. B. wie digitale Assets erstellt, verwaltet, bereitgestellt und optimiert werden.
 
-## Wichtige [!DNL Experience Manager] Artikel
+## Artikel mit Schlüssel [!DNL Experience Manager]
 
 <!-- TBD: Some of these links will soon be updated. Change these when new articles go live on docs.adobe.com.
 -->
@@ -40,9 +40,9 @@ In diesem Handbuch werden alle [!DNL Experience Manager Assets] Aufgaben behande
 | [Benutzerhandbuch für Entwickler](/help/sites-developing/home.md) | Erfahren Sie, wie Sie Ihre Experience Manager-Bereitstellung aufbauen. |
 | [Verwalten des Benutzerhandbuchs](/help/managing/home.md) | In diesem Handbuch wird die erfolgreiche Verwaltung eines Experience Manager-Projekts beschrieben. |
 | [Mobiles Benutzerhandbuch](/help/mobile/home.md) | In diesem Handbuch wird das Erstellen und Verwalten von Inhalten für mobile Anwendungen beschrieben. |
-| [Experience Manager Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Dieses Handbuch zeigt Ihnen, wie Sie benutzergenerierte Inhalte gemeinsam nutzen [!DNL Livefyre]. |
+| [Experience Manager Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Dieses Handbuch zeigt Ihnen, wie benutzergenerierte Inhalte mit [!DNL Livefyre] freigegeben werden. |
 
-## Wichtige [!DNL Experience Manager] Ressourcen
+## Ressourcen für Schlüssel [!DNL Experience Manager]
 
 * [Experience Manager Video-Tutorials](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html#Assets)
 * [Einhaltung der DSGVO](/help/managing/data-protection-and-privacy.md)
@@ -51,4 +51,4 @@ In diesem Handbuch werden alle [!DNL Experience Manager Assets] Aufgaben behande
 * [Dispatcher-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [Benutzerhandbuch zu Hauptkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
