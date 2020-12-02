@@ -1,8 +1,8 @@
 ---
 title: Einführung in Process Berichte
 seo-title: Einführung in Process Berichte
-description: Einführung und wichtige Funktionen von AEM Forms on JEE Process Berichte
-seo-description: Einführung und wichtige Funktionen von AEM Forms on JEE Process Berichte
+description: Einführung und Schlüsselfunktionen von AEM Forms on JEE Process Berichte
+seo-description: Einführung und Schlüsselfunktionen von AEM Forms on JEE Process Berichte
 uuid: a7f2455b-1b09-41a7-817b-e2e7a1ff9936
 content-type: reference
 topic-tags: process-reporting
@@ -11,6 +11,9 @@ discoiquuid: 4e83ed7b-3f48-4bf6-be4c-89f79949c1df
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '309'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Process Berichte bietet eine Reihe vordefinierter Berichte, die Ihnen das Filter
 
 Darüber hinaus stellt Process Berichte eine Schnittstelle zum Ausführen von Ad-hoc-Abfragen und zum Integrieren benutzerdefinierter Report-Ansichten in die Process Berichte-Benutzeroberfläche bereit.
 
-Die Liste der unterstützten Browser finden Sie unter Unterstützte Plattformen für [AEM Forms](/help/forms/using/aem-forms-jee-supported-platforms.md).
+Die Liste der unterstützten Browser finden Sie unter [AEM Forms Unterstützte Plattformen](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
 Process Berichte basiert auf Modulen, die:
 
@@ -33,7 +36,7 @@ Process Berichte basiert auf Modulen, die:
 * Prozessdaten in einem eingebetteten Process Berichte-Repository veröffentlichen
 * Stellt eine browserbasierte Benutzeroberfläche für Berichte zur Ansicht bereit
 
-## Key Capabilities {#key-capabilities}
+## Schlüsselfunktionen {#key-capabilities}
 
 ### Immer aktivierter Berichte {#always-on-reporting}
 
@@ -59,7 +62,7 @@ Anschließend können Sie die Filter speichern, die zu einem späteren Zeitpunkt
 
 ![Dateiverwaltung](assets/file-management.png)
 
-AEM Forms-Server führen zahlreiche Prozesse parallel aus. Diese Prozesse wechseln weiter von einem Status in einen anderen. Durch regelmäßige Veröffentlichung von Formulardaten im Process Berichte-Repository behält Process Berichte die Übergangsinformationen zu den in AEM Forms ausgeführten Prozessen bei.
+AEM Forms-Server führen zahlreiche Prozesse parallel aus. Diese Prozesse wechseln weiter von einem Status in einen anderen. Durch die regelmäßige Veröffentlichung von Forms-Daten im Process Berichte-Repository behält Process Berichte die Übergangsinformationen zu den in AEM Forms ausgeführten Prozessen bei.
 
 ### Zugriffssteuerung {#access-control-br}
 
