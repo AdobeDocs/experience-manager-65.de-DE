@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 505bf3e3-ce3c-40aa-9619-e1b9f6634deb
 translation-type: tm+mt
 source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+workflow-type: tm+mt
+source-wordcount: '969'
+ht-degree: 81%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
 
 Senden Sie zum Abrufen von Seiteninformationen eine Anforderung an das PageInfo-Servlet, um die Seitenmetadaten im JSON-Format zu erhalten.
 
-Das PageInfo-Servlet gibt Informationen zu Ressourcen im Repository zurück. The servlet is bound to the URL `https://<server>:<port>/libs/wcm/core/content/pageinfo.json` and uses the `path` parameter to identify the resource. The following example URL returns information about the `/content/we-retail/us/en` node:
+Das PageInfo-Servlet gibt Informationen zu Ressourcen im Repository zurück. Das Servlet ist an die URL `https://<server>:<port>/libs/wcm/core/content/pageinfo.json` gebunden und verwendet den Parameter `path`, um die Ressource zu identifizieren. Die folgende Beispiel-URL gibt Informationen zum Knoten `/content/we-retail/us/en` zurück:
 
 ```shell
 http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retail/us/en
@@ -30,8 +33,9 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 >Wenn Sie Seiteninformationen im JSON-Format benötigen, um Inhalte für Kanäle bereitzustellen, bei denen es sich nicht um herkömmliche AEM-Webseiten handelt, beispielsweise:
 >
 >* Einzelseiten-Webanwendungen
->* native Mobilanwendungen
->* Andere Kanäle und Touchpoints außerhalb von AEM
+>* native Mobile Apps
+>* Andere Kanal und Berührungspunkte außerhalb von AEM
+
 >
 >
 dann finden Sie weitere Informationen im Dokument [JSON-Exporter für Content Services](/help/sites-developing/json-exporter.md).
@@ -53,7 +57,7 @@ Seitenkomponenten können einem oder mehreren `com.day.cq.wcm.api.PageInfoProvid
 
 ## Standardmäßige PageInfoProvider-Dienste {#default-page-information-providers}
 
-The `/libs/foundation/components/page` component is associated with the following PageInfoProvider services:
+Die Komponente `/libs/foundation/components/page` ist mit den folgenden PageInfoProvider-Diensten verknüpft:
 
 * **DefaultPageStatusProvider-Dienst**: Informationen zum Seitenstatus, beispielsweise ob die Seite gesperrt ist, die Nutzlast eines aktiven Workflows ist oder welche Workflows für die Seite zur Verfügung stehen.
 * **LiveRelationshipInfoProvider-Dienst**: Informationen zum Multi-Site Management (MSM), beispielsweise ob die Seite Teil eines Blueprints ist und ob es sich um eine Live Copy handelt.
@@ -63,7 +67,7 @@ The `/libs/foundation/components/page` component is associated with the followin
 * **EmulatorInfoProvider-Dienst**: Informationen zu den für diese Ressource verfügbaren Emulatoren für mobile Geräte. Wenn die Seitenkomponente keine mobilen Seiten rendert, sind keine Emulatoren verfügbar.
 * **AnnotationsInfoProvider-Dienst**: Informationen über Anmerkungen, die sich auf der Seite befinden.
 
-For example, the PageInfo servlet returns the following JSON response for the `/content/we-retail/us/en` node:
+Beispielsweise gibt das PageInfo-Servlet die folgende JSON-Antwort für den Knoten `/content/we-retail/us/en` zurück:
 
 ```
 {
@@ -510,13 +514,13 @@ Gehen Sie beispielsweise zum Konfigurieren des Diensts mithilfe von CRXDE Lite w
    * Typ: `String[]`
    * Wert: Der Pfad zum Workflow-Paket mit dem richtigen Format.
 
-1. Klicken Sie auf „Alle speichern“.
+1. Klicken Sie auf Alle speichern.
 
 Gehen Sie wie folgt vor, um den Dienst in Ihrer Projektquelle zu konfigurieren:
 
 1. Suchen oder erstellen Sie den Konfigurationsordner für Ihre AEM-Anwendung in Ihrer Projektquelle.
 
-   For example, if you used the multimodule archetype of the Content Package Maven Plugin to create your project, the folder path is `<projectroot>/content/src/ for example content/src/main/content/jcr_root/apps/<appname>/config`.
+   Wenn Sie zum Beispiel den Archetyp für mehrere Module des Content Package Maven-Plugins verwendet haben, um Ihr Projekt zu erstellen, lautet der Ordnerpfad `<projectroot>/content/src/ for example content/src/main/content/jcr_root/apps/<appname>/config`.
 1. Erstellen Sie im Ordner „config“ eine Textdatei mit dem Namen com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider.xml.
 1. Kopieren Sie den folgenden Text in die Datei:
 
@@ -528,21 +532,21 @@ Gehen Sie wie folgt vor, um den Dienst in Ihrer Projektquelle zu konfigurieren:
     workflowpackageinfoprovider.filter="[]"/>
    ```
 
-1. Inside the brackets (`[]`) that surround the `workflowpackageinfoprovider.filter` property, type a comma-separated list of filter values similar to the following example:
+1. Geben Sie in die Klammern (`[]`), die die `workflowpackageinfoprovider.filter`-Eigenschaft umgeben, eine kommagetrennte Liste von Filterwerten ein, ähnlich dem folgenden Beispiel:
 
    `workflowpackageinfoprovider.filter="[-/etc/workflow/packages(/.*)?,+/etc/workflow/packages/Editions(/.*)?]"/>`
 
 1. Speichern Sie die Datei.
 
-## Erstellen von PageInfoProvider-Diensten {#creating-a-page-information-provider}
+## Erstellen von PageInfoProvider-Diensten  {#creating-a-page-information-provider}
 
 Erstellen Sie einen benutzerdefinierten PageInfoProvider-Dienst, um Seitenmetadaten hinzuzufügen, die Ihre Anwendung leicht abrufen kann.
 
 1. Implementieren Sie die Schnittstelle `com.day.cq.wcm.api.PageInfoProvider`.
 1. Bündeln Sie die Klasse und stellen Sie sie als OSGi-Dienst bereit.
-1. Erstellen Sie eine Seitenkomponente in Ihrer Anwendung. Verwenden Sie `foundation/components/page` als Wert der `sling:resourceSuperType` Eigenschaft.
+1. Erstellen Sie eine Seitenkomponente in Ihrer Anwendung. Verwenden Sie `foundation/components/page` als Wert der `sling:resourceSuperType`-Eigenschaft.
 
-1. Add a node below the component node named `cq:infoProviders`.
+1. hinzufügen einer Node unter dem Komponentenknoten `cq:infoProviders`.
 1. Fügen Sie unter dem Knoten `cq:infoProviders` einen Knoten für Ihren PageInfoProvider-Dienst hinzu. Sie können einen beliebigen Namen für den Knoten angeben.
 1. Fügen Sie die folgende Eigenschaft zu Ihrem PageInfoProvider-Knoten hinzu:
 
@@ -605,7 +609,7 @@ Das folgende Beispiel in CRXDE Lite zeigt die Seitenkomponente, die für die Ver
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 
-The PageUrlInfoProvider service returns the following data for the `/content/we-retail/us/en` node:
+Der PageUrlInfoProvider-Dienst gibt die folgenden Daten für den Knoten `/content/we-retail/us/en` zurück:
 
 ```xml
 "URLs": {
