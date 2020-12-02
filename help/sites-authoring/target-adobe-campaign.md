@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: f1cb5e98-ccd1-4b2c-acca-2b3cc1b7ac5f
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '827'
+ht-degree: 79%
 
 ---
 
@@ -33,15 +36,15 @@ Im Rahmen der Einrichtung der Segmentierung werden Segmente erstellt sowie eine 
 
 So erstellen Sie Segmente:
 
-1. Open the [segmentation console](http://localhost:4502/miscadmin#/etc/segmentation) at **&lt;host>:&lt;port>/miscadmin#/etc/segmentation**.
-1. Create a new page and enter a title - for example, **AC Segments**- and select the **Segment (Adobe Campaign)** template.
+1. Öffnen Sie die [Segmentierungskonsole](http://localhost:4502/miscadmin#/etc/segmentation) unter **&lt;host>:&lt;port>/miscadmin#/etc/segmentation**.
+1. Erstellen Sie eine neue Seite und geben Sie einen Titel ein - z. B. **AC-Segmente**- und wählen Sie die Vorlage **Adobe Campaign (Segment)**.
 1. Wählen Sie in der Baumansicht links die erstellte Seite aus.
 1. Erstellen Sie ein Segment, mit dem beispielsweise männliche Benutzer angesprochen werden, indem Sie im soeben erstellten Segment eine Seite mit dem Titel „Männlich“ erstellen und die Vorlage **Segment (Adobe Campaign)** auswählen.
 1. Öffnen Sie die erstellte Seite und ziehen Sie eine **Segment-ID** aus dem Sidekick auf die Seite.
-1. Double-click the trait, enter the ID representing in this case, the male segment defined in Adobe Campaign - for example, **MALE** - and click **OK**. Die folgende Meldung sollte angezeigt werden: *`targetData.segmentCode == "MALE"`*
+1. Klicken Sie bei gedrückter Dublette auf die Eigenschaft, geben Sie die ID ein, die in diesem Fall das im Adobe Campaign definierte männliche Segment darstellt - z. B. **MALE** - und klicken Sie auf **OK**. Die folgende Meldung sollte angezeigt werden: *`targetData.segmentCode == "MALE"`*
 1. Wiederholen Sie diese Schritte für ein weiteres Segment, beispielsweise eines, mit dem weibliche Benutzer angesprochen werden.
 
-### Erstellen neuer Marken {#creating-a-brand}
+### Erstellen neuer Marken  {#creating-a-brand}
 
 So erstellen Sie eine Marke:
 
@@ -60,13 +63,13 @@ So erstellen Sie eine Kampagne:
 So erstellen Sie Erlebnisse für Segmente:
 
 1. Öffnen Sie die Seite **Kampagne**, die Sie soeben erstellt haben.
-1. Create experiences for your segments by clicking **Create Page** and entering a title for your page, for example, Male as you are creating an experience for the Male segment, and select the **Experience** template.
+1. Erstellen Sie Erlebnisse für Ihre Segmente, indem Sie auf **Seite** erstellen und einen Titel für Ihre Seite eingeben, z. B. &quot;Männlich&quot;beim Erstellen eines Erlebnisses für das männliche Segment, und wählen Sie die Vorlage **Erlebnis**.
 1. Öffnen Sie die erstellte Erlebnisseite.
 1. Klicken Sie auf **Bearbeiten** und unterhalb der Segmente auf **Element hinzufügen**.
-1. Enter the path to the male segment, for example **/etc/segmentation/ac-segments/male** and click **OK**. The following message should appear: *Experience is targeted at: Male*
+1. Geben Sie den Pfad zum männlichen Segment ein, z. B. **/etc/segmentation/ac-segments/male**, und klicken Sie auf **OK**. Die folgende Meldung sollte angezeigt werden: *Erlebnis zielt auf Folgendes ab: Männlich*
 1. Wiederholen Sie die vorherigen Schritte, um ein Erlebnis für alle Segmente, beispielsweise ein weibliches, zu erstellen.
 
-## Erstellen eines Newsletters mit zielgerichteten Inhalten {#creating-a-newsletter-with-targeted-content}
+## Erstellen eines Newsletters mit zielgerichteten Inhalten  {#creating-a-newsletter-with-targeted-content}
 
 Nach der Erstellung von Segmenten, Marke, Kampagne und Erlebnissen können Sie einen Newsletter mit zielgerichtetem Inhalt erstellen. Nach Erstellung des Erlebnisses wird dieses mit Ihren Segmenten verknüpft.
 
@@ -76,13 +79,13 @@ Nach der Erstellung von Segmenten, Marke, Kampagne und Erlebnissen können Sie e
 
 So erstellen Sie einen Newsletter mit zielgerichtetem Inhalt:
 
-1. Create a newsletter with targeted content: Below Email Campaigns in Geometrixx Outdoors, click or tap **Create** > **Page**, and select one of the Adobe Campaign Mail templates.
+1. Erstellen Sie einen Newsletter mit zielgerichteten Inhalten: Klicken Sie unter &quot;E-Mail-Kampagnen in Geometrixx Outdoors&quot;auf oder tippen Sie auf **Erstellen** > **Seite** und wählen Sie eine der Adobe Campaign-Mail-Vorlagen aus.
 
    ![chlimage_1-188](assets/chlimage_1-188.png)
 
 1. Fügen Sie dem Newsletter eine Text- und Personalisierungs-Komponente hinzu.
 1. Fügen Sie der Text- und Personalisierungs-Komponente Text hinzu, beispielsweise: „Dies ist der Standardtext.“
-1. Click the arrow next to **Edit** and select **Targeting**.
+1. Klicken Sie auf den Pfeil neben **Bearbeiten** und wählen Sie **Targeting**.
 1. Wählen Sie die entsprechende Marke aus dem Dropdown-Menü aus und klicken Sie auf Ihre Kampagne. (Hierbei handelt es sich um die Marke und Kampagne, die Sie zuvor erstellt haben).
 1. Klicken Sie auf **Targeting starten**. Die Segmente werden nun im Zielgruppebereich angezeigt. Sollte ein Besucher nicht in eines der festgelegten Segmente passen, wird er zum Standarderlebnis weitergeleitet.
 
@@ -96,7 +99,7 @@ So erstellen Sie einen Newsletter mit zielgerichtetem Inhalt:
 
 1. Navigieren Sie zu einem anderen Segment („Männlich“), klicken Sie auf **Angebot hinzufügen** und klicken Sie auf das Pluszeichen (+). Bearbeiten Sie anschließend das Angebot.
 1. Navigieren Sie zu einem anderen Segment („Weiblich“), klicken Sie auf **Angebot hinzufügen** und klicken Sie auf das Pluszeichen (+). Bearbeiten Sie anschließend dieses Angebot.
-1. Click **Next** to see Mapping, then click **Next** to see Settings, which does not apply to Adobe Campaign, and click **Save**.
+1. Klicken Sie auf **Weiter**, um die Zuordnung anzuzeigen, und klicken Sie dann auf **Weiter**, um die Einstellungen anzuzeigen, die nicht für Adobe Campaign gelten, und klicken Sie auf **Speichern**.
 
    AEM generiert automatisch den richtigen Targeting-Code für Adobe Campaign, wenn der Inhalt in Adobe Campaign für eine Bereitstellung genutzt wird.
 
