@@ -21,7 +21,7 @@ ht-degree: 60%
 
 ![09-style-your-adaptive-form-small](assets/09-style-your-adaptive-form-small.png)
 
-This tutorial is a step in the [Create your first Interactive Communication](/help/forms/using/create-your-first-interactive-communication.md) series. Es wird empfohlen, der Serie in chronologischer Reihenfolge zu folgen, um den vollständigen Anwendungsfall zu verstehen, auszuführen und zu demonstrieren.
+Dieses Lernprogramm ist ein Schritt in der Reihe [Erstellen Sie Ihre erste interaktive Kommunikation](/help/forms/using/create-your-first-interactive-communication.md). Es wird empfohlen, der Serie in chronologischer Reihenfolge zu folgen, um den vollständigen Anwendungsfall zu verstehen, auszuführen und zu demonstrieren.
 
 Nachdem Sie alle Bausteine &#x200B;&#x200B;wie Formulardatenmodell, Dokumentfragmente und Vorlagen und Themen für die Webversion erstellt haben, können Sie mit der Erstellung einer interaktiven Kommunikation beginnen.
 
@@ -43,27 +43,27 @@ Im Folgenden finden Sie eine Liste der Ressourcen, die bereits in diesem Tutoria
 
 **Formulardatenmodell:** [FDM_Create_First_IC](../../forms/using/create-form-data-model0.md)
 
-**Dokument-Fragmente:** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_Ladungen_first_ic](../../forms/using/create-document-fragments.md)
+**Fragmente von Dokumenten:** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_Ladungen_first_ic](../../forms/using/create-document-fragments.md)
 
 **Layout-Fragmente:** [table_lf](../../forms/using/create-templates-print-web.md)
 
 **Bilder:** PayNow und ValueAddedServices
 
 1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
-1. Tap **Create** and select **Interactive Communication**. The **Create Interactive Communication** wizard is displayed.
-1. Geben Sie **create_first_ic** im Feld **Titel** und im Feld **Name** an. Select **FDM_Create_First_IC** as the Form Data Model and tap **Next**.
-1. In the **Channels** wizard:
+1. Tippen Sie auf **Erstellen** und wählen Sie **Interaktive Kommunikation**. Der Assistent **Interaktive Kommunikation erstellen** wird angezeigt.
+1. Geben Sie **create_first_ic** im Feld **Titel** und im Feld **Name** an. Wählen Sie **FDM_Create_First_IC** als Formulardatenmodell und tippen Sie auf **Weiter**.
+1. Im Assistenten **Kanal**:
 
-   1. Specify **create_first_ic_print_template** as the Print template and tap **Select**. Ensure that the **Use Print as Master for Web Channel** checkbox is not selected.
+   1. Geben Sie **create_first_ic_print_template** als Druckvorlage an und tippen Sie auf **Select**. Vergewissern Sie sich, dass das Kontrollkästchen &quot;**Als Übergeordnet drucken für Web Kanal**&quot;nicht aktiviert ist.
 
-   1. Specify **Create_First_IC_templates** folder > **Create_First_IC_Web_Template** as the Web template and tap **Select**.
+   1. Geben Sie **Create_First_IC_templates** folder > **Create_First_IC_Web_Template** als Webvorlage an und tippen Sie auf **Select**.
 
    1. Tippen Sie auf **Erstellen**.
 
    Eine Bestätigungsmeldung wird angezeigt, dass die interaktive Kommunikation erfolgreich erstellt wurde.
 
 1. Tippen Sie auf **Bearbeiten**, um die interaktive Kommunikation im rechten Bereich zu öffnen.
-1. Go to the **Assets** tab and apply the filter to display only the document fragments in the left pane.
+1. Gehen Sie zur Registerkarte **Assets** und wenden Sie den Filter an, um nur die Dokument-Fragmente im linken Bereich anzuzeigen.
 1. Ziehen Sie die folgenden Dokumentfragmente per Drag &amp; Drop in ihre Zielbereiche in der interaktiven Kommunikation:
 
    | Dokumentfragment | Zielbereich |
@@ -76,29 +76,29 @@ Im Folgenden finden Sie eine Liste der Ressourcen, die bereits in diesem Tutoria
    ![Fragmente von Dokumenten für interaktive Kommunikation](assets/create_first_ic_doc_fragments_new.png)
 
 1. Tippen Sie auf den Zielbereich **Diagramme** und anschließend auf **+**, um eine Komponente **Diagramm** hinzuzufügen.
-1. Tap the Chart component and select ![configure_icon](assets/configure_icon.png) (Configure). Die Diagrammeigenschaften werden im linken Bereich angezeigt:
+1. Tippen Sie auf die Diagrammkomponente und wählen Sie ![configure_icon](assets/configure_icon.png) (Konfigurieren). Die Diagrammeigenschaften werden im linken Bereich angezeigt:
 
    1. Geben Sie einen Namen für das Diagramm an.
    1. Wählen Sie **Kreis** aus der Dropdownliste **Diagrammtyp**.
    1. Wählen Sie die Eigenschaft **calltype** aus dem Datenmodellobjekt **calls** im Abschnitt **X-Achse** Tippen Sie auf ![done_icon](assets/done_icon.png).
    1. Wählen Sie **Frequenz** aus der Dropdown-Liste **Funktion**.
-   1. Select the **calltype** property from the **calls** data model object type in the **Y-axis** section. Tippen Sie auf ![done_icon](assets/done_icon.png).
-   1. Tap ![done_icon](assets/done_icon.png) to save the chart properties.
+   1. Wählen Sie die Eigenschaft **calltype** aus dem Objekttyp **Calls** im Abschnitt **Y-Achse**. Tippen Sie auf ![done_icon](assets/done_icon.png).
+   1. Tippen Sie auf ![done_icon](assets/done_icon.png), um die Diagrammeigenschaften zu speichern.
 
-1. Go to the **Assets** tab and apply the filter to display only the layout fragments in the left pane. Ziehen Sie das Layout **table_lf** per Drag-and-Drop in den Zielbereich **Einzeln aufgeführte Anrufe**.
-1. Select the Text Field in the **Date** column and tap ![configure_icon](assets/configure_icon.png) (Configure).
-1. Wählen Sie **Datenmodellobjekt** aus der Dropdown-Liste **Bindungstyp** und wählen Sie **calls** > **calldate**. Tap ![done_icon](assets/done_icon.png) twice to save the properties.
+1. Gehen Sie zur Registerkarte **Assets** und wenden Sie den Filter an, um nur die Layout-Fragmente im linken Bereich anzuzeigen. Ziehen Sie das Layout **table_lf** per Drag-and-Drop in den Zielbereich **Einzeln aufgeführte Anrufe**.
+1. Wählen Sie das Textfeld in der Spalte **Datum** aus und tippen Sie auf ![configure_icon](assets/configure_icon.png) (Konfigurieren).
+1. Wählen Sie **Datenmodellobjekt** aus der Dropdown-Liste **Bindungstyp** und wählen Sie **calls** > **calldate**. Tippen Sie zweimal auf ![done_icon](assets/done_icon.png), um die Eigenschaften zu speichern.
 
    Erstellen Sie eine Bindung mit **calltime**, **callnumber**, **callduration** und **callcharges** für Textfelder in den Spalten **Zeit**, **Anzahl**, **Dauer** und **Kosten**.
 
-1. Tap **PayNow** target area, and tap **+** to add an **Image** component.
-1. Tap the Image component and select ![configure_icon](assets/configure_icon.png) (Configure). Die Bildeigenschaften werden im linken Bereich angezeigt:
+1. Tippen Sie auf den Bereich **PayNow** Zielgruppe und dann auf **+**, um eine **Image**-Komponente hinzuzufügen.
+1. Tippen Sie auf die Image-Komponente und wählen Sie ![configure_icon](assets/configure_icon.png) (Konfigurieren). Die Bildeigenschaften werden im linken Bereich angezeigt:
 
    1. Geben Sie **PayNow** als Namen des Bildes im Feld **Name** ein.
    1. Tippen Sie auf **Hochladen**, wählen Sie das im lokalen Dateisystem gespeicherte Bild aus und tippen Sie auf **Öffnen**.
-   1. Tap ![done_icon](assets/done_icon.png) to save the image properties.
+   1. Tippen Sie auf ![done_icon](assets/done_icon.png), um die Bildeigenschaften zu speichern.
 
-1. Repeat steps 13 and 14 to add **ValueAddedServices** image to the **ValueAddedServices** target area.
+1. Wiederholen Sie die Schritte 13 und 14, um dem Bereich **ValueAddedServices** das Bild **ValueAddedServices** der Zielgruppe hinzuzufügen.
 
 ### Erstellen Sie interaktive Kommunikation für den Webkanal {#create-interactive-communication-for-web-channel}
 
@@ -108,26 +108,26 @@ Im Folgenden finden Sie eine Liste der Ressourcen, die bereits in diesem Tutoria
 
 **Formulardatenmodell:** [FDM_Create_First_IC](../../forms/using/create-form-data-model0.md)
 
-**Dokument-Fragmente:** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_Ladungen_first_ic](../../forms/using/create-document-fragments.md)
+**Fragmente von Dokumenten:** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_Ladungen_first_ic](../../forms/using/create-document-fragments.md)
 
 **Bilder:** PayNowWeb und ValueAddedServicesWeb
 
 1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
-1. Tap **Create** and select **Interactive Communication**. The **Create Interactive Communication** wizard is displayed.
-1. Geben Sie **create_first_ic** im Feld **Titel** und im Feld **Name** an. Select **FDM_Create_First_IC** as the Form Data Model and tap **Next**.
-1. In the **Channels** wizard:
+1. Tippen Sie auf **Erstellen** und wählen Sie **Interaktive Kommunikation**. Der Assistent **Interaktive Kommunikation erstellen** wird angezeigt.
+1. Geben Sie **create_first_ic** im Feld **Titel** und im Feld **Name** an. Wählen Sie **FDM_Create_First_IC** als Formulardatenmodell und tippen Sie auf **Weiter**.
+1. Im Assistenten **Kanal**:
 
-   1. Specify **create_first_ic_print_template** as the Print template and tap **Select**. Ensure that the **Use Print as Master for Web Channel** checkbox is not selected.
+   1. Geben Sie **create_first_ic_print_template** als Druckvorlage an und tippen Sie auf **Select**. Vergewissern Sie sich, dass das Kontrollkästchen &quot;**Als Übergeordnet drucken für Web Kanal**&quot;nicht aktiviert ist.
 
-   1. Specify **Create_First_IC_templates** folder > **Create_First_IC_Web_Template** as the Web template and tap **Select**.
+   1. Geben Sie **Create_First_IC_templates** folder > **Create_First_IC_Web_Template** als Webvorlage an und tippen Sie auf **Select**.
 
    1. Tippen Sie auf **Erstellen**.
 
    Eine Bestätigungsmeldung wird angezeigt, dass die interaktive Kommunikation erfolgreich erstellt wurde.
 
 1. Tippen Sie auf **Bearbeiten**, um die interaktive Kommunikation im rechten Bereich zu öffnen.
-1. Tap the **Channels** tab from the left pane and tap **Web**.
-1. Go to the **Assets** tab and apply the filter to display only the document fragments in the left pane.
+1. Tippen Sie im linken Bereich auf die Registerkarte **Kanal** und dann auf **Web**.
+1. Gehen Sie zur Registerkarte **Assets** und wenden Sie den Filter an, um nur die Dokument-Fragmente im linken Bereich anzuzeigen.
 1. Ziehen Sie die folgenden Dokumentfragmente per Drag &amp; Drop in ihre Zielbereiche in der interaktiven Kommunikation:
 
    | Dokumentfragment | Zielbereich |
@@ -135,10 +135,10 @@ Im Folgenden finden Sie eine Liste der Ressourcen, die bereits in diesem Tutoria
    | bill_details_first_ic | BillDetails |
    | customer_details_first_ic | CustomerDetails |
    | bill_summary_first_ic | BillSummary |
-   | summary_charges_first_interactive_communication | Gebühren |
+   | summary_Ladys_first_interactive_communication | Gebühren |
 
-1. Tap **Summary of Charges** target area, and tap **+** to add a **Chart** component.
-1. Tap the Chart component and select ![configure_icon](assets/configure_icon.png) (Configure). Die Diagrammeigenschaften werden im linken Bereich angezeigt:
+1. Tippen Sie auf den Bereich **Gebührenzusammenfassung** Zielgruppe und dann auf **+**, um eine **Diagrammkomponente** hinzuzufügen.
+1. Tippen Sie auf die Diagrammkomponente und wählen Sie ![configure_icon](assets/configure_icon.png) (Konfigurieren). Die Diagrammeigenschaften werden im linken Bereich angezeigt:
 
    1. Geben Sie einen Namen für das Diagramm an.
    1. Wählen Sie **Kreis** aus der Dropdownliste **Diagrammtyp**.
@@ -147,29 +147,29 @@ Im Folgenden finden Sie eine Liste der Ressourcen, die bereits in diesem Tutoria
 
    1. Wählen Sie **Frequenz** aus der Dropdown-Liste **Funktion**.
 
-   1. Select the **calltype** property from the **calls** data model object type in the **Y-axis** section. Tippen Sie auf ![done_icon](assets/done_icon.png).
+   1. Wählen Sie die Eigenschaft **calltype** aus dem Objekttyp **Calls** im Abschnitt **Y-Achse**. Tippen Sie auf ![done_icon](assets/done_icon.png).
 
-   1. Tap ![done_icon](assets/done_icon.png) to save the chart properties.
+   1. Tippen Sie auf ![done_icon](assets/done_icon.png), um die Diagrammeigenschaften zu speichern.
 
-1. Wählen Sie die Registerkarte **Datenquellen** aus dem linken Bereich und ziehen Sie das Datenmodellobjekt **calls** in den Zielbereich **Einzeln aufgeführte Anrufe**. All properties in the **calls** data model object are displayed as table columns in the **Itemised Calls** target area in the right pane.
+1. Wählen Sie die Registerkarte **Datenquellen** aus dem linken Bereich und ziehen Sie das Datenmodellobjekt **calls** in den Zielbereich **Einzeln aufgeführte Anrufe**. Alle Eigenschaften im Datenmodellobjekt **Aufrufe** werden als Tabellenspalten im Bereich **Itemized Calls** Zielgruppe im rechten Bereich angezeigt.
 
    Basierend auf dem Anwendungsfall benötigen Sie die Spalten „Anrufdatum“, „Anrufzeit“, „Rufnummer“, „Anrufdauer“ und „Anrufkosten“ in der Tabelle.
 
    ![Tabelle für interaktive Kommunikation](assets/table_ic_web_new.png)
 
-1. Select **Mobilenum** table column heading and select **More options** > **Delete column**. Löschen Sie auf ähnliche Weise die Spalte **Anruftyp**.
-1. Select the **Calldate** table column heading and tap ![edit](assets/edit.png) (Edit) to rename the text to **Call Date**. Benennen Sie andere Spaltenüberschriften in der Tabelle um.
+1. Wählen Sie **Mobilenum** Spaltenüberschrift und wählen Sie **Weitere Optionen** > **Spalte löschen**. Löschen Sie auf ähnliche Weise die Spalte **Anruftyp**.
+1. Wählen Sie die Spaltenüberschrift **Aufrufdatum** aus und tippen Sie auf ![Bearbeiten](assets/edit.png) (Bearbeiten), um den Text in **Aufrufdatum** umzubenennen. Benennen Sie andere Spaltenüberschriften in der Tabelle um.
 1. Fügen Sie je nach Anwendungsfall die Schaltfläche **Jetzt bezahlen** in die interaktive Kommunikation ein, die dem Benutzer die Option bietet, die Zahlung durch Klicken auf die Schaltfläche vorzunehmen. Führen Sie die folgenden Schritte aus, um die Schaltfläche einzufügen:
 
-   1. Tap **Pay Now** target area, and tap **+** to add a **Text** component.
+   1. Tippen Sie auf den Bereich **Jetzt bezahlen** Zielgruppe und dann auf **+**, um eine **Textkomponente** hinzuzufügen.
 
-   1. Tap the text component and tap ![edit](assets/edit.png) (Edit).
+   1. Tippen Sie auf die Textkomponente und dann auf ![edit](assets/edit.png) (Bearbeiten).
    1. Benennen Sie den Text in **Jetzt bezahlen** um.
    1. Wählen Sie den Text aus und tippen Sie auf das Hyperlink-Symbol.
    1. Geben Sie die Zahlungs-URL in das Feld **Pfad** ein.
    1. Wählen Sie **Neue Registerkarte** aus der Dropdown-Liste **Ziel**.
 
-   1. Tap ![done_icon](assets/done_icon.png) to save the hyperlink properties.
+   1. Tippen Sie auf ![done_icon](assets/done_icon.png), um die Hyperlinkeigenschaften zu speichern.
 
 1. Wählen Sie **Style** aus der Dropdown-Liste neben der Option **Vorschau**.
 
@@ -177,7 +177,7 @@ Im Folgenden finden Sie eine Liste der Ressourcen, die bereits in diesem Tutoria
 
 1. Gestalten Sie den Hyperlink-Text so, dass er als Schaltfläche in der interaktiven Kommunikation angezeigt wird. Gehen Sie dazu wie folgt vor:
 
-   1. Tap the text component and select ![edit](assets/edit.png) (Edit).
+   1. Tippen Sie auf die Textkomponente und wählen Sie ![edit](assets/edit.png) (Bearbeiten).
    1. Geben Sie im Abschnitt **Rahmen** **1.5px** als **Rahmenbreite** ein, wählen Sie **Durchgehend** als **Rahmenstil** ein und geben Sie **46px** als **Rahmenradius** ein.
 
    1. Wählen Sie Rot als Hintergrundfarbe für die Schaltfläche im Abschnitt **Hintergrund**.
@@ -185,18 +185,18 @@ Im Folgenden finden Sie eine Liste der Ressourcen, die bereits in diesem Tutoria
 
    ![Hyperlink in interaktive Kommunikation einfügen](assets/ic_web_hyperlink_new.png)
 
-1. Tap **Pay Now** target area, and tap **+** to add an **Image** component.
-1. Tap the Image component and select ![configure_icon](assets/configure_icon.png) (Configure). Die Bildeigenschaften werden im linken Bereich angezeigt:
+1. Tippen Sie auf den Bereich **Jetzt bezahlen** Zielgruppe und dann auf **+**, um eine **Image**-Komponente hinzuzufügen.
+1. Tippen Sie auf die Image-Komponente und wählen Sie ![configure_icon](assets/configure_icon.png) (Konfigurieren). Die Bildeigenschaften werden im linken Bereich angezeigt:
 
    1. Geben Sie **PayNow** als Namen des Bildes im Feld **Name** ein.
 
-   1. Tap **Upload**, select the **PayNowWeb** image saved on the local file system, and tap **Open**.
+   1. Tippen Sie auf **Upload**, wählen Sie das **PayNowWeb**-Bild aus, das im lokalen Dateisystem gespeichert wurde, und tippen Sie auf **Öffnen**.
 
-   1. Tap ![done_icon](assets/done_icon.png) to save the image properties.
+   1. Tippen Sie auf ![done_icon](assets/done_icon.png), um die Bildeigenschaften zu speichern.
 
-1. Based on the use case, insert a **Subscribe** button in the Interactive Communication that provides the user an option to subscribe to the value added services by clicking the button.
+1. Fügen Sie je nach Anwendungsfall die Schaltfläche **Abonnieren** in die interaktive Kommunikation ein, mit der der Benutzer die Option zum Abonnieren der Mehrwertdienste durch Klicken auf die Schaltfläche erhält.
 
-   Repeat steps 13 - 17 to add a **Subscribe** button to the **Value Added Services** target area and add the **ValueAddedServicesWeb** image.
+   Wiederholen Sie die Schritte 13 bis 17, um dem Bereich **Zielgruppe** Abonnieren **die Schaltfläche &lt;a2/>Wertsteigernde Dienste&lt;a3/> hinzuzufügen, und fügen Sie das Bild** ValueAddedServicesWeb **hinzu.**
 
 ## Erstellen Sie interaktive Kommunikation für Druck und Web mit automatischer Synchronisierung {#create-interactive-communications-for-print-and-web-with-auto-synchronization}
 
@@ -205,31 +205,31 @@ Sie können auch eine interaktive Kommunikation erstellen, indem Sie die automat
 Führen Sie die folgenden Schritte aus, um den Webkanal-Inhalt mithilfe des Druckkanals abzuleiten:
 
 1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
-1. Tap **Create** and select **Interactive Communication**. The **Create Interactive Communication** wizard is displayed.
-1. Geben Sie **create_first_ic** im Feld **Titel** und im Feld **Name** an. Select **FDM_Create_First_IC** as the Form Data Model and tap **Next**.
-1. In the **Channels** wizard:
+1. Tippen Sie auf **Erstellen** und wählen Sie **Interaktive Kommunikation**. Der Assistent **Interaktive Kommunikation erstellen** wird angezeigt.
+1. Geben Sie **create_first_ic** im Feld **Titel** und im Feld **Name** an. Wählen Sie **FDM_Create_First_IC** als Formulardatenmodell und tippen Sie auf **Weiter**.
+1. Im Assistenten **Kanal**:
 
-   1. Specify **create_first_ic_print_template** as the Print template and tap **Select**.
+   1. Geben Sie **create_first_ic_print_template** als Druckvorlage an und tippen Sie auf **Select**.
 
-   1. Select the **Use Print as Master for Web Channel** checkbox.
-   1. Specify **Create_First_IC_templates** folder > **Create_First_IC_Web_Template** as the Web template and tap **Select**.
+   1. Aktivieren Sie das Kontrollkästchen **Als Übergeordnet für Web-Kanal** drucken.
+   1. Geben Sie **Create_First_IC_templates** folder > **Create_First_IC_Web_Template** als Webvorlage an und tippen Sie auf **Select**.
 
    1. Tippen Sie auf **Erstellen**.
 
    Eine Bestätigungsmeldung wird angezeigt, dass die interaktive Kommunikation erfolgreich erstellt wurde.
 
 1. Tippen Sie auf **Bearbeiten**, um die interaktive Kommunikation im rechten Bereich zu öffnen.
-1. Execute steps 6 - 15 of [Create Interactive Communication for Print channel](../../forms/using/create-interactive-communication0.md#create-interactive-communication-for-print-channel) section.
+1. Führen Sie die Schritte 6 - 15 im Abschnitt [Interaktive Kommunikation für Print Kanal](../../forms/using/create-interactive-communication0.md#create-interactive-communication-for-print-channel) erstellen aus.
 1. Tippen Sie auf die Registerkarte **Kanäle** im linken Bereich und tippen Sie auf **Web**, um automatisch generieren Inhalte für den Webkanal aus dem Druckkanal zu generieren.
-1. As the **Use Print as Master for Web Channel** checkbox is selected in step 4, the content and bindings are auto-generated for Web channel from the Print channel.
+1. Da in Schritt 4 das Kontrollkästchen &quot;**Als Übergeordnet für Web-Kanal verwenden**&quot;aktiviert ist, werden die Inhalte und Bindungen automatisch für Web-Kanal aus dem Print-Kanal generiert.
 
    Der Druckkanalinhalt wird unter dem Inhalt der Webkanalvorlage eingefügt. Um den automatisch aus dem Druckkanal generierten Webkanalinhalt zu ändern, können Sie die Vererbung für einen beliebigen Zielbereich abbrechen.
 
-   Hover over the relevant target area in the web channel and select ![cancelinheritance](assets/cancelinheritance.png) (Cancel Inheritance) and then in the **Cancel Inheritance** dialog, tap **Yes**.
+   Bewegen Sie den Mauszeiger über den entsprechenden Bereich der Zielgruppe im Web-Kanal und wählen Sie ![cancelVererbung](assets/cancelinheritance.png) (Abbrechen der Vererbung). Tippen Sie anschließend im Dialogfeld **Cancel Invererance** auf **Yes**.
 
    ![Vererbung abbrechen](assets/cancel_inheritance_web_channel_new.png)
 
-   Wenn Sie die Vererbung einer Komponente abgebrochen haben, können Sie sie erneut aktivieren. To re-enable inheritance, hover over the boundary of the relevant target area, which includes the component, and tap ![reenableinheritance](assets/reenableinheritance.png).
+   Wenn Sie die Vererbung einer Komponente abgebrochen haben, können Sie sie erneut aktivieren. Um die Vererbung erneut zu aktivieren, halten Sie den Mauszeiger über die Begrenzung des entsprechenden Komponentenbereichs, der die Zielgruppe enthält, und tippen Sie auf ![reaktivierte Vererbung](assets/reenableinheritance.png).
 
 1. Wählen Sie die Registerkarte **Inhalt** im linken Bereich.
 1. Ziehen Sie den automatisch generierten Webkanal-Inhalt mithilfe der Inhaltsstruktur in die vorhandenen Bereiche der Webvorlage. Im folgenden finden Sie die Liste der Komponenten, die neu angeordnet werden müssen:
