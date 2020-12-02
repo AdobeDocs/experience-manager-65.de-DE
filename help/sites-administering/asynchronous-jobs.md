@@ -146,7 +146,7 @@ Wenn die Anzahl der Verweise auf die zu verschiebende(n) Seite(n) den Schwellenw
 >* [Erstellen und Organisieren von Seiten](/help/sites-authoring/managing-pages.md)
 >* [Erstellen und Synchronisieren von Live Copies](/help/sites-administering/msm-livecopy.md)
 >* [Konfigurieren Sie E-Mail in Experience Manager](/help/sites-administering/notification.md).
->* [Asset-Metadaten](/help/assets/metadata.md#import-metadata)importieren.
+>* [Asset-Metadaten](/help/assets/metadata.md#import-metadata) importieren.
 >* [Exportieren von Asset-Metadaten](/help/assets/metadata.md#export-metadata).
 >* [Verwenden Sie verbundene Assets, um DAM-Assets aus Remote-Implementierungen freizugeben](/help/assets/use-assets-across-connected-assets-instances.md).
 
