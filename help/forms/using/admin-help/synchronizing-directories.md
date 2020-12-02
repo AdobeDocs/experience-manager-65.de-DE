@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7ec0698a-9e6e-48d4-bba2-5a6eee313900
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1040'
+ht-degree: 97%
 
 ---
 
@@ -35,7 +38,7 @@ Sie können auch angeben, ob ein Push von Benutzer- und Gruppeninformationen in 
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (nicht mehr unterstützt) ist ein Inhaltsverwaltungssystem, das mit LiveCycle installiert wird. Es ermöglicht es Benutzern, am Menschen orientierte Prozesse zu entwerfen, zu verwalten, zu überwachen und zu optimieren. Die Unterstützung von Content Services (veraltet) endet am 31.12.2014. Siehe[ Adobe-Produkt-Lifecycle-Dokument](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Informationen zum Konfigurieren von Content Services (nicht mehr unterstützt) finden Sie unter [Content Services verwalten](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
+>Adobe® LiveCycle® Content Services ES (nicht mehr unterstützt) ist ein Inhaltsverwaltungssystem, das mit LiveCycle installiert wird. Es ermöglicht es Benutzern, am Menschen orientierte Prozesse zu entwerfen, zu verwalten, zu überwachen und zu optimieren. Die Unterstützung von Content Services (veraltet) endet am 31.12.2014. Siehe[ Adobe-Produkt-Lifecycle-Dokument](https://www.adobe.com/de/support/products/enterprise/eol/eol_matrix.html). Informationen zum Konfigurieren von Content Services (nicht mehr unterstützt) finden Sie unter [Content Services verwalten](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
 
 ## Delta-Ordnersynchronisierung aktivieren {#enable-delta-directory-synchronization}
 
@@ -55,21 +58,21 @@ User Management führt folgende Schritte aus, wenn Delta-Ordnersynchronisierung 
 1. Aktivieren Sie unter „Delta-Synchronisation“ das Kontrollkästchen und klicken Sie auf „Speichern“.
 1. Bearbeiten Sie die Ordnereinstellungen für jede Unternehmensdomäne, die die Delta-Ordnersynchronisierungsfunktion verwenden soll. Suchen Sie auf der Seite „Benutzereinstellungen“ und auf der Seite „Gruppeneinstellungen“ die Einstellung „Zeitstempel ändern“ und geben Sie den Wert `modify TimeStamp` ein. Weitere Einzelheiten über das Bearbeiten von Unternehmensdomänen finden Sie unter [Bestehende Domänen bearbeiten und konvertieren](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
 
-## Detaillierte Protokollierung während der Synchronisierung aktivieren oder deaktivieren {#enable-or-disable-detailed-logging-during-synchronization}
+## Detaillierte Protokollierung während der Synchronisierung aktivieren oder deaktivieren  {#enable-or-disable-detailed-logging-during-synchronization}
 
 Standardmäßig protokolliert User Management während des Synchronisierungsprozesses detaillierte Statistiken.
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Konfiguration“ > „Erweiterte Systemattribute konfigurieren“.
 1. Deaktivieren Sie unter „Protokollierung der Synchronisationsstatistiken“ das Kontrollkästchen, um die detaillierte Protokollierung zu deaktivieren, oder aktivieren Sie das Kontrollkästchen, um die detaillierte Protokollierung zu aktivieren. Klicken Sie dann auf „Speichern“.
 
-## Die Wiederholungsoptionen für die Ordnersynchronisierung konfigurieren {#configure-the-directory-synchronization-retry-option}
+## Die Wiederholungsoptionen für die Ordnersynchronisierung konfigurieren  {#configure-the-directory-synchronization-retry-option}
 
 Sie können User Management so konfigurieren, dass regelmäßige Prüfungen auf fehlgeschlagene Versuche zur Ordnersynchronisierung erfolgen. User Management versucht dann, die fehlgeschlagenen Synchronisierungen fertigzustellen.
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Konfiguration“ > „Erweiterte Systemattribute konfigurieren“.
 1. Geben Sie unter „Synchronisations-Finisher Cron Expression“ einen Cron-Ausdruck ein, der das Intervall, in dem User Management die fehlgeschlagenen Synchronisierungen erneut auszuführen versucht, angibt. Die Verwendung des Cron-Ausdrucks basiert auf dem Open-Source-Auftragsplanungssystem Quartz, Version 1.4.0.
 
-   Der Standardwert ist 0/13 &amp;ast; ?  &amp;ast; , was bedeutet, dass die Überprüfung alle 13 Minuten erfolgt.
+   Der Standardwert ist 0/13 &amp;ast; ? &amp;ast; , was bedeutet, dass die Überprüfung alle 13 Minuten erfolgt.
 
 ## Ordner manuell synchronisieren {#manually-synchronize-directories}
 
@@ -79,7 +82,7 @@ Sie können User Management so konfigurieren, dass regelmäßige Prüfungen auf 
 
    Wenn Sie mehrere Domänen auswählen, wird die Domänensynchronisierung für alle Domänen gleichzeitig ausgeführt. Wählen Sie die Domänen dagegen einzeln aus, wird nur jeweils eine Domänensynchronisierung ausgeführt.
 
-## Ordnersynchronisierung planen {#schedule-directory-synchronization}
+## Ordnersynchronisierung planen  {#schedule-directory-synchronization}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domänenverwaltung“.
 1. Synchronisierungsprobleme:
@@ -93,7 +96,7 @@ Die Verwendung des Cron-Ausdrucks basiert auf dem Open-Source-Auftragsplanungssy
 * (Optional) Um Benutzer- und Gruppeninformationen im Push-Verfahren an Content Services (nicht mehr unterstützt) zu senden, wählen Sie die Option „Wählen Sie diese Option, um für Benutzer und Gruppen ein Pushing in registrierte externe Prinzipalspeicheranbieter durchzuführen“. Diese Option gilt auch, wenn neue Benutzer und Gruppen über die Seite „Benutzer und Gruppen“ hinzugefügt werden.
 * Klicken Sie auf Speichern.
 
-## Alle aktiven Ordnersynchronisierungsprozesse beenden {#stop-all-directory-synchronizations-currently-in-progress}
+## Alle aktiven Ordnersynchronisierungsprozesse beenden  {#stop-all-directory-synchronizations-currently-in-progress}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domänenverwaltung“.
 1. Klicken Sie auf „Beenden“. Diese Schaltfläche wird nur während einer aktiven Ordnersynchronisierung angezeigt.
