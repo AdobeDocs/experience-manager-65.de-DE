@@ -75,7 +75,7 @@ Hinweis: Die Farben für geänderte und verschobene Elemente sind identisch.
 >
 >Beim Vergleich von Sprachkopien ist die Hervorhebung deaktiviert, da sich in einer Übersetzung alles ändert und Hervorhebung nutzlos wäre.
 
-### Vollbild und Beenden   {#fullscreen-and-exiting}
+### Vollbild und Beenden    {#fullscreen-and-exiting}
 
 Damit Sie sich auf einen bestimmten Inhalt konzentrieren können, haben Sie die Möglichkeit, auf jeder Seite des Seitenvergleichs auf das Vollbildsymbol zu klicken, um die Ansicht auf das ganze Browser-Fenster zu vergrößern.
 
