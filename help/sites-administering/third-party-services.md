@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e0d6478a-4420-46a6-96fe-082a30ee82f0
 translation-type: tm+mt
 source-git-commit: 471b57a52efc849eb57201e6397221fa4f88c746
+workflow-type: tm+mt
+source-wordcount: '339'
+ht-degree: 93%
 
 ---
 
@@ -31,7 +34,7 @@ Mit AEM können Sie standardmäßig eine Integration in die folgenden Adobe-frem
 * Twitter – Social Networking
 * YouTube – Videofreigabe
 
-In addition, you can integrate AEM with the [marketing cloud](/help/sites-administering/marketing-cloud.md) and with the [Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md).
+Darüber hinaus können Sie AEM mit der [Marketing Cloud](/help/sites-administering/marketing-cloud.md) und mit dem [Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md) integrieren.
 
 ## Integration mit Salesforce {#integrating-with-salesforce}
 
@@ -49,17 +52,17 @@ Silverpop Engage stellt Marketingautomatisierung, E-Mail, Mobile und Social bere
 
 Informationen zur Integration Ihrer AEM-Site in Silverpop Engage finden Sie unter [Integrieren in Silverpop Engage](/help/sites-administering/silverpop.md).
 
-## Integration mit ExactTarget {#integrating-with-exacttarget}
+## Integration mit ExactTarget  {#integrating-with-exacttarget}
 
 Die E-Mail-Marketing-Lösungen von ExactTarget bieten Unternehmen aller Größen die Möglichkeit, zielgerichtete, missionskritische und vollintegrierte E-Mail-Kampagnen zu entwickeln und bereitzustellen.
 
 Informationen zur Integration Ihrer AEM-Site in ExactTarget finden Sie unter [Konfigurieren von ExactTarget](/help/sites-administering/exacttarget.md).
 
-## Integrieren in Facebook und Twitter {#integrating-with-facebook-and-twitter}
+## Integrieren in Facebook und Twitter  {#integrating-with-facebook-and-twitter}
 
 Facebook und Twitter sind beliebte Social-Networking-Dienste. Die Integration von AEM in Facebook und Twitter ermöglicht Unternehmen die Bereitstellung einer Facebook- oder Twitter-Anmeldeoption zu eigenen digitalen Präsenzen und die anschließende Personalisierung des Benutzererlebnisses auf Grundlage der Profilinformationen. Marketingexperten können Profilinformationen mit Daten aus zusätzlichen Quellen wie einem CRM-System oder Websiteprofil kombinieren, um eine einheitliche Sicht auf den Kunden zu ermöglichen.
 
-See [Social Login](/help/communities/social-login.md) for more information.
+Weitere Informationen finden Sie unter [Social-Anmeldung](/help/communities/social-login.md).
 
 ## Integrieren mit sonstigen Anbietern {#integrating-with-other-providers}
 
