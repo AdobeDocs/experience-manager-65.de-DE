@@ -10,17 +10,20 @@ topic-tags: integrations
 discoiquuid: 6cf54a08-d429-4a58-8429-a1cb784448d1
 translation-type: tm+mt
 source-git-commit: 9d90bc5f77f827925e3e1ecd12d56a94a2bbae30
+workflow-type: tm+mt
+source-wordcount: '856'
+ht-degree: 32%
 
 ---
 
 
 # Erstellen zielgerichteter Erlebnisse in AEM Forms {#create-targeted-experiences-in-aem-forms}
 
-## Integrate Adobe Target with AEM Forms {#integrate-adobe-target-with-aem-forms}
+## Adobe Target mit AEM Forms integrieren {#integrate-adobe-target-with-aem-forms}
 
-Durch die Integration von Adobe Target mit AEM können Sie die personalisierte Erlebnisse für bestimmte Zielgruppen erstellen. Mit Adobe Target können Sie A/B-Tests erstellen, Benutzerreaktionen messen und personalisierte Web-Inhalte für die anzusprechenden Benutzer generieren. Sie können Adobe Target mit AEM Forms integrieren, um Bildkomponenten adaptiver Formulare und interaktiver Kommunikation als Ziel festzulegen.
+Durch die Integration von Adobe Target mit AEM können Sie die personalisierte Erlebnisse für bestimmte Zielgruppen erstellen. Mit Adobe Target können Sie A/B-Tests erstellen, Benutzerreaktionen messen und personalisierte Web-Inhalte für die anzusprechenden Benutzer generieren. Sie können Adobe Target in AEM Forms integrieren, um Bildkomponenten adaptiver Formulare und interaktive Zielgruppen zu erstellen.
 
-Konfigurieren Sie Adobe Target in AEM, um es mit adaptiven Formularen und interaktiver Kommunikation zu verwenden, siehe [Erstellen einer Target-Konfiguration in AEM](/help/sites-administering/target.md) und [Hinzufügen eines Frameworks](/help/sites-administering/target.md).
+Konfigurieren Sie Adobe Target in AEM, um es mit adaptiven Formularen und interaktiven Kommunikationen zu verwenden, siehe [Erstellen einer Zielgruppe-Konfiguration in AEM](/help/sites-administering/target.md) und [Hinzufügen Framework](/help/sites-administering/target.md).
 
 >[!NOTE]
 >
@@ -28,38 +31,38 @@ Konfigurieren Sie Adobe Target in AEM, um es mit adaptiven Formularen und intera
 
 ## Target- Aktivität erstellen {#creating-a-target-activity}
 
-1. Tap **Adobe Experience Manager > Personalization > Activities**.
+1. Tippen Sie auf **Adobe Experience Manager > Personalization > Aktivitäten**.
 
    `https://<hostname>:<port>/libs/cq/personalization/touch-ui/content/v2/activities.html`
 
-1. In the Activities page, tap **Create > Create Brand**.
+1. Tippen Sie auf der Seite &quot;Aktivitäten&quot;auf **Erstellen > Marke erstellen**.
 1. Sie werden aufgefordert, eine Vorlage auswählen und Eigenschaften einzugeben.
 
-   Select a template, tap **Next.** Geben Sie im Abschnitt Eigenschaften den Titel Ihrer Marke ein und tippen Sie auf **Erstellen.**
-Ihre Marke wird jetzt auf der Seite Aktivitäten aufgeführt.
+   Wählen Sie eine Vorlage aus und tippen Sie auf **Weiter.** Geben Sie im Abschnitt Eigenschaften den Titel Ihrer Marke ein und tippen Sie auf  **Erstellen.**
+Ihre Marke wird jetzt auf der Seite &quot;Aktivitäten&quot;aufgeführt.
 
 1. Tippen Sie auf der Seite „Aktivitäten“ auf Ihre Marke.
-1. In Master Area of your brand, tap **Create** > **Create Activity**.
+1. Tippen Sie im Bereich Ihrer Marke Übergeordnet auf **Erstellen** > **Aktivität erstellen**.
 
    Beim Erstellen einer Aktivität geben Sie deren Details, Ziel und Einstellungen an.
 
-   Der Detailbereich enthält den Namen, die Targeting-Engine und die Zielsetzung. Wenn Sie Adobe Target als Targeting-Engine wählen, wird die Option für die Target-Cloud-Konfiguration aktiviert. Choose your Target cloud configuration, choose Activity type, provide the objective of the activity, and tap **Next**. Interaktive Kommunikation unterstützt nur den Aktivitätstyp Erlebnis-Targeting.
+   Der Detailbereich enthält den Namen, die Targeting-Engine und die Zielsetzung. Wenn Sie Adobe Target als Targeting-Engine wählen, wird die Option für die Target-Cloud-Konfiguration aktiviert. Wählen Sie die Cloud-Konfiguration für Ihre Zielgruppe aus, wählen Sie den Typ der Aktivität, geben Sie das Ziel der Aktivität an und tippen Sie auf **Weiter**. Interaktive Kommunikation unterstützt nur den Erlebnis-Targeting-Aktivitäten-Typ.
 
-   Im Abschnitt „Target“ können Sie das Erlebnis für die Zielgruppe hinzufügen und benennen. Click **Add Experience** to enable the **Select Audience** and **Name Experience** options. Tap **Select Audience** to see a list of audiences and their source. Wählen Sie eine Zielgruppe aus der Liste „Zielgruppenname“ aus. Tap **Add Experience** to name the experience, and tap **Next**.
+   Im Abschnitt „Target“ können Sie das Erlebnis für die Zielgruppe hinzufügen und benennen. Klicken Sie auf **Hinzufügen Erlebnis**, um die Optionen **Audience** und **Erlebnis benennen** zu aktivieren. Tippen Sie auf **Audience** auswählen, um eine Liste der Audiencen und deren Quelle anzuzeigen. Wählen Sie eine Zielgruppe aus der Liste „Zielgruppenname“ aus. Tippen Sie auf **Hinzufügen Erlebnis**, um das Erlebnis zu benennen, und tippen Sie auf **Weiter**.
 
-   Im Abschnitt „Ziele und Einstellungen“ können Sie den Zeitplan und die Priorität für Ihre Aktivität festlegen. Set the start date, end date, and priority of the activity, goal metric, additional metric and tap **Save**.
+   Im Abschnitt „Ziele und Einstellungen“ können Sie den Zeitplan und die Priorität für Ihre Aktivität festlegen. Legen Sie Datum, Enddatum und Priorität des Beginns der Aktivität, Zielmetrik und zusätzliche Metrik fest und tippen Sie auf **Speichern**.
 
    Die Aktivität wird jetzt in Ihrer Markenseite aufgeführt.
 
    >[!NOTE]
    >
-   >Sie können die Fehlermeldung &quot;Ihre Aktivität wurde gespeichert, sie wurde jedoch nicht mit Target synchronisiert. Grund: Das folgende Erlebnis enthält keine Angebote&quot;, wenn es beim Speichern der Aktivität aufgetreten ist.
+   >Sie können die Fehlermeldung &quot;Ihre Aktivität wurde gespeichert, aber nicht mit der Zielgruppe synchronisiert. Grund: Das folgende Erlebnis hat keine Angebote&quot;, wenn es beim Speichern der Aktivität aufgetreten ist.
 
-1. Um Target zu aktivieren, bearbeiten Sie die JSP-Datei, um Clientbibliotheken einzuschließen, die Ihre Vorlage für adaptive Formulare verwendet.
+1. Um die Zielgruppe zu aktivieren, bearbeiten Sie die JSP-Datei, um Clientbibliotheken einzuschließen, die Ihre Vorlage für adaptive Formulare verwendet.
 
-   For example, in the out-of-the-box implementation, click **Tools** >  **CRXDE Lite**.
+   Klicken Sie beispielsweise in der vordefinierten Implementierung auf **Tools** > **CRXDE Lite**.
 
-   Geben Sie in der Adressleiste von CRXDE Lite /libs/fd/af/components/page/base/head.jsp ein, um die Datei head.jsp zu bearbeiten.
+   Geben Sie in der Adressleiste der CRXDE Lite /libs/fd/af/components/page/base/head.jsp ein, um die Datei head.jsp zu bearbeiten.
 
    Diese Implementierung verwendet die Vorlage simpleEnrollment. In dieser Implementierung müssen Sie die Datei head.jsp wie folgt ändern und dabei die folgenden Clientbibliotheken aufnehmen:
 
@@ -69,31 +72,31 @@ Ihre Marke wird jetzt auf der Seite Aktivitäten aufgeführt.
 
    `<cq:include path="config" resourceType="cq/personalization/components/clientcontext_optimized/config"/>`
 
-1. Um das Target-Framework für adaptive Formulare zu aktivieren, navigieren Sie zu Ihrem Formular oder zu Ihrer interaktiven Kommunikation und öffnen Sie es im Bearbeitungsmodus.
+1. Um das Zielgruppe-Framework für adaptive Formulare zu aktivieren, navigieren Sie zu Ihrem Formular oder zu Ihrer interaktiven Kommunikation und öffnen Sie es im Bearbeitungsmodus.
 
-   To open a form or interactive communication in edit mode, tap **Select** and then tap **Open**.
+   Um ein Formular oder eine interaktive Kommunikation im Bearbeitungsmodus zu öffnen, tippen Sie auf **Wählen Sie** und dann auf **Öffnen**.
 
-   Alternativ dazu werden vier Schaltflächen angezeigt, wenn Sie den Mauszeiger über das Formular- oder interaktive Kommunikationssymbol bewegen, ohne es auszuwählen. You can tap the **Edit** button that appears, to open the form in edit mode.
+   Alternativ dazu werden vier Schaltflächen angezeigt, wenn Sie den Mauszeiger über das Formular- oder interaktive Kommunikationssymbol bewegen, ohne es auszuwählen. Sie können auf die angezeigte Schaltfläche **Bearbeiten** tippen, um das Formular im Bearbeitungsmodus zu öffnen.
 
-1. In the page toolbar, tap **Page Information** ![theme-options](assets/theme-options.png) > **Open Properties**.
-1. Wählen Sie auf der Registerkarte &quot;Allgemein&quot;eine Konfiguration für das Feld &quot; **Adobe Target** &quot;aus. Tap **Save &amp; Close**.
+1. Tippen Sie in der Seitensymbolleiste auf **Seiteninformationen** ![Themenoptionen](assets/theme-options.png) > **Eigenschaften öffnen**.
+1. Wählen Sie auf der Registerkarte &quot;Allgemein&quot;eine Konfiguration für das Feld **Adobe Target**. Tippen Sie auf **Speichern und Schließen**.
 
 ## Anwenden der erstellten Aktivität auf ein adaptives Formularbild oder ein interaktives Kommunikationsbild {#applying-created-activity-to-an-adaptive-form-image-or-an-interactive-communication-image}
 
-1. Öffnen Sie das adaptive Formular und die interaktive Kommunikation zur Bearbeitung. Wenn Sie eine interaktive Kommunikation öffnen, öffnen Sie den Webkanal.
+1. Öffnen Sie das adaptive Formular und die interaktive Kommunikation zur Bearbeitung. Wenn Sie eine interaktive Kommunikation öffnen, öffnen Sie den Web Kanal.
 
 1. Fügen Sie im Bearbeitungsmodus Ihrer interaktiven Kommunikation oder Ihres adaptiven Formulars ein Bild hinzu, das als Ziel dienen soll.
 
    >[!NOTE]
    >
-   >AEM Forms unterstützt das Targeting nur von Bildkomponenten. Stellen Sie sicher, dass das Bedienfeld, in dem sich die Bildkomponente befindet, keine andere Komponente enthält und die Spaltenanzahl für das Bedienfeld auf 1 eingestellt ist.
+   >AEM Forms unterstützt nur Targeting von Bildkomponenten. Stellen Sie sicher, dass das Bedienfeld, in dem sich die Bildkomponente befindet, keine andere Komponente enthält und die Spaltenanzahl für das Bedienfeld auf 1 eingestellt ist.
 
-1. Wechseln Sie vom **Bearbeitungsmodus** zum **Targeting** -Modus. Die Option zum Wechseln der Modi befindet sich in der oberen rechten Ecke.
-1. Wählen Sie eine **MARKE**, wählen Sie **AKTIVITÄT** und tippen Sie auf **Targeting** starten. Das Menü &quot; **Zielgruppen** &quot;wird rechts im Editor angezeigt.
+1. Wechseln Sie von **Bearbeiten** in **Targeting**-Modus. Die Option zum Wechseln der Modi befindet sich in der oberen rechten Ecke.
+1. Wählen Sie eine **MARKEN**, wählen Sie **AKTIVITÄT** und tippen Sie auf **Beginn-Targeting**. Das Menü **Audiencen** wird rechts im Editor angezeigt.
 
    ![targeting-menu](assets/targeting-menu.png)
 
-1. Wählen Sie eine Zielgruppe aus dem Menü &quot; **Zielgruppen** &quot;und tippen Sie auf das gewünschte Bild. Ein Menü wird angezeigt. Tippen Sie im Menü auf **Target**. Tippen Sie auf das Bild und dann auf **Konfigurieren**. Wählen Sie im Eigenschaftenfenster das Bild aus, das für die ausgewählte Zielgruppe angezeigt werden soll. Wiederholen Sie den Schritt für alle Zielgruppen. Das Erlebnis-Targeting ist für das Bild in der interaktiven Kommunikation oder im adaptiven Formular aktiviert.
+1. Wählen Sie eine Audience aus dem Menü **Audiencen** und tippen Sie auf das Bild zur Zielgruppe. Ein Menü wird angezeigt. Tippen Sie im Menü auf **Zielgruppe**. Tippen Sie auf das Bild und dann auf **Konfigurieren**. Wählen Sie im Eigenschaftenfenster das für die ausgewählte Audience anzuzeigende Bild aus. Wiederholen Sie den Schritt für alle Audiencen. Das Erlebnis-Targeting ist für das Bild in der interaktiven Kommunikation oder im adaptiven Formular aktiviert.
 
 ## Überprüfen Sie, ob die erstellte Aktivität mit dem Target-Server synchronisiert wird.{#check-if-the-created-activity-syncs-with-the-target-server}
 
@@ -105,8 +108,8 @@ Vergewissern Sie sich, dass die Aktivität den Status „Synchronisiert“ aufwe
 
 Target-Verhalten validieren:
 
-* Use targeting with `wcmmode preview` in the author mode
-* Verwenden des Targeting mit `wcmmode preview` und im `wcmmode disabled` Veröffentlichungsmodus
+* Targeting mit `wcmmode preview` im Autorenmodus verwenden
+* Verwenden Sie das Targeting mit `wcmmode preview` und `wcmmode disabled` im Veröffentlichungsmodus.
 
 ## Targeting für die Bildkomponente überwachen {#monitor-targeting-for-the-image-component}
 
