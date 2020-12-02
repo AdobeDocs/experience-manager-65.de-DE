@@ -11,15 +11,18 @@ topic-tags: security
 discoiquuid: 4e08c297-aa4b-44cf-84c8-1e11582d9ebb
 translation-type: tm+mt
 source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+workflow-type: tm+mt
+source-wordcount: '279'
+ht-degree: 87%
 
 ---
 
 
 # Verschlüsselungsunterstützung für Konfigurationseigenschaften{#encryption-support-for-configuration-properties}
 
-## Überblick {#overview}
+## Überblick{#overview}
 
-Unterstützung für die Speicherung aller OSGi-Konfigurationseigenschaften in sicherer, verschlüsselter Form anstatt als Klartext. Das Formular in der Web-Konsole-Benutzeroberfläche wird verwendet, um verschlüsselten Text aus unverschlüsseltem Text mithilfe des systemweiten Verschlüsselungs-Master-Schlüssels zu erstellen.
+Unterstützung für die Speicherung aller OSGi-Konfigurationseigenschaften in sicherer, verschlüsselter Form anstatt als Klartext. Das Formular in der Web-Konsole-Benutzeroberfläche wird verwendet, um verschlüsselten Text aus Klartext mithilfe des systemweiten Verschlüsselungsschlüssels Übergeordnet zu erstellen.
 
 Die Unterstützung für das OSGi-Konfigurations-Plug-in wurde hinzugefügt, um die Eigenschaft zu entschlüsseln, bevor sie von einem Dienst verwendet wird.
 
@@ -31,7 +34,7 @@ Die Unterstützung für das OSGi-Konfigurations-Plug-in wurde hinzugefügt, um d
 
 Diese Schritte zeigen, wie das SMTP-Kennwort für den Mail-Dienst verschlüsselt wird. Sie können diese Schritte für eine OSGI-Eigenschaft ausführen, die verschlüsselt werden soll.
 
-1. Go to the AEM Web Console at *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
+1. Wechseln Sie zur AEM Web Console unter *https://&lt;server-Adresse>:&lt;server-Anschluss>/system/console/configMgr*
 1. Gehen Sie in der oberen linken Ecke zu **Main - Crypto-Unterstützung.**
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
@@ -51,6 +54,6 @@ Diese Schritte zeigen, wie das SMTP-Kennwort für den Mail-Dienst verschlüsselt
 
 1. Speichern Sie die Eigenschaften von „Day CQ Mail Service“. Das SMTP-Kennwort wird jetzt als verschlüsselter Wert gesendet.
 
-## Entschlüsselungsunterstützung {#decryption-support}
+## Entschlüsselungsunterstützung  {#decryption-support}
 
 AEM bietet jetzt ein Konfigurations-Plug-in zur Entschlüsselung von Konfigurationseigenschaften. Dieses AEM-Plug-in entschlüsselt automatisch und ruft die Klartext-Eigenschaften ab.
