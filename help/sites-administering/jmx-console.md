@@ -23,7 +23,7 @@ ht-degree: 70%
 
 Mit der JMX-Konsole können Sie Dienste auf dem CRX-Server überwachen und verwalten. Die folgenden Abschnitte fassen die Attribute und Vorgänge zusammen, die über das JMX-Framework bereitgestellt werden.
 
-Weitere Informationen zur Nutzung der Konsolensteuerung finden Sie unter [Verwenden der JMX-Konsole](#using-the-jmx-console). For background information about JMX, see the [Java Management Extensions (JMX) Technology](https://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html) page on the Oracle website.
+Weitere Informationen zur Nutzung der Konsolensteuerung finden Sie unter [Verwenden der JMX-Konsole](#using-the-jmx-console). Hintergrundinformationen zu JMX finden Sie auf der Seite [Java Management Extensions (JMX) Technology](https://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html) auf der Oracle-Website.
 
 Weitere Informationen zur Erstellung von MBeans für die Verwaltung Ihrer Dienste über die JMX-Konsole finden Sie unter [Integrieren von Diensten mit der JMX-Konsole](/help/sites-developing/jmx-integration.md).
 
@@ -40,17 +40,17 @@ Vorgänge zum Verwalten von ausgeführten, abgeschlossenen, statischen und fehlg
 
 ### Betrieb {#operations}
 
-**listRunningWorkflowsPerModel** Liste die Anzahl der Workflow-Instanzen, die für jedes Workflow-Modell ausgeführt werden.
+**** listRunningWorkflowsPerModelListet die Anzahl der Workflow-Instanzen auf, die für jedes Workflow-Modell ausgeführt werden.
 
 * Argumente: keine
 * Zurückgegebener Wert: Tabellendaten mit Count- und ModelId-Spalten.
 
-**listCompletedWorkflowsPerModel** Liste die Anzahl der abgeschlossenen Workflow-Instanzen für jedes Workflow-Modell.
+**** listCompletedWorkflowsPerModelListet die Anzahl der abgeschlossenen Workflow-Instanzen für jedes Workflow-Modell auf.
 
 * Argumente: keine
 * Zurückgegebener Wert: Tabellendaten mit Count- und ModelId-Spalten.
 
-**returnWorkflowQueueInfo** -Listen zu verarbeiteten Workflow-Elementen, die zur Verarbeitung in die Warteschlange gestellt wurden.
+**** returnWorkflowQueueInfoListet Informationen zu verarbeiteten Workflow-Elementen auf, die zur Verarbeitung in die Warteschlange gestellt wurden.
 
 * Argumente: keine
 * Zurückgegebener Wert: Tabellendaten mit den folgenden Spalten:
@@ -66,18 +66,18 @@ Vorgänge zum Verwalten von ausgeführten, abgeschlossenen, statischen und fehlg
    * Processed Jobs
    * Queued Jobs
 
-**returnWorkflowJobTopicInfo** -Listen - Informationen zur Verarbeitung von Arbeitsablaufaufaufträgen, nach Thema geordnet.
+**** returnWorkflowJobTopicInfoListet Verarbeitungsinformationen für Workflow-Aufträge nach Thema auf.
 
 * Argumente: keine
 * Zurückgegebener Wert: Tabellendaten mit den folgenden Spalten:
 
    * Topic Name
-   * Average Processing Time
-   * Average Waiting Time
-   * Cancelled Jobs
-   * Failed Jobs
-   * Finished Jobs
-   * Processed Jobs
+   * Durchschnittliche Verarbeitungszeit
+   * Durchschnittliche Wartezeit
+   * Abgebrochene Aufträge
+   * Fehlgeschlagene Aufträge
+   * Fertiggestellte Aufträge
+   * Verarbeitete Aufträge
 
 **returnFailureWorkflowCount** Zeigt die Anzahl der Workflow-Instanzen an, die fehlgeschlagen sind. Sie können ein Workflow-Modell für die Abfrage angeben oder Informationen für alle Workflow-Modelle abrufen.
 
@@ -89,12 +89,12 @@ Vorgänge zum Verwalten von ausgeführten, abgeschlossenen, statischen und fehlg
 
 * Zurückgegebener Wert: die Anzahl an fehlgeschlagenen Workflow-Instanzen.
 
-**returnFailedWorkflowCountPerModel** zeigt die Anzahl der Workflow-Instanzen an, die für jedes Workflow-Modell fehlgeschlagen sind.
+**returnFailureWorkflowCountPerModelZeigt die Anzahl der Workflow-Instanzen an, die für jedes Workflow-Modell fehlgeschlagen sind.** 
 
 * Argumente: keine
 * Zurückgegebener Wert: Tabellendaten mit Count- und ModelId-Spalten.
 
-**terminateFailureInstanzen** Workflow-Instanzen beenden, die fehlgeschlagen sind. Sie können alle fehlgeschlagenen Instanzen beenden oder nur die fehlgeschlagenen Instanzen für ein bestimmtes Modell. Optional können Sie die Instanzen neu starten, nachdem sie beendet wurden. Sie können den Vorgang auch testen, um die Ergebnisse zu sehen, ohne den Vorgang tatsächlich durchzuführen.
+**Workflow-Instanzen** beenden, die fehlgeschlagen sind. Sie können alle fehlgeschlagenen Instanzen beenden oder nur die fehlgeschlagenen Instanzen für ein bestimmtes Modell. Optional können Sie die Instanzen neu starten, nachdem sie beendet wurden. Sie können den Vorgang auch testen, um die Ergebnisse zu sehen, ohne den Vorgang tatsächlich durchzuführen.
 
 * Argumente:
 
@@ -113,7 +113,7 @@ Vorgänge zum Verwalten von ausgeführten, abgeschlossenen, statischen und fehlg
    * StartComment
    * WorkflowTitle
 
-**retryFailedWorkItems** versucht, Schritte für Arbeitselemente auszuführen, die fehlgeschlagen sind. Sie können alle fehlgeschlagenen Arbeitselemente erneut ausführen lassen oder nur die fehlgeschlagenen Arbeitselemente für ein bestimmtes Workflow-Modell. Optional können Sie den Vorgang testen, um die Ergebnisse zu sehen, ohne den Vorgang tatsächlich durchzuführen.
+**** retryFailureWorkItemsVersuche, fehlgeschlagene Arbeitselementschritte auszuführen. Sie können alle fehlgeschlagenen Arbeitselemente erneut ausführen lassen oder nur die fehlgeschlagenen Arbeitselemente für ein bestimmtes Workflow-Modell. Optional können Sie den Vorgang testen, um die Ergebnisse zu sehen, ohne den Vorgang tatsächlich durchzuführen.
 
 * Argumente:
 
@@ -126,12 +126,12 @@ Vorgänge zum Verwalten von ausgeführten, abgeschlossenen, statischen und fehlg
 
    * Initiator
    * InstanceId
-   * ModelId
-   * Payload
+   * modelId
+   * Nutzlast
    * StartComment
    * WorkflowTitle
 
-**PurgeActive** Entfernt aktive Workflow-Instanzen eines bestimmten Alters. Sie können aktive Instanzen für alle Modelle bereinigen oder nur die Instanzen für ein bestimmtes Modell. Optional können Sie den Vorgang testen, um die Ergebnisse zu sehen, ohne den Vorgang tatsächlich durchzuführen.
+**** PurgeActiveEntfernt aktive Workflow-Instanzen eines bestimmten Alters. Sie können aktive Instanzen für alle Modelle bereinigen oder nur die Instanzen für ein bestimmtes Modell. Optional können Sie den Vorgang testen, um die Ergebnisse zu sehen, ohne den Vorgang tatsächlich durchzuführen.
 
 * Argumente:
 
@@ -145,12 +145,12 @@ Vorgänge zum Verwalten von ausgeführten, abgeschlossenen, statischen und fehlg
 
    * Initiator
    * InstanceId
-   * ModelId
-   * Payload
+   * modelId
+   * Nutzlast
    * StartComment
    * WorkflowTitle
 
-**countStaleWorkflows** Gibt die Anzahl der nicht mehr unterstützten Workflow-Instanzen zurück. Sie können die Anzahl an veralteten Instanzen für alle Workflow-Modelle oder für ein bestimmtes Modell abrufen.
+**** countStaleWorkflowsGibt die Anzahl der nicht mehr unterstützten Workflow-Instanzen zurück. Sie können die Anzahl an veralteten Instanzen für alle Workflow-Modelle oder für ein bestimmtes Modell abrufen.
 
 * Argumente:
 
@@ -160,7 +160,7 @@ Vorgänge zum Verwalten von ausgeführten, abgeschlossenen, statischen und fehlg
 
 * Zurückgegebener Wert: die Anzahl an veralteten Workflow-Instanzen.
 
-**startsStaleWorkflows** Startet statische Workflow-Instanzen neu. Sie können alle veralteten Instanzen neu starten oder nur die veralteten Instanzen für ein bestimmtes Modell. Sie können den Vorgang auch testen, um die Ergebnisse zu sehen, ohne den Vorgang tatsächlich durchzuführen.
+**Workflow-Instanzen** neu startenStaleWorkflowsStartet statische Workflow-Instanzen neu. Sie können alle veralteten Instanzen neu starten oder nur die veralteten Instanzen für ein bestimmtes Modell. Sie können den Vorgang auch testen, um die Ergebnisse zu sehen, ohne den Vorgang tatsächlich durchzuführen.
 
 * Argumente:
 
@@ -171,12 +171,12 @@ Vorgänge zum Verwalten von ausgeführten, abgeschlossenen, statischen und fehlg
 
 * Zurückgegebener Wert: eine Liste der Workflow-Instanzen, die neu gestartet werden.
 
-**fetchModelList** Liste alle Workflow-Modelle.
+**fetchModelListListet** alle Workflow-Modelle auf.
 
 * Argumente: keine
 * Zurückgegebener Wert: Tabellendaten, die die Workflow-Modelle identifizieren, mit den ModelId- und ModelName-Spalten.
 
-**countRunningWorkflows** Gibt die Anzahl der ausgeführten Workflow-Instanzen zurück. Sie können die Anzahl an laufenden Instanzen für alle Workflow-Modelle oder für ein bestimmtes Modell abrufen.
+**** countRunningWorkflowsGibt die Anzahl der ausgeführten Workflow-Instanzen zurück. Sie können die Anzahl an laufenden Instanzen für alle Workflow-Modelle oder für ein bestimmtes Modell abrufen.
 
 * Argumente:
 
@@ -186,7 +186,7 @@ Vorgänge zum Verwalten von ausgeführten, abgeschlossenen, statischen und fehlg
 
 * Zurückgegebener Wert: die Anzahl an laufenden Workflow-Instanzen.
 
-**countCompletedWorkflows** Gibt die Anzahl der abgeschlossenen Workflow-Instanzen zurück. Sie können die Anzahl an abgeschlossenen Instanzen für alle Workflow-Modelle oder für ein bestimmtes Modell abrufen.
+**** countCompletedWorkflowsGibt die Anzahl der abgeschlossenen Workflow-Instanzen zurück. Sie können die Anzahl an abgeschlossenen Instanzen für alle Workflow-Modelle oder für ein bestimmtes Modell abrufen.
 
 * Argumente:
 
@@ -196,7 +196,7 @@ Vorgänge zum Verwalten von ausgeführten, abgeschlossenen, statischen und fehlg
 
 * Zurückgegebener Wert: die Anzahl an abgeschlossenen Workflow-Instanzen.
 
-**purgeCompleted** Entfernt Datensätze zu abgeschlossenen Workflows eines bestimmten Alters aus dem Repository. Wenn Sie häufig Workflows verwenden, verringern Sie mit diesem Vorgang regelmäßig die Größe des Repositorys. Sie können abgeschlossene Instanzen für alle Modelle bereinigen oder nur die Instanzen für ein bestimmtes Modell. Optional können Sie den Vorgang testen, um die Ergebnisse zu sehen, ohne den Vorgang tatsächlich durchzuführen.
+**** purgeCompletedEntfernt Datensätze zu abgeschlossenen Workflows eines bestimmten Alters aus dem Repository. Wenn Sie häufig Workflows verwenden, verringern Sie mit diesem Vorgang regelmäßig die Größe des Repositorys. Sie können abgeschlossene Instanzen für alle Modelle bereinigen oder nur die Instanzen für ein bestimmtes Modell. Optional können Sie den Vorgang testen, um die Ergebnisse zu sehen, ohne den Vorgang tatsächlich durchzuführen.
 
 * Argumente:
 
@@ -210,8 +210,8 @@ Vorgänge zum Verwalten von ausgeführten, abgeschlossenen, statischen und fehlg
 
    * Initiator
    * InstanceId
-   * ModelId
-   * Payload
+   * modelId
+   * Nutzlast
    * StartComment
    * WorkflowTitle
 
@@ -224,23 +224,23 @@ Informationen zum CRX-Repository
 
 ### Attribute {#attributes}
 
-**Name** Der Name der JCR-Repository-Implementierung. Schreibgeschützt.
+**** NameDer Name der JCR-Repository-Implementierung. Schreibgeschützt.
 
-**Version** Die Version der Repository-Implementierung. Schreibgeschützt.
+**** VersionDie Version der Repository-Implementierung. Schreibgeschützt.
 
-**HomeDir** Der Ordner, in dem sich das Repository befindet. Der standardmäßige Speicherort ist &lt;QuickStart_Jar_Location>/crx-quickstart/repository. Schreibgeschützt.
+**** HomeDirDer Ordner, in dem sich das Repository befindet. Der standardmäßige Speicherort ist &lt;QuickStart_Jar_Location>/crx-quickstart/repository. Schreibgeschützt.
 
-**CustomerName** Der Name des Kunden, dem die Softwarelizenz erteilt wird. Schreibgeschützt.
+**** CustomerNameDer Name des Kunden, dem die Softwarelizenz erteilt wird. Schreibgeschützt.
 
-**LicenseKey** Der eindeutige Lizenzschlüssel für diese Installation des Repositorys. Schreibgeschützt.
+**** LicenseKeyDer eindeutige Lizenzschlüssel für diese Installation des Repositorys. Schreibgeschützt.
 
-**AvailableDiskSpace** Der für diese Instanz des Repositorys verfügbare Speicherplatz in MB. Schreibgeschützt.
+**** AvailableDiskSpaceDer für diese Instanz des Repositorys verfügbare Speicherplatz in MB. Schreibgeschützt.
 
-**MaximumNumberOfOpenFiles** Die Anzahl der Dateien, die gleichzeitig geöffnet werden können. Schreibgeschützt.
+**** MaximumNumberOfOpenFilesDie Anzahl der Dateien, die gleichzeitig geöffnet werden können. Schreibgeschützt.
 
-**SessionTracker** Der Wert der Systemvariable crx.debug.session. &quot;true&quot;bedeutet eine Debug-Sitzung. false bedeutet eine normale Sitzung. Lese- und Schreibzugriff.
+**** SessionTrackerDer Wert der Systemvariable crx.debug.session. &quot;true&quot;bedeutet eine Debug-Sitzung. false bedeutet eine normale Sitzung. Lese- und Schreibzugriff.
 
-**Deskriptoren** Eine Gruppe von Schlüssel/Wert-Paaren, die Repository-Eigenschaften darstellen. Alle Eigenschaften sind schreibgeschützt.
+**** DeskriptorenEine Gruppe von Schlüssel/Wert-Paaren, die Repository-Eigenschaften darstellen. Alle Eigenschaften sind schreibgeschützt.
 
 <table>
  <tbody>
@@ -490,21 +490,21 @@ Informationen zum CRX-Repository
  </tbody>
 </table>
 
-**WorkspaceNames** Die Namen der Arbeitsflächen im Repository. Schreibgeschützt.
+**** WorkspaceNamesDie Namen der Arbeitsflächen im Repository. Schreibgeschützt.
 
-**DataStoreGarbageCollectionDelay** Die Zeit in Millisekunden, die die Garbage Collection nach dem Scannen aller zehnten Nodes aussetzt. Lese- und Schreibzugriff.
+**** DataStoreGarbageCollectionDelayDie Zeit in Millisekunden, in der die Garbage Collection nach dem Scannen aller zehnten Nodes schläft. Lese- und Schreibzugriff.
 
-**BackupDelay** Die Zeit in Millisekunden, die der Sicherungsvorgang zwischen den einzelnen Sicherungsschritten vergeht. Lese- und Schreibzugriff.
+**** BackupDelayDie Zeit in Millisekunden, die der Sicherungsvorgang zwischen den einzelnen Sicherungsschritten vergeht. Lese- und Schreibzugriff.
 
-**BackupInProgress** Der Wert true gibt an, dass ein Sicherungsprozess ausgeführt wird. Schreibgeschützt.
+**** BackupInProgressDer Wert true gibt an, dass ein Sicherungsprozess ausgeführt wird. Schreibgeschützt.
 
-**BackupProgress** Bei der aktuellen Sicherung ist der Prozentsatz aller gesicherten Dateien. Schreibgeschützt.
+**** BackupProgressFür die aktuelle Sicherung ist der Prozentsatz aller gesicherten Dateien. Schreibgeschützt.
 
-**CurrentBackupTarget** Für die aktuelle Sicherung, die ZIP-Datei, in der Sicherungsdateien gespeichert werden. Wenn gerade kein Backup durchgeführt wird, wird kein Wert angezeigt. Schreibgeschützt.
+**** CurrentBackupTargetFür die aktuelle Sicherung wird die ZIP-Datei, in der Sicherungsdateien gespeichert werden, verwendet. Wenn gerade kein Backup durchgeführt wird, wird kein Wert angezeigt. Schreibgeschützt.
 
-**BackupWarSuccessful** Der Wert true gibt an, dass während der aktuellen Sicherung keine Fehler aufgetreten sind oder dass keine Sicherung ausgeführt wird. Der Wert „false“ bedeutet, dass beim aktuellen Backup ein Fehler aufgetreten ist. Schreibgeschützt.
+**** BackupWarSuccessful Der Wert true gibt an, dass während der aktuellen Sicherung keine Fehler aufgetreten sind oder keine Sicherung ausgeführt wird. Der Wert „false“ bedeutet, dass beim aktuellen Backup ein Fehler aufgetreten ist. Schreibgeschützt.
 
-**BackupResult** Der Status der aktuellen Sicherung. Die folgenden Werte sind möglich:
+**** BackupResultDer Status der aktuellen Sicherung. Die folgenden Werte sind möglich:
 
 * Backup in progress: Gerade wird ein Backup ausgeführt.
 * Backup canceled: Das Backup wurde abgebrochen.
@@ -514,23 +514,23 @@ Informationen zum CRX-Repository
 
 Schreibgeschützt.
 
-**TarOptimizationRunningSeit** Beginn des aktuellen TAR-Dateioptimierungsprozesses. Schreibgeschützt.
+**** TarOptimizationRunningSinceDer Zeitpunkt, zu dem der aktuelle TAR-Dateioptimierungsprozess begann. Schreibgeschützt.
 
-**TarOptimizationDelay** Die Zeit in Millisekunden, die der TAR-Optimierungsprozess zwischen den einzelnen Schritten des Prozesses schläft. Lese- und Schreibzugriff.
+**** TarOptimizationDelayDie Zeit in Millisekunden, die der TAR-Optimierungsprozess zwischen den einzelnen Schritten des Prozesses schläft. Lese- und Schreibzugriff.
 
-**ClusterProperties** Eine Gruppe von Schlüssel-Wert-Paaren, die Clustereigenschaften und -werte darstellen. Jede Zeile der Tabelle steht für eine Cluster-Eigenschaft. Schreibgeschützt.
+**** ClusterPropertiesEine Gruppe von Schlüssel-Wert-Paaren, die Clustereigenschaften und -werte darstellen. Jede Zeile der Tabelle steht für eine Cluster-Eigenschaft. Schreibgeschützt.
 
-**ClusterNodes** Die Mitglieder des Repository-Clusters.
+**** ClusterNodesDie Mitglieder des Repository-Clusters.
 
-**ClusterId** Die Kennung dieses Repository-Clusters. Schreibgeschützt.
+**** ClusterIdDie Kennung dieses Repository-Clusters. Schreibgeschützt.
 
-**ClusterMasterId** Der Bezeichner des Master-Knotens dieses Repository-Clusters. Schreibgeschützt.
+**** ClusterMasterIdDer Bezeichner des Übergeordnet-Knotens dieses Repository-Clusters. Schreibgeschützt.
 
-**ClusterNodeId** Die Kennung dieses Knotens im Repository-Cluster. Schreibgeschützt.
+**** ClusterNodeIdDie Kennung dieses Knotens im Repository-Cluster. Schreibgeschützt.
 
 ### Betrieb {#operations-1}
 
-**createWorkspace** Erstellt eine Arbeitsfläche in diesem Repository.
+**** createWorkspaceErstellt eine Arbeitsfläche in diesem Repository.
 
 * Argumente:
 
@@ -538,7 +538,7 @@ Schreibgeschützt.
 
 * Zurückgegebener Wert: keiner
 
-**runDataStoreGarbageCollection** führt die Garbage Collection auf den Repository-Knoten aus.
+**** runDataStoreGarbageCollectionFührt die Garbage Collection auf den Repository-Knoten aus.
 
 * Argumente:
 
@@ -546,51 +546,51 @@ Schreibgeschützt.
 
 * Zurückgegebener Wert: keiner
 
-**stopDataStoreGarbageCollection** Stoppt eine laufende Datspeicher-Garbage-Sammlung.
+**** stopDataStoreGarbageCollectionStellt eine laufende Datspeicher-Garbage-Sammlung ein.
 
 * Argumente: keine
 * Zurückgegebener Wert: Darstellung des aktuellen Status in einer Zeichenfolge
 
-**startBackup** Sichert Repository-Daten in einer ZIP-Datei.
+**** startBackupSichert Repository-Daten in einer ZIP-Datei.
 
 * Argumente:
 
-   * `target`: (Optional) Ein `String` Wert, der den Namen der ZIP-Datei oder des Ordners darstellt, in dem die Repository-Daten archiviert werden sollen. Um eine ZIP-Datei zu verwenden, fügen Sie die ZIP-Dateinamen-Erweiterung ein. Um ein Verzeichnis zu verwenden, fügen Sie keine Dateinamen-Erweiterung ein.
+   * `target`: (Optional) Ein  `String` Wert, der den Namen der ZIP-Datei oder des Ordners darstellt, in dem die Repository-Daten archiviert werden sollen. Um eine ZIP-Datei zu verwenden, fügen Sie die ZIP-Dateinamen-Erweiterung ein. Um ein Verzeichnis zu verwenden, fügen Sie keine Dateinamen-Erweiterung ein.
 
       Um ein inkrementelles Backup durchzuführen, geben Sie das Verzeichnis an, das zuletzt für das Backup genutzt wurde.
 
       Sie können einen absoluten oder einen relativen Pfad festlegen. Relative Pfade sind relativ zum übergeordneten Element des CRX-Schnellstartverzeichnisses.
 
-      When you specify no value, the default value of `backup-currentdate.zip` is used, where `currentdate` is in the format `yyyyMMdd-HHmm`.
+      Wenn Sie keinen Wert angeben, wird der Standardwert von `backup-currentdate.zip` verwendet, wobei `currentdate` im Format `yyyyMMdd-HHmm` vorliegt.
 
 * Zurückgegebener Wert: keiner
 
-**cancelBackup** Stoppt den aktuellen Sicherungsvorgang und löscht das temporäre Archiv, das der für die Archivierung der Daten erstellte Prozess erstellt hat.
+**** cancelBackupStoppt den aktuellen Sicherungsvorgang und löscht das temporäre Archiv, das der für die Archivierung der Daten erstellte Prozess erstellt hat.
 
 * Argumente: keine
 * Zurückgegebener Wert: keiner
 
-**blockRepositorySchreibt** Änderungen an den Repository-Daten. Alle Backup-Listener des Repositorys werden über die Blockierung informiert.
+**Änderungen** an den Repository-Daten werden von blockRepositoryWritesBlocks übernommen. Alle Backup-Listener des Repositorys werden über die Blockierung informiert.
 
 * Argumente: keine
 * Zurückgegebener Wert: keiner
 
-**unblockRepositoryWrites** Entfernt den Block aus dem Repository. Alle Backup-Listener des Repositorys werden über die Aufhebung der Blockierung informiert.
+**** unblockRepositoryWritesEntfernt den Block aus dem Repository. Alle Backup-Listener des Repositorys werden über die Aufhebung der Blockierung informiert.
 
 * Argumente: keine
 * Zurückgegebener Wert: keiner
 
-**startTarOptimization** Beginn den TAR-Dateioptimierungsprozess mit dem Standardwert für tarOptimizationDelay.
+**** startTarOptimizationStartet den TAR-Dateioptimierungsprozess mit dem Standardwert für tarOptimizationDelay.
 
 * Argumente: keine
 * Zurückgegebener Wert: keiner
 
-**stopTarOptimization** stoppt die Optimierung der TAR-Datei.
+**** stopTarOptimizationStoppt die TAR-Dateioptimierung.
 
 * Argumente: keine
 * Zurückgegebener Wert: keiner
 
-**tarIndexMerge** Führt die obersten Indexdateien aller TAR-Sets zusammen. Die höchsten Indexdateien sind Dateien mit unterschiedlichen Hauptversionen. Beispielsweise werden die folgenden Dateien in die Datei &quot;index_3_1.tar&quot;zusammengeführt: index_1_1.tar, index_2_0.tar, index_3_0.tar. Die zusammengeführten Dateien werden gelöscht (im vorherigen Beispiel werden &quot;index_1_1.tar&quot;, &quot;index_2_0.tar&quot;und &quot;index_3_0.tar&quot;gelöscht).
+**** tarIndexMergeFührt die obersten Indexdateien aller TAR-Sets zusammen. Die höchsten Indexdateien sind Dateien mit unterschiedlichen Hauptversionen. Beispielsweise werden die folgenden Dateien in die Datei &quot;index_3_1.tar&quot;zusammengeführt: index_1_1.tar, index_2_0.tar, index_3_0.tar. Die zusammengeführten Dateien werden gelöscht (im vorherigen Beispiel werden &quot;index_1_1.tar&quot;, &quot;index_2_0.tar&quot;und &quot;index_3_0.tar&quot;gelöscht).
 
 * Argumente:
 
@@ -598,12 +598,12 @@ Schreibgeschützt.
 
 * Zurückgegebener Wert: keiner
 
-**getClusterMaster** Legt diesen Repository-Knoten als Master-Knoten des Clusters fest. Wenn er nicht bereits Master ist, hält dieser Befehl den Listener der aktuellen Master-Instanz an und startet einen Master-Listener auf dem aktuellen Knoten. Dieser Knoten wird dann als Master-Knoten festgelegt und neu gestartet, sodass alle anderen Knoten im Cluster (d. h. die vom Master gesteuerten Knoten) eine Verbindung zu dieser Instanz herstellen.
+**Dieser Repository-Knoten** wird als Übergeordnet-Knoten des Clusters festgelegt. Wenn er nicht bereits Master ist, hält dieser Befehl den Listener der aktuellen Master-Instanz an und startet einen Master-Listener auf dem aktuellen Knoten. Dieser Knoten wird dann als Übergeordnet-Knoten festgelegt und neu gestartet, sodass alle anderen Knoten im Cluster (d. h. die vom Übergeordnet gesteuerten Knoten) eine Verbindung zu dieser Instanz herstellen.
 
 * Argumente: keine
 * Zurückgegebener Wert: keiner
 
-**joinCluster** Fügt dieses Repository einem Cluster als Knoten hinzu, der vom Clustermaster gesteuert wird. Sie müssen für die Authentifizierung einen Benutzernamen und ein Kennwort eingeben. Die Verbindung nutzt die grundlegende Authentifizierung. Die Sicherheitsanmeldedaten werden mit Base64 verschlüsselt, bevor sie an den Server übermittelt werden.
+**** joinClusterFügt dieses Repository einem Cluster als Knoten hinzu, der vom Cluster Übergeordnet gesteuert wird. Sie müssen für die Authentifizierung einen Benutzernamen und ein Kennwort eingeben. Die Verbindung nutzt die grundlegende Authentifizierung. Die Sicherheitsanmeldedaten werden mit Base64 verschlüsselt, bevor sie an den Server übermittelt werden.
 
 * Argumente:
 
@@ -613,9 +613,9 @@ Schreibgeschützt.
 
 * Zurückgegebener Wert: keiner
 
-**traversalCheck** Traverses und behebt optional Inkonsistenzen in einer Unterstruktur, die an einer bestimmten Node beginnt. Ausführliche Informationen hierzu finden Sie in der Dokumentation zu Persistenzmanagern.
+**** traversalCheckTraverses und behebt optional Inkonsistenzen in einer Unterstruktur, die an einem bestimmten Knoten beginnt. Ausführliche Informationen hierzu finden Sie in der Dokumentation zu Persistenzmanagern.
 
-**contextCheck** Checks und optional Korrekturen der Konsistenz im Datastore. Ausführliche Informationen hierzu finden Sie in der Dokumentation zum Datenspeicher.
+**** complianceCheckChecks und optional Korrekturen der Konsistenz im Datenspeicher. Ausführliche Informationen hierzu finden Sie in der Dokumentation zum Datenspeicher.
 
 ## Repository-Statistiken (TimeSeries) {#repository-statistics-timeseries}
 
@@ -623,7 +623,7 @@ Der Wert des TimeSeries-Feldes für jeden Statistiktyp, den `org.apache.jackrabb
 
 * Domäne: `com.adobe.granite`
 * Typ: `TimeSeries`
-* Name: One of the following values from the `org.apache.jackrabbit.api.stats.RepositoryStatistics.Type` Enum class:
+* Name: Einer der folgenden Werte aus der Enum-Klasse:`org.apache.jackrabbit.api.stats.RepositoryStatistics.Type`
 
    * BUNDLE_CACHE_ACCESS_COUNTER
    * BUNDLE_CACHE_MISS_AVERAGE
@@ -666,22 +666,22 @@ Statistische Informationen zu Repository-Abfragen.
 
 ### Attribute {#attributes-2}
 
-**SlowSucht** Informationen zu den Repository-Abfragen, die am längsten abgeschlossen wurden. Schreibgeschützt.
+**** SlowQueriesInformationen zu den Repository-Abfragen, die am längsten abgeschlossen wurden. Schreibgeschützt.
 
-**SlowQueriesQueueSize** Die maximale Anzahl von Abfragen, die in die SlowQueries-Liste einbezogen werden sollen. Lese- und Schreibzugriff.
+**** SlowQueriesQueueSizeDie maximale Anzahl von Abfragen, die in die SlowQueries-Liste einbezogen werden sollen. Lese- und Schreibzugriff.
 
-**Beliebte Abfragen** Informationen zu den Repository-Abfragen, die am häufigsten aufgetreten sind. Schreibgeschützt.
+**** PopularQueriesInformationen zu den Repository-Abfragen, die am häufigsten aufgetreten sind. Schreibgeschützt.
 
-**PopularQueriesQueueSize** Die maximale Anzahl von Abfragen in der Liste PopularQueries. Lese- und Schreibzugriff.
+**** PopularQueriesQueueSizeDie maximale Anzahl von Abfragen in der Liste PopularQueries. Lese- und Schreibzugriff.
 
 ### Betrieb {#operations-2}
 
-**clearSlowQueriesQueue** Entfernt alle Abfragen aus der SlowQueries-Liste.
+**** clearSlowQueriesQueueEntfernt alle Abfragen aus der SlowQueries-Liste.
 
 * Argumente: keine
 * Zurückgegebener Wert: keiner
 
-**clearPopularQueriesQueue** Entfernt alle Abfragen aus der Liste PopularQueries.
+**** clearPopularQueriesQueueEntfernt alle Abfragen aus der PopularQueries-Liste.
 
 * Argumente: keine
 * Zurückgegebener Wert: keiner
@@ -691,58 +691,58 @@ Statistische Informationen zu Repository-Abfragen.
 Überwachen Sie die Dienste für jeden Replikationsagenten. Wenn Sie einen Replikationsagenten erstellen, wird der Dienst automatisch in der JMX-Konsole angezeigt.
 
 * **Domäne:** com.adobe.granite.Replication
-* **Typ:** agent
-* **Name:** no value
-* **Eigenschaften:** {id=&quot;*Name*&quot;}, wobei *Name* der Wert der Eigenschaft &quot;Agentenname&quot;ist.
+* **Typ:** Agent
+* **Name:** kein Wert
+* **Eigenschaften:** {id=&quot;*Name*&quot;}, wobei  ** Name der Wert der Eigenschaft agent Name ist.
 
 ### Attribute {#attributes-3}
 
-**Id** Ein Zeichenfolgenwert, der den Bezeichner der Replizierungsagentenkonfiguration darstellt. Mehrere Agenten können dieselbe Konfiguration nutzen. Schreibgeschützt.
+**** IdEin Zeichenfolgenwert, der den Bezeichner der Replizierungsagentenkonfiguration darstellt. Mehrere Agenten können dieselbe Konfiguration nutzen. Schreibgeschützt.
 
-**Gültig** Ein boolescher Wert, der angibt, ob der Agent richtig konfiguriert ist:
+**** ValidEin boolescher Wert, der angibt, ob der Agent korrekt konfiguriert ist:
 
 * `true`: Gültige Konfiguration.
 * `false` : Die Konfiguration enthält Fehler.
 
 Schreibgeschützt.
 
-**Aktiviert** Ein boolescher Wert, der angibt, ob der Agent aktiviert ist:
+**** AktiviertEin boolescher Wert, der angibt, ob der Agent aktiviert ist:
 
 * `true`: Aktiviert.
 * `false`: Disabled.
 
-**QueueBlocked** Ein boolescher Wert, der angibt, ob die Warteschlange vorhanden ist und blockiert ist:
+**** QueueBlockedEin boolescher Wert, der angibt, ob die Warteschlange vorhanden ist und blockiert ist:
 
 * `true`: Blockiert. Ein automatischer erneuter Versuch steht aus.
 * `false`: nicht blockiert oder nicht vorhanden
 
 Schreibgeschützt.
 
-**QueuePause** Ein boolescher Wert, der angibt, ob die Auftragswarteschlange angehalten wurde:
+**** QueuePausedEin boolescher Wert, der angibt, ob die Auftragswarteschlange angehalten wurde:
 
 * `true`: Angehalten (ausgesetzt)
 * `false`: nicht angehalten oder nicht vorhanden.
 
 Lese- und Schreibzugriff.
 
-**QueueNumEntries** Ein int-Wert, der die Anzahl der Aufträge in der Agenturwarteschlange angibt. Schreibgeschützt.
+**** QueueNumEntriesEin int-Wert, der die Anzahl der Aufträge in der Agenturwarteschlange angibt. Schreibgeschützt.
 
-**QueueStatusTime** Ein Datumswert, der die Zeit auf dem Server angibt, zu der die angezeigten Statuswerte abgerufen wurden. Der Wert entspricht dem Zeitpunkt, zu dem die Seite geladen wurde. Schreibgeschützt.
+**** QueueStatusTimeEin Datumswert, der die Zeit auf dem Server angibt, zu der die angezeigten Statuswerte abgerufen wurden. Der Wert entspricht dem Zeitpunkt, zu dem die Seite geladen wurde. Schreibgeschützt.
 
-**QueueNextRetryTime** Bei blockierten Warteschlangen ist dies ein Datumswert, der angibt, wann der nächste automatische Wiederholungsvorgang stattfindet. Wenn keine Zeit angegeben ist, ist die Warteschlange nicht blockiert. Schreibgeschützt.
+**** QueueNextRetryTimeFür blockierte Warteschlangen, ein Datumswert, der angibt, wann der nächste automatische Versuch stattfindet. Wenn keine Zeit angegeben ist, ist die Warteschlange nicht blockiert. Schreibgeschützt.
 
-**QueueProcessingSince** Ein Datumswert, der angibt, wann die Verarbeitung für den aktuellen Auftrag begonnen hat. Wenn keine Zeit angegeben ist, ist die Warteschlange entweder blockiert oder inaktiv. Schreibgeschützt.
+**** QueueProcessingSinceEin Datumswert, der angibt, wann die Verarbeitung für den aktuellen Auftrag begonnen hat. Wenn keine Zeit angegeben ist, ist die Warteschlange entweder blockiert oder inaktiv. Schreibgeschützt.
 
-**QueueLastProcessTime** Ein Datumswert, der angibt, wann der vorherige Auftrag abgeschlossen wurde. Schreibgeschützt.
+**** QueueLastProcessTimeEin Datumswert, der angibt, wann der vorherige Auftrag abgeschlossen wurde. Schreibgeschützt.
 
 ### Betrieb {#operations-3}
 
-**queueForceRetry** Bei blockierten Warteschlangen wird der Befehl zum Wiederholen an die Warteschlange gesendet.
+**** queueForceRetryBei blockierten Warteschlangen wird der Befehl zum Wiederholen an die Warteschlange gesendet.
 
 * Argumente: keine
 * Zurückgegebener Wert: keiner
 
-**queueClear** Entfernt alle Aufträge aus der Warteschlange.
+**** queueClearEntfernt alle Aufträge aus der Warteschlange.
 
 * Argumente: keine
 * Zurückgegebener Wert: keiner
@@ -757,35 +757,35 @@ Stellt Statistiken zu HTTP-Abfragen bereit, damit Sie die Leistung des SlingRequ
 
 ### Attribute {#attributes-4}
 
-**AnforderungenCount** Die Anzahl der Anforderungen, die seit dem letzten Zurücksetzen der Statistiken aufgetreten sind.
+**** RequestsCountDie Anzahl der Anfragen, die seit dem letzten Zurücksetzen der Statistiken aufgetreten sind.
 
-**MinRequestDurationMsec** Die kürzeste Zeit (in Millisekunden), die seit dem letzten Zurücksetzen der Statistiken zur Verarbeitung einer Anforderung erforderlich war.
+**** MinRequestDurationMsecDie kürzeste Zeit (in Millisekunden), die seit dem letzten Zurücksetzen der Statistiken zur Verarbeitung einer Anforderung erforderlich war.
 
-**MaxRequestDurationMsec** Die längste Zeit (in Millisekunden), die seit dem letzten Zurücksetzen der Statistiken zur Verarbeitung einer Anforderung erforderlich war.
+**** MaxRequestDurationMsecDie längste Zeit (in Millisekunden), die seit dem letzten Zurücksetzen der Statistiken zur Verarbeitung einer Anforderung erforderlich war.
 
-**StandardDeversionDurationMsec** Die Standardabweichung der Zeitdauer, die zur Verarbeitung von Anforderungen erforderlich war. Diese Standardabweichung wird basierend auf allen Abfragen seit dem letzten Zurücksetzen der Statistiken ermittelt.
+**** StandardDeversionDurationMsecDie Standardabweichung der Zeitdauer, die für die Verarbeitung von Anforderungen erforderlich war. Diese Standardabweichung wird basierend auf allen Abfragen seit dem letzten Zurücksetzen der Statistiken ermittelt.
 
-**MeanRequestDurationMsec** Die mittlere für die Verarbeitung einer Anforderung erforderliche Zeit. Dieser Durchschnitt wird basierend auf allen Abfragen seit dem letzten Zurücksetzen der Statistiken ermittelt.
+**** MeanRequestDurationMsecDer mittlere Zeitraum, der für die Verarbeitung einer Anforderung erforderlich war. Dieser Durchschnitt wird basierend auf allen Abfragen seit dem letzten Zurücksetzen der Statistiken ermittelt.
 
 ### Betrieb {#operations-4}
 
-**resetStatistics** Legt alle Statistiken auf null fest. Setzen Sie die Statistiken zurück, wenn Sie die Abfragen-Verarbeitungsleistung innerhalb eines bestimmten Zeitrahmens analysieren müssen.
+**** resetStatisticsLegt alle Statistiken auf null fest. Setzen Sie die Statistiken zurück, wenn Sie die Abfragen-Verarbeitungsleistung innerhalb eines bestimmten Zeitrahmens analysieren müssen.
 
 * Argumente: keine
 * Zurückgegebener Wert: keiner
 
-**id** Die Zeichenfolgendarstellung der Paket-ID.
+**** idDie Zeichenfolgendarstellung der Paket-ID.
 
-**installiert** Ein boolescher Wert, der angibt, ob das Paket installiert ist:
+**** installedEin boolescher Wert, der angibt, ob das Paket installiert ist:
 
 * `true`: Installiert.
 * `false`: Nicht installiert.
 
-**installedBy** Die ID des Benutzers, der das Paket zuletzt installiert hat.
+**** installedByDie ID des Benutzers, der das Paket zuletzt installiert hat.
 
-**installedDate** Das Datum, an dem das Paket zuletzt installiert wurde.
+**** installedDateDas Datum, an dem das Paket zuletzt installiert wurde.
 
-**size** Ein langer Wert, der die Größe des Pakets in Byte enthält.
+**** sizeEin langer Wert, der die Größe des Pakets in Byte enthält.
 
 
 ## Quickstart-Starter {#quickstart-launcher}
@@ -803,7 +803,7 @@ Zeigt eine Meldung im QuickStart-Fenster an.
 
 Argumente:
 
-* p1: Ein `String`-Wert, der die anzuzeigende Meldung enthält. The following illustration shows the result of invoking `log` with a p1 value of `this is a log message`.
+* p1: Ein `String`-Wert, der die anzuzeigende Meldung enthält. Die folgende Abbildung zeigt das Ergebnis des Aufrufs von `log` mit dem p1-Wert `this is a log message`.
 
 ![launcheruilog](assets/launcheruilog.png)
 
@@ -863,7 +863,7 @@ Einige Drittanbieter-Serverressourcen installieren MBeans, die Attribute und Vor
      <li>Runtime</li>
      <li>Threading</li>
     </ul> </td>
-   <td><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/package-summary.html">javax.management</a> -Paket</td>
+   <td><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/package-summary.html">javax.</a> managementpackage</td>
   </tr>
   <tr>
    <td>java.util.logging</td>
@@ -879,7 +879,7 @@ Einige Drittanbieter-Serverressourcen installieren MBeans, die Attribute und Vor
      <li>packageState</li>
      <li>serviceState</li>
     </ul> </td>
-   <td><a href="https://osgi.org/specification/osgi.enterprise/7.0.0/service.jmx.html#d0e42567">org.osgi.jmx.framework</a> -Paket</td>
+   <td><a href="https://osgi.org/specification/osgi.enterprise/7.0.0/service.jmx.html#d0e42567">org.osgi.jmx.</a> frameworkpackage</td>
   </tr>
  </tbody>
 </table>
@@ -900,11 +900,11 @@ Die Hauptseite der JMX-Konsole enthält eine Tabelle der Dienste. Jede Zeile in 
 3. Um einen Attributwert zu ändern, klicken Sie auf den Wert, geben Sie den Wert im angezeigten Dialogfeld ein und klicken Sie auf „Speichern“.
 4. Um einen Dienstvorgang aufzurufen, klicken Sie auf den Vorgangsnamen, geben Sie die Argumentwerte im angezeigten Dialogfeld ein und klicken Sie auf „Aufrufen“.
 
-## Verwenden externer JMX-Anwendungen zur Überwachung {#using-external-jmx-applications-for-monitoring}
+## Verwenden externer JMX-Anwendungen zur Überwachung  {#using-external-jmx-applications-for-monitoring}
 
 Bei CRX können externe Anwendungen über [Java Management Extensions (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html) mit Managed Beans (MBeans) interagieren. Mit allgemeinen Konsolen wie [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) oder domänenspezifischen Überwachungsanwendungen können Sie CRX-Konfigurationen und -Eigenschaften abrufen und festlegen sowie die Leistung und Ressourcenauslastung überwachen.
 
-### Herstellen einer Verbindung zu CRX mit JConsole {#using-jconsole-to-connect-to-crx}
+### Herstellen einer Verbindung zu CRX mit JConsole  {#using-jconsole-to-connect-to-crx}
 
 Um mit JConsole eine Verbindung zu CRX herzustellen, gehen Sie wie folgt vor:
 
