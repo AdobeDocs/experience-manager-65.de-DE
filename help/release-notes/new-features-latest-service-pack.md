@@ -4,9 +4,9 @@ description: Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e056d25cf16d79e8eadc80b9cb17b60b2ba8d7e1
+source-git-commit: 55ef8af25887a59d9d13275645c1ec20f0c49380
 workflow-type: tm+mt
-source-wordcount: '2704'
+source-wordcount: '2807'
 ht-degree: 5%
 
 ---
@@ -40,7 +40,23 @@ Sie können jetzt die Seitenverschiebungen und MSM-Rollouts als asynchrone Vorg�
 
 >[!NOTE]
 >
->[!DNL Experience Manager Forms] Add-On-Pakete werden eine Woche nach der geplanten  [!DNL Experience Manager] Service Pack-Version zur Verfügung gestellt. [!DNL Experience Manager] 6.5 Service Pack 7 (6.5.7.0) soll am 26. November 2020 veröffentlicht werden.
+>[!DNL Experience Manager Forms] Add-On-Pakete werden eine Woche nach der geplanten  [!DNL Experience Manager] Service Pack-Version zur Verfügung gestellt.
+
+### Leistungsverbesserungen {#performance-improvements-forms}
+
+[!DNL Experience Manager] 6.5 Service Pack 7 Forms verbessert die Leistung für:
+
+* Validieren der Feldwerte auf dem Server, wenn Sie ein adaptives Formular senden.
+
+* Konvertieren eines PDF-Formulars in ein adaptives Formular mit dem [!DNL Automated Forms Conversion service].
+
+### HTTP-Clientkonfiguration für Formulardatenmodelle zur Leistungsoptimierung {#fdm-http-client-config}
+
+[!DNL Experience Manager Forms] Formulardatenmodell bei der Integration mit RESTful-Webdiensten, da die Datenquelle jetzt HTTP-Client-Konfigurationen zur Leistungsoptimierung enthält.
+
+### Verfügbarkeit der Option &quot;Zurücksetzen&quot;für jede Komponente im Layoutmodus {#reset-option-layout-mode}
+
+Sie können jetzt für jede Komponente im Layoutmodus eines adaptiven Formulars die Option zum Zurücksetzen verwenden. Wenn Sie ein mehrspaltiges Layout für ein Bedienfeld definieren, können Sie mit dieser Funktion einzelne Komponenten im Bedienfeld zurücksetzen.
 
 ## Schlüsselfunktionen in vorherigen [!DNL Experience Manager] 6.5 Service Packs {#key-features-previous-service-packs}
 
