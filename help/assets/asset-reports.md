@@ -3,15 +3,15 @@ title: Berichte zur Verwendung und Freigabe von Assets
 description: Berichte zu Ihren Assets in [!DNL Adobe Experience Manager Assets] mit Informationen zur Nutzung, Aktivität und Freigabe Ihrer digitalen Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 6016cefa9456d8f142347ff197b61b1614d55ab9
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 47%
+source-wordcount: '1131'
+ht-degree: 43%
 
 ---
 
 
-# Asset-Berichte     {#asset-reports}
+# Asset-Berichte {#asset-reports}
 
 Mit Asset Berichte können Sie das Dienstprogramm Ihrer [!DNL Adobe Experience Manager Assets]-Bereitstellung bewerten. Mit [!DNL Assets] können Sie verschiedene Berichte für Ihre digitalen Assets erstellen. Die Berichte bieten hilfreiche Informationen über die Nutzung Ihres Systems, über die Art und Weise, wie Benutzer mit Assets interagieren und welche Assets heruntergeladen und freigegeben werden.
 
@@ -112,7 +112,7 @@ Gehen Sie wie folgt vor, um Berichte zu erstellen:
 
    Klicken Sie in der Symbolleiste auf **[!UICONTROL Herunterladen]**, um den Bericht im CSV-Format herunterzuladen.
 
-## Hinzufügen benutzerdefinierter Spalten      {#add-custom-columns}
+## Hinzufügen benutzerdefinierter Spalten     {#add-custom-columns}
 
 Sie können folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weitere Daten für Ihre speziellen Anforderungen anzuzeigen:
 
@@ -152,3 +152,11 @@ Um nicht mehr benötigte Berichte zu entfernen, konfigurieren Sie den Bereinigun
 1. Öffnen Sie die Konfiguration für den **[!UICONTROL Bereinigungsdienst für DAM-Berichte]**.
 1. Geben Sie die Häufigkeit (Zeitintervall) für den Bereinigungsdienst in das Feld `scheduler.expression.name` ein. Sie können auch die Schwellenwerte für das Alter und die Menge der Berichte konfigurieren.
 1. Speichern Sie die Änderungen.
+
+## Fehlerbehebung für Informationen, Tipps und Einschränkungen {#best-practices-and-limitations}
+
+* Wenn einige Berichte oder Zahlen in den Berichten nicht oder erwartungsgemäß verfügbar sind, stellen Sie sicher, dass der Dienst [!UICONTROL CQ DAM Ereignis Recorder] aktiviert ist.
+
+* Entfernen Sie die nicht mehr benötigten Berichte. Verwenden Sie die Konfigurationsoptionen im DAM Report Purge-Dienst, um die Kriterien zum Bereinigen von Berichten zu konfigurieren.
+
+* Wenn der Bericht &quot;Festplattennutzung&quot;nicht generiert wird und Sie [!DNL Dynamic Media] verwenden, stellen Sie sicher, dass alle Assets ordnungsgemäß ausgeführt werden. Verarbeiten Sie zum Auflösen die Assets erneut und erstellen Sie dann den Bericht erneut.
