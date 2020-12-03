@@ -19,16 +19,16 @@ Benutzer können Web-Seiten in [!DNL Experience Manager Sites] erstellen. [!DNL 
 
 ## Übersicht über Connected Assets {#overview-of-connected-assets}
 
-Beim Bearbeiten von Seiten im [!UICONTROL Seiteneditor] [!DNL Assets] als Zielort der Zielgruppe können die Autoren Assets aus einer anderen Bereitstellung, die als Asset-Quelle dient, nahtlos suchen, durchsuchen und einbetten. Die Administratoren erstellen eine einmalige Integration einer Bereitstellung von [!DNL Experience Manager] mit [!DNL Sites] Funktionen und einer anderen Bereitstellung von [!DNL Experience Manager] mit [!DNL Assets] Funktionen.
+Wenn Sie Seiten in [!UICONTROL Seiteneditor] als Seitenziel bearbeiten, können die Autoren Assets aus einer anderen [!DNL Assets]-Bereitstellung, die als Asset-Quelle dient, nahtlos suchen, durchsuchen und einbetten. Die Administratoren erstellen eine einmalige Integration einer Bereitstellung von [!DNL Experience Manager] mit [!DNL Sites]-Funktionalität und einer weiteren Bereitstellung von [!DNL Experience Manager] mit [!DNL Assets]-Funktionalität.
 
-Für [!DNL Sites]-Autoren stehen die Remote-Assets als schreibgeschützte lokale Assets zur Verfügung. Die Funktion unterstützt die nahtlose Suche und die gleichzeitige Verwendung einiger weniger Remote-Assets. Wenn Sie viele Remote-Assets auf einmal für die [!DNL Sites]-Bereitstellung verfügbar machen möchten, sollten Sie die Assets als Stapel migrieren. Siehe Migrationshandbuch für [Experience Manager-Assets](/help/assets/assets-migration-guide.md).
+Für [!DNL Sites]-Autoren stehen die Remote-Assets als schreibgeschützte lokale Assets zur Verfügung. Die Funktion unterstützt die nahtlose Suche und die gleichzeitige Verwendung einiger weniger Remote-Assets. Wenn Sie viele Remote-Assets auf einmal für die [!DNL Sites]-Bereitstellung verfügbar machen möchten, sollten Sie die Assets als Stapel migrieren. Siehe [Handbuch zur Migration von Experience Manager-Assets](/help/assets/assets-migration-guide.md).
 
 ### Voraussetzungen und unterstützte Bereitstellungen {#prerequisites}
 
 Bevor Sie diese Funktion verwenden oder konfigurieren, stellen Sie Folgendes sicher:
 
 * Die Benutzer sind Teil von entsprechenden Benutzergruppen für jede Implementierung.
-* Bei Bereitstellungstypen von [!DNL Adobe Experience Manager] ist eines der unterstützten Kriterien erfüllt. [!DNL Experience Manager] 6.5 [!DNL Assets] funktioniert [!DNL Experience Manager] als Cloud Service. Weitere Informationen zur Funktionsweise dieser Funktion [!DNL Experience Manager as a Cloud Service]finden Sie unter [Verbundene Assets in Experience Manager als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
+* Bei Bereitstellungstypen von [!DNL Adobe Experience Manager] ist eines der unterstützten Kriterien erfüllt. [!DNL Experience Manager] 6.5  [!DNL Assets] funktioniert  [!DNL Experience Manager] als Cloud Service. Weitere Informationen zur Funktionsweise dieser Funktion in [!DNL Experience Manager as a Cloud Service] finden Sie unter [Verbundene Assets in Experience Manager als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] as a Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] auf AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] On-Premise |
    |---|---|---|---|
@@ -153,13 +153,13 @@ Verwenden Sie die oben beschriebenen Einstellungen, um die Funktionsweise der Fu
 
 >[!CAUTION]
 >
->Nach der Verwendung auf einer Webseite können die abgerufenen Remote-Assets durchsucht werden und von jedem Benutzer verwendet werden, der über die Berechtigung zum Zugriff auf den lokalen Ordner verfügt. Die abgerufenen Assets werden im lokalen Ordner gespeichert (`connectedassets` im obigen Abschnitt). Die Assets sind außerdem über [!UICONTROL Content Finder] durchsuchbar und im lokalen Repository sichtbar.
+>Nach der Verwendung auf einer Webseite können die abgerufenen Remote-Assets durchsucht werden und von jedem Benutzer verwendet werden, der über die Berechtigung zum Zugriff auf den lokalen Ordner verfügt. Die abgerufenen Assets werden im lokalen Ordner gespeichert (`connectedassets` in der obigen Anleitung). Die Assets sind außerdem über [!UICONTROL Content Finder] durchsuchbar und im lokalen Repository sichtbar.
 
 Die abgerufenen Assets können wie jedes andere lokale Element verwendet werden. Nur die zugehörigen Metadaten können nicht bearbeitet werden.
 
-## Limitations and best practices {#tips-and-limitations}
+## Einschränkungen und Best Practices {#tips-and-limitations}
 
-* Um Einblicke in die Asset-Nutzung zu erhalten, konfigurieren Sie die [Asset Insight](/help/assets/asset-insights.md) -Funktion auf der [!DNL Sites] Instanz.
+* Um Einblicke in die Asset-Nutzung zu erhalten, konfigurieren Sie die [Asset Insight](/help/assets/asset-insights.md)-Funktion in der [!DNL Sites]-Instanz.
 
 ### Berechtigungen und Asset-Verwaltung {#permissions-and-managing-assets}
 
@@ -186,14 +186,14 @@ Die abgerufenen Assets können wie jedes andere lokale Element verwendet werden.
 * Nach 5 Sekunden tritt bei Abrufvorgängen ein Timeout auf. Autoren können beispielsweise bei Netzwerkproblemen Probleme beim Abrufen von Assets haben. Autoren können es erneut versuchen, indem sie das Remote-Asset aus [!UICONTROL Content Finder] in den [!UICONTROL Seiten-Editor] ziehen.
 * An abgerufenen Assets können einfache, zerstörungsfreie Änderungen sowie Änderungen, die von der `Image`-Komponente unterstützt werden, vorgenommen werden. Assets sind schreibgeschützt.
 * Die einzige Methode zum erneuten Abrufen des Assets besteht darin, es auf eine Seite zu ziehen. Es gibt keine API-Unterstützung oder andere Methoden zum erneuten Abrufen eines Assets, um es zu aktualisieren.
-* Wenn Assets aus dem DAM stillgelegt werden, werden sie weiterhin auf [!DNL Sites] Seiten verwendet.
+* Wenn Assets aus dem DAM stillgelegt werden, werden sie weiterhin auf [!DNL Sites]-Seiten verwendet.
 
-## Fehlerbehebung bei Problemen       {#troubleshoot}
+## Fehlerbehebung bei Problemen        {#troubleshoot}
 
 Gehen Sie wie folgt vor, um eine Fehlerbehebung für das allgemeine Fehlerszenario durchzuführen:
 
-* If you are unable to search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
+* Wenn Sie nicht über die [!UICONTROL Inhaltssuche] nach Remote-Assets suchen können, stellen Sie sicher, dass die erforderlichen Rollen und Berechtigungen vorhanden sind.
 * Ein aus dem Remote-DAM abgerufenes Asset kann aus verschiedenen Gründen nicht auf einer Web-Seite veröffentlicht werden. Es existiert nicht auf dem Remote-Server, es fehlen entsprechende Berechtigungen zum Abrufen oder ein Netzwerkfehler liegt vor. Stellen Sie sicher, dass das Asset nicht aus dem Remote-DAM entfernt wird. Stellen Sie sicher, dass die entsprechenden Berechtigungen eingerichtet und die Voraussetzungen erfüllt sind. Wiederholen Sie den Vorgang zum Hinzufügen des Assets zur Seite und veröffentlichen Sie erneut. Überprüfen Sie die [Liste asynchroner Aufträge](/help/sites-administering/asynchronous-jobs.md) auf Fehler beim Abrufen von Assets.
-* Wenn Sie nicht über die lokale [!DNL Sites] Bereitstellung auf die Remote-DAM-Bereitstellung zugreifen können, stellen Sie sicher, dass Site-übergreifende Cookies zulässig sind. Wenn Site-übergreifende Cookies blockiert werden, werden die beiden Implementierungen von [!DNL Experience Manager] möglicherweise nicht authentifiziert. Beispielsweise können [!DNL Google Chrome] im Inkognito-Modus Drittanbieter-Cookies blockiert werden. Um Cookies im [!DNL Chrome] Browser zuzulassen, klicken Sie auf das Augensymbol in der Adressleiste, navigieren Sie zu &quot;Site funktioniert nicht&quot;> &quot;Blockiert&quot;, wählen Sie die Remote-DAM-URL aus und lassen Sie das Cookie &quot;Login-Token&quot;zu. Weitere Informationen [zum Aktivieren von Drittanbieter-Cookies](https://support.google.com/chrome/answer/95647)finden Sie in der Hilfe.
+* Wenn Sie nicht über die lokale [!DNL Sites]-Bereitstellung auf die Remote-DAM-Bereitstellung zugreifen können, stellen Sie sicher, dass Site-übergreifende Cookies zulässig sind. Wenn Site-übergreifende Cookies blockiert werden, werden die beiden Implementierungen von [!DNL Experience Manager] möglicherweise nicht authentifiziert. Beispielsweise kann [!DNL Google Chrome] im Inkognito-Modus Drittanbieter-Cookies blockieren. Um Cookies im [!DNL Chrome]-Browser zuzulassen, klicken Sie auf das Augensymbol in der Adressleiste, navigieren Sie zu &quot;Site funktioniert nicht&quot;> &quot;Blockiert&quot;, wählen Sie die Remote DAM-URL aus und lassen Sie das Cookie &quot;Login-Token&quot;zu. Weitere Informationen finden Sie in der Hilfe zu [wie Sie Drittanbieter-Cookies aktivieren](https://support.google.com/chrome/answer/95647).
 
    ![Cookie-Fehler in Chrome im Inkognito-Modus](assets/chrome-cookies-incognito-dialog.png)
