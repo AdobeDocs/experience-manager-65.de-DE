@@ -4,9 +4,9 @@ description: Spezifische Versionshinweise zu  [!DNL Adobe Experience Manager] 6.
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ed8299662139c2c2ab2fa304c9fa3448b0fce223
+source-git-commit: c92efd64662e831c8771a8f35701f4e9ed788645
 workflow-type: tm+mt
-source-wordcount: '3789'
+source-wordcount: '4201'
 ht-degree: 5%
 
 ---
@@ -38,6 +38,16 @@ Die wichtigsten Funktionen und Erweiterungen von [!DNL Adobe Experience Manager]
 * Die Benutzer können digitale Assets in den Ansichten &quot;Karte&quot;und &quot;Spalte&quot;sortieren.
 
 * [!DNL Assets] und  [!DNL Dynamic Media] bieten mehrere Verbesserungen an der Barrierefreiheit. Die Verbesserungen betreffen die Tastaturnavigation, die Verwendung von Bildschirmlesehilfen und die Verwendung ähnlicher Hilfstechnologien (AT). Siehe [[!DNL Assets] Erweiterungen](#assets-6570) und [[!DNL Dynamic Media] Erweiterungen](#dynamic-media-6570).
+
+* HTTP-Clientkonfiguration für Formulardatenmodelle zur Leistungsoptimierung.
+
+* Verfügbarkeit der Option &quot;Zurücksetzen&quot;für jede Komponente im Layoutmodus
+
+* [!DNL Experience Manager] 6.5 Service Pack 7 Forms verbessert die Leistung für:
+
+   * Validieren der Feldwerte auf dem Server, wenn Sie ein adaptives Formular senden.
+
+   * Konvertieren eines PDF-Formulars in ein adaptives Formular mit dem [!DNL Automated Forms Conversion service].
 
 * Das integrierte Repository (Apache Jackrabbit Oak) wird auf Version 1.22.5 aktualisiert.
 
@@ -300,6 +310,48 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in der Version 6.5.7.0.[!
 >
 >[!DNL Experience Manager Forms] veröffentlicht die Add-On-Pakete eine Woche nach dem geplanten  [!DNL Experience Manager] Service Pack-Veröffentlichungsdatum.
 
+**Adaptive Formulare**
+
+* Adaptive Formulare können nach Anwendung von [!DNL Experience Manager] Service Pack 6 (NPR-35126) nicht mit der klassischen Benutzeroberfläche bearbeitet werden.
+
+* Wenn Sie eine PDF-Datei in ein adaptives Formular konvertieren, können Sie keinen Wert für ein verschachteltes Bedienfeld mit einem Formulardatenmodell im Layout mit Registerkarten festlegen. Darüber hinaus gibt es Probleme beim dynamischen Festlegen eines Werts für Optionsfeldgruppen mit einem statischen Array mithilfe des Code-Editors (NPR-35062).
+
+* Wenn Sie japanische Zeichen in eine Textfeldkomponente in einem adaptiven Formular eingeben, können Sie mehr Zeichen als die maximal zulässige Länge von 35 Zeichen angeben (NPR-35039).
+
+* Das adaptive Formular zeigt unerwünschte Parameter wie `owner` und `status` auf der **[!UICONTROL Danksagungsseite]** an, die nach dem Senden des Formulars angezeigt wird (NPR-34989).
+
+* Das Dialogfeld [!UICONTROL Dateiauswahl] für die Komponente [!UICONTROL Anlage] zeigt die nicht unterstützten Dateitypen sowie die Auswahl an, die während der Übermittlung des adaptiven Formulars zu einem Fehler führt (NPR-34970).
+
+* Wenn Sie ein adaptives Formular auf einer [!DNL Experience Manager Sites]-Seite einfügen, die Text vor dem Formular enthält, wird der Cursor direkt auf das Formular und nicht auf den Text vor dem Formular verschoben (NPR-34947).
+
+* [!UICONTROL Vorschau mit ] DataOption zum Vorausfüllen eines adaptiven Formulars mit einer XML-Datendatei der Version  [!DNL Experience Manager] 6.2 funktioniert nicht ordnungsgemäß (NPR-35087).
+
+* Wenn Sie das Datenwörterbuch für ein adaptives Formular aktualisieren, wird das Formular nicht übersetzt, da das adaptive Formular zwischengespeicherte Werte zurückgibt (NPR-34845).
+
+* Fragmente benötigen mehr Zeit, um in einem adaptiven Formular geladen zu werden, da der Cache ungültig wird (NPR-34567).
+
+* Die Registerkartennavigation funktioniert nicht ordnungsgemäß für Bildschirmlesehilfen in adaptiven Formularen (NPR-34544).
+
+**Korrespondenzverwaltung**
+
+* Werte für XML-Tags mit numerischen Daten, die den Fließtyp enthalten, können nicht als Entwurf gespeichert werden (NPR-35050).
+
+* Wenn Sie die Assets aus ES3 migrieren, enthalten die Assets zwei nicht bearbeitbare Standardbedingungen (NPR-34972).
+
+* Wenn Sie ein Datenwörterbuch in einem Brief bearbeiten, zeigt der Abschnitt [!UICONTROL Geliehener Inhalt] rotierende Rechtecke anstelle nützlicher Informationen an (NPR-34853).
+
+**Interaktive Kommunikation**
+
+* Der Name der Rollout-Konfiguration für interaktive Kommunikation, der nach der Installation des Add-On-Pakets [!DNL Forms] verfügbar ist, Duplikat den standardmäßigen Namen der Rollout-Konfiguration (NPR-34976).
+
+**Document Security**
+
+* Wenn Sie eine neue Dokument-Sicherheitsrichtlinie speichern, zeigt Experience Manager Forms die Fehlermeldung `Relative validity period is required` (NPR-34679) an.
+
+* Wenn Sie eine neue Dokument-Sicherheitsrichtlinie speichern, zeigt Experience Manager Forms die Fehlermeldung `Invalid filed value.Numeric value is required` (NPR-34678) an.
+
+* Dokument Security kann PDF 2.0-Dokument nicht schützen (CQ-4305851).
+
 Informationen zu Sicherheitsaktualisierungen finden Sie unter [Seite mit Sicherheitsbulletins für Experience Manager](https://helpx.adobe.com/security/products/experience-manager.html).
 
 ## Installieren Sie 6.5.7.0 {#install}
@@ -451,7 +503,7 @@ Um Ihre Laufzeitkopie abzurufen, empfiehlt Adobe, die Entwurfskopie des benutzer
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: Keine Wartungsfenster unter granite/operations/maintenance gefunden.
    * Die serverseitige Validierung des adaptiven Formulars schlägt fehl, wenn Aggregat-Funktionen wie SUM, MAX und MIN verwendet werden. CQ-4274424
    * `com.adobe.granite.maintenance.impl.TaskScheduler` - Keine Wartungsfenster unter granite/operations/maintenance gefunden.
-   * Hotspot in einem interaktiven Bild mit dynamischen Medien ist nicht sichtbar, wenn das Asset über den Viewer für das kaufbare Banner in der Vorschau angezeigt wird.
+   * Hotspot in einem interaktiven Bild für dynamische Medien ist nicht sichtbar, wenn das Asset über den Viewer für ein kaufbares Banner in der Vorschau angezeigt wird.
 
 ## OSGi-Pakete und -Inhaltspakete enthalten {#osgi-bundles-and-content-packages-included}
 
