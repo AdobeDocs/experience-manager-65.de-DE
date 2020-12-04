@@ -3,10 +3,10 @@ title: Freigeben von Assets über einen Link
 description: Freigeben von Assets, Ordnern und Sammlungen als URL.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1f6da1c69ea3b3c3f07e8ac10fd8e1e9c7208158
+source-git-commit: e36d08c9ea89e840aecde79ffdd911372c0c54ee
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 35%
+source-wordcount: '1056'
+ht-degree: 37%
 
 ---
 
@@ -57,7 +57,7 @@ Um die URL für Assets zu erstellen, die Sie für Benutzer freigeben möchten, v
    >
    >Wenn Sie eine E-Mail-ID eines Benutzers eingeben, der nicht Mitglied Ihres Unternehmens ist, wird dem Wort [!UICONTROL Externer Benutzer] die E-Mail-ID des Benutzers vorangestellt.
 
-1. Geben Sie im Feld **[!UICONTROL Betreff]** eine Betreffzeile ein.
+1. Geben Sie in das Feld **[!UICONTROL Betreff]** einen Betreff für das freizugebende Asset ein.
 
 1. Geben Sie im Feld **[!UICONTROL Meldung]** eine optionale Meldung ein.
 
@@ -69,9 +69,9 @@ Um die URL für Assets zu erstellen, die Sie für Benutzer freigeben möchten, v
 
 1. Klicken Sie auf **[!UICONTROL Freigeben]**. Eine Meldung bestätigt, dass der Link per E-Mail an die Benutzer weitergegeben wird.
 
-1. Um das freigegebene Asset Ansicht, klicken Sie auf den Link in der E-Mail, die an den Benutzer gesendet wird. Das freigegebene Asset wird auf der Seite **[!UICONTROL Adobe Marketing Cloud]** angezeigt.
+1. Um das freigegebene Asset Ansicht, klicken Sie auf den Link in der E-Mail, die an den Benutzer gesendet wird. Das freigegebene Asset wird auf der Seite [!UICONTROL Adobe Marketing Cloud] angezeigt.
 
-   ![chlimage_1-260](assets/chlimage_1-545.png)
+   ![Freigegebene Assets stehen in Adobe Marketing Cloud zur Verfügung](assets/chlimage_1-545.png)
 
 1. Um eine Vorschau des Assets zu erstellen, klicken Sie auf das freigegebene Asset. Um die Vorschau zu schließen und zur Seite **[!UICONTROL Marketing Cloud]** zurückzukehren, klicken Sie in der Symbolleiste auf **[!UICONTROL Zurück]**. Wenn Sie einen Ordner freigegeben haben, klicken Sie auf **[!UICONTROL Übergeordneter Ordner]**, um zum übergeordneten Ordner zurückzukehren.
 
@@ -83,7 +83,7 @@ Um die URL für Assets zu erstellen, die Sie für Benutzer freigeben möchten, v
 
 1. Um das freigegebene Asset herunterzuladen, klicken Sie in der Symbolleiste auf **[!UICONTROL Wählen Sie]**, klicken Sie auf das Asset und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Herunterladen]**.
 
-   ![chlimage_1-262](assets/chlimage_1-547.png)
+   ![Werkzeugleistenoption zum Herunterladen des freigegebenen Assets](assets/chlimage_1-547.png)
 
 1. Um die Assets, die Sie als Links freigegeben haben, Ansicht, wechseln Sie zur [!DNL Assets]-Benutzeroberfläche und klicken Sie auf das [!DNL Experience Manager]-Logo. Wählen Sie **[!UICONTROL Navigation]**. Wählen Sie im Navigationsbereich **[!UICONTROL Freigegebene Links]**, um eine Liste freigegebener Elemente anzuzeigen.
 
