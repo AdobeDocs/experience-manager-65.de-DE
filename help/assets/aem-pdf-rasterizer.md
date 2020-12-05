@@ -1,11 +1,11 @@
 ---
 title: Verwenden des PDF-Rasters zum Generieren von Darstellungen
-description: Generieren Sie hochwertige Miniaturansichten und Darstellungen mit der Adobe PDF Rasterbibliothek in [!DNL Adobe Experience Manager].
+description: Erstellen Sie hochwertige Miniaturansichten und Darstellungen mit der Adobe PDF Rasterbibliothek.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: b68311d593730d1c441b863967b15e6481758267
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '720'
 ht-degree: 43%
 
 ---
@@ -13,7 +13,9 @@ ht-degree: 43%
 
 # PDF-Rasterfunktion verwenden {#using-pdf-rasterizer}
 
-Wenn Sie große, inhaltsintensive PDF- oder AI-Dateien zu [!DNL Adobe Experience Manager Assets] hochladen, wird bei der Standardkonvertierung möglicherweise keine korrekte Ausgabe generiert. Die PDF-Rasterbibliothek der Adobe kann eine zuverlässigere und genauere Ausgabe im Vergleich zur Ausgabe aus einer Standardbibliothek generieren. Adobe empfiehlt die Verwendung der PDF-Rasterbibliothek für folgende Szenarien:
+Wenn Sie große, inhaltsintensive PDF- oder AI-Dateien zu [!DNL Adobe Experience Manager Assets] hochladen, erzeugt die Standardbibliothek möglicherweise keine korrekte Ausgabe. Die PDF-Rasterbibliothek der Adobe kann eine zuverlässigere und genauere Ausgabe im Vergleich zur Ausgabe aus einer Standardbibliothek generieren. Adobe empfiehlt die Verwendung der PDF-Rasterbibliothek für folgende Szenarien:
+
+Adobe empfiehlt die Verwendung der PDF Rasterizer-Bibliothek für folgende Dateien:
 
 * Starke, inhaltsintensive AI-Dateien oder PDF-Dateien.
 * AI-Dateien und PDF-Dateien mit Miniaturansichten, die nicht standardmäßig generiert werden.
@@ -47,14 +49,12 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
 1. Konfigurieren Sie die folgenden Argumente für den Schritt **[!UICONTROL PDF Raster Handler]**:
 
    * MIME-Typen: `application/pdf` oder `application/postscript`
-   * Befehle: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
+   * Befehle: `PDFRasterizer -d -s 1280 -t PNG -i ${file}`
    * Fügen Sie Größen für Miniaturansichten hinzu: 319:319, 140:100, 48:48. Fügen Sie ggf. eine benutzerdefinierte Konfiguration für Miniaturansichten hinzu.
 
    Die Befehlszeilenargumente für den `PDFRasterizer`-Befehl können Folgendes enthalten:
 
    * `-d`: Markieren, um eine reibungslose Wiedergabe von Text, Vektorgrafiken und Bildern zu ermöglichen. Erstellt Bilder mit besserer Qualität. Die Verwendung dieses Parameters führt allerdings zu einer langsamen Ausführung des Befehls und zu größeren Bildern.
-
-   * `-p`: Seitenzahl. Der Standardwert ist „Alle Seiten“. Um alle Seiten zu kennzeichnen, verwenden Sie `*`.
 
    * `-s`: Maximale Bildabmessungen (Höhe oder Breite). Dieser Wert wird für jede Seite in DPI umgewandelt. Bei Seiten mit unterschiedlichen Größen wird u. U. jede Seite mit einem anderen Wert skaliert. Der Standardwert ist die tatsächliche Seitengröße.
 
@@ -66,7 +66,6 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
 
 
 1. Um Zwischenausgabeformate zu löschen, wählen Sie **[!UICONTROL Erzeugte Ausgabe löschen]**.
-
 1. Damit PDF Renderer Webdarstellungen generieren kann, wählen Sie **[!UICONTROL Web-Darstellung erstellen]**.
 
    ![generate_web_renditions1](assets/generate_web_renditions1.png)
@@ -76,23 +75,17 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
    ![web_enabled_image1](assets/web_enabled_image1.png)
 
 1. Speichern Sie den Workflow.
-
 1. Damit PDF Raster PDF-Seiten mit PDF-Bibliotheken verarbeiten kann, öffnen Sie das Modell **[!UICONTROL DAM-Prozess-Subasset]** in der Konsole [!UICONTROL Workflow].
-
 1. Ziehen Sie den Schritt für den PDF-Rasterassistenten aus dem Seitenbedienfeld unter den Schritt **[!UICONTROL Web-fähige Bildwiedergabe erstellen]**.
-
 1. Konfigurieren Sie die folgenden Argumente für den Schritt **[!UICONTROL PDF Raster Handler]**:
 
    * MIME-Typen: `application/pdf` oder `application/postscript`
-
-   * Befehle: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
+   * Befehle: `PDFRasterizer -d -s 1280 -t PNG -i ${file}`
    * hinzufügen Größe der Miniaturansichten: `319:319`, `140:100`, `48:48`. hinzufügen benutzerdefinierte Miniaturansicht-Konfiguration nach Bedarf.
 
    Die Befehlszeilenargumente für den `PDFRasterizer`-Befehl können Folgendes enthalten:
 
    * `-d`: Markieren, um eine reibungslose Wiedergabe von Text, Vektorgrafiken und Bildern zu ermöglichen. Erstellt Bilder mit besserer Qualität. Die Verwendung dieses Parameters führt allerdings zu einer langsamen Ausführung des Befehls und zu größeren Bildern.
-
-   * `-p`: Seitenzahl. Der Standardwert ist „Alle Seiten“. `*` kennzeichnet alle Seiten.
 
    * `-s`: Maximale Bildabmessungen (Höhe oder Breite). Dieser Wert wird für jede Seite in DPI umgewandelt. Bei Seiten mit unterschiedlichen Größen wird u. U. jede Seite mit einem anderen Wert skaliert. Der Standardwert ist die tatsächliche Seitengröße.
 
