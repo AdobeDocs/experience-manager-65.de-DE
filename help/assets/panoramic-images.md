@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 88%
+source-wordcount: '577'
+ht-degree: 72%
 
 ---
 
@@ -39,11 +39,11 @@ Die Kriterien für das Seitenverhältnis sowie die Keywords gelten für Panorama
 
 Weitere Informationen über den Upload von Assets für die Verwendung mit dem Viewer für Panoramabilder finden Sie unter [Hochladen von Assets](/help/assets/manage-assets.md#uploading-assets).
 
-## Konfigurieren von Dynamic Media Classic (Scene7) {#configuring-dynamic-media-classic-scene}
+## Konfigurieren von Dynamic Media Classic {#configuring-dynamic-media-classic-scene}
 
-Damit der Viewer für Panoramabilder in AEM ordnungsgemäß funktioniert, müssen Sie die Viewer-Vorgabe für Panoramabilder mit Dynamic Media Classic (Scene7) und mit auf Dynamic Media Classic (Scene7) bezogenen Metadaten synchronisieren, damit die Viewer-Vorgaben in JCR aktualisiert werden. Konfigurieren Sie Dynamic Media Classic (Scene7) dafür wie folgt:
+Damit der Panorama-Bild-Viewer in AEM ordnungsgemäß funktioniert, müssen Sie die Viewer-Vorgaben für Panoramabilder mit den für Dynamic Media Classic und Dynamic Media Classic spezifischen Metadaten synchronisieren, damit die Viewer-Vorgaben in der JCR-Datei aktualisiert werden. Konfigurieren Sie dazu Dynamic Media Classic wie folgt:
 
-1. [Melden Sie sich bei Ihrer Dynamic Media Classic (scene7)-Instanz an, ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) und zwar bei jedem Unternehmenskonto.
+1. [Melden Sie sich für jedes Firmen-Konto bei Ihrer Instanz von Dynamic Media ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Classic an.
 
 1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Veröffentlichungseinrichtung > Image-Server.]**
 1. Wählen Sie auf der Seite &quot;Veröffentlichung des Image-Servers&quot;im Dropdown-Menü **[!UICONTROL Veröffentlichungskontext]** oben **[!UICONTROL Image-Server.]**
@@ -51,7 +51,7 @@ Damit der Viewer für Panoramabilder in AEM ordnungsgemäß funktioniert, müsse
 1. Suchen Sie auf derselben Image-Server-Veröffentlichungsseite die Überschrift **[!UICONTROL Anfrage-Attribute.]**
 1. Suchen Sie unter der Überschrift „Anfrage-Attribute“ die Option **[!UICONTROL Maximale Größe des Antwortbildes.]** Erhöhen Sie anschließend die Werte in den entsprechenden Feldern „Breite“ und „Höhe“ auf die größtmögliche Bildgröße für Panoramabilder.
 
-   Bei Dynamic Media Classic (Scene7) liegt die Obergrenze bei 25.000.000 Pixel. Die maximal zulässige Größe für Bilder mit einem Seitenverhältnis von 2:1 beträgt 7000 x 3500. In der Regel ist für Desktopbildschirme jedoch eine Größe von 4096 x 2048 Pixel ausreichend.
+   Der Wert von Dynamic Media Classic ist auf 25.000.000 Pixel begrenzt. Die maximal zulässige Größe für Bilder mit einem Seitenverhältnis von 2:1 beträgt 7000 x 3500. In der Regel ist für Desktopbildschirme jedoch eine Größe von 4096 x 2048 Pixel ausreichend.
 
    >[!NOTE]
    >
@@ -72,16 +72,16 @@ Damit der Viewer für Panoramabilder in AEM ordnungsgemäß funktioniert, müsse
 
 Wenn Sie ein Bild in der Panoramamedienkomponente in WCM abgelegt haben und der Platzhalter der Komponente ausgeblendet ist, helfen Ihnen möglicherweise die folgenden Schritte zur Fehlerbehebung:
 
-* Wenn Ihnen ein 403-Fehler (Forbidden) angezeigt wird, liegt es möglicherweise daran, dass die angefragte Bildgröße den Grenzwert überschreitet. Überprüfen Sie die Einstellungen für **[!UICONTROL Maximale Größe des Antwortbildes]** in [Konfigurieren von Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
+* Wenn Ihnen ein 403-Fehler (Forbidden) angezeigt wird, liegt es möglicherweise daran, dass die angefragte Bildgröße den Grenzwert überschreitet. Überprüfen Sie die Einstellungen für **[!UICONTROL Maximale Antwortbildgröße]** in [Konfigurieren von Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 * Überprüfen Sie im Falle einer „ungültigen Sperre“ für das Asset oder einem auf der Seite angezeigten „Parsing-Fehler“ den Anfragenverschleierungs- sowie den Anfragensperrmodus, um sicherzustellen, dass diese Modi deaktiviert sind.
 * Bei einer Fehlermeldung zu einer beschädigten Arbeitsfläche können Sie einen Dateipfad für Regeldefinitionen einrichten und CTN für die vorangegangenen Anforderungen für das Bild-Asset ungültig machen.
-* Wenn die Bildqualität infolge einer Bildanforderung mit einer Größe, die den unterstützten Bereich überschreitet, sehr gering wird, stellen Sie sicher, dass die Einstellung **[!UICONTROL JPEG-Codierungsattribute > Qualität]** nicht leer ist. Eine typische Einstellung für das Feld **[!UICONTROL Qualität]** ist `95`. Sie finden die Einstellung auf der Image-Server-Veröffentlichungsseite. Weitere Informationen über den Zugriff auf die Seite finden Sie unter [Konfigurieren von Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
+* Wenn die Bildqualität infolge einer Bildanforderung mit einer Größe, die den unterstützten Bereich überschreitet, sehr gering wird, stellen Sie sicher, dass die Einstellung **[!UICONTROL JPEG-Codierungsattribute > Qualität]** nicht leer ist. Eine typische Einstellung für das Feld **[!UICONTROL Qualität]** ist `95`. Sie finden die Einstellung auf der Image-Server-Veröffentlichungsseite. Informationen zum Zugriff auf die Seite finden Sie unter [Konfigurieren von Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 ## Anzeigen einer Vorschau für Panoramabilder {#previewing-panoramic-images}
 
 Weitere Informationen finden Sie im Abschnitt [Asset-Vorschau](/help/assets/previewing-assets.md).
 
-## Veröffentlichen von Panoramabildern    {#publishing-panoramic-images}
+## Veröffentlichen von Panoramabildern   {#publishing-panoramic-images}
 
 Siehe [Veröffentlichen von Assets](/help/assets/publishing-dynamicmedia-assets.md).
