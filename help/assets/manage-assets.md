@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Asset-Management-Aufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '9565'
+source-wordcount: '9562'
 ht-degree: 61%
 
 ---
@@ -66,7 +66,7 @@ Bevor Sie ein Asset hochladen, stellen Sie sicher, dass es sich in einem [Format
 
    ![Option zum Hochladen von Assets erstellen](assets/create-options.png)
 
-   Wenn Sie die Assets im Dialogfeld für die Dateiauswahl bei gedrückter Strg-/Befehlstaste markieren, können Sie mehrere Dateien auswählen. Bei Verwendung eines iPads können Sie jeweils nur eine Datei auswählen.
+   Um mehrere Dateien auszuwählen, wählen Sie die `Ctrl`- oder `Command`-Taste und wählen Sie die Assets im Dateiauswahl-Dialogfeld aus. Bei Verwendung eines iPads können Sie jeweils nur eine Datei auswählen.
 
    Sie können das Hochladen von großen Assets (größer als 500 MB) anhalten und später von der gleichen Seite aus fortsetzen. Klicken Sie auf **[!UICONTROL Pause]** neben der Fortschrittsleiste, die beim Hochladen von Beginn angezeigt wird.
 
@@ -355,13 +355,13 @@ Gehen Sie wie folgt vor, um ein Asset mit der Tastatur Vorschau:
 
 1. Navigieren Sie in der Benutzeroberfläche [!DNL Assets] mit den Pfeiltasten zum gewünschten Asset.`Tab`
 
-1. Drücken Sie die Taste `Enter`, um das gewünschte Asset zu öffnen. Sie können Assets im Vorschau-Modus heranzoomen.
+1. Wählen Sie für das gewünschte Asset die Taste `Enter` aus, um es zu öffnen. Sie können Assets im Vorschau-Modus heranzoomen.
 
 1. So vergrößern Sie das Asset:
    1. Verwenden Sie die `Tab`-Taste, um den Fokus auf die Einzoomoption zu verschieben.
    1. Verwenden Sie die `Enter`-Taste, um das Bild zu vergrößern.
 
-   Zum Auszoomen verwenden Sie die `Tab`-Taste, um den Fokus auf die Zoomoption zu verschieben, und drücken Sie die `Enter`-Taste.
+   Zum Auszoomen verwenden Sie die `Tab`-Taste, um den Fokus auf die Zoomoption zu verschieben und `Enter` auszuwählen.
 
 1. Verwenden Sie die Tasten `Shift` + `Tab`, um den Fokus wieder auf das Bild zu verschieben.
 
@@ -395,7 +395,7 @@ Gehen Sie wie folgt vor, um ein Asset mit der Tastatur Vorschau:
 
 1. Um das Asset nach einer bestimmten Laufzeit zu deaktivieren, wählen Sie das Datum/den Zeitpunkt mit der Datumsauswahl neben dem Feld **[!UICONTROL Ausschaltzeit]**. Das Deaktivierungsdatum sollte nach dem Aktivierungsdatum für ein Asset liegen. Nach der [!UICONTROL Off Time] sind ein Asset und seine Darstellungen weder über die [!DNL Assets]-Webschnittstelle noch über die HTTP-API verfügbar.
 
-1. Wählen Sie im Feld **[!UICONTROL Tags]** ein oder mehrere Tags aus. Um ein benutzerdefiniertes Tag hinzuzufügen, geben Sie den Namen des Tags in das Feld ein. Anschließend drücken Sie die Eingabetaste. Das neue Tag wird unter [!DNL Experience Manager] gespeichert. [!DNL YouTube] erfordert Tags zum Veröffentlichen. Siehe [Videos auf YouTube](video.md#publishing-videos-to-youtube) veröffentlichen.
+1. Wählen Sie im Feld **[!UICONTROL Tags]** ein oder mehrere Tags aus. Um ein benutzerdefiniertes Tag hinzuzufügen, geben Sie den Namen des Tags in das Feld ein und wählen Sie `Enter`. Das neue Tag wird unter [!DNL Experience Manager] gespeichert. [!DNL YouTube] erfordert Tags zum Veröffentlichen. Siehe [Videos auf YouTube](video.md#publishing-videos-to-youtube) veröffentlichen.
 
    >[!NOTE]
    >
