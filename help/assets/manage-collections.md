@@ -4,9 +4,9 @@ description: Hier erfahren Sie, wie Sie Sammlungen von Assets verwalten, z. B. S
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '2178'
+source-wordcount: '2176'
 ht-degree: 63%
 
 ---
@@ -80,7 +80,7 @@ Gehen Sie wie folgt vor, um eine intelligente Sammlung zu erstellen:
 
 1. Navigieren Sie zur Benutzeroberfläche [!DNL Assets] und klicken Sie auf Suchen.
 
-1. Geben Sie den Suchbegriff in das Feld Omniture Search ein und drücken Sie `Enter`. Öffnen Sie das Bedienfeld &quot;Filter&quot;und wenden Sie einen Suchfilter an.
+1. Geben Sie den Suchbegriff in das Feld Omniture Search ein und wählen Sie `Enter`. Öffnen Sie das Bedienfeld &quot;Filter&quot;und wenden Sie einen Suchfilter an.
 
 1. Wählen Sie aus der Liste **[!UICONTROL Dateien und Ordner]** die Option **[!UICONTROL Dateien]** aus.
 
@@ -120,7 +120,7 @@ Alternativ können Sie das Asset in den Bereich **[!UICONTROL In Sammlung]** abl
 Smart-Sammlungen werden durch Speichern von Suchvorgängen erstellt. Das heißt, Sie können den Inhalt ändern, indem Sie die Suchparameter der [gespeicherten Suche](#saved-searches) ändern.
 
 1. Klicken Sie in der Benutzeroberfläche [!DNL Assets] in der Symbolleiste auf die Suchoption ![search option](assets/do-not-localize/search_icon.png).
-1. Betätigen Sie bei in das OmniSearch-Feld gesetztem Cursor die Eingabetaste.
+1. Wählen Sie mit dem Cursor im Feld Omniture die `Return`-Taste aus.
 1. Öffnen Sie in der Oberfläche [!DNL Experience Manager] das Bedienfeld &quot;Filter&quot;.
 1. Wählen Sie in der Liste **[!UICONTROL Gespeicherte Suchen]** die Smart-Sammlung aus, die Sie ändern möchten. Im Suchbereich werden die für die gespeicherte Suche konfigurierten Filter angezeigt.
 
@@ -249,7 +249,7 @@ Gespeicherte Suchen werden genauso wie Smart-Sammlungen bearbeitet. Weitere Info
 Gehen Sie wie folgt vor, um gespeicherte Suchen zu löschen:
 
 1. Klicken Sie in der Benutzeroberfläche [!DNL Assets] auf Suchen ![Suchoption](assets/do-not-localize/search_icon.png).
-1. Drücken Sie mit dem Cursor im Feld Omniture die Eingabetaste.
+1. Wählen Sie mit dem Cursor im Feld Omniture die `Return`-Taste aus.
 1. Öffnen Sie in der Oberfläche [!DNL Experience Manager] das Bedienfeld &quot;Filter&quot;.
 1. Klicken Sie in der Liste **[!UICONTROL Gespeicherte Suchen]** neben der zu löschenden intelligenten Sammlung auf **[!UICONTROL Löschen]**.
 
