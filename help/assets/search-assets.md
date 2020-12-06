@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mithilfe des Bedienfelds "Filter"die erforder
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f5aa1d31f3b31e29073937e044c8fbac27138c4d
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '5769'
+source-wordcount: '5767'
 ht-degree: 53%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 53%
 | [Einschränkungen](#limitations) und [Tipps](#tips) |  |  |
 | [Illustrierte Beispiele](#samples) |  |  |
 
-Suchen Sie Assets mithilfe des Omniture-Suchfelds oben in der [!DNL Experience Manager]-Weboberfläche. Gehen Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Dateien]** in [!DNL Experience Manager], klicken Sie in der oberen Leiste auf ![search_icon](assets/do-not-localize/search_icon.png), geben Sie den Suchbegriff ein und drücken Sie die Eingabetaste. Alternativ können Sie die Suchbegriff-Tastenkombination `/` (Schrägstrich) verwenden, um das OmniSearch-Feld zu öffnen. `Location:Assets` ist vorausgewählt, um die Suche auf DAM-Assets zu begrenzen. [!DNL Experience Manager] bietet Vorschläge, wie Ihr Beginn einen Suchbegriff eingeben kann.
+Suchen Sie Assets mithilfe des Omniture-Suchfelds oben in der [!DNL Experience Manager]-Weboberfläche. Gehen Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Dateien]** in [!DNL Experience Manager], klicken Sie in der oberen Leiste auf ![Suchsymbol](assets/do-not-localize/search_icon.png), geben Sie den Suchbegriff ein und wählen Sie `Return`. Alternativ können Sie die Suchbegriff-Tastenkombination `/` (Schrägstrich) verwenden, um das OmniSearch-Feld zu öffnen. `Location:Assets` ist vorausgewählt, um die Suche auf DAM-Assets zu begrenzen. [!DNL Experience Manager] bietet Vorschläge, wie Ihr Beginn einen Suchbegriff eingeben kann.
 
 Verwenden Sie das Bedienfeld **[!UICONTROL Filter]**, um nach Assets, Ordnern, Tags und Metadaten zu suchen. Sie können Suchergebnisse anhand der verschiedenen Optionen (Prädikate) filtern, z. B. Dateityp, Dateigröße, Datum der letzten Änderung, Status des Assets, Einblicke und Adobe Stock-Lizenzierung. Sie können das Bedienfeld &quot;Filter&quot;anpassen und mithilfe von [Suchfacetten](/help/assets/search-facets.md) Suchvorhersagen hinzufügen oder entfernen. Der Filter [!UICONTROL Dateityp] im Bereich [!UICONTROL Filter] enthält Kontrollkästchen mit gemischtem Status. Wenn Sie also nicht alle verschachtelten Prädikate (oder Formate) auswählen, werden die Kontrollkästchen der ersten Ebene teilweise markiert.
 
@@ -259,7 +259,7 @@ Die Suchfunktion in [!DNL Experience Manager Assets] hat folgende Einschränkung
 * Beginnen Sie die Suchanfrage nicht mit einem Leerzeichen, da die Suche sonst nicht funktioniert.
 * [!DNL Experience Manager] zeigt den Suchbegriff ggf. weiter an, nachdem Sie Eigenschaften eines Assets aus den Suchergebnissen ausgewählt und die Suche dann abgebrochen haben. <!-- (CQ-4273540) -->
 * Bei der Suche nach Ordnern bzw. Dateien und Ordnern können die Suchergebnisse mit keinem anderen Parameter sortiert werden.
-* Wenn Sie die Eingabetaste ohne Eingabe in die Omniture Suchleiste drücken, gibt [!DNL Experience Manager] eine Liste von nur Dateien und nicht Ordnern zurück. Wenn Sie speziell nach Ordnern suchen, ohne einen Suchbegriff zu verwenden, gibt [!DNL Experience Manager] keine Ergebnisse zurück.
+* Wenn Sie `Return` ohne Eingabe in die Omniture Suchleiste auswählen, gibt [!DNL Experience Manager] eine Liste von nur Dateien und nicht Ordnern zurück. Wenn Sie speziell nach Ordnern suchen, ohne einen Suchbegriff zu verwenden, gibt [!DNL Experience Manager] keine Ergebnisse zurück.
 
 Visuelle Suchen oder Ähnlichkeitssuchen weisen die folgenden Einschränkungen auf:
 
