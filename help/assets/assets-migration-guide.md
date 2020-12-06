@@ -3,10 +3,10 @@ title: Assets stapelweise migrieren
 description: Beschreibt, wie Assets in [!DNL Adobe Experience Manager] geladen, Metadaten angewendet, Darstellungen generiert und in Veröffentlichungsinstanzen aktiviert werden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '1798'
-ht-degree: 67%
+source-wordcount: '1799'
+ht-degree: 66%
 
 ---
 
@@ -79,7 +79,7 @@ Da Assets nicht über ein Netzwerk übertragen werden müssen, verbessert sich d
 
 ### Verarbeiten von Wiedergaben {#processing-renditions}
 
-Nachdem Sie die Assets in das System geladen haben, müssen Sie sie mithilfe des Workflows [!UICONTROL DAM Update Asset] verarbeiten, um Metadaten zu extrahieren und Darstellungen zu generieren. Bevor Sie diesen Schritt durchführen, müssen Sie den Arbeitsablauf [!UICONTROL DAM-Update-Asset] an Ihre Anforderungen anpassen und anpassen. Der vordefinierte Arbeitsablauf enthält viele Schritte, die für Sie möglicherweise nicht erforderlich sind, z. B. Scene7 PTIFF-Generierung oder [!DNL InDesign Server] Integration.
+Nachdem Sie die Assets in das System geladen haben, müssen Sie sie mithilfe des Workflows [!UICONTROL DAM Update Asset] verarbeiten, um Metadaten zu extrahieren und Darstellungen zu generieren. Bevor Sie diesen Schritt durchführen, müssen Sie den Arbeitsablauf [!UICONTROL DAM-Update-Asset] an Ihre Anforderungen anpassen und anpassen. Der vordefinierte Arbeitsablauf enthält viele Schritte, die möglicherweise nicht für Sie erforderlich sind, wie z. B. die Generierung dynamischer Medien-PTIFF oder [!DNL InDesign Server]-Integration.
 
 Wenn Sie den Workflow den Anforderungen entsprechend konfiguriert haben, stehen Ihnen zwei Optionen zur Ausführung zur Verfügung:
 
