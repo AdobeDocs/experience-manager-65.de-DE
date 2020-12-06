@@ -3,10 +3,10 @@ title: Suchfacetten zum Filtern von Suchergebnissen
 description: Erstellen, Ändern und Verwenden von Suchfacetten in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '2438'
-ht-degree: 78%
+source-wordcount: '2424'
+ht-degree: 77%
 
 ---
 
@@ -38,15 +38,15 @@ Bei Volltextsuchen fügen Sie dem Formular die Prognose [!UICONTROL Volltext] hi
    >
    >1. Navigieren Sie in CRXDE zu `/conf/global/settings/dam/search/facets/assets/jcr:content/items`.
    >1. Löschen Sie den Knoten **type**.
-   >1. Kopieren Sie aus dem Pfad */libs/settings/dam/search/facets/assets/jcr:content/items* die Knoten **asset, directory, typeor, excludepaths** und **searchtype** in den in Schritt 1 erwähnten Pfad.
+   >1. Kopieren Sie unter dem Pfad `/libs/settings/dam/search/facets/assets/jcr:content/items` die Knoten `asset`, `directory`, `typeor`, `excludepaths` und `searchtype` in den in Schritt 1 erwähnten Pfad.
    >1. Speichern Sie die Änderungen.
 
 
 1. Ziehen Sie auf der Seite [!UICONTROL Suchformulare bearbeiten] eine Eigenschaft von der Registerkarte **[!UICONTROL Eigenschaft auswählen]** in den Hauptbereich. Ziehen Sie beispielsweise **[!UICONTROL Eigenschaftsprädikat]**.
 
-   ![Drücken und bewegen Sie ein Prädikat, um die Suchfilter anzupassen](assets/drag_predicate.png)
+   ![Auswählen und Verschieben einer Vorhersage zum Anpassen der Filter](assets/drag_predicate.png)
 
-   *Abbildung: Drücken und bewegen Sie ein Prädikat, um die Suchfilter anzupassen.*
+   *Abbildung: Wählen Sie ein Prädikat aus und verschieben Sie es, um die Filter anzupassen.*
 
 1. Geben Sie auf der Registerkarte [!UICONTROL Einstellungen] eine Feldbeschriftung, einen Platzhaltertext und eine Beschreibung für das Eigenschaftsprädikat ein. Geben Sie einen gültigen Namen für die Metadateneigenschaft an, die mit dem Prädikat verknüpft werden soll. Die Kopfzeilenbeschriftung auf der Registerkarte [!UICONTROL Einstellungen] gibt den Typ der ausgewählten Prognose an.
 
