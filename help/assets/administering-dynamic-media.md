@@ -1,15 +1,15 @@
 ---
 title: 'Einrichten von Dynamic Media  '
-description: Zum Einrichten von Dynamic Media müssen Sie Dynamic Media konfigurieren und Bild- sowie Viewer-Vorgaben verwalten.
+description: Um dynamische Medien einzurichten, müssen Sie dynamische Medien konfigurieren und Bild- und Viewer-Vorgaben verwalten.
 uuid: bcd1f9ab-4201-4222-9e4a-ba82b3c7cd6c
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 71%
+source-wordcount: '254'
+ht-degree: 65%
 
 ---
 
@@ -20,7 +20,7 @@ Mithilfe von [Dynamic Media](https://www.adobe.com/de/solutions/web-experience-m
 
 >[!NOTE]
 >
->In diesem Dokument werden die Funktionen für dynamische Medien beschrieben, die direkt in AEM integriert sind. Wenn Sie Dynamic Media Classic (früher &quot;Scene7&quot;) verwenden, das in AEM integriert ist, finden Sie weitere Informationen unter [Dokumentation zur Integration von Dynamic Media Classic](/help/sites-administering/scene7.md).
+>In diesem Dokument werden die Funktionen für dynamische Medien beschrieben, die direkt in AEM integriert sind. Wenn Sie Dynamic Media Classic in AEM integriert verwenden, finden Sie weitere Informationen unter [Dokumentation zur Integration von Dynamic Media Classic](/help/sites-administering/scene7.md).
 >
 >Unter [Szenario mit doppeltem Verwendungszweck](/help/sites-administering/scene7.md#dual-use-scenario) finden Sie Zeiten, in denen Sie AEM in Dynamic Media Classic mit dynamischen Medien integrieren möchten.
 
