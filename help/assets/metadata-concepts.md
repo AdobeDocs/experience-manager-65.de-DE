@@ -3,9 +3,9 @@ title: Verstehen von Metadatenkonzepten
 description: Erfahren Sie mehr über den Bedarf an Metadaten und Typen, die eine einfachere Kategorisierung und Organisation von Assets ermöglichen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '2732'
+source-wordcount: '2731'
 ht-degree: 90%
 
 ---
@@ -178,7 +178,7 @@ Neben dem DCMES gibt es weitere Metadatenelemente, die von der Dublin Core Initi
 | description | Weitere Informationen zum Asset. |
 | format | Das Dateiformat, das physische Medium oder die Dimensionen des Assets. [!DNL Experience Manager] verwendet `dc:format`, um den MIME-Typ des Assets zu kennzeichnen. |
 | identifier | Eine eindeutige Referenz zum Asset. |
-| language | Die Sprache des Assets (z. B. „en“ für Englisch). |
+| language | Die Sprache des Assets (z. B. `en` für Englisch). |
 | publisher | Die Personen oder das Unternehmen, die dafür verantwortlich sind, das Asset verfügbar zu machen. |
 | relation | Ein zugehöriges Asset. |
 | rights | Informationen dazu, wer die Rechte für dieses Asset besitzt. |
