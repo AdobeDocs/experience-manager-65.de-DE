@@ -3,10 +3,10 @@ title: Digital Rights Management der Vermögenswerte
 description: Erfahren Sie, wie Sie Asset-Ablaufstatus und Informationen für lizenzierte Assets unter [!DNL Experience Manager] verwalten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 97d3edf155ddeabf3f39139c9079621c3627820b
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 79%
+source-wordcount: '1398'
+ht-degree: 77%
 
 ---
 
@@ -50,7 +50,7 @@ Sie können im Suchfeld nach abgelaufenen Assets einschließlich abgelaufener Te
 
 1. Klicken Sie in der [!DNL Assets]-Konsole in der Symbolleiste auf **[!UICONTROL Suchen]**, um das Omnisearch-Feld anzuzeigen.
 
-1. Betätigen Sie bei in das Omnisearch-Feld gesetztem Cursor die Eingabetaste, um die Seite mit den Suchergebnissen anzuzeigen.
+1. Wählen Sie mit dem Cursor im Feld &quot;Omniture&quot;die `Enter`-Taste aus, um die Suchergebnisseite anzuzeigen.
 1. Öffnen Sie das Suchfeld in der linken Leiste. Klicken Sie auf die Option **[!UICONTROL Ablaufstatus]**, um sie zu erweitern.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
@@ -110,7 +110,7 @@ Die [!DNL Assets]-Konsole kann verschiedene Status für Assets anzeigen. Abhäng
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
 1. Um nach Assets basierend auf ihrem Status zu suchen, klicken Sie auf **[!UICONTROL Suche]** ![Suchoption](assets/do-not-localize/search_icon.png), um die Omniture Suchleiste anzuzeigen.
-1. Drücken Sie die Eingabetaste und klicken Sie auf [!DNL Experience Manager], um das Suchbedienfeld anzuzeigen.
+1. Wählen Sie `Return` und klicken Sie auf [!DNL Experience Manager], um das Suchfeld anzuzeigen.
 1. Klicken Sie im Suchbedienfeld auf **[!UICONTROL Veröffentlichungsstatus]** und wählen Sie **[!UICONTROL Veröffentlicht]** aus, um in [!DNL Assets] nach veröffentlichten Assets zu suchen.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
