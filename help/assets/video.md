@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '11828'
-ht-degree: 96%
+source-wordcount: '11812'
+ht-degree: 95%
 
 ---
 
@@ -146,7 +146,7 @@ Für das Verwalten von einzelnen Videos und adaptiven Videosets wird Folgendes u
 * Organisieren und Durchsuchen von Videos mit kompletter Metadatenunterstützung für die effiziente Verwaltung von Video-Assets
 * Bereitstellen von adaptiven Videosets im Internet sowie auf Desktops und Mobilgeräten, einschließlich iPhone, iPad, Android™, Blackberry und Windows Phone.
 
-Das adaptive Video-Streaming wird auf einer Vielzahl von iOS-Plattformen unterstützt. Siehe [Referenzanleitung für Scene7 Viewer](https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
+Das adaptive Video-Streaming wird auf einer Vielzahl von iOS-Plattformen unterstützt. Siehe [Referenzhandbuch für Viewer für dynamische Medien](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html#video).
 
 Dynamic Media unterstützt die mobile Videowiedergabe für MP4 H.264-Videos. Welche BlackBerry-Geräte dieses Videoformat unterstützen, können Sie hier einsehen: [Unterstützte Videoformate für BlackBerry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -162,7 +162,7 @@ Welche Windows-Geräte dieses Videoformat unterstützen, können Sie hier einseh
 
 Sehen Sie das Beispiel für [Dynamische Videowiedergabe](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) an.
 
-Siehe auch [Viewer für AEM Assets und Dynamic Media Classic](https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) und [Viewer für AEM Elemente](https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) im Adobe Scene7 Viewer-Referenzhandbuch.
+Siehe auch [Viewer für AEM Assets und Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) und [Viewer für AEM Elemente](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only).
 
 ## Best Practice: Verwenden des HTML5-Video-Viewers {#best-practice-using-the-html-video-viewer}
 
@@ -174,7 +174,7 @@ Auf der Wiedergabeseite des Viewers wird die Videofähigkeit des Browsers automa
 
 Indem Sie die Fähigkeiten, die Wiedergabekomponenten anhand von HTML5 und CSS zu entwerfen, eingebettete Wiedergabe zu ermöglichen und adaptives und progressives Streaming zu verwenden (je nach Browser-Funktionen), in einem einzelnen Player kombinieren, erreichen Sie mit Ihren Rich-Media-Inhalten mehr Desktop- und Mobilbenutzer und können für ein optimiertes Videoerlebnis sorgen.
 
-Weitere Informationen finden Sie auch im Abschnitt zu [HTML5-Viewern](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) in der Referenzanleitung für Adobe Scene7 Viewer.
+Siehe auch [HTML5-Viewer](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only).
 
 ### Wiedergabe von Videos auf Desktops und mobilen Geräten mit dem HTML5-Video-Viewer   {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -191,7 +191,7 @@ HLS ist ein Apple-Standard für adaptives Videostreaming, der die Wiedergabe aut
 
 Progressives Video wird bereitgestellt, indem das Video lokal auf ein Desktopsystem oder Mobilgerät eines Benutzers heruntergeladen und gespeichert wird.
 
-Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethode für Videos auf Desktop-Computern und Mobilgeräten mit Scene7 Video-Viewer.
+In der folgenden Tabelle sind das Gerät, der Browser und die Wiedergabe von Videos auf Desktopcomputern und Mobilgeräten mit dem Video-Viewer für dynamische Medien beschrieben.
 
 <table>
  <tbody>
@@ -404,7 +404,7 @@ Im folgenden Beispiel hat das Quellvideo Abmessungen von 1920 x 1080. Die drei 
 |--- |--- |--- |--- |
 | Quelle | 1920 x 1080 | 1 | 1 |
 | Kodiert | 960 x 540 | 2 | 2 |
-| Kodiert | 640 x 360 | 3 | 1 |
+| Kodiert | 640 x 360 | 3 | 3 |
 | Kodiert | 480 x 270 | 4 | 4 |
 
 ### Kodiertes Videodateiformat {#encoded-video-file-format}
@@ -1005,9 +1005,9 @@ Geben Sie den Start- und Enddatumsbereich an, für den Sie Videodaten benötigen
 
 Wenn Sie einen von Dynamic Media standardmäßig bereitgestellten Video-Viewer verwenden oder anhand eines Standardvideo-Viewers eine benutzerdefinierte Viewer-Vorgabe erstellt haben, müssen Sie keine zusätzlichen Schritte ausführen, um Videoberichte anzuzeigen. Wenn Sie aber anhand des Scene7 HTML5 Viewer SDK einen eigenen Video-Viewer erstellt haben, gehen Sie wie folgt vor, um sicherzustellen, dass der Video-Viewer Tracking-Ereignisse an die Funktion „Videoberichte“ von Dynamic Media sendet.
 
-Erstellen Sie Ihre eigenen Video-Viewer anhand der Referenz für Scene7 Viewer und mit dem Scene7 HTML5 Viewers SDK.
+Verwenden Sie die Viewer-Referenz für dynamische Medien und das Scene7 HTML5 Viewer-SDK, um eigene Video-Viewer zu erstellen.
 
-Siehe [Referenzanleitung für Scene7 Viewer](https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/library/home.html).
+Siehe [Referenzhandbuch für Viewer für dynamische Medien](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 <!-- Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
