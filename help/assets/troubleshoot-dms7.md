@@ -1,6 +1,6 @@
 ---
 title: Fehlerbehebung bei Dynamic Media - Scene7-Modus
-description: Fehlerbehebung in Dynamic Media im Ausführungsmodus „Scene7“.
+description: Fehlerbehebung für dynamische Medien, wenn diese im Scene7-Modus ausgeführt werden.
 uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,15 +9,15 @@ content-type: reference
 discoiquuid: 0d48c031-d3ee-4143-b739-a79ba28fd63a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 96%
+source-wordcount: '1285'
+ht-degree: 94%
 
 ---
 
 
-# Fehlerbehebung in Dynamic Media – Scene7-Modus{#troubleshooting-dynamic-media-scene-mode}
+# Fehlerbehebung in Dynamic Media – Scene7-Modus{#troubleshooting-dynamic-media-scene-mode}
 
 Das folgende Dokument beschreibt das Beheben von Fehlern mit Dynamic Media im Ausführungsmodus **dynamicmedia_scene7**.
 
@@ -29,7 +29,7 @@ Stellen Sie sicher, dass Dynamic Media korrekt eingerichtet wurde, indem Sie fol
 * Alle Cumulative Fix Packs für AEM 6.4 wurden *vor* den verfügbaren Feature Packs für Dynamic Media installiert.
 * Das optionale Feature Pack 18912 wurde installiert.
 
-   Dieses optionale Feature Pack bietet FTP-Unterstützung und Hilfe bei der Migration von Assets aus Dynamic Media Classic (Scene7) in Dynamic Media.
+   Dieses optionale Feature Pack dient zur FTP-Unterstützung oder wenn Sie Assets von Dynamic Media Classic zu dynamischen Medien migrieren.
 
 * Navigieren Sie zur Benutzeroberfläche &quot;Cloud Services&quot;und bestätigen Sie, dass das bereitgestellte Konto unter **[!UICONTROL Verfügbare Konfigurationen angezeigt wird.]**
 * Stellen Sie sicher, dass der Replizierungsagenten `Dynamic Media Asset Activation (scene7)` aktiviert ist.
