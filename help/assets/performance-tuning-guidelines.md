@@ -4,9 +4,9 @@ description: Vorschläge und Anleitungen zur Konfiguration, Änderungen an Hardw
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cc61b8473fb919a963eb73c015efbc2f06197ee8
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '2743'
+source-wordcount: '2744'
 ht-degree: 53%
 
 ---
@@ -164,7 +164,7 @@ Diese Einstellung des Werts auf die Hälfte der verfügbaren Prozesse ist für d
 
 ### Konfiguration von DAM-Update-Asset {#dam-update-asset-configuration}
 
-Der Arbeitsablauf [!UICONTROL DAM-Update-Asset] enthält eine vollständige Reihe von Schritten, die für Aufgaben wie die Scene7-PTIFF-Generierung und [!DNL Adobe InDesign Server]-Integration konfiguriert sind. Die meisten Benutzer benötigen jedoch nicht alle diese Schritte. Adobe empfiehlt, eine benutzerdefinierte Kopie des Workflow-Modells [!UICONTROL DAM Update Asset] zu erstellen und alle unnötigen Schritte zu entfernen. Aktualisieren Sie in diesem Fall die Starter für [!UICONTROL DAM Update Asset], um auf das neue Modell zu verweisen.
+Der Arbeitsablauf [!UICONTROL DAM-Update-Asset] enthält eine vollständige Reihe von Schritten, die für Aufgaben wie die Generierung dynamischer Medien-PTIFF und [!DNL Adobe InDesign Server]-Integration konfiguriert sind. Die meisten Benutzer benötigen jedoch nicht alle diese Schritte. Adobe empfiehlt, eine benutzerdefinierte Kopie des Workflow-Modells [!UICONTROL DAM Update Asset] zu erstellen und alle unnötigen Schritte zu entfernen. Aktualisieren Sie in diesem Fall die Starter für [!UICONTROL DAM Update Asset], um auf das neue Modell zu verweisen.
 
 Wenn Sie den Arbeitsablauf [!UICONTROL DAM-Update-Asset] intensiv ausführen, kann die Größe Ihres Dateidatatastors stark erhöht werden. Entsprechende Tests von Adobe haben gezeigt, dass die Datenspeichergröße um ca. 400 GB ansteigt, wenn innerhalb von 8 Stunden 5.500 Workflows ausgeführt werden.
 
@@ -180,7 +180,7 @@ Kunden verwenden Bilder unterschiedlicher Größen und Formate auf ihrer Website
 
 Viele Kunden der Website implementieren ein Bild-Servlet, das Bilder zum Zeitpunkt ihrer Anforderung skaliert und beschneidet und der Veröffentlichungsinstanz damit eine zusätzliche Belastung auferlegt. Wenn diese Bilder zwischengespeichert werden können, lässt sich dieses Problem abmildern.
 
-Ein alternativer Ansatz ist die Scene7-Technologie, mit der sich die Bildbearbeitung vollständig abgeben lässt. Darüber hinaus können Sie Markenportal bereitstellen, das nicht nur Verantwortung für die Generierung von Darstellungen aus der [!DNL Experience Manager]-Infrastruktur übernimmt, sondern auch die gesamte Veröffentlichungsstufe.
+Eine Alternative besteht darin, die Dynamic Media-Technologie zu verwenden, um die Bildbearbeitung komplett abzuwenden. Darüber hinaus können Sie Markenportal bereitstellen, das nicht nur Verantwortung für die Generierung von Darstellungen aus der [!DNL Experience Manager]-Infrastruktur übernimmt, sondern auch die gesamte Veröffentlichungsstufe.
 
 #### ImageMagick {#imagemagick}
 
