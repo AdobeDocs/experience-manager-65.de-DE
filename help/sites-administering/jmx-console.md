@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f64eb57a69f2124523bd6eaed3e2f58a54c1ea8e
+source-git-commit: 97c93a95cd7fe63b306d80fe127388a209b727c7
 workflow-type: tm+mt
-source-wordcount: '4989'
+source-wordcount: '4974'
 ht-degree: 70%
 
 ---
@@ -803,10 +803,7 @@ Zeigt eine Meldung im QuickStart-Fenster an.
 
 Argumente:
 
-* p1: Ein `String`-Wert, der die anzuzeigende Meldung enthält. Die folgende Abbildung zeigt das Ergebnis des Aufrufs von `log` mit dem p1-Wert `this is a log message`.
-
-![launcheruilog](assets/launcheruilog.png)
-
+* p1: Ein `String`-Wert, der die anzuzeigende Meldung enthält.
 * Zurückgegebener Wert: keiner
 
 **startupFinished**
@@ -821,14 +818,10 @@ Ruft die startupFinished-Methode des Server-Starters auf. Die Methode versucht, 
 Legt den Abschlusswert des Server-Startvorgangs fest. Die Statusleiste im QuickStart-Fenster zeigt den Abschlusswert an.
 
 * Argumente:
-
    * p1: Ein Gleitkommawert, der als Bruch angibt, wie groß der bereits abgeschlossene Anteil des Startvorgangs ist. Der Wert sollte zwischen null und eins liegen. Beispielsweise steht „0,3“ für „30 % abgeschlossen“.
-
 * Zurückgegebener Wert: keiner
 
-![launprogress](assets/launcherprogress.png)
-
-## Dienste von Drittanbietern {#third-party-services}
+## Dienste von Drittanbietern  {#third-party-services}
 
 Einige Drittanbieter-Serverressourcen installieren MBeans, die Attribute und Vorgänge an die JMX-Konsole übermitteln. In der folgenden Tabelle sind die Drittanbieter-Ressourcen und Links zu weiteren Informationen aufgeführt.
 
