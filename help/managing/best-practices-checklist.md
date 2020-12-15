@@ -10,7 +10,7 @@ topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 917b4fec-d5fe-4402-b69c-3c9645e6f934
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e12f994a16511e8be4efe3e507deb97b42175f90
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 82%
@@ -28,7 +28,7 @@ Checklisten sind für jede am Projekt beteiligte Rolle vorhanden. Sie enthalten 
 
 Checkliste für bewährte Verfahren für AEM Projekt, Version 2
 
-[Datei laden](assets/aem_project_bp_checklistv2.xlsx)
+[Datei laden](assets/aem_project_bp_checklistv2-65.xlsx)
 
 ## Arbeitsblätter {#worksheets}
 
