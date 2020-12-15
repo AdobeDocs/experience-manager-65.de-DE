@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0e1ac02879ff09ab0e78d043450ef7114c868417
+source-git-commit: 6693baecb1345c30385eb04caeb03960925f46c3
 workflow-type: tm+mt
 source-wordcount: '1898'
 ht-degree: 4%
@@ -137,7 +137,7 @@ Weitere Informationen zum Installieren von Bundles finden Sie auf der Seite [Web
 
 #### Beispiel: Installiertes MySQL Connector-Bundle {#example-installed-mysql-connector-bundle}
 
-![chlimage-Bundles](assets/chlimage-bundles.png)
+![connector-bundle](assets/connector-bundle.png)
 
 ### SCORM-Paket {#scorm-package}
 
