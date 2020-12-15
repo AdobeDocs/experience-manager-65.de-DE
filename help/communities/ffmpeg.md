@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 translation-type: tm+mt
-source-git-commit: 299c4cb377c65e49b94383704a906fdd0bb38d06
+source-git-commit: 871c42ee000eb250c1c6159d9a0c752e8ed4d7b8
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # FFmpeg für Communities {#ffmpeg-for-communities}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 FFmpeg ist eine Lösung zum Konvertieren und Streaming von Audio und Video und wird, wenn sie installiert ist, zur korrekten Transkodierung von [Video-Assets](../../help/sites-authoring/default-components-foundation.md#video) sowie zur Aktivierung von AEM Communities verwendet.
 
@@ -63,7 +63,7 @@ So ändern Sie den Workflow [!UICONTROL DAM-Update-Asset] und deaktivieren Sie i
 
    * **[!UICONTROL Anpassungen]**: Löschen Sie alle Einträge, um die Transkodierung von Standardwerten zu deaktivieren:  `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
 
-   ![chlimage_1-372](assets/chlimage_1-372.png)
+   ![configure-ffmpeg](assets/configure-ffmpeg.png)
 
 * Wählen Sie **[!UICONTROL OK]**, um das `Step Properties`-Dialogfeld zu schließen.
 
