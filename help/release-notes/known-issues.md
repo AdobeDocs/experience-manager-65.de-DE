@@ -2,10 +2,10 @@
 title: Bekannte Probleme
 description: Versionshinweise zu bekannten Problemen mit Adobe Experience Manager 6.5
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: f72101dadaa8d5d12f2f9a636548b18386b79b0a
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 47%
+source-wordcount: '593'
+ht-degree: 46%
 
 ---
 
@@ -80,3 +80,4 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
    Durch diese Eigenschaft können Client-Bibliotheken unter dem Laufzeitordner auf Proxys zugreifen (CQ-4268679)
 
 * Wenn AEM Forms gestartet wird, wird die Warnung `SAX Security Manager could not be setup` angezeigt.
+* Wenn Sie eine mit AEM Forms Dokument Security geschützte PDF auf einem Apple iOS oder iPadOS mit Adobe Acrobat Reader Version 20.10.00 öffnen.
