@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: a5040371-3bc2-43bc-a103-7175c4c6252d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 230c700d87d82d248b7d0bbc45c69c5c2b0e3ff8
+source-git-commit: d38395b8f845686492a26329bb732a41f79c85c4
 workflow-type: tm+mt
 source-wordcount: '381'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -33,7 +33,7 @@ Das [Handbuch zu Community-Komponenten](/help/communities/components-guide.md) i
 
 Beachten Sie die drei Clientbibliotheken, die für die ordnungsgemäße Wiedergabe und Funktionsweise von Kommentaren erforderlich sind. Diese müssen eingeschlossen werden, wenn auf erweiterte Kommentare verwiesen wird, und die Client-Bibliothek [extended Comments](/help/communities/extend-create-components.md#create-a-client-library-folder) ( `apps.custom.comments`).
 
-![chlimage_1-47](assets/chlimage_1-47.png)
+![comments-component1](assets/comments-component1.png)
 
 ### hinzufügen benutzerspezifischer Kommentare auf einer Seite {#add-custom-comments-to-a-page}
 
@@ -45,17 +45,17 @@ Damit der Kommentar korrekt angezeigt und funktioniert, müssen die Client-Bibli
 
 #### Kommentare clientlibs auf Beispielseite {#comments-clientlibs-on-sample-page}
 
-![chlimage_1-48](assets/chlimage_1-48.png)
+![comments-clientlibs-crxde](assets/comments-clientlibs-crxde.png)
 
 #### Autor: Alt-Kommentar auf Beispielseite {#author-alt-comment-on-sample-page}
 
-![chlimage_1-49](assets/chlimage_1-49.png)
+![alt-comment](assets/alt-comment.png)
 
 #### Autor: Beispiel-Seiten-Kommentarknoten-Knoten {#author-sample-page-comments-node}
 
 Sie können resourceType in CRXDE überprüfen, indem Sie die Eigenschaften des Knotens comments für die Beispielseite unter `/content/sites/sample/en/jcr:content/content/primary/comments` anzeigen.
 
-![chlimage_1-50](assets/chlimage_1-50.png)
+![verify-comment-crxde](assets/verify-comment-crxde.png)
 
 #### Beispielseite {#publish-sample-page} veröffentlichen
 
@@ -67,8 +67,8 @@ Nach dem Veröffentlichen der benutzerdefinierten Anwendung und der Beispielseit
 
 Hier finden Sie aaron.mcdonald@mailinator.com zum Posten eines Kommentars:
 
-![chlimage_1-51](assets/chlimage_1-51.png)
+![publish-alt-comment](assets/publish-alt-comment.png)
 
-![chlimage_1-52](assets/chlimage_1-52.png)
+![publish-alt-comment1](assets/publish-alt-comment1.png)
 
 Nun, da es so aussieht, als ob die erweiterte Komponente mit dem Standardaussehen korrekt funktioniert, ist es an der Zeit, das Erscheinungsbild zu ändern.
