@@ -10,15 +10,15 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: ffded9c4c08c68db59d05b341166bed92e741e1e
 workflow-type: tm+mt
-source-wordcount: '1684'
-ht-degree: 79%
+source-wordcount: '1693'
+ht-degree: 73%
 
 ---
 
 
-# Personalisierung {#personalization}
+# Personalisierung  {#personalization}
 
 ## Was ist Personalisierung? {#what-is-personalization}
 
@@ -28,28 +28,28 @@ Personalisierung konzentriert sich darauf, dem Benutzer eine maßgeschneiderte U
 
 Personalisierung umfasst drei Hauptelemente:
 
-**Benutzer**
+### Benutzer {#users}
 
-* verfügen über Einzel- und Gruppenprofile. Diese Profile enthalten Merkmale (wie Tätigkeitsbeschreibung, Standort, Interessen), die zur Personalisierung der angezeigten Inhalte verwendet werden können.
-* ergreifen Maßnahmen. Diese können analysiert und mit Verhaltensregeln abgeglichen werden, um die angezeigten Inhalte benutzerspezifisch anzupassen.
+* Sie haben Profile, sowohl einzeln als auch gruppiert. Diese Profile enthalten Merkmale (wie Tätigkeitsbeschreibung, Standort, Interessen), die zur Personalisierung der angezeigten Inhalte verwendet werden können.
+* Ergreifen Sie Maßnahmen. Diese können analysiert und mit Verhaltensregeln abgeglichen werden, um die angezeigten Inhalte benutzerspezifisch anzupassen.
 
-**Inhalt**
+### Inhalt {#content}
 
-* ist das, was der Benutzer sehen möchte. Bevorzugt sollten dies Inhalte sein, die für die Erfüllung der Aufgaben des Benutzers interessant und nützlich sind.
-* kann kategorisiert und dem Benutzer so anhand vordefinierter Regeln bereitgestellt werden. Er muss dynamisch sein – mit anderen Worten: Der Inhalt
-* muss in irgendeiner Weise vom Benutzer abhängig sein - wenn jeder Benutzer denselben Inhalt sehen würde, wäre die Personalisierung überflüssig.
+* Ist es, was der Benutzer sehen möchte. Bevorzugt sollten dies Inhalte sein, die für die Erfüllung der Aufgaben des Benutzers interessant und nützlich sind.
+* Kann kategorisiert werden und damit für Benutzer gemäß vordefinierten Regeln zur Verfügung gestellt werden.muss dynamisch sein; mit anderen Worten, der Inhalt
+* Muss irgendwie vom Benutzer abhängig sein - wenn jeder Benutzer denselben Inhalt sehen würde, wäre die Personalisierung überflüssig.
 
-**Regeln**
+### Regeln {#rules}
 
-* definieren, wie die Personalisierung tatsächlich abläuft - welche Inhalte der Benutzer sehen kann und wann.
+* Definieren Sie, wie die Personalisierung tatsächlich abläuft - welche Inhalte der Benutzer sehen kann und wann.
 
 Es gibt zwei Arten von Personalisierung:
 
-**Explizit**
+#### Explizit {#explicit}
 
 * Benutzerspezifische Anpassung: Hierbei wählt der Benutzer aus einer Reihe von Inhaltsquellen aus.
 
-**Implizit**
+#### Implizit {#implicit}
 
 * Regelbasiert: Geschäftsführer legen basierend auf bestimmten Profilen und/oder Verhaltensweisen bestimmte Regeln für Aktionen fest.
 * Einfaches Filtern: Die Auswahlen werden basierend auf vordefinierten Profilen auf Benutzer- und/oder Gruppenebene vorgenommen.
@@ -59,23 +59,23 @@ Es gibt zwei Arten von Personalisierung:
 
 Die Personalisierung kann in vielen Fällen verwendet werden, wie zum Beispiel:
 
-**Intranetseiten**
+### Intranet-Seiten {#intranet-pages}
 
 * Inhalte können basierend auf dem Standort, der Abteilung und/oder der Rolle eines Benutzers angeboten werden - bereits in einem internen Netzwerk definiert.
 * Je nach der verfügbaren Auswahl hat der Benutzer noch weitere Auswahlmöglichkeiten.
 
-**Spezifische begrenzte Zielbenutzergruppen (Extranets)**
+### Spezifische, eingeschränkte Zielgruppe-Benutzergruppen - Extranets {#extranets}
 
 * Benutzer benötigen Anmeldedaten zur Autorisierung. Dies wird mit einem Profil verknüpft, das die erforderlichen Informationen für die Personalisierung bereitstellt – wie zum Beispiel den Standort, die Beziehung zum Produkt, die Nutzungsgeschichte, Budgetierungsverpflichtungen usw. 
 * Solche Instanzen können auch standortübergreifend genutzt werden, wie zum Beispiel in den folgenden Fällen:
 * Unternehmen, die Websites für einen hochgradig spezialisierten Bereich ihres Markts bereitstellen, zum Beispiel Pharmaunternehmen, die Ärzten eine spezialisierte Website bereitstellen.
 * Unternehmen, die Websites bereitstellen, mit denen ihre Kunden aktuelle Konto- und Rechnungsinformationen anzeigen können, so zum Beispiel Telekommunikationsanbieter.
 
-**Verkaufs- und Vertriebswebsite**
+### Vertriebs- und Vertriebs-Website {#sales-site}
 
 * Verkaufs- und Vertriebswebsites wie Amazon können ein Benutzerprofil mit der Kauf- und Suchhistorie des Benutzers kombinieren, um Empfehlungen dazu auszusprechen, was den Benutzer als Nächstes interessieren könnte.
 
-**Suchwebsites**
+### Websites suchen {#search-site}
 
 * Viele große Suchmaschinenwebsites verfügen über leistungsstarke Analysetools, die das Benutzerverhalten, die eingegebenen Suchbegriffe und die tatsächlich besuchten Websites aufzeichnen. Auf diese Weise können Sie die bereitgestellten Inhalte anpassen, insbesondere was die Anzeige von Anzeigen betrifft.
 
@@ -93,31 +93,35 @@ Personalisierung sollte aus folgenden Gründen eingesetzt werden:
 
 Berücksichtigen Sie beim Einsetzen von Personalisierung Folgendes:
 
-**Leistung**
+#### Leistung {#performance}
 
 * Natürlich haben die zusätzlichen Analysen und Bewertungen Auswirkungen auf die Leistung. Dennoch sind die eingesetzten Methoden äußerst anspruchsvoll und können optimiert werden, um negative Auswirkungen zu minimieren.
 
-**Autorisierung**
+#### Autorisierung {#authorization}
 
 * Personalisierung erfordert einen Anmeldemechanismus, da die Website den Benutzer identifizieren muss.
 
-**Caching**
+#### Caching {#caching}
 
 * Die Zwischenspeicherung ist ein Aspekt, den der Benutzer in Bezug auf Leistung und Genauigkeit sehen wird - wie schnell liefert die Website personalisierte Inhalte und ist sie immer aktuell.
-* Die Speicherung im Cache ist eine wichtige Überlegung für die Konfiguration der Personalisierung und es ist ein gewisser Zeitaufwand erforderlich, um sicherzustellen, dass die richtige Implementierung verwendet wird. Hierauf gehen wir später noch genauer ein.
+* Die Speicherung im Cache ist eine wichtige Überlegung für die Konfiguration der Personalisierung und es ist ein gewisser Zeitaufwand erforderlich, um sicherzustellen, dass die richtige Implementierung verwendet wird.
 
-**Genauigkeit der Regeln**
+>[!TIP]
+>
+>Die Auswirkungen der Personalisierung auf die Leistung und damit verbundene Themen zum Zwischenspeichern werden im Dokument [Leistungsoptimierung.](/help/sites-deploying/configuring-performance.md)
+
+#### Genauigkeit der Regeln {#accuracy}
 
 * Die Personalisierung, die durch die Rückverfolgung des Benutzerverhaltens oder durch die Festlegung von Regeln auf Grundlage des Benutzerprofils umgesetzt wird, muss genau und logisch erfolgen.
 * Es gibt für Benutzer nichts Frustrierenderes, als nur aufgrund der ungenauen Logik einer Regel Inhalte aufgezwungen oder vorenthalten zu bekommen.
 * Deshalb müssen Regeln gut durchdacht sein - mit den Anforderungen des Benutzers im Vordergrund. Dies kann sehr mühsam sein und darf nicht unterschätzt werden. Die Festlegung der geschäftlichen Regeln ist häufig aufwendiger als die technischen Maßnahmen bei der Implementierung der Personalisierung.
 
-**Wann ist sie einzusetzen?**
+#### Verwenden von {#when-to-use}
 
 * Wie viele Funktionen im Internet ist auch Personalisierung mit Vorsicht einzusetzen. Ist Ihr Einsatz wirklich von Vorteil für den Benutzer? Dies sollte immer die erste Überlegung sein. Darüber hinaus sollte ergründet werden, ob das gewünschte Ziel mit einer anderen Methode mit geringerem Aufwand erreicht werden kann. Personalisierung kann das Risiko eingehen, eine Funktion zu sein, die Benutzer einmal konfigurieren (um zu sehen, wie sie funktioniert) und nur einmal - da sie ihnen keine echten Vorteile bringt.
 * Personalisierung ist nur dann sinnvoll, wenn der Inhalt dynamisch ist - abhängig vom Benutzer in irgendeiner Weise. Werden allen Benutzern dieselben Inhalte angezeigt, ist die Personalisierung redundant.
 
-**Vertraulichkeit**
+#### Vertraulichkeit {#confidentiality}
 
 * Viele Benutzer machen sich Sorgen um Datenschutz und -sicherheit. Insbesondere gilt dies für Daten, die bei der Rückverfolgung ihres Verhaltens beim Surfen im Internet abgerufen werden.
 
@@ -156,7 +160,7 @@ Mit AEM werden verschiedene Komponenten für die Personalisierung bereitgestellt
 | Profil - Anzeigename | Anzuzeigender Name. |
 | Profil - E-Mail | Eingabe einer E-Mail-Adresse. |
 | Profil-Geschlecht | Ermöglicht die Eingabe des Geschlechts.  |
-| Profil - Primäre Telefonnummer | Ermöglicht die Eingabe einer Telefonnummer.  |
+| Profil Primär Telefonnummer | Ermöglicht die Eingabe einer Telefonnummer.  |
 | Profil - Primäre URL | Ermöglicht die Eingabe einer URL. |
 | Profil General Text, Eigenschaft | Profileigenschaften. |
 | Anmelden | Ermöglicht Ihnen, bei der Anmeldung einen Benutzernamen und ein Kennwort zu senden. |
@@ -172,7 +176,7 @@ Mit der Erweiterung [AEM Communities 6.1](/help/communities/overview.md) wird di
 
 Ohne Communities-Erweiterung gibt es verschiedene Methoden, das Problem der Konsistenz des benutzergenerierten Inhalts anzugehen:
 
-* Synchronisierung der verschiedenen Veröffentlichungsinstanzen, falls erforderlich
-* Senden des benutzergenerierten Inhalts von der Veröffentlichungsinstanz an die Autorenumgebung, von wo aus dieser auf eine ähnliche Weise wie Seiteninhalte veröffentlicht werden kann
+* Mehrere Instanzen im Veröffentlichungsmodus bei Bedarf synchronisieren
+* Senden Sie das UGC von der Veröffentlichungsinstanz an die Autorendatei, von der aus es ähnlich wie beim Veröffentlichen von Seiteninhalten veröffentlicht werden kann.
 
 Die Methode, die verwendet wird, um die Konsistenz des benutzergenerierten Inhalts über mehrere Veröffentlichungsinstanzen hinweg zu erzielen, sollte sorgfältig gestaltet und auf ihre Leistung und Konsistenz hin überprüft werden.
