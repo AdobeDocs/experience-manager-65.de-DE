@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 418e7fad2d990f1a7cb3b69ab4c290ca1b7075ba
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 6%
@@ -57,7 +57,7 @@ Das Löschen der automatisch erstellten JSP-Datei erfolgt, weil stattdessen die 
 
       * **Beschriftung**:  *Kommentare*
       * **Titel**:  *Alt-Kommentare*
-      * **Beschreibung**:  *Alternativkommentar-Stil*
+      * **Beschreibung**:  *Alternativkommentar*
       * **Super Type**:  *social/commons/components/hbs/comments*
       * **Gruppe**:  *Benutzerdefiniert*
    * Wählen Sie **[!UICONTROL Weiter]** aus
@@ -72,7 +72,7 @@ Das Löschen der automatisch erstellten JSP-Datei erfolgt, weil stattdessen die 
 1. Wählen Sie **[!UICONTROL Löschen]**
 1. Wählen Sie **[!UICONTROL Alle speichern]**
 
-![chlimage_1-70](assets/chlimage_1-70.png)
+![create-component](assets/create-component.png)
 
 ### Erstellen der untergeordneten Kommentarkomponente {#create-the-child-comment-component}
 
@@ -83,13 +83,13 @@ Das Löschen der automatisch erstellten JSP-Datei erfolgt, weil stattdessen die 
 1. Navigieren Sie zum Knoten `/apps/custom/components/comments`
 1. Klicken Sie mit der rechten Maustaste auf den Knoten
 
-   * Wählen Sie **[!UICONTROL Erstellen] > **[!UICONTROL Komponente...]**
+   * Wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Komponente...]**
 
       * **Beschriftung**:  *Kommentar*
       * **Titel**:  *Alt-Kommentar*
       * **Beschreibung**:  *Alternativer Kommentarstil*
       * **Super Type**:  *social/commons/components/hbs/comments/comment*
-      * **Gruppe**:  `*.hidden*`
+      * **Gruppe**: `*.hidden*`
    * Wählen Sie **[!UICONTROL Weiter]** aus
    * Wählen Sie **[!UICONTROL Weiter]** aus
    * Wählen Sie **[!UICONTROL Weiter]** aus
@@ -102,9 +102,9 @@ Das Löschen der automatisch erstellten JSP-Datei erfolgt, weil stattdessen die 
 1. Wählen Sie **[!UICONTROL Löschen]**
 1. Wählen Sie **[!UICONTROL Alle speichern]**
 
-![chlimage_1-71](assets/chlimage_1-71.png)
+![create-child-component](assets/create-child-component.png)
 
-![chlimage_1-72](assets/chlimage_1-72.png)
+![create-component-crxde](assets/create-component-crxde.png)
 
 ### Kopieren und Ändern der Standard-HBS-Skripte {#copy-and-modify-the-default-hbs-scripts}
 
@@ -168,7 +168,7 @@ Verwenden von [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lit
 * Geben Sie als Inhalt von `js.txt` &quot;customommentsystem.js&quot;ein
 * Wählen Sie **[!UICONTROL Alle speichern]**
 
-![chlimage_1-73](assets/chlimage_1-73.png)
+![comments-clientlibs](assets/comments-clientlibs.png)
 
 ## SCF-Modell und -Ansicht {#register-the-scf-model-view} registrieren
 
@@ -200,9 +200,9 @@ Geben Sie den folgenden Text als Inhalt von `customcommentsystem.js` ein:
 
 Um die erweiterte Komponente in der Umgebung &quot;Veröffentlichen&quot;nutzen zu können, müssen Sie die benutzerdefinierte Komponente replizieren.
 
-Eine Möglichkeit dazu ist
+Eine Möglichkeit dazu ist:
 
-* Aus globaler Navigation
+* von der globalen Navigation,
 
    * Wählen Sie **[!UICONTROL Werkzeuge]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Replikation]**
    * Wählen Sie **[!UICONTROL Baum aktivieren]**
