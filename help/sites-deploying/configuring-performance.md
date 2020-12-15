@@ -677,7 +677,7 @@ Die AEM Konfiguration legt das Repository und den Datenspeicher auf demselben lo
 In der folgenden Tabelle werden die für die Sicherungs-Benchmarks verwendeten Datenmengen dargestellt. Zunächst wird der ursprüngliche Inhalt installiert, danach werden weitere bekannte Datenmengen hinzugefügt, um die Größe des gesicherten Inhalts zu steigern. Sicherungen werden in Inkrementen erstellt, um einen starken Inhaltszuwachs und die produzierte Tagesmenge nachzubilden. Die Verteilung der Inhalte (Seiten, Bilder, Tags) entspricht in etwa einer realistischen Asset-Zusammensetzung. Seiten, Bilder und Tags sind auf maximal 800 untergeordnete Seiten beschränkt. Jede Seite enthält Titel-, Flash-, Text/Bild-, Video-, Diashow-, Formular-, Tabellen-, Cloud- und Karussellkomponenten. Bilder werden aus einem Pool von 400 Dateien hochgeladen, deren Größe von 37 KB bis 594 KB reicht.
 
 |Inhalt|Knoten|Seiten|Bilder|Tags|
-|—|—|—|—|—|—|
+|---|---|---|---|---|
 |Basisinstallation|69 610|562|256|237|
 |Kleiner Inhalt für inkrementelle Sicherung||+100|+2|+2|
 | Großer Inhalt für vollständige Sicherung||+10 000|+100|+100|
