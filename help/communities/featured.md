@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
 translation-type: tm+mt
-source-git-commit: cbb5a6bac5e9932fd36abf20d4424890080d39bf
+source-git-commit: a8b1ad0fcd2ca9c7fe3117dd8bd161da82d13e8a
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 8%
@@ -51,15 +51,15 @@ Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](
 
 Wenn die [erforderlichen clientseitigen Bibliotheken](essentials-featured.md#essentials-for-client-side) einbezogen werden, wird die `Featured Content`-Komponente wie folgt angezeigt:
 
-![chlimage_1-13](assets/chlimage_1-13.png)
+![featuredcontent](assets/featuredcontent.png)
 
 ## Konfigurieren von speziellen Inhalten {#configuring-featured-content}
 
 Wählen Sie die platzierte Komponente `Featured Content` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
-![chlimage_1-14](assets/chlimage_1-14.png)
+![configure-new](assets/configure-new.png)
 
-![chlimage_1-15](assets/chlimage_1-15.png)
+![featuredcontent1](assets/featuredcontent1.png)
 
 ### Registerkarte „Settings“{#settings-tab}
 
@@ -83,13 +83,13 @@ Die Möglichkeit, Inhalte als speziellen Inhalt zu kennzeichnen, erfordert Moder
 
 Wenn ein Moderator gepostete Inhalte Ansicht, hat er Zugriff auf die kontextbezogenen Moderations-Flags, die das neue `Feature`-Flag enthalten.
 
-![chlimage_1-16](assets/chlimage_1-16.png)
+![site-Besucher-experience](assets/site-visitor-experience.png)
 
 Wenn das Modeartions-Flag als Funktion markiert wurde, wird es zu `Unfeature`.
 
 Die Seite, die die Komponente `Featured Content` enthält, enthält jetzt diesen Beitrag.
 
-![chlimage_1-17](assets/chlimage_1-17.png)
+![site-Besucher-experience1](assets/site-visitor-experience1.png)
 
 `Read More` ist ein Link zum eigentlichen Beitrag.
 
