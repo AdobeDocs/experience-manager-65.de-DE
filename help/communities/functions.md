@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 3133f712be1380ae98e18e63c9598d760d2e7595
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 10%
@@ -35,7 +35,7 @@ So erreichen Sie die Community-Funktionkonsole in der Authoring-Umgebung:
 
 * Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Community-Funktionen]**.
 
-![chlimage_1-379](assets/chlimage_1-379.png)
+![Community-Funktionen](assets/community-functions.png)
 
 ## Vorgefertigte Funktionen {#pre-built-functions}
 
