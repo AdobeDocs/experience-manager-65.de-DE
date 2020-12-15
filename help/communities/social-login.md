@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
+source-git-commit: 6d0ff6ae47688ba7f0e071bad40808fb3466246f
 workflow-type: tm+mt
 source-wordcount: '2803'
 ht-degree: 2%
@@ -130,7 +130,7 @@ Die Instanz [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-
    >Gruppen können jederzeit hinzugefügt oder entfernt werden. Die Mitgliedschaft bestehender Benutzer wird jedoch nicht beeinträchtigt. Die automatische Mitgliedschaft gilt nur für neue Benutzer, die nach dieser Feldaktualisierung erstellt werden. Wählen Sie für Sites, bei denen anonyme Benutzer deaktiviert sind, Benutzer zu der entsprechenden Community-Mitglieder-Gruppe für diese geschlossene Community-Site hinzuzufügen.
 
    * Wählen Sie **[!UICONTROL SAVE]**.
-   * **[!UICONTROL Veröffentlichen]**.
+   * **[!UICONTROL Veröffentlichung]**.
 
 
 
@@ -391,13 +391,13 @@ Beispiel: http://localhost:4503/system/console/configMgr
 * Wählen Sie diese Option, um die Konfiguration zur Bearbeitung zu öffnen.
 * Wählen Sie **[!UICONTROL Speichern]** aus.
 
-![chlimage_1-489](assets/chlimage_1-489.png)
+![graniteoauth](assets/graniteoauth.png)
 
 >[!CAUTION]
 >
 >Verwechseln Sie den Authentifizierungshandler nicht mit einer Facebook- oder Twitter-Instanz von *Adobe Granite OAuth Application und Provider*.
 
-![chlimage_1-490](assets/chlimage_1-490.png)
+![graniteoauth1](assets/graniteoauth1.png)
 
 ### Adobe Granite OAuth Application and Provider {#adobe-granite-oauth-application-and-provider}
 
@@ -414,7 +414,7 @@ So suchen Sie die erstellte Instanz für eine Facebook- oder Twitter-App:
 
    * Suchen Sie die Instanz, bei der **[!UICONTROL Client-ID]** mit der **[!UICONTROL App-ID]** übereinstimmt.
 
-      ![chlimage_1-491](assets/chlimage_1-491.png)
+      ![graniteoauth2](assets/graniteoauth2.png)
 
       Mit Ausnahme der folgenden Eigenschaften bleiben die anderen Eigenschaften der Konfiguration unverändert:
 
@@ -493,7 +493,7 @@ Auf einer Autoreninstanz, die mit Administratorrechten angemeldet ist:
 
 * Ersetzen Sie für **name** `oauthid-123` *123* durch den Facebook ***App-ID*** oder Twitter ***Consumer (API)-Schlüssel***, der dem Wert der **Client-ID** in &lt;a11 entspricht./>Adobe Granite OAuth Application and Provider](social-login.md#adobe-granite-oauth-application-and-provider) configuration.[
 
-   ![chlimage_1-492](assets/chlimage_1-492.png)
+   ![graniteoauth-crxde](assets/graniteoauth-crxde.png)
 
 Weitere Informationen und Tools finden Sie unter [Oak-Abfragen und Indizierung](../../help/sites-deploying/queries-and-indexing.md).
 
