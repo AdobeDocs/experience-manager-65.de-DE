@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6720d5a0fdf1facc0b10011ec306dffbb31f4ac5
+source-git-commit: a8b1ad0fcd2ca9c7fe3117dd8bd161da82d13e8a
 workflow-type: tm+mt
 source-wordcount: '409'
-ht-degree: 19%
+ht-degree: 18%
 
 ---
 
@@ -44,15 +44,15 @@ Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](
 
 Bei der ursprünglichen Platzierung auf einer Community-Site wird die Komponente wie folgt angezeigt:
 
-![chlimage_1-8](assets/chlimage_1-8.png)
+![Lederboard](assets/leaderboard.png)
 
 ### Leaderboard {#configuring-leaderboard} konfigurieren
 
 Wählen Sie die platzierte Komponente `Leaderboard` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
-![chlimage_1-9](assets/chlimage_1-9.png)
+![configure-new](assets/configure-new.png)
 
-![chlimage_1-10](assets/chlimage_1-10.png)
+![configure-Lederboard](assets/configure-leaderboard.png)
 
 #### Registerkarte „Settings“{#settings-tab}
 
@@ -120,7 +120,7 @@ Konfiguration der Leaderboard-Komponente:
    * Abzeichenregel = `/libs/settings/community/badging/rules//reference-badging`
    * Anzeigelimit = `10`
 
-![chlimage_1-11](assets/chlimage_1-11.png)
+![Participant-Lederboard](assets/participants-leaderboard.png)
 
 ### Beispiel: Expert Leaderboard {#example-experts-leaderboard}
 
@@ -143,7 +143,7 @@ Konfiguration der Leaderboard-Komponente:
    * Abzeichenregel = `/libs/settings/community/badging/rules/adv-forums-badging`
    * Anzeigelimit = `10`
 
-![chlimage_1-12](assets/chlimage_1-12.png)
+![Expertengremium](assets/experts-leaderboard.png)
 
 ### Zusätzliche Informationen {#additional-information}
 
