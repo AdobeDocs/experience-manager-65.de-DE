@@ -11,10 +11,10 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b29945dc73e85504cd42102eafb9e2bf6198c9cc
+source-git-commit: 0e1ac02879ff09ab0e78d043450ef7114c868417
 workflow-type: tm+mt
 source-wordcount: '1898'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -222,7 +222,7 @@ Standardmäßig wird die OSGi-Konfiguration mit dem Kontrollkästchen `AEM Commu
 
 Daher müssen Sie die Konfiguration für alle sekundären Veröffentlichungsinstanzen **bearbeiten, um das Kontrollkästchen **`Primary Publisher`**zu deaktivieren.**
 
-![chlimage_1-411](assets/chlimage_1-411.png)
+![primary publisher](assets/primary-publisher.png)
 
 Für alle anderen (sekundären) Instanzen im Veröffentlichungsmodus:
 
@@ -266,11 +266,11 @@ Die folgenden Abbildungen zeigen die Ergebnisse einer Änderung des Anschlusses 
 
 #### Standardagent (publish) {#default-agent-publish}
 
-![chlimage_1-412](assets/chlimage_1-412.png)
+![default-agent-publish](assets/default-agent-publish.png)
 
 #### Replizierungsagenten umkehren (Umkehren veröffentlichen) {#reverse-replication-agent-publish-reverse}
 
-![chlimage_1-413](assets/chlimage_1-413.png)
+![reverse-Replication-agent](assets/reverse-replication-agent.png)
 
 ### Tunnel-Dienst bei Autor {#tunnel-service-on-author}
 
@@ -293,7 +293,7 @@ dann [konfigurieren Sie den Replizierungsagenten](#replication-agents-on-author)
 * Aktivieren Sie das Kontrollkästchen **enable**
 * Wählen Sie **Speichern** aus
 
-   ![chlimage_1-414](assets/chlimage_1-414.png)
+   ![Tunneldienst](assets/tunnel-service.png)
 
 ### Crypto-Schlüssel {#replicate-the-crypto-key} replizieren
 
@@ -353,7 +353,7 @@ Verwenden von [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)
 
 * [Granite Crypto-Bundle aktualisieren](#refresh-the-granite-crypto-bundle)
 
-   ![chlimage_1-415](assets/chlimage_1-415.png)
+   ![replicare-repository](assets/replicare-repository.png)
 
 #### Granite Crypto-Bundle aktualisieren{#refresh-the-granite-crypto-bundle}
 
@@ -364,7 +364,7 @@ Verwenden von [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)
 * Suchen Sie nach `Adobe Granite Crypto Support` bundle (com.adobe.granite.crypto)
 * Wählen Sie **Aktualisieren**
 
-   ![chlimage_1-416](assets/chlimage_1-416.png)
+   ![granite-crypto](assets/granite-crypto.png)
 
 * Nach einem Augenblick sollte ein Dialogfeld **Erfolg** angezeigt werden:
    `Operation completed successfully.`
