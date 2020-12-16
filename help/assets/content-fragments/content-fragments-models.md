@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 9da10294-2dc8-4e82-8d32-f034e6a5aeeb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
+source-git-commit: 932601c849b3a1ddd196e6570a9cf05710cd3e6a
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 98%
+source-wordcount: '753'
+ht-degree: 96%
 
 ---
 
@@ -37,8 +37,12 @@ Gehen Sie wie folgt vor, um Inhaltsfragmentmodelle zu aktivieren:
 
 Um [ein neues Inhaltsfragmentmodell zu erstellen](#creating-a-content-fragment-model), **müssen** Sie Inhaltsfragmentmodelle zunächst über Configuration Manager aktivieren:
 
+>[!CAUTION]
+>
+>Unterkonfigurationen (eine in einer Konfiguration verschachtelte Konfiguration) werden für die Verwendung mit Inhaltsfragmenten nicht unterstützt.
+
 1. Navigieren Sie zu **Tools** > **Allgemein** und öffnen Sie dann den **Konfigurations-Browser**.
-1. Wählen Sie den entsprechenden Speicherort für Ihre Web-Seite aus.
+
 1. Öffnen Sie über **Erstellen** das Dialogfeld, in dem Sie:
 
    1. einen **Titel** angeben,
@@ -47,6 +51,8 @@ Um [ein neues Inhaltsfragmentmodell zu erstellen](#creating-a-content-fragment-m
    ![cfm-6420-09](assets/cfm-6420-09.png)
 
 1. Wählen Sie **Erstellen** aus, um die Definition zu speichern.
+
+<!-- 1. Select the location appropriate to your website. -->
 
 ### Wenden Sie die Konfiguration auf Ihren Assets-Ordner an {#apply-the-configuration-to-your-assets-folder}
 
