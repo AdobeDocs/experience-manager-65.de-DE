@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cbce81a028195d97dba5f9bd154685393d8be180
+source-git-commit: 94a5a8d99d052d7bcf01f237dc2b73157a2f11c2
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 9%
@@ -294,7 +294,7 @@ Die Leader-Funktion ist eine Seite mit einer [Leaderboard-Komponente](/help/comm
 
 Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet, in dem die standardmäßigen Titel- und URL-Namen sowie die standardmäßigen Anzeigeeinstellungen für die Vorlage festgelegt werden:
 
-![chlimage_1-388](assets/chlimage_1-388.png)
+![Lederboard-Dialog](assets/leaderboard-dialog.png)
 
 * [Titel- und URL-Einstellungen](#title-and-url-settings)
 
@@ -325,7 +325,7 @@ Die QnA-Funktion ist eine Seite mit einer [QnA-Komponente](/help/communities/wor
 
 Wenn eine Vorlage hinzugefügt wird, erlaubt die Konfiguration die Beschränkung auf privilegierte Mitglieder:
 
-![chlimage_1-384](assets/chlimage_1-384.png)
+![qna-dialog](assets/qna-dialog.png)
 
 * [Titel- und URL-Einstellungen](#title-and-url-settings)
 
@@ -353,11 +353,11 @@ Wenn eine Vorlage hinzugefügt wird, erlaubt die Konfiguration die Beschränkung
 
 Die Möglichkeit, eine Community-Funktion zu erstellen, wird durch Auswahl des `Create Community Function`-Symbols oben in der Community Functions-Konsole erreicht. Mehrere Funktionen, die auf demselben AEM Blueprint basieren, können erstellt und dann durch Öffnen im Autorenbearbeitungsmodus eindeutig angepasst werden.
 
-![chlimage_1-390](assets/chlimage_1-390.png)
+![create-community-function](assets/create-community-function.png)
 
 ### Name der Community-Funktion {#community-function-name}
 
-![chlimage_1-391](assets/chlimage_1-391.png)
+![function-name](assets/function-name.png)
 
 Im Bedienfeld &quot;Community-Funktionsname&quot;werden ein Name und eine Beschreibung sowie die Konfiguration der Funktion aktiviert oder deaktiviert:
 
@@ -375,7 +375,7 @@ Im Bedienfeld &quot;Community-Funktionsname&quot;werden ein Name und eine Beschr
 
 ### AEM-Blueprint {#aem-blueprint}
 
-![chlimage_1-392](assets/chlimage_1-392.png)
+![aem-blueprint](assets/aem-blueprint.png)
 
 Im Bedienfeld `AEM Blueprint` können Sie den Entwurf auswählen, der die zugrunde liegende Implementierung der Community-Funktion ist.
 
@@ -387,13 +387,13 @@ Siehe auch [Multi-Site-Manager](/help/sites-administering/msm.md).
 
 ### Miniaturansicht  {#thumbnail}
 
-![chlimage_1-393](assets/chlimage_1-393.png)
+![function-thumbnail](assets/funtion-thumbnail.png)
 
 Im Bereich &quot;Miniaturansicht&quot;kann ein Bild hochgeladen werden, um es in der Konsole [Community-Funktionen](#community-functions-console) anzuzeigen.
 
 ## Community-Funktion öffnen {#open-community-function}
 
-![chlimage_1-394](assets/chlimage_1-394.png)
+![open-function](assets/open-function.png)
 
 Klicken Sie auf das Symbol `Open Community Function`, um in den Bearbeitungsmodus für Autoren zum Authoring des Seiteninhalts und zum Ändern der Konfiguration der Funktionskomponente(n) zu wechseln.
 
@@ -409,6 +409,6 @@ Konfigurationsdetails finden Sie unter [Communities Components](/help/communitie
 
 ## Community-Funktion bearbeiten {#edit-community-function}
 
-![chlimage_1-395](assets/chlimage_1-395.png)
+![edit-function](assets/edit-function.png)
 
 Klicken Sie auf das Symbol `Edit Community Function`, um die Eigenschaften der Funktion mit denselben Bedienfeldern wie [Erstellen einer Community-Funktion](#create-community-function) zu bearbeiten, einschließlich Aktivieren oder Deaktivieren der Funktion.
