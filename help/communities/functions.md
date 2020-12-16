@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3133f712be1380ae98e18e63c9598d760d2e7595
+source-git-commit: cbce81a028195d97dba5f9bd154685393d8be180
 workflow-type: tm+mt
 source-wordcount: '2458'
-ht-degree: 10%
+ht-degree: 9%
 
 ---
 
@@ -51,7 +51,7 @@ Wenn eine Community-Funktion zu einer Community-Site-Vorlage hinzugefügt oder h
 
 #### Konfiguration der Funktionsdetails {#configuration-function-details}
 
-![chlimage_1-380](assets/chlimage_1-380.png)
+![title-url-details](assets/title-url-details.png)
 
 * **Titel**
 
@@ -70,7 +70,7 @@ Dann lautet die URL zur Seite https://localhost:4503/content/sites/engage/en/pag
 
 und der Menülink für die Seite wie folgt angezeigt wird:
 
-![chlimage_1-381](assets/chlimage_1-381.png)
+![engagement-page](assets/engage-page.png)
 
 ### Aktivitäts-Stream-Funktion {#activity-stream-function}
 
@@ -80,7 +80,7 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
 #### Konfiguration der Funktionsdetails {#configuration-function-details-1}
 
-![chlimage_1-382](assets/chlimage_1-382.png)
+![function-details](assets/function-details.png)
 
 * [Titel- und URL-Einstellungen](#title-and-url-settings)
 
@@ -110,7 +110,7 @@ Die Blog-Funktion ist eine Seite mit einer [Blog-Komponente](/help/communities/b
 
 Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
-![chlimage_1-383](assets/chlimage_1-383.png)
+![blog-component](assets/blog-component.png)
 
 * [Titel- und URL-Einstellungen](#title-and-url-settings)
 
@@ -136,7 +136,7 @@ Die Kalenderfunktion ist eine Seite mit einer [Kalenderkomponente](/help/communi
 
 Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
-![chlimage_1-384](assets/chlimage_1-384.png)
+![calendar-details](assets/calendar-details.png)
 
 * [Titel- und URL-Einstellungen](#title-and-url-settings)
 
@@ -201,7 +201,7 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
 #### Konfiguration der Funktionsdetails {#configuration-function-details-2}
 
-![chlimage_1-384](assets/chlimage_1-384.png)
+![forum-component1](assets/forum-component1.png)
 
 * [Titel- und URL-Einstellungen](#title-and-url-settings)
 
@@ -243,7 +243,7 @@ Ab Communities [Feature Pack 1](/help/communities/deploy-communities.md#latestfe
 
 Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
-![chlimage_1-386](assets/chlimage_1-386.png)
+![group-template-config](assets/group-template-config.png)
 
 * [Titel- und URL-Einstellungen](#title-and-url-settings)
 
@@ -266,7 +266,7 @@ Die Ideationsfunktion ist eine Seite mit einer [Ideationskomponente](/help/commu
 
 Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet, in dem die standardmäßigen Titel- und URL-Namen sowie die standardmäßigen Anzeigeeinstellungen für die Vorlage festgelegt werden:
 
-![chlimage_1-387](assets/chlimage_1-387.png)
+![ideation-function](assets/ideation-function.png)
 
 * [Titel- und URL-Einstellungen](#title-and-url-settings)
 
