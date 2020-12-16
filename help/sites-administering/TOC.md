@@ -7,10 +7,10 @@ user-guide-title: AEM 6.5-Administratorenanleitung
 breadcrumb-title: Administratorenanleitung
 user-guide-description: Erfahren Sie mehr über die Verwaltung von AEM.
 translation-type: tm+mt
-source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
+source-git-commit: 98180b630c991bc65ddfa275e0f8a97be3be6f7e
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 97%
+source-wordcount: '629'
+ht-degree: 96%
 
 ---
 
@@ -50,11 +50,11 @@ ht-degree: 97%
    + [Konfigurieren des Rich-Text-Editors](rich-text-editor.md)
    + [Konfigurieren von RTE für die Erstellung zugriffsbereiter Sites](rte-accessible-content.md)
    + [Konfigurieren von Rückgängig-Vorgängen zur Seitenbearbeitung](config-undo.md)
-   + [Konfigurieren der Rich-Text-Editor-Plug-ins    ](configure-rich-text-editor-plug-ins.md)
+   + [Konfigurieren der Rich-Text-Editor-Plug-ins ](configure-rich-text-editor-plug-ins.md)
    + [Konfigurieren der Videokomponente](config-video.md)
    + [Der Bulk Editor](bulk-editor.md)
    + [Konfigurieren von E-Mail-Benachrichtigungen](notification.md)
-   + [Der Prüfer für externe Links](external-link-checker.md)
+   + [Link-Checker](external-link-checker.md)
    + [Beheben von Fehlern in AEM](troubleshoot.md)
    + [Verwalten des Zugriffs auf Workflows](workflows-managing.md)
    + [Starten von Workflows](workflows-starting.md)
@@ -76,7 +76,7 @@ ht-degree: 97%
    + [Sicherheitscheckliste](security-checklist.md)
    + [OWASP – Top 10](owasp-top10.md)
    + [Ausführung von AEM im produktionsbereiten Modus](production-ready.md)
-   + [Identitätsmanagement](identity-management.md)
+   + [Identitäts-Management](identity-management.md)
    + [Unterstützung der Adobe IMS-Authentifizierung und der Admin Console für AEM Managed Services](ims-config-and-admin-console.md)
    + [Erstellen von geschlossenen Benutzergruppen](cug.md)
    + [Beheben von Serialisierungsproblemen in AEM](mitigating-serialization-issues.md)
@@ -120,7 +120,7 @@ ht-degree: 97%
    + [Integration mit Adobe Target](target.md)
    + [Integration mit Adobe Analytics](adobeanalytics.md)
    + [Herstellen einer Verbindung mit Adobe Analytics und Erstellen von Frameworks](adobeanalytics-connect.md)
-   + [Konfigurieren der Link-Überwachung für Adobe Analytics](adobeanalytics-link.md)
+   + [Konfigurieren des Linktrackings für Adobe Analytics](adobeanalytics-link.md)
    + [Zuordnen von Komponentendaten mit Adobe Analytics-Eigenschaften](adobeanalytics-mapping.md)
    + [Konfigurieren von Videotracking für Adobe Analytics](adobeanalytics-video.md)
    + [Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ)](scene7-http2faq.md)
