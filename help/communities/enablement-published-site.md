@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 4d21a61ed687caea2b1867d5321f75636f5310a3
 workflow-type: tm+mt
 source-wordcount: '1239'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -90,7 +90,7 @@ Wenn das Profil nicht durch Selbstregistrierung erstellt wurde, wird bei der ers
 
 Wenn sich das Mitglied das nächste Mal anmeldet, wird die durch das erste Menüelement identifizierte Startseite angezeigt.
 
-![chlimage_1-434](assets/chlimage_1-434.png)
+![eingeschriebenes Mitglied](assets/enrolled-member.png)
 
 ### Zuweisungen {#assignments}
 
@@ -106,11 +106,11 @@ Jede Zuweisung bietet grundlegende Informationen zu:
 
 Der Zuweisungstyp wird durch ein Symbol in der oberen linken Ecke der Karte angezeigt. Das Bild einer Straße ist für einen Lernpfad mit der Anzahl der enthaltenen Aktivierungsressourcen gedacht.
 
-![chlimage_1-435](assets/chlimage_1-435.png)
+![assign1](assets/assignment1.png)
 
 Wenn Sie *Skiunterricht* auswählen, werden die beiden Aktivierungsressourcen angezeigt, auf die der Lernpfad verweist.
 
-![chlimage_1-436](assets/chlimage_1-436.png)
+![assign2](assets/assignment2.png)
 
 Wenn Sie *Skiunterricht 1* auswählen, wird die Detailseite der Aktivierungsressource geöffnet.
 
@@ -118,7 +118,7 @@ Auf der Detailseite kann das Mitglied lernen, [rate](rating.md) die Lektion und 
 
 Interaktionen mit der Aktivierungsressource werden im Berichtsabschnitt vermerkt, auf den in der Autorendatei zugegriffen werden kann.
 
-![chlimage_1-437](assets/chlimage_1-437.png)
+![assign3](assets/assignment3.png)
 
 ### Skikatalog {#ski-catalog}
 
@@ -126,7 +126,7 @@ Die Seite Skikatalog ist der Katalog der Aktivierungsressourcen, die mit Tags au
 
 Wenn einem Mitglied weder direkt noch über einen Lernpfad Ressourcen für die Aktivierung zugewiesen wurden, ist es möglich, mit den in einem Katalog befindlichen Ressourcen für die Aktivierung zu interagieren und Feedback über Kommentare und Bewertungen bereitzustellen.
 
-![chlimage_1-438](assets/chlimage_1-438.png)
+![ski-catalog](assets/ski-catalog.png)
 
 ### Diskussionen {#discussions}
 
@@ -138,15 +138,15 @@ Melden Sie sich ab und melden Sie sich als Sidney Croft (Sidney / Passwort) an u
 
 Beachten Sie, dass es neben der Inline-Moderation Optionen gibt, das Thema in sozialen Medien freizugeben oder das Thema per E-Mail zu versenden.
 
-![chlimage_1-439](assets/chlimage_1-439.png)
+![Diskussionen](assets/discussions.png)
 
-### Neue Funktionen {#what-s-new}
+### Neuerungen {#what-s-new}
 
 Das Menüelement `What's New` ist der Titel der [Aktivität-Stream-Funktion](functions.md#activity-stream-function) in der Struktur dieser Community-Site.
 
 Wählen Sie noch als Sidney angemeldet den Link `What's New` aus, um die Aktivität anzuzeigen.
 
-![chlimage_1-440](assets/chlimage_1-440.png)
+![whats-new-menu](assets/whats-new-menu.png)
 
 ## Vertrauenswürdiges Community-Mitglied {#trusted-community-member}
 
@@ -159,7 +159,7 @@ Anmelden mit
 
 Nach der Anmeldung gibt es einen neuen Menüpunkt `Administration`, der angezeigt wird, weil dem Mitglied die Rolle des Moderators zugewiesen wurde.
 
-![chlimage_1-441](assets/chlimage_1-441.png)
+![trust-member-homepage](assets/trusted-member-homepage.png)
 
 Die Startseite wird durch den ersten Menüpunkt Zuweisungen gekennzeichnet. Quinn ist der Ansprechpartner für Moderator- und Aktivierungsressourcen und wurde nicht in Aktivierungsressourcen oder Lernpfaden eingeschrieben. Es ist daher nichts anzuzeigen.
 
@@ -171,7 +171,7 @@ Wenn Sie das Symbol für das Seitenbedienfeld auswählen, werden die Filter geö
 
 Wenn Sie den Mauszeiger über eine Kommentarkarte bewegen, werden Moderationsaktionen angezeigt.
 
-![chlimage_1-442](assets/chlimage_1-442.png)
+![Administration](assets/administration.png)
 
 ## Berichte zum Autor {#reports-on-author}
 
@@ -213,7 +213,7 @@ Beachten Sie, dass es wahrscheinlich zu früh ist, Daten aus Adobe Analytics anz
 
 #### Bericht zu den Ressourcen für Skifahrten {#ski-lessons-resource-report}
 
-![chlimage_1-443](assets/chlimage_1-443.png)
+![ski-stunden-report](assets/ski-lessons-report.png)
 
 #### Bericht &quot;Skilehrer/innen&quot;{#ski-lessons-user-report}
 
@@ -223,7 +223,7 @@ Beachten Sie, dass es wahrscheinlich zu früh ist, Daten aus Adobe Analytics anz
 * Karte öffnen `Ski Lessons`
 * Wählen Sie nun eine der folgenden Optionen aus `Report > User Report`
 
-![chlimage_1-444](assets/chlimage_1-444.png)
+![ski-stunden-user-report](assets/ski-lessons-user-report.png)
 
 ### Berichte-Konsole {#reports-console}
 
@@ -245,7 +245,7 @@ Für Zuweisungsberichte:
 
 * Wählen Sie **[!UICONTROL Generieren]**
 
-![chlimage_1-445](assets/chlimage_1-445.png)
+![report-zuweisung](assets/report-assignment.png)
 
 Für Berichte zu Ansichten:
 
@@ -259,6 +259,6 @@ Für Berichte zu Ansichten:
 
 * Wählen Sie **[!UICONTROL Generate]**.
 
-![chlimage_1-446](assets/chlimage_1-446.png)
+![report-Ansichten](assets/report-views.png)
 
 **[⇐ Erstellen und Zuweisen von Aktivierungsressourcen](resource.md)**
