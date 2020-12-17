@@ -12,10 +12,10 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 translation-type: tm+mt
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+source-git-commit: d0842a5994068b1e9a92cd14c1a59f1ea1a6c8b8
 workflow-type: tm+mt
-source-wordcount: '3452'
-ht-degree: 85%
+source-wordcount: '3533'
+ht-degree: 83%
 
 ---
 
@@ -82,7 +82,7 @@ Ihre Komponente wird mit [HTML](https://www.w3schools.com/htmL/html_intro.asp) g
 
 ### Verwenden der HTML-Vorlagensprache {#using-the-html-template-language}
 
-Die [HTML Vorlagensprache (HTL)](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html), die mit AEM 6.0 eingeführt wurde, löst JSP (JavaServer Pages) als bevorzugtes und empfohlenes serverseitiges Vorlagensystem für HTML ab. Webentwicklern, die robuste Unternehmenswebsites erstellen müssen, hilft HTL, eine höhere Sicherheit und Entwicklungseffizienz zu erreichen.
+Die [HTML Vorlagensprache (HTL)](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html), die mit AEM 6.0 eingeführt wurde, löst JSP (JavaServer Pages) als bevorzugtes und empfohlenes serverseitiges Vorlagensystem für HTML ab. Webentwicklern, die robuste Unternehmenswebsites erstellen müssen, hilft HTL, eine höhere Sicherheit und Entwicklungseffizienz zu erreichen.
 
 >[!NOTE]
 >
@@ -288,6 +288,14 @@ In der klassischen Benutzeroberfläche mit ExtJS war es üblich, Listener für e
 
 Die Inhaltsstruktur beschreibt die semantische Struktur. Sie sollte (muss) nicht die Art des zugrunde liegenden Widget implizieren. Wenn Sie keinen JS-Code in der Inhaltsstruktur haben, können Sie die Implementierungsdetails ändern, ohne die Inhaltsstruktur ändern zu müssen. Mit anderen Worten, Sie können die Widget-Bibliothek ändern, ohne die Inhaltsstruktur zu berühren.
 
+#### Erkennen der Verfügbarkeit des Dialogfelds {#dialog-ready}
+
+Wenn Sie über ein benutzerdefiniertes JavaScript verfügen, das nur ausgeführt werden muss, wenn das Dialogfeld verfügbar und bereit ist, sollten Sie auf das `dialog-ready`-Ereignis achten.
+
+Dieses Ereignis wird ausgelöst, wenn das Dialogfeld geladen (oder erneut geladen) wird und einsatzbereit ist, d. h. wenn eine Änderung (Erstellen/Aktualisieren) im DOM des Dialogfelds erfolgt.
+
+`dialog-ready` kann verwendet werden, um in JavaScript benutzerspezifischen Code einzubinden, der Anpassungen an den Feldern in einem Dialogfeld oder ähnlichen Aufgaben durchführt.
+
 ### Feldüberprüfung {#field-validation}
 
 #### Pflichtfeld {#mandatory-field}
@@ -430,7 +438,7 @@ Den Code dieser Seite finden Sie auf GitHub
 
 >[!NOTE]
 >
->Die automatische Erstellung von Komponenteninstanzen kann jetzt problemlos in der Benutzeroberfläche konfiguriert werden, wenn [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) und bearbeitbare Vorlagen verwendet werden. Weitere Informationen zum Definieren, welche Komponenten automatisch bestimmten Medientypen zugeordnet werden, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
+>Die automatische Erstellung von Komponenteninstanzen kann jetzt problemlos in der Benutzeroberfläche konfiguriert werden, wenn [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html) und bearbeitbare Vorlagen verwendet werden. Weitere Informationen zum Definieren, welche Komponenten automatisch bestimmten Medientypen zugeordnet werden, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
 ## Verwenden von AEM Brackets-Erweiterungen {#using-the-aem-brackets-extension}
 
@@ -453,7 +461,7 @@ Wenn Sie eine Komponente, die für die Verwendung mit der klassischen Benutzerob
 
    * Die Verwendung von [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) ist nicht obligatorisch, aber wenn Ihre Komponente aktualisiert werden muss, ist es ein idealer Zeitpunkt, eine [Migration von JSP zu HTL](/help/sites-developing/components-basics.md#htl-vs-jsp) in Betracht zu ziehen.
 
-* Komponenten
+* Komponenten 
 
    * Migrieren Sie [`cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code)-Code, der klassische benutzeroberflächespezifische Funktionen verwendet
    * RTE-Plug-in, für weitere Informationen siehe [Konfigurieren des Rich-Text-Editors](/help/sites-administering/rich-text-editor.md).
