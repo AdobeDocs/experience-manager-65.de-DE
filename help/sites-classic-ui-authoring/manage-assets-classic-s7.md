@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 81707b4d57f7f15106459b91f95b1bc6ec333bf4
+source-git-commit: 863c3292d272ba4c80a80645262919e55870a437
 workflow-type: tm+mt
-source-wordcount: '3221'
-ht-degree: 77%
+source-wordcount: '3250'
+ht-degree: 65%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 77%
 
 [Adobe Scene7](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) ist eine gehostete Lösung für das Verwalten, Erweitern, Veröffentlichen und Bereitstellen von Rich-Media-Ressourcen für das Web, für Mobilgeräte, E-Mails, für mit dem Internet verbundene Anzeigen und für den Druck.
 
-Die in Scene7 veröffentlichten AEM-Assets können in verschiedenen Viewern angezeigt werden:
+Sie können in Scene7 veröffentlichte Experience Manager-Assets in verschiedenen Viewern Ansichten ausführen:
 
 * Zoom
 * Flyout
@@ -31,13 +31,13 @@ Die in Scene7 veröffentlichten AEM-Assets können in verschiedenen Viewern ange
 * Bildvorlage
 * Bild
 
-Digitale Assets können direkt über AEM in Scene7 veröffentlicht werden und umgekehrt.
+Sie können digitale Assets direkt von Experience Manager nach Scene7 veröffentlichen und von Scene7 nach Experience Manager veröffentlichen.
 
-Dieses Dokument beschreibt, wie digitale Assets von AEM in Scene7 und umgekehrt veröffentlicht werden. Die Viewer werden auch detailliert beschrieben. Informationen über das Konfigurieren von AEM für Scene7 finden Sie unter [Integrieren von Scene7 in AEM](/help/sites-administering/scene7.md).
+In diesem Dokument wird beschrieben, wie digitale Assets von Experience Manager nach Scene7 und umgekehrt veröffentlicht werden. Die Viewer werden auch detailliert beschrieben. Weitere Informationen zum Konfigurieren von Experience Manager für Scene7 finden Sie unter [Integration von Scene7 mit Experience Manager](/help/sites-administering/scene7.md).
 
 Siehe auch [Hinzufügen von Imagemaps](/help/assets/image-maps.md).
 
-Weitere Informationen über die Arbeit mit Videokomponenten mit AEM finden Sie unter:
+Weitere Informationen zur Verwendung von Videokomponenten mit Experience Manager finden Sie unter:
 
 * [Video](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
 
@@ -51,14 +51,14 @@ Sie können digitale Assets über die Konsole „Assets“ auf der klassischen B
 
 >[!NOTE]
 >
->AEM nimmt die Veröffentlichung in Scene7 auf asynchrone Weise vor. Nachdem Sie auf **Veröffentlichen** geklickt haben, dauert es möglicherweise ein paar Sekunden, bis das Asset in Scene7 veröffentlicht wird.
+>Experience Manager wird asynchron in Scene7 veröffentlicht. Nachdem Sie auf **Veröffentlichen** geklickt haben, dauert es möglicherweise ein paar Sekunden, bis das Asset in Scene7 veröffentlicht wird.
 
 
 ### Veröffentlichen über die Asset-Konsole {#publishing-from-the-assets-console}
 
 So veröffentlichen Sie über die Konsole „Assets“ in Scene7, wenn sich die Assets in einem Scene7-Zielordner befinden:
 
-1. Klicken Sie in der klassischen Benutzeroberfläche von AEM auf **Digitale Assets**, um auf den digitalen Asset-Manager zuzugreifen.
+1. Klicken Sie in der klassischen Benutzeroberfläche des Experience Managers auf **Digitale Assets**, um auf den Digital Asset Manager zuzugreifen.
 
 1. Wählen Sie das Asset (oder die Assets) oder den Ordner innerhalb des Zielordners aus, den Sie in Scene7 veröffentlichen möchten, klicken Sie dann mit der rechten Maustaste und wählen Sie **In Scene7 veröffentlichen** aus. Alternativ können Sie **In Scene7 veröffentlichen** über das Menü **Tools auswählen**.
 
@@ -80,7 +80,7 @@ Sie können ein Asset manuell veröffentlichen, sofern sich dieses Asset im sync
 
 So veröffentlichen Sie direkt über ein digitales Asset in Scene7:
 
-1. Klicken Sie in AEM auf **Digitale Assets**, um auf den Digital Asset Manager zuzugreifen.
+1. Klicken Sie in Experience Manager auf **Digitale Assets**, um auf den Digital Asset Manager zuzugreifen.
 
 1. Doppelklicken Sie, um ein Asset zu öffnen.
 
@@ -92,7 +92,7 @@ So veröffentlichen Sie direkt über ein digitales Asset in Scene7:
 
    >[!NOTE]
    >
-   >Wenn das Asset nicht ordnungsgemäß in Scene7 veröffentlicht wurde, wird der Link zu **Veröffentlichung fehlgeschlagen** geändert. Wenn das Asset bereits in Scene7 veröffentlicht wurde, lautet der Link **Erneut in Scene7 veröffentlichen**. Durch das erneute Veröffentlichen können Sie Änderungen an einem Asset in AEM vornehmen und eine erneute Veröffentlichung vornehmen.
+   >Wenn das Asset nicht ordnungsgemäß in Scene7 veröffentlicht wurde, wird der Link zu **Veröffentlichung fehlgeschlagen** geändert. Wenn das Asset bereits in Scene7 veröffentlicht wurde, lautet der Link **Erneut in Scene7 veröffentlichen**. Durch die Veröffentlichung können Sie Änderungen an einem Asset in Experience Manager vornehmen und es erneut veröffentlichen.
 
 ### Veröffentlichen von Assets außerhalb des CQ-Zielordners {#publishing-assets-from-outside-the-cq-target-folder}
 
@@ -106,7 +106,7 @@ Dafür müssen Sie zunächst die Cloud-Konfiguration für die Seite konfiguriere
 
 So veröffentlichen Sie außerhalb des CQ-Zielordners befindliche Assets:
 
-1. Klicken Sie in AEM auf der klassischen Benutzeroberfläche auf **Websites** und navigieren Sie zur Webseite, zu der Sie ein digitales Asset hinzufügen möchten, das bisher noch nicht in Scene7 veröffentlicht wurde. (Es gelten normale Seitenübernahmeregeln.)
+1. Klicken Sie in der klassischen Benutzeroberfläche in Experience Manager auf **Websites** und navigieren Sie zu der Webseite, der Sie ein digitales Asset hinzufügen möchten, das noch nicht in Scene7 veröffentlicht wurde. (Es gelten normale Seitenübernahmeregeln.)
 
 1. Klicken Sie im Sidekick auf das Symbol **Seite** und klicken Sie auf **Seiteneigenschaften**.
 
@@ -124,7 +124,7 @@ So veröffentlichen Sie außerhalb des CQ-Zielordners befindliche Assets:
 
    ![chlimage_1-50](assets/chlimage_1-50.png)
 
-1. Klicken Sie auf die Option zum Prüfen des Scene7-Veröffentlichungsstatus. **** Wenn die Assets unveröffentlicht sind, veröffentlicht AEM das Asset in Scene7. Nach dem Upload befindet sich das Asset im Ad-hoc-Ordner. Standardmäßig befindet sich der Ad-hoc-Ordner unter **Name_des_Unternehmens/CQ5_adhoc**. Sie können dies [bei Bedarf konfigurieren](#configuringtheadhocfolder).
+1. Klicken Sie auf die Option zum Prüfen des Scene7-Veröffentlichungsstatus. **** Wenn die Assets nicht veröffentlicht werden, veröffentlicht Experience Manager das Asset in Scene7. Nach dem Upload befindet sich das Asset im Ad-hoc-Ordner. Standardmäßig befindet sich der Ad-hoc-Ordner unter **Name_des_Unternehmens/CQ5_adhoc**. Sie können dies [bei Bedarf konfigurieren](#configuringtheadhocfolder).
 
    >[!NOTE]
    >
@@ -132,7 +132,7 @@ So veröffentlichen Sie außerhalb des CQ-Zielordners befindliche Assets:
 
 ## Scene7-Komponenten  {#scene-components}
 
-Die folgenden Scene7-Komponenten sind in AEM verfügbar:
+Die folgenden Scene7-Komponenten sind in Experience Manager verfügbar:
 
 * Zoom
 * Flyout (Zoom)
@@ -144,7 +144,7 @@ Die folgenden Scene7-Komponenten sind in AEM verfügbar:
 >
 >Diese Komponenten sind standardmäßig nicht verfügbar und müssen im Designmodus ausgewählt werden, bevor sie verwendet werden können.
 
-Nachdem sie im Designmodus zur Verfügung gestellt wurden, können Sie Komponenten zu Ihrer Seite wie jede andere AEM-Komponente hinzufügen. Noch nicht in Scene7 veröffentlichte Assets werden in Scene7 in einem synchronisierten Ordner oder auf einer Seite oder mit einer Scene7-Cloud-Konfiguration veröffentlicht.
+Nachdem die Komponenten im Designmodus verfügbar gemacht wurden, können Sie sie wie jede andere Experience Manager-Komponente zu Ihrer Seite hinzufügen. Noch nicht in Scene7 veröffentlichte Assets werden in Scene7 in einem synchronisierten Ordner oder auf einer Seite oder mit einer Scene7-Cloud-Konfiguration veröffentlicht.
 
 >[!NOTE]
 >
@@ -162,7 +162,7 @@ Das Hinzufügen einer Scene7-Komponente zu einer Seite entspricht dem Hinzufüge
 
 So fügen Sie eine Scene7-Komponente bzw. einen -Viewer zu einer Seite auf der klassischen Benutzeroberfläche hinzu:
 
-1. Öffnen Sie in AEM die Seite, auf der Sie die Scene7-Komponente hinzufügen möchten.
+1. Öffnen Sie in Experience Manager die Seite, auf der Sie die Scene7-Komponente hinzufügen möchten.
 
 1. Klicken Sie bei nicht verfügbaren Scene7-Komponenten auf das Lineal im Sidekick, um in den Modus **Design** zu wechseln. Klicken Sie auf das ParSys **Bearbeiten** und wählen Sie alle **Scene7**-Komponenten aus, um sie verfügbar zu machen.
 
@@ -180,7 +180,7 @@ Dynamisches Design für Ihre Assets bedeutet, dass Ihre Assets in Abhängigkeit 
 
 So fügen Sie ein interaktives Anzeigeerlebnis zu einer dynamischen Website auf der klassischen Benutzeroberfläche hinzu:
 
-1. Melden Sie sich bei AEM an und stellen Sie sicher, dass Sie die [Adobe Scene7-Cloud-Services konfiguriert](/help/sites-administering/scene7.md#configuring-scene-integration) haben und dass die Scene7-Komponenten verfügbar sind.
+1. Melden Sie sich bei Experience Manager an und stellen Sie sicher, dass Sie [konfigurierte Adobe Scene7-Cloud Services](/help/sites-administering/scene7.md#configuring-scene-integration) haben und dass Scene7-Komponenten verfügbar sind.
 
    >[!NOTE]
    >
@@ -227,7 +227,7 @@ In der HTML5 Flyout-Komponente wird das Asset als geteilter Bildschirm angezeig
 
 ### Bild {#image}
 
-Mit der Scene7-Bildkomponente können Sie Ihren Bildern Scene7-Funktionen hinzufügen. Dazu zählen beispielsweise Scene7-Modifizierer, -Bilder oder Viewer-Vorgaben und Scharfzeichnen. Die Scene7-Bildkomponente ähnelt anderen Bildkomponenten in AEM mit spezieller Scene7-Funktionalität. In diesem Beispiel wurde der Scene7-URL-Modifizierer **&amp;op_invert=1** auf das Bild angewendet.
+Mit der Scene7-Bildkomponente können Sie Ihren Bildern Scene7-Funktionen hinzufügen. Dazu zählen beispielsweise Scene7-Modifizierer, -Bilder oder Viewer-Vorgaben und Scharfzeichnen. Die Scene7-Bildkomponente ähnelt anderen Bildkomponenten in Experience Manager mit speziellen Scene7-Funktionen. In diesem Beispiel wurde der Scene7-URL-Modifizierer **&amp;op_invert=1** auf das Bild angewendet.
 
 ![](do-not-localize/chlimage_1-4.png)
 
@@ -253,7 +253,7 @@ Mit der Scene7-Bildkomponente können Sie Ihren Bildern Scene7-Funktionen hinzuf
 
 ### Bildvorlage {#image-template}
 
-Bei [Scene7-Bildvorlagen](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) handelt es sich um Photoshop-Inhalt mit mehreren Ebenen, der in Scene7 importiert wurde, wo Inhalt und Eigenschaften zwecks Variabilität parametrisiert wurden. Mit der Komponente **Bildvorlage** können Sie Bilder importieren und den Text in AEM dynamisch ändern. Zusätzlich können Sie die Komponente **Bildvorlage** dahingehend konfigurieren, dass sie Werte aus dem Clientkontext übernimmt, damit das Bild jedem Benutzer personalisiert angezeigt wird.
+Bei [Scene7-Bildvorlagen](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) handelt es sich um Photoshop-Inhalt mit mehreren Ebenen, der in Scene7 importiert wurde, wo Inhalt und Eigenschaften zwecks Variabilität parametrisiert wurden. Mit der Komponente **Bildvorlage** können Sie Bilder importieren und den Text dynamisch in Experience Manager ändern. Zusätzlich können Sie die Komponente **Bildvorlage** dahingehend konfigurieren, dass sie Werte aus dem Clientkontext übernimmt, damit das Bild jedem Benutzer personalisiert angezeigt wird.
 
 Klicken Sie auf **Bearbeiten**, um die Komponente zu konfigurieren. Sie können [Einstellungen konfigurieren, die allen Scene7-Komponenten gemeinsam sind](/help/sites-administering/scene7.md#settingscommontoallscene7components) sowie andere in diesem Abschnitt beschriebene Einstellungen.
 
@@ -327,15 +327,15 @@ Beim Verwenden eines adaptiven Videosets mit der Scene7-Videokomponente muss die
 
 ## Scene7-Inhaltsbrowser {#scene-content-browser}
 
-Mit dem Scene7-Inhaltsbrowser können Sie Inhalt aus Scene7 direkt in AEM anzeigen. Um auf den Inhaltsbrowser zuzugreifen, wählen Sie in der Inhaltssuche in der touchoptimierten Benutzeroberfläche die Option **Scene7** oder in der klassischen Benutzeroberfläche das Symbol **S7** aus. Die Funktionalität ist zwischen den beiden Benutzeroberflächen identisch.
+Mit dem Scene7-Inhaltsbrowser können Sie Inhalte aus Scene7 direkt in Experience Manager Ansicht werden. Um auf den Inhaltsbrowser zuzugreifen, wählen Sie in der Inhaltssuche in der touchoptimierten Benutzeroberfläche die Option **Scene7** oder in der klassischen Benutzeroberfläche das Symbol **S7** aus. Die Funktionalität ist zwischen den beiden Benutzeroberflächen identisch.
 
-Wenn Sie über mehrere Konfigurationen verfügen, zeigt AEM standardmäßig die [Standardkonfiguration](/help/sites-administering/scene7.md#configuring-a-default-configuration) an. Sie können unterschiedliche Kategorien direkt im Scene7-Inhaltsbrowser im Dropdownmenü auswählen.
+Wenn Sie mehrere Konfigurationen haben, zeigt Experience Manager standardmäßig die Standardkonfiguration [an. ](/help/sites-administering/scene7.md#configuring-a-default-configuration) Sie können unterschiedliche Kategorien direkt im Scene7-Inhaltsbrowser im Dropdownmenü auswählen.
 
 >[!NOTE]
 >
 >* Im Ad-hoc-Ordner befindliche Assets werden im Scene7-Inhaltsbrowser nicht angezeigt.
 >* Bei [aktivierter sicherer Vorschau](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) werden die auf Scene7 veröffentlichten und nicht veröffentlichten Assets im Scene7-Inhaltsbrowser angezeigt.
->* Wenn die Option **Scene7** oder das **S7**-Symbol nicht angezeigt wird, müssen Sie [Scene7 für die Verwendung mit AEM](/help/sites-administering/scene7.md) konfigurieren.
+>* Wenn die Option **Scene7** oder das Symbol **S7** im Inhaltsbrowser nicht angezeigt wird, müssen Sie Scene7 für die Verwendung mit Experience Manager](/help/sites-administering/scene7.md) konfigurieren.[
 >* Für Videos unterstützt der Scene7-Inhaltsbrowser Folgendes:
    >   * Adaptive Videosets: Container von allen für die bildschirmübergreifende optimierte Wiedergabe erforderlichen Videoausgabeformaten
    >   * Einzelnes MP4-Video
@@ -368,7 +368,7 @@ Standardmäßig werden Assets nach Dateiname angezeigt. Sie können Ergebnisse a
 
 ### Durchsuchen von Scene7-Assets mit dem Inhaltsbrowser {#searching-for-scene-assets-with-the-content-browser}
 
-Das Suche nach Scene7-Assets ähnelt der Suche nach AEM-Assets. Bei der Suche wird jedoch eine Remoteansicht der Assets im Scene7-System angezeigt, anstatt dass sie direkt in AEM importiert werden.
+Die Suche nach Scene7-Assets ähnelt der Suche nach Experience Manager-Assets. Bei der Suche sehen Sie jedoch eine Remote-Ansicht der Assets im Scene7-System, anstatt sie direkt in den Experience Manager zu importieren.
 
 Sie können die klassische oder Touch-optimierte Benutzeroberfläche verwenden, um Assets anzuzeigen und nach ihnen zu suchen. In Abhängigkeit von der Oberfläche unterscheidet sich die Art und Weise der Suche etwas.
 
@@ -380,9 +380,9 @@ Wenn Sie auf einer der Benutzeroberflächen suchen, können Sie nach den folgend
 
 **Ordner/** PfadDer Name des angezeigten Ordners hängt von der ausgewählten Konfiguration ab. Sie können niedrigere Ebenen anzeigen, indem Sie auf das Ordnersymbol klicken, einen Unterordner auswählen und dann auf das Häkchen klicken, um ihn auszuwählen.
 
-Wenn Sie ein Keyword eingeben und einen Ordner auswählen, durchsucht AEM diesen Ordner und die zugehörigen Unterordner. Wenn Sie jedoch bei der Suche keine Keywords eingeben, wird durch die Auswahl des Ordners das Asset nur in diesem Ordner angezeigt und nicht in Unterordnern.
+Wenn Sie einen Suchbegriff eingeben und einen Ordner auswählen, durchsucht Experience Manager diesen Ordner und alle Unterordner. Wenn Sie jedoch bei der Suche keine Keywords eingeben, wird durch die Auswahl des Ordners das Asset nur in diesem Ordner angezeigt und nicht in Unterordnern.
 
-Standardmäßig durchsucht AEM den ausgewählten Ordner und alle Unterordner.
+Standardmäßig durchsucht Experience Manager den ausgewählten Ordner und alle Unterordner.
 
 ![chlimage_1-66](assets/chlimage_1-66.png)
 
@@ -394,7 +394,7 @@ Standardmäßig durchsucht AEM den ausgewählten Ordner und alle Unterordner.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
-**Asset-** TypIm Scene7-Browser können Sie die Ergebnisse filtern, um Folgendes einzuschließen: Bilder, Vorlagen, Videos und adaptive Videosets. Wenn Sie keinen Asset-Typ auswählen, durchsucht AEM standardmäßig alle Asset-Typen.
+**Asset-** TypIm Scene7-Browser können Sie die Ergebnisse filtern, um Folgendes einzuschließen: Bilder, Vorlagen, Videos und adaptive Videosets. Wenn Sie keinen Asset-Typ auswählen, durchsucht Experience Manager standardmäßig alle Asset-Typen.
 
 ![chlimage_1-69](assets/chlimage_1-69.png)
 
@@ -404,10 +404,10 @@ Standardmäßig durchsucht AEM den ausgewählten Ordner und alle Unterordner.
    >
    >
 * Beim Durchsuchen eines Videos suchen Sie nach einem einzelnen Ausgabeformat. Die Ergebnisse geben das ursprüngliche (nur *.mp4) und das kodierte Ausgabeformat zurück.
-* Beim Durchsuchen eines adaptiven Videosets suchen Sie den Ordner und alle Unterordner, allerdings nur, wenn Sie der Suche einen Suchbegriff hinzugefügt haben. Wenn Sie kein Keyword hinzugefügt haben, durchsucht AEM nicht die Unterordner.
+* Beim Durchsuchen eines adaptiven Videosets suchen Sie den Ordner und alle Unterordner, allerdings nur, wenn Sie der Suche einen Suchbegriff hinzugefügt haben. Wenn Sie keinen Suchbegriff hinzugefügt haben, sucht Experience Manager nicht in den Unterordnern.
 
 
 
-**Veröffentlichungsstatus** Sie können nach Assets basierend auf dem Veröffentlichungsstatus filtern: Veröffentlichung rückgängig gemacht oder veröffentlicht. Wenn Sie keinen Veröffentlichungsstatus auswählen, durchsucht AEM standardmäßig alle Veröffentlichungsstatus.
+**Veröffentlichungsstatus** Sie können nach Assets basierend auf dem Veröffentlichungsstatus filtern: Veröffentlichung rückgängig gemacht oder veröffentlicht. Wenn Sie keinen Veröffentlichungsstatus auswählen, durchsucht Experience Manager standardmäßig alle Veröffentlichungsstatus.
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
