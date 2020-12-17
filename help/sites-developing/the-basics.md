@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 translation-type: tm+mt
-source-git-commit: d621a612556f0bea032444c2e07be101868b1905
+source-git-commit: 28fdb57f51a5bd97ce78b626db86f4a59de6f0be
 workflow-type: tm+mt
-source-wordcount: '3371'
+source-wordcount: '3386'
 ht-degree: 76%
 
 ---
@@ -162,10 +162,11 @@ Einige andere zu beachtende Punkte sind:
 * wenn die Methode (GET, POST) benötigt wird, wird sie gemäß der HTTP-Spezifikation, z. B. jobs.POST.esp (siehe unten) in Großbuchstaben angegeben
 * verschiedene Skript-Engines werden unterstützt:
 
-   * `.esp, .ecma`: ECMAScript (JavaScript)-Seiten (serverseitige Ausführung)
-   * `.jsp`: Java-Server-Seiten (serverseitige Ausführung)
-   * `.java`: Java-Servlet-Compiler (serverseitige Ausführung)
-   * `.jst`: JavaScript-Vorlagen (clientseitige Ausführung)
+   * HTML (HTML-Vorlagensprache - Adobe Experience Managers bevorzugtes und empfohlenes serverseitiges Vorlagensystem für HTML): `.html`
+   * ECMAScript (JavaScript)-Seiten (serverseitige Ausführung): `.esp, .ecma`
+   * Java Server Pages (serverseitige Ausführung): `.jsp`
+   * Java Servlet Compiler (serverseitige Ausführung): `.java`
+   * JavaScript-Vorlagen (clientseitige Ausführung): `.jst`
 
 Die Liste der von der angegebenen Instanz von AEM unterstützten Skriptmaschinen wird in der Felix Management Console ( `http://<host>:<port>/system/console/slingscripting`) aufgelistet.
 
@@ -400,7 +401,7 @@ Um beispielsweise die übergeordnete Seite einer Ressource zu erhalten, können 
 
 Page myPage = pageManager.getContainingPage(myResource);
 
-pageManager ist das Seitenmanagerobjekt und myResource ein Ressourcenobjekt. Weitere Informationen zu den vom Seitenmanager bereitgestellten Methoden finden Sie in den [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html).
+pageManager ist das Seitenmanagerobjekt und myResource ein Ressourcenobjekt. Weitere Informationen zu den vom Seitenmanager bereitgestellten Methoden finden Sie in den [Javadocs](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## Struktur innerhalb des Repositorys {#structure-within-the-repository}
 
