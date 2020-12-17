@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: e9d5a7acad04d841cbc7d62050163f3de998fab6
 workflow-type: tm+mt
 source-wordcount: '1728'
 ht-degree: 4%
@@ -70,9 +70,9 @@ Wählen Sie den gewünschten Stil aus, der auf die Vorlage angewendet werden sol
 
 (Optional) Laden Sie ein Bannerbild hoch, das auf den Seiten der Site angezeigt wird. Das Banner wird am linken Rand des Browsers zwischen dem Community-Site-Header und dem Menü (Navigationslinks) fixiert. Die Bannerhöhe wird auf 120 Pixel zugeschnitten. Die Größe des Banners wird nicht an die Breite des Browsers und die Höhe von 120 Pixel angepasst.
 
-![chlimage_1-449](assets/chlimage_1-449.png)
+![site-branding1](assets/site-branding1.png)
 
-![chlimage_1](assets/chlimage_1.jpeg)
+![site-branding2](assets/site-branding2.png)
 
 Wählen Sie **Weiter** aus.
 
@@ -130,7 +130,7 @@ Beispiel:
 
 Übernehmen Sie die globalen Standardeinstellungen für [Moderation](/help/communities/sites-console.md#moderation) Benutzergenerierte Inhalte (UGC).
 
-![chlimage_1-452](assets/chlimage_1-452.png)
+![moderation1](assets/moderation1.png)
 
 #### ANALYTICS {#analytics}
 
@@ -138,7 +138,7 @@ Wählen Sie aus der Dropdownliste das für diese Community-Site konfigurierte An
 
 Die im Screenshot angezeigte Auswahl ist das Framework-Beispiel aus der `Communities`Konfigurationsdokumentation.[](/help/communities/analytics.md#aem-analytics-framework-configuration)
 
-![chlimage_1-454](assets/chlimage_1-454.png)
+![Analyse](assets/analytics.png)
 
 #### TRANSLATION {#translation}
 
@@ -147,7 +147,7 @@ Die [Übersetzungseinstellungen](/help/communities/sites-console.md#translation)
 * **Maschinelle Übersetzung zulassen**
 * Standardeinstellungen verwenden
 
-![chlimage_1-456](assets/chlimage_1-456.png)
+![Übersetzung](assets/translation.png)
 
 #### AKTIVIERUNG {#enablement}
 
@@ -163,7 +163,7 @@ Für eine Aktivierungsgemeinschaft ist es erforderlich, einen oder mehrere Commu
 * **Marketing Cloud-Organisations-ID**
 (optional) Die ID für ein Adobe Analytics-Konto, die erforderlich ist, wenn  [Video Heartbeat ](/help/communities/analytics.md#video-heartbeat-analytics) Analytics in den Berichte für die Aktivierung aufgenommen wird.
 
-![chlimage_1-457](assets/chlimage_1-457.png)
+![Aktivierung](assets/enablement.png)
 
 Wählen Sie **Weiter** aus.
 
@@ -171,7 +171,7 @@ Wählen Sie **Weiter** aus.
 
 Wählen Sie **Erstellen.**
 
-![chlimage_1-458](assets/chlimage_1-458.png)
+![vorschau](assets/preview.png)
 
 Nach Abschluss des Vorgangs wird der Ordner für die neue Site in der Konsole Communities > Sites angezeigt.
 
@@ -218,11 +218,11 @@ Beachten Sie, dass UGC nicht im Site-Paket enthalten ist.
 
 Wählen Sie das Symbol Welt, um die Community-Site zu veröffentlichen.
 
-![chlimage_1-465](assets/chlimage_1-465.png)
+![publish-site](assets/publish-site.png)
 
 Es wird ein Hinweis geben, dass die Site veröffentlicht wurde.
 
-![chlimage_1-466](assets/chlimage_1-466.png)
+![site-published](assets/site-published.png)
 
 ## Community-Benutzer und -Benutzergruppen {#community-users-user-groups}
 
@@ -251,7 +251,7 @@ In diesem Beispiel wird die Gruppe `Community Ski Class` als Mitglied der Gruppe
 
 * Wählen Sie **Speichern** aus
 
-![chlimage_1-418](assets/chlimage_1-418.png)
+![edit-group-settings](assets/edit-group-settings.png)
 
 ## Konfigurationen bei Veröffentlichung {#configurations-on-publish}
 
@@ -317,13 +317,13 @@ Erste Schritte:
 >
 >Zur Deaktivierung müssen Sie den `sling:match`-Eigenschaftswert einfach mit einem &#39;x&#39; - `xlocalhost.4503/$` - und **Save All** vorlegen.
 
-![chlimage_1-364](assets/chlimage_1-364.png)
+![change-default-homepage](assets/change-default-homepage.png)
 
 #### Fehlerbehebung: Fehler beim Speichern der Map {#troubleshooting-error-saving-map}
 
 Wenn Änderungen nicht gespeichert werden können, stellen Sie sicher, dass der Knotenname `localhost.4503` mit einem Punkt-Trennzeichen und nicht `localhost:4503` mit einem Doppelpunkt-Trennzeichen ist, da `localhost` kein gültiges Namensraum-Präfix ist.
 
-![chlimage_1-365](assets/chlimage_1-365.png)
+![error-map](assets/error-map.png)
 
 #### Fehlerbehebung: Fehler bei Umleitung {#troubleshooting-fail-to-redirect}
 
@@ -361,11 +361,11 @@ Wählen Sie das STRUKTURbedienfeld aus, um einen Katalog hinzuzufügen oder eine
 
 * Wählen Sie **Speichern** aus.
 
-![chlimage_1-299](assets/chlimage_1-299.png)
+![modify-site-structure](assets/modify-site-structure.png)
 
 Verwenden Sie das Positionssymbol, um die Katalogfunktion nach den Zuweisungen an die zweite Position zu verschieben.
 
-![chlimage_1-300](assets/chlimage_1-300.png)
+![move-catalog-func](assets/move-catalog-func.png)
 
 Wählen Sie **Speichern** in der oberen rechten Ecke, um die Änderungen an der Community-Site zu speichern.
 
