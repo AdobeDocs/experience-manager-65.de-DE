@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 translation-type: tm+mt
-source-git-commit: 7f1ae2d4ab361bc039c1098daa0ef944ec9df639
+source-git-commit: a0673c23588cba263c292680637b16a18ef1431c
 workflow-type: tm+mt
-source-wordcount: '6648'
+source-wordcount: '6658'
 ht-degree: 73%
 
 ---
@@ -388,8 +388,8 @@ In beiden Fällen können Sie die erwartete Anzahl von Transaktionen pro Sekunde
 
 | Komponente | Testtyp | Nein. von Benutzern | Tx/s (erwartet) | Tx/s (getestet) | Beschreibung |
 |---|---|---|---|---|---|
-| Homepage Einzelbenutzer | Durchschnitt | 1 | 1 |  |  |
-|  | Spitze | 3 | 3 |  |  |
+| Homepage Einzelbenutzer | Durchschnitt | 1 | 3 |  |  |
+|  | Spitze | 1 | 3 |  |  |
 | Homepage 100 Benutzer | Durchschnitt | 100 | 1 |  |  |
 |  | Spitze | 100 | 1 |  |
 
@@ -400,10 +400,10 @@ Durch das Testen der kombinierten Komponenten erhalten Sie eine genauere Darstel
 | Szenario | Komponente | Nein. von Benutzern | Tx/s (erwartet) | Tx/s (getestet) | Beschreibung |
 |---|---|---|---|---|---|
 | Gemischter Durchschnitt | Homepage | 10 | 1 |  |  |
-|  | Suchen | 10 | 3 |  |  |
+|  | Suchen | 10 | 1 |  |  |
 |  | Nachrichten | 10 | 2 |  |  |
 |  | Ereignisse | 10 | 1 |  |  |
-|  | Aktivierungen | 10 | 3 |  | Simulation des Autorenverhaltens. |
+|  | Aktivierungen | 10 | 1 |  | Simulation des Autorenverhaltens. |
 | Gemischter Spitzenwert | Homepage | 100 | 5 |  |  |
 |  | Suchen | 50 | 5 |  |  |
 |  | Nachrichten | 100 | 10 |  |  |
@@ -436,7 +436,7 @@ Bei der Planung dieser Tests sollten Sie bedenken, dass nicht alle Szenarien reg
 | Überladung der Suchkomponente | Suche nach globalen Platzhaltern (Sternchen) | 10 | 1 |  | Nur &amp;ast;&amp;ast;&amp;ast; durchsucht werden. |
 |  | Wort anhalten | 20 | 2 |  | Suchen nach einem Stoppwort. |
 |  | Leere Zeichenfolge | 10 | 3 |  | Suchen nach einer leeren Zeichenfolge. |
-|  | Sonderzeichen | 10 | 1 |  | Suchen nach Sonderzeichen |
+|  | Sonderzeichen | 10 | 3 |  | Suchen nach Sonderzeichen |
 
 #### Belastungstests {#endurance-tests}
 
@@ -444,11 +444,11 @@ Gewisse Probleme treten erst auf, wenn das System über einen längeren Zeitraum
 
 | Szenario | Testtyp | Nein. von Benutzern | Tx/s (erwartet) | Tx/s (getestet) | Beschreibung |
 |---|---|---|---|---|---|
-| Dauerprüfung (72 Stunden) | Homepage | 10 | 3 |  |  |
-|  | Suchen | 10 | 3 |  |  |
+| Dauerprüfung (72 Stunden) | Homepage | 10 | 1 |  |  |
+|  | Suchen | 10 | 1 |  |  |
 |  | Nachrichten | 20 | 2 |  |  |
 |  | Ereignisse | 10 | 1 |  |  |
-|  | Aktivierungen | 1 | 1 |  | Simulation des Autorenverhaltens. |
+|  | Aktivierungen | 3 | 3 |  | Simulation des Autorenverhaltens. |
 
 ### Optimierung {#optimization}
 
@@ -676,11 +676,11 @@ Die AEM Konfiguration legt das Repository und den Datenspeicher auf demselben lo
 
 In der folgenden Tabelle werden die für die Sicherungs-Benchmarks verwendeten Datenmengen dargestellt. Zunächst wird der ursprüngliche Inhalt installiert, danach werden weitere bekannte Datenmengen hinzugefügt, um die Größe des gesicherten Inhalts zu steigern. Sicherungen werden in Inkrementen erstellt, um einen starken Inhaltszuwachs und die produzierte Tagesmenge nachzubilden. Die Verteilung der Inhalte (Seiten, Bilder, Tags) entspricht in etwa einer realistischen Asset-Zusammensetzung. Seiten, Bilder und Tags sind auf maximal 800 untergeordnete Seiten beschränkt. Jede Seite enthält Titel-, Flash-, Text/Bild-, Video-, Diashow-, Formular-, Tabellen-, Cloud- und Karussellkomponenten. Bilder werden aus einem Pool von 400 Dateien hochgeladen, deren Größe von 37 KB bis 594 KB reicht.
 
-|Inhalt|Knoten|Seiten|Bilder|Tags|
+| Inhalt | Knoten | Seiten | Bilder | Tags |
 |---|---|---|---|---|
-|Basisinstallation|69 610|562|256|237|
-|Kleiner Inhalt für inkrementelle Sicherung||+100|+2|+2|
-| Großer Inhalt für vollständige Sicherung||+10 000|+100|+100|
+| Basisinstallation | 69.610 | 562 | 256 | 237 |
+| Kleine Inhalte für die inkrementelle Sicherung |  | +100 | +2 | +2 |
+| Große Inhalte für vollständige Sicherung |  | +10 000 | +100 | +100 |
 
 Die Backup-Benchmark wird bei jeder Wiederholung mit den zusätzlichen Inhaltssätzen wiederholt.
 
