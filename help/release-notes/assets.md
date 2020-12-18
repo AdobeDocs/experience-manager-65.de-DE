@@ -2,10 +2,10 @@
 title: Versionshinweise von [!DNL Adobe Experience Manager Assets] 6.5.
 description: Die neuen Funktionen und Erweiterungen zu [!DNL Adobe Experience Manager] 6.5 [!DNL Assets].
 translation-type: tm+mt
-source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 43%
+source-wordcount: '897'
+ht-degree: 42%
 
 ---
 
@@ -68,7 +68,7 @@ In großen Unternehmen kann die zur Erstellung von Websites erforderliche Infras
 
 [!DNL Dynamic Media] bietet erweiterte Rich-Media-Authoring- und Versände,  [!DNL Experience Manager Assets] um innovative und personalisierte Erlebnisse zu fördern. Durch das Hochladen eines einzigen hochwertigen Übergeordnet-Assets und die Verwendung unseres erweiterten Cloud-Renderings und der Viewer können Sie jederzeit eine beliebige Kombination von Darstellungen bereitstellen, um die Medienstrategie Ihres Unternehmens zu unterstützen.
 
-Weitere Informationen zu neuen Funktionen finden Sie unter [Versionshinweise zu dynamischen Medien](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/release-notes/s7rn2017.html).[!DNL Dynamic Media]
+Weitere Informationen zu neuen Funktionen finden Sie unter [Dynamic Media Versionshinweise](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html).[!DNL Dynamic Media]
 
 ### 360-Video-Unterstützung {#video-support}
 
@@ -80,7 +80,7 @@ Sie können nun die Miniaturen für Ihre Video-Assets mithilfe von Frames aus de
 
 ### Verbesserte Barrierefreiheit {#accessibility-enhancements}
 
-[!DNL Dynamic Media] Viewer unterstützen jetzt erweiterte Barrierefreiheitsfunktionen wie Aria-Unterstützung, Bildschirmlesehilfen und Alt-Text. Weitere Informationen finden Sie in den [Versionshinweisen zu Dynamic Media-Viewern](https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/library/home.html).
+[!DNL Dynamic Media] Viewer unterstützen jetzt erweiterte Barrierefreiheitsfunktionen wie Aria-Unterstützung, Bildschirmlesehilfen und Alt-Text. Weitere Informationen finden Sie in den [Versionshinweisen zu Dynamic Media-Viewern](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 ## Verbessertes Sucherlebnis {#experience-enhancement-for-searching}
 
