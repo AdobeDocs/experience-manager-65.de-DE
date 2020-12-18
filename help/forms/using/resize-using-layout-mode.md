@@ -2,9 +2,9 @@
 title: Verwenden Sie den Layoutmodus, um die Größe von Komponenten für adaptive Formulare zu ändern
 description: 'Definieren der Position von Komponenten mithilfe des im Layoutmodus verfügbaren interaktiven Rasters '
 translation-type: tm+mt
-source-git-commit: c62ad355469a95db89db44c34bb6df72d8f4bf77
+source-git-commit: 77fef5a1926c733abdaf01a19d9fdfc37323566e
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1073'
 ht-degree: 2%
 
 ---
@@ -31,14 +31,16 @@ Wählen Sie **Layout** aus der Dropdown-Liste, die oben in der Authoring-Oberfl�
 1. Tippen Sie im Layoutmodus auf die zu ändernde Komponente. Die blauen Punkte werden am Beginn und am Ende des reaktionsfähigen Rasters angezeigt.
 1. Ziehen Sie die blauen Punkte per Drag &amp; Drop, um die Position der Komponente im interaktiven Raster zu definieren.
 
-   ![Größe mithilfe des Layoutmodus ändern](assets/layout_mode_resize_new_updated.png)
+   ![Größe mithilfe des Layoutmodus ändern](assets/layout_mode_resize_new_updated1.png)
 
    Die Symbolleiste, die nach dem Tippen auf Komponenten angezeigt wird, besteht aus den folgenden Optionen:
 
    * **Übergeordnet:** Wählen Sie das übergeordnete Element einer Komponente aus.
    * **Zu neuer Zeile schwenken:** Verschiebt die Komponente zur nächsten Zeile, wenn sich mehrere Komponenten in derselben Zeile befinden.
 
-   Mit der Option **[!UICONTROL Haltepunkt-Layout zurücksetzen]** ( ![Haltepunkt zurücksetzen](assets/reverttopreviouslypublishedversion.png)) können Sie alle Änderungen an der Größe rückgängig machen und das Standardlayout auf das Bedienfeld anwenden, das skalierte Komponenten enthält. Tippen Sie auf das übergeordnete Element der Größenanpassung, um die Option Ansicht.
+   Darüber hinaus können Sie alle Änderungen an der Größe rückgängig machen und das Standardlayout auf das Bedienfeld mit skalierten Komponenten anwenden, indem Sie die Option **[!UICONTROL Haltepunktlayout zurücksetzen]** ( ![Haltepunkt zurücksetzen](assets/reverttopreviouslypublishedversion.png)) verwenden. Tippen Sie auf das übergeordnete Element der Größenanpassung, um die Option Ansicht.
+
+   Sie können auf die Komponente tippen und mit der Option **[!UICONTROL Haltepunktlayout zurücksetzen]** alle Änderungen der Größe rückgängig machen und das Standardlayout auf Komponentenebene anwenden.
 
    >[!NOTE]
    >
