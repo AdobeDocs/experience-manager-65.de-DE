@@ -8,10 +8,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 translation-type: tm+mt
-source-git-commit: fed2e6474f710fd02cf27946252896ac33f3b256
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 96%
+source-wordcount: '324'
+ht-degree: 95%
 
 ---
 
@@ -32,7 +32,7 @@ Sie können jederzeit bei der Vorschau eines Bildes eine Bildvorgabe darauf anwe
 
 >[!NOTE]
 >
->Im Modus &quot;Dynamische Medien - Scene7&quot;werden Bildvorgaben nur für Bild-Assets unterstützt.
+>Im Dynamic Media-Scene7-Modus werden Bildvorgaben nur für Bild-Assets unterstützt.
 
 **So wenden Sie Dynamic Media-Bildvorgaben an**
 
@@ -57,5 +57,5 @@ Sie können jederzeit bei der Vorschau eines Bildes eine Bildvorgabe darauf anwe
    >
    >Wenn das Asset *und* die Bildvorgabe noch nicht veröffentlicht wurden, ist die Schaltfläche **[!UICONTROL URL]** (bzw. die Schaltflächen **[!UICONTROL URL]** und **[!UICONTROL RES]**, falls zutreffend) nicht verfügbar.
    >
-   >Beachten Sie auch, dass Bildvorgaben automatisch auf einem S7-Server für Dynamic Media veröffentlicht werden.
+   >Beachten Sie auch, dass Bildvorgaben automatisch auf einem -Server für Dynamic Media veröffentlicht werden.
 
