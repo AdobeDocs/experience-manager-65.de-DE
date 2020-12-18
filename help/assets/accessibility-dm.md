@@ -1,14 +1,14 @@
 ---
-title: Barrierefreiheit in dynamischen Medien
-description: Informationen zur Barrierefreiheit in Viewern für dynamische Medien und dynamische Medien
+title: Zugänglichkeit in Dynamic Media
+description: Weitere Informationen zur Barrierefreiheitsunterstützung in Dynamic Media- und Dynamic Media-Viewern
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 696aaa54007e4a78fe6b07d8ba65660595286dca
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 1%
+source-wordcount: '578'
+ht-degree: 0%
 
 ---
 
@@ -52,15 +52,15 @@ Siehe [Bearbeiten des intelligenten Zuschnitts oder intelligenten Farbfelds eine
 
 Alle standardmäßigen [!DNL Dynamic Media]-Viewer-Komponenten unterstützen die Barrierefreiheit der Tastatur für Ihre Kunden.
 
-Siehe [Tastaturzugriff und Navigation](https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) im Viewer-Referenzhandbuch für dynamische Medien.
+Siehe [Tastaturzugriff und Navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) im Dynamic Media Viewer-Referenzhandbuch.
 
 ## Unterstützung von unterstützender Technologie in [!DNL Dynamic Media] Viewern {#assistive-technology-support-for-dm-viewers}
 
 Alle [!DNL Dynamic Media]-Viewer-Komponenten unterstützen ARIA-Rollen und -Attribute (Accessible Rich Internet Applications), um die Integration mit Hilfstechnologien wie Bildschirmlesehilfen zu verbessern.
-Weitere Informationen finden Sie im Hilfethema **Unterstützung bei der Hilfstechnologie** im Abschnitt zum Anpassen von Viewern im Referenzhandbuch für dynamische Medien. Siehe z. B. [Unterstützung bei der Hilfstechnologie](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) für den Video-Viewer oder [Unterstützung bei der Hilfstechnologie](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) für den interaktiven Bild-Viewer.
+Weitere Informationen finden Sie im Hilfethema **Support für Hilfstechnologien** im Dynamic Media Viewer-Referenzhandbuch. Siehe z. B. [Unterstützung bei der Hilfstechnologie](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) für den Video-Viewer oder [Unterstützung bei der Hilfstechnologie](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) für den interaktiven Bild-Viewer.
 
 >[!MORELIKETHIS]
 >
 >* [Zugänglichkeit für Adoben](https://www.adobe.com/accessibility.html)
->* [Zugänglichkeit in [!DNL Experience Manager Assets]](/help/assets/accessibility.md)
+>* [Barrierefreiheit in  [!DNL Experience Manager Assets]](/help/assets/accessibility.md)
 
