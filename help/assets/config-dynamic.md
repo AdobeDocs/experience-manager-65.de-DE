@@ -10,10 +10,10 @@ discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '7912'
-ht-degree: 62%
+source-wordcount: '7835'
+ht-degree: 63%
 
 ---
 
@@ -45,11 +45,11 @@ Informieren Sie sich über die Verwendung von [Videos](/help/assets/video.md) in
 >
 Sie werden unter [Überwachung und Pflege Ihrer AEM](/help/sites-deploying/monitoring-and-maintaining.md) dokumentiert.
 
-Die hybride Veröffentlichung und Bereitstellung ist eine Kernfunktion der Erweiterung Dynamic Media für Adobe Experience Manager. Mit der Hybrid-Veröffentlichung können Sie dynamische Medien-Assets wie Bilder, Sets und Videos aus der Cloud und nicht aus den AEM veröffentlichen.
+Die hybride Veröffentlichung und Bereitstellung ist eine Kernfunktion der Erweiterung Dynamic Media für Adobe Experience Manager. Mit der Hybrid-Veröffentlichung können Sie Dynamic Media-Assets wie Bilder, Sets und Videos aus der Cloud und nicht aus den AEM veröffentlichen.
 
 Andere Inhalte, z. B. Dynamic Media-Viewer, Seiten von Websites und statischer Inhalt, werden weiterhin über die AEM-Veröffentlichungsknoten bereitgestellt.
 
-Wenn Sie Kunde von Dynamic Media sind, müssen Sie Hybrid-Versand als Versand für alle dynamischen Medieninhalte verwenden.
+Wenn Sie Dynamic Media-Kunde sind, müssen Sie Hybrid-Versand als Versand-Mechanismus für alle Dynamic Media-Inhalte verwenden.
 
 ## Hybride Veröffentlichungsarchitektur für Videos {#hybrid-publishing-architecture-for-videos}
 
@@ -63,7 +63,7 @@ Wenn Sie Kunde von Dynamic Media sind, müssen Sie Hybrid-Versand als Versand f�
 
 In den folgenden Konfigurationsaufgaben werden die hier angegebenen Begriffe verwendet:
 
-| **Begriff** | **Dynamische Medien aktiviert** | **Beschreibung** |
+| **Begriff** | **Dynamic Media aktiviert** | **Beschreibung** |
 |---|---|---|
 | AEM Autorenknoten | Weißes Häkchen in einem grünen Kreis | Der Autorenknoten, den Sie unter &quot;On-Premise&quot;oder über Managed Services bereitstellen. |
 | Veröffentlichungsknoten AEM | Weiß &quot;X&quot; in einem roten Quadrat. | Der Veröffentlichungsknoten, den Sie unter &quot;On-Premise&quot;oder über Managed Services bereitstellen. |
@@ -146,9 +146,9 @@ Sie können Dynamic Media nur für Bilder, nur für Video oder sowohl für Bilde
 >
 >Durch das Aktivieren von Dynamic Media per Ausführungsmodus wird die Funktionalität in AEM 6.1 und AEM 6.0 für die Teile ersetzt, für die Sie Dynamic Media aktiviert haben, indem das Flag `dynamicMediaEnabled` auf **[!UICONTROL true festgelegt wird.]** Dieses Flag hat in AEM 6.2 und höher keine Funktion. Außerdem ist es nicht erforderlich, den Schnellstartvorgang neu zu starten, um Dynamic Media zu aktivieren.
 
-Durch Aktivierung der Option &quot;Dynamische Medien&quot;stehen die Funktionen für dynamische Medien in der Benutzeroberfläche zur Verfügung. Jedes hochgeladene Bild-Asset erhält eine Darstellung *cqdam.pyramid.tiff*, die für den schnellen Versand dynamischer Bilddarstellungen verwendet wird. Diese PTIFF-Dateien bieten erhebliche Vorteile, beispielsweise 1) die Möglichkeit, nur ein einziges Primärquellbild zu verwalten und ohne zusätzliche Datenspeicherung unendliche Darstellungen zu erstellen und 2) interaktive Visualisierungen wie Zoomen, Schwenken, Drehen usw. zu verwenden.
+Wenn Sie Dynamic Media aktivieren, stehen die dynamischen Medienfunktionen in der Benutzeroberfläche zur Verfügung. Jedes hochgeladene Bild-Asset erhält eine *cqdam.pyramid.tiff*-Darstellung, die für den schnellen Versand dynamischer Bilddarstellungen verwendet wird. Diese PTIFF-Dateien bieten erhebliche Vorteile, beispielsweise 1) die Möglichkeit, nur ein einziges Primärquellbild zu verwalten und ohne zusätzliche Datenspeicherung unendliche Darstellungen zu erstellen und 2) interaktive Visualisierungen wie Zoomen, Schwenken, Drehen usw. zu verwenden.
 
-Wenn Sie in AEM Dynamic Media Classic (Scene7) verwenden möchten, sollten Sie dynamische Medien nur dann aktivieren, wenn Sie ein [spezifisches Szenario](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media) verwenden. Dynamic Media ist deaktiviert, sofern Sie Dynamic Media nicht per Ausführungsmodus aktivieren.
+Wenn Sie Dynamic Media Classic (Scene7) in AEM verwenden möchten, sollten Sie Dynamic Media nur aktivieren, wenn Sie ein [spezifisches Szenario](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media) verwenden. Dynamic Media ist deaktiviert, sofern Sie Dynamic Media nicht per Ausführungsmodus aktivieren.
 
 Zum Aktivieren von Dynamic Media müssen Sie den Ausführungsmodus für Dynamic Media entweder über die Befehlszeile oder den Schnellstart-Dateinamen aktivieren.
 
@@ -174,18 +174,18 @@ Zum Aktivieren von Dynamic Media müssen Sie den Ausführungsmodus für Dynamic 
 
    >[!NOTE]
    >
-   >Informationen zur Fehlerbehebung bei Problemen mit dynamischen Medien finden Sie in den folgenden Protokollen im Ordner `crx-quickstart/logs/`:
+   >Informationen zum Beheben von Problemen mit Dynamic Media finden Sie in den folgenden Protokollen im Ordner `crx-quickstart/logs/`:
    >
    >* ImageServer-&lt;PortId>-&lt;JJJJ>&lt;TT>.log - Das ImageServer-Protokoll enthält Statistiken und Analyseinformationen, die zur Analyse des Verhaltens des internen ImageServer-Prozesses verwendet werden.
 
    Beispiel für einen Namen einer Image-Server-Protokolldatei: `ImageServer-57346-2020-07-25.log`
-   * s7access-&lt;yyy>&lt;mm>&lt;dd>.log - Das s7access-Protokoll zeichnet jede Anforderung auf, die über `/is/image` und `/is/content` an dynamische Medien gesendet wurde.
+   * s7access-&lt;yyyy>&lt;mm>&lt;dd>.log - Das s7access-Protokoll zeichnet jede Anforderung auf, die über `/is/image` und `/is/content` an Dynamic Media gesendet wurde.
 
-   Diese Protokolle werden nur verwendet, wenn Dynamic Media aktiviert ist. Sie sind nicht im Paket **Download Full** enthalten, das von der `system/console/status-Bundlelist`-Seite generiert wird. Wenn Sie beim Kundensupport ein Problem mit dynamischen Medien haben, hängen Sie beide Protokolle an das Problem an.
+   Diese Protokolle werden nur verwendet, wenn Dynamic Media aktiviert ist. Sie sind nicht im Paket **Download Full** enthalten, das von der `system/console/status-Bundlelist`-Seite generiert wird. Wenn Sie den Kundensupport anrufen, wenn ein Dynamic Media-Problem vorliegt, hängen Sie beide Protokolle an das Problem an.
 
 ### Wenn Sie AEM auf einen anderen Port oder Kontextpfad installiert haben ... {#if-you-installed-aem-to-a-different-port-or-context-path}
 
-Wenn Sie [AEM auf einem Anwendungsserver](/help/sites-deploying/application-server-install.md) bereitstellen und dynamische Medien aktiviert haben, müssen Sie die Domäne **self** im Externalisierer konfigurieren. Andernfalls funktioniert die Generierung von Miniaturansichten für Dynamic Media Assets nicht richtig.
+Wenn Sie [AEM auf einem Anwendungsserver](/help/sites-deploying/application-server-install.md) bereitstellen und Dynamic Media aktiviert haben, müssen Sie die Domäne **self** im Externalisierer konfigurieren. Andernfalls funktioniert die Generierung von Miniaturansichten für Dynamic Media Assets nicht richtig.
 
 Falls Sie den Schnellstart für einen anderen Port oder Kontextpfad ausführen, müssen Sie die Domäne **self** ebenfalls ändern.
 
@@ -220,12 +220,12 @@ Um dynamische Medien nach der Aktivierung zu deaktivieren, entfernen Sie das Fla
 1. Anfrage `https://localhost:4502/is/image`. Sie erhalten eine Nachricht, dass Dynamic Media deaktiviert wurde.
 
    >[!NOTE]
-   Nachdem der Ausführungsmodus für dynamische Medien deaktiviert wurde, wird der Workflow-Schritt, der die Darstellung `cqdam.pyramid.tiff` generiert, automatisch übersprungen. Hierbei werden auch die Unterstützung der dynamischen Wiedergabeformate und andere Dynamic Media-Funktionen deaktiviert.
+   Nachdem der Dynamic Media-Ausführungsmodus deaktiviert wurde, wird der Workflow-Schritt, der die Darstellung `cqdam.pyramid.tiff` generiert, automatisch übersprungen. Hierbei werden auch die Unterstützung der dynamischen Wiedergabeformate und andere Dynamic Media-Funktionen deaktiviert.
    Achtung: Wenn Sie den Dynamic Media-Ausführungsmodus nach der Konfiguration des AEM-Servers deaktivieren, sind alle mit diesem Ausführungsmodus hochgeladenen Elemente ungültig.
 
 ## (Optional) Migration von Dynamic Media-Vorgaben und -Konfigurationen von 6.3 zu 6.5 ohne Ausfallzeit {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
-Wenn Sie AEM Dynamic Media von 6.3 auf 6.5 aktualisieren (was jetzt die Möglichkeit umfasst, keine Ausfallzeiten bereitzustellen), müssen Sie den folgenden Befehl &quot;curl&quot;ausführen, um alle Ihre Vorgaben und Konfigurationen in der CRXDE Lite von `/etc` auf `/conf` zu migrieren.
+Wenn Sie ein Upgrade AEM Dynamic Media von 6.3 auf 6.5 durchführen (was jetzt die Möglichkeit umfasst, keine Ausfallzeiten bereitzustellen), müssen Sie den folgenden Befehl &quot;curl&quot;ausführen, um alle Ihre Vorgaben und Konfigurationen in der CRXDE Lite von `/etc` auf `/conf` zu migrieren.
 
 **Hinweis**: Wenn Sie Ihre AEM Instanz im Kompatibilitätsmodus ausführen, d. h. das Kompatibilitätspaket installiert ist, müssen Sie diese Befehle nicht ausführen.
 
@@ -239,14 +239,14 @@ Um benutzerdefinierte Viewer-Vorgaben und Konfigurationen zu migrieren, die Sie 
 
 ## Konfigurieren der Bildreplikation {#configuring-image-replication}
 
-Image Versand für dynamische Medien funktioniert, indem Bild-Assets, einschließlich Videominiaturen, von AEM Author aus veröffentlicht und in den On-Demand-Replikationsdienst der Adobe repliziert werden (Replizierungsdienst-URL). Assets werden dann über den On-Demand-Image-Versand-Dienst (die Image-Dienst-URL) bereitgestellt.
+Dynamic Media image Versand veröffentlicht Bild-Assets, einschließlich Videominiaturen, von AEM Author und repliziert sie in den On-Demand-Replikationsdienst der Adobe (die Replikationsdienst-URL). Assets werden dann über den On-Demand-Image-Versand-Dienst (die Image-Dienst-URL) bereitgestellt.
 
 Führen Sie die folgenden Schritte aus:
 
 1. [Richten Sie die Authentifizierung](#setting-up-authentication) ein.
 1. [Konfigurieren Sie den Replizierungsagenten](#configuring-the-replication-agent).
 
-Der Replizierungsagenten veröffentlicht dynamische Medienelemente wie Bilder, Videometadaten und setzt auf den Image-Dienst, der auf der Adobe gehostet wird. Der Replikationsagent ist nicht standardmäßig aktiviert.
+Der Replizierungsagenten veröffentlicht Dynamic Media-Assets wie Bilder, Videometadaten und setzt auf den Image-Dienst, der auf der Adobe gehostet wird. Der Replikationsagent ist nicht standardmäßig aktiviert.
 
 Nachdem Sie den Replikationsagenten konfiguriert haben, müssen Sie [überprüfen und testen, ob die Einrichtung erfolgreich war](#validating-the-replication-agent-for-dynamic-media). In diesem Abschnitt wird die Vorgehensweise beschrieben.
 
@@ -499,8 +499,8 @@ Stellen Sie vor dem Einrichten des Dynamic Media Cloud Service sicher, dass Sie 
 
 So konfigurieren Sie Cloud-Services für Dynamic Media:
 
-1. Tippen Sie in AEM auf das AEM Logo, um auf die globale Navigationskonsole zuzugreifen, und tippen Sie auf **[!UICONTROL Tools > Cloud Services > Dynamic Media Configuration (Pre-6.3).]**
-1. Wählen Sie auf der Seite &quot;Browser zur Konfiguration der dynamischen Medien&quot;im linken Bereich **[!UICONTROL global]** und tippen Sie dann auf **[!UICONTROL Erstellen.]**
+1. Tippen Sie AEM auf das AEM Logo, um auf die globale Navigationskonsole zuzugreifen, und tippen Sie auf **[!UICONTROL Tools > Cloud Services > Dynamic Media-Konfiguration (Pre-6.3).]**
+1. Wählen Sie auf der Seite &quot;Dynamic Media Configuration Browser&quot;im linken Bereich **[!UICONTROL global]** und tippen Sie dann auf **[!UICONTROL Erstellen.]**
 1. Geben Sie im Dialogfeld **[!UICONTROL Dynamic Media-Konfiguration erstellen]** im Feld „Titel“ einen Titel ein.
 1. Wenn Sie Dynamic Media für Video konfigurieren,
 
@@ -638,13 +638,13 @@ Standardmäßig zeigt das System eine Vielzahl von Darstellungen an, wenn Sie **
 
 ## Filtern von Assets für die Replikation {#filtering-assets-for-replication}
 
-In Bereitstellungen für nicht dynamische Medien replizieren Sie *alle*-Elemente (sowohl Bilder als auch Videos) aus Ihrer AEM Autorendatei in den Veröffentlichungsknoten AEM. Dieser Arbeitsablauf ist erforderlich, da die AEM Server die Assets auch bereitstellen.
+In Nicht-Dynamic Media-Bereitstellungen replizieren Sie *alle*-Elemente (sowohl Bilder als auch Videos) aus Ihrer AEM Autorendatei in den AEM Veröffentlichungsknoten. Dieser Arbeitsablauf ist erforderlich, da die AEM Server die Assets auch bereitstellen.
 
-Da Assets jedoch über die Cloud bereitgestellt werden, müssen diese Assets in Bereitstellungen für dynamische Medien nicht repliziert werden, um Veröffentlichungsknoten zu AEM. Ein solcher Arbeitsablauf für &quot;Hybrid-Veröffentlichung&quot;vermeidet zusätzliche Kosten für die Datenspeicherung und längere Verarbeitungszeiten für die Replizierung von Assets. Andere Inhalte, z. B. Dynamic Media-Anzeigeprogramme, Seiten von Websites und statischer Inhalt, werden weiterhin über die AEM-Veröffentlichungsknoten bereitgestellt.
+In Dynamic Media-Bereitstellungen müssen diese Assets jedoch nicht repliziert werden, um Veröffentlichungsknoten zu AEM, da sie über die Cloud bereitgestellt werden. Ein solcher Arbeitsablauf für &quot;Hybrid-Veröffentlichung&quot;vermeidet zusätzliche Kosten für die Datenspeicherung und längere Verarbeitungszeiten für die Replizierung von Assets. Andere Inhalte, z. B. Dynamic Media-Anzeigeprogramme, Seiten von Websites und statischer Inhalt, werden weiterhin über die AEM-Veröffentlichungsknoten bereitgestellt.
 
 Neben der Replizierung der Assets werden auch die folgenden Nicht-Assets repliziert:
 
-* Konfiguration des Versands für dynamische Medien: `/conf/global/settings/dam/dm/imageserver/jcr:content`
+* Dynamic Media Versand-Konfiguration: `/conf/global/settings/dam/dm/imageserver/jcr:content`
 * Bildvorgaben: `/conf/global/settings/dam/dm/presets/macros`
 * Viewer-Vorgaben: `/conf/global/settings/dam/dm/presets/viewer`
 
@@ -652,7 +652,7 @@ Mit den Filtern können Sie Assets von der Replikation auf dem AEM-Veröffentlic
 
 ### Verwenden von Asset-Standardfiltern für die Replikation  {#using-default-asset-filters-for-replication}
 
-Wenn Sie dynamische Medien für (1) Bildbearbeitung in der Produktion **oder** (2) verwenden, können Sie die standardmäßigen Filter verwenden, die wir wie gewünscht bereitstellen. Folgende Filter sind standardmäßig aktiviert:
+Wenn Sie Dynamic Media für (1) Bildbearbeitung in der Produktion **oder** (2) verwenden, können Sie die standardmäßigen Filter verwenden, die wir wie gewünscht bereitstellen. Folgende Filter sind standardmäßig aktiviert:
 
 <table>
  <tbody>
@@ -673,7 +673,7 @@ Wenn Sie dynamische Medien für (1) Bildbearbeitung in der Produktion **oder** (
     </ul> </td>
   </tr>
   <tr>
-   <td>Video-Versand für dynamische Medien</td>
+   <td>Dynamic Media Video Versand</td>
    <td>filter-video</td>
    <td>Beginn mit <strong>video/</strong></td>
    <td>Das vordefinierte "filter-video" wird:
@@ -805,7 +805,7 @@ Wenn Sie nur das Original replizieren möchten, geben Sie `+original` ein.
 Das Konfigurieren des Dynamic Media-Bildservers umfasst die Bearbeitung des Adobe CQ Scene7 ImageServer-Bundles und des Adobe CQ Scene7 PlatformServer-Bundles.
 
 >[!NOTE]
-Dynamische Medien funktionieren standardmäßig [nachdem sie aktiviert wurden](#enabling-dynamic-media). Sie können für Ihre Installation optional aber eine Feineinstellung verwenden, indem Sie den Dynamic Media-Bildserver so konfigurieren, dass er bestimmte Spezifikationen oder Anforderungen erfüllt.
+Dynamic Media arbeitet sofort nach der Aktivierung von [. ](#enabling-dynamic-media) Sie können für Ihre Installation optional aber eine Feineinstellung verwenden, indem Sie den Dynamic Media-Bildserver so konfigurieren, dass er bestimmte Spezifikationen oder Anforderungen erfüllt.
 
 **Voraussetzung**:  *Stellen Sie* vor der Konfiguration des Dynamic Media Image-Servers sicher, dass Ihre VM von Windows eine Installation der Microsoft Visual C++-Bibliotheken enthält. Diese Bibliotheken werden benötigt, um den Dynamic Media-Bildserver auszuführen. Sie können das [Microsoft Visual C++ 2010 Redistributable Package (x64) hier herunterladen](https://www.microsoft.com/de-de/download/details.aspx?id=14632).
 
@@ -814,7 +814,7 @@ So konfigurieren Sie die Einstellungen für den Dynamic Media-Bildserver:
 1. Tippen Sie in der oberen linken Ecke AEM auf **[!UICONTROL Adobe Experience Manager]**, um die globale Navigationskonsole aufzurufen, und tippen Sie dann auf **[!UICONTROL Tools > Vorgänge > Web-Konsole.]**
 1. Tippen Sie auf der Seite &quot;Adobe Experience Manager Web Console Configuration&quot;auf **[!UICONTROL OSGi > Configuration]**, um alle Pakete, die derzeit in AEM ausgeführt werden, Liste.
 
-   Die Dynamic Media Versand-Server befinden sich in der Liste unter den folgenden Namen:
+   Die Dynamic Media-Versand-Server sind in der Liste unter den folgenden Namen zu finden:
 
    * `Adobe CQ Scene7 ImageServer`
    * `Adobe CQ Scene7 PlatformServer`
@@ -865,7 +865,7 @@ So konfigurieren Sie die Einstellungen für den Dynamic Media-Bildserver:
  </tbody>
 </table>
 
-1. Tippen Sie auf **[!UICONTROL Speichern.]**
+1. Tippen Sie auf **[!UICONTROL Speichern]**.
 1. Tippen Sie in der Liste der Pakete rechts von Adobe CQ Scene7 PlatformServer auf das Symbol **[!UICONTROL Bearbeiten]**.
 1. Legen Sie im Dialogfeld für Adobe CQ Scene7 PlatformServer die folgenden Standardwerte fest:
 
@@ -909,42 +909,42 @@ Tabelle mit Manifesteinstellungen und deren Standardwerte:
   <tr>
    <td>bkgcolor</td>
    <td>FFFFFF</td>
-   <td><p>Standard-Hintergrundfarbe. RGB-Wert, mit dem alle Bereiche des Antwortbildes gefüllt werden, die keine Bilddaten enthalten.</p> <p>Siehe auch <a href="https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/image_catalog/r_bkgcolor.html">BkgColor</a> in der Image-Serving-API.</p> </td>
+   <td><p>Standard-Hintergrundfarbe. RGB-Wert, mit dem alle Bereiche des Antwortbildes gefüllt werden, die keine Bilddaten enthalten.</p> <p>Siehe auch <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html#image-serving-api">BkgColor</a> in der Image-Serving-API.</p> </td>
   </tr>
   <tr>
    <td>defaultpix</td>
    <td>300,300</td>
-   <td><p>Standard-Ansichtsgröße. Der Server beschränkt die Größe der Antwortbilder auf diese Breite und Höhe, wenn bei der Anfrage die Größe nicht explizit durch die Werte wid=, hei= oder scl= festgelegt wird.</p> <p>Wird als zwei ganze Zahlen angegeben (0 oder höher), die durch ein Komma getrennt sind. Breite und Höhe in Pixel. Einer oder beide Werte können auf 0 festgelegt werden, um die Einschränkung aufzuheben. Gilt nicht für verschachtelte oder eingebettete Anforderungen.</p> <p>Siehe auch <a href="https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/image_catalog/r_defaultpix.html">DefaultPix</a> in der Image-Serving-API.</p> <p>Normalerweise verwenden Sie aber eine Viewer-Vorgabe oder Bildvorgabe, um das Asset bereitzustellen. „defaultpix“ gilt nur für ein Asset, für das keine Viewer-Vorgabe oder Bildvorgabe verwendet wird.</p> </td>
+   <td><p>Standard-Ansichtsgröße. Der Server beschränkt die Größe der Antwortbilder auf diese Breite und Höhe, wenn bei der Anfrage die Größe nicht explizit durch die Werte wid=, hei= oder scl= festgelegt wird.</p> <p>Wird als zwei ganze Zahlen angegeben (0 oder höher), die durch ein Komma getrennt sind. Breite und Höhe in Pixel. Einer oder beide Werte können auf 0 festgelegt werden, um die Einschränkung aufzuheben. Gilt nicht für verschachtelte oder eingebettete Anforderungen.</p> <p>Siehe auch <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html#image-serving-api">DefaultPix</a> in der Image-Serving-API.</p> <p>Normalerweise verwenden Sie aber eine Viewer-Vorgabe oder Bildvorgabe, um das Asset bereitzustellen. „defaultpix“ gilt nur für ein Asset, für das keine Viewer-Vorgabe oder Bildvorgabe verwendet wird.</p> </td>
   </tr>
   <tr>
    <td>defaultthumbpix</td>
    <td>100,100</td>
-   <td><p>Standardgröße für Miniaturansichten. Wird anstelle von „attribute::DefaultPix“ für Miniaturanforderungen (req=tmb) verwendet.</p> <p>Der Server beschränkt die Größe der Antwortbilder auf diese Breite und Höhe, wenn in einer Miniaturanforderung (req=tmb) die Anzeigegröße nicht explizit durch die Werte wid=, hei= oder scl= festgelegt wird.</p> <p>Wird als zwei ganze Zahlen angegeben (0 oder höher), die durch ein Komma getrennt sind. Breite und Höhe in Pixel. Einer oder beide Werte können auf 0 festgelegt werden, um die Einschränkung aufzuheben. </p> <p>Gilt nicht für verschachtelte oder eingebettete Anforderungen.</p> <p>Siehe auch <a href="https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/image_catalog/r_defaultthumbpix.html">DefaultThumbPix</a> in der Image-Serving-API. </p> </td>
+   <td><p>Standardgröße für Miniaturansichten. Wird anstelle von „attribute::DefaultPix“ für Miniaturanforderungen (req=tmb) verwendet.</p> <p>Der Server beschränkt die Größe der Antwortbilder auf diese Breite und Höhe, wenn in einer Miniaturanforderung (req=tmb) die Anzeigegröße nicht explizit durch die Werte wid=, hei= oder scl= festgelegt wird.</p> <p>Wird als zwei ganze Zahlen angegeben (0 oder höher), die durch ein Komma getrennt sind. Breite und Höhe in Pixel. Einer oder beide Werte können auf 0 festgelegt werden, um die Einschränkung aufzuheben. </p> <p>Gilt nicht für verschachtelte oder eingebettete Anforderungen.</p> <p>Siehe auch <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api">DefaultThumbPix</a> in der Image-Serving-API. </p> </td>
   </tr>
   <tr>
    <td>Ablauf</td>
    <td>36000000</td>
-   <td><p>Standardeinstellung für Time-To-Live des Client-Caches. Bietet ein standardmäßiges Ablaufintervall für den Fall, dass ein bestimmter Katalogdatensatz keinen gültigen Wert für „catalog::Expiration“ (also den Ablauf des Katalogs) aufweist.</p> <p>Reelle Zahl, 0 oder höher. Anzahl von Millisekunden bis zum Ablauf seit der Generierung der Daten. Geben Sie „0“ an, wenn das Antwortbild immer sofort ablaufen soll. Hiermit wird das Client-Caching praktisch deaktiviert. Dieser Wert ist standardmäßig auf 10 Stunden festgelegt. Dies bedeutet, dass es bei der Veröffentlichung eines neuen Bildes zehn Stunden dauert, bis das alte Bild aus dem Cache des Benutzers entfernt wird. Wenden Sie sich an die Kundenunterstützung, wenn der Cache früher geleert werden soll.</p> <p>Siehe auch <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html">Expiration</a> in der Image-Serving-API.</p> </td>
+   <td><p>Standardeinstellung für Time-To-Live des Client-Caches. Bietet ein standardmäßiges Ablaufintervall für den Fall, dass ein bestimmter Katalogdatensatz keinen gültigen Wert für „catalog::Expiration“ (also den Ablauf des Katalogs) aufweist.</p> <p>Reelle Zahl, 0 oder höher. Anzahl von Millisekunden bis zum Ablauf seit der Generierung der Daten. Geben Sie „0“ an, wenn das Antwortbild immer sofort ablaufen soll. Hiermit wird das Client-Caching praktisch deaktiviert. Dieser Wert ist standardmäßig auf 10 Stunden festgelegt. Dies bedeutet, dass es bei der Veröffentlichung eines neuen Bildes zehn Stunden dauert, bis das alte Bild aus dem Cache des Benutzers entfernt wird. Wenden Sie sich an die Kundenunterstützung, wenn der Cache früher geleert werden soll.</p> <p>Siehe auch <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html">Expiration</a> in der Image-Serving-API.</p> </td>
   </tr>
   <tr>
    <td>jpegquality</td>
    <td>80</td>
-   <td><p>Standardattribute für JPEG-Verschlüsselung. Legt die Standardattribute von JPEG-Antwortbildern fest.</p> <p>Ganze Zahl und Flag, getrennt durch ein Komma. Der erste Wert liegt im Bereich 1 bis 100 und definiert die Qualität. Der zweite Wert kann „0“ für normales Verhalten oder „1“ sein, um anzugeben, dass das normalerweise von der JPEG-Kodierung genutzte RGB-Farbart-Downsampling deaktiviert werden soll.</p> <p>Siehe auch <a href="https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/image_catalog/r_jpegquality.html">JpegQuality</a> in der Image-Serving-API.</p> </td>
+   <td><p>Standardattribute für JPEG-Verschlüsselung. Legt die Standardattribute von JPEG-Antwortbildern fest.</p> <p>Ganze Zahl und Flag, getrennt durch ein Komma. Der erste Wert liegt im Bereich 1 bis 100 und definiert die Qualität. Der zweite Wert kann „0“ für normales Verhalten oder „1“ sein, um anzugeben, dass das normalerweise von der JPEG-Kodierung genutzte RGB-Farbart-Downsampling deaktiviert werden soll.</p> <p>Siehe auch <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api">JpegQuality</a> in der Image-Serving-API.</p> </td>
   </tr>
   <tr>
    <td>maxpix</td>
    <td>2000,2000</td>
-   <td><p>Maximale Größe des Antwortbildes. Maximale Breite und Höhe des Antwortbildes, das an den Client zurückgegeben wird.</p> <p>Der Server gibt einen Fehler zurück, wenn eine Anforderung ein Antwortbild verursacht, dessen Breite oder Höhe größer als das Attribut::MaxPix ist.</p> <p>Siehe auch <a href="https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/image_catalog/r_maxpix.html">MaxPix</a> in der Image-Serving-API.</p> </td>
+   <td><p>Maximale Größe des Antwortbildes. Maximale Breite und Höhe des Antwortbildes, das an den Client zurückgegeben wird.</p> <p>Der Server gibt einen Fehler zurück, wenn eine Anforderung ein Antwortbild verursacht, dessen Breite oder Höhe größer als das Attribut::MaxPix ist.</p> <p>Siehe auch <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=en#image-serving-api">MaxPix</a> in der Image-Serving-API.</p> </td>
   </tr>
   <tr>
    <td>resmode</td>
    <td>SCHARF2</td>
-   <td><p>Standard-Resamplingmodus. Gibt die standardmäßigen Resampling- und Interpolationsattribute an, die für die Skalierung von Bilddaten verwendet werden sollen.</p> <p>Wird verwendet, wenn „resMode=“ in einer Anforderung nicht angegeben wird.</p> <p>Zulässige Werte sind BILIN, BICUB oder SHARP2.</p> <p>Enum. Festlegung für Interpolationsmodus: 2 für BILIN, 3 für BICUB oder 4 für SCHARF2. Verwenden Sie für optimale Ergebnisse "sharp2".</p> <p>Siehe auch <a href="https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/image_catalog/r_is_cat_resmode.html">ResMode</a> in der Image-Serving-API.</p> </td>
+   <td><p>Standard-Resamplingmodus. Gibt die standardmäßigen Resampling- und Interpolationsattribute an, die für die Skalierung von Bilddaten verwendet werden sollen.</p> <p>Wird verwendet, wenn „resMode=“ in einer Anforderung nicht angegeben wird.</p> <p>Zulässige Werte sind BILIN, BICUB oder SHARP2.</p> <p>Enum. Festlegung für Interpolationsmodus: 2 für BILIN, 3 für BICUB oder 4 für SCHARF2. Verwenden Sie für optimale Ergebnisse "sharp2".</p> <p>Siehe auch <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html#image-serving-api">ResMode</a> in der Image-Serving-API.</p> </td>
   </tr>
   <tr>
    <td>resolution</td>
    <td>72</td>
-   <td><p>Standardobjektauflösung. Bietet eine standardmäßige Objektauflösung, falls ein bestimmter Katalogdatensatz keinen gültigen Wert für „catalog::Resolution“ aufweist.</p> <p>Reelle Zahl, größer als 0. Wird normalerweise als Pixel pro Zoll ausgedrückt, aber es können auch andere Einheiten verwendet werden, z. B. Pixel pro Meter.</p> <p>Siehe auch <a href="https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/image_catalog/r_resolution.html">Resolution</a> in der Image-Serving-API.</p> </td>
+   <td><p>Standardobjektauflösung. Bietet eine standardmäßige Objektauflösung, falls ein bestimmter Katalogdatensatz keinen gültigen Wert für „catalog::Resolution“ aufweist.</p> <p>Reelle Zahl, größer als 0. Wird normalerweise als Pixel pro Zoll ausgedrückt, aber es können auch andere Einheiten verwendet werden, z. B. Pixel pro Meter.</p> <p>Siehe auch <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html#image-serving-api">Resolution</a> in der Image-Serving-API.</p> </td>
   </tr>
   <tr>
    <td>thumbnailtime</td>
@@ -966,9 +966,9 @@ Sie können das Farbmanagement für dynamische Medien und Bildvorgaben konfiguri
 
 Erweiterte Anwendungsfälle können einen Modifikator `icc=` manuell konfigurieren, um explizit ein Profil für die Ausgabefarbung auszuwählen:
 
-* `icc` -  [https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html)
+* `icc` -  [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html)
 
-* `iccEmbed` -  [https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
+* `iccEmbed` -  [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
 
 >[!NOTE]
 Der Standardsatz von Adobe-Farbelementen ist nur verfügbar, wenn [Feature Pack 12445 aus Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) installiert ist. Alle Feature Packs und Service Packs sind unter [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) verfügbar. Feature Pack 12445 enthält die Adobe-Farbprofile.
@@ -1014,58 +1014,58 @@ Nach der Feature Pack-Installation müssen Sie die richtigen Standardfarbprofile
    <td><strong>Beschreibung</strong></td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html">iccprofilergb</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html">iccprofilergb</a></td>
    <td>Zeichenfolge</td>
    <td>&lt;leer&gt;</td>
    <td>Name des standardmäßigen RGB-Profils.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html">iccprofilecmyk</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html">iccprofilecmyk</a></td>
    <td>Zeichenfolge</td>
    <td>&lt;leer&gt;</td>
-   <td>Name des standardmäßigen CMYK-Farbfelds.</td>
+   <td>Name des standardmäßigen CMYK-Farbprofils.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html">iccprofilegray</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html">iccprofilegray</a></td>
    <td>Zeichenfolge</td>
    <td>&lt;leer&gt;</td>
-   <td>Name des standardmäßigen grauen Profils.</td>
+   <td>Name des standardmäßigen grauen Farbprofils.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html">iccprofilesrcrgb</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html">iccprofilesrcrgb</a></td>
    <td>Zeichenfolge</td>
    <td>&lt;leer&gt;</td>
    <td>Name des standardmäßigen RGB-Profils, das für RGB- ohne eingebettetes Profil verwendet wird</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html">iccprofilesrccmyk</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html">iccprofilesrccmyk</a></td>
    <td>Zeichenfolge</td>
    <td>&lt;leer&gt;</td>
    <td>Name des standardmäßigen CMYK-Farbbilds, das für CMYK-Profile ohne eingebettetes Profil verwendet wird.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html">iccprofilesrcgray</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html">iccprofilesrcgray</a></td>
    <td>Zeichenfolge</td>
    <td>&lt;leer&gt;</td>
    <td>Name des standardmäßigen grauen Profils, das für CMYK-Bilder ohne eingebettetes Profil verwendet wird.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html">iccblackpointter-Kompensation</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html">iccblackpointter-Kompensation</a></td>
    <td>Boolesch</td>
    <td>True</td>
    <td>Gibt an, ob bei der Farbkorrektur eine Schwarzpunktkompensation vorgenommen werden soll. Adobe empfiehlt, diese Option zu aktivieren.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html">iccdither</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html">iccdither</a></td>
    <td>Boolesch</td>
    <td>False</td>
    <td>Gibt an, ob während der Farbkorrektur Dithering durchgeführt werden soll.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html">iccrenderintent</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html">iccrenderintent</a></td>
    <td>Zeichenfolge</td>
    <td>relative</td>
-   <td><p>Gibt die Renderpriorität an. Folgende Werte sind zulässig: <strong>perspektivisch, relativ, Sättigung, absolut. </strong><i></i>Adobe empfiehlt,  <strong>relativ  </strong><i></i>als Standard festzulegen.</p> </td>
+   <td><p>Gibt die Rendering-Absicht an. Folgende Werte sind zulässig: <strong>perspektivisch, relativ, Sättigung, absolut. </strong><i></i>Adobe empfiehlt <strong>relativ</strong><i></i> als Standard.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -1261,7 +1261,7 @@ Dies hat folgende Auswirkungen:
 
 ## Bereitstellen von Assets {#delivering-assets}
 
-Nachdem Sie alle oben genannten Aufgaben abgeschlossen haben, werden aktivierte dynamische Medienelemente vom Image- oder Video-Dienst bereitgestellt. In AEM wird diese Funktion in einem **[!UICONTROL Bild-URL kopieren]**, **[!UICONTROL Viewer-URL kopieren]**, **[!UICONTROL Viewer-Code einbetten]** und im WCM angezeigt.
+Nachdem Sie alle oben genannten Aufgaben abgeschlossen haben, werden aktivierte Dynamic Media-Assets vom Image- oder Videodienst bereitgestellt. In AEM wird diese Funktion in einem **[!UICONTROL Bild-URL kopieren]**, **[!UICONTROL Viewer-URL kopieren]**, **[!UICONTROL Viewer-Code einbetten]** und im WCM angezeigt.
 
 Siehe [Bereitstellen von Assets mit Dynamic Media](/help/assets/delivering-dynamic-media-assets.md).
 
