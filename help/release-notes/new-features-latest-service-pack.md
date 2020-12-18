@@ -4,9 +4,9 @@ description: Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1c633e87d773f864c65320d3ce658f61271d086d
+source-git-commit: 30701cfdb36e5caf606e31564179a632b0de9fb5
 workflow-type: tm+mt
-source-wordcount: '2807'
+source-wordcount: '2818'
 ht-degree: 5%
 
 ---
@@ -52,11 +52,11 @@ Sie können jetzt die Seitenverschiebungen und MSM-Rollouts als asynchrone Vorg�
 
 ### HTTP-Clientkonfiguration für Formulardatenmodelle zur Leistungsoptimierung {#fdm-http-client-config}
 
-[!DNL Experience Manager Forms] Formulardatenmodell bei der Integration mit RESTful-Webdiensten, da die Datenquelle jetzt HTTP-Client-Konfigurationen zur Leistungsoptimierung enthält.
+[!DNL Experience Manager Forms] Formulardatenmodell bei der Integration mit RESTful-Webdiensten, da die Datenquelle jetzt HTTP-Client-Konfigurationen zur Leistungsoptimierung enthält. Siehe [Datenquellen konfigurieren](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration).
 
 ### Verfügbarkeit der Option &quot;Zurücksetzen&quot;für jede Komponente im Layoutmodus {#reset-option-layout-mode}
 
-Sie können jetzt für jede Komponente im Layoutmodus eines adaptiven Formulars die Option zum Zurücksetzen verwenden. Wenn Sie ein mehrspaltiges Layout für ein Bedienfeld definieren, können Sie mit dieser Funktion einzelne Komponenten im Bedienfeld zurücksetzen.
+Sie können jetzt für jede Komponente im Layoutmodus eines adaptiven Formulars die Option zum Zurücksetzen verwenden. Wenn Sie ein mehrspaltiges Layout für ein Bedienfeld definieren, können Sie mit dieser Funktion einzelne Komponenten im Bedienfeld zurücksetzen. Siehe [Verwenden Sie den Layoutmodus, um die Größe von Komponenten](../../help/forms/using/resize-using-layout-mode.md#resize-components) zu ändern.
 
 ## Schlüsselfunktionen in vorherigen [!DNL Experience Manager] 6.5 Service Packs {#key-features-previous-service-packs}
 
@@ -211,11 +211,11 @@ Sie können jetzt die [!DNL Dynamic Media]-Benutzeroberfläche verwenden, um zwi
 
 Sie können jetzt festlegen, ob Assets selektiv auf [!DNL Experience Manager] oder [!DNL Dynamic Media] veröffentlicht oder die Veröffentlichung rückgängig gemacht werden sollen, indem Sie den Assistenten [!UICONTROL Schnellveröffentlichung] oder [!UICONTROL Veröffentlichung verwalten] verwenden. Sie können auch den Modus `Publish` oder `Unpublish` auf Ordnerebene festlegen.
 
-#### Smart Imaging for Dynamic Media {#smart-imaging}
+#### Smart Imaging für Dynamic Media {#smart-imaging}
 
 Die intelligente Bildbearbeitung nutzt die einzigartigen Ansichtsmerkmale der einzelnen Benutzer, um automatisch die richtigen Bilder bereitzustellen, die für ihr Erlebnis optimiert wurden, was zu einer besseren Leistung und Interaktion führt. Die intelligente Bildbearbeitung arbeitet mit bestehenden Bildvorgaben und reduziert im letzten Moment abhängig vom Browser oder der Geschwindigkeit der Netzverbindung die Größe der Bilddatei intelligent noch weiter. Siehe [Smart Imaging](../assets/imaging-faq.md).
 
-#### Smart-Zuschneiden in Video-Profilen für dynamische Medien (6.5.3.0) {#smart-crop-video}
+#### Smart-Zuschneiden in Video-Profilen für Dynamic Media (6.5.3.0) {#smart-crop-video}
 
 Smartes Zuschneiden für Video – eine optionale Funktion, die in Videoprofilen verfügbar ist – ist ein Tool, das die Leistung von künstlicher Intelligenz in Adobe Sensei nutzt, um den Fokuspunkt in adaptiven oder progressiven Videos, die Sie hochgeladen haben, unabhängig von der Größe automatisch zu erkennen und zu beschneiden. Siehe [Informationen zum Verwenden von Smart-Zuschneiden in Video-Profilen](../assets/video-profiles.md).
 
