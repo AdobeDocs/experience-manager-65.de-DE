@@ -1,5 +1,5 @@
 ---
-title: 'Video in Dynamic Media '
+title: Video in Dynamic Media
 description: Erfahren Sie, wie Sie in Dynamic Media mit Video arbeiten.
 uuid: 97f311a3-a227-479a-91bf-fb54ecd1a55d
 contentOwner: Rick Brough
@@ -9,15 +9,15 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f63e13486792f9975c84202b2cd3ddcf618ce0fc
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '11812'
+source-wordcount: '11277'
 ht-degree: 96%
 
 ---
 
 
-# Video in dynamischen Medien {#video}
+# Video in Dynamic Media {#video}
 
 In diesem Abschnitt wird die Arbeit mit Videos in Dynamic Media beschrieben.
 
@@ -27,7 +27,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen dabei helfen, in Dyna
 
 >[!NOTE]
 >
->Bevor Sie mit Videos in dynamischen Medien arbeiten, stellen Sie sicher, dass Ihr AEM-Administrator die Cloud Services für dynamische Medien bereits im Modus &quot;Dynamische Medien&quot;- Scene7&quot;oder &quot;Dynamische Medien - Hybrid&quot;aktiviert und konfiguriert hat.
+>Bevor Sie mit Videos in Dynamic Media arbeiten, stellen Sie sicher, dass Ihr AEM-Administrator Dynamic Media-Cloud Services im Dynamic Media - Scene7 - Modus oder Dynamic Media - Hybrid-Modus bereits aktiviert und konfiguriert hat.
 >
 >* Siehe [Konfiguration von Dynamic Media Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) in „Konfigurieren von Dynamic Media – Scene7-Modus“ und [Fehlerbehebung in Dynamic Media – Scene7-Modus](/help/assets/troubleshoot-dms7.md).
    >
@@ -146,7 +146,7 @@ Für das Verwalten von einzelnen Videos und adaptiven Videosets wird Folgendes u
 * Organisieren und Durchsuchen von Videos mit kompletter Metadatenunterstützung für die effiziente Verwaltung von Video-Assets
 * Bereitstellen von adaptiven Videosets im Internet sowie auf Desktops und Mobilgeräten, einschließlich iPhone, iPad, Android™, Blackberry und Windows Phone.
 
-Das adaptive Video-Streaming wird auf einer Vielzahl von iOS-Plattformen unterstützt. Siehe [Referenzhandbuch für Viewer für dynamische Medien](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html#video).
+Das adaptive Video-Streaming wird auf einer Vielzahl von iOS-Plattformen unterstützt. Siehe [Dynamic Media Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html#video).
 
 Dynamic Media unterstützt die mobile Videowiedergabe für MP4 H.264-Videos. Welche BlackBerry-Geräte dieses Videoformat unterstützen, können Sie hier einsehen: [Unterstützte Videoformate für BlackBerry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -162,7 +162,7 @@ Welche Windows-Geräte dieses Videoformat unterstützen, können Sie hier einseh
 
 Sehen Sie das Beispiel für [Dynamische Videowiedergabe](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) an.
 
-Siehe auch [Viewer für AEM Assets und Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) und [Viewer für AEM Elemente](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only).
+Siehe auch [Viewer für AEM Assets und Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) und [Viewer nur für AEM Elemente](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only).
 
 ## Best Practice: Verwenden des HTML5-Video-Viewers {#best-practice-using-the-html-video-viewer}
 
@@ -191,7 +191,7 @@ HLS ist ein Apple-Standard für adaptives Videostreaming, der die Wiedergabe aut
 
 Progressives Video wird bereitgestellt, indem das Video lokal auf ein Desktopsystem oder Mobilgerät eines Benutzers heruntergeladen und gespeichert wird.
 
-In der folgenden Tabelle sind das Gerät, der Browser und die Wiedergabe von Videos auf Desktopcomputern und Mobilgeräten mit dem Video-Viewer für dynamische Medien beschrieben.
+In der folgenden Tabelle sind das Gerät, der Browser und die Wiedergabe von Videos auf Desktopcomputern und Mobilgeräten mit dem Dynamic Media Video Viewer aufgeführt.
 
 <table>
  <tbody>
@@ -402,7 +402,7 @@ Im folgenden Beispiel hat das Quellvideo Abmessungen von 1920 x 1080. Die drei 
 
 | Videotyp | Breite x Höhe | Breitenverhältnis | Höhenverhältnis |
 |--- |--- |--- |--- |
-| Quelle | 1920 x 1080 | 1 | 1 |
+| Quelle | 1920 x 1080 | 1 | 3 |
 | Kodiert | 960 x 540 | 2 | 2 |
 | Kodiert | 640 x 360 | 3 | 1 |
 | Kodiert | 480 x 270 | 4 | 4 |
@@ -984,7 +984,7 @@ Informationen hierzu finden Sie im Abschnitt zum [Konfigurieren der Dynamic Medi
 
 Wenn Sie die Funktion „Videoberichte“ zum ersten Mal aufrufen, enthält der Bericht standardmäßig Videodaten für den Zeitraum vom ersten Tag des aktuellen Monats bis zum aktuellen Datum. Sie können den standardmäßigen Datumsbereich aber außer Kraft setzen, indem Sie Ihren eigenen Datumsbereich angeben. Wenn Sie „Videoberichte“ das nächste Mal aufrufen, wird der angegebene Datumsbereich verwendet.
 
-Damit Videoberichte ordnungsgemäß funktionieren, wird automatisch eine Report Suite-ID erstellt, wenn Dynamic Media Cloud Services konfiguriert wurde. Gleichzeitig wird die Report Suite-ID an den Veröffentlichungs-Server übergeben, damit sie für die Funktion „URL kopieren“ bei der Asset-Vorschau verfügbar ist. Dafür muss der Veröffentlichungs-Server aber bereits eingerichtet sein. Wenn der Publish-Server nicht eingerichtet ist, können Sie trotzdem veröffentlichen, um den Videobericht anzuzeigen. Sie müssen jedoch zur Konfiguration der dynamischen Media Cloud zurückkehren und auf **[!UICONTROL OK tippen.]**
+Damit Videoberichte ordnungsgemäß funktionieren, wird automatisch eine Report Suite-ID erstellt, wenn Dynamic Media Cloud Services konfiguriert wurde. Gleichzeitig wird die Report Suite-ID an den Veröffentlichungs-Server übergeben, damit sie für die Funktion „URL kopieren“ bei der Asset-Vorschau verfügbar ist. Dafür muss der Veröffentlichungs-Server aber bereits eingerichtet sein. Wenn der Publish-Server nicht eingerichtet ist, können Sie trotzdem veröffentlichen, um den Videobericht anzuzeigen. Sie müssen jedoch zur Dynamic Media Cloud-Konfiguration zurückkehren und auf **[!UICONTROL OK tippen.]**
 
 So zeigen Sie Videoberichte an:
 
@@ -1001,66 +1001,67 @@ Geben Sie den Anfang und das Ende des Datumsbereichs an, für den Sie Videodaten
 
 1. Tippen Sie in der Tabelle mit den am häufigsten veröffentlichten Videos auf einen Videonamen, um das Video abzuspielen und den Bericht zur Zielgruppentreue (Abbruch) des Videos anzuzeigen.
 
-### Anzeigen von Videoberichten basierend auf einem Video-Viewer, den Sie mit dem Scene7 HTML5 Viewer SDK erstellt haben   {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+<!-- OBSOLETE CONTENT ### Viewing video reports based on a video viewer that you created using the Scene7 HMTL5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
-Wenn Sie einen von Dynamic Media standardmäßig bereitgestellten Video-Viewer verwenden oder anhand eines Standardvideo-Viewers eine benutzerdefinierte Viewer-Vorgabe erstellt haben, müssen Sie keine zusätzlichen Schritte ausführen, um Videoberichte anzuzeigen. Wenn Sie aber anhand des Scene7 HTML5 Viewer SDK einen eigenen Video-Viewer erstellt haben, gehen Sie wie folgt vor, um sicherzustellen, dass der Video-Viewer Tracking-Ereignisse an die Funktion „Videoberichte“ von Dynamic Media sendet.
+If you are using an out-of-box video viewer provided by Dynamic Media, or if you created a custom viewer preset based off of an out-of-box video viewer, then no additional steps are required to view video reports. However, if you have created your own video viewer based off the Scene7 HTML5 Viewer SDK, then use the following steps to ensure the your video viewer is sending tracking events to Dynamic Media Video Reports.
 
-Verwenden Sie die Viewer-Referenz für dynamische Medien und das Scene7 HTML5 Viewer-SDK, um eigene Video-Viewer zu erstellen.
+Use the Dynamic Media Viewers Reference and the Scene7 HTML5 Viewers SDK to create your own video viewers.
 
-Siehe [Referenzhandbuch für Viewer für dynamische Medien](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html). -->
 
-<!-- Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
+<!-- OBSOLETE CONTENT Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
 See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
-So zeigen Sie Videoberichte basierend auf einem Video-Viewer an, den Sie mit dem Scene7 HTML5 Viewer SDK erstellt haben:
+<!-- OBSOLETE CONTENT To view Video Reports based on a video viewer that you created using the Scene7 HTML5 Viewer SDK:
 
-1. Navigieren Sie zu einem veröffentlichten Video-Asset.
-1. Wählen Sie links oben auf der Seite des Assets aus der Dropdownliste die Option **[!UICONTROL Viewer.]**
-1. Wählen Sie eine Video-Viewer-Vorgabe aus und kopieren Sie den Integrations-Code.
-1. Suchen Sie im Integrations-Code die folgende Zeile:
+1. Navigate to any published video asset.
+1. Near the upper-left corner of the asset's page, from the drop-down list, select **[!UICONTROL Viewers.]**
+1. Select any video viewer preset and copy the embed code.
+1. In the embed code, find the line with the following:
 
    `videoViewer.setParam("config2", "<value>");`
 
-   Der Parameter `config2` aktiviert die Verfolgung in HTML5-Viewern. Er ist außerdem eine firmenspezifische Vorgabe, die die Konfigurationsinformationen für Videoberichte und kundenspezifische Adobe Analytics-Konfigurationen enthält.
+   The `config2` parameter enables tracking in HTML5 Viewers. It is also a company-specific preset that contains the configuration information for Video Reporting, and for customer-specific Adobe Analytics configurations.
 
-   Der richtige Wert für den Parameter &quot;config2&quot;ist sowohl in der Funktion **Einbettungscode **als auch in der Funktion **URL **zu finden. In der URL des Kopierbefehls **URL **ist der zu suchende Parameter `&config2=<value>` . Der Wert lautet fast immer `companypreset`, kann aber in einigen Fällen auch `companypreset-1`, `companypreset-2` usw. lauten.
+   The correct value for the config2 parameter is found in both the **Embed Code **and in the copy **URL **function. In the URL from the copy **URL **command, the parameter to look for is `&config2=<value>` . The value is almost always `companypreset`, but in some instances it can also be `companypreset-1`, `companypreset-2`, and so forth.
 
-1. Fügen Sie im benutzerspezifischen Video-Viewer-Code „AppMeasurementBridge.jsp“ wie folgt zur Viewer-Seite hinzu:
+1. In your custom video viewer code, add AppMeasurementBridge .jsp to the viewer page by doing the following:
 
-   * Bestimmen Sie zunächst, ob Sie den Parameter `&preset` benötigen.
-Wenn der `config2`-Parameter `companypreset` lautet, benötigen Sie `&preset=parameter` *nicht*.
-Wenn `config2` irgendeinen anderen Wert aufweist, setzen Sie den preset-Parameter auf denselben Wert wie den Parameter `config2`. Beispiel: Wenn `config2=companypreset-2` lautet, fügen Sie `&param2=companypreset-2` zur AppMeasurmentBridge.jsp-URL hinzu.
+    * First, determine if you need the `&preset` parameter.
+      If the `config2` parameter is `companypreset`, you do *not *need `&preset=parameter`.
+      If `config2` is anything else, set the preset parameter the same as the `config2` parameter. For example, if `config2=companypreset-2`, add `&param2=companypreset-2` to the AppMeasurmentBridge.jsp URL.
 
-   * Fügen Sie dann das Skript „AppMeasurementBridge.jsp“ hinzu:
+    * Then, add the AppMeasurementBridge.jsp script:
       `<script language="javascript" type="text/javascript" src="https://s7d1.scene7.com/s7viewers/AppMeasurementBridge.jsp?company=robindallas&preset=companypreset-2"></script>`
 
-1. Erstellen Sie die TrackingManager-Komponente wie folgt:
+1. Create the TrackingManager component by doing the following:
 
-   * Erstellen Sie nach dem Aufruf von `s7sdk.Utils.init();` eine TrackingManager-Instanz, um Ereignisse zu verfolgen. Fügen Sie dazu Folgendes hinzu:
+    * After calling `s7sdk.Utils.init();` create a TrackingManager instance to track events by adding the following:
       `var trackingManager = new s7sdk.TrackingManager();`
 
-   * Verbinden Sie Komponenten wie folgt mit TrackingManager:
-Ordnen Sie im Ereignis-Handler `s7sdk.Event.SDK_READY` die zu verfolgende Komponente dem TrackingManager zu.
-Wenn die Komponente beispielsweise `videoPlayer` lautet, fügen Sie
+    * Connect components to TrackingManager by doing the following:
+      In the `s7sdk.Event.SDK_READY` event handler, attach the component you want to track to the TrackingManager.
+      For example, if the component is `videoPlayer`, add
       `trackingManager.attach(videoPlayer);`
-hinzu, um die Komponente an den TrackingManager anzuhängen. Um mehrere Viewer auf einer Seite zu verfolgen, verwenden Sie mehrere TrackingManager-Komponenten.
+      to attach the component to the trackingManager. To track multiple viewers on a page, use multiple tracking mangaer components.
 
-   * Erstellen Sie das Objekt „AppMeasurementBridge“, indem Sie Folgendes hinzufügen:
+    * Create the AppMeasurementBridge object by adding the following:
 
       ```
       var appMeasurementBridge = new AppMeasurementBridge(); appMeasurementBridge.setVideoPlayer(videoPlayer);
       ```
 
-   * Fügen Sie die Nachverfolgungsfunktion hinzu, indem Sie Folgendes hinzufügen:
+    * Add the tracking function by adding the following:
 
       ```
       trackingManager.setCallback(appMeasurementBridge.track,
        appMeasurementBridge);
       ```
-   Das appMeasurementBridge-Objekt verfügt über eine integrierte Verfolgungsfunktion. Sie können aber auch Ihre eigene Funktion bereitstellen, um mehrere Tracking-Systeme oder anderen Funktionen zu unterstützen.
 
-   Weitere Informationen dazu finden Sie im Abschnitt *Verwenden der TrackingManager-Komponente* im *Benutzerhandbuch für Scene7 HTML5 Viewer SDK*, das Sie von [Adobe Developer Connection](https://help.adobe.com/de_DE/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html) herunterladen können.
+   The appMeasurementBridge object has a built-in track function. However, you can provide your own to support multiple tracking systems or other functionality.
+
+   For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 ## Hinzufügen von Untertiteln zu Videos {#adding-captions-to-video}
 
@@ -1074,7 +1075,7 @@ Untertitel bieten zudem eine größere Barrierefreiheit, indem optional zuschalt
 
 Mit Dynamic Media können Untertiteldateien in das JSON-Format (JavaScript Object Notation) konvertiert werden. Diese Konvertierung bedeutet, dass Sie den JSON-Text als verborgenes, aber vollständiges Transkript des Videos einfügen können. Suchmaschinen können dann den Inhalt durchsuchen und indizieren, damit Kunden die Videos leichter finden können und zusätzliche Details zum Videoinhalt erhalten.
 
-Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie unter [Serving static (non-image) contents](https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html) in der *Scene7 Image Serving API-Hilfe*.
+Weitere Informationen zur Verwendung der JSON-Funktion in einer URL finden Sie unter [Serving static (non-image) contents](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) in der *Dynamic Media Image Serving and Rendering API Help*.
 
 So fügen Sie einem Video Untertitel hinzu:
 
@@ -1129,7 +1130,7 @@ Um das Ansehen von und Navigieren in langformatigen Videos zu vereinfachen, kön
 >
 >Der verwendete Video-Player muss die Verwendung von Kapitelmarken unterstützen. Video-Player von Dynamic Media unterstützten Kapitelmarken, die Video-Player von Drittanbietern jedoch möglicherweise nicht.
 
-Anstelle der Video-Viewer-Vorgabe können Sie gegebenenfalls einen eigenen benutzerdefinierten Video-Viewer mit Kapiteln erstellen und mit Ihrer Marke versehen. Anweisungen zum Erstellen eigener HTML5-Viewer mit Kapitelnavigation finden Sie im Handbuch „Adobe Scene7 Viewer-SDK für HTML5“ unter dem Abschnitt „Anpassen von Verhaltensweisen mit Modifikatoren“ unter den Klassen `s7sdk.video.VideoPlayer` und `s7sdk.video.VideoScrubber`. Das Adobe Scene7 Viewer-SDK ist als Download von [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html) verfügbar.
+<!-- OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 Die Kapitelliste für Videos wird auf die gleiche Weise erstellt wie Untertitel. Das heißt, Sie erstellen eine WebVTT-Datei. Diese Datei muss jedoch getrennt von der WebVTT-Untertiteldatei erstellt werden. Untertitel und Kapitel dürfen nicht in derselben WebVTT-Datei enthalten sein.
 
@@ -1199,7 +1200,7 @@ Siehe [WebVTT: The Web Video Text Tracks format](https://dev.w3.org/html5/webvtt
      </tbody>
    </table>
 
-## Videominiaturen in dynamischen Medien - Scene7-Modus {#about-video-thumbnails-in-dynamic-media-scene-mode}
+## Über Videominiaturen in Dynamic Media - Scene7-Modus {#about-video-thumbnails-in-dynamic-media-scene-mode}
 
 Eine Videominiatur ist eine verkleinerte Version eines Videoframes oder eines Bild-Assets, in dem das Video dem Kunden vorgestellt wird. Das Miniaturbild soll Kunden dazu motivieren, auf das Video zu klicken.
 
