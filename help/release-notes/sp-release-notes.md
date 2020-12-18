@@ -4,7 +4,7 @@ description: Spezifische Versionshinweise zu  [!DNL Adobe Experience Manager] 6.
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 69dbfeab855f70167eead24f3d411df4c82a0050
+source-git-commit: 30701cfdb36e5caf606e31564179a632b0de9fb5
 workflow-type: tm+mt
 source-wordcount: '4243'
 ht-degree: 5%
@@ -39,9 +39,9 @@ Die wichtigsten Funktionen und Erweiterungen von [!DNL Adobe Experience Manager]
 
 * [!DNL Assets] und  [!DNL Dynamic Media] bieten mehrere Verbesserungen an der Barrierefreiheit. Die Verbesserungen betreffen die Tastaturnavigation, die Verwendung von Bildschirmlesehilfen und die Verwendung ähnlicher Hilfstechnologien (AT). Siehe [[!DNL Assets] Erweiterungen](#assets-6570) und [[!DNL Dynamic Media] Erweiterungen](#dynamic-media-6570).
 
-* HTTP-Clientkonfiguration für Formulardatenmodelle zur Leistungsoptimierung.
+* [HTTP-Client-](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration) Konfiguration des Formulardatenmodells zur Leistungsoptimierung.
 
-* Verfügbarkeit der Option &quot;Zurücksetzen&quot;für jede Komponente im Layoutmodus
+* [Verfügbarkeit der Option &quot;Zurücksetzen&quot;für jede ](../../help/forms/using/resize-using-layout-mode.md#resize-components) Komponente im Layoutmodus
 
 * [!DNL Experience Manager] 6.5 Service Pack 7 Forms verbessert die Leistung für:
 
@@ -226,7 +226,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in der Version 6.5.7.0.[!
 
 * Bilder, auf die SmartCrop angewendet wird, können nicht heruntergeladen werden (CQ-4304558).
 
-* Ordner können nicht selektiv für dynamische Medien veröffentlicht werden (CQ-4304526).
+* Es ist nicht möglich, Ordner selektiv auf Dynamic Media zu veröffentlichen (CQ-4304526).
 
 * Rückgängigmachen der Veröffentlichung einer Videodatei von [!DNL Experience Manager] machen Sie die Veröffentlichung des adaptiven Videosets nicht aus einer konfigurierten Scene7-Bereitstellung rückgängig (CQ-4304405).
 
@@ -507,7 +507,7 @@ Um Ihre Laufzeitkopie abzurufen, empfiehlt Adobe, die Entwurfskopie des benutzer
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: Keine Wartungsfenster unter granite/operations/maintenance gefunden.
    * Die serverseitige Validierung des adaptiven Formulars schlägt fehl, wenn Aggregat-Funktionen wie SUM, MAX und MIN verwendet werden. CQ-4274424
    * `com.adobe.granite.maintenance.impl.TaskScheduler` - Keine Wartungsfenster unter granite/operations/maintenance gefunden.
-   * Hotspot in einem interaktiven Bild für dynamische Medien ist nicht sichtbar, wenn das Asset über den Viewer für ein kaufbares Banner in der Vorschau angezeigt wird.
+   * Hotspot in einem interaktiven Dynamic Media-Bild ist nicht sichtbar, wenn das Asset über den Viewer für das kaufbare Banner in der Vorschau angezeigt wird.
 
 ## OSGi-Pakete und -Inhaltspakete enthalten {#osgi-bundles-and-content-packages-included}
 
