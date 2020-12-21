@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Frühere Service Pack-Versionshinwei
 description: Versionshinweise für Service Packs  [!DNL Adobe Experience Manager] 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 22112319b31576d542d04bdc3519795b02db356c
+source-git-commit: 9be522fd8354674ad40691e99b349a6fd7bff2b5
 workflow-type: tm+mt
-source-wordcount: '14804'
+source-wordcount: '14953'
 ht-degree: 20%
 
 ---
@@ -31,7 +31,7 @@ Die wichtigsten Funktionen und Verbesserungen, die in Adobe Experience Manager 6
 
 * Es wird eine neue Einstellung für die Firma bereitgestellt, die den Status von [!DNL Dynamic Media] Connector widerspiegelt.
 
-* Die Standardoptionen für `test` und `aiprocess` werden auf `Thumbnail` aktualisiert, und zwar von `Rasterize` zuvor in dynamischen Medien, um sicherzustellen, dass Benutzer nur Miniaturansichten erstellen und die Extraktion der Seiten und Suchbegriffe überspringen müssen.
+* Die Standardoptionen für `test` und `aiprocess` werden auf `Thumbnail` von `Rasterize` zuvor in Dynamic Media aktualisiert, um sicherzustellen, dass Benutzer nur Miniaturansichten erstellen und die Extraktion der Extraktion und des Suchbegriffs überspringen müssen.
 
 * [Ausfüllen eines adaptiven Formulars im Voraus auf dem Client](../../help/forms/using/prepopulate-adaptive-form-fields.md#prefill-at-client).
 
@@ -95,6 +95,15 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in der Version 6.5.6.0.[!
 * Im Durchsuchen-Modus erwähnt NVDA keinen Wert, der über die Menüoption &quot;Typ/Größe&quot;ausgewählt wurde. Der visuelle Fokus liegt nicht auf dem ausgewählten Element. Benutzer, die auf eine Bildschirmlesehilfe angewiesen sind, können den Durchsuchen-Modus nicht verwenden (CQ-4294993).
 * Beim Erstellen einer Webseite können Benutzer die Vorlage [!UICONTROL Inhaltsseite] auswählen. Auf der Registerkarte [!UICONTROL Social Media] wählen Benutzer eine [!UICONTROL Bevorzugte XF-Variante] aus. Um ein Erlebnisfragment im NVDA-Durchsuchenmodus auszuwählen, können Benutzer keine Tastenkombinationen verwenden (CQ-4292669).
 * Die Bibliothek mit Handlebars wurde auf die sicherere Version 4.7.3 (NPR-34484) aktualisiert.
+* Mehrere Site-übergreifende Skriptinstanzen in [!DNL Experience Manager Sites]-Komponenten (NPR-33925).
+* Das Feld &quot;Ordnername&quot;beim Erstellen eines neuen Ordners ist anfällig für eine seitenübergreifende Skripterstellung (GRANITE-30094).
+* Die Suchergebnisse auf der Seite [!UICONTROL  Willkommen] und die Pfadende-Vorlage sind anfällig für Cross-Site-Scripting (NPR-33719, NPR-33718).
+* Das Erstellen einer binären Eigenschaft auf einem unstrukturierten Knoten führt zu Site-übergreifendem Skripten im Dialogfeld für binäre Eigenschaften (NPR-33717).
+* Site-übergreifende Skripterstellung bei Verwendung der Option [!UICONTROL Zugriffskontrolle-Test] auf der CRX DE-Schnittstelle (NPR-33716).
+* Benutzereingaben werden beim Senden von Informationen an den Client nicht ordnungsgemäß für verschiedene Komponenten kodiert (NPR-33695).
+* Site-übergreifende Skripterstellung in der Kalenderversion für Experience Manager Inbox (NPR-33545).
+* Eine URL, die mit `childrenlist.html` endet, zeigt eine HTML-Seite anstelle einer 404-Antwort an. Solche URLs sind anfällig für Cross-Site-Scripting (NPR-33441).
+
 
 ### [!DNL Assets] {#assets-6560}
 
@@ -201,7 +210,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in der Version 6.5.6.0.[!
 * Die Laufzeitkopie des benutzerdefinierten Workflow-Modells für Assets (erstellt in `/var/workflow/models/dam`) wird gelöscht, wenn Sie [!DNL Experience Manager] 6.5 Service Pack 5 oder eine frühere Version auf [!DNL Experience Manager] 6.5 (NPR-34532) installieren. Um die Laufzeitkopie abzurufen, synchronisieren Sie die Entwurfskopie des Workflow-Modells mit der Laufzeitkopie mit der HTTP-API:
    `<designModelPath>/jcr:content.generate.json`.
 
-**Behobene Probleme in dynamischen Medien**
+**Behobene Probleme in Dynamic Media**
 
 * Wenn der Benutzer die Kodierungseinstellungen in Bearbeitungen definiert, nachdem das Video-Profil erstellt wurde, werden die Einstellungen für die intelligente Beschneidung aus den Video-Profilen entfernt (CQ-4299177).
 
@@ -219,7 +228,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in der Version 6.5.6.0.[!
 
 * Die Funktion &quot;Intelligentes Beschneiden&quot;schlägt fehl, wenn einem Profil mit mehreren Seitenverhältnissen (z. B. 11) (NPR-34082) ein Bild hinzugefügt wird.
 
-* Der Arbeitsablauf für DAM-Update-Assets wird ausgelöst, wenn der Benutzer auf der Registerkarte [!UICONTROL Workflow-Archiv] auf der Seite [!UICONTROL Workflow] unter [!UICONTROL Tools] in der Konfiguration mit dem dynamischen Media-Scene7 (CQ-4299727) nach unten blättert.[!DNL Adobe Experience Manager]
+* Der Arbeitsablauf für DAM-Update-Assets wird ausgelöst, wenn der Benutzer auf der Registerkarte [!UICONTROL Workflow-Archiv] auf der Seite [!UICONTROL Workflow] unter [!UICONTROL Tools] in der Konfiguration mit Dynamic Media Scene7 (CQ-4299727) nach unten blättert.[!DNL Adobe Experience Manager]
 
 * Symbole auf der Registerkarte [!UICONTROL Verhalten] von [!UICONTROL Viewer-Vorgabeneditor] sind nicht lokalisiert (CQ-4299026).
 
@@ -281,6 +290,8 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in der Version 6.5.6.0.[!
 
 * Die vorhandenen Benutzer einer Community-Gruppe, die über die Admin-Konsole hinzugefügt wurde, werden bei jeder Änderung in der Community-Gruppenkonsole (NPR-34315) aus der Liste entfernt.
 
+* Das `TagFilterServlet` leckt potenziell sensible Daten (NPR-33868).
+
 <!--
 * Tag filters are vulnerable to sensitive information disclosure (NPR-33868).
 -->
@@ -328,6 +339,8 @@ Nach der Installation des Add-On-Pakets [!DNL Experience Manager Forms] 6.5.6.0:
 * Wenn Sie die Feldkonfiguration zum ersten Mal öffnen, wird das Symbol Eigenschaften nicht angezeigt (CQ-4296284).
 
 * Benutzer können beim Senden eines adaptiven Formulars Sendemetadaten wie `afPath`, `afSubmissionTime` und `signers` bearbeiten. Um das Problem zu beheben, werden die Metadatenwerte von den Formulardaten auf der Clientseite entfernt. Benutzer können das `FormSubmitInfo`-Objekt verwenden, um diese Werte vom Server abzurufen (NPR-33654).
+
+* Benutzereingaben werden für [!DNL Forms]-Komponenten nicht ordnungsgemäß kodiert, wenn Informationen an den Client gesendet werden (NPR-33611).
 
 **Arbeitsablauf**
 
@@ -391,7 +404,7 @@ Zu den wichtigsten Funktionen und Verbesserungen, die in [!DNL Adobe Experience 
 
 * Verbesserte Ausnahmebehandlung in [!DNL Adobe Experience Manager Assets] der Benutzeroberfläche.
 
-* Um die Veröffentlichungs-URL für das dynamische Media Scene7 abzurufen, wird der `com.day.cq.dam.api.s7dam.scene7.ImageUrlApi`-Schnittstelle eine neue Methode `getRemoteAssetPublishURL` hinzugefügt.
+* Um die Veröffentlichungs-URL für Dynamic Media Scene7 abzurufen, wird der `com.day.cq.dam.api.s7dam.scene7.ImageUrlApi`-Schnittstelle eine neue Methode `getRemoteAssetPublishURL` hinzugefügt.
 
 * [Barrierefreiheitsverbesserungen ](#assets-6550) gemäß  [!DNL Adobe Experience Manager Assets] den Web Content Accessibility Guidelines (WCAG).
 
@@ -557,7 +570,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in der Version 6.5.5.0.[!
 
 * In Protokollen zum Öffnen einer intelligenten Sammlung mit mehr als 10.000 Assets (NPR-32980) werden seitenübergreifende Warnungen angezeigt.
 
-* Asset-Namen werden in Kleinbuchstaben geändert, wenn Assets von einem Ordner in einen anderen verschoben werden, und zwar in [!DNL Adobe Experience Manager], wenn der Scene7-Laufzeitmodus für dynamische Medien (NPR-32995) verwendet wird.
+* Asset-Namen werden in Kleinbuchstaben geändert, wenn Assets von einem Ordner in einen anderen verschoben werden, und zwar in [!DNL Adobe Experience Manager], wenn sie im Dynamic Media Scene7 Runmode (NPR-32995) arbeiten.
 
 * Ein durchsuchtes Asset kann nicht gelöscht werden, nachdem es aus den Suchergebnissen zu seinen Eigenschaften navigiert und dann zu den Suchergebnissen zurückgekehrt ist, um es zu löschen (NPR-32998).
 
@@ -571,11 +584,11 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in der Version 6.5.5.0.[!
 
 * Ausnahmen sind in Protokollen beim Öffnen der Rail-Darstellungen für eine PDF-Datei unter einem Profil mit intelligenten Zuschnitten (CQ-4294201) zu beobachten.
 
-* Bildvorgaben werden nicht veröffentlicht, wenn der Synchronisierungsmodus für dynamische Medien [!UICONTROL standardmäßig auf dem Experience Manager mit dem Scene7-Modus für dynamische Medien deaktiviert ist (CQ-4294200).]
+* Bildvorgaben werden nicht veröffentlicht, wenn [!UICONTROL Dynamic Media-Synchronisierungsmodus] auf Experience Manager mit Dynamic Media Scene7-Ausführungsmodus (CQ-4294200) standardmäßig deaktiviert ist.
 
 * Die Verarbeitung von Assets während des Massen-Uploads wird blockiert, und die Workflow-Instanz zeigt angehaltene Instanzen des DAM-Aktualisierungsassets (CQ-4293916).
 
-* Das Erstellen einer Konfiguration für dynamische Medien auf Experience Manager funktioniert, auf der Benutzeroberfläche geschieht jedoch nichts bei der Auswahl von Speichern (CQ-4292442).
+* Das Erstellen einer Dynamic Media-Konfiguration auf Experience Manager funktioniert, auf der Benutzeroberfläche geschieht jedoch nichts bei der Auswahl von Speichern (CQ-4292442).
 
 * Die Vorschau von F4V-Video-Assets funktioniert bei der progressiven Wiedergabe auf Safari/Mac nicht (CQ-4289844).
 
@@ -587,11 +600,11 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in der Version 6.5.5.0.[!
 
 * Die in Version 6.5.5.0 behobenen Leistungsprobleme lauten (CQ-4279206):
 
-   * Es dauert zu lange, bis große Binärdateien auf die Server der dynamischen Medienverarbeitung hochgeladen werden.
+   * Es dauert zu lange, bis große Binärdateien auf die Dynamic Media-Bildverarbeitungsserver hochgeladen werden.
 
-   * Die Zeit zum Generieren von Miniaturbildern auf dem Experience Manager nimmt aufgrund der Scene7-Architektur von Dynamic Media zu.
+   * Die Zeit für die Erstellung von Miniaturbildern auf dem Experience Manager nimmt aufgrund der Dynamic Media Scene7-Architektur zu.
 
-* Probleme mit der Migration von Dynamic Media Scene7 schlagen bei Kunden mit einer großen Anzahl von Assets fehl (CQ-4279206).
+* Probleme mit der Dynamic Media Scene7-Migration schlagen bei Kunden mit einer großen Anzahl von Assets fehl (CQ-4279206).
 
 * Das Layout des Video 360-Viewers ist beschädigt, wenn `setVideo` verwendet wird, und das Video wird bei Verwendung von `video= modifier` (CQ-4263201) nach unten verschoben.
 
@@ -703,7 +716,7 @@ Zu den wichtigsten Funktionen und Verbesserungen, die in Adobe Experience Manage
 
 * Das integrierte Repository (Apache Jackrabbit Oak) wird auf Version 1.10.8 aktualisiert.
 
-* Sie können jetzt ausgewählte Inhaltsunterbauten mit *Dynamische Medien - Scene7-Modus* und nicht mit `content/dam` synchronisieren.
+* Sie können jetzt selektive Inhaltsunterbauten mit *Dynamic Media - Scene7-Modus* synchronisieren, anstatt mit `content/dam`.
 
 * Die Integration des Formulardatenmodells mit dem SOAP-Webdienst unterstützt jetzt Auswahlgruppen oder Attribute für Elemente.
 
@@ -759,7 +772,7 @@ Eine vollständige Liste der in den neuesten Service Packs eingeführten Funktio
 
 * Die Schaltfläche zum Auslösen des Workflows auf der Seite zur Asset-Sammlung ist deaktiviert (NPR-32471).
 
-* Ein Ordner ohne Namen wird in SPS (Scene7 Publishing System) erstellt, während ein Asset in Experience Manager mit der Scene7-Konfiguration für dynamische Medien (NPR-32440) von einem Ordner in einen anderen verschoben wird.
+* Ein Ordner ohne Namen wird in SPS (Scene7 Publishing System) erstellt, während ein Asset in Experience Manager mit Dynamic Media Scene7-Konfiguration (NPR-32440) von einem Ordner in einen anderen verschoben wird.
 
 * Die Aktion zum Verschieben aller Assets (mit &quot;Alle auswählen&quot;und dann &quot;Verschieben&quot;) in einen Ordner mit veröffentlichten Assets schlägt fehl (NPR-32366).
 
@@ -791,7 +804,7 @@ Eine vollständige Liste der in den neuesten Service Packs eingeführten Funktio
 
 * Die Suchergebnisseite der Touch-Benutzeroberfläche (über Omniture) scrollt automatisch nach oben und verliert die Bildlaufposition des Benutzers (NPR-31307).
 
-* Auf der Seite &quot;Assets-Detail&quot;von PDF-Assets werden keine Aktionsschaltflächen angezeigt, außer den Schaltflächen &quot;An Sammlung&quot;und &quot;Hinzufügen Darstellung&quot;in Experience Manager, der im Scene7-Ausführungsmodus für dynamische Medien ausgeführt wird (CQ-4286705).
+* Auf der Seite &quot;Assets-Detail&quot;von PDF-Assets werden keine Aktionsschaltflächen angezeigt, mit Ausnahme der Schaltflächen &quot;An Sammlung&quot;und &quot;Hinzufügen Darstellung&quot;in Experience Manager, der im Dynamic Media Scene7-Ausführungsmodus ausgeführt wird (CQ-4286705).
 
 * Die Verarbeitung von Assets durch den Batch-Upload von Scene7 (CQ-4286445) dauert zu lange.
 
@@ -803,7 +816,7 @@ Eine vollständige Liste der in den neuesten Service Packs eingeführten Funktio
 
 * Auf der Detailseite des Assets (CQ-4283309) wird eine falsche Höhe des Containers eines hochgeladenen 3D-Modells, das in der Vorschau im 3D-Viewer angezeigt wird, festgestellt.
 
-* Der Karussell-Editor wird in IE 11 im Experience Manager Dynamic Media Hybrid-Modus (CQ-4255590) nicht geöffnet.
+* Karussell-Editor in IE 11 im Dynamic Media Hybrid-Modus des Experience Managers (CQ-4255590) nicht geöffnet.
 
 * Der Tastaturfokus wird in der Dropdown-Liste &quot;E-Mail&quot;im Dialogfeld &quot;Herunterladen&quot;in Chrome und Safari-Browsern (NPR-32067) angehalten.
 
@@ -1434,7 +1447,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 * Die gerenderte Miniaturansicht im Inhaltsfragment zeigt eine interne Kalenderdarstellung für das Datums- und Uhrzeitfeld an. NPR-29531: Hotfix für CQ-4269362
 * In der Coral2-Implementierung werden beim Öffnen der Registerkarte „Berechtigungen“ die Schaltflächen nicht angezeigt. Hotfix für CQ-4269419
 
-### E-Commerce
+### Commerce
 
 * Das Ausführen einer Lazy-Content-Migration für E-Commerce löst eine ConstraintViolationException aus. NPR-29247: Hotfix für CQ-4264383
 
