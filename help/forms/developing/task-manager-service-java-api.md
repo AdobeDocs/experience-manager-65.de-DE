@@ -1,8 +1,8 @@
 ---
 title: Aufgabe Manager Service Java API QuickStart(SOAP)
 seo-title: Aufgabe Manager Service Java API QuickStart(SOAP)
-description: 'null'
-seo-description: 'null'
+description: Mit dem Aufgabe Manager-Dienst können Sie Aufgaben zuweisen, Aufgaben sperren, Benutzern zugewiesene Aufgaben abrufen, Formulardaten aus Aufgaben abrufen, Formulardaten ändern, Dateianlagen abrufen und Informationen zur Aufgabe abrufen.
+seo-description: Mit dem Aufgabe Manager-Dienst können Sie Aufgaben zuweisen, Aufgaben sperren, Benutzern zugewiesene Aufgaben abrufen, Formulardaten aus Aufgaben abrufen, Formulardaten ändern, Dateianlagen abrufen und Informationen zur Aufgabe abrufen.
 uuid: fd6fceb1-865e-47a7-83fc-a63dcc2c21de
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 1%
+source-wordcount: '561'
+ht-degree: 0%
 
 ---
 
