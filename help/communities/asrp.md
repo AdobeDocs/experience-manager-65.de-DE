@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ef57d53fc780bd222abbe994fc71e133ce8a77fc
+source-git-commit: 3202866bd38779a9784e44ab470152df61c585f5
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '833'
 ht-degree: 1%
 
 ---
@@ -97,9 +97,9 @@ So stellen Sie die gleiche Konfiguration in der Umgebung &quot;Veröffentlichen&
 
 Auf AEM-Autoreninstanz:
 
-* Navigieren Sie vom Hauptmenü zu **[!UICONTROL Tools > Vorgänge > Replikation]**.
+* Navigieren Sie vom Hauptmenü zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Replikation]**
 * Wählen Sie **Baum aktivieren**
-* **Pfad** des Beginns: zu  `/etc/socialconfig/srpc/`
+* **Pfad** des Beginns: zu  `/conf/global/settings/communities/srpc/`
 * Deaktivieren Sie **Nur geändert**
 * Wählen Sie **Aktivieren**
 
@@ -144,8 +144,8 @@ Vergewissern Sie sich, dass ASRP als Standardanbieter konfiguriert wurde, indem 
 
 Rufen Sie auf allen Instanzen im Autorenmodus AEM Veröffentlichungsmodus erneut die Datenspeicherung Configuration Console auf oder überprüfen Sie das AEM Repository.
 
-In JCR, wenn [/etc/socialconfig](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
+Wenn in JCR [/conf/global/settings/Communities](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
 
-* Enthält keinen [srpc](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc)-Knoten, d. h., der Datenspeicherung-Provider ist JSRP.
-* Wenn der Knoten srpc vorhanden ist und den Knoten [defaultConfiguration](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration) enthält, definieren die Eigenschaften der Standardkonfiguration ASRP als Standardanbieter.
+* Enthält keinen [srpc](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp)-Knoten, d. h., der Datenspeicherung-Provider ist JSRP.
+* Wenn der Knoten srpc vorhanden ist und den Knoten [defaultconfiguration](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp/defaultconfiguration) enthält, definieren die Eigenschaften der Standardkonfiguration ASRP als Standardanbieter.
 
