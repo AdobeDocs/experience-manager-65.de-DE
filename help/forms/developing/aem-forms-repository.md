@@ -1,8 +1,8 @@
 ---
 title: Arbeiten mit AEM Forms Repository
 seo-title: Arbeiten mit AEM Forms Repository
-description: 'null'
-seo-description: 'null'
+description: Verwalten Sie das AEM Forms-Repository, um Ordner-, Schreib-, Listen-, Lese-, Aktualisierungs- und Suchressourcen mithilfe der Java-API und der Web Service-API zu erstellen. Erfahren Sie außerdem, wie Sie Ressourcenbeziehungen erstellen, Ressourcen sperren und löschen können.
+seo-description: Verwalten Sie das AEM Forms-Repository, um Ordner, Schreiben, Liste, Lesen, Aktualisieren von Ressourcen und Suchressourcen mit der Java-API und der Web Service-API zu erstellen. Erfahren Sie außerdem, wie Sie Ressourcenbeziehungen erstellen, Ressourcen sperren und löschen können.
 uuid: 6ead49f9-ca0d-4ee4-86a6-0a9ced6ec4f8
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '9076'
+source-wordcount: '9143'
 ht-degree: 2%
 
 ---
