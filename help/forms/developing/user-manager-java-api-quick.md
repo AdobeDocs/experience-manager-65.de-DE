@@ -1,8 +1,8 @@
 ---
 title: User Manager Java API Quick Beginn(SOAP)
 seo-title: User Manager Java API Quick Beginn(SOAP)
-description: 'null'
-seo-description: 'null'
+description: Verwenden Sie die User Manager-API, um Benutzer hinzuzufügen, Benutzer zu löschen, Gruppen zu erstellen, Benutzer und Gruppen zu verwalten, Rollen und Berechtigungen zu verwalten, Benutzer programmgesteuert zu synchronisieren und die Voreinstellungsknoten programmatisch zu verwalten.
+seo-description: Verwenden Sie die User Manager-API, um Benutzer hinzuzufügen, Benutzer zu löschen, Gruppen zu erstellen, Benutzer und Gruppen zu verwalten, Rollen und Berechtigungen zu verwalten, Benutzer programmgesteuert zu synchronisieren und die Voreinstellungsknoten programmatisch zu verwalten.
 uuid: 0a2aa4ab-9329-485f-a30e-47bb471ce1b5
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: e0c20fd2-b084-4f61-936c-5282826a8d3d
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 1%
+source-wordcount: '529'
+ht-degree: 0%
 
 ---
 
