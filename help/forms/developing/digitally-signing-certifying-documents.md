@@ -1,8 +1,8 @@
 ---
 title: Digitales Signieren und Zertifizieren von Dokumenten
 seo-title: Digitales Signieren und Zertifizieren von Dokumenten
-description: 'null'
-seo-description: 'null'
+description: Mit dem Signature-Dienst können Sie einem PDF-Dokument digitale Signaturfelder hinzufügen und löschen, die Signaturfelder in einem PDF-Dokument abrufen, Signaturfelder ändern, PDF-Dokumente digital signieren, PDF-Dokumente zertifizieren, digitale Signaturen in einem PDF-Dokument validieren, alle digitalen Signaturen in einem PDF-Dokument validieren und eine digitale Signatur aus einem Signaturfeld entfernen.
+seo-description: Mit dem Signature-Dienst können Sie einem PDF-Dokument digitale Signaturfelder hinzufügen und löschen, die Signaturfelder in einem PDF-Dokument abrufen, Signaturfelder ändern, PDF-Dokumente digital signieren, PDF-Dokumente zertifizieren, digitale Signaturen in einem PDF-Dokument validieren, alle digitalen Signaturen in einem PDF-Dokument validieren und eine digitale Signatur aus einem Signaturfeld entfernen.
 uuid: 6331de8a-2a9c-45bf-89d2-29f1ad5cc856
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '16977'
+source-wordcount: '17099'
 ht-degree: 8%
 
 ---
