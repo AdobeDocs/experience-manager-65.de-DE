@@ -1,8 +1,8 @@
 ---
 title: Output Service Java API Quick Beginn(SOAP)
 seo-title: Output Service Java API Quick Beginn(SOAP)
-description: 'null'
-seo-description: 'null'
+description: Verwenden Sie den Output-Dienst Java API Quick Beginn (SOAP), um ein PDF-Dokument zu erstellen, ein PDF-Dokument basierend auf der Anwendungs-XDP-Datei zu erstellen, ein PDF/A-Dokument zu erstellen, Dokumente an den Output-Dienst zu übergeben, ein Dokument im AEM Forms-Repository an den Output-Dienst weiterzugeben, ein PDF-Dokument auf Grundlage von Fragmenten zu erstellen, in eine Datei zu drucken, einen Druckstrom an einen Netzwerkdrucken, mehrere PDF-Dateien zu erstellen, Suchregeln, Suchregeln zu erstellen und eine PDF-Dokument.
+seo-description: Verwenden Sie den Output-Dienst Java API Quick Beginn (SOAP), um ein PDF-Dokument zu erstellen, ein PDF-Dokument basierend auf der Anwendungs-XDP-Datei zu erstellen, ein PDF/A-Dokument zu erstellen, Dokumente an den Output-Dienst zu übergeben, ein Dokument im AEM Forms-Repository an den Output-Dienst weiterzugeben, ein PDF-Dokument auf Grundlage von Fragmenten zu erstellen, in eine Datei zu drucken, einen Druckstrom an einen Netzwerkdrucken, mehrere PDF-Dateien zu erstellen, Suchregeln, Suchregeln zu erstellen und eine PDF-Dokument.
 uuid: 34cb1fc7-50a9-4db8-aed1-dbd3480d1323
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: f4415aeb-5c1b-4087-b60f-b2ea952c52b5
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1405'
 ht-degree: 0%
 
 ---
