@@ -1,8 +1,8 @@
 ---
 title: Bearbeitung von übermittelten Forms
 seo-title: Bearbeitung von übermittelten Forms
-description: 'null'
-seo-description: 'null'
+description: Mit dem Forms-Dienst können Sie die gesendeten Daten abrufen, die in ein interaktives Formular eingegeben wurden. Der Benutzer kann die Formulardaten in den Formaten XML, PDF und URL UTF-16 senden.
+seo-description: Mit dem Forms-Dienst können Sie die gesendeten Daten abrufen, die in ein interaktives Formular eingegeben wurden. Der Benutzer kann die Formulardaten in den Formaten XML, PDF und URL UTF-16 senden.
 uuid: 673b28f1-f023-4da8-a6a0-c5ff921c5f5d
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 translation-type: tm+mt
-source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '2867'
+source-wordcount: '2921'
 ht-degree: 2%
 
 ---
@@ -88,7 +88,7 @@ Die folgende Tabelle beschreibt die Schritte in diesem Diagramm.
  </thead>
  <tbody>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>Eine Webseite enthält einen Link, der auf ein Java-Servlet zugreift, das den Forms-Dienst aufruft.</p></td>
   </tr>
   <tr>
