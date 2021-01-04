@@ -11,10 +11,10 @@ topic-tags: Security
 discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+source-git-commit: 93ee9338fc2e78d01a9b62e8040c4674262ef6be
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 77%
+source-wordcount: '800'
+ht-degree: 74%
 
 ---
 
@@ -160,7 +160,7 @@ Alternativ können Sie das SSL-Setup auch automatisieren, indem Sie ein Paket ho
 
 ### Generieren eines Paares aus privatem Schlüssel/Zertifikat für die Verwendung im Assistenten {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
-Nachstehend finden Sie ein Beispiel für das Erstellen eines selbstsignierten Zertifikats im DER-Format, das der SSL-Assistent verwenden kann.
+Nachstehend finden Sie ein Beispiel für das Erstellen eines selbstsignierten Zertifikats im DER-Format, das der SSL-Assistent verwenden kann. Installieren Sie OpenSSL basierend auf dem Betriebssystem, öffnen Sie die OpenSSL-Eingabeaufforderung und ändern Sie den Ordner in den Ordner, in dem Sie den privaten Schlüssel/das Zertifikat generieren möchten.
 
 >[!NOTE]
 >
@@ -176,7 +176,7 @@ Nachstehend finden Sie ein Beispiel für das Erstellen eines selbstsignierten Ze
 1. Erstellen Sie dann eine CSR-Anforderung (Certificate Signing Request) mit einem privaten Schlüssel:
 
    ```shell
-   openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj '/CN=localhost'
+   openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj "/CN=localhost"
    ```
 
 1. Generieren Sie das SSL-Zertifikat und melden Sie sich mit dem privaten Schlüssel an. In diesem Beispiel läuft dieser in einem Jahr ab jetzt ab:
