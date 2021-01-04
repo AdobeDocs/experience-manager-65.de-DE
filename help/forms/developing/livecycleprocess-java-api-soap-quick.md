@@ -1,8 +1,8 @@
 ---
 title: LiveCycleProcess Java API(SOAP)Quick Beginn
 seo-title: LiveCycleProcess Java API(SOAP)Quick Beginn
-description: 'null'
-seo-description: 'null'
+description: 'Verwenden Sie den LiveCycleProcess Java API (SOAP) Quick-Beginn, um nach Prozessinstanzen zu suchen, Prozessinstanzen auszusetzen, Prozessinstanzen auszusetzen, Prozessinstanzen zu beenden, Prozessinstanzen zu beenden, Prozessdaten zu bereinigen und den Auftragsstatus abzurufen. '
+seo-description: Verwenden Sie den LiveCycleProcess Java API (SOAP) Quick-Beginn, um nach Prozessinstanzen zu suchen, Prozessinstanzen auszusetzen, Prozessinstanzen auszusetzen, Prozessinstanzen zu beenden, Prozessinstanzen zu beenden, Prozessdaten zu bereinigen und den Auftragsstatus abzurufen.
 uuid: ad14fb50-8dd5-44e0-9e48-f0f0334e04d6
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9c17fa2d-0337-4204-822e-dcdafebf0e4d
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 1%
+source-wordcount: '467'
+ht-degree: 0%
 
 ---
 
