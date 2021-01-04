@@ -1,8 +1,8 @@
 ---
 title: AEM Forms mit Web Services aufrufen
 seo-title: AEM Forms mit Web Services aufrufen
-description: 'null'
-seo-description: 'null'
+description: Rufen Sie AEM Forms-Prozesse mit Webdiensten auf, die die WSDL-Generierung vollständig unterstützen.
+seo-description: Rufen Sie AEM Forms-Prozesse mit Webdiensten auf, die die WSDL-Generierung vollständig unterstützen.
 uuid: 66bcd010-c476-4b66-831d-a48307d8d67a
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 translation-type: tm+mt
-source-git-commit: e5c2385c29e2d20d453e2d1496f7d459d1c55876
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '9966'
-ht-degree: 7%
+source-wordcount: '9990'
+ht-degree: 6%
 
 ---
 
