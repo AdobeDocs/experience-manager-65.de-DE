@@ -1,8 +1,8 @@
 ---
 title: Arbeiten mit Berechtigungen
 seo-title: Arbeiten mit Berechtigungen
-description: 'null'
-seo-description: 'null'
+description: Importieren Sie Anmeldeinformationen mit der Trust Manager-API und der Java-API nach AEM Forms. Erfahren Sie außerdem, wie Sie Anmeldeinformationen mit der Trust Manager-API und der Java-API löschen.
+seo-description: Importieren Sie Anmeldeinformationen mit der Trust Manager-API und der Java-API nach AEM Forms. Erfahren Sie außerdem, wie Sie Anmeldeinformationen mit der Trust Manager-API und der Java-API löschen.
 uuid: b794428f-49bf-4a91-bc5f-d855881f4f38
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: bc06d9bd-af6c-47b1-b46f-aab990ef5816
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1102'
 ht-degree: 12%
 
 ---
