@@ -1,8 +1,8 @@
 ---
 title: JavaAPI Quick Beginn (SOAP) des Formulardatenintegrationsdienstes
 seo-title: JavaAPI Quick Beginn (SOAP) des Formulardatenintegrationsdienstes
-description: 'null'
-seo-description: 'null'
+description: Verwenden Sie den Forms Data Integration-Dienst, um Daten in ein PDF-Formular zu importieren und Daten aus einem PDF-Formular mithilfe der Java-API zu exportieren.
+seo-description: Verwenden Sie den Forms Data Integration-Dienst, um Daten in ein PDF-Formular zu importieren und Daten aus einem PDF-Formular mithilfe der Java-API zu exportieren.
 uuid: bde8e83d-56d3-4331-a025-82b327c219b7
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 91b738ec-aa00-4f05-bf42-2574ced8d993
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 2%
+source-wordcount: '286'
+ht-degree: 1%
 
 ---
 
