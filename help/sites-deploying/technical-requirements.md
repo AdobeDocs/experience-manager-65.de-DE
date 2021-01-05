@@ -375,7 +375,7 @@ zum Beispiel `https://www.yourserver.com:4502`
 
 ### Anforderungen für das Add-on AEM Dynamic Media {#requirements-for-aem-dynamic-media-add-on}
 
-AEM Dynamic Media ist standardmäßig deaktiviert. Siehe hier zu [Aktivieren Sie Dynamische Medien](/help/assets/config-dynamic.md#enabling-dynamic-media).
+AEM Dynamic Media ist standardmäßig deaktiviert. Siehe hier zu [Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media) aktivieren.
 
 Wenn Dynamic Media aktiviert ist, gelten die folgenden zusätzlichen technischen Anforderungen. 
 
