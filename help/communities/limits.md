@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Mitgliederbeitragsbeschränkungen {#member-contribution-limits}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Die Beitragsbegrenzung bietet die Möglichkeit, die Beiträge von Community-Mitgliedern zu beschränken, um gegen Spam zu schützen.
 
