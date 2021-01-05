@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 56%
+ht-degree: 57%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 56%
 + [[!DNL Experience Manager] 6.5 Versionshinweise zu Assets](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html)
 + [Über DAM](assets.md)
 + [Bewährte Verfahren für Assets](best-practices-for-assets.md)
-+ [Zugänglichkeit in [!DNL Assets]](accessibility.md)
++ [Barrierefreiheit in  [!DNL Assets]](accessibility.md)
 + Experience Manager-Assets {#using} verwenden
    + [[!DNL Assets] startseite](assets-home-page.md)
    + [Suchen nach digitalen Assets](search-assets.md)
@@ -43,8 +43,8 @@ ht-degree: 56%
    + [Konfigurieren von Dynamic Media – Scene7-Modus](config-dms7.md)
    + [Konfigurieren von Dynamic Media – Hybridmodus](config-dynamic.md)
    + [Fehlerbehebung in Dynamic Media – Scene7-Modus](troubleshoot-dms7.md)
-   + [Barrierefreiheit in dynamischen Medien](accessibility-dm.md)
-   + [Migration von dynamischen Medien - Hybridmodus zu dynamischen Medien - S7-Modus](migrate-from-hybrid-to-dms7.md)
+   + [Zugänglichkeit in Dynamic Media](accessibility-dm.md)
+   + [Migration von Dynamic Media - Hybridmodus zu Dynamic Media - S7-Modus](migrate-from-hybrid-to-dms7.md)
    + [Verwalten von Assets mit Dynamic Media](managing-assets.md)
    + [Best Practices für die Optimierung der Bildqualität](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Verwalten von Viewer-Vorgaben für Dynamic Media](managing-viewer-presets.md)
@@ -55,21 +55,21 @@ ht-degree: 56%
    + [Bildprofile für Dynamic Media](image-profiles.md)
    + [Intelligente Bildbearbeitung](imaging-faq.md)
    + [Video](s7-video.md)
-   + [Hinzufügen von Funktionen für dynamische Medien zu einer Seite](scene7.md)
+   + [Hinzufügen von Dynamic Media-Funktionen zu einer Seite](scene7.md)
    + [Bereitstellung von Inhalten per HTTP/2](http2.md)
    + [Bereitstellen von Dynamic Media-Assets](delivering-dynamic-media-assets.md)
    + [Aktivieren des Hotlink-Schutzes in Dynamic Media](hotlink-protection.md)
    + [3D-Unterstützung](/help/assets/assets-3d.md)
-   + [Bild-Sets](image-sets.md)
+   + [Bildsets](image-sets.md)
    + [Panoramabilder](panoramic-images.md)
    + [Sets für gemischte Medien](mixed-media-sets.md)
-   + [Rotations-Sets](spin-sets.md)
-   + [Video in dynamischen Medien](video.md)
+   + [Rotationssets](spin-sets.md)
+   + [Video in Dynamic Media](video.md)
    + [Karussellbanner](carousel-banners.md)
    + [Interaktive Bilder](interactive-images.md)
    + [Interaktive Videos](interactive-videos.md)
    + [360-Grad-VR-Video](/help/assets/360-video.md)
-   + [Integrieren von Dynamic Media-Viewern mit Adobe Analytics und Adobe Launch](/help/assets/launch.md)
+   + [Integrieren von Dynamic Media-Viewern mit Adobe Analytics und Adobe Experience Platform Launch](/help/assets/launch.md)
    + [Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups](custom-pop-ups.md)
    + [Bereitstellen von optimierten Bildern für eine responsive Site](responsive-site.md)
    + [Anzeigen einer Vorschau von Dynamic Media-Assets](previewing-assets.md)
@@ -79,7 +79,7 @@ ht-degree: 56%
    + [Verwenden von Regelsätzen zum Konvertieren von URLs](using-rulesets-to-transform-urls.md)
    + [Veröffentlichen von Dynamic Media-Assets](publishing-dynamicmedia-assets.md)
    + [Arbeiten mit selektiver Veröffentlichung in Dynamic Media](selective-publishing.md)
-   + [Invalidierung des CDN-Cache mithilfe von Dynamic Media Classic](invalidate-cdn-cache-dynamic-media.md)
+   + [Invalidierung des CDN-Cache mithilfe von Dynamic Media](invalidate-cdn-cache-dynamic-media.md)
    + [Invalidierung des CDN-Cache mithilfe von Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
    + [Installieren von Feature Pack 18912 für die Migration von Massenelementen](bulk-ingest-migrate.md)
    + [Arbeiten mit Selektoren](working-with-selectors.md)
@@ -114,7 +114,7 @@ ht-degree: 56%
    + [PDF-Rasterfunktion verwenden](aem-pdf-rasterizer.md)
    + [Upload-Beschränkungen konfigurieren](configuring-asset-upload-restrictions.md)
    + [[!DNL Experience Manager] and [!DNL Creative Cloud] integration](aem-cc-integration-best-practices.md)
-   + [Integrieren mit [!DNL InDesign Server]](indesign.md)
+   + [Integrieren mit  [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management in Assets](drm.md)
    + [Demopaket für Asset-Einblicke verwenden](use-demo-package-for-asset-insights.md)
    + [Best Practices für Dateiformate in Assets](assets-file-format-best-practices.md)
@@ -127,8 +127,8 @@ ht-degree: 56%
    + [Asset-Vorlagen](asset-templates.md)
    + [Bewährte Verfahren zum Freigeben von Ordnern für [!DNL Creative Cloud]](aem-cc-folder-sharing-best-practices.md)
 + Brand Portal {#brandportal}
-   + [ [!DNL Assets] Configurewith [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
-   + [Veröffentlichen von Assets auf [!DNL Brand Portal]](brand-portal-publish-assets.md)
+   + [Konfigurieren von [!DNL Assets] mit  [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Veröffentlichen von Assets in  [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [Veröffentlichen von Ordnern in [!DNL Brand Portal]](brand-portal-publish-folder.md)
    + [Veröffentlichen von Sammlungen auf [!DNL Brand Portal]](brand-portal-publish-collection.md)
 + Inhaltsfragmente {#fragments}
