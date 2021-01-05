@@ -39,7 +39,7 @@ Um eine Liste von Formularen oder Vorlagen Ansicht, navigieren Sie in der [!DNL 
 |---|---|---|
 | [!UICONTROL default] |  | Dies ist das Basisformular für Assets. |
 |  | Die folgenden untergeordneten Formulare übernehmen die Eigenschaften des Formulars [!UICONTROL default]: |  |
-|  | <ul><li>[!UICONTROL dm_video]</li></ul> | Schema-Formular für Videos mit dynamischen Medien. |
+|  | <ul><li>[!UICONTROL dm_video]</li></ul> | Schema-Formular für Dynamic Media-Videos. |
 |  | <ul><li>[!UICONTROL image]</li></ul> | Schema-Formular für Bilder mit dem MIME-Typ wie `image/jpeg` und `image/png`. <br> Das   Bildformular verfügt über die folgenden Vorlagen für untergeordnete Formulare: <ul><li> [!UICONTROL jpeg]: Schema-Formular für Assets mit  [!UICONTROL JPEG]-Untertyp.</li> <li>[!UICONTROL tiff]: Schema-Formular für die Assets mit dem Untertyp TIFF.</li></ul> |
 |  | <ul><li>[!UICONTROL Anwendung]</li></ul> | Schema-Formular für Assets mit MIME-Typ wie `application/pdf` und `application/zip`. <br>[!UICONTROL pdf]: Schema-Formular für Assets mit dem Untertyp PDF. |
 |  | <ul><li>[!UICONTROL Video]</li></ul> | Schema-Formular für Video-Assets mit MIME-Typ wie `video/avi` und `video/mp4`. |
