@@ -42,7 +42,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 <table>
  <tbody>
   <tr>
-   <th>Ort</th>
+   <th>Standort</th>
    <th>Kürzel</th>
    <th>Beschreibung</th>
   </tr>
@@ -164,7 +164,7 @@ Desktop-Entwicklern stehen bei Verwendung des Seiteneditors zusätzliche Tastatu
 <table>
  <tbody>
   <tr>
-   <th>Ort</th>
+   <th>Standort</th>
    <th>Kürzel</th>
    <th>Beschreibung</th>
   </tr>
