@@ -316,7 +316,7 @@ Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-author
 
    Sie können in einer Vorschau anzeigen, wie das Karussellbanner aussehen wird. Siehe [(Optional) Anzeigen einer Vorschau für Karussellbanner](#optional-previewing-carousel-banners).
 
-1. Tippen Sie auf **[!UICONTROL Speichern.]**
+1. Tippen Sie auf **[!UICONTROL Speichern]**.
 1. Veröffentlichen Sie das Karussellset. Durch das Veröffentlichen wird der Einbettungs-Code oder die URL erstellt, den/die Sie auf der Web-Seite verwenden können. Wenn Sie ein AEM Sites-Kunde sind, können Sie Ihrer Web-Seite das Karussellset direkt hinzufügen.
 
    Siehe [Veröffentlichen von Assets](/help/assets/publishing-dynamicmedia-assets.md).
