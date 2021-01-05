@@ -18,9 +18,9 @@ ht-degree: 88%
 
 # Veröffentlichen von Dynamic Media-Assets  {#publishing-dynamic-media-assets}
 
-Sie veröffentlichen Ihre Dynamic Media-Assets, indem Sie die bereits hochgeladenen Assets auswählen und auf **[!UICONTROL Veröffentlichen]** oder **[!UICONTROL Quick Publish tippen.]** Nachdem Sie Ihre dynamischen Medien-Assets veröffentlicht haben, können Sie sie über eine URL oder durch Einbetten des Codes auf der Seite in eine Webseite einfügen.
+Sie veröffentlichen Ihre Dynamic Media-Assets, indem Sie die bereits hochgeladenen Assets auswählen und auf **[!UICONTROL Veröffentlichen]** oder **[!UICONTROL Quick Publish tippen.]** Nachdem Sie Ihre Dynamic Media-Assets veröffentlicht haben, können Sie sie über eine URL oder durch Einbetten des Seitencodes in eine Webseite einbinden.
 
-Sie können hochgeladene Assets auch umgehend und ohne Benutzerinteraktion veröffentlichen. Siehe [Dynamische Medien konfigurieren - Scene7-Modus.](config-dms7.md)
+Sie können hochgeladene Assets auch umgehend und ohne Benutzerinteraktion veröffentlichen. Siehe [Konfigurieren von Dynamic Media - Scene7-Modus.](config-dms7.md)
 Sie können Assets für Dynamic Media oder AEM auch selektiv veröffentlichen (sich gegenseitig ausschließend), indem Sie auf der Ordnerebene die Option **[!UICONTROL Selektive Veröffentlichung]** verwenden. Siehe [Arbeiten mit selektiver Veröffentlichung in Dynamic Media](/help/assets/selective-publishing.md).
 
 In der **[!UICONTROL Kartenansicht]** wird ein kleines Globussymbol direkt unter dem Namen eines Assets und links von Datum und Uhrzeit angezeigt, um anzuzeigen, dass es veröffentlicht wurde. In der **[!UICONTROL Listenansicht]** gibt eine Spalte **[!UICONTROL Veröffentlicht]** an, welche Assets veröffentlicht sind.
@@ -33,7 +33,7 @@ Wenn Sie Video-Assets sofort nach der Kodierung veröffentlichen möchten, achte
 
 Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwebapplication.md).
 
-Siehe auch [Einbetten des Video- oder Bild-Viewers für dynamische Medien auf einer Webseite](embed-code.md)
+Siehe auch [Einbetten des Dynamic Media Video- oder Image-Viewers in eine Webseite](embed-code.md)
 
 >[!NOTE]
 >
