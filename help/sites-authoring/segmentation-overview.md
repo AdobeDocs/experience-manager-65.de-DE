@@ -1,8 +1,8 @@
 ---
 title: Grundlegendes zur Segmentierung
 seo-title: Grundlegendes zur Segmentierung
-description: Die Segmentierung ist ein wichtiger Faktor, der bei der Erstellung einer Kampagne berücksichtigt werden muss.
-seo-description: Die Segmentierung ist ein wichtiger Faktor, der bei der Erstellung einer Kampagne berücksichtigt werden muss.
+description: Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung
+seo-description: Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung
 uuid: 900da068-5dda-4b6b-8be3-4b7ad614126d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -20,7 +20,7 @@ ht-degree: 68%
 
 # Grundlegendes zur Segmentierung{#understanding-segmentation}
 
-Die Segmentierung ist ein wichtiger Faktor, der bei der Erstellung einer Kampagne berücksichtigt werden muss. In den meisten Fällen müssen vor dem Start einer Kampagne bereits Segmente definiert sein.
+Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. In den meisten Fällen müssen vor dem Start einer Kampagne bereits Segmente definiert sein.
 
 Besucher von Websites haben unterschiedliche Interessen und Ziele, wenn sie eine Site besuchen. Das Verstehen dieser Ziele und das Erfüllen der Erwartungen sind wichtige Erfolgsfaktoren beim Onlinemarketing.
 
@@ -62,7 +62,7 @@ Im Rahmen der Segmentierung wird die folgende Terminologie verwendet:
 * Größe der Familie
 * Familienstand
 * Geschlecht
-* Ort
+* Standort
 
 **Abgeleitete** EigenschaftenEinige demografische Eigenschaften lassen sich nur schwer ohne Registrierung ermitteln, können aber durch Kombination von verhaltensbezogenen und demografischen Eigenschaften abgeleitet werden.
 
