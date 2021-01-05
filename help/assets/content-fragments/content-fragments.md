@@ -60,11 +60,11 @@ Diese Inhaltsfragmente können dann zusammengestellt werden, um Erlebnisse über
 
 ## Inhaltsfragmente und Content Services          {#content-fragments-and-content-services}
 
-Mit den AEM Content Services können die Beschreibung und Bereitstellung von Inhalten in/über AEM über einen Fokus auf Webseiten hinweg generalisiert werden.
+Mit den AEM Content Services können die Beschreibung und Bereitstellung von Inhalten in/über AEM über einen Fokus auf Web-Seiten hinweg generalisiert werden.
 
-Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditionellen AEM-Webseiten sind, und nutzen standardisierte Methoden, die von allen Clients genutzt werden können. Diese Kanäle können Folgendes sein:
+Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditionellen AEM-Web-Seiten sind, und nutzen standardisierte Methoden, die von allen Clients genutzt werden können. Diese Kanäle können Folgendes sein:
 
-* Einzelseiten-Webanwendungen
+* Single Page Applications
 * native Mobile Apps
 * weitere AEM-externe Kanäle und Touchpoints
 
