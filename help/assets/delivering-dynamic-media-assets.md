@@ -42,7 +42,7 @@ Weitere Informationen finden Sie in den folgenden Themen:
 * [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/linking-urls-to-yourwebapplication.md)
 * [Bereitstellen von optimierten Bildern für eine responsive Site](/help/assets/responsive-site.md)
 * [Bereitstellung von Inhalt über HTTP/2 ](/help/assets/http2.md)
-* [Ungültigmachen des CDN-Cache mithilfe von Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
+* [Ungültigmachen des CDN-Cache über Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
 * [Verwenden von Regelsätzen zum Konvertieren von URLs](/help/assets/using-rulesets-to-transform-urls.md)
 
 
