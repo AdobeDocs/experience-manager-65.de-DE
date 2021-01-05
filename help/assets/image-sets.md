@@ -54,7 +54,7 @@ So schaffen Sie einen schnellen Einstieg:
    Sie können Bildsets auch automatisch über [Stapelsatzvorgaben](/help/assets/config-dms7.md) erstellen.
    >[!IMPORTANT]
    >
-   >Stapelsätze werden vom IPS (Image Production System) im Rahmen der Asset-Erfassung erstellt und sind nur im Modus &quot;Dynamische Medien - Scene7&quot;verfügbar.
+   >Stapelsätze werden vom IPS (Image Production System) im Rahmen der Asset-Erfassung erstellt und sind nur im Dynamic Media - Scene7-Modus verfügbar.
 
    Siehe [Vorbereiten von Bildset-Assets auf das Hochladen und Hochladen von Dateien](#uploading-assets-in-image-sets).
 
@@ -176,7 +176,7 @@ Sie können Bildsets entweder in der Benutzeroberfläche oder automatisch über 
 
 >[!IMPORTANT]
 >
->Stapelsätze werden im Rahmen der Asset-Erfassung vom IPS [Image Production System] erstellt und stehen nur im Modus &quot;Dynamische Medien - Scene7&quot;zur Verfügung.)
+>Stapelsätze werden im Rahmen der Asset-Erfassung vom IPS [Image Production System] erstellt und sind nur im Dynamic Media - Scene7-Modus verfügbar.)
 
 Mit Stapelsatzvorgaben erstellte Sets werden jedoch *nicht* in der Benutzeroberfläche angezeigt. Sie können diese Sets auf drei verschiedene Arten anzeigen. (Diese Methoden sind auch verfügbar, wenn Sie die Bildsets in der Benutzeroberfläche erstellt haben.)
 
@@ -188,7 +188,7 @@ Mit Stapelsatzvorgaben erstellte Sets werden jedoch *nicht* in der Benutzeroberf
 
    ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* In der Suche können Sie **[!UICONTROL Filter]** auswählen, dann **[!UICONTROL Dynamische Medien]** erweitern und **[!UICONTROL Sätze.]**
+* In der Suche können Sie **[!UICONTROL Filter]** auswählen, dann **[!UICONTROL Dynamic Media]** erweitern und **[!UICONTROL Sets auswählen.]**
 
    Die Suche gibt als Ergebnis Sets zurück, die in der Benutzeroberfläche manuell oder mit Stapelsatzvorgaben automatisch erstellt wurden. Im Gegensatz zu AEM-Suchen, die mit dem Suchkriterium „Enthält“ durchgeführt werden, wird die Suchabfrage für automatisierte Sets mithilfe des Suchkriteriums „Beginnt mit“ durchgeführt. Das Festlegen des Filters auf **[!UICONTROL Sets]** ist die einzige Möglichkeit, um automatisierte Sets zu suchen.
 
