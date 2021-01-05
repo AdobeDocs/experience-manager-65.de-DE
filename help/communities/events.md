@@ -20,7 +20,7 @@ ht-degree: 5%
 
 # OSGi-Ereignis für Communities-Komponenten {#osgi-events-for-communities-components}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Wenn Mitglieder mit Communities-Funktionen interagieren, werden OSGi-Ereignis gesendet, die asynchrone Listener auslösen können, z. B. Benachrichtigungen oder Gamification (Scoring und Abzeichen).
 
