@@ -1,6 +1,6 @@
 ---
 title: Installieren von Feature Pack 18912 für die Migration von Massenelementen
-description: Mit dem Feature Pack 18912 können Sie Assets per FTP stapelweise erfassen oder Assets von Dynamic Media Classic auf AEM in dynamische Medien migrieren. Dieses optionale Feature Pack ist über den Adobe-Support verfügbar.
+description: Mit Feature Pack 18912 können Sie Assets per FTP stapelweise erfassen oder Assets von Dynamic Media Classic auf AEM nach Dynamic Media migrieren. Dieses optionale Feature Pack ist über den Adobe-Support verfügbar.
 uuid: 45c2f5f8-4368-4d7b-a43e-fe96cfb272fd
 contentOwner: Rick Brough
 topic-tags: dynamic-media
@@ -21,17 +21,17 @@ ht-degree: 24%
 
 Die Installation von Feature Pack 18912 ist *optional*.
 
-Mit dem Feature Pack 18912 können Sie Assets entweder per FTP in Dynamische Medien - Scene7-Modus stapeln oder Assets aus Dynamischer Medienklassik in den Modus Dynamische Medien - Scene7 auf AEM migrieren. Das Feature Pack ist unter [Adobe Professional Services](https://www.adobe.com/de/experience-cloud/consulting-services.html) verfügbar.
+Mit Feature Pack 18912 können Sie Assets per FTP AEM direkt in den Dynamic Media - Scene7-Modus importieren oder Assets von Dynamic Media Classic in den Dynamic Media - Scene7-Modus migrieren, AEM. Das Feature Pack ist unter [Adobe Professional Services](https://www.adobe.com/de/experience-cloud/consulting-services.html) verfügbar.
 
 >[!NOTE]
 >
->Es ist zwar möglich, mit dem Feature Pack eigene Assets von Dynamic Media Classic zum Dynamic Media - Scene7-Modus zu migrieren, AEM Assets jedoch mit der FTP-Funktion in Dynamic Media Classic stapelweise zu migrieren. Aufgrund der damit verbundenen Komplexität empfiehlt die Adobe diese Methode jedoch nicht.**
+>Obwohl Sie das Feature Pack verwenden können, um Assets von Dynamic Media Classic in den Dynamic Media - Scene7-Modus zu migrieren, AEM Assets mit der FTP-Funktion in Dynamic Media Classic stapelweise zu migrieren, empfiehlt die Adobe diese Methode aufgrund der Komplexität, die damit verbunden ist, nicht.**
 >
 >Daher werden Migrationspaket wie dieses nur als Teil eines Migrationsprojekts unterstützt, wenn es über *Adobe Professional Services* durchgeführt wird.[](https://www.adobe.com/experience-cloud/consulting-services.html)
 
 Bevor Sie das Feature Pack installieren können, müssen Sie zunächst einen Dienstbenutzer erstellen und diese Informationen zur Unterstützung der Adobe bereitstellen.
 
-Siehe auch [Dynamische Medien konfigurieren - Scene7-Modus](/help/assets/config-dms7.md).
+Siehe auch [Konfigurieren von Dynamic Media - Scene7-Modus](/help/assets/config-dms7.md).
 
 **So installieren Sie Feature Pack 18912 für die Massenmigration von Assets**
 
