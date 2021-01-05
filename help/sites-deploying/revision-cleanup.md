@@ -574,7 +574,7 @@ Die Liste enthält einige Befehlszeilenparameter, wie im Folgenden beschrieben:
 
 * **-mmap.** Sie können dies als true oder false festlegen. Wenn „true“ festgelegt ist, wird der Zugriff mit Speicherzuordnung verwendet. Wenn „false“ festgelegt ist, wird der Dateizugriff verwendet. Wenn kein Wert festgelegt ist, wird auf 64-Bit-Systemen der Zugriff mit Speicherzuordnung und auf 32-Bit-Systemen der Dateizugriff verwendet. Unter Windows wird immer der reguläre Dateizugriff erzwungen, weshalb diese Option ignoriert wird. **Dieser Parameter hat den Parameter -Dtar.memoryMapped ersetzt.**
 
-* **-Dupdate.limit**. Definiert den Schwellenwert für das Löschen temporärer Transaktionen auf der Festplatte. Der Standardwert ist 10000.
+* **-Dupdate.limit**. Definiert den Schwellenwert für das Löschen temporärer Transaktionen auf der Festplatte. Der Standardwert ist 10000. 
 
 * **-Dcompress-interval**. Anzahl der Komprimierungszuordnungseinträge, die bis zur Komprimierung der aktuellen Zuordnung beibehalten werden. Standard: 1000000. Sie sollten für diesen Wert eine noch höhere Zahl festlegen, um einen schnelleren Durchsatz zu erzielen, falls nicht genügend Heap-Speicher vorhanden ist. **Dieser Parameter wurde in Oak Version 1.6 entfernt und hat keine Auswirkung.** 
 
