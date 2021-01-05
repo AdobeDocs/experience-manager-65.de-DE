@@ -20,7 +20,7 @@ Folgende Vorgänge werden im Aktivitäts-Stream protokolliert:
 * Erstellen
 * Löschen
 * Download (einschließlich Wiedergaben)
-* Veröffentlichen
+* Veröffentlichung
 * Veröffentlichung rückgängig machen
 * Genehmigen
 * Ablehnen
