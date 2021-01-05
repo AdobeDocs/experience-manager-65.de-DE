@@ -1,6 +1,6 @@
 ---
 title: Komponenten
-seo-title: Komponenten
+seo-title: 'Komponenten '
 description: AEM ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website-Autoren umfangreiche Funktionen bieten
 seo-description: AEM ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website-Autoren umfangreiche Funktionen bieten
 uuid: 55caeec3-add7-4d05-a620-07e33901adb7
