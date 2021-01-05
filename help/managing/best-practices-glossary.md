@@ -121,7 +121,7 @@ Das Architekturdiagramm ist eine grafische Darstellung der Architektur. Es zeigt
 * Ihre Prinzipien
 * Elemente und Komponenten, die Teil der Architektur sind
 
-### Architekturentwurf {#architecture-draft}
+### Architekturentwurf  {#architecture-draft}
 
 Hierbei handelt es sich um einen allgemeinen Überblick über die System- und Lösungsarchitektur. In dieser Phase ist dies ein Entwurf, der zu einem späteren Zeitpunkt überprüft und präzisiert wird.
 
@@ -332,7 +332,7 @@ Richtlinien und/oder Anforderungen, die der Kunde in Bezug auf die Berichterstel
 * Format bestimmter Berichte
 * Spezielle Anforderungen
 
-### Kunden-Roadmap  {#customer-roadmap}
+### Kunden-Roadmap {#customer-roadmap}
 
 Formulieren Sie eine Roadmap der wichtigsten Milestones, die umgesetzt werden müssen, sowohl in technologischer als auch geschäftlicher Hinsicht. Diese Roadmap wird dann dem Kunden übergeben.
 
@@ -1375,7 +1375,7 @@ Das Konzept muss auch Folgendes abdecken:
 * Aspekte der Suchmaschinenoptimierung, z. B. robots.txt
 * Sitemap
 
-### Nutzungsszenarien {#use-cases}
+### Anwendungsfälle {#use-cases}
 
 Ein Anwendungsfall ist die Liste der Aktionen oder Ereignisschritte, die zur Erreichung eines Ziels ausgeführt werden müssen. In der Regel dienen sie zur Definition der Interaktionen zwischen einer Rolle und der Lösung. Die Rolle kann ein Benutzer oder ein externes System sein.
 
