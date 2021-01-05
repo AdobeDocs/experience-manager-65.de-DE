@@ -195,7 +195,7 @@ Einige Fehlermeldungen sind möglicherweise nicht sofort selbsterklärend. In di
 
 * `grep -B` zum Hinzufügen von Zeilen vor dem Fehler;
 
- oder
+oder
 
 * `grep -A` zum Hinzufügen von Zeilen nach.
 
