@@ -21,7 +21,7 @@ ht-degree: 94%
 
 # Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API{#content-fragments-support-in-aem-assets-http-api}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ Die aktuelle Implementierung der AEM Assets-HTTP-API ist REST.
 
 Die Adobe Experience Manager (AEM) [Assets REST API](/help/assets/mac-api-assets.md) ermöglicht es Entwicklern, über CRUD-Vorgänge (Erstellen, Lesen, Aktualisieren, Löschen) direkt auf AEM Inhalte zuzugreifen.
 
-Die API ermöglicht es Ihnen, AEM als Headless-CMS (Content Management System) auszuführen, indem Sie einer Javascript-Frontend-Applikation Content Services bereitstellen. Oder jeder anderen Applikation, die HTTP-Anforderungen ausführen und JSON-Antworten verarbeiten kann.
+Die API ermöglicht es Ihnen, AEM als Headless-CMS (Content Management System) auszuführen, indem Sie einer Javascript-Frontend-Applikation Content Services bereitstellen. Oder jeder anderen Applikation, die HTTP-Anfrage ausführen und JSON-Antworten verarbeiten kann.
 
 Beispielsweise benötigen frameworkbasierte oder benutzerdefinierte Single-Page-Applikationen (SPA), die über die HTTP-API bereitgestellten Inhalte häufig im JSON-Format.
 
@@ -46,7 +46,7 @@ Hier kann die Assets-REST-API eingesetzt werden. Damit können Entwickler direkt
 
 Die Assets-REST-API:
 
-* folgt dem [HATEOAS-Prinzip](https://en.wikipedia.org/wiki/HATEOAS)
+* folgt dem [HATEOAS-Prinzip](https://de.wikipedia.org/wiki/HATEOAS)
 
 * implementiert das [SIREN-Format](https://github.com/kevinswiber/siren)
 
@@ -128,7 +128,7 @@ Wenn die Assets-REST-API in einer Umgebung ohne spezifische Authentifizierungsan
 >
 >Weitere Informationen finden Sie unter:
 >
->* [Erklärung: CORS/AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-article-understand.html) 
+>* [Erklärung: CORS/AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [Video: Entwicklung für CORS mit AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
 
 >
@@ -153,11 +153,11 @@ Die Assets-REST-API unterstützt Paging (für GET-Anfragen) über die URL-Parame
 * `offset`: Die Nummer der ersten (untergeordneten) Entität, die abgerufen werden soll
 * `limit`: Die maximale Anzahl von zurückgegebenen Entitäten.
 
-Die Antwort enthält Paging-Informationen im Bereich `properties` der SIREN-Ausgabe. Diese Eigenschaft `srn:paging` enthält die Gesamtzahl der (untergeordneten) Entitäten (`total`), den Offset und das Limit ( `offset`, `limit`), wie in der Anforderung angegeben.
+Die Antwort enthält Paging-Informationen im Bereich `properties` der SIREN-Ausgabe. Diese Eigenschaft `srn:paging` enthält die Gesamtzahl der (untergeordneten) Entitäten (`total`), den Offset und das Limit ( `offset`, `limit`), wie in der Anfrage angegeben.
 
 >[!NOTE]
 >
->Paging wird normalerweise auf Container-Entitäten (d. h. Ordner oder Assets mit Ausgabeformaten) angewendet, da sie auf die untergeordneten Objekte des angeforderten Elements verweisen.
+>Paging wird normalerweise auf Container-Entitäten (d. h. Ordner oder Assets mit Ausgabedarstellungen) angewendet, da sie auf die untergeordneten Objekte des angeforderten Elements verweisen.
 
 #### Beispiel: Paging {#example-paging}
 
@@ -195,7 +195,7 @@ Wenn ein Asset angefordert wird, gibt die Antwort die Metadaten (z. B. Titel, N
 
 Die Binärdaten eines Assets werden als SIREN-Link vom Typ `content` bereitgestellt (auch als `rel attribute` bekannt).
 
-Assets können mehrere Ausgabeformate aufweisen. Diese werden in der Regel als untergeordnete Entitäten bereitgestellt. Eine Ausnahme stellt das Ausgabeformat der Miniaturansichten dar, das als Link vom Typ `thumbnail` (`rel="thumbnail"`) bereitgestellt wird.
+Assets können mehrere Ausgabeformate aufweisen. Diese werden in der Regel als untergeordnete Entitäten bereitgestellt. Eine Ausnahme stellt die Ausgabedarstellung der Miniaturansichten dar, die als Link vom Typ `thumbnail` (`rel="thumbnail"`) bereitgestellt wird.
 
 ### Inhaltsfragmente {#content-fragments}
 
@@ -203,18 +203,18 @@ Ein [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) ist e
 
 Da es einige Unterschiede zu *Standard*-Assets (z. B. Bildern oder Audio) aufweist, gelten einige zusätzliche Regeln für die Verarbeitung.
 
-#### Darstellung           {#representation}
+#### Darstellung  {#representation}
 
 Inhaltsfragmente:
 
 * stellen keine Binärdaten bereit.
 * sind vollständig in der JSON-Ausgabe enthalten (innerhalb der Eigenschaft `properties`).
 
-* Gelten auch als atomisch, d. h. die Elemente und Varianten werden als Teil der Eigenschaften des Fragments anstatt als Links oder untergeordnete Entitäten bereitgestellt. Dies ermöglicht einen effiziente Zugriff auf die Nutzlast eines Fragments.
+* Gelten auch als atomisch, d. h. die Elemente und Varianten werden als Teil der Eigenschaften des Fragments anstatt als Links oder untergeordnete Entitäten bereitgestellt. Dies ermöglicht einen effiziente Zugriff auf die Payload eines Fragments.
 
-#### Inhaltsmodelle und Inhaltsfragmente            {#content-models-and-content-fragments}
+#### Inhaltsmodelle und Inhaltsfragmente   {#content-models-and-content-fragments}
 
-Derzeit werden die Modelle, die die Struktur eines Inhaltsfragments definieren, nicht über eine HTTP-API bereitgestellt. Daher benötigt der *Benutzer* (zumindest einige) Informationen über das Modell eines Fragments. Die meisten Informationen kann er jedoch aus der Nutzlast ableiten. So sind z. B. Datentypen Teil der Definition.
+Derzeit werden die Modelle, die die Struktur eines Inhaltsfragments definieren, nicht über eine HTTP-API bereitgestellt. Daher benötigt der *Benutzer* (zumindest einige) Informationen über das Modell eines Fragments. Die meisten Informationen kann er jedoch aus der Payload ableiten. So sind z. B. Datentypen Teil der Definition.
 
 Zum Erstellen eines neuen Inhaltsfragments muss der Pfad (des internen Repositorys) angegeben werden.
 
@@ -250,11 +250,11 @@ Beispiel:
 
 `https://localhost:4502/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.json`
 
-Die Antwort ist serialisiertes JSON mit dem im Inhaltsfragment strukturierten Inhalt. Verweise werden als Referenz-URLs bereitgestellt. 
+Die Antwort ist serialisiertes JSON mit dem im Inhaltsfragment strukturierten Inhalt. Verweise werden als Referenz-URLs bereitgestellt.
 
 Zwei Arten von Lesevorgängen sind möglich:
 
-* Beim Lesen eines spezifischen Inhaltsfragments über einen Pfad gibt diese Methode die JSON-Darstellung des Inhaltsfragments zurück. 
+* Beim Lesen eines spezifischen Inhaltsfragments über einen Pfad gibt diese Methode die JSON-Darstellung des Inhaltsfragments zurück.
 * Beim Lesen eines Ordners mit Inhaltsfragmenten über einen Pfad gibt diese Methode die JSON-Darstellung aller Inhaltsfragmente in diesem Ordner zurück.
 
 ### Erstellen {#create}
@@ -285,9 +285,9 @@ Nutzung erfolgt über:
 
 Es gibt einige Beschränkungen:
 
-* **Varianten können weder geschrieben noch aktualisiert werden.** Werden diese Varianten einer Nutzlast hinzugefügt (z. B. für Aktualisierungen), werden sie ignoriert. Jedoch ist die Variante über die Bereitstellung verfügbar (`GET`).
+* **Varianten können weder geschrieben noch aktualisiert werden.** Werden diese Varianten einer Payload hinzugefügt (z. B. für Aktualisierungen), werden sie ignoriert. Jedoch ist die Variante über die Bereitstellung verfügbar (`GET`).
 
-* **Inhaltsfragmentmodelle werden derzeit nicht unterstützt**: sie können weder gelesen noch erstellt werden. Zum Erstellen eines neuen oder Aktualisieren eines vorhandenen Inhaltsfragments müssen Entwickler den richtigen Pfad zum Inhaltsfragmentmodell kennen. Derzeit ist dies lediglich über die Verwaltungsoberfläche möglich. 
+* **Inhaltsfragmentmodelle werden derzeit nicht unterstützt**: sie können weder gelesen noch erstellt werden. Zum Erstellen eines neuen oder Aktualisieren eines vorhandenen Inhaltsfragments müssen Entwickler den richtigen Pfad zum Inhaltsfragmentmodell kennen. Derzeit ist dies lediglich über die Verwaltungsoberfläche möglich.
 * **Verweise werden ignoriert**. Zurzeit sind keine Überprüfungen für Verweise auf vorhandene Inhaltsfragmente verfügbar. Wenn Sie beispielsweise ein Inhaltsfragment löschen, treten möglicherweise Probleme auf einer Seite auf, die einen Verweis enthält.
 
 ## Status-Codes und Fehlermeldungen {#status-codes-and-error-messages}
@@ -323,7 +323,7 @@ Unter den entsprechenden Voraussetzungen werden möglicherweise die folgenden St
    >
    >
    >    * wenn ein Fehler, der mit keinem bestimmten Code identifiziert werden kann, aufgetreten ist
-   >    * wenn als Nutzlast „null“ angegeben ist
+   >    * wenn als Payload „null“ angegeben ist
 
 
    Nachfolgend finden Sie allgemeine Szenarien, in denen dieser Fehlerstatus in Kombination mit der Fehlermeldung (monospace) zurückgegeben wird:
@@ -363,7 +363,7 @@ Unter den entsprechenden Voraussetzungen werden möglicherweise die folgenden St
    }
    ```
 
-## API-Referenz            {#api-reference}
+## API-Referenz   {#api-reference}
 
 Hier finden Sie detaillierte API-Referenzen:
 
@@ -377,5 +377,5 @@ Hier finden Sie detaillierte API-Referenzen:
 Weitere Informationen finden Sie unter:
 
 * [Assets-HTTP-API – Dokumentation ](/help/assets/mac-api-assets.md)
-* [AEM Gem-Sitzung: OAuth](https://helpx.adobe.com/de/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html) 
+* [AEM Gem-Sitzung: OAuth](https://helpx.adobe.com/de/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
 
