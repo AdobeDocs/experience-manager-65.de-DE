@@ -69,7 +69,7 @@ Sie können mithilfe des globalen Navigationsfensters zwischen den Konsolen navi
 
 Sie können das globale Navigationsfenster schließen, indem Sie auf **Schließen** klicken oder tippen. Sie kehren dann zu Ihrer vorherigen Position zurück.
 
-![bh-05](assets/bh-03.png)
+![bh-03](assets/bh-03.png)
 
 >[!NOTE]
 >
@@ -416,7 +416,7 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
 
    * Beim Tippen bzw. Klicken werden Ressourcenname und Pfeil hervorgehoben.
 
-   ![bh-17](assets/bh-17.png)
+   ![bh-15](assets/bh-17.png)
 
    * Die untergeordneten Elemente der ausgewählten Ressource werden in der Spalte rechts neben der Ressource angezeigt.
    * Wenn Sie auf einen Ressourcennamen tippen oder klicken, der keine untergeordneten Elemente besitzt, werden die Ressourcendetails in der letzten Spalte angezeigt.
