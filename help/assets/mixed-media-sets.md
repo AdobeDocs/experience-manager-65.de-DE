@@ -71,7 +71,7 @@ Bei Bedarf können Sie die [gemischten Mediensets](#editing-mixed-media-sets) be
 
 >[!NOTE]
 >
->Wenn beim Erstellen von Sets Probleme auftreten, lesen Sie [Fehlerbehebung für dynamische Medien - Scene7-Modus](/help/assets/troubleshoot-dms7.md).
+>Wenn beim Erstellen von Sets Probleme auftreten, lesen Sie [Fehlerbehebung für Dynamic Media - Scene7-Modus](/help/assets/troubleshoot-dms7.md).
 
 ## Hochladen von Assets {#uploading-assets}
 
