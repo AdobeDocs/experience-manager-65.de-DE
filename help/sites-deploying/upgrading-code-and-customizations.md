@@ -29,7 +29,7 @@ Beim Planen einer Aktualisierung sollten folgende Bereiche der Implementierung u
 * [AEM-Anpassungen](#aem-customizations)
 * [Testverfahren](#testing-procedure) 
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 1. **Mustererkennung** : Führen Sie den Musterdetektor wie in der Aktualisierungsplanung beschrieben und auf  [dieser ](/help/sites-deploying/pattern-detector.md) Seite detailliert beschrieben aus, um einen Musterdetektor-Bericht zu erhalten, der weitere Details zu Bereichen enthält, die zusätzlich zu den nicht verfügbaren APIs/Bundles in der Zielgruppe-Version von AEM behoben werden müssen. Der Bericht &quot;Mustererkennung&quot;sollte Sie auf Inkompatibilitäten im Code hinweisen. Wenn keine Kompatibilität besteht und Ihre Bereitstellung bereits 6.5 kompatibel ist, können Sie dennoch eine neue Entwicklung für die Verwendung der 6.5-Funktionalität durchführen. Sie benötigen sie jedoch nicht nur zur Aufrechterhaltung der Kompatibilität. Wenn Inkompatibilitäten gemeldet werden, können Sie entweder a) Im Kompatibilitätsmodus ausführen und Ihre Entwicklung auf neue 6.5-Funktionen oder Kompatibilität verschieben, b) beschließen, die Entwicklung nach der Aktualisierung durchzuführen und zu Schritt 2 wechseln. Weitere Informationen finden Sie unter [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md).
 
@@ -214,7 +214,7 @@ Im Folgenden sind wichtige Bereiche einer AEM-Implementierung genannt, die vom T
    <td>Alle Erweiterungen und Anpassungen der AEM-Benutzeroberfläche in der Autorenumgebung.</td>
   </tr>
   <tr>
-   <td>Workflows  </td>
+   <td>Workflows</td>
    <td>Benutzerdefinierte und/oder vorkonfigurierte Workflows und Funktionen.</td>
   </tr>
   <tr>
