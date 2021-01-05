@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Verwalten von Benutzern und Benutzergruppen {#managing-users-and-user-groups}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 In AEM Communities können sich Benutzer in der Umgebung zum Veröffentlichen selbst registrieren und ihre Profil bearbeiten. Mit den entsprechenden Berechtigungen können sie auch:
 
