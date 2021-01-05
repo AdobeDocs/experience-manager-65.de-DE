@@ -40,7 +40,7 @@ Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwe
    >
    >Das ausgewählte Asset *und* die ausgewählte Bildvorgabe oder Viewer-Vorgabe müssen veröffentlicht werden, um die Schaltfläche **[!UICONTROL URL]** oder **[!UICONTROL RESS]** verfügbar zu machen.
    >
-   >Dynamische Medien - Im Hybridmodus müssen Sie Bildvorgaben veröffentlichen. Dynamische Medien - Im Scene7-Modus werden Bildvorgaben automatisch veröffentlicht.
+   >Für den Dynamic Media-Hybridmodus müssen Sie Bildvorgaben veröffentlichen. Dynamic Media - Scene7-Modus veröffentlicht Bildvorgaben automatisch.
 
 1. Tippen Sie auf **[!UICONTROL RESS]**.
 
