@@ -28,7 +28,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 
 ## Tastaturbefehle für die Bearbeitung {#editing-keyboard-shortcuts}
 
-| Ort | Kürzel | Beschreibung |
+| Standort | Kürzel | Beschreibung |
 |---|---|---|
 | Beliebiger Fenstermodus „Bearbeiten“ | `Ctrl-Shift-m` | Zwischen **Vorschau** und dem aktuell ausgewählten [Modus](/help/sites-authoring/author-environment-tools.md#page-modes)</a> (z. B. **Bearbeiten**, **Layout** usw.) wechseln* |
 | Modus **Bearbeiten** | `Ctrl-z` | [Letzte Änderung rückgängig machen](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
