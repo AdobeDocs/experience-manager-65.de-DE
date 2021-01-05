@@ -21,7 +21,7 @@ ht-degree: 94%
 
 # Bearbeiten des Seiteninhalts{#editing-page-content}
 
-Sobald Ihre Seite erstellt ist (neu oder im Rahmen eines Launchs oder einer Live Copy), können Sie den Inhalt bearbeiten und die erforderlichen Aktualisierungen vornehmen.
+Sobald Ihre Seite erstellt ist (neu oder im Rahmen eines Launch oder einer Live Copy), können Sie den Inhalt bearbeiten und die erforderlichen Aktualisierungen vornehmen.
 
 Der Inhalt wird mit mithilfe von (zum Inhaltstyp passenden) [Komponenten](/help/sites-authoring/default-components-console.md) hinzugefügt, die auf die Seite gezogen werden können. Dort können sie dann bearbeitet, verschoben oder gelöscht werden.
 
@@ -149,7 +149,7 @@ Sie können eine neue Komponente mit dem [Komponenten-Browser](/help/sites-autho
 
 ### Einfügen einer Komponente aus dem Absatzsystem {#inserting-a-component-from-the-paragraph-system}
 
-Sie können eine neue Komponente über das Feld **Komponenten hierher ziehen** des Absatzsystems hinzufügen. 
+Sie können eine neue Komponente über das Feld **Komponenten hierher ziehen** des Absatzsystems hinzufügen.
 
 1. Öffnen Sie die Seite im Modus [**Bearbeiten**](/help/sites-authoring/author-environment-tools.md#page-modes).
 1. Neue Komponenten können auf zwei Arten aus dem Absatzsystem ausgewählt und hinzugefügt werden:
@@ -166,7 +166,7 @@ Sie können eine neue Komponente über das Feld **Komponenten hierher ziehen** d
 
 1. Die ausgewählte Komponente wird am Ende der Seite hinzugefügt. [Bearbeiten](#editmovecopypastedelete) Sie die Komponente.
 
-### Einfügen einer Komponente mit dem Assets-Browser   {#inserting-a-component-using-the-assets-browser}
+### Einfügen einer Komponente mit dem Assets-Browser  {#inserting-a-component-using-the-assets-browser}
 
 Sie können eine neue Komponente zur Seite hinzufügen, indem Sie ein Asset aus dem [Asset-Browser](/help/sites-authoring/author-environment-tools.md#assets-browser) ziehen. Dadurch wird automatisch eine neue Komponente des entsprechenden Typs erstellt, die das Asset enthält.
 
@@ -312,9 +312,9 @@ Für das Hinzufügen und/oder Bearbeiten von Inhalten in Komponenten sind zwei V
 * Öffnen Sie das Dialogfeld [Komponente](#component-edit-dialog) für die Bearbeitung.
 * [Ziehen Sie ein Asset](#draganddropintocomponent) aus dem Asset-Browser, um Inhalt direkt hinzuzufügen.
 
-### Dialogfeld „Komponente bearbeiten“    {#component-edit-dialog}
+### Dialogfeld „Komponente bearbeiten“   {#component-edit-dialog}
 
-Über das [Symbol „Bearbeiten“ (Bleistift) in der Symbolleiste](#edit-configure-copy-cut-delete-paste) können Sie eine Komponente öffnen, um deren Inhalt zu bearbeiten.
+Sie können eine Komponente öffnen, um den Inhalt zu bearbeiten, indem Sie das Symbol [„Bearbeiten“ (Stiftsymbol) der Komponenten-Symbolleiste](#edit-configure-copy-cut-delete-paste) verwenden.
 
 Welche Bearbeitungsoptionen verfügbar sind, hängt von der Komponente ab (und für einige Komponenten sind [alle Aktionen nur im Vollbildmodus verfügbar)](#edit-content-full-screen-mode). Beispiel:
 
@@ -335,7 +335,7 @@ Welche Bearbeitungsoptionen verfügbar sind, hängt von der Komponente ab (und f
 
 * Bildkomponente – Vollbild
 
-   Wenn Sie den [Vollbildmodus](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) für die Bildkomponente aufrufen, haben Sie mehr Platz zum Bearbeiten des Bilds und erhalten zusätzliche Bearbeitungsoptionen wie **Map starten** und **Zoom zurücksetzen**. Außerdem können im Vollbildmodus Zuschnittvoreinstellungen ausgewählt werden.
+   Wenn Sie den [Vollbildmodus](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) für die Bildkomponente aufrufen, haben Sie mehr Platz zum Bearbeiten des Bildes und erhalten zusätzliche Bearbeitungsoptionen wie **Map starten** und **Zoom zurücksetzen**. Außerdem können im Vollbildmodus Zuschnittvoreinstellungen ausgewählt werden.
 
    ![screen_shot_2018-03-22at120529](assets/screen_shot_2018-03-22at120529.png)
 
@@ -473,7 +473,7 @@ Beispiel:
 
 [Anmerkungen](/help/sites-authoring/annotations.md) bieten Reviewern und anderen Autoren die Möglichkeit, Feedback zu Ihrem Inhalt zu erteilen. Dies wird häufig zu Korrektur- oder Überprüfungszwecken verwendet.
 
-## Anzeigen einer Seitenvorschau    {#previewing-pages}
+## Anzeigen einer Seitenvorschau   {#previewing-pages}
 
 Für die Anzeige einer Seitenvorschau stehen zwei Optionen zur Verfügung:
 
@@ -503,7 +503,7 @@ Beim Bearbeiten von Inhalt können Sie mithilfe des [Vorschaumodus](/help/sites-
 * Ermöglicht es Ihnen, mit Links zu navigieren.
 * Aktualisiert den Seiteninhalt **nicht**.
 
-Bei der Bearbeitung einer Seite können Sie den Vorschaumodus über das Symbol rechts oben im Seiten-Editor aufrufen:
+Bei der Bearbeitung einer Seite können Sie den Vorschaumodus über das Symbol rechts oben im Seiteneditor aufrufen:
 
 ![chlimage_1-125](assets/chlimage_1-125.png)
 
@@ -524,7 +524,7 @@ Eine Seite kann wie folgt gesperrt werden:
 
    ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
 
-* **Seiten-Editor**
+* **Seiteneditor**
 
    1. Wählen Sie das Symbol **Seiteninformationen** aus, um das Menü zu öffnen:
    1. Wählen Sie die Option **Seite sperren** aus.
