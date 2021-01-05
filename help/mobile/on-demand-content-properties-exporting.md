@@ -47,7 +47,7 @@ Die folgende Tabelle zeigt **App-Eigenschaften und Knoten**.
   <tr>
    <td>dps-exportTemplate</td>
    <td>Zeichenfolge:Pfad</td>
-   <td><p>Pfad zu den Exportkonfigurationen der App. Die Exportkonfiguration ist ein Ordner mit zwei untergeordneten ContentSync-Exportkonfigurationsvorlagen.</p> <p><i>dps-article</i>: ContentSync-Exportkonfiguration zum Exportieren von Artikelinhalten</p> <p><i>dps-HTMLResources</i>: ContentSync-Exportkonfiguration zum Exportieren von App-/Artikelressourcen</p> </td>
+   <td><p>Pfad zu den Exportkonfigurationen der App. Die Exportkonfiguration ist ein Ordner mit zwei untergeordneten ContentSync-Exportkonfigurationsvorlagen.</p> <p><i>dps-article</i>: ContentSync-Exportkonfiguration zum Exportieren von Artikelinhalten</p> <p><i>dps-HTMLResources</i>: ContentSync-Exportkonfiguration für den Export von freigegebenen Ressourcen</p> </td>
   </tr>
   <tr>
    <td>dps-projectId</td>
