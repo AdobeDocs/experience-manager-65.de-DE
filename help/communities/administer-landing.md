@@ -22,7 +22,7 @@ ht-degree: 9%
 
 Dieser Abschnitt richtet sich an diejenigen, die AEM Communities verwalten und mit AEM Communities-Funktionen vertraut sind.
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Einen Überblick und die ersten Schritte finden Sie unter:
 
