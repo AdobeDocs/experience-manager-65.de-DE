@@ -21,7 +21,7 @@ ht-degree: 8%
 
 # Berichte-Konsole {#reports-console}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Für AEM Communities gibt es verschiedene Berichte, auf die von der Autorendatei aus auf verschiedene Weise zugegriffen werden kann.
 
