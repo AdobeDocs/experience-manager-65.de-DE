@@ -13,7 +13,7 @@ ht-degree: 79%
 
 # [!DNL Assets] HTTP-API {#assets-http-api}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Die [!DNL Assets] HTTP-API ermöglicht die Erstellung-Lesen-Update-Löschvorgänge (CRUD) für digitale Assets, einschließlich Metadaten, Darstellungen und Kommentare, zusammen mit strukturierten Inhalten mit Inhaltsfragmenten [!DNL Experience Manager]. Sie wird unter `/api/assets` bereitgestellt und als REST-API implementiert. Dazu gehört die [Unterstützung von Inhaltsfragmenten](/help/assets/assets-api-content-fragments.md).
 
