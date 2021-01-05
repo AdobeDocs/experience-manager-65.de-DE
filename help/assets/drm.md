@@ -98,7 +98,7 @@ Die [!DNL Assets]-Konsole kann verschiedene Status für Assets anzeigen. Abhäng
 
    *Abbildung:  [!UICONTROL Registerkarte &quot;] Erweitert&quot;auf der Seite &quot;Asset-  Eigenschaften&quot;, um den Asset-Ablauf festzulegen.*
 
-1. Klicken Sie auf **[!UICONTROL Speichern]** und dann auf **[!UICONTROL Schließen]**, um die Konsole „Assets“ anzuzeigen.
+1. Klicken Sie auf **[!UICONTROL Speichern]** und dann auf **[!UICONTROL Schließen]**, um die Asset-Konsole anzuzeigen.
 1. Der Veröffentlichungsstatus des Assets weist in der Kartenansicht im unteren Bereich der Miniaturansicht darauf hin, dass das Asset abgelaufen ist. In der Listenansicht wird der Status des Assets als **[!UICONTROL Abgelaufen]** angegeben.
 
    ![chlimage_1-160](assets/chlimage_1-160.png)
