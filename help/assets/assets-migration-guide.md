@@ -79,7 +79,7 @@ Da Assets nicht über ein Netzwerk übertragen werden müssen, verbessert sich d
 
 ### Verarbeiten von Wiedergaben {#processing-renditions}
 
-Nachdem Sie die Assets in das System geladen haben, müssen Sie sie mithilfe des Workflows [!UICONTROL DAM Update Asset] verarbeiten, um Metadaten zu extrahieren und Darstellungen zu generieren. Bevor Sie diesen Schritt durchführen, müssen Sie den Arbeitsablauf [!UICONTROL DAM-Update-Asset] an Ihre Anforderungen anpassen und anpassen. Der vordefinierte Arbeitsablauf enthält viele Schritte, die möglicherweise nicht für Sie erforderlich sind, wie z. B. die Generierung dynamischer Medien-PTIFF oder [!DNL InDesign Server]-Integration.
+Nachdem Sie die Assets in das System geladen haben, müssen Sie sie mithilfe des Workflows [!UICONTROL DAM Update Asset] verarbeiten, um Metadaten zu extrahieren und Darstellungen zu generieren. Bevor Sie diesen Schritt durchführen, müssen Sie den Arbeitsablauf [!UICONTROL DAM-Update-Asset] an Ihre Anforderungen anpassen und anpassen. Der vordefinierte Arbeitsablauf enthält viele Schritte, die für Sie möglicherweise nicht erforderlich sind, z. B. Dynamic Media PTIFF-Generierung oder [!DNL InDesign Server] Integration.
 
 Wenn Sie den Workflow den Anforderungen entsprechend konfiguriert haben, stehen Ihnen zwei Optionen zur Ausführung zur Verfügung:
 
