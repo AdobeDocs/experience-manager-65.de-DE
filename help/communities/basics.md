@@ -20,7 +20,7 @@ ht-degree: 61%
 
 # Grundlagen zu Communities-Komponenten {#communities-components-basics}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Im Autorenabschnitt der Dokumentation finden Sie Informationen zum Hinzufügen von Communities-Funktionen zu AEM Sites im Bearbeitungsmodus sowie eine Beschreibung der Komponentenkonfigurationen.
 
