@@ -71,5 +71,5 @@ Durch die Standardisierung der Metadaten-Nutzung, Dateibenennung und Ordnerstruk
 >* [Profile zum Verarbeiten von Metadaten, Bildern und Videos](processing-profiles.md).
 >* [Metadatenprofile](/help/assets/metadata-config.md#metadata-profiles).
 >* [Videoprofile](video-profiles.md).
->* [Profile](image-profiles.md) für dynamische Medien
+>* [Dynamic Media Image Profils](image-profiles.md).
 
