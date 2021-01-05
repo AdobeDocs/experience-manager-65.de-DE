@@ -1,6 +1,6 @@
 ---
-title: Speicherkonfiguration
-seo-title: Speicherkonfiguration
+title: Speicher  Konfiguration
+seo-title: Speicher  Konfiguration
 description: Zugriff auf die Datenspeicherung Configuration Console
 seo-description: Zugriff auf die Datenspeicherung Configuration Console
 uuid: 6a5a71d5-6aaa-4635-8852-4dae33c497a9
