@@ -62,7 +62,7 @@ ht-degree: 84%
 + Personalisierung  {#personalization}
    + [Grundlegendes zur Segmentierung](classic-personalization-campaigns-segmentation.md)
    + [Kampagnen-Management](classic-personalization-campaigns.md)
-   + [Einstiegsseiten](classic-personalization-campaigns-landingpage.md)
+   + [Landing Pages](classic-personalization-campaigns-landingpage.md)
    + [Adobe Target-Angebote](classic-personalization-campaigns-target-offers.md)
    + [E-Mail-Marketing](classic-personalization-campaigns-email.md)
    + [Nachverfolgen nicht zugestellter E-Mails](classic-personalization-campaigns-email-tracking-bounces.md)
