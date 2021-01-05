@@ -83,7 +83,7 @@ Die Hauptkonsolen sind:
    <td>Mit der Konsole „Sites/Websites“ können Sie <a href="/help/sites-classic-ui-authoring/classic-page-author.md">Websites erstellen, anzeigen und verwalten</a>, die auf Ihrer AEM-Instanz ausgeführt werden. In diesen Konsolen können Sie Website-Seiten erstellen, kopieren und verschieben, Workflows starten und Seiten aktivieren (veröffentlichen). Sie können auch eine Seite zur Bearbeitung öffnen.<br /> </td>
   </tr>
   <tr>
-   <td><strong>Workflows  </strong></td>
+   <td><strong>Workflows</strong></td>
    <td>Bei einem Workflow handelt es sich um eine definierte Abfolge von Schritten, die zum Ausführen einer bestimmten Aufgabe erforderlich sind. In vielen Fällen sind mehrere Personen an einer Aufgabe beteiligt und jede Person muss Ihren Schritt abschließen, bevor die Arbeit an die nächste Person weitergegeben wird. In der Konsole „Workflow“ können Sie Workflow-Modelle erstellen und Workflow-Instanzen verwalten, die ausgeführt werden. Siehe <a href="/help/sites-administering/workflows.md">Arbeiten mit Workflows</a>.<br /> </td>
   </tr>
  </tbody>
