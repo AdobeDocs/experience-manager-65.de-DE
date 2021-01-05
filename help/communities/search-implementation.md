@@ -20,7 +20,7 @@ ht-degree: 6%
 
 # Essentials suchen {#search-essentials}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Die Suchfunktion ist ein wesentliches Merkmal von AEM Communities. Zusätzlich zu den Funktionen [AEM Plattformsuche](../../help/sites-deploying/queries-and-indexing.md) stellt AEM Communities die [UGC-Such-API](#ugc-search-api) zum Durchsuchen benutzergenerierter Inhalte (UGC) bereit. UGC verfügt über eindeutige Eigenschaften, da es unabhängig von anderen AEM- und Benutzerdaten eingegeben und gespeichert wird.
 
