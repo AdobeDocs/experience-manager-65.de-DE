@@ -20,7 +20,7 @@ ht-degree: 4%
 
 # Mitglieder und Gruppen-Management-Konsolen {#members-groups-management-consoles}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Für AEM Communities-Funktionen müssen Site-Besucher oft registriert und angemeldet sein, bevor sie an einer Community in der Umgebung teilnehmen. Ihre Benutzerregistrierung muss nur in der Veröffentlichungs-Umgebung vorhanden sein. Sie werden häufig als *Member* bezeichnet, um sie von *Benutzern, die in der Authoring-Umgebung registriert sind, zu unterscheiden.*
 
