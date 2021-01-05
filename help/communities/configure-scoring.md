@@ -128,7 +128,7 @@ Die Beschreibungen für den Zugriff auf Scoring- und Abzeichen-Daten verwenden J
 
 **JSRP für Autor**: Das Experimentieren in der Autorendatei führt zu einer UGC, die nur in der Autorenversion der Umgebung sichtbar ist.
 
-**JSRP bei Veröffentlichung**: Ebenso ist es bei Tests auf der Umgebung &quot;Veröffentlichen&quot;erforderlich, auf die CRXDE Lite mit Administratorrechten auf einer Instanz im Veröffentlichungsmodus zuzugreifen. Wenn die Instanz im Veröffentlichungsmodus im [Produktionsmodus](/help/sites-administering/production-ready.md) ausgeführt wird (nicht im Ausführungsmodus zum Beispielinhalt), muss die CRXDE Lite [aktiviert](/help/sites-administering/enabling-crxde-lite.md)werden.
+**JSRP bei Veröffentlichung**: Ebenso ist es bei Tests auf der Umgebung &quot;Veröffentlichen&quot;erforderlich, auf die CRXDE Lite mit Administratorrechten auf einer Instanz im Veröffentlichungsmodus zuzugreifen. Wenn die Instanz im Veröffentlichungsmodus im Produktionsmodus [ausgeführt wird (nicht im Ausführungsmodus zum Abrufen von Inhalten), muss die CRXDE Lite [aktiviert werden.](/help/sites-administering/enabling-crxde-lite.md)](/help/sites-administering/production-ready.md)
 
 Der Basisspeicherort von UGC auf JSRP ist `/content/usergenerated/asi/jcr/`.
 
