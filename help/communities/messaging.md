@@ -21,7 +21,7 @@ ht-degree: 2%
 
 # Messaging {#configure-messaging} konfigurieren
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Die Messaging-Funktion für AEM Communities ermöglicht es Besuchern (Teilnehmern) mit angemeldeten Sites, Nachrichten an andere zu senden, auf die bei der Anmeldung auf der Site zugegriffen werden kann.
 
