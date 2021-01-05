@@ -38,7 +38,7 @@ Spezielle Dokumente werden in den folgenden Tabellen beschrieben und verknüpft.
 
 ## Assets {#assets}
 
-Bewährte Verfahren für Assets, einschließlich der Funktionen für dynamische Medien und Integration von Dynamic Media Classic, werden in den folgenden Themen beschrieben:
+Die Best Practices für Assets, einschließlich der Dynamic Media-Funktionalität und der Dynamic Media Classic-Integration, werden in den folgenden Themen beschrieben:
 
 <table>
  <tbody>
