@@ -14,14 +14,14 @@ translation-type: tm+mt
 source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1060'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
 # Erweiterte Bewertung und Abzeichen{#advanced-scoring-and-badges}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Die erweiterte Bewertung ermöglicht die Vergabe von Kennzeichen, um Mitglieder als Experten zu identifizieren. Bei der erweiterten Bewertung werden Punkte basierend auf der Menge *und* der Qualität des Inhalts zugewiesen, der von einem Mitglied erstellt wurde, während bei der grundlegenden Bewertung Punkte nur auf der Grundlage der Menge des erstellten Inhalts zugewiesen werden.
 
@@ -44,12 +44,12 @@ Die verschiedenen Regeln für die Bewertung und Kennzeichnung unterscheiden sich
 * Konfigurierbare erweiterte Scoring-Engine
 * Erweiterte Bewertungsregeln:
 
-   * `scoringType` setzen auf  `advanced`
+   * `scoringType` auf `advanced` festlegen
    * Erfordert `stopwords`
 
 * Erweiterte Kennzeichnungsregeln:
 
-   * `badgingType` setzen auf  `advanced`
+   * `badgingType` auf `advanced` festlegen
    * `badgingLevels` auf die  **Anzahl der zu vergebenden Expertenstufen**
    * Erfordert ein `badgingPaths`-Array von Abzeichen anstelle von Schwellenwerten für Array-Zuordnungspunkten zu Abzeichen.
 
@@ -130,7 +130,7 @@ Anstatt Punkte mit einem Abzeichen zu verknüpfen, ist es nur notwendig, die Anz
   <tr>
    <th>Eigenschaft</th>
    <th>Typ</th>
-   <th>Wertbeschreibung</th>
+   <th>Wert Beschreibung</th>
   </tr>
   <tr>
    <td>badgingPath</td>
