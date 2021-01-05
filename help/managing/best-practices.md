@@ -629,7 +629,7 @@ Weitere Informationen zu Best Practices für die Bereitstellung, Verwaltung, Ent
 
       * [Entwickeln der Grundlagen](/help/sites-developing/the-basics.md)
       * [MSM-Konzepte](/help/sites-administering/msm.md)
-      * [HTML-Vorlagensprache (HTL)](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)
+      * [HTML-Vorlagensprache (HTL)](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html)
 
 * Verwandte Dokumentation
 
