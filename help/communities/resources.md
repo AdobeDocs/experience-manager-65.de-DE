@@ -222,7 +222,7 @@ Wählen Sie `'+' icon` in der oberen rechten Ecke aus, um mit der Auswahl der Re
 
       Der Name des Assets für die Aktivierungsressource.
 
-   * **[!UICONTROL Ort]**
+   * **[!UICONTROL Standort]**
 
       Die Lage eines physischen Standorts, z. B. eines Klassenzimmers.
 
@@ -419,7 +419,7 @@ Für die ausgewählte Aktivierungsressource können Sie:
 * Eigenschaften von Ansichten (Standard)
 * Eigenschaften bearbeiten
 * Löschen
-* Veröffentlichen
+* Veröffentlichung
 * Veröffentlichung rückgängig machen
 
 Um eine neue Version der Ressource für die Aktivierung hochzuladen, wird empfohlen, eine neue Ressource zu erstellen und dann die Anmeldung für Mitglieder aus der alten Version aufzuheben und sie in der neuen Version einzutragen.
@@ -472,7 +472,7 @@ Für alle Aktivierungsressourcen gibt es Berichte zu [Status des zugewiesenen Be
 
 ![resource-report](assets/resource-report1.png)
 
-#### Timeline {#timeline}
+#### Zeitleiste {#timeline}
 
 Der Bericht zur Analytics-Timeline zeigt an, wann Ereignis im Zeitverlauf für diese Aktivierungsressource auftreten:
 
