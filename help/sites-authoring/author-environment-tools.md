@@ -33,7 +33,7 @@ Zum Beispiel in der Spaltenansicht:
 
 ## Bearbeiten des Seiteninhalts {#editing-page-content}
 
-Sie können eine Seite mit dem Seiten-Editor bearbeiten. Beispiel:
+Sie können eine Seite mit dem Seiteneditor bearbeiten. Beispiel:
 
 `https://localhost:4502/editor.html/content/we-retail/us/en/equipment.html`
 
@@ -54,7 +54,7 @@ Wenn Sie eine Seite bearbeiten, können Sie folgendermaßen auf die **Hilfe** zu
 
 In den Konsolen stehen weitere [Hilferessourcen zur Verfügung](/help/sites-authoring/basic-handling.md#accessing-help).
 
-## Komponenten-Browser   {#components-browser}
+## Komponenten-Browser  {#components-browser}
 
 Der Komponenten-Browser enthält alle Komponenten, die zur Verwendung auf der aktuellen Seite verfügbar sind. Sie können diese an die gewünschte Position ziehen und dann bearbeiten, um Inhalte hinzuzufügen.
 
@@ -134,7 +134,7 @@ Um ein Asset zu der Seite hinzuzufügen, wählen Sie es aus und ziehen Sie es an
 
 >[!NOTE]
 >
->Dies ist für spezielle Assets und Komponententypen verfügbar. Weitere Einzelheiten finden Sie unter [Einfügen einer Komponente mit dem Asset-Browser ](/help/sites-authoring/editing-content.md#inserting-a-component-using-the-assets-browser).
+>Dies ist für spezielle Assets und Komponententypen verfügbar. Weitere Einzelheiten finden Sie unter [Einfügen einer Komponente mit dem Asset-Browser](/help/sites-authoring/editing-content.md#inserting-a-component-using-the-assets-browser).
 
 In der Symbolleiste des Asset-Browsers können Sie Assets nach folgenden Kriterien filtern:
 
@@ -171,7 +171,7 @@ Wenn Sie eine Änderung an einem der Assets vornehmen möchten, können Sie den 
 
 ![](do-not-localize/screen_shot_2018-03-22at142448.png)
 
-## Inhaltsstruktur       {#content-tree}
+## Inhaltsstruktur   {#content-tree}
 
 Die **Inhaltsstruktur** bietet einen Überblick über alle auf der Seite verwendeten Komponenten in einer hierarchischen Darstellung, sodass Sie direkt feststellen können, wie die Seite aufgebaut ist.
 
@@ -195,7 +195,7 @@ Durch Klicken auf den Richtungspfeil neben einer Komponente wird die entsprechen
 >
 >Beim Bearbeiten einer Seite auf einem Mobilgerät ist die Inhaltsstruktur nicht verfügbar (wenn die Browser-Breite weniger als 1.024 Pixel beträgt).
 
-Durch Klicken auf die Komponente wird diese im Seiten-Editor markiert. Die verfügbaren Aktionen hängen vom Status der Seite ab:
+Durch Klicken auf die Komponente wird diese im Seiteneditor markiert. Die verfügbaren Aktionen hängen vom Status der Seite ab:
 
 * Zum Beispiel bei einer einfachen Seite:
 
@@ -215,7 +215,7 @@ Durch Klicken auf die Komponente wird diese im Seiten-Editor markiert. Die verf�
 
 ## Fragmente: Browser für zugehörige Inhalte {#fragments-associated-content-browser}
 
-Wenn Ihre Seite Inhaltsfragmente enthält, haben Sie auch Zugriff auf den [Browser für zugehörige Inhalte](/help/sites-authoring/content-fragments.md#using-associated-content). 
+Wenn Ihre Seite Inhaltsfragmente enthält, haben Sie auch Zugriff auf den [Browser für zugehörige Inhalte](/help/sites-authoring/content-fragments.md#using-associated-content).
 
 ## Verweise {#references}
 
@@ -239,7 +239,7 @@ Wenn Ihre Seite Inhaltsfragmente enthält, haben Sie auch Zugriff auf den [Brows
 
 Wählen Sie den gewünschten Verweistyp, um weitere Informationen anzuzeigen: In bestimmten Situationen sind weitere Aktionen verfügbar, wenn Sie einen bestimmten Verweis auswählen:
 
-* **Eingehende Links** enthält eine Liste der Seiten, die auf die Seite verweisen, und bietet direkten Zugriff zum **Bearbeiten** einer dieser Seiten, wenn Sie einen bestimmten Link auswählen. 
+* **Eingehende Links** enthält eine Liste der Seiten, die auf die Seite verweisen, und bietet direkten Zugriff zum **Bearbeiten** einer dieser Seiten, wenn Sie einen bestimmten Link auswählen.
 
 * Instanzen von geliehenen und verliehenen Inhalten, die die **Referenz**-Komponente verwenden. Sie können von hier aus zur referenzierten Seite navigieren.
 
@@ -253,11 +253,11 @@ Sie können beispielsweise einen beschädigten Verweis innerhalb einer Verweisko
 
 ![ateat-14](assets/ateat-14.png)
 
-## Ereignisse: Timeline {#events-timeline}
+## Ereignisse: Zeitleiste {#events-timeline}
 
-Bei bestimmten Ressourcen (z. B. Seiten aus der **Sites-Konsole** oder Assets aus der **Asset-Konsole**) kann die [Timeline dazu verwendet werden, die zuletzt durchgeführten Aktivitäten für ausgewählte Elemente anzuzeigen](/help/sites-authoring/basic-handling.md#timeline).
+Bei bestimmten Ressourcen (z. B. Seiten aus der **Sites-Konsole** oder Assets aus der **Asset-Konsole**) kann die [Zeitleiste dazu verwendet werden, die zuletzt durchgeführten Aktivitäten für ausgewählte Elemente anzuzeigen](/help/sites-authoring/basic-handling.md#timeline).
 
-Öffnen Sie die gewünschte Konsole, navigieren Sie zur gewünschten Ressource und öffnen Sie die **Timeline** wie folgt:
+Öffnen Sie die gewünschte Konsole, navigieren Sie zur gewünschten Ressource und öffnen Sie die **Zeitleiste** wie folgt:
 
 ![ateat-15](assets/ateat-15.png)
 
@@ -290,7 +290,7 @@ Beispielsweise stehen unter **Seiteninformationen** ggf. auch folgende Optionen 
 
 Darüber hinaus können über die **Seiteninformationen** ggf. auch Analysen und Empfehlungen aufgerufen werden.
 
-## Seitenmodi    {#page-modes}
+## Seitenmodi   {#page-modes}
 
 Für die Bearbeitung von Seiten stehen verschiedene Modi zur Verfügung, über die jeweils unterschiedliche Aktionen durchgeführt werden können:
 
