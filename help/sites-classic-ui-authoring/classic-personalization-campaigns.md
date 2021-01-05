@@ -28,7 +28,7 @@ In diesem Dokument werden die verschiedenen Elemente beschrieben, aus denen Kamp
 
 * [Teaser und Strategien](/help/sites-classic-ui-authoring/classic-personalization-campaigns-teasers-strategy.md)
 * [E-Mail-Marketing](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email.md)
-* [Einstiegsseiten](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
+* [Landing Pages](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
 * [Adobe Target-Angebote](/help/sites-classic-ui-authoring/classic-personalization-campaigns-target-offers.md)
 * [Arbeiten mit dem Marketing Campaign Manager](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
 * [Grundlegendes zur Segmentierung](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
