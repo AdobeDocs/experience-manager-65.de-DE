@@ -21,7 +21,7 @@ ht-degree: 2%
 
 # Communities-Benachrichtigungen {#communities-notifications}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 AEM Communities stellt einen Benachrichtigungsabschnitt bereit, der Ereignisse anzeigt, die für das Mitglied der Community von Interesse sind.
 
