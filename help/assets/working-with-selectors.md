@@ -1,5 +1,5 @@
 ---
-title: 'Arbeiten mit Selektoren '
+title: Arbeiten mit Selektoren
 description: Auswählen von Assets für interaktive Bilder, interaktive Videos und Karussellbanner
 uuid: 6231739c-bf49-4069-90a4-57848cc68d9a
 contentOwner: Rick Brough
