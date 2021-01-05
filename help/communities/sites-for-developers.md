@@ -129,7 +129,7 @@ Dadurch werden nur benutzergenerierte Inhalte (die in der Veröffentlichung eing
 
 ### Community-Benutzergruppen {#community-user-groups}
 
-Suchen Sie in allen Autoren- und Veröffentlichungsinstanzen in der [Sicherheitskonsole](../../help/sites-administering/security.md)nach den [Benutzergruppen](users.md) , die folgende Elemente enthalten:
+Suchen Sie in allen Autor- und Veröffentlichungsinstanzen in der Sicherheitskonsole [die [Benutzergruppen](users.md), die folgende sind:](../../help/sites-administering/security.md)
 
 * Präfix mit `community`
 * Gefolgt von [eindeutiger Site-ID](#community-unique-site-id)
