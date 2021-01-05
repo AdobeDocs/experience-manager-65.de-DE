@@ -1,6 +1,6 @@
 ---
 title: 'Einrichten von Dynamic Media  '
-description: Um dynamische Medien einzurichten, müssen Sie dynamische Medien konfigurieren und Bild- und Viewer-Vorgaben verwalten.
+description: Zum Einrichten von Dynamic Media müssen Sie Dynamic Media konfigurieren und Bild- und Viewer-Vorgaben verwalten.
 uuid: bcd1f9ab-4201-4222-9e4a-ba82b3c7cd6c
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -20,14 +20,14 @@ Mithilfe von [Dynamic Media](https://www.adobe.com/de/solutions/web-experience-m
 
 >[!NOTE]
 >
->In diesem Dokument werden die Funktionen für dynamische Medien beschrieben, die direkt in AEM integriert sind. Wenn Sie Dynamic Media Classic in AEM integriert verwenden, finden Sie weitere Informationen unter [Dokumentation zur Integration von Dynamic Media Classic](/help/sites-administering/scene7.md).
+>In diesem Dokument werden die Funktionen für dynamische Medien beschrieben, die direkt in AEM integriert sind. Wenn Sie Dynamic Media Classic in AEM integriert verwenden, finden Sie weitere Informationen unter [Dynamic Media Classic-Integrationsdokumentation](/help/sites-administering/scene7.md).
 >
->Unter [Szenario mit doppeltem Verwendungszweck](/help/sites-administering/scene7.md#dual-use-scenario) finden Sie Zeiten, in denen Sie AEM in Dynamic Media Classic mit dynamischen Medien integrieren möchten.
+>Unter [Dual-Use-Szenario](/help/sites-administering/scene7.md#dual-use-scenario) finden Sie Zeiten, in denen Sie AEM in Dynamic Media Classic in Verbindung mit Dynamic Media integrieren möchten.
 
 Wenn Sie dynamische Medien verwalten, sind für Sie die folgenden Themen interessant:
 
-* [Konfigurieren des Modus](config-dms7.md)  &quot;Dynamische Medien - Scene7&quot;— Verwenden Sie diese Konfiguration, wenn Sie ein neuer Kunde von Dynamic Media sind.
-* [Konfigurieren des dynamischen Media-Hybrid-Modus](config-dynamic.md) — Verwenden Sie diese Konfiguration, wenn Sie ein bestehender AEM für das Upgrade auf dynamische Medien sind.
+* [Konfigurieren des Dynamic Media-Scene7-Modus](config-dms7.md) — Verwenden Sie diese Konfiguration, wenn Sie ein neuer Dynamic Media-Kunde sind.
+* [Konfigurieren des Dynamic Media-Hybrid-Modus](config-dynamic.md) — Verwenden Sie diese Konfiguration, wenn Sie bereits ein Dynamic Media-Kunden-Upgrade AEM sind.
 * [Verwalten von Bildvorgaben](managing-image-presets.md)
 * [Verwalten von Viewer-Vorgaben](managing-viewer-presets.md)
 * [Fehlerbehebung in Dynamic Media – Scene7-Modus](troubleshoot-dms7.md)
