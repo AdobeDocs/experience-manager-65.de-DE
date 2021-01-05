@@ -20,7 +20,7 @@ ht-degree: 3%
 
 # Rich Text Editor Essentials {#rich-text-editor-essentials}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Ein Rich Text Editor (RTE) bietet die Möglichkeit, Text mit Markup einzugeben.
 
