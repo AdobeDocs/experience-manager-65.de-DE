@@ -59,11 +59,11 @@ Um eine höhere Dateigrößenbeschränkung zu konfigurieren, führen Sie die fol
 1. Suchen Sie auf der Seite [!DNL Adobe Experience Manager] [!UICONTROL Webkonsole Bundles] unter der Tabellenspalte &quot;Name&quot;nach **[!UICONTROL Adobe Granite Workflow External Process Job Handler]** und klicken Sie darauf.
 1. Stellen Sie auf der Seite [!UICONTROL Adobe Granite Workflow External Process Job Handler] die Sekunden für die Felder **[!UICONTROL Default Timeout]** und **[!UICONTROL Max Timeout]** auf `18000` (fünf Stunden) ein. Klicken Sie auf **[!UICONTROL Speichern]**.
 1. Klicken Sie in [!DNL Experience Manager] auf **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**.
-1. Wählen Sie auf der Seite &quot;Workflow-Modelle&quot;die Option **[!UICONTROL Dynamic Media Encode Video]** und klicken Sie dann auf **[!UICONTROL Bearbeiten]**.
+1. Wählen Sie auf der Seite &quot;Workflow-Modelle&quot;die Option **[!UICONTROL Dynamic Media-Kodierungsvideo]** und klicken Sie dann auf **[!UICONTROL Bearbeiten]**.
 1. Klicken Sie auf der Seite &quot;Workflow&quot;mit der Dublette auf die Komponente **[!UICONTROL Dynamic Media Video Service Process]**.
 1. Erweitern Sie im Dialogfeld [!UICONTROL Schritteigenschaften] auf der Registerkarte **[!UICONTROL Allgemein]** die Option **Erweiterte Einstellungen**.
 1. Geben Sie im Feld **[!UICONTROL Timeout]** den Wert `18000` ein und klicken Sie dann auf **[!UICONTROL OK]**, um zur Workflow-Seite **[!UICONTROL Dynamic Media Encode Video]** zurückzukehren.
-1. Klicken Sie am oberen Rand der Seite unter dem Seitentitel [!UICONTROL Video für dynamische Medienkodierung] auf **[!UICONTROL Speichern]**.
+1. Klicken Sie oben auf der Seite unter dem Seitentitel [!UICONTROL Dynamic Media-Kodierung Video] auf **[!UICONTROL Speichern]**.
 
 ## Veröffentlichen von Video-Assets {#publish-video-assets}
 
