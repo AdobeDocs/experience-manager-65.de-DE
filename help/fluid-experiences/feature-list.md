@@ -13,9 +13,9 @@ ht-degree: 16%
 
 # Liste der Funktion für AEM-Erlebnisse{#aem-fluid-experiences-feature-list}
 
-Adobe Experience Manager Fluid Experience nutzt die leistungsstarken Funktionen von AEM Sites, AEM Dynamic Media und AEM Assets, um eine stabile Lösung für den Versand von kostenlosen Inhalten zu bieten.
+Adobe Experience Manager Fluid Experience nutzt die leistungsstarken Funktionen von AEM Sites, AEM Dynamic Media und AEM Assets, um eine robuste Lösung für den Versand von kostenlosen Inhalten zu bieten.
 
-AEM Fluid Experience unterscheidet sich von klassischen AEM insofern, als nur der nutzungsfall ohne Kopf des Versands behandelt wird. Mit den AEM Sites-, Assets- und Dynamic Media-Lösungen [ können Sie mit leistungsstarkem Authoring und Versand von Inhalten und AEM leistungsstarken Unterstützung für Hybrid-Anwendungsfälle arbeiten.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
+AEM Fluid Experience unterscheidet sich von klassischen AEM insofern, als nur der nutzungsfall ohne Kopf des Versands behandelt wird. Mit den Lösungen [AEM Sites, Assets und Dynamic Media sind das Authoring und der Versand von Inhalten und AEM leistungsstarke Unterstützung für Hybrid-Anwendungsfälle verfügbar.](https://docs.adobe.com/content/help/de-DE/experience-manager-65/user-guide/home.html)
 
 In den folgenden Tabellen sind die Funktionen AEM Fluid Experience und der Link zur entsprechenden Supportdokumentation aufgeführt.
 
@@ -53,7 +53,7 @@ In den folgenden Tabellen sind die Funktionen AEM Fluid Experience und der Link 
 | [Erlebnisfragmente](/help/sites-authoring/experience-fragments.md) |
 | HTTP-API für strukturierten Inhalt (Lesen) |
 | HTTP-API für strukturierten Inhalt (CRUD) |
-| [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) |
+| [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html) |
 | [Dynamische Medien](/help/assets/dynamic-media.md) |
 
 ## Admin- und Integrationsfunktionen {#admin-and-integration-features}
@@ -66,7 +66,7 @@ In den folgenden Tabellen sind die Funktionen AEM Fluid Experience und der Link 
 | [Übersetzung von Inhalten](/help/sites-administering/translation.md) |
 | [Überwachung](/help/sites-deploying/monitoring-and-maintaining.md) |
 | [Sicherung](/help/sites-administering/backup-and-restore.md) |
-| [Cloud Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) |
+| [Cloud Manager](https://docs.adobe.com/content/help/de/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) |
 | [PIM-Integration](/help/sites-authoring/managing-product-information.md) |
 | [Projekte und Aufgaben](/help/sites-authoring/projects.md) |
 | [Workflows](/help/sites-administering/workflows-starting.md) |
