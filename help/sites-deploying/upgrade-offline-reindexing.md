@@ -22,7 +22,7 @@ Eine der größten Herausforderungen bei der Aktualisierung von Adobe Experience
 
 In diesem Abschnitt wird beschrieben, wie Sie das Oak-run-Tool verwenden, um das Repository **vor der Durchführung der Aktualisierung neu zu indizieren, wodurch die Ausfallzeit während der eigentlichen Aktualisierung verringert wird.** Die angezeigten Schritte können auf [Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html)-Indizes für die Versionen AEM 6.4 und höher angewendet werden.
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Neue Versionen der AEM führen zu Änderungen an Oak-Indexdefinitionen, wenn der Funktionssatz erweitert wird. Änderungen an den Oak-Indizes erzwingen eine erneute Deaktivierung, wenn die AEM aktualisiert wird. Die Neudezierung von Assets ist teuer, da Text in Assets (z. B. Text in der PDF-Datei) extrahiert und indiziert wird. Bei MongoMK-Repositorys bleiben die Daten über das Netzwerk erhalten, was die Zeit für die erneute Dekodierung weiter verlängert.
 
