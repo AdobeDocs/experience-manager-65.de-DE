@@ -22,7 +22,7 @@ Dynamic Media-Assets werden vom CDN zwecks schneller Bereitstellung im Cache ges
 
 >[!IMPORTANT]
 >
->Die folgenden Schritte gelten nur für dynamische Medien in AEM 6.5, Service Pack 5 (AEM 6.5.5) oder früher.<br>Wenn Sie dynamische Medien in AEM 6.5, Service Pack 6 (AEM 6.5.6) oder höher verwenden, befolgen Sie die Schritte unter  [Ungültigmachen des CDN-Cache über dynamische Medien.](/help/assets/invalidate-cdn-cache-dynamic-media.md)
+>Die folgenden Schritte gelten nur für Dynamic Media in AEM 6.5, Service Pack 5 (AEM 6.5.5) oder früher.<br>Wenn Sie Dynamic Media in AEM 6.5, Service Pack 6 (AEM 6.5.6) oder höher verwenden, befolgen Sie die Schritte unter  [Ungültigmachen des CDN-Cache über Dynamic Media.](/help/assets/invalidate-cdn-cache-dynamic-media.md)
 
 Siehe auch [Überblick über Caching in Dynamic Media Classic (Scene7)](https://helpx.adobe.com/de/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
