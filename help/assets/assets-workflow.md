@@ -60,7 +60,7 @@ Gehen Sie wie folgt vor, um einen Workflow auf ein Asset anzuwenden:
 
    ![Workflow auswählen, Titel angeben und auf Beginn klicken](assets/start-workflow.png)
 
-1. Klicken Sie auf **[!UICONTROL Beginn]** und dann auf **[!UICONTROL Fortfahren]**. Jeder Schritt des Workflows wird in der Timeline als ein Ereignis angezeigt.
+1. Klicken Sie auf **[!UICONTROL Beginn]** und dann auf **[!UICONTROL Fortfahren]**. Jeder Schritt des Workflows wird in der Zeitleiste als ein Ereignis angezeigt.
 
    ![chlimage_1-256](assets/chlimage_1-52.png)
 
