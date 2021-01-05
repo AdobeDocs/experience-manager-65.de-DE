@@ -22,7 +22,7 @@ ht-degree: 3%
 
 # Communities Scoring and Badges {#communities-scoring-and-badges}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Die AEM Communities-Funktion für Scoring und Abzeichen bietet die Möglichkeit, Community-Mitglieder zu identifizieren und zu belohnen.
 
@@ -218,7 +218,7 @@ Unter-Regeln sind Knoten des Typs `cq:Page` mit Eigenschaften auf ihrem `jcr:con
   <tr>
    <th>Eigenschaft</th>
    <th>Typ</th>
-   <th> Wertbeschreibung</th>
+   <th> Wert Beschreibung</th>
   </tr>
   <tr>
    <td><i><code>VERB</code></i></td>
@@ -349,7 +349,7 @@ Die `scoringRules`-Eigenschaft einer Kennzeichnungsregel schränkt einfach ein, 
   <tr>
    <th>Eigenschaft</th>
    <th>Typ</th>
-   <th>Wertbeschreibung</th>
+   <th>Wert Beschreibung</th>
   </tr>
   <tr>
    <td>Schwellenwerte</td>
