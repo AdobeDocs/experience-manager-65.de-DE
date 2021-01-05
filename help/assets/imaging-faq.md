@@ -51,7 +51,7 @@ Verbesserungen der neuesten Version der intelligenten Bildbearbeitung:
 
 ## Ist intelligente Bildbearbeitung mit irgendwelchen Lizenzierungskosten verbunden? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-Nein. Smart Imaging ist im Lieferumfang Ihrer Lizenz für Dynamic Media Classic oder Adobe Experience Manager - Dynamic Media (On Prem, AMS und AEM als Cloud Service) enthalten.
+Nein. Smart Imaging ist in Ihrer bestehenden Lizenz von Dynamic Media Classic oder Adobe Experience Manager - Dynamic Media (On Prem, AMS und AEM als Cloud Service) enthalten.
 
 >[!NOTE]
 >
@@ -178,7 +178,7 @@ Zu Beginn der Übergangsphase treffen die nicht im Cache gespeicherten Bilder di
 
 ## Wie kann ich feststellen, ob die intelligente Bildbearbeitung erwartungsgemäß funktioniert? {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
-1. Laden Sie nach der Konfiguration Ihres Kontos mit der intelligenten Bildbearbeitung eine URL für Dynamic Media Classic oder Adobe Experience Manager - Dynamic Media-Bilder in den Browser.
+1. Laden Sie nach der Konfiguration Ihres Kontos mit Smart Imaging eine Dynamic Media Classic- oder Adobe Experience Manager - Dynamic Media-Bild-URL in den Browser.
 1. Öffnen Sie den Chrome-Entwicklerbereich, indem Sie im Browser auf **[!UICONTROL Anzeigen > Entwickler > Entwickler-Tools]** klicken. Selbstverständlich können Sie auch ein anderes Browser-Entwickler-Tool Ihrer Wahl verwenden.
 
 1. Stellen Sie sicher, dass der Cache deaktiviert ist, wenn die Entwickler-Tools geöffnet sind. 
