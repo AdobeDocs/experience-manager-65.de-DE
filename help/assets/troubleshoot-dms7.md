@@ -1,6 +1,6 @@
 ---
 title: Fehlerbehebung bei Dynamic Media - Scene7-Modus
-description: Fehlerbehebung für dynamische Medien, wenn diese im Scene7-Modus ausgeführt werden.
+description: Fehlerbehebung für Dynamic Media, wenn es im Scene7-Modus ausgeführt wird.
 uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -29,7 +29,7 @@ Stellen Sie sicher, dass Dynamic Media korrekt eingerichtet wurde, indem Sie fol
 * Alle Cumulative Fix Packs für AEM 6.4 wurden *vor* den verfügbaren Feature Packs für Dynamic Media installiert.
 * Das optionale Feature Pack 18912 wurde installiert.
 
-   Dieses optionale Feature Pack dient zur FTP-Unterstützung oder wenn Sie Assets von Dynamic Media Classic zu dynamischen Medien migrieren.
+   Dieses optionale Feature Pack dient zum FTP-Support oder wenn Sie Assets von Dynamic Media Classic nach Dynamic Media migrieren.
 
 * Navigieren Sie zur Benutzeroberfläche &quot;Cloud Services&quot;und bestätigen Sie, dass das bereitgestellte Konto unter **[!UICONTROL Verfügbare Konfigurationen angezeigt wird.]**
 * Stellen Sie sicher, dass der Replizierungsagenten `Dynamic Media Asset Activation (scene7)` aktiviert ist.
