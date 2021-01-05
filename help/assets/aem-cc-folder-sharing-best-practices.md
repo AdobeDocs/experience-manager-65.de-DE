@@ -28,7 +28,7 @@ Diese Art der Integration kann in den folgenden Anwendungsfällen verwendet werd
 >
 >Bevor Sie dieses Dokument lesen, können Sie die Best Practices für die Experience Manager- und Creative Cloud-Integration von [ überprüfen, um einen Überblick über die Integration zu erhalten.](/help/assets/aem-cc-integration-best-practices.md)
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 [!DNL Experience Manager] zum  [!DNL Creative Cloud] Freigeben von Ordnern setzt die serverseitige Freigabe von Ordnern und Dateien zwischen  [!DNL Assets] und  [!DNL Creative Cloud] Konten voraus. Kreativprofis, die die [!DNL Creative Cloud]-Desktop-App auf ihren Desktops verwenden, können die freigegebenen Ordner zusätzlich mithilfe der [!DNL Adobe CreativeSync]-Technologie direkt auf ihren Datenträgern verfügbar machen.
 
