@@ -64,7 +64,7 @@ Im Folgenden sind die Verbesserungen für AEM Sites 6.5 aufgeführt:
 * Die [Listenansicht](/help/sites-authoring/basic-handling.md#list-view) enthält eine neue Workflowspalte, die den Status anzeigt, wenn sich die Seite aktuell in einem Workflow befindet.
 * In den [Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md) können Sie nun nach vorhandenen Elementen suchen, wenn Sie der Seite eine Miniaturansicht zuweisen (Registerkarte „Miniatur“).
 
-## Seiten-Editor {#page-editor}
+## Seiteneditor {#page-editor}
 
 * Der Seiten-Editor ermöglicht kontextbezogenes Bearbeiten und Erstellen von Single-Page-Apps-Erlebnissen mit clientseitigen React- und Angular-Komponenten, die das JS-SDK verwenden (auch als SPA-Editor bezeichnet).
 * Der Strukturvorlagen-Modus wird nur angezeigt, wenn für die Seite eine Strukturvorlagen-Seite konfiguriert ist.
