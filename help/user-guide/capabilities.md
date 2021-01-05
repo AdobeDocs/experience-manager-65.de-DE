@@ -40,7 +40,7 @@ ht-degree: 52%
 
 ## AEM Communities {#aem-communities}
 
-[Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere soziale Funktionen.](/help/communities/home.md)
+[Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere Community-Funktionen.](/help/communities/home.md)
 
 ## AEM Livefyre {#aem-livefyre}
 
@@ -48,4 +48,4 @@ ht-degree: 52%
 
 ## AEM Mobile {#aem-mobile}
 
-[Erstellen und verwalten Sie Inhalte für mobile Apps.](/help/mobile/home.md)
+[Erstellen und verwalten Sie Inhalte für Mobile Apps.](/help/mobile/home.md)
