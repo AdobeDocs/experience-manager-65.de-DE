@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Communities-Abonnement {#communities-subscriptions}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Ab Communities [FP1](deploy-communities.md#latestfeaturepack) können Community-Mitglieder mit der Community per E-Mail interagieren, indem sie eine Funktion verwenden, die als Abonnements bezeichnet wird.
 
