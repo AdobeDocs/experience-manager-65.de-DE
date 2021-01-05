@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Verwenden von Maven for Communities {#using-maven-for-communities}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Dieser Abschnitt der AEM Communities-Dokumentation ergänzt:
 
