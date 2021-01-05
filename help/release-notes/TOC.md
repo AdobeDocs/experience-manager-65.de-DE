@@ -19,7 +19,7 @@ ht-degree: 45%
 + [Übersicht über AEM 6.5](home.md)
 + [Allgemeine Versionshinweise](release-notes.md)
 + Service Pack  – Versionshinweise {#service-pack}
-   + [Neue Funktionen](new-features-latest-service-pack.md)
+   + [Neuerungen](new-features-latest-service-pack.md)
    + [Service Pack 7 – Versionshinweise](sp-release-notes.md)
    + [Frühere Service Pack-Versionshinweise](previous-hotfixes-featurepacks.md)
 + [Versionshinweise zu AEM Sites](sites.md)
