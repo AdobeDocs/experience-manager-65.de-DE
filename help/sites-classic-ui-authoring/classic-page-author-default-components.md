@@ -1,6 +1,6 @@
 ---
-title: Komponenten
-seo-title: Komponenten
+title: 'Komponenten '
+seo-title: 'Komponenten '
 description: AEM ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website-Autoren umfangreiche Funktionen bieten.
 seo-description: AEM ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website-Autoren umfangreiche Funktionen bieten.
 page-status-flag: de-activated
