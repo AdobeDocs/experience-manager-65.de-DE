@@ -28,5 +28,5 @@ Das Arbeiten mit dynamischen Medien ist in der klassischen Benutzeroberfläche n
 
 >[!NOTE]
 >
->Wenn Sie dynamische Medien verwenden, können Sie keine automatischen Uploads gleichzeitig verwenden, wenn [Dynamic Media Classic in AEM](/help/sites-administering/scene7.md) integrieren. Siehe [Aktivieren von dynamischen Medien](/help/assets/config-dynamic.md#enabling-dynamic-media). Dynamic Media ist standardmäßig deaktiviert.
+>Wenn Sie Dynamic Media verwenden, können Sie keine automatischen Uploads gleichzeitig verwenden, wenn [Dynamic Media Classic in AEM](/help/sites-administering/scene7.md) integrieren. Siehe [Aktivieren von Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media). Dynamic Media ist standardmäßig deaktiviert.
 
