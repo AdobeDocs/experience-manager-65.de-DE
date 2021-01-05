@@ -421,8 +421,8 @@ Sie können die Konfigurationsdatei mit den folgenden Optionen verwenden:
 
 * secretKey=&quot;&quot;: Der Speicherzugriffsschlüssel. Stellen Sie sicher, dass das Zeichen &#39;=&#39; wie &#39;\=&#39; mit Escape-Zeichen versehen ist.
 * container=&quot;&quot;: Der Name des Blob-Speichercontainers von Microsoft Azure. Der Container stellt eine Gruppierung mehrerer Blobs dar. Zusätzliche Details finden Sie in der [offiziellen Dokumentation](https://msdn.microsoft.com/en-us/library/dd135715.aspx).
-* maxConnections=&quot;&quot;: Die gleichzeitige Anzahl gleichzeitiger Anforderungen pro Vorgang. Der Standardwert ist 1.
-* maxErrorRetry=&quot;&quot;: Anzahl der weitere Zustellversuche pro Anforderung. Der Standardwert ist 3.
+* maxConnections=&quot;&quot;: Die gleichzeitige Anzahl gleichzeitiger Anforderungen pro Vorgang. Der Standardwert ist 1. 
+* maxErrorRetry=&quot;&quot;: Anzahl der weitere Zustellversuche pro Anforderung. Der Standardwert ist 3. 
 * socketTimeout=&quot;&quot;: Das Zeitüberschreitungsintervall in Millisekunden, das für die Anforderung verwendet wird. Der Standardwert ist 5 Minuten.
 
 Neben den oben aufgeführten Einstellungen können auch die folgenden Einstellungen konfiguriert werden:
@@ -432,8 +432,8 @@ Neben den oben aufgeführten Einstellungen können auch die folgenden Einstellun
 * maxCachedBinarySize: Binärdateien, deren Größe kleiner oder gleich dieser Größe ist, werden im Arbeitsspeichercache gespeichert. Die Größe wird in Byte angegeben. Der Standardwert ist 17408 (17 KB).
 * cacheSize: Die Größe des Zwischenspeichers. Der Wert wird in Byte angegeben. Der Standardwert ist 64 GB.
 * geheim: Nur bei Verwendung der binaromatischen Replizierung für die Einrichtung eines gemeinsamen Datenspeichers zu verwenden.
-* stagingSplitPercentage: Der Prozentsatz der Cachegröße, die für die Staging-Analyse asynchroner Uploads konfiguriert wurde. Der Standardwert ist 10.
-* uploadThreads: Die Anzahl der Uploads von Threads, die für asynchrone Uploads verwendet werden. Der Standardwert ist 10.
+* stagingSplitPercentage: Der Prozentsatz der Cachegröße, die für die Staging-Analyse asynchroner Uploads konfiguriert wurde. Der Standardwert ist 10. 
+* uploadThreads: Die Anzahl der Uploads von Threads, die für asynchrone Uploads verwendet werden. Der Standardwert ist 10. 
 * stagingPurgeInterval: Das Intervall in Sekunden zum Bereinigen der fertigen Uploads aus dem Staging-Cache. Der Standardwert ist 300 Sekunden (5 Minuten).
 * stagingRetryInterval: Das Wiederholungsintervall in Sekunden für fehlgeschlagene Uploads. Der Standardwert ist 600 Sekunden (10 Minuten).
 
