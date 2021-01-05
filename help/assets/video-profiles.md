@@ -199,8 +199,8 @@ Wenn Sie die Option **[!UICONTROL Kodieren für adaptives Streaming]** nicht ver
 
 Je nachdem, welchen Modus Sie ausführen, werden die folgenden Videoformat-Codecs unterstützt:
 
-* Dynamischer Media-Scene7-Modus: H.264 (.mp4)
-* Dynamischer Media-Hybrid-Modus: H.264 (.mp4), WebM
+* Dynamic Media-Scene7-Modus: H.264 (.mp4)
+* Dynamic Media-Hybrid-Modus: H.264 (.mp4), WebM
 
 Siehe auch [Erstellen eines Videokodierungsprofils für adaptives Streaming](#creating-a-video-encoding-profile-for-adaptive-streaming).
 
