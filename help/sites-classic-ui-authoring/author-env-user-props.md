@@ -51,7 +51,7 @@ Seiten werden im aktuellen Fenster geöffnet.
 Über das Benutzersymbol haben Sie Zugang zu den folgenden Optionen:
 
 * Abmelden
-* [Stellvertretend agieren](/help/sites-administering/security.md#impersonating-another-user)
+* [Identität annehmen als](/help/sites-administering/security.md#impersonating-another-user)
 * [Benutzereinstellungen](#user-preferences)
 * [Benachrichtigungs-Posteingang](/help/sites-classic-ui-authoring/author-env-inbox.md)
 
