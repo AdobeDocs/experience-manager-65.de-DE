@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
 source-wordcount: '5767'
-ht-degree: 53%
+ht-degree: 55%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 53%
 | [Einschränkungen](#limitations) und [Tipps](#tips) |  |  |
 | [Illustrierte Beispiele](#samples) |  |  |
 
-Suchen Sie Assets mithilfe des Omniture-Suchfelds oben in der [!DNL Experience Manager]-Weboberfläche. Gehen Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Dateien]** in [!DNL Experience Manager], klicken Sie in der oberen Leiste auf ![Suchsymbol](assets/do-not-localize/search_icon.png), geben Sie den Suchbegriff ein und wählen Sie `Return`. Alternativ können Sie die Suchbegriff-Tastenkombination `/` (Schrägstrich) verwenden, um das OmniSearch-Feld zu öffnen. `Location:Assets` ist vorausgewählt, um die Suche auf DAM-Assets zu begrenzen. [!DNL Experience Manager] bietet Vorschläge, wie Ihr Beginn einen Suchbegriff eingeben kann.
+Suchen Sie Assets mithilfe des Omniture-Suchfelds oben in der [!DNL Experience Manager]-Weboberfläche. Gehen Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Dateien]** in [!DNL Experience Manager], klicken Sie in der oberen Leiste auf ![Suchsymbol](assets/do-not-localize/search_icon.png), geben Sie den Suchbegriff ein und wählen Sie `Return`. Alternativ können Sie die Keyword-Tastenkombination `/` (Schrägstrich) verwenden, um das OmniSearch-Feld zu öffnen. `Location:Assets` ist vorausgewählt, um die Suche auf DAM-Assets zu begrenzen. [!DNL Experience Manager] bietet Vorschläge, wie Ihr Beginn einen Suchbegriff eingeben kann.
 
 Verwenden Sie das Bedienfeld **[!UICONTROL Filter]**, um nach Assets, Ordnern, Tags und Metadaten zu suchen. Sie können Suchergebnisse anhand der verschiedenen Optionen (Prädikate) filtern, z. B. Dateityp, Dateigröße, Datum der letzten Änderung, Status des Assets, Einblicke und Adobe Stock-Lizenzierung. Sie können das Bedienfeld &quot;Filter&quot;anpassen und mithilfe von [Suchfacetten](/help/assets/search-facets.md) Suchvorhersagen hinzufügen oder entfernen. Der Filter [!UICONTROL Dateityp] im Bereich [!UICONTROL Filter] enthält Kontrollkästchen mit gemischtem Status. Wenn Sie also nicht alle verschachtelten Prädikate (oder Formate) auswählen, werden die Kontrollkästchen der ersten Ebene teilweise markiert.
 
@@ -59,9 +59,9 @@ Sie können die gewünschten Assets schneller auf der Suchergebnisseite ausfindi
 
 ### Grundlegende Suchbegriffe und -ergebnisse {#searchbasics}
 
-Sie können im OmniSearch-Feld mit Suchbegriffen suchen. Bei der Stichwortsuche wird nicht zwischen Groß- und Kleinschreibung unterschieden und es handelt sich um eine Volltextsuche (über die beliebten Metadatenfelder hinweg). Wenn mehrere Suchbegriffe verwendet werden, ist `AND` der Standardoperator zwischen den Suchbegriffen.
+Sie können im OmniSearch-Feld mit Keywords suchen. Bei der Stichwortsuche wird nicht zwischen Groß- und Kleinschreibung unterschieden und es handelt sich um eine Volltextsuche (über die beliebten Metadatenfelder hinweg). Wenn mehrere Keywords verwendet werden, ist `AND` der Standardoperator zwischen den Keywords . 
 
-Die Ergebnisse werden nach Relevanz sortiert, beginnend mit den größten Übereinstimmungen. Bei mehreren Suchbegriffen sind Assets, die beide Begriffe in ihren Metadaten enthalten, relevanter. In Metadaten werden Suchbegriffe, die als Smart-Tags erscheinen, höher eingestuft als Suchbegriffe, die in anderen Metadatenfeldern auftauchen. [!DNL Experience Manager] bietet Ihnen die Möglichkeit, einem bestimmten Suchbegriff mehr Gewicht zu verleihen. Außerdem ist es möglich, den Rang](#searchrank) einiger gezielter Assets für bestimmte Suchbegriffe zu erhöhen.[
+Die Ergebnisse werden nach Relevanz sortiert, beginnend mit den größten Übereinstimmungen. Bei mehreren Keywords  sind Assets, die beide Begriffe in ihren Metadaten enthalten, relevanter. In Metadaten werden Keywords , die als Smart-Tags erscheinen, höher eingestuft als Keywords , die in anderen Metadatenfeldern auftauchen. [!DNL Experience Manager] bietet Ihnen die Möglichkeit, einem bestimmten Suchbegriff mehr Gewicht zu verleihen. Außerdem ist es möglich, den Rang](#searchrank) einiger gezielter Assets für bestimmte Suchbegriffe zu erhöhen.[
 
 Zum schnellen Auffinden der benötigten Assets bietet die Rich-Oberfläche Filter-, Sortierungs- und Auswahlverfahren. Sie können Ergebnisse anhand mehrerer Kriterien filtern und für verschiedene Filter die Anzahl der durchsuchten Assets anzeigen. Alternativ können Sie die Suche erneut ausführen, indem Sie die Abfrage im OmniSearch-Feld ändern. Wenn Sie Suchbegriffe oder Filter ändern, bleiben die anderen Filter angewendet, um den Kontext Ihrer Suche zu wahren.
 
@@ -88,7 +88,7 @@ Durch Verwendung von Smarttags wird eine zusätzliche `OR`-Klausel hinzugefügt,
 
 ### Suchvorschläge bei der Eingabe {#searchsuggestions}
 
-Wenn Sie Suchbegriffe eingeben, schlägt [!DNL Experience Manager] die möglichen Suchbegriffe oder -ausdrücke vor. Die Vorschläge basieren auf den Metadaten der vorhandenen Assets. [!DNL Experience Manager] indiziert alle Metadatenfelder, um die Suche zu erleichtern. Zur Bereitstellung von Suchvorschlägen verwendet das System die Werte der folgenden Metadatenfelder. Um Suchvorschläge zu erhalten, können Sie die folgenden Felder mit geeigneten Suchbegriffen ausfüllen:
+Wenn Sie Suchbegriffe eingeben, schlägt [!DNL Experience Manager] die möglichen Suchbegriffe oder -ausdrücke vor. Die Vorschläge basieren auf den Metadaten der vorhandenen Assets. [!DNL Experience Manager] indiziert alle Metadatenfelder, um die Suche zu erleichtern. Zur Bereitstellung von Suchvorschlägen verwendet das System die Werte der folgenden Metadatenfelder. Um Suchvorschläge zu erhalten, können Sie die folgenden Felder mit geeigneten Keywords ausfüllen:
 
 * Asset-Tags. (Zuordnung zu `jcr:content/metadata/cq:tags`)
 * Asset-Titel. (Zuordnung zu `jcr:content/metadata/dc:title`)
@@ -110,17 +110,17 @@ Die Suchergebnisse, die in Metadatenfeldern alle Suchbegriffe aufweisen, werden 
 1. Treffer von `woman running` in den Smart-Tags.
 1. Treffer von `woman` oder `running` in Smart-Tags.
 
-Sie können die Relevanz von Suchbegriffen für bestimmte Assets verbessern, um die auf Suchbegriffen basierenden Suchen zu optimieren. D. h. die Bilder, für die Sie bestimmte Suchbegriffe festlegen, erscheinen bei der Suche nach diesen Suchbegriffen oben in den Suchergebnissen.
+Sie können die Relevanz von Keywords für bestimmte Assets verbessern, um die auf Keywords basierenden Suchen zu optimieren. D. h. die Bilder, für die Sie bestimmte Keywords festlegen, erscheinen bei der Suche nach diesen Keywords oben in den Suchergebnissen.
 
 1. Öffnen Sie in der Benutzeroberfläche [!DNL Assets] die Eigenschaftsseite für das Asset. Klicken Sie auf **[!UICONTROL Erweitert]** und klicken Sie unter **[!UICONTROL Erhöhen Sie die Anzahl der Suchbegriffe]** auf **[!UICONTROL Hinzufügen]**.
-1. Geben Sie im Feld **[!UICONTROL Search Promote]** einen Suchbegriff ein, für den Sie die Suche nach dem Bild verstärken möchten, und klicken Sie dann auf **[!UICONTROL Hinzufügen]**. Sie können auf dieselbe Weise mehrere Suchbegriffe eingeben.
-1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**. Das Asset, das Sie für diesen Suchbegriff erhöht haben, befindet sich unter den obersten Suchergebnissen.
+1. Geben Sie im Feld **[!UICONTROL Search Promote]** einen Suchbegriff ein, für den Sie die Suche nach dem Bild verstärken möchten, und klicken Sie dann auf **[!UICONTROL Hinzufügen]**. Sie können auf dieselbe Weise mehrere Keywords eingeben.
+1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**. Das Asset, das Sie für dieses Keyword erhöht haben, befindet sich unter den obersten Suchergebnissen.
 
-So können Sie das Ranking bestimmter Assets in den Suchergebnissen für den jeweiligen Suchbegriff erhöhen. Siehe Beispielvideo unten. Weitere Informationen finden Sie unter [Suchen in [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
+So können Sie das Ranking bestimmter Assets in den Keywords für das jeweilige Keyword erhöhen. Siehe Beispielvideo unten. Weitere Informationen finden Sie unter [Suchen in [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
-*Video: Verstehen Sie, wie Suchergebnisse bewertet werden und wie der Rang beeinflusst werden kann.*
+*Video: Erfahren Sie, wie Suchergebnisse ihren Rang erhalten und wie der Rang beeinflusst werden kann.*
 
 ## Erweiterte Suche {#scope}
 
@@ -148,7 +148,7 @@ In der Benutzeroberfläche [!DNL Experience Manager] können Benutzer nach [Adob
 
 ### Dynamic Media-Assets {#dmassets}
 
-Sie können nach Dynamic Media-Bildern filtern, indem Sie die Option **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** im Bedienfeld **[!UICONTROL Filter]** auswählen. Dadurch werden Assets wie Bild-Sets, Karussells, Sets für gemischte Medien und Rotations-Sets gefiltert und angezeigt.
+Sie können nach Dynamic Media-Bildern filtern, indem Sie die Option **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** im Bedienfeld **[!UICONTROL Filter]** auswählen. Dadurch werden Assets wie Bildsets, Karussells, Sets für gemischte Medien und Rotationssets gefiltert und angezeigt.
 
 ### Mit bestimmten Werten in Metadatenfeldern suchen {#gqlsearch}
 
@@ -168,23 +168,23 @@ Sie können nach Assets suchen, die auf exakten Werten bestimmter Metadatenfelde
 | Ablaufdatum | expires:YYYY-MM-DDTHH |
 | Einschaltzeit | ontime:YYYY-MM-DDTHH |
 | Ausschaltzeit | offtime:YYYY-MM-DDTHH |
-| Zeitraum (expires dateontime,offtime) | facet field : lowerbound..upperbound |
+| Zeitraum (expires dateontime,offtime) | facet field : lowerbound.upperbound |
 | Pfad | /content/dam/&lt;Ordnername> |
 | PDF-Titel | pdftitle:„Adobe Document“ |
 | Betreff | subject:„Training“ |
 | Tags | tags:„Location And Travel“ |
 | Typ | type:&quot;image\png&quot; |
-| Bildbreite | width:lowerbound..upperbound |
-| Bildhöhe | height:lowerbound..upperbound |
+| Bildbreite | width:lowerbound.upperbound |
+| Bildhöhe | height:lowerbound.upperbound |
 | Person | person:John |
 
 Die Eigenschaften `path`, `limit`, `size` und `orderby` können nicht mit dem Operator `OR` mit einer anderen Eigenschaft kombiniert werden.
 
-Der Suchbegriff für eine von einem Benutzer erstellte Eigenschaft ist ihre Feldbeschriftung im Eigenschafteneditor in Kleinbuchstaben und ohne Leerzeichen.
+Das Keyword für eine von einem Benutzer erstellte Eigenschaft ist ihre Feldbeschriftung im Eigenschafteneditor in Kleinbuchstaben und ohne Leerzeichen.
 
 Im Folgenden finden Sie einige Beispiele für Suchformate für komplexe Abfragen:
 
-* So zeigen Sie alle Assets mit mehreren Facettenfeldern an (wie: title=John Doe und creator tool = Adobe Photoshop):       `title:"John Doe" creatortool:Adobe*`
+* So zeigen Sie alle Assets mit mehreren Facettenfeldern an (wie: title=John Doe und creator tool = Adobe Photoshop):  `title:"John Doe" creatortool:Adobe*`
 * So zeigen Sie alle Assets an, wenn der Facettenwert nicht ein einzelnes Wort, sondern ein Satz ist (wie: title=Scott Reynolds): `title:"Scott Reynolds"`
 * So zeigen Sie alle Assets mit mehreren Werten für eine einzelne Eigenschaft an (wie: title=Scott Reynolds oder John Doe): `title:"Scott Reynolds" OR "John Doe"`
 * So zeigen Sie Assets an, deren Eigenschaftswerte mit einer bestimmten Zeichenfolge beginnen (wie: title ist Scott Reynolds): `title:Scott*`
@@ -210,11 +210,11 @@ Geschäftsbenutzer und Marketing-Experten nutzen Brand Portal, um genehmigte dig
 
 ### [!DNL Adobe Stock] Bilder {#adobestock-1} suchen
 
-Über die [!DNL Experience Manager]-Benutzeroberfläche können Benutzer nach Adobe Stock-Assets suchen und die erforderlichen Assets lizenzieren. Fügen Sie `Location: Adobe Stock` im OmniSearch-Feld hinzu. Sie können auch das Bedienfeld **[!UICONTROL Filter]** verwenden, um alle lizenzierten oder nicht lizenzierten Assets zu suchen bzw. mit der Adobe Stock-Dateinummer ein bestimmtes Asset zu suchen. Siehe [Verwalten von Adobe Stock-Bildern in Experience Manager](/help/assets/aem-assets-adobe-stock.md#usemanage).
+Über die [!DNL Experience Manager]-Benutzeroberfläche können Benutzer nach Adobe Stock-Assets suchen und die erforderlichen Assets lizenzieren. Fügen Sie `Location: Adobe Stock` im OmniSearch-Feld hinzu. Sie können auch das Bedienfeld **[!UICONTROL Filter]** verwenden, um alle lizenzierten oder nicht lizenzierten Assets zu suchen bzw. mit der Adobe Stock-Dateinummer nach einem bestimmten Asset suchen. Siehe [Verwalten von Adobe Stock-Bildern in Experience Manager](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
 ### Suchen nach Dynamic Media-Assets {#dynamicmedia}
 
-Sie können nach Dynamic Media-Bildern filtern, indem Sie die Option **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** im Bedienfeld **[!UICONTROL Filter]** auswählen. Dadurch werden Assets wie Bild-Sets, Karussells, Sets für gemischte Medien und Rotations-Sets gefiltert und angezeigt. Beim Erstellen von Web-Seiten können Autoren in der Inhaltssuche nach Sets suchen. Ein Filter für Sets ist in einem Popup-Menü verfügbar.
+Sie können nach Dynamic Media-Bildern filtern, indem Sie die Option **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** im Bedienfeld **[!UICONTROL Filter]** auswählen. Dadurch werden Assets wie Bildsets, Karussells, Sets für gemischte Medien und Rotationssets gefiltert und angezeigt. Beim Erstellen von Web-Seiten können Autoren in der Inhaltssuche nach Sets suchen. Ein Filter für Sets ist in einem Popup-Menü verfügbar.
 
 ### Suchen nach Assets in der Inhaltssuche beim Erstellen von Web-Seiten {#contentfinder}
 
@@ -276,11 +276,11 @@ Die Suchfunktion kann in den folgenden Szenarien Leistungseinschränkungen aufwe
 * Verwenden Sie das Prädikat „Einblicke“, um basierend auf den Nutzungsstatistiken diverser Creative Cloud-Programme nach unterstützten Assets zu suchen. Nutzungsdaten werden unter Nutzungsbewertung, Impressions, Klicks und Medienkanäle gruppiert, in denen die Assets anhand von Kategorien angezeigt werden.
 * Aktivieren Sie das Kontrollkästchen **[!UICONTROL Alle auswählen]**, um die gesuchten Assets auszuwählen. [!DNL Experience Manager] zeigt zunächst 100 Assets in der Ansicht der Karten und 200 Assets in der Ansicht der Liste an. Während des Bildlaufs der Suchergebnisse werden weitere Assets geladen. Sie können mehr Assets als die geladenen Assets auswählen. Die Anzahl der ausgewählten Assets wird oben rechts auf der Suchergebnisseite angezeigt. Sie können die Auswahl bearbeiten, indem Sie beispielsweise die ausgewählten Assets herunterladen, die Metadateneigenschaften stapelweise für die ausgewählten Assets aktualisieren oder die ausgewählten Assets einer Sammlung hinzufügen. Wenn mehr Assets ausgewählt als angezeigt werden, wird entweder eine Aktion auf alle ausgewählten Assets angewendet oder ein Dialogfeld zeigt die Anzahl der Assets an, auf die sie angewendet werden. Um eine Aktion auf die Assets anzuwenden, die nicht geladen wurden, stellen Sie sicher, dass alle Assets explizit ausgewählt sind.
 * Informationen zum Suchen nach Assets, die keine obligatorischen Metadaten enthalten, finden Sie unter [Obligatorische Metadaten](#mandatorymetadata).
-* Die Suche nutzt alle Metadatenfelder. Eine allgemeine Suche, z. B. nach 12, gibt in der Regel viele Ergebnisse zurück. Um bessere Ergebnisse zu erzielen, sollten Sie Anführungszeichen für die Dublette (nicht einfache Anführungszeichen) verwenden oder sicherstellen, dass die Nummer mit einem Wort ohne Sonderzeichen (z. B. `shoe12`) verknüpft ist.
-* Die Volltextsuche unterstützt Operatoren wie `-` und `^`. Um diese Buchstaben als alphabetische Zeichenfolgen zu suchen, setzen Sie den Suchausdruck in doppelte Anführungszeichen. Verwenden Sie beispielsweise `"Notebook - Beauty"` anstelle von `Notebook - Beauty`.
+* Die Suche nutzt alle Metadatenfelder. Eine allgemeine Suche, z. B. nach 12, gibt in der Regel viele Ergebnisse zurück. Für bessere Ergebnisse sollten Sie doppelte (nicht einfache) Anführungszeichen verwenden oder sicherstellen, dass die Zahl an ein Wort ohne Sonderzeichen angrenzt (z. B. `shoe12`).
+* Die Volltextsuche unterstützt Operatoren wie `-` und `^`. Um diese Buchstaben als alphabetische Zeichenfolgen zu suchen, setzen Sie den Suchausdruck in doppelte Anführungszeichen. Verwenden Sie beispielsweise `"Notebook - Beauty"` anstatt `Notebook - Beauty`.
 * Wenn es zu viele Suchergebnisse gibt, schränken Sie den [Suchbereich](#scope) ein, um die gewünschten Assets leichter finden zu können. Das funktioniert am besten, wenn Sie eine Ahnung davon haben, wie Sie besser nach den gewünschten Assets suchen können (z. B. nach einem bestimmten Dateityp, nach einem bestimmten Speicherort, nach bestimmten Metadaten usw.).
 
-* **Tagging**: Mit Tags können Sie Assets kategorisieren, die effizienter durchsucht und durchsucht werden können. Tagging hilft bei der Verbreitung der entsprechenden Taxonomie an andere Benutzer und Workflows. [!DNL Experience Manager] bietet Methoden zum automatischen Taggen von Assets mit den KI-Diensten von Adobe Sensei, die beim Taggen von Assets durch Verwendung und Training immer besser werden. Bei der Suche nach Assets werden die Smart-Tags berücksichtigt, wenn die Funktion in Ihrem Konto aktiviert ist. Sie funktioniert zusammen mit der integrierten Suchfunktion. Siehe [Suchverhalten](#searchbehavior). Um die Reihenfolge zu optimieren, in der die Suchergebnisse angezeigt werden, können Sie für einige ausgewählte Assets das [Such-Ranking optimieren](#searchrank).
+* **Tagging**: Mit Tags können Sie Assets kategorisieren, die effizienter durchsucht und durchsucht werden können. Tagging hilft bei der Verbreitung der entsprechenden Taxonomie an andere Benutzer und Workflows. [!DNL Experience Manager] bietet Methoden zum automatischen Taggen von Assets mit den KI-Services von Adobe Sensei, die beim Taggen von Assets durch Verwendung und Training immer besser werden. Bei der Suche nach Assets werden die Smart-Tags berücksichtigt, wenn die Funktion in Ihrem Konto aktiviert ist. Sie funktioniert zusammen mit der integrierten Suchfunktion. Siehe [Suchverhalten](#searchbehavior). Um die Reihenfolge zu optimieren, in der die Suchergebnisse angezeigt werden, können Sie für einige ausgewählte Assets das [Such-Ranking optimieren](#searchrank).
 
 * **Indizierung**: In den Suchergebnissen werden nur indizierte Metadaten und Assets zurückgegeben. Um eine bessere Abdeckung und Leistung zu erzielen, stellen Sie eine ordnungsgemäße Indizierung sicher und befolgen Sie die Best Practices. Siehe [Indizierung](#searchindex).
 
@@ -288,7 +288,7 @@ Die Suchfunktion kann in den folgenden Szenarien Leistungseinschränkungen aufwe
 
 ## Einige Beispiele zur Illustration der Suche {#samples}
 
-Verwenden Sie doppelte Anführungszeichen um Suchbegriffe, um Assets zu finden, die den genauen Wortlaut in der genauen vom Benutzer angegebenen Reihenfolge enthalten.
+Verwenden Sie doppelte Anführungszeichen um Keywords, um Assets zu finden, die den genauen Wortlaut in der genauen vom Benutzer angegebenen Reihenfolge enthalten.
 
 ![Suchverhalten mit und ohne Anführungszeichen](assets/search_with_quotes.gif)
 
@@ -296,14 +296,14 @@ Verwenden Sie doppelte Anführungszeichen um Suchbegriffe, um Assets zu finden, 
 
 **Suche mit Sternchen als Platzhalter**: Wenn Sie die Suche erweitern möchten, verwenden Sie ein Sternchen vor oder nach dem Suchbegriff, um Treffer mit einer beliebigen Anzahl von Zeichen zu erhalten. Wenn Sie beispielsweise ohne Sternchen nach „run“ suchen, werden keine Assets zurückgegeben, die Varianten des Worts enthalten (auch in den Metadaten). Ein Sternchen ersetzt eine beliebige Anzahl von Zeichen. Beispiel:
 
-* `run` gibt Assets mit dem genauen Suchbegriff „run“ zurück.
+* `run` gibt Assets mit dem genauen Keyword „run“ zurück.
 * `run*` gibt Assets mit „running“, „run“, „runaway“ usw. zurück.
 * `*run` gibt „outrun“, „rerun“ usw. zurück.
 * `*run*` gibt alle möglichen Kombinationen zurück.
 
 ![Illustration der Nutzung eines Sternchen-Platzhalters bei der Asset-Suche anhand eines Beispiels](assets/search_with_asterisk_run.gif)
 
-*Abbildung: Die Verwendung eines Sternchen-Platzhalters bei der Asset-Suche anhand eines Beispiels.*
+*Abbildung: Illustration der Nutzung eines Sternchen-Platzhalters bei der Asset-Suche anhand eines Beispiels.*
 
 **Suchen mit Fragezeichen als Platzhalter**: Verwenden Sie zur Erweiterung der Suche ein oder mehrere Fragezeichen („?“), um Treffer mit der genauen Zeichenzahl zu erhalten. So gilt beispielsweise in der folgenden Illustration:
 
@@ -315,9 +315,9 @@ Verwenden Sie doppelte Anführungszeichen um Suchbegriffe, um Assets zu finden, 
 
 ![Illustration der Nutzung eines Fragezeichen-Platzhalters bei der Asset-Suche anhand eines Beispiels](assets/search_with_questionmark_run.gif)
 
-*Abbildung: Die Verwendung des Platzhalters für Fragezeichen bei der Asset-Suche anhand eines Beispiels wird veranschaulicht.*
+*Abbildung: Illustration der Nutzung eines Fragezeichen-Platzhalters bei der Asset-Suche anhand eines Beispiels.*
 
-**Suchbegriff ausschließen**: Verwenden Sie einen Bindestrich, um nach Assets zu suchen, die einen Suchbegriff nicht enthalten. Beispielsweise gibt die Abfrage `running -shoe` Assets zurück, die `running`, aber nicht `shoe` enthalten. Gleichermaßen gibt die Abfrage `camp -night` Assets zurück, die `camp`, aber nicht `night` enthalten. Die Abfrage `camp-night` gibt Elemente zurück, die sowohl `camp` als auch `night` enthalten.
+**Keyword ausschließen**: Verwenden Sie einen Bindestrich, um nach Assets zu suchen, die ein Keyword nicht enthalten. Beispielsweise gibt die Abfrage `running -shoe` Assets zurück, die `running`, aber nicht `shoe` enthalten. Gleichermaßen gibt die Abfrage `camp -night` Assets zurück, die `camp`, aber nicht `night` enthalten. Die Abfrage `camp-night` gibt Elemente zurück, die sowohl `camp` als auch `night` enthalten.
 
 ![Verwendung eines Bindestrichs zur Suche nach Assets, die keinen ausgeschlossenen Suchbegriff enthalten](assets/search_dash_exclude_keyword.gif)
 
@@ -423,15 +423,15 @@ Sie können auf der Suchergebnisseite genauere Informationen zu gefundenen Asset
 
 Um alle Metadaten eines Assets anzuzeigen, wählen Sie das Asset aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**.
 
-Um die Kommentare zu einem Asset oder den Versionsverlauf eines Assets zu überprüfen, klicken Sie auf das Asset, um eine große Vorschau zu öffnen. Öffnen Sie in der linken Leiste die Timeline und wählen Sie **[!UICONTROL Kommentare]** oder **[!UICONTROL Versionen]**. Sie können die Timeline-Aktivität genauso wie Kommentare oder Versionen auch in chronologischer Reihenfolge sortieren.
+Um die Kommentare zu einem Asset oder den Versionsverlauf eines Assets zu überprüfen, klicken Sie auf das Asset, um eine große Vorschau zu öffnen. Öffnen Sie in der linken Leiste die Zeitleiste und wählen Sie **[!UICONTROL Kommentare]** oder **[!UICONTROL Versionen]**. Sie können die Zeitleisten-Aktivität genauso wie Kommentare oder Versionen auch in chronologischer Reihenfolge sortieren.
 
-![Sortieren von Timeline-Einträgen für ein gesuchtes Asset](assets/sort_timeline_search_results.gif)
+![Sortieren von Zeitleisten-Einträgen für ein gesuchtes Asset](assets/sort_timeline_search_results.gif)
 
 *Abbildung: Sortieren von Zeitleisteneinträgen für ein Suchelement*
 
 ### Herunterladen gesuchter Assets {#download}
 
-Sie können die gesuchten Assets und ihre Ausgaben herunterladen, und zwar genauso wie normale Assets aus Ordnern. Wählen Sie in den Suchergebnissen mindestens ein Asset aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Herunterladen]**.
+Sie können die gesuchten Assets und ihre Ausgabedarstellungen herunterladen, und zwar genauso wie normale Assets aus Ordnern. Wählen Sie in den Suchergebnissen mindestens ein Asset aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Herunterladen]**.
 
 ### Massenaktualisierungen für Metadateneigenschaften {#metadataupdates}
 
