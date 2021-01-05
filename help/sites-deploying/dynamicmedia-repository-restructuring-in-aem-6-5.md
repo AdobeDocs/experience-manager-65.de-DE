@@ -1,6 +1,6 @@
 ---
-title: Umstrukturierung des dynamischen Medienspeichers in AEM 6.5
-seo-title: Umstrukturierung des dynamischen Medienspeichers in AEM 6.5
+title: Umstrukturierung des Dynamic Media-Repositorys in AEM 6.5
+seo-title: Umstrukturierung des Dynamic Media-Repositorys in AEM 6.5
 description: Erfahren Sie, wie Sie die erforderlichen Änderungen vornehmen können, um zur neuen Repository-Struktur in AEM 6.5 für Dynamic Media zu migrieren.
 seo-description: Erfahren Sie, wie Sie die erforderlichen Änderungen vornehmen können, um zur neuen Repository-Struktur in AEM 6.5 für Dynamic Media zu migrieren.
 uuid: e26d61a4-47b6-493a-9ba2-4c58b200ddd9
@@ -17,9 +17,9 @@ ht-degree: 62%
 ---
 
 
-# Umstrukturierung des dynamischen Medienspeichers in AEM 6.5 {#dynamic-media-repository-restructuring-in-aem}
+# Dynamic Media-Repository-Restrukturierung in AEM 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
-Wie auf der übergeordneten Seite [Repository-Umstrukturierung in AEM 6.5](/help/sites-deploying/repository-restructuring.md) beschrieben, sollten Kunden, die ein Upgrade auf AEM 6.5 durchführen, diese Seite verwenden, um den Arbeitsaufwand zu bewerten, der mit Repository-Änderungen verbunden ist, die sich auf die Dynamic Media Solution auswirken. Einige Änderungen erfordern Arbeitsaufwand während des AEM 6.5-Aktualisierungsprozesses, während andere bis zu einem zukünftigen Upgrade verschoben werden können.
+Wie auf der übergeordneten Seite [Repository-Umstrukturierung in AEM 6.5](/help/sites-deploying/repository-restructuring.md) beschrieben, sollten Kunden, die auf AEM 6.5 aktualisieren, diese Seite verwenden, um den Arbeitsaufwand zu bewerten, der mit Repository-Änderungen verbunden ist, die die Dynamic Media-Lösung beeinträchtigen. Einige Änderungen erfordern Arbeitsaufwand während des AEM 6.5-Aktualisierungsprozesses, während andere bis zu einem zukünftigen Upgrade verschoben werden können.
 
 **Vor der zukünftigen Aktualisierung**
 
@@ -54,7 +54,7 @@ Wie auf der übergeordneten Seite [Repository-Umstrukturierung in AEM 6.5](/help
  </tbody>
 </table>
 
-### Dynamische Medien (DMS7) Cloud-Konfiguration {#dynamic-media-dms-cloud-configuration}
+### Dynamic Media (DMS7) Cloud-Konfiguration {#dynamic-media-dms-cloud-configuration}
 
 <table>
  <tbody>
@@ -81,7 +81,7 @@ Wie auf der übergeordneten Seite [Repository-Umstrukturierung in AEM 6.5](/help
  </tbody>
 </table>
 
-### Konfiguration des Cloud Service für dynamische Medien (DM Hybrid) {#cloudserviceconfiguration}
+### Dynamic Media (DM Hybrid) Cloud Service-Konfiguration {#cloudserviceconfiguration}
 
 <table>
  <tbody>
@@ -104,7 +104,7 @@ Wie auf der übergeordneten Seite [Repository-Umstrukturierung in AEM 6.5](/help
  </tbody>
 </table>
 
-### Dynamische Medien - YouTube-Cloud Service-Konfiguration {#youtubecloudserviceconfiguration}
+### Dynamic Media - YouTube-Cloud Service-Konfiguration {#youtubecloudserviceconfiguration}
 
 <table>
  <tbody>
