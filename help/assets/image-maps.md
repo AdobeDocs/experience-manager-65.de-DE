@@ -45,4 +45,4 @@ Mit Imagemaps können Sie einen oder mehrere Hyperlinkbereiche hinzufügen, die 
 
    ![chlimage_1-426](assets/chlimage_1-426.png)
 
-   Wenn die Option &quot;Dynamische Medien&quot;aktiviert ist, navigieren Sie zum Asset-Editor und klicken Sie auf **[!UICONTROL Map]**, um alle angewendeten Imagemaps Ansicht.
+   Wenn die Option &quot;Dynamic Media&quot;aktiviert ist, navigieren Sie zum Asset-Editor und klicken Sie auf **[!UICONTROL Map]**, um alle angewendeten Imagemaps Ansicht.
