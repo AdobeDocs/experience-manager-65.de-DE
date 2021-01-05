@@ -24,7 +24,7 @@ Mit Dynamic Media können Sie 3D-Assets hochladen, verwalten, anzeigen und als e
 * Optimierte Unterstützung für die Anzeige von 3D-Assets mit der hochwertigen, interaktiven Viewer-Vorgabe „Dimensional“, bereitgestellt von Adobe Dimension.
 * Mit der 3D-Medien-WCM-Komponente können Sie Ihren Seiten in AEM Sites mühelos 3D-Elemente hinzufügen.
 
-Für die Verwendung von 3D-Assets in dynamischen Medien ist keine zusätzliche Konfiguration erforderlich.
+Für die Verwendung von 3D-Assets in Dynamic Media ist keine zusätzliche Konfiguration erforderlich.
 
 ![Schuh in 3D](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png)
 
@@ -32,7 +32,7 @@ Für die Verwendung von 3D-Assets in dynamischen Medien ist keine zusätzliche K
 
 ## Unterstützte 3D-Formate in Dynamic Media {#supported-three-d-file-formats-in-dm}
 
-Dynamische Medien unterstützen die folgenden 3D-Formate.
+Dynamic Media unterstützt die folgenden 3D-Formate.
 
 Siehe auch [Unterstützte 3D-Formate.](/help/assets/assets-formats.md)
 
@@ -45,13 +45,13 @@ Siehe auch [Unterstützte 3D-Formate.](/help/assets/assets-formats.md)
 
 ## Schnellstart: Arbeiten mit 3D-Assets in Dynamic Media {#quick-start-three-d}
 
-Die folgende Workflow-Beschreibung hilft Ihnen, sich schnell mit 3D-Assets im Modus &quot;Dynamische Medien - Scene7&quot;vertraut zu machen.
+Die folgende Workflow-Beschreibung hilft Ihnen, sich schnell mit 3D-Assets im Dynamic Media-Scene7-Modus vertraut zu machen.
 
 >[!NOTE]
 >
->3D-Assets werden im Modus &quot;Dynamische Medien - Hybrid&quot;nicht unterstützt.
+>3D-Assets werden im Dynamic Media-Hybridmodus nicht unterstützt.
 
-Bevor Sie mit 3D-Assets in dynamischen Medien arbeiten, stellen Sie sicher, dass Ihr AEM-Administrator die Cloud Services für dynamische Medien im Modus &quot;Dynamische Medien - Scene7&quot;bereits aktiviert und konfiguriert hat.
+Bevor Sie mit 3D-Assets in Dynamic Media arbeiten, stellen Sie sicher, dass Ihr AEM-Administrator Dynamic Media-Cloud Services im Dynamic Media - Scene7-Modus bereits aktiviert und konfiguriert hat.
 
 Siehe [Konfiguration von Dynamic Media Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) in „Konfigurieren von Dynamic Media – Scene7-Modus“ und [Fehlerbehebung in Dynamic Media – Scene7-Modus](/help/assets/troubleshoot-dms7.md).
 
