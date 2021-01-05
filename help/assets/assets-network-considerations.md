@@ -68,7 +68,7 @@ Aus den Beispieldiagrammen ist ersichtlich, dass sechs Geräte einen konzeptione
 
 Das Entwerfen der Topologie der [!DNL Experience Manager]-Umgebung erfordert detaillierte Kenntnisse der Systemkonfiguration und der Netzwerkverbindung innerhalb der Umgebung.
 
-Das Beispielszenario umfasst eine Veröffentlichungsfarm mit fünf Servern, einen S3-Binärspeicher und dynamische Medien, die konfiguriert sind.
+Das Beispielszenario umfasst eine Veröffentlichungsfarm mit fünf Servern, einen S3-Binärspeicher und Dynamic Media-Konfigurationen.
 
 Der Dispatcher teilt seine 100 Mbit/s Verbindung mit zwei Entitäten, der Außenwelt und der [!DNL Experience Manager] Bereitstellung. Für gleichzeitiges Hoch- und Herunterladen sollten Sie diesen Wert durch zwei teilen. Der zugeordnete externe Speicher verwendet eine separate Verbindung.
 
