@@ -224,7 +224,7 @@ Je nach Ihren Anforderungen können Sie Varianten eines Experience Fragment erst
    * **Beschreibung**
    * **Varianten-Tags**
 
-   ![xf-08](assets/xf-06.png)
+   ![xf-06](assets/xf-06.png)
 
 1. Bestätigen Sie Ihre Auswahl mit der Option **Fertig** (Häkchen). Daraufhin wird die neue Variante im Bedienfeld angezeigt:
 
