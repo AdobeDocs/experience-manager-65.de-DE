@@ -44,7 +44,7 @@ Indem Sie konsistente und geeignete Datei- und Ordnernamensstrategien zusammen m
 
 >[!NOTE]
 >
->Gilt nur für *Dynamische Medien - Scene7-Modus* in AEM 6.4.6.0 oder höher.
+>Gilt nur für *Dynamic Media - Scene7-Modus* in AEM 6.4.6.0 oder höher.
 
 Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vorhandenes Verarbeitungsprofil verfügt, das Sie nachträglich geändert haben.
 
