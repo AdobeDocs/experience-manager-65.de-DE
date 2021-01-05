@@ -120,7 +120,7 @@ Wählen Sie das Fragment aus, um die Symbolleiste mit entsprechenden Aktionen an
 
 >[!NOTE]
 >
->Viele sind [Standardaktionen für Assets](/help/assets/manage-assets.md) bzw. das [AEM-Desktop-Programm](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html).
+>Viele sind [Standardaktionen für Assets](/help/assets/manage-assets.md) bzw. das [AEM-Desktop-Programm](https://docs.adobe.com/content/help/de/experience-manager-desktop-app/using/using.html).
 
 ## Öffnen des Fragmenteditors {#opening-the-fragment-editor}
 
