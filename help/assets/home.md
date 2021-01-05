@@ -31,7 +31,7 @@ Dieses Handbuch behandelt alle [!DNL Experience Manager Assets]-Aufgaben, z. B. 
 |--- |---|
 | [Versionshinweise](/help/release-notes/home.md) | Bietet wichtige Informationen zur aktuellen Version, einschließlich neuer, unterstützter Plattformen, veralteter und entfernter Funktionen und bekannter Probleme |
 | [Forms Benutzerhandbuch](/help/forms/home.md) | In diesem Handbuch wird das Erstellen, Verwalten, Veröffentlichen und Aktualisieren digitaler Formulare beschrieben. |
-| [Communities-Benutzerhandbuch](/help/communities/home.md) | Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere soziale Funktionen. |
+| [Communities-Benutzerhandbuch](/help/communities/home.md) | Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere Community-Funktionen. |
 | [Administratorenanleitung](/help/sites-administering/home.md) | Verstehen Sie, wie Sie Experience Manager verwalten. |
 | [Authoring-Handbuch](/help/sites-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in Experience Manager erläutert. |
 | [Handbuch zur Erstellung der klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in Experience Manager in der klassischen Benutzeroberfläche erläutert. |
@@ -51,4 +51,4 @@ Dieses Handbuch behandelt alle [!DNL Experience Manager Assets]-Aufgaben, z. B. 
 * [Dispatcher-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [Benutzerhandbuch zu Hauptkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
