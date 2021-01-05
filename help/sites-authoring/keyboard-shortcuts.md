@@ -30,7 +30,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich e
 
 Die folgenden Tastaturbefehle stehen für die Konsolen „Sites“, „Commerce“, „Screens“, „Assets“, „Benutzer“, „Gruppen“, „Projekte“ und „Experience Fragments“ zur Verfügung.
 
-| Ort | Kürzel | Beschreibung |
+| Standort | Kürzel | Beschreibung |
 |---|---|---|
 | Allgemein | `Ctrl+Click` | Mehrfachauswahl auf einem Desktop-Gerät |
 | Konsole – Spaltenansicht und Inhaltsansicht | `Right Arrow` | Navigieren nach unten in die Struktur der Website/Erweitern des Strukturknotens |
@@ -90,7 +90,7 @@ Für Benutzer, die keine Tastaturbefehle verwenden oder bei denen bestimmte Anfo
 
 Es gibt zwei Möglichkeiten, Tastaturbefehle zu deaktivieren:
 
-* [Eigene Voreinstellungen](/help/sites-authoring/user-properties.md#my-preferences)
+* [Benutzereinstellungen](/help/sites-authoring/user-properties.md#my-preferences)
 * [Hilfemenü](/help/sites-authoring/basic-handling.md#accessing-help)
 
 >[!NOTE]
