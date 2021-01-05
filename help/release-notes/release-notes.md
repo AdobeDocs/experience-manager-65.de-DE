@@ -29,7 +29,7 @@ Der Versionszyklus für diese Version von [!DNL Adobe Experience Manager] begann
 
 ![AEM 6.5-Anmeldebildschirm](/help/assets/assets/aem65-login-v4.png)
 
-## Neue Funktionen {#what-s-new}
+## Neuerungen {#what-s-new}
 
 [!DNL Adobe Experience Manager] 6.5 ist eine Upgrade-Version auf die  [!DNL Adobe Experience Manager] 6.4-Codebasis. Die Software bietet neue und erweiterte Funktionen, wichtige Kundenkorrekturen, Erweiterungen für Kunden mit hoher Priorität und allgemeine Fehlerbehebungen, die auf die Produktstabilisierung ausgerichtet sind. Es enthält auch die Versionen von [!DNL Adobe Experience Manager] 6.4 Service Pack bis zu SP4.
 
@@ -95,7 +95,7 @@ Die zunächst als Teil von AEM 6.4 SP2 bereitgestellte SPA-Unterstützung biet
 
 #### Headless-Content-Management {#headless-content-management}
 
-Mit AEM können Inhalte in verschiedenen Formaten und aus verschiedenen Ebenen des Stapels bereitgestellt werden. Einige von ihnen sind durch das [Sling GET-](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) und [POST-Servlet](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) bereits seit 2008 verfügbar. Content Services ([Sling Model Exporter](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/develop-sling-model-exporter.html)) wurden in AEM 6.3 eingeführt und sind die von AEM SJ SDK eingesetzte Hydrationsmethode für Single-Page-Apps. Die [HTTP-API für Assets](/help/assets/mac-api-assets.md) ist eine für AEM 6.5 erweiterte CRUD-API. 
+Mit AEM können Inhalte in verschiedenen Formaten und aus verschiedenen Ebenen des Stapels bereitgestellt werden. Einige von ihnen sind durch das [Sling GET-](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) und [POST-Servlet](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) bereits seit 2008 verfügbar. Content Services ([Sling Model Exporter](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/foundation/development/develop-sling-model-exporter.html)) wurden in AEM 6.3 eingeführt und sind die von AEM SJ SDK eingesetzte Hydrationsmethode für Single-Page-Apps. Die [HTTP-API für Assets](/help/assets/mac-api-assets.md) ist eine für AEM 6.5 erweiterte CRUD-API. 
 
 Neue Funktionen der HTTP-API:
 
