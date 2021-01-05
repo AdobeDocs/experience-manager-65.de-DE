@@ -21,7 +21,7 @@ ht-degree: 99%
 
 # Bearbeiten des Seiteninhalts{#editing-page-content}
 
-Sobald Ihre Seite erstellt ist (neu oder im Rahmen eines Launchs oder einer Live Copy), können Sie den Inhalt bearbeiten und die erforderlichen Aktualisierungen vornehmen.
+Sobald Ihre Seite erstellt ist (neu oder im Rahmen eines Launch oder einer Live Copy), können Sie den Inhalt bearbeiten und die erforderlichen Aktualisierungen vornehmen.
 
 Der Inhalt wird mit mithilfe von (zum Inhaltstyp passenden) [Komponenten](/help/sites-classic-ui-authoring/classic-page-author-default-components.md) hinzugefügt, die auf die Seite gezogen werden können. Dort können sie dann bearbeitet, verschoben oder gelöscht werden.
 
@@ -37,7 +37,7 @@ Beim Sidekick handelt es sich um ein wichtiges Tool für die Bearbeitung von Sei
 
 Unter anderem sind folgende Registerkarten und Symbole verfügbar:
 
-* Komponenten
+* Komponenten 
 * Seite
 * Informationen
 * Versionierung
@@ -206,7 +206,7 @@ Sie können die Vererbung deaktivieren (und dann wieder aktivieren). Abhängig v
 
 [Anmerkungen](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) bieten anderen Autoren die Möglichkeit Feedback zu Ihrem Inhalt zu erteilen. Dies wird häufig zu Korrektur- oder Überprüfungszwecken verwendet.
 
-## Anzeigen einer Seitenvorschau    {#previewing-pages}
+## Anzeigen einer Seitenvorschau   {#previewing-pages}
 
 Für die Vorschau von Seiten sind zwei Symbole am unteren Rand des Sidekicks von Bedeutung:
 
