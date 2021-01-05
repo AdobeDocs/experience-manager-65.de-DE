@@ -21,7 +21,7 @@ ht-degree: 3%
 
 # Moderieren von Community-Inhalten {#moderating-community-content}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Community-Inhalte, auch als benutzergenerierte Inhalte (UGC) bezeichnet, werden erstellt, wenn ein Mitglied (der in Site-Besucher angemeldet ist) Inhalte von einer veröffentlichten Community-Site durch Interaktion mit einer der folgenden Community-Komponenten veröffentlicht:
 
