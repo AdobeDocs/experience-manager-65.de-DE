@@ -21,7 +21,7 @@ ht-degree: 5%
 
 # Analytics-Konfiguration für Communities-Funktionen {#analytics-configuration-for-communities-features}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Adobe Analytics und Adobe Experience Manager (AEM) sind beide Lösungen von Adobe Marketing Cloud.
 
