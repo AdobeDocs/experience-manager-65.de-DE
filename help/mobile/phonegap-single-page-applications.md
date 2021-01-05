@@ -1,6 +1,6 @@
 ---
-title: Einzelseiten-Webanwendungen
-seo-title: Einzelseiten-Webanwendungen
+title: Single Page Applications
+seo-title: Einzelseitenanwendungen
 description: Auf dieser Seite erfahren Sie mehr über Einzelseitenanwendungen, d. h. Sie können eine Anwendung erstellen, die genauso wie eine Desktop- oder Mobilanwendung funktioniert.
 seo-description: Auf dieser Seite erfahren Sie mehr über Einzelseitenanwendungen, d. h. Sie können eine Anwendung erstellen, die genauso wie eine Desktop- oder Mobilanwendung funktioniert.
 uuid: d1865e79-6e7c-4149-95c0-556e61478b01
