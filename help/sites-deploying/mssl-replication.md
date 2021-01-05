@@ -67,7 +67,7 @@ Gehen Sie wie folgt vor, um einen privaten Schlüssel und ein selbstsigniertes Z
    keytool -genkeypair -keyalg RSA -validity 3650 -alias alias -keystore keystorename.keystore  -keypass key_password -storepass  store_password -dname "CN=Host Name, OU=Group Name, O=Company Name,L=City Name, S=State, C=Country_ Code"
    ```
 
-   | Option | Autor | Veröffentlichen |
+   | Option | Autor | Veröffentlichung |
    |---|---|---|
    | -alias | author | publish |
    | -keystore | author.keystore | publish.keystore |
@@ -78,7 +78,7 @@ Gehen Sie wie folgt vor, um einen privaten Schlüssel und ein selbstsigniertes Z
    keytool -exportcert -alias alias -file cert_file -storetype jks -keystore keystore -storepass store_password
    ```
 
-   | Option | Autor | Veröffentlichen |
+   | Option | Autor | Veröffentlichung |
    |---|---|---|
    | -alias | author | publish |
    | -file | author.cer | publish.cer |
@@ -94,7 +94,7 @@ Generieren Sie einen privaten Schlüssel und ein Zertifikat im PKCS#12-Format. V
    openssl genrsa -out keyname.key 2048
    ```
 
-   | Option | Autor | Veröffentlichen |
+   | Option | Autor | Veröffentlichung |
    |---|---|---|
    | -out | author.key | publish.key |
 
@@ -104,7 +104,7 @@ Generieren Sie einen privaten Schlüssel und ein Zertifikat im PKCS#12-Format. V
    openssl req -new -key keyname.key -out key_request.csr
    ```
 
-   | Option | Autor | Veröffentlichen |
+   | Option | Autor | Veröffentlichung |
    |---|---|---|
    | -key | author.key | publish.key |
    | -out | author_request.csr | publish_request.csr |
@@ -117,7 +117,7 @@ Generieren Sie einen privaten Schlüssel und ein Zertifikat im PKCS#12-Format. V
    openssl x509 -req -days 3650 -in key_request.csr -signkey keyname.key -out certificate.cer
    ```
 
-   | Option | Autor | Veröffentlichen |
+   | Option | Autor | Veröffentlichung |
    |---|---|---|
    | -signkey | author.key | publish.key |
    | -in | author_request.csr | publish_request.csr |
@@ -129,7 +129,7 @@ Generieren Sie einen privaten Schlüssel und ein Zertifikat im PKCS#12-Format. V
    openssl pkcs12 -keypbe PBE-SHA1-3DES -certpbe PBE-SHA1-3DES -export -in certificate.cer -inkey keyname.key -out pkcs12_archive.pfx -name "alias"
    ```
 
-   | Option | Autor | Veröffentlichen |
+   | Option | Autor | Veröffentlichung |
    |---|---|---|
    | -inkey | author.key | publish.key |
    | -out | author.pfx | publish.pfx |
