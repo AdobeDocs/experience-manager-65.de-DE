@@ -73,16 +73,16 @@ Fügen Sie die Assets einem Ordner hinzu und wenden Sie die Tags über die Eigen
 
 ## Verstehen Sie die [!DNL Experience Manager] Suchergebnisse mit Smart-Tags {#understandsearch}
 
-Standardmäßig kombiniert die [!DNL Experience Manager]-Suche die Suchbegriffe mit einer `AND`-Klausel. Dieses Standardverhalten ändert sich durch die Verwendung von Smart-Tags nicht. Durch die Verwendung von Smart-Tags wird eine zusätzliche `OR`-Klausel hinzugefügt. Damit wird jeder Suchbegriff aus den angewandten Smart-Tags gefunden. Suchen Sie beispielsweise nach `woman running`. Assets, die in den Metadaten nur das Schlüsselwort `woman`oder `running` aufweisen, werden standardmäßig nicht in den Suchergebnissen angezeigt. Ein Asset, das über Smart-Tags mit `woman` oder `running` getaggt wurde, wird bei dieser Suchanfrage jedoch angezeigt. Die Suchergebnisse sind also eine Kombination aus
+Standardmäßig kombiniert die [!DNL Experience Manager]-Suche die Suchbegriffe mit einer `AND`-Klausel. Dieses Standardverhalten ändert sich durch die Verwendung von Smart-Tags nicht. Durch die Verwendung von Smart-Tags wird eine zusätzliche `OR`-Klausel hinzugefügt. Damit wird jeder Suchbegriff aus den angewandten Smart-Tags gefunden. Suchen Sie beispielsweise nach `woman running`. Assets, die in den Metadaten nur das Keyword `woman`oder `running` aufweisen, werden standardmäßig nicht in den Suchergebnissen angezeigt. Ein Asset, das über Smart-Tags mit `woman` oder `running` getaggt wurde, wird bei dieser Suchanfrage jedoch angezeigt. Die Suchergebnisse sind also eine Kombination aus
 
 * Assets mit den Keywords `woman` und `running` in den Metadaten.
 
-* Assets, die über Smart-Tags mit einem der Schlüsselwörter getaggt wurden.
+* Assets, die über Smart-Tags mit einem der Keywords getaggt wurden.
 
 Die Suchergebnisse, die in Metadatenfeldern alle Suchbegriffe aufweisen, werden zuerst angezeigt. Danach folgen die Suchergebnisse, die einem oder mehr Suchbegriffen in den Smart-Tags entsprechen. Im obigen Beispiel werden die Suchergebnisse ungefähr in dieser Reihenfolge angezeigt:
 
 1. Treffer von `woman running` in den verschiedenen Metadatenfeldern.
-1. Treffer von `woman running` in den Smart-Tags,
+1. Treffer von `woman running` in den Smart-Tags.
 1. Treffer von `woman` oder `running` in Smart-Tags.
 
 >[!CAUTION]
@@ -127,10 +127,10 @@ Sie können den Tag-Arbeitsablauf über die Arbeitsablaufkonsole oder die Zeitle
 
    Navigieren Sie zum Asset-Ordner und prüfen Sie die Tags, um sicherzustellen, dass der Smart Content Service Ihre Assets ordnungsgemäß mit Tags versehen hat.
 
-#### Tagging von Assets über die Timeline {#tagging-assets-from-the-timeline}
+#### Tagging von Assets über die Zeitleiste {#tagging-assets-from-the-timeline}
 
 1. Wählen Sie in der Benutzeroberfläche [!DNL Assets] den Ordner aus, der Assets oder bestimmte Assets enthält, auf die Sie Smarttags anwenden möchten.
-1. Öffnen Sie die **[!UICONTROL Timeline]** oben links.
+1. Öffnen Sie die **[!UICONTROL Zeitleiste]** oben links.
 1. Öffnen Sie die Aktionen unten in der linken Seitenleiste und klicken Sie auf **[!UICONTROL Workflow starten]**.
 
    ![start_workflow](assets/start_workflow.png)
