@@ -82,7 +82,7 @@ IOS-Entwickler sollten sich eines offenen Problems mit Cordova-Apps, die unter i
 * [Erstellen von Mobilanwendungen](/help/mobile/building-app-mobile-phonegap.md)
 * [App strukturieren](/help/mobile/phonegap-structure-an-app.md)
 * [Erstellen und Bearbeiten von Apps mit der Apps-Konsole](/help/mobile/phonegap-apps-console.md)
-* [Einzelseiten-Webanwendungen](/help/mobile/phonegap-single-page-applications.md)
+* [Single Page Applications](/help/mobile/phonegap-single-page-applications.md)
 * [Entwickeln von Apps mit der PhoneGap-CLI](/help/mobile/phonegap-apps-pg-cli.md)
 * [Gerätefunktionen aufrufen](/help/mobile/phonegap-access-device-features.md)
 * [Verfolgen der App-Performance mit Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md)
