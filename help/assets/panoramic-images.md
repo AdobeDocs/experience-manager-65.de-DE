@@ -41,9 +41,9 @@ Weitere Informationen über den Upload von Assets für die Verwendung mit dem Vi
 
 ## Konfigurieren von Dynamic Media Classic {#configuring-dynamic-media-classic-scene}
 
-Damit der Panorama-Bild-Viewer in AEM ordnungsgemäß funktioniert, müssen Sie die Viewer-Vorgaben für Panoramabilder mit den für Dynamic Media Classic und Dynamic Media Classic spezifischen Metadaten synchronisieren, damit die Viewer-Vorgaben in der JCR-Datei aktualisiert werden. Konfigurieren Sie dazu Dynamic Media Classic wie folgt:
+Damit der Panorama-Bild-Viewer in AEM ordnungsgemäß funktioniert, müssen Sie die Panorama-Bild-Viewer-Vorgaben mit Dynamic Media Classic- und Dynamic Media Classic-spezifischen Metadaten synchronisieren, damit die Viewer-Vorgaben in der JCR-Datei aktualisiert werden. Konfigurieren Sie dazu Dynamic Media Classic wie folgt:
 
-1. [Melden Sie sich für jedes Firmen-Konto bei Ihrer Instanz von Dynamic Media ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Classic an.
+1. [Melden Sie sich für jedes Firmen-Konto bei Ihrer Dynamic Media ](https://www.adobe.com/de/marketing-cloud/experience-manager/scene7-login.html) Classic-Instanz an.
 
 1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Veröffentlichungseinrichtung > Image-Server.]**
 1. Wählen Sie auf der Seite &quot;Veröffentlichung des Image-Servers&quot;im Dropdown-Menü **[!UICONTROL Veröffentlichungskontext]** oben **[!UICONTROL Image-Server.]**
@@ -51,7 +51,7 @@ Damit der Panorama-Bild-Viewer in AEM ordnungsgemäß funktioniert, müssen Sie 
 1. Suchen Sie auf derselben Image-Server-Veröffentlichungsseite die Überschrift **[!UICONTROL Anfrage-Attribute.]**
 1. Suchen Sie unter der Überschrift „Anfrage-Attribute“ die Option **[!UICONTROL Maximale Größe des Antwortbildes.]** Erhöhen Sie anschließend die Werte in den entsprechenden Feldern „Breite“ und „Höhe“ auf die größtmögliche Bildgröße für Panoramabilder.
 
-   Der Wert von Dynamic Media Classic ist auf 25.000.000 Pixel begrenzt. Die maximal zulässige Größe für Bilder mit einem Seitenverhältnis von 2:1 beträgt 7000 x 3500. In der Regel ist für Desktopbildschirme jedoch eine Größe von 4096 x 2048 Pixel ausreichend.
+   Dynamic Media Classic ist auf 25.000.000 Pixel begrenzt. Die maximal zulässige Größe für Bilder mit einem Seitenverhältnis von 2:1 beträgt 7000 x 3500. In der Regel ist für Desktopbildschirme jedoch eine Größe von 4096 x 2048 Pixel ausreichend.
 
    >[!NOTE]
    >
