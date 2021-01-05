@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Komponenten-Sideloading {#component-sideloading}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Das Sideloading von Communities-Komponenten ist nützlich, wenn eine Webseite als einfache Einzelseitenanwendung entworfen wird, die dynamisch ändert, was angezeigt wird, je nachdem, was vom Site-Besucher ausgewählt wird.
 
