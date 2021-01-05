@@ -32,7 +32,7 @@ Beispiel:
 * Das Mitglied aus Frankreich verwendet die Übersetzungsfunktion, um den japanischen Kommentar ins Französische zu übersetzen.
 * Globale Kommunikation.
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 In diesem Abschnitt der Dokumentation wird insbesondere erläutert, wie der Übersetzungsdienst mit UGC funktioniert, wobei eine Vorstellung davon gegeben wird, wie AEM mit einem [Übersetzungs-Dienstleister](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider) verbunden werden können und wie dieser Dienst in eine Website integriert wird, indem ein [Framework für die Übersetzungsintegration](../../help/sites-administering/tc-tic.md) konfiguriert wird.
 
