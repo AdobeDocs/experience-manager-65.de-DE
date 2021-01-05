@@ -121,7 +121,7 @@ Smart-Sammlungen werden durch Speichern von Suchvorgängen erstellt. Das heißt,
 
 1. Klicken Sie in der Benutzeroberfläche [!DNL Assets] in der Symbolleiste auf die Suchoption ![search option](assets/do-not-localize/search_icon.png).
 1. Wählen Sie mit dem Cursor im Feld Omniture die `Return`-Taste aus.
-1. Öffnen Sie in der Oberfläche [!DNL Experience Manager] das Bedienfeld &quot;Filter&quot;.
+1. Öffnen Sie in der Benutzeroberfläche [!DNL Experience Manager] das Bedienfeld &quot;Filter&quot;.
 1. Wählen Sie in der Liste **[!UICONTROL Gespeicherte Suchen]** die Smart-Sammlung aus, die Sie ändern möchten. Im Suchbereich werden die für die gespeicherte Suche konfigurierten Filter angezeigt.
 
    ![select_smart_collection](assets/select_smart_collection.png)
@@ -250,7 +250,7 @@ Gehen Sie wie folgt vor, um gespeicherte Suchen zu löschen:
 
 1. Klicken Sie in der Benutzeroberfläche [!DNL Assets] auf Suchen ![Suchoption](assets/do-not-localize/search_icon.png).
 1. Wählen Sie mit dem Cursor im Feld Omniture die `Return`-Taste aus.
-1. Öffnen Sie in der Oberfläche [!DNL Experience Manager] das Bedienfeld &quot;Filter&quot;.
+1. Öffnen Sie in der Benutzeroberfläche [!DNL Experience Manager] das Bedienfeld &quot;Filter&quot;.
 1. Klicken Sie in der Liste **[!UICONTROL Gespeicherte Suchen]** neben der zu löschenden intelligenten Sammlung auf **[!UICONTROL Löschen]**.
 
    ![select_smart_collection](assets/select_smart_collection.png)
