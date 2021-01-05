@@ -33,7 +33,7 @@ Vorteile des Rahmens:
 
 Entdecken Sie eine Instanz im Autoren- oder Veröffentlichungsmodus mithilfe des interaktiven [Handbuchs &quot;Community-Komponenten&quot;](components-guide.md).
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 In SCF besteht eine Komponente aus einem SocialComponent-POJO, einer Handlebars-JS-Vorlage (zum Rendern der Komponente) und einem CSS (zum Formatieren der Komponente).
 
