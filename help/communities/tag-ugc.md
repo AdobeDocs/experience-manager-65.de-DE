@@ -20,7 +20,7 @@ ht-degree: 9%
 
 # Tagging benutzergenerierter Inhalte {#tagging-user-generated-content}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Das Tagging von benutzergenerierten Inhalten (UGC) ist das Mittel, mit dem Community-Mitglieder anderen Mitgliedern bei der Suche nach Inhalten helfen können.
 
