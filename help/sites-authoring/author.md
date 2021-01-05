@@ -26,7 +26,7 @@ ht-degree: 88%
 AEM bietet Ihnen zwei Umgebungen:
 
 * Autor
-* Veröffentlichen
+* Veröffentlichung
 
 Diese interagieren miteinander und bieten Ihnen die Möglichkeit, Inhalt auf Ihrer Website verfügbar zu machen, sodass Ihre Besucher ihn lesen können.
 
