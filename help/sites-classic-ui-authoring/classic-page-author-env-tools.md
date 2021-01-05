@@ -187,7 +187,7 @@ Das **Auditprotokoll** kann über die Registerkarte **Informationen** im Sidekic
 
 Die Website-Konsole bietet auch Informationen zum aktuellen Status der Seite](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), wie Veröffentlichung, Änderung, Sperrung, Livecopy usw.[
 
-## Seitenmodi    {#page-modes}
+## Seitenmodi   {#page-modes}
 
 Beim Bearbeiten einer Seite in der klassischen Benutzeroberfläche können Sie verschiedene Modi über die Symbole unten im Sidekick aufrufen:
 
