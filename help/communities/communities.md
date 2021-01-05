@@ -20,7 +20,7 @@ ht-degree: 10%
 
 # Developing Communities {#developing-communities}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 AEM Communities vereinfacht die Erstellung und Anpassung von Community-Funktionen wie Foren, Benutzergruppen, Blogs, Fragen und Antworten, Kalender, Kommentare, Rezensionen, Abstimmungen, Bewertungen und Zuweisungen. Diese Funktionen führen dazu, dass benutzergenerierte Inhalte (UGC) in die Umgebung &quot;Veröffentlichen&quot;eingegeben werden.
 
