@@ -1,6 +1,6 @@
 ---
-title: Einstiegsseiten
-seo-title: Einstiegsseiten
+title: Landing Pages
+seo-title: Landingpages
 description: Mit der Funktion für Einstiegsseiten können Sie schnell und einfach ein Design und Inhalte direkt in eine AEM-Seite importieren. Ein Web-Entwickler kann das HTML und zusätzliche Assets vorbereiten, die als komplette Seite oder nur als Teil einer Seite importiert werden können.
 seo-description: Mit der Funktion für Einstiegsseiten können Sie schnell und einfach ein Design und Inhalte direkt in eine AEM-Seite importieren. Ein Web-Entwickler kann das HTML und zusätzliche Assets vorbereiten, die als komplette Seite oder nur als Teil einer Seite importiert werden können.
 uuid: b294c43f-63ae-4b5b-bef0-04566e350b63
@@ -19,7 +19,7 @@ ht-degree: 83%
 ---
 
 
-# Einstiegsseiten{#landing-pages}
+# Landing Pages{#landing-pages}
 
 Mit der Funktion für Einstiegsseiten können Sie schnell und einfach ein Design und Inhalte direkt in eine AEM-Seite importieren. Ein Web-Entwickler kann das HTML und zusätzliche Assets vorbereiten, die als komplette Seite oder nur als Teil einer Seite importiert werden können. Diese Funktion ist hilfreich beim Erstellen von Marketing-Einstiegsseiten, die nur für begrenzte Zeit aktiv sind und schnell erstellt werden müssen.
 
