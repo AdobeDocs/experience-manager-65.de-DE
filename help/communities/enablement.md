@@ -20,7 +20,7 @@ ht-degree: 4%
 
 # Konfiguration von Aktivierungsfunktionen {#configuring-enablement-features}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Die Aktivierungsfunktionen bieten die Möglichkeit, [Aktivierungsgemeinschaften](overview.md#enablement-community) zu erstellen.
 
