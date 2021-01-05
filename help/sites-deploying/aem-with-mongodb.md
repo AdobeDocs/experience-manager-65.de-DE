@@ -150,7 +150,7 @@ In diesem Abschnitt werden die verschiedenen Schritte behandelt, die Sie ausfüh
 1. Die Router zwischen Hauptservern (MongoDB oder AEM oder beliebige Kombinationen) entsprechen maximal der OSI-Schicht 3.
 1. Wenn VLAN-Trunking oder Netzwerk-Tunnelling verwendet wird, müssen diese die im Hinblick auf die Paketlatenz durchgeführten Prüfungen bestehen.
 
-### AEM-Konfiguration {#aem-configuration}
+### AEM-Konfiguration  {#aem-configuration}
 
 #### Knotenspeicherkonfiguration {#node-store-configuration}
 
