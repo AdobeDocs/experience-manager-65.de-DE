@@ -28,7 +28,7 @@ Mit dem AEM Mobile-Dashboard können Sie Ihre Mobilanwendung erstellen, erstelle
 
 Informationen zum Erstellen Ihrer AEM Mobile-Anwendung finden Sie auf der Seite [Erstellen von Mobilanwendungen](/help/mobile/building-app-mobile-phonegap.md).
 
-Informationen zum Einrichten Ihrer Umgebung und zum Einstieg finden Sie unter [AEM der Verwendung von AEM PhoneGap Enterprise](/help/mobile/administer-phonegap.md).
+Informationen zum Einrichten Ihrer Umgebung und zum Einstieg finden Sie unter [AEM zum Verwenden von AEM PhoneGap Enterprise](/help/mobile/administer-phonegap.md).
 
 ## Der AEM Mobile-App-Katalog {#the-aem-mobile-apps-catalog}
 
