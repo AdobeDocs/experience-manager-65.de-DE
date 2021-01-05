@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Tagging von Aktivierungsressourcen {#tagging-enablement-resources}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Das Tagging von Ressourcen zur Aktivierung ermöglicht das Filtern von Ressourcen und Lernpfaden, wenn Mitglieder [Kataloge](functions.md#catalog-function) durchsuchen.
 
