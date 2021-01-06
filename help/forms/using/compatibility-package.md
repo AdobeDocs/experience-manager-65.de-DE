@@ -21,7 +21,7 @@ ht-degree: 64%
 
 # Kompatibilitätspaket{#compatibility-package}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Interaktive Kommunikation ist der Standardansatz und der empfohlene Ansatz zur Erstellung von Kundenkommunikation in AEM Forms 6.5. Um weiterhin Briefe in AEM Forms 6.5 zu verwenden, müssen Sie das neueste [AEMFD-Kompatibilitätspaket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) installieren.
 
