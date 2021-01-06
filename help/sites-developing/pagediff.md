@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: c51ba167d9b3d37de649c59526e74d9728c677c6
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 59%
+ht-degree: 92%
 
 ---
 
@@ -27,17 +27,17 @@ Inhaltserstellung ist ein iterativer Vorgang. Damit ein Autor effizient arbeiten
 
 Mit dem Seitenvergleich können Benutzer die aktuelle Seite mit Launches, früheren Versionen usw. vergleichen. Weitere Informationen zu dieser Benutzerfunktion finden Sie unter [Seitenvergleich](/help/sites-authoring/page-diff.md).
 
-## Vorgangsdetails {#operation-details}
+## Details zum Vorgang {#operation-details}
 
-Beim Vergleich von Seitenversionen wird die vorherige Version, die der Benutzer vergleichen möchte, von AEM im Hintergrund neu erstellt, um den Unterschied zu erleichtern. Dies ist erforderlich, damit der Inhalt [für einen Vergleich nebeneinander](/help/sites-developing/pagediff.md#operation-details) gerendert werden kann.
+Beim Vergleichen von Versionen einer Seite wird die vorherige Version, die der Benutzer vergleichen möchte, von AEM im Hintergrund neu erstellt, um den Vergleich zu erleichtern. Dies ist erforderlich, um den Inhalt für einen [direkten parallelen Vergleich](/help/sites-developing/pagediff.md#operation-details) rendern zu können.
 
-Dieser Erholungsvorgang wird intern von AEM durchgeführt und ist für den Benutzer transparent und erfordert kein Eingreifen. Administratoren, die das Repository beispielsweise in CRX DE Lite anzeigen, sehen diese neu erstellten Versionen jedoch in der Inhaltsstruktur.
+Dieser Wiederherstellungsvorgang wird intern von AEM durchgeführt und ist für den Benutzer transparent und erfordert keinen Eingriff. Administratoren, die das Repository beispielsweise in CRX DE Lite anzeigen, sehen diese neu erstellten Versionen jedoch in der Inhaltsstruktur.
 
-Beim Vergleich von Inhalten wird die gesamte Struktur bis zur zu vergleichenden Seite an der folgenden Stelle neu erstellt:
+Beim Vergleich von Inhalten wird die gesamte Baumstruktur bis zur zu vergleichenden Seite an der folgenden Stelle neu erstellt:
 
 `/tmp/versionhistory/`
 
-Eine Bereinigungs-Aufgabe wird automatisch ausgeführt, um diesen temporären Inhalt zu bereinigen.
+Es wird automatisch eine Bereinigungsaufgabe ausgeführt, um diesen temporären Inhalt zu bereinigen.
 
 ## Berechtigungen {#permissions}
 
@@ -54,8 +54,8 @@ Es gibt jedoch einige Einschränkungen, die der Entwickler beachten muss.
    * `cq-component-moved`
    * `cq-component-changed`
 
-* Da der Vergleich clientseitig ist und beim Laden der Seite ausgeführt wird, werden keine Änderungen am DOM berücksichtigt, die vorgenommen wurden, nachdem der clientseitige Vergleichsdienst ausgeführt wurde. Dies kann Folgendes beeinflussen:
+* Da der Vergleich Client-seitig ist und beim Laden der Seite ausgeführt wird, werden keine Änderungen am DOM berücksichtigt, die vorgenommen wurden, nachdem der Cient-seitige Vergleichs-Service ausgeführt wurde. Dies kann Folgendes beeinflussen:
 
-   * Komponenten, die AJAX zum Einschließen von Inhalten verwenden
-   * Einzelseiten-Webanwendungen
+   * Komponenten, die AJAX verwenden, um Inhalte einzubeziehen
+   * Single Page Applications
    * JavaScript-basierte Komponenten, die den DOM bei Benutzerinteraktionen manipulieren.
