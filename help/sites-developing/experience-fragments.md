@@ -53,7 +53,7 @@ Beispiel:
 >
 >Links verweisen immer auf die Veröffentlichungsinstanz. Sie sind für die Nutzung durch Dritte bestimmt, sodass der Link immer von der Veröffentlichungsinstanz und nicht von der Autoreninstanz aufgerufen wird.
 
-![xf-14](assets/xf-14.png)
+![xf-12](assets/xf-14.png)
 
 Der Selektor für die einfache Ausgabe verwendet einen Transformator im Gegensatz zu zusätzlichen Skripten. Der [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) wird als Transformator verwendet. Dies wird hier konfiguriert
 
