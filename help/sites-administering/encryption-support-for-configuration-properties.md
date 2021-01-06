@@ -20,7 +20,7 @@ ht-degree: 87%
 
 # Verschlüsselungsunterstützung für Konfigurationseigenschaften{#encryption-support-for-configuration-properties}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Unterstützung für die Speicherung aller OSGi-Konfigurationseigenschaften in sicherer, verschlüsselter Form anstatt als Klartext. Das Formular in der Web-Konsole-Benutzeroberfläche wird verwendet, um verschlüsselten Text aus Klartext mithilfe des systemweiten Verschlüsselungsschlüssels Übergeordnet zu erstellen.
 
