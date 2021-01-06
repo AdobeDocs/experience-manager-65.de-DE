@@ -19,7 +19,7 @@ ht-degree: 11%
 
 # Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation in eine AEM Sites-Einzelseitenanwendung{#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-single-page-application}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Mit AEM Forms können Formularentwickler adaptive Formulare und interaktive Kommunikation nahtlos in eine AEM Sites-Einzelseitenanwendung (SPA) einbetten. Das eingebettete adaptive Formular und die interaktive Kommunikation sind voll funktionsfähig. Benutzer können das Formular ausfüllen und senden, ohne die Seite zu verlassen. Es hilft Benutzern, im Kontext anderer Elemente auf der Webseite zu bleiben und gleichzeitig mit dem adaptiven Formular oder der interaktiven Kommunikation zu interagieren.
 
