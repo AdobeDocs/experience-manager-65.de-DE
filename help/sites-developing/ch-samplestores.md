@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ContextHub bietet mehrere Beispiele für Store-Kandidaten, die Sie in Ihren Lösungen verwenden können. Die folgenden Informationen werden für jedes Beispiel bereitgestellt:
 
-* Gibt an, wo der Quellcode zu finden ist, damit Sie ihn zum Lernen öffnen können.
+* Gibt an, wo der Quell-Code zu finden ist, damit Sie ihn zum Lernen öffnen können.
 * Wie werden die Stores konfiguriert, die Sie aus den Store-Kandidaten erstellen.
 * Wie sind die Store-Daten strukturiert, dasmit Sie darauf zugreifen können.
 
