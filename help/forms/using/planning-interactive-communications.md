@@ -134,7 +134,7 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
     <ul>
      <li>Datum</li>
      <li>Zeit</li>
-     <li>Nummer</li>
+     <li>Zahl</li>
      <li>Dauer</li>
      <li>Gebühren</li>
     </ul> </td>
