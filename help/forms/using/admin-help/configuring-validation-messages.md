@@ -63,7 +63,7 @@ Wenn „Berichte“ auf „Frame“ festgelegt ist, können Sie die Rahmenstärk
 
 1. Geben Sie unter „Überprüfungsausgabe“ im Feld „Rahmenstärke“ die Stärke des Rahmens in Pixel ein.
 
-   Die Rahmenstärke muss gleich oder größer 0 sein. Der Standardwert ist 1.
+   Die Rahmenstärke muss gleich oder größer 0 sein. Der Standardwert ist 1. 
 
 1. Klicken Sie auf Speichern.
 
