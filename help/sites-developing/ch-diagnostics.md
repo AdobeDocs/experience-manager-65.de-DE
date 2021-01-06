@@ -11,14 +11,14 @@ translation-type: tm+mt
 source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
 workflow-type: tm+mt
 source-wordcount: '491'
-ht-degree: 63%
+ht-degree: 72%
 
 ---
 
 
 # ContextHub-Diagnosen {#contexthub-diagnostics}
 
-ContextHub bietet eine Diagnoseseite, auf der Sie einen Überblick über das ContextHub-Framework erhalten Um die Seite zu öffnen, wechseln Sie zur Seite `contexthub.diagnostics.html` Ihrer AEM Autoreninstanz, z. B.:
+ContextHub bietet eine Diagnoseseite, auf der Sie einen Überblick über das ContextHub-Framework erhalten Um die Seite zu öffnen, gehen Sie zur `contexthub.diagnostics.html`-Seite Ihrer AEM-Autorenrinstanz, z. B.:
 
 `http://<host>:<port>/conf/<tenant>/settings/cloudsettings/default/contexthub.diagnostics.html`
 
@@ -32,37 +32,37 @@ Die „Seite ContextHub-Diagnose“ enthält Informationen zu den erstellten Sto
 >
 >Bei ContextHub-Konfigurationen, die sich noch unter ihren alten Pfaden befinden, ist der Speicherort der Diagnoseseite `http://<host>:<port>/libs/settings/cloudsettings/legacy/contexthub.diagnostics.html`.
 
-## Stores {#stores}
+## Stores  {#stores}
 
 Der Abschnitt „Stores“ listet alle ContextHub-Stores auf, die konfiguriert wurden. Jedes Element in der Liste besteht aus folgenden Informationen:
 
-* **Title:** Der[ Storetyp](/help/sites-developing/ch-samplestores.md), auf dem der Store basiert.
+* **Title:** Der[Store-Typ](/help/sites-developing/ch-samplestores.md), auf dem der Store basiert.
 * **path:** Der Pfad zum Repository-Knoten, der die Konfiguration enthält.
 * **resourceType:** Der Pfad des Repository-Knotens, in dem der Storetyp definiert ist.
 * **clientlibs:** Die Kategorien der geladenen Client-Bibliotheken, die den Storetyp implementieren.
 
-## Modules {#modules}
+## Modules   {#modules}
 
 Der Abschnitt „Modules“ listet alle ContextHub Benutzeroberflächenmodule auf, die konfiguriert wurden. Jedes Element in der Liste besteht aus folgenden Informationen:
 
-* **Titel:** Der  [UI-Modul-](/help/sites-developing/ch-samplemodules.md) Typ, auf dem das UI-Modul basiert.
+* **Title:** Der [Benutzeroberflächenmodultyp](/help/sites-developing/ch-samplemodules.md), auf dem das Benutzeroberflächenmodul basiert.
 * **path:** Der Pfad zum Repository-Knoten, der die Konfiguration enthält.
 * **resourceType:** Der Pfad des Repository-Knotens, in dem der Benutzeroberflächenmodultyp definiert ist.
 * **clientlibs:** Die Kategorien der geladenen Client-Bibliotheken, die den Benutzeroberflächenmodultyp implementieren.
 
-## Clientlibs  {#clientlibs}
+## Clientlibs   {#clientlibs}
 
 Der Abschnitt „Clientlibs“ listet alle Ordner der Client-Bibliothek auf, die ContextHub geladen hat. Die Client-Bibliotheken sind kategorisiert:
 
-* **kernel.js:** Client-Bibliotheken, die das ContextHub-Framework, die Segment-Engine und Storetypen implementieren.
-* **ui.js:** Client-Bibliotheken, die die ContextHub-Benutzeroberfläche und Benutzeroberflächenmodultypen implementieren.
+* **kernel.js:** Client-Bibliotheken, die das ContextHub-Framework, die Segment-Engine und Storetypen implementieren.
+* **ui.js:** Client-Bibliotheken, die die ContextHub-Benutzeroberfläche und Benutzeroberflächenmodultypen implementieren.
 * **style.css:** CSS-Dateien, die aus Client-Bibliotheken geladen werden.
 
-## URLs      {#urls}
+## URLs   {#urls}
 
 Der Abschnitt „URLs“ enthält Links zu ContextHub-Features:
 
-* **Configuration Editor:** Öffnet die  [ContextHub-Konfigurationsseite, auf der Sie ](ch-configuring.md) Stores, UI-Modi und UI-Module konfigurieren können.
+* **Konfigurationseditor:** Öffnet die [ContextHub-Konfigurationsseite](ch-configuring.md), wo Sie Stores, Benutzeroberflächenmodi und Benutzeroberflächenmodule konfigurieren können.
 
 * **Konfiguration der ContextHub-Module:** Öffnet die Datei /etc/cloudsettings/default/contexthub.config.kernel.js, die die Javascript-Objektdarstellung der ContextHub-Speicherkonfigurationen enthält.
 * **Konfiguration der ContextHub-Benutzeroberfläche:** Öffnet die Datei /etc/cloudsettings/default/contexthub.config.ui.js, die die Javascript-Objektdarstellung der ContextHub-UI-Moduskonfigurationen enthält.
