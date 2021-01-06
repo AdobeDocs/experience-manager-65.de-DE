@@ -42,7 +42,7 @@ Abhängig von der konfigurierten Datenspeicherpersistenz werden Entwürfe und ü
   <tr>
    <td><p><strong>Persistenztyp</strong></p> </td>
    <td><p><strong>Datenspeicher</strong></p> </td>
-   <td><p><strong>Ort</strong></p> </td>
+   <td><p><strong>Standort</strong></p> </td>
   </tr>
   <tr>
    <td><p>Default</p> </td>
