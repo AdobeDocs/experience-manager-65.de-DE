@@ -25,7 +25,7 @@ Wenn Sie eine Domäne hinzufügen, geben Sie an, ob die Kontosperrung aktiviert 
 Geben Sie mithilfe der Einstellungen auf der Seite „Domänenverwaltung“ die maximale Anzahl von Authentifizierungsfehlern sowie die Länge des Zeitraums, für den Konten gesperrt werden, an. Diese Einstellungen gelten für alle Domänen, bei denen die Kontosperrung aktiviert ist.
 
 1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > User Management > Domänenverwaltung]**.
-1. Geben Sie in das Feld „Maximale Anzahl aufeinanderfolgender Authentifizierungsfehler“ ein, wie oft sich ein Benutzer aufeinanderfolgend fehlerhaft anmelden darf, bevor sein Konto gesperrt wird. Der Standardwert ist 20.
-1. Geben Sie in das Feld „Sperre für Konto aufheben nach (Minuten)“ die Minutenzahl ein, für die das Benutzerkonto gesperrt wird. Nach einer bestimmten Minutenzahl kann der Benutzer eine erneute Anmeldung versuchen. Der Standardwert ist 30.
+1. Geben Sie in das Feld „Maximale Anzahl aufeinanderfolgender Authentifizierungsfehler“ ein, wie oft sich ein Benutzer aufeinanderfolgend fehlerhaft anmelden darf, bevor sein Konto gesperrt wird. Der Standardwert ist 20. 
+1. Geben Sie in das Feld „Sperre für Konto aufheben nach (Minuten)“ die Minutenzahl ein, für die das Benutzerkonto gesperrt wird. Nach einer bestimmten Minutenzahl kann der Benutzer eine erneute Anmeldung versuchen. Der Standardwert ist 30. 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
