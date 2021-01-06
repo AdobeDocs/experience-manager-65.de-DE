@@ -28,7 +28,7 @@ AEM Forms ermöglicht die Integration in Adobe Analytics, sodass Sie Leistungsme
 >
 >Zusätzlich zum Add-On-Paket benötigen Sie ein Adobe Analytics-Konto und Administratorrechte auf der AEM-Instanz. Informationen zur Lösung finden Sie unter [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Sie können Adobe Analytics verwenden, um Interaktionsmuster und Probleme von Benutzern bei der Verwendung adaptiver Formulare, HTML5-Formulare und interaktiver Kommunikation zu erkennen. Adobe Analytics ist so vorkonfiguriert, dass Informationen zu den folgenden Parametern nachverfolgt und gespeichert werden:
 
