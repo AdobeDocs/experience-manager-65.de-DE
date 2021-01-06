@@ -88,7 +88,7 @@ Die folgende Tabelle beschreibt die Schritte in diesem Diagramm.
  </thead>
  <tbody>
   <tr>
-   <td><p>3</p></td>
+   <td><p>1</p></td>
    <td><p>Eine Webseite enthält einen Link, der auf ein Java-Servlet zugreift, das den Forms-Dienst aufruft.</p></td>
   </tr>
   <tr>
