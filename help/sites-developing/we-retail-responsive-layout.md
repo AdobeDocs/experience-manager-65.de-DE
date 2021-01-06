@@ -48,4 +48,4 @@ Alle Web.Retail-Seiten verwenden die Komponente Layout Container, um reaktionsf√
 
 ## Weiterf√ºhrende Informationen {#further-information}
 
-Weitere Informationen finden Sie im Authoring-Dokument [Responsive Layout](/help/sites-authoring/responsive-layout.md) oder im Administrator-Dokument [Konfigurieren von Layout-Container und Layout-Modus](/help/sites-administering/configuring-responsive-layout.md).
+Weitere Informationen finden Sie im Authoring-Dokument [Responsive Layout](/help/sites-authoring/responsive-layout.md) oder im Administrator-Dokument [Konfigurieren des Layout-Containers und des Layoutmodus](/help/sites-administering/configuring-responsive-layout.md).
