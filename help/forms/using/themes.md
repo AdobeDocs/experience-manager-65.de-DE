@@ -249,7 +249,7 @@ Zu den gebrauchsfertigen Bereichen gehören:
 
 * Registerkarten links
 * Registerkarten oben
-* Accordion
+* Akkordeon
 * Responsiv
 * Assistent
 * Layout für Mobilgeräte
