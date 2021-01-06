@@ -19,7 +19,7 @@ ht-degree: 70%
 
 # Verwenden der SendToPrinter-API {#using-the-sendtoprinter-api}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Sie können in AEM Forms den sendToPrinter-Dienst verwenden, um ein Dokument an den Drucker zu senden. Der SendToPrinter-Dienst unterstützt die folgenden Druckerzugriffsmechanismen:
 
