@@ -19,7 +19,7 @@ ht-degree: 80%
 
 # Anpassen von Entwurfs- und Übermittlungsdatendiensten {#customizing-draft-and-submission-data-services}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Mit AEM Forms können Benutzer ein adaptives Formular als Entwurf speichern. Die Entwurfsfunktion bietet Benutzern die Möglichkeit, ein Formular, an dem sie gerade arbeiten, beizubehalten. Ein Benutzer kann das Formular dann jederzeit von jedem beliebigen Gerät ausfüllen und senden.
 
