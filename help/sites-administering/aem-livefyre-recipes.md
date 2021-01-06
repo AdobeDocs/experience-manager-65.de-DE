@@ -132,7 +132,7 @@ Informationen zu erweiterten Anpassungen mit dem SDK finden Sie unter [StreamHub
 * [Single-Sign-On-](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) Integration für AEM Identity Management anpassen
 * [Identitätsintegration](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) für Authentifizierungsplattformen von Drittanbietern
 
-### Kundenbeispiele  {#customer-examples-1}
+### Kundenbeispiele {#customer-examples-1}
 
 * [Poise (Kimberly Klark)](https://www.poise.com/en-us/advice-and-support/blog-and-podcast/blog/5-holiday-party-tips-for-managing-lbl)
 
@@ -194,7 +194,7 @@ Weitere APIs für Bewertungen und Reviews finden Sie [hier](https://api.livefyre
 * [Single-Sign-On-](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) Integration für AEM Identity Management anpassen
 * [Identitätsintegration](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) für Authentifizierungsplattformen von Drittanbietern
 
-### Kundenbeispiele  {#customer-examples-2}
+### Kundenbeispiele {#customer-examples-2}
 
 * [TimeOut](https://www.timeout.com/london/restaurants/forest-bar-kitchen#tab_panel_3)
 * [myrecipes](https://www.myrecipes.com/recipe/shrimp-florentine-pasta)
