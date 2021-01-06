@@ -63,13 +63,13 @@ Tippen Sie auf der Seite **Adobe Experience Manager Web Console Configuration** 
    <td>Einzug</td> 
    <td>Die Breite der einzelnen Einzugseinheit, die auf den Text in Listendokumentfragmenten angewendet wird.</td> 
    <td>12.7mm</td> 
-   <td>Nummer</td> 
+   <td>Zahl</td> 
   </tr> 
   <tr> 
    <td>Mindestbreite von römischen Zahlen</td> 
    <td>Mindestbreite für das Aufzählungsfeld oder Zahlenfeld, wenn römische Zahlen in Listendokumentfragmenten verwendet werden. </td> 
    <td>12.7 mm</td> 
-   <td>Nummer</td> 
+   <td>Zahl</td> 
   </tr> 
   <tr> 
    <td>Mindestbreite von Nummer</td> 
@@ -120,7 +120,7 @@ Tippen Sie auf der Seite **Adobe Experience Manager Web-Konsolenkonfiguration** 
 | Eigenschaft | Beschreibung | Standard | Zulässige Werte |
 |---|---|---|---|
 | Platzhalter anzeigen | Aktivieren Sie das Kontrollkästchen, um die Anzeige von Platzhaltern für Felder zu aktivieren, die in adaptiven Formularen und in interaktiver Kommunikation enthalten sind. | Ausgewählt | Nicht zutreffend |
-| Maximale Cache-Einträge | Legen Sie die maximale Anzahl an adaptiven Formularen und interaktiver Kommunikation fest, die mithilfe des Cache-Speichers abgerufen werden können. | 100 | Nummer |
+| Maximale Cache-Einträge | Legen Sie die maximale Anzahl an adaptiven Formularen und interaktiver Kommunikation fest, die mithilfe des Cache-Speichers abgerufen werden können. | 100 | Zahl |
 | Dateinamen als eindeutig festlegen | Aktivieren Sie das Kontrollkästchen, um eindeutige Namen für Dateien zu erhalten, die als Anhänge in adaptiven Formularen und interaktiver Kommunikation enthalten sind. | Nicht ausgewählt | Nicht zutreffend |
 
 ## Webkanalthemen-Konfiguration für adaptive Formulare und interaktive Kommunikation  {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
