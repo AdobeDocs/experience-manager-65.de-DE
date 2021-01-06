@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren der Link-Überwachung für Adobe Analytics
-seo-title: Konfigurieren der Link-Überwachung für Adobe Analytics
+title: Konfigurieren des Linktrackings für Adobe Analytics
+seo-title: Konfigurieren des Linktrackings für Adobe Analytics
 description: Erfahren Sie mehr über die Konfiguration der Link-Überwachung für SiteCatalyst.
 seo-description: Erfahren Sie mehr über die Konfiguration der Link-Überwachung für SiteCatalyst.
 uuid: b6d5bd1c-f91a-4d38-9e9e-dc2bcb271dae
@@ -18,7 +18,7 @@ ht-degree: 75%
 ---
 
 
-# Konfigurieren der Link-Überwachung für Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
+# Konfigurieren des Linktrackings für Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
 
 Wenn Benutzer auf Links auf Seiten Ihrer Website klicken, können Sie zugehörige Informationen in Adobe Analytics erfassen. Verwenden Sie beispielsweise die Link-Überwachung, um zu erfahren, wie Benutzer mit Ihrer Site interagieren, und Dateidownloads sowie Ausstiegs-Links nachzuverfolgen.
 
