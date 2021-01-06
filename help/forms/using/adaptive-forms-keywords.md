@@ -78,7 +78,7 @@ Adaptive Formularsuchbegriffe sind vordefinierte, reservierte Bezeichner, welche
    <td><p>untergeordnete Elemente</p> </td>
   </tr>
   <tr>
-   <td><p>Wert</p> </td>
+   <td><p>value</p> </td>
    <td><p>autoSaveInfo</p> </td>
    <td><p>setAttribute</p> </td>
   </tr>
