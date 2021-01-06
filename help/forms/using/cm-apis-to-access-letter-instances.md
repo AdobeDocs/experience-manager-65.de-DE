@@ -19,7 +19,7 @@ ht-degree: 59%
 
 # APIs zum Zugriff auf Briefinstanzen {#apis-to-access-letter-instances}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Durch Verwenden der Benutzeroberfläche „Korrespondenz erstellen“ von Correspondence Management können Sie Entwürfe von Briefinstanzen unter Fortschritt speichern und es gibt gesendete Briefinstanzen.
 
