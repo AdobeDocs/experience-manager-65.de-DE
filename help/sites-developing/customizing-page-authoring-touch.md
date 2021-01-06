@@ -26,7 +26,7 @@ ht-degree: 79%
 
 AEM bietet verschiedene Möglichkeiten zum Anpassen der Funktionsweise des Seiten-Authorings (und der [Konsolen](/help/sites-developing/customizing-consoles-touch.md)) Ihrer Authoring-Instanz.
 
-* Clientlibs
+* Clientlibs 
 
    Mit clientlibs können Sie die Standardimplementierung erweitern, um neue Funktionen zu realisieren, während Sie die Standardfunktionen, -objekte und -methoden wiederverwenden. Beim Anpassen können Sie Ihre eigene clientlib unter `/apps.` erstellen. Die neue clientlib muss:
 
