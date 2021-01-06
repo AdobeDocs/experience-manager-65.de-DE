@@ -110,7 +110,7 @@ Wenn Sie einen Namespace oder ein anderes Tag auswählen, werden die folgenden V
 * [Bearbeiten](#editing-tags)
 * [Verschieben](#moving-tags)
 * [Merge](#merging-tags)
-* [Veröffentlichen](#publishing-tags)
+* [Veröffentlichung](#publishing-tags)
 * [Veröffentlichung rückgängig machen](#unpublishing-tags)
 * [Löschen](#deleting-tags)
 
