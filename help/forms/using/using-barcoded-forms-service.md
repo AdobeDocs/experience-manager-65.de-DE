@@ -20,7 +20,7 @@ ht-degree: 93%
 
 # Barcoded Forms-Dienst{#barcoded-forms-service}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Der Barcoded Forms-Dienst extrahiert Daten aus elektronischen Abbildungen von Strichcodes. Der Dienst akzeptiert TIFF- und PDF-Dateien mit einem oder mehreren Strichcodes als Eingabe und extrahiert die Strichcodedaten. Strichcodedaten können verschiedene Formate haben, so z. B. XML, durch ein Zeichen getrennte Zeichenfolgen oder mit JavaScript erstellte benutzerdefinierte Formate.
 
