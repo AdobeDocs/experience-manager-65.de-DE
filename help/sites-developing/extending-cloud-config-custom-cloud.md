@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 workflow-type: tm+mt
 source-wordcount: '437'
-ht-degree: 63%
+ht-degree: 64%
 
 ---
 
@@ -52,7 +52,7 @@ Die standardmäßigen Cloud-Services können durch individuelle Cloud-Services e
    * **Beschriftung**:  `googleanalyticspage`
    * **Titel**: `Google Analytics Page`
    * **Super Type**:  `cq/cloudserviceconfigs/components/configpage`
-   * **Gruppe**:  `.hidden`
+   * **Gruppe**: `.hidden`
 
 1. Klicken Sie zweimal auf **Weiter** und geben Sie Folgendes an:
 
