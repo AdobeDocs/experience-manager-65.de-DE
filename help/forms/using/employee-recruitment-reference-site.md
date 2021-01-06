@@ -18,7 +18,7 @@ ht-degree: 90%
 
 # Mitarbeiterrekrutierung Referenz-Website-Umgehungslösung {#employee-recruitment-reference-site-walkthrough}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 We.Finance ist ein Unternehmen, das das Bewerben für eine Stelle über das Referenz-Website-Portal ermöglicht. Die Organisation nutzt das Portal auch zur Verwaltung der Terminplanung, der Kurzliste und der internen Kommunikation der Kandidaten. Die Website verwaltet Folgendes:
 
