@@ -19,7 +19,7 @@ ht-degree: 89%
 
 # Konfigurieren von Speicherdiensten für Entwürfe und Übermittlungen {#configuring-storage-services-for-drafts-and-submissions}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Mit AEM Forms können Sie speichern:
 
