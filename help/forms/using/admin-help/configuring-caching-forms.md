@@ -106,7 +106,7 @@ Der Forms-Dienst speichert Formularentwürfe immer auf dem Datenträger zwischen
 
 **Cachegröße der Vorlagenkonfiguration:** Die maximale Anzahl von Vorlagenkonfigurationsobjekten, die im Arbeitsspeicher verbleiben sollen. Der Standardwert ist 100. Es wird empfohlen, diesen Wert größer gleich dem Wert für die Vorlagencache-Größe festzulegen. Diese Einstellung hat keine Auswirkungen auf den Datenträgercache.
 
-**Vorlagencache-Größe:** Die maximale Anzahl von Vorlageninhaltsobjekten, die im Arbeitsspeicher belassen werden sollen. Der Standardwert ist 100. Diese Einstellung hat keine Auswirkungen auf den Datenträgercache.
+**Vorlagencache-Größe:** Die maximale Anzahl von Vorlageninhaltsobjekten, die im Arbeitsspeicher belassen werden sollen. Der Standardwert ist 100. Diese Einstellung hat keine Auswirkungen auf den Datenträgercache.
 
 **Aktiviert:** Standardmäßig ist dieses Kontrollkästchen aktiviert, d. h., die Formularvorlagen werden im Arbeitsspeicher zwischengespeichert. Wenn diese Option nicht ausgewählt ist, werden die Formularvorlagen nur auf dem Datenträger zwischengespeichert.
 
@@ -116,7 +116,7 @@ Der Forms-Dienst speichert wiedergegebene Formulare zwischen, damit dasselbe For
 
 Diese Einstellungen befinden sich im Bereich **Arbeitsspeichercache für Formularwiedergabe**. Wenn Sie eine dieser Einstellungen ändern, starten Sie den Forms-Dienst neu, damit die Änderung wirksam wird. Verwenden Sie zum Neustart dieses Dienstes entweder Workbench, oder folgen Sie den Anweisungen unter [Dienste starten oder beenden, die AEM Forms-Modulen zugeordnet sind](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules).
 
-**Cachegröße:** Gibt die maximale Anzahl der wiedergegebenen Formulare an, die sich im Arbeitsspeichercache befinden können. Der Standardwert ist 100. Diese Einstellung hat keine Auswirkungen auf den Datenträgercache.
+**Cachegröße:** Gibt die maximale Anzahl der wiedergegebenen Formulare an, die sich im Arbeitsspeichercache befinden können. Der Standardwert ist 100. Diese Einstellung hat keine Auswirkungen auf den Datenträgercache.
 
 **Aktiviert:** Standardmäßig ist diese Option aktiviert, d. h. die wiedergegebenen Formulare werden im Arbeitsspeicher zwischengespeichert. Wenn diese Option nicht ausgewählt ist, werden die wiedergegebenen Formulare nur auf dem Datenträger zwischengespeichert.
 
