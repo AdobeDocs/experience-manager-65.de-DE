@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
 workflow-type: tm+mt
 source-wordcount: '1648'
-ht-degree: 69%
+ht-degree: 68%
 
 ---
 
@@ -147,7 +147,7 @@ AEM bietet eine Reihe von Standardvorlagen, die standardmäßig verfügbar sind.
 
 AEM enthält beispielsweise verschiedene Vorlagen, darunter eine Inhaltsseite und eine Homepage.
 
-| **Titel** | **Komponente** | **Ort** | **Zweck** |
+| **Titel** | **Komponente** | **Standort** | **Zweck** |
 |---|---|---|---|
 | Startseite | homepage | geometrixx | Die Vorlage für die Geometrixx-Homepage. |
 | Inhalts-Seite | contentpage | geometrixx | Die Vorlage für die Geometrixx-Inhaltsseite. |
@@ -161,7 +161,7 @@ Eine Liste aller Vorlagen im Repository können Sie mit dem folgenden Verfahren 
 1. In der Registerkarte „Abfrage“
 1. Wählen Sie als **Typ** die Option **XPath**.
 
-1. Geben Sie in das Feld **Abfrage** folgende Zeichenfolge ein:
+1. Geben Sie im Eingabefeld **Abfrage** die folgende Zeichenfolge ein:
 //element(*, cq:Template)
 
 1. Klicken Sie auf **Ausführen**. Die Liste wird im Ergebnisfeld angezeigt.
