@@ -38,7 +38,7 @@ Um sicherzustellen, dass der Rollout nicht gesperrt ist, können mögliche Defin
 
 Neben den Standardfunktionen können benutzerdefinierte Konflikt-Handler hinzugefügt werden, um unterschiedliche Regeln zu implementieren. Diese können auch das Veröffentlichen von Aktionen als Einzelprozess gestatten.
 
-### Beispiel-Szenario  {#example-scenario}
+### Beispiel-Szenario {#example-scenario}
 
 In den folgenden Abschnitten werden wir zum Veranschaulichen der verschiedenen Verfahren zur Konfliktbewältigung das Beispiel einer neuen Seite `b` verwenden, die sowohl im Blueprint- als auch im Live Copy-Zweig (manuell) erstellt wurde:
 
