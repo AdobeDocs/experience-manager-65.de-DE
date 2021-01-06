@@ -68,7 +68,7 @@ Möglicherweise möchten Sie mehrere Dashboards, um die Informationen zu Ihrem I
 
 ## Dashboard-Komponenten  {#dashboard-components}
 
-### Überblick{#overview}
+### Überblick {#overview}
 
 Dashboard-Komponenten sind nichts anderes als reguläre [AEM-Komponenten](/help/sites-developing/developing-components-samples.md). Dieser Abschnitt beschreibt die Berichtskomponenten, die im Lieferumfang von AEM enthalten sind.
 
@@ -83,9 +83,9 @@ Jede Berichtskomponente enthält mindestens drei Registerkarten:
 * **Bericht:** Enthält die spezifische Konfiguration des jeweiligen Berichts.
 * **Stil**: enthält Stilkonfigurationen wie Diagrammgröße und Rand.
 
-Die Berichterstellungskomponenten werden mit einer Standardkonfiguration initialisiert, die Sie bei der schnellen Einrichtung Ihres Dashboards unterstützt.
+Die Berichtskomponenten werden mit einer Standardkonfiguration initialisiert, mit der Sie Ihr Dashboard schnell einrichten können.
 
-#### Grundkonfiguration {#basic-configuration}
+#### Konfiguration „Allgemein“  {#basic-configuration}
 
 Auf der Registerkarte **Allgemein** wird der Zugriff auf die folgenden Konfigurationseinträge bereitgestellt:
 
@@ -159,7 +159,7 @@ Diese Komponente zeigt ein Diagramm an, das den laut folgender Konfiguration hä
 
 ## Erweitern des Dashboards {#extending-dashboard}
 
-### Überblick{#overview-1}
+### Überblick {#overview-1}
 
 Dashboards sind normale Seiten (`cq:Page`), deshalb können zum Zusammenstellen von Dashboards beliebige Komponenten verwendet werden.
 
