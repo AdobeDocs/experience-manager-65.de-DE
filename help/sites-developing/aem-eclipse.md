@@ -22,7 +22,7 @@ ht-degree: 81%
 
 ![](do-not-localize/chlimage_1-9.png)
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 AEM Developer Tools for Eclipse ist ein Eclipse-Plug-in, das auf dem [Eclipse-Plug-in für Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html) basiert, das unter der Apache-Lizenz 2 veröffentlicht wurde.
 
