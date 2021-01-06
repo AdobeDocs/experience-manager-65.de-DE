@@ -20,7 +20,7 @@ ht-degree: 79%
 
 # Anpassen der Benutzeroberfläche „Korrespondenz erstellen“{#customize-create-correspondence-ui}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Mit der Correspondence Management können Sie die dazugehörige Lösungsvorlage so umbenennen, dass Sie einen besseren Markenwert erzielen und die Markenstandards Ihres Unternehmens erfüllt werden. Die Umbenennung der Benutzeroberfläche umfasst das Ändern des Unternehmenslogo in der linken oberen Ecke der Benutzeroberfläche „Korrespondenz erstellen“.
 
