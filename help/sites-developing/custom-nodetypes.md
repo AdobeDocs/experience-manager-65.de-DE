@@ -513,7 +513,7 @@ Praktischer primärer Knotentyp zum einfachen Erstellen von Abfragekonfiguration
 
 `[cq:PollConfigFolder] > sling:Folder, cq:PollConfig`
 
-## Ort {#location}
+## Standort {#location}
 
 ### cq:GeoLocation {#cq-geolocation-1}
 
