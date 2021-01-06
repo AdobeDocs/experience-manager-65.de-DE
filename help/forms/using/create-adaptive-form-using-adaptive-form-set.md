@@ -19,7 +19,7 @@ ht-degree: 77%
 
 # Erstellen eines adaptiven Formulars mit einem Satz adaptiver Formulare{#create-an-adaptive-form-using-a-set-of-adaptive-forms}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 In einem Workflow wie einer Anwendung zum Eröffnen eines Bankkontos müssen Ihre Benutzer mehrere Formulare ausfüllen. Anstatt sie zu bitten, einen Satz von Formularen auszufüllen, können Sie die Formulare zusammenfassen und ein großes Formular (übergeordnetes Formular) erstellen. Wenn Sie ein adaptives Formular zu dem größeren Formular hinzufügen, wird sie in Form eines Bereichs angezeigt hinzugefügt (Formular des untergeordneten Elements). Sie fügen eine Reihe von untergeordneten Formularen hinzu, um ein übergeordnetes Formular zu erstellen. Sie können die Bereiche je nach Benutzereingabe anzeigen oder ausblenden. Schaltflächen im übergeordneten Formular, z. B. „Senden“ und „Zurücksetzen“, setzen die Schaltflächen im untergeordneten Formular außer Kraft. Um ein adaptives Formular im übergeordneten Formular hinzuzufügen, können Sie das adaptive Formular per Drag&amp;Drop aus dem Assets-Browser verschieben (wie adaptive Formularfragmente).
 
