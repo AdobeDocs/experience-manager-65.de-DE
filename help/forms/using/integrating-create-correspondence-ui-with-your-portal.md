@@ -20,7 +20,7 @@ ht-degree: 76%
 
 # Integrieren der Benutzeroberfläche „Korrespondenz erstellen“ in Ihr benutzerdefiniertes Portal{#integrating-create-correspondence-ui-with-your-custom-portal}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 In diesem Artikel wird erläutert, wie Sie die Lösung „Korrespondenz erstellen“ in Ihre Umgebung integrieren können.
 
