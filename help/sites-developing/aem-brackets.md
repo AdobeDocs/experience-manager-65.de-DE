@@ -20,9 +20,9 @@ ht-degree: 55%
 
 # AEM Brackets-Erweiterung{#aem-brackets-extension}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
-Die AEM Brackets-Erweiterung bietet einen reibungslosen Workflow für die Bearbeitung von AEM-Komponenten und Client-Bibliotheken und nutzt die Leistungsfähigkeit des [Brackets](https://brackets.io/)-Code-Editors, der den Zugriff auf Photoshop-Dateien und -Ebenen über den Code-Editor ermöglicht. Die durch die Erweiterung gebotene einfache Synchronisation (kein Maven oder File Vault erforderlich) erhöht die Effizienz der Entwickler und hilft auch Frontend-Entwicklern mit begrenztem AEM-Wissen, an Projekten teilzunehmen. Diese Erweiterung bietet auch einige Unterstützung für die HTML-Vorlagensprache (HTL)](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html), wodurch die Komplexität von JSP entfällt, um die Komponentenentwicklung einfacher und sicherer zu gestalten.[
+Die AEM Brackets-Erweiterung bietet einen reibungslosen Workflow für die Bearbeitung von AEM-Komponenten und Client-Bibliotheken und nutzt die Leistungsfähigkeit des [Brackets](https://brackets.io/)-Code-Editors, der den Zugriff auf Photoshop-Dateien und -Ebenen über den Code-Editor ermöglicht. Die durch die Erweiterung gebotene einfache Synchronisation (kein Maven oder File Vault erforderlich) erhöht die Effizienz der Entwickler und hilft auch Frontend-Entwicklern mit begrenztem AEM-Wissen, an Projekten teilzunehmen. Diese Erweiterung bietet auch einige Unterstützung für die HTML-Vorlagensprache (HTL)](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html), wodurch die Komplexität von JSP entfällt, um die Komponentenentwicklung einfacher und sicherer zu gestalten.[
 
 ![chlimage_1-53](assets/chlimage_1-53a.png)
 
