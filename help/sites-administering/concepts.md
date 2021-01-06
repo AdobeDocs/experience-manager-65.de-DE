@@ -635,7 +635,7 @@ Häufig muss sich ein Käufer anmelden, um Zugriff zum Warenkorb zu erhalten. Da
 >
 >Auch ein anonymer Warenkorb und die anonyme Bezahlung werden unterstützt.
 
-### Kundenanmeldung  {#customer-sign-in}
+### Kundenanmeldung {#customer-sign-in}
 
 Nach der Registrierung kann sich der Kunde bei seinem Konto anmelden, damit seine Aktionen nachverfolgt und seine Bestellungen bearbeitet werden.
 
