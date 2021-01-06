@@ -1,6 +1,6 @@
 ---
 title: Komponentenübersicht
-seo-title: Komponenten
+seo-title: 'Komponenten '
 description: Bei Komponenten handelt es sich um modulare Einheiten, mit denen spezifische Funktionalität zum Darstellen von Inhalten auf Ihrer Website realisiert wird.
 seo-description: Komponenten sind modulare Einheiten, die spezielle Funktionen zur Darstellung Ihrer Inhalte auf Ihrer Website implementieren.
 uuid: fb39aeb8-8f43-4091-8083-ebfab89e6e63
@@ -13,35 +13,35 @@ translation-type: tm+mt
 source-git-commit: 5597fb39500ac1f85d03263bfa1e5239d35d2a2c
 workflow-type: tm+mt
 source-wordcount: '614'
-ht-degree: 67%
+ht-degree: 82%
 
 ---
 
 
 # Komponentenübersicht{#components-overview}
 
-Diese Seite enthält eine Übersicht über die Komponenten von Adobe Experience Manager (AEM), z. B. für die [Seitenbearbeitung](/help/sites-authoring/default-components-foundation.md).
+Diese Seite enthält einen Überblick über die Komponenten von Adobe Experience Manager (AEM), z. B. für die [Seitenbearbeitung](/help/sites-authoring/default-components-foundation.md).
 
 ## Was sind Komponenten? {#what-exactly-is-a-component}
 
-* Modulare Einheiten, die spezielle Funktionen zur Darstellung Ihrer Inhalte auf Ihrer Website implementieren.
-* Wiederverwendbar.
-* Entwickelt als eigenständige Einheiten in einem Ordner des Repositorys.
+* Sind modulare Einheiten, mit denen spezifische Funktionalität zum Darstellen von Inhalten auf Ihrer Website realisiert wird.
+* Sind wiederverwendbar.
+* Werden als eigenständige Einheiten innerhalb eines Ordners des Repositorys entwickelt.
 * Verfügen nicht über ausgeblendete Konfigurationsdateien.
 * Können andere Komponenten enthalten.
 * Können an beliebigen Stellen eines AEM-Systems ausgeführt werden. Können auch auf die Ausführung unter bestimmten Komponenten beschränkt werden.
 * Verfügen über eine standardisierte Benutzeroberfläche.
-* Sie können das Bearbeitungsverhalten konfigurieren.
-* Verwenden von Dialogfeldern, die mit Unterelementen basierend auf Granite UI-Komponenten erstellt wurden
-* werden mit [HTL](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html) (empfohlen) oder JSP entwickelt.
+* Verfügen über ein konfigurierbares Bearbeitungsverhalten.
+* Verwenden Dialogfelder, die basierend auf Granite-UI-Komponenten mit Unterelementen erstellt werden
+* werden mit [HTL](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html) (empfohlen) oder JSP entwickelt.
 * Können für die Erstellung von angepassten Komponenten entwickelt werden, mit denen die Standardfunktionalität erweitert wird.
 
 Da die Komponenten modular sind, haben Sie folgende Möglichkeiten:
 
 * Entwickeln einer neuen Komponente auf Ihrer lokalen Instanz
-* Stellen Sie es in Ihrer Test-Umgebung bereit.
+* Bereitstellen dieser Komponente in Ihrer Testumgebung
 * Bereitstellen in Ihrer Live-Authoring-Umgebung, in der Autoren bzw. Administratoren Inhalt hinzufügen und konfigurieren können
-* Stellen Sie sie in Ihrer (den) Live-Veröffentlichungs-Umgebung(en) bereit, in der (denen) sie zum Rendern von Inhalten für Besucher auf Ihrer Website verwendet werden. Bestimmte Komponenten, z. B. für Communitys, akzeptieren auch Eingaben von Ihren Benutzern.
+* Bereitstellen in Ihren Live-Veröffentlichungsumgebungen, in denen sie zum Rendern von Inhalten für Besucher Ihrer Website verwenden können Bestimmte Komponenten, z. B. für Communitys, akzeptieren auch Eingaben von Ihren Benutzern.
 
 Für jede AEM-Komponente gilt Folgendes:
 
@@ -65,7 +65,7 @@ Mit den bereitgestellten Komponenten und deren Nutzung auf den bereitgestellten 
 
 Von Adobe werden zwei Sätze mit AEM-Komponenten bereitgestellt:
 
-* [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
+* [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html)
 * [Foundation-Komponenten](/help/sites-authoring/default-components-foundation.md)
 
 **Core** Components wurde mit AEM 6.3 und Angebot mit flexiblen und leistungsstarken Authoring-Funktionen eingeführt. Die [We.Retail-Referenz-Website](/help/sites-developing/we-retail.md) zeigt, wie die Kernkomponenten verwendet werden können und stellt die aktuellen Best Practices der Komponentenentwicklung dar.
@@ -80,19 +80,19 @@ Von Adobe werden zwei Sätze mit AEM-Komponenten bereitgestellt:
 
 ### Anzeigen der verfügbaren Komponenten {#viewing-available-components}
 
-Eine Übersicht über alle verfügbaren Komponenten Ihrer AEM-Instanz erhalten Sie in der [Komponentenkonsole](/help/sites-authoring/default-components-console.md).
+Einen Überblick über alle verfügbaren Komponenten Ihrer AEM-Instanz erhalten Sie in der [Komponentenkonsole](/help/sites-authoring/default-components-console.md).
 
 Alternativ hierzu können Sie auch CRXDE Lite verwenden, um eine Liste mit allen Komponenten abzurufen, die im Repository verfügbar sind.
 
-1. Wählen Sie in **[!UICONTROL CRXDE Lite]** **[!UICONTROL Tools]** aus der Symbolleiste und **[!UICONTROL Abfrage]**. Dadurch wird die Registerkarte **[!UICONTROL Abfrage]** geöffnet.
+1. Wählen Sie in **[!UICONTROL CRXDE Lite]** in der Symbolleiste die Option **[!UICONTROL Tools]** und dann **[!UICONTROL Abfrage]**, um die Registerkarte **[!UICONTROL Abfrage]** zu öffnen.
 
-1. Wählen Sie auf der Registerkarte **[!UICONTROL Query]** (Abfrage) für `XPath`Type **[!UICONTROL (Typ) die Option]**.
+1. Wählen Sie auf der Registerkarte **[!UICONTROL Abfrage]** die Option `XPath` als **[!UICONTROL Typ]**.
 
 1. Geben Sie in das Feld **[!UICONTROL Abfrage]** folgende Zeichenfolge ein:
 
    `//element(*, cq:Component)`
 
-1. Klicken Sie auf **[!UICONTROL Ausführen]** und die Komponenten werden aufgelistet.
+1. Wenn Sie auf **[!UICONTROL Ausführen]** klicken, werden die Komponenten aufgelistet.
 
 ## Zusätzliche Ressourcen {#further-reading}
 
