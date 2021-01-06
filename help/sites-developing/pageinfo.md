@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
 workflow-type: tm+mt
 source-wordcount: '969'
-ht-degree: 81%
+ht-degree: 82%
 
 ---
 
@@ -32,9 +32,9 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 >
 >Wenn Sie Seiteninformationen im JSON-Format benötigen, um Inhalte für Kanäle bereitzustellen, bei denen es sich nicht um herkömmliche AEM-Webseiten handelt, beispielsweise:
 >
->* Einzelseiten-Webanwendungen
+>* Single Page Applications
 >* native Mobile Apps
->* Andere Kanal und Berührungspunkte außerhalb von AEM
+>* Andere Kanäle und Touchpoints außerhalb von AEM
 
 >
 >
