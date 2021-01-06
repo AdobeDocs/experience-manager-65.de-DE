@@ -20,7 +20,7 @@ ht-degree: 77%
 
 # Einführung in die AEM Forms-App {#aem-forms-app}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Die AEM Forms-App ermöglicht die Synchronisierung adaptiver Formulare sowie von Formularen auf Mobilgeräten und Formularsätzen auf Mobilgeräten basierend auf Ihrem Server. Sie können Workflows definieren, die [formularzentrierte Workflows auf OSGi ](/help/forms/using/aem-forms-workflow.md) oder  Formular-Workflows auf JEE  sind. Angenommen, Sie leiten ein Bankgeschäft und nutzen AEM Forms für die Verwaltung von Kundenanträgen und - mitteilungen. Ihre Kunden füllen ein Formular aus und übermitteln es zur Prüfung. Wenn Sie das Formular auf Mobilgeräten aktivieren, können Ihre Kunden es in der AEM Forms-App ausfüllen. Sie können darüber hinaus den Arbeitsablauf für die Prüfung verwalten, indem Sie das Überprüfungsformular auf Mobilgeräten aktivieren. Ihr Außendienstmitarbeiter kann ein Mobilgerät zum Kundenstandort mitnehmen, die Details überprüfen und das Formular senden. Die AEM Forms-App wird mit dem AEM Forms-Server synchronisiert und ruft die Formulare ab, die für Mobilgeräte aktiviert wurden. Wenn die App offline ist, speichert sie die Daten lokal.
 
@@ -160,7 +160,7 @@ Die AEM Forms-App ist eine PhoneGap 5.0-basierte Anwendung, in der das Backbone-
 
 Die AEM Forms-App lässt sich ganz einfach an die Bedürfnisse Ihrer Organisation anpassen. Der Quellcode für die Anwendung wird zusammen mit AEM Forms bereitgestellt. Sie können Änderungen am Quellcode vornehmen und Ihre eigene benutzerdefinierte Mobile Workspace-Lösung erstellen. Sie können die App auch mit Ihrem eigenen Unternehmensschlüssel signieren.
 
-### Anpassen  {#customize}
+### Anpassen {#customize}
 
 Sie können Ihre App anpassen:
 
