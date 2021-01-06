@@ -20,7 +20,7 @@ ht-degree: 80%
 
 # Output Service{#output-service}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Der OSGi-Dienst Output ist eine Komponente der AEM Document Services. Der Output-Dienst unterstützt verschiedene Ausgabeformate und Ausgabeentwurfsfunktionen von AEM Forms Designer. Mit dem Output-Dienst können Sie XFA-Vorlagen und XML-Daten in verschiedene Druckformate konvertieren.
 
