@@ -21,8 +21,8 @@ Die Bereitstellung der zu AEM erstellten Pakete erfolgt durch das Adobe Content 
 >Weitere Informationen unter:
 >
 >* Der Artikel [Adobe Content Package Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html?lang=en#developer-tools) in der AEM als Cloud Service-Dokumentation zum Bereitstellen von AEM.
->* Der Artikel [AEM Projektstruktur](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in der AEM als Cloud Service-Dokumentation zur Strukturierung moderner AEM.
->* Die [AEM Projektarchiv](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html)-Dokumentation beschreibt, wie ein neues AEM mit dem Archetyp Beginn werden kann.
+>* Der Artikel [AEM Projektstruktur](https://docs.adobe.com/content/help/de/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in der AEM als Cloud Service-Dokumentation zur Strukturierung moderner AEM.
+>* Die [AEM Projektarchiv](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/developing/archetype/overview.html)-Dokumentation beschreibt, wie ein neues AEM mit dem Archetyp Beginn werden kann.
 
 >
 >
