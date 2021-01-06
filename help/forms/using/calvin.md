@@ -20,7 +20,7 @@ ht-degree: 82%
 
 # Automatisieren von Tests von adaptiven Formularen{#automate-testing-of-adaptive-forms}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Adaptive Formulare sind für die Interaktion mit Ihren Kunden von wesentlicher Bedeutung. Es ist wichtig, dass Sie Ihre adaptiven Formulare mit jeder Änderung testen, die Sie daran vornehmen, z. B. beim Rollout eines neuen Fixpack oder beim Ändern einer Regel im Formular. Allerdings kann das funktionelle Testen adaptiver Formen und jedes Feld in ihnen mühsam sein.
 
