@@ -33,7 +33,7 @@ Sie können bestimmte Einstellungen in der Konfigurationsdatei auf der Seite „
 
    **Assertionsschwellenwert (Sekunden):** Dieser Wert gibt einen Pufferzeitraum an, um den Verzögerungen aufgrund von Systemzeitdifferenzen zwischen AEM Forms-Anwendungsservern in einem Cluster versetzt werden sollen. AEM Forms datiert die Anmeldezeit eines Benutzers um den in dieser Eigenschaft angegebenen Zeitraum (in Sekunden) zurück. Gültig sind Werte von `0` bis `3600`. Der Standardwert ist `60`. Diese Einstellung aktualisiert den Eintragsschlüssel `SAML/Producer/assertionThresholdInSeconds` in der Konfigurationsdatei.
 
-   **Maximal zulässige Anzahl von Erneuerungen einer Assertion:** Die maximale Anzahl, wie oft die Sitzung eines Benutzers transparent erneuert werden kann, ohne dass eine erneute Anmeldung erforderlich wird. Gültig sind Werte von `0` bis `9999`. Der Wert `0` bedeutet, dass die Assertionen nicht erneuert werden. Der Standardwert ist 10. Diese Einstellung aktualisiert den Eintragsschlüssel `SAML/Producer/maxAssertionRenewalCount` in der Konfigurationsdatei.
+   **Maximal zulässige Anzahl von Erneuerungen einer Assertion:** Die maximale Anzahl, wie oft die Sitzung eines Benutzers transparent erneuert werden kann, ohne dass eine erneute Anmeldung erforderlich wird. Gültig sind Werte von `0` bis `9999`. Der Wert `0` bedeutet, dass die Assertionen nicht erneuert werden. Der Standardwert ist 10. Diese Einstellung aktualisiert den Eintragsschlüssel `SAML/Producer/maxAssertionRenewalCount` in der Konfigurationsdatei.
 
 1. (Optional) Ändern Sie folgende Ordnersynchronisierungsattribute:
 
