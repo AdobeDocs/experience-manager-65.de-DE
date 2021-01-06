@@ -3,7 +3,7 @@ title: '[!DNL Adobe Experience Manager] 6.5 Frühere Service Pack-Versionshinwei
 description: Versionshinweise für Service Packs  [!DNL Adobe Experience Manager] 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 9be522fd8354674ad40691e99b349a6fd7bff2b5
+source-git-commit: 544d99921a3b487bf8ae64111a8568f8f02fcd03
 workflow-type: tm+mt
 source-wordcount: '14953'
 ht-degree: 20%
@@ -66,7 +66,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in der Version 6.5.6.0.[!
    ![Screenshot zum Problem fehlender Menüs in der klassischen Benutzeroberfläche](assets/33949_missing_menu.png)
 
 * Ein [!DNL Content Fragment] kann nicht als `TemplatedResource` verwendet werden, da es in `ContentFragmentUsePojo` (NPR-33911) fehlschlägt.
-* Synchrone und asynchrone Verschiebungen können zu Fehlern führen, die auf gleichzeitige Übertragungen zurückzuführen sind. Der Seitenumbruch ist auf den synchronen Umstieg beschränkt. Es verhindert das gleichzeitige Verschieben von Seiten (NPR-33875).
+* Synchrone und asynchrone Verschiebungen können zu Fehlern führen, die auf gleichzeitige Übertragungen zurückzuführen sind. Seitenverschiebungsvorgänge sind nur auf asynchrones Verschieben beschränkt. Es verhindert das gleichzeitige Verschieben von Seiten (NPR-33875).
 * [!UICONTROL Der Vorgang &quot;] Veröffentlichung verwalten&quot;schlägt fehl, um Inhalte aus der Instanz &quot;Autor&quot;in &quot;Publish&quot;zu replizieren, und erzeugt einen JavaScript-Fehler (NPR-33872).
 * Wenn mehrere Seiten oder Assets ausgewählt sind, um Versionen zu erstellen, wird die neue Version nur für die zuletzt ausgewählte Seite oder das zuletzt ausgewählte Asset erstellt (NPR-33866).
 * Verschieben Sie eine Blueprint-Seite mit Live-Kopien in einen anderen Ordner. Beim Verschieben in den Originalordner schlägt der Verschieben-Vorgang ohne Fehler fehl (NPR-33864).
