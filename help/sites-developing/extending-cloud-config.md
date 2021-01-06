@@ -214,7 +214,7 @@ Diese Eigenschaft wird dann automatisch (mit dem `CryptoSupport`-Dienst) durch d
  </tbody>
 </table>
 
-### Nutzungsszenarien {#use-cases}
+### Anwendungsfälle {#use-cases}
 
 Diese Dienste werden standardmäßig bereitgestellt:
 
