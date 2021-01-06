@@ -319,7 +319,7 @@ Darüber hinaus können Tests über eine `count`-Eigenschaft verfügen, die die 
 java -jar toughday2.jar --host=localhost --add CreateAssetTreeTest weight=5 --add CreatePageTreeTest weight=10 count=100 --runmode=normal concurrency=20
 ```
 
- oder
+oder
 
 ```xml
 - add : CreateAssetTreeTest
