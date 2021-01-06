@@ -20,7 +20,7 @@ ht-degree: 76%
 
 # Dienstbenutzer in AEM{#service-users-in-aem}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Die Hauptmethode zum Abrufen einer Verwaltungssitzung oder eines Ressourcenauflösers in AEM war die Verwendung der von Sling bereitgestellten `SlingRepository.loginAdministrative()`- und `ResourceResolverFactory.getAdministrativeResourceResolver()`-Methoden.
 
