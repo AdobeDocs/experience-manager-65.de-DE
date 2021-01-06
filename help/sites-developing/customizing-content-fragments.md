@@ -80,7 +80,7 @@ Inhaltsfragmente mit strukturierten Inhalten (d. h. basierend auf einem Inhalts
 
 * Alle Inhalte werden im Knoten `jcr:content/data` des Assets gespeichert:
 
-   * Die Elementdaten werden im Master-Unterknoten gespeichert:
+   * Die Elementdaten werden im primären Unterknoten gespeichert:
       `jcr:content/data/master`
 
    * Varianten werden in einem Unterknoten gespeichert, der den Namen der Variante hat:
@@ -235,19 +235,19 @@ Inhaltsfragmente können mit folgenden Frameworks integriert werden:
 
       dieses kann bei Bedarf erweitert werden.
 
-   * Das entsprechende Schemaformular ist mit dem Fragment-Editor integriert.
+   * Das entsprechende Schemaformular ist mit dem Fragmenteditor integriert.
 
-## Server-seitige API für die Inhaltsfragmentverwaltung          {#the-content-fragment-management-api-server-side}
+## Server-seitige API für die Inhaltsfragmentverwaltung   {#the-content-fragment-management-api-server-side}
 
-Sie können die serverseitige API für den Zugriff auf Inhaltsfragmente verwenden, siehe:
+Sie können die Server-seitige API für den Zugriff auf Inhaltsfragmente verwenden, siehe:
 
 [com.adobe.cq.dam.cfm](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
 
 >[!CAUTION]
 >
->Es wird dringend empfohlen, die serverseitige API zu verwenden, anstatt direkt auf die Inhaltsstruktur zuzugreifen.
+>Es wird dringend empfohlen, die Server-seitige API zu verwenden, anstatt direkt auf die Inhaltsstruktur zuzugreifen.
 
-### Hauptschnittstellen          {#key-interfaces}
+### Hauptschnittstellen   {#key-interfaces}
 
 Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
@@ -356,7 +356,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
 
 
-### Anpassen mit adaptTo()          {#adapting-using-adaptto}
+### Anpassen mit adaptTo()   {#adapting-using-adaptto}
 
 Folgendes kann angepasst werden:
 
@@ -495,7 +495,7 @@ if (fragmentResource != null) {
 }
 ```
 
-### Beispiel: Erstellen eines neuen Inhaltsfragments          {#example-creating-a-new-content-fragment}
+### Beispiel: Erstellen eines neuen Inhaltsfragments   {#example-creating-a-new-content-fragment}
 
 Um ein neues Inhaltsfragment zu programmieren, verwenden Sie:
 
@@ -509,7 +509,7 @@ FragmentTemplate tpl = templateOrModelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
-### Beispiel: Angeben des Intervalls für das automatische Speichern          {#example-specifying-the-auto-save-interval}
+### Beispiel: Angeben des Intervalls für das automatische Speichern   {#example-specifying-the-auto-save-interval}
 
 Das Intervall für das automatische Speichern (gemessen in Sekunden) kann mit dem Konfigurations-Manager (ConfMgr) definiert werden:
 
