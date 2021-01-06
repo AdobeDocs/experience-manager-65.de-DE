@@ -20,7 +20,7 @@ ht-degree: 68%
 
 # Generierung eines Datensatzdokuments für adaptive Formulare{#generate-document-of-record-for-adaptive-forms}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Nachdem Ihre Kunden ein Formular übermittelt haben, möchten sie im Allgemeinen in gedruckter Form oder im Dokumentformat Aufzeichnungen über die eingegebenen Informationen behalten, um später darauf zurückzukommen. Dies wird als Datensatzdokument bezeichnet.
 
