@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
 workflow-type: tm+mt
 source-wordcount: '1080'
-ht-degree: 80%
+ht-degree: 83%
 
 ---
 
@@ -29,7 +29,7 @@ Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überl
 
 Je nach den von Ihnen bereits zu den Besuchern Ihrer Site erfassten Informationen sowie je nach Ihren angepeilten Zielen müssen Sie die erforderlichen Segmente und Strategien für Ihre zielgerichteten Inhalte festlegen.
 
-Diese Segmente werden dann verwendet, um einem Besucher gezielt bestimmte Inhalte bereitzustellen. Dieser Inhalt wird im Abschnitt [Kampagnen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) der Website verwaltet. Hier definierte Teaser-Seiten können als Teaser-Absätze auf jeder Seite einbezogen werden – und sie können bestimmen, auf welches Besuchersegment die spezialisierten Inhalte angewendet werden sollen.
+Diese Segmente werden dann verwendet, um einem Besucher gezielt bestimmte Inhalte anzuzeigen. Dieser Inhalt wird im Abschnitt [Kampagnen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) der Website verwaltet. Hier definierte Teaser-Seiten können als Teaser-Absätze auf jeder Seite einbezogen werden – und sie können bestimmen, auf welches Besuchersegment die spezialisierten Inhalte angewendet werden sollen.
 
 Mit AEM können Sie Segmente, Teaser und Kampagnen auf einfache Weise erstellen und aktualisieren. Außerdem können Sie damit die Ergebnisse Ihrer Definitionen überprüfen.
 
@@ -54,11 +54,11 @@ Die folgenden Logik-Container sind standardmäßig verfügbar und ermöglichen e
  <tbody>
   <tr>
    <td> UND-Container<br /> </td>
-   <td> Der boolesche AND-Operator.<br /> </td>
+   <td> Der boolesche UND-Operator.<br /> </td>
   </tr>
   <tr>
    <td> ODER-Container<br /> </td>
-   <td> Der boolesche OR-Operator.</td>
+   <td> Der boolesche ODER-Operator.</td>
   </tr>
  </tbody>
 </table>
@@ -90,7 +90,7 @@ Die folgenden Segmenteigenschaften sind standardmäßig verfügbar und können v
    <td>Zu evaluierender JavaScript-Ausdruck.<br /> </td>
   </tr>
   <tr>
-   <td> Segment-Verweis <br /> </td>
+   <td> Segment-Referenz <br /> </td>
    <td>Verweis auf eine andere Segmentdefinition.<br /> </td>
   </tr>
   <tr>
@@ -114,7 +114,7 @@ Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird dieses Segment au
 
 >[!CAUTION]
 >
->Der Segment-Editor prüft nicht auf Zirkelbezüge. Beispiel: Segment A verweist auf ein anderes Segment B, das wiederum auf Segment A verweist. Sie müssen sicherstellen, dass Ihre Segmente keine kreisförmigen Verweise enthalten.
+>Der Segmenteditor prüft nicht auf Zirkelbezüge. Ein Beispiel hierfür wäre, wenn Segment A auf ein anderes Segment B verweist, das wiederum auf Segment A verweist. Sie müssen sicherstellen, dass Ihre Segmente keine Zirkelbezüge enthalten.
 
 >[!NOTE]
 >
@@ -145,7 +145,7 @@ So legen Sie Ihr neues Segment fest:
 
 1. Fügen Sie bei Bedarf weitere Eigenschaften hinzu. Sie können boolesche Ausdrücke anhand der **UND-Container-** und **ODER-Containerkomponenten** hinzufügen, die unter **Segmentlogik** zu finden sind. Mit dem Segment-Editor können Sie nicht mehr benötigte Eigenschaften oder Container löschen oder diese an neue Positionen innerhalb der Anweisung ziehen.
 
-### Verwenden von UND- und ODER-Containern  {#using-and-and-or-containers}
+### Verwenden von UND- und ODER-Containern   {#using-and-and-or-containers}
 
 Sie können in AEM komplexe Segmente erstellen. Es ist hilfreich, sich einige grundlegende Punkte bewusst zu machen:
 
@@ -164,7 +164,7 @@ Da der Hauptoperator „ODER“ lautet, müssen Sie mit einem **ODER-Container**
 
 ![](assets/screen_shot_2012-02-02at105145am.png)
 
-## Testen der Anwendung eines Segments  {#testing-the-application-of-a-segment}
+## Testen der Anwendung eines Segments   {#testing-the-application-of-a-segment}
 
 Sobald das Segment definiert wurde, können die potenziellen Ergebnisse mithilfe des **[ClientContext](/help/sites-administering/client-context.md)** getestet werden:
 
@@ -191,6 +191,6 @@ In der QuickInfo zum Teaser-Absatz werden die angewendeten Segmente angezeigt so
 
 ![](assets/chlimage_1-47.png)
 
-### Verwenden Ihres Segments  {#using-your-segment}
+### Verwenden Ihres Segments   {#using-your-segment}
 
 Die Segmente werden aktuell innerhalb von [Kampagnen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) verwendet. Sie werden zur Steuerung des tatsächlichen Inhalts verwendet, der spezifischen Zielgruppen angezeigt wird. Weitere Informationen finden Sie unter [Segmente](/help/sites-authoring/segmentation-overview.md).
