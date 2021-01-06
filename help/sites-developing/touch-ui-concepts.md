@@ -34,7 +34,7 @@ Die Touch-optimierte Benutzeroberfläche umfasst Folgendes:
    * Enthält einen Link zu „Globale Navigation“.
    * Enthält einen Link zu anderen generischen Aktionen, z. B. „Suchen“, „Hilfe“, „Marketing Cloud-Lösungen“, „Benachrichtigungen“ und „Benutzereinstellungen“.
 * Leiste auf der linken Seite (Anzeige bei Bedarf, kann ausgeblendet werden):
-   * Zeitleistensegment
+   * Zeitleiste
    * Verweise
    * Filter
 * Kontextabhängige Navigationskopfzeile:
