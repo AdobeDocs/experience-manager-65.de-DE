@@ -73,7 +73,7 @@ Zur Verwaltung und Bearbeitung Ihrer Website-Inhalte wurden einige Best Practice
    <td>Beschreibt, wie Sie die Seiteninhaltserstellung für die Touch-optimierte Benutzeroberfläche erweitern.</td>
   </tr>
   <tr>
-   <td>Workflows  </td>
+   <td>Workflows</td>
    <td><a href="/help/sites-developing/workflows-best-practices.md">Entwickeln und Erweitern von Workflows</a></td>
    <td><p>Mit Workflows können Sie Adobe Experience Manager (AEM)-Aktivitäten automatisieren und einen größeren Umfang der Verarbeitung repräsentieren, die in einer AEM-Umgebung stattfindet. Daher empfiehlt es sich, die Workflow-Implementierungen sorgfältig zu planen.</p> </td>
   </tr>
@@ -97,7 +97,7 @@ HTML Template Language (HTL) ist ein neues HTML-Vorlagensystem, das mit AEM 6.0
 
 |  |  |  |
 |---|---|---|
-| HTL-Überblick | [HTL-Überblick und -Syntax](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html) | In diesem Dokument wird beschrieben, was HTL ist und wie der Umstieg auf HTL gelingt. Es enthält Beispiele eines Projekts, Syntax, Ausdrücke und Aussagen. |
+| HTL-Überblick | [HTL-Überblick und -Syntax](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html) | In diesem Dokument wird beschrieben, was HTL ist und wie der Umstieg auf HTL gelingt. Es enthält Beispiele eines Projekts, Syntax, Ausdrücke und Aussagen. |
 | Verwenden von APIs in Java | [HTL-Java-Anwendungs-API](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | Mit der Java-Anwendungs-API von HTL kann eine HTL-Datei auf Hilfsmethoden in einer benutzerdefinierten Java-Klasse zugreifen. |
 
 >[!NOTE]
