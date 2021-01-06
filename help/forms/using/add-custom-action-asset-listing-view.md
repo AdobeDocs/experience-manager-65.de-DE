@@ -20,7 +20,7 @@ ht-degree: 62%
 
 # Hinzufügen benutzerdefinierter Aktionen zur Ansicht „Asset-Auflistung“{#add-custom-action-to-the-asset-listing-view}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Correspondence Management Solution ermöglicht es Ihnen, benutzerdefinierte Aktionen der Benutzeroberfläche „Assets verwalten“ hinzuzufügen.
 
