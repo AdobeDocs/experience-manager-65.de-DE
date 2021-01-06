@@ -72,7 +72,7 @@ Der[ abgesicherte Modus](../../forms/using/get-xdp-pdf-documents-aem.md) ist sta
 
    * **Server URL**: AEM Forms-Server URL.
 
-   * **HTTP-Portnummer**: AEM-Server-Port. Der Standardwert ist 4502.
+   * **HTTP-Portnummer**: AEM-Server-Port. Der Standardwert ist 4502. 
    * **HTML-Vorschauen-Kontext:** Pfad des Profils zum Rendern von XFA-Formularen. Zur Vorschau des Formulars in Designer werden die folgenden Standard-Profile verwendet. Sie können außerdem den Pfad zu einem benutzerdefinierten Profil angeben.
 
       * `/content/xfaforms/profiles/default.html` (AEM Forms on OSGi)
