@@ -192,7 +192,7 @@ Mobilgerätegruppen ermöglichen die Segmentierung von Mobilgeräten basierend a
 
 Gerätegruppen werden als Inhaltsseiten unter `/etc/mobile/devices` definiert und verwenden die Vorlage **Gruppe mobiler Geräte**. Die Gerätegruppenvorlage dient als Konfigurationsvorlage für Gerätegruppendefinitionen in Form von Inhaltsseiten. Die wichtigsten Eigenschaften sind:
 
-* Ort: `/libs/wcm/mobile/templates/devicegroup`
+* Standort: `/libs/wcm/mobile/templates/devicegroup`
 * Zulässiger Pfad: `/etc/mobile/groups/*`
 * Seitenkomponente: `wcm/mobile/components/devicegroup`
 
