@@ -120,7 +120,7 @@ Filtern wird nicht unterstützt.
 
 * **lowerBound**
 
-   `2014-10-01`
+    Untere Datumsgrenze, auf welche die Eigenschaft überprüft werden soll, z. B. `2014-10-01`
 
 * **lowerOperation**
 
@@ -355,7 +355,7 @@ Unterstützt die Facettenextraktion. Stellt für jeden eindeutigen Eigenschaftsw
 
    relativer Pfad zur Eigenschaft, z. B. `jcr:title`
 
-* **Wert**
+* **value**
 
     Wert, auf den die Eigenschaft überprüft werden soll. Verarbeitet Umwandlungen anhand des JCR-Eigenschaftstyps als Zeichenfolgen.
 
