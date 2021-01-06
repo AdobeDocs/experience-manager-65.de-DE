@@ -735,7 +735,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
    <td>Die Festlegung des Werts zur Laufzeit wird nicht unterstützt</td>
   </tr>
   <tr>
-   <td>Wert</td>
+   <td>value</td>
    <td>Das value-Objekt umfasst eine Dateninhaltseinheit.<br /> </td>
    <td> </td>
   </tr>
