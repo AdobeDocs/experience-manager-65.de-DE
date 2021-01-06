@@ -19,7 +19,7 @@ ht-degree: 84%
 
 # Formularservice {#forms-service}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Der Forms-Dienst ermöglicht das Erstellen interaktiver Clientanwendungen zur Datenerfassung, die in Designer erstellte Formulare überprüfen, verarbeiten, transformieren und übermitteln. Mit dem Forms-Dienst kann jeder von Ihnen entwickelte Formularentwurf als PDF-Dokument wiedergegeben werden.
 
