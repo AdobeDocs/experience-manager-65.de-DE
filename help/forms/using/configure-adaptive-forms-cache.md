@@ -26,7 +26,7 @@ Eine Cache ist ein Vorgang, um Datenzugriffzeiten zu verkürzen, die Wartezeit z
 
 1. Gehen Sie zu AEM Web Console Configuration Manager unter `https://[server]:[port]/system/console/configMgr`.
 1. Klicken Sie auf **[!UICONTROL Konfiguration für adaptive Formulare und interaktiver Kommunikationswebkanal]**, um die Konfigurationswerte zu bearbeiten.
-1. Geben Sie im Dialogfeld [!UICONTROL Konfigurationswerte bearbeiten] die maximale Anzahl von Formularen oder Dokumenten an, die eine Instanz des AEM [!DNL Forms]-Servers im Feld **[!UICONTROL Anzahl der adaptiven Forms]** zwischenspeichern kann. Der Standardwert ist 100.
+1. Geben Sie im Dialogfeld [!UICONTROL Konfigurationswerte bearbeiten] die maximale Anzahl von Formularen oder Dokumenten an, die eine Instanz des AEM [!DNL Forms]-Servers im Feld **[!UICONTROL Anzahl der adaptiven Forms]** zwischenspeichern kann. Der Standardwert ist 100. 
 
    >[!NOTE]
    >
