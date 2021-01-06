@@ -473,7 +473,7 @@ Es weist folgende Attribute auf:
 
 * Name des Parameters, der hinzugefügt werden soll
 
-**Wert**
+**value**
 
 * Wert des Parameters, der hinzugefügt werden soll
 
