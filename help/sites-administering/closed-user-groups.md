@@ -49,7 +49,7 @@ Die neue Implementierung unterscheidet zwischen Autorisierungselementen und Auth
 
 Ebenso kann eine bestimmte Struktur mit einer Authentifizierungsanforderung versehen werden, ohne dass die effektive Berechtigungseinstellung geändert werden muss. Die Kombinationen und die Ergebnisse werden im Abschnitt [Kombinieren von CUG-Richtlinien und der Authentifizierungspflicht](/help/sites-administering/closed-user-groups.md#combining-cug-policies-and-the-authentication-requirement) aufgeführt.
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 ### Autorisierung: Beschränken des Lesezugriffs {#authorization-restricting-read-access}
 
