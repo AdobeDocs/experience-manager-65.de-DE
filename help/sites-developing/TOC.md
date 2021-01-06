@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
 workflow-type: tm+mt
 source-wordcount: '835'
-ht-degree: 85%
+ht-degree: 87%
 
 ---
 
@@ -82,7 +82,7 @@ ht-degree: 85%
    + [JSON-Exporter für Content Services](json-exporter.md)
    + [Aktivieren eines JSON-Exports für eine Komponente](json-exporter-components.md)
    + [Bildeditor](image-editor.md)
-   + [Decoration-Tag](decoration-tag.md)
+   + [Decoration-Tag ](decoration-tag.md)
    + [Verwenden von Bedingungen zum Ausblenden](hide-conditions.md)
    + [Konfigurieren mehrerer Editoren für Bearbeitung im Kontext](multiple-inplace-editors.md)
    + [Entwicklermodus](developer-mode.md)
@@ -113,10 +113,10 @@ ht-degree: 85%
       + [Entwickeln von SPAs für AEM](spa-architecture.md)
       + [SPA-Blueprint](spa-blueprint.md)
       + [SPA-Seitenkomponente](spa-page-component.md)
-      + [Zuordnung dynamischer Modelle zu Komponenten für SPA](spa-dynamic-model-to-component-mapping.md)
-      + [Routing SPA](spa-routing.md)
+      + [Zuordnung dynamischer Modelle zu Komponenten für SPAs](spa-dynamic-model-to-component-mapping.md)
+      + [SPA-Modell-Routing](spa-routing.md)
       + [SPA- und Adobe Experience Platform Launch-Integration](spa-launch.md)
-      + [SPA und serverseitiges Rendering](spa-ssr.md)
+      + [Single Page Applications (SPAs) und Server-seitiges Rendering](spa-ssr.md)
       + [SPA-Referenzmaterial](spa-reference-materials.md)
    + [HTTP-API](/help/assets/mac-api-assets.md)
    + [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md)
@@ -140,10 +140,10 @@ ht-degree: 85%
 + Personalisierung {#personlization}
    + [ContextHub](contexthub.md)
    + [Context Hub konfigurieren](ch-configuring.md)
-   + [Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher](ch-adding.md)
+   + [Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher ](ch-adding.md)
    + [Erweitern von ContextHub](ch-extend.md)
    + [Beispiele für ContextHub-Store-Kandidaten ](ch-samplestores.md)
-   + [Mustertypen von ContextHub-Benutzeroberflächenmodulen](ch-samplemodules.md)
+   + [Mustertypen von ContextHub-UI-Modulen ](ch-samplemodules.md)
    + [ContextHub-Diagnosen](ch-diagnostics.md)
    + [Entwicklung für zielgerichtete Inhalte](target.md)
    + [Referenz zur ContextHub-JavaScript-API](contexthub-api.md)
