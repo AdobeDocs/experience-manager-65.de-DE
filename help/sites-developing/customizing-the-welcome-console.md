@@ -90,7 +90,7 @@ Drei Abschnitte werden standardmäßig bereitgestellt (leicht getrennt):
    <td><code>/libs/cq/core/content/welcome/resources/cloudservices</code></td>
   </tr>
   <tr>
-   <td> Workflows  </td>
+   <td> Workflows</td>
    <td><code>/libs/cq/core/content/welcome/resources/workflows</code></td>
   </tr>
   <tr>
