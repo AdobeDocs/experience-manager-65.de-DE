@@ -841,7 +841,7 @@ Eine einfache Möglichkeit, einen eigenen angepassten Schritt zu erstellen, best
 
    * `cq:icon`
 
-      Wird verwendet, um ein [Korallensymbol](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) für den Schritt anzugeben.
+      Wird verwendet, um ein [Korallensymbol](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) für den Schritt anzugeben.
 
    * `componentGroup`
 
