@@ -45,7 +45,7 @@ Unterschiedliche Rollen können bei Tests und den verschiedenen Phasen der Proje
     <ul>
      <li><p>Bietet dem Kunden Erfahrung mit dem zu entwickelnden Projekt.</p> </li>
      <li><p>Stellt frühzeitiges Feedback des Kunden bereit.</p> </li>
-     <li><p>Benutzer geben oft ihre Anforderungen an frühere Erfahrungen an; Die möglichst frühzeitige Einbeziehung der Kunden in die Tests steigert ihre Erfahrung mit dem neuen Projekt in Bezug auf <i>praktische </i> Erfahrung.</p> </li>
+     <li><p>Benutzer geben ihre Anforderungen oft an frühere Erfahrungen an; Die möglichst frühzeitige Einbeziehung der Kunden in die Tests steigert ihre Erfahrung mit dem neuen Projekt in Bezug auf <i>praktische </i> Erfahrung.</p> </li>
     </ul> </td>
    <td><p>Auch hier ist eine frühzeitige Einbindung gut, obwohl jede Version, die die Kunden verwenden, stabil sein sollte, mit angemessener Funktionalität.</p> <p>Erste Impressionen sind immer wichtig.</p> </td>
   </tr>
