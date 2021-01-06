@@ -105,7 +105,7 @@ Der Output-Dienst speichert Formularentwürfe immer auf dem Datenträger zwische
 
 **Cachegröße der Vorlagenkonfiguration:** Die maximale Anzahl von Vorlagenkonfigurationsobjekten, die im Arbeitsspeicher verbleiben sollen. Der Standardwert ist 100. Es wird empfohlen, diesen Wert größer gleich dem Wert für die Vorlagencache-Größe festzulegen. Diese Einstellung hat keine Auswirkungen auf den Datenträgercache.
 
-**Vorlagencache-Größe:** Die maximale Anzahl von Vorlageninhaltsobjekten, die im Arbeitsspeicher belassen werden sollen. Der Standardwert ist 100. Diese Einstellung hat keine Auswirkungen auf den Datenträgercache.
+**Vorlagencache-Größe:** Die maximale Anzahl von Vorlageninhaltsobjekten, die im Arbeitsspeicher belassen werden sollen. Der Standardwert ist 100. Diese Einstellung hat keine Auswirkungen auf den Datenträgercache.
 
 **Aktiviert:** Standardmäßig ist dieses Kontrollkästchen aktiviert, d. h., die Formularvorlagen werden im Arbeitsspeicher zwischengespeichert. Wenn diese Option nicht ausgewählt ist, werden die Formularvorlagen nur auf dem Datenträger zwischengespeichert.
 
