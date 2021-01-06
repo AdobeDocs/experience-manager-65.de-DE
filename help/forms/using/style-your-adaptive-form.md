@@ -181,7 +181,7 @@ Sie können mehrere Komponenten in einem adaptiven Formular verwenden, um Daten 
    <table> 
     <tbody> 
      <tr> 
-      <td><b>Accordion</b></td> 
+      <td><b>Akkordeon</b></td> 
       <td><b>Eigenschaft</b></td> 
       <td><b>Wert</b></td> 
      </tr> 
