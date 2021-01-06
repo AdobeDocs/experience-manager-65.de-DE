@@ -422,7 +422,7 @@ Der Schritt &quot;Drucken generieren&quot;verfügt über die folgenden Eigenscha
 
    * **So verwenden Sie einen benutzerspezifischen Wert**: Geben Sie den Gebietsschema-Code in das Feld &quot;Literal&quot;ein oder wählen Sie eine Zeichenfolgenvariable mit dem Gebietsschema-Code. Eine vollständige Liste der unterstützten Gebietsschemas finden Sie unter http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
 
-* **[!UICONTROL Kopien]**: Ein ganzzahliger Wert, der die Anzahl der Exemplare angibt, die für die Ausgabe generiert werden sollen. Der Standardwert ist 1.
+* **[!UICONTROL Kopien]**: Ein ganzzahliger Wert, der die Anzahl der Exemplare angibt, die für die Ausgabe generiert werden sollen. Der Standardwert ist 1. 
 
 * **[!UICONTROL Duplexdruck]**: Ein Seitenumbruchwert, der angibt, ob der zweiseitige oder einseitige Druck verwendet werden soll. Drucker, die PostScript und PCL unterstützen, verwenden diesen Wert. Wenn Sie einen Literalwert angeben, wählen Sie einen der folgenden Werte:
    * **[!UICONTROL Duplex, lange Kante]**: Verwenden Sie den zweiseitigen Druck und den zweiseitigen Druck unter Verwendung von Seitenumbrüchen.
