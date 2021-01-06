@@ -26,7 +26,7 @@ In dieser Anleitung erfahren Sie, wie Sie Eclipse zur Entwicklung von AEM-basier
 >
 >Adobe stellt nun die [AEM-Entwicklungs-Tools für Eclipse](/help/sites-developing/aem-eclipse.md) bereit, die Sie dabei unterstützen, AEM-Lösungen mit Eclipse zu entwickeln.
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Die folgenden Schritte sind erforderlich, um mit der AEM-Entwicklung unter Eclipse zu beginnen.
 
