@@ -21,7 +21,7 @@ ht-degree: 87%
 
 # Empfohlene Vorgehensweisen für HTML5-Formulare{#best-practices-for-html-forms}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 AEM Forms bieten eine Komponente, die HTML5-Formulare genannt wird. Auf diese Weise können Sie vorhandene XFA-basierte PDF-Formulare (XDP-Dateien) im HTML5-Format rendern. Dieses Dokument enthält Richtlinien und Empfehlungen, um die Ladezeit zu verkürzen und die Leistung von HTML5-Formularen auf mobilen Geräten zu verbessern.
 
