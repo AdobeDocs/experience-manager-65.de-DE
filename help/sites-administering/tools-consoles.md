@@ -68,7 +68,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   </tr>
   <tr>
    <td> </td>
-   <td>Komponenten</td>
+   <td>Komponenten </td>
   </tr>
   <tr>
    <td> </td>
@@ -328,7 +328,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   </tr>
   <tr>
    <td> </td>
-   <td>Speicherkonfiguration</td>
+   <td>Speicher  Konfiguration</td>
   </tr>
   <tr>
    <td> </td>
