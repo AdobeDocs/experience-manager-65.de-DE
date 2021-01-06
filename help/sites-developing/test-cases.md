@@ -23,7 +23,7 @@ ht-degree: 77%
 
 Ihre Testfälle sollten auf Folgendem basieren:
 
-**Nutzungsszenarien**
+**Anwendungsfälle**
 
 * Diese definieren die erforderliche Funktionalität in Bezug auf die Interaktion zwischen Akteuren (Rollen, die bestimmte Aktionen auslösen) und dem System.
 * Die Nutzungsszenarios sollten vom Kunden definiert werden.
