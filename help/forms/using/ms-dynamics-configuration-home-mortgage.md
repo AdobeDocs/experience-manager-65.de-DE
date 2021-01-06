@@ -20,7 +20,7 @@ ht-degree: 75%
 
 In diesem Dokument erfahren Sie, wie Sie die Microsoft® Dynamics 365-Dienste über adaptive Formularen für den Hypotheken-Arbeitsablauf der We.Finance-Referenzwebsite nutzen.
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Microsoft® Dynamics 365 ist eine Software für Customer Relationship Management (CRM) und Enterprise Resource Planning (ERP), die Unternehmenslösungen für die Erstellung und Verwaltung von Kundenkonten, Kontakten, Interessenten, Chancen und Fällen bietet.
 
