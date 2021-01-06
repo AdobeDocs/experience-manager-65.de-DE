@@ -138,8 +138,8 @@ Sie können die Konsolen auch anpassen:
 Es gibt zwar nicht direkt mit einer Migration auf die Touch-Benutzeroberfläche zu tun, aber es lohnt sich, gleichzeitig einige Probleme zu prüfen, da diese ebenfalls empfohlen werden:
 
 * [Vorlagen](/help/sites-developing/templates.md)  -  [bearbeitbare Vorlagen](/help/sites-developing/page-templates-editable.md)
-* [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
-* [HTL](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)
+* [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html)
+* [HTL](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html)
 
 >[!NOTE]
 >
