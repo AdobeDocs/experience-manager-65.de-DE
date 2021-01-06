@@ -1,6 +1,6 @@
 ---
-title: Identitätsmanagement
-seo-title: Identitätsmanagement
+title: Identitäts-Management
+seo-title: Identitäts-Management
 description: Erfahren Sie mehr über Identitätsverwaltung in AEM.
 seo-description: Erfahren Sie mehr über Identitätsverwaltung in AEM.
 uuid: d9b83cd7-c47a-41a5-baa4-bbf385d13bfd
@@ -19,7 +19,7 @@ ht-degree: 79%
 ---
 
 
-# Identitätsmanagement{#identity-management}
+# Identitäts-Management{#identity-management}
 
 Die einzelnen Besucher Ihrer Website können nur identifiziert werden, wenn Sie ihnen die Möglichkeit zum Anmelden bieten. Es gibt verschiedene Gründe, warum Sie eine Anmeldemöglichkeit bieten sollten:
 
