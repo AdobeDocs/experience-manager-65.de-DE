@@ -135,7 +135,7 @@ In diesem Abschnitt werden Verfahren beschrieben, die Sie während des AEM Forms
    <td><p>Platzieren Sie AEM Forms on JEE auf einer dedizierten Festplattenpartition. Die Festplattenaufteilung ist ein Prozess, bei dem bestimmte Daten auf dem Server auf separaten physischen Festplatten verwaltet werden, um die Sicherheit zu erhöhen. Durch eine solche Datenanordnung lässt sich das Risiko von Directory Traversal-Angriffen verringern. Planen Sie die Erstellung einer von der Systempartition getrennten Partition, auf der Sie das AEM Forms on JEE-Inhaltsverzeichnis installieren können. (Unter Windows enthält die Systempartition den Ordner „system32“, das auch als Boot-Partition bezeichnet wird.)</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Komponenten</p> </td> 
+   <td><p>Komponenten </p> </td> 
    <td><p>Prüfen Sie die vorhandenen Dienste und deaktivieren oder deinstallieren Sie nicht erforderliche Dienste. Installieren Sie keine unnötigen Komponenten und Dienste.</p> <p>Die Standardinstallation eines Anwendungsservers kann Dienste beinhalten, die Sie nicht benötigen. Sie sollten alle unnötigen Dienste vor der Bereitstellung deaktivieren, um die Einstiegspunkte für Angriffe zu minimieren. Unter JBoss können Sie beispielsweise nicht benötigte Dienste in der Deskriptordatei „META-INF/jboss-service.xml“ durch das Einfügen von Kommentarzeichen deaktivieren.</p> </td> 
   </tr> 
   <tr> 
