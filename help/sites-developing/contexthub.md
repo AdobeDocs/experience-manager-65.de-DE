@@ -38,7 +38,7 @@ ContextHub speichert persistente Kontextdaten auf dem Client. Mit der ContextHub
 
 Jeder ContextHub-Speicher ist eine Instanz eines vordefinierten Speichertyps:
 
-* [ContextHub stellt verschiedene Beispielspeicherarten bereit](/help/sites-developing/ch-samplestores.md).
+* ContextHub stellt verschiedene [Beispielspeicherarten bereit](/help/sites-developing/ch-samplestores.md).
 * Verwenden Sie AEM-Konsolen zum [Erstellen von Speichern](ch-configuring.md#creating-a-contexthub-store).
 * Entwickler können [anwenderdefinierte Speichertypen erstellen](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).
 * Entwickler können auf die [gespeicherten Daten](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) über JavaScript zugreifen.
