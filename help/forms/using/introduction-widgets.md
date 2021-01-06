@@ -44,7 +44,7 @@ Im Folgenden die globalen Optionen. Diese Optionen sind für jedes Feld verfügb
    <td>Ein Bezeichner, mit dem dieses Objekt oder Ereignis in Skriptausdrücken angegeben wird. Diese Eigenschaft gibt beispielsweise den Namen der Host-Anwendung an.</td>
   </tr>
   <tr>
-   <td>Wert</td>
+   <td>value</td>
    <td>Tatsächlicher Wert des Felds. </td>
   </tr>
   <tr>
