@@ -75,13 +75,13 @@ Damit der Arbeitsablauf für Formulare eingehende E-Mail-Nachrichten von Benutze
 
 **Cron-Ausdruck:** Der Cron-Ausdruck, der von Quarz zum Planen der Abfrage des Eingabeordners verwendet wird.
 
-**Wiederholungsintervall:** Gibt an, wie oft die Ordnerabfrage wiederholt wird. Der Standardwert für das Wiederholungsintervall in Sekunden, wenn in der Endpunktkonfiguration kein Wert angegeben ist. Der Standardwert ist 10. Dieser Wert kann nicht kleiner als „10“ sein.
+**Wiederholungsintervall:** Gibt an, wie oft die Ordnerabfrage wiederholt wird. Der Standardwert für das Wiederholungsintervall in Sekunden, wenn in der Endpunktkonfiguration kein Wert angegeben ist. Der Standardwert ist 10. Dieser Wert kann nicht kleiner als „10“ sein.
 
 **Anzahl der Wiederholungen:** Gibt an, wie oft der Eingabeordner abgerufen wird. Der Standardwert für die Anzahl der Wiederholungen, der verwendet wird, wenn in der Endpunktkonfiguration kein Wert angegeben ist. Ein Wert von „-1“ bedeutet uneingeschränktes Überprüfen des Ordners („unendlich“). Der Standardwert ist -1.
 
 **Verzögerung bei Beginn des Auftrags:** Der Standardwert in Sekunden, bis der Beginn den Endpunkt überprüft. Der Standardwert ist 0.
 
-**Stapelgröße:** Die Anzahl der E-Mails, die der Empfänger pro Überprüfung verarbeitet, um eine optimale Leistung zu erzielen. Der Wert „-1“ bedeutet alle E-Mails. Der Standardwert ist 2.
+**Stapelgröße:** Die Anzahl der E-Mails, die der Empfänger pro Überprüfung verarbeitet, um eine optimale Leistung zu erzielen. Der Wert „-1“ bedeutet alle E-Mails. Der Standardwert ist 2. 
 
 **Asynchron:** Identifiziert den Aufruftyp als asynchron oder synchron. Transiente und synchrone Prozesse können nur synchron aufgerufen werden. Der Standardwert ist „asynchron“.
 
@@ -109,7 +109,7 @@ Damit der Arbeitsablauf für Formulare eingehende E-Mail-Nachrichten von Benutze
 
 **SMTP-Host:** Der Hostname des E-Mail-Servers, mit dem der E-Mail-Anbieter Ergebnisse und Fehlermeldungen sendet. Zum Beispiel mail.corp.example.com.
 
-**SMTP-Anschluss:** Der Anschluss, über den eine Verbindung zum E-Mail-Server hergestellt wird. Der Standardwert ist 25.
+**SMTP-Anschluss:** Der Anschluss, über den eine Verbindung zum E-Mail-Server hergestellt wird. Der Standardwert ist 25. 
 
 **SMTP-Benutzer:** Das Benutzerkonto, das vom E-Mail-Anbieter verwendet werden soll, wenn E-Mail-Nachrichten zu Ergebnissen und Fehlern gesendet werden.
 
@@ -157,7 +157,7 @@ Mithilfe der folgenden Einstellungen können Sie einen E-Mail-Endpunkt konfiguri
 
 **Verzögern Sie den Beginn des Auftrags:** Die Wartezeit bis zum Scannen nach den Beginn der Planung.
 
-**Stapelgröße:** Die Anzahl der E-Mails, die der Empfänger pro Überprüfung verarbeitet, um eine optimale Leistung zu erzielen. Der Wert „-1“ bedeutet alle E-Mails. Der Standardwert ist 2.
+**Stapelgröße:** Die Anzahl der E-Mails, die der Empfänger pro Überprüfung verarbeitet, um eine optimale Leistung zu erzielen. Der Wert „-1“ bedeutet alle E-Mails. Der Standardwert ist 2. 
 
 **Benutzername:** Eine obligatorische Einstellung, bei der es sich um den Benutzernamen handelt, der beim Aufrufen eines E-Mail-Zielgruppe-Dienstes verwendet wird. Der Standardwert ist „SuperAdmin“.
 
