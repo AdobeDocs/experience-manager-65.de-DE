@@ -23,7 +23,7 @@ ht-degree: 72%
 
 In diesem Abschnitt ist beschrieben, wie Sie den [Query Builder](/help/sites-developing/querybuilder-api.md) durch Implementieren eines benutzerdefinierten Prädikat-Auswerters erweitern können.
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Mit dem [Query Builder](/help/sites-developing/querybuilder-api.md) können Sie problemlos das Inhalts-Repository abfragen. Im Lieferumfang sind eine Reihe Prädikat-Auswerter enthalten, die Ihnen den Umgang mit Daten erleichtern.
 
