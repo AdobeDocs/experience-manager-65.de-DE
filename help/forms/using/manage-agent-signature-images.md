@@ -20,7 +20,7 @@ ht-degree: 71%
 
 # Verwalten von Agentenunterschriftbildern{#manage-agent-signature-images}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 In der Correspondence Management können Sie ein Bild für die Agentunterzeichnung in Briefen verwenden. Nachdem Sie das Agentsignaturbild beim Erstellen eines Briefs eingerichtet haben, können Sie das Agentsignaturbild im Brief als Signatur des Absenderagenten wiedergeben.
 
