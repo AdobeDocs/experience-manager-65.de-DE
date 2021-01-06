@@ -25,7 +25,7 @@ Wenn Sie neue Komponenten entwickeln, müssen Sie die Grundlagen ihrer Struktur 
 
 Dazu müssen Sie den theoretischen Hintergrund kennenlernen und sich mit den vielfältigen Komponenten-Implementierungen in einer standardmäßigen AEM-Instanz vertraut machen. Der zuletzt genannte Ansatz wird ein Stück weit durch die Tatsache erschwert, dass AEM zwar standardmäßig eine neue, moderne Touch-optimierte Benutzeroberfläche einsetzt, die klassische Benutzeroberfläche aber nach wie vor unterstützt.
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 In diesem Abschnitt werden zentrale Konzepte und Schwierigkeiten erläutert. Er bietet so einen guten Einstieg in die Entwicklung eigener Komponenten.
 
@@ -68,7 +68,7 @@ Daher werden auf dieser Seite die Grundlagen und die Erkennungsmerkmale beider V
 
 Es empfiehlt sich, den für Markup und Rendering zuständigen Code getrennt von dem Code zu halten, der die Logik zur Auswahl des Komponenteninhalts enthält.
 
-Dieser Ansatz wird durch [HTL](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html) unterstützt, eine Vorlagensprache, die dazu dient sicherzustellen, dass eine echte Programmiersprache für die Definition der zugrunde liegenden Geschäftslogik genutzt wird. Diese (optionale) Logik wird von HTL über einen speziellen Befehl aufgerufen. Dieser Mechanismus kennzeichnet den Code, der für eine bestimmte Ansicht aufgerufen wird, und lässt bei Bedarf eine spezifische Logik für unterschiedliche Ansichten derselben Komponente zu.
+Dieser Ansatz wird durch [HTL](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html) unterstützt, eine Vorlagensprache, die dazu dient sicherzustellen, dass eine echte Programmiersprache für die Definition der zugrunde liegenden Geschäftslogik genutzt wird. Diese (optionale) Logik wird von HTL über einen speziellen Befehl aufgerufen. Dieser Mechanismus kennzeichnet den Code, der für eine bestimmte Ansicht aufgerufen wird, und lässt bei Bedarf eine spezifische Logik für unterschiedliche Ansichten derselben Komponente zu.
 
 ### Vergleich zwischen HTL und JSP {#htl-vs-jsp}
 
@@ -210,7 +210,7 @@ Die Definition einer Komponente lässt sich wie folgt aufschlüsseln:
 
 Das Symbol oder die Abkürzung für die Komponente wird über die JCR-Eigenschaften der Komponente definiert, wenn die Komponente vom Entwickler erstellt wird. Diese Eigenschaften werden in der folgenden Reihenfolge ausgewertet und die erste erkannte gültige Eigenschaft wird verwendet.
 
-1. `cq:icon` - String-Eigenschaft, die auf ein Standardsymbol in der  [Coral UI-Bibliothek verweist und im Komponenten-Browser angezeigt ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) wird
+1. `cq:icon` - String-Eigenschaft, die auf ein Standardsymbol in der  [Coral UI-Bibliothek verweist und im Komponenten-Browser angezeigt ](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) wird
    * Verwenden Sie den Wert des HTML-Attributs des Coral-Symbols.
 1. `abbreviation` - String-Eigenschaft zum Anpassen der Abkürzung des Komponentennamens im Komponenten-Browser
    * Die Abkürzung sollte auf zwei Zeichen beschränkt sein.
