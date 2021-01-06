@@ -122,7 +122,7 @@ Folgende Einstellungen sind für den Convert PDF-Dienst verfügbar:
 
 **Neu erforderlich:** Erstellt immer einen neuen Transaktionskontext. Wenn bereits ein aktiver Transaktionskontext vorhanden ist, wird dieser ausgesetzt.
 
-**Transaktionszeitlimit (in Sekunden):** Die Anzahl der Sekunden, die der zugrunde liegende Transaktionsanbieter warten muss, bevor eine Transaktion, die diesen Vorgang umschließt, rückgängig gemacht wird. Dieser Wert wird ignoriert, wenn ein vorhandener Transaktionskontext weitergegeben wird. Der Standardwert ist 180.
+**Transaktionszeitlimit (in Sekunden):** Die Anzahl der Sekunden, die der zugrunde liegende Transaktionsanbieter warten muss, bevor eine Transaktion, die diesen Vorgang umschließt, rückgängig gemacht wird. Dieser Wert wird ignoriert, wenn ein vorhandener Transaktionskontext weitergegeben wird. Der Standardwert ist 180. 
 
 **Schwellenwertauflösung für Glättung (in dpi):** Die Bildauflösung, unter der auf Text, Strichgrafiken und Bilder Glättung angewendet wird, wenn Sie für diese Elemente die Option &quot;Glättung anwenden auf&quot;ausgewählt haben.
 
@@ -238,7 +238,7 @@ Folgende Einstellungen sind für den FTP-Dienst verfügbar:
 
 **Standardhost:** Die IP-Adresse oder URL des FTP-Servers.
 
-**Standardanschluss:** Der Anschluss, über den eine Verbindung zum FTP-Server hergestellt wird. Der Standardwert ist 21.
+**Standardanschluss:** Der Anschluss, über den eine Verbindung zum FTP-Server hergestellt wird. Der Standardwert ist 21. 
 
 **Standardbenutzername:** Der Name des Benutzerkontos, mit dem Sie auf den FTP-Server zugreifen können. Das Benutzerkonto muss über ausreichende Berechtigungen verfügen, um die für diesen Dienst erforderlichen FTP-Vorgänge ausführen zu können.
 
@@ -446,9 +446,9 @@ Folgende Einstellungen sind für den Microsoft SharePoint-Konfigurationsdienst v
 
 **Android Microsoft Exchange ActiveSync erforderlich:** Gibt an, ob Microsoft Exchange ActiveSync Policy Manager (EA) auf Android-Geräten installiert und aktiv sein muss. Wenn diese Option aktiviert ist, müssen EA auf dem Android-Gerät erzwungen werden. Wenn diese Option nicht ausgewählt ist, wird keine Überprüfung durchgeführt, auch wenn andere Anforderungen noch erzwungen werden.
 
-**PIN-Mindestlänge für Android:** Android-Geräte müssen über eine globale Einstellung verfügen, mit der sichergestellt wird, dass die PIN oder das Kennwort mindestens diese Länge hat. Einfach nur eine PIN der angegebenen Länge zu haben, reicht nicht aus. Die PIN-Länge muss vom System erzwungen werden, damit Benutzer die PIN nicht später entfernen oder verkürzen können. Der Standardwert ist 4.
+**PIN-Mindestlänge für Android:** Android-Geräte müssen über eine globale Einstellung verfügen, mit der sichergestellt wird, dass die PIN oder das Kennwort mindestens diese Länge hat. Einfach nur eine PIN der angegebenen Länge zu haben, reicht nicht aus. Die PIN-Länge muss vom System erzwungen werden, damit Benutzer die PIN nicht später entfernen oder verkürzen können. Der Standardwert ist 4. 
 
-**Android-Weitere Zustellversuche mit maximalem Kennwort vor dem Bereinigen:** Android-Geräte verfügen über eine globale Einstellung, mit der das System nach einer bestimmten Anzahl von Versuchen mit einem ungültigen Kennwort gelöscht wird. Diese globale Einstellung ist aktiviert und ist gleich oder niedriger als der hier angegebene Wert. Der Standardwert ist 5.
+**Android-Weitere Zustellversuche mit maximalem Kennwort vor dem Bereinigen:** Android-Geräte verfügen über eine globale Einstellung, mit der das System nach einer bestimmten Anzahl von Versuchen mit einem ungültigen Kennwort gelöscht wird. Diese globale Einstellung ist aktiviert und ist gleich oder niedriger als der hier angegebene Wert. Der Standardwert ist 5. 
 
 **Android-Bereinigung beim Entfernen:** Gibt an, was passiert, wenn auf einem Android-Gerät eine Richtlinienverletzung auftritt. Wenn diese Option aktiviert ist, wird das Konto gelöscht. Wenn diese Option nicht ausgewählt ist, werden das gespeicherte Kontokennwort und die zwischengespeicherten Daten gelöscht. Es werden keine Synchronisierungsversuche mehr durchgeführt, bis der Benutzer die Richtlinienverletzung behebt.
 
@@ -485,7 +485,7 @@ Folgende Einstellungen sind für den PDFG Config-Dienst (`PDFGConfigService`) ve
 
 **PS-Startdatei:** Der Name der für Adobe Acrobat Distiller erforderlichen Startdatei. Der Standardwert ist example.ps.
 
-**Konvertierungstimeout für Server:** Der maximale Auftragskonvertierungstimeout (in Sekunden) für den Generate PDF-Dienst und den Distiller-Dienst. Diese Einstellung beschränkt den maximalen Konvertierungstimeout-Wert, der in der Datei „config.xml“ sowie auf den Administration Console-Seiten für PDF Generator angegeben werden kann. Der Standardwert ist 270.
+**Konvertierungstimeout für Server:** Der maximale Auftragskonvertierungstimeout (in Sekunden) für den Generate PDF-Dienst und den Distiller-Dienst. Diese Einstellung beschränkt den maximalen Konvertierungstimeout-Wert, der in der Datei „config.xml“ sowie auf den Administration Console-Seiten für PDF Generator angegeben werden kann. Der Standardwert ist 270. 
 
 **Globales Zeitlimit für Server: Bei der** Durchführung von PDF-Konvertierungen berücksichtigt ein Formularserver die Zeitüberschreitungsgrenze. Konfigurieren Sie den Timeoutwert, um das Problem zu lösen.
 
@@ -493,7 +493,7 @@ Folgende Einstellungen sind für den PDFG Config-Dienst (`PDFGConfigService`) ve
 
 **Nicht-Unicode-Apps:** Eine kommagetrennte Liste von Anwendungsnamen, die als Unicode-unfähig bekannt sind. Diese Liste enthält bereits die Namen einer Reihe von Anwendungen, für die die Unterstützung in PDF Generator vorkonfiguriert ist. Wenn Sie die Unterstützung von PDF-Konvertierungen durch weitere Anwendungen von Drittanbietern ermöglichen möchten, die Unicode nicht unterstützen, müssen Sie sie dieser Liste hinzufügen. Der Standardwert ist Autocad,Excel,PowerPoint,Project,Publisher,Visio,Word,WordPerfect.
 
-**Threadpool-Anzahl des Servers:** Steuert die Größe des Threadpools, den der Generate PDF-Dienst intern zum Dienst von HTML-in-PDF-Konvertierungsanforderungen verwendet, die Spidern beinhalten (Konvertieren verknüpfter Seiten, auf die von der Hauptseite aus zugegriffen werden kann). Der Standardwert ist 20.
+**Threadpool-Anzahl des Servers:** Steuert die Größe des Threadpools, den der Generate PDF-Dienst intern zum Dienst von HTML-in-PDF-Konvertierungsanforderungen verwendet, die Spidern beinhalten (Konvertieren verknüpfter Seiten, auf die von der Hauptseite aus zugegriffen werden kann). Der Standardwert ist 20. 
 
 **PDFG-Bereinigungsprüfung (Sekunden):** Weitere Informationen finden Sie im Abschnitt &quot;Auftragsablauf (Sekunden)&quot;.
 
@@ -571,7 +571,7 @@ Folgende Einstellungen sind für den Signature-Dienst verfügbar:
 
 **Validierungsinformationen verwenden, die im Dokument für die Überprüfung von Signaturen gespeichert sind:** Wenn diese Option aktiviert ist, werden die im Dokument eingebetteten Validierungsinformationen (einschließlich Sperr- und Zeitstempelinformationen) zur Validierung von Signaturen verwendet. Der Standardwert lautet true.
 
-**Maximal zulässige Anzahl verschachtelter Überprüfungssitzungen:** Die maximal zulässige Anzahl verschachtelter Überprüfungssitzungen. AEM Forms verhindert mithilfe dieses Wertes die Entstehung einer Endlosschleife bei der Überprüfung der OCSP- bzw. Zertifikatsperrlisten-Signiererzertifikate, wenn das OCSP- bzw. Zertifikatsperrlistenzertifikat nicht ordnungsgemäß eingerichtet ist. Der Standardwert ist 10.
+**Maximal zulässige Anzahl verschachtelter Überprüfungssitzungen:** Die maximal zulässige Anzahl verschachtelter Überprüfungssitzungen. AEM Forms verhindert mithilfe dieses Wertes die Entstehung einer Endlosschleife bei der Überprüfung der OCSP- bzw. Zertifikatsperrlisten-Signiererzertifikate, wenn das OCSP- bzw. Zertifikatsperrlistenzertifikat nicht ordnungsgemäß eingerichtet ist. Der Standardwert ist 10. 
 
 **Maximale Uhrzeitabweichung zur Überprüfung:** Die maximale Zeit in Minuten, die nach der Überprüfungszeit liegen kann. Wenn die Uhrzeitabweichung diesen Wert überschreitet, ist die Signatur nicht gültig. Der Standardwert ist 65 Minuten.
 
@@ -581,7 +581,7 @@ Folgende Einstellungen sind für den Signature-Dienst verfügbar:
 
 **Proxy-Host:** Die URL des Proxyhosts. Wird nur verwendet, wenn ein gültiger Wert angegeben ist. Kein Standardwert.
 
-**Proxy-Anschluss:** Der Proxyanschluss. Geben Sie eine gültige Anschlussnummer zwischen 0 und 65535 ein. Der Standardwert ist 80.
+**Proxy-Anschluss:** Der Proxyanschluss. Geben Sie eine gültige Anschlussnummer zwischen 0 und 65535 ein. Der Standardwert ist 80. 
 
 **Benutzername für Proxyanmeldung:** Der Benutzername für die Proxyanmeldung. Wird nur verwendet, wenn gültige Werte für den Proxyhost und den Proxyanschluss angegeben wurden. Kein Standardwert.
 
@@ -691,13 +691,13 @@ Folgende Einstellungen sind für den Watched Folder-Dienst verfügbar:
 
 **Anzahl der Wiederholungen:** Gibt an, wie oft der Eingabeordner abgerufen wird. Der Standardwert für die Anzahl der Wiederholungen, der verwendet wird, wenn in der Endpunktkonfiguration kein Wert angegeben ist. Ein Wert von „-1“ bedeutet uneingeschränktes Überprüfen des Ordners („unendlich“). Der Standardwert ist -1.
 
-**Wiederholungsintervall:** Die Standardanzahl, wenn Sekunden zwischen den einzelnen Umfragen liegen. Dieser Wert wird als Wiederholungsintervall verwendet, sofern in der Endpunktkonfiguration für den überwachten Ordner kein anderer Wert angegeben ist. Der Standardwert ist 5. Weitere Informationen finden Sie in der Beschreibung der Einstellung „Stapelgröße“.
+**Wiederholungsintervall:** Die Standardanzahl, wenn Sekunden zwischen den einzelnen Umfragen liegen. Dieser Wert wird als Wiederholungsintervall verwendet, sofern in der Endpunktkonfiguration für den überwachten Ordner kein anderer Wert angegeben ist. Der Standardwert ist 5. Weitere Informationen finden Sie in der Beschreibung der Einstellung „Stapelgröße“.
 
 **Asynchron:** Identifiziert den Aufruftyp als asynchron oder synchron. Transiente und synchrone Prozesse können nur synchron aufgerufen werden. Der Standardwert ist „asynchron“.
 
 **Wartezeit:** Der Standardwert in Sekunden, nach dem die Dateien aus den Eingabeordnern abgerufen werden. Wenn Dateien oder Ordner älter sind als die in „Wartezeit“ angegebene Zeit, werden sie zur Verarbeitung abgerufen. Der Standardwert ist 0.
 
-**Stapelgröße:** Der Standardwert für die Anzahl der Dateien oder Ordner, die pro Überprüfung verarbeitet werden. Der Standardwert ist 2.
+**Stapelgröße:** Der Standardwert für die Anzahl der Dateien oder Ordner, die pro Überprüfung verarbeitet werden. Der Standardwert ist 2. 
 
 Die Einstellungen für Wiederholungsintervall und Stapelgröße bestimmen, wie viele Dateien bei jeder Überprüfung vom Watched Folder-Dienst ausgewählt werden. Der Watched Folder-Dienst verwendet einen Quartz-Threadpool, um den Eingabeordner zu überprüfen. Der Threadpool wird mit anderen Diensten gemeinsam verwendet. Wenn das Überprüfungsintervall kurz ist, wird der Eingabeordner häufig von den Threads überprüft. Falls häufig Dateien im überwachten Ordner abgelegt werden, sollten Sie ein kurzes Überprüfungsintervall wählen. Wenn Dateien nicht häufig abgelegt werden, verwenden Sie ein größeres Überprüfungsintervall, damit die anderen Dienste die Threads verwenden können. 
 
