@@ -68,7 +68,7 @@ Genauer gesagt werden die folgenden Konfigurationsveränderungen durchgeführt, 
 
 1. Das **Apache Sling Get Servlet** ist so eingestellt, dass es sichere Konfigurationen standardmäßig unterstützt, so zum Beispiel wie folgt:
 
-| **Konfiguration** | **Autor** | **Veröffentlichen** |
+| **Konfiguration** | **Autor** | **Veröffentlichung** |
 |---|---|---|
 | TXT-Darstellung | disabled | deaktiviert |
 | HTML-Darstellung | deaktiviert | deaktiviert |
