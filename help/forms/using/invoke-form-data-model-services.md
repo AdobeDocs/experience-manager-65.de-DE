@@ -18,7 +18,7 @@ ht-degree: 35%
 
 # API zum Aufrufen von Formulardatenmodelldiensten aus adaptiven Formularen {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 AEM Forms ermöglicht es Formularautoren, das Ausfüllen von Formularen weiter zu vereinfachen und zu verbessern, indem sie Dienste, die in einem Formulardatenmodell konfiguriert sind, aus einem adaptiven Formularfeld heraus aufrufen. Um einen Datenmodelldienst aufzurufen, können Sie entweder eine Regel im Visual Editor erstellen oder mit der API `guidelib.dataIntegrationUtils.executeOperation` im Code-Editor des [Regeleditors](/help/forms/using/rule-editor.md) ein JavaScript angeben.
 
