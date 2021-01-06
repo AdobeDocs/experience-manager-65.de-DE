@@ -31,7 +31,7 @@ Die klassische Benutzeroberfläche nutzt ExtJS, um Widgets zu erstellen, die das
 >
 >Auch wenn die HTML Template Language (HTL) und JSP beide für die Entwicklung von Komponenten für die klassische Benutzeroberfläche verwendet werden können, ist auf dieser Seite nur die Entwicklung mit JSP abgebildet. Dies liegt einzig an der Historie der Verwendung von JSP für die klassische Benutzeroberfläche.
 >
->HTL ist jetzt die empfohlene Skriptsprache für AEM. Siehe [HTL](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html) und [Entwickeln von AEM](/help/sites-developing/developing-components.md) zum Vergleichen von Methoden.
+>HTL ist jetzt die empfohlene Skriptsprache für AEM. Siehe [HTL](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html) und [Entwickeln von AEM](/help/sites-developing/developing-components.md) zum Vergleichen von Methoden.
 
 ## Struktur {#structure}
 
