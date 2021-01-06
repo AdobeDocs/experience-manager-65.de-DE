@@ -20,7 +20,7 @@ ht-degree: 72%
 
 # Fügen Sie benutzerdefinierte Eigenschaften den Correspondence Management-Assets hinzu{#add-custom-properties-to-correspondence-management-assets}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Sie können die Correspondence Management-Benutzeroberfläche anpassen und Benutzern ein angepasstes Set an Eigenschaften und Registerkarten bieten. Diese Anpassung umfasst das Hinzufügen benutzerdefinierter Felder/Eigenschaften und Registerkarten zu bestimmten Asset-Typen/Briefen oder allen Asset-Typen und Briefen.
 
@@ -168,7 +168,7 @@ Erstellen Sie für jede Eigenschaft (Felder), für die Sie eine Dropdown-Liste (
           <td>Dies ist der Wert der Dropdown-Menüoption, die für den Benutzer sichtbar ist. Lassen Sie das Feld leer für den (Standard-)Wert oder geben Sie den Wert ein, z. B. <strong>International</strong> oder<strong> Innerhalb der USA</strong>.<br /> </td>
          </tr>
          <tr>
-          <td>Wert</td>
+          <td>value</td>
           <td>Zeichenfolge</td>
           <td>In CRXDE gespeicherter Wert für den Text. Geben Sie einen beliebigen eindeutigen Suchbegriff ein. <br /> </td>
          </tr>
