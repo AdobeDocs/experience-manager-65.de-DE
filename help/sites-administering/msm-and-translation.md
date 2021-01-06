@@ -54,17 +54,20 @@ Das folgende Diagramm veranschaulicht, wie die Hauptkonzepte sich überschneiden
 >
 >* [MSM](/help/sites-administering/msm.md) verwaltet die Bereitstellung der übersetzten Inhalte von einem Blueprint (z. B. einem globalen Master) in die Live Copies (z. B. die lokalen Sites) innerhalb der Grenzen einer Sprache.
 >* Die AEM-Integrationsfunktionen zur [Übersetzung](/help/sites-administering/translation.md) verwalten kombiniert mit Übersetzungsmanagementdiensten von Drittanbietern die Sprachen und die Übersetzung der Inhalte in diese verschiedenen Sprachen.
+
 >
->Bei noch komplexeren Nutzungsszenarien kann MSM auch über Sprach-Master hinweg eingesetzt werden.
+>
+Bei noch komplexeren Nutzungsszenarien kann MSM auch über Sprach-Master hinweg eingesetzt werden.
 
 >[!NOTE]
 >
 >Bei allen Nutzungsszenarien wird empfohlen, die folgenden Best Practices zu lesen:
 >
 >* [Best Practices für MSM](/help/sites-administering/msm-best-practices.md) – insbesondere:
->
->   * [Erstellen einer Website](/help/sites-administering/msm-best-practices.md#create-site)
->   * [MSM und mehrsprachige Websites](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+   >
+   >   
+   * [Erstellen einer Website](/help/sites-administering/msm-best-practices.md#create-site)
+   >   * [MSM und mehrsprachige Websites](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
 >
 >* [Best Practices für die Übersetzung](/help/sites-administering/tc-bp.md)
 
