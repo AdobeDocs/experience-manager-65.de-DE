@@ -1,5 +1,5 @@
 ---
-title: 'Konfigurieren der Rich-Text-Editor-Plug-ins    '
+title: 'Konfigurieren der Rich-Text-Editor-Plug-ins '
 description: Erfahren Sie, wie Sie die Adobe Experience Manager Rich Text Editor-Plugins konfigurieren, um individuelle Funktionen zu aktivieren.
 contentOwner: AG
 translation-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 95%
 ---
 
 
-# Konfigurieren der Rich-Text-Editor-Plug-ins     {#configure-the-rich-text-editor-plug-ins}
+# Konfigurieren der Rich-Text-Editor-Plug-ins  {#configure-the-rich-text-editor-plug-ins}
 
 RTE-Funktionen werden über eine Reihe von Plug-ins mit jeweils einer Eigenschaft „Funktionen“ bereitgestellt. Sie können die Eigenschaft „features“ so konfigurieren, dass eine oder mehrere RTE-Funktionen aktiviert oder deaktiviert werden. In diesem Artikel wird beschrieben, wie Sie die RTE-Plug-ins spezifisch konfigurieren.
 
@@ -327,7 +327,7 @@ Geben Sie dann die Speicherorte für die Stylesheets an, auf die Sie verweisen m
 
    Wiederholen Sie die obigen Schritte für jeden erforderlichen Stil.
 
-### RTE für optimale Wortumbrüche auf Japanisch konfigurieren      {#jpwordwrap}
+### RTE für optimale Wortumbrüche auf Japanisch konfigurieren   {#jpwordwrap}
 
 Autoren, die AEM zum Erstellen von japanischen Sprachinhalten verwenden, können einen Stil auf Zeichen anwenden, um Zeilenumbrüche zu vermeiden, bei denen kein Umbruch erforderlich ist. Dadurch können Autoren die Sätze an der gewünschten Position umbrechen. Der Stil für diese Funktion basiert auf der CSS-Klasse, die im CSS-Stylesheet vordefiniert ist.
 
@@ -582,7 +582,7 @@ Die Funktion zum Kopieren und Einfügen von Tabellen in oder aus der RTE-Kompone
 
 Wiederholen Sie die obigen Schritte für jeden erforderlichen Stil.
 
-### Konfigurieren von ausgeblendeten Kopfzeilen in Tabellen, um die Zugänglichkeit zu verbessern      {#hiddenheader}
+### Konfigurieren von ausgeblendeten Kopfzeilen in Tabellen, um die Zugänglichkeit zu verbessern   {#hiddenheader}
 
 Manchmal kann es sein, dass Sie Datentabellen ohne visuellen Text in einer Spaltenkopfzeile erstellen, da Sie voraussetzen, dass sich der Zweck der Kopfzeile durch die visuelle Beziehung der Spalte mit anderen Spalten ergibt. In diesem Fall ist es erforderlich, dass Sie ausgeblendeten inneren Text innerhalb der Zelle in der Kopfzeilenzelle bereitstellen, damit Bildschirmlesehilfen und andere unterstützende Technologien Benutzern mit unterschiedlichen Bedürfnissen helfen können, den Zweck der Spalte zu verstehen.
 
@@ -600,7 +600,7 @@ Um Autoren bei der Anwendung von CSS auf ausgeblendete Kopfzeilen im Vorschaumod
 
 Wenn Sie sowohl die CSS- als auch die Stilzeichenfolge im Code angeben, hat die CSS-Klasse Vorrang vor der Stilzeichenfolge. Sie überschreibt möglicherweise Konfigurationsänderungen, die mittels der Stilzeichenfolge vorgenommen werden.
 
-## Hinzufügen von Wörterbüchern für die Rechtschreibprüfung      {#adddict}
+## Hinzufügen von Wörterbüchern für die Rechtschreibprüfung   {#adddict}
 
 Wenn das spellcheck-Plug-in aktiviert wird, verwendet der RTE Wörterbücher für jede entsprechende Sprache. Diese werden dann entsprechend der Sprache der Website ausgewählt, indem entweder die language-Eigenschaft der Unterstruktur verwendet oder die Sprache aus der URL extrahiert wird. So wird beispielsweise für den `/en/`-Zweig das englische und für den `/de/`-Zweig das deutsche Wörterbuch für die Überprüfung verwendet.
 
@@ -641,7 +641,7 @@ Der RTE bietet Autoren die Möglichkeit, bei Bedarf die letzten Bearbeitungsschr
 
 1. Speichern Sie die Änderungen.
 
-## Konfigurieren der Tabulator-Schrittweite      {#tabsize}
+## Konfigurieren der Tabulator-Schrittweite   {#tabsize}
 
 Wenn das Tabulatorzeichen innerhalb eines beliebigen Texts gedrückt wird, wird eine vordefinierte Anzahl von Leerzeichen eingefügt. Standardmäßig werden drei geschützte Leerzeichen und ein normales Leerzeichen eingefügt.
 
@@ -656,7 +656,7 @@ So definieren Sie die Tabulator-Schrittweite:
 
 1. Speichern Sie die Änderungen.
 
-## Festlegen des Einzugsrands      {#indentmargin}
+## Festlegen des Einzugsrands   {#indentmargin}
 
 Wenn die Einzugsfunktion aktiviert ist (Standardeinstellung), können Sie die Einzugsgröße definieren:
 
@@ -758,8 +758,8 @@ Um zu konfigurieren, wie Links in AEM von einem anderen Programm aus hinzugefüg
 
                (festgelegt über die `targetExternal`-Eigenschaft für externe Links oder die `targetInternal`-Eigenschaft für interne Links).
 
-            * `manual` : In diesem Kontext unzulässig
-            * `blank` : In diesem Kontext unzulässig
+            * `manual`: In diesem Kontext unzulässig
+            * `blank`: In diesem Kontext unzulässig
       * Das Ziel für interne Links:
 
          * **Name** `targetInternal`
