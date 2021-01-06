@@ -240,9 +240,9 @@ Führen Sie die folgenden Schritte aus, um eine Vorlage für den Webkanal im Ord
    | Name | Titel | Spaltenanzahl |
    |---|---|---|
    | customerdetails | Kundendetails | 1 |
-   | billsummary | Rechnungszusammenfassung | 1 |
+   | billsummary | Rechnungszusammenfassung | 3 |
    | summarycharges | Zusammenfassung der Gebühren | 2 |
-   | itemisedcalls | Einzeln aufgeführte Anrufe | 1 |
+   | itemisedcalls | Einzeln aufgeführte Anrufe | 3 |
    | paynow | Jetzt zahlen | 2 |
    | vas | Mehrwert - Service | 1 |
 
