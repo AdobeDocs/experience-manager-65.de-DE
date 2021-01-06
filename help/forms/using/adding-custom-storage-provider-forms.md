@@ -19,7 +19,7 @@ ht-degree: 70%
 
 # Benutzerdefinierter Speicher für Komponenten „Drafts and Submissions (Entwurf und Übermittlung)“{#custom-storage-for-drafts-and-submissions-component}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Mit AEM Forms können Sie ein Formular als Entwurf speichern. Mit der Entwurfsfunktion können Sie ein aktuelles Formular beibehalten, welches Sie zu einem späteren Zeitpunkt auf einem anderen Gerät abschließen und senden können.
 
