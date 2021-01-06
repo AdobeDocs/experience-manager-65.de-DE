@@ -19,7 +19,7 @@ ht-degree: 76%
 
 # Regeleditor für adaptive Formulare{#adaptive-forms-rule-editor}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Die Regeleditorfunktion in Adobe Experience Manager Forms ermöglicht es Geschäftsbenutzern und Entwicklern, Regeln für adaptive Formularobjekte zu erstellen. Diese Regeln definieren Aktionen für Formularobjekte, die durch voreingestellte Bedingungen, Benutzereingaben und Benutzeraktionen im Formular ausgelöst werden. Dies ermöglicht noch größere Effizienz beim schnellen und korrekten Ausfüllen der Formulare.
 
