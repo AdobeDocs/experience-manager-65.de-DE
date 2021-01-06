@@ -835,7 +835,7 @@ Sie können auch eine `JSON`-Datei herunterladen, die die Informationen zum Dash
    <td>Seite „Replikation“</td>
   </tr>
   <tr>
-   <td>Workflows  </td>
+   <td>Workflows</td>
    <td>
     <ul>
      <li>Workflow-Aufträge:
