@@ -20,7 +20,7 @@ ht-degree: 63%
 
 # Texteditor anpassen{#customize-text-editor}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Sie können den Texteditor in der Benutzeroberfläche „Assets verwalten und Korrespondenz erstellen“ anpassen, um weitere Schriftarten und Schriftgrade hinzuzufügen. Diese Schriftarten enthalten englische und nicht-englische Schriftarten wie Japanisch.
 
