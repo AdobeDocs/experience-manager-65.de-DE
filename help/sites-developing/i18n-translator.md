@@ -371,7 +371,7 @@ So ändern Sie die Standarddefinitionen:
    https://<hostname>:<port-number>/system/console/configMgr/com.day.cq.wcm.core.impl.LanguageManagerImpl
    ```
 
-## Veröffentlichen von Wörterbüchern  {#publishing-dictionaries}
+## Veröffentlichen von Wörterbüchern {#publishing-dictionaries}
 
 Integrieren Sie Ihre Wörterbücher in die Releaseverwaltung Ihrer AEM-Anwendungen. Schließen Sie das Wörterbuch beispielsweise in das Inhaltspaket Ihrer Anwendung ein, um es für die Veröffentlichungsinstanz bereitzustellen. Diese Strategie bietet folgende Vorteile:
 
