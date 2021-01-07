@@ -3,9 +3,9 @@ title: Integrieren [!DNL Assets] mit [!DNL InDesign Server]
 description: Erfahren Sie, wie Sie  [!DNL Adobe Experience Manager Assets] mit [!DNL Adobe InDesign Server] integrieren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 117208c634613559bb13556e12f094add70006e2
+source-git-commit: a31fa2712e541dfdc7a5b08ee9b33782f190f00b
 workflow-type: tm+mt
-source-wordcount: '1559'
+source-wordcount: '1578'
 ht-degree: 37%
 
 ---
@@ -165,15 +165,15 @@ PoolDer/die SOAP-Endpunkt/e, der/die für die Kommunikation mit dem  [!DNL InDes
 
 ### Day CQ Link Externalizer {#configuring-day-cq-link-externalizer} konfigurieren
 
-Wenn die Anwendungen [!DNL InDesign Server] und [!DNL Experience Manager] auf verschiedenen Hosts ausgeführt werden oder eine oder beide nicht auf Standardanschlüssen ausgeführt werden, konfigurieren Sie [!UICONTROL Day CQ Link Externalizer], um Hostnamen, Anschluss und Inhaltspfad für [!DNL InDesign Server] festzulegen.
+Wenn sich [!DNL InDesign Server] und [!DNL Experience Manager] auf verschiedenen Hosts befinden oder eine oder beide Anwendungen nicht an Standardanschlüssen funktionieren, konfigurieren Sie [!UICONTROL Day CQ Link Externalizer], um Hostnamen, Anschluss und Inhaltspfad für [!DNL InDesign Server] festzulegen.
 
 1. Rufen Sie die Web-Konsole unter `https://[aem_server]:[port]/system/console/configMgr` auf.
-1. Suchen Sie nach der Konfiguration **[!UICONTROL Day CQ Link Externalizer]** und klicken Sie auf **[!UICONTROL Bearbeiten]**, um sie zu öffnen.
-1. Geben Sie den Hostnamen und den Kontextpfad für [!DNL Adobe InDesign Server] an und klicken Sie auf **Speichern**.
+1. Suchen Sie die Konfiguration **[!UICONTROL Day CQ Link Externalizer]**. Klicken Sie auf **[!UICONTROL Bearbeiten]**, um zu öffnen.
+1. Mithilfe der Einstellungen für Link-Externalisierer können Sie absolute URLs für die [!DNL Experience Manager]-Bereitstellung und für [!DNL InDesign Server] erstellen. Verwenden Sie das Feld **[!UICONTROL Domänen]**, um den Hostnamen und den Kontextpfad für [!DNL Adobe InDesign Server] anzugeben. Klicken Sie auf **Speichern**.
 
-   ![chlimage_1-97](assets/chlimage_1-290.png)
+   ![Einstellung für Link-Externalisierer](assets/link-externalizer-config.png)
 
-### Aktivieren der parallelen Auftragsverarbeitung für [!DNL InDesign Server] {#enabling-parallel-job-processing-for-indesign-server-s}
+### Aktivieren der parallelen Auftragsverarbeitung für [!DNL InDesign Server] {#enabling-parallel-job-processing-for-indesign-server}
 
 Sie können jetzt die parallele Auftragsverarbeitung für IDS aktivieren. Legen Sie die maximale Anzahl paralleler Aufträge (`x`) fest, die ein [!DNL InDesign Server] verarbeiten kann:
 
