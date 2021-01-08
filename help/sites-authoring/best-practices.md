@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
 translation-type: tm+mt
-source-git-commit: 22cdd6a7b343749b8ce85d8c1b230d094732f44a
+source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 84%
+source-wordcount: '302'
+ht-degree: 73%
 
 ---
 
@@ -38,7 +38,7 @@ Spezielle Dokumente werden in den folgenden Tabellen beschrieben und verknüpft.
 
 ## Assets {#assets}
 
-Die Best Practices für Assets, einschließlich der Dynamic Media-Funktionalität und der Dynamic Media Classic-Integration, werden in den folgenden Themen beschrieben:
+Die Best Practices für Assets, einschließlich Dynamic Media-Funktionen und Dynamic Media Classic-Integration, werden in den folgenden Themen beschrieben:
 
 <table>
  <tbody>
@@ -55,7 +55,7 @@ Die Best Practices für Assets, einschließlich der Dynamic Media-Funktionalitä
   <tr>
    <td>Dynamic Imaging</td>
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Best Practices für Dynamic Imaging </a></td>
-   <td><p>Beschreibt, wie Sie ein Bild für optimale Ergebnisse schärfer machen, sowie die beste Möglichkeit, um die Qualität Ihrer Bilder zu verbessern, wenn Sie die Funktion für dynamische Medien oder die Integration mit Scene7 verwenden. </p> </td>
+   <td><p>Beschreibt, wie Sie ein Bild scharfzeichnen, um optimale Ergebnisse zu erzielen, und wie Sie die Bildqualität optimieren können, wenn Sie die Dynamic Media-Funktionalität verwenden oder mit Dynamic Media Classic integrieren. </p> </td>
   </tr>
   <tr>
    <td>Mehrsprachige Assets</td>
