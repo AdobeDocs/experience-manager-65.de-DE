@@ -1,6 +1,6 @@
 ---
-title: Integrieren in Dynamic Media Classic (Scene7)
-seo-title: Integrieren in Dynamic Media Classic (Scene7)
+title: Integrieren in Dynamic Media Classic
+seo-title: Integrieren in Dynamic Media Classic
 description: Erfahren Sie, wie Sie AEM in Dynamic Media Classic integrieren können.
 seo-description: Erfahren Sie, wie Sie AEM in Dynamic Media Classic integrieren können.
 uuid: b014d643-1cc1-47f3-a79c-7f6f9e45637a
@@ -10,17 +10,17 @@ topic-tags: integration
 content-type: reference
 discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
 workflow-type: tm+mt
-source-wordcount: '5485'
+source-wordcount: '5464'
 ht-degree: 21%
 
 ---
 
 
-# Integrieren in Dynamic Media Classic (Scene7){#integrating-with-dynamic-media-classic-scene}
+# Integrieren in Dynamic Media Classic {#integrating-with-dynamic-media-classic-scene}
 
-[Adobe Dynamic Media ](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) Classicis ist eine gehostete Lösung zum Verwalten, Erweitern, Veröffentlichen und Bereitstellen von Rich-Media-Assets für Web-, Mobil-, E-Mail- und Internetanzeigen und Drucken.
+Adobe Dynamic Media Classic ist eine gehostete Lösung zum Verwalten, Erweitern, Veröffentlichen und Bereitstellen von Rich-Media-Assets für Web-, Mobil-, E-Mail- und Internetanzeigen und -drucke.
 
 Um Dynamic Media Classic verwenden zu können, müssen Sie die Cloud-Konfiguration so konfigurieren, dass Dynamic Media Classic und AEM Assets miteinander interagieren können. In diesem Dokument wird die Konfiguration von AEM und Dynamic Media Classic beschrieben.
 
@@ -363,7 +363,7 @@ So aktivieren Sie ihn:
 
 ### Hinzufügen eines konfigurierbaren Timeouts zum Dynamic Media Classic Upload-Arbeitsablauf {#adding-configurable-timeout-to-scene-upload-workflow}
 
-Wenn eine AEM-Instanz so konfiguriert wird, dass die Videokodierung durch Dynamic Media Classic (Scene7) abgewickelt wird, gibt es standardmäßig ein 35-minütiges Timeout zu jedem Upload-Auftrag. Um Videokodierungsaufträge mit potenziell längerer Dauer zu ermöglichen, können Sie diese Einstellung konfigurieren:
+Wenn eine AEM-Instanz für die Videokodierung über Dynamic Media Classic konfiguriert ist, gibt es für jeden Upload-Auftrag standardmäßig einen 35-Minuten-Timeout. Um Videokodierungsaufträge mit potenziell längerer Dauer zu ermöglichen, können Sie diese Einstellung konfigurieren:
 
 1. Navigieren Sie zu **http://localhost:4502/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl**.
 
