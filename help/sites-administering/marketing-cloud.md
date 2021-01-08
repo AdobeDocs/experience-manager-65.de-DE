@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: ba496f6a-c9aa-49b5-8207-8633748d2c17
 translation-type: tm+mt
-source-git-commit: 471b57a52efc849eb57201e6397221fa4f88c746
+source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 86%
+source-wordcount: '1005'
+ht-degree: 75%
 
 ---
 
@@ -72,22 +72,15 @@ Führen Sie den Opt-in für die Integration mit Analytics bzw. Target durch, um 
 
 Weitere Informationen finden Sie unter [Opt-in für Analytics und Target](/help/sites-administering/opt-in.md).
 
-## Integrieren mit Scene7 {#integrating-with-scene}
+## Integration mit der Adobe Dynamic Media Classic {#integrating-with-scene}
 
-[Adobe Scene7](https://www.adobe.com/products/scene7.html) ist eine gehostete Lösung zum Veröffentlichen, Verwalten, Verbessern und Bereitstellen von Assets für dynamisches Marketing und umfassendes visuelles Merchandising für die Bereiche Web, Mobile, E-Mail, soziale Medien, Internet-Anzeigen und Print.
+Adobe Dynamic Media Classic ist eine gehostete Lösung zum Veröffentlichen, Verwalten, Erweitern und Bereitstellen von dynamischen Marketing-Assets und Rich-Visual-Merchandising für Web-, Mobil-, E-Mail-, Social Media-, Internet-verbundene Displays und Print-Medien.
 
-In AEM können Sie digitale Assets direkt über AEM in Scene7 veröffentlichen (und umgekehrt).
+In AEM können Sie digitale Assets direkt von AEM nach Dynamic Media Classic veröffentlichen und digitale Assets von Dynamic Media Classic nach AEM veröffentlichen.
 
-Außerdem können Sie in Scene7 veröffentlichte AEM-Assets in verschiedenen Viewern anzeigen:
+Darüber hinaus können Sie in Dynamic Media Classic veröffentlichte Assets in verschiedenen Viewern wie &quot;Einfach vergrößern&quot;und &quot;Einfach&quot;AEM Ansicht ausführen.
 
-* Basic-Zoom
-* DHTML-Flyout-Zoom
-* Flash-Flyout-Zoom
-* Video
-* Flash   Vorlage
-* Bildvorlage
-
-Weitere Informationen zur Integration AEM in Scene7 finden Sie in der [Integration in die Scene7-Dokumentation](/help/sites-administering/scene7.md).
+Weitere Informationen zur Integration AEM in Dynamic Media Classic finden Sie in der Dokumentation [Integration mit Dynamic Media Classic](/help/sites-administering/scene7.md).
 
 ## Integrieren mit Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
@@ -99,9 +92,9 @@ Weitere Informationen zur Integration AEM in Scene7 finden Sie in der [Integrati
 
 Die Audience Manager-Integration wurde in AEM 6.3 entfernt.
 
-## Integrieren mit Search&amp;Promote  {#integrating-with-search-promote}
+## Integrieren mit Search&amp;Promote {#integrating-with-search-promote}
 
-[Adobe Search&amp;Promote](https://www.omniture.com/en/products/conversion/search-and-promote) bietet Marketing-Experten die Möglichkeit, das Suchen, Vergleichen und Auswählen relevanter Produkte und Inhalte auf Websites und Seiten für mobile Geräte für ihre Besucher zu optimieren. Unternehmen können einfach Artikel mit Priorität auf Grundlage von Geschäftszielen und Besucherwünschen bewerben und Merchandising- und Promotion-Aktivitäten mithilfe kennzahlbasierter Trigger oder Metriken automatisieren.
+[Adobe Search&amp;](https://www.omniture.com/en/products/conversion/search-and-promote) Promote ermöglicht es Marketingexperten, Besucher beim Durchsuchen, Suchen, Vergleichen und Auswählen relevanter Produkte und Inhalte auf Websites und mobilen Sites zu optimieren. Unternehmen können einfach Artikel mit Priorität auf Grundlage von Geschäftszielen und Besucherwünschen bewerben und Merchandising- und Promotion-Aktivitäten mithilfe kennzahlbasierter Trigger oder Metriken automatisieren.
 
 Adobe Search&amp;Promote ist eine zuverlässige und skalierbare gehostete Anwendung für Websitesuchen, die für Online-Unternehmen mit hohen Zugriffszahlen eine Skalierung auf Millionen von Seiten oder Produkten ermöglicht. Die Spanne kann hierbei von Websites von Einzelhändlern bis zu Nachrichtenwebsites reichen. Es wird eine bisher unerreichte Steuerung durch die Marketing-Experten und eine auf Metriken basierende Relevanz erzielt.
 
