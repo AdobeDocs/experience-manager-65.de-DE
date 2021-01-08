@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 89%
@@ -62,7 +62,7 @@ Sie können die Inhaltssuche verwenden, um eine Reihe von Ressourcen zu ermittel
 * [Bilder](#finding-images)
 * [Dokumente](#finding-documents)
 * [Filme](#finding-movies)
-* [Scene7-Medienbrowser](/help/sites-administering/scene7.md#scene7contentbrowser)
+* [Dynamic Media Browser](/help/sites-administering/scene7.md#scene7contentbrowser)
 * [](#products) [Seiten](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#finding-pages)
 
 * [Absätze](#referencing-paragraphs-from-other-pages)
