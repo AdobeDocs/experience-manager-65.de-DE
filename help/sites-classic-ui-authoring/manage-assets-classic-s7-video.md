@@ -1,19 +1,17 @@
 ---
 title: Video
 seo-title: Video
-description: Assets bietet zentralisierte Video-Asset-Verwaltung, mit der Sie Videos direkt in Assets zur automatischen Kodierung in Scene7 hochladen und für die Seitenerstellung direkt in Assets auf Scene7-Videos zugreifen können.
-seo-description: Assets bietet zentralisierte Video-Asset-Verwaltung, mit der Sie Videos direkt in Assets zur automatischen Kodierung in Scene7 hochladen und für die Seitenerstellung direkt in Assets auf Scene7-Videos zugreifen können.
-uuid: 46da7a0d-d17b-4716-a304-ce5496421b5a
+description: Assets bieten eine zentralisierte Verwaltung von Video-Assets, mit der Sie Videos direkt in Assets hochladen können, um sie automatisch in Dynamic Media Classic zu kodieren, und Dy-Videos direkt aus Assets zum Erstellen von Seiten aufrufen können.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
 workflow-type: tm+mt
-source-wordcount: '1735'
-ht-degree: 46%
+source-wordcount: '1698'
+ht-degree: 42%
 
 ---
 
@@ -24,8 +22,8 @@ Assets bieten eine zentralisierte Verwaltung von Video-Assets, bei der Sie Video
 
 Die Dynamic Media Classic-Videointegration erweitert die Reichweite optimierter Videos auf alle Bildschirme (automatische Geräte- und Bandbreitenerkennung).
 
-* Die Videokomponente Dynamic Media Classic (Scene7) führt automatisch die Geräte- und Bandbreitenerkennung durch, um das richtige Format und die richtige Videoqualität auf Desktop-, Tablet- und Mobilgeräten wiederzugeben.
-* Assets – Sie können adaptive Videosets statt einzelner Video-Assets verwenden. Ein adaptives Videoset ist ein Container für alle Videoausgabeformate, die zur nahtlosen Wiedergabe von Videos auf verschiedenen Bildschirmen erforderlich sind. Es umfasst Versionen desselben Videos, die mit unterschiedlichen Bitraten und Formaten kodiert wurden, wie 400 kBit/s, 800 kBit/s und 1000 kBit/s. Ein adaptives Videoset wird zusammen mit der S7-Videokomponente für adaptives Videostreaming auf mehreren Bildschirmen verwendet, einschließlich Desktopgeräten und iOS-, Android-, Blackberry- und Windows-Mobilgeräten. Weitere Informationen finden Sie in der [Scene7-Dokumentation zu adaptiven Videosets](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html).
+* Die Dynamic Media Classic-Videokomponente führt automatisch die Geräte- und Bandbreitenerkennung durch, um das richtige Format und die richtige Videoqualität auf Desktop-, Tablet- und Mobilgeräten wiederzugeben.
+* Assets – Sie können adaptive Videosets statt einzelner Video-Assets verwenden. Ein adaptives Videoset ist ein Container für alle Videoausgabeformate, die zur nahtlosen Wiedergabe von Videos auf verschiedenen Bildschirmen erforderlich sind. Es umfasst Versionen desselben Videos, die mit unterschiedlichen Bitraten und Formaten kodiert wurden, wie 400 kBit/s, 800 kBit/s und 1000 kBit/s. Ein adaptives Videoset wird zusammen mit der S7-Videokomponente für adaptives Videostreaming auf mehreren Bildschirmen verwendet, einschließlich Desktopgeräten und iOS-, Android-, Blackberry- und Windows-Mobilgeräten. Weitere Informationen zu adaptiven Videosets finden Sie unter [Dynamic Media Classic-Dokumentation.](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/quick-start-video.html#video)
 
 ## Über FFMPEG und Dynamic Media Classic {#about-ffmpeg-and-scene}
 
@@ -66,7 +64,7 @@ Wenn Sie einen Workflow oder eine Versionierung für Ihre Assets benötigen, sol
 
 Wenn Sie keinen Workflow oder keine Versionierung für Ihre Assets benötigen, sollten Sie Ihre Assets nach Dynamic Media Classic hochladen. Der folgende Workflow wird empfohlen:
 
-1. Richten Sie in Dynamic Media Classic [einen geplanten FTP-Upload und eine geplante FTP-Kodierung auf Dynamic Media Classic (systemautomatisiert)](https://help.adobe.com/en_US/scene7/using/WS70B173EC-4CAD-4b4c-BF9C-43A11F3A5950.html) ein.
+1. Richten Sie in der Dynamic Media Classic Desktop-App [ein geplantes FTP-Upload und eine geplante FTP-Kodierung auf Dynamic Media Classic (systemautomatisiert)](https://help.adobe.com/en_US/scene7/using/WS70B173EC-4CAD-4b4c-BF9C-43A11F3A5950.html) ein.
 1. Rufen Sie in AEM Video-Assets in WCM auf der Registerkarte **[!UICONTROL Dynamic Media Classic]** der Inhaltssuche auf.
 1. Erstellen Sie mit der Dynamic Media Classic-Videokomponente.
 
@@ -85,7 +83,7 @@ Wenn Sie keinen Workflow oder keine Versionierung für Ihre Assets benötigen, s
 
    >[!NOTE]
    >
-   >Weitere Informationen über die Bedeutung der Video-Vorgaben finden Sie in der [Dynamic Media Classic-Dokumentation](https://help.adobe.com/en_US/scene7/using/WSE86ACF2B-BD50-4c48-A1D7-9CD4405B62D0.html).
+   >Weitere Informationen über die Bedeutung der Video-Vorgaben finden Sie unter [Video-Vorgaben für die Kodierung von Videodateien](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=en#video-presets-for-encoding-video-files).
    >
    >Adobe empfiehlt, entweder beide adaptive Videosets bei der Konfiguration der universellen Vorlagen oder die Option **[!UICONTROL Adaptive Videokodierung]** auszuwählen.
 
@@ -112,7 +110,7 @@ So laden Sie Ihr primäres Quellvideo von Adobe DAM nach Dynamic Media Classic h
 
 ### Foundation Video Component versus Dynamic Media Classic Video Component {#foundation-video-component-versus-scene-video-component}
 
-Bei Verwendung von AEM haben Sie Zugriff auf die Videokomponente, die in Sites und der Dynamic Media Classic (Scene7)-Videokomponente verfügbar ist. Diese Komponenten sind nicht austauschbar.
+Bei Verwendung von AEM haben Sie Zugriff auf die Videokomponente, die in Sites und der Dynamic Media Classic-Videokomponente verfügbar ist. Diese Komponenten sind nicht austauschbar.
 
 Die Dynamic Media Classic-Videokomponente funktioniert nur bei Dynamic Media Classic-Videos. Die Stiftungskomponente funktioniert mit Videos aus AEM (mit ffmpeg) und Dynamic Media Classic-Videos.
 
@@ -131,7 +129,7 @@ Auch wenn die Verwendung der Dynamic Media Classic-Videokomponente für die Anze
 
 ### AEM Video- und Dynamic Media Classic-Video-Vergleich {#aem-video-and-scene-video-comparison}
 
-In der folgenden Tabelle finden Sie einen Vergleich der unterstützen Funktionen der AEM-Foundation-Videokomponente und der Scene7-Videokomponente:
+Die folgende Tabelle bietet einen umfassenden Vergleich der unterstützten Funktionen zwischen der AEM Foundation Video-Komponente und der Dynamic Media Classic Video-Komponente:
 
 |  | AEM Foundation Video | Dynamic Media Classic-Video |
 |---|---|---|
@@ -162,8 +160,8 @@ Die verschiedenen Videokodierungen werden entsprechend den in der Dynamic Media 
 
    | Eigenschaft | Beschreibung |
    |---|---|
-   | Dynamic Media Classic (Scene7) Cloud-Konfiguration | Die Cloud-Konfiguration, die für die Kodierungsvorlagen verwendet werden soll |
-   | Kodierungsvorgabe für Dynamic Media Classic (Scene7) | Die Kodierungsvorlage, die diesem Videoprofil zugeordnet werden soll |
+   | Dynamic Media Classic Cloud-Konfiguration | Die Cloud-Konfiguration, die für die Kodierungsvorlagen verwendet werden soll |
+   | Dynamic Media Classic-Kodierungsvorgabe | Die Kodierungsvorlage, die diesem Videoprofil zugeordnet werden soll |
    | HTML5-Videotyp | Diese Eigenschaft ermöglicht, den Wert der Typeigenschaft des HTML5-Videoquellelements festzulegen. Diese Informationen werden nicht von den Kodierungsvorgaben von Dynamic Media Classic bereitgestellt, sondern sind für die ordnungsgemäße Wiedergabe der Videos mit dem HTML5-Videoelement erforderlich. Eine Liste für gängige Formate wird bereitgestellt, kann jedoch für andere Formate überschrieben werden. |
 
    Wiederholen Sie diesen Schritt für alle in der Cloud-Konfiguration ausgewählten Kodierungsvorlagen, die Sie in der Videokomponente verwenden möchten.
@@ -185,7 +183,7 @@ Die Foundation-Videokomponente muss darüber informiert sein, welche Videoprofil
 
 #### Checkliste {#checklist}
 
-1. Erstellen Sie eine Dynamic Media Classic (Scene7) Cloud-Konfiguration. Vergewissern Sie sich, dass die Videokodierungsvorlagen festgelegt sind und das Importprogramm ausgeführt wird.
+1. Erstellen Sie eine Dynamic Media Classic-Cloud-Konfiguration. Vergewissern Sie sich, dass die Videokodierungsvorlagen festgelegt sind und das Importprogramm ausgeführt wird.
 1. Erstellen Sie für jede in der Cloud-Konfiguration ausgewählte Videokodierungsvorgabe ein Dynamic Media Classic-Profil.
 1. Die Videoprofile müssen aktiviert sein.
 1. Konfigurieren Sie das Design der Foundation-Videokomponente auf Ihrer Seite.
