@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 26a65772c43a5176d178bb6625604d18ac91e894
+source-git-commit: 01c30e78d1f89e8c07abeb0ac19af38722010dd0
 workflow-type: tm+mt
-source-wordcount: '2302'
-ht-degree: 79%
+source-wordcount: '2428'
+ht-degree: 75%
 
 ---
 
@@ -107,6 +107,14 @@ So aktivieren Sie die Sortierung:
    Gleichermaßen stellt eine Spaltenüberschrift mit einem Pfeil nach unten dar, dass die Werte in der Spalte in absteigender Reihenfolge angezeigt werden.
 
    Sie können auch Tabellenänderungen im Modus **Vorschau** vornehmen und erneut auf die Spaltenüberschrift klicken, um die Spaltenwerte zu sortieren.
+
+## Spaltenbreite für eine Tabelle {#set-column-width} festlegen
+
+Führen Sie die folgenden Schritte aus, um die Spaltenbreite für eine Tabelle festzulegen:
+
+1. Tippen Sie auf der Registerkarte **[!UICONTROL Inhalt]** auf die Komponente **[!UICONTROL Tabelle]** und dann auf das Symbol Konfigurieren (![Konfigurieren](assets/configure-icon.svg)).
+
+1. Geben Sie die kommagetrennte Liste der Werte in das Feld **[!UICONTROL Spaltenbreite]** ein, um die proportionale Breite der einzelnen Tabellenspalten anzugeben. Beispiel: Bei einer Tabelle mit 3 Spalten, bei der 2,4,6 als Wert im Feld **[!UICONTROL Spaltenbreite]** angegeben wird, wird die Spaltenbreite für die erste Spalte auf 2/12, für die zweite Spalte auf 4/12 und für die dritte Spalte auf 6/12 eingestellt. 2/12, da sich die Breite der ersten Spalte auf ein Sechstel der Tabellenbreite bezieht. In ähnlicher Weise setzt 4/12 die zweite Spaltenbreite auf ein Drittel der Tabellenbreite und 6/12 legt die dritte Spaltenbreite auf die Hälfte der Tabellenbreite fest.
 
 ## Konfigurieren des Tabellenstils {#configure}
 
