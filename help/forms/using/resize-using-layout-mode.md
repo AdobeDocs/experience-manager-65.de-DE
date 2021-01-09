@@ -2,9 +2,9 @@
 title: Verwenden Sie den Layoutmodus, um die Größe von Komponenten für adaptive Formulare zu ändern
 description: 'Definieren der Position von Komponenten mithilfe des im Layoutmodus verfügbaren interaktiven Rasters '
 translation-type: tm+mt
-source-git-commit: 77fef5a1926c733abdaf01a19d9fdfc37323566e
+source-git-commit: 923c31bf67c7ad480ef3c3a1e312b4bd841bac6d
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1045'
 ht-degree: 2%
 
 ---
@@ -35,12 +35,11 @@ Wählen Sie **Layout** aus der Dropdown-Liste, die oben in der Authoring-Oberfl�
 
    Die Symbolleiste, die nach dem Tippen auf Komponenten angezeigt wird, besteht aus den folgenden Optionen:
 
-   * **Übergeordnet:** Wählen Sie das übergeordnete Element einer Komponente aus.
-   * **Zu neuer Zeile schwenken:** Verschiebt die Komponente zur nächsten Zeile, wenn sich mehrere Komponenten in derselben Zeile befinden.
+   * **[!UICONTROL Übergeordnet]**: Wählen Sie das übergeordnete Element einer Komponente aus.
+   * **[!UICONTROL Haltepunktlayout]** zurücksetzen: Rückgängigmachen aller Änderungen der Größe und Anwenden des Standardlayouts auf die Komponente
+   * **[!UICONTROL In neue Zeile]** schwebend: Versetzen Sie die Komponente in die nächste Zeile, wenn sich mehrere Komponenten in derselben Zeile befinden.
 
-   Darüber hinaus können Sie alle Änderungen an der Größe rückgängig machen und das Standardlayout auf das Bedienfeld mit skalierten Komponenten anwenden, indem Sie die Option **[!UICONTROL Haltepunktlayout zurücksetzen]** ( ![Haltepunkt zurücksetzen](assets/reverttopreviouslypublishedversion.png)) verwenden. Tippen Sie auf das übergeordnete Element der Größenanpassung, um die Option Ansicht.
-
-   Sie können auf die Komponente tippen und mit der Option **[!UICONTROL Haltepunktlayout zurücksetzen]** alle Änderungen der Größe rückgängig machen und das Standardlayout auf Komponentenebene anwenden.
+   Sie können auch die Option **[!UICONTROL Haltepunktlayout umkehren]** ( ![Haltepunkt zurücksetzen](assets/reverttopreviouslypublishedversion.png)) auf Bereichsebene verwenden, um alle Änderungen der Größe rückgängig zu machen.
 
    >[!NOTE]
    >
