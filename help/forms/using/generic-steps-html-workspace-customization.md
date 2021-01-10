@@ -11,29 +11,29 @@ topic-tags: forms-workspace
 discoiquuid: dd3218c4-2bb2-40fc-9141-5823b0ea4224
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+source-git-commit: e863089a4328b7222b60429c82ca3df2b8e1dd05
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 52%
+source-wordcount: '317'
+ht-degree: 40%
 
 ---
 
 
-# Generische Schritte zur Anpassung von AEM Forms Workspace{#generic-steps-for-aem-forms-workspace-customization}
+# Generische Schritte zur Anpassung von AEM Forms Workspace {#generic-steps-for-aem-forms-workspace-customization}
 
 Für jede Anpassung gelten die folgenden generischen Schritte:
 
 1. Melden Sie sich bei CRXDE Lite an, indem Sie auf `https://'[server]:[port]'/lc/crx/de/index.jsp` zugreifen.
-1. Erstellen Sie einen Ordner mit dem Namen `ws`unter `/apps`, falls dieser nicht vorhanden ist. Klicken Sie auf **[!UICONTROL Alle speichern]**.
+1. Erstellen Sie einen Ordner `sling:Folder` mit dem Namen `ws` unter `/apps`, falls dieser nicht vorhanden ist. Klicken Sie zum Erstellen eines Ordners `sling:Folder` mit der rechten Maustaste auf den Ordner `apps` und wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Knoten erstellen]**. Geben Sie den Namen als `ws` ein, wählen Sie den Typ `sling:Folder` und klicken Sie auf **[!UICONTROL OK]**. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 1. Navigieren Sie zu `/apps/ws` und navigieren Sie zur Registerkarte **[!UICONTROL Zugriffskontrolle]**.
-1. Klicken Sie in der Liste **[!UICONTROL Zugriffskontrolle]** auf **[!UICONTROL +]**, um einen neuen Eintrag hinzuzufügen. Klicken Sie erneut auf **[!UICONTROL +]**.
+1. Wählen Sie die Option **[!UICONTROL Repository]**. Klicken Sie in der Liste **[!UICONTROL Zugriffskontrolle]** auf **[!UICONTROL +]**, um einen neuen Eintrag hinzuzufügen. Klicken Sie erneut auf **[!UICONTROL +]**.
 1. Suchen und wählen Sie den Prinzipal **PERM_WORKSPACE_USER**.
 
    ![Wählen Sie PERM_WORKSPACE_USER als Teil von allgemeinen Schritten, um HTML Workspace anzupassen](assets/perm_workspace_user.png)
 
 1. Weisen Sie dem Prinzipal die `jcr:read`-Berechtigung zu.
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
-1. Kopieren Sie die Dateien `GET.jsp` und `html.jsp`aus dem Ordner `/libs/ws`in den Ordner `/apps/ws`.
+1. Kopieren Sie die Dateien `GET.jsp`, `index` und `html.jsp` aus dem Ordner `/libs/ws` in den Ordner `/apps/ws`.
 1. Kopieren Sie den Ordner `/libs/ws/locales` im Ordner `/apps/ws`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 1. Aktualisieren Sie die Verweise und relativen Pfade in der Datei `GET.jsp` wie unten dargestellt und klicken Sie auf **[!UICONTROL Alle speichern]**.
 
@@ -64,7 +64,7 @@ Für jede Anpassung gelten die folgenden generischen Schritte:
 
    >[!NOTE]
    >
-   >Platzieren Sie den Eintrag für die benutzerdefinierte CSS-Datei hinter demjenigen für die Datei newStyle.css, wie oben gezeigt.
+   >Platzieren Sie den Eintrag der benutzerdefinierten CSS-Datei nach dem Eintrag von style.css, wie oben gezeigt.
 
 1. Ändern Sie in der Datei „apps/ws/html.jsp“ von
 
@@ -80,13 +80,11 @@ Für jede Anpassung gelten die folgenden generischen Schritte:
 
 1. Gehen Sie folgendermaßen vor:
 
-   1. Erstellen Sie einen Ordner mit dem Namen `js`unter `/apps/ws`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
+   1. Erstellen Sie einen Ordner mit dem Namen `js` unter `/apps/ws`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
-   1. Erstellen Sie einen Ordner mit dem Namen `libs`unter `/apps/ws/js`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
+   1. Erstellen Sie einen Ordner mit dem Namen `libs` unter `/apps/ws/js`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
-   1. Erstellen Sie einen Ordner mit dem Namen `jqueryui`unter `/apps/ws/js/libs`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
-
-   1. Kopieren Sie `/libs/ws/js/libs/jqueryui/jquery.ui.datepicker-ja.js` nach `/apps/ws/js/libs/jqueryui`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
+   1. Kopieren Sie den Ordner `/libs/ws/js/libs/jqueryui` in `/apps/ws/js/libs`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
 1. Führen Sie die folgenden Schritte für HTML-Anpassungen aus:
 
