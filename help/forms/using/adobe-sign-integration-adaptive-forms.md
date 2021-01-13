@@ -10,10 +10,10 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 93ee9338fc2e78d01a9b62e8040c4674262ef6be
+source-git-commit: c451948c43004d084bc3fce7a2c6ad99381f1ea8
 workflow-type: tm+mt
-source-wordcount: '939'
-ht-degree: 32%
+source-wordcount: '970'
+ht-degree: 31%
 
 ---
 
@@ -85,6 +85,9 @@ Nachdem die Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte au
    **na1** bezieht sich auf die Standarddatenbank-Shard.
 
    Sie können den Wert für die Datenbank-Shard ändern. Starten Sie den Server neu, um den neuen Wert für die Datenbank-Shard verwenden zu können.
+
+   >[!NOTE]
+   Vergewissern Sie sich, dass die Konfigurationen der Autoren- und Veröffentlichungsinstanzen auf dieselbe Freigabe verweisen. Wenn Sie mehrere Adobe Sign-Konfigurationen für ein Unternehmen erstellen, stellen Sie sicher, dass alle Konfigurationen dieselbe Freigabe verwenden.
 
 1. Geben Sie die in Schritt 8 kopierte **Client-ID** (auch als Anwendungs-ID bezeichnet) und **Clientgeheimnis** an. Wählen Sie die Option **[!UICONTROL auch für Anhänge aktivieren]**, um Dateien, die an einem adaptiven Formular angehängt sind, an ein entsprechendes Adobe Sign-Dokument, das zum Signiren geschickt wurde, anzuhängen.[!DNL Adobe Sign]
 
