@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 612d102b5925704ce459ad818554e487ec0d5355
+source-git-commit: c0530f7d280406e31d4813a179bc10756773d389
 workflow-type: tm+mt
 source-wordcount: '1898'
 ht-degree: 4%
@@ -19,7 +19,7 @@ ht-degree: 4%
 ---
 
 
-# Bereitstellen von Communities{#deploying-communities}
+# Bereitstellen von Communities {#deploying-communities}
 
 ## Voraussetzungen {#prerequisites}
 
@@ -218,7 +218,7 @@ Lesen Sie zum Aktualisieren der Plattform [Aktualisieren auf AEM Communities 6.5
 
 Wenn die gewählte Bereitstellung eine [Veröffentlichungsfarm](/help/communities/topologies.md#tarmk-publish-farm) ist, muss eine AEM Veröffentlichungsinstanz für Aktivitäten, die nicht auf allen Instanzen auftreten sollten, als **`primary publisher`** identifiziert werden, z. B. für Funktionen, die auf **Benachrichtigungen** oder **Adobe Analytics** basieren.
 
-Standardmäßig wird die OSGi-Konfiguration mit dem Kontrollkästchen `AEM Communities Publisher Configuration` konfiguriert, sodass alle Veröffentlichungsinstanzen in einer Veröffentlichungsfarm sich selbst als Primär identifizieren.**`Primary Publisher`**
+Standardmäßig wird die OSGi-Konfiguration mit dem Kontrollkästchen **`Primary Publisher`** konfiguriert, sodass alle Veröffentlichungsinstanzen in einer Veröffentlichungsfarm sich selbst als Primär identifizieren.`AEM Communities Publisher Configuration`
 
 Daher müssen Sie die Konfiguration für alle sekundären Veröffentlichungsinstanzen **bearbeiten, um das Kontrollkästchen **`Primary Publisher`**zu deaktivieren.**
 
