@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 0a6f50457efda42a9d496c0c9202cb7d7b8f6eb9
 workflow-type: tm+mt
-source-wordcount: '4718'
-ht-degree: 67%
+source-wordcount: '4974'
+ht-degree: 64%
 
 ---
 
@@ -609,6 +609,39 @@ Es gibt zahlreiche vorhandene Konfigurationen im Repository. Sie können einfach
 
    `//element(cq:dropTargets, cq:DropTargetConfig)`
 
+### Komponentenplatzhalter {#component-placeholders}
+
+Komponenten müssen immer HTML-Inhalte wiedergeben, die für den Autor sichtbar sind, auch wenn die Komponente keinen Inhalt hat. Andernfalls könnte es visuell aus der Benutzeroberfläche des Editors verschwinden, sodass es technisch vorhanden, aber auf der Seite und im Editor unsichtbar ist. In einem solchen Fall sind die Autoren nicht in der Lage, die leere Komponente auszuwählen und mit ihr zu interagieren.
+
+Aus diesem Grund sollten Komponenten einen Platzhalter wiedergeben, solange sie keine sichtbare Ausgabe wiedergeben, wenn die Seite im Seiteneditor wiedergegeben wird (wenn der WCM-Modus `edit` oder `preview` ist).
+Das typische HTML-Markup für einen Platzhalter ist Folgendes:
+
+```HTML
+<div class="cq-placeholder" data-emptytext="Component Name"></div>
+```
+
+Das typische HTML-Skript, das den obigen Platzhalter-HTML-Code wiedergibt, lautet wie folgt:
+
+```HTML
+<div class="cq-placeholder" data-emptytext="${component.properties.jcr:title}"
+     data-sly-test="${(wcmmode.edit || wcmmode.preview) && isEmpty}"></div>
+```
+
+Im vorherigen Beispiel ist `isEmpty` eine Variable, die nur dann wahr ist, wenn die Komponente keinen Inhalt hat und für den Autor unsichtbar ist.
+
+Um Wiederholungen zu vermeiden, empfiehlt Adobe, dass Komponentenimplementierer für diese Platzhalter eine HTML-Vorlage verwenden, [wie die von den Hauptkomponenten bereitgestellten.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+
+Die Verwendung der Vorlage im vorherigen Link erfolgt dann mit der folgenden HTML-Zeile:
+
+```HTML
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-call="${template.placeholder @ isEmpty=!model.text}"></sly>
+```
+
+Im vorherigen Beispiel ist `model.text` die Variable, die nur dann wahr ist, wenn der Inhalt Inhalte enthält und sichtbar ist.
+
+Ein Beispiel für die Verwendung dieser Vorlage ist in den Hauptkomponenten, [wie in der Titelkomponente zu finden.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
+
 ### Konfigurieren mit cq:EditConfig-Eigenschaften {#configuring-with-cq-editconfig-properties}
 
 ### cq:actions {#cq-actions}
@@ -999,7 +1032,7 @@ Der Knoten `cq:listeners` (Knotentyp `cq:EditListenersConfig`) definiert, was vo
 >
 >Bei verschachtelten Komponenten gibt es bestimmte Einschränkungen bezüglich der Aktionen, die als Eigenschaften auf dem Knoten `cq:listeners` definiert werden:
 >
->* Bei verschachtelten Komponenten müssen die Werte der folgenden Eigenschaften ** `REFRESH_PAGE` &lt;a2/> sein: >
+>* Bei verschachtelten Komponenten müssen die Werte der folgenden Eigenschaften ** `REFRESH_PAGE`  sein: >
 >  * `aftermove`
 >  * `aftercopy`
 
