@@ -9,10 +9,10 @@ topic-tags: develop
 discoiquuid: a20736b7-f7b4-4da1-aa32-2408049b1209
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 428d675bd254c18651c1188de26b706b5ad3d55c
+source-git-commit: 4d95d0e38acc54e1ebbb9f9e31761205533e99f9
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 82%
+source-wordcount: '1043'
+ht-degree: 81%
 
 ---
 
@@ -70,6 +70,7 @@ Einige der folgenden Einschränkungen, Empfehlungen und wichtigen Aspekte sind b
 
 * Es wird empfohlen, XSD-schemabasierte statt XFA-basierte adaptive Formulare für die Konfiguration von verzögertem Laden bei großen Formularen zu verwenden. Die Leistungsverbesserung aufgrund von verzögertem Laden ist in XFA-basierten adaptiven Formularen verhältnismäßiger geringer als in XSD-basierten adaptiven Formularen.
 * Konfigurieren Sie kein verzögertes Laden auf Fragmenten in einem adaptiven Formular, das **[!UICONTROL Responsive -alles auf einer Seite ohne Navigation]**-Layout für das Stammbedienfeld verwendet. Aufgrund der Konfiguration des responsiven Layouts werden alle Fragmente gleichzeitig in einem adaptiven Formular geladen. Es kann auch zu einer verminderten Leistung führen.
+* Es wird empfohlen, das verzögerte Laden des ersten Fragments in einem adaptiven Formular nicht zu konfigurieren.
 * Es wird empfohlen, verzögertes Laden nicht in Fragmenten im ersten Bereich zu konfigurieren, das beim Laden des adaptiven Formulars angezeigt wird.
 * Verzögertes Laden wird für bis zu zwei Ebenen in der Fragmenthierarchie unterstützt.
 * Vergewissern Sie sich, dass als „global“ markierte Felder im gesamten adaptiven Formular eindeutig sind.
