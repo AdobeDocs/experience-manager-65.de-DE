@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: Security
 discoiquuid: badfaa18-472e-4777-a7dc-9c28441b38b7
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 741ba6f6ef3270414c0ddabb1a1d02d5c436b7d9
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 52%
+ht-degree: 48%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 52%
 
 Der Content-Disposition-Filter ist eine Sicherheitsfunktion zum Schutz vor XSS-Angriffen auf SVG-Dateien.
 
-Nach der Installation blockiert der Filter den Zugriff auf alle Assets. Sie können dann beispielsweise keine PDF-Dateien online anzeigen. In diesem Abschnitt wird beschrieben, wie Sie den Filter Ihren Anforderungen entsprechend konfigurieren.
+Nach der Installation blockiert der Filter den Zugriff auf alle Assets. Beispielsweise konnte eine PDF-Datei nicht online Ansicht werden. In diesem Abschnitt wird beschrieben, wie Sie den Filter Ihren Anforderungen entsprechend konfigurieren.
 
 ## Konfigurieren des Content-Disposition-Filters {#configure-content-disposition-filter}
 
