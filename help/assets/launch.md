@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 71e827dc17fd1c36230cb8d26b68d7f41c584e60
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '6605'
+source-wordcount: '6596'
 ht-degree: 94%
 
 ---
@@ -418,7 +418,7 @@ Sie werden die Integration in folgenden Adobe-Produkten konfigurieren:
 
 Wenn diese Integrationslösung mit AEM Sites verwendet wird, muss außerdem die folgende Konfiguration durchgeführt werden:
 
-* Adobe I/O Console – Erstellung der Integration für Adobe Launch.
+* [!DNL Adobe I/O] Konsole - Die Integration wird für den Adobe-Start erstellt.
 * AEM-Autorenknoten – IMS-Konfiguration und Adobe Launch-Cloud-Konfiguration.
 
 Vergewissern Sie sich, dass Sie bei der Konfiguration Zugriff auf eine Firma in Adobe Experience Cloud haben, für die Adobe Analytics und Adobe Launch bereits aktiviert sind.
@@ -693,7 +693,7 @@ Die AEM-Konfiguration besteht aus den folgenden zwei Hauptschritten:
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
-1. Navigieren Sie mit einer neuen Browser-Registerkarte zur [Adobe I/O Console](https://console.adobe.io/integrations).
+1. Navigieren Sie in einer neuen Browserregisterkarte zum Ordner [[!DNL Adobe I/O] Console](https://console.adobe.io/integrations).
 
 1. Klicken Sie auf der Seite **[!UICONTROL Adobe I/O Console-Integrationen]** rechts oben auf **[!UICONTROL Neue Integration]**.
 1. Vergewissern Sie sich, dass im Dialogfeld **[!UICONTROL Neue Integration erstellen]** die Optionsschaltfläche **[!UICONTROL Zugriff auf API]** ausgewählt ist, und klicken Sie dann auf **[!UICONTROL Weiter]**.
@@ -849,4 +849,4 @@ Sie wird jedoch im AEM-Veröffentlichungsknoten unterstützt. Unter Verwendung d
 
 Sie können diese Beschränkung umgehen, indem Sie die Entwicklungs- oder Staging-URL der Adobe Launch-Bibliothek in der oben stehenden Adobe Launch Cloud-Konfiguration für den AEM-Veröffentlichungsknoten angeben. Dadurch verwendet der AEM-Veröffentlichungsknoten die Entwicklungs- oder Staging-Version der Adobe Launch-Bibliothek.
 
-Weitere Informationen zum Einrichten der Adobe Launch Cloud-Konfiguration finden Sie unter [AEM mit Adobe Launch über Adobe I/O integrieren](https://helpx.adobe.com/de/experience-manager/using/aem_launch_adobeio_integration.html).
+Weitere Informationen zum Einrichten der Adobe Launch Cloud-Konfiguration finden Sie unter [AEM mit Adobe Launch über integrieren [!DNL Adobe I/O].](https://helpx.adobe.com/de/experience-manager/using/aem_launch_adobeio_integration.html)
