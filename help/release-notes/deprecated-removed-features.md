@@ -2,10 +2,10 @@
 title: Veraltete und entfernte Funktionen in Adobe Experience Manager 6.5.
 description: Spezifische Versionshinweise zu veralteten und entfernten Funktionen von Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 1e6feac534fe990d614997c4bd3ab999a4a8d479
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '1722'
-ht-degree: 44%
+source-wordcount: '1719'
+ht-degree: 42%
 
 ---
 
@@ -34,7 +34,7 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 | Assets | Wenn ein Benutzer für `/content/dam/collections` nicht über ausreichende (Lese- und Schreibberechtigungen verfügt, kann er keine Sammlung erstellen. | Einhaltung der Zugangssteuerungseinrichtung für den Benutzer und Sicherstellung entsprechender Berechtigungen.  |
 | Adobe Search &amp; Promote | Die Integration mit Adobe Search&amp;Promote ist veraltet. Adobe plant keine weiteren Verbesserungen an der Search &amp; Promote-Integration. Beachten Sie, dass die Search &amp; Promote-Integration zwar veraltet ist, aber weiterhin umfassend unterstützt wird. |  |
 | DTM Tag Manager | Die Integration in DTM (Dynamic Tag Manager) ist als veraltet gekennzeichnet. | Steigen Sie auf Adobe Experience Platform als Tagmanager um.. |
-| Adobe Target | Durch das Hinzufügen der Möglichkeit in AEM 6.5, dass AEM über die Adobe I/O-basierte Adobe Target Standard-API (Rest-API) eine Verbindung zum Adobe Target-Service herstellt, ist die Methode unter Verwendung der Target Classic-API (AML) veraltet. | Konfigurieren Sie die Integration auf [verwenden Sie die neue API](https://helpx.adobe.com/de/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html). |
+| Adobe Target | Die Zielgruppe Classic API (XML)-Methode wird nicht mehr unterstützt, da AEM mit der [!DNL Adobe I/O]-basierten Adobe Target Standard-API (Rest-API) in AEM 6.5 eine Verbindung zum Adobe Target-Dienst herstellen können. | Konfigurieren Sie die Integration auf [verwenden Sie die neue API](https://helpx.adobe.com/de/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html). |
 | Adobe Target | Die Verwendung der `mbox.js`-basierten Integration mit Adobe Target in AEM ist veraltet. | Wechseln Sie zu `at.js` 1.x. |
 | Commerce | [CIF ](https://github.com/adobe/commerce-cif-api) RESTwurde 2018 als eine Reihe von Mikrodiensten bereitgestellt, um Integrationen zwischen AEM und Commerce-Engines zu ermöglichen. Nachdem Adobe Mitte 2018 Magento erlangt hatte, entschied sich die Adobe aus zwei Gründen, ihren Ansatz zu ändern. Magento verfügt über einen eigenen Satz Commerce-APIs (REST und GraphQL) und es empfiehlt sich nicht, zwei Gruppen von APIs zu verwalten. Die Markttrends deuten darauf hin, dass Kunden sich auf GraphQL zubewegen, weil es eine effizientere Art ist, Daten abzufragen. 2019 hat die Adobe das neue Commerce Integration Framework unter Verwendung der GraphQL APIs von Magento als Wahrheitsquelle veröffentlicht. Adobe plant keine weiteren Investitionen in CIF REST. Kunden wird dringend empfohlen, die Ersatzlösung zu verwenden. | Bei AEM-Magento-Integrationen wechseln Sie zu [AEM CIF-Archetype](https://github.com/adobe/aem-cif-project-archetype) und [AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components). Siehe AEM und Magento-Integration [mit Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md). Die Unterstützung von Drittanbieterintegrationen (außer Magento) mit dem neuen Ansatz steht auf unserem Fahrplan. |
 | Komponenten (AEM Sites) | Adobe plant keine weiteren Verbesserungen an den meisten in `/libs/foundation/components` gespeicherten Foundation-Komponenten. Suchen Sie im Komponentenordner nach der Eigenschaft `cq:deprecated` und `cq:deprecatedReason`. AEM 6.5 enthält die Foundation-Komponenten, und Kunden, die von früheren Versionen aktualisieren, können diese weiterhin wie bisher verwenden. Darüber hinaus werden die Foundation-Komponenten vollständig unterstützt, auch wenn sie nicht mehr unterstützt werden. | Adobe empfiehlt die Verwendung der Kernkomponenten für zukünftige Projekte. Bestehende Sites können unverändert bleiben oder die [AEM Tools Suite modernisieren](https://github.com/adobe/aem-modernize-tools) verwenden, um die Site für die Verwendung der Kernkomponenten umzugestalten. |
