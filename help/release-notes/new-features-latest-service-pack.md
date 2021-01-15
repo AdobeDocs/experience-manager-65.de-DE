@@ -4,9 +4,9 @@ description: Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 30701cfdb36e5caf606e31564179a632b0de9fb5
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '2818'
+source-wordcount: '2815'
 ht-degree: 5%
 
 ---
@@ -90,7 +90,7 @@ Der Vorgang &quot;Verschieben der Seite&quot;ist jetzt im asynchronen Modus verf
 
 * [!DNL Adobe Experience Manager Experience Fragments] in  [!DNL Adobe Target] Arbeitsbereiche exportiert werden, werden jetzt als eindeutige Angebot- und Angebot-Quellen in angezeigt  [!DNL Target].
 
-* Multi-Site-Manager - Der Veröffentlichungsauslöser löscht jetzt eine Komponente aus der veröffentlichten Seite, wenn eine Komponente aus der Quellseite gelöscht wird.
+* Multi-Site-Manager - Der Trigger &quot;Veröffentlichen&quot;löscht jetzt eine Komponente aus der veröffentlichten Seite, wenn eine Komponente aus der Quellseite gelöscht wird.
 
 * Multi-Site-Manager: Wenn der Name einer lokalen Komponente in einem [!UICONTROL Live Copy] mit dem Namen einer Komponente im Entwurf identisch ist und die Komponente aus dem Entwurf herausgegeben wird, wird der Begriff `_msm_moved` jetzt dem Namen der lokalen Komponente hinzugefügt.
 
@@ -168,7 +168,7 @@ Die Unterstützung für 3D-Bilder in [!DNL Dynamic Media] ermöglicht es Kunden,
 
 #### [!DNL Experience Manager Assets] mit [!DNL Brand Portal] (6.5.4.0) {#configure-assets-bp} konfigurieren
 
-Der Kanal für die Autorisierung zwischen [!DNL Experience Manager Assets] und [!DNL Brand Portal] wird geändert. Zuvor wurde [!DNL Brand Portal] über Legacy OAuth Gateway in der klassischen Benutzeroberfläche konfiguriert, die den Austausch von JWT-Token verwendet, um ein IMS-Zugriffstoken zur Autorisierung zu erhalten. [!DNL Experience Manager Assets] ist jetzt  [!DNL Brand Portal] über Adobe I/O konfiguriert, das ein IMS-Token zur Autorisierung Ihres  [!DNL Brand Portal] Mieters erhält.
+Der Kanal für die Autorisierung zwischen [!DNL Experience Manager Assets] und [!DNL Brand Portal] wird geändert. Zuvor wurde [!DNL Brand Portal] über Legacy OAuth Gateway in der klassischen Benutzeroberfläche konfiguriert, die den Austausch von JWT-Token verwendet, um ein IMS-Zugriffstoken zur Autorisierung zu erhalten. [!DNL Experience Manager Assets] ist jetzt mit  [!DNL Brand Portal] through konfiguriert  [!DNL Adobe I/O], das ein IMS-Token zur Autorisierung Ihres  [!DNL Brand Portal] Mieters abruft.
 
 Die Schritte zum Konfigurieren von [!DNL Experience Manager Assets] mit [!DNL Brand Portal] unterscheiden sich je nach Ihrer [!DNL Experience Manager]-Version und je nachdem, ob Sie zum ersten Mal konfigurieren oder die vorhandenen Konfigurationen aktualisieren. Weitere Informationen finden Sie unter [Experience Manager-Assets mit Markenportal konfigurieren](https://docs.adobe.com/content/help/de-DE/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html).
 
