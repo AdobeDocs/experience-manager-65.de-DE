@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Frühere Service Pack-Versionshinwei
 description: Versionshinweise für Service Packs  [!DNL Adobe Experience Manager] 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 544d99921a3b487bf8ae64111a8568f8f02fcd03
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '14953'
+source-wordcount: '14944'
 ht-degree: 20%
 
 ---
@@ -19,7 +19,7 @@ Adobe Experience Manager 6.5.6.0 ist ein wichtiges Update, das neue Funktionen, 
 
 Die wichtigsten Funktionen und Verbesserungen, die in Adobe Experience Manager 6.5.6.0 eingeführt wurden, umfassen:
 
-* Veröffentlichen oder rückgängig machen Sie die Veröffentlichung von Assets mithilfe des Assistenten [!DNL Experience Manager]Schnellveröffentlichung[!DNL Dynamic Media] oder [!UICONTROL Veröffentlichung verwalten] selektiv.
+* Veröffentlichen oder rückgängig machen Sie die Veröffentlichung von Assets mithilfe des Assistenten [!UICONTROL Schnellveröffentlichung] oder [!UICONTROL Veröffentlichung verwalten] selektiv.[!DNL Experience Manager][!DNL Dynamic Media]
 
 * Verwenden Sie die [!DNL Dynamic Media]-Benutzeroberfläche, um zwischengespeicherte Content Versand Network (CDN) ungültig zu machen.
 
@@ -633,7 +633,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in der Version 6.5.5.0.[!
 * Der interne Cache wird gelöscht, wenn eine Seite mit einer Adobe Target-Komponente veröffentlicht wird (NPR-33162).
 * Die Integration mit Adobe Target funktioniert nicht auf [!DNL Windows Internet Explorer] 11 (NPR-33111).
 * Beim Konfigurieren von Adobe Target werden die Felder [!UICONTROL Firma] und [!UICONTROL Report Suite] bei der Auswahl einer Berichte-Quelle (NPR-32502) nicht angezeigt.
-* Beim Exportieren von [!DNL Experience Fragments] mit Adobe I/O werden Metadaten wie &quot;Quellprodukt&quot;nicht nach Adobe Target exportiert (NPR-32159).
+* Beim Exportieren von [!DNL Experience Fragments] mit [!DNL Adobe I/O] werden Metadaten wie &quot;Quellprodukt&quot;nicht nach Adobe Target exportiert (NPR-32159).
 * Autorisierte IMS-Benutzer in der lokalen Experience Manager-Administratorgruppe können keine IMS-Konfigurationen erstellen oder ändern (NPR-33045).
 * Adobe Startkonfigurationsseite zeigt nicht alle Datensätze an (NPR-33011).
 * Benutzer in der Gruppe &quot;Inhaltsersteller&quot;können die Eigenschaften einer Adobe Target-Komponente aufgrund eines JavaScript-Fehlers (NPR-32996) nicht bearbeiten.
@@ -704,7 +704,7 @@ Adobe Experience Manager 6.5.4.0 ist ein wichtiges Update, das neue Funktionen, 
 
 Zu den wichtigsten Funktionen und Verbesserungen, die in Adobe Experience Manager 6.5.4.0 eingeführt wurden, zählen:
 
-* Adobe Experience Manager Assets wird jetzt über die Adobe I/O Console mit dem Markenportal konfiguriert.
+* Adobe Experience Manager Assets wird jetzt über die [!DNL Adobe I/O]-Konsole mit dem Markenportal konfiguriert.
 
 * Ein neuer Schritt [Druckbare Ausgabe generieren](../forms/using/aem-forms-workflow-step-reference.md) ist jetzt für Adobe Experience Manager Forms Workflows verfügbar.
 
@@ -770,7 +770,7 @@ Eine vollständige Liste der in den neuesten Service Packs eingeführten Funktio
 
 ### Assets {#assets-6540-enhancements}
 
-* Die Schaltfläche zum Auslösen des Workflows auf der Seite zur Asset-Sammlung ist deaktiviert (NPR-32471).
+* Die Schaltfläche zum Trigger-Workflow auf der Seite zur Asset-Erfassung ist deaktiviert (NPR-32471).
 
 * Ein Ordner ohne Namen wird in SPS (Scene7 Publishing System) erstellt, während ein Asset in Experience Manager mit Dynamic Media Scene7-Konfiguration (NPR-32440) von einem Ordner in einen anderen verschoben wird.
 
@@ -868,7 +868,7 @@ Eine vollständige Liste der in den neuesten Service Packs eingeführten Funktio
 
 ### Brand Portal {#assets-brand-portal-6540}
 
-* Markenportalbenutzer können bei einem Upgrade auf Adobe I/O am Experience Manager 6.5.4 (CQDOC-15655) keine Beitragsordnerelemente für [!DNL Assets] veröffentlichen. Für eine sofortige Fehlerbehebung in Experience Manager 6.5.4 wird empfohlen, [den Hotfix](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) herunterzuladen und auf Ihrer Autoreninstanz zu installieren.
+* Markenportalbenutzer können bei einem Upgrade auf [!DNL Adobe I/O] auf Experience Manager 6.5.4 (CQDOC-15655) keine Beitragsordnerelemente für [!DNL Assets] veröffentlichen. Für eine sofortige Fehlerbehebung in Experience Manager 6.5.4 wird empfohlen, [den Hotfix](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) herunterzuladen und auf Ihrer Autoreninstanz zu installieren.
 
 * Popup-Schemas für Metadaten sind in den Asset-Eigenschaften nicht sichtbar (CQ-4283287).
 
@@ -950,7 +950,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Möglichkeit zur Freigabe von Inbox- oder Posteingangselementen ](../forms/using/configure-shared-queues-osgi.md) für andere Benutzer in [!DNL Experience Manager] Workflows.[
 
-* Möglichkeit, interaktive Kommunikation im Stapelmodus zu generieren.](../forms/using/generate-multiple-interactive-communication-using-batch-api.md)[
+* Möglichkeit, interaktive Kommunikation im Stapelmodus zu generieren.[](../forms/using/generate-multiple-interactive-communication-using-batch-api.md)
 
 * Die Version von jQuery im Paket ContextHub wurde auf 3.4.1 aktualisiert.
 
@@ -1257,7 +1257,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 * Das Metadatenschemaformular für Ordner erkennt den Datentyp nicht automatisch, was zur Folge hat, dass es bei der Formularübermittlung den zugehörigen TypeHint nicht erstellt. NPR-30599: Hotfix für CQ-4275227
 * In der Autoren-Benutzeroberfläche für DMS7 sind die Optionen zum Zuschneiden und Drehen von Assets deaktiviert. NPR-30118: Hotfix für CQ-4273221
 * Die Funktion &quot;Link freigeben&quot;funktioniert nicht bei [!DNL Experience Manager]-Instanz mit DMS7-Konfiguration. NPR-30080, NPR-30492: Hotfix für CQ-4273651
-* Durch Hinzufügen der Komponente [!DNL Dynamic Media]-Scene7 zur Seite und anschließendes Veröffentlichen der Seite wird nicht jedes Mal die dmscene7-Konfiguration ausgelöst. NPR-30641: Hotfix für CQ-4275962
+* Durch Hinzufügen der Komponente [!DNL Dynamic Media]-Scene7 zur Seite und anschließendes Veröffentlichen der Seite wird die dmscene7-Konfiguration nicht jedes Mal Trigger. NPR-30641: Hotfix für CQ-4275962
 * Es wurde ein IPSJobJournal in [!DNL Experience Manager] hinzugefügt, um pro verarbeitetem Profil nur einen IPS-Auftrag (Intrusion Prevention Systems) zu erstellen. NPR-30490: Hotfix für CQ-4273614
 * [!DNL Dynamic Media]: Es wurden Standard-Filter hinzugefügt, um Assets von der Replizierung auf den  [!DNL Experience Manager] Veröffentlichungsknoten auszuschließen. NPR-30538: Hotfix für CQ-4274678
 * Ein Workflow zur erneuten, externen Verarbeitung wurde zur Unterstützung für mehrere Ressourcen eingeführt, der die Nutzung von Ordnern als Nutzlast ermöglicht. Der Workflow umfasst zwei Schritte: Die erneute Verarbeitung von Assets ohne Handles erfolgt über die Zuordnung von Metadaten zum nächsten Schritt, das erneute Hochladen aller Assets ohne Asset-Handle zu S7 dann in einem einzelnen IPS-Auftrag. Weitere Informationen finden Sie unter [!DNL Dynamic Media]-Cloud Services konfigurieren. NPR-30489: Hotfix für CQ-4272903
