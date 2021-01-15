@@ -3,17 +3,17 @@ title: Optimierte Smart-Tags
 description: Optimierte Smart-Tags
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e124025295f29d6f3999dc52467301d48bceee75
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '1525'
-ht-degree: 65%
+source-wordcount: '1514'
+ht-degree: 57%
 
 ---
 
 
 # Intelligente Tags {#enhanced-smart-tags} verstehen, anwenden und kuratieren
 
-Organisationen, die mit digitalen Assets arbeiten, verwenden zunehmend taxonomiegesteuertes Vokabular in Asset-Metadaten. Im Grunde umfasst dieses eine Liste von Schlüsselbegriffen, die Mitarbeiter, Partner und Kunden häufig verwenden, um sich auf digitale Assets einer bestimmten Klasse zu beziehen und nach diesen zu suchen. Das Tagging mit einem taxonomiegesteuerten Vokabular stellt sicher, dass diese Begriffe im Rahmen von Tag-basierten Suchen einfach identifiziert und abgerufen werden können.
+Organisationen, die mit digitalen Assets arbeiten, verwenden zunehmend taxonomiegesteuertes Vokabular in Asset-Metadaten. Im Grunde umfasst dieses eine Liste von Schlüsselbegriffen, die Mitarbeiter, Partner und Kunden häufig verwenden, um sich auf digitale Assets einer bestimmten Klasse zu beziehen und nach diesen zu suchen. Durch das Taggen von Assets mit einem taxonomisch gesteuerten Vokabular wird sichergestellt, dass Assets leicht identifiziert und abgerufen werden können.
 
 Verglichen mit dem Vokabular natürlicher Sprachen hilft das Tagging digitaler Assets anhand einer Geschäftstaxonomie dabei, sie am Geschäft eines Unternehmens auszurichten, und stellt dabei sicher, dass nur die relevantesten Assets bei der Suche angezeigt werden.
 
@@ -25,7 +25,7 @@ Sobald ein Tag trainiert wurde und bereit ist, kann der Dienst dieses Tag über 
 
 Im Hintergrund verwendet der Smart Content Service das Adobe Sensei AI-Framework, um seinen Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Geschäftstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden.
 
-Smart Content Service ist ein Cloud-Dienst, der auf Adobe I/O gehostet wird. Zur Verwendung in [!DNL Adobe Experience Manager] muss der Systemadministrator Ihre [!DNL Experience Manager]-Bereitstellung in Adobe I/O integrieren.
+Smart Content Service ist ein Cloud-Dienst, der auf [!DNL Adobe I/O] gehostet wird. Zur Verwendung in [!DNL Adobe Experience Manager] muss der Systemadministrator Ihre [!DNL Experience Manager]-Bereitstellung mit [!DNL Adobe I/O] integrieren.
 
 Die wichtigsten Schritte beim Verwenden des Smart Content Service sind:
 
@@ -38,15 +38,15 @@ Die wichtigsten Schritte beim Verwenden des Smart Content Service sind:
 
 ## Voraussetzungen {#prerequisites}
 
-Stellen Sie vor der Verwendung des Smart Content Service Folgendes sicher, um eine Integration in Adobe I/O zu erstellen:
+Bevor Sie den Smart Content Service verwenden können, stellen Sie Folgendes sicher, um eine Integration auf [!DNL Adobe I/O] zu erstellen:
 
 * Es ist ein Adobe ID-Konto mit Administratorrechten für die Organisation vorhanden.
 * Der Smart Content Service ist für Ihre Organisation aktiviert.
-* Das Smart Content Services-Basispaket kann nur einer Bereitstellung hinzugefügt werden, für die ein [!DNL Sites]-Basispaket und [!DNL Assets]-Add-on lizenziert wurden.
+* Das Smart Content Services-Basispaket kann nur einer Bereitstellung hinzugefügt werden, bei der ein [!DNL Adobe Experience Manager Sites]-Basispaket und [!DNL Assets]-Add-on lizenziert wurden.
 
 ## Einstieg {#onboarding}
 
-Der Smart Content Service steht als Add-on zu [!DNL Experience Manager] zum Kauf zur Verfügung. Nach dem Kauf wird eine E-Mail mit einem Link zu Adobe I/O an den Administrator Ihres Unternehmens gesendet.
+Der Smart Content Service steht als Add-on zu [!DNL Experience Manager] zum Kauf zur Verfügung. Nach dem Kauf wird eine E-Mail mit einem Link zu [!DNL Adobe I/O] an den Administrator Ihres Unternehmens gesendet.
 
 Der Administrator kann auf den Link folgen, um den Smart Content Service mit [!DNL Experience Manager] zu integrieren. Informationen zur Integration des Dienstes mit [!DNL Experience Manager Assets] finden Sie unter [Intelligente Tags konfigurieren](config-smart-tagging.md).
 
@@ -73,11 +73,11 @@ Fügen Sie die Assets einem Ordner hinzu und wenden Sie die Tags über die Eigen
 
 ## Verstehen Sie die [!DNL Experience Manager] Suchergebnisse mit Smart-Tags {#understandsearch}
 
-Standardmäßig kombiniert die [!DNL Experience Manager]-Suche die Suchbegriffe mit einer `AND`-Klausel. Dieses Standardverhalten ändert sich durch die Verwendung von Smart-Tags nicht. Durch die Verwendung von Smart-Tags wird eine zusätzliche `OR`-Klausel hinzugefügt. Damit wird jeder Suchbegriff aus den angewandten Smart-Tags gefunden. Suchen Sie beispielsweise nach `woman running`. Assets, die in den Metadaten nur das Keyword `woman`oder `running` aufweisen, werden standardmäßig nicht in den Suchergebnissen angezeigt. Ein Asset, das über Smart-Tags mit `woman` oder `running` getaggt wurde, wird bei dieser Suchanfrage jedoch angezeigt. Die Suchergebnisse sind also eine Kombination aus
+Standardmäßig kombiniert die [!DNL Experience Manager]-Suche die Suchbegriffe mit einer `AND`-Klausel. Dieses Standardverhalten ändert sich durch die Verwendung von Smart-Tags nicht. Durch Verwendung von Smarttags wird eine zusätzliche `OR`-Klausel hinzugefügt, um Suchbegriffe zu finden, die mit den Smarttags in Zusammenhang stehen. Suchen Sie beispielsweise nach `woman running`. Assets, die in den Metadaten nur das Keyword `woman`oder `running` aufweisen, werden standardmäßig nicht in den Suchergebnissen angezeigt. Ein Asset, das über Smart-Tags mit `woman` oder `running` getaggt wurde, wird bei dieser Suchanfrage jedoch angezeigt. Die Suchergebnisse sind also eine Kombination aus
 
-* Assets mit den Keywords `woman` und `running` in den Metadaten.
+* Assets mit den Schlüsselwörtern `woman` und `running` in den Metadaten.
 
-* Assets, die über Smart-Tags mit einem der Keywords getaggt wurden.
+* Assets intelligent mit einem der Suchbegriffe getaggt.
 
 Die Suchergebnisse, die in Metadatenfeldern alle Suchbegriffe aufweisen, werden zuerst angezeigt. Danach folgen die Suchergebnisse, die einem oder mehr Suchbegriffen in den Smart-Tags entsprechen. Im obigen Beispiel werden die Suchergebnisse ungefähr in dieser Reihenfolge angezeigt:
 
@@ -87,7 +87,7 @@ Die Suchergebnisse, die in Metadatenfeldern alle Suchbegriffe aufweisen, werden 
 
 >[!CAUTION]
 >
->Wenn die Lucene-Indizierung von [!DNL Adobe Experience Manager] ausgeführt wird, funktioniert die Suche auf Basis von Smart-Tags nicht wie erwartet.
+>Wenn die Lucene-Indizierung von [!DNL Adobe Experience Manager] ausgeführt wird, funktioniert die Suche auf der Grundlage von Smart-Tags nicht wie erwartet.
 
 ## Taggen Sie Assets automatisch {#tagging-assets-automatically}
 
@@ -107,7 +107,7 @@ Wenn diese Option für einen Ordner ausgewählt ist, werden die Assets im Ordner
 
 ### Tagging bei Bedarf {#on-demand-tagging}
 
-Sie können den Tag-Arbeitsablauf über die Arbeitsablaufkonsole oder die Zeitleiste auslösen, um Ihre Assets sofort zu taggen.
+Sie können den Tag-Arbeitsablauf über die Arbeitsablaufkonsole oder die Zeitleiste Trigger haben, um Ihre Assets sofort mit Tags zu versehen.
 
 >[!NOTE]
 >
@@ -140,7 +140,7 @@ Sie können den Tag-Arbeitsablauf über die Arbeitsablaufkonsole oder die Zeitle
 
 >[!NOTE]
 >
->In den nachfolgenden Tagging-Zyklen werden nur die geänderten Assets erneut mit neu trainierten Tags markiert. Selbst unveränderte Assets werden jedoch markiert, wenn das Intervall zwischen dem letzten und dem aktuellen Tagging-Zyklus des Tagging-Workflows 24 Stunden überschreitet. Bei periodischen Tagging-Workflows werden unveränderte Assets mit Tags versehen, wenn das Intervall 6 Monate überschreitet.
+>In den nachfolgenden Tagging-Zyklen werden nur die geänderten Assets erneut mit neu geschulten Tags versehen. Selbst unveränderte Assets werden jedoch mit Tags versehen, wenn die Lücke zwischen der letzten und der aktuellen Tagging-Zykluszeit für den Tag-Arbeitsablauf 24 Stunden überschreitet. Beim regelmäßigen Tagging Workflows werden unveränderte Assets mit Tags versehen, wenn die Zeitspanne sechs Monate überschreitet.
 
 ## Kuratieren oder Moderieren der angewendeten Smarttags {#manage-smart-tags}
 
