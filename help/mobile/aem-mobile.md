@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: administering-on-demand-services-app
 discoiquuid: 5e1e6a51-67e1-42e3-bcb0-e16bc92c9cb3
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a876a1a8d4aeb9e9a94c93a16742a4058307b0a8
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 7%
@@ -53,7 +53,7 @@ Ein AEM Administrator ist beim Erstellen einer App mit AEM Mobile On-demand Serv
 
 * [Konfigurieren von Benutzer- und Benutzergruppen](/help/mobile/aem-mobile-configure-users.md)
 * [Vorschau mit Preflight](/help/mobile/aem-mobile-manage-ondemand-services.md)
-* [Verwalten von Content Services](//help/mobile/developing-content-services.md)
+* [Verwalten von Content Services](/help/mobile/developing-content-services.md)
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
