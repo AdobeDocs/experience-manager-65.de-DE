@@ -4,9 +4,9 @@ description: Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
+source-git-commit: 65a92d86a34ea7796f515178622332d6fbe31a39
 workflow-type: tm+mt
-source-wordcount: '2815'
+source-wordcount: '2770'
 ht-degree: 5%
 
 ---
@@ -21,10 +21,6 @@ ht-degree: 5%
 Dieser Artikel hebt die Funktionen hervor, die im neuesten 6.5 Service Pack, den [Schlüsselfunktionen enthalten sind, die in den vorherigen 6.5 Service Packs](#key-features-previous-service-packs) enthalten sind, und den [wichtigen AEM seit der letzten Service Pack-Version](#key-releases-since-last-sp) enthalten sind.
 
 ## Adobe [!DNL Experience Manager Sites] {#aem-sites}
-
-### Sortieren Sie die für die Einführung verfügbaren Live Copy-Seiten.{#sort-livecopy-pages}
-
-Sie können jetzt die für die Aktualisierung verfügbaren Live Copy-Seiten mit den Eigenschaften [!UICONTROL Name], [!UICONTROL Letztes geändertes Datum] und [!UICONTROL Letztes Rollout-Datum] sortieren. Das [!UICONTROL Letzte Rollout-Datum] für eine Seite ist eine neue Eigenschaft, die in dieser Version eingeführt wurde.
 
 ### Verfügbarkeit von Seitenverschiebungen und MSM-Rollouts als asynchrone Vorgänge {#page-moves-msm-asynchronous}
 
