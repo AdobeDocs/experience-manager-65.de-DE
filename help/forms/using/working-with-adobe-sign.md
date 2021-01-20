@@ -10,10 +10,10 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70fff9b4029ba70fe0667dafa69fc6172f4b1733
+source-git-commit: 77c3624a780bd0d2e3bb3e82004cce73e5b66b32
 workflow-type: tm+mt
-source-wordcount: '3755'
-ht-degree: 39%
+source-wordcount: '3827'
+ht-degree: 38%
 
 ---
 
@@ -119,7 +119,7 @@ Gehen Sie wie folgt vor, um einem adaptiven Formular Felder hinzuzufügen und ei
    >[!NOTE]
    >
    >    * Die Verwendung des Blocks [!DNL Adobe Sign] ist nicht zwingend erforderlich, um [!DNL Adobe Sign] in einem adaptiven Formular zu verwenden. Wenn Sie den Unterzeichner nicht mit [!DNL Adobe Sign] blockieren und Felder hinzufügen, wird das Standardunterschriftsfeld unten in den unterschreibenden Dokumenten angezeigt.
-   >    * Verwenden Sie den Block [!DNL Adobe Sign] nur für die adaptiven Formulare, die automatisch Dokument aus Datensatz generieren. Wenn Sie eine benutzerdefinierte XDP zum Generieren eines Dokuments aus Datensatz oder eines adaptiven Formulars verwenden, ist kein [!DNL Adobe Sign]-Block erforderlich.
+   >    * Verwenden Sie den Block [!DNL Adobe Sign] nur für die adaptiven Formulare, die automatisch Dokument aus Datensatz generieren. Wenn Sie eine benutzerdefinierte XDP zum Generieren eines Dokuments aus Datensatz oder eines adaptiven Formulars verwenden, wird der Block [!DNL Adobe Sign] nicht unterstützt.
 
 
 1. Wählen Sie die Komponente **[!UICONTROL Adobe Sign Block]** und tippen Sie auf das Symbol **Bearbeiten** ![aem_6_3_edit](assets/aem_6_3_edit.png). Es werden Optionen zum Hinzufügen von Feldern und zum Formatieren der Darstellung von Feldern angezeigt.
@@ -300,7 +300,8 @@ Führen Sie die folgenden Schritte aus, um die Signaturschritt-Komponente zu kon
       > Einige bewährte Verfahren sind:
    > * Das Bedienfeld für adaptive Formulare, das den Unterschriftsschritt enthält, befindet sich immer im letzten oder zweiten Bereich eines adaptiven Formulars. Es kann nur dann der zweite letzte Bereich sein, wenn das letzte Bedienfeld den Übersichtsschritt enthält.
    > * Das Bedienfeld, das die Komponente &quot;Signature&quot;oder &quot;Summary&quot;enthält, kann keine andere Komponente enthalten.
-   > * Bei adaptiven Formularen mit Unterschriftsschritt kann keine Senden-Schaltfläche verwendet werden. Die Übermittlung erfolgt über einen Hintergrunddienst oder den Übersichtsschritt.
+   > * Bei adaptiven Formularen mit Unterschriftsschritt kann keine Senden-Schaltfläche verwendet werden.
+   > * Die Übermittlung der adaptiven Formulare mit dem Unterschriftsschritt erfolgt über einen Hintergrunddienst oder den Übersichtsschritt. Wenn es einen konfigurierten Unterzeichner gibt, der auch das Formular ausfüllt, besteht der Vorteil bei der Verarbeitung der Übermittlung des adaptiven Formulars mit dem Übersichtsschritt darin, dass sofort ausgewertet wird, dass der Unterzeichner das Formular unterzeichnet hat und die Übermittlungsaktion aufgerufen wird. Ein Hintergrunddienst benötigt mehr Zeit, um zu prüfen, ob alle konfigurierten Unterzeichner das Formular unterzeichnet haben und die Übermittlung des adaptiven Formulars verzögert wird.
    > * Entwerfen Sie das Formular, damit Benutzer nicht von einem Bereich mit dem Schritt &quot;Unterschrift&quot;oder &quot;Zusammenfassung&quot;zurück navigieren können.
 
 
@@ -338,7 +339,7 @@ Wenn der  [!DNL Adobe Sign] Dienst für ein adaptives Formular konfiguriert ist,
 
 **Auflösung**
 
-* Überprüfen Sie die Konfiguration des Adobe Sign Cloud-Dienstes[, der im adaptiven Formular verwendet wird.](../../forms/using/adobe-sign-integration-adaptive-forms.md)
+* Überprüfen Sie die Konfiguration des Adobe Sign Cloud-Dienstes](../../forms/using/adobe-sign-integration-adaptive-forms.md), der im adaptiven Formular verwendet wird.[
 * Stellen Sie sicher, dass die API-Anwendung auf dem [!DNL Adobe Sign]-Server, der zum Konfigurieren des [!DNL Adobe Sign] Cloud-Dienstes verwendet wird, über die erforderlichen Berechtigungen verfügt.
 * Wenn Sie mehrere [!DNL Adobe Sign] Cloud-Dienste verwenden, weisen Sie die **[!UICONTROL oAuth-URL]** aller Dienste auf denselben **[!UICONTROL Adobe Sign-Shard]**.
 
