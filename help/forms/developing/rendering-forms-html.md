@@ -272,15 +272,15 @@ Wiedergabe eines HTML-Formulars mit der Forms API (Java):
 
    * Erstellen Sie ein `HTMLRenderSpec`-Objekt mit dem Konstruktor.
    * Um ein HTML-Formular mit einer Symbolleiste wiederzugeben, rufen Sie die `HTMLRenderSpec`-Methode des Objekts `setHTMLToolbar` auf und übergeben Sie einen `HTMLToolbar`-Enum-Wert. Um beispielsweise eine vertikale HTML-Symbolleiste anzuzeigen, übergeben Sie `HTMLToolbar.Vertical`.
-   * Um den Gebietsschemawert für das HTML-Formular festzulegen, rufen Sie die `HTMLRenderSpec`-Methode des Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Gebietsschemawert angibt. `setLocale` (Dies ist eine optionale Einstellung.)
-   * Um das HTML-Formular mit vollständigen HTML-Tags wiederzugeben, rufen Sie die `HTMLRenderSpec`-Methode des Objekts auf und übergeben Sie `setOutputType`. `OutputType.FullHTMLTags` (Dies ist eine optionale Einstellung.)
+   * Um den Gebietsschemawert für das HTML-Formular festzulegen, rufen Sie die `setLocale`-Methode des Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Gebietsschemawert angibt. `HTMLRenderSpec` (Dies ist eine optionale Einstellung.)
+   * Um das HTML-Formular mit vollständigen HTML-Tags wiederzugeben, rufen Sie die `setOutputType`-Methode des Objekts auf und übergeben Sie `OutputType.FullHTMLTags`. `HTMLRenderSpec` (Dies ist eine optionale Einstellung.)
 
    >[!NOTE]
    Forms wird nicht erfolgreich in HTML wiedergegeben, wenn die `StandAlone`-Option `true` lautet und `ApplicationWebRoot` auf einen anderen Server als den J2EE-Anwendungsserver verweist, der AEM Forms hostet (der `ApplicationWebRoot`-Wert wird mit dem `URLSpec`-Objekt angegeben, das an die `FormsServiceClient`-Objektmethode `(Deprecated) renderHTMLForm` übergeben wird). Wenn `ApplicationWebRoot` ein anderer Server des Hosts AEM Forms ist, muss der Wert des Webstamm-URI in Administration Console als URI-Wert der Webanwendung des Formulars festgelegt werden. Dazu müssen Sie sich bei Administration Console anmelden, auf &quot;Dienste&quot;> &quot;Forms&quot;klicken und den Webstamm-URI auf &quot;https://server-name:port/FormServer&quot;setzen. Speichern Sie dann Ihre Einstellungen.
 
 1. HTML-Formular wiedergeben
 
-   Rufen Sie die `FormsServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`(Deprecated) renderHTMLForm`
+   Rufen Sie die `(Deprecated) renderHTMLForm`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`FormsServiceClient`
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil einer Forms-Anwendung ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Ein `TransformTo`-Enum-Wert, der den HTML-Voreinstellungstyp angibt. Um beispielsweise ein HTML-Formular wiederzugeben, das mit dynamischem HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML` an.
