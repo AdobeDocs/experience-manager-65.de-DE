@@ -127,8 +127,8 @@ Dynamisches Erstellen eines DDX-Dokuments und Zerlegen eines PDF-Dokuments mithi
 
    * Erstellen Sie ein Java `DocumentBuilderFactory`-Objekt, indem Sie die `DocumentBuilderFactory`-Klasse&quot;`newInstance`-Methode aufrufen.
    * Erstellen Sie ein Java `DocumentBuilder`-Objekt, indem Sie die `DocumentBuilderFactory`-Objektmethode `newDocumentBuilder` aufrufen.
-   * Rufen Sie die `DocumentBuilder`-Methode des Objekts auf, um ein `newDocument`-Objekt zu instanziieren.`org.w3c.dom.Document`
-   * Erstellen Sie das Stammelement des DDX-Dokuments, indem Sie die `org.w3c.dom.Document`-Methode des Objekts aufrufen. `createElement` Diese Methode erstellt ein `Element`-Objekt, das das Stammelement darstellt. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die `createElement`-Methode. Wandeln Sie den Rückgabewert in `Element` um. Legen Sie als Nächstes einen Wert für das untergeordnete Element fest, indem Sie die zugehörige `setAttribute`-Methode aufrufen. Hängen Sie das Element schließlich an das Header-Element an, indem Sie die `appendChild`-Methode des Header-Elements aufrufen und das untergeordnete Element-Objekt als Argument übergeben. Die folgenden Codezeilen zeigen diese Anwendungslogik:
+   * Rufen Sie die `newDocument`-Methode des Objekts auf, um ein `org.w3c.dom.Document`-Objekt zu instanziieren.`DocumentBuilder`
+   * Erstellen Sie das Stammelement des DDX-Dokuments, indem Sie die `createElement`-Methode des Objekts aufrufen. `org.w3c.dom.Document` Diese Methode erstellt ein `Element`-Objekt, das das Stammelement darstellt. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die `createElement`-Methode. Wandeln Sie den Rückgabewert in `Element` um. Legen Sie als Nächstes einen Wert für das untergeordnete Element fest, indem Sie die zugehörige `setAttribute`-Methode aufrufen. Hängen Sie das Element schließlich an das Header-Element an, indem Sie die `appendChild`-Methode des Header-Elements aufrufen und das untergeordnete Element-Objekt als Argument übergeben. Die folgenden Codezeilen zeigen diese Anwendungslogik:
       ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
 
    * Erstellen Sie das Element `PDFsFromBookmarks`, indem Sie die `Document`-Methode des Objekts `createElement` aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die `createElement`-Methode. Wandeln Sie den Rückgabewert in `Element` um. Legen Sie einen Wert für das `PDFsFromBookmarks`-Element fest, indem Sie dessen `setAttribute`-Methode aufrufen. Hängen Sie das Element `PDFsFromBookmarks` an das Element `DDX` an, indem Sie die `appendChild`-Methode des DDX-Elements aufrufen. Übergeben Sie das Elementobjekt `PDFsFromBookmarks` als Argument. Die folgenden Codezeilen zeigen diese Anwendungslogik:
@@ -164,11 +164,11 @@ Dynamisches Erstellen eines DDX-Dokuments und Zerlegen eines PDF-Dokuments mithi
 1. Legen Sie Laufzeitoptionen fest.
 
    * Erstellen Sie ein `AssemblerOptionSpec`-Objekt, das Laufzeitoptionen mithilfe des Konstruktors speichert.
-   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie eine Methode aufrufen, die zum `AssemblerOptionSpec`-Objekt gehört. Um beispielsweise den Assembler-Dienst anzuweisen, bei einem Fehler mit der Verarbeitung eines Auftrags fortzufahren, rufen Sie die `AssemblerOptionSpec`-Methode des Objekts auf und übergeben Sie `setFailOnError`.`false`
+   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie eine Methode aufrufen, die zum `AssemblerOptionSpec`-Objekt gehört. Um beispielsweise den Assembler-Dienst anzuweisen, bei einem Fehler mit der Verarbeitung eines Auftrags fortzufahren, rufen Sie die `setFailOnError`-Methode des Objekts auf und übergeben Sie `false`.`AssemblerOptionSpec`
 
 1. Disassemblieren des PDF-Dokuments.
 
-   Rufen Sie die `AssemblerServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`invokeDDX`
+   Rufen Sie die `invokeDDX`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`AssemblerServiceClient`
 
    * Ein `com.adobe.idp.Document`-Objekt, das das dynamisch erstellte DDX-Dokument darstellt
    * Ein `java.util.Map`-Objekt, das das zu zerlegende PDF-Dokument enthält
@@ -220,7 +220,7 @@ Dynamisches Erstellen eines DDX-Dokuments und Aufteilen eines PDF-Dokuments mith
 1. Erstellen Sie das DDX-Dokument.
 
    * Erstellen Sie ein Objekt `System.Xml.XmlElement`, indem Sie den Konstruktor verwenden.
-   * Erstellen Sie das Stammelement des DDX-Dokuments, indem Sie die `XmlElement`-Methode des Objekts aufrufen. `CreateElement` Diese Methode erstellt ein `Element`-Objekt, das das Stammelement darstellt. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die `CreateElement`-Methode. Legen Sie einen Wert für das DDX-Element fest, indem Sie dessen `SetAttribute`-Methode aufrufen. Hängen Sie das Element schließlich an das DDX-Dokument an, indem Sie die `XmlElement`-Objektmethode `AppendChild` aufrufen. Übergeben Sie das DDX-Objekt als Argument. Die folgenden Codezeilen zeigen diese Anwendungslogik:
+   * Erstellen Sie das Stammelement des DDX-Dokuments, indem Sie die `CreateElement`-Methode des Objekts aufrufen. `XmlElement` Diese Methode erstellt ein `Element`-Objekt, das das Stammelement darstellt. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die `CreateElement`-Methode. Legen Sie einen Wert für das DDX-Element fest, indem Sie dessen `SetAttribute`-Methode aufrufen. Hängen Sie das Element schließlich an das DDX-Dokument an, indem Sie die `XmlElement`-Objektmethode `AppendChild` aufrufen. Übergeben Sie das DDX-Objekt als Argument. Die folgenden Codezeilen zeigen diese Anwendungslogik:
 
       ` System.Xml.XmlElement root = ddx.CreateElement("DDX");  root.SetAttribute("xmlns", "https://ns.adobe.com/DDX/1.0/");  ddx.AppendChild(root);`
 
