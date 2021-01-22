@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Asset-Management-Aufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
+source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
 workflow-type: tm+mt
-source-wordcount: '9562'
-ht-degree: 61%
+source-wordcount: '9590'
+ht-degree: 60%
 
 ---
 
@@ -168,8 +168,12 @@ Dynamic Media ermöglicht das stapelweise Hochladen von Assets über FTP-Server.
 **So laden Sie Assets per FTP hoch**
 
 1. Verwenden Sie den FTP-Client Ihrer Wahl und melden Sie sich beim FTP-Server mit dem FTP-Benutzernamen und -Kennwort aus der Bereitstellungs-E-Mail an. Laden Sie die Dateien und/oder Ordner über den FTP-Client auf den FTP-Server hoch.
-1. [Melden Sie sich bei Dynamic Media Classic an](https://www.adobe.com/de/marketing-cloud/experience-manager/scene7-login.html), indem Sie die Anmeldeinformationen verwenden, die Sie in der Bereitstellungs-E-Mail erhalten haben. Klicken Sie in der Leiste „Globale Navigation“ auf **[!UICONTROL Hochladen]**.
 
+1. Öffnen Sie die Desktopanwendung [Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) und melden Sie sich dann bei Ihrem Konto an.
+
+   Ihre Anmeldeinformationen und Ihre Anmeldung wurden zum Zeitpunkt der Bereitstellung von der Adobe bereitgestellt. Wenn Ihnen die Informationen nicht vorliegen, wenden Sie sich an den technischen Support.
+
+1. Klicken Sie in der Leiste „Globale Navigation“ auf **[!UICONTROL Hochladen]**.
 1. Klicken Sie auf der Seite „Hochladen“ in der Nähe der linken oberen Ecke auf die Registerkarte **[!UICONTROL Über FTP]**.
 1. Wählen Sie im linken Bereich der Seite einen FTP-Ordner aus, aus dem Sie Dateien hochladen. Auf der rechten Seite der Seite wählen Sie einen Zielordner aus.
 1. Klicken Sie in der rechten unteren Ecke der Seite auf **[!UICONTROL Auftragsoptionen]** und legen Sie auf der Grundlage der Assets, die in dem von Ihnen gewählten Ordner enthalten sind, die gewünschten Optionen fest.
