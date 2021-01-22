@@ -52,7 +52,7 @@ Die SocialComponent-API kann erweitert werden, um Daten bereitzustellen, die von
 Um die Komponenten anzupassen oder zu erweitern, schreiben Sie nur die Überlagerungen und Erweiterungen in Ihren /apps-Ordner, was die Aktualisierung auf zukünftige Versionen vereinfacht.
 
 * Für Skins:
-   * Nur das CSS muss bearbeitet werden[.](client-customize.md#skinning-css)
+   * Nur das CSS muss bearbeitet werden](client-customize.md#skinning-css).[
 * Für Look and Feel:
    * Ändern Sie die JS-Vorlage und die CSS.
 * Für Look, Feel und UX:
