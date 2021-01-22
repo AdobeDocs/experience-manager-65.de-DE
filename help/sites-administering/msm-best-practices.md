@@ -90,7 +90,7 @@ Live Copies können mit AEM auf zwei Arten erstellt werden:
 
    Dies kann als allgemeiner Ansatz betrachtet werden, der es Ihnen ermöglicht, Live-Kopien von jeder Seite zu erstellen. Die Inhaltsstruktur einer Live Copy entspricht exakt der Quelle.
 
-* Beim Erstellen einer Site[](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)
+* Beim Erstellen einer Site](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)[
 
    Dies ist ein speziellerer Ansatz, vor allem zur Erstellung von Websites mit mehrsprachiger Struktur.
 
@@ -143,7 +143,7 @@ Weitere Informationen finden Sie unter [Übersetzen von Inhalt für mehrsprachig
 
 >[!NOTE]
 >
->Dies funktioniert nur mit dem [Auslöser bei Rollout](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/msm-sync.html#rollout-triggers).
+>Dies funktioniert nur mit dem Trigger [Bei Rollout](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/msm-sync.html#rollout-triggers).
 
 * Erstellen Sie eine benutzerdefinierte Rollout-Konfiguration:
 
@@ -171,7 +171,7 @@ Weitere Informationen finden Sie unter [Übersetzen von Inhalt für mehrsprachig
 
 Die Rollout-Konfigurationen von MSM sind in hohem Maße anpassbar. Beachten Sie, dass die Automatisierung von Rollouts weitreichende Folgen haben kann. Aus diesem Grund sollte unter anderem den folgenden Schritten eine *sehr* sorgfältige Planung vorausgehen:
 
-* Automatisieren von Rollouts; z. B. mit [onModifizieren-Auslösern](#onmodify),
+* Automatisieren von Rollouts; z. B. mit [onModify-Trigger](#onmodify),
 * Anpassen von [Knotentypen/-eigenschaften](#node-types-properties)
 * Beginn nachfolgender Workflows,
 * und/oder das Aktivieren von Inhalten im Rahmen von Rollouts.
@@ -180,7 +180,7 @@ Die Rollout-Konfigurationen von MSM sind in hohem Maße anpassbar. Beachten Sie,
 
 Beachten Sie bei Verwendung des [Rollout-Auslösers](/help/sites-administering/msm-sync.md#rollout-triggers) `onModify` Folgendes:
 
-* Die Automatisierung von Rollouts mit `onModify`-Auslösern kann sich negativ auf die Authoring-Leistung auswirken, da sie nach *jeder*-Seitenänderung Rollouts auslösen.
+* Die Automatisierung von Rollouts mit `onModify`-Triggern kann sich negativ auf die Authoring-Leistung auswirken, da Trigger nach *jeder*-Seitenänderung Rollouts ausführen.
 
 * Das Rollout-Ergebnis entspricht aus folgenden Gründen möglicherweise nicht den Erwartungen:
 
@@ -189,7 +189,7 @@ Beachten Sie bei Verwendung des [Rollout-Auslösers](/help/sites-administering/m
 
 * Die Verwendung einer solchen Rollout-Konfiguration kann im Falle von parallelen Aktualisierungen derselben Ressource zu Bestätigungskonflikten führen.
 
-Daher wird empfohlen, dass Sie *nur* Auslöser `onModify` verwenden, wenn die Vorteile des automatischen Rollout-Starts potenzielle Leistungsprobleme überwiegen.
+Daher wird empfohlen, *nur* `onModify`-Trigger zu verwenden, wenn die Vorteile des automatischen Rollout-Starts größer sind als mögliche Leistungsprobleme.
 
 ### Knotentypen/-eigenschaften {#node-types-properties}
 
