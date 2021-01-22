@@ -212,11 +212,11 @@ So ändern Sie den Abfrageintervall:
 
 1. Melden Sie sich mit Administratorrechten für Ihre AEM Autoreninstanz an.
 1. Rufen Sie die [Webkonsole](/help/sites-deploying/configuring-osgi.md) auf, z. B. [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
-1. Suchen Sie nach **Apache Sling Distribution Trigger - Scheduled Triggers Factory**
+1. Suchen Sie nach **Apache Sling Distribution Trigger - Geplante Trigger Factory**
 
    * Wählen Sie die vorhandene Konfiguration aus, die zur Bearbeitung geöffnet werden soll (Stiftsymbol).
 
-      Überprüfen Sie **socialpubsync -schedule-trigger**
+      Überprüfen Sie **socialpubsync -geplanten-Trigger**
 
    * Legen Sie das Intervall in Sekunden auf das gewünschte Intervall fest und speichern Sie es.
 
@@ -240,7 +240,7 @@ Auf jeder AEM Veröffentlichungsinstanz:
 1. Suchen Sie nach **AEM Communities User Sync Listener**.
 1. Wählen Sie die vorhandene Konfiguration aus, die zur Bearbeitung geöffnet werden soll (Stiftsymbol)
 
-   Überprüfungsname: **socialpubsync -schedule-trigger**
+   Überprüfungsname: **socialpubsync -geplante-Trigger**
 
 1. Legen Sie folgende **NodeTypes** fest:
 
