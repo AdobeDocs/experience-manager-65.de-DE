@@ -24,7 +24,7 @@ ht-degree: 1%
 
 Ab AEM 6.1 Communities ist es am einfachsten, eine Sandbox schnell zu erstellen, eine Community-Site zu erstellen. Siehe [Erste Schritte mit AEM Communities](getting-started.md).
 
-Ein weiteres nützliches Tool für Entwickler ist der [Community Components guide](components-guide.md), der die Erforschung und schnelle Prototypisierung von Communities-Komponenten und -Funktionen ermöglicht.
+Ein weiteres nützliches Werkzeug für Entwickler ist der [Community Components guide](components-guide.md), der die Erforschung und schnelle Prototypisierung von Communities-Komponenten und -Funktionen ermöglicht.
 
 Die Erstellung einer Website kann nützlich sein, um die Struktur einer AEM Website zu verstehen, die Community-Funktionen enthalten kann, und gleichzeitig einfache Seiten bereitzustellen, auf denen die Arbeit mit dem [Social-Komponenten-Framework (SCF)](scf.md) erforscht werden kann.
 
