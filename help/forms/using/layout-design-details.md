@@ -56,7 +56,7 @@ Nachdem Sie das zum Erstellen der interaktiven Kommunikation erforderliche Layou
 
 >[!NOTE]
 >
->hinzufügen Sie Inhalte in den Kanal &quot;Drucken&quot;der interaktiven Kommunikation, anstatt der Teilformularkomponente in der XDP-Vorlage Inhalte hinzuzufügen. hinzufügen Sie Inhalte mit den Fragmenten für Dokumente, Diagramme, Zielgruppen[ und Layout im Kanal &quot;Drucken&quot;in die Seitenbereiche.](create-interactive-communication.md#step2)
+>hinzufügen Sie Inhalte in den Kanal &quot;Drucken&quot;der interaktiven Kommunikation, anstatt der Teilformularkomponente in der XDP-Vorlage Inhalte hinzuzufügen. hinzufügen Sie Inhalte mit den Fragmenten für Dokumente, Diagramme, Zielgruppen](create-interactive-communication.md#step2) und Layout im Kanal &quot;Drucken&quot;in die Seitenbereiche.[
 
 Führen Sie die folgenden Schritte aus, um das Teilformular in einer XDP-Vorlage zu verwenden:
 
@@ -119,7 +119,7 @@ Verwenden Sie die Komponente &quot;Tabelle&quot;in Forms Designer, um Layout-Fra
 
 >[!NOTE]
 >
->Geben Sie Text in die Tabellenzellen ein oder erstellen Sie nur beim Authoring der interaktiven Kommunikation eine Bindung mit den Formulardatenmodellobjekten[.](create-interactive-communication.md#step2)
+>Geben Sie Text in die Tabellenzellen ein oder erstellen Sie nur beim Authoring der interaktiven Kommunikation eine Bindung mit den Formulardatenmodellobjekten](create-interactive-communication.md#step2).[
 
 Führen Sie die folgenden Schritte aus, um die Tabellenkomponente in der XDP-Vorlage mit Forms Designer zu verwenden:
 
@@ -138,7 +138,7 @@ Führen Sie die folgenden Schritte aus, um die Tabellenkomponente in der XDP-Vor
 
 1. Wählen Sie im linken Bereich den Namen der Zeile aus und wählen Sie **Objekt** > **Bindung** > **Zeile für jedes Datenelement wiederholen**. Führen Sie diesen Schritt aus, um sicherzustellen, dass die Tabellenzeile für jedes in der Datenbank verfügbare Datenelement automatisch wiederholt wird, wenn eine Bindung zwischen den Tabellenzellen dieser Zeile mit Formulardatenmodellobjekten des Erfassungstyps erstellt wird.
 
-   Geben Sie Text in die Tabellenzellen ein oder erstellen Sie nur beim Authoring der interaktiven Kommunikation eine Bindung mit den Formulardatenmodellobjekten[.](create-interactive-communication.md#step2)
+   Geben Sie Text in die Tabellenzellen ein oder erstellen Sie nur beim Authoring der interaktiven Kommunikation eine Bindung mit den Formulardatenmodellobjekten](create-interactive-communication.md#step2).[
 
 1. Wählen Sie **Datei** > **Speichern unter**, um die Datei im lokalen Dateisystem zu speichern:
 
