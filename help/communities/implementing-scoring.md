@@ -445,7 +445,7 @@ Scoring- und Badging-Regeln können für benutzerdefinierte Komponenten erstellt
 
 ## Themen und Verben {#topics-and-verbs}
 
-Wenn Mitglieder mit Communities-Funktionen interagieren, werden Ereignis gesendet, die asynchrone Listener auslösen können, z. B. Benachrichtigungen und Scoring.
+Wenn Mitglieder mit Communities-Funktionen interagieren, werden Ereignis gesendet, die asynchrone Listener wie Benachrichtigungen und Scoring Trigger geben können.
 
 Die SocialEvent-Instanz einer Komponente zeichnet die Ereignis als `actions` auf, die für ein `topic` auftreten. Das SocialEvent enthält eine Methode, um eine `verb` zurückzugeben, die der Aktion zugeordnet ist. Es besteht eine *n-1*-Beziehung zwischen `actions` und `verbs`.
 
