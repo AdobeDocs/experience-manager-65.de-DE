@@ -99,7 +99,7 @@ Erstellen Sie ein PDF-Dokument mit gesendeten XML-Daten mithilfe der Forms-, Out
 
 1. Formulardaten mit dem Forms-Dienst abrufen
 
-   * Rufen Sie die `FormsServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`processFormSubmission`
+   * Rufen Sie die `processFormSubmission`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`FormsServiceClient`
 
       * Das `com.adobe.idp.Document`-Objekt, das die Formulardaten enthält.
       * Ein Zeichenfolgenwert, der die Umgebung einschließlich aller relevanten HTTP-Header angibt. Geben Sie den zu verwaltenden Inhaltstyp an, indem Sie einen oder mehrere Werte für die Variable `CONTENT_TYPE` &quot;Umgebung&quot;angeben. Um beispielsweise XML-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=text/xml`.
@@ -108,7 +108,7 @@ Erstellen Sie ein PDF-Dokument mit gesendeten XML-Daten mithilfe der Forms-, Out
 
       Die `processFormSubmission`-Methode gibt ein `FormsResult`-Objekt zurück, das die Ergebnisse der Formularübermittlung enthält.
 
-   * Stellen Sie fest, ob die Verarbeitung der Formulardaten durch den Forms-Dienst abgeschlossen ist, indem Sie die `FormsResult`-Methode des Objekts aufrufen. `getAction` Wenn diese Methode den Wert `0` zurückgibt, können die Daten verarbeitet werden.
+   * Stellen Sie fest, ob die Verarbeitung der Formulardaten durch den Forms-Dienst abgeschlossen ist, indem Sie die `getAction`-Methode des Objekts aufrufen. `FormsResult` Wenn diese Methode den Wert `0` zurückgibt, können die Daten verarbeitet werden.
    * Rufen Sie Formulardaten ab, indem Sie ein `com.adobe.idp.Document`-Objekt erstellen, indem Sie die `getOutputContent`-Methode des Objekts aufrufen. `FormsResult` (Dieses Objekt enthält Formulardaten, die an den Output-Dienst gesendet werden können.)
    * Erstellen Sie ein `java.io.InputStream`-Objekt, indem Sie den `java.io.DataInputStream`-Konstruktor aufrufen und das `com.adobe.idp.Document`-Objekt übergeben.
    * Erstellen Sie ein `org.w3c.dom.DocumentBuilderFactory`-Objekt, indem Sie die `newInstance`-Methode des statischen `org.w3c.dom.DocumentBuilderFactory`-Objekts aufrufen.
