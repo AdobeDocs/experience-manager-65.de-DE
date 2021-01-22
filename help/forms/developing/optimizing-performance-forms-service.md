@@ -102,7 +102,7 @@ Rendern Sie ein Formular mit optimierter Leistung mithilfe der Forms API (Java):
 
 1. Formular wiedergeben
 
-   Rufen Sie die `FormsServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`renderPDFForm`
+   Rufen Sie die `renderPDFForm`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`FormsServiceClient`
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt.
    * Ein `com.adobe.idp.Document`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie ein leeres `com.adobe.idp.Document`-Objekt.
@@ -117,8 +117,8 @@ Rendern Sie ein Formular mit optimierter Leistung mithilfe der Forms API (Java):
    * Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Senden eines Formulardatenstreams an den Client-Webbrowser verwendet wird.
    * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie die `FormsResult`-Methode &quot;s `getOutputContent`&quot;aufrufen.
    * Erstellen Sie ein `java.io.InputStream`-Objekt, indem Sie die `com.adobe.idp.Document`-Methode des Objekts `getInputStream` aufrufen.
-   * Erstellen Sie ein Bytearray und füllen Sie es mit dem Formulardatenstream, indem Sie die `InputStream`-Methode des Objekts aufrufen und das Bytearray als Argument übergeben.`read`
-   * Rufen Sie die `javax.servlet.ServletOutputStream`-Methode des Objekts auf, um den Formulardatenstream an den Client-Webbrowser zu senden. `write` Übergeben Sie das Bytearray an die `write`-Methode.
+   * Erstellen Sie ein Bytearray und füllen Sie es mit dem Formulardatenstream, indem Sie die `read`-Methode des Objekts aufrufen und das Bytearray als Argument übergeben.`InputStream`
+   * Rufen Sie die `write`-Methode des Objekts auf, um den Formulardatenstream an den Client-Webbrowser zu senden. `javax.servlet.ServletOutputStream` Übergeben Sie das Bytearray an die `write`-Methode.
 
 **Siehe auch**
 
@@ -150,7 +150,7 @@ Rendern Sie ein Formular mit optimierter Leistung mithilfe der Forms API (Webdie
 
 1. Formular wiedergeben
 
-   Rufen Sie die `FormsService`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`renderPDFForm`
+   Rufen Sie die `renderPDFForm`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`FormsService`
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt.
    * Ein `BLOB`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie `null`.
