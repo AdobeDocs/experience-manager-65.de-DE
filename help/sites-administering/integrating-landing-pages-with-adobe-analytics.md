@@ -90,7 +90,7 @@ Sie können wie folgt Einstiegsseitenkomponenten zu Adobe Analytics zuordnen:
 </table>
 
 1. Weisen Sie diese offengelegten Attribute beliebigen Adobe Analytics-Variablen aus der Inhaltssuche zu. Das Framework ist nun einsatzbereit.
-1. Sie können jetzt eine neue Landingpage erstellen oder eine vorhandene Landingpage mit vorhandenen CTA-Komponenten öffnen und im Sidekick auf die Registerkarte **Cloud Services** unter &lt;a2/>Seiteneigenschaften&lt;a3/> klicken (in der touchoptimierten Benutzeroberfläche wählen Sie **Eigenschaften öffnen** und klicken Sie auf **Cloud Services**) und konfigurieren Sie das Framework für die Verwendung mit Landingpage. **** Wählen Sie das Framework aus der Dropdown-Liste aus.
+1. Sie können jetzt eine neue Landingpage erstellen oder eine vorhandene Landingpage mit vorhandenen CTA-Komponenten öffnen und im Sidekick auf die Registerkarte **Cloud Services** unter **Seiteneigenschaften** klicken (in der touchoptimierten Benutzeroberfläche wählen Sie **Eigenschaften öffnen** und klicken Sie auf **Cloud Services**) und konfigurieren Sie das Framework für die Verwendung mit Landingpage. Wählen Sie das Framework aus der Dropdown-Liste aus.
 
    ![chlimage_1-25](assets/chlimage_1-25a.png)
 
