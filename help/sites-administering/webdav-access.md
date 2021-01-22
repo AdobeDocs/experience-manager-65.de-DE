@@ -224,7 +224,7 @@ GNOME hat jetzt AEM als Volume gemountet und kann wie jedes andere Volume verwen
 1. Öffnen Sie den Assistenten „Netzwerkordner“.
 1. Wählen Sie **Webordner** aus und klicken Sie auf „Weiter“.
 1. Geben Sie unter **Name** den Verbindungsnamen ein.
-1. Geben Sie unter **User** `admin.` die Adobe &lt;a2/> ein, um das vorkonfigurierte Admin-Konto zu verwenden.
+1. Geben Sie unter **User** `admin.` die Adobe  ein, um das vorkonfigurierte Admin-Konto zu verwenden.
 1. Geben Sie unter **Server** `http://localhost:4502/crx/repository/crx.default` ein.
 
    >[!NOTE]
