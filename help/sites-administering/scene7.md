@@ -174,7 +174,7 @@ So verwenden Sie Dynamic Media und Dynamic Media Classic gleichzeitig:
 Wenn Sie sowohl Dynamic Media Classic als auch Dynamic Media aktiviert haben, gelten folgende Einschränkungen:
 
 * Das manuelle Hochladen in Dynamic Media Classic durch Auswahl eines Assets und Ziehen in eine Dynamic Media Classic-Komponente auf einer AEM funktioniert nicht.
-* Obwohl synchronisierte Assets mit AEM-Dynamic Media Classic automatisch auf Dynamic Media Classic aktualisiert werden, wenn das Asset in Assets bearbeitet wird, löst eine Rollback-Aktion keinen neuen Upload aus. Daher würde Dynamic Media Classic die neueste Version nicht unmittelbar nach einem Rollback erhalten. Als Ausweichlösung eignet sich die erneute Bearbeitung, sobald das Rollback abgeschlossen ist.
+* Obwohl synchronisierte Assets mit AEM-Dynamic Media Classic automatisch auf Dynamic Media Classic aktualisiert werden, wenn das Asset in Assets bearbeitet wird, wird bei einer Rollback-Aktion kein neuer Upload Trigger. Daher würde Dynamic Media Classic die neueste Version nicht unmittelbar nach einem Rollback erhalten. Als Ausweichlösung eignet sich die erneute Bearbeitung, sobald das Rollback abgeschlossen ist.
 * Wenn Sie Dynamic Media für einen Anwendungsfall und die Dynamic Media Classic-Integration für einen anderen Anwendungsfall verwenden müssen, damit die Dynamic Media-Assets nicht mit dem Dynamic Media Classic-System interagieren, wenden Sie die Dynamic Media Classic-Konfiguration nicht auf den Dynamic Media-Ordner oder die Dynamic Media-Konfiguration (Verarbeitungs-Profil) auf einen Dynamic Media Classic-Ordner an.
 
 ## Best Practices für die Integration von Dynamic Media Classic mit AEM {#best-practices-for-integrating-scene-with-aem}
