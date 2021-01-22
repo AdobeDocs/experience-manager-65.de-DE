@@ -338,7 +338,7 @@ session.save();
 println "---------------------------------Success-------------------------------------"
 ```
 
-Das Skript ruft alle Tags ab, die im Wert der Eigenschaft `cq:movedTo/cq:backLinks` `/etc/tags` &lt;a0/> enthalten. Anschließend durchläuft er den abgerufenen Ergebnissatz und löst die Eigenschaftswerte `cq:movedTo` und `cq:backlinks` auf `/content/cq:tags` Pfade (sofern `/etc/tags` im Wert erkannt wird).
+Das Skript ruft alle Tags ab, die im Wert der Eigenschaft `cq:movedTo/cq:backLinks` `/etc/tags`  enthalten. Anschließend durchläuft er den abgerufenen Ergebnissatz und löst die Eigenschaftswerte `cq:movedTo` und `cq:backlinks` auf `/content/cq:tags` Pfade (sofern `/etc/tags` im Wert erkannt wird).
 
 ### Wenn eine aktualisierte AEM auf der klassischen Benutzeroberfläche {#upgraded-instance-runs-classic-ui} ausgeführt wird
 
