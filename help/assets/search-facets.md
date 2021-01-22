@@ -177,7 +177,7 @@ Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigen
 
 ## Standard-Suchfacetten wiederherstellen {#restoring-default-search-facets}
 
-Standardmäßig wird vor **[!UICONTROL Assets Admin Search Rail**[!UICONTROL  auf der Seite &lt;a4/>Search Forms ]**ein Sperrsymbol ![Sperren angezeigt.]**](assets/do-not-localize/lock_closed_icon.svg) Das Sperrsymbol für eine Option auf der Seite „Suchformulare“ gibt an, dass die Standardeinstellungen intakt und nicht angepasst sind. Das Symbol ![Schließen](assets/do-not-localize/lock_closed_icon.svg) wird ausgeblendet, wenn Sie dem Formular Suchfacetten hinzufügen, die darauf hinweisen, dass das Standardformular geändert wurde.
+Standardmäßig wird vor **[!UICONTROL Assets Admin Search Rail**[!UICONTROL  auf der Seite ](assets/do-not-localize/lock_closed_icon.svg)Search Forms ]**ein Sperrsymbol ![Sperren angezeigt.]** Das Sperrsymbol für eine Option auf der Seite „Suchformulare“ gibt an, dass die Standardeinstellungen intakt und nicht angepasst sind. Das Symbol ![Schließen](assets/do-not-localize/lock_closed_icon.svg) wird ausgeblendet, wenn Sie dem Formular Suchfacetten hinzufügen, die darauf hinweisen, dass das Standardformular geändert wurde.
 
 ![Das Sperrsymbol für eine Option auf der Seite „Suchformulare“ gibt an, dass die Standardeinstellungen intakt und nicht angepasst sind.](assets/locked_admin_rail.png)
 
