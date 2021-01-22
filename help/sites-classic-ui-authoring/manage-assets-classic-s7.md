@@ -98,7 +98,7 @@ So veröffentlichen Sie direkt über ein digitales Asset in Scene7:
 
 Adobe empfiehlt, dass Sie Assets nur über die im Scene7-Zielordner befindlichen Assets in Scene7 veröffentlichen. Wenn Sie jedoch Assets aus einem Ordner außerhalb des Ordners &quot;Zielgruppe&quot;hochladen müssen, können Sie dies dennoch tun, indem Sie sie in den Ordner **ad-hoc** unter Scene7 hochladen.
 
-Dafür müssen Sie zunächst die Cloud-Konfiguration für die Seite konfigurieren, auf der das Asset angezeigt wird. Anschließend fügen Sie der Seite eine Scene7-Komponente hinzu, ziehen ein Asset und legen es auf der Komponente ab. Nachdem die Seiteneigenschaften für diese Seite festgelegt wurden, wird ein Link **Auf Scene7 veröffentlichen** angezeigt, der beim Auswählen den Upload nach Scene7 auslöst.
+Dafür müssen Sie zunächst die Cloud-Konfiguration für die Seite konfigurieren, auf der das Asset angezeigt wird. Anschließend fügen Sie der Seite eine Scene7-Komponente hinzu, ziehen ein Asset und legen es auf der Komponente ab. Nachdem die Seiteneigenschaften für diese Seite festgelegt wurden, wird ein Link **Auf Scene7 veröffentlichen** angezeigt, der beim Hochladen ausgewählter Trigger nach Scene7 angezeigt wird.
 
 >[!NOTE]
 >
