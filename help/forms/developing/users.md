@@ -186,7 +186,7 @@ hinzufügen Benutzer mithilfe der Directory Manager-Dienst-API (Java):
 
 1. hinzufügen den Benutzer nach AEM Forms.
 
-   Rufen Sie die `DirectoryManagerServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`createLocalUser`
+   Rufen Sie die `createLocalUser`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`DirectoryManagerServiceClient`
 
    * Das `UserImpl`-Objekt, das den neuen Benutzer darstellt
    * Ein Zeichenfolgenwert, der das Kennwort des Benutzers darstellt
@@ -246,7 +246,7 @@ hinzufügen Benutzer mithilfe der Directory Manager-Dienst-API (Webdienst):
 
 1. hinzufügen den Benutzer nach AEM Forms.
 
-   Rufen Sie die `DirectoryManagerServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`createLocalUser`
+   Rufen Sie die `createLocalUser`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`DirectoryManagerServiceClient`
 
    * Das `UserImpl`-Objekt, das den neuen Benutzer darstellt
    * Ein Zeichenfolgenwert, der das Kennwort des Benutzers darstellt
@@ -328,7 +328,7 @@ Löschen Sie Benutzer mithilfe der Directory Manager-Dienst-API (Java):
 
 1. Löschen Sie den Benutzer aus AEM Forms.
 
-   Rufen Sie die `DirectoryManagerServiceClient`-Methode des Objekts auf und übergeben Sie den Wert des Felds `deleteLocalUser` des Objekts `User`. `oid` Rufen Sie die `User`-Methode des Objekts `getOid` auf. Verwenden Sie das `User`-Objekt, das von der `java.util.List`-Instanz abgerufen wird.
+   Rufen Sie die `deleteLocalUser`-Methode des Objekts auf und übergeben Sie den Wert des Felds `User` des Objekts `oid`. `DirectoryManagerServiceClient` Rufen Sie die `User`-Methode des Objekts `getOid` auf. Verwenden Sie das `User`-Objekt, das von der `java.util.List`-Instanz abgerufen wird.
 
 **Siehe auch**
 
@@ -371,7 +371,7 @@ Löschen Sie Benutzer mithilfe der Directory Manager-Dienst-API (Webdienst):
 
 1. Löschen Sie den Benutzer aus AEM Forms.
 
-   Löschen Sie den Benutzer, indem Sie den Feldwert `User` des Objekts an die `oid`-Methode des Objekts `DirectoryManagerServiceClient` übergeben.`deleteLocalUser`
+   Löschen Sie den Benutzer, indem Sie den Feldwert `oid` des Objekts an die `DirectoryManagerServiceClient`-Methode des Objekts `deleteLocalUser` übergeben.`User`
 
 **Siehe auch**
 
@@ -463,8 +463,8 @@ Erstellen Sie eine Gruppe mithilfe der Directory Manager Service API (Java):
 1. Erstellen Sie die Gruppe.
 
    * Wenn die Gruppe nicht vorhanden ist, rufen Sie die `Group`-Methode des Objekts `setCommonName` auf und übergeben Sie einen Zeichenfolgenwert, der den Gruppennamen angibt.
-   * Rufen Sie die `Group`-Methode des Objekts auf und übergeben Sie einen Zeichenfolgenwert, der die Gruppenbeschreibung angibt.`setDescription`
-   * Rufen Sie die `Group`-Methode des Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Domänennamen angibt.`setDomainName`
+   * Rufen Sie die `setDescription`-Methode des Objekts auf und übergeben Sie einen Zeichenfolgenwert, der die Gruppenbeschreibung angibt.`Group`
+   * Rufen Sie die `setDomainName`-Methode des Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Domänennamen angibt.`Group`
    * Rufen Sie die `createLocalGroup`-Methode des Objekts auf und übergeben Sie die `Group`-Instanz.`DirectoryManagerServiceClient`
 
    Die `createLocalUser`-Methode gibt einen Zeichenfolgenwert zurück, der den lokalen Benutzer-ID-Wert angibt.
@@ -744,7 +744,7 @@ Die folgende Tabelle beschreibt die Schritte in diesem Diagramm
  </thead>
  <tbody>
   <tr>
-   <td><p>3</p></td>
+   <td><p>1</p></td>
    <td><p>Der Benutzer greift auf eine Website zu und gibt einen Benutzernamen und ein Kennwort an. Diese Informationen werden an einen J2EE-Anwendungsserver übermittelt, der als Host für AEM Forms dient.</p></td>
   </tr>
   <tr>
@@ -752,7 +752,7 @@ Die folgende Tabelle beschreibt die Schritte in diesem Diagramm
    <td><p>Die Benutzeranmeldeinformationen werden beim Authentication Manager-Dienst authentifiziert. Wenn die Benutzerberechtigungen gültig sind, fährt der Workflow mit Schritt 3 fort. Andernfalls wird eine Meldung gesendet, dass der Benutzer kein autorisierter Benutzer ist.</p></td>
   </tr>
   <tr>
-   <td><p>3</p></td>
+   <td><p>1</p></td>
    <td><p>Benutzerinformationen und Formularentwürfe werden aus einer gesicherten Unternehmensdatenbank abgerufen. </p></td>
   </tr>
   <tr>
@@ -811,7 +811,7 @@ Authentifizieren Sie einen Benutzer mit der Authentication Manager Service API (
 
 1. Rufen Sie den Authentifizierungsvorgang auf.
 
-   Rufen Sie die `AuthenticationManagerServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`authenticate`
+   Rufen Sie die `authenticate`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`AuthenticationManagerServiceClient`
 
    * Ein `java.lang.String`-Objekt, das den Namen des Benutzers enthält.
    * Ein Bytearray (ein `byte[]`-Objekt), das das Kennwort des Benutzers enthält. Sie können das `byte[]`-Objekt abrufen, indem Sie die `java.lang.String`-Methode des Objekts `getBytes` aufrufen.
@@ -820,7 +820,7 @@ Authentifizieren Sie einen Benutzer mit der Authentication Manager Service API (
 
 1. Rufen Sie den Authentifizierungskontext ab.
 
-   Rufen Sie die `ServiceClientFactory`-Methode des Objekts auf, die ein `getContext`-Objekt zurückgibt.`Context`
+   Rufen Sie die `getContext`-Methode des Objekts auf, die ein `Context`-Objekt zurückgibt.`ServiceClientFactory`
 
    Rufen Sie dann die `Context`-Methode des Objekts `initPrincipal` auf und übergeben Sie `AuthResult`.
 
@@ -839,7 +839,7 @@ Authentifizieren Sie einen Benutzer mit der Authentication Manager-Dienst-API (W
 
 1. Rufen Sie den Authentifizierungsvorgang auf.
 
-   Rufen Sie die `AuthenticationManagerServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`authenticate`
+   Rufen Sie die `authenticate`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`AuthenticationManagerServiceClient`
 
    * Ein `string`-Objekt, das den Namen des Benutzers enthält
    * Ein Bytearray (ein `byte[]`-Objekt), das das Kennwort des Benutzers enthält. Sie können das `byte[]`-Objekt abrufen, indem Sie ein `string`-Objekt, das das Kennwort enthält, in ein `byte[]`-Array konvertieren, indem Sie die im folgenden Beispiel dargestellte Logik verwenden.
@@ -942,13 +942,13 @@ Synchronisieren Sie Benutzer mithilfe der User Management API (Java):
 
 1. Geben Sie die Unternehmensdomäne an.
 
-   * Rufen Sie die `UserManagerUtilServiceClient`-Methode des Objekts auf, um den Benutzersynchronisierungsvorgang Beginn.`scheduleSynchronization`
+   * Rufen Sie die `scheduleSynchronization`-Methode des Objekts auf, um den Benutzersynchronisierungsvorgang Beginn.`UserManagerUtilServiceClient`
    * Erstellen Sie eine `java.util.Set`-Instanz mit einem `HashSet`-Konstruktor. Stellen Sie sicher, dass Sie `String` als Datentyp angeben. Diese `Java.util.Set`-Instanz speichert die Domänennamen, für die der Synchronisierungsvorgang gilt.
    * Rufen Sie für jeden hinzuzufügenden Domänennamen die add-Methode des Objekts `java.util.Set` auf und übergeben Sie den Domänennamen.
 
 1. Rufen Sie den Synchronisierungsvorgang auf.
 
-   Rufen Sie die `ServiceClientFactory`-Methode des Objekts auf, die ein `getContext`-Objekt zurückgibt.`Context`
+   Rufen Sie die `getContext`-Methode des Objekts auf, die ein `Context`-Objekt zurückgibt.`ServiceClientFactory`
 
    Rufen Sie dann die `Context`-Methode des Objekts `initPrincipal` auf und übergeben Sie `AuthResult`.
 
