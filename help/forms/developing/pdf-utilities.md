@@ -112,7 +112,7 @@ Konvertieren von PDF-Dokumenten in XDP-Dokumente mithilfe der PDF Utilities API 
 
 1. PDF in XDP-Konvertierungsvorgang aufrufen
 
-   Rufen Sie die `PDFUtilityServiceService`-Methode des Objekts auf und übergeben Sie ein `convertPDFtoXDP`-Objekt, das die PDF-Datei darstellt. `BLOB` Die Methode gibt ein `BLOB`-Objekt zurück, das die neu erstellte XDP-Datei darstellt.
+   Rufen Sie die `convertPDFtoXDP`-Methode des Objekts auf und übergeben Sie ein `BLOB`-Objekt, das die PDF-Datei darstellt. `PDFUtilityServiceService` Die Methode gibt ein `BLOB`-Objekt zurück, das die neu erstellte XDP-Datei darstellt.
 
 **Siehe auch**
 
@@ -261,7 +261,7 @@ Rufen Sie PDF-Dokument-Eigenschaften mithilfe der PDF Utilities API (Java) ab:
 
 1. Abrufen der Eigenschaften aufrufen
 
-   Um die Konvertierung durchzuführen, rufen Sie die `PDFUtilityServiceClient`-Methode des Objekts auf und geben Sie Folgendes ein:`getPDFProperties`
+   Um die Konvertierung durchzuführen, rufen Sie die `getPDFProperties`-Methode des Objekts auf und geben Sie Folgendes ein:`PDFUtilityServiceClient`
 
    * Ein `com.adobe.idp.Document`-Objekt, das das PDF-Dokument darstellt.
    * Ein `PDFPropertiesOptionSpec`-Objekt, das die zu evaluierenden Eigenschaften enthält.
@@ -291,7 +291,7 @@ Rufen Sie PDF-Dokument-Eigenschaften mithilfe der PDF Utilities-Webdienst-API ab
 
 1. Abrufen der Eigenschaften aufrufen
 
-   Um die Konvertierung durchzuführen, rufen Sie die `PDFUtilityServiceService`-Methode des Objekts auf und geben Sie Folgendes ein:`getPDFProperties`
+   Um die Konvertierung durchzuführen, rufen Sie die `getPDFProperties`-Methode des Objekts auf und geben Sie Folgendes ein:`PDFUtilityServiceService`
 
    * Ein `BLOB`-Objekt, das das PDF-Dokument darstellt.
    * Ein `PDFPropertiesOptionSpec`-Objekt, das die zu evaluierenden Eigenschaften enthält.
@@ -379,11 +379,11 @@ Legen Sie die Speicheroptionen für PDF-Dokumente mithilfe der PDF Utilities API
 1. Modus &quot;Speichern&quot;festlegen
 
    * Erstellen Sie ein Objekt `PDFUtilitySaveMode`, indem Sie den Konstruktor verwenden.
-   * Legen Sie den Speichermodus fest, indem Sie die `PDFUtilitySaveMode`-Methode des Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Speichermodus angibt. `setSaveStyle` Um beispielsweise für eine schnelle Webanzeige zu speichern, übergeben Sie `FAST_WEB_VIEW`.
+   * Legen Sie den Speichermodus fest, indem Sie die `setSaveStyle`-Methode des Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Speichermodus angibt. `PDFUtilitySaveMode` Um beispielsweise für eine schnelle Webanzeige zu speichern, übergeben Sie `FAST_WEB_VIEW`.
 
 1. Aufrufen des Vorgangs zum Speichern des Stils
 
-   Rufen Sie die `PDFUtilityServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`setSaveMode`
+   Rufen Sie die `setSaveMode`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`PDFUtilityServiceClient`
 
    * Ein `com.adobe.idp.Document`-Objekt, das das PDF-Dokument darstellt.
    * Ein `PDFUtilitySaveMode`-Objekt, das den zu verwendenden Speicherstil enthält.
@@ -423,7 +423,7 @@ Legen Sie mithilfe des PDF Utilities AP (Webdienst) die Speicheroptionen für da
 
 1. Aufrufen des Vorgangs zum Speichern des Stils
 
-   Rufen Sie die `PDFUtilityServiceService`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`setSaveMode`
+   Rufen Sie die `setSaveMode`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`PDFUtilityServiceService`
 
    * Ein `BLOB`-Objekt, das das PDF-Dokument darstellt.
    * Ein `PDFUtilitySaveMode`-Objekt, das den zu verwendenden Speicherstil enthält.
