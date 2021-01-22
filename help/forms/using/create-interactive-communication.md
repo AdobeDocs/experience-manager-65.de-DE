@@ -480,7 +480,7 @@ So fügen Sie eine Schaltfläche hinzu und definieren Regeln dafür:
 
 1. Tippen Sie auf das Stammbedienfeld in der Webvorlage und dann auf **+**, um die Komponente **Button** zur interaktiven Kommunikation hinzuzufügen.
 1. Tippen Sie auf die Schaltflächenkomponente und dann auf ![Bearbeitungsregeln](assets/edit-rules.png), um Regeln für das Tippen auf die Schaltfläche zu definieren.
-1. Wählen Sie im Abschnitt **Wenn** **Klicken Sie im Status der Dropdown-Liste &quot;Schaltfläche&quot;auf &lt;a2/>Klicken.**
+1. Wählen Sie im Abschnitt **Wenn** **Klicken Sie im Status der Dropdown-Liste &quot;Schaltfläche&quot;auf** Klicken.
 1. Im Abschnitt **Dann**:
 
    1. Wählen Sie eine Aktion aus der Dropdown-Liste. Wählen Sie beispielsweise **Navigieren Sie zu** als Aktionstyp.
