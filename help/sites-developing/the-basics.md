@@ -172,7 +172,7 @@ Die Liste der von der angegebenen Instanz von AEM unterstützten Skriptmaschinen
 
 Darüber hinaus unterstützt Apache Sling die Integration mit anderen gängigen Skript-Engines (z. B. Groovy, JRuby, Freemarker) und bietet eine Möglichkeit zur Integration neuer Skript-Engines.
 
-Wenn das `sling:resourceType` `hr/jobs` &lt;a1/> ist, gehen Sie wie folgt vor:
+Wenn das `sling:resourceType` `hr/jobs`  ist, gehen Sie wie folgt vor:
 
 * GET/HEAD-Anforderungen und URLs mit der Endung .html (Standardanforderungstypen, Standardformat)
 
