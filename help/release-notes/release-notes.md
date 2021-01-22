@@ -29,7 +29,7 @@ Der Versionszyklus für diese Version von [!DNL Adobe Experience Manager] begann
 
 ![AEM 6.5-Anmeldebildschirm](/help/assets/assets/aem65-login-v4.png)
 
-## Neuerungen {#what-s-new}
+## Neue Funktionen {#what-s-new}
 
 [!DNL Adobe Experience Manager] 6.5 ist eine Upgrade-Version auf die  [!DNL Adobe Experience Manager] 6.4-Codebasis. Die Software bietet neue und erweiterte Funktionen, wichtige Kundenkorrekturen, Erweiterungen für Kunden mit hoher Priorität und allgemeine Fehlerbehebungen, die auf die Produktstabilisierung ausgerichtet sind. Es enthält auch die Versionen von [!DNL Adobe Experience Manager] 6.4 Service Pack bis zu SP4.
 
