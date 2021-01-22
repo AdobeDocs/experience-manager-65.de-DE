@@ -111,12 +111,12 @@ Validieren eines DDX-Dokuments mithilfe der Assembler Service API (Java):
 1. Legen Sie Laufzeitoptionen fest, um das DDX-Dokument zu validieren.
 
    * Erstellen Sie ein `AssemblerOptionSpec`-Objekt, das Laufzeitoptionen mithilfe des Konstruktors speichert.
-   * Legen Sie die Laufzeitoption fest, die den Assembler-Dienst anweist, das DDX-Dokument zu validieren, indem Sie die setValidateOnly-Methode des Objekts aufrufen und `AssemblerOptionSpec` übergeben.`true`
-   * Legen Sie die Menge an Informationen fest, die der Assembler-Dienst in die Protokolldatei schreibt, indem Sie die `AssemblerOptionSpec`-Methode des Objekts aufrufen und einen Zeichenfolgenwert übergeben, der Ihre Anforderungen erfüllt. `getLogLevel` Bei der Validierung eines DDX-Dokuments sollen weitere Informationen in die Protokolldatei geschrieben werden, die den Validierungsprozess unterstützen. Daher können Sie den Wert `FINE` oder `FINER` übergeben.
+   * Legen Sie die Laufzeitoption fest, die den Assembler-Dienst anweist, das DDX-Dokument zu validieren, indem Sie die setValidateOnly-Methode des Objekts aufrufen und `true` übergeben.`AssemblerOptionSpec`
+   * Legen Sie die Menge an Informationen fest, die der Assembler-Dienst in die Protokolldatei schreibt, indem Sie die `getLogLevel`-Methode des Objekts aufrufen und einen Zeichenfolgenwert übergeben, der Ihre Anforderungen erfüllt. `AssemblerOptionSpec` Bei der Validierung eines DDX-Dokuments sollen weitere Informationen in die Protokolldatei geschrieben werden, die den Validierungsprozess unterstützen. Daher können Sie den Wert `FINE` oder `FINER` übergeben.
 
 1. Führen Sie die Überprüfung durch.
 
-   Rufen Sie die `AssemblerServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`invokeDDX`
+   Rufen Sie die `invokeDDX`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`AssemblerServiceClient`
 
    * Ein `com.adobe.idp.Document`-Objekt, das das DDX-Dokument darstellt.
    * Der Wert `null` für das java.io.Map-Objekt, in dem PDF-Dokumente normalerweise gespeichert werden.
@@ -174,7 +174,7 @@ Validieren eines DDX-Dokuments mithilfe der Assembler Service API (Webdienst):
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des DDX-Dokuments verwendet.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des DDX-Dokuments und den Modus zum Öffnen der Datei darstellt.
    * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream`-Eigenschaft des Objekts `Length` abrufen.
-   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`Read`
+   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `Read`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`System.IO.FileStream`
    * Füllen Sie das `BLOB`-Objekt, indem Sie seine `MTOM`-Eigenschaft mit dem Inhalt des Byte-Arrays zuweisen.
 
 1. Legen Sie Laufzeitoptionen fest, um das DDX-Dokument zu validieren.
@@ -185,7 +185,7 @@ Validieren eines DDX-Dokuments mithilfe der Assembler Service API (Webdienst):
 
 1. Führen Sie die Überprüfung durch.
 
-   Rufen Sie die `AssemblerServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`invokeDDX`
+   Rufen Sie die `invokeDDX`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`AssemblerServiceClient`
 
    * Ein `BLOB`-Objekt, das das DDX-Dokument darstellt.
    * Der Wert `null` für das `Map`-Objekt, das normalerweise PDF-Dokumente speichert.
@@ -199,7 +199,7 @@ Validieren eines DDX-Dokuments mithilfe der Assembler Service API (Webdienst):
    * Erstellen Sie ein `BLOB`-Objekt, das Protokollinformationen speichert, indem Sie den Wert des `AssemblerResult`-Datenelements des Objekts `jobLog` abrufen.
    * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `BLOB` speichert. Füllen Sie das Bytearray, indem Sie den Wert des Felds `BLOB` des Objekts `MTOM` abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie den Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter`-Methode des Objekts aufrufen und das Bytearray übergeben.`Write`
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `Write`-Methode des Objekts aufrufen und das Bytearray übergeben.`System.IO.BinaryWriter`
 
    >[!NOTE]
    >
