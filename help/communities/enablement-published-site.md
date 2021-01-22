@@ -140,7 +140,7 @@ Beachten Sie, dass es neben der Inline-Moderation Optionen gibt, das Thema in so
 
 ![Diskussionen](assets/discussions.png)
 
-### Neuerungen {#what-s-new}
+### Neue Funktionen {#what-s-new}
 
 Das Menüelement `What's New` ist der Titel der [Aktivität-Stream-Funktion](functions.md#activity-stream-function) in der Struktur dieser Community-Site.
 
