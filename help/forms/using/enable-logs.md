@@ -102,7 +102,7 @@ Die Protokollkonfiguration besteht aus der Protokollebene und der Protokollfunkt
    <td>ERROR<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>3</td>
+   <td>1</td>
    <td>WARN<br type="_moz" /> </td>
   </tr>
   <tr>
