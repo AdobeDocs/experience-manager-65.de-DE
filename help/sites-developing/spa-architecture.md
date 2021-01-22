@@ -229,7 +229,7 @@ Die allgemeine Architektur von AEM einschließlich Umgebungen für Entwicklung, 
 
 Eine Übersicht darüber, wie eine einfache SPA in AEM strukturiert ist und wie sie funktioniert, finden Sie im Handbuch &quot;Erste Schritte&quot;für [React](/help/sites-developing/spa-getting-started-react.md) und [Angular](/help/sites-developing/spa-getting-started-angular.md).
 
-Eine schrittweise Anleitung zum Erstellen Ihrer eigenen SPA finden Sie im Tutorial [Erste Schritte mit dem AEM SPA Editor - WKND Ereignisses](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html).
+Eine schrittweise Anleitung zum Erstellen Ihrer eigenen SPA finden Sie im Tutorial [Erste Schritte mit dem AEM SPA Editor - WKND Ereignisses](https://helpx.adobe.com/de/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html).
 
 Weitere Informationen zum dynamischen Modell zur Komponentenzuordnung und dazu, wie es in SPA in AEM funktioniert, finden Sie im Artikel [Dynamisches Modell zur Komponentenzuordnung für SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
