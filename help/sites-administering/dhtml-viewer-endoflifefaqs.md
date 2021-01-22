@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Ab dem 31. Januar 2014 endet die DHTML-Viewer-Plattform offiziell.
 
-Die neuesten unterstützten Viewer finden Sie im Dynamic Media Viewer-Referenzhandbuch[.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)
+Die neuesten unterstützten Viewer finden Sie im Dynamic Media Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).[
 
 <!-- OBSOLETE CONTENT **What is the change?**
 
