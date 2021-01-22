@@ -37,7 +37,7 @@ Das folgende Diagramm zeigt die Wiedergabe von Inhaltsdiensten.
 
 ## Anfordern von JSON {#requesting-json}
 
-Verwenden Sie **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.] jsonto JSON anfordern.**
+Verwenden Sie **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.** jsonto JSON anfordern.]
 
 <table>
  <tbody>
