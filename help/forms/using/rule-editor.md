@@ -45,11 +45,11 @@ Im Regeleditor steht eine Reihe vordefinierter Regeltypen zur Verfügung, z. B. 
 
 Eine Regel entspricht normalerweise einem der folgenden Konstrukte: 
 
-**Bedingung-** AktionIn diesem Konstrukt definiert eine Regel zuerst eine Bedingung, gefolgt von einer auszulösenden Aktion. Dieses Konstrukt ist mit einer if-then-Anweisung in Programmiersprachen vergleichbar.
+**Bedingung-** AktionIn diesem Konstrukt definiert eine Regel zuerst eine Bedingung, gefolgt von einer Aktion für Trigger. Dieses Konstrukt ist mit einer if-then-Anweisung in Programmiersprachen vergleichbar.
 
 Im Regeleditor wird das Bedingung-Aktion-Konstrukt durch den Regeltyp **Wenn** durchgesetzt.
 
-**Action-** ConditionIn diesem Konstrukt definiert eine Regel zuerst eine auszulösende Aktion, gefolgt von Bedingungen für die Auswertung. Eine weitere Variante dieses Konstrukts ist Aktion-Bedingung-alternative Aktion, wobei auch eine alternative Aktion angegeben wird, die ausgelöst wird, wenn die Bedingung den Wert False zurückgibt.
+**Action-** ConditionIn diesem Konstrukt definiert eine Regel zuerst eine Aktion für den Trigger, gefolgt von Evaluierungsbedingungen. Eine weitere Variante dieses Konstrukts ist Aktion-Bedingung-alternative Aktion, wobei auch eine alternative Aktion angegeben wird, die ausgelöst wird, wenn die Bedingung den Wert False zurückgibt.
 
 Die Regeltypen zum Anzeigen, Ausblenden, Aktivieren, Deaktivieren und Wert einstellen im Regeleditor setzen das Aktion-Bedingung-Regelkonstrukt um. Die alternative Aktion für „Anzeigen“ ist standardmäßig „Ausblenden“, für „Aktivieren“ ist es „Deaktivieren“ und umgekehrt. Sie können die standardmäßige alternative Aktion nicht ändern.
 
