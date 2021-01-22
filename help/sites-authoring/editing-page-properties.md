@@ -154,7 +154,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    >[!CAUTION]
    >
-   >Die Registerkarte **[Berechtigungen](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** ermöglicht die Bearbeitung von CUG-Konfigurationen basierend auf dem `granite:AuthenticationRequired`-Mixin. Wenn Seitenberechtigungen mit veralteten CUG-Konfigurationen konfiguriert werden, die auf der Eigenschaft `cq:cugEnabled` basieren, wird unter **Authentifizierungsanforderung** eine Warnmeldung angezeigt. Die Option kann nicht bearbeitet werden. Die Option kann auch nicht bearbeitet werden.](/help/sites-authoring/editing-page-properties.md#permissions)[
+   >Die Registerkarte **[Berechtigungen](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** ermöglicht die Bearbeitung von CUG-Konfigurationen basierend auf dem `granite:AuthenticationRequired`-Mixin. Wenn Seitenberechtigungen mit veralteten CUG-Konfigurationen konfiguriert werden, die auf der Eigenschaft `cq:cugEnabled` basieren, wird unter **Authentifizierungsanforderung** eine Warnmeldung angezeigt. Die Option kann nicht bearbeitet werden. Die Option kann auch nicht bearbeitet werden.[](/help/sites-authoring/editing-page-properties.md#permissions)
    >
    >
    >In diesem Fall müssen die CUG-Berechtigungen in der [klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) bearbeitet werden.
