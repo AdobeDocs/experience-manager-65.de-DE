@@ -193,7 +193,7 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
 
 * Breadcrumb
 
-   ![bh-03](assets/bh-05.png)
+   ![bh-05](assets/bh-05.png)
 
    Breadcrumbs befinden sich immer in der Mitte der Leiste und zeigen die Beschreibung des aktuell ausgewählten Elements an. Sie ermöglichen Ihnen damit die Navigation innerhalb einer bestimmten Konsole. In der Sites-Konsole können Sie damit durch die Ebenen Ihrer Website navigieren.
 
@@ -416,7 +416,7 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
 
    * Beim Tippen bzw. Klicken werden Ressourcenname und Pfeil hervorgehoben.
 
-   ![bh-15](assets/bh-17.png)
+   ![bh-17](assets/bh-17.png)
 
    * Die untergeordneten Elemente der ausgewählten Ressource werden in der Spalte rechts neben der Ressource angezeigt.
    * Wenn Sie auf einen Ressourcennamen tippen oder klicken, der keine untergeordneten Elemente besitzt, werden die Ressourcendetails in der letzten Spalte angezeigt.
