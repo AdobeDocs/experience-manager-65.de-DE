@@ -141,7 +141,7 @@ Erstellen Sie einen Ordner mithilfe der Repository Service API (Java):
 
    Um eine Ressourcensammlung zu erstellen, müssen Sie zunächst ein `com.adobe.repository.infomodel.bean.RepositoryInfomodelFactoryBean`-Objekt erstellen.
 
-   Rufen Sie die `repositoryInfomodelFactoryBean`-Methode des Objekts auf und übergeben Sie die folgenden Parameter:`newResourceCollection`
+   Rufen Sie die `newResourceCollection`-Methode des Objekts auf und übergeben Sie die folgenden Parameter:`repositoryInfomodelFactoryBean`
 
    * Eine `com.adobe.repository.infomodel.Id` UUID-ID, die der Ressource zugewiesen wird.
    * Eine `com.adobe.repository.infomodel.Lid` UUID-ID, die der Ressource zugewiesen wird.
@@ -156,9 +156,9 @@ Erstellen Sie einen Ordner mithilfe der Repository Service API (Java):
 
 1. Den Ordner in das Repository schreiben
 
-   Rufen Sie die `ResourceRepositoryClient`-Methode des Objekts auf und übergeben Sie den URI des Ordners und das `writeResource`-Objekt. `ResourceCollection` Beispielsweise kann der URI für den Ordner der folgende Wert sein: `/Applications/FormsApplication/1.0/`.
+   Rufen Sie die `writeResource`-Methode des Objekts auf und übergeben Sie den URI des Ordners und das `ResourceCollection`-Objekt. `ResourceRepositoryClient` Beispielsweise kann der URI für den Ordner der folgende Wert sein: `/Applications/FormsApplication/1.0/`.
 
-   Die Methode gibt eine Instanz des neu erstellten `com.adobe.repository.infomodel.bean.Resource`-Objekts zurück. Sie können beispielsweise den Bezeichnerwert der neuen Ressource abrufen, indem Sie die `com.adobe.repository.infomodel.bean.Resource`-Methode des Objekts aufrufen.`getId`
+   Die Methode gibt eine Instanz des neu erstellten `com.adobe.repository.infomodel.bean.Resource`-Objekts zurück. Sie können beispielsweise den Bezeichnerwert der neuen Ressource abrufen, indem Sie die `getId`-Methode des Objekts aufrufen.`com.adobe.repository.infomodel.bean.Resource`
 
 **Siehe auch**
 
@@ -194,7 +194,7 @@ Erstellen Sie einen Ordner mithilfe der Repository Service API (Webdienst):
 
 1. Den Ordner in das Repository schreiben
 
-   Rufen Sie die `RepositoryServiceService`-Methode des Objekts auf und übergeben Sie die folgenden Parameter:`writeResource`
+   Rufen Sie die `writeResource`-Methode des Objekts auf und übergeben Sie die folgenden Parameter:`RepositoryServiceService`
 
    * Der Pfad, in dem der Ordner erstellt werden soll.
    * Das `ResourceCollection`-Objekt, das den Ordner darstellt.
@@ -285,7 +285,7 @@ Erstellen Sie eine Ressource mithilfe der Repository Service API (Java):
 
    Um eine Ressource zu erstellen, müssen Sie zunächst ein `com.adobe.repository.infomodel.bean.RepositoryInfomodelFactoryBean`-Objekt erstellen.
 
-   Rufen Sie die `RepositoryInfomodelFactoryBean`-Methode des Objekts auf, mit der ein `newResource`-Objekt erstellt wird. `com.adobe.repository.infomodel.bean.Resource` In diesem Beispiel werden die folgenden Parameter bereitgestellt:
+   Rufen Sie die `newResource`-Methode des Objekts auf, mit der ein `com.adobe.repository.infomodel.bean.Resource`-Objekt erstellt wird. `RepositoryInfomodelFactoryBean` In diesem Beispiel werden die folgenden Parameter bereitgestellt:
 
    * Ein `com.adobe.repository.infomodel.Id`-Objekt, das durch Aufrufen des Standardkonstruktors für die `Id`-Klasse erstellt wird.
    * Ein `com.adobe.repository.infomodel.Lid`-Objekt, das durch Aufrufen des Standardkonstruktors für die `Lid`-Klasse erstellt wird.
@@ -304,7 +304,7 @@ Erstellen Sie eine Ressource mithilfe der Repository Service API (Java):
 
 1. Ressource in den Ordner &quot;Zielgruppe&quot;schreiben
 
-   Rufen Sie die `ResourceRepositoryClient`-Methode des Objekts auf und übergeben Sie den URI des Ordners sowie das `writeResource`-Objekt.`Resource`
+   Rufen Sie die `writeResource`-Methode des Objekts auf und übergeben Sie den URI des Ordners sowie das `Resource`-Objekt.`ResourceRepositoryClient`
 
 **Siehe auch**
 
@@ -353,7 +353,7 @@ Erstellen Sie eine Ressource mithilfe der Repository Service API (Webdienst):
 
 1. Ressource in den Ordner &quot;Zielgruppe&quot;schreiben
 
-   Rufen Sie die `RepositoryServiceService`-Methode des Objekts auf und übergeben Sie den URI des Ordners sowie das `writeResource`-Objekt. `Resource` Übergeben Sie `null` für die anderen beiden Parameter.
+   Rufen Sie die `writeResource`-Methode des Objekts auf und übergeben Sie den URI des Ordners sowie das `Resource`-Objekt. `RepositoryServiceService` Übergeben Sie `null` für die anderen beiden Parameter.
 
 **Siehe auch**
 
@@ -545,7 +545,7 @@ Lesen Sie eine Ressource mithilfe der Repository-Dienst-API (Java):
 
 1. Ressource lesen
 
-   Rufen Sie die `ResourceRepositoryClient`-Methode des Objekts auf und übergeben Sie den URI der Ressource als Parameter. `readResource` Diese Methode gibt eine `Resource`-Instanz zurück, die die Ressource darstellt.
+   Rufen Sie die `readResource`-Methode des Objekts auf und übergeben Sie den URI der Ressource als Parameter. `ResourceRepositoryClient` Diese Methode gibt eine `Resource`-Instanz zurück, die die Ressource darstellt.
 
 **Siehe auch**
 
@@ -576,7 +576,7 @@ Lesen Sie eine Ressource mithilfe der Repository-Dienst-API (Webdienst):
 
 1. Ressource lesen
 
-   Rufen Sie die `RepositoryServiceService`-Methode des Objekts auf und übergeben Sie den URI der Ressource als ersten Parameter. `readResource` Übergeben Sie `null` für die anderen beiden Parameter.
+   Rufen Sie die `readResource`-Methode des Objekts auf und übergeben Sie den URI der Ressource als ersten Parameter. `RepositoryServiceService` Übergeben Sie `null` für die anderen beiden Parameter.
 
 **Siehe auch**
 
@@ -657,7 +657,7 @@ Aktualisieren Sie eine Ressource mithilfe der Repository Service API (Java):
 
    Aktualisieren Sie die Informationen des Objekts `Resource`. Um die Beschreibung in diesem Beispiel zu aktualisieren, rufen Sie die `Resource`-Methode des Objekts `setDescription` auf und übergeben Sie die neue Zeichenfolge als Parameter.
 
-   Rufen Sie dann die `ServiceClientFactory`-Methode des Objekts auf und übergeben Sie die folgenden Parameter:`updateResource`
+   Rufen Sie dann die `updateResource`-Methode des Objekts auf und übergeben Sie die folgenden Parameter:`ServiceClientFactory`
 
    * Ein `java.lang.String`-Objekt, das den URI der Ressource enthält.
    * Das `Resource`-Objekt, das die aktualisierten Ressourceninformationen enthält.
@@ -694,7 +694,7 @@ Aktualisieren Sie eine Ressource mithilfe der Repository API (Webdienst):
 
    Aktualisieren Sie die Informationen des Objekts `Resource`. Um in diesem Beispiel die Beschreibung zu aktualisieren, weisen Sie dem Feld `Resource` des Objekts `description` einen neuen Wert zu.
 
-1. Rufen Sie die `RepositoryServiceService`-Methode des Objekts auf und übergeben Sie die folgenden Parameter:`updateResource`
+1. Rufen Sie die `updateResource`-Methode des Objekts auf und übergeben Sie die folgenden Parameter:`RepositoryServiceService`
 
    * Ein `System.String`-Objekt, das den URI der Ressource enthält.
    * Das `Resource`-Objekt, das die aktualisierten Ressourceninformationen enthält.
@@ -920,11 +920,11 @@ Erstellen Sie Beziehungsressourcen mithilfe der Java-API des Repository-Dienstes
 
 1. Geben Sie die URIs der Ressourcen an, die verknüpft werden sollen
 
-   Geben Sie die URIs der Ressourcen an, die verknüpft werden sollen. In diesem Fall sind die URIs `testResource1` und `testResource2` und im Ordner `testFolder` enthalten, da sich die Ressourcen im Ordner &lt;a2/> befinden. `"/testFolder/testResource1"``"/testFolder/testResource2"` Die URIs werden als `java.lang.String`-Objekte gespeichert. In diesem Beispiel werden die Ressourcen zuerst in das Repository geschrieben und ihre URIs abgerufen. Weitere Informationen zum Schreiben einer Ressource finden Sie unter [Schreibressourcen](aem-forms-repository.md#writing-resources).
+   Geben Sie die URIs der Ressourcen an, die verknüpft werden sollen. In diesem Fall sind die URIs `testResource1` und `testResource2` und im Ordner `testFolder` enthalten, da sich die Ressourcen im Ordner `"/testFolder/testResource1"` befinden. `"/testFolder/testResource2"` Die URIs werden als `java.lang.String`-Objekte gespeichert. In diesem Beispiel werden die Ressourcen zuerst in das Repository geschrieben und ihre URIs abgerufen. Weitere Informationen zum Schreiben einer Ressource finden Sie unter [Schreibressourcen](aem-forms-repository.md#writing-resources).
 
 1. Beziehung erstellen
 
-   Rufen Sie die `ResourceRepositoryClient`-Methode des Objekts auf und übergeben Sie die folgenden Parameter:`createRelationship`
+   Rufen Sie die `createRelationship`-Methode des Objekts auf und übergeben Sie die folgenden Parameter:`ResourceRepositoryClient`
 
    * Der URI der Quellressource.
    * Der URI der Zielgruppe-Ressource.
@@ -964,11 +964,11 @@ Erstellen Sie Beziehungsressourcen mithilfe der Repository API (Webdienst):
 
 1. Geben Sie die URIs der Ressourcen an, die verknüpft werden sollen
 
-   Geben Sie die URIs der Ressourcen an, die verknüpft werden sollen. In diesem Fall sind die URIs `testResource1` und `testResource2` und im Ordner `testFolder` enthalten, da sich die Ressourcen im Ordner &lt;a2/> befinden. `"/testFolder/testResource1"``"/testFolder/testResource2"` Bei Verwendung einer Sprache, die mit Microsoft .NET Framework kompatibel ist (z. B. C#), werden die URIs als `System.String`-Objekte gespeichert. In diesem Beispiel werden die Ressourcen zuerst in das Repository geschrieben und ihre URIs abgerufen. Weitere Informationen zum Schreiben einer Ressource finden Sie unter [Schreibressourcen](aem-forms-repository.md#writing-resources).
+   Geben Sie die URIs der Ressourcen an, die verknüpft werden sollen. In diesem Fall sind die URIs `testResource1` und `testResource2` und im Ordner `testFolder` enthalten, da sich die Ressourcen im Ordner `"/testFolder/testResource1"` befinden. `"/testFolder/testResource2"` Bei Verwendung einer Sprache, die mit Microsoft .NET Framework kompatibel ist (z. B. C#), werden die URIs als `System.String`-Objekte gespeichert. In diesem Beispiel werden die Ressourcen zuerst in das Repository geschrieben und ihre URIs abgerufen. Weitere Informationen zum Schreiben einer Ressource finden Sie unter [Schreibressourcen](aem-forms-repository.md#writing-resources).
 
 1. Beziehung erstellen
 
-   Rufen Sie die `RepositoryServiceService`-Methode des Objekts auf und übergeben Sie die folgenden Parameter:`createRelationship`
+   Rufen Sie die `createRelationship`-Methode des Objekts auf und übergeben Sie die folgenden Parameter:`RepositoryServiceService`
 
    * Der URI der Quellressource.
    * Der URI der Zielgruppe-Ressource.
@@ -1073,7 +1073,7 @@ Sperren Sie Ressourcen mithilfe der Repository Service API (Java):
 
 1. Ressource sperren
 
-   Rufen Sie die `ResourceRepositoryClient`-Methode des Objekts auf und übergeben Sie die folgenden Parameter:`lockResource`
+   Rufen Sie die `lockResource`-Methode des Objekts auf und übergeben Sie die folgenden Parameter:`ResourceRepositoryClient`
 
    * Der URI der Ressource.
    * Der Sperrbereich. In diesem Beispiel wird der Sperrbereich als `com.adobe.repository.infomodel.bean.Lock.SCOPE_EXCLUSIVE` angegeben, da die Ressource für die ausschließliche Verwendung gesperrt wird.
@@ -1085,11 +1085,11 @@ Sperren Sie Ressourcen mithilfe der Repository Service API (Java):
 
 1. Sperren der Ressource abrufen
 
-   Rufen Sie die `ResourceRepositoryClient`-Methode des Objekts auf und übergeben Sie den URI der Ressource als Parameter. `getLocks` Die Methode gibt eine Liste von Lock-Objekten zurück, durch die Sie iterieren können. In diesem Beispiel werden der Sperreneigentümer, die Sperrtiefe und der Umfang für jedes Objekt gedruckt, indem die Methoden `getOwnerUserId`, `getDepth` und `getType` aufgerufen werden.
+   Rufen Sie die `getLocks`-Methode des Objekts auf und übergeben Sie den URI der Ressource als Parameter. `ResourceRepositoryClient` Die Methode gibt eine Liste von Lock-Objekten zurück, durch die Sie iterieren können. In diesem Beispiel werden der Sperreneigentümer, die Sperrtiefe und der Umfang für jedes Objekt gedruckt, indem die Methoden `getOwnerUserId`, `getDepth` und `getType` aufgerufen werden.
 
 1. Ressource entsperren
 
-   Rufen Sie die `ResourceRepositoryClient`-Methode des Objekts auf und übergeben Sie den URI der Ressource als Parameter. `unlockResource` Weitere Informationen finden Sie unter [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   Rufen Sie die `unlockResource`-Methode des Objekts auf und übergeben Sie den URI der Ressource als Parameter. `ResourceRepositoryClient` Weitere Informationen finden Sie unter [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Siehe auch**
 
@@ -1116,11 +1116,11 @@ Sperren Sie Ressourcen mithilfe der Repository Service API (Webdienst):
 
 1. Geben Sie den URI der zu sperrenden Ressource an
 
-   Geben Sie eine Zeichenfolge an, die den URI der zu sperrenden Ressource enthält. In diesem Fall lautet der URI `testResource`, da sich die Ressource `testFolder` im Ordner &lt;a1/> befindet. `"/testFolder/testResource"` Wenn Sie eine mit Microsoft .NET Framework kompatible Sprache verwenden (z. B. C#), speichern Sie den URI in einem `System.String`-Objekt.
+   Geben Sie eine Zeichenfolge an, die den URI der zu sperrenden Ressource enthält. In diesem Fall lautet der URI `testResource`, da sich die Ressource `testFolder` im Ordner `"/testFolder/testResource"` befindet. Wenn Sie eine mit Microsoft .NET Framework kompatible Sprache verwenden (z. B. C#), speichern Sie den URI in einem `System.String`-Objekt.
 
 1. Ressource sperren
 
-   Rufen Sie die `RepositoryServiceService`-Methode des Objekts auf und übergeben Sie die folgenden Parameter:`lockResource`
+   Rufen Sie die `lockResource`-Methode des Objekts auf und übergeben Sie die folgenden Parameter:`RepositoryServiceService`
 
    * Der URI der Ressource.
    * Der Sperrbereich. In diesem Beispiel wird der Sperrbereich als `11` angegeben, da die Ressource für die ausschließliche Verwendung gesperrt wird.
@@ -1130,11 +1130,11 @@ Sperren Sie Ressourcen mithilfe der Repository Service API (Webdienst):
 
 1. Sperren der Ressource abrufen
 
-   Rufen Sie die `RepositoryServiceService`-Methode des Objekts auf und übergeben Sie den URI der Ressource als ersten Parameter und `getLocks` als zweiten Parameter. `null` Die Methode gibt ein `object`-Array zurück, das `Lock`-Objekte enthält, durch die Sie iterieren können. In diesem Beispiel werden der Inhaber der Sperre, die Tiefe und der Umfang für jedes Objekt gedruckt, indem auf die Felder `Lock`, `ownerUserId`, `depth` und `type` des Objekts zugegriffen wird.
+   Rufen Sie die `getLocks`-Methode des Objekts auf und übergeben Sie den URI der Ressource als ersten Parameter und `null` als zweiten Parameter. `RepositoryServiceService` Die Methode gibt ein `object`-Array zurück, das `Lock`-Objekte enthält, durch die Sie iterieren können. In diesem Beispiel werden der Inhaber der Sperre, die Tiefe und der Umfang für jedes Objekt gedruckt, indem auf die Felder `Lock`, `ownerUserId`, `depth` und `type` des Objekts zugegriffen wird.
 
 1. Ressource entsperren
 
-   Rufen Sie die `RepositoryServiceService`-Methode des Objekts auf und übergeben Sie den URI der Ressource als ersten Parameter und `unlockResource` als zweiten Parameter.`null`
+   Rufen Sie die `unlockResource`-Methode des Objekts auf und übergeben Sie den URI der Ressource als ersten Parameter und `null` als zweiten Parameter.`RepositoryServiceService`
 
 **Siehe auch**
 
@@ -1215,7 +1215,7 @@ Löschen Sie eine Ressource mithilfe der Repository API (Java):
 
 1. Ressource löschen
 
-   Rufen Sie die `ResourceRepositoryClient`-Methode des Objekts auf und übergeben Sie den URI der Ressource als Parameter.`deleteResource`
+   Rufen Sie die `deleteResource`-Methode des Objekts auf und übergeben Sie den URI der Ressource als Parameter.`ResourceRepositoryClient`
 
 **Siehe auch**
 
