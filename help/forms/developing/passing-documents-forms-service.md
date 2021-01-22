@@ -89,7 +89,7 @@ Je nach Typ der Clientanwendung können Sie das Formular in einen Client-Webbrow
 
 1. Formularentwurf aus Content Services abrufen (nicht mehr unterstützt)
 
-   Rufen Sie die `DocumentManagementServiceClientImpl`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`retrieveContent`
+   Rufen Sie die `retrieveContent`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`DocumentManagementServiceClientImpl`
 
    * Ein Zeichenfolgenwert, der den Store angibt, in dem der Inhalt hinzugefügt wird. Der Standardspeicher ist `SpacesStore`. Dieser Wert ist ein obligatorischer Parameter.
    * Ein Zeichenfolgenwert, der den vollständig qualifizierten Pfad des abzurufenden Inhalts angibt (z. B. `/Company Home/Form Designs/Loan.xdp`). Dieser Wert ist ein obligatorischer Parameter.
