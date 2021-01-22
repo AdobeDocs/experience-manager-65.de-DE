@@ -138,12 +138,12 @@ Verschlüsseln Sie ein PDF-Dokument mit einem Kennwort mithilfe der Verschlüsse
 1. Legen Sie Optionen für die Verschlüsselungslaufzeit fest.
 
    * Erstellen Sie ein `PasswordEncryptionOptionSpec`-Objekt, indem Sie den Konstruktor aufrufen.
-   * Geben Sie die zu verschlüsselnden PDF-Dokument-Ressourcen an, indem Sie die `PasswordEncryptionOptionSpec`-Methode des Objekts aufrufen und einen `setEncryptOption`-Auflistung-Wert übergeben, der die zu verschlüsselnden Dokumente angibt. `PasswordEncryptionOption` Um beispielsweise das gesamte PDF-Dokument einschließlich der zugehörigen Metadaten und Anlagen zu verschlüsseln, geben Sie `PasswordEncryptionOption.ALL` an.
+   * Geben Sie die zu verschlüsselnden PDF-Dokument-Ressourcen an, indem Sie die `setEncryptOption`-Methode des Objekts aufrufen und einen `PasswordEncryptionOption`-Auflistung-Wert übergeben, der die zu verschlüsselnden Dokumente angibt. `PasswordEncryptionOptionSpec` Um beispielsweise das gesamte PDF-Dokument einschließlich der zugehörigen Metadaten und Anlagen zu verschlüsseln, geben Sie `PasswordEncryptionOption.ALL` an.
    * Erstellen Sie ein `java.util.List`-Objekt, das die Verschlüsselungsberechtigungen mithilfe des Konstruktors `ArrayList` speichert.
    * Geben Sie eine Berechtigung an, indem Sie die Methode `java.util.List` des Objekts &quot;s `add` aufrufen und einen Auflistung-Wert übergeben, der der gewünschten Berechtigung entspricht. Um beispielsweise die Berechtigung zum Kopieren von Daten im PDF-Dokument festzulegen, geben Sie `PasswordEncryptionPermission.PASSWORD_EDIT_COPY` an. (Wiederholen Sie diesen Schritt für jede festzulegende Berechtigung.)
    * Geben Sie die Acrobat-Kompatibilitätsoption an, indem Sie die `PasswordEncryptionOptionSpec`-Objektmethode `setCompatability` aufrufen und einen Auflistung-Wert übergeben, der die Acrobat-Kompatibilitätsstufe angibt. Sie können beispielsweise `PasswordEncryptionCompatability.ACRO_7` angeben.
-   * Geben Sie den Kennwortwert an, mit dem ein Benutzer das verschlüsselte PDF-Dokument öffnen kann, indem er die `PasswordEncryptionOptionSpec`-Methode des Objekts aufruft und einen Zeichenfolgenwert übergibt, der das offene Kennwort darstellt.`setDocumentOpenPassword`
-   * Geben Sie den Wert für das Übergeordnet-Kennwort an, mit dem ein Benutzer die Verschlüsselung aus dem PDF-Dokument entfernen kann, indem er die `PasswordEncryptionOptionSpec`-Methode des Objekts aufruft und einen Zeichenfolgenwert übergibt, der das Übergeordnet-Kennwort darstellt.`setPermissionPassword`
+   * Geben Sie den Kennwortwert an, mit dem ein Benutzer das verschlüsselte PDF-Dokument öffnen kann, indem er die `setDocumentOpenPassword`-Methode des Objekts aufruft und einen Zeichenfolgenwert übergibt, der das offene Kennwort darstellt.`PasswordEncryptionOptionSpec`
+   * Geben Sie den Wert für das Übergeordnet-Kennwort an, mit dem ein Benutzer die Verschlüsselung aus dem PDF-Dokument entfernen kann, indem er die `setPermissionPassword`-Methode des Objekts aufruft und einen Zeichenfolgenwert übergibt, der das Übergeordnet-Kennwort darstellt.`PasswordEncryptionOptionSpec`
 
 1. hinzufügen das Kennwort.
 
@@ -199,7 +199,7 @@ Verschlüsseln eines PDF-Dokuments mit einem Kennwort mithilfe der Verschlüssel
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern eines mit einem Kennwort verschlüsselten PDF-Dokuments verwendet.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des zu verschlüsselnden PDF-Dokuments und den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream`-Eigenschaft des Objekts `Length` abrufen.
-   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`Read`
+   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `Read`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`System.IO.FileStream`
    * Füllen Sie das `BLOB`-Objekt, indem Sie den Inhalt des Byte-Arrays dem `BLOB`-Datenmember des Objekts `MTOM` zuweisen.
 
 1. Legen Sie Optionen für die Verschlüsselungslaufzeit fest.
@@ -224,7 +224,7 @@ Verschlüsseln eines PDF-Dokuments mit einem Kennwort mithilfe der Verschlüssel
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des geschützten PDF-Dokuments darstellt.
    * Erstellen Sie ein Bytearray, das den Dateninhalt des `BLOB`-Objekts speichert, das von der `encryptPDFUsingPassword`-Methode zurückgegeben wurde. Füllen Sie das Bytearray, indem Sie den Wert des `BLOB`-Datenelements des Objekts `MTOM` abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie den Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter`-Methode des Objekts aufrufen und das Bytearray übergeben.`Write`
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `Write`-Methode des Objekts aufrufen und das Bytearray übergeben.`System.IO.BinaryWriter`
 
 **Siehe auch**
 
@@ -342,21 +342,21 @@ Verschlüsseln eines PDF-Dokuments mit einem Zertifikat mithilfe der Verschlüss
 1. Verweisen Sie auf das Zertifikat.
 
    * Erstellen Sie ein `java.util.List`-Objekt, das Berechtigungsinformationen mithilfe seines Konstruktors speichert.
-   * Geben Sie die mit dem verschlüsselten Dokument verknüpfte Berechtigung an, indem Sie die `java.util.List`-Methode des Objekts aufrufen und einen `add`-Auflistung-Wert übergeben, der die Berechtigungen darstellt, die dem Benutzer erteilt werden, der das geschützte PDF-Dokument öffnet. `CertificateEncryptionPermissions` Um beispielsweise alle Berechtigungen anzugeben, übergeben Sie `CertificateEncryptionPermissions.PKI_ALL_PERM`.
+   * Geben Sie die mit dem verschlüsselten Dokument verknüpfte Berechtigung an, indem Sie die `add`-Methode des Objekts aufrufen und einen `CertificateEncryptionPermissions`-Auflistung-Wert übergeben, der die Berechtigungen darstellt, die dem Benutzer erteilt werden, der das geschützte PDF-Dokument öffnet. `java.util.List` Um beispielsweise alle Berechtigungen anzugeben, übergeben Sie `CertificateEncryptionPermissions.PKI_ALL_PERM`.
    * Erstellen Sie ein Objekt `Recipient`, indem Sie den Konstruktor verwenden.
    * Erstellen Sie ein `java.io.FileInputStream`-Objekt, das das Zertifikat darstellt, mit dem das PDF-Dokument mithilfe des Konstruktors verschlüsselt wird, und übergeben Sie einen Zeichenfolgenwert, der den Speicherort des Zertifikats angibt.
    * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie den Konstruktor verwenden und das `java.io.FileInputStream`-Objekt übergeben, das das Zertifikat darstellt.
-   * Rufen Sie die `Recipient`-Methode des Objekts auf und übergeben Sie das `setX509Cert`-Objekt, das das Zertifikat enthält. `com.adobe.idp.Document` (Darüber hinaus kann das `Recipient`Objekt einen TrustStore-Zertifikatalias oder eine LDAP-URL als Zertifikatquelle haben.)
+   * Rufen Sie die `setX509Cert`-Methode des Objekts auf und übergeben Sie das `com.adobe.idp.Document`-Objekt, das das Zertifikat enthält. `Recipient` (Darüber hinaus kann das `Recipient`Objekt einen TrustStore-Zertifikatalias oder eine LDAP-URL als Zertifikatquelle haben.)
    * Erstellen Sie ein `CertificateEncryptionIdentity`-Objekt, das Berechtigungs- und Zertifikatinformationen mithilfe seines Konstruktors speichert.
-   * Rufen Sie die `CertificateEncryptionIdentity`-Methode des Objekts auf und übergeben Sie das `setPerms`-Objekt, das Berechtigungsinformationen speichert.`java.util.List`
-   * Rufen Sie die `CertificateEncryptionIdentity`-Methode des Objekts auf und übergeben Sie das `setRecipient`-Objekt, das Zertifikatsinformationen speichert.`Recipient`
+   * Rufen Sie die `setPerms`-Methode des Objekts auf und übergeben Sie das `java.util.List`-Objekt, das Berechtigungsinformationen speichert.`CertificateEncryptionIdentity`
+   * Rufen Sie die `setRecipient`-Methode des Objekts auf und übergeben Sie das `Recipient`-Objekt, das Zertifikatsinformationen speichert.`CertificateEncryptionIdentity`
    * Erstellen Sie ein `java.util.List`-Objekt, das Zertifikatinformationen mithilfe des Konstruktors speichert.
    * Rufen Sie die add-Methode des Objekts `java.util.List` auf und übergeben Sie das `CertificateEncryptionIdentity`-Objekt. (Dieses `java.util.List`-Objekt wird als Parameter an die `encryptPDFUsingCertificates`-Methode übergeben.)
 
 1. Legen Sie Optionen für die Verschlüsselungslaufzeit fest.
 
    * Erstellen Sie ein `CertificateEncryptionOptionSpec`-Objekt, indem Sie den Konstruktor aufrufen.
-   * Geben Sie die zu verschlüsselnden PDF-Dokument-Ressourcen an, indem Sie die `CertificateEncryptionOptionSpec`-Methode des Objekts aufrufen und einen `setOption`-Auflistung-Wert übergeben, der die zu verschlüsselnden Dokumente angibt. `CertificateEncryptionOption` Um beispielsweise das gesamte PDF-Dokument einschließlich der zugehörigen Metadaten und Anlagen zu verschlüsseln, geben Sie `CertificateEncryptionOption.ALL` an.
+   * Geben Sie die zu verschlüsselnden PDF-Dokument-Ressourcen an, indem Sie die `setOption`-Methode des Objekts aufrufen und einen `CertificateEncryptionOption`-Auflistung-Wert übergeben, der die zu verschlüsselnden Dokumente angibt. `CertificateEncryptionOptionSpec` Um beispielsweise das gesamte PDF-Dokument einschließlich der zugehörigen Metadaten und Anlagen zu verschlüsseln, geben Sie `CertificateEncryptionOption.ALL` an.
    * Geben Sie die Acrobat-Kompatibilitätsoption an, indem Sie die `CertificateEncryptionOptionSpec`-Objektmethode `setCompat` aufrufen und einen `CertificateEncryptionCompatibility`-Auflistung-Wert übergeben, der die Acrobat-Kompatibilitätsstufe angibt. Sie können beispielsweise `CertificateEncryptionCompatibility.ACRO_7` angeben.
 
 1. Erstellen Sie ein zertifikatverschlüsseltes PDF-Dokument.
@@ -414,7 +414,7 @@ Verschlüsseln eines PDF-Dokuments mit einem Zertifikat mithilfe der Verschlüss
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern eines PDF-Dokuments verwendet, das mit einem Zertifikat verschlüsselt ist.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des zu verschlüsselnden PDF-Dokuments und den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream`-Eigenschaft des Objekts `Length` abrufen.
-   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`Read`
+   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `Read`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`System.IO.FileStream`
    * Füllen Sie das `BLOB`-Objekt, indem Sie seine `MTOM`-Eigenschaft mit dem Inhalt des Byte-Arrays zuweisen.
 
 1. Verweisen Sie auf das Zertifikat.
@@ -423,7 +423,7 @@ Verschlüsseln eines PDF-Dokuments mit einem Zertifikat mithilfe der Verschlüss
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Dieses `BLOB`-Objekt speichert das Zertifikat, das das PDF-Dokument verschlüsselt.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des Zertifikats und den Modus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream`-Eigenschaft des Objekts `Length` abrufen.
-   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`Read`
+   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `Read`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`System.IO.FileStream`
    * Füllen Sie das `BLOB`-Objekt, indem Sie den Inhalt des Byte-Arrays dem `BLOB`-Datenmember des Objekts `MTOM` zuweisen.
    * Weisen Sie das `BLOB`-Objekt, das das Zertifikat speichert, dem `Recipient`-Datenmember des Objekts `x509Cert` zu.
    * Erstellen Sie ein `CertificateEncryptionIdentity`-Objekt, das Zertifikatinformationen mithilfe des Konstruktors speichert.
@@ -451,7 +451,7 @@ Verschlüsseln eines PDF-Dokuments mit einem Zertifikat mithilfe der Verschlüss
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des geschützten PDF-Dokuments darstellt.
    * Erstellen Sie ein Bytearray, das den Dateninhalt des `BLOB`-Objekts speichert, das von der `encryptPDFUsingCertificates`-Methode zurückgegeben wurde. Füllen Sie das Bytearray, indem Sie den Wert des `BLOB`-Datenelements des Objekts `binaryData` abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie den Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter`-Methode des Objekts aufrufen und das Bytearray übergeben.`Write`
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `Write`-Methode des Objekts aufrufen und das Bytearray übergeben.`System.IO.BinaryWriter`
 
 **Siehe auch**
 
@@ -543,7 +543,7 @@ Zertifikatbasierte Verschlüsselung aus einem PDF-Dokument mithilfe der Verschl�
 
 1. Entfernen Sie die Verschlüsselung.
 
-   Entfernen Sie die zertifikatbasierte Verschlüsselung aus dem PDF-Dokument, indem Sie die `EncryptionServiceClient`-Methode des Objekts aufrufen und die folgenden Werte übergeben:`removePDFCertificateSecurity`
+   Entfernen Sie die zertifikatbasierte Verschlüsselung aus dem PDF-Dokument, indem Sie die `removePDFCertificateSecurity`-Methode des Objekts aufrufen und die folgenden Werte übergeben:`EncryptionServiceClient`
 
    * Das `com.adobe.idp.Document`-Objekt, das das verschlüsselte PDF-Dokument enthält.
    * Ein Zeichenfolgenwert, der den Aliasnamen des privaten Schlüssels angibt, der dem zum Verschlüsseln des PDFf-Dokuments verwendeten Schlüssel entspricht.
@@ -595,12 +595,12 @@ Zertifikatbasierte Verschlüsselung mithilfe der Verschlüsselungs-API (Webdiens
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des verschlüsselten PDF-Dokuments verwendet.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des verschlüsselten PDF-Dokuments und den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream`-Eigenschaft des Objekts `Length` abrufen.
-   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`Read`
+   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `Read`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`System.IO.FileStream`
    * Füllen Sie das `BLOB`-Objekt, indem Sie den Inhalt des Byte-Arrays dem `BLOB`-Datenmember des Objekts `MTOM` zuweisen.
 
 1. Entfernen Sie die Verschlüsselung.
 
-   Rufen Sie die `EncryptionServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`removePDFCertificateSecurity`
+   Rufen Sie die `removePDFCertificateSecurity`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`EncryptionServiceClient`
 
    * Das `BLOB`-Objekt, das Dateistream-Daten enthält, die ein verschlüsseltes PDF-Dokument darstellen.
    * Ein Zeichenfolgenwert, der den Aliasnamen des öffentlichen Schlüssels angibt, der dem zum Verschlüsseln des PDFf-Dokuments verwendeten privaten Schlüssel entspricht.
@@ -612,7 +612,7 @@ Zertifikatbasierte Verschlüsselung mithilfe der Verschlüsselungs-API (Webdiens
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des ungesicherten PDF-Dokuments darstellt.
    * Erstellen Sie ein Bytearray, das den Inhalt des `BLOB`-Objekts speichert, das von der `removePDFPasswordSecurity`-Methode zurückgegeben wurde. Füllen Sie das Bytearray, indem Sie den Wert des `BLOB`-Datenelements des Objekts `MTOM` abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie den Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter`-Methode des Objekts aufrufen und das Bytearray übergeben.`Write`
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `Write`-Methode des Objekts aufrufen und das Bytearray übergeben.`System.IO.BinaryWriter`
 
 **Siehe auch**
 
@@ -698,7 +698,7 @@ Entfernen Sie die kennwortbasierte Verschlüsselung aus einem PDF-Dokument mithi
 
 1. Entfernen Sie das Kennwort.
 
-   Entfernen Sie die kennwortbasierte Verschlüsselung aus dem PDF-Dokument, indem Sie die `EncryptionServiceClient`-Methode des Objekts aufrufen und die folgenden Werte übergeben:`removePDFPasswordSecurity`
+   Entfernen Sie die kennwortbasierte Verschlüsselung aus dem PDF-Dokument, indem Sie die `removePDFPasswordSecurity`-Methode des Objekts aufrufen und die folgenden Werte übergeben:`EncryptionServiceClient`
 
    * Ein `com.adobe.idp.Document`-Objekt, das das verschlüsselte PDF-Dokument enthält.
    * Ein Zeichenfolgenwert, der den Übergeordnet-Kennwortwert angibt, der zum Entfernen der Verschlüsselung aus dem PDF-Dokument verwendet wird.
@@ -744,12 +744,12 @@ Entfernen Sie die kennwortbasierte Verschlüsselung mithilfe der Verschlüsselun
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern eines kennwortverschlüsselten PDF-Dokuments verwendet.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des verschlüsselten PDF-Dokuments und den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream`-Eigenschaft des Objekts `Length` abrufen.
-   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`Read`
+   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `Read`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`System.IO.FileStream`
    * Füllen Sie das `BLOB`-Objekt, indem Sie den Inhalt des Byte-Arrays dem `BLOB`-Datenmember des Objekts `MTOM` zuweisen.
 
 1. Entfernen Sie das Kennwort.
 
-   Rufen Sie die `EncryptionServiceService`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`removePDFPasswordSecurity`
+   Rufen Sie die `removePDFPasswordSecurity`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`EncryptionServiceService`
 
    * Das `BLOB`-Objekt, das Dateistream-Daten enthält, die ein verschlüsseltes PDF-Dokument darstellen.
    * Ein Zeichenfolgenwert, der den Kennwortwert angibt, der zum Entfernen der Verschlüsselung aus dem PDF-Dokument verwendet wird. Dieser Wert wird beim Verschlüsseln des PDF-Dokuments mit einem Kennwort angegeben.
@@ -761,7 +761,7 @@ Entfernen Sie die kennwortbasierte Verschlüsselung mithilfe der Verschlüsselun
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des ungesicherten PDF-Dokuments darstellt.
    * Erstellen Sie ein Bytearray, das den Inhalt des `BLOB`-Objekts speichert, das von der `removePDFPasswordSecurity`-Methode zurückgegeben wurde. Füllen Sie das Bytearray, indem Sie den Wert des `BLOB`-Datenelements des Objekts `MTOM` abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie den Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter`-Methode des Objekts aufrufen und das Bytearray übergeben.`Write`
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `Write`-Methode des Objekts aufrufen und das Bytearray übergeben.`System.IO.BinaryWriter`
 
 **Siehe auch**
 
