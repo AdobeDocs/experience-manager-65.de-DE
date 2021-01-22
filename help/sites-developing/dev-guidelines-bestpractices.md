@@ -100,7 +100,7 @@ JCR-Abfragen sind sehr wirksam, wenn sie richtig eingesetzt werden. Sie sind bes
 * echte Benutzerabfragen, wie die Volltextsuche in Inhalten.
 * die Suche nach strukturierten Inhalten in einem gesamten Repository.
 
-   Stellen Sie in solchen Fällen sicher, dass Abfragen nur ausgeführt werden, wenn dies unbedingt erforderlich ist, z. B. bei Aktivierung oder Cache-Ungültigmachung (im Gegensatz zu Workflows Schritte, Ereignis-Handler, die Inhaltsänderungen auslösen, Filter usw.).
+   Stellen Sie in solchen Fällen sicher, dass Abfragen nur ausgeführt werden, wenn dies unbedingt erforderlich ist, z. B. bei Aktivierung oder Cache-Ungültigmachung (im Gegensatz zu Workflows Schritte, Ereignis-Handler, die Trigger bei Inhaltsänderungen, Filtern usw. sind).
 
 JCR-Abfragen sollten nicht für reine Rendering-Anforderungen verwendet werden. Beispielsweise sind JCR-Abfragen nicht geeignet für
 
