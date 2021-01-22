@@ -107,11 +107,11 @@ Wiedergabe eines HTML-Formulars, das eine benutzerdefinierte CSS-Datei verwendet
 1. CSS-Datei referenzieren
 
    * Erstellen Sie ein `HTMLRenderSpec`-Objekt mit dem Konstruktor.
-   * Um das HTML-Formular wiederzugeben, das eine benutzerdefinierte CSS-Datei verwendet, rufen Sie die `HTMLRenderSpec`-Methode des Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Speicherort und den Namen der CSS-Datei angibt.`setCustomCSSURI`
+   * Um das HTML-Formular wiederzugeben, das eine benutzerdefinierte CSS-Datei verwendet, rufen Sie die `setCustomCSSURI`-Methode des Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Speicherort und den Namen der CSS-Datei angibt.`HTMLRenderSpec`
 
 1. HTML-Formular wiedergeben
 
-   Rufen Sie die `FormsServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`(Deprecated) (Deprecated) renderHTMLForm`
+   Rufen Sie die `(Deprecated) (Deprecated) renderHTMLForm`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`FormsServiceClient`
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil einer Forms-Anwendung ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Ein `TransformTo`-Enum-Wert, der den HTML-Voreinstellungstyp angibt. Um beispielsweise ein HTML-Formular wiederzugeben, das mit dynamischem HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML` an.
