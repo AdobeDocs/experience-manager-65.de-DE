@@ -115,7 +115,7 @@ Dieser Code ist in allen AEM-Beispiel-Sites, wie Geometrixx Outdoors, eingeschlo
 
 ### sitecatalystAfterCollect-Ereignis {#the-sitecatalystaftercollect-event}
 
-Das `cloudservices`-Skript löst das `sitecatalystAfterCollect`-Ereignis aus:
+Das Skript `cloudservices` Trigger das Ereignis `sitecatalystAfterCollect`:
 
 ```
 $CQ(document).trigger("sitecatalystAfterCollect");
