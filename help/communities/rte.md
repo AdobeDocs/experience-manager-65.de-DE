@@ -24,7 +24,7 @@ ht-degree: 3%
 
 Ein Rich Text Editor (RTE) bietet die Möglichkeit, Text mit Markup einzugeben.
 
-Bei Communities-Komponenten wirkt sich dies ähnlich wie beim Rich-Text-Editor in der Authoring-Umgebung[ auf den in der Veröffentlichungs-Umgebung eingegebenen Text aus.](../../help/sites-authoring/rich-text-editor.md)
+Bei Communities-Komponenten wirkt sich dies ähnlich wie beim Rich-Text-Editor in der Authoring-Umgebung](../../help/sites-authoring/rich-text-editor.md) auf den in der Veröffentlichungs-Umgebung eingegebenen Text aus.[
 
 ![Rich-Text-Editor](assets/rich-text-editor.png)
 
