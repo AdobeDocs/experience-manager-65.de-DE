@@ -144,7 +144,7 @@ In der folgenden Tabelle sind die standardmäßigen CQ-Variablen beschrieben, di
    Informationen zum Optimieren der Zuordnungen finden Sie im Handbuch [Videomessung in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html).
 
 1. [hinzufügen Sie das ](/help/sites-administering/adobeanalytics.md) Framework auf die Seite.
-1. Um das Setup im **Vorschau-Modus** zu testen, spielen Sie das Video ab, um Adobe Analytics-Aufrufe auszulösen.
+1. Um das Setup im **Vorschau-Modus** zu testen, spielen Sie das Video ab, um Adobe Analytics-Aufrufe an Trigger zu erhalten.
 
 Die folgenden Adobe Analytics-Verfolgungsdatenbeispiele gelten für die Meilensteinverfolgung mit Verfolgungsoffset 4,8,16,20 und 24 und den folgenden Zuordnungen für die CQ-Variablen:
 
@@ -279,7 +279,7 @@ eventdata.events.milestoneXX
    Informationen zum Optimieren der Zuordnungen finden Sie im Handbuch [Videomessung in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html).
 
 1. [hinzufügen Sie das ](/help/sites-administering/adobeanalytics.md) Framework auf die Seite.
-1. Um das Setup im **Vorschau-Modus** zu testen, spielen Sie das Video ab, um Adobe Analytics-Aufrufe auszulösen.
+1. Um das Setup im **Vorschau-Modus** zu testen, spielen Sie das Video ab, um Adobe Analytics-Aufrufe an Trigger zu erhalten.
 
 ## Legacy Milestones {#legacy-milestones}
 
