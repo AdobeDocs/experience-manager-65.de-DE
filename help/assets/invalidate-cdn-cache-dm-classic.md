@@ -1,17 +1,15 @@
 ---
 title: Invalidierung des CDN-Cache mithilfe von Dynamic Media Classic
 description: Wenn Sie Ihre zwischengespeicherten Inhalte im CDN (Content Versand Network) für ungültig erklären, können Sie Assets, die von Dynamic Media Classic bereitgestellt werden, schnell aktualisieren, anstatt darauf zu warten, dass der Cache abläuft.
-uuid: 0fd88e31-9745-4c98-a245-9f5d0766cad4
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: e6c9b50b-c27c-48bf-b3c0-9994e7bf6d7e
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 84%
+source-wordcount: '700'
+ht-degree: 81%
 
 ---
 
@@ -28,15 +26,9 @@ Siehe auch [Überblick über Caching in Dynamic Media Classic (Scene7)](https://
 
 **So machen Sie den CDN-Cache über Dynamic Media Classic ungültig:**
 
-1. Führen Sie einen der folgenden Schritte aus:
+1. Öffnen Sie die Desktopanwendung [Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) und melden Sie sich dann bei Ihrem Konto an.
 
-   * Melden Sie sich in Ihrem Webbrowser bei Ihrem Konto für Dynamic Media Classic an:
-
-      [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
-
-      Ihre Anmeldedaten haben Sie zum Zeitpunkt der Bereitstellung von Adobe erhalten. Wenn Ihnen die Informationen nicht vorliegen, wenden Sie sich an den technischen Support.
-
-   * Öffnen Sie die Anwendung Dynamic Media Classic und melden Sie sich bei Ihrem Konto an.
+   Ihre Anmeldedaten haben Sie zum Zeitpunkt der Bereitstellung von Adobe erhalten. Wenn Ihnen die Informationen nicht vorliegen, wenden Sie sich an den technischen Support.
 
 1. Tippen Sie in der rechten oberen Ecke der Seite auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Allgemeine Einstellungen.]**
 1. Suchen Sie auf der Seite „Allgemeine Programmeinstellungen“ unter der Überschrift für Server-Gruppen das Textfeld **[!UICONTROL Vorlage für CDN-Invalidierung]**.
