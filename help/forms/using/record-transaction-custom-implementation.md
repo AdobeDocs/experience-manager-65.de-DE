@@ -23,7 +23,7 @@ Verwenden Sie die TransactionRecorder-API, um Aktionen aufzuzeichnen, die nicht 
 
 Sie können einen benutzerspezifischen Code verwenden, um ein PDF-Formular zu senden, die URL der Benutzeroberfläche des Agenten an Endbenutzer zu senden, um eine interaktive Vorschau zu erstellen, oder um ein Formular mit benutzerdefinierten Methoden zu senden, anstatt die mit AEM Forms bereitgestellten Übermittlungsmethoden zu verwenden. Alle oben genannten Aktionen und benutzerdefinierten Implementierungen von AEM Forms APIs werden nicht als Transaktionen erfasst. AEM Forms stellt eine API bereit, [TransactionRecorder](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), um Aktionen wie Transaktionen aufzuzeichnen.
 
-Um eine Transaktion aufzuzeichnen, schreiben Sie das standardmäßige Sling-Servlet[ und rufen Sie das Servlet von einem Client auf, um eine Transaktion aufzuzeichnen. ](https://helpx.adobe.com/experience-manager/using/custom-sling-servlets.html) Sie können das Servlet mit AJAX oder einer anderen Standardmethode aufrufen.
+Um eine Transaktion aufzuzeichnen, schreiben Sie das standardmäßige Sling-Servlet](https://helpx.adobe.com/experience-manager/using/custom-sling-servlets.html) und rufen Sie das Servlet von einem Client auf, um eine Transaktion aufzuzeichnen. [ Sie können das Servlet mit AJAX oder einer anderen Standardmethode aufrufen.
 
 ## Beispiel für serverseitigen Code {#sample-server-sided-code}
 
