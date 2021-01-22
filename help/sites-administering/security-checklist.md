@@ -302,7 +302,7 @@ So verhindern Sie einen Missbrauch infolge von DoS-Angriffen:
 
       **JSON Max. Ergebnisse** (  `json.maximumresults`)
 
-      in der Konfiguration für den Apache Sling GET Servlet[. ](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet) Wenn dieser Grenzwert überschritten wird, wird das Rendering ausgeblendet. Der Standardwert für Sling innerhalb von AEM ist `200`.
+      in der Konfiguration für den Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet). [ Wenn dieser Grenzwert überschritten wird, wird das Rendering ausgeblendet. Der Standardwert für Sling innerhalb von AEM ist `200`.
 
    * Deaktivieren Sie als Präventivmaßnahme die anderen Standard-Renderer (HTML, Nur Text, XML). Konfigurieren Sie dazu ebenfalls das [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet).
    >[!CAUTION]
