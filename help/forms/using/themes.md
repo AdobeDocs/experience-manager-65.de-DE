@@ -453,7 +453,7 @@ Führen Sie die folgenden Schritte aus, um die Formatierung für eine bestimmte 
 1. Der Titel der Seitenleiste ändert sich in Widget „Numerisches Feld“ und enthält die Optionen zum Anpassen der Darstellung.
 Verwenden Sie die Option **Dimension und Position** in der Seitenleiste, um die Komponentengröße anzupassen. Stellen Sie sicher, dass der Status **Default** ist.
 
-Wählen Sie in der Komponenten-Symbolleiste **Widget &quot;Numerisches Feld&quot;, anstatt** Widget &quot;Feld **&quot;auszuwählen, &lt;a2/>und führen Sie die obigen Schritte aus.** Wenn Sie Dimensionen für die Option **Feld-Widget** auswählen, haben alle Textfelder mit Ausnahme des numerischen Felds dieselbe Größe.
+Wählen Sie in der Komponenten-Symbolleiste **Widget &quot;Numerisches Feld&quot;, anstatt** Widget &quot;Feld **&quot;auszuwählen,** und führen Sie die obigen Schritte aus. Wenn Sie Dimensionen für die Option **Feld-Widget** auswählen, haben alle Textfelder mit Ausnahme des numerischen Felds dieselbe Größe.
 
 ### Formatieren von Feldern für einen bestimmten Status {#styling-fields-given-state}
 
