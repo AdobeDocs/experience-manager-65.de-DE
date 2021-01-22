@@ -135,7 +135,7 @@ hinzufügen eines EJB-Endpunkts mithilfe der Java-API:
    * Geben Sie den Connector-ID-Wert an, indem Sie die `CreateEndpointInfo`-Methode des Objekts `setConnectorId` aufrufen und den Zeichenfolgenwert `EJB` übergeben.
    * Geben Sie die Beschreibung des Endpunkts an, indem Sie die `CreateEndpointInfo`-Methode des Objekts `setDescription` aufrufen und einen Zeichenfolgenwert übergeben, der den Endpunkt beschreibt.
    * Geben Sie den Namen des Endpunkts an, indem Sie die `CreateEndpointInfo`-Methode des Objekts `setName` aufrufen und einen Zeichenfolgenwert übergeben, der den Namen angibt.
-   * Geben Sie den Dienst an, zu dem der Endpunkt gehört, indem Sie die `CreateEndpointInfo`-Methode des Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Dienstnamen angibt.`setServiceId`
+   * Geben Sie den Dienst an, zu dem der Endpunkt gehört, indem Sie die `setServiceId`-Methode des Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Dienstnamen angibt.`CreateEndpointInfo`
    * Geben Sie den Vorgang an, der durch Aufrufen der `CreateEndpointInfo`-Objektmethode `setOperationName` aufgerufen wird, und übergeben Sie einen Zeichenfolgenwert, der den Vorgangsnamen angibt. Geben Sie für SOAP- und EJB-Endpunkte ein Platzhalterzeichen ( `*`) an, das alle Vorgänge umfasst.
 
 1. Erstellen Sie einen EJB-Endpunkt.
@@ -144,7 +144,7 @@ hinzufügen eines EJB-Endpunkts mithilfe der Java-API:
 
 1. Aktivieren Sie den Endpunkt.
 
-   Aktivieren Sie den Endpunkt, indem Sie die enable-Methode des Objekts aufrufen und das `EndpointRegistryClient`-Objekt übergeben, das von der `Endpoint`-Methode zurückgegeben wurde.`createEndpoint`
+   Aktivieren Sie den Endpunkt, indem Sie die enable-Methode des Objekts aufrufen und das `Endpoint`-Objekt übergeben, das von der `createEndpoint`-Methode zurückgegeben wurde.`EndpointRegistryClient`
 
 **Siehe auch**
 
@@ -240,7 +240,7 @@ hinzufügen eines SOAP-Endpunkts zu einem Dienst mithilfe der Java-API:
    * Geben Sie den Connector-ID-Wert an, indem Sie die `CreateEndpointInfo`-Methode des Objekts `setConnectorId` aufrufen und den Zeichenfolgenwert `SOAP` übergeben.
    * Geben Sie die Beschreibung des Endpunkts an, indem Sie die `CreateEndpointInfo`-Methode des Objekts `setDescription` aufrufen und einen Zeichenfolgenwert übergeben, der den Endpunkt beschreibt.
    * Geben Sie den Namen des Endpunkts an, indem Sie die `CreateEndpointInfo`-Methode des Objekts `setName` aufrufen und einen Zeichenfolgenwert übergeben, der den Namen angibt.
-   * Geben Sie den Dienst an, zu dem der Endpunkt gehört, indem Sie die `CreateEndpointInfo`-Methode des Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Dienstnamen angibt.`setServiceId`
+   * Geben Sie den Dienst an, zu dem der Endpunkt gehört, indem Sie die `setServiceId`-Methode des Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Dienstnamen angibt.`CreateEndpointInfo`
    * Geben Sie den Vorgang an, der aufgerufen wird, indem Sie die `CreateEndpointInfo`-Methode des Objekts `setOperationName` aufrufen und einen Zeichenfolgenwert übergeben, der den Vorgangsnamen angibt. Geben Sie für SOAP- und EJB-Endpunkte ein Platzhalterzeichen ( `*`) an, das alle Vorgänge umfasst.
 
 1. Erstellen Sie einen SOAP-Endpunkt.
@@ -249,7 +249,7 @@ hinzufügen eines SOAP-Endpunkts zu einem Dienst mithilfe der Java-API:
 
 1. Aktivieren Sie den Endpunkt.
 
-   Aktivieren Sie den Endpunkt, indem Sie die enable-Methode des Objekts aufrufen und das `EndpointRegistryClient`-Objekt übergeben, das von der `Endpoint`-Methode zurückgegeben wurde.`createEndpoint`
+   Aktivieren Sie den Endpunkt, indem Sie die enable-Methode des Objekts aufrufen und das `Endpoint`-Objekt übergeben, das von der `createEndpoint`-Methode zurückgegeben wurde.`EndpointRegistryClient`
 
 **Siehe auch**
 
@@ -408,7 +408,7 @@ hinzufügen eines Endpunkts für den überwachten Ordner mithilfe der AEM Forms 
    * Geben Sie den Connector-ID-Wert an, indem Sie die `CreateEndpointInfo`-Methode des Objekts `setConnectorId` aufrufen und den Zeichenfolgenwert `WatchedFolder` übergeben.
    * Geben Sie die Beschreibung des Endpunkts an, indem Sie die `CreateEndpointInfo`-Methode des Objekts `setDescription` aufrufen und einen Zeichenfolgenwert übergeben, der den Endpunkt beschreibt.
    * Geben Sie den Namen des Endpunkts an, indem Sie die `CreateEndpointInfo`-Methode des Objekts `setName` aufrufen und einen Zeichenfolgenwert übergeben, der den Namen angibt.
-   * Geben Sie den Dienst an, zu dem der Endpunkt gehört, indem Sie die `CreateEndpointInfo`-Methode des Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Dienstnamen angibt.`setServiceId`
+   * Geben Sie den Dienst an, zu dem der Endpunkt gehört, indem Sie die `setServiceId`-Methode des Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Dienstnamen angibt.`CreateEndpointInfo`
    * Geben Sie den Vorgang an, der aufgerufen wird, indem Sie die `CreateEndpointInfo`-Methode des Objekts `setOperationName` aufrufen und einen Zeichenfolgenwert übergeben, der den Vorgangsnamen angibt. Beim Erstellen eines Endpunkts für einen überwachten Ordner für einen Dienst, der aus einem in Workbench erstellten Prozess stammt, wird normalerweise der Name des Vorgangs aufgerufen.
 
 1. Geben Sie Konfigurationswerte an.
@@ -567,7 +567,7 @@ Die folgenden Konfigurationswerte werden festgelegt, wenn einem Dienst programmg
 * **domainName**: Ein obligatorischer Konfigurationswert. Der Standardwert ist `DefaultDom`.
 * **domainPattern**: Gibt die Domänenmuster für eingehende E-Mails an, die vom Anbieter akzeptiert werden. Wenn beispielsweise `adobe.com` verwendet wird, werden nur E-Mails von adobe.com verarbeitet, E-Mails von anderen Domänen ignoriert.
 * **filePattern**: Gibt die Muster für eingehende Dateianhänge an, die vom Anbieter akzeptiert werden. Dazu gehören Dateien mit bestimmten Dateinamenerweiterungen (&amp;ast;.dat, &amp;ast;.xml), Dateien mit bestimmten Namen (Daten) und Dateien mit zusammengesetzten Ausdrücken im Namen und in der Erweiterung (&amp;ast;.[d][aA]&#39;port&#39;). Der Standardwert ist `*`.
-* **empfängerSuccessfulJob**: Eine E-Mail-Adresse, an die Benachrichtigungen über erfolgreiche Aufträge gesendet werden. Standardmäßig wird eine Benachrichtigung über erfolgreiche Aufträge immer an den Absender gesendet. Wenn Sie `sender` eingeben, werden E-Mail-Ergebnisse an den Absender gesendet. Es werden bis zu 100 Empfänger unterstützt. Geben Sie zusätzliche Empfänger mit E-Mail-Adressen an, die jeweils durch ein Komma getrennt werden. Um diese Option zu deaktivieren, lassen Sie diesen Wert leer. In einigen Fällen sollten Sie einen Prozess auslösen und keine E-Mail-Benachrichtigung zum Ergebnis erhalten. Der Standardwert ist `sender`.
+* **empfängerSuccessfulJob**: Eine E-Mail-Adresse, an die Benachrichtigungen über erfolgreiche Aufträge gesendet werden. Standardmäßig wird eine Benachrichtigung über erfolgreiche Aufträge immer an den Absender gesendet. Wenn Sie `sender` eingeben, werden E-Mail-Ergebnisse an den Absender gesendet. Es werden bis zu 100 Empfänger unterstützt. Geben Sie zusätzliche Empfänger mit E-Mail-Adressen an, die jeweils durch ein Komma getrennt werden. Um diese Option zu deaktivieren, lassen Sie diesen Wert leer. In einigen Fällen möchten Sie möglicherweise einen Trigger durchführen und keine E-Mail-Benachrichtigung zum Ergebnis wünschen. Der Standardwert ist `sender`.
 * **empfängerFailedJob**: Eine E-Mail-Adresse, an die Benachrichtigungen über fehlgeschlagene Aufträge gesendet werden. Standardmäßig wird eine Benachrichtigung über fehlgeschlagene Aufträge immer an den Absender gesendet. Wenn Sie `sender` eingeben, werden E-Mail-Ergebnisse an den Absender gesendet. Es werden bis zu 100 Empfänger unterstützt. Geben Sie zusätzliche Empfänger mit E-Mail-Adressen an, die jeweils durch ein Komma getrennt werden. Um diese Option zu deaktivieren, lassen Sie diesen Wert leer. Der Standardwert ist `sender`.
 * **inboxHost**: Der Hostname oder die IP-Adresse des Posteingangs, die vom E-Mail-Anbieter überprüft werden soll.
 * **inboxPort**: Der Anschluss, den der E-Mail-Server verwendet. Der Standardwert ist für POP3 „110“ und für IMAP „143“. Ist SSL aktiviert, ist der Standardwert für POP3 „995“ und für IMAP „993“.
@@ -653,12 +653,12 @@ hinzufügen eines E-Mail-Endpunkts mithilfe der Java-API:
    * Geben Sie den Connector-ID-Wert an, indem Sie die `CreateEndpointInfo`-Methode des Objekts `setConnectorId` aufrufen und den Zeichenfolgenwert `Email` übergeben.
    * Geben Sie die Beschreibung des Endpunkts an, indem Sie die `CreateEndpointInfo`-Methode des Objekts `setDescription` aufrufen und einen Zeichenfolgenwert übergeben, der den Endpunkt beschreibt.
    * Geben Sie den Namen des Endpunkts an, indem Sie die `CreateEndpointInfo`-Methode des Objekts `setName` aufrufen und einen Zeichenfolgenwert übergeben, der den Namen angibt.
-   * Geben Sie den Dienst an, zu dem der Endpunkt gehört, indem Sie die `CreateEndpointInfo`-Methode des Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Dienstnamen angibt.`setServiceId`
+   * Geben Sie den Dienst an, zu dem der Endpunkt gehört, indem Sie die `setServiceId`-Methode des Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Dienstnamen angibt.`CreateEndpointInfo`
    * Geben Sie den Vorgang an, der aufgerufen wird, indem Sie die `CreateEndpointInfo`-Methode des Objekts `setOperationName` aufrufen und einen Zeichenfolgenwert übergeben, der den Vorgangsnamen angibt. Beim Erstellen eines E-Mail-Endpunkts für einen Dienst, der aus einem in Workbench erstellten Prozess stammt, wird normalerweise der Name des Vorgangs aufgerufen.
 
 1. Geben Sie Konfigurationswerte an.
 
-   Damit jeder Konfigurationswert für den E-Mail-Endpunkt festgelegt wird, müssen Sie die `CreateEndpointInfo`-Methode des Objekts aufrufen. `setConfigParameterAsText` Um beispielsweise den Konfigurationswert `smtpHost` festzulegen, rufen Sie die `CreateEndpointInfo`-Methode des Objekts `setConfigParameterAsText` auf und übergeben Sie die folgenden Werte:
+   Damit jeder Konfigurationswert für den E-Mail-Endpunkt festgelegt wird, müssen Sie die `setConfigParameterAsText`-Methode des Objekts aufrufen. `CreateEndpointInfo` Um beispielsweise den Konfigurationswert `smtpHost` festzulegen, rufen Sie die `CreateEndpointInfo`-Methode des Objekts `setConfigParameterAsText` auf und übergeben Sie die folgenden Werte:
 
    * Ein Zeichenfolgenwert, der den Namen des Konfigurationswerts angibt. Geben Sie beim Festlegen des Konfigurationswerts `smtpHost` `smtpHost` an.
    * Ein Zeichenfolgenwert, der den Wert des Konfigurationswerts angibt. Geben Sie beim Festlegen des Konfigurationswerts `smtpHost` einen Zeichenfolgenwert an, der den Namen des SMTP-Servers angibt.
@@ -838,7 +838,7 @@ hinzufügen eines Remoting-Endpunkts mithilfe der Java-API:
    * Geben Sie den Connector-ID-Wert an, indem Sie die `CreateEndpointInfo`-Methode des Objekts `setConnectorId` aufrufen und den Zeichenfolgenwert `Remoting` übergeben.
    * Geben Sie die Beschreibung des Endpunkts an, indem Sie die `CreateEndpointInfo`-Methode des Objekts `setDescription` aufrufen und einen Zeichenfolgenwert übergeben, der den Endpunkt beschreibt.
    * Geben Sie den Namen des Endpunkts an, indem Sie die `CreateEndpointInfo`-Methode des Objekts `setName` aufrufen und einen Zeichenfolgenwert übergeben, der den Namen angibt.
-   * Geben Sie den Dienst an, zu dem der Endpunkt gehört, indem Sie die `CreateEndpointInfo`-Methode des Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Dienstnamen angibt.`setServiceId`
+   * Geben Sie den Dienst an, zu dem der Endpunkt gehört, indem Sie die `setServiceId`-Methode des Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Dienstnamen angibt.`CreateEndpointInfo`
    * Geben Sie den Vorgang an, der von der `CreateEndpointInfo`-Methode des Objekts `setOperationName` aufgerufen wird, und übergeben Sie einen Zeichenfolgenwert, der den Vorgangsnamen angibt. Geben Sie für einen Remoting-Endpunkt ein Platzhalterzeichen (&amp;ast;) an.
 
 1. Erstellen Sie einen Remoting-Endpunkt.
@@ -958,8 +958,8 @@ hinzufügen eines TaskManager-Endpunkts mithilfe der Java-API:
    * Geben Sie den Connector-ID-Wert an, indem Sie die `CreateEndpointInfo`-Methode des Objekts `setConnectorId` aufrufen und den Zeichenfolgenwert `TaskManagerConnector` übergeben.
    * Geben Sie die Beschreibung des Endpunkts an, indem Sie die `CreateEndpointInfo`-Methode des Objekts `setDescription` aufrufen und einen Zeichenfolgenwert übergeben, der den Endpunkt beschreibt.
    * Geben Sie den Namen des Endpunkts an, indem Sie die `CreateEndpointInfo`-Methode des Objekts `setName` aufrufen und einen Zeichenfolgenwert übergeben, der den Namen angibt.
-   * Geben Sie den Dienst an, zu dem der Endpunkt gehört, indem Sie die `CreateEndpointInfo`-Methode des Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Dienstnamen angibt.`setServiceId`
-   * Geben Sie die Kategorie an, zu der der Endpunkt gehört, indem Sie die `CreateEndpointInfo`-Methode des Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Kategorien-ID-Wert angibt. `setCategoryId` Sie können die `EndpointCategory`-Objektmethode `getId` aufrufen, um den Bezeichnerwert dieser Kategorie abzurufen.
+   * Geben Sie den Dienst an, zu dem der Endpunkt gehört, indem Sie die `setServiceId`-Methode des Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Dienstnamen angibt.`CreateEndpointInfo`
+   * Geben Sie die Kategorie an, zu der der Endpunkt gehört, indem Sie die `setCategoryId`-Methode des Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Kategorien-ID-Wert angibt. `CreateEndpointInfo` Sie können die `EndpointCategory`-Objektmethode `getId` aufrufen, um den Bezeichnerwert dieser Kategorie abzurufen.
    * Geben Sie den Vorgang an, der aufgerufen wird, indem Sie die `CreateEndpointInfo`-Methode des Objekts `setOperationName` aufrufen und einen Zeichenfolgenwert übergeben, der den Vorgangsnamen angibt. Beim Erstellen eines `TaskManager`-Endpunkts für einen Dienst, der aus einem in Workbench erstellten Prozess stammt, lautet der Name des Vorgangs in der Regel `invoke`.
 
 1. Erstellen Sie einen TaskManager-Endpunkt.
@@ -1057,7 +1057,7 @@ Geben Sie beim Ändern eines Endpunkts neue Konfigurationswerte an. Um beispiels
 
 1. Rufen Sie den zu ändernden Endpunkt ab.
 
-   * Rufen Sie eine Liste aller Endpunkte ab, auf die der aktuelle Benutzer (in den Verbindungseigenschaften angegeben) zugreifen kann, indem Sie die `EndpointRegistryClient`-Objektmethode aufrufen und ein `getEndpoints`-Objekt übergeben, das als Filter fungiert. `PagingFilter` Sie können einen `(PagingFilter)null`-Wert übergeben, um alle Endpunkte zurückzugeben. Diese Methode gibt ein `java.util.List`-Objekt zurück, wobei jedes Element ein `Endpoint`-Objekt ist. Weitere Informationen zu einem `PagingFilter`-Objekt finden Sie unter [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Rufen Sie eine Liste aller Endpunkte ab, auf die der aktuelle Benutzer (in den Verbindungseigenschaften angegeben) zugreifen kann, indem Sie die `getEndpoints`-Objektmethode aufrufen und ein `PagingFilter`-Objekt übergeben, das als Filter fungiert. `EndpointRegistryClient` Sie können einen `(PagingFilter)null`-Wert übergeben, um alle Endpunkte zurückzugeben. Diese Methode gibt ein `java.util.List`-Objekt zurück, wobei jedes Element ein `Endpoint`-Objekt ist. Weitere Informationen zu einem `PagingFilter`-Objekt finden Sie unter [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Durchlaufen Sie das `java.util.List`-Objekt, um zu ermitteln, ob es Endpunkte enthält. Wenn Endpunkte vorhanden sind, ist jedes Element eine `EndPoint`-Instanz.
    * Stellen Sie den Dienst fest, der einem Endpunkt entspricht, indem Sie die `EndPoint`-Methode des Objekts `getServiceId` aufrufen. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Dienstnamen angibt.
    * Bestimmen Sie den Typ des Endpunkts, indem Sie die `EndPoint`-Methode des Objekts `getConnectorId` aufrufen. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Typ des Endpunkts angibt. Wenn der Endpunkt beispielsweise ein Endpunkt des Typs &quot;Überwachter Ordner&quot;ist, gibt diese Methode `WatchedFolder` zurück.
@@ -1151,7 +1151,7 @@ Entfernen Sie einen Endpunkt mithilfe der Java-API:
 
 1. Rufen Sie den zu entfernenden Endpunkt ab.
 
-   * Rufen Sie eine Liste aller Endpunkte ab, auf die der aktuelle Benutzer (in den Verbindungseigenschaften angegeben) zugreifen kann, indem Sie die `EndpointRegistryClient`-Objektmethode aufrufen und ein `getEndpoints`-Objekt übergeben, das als Filter fungiert. `PagingFilter` Sie können `(PagingFilter)null` übergeben, um alle Endpunkte zurückzugeben. Diese Methode gibt ein `java.util.List`-Objekt zurück, wobei jedes Element ein `Endpoint`-Objekt ist.
+   * Rufen Sie eine Liste aller Endpunkte ab, auf die der aktuelle Benutzer (in den Verbindungseigenschaften angegeben) zugreifen kann, indem Sie die `getEndpoints`-Objektmethode aufrufen und ein `PagingFilter`-Objekt übergeben, das als Filter fungiert. `EndpointRegistryClient` Sie können `(PagingFilter)null` übergeben, um alle Endpunkte zurückzugeben. Diese Methode gibt ein `java.util.List`-Objekt zurück, wobei jedes Element ein `Endpoint`-Objekt ist.
    * Durchlaufen Sie das `java.util.List`-Objekt, um zu ermitteln, ob es Endpunkte enthält. Wenn Endpunkte vorhanden sind, ist jedes Element eine `EndPoint`-Instanz.
    * Stellen Sie den Dienst fest, der einem Endpunkt entspricht, indem Sie die `EndPoint`-Methode des Objekts `getServiceId` aufrufen. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Dienstnamen angibt.
    * Bestimmen Sie den Typ des Endpunkts, indem Sie die `EndPoint`-Methode des Objekts `getConnectorId` aufrufen. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Typ des Endpunkts angibt. Wenn der Endpunkt beispielsweise ein EJB-Endpunkt ist, gibt diese Methode `EJB` zurück.
@@ -1252,8 +1252,8 @@ Rufen Sie Endpunktschnittstellenverbindungsinformationen mithilfe der Java-API a
 
 1. Rufen Sie Konfigurationswerte ab.
 
-   * Rufen Sie Konfigurationswerte ab, die mit diesem Endpunkt verknüpft sind, indem Sie die `Endpoint`-Methode des Objekts aufrufen. `getConfigParameters` Diese Methode gibt ein Array von `ConfigParameter`-Objekten zurück.
-   * Rufen Sie Informationen zu jedem Konfigurationswert ab, indem Sie die einzelnen Elemente im Array abrufen. Jedes Element ist ein `ConfigParameter`-Objekt. Sie können beispielsweise bestimmen, ob der Konfigurationswert erforderlich oder optional ist, indem Sie die `ConfigParameter`-Methode des Objekts aufrufen. `isRequired` Wenn der Konfigurationswert erforderlich ist, gibt diese Methode `true` zurück.
+   * Rufen Sie Konfigurationswerte ab, die mit diesem Endpunkt verknüpft sind, indem Sie die `getConfigParameters`-Methode des Objekts aufrufen. `Endpoint` Diese Methode gibt ein Array von `ConfigParameter`-Objekten zurück.
+   * Rufen Sie Informationen zu jedem Konfigurationswert ab, indem Sie die einzelnen Elemente im Array abrufen. Jedes Element ist ein `ConfigParameter`-Objekt. Sie können beispielsweise bestimmen, ob der Konfigurationswert erforderlich oder optional ist, indem Sie die `isRequired`-Methode des Objekts aufrufen. `ConfigParameter` Wenn der Konfigurationswert erforderlich ist, gibt diese Methode `true` zurück.
 
 **Siehe auch**
 
