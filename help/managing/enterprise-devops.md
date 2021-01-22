@@ -63,7 +63,7 @@ Je nach Größe Ihres Systems kann die Entwicklungsumgebung sowohl über Autoren
 
 ### Qualitätssicherung {#quality-assurance}
 
-Diese Umgebung wird vom Qualitätssicherungsteam verwendet, um Ihr neues System umfassend zu testen. Design und Funktion. ](/help/sites-developing/test-plan.md)[ Sie sollte über eine Autoren- und eine Veröffentlichungsumgebung mit geeignetem Inhalt verfügen und sämtliche notwendigen Dienste zur Durchführung einer Reihe von Tests bereitstellen.
+Diese Umgebung wird vom Qualitätssicherungsteam verwendet, um Ihr neues System umfassend zu testen. Design und Funktion. [](/help/sites-developing/test-plan.md) Sie sollte über eine Autoren- und eine Veröffentlichungsumgebung mit geeignetem Inhalt verfügen und sämtliche notwendigen Dienste zur Durchführung einer Reihe von Tests bereitstellen.
 
 ### Staging   {#staging}
 
