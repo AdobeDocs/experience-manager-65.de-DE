@@ -136,7 +136,7 @@ Beispiel:
 
 Wählen Sie aus der Dropdownliste das für diese Community-Site konfigurierte Analytics Cloud-Service-Framework aus.
 
-Die im Screenshot angezeigte Auswahl ist das Framework-Beispiel aus der `Communities`Konfigurationsdokumentation.[](/help/communities/analytics.md#aem-analytics-framework-configuration)
+Die im Screenshot angezeigte Auswahl ist das Framework-Beispiel aus der [Konfigurationsdokumentation.](/help/communities/analytics.md#aem-analytics-framework-configuration)`Communities`
 
 ![Analyse](assets/analytics.png)
 
