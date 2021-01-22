@@ -160,14 +160,14 @@ Konvertieren Sie ein PDF-Dokument mithilfe der DocConverter-API (Webdienst) in e
 1. Erstellen eines DocConvert-Clients
 
    * Erstellen Sie mit der Microsoft .NET-Clientassembly ein `DocConverterServiceService`-Objekt, indem Sie dessen Standardkonstruktor aufrufen.
-   * Legen Sie den Datenmember des Objekts `DocConverterServiceService` mit dem Wert `Credentials` fest, der den Benutzernamen und den Kennwortwert angibt.`System.Net.NetworkCredential`
+   * Legen Sie den Datenmember des Objekts `Credentials` mit dem Wert `System.Net.NetworkCredential` fest, der den Benutzernamen und den Kennwortwert angibt.`DocConverterServiceService`
 
 1. Referenzieren eines PDF-Dokuments zur Konvertierung in ein PDF/A-Dokument
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des PDF-Dokuments verwendet, das in ein PDF/A-Dokument konvertiert wird.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments und den Modus zum Öffnen der Datei darstellt.
    * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream`-Eigenschaft des Objekts `Length` abrufen.
-   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`Read`
+   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `Read`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`System.IO.FileStream`
    * Füllen Sie das `BLOB`-Objekt, indem Sie seine `binaryData`-Eigenschaft mit dem Inhalt des Byte-Arrays zuweisen.
 
 1. Festlegen von Verfolgungsinformationen
@@ -190,7 +190,7 @@ Konvertieren Sie ein PDF-Dokument mithilfe der DocConverter-API (Webdienst) in e
    * Erstellen Sie ein Bytearray, das den Inhalt des `BLOB`-Objekts speichert, das mit dem `PDFAConversionResult`-Objekt zurückgegeben wurde. Füllen Sie das Bytearray, indem Sie den Wert des `BLOB`-Datenelements des Objekts `binaryData` abrufen.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF/A-Dokuments darstellt.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie den Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter`-Methode des Objekts aufrufen und das Bytearray übergeben.`Write`
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `Write`-Methode des Objekts aufrufen und das Bytearray übergeben.`System.IO.BinaryWriter`
 
 **Siehe auch**
 
@@ -313,14 +313,14 @@ Bestimmen der PDF/A-Kompatibilität mithilfe der Webdienst-API:
 1. Erstellen eines DocConvert-Clients
 
    * Erstellen Sie mit der Microsoft .NET-Clientassembly ein `DocConverterServiceService`-Objekt, indem Sie dessen Standardkonstruktor aufrufen.
-   * Legen Sie den Datenmember des Objekts `DocConverterServiceService` mit dem Wert `Credentials` fest, der den Benutzernamen und den Kennwortwert angibt.`System.Net.NetworkCredential`
+   * Legen Sie den Datenmember des Objekts `Credentials` mit dem Wert `System.Net.NetworkCredential` fest, der den Benutzernamen und den Kennwortwert angibt.`DocConverterServiceService`
 
 1. Referenzieren eines PDF-Dokuments zur Bestimmung der PDF/A-Kompatibilität
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des PDF-Dokuments verwendet, das in ein PDF/A-Dokument konvertiert wird.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments und den Modus zum Öffnen der Datei darstellt.
    * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream`-Eigenschaft des Objekts `Length` abrufen.
-   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`Read`
+   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `Read`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`System.IO.FileStream`
    * Füllen Sie das `BLOB`-Objekt, indem Sie seine `binaryData`-Eigenschaft mit dem Inhalt des Byte-Arrays zuweisen.
 
 1. Festlegen von Laufzeitoptionen
