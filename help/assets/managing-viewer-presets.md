@@ -27,7 +27,7 @@ Eine Viewer-Vorgabe ist eine Sammlung aus Einstellungen, die bestimmen, wie Benu
 Path: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.
 For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html) -->
 
-Siehe Referenzhandbuch für Dynamic Media-Viewer[.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)
+Siehe Referenzhandbuch für Dynamic Media-Viewer](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).[
 
 In diesem Abschnitt wird beschrieben, wie Viewer-Vorgaben erstellt, bearbeitet und verwaltet werden. Sie können jederzeit bei der Vorschau eines Assets eine Viewer-Vorgabe darauf anwenden. Siehe [Anwenden von Viewer-Vorgaben](#applying-a-viewer-preset-to-an-asset).
 
