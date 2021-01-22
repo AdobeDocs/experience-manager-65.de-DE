@@ -195,7 +195,7 @@ Um dies zu unterstützen, verfügt die Konfigurationssuche in AEM über einen Ve
 
 ### Verwenden von Konfigurationen {#using-configurations}
 
-Die Konfigurationen in AEM basieren auf Sling Context-Aware Konfigurationen. Die Sling-Pakete bieten eine Dienst-API, mit der kontextsensitive Konfigurationen abgerufen werden können. Kontextbezogene Konfigurationen sind Konfigurationen, die mit einer Inhaltsressource oder einer Ressourcenstruktur im Zusammenhang stehen, wie im vorherigen Beispiel beschrieben.[](#developer-example)
+Die Konfigurationen in AEM basieren auf Sling Context-Aware Konfigurationen. Die Sling-Pakete bieten eine Dienst-API, mit der kontextsensitive Konfigurationen abgerufen werden können. Kontextbezogene Konfigurationen sind Konfigurationen, die mit einer Inhaltsressource oder einer Ressourcenstruktur im Zusammenhang stehen, wie im vorherigen Beispiel beschrieben.](#developer-example)[
 
 Weitere Informationen zu Context-Aware-Konfigurationen, Beispielen und deren Verwendung finden Sie in der Sling-Dokumentation.[](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
 
