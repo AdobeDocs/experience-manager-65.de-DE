@@ -97,7 +97,7 @@ So installieren und Beginn von [!DNL InDesign Server] für die Verwendung mit [!
 
 Dieser Workflow wird mit Standardwerten konfiguriert, die für Ihr Setup in den verschiedenen Autoreninstanzen angepasst werden können. (Dies ist ein Standard-Workflow. Deshalb finden Sie weitere Information unter [Bearbeiten eines Workflows](/help/sites-developing/workflows-models.md#configuring-a-workflow-step).) Wenn Sie die Standardwerte (einschließlich SOAP-Port) verwenden, ist keine Konfiguration erforderlich.
 
-Nach dem Setup löst das Hochladen von [!DNL InDesign]-Dateien in [!DNL Experience Manager Assets] (mit einer der üblichen Methoden) den Workflow aus, um das Asset zu verarbeiten und die verschiedenen Darstellungen vorzubereiten. Testen Sie Ihre Konfiguration, indem Sie eine INDD-Datei in [!DNL Experience Manager Assets] hochladen, um sicherzustellen, dass Sie die verschiedenen Darstellungen sehen, die von IDS unter `<*your_asset*>.indd/Renditions` erstellt wurden.
+Nach dem Setup wird beim Hochladen von [!DNL InDesign]-Dateien in [!DNL Experience Manager Assets] (mit einer der üblichen Methoden) der Arbeitsablauf zum Verarbeiten des Assets und Vorbereiten der verschiedenen Darstellungen Trigger. Testen Sie Ihre Konfiguration, indem Sie eine INDD-Datei in [!DNL Experience Manager Assets] hochladen, um sicherzustellen, dass Sie die verschiedenen Darstellungen sehen, die von IDS unter `<*your_asset*>.indd/Renditions` erstellt wurden.
 
 #### Media-Extraktion {#media-extraction}
 
