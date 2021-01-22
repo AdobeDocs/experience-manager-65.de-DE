@@ -59,7 +59,7 @@ Wenn eine Community-Funktion zu einer Community-Site-Vorlage hinzugefügt oder h
 
 * **URL**
 
-   (*Erforderlich*) Der Name, der zum Generieren des URI verwendet wird. Der Name muss den von AEM und JCR festgelegten Benennungskonventionen[ entsprechen.](/help/sites-developing/naming-conventions.md)
+   (*Erforderlich*) Der Name, der zum Generieren des URI verwendet wird. Der Name muss den von AEM und JCR festgelegten Benennungskonventionen](/help/sites-developing/naming-conventions.md) entsprechen.[
 
 Verwenden Sie zum Beispiel die Site, die nach dem Tutorial [Erste Schritte](/help/communities/getting-started.md) erstellt wurde, wenn
 
