@@ -13,7 +13,7 @@ ht-degree: 68%
 
 # Erstellen von Übersetzungsprojekten{#creating-translation-projects}
 
-Um eine Sprachkopie zu erstellen, lösen Sie eine der folgenden Sprachkopien aus, die in der Leiste &quot;Referenzen&quot;in der [!DNL Experience Manager]-Benutzeroberfläche verfügbar Workflows.
+Um eine Sprachkopie zu erstellen, erstellen Sie eine der folgenden Sprachkopien, die in der Leiste &quot;Referenzen&quot;auf der [!DNL Experience Manager]-Benutzeroberfläche Workflows.
 
 * **Erstellen und übersetzen**: In diesem Arbeitsablauf werden die zu übersetzenden Assets in die Sprachstamm der Sprache kopiert, in die Sie übersetzen möchten. Darüber hinaus wird je nach gewählten Optionen ein Übersetzungsprojekt für die Assets in der Projektekonsole erstellt. Je nach Einstellungen kann das Übersetzungsprojekt manuell gestartet oder automatisch ausgeführt werden, sobald es erstellt wurde.
 
