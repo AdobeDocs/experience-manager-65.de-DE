@@ -34,7 +34,7 @@ Um eine langsame Indizierung anfänglich zu erkennen, müssen die `IndexStats`-J
 
 1. Öffnen Sie die Web-Konsole und klicken Sie auf die Registerkarte JMX oder gehen Sie zu https://&lt;Host>:&lt;Anschluss>/system/console/jmx (z. B. [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)).
 1. Navigieren Sie zu den Beans `IndexStats`.
-1. Öffnen Sie die MBeans für &quot; `IndexStats`&quot;und &quot; `async`&quot;.`fulltext-async`
+1. Öffnen Sie die MBeans für &quot; `async`&quot;und &quot; `fulltext-async`&quot;.`IndexStats`
 
 1. Überprüfen Sie für beide MBeans, ob der Zeitstempel **Fertig** und der Zeitstempel **LastIndexTime** weniger als 45 Minuten vom aktuellen Zeitpunkt entfernt sind.
 
