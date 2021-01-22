@@ -691,7 +691,7 @@ Um dieses Problem zu umgehen, führen Sie zuerst die Installation mit nur einer 
 
 ### Seitennamenlänge {#page-name-length}
 
-Wenn AEM auf einer MongoMK-Persistenzmanager-Bereitstellung ausgeführt wird, sind die Seitennamen auf 150 Zeichen begrenzt.](/help/sites-authoring/managing-pages.md)[
+Wenn AEM auf einer MongoMK-Persistenzmanager-Bereitstellung ausgeführt wird, sind die Seitennamen auf 150 Zeichen begrenzt.[](/help/sites-authoring/managing-pages.md)
 
 >[!NOTE]
 >
