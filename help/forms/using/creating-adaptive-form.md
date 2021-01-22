@@ -119,7 +119,7 @@ In den folgenden Dokumenten erfahren Sie, wie Sie ein XML- oder JSON-Schema für
 Führen Sie folgende Schritte aus, um ein XML- oder JSON-Schema als Formularmodell für ein adaptives Formular zu verwenden:
 
 1. Tippen Sie im Schritt **[!UICONTROL Hinzufügen Eigenschaften]** der Seite zum Erstellen adaptiver Formulare auf die Registerkarte **[!UICONTROL Formularmodell]**.
-1. Wählen Sie auf der Registerkarte &quot;Formularmodell&quot;im Dropdown-Feld **[!UICONTROL Schema]** aus.]****[!UICONTROL 
+1. Wählen Sie auf der Registerkarte &quot;Formularmodell&quot;im Dropdown-Feld **[!UICONTROL Schema]** aus.****
 
 1. Tippen Sie auf **[!UICONTROL Wählen Sie Schema]** aus und führen Sie einen der folgenden Schritte aus:
 
