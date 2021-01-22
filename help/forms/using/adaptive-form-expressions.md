@@ -221,7 +221,7 @@ GuideBridge ist eine Sammlung von APIs, die für die Interaktion mit adaptiven F
 
 #### GuideBridge-Verwendung in verschiedenen Ausdrücken  {#guidebridge-usage-in-various-expressions}
 
-* Um Formularfelder zurückzusetzen, können Sie die API `guideBridge.reset()` beim Klicken auf den Ausdruck einer Schaltfläche auslösen. Ebenso gibt es eine Sende-API, die als Klick-Ausdruck `guideBridge.submit()`**aufgerufen werden kann.**
+* Um Formularfelder zurückzusetzen, können Sie die API mit dem Trigger `guideBridge.reset()` auf dem Ausdruck einer Schaltfläche klicken. Ebenso gibt es eine Sende-API, die als Klick-Ausdruck `guideBridge.submit()`**aufgerufen werden kann.**
 
 * Sie können die API `setFocus()` verwenden, um den Fokus auf verschiedene Felder oder Bereiche zu legen (der Bereichsfokus wird automatisch auf das erste Feld eingestellt). `setFocus()`bietet eine breite Palette von Optionen zum Navigieren, z. B. Navigation über Fenster, vorherige/nächste Durchreise, Fokussierung auf ein bestimmtes Feld und vieles mehr. Um zum nächsten Fenster zu wechseln, können Sie beispielsweise Folgendes verwenden: `guideBridge.setFocus(this.panel.somExpression, 'nextItem').`
 
