@@ -68,7 +68,7 @@ Damit die [!DNL Assets]-Konsole die verweisenden ebenenübergreifenden Assets ne
 1. Öffnen Sie [!DNL Experience Manager] Configuration Manager.
 1. Wählen Sie **[!UICONTROL Adobe CQ DAM-Ablaufbenachrichtigung]** aus. Standardmäßig wird **[!UICONTROL Zeitbasierter Planer]** ausgewählt, womit ein Auftrag geplant wird, der zu einem bestimmten Zeitpunkt prüft, ob ein Asset abgelaufene Teil-Assets aufweist. Nach Abschluss des Auftrags werden Assets mit abgelaufenen Teil-Assets und verwiesenen Assets in den Suchergebnissen als abgelaufen angezeigt.
 
-1. Um den Auftrag regelmäßig auszuführen, löschen Sie das Feld **[!UICONTROL Regel für zeitbasierten Planer]** und ändern Sie die Dauer in Sekunden im Feld **[!UICONTROL Periodischer Planer]**. Beispielsweise löst der Beispielauftrag mit dem Ausdruck `0 0 0 &ast; &ast; ?` um 00 Uhr aus.
+1. Um den Auftrag regelmäßig auszuführen, löschen Sie das Feld **[!UICONTROL Regel für zeitbasierten Planer]** und ändern Sie die Dauer in Sekunden im Feld **[!UICONTROL Periodischer Planer]**. Der Beispielauftrag wird beispielsweise mit dem Ausdruck `0 0 0 &ast; &ast; ?` um 00 Uhr Trigger.
 1. Wählen Sie **[!UICONTROL E-Mail senden]** aus, um bei Ablauf von Assets E-Mails zu erhalten.
 
    >[!NOTE]
