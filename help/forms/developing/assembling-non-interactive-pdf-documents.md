@@ -139,11 +139,11 @@ Stellen Sie ein nicht interaktives PDF-Dokument mit der Assembler Service API (J
 1. Legen Sie Laufzeitoptionen fest.
 
    * Erstellen Sie ein `AssemblerOptionSpec`-Objekt, das Laufzeitoptionen mithilfe des Konstruktors speichert.
-   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie eine Methode aufrufen, die zum `AssemblerOptionSpec`-Objekt gehört. Um beispielsweise den Assembler-Dienst anzuweisen, bei einem Fehler mit der Verarbeitung eines Auftrags fortzufahren, rufen Sie die `AssemblerOptionSpec`-Methode des Objekts auf und übergeben Sie `setFailOnError`.`false`
+   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie eine Methode aufrufen, die zum `AssemblerOptionSpec`-Objekt gehört. Um beispielsweise den Assembler-Dienst anzuweisen, bei einem Fehler mit der Verarbeitung eines Auftrags fortzufahren, rufen Sie die `setFailOnError`-Methode des Objekts auf und übergeben Sie `false`.`AssemblerOptionSpec`
 
 1. Stellen Sie das PDF-Dokument zusammen.
 
-   Rufen Sie die `AssemblerServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`invokeOneDocument`
+   Rufen Sie die `invokeOneDocument`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`AssemblerServiceClient`
 
    * Ein `com.adobe.idp.Document`-Objekt, das das DDX-Dokument darstellt. Stellen Sie sicher, dass dieses DDX-Dokument den Wert `inDoc` für das PDF-Quellelement enthält.
    * Ein `com.adobe.idp.Document`-Objekt, das das interaktive PDF-Dokument enthält.
@@ -206,7 +206,7 @@ Stellen Sie ein nicht interaktives PDF-Dokument mit der Assembler Service API (W
 
 1. Stellen Sie das PDF-Dokument zusammen.
 
-   Rufen Sie die `AssemblerServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`invokeOneDocument`
+   Rufen Sie die `invokeOneDocument`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`AssemblerServiceClient`
 
    * Ein `BLOB`-Objekt, das das DDX-Dokument darstellt
    * Ein `BLOB`-Objekt, das das interaktive PDF-Dokument darstellt
@@ -219,7 +219,7 @@ Stellen Sie ein nicht interaktives PDF-Dokument mit der Assembler Service API (W
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des nicht interaktiven PDF-Dokuments und den Modus zum Öffnen der Datei darstellt.
    * Erstellen Sie ein Bytearray, das den Inhalt des `BLOB`-Objekts speichert, das von der `invokeOneDocument`-Methode zurückgegeben wurde. Füllen Sie das Bytearray, indem Sie den Wert des Felds `BLOB` des Objekts `MTOM` abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie den Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter`-Methode des Objekts aufrufen und das Bytearray übergeben.`Write`
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `Write`-Methode des Objekts aufrufen und das Bytearray übergeben.`System.IO.BinaryWriter`
 
 * &quot;Quick Beginn (MTOM): Zusammenstellen eines nicht interaktiven PDF-Dokuments mit der Webdienst-API&quot;.
 
