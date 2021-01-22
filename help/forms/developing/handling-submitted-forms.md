@@ -139,8 +139,8 @@ Um gesendete Formulardaten abzurufen, rufen Sie die `FormsServiceClient`-Methode
 Sie können Formularfelder auch aus einem als PDF-Daten gesendeten Formular abrufen, indem Sie die folgenden Laufzeitoptionen festlegen:
 
 * Übergeben Sie den folgenden Wert als Parameter für den Inhaltstyp an die `processFormSubmission`-Methode: `CONTENT_TYPE=application/pdf`.
-* Setzen Sie den Wert des Objekts `RenderOptionsSpec` auf `PDFToXDP``true`
-* Setzen Sie den Wert des Objekts `RenderOptionsSpec` auf `ExportDataFormat``XMLData`
+* Setzen Sie den Wert des Objekts `PDFToXDP` auf `true``RenderOptionsSpec`
+* Setzen Sie den Wert des Objekts `ExportDataFormat` auf `XMLData``RenderOptionsSpec`
 
 Sie geben den Inhaltstyp des gesendeten Formulars an, wenn Sie die `processFormSubmission`-Methode aufrufen. In der folgenden Liste werden die entsprechenden Inhaltstypwerte angegeben:
 
@@ -212,9 +212,9 @@ Verarbeiten Sie ein gesendetes Formular mit der Forms API (Java):
 
    >[!NOTE]
    >
-   >Sie können den Forms-Dienst anweisen, XDP- oder XML-Daten aus gesendeten PDF-Inhalten zu erstellen, indem Sie die `RenderOptionsSpec`-Methode des Objekts aufrufen und `setPDF2XDP` übergeben und auch `true` aufrufen und `setXMLData` übergeben. `true` Sie können dann die `FormsResult`-Methode des Objekts aufrufen, um die XML-Daten abzurufen, die den XDP-/XML-Daten entsprechen. `getOutputXML` (Das `FormsResult`-Objekt wird von der `processFormSubmission`-Methode zurückgegeben, die im nächsten Unterschritt beschrieben wird.)
+   >Sie können den Forms-Dienst anweisen, XDP- oder XML-Daten aus gesendeten PDF-Inhalten zu erstellen, indem Sie die `setPDF2XDP`-Methode des Objekts aufrufen und `true` übergeben und auch `setXMLData` aufrufen und `true` übergeben. `RenderOptionsSpec` Sie können dann die `FormsResult`-Methode des Objekts aufrufen, um die XML-Daten abzurufen, die den XDP-/XML-Daten entsprechen. `getOutputXML` (Das `FormsResult`-Objekt wird von der `processFormSubmission`-Methode zurückgegeben, die im nächsten Unterschritt beschrieben wird.)
 
-   * Rufen Sie die `FormsServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`processFormSubmission`
+   * Rufen Sie die `processFormSubmission`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`FormsServiceClient`
 
       * Das `com.adobe.idp.Document`-Objekt, das die Formulardaten enthält.
       * Ein Zeichenfolgenwert, der die Umgebung einschließlich aller relevanten HTTP-Header angibt. Geben Sie den zu verwaltenden Inhaltstyp an. Um XML-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=text/xml`. Um PDF-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=application/pdf`.
@@ -223,7 +223,7 @@ Verarbeiten Sie ein gesendetes Formular mit der Forms API (Java):
 
       Die `processFormSubmission`-Methode gibt ein `FormsResult`-Objekt zurück, das die Ergebnisse der Formularübermittlung enthält.
 
-   * Stellen Sie fest, ob die Verarbeitung der Formulardaten durch den Forms-Dienst abgeschlossen ist, indem Sie die `FormsResult`-Methode des Objekts aufrufen. `getAction` Wenn diese Methode den Wert `0` zurückgibt, können die Daten verarbeitet werden.
+   * Stellen Sie fest, ob die Verarbeitung der Formulardaten durch den Forms-Dienst abgeschlossen ist, indem Sie die `getAction`-Methode des Objekts aufrufen. `FormsResult` Wenn diese Methode den Wert `0` zurückgibt, können die Daten verarbeitet werden.
 
 
 
@@ -287,7 +287,7 @@ Verarbeiten Sie ein gesendetes Formular mit der Forms API (Webdienst):
    * Erstellen Sie ein Bytearray, indem Sie die `java.io.ByteArrayOutputStream`-Methode des Objekts `toByteArray` aufrufen.
    * Füllen Sie das `BLOB`-Objekt, indem Sie die `setBinaryData`-Methode aufrufen und das Bytearray als Argument übergeben.
    * Erstellen Sie ein Objekt `RenderOptionsSpec`, indem Sie den Konstruktor verwenden. Legen Sie den Gebietsschemawert fest, indem Sie die `RenderOptionsSpec`-Methode des Objekts `setLocale` aufrufen und einen Zeichenfolgenwert übergeben, der den Gebietsschemawert angibt.
-   * Rufen Sie die `FormsService`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`processFormSubmission`
+   * Rufen Sie die `processFormSubmission`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`FormsService`
 
       * Das `BLOB`-Objekt, das die Formulardaten enthält.
       * Ein Zeichenfolgenwert, der die Umgebung einschließlich aller relevanten HTTP-Header angibt. Geben Sie den zu verwaltenden Inhaltstyp an. Um XML-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=text/xml`. Um PDF-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=application/pdf`.
@@ -303,7 +303,7 @@ Verarbeiten Sie ein gesendetes Formular mit der Forms API (Webdienst):
 
       Die `processFormSubmission`-Methode füllt den Parameter `FormsResultHolder` mit den Ergebnissen der Formularübermittlung.
 
-   * Stellen Sie fest, ob die Verarbeitung der Formulardaten durch den Forms-Dienst abgeschlossen ist, indem Sie die `FormsResult`-Methode des Objekts aufrufen. `getAction` Wenn diese Methode den Wert `0` zurückgibt, können die Formulardaten verarbeitet werden. Sie können ein `FormsResult`-Objekt abrufen, indem Sie den Wert des `FormsResultHolder`-Datenelements des Objekts `value` abrufen.
+   * Stellen Sie fest, ob die Verarbeitung der Formulardaten durch den Forms-Dienst abgeschlossen ist, indem Sie die `getAction`-Methode des Objekts aufrufen. `FormsResult` Wenn diese Methode den Wert `0` zurückgibt, können die Formulardaten verarbeitet werden. Sie können ein `FormsResult`-Objekt abrufen, indem Sie den Wert des `FormsResultHolder`-Datenelements des Objekts `value` abrufen.
 
 
 1. Stellen Sie fest, ob die Formularübermittlung Dateianlagen enthält.
