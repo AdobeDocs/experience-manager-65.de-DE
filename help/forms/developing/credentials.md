@@ -116,7 +116,7 @@ Importieren Sie eine Berechtigung mit der Trust Manager-API (Java) in AEM Forms:
 1. Durchführen des Importvorgangs
 
    * Erstellen Sie ein String-Array, das ein Element enthält. Weisen Sie dem Element den Wert `truststore.usage.type.sign` zu.
-   * Rufen Sie die `CredentialServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`importCredential`
+   * Rufen Sie die `importCredential`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`CredentialServiceClient`
 
       * Ein Zeichenfolgenwert, der den Aliaswert der Berechtigung angibt.
       * Die `com.adobe.idp.Document`-Instanz, in der die Berechtigung gespeichert wird.
@@ -194,7 +194,7 @@ Eine Berechtigung aus AEM Forms mithilfe der Trust Manager-API (Java) löschen:
 
 1. Löschvorgang durchführen
 
-   Rufen Sie die `CredentialServiceClient`-Methode des Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Aliaswert angibt.`deleteCredential`
+   Rufen Sie die `deleteCredential`-Methode des Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Aliaswert angibt.`CredentialServiceClient`
 
 **Siehe auch**
 
