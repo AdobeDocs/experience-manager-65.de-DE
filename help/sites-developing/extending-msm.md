@@ -553,7 +553,7 @@ Erstellen Sie die MSM-Rollout-Konfiguration, die die von Ihnen erstellte `LiveAc
 
    * **Titel**: Rollout-Beispielkonfiguration
    * **Name**: examplerolloutconfig
-   * **cq:trigger**:  `publish`
+   * **cq:Trigger**:  `publish`
 
 ### Hinzufügen der Live-Aktion zur Rollout-Beispielkonfiguration {#add-the-live-action-to-the-example-rollout-configuration}
 
