@@ -121,8 +121,8 @@ Die Verfügbarkeit von Aktionen ist außerdem abhängig von der Konfiguration de
 
 Die Kachel enthält zurzeit keine Aktionen, für die Berechtigungen erforderlich sind, die Detailseite der Anwendung weist jedoch folgende Aktionen auf:
 
-* ** Editor für app-author und app-admin (UI-Auslöser - jcr:write - unter /content/phonegap/{suffix})
-* *Herunterladen* für app-author und app-admin (UI-Auslöser - unter /content/phonegap/{suffix})
+* ** Editor für app-author und app-admin (UI-Trigger - jcr:write - unter /content/phonegap/{suffix})
+* *Herunterladen* für app-author und app-admin (UI-Trigger - unter /content/phonegap/{suffix})
 
 Die folgende Abbildung zeigt die Optionen zum Herunterladen und Bearbeiten einer App:
 
