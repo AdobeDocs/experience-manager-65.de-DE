@@ -67,7 +67,7 @@ Die `following`-Komponente Liste die Member, die dem aktuellen Member folgen ode
        <li><i>True  </i>- Die  <code>following</code> Komponente Liste die Mitglieder, die das derzeit angemeldete Mitglied sind. <code>follows</code></li>
        <li><i>FALSE  </i>- Die  <code>following</code> Komponente Liste die Mitglieder,  <code>follow </code>die derzeit angemeldet sind.</li>
       </ul> </li>
-    </ul> <p>Die Standardeinstellung ist <i>true</i>, wenn die Eigenschaft fehlt. Derzeit ist es nicht möglich, diese Eigenschaft im Bearbeitungsdialogfeld im Autorenmodus festzulegen. Die Eigenschaft muss mit <code>following </code>CRXDE|Lite<a href="../../help/sites-developing/developing-with-crxde-lite.md"> einer Instanz des Knotens hinzugefügt werden.</a></p> </td>
+    </ul> <p>Die Standardeinstellung ist <i>true</i>, wenn die Eigenschaft fehlt. Derzeit ist es nicht möglich, diese Eigenschaft im Bearbeitungsdialogfeld im Autorenmodus festzulegen. Die Eigenschaft muss mit <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a> einer Instanz des Knotens hinzugefügt werden.<code>following </code></p> </td>
   </tr>
  </tbody>
 </table>
