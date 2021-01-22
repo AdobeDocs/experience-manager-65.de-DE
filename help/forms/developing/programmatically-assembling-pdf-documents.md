@@ -185,11 +185,11 @@ Stellen Sie ein PDF-Dokument mithilfe der Assembler Service API (Java) zusammen:
 1. Legen Sie Laufzeitoptionen fest.
 
    * Erstellen Sie ein `AssemblerOptionSpec`-Objekt, das Laufzeitoptionen mithilfe des Konstruktors speichert.
-   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie eine Methode aufrufen, die zum `AssemblerOptionSpec`-Objekt gehört. Um beispielsweise den Assembler-Dienst anzuweisen, bei einem Fehler mit der Verarbeitung eines Auftrags fortzufahren, rufen Sie die `AssemblerOptionSpec`-Methode des Objekts auf und übergeben Sie `setFailOnError`.`false`
+   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie eine Methode aufrufen, die zum `AssemblerOptionSpec`-Objekt gehört. Um beispielsweise den Assembler-Dienst anzuweisen, bei einem Fehler mit der Verarbeitung eines Auftrags fortzufahren, rufen Sie die `setFailOnError`-Methode des Objekts auf und übergeben Sie `false`.`AssemblerOptionSpec`
 
 1. Stellen Sie die PDF-Eingabedateien zusammen.
 
-   Rufen Sie die `AssemblerServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden erforderlichen Werte:`invokeDDX`
+   Rufen Sie die `invokeDDX`-Methode des Objekts auf und übergeben Sie die folgenden erforderlichen Werte:`AssemblerServiceClient`
 
    * Ein `com.adobe.idp.Document`-Objekt, das das zu verwendende DDX-Dokument darstellt
    * Ein `java.util.Map`-Objekt, das die zu assemblierenden PDF-Eingabedateien enthält
@@ -247,7 +247,7 @@ Zusammenstellen von PDF-Dokumenten mit der Assembler-Dienst-API (Webdienst):
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des DDX-Dokuments verwendet.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des DDX-Dokuments und den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream`-Eigenschaft des Objekts `Length` abrufen.
-   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`Read`
+   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `Read`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`System.IO.FileStream`
    * Füllen Sie das `BLOB`-Objekt, indem Sie seine `MTOM`-Eigenschaft mit dem Inhalt des Byte-Arrays zuweisen.
 
 1. Referenzieren von PDF-Dokumenten zur Eingabe.
@@ -270,7 +270,7 @@ Zusammenstellen von PDF-Dokumenten mit der Assembler-Dienst-API (Webdienst):
 
 1. Stellen Sie die PDF-Eingabedateien zusammen.
 
-   Rufen Sie die `AssemblerServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`invoke`
+   Rufen Sie die `invoke`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`AssemblerServiceClient`
 
    * Ein `BLOB`-Objekt, das das DDX-Dokument darstellt.
    * Das `mapItem`-Array, das die PDF-Eingabedateien enthält. Die Schlüssel müssen mit den Namen der PDF-Quelldateien übereinstimmen. Die Werte müssen die `BLOB`-Objekte sein, die diesen Dateien entsprechen.
