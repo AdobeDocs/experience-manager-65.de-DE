@@ -99,6 +99,6 @@ Nachdem alle gewünschten Funktionen in den Bereich &quot;Vorlagenaufbau&quot;ab
 
 Bei der Anzeige von Community-Gruppen in der Haupt-Konsole [Gruppenvorlagen](#group-templates-console) ist es möglich, eine vorhandene Gruppenvorlage zur Bearbeitung auszuwählen.
 
-Das Bearbeiten einer Gruppenvorlage hat keine Auswirkungen auf Community-Sites, die bereits aus der Vorlage erstellt wurden. Es ist möglich, stattdessen die Struktur einer Community-Site[ direkt zu bearbeiten.](/help/communities/sites-console.md#modify-structure)
+Das Bearbeiten einer Gruppenvorlage hat keine Auswirkungen auf Community-Sites, die bereits aus der Vorlage erstellt wurden. Es ist möglich, stattdessen die Struktur einer Community-Site](/help/communities/sites-console.md#modify-structure) direkt zu bearbeiten.[
 
 Dieser Prozess stellt dieselben Bereiche bereit wie [Erstellen einer Gruppenvorlage](#create-group-template).
