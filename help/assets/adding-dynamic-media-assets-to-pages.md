@@ -141,7 +141,7 @@ Mit der Komponente „Dynamic Media“ können Sie dynamische Bilder, einschlie�
 
 Sie können zudem die Viewer-Vorgabe, Bildvorgabe oder das Bildformat direkt in der Komponente konfigurieren. Um ein Bild dynamisch zu machen, können Sie die Haltepunkte festlegen oder eine dynamische Bildvorgabe anwenden.
 
-Sie müssen *die folgenden Dynamic Media-Einstellungen bearbeiten, indem Sie auf das Symbol **[!UICONTROL Bearbeiten]**in der Komponente und dann auf **[!UICONTROL Dynamic Media-Einstellungen tippen.]***
+Sie müssen *die folgenden Dynamic Media-Einstellungen bearbeiten, indem Sie auf das Symbol **[!UICONTROL Bearbeiten]**in der Komponente und dann auf **[!UICONTROL Dynamic Media-Einstellungen tippen.*]**
 
 ![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
