@@ -44,7 +44,7 @@ Dieser Artikel führt Sie durch den Prozess, der zum Konfigurieren der [AEM Mobi
 
 Es wird davon ausgegangen, dass die AEM Mobile Hybrid-Referenzanwendung erfolgreich implementiert wurde und über das AEM Mobile-Dashboard zugänglich ist.
 
-Bevor Autoren zielgerichteten Inhalt in einer Anwendung generieren können, muss Ihre AEM mit dem Adobe Target Cloud Service konfiguriert werden.[](/help/mobile/aem-mobile-configuring-cloud-service.md)
+Bevor Autoren zielgerichteten Inhalt in einer Anwendung generieren können, muss Ihre AEM mit dem Adobe Target Cloud Service konfiguriert werden.](/help/mobile/aem-mobile-configuring-cloud-service.md)[
 
 ### Berechtigungen {#permissions}
 
