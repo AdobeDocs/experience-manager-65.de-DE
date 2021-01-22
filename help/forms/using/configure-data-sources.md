@@ -156,7 +156,7 @@ Führen Sie die folgenden Schritte aus, um den HTTP-Client des Formulardatenmode
 
    * Geben Sie im Feld **[!UICONTROL Lebend halten]** die Dauer an, für die eine persistente HTTP-Verbindung am Leben erhalten wird. Der Standardwert ist 15 Sekunden.
 
-   * Geben Sie im Feld [!DNL Experience Manager Forms]Verbindungstimeout **[!UICONTROL die Dauer an, für die der Server auf die Herstellung einer Verbindung wartet.]** Der Standardwert ist 10 Sekunden.
+   * Geben Sie im Feld **[!UICONTROL Verbindungstimeout]** die Dauer an, für die der Server auf die Herstellung einer Verbindung wartet. [!DNL Experience Manager Forms] Der Standardwert ist 10 Sekunden.
 
    * Geben Sie im Feld **[!UICONTROL Socket timeout]** den maximalen Zeitraum für Inaktivität zwischen zwei Datenpaketen an. Der Standardwert ist 30 Sekunden.
 
