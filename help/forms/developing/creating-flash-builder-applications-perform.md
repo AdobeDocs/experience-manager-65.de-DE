@@ -102,7 +102,7 @@ Um zu veranschaulichen, wie eine Clientanwendung erstellt wird, die eine SSO-Aut
 
 In der vorherigen Abbildung wird der Anwendungsfluss beschrieben, der beim Beginn der Clientanwendung auftritt.
 
-1. Die Clientanwendung löst das Ereignis `applicationComplete` aus.
+1. Die Clientanwendung Trigger das Ereignis `applicationComplete`.
 1. Der Aufruf von `ISSOManager.singleSignOn` erfolgt. Die Clientanwendung sendet eine Anforderung an das User Manager-Sicherheitsservlet.
 1. Wenn das Sicherheits-Servlet den Benutzer authentifiziert, löst `ISSOManager` `SSOEvent.AUTHENTICATION_SUCCESS` aus. Als Antwort zeigt die Clientanwendung die Hauptseite an. In diesem Beispiel ruft die Hauptseite den AEM Forms-Prozess mit kurzer Lebensdauer mit dem Namen MyApplication/EncryptDocument auf.
 1. Wenn das Sicherheits-Servlet nicht ermitteln kann, ob der Benutzer gültig ist, fordert die Anwendung erneut Benutzeranmeldeinformationen an. Die `ISSOManager`-Klasse löst das `SSOEvent.AUTHENTICATION_REQUIRED`-Ereignis aus. Die Clientanwendung zeigt die Anmeldeseite an.
