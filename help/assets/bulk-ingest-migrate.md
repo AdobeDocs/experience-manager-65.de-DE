@@ -27,7 +27,7 @@ Mit Feature Pack 18912 können Sie Assets per FTP AEM direkt in den Dynamic Medi
 >
 >Obwohl Sie das Feature Pack verwenden können, um Assets von Dynamic Media Classic in den Dynamic Media - Scene7-Modus zu migrieren, AEM Assets mit der FTP-Funktion in Dynamic Media Classic stapelweise zu migrieren, empfiehlt die Adobe diese Methode aufgrund der Komplexität, die damit verbunden ist, nicht.**
 >
->Daher werden Migrationspaket wie dieses nur als Teil eines Migrationsprojekts unterstützt, wenn es über *Adobe Professional Services* durchgeführt wird.[](https://www.adobe.com/experience-cloud/consulting-services.html)
+>Daher werden Migrationspaket wie dieses nur als Teil eines Migrationsprojekts unterstützt, wenn es über [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) durchgeführt wird.**
 
 Bevor Sie das Feature Pack installieren können, müssen Sie zunächst einen Dienstbenutzer erstellen und diese Informationen zur Unterstützung der Adobe bereitstellen.
 
