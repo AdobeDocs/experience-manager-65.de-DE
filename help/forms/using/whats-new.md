@@ -79,7 +79,7 @@ Das Web-Kanal-Layout, das mit dem Kanal &quot;Drucken&quot;automatisch generiert
 
 #### Adaptives Formular oder interaktive Kommunikation in AEM Sites-Einzelseitenanwendungen einbetten {#embed-an-adaptive-form-or-interactive-communcation-in-aem-sites-single-page-applications}
 
-Mit AEM Forms können Sie ein adaptives Formular[ oder eine interaktive Kommunikation nahtlos in eine AEM Sites-Einzelseitenanwendung (SPA) einbetten. ](../../forms/using/embed-adaptive-form-aem-sites-spa.md) Das eingebettete adaptive Formular und die interaktive Kommunikation sind voll funktionsfähig. Benutzer können das Formular ausfüllen und senden, ohne die Seite zu verlassen. Es hilft Benutzern, im Kontext anderer Elemente auf der Webseite zu bleiben und gleichzeitig mit dem adaptiven Formular oder der interaktiven Kommunikation zu interagieren.
+Mit AEM Forms können Sie ein adaptives Formular](../../forms/using/embed-adaptive-form-aem-sites-spa.md) oder eine interaktive Kommunikation nahtlos in eine AEM Sites-Einzelseitenanwendung (SPA) einbetten. [ Das eingebettete adaptive Formular und die interaktive Kommunikation sind voll funktionsfähig. Benutzer können das Formular ausfüllen und senden, ohne die Seite zu verlassen. Es hilft Benutzern, im Kontext anderer Elemente auf der Webseite zu bleiben und gleichzeitig mit dem adaptiven Formular oder der interaktiven Kommunikation zu interagieren.
 
 #### Spalten in Tabellen für adaptive Formulare sortieren {#sort-columns-of-adaptive-form-tables}
 
@@ -111,7 +111,7 @@ Der Schritt &quot;Gehe zu&quot;oder &quot;Aufteilen&quot;und alle AEM Forms-Arbe
 
 #### Verwenden Sie einen Workflow mit einem anderen adaptiven Forms {#use-a-workflow-with-different-adaptive-forms}
 
-Sie können ein adaptives Formular für die Zuweisungs-Aufgabe[ und das Dokument des Datensatzschritts der formularzentrierten Workflows zur Laufzeit angeben. ](../../forms/using/aem-forms-workflow-step-reference.md#assign-task-step) Es ermöglicht es einem Workflow, mit verschiedenen adaptiven Forms zu arbeiten. Sie können die Methode zur Auswahl eines adaptiven Formulars beim Entwerfen des Workflows festlegen. Das adaptive Formular kann sich an einem absoluten Pfad befinden, als Payload an den Workflow gesendet werden, oder an einem Pfad verfügbar sein, der mithilfe einer Variablen berechnet wird.
+Sie können ein adaptives Formular für die Zuweisungs-Aufgabe](../../forms/using/aem-forms-workflow-step-reference.md#assign-task-step) und das Dokument des Datensatzschritts der formularzentrierten Workflows zur Laufzeit angeben. [ Es ermöglicht es einem Workflow, mit verschiedenen adaptiven Forms zu arbeiten. Sie können die Methode zur Auswahl eines adaptiven Formulars beim Entwerfen des Workflows festlegen. Das adaptive Formular kann sich an einem absoluten Pfad befinden, als Payload an den Workflow gesendet werden, oder an einem Pfad verfügbar sein, der mithilfe einer Variablen berechnet wird.
 
 #### Erweiterte Protokollierungsfunktionen für formularorientierte Workflow-Schritte {#use-enhanced-logging-capabilities-of-forms-centric-workflow-steps}
 
