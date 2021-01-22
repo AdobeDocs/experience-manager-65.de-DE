@@ -1,6 +1,6 @@
 ---
 title: Leistungsoptimierung [!DNL Assets].
-description: Vorschläge und Anleitungen zur Konfiguration, Änderungen an Hardware, Software und Netzwerkkomponenten, um Engpässe zu beseitigen und die Leistung von [!DNL Experience Manager]  zu optimieren. [!DNL Experience Manager Assets]
+description: 'Vorschläge und Anleitungen zur Konfiguration, Änderungen an Hardware, Software und Netzwerkkomponenten, um Engpässe zu beseitigen und die Leistung von [!DNL Experience Manager Assets] zu optimieren. [!DNL Experience Manager] '
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
