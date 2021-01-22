@@ -144,7 +144,7 @@ Weitere Informationen finden Sie auf der Seite [Entwickeln für zielgerichtete I
 
 ### Fehler „Fehlende Report Suite-ID in AppMeasurement-Initialisierung“ in der Browser-Konsole  {#the-error-missing-report-suite-id-in-appmeasurement-initialization-is-displayed-in-the-browser-console}
 
-Dieses Problem kann auftreten, wenn Adobe Analytics mithilfe von DTM implementiert wird und benutzerspezifischer Code verwendet wird. Die Ursache dafür ist die Instanziierung des `s`-Objekts mit dem `s = new AppMeasurement()`.
+Dieses Problem kann auftreten, wenn Adobe Analytics mithilfe von DTM implementiert wird und benutzerdefinierter Code verwendet wird. Die Ursache dafür ist die Instanziierung des `s`-Objekts mit dem `s = new AppMeasurement()`.
 
 #### Lösung {#solution-4}
 
