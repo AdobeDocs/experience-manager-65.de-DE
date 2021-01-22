@@ -33,7 +33,7 @@ Daher benötigt die erweiterte Scoring-Engine genügend Daten, um eine aussagekr
 
 Die Einrichtung einer erweiterten Bewertung ist praktisch identisch mit der eines Basisscorings:
 
-* Grundlegende und erweiterte Scoring- und Kennzeichnungsregeln werden auf Inhalt[ auf dieselbe Weise angewendet.](/help/communities/implementing-scoring.md#apply-rules-to-content)
+* Grundlegende und erweiterte Scoring- und Kennzeichnungsregeln werden auf Inhalt](/help/communities/implementing-scoring.md#apply-rules-to-content) auf dieselbe Weise angewendet.[
 
    * Einfache und erweiterte Scoring- und Kennzeichnungsregeln können auf denselben Inhalt angewendet werden.
 
