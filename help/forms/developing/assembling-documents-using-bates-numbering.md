@@ -157,7 +157,7 @@ Stellen Sie mithilfe der Assembler Service API (Java) ein PDF-Dokument zusammen,
 
 1. Stellen Sie die PDF-Eingabedateien zusammen.
 
-   Rufen Sie die `AssemblerServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden erforderlichen Werte:`invokeDDX`
+   Rufen Sie die `invokeDDX`-Methode des Objekts auf und übergeben Sie die folgenden erforderlichen Werte:`AssemblerServiceClient`
 
    * Ein `com.adobe.idp.Document`-Objekt, das das DDX-Dokument darstellt.
    * Ein `java.util.Map`-Objekt, das die nicht gesicherte PDF-Eingabedatei enthält.
@@ -234,7 +234,7 @@ Stellen Sie mithilfe der Assembler Service API (Webdienst) ein PDF-Dokument zusa
 
 1. Stellen Sie die PDF-Eingabedateien zusammen.
 
-   Rufen Sie die `AssemblerServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`invoke`
+   Rufen Sie die `invoke`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`AssemblerServiceClient`
 
    * Ein `BLOB`-Objekt, das das DDX-Dokument darstellt.
    * Das `MyMapOf_xsd_string_To_xsd_anyType`-Objekt, das die PDF-Eingabedateien enthält. Seine Schlüssel müssen mit den Namen der PDF-Quelldateien übereinstimmen, und seine Werte müssen die `BLOB`-Objekte sein, die diesen Dateien entsprechen.
