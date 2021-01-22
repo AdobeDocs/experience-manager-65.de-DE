@@ -34,7 +34,7 @@ ht-degree: 52%
 
 [Digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren.](/help/forms/home.md)
 
-## AEM Screens {#aem-screens}
+## Handbuch mit Best Practices für {#aem-screens}
 
 [Erfahren Sie mehr über die Lösung für digitale Signaturen zur Veröffentlichung dynamischer und interaktiver Erlebnisse.](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
