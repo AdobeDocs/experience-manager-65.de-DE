@@ -48,7 +48,7 @@ In der AEM Forms-App wird durch das Wischen nach links eine neue Aufgabe bzw. ei
 
    `"EventName Selector": "Function"`
 
-   Wenn Sie ein JavaScript-Ereignis mit dem Namen `EventName`für ein HTML-Element auslösen, das von `Selector` angegeben wird, wird `Function`aufgerufen.
+   Wenn Sie ein JavaScript-Ereignis mit dem Namen `EventName`für ein HTML-Element, das von `Selector` angegeben wird, Trigger haben, wird `Function`aufgerufen.
 
 1. Suchen
 
