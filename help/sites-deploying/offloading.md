@@ -287,7 +287,7 @@ Beispiel: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    | Transport > Transportbenutzer | Replizierungsbenutzer auf Zielgruppe-Instanz |
    | Transport > Transportkennwort | Replizieren des Benutzerkennworts auf der Zielgruppe |
    | Erweitert > HTTP-Methode | POST |
-   | Auslöser > Standard ignorieren | True |
+   | Trigger > Standard ignorieren | True |
 
 ### Erstellen des Rückwärtsagenten {#creating-the-reverse-agent}
 
@@ -311,7 +311,7 @@ Beispiel: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    |---|---|
    | Einstellungen > Serialisierungstyp | Standard |
    | Transport > Transport-URI | repo://var/replication/outbox |
-   | Auslöser > Standard ignorieren | true |
+   | Trigger > Standard ignorieren | true |
 
 ### Suche nach der Sling-ID {#finding-the-sling-id}
 
