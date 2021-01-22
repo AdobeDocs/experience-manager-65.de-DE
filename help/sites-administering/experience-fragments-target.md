@@ -40,7 +40,7 @@ ht-degree: 45%
    >   * einen benannten Arbeitsbereich, der in der Cloud-Konfiguration angegeben ist.
    >   * **Hinweis: Für das** Exportieren in bestimmte Arbeitsbereiche ist Adobe Target Premium erforderlich.
 >
->* AEM muss mit Adobe I/O[ in Adobe Target integriert sein.](/help/sites-administering/integration-ims-adobe-io.md)
+>* AEM muss mit Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md) in Adobe Target integriert sein.[
 
 >
 >
@@ -59,7 +59,7 @@ Es gibt drei Formatoptionen für den Export eines Experience Fragments in Adobe 
 * JSON: Unterstützung für Versand ohne Inhalt
 * HTML und JSON
 
-AEM Erlebnisfragmente können in den Standardarbeitsbereich in Adobe Target oder in benutzerdefinierte Arbeitsbereiche für Adobe Target exportiert werden. Dies geschieht über Adobe I/O, für das AEM mit Adobe I/O[ in Adobe Target integriert sein müssen.](/help/sites-administering/integration-ims-adobe-io.md)
+AEM Erlebnisfragmente können in den Standardarbeitsbereich in Adobe Target oder in benutzerdefinierte Arbeitsbereiche für Adobe Target exportiert werden. Dies geschieht über Adobe I/O, für das AEM mit Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md) in Adobe Target integriert sein müssen.[
 
 >[!NOTE]
 >
@@ -88,8 +88,8 @@ AEM Erlebnisfragmente können in den Standardarbeitsbereich in Adobe Target oder
 
 Verschiedene Aktionen sind erforderlich:
 
-1. Sie müssen AEM mit Adobe I/O[ in Adobe Target integrieren.](/help/sites-administering/integration-ims-adobe-io.md)
-2. Erlebnisfragmente werden aus der Autoreninstanz exportiert. Daher müssen Sie den AEM Link Externalizer[ in der Autoreninstanz konfigurieren, um sicherzustellen, dass alle Verweise im Erlebnisfragment für den Web-Versand extern zugeordnet werden.](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer)
+1. Sie müssen AEM mit Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md) in Adobe Target integrieren.[
+2. Erlebnisfragmente werden aus der Autoreninstanz exportiert. Daher müssen Sie den AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) in der Autoreninstanz konfigurieren, um sicherzustellen, dass alle Verweise im Erlebnisfragment für den Web-Versand extern zugeordnet werden.[
 
    >[!NOTE]
    >
