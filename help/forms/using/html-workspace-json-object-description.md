@@ -414,7 +414,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td>type</td>
    <td>F</td>
-   <td>Dieser enthält den Typ der Warteschlange.<br /> 0 – Benutzerwarteschlange.<br /> 1. Freigegebene Warteschlange.<br />2. Gruppenwarteschlange.<br type="_moz" /> </td>
+   <td>Dieser enthält den Typ der Warteschlange.<br /> 0 – Benutzerwarteschlange.<br /> 1. Freigegebene Warteschlange.<br /> 2. Gruppenwarteschlange.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>Abfrage</td>
