@@ -170,7 +170,7 @@ Importieren Sie Formulardaten mit der Formular-Datenintegration-API (Java):
 
 1. Daten in das PDF-Formular importieren.
 
-   Importieren Sie Daten in das PDF-Formular, indem Sie die `FormDataIntegrationClient`-Methode des Objekts aufrufen und die folgenden Werte übergeben:`importData`
+   Importieren Sie Daten in das PDF-Formular, indem Sie die `importData`-Methode des Objekts aufrufen und die folgenden Werte übergeben:`FormDataIntegrationClient`
 
    * Das `com.adobe.idp.Document`-Objekt, in dem das PDF-Formular gespeichert wird.
    * Das `com.adobe.idp.Document`-Objekt, das Formulardaten speichert.
@@ -180,7 +180,7 @@ Importieren Sie Formulardaten mit der Formular-Datenintegration-API (Java):
 1. Speichern Sie das PDF-Formular als PDF-Datei.
 
    * Erstellen Sie ein `java.io.File`-Objekt und stellen Sie sicher, dass die Dateierweiterung &quot;.PDF&quot;ist.
-   * Rufen Sie die `Document`-Methode des Objekts auf, um den Inhalt des `copyToFile`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `Document`-Objekt verwenden, das von der `Document`-Methode zurückgegeben wurde).`importData`
+   * Rufen Sie die `copyToFile`-Methode des Objekts auf, um den Inhalt des `Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `Document`-Objekt verwenden, das von der `importData`-Methode zurückgegeben wurde).`Document`
 
 **Siehe auch**
 
@@ -247,7 +247,7 @@ Importieren Sie Formulardaten mit der Formulardatenintegration-API (Webdienst):
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort der PDF-Datei darstellt.
    * Erstellen Sie ein Bytearray, das den Dateninhalt des `BLOB`-Objekts speichert, das von der `importData`-Methode zurückgegeben wurde. Füllen Sie das Bytearray, indem Sie den Wert des Felds `BLOB` des Objekts `MTOM` abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie den Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter`-Methode des Objekts aufrufen und das Bytearray übergeben.`Write`
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `Write`-Methode des Objekts aufrufen und das Bytearray übergeben.`System.IO.BinaryWriter`
 
 **Siehe auch**
 
@@ -335,12 +335,12 @@ Exportieren Sie Formulardaten mithilfe der Formular-Datenintegration-API (Java):
 
 1. Exportieren Sie Daten aus dem PDF-Formular.
 
-   Exportieren Sie Formulardaten, indem Sie die `FormDataIntegrationClient`-Methode des Objekts aufrufen und das `exportData`-Objekt übergeben, in dem das PDF-Formular gespeichert wird. `com.adobe.idp.Document` Diese Methode gibt ein `com.adobe.idp.Document`-Objekt zurück, das Formulardaten als XML-Schema speichert.
+   Exportieren Sie Formulardaten, indem Sie die `exportData`-Methode des Objekts aufrufen und das `com.adobe.idp.Document`-Objekt übergeben, in dem das PDF-Formular gespeichert wird. `FormDataIntegrationClient` Diese Methode gibt ein `com.adobe.idp.Document`-Objekt zurück, das Formulardaten als XML-Schema speichert.
 
 1. Speichern Sie das PDF-Formular als PDF-Datei.
 
    * Erstellen Sie ein `java.io.File`-Objekt und stellen Sie sicher, dass die Dateierweiterung XML ist.
-   * Rufen Sie die `Document`-Methode des Objekts auf, um den Inhalt des `copyToFile`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `Document`-Objekt verwenden, das von der `Document`-Methode zurückgegeben wurde).`exportData`
+   * Rufen Sie die `copyToFile`-Methode des Objekts auf, um den Inhalt des `Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `Document`-Objekt verwenden, das von der `exportData`-Methode zurückgegeben wurde).`Document`
 
 **Siehe auch**
 
@@ -380,7 +380,7 @@ Exportieren Sie Formulardaten mithilfe der Formulardatenintegration-API (Webdien
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Dieses `BLOB`-Objekt wird zum Speichern des PDF-Formulars verwendet, aus dem Daten exportiert werden.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Speicherort des PDF-Formulars und den Modus, in dem die Datei geöffnet werden soll, angibt.
    * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream`-Eigenschaft des Objekts `Length` abrufen.
-   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`Read`
+   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `Read`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`System.IO.FileStream`
    * Füllen Sie das `BLOB`-Objekt, indem Sie dessen `MTOM`-Feld mit dem Inhalt des Byte-Arrays zuweisen.
 
 1. Exportieren Sie Daten aus dem PDF-Formular.
@@ -392,7 +392,7 @@ Exportieren Sie Formulardaten mithilfe der Formulardatenintegration-API (Webdien
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Speicherort der XML-Datei darstellt.
    * Erstellen Sie ein Bytearray, das den Dateninhalt des `BLOB`-Objekts speichert, das von der `exportData`-Methode zurückgegeben wurde. Füllen Sie das Bytearray, indem Sie den Wert des Felds `BLOB` des Objekts `MTOM` abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie den Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine XML-Datei, indem Sie die `System.IO.BinaryWriter`-Methode des Objekts aufrufen und das Bytearray übergeben.`Write`
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine XML-Datei, indem Sie die `Write`-Methode des Objekts aufrufen und das Bytearray übergeben.`System.IO.BinaryWriter`
 
 **Siehe auch**
 
