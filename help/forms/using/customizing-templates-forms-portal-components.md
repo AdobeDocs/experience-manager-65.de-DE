@@ -93,7 +93,7 @@ Um einen wiederholbaren Eintrag einzuschließen, konfigurieren Sie den Wert des 
 
 Jeder Platzhalter verfügt über einen exklusiven OOTB-Metadatensatz. Um benutzerdefinierte Metadaten an einer bestimmten Stelle im Formular anzuzeigen, fügen Sie die Eigenschaft **${metadata_prop}** an der gewünschten Stelle hinzu.
 
-*Im Beispiel wird die Metadaten-Eigenschaft in mehreren Instanzen verwendet. Sie wird beispielsweise in **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**und &lt;a11/> verwendet 12/>path **in der vorgeschriebenen Weise.***
+*Im Beispiel wird die Metadaten-Eigenschaft in mehreren Instanzen verwendet. Sie wird beispielsweise in **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**und **verwendet 12/>path**in der vorgeschriebenen Weise.*
 
 ## Vorkonfigurierte Metadaten {#out-of-the-box-metadata}
 
