@@ -78,7 +78,7 @@ Gehen Sie wie folgt vor, um den Inhalt Ihrer Community-Site vor dem Zugriff durc
 
 ## Vertrauenswürdiges Community-Mitglied {#trusted-community-member}
 
-Dieses Erlebnis setzt voraus, dass Aaron McDonald[ die Rollen von ](/help/communities/tutorials.md#demo-users)Community Manager und Moderator[ zugewiesen wurden. ](/help/communities/create-site.md#roles) Andernfalls kehren Sie zur Autorendatei zurück, um die Site-Einstellungen zu ändern. Wählen Sie dann Aaron McDonald als Community Manager und Moderator aus.[](/help/communities/sites-console.md#modifying-site-properties)
+Dieses Erlebnis setzt voraus, dass Aaron McDonald](/help/communities/tutorials.md#demo-users) die Rollen von [Community Manager und Moderator](/help/communities/create-site.md#roles) zugewiesen wurden. [ Andernfalls kehren Sie zur Autorendatei zurück, um die Site-Einstellungen zu ändern. Wählen Sie dann Aaron McDonald als Community Manager und Moderator aus.[](/help/communities/sites-console.md#modifying-site-properties)
 
 Wählen Sie in der oberen rechten Ecke `Log in` und melden Sie sich mit dem Benutzernamen (aaron.mcdonald@mailinator.com) und dem Kennwort (Kennwort) an. Beachten Sie die Möglichkeit, sich mit Twitter- oder Facebook-Anmeldedaten anzumelden.
 
