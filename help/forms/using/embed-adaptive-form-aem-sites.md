@@ -55,7 +55,7 @@ Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation mithil
 
    * **Asset-Typ:** Wählen Sie den Typ des einzubettenden Assets. Die Optionen sind „Adaptives Formular“ und „Interaktive Kommunikation“
    * **Asset-Pfad**: Navigieren Sie zum einzubettenden adaptiven Formular oder zur einzubettenden interaktiven Kommunikation und wählen Sie sie aus. Es wird automatisch ausgefüllt, wenn Sie es über den Assets-Browser eingefügt haben.
-   * (Nur adaptives Formular) **Post-Übermittlung**: Wählen Sie die Aktion aus, die beim Senden des Formulars ausgelöst werden soll. Sie können auswählen, dass eine Meldung oder Seite mit einer Danksagung angezeigt wird.
+   * (Nur adaptives Formular) **Post-Übermittlung**: Wählen Sie die Aktion aus, die beim Senden des Formulars Trigger werden soll. Sie können auswählen, dass eine Meldung oder Seite mit einer Danksagung angezeigt wird.
 
       * **Danksagung**: Schreiben Sie eine Nachricht mit dem Rich-Text-Editor, um sie beim Senden des Formulars anzuzeigen. Diese Option ist nur verfügbar, wenn Sie eine Dankesnachricht anzeigen möchten.
       * **Danksagungsseite**: Durchsuchen Sie die Seite, die beim Senden des Formulars angezeigt werden soll, und wählen Sie sie aus. Diese Option steht nur zur Verfügung, wenn Sie die Anzeige einer Dankesseite auswählen.
