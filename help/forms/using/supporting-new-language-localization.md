@@ -114,7 +114,7 @@ Führen Sie diesen Schritt nur dann aus, wenn das `<locale>`, das Sie hinzufüge
 1. Erstellen Sie einen `nt:unstructured`-Knoten `languages` unter `etc`, falls noch nicht vorhanden.
 
 1. Fügen Sie dem Knoten eine Zeichenfolgeneigenschaft mit mehreren Eigenschaften, `languages`, hinzu, falls nicht bereits vorhanden.
-1. hinzufügen die Standardgebietsschemawerte `<locale>`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, falls noch nicht vorhanden.`ko-kr`
+1. hinzufügen die Standardgebietsschemawerte `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`, falls noch nicht vorhanden.`<locale>`
 
 1. hinzufügen Sie `<locale>` auf die Werte der `languages`-Eigenschaft von `/etc/languages`.
 
