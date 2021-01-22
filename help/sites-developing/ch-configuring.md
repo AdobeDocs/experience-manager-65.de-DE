@@ -256,7 +256,7 @@ Verwenden Sie CRXDE Lite, um die Eigenschaft `debug` unter auf **true** festzule
 
 >[!NOTE]
 >
->Bei ContextHub-Konfigurationen, die sich noch unter ihren veralteten Pfaden befinden, ist der Speicherort für `debug property` `/libs/settings/cloudsettings/legacy/contexthub` &lt;a1/>.
+>Bei ContextHub-Konfigurationen, die sich noch unter ihren veralteten Pfaden befinden, ist der Speicherort für `debug property` `/libs/settings/cloudsettings/legacy/contexthub` .
 
 ### Unbeaufsichtigter Modus {#silent-mode}
 
