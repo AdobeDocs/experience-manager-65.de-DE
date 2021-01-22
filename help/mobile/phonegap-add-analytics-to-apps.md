@@ -105,7 +105,7 @@ Nachdem Sie diese Schritte ausgeführt haben, wird Ihre App in die Lage versetzt
 
 ### Geben Sie Ihren Code für die vollständige App-Verfolgung ein {#instrument-your-code-for-full-app-tracking}
 
-Die API für das AMS PhoneGap-Plugin enthält mehrere Tracking-APIs.[](https://docs.adobe.com/content/help/en/mobile-services/ios/phonegap-ios/phonegap-methods.html)
+Die API für das AMS PhoneGap-Plugin enthält mehrere Tracking-APIs.](https://docs.adobe.com/content/help/en/mobile-services/ios/phonegap-ios/phonegap-methods.html)[
 
 Auf diese Weise können Sie Status und Aktionen verfolgen, z. B., zu welchen Seiten Ihre Benutzer in Ihrer App navigieren, welche Steuerelemente am häufigsten verwendet werden. Die einfachste Möglichkeit, Ihre App für die Verfolgung zu instrumentieren, besteht darin, die Analytics-APIs zu verwenden, die vom AMS-Plugin bereitgestellt werden.
 
