@@ -759,7 +759,7 @@ Gehen Sie wie folgt vor, um Asset-Filter für die Replikation optional anzupasse
 
    ![chlimage_1-512](assets/chlimage_1-512.png)
 
-   Beachten Sie, dass `dc:format` für das Asset `Fiji Red.jpg` `image/jpeg` &lt;a2/> lautet.
+   Beachten Sie, dass `dc:format` für das Asset `Fiji Red.jpg` `image/jpeg`  lautet.
 
    Damit dieser Filter für alle Bilder unabhängig von ihrem Format gilt, setzen Sie den Wert auf `image/*`, wobei `*` ein regulärer Ausdruck ist, der auf alle Bilder eines beliebigen Formats angewendet wird.
 
@@ -999,7 +999,7 @@ Nach der Feature Pack-Installation müssen Sie die richtigen Standardfarbprofile
 
    Die Farbkorrektureigenschaften werden in der Tabelle **Farbkorrektureigenschaften** beschrieben. Werte, die Sie Farbkorrektureigenschaften zuweisen können, sind in der Tabelle **Farbprofil** angegeben.
 
-   Fügen Sie beispielsweise unter **[!UICONTROL Name]** `iccprofilecmyk` **[!UICONTROL hinzu, wählen Sie &lt;a3/>Typ]** `String` und fügen Sie `WebCoated` als **[!UICONTROL Wert hinzu.]** Tippen Sie dann auf  **** Hinzufügen und dann auf  **[!UICONTROL Save]** All, um Ihre Werte zu speichern.
+   Fügen Sie beispielsweise unter **[!UICONTROL Name]** `iccprofilecmyk` **[!UICONTROL hinzu, wählen Sie Typ]** `String` und fügen Sie `WebCoated` als **[!UICONTROL Wert hinzu.]** Tippen Sie dann auf  **** Hinzufügen und dann auf  **[!UICONTROL Save]** All, um Ihre Werte zu speichern.
 
    ![chlimage_1-515](assets/chlimage_1-515.png)
 
