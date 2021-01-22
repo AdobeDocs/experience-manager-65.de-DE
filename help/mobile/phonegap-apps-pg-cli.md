@@ -59,7 +59,7 @@ Laden Sie die Umgebung nach dem erfolgreichen Hochladen der App-Entwicklung aus 
 >
 >Die Entwicklungsquelle enthält den neuesten Status Ihrer App und enthält gleichzeitig nicht gestaffelte Änderungen. Verwenden Sie die Staging-Quelle, um Versionskandidaten zu erstellen, die an App Store-Anbieter übermittelt werden sollen.
 >
->Wenn Sie Ihre App nie anzeigen, löst die Auswahl von Staging den Staging-Workflow aus (Hinweis: wird als gestaffelte App in der PhoneGap Enterprise Viewer-App angezeigt, die im AppStore und Google PlayStore verfügbar ist.
+>Wenn Sie Ihre App nie posten, wird durch Auswahl von Staging der Staging-Workflow Trigger (Hinweis: wird als gestaffelte App in der PhoneGap Enterprise Viewer-App angezeigt, die im AppStore und Google PlayStore verfügbar ist.
 
 * Klicken Sie auf Herunterladen und speichern Sie die ZIP auf Ihrem Computer.
 * Extrahieren Sie die heruntergeladene ZIP-Datei in Ihren Arbeitsbereich.
