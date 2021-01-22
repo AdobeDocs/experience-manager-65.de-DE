@@ -62,7 +62,7 @@ Wenn der Site-Name beispielsweise &quot;*engagement*&quot;für eine Site mit dem
 
 ### Tunnel-Dienst {#tunnel-service}
 
-Wenn Sie die Umgebung zum Erstellen von Sites[, ](sites-console.md)zum Ändern der Site-Eigenschaften[ und ](sites-console.md#modifying-site-properties)zum Verwalten von Community-Mitgliedern und Mitgliedsgruppen[ verwenden, müssen Sie auf in der Umgebung &quot;Veröffentlichen&quot;registrierte Benutzer und Benutzergruppen zugreifen.](members.md)
+Wenn Sie die Umgebung zum Erstellen von Sites](sites-console.md), [zum Ändern der Site-Eigenschaften](sites-console.md#modifying-site-properties) und [zum Verwalten von Community-Mitgliedern und Mitgliedsgruppen](members.md) verwenden, müssen Sie auf in der Umgebung &quot;Veröffentlichen&quot;registrierte Benutzer und Benutzergruppen zugreifen.[
 
 Der Tunneldienst bietet diesen Zugriff mithilfe des Replizierungsagenten beim Autor.
 
