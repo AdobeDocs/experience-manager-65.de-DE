@@ -630,7 +630,7 @@ Wenn Sie Dynamic Media für Bildbearbeitung und/oder Video verwenden, können Si
 
    ![chlimage_1-18](assets/chlimage_1-3.png)
 
-   Beachten Sie, dass `dc:format` für das Asset `Fiji Red.jpg` `image/jpeg` &lt;a2/> lautet.
+   Beachten Sie, dass `dc:format` für das Asset `Fiji Red.jpg` `image/jpeg`  lautet.
 
    Damit dieser Filter für alle Bilder unabhängig von ihrem Format gilt, setzen Sie den Wert auf `image/*`, wobei `*` ein regulärer Ausdruck ist, der auf alle Bilder eines beliebigen Formats angewendet wird.
 
