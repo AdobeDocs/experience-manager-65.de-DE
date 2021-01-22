@@ -196,7 +196,7 @@ Im Folgenden finden Sie eine Liste der Ressourcen, die bereits in diesem Tutoria
 
 1. Fügen Sie je nach Anwendungsfall die Schaltfläche **Abonnieren** in die interaktive Kommunikation ein, mit der der Benutzer die Option zum Abonnieren der Mehrwertdienste durch Klicken auf die Schaltfläche erhält.
 
-   Wiederholen Sie die Schritte 13 bis 17, um dem Bereich **Zielgruppe** Abonnieren **die Schaltfläche &lt;a2/>Wertsteigernde Dienste&lt;a3/> hinzuzufügen, und fügen Sie das Bild** ValueAddedServicesWeb **hinzu.**
+   Wiederholen Sie die Schritte 13 bis 17, um dem Bereich **Zielgruppe** Abonnieren **die Schaltfläche** Wertsteigernde Dienste hinzuzufügen, und fügen Sie das Bild **ValueAddedServicesWeb** hinzu.
 
 ## Erstellen Sie interaktive Kommunikation für Druck und Web mit automatischer Synchronisierung {#create-interactive-communications-for-print-and-web-with-auto-synchronization}
 
