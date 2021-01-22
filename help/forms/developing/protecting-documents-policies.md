@@ -229,9 +229,9 @@ Erstellen Sie eine Richtlinie mithilfe der Dokument Security API (Java):
    * Erstellen Sie ein `Policy`-Objekt, indem Sie die statische `InfomodelObjectFactory`-Methode des Objekts aufrufen. `createPolicy` Diese Methode gibt ein `Policy`-Objekt zurück.
    * Legen Sie das Namensattribut der Richtlinie fest, indem Sie die `Policy`-Methode des Objekts `setName` aufrufen und einen Zeichenfolgenwert übergeben, der den Richtliniennamen angibt.
    * Legen Sie die Beschreibung der Richtlinie fest, indem Sie die `Policy`-Methode des Objekts `setDescription` aufrufen und einen Zeichenfolgenwert übergeben, der die Beschreibung der Richtlinie angibt.
-   * Legen Sie den Richtliniensatz, zu dem die neue Richtlinie gehört, fest, indem Sie die `Policy`-Methode des Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Richtliniensatznamen angibt. `setPolicySetName` (Sie können `null` für diesen Parameterwert angeben, der dazu führt, dass die Richtlinie dem Richtliniensatz *Meine Richtlinien* hinzugefügt wird.)
+   * Legen Sie den Richtliniensatz, zu dem die neue Richtlinie gehört, fest, indem Sie die `setPolicySetName`-Methode des Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Richtliniensatznamen angibt. `Policy` (Sie können `null` für diesen Parameterwert angeben, der dazu führt, dass die Richtlinie dem Richtliniensatz *Meine Richtlinien* hinzugefügt wird.)
    * Erstellen Sie die Gültigkeitsdauer der Richtlinie, indem Sie die statische `InfomodelObjectFactory`-Methode des Objekts `createValidityPeriod` aufrufen. Diese Methode gibt ein `ValidityPeriod`-Objekt zurück.
-   * Legen Sie die Anzahl der Tage fest, für die auf ein richtliniengeschütztes Dokument zugegriffen werden kann, indem Sie die `ValidityPeriod`-Methode des Objekts aufrufen und einen ganzzahligen Wert übergeben, der die Anzahl der Tage angibt.`setRelativeExpirationDays`
+   * Legen Sie die Anzahl der Tage fest, für die auf ein richtliniengeschütztes Dokument zugegriffen werden kann, indem Sie die `setRelativeExpirationDays`-Methode des Objekts aufrufen und einen ganzzahligen Wert übergeben, der die Anzahl der Tage angibt.`ValidityPeriod`
    * Legen Sie die Gültigkeitsdauer der Richtlinie fest, indem Sie die `Policy`-Methode des Objekts `setValidityPeriod` aufrufen und das `ValidityPeriod`-Objekt übergeben.
 
 1. Erstellen Sie einen Richtlinieneintrag.
@@ -495,7 +495,7 @@ Eine Richtlinie mithilfe der Dokument Security API (Java) löschen:
 1. Löschen Sie die Richtlinie.
 
    * Erstellen Sie ein `PolicyManager`-Objekt, indem Sie die `RightsManagementClient`-Methode des Objekts `getPolicyManager` aufrufen.
-   * Löschen Sie die Richtlinie, indem Sie die `PolicyManager`-Methode des Objekts aufrufen und die folgenden Werte übergeben:`deletePolicy`
+   * Löschen Sie die Richtlinie, indem Sie die `deletePolicy`-Methode des Objekts aufrufen und die folgenden Werte übergeben:`PolicyManager`
 
       * Ein Zeichenfolgenwert, der den Richtliniensatznamen angibt, zu dem die Richtlinie gehört. Sie können `null` angeben, was dazu führt, dass der `MyPolicies`-Richtliniensatz verwendet wird.
       * Ein Zeichenfolgenwert, der den Namen der zu löschenden Richtlinie angibt.
@@ -632,9 +632,9 @@ Anwenden einer Richtlinie auf ein PDF-Dokument mithilfe der Dokument Security AP
 
 1. Speichern Sie das PDF-Dokument.
 
-   * Rufen Sie die `RMSecureDocumentResult`-Methode des Objekts auf, um das richtliniengeschützte PDF-Dokument abzurufen. `getProtectedDoc` Diese Methode gibt ein `com.adobe.idp.Document`-Objekt zurück.
+   * Rufen Sie die `getProtectedDoc`-Methode des Objekts auf, um das richtliniengeschützte PDF-Dokument abzurufen. `RMSecureDocumentResult` Diese Methode gibt ein `com.adobe.idp.Document`-Objekt zurück.
    * Erstellen Sie ein `java.io.File`-Objekt und stellen Sie sicher, dass die Dateierweiterung PDF ist.
-   * Rufen Sie die `com.adobe.idp.Document`-Methode des Objekts auf, um den Inhalt des `copyToFile`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `Document`-Objekt verwenden, das von der `Document`-Methode zurückgegeben wurde).`getProtectedDoc`
+   * Rufen Sie die `copyToFile`-Methode des Objekts auf, um den Inhalt des `Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `Document`-Objekt verwenden, das von der `getProtectedDoc`-Methode zurückgegeben wurde).`com.adobe.idp.Document`
 
 **Codebeispiele**
 
@@ -705,7 +705,7 @@ Anwenden einer Richtlinie auf ein PDF-Dokument mithilfe der Dokument Security AP
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des richtliniengeschützten PDF-Dokuments darstellt.
    * Erstellen Sie ein Bytearray, das den Dateninhalt des `BLOB`-Objekts speichert, das von der `protectDocument`-Methode zurückgegeben wurde. Füllen Sie das Bytearray, indem Sie den Wert des `BLOB`-Datenelements des Objekts `MTOM` abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie den Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter`-Methode des Objekts aufrufen und das Bytearray übergeben.`Write`
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `Write`-Methode des Objekts aufrufen und das Bytearray übergeben.`System.IO.BinaryWriter`
 
 **Codebeispiele**
 
@@ -786,7 +786,7 @@ Entfernen Sie eine Richtlinie mithilfe der Dokument Security API (Java) aus eine
 1. Speichern Sie das unbesicherte PDF-Dokument.
 
    * Erstellen Sie ein `java.io.File`-Objekt und stellen Sie sicher, dass die Dateierweiterung PDF ist.
-   * Rufen Sie die `Document`-Methode des Objekts auf, um den Inhalt des `copyToFile`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `Document`-Objekt verwenden, das von der `Document`-Methode zurückgegeben wurde).`removeSecurity`
+   * Rufen Sie die `copyToFile`-Methode des Objekts auf, um den Inhalt des `Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `Document`-Objekt verwenden, das von der `removeSecurity`-Methode zurückgegeben wurde).`Document`
 
 **Codebeispiele**
 
@@ -825,7 +825,7 @@ Entfernen Sie eine Richtlinie mithilfe der Dokument Security API (Webdienst) aus
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des richtliniengeschützten PDF-Dokuments verwendet, von dem die Richtlinie entfernt wird.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments und den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream`-Eigenschaft des Objekts `Length` abrufen.
-   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`Read`
+   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `Read`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`System.IO.FileStream`
    * Füllen Sie das `BLOB`-Objekt, indem Sie dessen `MTOM`-Feld mit dem Inhalt des Byte-Arrays zuweisen.
 
 1. Entfernen Sie die Richtlinie aus dem PDF-Dokument.
@@ -923,9 +923,9 @@ Sperren Sie den Zugriff auf ein richtliniengeschütztes PDF-Dokument mithilfe de
 1. Richtliniengeschütztes Dokument sperren
 
    * Erstellen Sie ein `DocumentManager`-Objekt, indem Sie die `DocumentSecurityClient`-Methode des Objekts `getDocumentManager` aufrufen.
-   * Rufen Sie den Wert der Lizenzkennung des richtliniengeschützten Dokuments ab, indem Sie die `DocumentManager`-Methode des Objekts aufrufen. `getLicenseId` Übergeben Sie das `com.adobe.idp.Document`-Objekt, das das richtliniengeschützte Dokument darstellt. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Wert der Lizenzkennung darstellt.
+   * Rufen Sie den Wert der Lizenzkennung des richtliniengeschützten Dokuments ab, indem Sie die `getLicenseId`-Methode des Objekts aufrufen. `DocumentManager` Übergeben Sie das `com.adobe.idp.Document`-Objekt, das das richtliniengeschützte Dokument darstellt. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Wert der Lizenzkennung darstellt.
    * Erstellen Sie ein `LicenseManager`-Objekt, indem Sie die `DocumentSecurityClient`-Methode des Objekts `getLicenseManager` aufrufen.
-   * Rufen Sie das richtliniengeschützte Dokument auf, indem Sie die `LicenseManager`-Methode des Objekts aufrufen und die folgenden Werte übergeben:`revokeLicense`
+   * Rufen Sie das richtliniengeschützte Dokument auf, indem Sie die `revokeLicense`-Methode des Objekts aufrufen und die folgenden Werte übergeben:`LicenseManager`
 
       * Ein Zeichenfolgenwert, der den Lizenzkennungswert des richtliniengeschützten Dokuments angibt (geben Sie den Rückgabewert der `DocumentManager`-Objektmethode `getLicenseId` an).
       * Ein statisches Datenelement der `License`-Schnittstelle, das den Grund zum Sperren des Dokuments angibt. Sie können beispielsweise `License.DOCUMENT_REVISED` angeben.
@@ -968,13 +968,13 @@ Sperren Sie den Zugriff auf ein richtliniengeschütztes PDF-Dokument mithilfe de
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern eines richtliniengeschützten PDF-Dokuments verwendet, das gesperrt wird.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des zu widerrufenden richtliniengeschützten PDF-Dokuments und den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream`-Eigenschaft des Objekts `Length` abrufen.
-   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`Read`
+   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `Read`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`System.IO.FileStream`
    * Füllen Sie das `BLOB`-Objekt, indem Sie dessen `MTOM`-Feld mit dem Inhalt des Byte-Arrays zuweisen.
 
 1. Richtliniengeschütztes Dokument sperren
 
-   * Rufen Sie den Lizenzkennungswert des richtliniengeschützten Dokuments ab, indem Sie die `DocumentSecurityServiceClient`-Methode des Objekts aufrufen und das `getLicenseID`-Objekt übergeben, das das richtliniengeschützte Dokument darstellt. `BLOB` Diese Methode gibt einen Zeichenfolgenwert zurück, der die Lizenzkennung darstellt.
-   * Rufen Sie das richtliniengeschützte Dokument auf, indem Sie die `DocumentSecurityServiceClient`-Methode des Objekts aufrufen und die folgenden Werte übergeben:`revokeLicense`
+   * Rufen Sie den Lizenzkennungswert des richtliniengeschützten Dokuments ab, indem Sie die `getLicenseID`-Methode des Objekts aufrufen und das `BLOB`-Objekt übergeben, das das richtliniengeschützte Dokument darstellt. `DocumentSecurityServiceClient` Diese Methode gibt einen Zeichenfolgenwert zurück, der die Lizenzkennung darstellt.
+   * Rufen Sie das richtliniengeschützte Dokument auf, indem Sie die `revokeLicense`-Methode des Objekts aufrufen und die folgenden Werte übergeben:`DocumentSecurityServiceClient`
 
       * Ein Zeichenfolgenwert, der den Lizenzkennungswert des richtliniengeschützten Dokuments angibt (geben Sie den Rückgabewert der `DocumentSecurityServiceService`-Objektmethode `getLicenseId` an).
       * Ein statisches Datenelement der Enum `Reason`, das den Grund zum Sperren des Dokuments angibt. Sie können beispielsweise `Reason.DOCUMENT_REVISED` angeben.
@@ -1061,7 +1061,7 @@ Richten Sie den Zugriff auf ein gesperrtes Dokument mithilfe der Dokument Securi
 1. Zugriff auf das gesperrte PDF-Dokument neu zuweisen.
 
    * Erstellen Sie ein `LicenseManager`-Objekt, indem Sie die `DocumentSecurityClient`-Methode des Objekts `getLicenseManager` aufrufen.
-   * Stellen Sie den Zugriff auf das gesperrte PDF-Dokument wieder her, indem Sie die `LicenseManager`-Methode des Objekts aufrufen und den Lizenzkennungswert des gesperrten Dokuments übergeben.`unrevokeLicense`
+   * Stellen Sie den Zugriff auf das gesperrte PDF-Dokument wieder her, indem Sie die `unrevokeLicense`-Methode des Objekts aufrufen und den Lizenzkennungswert des gesperrten Dokuments übergeben.`LicenseManager`
 
 **Codebeispiele**
 
@@ -1100,7 +1100,7 @@ Stellen Sie den Zugriff auf ein gesperrtes Dokument mithilfe der Dokument Securi
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird verwendet, um ein gesperrtes PDF-Dokument zu speichern, auf das der Zugriff erneut aktiviert wird.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des gesperrten PDF-Dokuments und den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream`-Eigenschaft des Objekts `Length` abrufen.
-   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`Read`
+   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `Read`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`System.IO.FileStream`
    * Füllen Sie das `BLOB`-Objekt, indem Sie dessen `MTOM`-Feld mit dem Inhalt des Byte-Arrays zuweisen.
 
 1. Zugriff auf das gesperrte PDF-Dokument neu zuweisen.
@@ -1409,8 +1409,8 @@ Erstellen Sie ein Wasserzeichen mit der Dokument Security API (Java):
    * Erstellen Sie ein `Watermark`-Objekt, indem Sie die statische `InfomodelObjectFactory`-Methode des Objekts aufrufen. `createWatermark` Diese Methode gibt ein `Watermark`-Objekt zurück.
    * Legen Sie das Attribut name des Wasserzeichens fest, indem Sie die `Watermark`-Methode des Objekts `setName` aufrufen und einen Zeichenfolgenwert übergeben, der den Richtliniennamen angibt.
    * Legen Sie das Hintergrundattribut des Wasserzeichens fest, indem Sie die `Watermark`-Methode des Objekts `setBackground` aufrufen und `true` übergeben. Durch Festlegen dieses Attributs wird das Wasserzeichen im Hintergrund des Dokuments angezeigt.
-   * Legen Sie das benutzerdefinierte Textattribut des Wasserzeichens fest, indem Sie die `Watermark`-Methode des Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Text des Wasserzeichens darstellt.`setCustomText`
-   * Legen Sie das Deckkraftattribut des Wasserzeichens fest, indem Sie die `Watermark`-Methode des Objekts aufrufen und einen ganzzahligen Wert übergeben, der die Deckkraft angibt. `setOpacity` Der Wert 100 gibt an, dass das Wasserzeichen vollständig undurchsichtig ist, und der Wert 0 bedeutet, dass das Wasserzeichen vollständig transparent ist.
+   * Legen Sie das benutzerdefinierte Textattribut des Wasserzeichens fest, indem Sie die `setCustomText`-Methode des Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Text des Wasserzeichens darstellt.`Watermark`
+   * Legen Sie das Deckkraftattribut des Wasserzeichens fest, indem Sie die `setOpacity`-Methode des Objekts aufrufen und einen ganzzahligen Wert übergeben, der die Deckkraft angibt. `Watermark` Der Wert 100 gibt an, dass das Wasserzeichen vollständig undurchsichtig ist, und der Wert 0 bedeutet, dass das Wasserzeichen vollständig transparent ist.
 
 1. Registrieren Sie das Wasserzeichen.
 
@@ -1556,7 +1556,7 @@ Nachdem Sie die Attribute eines Wasserzeichens geändert haben, müssen Sie das 
 
 1. Legen Sie die Wasserzeichenattribute fest.
 
-   Legen Sie das Deckkraftattribut des Wasserzeichens fest, indem Sie die `Watermark`-Methode des Objekts aufrufen und einen ganzzahligen Wert übergeben, der die Deckkraft angibt. `setOpacity` Der Wert 100 gibt an, dass das Wasserzeichen vollständig undurchsichtig ist, und der Wert 0 bedeutet, dass das Wasserzeichen vollständig transparent ist.
+   Legen Sie das Deckkraftattribut des Wasserzeichens fest, indem Sie die `setOpacity`-Methode des Objekts aufrufen und einen ganzzahligen Wert übergeben, der die Deckkraft angibt. `Watermark` Der Wert 100 gibt an, dass das Wasserzeichen vollständig undurchsichtig ist, und der Wert 0 bedeutet, dass das Wasserzeichen vollständig transparent ist.
 
    >[!NOTE]
    >
@@ -2033,9 +2033,9 @@ Wenden Sie eine Richtlinie mithilfe der Dokument Security API (Java) auf ein Wor
 
 1. Speichern Sie das Word-Dokument.
 
-   * Rufen Sie die `RMSecureDocumentResult`-Methode des Objekts auf, um das richtliniengeschützte Word-Dokument abzurufen. `getProtectedDoc` Diese Methode gibt ein `com.adobe.idp.Document`-Objekt zurück.
+   * Rufen Sie die `getProtectedDoc`-Methode des Objekts auf, um das richtliniengeschützte Word-Dokument abzurufen. `RMSecureDocumentResult` Diese Methode gibt ein `com.adobe.idp.Document`-Objekt zurück.
    * Erstellen Sie ein `java.io.File`-Objekt und stellen Sie sicher, dass die Dateierweiterung DOC ist.
-   * Rufen Sie die `com.adobe.idp.Document`-Methode des Objekts auf, um den Inhalt des `copyToFile`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `Document`-Objekt verwenden, das von der `Document`-Methode zurückgegeben wurde).`getProtectedDoc`
+   * Rufen Sie die `copyToFile`-Methode des Objekts auf, um den Inhalt des `Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `Document`-Objekt verwenden, das von der `getProtectedDoc`-Methode zurückgegeben wurde).`com.adobe.idp.Document`
 
 **Codebeispiele**
 
@@ -2099,7 +2099,7 @@ Wenden Sie eine Richtlinie mithilfe der Dokument Security API (Webdienst) auf ei
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des richtliniengeschützten Word-Dokuments darstellt.
    * Erstellen Sie ein Bytearray, das den Dateninhalt des `BLOB`-Objekts speichert, das von der `protectDocument`-Methode zurückgegeben wurde. Füllen Sie das Bytearray, indem Sie den Wert des `BLOB`-Datenelements des Objekts `MTOM` abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie den Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine Word-Datei, indem Sie die `System.IO.BinaryWriter`-Methode des Objekts aufrufen und das Byte-Array übergeben.`Write`
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine Word-Datei, indem Sie die `Write`-Methode des Objekts aufrufen und das Byte-Array übergeben.`System.IO.BinaryWriter`
 
 **Codebeispiele**
 
@@ -2179,7 +2179,7 @@ Entfernen Sie eine Richtlinie mithilfe der Dokument Security API (Java) aus eine
 1. Das ungesicherte Word-Dokument speichern
 
    * Erstellen Sie ein `java.io.File`-Objekt und stellen Sie sicher, dass die Dateierweiterung DOC ist.
-   * Rufen Sie die `Document`-Methode des Objekts auf, um den Inhalt des `copyToFile`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `Document`-Objekt verwenden, das von der `Document`-Methode zurückgegeben wurde).`removeSecurity`
+   * Rufen Sie die `copyToFile`-Methode des Objekts auf, um den Inhalt des `Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `Document`-Objekt verwenden, das von der `removeSecurity`-Methode zurückgegeben wurde).`Document`
 
 **Codebeispiele**
 
@@ -2218,7 +2218,7 @@ Entfernen Sie eine Richtlinie mithilfe der Dokument Security API (Webdienst) aus
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des richtliniengeschützten Word-Dokuments verwendet, aus dem die Richtlinie entfernt wird.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des Word-Dokuments und den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream`-Eigenschaft des Objekts `Length` abrufen.
-   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`Read`
+   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `Read`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`System.IO.FileStream`
    * Füllen Sie das `BLOB`-Objekt, indem Sie dessen `MTOM`-Feld mit dem Inhalt des Byte-Arrays zuweisen.
 
 1. Richtlinie aus dem Word-Dokument entfernen
