@@ -17,7 +17,7 @@ Adobe Experience Manager unterstützt viele Standard-Barrierefreiheitsmerkmale i
 
 Beim Entwerfen von Webseiten und Hinzufügen von Inhalten zu den Seiten können die Inhaltsentwickler und Autoren Funktionen der RTE verwenden, um barrierefreie Informationen bereitzustellen. Fügen Sie beispielsweise Strukturinformationen über Überschriften und Absatzelemente hinzu.
 
-Um diese Funktionen zu konfigurieren und anzupassen, konfigurieren Sie die RTE-Plugins[ für die Komponente. ](#configure-the-plugin-features) Beispielsweise können Sie mit dem Plugin `paraformat` zusätzliche semantische Elemente auf Blockebene hinzufügen, einschließlich der Erweiterung der Anzahl der Überschriftenebenen, die standardmäßig über die grundlegenden `H1`-, `H2`- und `H3`-Elemente hinaus unterstützt werden.
+Um diese Funktionen zu konfigurieren und anzupassen, konfigurieren Sie die RTE-Plugins](#configure-the-plugin-features) für die Komponente. [ Beispielsweise können Sie mit dem Plugin `paraformat` zusätzliche semantische Elemente auf Blockebene hinzufügen, einschließlich der Erweiterung der Anzahl der Überschriftenebenen, die standardmäßig über die grundlegenden `H1`-, `H2`- und `H3`-Elemente hinaus unterstützt werden.
 
 Die RTE ist in verschiedenen Komponenten für die Touch-aktivierte Benutzeroberfläche und die Classic-Benutzeroberfläche verfügbar. Die primäre Komponente, die die RTE verwendet, ist jedoch die Komponente **Text**, die für beide Schnittstellen verfügbar ist. Die folgenden Abbildungen zeigen die RTE mit einer Reihe von Plugins aktiviert, einschließlich `paraformat`:
 
