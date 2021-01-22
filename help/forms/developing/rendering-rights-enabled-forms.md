@@ -104,7 +104,7 @@ Wiedergabe eines Formulars mit aktivierten Berechtigungen mithilfe der Forms API
 
    * Erstellen Sie ein Objekt `ReaderExtensionSpec`, indem Sie den Konstruktor verwenden.
    * Geben Sie den Alias der Berechtigung an, indem Sie die `ReaderExtensionSpec`-Methode des Objekts `setReCredentialAlias` aufrufen und einen Zeichenfolgenwert angeben, der den Aliaswert darstellt.
-   * Legen Sie die Verwendungsrechte fest, indem Sie die entsprechende Methode aufrufen, die zum `ReaderExtensionSpec`-Objekt gehört. Sie können jedoch nur dann ein Verwendungsrecht festlegen, wenn die von Ihnen referenzierte Berechtigung dies zulässt. Das heißt, Sie können keine Verwendungsrechte festlegen, wenn die Berechtigung das Festlegen nicht zulässt. Beispiel. Um das Verwendungsrecht festzulegen, mit dem ein Benutzer Formularfelder ausfüllen und das Formular speichern kann, rufen Sie die `ReaderExtensionSpec`-Methode des Objekts auf und übergeben Sie `setReFillIn`.`true`
+   * Legen Sie die Verwendungsrechte fest, indem Sie die entsprechende Methode aufrufen, die zum `ReaderExtensionSpec`-Objekt gehört. Sie können jedoch nur dann ein Verwendungsrecht festlegen, wenn die von Ihnen referenzierte Berechtigung dies zulässt. Das heißt, Sie können keine Verwendungsrechte festlegen, wenn die Berechtigung das Festlegen nicht zulässt. Beispiel. Um das Verwendungsrecht festzulegen, mit dem ein Benutzer Formularfelder ausfüllen und das Formular speichern kann, rufen Sie die `setReFillIn`-Methode des Objekts auf und übergeben Sie `true`.`ReaderExtensionSpec`
 
    >[!NOTE]
    >
@@ -112,7 +112,7 @@ Wiedergabe eines Formulars mit aktivierten Berechtigungen mithilfe der Forms API
 
 1. Wiedergabe eines Formulars mit aktivierten Verwendungsrechten
 
-   Rufen Sie die `FormsServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`renderPDFFormWithUsageRights`
+   Rufen Sie die `renderPDFFormWithUsageRights`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`FormsServiceClient`
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil einer Forms-Anwendung ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Ein `com.adobe.idp.Document`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie ein leeres `com.adobe.idp.Document`-Objekt.
