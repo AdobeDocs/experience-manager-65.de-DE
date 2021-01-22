@@ -1231,7 +1231,7 @@ Mit dieser Komponente können Sie ein verstecktes Feld erstellen. Dieses Feld ka
 Sie können das Formular auch so anpassen, dass bestimmte Formular-Komponenten abhängig vom Wert anderer auf dem Formular befindlichen Felder ein- oder ausgeblendet werden. Das Ändern der Sichtbarkeit eines Formularfelds ist nützlich, wenn das Feld nur unter besonderen Bedingungen erforderlich ist.
 Siehe [Einblenden und Ausblenden von Formularkomponenten](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
 
-### Bild-Schaltfläche {#image-button}
+### Bild-Schaltfläche  {#image-button}
 
 Mit einer Bild-Schaltfläche können Sie eine Schaltfläche mit Ihrem eigenem Bild und Text erstellen:
 
