@@ -49,7 +49,7 @@ Der **Segmenteditor** ermöglicht Ihnen die einfache Veränderung eines Segment
 
 Mithilfe des Komponenten-Browsers können Sie **UND**- und **ODER**-Container zur Festlegung der Segmentlogik und anschließend zusätzliche Komponenten zum Vergleich von Eigenschaften und Werten oder Referenzskripts oder anderen Segmenten zur Definition der Auswahlkriterien (siehe [Erstellen eines neuen Segments](#creating-a-new-segment)) hinzufügen, um das genaue Szenario für die Auswahl des Segments festzulegen.
 
-Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird das Segment aufgelöst. Falls mehrere Segmente zutreffen, wird außerdem der Faktor **Verstärken** verwendet. Weitere Informationen zum Verstärkungsfaktor [finden Sie unter Erstellen eines neuen Segments](#creating-a-new-segment).](/help/sites-administering/campaign-segmentation.md#boost-factor)[
+Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird das Segment aufgelöst. Falls mehrere Segmente zutreffen, wird außerdem der Faktor **Verstärken** verwendet. Weitere Informationen zum Verstärkungsfaktor [finden Sie unter Erstellen eines neuen Segments](#creating-a-new-segment).[](/help/sites-administering/campaign-segmentation.md#boost-factor)
 
 >[!CAUTION]
 >
