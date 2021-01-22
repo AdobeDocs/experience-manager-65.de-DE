@@ -505,7 +505,7 @@ Die Quelle für den Link zum Bild zur Seite &quot;Produkte&quot;könnte beispiel
 
 Im Rahmen dieser Übung ordnet Sling diese URLs dem Skript /apps/mywebsite/components/contentpage/navimage.png.java zu, das Sie erstellen.
 
-1. Öffnen Sie in CRXDE Lite unter `topnav.jsp`Suchen Sie den Inhalt des Ankerelements (Zeile 14):`/apps/mywebsite/components/topnav.`
+1. Öffnen Sie in CRXDE Lite unter `/apps/mywebsite/components/topnav.`Suchen Sie den Inhalt des Ankerelements (Zeile 14):`topnav.jsp`
 
    ```xml
    <%=child.getTitle() %>
