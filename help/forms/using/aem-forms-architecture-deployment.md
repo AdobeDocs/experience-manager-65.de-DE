@@ -71,7 +71,7 @@ Das folgende Bild zeigt verschiedene AEM Forms-Serverkonfigurationen und ihre Ko
 
 **Verarbeitung:** Eine Instanz von AEM Forms, die im Autorenmodus ausgeführt wird und der keine Benutzer der Forms-Manager-Gruppe zugewiesen sind. Sie können AEM Forms unter JEE oder AEM Forms unter OSGi als Verarbeitungsinstanz bereitstellen. Die Benutzer werden nicht zugewiesen, um sicherzustellen, dass Aktivitäten zum Erstellen und Verwalten von Formularen nicht auf der Verarbeitungsinstanz und nur auf der Autoreninstanz durchgeführt werden. Eine Verarbeitungsinstanz ermöglicht die folgenden Funktionen:
 
-* **Verarbeitung von Formularrohdaten, die von einer Veröffentlichungsinstanz eingehen:** Dies wird hauptsächlich auf einer Verarbeitungsinstanz über AEM Workflows erreicht, die beim Eintreffen der Daten ausgelöst werden. Die Workflows können den im Lieferumfang enthaltenen Schritt &quot;Formulardatenmodell&quot;verwenden, um die Daten oder das Dokument in einem geeigneten Datenspeicher zu archivieren.
+* **Verarbeitung von Formularrohdaten, die von einer Veröffentlichungsinstanz eingehen:** Dies wird hauptsächlich auf einer Verarbeitungsinstanz erreicht, indem AEM Trigger beim Eintreffen der Daten Workflows wird. Die Workflows können den im Lieferumfang enthaltenen Schritt &quot;Formulardatenmodell&quot;verwenden, um die Daten oder das Dokument in einem geeigneten Datenspeicher zu archivieren.
 * **Sicheres Speichern der Formulardaten**: Die Verarbeitung bietet ein hinter der Firewall befindliches Repository für Formularrohdaten, auf das die Benutzer keinen Zugriff haben. Weder Formularentwickler in der Autoreninstanz noch Endbenutzer in der Veröffentlichungsinstanz können auf dieses Repository zugreifen.
 
    >[!NOTE]
