@@ -110,7 +110,7 @@ Weitere Informationen finden Sie außerdem in „Komponentenbeschreibungen und o
 
 ### Verwenden von Regeln in adaptiven Formularen  {#using-rules-in-adaptive-forms}
 
-AEM Forms bietet einen [Regeleditor](/help/forms/using/rule-editor.md), der es Ihnen ermöglicht, Regeln zu erstellen, um dynamisches Verhalten zu adaptiven Formularkomponenten hinzuzufügen. Mithilfe dieser Regeln können Sie Bedingungen auswerten und Aktionen für Komponenten auslösen, z. B. Felder ein- oder ausblenden, Werte berechnen, Dropdown-Listen dynamisch ändern usw.
+AEM Forms bietet einen [Regeleditor](/help/forms/using/rule-editor.md), der es Ihnen ermöglicht, Regeln zu erstellen, um dynamisches Verhalten zu adaptiven Formularkomponenten hinzuzufügen. Mithilfe dieser Regeln können Sie Bedingungen und Trigger-Aktionen für Komponenten auswerten, z. B. Felder ein- oder ausblenden, Werte berechnen, Dropdown-Listen dynamisch ändern usw.
 
 Der Regeleditor bietet einen visuellen Editor und einen Code-Editor für Schreibregeln. Achten Sie auf Folgendes, wenn Sie Schreibregeln mit dem Code-Editormodus verwenden:
 
