@@ -176,8 +176,8 @@ Konvertieren eines Microsoft Word-Dokuments in ein PDF-Dokument mithilfe der Gen
 
    So rufen Sie das PDF-Dokument ab:
 
-   * Rufen Sie die `CreatePDFResult`-Methode des Objekts auf, die ein `getCreatedDocument`-Objekt zurückgibt.`com.adobe.idp.Document`
-   * Rufen Sie die `com.adobe.idp.Document`-Methode des Objekts auf, um das PDF-Dokument aus dem im vorherigen Schritt erstellten Objekt zu extrahieren.`copyToFile`
+   * Rufen Sie die `getCreatedDocument`-Methode des Objekts auf, die ein `com.adobe.idp.Document`-Objekt zurückgibt.`CreatePDFResult`
+   * Rufen Sie die `copyToFile`-Methode des Objekts auf, um das PDF-Dokument aus dem im vorherigen Schritt erstellten Objekt zu extrahieren.`com.adobe.idp.Document`
 
    Wenn Sie zum Abrufen des log-Dokuments die `createPDF2`-Methode verwendet haben (nicht für HTML-Konvertierungen), führen Sie die folgenden Schritte aus:
 
@@ -225,7 +225,7 @@ Konvertieren eines Microsoft Word-Dokuments in ein PDF-Dokument mithilfe der Gen
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern der Datei verwendet, die Sie in ein PDF-Dokument konvertieren möchten.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Dateispeicherort der zu konvertierenden Datei und den Modus zum Öffnen der Datei darstellt.
    * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream`-Eigenschaft des Objekts `Length` abrufen.
-   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`Read`
+   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `Read`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`System.IO.FileStream`
    * Füllen Sie das `BLOB`-Objekt, indem Sie seiner `MTOM`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
 
 1. Konvertieren Sie die Datei in ein PDF-Dokument.
@@ -247,7 +247,7 @@ Konvertieren eines Microsoft Word-Dokuments in ein PDF-Dokument mithilfe der Gen
    * Rufen Sie das konvertierte PDF-Dokument ab, indem Sie das `BLOB`-Objektfeld `MTOM` einem Bytearray zuweisen. Das Byte-Array stellt das konvertierte PDF-Dokument dar. Stellen Sie sicher, dass Sie das `BLOB`-Objekt verwenden, das als Ausgabeparameter für die `createPDF2`-Methode verwendet wird.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des konvertierten PDF-Dokuments darstellt.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie den Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter`-Methode des Objekts aufrufen und das Bytearray übergeben.`Write`
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `Write`-Methode des Objekts aufrufen und das Bytearray übergeben.`System.IO.BinaryWriter`
 
 **Siehe auch**
 
@@ -325,7 +325,7 @@ Konvertieren eines HTML-Dokuments in ein PDF-Dokument mit der Generate PDF API (
 
 1. Konvertieren Sie den HTML-Inhalt in ein PDF-Dokument.
 
-   Rufen Sie die `GeneratePdfServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`htmlToPDF2`
+   Rufen Sie die `htmlToPDF2`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`GeneratePdfServiceClient`
 
    * Ein `java.lang.String`-Objekt, das die URL der zu konvertierenden HTML-Datei enthält.
    * Ein `java.lang.String`-Objekt, das die bei der Konvertierung zu verwendenden Dateitypeinstellungen enthält. Die Dateitypeinstellungen können Spider-Ebenen enthalten.
@@ -338,7 +338,7 @@ Konvertieren eines HTML-Dokuments in ein PDF-Dokument mit der Generate PDF API (
    Die `htmlToPDF2`-Methode gibt ein `HtmlToPdfResult`-Objekt zurück, das das neue generierte PDF-Dokument enthält. So rufen Sie das neu erstellte PDF-Dokument ab:
 
    * Rufen Sie die `HtmlToPdfResult`-Methode des Objekts `getCreatedDocument` auf. Gibt ein `com.adobe.idp.Document`-Objekt zurück.
-   * Rufen Sie die `com.adobe.idp.Document`-Methode des Objekts auf, um das PDF-Dokument aus dem im vorherigen Schritt erstellten Objekt zu extrahieren.`copyToFile`
+   * Rufen Sie die `copyToFile`-Methode des Objekts auf, um das PDF-Dokument aus dem im vorherigen Schritt erstellten Objekt zu extrahieren.`com.adobe.idp.Document`
 
 **Siehe auch**
 
@@ -397,7 +397,7 @@ Konvertieren von HTML-Inhalten in ein PDF-Dokument mithilfe der Generate PDF API
    * Rufen Sie das konvertierte PDF-Dokument ab, indem Sie das `BLOB`-Objektfeld `MTOM` einem Bytearray zuweisen. Das Byte-Array stellt das konvertierte PDF-Dokument dar. Stellen Sie sicher, dass Sie das `BLOB`-Objekt verwenden, das als Ausgabeparameter für die `HtmlToPDF2`-Methode verwendet wird.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des konvertierten PDF-Dokuments darstellt.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie den Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter`-Methode des Objekts aufrufen und das Bytearray übergeben.`Write`
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `Write`-Methode des Objekts aufrufen und das Bytearray übergeben.`System.IO.BinaryWriter`
 
 **Siehe auch**
 
@@ -476,7 +476,7 @@ Konvertieren Sie ein PDF-Dokument mithilfe der Generate PDF API (Java) in eine R
 
 1. PDF-Dokument konvertieren.
 
-   Rufen Sie die `GeneratePdfServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`exportPDF2`
+   Rufen Sie die `exportPDF2`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`GeneratePdfServiceClient`
 
    * Ein `com.adobe.idp.Document`-Objekt, das die zu konvertierende PDF-Datei darstellt.
    * Ein `java.lang.String`-Objekt, das den Namen der zu konvertierenden Datei enthält.
@@ -533,12 +533,12 @@ Konvertieren Sie ein PDF-Dokument mithilfe der Generate PDF API (Webdienst) in e
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern eines konvertierten PDF-Dokuments verwendet.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments und den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream`-Eigenschaft des Objekts `Length` abrufen.
-   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`Read`
+   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `Read`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`System.IO.FileStream`
    * Füllen Sie das `BLOB`-Objekt, indem Sie seiner `MTOM`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
 
 1. PDF-Dokument konvertieren.
 
-   Rufen Sie die `GeneratePDFServiceServiceWse`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`ExportPDF2`
+   Rufen Sie die `ExportPDF2`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`GeneratePDFServiceServiceWse`
 
    * Ein `BLOB`-Objekt, das die zu konvertierende PDF-Datei darstellt.
    * Eine Zeichenfolge, die den Pfadnamen der zu konvertierenden Datei enthält.
@@ -552,7 +552,7 @@ Konvertieren Sie ein PDF-Dokument mithilfe der Generate PDF API (Webdienst) in e
    * Rufen Sie das konvertierte RTF-Dokument ab, indem Sie das `BLOB`-Objektfeld `MTOM` einem Bytearray zuweisen. Das Byte-Array stellt das konvertierte RTF-Dokument dar. Stellen Sie sicher, dass Sie das `BLOB`-Objekt verwenden, das als Ausgabeparameter für die `ExportPDF2`-Methode verwendet wird.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Speicherort der RTF-Datei darstellt.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie den Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine RTF-Datei, indem Sie die `System.IO.BinaryWriter`-Methode des Objekts aufrufen und das Bytearray übergeben.`Write`
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine RTF-Datei, indem Sie die `Write`-Methode des Objekts aufrufen und das Bytearray übergeben.`System.IO.BinaryWriter`
 
 **Siehe auch**
 
@@ -881,7 +881,7 @@ Dieses Verfahren beschreibt, wie Sie die Konfigurationsdatei des Generate PDF-Di
 
 >[!NOTE]
 >
->Der Name der Anwendung wird als Wert des `GenericApp`-Elementattributs `name` angegeben. Dieser Wert muss exakt mit dem entsprechenden Namen übereinstimmen, der im Skript angegeben ist, das Sie für diese Anwendung entwickeln. Gleichermaßen sollte das `GenericApp`-Attribut des Elements genau mit der `displayName`-Fensterbeschriftung des entsprechenden Skripts übereinstimmen. `expectedWindow` Diese Gleichwertigkeit wird bewertet, nachdem alle regulären Ausdruck gelöst wurden, die in den Attributen `displayName` oder `caption` angezeigt werden.
+>Der Name der Anwendung wird als Wert des `GenericApp`-Elementattributs `name` angegeben. Dieser Wert muss exakt mit dem entsprechenden Namen übereinstimmen, der im Skript angegeben ist, das Sie für diese Anwendung entwickeln. Gleichermaßen sollte das `displayName`-Attribut des Elements genau mit der `expectedWindow`-Fensterbeschriftung des entsprechenden Skripts übereinstimmen. `GenericApp` Diese Gleichwertigkeit wird bewertet, nachdem alle regulären Ausdruck gelöst wurden, die in den Attributen `displayName` oder `caption` angezeigt werden.
 
 In diesem Beispiel wurden die mit dem Generate PDF-Dienst bereitgestellten Standardkonfigurationsdaten geändert, um anzugeben, dass Notepad (nicht Microsoft Word) zur Verarbeitung von Dateien mit der Dateinamenerweiterung .txt verwendet werden soll. Vor dieser Änderung wurde Microsoft Word als native Anwendung angegeben, die solche Dateien verarbeiten soll.
 
