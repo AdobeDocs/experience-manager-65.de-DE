@@ -48,7 +48,7 @@ Die Tabelle bietet folgende Arbeitsblätter:
 
 Um ein qualitativ hochwertiges Projekt erfolgreich bereitzustellen, müssen Sie alle Punkte der Checkliste abschließen, vorzugsweise in der entsprechenden Reihenfolge:
 
-1. Die Checklisten werden entsprechend der beteiligten Rolle definiert. ](/help/managing/best-practices.md#persona)****[ Jede Person sollte die Checkliste entsprechend ihrer Rolle im Projekt verwenden.
+1. Die Checklisten werden entsprechend der beteiligten Rolle definiert. **[](/help/managing/best-practices.md#persona)** Jede Person sollte die Checkliste entsprechend ihrer Rolle im Projekt verwenden.
 1. Die Checklisten decken die erforderlichen **[Dokumente](/help/managing/best-practices.md#required-documents)** und **[Lieferbare](/help/managing/best-practices.md#deliverables)** für jeden Meilenstein ab - die entsprechende Person muss die entsprechenden Statusfelder und Qualitätsfelder festlegen.
 
    >[!NOTE]
