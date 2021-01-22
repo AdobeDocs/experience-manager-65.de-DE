@@ -182,7 +182,7 @@ So fügen Sie mithilfe der Signature-API (Webdienst) ein Signaturfeld hinzu:
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des PDF-Dokuments verwendet, das ein Unterschriftsfeld enthalten soll.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments und den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream`-Eigenschaft des Objekts `Length` abrufen.
-   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`Read`
+   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `Read`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`System.IO.FileStream`
    * Füllen Sie das `BLOB`-Objekt, indem Sie seine `MTOM`-Eigenschaft mit dem Inhalt des Byte-Arrays zuweisen.
 
 1. Signaturfeld Hinzufügen
@@ -203,7 +203,7 @@ So fügen Sie mithilfe der Signature-API (Webdienst) ein Signaturfeld hinzu:
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments darstellt, das das Signaturfeld enthalten soll, sowie den Dateimodus, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Bytearray, das den Inhalt des `BLOB`-Objekts speichert, das von der `addSignatureField`-Methode zurückgegeben wurde. Füllen Sie das Bytearray, indem Sie den Wert des `BLOB`-Datenelements des Objekts `binaryData` abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie den Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter`-Methode des Objekts aufrufen und das Bytearray übergeben.`Write`
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `Write`-Methode des Objekts aufrufen und das Bytearray übergeben.`System.IO.BinaryWriter`
 
 **Siehe auch**
 
@@ -329,7 +329,7 @@ Signaturfeldnamen mit der Signature-API abrufen (Webdienst):
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des PDF-Dokuments verwendet, das Unterschriftsfelder enthält.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments und den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream`-Eigenschaft des Objekts `Length` abrufen.
-   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`Read`
+   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `Read`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`System.IO.FileStream`
    * Füllen Sie das `BLOB`-Objekt, indem Sie dessen `MTOM`-Feld den Inhalt des Byte-Arrays zuweisen.
 
 1. Signaturfeldnamen abrufen
@@ -468,7 +468,7 @@ Signaturfelder mithilfe der Signature-API (Java) ändern:
 
 1. Signaturfeld ändern
 
-   Ändern Sie das Unterschriftsfeld, indem Sie die `SignatureServiceClient`-Methode des Objekts aufrufen und die folgenden Werte übergeben:`modifySignatureField`
+   Ändern Sie das Unterschriftsfeld, indem Sie die `modifySignatureField`-Methode des Objekts aufrufen und die folgenden Werte übergeben:`SignatureServiceClient`
 
    * Das `com.adobe.idp.Document`-Objekt, in dem das zu ändernde PDF-Dokument mit dem Unterschriftsfeld gespeichert wird
    * Ein Zeichenfolgenwert, der den Namen des Signaturfelds angibt
@@ -511,7 +511,7 @@ Signaturfelder mithilfe der Signature-API (Java) ändern:
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des PDF-Dokuments verwendet, das das zu ändernde Unterschriftsfeld enthält.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments und den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream`-Eigenschaft des Objekts `Length` abrufen.
-   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`Read`
+   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `Read`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`System.IO.FileStream`
    * Füllen Sie das `BLOB`-Objekt, indem Sie dessen `MTOM`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
 
 1. Festlegen von Wörterbuchwerten
@@ -521,8 +521,8 @@ Signaturfelder mithilfe der Signature-API (Java) ändern:
    * Deaktivieren Sie Änderungen am PDF-Dokument, indem Sie dem `PDFSeedValueOptionSpec`-Datenelement des `mdpValue`-Objekts den Wert `MDPPermissions.NoChanges` der Auflistung zuweisen.
    * Erstellen Sie ein Objekt `FieldMDPOptionSpec`, indem Sie den Konstruktor verwenden. Mit diesem Objekt können Sie die Werte für die Sperrung von Unterschriftsfeldern festlegen.
    * Sperren Sie alle Felder im PDF-Dokument, indem Sie dem `FieldMDPOptionSpec`-Datenelement des `mdpValue`-Objekts den Wert `FieldMDPAction.ALL` der Auflistung zuweisen.
-   * Legen Sie Wörterbuchinformationen zum Seed-Wert fest, indem Sie dem `PDFSeedValueOptionSpec`-Objekt das `PDFSignatureFieldProperties`-Datenelement des Objekts zuweisen.`seedValue`
-   * Legen Sie die Wörterbuchinformationen zum Sperren von Signaturfeldern fest, indem Sie dem `FieldMDPOptionSpec`-Objekt das `PDFSignatureFieldProperties`-Datenelement des Objekts zuweisen.`fieldMDP`
+   * Legen Sie Wörterbuchinformationen zum Seed-Wert fest, indem Sie dem `PDFSignatureFieldProperties`-Objekt das `seedValue`-Datenelement des Objekts zuweisen.`PDFSeedValueOptionSpec`
+   * Legen Sie die Wörterbuchinformationen zum Sperren von Signaturfeldern fest, indem Sie dem `PDFSignatureFieldProperties`-Objekt das `fieldMDP`-Datenelement des Objekts zuweisen.`FieldMDPOptionSpec`
 
    >[!NOTE]
    >
@@ -530,7 +530,7 @@ Signaturfelder mithilfe der Signature-API (Java) ändern:
 
 1. Signaturfeld ändern
 
-   Ändern Sie das Unterschriftsfeld, indem Sie die `SignatureServiceClient`-Methode des Objekts aufrufen und die folgenden Werte übergeben:`modifySignatureField`
+   Ändern Sie das Unterschriftsfeld, indem Sie die `modifySignatureField`-Methode des Objekts aufrufen und die folgenden Werte übergeben:`SignatureServiceClient`
 
    * Das `BLOB`-Objekt, in dem das zu ändernde PDF-Dokument mit dem Unterschriftsfeld gespeichert wird
    * Ein Zeichenfolgenwert, der den Namen des Signaturfelds angibt
@@ -543,7 +543,7 @@ Signaturfelder mithilfe der Signature-API (Java) ändern:
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments darstellt, das das Signaturfeld enthalten soll, sowie den Modus, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Bytearray, das den Inhalt des `BLOB`-Objekts speichert, das von der `addSignatureField`-Methode zurückgegeben wird. Füllen Sie das Bytearray, indem Sie den Wert des `BLOB`-Datenelements des Objekts `MTOM` abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie den Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter`-Methode des Objekts aufrufen und das Bytearray übergeben.`Write`
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `Write`-Methode des Objekts aufrufen und das Bytearray übergeben.`System.IO.BinaryWriter`
 
 **Siehe auch**
 
@@ -774,7 +774,7 @@ So signieren Sie ein PDF-Dokument mit der Signature-API (Webdienst) digital:
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern eines signierten PDF-Dokuments verwendet.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des zu signierenden PDF-Dokuments sowie den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream`-Eigenschaft des Objekts `Length` abrufen.
-   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`Read`
+   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `Read`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`System.IO.FileStream`
    * Füllen Sie das `BLOB`-Objekt, indem Sie dessen `MTOM`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
 
 1. PDF-Dokument signieren
