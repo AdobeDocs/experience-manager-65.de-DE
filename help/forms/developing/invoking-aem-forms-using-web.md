@@ -668,7 +668,7 @@ Sie können den Dienst `MyApplication/EncryptDocument` (der in Workbench erstell
 1. Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des kennwortverschlüsselten Dokuments darstellt.
 1. Erstellen Sie ein Bytearray, das den Dateninhalt des `BLOB`-Objekts speichert, das von der `MyApplicationEncryptDocumentService`-Methode des Objekts `invoke` zurückgegeben wird. Füllen Sie das Bytearray, indem Sie den Wert des `BLOB`-Datenelements des Objekts `binaryData` abrufen.
 1. Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie den Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-1. Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter`-Methode des Objekts aufrufen und das Bytearray übergeben.`Write`
+1. Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `Write`-Methode des Objekts aufrufen und das Bytearray übergeben.`System.IO.BinaryWriter`
 
 ### Aufrufen eines Dienstes mit Java-Proxyklassen und Base64-Kodierung {#invoking-a-service-using-java-proxy-classes-and-base64-encoding}
 
@@ -826,7 +826,7 @@ Berücksichtigen Sie den `MyApplication/EncryptDocument`-Vorgang, bei dem ein un
 1. Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des geschützten PDF-Dokuments darstellt.
 1. Erstellen Sie ein Bytearray, das den Dateninhalt des `BLOB`-Objekts speichert, das von der `invoke`-Methode zurückgegeben wurde. Füllen Sie das Bytearray, indem Sie den Wert des `BLOB`-Datenelements des Objekts `MTOM` abrufen.
 1. Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie den Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-1. Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter`-Methode des Objekts aufrufen und das Bytearray übergeben.`Write`
+1. Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `Write`-Methode des Objekts aufrufen und das Bytearray übergeben.`System.IO.BinaryWriter`
 
 >[!NOTE]
 >
@@ -871,7 +871,7 @@ So rufen Sie den Prozess `MyApplication/EncryptDocument` mithilfe von Java-Proxy
     https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1
    ```
 
-   Weitere Informationen finden Sie unter Java-Proxyklassen mit JAX-WS[ erstellen.](#creating-java-proxy-classes-using-jax-ws)
+   Weitere Informationen finden Sie unter Java-Proxyklassen mit JAX-WS](#creating-java-proxy-classes-using-jax-ws) erstellen.[
 
    >[!NOTE]
    >
@@ -982,7 +982,7 @@ Sie können den Dienst `MyApplication/EncryptDocument` (der in Workbench erstell
 1. Konvertieren Sie das `System.UriBuilder`-Objekt in ein `System.IO.Stream`-Objekt. (Der C# Quick-Beginn, der dieser Liste folgt, zeigt, wie diese Aufgabe ausgeführt wird.)
 1. Erstellen Sie ein Bytearray und füllen Sie es mit den Daten im `System.IO.Stream`-Objekt.
 1. Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie den Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-1. Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter`-Methode des Objekts aufrufen und das Bytearray übergeben.`Write`
+1. Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `Write`-Methode des Objekts aufrufen und das Bytearray übergeben.`System.IO.BinaryWriter`
 
 ### Aufrufen eines Dienstes mit Java-Proxyklassen und BLOB-Daten über HTTP {#invoking-a-service-using-java-proxy-classes-and-blob-data-over-http}
 
@@ -994,7 +994,7 @@ Sie können einen AEM Forms-Dienst über Java-Proxyklassen und BLOB-Daten über 
     https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1
    ```
 
-   Weitere Informationen finden Sie unter Java-Proxyklassen mit JAX-WS[ erstellen.](#creating-java-proxy-classes-using-jax-ws)
+   Weitere Informationen finden Sie unter Java-Proxyklassen mit JAX-WS](#creating-java-proxy-classes-using-jax-ws) erstellen.[
 
    >[!NOTE]
    >
