@@ -157,7 +157,7 @@ Platzieren Sie die bereitgestellte Datei am angegebenen Pfad, um ein Asset im DA
 
 ## Aktualisieren von Asset-Binärdateien {#update-asset-binary}
 
-Aktualisiert die Binärdatei eines Assets (Darstellung mit dem Namen Original). Eine Aktualisierung löst die Ausführung des standardmäßigen Arbeitsablaufs für die Verarbeitung von Assets aus, sofern dieser konfiguriert ist.
+Aktualisiert die Binärdatei eines Assets (Darstellung mit dem Namen Original). Bei einer Aktualisierung wird der standardmäßige Arbeitsablauf für die Verarbeitung von Assets ausgeführt, sofern er konfiguriert ist.
 
 **Anfrage**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png`
 
