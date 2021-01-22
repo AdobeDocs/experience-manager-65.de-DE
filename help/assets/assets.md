@@ -73,7 +73,7 @@ Wenn Sie mit digitalen Assets in [!DNL Experience Manager] arbeiten, müssen Sie
 
 ### Arbeiten mit Assets {#how-to-work-with-assets}
 
-Sie können für Assets oder Sammlungen Aktionen durchführen. Mit Aktionen können Assets, Sammlungen und Darstellungen erstellt oder geändert werden. Viele der grundlegenden Aktionen, die Sie für Assets durchführen - Hochladen, Löschen, Aktualisieren, Speichern von Teilassets - lösen vorkonfigurierte Workflows aus. Diese werden automatisch in [!DNL Assets] aktiviert und detailliert in [!DNL Assets]-Media-Handler beschrieben.
+Sie können für Assets oder Sammlungen Aktionen durchführen. Mit Aktionen können Assets, Sammlungen und Darstellungen erstellt oder geändert werden. Viele der grundlegenden Aktionen, die Sie für Assets durchführen - Hochladen, Löschen, Aktualisieren, Speichern von Teilassets - vorkonfigurierte Workflows des Triggers. Diese werden automatisch in [!DNL Assets] aktiviert und detailliert in [!DNL Assets]-Media-Handler beschrieben.
 
 Die Aufgaben, die mit den vorkonfigurierten Workflows ausgeführt werden können:
 
