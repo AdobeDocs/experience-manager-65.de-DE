@@ -901,7 +901,7 @@ Sie können mithilfe eines Workflows die automatische Versionierung aktivieren. 
 
 1. So Ansicht einer Asset-Version:
 
-   * Klicken Sie unter [!UICONTROL Zeitschiene] auf Alle anzeigen.]****[!UICONTROL 
+   * Klicken Sie unter [!UICONTROL Zeitschiene] auf Alle anzeigen.****
    * Klicken Sie auf **[!UICONTROL Versionen]**. Alle für ein Asset erstellten Versionen werden in der linken Seitenleiste aufgeführt.
 
    * Wählen Sie eine bestimmte Version des Assets aus und klicken Sie auf **[!UICONTROL Vorschau Version]**.
