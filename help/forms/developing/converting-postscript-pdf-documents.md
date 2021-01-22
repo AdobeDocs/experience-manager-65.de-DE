@@ -102,7 +102,7 @@ Konvertieren Sie eine PostScript-Datei mithilfe der Distiller Service API (Java)
 
 1. Rufen Sie den PDF-Erstellungsvorgang auf.
 
-   Rufen Sie die `DistillerServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`createPDF`
+   Rufen Sie die `createPDF`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`DistillerServiceClient`
 
    * Das `com.adobe.idp.Document`-Objekt, das die zu konvertierende PS-, EPS- oder PRN-Datei darstellt
    * Ein `java.lang.String`-Objekt, das den Namen der zu konvertierenden Datei enthält
@@ -166,12 +166,12 @@ Konvertieren einer PostScript-Datei in ein PDF-Dokument mithilfe der Distiller S
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Mit diesem `BLOB`-Objekt wird die Datei gespeichert, die in ein PDF-Dokument konvertiert werden soll.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort und den Modus zum Öffnen der Datei darstellt.
    * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream`-Eigenschaft des Objekts `Length` abrufen.
-   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`Read`
+   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `Read`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`System.IO.FileStream`
    * Füllen Sie das `BLOB`-Objekt, indem Sie seine `MTOM`-Eigenschaft mit dem Inhalt des Byte-Arrays zuweisen.
 
 1. Rufen Sie den PDF-Erstellungsvorgang auf.
 
-   Rufen Sie die `DistillerServiceService`-Methode des Objekts auf und übergeben Sie die folgenden erforderlichen Werte:`CreatePDF2`
+   Rufen Sie die `CreatePDF2`-Methode des Objekts auf und übergeben Sie die folgenden erforderlichen Werte:`DistillerServiceService`
 
    * Das `BLOB`-Objekt, das die zu konvertierende PS-Datei darstellt
    * Eine Zeichenfolge, die den Pfadnamen der zu konvertierenden Datei enthält
@@ -187,7 +187,7 @@ Konvertieren einer PostScript-Datei in ein PDF-Dokument mithilfe der Distiller S
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Dateispeicherort des signierten PDF-Dokuments und den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Bytearray, das den Inhalt des `BLOB`-Objekts speichert, das von der `CreatePDF2`-Methode zurückgegeben wurde (der Ausgabeparameter). Füllen Sie das Bytearray, indem Sie den Wert des `BLOB`-Datenelements des Objekts `MTOM` abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie den Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter`-Methode des Objekts aufrufen und das Bytearray übergeben.`Write`
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `Write`-Methode des Objekts aufrufen und das Bytearray übergeben.`System.IO.BinaryWriter`
 
 **Siehe auch**
 
