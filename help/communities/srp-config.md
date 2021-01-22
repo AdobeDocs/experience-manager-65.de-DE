@@ -43,8 +43,8 @@ So wählen Sie eine andere Datenspeicherung als die Standard-JCR-Option aus:
 * Passend konfigurieren
 
    * Siehe Details zu [Auswahl von MSRP](msrp.md#select-msrp)
-   * Siehe Details zur Auswahl von DSRP[](dsrp.md#select-dsrp)
-   * Siehe Details zur Auswahl von ASRP[](asrp.md#select-asrp)
+   * Siehe Details zur Auswahl von DSRP](dsrp.md#select-dsrp)[
+   * Siehe Details zur Auswahl von ASRP](asrp.md#select-asrp)[
 
 * Klicken Sie auf **[!UICONTROL Übermitteln]**.
 
