@@ -70,7 +70,7 @@ Um einer Seite im Autorenmodus eine `Search Results`-Komponente hinzuzufügen, s
 
 und ziehen Sie die Komponente an die gewünschte Stelle auf der Seite. Im Gegensatz zur Komponente „Suche“ wird hier keine zweite Seite benötigt, da die Suchergebnisse auf der gleichen Seite angezeigt werden können.
 
-Wenn Sie die Suche an einer anderen Stelle auf der Website verwenden, kann diese eine Seite mit `Search Results` so konfiguriert werden, dass sie für eine oder alle Instanzen von `Search` `Result Page` &lt;a1/> ist.
+Wenn Sie die Suche an einer anderen Stelle auf der Website verwenden, kann diese eine Seite mit `Search Results` so konfiguriert werden, dass sie für eine oder alle Instanzen von `Search` `Result Page`  ist.
 
 Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](basics.md).
 
