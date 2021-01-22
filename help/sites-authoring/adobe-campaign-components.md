@@ -84,7 +84,7 @@ Sie können ein Bild entweder aus dem [Asset-Browser](/help/sites-authoring/auth
 >
 >Sie müssen Informationen in das Feld **Alt Text** eingeben, damit das Bild nicht gespeichert werden kann.
 
-Nach dem Hochladen des Bilds (und nicht zuvor) können Sie [Bearbeitung ](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) anstelle von &lt;a0/> verwenden, um das Bild nach Bedarf zu beschneiden/zu drehen:
+Nach dem Hochladen des Bilds (und nicht zuvor) können Sie [Bearbeitung ](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) anstelle von  verwenden, um das Bild nach Bedarf zu beschneiden/zu drehen:
 
 ![](do-not-localize/chlimage_1-10.png)
 
