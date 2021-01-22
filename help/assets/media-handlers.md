@@ -17,7 +17,7 @@ ht-degree: 50%
 
 Ein Workflow kann so konfiguriert werden, dass er automatisch ausgeführt wird, wenn ein Asset eines bestimmten MIME-Typs hochgeladen wird. Die Verarbeitungsschritte werden als eine Reihe von [!DNL Assets]-Media-Handlern definiert. [!DNL Experience Manager] bietet einige [integrierte Handler](#default-media-handlers) und zusätzliche Handler können entweder [speziell entwickelt](#creating-a-new-media-handler) oder definiert werden, indem der Prozess an ein [Befehlszeilen-Tool](#command-line-based-media-handler) delegiert wird.
 
-Media-Handler sind Dienste in [!DNL Assets], die bestimmte Aktionen für Assets ausführen. Wenn beispielsweise eine MP3-Audiodatei in [!DNL Experience Manager] hochgeladen wird, löst ein Workflow einen MP3-Handler aus, der die Metadaten extrahiert und eine Miniaturansicht generiert. Medien-Handler werden normalerweise in Verbindung mit Workflows verwendet. Die gängigsten MIME-Typen werden innerhalb von [!DNL Experience Manager] unterstützt. Spezielle Aufgaben können an Assets durchgeführt werden, indem Workflows erweitert bzw. erstellt, Medien-Handler erweitert bzw. erstellt oder Medien-Handler deaktiviert bzw. aktiviert werden.
+Media-Handler sind Dienste in [!DNL Assets], die bestimmte Aktionen für Assets ausführen. Wenn beispielsweise eine MP3-Audiodatei in [!DNL Experience Manager] hochgeladen wird, wird in einem Workflow ein MP3-Handler Trigger, der die Metadaten extrahiert und eine Miniaturansicht generiert. Medien-Handler werden normalerweise in Verbindung mit Workflows verwendet. Die gängigsten MIME-Typen werden innerhalb von [!DNL Experience Manager] unterstützt. Spezielle Aufgaben können an Assets durchgeführt werden, indem Workflows erweitert bzw. erstellt, Medien-Handler erweitert bzw. erstellt oder Medien-Handler deaktiviert bzw. aktiviert werden.
 
 >[!NOTE]
 >
@@ -509,7 +509,7 @@ Beispiel: Wenn [!DNL ImageMagick] auf dem Datenträger installiert ist, auf dem 
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
-Wenn der Workflow ausgeführt wird, gilt der Schritt nur für Assets, deren `image/gif` oder `mime:image/tiff` `mime-types` &lt;a2/> ist, und erstellt ein gedrehtes Bild des Originals, konvertiert es in JPG und erstellt drei Miniaturansichten mit den folgenden Abmessungen: 140 x 100, 48 x 48 und 10 x 250.
+Wenn der Workflow ausgeführt wird, gilt der Schritt nur für Assets, deren `image/gif` oder `mime:image/tiff` `mime-types`  ist, und erstellt ein gedrehtes Bild des Originals, konvertiert es in JPG und erstellt drei Miniaturansichten mit den folgenden Abmessungen: 140 x 100, 48 x 48 und 10 x 250.
 
 Verwenden Sie die folgenden [!UICONTROL Prozessargumente], um die drei Standardminiaturen mit [!DNL ImageMagick] zu erstellen:
 
