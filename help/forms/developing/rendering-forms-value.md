@@ -119,7 +119,7 @@ Rendern Sie ein Formular wertmäßig mit der Forms API (Java):
 
 1. Formular als Wert wiedergeben
 
-   Rufen Sie die `FormsServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`renderPDFForm`
+   Rufen Sie die `renderPDFForm`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`FormsServiceClient`
 
    * Ein leerer Zeichenfolgenwert. (Normalerweise erfordert dieser Parameter einen Zeichenfolgenwert, der den Namen des Formularentwurfs angibt.)
    * Ein `com.adobe.idp.Document`-Objekt, das den Formularentwurf enthält. Normalerweise ist dieser Parameterwert für Daten reserviert, die mit dem Formular zusammengeführt werden.
