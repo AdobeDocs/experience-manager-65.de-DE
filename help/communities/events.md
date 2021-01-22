@@ -1,8 +1,8 @@
 ---
 title: OSGi-Ereignis für Communities-Komponenten
 seo-title: OSGi-Ereignis für Communities-Komponenten
-description: OSGi-Ereignis werden gesendet, die asynchrone Listener auslösen können
-seo-description: OSGi-Ereignis werden gesendet, die asynchrone Listener auslösen können
+description: OSGi-Ereignis werden gesendet, die asynchrone Listener Trigger
+seo-description: OSGi-Ereignis werden gesendet, die asynchrone Listener Trigger
 uuid: 317e2add-689d-4c99-ae38-0703b6649cb7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -22,7 +22,7 @@ ht-degree: 5%
 
 ## Überblick {#overview}
 
-Wenn Mitglieder mit Communities-Funktionen interagieren, werden OSGi-Ereignis gesendet, die asynchrone Listener auslösen können, z. B. Benachrichtigungen oder Gamification (Scoring und Abzeichen).
+Wenn Mitglieder mit Communities-Funktionen interagieren, werden OSGi-Ereignis gesendet, die asynchrone Listener wie Benachrichtigungen oder Gamification (Scoring und Abzeichen) Trigger geben können.
 
 Die [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html)-Instanz einer Komponente zeichnet die Ereignis als `actions` auf, die für ein `topic` auftreten. Das SocialEvent enthält eine Methode, um eine `verb` zurückzugeben, die der Aktion zugeordnet ist. Es besteht eine *n-1*-Beziehung zwischen `actions` und `verbs`.
 
