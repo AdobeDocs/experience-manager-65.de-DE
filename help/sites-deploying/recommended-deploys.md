@@ -125,7 +125,7 @@ Die Vorteile:
 
 >[!NOTE]
 >
->Im obigen Diagramm werden AEM Server 3 und AEM Server 4 unter der Annahme einer Netzwerklatenz zwischen den AEM Servern in Data Center 2 und dem primären Knoten MongoDB in Data Center 1 mit einem inaktiven Status angezeigt, der höher ist als die hier beschriebene Anforderung. ](/help/sites-deploying/aem-with-mongodb.md#checklists)[ Wenn die maximale Latenzzeit mit den Anforderungen vereinbar ist, z. B. durch die Verwendung von Verfügbarkeitszonen, können auch die AEM-Server im Rechenzentrum 2 aktiv sein und einen aktiv-aktiven AEM-Cluster über mehrere Rechenzentren hinweg bilden.
+>Im obigen Diagramm werden AEM Server 3 und AEM Server 4 unter der Annahme einer Netzwerklatenz zwischen den AEM Servern in Data Center 2 und dem primären Knoten MongoDB in Data Center 1 mit einem inaktiven Status angezeigt, der höher ist als die hier beschriebene Anforderung. [](/help/sites-deploying/aem-with-mongodb.md#checklists) Wenn die maximale Latenzzeit mit den Anforderungen vereinbar ist, z. B. durch die Verwendung von Verfügbarkeitszonen, können auch die AEM-Server im Rechenzentrum 2 aktiv sein und einen aktiv-aktiven AEM-Cluster über mehrere Rechenzentren hinweg bilden.
 
 >[!NOTE]
 >
