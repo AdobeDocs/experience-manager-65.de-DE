@@ -45,7 +45,7 @@ Sie erstellen Variablen mithilfe des Abschnitts &quot;Variablen&quot;im Sidekick
 >
 >Workflows unterstützt nur das ISO8601-Format für Datumsvariablen.
 
-Für Dokument- und Formulardatenmodelldatentypen ist das AEM Forms-Add-On-Paket[ erforderlich.  ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)  Verwenden Sie den ArrayList-Datentyp, um variable Sammlungen zu erstellen. Sie können die ArrayList-Variable für alle primitiven und komplexen Datentypen erstellen. Erstellen Sie beispielsweise eine ArrayList-Variable und wählen Sie String als Untertyp aus, um mehrere Zeichenfolgenwerte mit der Variablen zu speichern.
+Für Dokument- und Formulardatenmodelldatentypen ist das AEM Forms-Add-On-Paket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) erforderlich.  [  Verwenden Sie den ArrayList-Datentyp, um variable Sammlungen zu erstellen. Sie können die ArrayList-Variable für alle primitiven und komplexen Datentypen erstellen. Erstellen Sie beispielsweise eine ArrayList-Variable und wählen Sie String als Untertyp aus, um mehrere Zeichenfolgenwerte mit der Variablen zu speichern.
 
 Führen Sie die folgenden Schritte aus, um eine Variable zu erstellen:
 
@@ -203,7 +203,7 @@ Verwenden Sie die folgenden APIs im ECMA-Skript, um Werte für vorhandene Variab
 | Formulardatenmodell | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
-Für die Datentypen &quot;Dokument&quot;und &quot;Formulardatenmodell&quot;ist das AEM Forms-Add-On-Paket[ erforderlich.](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
+Für die Datentypen &quot;Dokument&quot;und &quot;Formulardatenmodell&quot;ist das AEM Forms-Add-On-Paket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) erforderlich.[
 
 **Beispiel**
 
