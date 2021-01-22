@@ -169,7 +169,7 @@ Einige davon müssen Sie zur Zielgruppe in AEM die Adobe I/O-Integration abschli
 
 Zurück zum AEM können Sie die IMS-Konfiguration abschließen, indem Sie erforderliche Werte aus der Adobe I/O-Integration für die Zielgruppe hinzufügen:
 
-1. Kehren Sie zur unter AEM[ geöffneten IMS-Konfiguration zurück.](#configuring-an-ims-configuration-generating-a-public-key)
+1. Kehren Sie zur unter AEM](#configuring-an-ims-configuration-generating-a-public-key) geöffneten IMS-Konfiguration zurück.[
 1. Wählen Sie **Weiter** aus.
 
 1. Hier können Sie die [Details aus Adobe I/O](#details-stored-for-the-adobe-io-integration-project) verwenden:
