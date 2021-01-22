@@ -208,7 +208,7 @@ Inhalte, die in der AEM-Autoreninstanz erstellt werden, werden zunächst zur Ver
 
 >[!NOTE]
 >
->Wenn Sie die Replizierungs-URL nicht verwenden möchten, sondern stattdessen die öffentlich sichtbare URL verwenden möchten, können Sie die **Öffentliche URL** in der folgenden Konfigurationseinstellung im OSGi (**AEM Logo** > **Tools** Symbol > **Vorgänge** > **Web-Konsole** > &lt;a9/> > &lt;a6 10/>OSGi-Konfiguration **>** AEM Kampagne-Integration - Konfiguration **):**
+>Wenn Sie die Replizierungs-URL nicht verwenden möchten, sondern stattdessen die öffentlich sichtbare URL verwenden möchten, können Sie die **Öffentliche URL** in der folgenden Konfigurationseinstellung im OSGi (**AEM Logo** > **Tools** Symbol > **Vorgänge** > **Web-Konsole** > **> &lt;a6 10/>OSGi-Konfiguration** > **AEM Kampagne-Integration - Konfiguration**):
 **Öffentliche URL:** com.day.cq.mcm.Kampagne.impl.IntegrationConfigImpl#aem.mcm.Kampagne.publicUrl
 
 Dieser Schritt ist auch erforderlich, um bestimmte Autoreninstanzkonfigurationen in die Veröffentlichungsinstanz zu replizieren.
