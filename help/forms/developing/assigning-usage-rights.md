@@ -138,7 +138,7 @@ Anwenden von Verwendungsrechten auf ein PDF-Dokument mithilfe der Acrobat Reader
 1. Speichern Sie das PDF-Dokument mit aktivierten Verwendungsrechten.
 
    * Erstellen Sie ein `java.io.File`-Objekt und stellen Sie sicher, dass die Dateierweiterung .pdf ist.
-   * Rufen Sie die `com.adobe.idp.Document`-Methode des Objekts auf, um den Inhalt des `copyToFile`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `com.adobe.idp.Document`-Objekt verwenden, das von der `com.adobe.idp.Document`-Methode zurückgegeben wurde).`applyUsageRights`
+   * Rufen Sie die `copyToFile`-Methode des Objekts auf, um den Inhalt des `com.adobe.idp.Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `com.adobe.idp.Document`-Objekt verwenden, das von der `applyUsageRights`-Methode zurückgegeben wurde).`com.adobe.idp.Document`
 
 **Siehe auch**
 
@@ -192,7 +192,7 @@ Anwenden von Verwendungsrechten auf ein PDF-Dokument mithilfe der Acrobat Reader
 
    * Erstellen Sie ein Objekt `ReaderExtensionsOptionSpec`, indem Sie den Konstruktor verwenden. Dieses Objekt enthält Laufzeitoptionen, die vom Acrobat Reader DC Extensions-Dienst benötigt werden.
    * Weisen Sie das `UsageRights`-Objekt dem `ReaderExtensionsOptionSpec`-Datenelement des Objekts `usageRights` zu.
-   * Weisen Sie dem Datenmember des Objekts `ReaderExtensionsOptionSpec` einen Zeichenfolgenwert zu, der die Meldung angibt, die ein Benutzer beim Öffnen des PDF-Dokuments mit aktivierten Benutzerrechten in Adobe Reader sieht.`message`
+   * Weisen Sie dem Datenmember des Objekts `message` einen Zeichenfolgenwert zu, der die Meldung angibt, die ein Benutzer beim Öffnen des PDF-Dokuments mit aktivierten Benutzerrechten in Adobe Reader sieht.`ReaderExtensionsOptionSpec`
    * Wenden Sie Verwendungsrechte auf das PDF-Dokument an, indem Sie die `ReaderExtensionsServiceClient`-Objektmethode `applyUsageRights` aufrufen und die folgenden Werte übergeben:
 
       * Das `BLOB`-Objekt, das das PDF-Dokument enthält, auf das Verwendungsrechte angewendet werden.
@@ -207,7 +207,7 @@ Anwenden von Verwendungsrechten auf ein PDF-Dokument mithilfe der Acrobat Reader
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Dateispeicherort des PDF-Dokuments mit aktivierten Benutzerrechten darstellt.
    * Erstellen Sie ein Bytearray, das den Dateninhalt des `BLOB`-Objekts speichert, das von der `applyUsageRights`-Methode zurückgegeben wurde. Füllen Sie das Bytearray, indem Sie den Wert des `BLOB`-Datenelements des Objekts `MTOM` abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie den Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter`-Methode des Objekts aufrufen und das Bytearray übergeben.`Write`
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `Write`-Methode des Objekts aufrufen und das Bytearray übergeben.`System.IO.BinaryWriter`
 
 **Siehe auch**
 
@@ -293,7 +293,7 @@ Entfernen Sie mithilfe der Acrobat Reader DC Extensions-API (Java) Verwendungsre
 1. Wenden Sie Verwendungsrechte auf das PDF-Dokument an.
 
    * Erstellen Sie ein `java.io.File`-Objekt und stellen Sie sicher, dass die Dateierweiterung .PDF ist.
-   * Rufen Sie die `Document`-Methode des Objekts auf, um den Inhalt des `copyToFile`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `Document`-Objekt verwenden, das von der `Document`-Methode zurückgegeben wurde).`removeUsageRights`
+   * Rufen Sie die `copyToFile`-Methode des Objekts auf, um den Inhalt des `Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `Document`-Objekt verwenden, das von der `removeUsageRights`-Methode zurückgegeben wurde).`Document`
 
 **Siehe auch**
 
@@ -335,7 +335,7 @@ Entfernen Sie Verwendungsrechte aus einem PDF-Dokument mit aktivierten Verwendun
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des PDF-Dokuments verwendet, für das Verwendungsrechte entfernt wurden.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments und den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream`-Eigenschaft des Objekts `Length` abrufen.
-   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`Read`
+   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `Read`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`System.IO.FileStream`
    * Füllen Sie das `BLOB`-Objekt, indem Sie seine `MTOM`-Eigenschaft mit dem Inhalt des Byte-Arrays zuweisen.
 
 1. Entfernen Sie Verwendungsrechte aus dem PDF-Dokument.
@@ -426,8 +426,8 @@ Abrufen von Anmeldeinformationen mithilfe der Acrobat Reader DC Extensions-API (
 
 1. Entfernen Sie Verwendungsrechte aus dem PDF-Dokument.
 
-   * Rufen Sie Informationen über die Berechtigung ab, die zum Anwenden von Verwendungsrechten auf das PDF-Dokument verwendet wird, indem Sie die `ReaderExtensionsServiceClient`-Methode des Objekts aufrufen und das `getDocumentUsageRights`-Objekt übergeben, das das PDF-Dokument mit aktivierten Verwendungsrechten enthält. `com.adobe.idp.Document` Diese Methode gibt ein `GetUsageRightsResult`-Objekt zurück, das Anmeldeinformationen enthält.
-   * Rufen Sie das Datum ab, nach dem die Berechtigung nicht mehr gültig ist, indem Sie die `GetUsageRightsResult`-Methode des Objekts aufrufen. `getNotAfter` Diese Methode gibt ein `java.util.Date`-Objekt zurück, das das Datum darstellt, nach dem die Berechtigung nicht mehr gültig ist.
+   * Rufen Sie Informationen über die Berechtigung ab, die zum Anwenden von Verwendungsrechten auf das PDF-Dokument verwendet wird, indem Sie die `getDocumentUsageRights`-Methode des Objekts aufrufen und das `com.adobe.idp.Document`-Objekt übergeben, das das PDF-Dokument mit aktivierten Verwendungsrechten enthält. `ReaderExtensionsServiceClient` Diese Methode gibt ein `GetUsageRightsResult`-Objekt zurück, das Anmeldeinformationen enthält.
+   * Rufen Sie das Datum ab, nach dem die Berechtigung nicht mehr gültig ist, indem Sie die `getNotAfter`-Methode des Objekts aufrufen. `GetUsageRightsResult` Diese Methode gibt ein `java.util.Date`-Objekt zurück, das das Datum darstellt, nach dem die Berechtigung nicht mehr gültig ist.
    * Rufen Sie die Meldung ab, die in Adobe Reader beim Öffnen des PDF-Dokuments mit aktivierten Benutzerrechten angezeigt wird, indem Sie die `GetUsageRightsResult`-Objektmethode `getMessage` aufrufen. Diese Methode gibt einen Zeichenfolgenwert zurück, der die Meldung darstellt.
 
 **Siehe auch**
@@ -470,12 +470,12 @@ Abrufen von Anmeldeinformationen mit der Acrobat Reader DC Extensions-API (Webdi
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern eines PDF-Dokuments mit aktivierten Benutzerrechten verwendet.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments mit aktivierten Rechten und den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream`-Eigenschaft des Objekts `Length` abrufen.
-   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`Read`
+   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `Read`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`System.IO.FileStream`
    * Füllen Sie das `BLOB`-Objekt, indem Sie seine `MTOM`-Eigenschaft mit dem Inhalt des Byte-Arrays zuweisen.
 
 1. Entfernen Sie Verwendungsrechte aus dem PDF-Dokument.
 
-   * Rufen Sie Informationen über die Berechtigung ab, die zum Anwenden von Verwendungsrechten auf das PDF-Dokument verwendet wird, indem Sie die `ReaderExtensionsServiceClient`-Methode des Objekts aufrufen und das `getDocumentUsageRights`-Objekt übergeben, das das PDF-Dokument mit aktivierten Verwendungsrechten enthält. `com.adobe.idp.Document` Diese Methode gibt ein `GetUsageRightsResult`-Objekt zurück, das Anmeldeinformationen enthält.
+   * Rufen Sie Informationen über die Berechtigung ab, die zum Anwenden von Verwendungsrechten auf das PDF-Dokument verwendet wird, indem Sie die `getDocumentUsageRights`-Methode des Objekts aufrufen und das `com.adobe.idp.Document`-Objekt übergeben, das das PDF-Dokument mit aktivierten Verwendungsrechten enthält. `ReaderExtensionsServiceClient` Diese Methode gibt ein `GetUsageRightsResult`-Objekt zurück, das Anmeldeinformationen enthält.
    * Rufen Sie das Datum ab, nach dem die Berechtigung nicht mehr gültig ist, indem Sie den Wert des `GetUsageRightsResult`-Datenelements des Objekts `notAfter` abrufen. Der Datentyp dieses Datenelements ist `System.DateTime`.
    * Rufen Sie die Meldung ab, die beim Öffnen des PDF-Dokuments mit aktivierten Benutzerrechten in Adobe Reader angezeigt wird, indem Sie den Wert des `GetUsageRightsResult`-Datenelements des Objekts `message` abrufen. Der Datentyp dieses Datenelements ist eine Zeichenfolge.
    * Rufen Sie ab, wie oft die Berechtigung verwendet wird, indem Sie den Wert des `GetUsageRightsResult`-Datenelements des Objekts `useCount` abrufen. Der Datentyp dieses Datenelements ist eine Ganzzahl.
