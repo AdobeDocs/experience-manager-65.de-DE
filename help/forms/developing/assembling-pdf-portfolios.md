@@ -162,11 +162,11 @@ Stellen Sie ein PDF-Portfolio mithilfe der Assembler Service API (Java) zusammen
 1. Legen Sie Laufzeitoptionen fest.
 
    * Erstellen Sie ein `AssemblerOptionSpec`-Objekt, das Laufzeitoptionen mithilfe des Konstruktors speichert.
-   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie eine Methode aufrufen, die zum `AssemblerOptionSpec`-Objekt gehört. Um beispielsweise den Assembler-Dienst anzuweisen, bei einem Fehler mit der Verarbeitung eines Auftrags fortzufahren, rufen Sie die `AssemblerOptionSpec`-Methode des Objekts auf und übergeben Sie `setFailOnError`.`false`
+   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie eine Methode aufrufen, die zum `AssemblerOptionSpec`-Objekt gehört. Um beispielsweise den Assembler-Dienst anzuweisen, bei einem Fehler mit der Verarbeitung eines Auftrags fortzufahren, rufen Sie die `setFailOnError`-Methode des Objekts auf und übergeben Sie `false`.`AssemblerOptionSpec`
 
 1. Assemblieren Sie das Portfolio.
 
-   Rufen Sie die `AssemblerServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden erforderlichen Werte:`invokeDDX`
+   Rufen Sie die `invokeDDX`-Methode des Objekts auf und übergeben Sie die folgenden erforderlichen Werte:`AssemblerServiceClient`
 
    * Ein `com.adobe.idp.Document`-Objekt, das das zu verwendende DDX-Dokument darstellt
    * Ein `java.util.Map`-Objekt, das die zum Erstellen eines PDF-Portfolios erforderlichen Dateien enthält.
@@ -243,7 +243,7 @@ Assemblieren eines PDF-Portfolios mit der Assembler-Dienst-API (Webdienst):
 
 1. Assemblieren Sie das Portfolio.
 
-   Rufen Sie die `AssemblerServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`invokeDDX`
+   Rufen Sie die `invokeDDX`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`AssemblerServiceClient`
 
    * Ein `BLOB`-Objekt, das das DDX-Dokument darstellt
    * Das `MyMapOf_xsd_string_To_xsd_anyType`-Objekt, das die erforderlichen Dateien enthält
