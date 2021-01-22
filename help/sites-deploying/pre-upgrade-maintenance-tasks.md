@@ -324,7 +324,7 @@ Um dies zu verhindern, müssen Sie das Schema wie folgt aktualisieren:
 1. Fahren Sie die AEM Instanz herunter, die aktualisiert werden muss.
 1. Aktualisieren Sie das Schema der Datenbank. Bitte lesen Sie die Dokumentation für Ihren Datenbanktyp, um zu sehen, welche Werkzeuge Sie dazu benötigen.
 
-   Weitere Informationen dazu, wie Oak mit Schema-Upgrades umgeht, finden Sie auf dieser Seite auf der Apache-Website[.](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade)
+   Weitere Informationen dazu, wie Oak mit Schema-Upgrades umgeht, finden Sie auf dieser Seite auf der Apache-Website](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade).[
 
 1. Fahren Sie mit der AEM fort.
 
