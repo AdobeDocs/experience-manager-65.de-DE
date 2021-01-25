@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
 translation-type: tm+mt
-source-git-commit: 6396660b642fd78ac7f311fa416efe0e0d52a9e3
+source-git-commit: 838e194f699b0832839c80f4ba9503c9d5a15945
 workflow-type: tm+mt
 source-wordcount: '2721'
 ht-degree: 79%
@@ -85,7 +85,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
    <td><p>Alle neuen oder geänderten Workflow-Modelle müssen nach /conf/global/workflow/models migriert werden.</p>
     <ol>
-     <li>Stellen Sie die geänderten Workflow-Modelle in einer lokalen AEM 6.4-Entwicklungsinstanz bereit, sodass sie im vorherigen Speicherort vorhanden sind.</li>
+     <li>Stellen Sie die geänderten Workflow-Modelle in einer lokalen AEM 6.5-Entwicklungsinstanz bereit, sodass sie im vorherigen Speicherort vorhanden sind.</li>
      <li>Bearbeiten Sie das Workflow-Modell unter Verwendung des Editors für AEM Workflow-Modelle unter „AEM &gt; Tools &gt; Workflow &gt; Modelle“.</li>
      <li>Migration von modifizierten, von AEM bereitgestellten Workflow-Modellen
       <ol>
