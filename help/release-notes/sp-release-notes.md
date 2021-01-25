@@ -4,9 +4,9 @@ description: Spezifische Versionshinweise zu  [!DNL Adobe Experience Manager] 6.
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 65a92d86a34ea7796f515178622332d6fbe31a39
+source-git-commit: eec0e8f466c4a228b16ee2c1249052bfc3250dec
 workflow-type: tm+mt
-source-wordcount: '4255'
+source-wordcount: '4302'
 ht-degree: 5%
 
 ---
@@ -465,6 +465,8 @@ Im Folgenden finden Sie eine Liste von Funktionen, die mit [!DNL Experience Mana
 | Connectoren | Die Adobe JCR Connector for Microsoft SharePoint 2010 und Microsoft SharePoint 2013 wird für AEM 6.5 nicht mehr unterstützt. | Nicht zutreffend |
 
 ## Bekannte Probleme {#known-issues}
+
+* Wenn Probleme mit der Antwort [!DNL Experience Manager] aufgrund des gesperrten Komponenten-Registrierungszeitschalters auftreten, [installieren Sie dieses Paket](https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.scr/2.1.20). Die Lösung dieser Probleme soll in der nächsten [Experience Manager Service Pack-Version](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-on-prem-managed-services) enthalten sein.
 
 * Ignorieren Sie die folgenden Fehler in der Datei `error.log` während der Installation von Experience Manager 6.5.7.0:
 
