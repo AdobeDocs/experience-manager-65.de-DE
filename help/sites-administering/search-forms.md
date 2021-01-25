@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
+source-git-commit: 19faa273908e67a744e52d173a5352f0a52f7345
 workflow-type: tm+mt
 source-wordcount: '2060'
 ht-degree: 79%
@@ -412,7 +412,7 @@ Identisch mit dem
 
 ### Erstellen/Öffnen einer benutzerdefinierten Konfiguration {#creating-opening-a-customized-configuration}
 
-1. Navigieren Sie zu **Tools** > **Vorgänge** > **Suchformulare**.
+1. Navigieren Sie zu **Tools** > **Allgemein** > **Suchformulare**.
 
 1. Wählen Sie die Konfiguration aus, die Sie anpassen möchten.
 1. Über das Symbol **Bearbeiten** können Sie die Konfiguration für die Aktualisierung öffnen.
