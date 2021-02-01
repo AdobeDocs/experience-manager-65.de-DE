@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 4b09cd44-434e-4834-bc0d-c9c082a4ba5a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 5a99daa208d1d109d2736525fdca3accdcfb4dd1
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 93%
+source-wordcount: '788'
+ht-degree: 86%
 
 ---
 
@@ -97,7 +97,7 @@ Ein Workflow kann einen der folgenden Status aufweisen:
 * **WIRD AUSGEFÜHRT**: Die Workflow-Instanz wird ausgeführt.
 * **ABGESCHLOSSEN**: Die Workflow-Instanz wurde erfolgreich beendet.
 
-* **UNTERBROCHEN**: Die Workflow-Instanz wurde unterbrochen.
+* **AUSGESETZT**: Markiert den Workflow als ausgesetzt. Beachten Sie jedoch den Hinweis zur Vorsicht unten zu einem bekannten Problem mit diesem Status.
 * **ABGEBROCHEN**: Die Workflow-Instanz wurde beendet.
 * **ALT**: Die Fortführung der Workflow-Instanz erfordert, dass ein Auftrag im Hintergrund ausgeführt wird, allerdings ist der Auftrag nicht im System zu finden. Diese Situation kann auftreten, wenn es bei der Ausführung des Workflows zu einem Fehler kommt.
 
@@ -107,7 +107,12 @@ Ein Workflow kann einen der folgenden Status aufweisen:
 
 Je nach dem aktuellen Status können Sie Aktionen zur Ausführung von Workflow-Instanzen durchführen, wenn Sie beim normalen Fortschritt einer Workflow-Instanz eingreifen müssen:
 
-* **Aussetzen**: Hält die Ausführung des Workflows vorübergehend an. Das Aussetzen ist in Ausnahmefällen nützlich, wenn Sie nicht möchten, dass der Workflow fortgeführt wird – so zum Beispiel bei der Wartung. Durch das Aussetzen ändert sich der Workflow-Status zu „Unterbrochen“.
+* **Aussetzen**: Durch Aussetzen wird der Workflow-Status auf Ausgesetzt geändert. Siehe Vorsicht unten:
+
+>[!CAUTION]
+>
+>Das Kennzeichnen eines Workflow-Status als &quot;Aussetzen&quot;hat ein bekanntes Problem. In diesem Status ist es möglich, Aktionen für ausgesetzte Workflow-Elemente in einem Posteingang durchzuführen.
+
 * **Fortsetzen**: Startet einen unterbrochenen Workflow an demselben Punkt der Ausführung, an dem er ausgesetzt wurde, und verwendet dieselbe Konfiguration.
 * **Beenden**: Beendet die Workflow-Ausführung und ändert den Status in  **ABORTED**. Eine abgebrochene Workflow-Instanz kann nicht neu gestartet werden.
 
