@@ -6,10 +6,10 @@ user-guide-title: AEM 6.5 Communities-Benutzeranleitung
 breadcrumb-title: Communities-Anleitung
 user-guide-description: Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere Community-Funktionen.
 translation-type: tm+mt
-source-git-commit: d340f34704149c9e096aa6988bb3e3fda1caf3d7
+source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 30%
+source-wordcount: '501'
+ht-degree: 29%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 30%
 + Einführung in AEM Communities {#introduction}
    + [Communities Sites](administer-landing.md)
    + [Übersicht über AEM Communities](overview.md)
-   + [Versionshinweise zu AEM Communities](/help/release-notes/communities-release-notes.md)
+   + [Versionshinweise zu AEM Communities](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/communities-release-notes.html)
    + [Einstieg in AEM Communities](getting-started.md)
    + [Erste Schritte mit AEM Communities zur Aktivierung](getting-started-enablement.md)
    + [Ersteinrichtung](setup.md)
@@ -38,7 +38,7 @@ ht-degree: 30%
    + [Konfigurieren von Dispatcher für Communities](dispatcher.md)
 + Verwalten {#administer}
    + [Verwaltungsdienst für Benutzer und benutzergenerierte Inhalte in AEM Communities](user-ugc-management-service.md)
-   + [Communities Sites](administer-landing.md)
+   + [Communities Sites](https://experienceleague.adobe.com/docs/experience-manager-65/communities/introduction/administer-landing.html)
    + [Communities Konsolen](consoles.md)
    + [Analytics-Konfiguration für Communities-Funktionen](analytics.md)
    + [Konfiguration von Aktivierungsfunktionen](enablement.md)
@@ -165,4 +165,4 @@ ht-degree: 30%
    + [Aktivitätstrends](trends.md)
    + [Verwenden von einer Social-Tag-Cloud](tagcloud.md)
    + [Verwenden einer Abstimmung](voting.md)
-   + [Beispielseite erstellen](create-sample-page.md)
+   + [Beispielseite erstellen](https://experienceleague.adobe.com/docs/experience-manager-65/communities/develop/create-sample-page.html)
