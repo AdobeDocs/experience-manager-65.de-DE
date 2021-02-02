@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 translation-type: tm+mt
-source-git-commit: 9b65f7194dc648ba9a6dbc127bc8d5951f126269
+source-git-commit: 6ca333c64fcd7d3b91b1ae8ef98c53ed770479d4
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 87%
@@ -98,7 +98,24 @@ Manchmal wird die Meldung „AEM WCM running on http://localhost:port/“ im AEM
 
 Sollte das Problem durch keinen der Vorschläge gelöst werden können, überprüfen Sie die Protokolle, um herauszufinden, was passiert ist.
 
-## Fehlerbehebung bei Installationen mit einem Anwendungsserver  {#troubleshooting-installations-with-an-application-server}
+### Die Website wird nicht geladen oder schlägt gelegentlich mit Java 11 {#the-website-does-not-load-or-fails-intermittently-with-java11} fehl
+
+Es ist ein bekanntes Problem bei der Ausführung von AEM 6.5 auf Java 11 aufgetreten, bei dem die Website möglicherweise nicht zeitweise geladen wird oder fehlschlägt.
+
+In diesem Fall befolgen Sie bitte die folgende Problemumgehung:
+
+1. Öffnen Sie die Datei `sling.properties` unter dem Ordner `crx-quickstart/conf/`
+1. Suchen Sie die folgende Zeile:
+
+   `org.osgi.framework.bootdelegation=sun.,com.sun.`
+
+1. Ersetzen Sie ihn durch:
+
+   `org.osgi.framework.bootdelegation=sun.,com.sun.,jdk.internal.reflect,jdk.internal.reflect.*`
+
+1. Starten Sie die Instanz neu.
+
+## Fehlerbehebung bei Installationen mit einem Anwendungsserver {#troubleshooting-installations-with-an-application-server}
 
 ### Meldung „Seite nicht gefunden“ wird angezeigt, wenn eine Geometrixx Outdoors-Seite angefordert wird {#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}
 
@@ -130,20 +147,3 @@ Falls Ihre AEM-Installation externen Speicher nutzt, etwa einen Datenbankserver,
 
 Wenn Sie JSP-Dateien über JBoss im Experience Manager installieren oder aktualisieren und die entsprechenden Servlets nicht kompiliert werden, überprüfen Sie, ob der JBoss-JSP-Compiler richtig konfiguriert ist. Weitere Informationen finden Sie unter
 [Probleme bei der JSP-Kompilierung im Artikel JBoss](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html).
-
-### Die Website wird nicht geladen oder schlägt gelegentlich mit Java 11 {#the-website-does-not-load-or-fails-intermittently-with-java11} fehl
-
-Es ist ein bekanntes Problem bei der Ausführung von AEM 6.5 auf Java 11 aufgetreten, bei dem die Website möglicherweise nicht zeitweise geladen wird oder fehlschlägt.
-
-In diesem Fall befolgen Sie bitte die folgende Problemumgehung:
-
-1. Öffnen Sie die Datei `sling.properties` unter dem Ordner `crx-quickstart/conf/`
-1. Suchen Sie die folgende Zeile:
-
-   `org.osgi.framework.bootdelegation=sun.,com.sun.`
-
-1. Ersetzen Sie ihn durch:
-
-   `org.osgi.framework.bootdelegation=sun.,com.sun.,jdk.internal.reflect,jdk.internal.reflect.*`
-
-1. Starten Sie die Instanz neu.
