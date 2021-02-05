@@ -10,10 +10,10 @@ topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ade3747ba608164a792a62097b82c55626245891
+source-git-commit: 2d54d115529126162c92e9943a188d05159535f9
 workflow-type: tm+mt
-source-wordcount: '1022'
-ht-degree: 21%
+source-wordcount: '934'
+ht-degree: 23%
 
 ---
 
@@ -46,7 +46,6 @@ Sie können auch die Zwischenspeicherung adaptiver Formulare beim Dispatcher kon
 ### Voraussetzungen {#pre-requisites}
 
 * Aktivieren Sie die Option [Zusammenführen oder Vorausfüllen von Daten auf Client](prepopulate-adaptive-form-fields.md#prefill-at-client). Dadurch können eindeutige Daten für jede Instanz eines vorausgefüllten Formulars zusammengeführt werden.
-* [Aktivieren Sie &quot;flush agent&quot;für jede Instanz](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) im Veröffentlichungsmodus. Dadurch wird die Cache-Leistung für adaptive Formulare verbessert. Die Standard-URL von Flush-Agenten ist `http://[server]:[port]]/etc/replication/agents.publish/flush.html`.
 
 ### Überlegungen zum Zwischenspeichern adaptiver Formulare auf einem Dispatcher {#considerations}
 
@@ -63,7 +62,7 @@ Sie können auch die Zwischenspeicherung adaptiver Formulare beim Dispatcher kon
 
 Führen Sie die folgenden Schritte aus, um die Zwischenspeicherung adaptiver Formulare beim Dispatcher zu aktivieren und zu konfigurieren:
 
-1. Öffnen Sie die folgende URL für jede Instanz im Veröffentlichungsmodus Ihrer Umgebung und konfigurieren Sie den Replizierungsagenten:
+1. Öffnen Sie die folgende URL für jede Instanz im Veröffentlichungsmodus Ihrer Umgebung und [aktivieren Sie den Flush-Agent für Instanzen im Veröffentlichungsmodus Ihrer Umgebung](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
 1. [hinzufügen Sie Folgendes zu Ihrer Datei](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files) dispatcher.any:
@@ -143,17 +142,7 @@ Wenn Sie Bilder oder Videos über den Asset-Browser auswählen und zu einem adap
 
 Nach dem Veröffentlichen der Bilder und Videos müssen Sie die Veröffentlichung der adaptiven Formulare, die auf diese Assets verweisen, explizit rückgängig machen und veröffentlichen.
 
-### Einige adaptive Formulare, die Inhaltsfragmente oder Erlebnisfragmente enthalten, werden nicht automatisch aus dem Dispatcher-Cache {#content-or-experience-fragment-not-auto-invalidated} ungültig gemacht
-
-#### Problem {#issue2}
-
-Wenn Sie ein Inhaltsfragment oder ein Erlebnisfragment zu einem adaptiven Formular hinzufügen und diese Assets unabhängig bearbeitet und veröffentlicht werden, werden adaptive Formulare, die solche Assets enthalten, nicht automatisch vom Dispatcher-Cache ungültig gemacht.
-
-#### Lösung {#Solution2}
-
-Nachdem Sie aktualisierte Inhaltsfragmente oder Erlebnisfragmente veröffentlicht haben, heben Sie die Veröffentlichung der adaptiven Formulare, die diese Assets verwenden, ausdrücklich auf und veröffentlichen Sie sie.
-
-### Nur die erste Instanz eines adaptiven Formulars wird zwischengespeichert{#only-first-insatnce-of-adptive-forms-is-cached}
+### Es wird nur die erste Instanz eines adaptiven Formulars zwischengespeichert {#only-first-instance-of-adaptive-forms-is-cached}
 
 #### Problem {#issue3}
 
