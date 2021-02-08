@@ -1,12 +1,12 @@
 ---
-title: Einführung in [!DNL Adobe Experience Manager Assets].
+title: Einführung in [!DNL Adobe Experience Manager Assets]
 description: 'Erfahren Sie mehr über das digitale Asset-Management, seine Anwendungsfälle und das Angebot. [!DNL Adobe Experience Manager Asset] '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 130a03c821fd2a1e9ecda70039241720052a8920
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 38%
+source-wordcount: '868'
+ht-degree: 36%
 
 ---
 
@@ -38,7 +38,7 @@ Die grundlegende Benutzeroberfläche ist mit der von [!DNL Sites] identisch. Aus
 
 Berücksichtigen Sie bei der Entscheidung, ob ein Bild in das DAM-Repository eingefügt oder eine Bildkomponente verwendet werden soll, den Lebenszyklus des Bilds:
 
-* Wenn das Bild denselben Lebenszyklus wie die Seite hat, verwenden Sie die Bildkomponente.
+* Wenn das Bild denselben Lebenszyklus wie die Seite hat, verwenden Sie die Image-Komponente.
 * Wenn das Bild einen eigenen Lebenszyklus hat – beispielsweise, wenn Sie das Bild zweimal oder außerhalb von WCM verwenden –, verwenden Sie [!DNL Assets].
 
 ## Was sind digitale Assets? {#what-are-digital-assets}
@@ -67,11 +67,11 @@ Wenn Sie mit digitalen Assets in [!DNL Experience Manager] arbeiten, müssen Sie
 
 * **Darstellungen**: Eine Darstellung ist die binäre Darstellung eines Assets. [!DNL Assets] verfügen stets über eine primäre Darstellung, nämlich die der hochgeladenen Datei. Assets können über eine beliebige Anzahl an weiteren Darstellungen verfügen, die beispielsweise durch benutzerdefinierte Workflow-Schritte oder beim Hochladen eines Assets erstellt werden. Das Ausgabeformat kann verschieden sein, mit einer unterschiedlichen Auflösung, einem hinzugefügten Wasserzeichen oder anderen geänderten Merkmalen.
 
-* **Versionen**: Bei der Versionierung wird ein Schnappschuss digitaler Assets zu einem bestimmten Zeitpunkt erstellt. Sie können frühere Versionen von Assets wiederherstellen. Siehe [Versionierung in Assets](manage-assets.md#asset-versioning).
+* **Versionen**: Bei der Versionierung wird ein Schnappschuss digitaler Assets zu einem bestimmten Zeitpunkt erstellt. Sie können frühere Versionen von Assets wiederherstellen. Siehe [Versionierung in [!DNL Assets]](manage-assets.md#asset-versioning).
 
 * **Teilassets**: Unter-Assets sind Assets, aus denen ein Asset besteht, z. B. Ebenen in einer  [!DNL Adobe Photoshop] Datei oder Seiten in einer PDF-Datei. Unter [!DNL Assets] können Sie Teilassets wie Assets verwalten.
 
-### Arbeiten mit Assets {#how-to-work-with-assets}
+### Arbeiten mit digitalen Assets {#how-to-work-with-assets}
 
 Sie können für Assets oder Sammlungen Aktionen durchführen. Mit Aktionen können Assets, Sammlungen und Darstellungen erstellt oder geändert werden. Viele der grundlegenden Aktionen, die Sie für Assets durchführen - Hochladen, Löschen, Aktualisieren, Speichern von Teilassets - vorkonfigurierte Workflows des Triggers. Diese werden automatisch in [!DNL Assets] aktiviert und detailliert in [!DNL Assets]-Media-Handler beschrieben.
 
@@ -82,8 +82,13 @@ Die Aufgaben, die mit den vorkonfigurierten Workflows ausgeführt werden können
 * Ausgabeformate und Miniaturansichten für das Asset erstellen; gegebenenfalls einschließlich automatischer Größenanpassung und Zuschneiden.
 * Transkodieren Sie das Asset bei Bedarf. Beispielsweise werden Videos für Mobilgeräte und Verwendung im Netz mit 24 Bildern pro Sekunde transcodiert, für Downloads vorgesehene Videos hingegen mit 30 Bildern pro Sekunde. Audio für die mobile und die Web-Nutzung wird mit 128 Kbit/s transkodiert, Audio zum Download mit 192 Kbit/s.
 
-Sie können Workflows natürlich auch manuell anwenden. Eine Liste der Standard-Workflows finden Sie unter [Medien-Handler in  Assets](/help/assets/media-handlers.md).
+Sie können Workflows natürlich auch manuell anwenden. Eine Liste der Standard-Workflows finden Sie unter [Medien-Handler in  Assets](media-handlers.md).
 
-## [!DNL Experience Manager Assets] und [!DNL MediaLibrary] {#cq-dam-vs-cq-medialibrary}
+## [!DNL Experience Manager Assets] und [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
-Informationen zu den Unterschieden finden Sie unter [Assets und MediaLibrary](/help/assets/medialibrary.md).
+Informationen zu den Unterschieden finden Sie unter [Assets und Medienbibliothek](medialibrary.md).
+
+>[!MORELIKETHIS]
+>
+>* [Experience Manager Assets als moderner DAM](https://www.youtube.com/embed/PBwQqZgC-yo)
+
