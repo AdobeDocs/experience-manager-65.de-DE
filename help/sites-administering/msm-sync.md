@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3b64b1fe5d47f115681608f38e7e53d078c4698e
+source-git-commit: 31f546400f4c3335953d05b1df9394445b5feb56
 workflow-type: tm+mt
-source-wordcount: '2673'
-ht-degree: 82%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,11 @@ Führen Sie die folgenden Schritte durch, um zu steuern, wie und wann Live Copie
 
 In diesem Abschnitt finden Sie Informationen zu den installierten Rollout-Konfigurationen und den von ihnen verwendeten Synchronisierungsaktionen. Außerdem erfahren Sie, wie Sie bei Bedarf benutzerdefinierte Konfigurationen erstellen.
 
-### Rollout-Auslöser  {#rollout-triggers}
+>[!CAUTION]
+>
+>Das Aktualisieren oder Ändern einer Out-of-the-Box (installierte) Rollout-Konfiguration ist **nicht** empfohlen. Wenn eine benutzerdefinierte Live-Aktion erforderlich ist, sollte sie in einer benutzerdefinierten Rollout-Konfiguration hinzugefügt werden.
+
+### Rollout-Auslöser {#rollout-triggers}
 
 Jede Rollout-Konfiguration nutzt einen Rollout-Auslöser, der den Rollout auslöst. Rollout-Konfigurationen können einen der folgenden Auslöser verwenden:
 
