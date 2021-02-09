@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4e1f5d549df1db28a8679296afb4b758051d8f6c
+source-git-commit: c9c407ea7c0bff3d15934552cd709bec7f24e857
 workflow-type: tm+mt
-source-wordcount: '3298'
+source-wordcount: '3318'
 ht-degree: 75%
 
 ---
@@ -165,6 +165,11 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
    <td><p>Unterstützt</p> </td>
   </tr>
   <tr>
+   <td><p>Microsoft SQL Server 2019</p> </td>
+   <td><p>Repository-Mikrokernel</p> </td>
+   <td><p>Unterstützt</p> </td>
+  </tr>
+  <tr>
    <td>IBM DB2 11.1</td>
    <td>Repository-Mikrokernel</td>
    <td>R: Eingeschränkte Unterstützung</td>
@@ -207,6 +212,12 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
    <td>Microsoft SQL Server<br /> </td>
    <td><p>Microsoft® SQL Server JDBC-Treiber 6.2.1.0<br /> </p> <p>sqljdbc6.jar</p> </td>
    <td><p>AEM Forms on JEE-Installation im Paket enthalten.</p> </td>
+  </tr>
+  <tr>
+  <tr>
+   <td>Microsoft SQL Server<br /> </td>
+   <td><p>Microsoft® SQL Server JDBC-Treiber 8.2.2<br /> </p> <p>sqljdbc8.jar</p> </td>
+   <td><p>Von der Microsoft-Website herunterladen.</p> </td>
   </tr>
   <tr>
    <td>Oracle</td>
