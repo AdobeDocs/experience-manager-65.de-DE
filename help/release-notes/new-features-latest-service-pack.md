@@ -4,9 +4,9 @@ description: Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 65a92d86a34ea7796f515178622332d6fbe31a39
+source-git-commit: a24b66506440eb2153d5589e8c79dbfafb24df66
 workflow-type: tm+mt
-source-wordcount: '2770'
+source-wordcount: '2780'
 ht-degree: 5%
 
 ---
@@ -53,6 +53,10 @@ Sie können jetzt die Seitenverschiebungen und MSM-Rollouts als asynchrone Vorg�
 ### Verfügbarkeit der Option &quot;Zurücksetzen&quot;für jede Komponente im Layoutmodus {#reset-option-layout-mode}
 
 Sie können jetzt für jede Komponente im Layoutmodus eines adaptiven Formulars die Option zum Zurücksetzen verwenden. Wenn Sie ein mehrspaltiges Layout für ein Bedienfeld definieren, können Sie mit dieser Funktion einzelne Komponenten im Bedienfeld zurücksetzen. Siehe [Verwenden Sie den Layoutmodus, um die Größe von Komponenten](../../help/forms/using/resize-using-layout-mode.md#resize-components) zu ändern.
+
+### Unterstützung für Microsoft SQL Server 2019
+
+[!DNL Experience Manager Forms] unterstützt jetzt Microsoft SQL Server 2019.
 
 ## Schlüsselfunktionen in vorherigen [!DNL Experience Manager] 6.5 Service Packs {#key-features-previous-service-packs}
 
@@ -345,7 +349,7 @@ Zwischen dem 03. September 2020 und dem 26. November 2020 veröffentlichte die A
 
 * [Experience Manager Screens: Feature Pack 2011](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202011.html)
 
-* [Adobe Asset Link v2.2](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html)
+* [Adobe Asset Link v2.2](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html)
 
 >[!MORELIKETHIS]
 >
