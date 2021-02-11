@@ -1,34 +1,30 @@
 ---
-title: Adaptive Formulare mithilfe des XML-Schemas erstellen
-seo-title: Adaptive Formulare mithilfe des XML-Schemas erstellen
-description: Adaptive Formulare können ein XML-Schema als Formularmodell verwenden, sodass Sie vorhandene XSD-Vorlagen nutzen können, um adaptive Formulare zu erstellen. Sie können Schemaelemente per Drag & Drop von XSD in Ihr adaptives Formular verschieben.
-seo-description: Adaptive Formulare können ein XML-Schema als Formularmodell verwenden, sodass Sie vorhandene XSD-Vorlagen nutzen können, um adaptive Formulare zu erstellen. Sie können Schemaelemente per Drag & Drop von XSD in Ihr adaptives Formular verschieben.
-uuid: 84c35728-1b6c-4286-854b-51c03bfd0eac
-topic-tags: develop
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 0d6c12b3-3a70-48e9-a83b-974360a8b0b6
-docset: aem65
+title: Erstellen eines adaptiven Forms mit XML-Schema
+description: Erfahren Sie, wie Sie XML-Schema als Formularmodell in einem adaptiven Formular verwenden. Sie können vorhandene XSD-Vorlagen anwenden, um adaptive Formulare zu erstellen und Schema-Elemente per Drag & Drop aus XSD in Ihr adaptives Formular zu übernehmen. Machen Sie sich mit einem Beispiel für ein XML-Schema genauer vertraut, fügen Sie mithilfe von XML-Schema Sondereigenschaften zu Feldern hinzu und beschränken Sie die zulässigen Werte für eine adaptive Formularkomponente.
+feature: Adaptive Forms
+role: Business Practitioner, Developers
+level: Beginner, Imtermediate
 translation-type: tm+mt
-source-git-commit: 4ecf5efc568cd21f11801a71d491c3d75ca367fe
+source-git-commit: ec8a4c3941b5434f10ad0727be02fcf296cd4da7
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 92%
+source-wordcount: '1073'
+ht-degree: 85%
 
 ---
 
 
-# Adaptive Formulare mithilfe des XML-Schemas erstellen{#creating-adaptive-forms-using-xml-schema}
+# Adaptive Formulare mithilfe des XML-Schemas erstellen {#creating-adaptive-forms-using-xml-schema}
 
 ## Voraussetzungen {#prerequisites}
 
 Für das Authoring eines adaptiven Formulars mit einem XML-Schema als Formularmodell sind grundlegende Kenntnisse zu XML-Schemata erforderlich. Außerdem wird empfohlen, den folgenden Inhalt vor diesem Artikel durchzulesen.
 
-* [Erstellen eines adaptiven Formulars](../../forms/using/creating-adaptive-form.md)
+* [Erstellen eines adaptiven Formulars](creating-adaptive-form.md)
 * [XML-Schema](https://www.w3.org/TR/xmlschema-2/)
 
 ## Verwenden eines XML-Schemas als Formularmodell {#using-an-xml-schema-as-form-model}
 
-AEM Forms unterstützt die Erstellung eines adaptiven Formulars mit einem vorhandenen XML-Schema als Formularmodell. Dieses XML-Schema stellt die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden.
+[!DNL Experience Manager Forms] unterstützt die Erstellung eines adaptiven Formulars mit einem vorhandenen XML-Schema als Formularmodell. Dieses XML-Schema stellt die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden.
 
 Die Hauptfunktionen bei der Verwendung eines XML-Schemas sind die Folgenden:
 
@@ -293,7 +289,7 @@ Sie können die folgenden Einschränkungen zu XML-Schemaelementen hinzufügen, u
 
 **Woher weiß ich, welches Element in der Baumstruktur mit welchem XML-Element verknüpft ist?**
 
-Wenn Sie in der Inhaltssuche auf ein Element klicken, wird in einem Popup-Fenster ein Feldname und eine Eigenschaft mit der Bezeichnung `bindRef` angezeigt. Diese Eigenschaft ordnet das Baumstrukturelement dem Element oder Attribut im Schema zu.
+Wenn Sie in der Inhaltssuche auf ein Dublette-Element klicken, wird in einem Popupfenster ein Feldname und eine Eigenschaft mit der Bezeichnung `bindRef` angezeigt. Diese Eigenschaft ordnet das Baumstrukturelement dem Element oder Attribut im Schema zu.
 
 ![Ein bindref-Feld eines XML-Schemaelements](assets/dblclick.png)
 
@@ -305,7 +301,7 @@ Das Feld bindRef</code> zeigt die Verbindung zwischen einem Baumstrukturelement 
 
 **Warum kann ich nicht einzelne Elemente eines Teilformulars (Struktur aus einem komplexen Typ generiert) für wiederholbare Teilformulare ziehen (Wert von minOccours oder maxOccurs ist größer als 1)?**
 
-In einem wiederholbaren Teilformular müssen Sie das gesamte Teilformular verwenden. Wenn Sie nur einzelne Felder möchten, verwenden Sie die gesamte Struktur und löschen Sie unerwünschte Felder.
+In einem wiederholbaren Teilformular müssen Sie das Teilformular &quot;Complete&quot;verwenden. Wenn Sie nur einzelne Felder möchten, verwenden Sie die gesamte Struktur und löschen Sie unerwünschte Felder.
 
 **Ich habe eine lange komplexe Struktur in der Inhaltssuche. Wie kann ich ein bestimmtes Element suchen?**
 
