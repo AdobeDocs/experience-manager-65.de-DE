@@ -3,10 +3,10 @@ title: Erstellen und Konfigurieren von Asset Editor-Seiten
 description: Erfahren Sie, wie Sie benutzerdefinierte Asset-Editor-Seiten erstellen und mehrere Assets gleichzeitig bearbeiten können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 863d1bd3f0f188153fcbbb7256d3ac2e3b247f59
 workflow-type: tm+mt
-source-wordcount: '2120'
-ht-degree: 72%
+source-wordcount: '2125'
+ht-degree: 70%
 
 ---
 
@@ -268,7 +268,7 @@ Das Metadatenformular ist ein Formular mit Start- und Endaktion. Dazwischen nehm
 
 ![screen_shot_2012-04-23at22911pm](assets/screen_shot_2012-04-23at22911pm.png)
 
-1. Erstellen Sie eine Endaktion, indem Sie im Endbereich des Formulars auf **Bearbeiten** klicken. Beispielsweise können Sie eine Schaltfläche **Absenden** erstellen, damit Benutzer geänderte Metadaten übermitteln können. Sie können auch eine Schaltfläche **Zurücksetzen** hinzufügen, um den ursprünglichen Status der Metadaten wiederherzustellen.
+1. Erstellen Sie eine Endaktion, indem Sie im Endbereich des Formulars auf **Bearbeiten** klicken. Sie können beispielsweise eine Option **[!UICONTROL Senden]** erstellen, mit der Benutzer ihre Metadatenänderungen senden können. Optional können Sie eine Option **Zurücksetzen** hinzufügen, mit der die Metadaten auf ihren ursprünglichen Status zurückgesetzt werden.
 
 ![screen_shot_2012-04-23at23138pm](assets/screen_shot_2012-04-23at23138pm.png)
 
@@ -381,7 +381,7 @@ Die folgenden Aktionen stehen zur Verfügung:
 | [!UICONTROL Verweise] | Klicken Sie hier, um auf welchen Seiten anzuzeigen   das Asset verwendet wird. |
 | [!UICONTROL Versionierung] | Ermöglicht die Erstellung und Wiederherstellung   Versionen eines Assets. |
 
-1. Ziehen Sie die entsprechende Aktion in den Bereich **Aktionen** auf der Seite. Hierdurch wird eine Schaltfläche zum Ausführen dieser Aktion erstellt.
+1. Ziehen Sie die entsprechende Aktion in den Bereich **Aktionen** auf der Seite. Es wird eine Option erstellt, mit der die Aktion ausgeführt wird, die auf die Seite gezogen wird.
 
 ![chlimage_1-165](assets/chlimage_1-393.png)
 
