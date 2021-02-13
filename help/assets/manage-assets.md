@@ -4,23 +4,23 @@ description: Erfahren Sie mehr über die Asset-Management-Aufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
+source-git-commit: 863d1bd3f0f188153fcbbb7256d3ac2e3b247f59
 workflow-type: tm+mt
 source-wordcount: '9590'
-ht-degree: 60%
+ht-degree: 62%
 
 ---
 
 
 # Digitale Assets {#manage-digital-assets} verwalten
 
-In [!DNL Adobe Experience Manager Assets] können Sie mehr als nur Ihre Assets speichern und steuern. [!DNL Experience Manager] angebote zur Asset-Verwaltung auf Unternehmensebene. Sie können Assets bearbeiten und freigeben, erweiterte Suchen durchführen, mehrere Darstellungen von Dutzenden von unterstützten Dateiformaten erstellen, Versionen und digitale Rechte verwalten, die Verarbeitung von Assets automatisieren, Metadaten verwalten und steuern, mit Anmerkungen zusammenarbeiten und vieles mehr.
+In [!DNL Adobe Experience Manager Assets] können Sie mehr als nur Ihre Assets speichern und steuern. [!DNL Experience Manager] Angebote zur Asset-Verwaltung auf Unternehmensebene. Sie können Assets bearbeiten und freigeben, erweiterte Suchen durchführen, mehrere Darstellungen von Dutzenden von unterstützten Dateiformaten erstellen, Versionen und digitale Rechte verwalten, die Verarbeitung von Assets automatisieren, Metadaten verwalten und steuern, mit Anmerkungen zusammenarbeiten und vieles mehr.
 
 In diesem Artikel werden die grundlegenden Aufgaben zur Asset-Verwaltung wie Erstellen oder Hochladen beschrieben. Metadaten-Aktualisierungen; Kopieren, Verschieben und Löschen; Veröffentlichen, Rückgängigmachen der Veröffentlichung und Suchen von Assets. Informationen zur Benutzeroberfläche finden Sie unter [Erste Schritte mit der Assets-Benutzeroberfläche](/help/sites-authoring/basic-handling.md). Informationen zum Verwalten von Inhaltsfragmenten finden Sie unter [Inhaltsfragmente verwalten](/help/assets/content-fragments/content-fragments-managing.md)-Assets.
 
 ## Erstellen von Ordnern {#creating-folders}
 
-Wenn Sie eine Sammlung von Assets organisieren, etwa alle `Nature`-Aufnahmen, können Sie Ordner erstellen, um diese zu gruppieren. Mit Ordnern können Sie Assets kategorisieren und organisieren. [!DNL Experience Manager Assets]Bei müssen Sie Assets nicht in Ordner organisieren, um besser zu arbeiten.
+Wenn Sie eine Sammlung von Assets organisieren, etwa alle `Nature`-Aufnahmen, können Sie Ordner erstellen, um diese zu gruppieren. Mit Ordnern können Sie Assets kategorisieren und organisieren. Bei [!DNL Experience Manager Assets] müssen Sie Assets nicht in Ordner organisieren, um besser zu arbeiten.
 
 >[!NOTE]
 >
@@ -74,7 +74,7 @@ Bevor Sie ein Asset hochladen, stellen Sie sicher, dass es sich in einem [Format
 
 Die Größe, ab der ein Asset als großes Asset gilt, lässt sich konfigurieren. Sie können das System beispielsweise so konfigurieren, dass Assets über 1000 MB (anstatt 500 MB) als große Assets angesehen werden. In diesem Fall wird **[!UICONTROL Pause]** in der Fortschrittsleiste angezeigt, wenn Assets mit einer Größe von mehr als 1000 MB hochgeladen werden.
 
-Die Schaltfläche „Pause“ wird nicht angezeigt, wenn eine Datei, die größer ist als 1000 MB, mit einer Datei hochgeladen wird, die kleiner ist als 1000 MB. Wenn Sie jedoch den Upload der Datei abbrechen, die kleiner ist als 1000 MB, wird die Schaltfläche **[!UICONTROL Pause]** angezeigt.
+Die Option [!UICONTROL Pause] zeigt nicht an, wenn eine Datei mit einer Größe von mehr als 1000 MB mit einer Datei von weniger als 1000 MB hochgeladen wird. Wenn Sie den Dateiupload mit weniger als 1000 MB abbrechen, wird die Option **[!UICONTROL Pause]** angezeigt.
 
 Um die Größenbeschränkung zu ändern, konfigurieren Sie die `chunkUploadMinFileSize`-Eigenschaft des `fileupload`Knotens im CRX-Repository.
 
@@ -137,7 +137,7 @@ Fügen Sie keine Sonderzeichen in die Erweiterungen der Asset-Dateinamen ein.
 
 ![Das Dialogfeld &quot;Fortschritt beim Hochladen&quot;zeigt den Status der erfolgreich hochgeladenen Dateien und Dateien an, die nicht hochgeladen werden können](assets/bulk-upload-progress.png)
 
-Darüber hinaus zeigt die [!DNL Assets]-Benutzeroberfläche das letzte hochgeladene Asset oder den Ordner an, den Sie zuerst erstellt haben.
+Darüber hinaus zeigt die [!DNL Assets]-Benutzeroberfläche das zuletzt hochgeladene Asset oder den Ordner an, den Sie zuerst erstellt haben.
 
 Wenn Sie den Upload abbrechen, bevor die Dateien hochgeladen sind, unterbricht [!DNL Assets] den Upload der aktuellen Datei und aktualisiert den Inhalt. Dateien, die bereits hochgeladen wurden, werden jedoch nicht gelöscht.
 
@@ -198,7 +198,7 @@ Klicken Sie auf **[!UICONTROL Abbrechen]** neben der Dauer, um einen aktiven Upl
 | Nach dem Hochladen veröffentlichen |  | Veröffentlicht Assets automatisch nach dem Hochladen. |
 | In belieb. Ordner Assets mit ident. Namen unabh. von Erweit. überschreiben |  | Wählen Sie diese Option aus, wenn hochgeladene Dateien vorhandene Dateien mit denselben Namen ersetzen sollen. Der Name dieser Option kann möglicherweise anders lauten, je nach den Einstellungen in **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Allgemeine Einstellungen]** > **[!UICONTROL Zur Anwendung hochladen]** > **[!UICONTROL Bilder überschreiben]**. |
 | Zip- oder Tar-Dateien beim Hochladen dekomprimieren |  |  |
-| Auftragsoptionen |  | Klicken Sie auf **[!UICONTROL Auftragsoptionen]**, um das Dialogfeld [!UICONTROL Upload-Auftragsoptionen] zu öffnen und Optionen auszuwählen, die sich auf den gesamten Upload-Auftrag auswirken. Diese Optionen sind für alle Dateitypen gleich.<br>Sie können über die Seite „Allgemeine Programmeinstellungen“ Standardoptionen für das Hochladen von Dateien auswählen. Um diese Seite zu öffnen, wählen Sie **[!UICONTROL Einstellung]** > **[!UICONTROL Anwendungseinstellungen]**. Klicken Sie auf die Schaltfläche **[!UICONTROL Standardmäßige Upload-Optionen]**, um das Dialogfeld [!UICONTROL Upload-Auftragsoptionen] zu öffnen. |
+| Auftragsoptionen |  | Klicken Sie auf **[!UICONTROL Auftragsoptionen]**, um das Dialogfeld [!UICONTROL Upload-Auftragsoptionen] zu öffnen und Optionen auszuwählen, die sich auf den gesamten Upload-Auftrag auswirken. Diese Optionen sind für alle Dateitypen gleich.<br>Sie können über die Seite „Allgemeine Programmeinstellungen“ Standardoptionen für das Hochladen von Dateien auswählen. Um diese Seite zu öffnen, wählen Sie **[!UICONTROL Einstellung]** > **[!UICONTROL Anwendungseinstellungen]**. Wählen Sie die Option **[!UICONTROL Standardmäßige Upload-Optionen]**, um das Dialogfeld [!UICONTROL Upload-Auftragsoptionen] zu öffnen. |
 |  | Wann | Wählen Sie „Einmalig“ oder „Wiederkehrend“ aus. Zum Einrichten eines wiederkehrenden Auftrags wählen Sie eine Wiederholungsoption („Täglich“, „Wöchentlich“, „Monatlich“ oder „Benutzerdefiniert“), um anzugeben, wie oft der FTP-Upload-Auftrag wiederholt werden soll. Dann geben Sie nach Bedarf die Planungsoptionen an. |
 |  | Unterordner einschließen | Laden Sie alle Unterordner im hochzuladenden Ordner hoch. Die Namen des hochgeladenen Ordners und der darin enthaltenen Unterordner werden automatisch in [!DNL Experience Manager Assets] eingegeben. |
 |  | Optionen für das Zuschneiden | Um die Seiten eines Bildes manuell zu beschneiden, wählen Sie im Menü „Beschneiden“ die Option „Manuell“ aus. Dann geben Sie die Anzahl von Pixeln ein, die an einer oder jeder Seite des Bildes abgeschnitten werden sollen. Um wie viel das Bild beschnitten wird, hängt von der ppi-Einstellung (Pixel per Inch; Pixel pro Zoll) in der Bilddatei ab. Beispiel: Wenn das Bild 150 ppi aufweist und Sie 75 in die Textfelder für oben, rechts, unten und links eingeben, wird ein halber Zoll von jeder Seite abgeschnitten.<br> Zum automatischen Beschneiden der Leerraumpixel eines Bildes öffnen Sie das Menü „Beschneiden“, wählen Sie „Manuell“ und geben Sie zum Beschneiden der Seiten die Pixelwerte in die Felder „Oben“, „Rechts“, „Unten“ und „Links“ ein. Sie können im Menü „Beschneiden“ auch „Zuschneiden“ und anschließend folgende Optionen auswählen:<br> **Beschneiden basierend auf** <ul><li>**Farbe** : Wählen Sie die Option &quot;Farbe&quot;. Wählen Sie anschließend im Menü „Ecke“ die Bildecke mit der Farbe aus, die am besten der Leerraumfarbe entspricht, die Sie entfernen möchten.</li><li>**** Transparenz – Wählen Sie die Option „Transparenz“.<br> **Toleranz** : Ziehen Sie den Schieberegler, um eine Toleranz von 0 bis 1 festzulegen. Beim Beschneiden basierend auf Farbe geben Sie 0 an, damit Pixel nur abgeschnitten werden, wenn sie exakt der Farbe entsprechen, die Sie in der Bildecke ausgewählt haben. Werte, die näher an 1 liegen, lassen eine größere Farbdifferenz zu.<br>Für das Zuschneiden auf der Grundlage der Transparenz geben Sie den Wert 0 an, damit Pixel nur dann abgeschnitten werden, wenn sie transparent sind. Werte, die näher an 1 liegen, lassen eine größere Transparenz zu.</li></ul><br>Beachten Sie, dass diese Optionen für das Beschneiden zerstörungsfrei sind. |
@@ -399,7 +399,7 @@ Gehen Sie wie folgt vor, um ein Asset mit der Tastatur Vorschau:
 
 1. Um das Asset nach einer bestimmten Laufzeit zu deaktivieren, wählen Sie das Datum/den Zeitpunkt mit der Datumsauswahl neben dem Feld **[!UICONTROL Ausschaltzeit]**. Das Deaktivierungsdatum sollte nach dem Aktivierungsdatum für ein Asset liegen. Nach der [!UICONTROL Off Time] sind ein Asset und seine Darstellungen weder über die [!DNL Assets]-Webschnittstelle noch über die HTTP-API verfügbar.
 
-1. Wählen Sie im Feld **[!UICONTROL Tags]** ein oder mehrere Tags aus. Um ein benutzerdefiniertes Tag hinzuzufügen, geben Sie den Namen des Tags in das Feld ein und wählen Sie `Enter`. Das neue Tag wird unter [!DNL Experience Manager] gespeichert. [!DNL YouTube] erfordert Tags zum Veröffentlichen. Siehe [Videos auf YouTube](video.md#publishing-videos-to-youtube) veröffentlichen.
+1. Wählen Sie im Feld **[!UICONTROL Tags]** ein oder mehrere Tags aus. Um ein benutzerdefiniertes Tag hinzuzufügen, geben Sie den Namen des Tags in das Feld ein und wählen Sie `Enter`. Das neue Tag wird in [!DNL Experience Manager] gespeichert. [!DNL YouTube] erfordert Tags zum Veröffentlichen. Siehe [Videos auf YouTube](video.md#publishing-videos-to-youtube) veröffentlichen.
 
    >[!NOTE]
    >
@@ -442,11 +442,11 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
    >
    >Wenn Sie die Schnellaktion [!UICONTROL Kopieren] verwenden, können Sie immer nur ein Asset gleichzeitig kopieren.
 
-1. Navigieren Sie zum Speicherort, in den Sie die Assets kopieren möchten.
+1. Navigieren Sie zum Speicherort, an den Sie die Assets kopieren möchten.
 
    >[!NOTE]
    >
-   >Wenn Sie ein Asset am selben Speicherort kopieren, generiert [!DNL Experience Manager] automatisch eine Variation des Namens. Wenn Sie beispielsweise ein Asset mit dem Titel `Square` kopieren, generiert [!DNL Experience Manager] automatisch den Titel für die Kopie mit dem Namen `Square1`.
+   >Wenn Sie ein Asset an denselben Speicherort kopieren, generiert [!DNL Experience Manager] automatisch eine Variante des Namens. Beispiel: Wenn Sie ein Asset mit dem Namen `Square` kopieren, generiert [!DNL Experience Manager] automatisch den Namen `Square1` für die Kopie.
 
 1. Klicken Sie in der Symbolleiste auf die Option **[!UICONTROL Asset einfügen]** ![Einfügen in der Assets-Symbolleiste ](assets/do-not-localize/paste.png). Assets werden dann an diesen Speicherort kopiert.
 
@@ -518,7 +518,7 @@ Wenn Sie Assets durch Ziehen verschieben, wird der Assistent [!UICONTROL Asset v
 
    >[!NOTE]
    >
-   >Standardmäßig zeigt [!DNL Assets] nicht die ursprüngliche Darstellung des Assets im Modus &quot;Vorschau&quot;an. Als Administrator können Sie Überlagerungen verwenden, um [!DNL Assets] so zu konfigurieren, dass Originaldarstellungen im Modus &quot;Vorschau&quot;angezeigt werden.
+   >Standardmäßig zeigt [!DNL Assets] im Vorschaumodus nicht die ursprüngliche Ausgabedarstellung des Assets an. Wenn Sie ein Administrator sind, können Sie Überlagerungen verwenden, um [!DNL Assets] so zu konfigurieren, dass ursprüngliche Ausgabedarstellungen im Vorschaumodus angezeigt werden.
 
 1. Wählen Sie eine Ausgabedarstellung aus, um sie anzuzeigen oder zu löschen.
 
@@ -569,7 +569,7 @@ So löschen Sie ein Asset oder einen Ordner mit einem Asset:
    * Wenn das Asset Referenzen enthält, werden Sie durch eine Fehlermeldung darüber informiert, dass **auf eines oder mehrere Assets verwiesen wird. Sie können**[!UICONTROL  Löschen erzwingen ]**oder**[!UICONTROL  Abbrechen ]**auswählen.**
    >[!NOTE]
    >
-   >* Um die eingehenden Verweise von anderen Seiten aufzulösen oder zu entfernen, aktualisieren Sie die entsprechenden Verweise, bevor Sie ein Asset löschen. Deaktivieren Sie außerdem die Schaltfläche „Löschen erzwingen“ mithilfe einer Überlagerung, um zu verhindern, dass Benutzer referenzierte Assets löschen und fehlerhafte Links hinterlassen.
+   >* Um die eingehenden Verweise von anderen Seiten aufzulösen oder zu entfernen, aktualisieren Sie die entsprechenden Verweise, bevor Sie ein Asset löschen. Deaktivieren Sie außerdem die Option zum erzwungenen Löschen mithilfe einer Überlagerung, um Benutzer daran zu hindern, referenzierte Assets zu löschen und fehlerhafte Links zu belassen.
    >* Es ist möglich, einen *Ordner* zu löschen, der ausgecheckte Asset-Dateien enthält. Bevor Sie einen Ordner löschen, stellen Sie sicher, dass keine digitalen Assets von Benutzern ausgecheckt werden.
 
 
@@ -628,7 +628,7 @@ Siehe [Herunterladen von Assets von Experience Manager](/help/assets/download-as
 
 ## Geschlossene Benutzergruppe {#closed-user-group}
 
-Eine geschlossene Benutzergruppe (CUG) wird verwendet, um den Zugriff auf bestimmte Asset-Ordner zu beschränken, die von [!DNL Experience Manager] veröffentlicht wurden. Wenn Sie eine CUG für einen Ordner erstellen, wird der Zugriff auf diesen Ordner (einschließlich Ordner-Assets und Unterordnern) auf zugewiesene Mitglieder und Gruppen beschränkt. Um auf einen Ordner zuzugreifen, müssen Benutzer mit ihren Sicherheitsanmeldedaten angemeldet sein.
+Eine geschlossene Benutzergruppe (Closed User Group, CUG) wird verwendet, um den Zugriff auf bestimmte aus [!DNL Experience Manager] veröffentlichte Asset-Ordner zu beschränken. Wenn Sie eine CUG für einen Ordner erstellen, wird der Zugriff auf diesen Ordner (einschließlich Ordner-Assets und Unterordnern) auf zugewiesene Mitglieder und Gruppen beschränkt. Um auf einen Ordner zuzugreifen, müssen Benutzer mit ihren Sicherheitsanmeldedaten angemeldet sein.
 
 CUGs stellen eine zusätzliche Möglichkeit dar, den Zugang zu Ihren Assets zu beschränken. Sie können auch eine Anmeldeseite für den Ordner konfigurieren.
 
@@ -637,16 +637,16 @@ CUGs stellen eine zusätzliche Möglichkeit dar, den Zugang zu Ihren Assets zu b
 
    ![hinzufügen Benutzer in geschlossenen Benutzergruppen](assets/add_user.png)
 
-1. Um einen Anmeldebildschirm anzuzeigen, wenn Benutzer auf den Ordner zugreifen, wählen Sie die Option **[!UICONTROL Aktivieren]** aus. Wählen Sie dann den Pfad zu einer Anmeldeseite in [!DNL Experience Manager] und speichern Sie die Änderungen.
+1. Um einen Anmeldebildschirm anzuzeigen, wenn Benutzer auf den Ordner zugreifen, wählen Sie die Option **[!UICONTROL Aktivieren]** aus. Wählen Sie anschließend den Pfad zur Anmeldeseite in [!DNL Experience Manager] aus und speichern Sie die Änderungen.
 
    ![Anmeldeseite aktivieren und auswählen, die beim Ordner mit Benutzerzugriff angezeigt werden soll](assets/login_page.png)
 
    >[!NOTE]
    >
-   >Wenn Sie den Pfad zu einer Anmeldeseite nicht angeben, zeigt [!DNL Experience Manager] die Standard-Anmeldeseite in der Veröffentlichungsinstanz an.
+   >Wenn Sie den Pfad zur Anmeldeseite nicht angeben, zeigt [!DNL Experience Manager] die standardmäßige Anmeldeseite in der Veröffentlichungsinstanz an.
 
 1. Veröffentlichen Sie den Ordner und versuchen Sie, über die Veröffentlichungsinstanz darauf zuzugreifen. Es wird ein Anmeldebildschirm angezeigt.
-1. Wenn Sie Mitglied der CUG sind, geben Sie Ihre Anmeldedaten ein. Der Ordner wird angezeigt, nachdem [!DNL Experience Manager] Sie authentifiziert hat.
+1. Wenn Sie Mitglied der CUG sind, geben Sie Ihre Anmeldedaten ein. Nachdem Sie von [!DNL Experience Manager] authentifiziert wurden, wird der Ordner angezeigt.
 
 ## Suchen von Assets   {#assetsearch}
 
@@ -677,7 +677,7 @@ Weitere Informationen finden Sie unter [Ansicht und Auswahl der Ressourcen](/hel
 
 ## Bearbeiten von Bildern {#editing-images}
 
-Mit den Bearbeitungswerkzeugen in der [!DNL Assets]-Oberfläche können Sie kleine Bearbeitungsaufträge für Bild-Assets ausführen. Sie können Bilder beschneiden, drehen, spiegeln und auf andere Arten bearbeiten. Sie können auch Imagemaps zu den Assets hinzufügen.
+Mit den Bearbeitungswerkzeugen in der Oberfläche von [!DNL Assets] können Sie kleine Bearbeitungsaktionen in Bild-Assets durchführen. Sie können Bilder beschneiden, drehen, spiegeln und auf andere Arten bearbeiten. Sie können auch Imagemaps zu den Assets hinzufügen.
 
 >[!NOTE]
 >
