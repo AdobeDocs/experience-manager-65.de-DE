@@ -1,12 +1,12 @@
 ---
 title: Barrierefreiheit in  [!DNL Experience Manager Assets]
-description: Erkennen Sie, wie Barrierefreiheitsfunktionen in [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] Benutzern mit Behinderungen helfen.
+description: Erfahren Sie, wie die Funktionen für die Barrierefreiheit in [!DNL Adobe Experience Manager] 6.5 [!DNL Assets]  Benutzern mit Behinderungen helfen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e056d25cf16d79e8eadc80b9cb17b60b2ba8d7e1
+source-git-commit: 863d1bd3f0f188153fcbbb7256d3ac2e3b247f59
 workflow-type: tm+mt
 source-wordcount: '1919'
-ht-degree: 49%
+ht-degree: 90%
 
 ---
 
@@ -29,26 +29,26 @@ Possible topics to cover in this article are below.
 
 # Barrierefreiheitsfunktionen in [!DNL Adobe Experience Manager Assets] {#accessibility-in-aem-assets}
 
-[!DNL Adobe Experience Manager] Ersteller und Herausgeber von Inhalten können beeindruckende Erlebnisse im Web bereitstellen. Adobe bemüht sich, die Schöpfer mit Behinderungen einzubeziehen, indem die Zugänglichkeit von [!DNL Experience Manager] verbessert wird. Die Software wird kontinuierlich erweitert, um den Anforderungen aller Benutzertypen gerecht zu werden und die weltweiten Standards einzuhalten, zu denen Personen mit Sehbehinderungen, Hörgeschäften, Mobilitäten oder anderen Beeinträchtigungen gehören.
+[!DNL Adobe Experience Manager] ermöglicht es Erstellern und Herausgebern von Inhalten, beeindruckende Erlebnisse im Web bereitzustellen. Adobe ist bestrebt, Entwickler mit Behinderungen einzubeziehen, indem die Barrierefreiheit von [!DNL Experience Manager] verbessert wird. Die Software wird kontinuierlich verbessert, um die Bedürfnisse aller Arten von Benutzern zu erfüllen und die weltweiten Standards einzuhalten, die Personen mit visuellen, auditiven, Mobilitäts- oder anderen Beeinträchtigungen einschließen.
 
-[!DNL Experience Manager] veröffentlicht Konformitätsinformationen, die die Standards, die es einhält, beschreiben, die Barrierefreiheitsmerkmale des Produkts skizzieren und den Grad der Konformität beschreiben. Die Berichte zur Barrierefreiheitskonformität helfen [!DNL Experience Manager] Benutzern, den Grad der Einhaltung verschiedener Standards zu verstehen. Die Erweiterungen in [!DNL Assets] ermöglichen es allen Benutzern, die Schnittstellen einfach über Tastatur, Bildschirmlesehilfen, Vergrößerungen und andere Hilfstechnologien zu verwenden.
+[!DNL Experience Manager] veröffentlicht Informationen zur Konformität, die die eingehaltenen Standards beschreiben, die Funktionen für Barrierefreiheit im Produkt skizzieren und den Grad der Konformität erläutern. Die Konformitätsberichte zur Barrierefreiheit helfen den Benutzern von [!DNL Experience Manager], den Grad der Einhaltung verschiedener Standards zu verstehen. Mit den in [!DNL Assets] vorgenommenen Verbesserungen können alle Benutzer die Benutzeroberflächen problemlos über Tastatur, Bildschirmleser, Lupen und andere Hilfstechnologien verwenden.
 
 [!DNL Experience Manager] bietet variierende Unterstützung für die folgenden Standards:
 
 * [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/).
 * [Überarbeiteter Abschnitt 508 des Rehabilitationsgesetzes](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines).
-* [Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA) von W3C](https://www.w3.org/WAI/standards-guidelines/aria/).
+* [Accessibility Initiative – Accessible Rich Internet Applications (WAI-ARIA) von W3C](https://www.w3.org/WAI/standards-guidelines/aria/).
 * [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549).
 
-Informationen zum Lesen eines Berichts mit Details zur Kompatibilitätsstufe finden Sie auf der Seite [Barrierefreiheitskonformitätsbericht](https://www.adobe.com/accessibility/compliance.html) (ACR).
+Einen Bericht mit Details zum Grad der Konformität finden Sie auf der Seite [Konformitätsbericht zur Barrierefreiheit](https://www.adobe.com/accessibility/compliance.html) (ACR).
 
 Informationen zum Zugriff auf [!DNL Dynamic Media] finden Sie unter [Barrierefreiheit in [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 
 ## Hilfstechnologien {#at-support}
 
-Benutzer mit Behinderungen sind häufig auf Hardware und Software angewiesen, um auf Webinhalte zuzugreifen und Softwareprodukte zu verwenden. Diese Werkzeuge werden als Hilfstechnologien bezeichnet. [!DNL Experience Manager Assets] kann mit folgenden Arten von Hilfstechnologien (AT) arbeiten, wenn die Kernfunktionen der Software verwendet werden:
+Benutzer mit Behinderungen verlassen sich häufig auf Hardware und Software, um auf Web-Inhalte zuzugreifen und Software-Produkte zu verwenden. Diese Werkzeuge werden als Hilfstechnologien bezeichnet. [!DNL Experience Manager Assets] kann mit den folgenden Arten von Hilfstechnologien (AT) arbeiten, wenn die Kernfunktionen der Software verwendet werden:
 
-* Bildschirmlesehilfen und Vergrößerungssoftware.
+* Bildschirmlesehilfen und Bildschirmlupe.
 * Spracherkennungssoftware.
 * Verwendung der Tastatur – Navigation und Tastaturbefehle.
 * Hilfs-Hardware, einschließlich Switch-Steuerungen, aktualisierbarer Braille-Displays und anderer Computer-Eingabegeräte.
@@ -59,9 +59,9 @@ Benutzer mit Behinderungen sind häufig auf Hardware und Software angewiesen, um
 In [!DNL Experience Manager] decken die Funktionen für Barrierefreiheit zwei wichtige Anforderungen von [!DNL Experience Manager]-Benutzern und ihren Kunden ab.
 
 * Für Entwickler und Ersteller von Inhalten gibt es Funktionen zum Erstellen und Veröffentlichen von barrierefreien Inhalten, die wiederum von ihren Kunden und Website-Besuchern genutzt werden. Menschen mit Behinderungen nutzen die Inhalte mithilfe von Hilfstechnologien. Weitere Informationen finden Sie unter [Richtlinien für Barrierefreiheit im Web](/help/managing/web-accessibility.md).
-* [!DNL Experience Manager] ermöglicht es Benutzern und Administratoren mit Behinderungen außerdem, auf die Benutzeroberfläche und Steuerelemente zuzugreifen, um Inhalte zu erstellen und zu verwalten. Menschen mit Behinderungen können mithilfe von Hilfstechnologien die [!DNL Assets]-Funktion navigieren, nutzen und verwalten.
+* Mit [!DNL Experience Manager] können Benutzer und Administratoren mit Behinderungen auch auf Benutzeroberflächen und Steuerelemente zugreifen, um Inhalte zu erstellen und zu verwalten. Menschen mit Behinderungen können mithilfe von Hilfstechnologien die [!DNL Assets]-Funktion navigieren, nutzen und verwalten.
 
-Die Kernfunktionen in [!DNL Assets] sind leichter zugänglich als zuvor und werden regelmäßig aktualisiert, um die Erfüllung globaler Standards zu verbessern. Die CRUD-Vorgänge in [!DNL Assets] verfügen über einen gewissen Grad an Barrierefreiheit. DAM-Workflows wie das Hinzufügen, Verwalten, Suchen und Verteilen von Assets sind durch Tastaturbefehle, Sprachausgaben, Farbkontrast usw. barrierefrei.
+Die Kernfunktionen in [!DNL Assets] sind leichter zugänglich als zuvor und werden regelmäßig aktualisiert, um die Erfüllung globaler Standards zu verbessern. Die CRUD-Vorgänge in [!DNL Assets] bieten einen gewissen Grad an Barrierefreiheit. DAM-Workflows wie das Hinzufügen, Verwalten, Suchen und Verteilen von Assets sind durch Tastaturbefehle, Sprachausgaben, Farbkontrast usw. barrierefrei.
 
 ## Unterstützung für die Verwendung der Tastatur {#keyboard-use}
 
@@ -69,27 +69,27 @@ Viele Elemente der Benutzeroberfläche, die mit einem Zeiger angeklickt oder bea
 
 <!-- TBD items:
 
-* The button/menu to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into ‘basic handling’ info aka article to ‘understand and use the workspace’.
+* The option to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into ‘basic handling’ info aka article to ‘understand and use the workspace’.
 * How to open and browse through the profile popup dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into ‘basic handling’ info aka article to ‘understand and use the workspace’. What about setting preferences and impersonating a user?
-* Using the [!DNL Experience Manager] tag browser and operating the buttons like delete tag? This info can go into ‘basic handling’ info aka article to ‘understand and use the workspace’.
+* Using the [!DNL Experience Manager] tag browser and operating the options like delete tag? This info can go into ‘basic handling’ info aka article to ‘understand and use the workspace’.
 * Read-only form fields can be focused with the keyboard. Can users tab to these fields to understand the contents and are they able to copy text from the fields?
 -->
 
 ### Tastaturbefehle in [!DNL Assets] {#keyboard-shortcuts}
 
-Die folgenden Aktionen in [!DNL Assets] funktionieren mit den aufgelisteten Tastaturbefehlen. Die meisten Tastaturbefehle, die für [!DNL Experience Manager]-Konsolen gelten, gelten auch für [!DNL Assets]. Siehe [Tastaturbefehle für Konsolen](/help/sites-authoring/keyboard-shortcuts.md#keyboard-shortcuts). Erfahren Sie, wie Sie [die Tastaturbefehle aktivieren oder deaktivieren](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
+Die folgenden Aktionen in [!DNL Assets] funktionieren mit den aufgelisteten Tastaturbefehlen. Die meisten Tastaturbefehle, die für [!DNL Experience Manager]-Konsolen gelten, gelten auch für [!DNL Assets]. Weitere Informationen finden Sie unter [Tastaturbefehle für Konsolen](/help/sites-authoring/keyboard-shortcuts.md#keyboard-shortcuts). Erfahren Sie, wie Sie [die Tastaturbefehle aktivieren oder deaktivieren](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
 
 | Benutzeroberfläche oder Szenario | Tastaturbefehl | Aktion |
 |---|---|---|
-| Spalten-Ansicht in der [!DNL Assets]-Benutzeroberfläche | Nach-oben- und Nach-unten-Taste | Navigieren Sie zu Dateien und Ordnern in derselben Hierarchie. |
-| Spalten-Ansicht in der [!DNL Assets]-Benutzeroberfläche | Nach-links- und Nach-rechts-Taste | Navigieren Sie zu Dateien und Ordnern über oder unter dem aktuellen Ordner. |
+| Spaltenansicht in der [!DNL Assets]-Benutzeroberfläche | Nach-oben- und Nach-unten-Taste | Navigieren Sie zu Dateien und Ordnern in derselben Hierarchie. |
+| Spaltenansicht in der [!DNL Assets]-Benutzeroberfläche | Nach-links- und Nach-rechts-Taste | Navigieren Sie zu Dateien und Ordnern über oder unter dem aktuellen Ordner. |
 | Durchsuchen von Ordnern in [!DNL Assets] | `/` | Rufen Sie die Suche auf, indem Sie das Omnisearch-Feld öffnen. |
-| [!DNL Assets] Konsole | ` | Seitenleisten umschalten |
-| [!DNL Assets] Konsole | `Alt + 1` | Öffnen Sie die Inhaltsstruktur. |
-| [!DNL Assets] Konsole | `Alt + 2` | Öffnen Sie die linke Leiste [!UICONTROL Navigation]. |
-| [!DNL Assets] Konsole | `Alt + 3` | Zeigen Sie die [!UICONTROL Zeitleiste] eines ausgewählten Assets an. |
-| [!DNL Assets] Konsole | `Alt + 4` | Öffnen Sie Live Copy-Verweise des ausgewählten Assets. |
-| [!DNL Assets] Konsole | `Alt + 5` | Suchen und Suchen von Beginn im ausgewählten Ordner. |
+| [!DNL Assets]-Konsole | ` | Seitenleisten umschalten |
+| [!DNL Assets]-Konsole | `Alt + 1` | Öffnen Sie die Inhaltsstruktur. |
+| [!DNL Assets]-Konsole | `Alt + 2` | Öffnen Sie die linke Leiste [!UICONTROL Navigation]. |
+| [!DNL Assets]-Konsole | `Alt + 3` | Zeigen Sie die [!UICONTROL Zeitleiste] eines ausgewählten Assets an. |
+| [!DNL Assets]-Konsole | `Alt + 4` | Öffnen Sie Live Copy-Verweise des ausgewählten Assets. |
+| [!DNL Assets]-Konsole | `Alt + 5` | Suchen und Suchen von Beginn im ausgewählten Ordner. |
 | Asset oder Ordner ist ausgewählt | Rücktaste | Löschen Sie das ausgewählte Asset oder den ausgewählten Ordner. |
 | Asset oder Ordner ist ausgewählt | `p` | Öffnen Sie die Eigenschaftenseite des ausgewählten Assets. |
 | Asset oder Ordner ist ausgewählt | `e` | Bearbeiten Sie das ausgewählte Asset. |
@@ -98,17 +98,17 @@ Die folgenden Aktionen in [!DNL Assets] funktionieren mit den aufgelisteten Tast
 | Asset oder Ordner ist ausgewählt | `Esc` | Deaktivieren Sie die Auswahl. |
 | Das Dialogfeld wird geöffnet und befindet sich im Fokus. | `Esc` | Schließen Sie das Dialogfeld. |
 | Innerhalb eines Ordners in DAM | `Ctrl + v` | Fügen Sie das kopierte Asset ein. |
-| [!DNL Assets] Konsole | `Ctrl + A` | Wählen Sie alle Assets aus. |
+| [!DNL Assets]-Konsole | `Ctrl + A` | Wählen Sie alle Assets aus. |
 | Asset-Eigenschaftenseiten | `Ctrl + S` | Speichern Sie die Änderungen. |
-| [!DNL Assets] Konsole | `?` | Zeigen Sie eine Liste der Tastaturbefehle an. |
+| [!DNL Assets]-Konsole | `?` | Zeigen Sie eine Liste der Tastaturbefehle an. |
 
 ## Anmelden bei und Navigieren in der [!DNL Assets]-Benutzeroberfläche {#login}
 
-Benutzer können die Tastatur verwenden, um zum Anmeldefeld zu navigieren und es auszufüllen und sich anzumelden. Die Fehlermeldungen aufgrund falscher Kombinationen aus Benutzername und Kennwort auf der Anmeldeseite werden von Bildschirmlesehilfen jedes Mal, wenn der Fehler auftritt, angekündigt.
+Benutzer können die Tastatur verwenden, um zum Anmeldefeld zu navigieren, es auszufüllen und sich anzumelden. Die Fehlermeldungen aufgrund falscher Kombinationen aus Benutzername und Kennwort auf der Anmeldeseite werden von Bildschirmlesehilfen jedes Mal, wenn der Fehler auftritt, angekündigt.
 
-Nach der Anmeldung können DAM-Benutzer mithilfe der Tastatur in der [!DNL Assets]-Benutzeroberfläche navigieren. Die Elemente der Benutzeroberfläche, wie die linke Leiste, die Menüs, das Profil, die Suchleiste, die Dateien und Ordner sowie die Administrations- und Konfigurationseinstellungen, können über die Tastatur navigiert werden. Die Navigationsreihenfolge der Tastatur verläuft von links nach rechts und von oben nach unten. Beim Navigieren mit einer Tastatur wird eine Option, die im Fokus aktiviert werden kann, mit einem besseren Farbkontrast hervorgehoben und von einer Bildschirmlesehilfe kommentiert. Gegebenenfalls wird der Status der fokussierten Optionen im Menü - z. B. erweitert, reduziert und gemischt - von einer Bildschirmlesehilfe angekündigt. Darüber hinaus gibt die Bildschirmlesehilfe den Zweck der Option an, mit der eine Aktion durchgeführt werden kann, anstatt beispielsweise das Erscheinungsbild oder die Platzierung der Benutzeroberfläche.
+Nach der Anmeldung können DAM-Benutzer über die Tastatur in der [!DNL Assets]-Benutzeroberfläche navigieren. Die Elemente der Benutzeroberfläche, wie die linke Leiste, Menüs, Benutzerprofil, Suchleiste, Dateien und Ordner sowie die Administrations- und Konfigurationseinstellungen, können über die Tastatur navigiert werden. Die Navigationsreihenfolge der Tastatur verläuft von links nach rechts und von oben nach unten. Beim Navigieren mit einer Tastatur wird jede ausführbare Option beim Fokussieren mit einem höheren Farbkontrast hervorgehoben und von einer Sprachausgabe kommentiert. Gegebenenfalls wird der Status – beispielsweise erweitert, reduziert und gemischt – der fokussierten Optionen im Menü von einem Bildschirmleser angesagt. Darüber hinaus gibt die Bildschirmlesehilfe den Zweck der Option an, mit der eine Aktion durchgeführt werden kann, anstatt beispielsweise das Erscheinungsbild oder die Platzierung der Benutzeroberfläche.
 
-Wenn ein Benutzer die Profil- oder Hilfe-Option aus dem Menü erweitert, gibt die Bildschirmlesehilfe die entsprechende Option oder den entsprechenden Status an. Wenn ein Benutzer die Benutzerprofiloption erweitert, können die verfügbaren Optionen über eine Tastatur ausgewählt werden. Ein Administrator kann beispielsweise einen anderen Benutzer imitieren. Wenn ein Benutzer über die Option [!UICONTROL Hilfe] nach einer Zeichenfolge sucht, gibt ein Erzähler &quot;Suchhilfe&quot;an, dass eine Suche ausgeführt wird.
+Wenn ein Benutzer die Profil- oder Hilfe-Option aus dem Menü erweitert, gibt die Bildschirmlesehilfe die entsprechende Option oder den entsprechenden Status an. Wenn ein Benutzer die Benutzerprofiloption erweitert, können die verfügbaren Optionen über eine Tastatur ausgewählt werden. Ein Administrator kann beispielsweise die Identität eines anderen Benutzers annehmen. Wenn ein Benutzer über die Option [!UICONTROL Hilfe] nach einer Zeichenfolge sucht, gibt die Sprachausgabe „Hilfe bei der Suche“ aus, um anzugeben, dass eine Suche ausgeführt wird.
 
 <!-- TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
 
@@ -117,7 +117,7 @@ Wenn ein Benutzer die Profil- oder Hilfe-Option aus dem Menü erweitert, gibt di
 *Figure: Navigating through the options at the top of [!DNL Experience Manager] user interface using `Tab` key.*
 -->
 
-## Durchsuchen von Assets und Ansicht der zugehörigen Informationen {#browse}
+## Durchsuchen von Assets und Anzeigen der zugehörigen Informationen {#browse}
 
 In der [!DNL Assets]-Benutzeroberfläche können Benutzer die Tastatur verwenden, um die Liste vorhandener digitaler Assets im DAM-Repository zu durchsuchen, ein Asset als Vorschau anzuzeigen oder herunterzuladen, die erzeugten Ausgabedarstellungen anzuzeigen, Ansichten zu wechseln, die Chronik und den Versionsverlauf anzuzeigen, Kommentare und Verweise anzuzeigen sowie Metadaten anzuzeigen und zu verwalten.
 
@@ -130,7 +130,7 @@ In [!DNL Experience Manager] header section, when navigating in browse mode, scr
   * The Searching Help status message that is displayed when user enters a search string in Search for Help field under Help option
   * The error message if incorrect value is entered in Impersonate as field under User option and focus correctly moves to the text field (NPR-33804).
 
-Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessible through keyboard, due to which user cannot trigger close button through keyboard press in version preview dialog. After fix, user can close dialog through close button using keyboard.
+Review CQ-4282133 before adding - Close option in a coral-dialog wasn't accessible through keyboard, due to which user cannot trigger close option through keyboard press in version preview dialog. After fix, user can close dialog through close option using keyboard.
 
 * CQ-4273122 - Assets of video/audio type will have aria-label in format "Multimedia player: <Title>" so users relying on screen-reader will get to know that they are video/audio assets.
 -->
@@ -140,12 +140,12 @@ Beim Durchsuchen des Asset-Repositorys wird Barrierefreiheit durch folgende Funk
 * Die Sprachausgabe trägt Textalternativen vor, die den Zweck oder die Funktionalität von Symbolen anstelle ihrer Namen darstellen.
 * Benutzer können die interaktiven Optionen der Benutzeroberfläche in der Referenzliste der Assets mithilfe von Tastenkombinationen aufrufen und fokussieren.
 * Die Elemente in den einzelnen Zeilen der Listenansicht werden von Sprachausgaben als Elemente derselben Zeile vorgetragen.
-* Wenn Sie mit der `Tab`-Taste navigieren, kann der Fokus zur Schließoption in der Vorschau wechseln.
+* Wenn Sie mit der `Tab`-Taste navigieren, kann der Fokus auf die Option zum Schließen in der Versionsvorschau verschoben werden.
 * Wenn Sie zum Durchsuchen die Tastatur verwenden, weisen die hervorgehobenen ausführbaren Optionen der Benutzeroberfläche einen auffälligeren visuellen Fokus mit erhöhtem Kontrast auf. Dadurch wird der fokussierte Bereich für den Benutzer leichter erkennbar.
 * Bei Verwendung der `Esc`-Taste zum Entfernen der Schnellzugriffssymbole aus der Miniaturansicht wird der Tastaturfokus nicht vom zuletzt fokussierten Element entfernt.
-* Wenn ein Asset ausgewählt ist, wird durch Auswahl des Tastaturbefehls `Alt + 4` die Liste [!UICONTROL References] in der linken Leiste geöffnet. Mit der `Tab`-Taste können Benutzer durch die Nicht-Null-Referenzeinträge navigieren. Wenn Sie nur die Nicht-Null-Referenzeinträge durchsuchen, sparen Sie auch Arbeitsaufwand und Tastenanschläge.
-* Kommentare zu einem Asset sind in der Asset-Zeitleiste verfügbar. Es ist verfügbar, wenn über eine Tastatur oder einen Tastaturbefehl auf die linke Leiste zugegriffen wird.
-* [!UICONTROL Die ] Einstellungen für Ansichten  [!DNL Experience Manager] sind über eine Tastatur verfügbar. Die Benutzer können mithilfe der Pfeiltasten durch die verfügbaren Kartengrößen navigieren und durch die Pfeiltasten navigieren, um durch andere Elemente in der Ansicht &quot;Einstellungen für Ansichten&quot;zu navigieren und andere Elemente festzulegen.
+* Wenn ein Asset ausgewählt ist, wird durch Auswahl des Tastaturbefehls `Alt + 4` die Liste [!UICONTROL Referenzen] in der linken Leiste geöffnet. Mithilfe der `Tab`-Taste können Benutzer durch die Referenzeinträge navigieren, die nicht gleich null sind. Wenn Sie nur die Referenzeinträge durchsuchen, die nicht gleich null sind, sparen Sie auch Arbeitsaufwand und Tastenanschläge.
+* Kommentare zu einem Asset sind in der Asset-Zeitleiste verfügbar. Sie ist verfügbar, wenn über eine Tastatur oder einen Tastaturbefehl auf die linke Leiste zugegriffen wird.
+* Die [!UICONTROL Anzeigeeinstellungen] in [!DNL Experience Manager] sind über eine Tastatur zugänglich. Benutzer können mithilfe der Pfeiltasten durch die verfügbaren Kartengrößen sowie durch die Registerkarten navigieren und in der Ansicht „Anzeigeeinstellungen“ andere Elemente auswählen.
 
 <!-- TBD: Gradually, as more enhancements are done in these categories, add more content.
 
@@ -160,35 +160,35 @@ Beim Durchsuchen des Asset-Repositorys wird Barrierefreiheit durch folgende Funk
 
 ## Verwalten digitaler Assets {#manage-assets}
 
-Viele Asset-Management-Aufgaben wie CRUD-Vorgänge, das Herunterladen eines Assets und das Hinzufügen von Metadaten stehen in unterschiedlichem Umfang zur Verfügung. [!DNL Assets] ermöglicht Ihnen die Ausführung der Aufgaben mithilfe verschiedener Hilfstechnologien, z. B. einer Bildschirmlesehilfe und einer Tastatur.
+Viele Asset-Management-Aufgaben wie CRUD-Vorgänge, das Herunterladen von Assets und das Hinzufügen von Metadaten sind in unterschiedlichem Umfang verfügbar. [!DNL Assets] ermöglicht Ihnen die Ausführung der Aufgaben mithilfe verschiedener Hilfstechnologien, z. B. einer Bildschirmlesehilfe und einer Tastatur.
 
 Sehen Sie sich ein Video an, um zu erfahren, wie Sie mit der Tastatur das [Repository durchsuchen und ein Asset herunterladen](https://youtu.be/K3dgqMRQJys) können.
 
 Bei Metadatenvorgängen, die in der Regel von Rollen wie Marketing-Experten und Administratoren ausgeführt werden, verbessern folgende Funktionen die Barrierefreiheit:
 
-* Die Option [!UICONTROL Speichern und schließen][!UICONTROL  auf der Seite „Asset-Eigenschaften“ kann jetzt über die Tastatur aufgerufen werden.]
-* Bildschirmlesehilfen geben die Optionen zum Löschen der ausgewählten Tags auf der Registerkarte [!UICONTROL Einfach] des Assets [!UICONTROL Eigenschaften] an.
-* Benutzer können das Popup-Dialogfeld &quot;Datepicker&quot;mit einer Tastatur verwenden. Das Element der Benutzeroberfläche &quot;Datepicker&quot;dient zum Festlegen von Ein- und Ausschaltzeiten und zum Auswählen des Datums.
-* Die Funktion zum Ziehen mit der Tastatur funktioniert in [!UICONTROL Metadaten-Schema-Editor] im Durchsuchen-Modus der Bildschirmlesehilfe korrekt.
-* Ein Benutzer kann den Fokus mithilfe der Tastatur in das Feld Hinzufügen Benutzer oder Gruppe unter [!UICONTROL Geschlossene Benutzergruppe] auf der Registerkarte [!UICONTROL Berechtigungen] des Ordners [!UICONTROL Eigenschaften] verschieben.
+* Die Option [!UICONTROL Speichern und schließen] auf der Seite [!UICONTROL Asset-Eigenschaften] kann jetzt über die Tastatur aufgerufen werden.
+* Bildschirmlesehilfen geben die Optionen zum Löschen der ausgewählten Tags auf der Registerkarte [!UICONTROL Allgemein] des Assets [!UICONTROL Eigenschaften] an.
+* Benutzer können das Popup-Dialogfeld zur Datumsauswahl mit einer Tastatur verwenden. Das Benutzeroberflächenelement zur Datumsauswahl wird zum Einstellen von Ein- und Ausschaltzeiten und zum Auswählen von Daten verwendet.
+* Die Funktion zum Ziehen mit der Tastatur funktioniert im [!UICONTROL Metadatenschema-Editor] im Durchsuchenmodus der Bildschirmlesehilfe korrekt.
+* Ein Benutzer kann den Fokus mithilfe der Tastatur in das Feld „Benutzer hinzufügen“ oder „Gruppe hinzufügen“ unter [!UICONTROL Geschlossene Benutzergruppe] auf der Registerkarte [!UICONTROL Berechtigungen] von [!UICONTROL Ordnereigenschaften] verschieben.
 
 ## Suchen nach digitalen Assets {#search-assets}
 
-Eine schnelle und nahtlose Suche nach Assets sorgt für eine höhere Inhaltsgeschwindigkeit. Anwendungsfälle mit hoher Inhaltsgeschwindigkeit sind Teil der Kernfunktionalität von [!DNL Assets]. Um eine Suche über die Omnisearch-Suchleiste zu starten, können Benutzer die Tastaturbefehle `/` oder `Tab` zusammen mit Sprachausgaben verwenden, um die Suchoption rasch zu finden. Die Bildschirmlesehilfe beschreibt den Namen der Option als &quot;Suchschaltfläche&quot;, wenn der Fokus auf der Suchoption ![search option](assets/do-not-localize/search_icon.png) liegt. Benutzer können `Return` auswählen, um das Feld &quot;Omniture Search&quot;zu öffnen. Die Sprachausgabe sagt nicht nur das in das Suchfeld eingegebene Keyword, sondern auch die von [!DNL Experience Manager Assets] angebotenen Vorschläge an. Benutzer können eine Kombination aus Pfeiltasten, `Return` und `Tab` nutzen, um auf die verschiedenen Optionen zuzugreifen und eine Suche auszulösen.
+Eine schnelle und nahtlose Suche nach Assets sorgt für eine höhere Inhaltsgeschwindigkeit. Anwendungsfälle mit hoher Inhaltsgeschwindigkeit sind Teil der Kernfunktionalität von [!DNL Assets]. Um eine Suche über die Omnisearch-Suchleiste zu starten, können Benutzer die Tastaturbefehle `/` oder `Tab` zusammen mit Sprachausgaben verwenden, um die Suchoption rasch zu finden. Die Bildschirmlesehilfe sagt den Namen der Option als Suchschaltfläche an, wenn der Fokus auf der ![Suchoption](assets/do-not-localize/search_icon.png) liegt. Benutzer können das Omnisearch-Feld durch Auswahl der Taste `Return` öffnen. Die Sprachausgabe sagt nicht nur das in das Suchfeld eingegebene Keyword, sondern auch die von [!DNL Experience Manager Assets] angebotenen Vorschläge an. Benutzer können eine Kombination aus Pfeiltasten, `Return` und `Tab` nutzen, um auf die verschiedenen Optionen zuzugreifen und eine Suche auszulösen.
 
-Die Suchfunktion ist über folgende Funktionen verfügbar:
+Die Suchfunktion ist mit folgenden Funktionen verfügbar:
 
 * Der Seitentitel, so er einer Sprachausgabe zur Verfügung steht, hilft dabei, die Seite als Asset-Suchseite zu identifizieren.
-* Benutzer suchen im Feld Omniture nach Assets. Benutzer können sie entweder mit der Tastaturnavigation oder dem Tastaturbefehl `/` öffnen.
-* Beginn können den Suchbegriff eingeben und dann die Auto-Vorschläge mit den Pfeiltasten auswählen. Markierte Vorschläge können mit der `Return`-Taste ausgewählt werden und Assets werden nach der ausgewählten Empfehlung gesucht.
-* Bildschirmlesehilfen können die Kontrollkästchen mit gemischtem Status identifizieren und ankündigen (bei denen, wenn Sie nicht alle verschachtelten Kontrollkästchen auswählen, die ersten Ebenen nicht ausgewählt sind und durchgestrichen werden), wenn die Suchergebnisse gefiltert werden, im Bedienfeld &quot;Filter&quot;angezeigt werden.
+* Benutzer suchen im Omnisearch-Suchfeld nach Assets. Benutzer können es entweder über die Tastaturnavigation oder den Tastaturbefehl `/` öffnen.
+* Benutzer können mit der Eingabe des Keywords beginnen und dann die automatischen Vorschläge mithilfe der Pfeiltasten auswählen. Der hervorgehobene Vorschlag kann mit der `Return`-Taste ausgewählt werden, und die Assets werden nach dem ausgewählten Vorschlag durchsucht.
+* Bildschirmlesehilfen können die Kontrollkästchen mit gemischtem Status (in denen, wenn Sie nicht alle verschachtelten Kontrollkästchen auswählen, die ersten Ebenen nicht ausgewählt werden und durchgestrichen sind) im Bedienfeld „Filter“ identifizieren und ansagen, wenn Sie Suchergebnisse filtern.
 * Der Benutzerfokus wechselt zu den Suchoptionen, sobald das Omnisearch-Suchfeld geschlossen wird.
 
 Beim Filtern der Suchergebnisse:
 
 * Die Suchergebnisseite hat einen informativen Titel, der Benutzern ein besseres Verständnis der Sprachausgaben vermittelt.
 * Eine Sprachausgabe sagt die Optionen im Suchfilter als erweiterbare Akkordeons an.
-* Prädikate mit Optionen für gemischte Status werden von Bildschirmlesehilfen angekündigt.
+* Prädikate, die Schaltflächen mit gemischtem Optionen aufweisen, werden von Sprachausgaben angesagt.
 
 ## Freigeben von Assets {#share-assets}
 
@@ -207,7 +207,7 @@ Beim Freigeben von Assets verbessern folgende Funktionen die Barrierefreiheit:
 
 ## Barrierefreie Dokumentation {#accessible-docs}
 
-[!DNL Experience Manager] bietet zugängliche Dokumentation für Menschen mit Behinderungen. Die folgenden Hilfen helfen Ihnen, derzeit verfügbare Inhalte barrierefrei zu machen, während Adobe die Vorlage und den Inhalt weiter verbessert:
+[!DNL Experience Manager] bietet eine barrierefreie Dokumentation für Menschen mit Behinderungen. Die folgenden Hilfen helfen Ihnen, derzeit verfügbare Inhalte barrierefrei zu machen, während Adobe die Vorlage und den Inhalt weiter verbessert:
 
 * Sprachausgaben können den Text vorlesen.
 * Bilder und Illustrationen weisen alternativen Text auf.
@@ -225,6 +225,6 @@ Verwenden Sie die folgenden Methoden, um Feedback zu geben, Fragen zu stellen un
 >
 >* [Barrierefreiheitsfunktionen in [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 >* [Versionshinweise zu den Verbesserungen, die in jeder Service Pack-Version](/help/release-notes/new-features-latest-service-pack.md) vorgenommen wurden.
->* [[!DNL Adobe Experience Manager] Barrierefreiheit](/help/managing/web-accessibility.md).
->* [Konformitätsberichte (ACR) und VPAT-Auflistung für Adoben](https://www.adobe.com/accessibility/compliance.html).
+>* Hinweise zur Barrierefreiheit in [[!DNL Adobe Experience Manager] ](/help/managing/web-accessibility.md).
+>* [Konformitätsberichte (ACR) und VPAT-Liste für Adobe-Lösungen](https://www.adobe.com/accessibility/compliance.html).
 
