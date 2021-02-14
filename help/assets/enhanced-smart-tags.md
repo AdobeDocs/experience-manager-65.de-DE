@@ -3,9 +3,9 @@ title: Optimierte Smart-Tags
 description: Optimierte Smart-Tags
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
+source-git-commit: 09bb767ae8565624e7a6b9786a5cd4c581fe0b9a
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1610'
 ht-degree: 57%
 
 ---
@@ -25,7 +25,7 @@ Sobald ein Tag trainiert wurde und bereit ist, kann der Dienst dieses Tag über 
 
 Im Hintergrund verwendet der Smart Content Service das Adobe Sensei AI-Framework, um seinen Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Geschäftstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden.
 
-Smart Content Service ist ein Cloud-Dienst, der auf [!DNL Adobe I/O] gehostet wird. Zur Verwendung in [!DNL Adobe Experience Manager] muss der Systemadministrator Ihre [!DNL Experience Manager]-Bereitstellung mit [!DNL Adobe I/O] integrieren.
+Smart Content Service ist ein Cloud-Dienst, der auf [!DNL Adobe Developer Console] gehostet wird. Zur Verwendung in [!DNL Adobe Experience Manager] muss der Systemadministrator Ihre [!DNL Experience Manager]-Bereitstellung mit [!DNL Adobe Developer Console] integrieren.
 
 Die wichtigsten Schritte beim Verwenden des Smart Content Service sind:
 
@@ -36,13 +36,40 @@ Die wichtigsten Schritte beim Verwenden des Smart Content Service sind:
 
 ![Flussdiagramm](assets/flowchart.gif)
 
-## Voraussetzungen {#prerequisites}
+## Voraussetzungen und unterstützte Formate {#prerequisites}
 
-Bevor Sie den Smart Content Service verwenden können, stellen Sie Folgendes sicher, um eine Integration auf [!DNL Adobe I/O] zu erstellen:
+Bevor Sie den Smart Content Service verwenden können, stellen Sie Folgendes sicher, um eine Integration auf [!DNL Adobe Developer Console] zu erstellen:
 
 * Es ist ein Adobe ID-Konto mit Administratorrechten für die Organisation vorhanden.
 * Der Smart Content Service ist für Ihre Organisation aktiviert.
 * Das Smart Content Services-Basispaket kann nur einer Bereitstellung hinzugefügt werden, bei der ein [!DNL Adobe Experience Manager Sites]-Basispaket und [!DNL Assets]-Add-on lizenziert wurden.
+
+Intelligente Tags werden nur auf Assets mit den folgenden MIME-Typen angewendet:
+
+* image/jpeg
+* image/tiff
+* image/png
+* image/bmp
+* image/gif
+* image/pjpeg
+* image/x-portable-anymap
+* image/x-portable-bitmap
+* image/x-portable-graymap
+* image/x-portable-pixmap
+* image/x-rgb
+* image/x-xbitmap
+* image/x-xpixmap
+* image/x-icon
+* image/photoshop
+* image/x-photoshop
+* image/psd
+* image/vnd.adobe.photoshop
+
+Das intelligente Tagging von Asset-Darstellungen wird nur für die folgenden MIME-Typen unterstützt:
+
+* image/jpeg
+* image/pjpeg
+* image/png
 
 ## Einstieg {#onboarding}
 
@@ -162,3 +189,4 @@ Darüber hinaus können Sie Tags einen höheren Rang zuweisen, um ihre Relevanz 
 
 * Die Verwendung von Smart Content Services ist auf bis zu 2 Millionen getaggte Bilder pro Jahr beschränkt. Alle verarbeiteten und mit Tags versehenen Duplikat-Bilder werden als getaggte Bilder gezählt.
 * Wenn Sie den Tagging-Workflow über die Timeline ausführen, können Sie Tags gleichzeitig auf maximal 15 Assets anwenden.
+* Smart-Tags können nur für PNG- und JPG-Bildformate verwendet werden. Daher werden unterstützte Assets, deren Darstellungen in diesen beiden Formaten erstellt wurden, mit intelligenten Tags versehen.
