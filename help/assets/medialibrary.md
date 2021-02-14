@@ -3,7 +3,7 @@ title: 'Angebote für Medienbibliotheken vergleichen [!DNL Assets] '
 description: 'Vergleichen Sie die Funktionen der Medienbibliothek und kennen Sie die Unterschiede. [!DNL Experience Manager Assets] '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ca54c880cbda2a573d6c1229900fd80082c5f5aa
+source-git-commit: 82c2df0e53e8ef595ad158ef46089d6e4964ca26
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 19%
@@ -106,5 +106,6 @@ In diesem Fall ist es nicht erforderlich, [!DNL Assets] zu kaufen, auch die Verw
 
 >[!MORELIKETHIS]
 >
->*[[!DNL Experience Manager] 6.5 Managed Services Produktbeschreibung](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)
->*[[!DNL Experience Manager] 6.5 lokale Produktbeschreibung](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html)
+>* [[!DNL Experience Manager] 6.5 Managed Services - Produktbeschreibung](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)
+>* [[!DNL Experience Manager] 6.5 Produktbeschreibung vor Ort](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html)
+
