@@ -112,7 +112,7 @@ Nach dem Abbrechen der Vererbung können Sie das Symbol &quot;Konfigurieren&quot
 
    Wenn diese Option aktiviert ist, wird die Schaltfläche `Mark Unread` angezeigt, mit der eine Nachricht als gelesen markiert werden kann.
 
-* **Schaltfläche &quot;Löschen&quot;**
+* **Schaltfläche „Löschen“**
 
    Wenn diese Option aktiviert ist, wird die Schaltfläche `Delete` angezeigt, mit der eine Nachricht als gelesen markiert werden kann. Wird die Funktion zum Löschen Duplikat, wenn **`Message Options`** ebenfalls aktiviert ist.
 
