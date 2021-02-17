@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 28fdb57f51a5bd97ce78b626db86f4a59de6f0be
 workflow-type: tm+mt
 source-wordcount: '3386'
-ht-degree: 76%
+ht-degree: 84%
 
 ---
 
@@ -42,7 +42,7 @@ Es wird außerdem empfohlen, dass Sie die [Richtlinien und Best Practices](/help
 
 ## Java Content Repository {#java-content-repository}
 
-Der Java Content Repository-Standard [JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html) legt eine herstellerunabhängige und implementierungsunabhängige Methode für den bidirektionalen Zugriff auf Inhalte auf einer granularen Ebene in einem Content-Repository fest.
+Der Java Content Repository-Standard [JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html) legt eine hersteller- und implementierungsunabhängige Methode für den bidirektionalen Zugriff auf Inhalte auf einer granularen Ebene in einem Content-Repository fest.
 
 Maßgeblich für Spezifikationen ist Adobe Research (Switzerland) AG gehalten.
 
@@ -54,19 +54,19 @@ Der Experience Server stellt die Experience Services bereit, auf denen AEM basie
 
 [Apache Jackrabbit](https://jackrabbit.apache.org/) ist eine vollständig konforme Open-Source-Implementierung der JCR-API 2.0.
 
-## Sling-Anforderungsverarbeitung {#sling-request-processing}
+## Sling-Anfrageverarbeitung {#sling-request-processing}
 
 ### Einführung in Sling {#introduction-to-sling}
 
-AEM basiert auf [Sling](https://sling.apache.org/site/index.html), einem auf REST-Prinzipien basierenden Webanwendungs-Framework, das eine einfache Entwicklung von inhaltsorientierten Anwendungen ermöglicht. Sling verwendet ein JCR-Repository wie Apache Jackrabbit oder im Falle von AEM das CRX Content Repository als eigenen Datenspeicher. Sling ist Teil der Apache Software Foundation - weitere Informationen finden Sie unter Apache.
+AEM basiert auf [Sling](https://sling.apache.org/site/index.html), einem auf REST-Prinzipien basierenden Web-Anwendungs-Framework, das eine einfache Entwicklung von inhaltsorientierten Programmen ermöglicht. Sling verwendet ein JCR-Repository wie Apache Jackrabbit oder im Falle von AEM das CRX Content Repository als eigenen Datenspeicher. Sling ist Teil der Apache Software Foundation – weitere Informationen finden Sie bei Apache.
 
 Bei Verwendung von Sling ist der Typ des zu rendernden Inhalts nicht die erste Verarbeitungsüberlegung. Stattdessen ist die Hauptüberlegung, ob die URL zu einem Inhaltsobjekt aufgelöst wird, für das dann ein Skript gefunden werden kann, um das Rendering durchzuführen. Dies bietet Autoren von Web-Inhalten eine hervorragende Unterstützung beim Erstellen von Seiten, die leicht an ihre Anforderungen angepasst werden können.
 
-Die Vorteile dieser Flexibilität zeigen sich in Anwendungen mit einer großen Auswahl verschiedener Inhaltselemente oder wenn Sie Seiten benötigen, die einfach angepasst werden können. Insbesondere bei der Implementierung eines Web-Content-Management-Systems wie dem WCM in der AEM-Lösung.
+Die Vorteile dieser Flexibilität zeigen sich in Programmen mit einer großen Auswahl verschiedener Inhaltselemente oder wenn Sie Seiten benötigen, die einfach angepasst werden können. Insbesondere bei der Implementierung eines Web-Content-Management-Systems wie dem WCM in der AEM-Lösung.
 
-Die ersten Schritte zur Entwicklung mit Sling finden Sie unter [Discover Sling in 15 Minuten](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html).
+Siehe [Entdecken Sie Sling in 15 Minuten](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) für die ersten Schritte zur Entwicklung mit Sling.
 
-Das folgende Diagramm erläutert die Sling-Skriptauflösung: Es wird gezeigt, wie Sie von der HTTP-Anforderung zum Inhaltsknoten, vom Inhaltsknoten zum Ressourcentyp, vom Ressourcentyp zum Skript gelangen und welche Skriptvariablen verfügbar sind.
+Das folgende Diagramm erläutert die Sling-Skriptauflösung: Es wird gezeigt, wie Sie von der HTTP-Anfrage zum Inhaltsknoten, vom Inhaltsknoten zum Ressourcentyp, vom Ressourcentyp zum Skript gelangen und welche Skriptvariablen verfügbar sind.
 
 ![Verstehen der Auflösung des Apache Sling-Skripts](assets/sling-cheatsheet-01.png)
 
@@ -76,14 +76,14 @@ Das folgende Diagramm erläutert alle ausgeblendeten, aber leistungsfähigen Anf
 
 ### Sling ist inhaltszentriert {#sling-is-content-centric}
 
-Sling ist *inhaltszentriert*. Dies bedeutet, dass sich die Verarbeitung auf den Inhalt konzentriert, da jede (HTTP-)Anforderung auf den Inhalt in Form einer JCR-Ressource (eines Repository-Knotens) abgebildet wird:
+Sling ist *inhaltszentriert*. Dies bedeutet, dass sich die Verarbeitung auf den Inhalt konzentriert, da jede (HTTP-)Anfrage auf den Inhalt in Form einer JCR-Ressource (eines Repository-Knotens) abgebildet wird:
 
 * das erste Ziel ist die Ressource (JCR-Knoten), die den Inhalt enthält
 * zweitens, die Repräsentation oder das Skript werden aus den Ressourceneigenschaften in Kombination mit bestimmten Teilen der Anfrage (z. B. Selektoren und/oder der Erweiterung) angeordnet.
 
-### RESTful Sling  {#restful-sling}
+### RESTful Sling {#restful-sling}
 
-Aufgrund der inhaltsorientierten Philosophie implementiert Sling einen REST-orientierten Server und bietet damit ein neues Konzept für Webanwendungs-Frameworks. Die Vorteile sind:
+Aufgrund der inhaltsorientierten Philosophie implementiert Sling einen REST-orientierten Server und bietet damit ein neues Konzept für Webanwendungs-Frameworks. Die Vorteile:
 
 * sehr RESTful, nicht nur an der Oberfläche; Ressourcen und Repräsentationen werden korrekt innerhalb des Servers modelliert
 * entfernt ein oder mehrere Datenmodelle
@@ -93,7 +93,7 @@ Aufgrund der inhaltsorientierten Philosophie implementiert Sling einen REST-orie
 
 ### URL-Zerlegung {#url-decomposition}
 
-In Sling wird die Verarbeitung durch die URL der Benutzeranforderung gesteuert. Dies definiert den Inhalt, der von den entsprechenden Skripten angezeigt werden soll. Um dies zu erreichen, werden die Informationen aus der URL extrahiert.
+In Sling wird die Verarbeitung durch die URL der Benutzeranfrage gesteuert. Dies definiert den Inhalt, der von den entsprechenden Skripten angezeigt werden soll. Um dies zu erreichen, werden die Informationen aus der URL extrahiert.
 
 Wenn wir die folgende URL analysieren:
 
@@ -132,9 +132,9 @@ Die folgende Abbildung zeigt den verwendeten Mechanismus, auf den in den folgend
 
 ![chlimage_1-86](assets/chlimage_1-86a.png)
 
-Bei Sling geben Sie an, welches Skript eine bestimmte Entität rendert (durch Festlegen der `sling:resourceType`-Eigenschaft im JCR-Knoten). Dieser Mechanismus bietet mehr Freiheit als einer, in dem das Skript auf die Datenentitäten zugreift (wie es eine SQL-Anweisung in einem PHP-Skript tun würde), da eine Ressource mehrere Darstellungen haben kann.
+Mit Sling geben Sie an, welches Skript eine bestimmte Entität rendert (indem Sie die Eigenschaft `sling:resourceType` im JCR-Knoten festlegen). Dieser Mechanismus bietet mehr Freiheit als einer, in dem das Skript auf die Datenentitäten zugreift (wie es eine SQL-Anweisung in einem PHP-Skript tun würde), da eine Ressource mehrere Darstellungen haben kann.
 
-#### Anforderungen an Ressourcen zuordnen  {#mapping-requests-to-resources}
+#### Anforderungen an Ressourcen zuordnen {#mapping-requests-to-resources}
 
 Die Anfrage wird zerlegt und die notwendigen Informationen werden extrahiert. Das Repository wird nach der angeforderten Ressource (Inhaltsknoten) durchsucht:
 
@@ -148,7 +148,7 @@ Sling erlaubt auch anderen Elementen als JCR-Knoten, als Ressourcen zu fungieren
 
 Wenn die entsprechende Ressource (Inhaltsknoten) gefunden wird, wird der **Sling-Ressourcentyp** extrahiert. Dies ist ein Pfad, der das Skript findet, das zum Rendern des Inhalts verwendet wird.
 
-Der von `sling:resourceType` angegebene Pfad kann entweder:
+Der vom `sling:resourceType` angegebene Pfad kann wie folgt sein:
 
 * absolut oder
 * relativ zu einem Konfigurationsparameter
@@ -168,7 +168,7 @@ Einige andere zu beachtende Punkte sind:
    * Java Servlet Compiler (serverseitige Ausführung): `.java`
    * JavaScript-Vorlagen (clientseitige Ausführung): `.jst`
 
-Die Liste der von der angegebenen Instanz von AEM unterstützten Skriptmaschinen wird in der Felix Management Console ( `http://<host>:<port>/system/console/slingscripting`) aufgelistet.
+Die Liste der von der angegebenen Instanz von AEM unterstützten Skript-Engines wird in der Felix Management Console aufgeführt (`http://<host>:<port>/system/console/slingscripting`).
 
 Darüber hinaus unterstützt Apache Sling die Integration mit anderen gängigen Skript-Engines (z. B. Groovy, JRuby, Freemarker) und bietet eine Möglichkeit zur Integration neuer Skript-Engines.
 
@@ -178,17 +178,17 @@ Wenn das `sling:resourceType` `hr/jobs`  ist, gehen Sie wie folgt vor:
 
    Das Skript lautet /apps/hr/jobs/jobs.esp. Im letzten Abschnitt von sling:resourceType wird der Dateiname festgelegt.
 
-* Anforderungen an die POST (alle Anforderungstypen außer GET/HEAD, der Methodenname muss in Großbuchstaben angegeben werden)
+* POST-Anfragen (alle Anforderungstypen außer GET/HEAD, der Methodenname muss in Großbuchstaben angegeben werden)
 
    POST wird im Skriptnamen verwendet.
 
-   Das Skript ist `/apps/hr/jobs/jobs.POST.esp`.
+   Das Skript lautet `/apps/hr/jobs/jobs.POST.esp`.
 
 * URLs in anderen Formaten, die nicht mit .html enden
 
    Beispiel `../content/corporate/jobs/developer.pdf`
 
-   Das Skript ist `/apps/hr/jobs/jobs.pdf.esp`; Das Suffix wird dem Skriptnamen hinzugefügt.
+   Das Skript wäre `/apps/hr/jobs/jobs.pdf.esp`. Das Suffix wird zum Skriptnamen hinzugefügt.
 
 * URLs mit Selektoren
 
@@ -196,13 +196,13 @@ Wenn das `sling:resourceType` `hr/jobs`  ist, gehen Sie wie folgt vor:
 
    Wenn wir uns eine druckerfreundliche Version ansehen, in der der Selektor *print* sein könnte; wie in `../content/corporate/jobs/developer.print.html`
 
-   Das Skript ist `/apps/hr/jobs/jobs.print.esp`; Der Selektor wird dem Skriptnamen hinzugefügt.
+   Das Skript wäre `/apps/hr/jobs/jobs.print.esp`. Der Selektor wird zum Skriptnamen hinzugefügt.
 
 * Wenn kein sling:resourceType definiert wurde, dann:
 
    * wird der Inhaltspfad für die Suche nach einem geeigneten Skript verwendet (wenn der pfadbasierte ResourceTypeProvider aktiv ist).
 
-      Beispielsweise würde das Skript für `../content/corporate/jobs/developer.html` eine Suche in `/apps/content/corporate/jobs/` generieren.
+      Zum Beispiel würde das Skript für `../content/corporate/jobs/developer.html` eine Suche in `/apps/content/corporate/jobs/` erzeugen.
 
    * wird der primäre Knotentyp verwendet.
 
@@ -216,7 +216,7 @@ Wenn das `sling:resourceType` `hr/jobs`  ist, gehen Sie wie folgt vor:
 
 Wenn mehrere Skripte für eine bestimmte Anfrage gelten, wird das Skript mit der besten Übereinstimmung ausgewählt. Je genauer eine Übereinstimmung ist, desto besser ist sie; Mit anderen Worten: je mehr Selektorübereinstimmungen, desto besser, unabhängig von einer Anfrageerweiterung oder einer Übereinstimmung des Methodennamens.
 
-Beispiel: Eine Anforderung zum Zugriff auf die Ressource
+Beispiel: Eine Anfrage zum Zugriff auf die Ressource
 `/content/corporate/jobs/developer.print.a4.html`
 vom Typ
 `sling:resourceType="hr/jobs"`
@@ -234,12 +234,12 @@ Angenommen, wir haben die folgende Liste von Skripten am richtigen Speicherort:
 
 Dann wäre die Reihenfolge der Bevorzugung (8) - (7) - (6) - (5) - (4) - (3) - (2) - (1).
 
-Zusätzlich zu den Ressourcentypen (primär definiert durch die Eigenschaft `sling:resourceType`) gibt es auch den Super-Typ der Ressource. Dies wird allgemein durch die `sling:resourceSuperType`-Eigenschaft angezeigt. Diese Supertypen werden ebenfalls berücksichtigt, wenn Sie versuchen, ein Skript zu finden. Der Vorteil von Ressourcensupertypen besteht darin, dass sie eine Hierarchie von Ressourcen bilden können, wobei der Standard-Ressourcentyp `sling/servlet/default` (von den Standard-Servlets verwendet) effektiv der Stamm ist.
+Zusätzlich zu den Ressourcentypen (primär definiert durch die Eigenschaft `sling:resourceType`) gibt es auch den Supertyp der Ressource. Dieser wird normalerweise durch die Eigenschaft `sling:resourceSuperType` angezeigt. Diese Supertypen werden ebenfalls berücksichtigt, wenn Sie versuchen, ein Skript zu finden. Der Vorteil von Ressourcensupertypen besteht darin, dass sie eine Hierarchie von Ressourcen bilden können, wobei der Standard-Ressourcentyp `sling/servlet/default` (von den Standard-Servlets verwendet) effektiv der Stamm ist.
 
 Der Ressourcensupertyp einer Ressource kann auf zwei Arten definiert werden:
 
-* durch die `sling:resourceSuperType`-Eigenschaft der Ressource.
-* durch die `sling:resourceSuperType`-Eigenschaft des Knotens, auf den `sling:resourceType` verweist.
+* durch die Eigenschaft `sling:resourceSuperType` der Ressource.
+* durch die Eigenschaft `sling:resourceSuperType` des Knotens, auf den der `sling:resourceType` zeigt.
 
 Beispiel:
 
@@ -270,7 +270,7 @@ Die Typhierarchie von:
 * while for `/y`
    * die Hierarchie ist `[ c, a, <default>]`
 
-Dies liegt daran, dass `/y` die Eigenschaft `sling:resourceSuperType` hat, `/x` nicht und daher der Supertyp vom Ressourcentyp genommen wird.
+Grund hierfür ist, dass `/y` die Eigenschaft `sling:resourceSuperType` aufweist, während `/x` sie nicht aufweist und daher der Obertyp vom Ressourcentyp übernommen wird.
 
 #### Sling-Skripte können nicht direkt aufgerufen werden {#sling-scripts-cannot-be-called-directly}
 
@@ -285,7 +285,7 @@ Wenn Sie die Repräsentation (das Skript) direkt aufrufen, blenden Sie die Resso
 
 * Ihre Code-Architektur ist nicht mehr so sauber oder so klar strukturiert wie sie es sein sollte; von größter Bedeutung für die großmaßstäbliche Entwicklung
 
-### Sling-API  {#sling-api}
+### Sling-API {#sling-api}
 
 Diese verwendet das Sling-API-Paket org.apache.sling.&amp;ast;- und Tag-Bibliotheken.
 
@@ -293,7 +293,7 @@ Diese verwendet das Sling-API-Paket org.apache.sling.&amp;ast;- und Tag-Biblioth
 
 Eine letzte Überlegung ist die Notwendigkeit, auf vorhandene Elemente innerhalb der Skripte zu verweisen.
 
-Komplexere Skripten (Aggregationsskripte) müssen möglicherweise auf mehrere Ressourcen zugreifen (z. B. Navigation, Seitenleiste, Fußzeile, Elemente einer Liste) und dies tun, indem die *resource* einbezogen wird.
+Komplexere Skripte (aggregierende Skripte) müssen möglicherweise auf mehrere Ressourcen zugreifen (z. B. Navigation, Seitenleiste, Fußzeile, Elemente einer Liste) und tun dies durch Einbeziehen der *Ressource*.
 
 Dazu können Sie den Befehl sling:include(&quot;/&lt;Pfad>/&lt;Ressource>&quot;) verwenden. Dies umfasst effektiv die Definition der referenzierten Ressource, wie in der folgenden Anweisung, die auf eine vorhandene Definition für das Rendern von Bildern verweist:
 
@@ -303,30 +303,30 @@ Dazu können Sie den Befehl sling:include(&quot;/&lt;Pfad>/&lt;Ressource>&quot;)
 
 ## OSGI  {#osgi}
 
-OSGi definiert eine Architektur für die Entwicklung und Bereitstellung modularer Anwendungen und Bibliotheken (es wird auch als Dynamic Module System für Java bezeichnet). OSGi-Container erlauben es Ihnen, Ihre Anwendung in einzelne Module aufzuteilen (JAR-Dateien mit zusätzlichen Metainformationen und sogenannten Bundles in OSGi-Terminologie) und die Querabhängigkeiten zwischen ihnen zu verwalten mit:
+OSGi definiert eine Architektur für die Entwicklung und Bereitstellung modularer Anwendungen und Bibliotheken (es wird auch als Dynamic Module System für Java bezeichnet). OSGi-Container erlauben es Ihnen, Ihr Programm in einzelne Module aufzuteilen (JAR-Dateien mit zusätzlichen Metainformationen und sogenannten Bundles in OSGi-Terminologie) und die Querabhängigkeiten zwischen ihnen zu verwalten mit:
 
 * Diensten, die innerhalb des Containers implementiert sind
 * einem Vertrag zwischen dem Container und Ihrer Anwendung
 
-Diese Dienste und Verträge bieten eine Architektur, die es einzelnen Elementen ermöglicht, sich dynamisch für die Zusammenarbeit zu entdecken.
+Diese Services und Verträge bieten eine Architektur, die es einzelnen Elementen ermöglicht, sich dynamisch für die Zusammenarbeit zu entdecken.
 
 Ein OSGi-Framework bietet Ihnen dann dynamisches Laden/Entladen, Konfiguration und Kontrolle dieser Bundles - ohne dass ein Neustart erforderlich ist.
 
 >[!NOTE]
 >
->Vollständige Informationen zur OSGi-Technologie finden Sie auf der [OSGi-Website](https://www.osgi.org).
+>Ausführliche Informationen zur OSGi-Technologie finden Sie auf der [OSGi-Website](https://www.osgi.org).
 >
 >Speziell die Seite mit grundlegenden Informationen beinhaltet eine Sammlung von Präsentationen und Tutorials.
 
-Diese Architektur ermöglicht es Ihnen, Sling um anwendungsspezifische Module zu erweitern. Sling, und daher CQ5, verwendet die [Apache Felix](https://felix.apache.org/)-Implementierung von OSGI (Open Services Gateway Initiative) und basiert auf der OSGi Service Platform Release 4 Version 4.2. Beides sind Sammlungen von OSGi-Bundles, die in einem OSGi-Framework ausgeführt werden.
+Diese Architektur ermöglicht es Ihnen, Sling um programmspezifische Module zu erweitern. Sling, und daher CQ5, verwendet die [Apache Felix](https://felix.apache.org/)-Implementierung von OSGI (Open Services Gateway Initiative) und basiert auf der OSGi Service Platform Release 4 Version 4.2. Beides sind Sammlungen von OSGi-Bundles, die in einem OSGi-Framework ausgeführt werden.
 
 Dies ermöglicht es Ihnen, die folgenden Handlungen innerhalb Ihrer Installation für ein beliebiges Paket durchzuführen:
 
-* Installieren
+* install
 * Starten
 * Anhalten
 * Aktualisieren
-* Deinstallieren
+* uninstall
 * Aktuellen Status anzeigen
 * Greifen Sie auf detailliertere Informationen (z. B. symbolischer Name, Version, Ort, usw.) über die spezifischen Bundles zu
 
@@ -415,11 +415,11 @@ Die folgende Liste gibt einen Überblick über die Struktur, die Sie im Reposito
 
 >[!CAUTION]
 >
->Sie dürfen keinerlei Änderungen im Pfad `/libs` vornehmen. Kopieren Sie für Konfigurationen und andere Änderungen das Element von `/libs` nach `/apps` und nehmen Sie alle Änderungen innerhalb von `/apps` vor.
+>Sie dürfen keinerlei Änderungen im Pfad `/libs` vornehmen. Für die Konfiguration und andere Änderungen kopieren Sie das Objekt von `/libs` nach `/apps` und nehmen Sie Änderungen innerhalb von `/apps` vor.
 
 * `/apps`
 
-    Anwendungsbezogen; enthält für Ihre Website spezifische Komponentendefinitionen. Die Komponenten, die Sie entwickeln, können auf den standardmäßig verfügbaren Komponenten unter `/libs/foundation/components` basieren.
+    Anwendungsbezogen; enthält für Ihre Website spezifische Komponentendefinitionen. Die von Ihnen entwickelten Komponenten können auf den Standardkomponenten basieren, die unter `/libs/foundation/components` verfügbar sind.
 
 * `/content`
 
@@ -437,7 +437,7 @@ Die folgende Liste gibt einen Überblick über die Struktur, die Sie im Reposito
 
 * `/tmp`
 
-   Vorübergehender Arbeitsbereich.
+   Temporärer Arbeitsbereich.
 
 * `/var`
 
