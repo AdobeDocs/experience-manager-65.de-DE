@@ -65,7 +65,7 @@ Mit den bereitgestellten Komponenten und deren Nutzung auf den bereitgestellten 
 
 Von Adobe werden zwei Sätze mit AEM-Komponenten bereitgestellt:
 
-* [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html)
+* [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
 * [Foundation-Komponenten](/help/sites-authoring/default-components-foundation.md)
 
 **Core** Components wurde mit AEM 6.3 und Angebot mit flexiblen und leistungsstarken Authoring-Funktionen eingeführt. Die [We.Retail-Referenz-Website](/help/sites-developing/we-retail.md) zeigt, wie die Kernkomponenten verwendet werden können und stellt die aktuellen Best Practices der Komponentenentwicklung dar.
