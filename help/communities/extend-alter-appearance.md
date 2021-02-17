@@ -73,7 +73,7 @@ Eine Möglichkeit dazu ist:
 
 [Wenn Sie das ](/help/communities/extend-sample-page.md#publish-sample-page) Erlebnis in der Veröffentlichungsinstanz fortsetzen und sich dennoch als derselbe Benutzer angemeldet haben, können Sie jetzt die Seite in der Umgebung &quot;Veröffentlichen&quot;aktualisieren, um die Änderung zum Entfernen des Avatars Ansicht:
 
-![ansicht-modifiziert-content](assets/view-modified-content.png)
+![Ansicht-modifiziert-content](assets/view-modified-content.png)
 
 ### Beispiel für ein Kommentar-Erweiterungspaket {#sample-comment-extension-package}
 
