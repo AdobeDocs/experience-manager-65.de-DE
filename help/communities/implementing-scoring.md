@@ -187,7 +187,7 @@ Scores werden in SRP gespeichert.
 >
 >Die Namen von Bewertungsregeln sollten global eindeutig sein. sie sollten nicht mit demselben Namen enden.
 >
->Beispiel für die folgenden Aufgaben:**
+>Beispiel für die folgenden Schritte:**
 >
 >/libs/settings/community/scoring/rules/site1/forums-scoring
 >/libs/settings/community/scoring/rules/site2/forums-scoring
@@ -462,8 +462,8 @@ ComponentSocialEvent  `topic`= com/adobe/cq/social/calendar
 |---|---|
 | POST | Mitglied erstellt ein Ereignis im Kalender |
 | HINZUFÜGEN | Mitgliederkommentare für ein Kalendertool |
-| UPDATE | ereignis oder Kommentar des Mitglieds wird bearbeitet |
-| DELETE | ereignis oder Kommentar des Mitglieds wird gelöscht |
+| UPDATE | Ereignis oder Kommentar des Mitglieds wird bearbeitet |
+| DELETE | Ereignis oder Kommentar des Mitglieds wird gelöscht |
 
 **[Kommentare](/help/communities/comments.md)**
 ComponentSocialEvent  `topic`= com/adobe/cq/social/comment
