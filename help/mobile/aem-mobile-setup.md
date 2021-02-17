@@ -1,8 +1,8 @@
 ---
 title: AEM Mobile Setup
 seo-title: AEM Mobile Setup
-description: Folgen Sie dieser Seite, um AEM Mobile einzurichten und dem Benutzer so die Möglichkeit zu geben, die Inhalte in AEM zu erstellen und zu verwalten. Auf dieser Seite finden Sie Informationen zur Integration der AEM Instanz in das Cloud-basierte AEM Mobile On-demand Services-Konto und -Projekt/e.
-seo-description: Folgen Sie dieser Seite, um AEM Mobile einzurichten und dem Benutzer so die Möglichkeit zu geben, die Inhalte in AEM zu erstellen und zu verwalten. Auf dieser Seite finden Sie Informationen zur Integration der AEM Instanz in das Cloud-basierte AEM Mobile On-demand Services-Konto und -Projekt/e.
+description: Folgen Sie dieser Seite, um AEM Mobile einzurichten und dem Benutzer so die Möglichkeit zu geben, die Inhalte in AEM zu erstellen und zu verwalten. Diese Seite enthält Informationen zur Integration der AEM Instanz in das Cloud-basierte AEM Mobile On-demand Services-Konto und -Projekt/e.
+seo-description: Folgen Sie dieser Seite, um AEM Mobile einzurichten und dem Benutzer so die Möglichkeit zu geben, die Inhalte in AEM zu erstellen und zu verwalten. Diese Seite enthält Informationen zur Integration der AEM Instanz in das Cloud-basierte AEM Mobile On-demand Services-Konto und -Projekt/e.
 uuid: 03bf5b56-7750-4f76-b079-43761367655a
 contentOwner: User
 content-type: reference
