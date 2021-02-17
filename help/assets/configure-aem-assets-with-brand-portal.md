@@ -22,7 +22,7 @@ ht-degree: 64%
 
 Mit dem Markenportal für Adobe Experience Manager Assets können Sie genehmigte Markenelemente aus Adobe Experience Manager Assets im Markenportal veröffentlichen und an die Benutzer des Markenportals verteilen.
 
-AEM Assets wird über die Adobe Developer Console mit Brand Portal konfiguriert. Dadurch wird ein Adobe Identity Management Services (IMS)-Token zur Autorisierung Ihres Brand Portal-Mandanten abgerufen.
+AEM Assets  wird über die Adobe Developer Console mit Brand Portal konfiguriert. Dadurch wird ein Adobe Identity Management Services (IMS)-Token zur Autorisierung Ihres Brand Portal-Mandanten abgerufen.
 
 >[!NOTE]
 >
@@ -253,7 +253,7 @@ Gehen Sie wie folgt vor, um das IMS-Konto zu konfigurieren.
 
 1. Geben Sie einen **[!UICONTROL Titel]** für das IMS-Konto an.
 
-   Geben Sie im Feld **[!UICONTROL Autorisierungsserver]** die URL ein: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)..
+   Geben Sie im Feld **[!UICONTROL Autorisierungs-Server]** die URL ein: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)..
 
    Fügen Sie die Client-ID im Feld **[!UICONTROL API-Schlüssel]** sowie das **[!UICONTROL Client-Geheimnis]** und die **[!UICONTROL Payload]** (JWT-Payload) ein, die Sie beim [Erstellen der JWT-Verbindung (Service-Konto)](#createnewintegration) kopiert haben.
 
@@ -321,7 +321,7 @@ Führen Sie zur Validierung der Konfiguration folgende Schritte aus:
    >
    >Die Replizierungsagenten arbeiten parallel und teilen die Auftragsverteilung gleichmäßig, wodurch die Veröffentlichungsgeschwindigkeit um das Vierfache der Originalgeschwindigkeit steigt. Wenn der Cloud-Service konfiguriert wurde, sind keine zusätzlichen Konfigurationsschritte erforderlich, um die Replikationsagenten zu aktivieren. Sie werden standardmäßig aktiviert, um die parallele Veröffentlichung mehrerer Assets zu ermöglichen.
 
-1. Um die Verbindung zwischen AEM Assets und Brand Portal zu überprüfen, klicken Sie auf das Symbol **[!UICONTROL Verbindung testen]**.
+1. Um die Verbindung zwischen AEM Assets  und Brand Portal zu überprüfen, klicken Sie auf das Symbol **[!UICONTROL Verbindung testen]**.
 
    ![](assets/test-integration4.png)
 
