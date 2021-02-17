@@ -83,7 +83,7 @@ Durch Auswahl von **Benutzer** oder **Gruppen** in der Tools-Konsole wird die en
    * **Berufsbezeichnung**
    * **Straße**
    * **Mobilgerät**
-   * **Ort**
+   * **Stadt**
    * **PLZ**
    * **Land**
    * **Bundesland/Kanton**
