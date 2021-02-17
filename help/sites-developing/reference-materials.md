@@ -26,7 +26,7 @@ Adobe Experience Manager (AEM) stellt mehrere APIs zum Entwickeln von Applikatio
 
 * [Adobe AEM 6.5.0-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html)
 * API-Unterschiede (demnächst verfügbar)
-* [API für die (Touch-optimierte) Granite-Benutzeroberfläche – Dokumentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
+* [API für die (Touch-optimierte) Granite-Benutzeroberfläche – Dokumentation](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
 * [Coral-UI-Handbuch](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 * [Dokumentation zur Widgets-API (klassische Benutzeroberfläche)](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)
 * [JavaScript-API-Referenz zum UI-Test-Framework](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html)
