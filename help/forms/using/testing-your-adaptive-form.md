@@ -145,7 +145,7 @@ Eine Aktion ist eine bestimmte Aktivität in einem adaptiven Formular, z. B. dur
       <td><strong>Wert</strong></td>
      </tr>
      <tr>
-      <td>kategorien</td>
+      <td>Kategorien</td>
       <td>Zeichenfolge</td>
       <td>Aktiviert</td>
       <td>
