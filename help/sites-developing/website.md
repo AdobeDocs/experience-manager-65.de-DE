@@ -1152,7 +1152,7 @@ Erstellen Sie eine Komponente, die ein Bild im Absatzsystem anzeigt. Um Zeit zu 
 
 In diesem Abschnitt wird beschrieben, wie Sie das image-Skript erstellen.
 
-1. Öffnen Sie `/apps/mywebsite/components/image/` `image.jsp`
+1. Öffnen `/apps/mywebsite/components/image/` `image.jsp`
 1. Ersetzen Sie den vorhandenen Code durch den folgenden Code und speichern Sie dann die Änderungen:
 
    ```xml
