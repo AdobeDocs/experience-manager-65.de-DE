@@ -869,7 +869,7 @@ Jeder Dienst kann die Poolingfunktionen zum Verarbeiten eingehender Aufrufanford
 
    **Einzelinstanz für alle Anforderungen:** Eine Dienstinstanz wird erstellt und zwischengespeichert, wenn die erste Anforderung in den Container kommt. Jede darauffolgende Anforderung verwendet die gleiche Dienstinstanz zum Verarbeiten der Anforderung.
 
-   **Neue Instanz für jede Anforderung: Für jeden empfangenen Aufruf wird** eine neue Dienstinstanz erstellt.
+   **Neue Instanz für jede Anforderung:** Für jeden empfangenen Aufruf wird eine neue Dienstinstanz erstellt.
 
 1. Klicken Sie auf Speichern.
 
