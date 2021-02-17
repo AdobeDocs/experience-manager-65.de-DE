@@ -50,7 +50,7 @@ Viele Leistungsprobleme treten erst dann zum Vorschein, wenn das System eine hoh
 
 Vor Leistungstests müssen nicht funktionsbezogene Anforderungen zur Angabe der Last und Antwortzeiten festgelegt werden. Achten Sie beim Migrieren von einem vorhandenen System darauf, dass Antwortzeiten mit denen Ihrer aktuellen Produktionswerte vergleichbar sind. Was die Auslastung angeht, sollte am besten die Spitzenlast verdoppelt werden. Auf diese Weise wird sichergestellt, dass die Website auch bei Wachstum weiterhin leistungsfähig ist.
 
-### Tools  {#tools}
+### Tools {#tools}
 
 Auf dem Markt ist eine Vielzahl von Tools für Leistungstests erhältlich. Stellen Sie beim Ausführen eines Lastgenerators sicher, dass die Computer, die die Tests durchführen, über ausreichend Netzwerkbrandbreite verfügen. Andernfalls wird, sobald der Testrechner an seine Verbindungsgrenzen stößt, keine zusätzliche Last in der getesteten Umgebung erzeugt.
 
