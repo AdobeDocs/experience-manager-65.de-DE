@@ -68,7 +68,7 @@ Wählen Sie **Layout** aus der Dropdown-Liste, die oben auf der Authoring-Oberfl
 
 Führen Sie die folgenden Schritte aus, wenn Sie die Größe des gesamten Bedienfelds anstelle einzelner Komponenten ändern möchten:
 
-1. Tippen Sie auf eine der Komponenten im Bedienfeld, deren Größe Sie ändern möchten, wählen Sie ![Übergeordnet auswählen](assets/select_parent_icon.svg) und wählen Sie die erste Option in der Dropdown-Liste aus, wenn das Bedienfeld das direkt übergeordnete Element der Komponente ist.
+1. Tippen Sie auf eine der Komponenten im Bedienfeld, deren Größe Sie ändern möchten, wählen Sie ![Übergeordnet auswählen](assets/select_parent_icon.svg) und wählen Sie die erste Option in der Dropdown-Liste aus, wenn das Bedienfeld direkt über der Komponente liegt.
 
    Die blauen Punkte werden am Beginn und am Ende des reaktionsfähigen Rasters angezeigt.
 
