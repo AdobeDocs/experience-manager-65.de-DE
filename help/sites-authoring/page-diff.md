@@ -1,5 +1,5 @@
 ---
-title: Seitenvergleich
+title: 'Seitenvergleich '
 seo-title: Seitenvergleich
 description: Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seiten, die nebeneinander angezeigt werden und deren Unterschiede hervorgehoben sind.
 seo-description: Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seiten, die nebeneinander angezeigt werden und deren Unterschiede hervorgehoben sind.
@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: c51ba167d9b3d37de649c59526e74d9728c677c6
 workflow-type: tm+mt
 source-wordcount: '579'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -92,7 +92,7 @@ Sie können den Seitenvergleich jederzeit beenden, indem Sie in der Kopfzeile au
 In manchen Fällen erkennt der Seitenvergleich einen Unterschied nicht wie erwartet.
 
 * Beim Vergleich von Versionen und Launches berücksichtigt der Seitenvergleich keine dynamischen Komponenten wie Breadcrumbs, Menüs, Produktlisten oder Logos (Komponenten, die die Site-Struktur zur Darstellung ihres Inhalts nutzen).
-* Bei Zugriffskontrollen erstellt der Diff nicht die Richtlinie und Live-Kopierbeziehungen.
+* Bei Versionen erstellt der Vergleich die Richtlinien zur Zugriffssteuerung und die Live Copy-Beziehungen nicht neu.
 * Wenn eine Seite verschoben wird, können Sie keinen Vergleich mit Versionen mehr durchführen, die vor dem Verschieben erstellt wurden.
 
    * Wenn Probleme beim Vergleich auftreten, überprüfen Sie in der [Zeitleiste](/help/sites-authoring/basic-handling.md#timeline) der Seite, ob die Seite verschoben wurde.
