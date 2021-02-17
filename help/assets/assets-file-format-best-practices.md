@@ -23,7 +23,7 @@ Eine vollständige Liste der unterstützten Dateiformate finden Sie unter [Von A
 
 ## [!DNL Adobe Camera Raw] library  {#adobe-camera-raw-library}
 
-Zur optimalen Performance empfiehlt Adobe die Verwendung der [!DNL Adobe Camera Raw]-Bibliothek für RAW- und DNG-Dateien.
+Für eine optimale Leistung empfiehlt Adobe die Verwendung der [!DNL Adobe Camera Raw]-Bibliothek für RAW- und DNG-Dateien.
 
 [!DNL Adobe Camera Raw] library unterstützt CMYK-Profil als Eingabe. Sie generiert die Ausgabe jedoch im RGB-Farbraum und unterstützt nur Darstellungen im JPEG-Format. Sie behält nicht den Quelldatei-Farbraum (z. B. CMYK) in den Miniaturen bei.
 
