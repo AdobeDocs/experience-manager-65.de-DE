@@ -259,7 +259,7 @@ Auf die Konfiguration kann nun verwiesen werden, damit ein Cloud Service die Tar
 
    ![](assets/integrate-target-io-14.png)
 
-1. Klicken Sie auf **Mit Zielgruppe** verbinden, um die Verbindung mit Adobe Target zu initialisieren.
+1. Klicken Sie auf **Mit Zielgruppe verbinden**, um die Verbindung mit Adobe Target zu initialisieren.
 
    Wenn die Verbindung erfolgreich hergestellt wurde, wird die Meldung **Verbindung erfolgreich** angezeigt.
 
