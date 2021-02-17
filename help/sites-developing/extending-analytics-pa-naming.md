@@ -20,7 +20,7 @@ ht-degree: 73%
 
 # Implementieren serverseitiger Seitennamen für Analytics{#implementing-server-side-page-naming-for-analytics}
 
-Adobe Analytics verwendet die `s.pageName`-Eigenschaft, um Seiten eindeutig zu identifizieren und die für die Seiten erfassten Daten zu verknüpfen. Normalerweise führen Sie in AEM die folgenden Aufgaben aus, um dieser Eigenschaft, die AEM an Analytics übermittelt, einen Wert zuzuordnen:
+Adobe Analytics verwendet die Eigenschaft `s.pageName`, um Seiten eindeutig zu identifizieren und die für die Seiten erfassten Daten zu verknüpfen. Normalerweise führen Sie in AEM die folgenden Aufgaben aus, um dieser Eigenschaft, die AEM an Analytics übermittelt, einen Wert zuzuordnen:
 
 * Verwenden Sie das Framework des Analytics-Cloud-Service, um der Analytics-Eigenschaft `s.pageName` eine CQ-Variable zuzuordnen. (Siehe [Zuordnen von Komponentendaten zu Adobe Analytics-Eigenschaften](/help/sites-administering/adobeanalytics-mapping.md).)
 
