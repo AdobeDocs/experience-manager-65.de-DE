@@ -270,9 +270,9 @@ Es gibt viele Konfigurationspunkte zum Verhindern solcher Angriffe. In diesem Do
 
 **Konfigurieren von Sling zum Verhindern von DoS-Angriffen**
 
-Sling ist *inhaltsorientiert*. Das bedeutet, dass die Verarbeitung auf den Inhalt ausgerichtet ist, während die einzelnen (HTTP-)Anfragen den Inhalten in Form einer JCR-Ressource (Repository-Knoten) zugeordnet werden:
+Sling ist *inhaltsorientiert*. Dies bedeutet, dass sich die Verarbeitung auf den Inhalt konzentriert, da jede (HTTP-)Anfrage auf den Inhalt in Form einer JCR-Ressource (eines Repository-Knotens) abgebildet wird:
 
-* Das erste Ziel ist die Ressource (JCR-Knoten), die die Inhalte enthält.
+* Das erste Ziel ist die Ressource (JCR-Knoten), die die Inhalte enthält..
 * Als Zweites wird der Renderer oder das Skript aus den Ressourceneigenschaften ausgelesen – zusammen mit bestimmten Teilen der Anfrage (z. B. Selektoren und/oder die Erweiterung).
 
 >[!NOTE]
