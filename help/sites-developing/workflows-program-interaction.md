@@ -92,7 +92,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
  <tbody>
   <tr>
    <td>HTTP-Anforderungsmethode</td>
-   <td>Aktionen   </td>
+   <td>Aktionen </td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -111,7 +111,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
 
 `http://localhost:4502/etc/workflow/instances.{state}`
 
-| HTTP-Anforderungsmethode | Aktionen    |
+| HTTP-Anforderungsmethode | Aktionen  |
 |---|---|
 | `GET` | Liste der verfügbaren Workflow-Instanzen und deren Status ( `RUNNING`, `SUSPENDED`, `ABORTED` oder `COMPLETED`) |
 
@@ -125,7 +125,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
  <tbody>
   <tr>
    <td>HTTP-Anforderungsmethode</td>
-   <td>Aktionen   </td>
+   <td>Aktionen </td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -148,7 +148,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
  <tbody>
   <tr>
    <td>HTTP-Anforderungsmethode</td>
-   <td>Aktionen   </td>
+   <td>Aktionen </td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -233,7 +233,7 @@ Dabei ist `*{uri}*` der Pfad zum Modellknoten im Repository.
  <tbody>
   <tr>
    <td>HTTP-Anforderungsmethode</td>
-   <td>Aktionen   </td>
+   <td>Aktionen </td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -338,7 +338,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
 
 `http://localhost:4502/etc/workflow/models/{id}.{version}`
 
-| HTTP-Anforderungsmethode | Aktionen    |
+| HTTP-Anforderungsmethode | Aktionen  |
 |---|---|
 | `GET` | Ruft die Daten des Modells in der angegebenen Version ab (sofern vorhanden). |
 
@@ -352,7 +352,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
  <tbody>
   <tr>
    <td>HTTP-Anforderungsmethode</td>
-   <td>Aktionen   </td>
+   <td>Aktionen </td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -371,7 +371,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
 
 `http://localhost:4502/bin/workflow/inbox/{id}`
 
-| HTTP-Anforderungsmethode | Aktionen    |
+| HTTP-Anforderungsmethode | Aktionen  |
 |---|---|
 | `GET` | Ruft die Daten (Definition und Metadaten) des Posteingangs `WorkItem` ab, der durch seine ID identifiziert wird. |
 
