@@ -113,7 +113,7 @@ Und es werden die folgenden Teaser-Definitionen verwendet:
 
 Wenn dies auf einen Besucher angewendet wird, bei dem Folgendes gilt:
 
-* **S1**,  **S2** und  **S6** werden erfolgreich aufgelöst
+* **S1**,  **S2**  und  **S6** werden erfolgreich aufgelöst
 
 * Das Tag **Marketing** hat 3 Treffer.
 * Das Tag **Business** hat 6 Treffer.
