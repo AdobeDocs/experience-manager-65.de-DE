@@ -82,7 +82,7 @@ In der folgenden Tabelle sind die Speicherbereinigungstypen aufgeführt, die fü
   <tr>
    <td>TarMK</td>
    <td>TarMK</td>
-   <td>Überarbeitungsbereinigung (Binärdateien sind mit dem Segmentspeicher verknüpft)</td>
+   <td>Überarbeitungsbereinigung (Binärdateien werden mit dem Segmentspeicher verknüpft)</td>
   </tr>
   <tr>
    <td>TarMK</td>
