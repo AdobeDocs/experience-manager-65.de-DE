@@ -50,7 +50,7 @@ Ihre Marke wird jetzt auf der Seite &quot;Aktivitäten&quot;aufgeführt.
 
    Im Abschnitt „Target“ können Sie das Erlebnis für die Zielgruppe hinzufügen und benennen. Klicken Sie auf **Hinzufügen Erlebnis**, um die Optionen **Audience** und **Erlebnis benennen** zu aktivieren. Tippen Sie auf **Audience** auswählen, um eine Liste der Audiencen und deren Quelle anzuzeigen. Wählen Sie eine Zielgruppe aus der Liste „Zielgruppenname“ aus. Tippen Sie auf **Hinzufügen Erlebnis**, um das Erlebnis zu benennen, und tippen Sie auf **Weiter**.
 
-   Im Abschnitt „Ziele und Einstellungen“ können Sie den Zeitplan und die Priorität für Ihre Aktivität festlegen. Legen Sie Datum, Enddatum und Priorität des Beginns der Aktivität, Zielmetrik und zusätzliche Metrik fest und tippen Sie auf **Speichern**.
+   Im Abschnitt „Ziele und Einstellungen“ können Sie den Zeitplan und die Priorität für Ihre Aktivität festlegen. Legen Sie Datum, Enddatum und Priorität des Beginns der Aktivität, Zielmetrik, zusätzliche Metrik fest und tippen Sie auf **Speichern**.
 
    Die Aktivität wird jetzt in Ihrer Markenseite aufgeführt.
 
@@ -72,7 +72,7 @@ Ihre Marke wird jetzt auf der Seite &quot;Aktivitäten&quot;aufgeführt.
 
    `<cq:include path="config" resourceType="cq/personalization/components/clientcontext_optimized/config"/>`
 
-1. Um das Zielgruppe-Framework für adaptive Formulare zu aktivieren, navigieren Sie zu Ihrem Formular oder zu Ihrer interaktiven Kommunikation und öffnen Sie es im Bearbeitungsmodus.
+1. Um das Framework für Zielgruppen für adaptive Formulare zu aktivieren, navigieren Sie zu Ihrem Formular oder zu Ihrer interaktiven Kommunikation und öffnen Sie es im Bearbeitungsmodus.
 
    Um ein Formular oder eine interaktive Kommunikation im Bearbeitungsmodus zu öffnen, tippen Sie auf **Wählen Sie** und dann auf **Öffnen**.
 
