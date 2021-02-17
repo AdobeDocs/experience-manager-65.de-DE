@@ -70,7 +70,7 @@ Die meisten Quick-Beginn unter *Programmieren mit AEM Forms on JEE* rufen einen 
 
 [Quick Beginn (SOAP-Modus): Erstellen eines PDF-Dokuments basierend auf Fragmenten mithilfe der Java-API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api) (ruft den Assembler- und den Output-Dienst auf)
 
-[Quick Beginn (SOAP-Modus): Erstellen von PDF-Dokumenten mit gesendeten XML-Daten mit der Java-API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api) (ruft den Dienst &quot;Forms&quot;, &quot;Output&quot;und &quot;Dokument Management&quot;auf)
+[Quick Beginn (SOAP-Modus): Erstellen von PDF-Dokumenten mit gesendeten XML-Daten mithilfe der Java-API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api) (ruft den Dienst &quot;Forms&quot;, &quot;Output&quot;und &quot;Dokument Management&quot;auf)
 
 [Quick Beginn (SOAP-Modus): Übergeben von Dokumenten an den Forms-Dienst mit der Java-API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)  (ruft den Forms- und Dokument-Verwaltungsdienst auf)
 
