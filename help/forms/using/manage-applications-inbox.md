@@ -71,7 +71,7 @@ Wenn Sie eine Aufgabe öffnen, können Sie Aufgabendetails anzeigen und verfügb
    >
    >Wenn eine Aufgabe einer Gruppe zugewiesen ist, müssen Sie sie annehmen, damit Sie sie in der detaillierten Ansicht anzeigen können.
 
-![aufgabe-Details](assets/task-details.png)
+![Aufgabe-Details](assets/task-details.png)
 
 Die detaillierte Aufgabenansicht umfasst die folgenden Abschnitte:
 
@@ -142,7 +142,7 @@ Ein Eigentümer des Workflow-Modells kann Elemente im Zusammenhang mit AEM Arbei
       | allowExplizitesSharing | allowExplizitesSharing | BOOLESCH |
 
 
-   * Stellen Sie die Indizes über ein AEM Paket bereit. Sie können ein [AEM Archetype](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/developing/archetype)-Projekt verwenden, um ein bereitstellbares AEM zu erstellen. Verwenden Sie den folgenden Beispielcode, um einem AEM Archetype-Projekt Indizes hinzuzufügen:
+   * Stellen Sie die Indizes über ein AEM Paket bereit. Sie können ein [AEM Archetype](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype)-Projekt verwenden, um ein bereitstellbares AEM zu erstellen. Verwenden Sie den folgenden Beispielcode, um einem AEM Archetype-Projekt Indizes hinzuzufügen:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
