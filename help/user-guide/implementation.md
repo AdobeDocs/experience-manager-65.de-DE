@@ -20,15 +20,15 @@ Bist du AEM Entwickler? [Beginnen Sie mit der Entwicklung auf AEM.](/help/sites-
 
 ## Hauptkomponenten für AEM {#core-components-for-aem}
 
-[Nutzen Sie die erweiterbaren Hauptkomponenten, damit Autoren mühelos Inhalte erstellen können.](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html)
+[Nutzen Sie die erweiterbaren Hauptkomponenten, damit Autoren mühelos Inhalte erstellen können.](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
 
 ## HTL (HTML-Vorlagensprache) für AEM {#htl-for-aem}
 
-[Verwenden Sie die HTML-Vorlagensprache, um sie für AEM zu entwickeln.](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html)
+[Verwenden Sie die HTML-Vorlagensprache, um sie für AEM zu entwickeln.](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)
 
 ## Cloud Manager für AEM {#cloud-manager-for-aem}
 
-[Verstehen Sie, wie Sie Cloud Manager mit AEM verwenden.](https://docs.adobe.com/content/help/de/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+[Verstehen Sie, wie Sie Cloud Manager mit AEM verwenden.](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 
 ## Dispatcher-Konfiguration {#dispatcher-configuration}
 
