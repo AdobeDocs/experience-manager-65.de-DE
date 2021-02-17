@@ -20,7 +20,7 @@ ht-degree: 57%
 
 # Wasserzeichen in der PDF-Briefvorschau{#custom-watermark-in-letter-pdf-preview}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Agent-Benutzer zeigen in der Benutzeroberfläche „Korrespondenz erstellen“ die Korrespondenz in der endgültigen Form an, in der sie zur Nachbearbeitung gesendet wird, z. B. für E-Mails oder zum Drucken.
 
