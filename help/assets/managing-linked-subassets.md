@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
 source-wordcount: '1348'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
 
@@ -25,7 +25,7 @@ Referenzen werden auf der Grundlage von Pfad, Dokument-ID und Instanz-ID der ref
 
 Sie können auf vorhandene digitale Assets in einer [!DNL Adobe Illustrator]-Datei verweisen.
 
-1. Rufen Sie die digitalen Assets mit [[!DNL Experience Manager] Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) auf dem lokalen Dateisystem ab. Navigieren Sie zum Dateisystemspeicherort des Assets, auf den Sie verweisen möchten.
+1. Rufen Sie die digitalen Assets mit [[!DNL Experience Manager] Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de) auf dem lokalen Dateisystem ab. Navigieren Sie zum Dateisystemspeicherort des Assets, auf den Sie verweisen möchten.
 1. Ziehen Sie das Asset aus dem lokalen Ordner in die Datei [!DNL Illustrator].
 
 1. Speichern Sie die Datei [!DNL Illustrator] auf dem gemounteten Laufwerk oder [upload](/help/assets/manage-assets.md#uploading-assets) in das [!DNL Experience Manager]-Repository.
@@ -40,7 +40,7 @@ Sie können auf vorhandene digitale Assets in einer [!DNL Adobe Illustrator]-Dat
 
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften von Ansichten]**. Auf der Seite [!UICONTROL Properties] wird die Liste der Dateien, die auf das aktuelle Asset verweisen, in der Spalte **[!UICONTROL References]** auf der Registerkarte **[!UICONTROL Basic]** angezeigt.
 
-   ![ansicht der Verweise auf Experience Manager Assets in der Spalte &quot;Verweise&quot;in den Asset-Details](assets/asset-references.png)
+   ![Ansicht der Verweise auf Experience Manager Assets in der Spalte &quot;Verweise&quot;in den Asset-Details](assets/asset-references.png)
 
    *Abbildung: Asset-Verweise in den Asset-Details.*
 
@@ -119,7 +119,7 @@ Für [!DNL InDesign] können Sie Seiten mit [!DNL InDesign Server] extrahieren. 
 
 Die folgenden Optionen stehen in der Symbolleiste, in der linken Leiste und in den Seiten-Viewer-Steuerelementen zur Verfügung:
 
-* **[!UICONTROL Desktop-]** Aktionen zum Öffnen oder Einblenden eines bestimmten Teilassets mit der  [!DNL Experience Manager] Desktop-App. Erfahren Sie, wie Sie mit der Desktop-App [die Desktop-Aktionen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) konfigurieren, wenn Sie [!DNL Experience Manager] verwenden.
+* **[!UICONTROL Desktop-]** Aktionen zum Öffnen oder Einblenden eines bestimmten Teilassets mit der  [!DNL Experience Manager] Desktop-App. Erfahren Sie, wie Sie mit der Desktop-App [die Desktop-Aktionen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#desktopactions-v2) konfigurieren, wenn Sie [!DNL Experience Manager] verwenden.
 
 * **[!UICONTROL Mit]** der Option &quot;Eigenschaften&quot;wird die Seite &quot;  Eigenschaften&quot;des jeweiligen Unterassets geöffnet.
 
