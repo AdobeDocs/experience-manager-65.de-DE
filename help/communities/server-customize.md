@@ -70,7 +70,7 @@ Ein Handle für den OSGi-Dienst wird durch Aufrufen von `com.adobe.cq.social.scf
 
 Die Endpunkte der HTTP-API-POST sind PostOperation-Klassen, die durch Implementierung der `SlingPostOperation`-Schnittstelle (package `org.apache.sling.servlets.post`) definiert werden.
 
-Die Endimplementierung von `PostOperation` setzt `sling.post.operation` auf einen Wert, auf den der Vorgang reagieren soll. Alle POST-Anfragen mit einem:operation-Parameter, der auf diesen Wert gesetzt ist, werden dieser Implementierungsklasse übertragen.
+Die `PostOperation`-Endimplementierung setzt `sling.post.operation` auf einen Wert, auf den der Vorgang reagieren soll. Alle POST-Anfragen mit einem:operation-Parameter, der auf diesen Wert gesetzt ist, werden dieser Implementierungsklasse übertragen.
 
 Das `PostOperation` ruft das `SocialOperation` auf, das die für den Vorgang erforderlichen Aktionen ausführt.
 
