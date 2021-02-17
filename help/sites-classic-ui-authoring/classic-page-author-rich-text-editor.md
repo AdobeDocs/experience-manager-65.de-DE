@@ -77,7 +77,7 @@ Alle Funktionen arbeiten als Schalter, wenn Sie also erneut darauf klicken, wird
 
 ### Vordefinierte Stile und Formate  {#predefined-styles-and-formats}
 
-![cq55_rte_stylesparagraf](assets/cq55_rte_stylesparagraph.png)
+![cq55_rte_stylesparagraphen](assets/cq55_rte_stylesparagraph.png)
 
 Ihre Installation kann außerdem vordefinierte Stile und Formate aufweisen, die in den Dropdownlisten **[!UICONTROL Art]** (also Stil) und **[!UICONTROL Format]** zur Verfügung stehen und auf von Ihnen ausgewählten Text angewendet werden können.
 
