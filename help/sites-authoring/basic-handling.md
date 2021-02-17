@@ -77,12 +77,12 @@ Sie können das globale Navigationsfenster schließen, indem Sie auf **Schließe
 
 Die globale Navigation verfügt über zwei Fenster, die am linken Bildschirmrand durch Symbole dargestellt werden:
 
-* **[Navigation](/help/sites-authoring/basic-handling.md#navigation-panel)** – dargestellt durch einen Kompass     
+* **[Navigation](/help/sites-authoring/basic-handling.md#navigation-panel)** – dargestellt durch einen Kompass 
 * **[Tools](/help/sites-authoring/basic-handling.md#tools-panel)** – dargestellt durch einen Hammer
 
 Die in diesen Fenstern verfügbaren Optionen werden im Folgenden beschrieben.
 
-### Navigationsfenster     {#navigation-panel}
+### Navigationsfenster  {#navigation-panel}
 
 Das Navigationsfenster bietet Zugriff auf die AEM Konsolen:
 
@@ -183,7 +183,7 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
 
    ![](do-not-localize/screen_shot_2018-03-23at103603.png)
 
-* [Schienenauswahl](/help/sites-authoring/basic-handling.md#rail-selector) 
+* [Schienenauswahl](/help/sites-authoring/basic-handling.md#rail-selector)
 
    ![](do-not-localize/screen_shot_2018-03-23at103943.png)
 
@@ -294,7 +294,7 @@ Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbo
 >
 >Die einzelnen verfügbaren Symbole werden gemäß der/des jeweils zutreffenden Konsole/Funktion/Szenarios dokumentiert.
 
-## Schnellaktionen      {#quick-actions}
+## Schnellaktionen   {#quick-actions}
 
 In der [Kartenansicht](#cardviewquickactions) sind bestimmte Aktionen sowohl als Schnellaktionssymbole als auch auf der Symbolleiste vorhanden. Schnellaktionssymbole sind für jeweils ein einzelnes Element verfügbar. Die Notwendigkeit der Vorauswahl entfällt dabei.
 
@@ -315,9 +315,9 @@ Sie können Ressourcen in jeder der verfügbaren Ansichten anzeigen, darin navig
 
 >[!NOTE]
 >
->Standardmäßig zeigt AEM Assets in keiner der Ansichten die ursprüngliche Darstellung von Assets als Miniaturansicht in der Benutzeroberfläche an. Administratoren können mithilfe von Überlagerungen AEM Assets so konfigurieren, dass ursprüngliche Darstellungen als Miniaturen angezeigt werden.
+>Standardmäßig zeigt AEM Assets in keiner der Ansichten die ursprüngliche Ausgabedarstellung von Assets als Miniaturansicht in der Benutzeroberfläche an. Administratoren können mithilfe von Überlagerungen AEM Assets so konfigurieren, dass ursprüngliche Ausgabedarstellungen als Miniaturen angezeigt werden.
 
-### Auswählen von Ressourcen      {#selecting-resources}
+### Auswählen von Ressourcen   {#selecting-resources}
 
 Die Auswahl einer bestimmten Ressource hängt von der Kombination der Ansicht und des Geräts ab:
 
@@ -372,7 +372,7 @@ Die Auswahl einer bestimmten Ressource hängt von der Kombination der Ansicht un
 
 #### Alle auswählen {#select-all}
 
-Sie können alle Elemente in einer Ansicht auswählen, indem Sie in der oberen rechten Ecke der Konsole auf die Option **Alles auswählen** klicken.  
+Sie können alle Elemente in einer Ansicht auswählen, indem Sie in der oberen rechten Ecke der Konsole auf die Option **Alles auswählen** klicken.
 
 * In der **Kartenansicht** sind alle Karten ausgewählt.
 * In der **Listenansicht** sind alle Elemente in der Liste ausgewählt.
@@ -416,7 +416,7 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
 
    * Beim Tippen bzw. Klicken werden Ressourcenname und Pfeil hervorgehoben.
 
-   ![bh-17](assets/bh-17.png)
+   ![bh-15](assets/bh-17.png)
 
    * Die untergeordneten Elemente der ausgewählten Ressource werden in der Spalte rechts neben der Ressource angezeigt.
    * Wenn Sie auf einen Ressourcennamen tippen oder klicken, der keine untergeordneten Elemente besitzt, werden die Ressourcendetails in der letzten Spalte angezeigt.
@@ -465,7 +465,7 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
 ![bh-19](assets/bh-19.png)
 
 * In der Listenansicht werden Informationen für jede Ressource auf der aktuellen Ebene aufgelistet.
-* Sie können in der Struktur nach unten navigieren, indem Sie auf den Ressourcennamen tippen/klicken, und über die [Breadcrumbs in der Kopfzeile](/help/sites-authoring/basic-handling.md#the-header) wieder nach oben navigieren. 
+* Sie können in der Struktur nach unten navigieren, indem Sie auf den Ressourcennamen tippen/klicken, und über die [Breadcrumbs in der Kopfzeile](/help/sites-authoring/basic-handling.md#the-header) wieder nach oben navigieren.
 
 * Um alle Elemente in der Liste auszuwählen, verwenden Sie das Kontrollkästchen links oben in der Liste.
 
@@ -486,7 +486,7 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
    * **Geändert** – Datum der letzten Änderung und der Benutzer, der die Änderung vorgenommen hat
    * **Veröffentlicht** – Veröffentlichungsstatus
    * **Vorlage** – Vorlage, auf der die Seite basiert
-   * **Workflow** - Workflow, der derzeit auf die Seite angewendet ist. Weitere Informationen sind verfügbar, wenn Sie die Maus darauf bewegen oder die Timeline öffnen.
+   * **Workflow** - Workflow, der derzeit auf die Seite angewendet ist. Weitere Informationen sind verfügbar, wenn Sie die Maus darauf bewegen oder die Zeitleiste öffnen.
 
    * **Seitenanalyse**
    * **Individuelle Besucher**
@@ -520,7 +520,7 @@ Die **Schienenauswahl** befindet sich im Fenster oben links. Je nach Konsole ste
 
 ![bh-25](assets/bh-25.png)
 
-So können Sie z. B. in Sites nur Inhalt (Standard), die Inhaltsstruktur, die Timeline, Verweise oder das seitliche Bedienfeld „Filter“ auswählen.
+So können Sie z. B. in Sites nur Inhalt (Standard), die Inhaltsstruktur, die Zeitleiste, Verweise oder das seitliche Bedienfeld „Filter“ auswählen.
 
 Wenn „Nur Inhalt“ ausgewählt ist, wird lediglich das Schienensymbol angezeigt. Bei Auswahl einer anderen Option wird der Optionsname neben dem Schienensymbol angezeigt.
 
@@ -542,11 +542,11 @@ Mit dem seitlichen Bedienfeld der Inhaltsstruktur und einer Listen- oder Kartena
 >
 >Weitere Informationen finden Sie unter [Tastaturbefehle](/help/sites-authoring/keyboard-shortcuts.md).
 
-### Timeline {#timeline}
+### Zeitleiste {#timeline}
 
-Die Timeline kann zur Anzeige und/oder Einleitung von Ereignissen in Verbindung mit der ausgewählten Ressource verwendet werden. Öffnen Sie die Timeline-Spalte über die Schienenauswahl:
+Die Timeline kann zur Anzeige und/oder Einleitung von Ereignissen in Verbindung mit der ausgewählten Ressource verwendet werden. Öffnen Sie die Zeitleisten-Spalte über die Schienenauswahl:
 
-Die Timeline-Spalte bietet folgende Möglichkeiten:
+Die Zeitleisten-Spalte bietet folgende Möglichkeiten:
 
 * [Anzeigen verschiedener Ereignisse im Zusammenhang mit einem ausgewählten Element](#timelineviewevents)
 
@@ -563,9 +563,9 @@ Die Timeline-Spalte bietet folgende Möglichkeiten:
       * Alle anzeigen
 
 
-* [Hinzufügen/Anzeigen von Kommentaren zum gewählten Element](#timelineaddingandviewingcomments) Das Feld **Kommentare** wird unten in der Ereignisliste angezeigt. Wenn Sie einen Kommentar eingeben (und anschließend die Eingabetaste drücken), wird der Kommentar registriert. Er wird angezeigt, wenn **Kommentare** oder **Alle anzeigen** ausgewählt wird.
+* [Hinzufügen/Anzeigen von Kommentaren zum gewählten Element ](#timelineaddingandviewingcomments) Das Feld **Kommentare** wird unten in der Ereignisliste angezeigt. Wenn Sie einen Kommentar eingeben (und anschließend die Eingabetaste drücken), wird der Kommentar registriert. Er wird angezeigt, wenn **Kommentare** oder **Alle anzeigen** ausgewählt wird.
 
-* Einige Konsolen weisen weitere Funktionalitäten auf. So können Sie z. B. in der Sites-Konsole 
+* Einige Konsolen weisen weitere Funktionalitäten auf. So können Sie z. B. in der Sites-Konsole
 
    * [eine Version speichern](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui).
    * [einen Workflow starten](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
