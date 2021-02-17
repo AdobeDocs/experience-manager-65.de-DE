@@ -134,7 +134,7 @@ So stellen Sie die gleiche Konfiguration in der Umgebung &quot;Veröffentlichen&
 
 ## Verwalten von Benutzerdaten {#managing-user-data}
 
-Informationen zu *Profilen*, *Benutzergruppen* und *die häufig in die Umgebung &quot;Veröffentlichen&quot;eingegeben wurden, finden Sie unter:*
+Informationen zu *Benutzergruppen*, *Benutzergruppen* und *die häufig in die Umgebung &quot;Veröffentlichen&quot;eingegeben werden, finden Sie unter*
 
 * [Benutzersynchronisierung](sync.md)
 * [Verwalten von Benutzern und Benutzergruppen](users.md)
