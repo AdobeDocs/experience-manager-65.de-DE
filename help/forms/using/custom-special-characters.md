@@ -20,14 +20,14 @@ ht-degree: 69%
 
 # Benutzerdefinierte Sonderzeichen in Correspondence Management{#custom-special-characters-in-correspondence-management}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Correspondence Management umfasst einen integrierten Standard-Support für 210 Sonderzeichen, die Sie mühelos in Briefen einfügen können.
 
 Sie können beispielsweise die folgenden Sonderzeichen einfügen:
 
 * Währungssymbole wie €,¥ und £
-* Mathematische Symbole wie z. B. □, □ und ^
+* Mathematische Symbole wie z. B. □, , ^ und ^
 * Interpunktionssymbole ‟ und&quot;
 
 Sie können Sonderzeichen in Briefe einfügen:
