@@ -25,7 +25,7 @@ Der Forms-Dienst kann die Werte berechnen, die ein Benutzer in ein Formular eing
 
 Im Rahmen des Formularentwurfsprozesses können Sie Berechnungen und Skripten verwenden, um eine bessere Benutzerfreundlichkeit zu gewährleisten. Berechnungen und Skripten können den meisten Formularfeldern und -objekten hinzugefügt werden. Sie müssen ein Formularentwurfsskript erstellen, um Berechnungsvorgänge für Daten durchzuführen, die ein Benutzer in ein interaktives Formular eingibt.
 
-Der Benutzer gibt Werte in das Formular ein und klickt auf die Schaltfläche Berechnen, um die Ergebnisse Ansicht. Der folgende Vorgang beschreibt eine Beispielanwendung, mit der ein Benutzer Daten berechnen kann:
+Der Benutzer gibt Werte in das Formular ein und klickt auf die Schaltfläche &quot;Berechnen&quot;, um die Ergebnisse Ansicht. Der folgende Vorgang beschreibt eine Beispielanwendung, mit der ein Benutzer Daten berechnen kann:
 
 * Der Benutzer greift auf eine HTML-Seite mit dem Namen StartLoan.html zu, die als Beginn der Webanwendung fungiert. Diese Seite ruft ein Java-Servlet mit dem Namen `GetLoanForm` auf.
 * Das Servlet `GetLoanForm` rendert ein Darlehensformular. Dieses Formular enthält ein Skript, interaktive Felder, eine Berechnungsschaltfläche und eine Senden-Schaltfläche.
