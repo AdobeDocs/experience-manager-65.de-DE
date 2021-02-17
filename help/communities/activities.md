@@ -44,7 +44,7 @@ Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](
 
 Wenn die [erforderlichen clientseitigen Bibliotheken](/help/communities/essentials-activities.md#essentials-for-client-side) einbezogen werden, wird die `Activity Streams`-Komponente wie folgt angezeigt:
 
-![aktivität-Streams](assets/activity-component.png)
+![Aktivität-Streams](assets/activity-component.png)
 
 ### Konfigurieren von Aktivitäts-Streams {#configuring-activity-streams}
 
