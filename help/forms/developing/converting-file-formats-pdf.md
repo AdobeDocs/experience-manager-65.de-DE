@@ -543,7 +543,7 @@ Konvertieren Sie ein PDF-Dokument mithilfe der Generate PDF API (Webdienst) in e
    * Ein `BLOB`-Objekt, das die zu konvertierende PDF-Datei darstellt.
    * Eine Zeichenfolge, die den Pfadnamen der zu konvertierenden Datei enthält.
    * Ein `java.lang.String`-Objekt, das den Dateispeicherort angibt.
-   * Ein Zeichenfolgenobjekt, das den Dateityp der Zielgruppe für die Konvertierung angibt. Geben Sie Folgendes an `RTF`.
+   * Ein Zeichenfolgenobjekt, das den Dateityp der Zielgruppe für die Konvertierung angibt. Geben Sie `RTF`.
    * Ein optionales `BLOB`-Objekt, das Einstellungen enthält, die beim Generieren des PDF-Dokuments angewendet werden sollen.
    * Ein Ausgabeparameter des Typs `BLOB`, der durch die `ExportPDF2`-Methode gefüllt wird. Die `ExportPDF2`-Methode füllt dieses Objekt mit dem konvertierten Dokument. (Dieser Parameterwert ist nur für den Webdienst-Aufruf erforderlich).
 
@@ -595,7 +595,7 @@ AppMon verwendet standardmäßige Win32-APIs, um mit Drittanbieteranwendungen zu
 
 Aufgrund einer Einschränkung bei diesen Win32-APIs ist AppMon nicht in der Lage, diese UI-Ereignis an bestimmte Windows-Typen zu senden, wie z. B. schwebende Menüleisten (z. B. TextPad) und bestimmte Dialoge, deren Inhalt nicht mit den Win32-APIs abgerufen werden kann.
 
-Eine schwebende Menüleiste lässt sich leicht visuell identifizieren. Es kann jedoch nicht möglich sein, die speziellen Dialoge nur durch visuelle Prüfung zu identifizieren. Sie benötigen eine Drittanbieteranwendung wie Microsoft Spy+ (Teil der Microsoft Visual C++-Entwicklungs-Umgebung) oder eine entsprechende WinID (die kostenlos von [https://www.dennisbabkin.com/php/download.php?what=WinID](https://www.dennisbabkin.com/php/download.php?what=WinID) heruntergeladen werden kann), um einen Dialog zu untersuchen, um festzustellen, ob AppMon mit standardmäßigen Win32-APIs interagieren kann.
+Eine schwebende Menüleiste lässt sich leicht visuell identifizieren. Es kann jedoch nicht möglich sein, die speziellen Dialoge nur durch visuelle Prüfung zu identifizieren. Sie benötigen eine Drittanbieteranwendung wie Microsoft Spy+ (Teil der Microsoft Visual C++-Entwicklungs-Umgebung) oder eine entsprechende WinID (die kostenlos von [https://www.dennisbabkin.com/php/download.php?what=WinID](https://www.dennisbabkin.com/php/download.php?what=WinID) heruntergeladen werden kann), um einen Dialog zu prüfen, um festzustellen, ob AppMon mit den standardmäßigen Win32-APIs interagieren kann.
 
 Wenn WinID in der Lage ist, den Inhalt des Dialogfelds wie Text, Unterfenster, Fensterklasse-ID usw. zu extrahieren, kann AppMon dies ebenfalls tun.
 
