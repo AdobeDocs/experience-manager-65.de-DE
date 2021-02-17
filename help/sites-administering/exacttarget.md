@@ -66,7 +66,7 @@ So erstellen Sie eine ExactTarget-Konfiguration über Cloud-Services:
 
 So erstellen Sie eine ExactTarget-Konfiguration über die Tools:
 
-1. Klicken Sie auf der Willkommensseite auf **Tools**. Oder navigieren Sie direkt dort, indem Sie zu `https://<hostname>:<port>/misadmin#/etc` gehen.
+1. Klicken Sie auf der Willkommensseite auf **Tools**. Oder navigieren Sie direkt dorthin, indem Sie zu `https://<hostname>:<port>/misadmin#/etc` gehen.
 1. Wählen Sie **Tools** > **Cloud Service-Konfigurationen** > **ExactTarget** aus.
 1. Klicken Sie auf **Neu**, um das Fenster **Seite erstellen **zu öffnen.
 
