@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '283'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
@@ -69,10 +69,10 @@ Einige Knoten im Pfad sind Ordner und einige sind Komponenten.
    * Wählen Sie **[!UICONTROL Alle speichern]**
 1. Löschen Sie den Standardwert `comments.jsp`
    * Knoten `/apps/social/commons/components/hbs/comments/comments.jsp` auswählen
-   * Wählen Sie **[!UICONTROL Löschen]**
+   * Wählen Sie **[!UICONTROL Löschen]** aus
 1. Löschen Sie die standardmäßige Datei &quot;comment.jsp&quot;
    * select node `/apps/social/commons/components/hbs/comments/comment/comment.jsp`
-   * Wählen Sie **[!UICONTROL Löschen]**
+   * Wählen Sie **[!UICONTROL Löschen]** aus
    * Wählen Sie **[!UICONTROL Alle speichern]**
 
 >[!NOTE]
