@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
 source-wordcount: '897'
-ht-degree: 42%
+ht-degree: 43%
 
 ---
 
@@ -80,7 +80,7 @@ Sie können nun die Miniaturen für Ihre Video-Assets mithilfe von Frames aus de
 
 ### Verbesserte Barrierefreiheit {#accessibility-enhancements}
 
-[!DNL Dynamic Media] Viewer unterstützen jetzt erweiterte Barrierefreiheitsfunktionen wie Aria-Unterstützung, Bildschirmlesehilfen und Alt-Text. Weitere Informationen finden Sie in den [Versionshinweisen zu Dynamic Media-Viewern](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+[!DNL Dynamic Media] Viewer unterstützen jetzt erweiterte Barrierefreiheitsfunktionen wie Aria-Unterstützung, Bildschirmlesehilfen und Alt-Text. Weitere Informationen finden Sie in den [Versionshinweisen zu Dynamic Media-Viewern](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=de).
 
 ## Verbessertes Sucherlebnis {#experience-enhancement-for-searching}
 
@@ -100,7 +100,7 @@ Sie können jetzt alle geladenen Assets in einem Ordner oder aus einem Suchergeb
 
 ## Verbesserte Metadaten {#metadata-enhancements}
 
-[!DNL Assets]Mit können Sie Metadatenschemata für Asset-Ordner erstellen, die die auf Ordnereigenschaften-Seiten angezeigten Layouts und Metadaten definieren. Sie können einem vorhandenen Ordner ein Ordner-Metadatenschema zu diesem Zeitpunkt oder beim Erstellen eines neuen Ordners zuweisen. Weitere Informationen finden Sie unter [Ordner-Metadatenschema](/help/assets/metadata-config.md#folder-metadata-schema).
+Mit [!DNL Assets] können Sie Metadatenschemata für Asset-Ordner erstellen, die die auf Seiten mit Ordnereigenschaften angezeigten Layouts und Metadaten definieren. Sie können einem vorhandenen Ordner ein Ordner-Metadatenschema zu diesem Zeitpunkt oder beim Erstellen eines neuen Ordners zuweisen. Weitere Informationen finden Sie unter [Ordner-Metadatenschema](/help/assets/metadata-config.md#folder-metadata-schema).
 
 Beim Festlegen kaskadierender Metadaten können die Optionen zur Laufzeit aus einer JSON-Datei geladen werden, anstatt sie manuell in das Formular einzugeben. Weitere Informationen finden Sie unter [Kaskadierende Metadaten](/help/assets/metadata-schemas.md#cascading-metadata).
 
