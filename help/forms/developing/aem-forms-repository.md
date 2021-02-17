@@ -68,7 +68,7 @@ Mithilfe der Repository-Dienst-API können Sie die folgenden Aufgaben ausführen
 
 >[!NOTE]
 >
->Mithilfe der Repository-API können Sie die Ressourcenverwaltung nicht verwalten, keine Ressourcen suchen oder keine Ressourcenbeziehungen über ein ECM-Repository angeben.
+>Mithilfe der Repository-API können Sie die Ressourcenverwaltung nicht verwalten, nach Ressourcen suchen oder Ressourcenbeziehungen mithilfe eines ECM-Repositorys festlegen.
 
 >[!NOTE]
 >
@@ -442,7 +442,7 @@ Listen mithilfe der Repository Service API (Java):
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Liste von Ressourcen mithilfe der Webdienst-API {#list-resources-using-the-web-service-api}
+### Liste von Ressourcen mit der Webdienst-API {#list-resources-using-the-web-service-api}
 
 Liste von Ressourcen mithilfe der Repository Service API (Webdienst):
 
