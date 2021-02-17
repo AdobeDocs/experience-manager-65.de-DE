@@ -19,7 +19,7 @@ ht-degree: 100%
 ---
 
 
-# Metadaten – Fragmenteigenschaften{#metadata-fragment-properties}
+# Metadaten – Fragmenteigenschaften {#metadata-fragment-properties}
 
 ## Bearbeiten von Eigenschaften/Metadaten {#editing-properties-meta-data}
 
@@ -33,7 +33,7 @@ Sie können die Metadaten (Eigenschaften) für das Inhaltsfragment anzeigen und 
 
    ![cfm-6420-06](assets/cfm-6420-06.png)
 
-1. Auf der Registerkarte **Einfach** können Sie die folgenden Optionen anzeigen oder bearbeiten:
+1. Auf der Registerkarte **Allgemein** können Sie die folgenden Optionen anzeigen oder bearbeiten:
 
    * Miniaturansicht, für die Sie ein **Bild hochladen** können
    * **Titel**
