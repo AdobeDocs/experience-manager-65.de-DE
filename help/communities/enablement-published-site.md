@@ -241,7 +241,7 @@ Für Zuweisungsberichte:
 
 * Wählen Sie **[!UICONTROL Gruppe]** (wählen Sie `Community Ski Class`)
 
-* Wählen Sie ein **[!UICONTROL Zuweisen]** (wählen Sie `Ski Lessons` aus)
+* Wählen Sie eine **[!UICONTROL Zuweisung]** (wählen Sie `Ski Lessons` aus)
 
 * Wählen Sie **[!UICONTROL Generieren]**
 
