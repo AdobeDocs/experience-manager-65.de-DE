@@ -34,7 +34,7 @@ Bei der Entwicklung einer mobilen App gibt es viele neue Probleme, die speziell 
 * Fehler oder Unterbrechungen: Was passiert, wenn während der Ausführung der App ein eingehender Aufruf oder eine eingehende Benachrichtigung erfolgt? Was passiert, wenn ein Netzwerkausfall vorliegt oder der Netzschalter ausgeschaltet ist?
 * Installation und Updates - Wie wird die Installation durchgeführt? Wie werden Updates herausgegeben?
 * Technisch - Verbraucht Ihre App zu viel Strom von einem Gerät?
-* Lokale Anpassung - Werden alle Bereiche in Ihrer App übersetzt?
+* lokale Anpassung - Werden alle Bereiche in Ihrer App übersetzt?
 * Zertifizierung - Wurde Ihre App zertifiziert? Können Kunden darauf vertrauen, dass alle datenschutzrechtlichen Anforderungen eingehalten werden?
 
 Diese Fragen sollten während Ihres automatisierten und manuellen Tests beantwortet werden.
