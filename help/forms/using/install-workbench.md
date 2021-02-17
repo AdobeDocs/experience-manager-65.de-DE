@@ -181,7 +181,7 @@ AEM Forms on JEE-Prozesse können mit dem Upgrade-Assistenten auf AEM Forms-Anwe
 
 ### Konfigurierung und Anmeldung bei einem Server {#configuring-and-logging-server}
 
-Um Workbench verwenden zu können, muss eine Instanz von AEM Forms ausgeführt werden, üblicherweise auf einem separaten Computer. Sie müssen über einen Benutzernamen und ein Kennwort für die Anmeldung bei AEM Forms sowie über den Serverspeicherort verfügen.
+Um Workbench verwenden zu können, muss eine Instanz von AEM Forms ausgeführt werden, üblicherweise auf einem separaten Computer. Sie müssen über einen Benutzernamen und ein Kennwort für die Anmeldung bei AEM Forms sowie über Details zum Serverstandort verfügen.
 
 >[!NOTE]
 >
