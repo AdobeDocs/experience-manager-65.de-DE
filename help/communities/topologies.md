@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 612d102b5925704ce459ad818554e487ec0d5355
 workflow-type: tm+mt
 source-wordcount: '560'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -72,7 +72,7 @@ Wenn es sich bei der Topologie um eine Veröffentlichungsfarm handelt, sind folg
 
 ### Empfohlen: DSRP, MSRP oder ASRP {#recommended-dsrp-msrp-or-asrp}
 
-| MicroKernel | SITE-INHALT | BENUTZER GENERIERTE INHALTE | DATENSPEICHERUNG RESOURCE PROVIDER | HÄUFIG GESPEICHERT |
+| MicroKernel | SITE-INHALT | BENUTZER GENERIERTE INHALTE | Datenspeicherung RESOURCE PROVIDER | HÄUFIG GESPEICHERT |
 |-------------|------------------------|----------------------------------|---------------------------|---------------|
 | beliebig | JCR | MySQL | DSRP | Ja |
 | beliebig | JCR | MongoDB | MSRP | Ja |
@@ -81,7 +81,7 @@ Wenn es sich bei der Topologie um eine Veröffentlichungsfarm handelt, sind folg
 ### JSRP {#jsrp}
 
 
-| Bereitstellung | SITE-INHALT | BENUTZER GENERIERTE INHALTE | DATENSPEICHERUNG RESOURCE PROVIDER | HÄUFIG GESPEICHERT |
+| Bereitstellung | SITE-INHALT | BENUTZER GENERIERTE INHALTE | Datenspeicherung RESOURCE PROVIDER | HÄUFIG GESPEICHERT |
 |----------------------|------------------------|----------------------------------|---------------------------|---------------------------------|
 | TarMK Farm (Standard) | JCR | JCR | JSRP | Nein |
 | Oak-Cluster | JCR | JCR | JSRP | Nur zur Veröffentlichung Umgebung |
