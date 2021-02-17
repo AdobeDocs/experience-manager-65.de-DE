@@ -55,7 +55,7 @@ In diesem Abschnitt der Dokumentation wird beschrieben, wie Sie eine Analytics-R
 
 1. [Replizieren Sie den kryptographischen ](#replicate-the-crypto-key) Schlüssel, um sicherzustellen, dass Verschlüsselung/Entschlüsselung in allen AEM korrekt ausgeführt wird.
 1. Vorbereitung einer Adobe Analytics [Report Suite](#adobe-analytics-report-suite-for-video-reporting)
-1. Erstellen Sie einen AEM Analytics [Cloud-Dienst](#aem-analytics-cloud-service-configuration) und [Framework](#aem-analytics-framework-configuration)
+1. Erstellen eines AEM Analytics [Cloud-Dienstes](#aem-analytics-cloud-service-configuration) und [Framework](#aem-analytics-framework-configuration)
 
 1. [Aktivieren von ](#enable-analytics-for-a-community-site) Analytics für eine Community-Site
 1. [****](#verify-analytics-to-aem-variable-mapping) VerifyAnalytics zu AEM Variablenzuordnung
@@ -67,7 +67,7 @@ In diesem Abschnitt der Dokumentation wird beschrieben, wie Sie eine Analytics-R
 
 Zur Konfiguration der Funktionen von Analytics für Communities müssen Sie mit Ihrem Kundenbetreuer zusammenarbeiten, um ein Adobe Analytics-Konto und [Report Suite](#adobe-analytics-report-suite-for-video-reporting) einzurichten. Nach der Festlegung sollten folgende Informationen verfügbar sein:
 
-* **Name der Firma**
+* **Unternehmensname**
 
    Die Firma, die mit dem Adobe Analytics-Konto verknüpft ist.
 
@@ -104,7 +104,7 @@ Durch die Anmeldung bei [Adobe Experience Cloud](https://docs.adobe.com/content/
 
    * **`event1`** durch  **`event7`** aktiviert
 
-   * Typ **`Counter`**
+   * type **`Counter`**
 
       * not **`Counter (no subrelations)`**
    * Kann vorhandene Ereignis wiederverwenden (umbenennen) oder neue erstellen, die für Communities-Funktionen verwendet werden können
@@ -428,7 +428,7 @@ Im Folgenden finden Sie ein Beispiel für Standardzuordnungen nach dem Einstieg-
    <td><strong>eVar10</strong></td>
   </tr>
   <tr>
-   <td><strong>ereignis1<br /> Ressourcenwiedergabe</strong></td>
+   <td><strong>Ereignis1<br /> Ressourcenwiedergabe</strong></td>
    <td><em>(eine)</em></td>
    <td><em>-</em></td>
    <td><em>-</em></td>
@@ -441,7 +441,7 @@ Im Folgenden finden Sie ein Beispiel für Standardzuordnungen nach dem Einstieg-
    <td><em>-</em></td>
   </tr>
   <tr>
-   <td><strong>ereignis2<br /> SCFView</strong></td>
+   <td><strong>Ereignis2<br /> SCFView</strong></td>
    <td><em>(eine)</em></td>
    <td><em>(b)</em></td>
    <td><em>(c)</em></td>
@@ -454,7 +454,7 @@ Im Folgenden finden Sie ein Beispiel für Standardzuordnungen nach dem Einstieg-
    <td><em>j)</em></td>
   </tr>
   <tr>
-   <td><strong>ereignis3<br /> SCFCreate (Post)</strong></td>
+   <td><strong>Ereignis3<br /> SCFCreate (Post)</strong></td>
    <td><em>-</em></td>
    <td><em>b)</em></td>
    <td><em>c)</em></td>
@@ -467,7 +467,7 @@ Im Folgenden finden Sie ein Beispiel für Standardzuordnungen nach dem Einstieg-
    <td><em>j)</em></td>
   </tr>
   <tr>
-   <td><strong>ereignis4<br /> SCFFollow</strong></td>
+   <td><strong>Ereignis4<br /> SCFFollow</strong></td>
    <td><em>-</em></td>
    <td><em>b)</em></td>
    <td><em>c)</em></td>
@@ -480,7 +480,7 @@ Im Folgenden finden Sie ein Beispiel für Standardzuordnungen nach dem Einstieg-
    <td><em>j)</em></td>
   </tr>
   <tr>
-   <td><strong>ereignis5<br /> SCFVoteUp</strong></td>
+   <td><strong>Ereignis5<br /> SCFVoteUp</strong></td>
    <td><em>-</em></td>
    <td><em>b)</em></td>
    <td><em>c)</em></td>
@@ -493,7 +493,7 @@ Im Folgenden finden Sie ein Beispiel für Standardzuordnungen nach dem Einstieg-
    <td><em>j)</em></td>
   </tr>
   <tr>
-   <td><strong>ereignis6<br /> SCFVoteDown</strong></td>
+   <td><strong>Ereignis6<br /> SCFVoteDown</strong></td>
    <td><em>-</em></td>
    <td><em>b)</em></td>
    <td><em>c)</em></td>
@@ -506,7 +506,7 @@ Im Folgenden finden Sie ein Beispiel für Standardzuordnungen nach dem Einstieg-
    <td><em>j)</em></td>
   </tr>
   <tr>
-   <td><strong>ereignis7<br /> SCFRate</strong></td>
+   <td><strong>Ereignis7<br /> SCFRate</strong></td>
    <td><em>-</em></td>
    <td><em>b)</em></td>
    <td><em>c)</em></td>
@@ -630,7 +630,7 @@ Nachdem eine für Analytics aktivierte Community-Site veröffentlicht wurde, kan
 
 Das Abfrageintervall steuert die Häufigkeit von Anfragen an Adobe Analytics, nach denen Daten abgerufen und in [SRP](/help/communities/working-with-srp.md) gespeichert werden sollen.
 
-Wenn die Daten als &quot;Big Data&quot;kategorisiert werden können, kann eine häufigere Abfrage zu einer hohen Belastung der Community-Site führen.
+Wenn die Daten als &quot;Big Data&quot;kategorisiert werden können, kann eine häufigere Abfrage eine große Belastung für die Community-Site bedeuten.
 
 Die Standardabfrage **Importintervall** ist auf 12 Stunden eingestellt.
 
