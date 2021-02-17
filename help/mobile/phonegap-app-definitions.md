@@ -38,7 +38,7 @@ Mit App-Definitionen können Sie identifizieren, welche Bereiche und anderen Kon
 
 1. Wählen Sie **Apps** aus **Mobile** und klicken Sie auf **Erstellen.**
 
-   Wählen Sie **App** und geben Sie Details ein, um Ihre neue App zu erstellen.
+   Wählen Sie **App** aus und geben Sie Details ein, um Ihre neue App zu erstellen.
 
    ![chlimage_1-11](assets/chlimage_1-11.gif)
 
