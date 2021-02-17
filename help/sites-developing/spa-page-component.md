@@ -94,7 +94,7 @@ Die Meta-Ressourceneigenschaften, die den SPA-Inhalt beschreiben:
 >
 >Dieses Dokument verwendet die App &quot;We.Retail Protokoll&quot;nur zu Demonstrationszwecken. Sie sollte nicht für Projektaufgaben verwendet werden.
 >
->Jedes AEM Projekt sollte das [AEM Projekt Archetype](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/developing/archetype/overview.html) nutzen, das SPA Projekte mit React oder Angular unterstützt und das SPA SDK nutzt.Alle SPA Projekte auf AEM sollten auf dem Maven Archetype for SPA Starter Kit basieren.
+>Jedes AEM Projekt sollte das [AEM Projekt Archetype](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html) nutzen, das SPA Projekte mit React oder Angular unterstützt und das SPA SDK nutzt.Alle SPA Projekte auf AEM sollten auf dem Maven Archetype for SPA Starter Kit basieren.
 
 ## Synchronisation von Seiteneditor-Überlagerungen {#page-editor-overlay-synchronization}
 
