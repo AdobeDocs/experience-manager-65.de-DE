@@ -50,7 +50,7 @@ Bevor Autoren zielgerichteten Inhalt in einer Anwendung generieren können, muss
 
 Benutzer, die Zugriff auf die Personalisierungskonsole benötigen, müssen Teil der `target-activity-authors`-Gruppe sein.
 
-Es wird empfohlen, dass im Rahmen der Benutzer- und Gruppeneinrichtung die Zielgruppe-Aktivität-Gruppe der Gruppe apps-admins hinzugefügt wird. Durch Hinzufügen der Zielgruppe-Aktivität-Autorengruppe können Benutzer den Eintrag im Menü &quot;Personalisierung&quot;sehen.
+Es wird empfohlen, dass im Rahmen der Benutzer- und Gruppeneinrichtung die Zielgruppe-Aktivität-Gruppe der Gruppe apps-admins hinzugefügt wird. Wenn Sie die Zielgruppe-Aktivität-Autorengruppe hinzufügen, können Benutzer den Eintrag im Navigationsmenü &quot;Personalisierung&quot;sehen.
 
 >[!NOTE]
 >
