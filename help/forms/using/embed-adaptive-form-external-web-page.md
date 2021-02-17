@@ -27,7 +27,7 @@ Führen Sie folgende Schritte aus, bevor Sie ein adaptives Formular in eine exte
 
 * Veröffentlichen Sie das einzubettende adaptive Formular in der Veröffentlichungsinstanz von AEM Forms Server.
 * Erstellen Sie auf Ihrer Website eine Webseite oder legen Sie sie fest, um das adaptive Formular zu hosten. Stellen Sie sicher, dass die Webseite jQuery-Dateien aus einem CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) lesen kann oder eine lokale Kopie der jQuery-Datei eingebettet ist. [ jQuery ist erforderlich, um ein adaptives Formular zu rendern.
-* Wenn sich AEM Server und die Webseite auf unterschiedlichen Domänen befinden, führen Sie die Schritte im Abschnitt [Aktivieren Sie AEM Forms, um adaptive Formulare für eine domänenübergreifende Site](#cross-site) bereitzustellen.
+* Wenn sich AEM Server und die Webseite auf verschiedenen Domänen befinden, führen Sie die Schritte im Abschnitt [Aktivieren Sie AEM Forms, um adaptive Formulare für eine domänenübergreifende Site](#cross-site) bereitzustellen.
 
 ## Adaptives Formular einbetten {#embed-adaptive-form}
 
