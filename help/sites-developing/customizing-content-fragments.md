@@ -19,7 +19,7 @@ ht-degree: 84%
 ---
 
 
-# Anpassen und Erweitern von Inhaltsfragmenten{#customizing-and-extending-content-fragments}
+# Anpassen und Erweitern von Inhaltsfragmenten {#customizing-and-extending-content-fragments}
 
 Ein Inhaltsfragment erweitert ein Standard-Asset. Weitere Informationen zu Inhaltsfragmenten finden Sie unter:
 
@@ -450,7 +450,7 @@ Folgende Prozesse sind involviert:
    * Alle Änderungen (die automatische Speicherung eingeschlossen) werden am aktiven Inhaltsfragment vorgenommen, nicht in einem separaten, geschützten Bereich.
    * Daher werden diese Änderungen sofort auf den AEM-Seiten übernommen, die auf das entsprechende Inhaltsfragment verweisen.
 
-#### Aktionen     {#actions}
+#### Aktionen   {#actions}
 
 Folgende Aktionen sind möglich:
 
