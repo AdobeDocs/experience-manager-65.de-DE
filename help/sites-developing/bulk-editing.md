@@ -70,7 +70,7 @@ Felder werden in der Seitenkomponente aktiviert (*nicht* in der Vorlage):
 
    >[!NOTE]
    >
-   >Für das Beispiel wird angenommen, dass die Hauptkomponenten auf die Instanz installiert wurden, das der Fall ist, wenn die Instanz mit We.Retail-Beispielinhalt ausgeführt wird. Weitere Informationen finden Sie in der [Dokumentation zu Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html)
+   >Für das Beispiel wird angenommen, dass die Hauptkomponenten auf die Instanz installiert wurden, das der Fall ist, wenn die Instanz mit We.Retail-Beispielinhalt ausgeführt wird. Weitere Informationen finden Sie in der [Dokumentation zu Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
 
 1. Navigieren Sie zum erforderlichen Feld innerhalb der Definition `cq:dialog`.
 1. Definieren Sie die folgende Eigenschaft auf dem Feldknoten:
