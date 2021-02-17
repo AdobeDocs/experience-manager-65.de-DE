@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 418e7fad2d990f1a7cb3b69ab4c290ca1b7075ba
 workflow-type: tm+mt
 source-wordcount: '633'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -68,8 +68,8 @@ Das Löschen der automatisch erstellten JSP-Datei erfolgt, weil stattdessen die 
 
 1. Erweitern Sie den soeben erstellten Knoten: `/apps/custom/components/comments`
 1. Wählen Sie **[!UICONTROL Alle speichern]**
-1. Klicken Sie mit der rechten Maustaste auf `comments.jsp`
-1. Wählen Sie **[!UICONTROL Löschen]**
+1. Klicken Sie mit der rechten Maustaste `comments.jsp`
+1. Wählen Sie **[!UICONTROL Löschen]** aus
 1. Wählen Sie **[!UICONTROL Alle speichern]**
 
 ![create-component](assets/create-component.png)
@@ -98,8 +98,8 @@ Das Löschen der automatisch erstellten JSP-Datei erfolgt, weil stattdessen die 
 
 1. Erweitern Sie den soeben erstellten Knoten: `/apps/custom/components/comments/comment`
 1. Wählen Sie **[!UICONTROL Alle speichern]**
-1. Klicken Sie mit der rechten Maustaste auf `comment.jsp`
-1. Wählen Sie **[!UICONTROL Löschen]**
+1. Klicken Sie mit der rechten Maustaste `comment.jsp`
+1. Wählen Sie **[!UICONTROL Löschen]** aus
 1. Wählen Sie **[!UICONTROL Alle speichern]**
 
 ![create-child-component](assets/create-child-component.png)
