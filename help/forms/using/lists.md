@@ -101,7 +101,7 @@ Die Correspondence Management Solution unterstützt zwei Arten dynamischer Daten
 1. Fügen Sie ggf. Sonderzeichen in das Dokumentfragment ein. Beispielsweise können Sie über die Sonderzeichenpalette die folgenden Zeichen einfügen:
 
    * Währungssymbole wie €,¥ und £
-   * Mathematische Symbole wie z. B. □, □ und ^
+   * Mathematische Symbole wie z. B. □, , ^ und ^
    * Interpunktionssymbole wie ‟ und&quot;
 
    ![specialcharacters-1](assets/specialcharacters-1.png)
