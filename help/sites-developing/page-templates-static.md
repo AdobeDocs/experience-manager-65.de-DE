@@ -65,7 +65,7 @@ Eine Vorlage ist ein Knoten des Typs cq:Template mit den folgenden Eigenschaften
   </tr>
   <tr>
    <td> jcr:created</td>
-   <td> Datum</td>
+   <td> Datum </td>
    <td>Erstellungsdatum der Vorlage.<br /> </td>
   </tr>
   <tr>
@@ -192,7 +192,7 @@ AEM bestimmt den relevantesten Stil für einen Inhaltsknoten in der folgenden Re
 * Wenn ein Entwurf für den Inhaltsknoten des übergeordneten Elements vorhanden ist, verwenden Sie diesen Entwurf.
 * Wenn ein Entwurf für einen beliebigen Knoten auf dem Pfad des Inhalts-Knotens vorhanden ist, verwenden Sie diesen Entwurf.
 
-Wenn es in den letzten beiden Fällen mehr als einen geeigneten Entwurf gibt, verwenden Sie den Entwurf, der der Inhaltsknoten am nächsten liegt.
+Wenn in den letzten beiden Fällen mehr als ein entsprechender Entwurf vorhanden ist, verwenden Sie den Entwurf, der der Inhaltsknoten am nächsten liegt.
 
 ### Entscheidungsbaum {#decision-tree}
 
