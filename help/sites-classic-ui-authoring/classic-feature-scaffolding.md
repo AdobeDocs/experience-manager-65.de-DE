@@ -87,7 +87,7 @@ Klicken Sie nun auf das Dialogfeld **Dialog > Registerkartenbedienfeld > Text > 
 
 Daraufhin wird die Eigenschaftenliste für dieses Feld auf der rechten Seite des Dialog-Editors wie folgt angezeigt:
 
-![liste_der_Eigenschaften](assets/list_of_properties.png)
+![Liste_der_Eigenschaften](assets/list_of_properties.png)
 
 Beachten Sie die Eigenschaft „Name“ für dieses Feld. Sie weist folgenden Wert auf:
 
@@ -168,4 +168,4 @@ Nach dem Entsperren können Sie die Vererbung wiederherstellen, indem Sie auf da
 
 >[!NOTE]
 >
->Wenn die Vererbung auf Seitenebene (von der Registerkarte &quot;Livecopy&quot;der Seiteneigenschaften) abgebrochen wird, sind alle Komponenten im Modus **Gerüst** bearbeitbar (sie werden im nicht gesperrten Zustand angezeigt).
+>Wenn die Vererbung auf Seitenebene (von der Registerkarte &quot;Livecopy&quot;der Seiteneigenschaften) abgebrochen wird, sind alle Komponenten im Modus **Gerüst** bearbeitbar (sie werden im nicht gesperrten Status angezeigt).
