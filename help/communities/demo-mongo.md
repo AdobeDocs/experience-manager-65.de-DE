@@ -159,7 +159,7 @@ Um den MongoDB-Stammspeicher zu testen und zu überprüfen, veröffentlichen Sie
 
 1. Ansicht Sie einfach den Kommentar auf der [Autoreninstanz](http://localhost:4502/content/community-components/en/comments.html) (wahrscheinlich noch als Admin/Admin angemeldet).
 
-   ![ansicht-Kommentar](assets/view-comment.png)
+   ![Ansicht-Kommentar](assets/view-comment.png)
 
    Hinweis: Während sich unter dem Autorenordner *asipath* JCR-Knoten befinden, gelten diese für das SCF-Framework. Die eigentliche UGC ist nicht in JCR, sondern in der MongoDB.
 
