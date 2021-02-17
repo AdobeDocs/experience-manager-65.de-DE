@@ -21,7 +21,7 @@ ht-degree: 88%
 
 # Prinzipalansicht für die Berechtigungsverwaltung{#principal-view-for-permissions-management}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 AEM 6.5 führt die Berechtigungsverwaltung für Benutzer und Gruppen ein. Die Hauptfunktionalität bleibt mit der klassischen Benutzeroberfläche identisch, ist jedoch benutzerfreundlicher und effizienter.
 
