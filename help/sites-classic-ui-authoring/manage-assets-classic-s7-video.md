@@ -16,7 +16,7 @@ ht-degree: 42%
 ---
 
 
-# Video{#video}
+# Video {#video}
 
 Assets bieten eine zentralisierte Verwaltung von Video-Assets, bei der Sie Videos direkt in Assets hochladen können, um sie automatisch in Dynamic Media Classic zu kodieren, und auf Dynamic Media Classic-Videos direkt aus Assets zum Erstellen von Seiten zugreifen können.
 
@@ -125,7 +125,7 @@ Die folgende Matrix verdeutlicht, wann Sie welche Komponente nutzen sollten:
 
 ## AEM-Videokomponente {#aem-video-component}
 
-Auch wenn die Verwendung der Dynamic Media Classic-Videokomponente für die Anzeige von Dynamic Media Classic-Videos empfohlen wird, wird in diesem Abschnitt beschrieben, wie Sie aus Gründen der Vollständigkeit Dynamic Media Classic-Videos mit der [!UICONTROL Foundation-Videokomponente] in AEM verwenden.
+Auch wenn die Verwendung der Dynamic Media Classic-Videokomponente für die Anzeige von Dynamic Media Classic-Videos empfohlen wird, wird in diesem Abschnitt beschrieben, wie Sie Dynamic Media Classic-Videos mit der [!UICONTROL Foundation-Videokomponente] in AEM verwenden, um die Vollständigkeit zu gewährleisten.
 
 ### AEM Video- und Dynamic Media Classic-Video-Vergleich {#aem-video-and-scene-video-comparison}
 
