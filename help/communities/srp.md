@@ -58,7 +58,7 @@ Nachdem Sie Site-Inhalte in der Umgebung für private Autoren entwickelt haben, 
 
 Für UGC wird der Inhalt von registrierten Site-Besuchern (Community-Mitgliedern) in der Umgebung zur Veröffentlichung eingegeben. Das passiert zufällig.
 
-Für die Verwaltung und den Berichte ist es nützlich, von der Umgebung des Privatautors aus Zugriff auf UGC zu haben. Mit SRP ist der Zugriff auf UGC vom Autor konsistenter und leistungsfähiger, da eine umgekehrte Replizierung von der Veröffentlichung zum Autor nicht erforderlich ist.
+Für die Verwaltung und den Berichte ist es nützlich, von der Umgebung des Privatautors Zugriff auf UGC zu haben. Mit SRP ist der Zugriff auf UGC vom Autor konsistenter und leistungsfähiger, da eine umgekehrte Replizierung von der Veröffentlichung zum Autor nicht erforderlich ist.
 
 ## Über SRP {#about-srp}
 
