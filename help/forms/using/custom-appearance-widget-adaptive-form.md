@@ -226,7 +226,7 @@ Werfen wir nun einen Blick auf ein Beispiel, um ein benutzerdefiniertes Erschein
 
    1. Suchen Sie den Ordner aus, in dem Sie den Befehl `archetype:generate` durchgeführt haben.
 
-   1. Klicken Sie auf **[!UICONTROL Finish]**.
+   1. Klicken Sie auf **[!UICONTROL Beenden]**.
 
       ![eclipse-screenshot](assets/eclipse-screenshot.png)
 
