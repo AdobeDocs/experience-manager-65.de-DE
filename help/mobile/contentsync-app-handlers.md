@@ -178,11 +178,11 @@ Der Handler mobileappsoffers erweitert den Handler mobileappspages und fügt die
 * ***locationRoot - Zeichenfolge***  - geben Sie den Speicherort der Mobilanwendung an
 * ***includePageTypes - String*** - standardmäßig unterstützt cq/personalization/components/teaserpage und cq/personalization/components/offerproxy
 * ***selector - String*** - sollte auf tandt eingestellt werden
-* ***path - Zeichenfolge*** - der Pfad zur Marke der Kampagne
+* ***path - String*** - der Pfad zur Marke der Kampagne
 
 **** mobileappconfigDer Content-Synchronisierungs-Handler mobileappconfig bietet eine Möglichkeit, JSON-Daten in die Datei MobileAppsConfig.json zu injizieren. Um eine Anbieterklasse zu registrieren, fügen Entwickler ihre MobileAppsInfoProvider-Klasse mit der Liste der Anbieter hinzu. Der Handler durchläuft die Liste von MobileAppsInfoProviders und ermöglicht es dem Anbieter, Daten in die resultierende JSON-Datei einzufügen. Die Liste der Eigenschaften, die dieser Handler unterstützt, lautet:
 
-* ***path **-**String*** : der Pfad zu einem Knoten einer App-Instanz mit &quot;pge-type=app-instance&quot;oder einer RT, die /libs/mobileapps/core/components/instance erweitert
+* ***path **-**String*** : Der Pfad zu einem Knoten einer App-Instanz mit &quot;pge-type=app-instance&quot;oder einer RT, die /libs/mobileapps/core/components/instance erweitert
 * ***providers - String*** `[]`  - die Liste voll qualifizierter MobileAppsInfoProviders
 * ***targetRootDirectory - String***  - der Ordner, in den die Datei MobileAppsConfig.json geschrieben werden soll.
 * **fileName - String**  - optionaler Name der Datei, in die JSON geschrieben werden soll, standardmäßig MobileAppsConfig.json
