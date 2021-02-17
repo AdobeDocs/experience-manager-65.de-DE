@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: d0842a5994068b1e9a92cd14c1a59f1ea1a6c8b8
 workflow-type: tm+mt
 source-wordcount: '3533'
-ht-degree: 83%
+ht-degree: 87%
 
 ---
 
@@ -62,7 +62,7 @@ Das Erweitern einer vorhandenen Komponente kann mit der [Ressourcentyphierarchie
 
 >[!NOTE]
 >
->Komponenten können mit einer Überlagerung ebenfalls neu definiert werden, die auf der Suchpfadlogik basiert. In diesem Fall wird jedoch der [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) nicht ausgelöst und `/apps` muss die gesamte Überlagerung definieren.
+>Komponenten können mit einer Überlagerung ebenfalls neu definiert werden, die auf der Suchpfadlogik basiert. In diesem Fall wird der [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) nicht ausgelöst und `/apps` muss die gesamte Überlagerung definieren.
 
 >[!NOTE]
 >
@@ -78,11 +78,11 @@ Siehe [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) f
 
 ## Definieren von Markup  {#defining-the-markup}
 
-Ihre Komponente wird mit [HTML](https://www.w3schools.com/htmL/html_intro.asp) gerendert. Ihre Komponente muss den HTML-Code definieren, der erforderlich ist, um den erforderlichen Inhalt zu übernehmen und anschließend in der Autoren- und Veröffentlichungsumgebung nach Bedarf zu rendern.
+Ihre Komponente wird mit [HTML gerendert](https://www.w3schools.com/htmL/html_intro.asp). Ihre Komponente muss den HTML-Code definieren, der erforderlich ist, um den erforderlichen Inhalt zu übernehmen und anschließend in der Autoren- und Veröffentlichungsumgebung nach Bedarf zu rendern.
 
 ### Verwenden der HTML-Vorlagensprache {#using-the-html-template-language}
 
-Die [HTML Vorlagensprache (HTL)](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html), die mit AEM 6.0 eingeführt wurde, löst JSP (JavaServer Pages) als bevorzugtes und empfohlenes serverseitiges Vorlagensystem für HTML ab. Webentwicklern, die robuste Unternehmenswebsites erstellen müssen, hilft HTL, eine höhere Sicherheit und Entwicklungseffizienz zu erreichen.
+Die [HTML Vorlagensprache (HTL)](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html), die mit AEM 6.0 eingeführt wurde, löst JSP (JavaServer Pages) als bevorzugtes und empfohlenes serverseitiges Vorlagensystem für HTML ab. Webentwicklern, die robuste Unternehmenswebsites erstellen müssen, hilft HTL, eine höhere Sicherheit und Entwicklungseffizienz zu erreichen.
 
 >[!NOTE]
 >
@@ -96,9 +96,9 @@ Der Mechanismus zum Trennen der Logik von der Erscheinung hilft zu verdeutlichen
 
 ### Verwendung von Java {#using-java}
 
-[Mit der Java-Anwendungs-API von HTL kann eine HTL-Datei auf Hilfsmethoden in einer benutzerdefinierten Java-Klasse zugreifen.](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html) Dies ermöglicht es Ihnen, Java-Code zu verwenden, um die Logik zum Auswählen und Konfigurieren des Komponenteninhalts zu implementieren.
+[Mit der Java-Anwendungs-API von HTL kann eine HTL-Datei auf Hilfsmethoden in einer benutzerdefinierten Java-Klasse zugreifen.](https://helpx.adobe.com/de/experience-manager/htl/using/use-api-java.html) Dies ermöglicht es Ihnen, Java-Code zu verwenden, um die Logik zum Auswählen und Konfigurieren des Komponenteninhalts zu implementieren.
 
-### Verwenden von JavaScript  {#using-javascript}
+### Verwenden von JavaScript   {#using-javascript}
 
 [Die HTL JavaScript Use-API ermöglicht es einer HTL-Datei, auf den in JavaScript geschriebenen Hilfscode zuzugreifen](https://helpx.adobe.com/experience-manager/htl/using/use-api-javascript.html). Dies ermöglicht es Ihnen, JavaScript-Code zu verwenden, um die Logik zum Auswählen und Konfigurieren des Komponenteninhalts zu implementieren.
 
@@ -118,7 +118,7 @@ Das [Bearbeitungsverhalten einer Komponente wird konfiguriert, indem unter dem K
 
 ## Konfigurieren des Vorschauverhaltens {#configuring-the-preview-behavior}
 
-Der [WCM-Modus](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html)-Cookie wird beim Wechsel in den **Vorschaumodus** gesetzt, auch wenn die Seite nicht aktualisiert wird.
+Der [WCM-Modus](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html)-Cookie wird beim Wechsel in den Vorschaumodus gesetzt, auch wenn die Seite nicht aktualisiert wird.****
 
 Komponenten mit einem Rendering, die für den WCM-Modus empfindlich sind, müssen so definiert werden, dass sie sich selbst aktualisieren und sich dann auf den Wert des Cookies verlassen.
 
@@ -132,7 +132,7 @@ Dialogfelder werden verwendet, um dem Autor die Interaktion mit der Komponente z
 
 ### Coral- und Granite-Benutzeroberfläche {#coral-ui-and-granite-ui}
 
-Die [Coral-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) und die [Granite-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) definieren das moderne Erscheinungsbild von AEM.
+Die [Coral-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) und die [Granite-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) definieren das moderne Erscheinungsbild von AEM.
 
 [Die Granite-Benutzeroberfläche bietet einen großen Bereich der grundlegenden Komponenten (Widgets)](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html), die zum Erstellen Ihres Dialogfelds in der Autorenumgebung benötigt werden. Falls erforderlich, können Sie diese Auswahl erweitern und [Ihr eigenes Widget erstellen](#creatinganewwidget).
 
@@ -150,7 +150,7 @@ Ausführliche Informationen finden Sie hier:
 
    * Bietet Markup der Coral-Benutzeroberfläche in Sling-Komponenten zum Erstellen von UI-Konsolen und -Dialogfeldern
    * [Konzepte der Touch-optimierten Benutzeroberfläche von AEM - Granite-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Dokumentattion zur Granite-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
+   * [Dokumentation zur Granite-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
 
 >[!NOTE]
 >
@@ -186,7 +186,7 @@ newComponent (cq:Component)
 
 Das Anpassen eines Dialogfelds ähnelt der Entwicklung einer Komponente, da das Dialogfeld selbst eine Komponente ist (z. B. Markup, das von einem Komponentenskript zusammen mit dem von einer Client-Bibliothek bereitgestellten Verhalten/Stil gerendert wird).
 
-Beispiele finden Sie unter:
+Beispiele finden Sie hier:
 
 * `/libs/foundation/components/text/cq:dialog`
 * `/libs/foundation/components/download/cq:dialog`
@@ -222,7 +222,7 @@ Wenn Sie das Dialogfeld für einen einfachen Container für ein Formularelement 
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
-Genauer gesagt bietet die Granite-Benutzeroberfläche eine Reihe von Feldkomponenten, die für die Verwendung in Dialogfeldern (oder allgemein in [Formularen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)) geeignet sind.
+Genauer gesagt bietet die Granite-Benutzeroberfläche eine Reihe von Feldkomponenten, die für die Verwendung in Dialogfeldern (oder allgemein in [Formularen](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)) geeignet sind.
 
 >[!NOTE]
 >
@@ -251,9 +251,9 @@ Abhängig von Ihren Anforderungen können Sie entweder:
 * Ein gegebenes Granite-Benutzeroberflächenfeld um Komponentenvererbung (`sling:resourceSuperType`) erweitern
 * Ein bestimmtes Widget aus der zugrunde liegenden Widget-Bibliothek (im Falle der Granite-Benutzeroberfläche ist dies die Coral-Benutzeroberfläche) erweitern, indem Sie der Widget-Bibliothek-API folgen (JS/CSS-Vererbung)
 
-#### Zugriff auf Dialogfelder  {#access-to-dialog-fields}
+#### Zugriff auf Dialogfelder {#access-to-dialog-fields}
 
-Sie können auch Render-Bedingungen (`rendercondition`) verwenden, um festzulegen, wer Zugriff auf bestimmte Registerkarten/Felder in Ihrem Dialogfeld hat. beispielsweise:
+Sie können auch Render-Bedingungen (`rendercondition`) verwenden, um festzulegen, wer Zugriff auf bestimmte Registerkarten/Felder in Ihrem Dialogfeld hat. Beispielsweise:
 
 ```xml
 + mybutton
@@ -313,9 +313,9 @@ Ein Beispiel finden Sie unter:
 
 #### Feldüberprüfung (Granite-Benutzeroberfläche)  {#field-validation-granite-ui}
 
-Die Feldüberprüfung in der Granite-Benutzeroberfläche und den Granite-Benutzeroberflächenkomponenten (entspricht Widgets) erfolgt mithilfe der API `foundation-validation`. [Weitere Informationen finden Sie in der  `foundation-valdiation` Granite-Dokumentation.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)
+Die Feldüberprüfung in der Granite-Benutzeroberfläche und den Granite-Benutzeroberflächenkomponenten (entspricht Widgets) erfolgt mithilfe der API `foundation-validation`. [Weitere Informationen finden Sie in der `foundation-valdiation` Granite-Dokumentation.](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)
 
-Beispiele finden Sie unter:
+Beispiele finden Sie hier:
 
 * `cqgems/customizingfield/components/clientlibs/customizingfield/js/validations.js`
 
@@ -431,14 +431,14 @@ Beispiele finden Sie unter:
 
 CODE AUF GITHUB
 
-Den Code dieser Seite finden Sie auf GitHub
+Den Code dieser Seite finden Sie auf GitHub.
 
 * [Open aem-project-archetype project on GitHub](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/archive/master.zip) herunter.
 
 >[!NOTE]
 >
->Die automatische Erstellung von Komponenteninstanzen kann jetzt problemlos in der Benutzeroberfläche konfiguriert werden, wenn [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html) und bearbeitbare Vorlagen verwendet werden. Weitere Informationen zum Definieren, welche Komponenten automatisch bestimmten Medientypen zugeordnet werden, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
+>Die automatische Erstellung von Komponenteninstanzen kann jetzt problemlos in der Benutzeroberfläche konfiguriert werden, wenn [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) und bearbeitbare Vorlagen verwendet werden. Weitere Informationen zum Definieren, welche Komponenten automatisch bestimmten Medientypen zugeordnet werden, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
 ## Verwenden von AEM Brackets-Erweiterungen {#using-the-aem-brackets-extension}
 
@@ -473,7 +473,7 @@ Wenn Sie eine Komponente, die für die Verwendung mit der klassischen Benutzerob
    * Das [Dialogfeld-Konvertierungstool](/help/sites-developing/dialog-conversion.md) wird bereitgestellt, um Sie beim Erweitern vorhandener Komponenten zu unterstützen.
    * Das [Zuordnen von ExtJS zu Granite-UI-Komponenten](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) bietet einen praktischen Überblick über ExtJS-Xtypes und Knotentypen mit ihren entsprechenden Ressourcentypen in der Granite-Benutzeroberfläche.
    * Weitere Informationen finden Sie in der AEM Gems-Sitzung zum [Anpassen von Dialogfeldern](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
-   * Migrieren von vtypes zur [Überprüfung in der Granite-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
+   * Migrieren von vtypes zur [Überprüfung in der Granite-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
    * Weitere Informationen zum Verwenden von JS-Listenern finden Sie unter [Umgang mit Feldereignissen](#handling-field-events) und in der AEM Gems-Sitzung zum [Anpassung von Dialogfeldern](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
 
 ### Migrieren von cq:listener-Code  {#migrating-cq-listener-code}
@@ -510,4 +510,4 @@ Sie müssen lediglich eine `README.md`-Datei in der Komponentenstruktur platzier
 
 ![chlimage_1-7](assets/chlimage_1-7.png)
 
-Das unterstützte Markdown ist dasselbe wie bei [Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-markdown.md).
+Der unterstützte Markdown ist derselbe wie der für [Inhaltsfragmente](/help/assets/content-fragments/content-fragments-markdown.md).
