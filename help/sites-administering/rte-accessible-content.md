@@ -106,7 +106,7 @@ RTE kann die Tags `strong` und `em` anstelle von `b` und `i` verwenden. hinzufü
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`
 
-   wie folgt umzuleiten:
+   in:
 
    `/apps/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`
 
@@ -118,7 +118,7 @@ RTE kann die Tags `strong` und `em` anstelle von `b` und `i` verwenden. hinzufü
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/plugins/TablePropertiesDialog.js`
 
-   wie folgt umzuleiten:
+   in:
 
    `/apps/cq/ui/widgets/source/widgets/form/rte/plugins/TablePropertiesDialog.js`.
 
