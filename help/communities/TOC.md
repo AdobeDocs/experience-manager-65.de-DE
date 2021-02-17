@@ -31,7 +31,7 @@ ht-degree: 29%
    + [Erstellen einer neuen Community-Site für die Aktivierung](enablement-create-site.md)
    + [Einrichten und Zuweisen von Aktivierungsressourcen](resource.md)
    + [Die veröffentlichte Website zur Aktivierung](enablement-published-site.md)
-+ Bereitstellung {#deploy}
++ Bereitstellen {#deploy}
    + [Bereitstellen von Communities](deploy-communities.md)
    + [Upgrade auf AEM 6.5 Communities](upgrade.md)
    + [Empfohlene Topologien für Communities](topologies.md)
