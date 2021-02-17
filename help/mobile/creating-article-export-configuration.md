@@ -47,7 +47,7 @@ Die unter **&lt;dps-exportTemplate>/dps-article>** gefundene ContentSync-Konfigu
 >Sie können die folgenden Schritte ausführen, um gemeinsam genutzte Ressourcen als Beispiel Ansicht, sofern Sie über Folgendes verfügen:
 >
 >* Beispielinhalt installiert
->* aem
+>* AEM
 >* kein konfigurierter benutzerdefinierter Kontext oder ein anderer Anschluss
 
 >
