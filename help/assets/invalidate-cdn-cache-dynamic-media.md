@@ -83,7 +83,7 @@ In jedem Fall wird entweder der gesamte Batch zur Invalidierung verarbeitet oder
 
 | Fehler | Erklärung |
 | --- | --- |
-| *URLs für ausgewählte Assets konnten nicht abgerufen werden.* | Tritt auf, wenn eines der folgenden Szenarien erfüllt ist:<br>- Eine Dynamic Media-Konfiguration wurde nicht gefunden.<br>- Beim Abrufen eines Dienstbenutzers, über den die Dynamic Media-Konfiguration gelesen wird, gibt es eine Ausnahme.<br>- Der Veröffentlichungs-Server bzw. Stammordner des Unternehmens, der zum Erstellen der URLs verwendet wird, fehlt in der Dynamic Media-Konfiguration. |
+| *URLs für ausgewählte Assets konnten nicht abgerufen werden.* | Tritt auf, wenn eines der folgenden Szenarien erfüllt ist:<br>- Eine Dynamic Media-Konfiguration wurde nicht gefunden.<br>- Beim Abrufen eines Service-Benutzers, über den die Dynamic Media-Konfiguration gelesen wird, gibt es eine Ausnahme.<br>- Der Veröffentlichungs-Server bzw. Stammordner des Unternehmens, der zum Erstellen der URLs verwendet wird, fehlt in der Dynamic Media-Konfiguration. |
 | *Einige URLs sind nicht richtig definiert. Bitte korrigieren und übermitteln Sie sie erneut.* | Tritt auf, wenn die IPS CDN-Cache-Invalidierungs-API einen Fehler zurückgibt, dass die URL auf ein anderes Unternehmen verweist, oder die URL laut der von der IPS cdnCacheInvalidation-API durchgeführten Überprüfung ungültig ist. |
 | *CDN-Cache konnte nicht ungültig gemacht werden.* | Tritt auf, wenn die Anfrage zur Invalidierung des CDN-Cache aus einem anderen Grund fehlschlägt. |
 | *Keine Angabe von URLs, die ungültig gemacht werden sollen.* | Tritt auf, wenn auf der Seite **[!UICONTROL CDN-Ungültigmachung - Bestätigen]** keine URLs vorhanden sind, und Sie auf **[!UICONTROL Senden.]** tippen |
