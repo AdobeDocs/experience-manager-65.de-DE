@@ -20,7 +20,7 @@ ht-degree: 64%
 
 # Entwicklung von AEM-Projekten mit IntelliJ IDEA{#how-to-develop-aem-projects-using-intellij-idea}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Die folgenden Schritte sind erforderlich, um mit der AEM-Entwicklung unter IntelliJ zu beginnen.
 
