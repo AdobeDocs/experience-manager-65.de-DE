@@ -1047,7 +1047,7 @@ Wenn dieser Prozess aufgerufen wird, führt er die folgenden Aktionen aus:
 1. Ruft das ungesicherte PDF-Dokument ab, das an den Prozess übergeben wird. Diese Aktion basiert auf dem Vorgang `SetValue`. Der Eingangsparameter für diesen Prozess ist eine `document`-Prozessvariable mit dem Namen `inDoc`.
 1. Sie verschlüsselt das PDF-Dokument mit einem Kennwort. Diese Aktion basiert auf dem Vorgang `PasswordEncryptPDF`. Das kennwortverschlüsselte PDF-Dokument wird in einer Prozessvariablen namens `outDoc` zurückgegeben.
 
-Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um mit den Codebeispielen zu folgen, erstellen Sie einen Prozess mit dem Namen `MyApplication/EncryptDocument` mithilfe von Workbench. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um mit den Codebeispielen zu folgen, erstellen Sie mit Workbench einen Prozess mit dem Namen `MyApplication/EncryptDocument`. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 >[!NOTE]
 >
@@ -1112,11 +1112,11 @@ Sie können einen Forms-Dienst mit DIME aufrufen. Berücksichtigen Sie den `MyAp
 
    * Ein Zeichenfolgenwert, der einen GUID-Wert angibt. Sie können einen GUID-Wert abrufen, indem Sie die `System.Guid.NewGuid.ToString`-Methode aufrufen.
    * Ein Zeichenfolgenwert, der den Inhaltstyp angibt. Da für diesen Vorgang ein PDF-Dokument erforderlich ist, geben Sie `application/pdf` an.
-   * Ein `TypeFormat`-Auflistung-Wert. Geben Sie Folgendes an `TypeFormat.MediaType`.
+   * Ein `TypeFormat`-Auflistung-Wert. Geben Sie `TypeFormat.MediaType`.
    * Ein Zeichenfolgenwert, der den Speicherort des PDF-Dokuments angibt, das an den AEM Forms-Prozess übergeben wird.
 
 1. Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden.
-1. hinzufügen Sie die DIME-Anlage zum `BLOB`-Objekt, indem Sie den `Microsoft.Web.Services2.Dime.DimeAttachment`-Datenelementwert des `Id`-Objekts dem `BLOB`-Datenmember des Objekts `attachmentID` zuweisen.
+1. hinzufügen Sie die DIME-Anlage zum `BLOB`-Objekt, indem Sie dem `BLOB`-Datenelementwert des `Microsoft.Web.Services2.Dime.DimeAttachment`-Objekts den `attachmentID`-Datenmember-Wert des `Id`-Objekts zuweisen.
 1. Rufen Sie die `EncryptDocumentServiceWse.RequestSoapContext.Attachments.Add`-Methode auf und übergeben Sie das `Microsoft.Web.Services2.Dime.DimeAttachment`-Objekt.
 1. Rufen Sie den Prozess `MyApplication/EncryptDocument` auf, indem Sie die `EncryptDocumentServiceWse`-Methode des Objekts `invoke` aufrufen und das `BLOB`-Objekt übergeben, das die DIME-Anlage enthält. Dieser Vorgang gibt ein verschlüsseltes PDF-Dokument innerhalb eines `BLOB`-Objekts zurück.
 1. Rufen Sie den Wert für den Anlagenbezeichner ab, indem Sie den Wert des `BLOB`-Datenelements des zurückgegebenen `attachmentID`-Objekts abrufen.
