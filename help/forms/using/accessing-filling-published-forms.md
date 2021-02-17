@@ -97,6 +97,6 @@ Es gibt bestimmte Formulare, die Sie relativ häufig ausfüllen und senden müss
 
 AEM Forms trägt zu einem optimierten Benutzererlebnis beim Ausfüllen von Formularen bei und reduziert dafür benötigte Zeit erheblich. Endbenutzer können für ein neues Formular die Daten von einem früher gesendeten Formular verwenden. Diese Funktion ist integriert in der [Komponente „Drafts and Submissions“](../../forms/using/draft-submission-component.md). Wenn Sie die Komponente „Drafts and Submissions“ zu Ihrer Forms Portal-Seite hinzufügen und sie veröffentlichen, finden Endbenutzer auf der Registerkarte „Gesendete Formulare und Entwurfsformulare“ die Option, ein neues Formular mit den Daten eines zuvor gesendeten Formulars zu beginnen. Auf der folgenden Abbildung ist diese Option hervorgehoben.
 
-![beginn-a-new-form](assets/start-a-new-form.png)
+![Beginn-a-new-form](assets/start-a-new-form.png)
 
 Wenn Sie auf die Schaltfläche klicken, um ein neues Formular zu starten, wird ein neues Formular mit Daten aus dem entsprechenden gesendeten Formular gestartet. Sie können jetzt die Informationen überprüfen, ggf. aktualisieren und das Formular senden.
