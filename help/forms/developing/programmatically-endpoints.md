@@ -317,7 +317,7 @@ Geben Sie die folgenden Werte an, um einen Endpunkt des Typs &quot;Überwachter 
 
 **Konfigurationswerte angeben**
 
-Sie müssen Konfigurationswerte für einen Endpunkt des Typs &quot;Überwachter Ordner&quot;angeben, wenn Sie einem Dienst programmgesteuert einen Endpunkt des Typs &quot;Überwachter Ordner&quot;hinzufügen. Diese Konfigurationswerte werden von einem Administrator angegeben, wenn mithilfe von Administration Console ein Endpunkt des Typs &quot;Überwachter Ordner&quot;hinzugefügt wird.
+Sie müssen Konfigurationswerte für einen Endpunkt des Typs &quot;Überwachter Ordner&quot;angeben, wenn Sie einem Dienst programmgesteuert einen Endpunkt des Typs &quot;Überwachter Ordner&quot;hinzufügen. Diese Konfigurationswerte werden von einem Administrator festgelegt, wenn mithilfe von Administration Console ein Endpunkt des Typs &quot;Überwachter Ordner&quot;hinzugefügt wird.
 
 Die folgende Liste gibt Konfigurationswerte an, die festgelegt werden, wenn einem Dienst programmgesteuert ein Endpunkt des Typs &quot;überwachter Ordner&quot;hinzugefügt wird:
 
