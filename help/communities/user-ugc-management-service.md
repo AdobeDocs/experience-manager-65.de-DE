@@ -25,7 +25,7 @@ ht-degree: 30%
 >
 >GDPR wird als Beispiel in den folgenden Abschnitten verwendet, aber die betreffenden Details gelten für alle Datenschutz- und Datenschutzbestimmungen. wie GDPR, CCPA usw.
 
-AEM Communities stellt bereits verfügbare APIs zur Verwaltung von Profilen und Massenverwaltung benutzergenerierter Inhalte (UGC) bereit. Nach der Aktivierung ermöglicht der Dienst **UserUgcManagement** den privilegierten Benutzern (Community-Administratoren und -Moderatoren), Benutzerkonten zu deaktivieren und benutzerspezifische Profil für Massenlöschen oder Massenexport-UGC für bestimmte Benutzer zu verwenden. Diese APIs ermöglichen es den für die Verarbeitung und Verarbeitung von Kundendaten Verantwortlichen und Verarbeitern auch, die allgemeinen Datenschutzvorschriften der Europäischen Vereinigung (GDPR) und andere vom GDPR inspirierte Datenschutzauflagen einzuhalten.
+AEM Communities stellt bereits verfügbare APIs zur Verwaltung von Profilen und Massenverwaltung benutzergenerierter Inhalte (UGC) bereit. Nach der Aktivierung ermöglicht der Dienst **UserUgcManagement** den privilegierten Benutzern (Community-Administratoren und -Moderatoren), Benutzerkonten zu deaktivieren und benutzerspezifische Profil für Massenlöschen oder Massenexport-UGC für bestimmte Benutzer zu verwenden. Diese APIs ermöglichen es den für die Verarbeitung und Verarbeitung von Kundendaten Verantwortlichen und Verarbeitern auch, die allgemeinen Datenschutzbestimmungen der Europäischen Vereinigung (GDPR) und andere vom GDPR inspirierte Datenschutzauflagen einzuhalten.
 
 Weitere Informationen finden Sie auf der [DSGVO-Seite im Datenschutzzentrum von Adobe](https://www.adobe.com/de/privacy/general-data-protection-regulation.html).
 
