@@ -39,7 +39,7 @@ Sie müssen Launch-Seiten weiterleiten (bewerben), damit der Inhalt vor der Ver�
 
 >[!CAUTION]
 >
->Bei Promotions von Launches für *geänderte* Seiten werden Anpassungen sowohl im Quell- als auch im Launch-Zweig berücksichtigt.
+>Beim Weiterleiten von Launches für *geänderte* Seiten werden Anpassungen sowohl im Quell- als auch im Launch-Zweig berücksichtigt.
 
 ## Weiterleiten von Launch-Seiten {#promoting-launch-pages}
 
@@ -68,7 +68,7 @@ Sie können Launches entweder über die Konsole **Sites** oder die Konsole **Lau
    * die Konsole **Launches**:
 
       1. Wählen Sie den Launch aus (indem Sie auf die Miniatur tippen/klicken).
-      1. Wählen Sie **Bewerben**.
+      1. Wählen Sie **Bewerben** aus.
 
 
 1. Im ersten Schritt können Sie folgende Optionen festlegen:
@@ -96,9 +96,9 @@ Sie können Launches entweder über die Konsole **Sites** oder die Konsole **Lau
 
    ![chlimage_1-102](assets/chlimage_1-102.png)
 
-1. Wählen Sie **Bewerben**.
+1. Wählen Sie **Bewerben** aus.
 
-## Weiterleiten von Launch-Seiten bei der Bearbeitung   {#promoting-launch-pages-when-editing}
+## Weiterleiten von Launch-Seiten bei der Bearbeitung  {#promoting-launch-pages-when-editing}
 
 Wenn Sie eine Launch-Seite bearbeiten, steht die Aktion **Launch bewerben** auch im Bereich **Seiteninformationen** zur Verfügung. Dadurch wird der Assistent geöffnet, um die benötigten Informationen zusammenzustellen.
 
@@ -108,7 +108,7 @@ Wenn Sie eine Launch-Seite bearbeiten, steht die Aktion **Launch bewerben** auch
 >
 >Diese Option steht für einzelne und [verschachtelte Launches](#promoting-a-nested-launch) zur Verfügung.
 
-## Weiterleiten eines verschachtelten Launches    {#promoting-a-nested-launch}
+## Weiterleiten eines verschachtelten Launches   {#promoting-a-nested-launch}
 
 Wenn Sie einen verschachtelten Launch erstellt haben, können Sie ihn wieder an jede der Quellen weiterleiten, auch an die Stammquelle (Produktion).
 
