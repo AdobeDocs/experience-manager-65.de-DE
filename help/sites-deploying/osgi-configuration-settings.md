@@ -359,7 +359,7 @@ Der Standardwert ist `0`.
 * **User Map** Für bestimmte Benutzer kann der aus der HTTP-Anforderung extrahierte Benutzername im Anmeldedaten-Objekt durch einen anderen Namen ersetzt werden. Die Zuordnung ist hier definiert. Wenn der Benutzername 
 `admin` auf beiden Seiten der Map angezeigt wird, wird die Zuordnung ignoriert. Beachten Sie, dass das Zeichen „=“ durch ein führendes „\“ geschützt werden muss.
 
-* **Format** Gibt das Format an, in dem die Benutzer-ID angegeben ist. Verwenden:
+* **Format** Gibt das Format an, in dem die Benutzer-ID angegeben ist. Verwenden Sie:
 
    * `Basic`, falls die Benutzer-ID im HTTP-Standard-Authentifizierungsformat kodiert ist
    * `AsIs`, falls die Benutzer-ID im Nur-Text-Format bereitgestellt wird, oder jeder für reguläre Ausdrücke gültige Wert unverändert bzw. jeder reguläre Ausdruck verwendet werden soll
