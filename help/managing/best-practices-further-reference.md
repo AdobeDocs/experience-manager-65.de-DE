@@ -585,7 +585,7 @@ Darüber hinaus sind die folgenden Abschnitte von besonderem Interesse:
 
 Adobe bietet weitere Best Practices für alle Phasen und Zielgruppen:
 
-* [Bereitstellung](/help/sites-deploying/best-practices.md)
+* [Bereitstellen](/help/sites-deploying/best-practices.md)
 * [Authoring – ](/help/sites-authoring/best-practices.md)
 * [Verwalten](/help/sites-administering/administer-best-practices.md)
 * [Entwickeln](/help/sites-developing/best-practices.md)
