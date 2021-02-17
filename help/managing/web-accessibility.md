@@ -12,7 +12,7 @@ ht-degree: 84%
 
 # AEM und Richtlinien für barrierefreien Webzugang{#aem-and-the-web-accessibility-guidelines}
 
-Es gibt eine Reihe sozialer, ökonomischer und rechtlicher Gründe dafür, sicherzustellen, dass Web-Inhalte für das Zielpublikum so barrierefrei wie möglich gestaltet werden, ungeachtet möglicher Behinderungen oder Einschränkungen des Zielpublikums. Web-Zugänglichkeit mit Adobe Experience Manager (AEM) ist daher ein zunehmend wichtiger Aspekt des guten Webdesigns.
+Es gibt eine Reihe sozialer, ökonomischer und rechtlicher Gründe dafür, sicherzustellen, dass Web-Inhalte für das Zielpublikum so barrierefrei wie möglich gestaltet werden, ungeachtet möglicher Behinderungen oder Einschränkungen des Zielpublikums. Web-Zugänglichkeit mit Adobe Experience Manager (AEM) ist daher ein zunehmend wichtiger Aspekt eines guten Webdesigns.
 
 Zugängliche Websites und Inhalte mit AEM Auswirkungen erstellen:
 
