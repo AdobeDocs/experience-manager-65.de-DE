@@ -118,7 +118,7 @@ Verschiedene Forms Portal-Komponenten bieten exklusive OOTB-Metadatensätze, die
 
 Unterstützung für Lokalisierung, Sortierung und Verwendung von Konfigurationseigenschaften in der Benutzeroberfläche (nur Search &amp; Lister):
 
-1. **Lokale Anpassung-Support**: Um statischen Text zu lokalisieren, verwenden Sie das Attribut  `${localize-YOUR_TEXT}` und stellen Sie den lokalisierten Wert bereit, falls er nicht bereits vorhanden ist.
+1. **lokale Anpassung-Support**: Um statischen Text zu lokalisieren, verwenden Sie das Attribut  `${localize-YOUR_TEXT}` und stellen Sie den lokalisierten Wert bereit, falls er nicht bereits vorhanden ist.
    *In dem beschriebenen Beispiel werden die Attribute  `${localize-Apply}` und  `${localize-Download}` die zum Lokalisieren des Übernehmen- und Herunterladen-Textes verwendet.*
 
 1. **Unterstützung für die Sortierung**: Klicken Sie auf das HTML-Element, um die Suchergebnisse zu sortieren. Um Sortierung in ein Tabellenlayout einzufügen, fügen Sie dem jeweiligen Tabellen-Header das Attribut „data-sortKey“ hinzu. Fügen Sie außerdem seinen Wert als die Metadaten hinzu, nach denen Sie sortieren möchten.
@@ -163,7 +163,7 @@ So ist z. B. im Header „Title“ in der Rasteransicht der Wert für den Header
 
 **C.** Datenwiederholbares Attribut für den Vorlagenbereich jedes Formulars
 
-**D.** So lokalisieren Sie die Zeichenfolge &quot;Apply&quot;
+**D.Zeichenfolge &quot;Anwenden&quot;** lokalisieren
 
 **E.** Verwenden der Konfigurationseigenschaft pdfLinkText
 
