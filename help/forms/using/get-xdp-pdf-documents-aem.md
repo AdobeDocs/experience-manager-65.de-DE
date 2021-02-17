@@ -20,7 +20,7 @@ ht-degree: 91%
 
 # XDP- und PDF-Dokumente in AEM Forms übernehmen{#getting-xdp-and-pdf-documents-in-aem-forms}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Sie können Formulare aus Ihrem lokalen Dateisystem in das CRX-Repository importieren, indem Sie sie in AEM Forms hochladen. Der Upload-Vorgang wird für die folgenden Assettypen unterstützt:
 
