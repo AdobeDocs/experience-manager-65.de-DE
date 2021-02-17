@@ -50,7 +50,7 @@ Der Knoten &quot;Datentypen konfigurieren&quot;enthält eine Liste von Datentype
 |---|---|
 | fieldIcon | Klasse des CoralUI-Symbols zur Darstellung des Datentyps |
 | fieldPropResourceType | Komponente, die alle Eigenschaften zum Konfigurieren des Datentyps ausgibt |
-| fieldProperties | liste von Eigenschaftenkomponenten mit mehreren Werten, die verwendet werden, wenn fieldPropResourceType *mobileapps/caas/gui/components/models/editor/datatypes/field* ist |
+| fieldProperties | Liste von Eigenschaftenkomponenten mit mehreren Werten, die verwendet werden, wenn fieldPropResourceType *mobileapps/caas/gui/components/models/editor/datatypes/field* ist |
 | fieldResourceType | resourceType des persistenten Knotens für den Datentyp (d. h. die Komponente, die die Eigenschaft im Entitäts-Editor wiedergibt) |
 | fieldViewResourceType | Komponente, die zur Wiedergabe des Datentyps in der Ansicht des Modelleditors verwendet wird (fieldResourceType wird verwendet, wenn diese Eigenschaft weggelassen wird) |
 | fieldTitle | Name des Datentyps, der im Modelleditor angezeigt wird |
