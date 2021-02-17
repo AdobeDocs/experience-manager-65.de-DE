@@ -249,7 +249,7 @@ Sie können den Text direkt aus dem Microsoft® Word-Dokument in ein bearbeitbar
 Fügen Sie ggf. Sonderzeichen in das Dokumentfragment ein. Beispielsweise können Sie über die Sonderzeichenpalette die folgenden Zeichen einfügen:
 
 * Währungssymbole wie €,¥ und £
-* Mathematische Symbole wie z. B. □, □ und ^
+* Mathematische Symbole wie z. B. □, , ^ und ^
 * Interpunktionssymbole wie ‟ und&quot;
 
 ![specialcharacters-2](assets/specialcharacters-2.png)
