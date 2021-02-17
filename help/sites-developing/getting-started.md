@@ -19,7 +19,7 @@ ht-degree: 88%
 ---
 
 
-# Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial{#getting-started-developing-aem-sites-wknd-tutorial}
+# Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial {#getting-started-developing-aem-sites-wknd-tutorial}
 
 ## Überblick {#overview}
 
@@ -40,7 +40,7 @@ Die Tutorial-Implementierung nutzt eine Vielzahl leistungsstarker Funktionen von
 * [HTL](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)
 * [Sling-Modelle](https://sling.apache.org/documentation/bundles/models.html)
 * [Touch-optimierte Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md)
-* [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html)
+* [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
 * [Bearbeitbare Vorlagen](/help/sites-developing/page-templates-editable.md)
 
 Wir empfehlen Ihnen, das Tutorial durchzugehen, bevor Sie sich mit diesen Konzepten ausführlicher beschäftigen.
