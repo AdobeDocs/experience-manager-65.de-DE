@@ -332,7 +332,7 @@ Sie können die Berechtigungen für alle Rollen, die Sie erstellt haben, ändern
 
 **SERVICE_MANAGER_PERM:** Lastenausgleich und andere Verwaltungsaktionen für einen Dienst durchführen, der aus einem Prozess erstellt wurde
 
-**BEGINN_STOP_PERM:** Beginn oder Beenden eines Dienstes
+**Beginn_STOP_PERM:** Beginn oder Beenden eines Dienstes
 
 **SUPERVISOR_PERM:Prozessinstanzdaten** für einen Dienst, der aus einem Prozess erstellt wurde
 
