@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 57%
+ht-degree: 58%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 57%
 + [Bewährte Verfahren für Assets](best-practices-for-assets.md)
 + [Barrierefreiheit in  [!DNL Assets]](accessibility.md)
 + Experience Manager-Assets {#using} verwenden
-   + [[!DNL Assets] startseite](assets-home-page.md)
+   + [[!DNL Assets] Startseite](assets-home-page.md)
    + [Suchen nach digitalen Assets](search-assets.md)
    + [Arbeiten mit Asset-Metadaten](metadata.md)
    + [Mehrsprachige Assets](multilingual-assets.md)
@@ -31,7 +31,7 @@ ht-degree: 57%
    + [Vorschau von 3D-Assets](previewing-3d-assets.md)
    + [Überprüfen von Ordner-Assets und Sammlungen](bulk-approval.md)
    + [Optimierte Smart-Tags](enhanced-smart-tags.md)
-   + [Aktivitäts-Stream in der Timeline](activity-stream.md)
+   + [Aktivitäts-Stream in der Zeitleiste](activity-stream.md)
    + [Prozesselemente](assets-workflow.md)
    + [hinzufügen](image-maps.md)
    + [Wiederverwenden von Assets mit MSM](reuse-assets-using-msm.md)
@@ -43,7 +43,7 @@ ht-degree: 57%
    + [Konfigurieren von Dynamic Media – Scene7-Modus](config-dms7.md)
    + [Konfigurieren von Dynamic Media – Hybridmodus](config-dynamic.md)
    + [Fehlerbehebung in Dynamic Media – Scene7-Modus](troubleshoot-dms7.md)
-   + [Zugänglichkeit in Dynamic Media](accessibility-dm.md)
+   + [Barrierefreiheit in Dynamic Media](accessibility-dm.md)
    + [Migration von Dynamic Media - Hybridmodus zu Dynamic Media - S7-Modus](migrate-from-hybrid-to-dms7.md)
    + [Verwalten von Assets mit Dynamic Media](managing-assets.md)
    + [Best Practices für die Optimierung der Bildqualität](best-practices-for-optimizing-the-quality-of-your-images.md)
@@ -80,7 +80,7 @@ ht-degree: 57%
    + [Veröffentlichen von Dynamic Media-Assets](publishing-dynamicmedia-assets.md)
    + [Arbeiten mit selektiver Veröffentlichung in Dynamic Media](selective-publishing.md)
    + [Invalidierung des CDN-Cache mithilfe von Dynamic Media](invalidate-cdn-cache-dynamic-media.md)
-   + [Invalidierung des CDN-Cache mithilfe von Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
+   + [Invalidierung des CDN-Cache über von Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
    + [Installieren von Feature Pack 18912 für die Migration von Massenelementen](bulk-ingest-migrate.md)
    + [Arbeiten mit Selektoren](working-with-selectors.md)
 + Assets erweitern {#extending}
@@ -127,7 +127,7 @@ ht-degree: 57%
    + [Asset-Vorlagen](asset-templates.md)
    + [Bewährte Verfahren zum Freigeben von Ordnern für [!DNL Creative Cloud]](aem-cc-folder-sharing-best-practices.md)
 + Brand Portal {#brandportal}
-   + [Konfigurieren von [!DNL Assets] mit  [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Konfigurieren von [!DNL Assets] mit [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Veröffentlichen von Assets in  [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [Veröffentlichen von Ordnern in [!DNL Brand Portal]](brand-portal-publish-folder.md)
    + [Veröffentlichen von Sammlungen auf [!DNL Brand Portal]](brand-portal-publish-collection.md)
