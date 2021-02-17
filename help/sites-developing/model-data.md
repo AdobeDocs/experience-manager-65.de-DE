@@ -143,7 +143,7 @@ Für den Import von XML oder die Interaktion mit bestehendem XML sind SNS mögli
 
 #### Beispiel {#example-4}
 
-Verwenden
+Verwenden Sie
 
 ```xml
 /content/myblog/posts/what_i_learned_today
@@ -221,7 +221,7 @@ Wenn Sie also beispielsweise auf einen Knoten vom Typ „Document“ verweisen k
 
 #### Beispiel {#example-7}
 
-Verwenden:
+Verwenden Sie:
 
 ```xml
 /content/myblog/posts/iphone_shipping/attachments/front.jpg
