@@ -79,7 +79,7 @@ Navigieren Sie zur OSGi-Konsole `/system/console/bundles` und prüfen Sie, ob ke
 
 ### Überprüfen der Oak-Version {#verify-oak-version}
 
-Nach der Aktualisierung sollte ersichtlich sein, dass die Oak-Version auf Version **1.10.2** aktualisiert wurde. Um die Oak-Version zu überprüfen, navigieren Sie zur OSGi-Konsole und sehen Sie sich die Version an, die den Oak-Bundles zugeordnet ist: Eichenkern, EichenCommons, Eichensegmentteer.
+Nach der Aktualisierung sollte ersichtlich sein, dass die Oak-Version auf Version **1.10.2** aktualisiert wurde. Um die Oak-Version zu überprüfen, navigieren Sie zur OSGi-Konsole und sehen Sie sich die Version an, die den Oak-Bundles zugeordnet ist: Eichenkern, EichenCommons, Eichensegmentter.
 
 ### Überprüfen des Ordners „PreUpgradeBackup“{#inspect-preupgradebackup-folder}
 
