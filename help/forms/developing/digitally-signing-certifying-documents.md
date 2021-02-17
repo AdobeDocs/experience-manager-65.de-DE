@@ -1186,7 +1186,7 @@ PDF-Dokumente mithilfe der Signature-API (Java) zertifizieren:
    * Ein `PDFSignatureAppearanceOptions`-Objekt, das das Erscheinungsbild der zertifizierten Signatur steuert. Ändern Sie bei Bedarf das Erscheinungsbild der Signatur, indem Sie eine Methode wie `setShowDate` aufrufen.
    * Ein Zeichenfolgenwert, der erklärt, welche Aktionen die Unterschrift ungültig machen.
    * Ein `java.lang.Boolean`-Objekt, das angibt, ob das Zertifikat des Unterzeichners eine Sperrüberprüfung durchführen soll. Wenn diese Sperrüberprüfung durchgeführt wird, wird sie in die Signatur eingebettet. Der Standardwert lautet `false`.
-   * Ein `java.lang.Boolean`-Objekt, das angibt, ob das zertifizierte Signaturfeld gesperrt ist. Wenn das Feld gesperrt ist, wird das Unterschriftsfeld als schreibgeschützt markiert, seine Eigenschaften können nicht geändert werden und es kann nicht von Personen gelöscht werden, die nicht über die erforderlichen Berechtigungen verfügen. Der Standardwert lautet `false`.
+   * Ein `java.lang.Boolean`-Objekt, das angibt, ob das zertifizierte Unterschriftsfeld gesperrt ist. Wenn das Feld gesperrt ist, wird das Unterschriftsfeld als schreibgeschützt markiert, seine Eigenschaften können nicht geändert werden und es kann nicht von Personen gelöscht werden, die nicht über die erforderlichen Berechtigungen verfügen. Der Standardwert lautet `false`.
    * Ein `OCSPPreferences`-Objekt, das Voreinstellungen für die Unterstützung des Online-Zertifikatstatusprotokolls (OCSP) speichert. Wenn die Sperrüberprüfung nicht durchgeführt wird, wird dieser Parameter nicht verwendet und Sie können `null` angeben. Weitere Informationen zu diesem Objekt finden Sie unter [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Ein `CRLPreferences`-Objekt, das die Voreinstellungen für die Zertifikatsperrlisten-Liste (CRL) speichert. Wenn die Sperrüberprüfung nicht durchgeführt wird, wird dieser Parameter nicht verwendet und Sie können `null` angeben.
    * Ein `TSPPreferences`-Objekt, das Voreinstellungen für die Unterstützung von Zeitstempelanbietern (TSP) speichert. Nachdem Sie beispielsweise ein `TSPPreferences`-Objekt erstellt haben, können Sie die URL des TSP-Servers festlegen, indem Sie die `TSPPreferences`-Methode des Objekts `setTspServerURL` aufrufen. Dieser Parameter ist optional und kann `null` sein. Weitere Informationen finden Sie unter [Dienste-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
@@ -1258,7 +1258,7 @@ PDF-Dokumente mithilfe der Signature-API (Webdienst) zertifizieren:
    * Ein Zeichenfolgenwert, der erklärt, welche Aktionen die Unterschrift ungültig machen.
    * Ein `PDFSignatureAppearanceOptions`-Objekt, das das Erscheinungsbild der zertifizierten Signatur steuert. Erstellen Sie ein Objekt `PDFSignatureAppearanceOptions`, indem Sie den Konstruktor verwenden. Sie können das Erscheinungsbild der Signatur ändern, indem Sie einen ihrer Datenmitglieder festlegen.
    * Ein `System.Boolean`-Objekt, das angibt, ob das Zertifikat des Unterzeichners eine Sperrüberprüfung durchführen soll. Wenn diese Sperrüberprüfung durchgeführt wird, wird sie in die Signatur eingebettet. Der Standardwert lautet `false`.
-   * Ein `System.Boolean`-Objekt, das angibt, ob das zertifizierte Signaturfeld gesperrt ist. Wenn das Feld gesperrt ist, wird das Unterschriftsfeld als schreibgeschützt markiert, seine Eigenschaften können nicht geändert werden und es kann nicht von Personen gelöscht werden, die nicht über die erforderlichen Berechtigungen verfügen. Der Standardwert lautet `false`.
+   * Ein `System.Boolean`-Objekt, das angibt, ob das zertifizierte Unterschriftsfeld gesperrt ist. Wenn das Feld gesperrt ist, wird das Unterschriftsfeld als schreibgeschützt markiert, seine Eigenschaften können nicht geändert werden und es kann nicht von Personen gelöscht werden, die nicht über die erforderlichen Berechtigungen verfügen. Der Standardwert lautet `false`.
    * Ein `System.Boolean`-Objekt, das angibt, ob das Unterschriftsfeld gesperrt ist. Das heißt, wenn Sie `true` an den vorherigen Parameter übergeben, dann geben Sie `true` an diesen Parameter weiter.
    * Ein `OCSPPreferences`-Objekt, das Voreinstellungen für die OCSP-Unterstützung (Online Certificate Status Protocol) speichert, das Informationen zum Status der Berechtigung bereitstellt, die zum Zertifizieren des PDF-Dokuments verwendet wird. Wenn die Sperrüberprüfung nicht durchgeführt wird, wird dieser Parameter nicht verwendet und Sie können `null` angeben.
    * Ein `CRLPreferences`-Objekt, das die Voreinstellungen für die Zertifikatsperrlisten-Liste (CRL) speichert. Wenn die Sperrüberprüfung nicht durchgeführt wird, wird dieser Parameter nicht verwendet und Sie können `null` angeben.
@@ -1341,7 +1341,7 @@ Während Sie diese Optionen einstellen, können Sie die Überprüfungszeit angeb
 
 Sie können auch angeben, ob die Sperrüberprüfung im Rahmen des Überprüfungsprozesses durchgeführt werden soll. Sie können beispielsweise eine Sperrüberprüfung durchführen, um zu ermitteln, ob das Zertifikat gesperrt wurde. Weitere Informationen zu den Optionen für die Sperrüberprüfung finden Sie unter `RevocationCheckStyle` Auflistung in [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
-Um die Sperrüberprüfung für ein Zertifikat durchzuführen, geben Sie eine URL zu einem Zertifikatsperrlisten-Liste (CRL) an, indem Sie ein `CRLOptionSpec`-Objekt verwenden. Wenn Sie jedoch keine URL für den Zertifikatsperrlisten-Server angeben, ruft der Signature-Dienst die URL aus dem Zertifikat ab.
+Um die Sperrüberprüfung für ein Zertifikat durchzuführen, geben Sie eine URL zu einem Zertifikatsperrlisten-Liste (CRL) an, indem Sie ein `CRLOptionSpec`-Objekt verwenden. Wenn Sie jedoch keine URL für den CRL-Server angeben, ruft der Signature-Dienst die URL aus dem Zertifikat ab.
 
 Statt einen CRL-Server zu verwenden, können Sie einen OCSP-Server (Online Certificate Status Protocol) verwenden, wenn Sie die Sperrüberprüfung durchführen. Normalerweise wird die Sperrüberprüfung bei Verwendung eines OCSP-Servers im Gegensatz zu einem CRL-Server schneller durchgeführt. (Siehe [Online-Zertifikatstatusprotokoll](https://tools.ietf.org/html/rfc2560).)
 
@@ -1357,7 +1357,7 @@ Bei der Zeitstempelung wird der Zeitpunkt verfolgt, zu dem ein signiertes oder z
 
 >[!NOTE]
 >
->In den Beginn für die Schnellüberprüfung von Java und Webdienst ist die Überprüfungszeit auf `VerificationTime.CURRENT_TIME` und die Sperrüberprüfung auf `RevocationCheckStyle.BestEffort` eingestellt. Da keine Zertifikatsperrlisten- oder OCSP-Serverinformationen angegeben sind, werden die Serverinformationen aus dem Zertifikat abgerufen.
+>In den Schnelltests für Java und Webdienst ist die Überprüfungszeit auf `VerificationTime.CURRENT_TIME` und die Sperrüberprüfung auf `RevocationCheckStyle.BestEffort` eingestellt. Da keine Zertifikatsperrlisten- oder OCSP-Serverinformationen angegeben sind, werden die Serverinformationen aus dem Zertifikat abgerufen.
 
 **Digitalsignatur überprüfen**
 
@@ -1569,7 +1569,7 @@ Um die Sperrüberprüfung für ein Zertifikat durchzuführen, geben Sie eine URL
 
 Statt einen CRL-Server zu verwenden, können Sie einen OCSP-Server (Online Certificate Status Protocol) verwenden, wenn Sie die Sperrüberprüfung durchführen. Normalerweise wird die Sperrüberprüfung schneller durchgeführt, wenn ein OCSP-Server anstelle eines CRL-Servers verwendet wird. (Siehe [Online-Zertifikatstatusprotokoll](https://tools.ietf.org/html/rfc2560).)
 
-Sie können die CRL- und OCSP-Serverreihenfolge festlegen, die der Signature-Dienst verwendet, indem Sie Adobe Applications und Services verwenden. Wenn beispielsweise der OCSP-Server zuerst in Adobe Applications and Services festgelegt wird, wird der OCSP-Server überprüft, gefolgt vom CRL-Server.
+Sie können die CRL- und OCSP-Serverreihenfolge festlegen, die der Signature-Dienst verwendet, indem Sie Adobe Applications und Services verwenden. Wenn beispielsweise der OCSP-Server zuerst in Adobe Applications and Services festgelegt wird, wird der OCSP-Server und anschließend der CRL-Server überprüft.
 
 Wenn Sie keine Sperrüberprüfung durchführen, prüft der Signature-Dienst nicht, ob das Zertifikat gesperrt wurde. Das heißt, die Serverinformationen für CRL und OCSP werden ignoriert.
 
@@ -1581,7 +1581,7 @@ Bei der Zeitstempelung wird der Zeitpunkt verfolgt, zu dem ein signiertes oder z
 
 >[!NOTE]
 >
->In den Beginn für die Schnellüberprüfung von Java und Webdienst ist die Überprüfungszeit auf `VerificationTime.CURRENT_TIME` und die Sperrüberprüfung auf `RevocationCheckStyle.BestEffort` eingestellt. Da keine Zertifikatsperrlisten- oder OCSP-Serverinformationen angegeben sind, werden die Serverinformationen aus dem Zertifikat abgerufen.
+>In den Schnelltests für Java und Webdienst ist die Überprüfungszeit auf `VerificationTime.CURRENT_TIME` und die Sperrüberprüfung auf `RevocationCheckStyle.BestEffort` eingestellt. Da keine Zertifikatsperrlisten- oder OCSP-Serverinformationen angegeben sind, werden die Serverinformationen aus dem Zertifikat abgerufen.
 
 **Alle digitalen Signaturen abrufen**
 
