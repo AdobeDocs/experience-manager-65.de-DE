@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 07eb53f19cf7c7c2799c95ba9df54f4673d72fdc
 workflow-type: tm+mt
 source-wordcount: '1918'
-ht-degree: 52%
+ht-degree: 53%
 
 ---
 
@@ -25,7 +25,7 @@ Da AEM auf Sling basiert und ein JCR-Repository verwendet, stehen die beiden fol
 * [JCR-Knotentypen](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Sling-Knotentypen](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
-Darüber hinaus stellt AEM bietet eine Reihe von benutzerdefinierten Knotentypen.
+Darüber hinaus stellt AEM stellt eine Reihe benutzerdefinierter Knotentypen bereit.
 
 ## Audit {#audit}
 
