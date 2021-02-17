@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: 5597fb39500ac1f85d03263bfa1e5239d35d2a2c
 workflow-type: tm+mt
 source-wordcount: '685'
-ht-degree: 12%
+ht-degree: 15%
 
 ---
 
@@ -51,7 +51,7 @@ Beachten Sie beim Migrieren die folgenden (wichtigen) Unterschiede zwischen der 
    <td><code>sling:resourceType</code>
     <ul>
      <li>verwendet</li>
-     <li>zum Beispiel<br /> <code>cq/gui/components/authoring/dialog</code><br /> </li>
+     <li>Beispiel<br /> <code>cq/gui/components/authoring/dialog</code><br /> </li>
     </ul> </td>
   </tr>
   <tr>
@@ -138,8 +138,8 @@ Sie können die Konsolen auch anpassen:
 Es gibt zwar nicht direkt mit einer Migration auf die Touch-Benutzeroberfläche zu tun, aber es lohnt sich, gleichzeitig einige Probleme zu prüfen, da diese ebenfalls empfohlen werden:
 
 * [Vorlagen](/help/sites-developing/templates.md)  -  [bearbeitbare Vorlagen](/help/sites-developing/page-templates-editable.md)
-* [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html)
-* [HTL](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html)
+* [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
+* [HTL](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)
 
 >[!NOTE]
 >
@@ -150,7 +150,7 @@ Es gibt zwar nicht direkt mit einer Migration auf die Touch-Benutzeroberfläche 
 Ausführliche Informationen über die Entwicklung AEM sind der Sammlung der Mittel zu entnehmen unter:
 
 * [Benutzerhandbuch für Entwickler](/help/sites-developing/home.md)
-* [Dokumentattion zur Granite-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+* [Dokumentation zur Granite-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [AEM 6.5 Tutorials und Videos](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/overview.html)
 * [Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial](/help/sites-developing/getting-started.md)
 * [AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html)
