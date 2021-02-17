@@ -151,7 +151,7 @@ Sie können die einem bestimmten Benutzer zugeteilten/verweigerten Berechtigunge
 
 Wo sich das Häkchen im Raster befindet, gibt zudem an, welche Berechtigungen Benutzer in welchen AEM-Bereichen (also Pfaden) haben.
 
-### Aktionen     {#actions}
+### Aktionen   {#actions}
 
 Aktionen können auf einer Seite (für eine Ressource) durchgeführt werden. Für jede Seite in der Hierarchie können Sie angeben, zu welcher Aktion der Benutzer auf der Seite berechtigt ist. [](#permissions-and-acls) Erlauben Sie, eine Aktion zuzulassen oder abzulehnen.
 
