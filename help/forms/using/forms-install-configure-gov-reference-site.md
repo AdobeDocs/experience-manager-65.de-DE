@@ -24,7 +24,7 @@ ht-degree: 4%
 
 Dieses Paket wurde für **AEM Forms 6.4 OSGI Author** erstellt, wurde getestet und wird daher auf den folgenden Plattformversionen unterstützt:
 
-| AEM VERSION | AEM FORMS PACKAGE VERSION | STATUS |
+| AEM VERSION | AEM Forms PACKAGE VERSION | STATUS |
 |---|---|---|
 | 6.4 | 5,0,86 | **Unterstützt** |
 | 6.5 | 6,0,80 | **Unterstützt** |
