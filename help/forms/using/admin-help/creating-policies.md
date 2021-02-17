@@ -206,7 +206,7 @@ Der Bereich „Allgemeine Einstellungen“ enthält folgende Einstellungen:
 
 **Gültigkeitsdauer:** Der Zeitraum, in dem autorisierte Empfänger auf das richtliniengeschützte Dokument zugreifen können. Sie können aus den folgenden Optionen für die Gültigkeitsdauer auswählen:
 
-**Dokument ist nach:** Das Dokument ist für die angegebene Anzahl von Tagen ab dem Zeitpunkt des Dokuments verfügbar.
+**Dokument ist nicht gültig nach:** Das Dokument ist für die angegebene Anzahl von Tagen ab dem Zeitpunkt, zu dem das Dokument gesichert wurde, verfügbar.
 
 **Dokument ist nach diesem Datum nicht mehr gültig:** Das Dokument ist ab dem Datum gültig, an dem die Richtlinie auf das Dokument angewendet wird, bis zum angegebenen Enddatum.
 
