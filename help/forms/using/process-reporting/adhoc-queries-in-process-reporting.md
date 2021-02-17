@@ -148,7 +148,7 @@ Verwenden Sie die Optionen im Bereich **Meine Filter** in **Hinzufügen** ![lc_p
 
    Da es sich bei der Sortierung um einen Umschalter handelt, klicken Sie auf eine Feldüberschrift, um das Ergebnis aufsteigend zu sortieren, und klicken Sie erneut darauf, um es absteigend zu sortieren. Die aktuelle Sortierreihenfolge (aufsteigend/absteigend) wird durch die Richtung des dunklen Pfeils neben der Spaltenüberschrift angezeigt.
 
-   ![aufgabe_Suche_Ergebnis](assets/task_search_result.png)
+   ![Aufgabe_Suche_Ergebnis](assets/task_search_result.png)
 
 1. Klicken Sie oben links auf die Schaltfläche ![lc_pr_rail_button](assets/lc_pr_rail_button.png), um den Bereich **Meine Filter** zu reduzieren und den für das Bedienfeld **Bericht** verfügbaren Platz zu erweitern.
 1. Verwenden Sie die Optionen in der oberen rechten Ecke des Bereichs **Bericht **zum Durchführen von Vorgängen am Ergebnis der Abfrage.
