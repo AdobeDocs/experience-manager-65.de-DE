@@ -419,7 +419,7 @@ Für die ausgewählte Aktivierungsressource können Sie:
 * Eigenschaften von Ansichten (Standard)
 * Eigenschaften bearbeiten
 * Löschen
-* Veröffentlichung
+* Veröffentlichen
 * Veröffentlichung rückgängig machen
 
 Um eine neue Version der Ressource für die Aktivierung hochzuladen, wird empfohlen, eine neue Ressource zu erstellen und dann die Anmeldung für Mitglieder aus der alten Version aufzuheben und sie in der neuen Version einzutragen.
