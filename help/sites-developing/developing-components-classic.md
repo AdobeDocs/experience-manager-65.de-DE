@@ -31,7 +31,7 @@ Die klassische Benutzeroberfläche nutzt ExtJS, um Widgets zu erstellen, die das
 >
 >Auch wenn die HTML Template Language (HTL) und JSP beide für die Entwicklung von Komponenten für die klassische Benutzeroberfläche verwendet werden können, ist auf dieser Seite nur die Entwicklung mit JSP abgebildet. Dies liegt einzig an der Historie der Verwendung von JSP für die klassische Benutzeroberfläche.
 >
->HTL ist jetzt die empfohlene Skriptsprache für AEM. Siehe [HTL](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html) und [Entwickeln von AEM](/help/sites-developing/developing-components.md) zum Vergleichen von Methoden.
+>HTL ist jetzt die empfohlene Skriptsprache für AEM. Siehe [HTL](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html) und [Entwickeln von AEM](/help/sites-developing/developing-components.md) zum Vergleichen von Methoden.
 
 ## Struktur {#structure}
 
@@ -177,7 +177,7 @@ Um neue Komponenten für AEM basierend auf einer vorhandenen Komponente zu entwi
    >
    >Eine Komponente für:
    >
-   >* Die Touch-optimierte Benutzeroberfläche verwendet [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)-Komponenten
+   >* Die Touch-optimierte Benutzeroberfläche verwendet [Granite](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)-Komponenten
    >* Die klassische Benutzeroberfläche verwendet [ExtJS-Widgets](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)
 
 
