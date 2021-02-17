@@ -37,7 +37,7 @@ Nach der Installation des Pakets werden die Layout-Vorlagen (XDPs) im Vorlagenor
 
 Im Folgenden werden die allgemeinen Datenfelder in allen Vorlagen in diesem Paket aufgeführt:
 
-* Datum
+* Datum 
 * Anrede
 * Schließender Text
 * Unterschriften-Text
