@@ -220,7 +220,7 @@ Wenn die gewählte Bereitstellung eine [Veröffentlichungsfarm](/help/communitie
 
 Standardmäßig wird die OSGi-Konfiguration mit dem Kontrollkästchen **`Primary Publisher`** konfiguriert, sodass alle Veröffentlichungsinstanzen in einer Veröffentlichungsfarm sich selbst als Primär identifizieren.`AEM Communities Publisher Configuration`
 
-Daher müssen Sie die Konfiguration für alle sekundären Veröffentlichungsinstanzen **bearbeiten, um das Kontrollkästchen **`Primary Publisher`**zu deaktivieren.**
+Daher muss die Konfiguration für alle sekundären Veröffentlichungsinstanzen **bearbeitet werden, um das Kontrollkästchen **`Primary Publisher`**zu deaktivieren.**
 
 ![](../assets/primary-publisher.png)
 
