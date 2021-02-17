@@ -174,7 +174,7 @@ Sobald die Datenerfassung begonnen hat, können Sie Folgendes auswählen:
    Wenn zum Beispiel für Februar 2011 tägliche Momentaufnahmen verfügbar sind:
 
    * Wenn das Intervall auf `Day` eingestellt ist, wird jeder Schnappschuss als einzelner Wert im Diagramm angezeigt.
-   * Wenn das Intervall auf `Month` festgelegt ist, werden alle Snapshots für Februar in einem einzelnen Wert zusammengefasst (der im Diagramm als einzelner Punkt angezeigt wird).
+   * Wenn das Intervall auf `Month` festgelegt ist, werden alle Snapshots für Februar in einem einzelnen Wert zusammengefasst (der im Diagramm als einzelner &quot;Punkt&quot;angezeigt wird).
 
 Wählen Sie Ihre Anforderungen aus und klicken Sie dann auf **Los**, um sie auf den Bericht anzuwenden. Um die Anzeige nach der Anfertigung weiterer Momentaufnahmen zu aktualisieren, klicken Sie erneut auf **Los**.
 
@@ -304,7 +304,7 @@ Der Komponentenbericht stellt Informationen dazu bereit, wie Ihre Website die Ko
 * Komponentenpfad
 * Komponententyp
 * Letzte Änderung
-* Seite
+* Seite 
 
 Bedeutet, dass Sie zum Beispiel Folgendes sehen können:
 
@@ -378,7 +378,7 @@ Im Seitenaktivitätsbericht werden die Seiten und die auf ihnen vorgenommenen Ak
 
 [Spalten mit Informationen](#selecting-and-positioning-the-data-columns) zu:
 
-* Seite
+* Seite 
 * Zeit
 * Typ
 * User
@@ -401,9 +401,9 @@ Dieser Bericht stellt Informationen zu benutzergenerierten Inhalten bereit – s
 
 [Spalten mit Informationen](#selecting-and-positioning-the-data-columns) zu:
 
-* Datum
+* Datum 
 * IP-Adresse
-* Seite
+* Seite 
 * Referrer
 * Typ
 * Benutzerkennung
@@ -424,7 +424,7 @@ Dieser Bericht bietet Informationen zu allen Benutzern, die sich mit einem Konto
 
 * Alter
 * Land
-* Domäne
+* Domain
 * E-Mail
 * Familienname
 * Geschlecht
