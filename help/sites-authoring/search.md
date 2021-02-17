@@ -45,7 +45,7 @@ Die Suchleiste bietet Ihnen folgende Möglichkeiten:
 
 ## Suchen und Filtern {#search-and-filter}
 
-So durchsuchen und filtern Sie Ressourcen: 
+So durchsuchen und filtern Sie Ressourcen:
 
 1. Öffnen Sie die Option **Suchen** (mit der Lupe in der Symbolleiste) und geben Sie den Suchbegriff ein. Es werden Empfehlungen angezeigt, die Sie dann auswählen können:
 
@@ -58,7 +58,7 @@ So durchsuchen und filtern Sie Ressourcen:
 1. Falls erforderlich, können Sie den Positionsfilter entfernen (wählen Sie dazu **X** neben dem Filter aus, den Sie entfernen möchten), um alle Konsolen/Ressourcentypen zu durchsuchen.
 1. Die Ergebnisse werden angezeigt, und zwar gruppiert nach Konsole und Ressourcentyp.
 
-   Sie können entweder eine spezifische Ressource (für eine spätere Aktion) oder eine Drilldown-Suche auswählen, indem Sie den erforderlichen Ressourcentyp auswählen, z. B. **Alle Sites anzeigen**: 
+   Sie können entweder eine spezifische Ressource (für eine spätere Aktion) oder eine Drilldown-Suche auswählen, indem Sie den erforderlichen Ressourcentyp auswählen, z. B. **Alle Sites anzeigen**:
 
    ![screen-shot_2019-03-05at101900](assets/screen-shot_2019-03-05at101900.png)
 
