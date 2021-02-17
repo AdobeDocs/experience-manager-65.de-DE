@@ -252,7 +252,7 @@ Gehen Sie folgendermaßen vor, um **Phasen** zu definieren:
    |---|---|
    | Schritt 1 | Erstellen |
    | Schritt 2 | Erstellen |
-   | Schritt 3 | Überprüfen |
+   | Schritt 3 | Überprüfung |
    | Schritt 4 | Genehmigen |
    | Schritt 5 | Genehmigen |
    | Schritt 6 | Fertig stellen |
