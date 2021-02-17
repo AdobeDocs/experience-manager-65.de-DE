@@ -21,7 +21,7 @@ ht-degree: 79%
 
 # Abwärtskompatibilität in AEM 6.5{#backward-compatibility-in-aem}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 >[!NOTE]
 >
