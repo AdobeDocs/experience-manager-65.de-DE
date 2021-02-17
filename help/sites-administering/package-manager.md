@@ -220,7 +220,7 @@ Offizielle Funktionspakete:
 
 ![](do-not-localize/chlimage_1-29.png)
 
-## Package Manager  {#package-manager}
+## Package Manager {#package-manager}
 
 Der Package Manager verwaltet die Pakete auf der lokalen AEM-Installation. Nachdem Sie [die erforderlichen Berechtigungen zugewiesen haben,](#permissions-needed-for-using-the-package-manager) können Sie den Package Manager für verschiedene Aktionen, u. a. zum Konfigurieren, Erstellen, Herunterladen und Installieren von Paketen, verwenden. Folgende wichtige Elemente sind zu konfigurieren:
 
@@ -571,7 +571,7 @@ Nachdem Sie ein Paket hochgeladen haben, müssen Sie dessen Inhalte installieren
 >Um die Inhalte oder Auswirkungen eines Pakets anzuzeigen, können Sie:
 >
 >* Führen Sie eine Testinstallation des Pakets durch, ohne den Inhalt zu ändern:
-   >  Öffnen Sie das Paket (klicken Sie auf das Symbol oder den Namen des Pakets) und klicken Sie auf **Installation testen**.
+   >  Öffnen Sie das Paket (klicken Sie auf das Symbol oder den Namen des Pakets) und klicken Sie auf **Test Install**.
    >
    >
 * Siehe Liste der Paketinhalte:
