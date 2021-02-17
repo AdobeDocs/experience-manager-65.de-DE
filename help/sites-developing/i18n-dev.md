@@ -120,7 +120,7 @@ Die `I18N`-Klasse definiert eine statische `get`-Methode, die sich zur Lokalisie
 
 Die JavaScript-API ermöglicht es Ihnen, Zeichenfolgen im Client zu lokalisieren. Wie bei [Java- und JSP](#internationalizing-strings-in-java-and-jsp-code)-Code können Sie mit der JavaScript-API die zu lokalisierenden Zeichenfolgen identifizieren, lokale Anpassungen bereitstellen und Variablen in die lokalisierten Zeichenfolgen einschließen.
 
-Der `granite.utils`[-Client-Bibliotheksordner](/help/sites-developing/clientlibs.md) stellt die JavaScript-API bereit. Um die API zu verwenden, fügen Sie diesen Client-Bibliotheksordner in Ihre Seite ein. Lokale Anpassungen verwenden den Namensraum `Granite.I18n`.
+Der `granite.utils`[-Client-Bibliotheksordner](/help/sites-developing/clientlibs.md) stellt die JavaScript-API bereit. Um die API zu verwenden, fügen Sie diesen Client-Bibliotheksordner in Ihre Seite ein. lokale Anpassungen verwenden den Namensraum `Granite.I18n`.
 
 Bevor Sie lokalisierte Zeichenfolgen bereitstellen, müssen Sie das Gebietsschema mit der Funktion `Granite.I18n.setLocale` festlegen. Diese Funktion erfordert den Sprachcode des Gebietsschemas als Argument:
 
