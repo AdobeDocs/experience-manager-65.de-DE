@@ -20,7 +20,7 @@ ht-degree: 88%
 
 # Erstellen und Verwalten von Überprüfungen für Assets in Formularen{#creating-and-managing-reviews-for-assets-in-forms}
 
-## Überprüfen {#review}
+## Überprüfung {#review}
 
 Bei einer Überprüfung handelt es sich um einen Mechanismus, bei dem ein oder mehrere Überprüfer zu einem Asset, das in einem Formular verfügbar ist, Kommentare abgeben können.
 
