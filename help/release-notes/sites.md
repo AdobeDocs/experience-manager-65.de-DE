@@ -69,7 +69,7 @@ Im Folgenden sind die Verbesserungen für AEM Sites 6.5 aufgeführt:
 * Der Seiten-Editor ermöglicht kontextbezogenes Bearbeiten und Erstellen von Single-Page-Apps-Erlebnissen mit clientseitigen React- und Angular-Komponenten, die das JS-SDK verwenden (auch als SPA-Editor bezeichnet).
 * Der Strukturvorlagen-Modus wird nur angezeigt, wenn für die Seite eine Strukturvorlagen-Seite konfiguriert ist.
 
-## Inhaltsfragmente und Editor  {#content-fragments-amp-editor}
+## Inhaltsfragmente und Editor {#content-fragments-amp-editor}
 
 * Mit der neuen Leiste [Anmerkungen](/help/assets/content-fragments/content-fragments-variations.md#viewing-editing-deleting-annotations) im Inhaltsfragmente-Editor können Sie allgemeine Kommentare erstellen und Kommentare innerhalb des Texts anzeigen (erscheinen ebenfalls in der Leiste „Timeline“).
 * Möglichkeit, den Standard-Inhaltstyp eines mehrzeiligen Textelements in einem [Inhaltsfragmentmodell](/help/assets/content-fragments/content-fragments-models.md) auf einfachen Text, Rich-Text oder Markdown festzulegen
