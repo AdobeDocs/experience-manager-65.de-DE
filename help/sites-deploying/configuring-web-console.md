@@ -140,7 +140,7 @@ Auf dieser Registerkarte stehen folgende Optionen zur Verfügung:
 
    Beginn eines Bundles entsprechend der angegebenen Beginn-Ebene.
 
-* **Stopp**
+* **Anhalten**
 
    Hält das Bundle an.
 
