@@ -48,7 +48,7 @@ Es liegt in der Verantwortung des Projektmanagers, abhängig von den Ergebnissen
 
 **Einbindung**  - Obwohl es Aufgabe des Projektmanagers ist sicherzustellen, dass alle Beteiligten an allen Sitzungen (Status, Workshops usw.) umfassend beteiligt sind, sollten Sie auch versuchen, so früh wie möglich in den Projektzyklus einbezogen zu werden, einschließlich der Informationserfassung und der erforderlichen Analyse.
 
-**Einbeziehung des Kunden**  - Versuchen Sie, den Kunden (soweit möglich) bei der Definition Ihrer Testfälle und Planung einzubeziehen.
+**Beziehen Sie den Kunden**  ein: Versuchen Sie, den Kunden (soweit möglich) bei der Definition Ihrer Testfälle und Planung einzubeziehen.
 
 ## Testarten {#types-of-tests}
 
