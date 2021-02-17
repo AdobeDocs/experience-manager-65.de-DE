@@ -18,7 +18,7 @@ ht-degree: 90%
 ---
 
 
-# SPA-Modell-Routing{#spa-model-routing}
+# SPA-Modell-Routing {#spa-model-routing}
 
 Bei Single Page Applications in AEM ist die App für das Routing verantwortlich. In diesem Dokument werden der Routing-Mechanismus, der Vertrag und die verfügbaren Optionen beschrieben.
 
