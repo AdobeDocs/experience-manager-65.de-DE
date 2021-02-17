@@ -621,7 +621,7 @@ Schreibgeschützt.
 
 Der Wert des TimeSeries-Feldes für jeden Statistiktyp, den `org.apache.jackrabbit.api.stats.RepositoryStatistics` definiert.
 
-* Domäne: `com.adobe.granite`
+* Domain: `com.adobe.granite`
 * Typ: `TimeSeries`
 * Name: Einer der folgenden Werte aus der Enum-Klasse:`org.apache.jackrabbit.api.stats.RepositoryStatistics.Type`
 
@@ -828,7 +828,7 @@ Einige Drittanbieter-Serverressourcen installieren MBeans, die Attribute und Vor
 <table>
  <tbody>
   <tr>
-   <th>Domäne</th>
+   <th>Domain</th>
    <th>Typ</th>
    <th>MBean-Klasse</th>
   </tr>
