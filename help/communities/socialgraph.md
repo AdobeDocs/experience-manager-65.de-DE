@@ -24,7 +24,7 @@ ht-degree: 26%
 
 Die Fähigkeit eines Community-Mitglieds, [Aktivitäten](activities.md) zu befolgen, wird durch zwei Komponenten festgelegt: `Follow` und `Following`.
 
-Die Komponente `Follow` muss mit einer anderen Ressource verknüpft sein, und diese Zuordnung ist bereits für Community-Mitglieder und -Funktionen eingerichtet.
+Die `Follow`-Komponente muss mit einer anderen Ressource verknüpft sein, und diese Zuordnung ist bereits für Community-Mitglieder und -Funktionen eingerichtet.
 
 Die `Following`-Komponente Liste lediglich die Mitglieder, die dem aktuellen Member folgen oder denen das aktuelle Member folgt. Dieses Sozialdiagramm der Mitgliederbeziehungen untereinander ist Teil des Benutzerprofils, das für eine [Community-Site](overview.md#communitiessites) bereitgestellt wird.
 
