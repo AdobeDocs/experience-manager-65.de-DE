@@ -182,7 +182,7 @@ Mit AEM Assets können Sie Ordner mit Assets für Benutzer von Adobe Creative Cl
 
 Die Synchronisierung zwischen AEM Assets und Marketing Cloud ist so gestaltet, dass die Benutzercomputerinstanz, von der das Asset hochgeladen wird, das Recht zur Änderung des Assets behält. Nur diese Änderungen werden in der anderen Instanz eingefügt. 
 
-Wenn zum Beispiel ein Asset von einer AEM Assets-Instanz (vor Ort) hochgeladen wird, werden die von dieser Instanz vorgenommenen Änderungen am Asset in der Marketing Cloud-Instanz aufgefüllt. Die von der Marketing Cloud-Instanz zu demselben Asset vorgenommenen Änderungen werden jedoch nicht an die AEM-Instanz übertragen und umgekehrt, wenn ein Asset aus Marketing Cloud hochgeladen wird.
+Wenn zum Beispiel ein Asset von einer AEM Assets-Instanz (vor Ort) hochgeladen wird, werden die von dieser Instanz vorgenommenen Änderungen am Asset in der Marketing Cloud-Instanz aufgefüllt. Die von der Marketing Cloud-Instanz zu demselben Asset vorgenommenen Änderungen werden jedoch nicht an die AEM-Instanz weitergegeben und umgekehrt, wenn ein Asset aus Marketing Cloud hochgeladen wird.
 
 >[!MORELIKETHIS]
 * [Best Practices für die Integration von AEM und Creative Cloud](/help/assets/aem-cc-integration-best-practices.md)
