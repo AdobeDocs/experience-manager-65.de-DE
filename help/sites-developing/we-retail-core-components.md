@@ -40,7 +40,7 @@ Die Kernkomponenten sind moderne, flexible Komponenten, die sich problemlos erwe
 1. Beachten Sie, dass alle Kernkomponenten mit **v1** benannt sind, was bedeutet, dass dies die erste Version dieser Kernkomponente ist. Künftig werden regelmäßig Versionen veröffentlicht, die mit AEM kompatibel sind und ein einfaches Upgrade ermöglichen, sodass Sie die neuesten Funktionen nutzen können.
 1. Klicken Sie auf **Text (v1)**.
 
-   Beachten Sie, dass der **Ressourcentyp** der Komponente `/apps/core/wcm/components/text/v1/text` ist. Hauptkomponenten befinden sich unter `/apps/core/wcm/components` und sind pro Komponente versioniert.
+   Beachten Sie, dass der **Ressourcentyp** der Komponente `/apps/core/wcm/components/text/v1/text` ist. Kernkomponenten befinden sich unter `/apps/core/wcm/components` und sind pro Komponente versioniert.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
@@ -88,6 +88,6 @@ Die Kernkomponenten sind moderne, flexible Komponenten, die sich problemlos erwe
 
 ## Weiterführende Informationen {#further-information}
 
-Weitere Informationen zu den Kernkomponenten finden Sie im Dokument [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html) für Autoren. Dies enthält einen Überblick über die Kernkomponenten. Im Dokument [Entwickeln von Kernkomponenten](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) für Entwickler finden Sie einen technischen Überblick.
+Weitere Informationen zu den Kernkomponenten finden Sie im Dokument [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) für Autoren. Dies enthält einen Überblick über die Kernkomponenten. Im Dokument [Entwickeln von Kernkomponenten](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) für Entwickler finden Sie einen technischen Überblick.
 
 Sie können sich darüber hinaus eingehender mit [bearbeitbaren Vorlagen](/help/sites-developing/we-retail-editable-templates.md) befassen. Ausführliche Informationen zu bearbeitbaren Vorlagen finden Sie im Authoring-Dokument [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) oder auf der Developer Dokument-Seite [Templates - Editable](/help/sites-developing/page-templates-editable.md).
