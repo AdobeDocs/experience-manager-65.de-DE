@@ -75,7 +75,7 @@ zum Beispiel [https://localhost:4502/tagging](https://localhost:4502/tagging)
 1. Sie können **Titel** und **Beschreibung** ändern.
 1. Klicken Sie auf **Speichern**, um das Dialogfeld zu schließen.
 
-## Löschen von Tags  {#deleting-tags}
+## Löschen von Tags {#deleting-tags}
 
 1. Wählen Sie im rechten Bedienfeld das zu löschende Tag aus.
 1. Klicken Sie auf **Löschen**.
