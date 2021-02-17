@@ -131,9 +131,9 @@ To apply a metadata profile globally, follow these steps:
 
 ## Metadaten-Schema für einen Ordner {#folder-metadata-schema}
 
-[!DNL Adobe Experience Manager Assets]Mit können Sie Metadatenschemata für Asset-Ordner erstellen, die die auf Ordnereigenschaften-Seiten angezeigten Layouts und Metadaten definieren. 
+Mit [!DNL Adobe Experience Manager Assets] können Sie Metadatenschemata für Asset-Ordner erstellen, die die auf Seiten mit Ordnereigenschaften angezeigten Layouts und Metadaten definieren.
 
-### Hinzufügen von Ordner-Metadatenschema-Formularen     {#add-a-folder-metadata-schema-form}
+### Hinzufügen von Ordner-Metadatenschema-Formularen  {#add-a-folder-metadata-schema-form}
 
 Verwenden Sie den Editor für Metadatenschema-Formulare, um Metadatenschemata für Ordner zu erstellen und zu bearbeiten.
 
@@ -141,7 +141,7 @@ Verwenden Sie den Editor für Metadatenschema-Formulare, um Metadatenschemata f�
 1. Klicken Sie auf der Seite [!UICONTROL Ordnermetadaten-Schema Forms] auf **[!UICONTROL Erstellen]**.
 1. Geben Sie einen Namen für das Formular ein und klicken Sie auf **[!UICONTROL Erstellen]**. Das neue Schema-Formular wird auf der Seite [!UICONTROL Schema Forms] aufgeführt.
 
-### Bearbeiten von Ordner-Metadatenschema-Formularen      {#edit-folder-metadata-schema-forms}
+### Bearbeiten von Ordner-Metadatenschema-Formularen   {#edit-folder-metadata-schema-forms}
 
 Sie können neu erstellte oder bestehende Metadatenschema-Formulare bearbeiten. Hierzu zählen folgende Elemente:
 
@@ -171,7 +171,7 @@ Sie können diese Formularelemente einem Feld innerhalb eines Metdatenknotens im
 
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
 
-#### Komponenten zum Erstellen von Formularen      {#components-to-build-forms}
+#### Komponenten zum Erstellen von Formularen   {#components-to-build-forms}
 
 Die Registerkarte **[!UICONTROL Formular erstellen]** enthält Formularelemente, die Sie im Ordner-Metadatenschema-Formular verwenden. Die Registerkarte **[!UICONTROL Einstellungen]** enthält die Attribute für jedes Element, das Sie auf der Registerkarte **[!UICONTROL Formular erstellen]** auswählen. Im Folgenden finden Sie eine Liste der auf der Registerkarte **[!UICONTROL Formular erstellen]** verfügbaren Elemente:
 
@@ -186,7 +186,7 @@ Die Registerkarte **[!UICONTROL Formular erstellen]** enthält Formularelemente,
 | [!UICONTROL Standard-Tags] | Fügen Sie ein Tag hinzu. |
 | [!UICONTROL Ausgeblendetes Feld] | Fügen Sie ein ausgeblendetes Feld hinzu. Dieses wird beim Speichern des Assets als POST-Parameter gesendet. |
 
-#### Bearbeiten von Formularelementen      {#editing-form-items}
+#### Bearbeiten von Formularelementen   {#editing-form-items}
 
 Um die Eigenschaften von Formularelementen zu bearbeiten, klicken Sie auf die Komponente und bearbeiten Sie alle oder eine Untergruppe der folgenden Eigenschaften auf der Registerkarte **[!UICONTROL Einstellungen]**.
 
@@ -212,7 +212,7 @@ Um zu gewährleisten, dass die Komponente ordnungsgemäß im Metadatenschema-For
 
 **[!UICONTROL Klasse]**: Objektklasse, der die Eigenschaft zugeordnet ist.
 
-### Löschen von Ordner-Metadatenschema-Formularen      {#delete-folder-metadata-schema-forms}
+### Löschen von Ordner-Metadatenschema-Formularen   {#delete-folder-metadata-schema-forms}
 
 Sie können Ordner-Metadatenschema-Formulare über die Seite „Ordner-Metadatenschema-Formulare“ löschen. Um ein Formular zu löschen, wählen Sie das Formular aus und klicken Sie in der Symbolleiste auf die Option &quot;Löschen&quot;.
 
@@ -224,7 +224,7 @@ Sie können ein Ordner-Metadatenschema über die Seite „Ordner-Metadatenschema
 
 Wenn Sie ein Metadaten-Schema für einen Ordner konfigurieren, wird der Pfad zum Schema-Formular in der `folderMetadataSchema`-Eigenschaft des Ordnerknotens unter `./jcr:content` gespeichert.
 
-#### Zuweisen eines Schemas über die Seite „Ordner-Metadatenschema“      {#assign-to-a-schema-from-the-folder-metadata-schema-page}
+#### Zuweisen eines Schemas über die Seite „Ordner-Metadatenschema“   {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
 1. Wechseln Sie in der [!DNL Experience Manager]-Schnittstelle zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Ordnermetadaten-Schema]**.
 1. Wählen Sie auf der Seite „Ordner-Metadatenschema-Formulare“ das Schemaformular aus, das Sie auf einen Ordner anwenden möchten.
