@@ -890,7 +890,7 @@ Um ein richtliniengeschütztes Dokument zu sperren, geben Sie die Lizenzkennung 
 
 >[!NOTE]
 >
->Wenn Sie versuchen, ein bereits gesperrtes Dokument zu sperren, wird eine Ausnahme ausgelöst.
+>Wenn Sie versuchen, ein Dokument zu sperren, das bereits gesperrt ist, wird eine Ausnahme ausgelöst.
 
 **Siehe auch**
 
@@ -1650,7 +1650,7 @@ Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn S
 
 **Rights Management Client API-Objekt erstellen**
 
-Bevor Sie einen Rights Management-Dienstvorgang programmgesteuert durchführen können, müssen Sie ein Rights Management-Dienst-Client-Objekt erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `DocumentSecurityClient`-Objekt. Wenn Sie die Rights Management-Webdienst-API verwenden, erstellen Sie ein `DocumentSecurityServiceService`-Objekt.
+Bevor Sie einen Rights Management-Dienstvorgang programmgesteuert durchführen können, müssen Sie ein Client-Objekt für den Rights Management-Dienst erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `DocumentSecurityClient`-Objekt. Wenn Sie die Rights Management-Webdienst-API verwenden, erstellen Sie ein `DocumentSecurityServiceService`-Objekt.
 
 **Geben Sie die zu suchenden Ereignis an**
 
