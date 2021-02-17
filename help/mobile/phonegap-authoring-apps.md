@@ -28,7 +28,7 @@ Mit dem AEM Mobile-Dashboard können Sie Ihre Mobilanwendung erstellen, erstelle
 
 Informationen zum Erstellen Ihrer AEM Mobile-Anwendung finden Sie auf der Seite [Erstellen von Mobilanwendungen](/help/mobile/building-app-mobile-phonegap.md).
 
-Informationen zum Einrichten Ihrer Umgebung und zum Einstieg finden Sie unter [AEM zum Verwenden von AEM PhoneGap Enterprise](/help/mobile/administer-phonegap.md).
+Informationen zum Einrichten Ihrer Umgebung und zum Einstieg finden Sie unter [AEM der Verwendung von AEM PhoneGap Enterprise](/help/mobile/administer-phonegap.md).
 
 ## Der AEM Mobile-App-Katalog {#the-aem-mobile-apps-catalog}
 
@@ -70,7 +70,7 @@ Inhalt kann in AEM Mobile im Prinzip auf dieselbe Weise wie in AEM Sites erstell
 
 Nachdem Sie Ihre Inhalte über die Kachel &quot;Seiteninhalt verwalten&quot;hinzugefügt oder geändert haben, können Sie diese Änderungen mit einem Content Release-Update an Ihre Kunden senden.
 
-Mit dem Content Package kann der AEM App Author Seiteninhalte in AEM verwalten und Ihr Entwicklungsteam Änderungen an Ihrer PhoneGap Shell-Anwendung (d. h. App-Framework oder -Infrastruktur) vornehmen lassen und diese dann schnell an Ihre Kunden weiterleiten, ohne dass ein Entwickler aufgefordert werden muss, sich erneut zur Distribution an die verschiedenen Stores zu senden.
+Mit dem Content Package kann der AEM App Author Seiteninhalte in AEM verwalten und Ihr Entwicklungsteam Änderungen an Ihrer PhoneGap Shell-Anwendung (d. h. App-Framework oder -Infrastruktur) vornehmen lassen und diese dann schnell an Ihre Kunden weiterleiten, ohne dass ein Entwickler aufgefordert werden muss, sich erneut zur Verteilung an die verschiedenen Stores zu wenden.
 
 Content Package erstellt für jedes Update eine ZIP-Datei, die als Inhaltsveröffentlichungspaket bezeichnet wird. Diese Pakete enthalten HTML-Ressourcen und HTML-Seiten, die beim Rendern der App generiert werden und intelligent genug sind, nur die Dateien zu verpacken, die seit der letzten Aktualisierung geändert wurden.
 
