@@ -236,7 +236,7 @@ Gehen Sie wie folgt vor, um die Spam-Erkennungs-Engine zu aktivieren:
 
 Das Sentiment wird basierend auf der Anzahl positiver und negativer Suchbegriffe ([Watchwords](#configuringwatchwords)) in einem Beitrag (UGC) berechnet.
 
-Die Sentiment-Analyse verwendet einen Satz vorkonfigurierter Regeln und berechnet das Sentiment des UGC. Die Standardregeln befinden sich unter: `/libs/cq/workflow/components/workflow/social/sentiments/rules.`
+Die Sentiment-Analyse verwendet einen Satz vorkonfigurierter Regeln und berechnet das Sentiment der UGC. Die Standardregeln befinden sich unter: `/libs/cq/workflow/components/workflow/social/sentiments/rules.`
 
 Der Wert, den die Regeln erzeugen, liegt zwischen 1 (alle negativen, keine positiven Wörter) und 10 (alle positiven, keine negativen Wörter). Der Sentimentwert 5 ist ein neutrales Sentiment und der Standardwert.
 
