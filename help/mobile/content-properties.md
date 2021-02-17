@@ -37,8 +37,8 @@ Die folgenden Tabellen beschreiben die Inhaltseigenschaften und -knoten.
 | dps-id | Zeichenfolge |  | von AEM Mobile zugewiesen und von AEM nach dem Hochladen in AEM Mobile oder Import aus AEM Mobile gespeichert |
 | dps-resourceType | Zeichenfolge | dps:Artikel | dps:Banner | dps:Sammlung | entity type-Eigenschaft |
 | dps-version | Zeichenfolge |  | Version der AEM Mobile-Entität (auch in der vollständigen aemm-id enthalten) |
-| dps-lastSynced | Datum |  | Datum der letzten Synchronisierung/des letzten Imports aus AEM Mobile in AEM |
-| dps-lastUploaded | Datum |  | Datum des letzten Uploads von AEM nach AEM Mobile |
+| dps-lastSynced | Datum  |  | Datum der letzten Synchronisierung/des letzten Imports aus AEM Mobile in AEM |
+| dps-lastUploaded | Datum  |  | Datum des letzten Uploads von AEM nach AEM Mobile |
 | dps-lastUploadedBy | Zeichenfolge:userid |  | ID-Benutzer, der die letzte Upload-Anforderung von AEM nach AEM Mobile ausgeführt hat |
 
 ## Core-Metadateneigenschaften {#core-metadata-properties}
