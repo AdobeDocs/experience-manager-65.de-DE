@@ -11,7 +11,7 @@ ht-degree: 79%
 ---
 
 
-# [!DNL Assets] HTTP-API {#assets-http-api}
+# [!DNL Assets]-HTTP-API {#assets-http-api}
 
 ## Überblick {#overview}
 
