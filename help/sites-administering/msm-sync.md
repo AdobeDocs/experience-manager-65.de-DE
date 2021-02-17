@@ -13,8 +13,8 @@ docset: aem65
 translation-type: tm+mt
 source-git-commit: 31f546400f4c3335953d05b1df9394445b5feb56
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2707'
+ht-degree: 81%
 
 ---
 
@@ -32,7 +32,7 @@ In diesem Abschnitt finden Sie Informationen zu den installierten Rollout-Konfig
 
 >[!CAUTION]
 >
->Das Aktualisieren oder Ändern einer Out-of-the-Box (installierte) Rollout-Konfiguration ist **nicht** empfohlen. Wenn eine benutzerdefinierte Live-Aktion erforderlich ist, sollte sie in einer benutzerdefinierten Rollout-Konfiguration hinzugefügt werden.
+>Das Aktualisieren oder Ändern einer Out-of-the-Box-Rollout-Konfiguration (installiert) wird nicht empfohlen. **** Wenn eine benutzerdefinierte Live-Aktion erforderlich ist, sollte sie in einer benutzerdefinierten Rollout-Konfiguration hinzugefügt werden.
 
 ### Rollout-Auslöser {#rollout-triggers}
 
