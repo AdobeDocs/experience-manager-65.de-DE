@@ -22,7 +22,7 @@ ht-degree: 55%
 
 ## Überblick {#overview}
 
-Die AEM Brackets-Erweiterung bietet einen reibungslosen Workflow für die Bearbeitung von AEM-Komponenten und Client-Bibliotheken und nutzt die Leistungsfähigkeit des [Brackets](https://brackets.io/)-Code-Editors, der den Zugriff auf Photoshop-Dateien und -Ebenen über den Code-Editor ermöglicht. Die durch die Erweiterung gebotene einfache Synchronisation (kein Maven oder File Vault erforderlich) erhöht die Effizienz der Entwickler und hilft auch Frontend-Entwicklern mit begrenztem AEM-Wissen, an Projekten teilzunehmen. Diese Erweiterung bietet auch einige Unterstützung für die HTML-Vorlagensprache (HTL)](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html), wodurch die Komplexität von JSP entfällt, um die Komponentenentwicklung einfacher und sicherer zu gestalten.[
+Die AEM Brackets-Erweiterung bietet einen reibungslosen Workflow für die Bearbeitung von AEM-Komponenten und Client-Bibliotheken und nutzt die Leistungsfähigkeit des [Brackets](https://brackets.io/)-Code-Editors, der den Zugriff auf Photoshop-Dateien und -Ebenen über den Code-Editor ermöglicht. Die durch die Erweiterung gebotene einfache Synchronisation (kein Maven oder File Vault erforderlich) erhöht die Effizienz der Entwickler und hilft auch Frontend-Entwicklern mit begrenztem AEM-Wissen, an Projekten teilzunehmen. Diese Erweiterung bietet auch einige Unterstützung für die HTML-Vorlagensprache (HTL)](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html), wodurch die Komplexität von JSP entfällt, um die Komponentenentwicklung einfacher und sicherer zu gestalten.[
 
 ![chlimage_1-53](assets/chlimage_1-53a.png)
 
@@ -78,7 +78,7 @@ Im Menü **Datei** von Brackets wählen Sie **Ordner öffnen...** und wählen Si
 
 >[!NOTE]
 >
->Wenn Sie kein eigenes Projekt mit einem Inhaltspaket haben, können Sie das [HTL TodoMVC Beispiel](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc) ausprobieren. Klicken Sie auf GitHub auf **ZIP herunterladen**, extrahieren Sie die Dateien lokal und öffnen Sie, wie oben beschrieben, den Ordner `jcr_root` in Brackets. Gehen Sie dann wie folgt vor, um **Projekteinstellungen** einzurichten, und laden Sie dann das gesamte Paket in Ihre AEM Entwicklungsinstanz hoch, indem Sie ein **Inhaltspaket exportieren** ausführen, wie im Abschnitt &quot;Synchronisierung des vollständigen Inhalts-Pakets&quot;weiter unten beschrieben.
+>Wenn Sie kein eigenes Projekt mit einem Inhaltspaket haben, können Sie das [HTL TodoMVC Beispiel](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc) ausprobieren. Klicken Sie auf GitHub auf **ZIP herunterladen**, extrahieren Sie die Dateien lokal und öffnen Sie, wie oben beschrieben, den Ordner `jcr_root` in Brackets. Führen Sie dann die folgenden Schritte aus, um **Projekteinstellungen** einzurichten, und laden Sie dann das gesamte Paket in Ihre AEM Entwicklungsinstanz hoch, indem Sie ein **Inhaltspaket exportieren** ausführen, wie im Abschnitt &quot;Synchronisierung des vollständigen Inhalts-Pakets&quot;weiter unten beschrieben.
 >
 >Nach diesen Schritten sollten Sie auf die `/content/todo.html`-URL in Ihrer AEM-Entwicklungsinstanz zugreifen können. Sie können Beginn mit Codeänderungen in Klammern ausführen und sehen, wie die Änderungen nach einer Aktualisierung im Webbrowser sofort mit dem AEM synchronisiert wurden.
 
