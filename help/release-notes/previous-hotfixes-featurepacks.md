@@ -15,7 +15,7 @@ ht-degree: 20%
 
 ## [!DNL Adobe Experience Manager] 6.5.6.0  {#experience-manager-6560}
 
-Adobe Experience Manager 6.5.6.0 ist ein wichtiges Update, das neue Funktionen, vom Kunden angeforderte wichtige Verbesserungen sowie Leistungs-, Stabilitäts- und Sicherheitsverbesserungen umfasst, die seit der allgemeinen Verfügbarkeit der Version 6.5 im April 2019 veröffentlicht werden. **** Es kann auf Adobe Experience Manager 6.5 installiert werden.
+Adobe Experience Manager 6.5.6.0 ist ein wichtiges Update, das neue Funktionen, vom Kunden angeforderte wichtige Verbesserungen sowie Leistungs-, Stabilitäts- und Sicherheitsverbesserungen umfasst, die seit der allgemeinen Verfügbarkeit der Version 6.5 im **April 2019** veröffentlicht werden. Es kann auf Adobe Experience Manager 6.5 installiert werden.
 
 Die wichtigsten Funktionen und Verbesserungen, die in Adobe Experience Manager 6.5.6.0 eingeführt wurden, umfassen:
 
@@ -100,7 +100,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in der Version 6.5.6.0.[!
 * Die Suchergebnisse auf der Seite [!UICONTROL  Willkommen] und die Pfadende-Vorlage sind anfällig für Cross-Site-Scripting (NPR-33719, NPR-33718).
 * Das Erstellen einer binären Eigenschaft auf einem unstrukturierten Knoten führt zu Site-übergreifendem Skripten im Dialogfeld für binäre Eigenschaften (NPR-33717).
 * Site-übergreifende Skripterstellung bei Verwendung der Option [!UICONTROL Zugriffskontrolle-Test] auf der CRX DE-Schnittstelle (NPR-33716).
-* Benutzereingaben werden beim Senden von Informationen an den Client nicht ordnungsgemäß für verschiedene Komponenten kodiert (NPR-33695).
+* Benutzereingaben werden beim Senden von Informationen an den Client für verschiedene Komponenten nicht ordnungsgemäß kodiert (NPR-33695).
 * Site-übergreifende Skripterstellung in der Kalenderversion für Experience Manager Inbox (NPR-33545).
 * Eine URL, die mit `childrenlist.html` endet, zeigt eine HTML-Seite anstelle einer 404-Antwort an. Solche URLs sind anfällig für Cross-Site-Scripting (NPR-33441).
 
@@ -127,7 +127,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in der Version 6.5.6.0.[!
 
 * Die Drag-Funktion mit der Tastatur funktioniert jetzt im [!UICONTROL Metadaten-Schema-Editor] im Durchsuchenmodus der Bildschirmlesehilfe (CQ-4296326).
 
-* Wenn Sie im Dialogfeld &quot;Linkfreigabe&quot;im Durchsuchen-Modus navigieren, wird eine Bildschirmlesehilfe,
+* Wenn Sie im Dialogfeld für die Freigabe von Links im Durchsuchen-Modus navigieren,
 
    * Die Tabelleninformationen werden nicht kommentiert, sobald das Dialogfeld geladen wurde.
 
@@ -246,7 +246,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in der Version 6.5.6.0.[!
 * Die Aktualisierung schlägt mit einem Fehler aufgrund von Abhängigkeiten zu einer bestimmten Version des `cq-wcm-api`-Gründungspakets (CQ-4300520) fehl.
 * Die Standardwerte für die Einstellungen **[!UICONTROL Connect Timeout]** und **[!UICONTROL Socket Timeout]** für die Standardagentenkonfiguration (publish) sind nicht angegeben (NPR-33707).
 * Aktualisierungen der Zuordnungskonfiguration unter `/etc/map.publish` beziehen sich nicht auf die Seiten der Site (NPR-34015).
-* [API-Referenzdokumentation ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/package-summary.html) enthält nicht die Dokumentation für das  `com.day.cq.tagging` Paket (CQ-4295864).
+* [API-Referenzdokumentation ](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/package-summary.html) enthält nicht die Dokumentation für das  `com.day.cq.tagging` Paket (CQ-4295864).
 
 ### Benutzeroberfläche {#ui-6560}
 
@@ -431,7 +431,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in der Version 6.5.5.0.[!
 * Wenn Sie eine benutzerdefinierte Komponente mit der Standardkomponente &quot;Erlebnisfragment&quot;erstellen und sie auf den Seiten &quot;Experience Manager-Sites&quot;verwenden, zeigt Experience Manager keine Verweise (Verwendungszwecke) für die benutzerdefinierte Komponente (NPR-32852) an.
 * Wenn Sie einen Ordner mit einer großen Anzahl von Verweisen umbenennen, werden viele Verweise auf den Ordner nicht aktualisiert (NPR-32765).
 * Wenn Sie die Quellbearbeitungsoption aktivieren, steht sie für Inline-Vollbildoptionen zur Verfügung, bleibt aber für das Bearbeiten des Dialogfelds und der Vollbildoptionen des Rich-Text-Editors (NPR-32763) nicht mehr verfügbar.
-* Wenn Sie über ein Mehrfeld verfügen und es ein erforderliches Feld (wie ein Dropdown-Feld oder ein Pfadfeld) in den Seiteneigenschaften eines Blueprints enthält, werden die Seiteneigenschaften der Live-Kopie nicht gespeichert (NPR-32751), wenn eine Seite, die ein solches Multifeld enthält, verkleinert wird.
+* Wenn Sie über ein Mehrfeld verfügen und es ein erforderliches Feld (wie ein Dropdown-Feld oder ein Pfadfeld) in den Seiteneigenschaften eines Blueprints enthält, werden die Seiteneigenschaften der Live-Kopie nicht gespeichert (NPR-32751), wenn eine Seite, die ein solches Multifeld enthält, mit einem Rollout abgeschlossen wird.
 * Bildschirmlesehilfen können die Überschriftenstruktur nicht zum Navigieren auf einer Seite verwenden. Darüber hinaus enthält die Registerkarte Komponenten die falsche Beschriftung (NPR-32648).
 * Beim Paginieren werden nicht alle Elemente (NPR-32605) in der Erlebnisfragmentauswahl geladen.
 * Autorenberechtigungen zum Lesen, Ändern, Erstellen und Löschen von Live-Kopien werden widerrufen. Jeder Autor musste explizit Lese- und Änderungsberechtigungen zum Verschieben von Seiten in einem Blueprint (NPR-32550) bereitstellen.
@@ -456,7 +456,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in der Version 6.5.5.0.[!
 
 * Es ist jetzt möglich, den Tastaturfokus auf die Liste [!UICONTROL Kommentare] und die Option &quot;anklickbar&quot;zu [!UICONTROL Erstellen] Versionskommentare unter [!UICONTROL Neue Version erstellen] in [!UICONTROL Zeitschiene] Bedienfeld mit Assets (NPR-33424) zu legen.
 
-* Es ist nun möglich, die Option [!UICONTROL Ansicht Settings] für Assets zu erreichen und die Einstellungen im [!UICONTROL Ansicht Settings] Dialogfeld mit den Tastenkombinationen (NPR-33420) zu ändern.
+* Es ist nun möglich, die Option [!UICONTROL Ansicht Settings] für Assets zu erreichen und die Einstellungen im [!UICONTROL Ansicht Settings] Dialogfeld mithilfe der Tastenkombinationen (NPR-33420) zu ändern.
 
 * Das Popup-Feld &quot;Liste&quot;des Kombinationsfeldes (in verschiedenen Feldern auf verschiedenen Seiten) zeigt nun Einträge als Liste von Optionen an, die von Bildschirmlesehilfen angekündigt werden können (NPR-33516).
 
@@ -542,7 +542,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in der Version 6.5.5.0.[!
 
    * Der Fokus von Bildschirmlesehilfen im Durchsuchen-Modus wechselt in einer aussagekräftigen Sequenz zu verschiedenen Elementen.
 
-* [!UICONTROL Metadata Schema ] Editorpage und seine Elemente sind jetzt über die Tastatur verfügbar und können mit Bildschirmlesehilfen verwendet werden (CQ-4290962, CQ-4272953).
+* [!UICONTROL Metadata Schema ] Editorpage und seine Elemente sind jetzt über die Tastatur verfügbar und sind für Bildschirmlesehilfen geeignet (CQ-4290962, CQ-4272953).
 
 * Der Zweck des `X`-Symbols zum Entfernen der ausgewählten Tags wird jetzt von Bildschirmlesehilfen zusammen mit der Anzahl der ausgewählten Tags (CQ-4273017) angekündigt.
 
@@ -636,7 +636,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in der Version 6.5.5.0.[!
 * Beim Exportieren von [!DNL Experience Fragments] mit [!DNL Adobe I/O] werden Metadaten wie &quot;Quellprodukt&quot;nicht nach Adobe Target exportiert (NPR-32159).
 * Autorisierte IMS-Benutzer in der lokalen Experience Manager-Administratorgruppe können keine IMS-Konfigurationen erstellen oder ändern (NPR-33045).
 * Adobe Startkonfigurationsseite zeigt nicht alle Datensätze an (NPR-33011).
-* Benutzer in der Gruppe &quot;Inhaltsersteller&quot;können die Eigenschaften einer Adobe Target-Komponente aufgrund eines JavaScript-Fehlers (NPR-32996) nicht bearbeiten.
+* Benutzer in der Gruppe &quot;Inhaltsersteller&quot;können Eigenschaften einer Adobe Target-Komponente aufgrund eines JavaScript-Fehlers (NPR-32996) nicht bearbeiten.
 * Site-übergreifende Skripterstellung für JSON (NPR-32744).
 
 ### Übersetzungsprojekte {#translation-6550}
@@ -680,7 +680,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in der Version 6.5.5.0.[!
 
 >[!NOTE]
 >
->Experience Manager Service Pack enthält keine Fehlerbehebungen für [!DNL Forms]. Diese werden im Rahmen eines separaten Add-on-Pakets für Forms bereitgestellt. Außerdem wird ein kumulatives Installationsprogramm herausgegeben, das Fehlerbehebungen für AEM Forms JEE enthält. Weitere Informationen finden Sie unter [Experience Manager Forms-Add-on installieren](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) und [Experience Manager Forms on JEE installieren](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
+>Experience Manager Service Pack enthält keine Fehlerbehebungen für [!DNL Forms]. Diese werden im Rahmen eines separaten Add-on-Pakets für Forms bereitgestellt. Außerdem wird ein kumulatives Installationsprogramm herausgegeben, das Fehlerbehebungen für AEM Forms JEE enthält. Weitere Informationen finden Sie unter [Experience Manager-Forms-Add-On installieren](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) und [Experience Manager Forms on JEE installieren](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
 
 * Correspondence Management: Die Reihenfolge der Vermögenswerte in einem Zielgruppen-Bereich wird nach der Einreichung eines Schreibens (NPR-33359, NPR-33153) geändert.
 * Adaptives Forms: Wenn ein Benutzer ein adaptives Formular bearbeitet, funktioniert die Option [!UICONTROL Beginn-Workflow] im Menü [!UICONTROL Seiteninformationen] nicht (NPR-33004).
@@ -716,7 +716,7 @@ Zu den wichtigsten Funktionen und Verbesserungen, die in Adobe Experience Manage
 
 * Das integrierte Repository (Apache Jackrabbit Oak) wird auf Version 1.10.8 aktualisiert.
 
-* Sie können jetzt selektive Inhaltsunterbauten mit *Dynamic Media - Scene7-Modus* synchronisieren, anstatt mit `content/dam`.
+* Sie können jetzt ausgewählte Inhaltsunterbauten mit *Dynamic Media - Scene7-Modus* synchronisieren, anstatt mit `content/dam`.
 
 * Die Integration des Formulardatenmodells mit dem SOAP-Webdienst unterstützt jetzt Auswahlgruppen oder Attribute für Elemente.
 
@@ -878,7 +878,7 @@ Eine vollständige Liste der in den neuesten Service Packs eingeführten Funktio
 
 * Für ein veröffentlichtes Asset wird kein Bild für die Vorschau angezeigt (CQ-4285886).
 
-* Benutzer kann Assets mit einem einfachen Anführungszeichen im Namen nicht veröffentlichen oder die Veröffentlichung rückgängig machen (CQ-4272686).
+* Benutzer kann Assets, die ein einzelnes Anführungszeichen im Namen enthalten (CQ-4272686), nicht veröffentlichen oder die Veröffentlichung rückgängig machen.
 
 * Die Geschäftsbedingungen werden beim Herunterladen mehrerer Assets nicht angezeigt (CQ-4281224).
 
@@ -898,7 +898,7 @@ Eine vollständige Liste der in den neuesten Service Packs eingeführten Funktio
 
 >[!NOTE]
 >
->Experience Manager Service Pack enthält keine Fehlerbehebungen für Experience Manager Forms. Diese werden im Rahmen eines separaten Add-on-Pakets für Forms bereitgestellt. Darüber hinaus wird ein kumulatives Installationsprogramm veröffentlicht, das Korrekturen für Adobe Experience Manager Forms on JEE enthält. Weitere Informationen finden Sie unter [Experience Manager Forms-Add-on installieren](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) und [Experience Manager Forms on JEE installieren](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
+>Experience Manager Service Pack enthält keine Fehlerbehebungen für Experience Manager Forms. Diese werden im Rahmen eines separaten Add-on-Pakets für Forms bereitgestellt. Darüber hinaus wird ein kumulatives Installationsprogramm veröffentlicht, das Korrekturen für Adobe Experience Manager Forms on JEE enthält. Weitere Informationen finden Sie unter [Experience Manager-Forms-Add-On installieren](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) und [Experience Manager Forms on JEE installieren](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
 
 * Correspondence Management: Briefe zeigen zusätzliche Zeichen nach der Übermittlung an die Workflows an (NPR-32626).
 
@@ -966,7 +966,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Die Dateien GLB, GLTF, OBJ und STL können in der Vorschau auf der Seite [!UICONTROL Asset Details] in DAM (CQ-4282277) angezeigt werden.
 
-* `ReplicationOnModifyListener` ereignis wird beim Hochladen von Chunk-Knoten in ausgelöst  [!DNL Dynamic Media] (CQ-4281279).
+* `ReplicationOnModifyListener` Ereignis wird beim Hochladen von Chunk-Knoten in ausgelöst  [!DNL Dynamic Media] (CQ-4281279).
 
 * [!DNL Dynamic Media] unterstützt jetzt Smart Crop-Video-Assets. Smart Crop ist eine maschinelle lerngesteuerte Funktion, die ein Video beim Verschieben des Rahmens neu beschneidet, um dem Brennpunkt der Szene zu folgen (CQ-4278995).
 
@@ -1042,7 +1042,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Durch das Verschieben von Assets aus einem Ordner wird eine große Anzahl von Sling-Aufträgen (Scene7 API-Aufrufe) erzeugt, die nicht unbedingt erforderlich sind (CQ-4278664).
 
-* Die Namen des Bildsatzes werden in Scene7 in Kleinbuchstaben geändert, wenn in DAM (CQ-4281112) Bildsatz (oder Mediaset) erstellt und mit einer entsprechenden Benennungskonvention benannt wird.
+* Die Namen des Bildsatzes werden in Scene7 in Kleinbuchstaben geändert, wenn in DAM (CQ-4281112) Bildsatz (oder Mediaset) erstellt und mit der entsprechenden Benennungskonvention benannt wird.
 
 * Scene7 Migrator stellt den Veröffentlichungsstatus falsch ein (CQ-4263492).
 
@@ -1157,7 +1157,7 @@ Remove one mention of this fix.
 
 >[!NOTE]
 >
->[!DNL Experience Manager] Service Pack enthält keine Korrekturen für  [!DNL Experience Manager Forms]. Diese werden im Rahmen eines separaten Add-on-Pakets für Forms bereitgestellt. Zusätzlich wird ein kumulatives Installationsprogramm veröffentlicht, das Fehlerbehebungen für [!DNL Experience Manager Forms] auf JEE enthält. Weitere Informationen finden Sie unter [Experience Manager Forms-Add-on installieren](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) und [Experience Manager Forms on JEE installieren](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
+>[!DNL Experience Manager] Service Pack enthält keine Korrekturen für  [!DNL Experience Manager Forms]. Diese werden im Rahmen eines separaten Add-on-Pakets für Forms bereitgestellt. Zusätzlich wird ein kumulatives Installationsprogramm veröffentlicht, das Fehlerbehebungen für [!DNL Experience Manager Forms] auf JEE enthält. Weitere Informationen finden Sie unter [Experience Manager-Forms-Add-On installieren](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) und [Experience Manager Forms on JEE installieren](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
 
 #### Forms-Add-on-Paket {#forms-add-on-package-6530}
 
@@ -1343,7 +1343,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 >[!NOTE]
 >
->[!DNL Experience Manager] Service Pack enthält keine Korrekturen für  [!DNL Experience Manager Forms]. Sie werden mithilfe eines separaten [!DNL Forms] Add-On-Pakets bereitgestellt. Zusätzlich wird ein kumulatives Installationsprogramm veröffentlicht, das Fehlerbehebungen für [!DNL Experience Manager Forms] auf JEE enthält. Weitere Informationen finden Sie unter [Experience Manager Forms-Add-on installieren](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) und [Experience Manager Forms on JEE installieren](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
+>[!DNL Experience Manager] Service Pack enthält keine Korrekturen für  [!DNL Experience Manager Forms]. Sie werden mithilfe eines separaten [!DNL Forms] Add-On-Pakets bereitgestellt. Zusätzlich wird ein kumulatives Installationsprogramm veröffentlicht, das Fehlerbehebungen für [!DNL Experience Manager Forms] auf JEE enthält. Weitere Informationen finden Sie unter [Experience Manager-Forms-Add-On installieren](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) und [Experience Manager Forms on JEE installieren](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
 
 Die wichtigsten Highlights für 6.5.2.0-Formulare sind:[!DNL Experience Manager]
 
