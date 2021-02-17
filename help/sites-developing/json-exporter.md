@@ -104,5 +104,5 @@ Weitere Informationen finden Sie unter:
 * [Bearbeitung mit Inhaltsfragmenten](/help/sites-authoring/content-fragments.md)
 * [Aktivieren eines JSON-Exports für eine Komponente](/help/sites-developing/json-exporter-components.md)
 
-* [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html) und die [Inhaltsfragmentkomponente](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) und die [Inhaltsfragmentkomponente](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
 
