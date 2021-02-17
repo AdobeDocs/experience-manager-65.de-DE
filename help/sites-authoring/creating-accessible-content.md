@@ -84,7 +84,7 @@ Es gibt verschiedene Arten von nichttextlichem Inhalt. Daher hängt der Wert der
 * Textalternativen sollten kurz und bündig sein, aber dennoch klar die wesentlichen Informationen erfassen, die der nichttextliche Inhalt vermittelt.
 * Übermäßig lange Beschreibungen (mit mehr als 100 Zeichen) sollten vermieden werden. Wenn für eine Textalternative mehr Details erforderlich sind:
    * Geben Sie im Alternativtext eine kurze Beschreibung an
-   * und fügen Sie irgendwo anders auf der entsprechenden Seite oder auf einer anderen Web-Seite eine längere Beschreibung ein. Verlinken Sie auf diese separate Beschreibung, indem Sie das Bild mit einem Link unterlegen oder indem Sie neben das Bild einen Textlink platzieren.
+   * und fügen Sie irgendwo anders auf der entsprechenden Seite oder auf einer anderen Web-Seite eine längere Beschreibung ein. Verlinken Sie auf diese separate Beschreibung, indem Sie das Bild mit einem Link unterlegen oder indem Sie neben das Bild einen Text-Link platzieren.
 * Alternativtext sollte keinen Inhalt replizieren, der bereits in Textform auf derselben Seite vorhanden ist. Denken Sie daran, dass viele Bilder Darstellungen von Punkten sind, die bereits der Text einer Seite abdeckt. Somit ist möglicherweise bereits eine Textalternative vorhanden.
 * Wenn es sich bei dem nichttextlichen Inhalt um einen Link zu einer anderen Seite oder einem anderen Dokument handelt und kein anderer Text vorhanden ist, der Teil desselben Links ist, dann muss der Alternativtext für das Bild das Ziel des Links angeben und braucht das Bild nicht zu beschreiben.
 * Wenn sich der nichttextliche Inhalt in einem Schaltflächenelement befindet und kein Text vorhanden ist, der Teil derselben Schaltfläche ist, dann muss der Alternativtext des Bildes die Funktion der Schaltfläche angeben statt das Bild zu beschreiben.
@@ -193,7 +193,7 @@ Verwenden Sie möglichst geschlossene Untertitel, da Benutzer so wählen können
 
 Für geschlossene Untertitel müssen Sie eine synchronisierte Untertiteldatei in einem entsprechenden Format (wie [SMIL](https://www.w3.org/AudioVideo/)) erstellen und zusammen mit der Videodatei bereitstellen. (Details dazu, wie dieser Vorgang ausgeführt wird, sind im Rahmen dieses Leitfadens nicht möglich, doch wir haben Ihnen Links zu einigen Tutorials unter [Weitere Informationen: Untertitel (aufgezeichnet) (1.2.2)](#more-information-captions-prerecorded) zusammengestellt.) Stellen Sie sicher, dass Sie eine Notiz bereitstellen oder die Untertitelfunktion im Video-Player aktivieren, damit Benutzer wissen, dass Untertitel für das Video verfügbar sind.
 
-Wenn Sie offene Untertitel verwenden müssen, betten Sie den Text im Videotrack ein. Dies erreichen Sie mithilfe von Anwendungen zur Videobearbeitung, die die Überlagerung von Untertiteln im Video ermöglichen.
+Wenn Sie offene Untertitel verwenden müssen, betten Sie den Text im Videotrack ein. Dies erreichen Sie mithilfe von Programmen zur Videobearbeitung, die die Überlagerung von Untertiteln im Video ermöglichen.
 
 #### Weitere Informationen: Untertitel (aufgezeichnet) (1.2.2) {#more-information-captions-prerecorded}
 
@@ -393,7 +393,7 @@ Sie können sicherstellen, dass Ihre Web-Seiten die geeignete Struktur erhalten,
      </table>
    ```
 
-   Um dies in AEM zu erreichen, müssen Sie das Markup hinzufügen, indem Sie direkt den Modus zur Bearbeitung des Quellcodes verwenden.
+   Um dies in AEM zu erreichen, müssen Sie das Markup hinzufügen, indem Sie direkt den Modus zur Bearbeitung des Quell-Codes verwenden.
 
    >[!NOTE]
    >
@@ -564,7 +564,7 @@ Stellen Sie sicher, dass zwischen dem Text und der Hintergrundfarbe ausreichend 
 >* [PMtoEM.com: PX-to-EM-Konvertierung einfach gemacht](http://pxtoem.com)
 
 
-Verwenden Sie ein Farbkontrasttool, um das Kontrastverhältnis zu prüfen, z. B. den [Color Contrast Analyser von Paciello Group](https://www.paciellogroup.com/resources/contrast-analyser.html) oder den [Color Contrast Checker von WebAIM](https://www.webaim.org/resources/contrastchecker/). Mit diesen Tools können Sie Farbpaare prüfen und erkennen mögliche Kontrastprobleme.
+Verwenden Sie ein Farbkontrast-Tool, um das Kontrastverhältnis zu prüfen, z. B. den [Color Contrast Analyser von Paciello Group](https://www.paciellogroup.com/resources/contrast-analyser.html) oder den [Color Contrast Checker von WebAIM](https://www.webaim.org/resources/contrastchecker/). Mit diesen Tools können Sie Farbpaare prüfen und erkennen mögliche Kontrastprobleme.
 
 Wenn es für Sie nicht so wichtig ist, das Aussehen Ihrer Seite festzulegen, können Sie alternativ keine Farben für den Hintergrund und den Text im Vordergrund festlegen. Dann brauchen Sie den Kontrast nicht zu prüfen, weil der Browser des Benutzers die Farbe für den Text und den Hintergrund ermittelt.
 
@@ -656,7 +656,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 2.1.1 erfüllen](https://ww
 
 #### Zweck: Keine Tastaturfalle (2.1.2) {#purpose-no-keyboard-trap}
 
-Mit diesem Erfolgskriterium soll sichergestellt werden, dass der Inhalt den Tastaturfokus nicht in Unterabschnitten des Inhalts einer Web-Seite *einfängt*. Dies ist ein häufig auftretendes Problem, wenn mehrere Formate innerhalb einer Seite kombiniert und mithilfe von Plug-ins oder eingebetteten Anwendungen wiedergegeben werden.
+Mit diesem Erfolgskriterium soll sichergestellt werden, dass der Inhalt den Tastaturfokus nicht in Unterabschnitten des Inhalts einer Web-Seite *einfängt*. Dies ist ein häufig auftretendes Problem, wenn mehrere Formate innerhalb einer Seite kombiniert und mithilfe von Plug-ins oder eingebetteten Programmen wiedergegeben werden.
 
 Es kann vorkommen, dass die Funktionalität der Web-Seite den Fokus auf einen Unterabschnitt des Inhalts beschränkt (z. B. ein modales Dialogfeld). In solchen Fällen sollten Sie eine Methode bereitstellen, mit der ein Benutzer aus diesem Inhaltsunterabschnitt aussteigen kann (z. B. schließt die Esc-Taste oder eine Schließen-Schaltfläche das modale Dialogfeld).
 
@@ -683,7 +683,7 @@ Dadurch wird sichergestellt, dass die Benutzer genügend Zeit zum Lesen und Hand
 
 #### Zweck: Zeiteinteilung anpassbar (2.2.1) {#purpose-timing-adjustable}
 
-Mit diesem Erfolgskriterium soll sichergestellt werden, dass Nutzer mit Behinderungen nach Möglichkeit ausreichend Zeit zur Interaktion mit Web-Inhalten erhalten. Personen mit Behinderungen wie Blindheit, Sehschwäche, Beeinträchtigung der Geschicklichkeit und kognitiven Einschränkungen benötigen unter Umständen mehr Zeit, um Inhalte zu lesen oder Funktionen wie das Ausfüllen von Online-Formularen auszuführen. Wenn Web-Funktionen zeitabhängig sind, ist es für einige Benutzer schwierig, die erforderliche Aktion auszuführen, bevor ein Zeitlimit eintritt. Dadurch kann der Zugriff auf den Dienst für sie unzugänglich werden. Die Entwicklung von nicht zeitabhängigen Funktionen hilft Personen mit Behinderungen dabei, diese Funktionen auszuführen. Die Bereitstellung von Optionen zur Deaktivierung von Zeitlimits, zur Anpassung der Länge von Zeitlimits oder zur Anforderung von mehr Zeit, bevor ein Zeitlimit eintritt, hilft denjenigen Benutzern, die mehr Zeit als erwartet benötigen, Aufgaben erfolgreich zu erledigen. Diese Optionen werden in der Reihenfolge aufgelistet, die für den Benutzer am hilfreichsten ist. Das Deaktivieren von Zeitlimits ist besser als das Anpassen der Länge von Zeitlimits, was wiederum besser ist, als mehr Zeit vor dem Eintreten eines Zeitlimits anzufordern.
+Mit diesem Erfolgskriterium soll sichergestellt werden, dass Nutzer mit Behinderungen nach Möglichkeit ausreichend Zeit zur Interaktion mit Web-Inhalten erhalten. Personen mit Behinderungen wie Blindheit, Sehschwäche, Beeinträchtigung der Geschicklichkeit und kognitiven Einschränkungen benötigen unter Umständen mehr Zeit, um Inhalte zu lesen oder Funktionen wie das Ausfüllen von Online-Formularen auszuführen. Wenn Web-Funktionen zeitabhängig sind, ist es für einige Benutzer schwierig, die erforderliche Aktion auszuführen, bevor ein Zeitlimit eintritt. Dadurch kann der Zugriff auf den Service für sie unzugänglich werden. Die Entwicklung von nicht zeitabhängigen Funktionen hilft Personen mit Behinderungen dabei, diese Funktionen auszuführen. Die Bereitstellung von Optionen zur Deaktivierung von Zeitlimits, zur Anpassung der Länge von Zeitlimits oder zur Anforderung von mehr Zeit, bevor ein Zeitlimit eintritt, hilft denjenigen Benutzern, die mehr Zeit als erwartet benötigen, Aufgaben erfolgreich zu erledigen. Diese Optionen werden in der Reihenfolge aufgelistet, die für den Benutzer am hilfreichsten ist. Das Deaktivieren von Zeitlimits ist besser als das Anpassen der Länge von Zeitlimits, was wiederum besser ist, als mehr Zeit vor dem Eintreten eines Zeitlimits anzufordern.
 
 #### Erfüllen: Zeiteinteilung anpassbar (2.2.1) {#how-to-meet-timing-adjustable}
 
@@ -772,7 +772,7 @@ Hiermit wird sichergestellt, dass der Inhalt für Benutzer einfach und unkompliz
 
 #### Zweck: Blöcke umgehen (2.4.1) {#purpose-bypass-blocks}
 
-Mit diesem Erfolgskriterium sollen Personen, die nacheinander durch Inhalte navigieren, direkteren Zugriff auf den primären Inhalt der Web-Seite erhalten. Web-Seiten und Anwendungen enthalten oft Inhalte, die auf anderen Seiten oder Bildschirmen angezeigt werden. Beispiele für wiederholte Inhaltsblöcke sind unter anderem Navigations-Links, Überschriftengrafiken, Menüs und Werberahmen. Kleine wiederholte Abschnitte wie einzelne Wörter, Wortgruppen oder einzelne Links werden für die Zwecke dieser Bestimmung nicht als Blöcke angesehen.
+Mit diesem Erfolgskriterium sollen Personen, die nacheinander durch Inhalte navigieren, direkteren Zugriff auf den primären Inhalt der Web-Seite erhalten. Web-Seiten und Programme enthalten oft Inhalte, die auf anderen Seiten oder Bildschirmen angezeigt werden. Beispiele für wiederholte Inhaltsblöcke sind unter anderem Navigations-Links, Überschriftengrafiken, Menüs und Werberahmen. Kleine wiederholte Abschnitte wie einzelne Wörter, Wortgruppen oder einzelne Links werden für die Zwecke dieser Bestimmung nicht als Blöcke angesehen.
 
 #### Erfüllen: Blöcke umgehen (2.4.1) {#how-to-meet-bypass-blocks}
 
@@ -1257,7 +1257,7 @@ Es gibt einen Mechanismus, um Informationen zu überprüfen, zu bestätigen und 
 
 #### Zweck: Fehlervermeidung (rechtliche, finanzielle, Daten) (3.3.4) {#purpose-error-prevention-legal-financial-data}
 
-Mit diesem Erfolgskriterium sollen Benutzer mit Behinderungen dabei unterstützt werden, schwerwiegende Folgen eines Fehlers bei der Ausführung einer Aktion zu vermeiden, die nicht rückgängig gemacht werden kann. Beispielsweise sind der Kauf nicht erstattungsfähiger Flug-Tickets oder die Übermittlung einer Bestellung zum Kauf von Aktien auf einem Maklerkonto Finanztransaktionen mit schwerwiegenden Folgen. Wenn ein Benutzer beim Datum der Flugreise einen Fehler gemacht hat, erhält er möglicherweise ein Ticket für den falschen Tag, das nicht umgetauscht werden kann. Wenn der Benutzer einen Fehler bei der Anzahl der zu kaufenden Aktien gemacht hat, könnte er am Ende mehr Aktien als beabsichtigt kaufen. Beide Arten von Fehlern betreffen Transaktionen, die sofort stattfinden und danach nicht mehr geändert werden und sehr kostspielig sein können. Ebenso kann es sich um einen nicht behebbaren Fehler handeln, wenn Benutzer unbeabsichtigt Daten ändern oder löschen, die in einer Datenbank gespeichert sind, auf die sie später zugreifen müssen, z. B. ihr gesamtes Reiseprofil auf der Website eines Reisedienstes. Wenn es um das Ändern oder Löschen von „vom Benutzer steuerbaren“ Daten geht, soll ein Massenverlust von Daten wie das Löschen einer Datei oder eines Datensatzes verhindert werden. Es ist nicht beabsichtigt, eine Bestätigung für jeden Speicherbefehl oder die einfache Erstellung oder Bearbeitung von Dokumenten, Datensätzen oder anderen Daten zu verlangen.
+Mit diesem Erfolgskriterium sollen Benutzer mit Behinderungen dabei unterstützt werden, schwerwiegende Folgen eines Fehlers bei der Ausführung einer Aktion zu vermeiden, die nicht rückgängig gemacht werden kann. Beispielsweise sind der Kauf nicht erstattungsfähiger Flug-Tickets oder die Übermittlung einer Bestellung zum Kauf von Aktien auf einem Maklerkonto Finanztransaktionen mit schwerwiegenden Folgen. Wenn ein Benutzer beim Datum der Flugreise einen Fehler gemacht hat, erhält er möglicherweise ein Ticket für den falschen Tag, das nicht umgetauscht werden kann. Wenn der Benutzer einen Fehler bei der Anzahl der zu kaufenden Aktien gemacht hat, könnte er am Ende mehr Aktien als beabsichtigt kaufen. Beide Arten von Fehlern betreffen Transaktionen, die sofort stattfinden und danach nicht mehr geändert werden und sehr kostspielig sein können. Ebenso kann es sich um einen nicht behebbaren Fehler handeln, wenn Benutzer unbeabsichtigt Daten ändern oder löschen, die in einer Datenbank gespeichert sind, auf die sie später zugreifen müssen, z. B. ihr gesamtes Reiseprofil auf der Website eines Reise-Service. Wenn es um das Ändern oder Löschen von „vom Benutzer steuerbaren“ Daten geht, soll ein Massenverlust von Daten wie das Löschen einer Datei oder eines Datensatzes verhindert werden. Es ist nicht beabsichtigt, eine Bestätigung für jeden Speicherbefehl oder die einfache Erstellung oder Bearbeitung von Dokumenten, Datensätzen oder anderen Daten zu verlangen.
 
 Benutzer mit Behinderungen machen möglicherweise eher Fehler. Personen mit Leseschwäche können Zahlen und Buchstaben vertauschen und Personen mit motorischen Behinderungen können versehentlich Tasten drücken. Wenn Benutzer die Möglichkeit erhalten, Aktionen rückgängig zu machen, können sie einen Fehler korrigieren, der schwerwiegende Folgen haben könnte. Durch die Möglichkeit, Informationen zu überprüfen und zu korrigieren, kann der Benutzer einen Fehler erkennen, bevor er eine Handlung mit schwerwiegenden Folgen vornimmt.
 
