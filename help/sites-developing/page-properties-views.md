@@ -108,6 +108,6 @@ Dieses Beispiel zeigt die „dialog diff“-Technik von [Sling Resource Merger](
 
 CODE AUF GITHUB
 
-Den Code dieser Seite finden Sie auf GitHub
+Den Code dieser Seite finden Sie auf GitHub.
 
 * [Öffnen Sie das Projekt aem-authoring-extension-page-dialog auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)
