@@ -30,7 +30,7 @@ Die Granite-Benutzeroberfläche bietet eine Reihe von Komponenten für die Verwe
 
 >[!NOTE]
 >
->Vollständige Informationen zu Feldern finden Sie in der [Dokumentation zur Granite-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
+>Vollständige Informationen zu Feldern finden Sie in der [Dokumentation zur Granite-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
 
 Verwenden Sie das Foundation-Framework der Granite-Benutzeroberfläche zum Entwickeln bzw. Erweitern von Granite-Komponenten. Dieses umfasst zwei Elemente:
 
@@ -54,7 +54,7 @@ Die generische Komponente `field` der Granite-Benutzeroberfläche beinhaltet zwe
 
 Weitere Informationen finden Sie in der [Dokumentation zur Granite-Benutzeroberfläche im Abschnitt zu Feldern](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html).
 
-Beispiele finden Sie unter:
+Beispiele finden Sie hier:
 
 * `cqgems/customizingfield/components/colorpicker`
 
