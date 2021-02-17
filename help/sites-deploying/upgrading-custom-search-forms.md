@@ -364,7 +364,7 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
 
 **Aktion:** Passen Sie die  `resourceType` Eigenschaft an (fügen Sie &quot;**/coral**&quot;hinzu, wie in der oben angegebenen Position 6.2).
 
-## Asset-Admin-Suchleiste {#assets-admin-search-rail}
+## Asset-Admin-Suchschiene {#assets-admin-search-rail}
 
 Die folgenden Knoten verweisen auf die Namen in `/conf/global/settings/dam/search/facets/assets/items`
 
