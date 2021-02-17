@@ -217,7 +217,7 @@ Stellen Sie mithilfe der Assembler Service API (Webdienst) ein PDF-Dokument zusa
 1. Referenzieren von PDF-Dokumenten zur Eingabe.
 
    * Erstellen Sie für jedes PDF-Eingabedokument ein `BLOB`-Dokument mit dessen Konstruktor. Das `BLOB`-Objekt wird zum Speichern des PDF-Eingabedokuments verwendet.
-   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Dateispeicherort des PDF-Eingabedokuments und den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
+   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Dateispeicherort des PDF-Eingabedatums und den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream`-Eigenschaft des Objekts `Length` abrufen.
    * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream`-Methode des Objekts `Read` aufrufen. Übergeben Sie das Bytearray, die Startposition und die zu lesende Stream-Länge.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seine `MTOM`-Eigenschaft mit dem Inhalt des Byte-Arrays zuweisen.
