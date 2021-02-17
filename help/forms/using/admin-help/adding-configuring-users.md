@@ -36,7 +36,7 @@ Beim Erstellen von Benutzern können Sie diese Gruppen hinzufügen und ihnen Rol
    * Klicken Sie auf **[!UICONTROL Weiter]**.
 
 1. (Optional) Um dem Benutzer Rollen zuzuweisen, klicken Sie auf **[!UICONTROL Rollen suchen]**, aktivieren Sie das Kontrollkästchen der zuzuweisenden Rollen und klicken Sie dann auf **[!UICONTROL OK]**.
-1. Klicken Sie auf **[!UICONTROL Finish]**.
+1. Klicken Sie auf **[!UICONTROL Beenden]**.
 
    >[!NOTE]
    >
