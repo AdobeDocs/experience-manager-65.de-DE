@@ -93,7 +93,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
 <table>
  <tbody>
   <tr>
-   <td>Property<br /> </td>
+   <td>Eigenschaft<br /> </td>
    <td>Nur Client<br /> </td>
    <td>Kommentare<br /> </td>
   </tr>
@@ -744,7 +744,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
    <td>ID der Aufgabe, der die Anlage hinzugefügt wird.<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>Typ<br type="_moz" /> </td>
+   <td>type<br type="_moz" /> </td>
    <td>F</td>
    <td>Typ ist Anhang für Dateien und Typ Notiz für Notizen.<br type="_moz" /> </td>
   </tr>
