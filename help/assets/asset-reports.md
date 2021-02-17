@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 6016cefa9456d8f142347ff197b61b1614d55ab9
 workflow-type: tm+mt
 source-wordcount: '1131'
-ht-degree: 87%
+ht-degree: 90%
 
 ---
 
@@ -153,10 +153,10 @@ Um nicht mehr benötigte Berichte zu entfernen, konfigurieren Sie den Bereinigun
 1. Geben Sie die Häufigkeit (Zeitintervall) für den Bereinigungs-Service in das Feld `scheduler.expression.name` ein. Sie können auch die Schwellenwerte für das Alter und die Menge der Berichte konfigurieren.
 1. Speichern Sie die Änderungen.
 
-## Fehlerbehebung für Informationen, Tipps und Einschränkungen {#best-practices-and-limitations}
+## Informationen zur Fehlerbehebung, Tipps und Einschränkungen {#best-practices-and-limitations}
 
 * Wenn einige Berichte oder Zahlen in den Berichten nicht oder erwartungsgemäß verfügbar sind, stellen Sie sicher, dass der Dienst [!UICONTROL CQ DAM Ereignis Recorder] aktiviert ist.
 
 * Entfernen Sie die nicht mehr benötigten Berichte. Verwenden Sie die Konfigurationsoptionen im DAM Report Purge-Dienst, um die Kriterien zum Bereinigen von Berichten zu konfigurieren.
 
-* Wenn der Bericht &quot;Festplattennutzung&quot;nicht generiert wird und Sie [!DNL Dynamic Media] verwenden, stellen Sie sicher, dass alle Assets ordnungsgemäß ausgeführt werden. Verarbeiten Sie zum Auflösen die Assets erneut und erstellen Sie dann den Bericht erneut.
+* Wenn der Bericht zur Speichernutzung nicht generiert wird und Sie [!DNL Dynamic Media] verwenden, stellen Sie sicher, dass alle Assets ordnungsgemäß verarbeitet werden. Verarbeiten Sie zur Behebung die Assets erneut und erstellen Sie dann den Bericht erneut.
