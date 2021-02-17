@@ -211,7 +211,7 @@ Beim Konfigurieren eines Replikationsagenten in der Tools-Konsole stehen vier Re
 
    Bei Dispatcher Flush-Agenten wird die URI-Eigenschaft nur verwendet, wenn Sie pfadbasierte virtualhost-Einträge verwenden, um zwischen Farmen zu unterscheiden. In diesem Feld können Sie die Farm für ungültig erklären. Beispiel: Farm 1 hat den virtuellen Host `www.mysite.com/path1/*` und Farm 2 den virtuellen Host `www.mysite.com/path2/*`. Mit der URL `/path1/invalidate.cache` können Sie die erste Farm und mit `/path2/invalidate.cache` die zweite Farm bestimmen.
 
-* **User**
+* **Benutzer**
 
    Der Benutzername für das Konto, das zum Zugreifen auf das Ziel verwendet werden soll.
 
