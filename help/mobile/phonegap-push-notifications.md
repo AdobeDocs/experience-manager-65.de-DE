@@ -246,7 +246,7 @@ In CRXDE Lite:
 >
 >Wenn Push-Benachrichtigungen aus Platzgründen in der App entfernt oder nicht verwendet werden und um Meldungen mit Konsolenfehlern zu vermeiden, entfernen Sie diese clientlibs aus der App.
 
-### Schritt 4: Vorbereitung eines Telefons zum Testen {#step-prepare-a-phone-for-testing}
+### Schritt 4: Vorbereitung eines Telefons für Tests {#step-prepare-a-phone-for-testing}
 
 >[!NOTE]
 >
