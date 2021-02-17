@@ -45,7 +45,7 @@ Dieses Handbuch behandelt alle AEM Aufgaben zur Verwaltung.
 
 * [AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
 * [Dispatcher-Benutzerhandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-dispatcher/using/dispatcher.html)
-* [HTL-Benutzerhandbuch](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html)
+* [HTL-Benutzerhandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)
 * [Benutzerhandbuch zu Hauptkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/de/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Einhaltung der DSGVO](/help/managing/data-protection-and-privacy.md)
