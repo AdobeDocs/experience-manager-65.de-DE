@@ -46,7 +46,7 @@ Komponenten müssen so konfiguriert sein, dass die folgenden Abonnement aktivier
 
 ## Abonnement von{#subscriptions-from-following}
 
-![abonnement-folgende](assets/subscription-following.png)
+![Abonnement-folgende](assets/subscription-following.png)
 
 Mit der Schaltfläche **Folgen** können Sie Einsendungen als Aktivitäten, Abonnements und/oder Benachrichtigungen verfolgen. Jedes Mal, wenn die Schaltfläche **Folgen** ausgewählt ist, können Sie eine Auswahl ein- oder ausschalten.
 
