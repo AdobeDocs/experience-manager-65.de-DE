@@ -74,7 +74,7 @@ Verwenden Sie das folgende Verfahren, um CQ-Komponentenvariablen den Adobe Analy
 
 ## Zuordnen produktbezogener Variablen {#mapping-product-related-variables}
 
-AEM verwendet eine Konvention zum Benennen produktbezogener Variablen und Ereignis, die den produktbezogenen Eigenschaften von Adobe Analytics zugeordnet werden sollen:
+AEM verwendet eine Konvention zum Benennen produktbezogener Variablen und Ereignis, die Adobe Analytics-produktbezogenen Eigenschaften zugeordnet werden sollen:
 
 | CQ-Variable | Analytics-Variable | Beschreibung |
 |---|---|---|
@@ -93,7 +93,7 @@ Mehrere AEM Commerce-Komponenten nutzen diese Variablennamen.
 
 ### Prüfen von Berichten in Adobe Analytics {#checking-reports-on-adobe-analytics}
 
-1. Melden Sie sich bei der Adobe Analytics-Website mit denselben Anmeldeinformationen an, die AEM angegeben hat.
+1. Melden Sie sich bei der Adobe Analytics-Website mit denselben Anmeldedaten an, die AEM erteilt wurden.
 1. Stellen Sie sicher, dass Sie dieselbe RSID nutzen wie im vorherigen Schritt.
 1. Wählen Sie unter **Berichte** (auf der linken Seite der Seite) die Option **Benutzerspezifische Konversion** und dann **Benutzerspezifische Konversion 1–10** aus. Wählen Sie die Variable aus, die `eVar7` entspricht.
 
