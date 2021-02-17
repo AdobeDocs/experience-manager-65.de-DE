@@ -65,7 +65,7 @@ Wählen Sie **Layout** aus der Dropdown-Liste, die oben in der Authoring-Oberfl�
 
 Führen Sie die folgenden Schritte aus, wenn Sie die Größe des gesamten Bedienfelds anstelle einzelner Komponenten ändern möchten:
 
-1. Tippen Sie auf eine der Komponenten im Bedienfeld, deren Größe Sie ändern möchten, wählen Sie ![Übergeordnet auswählen](assets/select_parent_icon.svg) und wählen Sie die erste Option in der Dropdown-Liste aus, wenn das Bedienfeld das direkt übergeordnete Element der Komponente ist.
+1. Tippen Sie auf eine der Komponenten im Bedienfeld, deren Größe Sie ändern möchten, wählen Sie ![Übergeordnet auswählen](assets/select_parent_icon.svg) und wählen Sie die erste Option in der Dropdown-Liste aus, wenn das Bedienfeld direkt über der Komponente liegt.
 
    Die blauen Punkte werden am Beginn und am Ende des reaktionsfähigen Rasters angezeigt.
 
@@ -105,7 +105,7 @@ Mit dem neuen reaktionsfähigen Layout für adaptive Formulare können Sie ein a
 
 ### Einbetten eines Fragments mit einem neuen reaktionsfähigen Layout in ein altes adaptives Formular {#embed-a-fragment-with-new-responsive-layout-in-an-old-adaptive-form}
 
-Wenn Sie ein Fragment mit dem neuen reaktionsfähigen Layout in ein adaptives Formular mit einem alten reaktionsfähigen Layout einbetten, fordert das System Sie auf, den Layoutmodus für das Formular zu aktivieren und das Fragment erneut einzubetten.
+Wenn Sie ein Fragment mit dem neuen reaktionsfähigen Layout in ein adaptives Formular mit einem alten reaktionsfähigen Layout einbetten, fordert Sie das System auf, den Layoutmodus für das Formular zu aktivieren und das Fragment erneut einzubetten.
 
 Um den Layoutmodus zu aktivieren, wählen Sie **Layout** aus der Dropdown-Liste, die oben neben der Option **Vorschau** angezeigt wird, und tippen Sie zur Bestätigung auf **Ja**. Wählen Sie **Bearbeiten**, um das Fragment erneut einzubetten.
 
