@@ -406,7 +406,7 @@ Tough Day 2 erstellt einen Protokollordner im selben Verzeichnis, in dem Sie Tou
 
 Die Protokolle werden nicht überschrieben. Bei nachfolgenden Testausführungen werden Meldungen an die vorhandenen Protokolle angehängt. Die Protokolle haben mehrere Ebenen, weitere Informationen finden Sie unter ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
 
-#### Anwendungsbeispiel            {#example-usage}
+#### Anwendungsbeispiel   {#example-usage}
 
 #### Bekannte Probleme {#known-issues}
 
