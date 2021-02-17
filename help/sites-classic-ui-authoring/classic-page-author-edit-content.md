@@ -38,7 +38,7 @@ Beim Sidekick handelt es sich um ein wichtiges Tool für die Bearbeitung von Sei
 Unter anderem sind folgende Registerkarten und Symbole verfügbar:
 
 * Komponenten 
-* Seite
+* Seite 
 * Informationen
 * Versionierung
 * Workflow
