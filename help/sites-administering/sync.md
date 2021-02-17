@@ -113,7 +113,7 @@ Sobald die Benutzersynchronisierung aktiviert wurde, werden nur neu erstellte Be
       * zum Beispiel [https://localhost:4503/useradmin](https://localhost:4503/useradmin)
    * Erstellen Sie einen neuen Benutzer.
 
-      * zum Beispiel `usersync-admin`
+      * Beispiel, `usersync-admin`
    * diesen Benutzer zur Benutzergruppe **`administrators`** hinzufügen
    * [ACL für diesen Benutzer zu /home hinzufügen](#howtoaddacl)
 
@@ -175,7 +175,7 @@ Nachdem ein autorisierter Benutzer, ein Mitglied der **`administrators`**Benutze
 
    * Legen Sie den Benutzernamen und das Kennwort für den in der Veröffentlichungsinstanz in Schritt 2 erstellten [autorisierten Benutzer](#createauthuser) fest.
 
-      * zum Beispiel `usersync-admin`
+      * Beispiel, `usersync-admin`
 
 
 ![](assets/chlimage_1-22.png)
@@ -295,7 +295,7 @@ Wenn benutzerdefinierte Daten vorliegen, die über mehrere Veröffentlichungsins
    * Melden Sie sich mit Administratorrechten an.
    * Rufen Sie die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) auf.
 
-      * zum Beispiel `https://localhost:4503/system/console/configMgr`
+      * Beispiel, `https://localhost:4503/system/console/configMgr`
    * `AEM Communities User Sync Listener`
    * Wählen Sie die vorhandene Konfiguration aus, die zur Bearbeitung geöffnet werden soll (Stiftsymbol)
 `Name` überprüfen: `socialpubsync-scheduled-trigger`
@@ -356,7 +356,7 @@ Wenn die Sling-ID einer Veröffentlichungsinstanz der Sling-ID einer anderen Ver
       * z. B. auf einem Windows-System:
          `use windows explorer and search for *sling.id.file*`
 
-1. beginn der Veröffentlichungsinstanz
+1. Beginn der Veröffentlichungsinstanz
 
    * Beim Start wird der Instanz eine neue Sling-ID zugewiesen.
 
@@ -508,7 +508,7 @@ Der autorisierte Benutzer sollte als Mitglied der Benutzergruppe **`administrato
 
 Für den autorisierten Benutzer sollten explizit die folgenden Rechte und Einschränkungen für alle Veröffentlichungsinstanzen gelten:
 
-| **Pfad** | **jcr:all** | **rep:glob** |
+| **path** | **jcr:all** | **rep:glob** |
 |---|---|---|
 | /home | X | */activities/* |
 | /home/users | X | */Aktivitäten/* |
@@ -516,7 +516,7 @@ Für den autorisierten Benutzer sollten explizit die folgenden Rechte und Einsch
 
 Als Mitglied der Gruppe `administrators` sollte der autorisierte Benutzer in allen Veröffentlichungsinstanzen über die folgenden Berechtigungen verfügen:
 
-| **Pfad** | **jcr:all** | **jcr:read** | **rep:write** |
+| **path** | **jcr:all** | **jcr:read** | **rep:write** |
 |---|---|---|---|
 | /etc/packages/sling/distribution |  |  | X |
 | /libs/sling/distribution |  | X |  |
