@@ -79,7 +79,7 @@ Damit der Arbeitsablauf für Formulare eingehende E-Mail-Nachrichten von Benutze
 
 **Anzahl der Wiederholungen:** Gibt an, wie oft der Eingabeordner abgerufen wird. Der Standardwert für die Anzahl der Wiederholungen, der verwendet wird, wenn in der Endpunktkonfiguration kein Wert angegeben ist. Ein Wert von „-1“ bedeutet uneingeschränktes Überprüfen des Ordners („unendlich“). Der Standardwert ist -1.
 
-**Verzögerung bei Beginn des Auftrags:** Der Standardwert in Sekunden, bis der Beginn den Endpunkt überprüft. Der Standardwert ist 0.
+**Verzögerung bei Beginn von Aufträgen:** Der Standardwert in Sekunden, bis der Beginn den Endpunkt überprüft. Der Standardwert ist 0.
 
 **Stapelgröße:** Die Anzahl der E-Mails, die der Empfänger pro Überprüfung verarbeitet, um eine optimale Leistung zu erzielen. Der Wert „-1“ bedeutet alle E-Mails. Der Standardwert ist 2. 
 
