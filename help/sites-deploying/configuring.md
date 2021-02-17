@@ -95,19 +95,19 @@ Wenn eine IP-Adresse angegeben werden muss, können Sie (je nach Bedarf) aus den
 
 * eine IPv6-Adresse
 
-   zum Beispiel `https://[ab12::34c5:6d7:8e90:1234]:4502`
+   Beispiel `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
 * eine IPv4-Adresse
 
-   zum Beispiel `https://123.1.1.4:4502`
+   Beispiel `https://123.1.1.4:4502`
 
 * einen Servernamen
 
-   zum Beispiel `https://www.yourserver.com:4502`
+   Beispiel, `https://www.yourserver.com:4502`
 
 * Der Standardfall von `localhost` wird für IPv4- und IPv6-Netzwerkinstallationen interpretiert.
 
-   zum Beispiel `http://localhost:4502`
+   Beispiel, `http://localhost:4502`
 
 ### Versionsbereinigung {#version-purging}
 
