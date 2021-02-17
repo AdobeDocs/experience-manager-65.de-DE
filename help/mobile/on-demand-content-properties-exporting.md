@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -47,7 +47,7 @@ Die folgende Tabelle zeigt **App-Eigenschaften und Knoten**.
   <tr>
    <td>dps-exportTemplate</td>
    <td>Zeichenfolge:Pfad</td>
-   <td><p>Pfad zu den Exportkonfigurationen der App. Die Exportkonfiguration ist ein Ordner mit zwei untergeordneten ContentSync-Exportkonfigurationsvorlagen.</p> <p><i>dps-article</i>: ContentSync-Exportkonfiguration zum Exportieren von Artikelinhalten</p> <p><i>dps-HTMLResources</i>: ContentSync-Exportkonfiguration für den Export von freigegebenen Ressourcen</p> </td>
+   <td><p>Pfad zu den Exportkonfigurationen der App. Die Exportkonfiguration ist ein Ordner mit zwei untergeordneten ContentSync-Exportkonfigurationsvorlagen.</p> <p><i>dps-article</i>: ContentSync-Exportkonfiguration zum Exportieren von Artikelinhalten</p> <p><i>dps-HTMLResources</i>: ContentSync-Exportkonfiguration zum Exportieren von App-/Artikelressourcen</p> </td>
   </tr>
   <tr>
    <td>dps-projectId</td>
@@ -66,7 +66,7 @@ Die folgende Tabelle zeigt **App-Eigenschaften und Knoten**.
   </tr>
   <tr>
    <td>dps-sharedHTMLResources-lastUploaded</td>
-   <td>Datum</td>
+   <td>Datum </td>
    <td>Datum des letzten Uploads freigegebener Ressourcen von AEM nach AEM Mobile.</td>
   </tr>
   <tr>
