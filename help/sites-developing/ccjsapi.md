@@ -323,7 +323,7 @@ Entfernt den angegeben Ereignis-Handler für ein Ereignis.
 
 **Parameter**
 
-* ereignis: Zeichenfolge. Der Name des Ereignisses.
+* Ereignis: Zeichenfolge. Der Name des Ereignisses.
 * fct: Funktion. Der Ereignis-Handler.
 
 **Rückgabe**
