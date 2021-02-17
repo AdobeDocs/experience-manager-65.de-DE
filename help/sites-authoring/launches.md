@@ -1,6 +1,6 @@
 ---
 title: Launches
-seo-title: 'Launches '
+seo-title: Starts
 description: Mithilfe von Launches können Sie effizient Inhalte für eine künftige Version entwickeln. Sie sind in der Lage, Änderungen für eine spätere Veröffentlichung vorzunehmen – unter Beibehaltung der aktuellen Seiten.
 seo-description: Mithilfe von Launches können Sie effizient Inhalte für eine künftige Version entwickeln. Sie sind in der Lage, Änderungen für eine spätere Veröffentlichung vorzunehmen – unter Beibehaltung der aktuellen Seiten.
 uuid: 4bbd9865-735d-4232-b69c-b64193ac5d83
