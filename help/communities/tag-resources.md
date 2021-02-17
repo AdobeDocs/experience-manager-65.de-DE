@@ -103,5 +103,5 @@ Wenn Tag-Namensraum hinzugefügt wurden und fehlen, stellen Sie sicher, dass die
 
 Wenn nach der Auswahl eines Tags beim Anzeigen des Katalogs keine Aktivierungsressourcen angezeigt werden, stellen Sie sicher, dass ein Tag aus dem Namensraum des Katalogs bzw. den Katalogs auf die Aktivierungsressource angewendet wurde.
 
-![ansicht-Katalog](assets/viewcatalog.png)
+![Ansicht-Katalog](assets/viewcatalog.png)
 
