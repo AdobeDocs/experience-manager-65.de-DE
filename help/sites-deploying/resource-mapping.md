@@ -76,7 +76,7 @@ aus, um die Anforderung
 
 `https://localhost:4503/welcome` ``
 
-wie folgt umzuleiten:
+in:
 
 `https://localhost:4503/libs/cq/core/content/welcome.html`
 
