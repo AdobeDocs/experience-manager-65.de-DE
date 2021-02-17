@@ -18,10 +18,10 @@ ht-degree: 72%
 
 [Die AEM-Modernisierungs-Tools ermöglichen eine einfache Konvertierung von:](http://opensource.adobe.com/aem-modernize-tools/)
 
-* [](page-templates-static.md)Statischen Vorlagen in bearbeitbare Vorlagen[](page-templates-editable.md)
-* [](page-templates-static.md)Designkonfigurationen in Richtlinien[](page-templates-editable.md)
-* [](/help/sites-authoring/default-components-foundation.md)Foundation-Komponenten in Kernkomponenten[](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html)
-* [](website.md)Klassische Benutzeroberfläche in Touch-optimierte Benutzeroberfläche[](touch-ui-concepts.md)
+* [](page-templates-static.md)[Statischen Vorlagen in bearbeitbare Vorlagen](page-templates-editable.md)
+* [](page-templates-static.md)[Design-Konfigurationen in Richtlinien](page-templates-editable.md)
+* [](/help/sites-authoring/default-components-foundation.md)[Foundation-Komponenten in Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
+* [](website.md)[Klassische Benutzeroberfläche in Touch-optimierte Benutzeroberfläche](touch-ui-concepts.md)
 
 Weitere Informationen zur Verwendung dieser Werkzeuge finden Sie [in der entsprechenden Dokumentation](http://opensource.adobe.com/aem-modernize-tools/).
 
