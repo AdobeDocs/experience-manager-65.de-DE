@@ -173,7 +173,7 @@ Das Einstellungsbedienfeld enthält mehrere Unterbereiche mit Funktionen, die ko
 >
 >Mehrere Unterbereiche unter &quot;Einstellungen&quot;ermöglichen es einem vertrauenswürdigen Mitglied, UGC zu moderieren, Gruppen zu verwalten oder Kontaktpersonen für die Aktivierung von Ressourcen in der Umgebung &quot;Veröffentlichen&quot;zu sein.
 >
->Die Regel besteht darin, dass auf der Seite der Veröffentlichung [Benutzer und Benutzergruppen](/help/communities/users.md) (Mitglieder und Mitgliedsgruppen) nicht in der Umgebung &quot;Autor&quot;dupliziert werden darf.
+>Die Regel besteht darin, dass auf der Seite der Veröffentlichung [Benutzer und Benutzergruppen](/help/communities/users.md) (Mitglieder und Mitgliedergruppen) nicht in der Umgebung &quot;Autor&quot;dupliziert werden darf.
 >
 >Daher ist es beim Erstellen der Community-Site in der Autorenrolle und beim Zuweisen von vertrauenswürdigen Mitgliedern zu verschiedenen Rollen erforderlich, Mitgliedsdaten aus der Veröffentlichungs-Umgebung abzurufen.
 >
