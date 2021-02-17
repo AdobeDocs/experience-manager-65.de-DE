@@ -1,6 +1,6 @@
 ---
-title: Query Builder-Eigenschaftsverweis
-seo-title: Query Builder-Eigenschaftsverweis
+title: Query Builder-Prädikatsreferenz
+seo-title: Query Builder-Prädikatsreferenz
 description: Vollständiger Eigenschaftsverweis für die Query Builder-API.
 seo-description: Vollständiger Eigenschaftsverweis für die Query Builder-API.
 uuid: af0e269e-7d52-4032-b22e-801c7b5dccfa
@@ -13,17 +13,17 @@ translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
 workflow-type: tm+mt
 source-wordcount: '2323'
-ht-degree: 56%
+ht-degree: 60%
 
 ---
 
 
-# Query Builder-Eigenschaftsverweis{#query-builder-predicate-reference}
+# Query Builder-Prädikatsreferenz{#query-builder-predicate-reference}
 
 ## Allgemein {#general}
 
 * [root](#root)
-* [-Gruppe](#group)
+* [group](#group)
 * [orderby](#orderby)
 
 ## Prädikate {#predicates}
@@ -32,7 +32,7 @@ ht-degree: 56%
 * [contentfragment](/help/sites-developing/querybuilder-predicate-reference.md#contentfragment)
 * [dateComparison](/help/sites-developing/querybuilder-predicate-reference.md#datecomparison)
 * [daterange](/help/sites-developing/querybuilder-predicate-reference.md#daterange)
-* [excludepaths](/help/sites-developing/querybuilder-predicate-reference.md#excludepaths)
+* [excludepaths ](/help/sites-developing/querybuilder-predicate-reference.md#excludepaths)
 * [fulltext](/help/sites-developing/querybuilder-predicate-reference.md#fulltext)
 * [hasPermission](/help/sites-developing/querybuilder-predicate-reference.md#haspermission)
 * [language](/help/sites-developing/querybuilder-predicate-reference.md#language)
@@ -85,7 +85,7 @@ Facettenextraktion wird nicht unterstützt.
 
 Vergleicht zwei JCR DATE-Eigenschaften miteinander. Kann testen, ob sie gleich, ungleich, größer oder größer-oder-gleich sind.
 
-Dies ist eine reine Filtereigenschaft und kann keine Suchindizes nutzen.
+Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen.
 
 #### Eigenschaften {#properties-2}
 
@@ -103,8 +103,7 @@ Dies ist eine reine Filtereigenschaft und kann keine Suchindizes nutzen.
 
 ### daterange {#daterange}
 
-Gleicht JCR DATE-Eigenschaften mit einem Datums-/Zeitintervall ab. Hierbei wird ISO8601 verwendet
-Format für Daten und Uhrzeiten ( `YYYY-MM-DDTHH:mm:ss.SSSZ`) und erlaubt auch partielle Darstellungen, wie `YYYY-MM-DD`. Alternativ kann der Zeitstempel als Anzahl von Millisekunden seit 1970 in der Zeitzone UTC angegeben werden. Dies ist das Unix-Zeitformat.
+Gleicht JCR DATE-Eigenschaften mit einem Datums-/Zeitintervall ab. Hierbei wird das ISO8601-Format für Daten und Uhrzeiten (`YYYY-MM-DDTHH:mm:ss.SSSZ`) verwendet, wobei auch Teildarstellungen möglich sind, z. B. `YYYY-MM-DD`. Alternativ kann der Zeitstempel als Anzahl von Millisekunden seit 1970 in der Zeitzone UTC angegeben werden. Dies ist das Unix-Zeitformat.
 
 Sie können nach allen Elementen zwischen zwei Zeitstempeln suchen, nach allem, was neuer oder älter als ein jeweiliges Datum ist, und aus inklusiven oder offenen Intervallen auswählen.
 
@@ -142,7 +141,7 @@ Filtern wird nicht unterstützt.
 
 Schließt Knoten aus dem Ergebnis aus, wenn ihr Pfad mit einem regulären Ausdruck übereinstimmt.
 
-Dies ist eine reine Filtereigenschaft und kann keine Suchindizes nutzen.
+Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen.
 
 Facettenextraktion wird nicht unterstützt.
 
@@ -164,13 +163,13 @@ Facettenextraktion wird nicht unterstützt.
 
 * **fulltext**
 
-   der/die Volltextsuchbegriff(e)
+   der/die Suchbegriff(e) im Volltext
 
 * **relPath**
 
    Der relative Pfad, der in der Eigenschaft oder dem Teilknoten durchsucht werden soll. Diese Eigenschaft ist optional.
 
-### -Gruppe{#group}
+### group {#group}
 
 Ermöglicht die Erstellung verschachtelter Bedingungen. Gruppen können verschachtelte Gruppen enthalten. Alles in einer querybuilder-Abfrage gehört zu einer root-Gruppe, die auch `p.or`- und `p.not`-Parameter aufweisen kann.
 
@@ -223,7 +222,7 @@ Dies ist konzeptionell `fulltext AND ( (path AND type) OR (path AND type) )`. Be
 
 Beschränkt das Ergebnis auf Elemente, bei denen die aktuelle Sitzung die angegebenen [JCR-Privilegien](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) aufweist.
 
-Dies ist eine reine Filtereigenschaft und kann keine Suchindizes nutzen. Facettenextraktion wird nicht unterstützt.
+Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen. Facettenextraktion wird nicht unterstützt.
 
 #### Eigenschaften {#properties-7}
 
@@ -235,7 +234,7 @@ Dies ist eine reine Filtereigenschaft und kann keine Suchindizes nutzen. Facette
 
 Findet CQ-Seiten in einer bestimmten Sprache. Hierbei wird sowohl die Spracheigenschaft der Seite als auch der Seitenpfad betrachtet, der häufig die Sprache oder das Gebietsschema in einer Site-Struktur der höchsten Ebene enthält.
 
-Dies ist eine reine Filtereigenschaft und kann keine Suchindizes nutzen.
+Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen.
 
 Unterstützt die Facettenextraktion. Stellt Buckets für jeden eindeutigen Sprachcode zur Verfügung.
 
@@ -249,7 +248,7 @@ Unterstützt die Facettenextraktion. Stellt Buckets für jeden eindeutigen Sprac
 
 Prüft, ob ein Knoten ein DAM-Haupt-Asset und kein Unter-Asset ist. Dies ist im Allgemeinen jeder Knoten, der sich nicht in einem subassets-Knoten befindet. Hierbei wird nicht auf den Knotentyp `dam:Asset` geprüft. Um diese Prognose zu verwenden, stellen Sie einfach &quot; `mainasset=true`&quot;oder &quot; `mainasset=false`&quot;ein, es gibt keine weiteren Eigenschaften.
 
-Dies ist eine reine Filtereigenschaft und kann keine Suchindizes nutzen.
+Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen.
 
 Unterstützt die Facettenextraktion. Stellt zwei Buckets für Haupt- und Unter-Assets bereit.
 
@@ -261,9 +260,9 @@ Unterstützt die Facettenextraktion. Stellt zwei Buckets für Haupt- und Unter-A
 
 ### memberOf {#memberof}
 
-Sucht Objekte, die Mitglieder einer bestimmten [Sling-Ressourcensammlung](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) sind.
+Sucht Objekte, die Mitglieder einer bestimmten [Sling-Ressourcensammlung](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) sind.
 
-Dies ist eine reine Filtereigenschaft und kann keine Suchindizes nutzen. Facettenextraktion wird nicht unterstützt.
+Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen. Facettenextraktion wird nicht unterstützt.
 
 #### Eigenschaften {#properties-10}
 
@@ -303,7 +302,7 @@ Unterstützt die Facettenextraktion auf die gleiche Weise wie die Eigenschaft �
 
 ### orderby {#orderby}
 
-Ermöglicht das Sortieren des Ergebnisses. Wenn die Sortierung nach mehreren Eigenschaften erforderlich ist, muss diese Prognose mehrmals mit dem Zahlenpräfix hinzugefügt werden, z. B. `1_orderby=first`, `2_oderby=second`.
+Ermöglicht das Sortieren des Ergebnisses. Wenn nach mehreren Eigenschaften geordnet werden muss, muss dieses Prädikat anhand des Präfix mehrfach hinzugefügt werden, z. B. `1_orderby=first`, `2_oderby=second`.
 
 #### Eigenschaften {#properties-13}
 
@@ -481,9 +480,9 @@ Der Name „root“ wird in Abfragen nie verwendet, er ist impliziert.
 
 Fügt alle Eigenschaften einer beständigen querybuilder-Abfrage der aktuellen Abfrage als Untergruppeneigenschaft hinzu.
 
-Dabei wird keine Extra-Abfrage ausgeführt, sondern die aktuellen Query erweitert.
+Dabei wird keine zusätzliche Abfrage ausgeführt, sondern die aktuellen Abfrage erweitert.
 
-Abfragen können programmgesteuert mit `QueryBuilder#storeQuery()` beibehalten werden. Das Format kann entweder eine String-Eigenschaft mit mehreren Zeilen oder ein `nt:file`-Knoten sein, der die Abfrage als Textdatei im Java-Eigenschaftsformat enthält.
+Abfragen können programmgesteuert anhand von `QueryBuilder#storeQuery()` beibehalten werden. Das Format kann entweder eine String-Eigenschaft mit mehreren Zeilen oder ein `nt:file`-Knoten sein, der die Abfrage als Textdatei im Java-Eigenschaftsformat enthält.
 
 Die Facettenextraktion wird für die Eigenschaften der gespeicherten Abfrage nicht unterstützt 
 
@@ -571,7 +570,7 @@ Facettenextraktion wird nicht unterstützt.
 
    (bool) den gesamten Tag Volltext durchsuchen, d.h. alle Titel, Beschreibung usw. (hat Vorrang vor &quot;l `ang`&quot;)
 
-### Typ {#type}
+### type {#type}
 
 Schränkt Ergebnisse auf einen bestimmten JCR-Knotentyp ein, sowohl den primären Knotentyp als auch den Mixin-Typ. Hierbei werden auch Untertypen dieses Knotentyps gefunden. Zur effizienten Ausführung müssen Repository-Suchindizes die Knotentypen enthalten.
 
@@ -579,6 +578,6 @@ Unterstützt die Facettenextraktion. Stellt für jeden einzigartigen Typ in den 
 
 #### Eigenschaften {#Properties-2}
 
-* **Typ**
+* **type**
 
    Node-Typ oder Name der Mischung, nach der gesucht werden soll, z. B. `cq:Page`
