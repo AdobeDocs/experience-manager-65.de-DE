@@ -33,7 +33,7 @@ AEM Communities ermöglicht die Entwicklung einer Beziehung zu Site-Besuchern, d
 
 * **Datendurchlauf-** Blogs, Fragen und Antworten und Ereignis-Kalender,
 * Während **durch Foren, Kommentare und andere Community-Inhalte Einblicke gewinnen, die häufig als benutzergenerierte Inhalte (UGC) bezeichnet werden.**
-* Es ermöglicht **Moderation** durch vertrauenswürdige Mitglieder in der Veröffentlichungs-Umgebung,
+* Es ermöglicht die Moderation **durch vertrauenswürdige Mitglieder in der Umgebung zum Veröffentlichen,**
 * **Social-** Anmeldung bei Twitter und Facebook,
 * **Inline-** Übersetzung von Community-Inhalten,
 * **Community-Gruppen-** Erstellung über die veröffentlichte Community-Site,
