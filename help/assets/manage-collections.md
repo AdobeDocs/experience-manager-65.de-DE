@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
 source-wordcount: '2176'
-ht-degree: 63%
+ht-degree: 65%
 
 ---
 
@@ -120,7 +120,7 @@ Alternativ können Sie das Asset in den Bereich **[!UICONTROL In Sammlung]** abl
 Smart-Sammlungen werden durch Speichern von Suchvorgängen erstellt. Das heißt, Sie können den Inhalt ändern, indem Sie die Suchparameter der [gespeicherten Suche](#saved-searches) ändern.
 
 1. Klicken Sie in der Benutzeroberfläche [!DNL Assets] in der Symbolleiste auf die Suchoption ![search option](assets/do-not-localize/search_icon.png).
-1. Wählen Sie mit dem Cursor im Feld Omniture die `Return`-Taste aus.
+1. Betätigen Sie bei in das OmniSearch-Feld gesetztem Cursor die `Return`-Taste.
 1. Öffnen Sie in der Benutzeroberfläche [!DNL Experience Manager] das Bedienfeld &quot;Filter&quot;.
 1. Wählen Sie in der Liste **[!UICONTROL Gespeicherte Suchen]** die Smart-Sammlung aus, die Sie ändern möchten. Im Suchbereich werden die für die gespeicherte Suche konfigurierten Filter angezeigt.
 
@@ -175,7 +175,7 @@ Verwenden Sie zum Anpassen der Seite mit den [!UICONTROL Eigenschaften] von Meta
 
 ## Suchen nach Sammlungen {#searching-collections}
 
-Sie können mit der Konsole „Sammlungen“ nach Sammlungen suchen. Wenn Sie mit Suchbegriffen im Feld &quot;Omniture&quot;suchen, sucht [!DNL Assets] nach Sammlungsnamen, Metadaten und den Tags, die den Sammlungen hinzugefügt wurden.
+Sie können mit der Konsole „Sammlungen“ nach Sammlungen suchen. Wenn Sie die Suche mit Keywords im Suchfeld durchführen, sucht [!DNL Assets] nach Sammlungsnamen, Sammlungsmetadaten und den Tags, die zu den Sammlungen hinzugefügt wurden.
 
 Wenn Sie auf der obersten Ebene nach Sammlungen suchen, werden nur die einzelnen Sammlungen in den Suchergebnissen zurückgegeben. [!DNL Assets] oder Ordner in den Sammlungen werden ausgeschlossen. In allen anderen Fällen (z. B. innerhalb einer individuellen Sammlung oder in einer Ordnerhierarchie) werden alle relevanten Assets, Ordner und Sammlungen zurückgegeben.
 
@@ -183,7 +183,7 @@ Wenn Sie auf der obersten Ebene nach Sammlungen suchen, werden nur die einzelnen
 
 Klicken Sie in der Sammlungskonsole auf eine Sammlung, um sie zu öffnen.
 
-Die [!DNL Experience Manager]-Suche innerhalb einer Sammlung ist auf Assets (und ihre Tags und Metadaten) innerhalb der Sammlung beschränkt, die Sie anzeigen. Wenn Sie in einem Ordner suchen, werden alle passenden Assets und untergeordneten Ordner innerhalb des aktuellen Ordners zurückgegeben. Wenn Sie in einer Sammlung suchen, werden nur übereinstimmende Assets, Ordner und andere Sammlungen zurückgegeben, die direkt zur Sammlung gehören.
+Innerhalb einer Sammlung ist die Suche von [!DNL Experience Manager] auf Assets (sowie deren Tags und Metadaten) in der angezeigten Sammlung begrenzt. Wenn Sie in einem Ordner suchen, werden alle passenden Assets und untergeordneten Ordner innerhalb des aktuellen Ordners zurückgegeben. Wenn Sie in einer Sammlung suchen, werden nur übereinstimmende Assets, Ordner und andere Sammlungen zurückgegeben, die direkt zur Sammlung gehören.
 
 ## Bearbeiten von Sammlungseinstellungen {#editing-collection-settings}
 
@@ -210,7 +210,7 @@ Wenn Sie eine Sammlung herunterladen, wird die gesamte Asset-Hierarchie innerhal
 
 1. Wählen Sie in der Konsole „Sammlungen“ eine oder mehrere Sammlungen für den Download aus.
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Download]**.
-1. Klicken Sie im Dialogfeld **[!UICONTROL Herunterladen]** auf **[!UICONTROL Herunterladen]**. Wählen Sie **[!UICONTROL Ausgabeformate]** aus, wenn Sie die Ausgabeformate des Assets in der Sammlung herunterladen möchten. Wählen Sie die Option **[!UICONTROL E-Mail]** aus, um eine E-Mail-Benachrichtigung an den Eigentümer der Sammlung zu senden.
+1. Klicken Sie im Dialogfeld **[!UICONTROL Herunterladen]** auf **[!UICONTROL Herunterladen]**. Wählen Sie **[!UICONTROL Ausgabeformate]** aus, wenn Sie die Ausgabedarstellungen des Assets in der Sammlung herunterladen möchten. Wählen Sie die Option **[!UICONTROL E-Mail]** aus, um eine E-Mail-Benachrichtigung an den Eigentümer der Sammlung zu senden.
 
    Bei Auswahl einer Sammlung für den Download wird die gesamte Ordnerstruktur unter dieser Sammlung heruntergeladen. Um jede Sammlung (einschließlich Assets in untergeordneten Sammlungen, die unter der übergeordneten Sammlung verschachtelt sind), die Sie herunterladen, in einem eigenen Ordner zu speichern, wählen Sie **[!UICONTROL Separaten Ordner für jedes Asset erstellen]** aus.
 
@@ -232,13 +232,13 @@ Sie können eine Sammlung zu einer anderen Sammlung hinzufügen und so eine vers
 >
 >Smart-Sammlungen können nicht verschachtelt werden. Das heißt, Smart-Sammlungen können keine anderen Sammlungen enthalten.
 
-## Gespeicherte Suchvorgänge       {#saved-searches}
+## Gespeicherte Suchvorgänge  {#saved-searches}
 
 In der Benutzeroberfläche [!DNL Assets] können Sie Assets auf der Grundlage bestimmter Regeln, Suchkriterien oder benutzerdefinierter Suchfacetten suchen oder filtern. Wenn Sie diese Einstellungen als **[!UICONTROL Gespeicherte Suchen]** speichern, können Sie später in der Liste **[!UICONTROL Gespeicherte Suchen]** im Filterbereich darauf zugreifen. Beim Erstellen einer gespeicherten Suche wird auch eine Smart-Sammlung erstellt.
 
 ![saved_searches_Liste](assets/saved_searches_list.png)
 
-Gespeicherte Suchen werden erstellt, wenn Sie eine Smart-Sammlung erstellen. Smart-Sammlungen werden automatisch der Liste **[!UICONTROL Gespeicherte Suchen]** hinzugefügt. Die Abfrage [!UICONTROL Gespeicherte Suchen] für die Sammlung wird in der Eigenschaft `dam:query` in CRXDE am relativen Speicherort `/content/dam/collections/` gespeichert. Die Suchen, die Sie speichern können, und die gespeicherten Suchen, die in der Liste angezeigt werden, sind unbegrenzt. 
+Gespeicherte Suchen werden erstellt, wenn Sie eine Smart-Sammlung erstellen. Smart-Sammlungen werden automatisch der Liste **[!UICONTROL Gespeicherte Suchen]** hinzugefügt. Die Abfrage [!UICONTROL Gespeicherte Suchen] für die Sammlung wird in der Eigenschaft `dam:query` in CRXDE am relativen Speicherort `/content/dam/collections/` gespeichert. Die Suchen, die Sie speichern können, und die gespeicherten Suchen, die in der Liste angezeigt werden, sind unbegrenzt.
 
 >[!NOTE]
 >
@@ -249,7 +249,7 @@ Gespeicherte Suchen werden genauso wie Smart-Sammlungen bearbeitet. Weitere Info
 Gehen Sie wie folgt vor, um gespeicherte Suchen zu löschen:
 
 1. Klicken Sie in der Benutzeroberfläche [!DNL Assets] auf Suchen ![Suchoption](assets/do-not-localize/search_icon.png).
-1. Wählen Sie mit dem Cursor im Feld Omniture die `Return`-Taste aus.
+1. Betätigen Sie bei in das OmniSearch-Feld gesetztem Cursor die `Return`-Taste.
 1. Öffnen Sie in der Benutzeroberfläche [!DNL Experience Manager] das Bedienfeld &quot;Filter&quot;.
 1. Klicken Sie in der Liste **[!UICONTROL Gespeicherte Suchen]** neben der zu löschenden intelligenten Sammlung auf **[!UICONTROL Löschen]**.
 
