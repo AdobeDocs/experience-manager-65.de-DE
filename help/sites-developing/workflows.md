@@ -205,7 +205,7 @@ Für einen Workflow mit sechs Schritten und vier Status kann dies wie folgt auss
    |---|---|
    | Schritt 1 | Erstellen |
    | Schritt 2 | Erstellen |
-   | Schritt 3 | Überprüfen |
+   | Schritt 3 | Überprüfung |
    | Schritt 4 | Genehmigen |
    | Schritt 5 | Fertig stellen |
    | Schritt 6 | Fertig stellen |
