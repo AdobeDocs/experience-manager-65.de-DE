@@ -242,7 +242,7 @@ Nachfolgend sind die verfügbaren Bereitstellungsoptionen für AEM dargestellt (
    <td><p> </p> </td>
   </tr>
   <tr>
-   <td><p>Desktop-App</p> </td>
+   <td><p>-Desktop-Programm</p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
