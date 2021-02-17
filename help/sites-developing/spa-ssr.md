@@ -19,7 +19,7 @@ ht-degree: 84%
 ---
 
 
-# Single Page Applications (SPAs) und Server-seitiges Rendering{#spa-and-server-side-rendering}
+# Single Page Applications (SPAs) und Server-seitiges Rendering {#spa-and-server-side-rendering}
 
 >[!NOTE]
 >
@@ -179,7 +179,7 @@ Ein einfaches Beispiel finden Sie in der [We.Retail-Protokoll-App](https://githu
 
 >[!NOTE]
 >
->Jedes AEM-Projekt sollte den [AEM-Projektarchetyp](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/developing/archetype/overview.html) nutzen, der SPA-Projekte mithilfe von React oder Angular unterstützt und das SPA-SDK nutzt.
+>Jedes AEM-Projekt sollte den [AEM-Projektarchetyp](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html) nutzen, der SPA-Projekte mithilfe von React oder Angular unterstützt und das SPA-SDK nutzt.
 
 ## Verwenden von Node.js {#using-node-js}
 
