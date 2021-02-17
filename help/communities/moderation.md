@@ -196,7 +196,7 @@ Das Ergebnis ist ein neuer auswählbarer Filter für `Voting` unter der Filtergr
 
 Wenn dieser Filter ausgewählt ist, zeigt der Inhalt des Dashboards UGC an, das mit einem der eingegebenen ResourceTypes übereinstimmt.
 
-#### Status {#status}
+#### Status{#status}
 
 Der Status beschränkt die referenzierte UGC auf Beiträge mit dem ausgewählten Status, bei denen es sich um einen oder mehrere Beiträge mit dem Status Ausstehend, Genehmigt, Verweigert oder Schließen sowie Entwurf oder Geplant für Blog-Artikel und Beantwortet oder Nicht beantwortet für Fragen zur Servicequalitätsprüfung handeln kann. Wenn keine ausgewählt ist, werden alle angezeigt.
 
@@ -269,7 +269,7 @@ So machen Sie die benutzerdefinierten Filter auf bestehenden Websites der Gemein
 
 Wenn Sie die Beiträge stapelweise moderieren möchten, klicken Sie im Inhaltsbereich auf das Symbol Auswählen (![Auswahl](assets/selecticon.png)) in einem Beitrag, das angezeigt wird, wenn Sie den Mauszeiger (Desktop) darüber bewegen oder indem Sie mit dem Finger auf den Beitrag drücken (Mobil). Auf diese Weise können Sie den Mehrfachauswahlmodus aufrufen und die nachfolgenden Beiträge auswählen, die per Mausklick gepostet werden sollen. Verwenden Sie die in der Symbolleiste angezeigten Schaltflächen, um Moderationsaktionen an den ausgewählten Beiträgen durchzuführen. Alle Aktionen werden zur Bestätigung aufgefordert.
 
-Wenn Sie einen einzelnen Beitrag im Inhaltsbereich moderieren möchten, halten Sie den Mauszeiger über den Beitrag (Desktop) oder drücken Sie die Eingabetaste und halten Sie den Finger auf dem Beitrag (Mobil), sodass die Schaltflächen auf dem Beitrag angezeigt werden. Wenn Sie mit einem einzigen Inhaltsdetail arbeiten, wird nur eine Löschaktion zur Bestätigung aufgefordert.
+Um einen einzelnen Beitrag im Inhaltsbereich zu moderieren, halten Sie den Mauszeiger über ihn (Desktop) oder drücken Sie die Eingabetaste und halten Sie den Finger auf dem Beitrag (Mobil), sodass Schaltflächen auf dem Beitrag angezeigt werden. Wenn Sie mit einem einzigen Inhaltsdetail arbeiten, wird nur eine Löschaktion zur Bestätigung aufgefordert.
 
 ### Moderieren mehrerer Beiträge {#moderating-multiple-posts}
 
@@ -362,7 +362,7 @@ Beispiel:
 
 #### Details anzeigen {#view-detail}
 
-![ansicht](assets/view.png)
+![Ansicht](assets/view.png)
 
 Wenn Sie mit einem einzelnen Beitrag arbeiten, können Sie weitere Details anzeigen, indem Sie das UGC im Detailmodus öffnen.
 
@@ -372,5 +372,5 @@ Um zur Inhaltsbereichsanzeige mehrerer UGC-Beiträge zurückzukehren, wählen Si
 
 Beispiel:
 
-![ansicht1](assets/view1.png)
+![Ansicht1](assets/view1.png)
 
