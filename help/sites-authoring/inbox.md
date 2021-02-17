@@ -152,7 +152,7 @@ Die Option &quot;Admin-Steuerung&quot;ist nur für die Mitglieder der Gruppe `ad
    * **hinzufügen Spalte**: Wählen Sie eine Spalte aus, die in AEM Posteingang hinzugefügt werden soll.
    * **Spalte** bearbeiten: Bewegen Sie den Mauszeiger über den Spaltentitel und tippen Sie auf  ![](assets/edit.svg) Bearbeiten, um einen Spaltenanzeigenamen einzugeben.
    * **Spalte** löschen: Tippen Sie auf das  ![](assets/delete_updated.svg) Löschen-Symbol, um die Spalte aus AEM Posteingang zu löschen.
-   * **Spalte** verschieben: Ziehen Sie das  ![](assets/move_updated.svg) moveicon, um eine Spalte an eine neue Position in AEM Posteingang zu verschieben.
+   * **Spalte** verschieben: Ziehen Sie das  ![](assets/move_updated.svg) moveicon, um eine Spalte in AEM Posteingang an eine neue Position zu verschieben.
 
    ![admin-control](assets/admin-control-column-customize.png)
 
