@@ -82,7 +82,7 @@ Diese Warnungen können unbedenklich ignoriert werden.
 
 ### Fehler in Protokollen: NoClassDefFoundError für IndexElementFactory {#error-in-logs-noclassdeffounderror-for-indexelementfactory}
 
-Die Aktualisierung von AEM 5.6.1 GA auf die neueste Version von cq-socialgroups-pkg-1.4.x oder auf AEM 6.0 führt zu Fehlern in der Protokolldatei während des Starts für eine Bedingung, die sich selbst löst, wie der Fehler, der beim Neustart nicht erkannt wird, zeigt.
+Die Aktualisierung von AEM 5.6.1 GA auf die neueste Version von cq-socialgroups-pkg-1.4.x oder auf AEM 6.0 führt zu Fehlern in der Protokolldatei während des Starts für eine Bedingung, die sich selbst löst, wie der Fehler zeigt, der beim Neustart nicht erkannt wird.
 
 ```xml
 14.11.2013 20:52:39.453 ERROR [Apache Sling JCR Resource Event Queue Processor for path '/'] com.adobe.cq.social.storage.index.impl.IndexService Error occurred while processing event java.util.ConcurrentModificationException
