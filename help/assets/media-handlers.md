@@ -147,7 +147,7 @@ Nachdem Sie das folgende Verfahren ausgeführt haben, werden beim Hochladen eine
       * Artefakt-ID: myBundle.
       * Name: Mein [!DNL Experience Manager] Bundle.
       * Beschreibung: Dies ist mein [!DNL Experience Manager] Bundle.
-   1. Klicken Sie auf **[!UICONTROL Finish]**.
+   1. Klicken Sie auf **[!UICONTROL Beenden]**.
 
 
 1. Setzen Sie den [!DNL Java]-Compiler auf Version 1.5:
@@ -497,7 +497,7 @@ Fügen Sie zum Testen des geänderten Workflows ein Asset zu `/content/dam` hinz
 
 In diesem Abschnitt wird beschrieben, wie die [!UICONTROL Prozess-Argumente] des [!UICONTROL CommandLineProcess] festgelegt werden.
 
-Trennen Sie die Werte von [!UICONTROL Prozessargumente] durch Kommas und verwenden Sie kein Leerzeichen, um sie Beginn.
+Trennen Sie die Werte von [!UICONTROL Prozessargumenten] durch Kommas und verwenden Sie kein Leerzeichen, um sie Beginn.
 
 | Argument-Format | Beschreibung |
 |---|---|
