@@ -20,13 +20,13 @@ ht-degree: 66%
 
 # Beheben von Serialisierungsproblemen in AEM{#mitigating-serialization-issues-in-aem}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
  Das AEM-Team von Adobe arbeitet eng mit dem Open-Source-Projekt [NotSoSerial](https://github.com/kantega/notsoserial) zusammen, um Sie bei der Behandlung der in **CVE-2015-7501** beschriebenen Sicherheitsrisiken zu unterstützen. NotSoSerial ist unter der [Apache 2-Lizenz](https://www.apache.org/licenses/LICENSE-2.0) lizenziert und beinhaltet ASM-Code, der unter der eigenen [BSD-ähnlichen Lizenz](https://asm.ow2.org/license.html) lizenziert ist.
 
 Bei der in diesem Paket enthaltenen Agent-JAR-Datei handelt es sich um die modifizierte NotSoSerial-Distribution von Adobe.
 
-NotSoSerial ist eine Lösung auf Java-Ebene für ein Problem auf Java-Ebene und nicht AEM-spezifisch. Sie fügt einem Deserialisierungsversuch für ein Objekt eine Preflight-Prüfung hinzu. Diese Prüfung testet einen Klassennamen mit einer Firewall-artigen Zulassungsliste und/oder Blockierungsliste. Aufgrund der begrenzten Anzahl von Klassen in der Standardklasse ist es unwahrscheinlich, dass sich dies auf Ihre Blockierungslisten oder Ihren Code auswirkt.
+NotSoSerial ist eine Lösung auf Java-Ebene für ein Problem auf Java-Ebene und nicht AEM-spezifisch. Sie fügt einem Deserialisierungsversuch für ein Objekt eine Preflight-Prüfung hinzu. Mit dieser Prüfung wird ein Klassenname gegen eine Firewall-ähnliche Zulassungsliste und/oder Blockierungsliste getestet. Aufgrund der begrenzten Anzahl von Klassen in der Standardklasse ist es unwahrscheinlich, dass sich dies auf Ihre Blockierungslisten oder Ihren Code auswirkt.
 
 Standardmäßig führt der Agent eine Blockierungsliste-Prüfung für aktuelle bekannte verwundbare Klassen durch. Diese Blockierungsliste soll Sie vor der aktuellen Liste von Exploits schützen, die diese Art von Verwundbarkeit nutzen.
 
