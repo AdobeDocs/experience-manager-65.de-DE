@@ -1,8 +1,8 @@
 ---
 title: Verwenden von Tags
 seo-title: Verwenden von Tags
-description: Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website.
-seo-description: Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website.
+description: Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website
+seo-description: Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website
 uuid: 5d922443-f924-426e-acf4-27dffd1053f6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: 52cb99353ae33c8097b6b5bd29f6c040df30b42d
 workflow-type: tm+mt
 source-wordcount: '584'
-ht-degree: 84%
+ht-degree: 88%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 84%
 Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website. Tags können als Keywords oder Beschriftungen betrachtet werden, die einer Seite, einem Asset oder einem anderen Inhalt zugeordnet werden können, um Suchen zu ermöglichen und dadurch Inhalte und verwandte Inhalte zu finden.
 
 * Informationen zum Erstellen und Verwalten von Tags sowie zu den angewendeten Inhalts-Tags finden Sie unter [Verwalten von Tags](/help/sites-administering/tags.md).
-* Informationen zum Tagging-Framework sowie zum Einschließen und Erweitern von Tags in benutzerdefinierten Anwendungen finden Sie unter [Tagging für Entwickler](/help/sites-developing/tags.md).
+* Unter [Tagging für Entwickler](/help/sites-developing/tags.md) finden Sie Informationen über das Tagging-Framework sowie die Einbeziehung und Erweiterung von Tags in benutzerdefinierten Anwendungen.
 
 ## Zehn Gründe für das Verwenden von Tags {#ten-reasons-to-use-tagging}
 
@@ -41,7 +41,7 @@ Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten 
 
 Wenn Sie die Inhaltsstruktur für eine Website oder das Metadatenschema für Assets entwerfen, sollten Sie den leichten und zugänglichen Ansatz berücksichtigen, den Tagging bietet.
 
-## Anwenden von Tags   {#applying-tags}
+## Anwenden von Tags  {#applying-tags}
 
 In der Autorenumgebung wenden Autoren möglicherweise Tags an, indem sie auf die Seiteneigenschaften zugreifen und ein oder mehrere Tags im Feld **Tags/Keywords** eingeben.
 
