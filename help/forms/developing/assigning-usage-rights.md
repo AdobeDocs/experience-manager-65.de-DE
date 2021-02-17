@@ -391,7 +391,7 @@ Nachdem Sie ein PDF-Dokument mit aktivierten Verwendungsrechten abgerufen haben,
 
 * Die Meldung, die in Adobe Reader angezeigt wird, wenn das PDF-Dokument mit aktivierten Benutzerrechten geöffnet wird.
 * Das Datum, nach dem die Berechtigung nicht mehr gültig ist.
-* Das Datum, vor dem die Berechtigung nicht gültig ist.
+* Das Datum, vor dem die Berechtigung ungültig ist.
 * Die Verwendungsrechte, die für dieses PDF-Dokument mit aktivierten Verwendungsrechten festgelegt wurden.
 * Die Häufigkeit, mit der die Berechtigung verwendet wurde.
 
