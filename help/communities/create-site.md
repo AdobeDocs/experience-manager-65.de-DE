@@ -79,7 +79,7 @@ Wählen Sie **Weiter** aus.
 
 ### Schritt 3: Einstellungen {#step-settings}
 
-Beachten Sie, dass im Schritt &quot;Einstellungen&quot;vor der Auswahl von `Next` sieben Abschnitte den Zugriff auf Konfigurationen bieten, die Benutzerverwaltung, Tagging, Moderation, Gruppenverwaltung, Analyse, Übersetzung und Aktivierung umfassen.
+Beachten Sie, dass im Schritt &quot;Einstellungen&quot;vor der Auswahl von `Next` sieben Abschnitte den Zugriff auf Konfigurationen bieten, die unter anderem Benutzerverwaltung, Tagging, Moderation, Gruppenverwaltung, Analyse, Übersetzung und Aktivierung umfassen.
 
 Besuchen Sie das Tutorial [Erste Schritte mit AEM Communities für Aktivierung](/help/communities/getting-started-enablement.md), um mehr über die Arbeit mit den Aktivierungsfunktionen zu erfahren.
 
