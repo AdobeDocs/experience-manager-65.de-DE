@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '1145'
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
@@ -66,7 +66,7 @@ Fügen Sie zum Konfigurieren der „Von“-E-Mail-Adresse einen `sling:OsgiConfi
 1. Fügen Sie in CRXDE Lite einen Ordner mit dem Namen `config` unter Ihrem Anwendungsordner hinzu.
 1. Fügen Sie im Ordner &quot;config&quot;einen Knoten mit dem Namen:
 
-   `com.day.cq.wcm.notification.email.impl.EmailChannel` vom Typ  `sling:OsgiConfig`
+   `com.day.cq.wcm.notification.email.impl.EmailChannel` vom Typ `sling:OsgiConfig`
 
 1. hinzufügen Sie eine `String`-Eigenschaft auf den Knoten `email.from`. Legen Sie zu dem Wert die E-Mail-Adresse fest, die Sie verwenden möchten.
 
