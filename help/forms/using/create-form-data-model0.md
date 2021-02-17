@@ -109,7 +109,7 @@ CREATE TABLE `calls` (
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 ```
 
-Die Tabelle **Aufrufe** enthält die Anrufdetails wie Anrufdatum, Anrufzeit, Rufnummer, Anrufdauer und Anrufgebühren. Die Tabelle **customer** ist mit der Aufruftabelle über das Feld Mobilnummer (mobilenum) verknüpft. Für jede Mobiltelefonnummer, die in der Tabelle **customer** aufgeführt ist, befinden sich in der Tabelle **Aufrufe** mehrere Datensätze. Sie können beispielsweise die Anrufdetails für die Mobilfunknummer **1457892541** abrufen, indem Sie sich auf die Anruftabelle beziehen.****
+Die Tabelle **Aufrufe** enthält die Anrufdetails wie Anrufdatum, Anrufzeit, Telefonnummer, Anrufdauer und Anrufgebühren. Die Tabelle **customer** ist mit der Aufruftabelle über das Feld Mobilnummer (mobilenum) verknüpft. Für jede Mobiltelefonnummer, die in der Tabelle **customer** aufgeführt ist, befinden sich in der Tabelle **Aufrufe** mehrere Datensätze. Sie können beispielsweise die Anrufdetails für die Mobilfunknummer **1457892541** abrufen, indem Sie sich auf die Anruftabelle beziehen.****
 
 Die Tabelle **bills** enthält die Rechnungsdaten wie Rechnungsdatum, Rechnungszeitraum, monatliche Gebühren und Telefongebühren. Die Tabelle **customer** ist mit der Tabelle **bills** unter Verwendung des Felds &quot;Bill Plan&quot;verknüpft. Jeder Kunde ist in der Tabelle **customer** ein Plan zugeordnet. Die Tabelle **bills** enthält die Preisdetails für alle bestehenden Pläne. Sie können beispielsweise die Plandetails für **Sarah** aus der Kundentabelle abrufen und diese Details verwenden, um Preisdetails aus der Rechnungstabelle abzurufen.********
 
