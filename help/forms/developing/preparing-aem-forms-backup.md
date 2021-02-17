@@ -209,7 +209,7 @@ Um den Sicherungsmodus programmgesteuert zu deaktivieren, erstellen Sie ein Back
 
 **Sicherungsmodus verlassen**
 
-Verlassen Sie den Sicherungsmodus, um das normale Bereinigen von Dateien aus der Datenspeicherung des globalen Dokuments (GDS) fortzusetzen. Bevor Sie den Sicherungsmodus beenden, sollten Sie sicherstellen, dass die Sicherungsverfahren abgeschlossen sind.
+Lassen Sie den Sicherungsmodus beendet, um das normale Bereinigen von Dateien aus der Datenspeicherung des globalen Dokuments (GDS) fortzusetzen. Bevor Sie den Sicherungsmodus beenden, sollten Sie sicherstellen, dass die Sicherungsverfahren abgeschlossen sind.
 
 **Abrufen von Informationen zur beendeten Sicherungsmodussitzung**
 
