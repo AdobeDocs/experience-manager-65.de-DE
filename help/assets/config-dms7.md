@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
 workflow-type: tm+mt
 source-wordcount: '6029'
-ht-degree: 78%
+ht-degree: 81%
 
 ---
 
@@ -152,7 +152,7 @@ Bei einigen der oben genannten Aufgaben müssen Sie die Desktopanwendung [Dynami
 Die Einrichtungs- und Konfigurationsaufgaben umfassen Folgendes:
 
 * [Veröffentlichungseinstellungen für Image-Server](#publishing-setup-for-image-server)
-* [Konfigurieren der allgemeinen Anwendungseinstellungen](#configuring-application-general-settings)
+* [Konfigurieren der allgemeinen Programmeinstellungen](#configuring-application-general-settings)
 * [Konfigurieren des Farb-Managements](#configuring-color-management)
 * [Bearbeiten von MIME-Typen für unterstützte Formate](#editing-mime-types-for-supported-formats)
 * [Hinzufügen von MIME-Typen für nicht unterstützte Formate](#adding-mime-types-for-unsupported-formats)
@@ -174,7 +174,7 @@ Auf dem Bildschirm „Image-Server“ werden Standardeinstellungen für das Bere
 * **[!UICONTROL Kompatibilitätsattribute]**: Diese Einstellung ermöglicht die Behandlung von Anfangs- und Endabsätzen in Textebenen wie in Version 3.6, um die Abwärtskompatibilität zu gewährleisten.
 * **[!UICONTROL Lokalisierungsunterstützung]**: Mit diesen Einstellungen können mehrere Gebietsschemaattribute verwaltet werden. Außerdem kann damit eine Zeichenfolge der Gebietsschemakarte angegeben werden, damit Sie festlegen können, welche Sprachen für die verschiedenen QuickInfos in Viewern unterstützt werden sollen. Weitere Informationen zur Einrichtung der **[Lokalisierungsunterstützung]** finden Sie unter [Überlegungen beim Einrichten der Lokalisierung von Assets](https://help.adobe.com/de_DE/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html).
 
-#### Konfigurieren der allgemeinen Anwendungseinstellungen {#configuring-application-general-settings}
+#### Konfigurieren der allgemeinen Programmeinstellungen {#configuring-application-general-settings}
 
 Zum Öffnen der Seite „Allgemeine Programmeinstellungen“ über die globale Navigationsleiste in Dynamic Media Classic klicken Sie auf **[!UICONTROL Einrichtung > Anwendungseinstellungen > Allgemeine Einstelllungen]**.
 
@@ -235,7 +235,7 @@ Sie können festlegen, welche Asset-Typen von Dynamic Media verarbeitet werden,
 * Konvertieren eines Adobe PDF-Dokuments in ein E-Katalog-Asset
 * Konvertieren eines Adobe Photoshop-Dokuments (.PSD) in ein Bannervorlagen-Asset für Personalisierung
 * Rastern einer Adobe Illustrator- (.AI) oder Adobe Photoshop Encapsulated Postscript-Datei (.EPS)
-* [Mithilfe von ](/help/assets/video-profiles.md) Videoprofilen und  [Bildprofilen können ](/help/assets/image-profiles.md) Sie die Verarbeitung von Videos bzw. Bildern definieren.
+* [Videoprofile](/help/assets/video-profiles.md) und [Bilddarstellungsprofile](/help/assets/image-profiles.md) können jeweils zum Definieren der Verarbeitung von Videos und Bildern verwendet werden.
 
 Informationen hierzu finden Sie unter [Hochladen von Assets](/help/assets/manage-assets.md#uploading-assets).
 
@@ -264,7 +264,7 @@ Informationen hierzu finden Sie unter [Hochladen von Assets](/help/assets/manage
 
 #### Hinzufügen von MIME-Typen für nicht unterstützte Formate {#adding-mime-types-for-unsupported-formats}
 
-Sie können in AEM Assets benutzerdefinierte MIME-Typen für nicht unterstützte Formate hinzufügen. Um sicherzustellen, dass kein neuer Knoten, den Sie in CRXDE Lite hinzufügen, von AEM gelöscht wird, müssen Sie sicherstellen, dass Sie den MIME-Typ vor `image_` verschieben und der aktivierte Wert auf **[!UICONTROL false eingestellt ist.]**
+Sie können in AEM Assets benutzerdefinierte MIME-Typen für nicht unterstützte Formate hinzufügen. Um sicherzustellen, dass kein neu hinzugefügter Knoten von AEM gelöscht wird, müssen Sie den MIME-Typ vor `image_` verschieben und der aktivierte Wert auf **[!UICONTROL false eingestellt ist.]**
 
 **So fügen Sie MIME-Typen für nicht unterstützte Formate hinzu**
 
@@ -521,7 +521,7 @@ Die Transit-Workflow-Warteschlange von Granite wird für den Workflow **[!UICON
 
 1. Ändern Sie im Feld **[!UICONTROL Maximale Anzahl an parallelen Aufträgen]** die Zahl in den gewünschten Wert.
 
-   Sie können **[!UICONTROL Maximale Anzahl paralleler Aufträge]** erhöhen, um das Hochladen von Dateien nach Dynamic Media ausreichend zu unterstützen. Der genaue Wert hängt von der Hardwarekapazität ab. In bestimmten Szenarien - d. h. einer ersten Migration oder einem einmaligen Massen-Upload - können Sie einen großen Wert verwenden. Beachten Sie jedoch, dass die Verwendung eines hohen Werts (z. B. die zweifache Anzahl der Kerne) negative Auswirkungen auf andere gleichzeitige Aktivitäten haben kann. Daher sollten Sie den Wert auf Basis Ihres jeweiligen Anwendungsfalls testen und anpassen.
+   Sie können **[!UICONTROL Maximale Anzahl an parallelen Aufträgen]** erhöhen, um das Hochladen von Dateien zu Dynamic Media angemessen zu unterstützen. Der genaue Wert hängt von der Hardwarekapazität ab. In bestimmten Szenarien – z. B. bei einer ersten Migration oder einem einmaligen Massen-Upload – können Sie einen großen Wert verwenden. Beachten Sie jedoch, dass die Verwendung eines großen Werts (z. B. die doppelte Anzahl an Kernen) negative Auswirkungen auf andere gleichzeitige Aktivitäten haben kann. Daher sollten Sie den Wert basierend auf Ihrem jeweiligen Anwendungsfalls testen und anpassen.
 
 <!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
@@ -545,7 +545,7 @@ Die Granite-Workflow-Warteschlange wird für Workflows ohne Verlauf verwendet. I
 
 1. Ändern Sie im Feld **[!UICONTROL Maximale Anzahl an parallelen Aufträgen]** die Zahl in den gewünschten Wert.
 
-   Sie können &quot;Maximale Anzahl paralleler Aufträge&quot;erhöhen, um einen umfangreichen Dateiupload auf Dynamic Media angemessen zu unterstützen. Der genaue Wert hängt von der Hardwarekapazität ab. In bestimmten Szenarien - d. h. einer ersten Migration oder einem einmaligen Massen-Upload - können Sie einen großen Wert verwenden. Beachten Sie jedoch, dass die Verwendung eines hohen Werts (z. B. die zweifache Anzahl der Kerne) negative Auswirkungen auf andere gleichzeitige Aktivitäten haben kann. Daher sollten Sie den Wert auf Basis Ihres jeweiligen Anwendungsfalls testen und anpassen.
+   Sie können Maximale Anzahl an parallelen Aufträgen erhöhen, um das Hochladen von Dateien zu Dynamic Media angemessen zu unterstützen. Der genaue Wert hängt von der Hardwarekapazität ab. In bestimmten Szenarien – z. B. bei einer ersten Migration oder einem einmaligen Massen-Upload – können Sie einen großen Wert verwenden. Beachten Sie jedoch, dass die Verwendung eines großen Werts (z. B. die doppelte Anzahl an Kernen) negative Auswirkungen auf andere gleichzeitige Aktivitäten haben kann. Daher sollten Sie den Wert basierend auf Ihrem jeweiligen Anwendungsfalls testen und anpassen.
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
@@ -605,7 +605,7 @@ Wenn Sie Dynamic Media für Bildbearbeitung und/oder Video verwenden, können Si
    <td>Beginn mit <strong>video/</strong></td>
    <td>Das vordefinierte "filter-video" wird:
     <ul>
-     <li>Ausschließen von der Replizierung der ursprünglichen Video- und statischen Miniaturdarstellungen. <br /> <br /> </li>
+     <li>Von der Replikation ausschließen Sie die ursprünglichen Video- und statischen Miniaturdarstellungen. <br /> <br /> </li>
     </ul> </td>
   </tr>
  </tbody>
