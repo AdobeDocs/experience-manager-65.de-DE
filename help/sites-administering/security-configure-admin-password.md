@@ -20,7 +20,7 @@ ht-degree: 87%
 
 # Konfigurieren des Administratorkennworts bei der Installation{#configure-the-admin-password-on-installation}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Ab Version 6.3 kann bei der Installation einer neuen AEM-Instanz das Administratorkennwort über die Befehlszeile festgelegt werden.
 
