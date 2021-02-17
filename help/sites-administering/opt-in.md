@@ -202,9 +202,9 @@ Es hängt von Folgendem ab, welche Parameter Sie senden müssen:
    * analytics.username= `me`
    * analytics.secret= `secret`
    * analytics.reportsuite= `we-retail`
-   * zielgruppe.clientcode= `mycompany`
-   * zielgruppe.email= `me@adobe.com`
-   * zielgruppe.password= `password`
+   * Zielgruppe.clientcode= `mycompany`
+   * Zielgruppe.email= `me@adobe.com`
+   * Zielgruppe.password= `password`
 
    In diesem Fall würde die Curl-Anforderung, mit der die Analytics- und Target-Konfiguration erstellt und an die Seite „we-retail“ angefügt wird, wie folgt lauten:
 
