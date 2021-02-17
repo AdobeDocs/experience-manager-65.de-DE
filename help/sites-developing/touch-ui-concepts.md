@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
 workflow-type: tm+mt
 source-wordcount: '2197'
-ht-degree: 89%
+ht-degree: 91%
 
 ---
 
@@ -201,7 +201,7 @@ Die Unterschiede zwischen der Granite-Benutzeroberfläche und ExtJS (für die kl
 
 ### Granite-Benutzeroberflächen-Foundation-Komponenten {#granite-ui-foundation-components}
 
-Mit den [Granite-Benutzeroberflächen-Foundation-Komponenten](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) werden die grundlegenden Bausteine bereitgestellt, die für die Erstellung einer Benutzeroberfläche benötigt werden. Dies sind beispielsweise:
+Mit den [Granite-Benutzeroberflächen-Foundation-Komponenten](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) werden die grundlegenden Bausteine bereitgestellt, die für die Erstellung einer Benutzeroberfläche benötigt werden. Dies sind beispielsweise:
 
 * Schaltfläche
 * Hyperlink
