@@ -183,7 +183,7 @@ Dynamic Media enthält eine Dynamic Media-3D-Medien-Komponente, die Sie in AEM 
 * [Zuweisen eines 3D-Assets zur 3D-Medien-Komponente](#assigning-a-three-d-asset-to-the-component)
 
 
-## Hinzufügen der 3D-Medien-Komponente zur Seitenvorlage{#adding-three-d-media-component-to-page-template}
+## Hinzufügen der 3D-Medien-Komponente zur Seitenvorlage {#adding-three-d-media-component-to-page-template}
 
 1. Öffnen Sie **[!UICONTROL Tools > Allgemein > Vorlagen.]**
 1. Navigieren Sie zu der Seitenvorlage, in der Sie die 3D-Komponente aktivieren möchten, und wählen Sie sie aus.
