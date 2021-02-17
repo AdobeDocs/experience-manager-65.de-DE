@@ -138,7 +138,7 @@ Die Communities-Eigenschaften steuern, wie die Übersetzung von benutzergenerier
 |---|---|
 | Übersetzungsanbieter | Wählen Sie den Übersetzungsanbieter aus, um die Übersetzung auszuführen. Die Anbieter, für die Cloudkonfigurationen erstellt wurden, werden in der Liste angezeigt. |
 | Inhaltskategorie | Eine Kategorie, die den zu übersetzenden Inhalt beschreibt. Die Kategorie kann beeinflussen, welche Terminologie und welche Formulierungen bei der Übersetzung von Inhalten verwendet werden. |
-| Auswählen eines Gebietsschemas, das als globaler Share Store verwendet werden soll | (Optional) Durch Auswahl eines Gebietsschemas zum Speichern von UGC werden Beiträge aus allen Sprachkopien in einer globalen Konversation angezeigt. Standardmäßig wählen Sie das Gebietsschema für die [Basissprache](/help/communities/sites-console.md#translation) für die Website. Wenn Sie &quot;Kein gemeinsamer Store&quot;wählen, wird die globale Übersetzung deaktiviert. Standardmäßig ist die globale Übersetzung deaktiviert. |
+| Auswählen eines Gebietsschemas, das als globaler Share Store verwendet werden soll | (Optional) Wenn Sie ein Gebietsschema zum Speichern von UGC auswählen, werden Beiträge aus allen Sprachkopien in einer globalen Konversation angezeigt. Standardmäßig wählen Sie das Gebietsschema für die [Basissprache](/help/communities/sites-console.md#translation) für die Website. Wenn Sie &quot;Kein gemeinsamer Store&quot;wählen, wird die globale Übersetzung deaktiviert. Standardmäßig ist die globale Übersetzung deaktiviert. |
 
 ### Assets-Konfigurationseigenschaften {#assets-configuration-properties}
 
