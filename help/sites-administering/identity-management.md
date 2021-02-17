@@ -86,7 +86,7 @@ Benutzer können sich beispielsweise entweder anmelden oder mithilfe der Option 
 
 Da ein Anmeldemechanismus vorhanden ist, ist auch ein Abmeldemechanismus erforderlich. Dieser ist als Option **Abmelden** in Geometrixx verfügbar.
 
-## Anzeigen und Aktualisieren eines Profils  {#viewing-and-updating-a-profile}
+## Anzeigen und Aktualisieren eines Profils {#viewing-and-updating-a-profile}
 
 Je nach Ihrem Registrierungsformular kann der Benutzer die registrierten Informationen in seinem Profil haben. Sie sollten in der Lage sein, diese Informationen zu einem späteren Zeitpunkt anzuzeigen und/oder zu aktualisieren. Dies kann mit einem ähnlichen Formular erfolgen. zum Beispiel in Geometrixx:
 
