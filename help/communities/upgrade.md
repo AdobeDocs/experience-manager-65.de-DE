@@ -74,7 +74,7 @@ Für alle AEM 6.3 Autoren- und Veröffentlichungsinstanzen:
 
 ### Lokale Datenspeicherung {#on-premise-storage}
 
-Wenn die aktualisierte Site keine Cloud-Datenspeicherung verwendet hat, müssen alle bereits vorhandenen UGC entsprechend der neuen Struktur konvertiert werden, die in AEM 6.1 Communities eingeführt wurde, um den gemeinsamen Speicher zu unterstützen.
+Wenn die aktualisierte Site keine Cloud-Datenspeicherung verwendet hat, müssen alle bereits vorhandenen UGC so konvertiert werden, dass sie der neuen Struktur entsprechen, die in AEM 6.1 Communities zur Unterstützung des gemeinsamen Speichers eingeführt wurde.
 
 Zu diesem Zweck ist ein Open Source-Migrationswerkzeug auf GitHub verfügbar:
 [AEM Communities UGC-Migrationswerkzeug](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
