@@ -210,7 +210,7 @@ Damit diese URLs korrekt funktionieren, ersetzen Sie `<`*PORT* `>` durch die Ans
 >
 >Wenn Sie mithilfe einer benutzerdefinierten anderen Webanwendung als Forms Benutzern den Zugriff auf die Aufgaben ermöglichen, müssen Sie stattdessen ein URL-Format verwenden, das dem der benutzerdefinierten Anwendung entspricht.
 
-### Variablenauswahl  {#variable-picker}
+### Variablenauswahl {#variable-picker}
 
 Die Liste „Variablenauswahl“ bietet nützliche Variablen, die in die Felder „Betreff“ und „Benachrichtigungsvorlage“ gezogen und dort abgelegt werden können. Wenn Sie eine Variable in den Feldern &quot;Betreff&quot;oder &quot;Benachrichtigungsvorlage&quot;ablegen, wird sie zum tatsächlichen Namen der Variablen für den Arbeitsablauf für Formulare geändert, wobei zwei @-Symbole auf beiden Seiten vorhanden sind, z. B. `@@taskid@@`.
 
