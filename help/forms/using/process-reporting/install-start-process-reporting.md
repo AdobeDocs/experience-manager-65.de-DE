@@ -30,7 +30,7 @@ In diesem Artikel werden die Schritte beschrieben, mit denen die Veröffentlichu
 
 Wenn Sie derzeit Forms Workflow verwenden, kann die AEM Forms-Datenbank möglicherweise eine große Datenmenge enthalten
 
-Die Process Berichte Publishing Services veröffentlichen alle derzeit in der Datenbank verfügbaren AEM Forms-Daten. Dies bedeutet, dass alle Daten, die in der Datenbank vorhanden sind und für die Sie keine Berichte und Abfragen ausführen möchten, auch dann im Repository veröffentlicht werden, wenn dies für den Berichte nicht erforderlich ist. Es wird empfohlen, diese Daten zu bereinigen, bevor Sie die Dienste ausführen, um die Daten im Process Berichte-Repository zu veröffentlichen. Dadurch wird die Leistung sowohl des Herausgeberdiensts als auch des Diensts, mit dem die Daten für den Berichte Abfrage werden, verbessert.
+Die Process Berichte Publishing Services veröffentlichen alle derzeit in der Datenbank verfügbaren AEM Forms-Daten. Dies bedeutet, dass alle Daten, die in der Datenbank vorhanden sind und für die Sie keine Berichte und Abfragen ausführen möchten, auch dann im Repository veröffentlicht werden, wenn dies für den Berichte nicht erforderlich ist. Es wird empfohlen, diese Daten zu bereinigen, bevor Sie die Dienste ausführen, um die Daten im Process Berichte-Repository zu veröffentlichen. Dadurch wird die Leistung sowohl des Herausgeberdiensts als auch des Dienstes, der die Daten für den Berichte Abfrage, verbessert.
 
 Weitere Informationen zum Bereinigen von AEM Forms-Prozessdaten finden Sie unter [Bereinigen von Prozessdaten](https://help.adobe.com/en_US/livecycle/11.0/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7cb2.2.html).
 
