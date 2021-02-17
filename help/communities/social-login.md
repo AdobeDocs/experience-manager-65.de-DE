@@ -130,7 +130,7 @@ Die Instanz [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-
    >Gruppen können jederzeit hinzugefügt oder entfernt werden. Die Mitgliedschaft bestehender Benutzer wird jedoch nicht beeinträchtigt. Die automatische Mitgliedschaft gilt nur für neue Benutzer, die nach dieser Feldaktualisierung erstellt werden. Wählen Sie für Sites, bei denen anonyme Benutzer deaktiviert sind, Benutzer zu der entsprechenden Community-Mitglieder-Gruppe für diese geschlossene Community-Site hinzuzufügen.
 
    * Wählen Sie **[!UICONTROL SAVE]**.
-   * **[!UICONTROL Veröffentlichung]**.
+   * **[!UICONTROL Veröffentlichen]**.
 
 
 
@@ -352,7 +352,7 @@ Die nächsten Schritte sind für Facebook und Twitter gleich:
 
 Nachdem ein Cloud-Dienst konfiguriert wurde, kann er für die entsprechende Social-Anmeldeeinstellung für eine Community-Site aktiviert werden. Verwenden Sie dazu das Unterfeld [Benutzerverwaltung](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) Einstellungen während der Community-Site [Erstellung](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) oder [Verwaltung](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties).
 
-1. Wählen Sie den Kontext Ihrer Site-Konfiguration aus, in dem Sie Ihre Social-Anmeldekonfigurationen gespeichert haben.
+1. Wählen Sie den Kontext für die Site-Konfiguration aus, in dem Sie Ihre Social-Anmeldekonfigurationen gespeichert haben.
 
 1. Legen Sie auf der Registerkarte Allgemein die Cloud-Konfigurationen fest.
 
