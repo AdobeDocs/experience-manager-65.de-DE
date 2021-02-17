@@ -52,7 +52,7 @@ ht-degree: 80%
    + Query Builder{#query-builder}
       + [Implementieren eines benutzerdefinierten Prädikat-Auswerters für den Query Builder](implementing-custom-predicate-evaluator.md)
       + [Query Builder-Eigenschaftsverweis](querybuilder-predicate-reference.md)
-      + [Query-Builder-API](querybuilder-api.md)
+      + [Query Builder-API](querybuilder-api.md)
    + Tagging{#tagging}
       + [Tagging](tags.md)
       + [AEM-Tagging-Framework](framework.md)
@@ -73,7 +73,7 @@ ht-degree: 80%
       + [Entwicklung (generisch)](generic.md)
       + [Entwicklung mit SAP Commerce Cloud](sap-commerce-cloud.md)
 + Komponenten{#components}
-   + [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html)
+   + [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
    + [Stilsystem](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html)
    + [Komponentenübersicht](components.md)
    + [AEM-Komponenten – Grundlagen](components-basics.md)
@@ -114,9 +114,9 @@ ht-degree: 80%
       + [SPA-Blueprint](spa-blueprint.md)
       + [SPA-Seitenkomponente](spa-page-component.md)
       + [Zuordnung dynamischer Modelle zu Komponenten für SPAs](spa-dynamic-model-to-component-mapping.md)
-      + [SPA-Modell-Routing](spa-routing.md)
+      + [SPA-Modell-Routing ](spa-routing.md)
       + [SPA- und Adobe Experience Platform Launch-Integration](spa-launch.md)
-      + [Single Page Applications (SPAs) und Server-seitiges Rendering](spa-ssr.md)
+      + [Single Page Applications (SPAs) und Server-seitiges Rendering ](spa-ssr.md)
       + [SPA-Referenzmaterial](spa-reference-materials.md)
    + [HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
    + [Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments.html)
