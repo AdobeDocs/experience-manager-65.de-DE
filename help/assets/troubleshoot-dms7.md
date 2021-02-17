@@ -175,7 +175,7 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
    <td>
     <ol>
      <li>Überprüfen Sie Ihre AEM mit <code>-r dynamicmedia_scene7</code></li>
-     <li>Prüfen Sie, ob die Dynamic Media-Konfiguration unter Cloud-Services ordnungsgemäß eingerichtet ist.</li>
+     <li>Prüfen Sie, ob die Dynamic Media-Konfiguration unter Cloud Services ordnungsgemäß eingerichtet ist.</li>
      <li>Überprüfen Sie, ob der Ordner ein Videoprofil hat. Überprüfen Sie außerdem das Videoprofil.</li>
     </ol> </td>
   </tr>
