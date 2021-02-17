@@ -106,7 +106,7 @@ Wenn Sie diese Option verwenden, werden die zu übersetzenden Assets in den Spra
 
 1. Navigieren Sie zur Benutzeroberfläche [!DNL Assets] und öffnen Sie die Seite [!UICONTROL Eigenschaften] für jedes der übersetzten Assets, um die übersetzten Metadaten Ansicht.
 
-   ![ansicht der übersetzten Metadaten auf der Seite &quot;Asset-Eigenschaften&quot;](assets/translated-metadata-asset-properties.png)
+   ![Ansicht der übersetzten Metadaten auf der Seite &quot;Asset-Eigenschaften&quot;](assets/translated-metadata-asset-properties.png)
 
    *Abbildung: Metadaten werden auf der Seite mit den Asset-Eigenschaften übersetzt.*
 
