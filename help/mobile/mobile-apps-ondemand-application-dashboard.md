@@ -84,7 +84,7 @@ Mit der Kachel **Banner verwalten** können Sie den Inhalt für ein Banner verwa
 * **TITEL**: Name des Banners
 * **GEÄNDERT**: zuletzt geändert in AEM
 * **HOCHGELADEN**: zuletzt von AEM hochgeladen
-* **VERÖFFENTLICHT**: aem zuletzt veröffentlichte Anforderungsformular
+* **VERÖFFENTLICHT**: AEM zuletzt veröffentlichte Anforderungsformular
 * **QUELLE**: source (AEM lokal oder remote von Mobile On Demand)
 
 Die folgende Abbildung zeigt die Kachel **Banner verwalten** im AEM Mobile Application Dashboard:
@@ -103,7 +103,7 @@ Mit der Kachel **Artikel verwalten** können Sie den Inhalt für einen Artikel v
 * **TITEL**: Name des Artikels
 * **GEÄNDERT**: zuletzt geändert in AEM
 * **HOCHGELADEN**: zuletzt von AEM hochgeladen
-* **VERÖFFENTLICHT**: aem zuletzt veröffentlichte Anforderungsformular
+* **VERÖFFENTLICHT**: AEM zuletzt veröffentlichte Anforderungsformular
 * **QUELLE**: source (AEM lokal oder remote von Mobile On-Demand)
 
 Die folgende Abbildung zeigt die Kachel **Artikel verwalten** im AEM Mobile Application Dashboard:
@@ -122,7 +122,7 @@ Mit der Kachel **Sammlungen verwalten** können Sie den Inhalt für eine Sammlun
 * **TITEL**: Name der Sammlung
 * **GEÄNDERT**: zuletzt geändert in AEM
 * **HOCHGELADEN**: zuletzt von AEM hochgeladen
-* **VERÖFFENTLICHT**: aem zuletzt veröffentlichte Anforderungsformular
+* **VERÖFFENTLICHT**: AEM zuletzt veröffentlichte Anforderungsformular
 * **QUELLE**: source (AEM lokal oder remote von Mobile On-Demand)
 
 Die folgende Abbildung zeigt die Kachel **Sammlungen verwalten** im AEM Mobile Application Dashboard:
