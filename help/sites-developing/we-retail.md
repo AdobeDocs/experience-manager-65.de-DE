@@ -40,7 +40,7 @@ Als standardmäßige AEM-Referenzimplementierung demonstriert We.Retail einige d
 | [HTML-Vorlagensprache](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html) | Alle Komponenten basieren auf HTL. |  |
 | [eCommerce-Funktionen](/help/sites-developing/ecommerce.md) | Umfassen einen Produktkatalog. |  |
 | [Communities-Sites](/help/communities/overview.md) | Besucher können an Community-Diskussionen teilnehmen, Blogs lesen und vieles mehr. |  |
-| [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html) | Alle Komponenten basieren auf den neuen Kernkomponenten und sind standardmäßig benutzerfreundlicher und konfigurierbarer. | [Jetzt testen!](/help/sites-developing/we-retail-core-components.md) |
+| [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) | Alle Komponenten basieren auf den neuen Kernkomponenten und sind standardmäßig benutzerfreundlicher und konfigurierbarer. | [Jetzt testen!](/help/sites-developing/we-retail-core-components.md) |
 | [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md) | Der Abschnitt „We.Retail Experiences“ veranschaulicht, wie sich über Inhalte mithilfe von Inhaltfragmenten wirkungsvoll wiederverwenden lassen. | [Jetzt testen!](/help/sites-developing/we-retail-content-fragments.md) |
 | [Experience Fragments](/help/sites-authoring/experience-fragments.md) | Ein Experience Fragment ist eine Gruppe aus einer oder mehreren Komponenten (einschließlich Inhalt und Layout), die innerhalb von Seiten referenziert werden können. | [Jetzt testen!](/help/sites-developing/we-retail-experience-fragments.md) |
 
@@ -107,7 +107,7 @@ We.Retail wurde als Open-Source-Projekt veröffentlicht und die neueste Version 
 
 CODE AUF GITHUB
 
-Den Code dieser Seite finden Sie auf GitHub
+Den Code dieser Seite finden Sie auf GitHub.
 
 * [Open aem-sample-we-trading project on GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/archive/master.zip) herunter.
