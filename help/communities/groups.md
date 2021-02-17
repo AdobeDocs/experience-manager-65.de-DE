@@ -101,7 +101,7 @@ Der Standardstamm ist die übergeordnete Site, der Stammordner kann jedoch an ei
    * Überprüfen Sie den Dublette-Namen, da er nach dem Erstellen der Gruppe nicht so leicht geändert werden kann.
    * Die Basis-URL wird unter dem `Community Group Name` angezeigt.
    * Für eine gültige URL hängen Sie &quot;.html&quot;an
-      *zum Beispiel*:  `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
+      *Beispiel*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
 * **Community-** Gruppenvorlage
 
