@@ -36,7 +36,7 @@ In der Autorenkonsole sind nach der Anmeldung mit Administratorrechten die `Comm
 
 >[!NOTE]
 >
->In der Umgebung zum Veröffentlichen zeigt eine [Community-Site](sites-console.md) ein `Administration`-Menüelement an, wenn das angemeldete Mitglied über entsprechende Berechtigungen verfügt.
+>In der Umgebung &quot;Veröffentlichen&quot;zeigt eine [Community-Site](sites-console.md) ein `Administration`-Menüelement an, wenn das angemeldete Mitglied über entsprechende Berechtigungen verfügt.
 
 ## Globales Navigationsfenster {#global-navigation-panel}
 
