@@ -390,8 +390,8 @@ In beiden Fällen können Sie die erwartete Anzahl von Transaktionen pro Sekunde
 |---|---|---|---|---|---|
 | Homepage Einzelbenutzer | Durchschnitt | 1 | 1 |  |  |
 |  | Spitze | 1 | 3 |  |  |
-| Homepage 100 Benutzer | Durchschnitt | 100 | 1 |  |  |
-|  | Spitze | 100 | 1 |  |
+| Homepage 100 Benutzer | Durchschnitt | 100 | 3 |  |  |
+|  | Spitze | 100 | 3 |  |
 
 #### Tests kombinierter Komponenten {#combined-component-tests}
 
@@ -399,11 +399,11 @@ Durch das Testen der kombinierten Komponenten erhalten Sie eine genauere Darstel
 
 | Szenario | Komponente | Nein. von Benutzern | Tx/s (erwartet) | Tx/s (getestet) | Beschreibung |
 |---|---|---|---|---|---|
-| Gemischter Durchschnitt | Homepage | 10 | 1 |  |  |
+| Gemischter Durchschnitt | Homepage | 10 | 3 |  |  |
 |  | Suchen | 10 | 1 |  |  |
 |  | Nachrichten | 10 | 2 |  |  |
-|  | Ereignisse | 10 | 1 |  |  |
-|  | Aktivierungen | 10 | 1 |  | Simulation des Autorenverhaltens. |
+|  | Ereignisse | 10 | 3 |  |  |
+|  | Aktivierungen | 10 | 3 |  | Simulation des Autorenverhaltens. |
 | Gemischter Spitzenwert | Homepage | 100 | 5 |  |  |
 |  | Suchen | 50 | 5 |  |  |
 |  | Nachrichten | 100 | 10 |  |  |
@@ -435,8 +435,8 @@ Bei der Planung dieser Tests sollten Sie bedenken, dass nicht alle Szenarien reg
 |---|---|---|---|---|---|
 | Überladung der Suchkomponente | Suche nach globalen Platzhaltern (Sternchen) | 10 | 1 |  | Nur &amp;ast;&amp;ast;&amp;ast; durchsucht werden. |
 |  | Wort anhalten | 20 | 2 |  | Suchen nach einem Stoppwort. |
-|  | Leere Zeichenfolge | 10 | 1 |  | Suchen nach einer leeren Zeichenfolge. |
-|  | Sonderzeichen | 10 | 1 |  | Suchen nach Sonderzeichen |
+|  | Leere Zeichenfolge | 10 | 3 |  | Suchen nach einer leeren Zeichenfolge. |
+|  | Sonderzeichen | 10 | 3 |  | Suchen nach Sonderzeichen |
 
 #### Belastungstests {#endurance-tests}
 
@@ -444,11 +444,11 @@ Gewisse Probleme treten erst auf, wenn das System über einen längeren Zeitraum
 
 | Szenario | Testtyp | Nein. von Benutzern | Tx/s (erwartet) | Tx/s (getestet) | Beschreibung |
 |---|---|---|---|---|---|
-| Dauerprüfung (72 Stunden) | Homepage | 10 | 1 |  |  |
+| Dauerprüfung (72 Stunden) | Homepage | 10 | 3 |  |  |
 |  | Suchen | 10 | 1 |  |  |
 |  | Nachrichten | 20 | 2 |  |  |
 |  | Ereignisse | 10 | 1 |  |  |
-|  | Aktivierungen | 1 | 1 |  | Simulation des Autorenverhaltens. |
+|  | Aktivierungen | 3 | 1 |  | Simulation des Autorenverhaltens. |
 
 ### Optimierung {#optimization}
 
