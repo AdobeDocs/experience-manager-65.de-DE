@@ -38,7 +38,7 @@ Weitere Informationen über die Arbeit mit Videokomponenten mit AEM finden Sie u
 
 >[!NOTE]
 >
->Wenn Dynamic Media Classic-Assets nicht korrekt angezeigt werden, stellen Sie sicher, dass das dynamische Medium [deaktiviert](config-dynamic.md#disabling-dynamic-media) ist, und aktualisieren Sie dann die Seite.
+>Wenn Dynamic Media Classic-Assets nicht richtig angezeigt werden, stellen Sie sicher, dass das dynamische Medium [deaktiviert](config-dynamic.md#disabling-dynamic-media) ist, und aktualisieren Sie dann die Seite.
 
 ## Manuelles Veröffentlichen in Dynamic Media Classic aus Assets {#manually-publishing-to-scene-from-assets}
 
