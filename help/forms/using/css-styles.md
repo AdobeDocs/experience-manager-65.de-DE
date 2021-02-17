@@ -81,7 +81,7 @@ Zusätzlich zu der type- und name-Klasse enthält die Feldkomponente noch eine w
    <td><strong>Name</strong></td>
   </tr>
   <tr>
-   <td>Seite</td>
+   <td>Seite </td>
    <td>page</td>
    <td>Benutzerdefinierter Name<br /> oder<br /> Seite&lt;Seitenzahl&gt; (Standard)</td>
   </tr>
