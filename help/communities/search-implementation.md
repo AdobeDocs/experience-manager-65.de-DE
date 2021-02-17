@@ -163,7 +163,7 @@ Solr ist ein Beispiel für eine Abfrage, die ein Schema verwendet.
 * Bei Typen mit mehreren Werten fügen Sie dem Suffix &quot;s&quot;hinzu, z. B.:
 
    * `viewDate_dt`: single date property
-   * `viewDates_dts`: liste der Eigenschaft &quot;date&quot;
+   * `viewDates_dts`: Liste der Eigenschaft &quot;date&quot;
 
 ## Filter {#filters}
 
@@ -179,7 +179,7 @@ Die Filtersyntax für AND- und OR-Logik wird wie folgt ausgedrückt (wird vor de
 
    * `filter = name eq 'Jackson'&filter=message eq 'testing'`
 
-Die Standardimplementierung der [Suchkomponente](search.md) verwendet diese Syntax wie in der URL, die die Seite &quot;Suchergebnisse&quot;im [Community-Komponenten-Handbuch](components-guide.md) öffnet. Um zu experimentieren, navigieren Sie zu [http://localhost:4503/content/community-components/en/search.html](http://localhost:4503/content/community-components/en/search.html).
+Die Standardimplementierung der [Suchkomponente](search.md) verwendet diese Syntax wie in der URL, die die Seite &quot;Suchergebnisse&quot;im Handbuch [Community-Komponenten](components-guide.md) öffnet. Um zu experimentieren, navigieren Sie zu [http://localhost:4503/content/community-components/en/search.html](http://localhost:4503/content/community-components/en/search.html).
 
 Filteroperatoren sind:
 
