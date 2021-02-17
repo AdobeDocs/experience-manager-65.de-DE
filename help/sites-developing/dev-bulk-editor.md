@@ -1,7 +1,7 @@
 ---
 title: Entwickeln des Bulk Editors
 seo-title: Entwickeln des Bulk Editors
-description: Tagging ermöglicht die Kategorisierung und Organisation von Inhalten.
+description: Tagging ermöglicht die Kategorisierung und Organisation von Inhalten
 seo-description: Tagging ermöglicht die Kategorisierung und Organisation von Inhalten.
 uuid: 3cd04c52-5bdb-47f6-9fa3-d7a4937e8e20
 contentOwner: Guillaume Carlino
@@ -58,7 +58,7 @@ Nachstehend finden Sie eine Liste der Abfrageparameter für den Bulk Editor:
   <tr>
    <td> queryParams / qp<br /> </td>
    <td> Zeichenfolge</td>
-   <td> abfrage suchen</td>
+   <td> Abfrage suchen</td>
   </tr>
   <tr>
    <td> contentMode / cm<br /> </td>
