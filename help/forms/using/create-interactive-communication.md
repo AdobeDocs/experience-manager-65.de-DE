@@ -65,10 +65,10 @@ Die folgenden Voraussetzungen sind Voraussetzung für die Erstellung einer inter
    * **[!UICONTROL Design]** und  **[!UICONTROL Design]** auswählen: Navigieren Sie zu dem Thema und wählen Sie es aus, um den Web-Kanal der interaktiven Kommunikation zu gestalten. Weitere Informationen finden Sie unter [Designs in AEM Forms](/help/forms/using/themes.md).
 
    * **[!UICONTROL Verwenden Sie &quot;Drucken wie Übergeordnet&quot;für Web Kanal]**: Wählen Sie diese Option, um den Web-Kanal synchron mit dem print-Kanal zu erstellen. Die Verwendung des Druckkanals als Master für den Webkanal stellt sicher, dass der Inhalt und die Datenbindung des Webkanals aus dem Druckkanal abgeleitet werden und dass die im Druckkanal vorgenommenen Änderungen im Webkanal widergespiegelt werden können, wenn Sie auf „Synchronisieren“ tippen. Die Autoren dürfen jedoch ggf. die Vererbung für bestimmte Komponenten im Webkanal aufheben. Weitere Informationen finden Sie unter [Synchronisieren des Webkanals mit dem Druckkanal](../../forms/using/create-interactive-communication.md#synchronize).
-Wenn Sie die Option **[!UICONTROL Drucken als Übergeordnet für Web Kanal]** auswählen, können Sie einen der folgenden Modi zum Generieren von Web-Kanal auswählen:
+Wenn Sie die Option **[!UICONTROL &quot;Drucken als Übergeordnet für Web Kanal]** verwenden&quot;auswählen, können Sie einen der folgenden Modi zum Generieren des Web-Kanals auswählen:
 
       * **[!UICONTROL Automatisches Layout]**: Wählen Sie diesen Modus aus, um automatisch Platzhalter, Inhalte und Datenbindung für Web Kanal aus dem Print Kanal zu generieren.
-      * **[!UICONTROL Manuelles Organisieren]**: Wählen Sie diesen Modus aus, um dem Web-Kanal unter Verwendung des Übergeordnet verfügbaren Kanals auf der Registerkarte &quot; **[!UICONTROL Data]** Sourcestab&quot;gedruckte Elemente manuell auszuwählen und hinzuzufügen. Weitere Informationen finden Sie unter [Wählen Sie Kanal drucken, um Web-Kanal-Inhalte zu erstellen](#selectprintchannelelements).
+      * **[!UICONTROL Manuelles Organisieren]**: Wählen Sie diesen Modus aus, um dem Web-Kanal unter Verwendung des Übergeordnet verfügbaren Kanals auf der Registerkarte &quot; **[!UICONTROL Data]** Sourcestab&quot;die Elemente &quot;Drucken&quot;manuell auszuwählen und hinzuzufügen. Weitere Informationen finden Sie unter [Wählen Sie Kanal drucken, um Web-Kanal-Inhalte zu erstellen](#selectprintchannelelements).
 
    Weitere Informationen zu Print Kanal und Web Kanal finden Sie unter [Kanal drucken und Web Kanal](/help/forms/using/web-channel-print-channel.md).
 
@@ -521,7 +521,7 @@ Die Autoren dürfen jedoch ggf. die Vererbung für Komponenten im Webkanal aufhe
 
 ### Autom. Synchronisierung {#autosync}
 
-Wenn Sie die Option **[!UICONTROL Drucken als Übergeordnet für Web Kanal]** auswählen, können Sie einen der folgenden Modi zum Generieren von Web-Kanal auswählen:
+Wenn Sie die Option **[!UICONTROL &quot;Drucken als Übergeordnet für Web Kanal]** verwenden&quot;auswählen, können Sie einen der folgenden Modi zum Generieren des Web-Kanals auswählen:
 
 * **[!UICONTROL Automatisches Layout]**: Wählen Sie diesen Modus aus, um automatisch Platzhalter, Inhalte und Datenbindung für Web Kanal aus dem Print Kanal zu generieren.
 * **[!UICONTROL Manuelles Organisieren]**: Wählen Sie diesen Modus aus, um unter Verwendung des Übergeordnet verfügbaren Inhalts auf der Registerkarte &quot;Datenquellen&quot;die Elemente &quot;Kanal drucken&quot;manuell auszuwählen und dem Web-Kanal hinzuzufügen. Weitere Informationen finden Sie unter [Wählen Sie Kanal drucken, um Web-Kanal-Inhalte zu erstellen](#selectprintchannelelements).
