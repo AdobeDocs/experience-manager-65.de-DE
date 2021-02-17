@@ -27,7 +27,7 @@ ht-degree: 88%
 >
 >Die meisten Foundation-Komponenten sind jetzt mit AEM 6.5 veraltet. Weitere Informationen finden Sie in den [Versionshinweisen](/help/release-notes/deprecated-removed-features.md).
 >
->Adobe empfiehlt die Nutzung der modern und erweiterbaren [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html) in AEM-Projekten. Diese sind Teil von [We.Retail-Beispielinhalt](/help/sites-developing/we-retail.md) und können auch [separat installiert und von Ihrem Administrator für die Entwicklung](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/get-started/using.html) verwendet werden.
+>Adobe empfiehlt die Nutzung der modern und erweiterbaren [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) in AEM-Projekten. Diese sind Teil von [We.Retail-Beispielinhalt](/help/sites-developing/we-retail.md) und können auch [separat installiert und von Ihrem Administrator für die Entwicklung](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/get-started/using.html) verwendet werden.
 >
 >Sie können die [AEM Tools Suite modernisieren](https://opensource.adobe.com/aem-modernize-tools/) verwenden, um Ihre auf Foundation-Komponenten basierende Site für die Verwendung der Kernkomponenten umzugestalten.
 
@@ -469,7 +469,7 @@ Diese Komponente liefert ein Rasterabsatzsystem, mit dem Sie Komponenten in eine
 
 >[!NOTE]
 >
->Diese Komponente ist mit [HTML Template Language (HTL)](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html) implementiert.
+>Diese Komponente ist mit [HTML Template Language (HTL)](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html) implementiert.
 
 ### Liste {#list}
 
