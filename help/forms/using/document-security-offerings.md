@@ -45,7 +45,7 @@ Der Server ist im AEM Forms Document Security-Add-On-Angebot enthalten. Sie kön
 
 AEM Forms Document Security bietet verschiedene Werkzeuge, um Sicherheitsrichtlinien anzuwenden. Sie können ein Tool gemäß Ihren Bedürfnissen und Spezifikationen auswählen.
 
-![dokument-security-offerings](assets/document-security-offerings.png)
+![Dokument-security-offerings](assets/document-security-offerings.png)
 
 Sie können Document Security SDK, Adobe Acrobat, Document Security Extension für Microsoft Office oder Portable Protection Library verwendne, um die Sicherheitsrichtlinien anzuwenden und nachzuverfolgen:
 
