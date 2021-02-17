@@ -29,7 +29,7 @@ Räumliches Audio wird derzeit nicht unterstützt. Falls Audio in Stereo gemisch
 
 Informationen hierzu finden Sie in [Verwalten von Viewer-Vorgaben](/help/assets/managing-viewer-presets.md).
 
-## 360-Grad-Video in Aktion   {#video-in-action}
+## 360-Grad-Video in Aktion  {#video-in-action}
 
 Tippen Sie auf [Space Station 360](http://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS), um ein Browser-Fenster zu öffnen und ein 360-Grad-Video anzusehen. Ziehen Sie während der Videowiedergabe den Mauszeiger an eine neue Position, um den Anzeigewinkel zu ändern.
 
@@ -53,7 +53,7 @@ Beim Hochladen in AEM werden 360-Grad-Video-Assets wie normale Video-Assets auf 
 1. Erstellen Sie einen Ordner für Ihr 360-Grad-Video-Asset.
 1. [Wenden Sie ein adaptives Videoprofil auf den Ordner an.](/help/assets/video-profiles.md#applying-a-video-profile-to-folders)
 
-   Das Rendern von 360-Grad-Videos ist mit höheren Anforderungen an die Auflösung des Quellvideos sowie der kodierten Ausgabeformate verbunden als Standard-Videoinhalte.
+   Das Rendern von 360-Grad-Videos ist mit höheren Anforderungen an die Auflösung des Quellvideos sowie der kodierten Ausgabedarstellungen verbunden als Standard-Videoinhalte.
 
    Sie können das vordefinierte adaptive Videoprofil von Dynamic Media verwenden. Mit diesem erzielen Sie jedoch eine etwas schlechtere Qualität bei 360-Grad-Videos als bei normalen Videos, die mit den gleichen Einstellungen kodiert und mit einem normalen Video-Viewer gerendert wurden. Wenn Sie hochwertige 360-Grad-Videos benötigen, gehen Sie wie folgt vor:
 
@@ -61,7 +61,7 @@ Beim Hochladen in AEM werden 360-Grad-Video-Assets wie normale Video-Assets auf 
 
       * 1080p – 1920 x 1080 (Full HD- oder FHD-Auflösung) oder
       * 2160p – 3840 x 2160 (4K-, UHD- oder Ultra HD-Auflösung). Diese besonders hohe Auflösung ist häufig auf Premium-Fernsehgeräten und Computermonitoren verfügbar. Die 2160p-Auflösung wird häufig als „4K“ bezeichnet, da die Breite fast 4000 Pixel beträgt. Das heißt, sie bietet viermal so viele Pixel wie 1080p.
-   * [Erstellen Sie ein benutzerdefiniertes adaptives Videoprofil](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) mit hochwertigeren Ausgabeformaten. Angenommen, Sie möchten ein adaptives Videoprofil erstellen, das diese drei Einstellungen enthält:
+   * [Erstellen Sie ein benutzerdefiniertes adaptives Videoprofil](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) mit hochwertigeren Ausgabedarstellungen. Angenommen, Sie möchten ein adaptives Videoprofil erstellen, das diese drei Einstellungen enthält:
 
       * width=auto; height=720; bitrate=2500 kbps
       * width=auto; height=1080; bitrate=5000 kbps
