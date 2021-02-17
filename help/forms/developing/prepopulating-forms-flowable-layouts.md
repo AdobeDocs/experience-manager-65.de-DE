@@ -333,7 +333,7 @@ So füllen Sie ein Formular mit einem flexiblen Layout mithilfe der Forms API (W
 
       ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
 
-   * Erstellen Sie das Header-Element der XML-Datenquelle, indem Sie die `Document`-Methode des Objekts `createElement` aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die `createElement`-Methode. Wandeln Sie den Rückgabewert in `Element` um. Hängen Sie anschließend das Header-Element an das Stammelement an, indem Sie die `appendChild`-Methode des Objekts aufrufen und das header-Elementobjekt als Argument übergeben. `root` Die XML-Elemente, die an das Header-Element angehängt werden, entsprechen dem statischen Teil des Formulars. Die folgenden Codezeilen zeigen diese Anwendungslogik:
+   * Erstellen Sie das Header-Element der XML-Datenquelle, indem Sie die `Document`-Objektmethode `createElement` aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die `createElement`-Methode. Wandeln Sie den Rückgabewert in `Element` um. Hängen Sie anschließend das Header-Element an das Stammelement an, indem Sie die `appendChild`-Methode des Objekts aufrufen und das header-Elementobjekt als Argument übergeben. `root` Die XML-Elemente, die an das Header-Element angehängt werden, entsprechen dem statischen Teil des Formulars. Die folgenden Codezeilen zeigen diese Anwendungslogik:
 
       ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
