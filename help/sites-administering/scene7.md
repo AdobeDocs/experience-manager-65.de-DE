@@ -246,7 +246,7 @@ Die Synchronisierung zwischen AEM Assets und Dynamic Media Classic hat derzeit f
   </tr>
   <tr>
    <td>Ein angegebener Synchronisierungsordner (Zielgruppe)</td>
-   <td>Für Dynamic Media Classic-Uploads ist in AEM nur ein bestimmter Ordner pro Firma verfügbar. Sie können mehrere Konfigurationen erstellen, wenn Sie Zugriff auf mehr als ein Firma-Konto in Dynamic Media Classic benötigen.</td>
+   <td>Für Dynamic Media Classic-Uploads kann in AEM nur ein bestimmter Ordner pro Firma festgelegt werden. Sie können mehrere Konfigurationen erstellen, wenn Sie Zugriff auf mehr als ein Firma-Konto in Dynamic Media Classic benötigen.</td>
   </tr>
   <tr>
    <td>Ordnerstruktur</td>
@@ -421,7 +421,7 @@ Wenn Sie jedoch nicht möchten, dass Assets, die zur automatischen Veröffentlic
 
 Bevor Sie Assets in Dynamic Media Classic verschieben können, ohne sie zu veröffentlichen, müssen Sie Folgendes einrichten:
 
-1. [Verwenden Sie die Admin Console, um einen Supportfall zu erstellen.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) In Ihrem Support-Fall fordern Sie die Aktivierung der sicheren Vorschau für Ihr Dynamic Media Classic-Konto an.
+1. [Verwenden Sie die Admin Console, um einen Support-Fall zu erstellen.](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) In Ihrem Support-Fall fordern Sie die Aktivierung der sicheren Vorschau für Ihr Dynamic Media Classic-Konto an.
 1. Folgen Sie den Anweisungen zum Einrichten der sicheren Vorschau für Ihr Dynamic Media Classic-Konto.](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)[
 
 Dies sind dieselben Schritte, die Sie ausführen würden, um eine sichere Testeinrichtung in Dynamic Media Classic zu erstellen.
@@ -556,7 +556,7 @@ Insbesondere konfigurieren Sie hier das vom MIME-Typ akzeptierte Dateiformat im 
 
 1. Tippen Sie in der rechten unteren Ecke des Konfigurationsfensters auf **[!UICONTROL Speichern.]**
 1. Kehren Sie über die linke Leiste zu AEM zurück und tippen Sie auf „CRXDE Lite“.
-1. Navigieren Sie auf der Seite &quot;CRXDE Lite&quot;in der linken Leiste zu `/etc/cloudservices/scene7/<environment>` (ersetzen Sie `<environment>` durch den tatsächlichen Namen).
+1. Navigieren Sie auf der Seite &quot;CRXDE Lite&quot;in der linken Leiste zu `/etc/cloudservices/scene7/<environment>` (ersetzen Sie `<environment>` für den tatsächlichen Namen).
 1. Erweitern Sie `<environment>` (ersetzen Sie `<environment>` für den tatsächlichen Namen), um den Knoten `mimeTypes` anzuzeigen.
 1. Tippen Sie auf den soeben hinzugefügten mimeType.
 
@@ -565,7 +565,7 @@ Insbesondere konfigurieren Sie hier das vom MIME-Typ akzeptierte Dateiformat im 
 1. Tippen Sie auf der rechten Seite der CRXDE Lite auf die Registerkarte **[!UICONTROL Properties]**.
 1. Geben Sie im Wertefeld **[!UICONTROL jobParam]** einen Dynamic Media Classic-Upload-Auftragsparameter an.
 
-   Beispiel, `psprocess="rasterize"&psresolution=120` .
+   Beispiel: `psprocess="rasterize"&psresolution=120`.
 
    Weitere Upload-Auftragsparameter, die Sie verwenden können, finden Sie unter [Adobe Dynamic Media Classic Image Production System API](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html).
 
