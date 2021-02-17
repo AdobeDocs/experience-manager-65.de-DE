@@ -799,7 +799,7 @@ Es werden unterschiedliche Daten gespeichert, beispielsweise:
 
 * **Rechnungsadresse**
 
-   Anschrift, an die die Rechnung zu senden ist.
+   Die Adresse, an die die Rechnung zu senden ist.
 
 * **Zahlungs-Token**
 
