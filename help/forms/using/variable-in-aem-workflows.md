@@ -58,7 +58,7 @@ Führen Sie die folgenden Schritte aus, um eine Variable zu erstellen:
 1. Geben Sie im Dialogfeld Hinzufügen Variable den Namen an und wählen Sie den Variablentyp aus.
 1. Wählen Sie den Datentyp aus der Dropdown-Liste **[!UICONTROL Typ]** und geben Sie die folgenden Werte an:
 
-   * Primitive-Datentyp - Geben Sie einen optionalen Standardwert für die Variable an.
+   * Primitive-Datentyp: Geben Sie einen optionalen Standardwert für die Variable an.
    * JSON oder XML - Geben Sie einen optionalen JSON- oder XML-Schema-Pfad an. Das Schema überprüft den Pfad, während die in diesem Schema verfügbaren Eigenschaften einer anderen Variablen zugeordnet und gespeichert werden.
    * Formulardatenmodell: Geben Sie einen Pfad für ein Formulardatenmodell an.
    * ArrayList - Geben Sie einen Untertyp für die Sammlung an.
