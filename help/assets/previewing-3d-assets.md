@@ -1,6 +1,6 @@
 ---
 title: Vorschau von 3D-Assets
-description: Erfahren Sie, wie Sie eine Vorschau von 3D-Assets anzeigen können
+description: 'Erfahren Sie, wie Sie eine Vorschau von 3D-Assets anzeigen können '
 contentOwner: Rick Brough
 docset: aem65
 translation-type: tm+mt
@@ -42,7 +42,7 @@ Die interaktive 3D-Vorschau unterstützt die folgenden Dateiformate:
     material_0_baseColor.jpeg
     material_0_normal.jpeg
 
-## Leistungsaspekte bei der Vorschau von 3D-Assets in AEM{#performance-3d-previewing-assets}
+## Leistungsaspekte bei der Vorschau von 3D-Assets in AEM {#performance-3d-previewing-assets}
 
 Die Zeit, die zum Öffnen eines 3D-Assets auf der Seite mit den Asset-Details benötigt wird, hängt von verschiedenen Faktoren ab, z. B. Bandbreite, Bildkomplexität und Latenzen zum Server.
 
