@@ -767,7 +767,7 @@ So konfigurieren Sie das Portlet:
 
    >[!NOTE]
    >
-   >Wenn das Portlet so konfiguriert ist, dass es eine Verbindung zu AEM Autor- und Veröffentlichungsinstanzen herstellt, die auf einem anderen Kontextpfad als** /** ausgeführt werden, müssen Sie die erzwungene **CQUrlInfo** in der Html Library Manager-Konfiguration dieser AEM Instanzen (z. B. über Felix Webconsole) aktivieren oder die Bearbeitung nicht funktioniert und das Dialogfeld &quot;Voreinstellungen&quot;nicht angezeigt wird.
+   >Wenn das Portlet so konfiguriert ist, dass es eine Verbindung zu AEM Autor- und Veröffentlichungsinstanzen herstellt, die auf einem anderen Kontextpfad als** /** ausgeführt werden, müssen Sie die erzwungene **CQUrlInfo** in der Html Library Manager-Konfiguration dieser AEM Instanzen (z. B. über Felix Webconsole) aktivieren oder die Bearbeitung funktioniert nicht und das Dialogfeld &quot;Voreinstellungen&quot;wird nicht angezeigt.
 
 1. Speichern Sie die geänderte Konfiguration im Anwendungsserver.
 
