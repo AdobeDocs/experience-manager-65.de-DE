@@ -38,7 +38,7 @@ Der MDM-Administrator kann IPA- und APK-Dateien auf den MDM-Server hochladen und
 
 ## Profileinstellungen mit Auswirkung auf die AEM Forms-App {#profile-settings-affecting-the-aem-forms-app-br}
 
-Die folgenden Profil-Einstellungen auf Ihrem Gerät wirken sich auf die Funktion der AEM Forms-App auf Ihrem Gerät aus:
+Die folgenden Profil-Einstellungen auf Ihrem Gerät wirken sich auf die Funktionsweise der AEM Forms-App auf Ihrem Gerät aus:
 
 * **Allow use of camera** im Abschnitt **Device functionality**
 
