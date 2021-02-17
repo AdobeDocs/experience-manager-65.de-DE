@@ -166,7 +166,7 @@ Sie können Dateimuster verwenden, um Folgendes auszuschließen:
 
 Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](configuring-watched-folder-endpoints.md#about-file-patterns).
 
-**Muster für einzuschließende Dateien:** (Obligatorisch) Eine durch Semikolon  **;** getrennte Liste von Mustern, mit denen der überwachte Ordner bestimmt, welche Ordner und Dateien überprüft und aufgenommen werden sollen. Beispiel: Wenn das Muster für einzuschließende Dateien &quot;input&amp;ast;&quot;lautet, alle Dateien und Ordner, die mit &quot;input&amp;ast;&quot; übereinstimmen; abgeholt werden. Hierzu gehören auch Dateien und Ordner namens „input1“, „input2“ usw.
+**Muster für einzuschließende Dateien:** (Obligatorisch) Eine durch Semikolon  **;** getrennte Liste von Mustern, mit denen der überwachte Ordner ermittelt, welche Ordner und Dateien überprüft und aufgenommen werden sollen. Beispiel: Wenn das Muster für einzuschließende Dateien &quot;input&amp;ast;&quot;lautet, alle Dateien und Ordner, die mit &quot;input&amp;ast;&quot; übereinstimmen; abgeholt werden. Hierzu gehören auch Dateien und Ordner namens „input1“, „input2“ usw.
 
 Der Standardwert ist &amp;ast; und zeigt alle Dateien und Ordner an.
 
@@ -238,7 +238,7 @@ Die Watched Folder-Ausgabe kann ein einzelnes Dokument, eine Liste von Dokumente
 
 >[!NOTE]
 >
->Das Angeben von Namen, die zu eindeutigen Ausgabedateinamen führen, verbessert die Leistung. Angenommen, der Dienst gibt ein Output-Dokument zurück und die Ausgabeparameterzuordnung ordnet es `%F.%E` (Dateiname und Dateierweiterung) zu. In diesem Fall, wenn der Benutzer jede Minute Dateien mit demselben Namen ablegt und der Ergebnisordner auf `result/%Y/%M/%D` konfiguriert ist und die Einstellung „Doppelt vorhandene Dateinamen überschreiben“ deaktiviert ist, versucht der Watched Folder-Dienst die doppelten Dateinamen aufzulösen. Der Prozess des Auflösens von doppelten Dateinamen kann Auswirkungen auf die Leistung haben. In diesem Fall kann die Leistung verbessert werden, wenn Sie die Ausgabeparameterzuordnung auf `%F_%h_%m_%s_%l` ändern, um dem Namen Stunden, Minuten, Sekunden und Millisekunden hinzuzufügen, oder sicherstellen, dass abgelegte Dateien eindeutige Namen haben.
+>Das Angeben von Namen, die zu eindeutigen Ausgabedateinamen führen, verbessert die Leistung. Angenommen, der Dienst gibt ein Output-Dokument zurück und die Ausgabeparameterzuordnung ordnet es `%F.%E` (Dateiname und Dateierweiterung) zu. In diesem Fall, wenn der Benutzer jede Minute Dateien mit demselben Namen ablegt und der Ergebnisordner auf `result/%Y/%M/%D` konfiguriert ist und die Einstellung „Doppelt vorhandene Dateinamen überschreiben“ deaktiviert ist, versucht der Watched Folder-Dienst die doppelten Dateinamen aufzulösen. Der Prozess des Auflösens von doppelten Dateinamen kann Auswirkungen auf die Leistung haben. In diesem Fall kann die Leistung verbessert werden, wenn Sie die Ausgabeparameterzuordnung auf `%F_%h_%m_%s_%l` ändern, um dem Namen Stunden, Minuten, Sekunden und Millisekunden hinzuzufügen oder sicherzustellen, dass abgelegte Dateien eindeutige Namen haben.
 
 ## Informationen zu Dateimustern {#about-file-patterns}
 
