@@ -22,7 +22,7 @@ ht-degree: 9%
 AEM Forms bietet mehrere APIs zum Senden von Formularen, zum Verarbeiten von Dokumenten und zum Rendern von Dokumenten. Einige APIs werden als Transaktionen erfasst und andere können kostenlos verwendet werden. Dieses Dokument bietet eine Liste aller APIs, die in einem Transaktionsbericht als Transaktionen bilanziert werden. Im Folgenden finden Sie einige gängige Szenarien, in denen eine abrechnungsfähige API verwendet wird:
 
 * Übermitteln eines adaptiven Formulars, HTML5-Formulars und Formularsatzes
-* Rendern einer Druck- oder Webversion einer interaktiven Kommunikation
+* Wiedergabe einer Druck- oder Webversion einer interaktiven Kommunikation
 * Konvertieren eines Dokuments von einem Format in ein anderes
 * Reduzieren eines dynamischen PDF-Dokuments
 * Erstellen eines Dokuments aus Datensatz
