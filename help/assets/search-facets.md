@@ -44,9 +44,9 @@ Bei Volltextsuchen fügen Sie dem Formular die Prognose [!UICONTROL Volltext] hi
 
 1. Ziehen Sie auf der Seite [!UICONTROL Suchformulare bearbeiten] eine Eigenschaft von der Registerkarte **[!UICONTROL Eigenschaft auswählen]** in den Hauptbereich. Ziehen Sie beispielsweise **[!UICONTROL Eigenschaftsprädikat]**.
 
-   ![Auswählen und Verschieben einer Vorhersage zum Anpassen der Filter](assets/drag_predicate.png)
+   ![Auswählen und Verschieben eines Prädikats, um die Suchfilter anzupassen](assets/drag_predicate.png)
 
-   *Abbildung: Wählen Sie ein Prädikat aus und verschieben Sie es, um die Filter anzupassen.*
+   *Abbildung: Wählen Sie ein Prädikat aus und verschieben Sie es, um die Suchfilter anzupassen.*
 
 1. Geben Sie auf der Registerkarte [!UICONTROL Einstellungen] eine Feldbeschriftung, einen Platzhaltertext und eine Beschreibung für das Eigenschaftsprädikat ein. Geben Sie einen gültigen Namen für die Metadateneigenschaft an, die mit dem Prädikat verknüpft werden soll. Die Kopfzeilenbeschriftung auf der Registerkarte [!UICONTROL Einstellungen] gibt den Typ der ausgewählten Prognose an.
 
