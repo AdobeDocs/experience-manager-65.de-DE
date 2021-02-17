@@ -338,7 +338,7 @@ Das Erstellen, Ändern oder Entfernen neuer Authentifizierungsanforderungen wird
 >
 >Die oben erwähnten Änderungen an einem bestimmten Zielgruppen-Knoten werden nur dann auf dem Apache Sling Authenticator angezeigt, wenn das `RequirementHandler` konfiguriert wurde und die Zielgruppe in den von den unterstützten Pfaden definierten Bäumen enthalten ist (siehe Konfigurationsoptionen).
 >
->Weitere Informationen finden Sie unter [Zuweisen von Mischknoten-Typen](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.10.3 Zuweisen von Mischknoten-Typen) und [Hinzufügen von Knoten und Festlegen von Eigenschaften](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.4 von Knoten und Festlegen von Eigenschaften)
+>Weitere Informationen finden Sie unter [Zuweisen von Mixin-Knotentypen](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.10.3 Zuweisen von Mixin-Knotentypen) und [Hinzufügen von Knoten und Festlegen von Eigenschaften](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.4 Hinzufügen von Knoten und Festlegen von Eigenschaften)
 
 #### Hinzufügen einer neuen Authentifizierungspflicht {#adding-a-new-auth-requirement}
 
@@ -424,7 +424,7 @@ session.save();
 
 #### Effektive Authentifizierungspflichten abrufen {#retrieve-effective-auth-requirements}
 
-Es gibt keine dedizierte öffentliche API zum Lesen aller wirksamen Authentifizierungsanforderungen, die beim Apache Sling Authenticator registriert sind. Die Liste wird jedoch in der Systemkonsole unter `https://<serveraddress>:<serverport>/system/console/slingauth` unter &quot;**Konfiguration der Authentifizierungsanforderungen**&quot;angezeigt.
+Es gibt keine dedizierte öffentliche API zum Lesen aller wirksamen Authentifizierungsanforderungen, die beim Apache Sling Authenticator registriert sind. Die Liste wird jedoch in der Systemkonsole unter `https://<serveraddress>:<serverport>/system/console/slingauth` unter &quot;**Konfiguration der Authentifizierungsanforderung**&quot;angezeigt.
 
 Die folgende Abbildung zeigt die Authentifizierungspflichten einer AEM -Veröffentlichungsinstanz mit Demoinhalten an. Der hervorgehobene Pfad der Community-Seite zeigt, wie eine von der in diesem Dokument beschriebenen Implementierung hinzugefügte Anforderung im Sling Apache Authenticator dargestellt wird.
 
