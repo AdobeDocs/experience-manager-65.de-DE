@@ -130,7 +130,7 @@ Vollständige Informationen zum Erstellen eigener Test-Suites finden Sie in der 
    >Um adaptive Formulare zu testen, fügen Sie die folgenden Werte den Kategorien (categories) und Abhängigkeiten (dependencies) hinzu. Beispiel:
    >
    >
-   >**kategorien**:  `granite.testing.hobbes.tests, granite.testing.hobbes.af.commons`
+   >**Kategorien**:  `granite.testing.hobbes.tests, granite.testing.hobbes.af.commons`
    >
    >
    >**Abhängigkeiten**:  `granite.testing.hobbes.testrunner, granite.testing.hobbes.af`
