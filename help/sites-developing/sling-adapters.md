@@ -38,9 +38,9 @@ Es gibt die folgenden Nutzungsszenarien:
 
 * Erstellung von direkten Verknüpfungen für Objekte, für die interne Kontextobjekte übergeben werden müssen.
 
-   Der JCR-basierte [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html) enthält beispielsweise einen Verweis auf die [`JCR Session`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html) der Anforderung, die wiederum für viele Objekte benötigt wird, deren Ausführung von dieser Anforderungssitzung abhängig ist, z. B. [`PageManager`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) oder [`UserManager`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/UserManager.html).
+   Der JCR-basierte [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html) enthält beispielsweise einen Verweis auf die [`JCR Session`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html) der Anfrage, die wiederum für viele Objekte benötigt wird, deren Ausführung von dieser Anfragesitzung abhängig ist, z. B. [`PageManager`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) oder [`UserManager`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/UserManager.html).
 
-* Direkte Verknüpfung mit Diensten.
+* Direkte Verknüpfung mit Services.
 
    Dies ist ein seltener Fall, da `sling.getService()` bereits eine einfache Möglichkeit darstellt.
 
@@ -51,9 +51,9 @@ Es gibt die folgenden Nutzungsszenarien:
 Hierfür gibt es verschiedene Gründe, z. B.:
 
 * Die Implementierung unterstützt den Zieltyp nicht.
-* Eine Adapter-Factory zur Verarbeitung dieses Falls ist nicht aktiv (z. B. aufgrund von fehlenden Dienstverweisen)
+* Eine Adapter-Factory zur Verarbeitung dieses Falls ist nicht aktiv (z. B. aufgrund von fehlenden Service-Verweisen)
 * Fehler für interne Bedingung
-* Dienst ist nicht verfügbar
+* Service ist nicht verfügbar
 
 Es ist wichtig, dass Sie den NULL-Fall ordnungsgemäß verarbeiten. Für das JSP-Rendering kann es zulässig sein, dass für JSP ein Fehler auftritt, wenn dies zu einem leeren Inhaltselement führt.
 
@@ -78,7 +78,7 @@ Es gibt verschiedene Möglichkeiten, `Adaptable.adaptTo()` zu implementieren:
 
 * Eine Kombination beider Vorgehensweisen.
 
-Im ersten Fall kann über javadocs angegeben werden, welche `adaptTo-targets` möglich sind. Für bestimmte Unterklassen, z. B. die JCR-basierte Resource-Klasse, ist dies häufig nicht möglich. Da Implementierungen von `AdapterFactory` im letzteren Fall normalerweise Teil der privaten Klassen eines Pakets sind, werden sie nicht per Client-API verfügbar gemacht und auch nicht in javadocs aufgeführt. Theoretisch wäre es möglich, auf alle `AdapterFactory`-Implementierungen über die [OSGi](/help/sites-deploying/configuring-osgi.md)-Dienstlaufzeit zuzugreifen und sich die Konfigurationen der „adaptierbaren Elemente“ (Quellen und Ziele) anzusehen, diese aber nicht einander zuzuordnen. Dies hängt letztendlich von der internen Logik ab, die dokumentiert werden muss. Dies ist der Grund für diesen Verweis.
+Im ersten Fall kann über javadocs angegeben werden, welche `adaptTo-targets` möglich sind. Für bestimmte Unterklassen, z. B. die JCR-basierte Resource-Klasse, ist dies häufig nicht möglich. Da Implementierungen von `AdapterFactory` im letzteren Fall normalerweise Teil der privaten Klassen eines Pakets sind, werden sie nicht per Client-API verfügbar gemacht und auch nicht in javadocs aufgeführt. Theoretisch wäre es möglich, auf alle `AdapterFactory`-Implementierungen über die [OSGi](/help/sites-deploying/configuring-osgi.md)-Service-Laufzeit zuzugreifen und sich die Konfigurationen der „adaptierbaren Elemente“ (Quellen und Ziele) anzusehen, diese aber nicht einander zuzuordnen. Dies hängt letztendlich von der internen Logik ab, die dokumentiert werden muss. Dies ist der Grund für diesen Verweis.
 
 ## Verweis  {#reference}
 
@@ -221,7 +221,7 @@ Adaption von [**ResourceResolver**](https://helpx.adobe.com/experience-manager/6
  <tbody>
   <tr>
    <td><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html">Session</a></td>
-   <td>Die JCR-Sitzung der Anforderung, wenn es sich um einen JCR-basierten Ressourcenauflöser handelt (Standard).</td>
+   <td>Die JCR-Sitzung der Anfrage, wenn es sich um einen JCR-basierten Ressourcenauflöser handelt (Standard).</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html">PageManager</a></td>
@@ -262,7 +262,7 @@ Adaption von [**ResourceResolver**](https://helpx.adobe.com/experience-manager/6
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html">Externalizer</a></td>
-   <td>Für das Externalisieren von absoluten URLs, auch ohne das Anforderungsobjekt.<br /> </td>
+   <td>Für das Externalisieren von absoluten URLs, auch ohne das Anfrageobjekt.<br /> </td>
   </tr>
  </tbody>
 </table>
