@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
 workflow-type: tm+mt
 source-wordcount: '1769'
-ht-degree: 64%
+ht-degree: 65%
 
 ---
 
@@ -110,7 +110,7 @@ Wenn Sie einen Namespace oder ein anderes Tag auswählen, werden die folgenden V
 * [Bearbeiten](#editing-tags)
 * [Verschieben](#moving-tags)
 * [Merge](#merging-tags)
-* [Veröffentlichung](#publishing-tags)
+* [Veröffentlichen](#publishing-tags)
 * [Veröffentlichung rückgängig machen](#unpublishing-tags)
 * [Löschen](#deleting-tags)
 
@@ -264,7 +264,7 @@ Tag-Berechtigungen sind [&#39;secure (standardmäßig)&#39;](/help/sites-adminis
    * Wählen Sie im linken Bedienfeld die Gruppe oder die Benutzer aus, für die die [Leseberechtigung](/help/sites-administering/security.md#permissions) gelten soll.
    * im rechten Bereich den **Pfad **zum Tag-Namensraum
 
-      * zum Beispiel `/content/cq:tags/mycommunity`
+      * Beispiel, `/content/cq:tags/mycommunity`
    * Wählen Sie `checkbox`in der Spalte **Lesen**
    * Wählen Sie **Speichern** aus
 
