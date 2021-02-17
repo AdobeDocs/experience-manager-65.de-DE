@@ -36,7 +36,7 @@ Mit dem Sling Resource Merger werden die Überlagerungs-/Überschreibungsressour
 
 >[!CAUTION]
 >
->Der Sling Resource Merger und zugehörige Methoden können nur mit [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) verwendet werden. Das bedeutet auch, dass er nur für die standardmäßige, Touch-optimierte Benutzeroberfläche geeignet ist: Insbesondere auf diese Art und Weise definierte Überschreibungen sind nur für das Touch-fähigen Dialogfeld einer Komponente geeignet.
+>Der Sling Resource Merger und zugehörige Methoden können nur mit [Granite](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) verwendet werden. Das bedeutet auch, dass er nur für die standardmäßige, Touch-optimierte Benutzeroberfläche geeignet ist: Insbesondere auf diese Art und Weise definierte Überschreibungen sind nur für das Touch-fähigen Dialogfeld einer Komponente geeignet.
 >
 >Überlagerungen/Überschreibungen für andere Bereiche (einschließlich anderer Aspekte einer Touch-fähigen Komponente oder der klassischen Benutzeroberfläche) umfassen das Kopieren des entsprechenden Knotens und der entsprechenden Struktur aus dem Original dahin, wo die Anpassung definiert wird.
 
@@ -271,7 +271,7 @@ Einige Beispiele sind enthalten:
    * [Anpassen der Konsolen](/help/sites-developing/customizing-consoles-touch.md)
    * [Anpassen der Seitenbearbeitung](/help/sites-developing/customizing-page-authoring-touch.md)
 
-* Überschreibung:
+* Überschreiben:
 
    * [Konfigurieren von Seiteneigenschaften](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)
 
