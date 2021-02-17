@@ -450,7 +450,7 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 | `-q (--quiet)` | druckt so wenig wie möglich |
 | `<localPaths> [<localPaths> ...]` | lokaler Pfad |
 
-### Status {#status}
+### Status{#status}
 
 Druckt den Status von Arbeitskopiedateien und Verzeichnissen.
 
@@ -693,7 +693,7 @@ diff -N <file1> [<file2> ...]
 | `-N (--non-recursive)` | auf einem einzelnen Verzeichnis ausgeführt wird |
 | `<file> [<file> ...]` | Datei oder Verzeichnis, um die Unterschiede von |
 
-### Konsole {#console}
+### -Konsole{#console}
 
 Führt eine interaktive Konsole aus.
 
@@ -868,7 +868,7 @@ Jeder Synchronisierungsordner speichert Konfiguration und Status in drei Dateien
 * `.vlt-sync-config.properties`: Konfigurationsdatei.
 
 * `.vlt-sync.log`: Protokolldatei, die Informationen über die Vorgänge enthält, die beim Synchronisieren durchgeführt werden.
-* `.vlt-sync-filter.xml`: filter, die definieren, welche Teile des Repositorys synchronisiert werden. Das Format dieser Datei wird im Abschnitt [Durchführen eines gefilterten Kassengangs](#performing-a-filtered-checkout) beschrieben.
+* `.vlt-sync-filter.xml`: Filter, die definieren, welche Teile des Repositorys synchronisiert werden. Das Format dieser Datei wird im Abschnitt [Durchführen eines gefilterten Kassengangs](#performing-a-filtered-checkout) beschrieben.
 
 Mit der Datei `.vlt-sync-config.properties` können Sie die folgenden Eigenschaften konfigurieren:
 
