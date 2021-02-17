@@ -42,7 +42,7 @@ Das Dialogfeldkonvertierungs-Tool steht als Open-Source-Lösung über GitHub zur
 
 CODE AUF GITHUB
 
-Den Code dieser Seite finden Sie auf GitHub
+Den Code dieser Seite finden Sie auf GitHub.
 
 * [Öffnen Sie das AEM-Dialog-Konvertierungsprojekt auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-dialog-conversion)
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-dialog-conversion/archive/master.zip) herunter.
@@ -401,7 +401,7 @@ Das `cq-dialog-conversion-content`-Paket enthält mehrere vordefinierte Umschrei
 
 CODE AUF GITHUB
 
-Den Code dieser Seite finden Sie auf GitHub
+Den Code dieser Seite finden Sie auf GitHub.
 
 * [Öffnen Sie das Projekt aem-touchui-dialogconversions-samples auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-touchui-dialogconversion-samples)
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-touchui-dialogconversion-samples/archive/master.zip) herunter.
