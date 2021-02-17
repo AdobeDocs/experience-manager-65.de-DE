@@ -122,7 +122,7 @@ Wählen Sie **Generate**, um den Bericht zu erstellen:
 
 Die Konsole &quot;Ansichten&quot;ermöglicht die Erstellung von Berichten auf Ansichten durch Community-Funktionen für einen bestimmten Zeitraum.
 
-![ansicht-Bericht](assets/view-report.png)
+![Ansicht-Bericht](assets/view-report.png)
 
 Wählen Sie die Kriterien für den Bericht aus:
 
