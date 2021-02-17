@@ -61,7 +61,7 @@ Gehen Sie wie folgt vor, um in Cloud-Services eine Silverpop-Konfiguration zu er
 
 Gehen Sie wie folgt vor, um eine Silverpop-Konfiguration über „Tools“ zu erstellen:
 
-1. Tippen oder klicken Sie in AEM auf **Tools**> **Bereitstellung** > **Cloud-Services**. Oder navigieren Sie direkt dort, indem Sie zu `https://<hostname>:<port>/misadmin#/etc` gehen.
+1. Tippen oder klicken Sie in AEM auf **Tools**> **Bereitstellung** > **Cloud-Services**. Oder navigieren Sie direkt dorthin, indem Sie zu `https://<hostname>:<port>/misadmin#/etc` gehen.
 1. Wählen Sie **Tools**, **Cloud Service-Konfigurationen** und dann **Silverpop Engage**.
 1. Wählen Sie **Neu**, um das Fenster **Seite erstellen** zu öffnen.
 
