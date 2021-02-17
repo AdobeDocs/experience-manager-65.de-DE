@@ -180,7 +180,7 @@ Die folgenden Adobe Analytics-Verfolgungsdatenbeispiele gelten für die Meilenst
   </tr>
   <tr>
    <td>eventdata.events.a.media.complete </td>
-   <td>ereignis4<br /> </td>
+   <td>Ereignis4<br /> </td>
   </tr>
   <tr>
    <td>eventdata.events.milestone4</td>
