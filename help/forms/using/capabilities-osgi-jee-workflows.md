@@ -20,7 +20,7 @@ Sie können AEM Inbox verwenden, um Forms-orientierte AEM Workflows auf OSGi aus
 <table>
  <tbody>
   <tr>
-   <td>Aktionen   </td>
+   <td>Aktionen </td>
    <td>AEM-Posteingang</td>
    <td>HTML-Arbeitsbereich</td>
   </tr>
@@ -404,7 +404,7 @@ Die folgende Tabelle zeigt die Funktionen von AEM Inbox und der AEM Forms App:
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Aktionen   </strong></p> </td>
+   <td><p><strong>Aktionen </strong></p> </td>
    <td><p><strong>AEM-Posteingang</strong></p> </td>
    <td><p><strong>AEM Forms-App</strong></p> </td>
   </tr>
