@@ -109,7 +109,7 @@ Nach dem Einrichten der Vorlage und der Komponente können Sie Ihre Konfiguratio
 
 `/etc/cloudservices/<service-name>`
 
-### Inhaltsmodell {#content-model}
+### Inhaltsmodelle {#content-model}
 
 Das Inhaltsmodell wird als `cq:Page` unter:
 
