@@ -231,7 +231,7 @@ Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen 
 
 ### NumericEdit: NumericField, DecimalField  {#numericedit-numericfield-decimalfield}
 
-| Optionen      | Beschreibung |
+| Optionen | Beschreibung |
 |---|---|
 | dataType | String, der, der den Datentyp des Felds darstellt (ganze Zahl/Dezimalzahl). |
 | leadDigits | Maximale führende Ziffern der Dezimalzahl. |
@@ -244,7 +244,7 @@ Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen 
 <table>
  <tbody>
   <tr>
-   <th>Optionen     </th>
+   <th>Optionen</th>
    <th>Beschreibung</th>
   </tr>
   <tr>
