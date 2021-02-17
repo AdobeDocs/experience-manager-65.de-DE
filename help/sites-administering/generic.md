@@ -427,7 +427,7 @@ Beim Klicken auf den Hotspot wird ein Dialogfeld geöffnet, in dem Sie die Grö�
 1. Klicken Sie auf die Schaltfläche „In den Warenkorb“. Das Dialogfeld wird geschlossen.
 1. Navigieren Sie zu Ihrem Warenkorb. Das Produkt sollte darin enthalten sein.
 
-#### Konfigurationsoptionen {#configuration-options}
+#### Konfigurationsoptionen  {#configuration-options}
 
 Sie können konfigurieren, wie das Dialogfeld aussieht, wenn Sie auf den Hotspot klicken:
 
