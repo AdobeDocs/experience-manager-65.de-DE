@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
 source-wordcount: '953'
-ht-degree: 17%
+ht-degree: 18%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 17%
 
 >[!CAUTION]
 >
->Die Funktion [!DNL Experience Manager] bis [!DNL Creative Cloud] &quot;Ordnerfreigabe&quot;wird nicht mehr unterstützt. Adobe empfiehlt dringend die Verwendung neuerer Funktionen wie [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) oder [Experience Manager Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). Weitere Informationen finden Sie unter [Best Practices für die Integration von Experience Managern und Creative Clouden](/help/assets/aem-cc-integration-best-practices.md).
+>Die Funktion [!DNL Experience Manager] bis [!DNL Creative Cloud] &quot;Ordnerfreigabe&quot;wird nicht mehr unterstützt. Adobe empfiehlt dringend die Verwendung neuerer Funktionen wie [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) oder [Experience Manager Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de). Weitere Informationen finden Sie unter [Best Practices für die Integration von Experience Managern und Creative Clouden](/help/assets/aem-cc-integration-best-practices.md).
 
 [!DNL Adobe Experience Manager] können so konfiguriert werden, dass Benutzer Ordner  [!DNL Assets] für die Benutzer von  [!DNL Adobe Creative Cloud] Apps freigeben können, sodass sie als freigegebene Ordner im  [!DNL Adobe Creative Cloud] Assets-Dienst verfügbar sind. Die Funktion kann zum Austausch von Dateien zwischen Kreativteams und [!DNL Assets]-Benutzern verwendet werden, insbesondere dann, wenn die Kreativbenutzer keinen Zugriff auf die [!DNL Assets]-Bereitstellung haben (sie befinden sich nicht im Unternehmensnetzwerk).
 
@@ -62,7 +62,7 @@ Die Integration umfasst folgende Elemente:
 
 Zu den bewährten Verfahren für die Nutzung des Ordners [!DNL Experience Manager] in [!DNL Creative Cloud] gehören:
 
-* **Volumenaspekte:** [!DNL Experience Manager] und  [!DNL Creative Cloud] Ordnerfreigabe sollten verwendet werden, um eine kleinere Anzahl von Dateien freizugeben, z. B. die für eine bestimmte Kampagne oder Aktivität relevant sind. Verwenden Sie andere Verteilungsmethoden (z. B. [!DNL Assets Brand Portal]) oder [!DNL Experience Manager]-Desktop-App, um wie alle genehmigten Assets im Unternehmen größere Assets freizugeben.
+* **Volumenaspekte:** [!DNL Experience Manager] und  [!DNL Creative Cloud] Ordnerfreigabe sollten verwendet werden, um eine kleinere Anzahl von Dateien freizugeben, z. B. die für eine bestimmte Kampagne oder Aktivität relevant sind. Verwenden Sie andere Verteilungsmethoden (z. B. [!DNL Assets Brand Portal]) oder [!DNL Experience Manager]-Desktop-App, um wie alle genehmigten Assets in der Organisation größere Assets freizugeben.
 * **Vermeiden Sie die Freigabe von tiefen Hierarchien:** Die Freigabe funktioniert rekursiv und lässt keine selektive Freigabe zu. Normalerweise sollten nur Ordner ohne Unterordner oder mit einer sehr flachen Hierarchie, wie z. B. 1 Unterordnerebene, für die Freigabe in Betracht gezogen werden.
 * **Separate Ordner für die einmalige Freigabe:** Separate Ordner sollten verwendet werden, um endgültige Assets von  [!DNL Assets] in  [!DNL Creative Cloud] Dateien freizugeben und um kreative Assets wieder von  [!DNL Creative Cloud] Dateien in freizugeben  [!DNL Assets]. Zusammen mit einer guten Benennungsregel für diese Ordner wird eine verständlichere Umgebung für [!DNL Assets]- und [!DNL Creative Cloud]-Benutzer erstellt.
 * **Vermeiden Sie WIP im freigegebenen Ordner:** Freigegebener Ordner sollte nicht für Work in Progress verwendet werden. Verwenden Sie einen separaten Ordner in Creative Cloud Files, um Aufgaben auszuführen, die häufige Dateiänderungen erfordern.
