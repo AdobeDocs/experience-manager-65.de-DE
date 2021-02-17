@@ -160,7 +160,7 @@ So stellen Sie unter Windows eine Verbindung über WebDAV zu AEM her:
    * **Ordner**: `http://localhost:4502`
    * Klicken Sie auf **Verbindung mit anderen Anmeldeinformationen herstellen**.
 
-   Klicken Sie auf „Beenden“.
+   Klicken Sie auf Beenden
 
    ![chlimage_1-113](assets/chlimage_1-113a.png)
 
