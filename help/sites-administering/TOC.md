@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: fd7a32c1070a0560ca744db041cf809f28672b33
 workflow-type: tm+mt
 source-wordcount: '671'
-ht-degree: 90%
+ht-degree: 92%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 90%
    + [Assistent „Sprachkopie erstellen“](tc-wizard.md)
    + [Verbesserungen an der Übersetzung](tc-enhancements.md)
    + [Best Practices für die Übersetzung](tc-bp.md)
-   + [Konfigurationen und der Konfigurationsbrowser](configurations.md)
+   + [Konfigurationen und der Konfigurations-Browser](configurations.md)
    + [Häufig gestellte Fragen (FAQ) zu AEM](aem-faqs.md)
 + Betrieb {#operations}
    + [Dashboards](dashboards.md)
@@ -82,7 +82,7 @@ ht-degree: 90%
    + [Beheben von Serialisierungsproblemen in AEM](mitigating-serialization-issues.md)
    + [Benutzersynchronisierung](sync.md)
    + [Unterstützung von Encapsulated Tokens](encapsulated-token.md)
-   + [Single Sign-On](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html)
+   + [Single Sign-On](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html?lang=de)
    + [Prüfen von Benutzerverwaltungsvorgängen in AEM](audit-user-management-operations.md)
    + [Die Funktion „SSL By Default“ (SSL als Standard)](ssl-by-default.md)
    + [SAML 2.0-Authentifizierungs-Handler](saml-2-0-authenticationhandler.md)
