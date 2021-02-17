@@ -87,7 +87,7 @@ Zum Aktivieren von SSL muss WebSphere in der Benutzerregistrierung des lokalen B
 1. Stellen Sie sicher, dass das Kontrollkästchen **Enable Application Security** aktiviert ist. Klicken Sie auf **Weiter**.
 1. Wählen Sie **Federated Repositories** und klicken Sie auf **Next**.
 1. Geben Sie die festzulegenden Berechtigungen an und klicken Sie auf **Next**.
-1. Klicken Sie auf **Finish**.
+1. Klicken Sie auf **Beenden**.
 1. Starten Sie das WebSphere-Profil erneut.
 
    WebSphere startet unter Verwendung des standardmäßigen Keystore und Truststore.
