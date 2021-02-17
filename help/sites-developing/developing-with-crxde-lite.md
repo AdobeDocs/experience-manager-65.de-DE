@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: cb141914428f42a9755b5479ab1652c8ca51f640
 workflow-type: tm+mt
 source-wordcount: '2155'
-ht-degree: 90%
+ht-degree: 93%
 
 ---
 
@@ -52,9 +52,9 @@ Die Benutzeroberfläche von CRXDE Lite sieht in Ihrem Browser wie folgt aus:
 
 ![chlimage_1-18](assets/crx-interface.jpg)
 
-Jetzt können Sie CRXDE Lite verwenden, um Ihre Anwendung zu entwickeln.
+Jetzt können Sie CRXDE Lite verwenden, um Ihr Programm zu entwickeln.
 
-## Überblick über die Benutzeroberfläche  {#overview-of-the-user-interface}
+## Überblick über die Benutzeroberfläche {#overview-of-the-user-interface}
 
 CRXDE Lite bietet folgende Funktionen:
 
@@ -66,7 +66,7 @@ CRXDE Lite bietet folgende Funktionen:
   </tr>
   <tr>
    <td>Knotenpfad-Widget</td>
-   <td><p>Zeigt den Pfad zum aktuell ausgewählten Knoten.</p> <p>Sie können es auch verwenden, um zu einem Knoten zu springen, indem Sie den Pfad von Hand eingeben oder ihn von woanders einfügen und die Eingabetaste drücken.</p> <p>Es bietet auch Unterstützung für die Suche nach Knoten mit bestimmtem Knotennamen. Geben Sie den Namen des Knotens, den Sie suchen möchten, ein, und warten Sie (oder klicken Sie auf das Suchsymbol auf der rechten Seite). Sie können z. B. versuchen, die Zeichenfolge <em>oak</em> in das Widget einzugeben, um zu sehen, wie dies funktioniert. Wenn ein bestimmte Knoten im Explorer-Fenster geladen werden, wird die Liste angezeigt und Sie können den Pfad auswählen und die Eingabetaste drücken, um dorthin zu navigieren. Beachten Sie, dass dies nur für die Knoten funktioniert, die derzeit in der CRXDE-Client-Anwendung im Browser geladen sind. Wenn Sie das gesamte Repository durchsuchen möchten, verwenden Sie „Tools“ &gt; „Anfrage“.</p> </td>
+   <td><p>Zeigt den Pfad zum aktuell ausgewählten Knoten.</p> <p>Sie können es auch verwenden, um zu einem Knoten zu springen, indem Sie den Pfad von Hand eingeben oder ihn von woanders einfügen und die Eingabetaste drücken.</p> <p>Es bietet auch Unterstützung für die Suche nach Knoten mit bestimmtem Knotennamen. Geben Sie den Namen des Knotens, den Sie suchen möchten, ein, und warten Sie (oder klicken Sie auf das Suchsymbol auf der rechten Seite). Sie können z. B. versuchen, die Zeichenfolge <em>oak</em> in das Widget einzugeben, um zu sehen, wie dies funktioniert. Wenn ein bestimmte Knoten im Explorer-Fenster geladen werden, wird die Liste angezeigt und Sie können den Pfad auswählen und die Eingabetaste drücken, um dorthin zu navigieren. Beachten Sie, dass dies nur für die Knoten funktioniert, die derzeit im CRXDE-Client-Programm im Browser geladen sind. Wenn Sie das gesamte Repository durchsuchen möchten, verwenden Sie „Tools“ &gt; „Anfrage“.</p> </td>
   </tr>
   <tr>
    <td>Explorer-Fenster</td>
@@ -74,7 +74,7 @@ CRXDE Lite bietet folgende Funktionen:
   </tr>
   <tr>
    <td>Bearbeitungsfenster</td>
-   <td><p>Registerkarte <strong>Home</strong>: ermöglicht die Suche nach Inhalt und/oder Dokumentation und Zugang zu Entwicklerressourcen (Dokumentation, Entwicklerblog, Wissensdatenbank) und Support (Adobe-Homepage und Support-Center).<br /> </p> <p>Doppelklicken Sie im <strong>Explorer-Fenster</strong> auf eine Datei, wie z. B. eine .jsp- oder eine .java-Datei, um deren Inhalt anzuzeigen. Anschließend können Sie sie ändern und die Änderungen speichern.</p> <p>Sobald eine Datei im <strong>Bearbeitungsfenster</strong> bearbeitet wurde, sind die folgenden Werkzeuge in der Symbolleiste verfügbar:<br /> </p> - <strong>In Struktur anzeigen: </strong>zeigt die Datei in der Repository-Baumstruktur an.<br /> - <strong>Suchen/Ersetzen...</strong>: führen Sie Suchen oder Ersetzungen durch.<br /><br /> Durch einen Doppelklick auf die Statuszeile des <strong>Bearbeitungsfensters</strong> öffnen Sie das Dialogfeld <strong>Zu Zeile wechseln</strong>, in dem Sie eine bestimmte Zeilennummer eingeben können, um dorthin zu gelangen.<br /> </td>
+   <td><p>Registerkarte <strong>Home</strong>: ermöglicht die Suche nach Inhalt und/oder Dokumentation und Zugang zu Entwicklerressourcen (Dokumentation, Entwicklerblog, Wissensdatenbank) und Support (Adobe-Homepage und Support-Center).<br /> </p> <p>Doppelklicken Sie im <strong>Explorer-Fenster</strong> auf eine Datei, wie z. B. eine .jsp- oder eine .java-Datei, um deren Inhalt anzuzeigen. Anschließend können Sie diesen ändern und die Änderungen speichern.</p> <p>Sobald eine Datei im <strong>Bearbeitungsfenster</strong> bearbeitet wurde, sind die folgenden Werkzeuge in der Symbolleiste verfügbar:<br /> </p> - <strong>In Struktur anzeigen: </strong>zeigt die Datei in der Repository-Baumstruktur an.<br /> - <strong>Suchen/Ersetzen...</strong>: führen Sie Suchen oder Ersetzungen durch.<br /><br /> Durch einen Doppelklick auf die Statuszeile des <strong>Bearbeitungsfensters</strong> öffnen Sie das Dialogfeld <strong>Zu Zeile wechseln</strong>, in dem Sie eine bestimmte Zeilennummer eingeben können, um dorthin zu gelangen.<br /> </td>
   </tr>
   <tr>
    <td>Registerkarte „Eigenschaften“<br /> </td>
@@ -86,7 +86,7 @@ CRXDE Lite bietet folgende Funktionen:
   </tr>
   <tr>
    <td>Registerkarte „Replikation“</td>
-   <td><p>Zeigt den Replikationsstatus des aktuellen Knotens an. Sie können den aktuellen Knoten nachbilden oder nachbilden und löschen.</p> </td>
+   <td><p>Zeigt den Replikationsstatus des aktuellen Knotens an. Sie können den aktuellen Knoten replizieren oder replizieren und löschen.</p> </td>
   </tr>
   <tr>
    <td>Registerkarte „Konsole“<br /> </td>
@@ -129,7 +129,7 @@ CRXDE Lite bietet folgende Funktionen:
    <td>Benennt den ausgewählten Knoten um.<br /> </td>
   </tr>
   <tr>
-   <td>Mixins...<br /> </td>
+   <td>Mixins ...<br /> </td>
    <td>Ermöglicht es Ihnen, dem Knotentyp Mixin-Typen hinzuzufügen. Die Mixin-Typen werden meist verwendet, um erweiterte Funktionen wie Versionierung, Zugriffssteuerung, Referenzierung und Knotensperre hinzuzufügen.</td>
   </tr>
   <tr>
@@ -148,13 +148,13 @@ CRXDE Lite bietet folgende Funktionen:
 So erstellen Sie einen Ordner mit CRXDE Lite:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
-1. Klicken Sie im Navigationsbereich mit der rechten Maustaste auf den Ordner, unter dem Sie den neuen Ordner erstellen möchten, und wählen Sie **Erstellen ...**, dann **Ordner erstellen ...**.
+1. Klicken Sie im Navigationsfenster mit der rechten Maustaste auf den Ordner, unter dem Sie den neuen Ordner erstellen möchten, wählen Sie **Erstellen...** und dann **Ordner erstellen...** aus.
 
 1. Geben Sie den **Namen** des Ordners ein und klicken Sie auf **OK**.
 
 1. Klicken Sie auf **Alle speichern**, um die Änderungen auf dem Server zu speichern.
 
-## Erstellen einer Vorlage  {#creating-a-template}
+## Erstellen einer Vorlage {#creating-a-template}
 
 So erstellen Sie eine Vorlage mit CRXDE Lite:
 
@@ -223,7 +223,7 @@ Sie können das Dialogfeld jetzt Ihren Anforderungen anpassen, indem Sie die Eig
 
 Sie können den Dialogfeld-Editor auch verwenden, um ein Dialogfeld zu bearbeiten. Mit einem Doppelklick auf den Dialogfeldknoten in CRXDE Lite wird der Editor geöffnet. Weitere Informationen über den Dialogfeld-Editor finden Sie [hier](/help/sites-developing/dialog-editor.md).
 
-## Erstellen eines Knotens  {#creating-a-node}
+## Erstellen eines Knotens {#creating-a-node}
 
 So erstellen Sie einen Knoten mit CRXDE Lite:
 
@@ -236,7 +236,7 @@ Jetzt können Sie den Knoten an Ihre Anforderungen anpassen, indem Sie die Eigen
 
 >[!NOTE]
 >
->Die meisten Bearbeitungsvorgänge, einschließlich der Knotenerstellung, behalten alle Änderungen im Speicher und speichern sie erst beim Speichern im Repository (über die Schaltfläche „Alle speichern“). Einige Vorgänge wie Verschieben werden jedoch automatisch beibehalten.
+>Die meisten Bearbeitungsvorgänge, einschließlich der Knotenerstellung, behalten alle Änderungen im Speicher und speichern sie erst beim Speichern im Repository (über die Schaltfläche „Alle speichern“). Einige Vorgänge wie das Verschieben werden jedoch automatisch beibehalten.
 >
 >Die Prüfung, ob der neu erstellte Knoten vom Knotentyp des übergeordneten Knoten zugelassen ist, wird auch zuerst vom JCR-Repository ausgeführt, wenn Änderungen gespeichert werden sollen. Wenn Sie beim Speichern eines Knotens eine Fehlermeldung erhalten, überprüfen Sie, ob die Inhaltsstruktur gültig ist (Sie können z. B. keinen Knoten `nt:unstructured` als untergeordneten Knoten des Knotens `nt:folder` erstellen).
 
@@ -271,7 +271,7 @@ So exportieren Sie eine Knotentypdefinition:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
 1. Wählen Sie Ihren gewünschten Knoten aus.
-1. Wählen Sie **Tools** und dann **Knotentyp exportieren**.
+1. Wählen Sie **Tools** und dann **Knotentyp exportieren** aus.
 
 1. Die Definition wird in CND-Notation in Ihrem Browser angezeigt. Speichern Sie die Informationen (falls erforderlich).
 
@@ -286,7 +286,7 @@ So importieren Sie eine Knotentypdefinition:
 
 ## Protokollierung {#logging}
 
-Mit der CRXDE Lite können Sie die Datei `error.log` anzeigen, die sich im Dateisystem unter `<crx-install-dir>/crx-quickstart/server/logs` befindet, und sie mit der entsprechenden Protokollierungsstufe filtern. Gehen Sie wie folgt vor:
+Mit CRXDE Lite können Sie die Datei `error.log` anzeigen, die sich im Dateisystem unter `<crx-install-dir>/crx-quickstart/server/logs` befindet, und sie mit der entsprechenden Protokollebene filtern. Gehen Sie wie folgt vor:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
 1. Wählen Sie auf der Registerkarte **Konsole** am unteren Rand des Fensters im Dropdown-Menü auf der rechten Seite **Serverprotokolle** aus.
@@ -298,7 +298,7 @@ Sie haben folgende Möglichkeiten:
 * Passen Sie die Protokollparameter in der Felix-Konsole an, indem Sie auf das Symbol **Protokollierungskonfigurationen** klicken.
 * Löschen Sie die Meldungen, indem Sie auf das **Pinselsymbol** klicken.
 * Heften Sie die Nachricht an der aktuellen Auswahl an, indem Sie auf das **Pin-Symbol** klicken.
-* Aktivieren oder deaktivieren Sie die Anzeige von Meldungen, indem Sie auf das **Stopp-Symbol** klicken.
+* Aktivieren oder deaktivieren Sie die Anzeige von Meldungen, indem Sie auf das **Stopp**-Symbol klicken.
 
 ## Zugriffssteuerung {#access-control}
 
