@@ -100,7 +100,7 @@ Verschiedene Aktionen sind erforderlich:
 Bevor Sie ein Fragment exportieren, müssen Sie die **Cloud-Konfiguration** für **Adobe Target** zum Fragment oder Ordner hinzufügen. Dies ermöglicht Ihnen auch Folgendes:
 
 * die für den Export zu verwendenden Formatoptionen angeben
-* zielgruppen-Arbeitsbereich als Ziel auswählen
+* Zielgruppen-Arbeitsbereich als Ziel auswählen
 * Auswählen einer Externalisiererdomäne zum Umschreiben von Verweisen im Erlebnisfragment (optional)
 
 Die erforderlichen Optionen können in den **Seiteneigenschaften** des erforderlichen Ordners bzw. Fragments ausgewählt werden. Die Spezifikation wird nach Bedarf vererbt.
@@ -132,7 +132,7 @@ Die erforderlichen Optionen können in den **Seiteneigenschaften** des erforderl
 
    * die entsprechende Konfiguration
    * die erforderliche Formatoption
-   * adobe target Workspace
+   * Adobe Target Workspace
    * falls erforderlich - die Externalizer-Domäne
 
    >[!CAUTION]
