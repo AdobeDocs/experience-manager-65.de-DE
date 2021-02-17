@@ -2,7 +2,7 @@
 title: AEM 6.5 Bereitstellen des Benutzerhandbuchs
 seo-title: AEM 6.5 Bereitstellen des Benutzerhandbuchs
 description: Dieses Handbuch behandelt alle AEM Bereitstellen von Aufgaben, z. B. die Installation und Bereitstellung von AEM.
-seo-description: Behandelt alle AEM bereitstellenden Aufgaben, z. B. die Installation und Bereitstellung von AEM.
+seo-description: Behandelt alle AEM bereitstellenden Aufgaben, wie das Installieren und Bereitstellen von AEM.
 translation-type: tm+mt
 source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
 workflow-type: tm+mt
@@ -45,7 +45,7 @@ Dieses Handbuch behandelt alle AEM Bereitstellen von Aufgaben, z. B. die Install
 
 * [AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
 * [Dispatcher-Benutzerhandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-dispatcher/using/dispatcher.html)
-* [HTL-Benutzerhandbuch](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html)
+* [HTL-Benutzerhandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)
 * [Benutzerhandbuch zu Hauptkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/de/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Einhaltung der DSGVO](/help/managing/data-protection-and-privacy.md)
