@@ -155,7 +155,7 @@ Um einen Lucene-Eigenschaften-Index für die obige Abfrage zu definieren, könne
 
 Sobald der Knoten erstellt wurde, fügen Sie die folgenden Eigenschaften hinzu:
 
-* **Typ:**
+* **type:**
 
    ```
    lucene (of type String)
