@@ -83,9 +83,9 @@ Jede Berichtskomponente enthält mindestens drei Registerkarten:
 * **Bericht:** Enthält die spezifische Konfiguration des jeweiligen Berichts.
 * **Stil**: enthält Stilkonfigurationen wie Diagrammgröße und Rand.
 
-Die Berichtskomponenten werden mit einer Standardkonfiguration initialisiert, mit der Sie Ihr Dashboard schnell einrichten können.
+Die Berichterstellungskomponenten werden mit einer Standardkonfiguration initialisiert, die Sie bei der schnellen Einrichtung Ihres Dashboards unterstützt.
 
-#### Konfiguration „Allgemein“  {#basic-configuration}
+#### Grundkonfiguration {#basic-configuration}
 
 Auf der Registerkarte **Allgemein** wird der Zugriff auf die folgenden Konfigurationseinträge bereitgestellt:
 
