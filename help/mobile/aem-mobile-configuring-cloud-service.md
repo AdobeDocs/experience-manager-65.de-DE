@@ -34,7 +34,7 @@ Es wird davon ausgegangen, dass die [AEM Mobile Hybrid-Referenzanwendung](https:
 
 ## Berechtigungen {#permissions}
 
-Benutzer, die Zugriff auf die Personalisierungskonsole benötigen, müssen Teil der `target-activity-authors`-Gruppe sein. Es wird empfohlen, dass im Rahmen der Benutzer- und Gruppeneinrichtung die Zielgruppe-Aktivität-Gruppe der Gruppe apps-admins hinzugefügt wird. Durch Hinzufügen der Zielgruppe-Aktivität-Autorengruppe können Benutzer den Eintrag im Menü &quot;Personalisierung&quot;sehen.
+Benutzer, die Zugriff auf die Personalisierungskonsole benötigen, müssen Teil der `target-activity-authors`-Gruppe sein. Es wird empfohlen, dass im Rahmen der Benutzer- und Gruppeneinrichtung die Zielgruppe-Aktivität-Gruppe der Gruppe apps-admins hinzugefügt wird. Wenn Sie die Zielgruppe-Aktivität-Autorengruppe hinzufügen, können Benutzer den Eintrag im Navigationsmenü &quot;Personalisierung&quot;sehen.
 
 Wenn Sie vergessen haben, die Benutzer oder Gruppen, die Zugriff auf die Personalisierungskonsole haben sollen, der Zielgruppe-Aktivität-Autoren-Gruppe hinzuzufügen, wird verhindert, dass die Personalisierungskonsole angezeigt wird.
 
