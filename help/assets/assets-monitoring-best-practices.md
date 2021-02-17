@@ -191,7 +191,7 @@ Hier sind einige im Lieferumfang enthaltene Konsistenzprüfungen aufgeführt, di
 
 Wenn bei der Überwachung Probleme auftreten, finden Sie hier einige Aufgaben zur Fehlerbehebung, die Sie ausführen können, um häufige Probleme mit [!DNL Experience Manager]-Bereitstellungen zu beheben:
 
-* Führen Sie die Tar-Komprimierung häufig durch, falls Sie TarMK nutzen. Weitere Informationen finden Sie unter [Repository](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository) beibehalten.
+* Führen Sie die Tar-Komprimierung häufig durch, falls Sie TarMK nutzen. Weitere Informationen finden Sie unter [Repository verwalten](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
 * Markieren Sie `OutOfMemoryError`-Protokolle. Weitere Informationen finden Sie unter [Analysieren von Speicherproblemen](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeMemoryProblems.html).
 
 * Prüfen Sie die Protokolle auf Verweise auf nicht indizierte Abfragen, Baumstrukturdurchläufe oder Indexdurchläufe. Dies deutet auf nicht indizierte bzw. fehlerhaft indizierte Abfragen hin. Die Best Practices zur Optimierung der Abfrage und Indexierungsleistung finden Sie unter [Bewährte Verfahren für Abfragen und Indizierung](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
