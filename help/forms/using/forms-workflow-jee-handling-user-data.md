@@ -80,7 +80,7 @@ Führen Sie die folgenden Schritte durch, um Prozessinstanz-IDs für einen Workf
 
 ### Identifizieren Sie Prozessinstanz-IDs, wenn Benutzerdaten in primitiven Variablen gespeichert werden {#primitive}
 
-Ein Workflow kann so gestaltet werden, dass die Benutzerdaten in einer Variablen erfasst werden, die als Block in der Datenbank gespeichert wird. In solchen Fällen können Sie Benutzerdaten nur abfragen, wenn sie in einer der folgenden primitiven Variablen gespeichert sind:
+Ein Workflow kann so gestaltet werden, dass die Benutzerdaten in einer Variablen erfasst werden, die als Blob in der Datenbank gespeichert wird. In solchen Fällen können Sie Benutzerdaten nur abfragen, wenn sie in einer der folgenden primitiven Variablen gespeichert sind:
 
 * **Zeichenfolge**: Enthält die Benutzer-ID direkt oder als Teilzeichenfolge und kann mit SQL abgefragt werden.
 * **Nummerisch:** Enthält direkt die Benutzer-ID.
