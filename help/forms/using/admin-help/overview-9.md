@@ -27,7 +27,7 @@ Auf jeder Seite des Arbeitsablaufs für Formulare in Administration Console kön
 <table>
  <thead>
   <tr>
-   <th><p>Seite</p></th>
+   <th><p>Seite </p></th>
    <th><p>Aufgaben</p></th>
    <th><p>Siehe</p></th>
   </tr>
