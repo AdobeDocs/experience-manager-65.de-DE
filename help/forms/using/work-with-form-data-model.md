@@ -181,7 +181,7 @@ Der im Feld **[!UICONTROL Bindungswert]** angegebene Attributname muss den volls
 
 `https://[server-name]:[port]/crx/de/index.jsp#/home/users/`
 
-![Benutzerprofil](assets/binding_crxde_user_profile_new.png)
+![Anwenderprofil](assets/binding_crxde_user_profile_new.png)
 
 Geben Sie in diesem Beispiel `profile.empid` im Feld **[!UICONTROL Bindungswert]** für den `grios`-Benutzer an.
 
