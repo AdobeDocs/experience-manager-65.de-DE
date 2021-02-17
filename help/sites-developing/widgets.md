@@ -61,7 +61,7 @@ Erstellen Sie eine Client-Bibliothek wie folgt:
    * jcr:mixinTypes=&quot;[mix:lockable]&quot;
    * jcr:primaryType=&quot;cq:ClientLibraryFolder&quot;
    * sling:resourceType=&quot;widgets/clientlib&quot;
-   * kategorien=&quot;[&lt;Kategorie-Name>]&quot;
+   * Kategorien=&quot;[&lt;Kategorie-Name>]&quot;
    * depencies=&quot;[cq.widgets]&quot;
 
    `Note: <category-name> is the name of the custom library (e.g. "cq.extjstraining") and is used to include the library on the page.`
