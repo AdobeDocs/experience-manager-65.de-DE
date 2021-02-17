@@ -126,7 +126,7 @@ Wählen Sie eine Kategorie aus, die den zu übersetzenden Inhalt beschreibt. Der
 `General.`
 
    * **[!UICONTROL Gebietsschema auswählen...]**
-(Optional) Durch Auswahl eines Gebietsschemas zum Speichern von UGC werden Beiträge aus allen Sprachkopien in einer globalen Konversation angezeigt. Standardmäßig wählen Sie das Gebietsschema für die [Basissprache](sites-console.md#translation) für die Website. Wenn Sie `No Common Store` wählen, wird die globale Übersetzung deaktiviert. Standardmäßig ist die globale Übersetzung deaktiviert.
+(Optional) Wenn Sie ein Gebietsschema zum Speichern von UGC auswählen, werden Beiträge aus allen Sprachkopien in einer globalen Konversation angezeigt. Standardmäßig wählen Sie das Gebietsschema für die [Basissprache](sites-console.md#translation) für die Website. Wenn Sie `No Common Store` wählen, wird die globale Übersetzung deaktiviert. Standardmäßig ist die globale Übersetzung deaktiviert.
 
 * **** Assetstab: kann als Standard beibehalten werden.
 * Wählen Sie **[!UICONTROL OK]** aus
@@ -149,7 +149,7 @@ Der neue Cloud-Dienst für die Integration von Übersetzungen muss in der Umgebu
 
 ### Benutzereinstellungen {#user-preference}
 
-#### Benutzerprofil {#user-profile}
+#### Anwenderprofil {#user-profile}
 
 Alle Communities-Sites bieten ein Profil, das von den angemeldeten Mitgliedern bearbeitet werden kann, um sich in der Community zu identifizieren und ihre Voreinstellungen festzulegen.
 
