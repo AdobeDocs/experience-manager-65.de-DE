@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1534'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
@@ -184,7 +184,7 @@ Ein Helfer zum Zurückgeben von Inhalten, abhängig von einer Gleichheitsbedingu
 
 ## If-wcm-mode {#if-wcm-mode}
 
-Ein Blockhelfer, der den aktuellen Wert von [WCM-Modus](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) gegen eine durch eine Zeichenfolge getrennte Liste von Modi testet.
+Ein Blockhelfer, der den aktuellen Wert von [WCM-Modus](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) gegen eine durch eine Zeichenfolge getrennte Liste von Modi testet.
 
 ### Parameter {#parameters-4}
 
@@ -285,7 +285,7 @@ Dieser Helfer, der nur serverseitig geeignet ist, bietet Funktionen, die bei JSP
 
 ### Parameter {#parameters-7}
 
-* **kategorien**: Zeichenfolge
+* **Kategorien**: Zeichenfolge
 
    (Optional) Eine Liste kommagetrennter Client-Lib-Kategorien. Dies bezieht alle Javascript-Dateien und CSS-Bibliotheken für die betreffenden Kategorien mit ein. Der Designname wird aus der Abfrage extrahiert.
 
