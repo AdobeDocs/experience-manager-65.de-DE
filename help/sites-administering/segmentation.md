@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: e5e00cc181c2dc3a28e25beb52f9a4c459ee313a
 workflow-type: tm+mt
 source-wordcount: '1779'
-ht-degree: 79%
+ht-degree: 97%
 
 ---
 
 
-# Konfigurieren der Segmentierung mit ContextHub{#configuring-segmentation-with-contexthub}
+# Konfigurieren der Segmentierung mit ContextHub {#configuring-segmentation-with-contexthub}
 
 >[!NOTE]
 >
@@ -132,7 +132,7 @@ Die folgenden Verweise sind standardmäßig für die direkte Verknüpfung eines 
 
 So legen Sie Ihr neues Segment fest:
 
-1. Nach dem Zugriff auf die Segmente [ navigieren Sie [zu dem Ordner](#organizing-segments), in dem Sie das Segment erstellen möchten, oder lassen Sie es im Stammordner liegen.](/help/sites-administering/segmentation.md#accessing-segments)
+1. Navigieren Sie nach dem [Zugriff auf die Segmente](/help/sites-administering/segmentation.md#accessing-segments) [zu dem Ordner](#organizing-segments), in dem Sie das Segment erstellen möchten, oder belassen Sie es im Stammverzeichnis.
 
 1. Klicken oder tippen Sie auf die Schaltfläche Erstellen und wählen Sie **ContextHub-Segment** erstellen.
 
@@ -230,18 +230,18 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 ## Organisieren von Segmenten {#organizing-segments}
 
-Wenn Sie viele Segmente haben, können diese als einfache Liste schwer zu verwalten sein. In solchen Fällen kann es nützlich sein, Ordner zur Verwaltung Ihrer Segmente zu erstellen.
+Wenn Sie viele Segmente haben, kann es schwierig werden, sie als flache Liste zu verwalten. In solchen Fällen kann es sinnvoll sein, Ordner zu erstellen, um Ihre Segmente zu verwalten.
 
-### Neuen Ordner {#create-folder} erstellen
+### Erstellen eines neuen Ordners {#create-folder}
 
-1. Klicken Sie nach dem Zugriff auf die Segmente](#accessing-segments) auf oder tippen Sie auf die Schaltfläche **Erstellen** und wählen Sie **Ordner**.[
+1. Klicken oder tippen Sie nach dem [Zugriff auf die Segmente](#accessing-segments) auf die Schaltfläche **Erstellen** und wählen Sie **Ordner** aus.
 
-   ![hinzufügen](assets/contexthub-create-segment.png)
+   ![Ordner hinzufügen](assets/contexthub-create-segment.png)
 
 1. Geben Sie einen **Titel** und einen **Namen** für Ihren Ordner an.
    * Der **Titel** sollte beschreibend sein.
-   * Der Knoten **Name** wird zum Knotennamen im Repository.
-      * Sie wird automatisch basierend auf dem Titel generiert und entsprechend den Benennungskonventionen [AEM angepasst.](/help/sites-developing/naming-conventions.md)
+   * Der **Name** wird zum Knotennamen im Repository.
+      * Er wird automatisch auf der Grundlage des Titels generiert und gemäß den [AEM-Namenskonventionen](/help/sites-developing/naming-conventions.md) angepasst.
       * Er kann bei Bedarf angepasst werden.
 
    ![Ordner erstellen](assets/contexthub-create-folder.png)
@@ -251,19 +251,19 @@ Wenn Sie viele Segmente haben, können diese als einfache Liste schwer zu verwal
    ![Ordner bestätigen](assets/contexthub-confirm-folder.png)
 
 1. Der Ordner wird in der Liste der Segmente angezeigt.
-   * Die Sortierung der Spalten hat Auswirkungen darauf, wo in der Liste der neue Ordner angezeigt wird.
+   * Die Sortierung Ihrer Spalten beeinflusst, wo in der Liste der neue Ordner erscheint.
    * Sie können auf die Spaltenüberschriften tippen oder klicken, um die Sortierung anzupassen.
       ![Der neue Ordner](assets/contexthub-folder.png)
 
-### Vorhandene Ordner {#modify-folders} ändern
+### Ändern vorhandener Ordner {#modify-folders}
 
-1. Nachdem Sie [auf die Segmente](#accessing-segments) zugegriffen haben, klicken oder tippen Sie auf den Ordner, den Sie ändern möchten, um ihn auszuwählen.
+1. Klicken oder tippen Sie mach dem [Zugriff auf die Segmente](#accessing-segments) auf den Ordner, den Sie ändern möchten, um ihn auszuwählen.
 
    ![Ordner auswählen](assets/contexthub-select-folder.png)
 
-1. Tippen oder klicken Sie in der Symbolleiste auf **Umbenennen**, um den Ordner umzubenennen.
+1. Tippen oder klicken Sie auf **Umbenennen** in der Symbolleiste, um den Ordner umzubenennen.
 
-1. Geben Sie einen neuen **Ordnertitel** ein und tippen oder klicken Sie auf **Speichern**.
+1. Geben Sie einen neuen **Ordnertitel** and und tippen oder klicken Sie auf **Speichern**.
 
    ![Ordner umbenennen](assets/contexthub-rename-folder.png)
 
@@ -271,27 +271,27 @@ Wenn Sie viele Segmente haben, können diese als einfache Liste schwer zu verwal
 >
 >Beim Umbenennen von Ordnern kann nur der Titel geändert werden. Der Name kann nicht geändert werden.
 
-### Ordner löschen
+### Löschen eines Ordners
 
-1. Nachdem Sie [auf die Segmente](#accessing-segments) zugegriffen haben, klicken oder tippen Sie auf den Ordner, den Sie ändern möchten, um ihn auszuwählen.
+1. Klicken oder tippen Sie mach dem [Zugriff auf die Segmente](#accessing-segments) auf den Ordner, den Sie ändern möchten, um ihn auszuwählen.
 
    ![Ordner auswählen](assets/contexthub-select-folder.png)
 
-1. Tippen oder klicken Sie in der Symbolleiste auf **Löschen**, um den Ordner zu löschen.
+1. Tippen oder klicken Sie auf **Löschen** in der Symbolleiste, um den Ordner zu löschen.
 
 1. In einem Dialogfeld wird eine Liste der zum Löschen ausgewählten Ordner angezeigt.
 
    ![Löschen bestätigen](assets/contexthub-confirm-segment-delete.png)
 
-   * Tippen oder klicken Sie zur Bestätigung auf **Löschen**.
-   * Tippen oder klicken Sie auf **Abbrechen**, um abzubrechen.
+   * Tippen oder klicken Sie zum Bestätigen auf **Löschen**.
+   * Tippen oder klicken Sie zum Abbrechen auf **Abbrechen**.
 
-1. Wenn einer der ausgewählten Ordner Unterordner oder Segmente enthält, muss der Löschvorgang bestätigt werden.
+1. Wenn einer der ausgewählten Ordner Unterordner oder Segmente enthält, muss deren Löschung bestätigt werden.
 
-   ![Löschen von Kindern bestätigen](assets/contexthub-confirm-segment-child-delete.png)
+   ![Löschen von untergeordneten Elementen bestätigen](assets/contexthub-confirm-segment-child-delete.png)
 
-   * Tippen oder klicken Sie zur Bestätigung auf **Löschen erzwingen**.
-   * Tippen oder klicken Sie auf **Abbrechen**, um abzubrechen.
+   * Tippen oder klicken Sie zum Bestätigen auf **Löschen erzwingen**.
+   * Tippen oder klicken Sie zum Abbrechen auf **Abbrechen**.
 
 >[!NOTE]
 >
