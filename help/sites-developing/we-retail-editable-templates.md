@@ -76,5 +76,5 @@ Alle Seiten in We.Retail basieren auf bearbeitbaren Vorlagen, sodass auch Benutz
 
 Weitere Informationen zu bearbeitbaren Vorlagen finden Sie im Authoring-Dokument [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) oder auf der Developer Dokument-Seite [Vorlagen - Bearbeitbar](/help/sites-developing/page-templates-editable.md).
 
-Sie können sich darüber hinaus eingehender mit [Kernkomponenten](/help/sites-developing/we-retail-core-components.md) befassen. Eine technische Übersicht über die Funktionen der Kernkomponenten und des Developer-Dokuments [Entwickeln von Kernkomponenten](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) finden Sie im Authoring-Dokument [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html).
+Sie können sich darüber hinaus eingehender mit [Kernkomponenten](/help/sites-developing/we-retail-core-components.md) befassen. Eine technische Übersicht über die Funktionen der Kernkomponenten und des Developer-Dokuments [Entwickeln von Kernkomponenten](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) finden Sie im Authoring-Dokument [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html).
 
