@@ -34,7 +34,7 @@ In AEM Communities können sich Benutzer in der Umgebung zum Veröffentlichen se
 
 In der Umgebung &quot;Veröffentlichen&quot;registrierte Benutzer werden allgemein als *Community-Mitglieder (Mitglieder)* bezeichnet, um sie von *Benutzern* in der Umgebung &quot;Autor&quot;zu unterscheiden.
 
-Berechtigungen werden gewährt, indem Mitglieder einer der [Mitglieds-(Benutzer-)Gruppen](#publish-group-roles) zugewiesen werden, die dynamisch erstellt wird, wenn die Community-Site [erstellt](sites-console.md) oder [modifiziert](sites-console.md#modifying-site-properties) aus der Authoring-Umgebung ist. Bei der Arbeit mit der Autorenfunktion sind die Mitglieder über den [Tunneldienst](#tunnel-service) in der Veröffentlichungs-Umgebung sichtbar.
+Berechtigungen werden gewährt, indem Mitglieder einer der [Mitglieds-(Benutzer-)Gruppen](#publish-group-roles) zugewiesen werden, die dynamisch erstellt wird, wenn die Community-Site [erstellt](sites-console.md) oder [modifiziert](sites-console.md#modifying-site-properties) aus der Autorenversion Umgebung ist. Bei der Arbeit mit der Autorenfunktion sind die Mitglieder über den [Tunneldienst](#tunnel-service) in der Veröffentlichungs-Umgebung sichtbar.
 
 Standardmäßig sollten in der Umgebung &quot;Veröffentlichen&quot;erstellte Mitglieder und Mitgliedsgruppen nicht in der Umgebung &quot;Autor&quot;angezeigt werden. Benutzer und Benutzergruppen, die in der Autor-Umgebung erstellt wurden, sollen in ähnlicher Weise in der Autorendatei verbleiben.
 
