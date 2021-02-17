@@ -182,7 +182,7 @@ Sie können mehrere Vorgänge auf adaptive Formularfragmente mithilfe von AEM Fo
    <td><p><strong>Beschreibung</strong></p> </td>
   </tr>
   <tr>
-   <td><p>Öffnen Sie</p> </td>
+   <td><p>Öffnen</p> </td>
    <td><p>Öffnet das Dialogfeld adaptive Formularfragment im Bearbeitungsmodus.<br /> <br /> </p> </td>
   </tr>
   <tr>
