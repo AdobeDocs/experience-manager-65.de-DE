@@ -1,8 +1,8 @@
 ---
 title: Tagging
 seo-title: Tagging
-description: Tagging ermöglicht die Kategorisierung und Organisation von Inhalten.
-seo-description: Tagging ermöglicht die Kategorisierung und Organisation von Inhalten.
+description: Tagging ermöglicht die Kategorisierung und Organisation von Inhalten
+seo-description: Tagging ermöglicht die Kategorisierung und Organisation von Inhalten
 uuid: fbbce525-ebc4-484b-bec9-2d68314cf15a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
