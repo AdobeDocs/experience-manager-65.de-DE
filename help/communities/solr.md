@@ -152,7 +152,7 @@ Die folgenden 33 Sprachen werden in Advanced MLS unterstützt.
 
 Für die SRP-Sammlung (entweder MSRP oder DSRP) muss zur Unterstützung der standardmäßigen mehrsprachigen Suche (MLS) zwei der Solr-Konfigurationsdateien geändert werden:
 
-* **schema.xml**
+* **Schema.xml**
 * **solrconfig.xml**
 
 Standard-MLS-Dateien (Schema.xml, solrconfig.xml) für Solr 4.10.
@@ -234,10 +234,10 @@ Installationsanweisungen - Beachten Sie die folgenden Unterschiede für Solr4 un
 1. Installieren und konfigurieren Sie Solr im SolrCloud-Modus.
 1. Extrahieren Sie den Inhalt des erweiterten MLS-Pakets auf die Festplatte. Der Inhalt sollte Folgendes umfassen:
 
-   * **schema.xml**
+   * **Schema.xml**
    * **solrconfig.xml**
    * **stopwords/** folder
-   * **profile/** Ordner
+   * **Profile/** Ordner
    * **extra-libs/** folder
 
 1. Vorbereitung einer neuen Konfiguration:
