@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 81%
+ht-degree: 83%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 81%
 Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website. Tags können als Keywords oder Beschriftungen betrachtet werden, die einer Seite, einem Asset oder einem anderen Inhalt zugeordnet werden können, um Suchen zu ermöglichen und dadurch Inhalte und verwandte Inhalte zu finden.
 
 * Informationen zum Erstellen und Verwalten von Tags sowie zu den angewendeten Inhalts-Tags finden Sie unter [Verwalten von Tags](/help/sites-administering/tags.md).
-* Informationen zum Tagging-Framework sowie zum Einschließen und Erweitern von Tags in benutzerdefinierten Anwendungen finden Sie unter [Tagging für Entwickler](/help/sites-developing/tags.md).
+* Unter [Tagging für Entwickler](/help/sites-developing/tags.md) finden Sie Informationen über das Tagging-Framework sowie die Einbeziehung und Erweiterung von Tags in benutzerdefinierten Anwendungen.
 
 ## Zehn Gründe für das Verwenden von Tags {#ten-reasons-to-use-tagging}
 
@@ -40,7 +40,7 @@ Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten 
 
 Wenn Sie die Inhaltsstruktur für eine Website oder das Metadatenschema für Assets entwerfen, sollten Sie den leichten und zugänglichen Ansatz berücksichtigen, den Tagging bietet.
 
-## Anwenden von Tags   {#applying-tags}
+## Anwenden von Tags  {#applying-tags}
 
 In der Autorenumgebung wenden Autoren möglicherweise Tags an, indem sie auf die Seiteneigenschaften zugreifen und ein oder mehrere Tags im Feld **Tags/Keywords** eingeben.
 
