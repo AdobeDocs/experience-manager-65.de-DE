@@ -48,7 +48,7 @@ Geben Sie auf der Registerkarte **Properties** für den neuen Knoten `clientlibs
 
 Hinweis: dem Wert &quot;Kategorien&quot;mit &quot;Apps&quot;voranstellen. ist eine Konvention, die &#39;besitzende Anwendung&#39; als im Ordner /apps, nicht als /libs identifiziert.  WICHTIG: hinzufügen Platzhalter `js.tx`t- und **`css.txt`**-Dateien. (Es handelt sich nicht offiziell um cq:ClientLibraryFolder ohne diese.)
 
-1. Klicken Sie mit der rechten Maustaste auf **`/etc/designs/an-scf-sandbox/clientlibs`**
+1. Klicken Sie mit der rechten Maustaste **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. Wählen Sie **Datei erstellen...**
 1. **Name:** `css.txt`
 1. Wählen Sie **Datei erstellen...**
