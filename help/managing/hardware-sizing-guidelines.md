@@ -250,7 +250,7 @@ Die Variablen in der Gleichung lauten wie folgt:
    <td>Verwenden Sie einen Wert zwischen 1 und 10, um die Komplexität Ihrer Vorlagen anzuzeigen. Höhere Zahlen zeigen komplexere Vorlagen an, wobei der Wert 1 für Sites mit durchschnittlich 10 Komponenten pro Seite, der Wert 5 für einen Seitendurchschnitt von 40 Komponenten und 10 für einen Durchschnitt von über 100 Komponenten verwendet wird.</td>
   </tr>
   <tr>
-   <td>aktivierungen</td>
+   <td>Aktivierungen</td>
    <td>Anzahl der durchschnittlichen Aktivierungen (Replizierung von Seiten mit mittlerer Größe und Assets vom Autor zur Veröffentlichungsstufe) pro Stunde geteilt durch x, wobei x die Anzahl der Aktivierungen ist, die auf einem System durchgeführt werden, ohne dass Auswirkungen auf die Leistung auf andere vom System verarbeitete Aufgaben auftreten. Sie können einen pessimistischen Anfangswert wie x = 100 vordefinieren.<br /> </td>
   </tr>
  </tbody>
