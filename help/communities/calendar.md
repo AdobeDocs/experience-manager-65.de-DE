@@ -208,7 +208,7 @@ Insbesondere können sie
 
 ![create-Ereignis](assets/configure-calendar2.png)
 
-![ereignis-Post](assets/configure-calendar3.png)
+![Ereignis-Post](assets/configure-calendar3.png)
 
 #### Anonym {#anonymous}
 
