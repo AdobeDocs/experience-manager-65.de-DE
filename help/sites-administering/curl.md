@@ -219,7 +219,7 @@ curl -u <user>:<password> -FdeleteAuthorizable= http://localhost:4502/home/group
 
 Weitere Informationen finden Sie unter [Sicherung und Wiederherstellung](/help/sites-administering/backup-and-restore.md#automating-aem-online-backup).
 
-### OSGi-{#osgi}
+### OSGi {#osgi}
 
 #### Starten eines Bundles {#starting-a-bundle}
 
