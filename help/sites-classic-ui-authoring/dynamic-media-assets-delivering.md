@@ -25,7 +25,7 @@ Wie Sie Dynamic Media-Assets (sowohl Videos als auch Bilder) bereitstellen könn
 Mit Dynamic Media haben Sie mehrere Optionen:
 
 * Wenn Ihre Website auf AEM gehostet ist, können Sie die Dynamic Media-Assets direkt zu Ihrer Seite hinzufügen.
-* Wenn Ihre Website nicht in AEM verwaltet wird, finden Sie unter [Bereitstellung von dynamischen Medien-Assets](/help/assets/delivering-dynamic-media-assets.md) auf der Touch-optimierten Benutzeroberfläche weitere Informationen.
+* Wenn Ihre Website nicht in AEM verwaltet wird, finden Sie unter [Bereitstellung von Dynmic Media-Assets](/help/assets/delivering-dynamic-media-assets.md) in der Touch-optimierten Benutzeroberfläche weitere Informationen.
 
 Weitere Informationen finden Sie in den folgenden Themen:
 
