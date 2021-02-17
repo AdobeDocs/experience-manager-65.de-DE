@@ -47,7 +47,7 @@ Laden Sie „Eclipse IDE for Java EE Developers“ von der [Eclipse-Downloadseit
 
 Installieren Sie Eclipse anhand der [Installationsanweisungen](https://wiki.eclipse.org/Eclipse/Installation).
 
-## Einrichten Ihres AEM-Projekts auf Grundlage von Maven  {#set-up-your-aem-project-based-on-maven}
+## Einrichten Ihres AEM-Projekts auf Grundlage von Maven {#set-up-your-aem-project-based-on-maven}
 
 Richten Sie anschließend Ihr Projekt mit Maven ein, wie unter [Wie Sie AEM Projekte mit Apache Maven](/help/sites-developing/ht-projects-maven.md) erstellen beschrieben.
 
