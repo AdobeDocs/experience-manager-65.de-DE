@@ -128,7 +128,7 @@ Sie sollten nicht nur die Überschrift **Community Play** sehen, sondern auch di
 
 Das Seitenbedienfeld &quot;Elemente/Komponenten&quot;wird angezeigt, wenn sowohl das Seitenbedienfeld geöffnet ist als auch das Fenster breit genug ist, damit sowohl der Seiteninhalt als auch der Seiteninhalt angezeigt werden können.
 
-![ansicht-Seite](assets/view-page.png)
+![Ansicht-Seite](assets/view-page.png)
 
 * Klassische Benutzeroberfläche: [http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html](http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html)
 
