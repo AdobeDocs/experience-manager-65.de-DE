@@ -67,8 +67,8 @@ Eine ausführliche Anleitung finden Sie in diesem Dokument.
 1. Wählen Sie dann **Erstellen** und **Seite erstellen** aus.
 1. Wählen Sie je nach der Adobe-Kampagne, mit der Sie sich verbinden möchten, eine der verfügbaren Vorlagen aus und klicken Sie auf **Weiter**. Standardmäßig sind drei Vorlagen verfügbar:
 
-   * **Adobe Campaign Classic E-Mail**: können Sie einer vordefinierten Vorlage (zwei Spalten) Inhalte hinzufügen, bevor Sie diese zum Versand an Adobe Campaign Classic senden.
-   * **Adobe Campaign Standard E-Mail**: können Sie einer vordefinierten Vorlage (zwei Spalten) Inhalte hinzufügen, bevor Sie diese zum Versand an Adobe Campaign Standard senden.
+   * **Adobe Campaign Classic E-Mail**: können Sie einer vordefinierten Vorlage (zwei Spalten) Inhalte hinzufügen, bevor Sie sie zum Versand an Adobe Campaign Classic senden.
+   * **Adobe Campaign Standard E-Mail**: können Sie einer vordefinierten Vorlage (zwei Spalten) Inhalte hinzufügen, bevor Sie sie zum Versand an Adobe Campaign Standard senden.
 
 1. Füllen Sie die Felder **Title** und optional **Description** aus und klicken Sie auf **Create**. Der Titel wird als Betreff des Newsletters/der E-Mail verwendet, falls er beim Bearbeiten der E-Mail nicht überschrieben wird.
 
