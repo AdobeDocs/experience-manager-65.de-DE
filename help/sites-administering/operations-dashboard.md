@@ -206,7 +206,7 @@ Die Aufgabe einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle
   </tr>
   <tr>
    <td>Abfrage-Ausnahmelimits</td>
-   <td><p>Abfrage Traversal Limits prüft die <code>QueryEngineSettings</code> MBean, genauer gesagt die <code>LimitInMemory</code>- und <code>LimitReads</code>-Attribute, und gibt den folgenden Status zurück:</p>
+   <td><p>Abfrage Traversal Limits überprüft die <code>QueryEngineSettings</code> MBean, genauer gesagt die <code>LimitInMemory</code>- und <code>LimitReads</code>-Attribute, und gibt den folgenden Status zurück:</p>
     <ul>
      <li>gibt den Warn-Status zurück, wenn einer der Beschränkungen gleich oder höher als der Wert <code>Integer.MAX_VALUE</code></li>
      <li>den Warnungsstatus, wenn eines der Limits kleiner als 10.000 (die empfohlene Einstellung von Oak) ist</li>
@@ -697,7 +697,7 @@ Das Dashboard **Systemübersicht** zeigt einen Überblick über die Konfiguratio
 
 >[!NOTE]
 >
->Sehen Sie sich dieses Video [für eine Einführung in das Dashboard &quot;Systemübersicht&quot;an.](https://video.tv.adobe.com/v/21340?captions=ger)
+>Sehen Sie sich dieses Video [für eine Einführung in das Dashboard &quot;Systemübersicht&quot;an.](https://video.tv.adobe.com/v/21340)
 
 ### Zugriff {#how-to-access}
 
