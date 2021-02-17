@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
 workflow-type: tm+mt
 source-wordcount: '2022'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -150,7 +150,7 @@ Sollen Aktivitäten verfügbar sein, müssen diese zunächst veröffentlicht wer
 
 >[!NOTE]
 >
->Wenn Sie die Veröffentlichung einer Aktivität rückgängig machen,   ändert sich der Status der Aktivität nur, wenn Sie die Seite aktualisieren.
+>Beim Rückgängigmachen der Veröffentlichung einer Aktivität ändert sich der Status der Aktivität nur, wenn Sie die Seite aktualisieren.
 
 So veröffentlichen Sie Aktivitäten oder machen deren Veröffentlichung rückgängig:
 
