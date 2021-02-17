@@ -180,7 +180,7 @@ Anschließend werden sie zum IMS-Anmeldebildschirm weitergeleitet und geben ihre
 
 ![screen_shot_2018-09-17at115629pm](assets/screen_shot_2018-09-17at115629pm.png)
 
-Wenn während der anfänglichen [!DNL Admin Console]-Einrichtung ein Federated IDP konfiguriert wird, wird der Benutzer zur einmaligen Anmeldung an den Kunden-IDP weitergeleitet.
+Wenn während der anfänglichen [!DNL Admin Console]-Einrichtung ein Federated IDP konfiguriert wurde, wird der Benutzer zur einmaligen Anmeldung an den Kunden-IDP weitergeleitet.
 
 Im folgenden Beispiel ist Okta der IDP:
 
