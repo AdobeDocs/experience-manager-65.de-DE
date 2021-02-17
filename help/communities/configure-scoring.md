@@ -226,7 +226,7 @@ Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und
 >* Die Namen von Bewertungsregeln sollten global eindeutig sein. sie sollten nicht mit demselben Namen enden.
 >
 >  
-Beispiel für die folgenden Aufgaben:**
+Beispiel für die folgenden Schritte:**
 >
 >  /libs/settings/community/scoring/rules/site1/forums-scoring
 >  /libs/settings/community/scoring/rules/site2/forums-scoring
