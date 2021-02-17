@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
 source-wordcount: '1080'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
@@ -64,7 +64,7 @@ Sobald ein [!DNL Adobe Stock]-Asset in [!DNL Experience Manager] lizenziert ist,
 
 *Abbildung: Suchen Sie nach  [!DNL Adobe Stock] Assets und filtern Sie die Ergebnisse aus Ihrer  [!DNL Experience Manager] Oberfläche.*
 
-**A.**[!DNL Adobe Stock] Suchen Sie Assets, die den Assets ähneln, deren ID bereitgestellt wird. **B.** Nach Assets suchen, die Ihrer Form- und Ausrichtungswahl entsprechen. **C.** Suchen Sie nach einem der unterstützten Asset-Typen  **D.** Öffnen Sie den Bereich &quot;Filter&quot; **E.** Lizenz und speichern Sie das ausgewählte Asset in  [!DNL Experience Manager] **F.** Speichern Sie das Asset  [!DNL Experience Manager] mit dem Wasserzeichen  **G.**   [!DNL Adobe Stock]   ****   [!DNL Adobe Stock]   ****   **** Untersuchen Sie Assets auf der Website, die dem ausgewählten Asset ähnlich sind.Ansicht der ausgewählten Assets auf der Seite AnsichtI.AnsichtAnzahl der ausgewählten Assets Suchergebnisse der  zwischen Karte und Liste
+**A.**[!DNL Adobe Stock] Suchen Sie Assets, die den Assets ähneln, deren ID bereitgestellt wird. **B.** Nach Assets suchen, die Ihrer Form- und Ausrichtungswahl entsprechen. **C.** Suchen Sie nach einem der unterstützten Asset-Typen  **D.** Öffnen Sie den Bereich &quot;Filter&quot; **E.** Lizenz und speichern Sie das ausgewählte Asset in  [!DNL Experience Manager] **F.** Speichern Sie das Asset  [!DNL Experience Manager] mit dem Wasserzeichen  **G.**   [!DNL Adobe Stock]   ****   [!DNL Adobe Stock]   ****   **** Untersuchen Sie Assets auf der Website, die dem ausgewählten Asset ähnlich sind.Ansicht der ausgewählten Assets auf der SeiteI.AnsichtAnzahl der ausgewählten Assets SuchergebnisseAnsicht der  zwischen Karte und Liste
 
 ### Suchen von Assets {#find-assets}
 
@@ -122,7 +122,7 @@ Benutzer können die Eigenschaften für lizenzierte und unlizenzierte Assets anz
 
 >[!MORELIKETHIS]
 >
->* [Videoschulung zum  [!DNL Adobe Stock] Verwenden von Assets mit [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [Videoschulung zum  [!DNL Adobe Stock] Verwenden von Assets mit [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=de)
 >* [[!DNL Adobe Stock] Enterprise-Plan](https://helpx.adobe.com/de/enterprise/using/adobe-stock-enterprise.html)
 >* [[!DNL Adobe Stock] Häufig gestellte Fragen (FAQ)](https://helpx.adobe.com/de/stock/faq.html)
 
