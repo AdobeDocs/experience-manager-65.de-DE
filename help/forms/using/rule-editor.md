@@ -112,7 +112,7 @@ Einfach ausgedrückt: Eine typische Wenn-Regel ist wie folgt aufgebaut:
 
 Aktion 2 auf Objekt B; UND Aktion 3 auf Objekt C;
 
-_
+]
 
 Wenn Sie eine Komponente mit mehreren Werten, wie Optionsfelder oder Listen, beim Erstellen einer Regel für diese Komponente verwenden, werden die Optionen automatisch abgerufen und dem Regelersteller zur Verfügung gestellt. Sie müssen die Optionswerte nicht erneut eingeben.
 
@@ -688,7 +688,7 @@ var c = {
 
 Alle vorhandenen Regeln für ein Formularobjekt werden angezeigt, wenn Sie auf das Objekt tippen und auf ![edit-rules1](assets/edit-rules1.png) tippen. Sie können den Titel und eine Vorschau der Regelübersicht anzeigen. Darüber hinaus können Sie in der Benutzeroberfläche die vollständige Regelübersicht erweitern und anzeigen, die Reihenfolge der Regeln ändern, Regeln bearbeiten und Regeln löschen.
 
-![listen](assets/list-rules.png)
+![Listen](assets/list-rules.png)
 
 Sie können die folgenden Aktionen für Regeln durchführen:
 
