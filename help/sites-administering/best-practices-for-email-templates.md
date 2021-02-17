@@ -23,7 +23,7 @@ ht-degree: 43%
 
 >[!CAUTION]
 >
->Die AEM E-Mail-Komponenten wurden nicht mehr unterstützt. Aufgrund der Art der E-Mail, die Inhalt und Stil zusammenführt, werden die standardmäßig bereitgestellten E-Mail-Komponenten für Kunden nur in begrenztem Umfang wiederverwendet, da benutzerdefinierte Stile in alle Komponenten implementiert werden müssen, die für Projekte erforderlich sind.
+>Die AEM E-Mail-Komponenten wurden nicht mehr unterstützt. Aufgrund der Art der E-Mail, die Inhalt und Stil zusammenführt, werden die von AEM standardmäßig bereitgestellten E-Mail-Komponenten für Kunden nur eingeschränkt wiederverwendet, da benutzerdefinierte Stile in alle Komponenten implementiert werden müssen, die für Projekte erforderlich sind.
 >
 >E-Mail-Komponenten können auf Projektebene implementiert werden. Die veralteten AEM E-Mail-Komponenten veranschaulichen, wie dies erreicht werden kann. Diese veralteten Komponenten sollten jedoch nicht in Projekten verwendet werden.
 
@@ -47,7 +47,7 @@ Verwenden Sie diese Best Practices bei der Erstellung Ihres eigenen Newsletters.
 
 >[!NOTE]
 >
->Beim Erstellen einer E-Mail-Vorlage für Adobe Campaign müssen Sie die Eigenschaft **acMapping** mit dem Wert **mapRecipient** in den **jcr:content**-Knoten der Vorlage einschließen. Andernfalls können Sie die Adobe Campaign-Vorlage nicht in **Seiteneigenschaften** von AEM (deaktiviert) auswählen ).
+>Beim Erstellen einer E-Mail-Vorlage für Adobe Campaign müssen Sie die Eigenschaft **acMapping** mit dem Wert **mapRecipient** in den **jcr:content**-Knoten der Vorlage einschließen, oder Sie können die Vorlage für das Adobe Campaign nicht in **Seiteneigenschaften** von AEM (deaktiviert ist) auswählen ).
 
 ## Vorlage/Seitenkomponente {#template-page-component}
 
