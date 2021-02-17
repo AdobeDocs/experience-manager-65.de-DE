@@ -171,7 +171,7 @@ Wählen Sie **Weiter** aus.
 
 Wählen Sie **Erstellen.**
 
-![vorschau](assets/preview.png)
+![Vorschau](assets/preview.png)
 
 Nach Abschluss des Vorgangs wird der Ordner für die neue Site in der Konsole Communities > Sites angezeigt.
 
