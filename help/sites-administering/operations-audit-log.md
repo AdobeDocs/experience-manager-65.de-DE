@@ -70,7 +70,7 @@ Führen Sie zum Konfigurieren der Auditprotokolllöschung die folgenden Schritte
 
 Wenn in AEM 6.3 das geplante Wartungsfenster geschlossen wird, bevor die Aufgabe zur Bereinigung des Prüfprotokolls abgeschlossen werden kann, wird die Aufgabe automatisch beendet. Sie wird fortgesetzt, wenn das nächste Wartungsfenster beginnt.
 
-**Mit AEM 6.5** können Sie eine laufende Aufgabe zum Bereinigen des Prüfprotokolls manuell beenden, indem Sie auf das  **** Stoppsymbol klicken. Bei der nächsten Ausführung wird die Aufgabe auf sichere Art und Weise wiederaufgenommen.
+**Mit AEM 6.5** können Sie eine laufende Aufgabe zum Bereinigen des Prüfprotokolls manuell beenden, indem Sie auf das  **** Stopsymbol klicken. Bei der nächsten Ausführung wird die Aufgabe auf sichere Art und Weise wiederaufgenommen.
 
 >[!NOTE]
 >
