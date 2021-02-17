@@ -1,6 +1,6 @@
 ---
-title: 'Einrichten von Dynamic Media  '
-description: Zum Einrichten von Dynamic Media müssen Sie Dynamic Media konfigurieren und Bild- und Viewer-Vorgaben verwalten.
+title: Einrichten von Dynamic Media
+description: Zum Einrichten von Dynamic Media müssen Sie Dynamic Media konfigurieren und Bild- sowie Viewer-Vorgaben verwalten.
 uuid: bcd1f9ab-4201-4222-9e4a-ba82b3c7cd6c
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,7 +9,7 @@ translation-type: tm+mt
 source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
 source-wordcount: '254'
-ht-degree: 65%
+ht-degree: 72%
 
 ---
 
