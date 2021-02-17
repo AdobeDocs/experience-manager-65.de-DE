@@ -67,7 +67,7 @@ So erstellen Sie einen privaten Ordner und geben ihn frei:
 
 >[!NOTE]
 >
->Zum Erstellen eines privaten Ordners benötigen Sie die Berechtigungen zum Lesen und Ändern von [Zugriffskontrollen](/help/sites-administering/security.md#permissions-in-aem) im übergeordneten Ordner, unter dem Sie einen privaten Ordner erstellen möchten. Wenn Sie kein Administrator sind, sind diese Berechtigungen standardmäßig für `/content/dam` nicht aktiviert. In diesem Fall sollten Sie zunächst diese Berechtigungen für Ihre Benutzer-ID/Gruppe abrufen, bevor Sie versuchen, private Ordner zu erstellen.
+>Zum Erstellen eines Privatordners benötigen Sie die Berechtigungen zum Lesen und Ändern von [Zugriffskontrollen](/help/sites-administering/security.md#permissions-in-aem) im übergeordneten Ordner, unter dem Sie einen Privatordner erstellen möchten. Wenn Sie kein Administrator sind, sind diese Berechtigungen standardmäßig für `/content/dam` nicht aktiviert. In diesem Fall sollten Sie zunächst diese Berechtigungen für Ihre Benutzer-ID/Gruppe abrufen, bevor Sie versuchen, private Ordner zu erstellen.
 
 ## Löschen des privaten Ordners {#delete-private-folder}
 
