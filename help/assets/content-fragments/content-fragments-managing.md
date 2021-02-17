@@ -133,7 +133,7 @@ So öffnen Sie ein Fragment zur Bearbeitung:
 1. Navigieren Sie in der Konsole **Assets** zum Speicherort des gewünschten Inhaltsfragments.
 1. Öffnen Sie das Fragment zur Bearbeitung. Befolgen Sie dazu einen der folgenden Schritte:
 
-   * Klicken/tippen Sie auf das Fragment oder den Fragmentlink (abhängig von der Konsolenansicht).
+   * Klicken/tippen Sie auf das Fragment oder den Fragment-Link (abhängig von der Konsolenansicht).
    * Wählen Sie das Fragment und anschließend in der Symbolleiste die Option **Bearbeiten** aus.
 
    Der Fragmenteditor wird geöffnet:
