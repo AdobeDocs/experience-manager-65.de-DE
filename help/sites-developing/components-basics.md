@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: 149cdd00f745ad897f506434d7156b8147ef5bae
 workflow-type: tm+mt
 source-wordcount: '4974'
-ht-degree: 64%
+ht-degree: 71%
 
 ---
 
@@ -31,7 +31,7 @@ In diesem Abschnitt werden zentrale Konzepte und Schwierigkeiten erläutert. Er 
 
 ### Planung {#planning}
 
-Bevor Sie mit der Konfiguration oder dem Code Ihrer Komponente beginnen, sollten Sie sich fragen:
+Vor dem Konfigurieren bzw. Programmieren einer Komponente sollten Sie die folgenden Fragen beantworten:
 
 * Was genau soll die neue Komponente tun?
    * Eine eindeutige Spezifikation hilft in allen Phasen der Entwicklung, des Testings und der Übergabe. Details können sich im Laufe der Zeit ändern, woraufhin die Spezifikation jedoch aktualisiert werden kann (Änderungen sollten jedoch ebenso dokumentiert werden).
@@ -68,7 +68,7 @@ Daher werden auf dieser Seite die Grundlagen und die Erkennungsmerkmale beider V
 
 Es empfiehlt sich, den für Markup und Rendering zuständigen Code getrennt von dem Code zu halten, der die Logik zur Auswahl des Komponenteninhalts enthält.
 
-Dieser Ansatz wird durch [HTL](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html) unterstützt, eine Vorlagensprache, die dazu dient sicherzustellen, dass eine echte Programmiersprache für die Definition der zugrunde liegenden Geschäftslogik genutzt wird. Diese (optionale) Logik wird von HTL über einen speziellen Befehl aufgerufen. Dieser Mechanismus kennzeichnet den Code, der für eine bestimmte Ansicht aufgerufen wird, und lässt bei Bedarf eine spezifische Logik für unterschiedliche Ansichten derselben Komponente zu.
+Dieser Ansatz wird durch [HTL](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html) unterstützt, eine Vorlagensprache, die dazu dient sicherzustellen, dass eine echte Programmiersprache für die Definition der zugrunde liegenden Geschäftslogik genutzt wird. Diese (optionale) Logik wird von HTL über einen speziellen Befehl aufgerufen. Dieser Mechanismus kennzeichnet den Code, der für eine bestimmte Ansicht aufgerufen wird, und lässt bei Bedarf eine spezifische Logik für unterschiedliche Ansichten derselben Komponente zu.
 
 ### Vergleich zwischen HTL und JSP {#htl-vs-jsp}
 
@@ -129,11 +129,11 @@ Die Struktur einer AEM-Komponente ist leistungsstark und flexibel. Die wichtigst
 * Komponentendefinition
 * Eigenschaften und untergeordnete Knoten einer Komponente
 * Dialogfelder
-* Designdialogfelder
+* Design-Dialogfelder
 * Verfügbarkeit von Komponenten
 * Komponenten und die von ihnen erstellten Inhalte
 
-### Ressourcentyp  {#resource-type}
+### Ressourcentyp {#resource-type}
 
 Ein zentrales Element der Struktur ist der Ressourcentyp.
 
@@ -174,7 +174,7 @@ Die Definition einer Komponente lässt sich wie folgt aufschlüsseln:
 
 * **Stammknoten**:
 
-   * `<mycomponent> (cq:Component)` - Hierarchie-Knoten der Komponente.
+   * `<mycomponent> (cq:Component)` – Hierarchieknoten der Komponente.
 
 * **Wichtige Eigenschaften**:
 
@@ -195,7 +195,7 @@ Die Definition einer Komponente lässt sich wie folgt aufschlüsseln:
 
       Hinweis: Wenn die Komponente über ein Dialogfeld verfügt, wird sie automatisch im Komponenten-Browser oder Sidekick aufgeführt, selbst wenn die cq:editConfig nicht vorhanden ist.
 
-   * `cq:childEditConfig (cq:EditConfig)` - Steuert die Aspekte der Autorenbenutzeroberfläche für untergeordnete Komponenten, die keine eigenen definieren  `cq:editConfig`.
+   * `cq:childEditConfig (cq:EditConfig)` – Steuert Aspekte der Autoren-Benutzeroberfläche für untergeordnete Komponenten, die keine eigene `cq:editConfig` definieren.
    * Touch-optimierte Benutzeroberfläche:
 
       * `cq:dialog` (  `nt:unstructured`) - Dialog für diese Komponente. Definiert die Oberfläche, über die Benutzer die Komponente konfigurieren und/oder Inhalte bearbeiten können.
@@ -208,33 +208,33 @@ Die Definition einer Komponente lässt sich wie folgt aufschlüsseln:
 
 #### Komponentensymbol in der Touch-optimierten Benutzeroberfläche {#component-icon-in-touch-ui}
 
-Das Symbol oder die Abkürzung für die Komponente wird über die JCR-Eigenschaften der Komponente definiert, wenn die Komponente vom Entwickler erstellt wird. Diese Eigenschaften werden in der folgenden Reihenfolge ausgewertet und die erste erkannte gültige Eigenschaft wird verwendet.
+Das Symbol oder die Abkürzung für die Komponente wird mit JCR-Eigenschaften der Komponente definiert, wenn die Komponente vom Entwickler erstellt wird. Diese Eigenschaften werden in der folgenden Reihenfolge ausgewertet und die erste erkannte gültige Eigenschaft wird verwendet.
 
-1. `cq:icon` - String-Eigenschaft, die auf ein Standardsymbol in der  [Coral UI-Bibliothek verweist und im Komponenten-Browser angezeigt ](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) wird
+1. `cq:icon` – Zeichenfolgeneigenschaft, die auf ein Standardsymbol in der [Bibliothek der Coral-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) verweist, das im Komponenten-Browser angezeigt werden soll.
    * Verwenden Sie den Wert des HTML-Attributs des Coral-Symbols.
-1. `abbreviation` - String-Eigenschaft zum Anpassen der Abkürzung des Komponentennamens im Komponenten-Browser
+1. `abbreviation` – Zeichenfolgeneigenschaft, die die Abkürzung des Komponentennamens im Komponenten-Browser anpasst.
    * Die Abkürzung sollte auf zwei Zeichen beschränkt sein.
-   * Bei einem leeren String wird die Abkürzung aus den ersten beiden Buchstaben der Eigenschaft `jcr:title` gebildet.
+   * Bei einer leeren Zeichenfolge wird die Abkürzung aus den ersten beiden Buchstaben der Eigenschaft `jcr:title` gebildet.
       * Beispiel: „Gr“ für „Grafik“.
       * Zum Erstellen der Abkürzung wird der lokalisierte Titel verwendet.
    * Die Abkürzung wird nur übersetzt, wenn die Komponente die Eigenschaft `abbreviation_commentI18n` aufweist, die dann als Anweisung für eine Übersetzung genutzt wird.
 1. `cq:icon.png` oder  `cq:icon.svg` - Symbol für diese Komponente, das im Komponenten-Browser angezeigt wird
    * Symbole von Standardkomponenten haben eine Größe von 20 x 20 Pixeln.
-      * Größere Symbole werden verkleinert (clientseitig).
-   * Die empfohlene Farbe ist rgb(112, 112, 112) > #707070
+      * Größere Symbole werden verkleinert (Client-seitig).
+   * Die empfohlene Farbe ist rgb(112, 112, 112) > #707070.
    * Der Hintergrund von Symbolen von Standardkomponenten ist transparent.
-   * Es werden nur die Dateien `.png` und `.svg` unterstützt.
-   * Beim Import aus dem Dateisystem über das Eclipse-Plugin müssen Dateinamen beispielsweise mit `_cq_icon.png` oder `_cq_icon.svg` gekennzeichnet werden.
+   * Es werden nur `.png`- und `.svg`-Dateien unterstützt.
+   * Beim Importieren aus dem Dateisystem über das Eclipse-Plug-in müssen die Dateinamen nach folgendem Schema geändert werden: z. B. `_cq_icon.png` oder `_cq_icon.svg`.
    * `.png` hat Vorrang,  `.svg` wenn beide vorhanden sind
 
-Wenn keine der oben genannten Eigenschaften ( `cq:icon`, `abbreviation`, `cq:icon.png` oder `cq:icon.svg`) für die Komponente gefunden wird:
+Wenn keine der o. g. Eigenschaften (`cq:icon`, `abbreviation`, `cq:icon.png` oder `cq:icon.svg`) bei der Komponente gefunden wird:
 
 * Das System sucht nach denselben Eigenschaften bei den übergeordneten Komponenten, die der Eigenschaft `sling:resourceSuperType` folgen.
-* Wenn auf der Superkomponentenebene nichts oder eine leere Abkürzung gefunden wird, erstellt das System die Abkürzung aus den ersten Buchstaben der `jcr:title`-Eigenschaft der aktuellen Komponente.
+* Wenn auf der Ebene der übergeordneten Komponente nichts oder eine leere Abkürzung gefunden wird, erstellt das System die Abkürzung aus den ersten beiden Zeichen der Eigenschaft `jcr:title` der aktuellen Komponente.
 
 Um die Vererbung von Symbolen von übergeordneten Komponenten zu deaktivieren, legen Sie eine leere Eigenschaft `abbreviation` für die Komponente fest. Das Standardverhalten wird daraufhin erneut aktiviert.
 
-Die [Komponentenkonsole](/help/sites-authoring/default-components-console.md#component-details) zeigt an, wie das Symbol für eine bestimmte Komponente definiert wird.
+Die [Komponentenkonsole](/help/sites-authoring/default-components-console.md#component-details) zeigt an, wie das Symbol für eine bestimmte Komponente definiert ist.
 
 #### Beispiel: SVG-Symbol {#svg-icon-example}
 
@@ -266,7 +266,7 @@ Eine Komponente ist ein Knoten des Typs `cq:Component` mit den folgenden Eigensc
   <tr>
    <td>.<br /> </td>
    <td><code>cq:Component</code></td>
-   <td>Aktuelle Komponente. Eine Komponente ist vom Knotentyp <code>cq:Component</code>.<br /> </td>
+   <td>Aktuelle Komponente. Eine Komponente weist den Knotentyp <code>cq:Component</code> auf.<br /> </td>
   </tr>
   <tr>
    <td><code>componentGroup</code></td>
@@ -475,7 +475,7 @@ Dialogdefinitionen sind spezifisch für jede Benutzeroberfläche.
    * Ein `cq:WidgetCollection` ( `items`) wird verwendet, um eine Basis für Eingabefelder ( `cq:Widget`) oder weitere Registerkarten ( `cq:Widget`) bereitzustellen. Diese Hierarchie kann erweitert werden.
 
 
-### Designdialogfelder {#design-dialogs}
+### Design-Dialogfelder {#design-dialogs}
 
 Designdialogfelder ähneln den Dialogfeldern, die zum Bearbeiten und Konfigurieren von Inhalten genutzt werden. Sie stellen die Oberfläche für Autoren zum Konfigurieren bereit und liefern Designinformationen für diese Komponente.
 
@@ -500,7 +500,7 @@ Nachdem eine Komponente definiert wurde, muss sie zur Verwendung bereitgestellt 
 
 ### Komponenten und die von ihnen erstellten Inhalte {#components-and-the-content-they-create}
 
-Wenn Sie eine Instanz der Komponente **Title** auf der Seite erstellen und konfigurieren: `<content-path>/Prototype.html`
+Wir erstellen und konfigurieren eine Instanz der **Titelkomponente** auf der Seite: `<content-path>/Prototype.html`
 
 * Touch-optimierte Benutzeroberfläche
 
@@ -525,13 +525,13 @@ Sehen Sie sich besonders den tatsächlichen Text für eine **Titel**-Komponente 
 
 Die definierten Eigenschaften sind von den einzelnen Definitionen abhängig. Zwar können sie komplexer als oben dargestellt sein, folgen aber dennoch denselben grundlegenden Prinzipien.
 
-## Komponentenhierarchie und Vererbung  {#component-hierarchy-and-inheritance}
+## Komponentenhierarchie und Vererbung   {#component-hierarchy-and-inheritance}
 
 Komponenten in AEM unterliegen drei verschiedenen Hierarchien:
 
 * **Ressourcentyp-Hierarchie**
 
-   Dies wird zum Erweitern von Komponenten mithilfe der Eigenschaft `sling:resourceSuperType` verwendet. Dies aktiviert die Vererbung für die Komponente. Beispielsweise erbt eine Textkomponente verschiedene Attribute von der Standardkomponente.
+   Diese wird verwendet, um Komponenten mit der `sling:resourceSuperType`-Eigenschaft zu erweitern. Dies aktiviert die Vererbung für die Komponente. Beispielsweise erbt eine Textkomponente verschiedene Attribute von der Standardkomponente.
 
    * Skripte (aufgelöst durch Sling)
    * Dialogfelder
@@ -571,7 +571,7 @@ Um das Bearbeitungsverhalten einer Komponente zu konfigurieren, fügen Sie einen
    * `dialogLayout` (String): legt fest, wie das Dialogfeld geöffnet werden soll
 
 
-* [ `cq:editConfig` untergeordnete Knoten](#configuring-with-cq-editconfig-child-nodes):
+* [`cq:editConfig`Untergeordnete -Knoten](#configuring-with-cq-editconfig-child-nodes):
 
    * `cq:dropTargets` (Knotentyp  `nt:unstructured`): definiert eine Liste von Dropdown-Zielgruppen, die ein Ablegen aus einem Asset der Inhaltssuche akzeptieren können
 
@@ -580,7 +580,7 @@ Um das Bearbeitungsverhalten einer Komponente zu konfigurieren, fügen Sie einen
    * `cq:actionConfigs` (Knotentyp  `nt:unstructured`): definiert eine Liste neuer Aktionen, die an die Liste &quot;cq:actions&quot;angehängt werden.
    * `cq:formParameters` (Knotentyp  `nt:unstructured`): definiert zusätzliche Parameter, die dem Dialogfeld hinzugefügt werden.
    * `cq:inplaceEditing` (Knotentyp  `cq:InplaceEditingConfig`): definiert eine ersetzende Bearbeitungskonfiguration für die Komponente.
-   * `cq:listeners` (Knotentyp  `cq:EditListenersConfig`): definiert, was vor oder nach einer Aktion für die Komponente geschieht.
+   * `cq:listeners` (Knotentyp `cq:EditListenersConfig`): Legt fest, was geschieht, bevor oder nachdem eine Aktion auf der Komponente stattfindet.
 
 
 >[!NOTE]
@@ -799,7 +799,7 @@ Die Eigenschaft `dialogLayout` legt fest, wie ein Dialogfeld standardmäßig ge�
 * Hinweis: Benutzer können den Vollbildmodus jederzeit innerhalb des Dialogfelds aktivieren.
 * Gilt nicht für die klassische Benutzeroberfläche.
 
-### Konfigurieren mit untergeordneten cq:EditConfig-Knoten  {#configuring-with-cq-editconfig-child-nodes}
+### Konfigurieren mit untergeordneten cq:EditConfig-Knoten {#configuring-with-cq-editconfig-child-nodes}
 
 ### cq:dropTargets {#cq-droptargets}
 
@@ -948,7 +948,7 @@ Die folgende Konfiguration aktiviert die Kontextbearbeitung der Komponente und l
 
 ### cq:listeners {#cq-listeners}
 
-Der Knoten `cq:listeners` (Knotentyp `cq:EditListenersConfig`) definiert, was vor oder nach einer Aktion für die Komponente geschieht. In der folgenden Tabelle sind die möglichen Eigenschaften aufgeführt.
+Der Knoten `cq:listeners` (Knotentyp `cq:EditListenersConfig`) legt fest, was geschieht, bevor oder nachdem eine Aktion auf der Komponente stattfindet. In der folgenden Tabelle sind die möglichen Eigenschaften aufgeführt.
 
 <table>
  <tbody>
