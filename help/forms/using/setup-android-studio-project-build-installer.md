@@ -91,7 +91,7 @@ Die folgende Abbildung zeigt die Ordnerstruktur des Ordners `android`im Ordner `
 
    ![dontremindemagainrisproject](assets/dontremindmeagainforthisproject.png)
 
-1. Nach dem erfolgreichen Erstellen des Gradle erscheint der folgende Bildschirm. Verbinden Sie das entsprechende Gerät oder den Emulator mit dem System und klicken Sie auf **[!UICONTROL Android™ ausführen]**.
+1. Nach dem erfolgreichen Erstellen des Gradle erscheint der folgende Bildschirm. Schließen Sie das entsprechende Gerät oder den Emulator an das System an und klicken Sie auf **[!UICONTROL Android™]** ausführen.
 
    ![Gradleconsole](assets/gradleconsole.png)
 
