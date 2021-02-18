@@ -57,7 +57,6 @@ Eine Site oder Live Copy verweist auf ein Gebiet, das die Aktivitäten enthält,
 >
 >* Wenn Sie Rollouts oder Live Copys verwenden, ist eine MSM-Lizenz erforderlich.
 >* Wenn Sie die Synchronisierung mit Adobe Target verwenden, ist eine Adobe Target-Lizenz erforderlich.
-
 >
 
 
@@ -250,7 +249,6 @@ Eine Aktivität, die Daten von einer anderen Site erbt, weist neben ihrem Namen 
 >
 >* Sie können Live Copys nur in einer Aktivität aussetzen oder deaktivieren.
 >* Live Copys müssen nicht ausgesetzt oder getrennt werden, um eine geerbte Aktivität zu erweitern. Sie können jederzeit **neue** lokale Erlebnisse und Angebote für die Aktivität erstellen. Möchten Sie eine bestehende Aktivität bearbeiten, müssen Sie die Vererbung aussetzen.
-
 >
 
 
