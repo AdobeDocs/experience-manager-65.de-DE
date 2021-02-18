@@ -10,10 +10,10 @@ topic-tags: site-features, best-practices
 content-type: reference
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
 translation-type: tm+mt
-source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+source-git-commit: cacf15a4e9c407d86aef47d7a6dda19e8eda7fb7
 workflow-type: tm+mt
-source-wordcount: '1530'
-ht-degree: 65%
+source-wordcount: '1639'
+ht-degree: 61%
 
 ---
 
@@ -25,6 +25,7 @@ ht-degree: 65%
 MSM ist ein konfigurierbares Framework für die Automatisierung der Inhaltsbereitstellung. Implementierungen umfassen häufig große Teile einer Website und erstrecken sich über Organisationen und geografische Regionen. Es wird daher dringend empfohlen, MSM-Implementierungen mit der gleichen Sorgfalt zu planen wie Ihre Website:
 
 * Sorgfältig **Planen Sie Struktur und Inhaltsflüsse**, bevor Sie die Implementierung starten.
+* **Halten Sie die Anzahl der Live-Kopien auf ein Minimum.** Die Verarbeitung von Live-Kopien ist eine ressourcenintensive Aufgabe. Je mehr Live-Kopien in Ihrem System vorhanden sind, desto mehr Leistung kann betroffen sein: von der Verarbeitung interner Live-Copy-Indizes über Live-Copy-Vorgänge wie Rollouts bis hin zu Benutzeroberflächenvorgängen wie dem Anzeigen von Live-Copy-Beziehungen in der Sites Admin-Referenzleiste. Best Practice ist, Live-Kopien von Sites oder Zweigen einer Site zu erstellen, bei denen die Live-Copy-Beziehungen zu Seiten in der Site oder Zweigstelle geerbt werden. Vermeiden Sie es, einzelne Live-Kopien für Seiten einer Site oder Verzweigung zu erstellen, wenn die gesamte Struktur in eine Live-Kopie umgewandelt werden kann.
 * **Beschränken Sie Anpassungen auf das Nötigste.** MSM unterstützt zwar einen hohen Grad an Anpassung (z.B. Rollout-Konfigurationen), ist aber in der Regel die beste Methode für die Leistung, Zuverlässigkeit und Upgradefähigkeit Ihrer Website, die Anpassung zu minimieren.
 * Richten Sie frühzeitig ein **Governance**-Modell ein und trainieren Sie die Benutzer entsprechend, um den Erfolg sicherzustellen. Eine Best Practice von einem Governance-Punkt der Ansicht ist **die Minimierung der Autorität, die lokale Inhaltsproduzenten haben, um Inhalte anderen lokalen Nutzern und deren entsprechenden Live-Kopien zuzuordnen/zu verbinden.** Das liegt daran, dass ungesteuerte, verkettete Erbschaften die Komplexität einer MSM-Struktur deutlich erhöhen und ihre Leistung und Zuverlässigkeit beeinträchtigen können.
 
