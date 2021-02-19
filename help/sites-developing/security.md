@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: d2267663-6c1d-413c-9862-e82e21ae6906
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: ea4de28525ec4c2094e84d98aad6a518b03f011e
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 76%
@@ -24,7 +24,7 @@ Anwendungssicherheit beginnt während der Entwicklung. Adobe empfiehlt die folge
 
 ## Verwenden Sie Sitzungsanfragen {#use-request-session}
 
-Entsprechend dem Prinzip der Zugriffsrechte auf das Repository empfiehlt Adobe, dass jeder Repository-Zugriff über die an die Benutzeranforderung gebundene Sitzung und die richtige Zugriffskontrolle erfolgt.
+Nach dem Prinzip der geringsten Berechtigungen empfiehlt Adobe, dass jeder Repository-Zugriff über die Sitzung erfolgt, die an die Benutzeranforderung und die richtige Zugriffskontrolle gebunden ist.
 
 ## Schutz vor Cross-Site Scripting (XSS) {#protect-against-cross-site-scripting-xss}
 
