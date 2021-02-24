@@ -3,9 +3,9 @@ title: 'Best Practices für die Freigabe von Ordnern auf [!DNL Adobe Creative Cl
 description: Konfigurieren Sie [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] zum Austausch von Ordnern mit Adobe Creative Cloud (CC)-Benutzern.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 18e62f8fb46de20e1668b2dcdcedf68fe4622b50
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '955'
 ht-degree: 18%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 18%
 
 >[!CAUTION]
 >
->Die Funktion [!DNL Experience Manager] bis [!DNL Creative Cloud] &quot;Ordnerfreigabe&quot;wird nicht mehr unterstützt. Adobe empfiehlt dringend die Verwendung neuerer Funktionen wie [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) oder [Experience Manager Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de). Weitere Informationen finden Sie unter [Best Practices für die Integration von Experience Managern und Creative Clouden](/help/assets/aem-cc-integration-best-practices.md).
+>Die Funktion [!DNL Experience Manager] bis [!DNL Creative Cloud] &quot;Ordnerfreigabe&quot;wird nicht mehr unterstützt. Adobe empfiehlt dringend die Verwendung neuerer Funktionen wie [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) oder [Experience Manager Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de). Weitere Informationen finden Sie unter [Best Practices für die Integration von Experience Managern und Creative Clouden](/help/assets/aem-cc-integration-best-practices.md).
 
 [!DNL Adobe Experience Manager] können so konfiguriert werden, dass Benutzer Ordner  [!DNL Assets] für die Benutzer von  [!DNL Adobe Creative Cloud] Apps freigeben können, sodass sie als freigegebene Ordner im  [!DNL Adobe Creative Cloud] Assets-Dienst verfügbar sind. Die Funktion kann zum Austausch von Dateien zwischen Kreativteams und [!DNL Assets]-Benutzern verwendet werden, insbesondere dann, wenn die Kreativbenutzer keinen Zugriff auf die [!DNL Assets]-Bereitstellung haben (sie befinden sich nicht im Unternehmensnetzwerk).
 
