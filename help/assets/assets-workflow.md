@@ -3,10 +3,10 @@ title: Verarbeiten von Assets mit Workflows
 description: Asset-Verarbeitung zum Konvertieren von Formaten, Erstellen von Darstellungen, Verwalten von Assets, Überprüfen von Assets und Ausführen von Workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
+source-git-commit: 18e62f8fb46de20e1668b2dcdcedf68fe4622b50
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 27%
+source-wordcount: '961'
+ht-degree: 26%
 
 ---
 
@@ -106,5 +106,4 @@ Für ein Workflow-Modell können Benutzer einen Workflow-Starter erstellen, der 
 >* [Erstellen von Workflow-Modellen und Erweitern der Workflow-Funktionalität](/help/sites-developing/workflows.md)
 >* [Methoden zum Ausführen Workflows](/help/sites-administering/workflows-starting.md)
 >* [Best Practices für Arbeitsabläufe](/help/sites-developing/workflows-best-practices.md)
->* [Community-Artikel zum Ändern von Assets mithilfe des Workflows](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
 
