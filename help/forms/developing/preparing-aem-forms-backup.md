@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2540'
+source-wordcount: '2554'
 ht-degree: 2%
 
 ---
 
 
 # Vorbereiten von AEM Forms für Sicherung {#preparing-aem-forms-for-backup}
+
+**Beispiele und Beispiele in diesem Dokument gelten nur für die Umgebung AEM Forms on JEE.**
 
 ## Info zum Sicherungs- und Wiederherstellungsdienst {#about-the-backup-and-restore-service}
 
@@ -209,7 +211,7 @@ Um den Sicherungsmodus programmgesteuert zu deaktivieren, erstellen Sie ein Back
 
 **Sicherungsmodus verlassen**
 
-Lassen Sie den Sicherungsmodus beendet, um das normale Bereinigen von Dateien aus der Datenspeicherung des globalen Dokuments (GDS) fortzusetzen. Bevor Sie den Sicherungsmodus beenden, sollten Sie sicherstellen, dass die Sicherungsverfahren abgeschlossen sind.
+Verlassen Sie den Sicherungsmodus, um das normale Bereinigen von Dateien aus der Datenspeicherung des globalen Dokuments (GDS) fortzusetzen. Bevor Sie den Sicherungsmodus beenden, sollten Sie sicherstellen, dass die Sicherungsverfahren abgeschlossen sind.
 
 **Abrufen von Informationen zur beendeten Sicherungsmodussitzung**
 
