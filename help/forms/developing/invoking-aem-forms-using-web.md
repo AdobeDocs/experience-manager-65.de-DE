@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '9990'
+source-wordcount: '10004'
 ht-degree: 6%
 
 ---
 
 
 # AEM Forms mit Web Services aufrufen {#invoking-aem-forms-using-web-services}
+
+**Beispiele und Beispiele in diesem Dokument gelten nur für die Umgebung AEM Forms on JEE.**
 
 Die meisten AEM Forms-Dienste im Dienst-Container sind so konfiguriert, dass ein Webdienst verfügbar ist, mit voller Unterstützung für die WSDL-Generierung (Web Service Definition Language). Das heißt, Sie können Proxy-Objekte erstellen, die den systemeigenen SOAP-Stapel eines AEM Forms-Dienstes verwenden. Dadurch können AEM Forms-Dienste folgende SOAP-Nachrichten austauschen und verarbeiten:
 
