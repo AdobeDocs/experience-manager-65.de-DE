@@ -9,21 +9,25 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: b4795930c87fa30d7c7ab60a50bc6f40da4f97d2
 workflow-type: tm+mt
-source-wordcount: '6355'
-ht-degree: 87%
+source-wordcount: '6418'
+ht-degree: 85%
 
 ---
 
 
-# AEM Document Services programmgesteuert verwenden {#using-aem-document-services-programmatically}
+# AEM Document Services programmgesteuert verwenden  {#using-aem-document-services-programmatically}
 
-Zum Erstellen von Maven-Projekten mithilfe von AEM Document Services erforderliche Client-Klassen sind in der [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)-Jar verfügbar. Weitere Informationen zu Maven-Projekten finden Sie unter [Erstellen von AEM-Projekten mit Maven](/help/sites-developing/ht-projects-maven.md).
+Beispiele und Beispiele in diesem Dokument helfen Ihnen, AEM Dokument Services auf einem AEM Forms auf OSGi-Umgebung zu verstehen und zu verwenden. Beispiele und Beispiele für die Umgebung von AEM Forms on JEE finden Sie unter [Programmieren mit AEM Forms on JEE](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?lang=en#programming-aem-forms-jee)
 
->[!NOTE]
->
->Bevor Sie die DocAssurance-Dienst-APIs verwenden, konfigurieren Sie den DocAssurance-Dienst](/help/forms/using/install-configure-document-services.md).[
+## Voraussetzung {#prerequisite}
+
+* Bevor Sie die DocAssurance-Dienst-APIs verwenden, konfigurieren Sie den DocAssurance-Dienst](/help/forms/using/install-configure-document-services.md).[
+
+* Laden Sie [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) herunter und konfigurieren Sie es mit Ihrem AEM Projekt. Die zum Erstellen von Maven-Projekten mithilfe AEM Dokument-Services erforderlichen Clientklassen sind im [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) verfügbar.
+
+* Lernen Sie [wie Sie Ihr AEM Projekt mit Maven](/help/sites-developing/ht-projects-maven.md) erstellen.
 
 ## DocAssurance-Dienst {#docassurance-service}
 
@@ -237,7 +241,7 @@ sigAppearence.setSigningFormat(signingFormat);
 signOptions.setSigAppearence(sigAppearence);
 ```
 
-### Signaturfeld hinzufügen   {#adding-a-signature-field-nbsp}
+### Signaturfeld hinzufügen  {#adding-a-signature-field-nbsp}
 
 Sie können ein Signaturfeld programmgesteuert hinzufügen, indem Sie die Signature-Dienst-Java-API oder die Signature-Webdienst-API verwenden. Sie können einem PDF-Dokument mehrere Signaturfelder hinzufügen. Jeder der Signaturfeldnamen muss jedoch eindeutig sein.
 
