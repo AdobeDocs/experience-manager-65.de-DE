@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '15544'
+source-wordcount: '15558'
 ht-degree: 4%
 
 ---
 
 
 # Schützen von Dokumenten mit Richtlinien {#protecting-documents-with-policies}
+
+**Beispiele und Beispiele in diesem Dokument gelten nur für die Umgebung AEM Forms on JEE.**
 
 **Informationen zum Dokument Security Service**
 
@@ -1650,7 +1652,7 @@ Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn S
 
 **Rights Management Client API-Objekt erstellen**
 
-Bevor Sie einen Rights Management-Dienstvorgang programmgesteuert durchführen können, müssen Sie ein Client-Objekt für den Rights Management-Dienst erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `DocumentSecurityClient`-Objekt. Wenn Sie die Rights Management-Webdienst-API verwenden, erstellen Sie ein `DocumentSecurityServiceService`-Objekt.
+Bevor Sie einen Rights Management-Dienstvorgang programmgesteuert durchführen können, müssen Sie ein Rights Management-Dienst-Client-Objekt erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `DocumentSecurityClient`-Objekt. Wenn Sie die Rights Management-Webdienst-API verwenden, erstellen Sie ein `DocumentSecurityServiceService`-Objekt.
 
 **Geben Sie die zu suchenden Ereignis an**
 
