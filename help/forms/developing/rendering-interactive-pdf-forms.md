@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 3cb307ec-9b7b-4f03-b860-48553ccee746
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2514'
+source-wordcount: '2528'
 ht-degree: 0%
 
 ---
 
 
 # Rendern interaktiver PDF forms {#rendering-interactive-pdf-forms}
+
+**Beispiele und Beispiele in diesem Dokument gelten nur für die Umgebung AEM Forms on JEE.**
 
 Der Forms-Dienst rendert interaktive PDF forms auf Client-Geräte (in der Regel Webbrowser), um Benutzerdaten zu erfassen. Nach der Wiedergabe eines interaktiven Formulars kann der Benutzer Daten in Formularfelder eingeben und auf eine Senden-Schaltfläche im Formular klicken, um Informationen an den Forms-Dienst zurückzusenden. Adobe Reader oder Acrobat müssen auf dem Computer installiert sein, auf dem der Client-Webbrowser ausgeführt wird, damit ein interaktives PDF-Formular sichtbar ist.
 
