@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2574'
+source-wordcount: '2588'
 ht-degree: 2%
 
 ---
 
 
 # Zusammenstellen von PDF-Dokumenten mit Lesezeichen {#assembling-pdf-documents-with-bookmarks}
+
+**Beispiele und Beispiele in diesem Dokument gelten nur für die Umgebung AEM Forms on JEE.**
 
 Sie können ein PDF-Dokument zusammenstellen, das Lesezeichen enthält. Angenommen, Sie haben ein PDF-Dokument, das keine Lesezeichen enthält, und Sie möchten es mithilfe von Lesezeichen ändern. Mit dem Assembler-Dienst können Sie ein PDF-Dokument ohne Lesezeichen übergeben und ein PDF-Dokument mit Lesezeichen zurückerhalten.
 
