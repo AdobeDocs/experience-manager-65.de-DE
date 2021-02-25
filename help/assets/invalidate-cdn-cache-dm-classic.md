@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 729fbf3a97d3ae3bc91204f8831fd115d9d77f20
+source-git-commit: 996780c3fac85f0ce0deeddd5ff4e74e01df436e
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 48%
+source-wordcount: '720'
+ht-degree: 47%
 
 ---
 
@@ -20,7 +20,7 @@ Dynamic Media-Assets werden für schnellen Versand vom CDN (Content Versand Netw
 
 >[!NOTE]
 >
->Kunden müssen das mit Adobe Experience Manager Dynamic Media gebündelte CDN verwenden, um die Ungültigmachung des CDN-Cache zu nutzen.
+>Für diese Funktion müssen Sie das im Lieferumfang von Adobe Experience Manager Dynamic Media enthaltene Out-of-the-Box-CDN verwenden. Andere benutzerdefinierte CDN werden von dieser Funktion nicht unterstützt.
 
 >[!IMPORTANT]
 >
