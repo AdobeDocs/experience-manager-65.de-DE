@@ -9,15 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '256'
 ht-degree: 1%
 
 ---
 
 
 # Schnellere Beginn {#backup-and-restore-service-apiquick-starts} für die Sicherungs- und Wiederherstellungs-Dienst-API
+
+**Beispiele und Beispiele in diesem Dokument gelten nur für die Umgebung AEM Forms on JEE.**
 
 Java API Quick Beginn (SOAP) sind für die Sicherungs- und Wiederherstellungs-Dienst-API verfügbar.
 
