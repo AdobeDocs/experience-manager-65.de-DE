@@ -8,9 +8,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 translation-type: tm+mt
-source-git-commit: 729fbf3a97d3ae3bc91204f8831fd115d9d77f20
+source-git-commit: 787f3b4cf5835b7e9b03e3f4e6f6597084adec8c
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '724'
 ht-degree: 52%
 
 ---
@@ -22,7 +22,7 @@ Adobe freut sich, die Bereitstellung von Inhalt über HTTP/2 zu präsentieren, d
 
 >[!NOTE]
 >
->Kunden müssen das CDN (Content Deliver Network) in Adobe Experience Manager Dynamic Media verwenden, um von HTTP/2-Versand von Inhalten profitieren zu können.
+>Für diese Funktion müssen Sie das im Lieferumfang von Adobe Experience Manager Dynamic Media enthaltene Out-of-the-Box-CDN verwenden. Andere benutzerdefinierte CDN werden von dieser Funktion nicht unterstützt.
 
 ## Was ist HTTP/2? {#what-is-http}
 
