@@ -9,15 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, development-tools
 discoiquuid: 38fd51ec-347e-4ae3-86d4-9d2429f79bdd
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
 
 
 # Einführung in den Java-API-Quick-Beginn {#introducing-java-api-quickstart}
+
+**Beispiele und Beispiele in diesem Dokument gelten nur für die Umgebung AEM Forms on JEE.**
 
 Adobe AEM Forms API Quick Beginn hilft Ihnen, Ihre Bemühungen zur Entwicklung von Programmen zu beschleunigen, die mit AEM Forms-Diensten interagieren. *Quick* Beginn sind vollständige Programme, die Sie kopieren und in Ihre eigenen Projekte einfügen können und als Ausgangspunkt verwenden können. Sie können einen Quick Beginn ausführen, um zu sehen, wie er sich verhält, und ihn für Ihre eigenen Anforderungen anpassen.
 
