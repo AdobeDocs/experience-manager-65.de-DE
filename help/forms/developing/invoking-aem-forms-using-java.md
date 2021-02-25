@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '5480'
+source-wordcount: '5494'
 ht-degree: 88%
 
 ---
 
 
 # AEM Forms mit der JavaAPI aufrufen {#invoking-aem-forms-using-the-javaapi}
+
+**Beispiele und Beispiele in diesem Dokument gelten nur für die Umgebung AEM Forms on JEE.**
 
 AEM Forms kann mit der AEM Forms Java API aufgerufen werden. Bei Verwendung der AEM Forms-Java-API können Sie entweder die Aufruf-API oder Java-Client-Bibliotheken verwenden. Java-Client-Bibliotheken sind für Dienste wie den Rights Management-Dienst verfügbar. Mit diesen stark typisierten APIs können Sie Java-Anwendungen entwickeln, die AEM Forms aufrufen.
 
