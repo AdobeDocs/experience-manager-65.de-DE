@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: d816bf2e-5236-4084-b7c4-c32b72cdff97
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2592'
+source-wordcount: '2606'
 ht-degree: 5%
 
 ---
 
 
 # Arbeiten mit PDF Utilities {#working-with-pdf-utilities}
+
+**Beispiele und Beispiele in diesem Dokument gelten nur für die Umgebung AEM Forms on JEE.**
 
 **Info zum PDF Utilities-Dienst**
 
