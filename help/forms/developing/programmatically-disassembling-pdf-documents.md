@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8e38a597-5d22-4d83-95fe-4494fb04e4a3
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1774'
+source-wordcount: '1788'
 ht-degree: 3%
 
 ---
 
 
 # Programmatische Demontage von PDF-Dokumenten {#programmatically-disassembling-pdf-documents}
+
+**Beispiele und Beispiele in diesem Dokument gelten nur für die Umgebung AEM Forms on JEE.**
 
 Sie können ein PDF-Dokument auflösen, indem Sie es an den Assembler-Dienst übergeben. In der Regel ist diese Aufgabe nützlich, wenn das PDF-Dokument ursprünglich aus vielen einzelnen Dokumenten erstellt wurde, z. B. aus einer Sammlung von Anweisungen. In der folgenden Abbildung wird DocA in mehrere resultierende Dokumente unterteilt, wobei das erste Lesezeichen der Stufe 1 auf einer Seite den Beginn eines neuen Dokuments identifiziert.
 
