@@ -2,15 +2,17 @@
 title: Erstellen eines Handlers für eingeladene externe Benutzer
 description: Erstellen eines Handlers für eingeladene externe Benutzer
 translation-type: tm+mt
-source-git-commit: 92e5cc0b1934dad641357a22894e70a3660b774a
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1116'
 ht-degree: 1%
 
 ---
 
 
 # Erstellen eines Handlers für die Einladung externer Benutzer {#create-invite-external-users-handler}
+
+**Beispiele und Beispiele in diesem Dokument gelten nur für die Umgebung AEM Forms on JEE.**
 
 Sie können einen Handler für die Einladung externer Benutzer für den Rights Management-Dienst erstellen. Ein Handler &quot;Externe Benutzer einladen&quot;ermöglicht es dem Rights Management-Dienst, externe Benutzer einzuladen, um Rights Management zu werden. Nachdem ein Benutzer zum Rights Management-Benutzer wurde, kann er Aufgaben ausführen, z. B. das Öffnen eines richtliniengeschützten PDF-Dokuments. Nachdem der Handler &quot;Externe Benutzer einladen&quot;in AEM Forms bereitgestellt wurde, können Sie mit Administration Console interagieren.
 
