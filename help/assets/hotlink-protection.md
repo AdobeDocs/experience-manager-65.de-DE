@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: a70aa448-0f58-4ed2-9381-afcc76fa827f
 translation-type: tm+mt
-source-git-commit: 996780c3fac85f0ce0deeddd5ff4e74e01df436e
+source-git-commit: 787f3b4cf5835b7e9b03e3f4e6f6597084adec8c
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 33%
+source-wordcount: '196'
+ht-degree: 19%
 
 ---
 
@@ -24,4 +24,4 @@ Bei Hotlinks handelt es sich um Websites von Drittanbietern, die HTML-Code verwe
 
 >[!NOTE]
 >
->Zum Schutz von Hotlinks müssen Sie das gebündelte CDN von Adobe verwenden. Um den Hotlink-Schutz zu aktivieren, muss ein Administrator ein Support-Ticket erstellen, um die Konfigurationsänderung an Ihrem Dynamic Media-Konto anzufordern. Es fallen keine zusätzlichen Kosten für die Aktivierung des Schutzes von Hotlinks an.
+>Für diese Funktion müssen Sie das im Lieferumfang von Adobe Experience Manager Dynamic Media enthaltene Out-of-the-Box-CDN verwenden. Andere benutzerdefinierte CDN werden von dieser Funktion nicht unterstützt. Um den Hotlink-Schutz zu aktivieren, muss ein Administrator ein Adobe Customer Care Support Ticket erstellen, um die Konfigurationsänderung bei Ihrem Dynamic Media-Konto anzufordern. Es fallen keine zusätzlichen Kosten für die Aktivierung des Schutzes von Hotlinks an.
