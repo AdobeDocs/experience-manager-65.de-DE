@@ -9,15 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding, development-tools
 discoiquuid: dd9c0ec4-a195-4b78-8992-81d0efcc0a7e
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '929'
 ht-degree: 2%
 
 ---
 
 
 # Service Container {#service-container}
+
+**Beispiele und Beispiele in diesem Dokument gelten nur für die Umgebung AEM Forms on JEE.**
 
 AEM Forms-Dienste im Service Container (einschließlich Standarddienste wie Encryption-Dienst, Prozesse mit langer Lebensdauer und Prozesse mit kurzer Lebensdauer) können mit verschiedenen Anbietern wie einem EJB-Anbieter aufgerufen werden. Ein EJB-Anbieter ermöglicht das Aufrufen von AEM Forms-Diensten über RMI/IIOP. Ein Web-Dienstleister stellt Dienste als Webdienste (WSDL Generation) unter Verwendung von Standards wie SOAP/HTTP und SOAP/JMS bereit.
 
