@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '4174'
+source-wordcount: '4188'
 ht-degree: 1%
 
 ---
 
 
 # Rendern von Forms als HTML {#rendering-forms-as-html}
+
+**Beispiele und Beispiele in diesem Dokument gelten nur für die Umgebung AEM Forms on JEE.**
 
 Der Forms-Dienst rendert Formulare als HTML, wenn ein Webbrowser eine HTTP-Anforderung sendet. Ein Vorteil der Wiedergabe eines Formulars im HTML-Format besteht darin, dass auf dem Computer, auf dem sich der Client-Webbrowser befindet, kein Adobe Reader, Acrobat oder Flash Player erforderlich ist (bei Formularleitfäden (nicht mehr unterstützt).
 
