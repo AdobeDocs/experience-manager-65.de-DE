@@ -7,9 +7,9 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 729fbf3a97d3ae3bc91204f8831fd115d9d77f20
+source-git-commit: 996780c3fac85f0ce0deeddd5ff4e74e01df436e
 workflow-type: tm+mt
-source-wordcount: '6123'
+source-wordcount: '6083'
 ht-degree: 54%
 
 ---
@@ -31,14 +31,15 @@ Mit der neuen Architektur ist Experience Manager für primäre Quellelemente und
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
->[!IMPORTANT]
+>[!NOTE]
 >
->Kunden, die das gebündelte CDN nicht mit Experience Manager Dynamic Media verwenden, profitieren nicht von den folgenden Funktionen:
->* [Intelligente Bildbearbeitung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/imaging-faq.html?lang=en#dynamicmedia)
->* [Cache-Ungültigmachung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/invalidate-cdn-cache-dynamic-media.html?lang=en#dynamicmedia)
->* [Hotlink-Schutz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/hotlink-protection.html?lang=en#dynamicmedia)
->* [HTTP/2-Versand des Inhalts](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/http2faq.html?lang=en#dynamicmedia)
->* [Integration von Dynamic Media Viewern mit Adobe Analytics und Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/launch.html?lang=en#dynamicmedia)
+>Für die folgende Liste von Funktionen ist es erforderlich, dass Sie das im Lieferumfang von Adobe Experience Manager - Dynamic Media enthaltene Out-of-the-Box-CDN verwenden. Andere benutzerdefinierte CDN werden von diesen Funktionen nicht unterstützt.
+>
+>* [Intelligente Bildbearbeitung](/help/assets/imaging-faq.md)
+>* [Cache-Ungültigmachung](/help/assets/invalidate-cdn-cache-dynamic-media.md)
+>* [Hotlink-Schutz](/help/assets/hotlink-protection.md)
+>* [HTTP/2-Versand des Inhalts](/help/assets/http2.md)
+>* [Integration von Dynamic Media Viewern mit Adobe Analytics und Experience Platform Launch](/help/assets/launch.md)
 >* URL-Umleitung auf CDN-Ebene
 >* Akamai ChinaCDN (für optimalen Versand in China)
 
