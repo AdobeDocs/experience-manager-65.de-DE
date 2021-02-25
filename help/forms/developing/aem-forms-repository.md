@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '9143'
+source-wordcount: '9157'
 ht-degree: 2%
 
 ---
 
 
 # Arbeiten mit AEM Forms Repository {#working-with-aem-forms-repository}
+
+**Beispiele und Beispiele in diesem Dokument gelten nur für die Umgebung AEM Forms on JEE.**
 
 **Informationen zum Repository-Dienst**
 
