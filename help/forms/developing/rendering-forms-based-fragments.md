@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: a65c5303-0ebd-43a9-a777-401042d8fcad
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2215'
+source-wordcount: '2229'
 ht-degree: 9%
 
 ---
 
 
 # Rendern von Forms basierend auf Fragmenten {#rendering-forms-based-on-fragments}
+
+**Beispiele und Beispiele in diesem Dokument gelten nur für die Umgebung AEM Forms on JEE.**
 
 ## Rendern von Forms basierend auf Fragmenten {#rendering-forms-based-on-fragments-inner}
 
@@ -91,7 +93,7 @@ Wenn der Forms-Dienst ein Formular wiedergibt, gibt er einen Formulardatenstream
 
 [Wiedergeben von Formularen basierend auf Fragmenten mit der Java-API](#render-forms-based-on-fragments-using-the-java-api)
 
-[Wiedergeben von Formularen basierend auf Fragmenten mithilfe der Webdienst-API](#render-forms-based-on-fragments-using-the-web-service-api)
+[Wiedergeben von Formularen basierend auf Fragmenten mit der Webdienst-API](#render-forms-based-on-fragments-using-the-web-service-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
