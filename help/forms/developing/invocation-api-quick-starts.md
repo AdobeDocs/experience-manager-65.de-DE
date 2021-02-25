@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: dcf83c9f-b818-44a2-9079-80a4fc357c4f
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1263'
 ht-degree: 6%
 
 ---
 
 
 # Aufrufungs-API - Schnellere Beginn {#invocation-api-quick-starts}
+
+**Beispiele und Beispiele in diesem Dokument gelten nur für die Umgebung AEM Forms on JEE.**
 
 Die folgenden Quick-Beginn stehen zum programmatischen Aufrufen von AEM Forms-Diensten zur Verfügung:
 
