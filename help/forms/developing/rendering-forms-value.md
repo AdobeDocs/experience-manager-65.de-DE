@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1848'
+source-wordcount: '1862'
 ht-degree: 3%
 
 ---
 
 
 # Rendern von Forms mit dem Wert {#rendering-forms-by-value}
+
+**Beispiele und Beispiele in diesem Dokument gelten nur für die Umgebung AEM Forms on JEE.**
 
 In der Regel wird ein in Designer erstellter Formularentwurf durch Verweis auf den Forms-Dienst weitergeleitet. Formularentwürfe können sehr umfangreich sein. Daher ist es effizienter, sie als Referenz weiterzugeben, um Formularentwurfssytes nicht nach Wert zu ordnen. Der Forms-Dienst kann den Formularentwurf auch zwischenspeichern, sodass er den Formularentwurf beim Zwischenspeichern nicht ständig lesen muss.
 
