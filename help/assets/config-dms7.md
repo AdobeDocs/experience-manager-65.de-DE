@@ -7,9 +7,9 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 996780c3fac85f0ce0deeddd5ff4e74e01df436e
+source-git-commit: 787f3b4cf5835b7e9b03e3f4e6f6597084adec8c
 workflow-type: tm+mt
-source-wordcount: '6083'
+source-wordcount: '6072'
 ht-degree: 54%
 
 ---
@@ -33,13 +33,12 @@ Mit der neuen Architektur ist Experience Manager für primäre Quellelemente und
 
 >[!NOTE]
 >
->Für die folgende Liste von Funktionen ist es erforderlich, dass Sie das im Lieferumfang von Adobe Experience Manager - Dynamic Media enthaltene Out-of-the-Box-CDN verwenden. Andere benutzerdefinierte CDN werden von diesen Funktionen nicht unterstützt.
+>Für die folgende Liste von Funktionen müssen Sie das im Lieferumfang von Adobe Experience Manager - Dynamic Media enthaltene Out-of-the-Box-CDN verwenden. Andere benutzerdefinierte CDN werden von diesen Funktionen nicht unterstützt.
 >
 >* [Intelligente Bildbearbeitung](/help/assets/imaging-faq.md)
 >* [Cache-Ungültigmachung](/help/assets/invalidate-cdn-cache-dynamic-media.md)
 >* [Hotlink-Schutz](/help/assets/hotlink-protection.md)
 >* [HTTP/2-Versand des Inhalts](/help/assets/http2.md)
->* [Integration von Dynamic Media Viewern mit Adobe Analytics und Experience Platform Launch](/help/assets/launch.md)
 >* URL-Umleitung auf CDN-Ebene
 >* Akamai ChinaCDN (für optimalen Versand in China)
 
