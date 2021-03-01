@@ -10,10 +10,10 @@ topic-tags: introduction, author
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f3b5b22c1d5573492867aef60457413ad5cf419f
+source-git-commit: 103468b8e6e5bdf870156f85b7f547f190044561
 workflow-type: tm+mt
-source-wordcount: '3145'
-ht-degree: 82%
+source-wordcount: '3169'
+ht-degree: 81%
 
 ---
 
@@ -146,7 +146,7 @@ Damit können Sie Formularmodellelemente per Drag &amp; Drop auf das adaptive Fo
   </tr>
   <tr>
    <td>Dateianlage</td>
-   <td><p>Fügt eine Schaltfläche hinzu, mit der Benutzer ergänzende Dokumente suchen und an das Formular anhängen können. Sie können mehrere Dateien an eine Dateianlagenkomponente anhängen.</p> <p><strong> Hinweis: </strong><ul> <li> Die Komponente unterstützt nicht das Anhängen von Dateien mit Dateinamen, beginnend mit Zeichen (.), die Zeichen \ / : * ? " &lt; &gt; | ; % $ oder spezielle Dateinamen enthalten, die für das Windows-Betriebssystem reserviert sind, wie nul, prn, con, lpt oder com. </li> <li> Um mehrere Dateien an eine Dateianlagenkomponente anzuhängen, die im Apple Safari-Browser geöffnet wird, wählen Sie die gewünschten Dateien aus und fügen Sie sie einzeln an. Es ist nicht möglich, mehrere Dateien gleichzeitig auszuwählen und anzuhängen.</li> <li>Die Dateianlagenkomponente unterstützt einen vordefinierten Satz von Dateiformaten in adaptiven Formularen, die für Adobe Sign aktiviert sind. Weitere Informationen finden Sie unter <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Unterstützte Dateiformate</a>. </li> </ul></p> </td>
+   <td><p>Fügt eine Schaltfläche hinzu, mit der Benutzer ergänzende Dokumente suchen und an das Formular anhängen können. Sie können mehrere Dateien an eine Dateianlagenkomponente anhängen. Sie können auch die Dateigröße **[!UICONTROL Maximum File Size]** und **[!UICONTROL Unterstützte Dateitypen]** für die Anlagen im Eigenschaftenbrowser der Komponente angeben. </p> <p><strong> Hinweis: </strong><ul> <li> Die Komponente unterstützt nicht das Anhängen von Dateien mit Dateinamen, beginnend mit Zeichen (.), die Zeichen \ / : * ? " &lt; &gt; | ; % $ oder spezielle Dateinamen enthalten, die für das Windows-Betriebssystem reserviert sind, wie nul, prn, con, lpt oder com. </li> <li> Um mehrere Dateien an eine Dateianlagenkomponente anzuhängen, die im Apple Safari-Browser geöffnet wird, wählen Sie die gewünschten Dateien aus und fügen Sie sie einzeln an. Es ist nicht möglich, mehrere Dateien gleichzeitig auszuwählen und anzuhängen.</li> <li>Die Dateianlagenkomponente unterstützt einen vordefinierten Satz von Dateiformaten in adaptiven Formularen, die für Adobe Sign aktiviert sind. Weitere Informationen finden Sie unter <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Unterstützte Dateiformate</a>. </li></ul></p> </td>
   </tr>
   <tr>
    <td>Auflistung der Dateianhänge</td>
