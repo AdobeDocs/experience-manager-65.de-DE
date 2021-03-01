@@ -3,10 +3,10 @@ title: Optimierte Smart-Tags
 description: Optimierte Smart-Tags
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 09bb767ae8565624e7a6b9786a5cd4c581fe0b9a
+source-git-commit: 788a66d5732f0a120de6b80da69e9cf81f998667
 workflow-type: tm+mt
-source-wordcount: '1610'
-ht-degree: 57%
+source-wordcount: '1597'
+ht-degree: 46%
 
 ---
 
@@ -19,7 +19,7 @@ Verglichen mit dem Vokabular natürlicher Sprachen hilft das Tagging digitaler A
 
 So könnte beispielsweise ein Automobilhersteller Bilder von Autos mit Tags versehen, die die Modellnamen darstellen, sodass nur relevante Bilder angezeigt werden, wenn für das Erstellen einer Werbekampagne nach verschiedenen Modellen gesucht wird.
 
-Damit der Smart Content Service die richtigen Tags anwendet, müssen Sie ihn darauf trainieren, Ihre Taxonomie zu erkennen. Um den Dienst zu trainieren, müssen Sie zunächst einen Satz von Assets sowie Tags kuratieren, die diese Assets bestmöglich beschreiben. Wenden Sie diese Tags auf die Assets an und führen Sie einen Trainings-Workflow aus, damit der Dienst lernen kann.
+Damit der Smart Content Service die richtigen Tags anwenden kann, müssen Sie ihn so ausrichten, dass er Ihre Taxonomie erkennt. Um den Dienst zu trainieren, müssen Sie zunächst einen Satz von Assets sowie Tags kuratieren, die diese Assets bestmöglich beschreiben. Wenden Sie diese Tags auf die Assets an und führen Sie einen Schulungsarbeitsablauf aus, um den Dienst besser kennenzulernen.
 
 Sobald ein Tag trainiert wurde und bereit ist, kann der Dienst dieses Tag über einen Tagging-Workflow auf Assets anwenden.
 
@@ -40,11 +40,11 @@ Die wichtigsten Schritte beim Verwenden des Smart Content Service sind:
 
 Bevor Sie den Smart Content Service verwenden können, stellen Sie Folgendes sicher, um eine Integration auf [!DNL Adobe Developer Console] zu erstellen:
 
-* Es ist ein Adobe ID-Konto mit Administratorrechten für die Organisation vorhanden.
-* Der Smart Content Service ist für Ihre Organisation aktiviert.
-* Das Smart Content Services-Basispaket kann nur einer Bereitstellung hinzugefügt werden, bei der ein [!DNL Adobe Experience Manager Sites]-Basispaket und [!DNL Assets]-Add-on lizenziert wurden.
+* Ein Adobe ID-Konto mit Administratorrechten für das Unternehmen.
+* Aktivieren Sie den Smart Content Service-Dienst für Ihr Unternehmen.
+* Um ein Smart Content Services-Basispaket zu einer Bereitstellung hinzuzufügen, lizenzieren Sie [!DNL Adobe Experience Manager Sites] Basispaket und [!DNL Assets] Add-on.
 
-Intelligente Tags werden nur auf Assets mit den folgenden MIME-Typen angewendet:
+Der Dienst wendet intelligente Tags auf Assets der folgenden MIME-Typen an:
 
 * image/jpeg
 * image/tiff
@@ -65,7 +65,7 @@ Intelligente Tags werden nur auf Assets mit den folgenden MIME-Typen angewendet:
 * image/psd
 * image/vnd.adobe.photoshop
 
-Das intelligente Tagging von Asset-Darstellungen wird nur für die folgenden MIME-Typen unterstützt:
+Der Dienst wendet intelligente Tags auf Asset-Darstellungen der folgenden MIME-Typen an:
 
 * image/jpeg
 * image/pjpeg
@@ -152,7 +152,7 @@ Sie können den Tag-Arbeitsablauf über die Arbeitsablaufkonsole oder die Zeitle
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
-   Navigieren Sie zum Asset-Ordner und prüfen Sie die Tags, um sicherzustellen, dass der Smart Content Service Ihre Assets ordnungsgemäß mit Tags versehen hat.
+   Um zu überprüfen, ob der Smart Content Service Ihre Assets ordnungsgemäß getaggt hat, navigieren Sie zum Asset-Ordner und überprüfen Sie die Tags.
 
 #### Tagging von Assets über die Zeitleiste {#tagging-assets-from-the-timeline}
 
@@ -163,7 +163,7 @@ Sie können den Tag-Arbeitsablauf über die Arbeitsablaufkonsole oder die Zeitle
    ![start_workflow](assets/start_workflow.png)
 
 1. Wählen Sie den Workflow **[!UICONTROL DAM Smart-Tag-Assets]** aus und geben Sie einen Titel für den Workflow an.
-1. Klicken Sie auf **[!UICONTROL Starten]**. Der Workflow wendet Ihre Tags auf Assets an. Navigieren Sie zum Asset-Ordner und prüfen Sie die Tags, um sicherzustellen, dass der Smart Content Service Ihre Assets ordnungsgemäß mit Tags versehen hat.
+1. Klicken Sie auf **[!UICONTROL Starten]**. Der Workflow wendet Tags auf die Assets an. Um zu überprüfen, ob der Smart Content Service Ihre Assets ordnungsgemäß getaggt hat, navigieren Sie zum Asset-Ordner und überprüfen Sie die Tags.
 
 >[!NOTE]
 >
@@ -171,16 +171,16 @@ Sie können den Tag-Arbeitsablauf über die Arbeitsablaufkonsole oder die Zeitle
 
 ## Kuratieren oder Moderieren der angewendeten Smarttags {#manage-smart-tags}
 
-Sie können Smart-Tags kuratieren, um alle falschen Tags zu entfernen, die Ihren Markenbildern zugewiesen wurden, sodass nur die relevantesten Tags angezeigt werden.
+Sie können Smart-Tags kuratieren, um alle falschen Tags zu entfernen, die Ihren Markenbildern zugewiesen sind, sodass nur die relevantesten Tags angezeigt werden.
 
 Mithilfe der Moderation von Smart-Tags können Sie Tag-basierte Suchen nach Bildern verfeinern, indem Sie sicherstellen, dass Ihr Bild nur in den Suchergebnissen für die relevantesten Tags angezeigt wird. Im Grunde wird so ausgeschlossen, dass in den Suchergebnissen Bilder ohne Bezug angezeigt werden.
 
-Darüber hinaus können Sie Tags einen höheren Rang zuweisen, um ihre Relevanz in Bezug auf ein Bild zu erhöhen. Je höher der Rang eines Tags für ein Bild, desto wahrscheinlicher ist bei einer Tag-basierten Suche die Aufnahme des Bildes in die Suchergebnisse.
+Sie können einem Tag auch einen höheren Rang zuweisen, um seine Relevanz für ein Bild zu erhöhen. Wenn Sie ein Tag für ein Bild bewerben, erhöht sich die Wahrscheinlichkeit, dass das Bild in den Suchergebnissen angezeigt wird, wenn das betreffende Tag gesucht wird.
 
-1. Suchen Sie im OmniSearch-Feld nach Assets, die auf einem Tag basieren.
-1. Prüfen Sie die Suchergebnisse auf Bilder, die Ihnen für Ihren Suchvorgang nicht relevant erscheinen.
+1. Suchen Sie im Suchfeld nach Assets, die auf einem Tag als Keyword basieren.
+1. Um ein Bild zu identifizieren, das Sie für Ihre Suche nicht relevant finden, überprüfen Sie die Suchergebnisse.
 1. Wählen Sie das Bild aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Tags verwalten]**.
-1. Prüfen Sie die Tags auf der Seite **[!UICONTROL Tags verwalten]**. Wenn das Bild nicht anhand eines bestimmten Tags durchsucht werden soll, wählen Sie das Tag aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Löschen]**. Alternativ können Sie auf das Symbol `x` klicken, das neben einem Tag angezeigt wird.
+1. Überprüfen Sie auf der Seite **[!UICONTROL Tags verwalten]** die Tags. Wenn das Bild nicht anhand eines bestimmten Tags durchsucht werden soll, wählen Sie das Tag aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Löschen]**. Alternativ können Sie auf das Symbol `x` klicken, das neben einem Tag angezeigt wird.
 1. Um einem Tag optional einen höheren Rang zuzuweisen, wählen Sie das Tag aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Fördern]**. Das höhergestufte Tag wird in den Abschnitt **[!UICONTROL Tags]** verschoben.
 1. Klicken Sie auf **[!UICONTROL Speichern]** und dann auf **[!UICONTROL OK]**
 1. Navigieren Sie zur Seite **[!UICONTROL Eigenschaften]** für das Bild. Achten Sie darauf, dass dem von Ihnen beworbenen Tag mehr Relevanz zugewiesen wird und es früher in den Suchergebnissen angezeigt wird.
