@@ -16,7 +16,7 @@ Die AEM-Versionshinweise enthalten wichtige Informationen zur neuesten Version v
 
 ## Wichtige AEM
 
-* [Erste Schritte mit AEM](https://helpx.adobe.com/experience-manager/get-started.html)
+* [Erste Schritte mit AEM](https://helpx.adobe.com/de/experience-manager/get-started.html)
 * [Aktuelle Aktualisierungen der Dokumentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Checkliste für die AEM-Sicherheit](/help/sites-administering/security-checklist.md)
 
