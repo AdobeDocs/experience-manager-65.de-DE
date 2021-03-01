@@ -20,7 +20,7 @@ ht-degree: 93%
 + Verwalten - Checkliste mit Best Practices {#managing-best-practices-checklist}
    + [Verwalten von Projekten - Checkliste mit Best Practices](best-practices.md)
    + [Die Checkliste](best-practices-checklist.md)
-   + [Glossar   ](best-practices-glossary.md)
+   + [Glossar](best-practices-glossary.md)
    + [Die Checkliste - Weitere Referenzen](best-practices-further-reference.md)
 + Verwalten - weitere Referenzen {#managing-further-reference}
    + [Hardware-Skalierungsrichtlinien](hardware-sizing-guidelines.md)
