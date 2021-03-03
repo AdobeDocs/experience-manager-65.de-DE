@@ -1,6 +1,6 @@
 ---
-title: Anpassungsfähige Formulare in externe Webseiten einbetten
-seo-title: Anpassungsfähige Formulare in externe Webseiten einbetten
+title: Anpassungsfähige Formulare in externe Web-Seiten einbetten
+seo-title: Anpassungsfähige Formulare in externe Web-Seiten einbetten
 description: Erfahren Sie, wie Sie ein adaptives Formular in eine externe Webseite einbetten
 seo-description: Erfahren Sie, wie Sie ein adaptives Formular in eine externe HTML-Seite einbetten
 uuid: d81032dd-af80-4f4b-a717-ee1b89fd3d3d
@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ade3747ba608164a792a62097b82c55626245891
+source-git-commit: 3ca71b73444589096dee46c38daded043c9232b1
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 68%
@@ -17,7 +17,7 @@ ht-degree: 68%
 ---
 
 
-# Anpassungsfähige Formulare in externe Webseiten einbetten{#embed-adaptive-form-in-external-web-page}
+# Anpassungsfähige Formulare in externe Web-Seiten einbetten{#embed-adaptive-form-in-external-web-page}
 
 Sie können [adaptive Formulare in eine AEM-Siteseite](/help/forms/using/embed-adaptive-form-aem-sites.md) oder eine außerhalb von AEM gehostete Webseite einbetten. Das eingebettete adaptive Formular ist voll funktionsfähig und Benutzer können es ausfüllen und senden, ohne die Seite zu verlassen. Es hilft Benutzern, im Kontext anderer Elemente auf der Webseite zu bleiben und gleichzeitig mit dem Formular zu interagieren..
 
@@ -165,7 +165,6 @@ Berücksichtigen Sie beim Einbetten eines adaptiven Formulars in eine Webseite d
 
 ## Bereitstellung adaptiver Formulare auf einer domänenübergreifenden Site durch AEM Forms {#cross-site}
 
-1. Wechseln Sie auf AEM Autoreninstanz zu AEM Web Console Configuration Manager unter `https://'[server]:[port]'/system/console/configMgr`.
+1. Wechseln Sie auf AEM Veröffentlichungsinstanz zu AEM Web Console Configuration Manager unter `https://'[server]:[port]'/system/console/configMgr`.
 1. Suchen Sie die Konfiguration **Apache Sling Referrer Filter** und öffnen Sie sie.
 1. Geben Sie im Feld Zulässige Hosts die Domäne an, in der sich die Webseite befindet. Dadurch kann der Host POST-Anforderungen an den AEM-Server senden. Sie können auch einen regulären Ausdruck verwenden, um eine Reihe von externen Anwendungsdomänen anzugeben.
-
