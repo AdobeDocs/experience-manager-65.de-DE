@@ -12,10 +12,10 @@ discoiquuid: 30aa3177-bcf4-4260-8f64-e73bc907942a
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 6f1f4fbaf9ee4b5ab073a27a58cb040c76230ebd
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 99%
+source-wordcount: '551'
+ht-degree: 93%
 
 ---
 
@@ -29,7 +29,14 @@ Wenn ein Launch für eine Seite (oder eine Reihe von Seiten) erstellt wurde, kö
 1. Rufen Sie [Launches aus Verweisen (Konsole „Sites“)](/help/sites-authoring/launches.md#launches-in-references-sites-console) auf, um die verfügbaren Aktionen anzuzeigen.
 1. Wählen Sie **Gehe zu Seite** aus, um die Seite zur Bearbeitung zu öffnen.
 
-### Bearbeiten von Launch-Seiten auf der Basis einer Live Copy   {#editing-launch-pages-subject-to-a-live-copy}
+>[!NOTE]
+>
+>Es ist nicht zulässig, eine Seite innerhalb eines Startvorgangs zu verschieben. Beim Versuch, diese Aktion durchzuführen, wird eine Warnmeldung Trigger:
+>
+>* Warnung: Diese Seite ist die Quelle eines Launches. Das Verschieben der Seite ist nicht zulässig.
+
+
+### Bearbeiten von Launch-Seiten auf der Basis einer Live Copy  {#editing-launch-pages-subject-to-a-live-copy}
 
 Wenn Ihr Launch auf einer [Live Copy](/help/sites-administering/msm.md) basiert, sehen Sie Folgendes:
 
