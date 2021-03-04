@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c9c407ea7c0bff3d15934552cd709bec7f24e857
+source-git-commit: d62249ee2e2d40f2a437c1cb7f2a80f3f8e67efe
 workflow-type: tm+mt
-source-wordcount: '3318'
+source-wordcount: '3311'
 ht-degree: 75%
 
 ---
@@ -222,7 +222,7 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
   <tr>
    <td>Oracle</td>
    <td><p>Oracle Database 19.3.0.0.0 JDBC-Treiber</p> <p>ojdbc8.jar (Version 19.3.0.0.0)<br /> </p> </td>
-   <td><p>Von der <a href="https://www.oracle.com/technetwork/database/features/jdbc/jdbc-ucp-122-3110062.html">Oracle Website</a> herunterladen.</p> </td>
+   <td><p>Von <a href="https://www.oracle.com/technetwork/database/features/jdbc/jdbc-ucp-122-3110062.html">Oracle-Website</a> herunterladen.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -552,23 +552,17 @@ Für zusätzliche Anforderungen siehe:
 
 ### Designer {#designer}
 
->[!NOTE]
->
->Um Designer unter Windows zu installieren, führen Sie das Installationsprogramm mit Administratorrechten aus.
-
-* Microsoft® Windows® 2016 Server, Microsoft Windows 10
-
-   * Prozessor mit 1 GHz oder höher mit Unterstützung für PAE, NX und SSE2.
-   * 1 GB RAM für 32-Bit-Betriebssysteme oder 2 GB RAM für 64-Bit-Betriebssysteme
-   * 16 GB Speicherplatz für 32-Bit-Betriebssysteme oder 20 GB Speicherplatz für 64-Bit-Betriebssysteme
-
+* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server oder Microsoft Windows 10
+* Prozessor mit 1 GHz oder höher mit Unterstützung für PAE, NX und SSE2.
+* 1 GB RAM für 32-Bit-Betriebssysteme oder 2 GB RAM für 64-Bit-Betriebssysteme
+* 16 GB Speicherplatz für 32-Bit-Betriebssysteme oder 20 GB Speicherplatz für 64-Bit-Betriebssysteme
 * Grafikspeicher - 128 MB GPU (256 MB empfohlen)
 * 2,35 GB verfügbarer Festplattenspeicher
 * DVD-ROM-Laufwerk
-* Internet Explorer 10 oder 11; Firefox 45.x
 * Bildschirmauflösung 1024 x 768 Pixel oder höher
 * Beschleuniger für Grafik-Hardware (optional)
 * Acrobat Pro DC, Acrobat Standard DC oder Adobe Acrobat Reader DC.
+* Administratorrechte für die Installation von Designer.
 
 ### Adobe Acrobat und Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
