@@ -11,9 +11,9 @@ topic-tags: platform
 discoiquuid: 16c7a97d-884a-447e-9aad-18a2db1bda1d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7065a6b984afb18c188acd848b9b77da7da67749
+source-git-commit: d62249ee2e2d40f2a437c1cb7f2a80f3f8e67efe
 workflow-type: tm+mt
-source-wordcount: '3118'
+source-wordcount: '3207'
 ht-degree: 86%
 
 ---
@@ -508,6 +508,20 @@ Windows x86:
 >
 
 
+
+### Anforderungen für AEM Forms Designer {#requirements-for-aem-forms-designer}
+
+* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server oder Microsoft Windows 10
+* Prozessor mit 1 GHz oder höher mit Unterstützung für PAE, NX und SSE2.
+* 1 GB RAM für 32-Bit-Betriebssysteme oder 2 GB RAM für 64-Bit-Betriebssysteme
+* 16 GB Speicherplatz für 32-Bit-Betriebssysteme oder 20 GB Speicherplatz für 64-Bit-Betriebssysteme
+* Grafikspeicher - 128 MB GPU (256 MB empfohlen)
+* 2,35 GB verfügbarer Festplattenspeicher
+* DVD-ROM-Laufwerk
+* Bildschirmauflösung 1024 x 768 Pixel oder höher
+* Beschleuniger für Grafik-Hardware (optional)
+* Acrobat Pro DC, Acrobat Standard DC oder Adobe Acrobat Reader DC.
+* Administratorrechte für die Installation von Designer.
 
 ### Anforderungen für das Zurückschreiben von XMP-Metadaten der AEM-Assets {#requirements-for-aem-assets-xmp-metadata-write-back}
 
