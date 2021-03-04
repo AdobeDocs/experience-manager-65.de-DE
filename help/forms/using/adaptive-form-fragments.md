@@ -9,10 +9,10 @@ topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 3690d2d76ce13064bd3946f4f6fea1a2759cdf37
 workflow-type: tm+mt
-source-wordcount: '2089'
-ht-degree: 96%
+source-wordcount: '2093'
+ht-degree: 95%
 
 ---
 
@@ -119,7 +119,7 @@ Führen Sie die folgenden Schritte aus, um vollständige Fragmente in Formularen
 
 1. Wechseln Sie zu AEM Web-Konsolenkonfigurationsseite unter https:[*host*]:[*port*]/system/console/configMgr.
 
-1. Suchen Sie nach **[!UICONTROL Konfigurationsdienst für adaptive Formulare]** und klicken Sie darauf, um die Funktion im Bearbeitungsmodus zu öffnen.
+1. Suchen Sie nach und klicken Sie auf **[!UICONTROL Konfiguration des adaptiven Formulars und des interaktiven Kommunikations-Web-Kanals]**, um es im Bearbeitungsmodus zu öffnen.
 1. Deaktivieren Sie das Kontrollkästchen **[!UICONTROL Platzhalter anstelle von Fragment aktivieren]**, um das vollständige Fragment anstelle des Platzhalterbildes anzuzeigen.
 
 ### Einfügen eines Formularfragments in ein adaptives Formular  {#insert-a-fragment-in-an-adaptive-form}
