@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 2f45a965-590b-43b1-95c6-df4b74ad15b9
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3690d2d76ce13064bd3946f4f6fea1a2759cdf37
 workflow-type: tm+mt
-source-wordcount: '689'
-ht-degree: 65%
+source-wordcount: '697'
+ht-degree: 62%
 
 ---
 
@@ -35,8 +35,8 @@ Die Abschnitte in diesem Artikel behandeln Folgendes:
 AEM Forms-App für iOS, die zur Synchronisierung mit AEM Forms unter OSGi konfiguriert ist, unterstützt nur Anlagen auf Feldebene. Alle Anlagen müssen eindeutige Namen haben. Wenn mehrere Anlagen denselben Namen haben, wird nur eine Anlage beibehalten und alle anderen mit identischem Namen gehen verloren. Führen Sie die folgenden Schritte aus, um Benutzer auf iOS-Geräten vor Datenverlust zu bewahren:
 
 1. Navigieren Sie auf dem angeschlossenen Server zu **Adobe Experience Manager > Tools > Vorgänge > Web-Konsole**.
-1. Suchen Sie nach **Konfigurationsdienst für adaptive Formulare** und klicken Sie darauf.
-1. Aktivieren Sie im Konfigurationsdienst für adaptive Formulare **Dateinamen individualisieren**.
+1. Suchen Sie nach und klicken Sie auf **[!UICONTROL Konfiguration des adaptiven Formulars und der interaktiven Kommunikation Web Kanal]**.
+1. Aktivieren Sie im Dialogfeld [!UICONTROL Konfiguration des adaptiven Formulars und des interaktiven Kommunikations-Web-Kanals] **Dateinamen individualisieren**.
 
    Wenn die Einstellung **Dateinamen individualisieren** deaktiviert ist, gehen Daten verloren, wenn Benutzer versuchen, adaptive Formulare mit mehreren Anlagen zu senden.
 
