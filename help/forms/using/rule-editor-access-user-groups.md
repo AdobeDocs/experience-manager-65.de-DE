@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab694a93-00d2-44d7-8ded-68ab2ad50693
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: 3690d2d76ce13064bd3946f4f6fea1a2759cdf37
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 75%
+source-wordcount: '336'
+ht-degree: 74%
 
 ---
 
@@ -33,7 +33,7 @@ AEM Forms ermöglicht es Ihnen, den Zugriff auf den Regel-Editor anhand der Roll
 
    ![1-2](assets/1-2.png)
 
-1. Suchen Sie im Fenster Web-Konsole nach **Konfigurationsdienst für adaptive Formulare** und klicken Sie darauf. **Der** Servicedialog für die Konfiguration des adaptiven Formulars wird angezeigt. Behalten Sie die Werte bei und klicken Sie auf **Speichern**.
+1. Suchen Sie im Fenster Web-Konsole nach **[!UICONTROL Adaptives Formular und Interaktive Kommunikation Web Kanal Configuration]** und klicken Sie darauf. **[!UICONTROL Das]** Dialogfeld &quot;Konfiguration des adaptiven Formulars und der interaktiven Kommunikation im Web Kanal&quot;wird angezeigt. Behalten Sie die Werte bei und klicken Sie auf **Speichern**.
 
    Die Datei „/apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config“ im CRX-Repository wird erstellt.
 
