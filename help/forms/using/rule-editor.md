@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 3690d2d76ce13064bd3946f4f6fea1a2759cdf37
 workflow-type: tm+mt
-source-wordcount: '6814'
+source-wordcount: '6818'
 ht-degree: 76%
 
 ---
@@ -112,7 +112,7 @@ Einfach ausgedrückt: Eine typische Wenn-Regel ist wie folgt aufgebaut:
 
 Aktion 2 auf Objekt B; UND Aktion 3 auf Objekt C;
 
-]
+_
 
 Wenn Sie eine Komponente mit mehreren Werten, wie Optionsfelder oder Listen, beim Erstellen einer Regel für diese Komponente verwenden, werden die Optionen automatisch abgerufen und dem Regelersteller zur Verfügung gestellt. Sie müssen die Optionswerte nicht erneut eingeben.
 
@@ -381,7 +381,7 @@ Benutzer können in der Gruppe der Formular-Hauptbenutzer auf den Code-Editor zu
 AEM Forms zeichnet den zuletzt von Ihnen zum Erstellen einer Regel verwendeten Modus des Regeleditors auf. Wenn Sie den Regeleditor das nächste Mal starten, wird er in diesem Modus geöffnet. Sie können jedoch auch einen Standardmodus konfigurieren, sodass der Regeleditor immer in diesem Modus geöffnet wird. Gehen Sie dazu wie folgt vor:
 
 1. Gehen Sie zu AEM Webkonsole unter `https://[host]:[port]/system/console/configMgr`.
-1. Klicken Sie auf , um **[!UICONTROL Konfigurationsdienst für adaptive Formulare]** zu bearbeiten.
+1. Klicken Sie auf , um **[!UICONTROL Konfiguration des adaptiven Formulars und des interaktiven Kommunikations-Web-Kanals]** zu bearbeiten.
 1. Wählen Sie **[!UICONTROL Visual Editor]** oder **[!UICONTROL Codeeditor]** aus der Dropdownliste für den **[!UICONTROL Standardmodus für den Regeleditor]**.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
