@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c8672774-6911-497d-837b-1e5953c4226a
 translation-type: tm+mt
-source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+source-git-commit: b9c77b9b50ae7f18198baddf82dffcd8de4f30be
 workflow-type: tm+mt
-source-wordcount: '3427'
+source-wordcount: '3453'
 ht-degree: 86%
 
 ---
@@ -68,6 +68,10 @@ Erstellen Sie Übersetzungsprojekte so, dass Sie den Workflow zur Übersetzung d
 Sie können festlegen, dass die untergeordneten Seiten der ausgewählten Seite ebenfalls ausgewählt werden. In diesem Fall werden jedem Projekt auch die Kopien der untergeordneten Seiten hinzugefügt, sodass sie übersetzt werden. Wenn untergeordnete Seiten unterschiedlichen Konfigurationen des Translation-Integration-Frameworks zugeordnet sind, erstellt AEM zusätzliche Projekte.
 
 Sie können auch [Übersetzungsprojekte manuell erstellen](#creating-a-translation-project-using-the-projects-console).
+
+>[!NOTE]
+>
+>Um ein Projekt zu erstellen, muss Ihr Konto Mitglied der Gruppe `project-administrators` sein.
 
 **Erstübersetzungen und Aktualisieren von Übersetzungen**
 
@@ -418,6 +422,10 @@ Füllen Sie Ihre Sprachkopie so, dass sie Inhalte aus der Master-Sprache enthäl
 ## Erstellen von Übersetzungsprojekten mithilfe der Projektekonsole  {#creating-a-translation-project-using-the-projects-console}
 
 Sie können ein Übersetzungsprojekt manuell erstellen, wenn Sie es vorziehen, die Projektekonsole zu verwenden.
+
+>[!NOTE]
+>
+>Um ein Projekt zu erstellen, muss Ihr Konto Mitglied der Gruppe `project-administrators` sein.
 
 Wenn Sie ein Übersetzungsprojekt manuell erstellen, müssen Sie neben den [grundlegenden Eigenschaften](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) Werte für die folgenden übersetzungsspezifischen Eigenschaften angeben:
 
