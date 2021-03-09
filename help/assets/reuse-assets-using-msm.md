@@ -4,9 +4,9 @@ description: Sie können Assets für mehrere Seiten/Ordner verwenden, die aus ü
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7eb569c86c45daa8b175f924b211693a5d5dde58
+source-git-commit: 5c9907bf475796c5bbb61d6fcaf43730f9e79777
 workflow-type: tm+mt
-source-wordcount: '3373'
+source-wordcount: '3366'
 ht-degree: 69%
 
 ---
@@ -70,7 +70,7 @@ Führen Sie folgende Schritte aus, um Live Copies mit der ersten Methode zu ers
 
 1. Wählen Sie Quell-Assets oder -ordner aus. Klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]** > **[!UICONTROL Live Copy]**.
 
-   ![Live-Kopie über die Benutzeroberfläche von Experience Manager erstellen](assets/create_lc1.png)
+   ![Live-Kopie über die  [!DNL Experience Manager] Benutzeroberfläche erstellen](assets/create_lc1.png)
 
    *Abbildung: Erstellen Sie eine Live-Kopie über die  [!DNL Experience Manager] Benutzeroberfläche.*
 
@@ -82,7 +82,7 @@ Führen Sie folgende Schritte aus, um Live Copies mit der zweiten Methode zu er
 
 1. Klicken Sie in [!DNL Experience Manager] oben rechts auf **[!UICONTROL Erstellen]** > **[!UICONTROL Live Copy]**.
 
-   ![Live-Kopie über die Benutzeroberfläche von Experience Manager erstellen](assets/create_lc2.png)
+   ![Live-Kopie über die  [!DNL Experience Manager] Benutzeroberfläche erstellen](assets/create_lc2.png)
 
    *Abbildung: Erstellen Sie eine Live-Kopie über die  [!DNL Experience Manager] Benutzeroberfläche.*
 
@@ -106,7 +106,7 @@ Die folgenden beiden Methoden funktionieren für Assets und Ordner:
 
 >[!TIP]
 >
->Um den Status einiger separater Live-Kopien zu überprüfen, verwenden Sie die erste Methode, um die Seite [!UICONTROL Eigenschaften] zu überprüfen. Um den Status vieler Live-Kopien zu überprüfen, verwenden Sie die zweite Methode, um die Seite **[!UICONTROL Beziehungsstatus]** zu überprüfen.
+>Um den Status einiger separater Live-Kopien zu überprüfen, verwenden Sie die erste Methode, um die Seite **[!UICONTROL Eigenschaften]** zu überprüfen. Um den Status vieler Live-Kopien zu überprüfen, verwenden Sie die zweite Methode, um die Seite **[!UICONTROL Beziehungsstatus]** zu überprüfen.
 
 ### Informationen und Status von Live Copies   {#statuslcasset}
 
@@ -189,8 +189,9 @@ Nach der Bearbeitung einer Quelle können die Änderungen entweder mithilfe eine
 Sie können eine Aktion „Rollout“ über das Quell-Asset initiieren und alle oder einige ausgewählte Live Copies aktualisieren.
 
 1. Wählen Sie ein Live Copy-Asset oder einen Ordner aus. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**. Sie können auch den Tastaturbefehl `p` verwenden.
-1. Klicken Sie auf **[!UICONTROL Live Copy-Quelle]**. Klicken Sie oben in der Symbolleiste auf **[!UICONTROL Rollout]**.
-1. Wählen Sie die zu aktualisierenden Live Copies aus. Klicken Sie auf **[!UICONTROL Rollout]**. Um ein Rollout der an den untergeordneten Assets vorgenommenen Aktualisierungen durchzuführen, wählen Sie **[!UICONTROL Rollout von Quelle und allen untergeordneten Elementen]** aus.
+1. Klicken Sie auf **[!UICONTROL Live Copy-Quelle]**. Klicken Sie in der Symbolleiste auf **[!UICONTROL Rollout]**.
+1. Wählen Sie die zu aktualisierenden Live Copies aus. Klicken Sie auf **[!UICONTROL Rollout]**.
+1. Um ein Rollout der an den untergeordneten Assets vorgenommenen Aktualisierungen durchzuführen, wählen Sie **[!UICONTROL Rollout von Quelle und allen untergeordneten Elementen]** aus.
 
    ![Rollout von Quelländerungen an einige oder alle Live Copies](assets/livecopy_rollout_page.png)
 
@@ -210,7 +211,7 @@ Sie können eine Aktion „Rollout“ auch über die Leiste „Verweise“ initi
 
 Durch eine Aktion „Synchronisieren“ werden die Änderungen einer Quelle nur an die ausgewählte Live Copy übertragen. Die Aktion „Synchronisieren“ respektiert und bewahrt die lokalen Änderungen, die nach dem Abbrechen der Vererbung vorgenommen wurden. Die lokalen Änderungen werden nicht überschrieben und die abgebrochene Vererbung wird nicht wiederhergestellt. Sie haben drei Möglichkeiten, um eine Aktion „Synchronisieren“ zu initiieren.
 
-| Wohin in der [!DNL Experience Manager]-Schnittstelle | Zeitpunkt und Grund für die Verwendung | Verwendung |
+| Wohin in der [!DNL Experience Manager]-Schnittstelle | Zeitpunkt und Grund für die Verwendung | Informationen zur Verwendung |
 |---|---|---|
 | [!UICONTROL Leiste „Verweise“] | Schnelles Synchronisieren bei bereits ausgewählter Quelle | Siehe [Schnellaktionen in der Leiste „Verweise“ für Quellen](#refrailsource) |
 | Symbolleiste auf der Seite [!UICONTROL Eigenschaften] | Initiieren von Synchronisationen bei bereits öffneten Live Copy-Eigenschaften | Siehe [Synchronisieren von Live Copies](#sync-lc) |
