@@ -3,10 +3,10 @@ title: Berichte zur Verwendung und Freigabe von Assets
 description: Berichte zu Ihren Assets in  [!DNL Adobe Experience Manager Assets] , die Ihnen dabei helfen, Nutzung, Aktivität und Freigabe Ihrer digitalen Assets zu verstehen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6016cefa9456d8f142347ff197b61b1614d55ab9
+source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
 workflow-type: tm+mt
-source-wordcount: '1131'
-ht-degree: 90%
+source-wordcount: '1139'
+ht-degree: 88%
 
 ---
 
@@ -97,13 +97,13 @@ Gehen Sie wie folgt vor, um Berichte zu erstellen:
 
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Weiter]**.
 
-1. Auf der Seite **[!UICONTROL Spalten konfigurieren]** sind einige Spalten standardmäßig für den Bericht ausgewählt. Sie können zusätzliche Spalten auswählen. Heben Sie die Auswahl einer Spalte auf, wenn sie nicht im Bericht angezeigt werden soll.
+1. Auf der Seite **[!UICONTROL Spalten konfigurieren]** sind einige Spalten standardmäßig für den Bericht ausgewählt. Sie können zusätzliche Spalten auswählen. Abbrechen der Auswahl einer Spalte, um sie im Bericht auszuschließen.
 
-   ![Berichtsspalten auswählen oder Auswahl aufheben](assets/configure_columns.png)
+   ![Auswahl der Berichtspalten auswählen oder abbrechen](assets/configure_columns.png)
 
    Um einen benutzerdefinierten Spaltennamen oder Eigenschaftspfad anzuzeigen, konfigurieren Sie die Eigenschaften für die Asset-Binärdatei im `jcr:content`-Knoten in CRX. Alternativ können Sie sie über die Auswahl für den Eigenschaftspfad hinzufügen.
 
-   ![Berichtsspalten auswählen oder Auswahl aufheben](assets/custom_columns.png)
+   ![Auswahl der Berichtspalten auswählen oder abbrechen](assets/custom_columns.png)
 
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]**. Eine Meldung benachrichtigt Sie darüber, dass die Berichtserstellung startet.
 1. Auf der Seite [!UICONTROL Asset-Berichte] basiert der angezeigte Berichterstellungsstatus auf dem aktuellen Status des Berichtauftrags, zum Beispiel [!UICONTROL Erfolg], [!UICONTROL Fehlgeschlagen], [!UICONTROL In Warteschlange] oder [!UICONTROL Geplant]. Derselbe Status wird auch im Benachrichtigungseingang angezeigt. Klicken Sie zur Ansicht der Berichtsseite auf den Berichts-Link. Alternativ wählen Sie den Bericht aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Anzeigen]**.
