@@ -4,10 +4,10 @@ description: Hier erfahren Sie, wie Sie Sammlungen von Assets verwalten, z. B. S
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
+source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
 workflow-type: tm+mt
-source-wordcount: '2176'
-ht-degree: 65%
+source-wordcount: '2180'
+ht-degree: 64%
 
 ---
 
@@ -94,7 +94,7 @@ Gehen Sie wie folgt vor, um eine intelligente Sammlung zu erstellen:
 
    >[!NOTE]
    >
-   >Wenn Sie **[!UICONTROL Öffentlich]** auswählen, steht die intelligente Sammlung allen Benutzern mit der Rolle &quot;Inhaber&quot;zur Verfügung, nachdem Sie sie erstellt haben. Wenn Sie die Option **[!UICONTROL Öffentlich]** deaktivieren, ist die DAM-Benutzergruppe nicht mehr mit der Smart-Sammlung verknüpft.
+   >Wenn Sie **[!UICONTROL Öffentlich]** auswählen, steht die intelligente Sammlung allen Benutzern mit der Rolle &quot;Inhaber&quot;zur Verfügung, nachdem Sie sie erstellt haben. Wenn Sie die Option **[!UICONTROL Öffentlich]** abbrechen, wird die DAM-Benutzergruppe nicht mehr mit der intelligenten Sammlung verknüpft.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die intelligente Sammlung zu erstellen, und schließen Sie dann das Meldungsfeld, um den Prozess abzuschließen.
 
@@ -152,11 +152,11 @@ Sie können die Metadaten von mehreren Sammlungen gleichzeitig bearbeiten. Mit d
 1. Wählen Sie in der Sammlungskonsole zwei oder mehr Sammlungen aus.
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**.
 1. Bearbeiten Sie auf der Seite **[!UICONTROL Sammlungs-Metadaten]** die Metadaten auf den Registerkarten **[!UICONTROL Allgemein]** und **[!UICONTROL Erweitert]** nach Bedarf.
-1. Heben Sie die Auswahl der anderen Sammlungen in der Sammlungsliste auf, um die Metadateneigenschaften für eine bestimmte Sammlung anzuzeigen. Die Metadateneditorfelder werden mit den Metadaten für die bestimmte Sammlung gefüllt.
+1. Um die Metadateneigenschaften für eine bestimmte Sammlung Ansicht, brechen Sie die Auswahl der verbleibenden Sammlungen in der Liste &quot;Sammlungen&quot;ab. Die Metadateneditorfelder werden mit den Metadaten für die bestimmte Sammlung gefüllt.
 
    >[!NOTE]
    >
-   >* Auf der Seite [!UICONTROL Eigenschaften] können Sie Sammlungen aus der Liste der Sammlungen entfernen, indem Sie sie deaktivieren. In der Sammlungsliste sind alle Sammlungen standardmäßig ausgewählt. [!DNL Experience Manager] aktualisiert nicht die Metadaten der Sammlungen, die Sie entfernen.
+   >* Auf der Seite [!UICONTROL Eigenschaften] können Sie Sammlungen aus der Liste der Sammlungen entfernen, indem Sie die Auswahl abbrechen. In der Sammlungsliste sind alle Sammlungen standardmäßig ausgewählt. [!DNL Experience Manager] aktualisiert nicht die Metadaten der Sammlungen, die Sie entfernen.
    >* Aktivieren Sie über der Sammlungsliste das Kontrollkästchen neben **[!UICONTROL Titel]**, um zwischen der Auswahl von Sammlungen und dem Deaktivieren der Liste umzuschalten.
 
 
