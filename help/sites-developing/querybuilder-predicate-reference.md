@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 translation-type: tm+mt
-source-git-commit: 571a48790c4977e97abec24fe88407b5b6376108
+source-git-commit: 7a96ff5cdd187291efe108d1171782bcbecfaeb0
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 60%
@@ -99,7 +99,7 @@ Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen.
 
 * **operation**
 
-   &quot; `equals`&quot;für exakte Übereinstimmung, &quot; `!=`&quot;für Ungleichheitsvergleich, &quot; `greater`&quot;für Eigenschaft1 größer als Eigenschaft2, &quot; `>=`&quot;für Eigenschaft1 größer oder gleich Eigenschaft2. Der Standardwert ist &quot; `equals`&quot;.
+   &quot;`equals`&quot;für exakte Übereinstimmung, &quot;`!=`&quot;für Ungleichheitsvergleich, &quot;`greater`&quot;für Eigenschaft1 größer als Eigenschaft2, &quot;`>=`&quot;für Eigenschaft1 größer oder gleich Eigenschaft2. Der Standardwert ist &quot;`equals`&quot;.
 
 ### daterange {#daterange}
 
@@ -368,7 +368,7 @@ Unterstützt die Facettenextraktion. Stellt für jeden eindeutigen Eigenschaftsw
 
 * **operation**
 
-   &quot; `equals`&quot;für exakte Übereinstimmung (Standard), &quot; `unequals`&quot;für Ungleichheitsvergleich, &quot; `like`&quot;für die Verwendung der `jcr:like` xpath-Funktion (optional), &quot; `not`&quot;für keine Übereinstimmung (z. B. &quot; `not(@prop)`&quot;in xpath wird value param ignoriert) oder &quot; `exists`&quot;für die Überprüfung der Existenz (Wert kann true sein - Eigenschaft muss vorhanden sein, der Standardwert - oder false - identisch mit &quot; `not`&quot;
+   &quot;`equals`&quot;für exakte Übereinstimmung (Standard), &quot;`unequals`&quot;für Ungleichheitsvergleich, &quot;`like`&quot;für die Verwendung der `jcr:like` xpath-Funktion (optional), &quot;`not`&quot;für keine Übereinstimmung (z. B. &quot;`not(@prop)`&quot;in xpath wird value param ignoriert) oder &quot;`exists`&quot;für die Überprüfung der Existenz (Wert kann true sein - Eigenschaft muss vorhanden sein, die Standardeinstellung - oder false - entspricht &quot;`not`&quot;)
 
 * **depth**
 
