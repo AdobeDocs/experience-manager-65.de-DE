@@ -3,9 +3,9 @@ title: XMP-Writeback in Ausgabeformaten
 description: Erfahren Sie, wie die XMP-Writeback-Funktion die Metadaten für ein Asset an alle oder spezifische Ausgabeformate des Elements propagiert.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '792'
 ht-degree: 58%
 
 ---
@@ -88,6 +88,6 @@ Durch Filtern von XMP-Metadaten über die Zulassungsliste wird dieses Problem be
 
    >[!NOTE]
    >
-   >Die Option **[!UICONTROL Blockierungsliste auf XMP-Eigenschaften anwenden]** ist standardmäßig ausgewählt. Mit anderen Worten, das Filtern über eine Blockierungsliste ist standardmäßig aktiviert. Um diese Filterung zu deaktivieren, deaktivieren Sie die Option **[!UICONTROL Blockierungsliste auf XMP Eigenschaften anwenden]**.
+   >Die Option **[!UICONTROL Blockierungsliste auf XMP-Eigenschaften anwenden]** ist standardmäßig ausgewählt. Mit anderen Worten, das Filtern über eine Blockierungsliste ist standardmäßig aktiviert. Um eine solche Filterung zu deaktivieren, brechen Sie die Auswahl der Option **[!UICONTROL Blockierungsliste auf XMP Eigenschaften anwenden]** ab.
 
 1. Speichern Sie die Änderungen.
