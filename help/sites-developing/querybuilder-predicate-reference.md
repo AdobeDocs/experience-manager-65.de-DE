@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 571a48790c4977e97abec24fe88407b5b6376108
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 60%
@@ -99,7 +99,7 @@ Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen.
 
 * **operation**
 
-   &quot; `=`&quot;für exakte Übereinstimmung, &quot; `!=`&quot;für Ungleichheitsvergleich, &quot; `>`&quot;für Eigenschaft1 größer als Eigenschaft2, &quot; `>=`&quot;für Eigenschaft1 größer oder gleich Eigenschaft2. Der Standardwert ist &quot; `=`&quot;.
+   &quot; `equals`&quot;für exakte Übereinstimmung, &quot; `!=`&quot;für Ungleichheitsvergleich, &quot; `greater`&quot;für Eigenschaft1 größer als Eigenschaft2, &quot; `>=`&quot;für Eigenschaft1 größer oder gleich Eigenschaft2. Der Standardwert ist &quot; `equals`&quot;.
 
 ### daterange {#daterange}
 
