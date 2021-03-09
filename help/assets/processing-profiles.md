@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 141a1783f275c0b3587ebc374bde19a21e107409
+source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
 workflow-type: tm+mt
-source-wordcount: '1369'
-ht-degree: 90%
+source-wordcount: '1370'
+ht-degree: 89%
 
 ---
 
@@ -113,7 +113,7 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
    * Geben Sie im Feld **[!UICONTROL Timeout]** den externen Prozess-Timeout (Sekunden) ein.
    * Geben Sie im Feld **[!UICONTROL Zeitraum]** ein Abrufintervall (Sekunden) ein, um zu testen, ob der externe Prozess abgeschlossen ist.
    * Geben Sie im Feld **[!UICONTROL Batch]** die maximale Anzahl von Assets (50-1.000) ein, die in einem Massen-Upload-Auftrag auf den Dynamic Media-Server verarbeitet werden sollen.
-   * Wählen Sie **[!UICONTROL Bei Zeitüberschreitung fortsetzen]** aus, wenn Sie beim Erreichen des Zeitlimits fortfahren möchten. Entfernen Sie die Markierung, wenn Sie bei Erreichen der Zeitüberschreitung in den Posteingang wechseln möchten.
+   * Wählen Sie **[!UICONTROL Bei Zeitüberschreitung fortsetzen]** aus, wenn Sie beim Erreichen des Zeitlimits fortfahren möchten. Auswahl abbrechen, wenn Sie zum Posteingang wechseln möchten, wenn der Timeout erreicht ist.
 
    ![Dialogfeld „Eigenschaften“](/help/assets/assets-dm/reprocess-assets3.png)
 
