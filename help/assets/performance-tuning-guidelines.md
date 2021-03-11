@@ -4,10 +4,10 @@ description: 'Vorschläge und Anleitungen zur Konfiguration, Änderungen an Hard
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: 0cecf1940136175887802b5ba205c67e61475a59
 workflow-type: tm+mt
-source-wordcount: '2744'
-ht-degree: 53%
+source-wordcount: '2741'
+ht-degree: 52%
 
 ---
 
@@ -241,7 +241,7 @@ Wenn Sie Assets in einer große Menge an veröffentlichten Instanzen replizieren
 
 ## Durchsuchen von Indizes    {#search-indexes}
 
-Vergewissern Sie sich, dass Sie die neuesten Service Packs und leistungsrelevanten Hotfixes implementiert haben, da sie häufig Aktualisierungen der Systemindizes enthalten. Einige Indexoptimierungen finden Sie unter [Tipps zur Leistungsoptimierung](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html).
+Installieren Sie [die neuesten Service Packs](/help/release-notes/sp-release-notes.md) und leistungsbezogene Hotfixes, da diese häufig Aktualisierungen von Systemindizes beinhalten. Einige Indexoptimierungen finden Sie unter [Tipps zur Leistungsoptimierung](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html).
 
 Erstellen Sie eigene Indizes für Abfragen, die Sie häufig ausführen. Weitere Informationen finden Sie unter [Methoden zur Analyse von langsamen Abfragen](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) und [Erstellen benutzerdefinierter Indizes](/help/sites-deploying/queries-and-indexing.md). Weitere Einblicke in Best Practices bezüglich Abfragen und Indizes finden Sie unter [Best Practices für Abfragen und Indizierung](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
@@ -305,6 +305,6 @@ Um Latenzzeiten zu minimieren und durch effiziente CPU-Auslastung und Lastenvert
 * Konfigurieren Sie [!DNL ImageMagick], um den Ressourcenverbrauch zu begrenzen.
 * Entfernen Sie unnötige Schritte aus dem Arbeitsablauf [!UICONTROL DAM-Update-Asset].
 * Konfigurieren des Arbeitsablaufs und der Versionsbereinigung.
-* Optimieren Sie die Indizes mit den neuesten Service Packs und Hotfixes. Wenden Sie sich an den Kundendienst von Adobe, um weitere verfügbare Indexoptimierungen zu erhalten.
+* Optimieren Sie Indizes mit den neuesten Service Packs und Hotfixes. Wenden Sie sich an den Kundendienst von Adobe, um weitere verfügbare Indexoptimierungen zu erhalten.
 * Optimieren Sie die Abfrageleistung mit guessTotal.
 * Wenn Sie [!DNL Experience Manager] so konfigurieren, dass Dateitypen aus dem Inhalt der Dateien erkannt werden (indem Sie **[!UICONTROL Day CQ DAM Mime Type Service]** in der **[!UICONTROL AEM Web Console]** aktivieren), laden Sie viele Dateien während der Nicht-Spitzenzeiten stapelweise hoch, da sie ressourcenintensiv sind.
