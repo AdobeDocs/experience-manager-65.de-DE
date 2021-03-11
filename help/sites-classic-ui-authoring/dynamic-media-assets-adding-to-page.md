@@ -1,28 +1,24 @@
 ---
 title: Hinzufügen von Dynamic Media-Assets zu Seiten
-seo-title: Hinzufügen von Dynamic Media-Assets zu Seiten
-description: Um die Funktionen für dynamische Medien zu Assets hinzuzufügen, die Sie auf Ihren Websites verwenden möchten, können Sie die Komponente „Dynamische Medien“ oder „Interaktive Medien“ direkt auf der Seite hinzufügen.
-seo-description: Um die Funktionen für dynamische Medien zu Assets hinzuzufügen, die Sie auf Ihren Websites verwenden möchten, können Sie die Komponente „Dynamische Medien“ oder „Interaktive Medien“ direkt auf der Seite hinzufügen.
-uuid: 650d0867-a079-4936-a466-55b7a30803a2
+description: Um die Dynamic Media-Funktionalität zu Assets hinzuzufügen, die Sie auf Ihren Websites verwenden, können Sie die Komponente "Dynamic Media"oder "Interactive Media"direkt auf der Seite hinzufügen.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
-discoiquuid: 331f4980-5193-4546-a22e-f27e38bb8250
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
-source-wordcount: '1718'
-ht-degree: 59%
+source-wordcount: '1685'
+ht-degree: 55%
 
 ---
 
 
 # Hinzufügen von Dynamic Media-Assets zu Seiten{#adding-dynamic-media-assets-to-pages}
 
-Um die Dynamic Media-Funktionalität zu Assets hinzuzufügen, die Sie auf Ihren Websites verwenden, können Sie die Komponenten **[!UICONTROL Dynamic Media]** oder **[!UICONTROL Interaktive Medien]** direkt auf der Seite hinzufügen. Dazu geben Sie den Modus [!UICONTROL Design] ein und aktivieren die dynamischen Medienkomponenten. Anschließend können Sie der Seite diese Komponenten und der Komponente Assets hinzufügen. „Dynamische Medien“ und „Interaktive Medien“ sind intelligente Komponenten, die erkennen, ob Sie ein Bild oder ein Video hinzufügen. Die verfügbaren Optionen werden entsprechend angepasst.
+Um die Dynamic Media-Funktionalität zu Assets hinzuzufügen, die Sie auf Ihren Websites verwenden, können Sie die Komponenten **[!UICONTROL Dynamic Media]** oder **[!UICONTROL Interaktive Medien]** direkt auf der Seite hinzufügen. Dazu geben Sie den Modus [!UICONTROL Design] ein und aktivieren die Dynamic Media-Komponenten. Anschließend können Sie der Seite diese Komponenten und der Komponente Assets hinzufügen. Die Dynamic Media- und interaktiven Medienkomponenten sind intelligent - sie wissen, ob Sie ein Bild oder ein Video hinzufügen. Die verfügbaren Optionen ändern sich entsprechend.
 
-Sie können dynamische Medienelemente direkt zur Seite hinzufügen, wenn Sie AEM als WCM verwenden.
+Sie fügen Dynamic Media-Assets direkt zur Seite hinzu, wenn Sie AEM als Ihren WCM verwenden.
 
 >[!NOTE]
 >
@@ -48,7 +44,7 @@ So fügen Sie einer Seite eine Komponente bzw. einen Viewer vom Typ „Dynamisch
 
 ## Komponenten vom Typ „Dynamische Medien“{#dynamic-media-components}
 
-[!UICONTROL Dynamic ] Media und  [!UICONTROL Interactive ] Media sind im   Sidekickunder  **[!UICONTROL Dynamic Media verfügbar.]** Verwenden Sie die Komponente **[!UICONTROL Interaktive Medien]** für beliebige interaktive Assets wie interaktive Videos, interaktive Bilder oder Karussell-Sets. Verwenden Sie für alle anderen Komponenten vom Typ „Dynamische Medien“ die Komponente **[!UICONTROL Dynamische Medien]**.
+[!UICONTROL Dynamic ] Media und  [!UICONTROL Interactive ] Media sind im   Sidekickunder  **[!UICONTROL Dynamic Media verfügbar.]** Verwenden Sie die Komponente **[!UICONTROL Interaktive Medien]** für beliebige interaktive Assets wie interaktive Videos, interaktive Bilder oder Karussell-Sets. Verwenden Sie für alle anderen Dynamic Media-Komponenten die Komponente **[!UICONTROL Dynamic Media]**.
 
 ![chlimage_1-71](assets/chlimage_1-71a.png)
 
@@ -65,7 +61,7 @@ Die Dynamic Media-Komponente ist intelligent. Je nachdem, ob Sie ein Bild oder e
 >Wenn Sie die Komponente [!UICONTROL Dynamic Media] hinzufügen und **[!UICONTROL Dynamic Media Settings]** leer ist oder Sie ein Asset nicht ordnungsgemäß hinzufügen können, überprüfen Sie Folgendes:
 >
 >* Sie [Dynamic Media aktiviert](/help/assets/config-dynamic.md) haben. Dynamic Media ist standardmäßig deaktiviert.
->* das Bild eine Pyramid TIFF-Datei aufweist. Bilder, die vor der Aktivierung von Dynamic Media importiert wurden, verfügen nicht über eine Pyramid TIFF-Datei.
+>* das Bild eine Pyramid TIFF-Datei aufweist. Bilder, die importiert wurden, bevor Dynamic Media aktiviert wurde, haben keine Pyramidenzeitsdatei.
 
 >
 
