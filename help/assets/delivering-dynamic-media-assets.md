@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: e3b44330-d476-49c6-b7ba-079d0d60e500
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3eacfe8a79d155dddde8908d05b05790d048b0c5
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 96%
+ht-degree: 90%
 
 ---
 
@@ -23,7 +23,7 @@ Wie Sie Dynamic Media-Assets (sowohl Videos als auch Bilder) bereitstellen könn
 
 Mit Dynamic Media haben Sie mehrere Optionen:
 
-* Wenn Ihre Website auf AEM gehostet ist, können Sie die Dynamic Media-Assets direkt zu Ihrer Seite hinzufügen.
+* Wenn Ihre Website auf AEM gehostet wird, möchten Sie die Dynamic Media-Assets direkt zu Ihrer Seite hinzufügen.
 * Wenn sich Ihre Website nicht in AEM befindet, können Sie eine der folgenden Aktionen ausführen:
 
    * Betten Sie Ihr Video oder Bild auf Ihrer Website ein.
