@@ -3,7 +3,7 @@ title: Best Practices für [!DNL Assets]
 description: Verbessert die Systemstabilität und die Leistung unter Belastung durch Ermittlung und Einhaltung der Best Practices, die von der Bereitstellung und Konfiguration abhängen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 25%
@@ -13,7 +13,7 @@ ht-degree: 25%
 
 # Best Practices für [!DNL Assets] {#best-practices-for-assets}
 
-[!DNL Adobe Experience Manager Assets] ist wichtig für die Bereitstellung von erstklassigen digitalen Marketingerlebnissen, die durch Erhöhung der Inhaltsgeschwindigkeit zum Erreichen von Geschäftszielen beitragen. Wenn Sie mit einer großen Anzahl von Assets innerhalb von [!DNL Experience Manager Assets] arbeiten oder regelmäßig/regelmäßig zahlreiche Assets hochladen, einschließlich Videos und dynamische Medien, ist die Optimierung Ihrer digitalen Asset-Verwaltung für die Systemeffizienz von entscheidender Bedeutung.
+[!DNL Adobe Experience Manager Assets] ist wichtig für die Bereitstellung von erstklassigen digitalen Marketingerlebnissen, die durch Erhöhung der Inhaltsgeschwindigkeit zum Erreichen von Geschäftszielen beitragen. Wenn Sie mit einer großen Anzahl von Assets innerhalb von [!DNL Experience Manager Assets] arbeiten oder regelmäßig/regelmäßig zahlreiche Assets hochladen, einschließlich Videos und Dynamic Media, ist die Optimierung Ihrer digitalen Asset-Verwaltung für die Systemeffizienz von entscheidender Bedeutung.
 
 Je nachdem, wie Sie [!DNL Assets] für Ihr Unternehmen positioniert haben und welche Funktionen Sie für die Asset-Erfassung, die Generierung von Darstellungen und die Metadaten-Extraktion verwenden, verbessert die Identifizierung und Einhaltung der Best Practices in den verschiedenen Bereichen die Systemstabilität und Leistung bei Belastung erheblich.
 
