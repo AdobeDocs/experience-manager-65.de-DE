@@ -10,7 +10,7 @@ discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 translation-type: tm+mt
-source-git-commit: 99293a13fcdf06f37d9747683f7c32ebd9246d18
+source-git-commit: 54dd71655aeae00bcaa27847f91af07f15faf478
 workflow-type: tm+mt
 source-wordcount: '7840'
 ht-degree: 39%
@@ -976,6 +976,7 @@ Erweiterte Anwendungsfälle können einen Modifikator `icc=` manuell konfigurier
 
 >[!NOTE]
 Der Standardsatz mit Adobe-Farbelementen ist nur verfügbar, wenn [Feature Pack 12445 von Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) installiert ist. Alle Feature Packs und Service Packs sind unter [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) verfügbar. Feature Pack 12445 enthält die Adobe-Farbprofile.
+
 
 ### Installieren von Feature Pack 12445  {#installing-feature-pack}
 
