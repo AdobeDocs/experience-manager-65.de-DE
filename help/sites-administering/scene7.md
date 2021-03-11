@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
 source-wordcount: '5452'
 ht-degree: 21%
@@ -34,7 +34,7 @@ Informationen zur Verwendung aller Dynamic Media Classic-Komponenten auf einer S
 
 ## AEM/Dynamic Media Classic Integration versus Dynamic Media {#aem-scene-integration-versus-dynamic-media}
 
-AEM Benutzer haben die Wahl zwischen zwei Lösungen, um mit dynamischen Medien zu arbeiten: Integrieren Sie entweder Ihre AEM in Dynamic Media Classic oder verwenden Sie die Dynamic Media-Lösung, die in AEM integriert ist.
+AEM Benutzer haben die Wahl zwischen zwei Lösungen für die Verwendung mit Dynamic Media: Integrieren Sie entweder Ihre AEM in Dynamic Media Classic oder verwenden Sie die Dynamic Media-Lösung, die in AEM integriert ist.
 
 Verwenden Sie die folgenden Kriterien, um zu bestimmen, welche Lösung ausgewählt werden soll:
 
@@ -246,7 +246,7 @@ Die Synchronisierung zwischen AEM Assets und Dynamic Media Classic hat derzeit f
   </tr>
   <tr>
    <td>Ein angegebener Synchronisierungsordner (Zielgruppe)</td>
-   <td>Für Dynamic Media Classic-Uploads kann in AEM nur ein bestimmter Ordner pro Firma festgelegt werden. Sie können mehrere Konfigurationen erstellen, wenn Sie Zugriff auf mehr als ein Firma-Konto in Dynamic Media Classic benötigen.</td>
+   <td>Für Dynamic Media Classic-Uploads ist in AEM nur ein bestimmter Ordner pro Firma verfügbar. Sie können mehrere Konfigurationen erstellen, wenn Sie Zugriff auf mehr als ein Firma-Konto in Dynamic Media Classic benötigen.</td>
   </tr>
   <tr>
    <td>Ordnerstruktur</td>
@@ -565,7 +565,7 @@ Insbesondere konfigurieren Sie hier das vom MIME-Typ akzeptierte Dateiformat im 
 1. Tippen Sie auf der rechten Seite der CRXDE Lite auf die Registerkarte **[!UICONTROL Properties]**.
 1. Geben Sie im Wertefeld **[!UICONTROL jobParam]** einen Dynamic Media Classic-Upload-Auftragsparameter an.
 
-   Beispiel: `psprocess="rasterize"&psresolution=120`.
+   Beispiel, `psprocess="rasterize"&psresolution=120` .
 
    Weitere Upload-Auftragsparameter, die Sie verwenden können, finden Sie unter [Adobe Dynamic Media Classic Image Production System API](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html).
 
