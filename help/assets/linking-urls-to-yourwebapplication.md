@@ -8,10 +8,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
 source-wordcount: '1274'
-ht-degree: 96%
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ Um diese URL-Zeichenfolgen auf Ihren Web-Seiten und in Ihren Programmen zu platz
 
 >[!NOTE]
 >
->URL-Zeichenfolgen sind nur für dynamische Ausgabedarstellungen von Assets verfügbar. Sie sind derzeit nicht für statische Assets verfügbar, die in DAM und nicht im Server für Dynamic Media aufbewahrt werden. Für statische Ausgabedarstellungen wird die URL-Schaltfläche nicht angezeigt.
+>URL-Zeichenfolgen stehen nur für dynamische Darstellungen von Assets zur Verfügung. Sie sind derzeit nicht für statische Assets verfügbar, die sich in DAM befinden und nicht auf dem Dynamic Media-Server. Die URL-Schaltfläche wird nicht für statische Darstellungen angezeigt.
 
 Siehe auch [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite.](embed-code.md)
 
