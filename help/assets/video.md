@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
 source-wordcount: '11740'
 ht-degree: 95%
@@ -275,7 +275,7 @@ Die folgende Grafik zeigt den allgemeinen Bearbeitungs-Workflow für Videos, die
 
 ## Best Practices für die Kodierung von Videos {#best-practices-for-encoding-videos}
 
-Der Workflow für die **Videokodierung mit Dynamic Media** kodiert Videos, wenn Sie Dynamic Media aktiviert und Video-Cloud Services eingerichtet haben. Dieser Workflow erfasst den Workflow-Prozess und Informationen zu Fehlern. Siehe [Überwachen der Videokodierung und des YouTube Publishing-Fortschritts](#monitoring-video-encoding-and-youtube-publishing-progress). Wenn Sie Dynamic Media aktiviert und Video-Cloud Services eingerichtet haben, wird der Workflow für die **[!UICONTROL Videokodierung mit Dynamic Media]** automatisch beim Hochladen eines Videos wirksam. (Wenn Sie keine Dynamic Media verwenden, wird der Workflow **[!UICONTROL DAM Update Asset]** wirksam.)
+Der Arbeitsablauf **Dynamic Media Encode Video** kodiert Videos, wenn Sie Dynamic Media aktiviert und Video Cloud-Dienste eingerichtet haben. Dieser Workflow erfasst den Workflow-Prozess und Informationen zu Fehlern. Siehe [Überwachen der Videokodierung und des YouTube Publishing-Fortschritts](#monitoring-video-encoding-and-youtube-publishing-progress). Wenn Sie Dynamic Media aktiviert und Video Cloud-Dienste eingerichtet haben, wird der Arbeitsablauf **[!UICONTROL Dynamic Media-Kodierung Video]** automatisch beim Hochladen eines Videos wirksam. (Wenn Sie Dynamic Media nicht verwenden, wird der Arbeitsablauf **[!UICONTROL DAM-Update-Asset]** wirksam.)
 
 Beachten Sie die folgenden Best Practice-Tipps für die Kodierung von Quellvideodateien.
 
@@ -402,9 +402,9 @@ Im folgenden Beispiel hat das Quellvideo Abmessungen von 1920 x 1080. Die drei 
 
 | Videotyp | Breite x Höhe | Breitenverhältnis | Höhenverhältnis |
 |--- |--- |--- |--- |
-| Quelle | 1920 x 1080 | 1 | 3 |
+| Quelle | 1920 x 1080 | 1 | 1 |
 | Kodiert | 960 x 540 | 2 | 2 |
-| Kodiert | 640 x 360 | 3 | 3 |
+| Kodiert | 640 x 360 | 3 | 1 |
 | Kodiert | 480 x 270 | 4 | 4 |
 
 ### Kodiertes Videodateiformat {#encoded-video-file-format}
