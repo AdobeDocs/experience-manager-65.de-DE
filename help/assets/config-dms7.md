@@ -1,16 +1,16 @@
 ---
 title: Konfigurieren von Dynamic Media – Scene7-Modus
-description: Informationen zur Konfiguration von Dynamic Media im Scene7-Modus.
+description: Erfahren Sie, wie Sie den Dynamic Media - Scene7-Modus konfigurieren.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 787f3b4cf5835b7e9b03e3f4e6f6597084adec8c
+source-git-commit: 99293a13fcdf06f37d9747683f7c32ebd9246d18
 workflow-type: tm+mt
-source-wordcount: '6072'
-ht-degree: 54%
+source-wordcount: '6138'
+ht-degree: 53%
 
 ---
 
@@ -38,7 +38,7 @@ Mit der neuen Architektur ist Experience Manager für primäre Quellelemente und
 >* [Intelligente Bildbearbeitung](/help/assets/imaging-faq.md)
 >* [Cache-Ungültigmachung](/help/assets/invalidate-cdn-cache-dynamic-media.md)
 >* [Hotlink-Schutz](/help/assets/hotlink-protection.md)
->* [HTTP/2-Versand des Inhalts](/help/assets/http2.md)
+>* [Bereitstellung von Inhalten per HTTP/2](/help/assets/http2.md)
 >* URL-Umleitung auf CDN-Ebene
 >* Akamai ChinaCDN (für optimalen Versand in China)
 
@@ -65,11 +65,11 @@ Die Aktualisierung von Experience Manager Dynamic Media von 6.3 auf 6.4 oder 6.5
 >
 >Wenn Sie Ihre Experience Manager-Instanz im Kompatibilitätsmodus ausführen - d. h. die Kompatibilität ist verpackt - müssen Sie diese Befehle nicht ausführen.
 
-Bei allen Upgrades – mit oder ohne Kompatibilitätspaket – können Sie die standardmäßig in Dynamic Media vorhandenen Viewer-Vorgaben kopieren, indem Sie unter Linux den folgenden curl-Befehl ausführen:
+Für alle Upgrades mit oder ohne Kompatibilitätspaket können Sie die standardmäßigen, sofort einsetzbaren Viewer-Vorgaben kopieren, die ursprünglich mit Dynamic Media geliefert wurden, indem Sie den folgenden Linux®-Befehl &quot;curl&quot;ausführen:
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets/viewer.pushviewerpresets.json`
 
-Um benutzerdefinierte Viewer-Vorgaben und Konfigurationen zu migrieren, die Sie von `/etc` zu `/conf` erstellt haben, führen Sie den folgenden Linux-Befehl &quot;curl&quot;aus:
+Um benutzerdefinierte Viewer-Vorgaben und Konfigurationen zu migrieren, die Sie von `/etc` zu `/conf` erstellt haben, führen Sie den folgenden Linux®-Befehl &quot;curl&quot;aus:
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets.migratedmcontent.json`
 
@@ -106,7 +106,10 @@ Weitere Informationen finden Sie unter [Feature Pack 18912 installieren für Mas
 
    * **[!UICONTROL Assets veröffentlichen]** – Sie können zwischen den folgenden drei Optionen wählen:
       * **[!UICONTROL Sofort]** bedeutet, dass das System hochgeladene Assets aufnimmt und umgehend die URL/den Link zur Einbettung bereitstellt. Zum Veröffentlichen von Assets ist kein Benutzereingriff erforderlich.
-      * **[!UICONTROL Bei]** Aktivierung müssen Sie das Asset explizit veröffentlichen, bevor ein URL-/Einbettungslink bereitgestellt wird.
+      * **[!UICONTROL Bei]** Aktivierung müssen Sie das Asset explizit veröffentlichen, bevor ein URL-/Einbettungslink bereitgestellt wird.<br><!-- CQDOC-17478, Added March 9, 2021-->Ab Experience Manager 6.5.8 gibt die Experience Manager Publish-Instanz genaue Dynamic Media-Metadatenwerte wieder, z. B.  `dam:scene7Domain` und nur  `dam:scene7FileStatus` im  **[!UICONTROL Bei]** Aktivierung. Um diese Funktion zu aktivieren, installieren Sie Service Pack 8 und starten Sie Experience Manager neu. Gehen Sie zum Sling Config Manager. Suchen Sie die Konfiguration für `Scene7ActivationJobConsumer Component` oder erstellen Sie eine neue). Aktivieren Sie das Kontrollkästchen **[!UICONTROL Metadaten nach der Dynamic Media-Veröffentlichung replizieren]** und tippen Sie dann auf **[!UICONTROL Speichern]**.
+
+         ![Replizieren von Metadaten nach der Dynamic Media-Veröffentlichung](assets-dm/replicate-metadata-setting.png)
+
       * **[!UICONTROL Selektive]** VeröffentlichungMit dieser Option können Sie steuern, welche Ordner in Dynamic Media veröffentlicht werden. Damit können Sie Funktionen wie Smart-Zuschneiden oder dynamische Darstellungen verwenden oder festlegen, welche Ordner ausschließlich in Experience Manager zur Vorschau veröffentlicht werden. Dieselben Assets sind *nicht*, die in Dynamic Media zum Versand im öffentlichen Bereich veröffentlicht werden.<br>Sie können diese Option hier in der  **[!UICONTROL Dynamic Media Cloud-]** Konfiguration oder, falls gewünscht, auf Ordnerebene in den  **[!UICONTROL Eigenschaften]** eines Ordners festlegen.<br>Siehe [Arbeiten mit selektiver Veröffentlichung in Dynamic Media.](/help/assets/selective-publishing.md)<br>Wenn Sie diese Konfiguration später ändern oder später auf Ordnerebene ändern, wirken sich diese Änderungen nur auf neue Assets aus, die Sie von diesem Zeitpunkt an hochladen. Der Veröffentlichungsstatus vorhandener Assets im Ordner bleibt unverändert, bis Sie ihn im Dialogfeld **[!UICONTROL Quick Publish]** oder **[!UICONTROL Veröffentlichung verwalten]** manuell ändern.
    * **[!UICONTROL Sicherer Vorschau-Server]** – bietet Ihnen die Möglichkeit, den URL-Pfad zu Ihrem Vorschau-Server für sichere Ausgaben anzugeben. Das heißt, nach der Generierung von Darstellungen kann Experience Manager sicher auf die Dynamic Media-Remote-Darstellungen zugreifen und diese Vorschau durchführen (es werden keine Binärdateien an die Experience Manager-Instanz zurückgesendet).
 Wenn Sie keine spezielle Vereinbarung zur Verwendung des Servers Ihrer eigenen Firma oder eines Spezialservers haben, empfiehlt Adobe, diese Einstellung wie angegeben zu belassen.
@@ -117,7 +120,7 @@ Wenn Sie keine spezielle Vereinbarung zur Verwendung des Servers Ihrer eigenen F
       * **[!UICONTROL Standardmäßig aktiviert]** – Die Konfiguration wird auf alle Ordner angewendet, es sei denn, Sie markieren einen Ordner speziell zum Ausschließen. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Standardmäßig deaktiviert]** – Die Konfiguration wird auf einen Ordner erst dann angewendet, wenn Sie einen ausgewählten Ordner explizit zur Synchronisierung mit Dynamic Media markieren.
 Um einen ausgewählten Ordner zur Synchronisierung mit Dynamic Media zu markieren, wählen Sie einen Asset-Ordner aus und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Eigenschaften]**. Wählen Sie auf der Registerkarte **[!UICONTROL Details]** in der Dropdown-Liste **[!UICONTROL Synchronisierungsmodus für Dynamic Media]** eine der folgenden drei Optionen aus. Wenn Sie fertig sind, tippen Sie auf **[!UICONTROL Speichern.]** *Denken Sie daran: Diese drei Optionen stehen nicht zur Verfügung, wenn Sie zuvor **Alle Inhalte synchronisieren**ausgewählt haben.* Weitere Informationen finden Sie unter [Arbeiten mit selektiver Veröffentlichung auf Ordnerebene in Dynamic Media.](/help/assets/selective-publishing.md)
-         * **[!UICONTROL geerbt]** : Kein expliziter Synchronisierungswert im Ordner; Stattdessen übernimmt der Ordner den Synchronisierungswert von einem seiner Vorgängerordner oder den Standardmodus in der Cloud-Konfiguration. Der detaillierte Status für geerbte Daten wird als QuickInfo angezeigt.
+         * **[!UICONTROL geerbt]** : Kein expliziter Synchronisierungswert im Ordner; Stattdessen übernimmt der Ordner den Synchronisierungswert von einem seiner Vorgängerordner oder den Standardmodus in der Cloud-Konfiguration. Der detaillierte Status für geerbte Inhalte wird als QuickInfo angezeigt.
          * **[!UICONTROL Aktivieren für Unterordner]**  - Schließen Sie alle Elemente in dieser Unterstruktur für die Synchronisierung mit Dynamic Media ein. Die ordnerspezifischen Einstellungen setzen den Standardmodus in der Cloud-Konfiguration außer Kraft.
          * **[!UICONTROL Deaktiviert für Unterordner]** : Schließen Sie alle Elemente in diesem Unterbaum von der Synchronisierung mit Dynamic Media aus.
 
@@ -589,7 +592,7 @@ Wenn Sie Dynamic Media für die Bildbearbeitung, Videomaterial oder beides verwe
   <tr>
    <td> </td>
    <td><strong>Filter</strong></td>
-   <td><strong>Mimetype</strong></td>
+   <td><strong>Mime-Typ</strong></td>
    <td><strong>Ausgabeformate</strong></td>
   </tr>
   <tr>
