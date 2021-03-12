@@ -3,7 +3,7 @@ title: Verwenden von Connected Assets zum Freigeben von DAM-Assets in  [!DNL Sit
 description: Verwenden Sie Assets, die in einer Remote [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] -Implementierung verfügbar sind.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d17749cb8e923848f8f81360c03b9afba7989ae2
+source-git-commit: 8714a76843231650555e84d3670ecad0bfec2566
 workflow-type: tm+mt
 source-wordcount: '2754'
 ht-degree: 73%
@@ -225,4 +225,4 @@ Gehen Sie wie folgt vor, um häufige Fehler zu beheben:
 
 * Wenn keine Remote-Referenzen abgerufen werden und eine Fehlermeldung angezeigt wird, überprüfen Sie, ob die Sites-Bereitstellung verfügbar ist, und prüfen Sie, ob Probleme mit der Netzwerkverbindung auftreten. Versuchen Sie es später noch einmal zu prüfen. [!DNL Assets] Bei der Bereitstellung wird zweimal versucht, eine Verbindung zur  [!DNL Sites] Bereitstellung herzustellen, und es wird dann ein Fehler gemeldet.
 
-![Fehler beim Wiederholen von Remote-Referenzen für Assets](assets/reference-report-failure.png)
+   ![Fehler beim Wiederholen von Remote-Referenzen für Assets](assets/reference-report-failure.png)
