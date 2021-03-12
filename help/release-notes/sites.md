@@ -2,10 +2,10 @@
 title: Versionshinweise zu AEM Sites
 description: Spezifische Versionshinweise für Adobe Experience Manager 6.5 Sites
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: 23656e023a9a0bfc335655f9cfb0530aa917b3ef
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 64%
+source-wordcount: '872'
+ht-degree: 61%
 
 ---
 
@@ -83,7 +83,7 @@ Im Folgenden sind die Verbesserungen für AEM Sites 6.5 aufgeführt:
 * Die Indizierung von [Experience Fragments](/help/sites-authoring/experience-fragments.md) wurde verbessert, sodass deren Inhalte bei der Suche nach Seiten mit diesen Experience Fragments gefunden werden.
 * Mit der Option [In Ziel exportieren](/help/sites-administering/experience-fragments-target.md) können Sie nun das Experience Fragment als JSON (Standard ist HTML) oder beides senden.
 
-## Übersetzung  {#translation}
+## Übersetzung {#translation}
 
 * Übersetzungsprojekte lassen sich durch Projekt-Master einfacher erstellen.
 * Vereinfachen Sie die Ausführung von Übersetzungsprojekten, indem Sie Übersetzungsaufträge standardmäßig auf den Status &quot;Genehmigt&quot;setzen.
@@ -110,7 +110,13 @@ Im Folgenden sind die Verbesserungen für AEM Sites 6.5 aufgeführt:
 
 >[!CAUTION]
 >
->at.js 2.x wird zum Zeitpunkt der Veröffentlichung von AEM 6.5 nicht in AEM unterstützt. Aktualisieren Sie auf die neueste Version von at.js 1.x.
+>Zurzeit:
+>
+>* Nur `at.js 1.x` wird unterstützt, wenn Sie Adobe Target als Targeting-Engine in AEM Aktivitäten-Konsole verwenden.
+   >
+   >
+* Sowohl `at.js. 1.x` als auch `at.js 2.x` werden unterstützt, wenn Sie Experience Fragment-Export in Zielgruppe verwenden und Aktivitäten in der Konsole der Zielgruppe ausführen.
+
 
 * Zur Adobe Target-Integration kann nun die Target Standard-API verwendet werden. Frühere Versionen von AEM verwenden die Zielgruppe Classic HTTP API, die jetzt nicht mehr unterstützt wird.
 * Adobe Target `mbox.js` Version 63 ist enthalten. Adobe empfiehlt dringend, die Implementierung auf `at.js` v1.x zu wechseln.
