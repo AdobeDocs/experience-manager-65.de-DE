@@ -4,7 +4,7 @@ description: Spezifische Versionshinweise zu [!DNL Adobe Experience Manager] 6.5
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d96730eed6447815c40307a8d60b6ffc9ff45c2e
+source-git-commit: 89b037fbde6003ccf86336c4467df415e233986b
 workflow-type: tm+mt
 source-wordcount: '2822'
 ht-degree: 5%
@@ -36,7 +36,7 @@ Die wichtigsten Funktionen und Verbesserungen, die in [!DNL Adobe Experience Man
 
 * Bei Verwendung der Funktion [Verbundene Assets](/help/assets/use-assets-across-connected-assets-instances.md) können Sie jetzt eine Liste aller [!DNL Sites]-Seiten, die das Asset verwenden, Ansicht haben. Diese Verweise auf ein Asset sind auf der Seite [!UICONTROL Eigenschaften] eines Assets verfügbar. Dadurch erhalten Administratoren, Marketingexperten und Bibliothekare eine vollständige Ansicht der Asset-Nutzung, was eine bessere Verfolgung, Verwaltung und Markenkonsistenz ermöglicht.
 
-* Beim Löschen eines Assets, auf das auf einer Webseite verwiesen wird, wird eine Warnung angezeigt. [!DNL Experience Manager] Sie können das Löschen eines referenzierten Assets erzwingen oder die auf der Seite [!DNL Properties] des Assets angezeigten Verweise überprüfen und ändern. Durch Klicken auf die Verweise werden die lokalen und Remote-Seiten [!DNL Sites] geöffnet.
+* Beim Löschen eines Assets, auf das auf einer Webseite verwiesen wird, zeigt [!DNL Experience Manager] [eine Warnung](/help/assets/use-assets-across-connected-assets-instances.md#asset-usage-references) an. Sie können das Löschen eines referenzierten Assets erzwingen oder die auf der Seite [!DNL Properties] des Assets angezeigten Verweise überprüfen und ändern. Durch Klicken auf die Verweise werden die lokalen und Remote-Seiten [!DNL Sites] geöffnet.
 
 * Sortieren der für die Aktualisierung verfügbaren Live Copy-Seiten mit den Eigenschaften [!UICONTROL Name], [!UICONTROL Letztes Änderungsdatum,] und [!UICONTROL Letztes Rollout-Datum].
 
