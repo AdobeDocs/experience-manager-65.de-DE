@@ -3,10 +3,10 @@ title: Verwenden von Connected Assets zum Freigeben von DAM-Assets in  [!DNL Sit
 description: Verwenden Sie Assets, die in einer Remote [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] -Implementierung verfügbar sind.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8714a76843231650555e84d3670ecad0bfec2566
+source-git-commit: 8df7e4403c6664b52573cd4479b3a6a08d2cb6fa
 workflow-type: tm+mt
-source-wordcount: '2754'
-ht-degree: 73%
+source-wordcount: '2717'
+ht-degree: 72%
 
 ---
 
@@ -106,13 +106,15 @@ Gehen Sie wie folgt vor, um die Verbindung zwischen Connected Assets und lokalen
    >
    >Wenn Autoren ein Asset abrufen, werden alle in der Remote-Implementierung verfügbaren Ausgabedarstellungen abgerufen. Überspringen Sie diesen Konfigurationsschritt, wenn Sie mehr Ausgabedarstellungen eines abgerufenen Assets erstellen möchten. Der Workflow [!UICONTROL DAM-Update-Asset] wird gestartet und es werden mehr Ausgabedarstellungen erstellt. Diese Ausgabedarstellungen sind nur für die lokale [!DNL Sites]-implementierung verfügbar und nicht für die Remote-DAM-Bereitstellung.
 
-1. hinzufügen die Bereitstellung als zulässige Herkunft in der CORS-Konfiguration bei der [!DNL Assets]-Bereitstellung.[!DNL Sites]
+1. hinzufügen die Bereitstellung als zulässige Herkunft in der CORS-Konfiguration bei der [!DNL Assets]-Bereitstellung. [!DNL Sites] Weitere Informationen finden Sie unter [CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html) verstehen.
 
-   1. Melden Sie sich mit den Anmeldeinformationen des Administrators an. Suchen Sie nach `Cross-Origin`. Öffnen Sie **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
+<!-- TBD: See if these steps are not required.
+    1. Log in using the administrator credentials. Search for `Cross-Origin`. Access **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 
-   1. Klicken Sie zum Erstellen einer CORS-Konfiguration für die [!DNL Sites]-Implemetierung auf das Symbol ![_assets_add_](assets/do-not-localize/assets_add_icon.png) neben der **[!UICONTROL Adobe Granite-Richtlinie für das gemeinsame Nutzen von Ressourcen über Ursprünge hinweg]**.
+    1. To create a CORS configuration for [!DNL Sites] deployment, click add option ![Assets add icon](assets/do-not-localize/assets_add_icon.png) next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
 
-   1. Geben Sie im Feld für den **[!UICONTROL zulässigen Ursprung]** die URL der lokalen [!DNL Sites] ein, z. B. `https://[local_sites]:[port]`. Speichern Sie die Konfiguration.
+    1. In the field **[!UICONTROL Allowed Origins]**, input the URL of the local [!DNL Sites], that is, `https://[local_sites]:[port]`. Save the configuration.
+-->
 
 Sie können die Verbindung zwischen konfigurierten [!DNL Sites]-Bereitstellungen und [!DNL Assets]-Bereitstellung überprüfen.
 
@@ -173,7 +175,7 @@ Gehen Sie wie folgt vor, um Verweise auf die [!DNL Assets]-Bereitstellung Ansich
 1. Wählen Sie ein Asset in der [!DNL Assets]-Konsole aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**.
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Referenzen]**. Siehe **[!UICONTROL Lokale Referenzen]** für die Verwendung des Assets in der [!DNL Assets]-Bereitstellung. Siehe **[!UICONTROL Remote-Referenzen] für die Verwendung des Assets bei der [!DNL Sites]-Bereitstellung, bei der das Asset mithilfe der Funktion &quot;Verbundene Assets&quot;abgerufen wurde.
 
-   ![Remote-Verweise in Asset-Eigenschaften](assets/connected-assets-remote-reference.png)
+   ![Remote-Verweise auf der Seite &quot;Asset-Eigenschaften&quot;](assets/connected-assets-remote-reference.png)
 
 1. Die Referenzen für [!DNL Sites]-Seiten zeigen die Gesamtzahl der Referenzen für jede lokale [!DNL Sites] an. Es kann einige Zeit dauern, bis alle Referenzen gefunden und die Gesamtzahl der Referenzen angezeigt werden.
 1. Die Liste der Verweise ist interaktiv und DAM-Benutzer können auf einen Verweis klicken, um die Verweisseite zu öffnen. Wenn Remote-Referenzen aus irgendeinem Grund nicht abgerufen werden können, wird eine Benachrichtigung angezeigt, die den Benutzer über den Fehler informiert.
@@ -223,6 +225,6 @@ Gehen Sie wie folgt vor, um häufige Fehler zu beheben:
 
    ![Cookie-Fehler in Chrome im Inkognito-Modus](assets/chrome-cookies-incognito-dialog.png)
 
-* Wenn keine Remote-Referenzen abgerufen werden und eine Fehlermeldung angezeigt wird, überprüfen Sie, ob die Sites-Bereitstellung verfügbar ist, und prüfen Sie, ob Probleme mit der Netzwerkverbindung auftreten. Versuchen Sie es später noch einmal zu prüfen. [!DNL Assets] Bei der Bereitstellung wird zweimal versucht, eine Verbindung zur  [!DNL Sites] Bereitstellung herzustellen, und es wird dann ein Fehler gemeldet.
+* Wenn Remote-Referenzen nicht abgerufen werden und eine Fehlermeldung angezeigt wird, überprüfen Sie, ob [!DNL Sites] Bereitstellung verfügbar ist, und prüfen Sie, ob Probleme mit der Netzwerkverbindung auftreten. Versuchen Sie es später noch einmal zu prüfen. [!DNL Assets] Bei der Bereitstellung wird zweimal versucht, eine Verbindung zur  [!DNL Sites] Bereitstellung herzustellen, und es wird dann ein Fehler gemeldet.
 
    ![Fehler beim Wiederholen von Remote-Referenzen für Assets](assets/reference-report-failure.png)
