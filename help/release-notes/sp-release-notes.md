@@ -4,9 +4,9 @@ description: Spezifische Versionshinweise zu [!DNL Adobe Experience Manager] 6.5
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 89b037fbde6003ccf86336c4467df415e233986b
+source-git-commit: 60764db23115e7f548a82a67955331da2b858973
 workflow-type: tm+mt
-source-wordcount: '2822'
+source-wordcount: '2812'
 ht-degree: 5%
 
 ---
@@ -208,7 +208,7 @@ Es gibt zwei Möglichkeiten, Adobe Experience Manager 6.5.8.0 automatisch auf ei
 
 A. Platzieren Sie das Paket in den Ordner `../crx-quickstart/install`, wenn der Server online verfügbar ist. Das Paket wird automatisch installiert.
 
-B. Verwenden Sie die [HTTP-API aus Package Manager](https://helpx.adobe.com/de/experience-manager/aem-previous-versions.html). Verwenden Sie `cmd=install&recursive=true`, damit die verschachtelten Pakete installiert werden.
+B. Verwenden Sie die [HTTP-API aus Package Manager](/help/sites-administering/package-manager.md#package-share). Verwenden Sie `cmd=install&recursive=true`, damit die verschachtelten Pakete installiert werden.
 
 >[!NOTE]
 >
