@@ -1,19 +1,21 @@
 ---
-title: XMP-Writeback in Ausgabeformaten
+title: XMP-Writeback in Ausgabedarstellungen
 description: Erfahren Sie, wie die XMP-Writeback-Funktion die Metadaten für ein Asset an alle oder spezifische Ausgabeformate des Elements propagiert.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
+source-git-commit: 7faa6638eff422599450946a257e53970d25189c
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 58%
+source-wordcount: '784'
+ht-degree: 57%
 
 ---
 
 
-# XMP-Writeback in Ausgabeformaten {#xmp-writeback-to-renditions}
+# XMP-Writeback in Ausgabedarstellungen {#xmp-writeback-to-renditions}
 
-Die XMP Funktion zum Erstellen einer Rückkopplung in [!DNL Adobe Experience Manager Assets] repliziert Änderungen an den Asset-Metadaten in den Darstellungen. Wenn Sie die Metadaten eines Assets von [!DNL Experience Manager Assets] oder beim Hochladen des Assets ändern, werden Änderungen zunächst innerhalb des Asset-Knotens in CRXDe gespeichert. Die XMP Funktion zum Schreiben von Dateien leitet die Metadatenänderungen an alle oder bestimmte Darstellungen des Assets weiter.
+Diese XMP Funktion für die Rückgabe von Metadaten in [!DNL Adobe Experience Manager Assets] repliziert die Änderungen an den Darstellungen des ursprünglichen Assets. Wenn Sie die Metadaten für ein Asset aus Assets ändern oder das Asset hochladen, werden die Änderungen zunächst im Metadaten-Knoten in der Asset-Hierarchie gespeichert.
+
+Mit der XMP-Writeback-Funktion können Sie die Metadatenänderungen in alle oder nur in bestimmte Ausgabedarstellungen des Assets kopieren. Die Funktion schreibt nur die Metadateneigenschaften zurück, die den Namensraum `jcr` verwenden, d. h., eine Eigenschaft mit dem Namen `dc:title` wird zurückgeschrieben, eine Eigenschaft mit dem Namen `mytitle` jedoch nicht.
 
 Stellen Sie sich vor, Sie ändern die Eigenschaft [!UICONTROL Titel] des Assets `Classic Leather` in `Nylon`.
 
@@ -23,11 +25,9 @@ In diesem Fall speichert [!DNL Experience Manager Assets] die Änderungen an der
 
 ![metadata_stored](assets/metadata_stored.png)
 
-[!DNL Experience Manager Assets] propagiert jedoch nicht automatisch Änderungen der Metadaten an den Darstellungen eines Assets.
+[!DNL Experience Manager Assets] propagiert jedoch nicht automatisch Änderungen der Metadaten an den Darstellungen eines Assets. Siehe [Aktivieren XMP Schreibens](#enable-xmp-writeback).
 
-Mit der Funktion zum XMP Schriftwechsel können Sie die Metadatenänderungen an alle oder bestimmte Darstellungen des Assets weiterleiten. Die Änderungen werden allerdings nicht unter dem Metadatenknoten in der Asset-Hierarchie gespeichert. Stattdessen werden die Änderungen mit dieser Funktion in die Binärdateien für die Ausgabeformate eingebettet.
-
-## Aktivieren von XMP-Writeback {#enabling-xmp-writeback}
+## Aktivieren XMP Schreibback {#enable-xmp-writeback}
 
 Um Metadatenänderungen beim Hochladen des Assets in die Ausgabeformate zu propagieren, bearbeiten Sie die Konfiguration **[!UICONTROL Adobe CQ DAM Rendition Maker]** in Configuration Manager.
 
@@ -47,7 +47,7 @@ Führen Sie folgende Schritte durch, damit die XMP-Writeback-Funktion Metadaten 
 1. Öffnen Sie über die Seite „Modelle“ das Workflow-Modell **[!UICONTROL DAM-Metadaten-Writeback]**.
 1. Öffnen Sie auf der Eigenschaftsseite **[!UICONTROL DAM-Metadaten-Writeback]** den Schritt **[!UICONTROL XMP-Writeback-Vorgang]**.
 1. Klicken Sie im Dialogfeld [!UICONTROL Schritt-Eigenschaften] auf die Registerkarte **[!UICONTROL Prozess]**.
-1. Fügen Sie im Feld **Argumente** `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png` hinzu und klicken Sie dann auf **OK**.
+1. Fügen Sie im Feld **Argumente** `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png` hinzu und klicken Sie auf **[!UICONTROL OK]**.
 
    ![Schritteigenschaften](assets/step_properties.png)
 
