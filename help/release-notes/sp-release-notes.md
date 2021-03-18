@@ -4,9 +4,9 @@ description: Spezifische Versionshinweise zu [!DNL Adobe Experience Manager] 6.5
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 60764db23115e7f548a82a67955331da2b858973
+source-git-commit: dfaa25ea72e50b60b8a40883ffb0241c131cc846
 workflow-type: tm+mt
-source-wordcount: '2812'
+source-wordcount: '3352'
 ht-degree: 5%
 
 ---
@@ -168,6 +168,56 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in der Version 6.5.8.0.[!
 >
 >[!DNL Experience Manager Forms] veröffentlicht die Add-On-Pakete eine Woche nach dem geplanten Veröffentlichungsdatum der [!DNL Experience Manager] Service Packs.
 
+**Adaptive Formulare**
+
+* Wenn Sie eine Tabelle mit einer wiederholbaren Zeile in ein wiederholbares Bedienfeld mit mehreren Instanzen in einem adaptiven Formular einfügen, wird die Tabelle immer der ersten Instanz des Bedienfelds hinzugefügt (NPR-35635).
+
+* Wenn der Registerfokus die CAPTCHA-Komponente erneut erreicht, nachdem er in einem adaptiven Formular einmal erfolgreich überprüft wurde, zeigt [!DNL Experience Manager Forms] die `Provide Captcha phrase to proceed`-Fehlermeldung (NPR-35539) an.
+
+**Interaktive Kommunikation**
+
+* Wenn Sie ein übersetztes Formular senden, werden die Übermittlungsmeldungen auf Englisch angezeigt und nicht in die entsprechende Sprache übersetzt (NPR-35808).
+
+* Wenn Sie eine Ausblendebedingung in die angehängten XDP- oder Dokument-Fragmente einschließen, wird die Interaktive Kommunikation nicht geladen (NPR-35745).
+
+**Korrespondenzverwaltung**
+
+* Wenn Sie einen Brief bearbeiten, dauert das Laden der Module mit Bedingungen länger (NPR-35325).
+
+* Wenn Sie ein Asset aus dem linken Navigationsbereich auswählen, das nicht in einem Brief enthalten ist, und dann das nächste Asset auswählen, wird die blaue Markierung nicht aus dem zuvor ausgewählten Asset entfernt (NPR-35851).
+
+* Wenn Sie Textfelder in einem Brief bearbeiten, zeigt [!DNL Experience Manager Forms] die Fehlermeldung `Text Edit Failed` (CQ-4313770) an.
+
+**Arbeitsablauf**
+
+* Wenn Sie versuchen, ein adaptives Formular in einer [!DNL Experience Manager Forms]-Mobilanwendung für iOS zu öffnen, reagiert die Anwendung nicht mehr (CQ-4314825).
+
+* Auf der Registerkarte [!UICONTROL Aufgaben] im HTML-Arbeitsbereich werden HTML-Zeichen (NPR-35298) angezeigt.
+
+**XMLFM**
+
+* Wenn Sie mit dem Output-Dienst ein XML-Dokument generieren, tritt bei einigen XML-Dateien der `OutputServiceException`-Fehler auf (CQ-4311341, CQ-4313893).
+
+* Wenn Sie die Eigenschaft &quot;Hochgestellt&quot;auf das erste Zeichen des Aufzählungszeichens anwenden, wird die Aufzählungszeichengröße kleiner (CQ-4306476).
+
+* Die mit dem Output-Dienst generierten PDF forms enthalten keine Ränder (CQ-4312564).
+
+**Designer**
+
+* Wenn Sie eine XDP-Datei in [!DNL Experience Manager Forms] Designer öffnen, wird eine Datei &quot;designer.log&quot;im selben Ordner wie die XDP-Datei generiert (CQ-4309427, CQ-4310865).
+
+**HTML5-Formulare**
+
+* Wenn Sie ein Kontrollkästchen in einem adaptiven Formular im [!DNL Safari] Webbrowser für [!DNL iOS 14.1 or 14.2] auswählen, werden keine weiteren Felder angezeigt (NPR-35652).
+
+**Forms Management**
+
+* Keine Bestätigungsmeldung zum erfolgreichen Massen-Upload von XDP-Dateien in das CRX-Repository (NPR-35546).
+
+**Dokumentensicherheit**
+
+* Mehrere Probleme wurden für die Option [!UICONTROL Richtlinie bearbeiten] in der AdminUI (NPR-35747) gemeldet.
+
 Informationen zu Sicherheitsaktualisierungen finden Sie unter [Seite mit Sicherheitsbulletins für Experience Manager](https://helpx.adobe.com/security/products/experience-manager.html).
 
 ## Installieren Sie 6.5.8.0 {#install}
@@ -223,6 +273,32 @@ B. Verwenden Sie die [HTTP-API aus Package Manager](/help/sites-administering/pa
 1. Das OSGi-Bundle `org.apache.jackrabbit.oak-core` ist Version 1.22.3 oder höher (Web-Konsole verwenden: `/system/console/bundles`).
 
 Informationen zu den Plattformen, die für die Verwendung mit dieser Version zertifiziert sind, finden Sie unter [Technische Anforderungen](/help/sites-deploying/technical-requirements.md).
+
+### Adobe Experience Manager Forms Add-On-Paket {#install-aem-forms-add-on-package} installieren
+
+>[!NOTE]
+>
+>Überspringen, wenn Sie Experience Manager Forms nicht verwenden. Korrekturen in Experience Manager Forms werden eine Woche nach der geplanten Veröffentlichung von [!DNL Experience Manager] Service Pack über ein separates Add-On-Paket bereitgestellt.
+
+1. Stellen Sie sicher, dass das Adobe Experience Manager Service Pack installiert ist.
+1. Wählen Sie unter den aufgeführten [AEM Forms-Versionen](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) das für Ihr Betriebssystem passende Forms-Add-on-Paket aus und laden Sie es herunter.
+1. Installieren Sie das Forms Add-On-Paket, wie unter [Installieren von AEM Forms-Add-On-Paketen](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package) beschrieben.
+
+>[!NOTE]
+>
+>AEM 6.5.8.0 enthält eine neue Version von [AEM Forms Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases). Wenn Sie eine ältere Version von AEM Forms Compatibility Package verwenden und auf AEM 6.5.8.0 aktualisieren, installieren Sie die neueste Version des Pakets nach der Installation des Forms Hinzufügen-On-Pakets.
+
+### Installieren von Adobe Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
+
+>[!NOTE]
+>
+>Überspringen Sie diesen Schritt, wenn Sie AEM Forms JEE nicht verwenden. Fehlerbehebungen in Adobe Experience Manager Forms on JEE werden über ein separates Installationsprogramm bereitgestellt.
+
+Informationen zum Installieren des kumulativen Installationsprogramms für Experience Manager Forms on JEE und zur Konfiguration nach der Bereitstellung finden Sie in den [Versionshinweisen](jee-patch-installer-65.md).
+
+>[!NOTE]
+>
+>Nachdem Sie das kumulative Installationsprogramm für Experience Manager Forms on JEE installiert haben, installieren Sie das neueste Forms-Add-On-Paket, löschen Sie das Forms-Add-On-Paket aus dem Ordner `crx-repository\install` und starten Sie den Server neu.
 
 ### UberJar {#uber-jar}
 
