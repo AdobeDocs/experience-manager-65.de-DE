@@ -1,8 +1,8 @@
 ---
 title: Integration mit Adobe Target über Adobe I/O
 seo-title: Integration mit Adobe Target über Adobe I/O
-description: Informationen zur Integration von AEM mit Adobe Target mit Adobe I/O
-seo-description: Informationen zur Integration von AEM mit Adobe Target mit Adobe I/O
+description: Erfahren Sie mehr über die Integration von AEM mit Adobe Target mithilfe der Adobe I/O
+seo-description: Erfahren Sie mehr über die Integration von AEM mit Adobe Target mithilfe der Adobe I/O
 uuid: dd4ed638-e182-4d7e-9c98-282431812467
 contentOwner: aheimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,17 +11,17 @@ topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 26efba567985dcb89b2610935cab18943b7034b3
+source-git-commit: 07f354ccfb8741f0de4fc85ba1575ead3b8ea6e4
 workflow-type: tm+mt
-source-wordcount: '1335'
-ht-degree: 11%
+source-wordcount: '1559'
+ht-degree: 9%
 
 ---
 
 
 # Integration mit Adobe Target über Adobe I/O{#integration-with-adobe-target-using-adobe-i-o}
 
-Die Integration von AEM mit Adobe Target über die Target Standard-API erfordert die Konfiguration der Adobe IMS (Identity Management System) und Adobe I/O.
+Die Integration von AEM mit Adobe Target über die Target Standard-API erfordert die Konfiguration von Adobe IMS (Identity Management System) und Adobe I/O.
 
 >[!NOTE]
 >
@@ -30,6 +30,7 @@ Die Integration von AEM mit Adobe Target über die Target Standard-API erfordert
 >Die Verwendung der Adobe Target Classic API in AEM wird aus Gründen der Abwärtskompatibilität weiterhin unterstützt. Die [Zielgruppe Classic-API verwendet die Benutzeranmeldeauthentifizierung](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target).
 >
 >Die API-Auswahl wird von der Authentifizierungsmethode gesteuert, die für die AEM/Zielgruppe-Integration verwendet wird.
+>Siehe auch Abschnitt [Mandant-ID und Client-Code](#tenant-client).
 
 ## Voraussetzungen {#prerequisites}
 
@@ -44,7 +45,7 @@ Bevor Sie mit diesem Verfahren beginnen:
 
 * Der Systemadministrator Ihres Unternehmens sollte die Admin Console verwenden, um die erforderlichen Entwickler in Ihrem Unternehmen zu den entsprechenden Profilen hinzuzufügen.
 
-   * Dadurch erhalten bestimmte Entwickler die Berechtigung, Integrationen in Adobe I/O zu aktivieren.
+   * Dadurch erhalten bestimmte Entwickler die Berechtigung, Integrationen in der Adobe I/O zu aktivieren.
    * Weitere Informationen finden Sie unter [Entwickler verwalten](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
 
 
@@ -61,7 +62,7 @@ Der erste Schritt der Konfiguration besteht darin, eine IMS-Konfiguration in AEM
 
    ![](assets/integrate-target-io-01.png)
 
-1. Wählen Sie **Herunterladen** (oder **Öffentlichen Schlüssel herunterladen**), um die Datei auf Ihr lokales Laufwerk herunterzuladen, damit sie einsatzbereit ist, wenn [Adobe I/O für die Adobe Target-Integration mit AEM](#configuring-adobe-i-o-for-adobe-target-integration-with-aem) konfiguriert wird.
+1. Wählen Sie **Herunterladen** (oder **Öffentlichen Schlüssel herunterladen**), um die Datei auf Ihr lokales Laufwerk herunterzuladen, damit sie einsatzbereit ist, wenn [die Adobe I/O für die Adobe Target-Integration mit AEM](#configuring-adobe-i-o-for-adobe-target-integration-with-aem) konfiguriert wird.
 
    >[!CAUTION]
    >
@@ -71,7 +72,7 @@ Der erste Schritt der Konfiguration besteht darin, eine IMS-Konfiguration in AEM
 
 ## Adobe I/O für Adobe Target-Integration mit AEM {#configuring-adobe-i-o-for-adobe-target-integration-with-aem} konfigurieren
 
-Sie müssen das Adobe I/O-Projekt (Integration) mit Adobe Target erstellen, das AEM verwenden wird, und dann die erforderlichen Berechtigungen zuweisen.
+Sie müssen das Adobe I/O Project (Integration) mit Adobe Target erstellen, das AEM verwenden wird, und dann die erforderlichen Berechtigungen zuweisen.
 
 ### Erstellen des Projekts {#creating-the-project}
 
@@ -81,7 +82,7 @@ Sie müssen das Adobe I/O-Projekt (Integration) mit Adobe Target erstellen, das 
 >
 >Siehe auch die [Adobe I/O-Tutorials](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html).
 
-1. Öffnen Sie die Adobe I/O-Konsole für Projekte:
+1. Öffnen Sie die Projektkonsole für Adoben I/O:
 
    [https://console.adobe.io/projects](https://console.adobe.io/projects)
 
@@ -146,9 +147,9 @@ Sie müssen der Integration jetzt die erforderlichen Berechtigungen zuweisen:
 1. Wählen Sie **Integrationen** und dann die erforderliche Integrationskonfiguration.
 1. Wählen Sie **Editor** als **Produktrolle** aus. anstelle von **Beobachter**.
 
-## Für das Adobe I/O-Integrationsprojekt {#details-stored-for-the-adobe-io-integration-project} gespeicherte Details
+## Für das Adobe I/O Integration Project {#details-stored-for-the-adobe-io-integration-project} gespeicherte Details
 
-In der Adobe I/O-Projektkonsole können Sie eine Liste aller Integrationsprojekte anzeigen:
+In der Adobe I/O Projects Console können Sie eine Liste aller Integrationsprojekte anzeigen:
 
 * [https://console.adobe.io/projects](https://console.adobe.io/projects)
 
@@ -163,7 +164,7 @@ Wählen Sie **Ansicht** (rechts neben einem bestimmten Projekteintrag), um weite
 * APIS
    * Adobe Target
 
-Einige davon müssen Sie zur Zielgruppe in AEM die Adobe I/O-Integration abschließen.
+Einige davon müssen Sie für die Zielgruppe in AEM die Adobe I/O-Integration abschließen.
 
 ## Abschluss der IMS-Konfiguration in AEM {#completing-the-ims-configuration-in-aem}
 
@@ -177,8 +178,8 @@ Zurück zum AEM können Sie die IMS-Konfiguration abschließen, indem Sie erford
    * **Titel**: Ihr Text.
    * **Autorisierungsserver**: Kopieren/fügen Sie dies aus der  `"aud"` Zeile des  **** Payloadsection unten ein, z.B.  `"https://ims-na1.adobelogin.com"` im Beispiel unten
    * **API-Schlüssel**: Kopieren Sie dies aus dem  [](#details-stored-for-the-adobe-io-integration-project) Übersichtsabschnitt der Adobe I/O-Integration für Zielgruppe
-   * **geheim**: Generieren Sie dies im  [](#details-stored-for-the-adobe-io-integration-project) Übersichtsabschnitt der Adobe I/O-Integration zur Zielgruppe und kopieren Sie
-   * **Nutzlast**: Kopieren Sie dies aus dem Abschnitt  [Generate ](#details-stored-for-the-adobe-io-integration-project) JWT der Adobe I/O-Integration für Zielgruppe
+   * **geheim**: Generieren Sie dies im  [](#details-stored-for-the-adobe-io-integration-project) Übersichtsabschnitt der Adobe I/O-Integration für die Zielgruppe und kopieren Sie
+   * **Nutzlast**: Kopieren Sie dies aus dem Abschnitt  [Generate ](#details-stored-for-the-adobe-io-integration-project) JWT in der Adobe I/O-Integration für Zielgruppe
 
    ![](assets/integrate-target-io-10.png)
 
@@ -230,7 +231,7 @@ Auf die Konfiguration kann nun verwiesen werden, damit ein Cloud Service die Tar
 1. Geben Sie die Details auf der Registerkarte **Adobe Target Settings** ein:
 
    * **Authentifizierung**: IMS
-   * **Mandant-ID**: die Adobe IMS Tenant ID
+   * **Mandant-ID**: die Adobe IMS Tenant ID. Siehe auch den Abschnitt [Mandanten-ID und Client-Code](#tenant-client) weiter unten.
 
       >[!NOTE]
       >
@@ -241,7 +242,7 @@ Auf die Konfiguration kann nun verwiesen werden, damit ein Cloud Service die Tar
       >`https://experience.adobe.com/#/@yourtenantid/target/activities`
       >
       >Dann würden Sie `yourtenantid` verwenden.
-
+   * **Client-Code**: Siehe  [Mandanten-ID und Client-](#tenant-client) Code unten.
    * **IMS-Konfiguration**: den Namen der IMS-Konfiguration auswählen
    * **API-Typ**: REST
    * **A4T-Analyse-Cloud-Konfiguration**: Wählen Sie die Analyse-Cloud-Konfiguration aus, die für Target-Aktivitätsziele und -metriken verwendet wird. Sie benötigen sie, wenn Sie Adobe Analytics als Quelle für die Berichterstellung für bestimmte Inhalte verwenden. Wenn Ihre Cloud-Konfiguration nicht angezeigt wird, finden Sie weitere Informationen unter [Konfigurieren der A4T-Analytics Cloud-Konfiguration](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
@@ -254,15 +255,35 @@ Auf die Konfiguration kann nun verwiesen werden, damit ein Cloud Service die Tar
    >[!NOTE]
    >
    >[Die Konfiguration eines Cloud Service zur Verwendung der Zielgruppe Classic ](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target) API wurde eingestellt (unter Verwendung der Registerkarte &quot;Adobe Recommendations-Einstellungen&quot;).
-
-   Beispiel:
-
-   ![](assets/integrate-target-io-14.png)
-
 1. Klicken Sie auf **Mit Zielgruppe verbinden**, um die Verbindung mit Adobe Target zu initialisieren.
 
    Wenn die Verbindung erfolgreich hergestellt wurde, wird die Meldung **Verbindung erfolgreich** angezeigt.
 
 1. Wählen Sie in der Meldung **OK** und anschließend **OK** im Dialogfeld aus, um die Konfiguration zu bestätigen.
 1. Sie können jetzt mit [Hinzufügen eines Zielgruppe-Frameworks](/help/sites-administering/target-configuring.md#adding-a-target-framework) fortfahren, um ContextHub- oder ClientContext-Parameter zu konfigurieren, die an die Zielgruppe gesendet werden. Beachten Sie, dass dies möglicherweise nicht erforderlich ist, um AEM Erlebnisfragmente in die Zielgruppe zu exportieren.
+
+### Mandanten-ID und Client-Code {#tenant-client}
+
+Mit [Adobe Experience Manager 6.5.8.0](/help/release-notes/sp-release-notes.md) wurde das Feld Client-Code zum Konfigurationsfenster der Zielgruppe hinzugefügt.
+
+Achten Sie bei der Konfiguration der Felder Mandant-ID und Client-Code auf Folgendes:
+
+1. Für die meisten Kunden sind die Mandant-ID und der Client-Code identisch. Das bedeutet, dass beide Felder die gleichen Informationen enthalten und identisch sind. Vergewissern Sie sich, dass Sie die Mandant-ID in beide Felder eingeben.
+2. Zu älteren Zwecken können Sie auch verschiedene Werte in die Felder &quot;Mandant-ID&quot;und &quot;Client-Code&quot;eingeben.
+
+Beachten Sie in beiden Fällen Folgendes:
+
+* Standardmäßig wird auch der Client-Code (wenn er zuerst hinzugefügt wird) automatisch in das Feld &quot;Mandant-ID&quot;kopiert.
+* Sie haben die Möglichkeit, den Standardsatz für die Mandant-ID zu ändern.
+* Dementsprechend basieren die Backend-Aufrufe zur Zielgruppe auf der Mandanten-ID und die clientseitigen Aufrufe zur Zielgruppe basieren auf dem Client-Code.
+
+Wie bereits erwähnt, ist der erste Fall der häufigste Fall für AEM 6.5. Stellen Sie in beiden Fällen sicher, dass die Felder **beide** je nach Bedarf die richtigen Informationen enthalten.
+
+>[!NOTE]
+>
+> Wenn Sie eine bestehende Konfiguration der Zielgruppe ändern möchten:
+>
+> 1. Geben Sie die Tenant-ID erneut ein.
+> 2. Stellen Sie eine erneute Verbindung zur Zielgruppe her.
+> 3. Speichern Sie die Konfiguration.
 
