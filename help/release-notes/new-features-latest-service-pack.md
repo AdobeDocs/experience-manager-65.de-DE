@@ -4,9 +4,9 @@ description: Neue Funktionen in [!DNL Experience Manager] 6.5 Service Pack 8
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2c6d11f63420040a500bbb75f1146c29f64bdcc5
+source-git-commit: f52fc643c30babab68bcf122eb3d91da5ce37a24
 workflow-type: tm+mt
-source-wordcount: '2883'
+source-wordcount: '3015'
 ht-degree: 5%
 
 ---
@@ -37,6 +37,22 @@ Sie können jetzt die für die Aktualisierung verfügbaren Live Copy-Seiten mit 
 >[!NOTE]
 >
 >Das Add-On-Paket von [!DNL Experience Manager Forms] wird eine Woche nach der geplanten [!DNL Experience Manager] Service Pack-Version verfügbar gemacht.
+
+### CAPTCHA-Komponente in einem adaptiven Formular basierend auf Regeln ein- oder ausblenden{#show-hide-captcha}
+
+Sie können CAPTCHA jetzt entweder beim Senden des adaptiven Formulars oder bei Benutzeraktionen validieren. Sie können auch Bedingungen hinzufügen, um CAPTCHA bei einer Benutzeraktion zu validieren und die CAPTCHA-Komponente in einem adaptiven Formular basierend auf Regeln ein- oder auszublenden.
+
+### hinzufügen benutzerdefinierten CAPTCHA-Dienste {#add-custom-captcha-services}
+
+[!DNL Experience Manager Forms] bietet standardmäßig Unterstützung zur Verwendung von Google reCAPTCHA (eine separate Lizenz der Google reCAPTCHA APIs ist erforderlich) als CAPTCHA-Validierungsdienst. Sie können auch einen benutzerdefinierten CAPTCHA-Dienst verwenden, um CAPTCHAs zu validieren.
+
+### Weitere Verbesserungen {#other-enhancements-forms-6580}
+
+* Die Barrierefreiheit der Komponente [!DNL Experience Manager Forms] &quot;Datumsauswahl&quot;wurde verbessert.
+
+* Unterstützung für die Generierung einer interaktiven Kommunikation im PCL-Format mit der PrintChannel-API hinzugefügt.
+
+* Beim Durchführen einer PDFG-Konvertierung können Sie jetzt die [!DNL Experience Manager Forms]-Registrierungsänderungen für die Erstellung benutzerdefinierter Lesezeichen aktivieren oder deaktivieren.
 
 ## Schlüsselfunktionen in vorherigen [!DNL Experience Manager] 6.5 Service Packs {#key-features-previous-service-packs}
 
