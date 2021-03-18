@@ -11,9 +11,9 @@ topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 07f354ccfb8741f0de4fc85ba1575ead3b8ea6e4
+source-git-commit: 498896dccf80065195cc945b01cb8d037b8f6dab
 workflow-type: tm+mt
-source-wordcount: '1559'
+source-wordcount: '1557'
 ht-degree: 9%
 
 ---
@@ -231,7 +231,7 @@ Auf die Konfiguration kann nun verwiesen werden, damit ein Cloud Service die Tar
 1. Geben Sie die Details auf der Registerkarte **Adobe Target Settings** ein:
 
    * **Authentifizierung**: IMS
-   * **Mandant-ID**: die Adobe IMS Tenant ID. Siehe auch den Abschnitt [Mandanten-ID und Client-Code](#tenant-client) weiter unten.
+   * **Mandant-ID**: die Adobe IMS Tenant ID. Siehe auch Abschnitt [Mandant-ID und Client-Code](#tenant-client).
 
       >[!NOTE]
       >
@@ -242,7 +242,7 @@ Auf die Konfiguration kann nun verwiesen werden, damit ein Cloud Service die Tar
       >`https://experience.adobe.com/#/@yourtenantid/target/activities`
       >
       >Dann würden Sie `yourtenantid` verwenden.
-   * **Client-Code**: Siehe  [Mandanten-ID und Client-](#tenant-client) Code unten.
+   * **Client-Code**: Siehe  [Mandanten-ID und Client-](#tenant-client) Code.
    * **IMS-Konfiguration**: den Namen der IMS-Konfiguration auswählen
    * **API-Typ**: REST
    * **A4T-Analyse-Cloud-Konfiguration**: Wählen Sie die Analyse-Cloud-Konfiguration aus, die für Target-Aktivitätsziele und -metriken verwendet wird. Sie benötigen sie, wenn Sie Adobe Analytics als Quelle für die Berichterstellung für bestimmte Inhalte verwenden. Wenn Ihre Cloud-Konfiguration nicht angezeigt wird, finden Sie weitere Informationen unter [Konfigurieren der A4T-Analytics Cloud-Konfiguration](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
