@@ -2,11 +2,12 @@
 title: Integrieren [!DNL Assets] in Aktivität-Stream
 description: Beschreibt die Aufzeichnungsfunktionen von [!DNL Experience Manager] und wie sie zum Aufzeichnen bestimmter Ereignis konfiguriert werden.
 contentOwner: AG
+role: Entwickler
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 53%
+source-wordcount: '268'
+ht-degree: 54%
 
 ---
 
