@@ -4,10 +4,12 @@ user-guide-title: AEM
 breadcrumb-title: Handbuch zu flüssigen Erlebnissen
 user-guide-description: AEM Fluid Experience basiert auf den leistungsstarken Funktionen von AEM Sites, AEM Dynamic Media und AEM Assets, um eine robuste Lösung für den Versand von kostenlosen Inhalten zu bieten.
 index: n
+feature-set: Experience Manager Sites
+role: Leiter, Architekt, Entwickler, Datenarchitektin, Dateningenieur, Administrator, Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '41'
+source-wordcount: '51'
 ht-degree: 0%
 
 ---
