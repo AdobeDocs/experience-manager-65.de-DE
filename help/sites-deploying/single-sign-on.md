@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring, Security
 content-type: reference
 discoiquuid: 86e8dc12-608d-4aff-ba7a-5524f6b4eb0d
+feature: Konfiguration
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '756'
 ht-degree: 83%
 
 ---
@@ -37,7 +38,7 @@ Konfigurieren Sie die folgenden beiden Dienste, um den Namen des Attributs zu id
 
 Sie müssen denselben Attributnamen für beide Dienste angeben. Das Attribut ist in der `SimpleCredentials` enthalten, die `Repository.login` bereitgestellt wird. Der Wert des Attributs ist unwichtig und wird ignoriert. Nur das Vorhandensein ist wichtig und wird überprüft.
 
-## Konfigurieren von SSO  {#configuring-sso}
+## Konfigurieren von SSO {#configuring-sso}
 
 Um SSO für eine AEM-Instanz zu konfigurieren, müssen Sie den [SSO-Authentifizierungs-Handler](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler) konfigurieren:
 
