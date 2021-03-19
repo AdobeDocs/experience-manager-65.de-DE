@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
+feature: Konfiguration
 translation-type: tm+mt
-source-git-commit: a0673c23588cba263c292680637b16a18ef1431c
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '6658'
+source-wordcount: '6659'
 ht-degree: 73%
 
 ---
@@ -70,7 +71,7 @@ Doch auch nach dem Launch muss die Projektoptimierung fortgesetzt werden. Der La
 
 Da die Systembelastung variiert und sich die Leistungsprofile Ihres Systems im Laufe der Zeit verändern, sollte alle sechs bis zwölf Monate eine Leistungsanpassung oder eine Systemüberprüfung vorgenommen werden.
 
-### Reale Situationen simulieren  {#simulate-reality}
+### Reale Situationen simulieren {#simulate-reality}
 
 ![chlimage_1-4](assets/chlimage_1-4.jpeg)
 
@@ -129,7 +130,7 @@ Die Struktur des Inhaltsrepositorys kann sich ebenfalls auf die Leistung auswirk
 
 Besonders wichtig in einem herkömmlichen Leistungsoptimierungsschritt sind:
 
-* Die Seite `request.log`
+* Die `request.log`
 * Komponentenbasiertes Timing
 * Nicht zuletzt ein Java-Profiler.
 
@@ -389,9 +390,9 @@ In beiden Fällen können Sie die erwartete Anzahl von Transaktionen pro Sekunde
 | Komponente | Testtyp | Nein. von Benutzern | Tx/s (erwartet) | Tx/s (getestet) | Beschreibung |
 |---|---|---|---|---|---|
 | Homepage Einzelbenutzer | Durchschnitt | 1 | 1 |  |  |
-|  | Spitze | 1 | 3 |  |  |
-| Homepage 100 Benutzer | Durchschnitt | 100 | 3 |  |  |
-|  | Spitze | 100 | 3 |  |
+|  | Spitze | 3 | 3 |  |  |
+| Homepage 100 Benutzer | Durchschnitt | 100 | 1 |  |  |
+|  | Spitze | 100 | 1 |  |
 
 #### Tests kombinierter Komponenten {#combined-component-tests}
 
@@ -399,11 +400,11 @@ Durch das Testen der kombinierten Komponenten erhalten Sie eine genauere Darstel
 
 | Szenario | Komponente | Nein. von Benutzern | Tx/s (erwartet) | Tx/s (getestet) | Beschreibung |
 |---|---|---|---|---|---|
-| Gemischter Durchschnitt | Homepage | 10 | 3 |  |  |
+| Gemischter Durchschnitt | Homepage | 10 | 1 |  |  |
 |  | Suchen | 10 | 1 |  |  |
 |  | Nachrichten | 10 | 2 |  |  |
-|  | Ereignisse | 10 | 3 |  |  |
-|  | Aktivierungen | 10 | 3 |  | Simulation des Autorenverhaltens. |
+|  | Ereignisse | 10 | 1 |  |  |
+|  | Aktivierungen | 10 | 1 |  | Simulation des Autorenverhaltens. |
 | Gemischter Spitzenwert | Homepage | 100 | 5 |  |  |
 |  | Suchen | 50 | 5 |  |  |
 |  | Nachrichten | 100 | 10 |  |  |
@@ -433,10 +434,10 @@ Bei der Planung dieser Tests sollten Sie bedenken, dass nicht alle Szenarien reg
 
 | Fehlerszenario | Fehlertyp | Nein. von Benutzern | Tx/s (erwartet) | Tx/s (getestet) | Beschreibung |
 |---|---|---|---|---|---|
-| Überladung der Suchkomponente | Suche nach globalen Platzhaltern (Sternchen) | 10 | 1 |  | Nur &amp;ast;&amp;ast;&amp;ast; durchsucht werden. |
+| Überladung der Suchkomponente | Suche nach globalen Platzhaltern (Sternchen) | 10 | 3 |  | Nur &amp;ast;&amp;ast;&amp;ast; durchsucht werden. |
 |  | Wort anhalten | 20 | 2 |  | Suchen nach einem Stoppwort. |
 |  | Leere Zeichenfolge | 10 | 3 |  | Suchen nach einer leeren Zeichenfolge. |
-|  | Sonderzeichen | 10 | 3 |  | Suchen nach Sonderzeichen |
+|  | Sonderzeichen | 10 | 1 |  | Suchen nach Sonderzeichen |
 
 #### Belastungstests {#endurance-tests}
 
@@ -445,10 +446,10 @@ Gewisse Probleme treten erst auf, wenn das System über einen längeren Zeitraum
 | Szenario | Testtyp | Nein. von Benutzern | Tx/s (erwartet) | Tx/s (getestet) | Beschreibung |
 |---|---|---|---|---|---|
 | Dauerprüfung (72 Stunden) | Homepage | 10 | 3 |  |  |
-|  | Suchen | 10 | 1 |  |  |
+|  | Suchen | 10 | 3 |  |  |
 |  | Nachrichten | 20 | 2 |  |  |
 |  | Ereignisse | 10 | 1 |  |  |
-|  | Aktivierungen | 3 | 1 |  | Simulation des Autorenverhaltens. |
+|  | Aktivierungen | 1 | 1 |  | Simulation des Autorenverhaltens. |
 
 ### Optimierung {#optimization}
 
