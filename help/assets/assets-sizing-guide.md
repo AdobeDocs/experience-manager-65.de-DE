@@ -2,10 +2,11 @@
 title: '[!DNL Assets] Größenleitfaden'
 description: Best Practices zur Ermittlung effizienter Metriken zur Schätzung der Infrastruktur und der Ressourcen, die für die Bereitstellung erforderlich sind. [!DNL Adobe Experience Manager Assets]
 contentOwner: AG
+role: Architekt, Administrator
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1615'
+source-wordcount: '1617'
 ht-degree: 62%
 
 ---
@@ -57,7 +58,7 @@ Die in das Tool aufgefüllten Beispieldaten zeigen, wie wichtig die Ausführung 
 
 Bei großen Datenspeichern können Sie einen freigegebenen Datenspeicher entweder über einen freigegebenen Dateidatastore auf einem angeschlossenen Laufwerk oder über einen Amazon S3-Datenspeicher implementieren. In diesem Fall müssen einzelne Instanzen keine Kopie der Binärdateien aufbewahren. Darüber hinaus erleichtert ein freigegebener Datenspeicher die Replikation ohne Binärdatei und verringert die Bandbreite, die zum Replizieren von Assets für die Veröffentlichung von Umgebung verwendet wird.
 
-#### Anwendungsfälle    {#use-cases}
+#### Anwendungsfälle   {#use-cases}
 
 Der Datenspeicher kann gemeinsam von primärer und Standby-Autoreninstanz genutzt werden, um den zeitlichen Aufwand zum Aktualisieren der Standby-Instanz mit Änderungen der primären Instanz zu minimieren. Sie können den Datenspeicher zudem zwischen Autor- und Veröffentlichungsinstanzen freigeben, um den Traffic während der Replikation zu minimieren.
 
