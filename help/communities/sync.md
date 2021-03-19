@@ -10,10 +10,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: acc758b83486e8c623e31bb4a68f3c29dd4848ba
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2509'
+source-wordcount: '2510'
 ht-degree: 12%
 
 ---
@@ -101,7 +102,7 @@ Die Benutzersynchronisierung ist davon abhängig, dass die Autorenumgebung die V
 
 1. Stellen Sie sicher, dass der neueste Code installiert wurde:
 
-   * [AEM-Plattformupdates](https://helpx.adobe.com/de/experience-manager/kb/aem62-available-hotfixes.html)
+   * [AEM-Plattformupdates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de)
    * [AEM Communities-Updates](/help/communities/deploy-communities.md#latestfeaturepack)
 
 Die folgenden Konfigurationen sind erforderlich, um die Benutzersynchronisierung auf AEM Communities zu aktivieren. Stellen Sie sicher, dass diese Konfigurationen korrekt sind, damit die Verteilung von Sling-Inhalten nicht fehlschlägt.
@@ -352,7 +353,7 @@ Wenn die Sling-Verteilung fehlschlägt, führen Sie die folgenden Debugging-Schr
 
 1. **Konfiguration des Werks des Beobachters überprüfen**
 
-   Wenn nur bestimmte Knoten nicht über die Veröffentlichungsfarm synchronisiert werden - z. B. sind Gruppenmitglieder nicht synchronisiert - stellen Sie sicher, dass die Adobe [Granite Distribution - Diff Observer Factory](/help/sites-administering/sync.md#diffobserver) aktiviert ist und **rep: Member** werden unter **Aussehbare Eigenschaftennamen** eingestellt.
+   Wenn nur bestimmte Knoten nicht über die Veröffentlichungsfarm synchronisiert werden - z. B. sind Gruppenmitglieder nicht synchronisiert - stellen Sie sicher, dass die Konfiguration [Adobe Granite Distribution - Diff Observer Factory](/help/sites-administering/sync.md#diffobserver) aktiviert ist und **rep: Member** werden unter **Aussehbare Eigenschaftennamen** eingestellt.
 
 1. **Überprüfen Sie die AEM Communities User Sync Listener-Konfiguration.** Wenn die erstellten Benutzer synchronisiert werden, Abonnement und folgende Elemente jedoch nicht funktionieren, stellen Sie sicher, dass die AEM Communities User Sync Listener-Konfiguration über Folgendes verfügt:
 
