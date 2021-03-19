@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
+role: Entwickler
 translation-type: tm+mt
-source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2554'
+source-wordcount: '2555'
 ht-degree: 2%
 
 ---
@@ -211,7 +212,7 @@ Um den Sicherungsmodus programmgesteuert zu deaktivieren, erstellen Sie ein Back
 
 **Sicherungsmodus verlassen**
 
-Verlassen Sie den Sicherungsmodus, um das normale Bereinigen von Dateien aus der Datenspeicherung des globalen Dokuments (GDS) fortzusetzen. Bevor Sie den Sicherungsmodus beenden, sollten Sie sicherstellen, dass die Sicherungsverfahren abgeschlossen sind.
+Lassen Sie den Sicherungsmodus beendet, um das normale Bereinigen von Dateien aus der Datenspeicherung des globalen Dokuments (GDS) fortzusetzen. Bevor Sie den Sicherungsmodus beenden, sollten Sie sicherstellen, dass die Sicherungsverfahren abgeschlossen sind.
 
 **Abrufen von Informationen zur beendeten Sicherungsmodussitzung**
 
