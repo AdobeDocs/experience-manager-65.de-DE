@@ -5,11 +5,12 @@ contentOwner: khsingh
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
+feature: Interaktive Kommunikation
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2237'
-ht-degree: 6%
+source-wordcount: '2239'
+ht-degree: 7%
 
 ---
 
@@ -187,7 +188,7 @@ Bevor Sie das Java-Servlet bereitstellen, stellen Sie sicher, dass Sie über ein
        </dependency>
    ```
 
-1. Öffnen Sie das Java-Projekt, erstellen Sie eine .java-Datei, z. B. CCMBatchServlet.java. Fügen Sie der Datei „“ den folgenden Code hinzu:
+1. Öffnen Sie das Java-Projekt, erstellen Sie eine .java-Datei, z. B. CCMBatchServlet.java. Fügen Sie der Datei den folgenden Code hinzu:
 
    ```java
            package com.adobe.fd.ccm.multichannel.batch.integration;
