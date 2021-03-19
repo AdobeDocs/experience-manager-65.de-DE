@@ -8,16 +8,18 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
+feature: Karussellbanner
+role: Geschäftspraktiker, Administrator
 translation-type: tm+mt
-source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '4802'
+source-wordcount: '4807'
 ht-degree: 98%
 
 ---
 
 
-# Karussellbanner{#carousel-banners}
+# Karussellbanner {#carousel-banners}
 
 Mit Karussellbannern können Marketingexperten die Konversionsrate steigern, indem sie auf einfache Art Drehbanner mit Promo-Inhalten erstellen, die auf beliebigen Bildschirmen bereitgestellt werden können.
 
