@@ -2,10 +2,11 @@
 title: Leuchtkasten als persönliche Bildergalerie
 description: Erfahren Sie mehr über Lightbox als Ihre persönliche Bildergalerie in Adobe Experience Manager Assets].
 contentOwner: AG
+role: Geschäftspraktiker, Administrator
 translation-type: tm+mt
-source-git-commit: db12d7183ddc365bf9bb52a6b7d08e8142259522
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '252'
 ht-degree: 53%
 
 ---
