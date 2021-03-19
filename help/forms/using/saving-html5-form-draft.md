@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '325'
 ht-degree: 66%
 
 ---
@@ -50,7 +51,7 @@ Um die Funktion &quot;Als Entwurf speichern&quot;für Ihr vorhandenes [benutzerd
  </tbody>
 </table>
 
-## Speicherung und Auflistung von Entwürfen  {#drafts-storage-and-listing}
+## Speicherung und Auflistung von Entwürfen {#drafts-storage-and-listing}
 
 Nach der Aktivierung der Funktion „Als Entwurf speichern“ wird das Formular, wenn es gespeichert wurde, in der Komponente [Drafts and Submission (Entwurf und Übermittlung)](/help/forms/using/draft-submission-component.md) aufgelistet. Sie können das gespeicherte Formular aus der Komponente „Drafts and Submissions“ abrufen und mit dem Ausfüllen beginnen.
 
