@@ -2,11 +2,12 @@
 title: Asset-Tags mit dem Smart Content Service konfigurieren
 description: Erfahren Sie, wie Sie intelligentes Tagging und verbessertes intelligentes Tagging mit dem Smart Content Service in [!DNL Adobe Experience Manager] konfigurieren.
 contentOwner: AG
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 178b1433de1d6b1e20527755414a494d4291935e
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '2170'
-ht-degree: 55%
+source-wordcount: '2171'
+ht-degree: 56%
 
 ---
 
@@ -17,7 +18,7 @@ Bevor Sie mit dem Tagging Ihrer Assets mit Smart Content Services beginnen könn
 
 Bevor Sie den Smart Content Service verwenden, stellen Sie Folgendes sicher:
 
-* [Integration mit der Adobe Developer Console](#integrate-adobe-io).
+* [Integrieren von  mit der Adobe Developer Console](#integrate-adobe-io).
 * [Schulung des Smart Content Service](#training-the-smart-content-service).
 
 * Installieren Sie das neueste [[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
@@ -280,7 +281,7 @@ Um sicherzustellen, dass der Smart Content Service auf Ihre Tags im Asset-Traini
    * Tags können nicht anhand von winzigen Mustern/Teilen eines Bildes identifiziert werden. Beispiel: Logos auf T-Shirts.
    * Tagging wird in den Gebietsschemas unterstützt, in denen [!DNL Experience Manager] unterstützt wird. Eine Liste der Sprachen finden Sie in den [Versionshinweisen für Smart Content Services](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html?lang=de).
 
-* Um nach Assets mit Smart-Tags zu suchen (regulär oder erweitert), verwenden Sie die [!DNL Assets] Omniture-Suche (Volltextsuche). Es gibt kein separates Suchprädikat für Smart-Tags.
+* Verwenden Sie [!DNL Assets]-OmniSearch (Volltextsuche), um nach Assets mit Smart-Tags (normal oder erweitert) zu suchen. Es gibt kein separates Suchprädikat für Smart-Tags.
 
 >[!MORELIKETHIS]
 >
