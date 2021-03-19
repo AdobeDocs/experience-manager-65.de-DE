@@ -2,10 +2,11 @@
 title: Integration mit Best Practices von Adobe Creative Cloud
 description: Best Practices zur Integration von [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] zur Straffung der Workflows und Erzielung einer hohen Inhaltsgeschwindigkeit.
 contentOwner: AG
+role: Geschäftspraktiker, Administrator
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '3248'
+source-wordcount: '3251'
 ht-degree: 54%
 
 ---
@@ -89,7 +90,7 @@ Um Nutzungsszenarien zum Verteilen von Assets zu unterstützen, sollten andere L
 
 * Siehe [Best Practices für die Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=en#best-practices-to-prevent-troubles)
 * Siehe [Adobe Stock-Integration](aem-assets-adobe-stock.md)
-* Siehe [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+* Weitere Informationen finden Sie unter [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 
 Dies ist eine kurze Zusammenfassung der Best Practices für [!DNL Experience Manager] und [!DNL Creative Cloud] Integration. Lesen Sie den Rest dieses Dokuments, um detaillierte Informationen dazu zu erhalten.
 
