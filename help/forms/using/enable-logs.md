@@ -10,10 +10,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '648'
 ht-degree: 70%
 
 ---
@@ -91,10 +92,10 @@ Die Protokollkonfiguration besteht aus der Protokollebene und der Protokollfunkt
   </tr>
   <tr>
    <td>0</td>
-   <td>OFF<br type="_moz" /> </td>
+   <td>AUS<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>1</td>
+   <td>3</td>
    <td>FATAL<br type="_moz" /> </td>
   </tr>
   <tr>
