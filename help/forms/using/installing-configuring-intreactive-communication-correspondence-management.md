@@ -7,11 +7,12 @@ uuid: 8acb7f68-0b52-4acd-97e2-af31c9408e8d
 topic-tags: installing
 discoiquuid: 225f2bc1-6842-4c79-a66d-8024a29325c0
 docset: aem65
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 35b2c9c8c79b3cc3d81e0b92ea17cd7d599fa7ee
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1411'
-ht-degree: 72%
+source-wordcount: '1412'
+ht-degree: 74%
 
 ---
 
@@ -90,7 +91,7 @@ Bevor Sie mit der Installation und Konfiguration der interaktiven Kommunikations
 
 AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das Paket umfasst die interaktive Kommunikation mit AEM Forms, das Korrespondenzmanagement und andere Funktionen. Führen Sie die folgenden Schritte aus, um das Add-On-Paket zu installieren:
 
-1. Öffnen Sie [Software-Distribution](https://experience.adobe.com/downloads). Zum Anmelden bei Software Distribution benötigen Sie eine Adobe ID.
+1. Öffnen Sie [Software Distribution](https://experience.adobe.com/downloads). Zum Anmelden bei Software Distribution benötigen Sie eine Adobe ID.
 1. Tippen Sie im Kopfzeilenmenü auf **[!UICONTROL Adobe Experience Manager]**.
 1. Im Abschnitt **[!UICONTROL Filter]**:
    1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]**.
