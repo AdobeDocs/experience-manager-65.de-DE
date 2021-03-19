@@ -2,11 +2,13 @@
 title: Optimierte Smart-Tags
 description: Optimierte Smart-Tags
 contentOwner: AG
+feature: Smart Tags, Suchen
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: 788a66d5732f0a120de6b80da69e9cf81f998667
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1597'
-ht-degree: 46%
+source-wordcount: '1602'
+ht-degree: 47%
 
 ---
 
@@ -167,7 +169,7 @@ Sie können den Tag-Arbeitsablauf über die Arbeitsablaufkonsole oder die Zeitle
 
 >[!NOTE]
 >
->In den nachfolgenden Tagging-Zyklen werden nur die geänderten Assets erneut mit neu geschulten Tags versehen. Selbst unveränderte Assets werden jedoch mit Tags versehen, wenn die Lücke zwischen der letzten und der aktuellen Tagging-Zykluszeit für den Tag-Arbeitsablauf 24 Stunden überschreitet. Beim regelmäßigen Tagging Workflows werden unveränderte Assets mit Tags versehen, wenn die Zeitspanne sechs Monate überschreitet.
+>In den nachfolgenden Tagging-Zyklen werden nur die geänderten Assets erneut mit neu geschulten Tags versehen. Allerdings werden auch unveränderte Assets mit Tags versehen, wenn das Intervall zwischen dem letzten und dem aktuellen Tagging-Zyklus für den Tagging-Workflow 24 Stunden überschreitet. Beim regelmäßigen Tagging Workflows werden unveränderte Assets mit Tags versehen, wenn die Zeitspanne sechs Monate überschreitet.
 
 ## Kuratieren oder Moderieren der angewendeten Smarttags {#manage-smart-tags}
 
