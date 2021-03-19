@@ -9,16 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: d8c1c507-a6c4-44f5-be01-ee902bc28410
 docset: aem65
+feature: Adaptive Formulare
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '687'
 ht-degree: 88%
 
 ---
 
 
-# Erstellen und Verwalten von Überprüfungen für Assets in Formularen{#creating-and-managing-reviews-for-assets-in-forms}
+# Erstellen und Verwalten von Überprüfungen von Assets in Formularen{#creating-and-managing-reviews-for-assets-in-forms}
 
 ## Überprüfung {#review}
 
