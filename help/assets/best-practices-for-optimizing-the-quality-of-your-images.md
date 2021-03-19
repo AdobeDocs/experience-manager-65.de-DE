@@ -7,11 +7,13 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
+feature: Asset-Verwaltung
+role: Geschäftspraktiker, Administrator
 translation-type: tm+mt
-source-git-commit: 863c3292d272ba4c80a80645262919e55870a437
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1449'
-ht-degree: 95%
+source-wordcount: '1454'
+ht-degree: 96%
 
 ---
 
@@ -46,7 +48,7 @@ Verwenden Sie als Best Practice für die Bildgröße `&wid=<value>&hei=<value>&r
 
 Die Bild-Scharfzeichnung stellt den komplexesten Aspekt bei der Kontrolle von Bildern auf Websites dar. Hier werden viele Fehler gemacht. Nehmen Sie sich die Zeit und machen Sie sich mit der Funktionsweise von Scharfzeichnung und Unschärfemaske in AEM vertraut, indem Sie die folgenden nützlichen Ressourcen lesen:
 
-Das Whitepaper Best Practices [Scharfzeichnen von Bildern in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf) gilt auch für AEM.
+Das Whitepaper mit Best Practices für das [Scharfzeichnen von Bildern in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf) gilt auch für AEM.
 
 <!-- To be reviewed and updated: Broken link.
 See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html). -->
