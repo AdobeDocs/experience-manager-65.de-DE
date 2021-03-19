@@ -6,8 +6,9 @@ audience: end-user
 user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, liefern und optimieren Sie digitale Assets.
+feature-set: Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 58%
@@ -21,7 +22,7 @@ ht-degree: 58%
 + [[!DNL Experience Manager] 6.5 Versionshinweise zu Assets](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html)
 + [Über DAM](assets.md)
 + [Bewährte Verfahren für Assets](best-practices-for-assets.md)
-+ [Barrierefreiheit in  [!DNL Assets]](accessibility.md)
++ [Barrierefreiheit in [!DNL Assets]](accessibility.md)
 + Experience Manager-Assets {#using} verwenden
    + [[!DNL Assets] Startseite](assets-home-page.md)
    + [Suchen nach digitalen Assets](search-assets.md)
@@ -99,7 +100,7 @@ ht-degree: 58%
    + [Verstehen von Metadatenkonzepten](metadata-concepts.md)
    + [Konfigurieren der Metadatenfunktionalität](metadata-config.md)
    + [Metadatenschemata](metadata-schemas.md)
-   + [XMP-Writeback in Ausgabeformaten](xmp-writeback.md)
+   + [XMP-Writeback in Ausgabedarstellungen](xmp-writeback.md)
    + [Asset-Linkfreigabe](link-sharing.md)
    + [Asset-Berichte](asset-reports.md)
    + [Intelligenten Content-Dienst für Tags konfigurieren](config-smart-tagging.md)
@@ -114,7 +115,7 @@ ht-degree: 58%
    + [PDF-Rasterfunktion verwenden](aem-pdf-rasterizer.md)
    + [Upload-Beschränkungen konfigurieren](configuring-asset-upload-restrictions.md)
    + [[!DNL Experience Manager] and [!DNL Creative Cloud] integration](aem-cc-integration-best-practices.md)
-   + [Integrieren mit  [!DNL InDesign Server]](indesign.md)
+   + [Integrieren mit [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management in Assets](drm.md)
    + [Demopaket für Asset-Einblicke verwenden](use-demo-package-for-asset-insights.md)
    + [Best Practices für Dateiformate in Assets](assets-file-format-best-practices.md)
@@ -128,7 +129,7 @@ ht-degree: 58%
    + [Bewährte Verfahren zum Freigeben von Ordnern für [!DNL Creative Cloud]](aem-cc-folder-sharing-best-practices.md)
 + Brand Portal {#brandportal}
    + [Konfigurieren von [!DNL Assets] mit [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
-   + [Veröffentlichen von Assets in  [!DNL Brand Portal]](brand-portal-publish-assets.md)
+   + [Veröffentlichen von Assets in [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [Veröffentlichen von Ordnern in [!DNL Brand Portal]](brand-portal-publish-folder.md)
    + [Veröffentlichen von Sammlungen auf [!DNL Brand Portal]](brand-portal-publish-collection.md)
 + Inhaltsfragmente {#fragments}
