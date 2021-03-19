@@ -2,18 +2,19 @@
 title: Freigeben von Assets über einen Link
 description: Freigeben von Assets, Ordnern und Sammlungen als URL.
 contentOwner: AG
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: e36d08c9ea89e840aecde79ffdd911372c0c54ee
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 37%
+source-wordcount: '1058'
+ht-degree: 40%
 
 ---
 
 
 # Asset über einen Link {#asset-link-sharing} freigeben
 
-[!DNL Adobe Experience Manager Assets]Mit können Sie Assets, Ordner und Sammlungen als URL für Mitglieder Ihres Unternehmens und externe Einheiten (z. B. Partner und Anbieter) freigeben. Die Freigabe von Assets über einen Link ist eine praktische Möglichkeit, um Ressourcen für externe Parteien bereitzustellen, ohne dass sie sich zuerst bei [!DNL Assets] anmelden müssen.
+[!DNL Adobe Experience Manager Assets]Mit können Sie Assets, Ordner und Sammlungen als URL für Mitglieder Ihres Unternehmens und externe Einheiten (z. B. Partner und Anbieter) freigeben. Die Freigabe von Assets über einen Link ist eine praktische Methode, um Ressourcen für externe Parteien verfügbar zu machen, ohne dass sich diese zunächst bei [!DNL Assets] anmelden müssen.
 
 >[!PREREQUISITES]
 >
@@ -25,7 +26,7 @@ ht-degree: 37%
 
 Um die URL für Assets zu erstellen, die Sie für Benutzer freigeben möchten, verwenden Sie das Dialogfeld &quot;Linkfreigabe&quot;. Benutzer mit Administratorrechten oder mit Leserechten für den Speicherort `/var/dam/share` können dann die Links sehen, die für sie freigegeben sind.
 
-1. Wählen Sie in der Benutzeroberfläche [!DNL Assets] das Asset aus, das als Link freigegeben werden soll.
+1. Wählen Sie in der [!DNL Assets]-Benutzeroberfläche das Asset aus, das als Link freigegeben werden soll.
 1. Klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Link freigeben]** ![Assets freigeben](assets/do-not-localize/assets_share.png).
 
    Der Link, der nach dem Klicken auf [!UICONTROL Freigeben] erstellt wird, wird vorab im Feld [!UICONTROL Link freigeben] angezeigt. Die Standard-Ablaufzeit für den Link beträgt einen Tag.
