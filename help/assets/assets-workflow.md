@@ -2,10 +2,12 @@
 title: Verarbeiten von Assets mit Workflows
 description: Asset-Verarbeitung zum Konvertieren von Formaten, Erstellen von Darstellungen, Verwalten von Assets, Überprüfen von Assets und Ausführen von Workflows.
 contentOwner: AG
+feature: Workflow, Darstellungen
+role: Geschäftspraktiker, Administrator
 translation-type: tm+mt
-source-git-commit: 18e62f8fb46de20e1668b2dcdcedf68fe4622b50
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '966'
 ht-degree: 26%
 
 ---
