@@ -2,10 +2,11 @@
 title: Assets stapelweise migrieren
 description: Beschreibt, wie Assets in [!DNL Adobe Experience Manager] importiert, Metadaten angewendet, Darstellungen generiert und in Veröffentlichungsinstanzen aktiviert werden.
 contentOwner: AG
+role: Architekt, Administrator
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1799'
+source-wordcount: '1801'
 ht-degree: 66%
 
 ---
