@@ -9,10 +9,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
+feature: Dokumentensicherheit
 translation-type: tm+mt
-source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '10273'
+source-wordcount: '10275'
 ht-degree: 85%
 
 ---
@@ -70,7 +71,7 @@ Höhe: Minimum = 450; Maximum = 800
 
 **Zwischenspeichern von Clientberechtigungen aktivieren:** Wählen Sie diese Option, damit Benutzer ihre Anmeldeinformationen (Benutzername und Kennwort) zwischenspeichern können. Wenn die Anmeldeinformationen von Benutzern zwischengespeichert werden, müssen sie sie beim Öffnen eines Dokument oder beim Klicken auf die Schaltfläche „Aktualisieren“ auf der Seite „Sicherheitsrichtlinien verwalten“ in Adobe Acrobat nicht immer eingeben. Sie können die Anzahl der Tage angeben, nach deren Ablauf die Benutzer die Anmeldeinformationen erneut eingeben müssen. Bei Festlegung auf 0 Tage werden die Anmeldeinformationen unbegrenzt zwischengespeichert.
 
-## Konfigurieren von Document Security-Benutzern und -Administratoren  {#configuring-document-security-users-and-administrators}
+## Konfigurieren von Document Security-Benutzern und -Administratoren {#configuring-document-security-users-and-administrators}
 
 ### Zuweisen von Document Security-Rollen zu Administratoren {#assigning-document-security-roles-to-administrators}
 
