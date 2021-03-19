@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1030'
 ht-degree: 94%
 
 ---
@@ -44,7 +45,7 @@ Obwohl die Eigenschaften selbsterklärend sind, werden im Folgenden die wichtigs
 * **Kennwort** – gibt das Kennwort an.
 * **Dienstname** – gibt die Dienste an, die mit den Benutzeranmeldedaten aus den Feldern für Benutzernamen und Kennwort gestartet werden. Standardmäßig werden beim Starten von LiveCycle-Diensten keine Benutzerinformationen weitergegeben.
 
-## Starten von Document Services  {#starting-document-services}
+## Starten von Document Services {#starting-document-services}
 
 Clientanwendungen können LiveCycle-Dienste programmgesteuert über eine Java API, Webdienste, Remoting und REST starten. Bei Java-Clients kann die Anwendung LiveCycle SDK verwenden. Das LiveCycle SDK stellt eine Java-API für den ferngesteuerten Start dieser Dienste zur Verfügung. Um beispielsweise ein Microsoft Word-Dokument in ein PDF-Dokument zu konvertieren, startet der Client GeneratePDFService. Der Aufruf wird mittels folgender Schritte ausgeführt:
 
