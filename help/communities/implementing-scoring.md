@@ -11,10 +11,11 @@ content-type: reference
 discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 2daf00f17058de8b901848fcf1128a5ee9770368
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2884'
+source-wordcount: '2885'
 ht-degree: 3%
 
 ---
@@ -218,7 +219,7 @@ Unter-Regeln sind Knoten des Typs `cq:Page` mit Eigenschaften auf ihrem `jcr:con
   <tr>
    <th>Eigenschaft</th>
    <th>Typ</th>
-   <th> Wert Beschreibung</th>
+   <th> Wertbeschreibung</th>
   </tr>
   <tr>
    <td><i><code>VERB</code></i></td>
@@ -349,7 +350,7 @@ Die `scoringRules`-Eigenschaft einer Kennzeichnungsregel schränkt einfach ein, 
   <tr>
    <th>Eigenschaft</th>
    <th>Typ</th>
-   <th>Wert Beschreibung</th>
+   <th>Wertbeschreibung</th>
   </tr>
   <tr>
    <td>Schwellenwerte</td>
@@ -632,7 +633,7 @@ Stellen Sie dann sicher, dass die Forum- und Kommentarkomponenten die Anzeige vo
 
 Als Nächstes veröffentlichen Sie [die Community-Site erneut.](/help/communities/sites-console.md#publishing-the-site)
 
-Schließlich
+Abschließend,
 
 * Navigieren Sie zur Komponente in der Veröffentlichungsinstanz.
 * Melden Sie sich als Community-Mitglied an (z. B.: weston.mccall@dodgit.com).
