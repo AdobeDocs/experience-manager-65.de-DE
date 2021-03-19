@@ -9,16 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction, author
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
+feature: Adaptive Formulare
 translation-type: tm+mt
-source-git-commit: 103468b8e6e5bdf870156f85b7f547f190044561
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '3169'
+source-wordcount: '3171'
 ht-degree: 81%
 
 ---
 
 
-# Einführung in das Authoring adaptiver Formulare {#introduction-to-authoring-adaptive-forms}
+# Einführung in das Bearbeiten adaptiver Formulare {#introduction-to-authoring-adaptive-forms}
 
 ## Überblick {#overview}
 
@@ -35,7 +36,7 @@ Adaptive Formulare bieten Ihnen die Möglichkeit, ansprechende, interaktive, dyn
 
 Weitere Informationen zur Erstellung eines adaptiven Formulars finden Sie unter [Erstellen eines adaptiven Formulars](../../forms/using/creating-adaptive-form.md).
 
-## Benutzeroberfläche für Authoring adaptiver Formulare  {#adaptive-form-authoring-ui}
+## Benutzeroberfläche für Authoring adaptiver Formulare {#adaptive-form-authoring-ui}
 
 Die Touch-optimierte Benutzeroberfläche für das Authoring adaptiver Formulare ist intuitiv erschließbar und bietet Folgendes:
 
