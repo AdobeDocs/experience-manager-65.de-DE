@@ -3,10 +3,12 @@ title: Suchen nach digitalen Assets und Bildern in [!DNL Adobe Experience Manage
 description: Erfahren Sie, wie Sie die erforderlichen Assets in [!DNL Adobe Experience Manager] mithilfe des Bedienfelds „Filter“ finden und wie Sie die Assets verwenden, die bei der Suche zurückgegeben werden.
 contentOwner: AG
 mini-toc-levels: 1
+feature: Suche, Metadaten
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: 38ef8d8bd574933fdc57d7475831518f9d7f293e
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '5716'
+source-wordcount: '5720'
 ht-degree: 73%
 
 ---
