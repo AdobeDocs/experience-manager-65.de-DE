@@ -8,10 +8,11 @@ contentOwner: khsingh
 topic-tags: introduction
 discoiquuid: e24dbd0e-4481-4f9d-9570-3a4046b3ef35
 docset: aem65
+feature: Adaptive Formulare
 translation-type: tm+mt
-source-git-commit: 1a816672b3e97346f5a7a984fcb4dc0df1a5b0da
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '968'
 ht-degree: 9%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 9%
 
 ![](do-not-localize/13-publish-your-adaptive-form-small.png)
 
-Diese Schulung ist ein Schritt in der Serie [Erstellen Sie Ihr erstes adaptives Formular](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Es wird empfohlen, der Serie in chronologischer Reihenfolge zu folgen, um den vollständigen Anwendungsfall zu verstehen, auszuführen und zu demonstrieren.
+Diese Schulung ist ein Schritt in der Serie [Erstellen Sie Ihr erstes adaptives Formular](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Es wird empfohlen, der Serie in chronologischer Reihenfolge zu folgen, um den vollständigen Anwendungsfall zu verstehen, auszuführen und zu demonstrieren.
 
 Nachdem das adaptive Formular fertig ist, können Sie es veröffentlichen, um es für Endbenutzer verfügbar zu machen. Die Endbenutzer können das veröffentlichte Formular auf jedem Gerät und in jedem Internetbrowser öffnen. Wenn ein adaptives Formular veröffentlicht wird, werden das Formular und der zugehörige Inhalt von einer AEM Autoreninstanz in eine AEM Veröffentlichungsinstanz kopiert. Das Formular wird dem Endbenutzer über die Veröffentlichungsinstanz zur Verfügung gestellt.
 
@@ -33,7 +34,7 @@ Sie haben die folgenden Methoden, um ein adaptives Formular zu veröffentlichen:
 
 ## Bevor Sie beginnen {#before-you-start}
 
-* **[Einrichten einer AEM Forms-Veröffentlichungsinstanz](https://helpx.adobe.com/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)**: Die Instanz im Veröffentlichungsmodus ist eine öffentliche Instanz AEM, die im Veröffentlichungsmodus  [!DNL Forms] ausgeführt wird. In einer Produktions-Umgebung befindet sich die Veröffentlichungsinstanz außerhalb der Firewall des Unternehmens.
+* **[Einrichten einer AEM Forms-Veröffentlichungsinstanz](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)**: Die Instanz im Veröffentlichungsmodus ist eine öffentliche Instanz AEM, die im Veröffentlichungsmodus  [!DNL Forms] ausgeführt wird. In einer Produktions-Umgebung befindet sich die Veröffentlichungsinstanz außerhalb der Firewall des Unternehmens.
 * **[Richten Sie Replizierung und umgekehrte Replizierung](https://helpx.adobe.com/experience-manager/6-3/help/sites-deploying/replication.html)** ein: Replizierung kopiert Inhalte aus der Autoreninstanz in eine Veröffentlichungsinstanz und gibt Benutzereingaben (z. B. Formulareingaben) aus der Veröffentlichungsinstanz an die Autoreninstanz zurück.
 
 ## Veröffentlichen Sie das adaptive Formular als AEM Seite {#publish-the-adaptive-form-as-an-aem-page}
