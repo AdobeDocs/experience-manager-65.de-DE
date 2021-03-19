@@ -1,11 +1,12 @@
 ---
 title: Verwalten von Video-Assets
-description: Hochladen, Anzeigen einer Vorschau, Kommentieren und Veröffentlichen von Video-Assets in  [!DNL Adobe Experience Manager].
+description: Hochladen, Anzeigen einer Vorschau, Kommentieren und Veröffentlichen von Video-Assets in [!DNL Adobe Experience Manager].
 contentOwner: AG
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '809'
 ht-degree: 58%
 
 ---
