@@ -8,10 +8,11 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '7698'
+source-wordcount: '7699'
 ht-degree: 71%
 
 ---
@@ -389,10 +390,10 @@ Unter WebSphere können Sie die integrierte Sicherheit nur konfigurieren, wenn S
 1. Melden Sie sich bei WebSphere Administrative Console an.
 1. Klicken Sie in der Navigationsstruktur auf **Resources** > **JDBC** > **Data Sources** und klicken Sie dann im rechten Bereich auf **IDP_DS**.
 1. Klicken Sie im rechten Bereich unter „Additional Properties“ auf **Custom Properties** und dann auf **New**.
-1. Geben Sie in das Feld **Name** den Wert `integratedSecurity` und in das Feld **Wert** den Wert `true` ein.
+1. Geben Sie in das Feld **Name** `integratedSecurity` und in das Feld **Wert** den Wert `true` ein.
 1. Klicken Sie in der Navigationsstruktur auf **Resources** > **JDBC** > **Data Sources** und dann im rechten Bereich auf **IDP_DS**.
 1. Klicken Sie im rechten Bereich unter „Additional Properties“ auf **Custom Properties** und dann auf **New**.
-1. Geben Sie in das Feld **Name** den Wert `integratedSecurity` und in das Feld **Wert** den Wert `true` ein.
+1. Geben Sie in das Feld **Name** `integratedSecurity` und in das Feld **Wert** den Wert `true` ein.
 1. Fügen Sie auf dem Computer, auf dem WebSphere installiert ist, die Datei „sqljdbc_auth.dll“ dem Windows-Systempfad (C:\Windows) hinzu. Die Datei &quot;sqljdbc_auth.dll&quot;befindet sich am selben Speicherort wie die Microsoft SQL JDBC 1.2-Treiberinstallation (standardmäßig unter *[InstallDir]*/sqljdbc_1.2/enu/auth/x86).
 1. Wählen Sie **Start** > **Systemsteuerung** > **Dienste** aus, klicken Sie mit der rechten Maustaste auf den Windows-Dienst für WebSphere (IBM WebSphere Application Server &lt;Version> - &lt;Knoten>) und wählen Sie **Eigenschaften** aus.
 1. Klicken Sie im Dialogfeld „Eigenschaften“ auf die Registerkarte **Anmelden**.
