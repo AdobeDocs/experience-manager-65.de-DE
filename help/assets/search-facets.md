@@ -2,10 +2,11 @@
 title: Suchfacetten zum Filtern von Suchergebnissen
 description: Erstellen, Ändern und Verwenden von Suchfacetten in [!DNL Adobe Experience Manager].
 contentOwner: AG
+role: Administrator, Entwickler
 translation-type: tm+mt
-source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '2424'
+source-wordcount: '2426'
 ht-degree: 77%
 
 ---
