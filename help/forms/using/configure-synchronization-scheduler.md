@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 8c8b1998-eab4-4230-b24f-5e96883ba599
 docset: aem65
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '307'
 ht-degree: 79%
 
 ---
@@ -34,7 +35,7 @@ Führen Sie die folgenden Schritte durch, um das Intervall für den Synchronisie
 
    Die Einheit für die Frequenz ist Minuten. Um den Scheduler beispielsweise so zu konfigurieren, dass er alle 60 Minuten ausgeführt wird, geben Sie „60“ ein.
 
-## Synchronisieren von Elementen  {#synchronizing-assets}
+## Synchronisieren von Elementen {#synchronizing-assets}
 
 Sie können die Option **Assets aus Repository synchronisieren** verwenden, um die Elemente manuell zu synchronisieren. Führen Sie die folgenden Schritte durch, um die Elemente manuell zu synchronisieren:
 
