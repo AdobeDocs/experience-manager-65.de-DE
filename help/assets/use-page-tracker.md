@@ -2,11 +2,12 @@
 title: Verwenden von Seiten-Tracker und Einbettungscode in Webseiten
 description: Erfahren Sie mehr über das Miteinbeziehen der Seitenverfolgung und das Einbetten von JavaScript-Codes in Ihren Website-Code, damit Adobe Analytics Nutzungsdaten zu Assets erfassen kann.
 contentOwner: AG
+role: Architekt, Administrator
 translation-type: tm+mt
-source-git-commit: fc433851c24f9049e7ba6dfada24d6e552eb6d05
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 70%
+source-wordcount: '178'
+ht-degree: 69%
 
 ---
 
