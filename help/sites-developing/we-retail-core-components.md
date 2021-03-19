@@ -1,7 +1,7 @@
 ---
 title: Testen von Kernkomponenten in We.Retail
 seo-title: Testen von Kernkomponenten in We.Retail
-description: 'null'
+description: Testen von Kernkomponenten in We.Retail
 seo-description: 'null'
 uuid: 8d1cea0b-99d9-49b2-b275-41f14864b1ff
 contentOwner: User
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: af3cd818-61cf-4da1-bfb5-87540911ddd5
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 82%
+source-wordcount: '544'
+ht-degree: 83%
 
 ---
 
