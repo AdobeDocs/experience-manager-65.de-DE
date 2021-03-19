@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
+feature: Konfiguration
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2013'
+source-wordcount: '2014'
 ht-degree: 72%
 
 ---
@@ -261,7 +262,7 @@ Um die neue Konfiguration zum Repository hinzuzufügen, gehen Sie folgendermaße
 >
 >Der vollständige Pfad einer Konfiguration muss korrekt sein, damit er beim Start gelesen werden kann.
 
-## Konfigurationsdetails {#configuration-details}
+## Konfigurationsdetails  {#configuration-details}
 
 ### Auflösungsreihenfolge beim Start {#resolution-order-at-startup}
 
