@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 2673ea92-1651-4b1b-9aac-f4ba8b36782e
+feature: Konfiguration
 translation-type: tm+mt
-source-git-commit: 8f35717324cd2c1524fb2cf931b3ce21be05729a
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2132'
+source-wordcount: '2133'
 ht-degree: 88%
 
 ---
@@ -95,19 +96,19 @@ Wenn eine IP-Adresse angegeben werden muss, können Sie (je nach Bedarf) aus den
 
 * eine IPv6-Adresse
 
-   Beispiel `https://[ab12::34c5:6d7:8e90:1234]:4502`
+   zum Beispiel `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
 * eine IPv4-Adresse
 
-   Beispiel `https://123.1.1.4:4502`
+   zum Beispiel `https://123.1.1.4:4502`
 
 * einen Servernamen
 
-   Beispiel, `https://www.yourserver.com:4502`
+   zum Beispiel `https://www.yourserver.com:4502`
 
 * Der Standardfall von `localhost` wird für IPv4- und IPv6-Netzwerkinstallationen interpretiert.
 
-   Beispiel, `http://localhost:4502`
+   zum Beispiel `http://localhost:4502`
 
 ### Versionsbereinigung {#version-purging}
 
@@ -143,7 +144,7 @@ Mithilfe von Single Sign-On (SSO) können Sie durch die einmalige Eingabe Ihrer 
 
 Weitere Informationen finden Sie unter [Single Sign-On](/help/sites-deploying/single-sign-on.md).
 
-### Ressourcenzuordnung  {#resource-mapping}
+### Ressourcenzuordnung {#resource-mapping}
 
 Die Ressourcenzuordnung wird zur Definition von Umleitungen, Vanity-URLs und virtuellen Hosts für AEM verwendet.
 
