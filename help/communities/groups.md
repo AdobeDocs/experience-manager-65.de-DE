@@ -1,6 +1,6 @@
 ---
-title: Community Groups-Konsole
-seo-title: Community Groups-Konsole
+title: Konsole für Community-Gruppen
+seo-title: Konsole für Community-Gruppen
 description: In der Gruppenkonsole können Sie Community-Gruppen erstellen
 seo-description: In der Gruppenkonsole können Sie Community-Gruppen erstellen
 uuid: 21e2bde3-7354-4193-bcb3-c672c6342252
@@ -11,16 +11,17 @@ content-type: reference
 discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 807a81045fca19ab83b9d7872684a5f8a9ed70f1
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1678'
-ht-degree: 2%
+source-wordcount: '1679'
+ht-degree: 3%
 
 ---
 
 
-# Community-Gruppen-Konsole {#community-groups-console}
+# Konsole für Community-Gruppen {#community-groups-console}
 
 Die Konsole &quot;Gruppen&quot;bietet Zugriff auf das Erstellen von Community-Gruppen, wenn die [Vorlagenstruktur](/help/communities/sites-console.md#step1) einer Community-Site die [groups-Funktion](/help/communities/functions.md#groups-function) enthält.
 
@@ -101,7 +102,7 @@ Der Standardstamm ist die übergeordnete Site, der Stammordner kann jedoch an ei
    * Überprüfen Sie den Dublette-Namen, da er nach dem Erstellen der Gruppe nicht so leicht geändert werden kann.
    * Die Basis-URL wird unter dem `Community Group Name` angezeigt.
    * Für eine gültige URL hängen Sie &quot;.html&quot;an
-      *Beispiel*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
+      *zum Beispiel*:  `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
 * **Community-** Gruppenvorlage
 
