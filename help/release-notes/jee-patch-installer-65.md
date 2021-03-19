@@ -1,14 +1,14 @@
 ---
 title: AEM Forms JEE Patch Installer
-description: 'null'
+description: AEM Forms JEE Patch Installer
 uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 translation-type: tm+mt
-source-git-commit: c1af919d4c0fd984249e1a7009274c63b8ce9adb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 45%
+source-wordcount: '484'
+ht-degree: 49%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 45%
 
 >[!NOTE]
 >
->[Wenden Sie sich an ](https://www.adobe.com/de/account/sign-in.supportportal.html) den Support, um weitere Informationen zu erhalten oder den Patch zu erhalten.
+>[Wenden Sie sich an ](https://www.adobe.com/account/sign-in.supportportal.html) den Support, um weitere Informationen zu erhalten oder den Patch zu erhalten.
 
 ## Informationen zum Patch-Installationsprogramm {#about-the-patch-installer}
 
@@ -30,12 +30,12 @@ Das AEM 6.5 Forms JEE Patch-Installationsprogramm enthält alle behobenen Proble
 ## Installieren und Konfigurieren des Patches {#installing-and-configuring-the-patch}
 
 1. Erstellen Sie eine Sicherungskopie des Ordners *aem-forms_root*. Das ist erforderlich, wenn Sie die Schnellkorrektur deinstallieren.
-1. Stoppen Sie den Anwendungsserver.
-1. Extrahieren Sie die Patch-Installationsarchivdatei auf Ihre Festplatte.
+1. Stoppen Sie den Programm-Server.
+1. Extrahieren Sie die Archivdatei des Patch-Installationsprogramms auf Ihrer Festplatte.
 1. Im Ordner mit dem Namen entsprechend des von Ihnen verwendeten Betriebssystems:
 
-   * ****
-WindowsNavigieren Sie zum entsprechenden Ordner auf dem Installationsdatenträger oder auf der Festplatte, in den Sie das Installationsprogramm kopiert haben, und klicken Sie mit der Dublette auf die Datei &quot;aemforms65_cfp_install.exe&quot;.
+   * **Windows**
+Navigieren Sie zum entsprechenden Ordner auf dem Installationsdatenträger oder dem Ordner auf der Festplatte, in den Sie das Installationsprogramm kopiert haben, und klicken Sie bei Dublette auf die Datei &quot;aemforms65_cfp_install.exe&quot;.
 
       * (Windows 32-Bit) `Windows\Disk1\InstData\VM`
       * (Windows 64-Bit) `Windows_64Bit`\ `Disk1\InstData\VM`
@@ -83,7 +83,7 @@ Wenn Sie die SAML-Authentifizierung konfiguriert haben und Probleme mit großen 
 ## Betroffene Module {#impacted-modules}
 
 * Document Services
-* Document Security
+* Dokumentensicherheit
 * Foundation JEE
 
 [Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
