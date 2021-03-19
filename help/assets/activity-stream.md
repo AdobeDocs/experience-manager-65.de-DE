@@ -2,11 +2,13 @@
 title: Aktivität des Streams digitaler Assets in der Ansicht der Zeitschiene
 description: Dieser Artikel beschreibt, wie Sie Aktivitätsprotokolle für Assets in der Zeitleiste anzeigen können.
 contentOwner: AG
+feature: Asset-Verwaltung
+role: Geschäftspraktiker, Administrator
 translation-type: tm+mt
-source-git-commit: 18e62f8fb46de20e1668b2dcdcedf68fe4622b50
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 69%
+source-wordcount: '220'
+ht-degree: 68%
 
 ---
 
@@ -26,7 +28,7 @@ Folgende Vorgänge werden im Aktivitäts-Stream protokolliert:
 * Ablehnen
 * Verschieben
 
-Die in der Zeitleiste angezeigten Aktivitätsprotokolle werden aus dem Ordner `/var/audit/com.day.cq.dam/content/dam` in CRX abgerufen, in dem Protokolldateien gespeichert werden. Darüber hinaus wird die Aktivität der Zeitschiene protokolliert, wenn neue Assets hochgeladen oder vorhandene Assets geändert und über [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) oder [Experience Manager Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html) in [!DNL Experience Manager] eingecheckt werden.
+Die in der Zeitleiste angezeigten Aktivitätsprotokolle werden aus dem Ordner `/var/audit/com.day.cq.dam/content/dam` in CRX abgerufen, in dem Protokolldateien gespeichert werden. Darüber hinaus wird die Aktivität der Zeitschiene protokolliert, wenn neue Assets hochgeladen oder vorhandene Assets geändert und über [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) oder [Experience Manager Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html) in [!DNL Experience Manager] eingecheckt werden.
 
 >[!NOTE]
 >
