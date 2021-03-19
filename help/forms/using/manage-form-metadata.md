@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: ba571f8e-8bd3-48eb-82e1-c93b14ffe44a
 docset: aem65
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1994'
+source-wordcount: '1995'
 ht-degree: 89%
 
 ---
@@ -73,7 +74,7 @@ Im Folgenden sehen Sie eine umfassende Liste der Metadateneigenschaften, die in 
      <li>PDF-Formular, PDF-Formular (Acroform) oder PDF-Formular (Signiert)</li> 
      <li>Dokument, Dokument (Signiert)</li> 
      <li>Adaptives Formular</li> 
-     <li>Resource</li> 
+     <li>Ressource</li> 
     </ul> </td> 
   </tr> 
   <tr> 
