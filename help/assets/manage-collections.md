@@ -3,10 +3,11 @@ title: Verwalten von digitalen Asset-Sammlungen
 description: Hier erfahren Sie, wie Sie Sammlungen von Assets verwalten, z. B. Sammlungen erstellen, Ansicht, löschen, bearbeiten und herunterladen.
 contentOwner: AG
 mini-toc-levels: 1
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '2180'
+source-wordcount: '2182'
 ht-degree: 64%
 
 ---
