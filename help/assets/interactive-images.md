@@ -8,16 +8,18 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: a6f58f6a-015a-4ced-941c-ef1b6d3e1d6f
 docset: aem65
+feature: Interaktive Bilder
+role: Geschäftspraktiker, Administrator
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '4330'
+source-wordcount: '4335'
 ht-degree: 99%
 
 ---
 
 
-# Interaktive Bilder{#interactive-images}
+# Interaktive Bilder {#interactive-images}
 
 Sie können statische Bilder mühelos in umfassende, begeisternde Erlebnisse für Kunden umwandeln, indem Sie Shop-fähige Hotspots per Drag-and-Drop auf ein Bild ziehen. In Shop-fähigen Hotspots werden zusätzliche Informationen über ein Produkt oder einen Service mit einer direkten Point-of-Sale-Funktion vom Typ „Zu Warenkorb hinzufügen“ oder „Kaufen“ kombiniert. Kunden können auf diese Hotspots tippen oder klicken und können direkt mit dem Produkt oder Service eine Verbindung herstellen, es zum Warenkorb hinzufügen oder es mit einer Web-Seite verknüpfen. Direkte Erlebnisse wie diese erhöhen die Kundeninteraktion bzw. -konversion auf Ihrer Website.
 
@@ -376,9 +378,9 @@ Die Integration ist so einfach wie das Entfernen des `IMG`-Tags und dessen entsp
 
 Um einen „Zuschnitt“ auf ein interaktives Bild mit Shopping-Funktion für eine responsive Umgebung anzuwenden, können Sie das Konfigurationsattribut für das interaktive Bild `ZoomView.iscommand` im Pfad einbeziehen, wobei `ZoomView` die aufzurufende Komponente und `iscommand` der von Ihnen angewendete Image-Serving-Befehl „Zuschneiden“ ist.
 
-Informationen hierzu finden Sie im Thema über das Konfigurationsattribut [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html).
+Informationen hierzu finden Sie im Thema über das Konfigurationsattribut [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html?lang=de).
 
-Informationen finden Sie unter [Image-Serving-Befehl](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html).
+Informationen finden Sie unter [Image-Serving-Befehl](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html?lang=de).
 
 Jetzt können Sie das interaktive Bild in eine vorhandene Schnellansicht auf Ihrer Website integrieren.
 
@@ -410,7 +412,7 @@ In einem solchen Ereignis-Handler nimmt der Frontend-Code Folgendes vor:
 * Er erstellt anhand der Hotspot-Daten eine Schnellansichts-URL.
 * Er löst den Schnellansichts-Ladevorgang vom Backend aus und rendert die Schnellansicht auf dem Bildschirm, um sie anzuzeigen.
 
-Der von AEM Assets zurückgegebene Einbettungs-Code verfügt über einen einsatzbereiten Ereignishandler, der auskommentiert ist, wie im folgenden hervorgehobenen Code-Fragment zu sehen ist:
+Der von AEM Assets zurückgegebene Einbettungs-Code verfügt über einen einsatzbereiten Ereignis-Handler, der auskommentiert ist, wie im folgenden hervorgehobenen Code-Fragment zu sehen ist:
 
 ```xml
         var s7interactiveimageviewer = new s7viewers.InteractiveImage({
