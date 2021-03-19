@@ -2,10 +2,12 @@
 title: Mehrsprachige Assets und Übersetzung von Assets
 description: Erfahren Sie, wie Sie Workflows automatisieren können, um Assets, einschließlich Binärdateien, Metadaten und Tags, in mehrere Sprachen zu übersetzen.
 contentOwner: AG
+feature: Asset-Verwaltung
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '170'
 ht-degree: 40%
 
 ---
@@ -19,7 +21,7 @@ Zur Automatisierung von Workflows integrieren Sie Übersetzungen in Dienstleiste
 
 Humanübersetzung: Die übersetzten Assets werden zurückgegeben und in [!DNL Experience Manager] importiert. Wenn Ihr Übersetzungsanbieter mit [!DNL Experience Manager] integriert ist, werden Assets automatisch zwischen [!DNL Experience Manager] und dem Übersetzungsanbieter gesendet.
 
-Maschinelle Übersetzung: Der Dienst für maschinelle Übersetzung übersetzt die Metadaten und Tags für Assets sofort.
+Maschinelle Übersetzung: Der Service für maschinelle Übersetzung übersetzt die Metadaten und Tags für Assets sofort.
 
 Das Übersetzen von Assets umfasst Folgendes:
 
