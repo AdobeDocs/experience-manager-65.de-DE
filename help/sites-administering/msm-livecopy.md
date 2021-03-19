@@ -1,10 +1,11 @@
 ---
 title: Erstellen und Synchronisieren von Live Copies
 description: Erfahren Sie, wie Sie Live Copies erstellen und synchronisieren können.
+feature: Multi-Site-Manager
 translation-type: tm+mt
-source-git-commit: 1725f19d0676680ae89ad7ea39fa3ae1deaeb8a3
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '4170'
+source-wordcount: '4173'
 ht-degree: 84%
 
 ---
