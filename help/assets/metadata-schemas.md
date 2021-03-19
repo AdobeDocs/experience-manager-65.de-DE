@@ -2,10 +2,11 @@
 title: 'Metadaten-Schema zum Definieren des Layouts der Metadateneigenschaften-Seite in [!DNL Adobe Experience Manager Assets]. '
 description: Das Metadatenschema definiert das Layout der Eigenschaftsseite und die für Assets angezeigten Metadaten-Eigenschaften. Erfahren Sie, wie Sie benutzerdefinierte Metadatenschemen erstellen und Metadatenschemen bearbeiten und auf Assets anwenden können.
 contentOwner: AG
+role: Geschäftspraktiker, Administrator
 translation-type: tm+mt
-source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '3601'
+source-wordcount: '3604'
 ht-degree: 61%
 
 ---
