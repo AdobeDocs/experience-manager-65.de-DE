@@ -7,10 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
+feature: Adaptive Formulare
 translation-type: tm+mt
-source-git-commit: 82fcc7ea1029f069aff95f50b3eb1a1581ec5c95
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1514'
 ht-degree: 63%
 
 ---
@@ -84,7 +85,7 @@ Im obigen Beispiel wird der in `textbox` eingegebene Benutzer mithilfe des Param
 
 `String data=request.getParameter("param1");`
 
-Gleichermaßen sind Parameter, die Sie zum Posten von XML-Daten und -Anlagen verwenden, `dataXml` und `attachments`.
+Gleichermaßen sind Parameter, die Sie zum Veröffentlichen von XML-Daten und -Anlagen verwenden, `dataXml` und `attachments`.
 
 Beispielsweise können Sie diese beiden Parameter in Ihrem Skript verwenden, um Daten an einem Restendpunkt zu analysieren. Verwenden Sie die folgende Syntax, um Daten zu speichern und zu analysieren: 
 
