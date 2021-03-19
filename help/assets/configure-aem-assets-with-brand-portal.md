@@ -9,10 +9,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
+feature: Brand Portal
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2084'
+source-wordcount: '2087'
 ht-degree: 64%
 
 ---
@@ -75,7 +77,7 @@ Anweisungen zum Einrichten einer AEM- Autoreninstanz finden Sie nach dem Herunte
 
 Ausführliche Anweisungen finden Sie unter
 
-* [Versionshinweise zum AEM 6.5 Service Pack](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/service-pack/sp-release-notes.html)
+* [Versionshinweise zum AEM 6.5 Service Pack](https://docs.adobe.com/content/help/de-DE/experience-manager-65/release-notes/service-pack/sp-release-notes.html)
 
 **Wenden Sie sich an** Support, wenn Sie das neueste AEM oder Service Pack nicht finden können.
 
@@ -341,7 +343,7 @@ Führen Sie zur Validierung der Konfiguration folgende Schritte aus:
 Sie haben nun die folgenden Möglichkeiten:
 
 * [Veröffentlichen von Assets aus AEM Assets in Brand Portal](../assets/brand-portal-publish-assets.md)
-* [Veröffentlichen von Assets vom Markenportal nach AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)  - Asset-Beschaffung im Markenportal
+* [Veröffentlichen von Assets vom Markenportal nach AEM Assets](https://docs.adobe.com/content/help/de-DE/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)  - Asset-Beschaffung im Markenportal
 * [Veröffentlichen von Ordnern aus AEM Assets in Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Veröffentlichen von Sammlungen aus AEM Assets in Brand Portal](../assets/brand-portal-publish-collection.md)
 * [Veröffentlichen von Vorgaben, Schemata und Facetten in Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
