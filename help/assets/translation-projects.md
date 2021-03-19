@@ -2,10 +2,11 @@
 title: Erstellen von Übersetzungsprojekten
 description: Erfahren Sie, wie Sie Übersetzungsprojekte in [!DNL Adobe Experience Manager] erstellen.
 contentOwner: AG
+role: Architekt, Administrator
 translation-type: tm+mt
-source-git-commit: 534a3d75ebb6a6d297354cce4840bdc1dfa25707
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1880'
 ht-degree: 66%
 
 ---
@@ -35,7 +36,7 @@ Den Workflow für das Erstellen und Übersetzen verwenden Sie, um erstmals Sprac
 
 ### Nur Struktur erstellen  {#create-structure-only}
 
-Verwenden Sie die Option **[!UICONTROL Nur Struktur erstellen]**, um eine Zielordnerhierarchie im Zielsprachenstamm zu erstellen und die die Hierarchie des Quellordners im Ausgangssprachenstamm widerzuspiegeln. In diesem Fall werden Quellelemente in den Zielordner kopiert. Es wird jedoch kein Übersetzungsprojekt generiert.
+Verwenden Sie die Option **[!UICONTROL Nur Struktur erstellen]**, um eine Zielordnerhierarchie im Zielsprachenstamm zu erstellen und die Hierarchie des Quellordners im Ausgangssprachenstamm widerzuspiegeln. In diesem Fall werden Quellelemente in den Zielordner kopiert. Es wird jedoch kein Übersetzungsprojekt generiert.
 
 1. Wählen Sie in der Benutzeroberfläche [!DNL Assets] den Quellordner aus, für den Sie eine Zielgruppe im Stammordner erstellen möchten.
 
