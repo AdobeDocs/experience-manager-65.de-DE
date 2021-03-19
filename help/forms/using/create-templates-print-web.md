@@ -8,10 +8,11 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
+feature: Interaktive Kommunikation
 translation-type: tm+mt
-source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1814'
 ht-degree: 67%
 
 ---
@@ -244,7 +245,7 @@ Führen Sie die folgenden Schritte aus, um eine Vorlage für den Webkanal im Ord
    | summarycharges | Zusammenfassung der Gebühren | 2 |
    | itemisedcalls | Einzeln aufgeführte Anrufe | 1 |
    | paynow | Jetzt zahlen | 2 |
-   | vas | Mehrwert - Service | 1 |
+   | vas | Mehrwert - Service | 3 |
 
    Das folgende Bild zeigt die Inhaltsstruktur, nachdem alle Bereiche zur Vorlage hinzugefügt wurden:
 
