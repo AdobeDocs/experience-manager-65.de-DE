@@ -6,11 +6,14 @@ audience: end-user
 user-guide-title: AEM 6.5-Entwickleranleitung
 breadcrumb-title: Entwickleranleitung
 user-guide-description: In dieser Anleitung wird beschrieben, wie Sie Ihre AEM-Instanz erstellen.
+feature-set: Experience Manager Sites
+feature: Entwickeln
+role: Entwickler
 translation-type: tm+mt
-source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 80%
+source-wordcount: '907'
+ht-degree: 81%
 
 ---
 
@@ -68,8 +71,8 @@ ht-degree: 80%
    + [Integrieren von Diensten mit der JMX-Konsole](jmx-integration.md)
    + [Entwickeln des Bulk Editors](dev-bulk-editor.md)
    + [Entwickeln von Berichten](dev-reports.md)
-   + eCommerce{#ecommerce}
-      + [eCommerce](ecommerce.md)
+   + E-Commerce{#ecommerce}
+      + [E-Commerce](ecommerce.md)
       + [Entwicklung (generisch)](generic.md)
       + [Entwicklung mit SAP Commerce Cloud](sap-commerce-cloud.md)
 + Komponenten{#components}
@@ -82,7 +85,7 @@ ht-degree: 80%
    + [JSON-Exporter für Content Services](json-exporter.md)
    + [Aktivieren eines JSON-Exports für eine Komponente](json-exporter-components.md)
    + [Bildeditor](image-editor.md)
-   + [Decoration-Tag ](decoration-tag.md)
+   + [Decoration-Tag](decoration-tag.md)
    + [Verwenden von Bedingungen zum Ausblenden](hide-conditions.md)
    + [Konfigurieren mehrerer Editoren für Bearbeitung im Kontext](multiple-inplace-editors.md)
    + [Entwicklermodus](developer-mode.md)
@@ -102,7 +105,7 @@ ht-degree: 80%
 + Headless-Experience-Management{#headless}
    + [Headless und Hybrid mit AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html)
-   + Einzelseiten-Webanwendungen{#spas}
+   + Single Page Applications{#spas}
       + [Einführung in SPAs und exemplarische Anleitung](spa-walkthrough.md)
       + [SPA-WKND-Tutorial](spa-wknd.md)
       + [Erste Schritte mit SPA in AEM - React](spa-getting-started-react.md)
@@ -165,7 +168,7 @@ ht-degree: 80%
       + [Programmgesteuerte Interaktion mit Workflows](workflows-program-interaction.md)
       + [Referenz für Workflow-Schritte](workflows-step-ref.md)
       + [Best Practices für Workflows](workflows-best-practices.md)
-      + [Referenz für Workflow-Prozesse](workflows-process-ref.md)
+      + [Prozessreferenz für Workflows](workflows-process-ref.md)
       + [Variablen in AEM Workflows](/help/sites-developing/using-variables-in-aem-workflows.md)
    + [Erweitern des Multi-Site-Managers](extending-msm.md)
    + Tracking und Analytics{#extending-analytics}
@@ -177,7 +180,7 @@ ht-degree: 80%
       + [Cloud Service-Konfigurationen](extending-cloud-config.md)
       + [Erstellen eines individuellen Cloud-Service](extending-cloud-config-custom-cloud.md)
    + [Erstellen benutzerspezifischer Erweiterungen](extending-campaign-extensions.md)
-   + Formulare{#extending-forms}
+   + Forms{#extending-forms}
       + [Erstellen benutzerspezifischer Formular-Zuordnungen](extending-campaign-form-mapping.md)
       + [Erstellen benutzerdefinierter AEM-Seitenvorlagen mit Adobe Campaign-Formularkomponenten](extending-campaign-custom-template.md)
       + [Anfragenanalyse-Skript](analyze-request.md)
