@@ -7,11 +7,12 @@ uuid: 6d182bbc-b47a-4c97-af70-c960b52fdfac
 contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
+feature: Adaptive Formulare
 translation-type: tm+mt
-source-git-commit: 1a816672b3e97346f5a7a984fcb4dc0df1a5b0da
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 10%
+source-wordcount: '968'
+ht-degree: 12%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 10%
 
 ![](do-not-localize/10-test-your-adaptive-form.png)
 
-Diese Schulung ist ein Schritt in der Serie [Erstellen Sie Ihr erstes adaptives Formular](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Es wird empfohlen, der Serie in chronologischer Reihenfolge zu folgen, um den vollständigen Anwendungsfall zu verstehen, auszuführen und zu demonstrieren.
+Diese Schulung ist ein Schritt in der Serie [Erstellen Sie Ihr erstes adaptives Formular](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Es wird empfohlen, der Serie in chronologischer Reihenfolge zu folgen, um den vollständigen Anwendungsfall zu verstehen, auszuführen und zu demonstrieren.
 
 Nachdem das adaptive Formular fertig ist, müssen Sie das adaptive Formular testen, bevor Sie es an die Endbenutzer übertragen. Sie können jedes Feld manuell testen (funktionelle Tests) oder das Testen des adaptiven Formulars automatisieren. Wenn Sie mehrere adaptive Formulare haben, wird das manuelle Testen aller Felder der adaptiven Formulare zu einer beängstigenden Aufgabe.
 
@@ -111,7 +112,7 @@ Ein Testfall ist eine Reihe von Aktionen zum Testen einer bestimmten Funktion. B
 
 Eine Aktion ist eine bestimmte Aktivität in einem adaptiven Formular, z. B. durch Klicken auf eine Schaltfläche. So erstellen Sie einen Testfall und Aktionen, um die Benutzereingabe für jedes adaptive Formularfeld zu überprüfen:
 
-1. Navigieren Sie in [!UICONTROL CRXDE Lite] zum Ordner `/content/forms/af/create-first-adaptive-form`. Klicken Sie mit der rechten Maustaste auf den Ordnernamen **[!UICONTROL create-first-adaptive-form]** und klicken Sie auf **[!UICONTROL Create]** **[!UICONTROL Create File]**. Geben Sie im Feld **[!UICONTROL Name]** `prefill.xml` ein und klicken Sie auf **[!UICONTROL OK]**. Fügen Sie der Datei „“ den folgenden Code hinzu:
+1. Navigieren Sie in [!UICONTROL CRXDE Lite] zum Ordner `/content/forms/af/create-first-adaptive-form`. Klicken Sie mit der rechten Maustaste auf den Ordnernamen **[!UICONTROL create-first-adaptive-form]** und klicken Sie auf **[!UICONTROL Create]** **[!UICONTROL Create File]**. Geben Sie im Feld **[!UICONTROL Name]** `prefill.xml` ein und klicken Sie auf **[!UICONTROL OK]**. Fügen Sie der Datei den folgenden Code hinzu:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?><afData>
@@ -166,7 +167,7 @@ Eine Aktion ist eine bestimmte Aktivität in einem adaptiven Formular, z. B. dur
      </tbody>
    </table>
 
-1. Erstellen Sie die Datei &quot;js.txt&quot;im Knoten **[!UICONTROL WeRetailFormTests]**. hinzufügen Sie Folgendes zur Datei:
+1. Erstellen Sie die Datei &quot;js.txt&quot;im Knoten **[!UICONTROL WeRetailFormTests]**. Fügen Sie der Datei den folgenden hinzu:
 
    ```shell
    #base=.
