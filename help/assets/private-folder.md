@@ -2,10 +2,11 @@
 title: Private Ordner zum Freigeben von Assets
 description: Erfahren Sie, wie Sie einen privaten Ordner im Ordner  [!DNL Adobe Experience Manager Assets] erstellen und ihn für andere Benutzer freigeben und ihnen verschiedene Berechtigungen zuweisen.
 contentOwner: AG
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '574'
 ht-degree: 12%
 
 ---
@@ -67,7 +68,7 @@ So erstellen Sie einen privaten Ordner und geben ihn frei:
 
 >[!NOTE]
 >
->Zum Erstellen eines Privatordners benötigen Sie die Berechtigungen zum Lesen und Ändern von [Zugriffskontrollen](/help/sites-administering/security.md#permissions-in-aem) im übergeordneten Ordner, unter dem Sie einen Privatordner erstellen möchten. Wenn Sie kein Administrator sind, sind diese Berechtigungen standardmäßig für `/content/dam` nicht aktiviert. In diesem Fall sollten Sie zunächst diese Berechtigungen für Ihre Benutzer-ID/Gruppe abrufen, bevor Sie versuchen, private Ordner zu erstellen.
+>Zum Erstellen eines privaten Ordners benötigen Sie die Berechtigungen zum Lesen und Ändern von [Zugriffskontrollen](/help/sites-administering/security.md#permissions-in-aem) im übergeordneten Ordner, unter dem Sie einen privaten Ordner erstellen möchten. Wenn Sie kein Administrator sind, sind diese Berechtigungen standardmäßig für `/content/dam` nicht aktiviert. In diesem Fall sollten Sie zunächst diese Berechtigungen für Ihre Benutzer-ID/Gruppe abrufen, bevor Sie versuchen, private Ordner zu erstellen.
 
 ## Löschen des privaten Ordners {#delete-private-folder}
 
