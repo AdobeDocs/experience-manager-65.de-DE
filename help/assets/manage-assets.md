@@ -3,10 +3,11 @@ title: Digitale Assets verwalten
 description: Erfahren Sie mehr über die Asset-Management-Aufgaben wie Hochladen, Herunterladen, Bearbeiten, Suchen, Löschen, Anmerkungen und Version Ihrer digitalen Assets.
 contentOwner: AG
 mini-toc-levels: 1
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: 0cecf1940136175887802b5ba205c67e61475a59
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '9590'
+source-wordcount: '9592'
 ht-degree: 61%
 
 ---
@@ -169,7 +170,7 @@ Dynamic Media ermöglicht das stapelweise Hochladen von Assets über FTP-Server.
 
 1. Verwenden Sie den FTP-Client Ihrer Wahl und melden Sie sich beim FTP-Server mit dem FTP-Benutzernamen und -Kennwort aus der Bereitstellungs-E-Mail an. Laden Sie die Dateien und/oder Ordner über den FTP-Client auf den FTP-Server hoch.
 
-1. Öffnen Sie die Desktopanwendung [Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) und melden Sie sich dann bei Ihrem Konto an.
+1. Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) und melden Sie sich bei Ihrem Konto an.
 
    Ihre Anmeldeinformationen und Ihre Anmeldung wurden zum Zeitpunkt der Bereitstellung von der Adobe bereitgestellt. Wenn Ihnen die Informationen nicht vorliegen, wenden Sie sich an den technischen Support.
 
@@ -602,7 +603,7 @@ Siehe [Herunterladen von Assets von Experience Manager](/help/assets/download-as
 
 >[!CAUTION]
 >
->Wenn Sie ein Asset veröffentlichen, das momentan verarbeitet wird, wird nur der ursprüngliche Inhalt veröffentlicht. Die Ausgabedarstellungenen fehlen. Warten Sie entweder bis, die Verarbeitung abgeschlossen ist, und veröffentlichen Sie das Asset erst dann bzw. veröffentlichen Sie es erneut, wenn die Verarbeitung abgeschlossen ist.
+>Wenn Sie ein Asset veröffentlichen, das momentan verarbeitet wird, wird nur der ursprüngliche Inhalt veröffentlicht. Die Ausgabedarstellungen fehlen. Warten Sie entweder, bis die Verarbeitung abgeschlossen ist, und veröffentlichen Sie das Asset erst dann, oder veröffentlichen Sie es erneut, wenn die Verarbeitung abgeschlossen ist.
 
 ## Rückgängigmachen der Veröffentlichung von Assets {#unpublishing-assets}
 
