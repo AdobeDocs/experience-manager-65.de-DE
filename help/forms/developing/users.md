@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
+role: Entwickler
 translation-type: tm+mt
-source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '6257'
+source-wordcount: '6258'
 ht-degree: 4%
 
 ---
@@ -872,7 +873,7 @@ Die folgende Tabelle beschreibt die Schritte in diesem Diagramm
  </thead>
  <tbody>
   <tr>
-   <td><p>3</p></td>
+   <td><p>1</p></td>
    <td><p>Eine Clientanwendung fordert von AEM Forms einen Synchronisierungsvorgang an.</p></td>
   </tr>
   <tr>
@@ -880,7 +881,7 @@ Die folgende Tabelle beschreibt die Schritte in diesem Diagramm
    <td><p>AEM Forms führt einen Synchronisierungsvorgang durch.</p></td>
   </tr>
   <tr>
-   <td><p>3</p></td>
+   <td><p>1</p></td>
    <td><p>Benutzerinformationen werden aktualisiert.</p></td>
   </tr>
   <tr>
