@@ -11,10 +11,11 @@ topic-tags: deploying
 discoiquuid: b97482f2-2791-4d14-ae82-388302d9eab3
 docset: aem65
 legacypath: /deploy/platform/data-store-config
+feature: Konfiguration
 translation-type: tm+mt
-source-git-commit: 93cb84763cfd77b67a5dd1481caab79337f6e7c4
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '3423'
+source-wordcount: '3424'
 ht-degree: 71%
 
 ---
@@ -421,7 +422,7 @@ Sie können die Konfigurationsdatei mit den folgenden Optionen verwenden:
 
 * secretKey=&quot;&quot;: Der Speicherzugriffsschlüssel. Stellen Sie sicher, dass das Zeichen &#39;=&#39; wie &#39;\=&#39; mit Escape-Zeichen versehen ist.
 * container=&quot;&quot;: Der Name des Blob-Speichercontainers von Microsoft Azure. Der Container stellt eine Gruppierung mehrerer Blobs dar. Zusätzliche Details finden Sie in der [offiziellen Dokumentation](https://msdn.microsoft.com/en-us/library/dd135715.aspx).
-* maxConnections=&quot;&quot;: Die gleichzeitige Anzahl gleichzeitiger Anforderungen pro Vorgang. Der Standardwert ist 1. 
+* maxConnections=&quot;&quot;: Die gleichzeitige Anzahl gleichzeitiger Anforderungen pro Vorgang. Der Standardwert ist 1.
 * maxErrorRetry=&quot;&quot;: Anzahl der weitere Zustellversuche pro Anforderung. Der Standardwert ist 3. 
 * socketTimeout=&quot;&quot;: Das Zeitüberschreitungsintervall in Millisekunden, das für die Anforderung verwendet wird. Der Standardwert ist 5 Minuten.
 
