@@ -7,10 +7,11 @@ uuid: 1c2b5c5b-c655-4559-8748-3e0b343779c2
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
+feature: Interaktive Kommunikation
 translation-type: tm+mt
-source-git-commit: 1449ce9aba3014b13421b32db70c15ef09967375
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '667'
 ht-degree: 88%
 
 ---
@@ -132,7 +133,7 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
    <td>Einzeln aufgeführte Anrufe - Ausgehend</td>
    <td><p>Spaltennamen:</p>
     <ul>
-     <li>Datum </li>
+     <li>Datum</li>
      <li>Zeit</li>
      <li>Zahl</li>
      <li>Dauer</li>
