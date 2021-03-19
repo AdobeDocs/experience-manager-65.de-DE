@@ -2,10 +2,11 @@
 title: XMP-Writeback in Ausgabedarstellungen
 description: Erfahren Sie, wie die XMP-Writeback-Funktion die Metadaten für ein Asset an alle oder spezifische Ausgabeformate des Elements propagiert.
 contentOwner: AG
+role: Geschäftspraktiker, Administrator
 translation-type: tm+mt
-source-git-commit: 7faa6638eff422599450946a257e53970d25189c
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '787'
 ht-degree: 57%
 
 ---
