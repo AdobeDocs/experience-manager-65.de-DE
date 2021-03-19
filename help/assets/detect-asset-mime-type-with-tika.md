@@ -2,10 +2,11 @@
 title: MIME-Typ von Assets mithilfe von Apache Tika erkennen
 description: 'Aktivieren Sie die Apache-Tika, um beim Upload-Vorgang anstelle der Dateierweiterung den MIME-Typ von Assets vom Inhaltsstream zu erkennen. [!DNL Experience Manager Assets] '
 contentOwner: AG
+role: Administrator, Architekt
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '167'
 ht-degree: 11%
 
 ---
