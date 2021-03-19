@@ -2,10 +2,11 @@
 title: 'Angebote für Medienbibliotheken vergleichen [!DNL Assets] '
 description: 'Vergleichen Sie die Funktionen der Medienbibliothek und kennen Sie die Unterschiede. [!DNL Experience Manager Assets] '
 contentOwner: AG
+role: Architekt, Leiter
 translation-type: tm+mt
-source-git-commit: 82c2df0e53e8ef595ad158ef46089d6e4964ca26
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '610'
 ht-degree: 19%
 
 ---
@@ -36,7 +37,7 @@ Für die Verwendung dieser Funktionen ist eine gültige Lizenz von [!DNL Assets]
 
 ## Ist [!DNL Assets] als separates Paket verfügbar? {#is-aem-assets-available-as-a-separate-package}
 
-Nein. Um die Installation und Bereitstellung zu erleichtern, werden alle [!DNL Experience Manager]-Anwendungen und Add-ons in einem Paket mit allen Funktionen bereitgestellt. Damit sind Sie aber nicht automatisch zur Nutzung aller im Paket enthaltenen Funktionen berechtigt. 
+Nein. Um die Installation und Bereitstellung zu erleichtern, werden alle [!DNL Experience Manager]-Anwendungen und Add-ons in einem Paket mit allen Funktionen bereitgestellt. Damit sind Sie aber nicht automatisch zur Nutzung aller im Paket enthaltenen Funktionen berechtigt.
 
 ## Ich möchte die Metadaten digitaler Assets bearbeiten. Benötige ich [!DNL Assets]? {#i-want-to-edit-metadata-of-digital-assets-do-i-need-aem-assets}
 
