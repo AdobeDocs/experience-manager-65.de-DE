@@ -7,10 +7,11 @@ uuid: 1ceae822-215a-4b83-a562-4609a09c3a54
 topic-tags: installing
 discoiquuid: de292a19-07db-4ed3-b13a-7a2f1cd9e0dd
 docset: aem65
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 3690d2d76ce13064bd3946f4f6fea1a2759cdf37
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1643'
 ht-degree: 58%
 
 ---
@@ -177,7 +178,7 @@ Caching ist ein Vorgang, um Datenzugriffszeiten zu verkürzen, die Wartezeit zu 
 Führen Sie die folgenden Schritte aus, um den Cache für adaptive Formulare zu konfigurieren:
 
 1. Gehen Sie zu AEM Web Console Configuration Manager unter `https://'[server]:[port]'/system/console/configMgr`.
-1. Klicken Sie auf **[!UICONTROL Konfiguration für adaptive Formulare und interaktiver Kommunikationswebkanal]**, um die Konfigurationswerte zu bearbeiten. Geben Sie im Dialogfeld &quot;Konfigurationswerte bearbeiten&quot;die maximale Anzahl von Formularen oder Dokumenten an, die eine Instanz des AEM Forms-Servers im Feld **Anzahl der adaptiven Forms** zwischenspeichern kann. Der Standardwert ist 100. Klicken Sie auf **Speichern**.
+1. Klicken Sie auf **[!UICONTROL Konfiguration für adaptive Formulare und interaktiver Kommunikationswebkanal]**, um die Konfigurationswerte zu bearbeiten. Geben Sie im Dialogfeld &quot;Konfigurationswerte bearbeiten&quot;die maximale Anzahl von Formularen oder Dokumenten an, die eine Instanz des AEM Forms-Servers im Feld **Anzahl der adaptiven Forms** zwischenspeichern kann. Der Standardwert ist 100. Klicken Sie auf **Speichern**.
 
    >[!NOTE]
    >
