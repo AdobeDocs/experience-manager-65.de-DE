@@ -8,10 +8,11 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communications, introduction
 discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
+feature: Interaktive Kommunikation
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1062'
 ht-degree: 91%
 
 ---
@@ -52,7 +53,7 @@ Ein Telekommunikationsbetreiber sendet monatliche Rechnungen über die E-Mail an
 * Richten Sie eine AEM-Author-Instanz ein.
 * Installieren Sie das [AEM Forms-Add-On](/help/forms/using/installing-configuring-aem-forms-osgi.md) auf der Author-Instanz
 * Richten Sie die MYSQL-Datenbank ein
-* Beziehen Sie den JDBC-Datenbanktreiber (JAR-Datei) vom Datenbankanbieter. Beispiele in der Übung basieren auf der MySQL-Datenbank und verwenden den Oracle-Datenbanktreiber [MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html).
+* Beziehen Sie den JDBC-Datenbanktreiber (JAR-Datei) vom Datenbankanbieter. Beispiele im Tutorial basieren auf der MySQL-Datenbank und verwenden Sie Oracle [MySQL JDBC-Datenbanktreiber](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
 ## Schritt 1: Planen Sie die interaktive Kommunikation {#step-plan-the-interactive-communication}
 
