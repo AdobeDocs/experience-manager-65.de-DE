@@ -4,9 +4,9 @@ description: Spezifische Versionshinweise zu [!DNL Adobe Experience Manager] 6.5
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: dfaa25ea72e50b60b8a40883ffb0241c131cc846
+source-git-commit: fb1423b7ae110b8a3cf8e0e389394e9266157a9f
 workflow-type: tm+mt
-source-wordcount: '3352'
+source-wordcount: '3360'
 ht-degree: 5%
 
 ---
@@ -349,9 +349,10 @@ Um Ihre Laufzeitkopie abzurufen, empfiehlt Adobe, die Entwurfskopie des benutzer
 * Die folgenden Fehler- und Warnmeldungen können während der Installation von Experience Manager 6.5.x.x angezeigt werden:
    * &quot;Wenn die Adobe Target-Integration in Experience Manager mit der Target Standard-API (IMS-Authentifizierung) konfiguriert wird, führt das Exportieren von Erlebnisfragmenten in die Zielgruppe dazu, dass falsche Angebot erstellt werden. Anstelle des Typs „Experience Fragment“/der Quelle „Adobe Experience Manager“ erstellt Target mehrere Angebote mit dem Typ „HTML“/der Quelle „Adobe Target Classic“.
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: Keine Wartungsfenster unter granite/operations/maintenance gefunden.
-   * Die serverseitige Validierung des adaptiven Formulars schlägt fehl, wenn Aggregat-Funktionen wie SUM, MAX und MIN verwendet werden. CQ-4274424
+   * Die serverseitige Validierung des adaptiven Formulars schlägt fehl, wenn Aggregat-Funktionen wie SUM, MAX und MIN verwendet werden (CQ-4274424).
    * `com.adobe.granite.maintenance.impl.TaskScheduler` - Keine Wartungsfenster unter granite/operations/maintenance gefunden.
    * Hotspot in einem interaktiven Dynamic Media-Bild ist nicht sichtbar, wenn das Asset über den Viewer für das kaufbare Banner in der Vorschau angezeigt wird.
+   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout wartet auf reg change, um unregistered abzuschließen.
 
 ## OSGi-Pakete und -Inhaltspakete enthalten {#osgi-bundles-and-content-packages-included}
 
