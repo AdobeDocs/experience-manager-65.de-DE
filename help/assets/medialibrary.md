@@ -1,12 +1,12 @@
 ---
-title: Medienbibliothek für die Verwaltung digitaler Assets.
+title: Medienbibliothek für einfache digitale Asset-Verwaltung verwenden
 description: '[!DNL Experience Manager Assets] und Medienbibliothek für die Asset-Verwaltung.'
 contentOwner: AG
 role: Architekt, Leiter
 translation-type: tm+mt
-source-git-commit: 10e5ca2fb6e108a7201e6114b61b3d0266ff80d2
+source-git-commit: 31dc984d9cd93f7024229fd6773878eebfdadc57
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '457'
 ht-degree: 2%
 
 ---
@@ -50,7 +50,6 @@ Die Medienbibliothek deckt im Großen und Ganzen die folgenden Anwendungsfälle 
 * Erlebnisse auf dem Digitalbildschirm, die mit [!DNL Adobe Experience Manager Screens] erstellt wurden.
 * [!DNL Assets] HTTP REST-APIs für Operationen ohne Kopfdaten.
 
-
 <!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
 * Basic metadata properties
@@ -65,7 +64,7 @@ Die Medienbibliothek deckt im Großen und Ganzen die folgenden Anwendungsfälle 
 * Comments and annotation
 -->
 
-Mit der Medienbibliothek können Sie die folgenden spezifischen Aufgaben ausführen:
+Zur Verwendung der Media Library-Funktion können Sie die standardmäßige [!DNL Experience Manager]-Benutzeroberfläche verwenden. Die Medienbibliothek ist Teil der [!DNL Experience Manager Sites]-Installation und es ist keine separate Schnittstelle oder kein Add-on erforderlich. Mithilfe der vorhandenen Oberfläche sind Benutzer von Media Library berechtigt, die folgenden Aufgaben durchzuführen:
 
 * Erstellen Sie Ordner, um Assets zu organisieren.
 * Hochladen von Assets.
