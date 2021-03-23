@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0eda6ee61acf737abc91d1e5df731e719663b3f2
+source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
 workflow-type: tm+mt
 source-wordcount: '1904'
-ht-degree: 81%
+ht-degree: 79%
 
 ---
 
@@ -154,7 +154,7 @@ So führen Sie die Speicherbereinigung durch:
 
 >[!NOTE]
 >
->Die Aufgabe zur Durchführung der automatischen Datenspeicherbereinigung startet nur, wenn Sie einen externen Dateidatenspeicher konfiguriert haben. Wenn kein externer Dateidatenspeicher konfiguriert wurde, gibt die Aufgabe nach dem Aufrufen die Meldung `Cannot perform operation: no service of type BlobGCMBean found` zurück. Informationen zum Einrichten eines Dateidatenspeichers finden Sie unter [Konfigurieren von Knotenspeichern und Datenspeichern in AEM 6](/help/sites-deploying/data-store-config.md#file-data-store).
+>Die Aufgabe zur Datenerfassung im Datenspeicher wird nur dann Beginn, wenn Sie einen externen Dateidatenspeicher konfiguriert haben. Wenn kein externer Dateidatenspeicher konfiguriert wurde, gibt die Aufgabe nach dem Aufrufen die Meldung `Cannot perform operation: no service of type BlobGCMBean found` zurück. Informationen zum Einrichten eines Dateidatenspeichers finden Sie unter [Konfigurieren von Knotenspeichern und Datenspeichern in AEM 6](/help/sites-deploying/data-store-config.md#file-data-store).
 
 ## Automatisieren der automatischen Datenspeicherbereinigung {#automating-data-store-garbage-collection}
 
@@ -172,7 +172,7 @@ Wenn Sie nicht möchten, dass Datenspeicher-Garbage Collection mit dem wöchentl
 >
 >Im folgenden Beispiel müssen gegebenenfalls verschiedene Parameter des `curl`-Befehls für Ihre Instanz konfiguriert werden, so zum Beispiel Hostname (`localhost`), Port (`4502`), Admin-Kennwort (`xyz`) und verschiedene Parameter für die tatsächliche automatische Datenspeicherbereinigung.
 
-Dies ist ein Beispiel für einen curl-Befehl zum Aufrufen der automatischen Datenspeicherbereinigung über die Befehlszeile:
+Im Folgenden finden Sie ein Beispiel für den Befehl curl, um die Datspeicher-Garbage Collection über die Befehlszeile aufzurufen:
 
 ```shell
 curl -u admin:admin -X POST --data markOnly=true  https://localhost:4503/system/console/jmx/org.apache.jackrabbit.oak"%"3Aname"%"3Drepository+manager"%"2Ctype"%"3DRepositoryManagement/op/startDataStoreGC/boolean
