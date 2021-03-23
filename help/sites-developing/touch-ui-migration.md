@@ -11,10 +11,10 @@ topic-tags: introduction
 discoiquuid: b315720f-e9b8-4063-99e2-1b9aa6bba460
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5597fb39500ac1f85d03263bfa1e5239d35d2a2c
+source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
 workflow-type: tm+mt
 source-wordcount: '685'
-ht-degree: 15%
+ht-degree: 14%
 
 ---
 
@@ -51,7 +51,7 @@ Beachten Sie beim Migrieren die folgenden (wichtigen) Unterschiede zwischen der 
    <td><code>sling:resourceType</code>
     <ul>
      <li>verwendet</li>
-     <li>Beispiel<br /> <code>cq/gui/components/authoring/dialog</code><br /> </li>
+     <li>zum Beispiel<br /> <code>cq/gui/components/authoring/dialog</code><br /> </li>
     </ul> </td>
   </tr>
   <tr>
@@ -119,7 +119,7 @@ Dialoge sind ein wichtiger Faktor bei der Migration Ihrer Komponenten:
 
 * [Entwickeln AEM Komponenten](/help/sites-developing/developing-components.md)  (mit der touchfähigen Benutzeroberfläche)
 * [Migration von einer klassischen Komponente](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
-* [Dialogumrechnungstool](/help/sites-developing/dialog-conversion.md)  - Hilfe beim Konvertieren der Dialoge Ihrer klassischen UI-Komponenten in die Touch-Benutzeroberfläche
+* [AEM Modernisierungstools](/help/sites-developing/modernization-tools.md)  - Unterstützung beim Konvertieren der Dialoge Ihrer klassischen UI-Komponenten in die Touch-Benutzeroberfläche
 
    * Es gibt eine Kompatibilitätsebene in der Touch-Benutzeroberfläche, um ein klassisches UI-Dialogfeld in einem &quot;Touch-UI-Wrapper&quot; zu öffnen, aber dies hat eingeschränkte Funktionalität und wird langfristig nicht empfohlen.
 
