@@ -11,10 +11,10 @@ topic-tags: best-practices
 discoiquuid: 8f06d4b6-7d30-4ebc-9c6a-3bb8607a9be8
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5597fb39500ac1f85d03263bfa1e5239d35d2a2c
+source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
 workflow-type: tm+mt
 source-wordcount: '815'
-ht-degree: 98%
+ht-degree: 93%
 
 ---
 
@@ -72,7 +72,7 @@ Nachfolgend finden Sie eine Liste mit Empfehlungen der Produktmanagement-Abteilu
      <li>Aktion „Seite bearbeiten“ konfigurieren, um den Seiteneditor der klassischen Benutzeroberfläche zu öffnen. Siehe <a href="#selecting-your-ui">Festlegen der Benutzeroberfläche</a>.</li>
     </ol> <p>Anschließend:</p>
     <ol>
-     <li>Komponentendialoge aktualisieren, um das Coral 3-Dialogformat zu verwenden. Adobe empfiehlt, das <a href="/help/sites-developing/dialog-conversion.md">Konvertierungstool für Dialogfelder</a> zu nutzen, um die Komponenten zu aktualisieren.</li>
+     <li>Komponentendialoge aktualisieren, um das Coral 3-Dialogformat zu verwenden. Adobe empfiehlt, die Komponenten mit den <a href="/help/sites-developing/modernization-tools.md">AEM Moderationstools</a> zu aktualisieren.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -84,7 +84,7 @@ Nachfolgend finden Sie eine Liste mit Empfehlungen der Produktmanagement-Abteilu
      <li>Aktion „Seite bearbeiten“ konfigurieren, um den Seiteneditor der klassischen Benutzeroberfläche zu öffnen. Siehe <a href="#selecting-your-ui">Festlegen der Benutzeroberfläche</a>.</li>
     </ol> <p>Anschließend:</p>
     <ol>
-     <li>Komponentendialoge aktualisieren, um das Coral 3-Dialogformat zu verwenden. Adobe empfiehlt, das <a href="/help/sites-developing/dialog-conversion.md">Konvertierungstool für Dialogfelder</a> zu nutzen, um die Komponenten zu aktualisieren.</li>
+     <li>Komponentendialoge aktualisieren, um das Coral 3-Dialogformat zu verwenden. Adobe empfiehlt, die Komponenten mit den <a href="/help/sites-developing/modernization-tools.md">AEM Moderationstools</a> zu aktualisieren.</li>
      <li>Konfigurieren Sie ContextHub (ersetzt ClientContext) und aktualisieren Sie die Seitenvorlagen für die Anwendung von ContextHub. Hinweis: ContextHub verfügt über einen Kompatibilitätsmodus, mit dem benutzerdefinierter ClientContext-Speicher geladen werden kann.</li>
     </ol> </td>
   </tr>
@@ -118,7 +118,7 @@ Für Hintergrundinformationen über den grundsätzlichen Umgang:
 Für detaillierte Entwicklungsinformationen:
 
 * [Design der Touch-optimierten Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md).
-* Verwendung des [Konversionstools für Dialogfelder](/help/sites-developing/dialog-conversion.md) zum Konvertieren der Bearbeitungsdialogfelder der Komponenten vom klassischen Benutzeroberflächenformat in das Touch-optimierte Benutzeroberflächenformat.
+* Verwenden Sie die [AEM Moderationstools](/help/sites-developing/modernization-tools.md), um Dialogfelder zum Bearbeiten von Komponenten aus der klassischen Benutzeroberfläche in die touchfähige Benutzeroberfläche zu konvertieren.
 
 * [Struktur der Touch-optimierten Benutzeroberfläche](/help/sites-developing/touch-ui-structure.md).
 
