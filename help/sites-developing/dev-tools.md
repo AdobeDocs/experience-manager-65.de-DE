@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 76c570e5-46ed-46be-9864-4fe4a83f0caf
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 62%
@@ -50,7 +50,7 @@ AEM wird mit weiteren Tools für die Entwicklung bereitgestellt:
 * [Entwicklung von AEM-Projekten mit IntelliJ IDEA](/help/sites-developing/ht-intellij.md)
 * [Verwenden des VLT-Tools](/help/sites-developing/ht-vlttool.md)
 * [Verwendung des Proxyservertools](/help/sites-developing/ht-proxy-server.md)
-* [Dialogfeldkonvertierungs-Tool](/help/sites-developing/dialog-conversion.md)
+* [AEM-Modernisierungs-Tools](/help/sites-developing/modernization-tools.md)
 * [AEM Repo Tool](/help/sites-developing/aem-repo-tool.md)
 
 Tools, die die Erstellung neuer Projekte erleichtern:
