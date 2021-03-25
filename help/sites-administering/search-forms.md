@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 19faa273908e67a744e52d173a5352f0a52f7345
+source-git-commit: b7be1ff0e842794511ffeb4fed60eed60796b4ff
 workflow-type: tm+mt
-source-wordcount: '2060'
-ht-degree: 79%
+source-wordcount: '2042'
+ht-degree: 77%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 79%
 
 Mit **Suchformularen** können Sie die Auswahl der Suchprädikate anpassen, die in den Suchbereichen der verschiedenen AEM-Konsolen und/oder in den Suchbereichen der Autorenumgebung verwendet werden. Auf diese Weise können Sie die Suchfunktion genau auf Ihre speziellen Anforderungen ausrichten.
 
-Eine [Reihe an Prädikaten](#predicates-and-their-settings) ist vorkonfiguriert verfügbar. Sie können mehrere Eigenschaften hinzufügen, darunter das Volltextprädikat für Volltextsuchen, das Eigenschaftsprädikat für die Suche nach Assets, die mit einer einzigen von Ihnen festgelegten Eigenschaft übereinstimmen, oder das Optionsprädikat für die Suche nach Assets, die mit mindestens einem Wert übereinstimmen, den Sie für eine bestimmte Eigenschaft festgelegt haben.
+Eine [Reihe an Prädikaten](#predicates-and-their-settings) ist vorkonfiguriert verfügbar. Sie können mehrere Prädikate hinzufügen, darunter (unter anderem) die Eigenschaftsvorgabe, um nach Assets zu suchen, die einer von Ihnen angegebenen Eigenschaft entsprechen, oder die Optionen prognostizieren die Suche nach Assets, die mit einem oder mehreren Werten übereinstimmen, die Sie für eine bestimmte Eigenschaft angeben.
 
 Sie können die [Suchformulare konfigurieren](#configuring-your-search-forms), die in den unterschiedlichen Konsolen und im Asset-Browser (bei der Bearbeitung von Seiten) genutzt werden. Die [Dialogfelder für die Konfiguration dieser Formulare](#configuring-your-search-forms) finden Sie unter:
 
@@ -176,17 +176,6 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
      <li>Feldbezeichnung</li>
      <li>Eigenschaftsname*</li>
      <li>Optionspfad</li>
-     <li>Beschreibung</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>Volltext </td>
-   <td>Suchprädikat für Volltextsuchen.</td>
-   <td>
-    <ul>
-     <li>Feldbezeichnung</li>
-     <li>Platzhalter</li>
-     <li>Eigenschaftsname</li>
      <li>Beschreibung</li>
     </ul> </td>
   </tr>
