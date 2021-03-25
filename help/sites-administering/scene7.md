@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 translation-type: tm+mt
-source-git-commit: ef975961ddcd6910b5fba2dea7e9302921f45055
+source-git-commit: d700510efb340598a7931647164e22d574884569
 workflow-type: tm+mt
-source-wordcount: '5511'
+source-wordcount: '5517'
 ht-degree: 11%
 
 ---
@@ -351,7 +351,7 @@ So konfigurieren Sie Experience Manager für das Veröffentlichen von Assets in 
 
 Aktivieren Sie den Adobe CQ Dynamic Media Classic Dam Listener, der standardmäßig deaktiviert ist.
 
-So aktivieren Sie ihn:
+So aktivieren Sie den Adobe CQ Dynamic Media Classic Dam Listener:
 
 1. Tippen Sie auf das Symbol [!UICONTROL Tools] und navigieren Sie dann zu **[!UICONTROL Vorgänge > Web-Konsole]**. Die Web-Konsole wird geöffnet.
 1. Navigieren Sie zu **[!UICONTROL Adobe CQ Dynamic Media Classic Dam Listener]** und aktivieren Sie das Kontrollkästchen **[!UICONTROL Aktiviert]**.
@@ -525,7 +525,7 @@ Sie können die Standardkonfiguration wie folgt konfigurieren:
 
 Sie können den Ordner konfigurieren, in den Assets in Dynamic Media Classic hochgeladen werden, wenn sich das Asset nicht im Ordner &quot;CQ-Zielgruppe&quot;befindet. Siehe Veröffentlichen von Assets von außerhalb des Ordners &quot;CQ-Zielgruppe&quot;.
 
-So konfigurieren Sie den Ad-hoc-Ordner:
+Konfigurieren des Ad-hoc-Ordners
 
 1. Tippen Sie auf das Symbol &quot;Experience Manager&quot;, navigieren Sie zu **[!UICONTROL Bereitstellung > Cloud Services]**, tippen Sie auf **[!UICONTROL Dynamic Media Classic]** und wählen Sie Ihre Konfiguration in Dynamic Media Classic aus.
 1. Um die Konfiguration zu öffnen, tippen Sie auf **[!UICONTROL Bearbeiten]**.
