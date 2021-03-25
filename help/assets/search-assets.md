@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Suche, Metadaten
 role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: fd283b840830bef613689f81cf753e226fb834d7
 workflow-type: tm+mt
-source-wordcount: '5720'
-ht-degree: 73%
+source-wordcount: '5577'
+ht-degree: 76%
 
 ---
 
@@ -20,15 +20,15 @@ ht-degree: 73%
 
 [!DNL Experience Manager Assets] unterstützt folgende Anwendungsfälle und in diesem Artikel werden Verwendung, Konzepte, Konfigurationen, Einschränkungen und Fehlerbehebung für diese Fälle beschrieben.
 
-| Suchen von Assets | Konfiguration und Verwaltung | Arbeiten mit Suchergebnissen |
+| Suchen nach Assets | Konfigurieren und Verwalten der Suchfunktion | Arbeiten mit Suchergebnissen |
 |---|---|---|
 | [Einfache Suchvorgänge](#searchbasics) | [Suchindex](#searchindex) | [Ergebnisse sortieren](#sort) |
 | [Benutzeroberfläche für Suchen](#searchui) | [Visuelle Suche oder Ähnlichkeitssuche](#configvisualsearch) | [Eigenschaften und Metadaten eines Assets überprüfen](#checkinfo) |
 | [Suchvorschläge](#searchsuggestions) | [Obligatorische Metadaten](#mandatorymetadata) | [Download](#download) |
 | [Suchergebnisse und -verhalten verstehen](#searchbehavior) | [Suchfacetten ändern](#searchfacets) | [Massenaktualisierung von Metadaten](#metadataupdates) |
 | [Such-Ranking und -Optimierung](#searchrank) | [Textextraktion](#extracttextupload) | [Smart-Sammlungen](#collections) |
-| [Erweiterte Suche: Filtern und Suchbereich](#scope) | [Benutzerdefinierte Prädikate](#custompredicates) | [Wissenswertes zu und Fehlerbehebung bei unerwarteten Ergebnissen](#unexpectedresults) |
-| [Suche aus anderen Lösungen und Apps heraus](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Experience Manager-Desktop-Programm](#desktopapp)</li><li>[Adobe Stock-Fotos](#adobestock)</li><li>[Dynamic Media-Assets](#dynamicmedia)</li></ul> |  |  |
+| [Erweiterte Suche: Filtern und Suchbereich](#scope) | [Benutzerdefinierte Prädikate](#custompredicates) | [Wissenswertes zu und Fehlerbehebung bei unerwarteten Ergebnissen](#unexpected-results) |
+| [Suche aus anderen Lösungen und Apps heraus](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager-Desktop-Programm](#desktop-app)</li><li>[Adobe Stock-Fotos](#adobe-stock)</li><li>[Dynamic Media-Assets](#dynamic-media)</li></ul> |  |  |
 | [Asset-Wähler](#assetpicker) |  |  |
 | [Einschränkungen](#limitations) und [Tipps](#tips) |  |  |
 | [Illustrierte Beispiele](#samples) |  |  |
@@ -69,11 +69,11 @@ Zum schnellen Auffinden der benötigten Assets bietet die Rich-Oberfläche Filte
 
 Wenn die Ergebnisse viele Assets sind, zeigt [!DNL Experience Manager] die ersten 100 in der Kartenansicht und 200 in der Listenansicht an. Wenn die Benutzer scrollen, werden mehr Assets geladen. Dies dient zur Verbesserung der Leistung. Sehen Sie sich eine Videodemonstration zur [Anzahl der angezeigten Assets](https://www.youtube.com/watch?v=LcrGPDLDf4o) an.
 
-Manchmal werden in den Suchergebnissen auch unerwartete Assets angezeigt. Weitere Informationen dazu finden Sie unter [Unerwartete Ergebnisse](#troubleshoot-unexpected-search-results-and-issues).
+Manchmal werden in den Suchergebnissen auch unerwartete Assets angezeigt. Weitere Informationen dazu finden Sie unter [Unerwartete Ergebnisse](#unexpected-results).
 
 [!DNL Experience Manager] kann viele Dateiformate suchen und die Suchfilter können an Ihre geschäftlichen Anforderungen angepasst werden. Wenden Sie sich an Ihren Administrator, um zu verstehen, welche Suchoptionen für Ihr DAM-Repository verfügbar sind und welche Einschränkungen Ihr Konto hat.
 
-### Ergebnisse mit und ohne erweiterte Smarttags {#withsmarttags}
+### Ergebnisse mit und ohne erweiterte intelligente Tags {#withsmarttags}
 
 Standardmäßig kombiniert die [!DNL Experience Manager]-Suche die Suchbegriffe mit einer AND-Klausel. Suchen Sie beispielsweise nach einer Frau mit Keywords. In den Suchergebnissen werden standardmäßig nur die Assets angezeigt, bei denen in den Metadaten sowohl weibliche als auch ausgeführte Suchbegriffe aufgeführt sind. Das gleiche Verhalten wird beibehalten, wenn mit den Suchbegriffen Sonderzeichen (Punkte, Unterstriche oder Gedankenstriche) verwendet werden. Die folgenden Abfragen geben die gleichen Ergebnisse zurück:
 
@@ -82,11 +82,11 @@ Standardmäßig kombiniert die [!DNL Experience Manager]-Suche die Suchbegriffe 
 * `woman-running`
 
 Die Abfrage `woman -running` gibt jedoch Assets ohne `running` in ihren Metadaten zurück.
-Durch Verwendung von Smarttags wird eine zusätzliche `OR`-Klausel hinzugefügt, um einen der Suchbegriffe als angewendete Smarttags zu finden. Ein Asset, das entweder mit `woman` oder `running` mithilfe von Smarttags getaggt wurde, wird ebenfalls in einer solchen Abfrage angezeigt. Die Suchergebnisse sind also eine Kombination aus
+Mit Smart Tags wird eine zusätzliche `OR`-Klausel hinzugefügt, um einen der Suchbegriffe als angewendete Smarttags zu finden. Ein Asset, das entweder mit `woman` oder `running` mit Smart-Tags getaggt ist, wird ebenfalls in einer solchen Abfrage angezeigt. Die Suchergebnisse sind also eine Kombination aus
 
 * Assets mit den Schlüsselwörtern `woman` und `running` in den Metadaten (Standardverhalten).
 
-* Assets smart getaggt mit einem der Suchbegriffe (Verhalten von Smarttags).
+* Assets smart getaggt mit einem der Suchbegriffe (Verhalten von intelligenten Tags).
 
 ### Suchvorschläge bei der Eingabe {#searchsuggestions}
 
@@ -144,7 +144,7 @@ Wenn Sie Bilder suchen möchten, die einem vom Benutzer ausgewählten Bild ähne
 
 *Abbildung: Suchen Sie ähnliche Bilder mithilfe der Option in der Ansicht.*
 
-### Adobe Stock-Fotos {#adobestock}
+### Adobe Stock-Fotos {#adobe-stock}
 
 In der Benutzeroberfläche [!DNL Experience Manager] können Benutzer nach [Adobe Stock assets](/help/assets/aem-assets-adobe-stock.md) suchen und die erforderlichen Assets lizenzieren. Fügen Sie `Location: Adobe Stock` in der OmniSearch-Leiste hinzu. Sie können auch das Bedienfeld „Filter“ verwenden, um alle lizenzierten oder nicht lizenzierten Assets zu suchen bzw. mit der Adobe Stock-Dateinummer nach einem bestimmten Asset suchen.
 
@@ -152,35 +152,38 @@ In der Benutzeroberfläche [!DNL Experience Manager] können Benutzer nach [Adob
 
 Sie können nach Dynamic Media-Bildern filtern, indem Sie die Option **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** im Bedienfeld **[!UICONTROL Filter]** auswählen. Dadurch werden Assets wie Bildsets, Karussells, Sets für gemischte Medien und Rotationssets gefiltert und angezeigt.
 
-### Mit bestimmten Werten in Metadatenfeldern suchen {#gqlsearch}
+### GQL-Suche mit bestimmten Werten in Metadatenfeldern {#gql-search}
 
-Sie können nach Assets suchen, die auf exakten Werten bestimmter Metadatenfelder wie Titel, Beschreibung und Autor basieren. Die Volltextsuchfunktion GQL ruft nur jene Assets ab, deren Metadatenwert exakt mit Ihrer Suchanfrage übereinstimmt. Bei den Namen der Eigenschaften (z. B. Autor, Titel usw.) und Werten wird zwischen Groß- und Kleinschreibung unterschieden.
+Sie können Assets auf Grundlage exakter Werte von Metadatenfeldern wie Titel, Beschreibung und Ersteller suchen. Die Volltextsuchfunktion GQL ruft nur jene Assets ab, deren Metadatenwert exakt mit Ihrer Suchanfrage übereinstimmt. Bei den Namen der Eigenschaften (Ersteller, Titel usw.) und den Werten wird zwischen Groß- und Kleinschreibung unterschieden.
 
 | Metadatenfeld | Facettenwert und Nutzung |
-| ----------------------------------------- | --------------------------------------- |
-| Titel | `title:John` |
-| Ersteller | `creator:John` |
-| Standort | `location:NA` |
-| Beschreibung | `description:"Sample Image"` |
-| Erstellungswerkzeug | `creatortool:"Adobe Photoshop CC 2020"` |
-| Urheberrechtsbesitzer | `copyrightowner:"Adobe Systems"` |
-| Mitarbeiter | `contributor:John` |
-| Nutzungsbedingungen | `usageterms:"CopyRights Reserved"` |
-| Erstellt | `created`:YYYY-MM-DDTHH |
-| Ablaufdatum | `expires`:YYYY-MM-DDTHH |
-| Einschaltzeit | `ontime`:YYYY-MM-DDTHH |
-| Ausschaltzeit | `offtime`:YYYY-MM-DDTHH |
-| Zeitraum (expires dateontime,offtime) | `facet field`: kleingeschrieben...upperbound |
+|---|---|
+| Titel | title:John |
+| Ersteller | creator:John |
+| Standort | location:NA |
+| Beschreibung | description:&quot;Sample Image&quot; |
+| Erstellungswerkzeug | creatortool:&quot;Adobe Photoshop CC 2015&quot; |
+| Urheberrechtsbesitzer | copyrightowner:&quot;Adobe Systems&quot; |
+| Mitarbeiter | contributor:John |
+| Nutzungsbedingungen | usageterms:„CopyRights Reserved“ |
+| Erstellt | created:YYYY-MM-DDTHH |
+| Ablaufdatum | expires:YYYY-MM-DDTHH |
+| Einschaltzeit | ontime:YYYY-MM-DDTHH |
+| Ausschaltzeit | offtime:YYYY-MM-DDTHH |
+| Zeitraum (expires dateontime,offtime) | facet field : lowerbound.upperbound |
 | Pfad | /content/dam/&lt;Ordnername> |
-| PDF-Titel | `pdftitle`:&quot;Adobe Dokument&quot; |
-| Betreff | `subject:"Training"` |
-| Tags | `tags:"Location And Travel"` |
-| Typ | `type:"image\png"` |
-| Bildbreite | `width`:klein gebunden...upperbound |
-| Bildhöhe | `height`:klein gebunden...upperbound |
-| Person | `person:John` |
+| PDF-Titel | pdftitle:„Adobe Document“ |
+| Betreff | subject:„Training“ |
+| Tags | tags:„Location And Travel“ |
+| Typ | type:&quot;image\png&quot; |
+| Bildbreite | width:lowerbound.upperbound |
+| Bildhöhe | height:lowerbound.upperbound |
+| Person | person:John |
 
 Die Eigenschaften `path`, `limit`, `size` und `orderby` können nicht mit dem Operator `OR` mit einer anderen Eigenschaft kombiniert werden.
+
+<!-- TBD: Where are the limit, size, orderby properties defined?
+-->
 
 Das Keyword für eine von einem Benutzer erstellte Eigenschaft ist ihre Feldbeschriftung im Eigenschafteneditor in Kleinbuchstaben und ohne Leerzeichen.
 
@@ -194,31 +197,31 @@ Im Folgenden finden Sie einige Beispiele für Suchformate für komplexe Abfragen
 * So zeigen Sie Assets mit einem Eigenschaftswert an, der eine bestimmte Zeichenfolge enthält (wie: title=Basel Meeting Room): `title:*Meeting*`
 * So zeigen Sie Assets an, die eine bestimmte Zeichenfolge enthalten und einen bestimmten Eigenschaftswert aufweisen (wie die Suche nach der Zeichenfolge „Adobe“ in Assets mit title=John Doe): `*Adobe* title:"John Doe"`
 
-## Suchen von Assets aus anderen [!DNL Experience Manager] Angeboten oder Schnittstellen {#beyondomnisearch}
+## Suchen von Assets aus anderen [!DNL Experience Manager] Angeboten oder Schnittstellen {#search-assets-other-surfaces}
 
 [!DNL Adobe Experience Manager] verbindet das DAM-Repository mit verschiedenen anderen  [!DNL Experience Manager] Lösungen, um den Zugriff auf digitale Assets zu beschleunigen und die kreativen Workflows zu optimieren. Jede Asset-Erkennung beginnt mit dem Durchsuchen oder Suchen. Das Suchverhalten ist über die verschiedenen Oberflächen und Lösungen hinweg weitgehend gleich. Einige Suchmethoden ändern sich je nach Audience der Zielgruppe, Anwendungsfällen und Benutzeroberfläche. [!DNL Experience Manager] Die genauen Methoden für die einzelnen Lösungen sind unter den unten stehenden Links dokumentiert. Die allgemein anwendbaren Tipps und Verhaltensweisen werden in diesem Artikel beschrieben.
 
 ### Nach Assets über das Bedienfeld „Adobe Asset Link“ suchen {#aal}
 
-Mithilfe von Adobe Asset Link können Kreativprofis jetzt auf in [!DNL Experience Manager Assets] gespeicherte Inhalte zugreifen, ohne die unterstützten Adobe Creative Cloud-Apps zu verlassen. Kreative können Assets über das In-App-Bedienfeld im [!DNL Adobe Creative Cloud apps] nahtlos durchsuchen, suchen, auschecken und einchecken: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] und [!DNL Adobe InDesign]. Asset Link ermöglicht es Benutzern auch, nach visuell ähnlichen Ergebnissen zu suchen. Die Ergebnisse der visuellen Suchanzeige basieren auf den maschinellen Lernalgorithmen von Adobe Sensei und helfen Benutzern dabei, optisch ähnliche Bilder zu finden. Siehe [Assets suchen und durchsuchen](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) mit Adobe Asset Link.
+Mithilfe von Adobe Asset Link können Kreativprofis jetzt auf in [!DNL Experience Manager Assets] gespeicherte Inhalte zugreifen, ohne die unterstützten Adobe Creative Cloud-Apps zu verlassen. Kreative können Assets über das In-App-Bedienfeld in den [!DNL Adobe Creative Cloud]-Apps nahtlos durchsuchen, suchen, auschecken und einchecken: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] und [!DNL Adobe InDesign]. Asset Link ermöglicht es Benutzern auch, nach visuell ähnlichen Ergebnissen zu suchen. Die Ergebnisse der visuellen Suchanzeige basieren auf den maschinellen Lernalgorithmen von Adobe Sensei und helfen Benutzern dabei, optisch ähnliche Bilder zu finden. Siehe [Assets suchen und durchsuchen](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) mit Adobe Asset Link.
 
-### Suchen von Assets in der [!DNL Experience Manager] Desktop-App {#desktopapp}
+### Suchen von Assets in der [!DNL Experience Manager] Desktop-App {#desktop-app}
 
 Kreativprofis verwenden die Desktop-App, um das [!DNL Experience Manager Assets] einfach zu durchsuchen und auf ihrem lokalen Desktop (Win oder Mac) verfügbar zu machen. Kreative Elemente können die gewünschten Assets in Mac Finder oder Windows Explorer leicht sichtbar machen, in Desktop-Anwendungen geöffnet und lokal geändert werden. Die Änderungen werden mit einer neuen Version, die im Repository erstellt wurde, wieder auf [!DNL Experience Manager] gespeichert. Die Anwendung unterstützt einfache Suchen mit einem oder mehreren Suchbegriffen, den Platzhaltern `*` und `?` und dem Operator `AND`. Siehe [Assets durchsuchen und suchen sowie Vorschau für Assets anzeigen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#browse-search-preview-assets) im Desktop-Programm.
 
-### Suchen nach Assets in [!DNL Brand Portal] {#brandportal}
+### Suchen nach Assets in [!DNL Brand Portal] {#brand-portal}
 
 Geschäftsbenutzer und Marketing-Experten nutzen Brand Portal, um genehmigte digitale Assets effizient und sicher mit erweiterten internen Teams, Partnern und Wiederverkäufern zu teilen. Siehe [Suchen von Assets in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html?lang=de).
 
-### [!DNL Adobe Stock] Bilder {#adobestock-1} suchen
+### [!DNL Adobe Stock] Bilder {#adobe-stock1} suchen
 
-Über die [!DNL Experience Manager]-Benutzeroberfläche können Benutzer nach Adobe Stock-Assets suchen und die erforderlichen Assets lizenzieren. Fügen Sie `Location: Adobe Stock` im OmniSearch-Feld hinzu. Sie können auch das Bedienfeld **[!UICONTROL Filter]** verwenden, um alle lizenzierten oder nicht lizenzierten Assets zu suchen bzw. mit der Adobe Stock-Dateinummer nach einem bestimmten Asset suchen. Siehe [Verwalten von Adobe Stock-Bildern in Experience Manager](/help/assets/aem-assets-adobe-stock.md#usemanage).
+Über die [!DNL Experience Manager]-Benutzeroberfläche können Benutzer nach Adobe Stock-Assets suchen und die erforderlichen Assets lizenzieren. Fügen Sie `Location: Adobe Stock` im OmniSearch-Feld hinzu. Sie können auch das Bedienfeld **[!UICONTROL Filter]** verwenden, um alle lizenzierten oder nicht lizenzierten Assets zu suchen bzw. mit der Adobe Stock-Dateinummer nach einem bestimmten Asset suchen. Siehe [Bilder verwalten [!DNL Adobe Stock] in [!DNL Experience Manager]](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
-### Suchen nach Dynamic Media-Assets {#dynamicmedia}
+### [!DNL Dynamic Media]-Elemente {#dynamic-media} suchen
 
 Sie können nach Dynamic Media-Bildern filtern, indem Sie die Option **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** im Bedienfeld **[!UICONTROL Filter]** auswählen. Dadurch werden Assets wie Bildsets, Karussells, Sets für gemischte Medien und Rotationssets gefiltert und angezeigt. Beim Erstellen von Web-Seiten können Autoren in der Inhaltssuche nach Sets suchen. Ein Filter für Sets ist in einem Popup-Menü verfügbar.
 
-### Suchen nach Assets in der Inhaltssuche beim Erstellen von Web-Seiten {#contentfinder}
+### Suchen nach Assets in der Inhaltssuche beim Erstellen von Web-Seiten {#content-finder}
 
 Autoren können mit der Inhaltssuche das DAM-Repository nach den relevanten Assets durchsuchen und die Assets auf den von ihnen erstellten Web-Seiten verwenden. Autoren können auch die Funktion &quot;Connected Assets&quot;verwenden, um nach Assets zu suchen, die in einer Remote-Bereitstellung verfügbar sind. [!DNL Experience Manager] Autoren können diese Assets dann auf Webseiten in einer lokalen [!DNL Experience Manager]-Bereitstellung verwenden. Siehe [Remote-Elemente verwenden](/help/assets/use-assets-across-connected-assets-instances.md#use-remote-assets).
 
@@ -226,13 +229,13 @@ Autoren können mit der Inhaltssuche das DAM-Repository nach den relevanten Asse
 
 Die [!DNL Experience Manager]-Suchfunktionen erlauben die Suche nach Sammlungen sowie die Suche nach Assets in einer Sammlung. Siehe [Suchen nach Sammlungen](/help/assets/manage-collections.md).
 
-## Asset-Wähler {#assetpicker}
+## Asset-Wähler {#asset-picker}
 
 >[!NOTE]
 >
 >Asset-Auswahl wurde in früheren Versionen von [!DNL Adobe Experience Manager] als [Asset-Auswahl](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) bezeichnet.
 
-Mit der Asset-Auswahl können Sie DAM-Assets auf besondere Weise durchsuchen, suchen und filtern. Sie können die Asset-Auswahl in Ihrer [!DNL Experience Manager]-Instanz mit `https://[aem-server]:[port]/aem/assetpicker.html` starten. Diese URL öffnet die Asset-Auswahl im Durchsuchenmodus. Verwenden Sie die unterstützten Anforderungsparameter als Suffix, z. B. `mode` (eine oder mehrere Auswahlen) oder `viewmode` mit `assettype` (Bild, Video, Text) und `mimetype`. Diese Parameter legen den Kontext der Asset-Auswahl für eine bestimmte Suchinstanz fest und bleiben während der Auswahl intakt. Mit dieser Funktion können Sie auch die Metadaten der Assets abrufen, die Sie auswählen.
+Mit dem Asset-Wähler können Sie DAM-Assets auf besondere Weise suchen, filtern und durchsuchen. Der Asset-Wähler ist verfügbar unter `https://[aem_server]:[port]/aem/assetpicker.html`. Sie können die Metadaten der Assets, die Sie über den Asset-Wähler auswählen, abrufen. Sie können ihn mit unterstützten Anfrageparametern wie dem Asset-Typ (Bild, Video, Text) und dem Auswahlmodus (eine oder mehrere Auswahlen) starten. Diese Parameter legen den Kontext der Asset-Auswahl für eine bestimmte Suchinstanz fest und bleiben während der Auswahl intakt.
 
 Der Asset-Wähler verwendet die HTML5-Meldung `Window.postMessage`, um Daten für das ausgewählte Asset an den Empfänger zu senden. Es funktioniert nur im Durchsuchen-Modus und nur mit der Omniture-Ergebnisseite.
 
@@ -240,13 +243,13 @@ Der Asset-Wähler verwendet die HTML5-Meldung `Window.postMessage`, um Daten fü
 
 | Name | Werte | Beispiel | Zweck |
 |---|---|---|---|
-| resource suffix (B) | Ordnerpfad als Ressourcensuffix in der URL:[https://localhost:4502/aem/assetpicker.html/&lt;Ordnerpfad>](https://localhost:4502/aem/assetpicker.html) | Um die Asset-Auswahl mit einem bestimmten ausgewählten Ordner zu starten, z. B. wenn der Ordner `/content/dam/we-retail/en/activities` ausgewählt ist, muss die URL dem folgenden Formular entsprechen: [https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images](https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images) | Wenn beim Starten des Asset-Wählers ein bestimmter Ordner ausgewählt sein soll, können Sie ihn als Ressourcensuffix übergeben. |
-| `mode` | single, multiple | <ul><li>[https://localhost:4502/aem/assetpicker.html?mode=single](https://localhost:4502/aem/assetpicker.html?mode=single)</li><li>[https://localhost:4502/aem/assetpicker.html?mode=multiple](https://localhost:4502/aem/assetpicker.html?mode=multiple)</li></ul> | Im Modus „multiple“ können Sie mit dem Asset-Wähler mehrere Assets gleichzeitig auswählen. |
+| resource suffix (B) | Ordnerpfad als Ressourcensuffix in der URL: [https://localhost:4502/aem/assetpicker.html/&lt;Ordnerpfad>](https://localhost:4502/aem/assetpicker.html) | Um die Asset-Auswahl mit einem bestimmten ausgewählten Ordner zu starten, z. B. wenn der Ordner `/content/dam/we-retail/en/activities` ausgewählt ist, muss die URL dem folgenden Formular entsprechen: `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | Wenn beim Starten des Asset-Wählers ein bestimmter Ordner ausgewählt sein soll, können Sie ihn als Ressourcensuffix übergeben. |
+| `mode` | single, multiple | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | Im Modus „multiple“ können Sie mit dem Asset-Wähler mehrere Assets gleichzeitig auswählen. |
 | `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Verwenden Sie diese Parameter, um den Asset-Wähler als Granite-Dialogfeld zu öffnen. Diese Option ist nur relevant, wenn Sie den Asset-Wähler per Granite-Pfadfeld starten und als pickerSrc-URL konfigurieren. |
-| `root` | &lt;Ordnerpfad> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/Aktivitäten) | Verwenden Sie diese Option, um den Stammordner für den Asset-Wähler anzugeben. In diesem Fall können Sie mit dem Asset-Wähler nur untergeordnete Assets (direkt/indirekt) unter dem Stammordner auswählen. |
-| `viewmode` | Suchen |  | So starten Sie die Asset-Auswahl im Suchmodus mit den Parametern &quot;Asset-Typ&quot;und &quot;mimetype&quot;. |
-| `assettype` | images, documents, multimedia, archives. | <ul><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=images](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=multimedia](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=archives](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=archives)</li></ul> | Verwenden Sie die Option, um Asset-Typen basierend auf dem bereitgestellten Wert zu filtern. |
-| `mimetype` | MIME-Typ (`/jcr:content/metadata/dc:format`) eines Assets (Platzhalter wird ebenfalls unterstützt). | <ul><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=image/png](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation&amp;mimetype=*png)</li></ul> | Verwenden Sie diese zum Filtern von Assets nach MIME-Typ. |
+| `root` | &lt;Ordnerpfad> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Verwenden Sie diese Option, um den Stammordner für den Asset-Wähler anzugeben. In diesem Fall können Sie mit dem Asset-Wähler nur untergeordnete Assets (direkt/indirekt) unter dem Stammordner auswählen. |
+| `viewmode` | Suchen |  | So starten Sie die Asset-Auswahl im Suchmodus mit den Parametern `assettype` und `mimetype`. |
+| `assettype` | Bilder, Dokumente, Multimedia, Archive. | <ul><li>`https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives` </li></ul> | Verwenden Sie die Option, um Asset-Typen basierend auf dem bereitgestellten Wert zu filtern. |
+| `mimetype` | MIME-Typ (`/jcr:content/metadata/dc:format`) eines Assets (Platzhalter wird ebenfalls unterstützt). | <ul><li>`https://localhost:4502/aem/assetpicker.html?mimetype=image/png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png`</li></ul> | Verwenden Sie diese zum Filtern von Assets nach MIME-Typ. |
 
 Wechseln Sie für den Zugriff auf die Benutzeroberfläche des Asset-Wählers zu `https://[aem_server]:[port]/aem/assetpicker`. Navigieren Sie zum gewünschten Ordner und wählen Sie mindestens ein Asset aus. Alternativ können Sie im OmniSearch-Feld nach dem gewünschten Asset suchen, je nach Bedarf filtern und das Asset dann auswählen.
 
@@ -262,6 +265,7 @@ Die Suchfunktion in [!DNL Experience Manager Assets] unterliegt folgenden Einsch
 * [!DNL Experience Manager] zeigt den Suchbegriff ggf. weiter an, nachdem Sie Eigenschaften eines Assets aus den Suchergebnissen ausgewählt und die Suche dann abgebrochen haben. <!-- (CQ-4273540) -->
 * Bei der Suche nach Ordnern bzw. Dateien und Ordnern können die Suchergebnisse mit keinem anderen Parameter sortiert werden.
 * Wenn Sie `Return` auswählen, ohne etwas in die OmniSearch-Leiste einzugeben, gibt [!DNL Experience Manager] eine Liste mit Dateien und nicht mit Ordnern zurück. Wenn Sie gezielt nach Ordnern suchen, ohne ein Keyword zu verwenden, gibt [!DNL Experience Manager] keine Ergebnisse zurück.
+* Sie können eine Volltextsuche in Ordnern durchführen. Geben Sie einen Suchbegriff für die zu funktionierende Suche an.
 
 Visuelle Suchen oder Ähnlichkeitssuchen weisen die folgenden Einschränkungen auf:
 
@@ -335,7 +339,7 @@ Um bestimmte Assets aus den Suchergebnissen auszuschließen, verwenden Sie die E
 
 ### Visuelle oder Ähnlichkeitssuche {#configvisualsearch}
 
-Die visuelle Suche verwendet intelligentes Tagging und erfordert [!DNL Experience Manager] 6.5.2.0 oder höher. Führen Sie nach der Konfiguration der Funktion für intelligentes Tagging die folgenden Schritte aus:
+Die visuelle Suche verwendet intelligente Tags. Führen Sie nach der Konfiguration der Funktion für intelligentes Tagging die folgenden Schritte aus.
 
 1. Fügen Sie in [!DNL Experience Manager] CRXDE unter `/oak:index/lucene`-Knoten die folgenden Eigenschaften und Werte hinzu und speichern Sie die Änderungen.
 
@@ -355,7 +359,7 @@ Die visuelle Suche verwendet intelligentes Tagging und erfordert [!DNL Experienc
    Speichern Sie die Änderungen.
 
 1. Greifen Sie auf `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` zu und fügen Sie die Eigenschaft `similarityTags` des Typs `Boolean` mit dem Wert `true` hinzu.
-1. Wenden Sie Smarttags auf die Assets im [!DNL Experience Manager]-Repository an.
+1. Wenden Sie intelligente Tags auf die Assets im [!DNL Experience Manager]-Repository an. Siehe [Konfigurieren von Smarttags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=en#configuring).
 1. Legen Sie in CRXDE unter dem Knoten `/oak-index/damAssetLucene` die Eigenschaft `reindex` auf `true` fest. Speichern Sie die Änderungen.
 1. (Optional) Wenn Sie ein benutzerdefiniertes Suchformular haben, kopieren Sie den Knoten `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` in `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Speichern Sie die Änderungen.
 
@@ -413,9 +417,9 @@ Mit den in [!DNL Experience Manager] gesuchten Assets können Sie Folgendes tun:
 
 ### Sortieren von Suchergebnissen {#sort}
 
-Sortieren Sie die Suchergebnisse, um die gewünschten Assets schneller zu finden. Sie können die Suchergebnisse nur sortieren, wenn Sie **[[!UICONTROL Dateien]](#searchui)** aus dem Bedienfeld **[!UICONTROL Filter]** auswählen. [!DNL Assets] nutzt eine Server-seitige Sortierung, um alle Assets (wie viele auch immer) in einem Ordner oder den Ergebnissen einer Suchanfrage schnell zu sortieren. Server-seitige Sortierung liefert schnellere und genauere Ergebnisse als Client-seitige Sortierung.
+Sortieren Sie die Suchergebnisse, um die gewünschten Assets schneller zu finden. Sie können die Suchergebnisse in der Listenansicht und nur dann sortieren, wenn Sie die Option **[[!UICONTROL Dateien]](#searchui)** im Bedienfeld **[!UICONTROL Filter]** auswählen. [!DNL Assets] nutzt eine Server-seitige Sortierung, um alle Assets (wie viele auch immer) in einem Ordner oder den Ergebnissen einer Suchanfrage schnell zu sortieren. Server-seitige Sortierung liefert schnellere und genauere Ergebnisse als Client-seitige Sortierung.
 
-Sie können die Suchergebnisse genau so sortieren, wie Sie Assets in einem beliebigen Ordner sortieren können. Die Sortierung funktioniert anhand der folgenden Spalten: Name, Titel, Status, Abmessungen, Größe, Bewertung, Nutzung, (Datum) erstellt, (Datum) geändert, (Datum) veröffentlicht, Workflow und Ausgecheckt.
+In der Listenansicht lassen sich die Suchergebnisse genauso sortieren, wie Sie Assets in einem beliebigen Ordner sortieren. Die Sortierung funktioniert anhand der folgenden Spalten: Name, Titel, Status, Abmessungen, Größe, Bewertung, Nutzung, (Datum) erstellt, (Datum) geändert, (Datum) veröffentlicht, Workflow und Ausgecheckt.
 
 Mehr über Einschränkungen bei der Sortierfunktion finden Sie unter [Einschränkungen](#limitations).
 
@@ -450,7 +454,7 @@ Eine Sammlung ist ein geordneter Satz von Assets, der Assets von verschiedenen S
 
 Sie können Smart-Sammlungen auf Grundlage der Suchkriterien erstellen. Wählen Sie im Bedienfeld **[!UICONTROL Filter]** die Option **[!UICONTROL Dateien]** und klicken Sie auf **[!UICONTROL Smart-Sammlung speichern]**. Siehe [Verwalten von Sammlungen](/help/assets/manage-collections.md).
 
-## Unerwartete Suchergebnisse und Probleme {#unexpectedresults}
+## Unerwartete Suchergebnisse und Probleme {#unexpected-results}
 
 | Fehler, Probleme, Symptome | Möglicher Grund | Mögliche Lösung oder Verständnis des Problems |
 |---|---|---|
