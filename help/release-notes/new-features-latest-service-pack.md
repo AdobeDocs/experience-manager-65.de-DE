@@ -4,10 +4,10 @@ description: Neue Funktionen in [!DNL Experience Manager] 6.5 Service Pack 8
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f52fc643c30babab68bcf122eb3d91da5ce37a24
+source-git-commit: ecb32596edecaf47ef54a74c2be8ecf252de466c
 workflow-type: tm+mt
-source-wordcount: '3015'
-ht-degree: 5%
+source-wordcount: '3041'
+ht-degree: 4%
 
 ---
 
@@ -232,6 +232,10 @@ Smartes Zuschneiden für Video – eine optionale Funktion, die in Videoprofilen
 * Validieren der Feldwerte auf dem Server, wenn Sie ein adaptives Formular senden.
 
 * Konvertieren eines PDF-Formulars in ein adaptives Formular mit dem [!DNL Automated Forms Conversion service].
+
+#### Unterstützung für Microsoft SQL Server 2016 immer auf Verfügbarkeitsgruppen für hohe Verfügbarkeit (6.5.7.0) {#always-on-availability-groups}
+
+[!DNL Experience Manager Forms] unterstützt jetzt  [!DNL Microsoft] SQL Server 2016-Verfügbarkeitsgruppen für hohe Verfügbarkeit für OSGi-Bereitstellungen.
 
 #### HTTP-Clientkonfiguration für Formulardatenmodelle zur Leistungsoptimierung (6.5.7.0) {#fdm-http-client-config}
 
