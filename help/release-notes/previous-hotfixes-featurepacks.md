@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Versionshinweise zu früheren Servic
 description: Versionshinweise für Service Packs  [!DNL Adobe Experience Manager] 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 131e564e4ed50c4f08412ba39c62f15b9c362b8c
+source-git-commit: ecb32596edecaf47ef54a74c2be8ecf252de466c
 workflow-type: tm+mt
-source-wordcount: '17898'
+source-wordcount: '17912'
 ht-degree: 17%
 
 ---
@@ -36,6 +36,8 @@ Die wichtigsten Funktionen und Erweiterungen von [!DNL Adobe Experience Manager]
    * Konvertieren eines PDF-Formulars in ein adaptives Formular mit dem [!DNL Automated Forms Conversion service].
 
 * Unterstützung für [!DNL Microsoft SQL Server] 2019 in [!DNL Experience Manager Forms].
+
+* Unterstützung für SQL Server 2016 &quot;Stets On availability&quot;-Gruppen für hohe Verfügbarkeit von OSGi-Bereitstellungen.[!DNL Microsoft]
 
 * Das integrierte Repository (Apache Jackrabbit Oak) wird auf Version 1.22.5 aktualisiert.
 
@@ -137,7 +139,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in der Version 6.5.7.0.[!
 
 [!DNL Adobe Experience Manager] 6.5.7.0  [!DNL Assets] behebt die folgenden Probleme und bietet die folgenden Erweiterungen.
 
-* Die folgenden Erweiterungen werden für Barrierefreiheit in [!DNL Experience Manager Assets] in dieser Version vorgenommen. Weitere Informationen finden Sie unter [Funktionen für die Barrierefreiheit in  [!DNL Assets]](/help/assets/accessibility.md).
+* Die folgenden Erweiterungen werden für Barrierefreiheit in [!DNL Experience Manager Assets] in dieser Version vorgenommen. Weitere Informationen finden Sie unter [Funktionen für die Barrierefreiheit in [!DNL Assets]](/help/assets/accessibility.md).
 
    * Beim Navigieren in der Zeitleiste mit einer Tastatur kann die `Esc`-Taste die Option [!UICONTROL Alle anzeigen] ausblenden, ohne den Fokus zu verlieren (CQ-4293598).
    * Beim Navigieren mit der Tastatur-Tabulatortaste behält das Tag-Feld den Fokus (NPR-35109) bei, nachdem das letzte Tag aus den hinzugefügten Tags entfernt wurde.
