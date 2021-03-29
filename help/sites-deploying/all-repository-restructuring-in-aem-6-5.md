@@ -9,11 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
-feature: Aktualisieren
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 8d6818d0f2d90482f930f8e98682670ed6d0dd28
 workflow-type: tm+mt
-source-wordcount: '2722'
+source-wordcount: '2724'
 ht-degree: 79%
 
 ---
@@ -72,7 +71,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
 
 ### Workflow-Modelle {#workflow-models}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorheriger Speicherort</strong></td>
@@ -121,7 +120,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
 
 ### Workflow-Instanzen {#workflow-instances}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorheriger Speicherort</strong></td>
@@ -147,7 +146,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
 
 ### Workflow-Starter {#workflow-launchers}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorheriger Speicherort</strong></td>
@@ -178,7 +177,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
 
 ### Workflow-Skripte {#workflow-scripts}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorheriger Speicherort</strong></td>
@@ -213,7 +212,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
 
 ### ContextHub-Konfigurationen {#contexthub-configurations}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorheriger Speicherort</strong></td>
@@ -244,7 +243,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
 
 ### Klassische Designs für Cloud-Services {#classic-cloud-services-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorheriger Speicherort</strong></td>
@@ -283,7 +282,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
 
 ### Klassische Dashboard-Designs  {#classic-dashboards-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorheriger Speicherort</strong></td>
@@ -322,7 +321,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
 
 ### Klassische Bericht-Designs  {#classic-reports-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorheriger Speicherort</strong></td>
@@ -361,7 +360,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
 
 ### Standard-Designs {#default-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorheriger Speicherort</strong></td>
@@ -400,7 +399,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
 
 ### Adobe DTM-JavaScript-Endpunkt  {#adobe-dtm-javascript-endpoint}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorheriger Speicherort</strong></td>
@@ -423,7 +422,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
 
 ### Adobe DTM-Web-Hook-Endpunkt  {#adobe-dtm-web-hook-endpoint}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorheriger Speicherort</strong></td>
@@ -446,7 +445,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
 
 ### Aufgaben des Posteingangs  {#inbox-tasks}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorheriger Speicherort</strong></td>
@@ -473,7 +472,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
 
 ### Blueprint-Konfigurationen für den Multi-Site-Manager  {#multi-site-manager-blueprint-configurations}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong><em></em>Vorheriger Speicherort</strong></td>
@@ -500,7 +499,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
 
 ### Dashboard-Gadget-Konfigurationen für AEM-Projekte  {#aem-projects-dashboard-gadget-configurations}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorheriger Speicherort</strong></td>
@@ -530,7 +529,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
 
 ### E-Mail-Vorlage für die Replikationsbenachrichtigung  {#replication-notification-e-mail-template}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorheriger Speicherort</strong></td>
@@ -563,7 +562,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
 
 ### Tags {#tags}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorheriger Speicherort</strong></td>
@@ -597,7 +596,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
 
 ### Cloud-basierte Übersetzungsdienste {#translation-cloud-services}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorheriger Speicherort</strong></td>
@@ -642,7 +641,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
 
 ### Übersetzungssprachen {#translation-languages}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorheriger Speicherort</strong></td>
@@ -673,7 +672,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
 
 ### Übersetzungsregeln {#translation-rules}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorheriger Speicherort</strong></td>
@@ -704,7 +703,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
 
 ### Übersetzungs-Widget der Client-Bibliothek {#translation-widget-client-library}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorheriger Speicherort</strong></td>
@@ -749,9 +748,11 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
 | **Leitfaden für die Neustrukturierung** | Es ist keine Aktion erforderlich. |
 | **Hinweise** | Die Web-Konsole für die Strukturaktivierung ist jetzt über **Tools > Bereitstellung > Replikation > Tree aktivieren** verfügbar. |
 
-### Connector-Cloud-Services für Übersetzungsanbieter  {#vendor-translation-connector-cloud-services}
+{style=&quot;table-layout:auto&quot;}
 
-<table>
+### Connector-Cloud-Services für Übersetzungsanbieter {#vendor-translation-connector-cloud-services}
+
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorheriger Speicherort</strong></td>
@@ -798,7 +799,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
 
 ### E-Mail-Vorlagen für die Workflow-Benachrichtigung {#workflow-notification-email-templates}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorheriger Speicherort</strong></td>
@@ -830,7 +831,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
 
 ### Workflow-Pakete {#workflow-packages}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorheriger Speicherort</strong></td>
