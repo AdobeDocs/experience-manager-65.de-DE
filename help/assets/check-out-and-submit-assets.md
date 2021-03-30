@@ -1,13 +1,13 @@
 ---
-title: Assets zur Bearbeitung ein- und auschecken
+title: Ein- und Auschecken von Dateien in [!DNL Assets]
 description: Erfahren Sie, wie Sie Assets für die Bearbeitung auschecken und nach Abschluss der Änderungen wieder einchecken können.
 contentOwner: AG
 role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: eb87d77e1366786e8574f84590dfe9a3303efda0
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 49%
+source-wordcount: '429'
+ht-degree: 50%
 
 ---
 
@@ -23,8 +23,7 @@ Mithilfe dieser Funktion können Sie verhindern, dass Benutzer die von einem Aut
 ## Assets {#checking-out-assets}
 
 1. Wählen Sie in der Benutzeroberfläche [!DNL Assets] das Asset aus, das Sie auschecken möchten. Sie können auch mehrere Assets zum Auschecken auswählen.
-1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Checkout]**.
-Die Option **[!UICONTROL Checkout]** wechselt zu **[!UICONTROL Checkin]**.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Checkout]**. Die Option **[!UICONTROL Checkout]** wechselt zu **[!UICONTROL Checkin]**.
 Um zu überprüfen, ob andere Benutzer das von Ihnen ausgecheckte Asset bearbeiten können, melden Sie sich unter einem anderen Benutzernamen an. Auf der Miniaturansicht des Assets, das Sie ausgecheckt haben, wird ein Sperrsymbol angezeigt.
 
    ![chlimage_1-471](assets/chlimage_1-471.png)
@@ -33,7 +32,7 @@ Um zu überprüfen, ob andere Benutzer das von Ihnen ausgecheckte Asset bearbeit
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 
-   Sie können auf **[!UICONTROL Eigenschaften von Ansichten]** klicken, um die Metadaten für das gesperrte Asset zu bearbeiten.
+   Um die Metadaten für das gesperrte Asset zu bearbeiten, klicken Sie auf **[!UICONTROL Eigenschaften der Ansicht]**.
 
 1. Klicken Sie auf **[!UICONTROL Bearbeiten]**, um das Asset im Bearbeitungsmodus zu öffnen.
 
@@ -64,6 +63,6 @@ Administratoren können von anderen Benutzern ausgecheckte Assets einchecken.
 
 >[!MORELIKETHIS]
 >
->* [Einchecken und Auschecken in der Experience Manager Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
->* [Videoschulung zum Einchecken und Auschecken in Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
+>* [Einchecken und Auschecken der  [!DNL Experience Manager] Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
+>* [Videoschulung zum Einchecken und Auschecken [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
 
