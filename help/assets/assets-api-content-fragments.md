@@ -1,6 +1,6 @@
 ---
-title: Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API
-seo-title: Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API
+title: 'Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API '
+seo-title: 'Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API '
 description: Erfahren Sie mehr über die Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API.
 seo-description: Erfahren Sie mehr über die Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API.
 uuid: c500d71e-ceee-493a-9e4d-7016745c544c
@@ -10,16 +10,18 @@ content-type: reference
 topic-tags: extending-assets
 discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
 docset: aem65
+feature: Inhaltsfragmente
+role: Geschäftspraktiker, Administrator
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '1859'
+source-wordcount: '1864'
 ht-degree: 94%
 
 ---
 
 
-# Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API{#content-fragments-support-in-aem-assets-http-api}
+# Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API {#content-fragments-support-in-aem-assets-http-api}
 
 ## Überblick {#overview}
 
@@ -36,9 +38,9 @@ Die aktuelle Implementierung der AEM Assets-HTTP-API ist REST.
 
 Die Adobe Experience Manager (AEM) [Assets REST API](/help/assets/mac-api-assets.md) ermöglicht es Entwicklern, über CRUD-Vorgänge (Erstellen, Lesen, Aktualisieren, Löschen) direkt auf AEM Inhalte zuzugreifen.
 
-Die API ermöglicht es Ihnen, AEM als Headless-CMS (Content Management System) auszuführen, indem Sie einer Javascript-Frontend-Applikation Content Services bereitstellen. Oder jeder anderen Applikation, die HTTP-Anfrage ausführen und JSON-Antworten verarbeiten kann.
+Die API ermöglicht es Ihnen, AEM als Headless-CMS (Content Management System) auszuführen, indem Sie einer Javascript-Frontend-Applikation Content Services bereitstellen. Oder jedem anderen Programm, das HTTP-Anfragen ausführen und JSON-Antworten verarbeiten kann.
 
-Beispielsweise benötigen frameworkbasierte oder benutzerdefinierte Single-Page-Applikationen (SPA), die über die HTTP-API bereitgestellten Inhalte häufig im JSON-Format.
+Beispielsweise benötigen Framework-basierte oder benutzerdefinierte Single Page Applications (SPA), die über die HTTP-API bereitgestellten Inhalte häufig im JSON-Format.
 
 AEM Core-Komponenten bieten eine sehr umfassende, flexible und anpassbare API, die für diesen Zweck erforderliche Read-Vorgänge bereitstellen kann und deren JSON-Ausgabe angepasst werden kann. Sie erfordern jedoch AEM WCM (Web-Content-Management)-Know-how für die Implementierung, da sie auf (API-)Seiten gehostet werden müssen, die auf dedizierten AEM-Vorlagen basieren. Nicht jede SPA-Entwicklungsorganisation hat Zugriff auf diese Ressourcen.
 
@@ -89,7 +91,7 @@ Dies bedeutet, dass die folgenden (`write`)-Anfragen nicht in einer einzelnen Tr
   <tr>
    <td>Geeignete Nutzungsszenarien</td>
    <td>Universell.</td>
-   <td><p>Optimiert für den Einsatz in einer Single-Page-Applikation (SPA) oder in einem beliebigen anderen Kontext (Inhalt verbrauchend).</p> <p>Kann auch Layoutinformationen enthalten.</p> </td>
+   <td><p>Optimiert für den Einsatz in einer Single Page Application (SPA) oder in einem beliebigen anderen Kontext (Inhalt verbrauchend).</p> <p>Kann auch Layoutinformationen enthalten.</p> </td>
   </tr>
   <tr>
    <td>Unterstützte Vorgänge</td>
