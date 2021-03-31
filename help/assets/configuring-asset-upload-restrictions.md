@@ -3,11 +3,12 @@ title: Einschränkungen beim Hochladen von Assets konfigurieren
 description: 'Beschränken der Art von Assets (Dateien), die Benutzer hochladen können '
 contentOwner: AG
 role: Entwickler, Administrator, Architekt
+feature: Asset-Verwaltung, Hochladen
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 54%
+source-wordcount: '196'
+ht-degree: 53%
 
 ---
 
