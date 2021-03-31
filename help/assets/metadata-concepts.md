@@ -3,11 +3,12 @@ title: Verstehen von Metadatenkonzepten
 description: Erfahren Sie mehr über den Bedarf an Metadaten und Typen, die eine einfachere Kategorisierung und Organisation von Assets ermöglichen.
 contentOwner: AG
 role: Geschäftspraktiker, Administrator
+feature: 'Metadaten  '
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '2734'
-ht-degree: 89%
+source-wordcount: '2735'
+ht-degree: 90%
 
 ---
 
