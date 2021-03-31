@@ -3,11 +3,12 @@ title: Installieren und Konfigurieren von ImageMagick
 description: Erfahren Sie mehr über die ImageMagick-Software, wie Sie diese installieren, den Befehlszeilenprozessschritt einrichten und damit Miniaturansichten von Bildern bearbeiten, zusammenstellen und generieren können.
 contentOwner: AG
 role: 'Administrator  '
+feature: Darstellungen,Entwicklerwerkzeuge
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 49%
+source-wordcount: '697'
+ht-degree: 48%
 
 ---
 
