@@ -10,16 +10,18 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 21a18d60-f3fe-4048-9949-8416b5cb4596
 docset: aem65
+feature: Inhaltsfragmente
+role: Geschäftspraktiker, Administrator
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1491'
 ht-degree: 99%
 
 ---
 
 
-# Verwalten von Inhaltsfragmenten{#managing-content-fragments}
+# Verwalten von Inhaltsfragmenten {#managing-content-fragments}
 
 Inhaltsfragmente werden als **Assets** gespeichert und daher hauptsächlich über die **Assets-Konsole** verwaltet.
 
