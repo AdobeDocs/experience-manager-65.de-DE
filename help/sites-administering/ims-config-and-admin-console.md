@@ -10,10 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 translation-type: tm+mt
-source-git-commit: a71c1e87dd5f01ba2584282e0960ca27d419adb0
+source-git-commit: 655d32a4ebb72ca447fc2157b029f0d08cf42b27
 workflow-type: tm+mt
-source-wordcount: '1726'
-ht-degree: 64%
+source-wordcount: '1691'
+ht-degree: 65%
 
 ---
 
@@ -206,7 +206,9 @@ Im Beispiel unten werden der lokalen Gruppe *Dam_Users* synchronisierte Gruppen 
 
 Hier wurde ein Benutzer auch einigen Gruppen im [!DNL Admin Console] zugewiesen. (Bitte beachten Sie, dass die Benutzer und Gruppen mit dem Benutzersynchronisierungstool aus LDAP synchronisiert oder lokal erstellt werden können. Lesen Sie hierzu den Abschnitt **Einsteigende Benutzer bis[!DNL Admin Console]** oben).
 
-&amp;ast;Beachten Sie, dass Benutzergruppen nur synchronisiert werden, wenn sich die Benutzer bei der Instanz anmelden. Für Kunden mit einer großen Anzahl von Benutzern und Gruppen kann ein Dienstprogramm zur Gruppensynchronisierung von AMS ausgeführt werden, um Gruppen für die oben beschriebene Zugriffskontrolle- und Berechtigungsverwaltung vorab abzurufen.
+>[!NOTE]
+>
+>Benutzergruppen werden nur synchronisiert, wenn sich die Benutzer bei der Instanz anmelden.
 
 ![screen_shot_2018-09-17at94207pm](assets/screen_shot_2018-09-17at94207pm.png)
 
