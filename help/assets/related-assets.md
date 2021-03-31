@@ -3,10 +3,11 @@ title: Zugehörige Assets
 description: Erfahren Sie, wie digitale Assets, die einige allgemeine Attribute gemeinsam haben, miteinander verknüpft werden. Erstellen Sie auch Quell-abgeleitete Beziehungen zwischen digitalen Assets.
 contentOwner: AG
 role: Geschäftspraktiker
+feature: Zusammenarbeit, Asset-Verwaltung
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '637'
 ht-degree: 47%
 
 ---
