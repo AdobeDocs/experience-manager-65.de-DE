@@ -10,10 +10,10 @@ discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 feature: Adaptive Formulare
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 7a3f54d90769708344e6751756b2a12ac6c962d7
 workflow-type: tm+mt
-source-wordcount: '1794'
-ht-degree: 42%
+source-wordcount: '2078'
+ht-degree: 37%
 
 ---
 
@@ -163,6 +163,24 @@ Die folgenden Tastaturbefehle sind in AEM Forms verfügbar.
 | Zum vorherigen Bereich wechseln | Alt+Nach-links-Taste |
 | Die ausgefüllten Daten in einem Formular zurücksetzen | Alt+R |
 | Formular senden | Alt+S |
+
+Darüber hinaus stehen im adaptiven Forms verschiedene Tastaturbefehle für die Komponente **[!UICONTROL Datumsauswahl]** zur Verfügung. Um die Tastenkombinationen zu aktivieren, tippen Sie auf die Komponente **[!UICONTROL Datumsauswahl]** und dann auf ![Konfigurieren](assets/configure-icon.svg), um die Eigenschaften zu öffnen. Wählen Sie im Abschnitt **[!UICONTROL Muster]** ein Anzeigemuster mit den Dropdown-Listen **[!UICONTROL Typ]** und **[!UICONTROL Muster]** aus. Speichern Sie die Eigenschaften, um die Verwendung der Tastenkombinationen für die Komponente **[!UICONTROL Datumsauswahl]** zu aktivieren.
+
+Für die Datumsauswahl-Komponente im adaptiven Forms stehen die folgenden Tastaturbefehle zur Verfügung:
+
+| Aktion | Tastaturbefehl |
+|---|---|
+| <ul><li>Optionen für die Datumsauswahl-Komponente anzeigen, wenn der Tabstopp das Kalendersymbol markiert</li><li>Führen Sie das Klick-Ereignis aus, wenn der Registerkartenfokus eine Option markiert</li> | Leerzeichen oder Eingabe |
+| Optionen der Datumsauswahl-Komponente ausblenden | Esc |
+| <ul><li>Bewegen Sie den Cursor durch die Optionen, die in der Komponente &quot;Datumsauswahl&quot;verfügbar sind.</li><li>Legen Sie den Tabulatorfokus auf das Kalendersymbol fest, wenn das Datumseingabefeld aktiv ist</li> | Registerkarte |
+| Bewegen Sie den Cursor durch die Optionen, die in der Komponente &quot;Datumsauswahl&quot;verfügbar sind | Umschalt+Tab |
+| <ul><li>Optionen für die Datumsauswahl-Komponente anzeigen, wenn der Registerkartenfokus das Eingabefeld des Datums markiert</li><li>Bewegen Sie den Cursor im Kalender, der in der Datumsauswahl-Komponente verfügbar ist, nach unten</li> | Nach-unten-Pfeil |
+| Cursor im Kalender, der in der Datumsauswahl-Komponente verfügbar ist, nach oben verschieben | Nach-oben-Taste |
+| Bewegen Sie den Cursor im Kalender, der in der Datumsauswahl-Komponente verfügbar ist, nach hinten | Nach-links-Taste |
+| Bewegen Sie den Cursor im Kalender, der in der Datumsauswahl-Komponente verfügbar ist | Rechtspfeil |
+| Führen Sie die Aktion für die Beschriftung durch, die zwischen den Navigationspfeilen rechts und links im Kalender verfügbar ist. | Umschalt+Aufwärtspfeil |
+| Führen Sie die Aktion für das Rechtspfeilsymbol ![Rechtspfeil](assets/right-navigation-icon.svg) aus, das im Kalender verfügbar ist. | Umschalt+Linkspfeil |
+| Führen Sie die Aktion für das linke Navigationspfeilsymbol ![Nach links](assets/left-navigation-icon.svg) aus, das im Kalender verfügbar ist. | Umschalt+Rechtspfeil |
 
 ## Verwenden Sie das Barrierefreiheitstool, um noch verbleibende Probleme bei der Barrierefreiheit zu ermitteln
 
