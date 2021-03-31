@@ -3,11 +3,12 @@ title: Asset-Editor erweitern
 description: Erfahren Sie, wie sich die Funktionen des Asset-Editors mithilfe von benutzerdefinierten Komponenten erweitern lassen.
 contentOwner: AG
 role: Geschäftspraktiker, Administrator
+feature: Entwicklertools
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 85%
+source-wordcount: '693'
+ht-degree: 86%
 
 ---
 
