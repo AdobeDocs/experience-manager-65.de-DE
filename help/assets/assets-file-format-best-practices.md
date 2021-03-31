@@ -3,11 +3,12 @@ title: Empfohlene Verfahren zur Verarbeitung der unterstützten Dateiformate
 description: Bewährte Verfahren zur Verarbeitung der verschiedenen unterstützten Dateitypen unter Verwendung von [!DNL Experience Manager Assets].
 contentOwner: AG
 role: 'Administrator  '
+feature: Asset-Verwaltung,Entwicklerwerkzeuge
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 47%
+source-wordcount: '470'
+ht-degree: 46%
 
 ---
 
