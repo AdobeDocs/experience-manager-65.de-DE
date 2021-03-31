@@ -3,11 +3,12 @@ title: 'Aktivieren von Asset Insights über DTM  '
 description: Erfahren Sie, wie Sie Asset Insights mit Adobe Dynamic Tag Management (DTM) aktivieren können.
 contentOwner: AG
 role: Geschäftspraktiker, Administrator
+feature: Asset Insights,Asset-Berichte
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 33%
+source-wordcount: '678'
+ht-degree: 34%
 
 ---
 
