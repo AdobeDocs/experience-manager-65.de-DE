@@ -3,11 +3,12 @@ title: Bewährte Verfahren zum Übersetzen von Assets
 description: Best Practices für die effiziente Verwaltung von Assets zur Synchronisation verschiedener übersetzter Versionen und zur Optimierung von Übersetzungs-Workflows.
 contentOwner: AG
 role: 'Administrator  '
+feature: Asset-Verwaltung
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 87%
+source-wordcount: '419'
+ht-degree: 86%
 
 ---
 
