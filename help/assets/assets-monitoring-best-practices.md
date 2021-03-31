@@ -3,10 +3,11 @@ title: 'Bewährte Verfahren zur Überwachung der Bereitstellung [!DNL Assets] '
 description: Bewährte Verfahren zur Überwachung der Umgebung und Leistung Ihrer [!DNL Adobe Experience Manager] Bereitstellung nach deren Bereitstellung.
 contentOwner: AG
 role: Administrator, Architekt
+feature: Asset-Verwaltung
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1672'
 ht-degree: 69%
 
 ---
