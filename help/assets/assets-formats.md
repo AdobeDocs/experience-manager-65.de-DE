@@ -3,10 +3,11 @@ title: Unterstützte Dateiformate und MIME-Typen
 description: Dateiformate und MIME-Typen, die von [!DNL Assets] and [!DNL Dynamic Media] unterstützt werden, und die für jedes Format unterstützten Funktionen.
 contentOwner: AG
 role: Geschäftspraktiker, Administrator
+feature: Asset-Verwaltung, Darstellungen
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1585'
 ht-degree: 61%
 
 ---
