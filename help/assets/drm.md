@@ -3,10 +3,11 @@ title: Digital Rights Management der Vermögenswerte
 description: Erfahren Sie, wie Sie den Asset-Ablaufstatus und Informationen für lizenzierte Assets in  [!DNL Experience Manager]  verwalten.
 contentOwner: AG
 role: Geschäftspraktiker, Administrator
+feature: DRM, Asset Management
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1404'
 ht-degree: 79%
 
 ---
