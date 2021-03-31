@@ -3,10 +3,11 @@ title: 'Best Practices für die Freigabe von Ordnern auf [!DNL Adobe Creative Cl
 description: Konfigurieren Sie [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] zum Austausch von Ordnern mit Adobe Creative Cloud (CC)-Benutzern.
 contentOwner: AG
 role: Geschäftspraktiker, Administrator
+feature: Zusammenarbeit
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '959'
 ht-degree: 18%
 
 ---
