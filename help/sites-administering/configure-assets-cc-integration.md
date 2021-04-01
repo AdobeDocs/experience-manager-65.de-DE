@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset-Verwaltung
 role: Geschäftspraktiker, Architekt, Administrator
 translation-type: tm+mt
-source-git-commit: 4cc8e60694e2aea74dfedd0bbcb8d47a208d45d1
+source-git-commit: a9c9194ac1d163be3ab642ab5a6323de02d67363
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '1002'
 ht-degree: 45%
 
 ---
@@ -25,7 +25,7 @@ Der Workflow zur Einrichtung dieser Integration ist:
 
 Am Backend authentifiziert der AEM-Server Ihr Profil gegenüber dem Gateway und synchronisiert dann die Daten zwischen Assets und Experience Cloud.
 
->[!CAUTION]
+>[!NOTE]
 >
 >Diese Funktion wird in AEM Assets nicht mehr unterstützt. Suchen Sie nach Ersetzungen in [Best Practices zur AEM- und Creative Cloud-Integration](/help/assets/aem-cc-integration-best-practices.md). Wenn Sie Abfragen haben, wenden Sie sich an die Adobe [Kundenunterstützung](https://www.adobe.com/account/sign-in.supportportal.html).
 
@@ -76,7 +76,7 @@ Am Backend authentifiziert der AEM-Server Ihr Profil gegenüber dem Gateway und 
 
 1. Geben Sie im Dialogfeld **[!UICONTROL Konfiguration erstellen]** einen Titel und einen Namen für die neue Konfiguration an und klicken Sie auf **[!UICONTROL Erstellen]**.
 
-   ![Benennen neuer Konfigurationen für die Integration mit AEM Assets und CC](assets/chlimage_1-51.png)
+   ![Benennen neuer Konfigurationen für die Integration mit AEM Assets und CC](assets/aem-ec-integration-config1.png)
 
 1. Geben Sie im Feld **[!UICONTROL Mandanten-URL]** die URL für AEM Assets ein. Wenn die URL in der Vergangenheit als `https://<tenant_id>.marketing.adobe.com` definiert wurde, ändern Sie sie in `https://<tenant_id>.experiencecloud.adobe.com`.
 
@@ -95,8 +95,6 @@ Am Backend authentifiziert der AEM-Server Ihr Profil gegenüber dem Gateway und 
 ## Aktivieren der Synchronisierung {#enable-synchronization}
 
 1. Zeigen Sie den öffentlichen Schlüssel mit einer der folgenden Methoden an, die im letzten Schritt des Verfahrens [Neue Konfiguration zu Experience Cloud](#add-a-new-configuration) hinzugefügt werden. Klicken Sie auf **[!UICONTROL Öffentlichen Schlüssel anzeigen]**.
-
-   ![chlimage_1-52](assets/chlimage_1-52.png)
 
 1. Kopieren Sie den öffentlichen Schlüssel und fügen Sie ihn in das Feld **[!UICONTROL Öffentlicher Schlüssel]** der Konfigurationsoberfläche der Anwendung ein, die Sie unter [Anwendung erstellen](#create-an-application) erstellt haben.
 
