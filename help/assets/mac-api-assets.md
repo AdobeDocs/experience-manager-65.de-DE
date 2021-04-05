@@ -4,14 +4,14 @@ description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale A
 contentOwner: AG
 role: Entwickler
 feature: APIs,Assets HTTP API, Developer Tools
+exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1730'
 ht-degree: 79%
 
 ---
-
 
 # [!DNL Assets]-HTTP-API {#assets-http-api}
 
@@ -314,4 +314,4 @@ Löscht eine Ressource(nstruktur) im angegebenen Pfad.
 
 * [Die HTTP-API aktualisiert die Metadateneigenschaften ](#update-asset-metadata) im  `jcr` Namensraum. Die Benutzeroberfläche des Experience Managers aktualisiert jedoch die Metadateneigenschaften im Namensraum `dc`.
 
-* Die Asset-API gibt die vollständigen Metadaten nicht zurück. In der API werden die Namensraum hartcodiert und nur diese werden zurückgegeben. Wenn Sie vollständige Metadaten benötigen, sehen Sie sich den Asset-Pfad `/jcr_content/metadata.json` an.
+* Assets HTTP API gibt nicht die vollständigen Metadaten zurück. Die Namensraum sind hartcodiert und nur diese Namensraum werden zurückgegeben. Vollständige Metadaten finden Sie im Asset-Pfad `/jcr_content/metadata.json`.
