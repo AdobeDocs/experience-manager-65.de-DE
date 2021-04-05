@@ -3,14 +3,14 @@ title: '[!DNL Assets] Proxy-Entwicklung'
 description: Ein Proxy ist ein [!DNL Experience Manager] instance that uses proxy workers to process jobs. Learn how to configure an [!DNL Experience Manager] Proxy, unterstützte Vorgänge, Proxy-Komponenten und wie ein benutzerdefinierter Proxy-Worker entwickelt wird.
 contentOwner: AG
 role: Administrator, Architekt
+exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '857'
 ht-degree: 58%
 
 ---
-
 
 # [!DNL Assets] Proxy-Entwicklung  {#assets-proxy-development}
 
@@ -18,7 +18,7 @@ ht-degree: 58%
 
 Bei einem Proxy handelt es sich um eine bestimmte (und manchmal auch separate) Experience Manager-Instanz, bei der Proxy-Mitarbeiter als Prozessoren verwendet werden, die für die Verarbeitung eines Auftrags und das Erstellen eines Ergebnisses verantwortlich sind. Ein Proxy Worker kann für eine Vielzahl von Aufgaben verwendet werden. Bei einem [!DNL Assets]-Proxy kann dies zum Laden von Assets zum Rendern in Assets verwendet werden. Beispiel: Der [IDS-Proxy-Worker](indesign.md) verwendet einen [!DNL Adobe InDesign]-Server, um Dateien für die Verwendung in Assets zu verarbeiten.
 
-Wenn der Proxy eine separate [!DNL Experience Manager]-Instanz ist, wird dadurch die Belastung der Authoring-Instanz(en) des Experience Managers verringert. Standardmäßig führt [!DNL Assets] die Asset-Verarbeitungs-Aufgaben in derselben JVM aus (extern über Proxy), um die Belastung der Experience Manager-Authoring-Instanz zu verringern.
+Wenn der Proxy eine separate [!DNL Experience Manager]-Instanz ist, wird dadurch die Belastung der [!DNL Experience Manager]-Authoring-Instanz(en) verringert. Standardmäßig führt [!DNL Assets] die Asset-Verarbeitungs-Aufgaben in derselben JVM aus (extern über Proxy), um die Belastung der [!DNL Experience Manager]-Authoring-Instanz zu verringern.
 
 ## Proxy (HTTP-Zugriff) {#proxy-http-access}
 
