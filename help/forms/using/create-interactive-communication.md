@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 feature: Interaktive Kommunikation
+exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 92092e1c050c9264c19e3cd9da9b240607af7bab
 workflow-type: tm+mt
-source-wordcount: '6122'
+source-wordcount: '6212'
 ht-degree: 26%
 
 ---
-
 
 # Erstellen einer interaktiven Kommunikation{#create-an-interactive-communication}
 
@@ -69,7 +69,7 @@ Die folgenden Voraussetzungen sind Voraussetzung für die Erstellung einer inter
 Wenn Sie die Option **[!UICONTROL &quot;Drucken als Übergeordnet für Web Kanal]** verwenden&quot;auswählen, können Sie einen der folgenden Modi zum Generieren des Web-Kanals auswählen:
 
       * **[!UICONTROL Automatisches Layout]**: Wählen Sie diesen Modus aus, um automatisch Platzhalter, Inhalte und Datenbindung für Web Kanal aus dem Print Kanal zu generieren.
-      * **[!UICONTROL Manuelles Organisieren]**: Wählen Sie diesen Modus aus, um dem Web-Kanal unter Verwendung des Übergeordnet verfügbaren Kanals auf der Registerkarte &quot; **[!UICONTROL Data]** Sourcestab&quot;die Elemente &quot;Drucken&quot;manuell auszuwählen und hinzuzufügen. Weitere Informationen finden Sie unter [Wählen Sie Kanal drucken, um Web-Kanal-Inhalte zu erstellen](#selectprintchannelelements).
+      * **[!UICONTROL Manuelles Organisieren]**: Wählen Sie diesen Modus aus, um dem Web-Kanal unter Verwendung des Übergeordnet verfügbaren Kanals auf der Registerkarte &quot; **[!UICONTROL Data]** Sourcestab&quot;gedruckte Elemente manuell auszuwählen und hinzuzufügen. Weitere Informationen finden Sie unter [Wählen Sie Kanal drucken, um Web-Kanal-Inhalte zu erstellen](#selectprintchannelelements).
 
    Weitere Informationen zu Print Kanal und Web Kanal finden Sie unter [Kanal drucken und Web Kanal](/help/forms/using/web-channel-print-channel.md).
 
@@ -611,3 +611,23 @@ Die Authoring-Oberfläche von Web Kanal erleichtert die Gruppierung der Komponen
 
    ![content_tree_grouping](assets/content_tree_grouping.png)
 
+## Ausgabeformat für Print-Kanal {#output-format-print-channel}
+
+Verwenden Sie die PrintChannel-API, um das Ausgabeformat für den Kanal &quot;Drucken&quot;einer interaktiven Kommunikation zu definieren. Wenn Sie kein Ausgabeformat definieren, generiert AEM Forms die Ausgabe im PDF-Format.
+
+```javascript
+//options for rendering print channel of a multi-channel document
+PrintChannelRenderOptions renderOptions = new PrintChannelRenderOptions();
+PrintDocument printDocument = printChannel.render(renderOptions);
+```
+
+Um die Ausgabe in einem anderen Format zu generieren, geben Sie den Ausgabeformat-Typ an. Die Liste der unterstützten Ausgabeformattypen finden Sie unter [PrintChannel API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html).
+
+Sie können beispielsweise das folgende Beispiel verwenden, um PCL als Ausgabeformat für eine interaktive Kommunikation zu definieren:
+
+```javascript
+//options for rendering print channel of a multi-channel document
+PrintChannelRenderOptions renderOptions = new PrintChannelRenderOptions();
+renderOptions.setRenderFormat(PrintConfig.HP_PCL_5e);
+PrintDocument printDocument = printChannel.render(renderOptions);
+```
