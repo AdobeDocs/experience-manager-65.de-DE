@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 feature: PDF Generator
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 3bb12f6323398971ec315f49611a39977bd548a2
 workflow-type: tm+mt
-source-wordcount: '6148'
+source-wordcount: '6171'
 ht-degree: 81%
 
 ---
@@ -515,6 +515,8 @@ Diese Optionen bestimmen, wie Microsoft Word-Dateien konvertiert werden. Informa
 **[!UICONTROL Erweiterte Tags aktivieren:]** Fügt erweiterte Tags für erweiterte Eingabehilfen hinzu.
 
 **[!UICONTROL Alle Stile in Lesezeichen konvertieren:]** Konvertiert alle Stile im Word-Dokument zu Lesezeichen in der PDF-Datei.
+
+**[!UICONTROL Bestimmte Stile in Lesezeichen]** konvertieren: Konvertiert die Stile, die Sie im Feld &quot; **[!UICONTROL Stile mit]** Ebenen&quot;definieren, in Lesezeichen im PDF-Dokument.
 
 **[!UICONTROL Stile mit Ebenen With Levels]** Gibt an, welche Stile im Word-Dokument zu Lesezeichen in der PDF-Datei konvertiert werden. Gibt auch die Ebene der Lesezeichen an. Deaktivieren Sie zum Verwenden dieser Funktion die Option **[!UICONTROL Alle Stile in Lesezeichen konvertieren]** und geben Sie die Namen der Stile im folgenden Format an:
 
