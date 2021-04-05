@@ -2,14 +2,14 @@
 title: 'Konfigurieren der Rich-Text-Editor-Plug-ins '
 description: Erfahren Sie, wie Sie die Adobe Experience Manager Rich Text Editor-Plugins konfigurieren, um individuelle Funktionen zu aktivieren.
 contentOwner: AG
+exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
 translation-type: tm+mt
-source-git-commit: 6f5e650c99017c4b2f04ca8495eea8481b3236cd
+source-git-commit: 443115b306ff34ee98da9403222874a9700d8aed
 workflow-type: tm+mt
-source-wordcount: '4398'
+source-wordcount: '4397'
 ht-degree: 95%
 
 ---
-
 
 # Konfigurieren der Rich-Text-Editor-Plug-ins  {#configure-the-rich-text-editor-plug-ins}
 
@@ -73,13 +73,13 @@ Bei Verwendung der Funktion zum Ersetzen sollte die Zeichenfolge zum Ersetzen gl
 
 Das Dialogfeld „Suchen und ersetzen“ wird transparent, wenn auf „Suchen“ geklickt wird, und undurchsichtig, wenn auf „Ersetzen“ geklickt wird. Dadurch kann der Autor den Text überprüfen, den der Autor ersetzen wird. Wenn der Benutzer auf „Alle ersetzen“ klickt, wird das Dialogfeld geschlossen und die Anzahl der vorgenommenen Ersetzungen angezeigt.
 
-## Konfigurieren der Einfügemodi {#pastemodes}
+## Konfigurieren der Einfügemodi {#paste-modes}
 
 Bei Verwendung des RTE können Autoren Inhalte in einem der drei folgenden Modi einfügen:
 
 * **Browsermodus**: Fügen Sie Text mit der Standardfunktion des Browsers zum Einfügen ein. Dieses Verfahren wird nicht empfohlen, da es unerwünschte Markups verursachen kann.
 
-* **Klartextmodus**: Fügen Sie Inhalte aus der Zwischenablage als Text ein. Dadurch werden alle Stil- und Formatierungselemente vom kopierten Inhalt entfernt, bevor er in eine AEM-Komponente eingefügt wird.
+* **Klartextmodus**: Fügen Sie Inhalte aus der Zwischenablage als Text ein. Dadurch werden alle Stil- und Formatierungselemente vom kopierten Inhalt entfernt, bevor er in eine Komponente von [!DNL Experience Manager] eingefügt wird.
 
 * **Microsoft Word-Modus**: Fügen Sie beim Kopieren aus Microsoft Word Text, einschließlich Tabellen, mitsamt Formatierung ein. Das Kopieren und Einfügen von Text aus einer anderen Quelle wie einer Web-Seite oder Microsoft Excel wird nicht unterstützt und dabei wird nur ein Teil der Formatierung beibehalten.
 
@@ -124,7 +124,7 @@ Der Modus „paste-as-Microsoft-Word“ (`paste-wordhtml`) kann weiter konfiguri
 
 Sollen beim Einfügen von Inhalten in AEM zum Beispiel nur fett gedruckte Formate und Listen zulässig sein, können Sie die anderen Formate herausfiltern. Dieser Vorgang wird als konfigurierbare Filterung beim Einfügen bezeichnet, die für Folgendes verwendet werden kann:
 
-* [Text](#pastemodes)
+* [Text](#paste-modes)
 * [Links](#linkstyles)
 
 Für Links können Sie zudem die Protokolle definieren, die automatisch akzeptiert werden.
