@@ -10,14 +10,15 @@ topic-tags: Security
 content-type: reference
 discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
+exl-id: 89f55598-e749-42b8-8f2a-496f45face66
+feature: Sicherheit
 translation-type: tm+mt
-source-git-commit: 8ed7409740cdd3e45fad006dc6e470a06acc60fe
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '2436'
+source-wordcount: '2437'
 ht-degree: 73%
 
 ---
-
 
 # Benutzersynchronisierung{#user-synchronization}
 
@@ -77,7 +78,7 @@ Sobald die Benutzersynchronisierung aktiviert wurde, werden nur neu erstellte Be
 
 1. Stellen Sie sicher, dass der neueste Code installiert wurde:
 
-* [AEM-Plattformupdates](https://helpx.adobe.com/de/experience-manager/kb/aem62-available-hotfixes.html)
+* [AEM-Plattformupdates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de)
 * [AEM Communities-Updates](/help/communities/deploy-communities.md#latestfeaturepack)
 
 ### 1. Apache Sling Distribution Agent – Sync Agents Factory {#apache-sling-distribution-agent-sync-agents-factory}
@@ -113,7 +114,7 @@ Sobald die Benutzersynchronisierung aktiviert wurde, werden nur neu erstellte Be
       * zum Beispiel [https://localhost:4503/useradmin](https://localhost:4503/useradmin)
    * Erstellen Sie einen neuen Benutzer.
 
-      * Beispiel, `usersync-admin`
+      * zum Beispiel `usersync-admin`
    * diesen Benutzer zur Benutzergruppe **`administrators`** hinzufügen
    * [ACL für diesen Benutzer zu /home hinzufügen](#howtoaddacl)
 
@@ -175,7 +176,7 @@ Nachdem ein autorisierter Benutzer, ein Mitglied der **`administrators`**Benutze
 
    * Legen Sie den Benutzernamen und das Kennwort für den in der Veröffentlichungsinstanz in Schritt 2 erstellten [autorisierten Benutzer](#createauthuser) fest.
 
-      * Beispiel, `usersync-admin`
+      * zum Beispiel `usersync-admin`
 
 
 ![](assets/chlimage_1-22.png)
@@ -295,7 +296,7 @@ Wenn benutzerdefinierte Daten vorliegen, die über mehrere Veröffentlichungsins
    * Melden Sie sich mit Administratorrechten an.
    * Rufen Sie die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) auf.
 
-      * Beispiel, `https://localhost:4503/system/console/configMgr`
+      * zum Beispiel `https://localhost:4503/system/console/configMgr`
    * `AEM Communities User Sync Listener`
    * Wählen Sie die vorhandene Konfiguration aus, die zur Bearbeitung geöffnet werden soll (Stiftsymbol)
 `Name` überprüfen: `socialpubsync-scheduled-trigger`
