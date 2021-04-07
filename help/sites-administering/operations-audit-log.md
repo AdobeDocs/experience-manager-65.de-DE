@@ -9,14 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
+exl-id: 1e05faf5-619a-4ea3-acbf-2fd37c71e6d2
+feature: Betrieb
 translation-type: tm+mt
-source-git-commit: 2fc35bfd93585a586cb1d4e3299261611db49ba6
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '616'
 ht-degree: 81%
 
 ---
-
 
 # Auditprotokollwartung in AEM 6{#audit-log-maintenance-in-aem}
 
@@ -101,4 +102,3 @@ Wenn in AEM 6.3 das geplante Wartungsfenster geschlossen wird, bevor die Aufgabe
    * **Audit log Replication event types:** der Typ der zu löschenden Replikationsprüfereignisse
 
 1. Klicken Sie auf **Speichern**, um Ihre Konfiguration zu speichern.
-
