@@ -10,14 +10,15 @@ topic-tags: Security
 content-type: reference
 discoiquuid: a2bd7045-970f-4245-ad5d-a272a654df0a
 docset: aem65
+exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
+feature: Sicherheit
 translation-type: tm+mt
-source-git-commit: 2142df4f7579e052e18879b437fc43911010b475
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '6890'
+source-wordcount: '6891'
 ht-degree: 61%
 
 ---
-
 
 # Geschlossene Benutzergruppen in AEM{#closed-user-groups-in-aem}
 
@@ -883,4 +884,3 @@ Adobe stellt ein Tool für die Migration zur neuen CUG-Implementierung zur Verf�
 >[!NOTE]
 >
 >Wenn Probleme auftreten, ist es möglich, eine bestimmte Protokollfunktion auf **DEBUG**-Ebene auf `com.day.cq.auth.impl.cug` einzurichten, um die Ausgabe des Migrationswerkzeugs abzurufen. Weitere Informationen dazu finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md).
-
