@@ -5,15 +5,16 @@ uuid: bcd1f9ab-4201-4222-9e4a-ba82b3c7cd6c
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
-role: Geschäftspraktiker, Administrator
+role: Business Practitioner, Administrator
+exl-id: 85fa0414-354e-4530-81f9-a5659bb7f2fd
+feature: Konfiguration
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 71%
+source-wordcount: '255'
+ht-degree: 72%
 
 ---
-
 
 # Einrichten von Dynamic Media  {#setting-up-dynamic-media}
 
@@ -43,3 +44,4 @@ Weitere Informationen finden Sie in den folgenden Themen:
 >**Beachten Sie Folgendes, wenn Sie ein Upgrade durchführen:**
 >
 >* Sobald Sie AEM eingerichtet haben und verwenden, ist Dynamic Media für jedes Asset, das Sie hochladen, automatisch aktiviert (sofern nicht ausdrücklich vom Systemadministrator deaktiviert). Wenn Sie sich auf einer aktualisierten AEM-Instanz befinden und Dynamic Media noch nicht verwendet haben, müssen Sie Assets ggf. erneut verarbeiten, um Dynamic Media für die Assets verwenden zu können.
+
