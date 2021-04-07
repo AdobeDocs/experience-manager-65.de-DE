@@ -10,14 +10,15 @@ topic-tags: operations
 content-type: reference
 discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
+exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
+feature: Betrieb
 translation-type: tm+mt
-source-git-commit: 19a6a4f80e2af37b8de49080a977d02bf0e43507
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '6198'
+source-wordcount: '6199'
 ht-degree: 78%
 
 ---
-
 
 # Vorgangs-Dashboard {#operations-dashboard}
 
@@ -581,7 +582,7 @@ Sie können auf die Aufgabe &quot;Bereinigung der Lucene-Binärdateien&quot;zugr
 
 Detaillierte Informationen zur Datenspeicherbereinigung finden Sie auf der entsprechenden [Dokumentationsseite](/help/sites-administering/data-store-garbage-collection.md).
 
-### Workflow-Bereinigung {#workflow-purge}
+### Workflow-Bereinigung  {#workflow-purge}
 
 Sie können Workflows auch über das Wartungs-Dashboard bereinigen. Führen Sie dazu folgende Schritte durch:
 
@@ -905,4 +906,3 @@ Sie können auch eine `JSON`-Datei herunterladen, die die Informationen zum Dash
   </tr>
  </tbody>
 </table>
-
