@@ -4,15 +4,16 @@ description: 'Der Dynamic Media Newsletter von Experience League ist ein monatli
 keywords: Dynamic Media;Newsletter;Produktupdates;Tipps und Tricks;Ereignisse;Kundenerfolg;Blog;Blogs;Bilder;Videos;Funktionen;Funktionen
 contentOwner: Rick Brough
 solution: Dynamic Media Classic, Experience Manager
-role: Geschäftspraktiker, Administrator
+role: Business Practitioner, Administrator
+exl-id: 8aa779e0-cf76-45a7-a474-556fdfded31b
+feature: Zusammenarbeit, Dynamic Media Classic
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1172'
 ht-degree: 98%
 
 ---
-
 
 # ![Logo des Dynamic Media Newsletters](/help/assets/assets/dynamic-media-newsletter-logo.png)
 
