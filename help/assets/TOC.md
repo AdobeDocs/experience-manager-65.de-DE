@@ -5,13 +5,13 @@ solution: Experience Manager, Experience Manager Assets
 audience: end-user
 user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
-user-guide-description: Erstellen, verwalten, liefern und optimieren Sie digitale Assets.
+user-guide-description: Digitale Assets erstellen, verwalten, verarbeiten und verteilen
 feature-set: Experience Manager Assets, Experience Manager, Experience Manager Sites
 translation-type: tm+mt
-source-git-commit: d7b0803385aaa451a1ec7ec280ff51c3e96e36e7
+source-git-commit: a7a9a31364497ab67d805e45ba4fa03c927828ed
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 58%
+ht-degree: 57%
 
 ---
 
