@@ -7,10 +7,10 @@ role: Business Practitioner
 feature: Asset-Verwaltung, Suche
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 translation-type: tm+mt
-source-git-commit: d88962cb4018b0b60f61006510f416478d119cb5
+source-git-commit: 46b11d0b59d748f2035e7ed46dc8caeef79d48c0
 workflow-type: tm+mt
-source-wordcount: '9652'
-ht-degree: 60%
+source-wordcount: '9798'
+ht-degree: 59%
 
 ---
 
@@ -926,3 +926,23 @@ Bei einer Sammlung handelt es sich um eine sortierte Gruppe von Assets. Verwende
 * Sie können Sammlungen für mehrere Benutzer mit unterschiedlichen Berechtigungsstufen wie Bearbeiten, Anzeigen usw. freigeben.
 
 Weitere Informationen zur Sammlungsverwaltung finden Sie unter [Sammlungen verwalten](/help/assets/manage-collections.md).
+
+## Ausblenden abgelaufener Assets beim Anzeigen von Assets in der Desktop-App oder Adobe Asset Link {#hide-expired-assets-via-acp-api}
+
+[!DNL Experience Manager] Die Desktop-App ermöglicht den Zugriff auf das DAM-Repository von Windows- oder Mac-Desktop aus. Adobe Asset Link ermöglicht den Zugriff auf Assets aus den unterstützten [!DNL Creative Cloud] Desktop-Anwendungen.
+
+Beim Durchsuchen von Assets in der [!DNL Experience Manager]-Benutzeroberfläche werden die abgelaufenen Assets nicht angezeigt. Um beim Durchsuchen von Assets aus der Desktop-App und Asset Link zu verhindern, dass abgelaufene Assets angezeigt, durchsucht und abgerufen werden, können Administratoren die folgende Konfiguration durchführen. Die Konfiguration funktioniert für alle Benutzer, unabhängig von den Administratorberechtigungen.
+
+Führen Sie den folgenden CURL-Befehl aus. Vergewissern Sie sich, dass Benutzer, die auf Assets zugreifen, auf `/conf/global/settings/dam/acpapi/` Lesezugriff haben. Benutzer, die zur Gruppe `dam-user` gehören, haben standardmäßig die Berechtigung.
+
+```curl
+curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/global/settings/dam/acpapi/configuration/_jcr_content' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'jcr:title=acpapiconfig' \
+--data-urlencode 'hideExpiredAssets=true' \
+--data-urlencode 'hideExpiredAssets@TypeHint=Boolean' \
+--data-urlencode 'jcr:primaryType=nt:unstructured' \
+--data-urlencode '../../jcr:primaryType=sling:Folder'
+```
+
+Weitere Informationen finden Sie unter [Durchsuchen von DAM-Assets mit der Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#browse-search-preview-assets) und [wie Sie Adobe Asset Link](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) verwenden.
