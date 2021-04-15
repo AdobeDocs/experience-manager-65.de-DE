@@ -5,9 +5,9 @@ docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 translation-type: tm+mt
-source-git-commit: e2eb007eb7660004f98b4c26aba00a6a6e2a2f1a
+source-git-commit: 9b23e9d5bbdbdde864ce71f434d6536439067f82
 workflow-type: tm+mt
-source-wordcount: '3418'
+source-wordcount: '3413'
 ht-degree: 5%
 
 ---
@@ -158,7 +158,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in der Version 6.5.8.0.[!
 * Wenn Sie [!UICONTROL Alle Benutzer] aus dem Feld [!UICONTROL Administratoren] entfernen, werden sie nicht tatsächlich aus dem Back-End entfernt (NPR-35592, NPR-35611).
 * Die Komponente [!UICONTROL Nachricht erstellen] gibt kein Ergebnis zurück, wenn der eingegebene Text teilweise übereinstimmt (NPR-35666).
 
-* Beim Versuch, Tags zu einem neuen Blog hinzuzufügen, indem **Hinzufügen Tags** ausgewählt wird, werden Leistungseinbußen festgestellt. Um die Leistung zu verbessern, installieren Sie den [cqTagLucene-0.0.1.zip-Hotfix](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cqTagLucene-0.0.1.zip), der das Problem mit der Tag-Empfehlung behebt. Sie können den Hotfix von [!DNL Software Distribution] herunterladen.
+* Sie können feststellen, dass es zu Leistungseinbußen und Langsamkeit kommt, wenn Sie versuchen, einem neuen Blog Tags hinzuzufügen, indem Sie **[!UICONTROL Hinzufügen Tags]** auswählen. Um die Leistung zu verbessern, installieren Sie den [cqTagLucene-0.0.1.zip-Hotfix](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cqTagLucene-0.0.1.zip), der unter [!DNL Software Distribution] verfügbar ist.
 
 ### [!DNL Brand Portal] {#brandportal-6580}
 
