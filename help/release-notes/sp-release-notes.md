@@ -3,14 +3,14 @@ title: '[!DNL Experience Manager] 6.5 Service Pack - Versionshinweise'
 description: Spezifische Versionshinweise zu [!DNL Adobe Experience Manager] 6.5 Service Pack 8
 docset: aem65
 mini-toc-levels: 1
+exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 translation-type: tm+mt
-source-git-commit: fb1423b7ae110b8a3cf8e0e389394e9266157a9f
+source-git-commit: e2eb007eb7660004f98b4c26aba00a6a6e2a2f1a
 workflow-type: tm+mt
-source-wordcount: '3360'
+source-wordcount: '3418'
 ht-degree: 5%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] 6.5 Service Pack - Versionshinweise  {#aem-service-pack-release-notes}
 
@@ -154,9 +154,11 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in der Version 6.5.8.0.[!
 
 * Wenn Sie einer Community-Gruppe eine Seitenstruktur hinzufügen, wird der Titel [!UICONTROL Gruppe] im Breadcrumb in den Titel der ersten [!UICONTROL Seite] (NPR-35803) geändert.
 * Im Gegensatz zu Moderatoren ist ein Standard-Community-Mitglied nicht in der Lage, auf Beiträge zuzugreifen und diese zu bearbeiten (NPR-35339).
-* Zugriffskontrolle und Diensteverweigerung mit DSRPReindexServlet unterbrochen, wodurch die Communities-Website heruntergefahren wird, bis die Indexierung abgeschlossen ist (NPR-35591).
+* Fehlerhafte Zugriffskontrolle und Diensteverweigerung mit `DSRPReindexServlet`, was die Communities-Site nach unten bringt, bis die Indexierung abgeschlossen ist (NPR-35591).
 * Wenn Sie [!UICONTROL Alle Benutzer] aus dem Feld [!UICONTROL Administratoren] entfernen, werden sie nicht tatsächlich aus dem Back-End entfernt (NPR-35592, NPR-35611).
 * Die Komponente [!UICONTROL Nachricht erstellen] gibt kein Ergebnis zurück, wenn der eingegebene Text teilweise übereinstimmt (NPR-35666).
+
+* Beim Versuch, Tags zu einem neuen Blog hinzuzufügen, indem **Hinzufügen Tags** ausgewählt wird, werden Leistungseinbußen festgestellt. Um die Leistung zu verbessern, installieren Sie den [cqTagLucene-0.0.1.zip-Hotfix](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cqTagLucene-0.0.1.zip), der das Problem mit der Tag-Empfehlung behebt. Sie können den Hotfix von [!DNL Software Distribution] herunterladen.
 
 ### [!DNL Brand Portal] {#brandportal-6580}
 
