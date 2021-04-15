@@ -2,16 +2,16 @@
 title: Integration mit Best Practices von Adobe Creative Cloud
 description: Best Practices zur Integration von [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] zur Straffung der Workflows und Erzielung einer hohen Inhaltsgeschwindigkeit.
 contentOwner: AG
-role: Geschäftspraktiker, Administrator
-feature: Zusammenarbeit,Adobe Asset Link,Experience Manager Desktop-App
+role: Business Practitioner, Administrator
+feature: Zusammenarbeit,Adobe Asset Link,Desktop-App
+exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+source-git-commit: c4cfb709162ca8f8f6e8508516c39542347c6bc4
 workflow-type: tm+mt
-source-wordcount: '3259'
+source-wordcount: '3254'
 ht-degree: 54%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] und  [!DNL Creative Cloud] Best Practices für die Integration  {#aem-and-creative-cloud-integration-best-practices}
 
@@ -210,7 +210,7 @@ Die Beschreibung bezieht sich auf das operationelle Hochladen von Dateien (z. B.
 Sie können die folgenden Upload-Funktionen nutzen:
 
 * Um große/hierarchische Ordner stapelweise hochzuladen, verwenden Sie die Desktop-App [!DNL Experience Manager], die die Funktionalität [Ordner-Upload](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#upload-and-add-new-assets-to-aem) bietet. Sie können auch hierarchische Ordnerstrukturen hochladen. [!DNL Assets]Das Hochladen von erfolgt im Hintergrund und ist daher nicht an eine Webbrowser-Sitzung gebunden.
-* Um einige Dateien aus einem einzelnen Ordner hochzuladen, ziehen Sie die Dateien direkt in die Weboberfläche oder verwenden Sie die Option Erstellen in der [!DNL Assets]-Weboberfläche.
+* Um einige Dateien aus einem einzelnen Ordner hochzuladen, ziehen Sie die Dateien direkt in die Weboberfläche oder verwenden Sie die Option &quot;Erstellen&quot;in der [!DNL Assets]-Weboberfläche.
 * Je nach Ihren Geschäftsanforderungen können Sie auch benutzerdefinierte Upload-Programme verwenden.
 
 #### Digitale Assets direkt vom Desktop aus verwalten{#managing-digital-assets-directly-from-desktop}
