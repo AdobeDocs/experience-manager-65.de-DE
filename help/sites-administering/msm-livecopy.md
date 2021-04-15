@@ -2,14 +2,14 @@
 title: Erstellen und Synchronisieren von Live Copies
 description: Erfahren Sie, wie Sie Live Copies erstellen und synchronisieren können.
 feature: Multi-Site-Manager
+exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 05dc73448d6902ccdbc92782fff39ef1a6339056
 workflow-type: tm+mt
-source-wordcount: '4173'
+source-wordcount: '4174'
 ht-degree: 84%
 
 ---
-
 
 # Erstellen und Synchronisieren von Live Copies{#creating-and-synchronizing-live-copies}
 
@@ -240,7 +240,7 @@ Rollouts werden als asynchrone Aufträge verarbeitet und können im Dashboard [*
 
 #### Durchführen von Blueprint-Rollouts über die Verweisleiste {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. Wählen Sie in der Konsole **Sites** die Seite im Blueprint aus und öffnen Sie das Bedienfeld **[References](/help/sites-authoring/basic-handling.md#references)** (aus der Symbolleiste).
+1. Wählen Sie in der Konsole **Sites** die Seite in der Live-Kopie aus und öffnen Sie das Bedienfeld **[Referenzen](/help/sites-authoring/basic-handling.md#references)** (aus der Symbolleiste).
 1. Wählen Sie die Option **Blueprint** aus der Liste, um die mit dieser Seite verbundenen Blueprints anzuzeigen.
 1. Wählen Sie den erforderlichen Blueprint aus der Liste aus.
 1. Klicken oder tippen Sie auf **Rollout**.
