@@ -2,8 +2,8 @@
 title: Verarbeiten von Assets mit Media Handlern und Workflows
 description: Erfahren Sie mehr über die Media-Handler und wie Sie Workflows verwenden, um Aufgaben an Ihren digitalen Assets durchzuführen.
 contentOwner: AG
-role: Geschäftspraktiker
-feature: Workflow,Darstellungen
+role: Business Practitioner
+feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 translation-type: tm+mt
 source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537

@@ -2,8 +2,8 @@
 title: Verwenden des PDF-Rasters zum Generieren von Darstellungen
 description: Erstellen Sie hochwertige Miniaturansichten und Darstellungen mit der Adobe PDF Rasterbibliothek.
 contentOwner: AG
-role: Entwickler, Administrator
-feature: Entwicklerwerkzeuge,Darstellungen
+role: Developer, Administrator
+feature: Developer Tools,Renditions
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

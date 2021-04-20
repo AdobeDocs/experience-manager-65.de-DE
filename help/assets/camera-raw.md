@@ -2,8 +2,8 @@
 title: '[!DNL Adobe Camera Raw] unterstützen.'
 description: 'Erfahren Sie, wie Sie unter  [!DNL Adobe Experience Manager Assets] die Unterstützung aktivieren. [!DNL Adobe Camera Raw] '
 contentOwner: AG
-role: 'Administrator  '
-feature: Entwicklertools
+role: Administrator
+feature: Developer Tools
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

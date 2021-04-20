@@ -7,7 +7,7 @@ user-guide-title: AEM 6.5-Administratorenanleitung
 breadcrumb-title: Administratorenanleitung
 user-guide-description: Erfahren Sie mehr über die Verwaltung von AEM.
 feature-set: Experience Manager Sites,Experience Manager Assets,Experience Manager
-feature: Verwalten
+feature: Administering
 role: Administrator
 translation-type: tm+mt
 source-git-commit: b8970a8b2f7063a9bc5f7882ffa3598cabdef548

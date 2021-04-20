@@ -2,8 +2,8 @@
 title: Asset-Vorlagen
 description: Erfahren Sie mehr über Asset-Vorlagen in [!DNL Adobe Experience Manager Assets] und wie Sie Asset-Vorlagen verwenden, um Marketingmaterial zu erstellen.
 contentOwner: AG
-role: Geschäftspraktiker
-feature: Asset-Verwaltung,Entwicklerwerkzeuge
+role: Business Practitioner
+feature: Asset Management,Developer Tools
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

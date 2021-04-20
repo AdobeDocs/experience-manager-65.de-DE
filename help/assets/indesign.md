@@ -2,8 +2,8 @@
 title: Integrieren [!DNL Assets] mit [!DNL InDesign Server]
 description: Erfahren Sie, wie Sie  [!DNL Adobe Experience Manager Assets] mit [!DNL Adobe InDesign Server] integrieren.
 contentOwner: AG
-role: 'Administrator  '
-feature: Veröffentlichung
+role: Administrator
+feature: Publishing
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: Assets-Anleitung
 description: In diesem Handbuch werden alle Asset-Aufgaben des Experience Managers behandelt, z. B. wie digitale Assets erstellt, verwaltet, bereitgestellt und optimiert werden.
 user-guide-title: Assets-Anleitung
-feature: Asset-Verwaltung
-role: Geschäftspraktiker, Architekt, Administrator
+feature: Asset Management
+role: Business Practitioner, Architect, Administrator
 translation-type: tm+mt
 source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt

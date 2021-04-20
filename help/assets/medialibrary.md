@@ -2,8 +2,8 @@
 title: Medienbibliothek für einfache digitale Asset-Verwaltung verwenden
 description: '[!DNL Experience Manager Assets] und Medienbibliothek für die Asset-Verwaltung.'
 contentOwner: AG
-role: Architekt, Leiter
-feature: Asset-Verwaltung
+role: Architect, Leader
+feature: Asset Management
 translation-type: tm+mt
 source-git-commit: ad0672c345262712e51e821fa4e050b505063ac4
 workflow-type: tm+mt

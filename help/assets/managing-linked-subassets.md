@@ -2,8 +2,8 @@
 title: Verwalten von zusammengesetzten Assets mit Verweisen und mehreren Seiten
 description: Erfahren Sie, wie Sie Verweise auf digitale Assets von [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop] aus erstellen. Verwenden Sie die Funktion "Seiten-Viewer", um einzelne Seiten von Teilassets von mehrseitigen Dateien wie PDF-, INDD-, PPT-, PPTX- und AI-Dateien Ansicht.
 contentOwner: AG
-role: Geschäftspraktiker, Administrator
-feature: Asset-Verwaltung
+role: Business Practitioner, Administrator
+feature: Asset Management
 translation-type: tm+mt
 source-git-commit: ad0672c345262712e51e821fa4e050b505063ac4
 workflow-type: tm+mt

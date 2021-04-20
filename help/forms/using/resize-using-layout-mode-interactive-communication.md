@@ -1,7 +1,7 @@
 ---
 title: Verwenden Sie den Layoutmodus, um die Größe von Komponenten für die interaktive Kommunikation zu ändern
 description: 'Definieren der Position von Komponenten mithilfe des im Layoutmodus verfügbaren interaktiven Rasters '
-feature: Interaktive Kommunikation
+feature: Interactive Communication
 translation-type: tm+mt
 source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt

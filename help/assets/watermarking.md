@@ -2,8 +2,8 @@
 title: Hinzufügen von Wasserzeichen zu digitalen Assets
 description: Erfahren Sie, wie Sie die Funktion verwenden können, um Assets digitale Wasserzeichen hinzuzufügen.
 contentOwner: AG
-role: Geschäftspraktiker, Administrator
-feature: Asset-Verwaltung
+role: Business Practitioner, Administrator
+feature: Asset Management
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

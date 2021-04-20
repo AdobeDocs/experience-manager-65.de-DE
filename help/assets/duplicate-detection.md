@@ -2,8 +2,8 @@
 title: Erkennung Asset-Duplikaten aktivieren
 description: Erfahren Sie, wie Sie die Erkennung von Duplikat-Assets in Experience Manager aktivieren.
 contentOwner: AG
-role: Geschäftspraktiker, Administrator
-feature: Asset-Verwaltung, Asset-Berichte
+role: Business Practitioner, Administrator
+feature: Asset Management,Asset Reports
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: Imaging Transcoding Library
 description: Erfahren Sie, wie Sie die Adobe Imaging Transcoding Library – eine Lösung zur Bildverarbeitung, die essenzielle Bildfunktionen wie Bildkodierung, -transkodierung, -Resampling und Größenanpassung übernimmt – konfigurieren und verwenden.
 contentOwner: AG
-role: 'Administrator  '
-feature: Darstellungen,Entwicklerwerkzeuge,Asset-Verarbeitung
+role: Administrator
+feature: Renditions,Developer Tools,Asset Processing
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

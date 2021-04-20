@@ -3,7 +3,7 @@ title: '[!DNL Assets] Startseite'
 description: Personalisieren Sie die Startseite [!DNL Experience Manager Assets] für einen umfassenden Begrüßungsbildschirm, einschließlich einer Momentaufnahme der letzten Aktivitäten um Assets.
 contentOwner: AG
 feature: Developer Tools, Asset Management
-role: Administrator, Geschäftspraktiker
+role: Administrator, Business Practitioner
 translation-type: tm+mt
 source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt

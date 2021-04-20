@@ -2,8 +2,8 @@
 title: Mehrsprachige Assets und Übersetzung von Assets
 description: Erfahren Sie, wie Sie Workflows automatisieren können, um Assets, einschließlich Binärdateien, Metadaten und Tags, in mehrere Sprachen zu übersetzen.
 contentOwner: AG
-feature: Asset-Verwaltung
-role: 'Administrator  '
+feature: Asset Management
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt

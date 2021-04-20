@@ -1,7 +1,7 @@
 ---
 title: Verwenden Sie den Layoutmodus, um die Größe von Komponenten für adaptive Formulare zu ändern
 description: 'Definieren der Position von Komponenten mithilfe des im Layoutmodus verfügbaren interaktiven Rasters '
-feature: Adaptive Formulare
+feature: Adaptive Forms
 translation-type: tm+mt
 source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt

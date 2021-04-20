@@ -2,8 +2,8 @@
 title: '[!DNL Assets] Größenleitfaden'
 description: Best Practices zur Ermittlung effizienter Metriken zur Schätzung der Infrastruktur und der Ressourcen, die für die Bereitstellung erforderlich sind. [!DNL Adobe Experience Manager Assets]
 contentOwner: AG
-role: Architekt, Administrator
-feature: Asset-Verwaltung
+role: Architect, Administrator
+feature: Asset Management
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

@@ -3,8 +3,8 @@ title: Leistungsoptimierung [!DNL Assets].
 description: 'Vorschläge und Anleitungen zur Konfiguration, Änderungen an Hardware, Software und Netzwerkkomponenten, um Engpässe zu beseitigen und die Leistung von [!DNL Experience Manager Assets] zu optimieren. [!DNL Experience Manager] '
 contentOwner: AG
 mini-toc-levels: 1
-role: Architekt, Administrator
-feature: Asset-Verwaltung
+role: Architect, Administrator
+feature: Asset Management
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

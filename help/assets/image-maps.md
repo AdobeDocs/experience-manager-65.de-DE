@@ -2,8 +2,8 @@
 title: hinzufügen von Imagemaps mit Hyperlinks
 description: Erfahren Sie, wie Sie einem Bild Imagemap mit Hyperlinks hinzufügen.
 contentOwner: AG
-role: Geschäftspraktiker, Administrator
-feature: Asset-Verwaltung
+role: Business Practitioner, Administrator
+feature: Asset Management
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
