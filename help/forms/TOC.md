@@ -7,12 +7,11 @@ audience: end-user
 user-guide-title: Adobe Experience Manager 6.5, Forms-Anleitung
 breadcrumb-title: Forms-Anleitung
 user-guide-description: Digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren.
-feature-set: Experience Manager Forms
 role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: d7b0803385aaa451a1ec7ec280ff51c3e96e36e7
+source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
-source-wordcount: '3720'
+source-wordcount: '3718'
 ht-degree: 71%
 
 ---
@@ -569,7 +568,7 @@ ht-degree: 71%
    + Systeminformationsdienst {#system-information-service}
       + [Systeminformationsdienst einrichten](/help/forms/using/admin-help/set-system-information-service.md)
       + [Systeminformationsdienst-APIs](/help/forms/using/admin-help/system-information-service-apis.md)
-+ Prozessberichterstellung {#process-reporting}
++ Prozessberichterstellung  {#process-reporting}
    + [Einführung in Process Berichte](/help/forms/using/process-reporting/introduction-process-reporting.md)
    + [Erste Schritte mit Process Berichte](/help/forms/using/process-reporting/install-start-process-reporting.md)
    + [Funktionsweise von Process Berichte](/help/forms/using/process-reporting/process-reporting-architecture.md)
