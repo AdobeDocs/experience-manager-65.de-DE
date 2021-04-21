@@ -6,14 +6,13 @@ audience: end-user
 user-guide-title: AEM 6.5-Entwickleranleitung
 breadcrumb-title: Entwickleranleitung
 user-guide-description: In dieser Anleitung wird beschrieben, wie Sie Ihre AEM-Instanz erstellen.
-feature-set: Experience Manager Sites
-feature: Developing
+feature: Entwickeln
 role: Developer
 translation-type: tm+mt
-source-git-commit: d7b0803385aaa451a1ec7ec280ff51c3e96e36e7
+source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 81%
+source-wordcount: '919'
+ht-degree: 82%
 
 ---
 
@@ -208,7 +207,7 @@ ht-degree: 81%
    + [Testen der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/hobbes.html)
 + Best Practices{#bestpractices}
    + [Übersicht über bewährte Verfahren](best-practices.md)
-   + [AEM und Best Practices für die Entwicklung](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/dev-guidelines-bestpractices.html)
+   + [AEM und Best Practices für die Entwicklung](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/dev-guidelines-bestpractices.html?lang=de)
    + [Best Practices für die Entwicklung](development-practices.md)
    + [Inhaltsarchitektur](content-architecture.md)
    + [Software-Architektur](software-architecture.md)
