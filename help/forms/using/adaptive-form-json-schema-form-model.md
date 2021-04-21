@@ -1,17 +1,17 @@
 ---
 title: Erstellen eines adaptiven Forms mit dem JSON-Schema
 description: Erfahren Sie, wie Sie adaptive Formulare mit dem JSON-Schema als Formularmodell erstellen. Sie können vorhandene JSON-Schema verwenden, um adaptive Formulare zu erstellen. Machen Sie sich mit einem Beispiel für ein JSON-Schema weiter und konfigurieren Sie Felder in der JSON-Schema-Definition, beschränken Sie die zulässigen Werte für eine adaptive Formularkomponente und lernen Sie nicht unterstützte Konstrukte kennen.
-feature: Adaptive Forms
-role: Business Practitioner, Developers
-level: Beginner, Imtermediate
+feature: Adaptive Formulare
+role: Business Practitioner, Developer
+level: Beginner, Intermediate
+exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
 translation-type: tm+mt
-source-git-commit: 37ab98c9c78af452887c32101287b6d7f18d9d91
+source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1450'
 ht-degree: 64%
 
 ---
-
 
 # Erstellen adaptiver Formulare mithilfe des JSON-Schemas {#creating-adaptive-forms-using-json-schema}
 
