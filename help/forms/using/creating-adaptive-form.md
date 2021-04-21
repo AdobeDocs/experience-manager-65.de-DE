@@ -1,17 +1,17 @@
 ---
 title: Erstellen eines adaptiven Formulars
 description: 'Erfahren Sie, wie Sie ein adaptives Formular mit  [!DNL Experience Manager Forms] erstellen. Adaptive Formulare sind Responsive-HTML5-Formulare, mit denen die Informationserfassung und -verarbeitung optimiert wird. Detailliertere Informationen zum Erstellen eines adaptiven Formulars auf der Grundlage eines Formulardatenmodells, einer XFA-Formularvorlage und eines XML- oder JSON-Schemas. '
-feature: Adaptive Forms
-role: Business Practitioner, Developers
+feature: Adaptive Formulare
+role: Business Practitioner, Developer
 level: Beginner
+exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
 translation-type: tm+mt
-source-git-commit: 52fedc234b3edf581393bb42325902d2da3ab46e
+source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1858'
 ht-degree: 79%
 
 ---
-
 
 # Erstellen eines adaptiven Formulars {#creating-an-adaptive-form}
 
