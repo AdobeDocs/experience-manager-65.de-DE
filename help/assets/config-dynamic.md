@@ -11,9 +11,9 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 role: Business Practitioner, Administrator
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
-feature: Configuration,Hybrid mode
+feature: Konfiguration, Hybrid-Modus
 translation-type: tm+mt
-source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
+source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
 source-wordcount: '7843'
 ht-degree: 39%
@@ -708,7 +708,7 @@ Filter gelten für MIME-Typen und können nicht pfadspezifisch sein.
 
 Wenn Sie Dynamic Media ausschließlich für Videos nutzen, können Sie mit diesen Schritten Asset-Filter für die Replikation einrichten:
 
-1. Tippen Sie in Experience Manager auf das Logo des Experience Managers, um auf die globale Navigationskonsole zuzugreifen, und tippen Sie dann auf **[!UICONTROL Tools > Bereitstellung > Replikation > Agenten beim Autor.]**
+1. In Experience Manager tippen Sie auf das Logo des Experience Managers, um auf die globale Navigationskonsole zuzugreifen, und dann auf **[!UICONTROL Tools > Bereitstellung > Replikation > Agenten beim Autor.]**
 1. Tippen Sie auf der Seite „Agenten für Autor“ auf **[!UICONTROL Standardagent (Publish).]**
 1. Tippen Sie auf **[!UICONTROL Bearbeiten.]**
 1. Aktivieren Sie im Dialogfeld **[!UICONTROL Agenteneinstellungen]** auf der Registerkarte **[!UICONTROL Einstellungen]** die Option **[!UICONTROL Aktiviert]**, um den Agenten zu aktivieren.
