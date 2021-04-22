@@ -9,9 +9,9 @@ user-guide-description: Erfahren Sie mehr über die Verwaltung von AEM.
 feature: Verwalten
 role: Administrator
 translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 06cbf5ccc957b0cb5bd24c820f5209821ae92cd9
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '665'
 ht-degree: 92%
 
 ---
@@ -165,6 +165,7 @@ ht-degree: 92%
    + [AEM Sites – Einhaltung der Datenschutz-Grundverordnung](gdpr-compliance-sites.md)
    + [Handhabung von DSGVO-bezogenen Anfragen in AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
    + [AEM Commerce – Einhaltung der Datenschutz-Grundverordnung](gdpr-compliance-commerce.md)
++ Content Management {#contentmanagement}
    + [Arbeiten mit Paketen](package-manager.md)
    + [Verwalten von Tags](tags.md)
    + [Das Seiten-Exporttool](page-exporter.md)
