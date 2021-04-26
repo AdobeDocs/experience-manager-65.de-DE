@@ -8,16 +8,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: a6f58f6a-015a-4ced-941c-ef1b6d3e1d6f
 docset: aem65
-feature: Interactive Images
+feature: Interaktive Bilder
 role: Business Practitioner, Administrator
+exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '4335'
+source-wordcount: '4332'
 ht-degree: 99%
 
 ---
-
 
 # Interaktive Bilder {#interactive-images}
 
@@ -49,7 +49,7 @@ Schritte zum Erstellen interaktiver Bilder:
 
 1. **(Optional) Ermitteln von Hotspot-Variablen**: Wenn Sie lediglich AEM Assets und Dynamic Media verwenden, ermitteln Sie zunächst die dynamischen Variablen, die in Ihrer vorhandenen Schnellansichtsimplementierung verwendet werden, damit Sie bei der Erstellung des interaktiven Bildes Hotspot-Daten eingeben können. Siehe [(Optional) Ermitteln von Hotspot-Variablen](#optional-identifying-hotspot-variables).
 Wenn Sie jedoch AEM Sites, AEM eCommerce oder beides verwenden, ist dieser Schritt nicht erforderlich.
-Siehe [eCommerce-Konzepte in AEM Assets](/help/sites-administering/concepts.md).
+Siehe [eCommerce-Konzepte in AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 1. **(Optional) Erstellen einer Viewer-Vorgabe für interaktive Bilder**: Passen Sie das Grafikbild an, das zur Darstellung von Hotspots verwendet wird. Die Erstellung Ihrer eigenen Viewer-Vorgabe für interaktive Bilder ist nicht erforderlich, wenn Sie stattdessen die standardmäßig bereitgestellte Viewer-Vorgabe für interaktive Bilder namens `Shoppable_Banner` (Banner mit Shopping-Funktion) verwenden möchten.
 Siehe [(Optional) Erstellen einer Viewer-Vorgabe für interaktive Bilder](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
@@ -74,7 +74,7 @@ Wenn Sie einen Drittanbieter-WCM (Web Content Manager) verwenden, müssen Sie da
 >Diese Aufgabe ist nur erforderlich, wenn Folgendes zutrifft:
 >
 >* Sie möchten das Bild durch Auslösen von Schnellansichten in ein interaktives Bild umwandeln.
->* Ihre AEM-Implementierung verwendet *kein* E-Commerce-Integrations-Framework, um Produktdaten aus einer E-Commerce-Lösung wie IBM Websphere Commerce, Elastic Path, hybris oder Intershop in AEM abzurufen. Siehe [eCommerce-Konzepte in AEM Assets](/help/sites-administering/concepts.md).
+>* Ihre AEM-Implementierung verwendet *kein* E-Commerce-Integrations-Framework, um Produktdaten aus einer E-Commerce-Lösung wie IBM Websphere Commerce, Elastic Path, hybris oder Intershop in AEM abzurufen. Siehe [eCommerce-Konzepte in AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 >
 >
