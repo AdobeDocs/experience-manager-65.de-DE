@@ -9,10 +9,10 @@ user-guide-description: In dieser Anleitung wird beschrieben, wie Sie Ihre AEM-I
 feature: Entwickeln
 role: Developer
 translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 82%
+source-wordcount: '910'
+ht-degree: 81%
 
 ---
 
@@ -70,10 +70,6 @@ ht-degree: 82%
    + [Integrieren von Diensten mit der JMX-Konsole](jmx-integration.md)
    + [Entwickeln des Bulk Editors](dev-bulk-editor.md)
    + [Entwickeln von Berichten](dev-reports.md)
-   + E-Commerce{#ecommerce}
-      + [E-Commerce](ecommerce.md)
-      + [Entwicklung (generisch)](generic.md)
-      + [Entwicklung mit SAP Commerce Cloud](sap-commerce-cloud.md)
 + Komponenten{#components}
    + [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
    + [Stilsystem](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html)
