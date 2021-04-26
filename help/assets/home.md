@@ -2,16 +2,16 @@
 title: Assets-Anleitung
 description: In diesem Handbuch werden alle Asset-Aufgaben des Experience Managers behandelt, z. B. wie digitale Assets erstellt, verwaltet, bereitgestellt und optimiert werden.
 user-guide-title: Assets-Anleitung
-feature: Asset Management
+feature: Asset-Verwaltung
 role: Business Practitioner, Architect, Administrator
+exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '333'
 ht-degree: 24%
 
 ---
-
 
 # Assets-Anleitung
 
@@ -40,6 +40,7 @@ Dieses Handbuch behandelt alle [!DNL Experience Manager Assets]-Aufgaben, z. B. 
 | [Bereitstellungshandbuch für Benutzer](/help/sites-deploying/home.md) | Dieser Leitfaden zeigt Ihnen die Grundlagen des Experience Managers. |
 | [Benutzerhandbuch für Entwickler](/help/sites-developing/home.md) | Erfahren Sie, wie Sie Ihre Experience Manager-Bereitstellung aufbauen. |
 | [Verwalten des Benutzerhandbuchs](/help/managing/home.md) | In diesem Handbuch wird die erfolgreiche Verwaltung eines Experience Manager-Projekts beschrieben. |
+| [Benutzerhandbuch für Commerce](/help/commerce/home.md) | Erfahren Sie mehr über Commerce Integration Framework auf AEM. |
 | [Mobiles Benutzerhandbuch](/help/mobile/home.md) | In diesem Handbuch wird das Erstellen und Verwalten von Inhalten für mobile Anwendungen beschrieben. |
 | [Experience Manager Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Dieses Handbuch zeigt Ihnen, wie benutzergenerierte Inhalte mit [!DNL Livefyre] freigegeben werden. |
 
