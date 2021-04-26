@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: f50150af-deff-4c29-bfe0-1cfc67b29d51
+exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
 translation-type: tm+mt
-source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 89%
 
 ---
-
 
 # We.Retail-Referenzimplementierung{#we-retail-reference-implementation}
 
@@ -38,7 +38,7 @@ Als standardmäßige AEM-Referenzimplementierung demonstriert We.Retail einige d
 | [Responsives Layout](/help/sites-authoring/responsive-layout.md) | Alle Seiten verfügen über ein responsives Layout, das sich dynamisch an die Bildschirm- und Gerätegröße anpasst. | [Jetzt testen!](/help/sites-developing/we-retail-responsive-layout.md) |
 | [Bearbeitbare Vorlagen](/help/sites-developing/page-templates-editable.md) | Alle Seiten basieren auf bearbeitbaren Vorlagen, sodass auch Benutzer, die keine Entwickler sind, die Vorlagen anpassen können. | [Jetzt testen!](/help/sites-developing/we-retail-editable-templates.md) |
 | [HTML-Vorlagensprache](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html) | Alle Komponenten basieren auf HTL. |  |
-| [eCommerce-Funktionen](/help/sites-developing/ecommerce.md) | Umfassen einen Produktkatalog. |  |
+| [eCommerce-Funktionen](/help/commerce/cif-classic/developing/ecommerce.md) | Umfassen einen Produktkatalog. |  |
 | [Communities-Sites](/help/communities/overview.md) | Besucher können an Community-Diskussionen teilnehmen, Blogs lesen und vieles mehr. |  |
 | [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) | Alle Komponenten basieren auf den neuen Kernkomponenten und sind standardmäßig benutzerfreundlicher und konfigurierbarer. | [Jetzt testen!](/help/sites-developing/we-retail-core-components.md) |
 | [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md) | Der Abschnitt „We.Retail Experiences“ veranschaulicht, wie sich über Inhalte mithilfe von Inhaltfragmenten wirkungsvoll wiederverwenden lassen. | [Jetzt testen!](/help/sites-developing/we-retail-content-fragments.md) |
@@ -123,4 +123,3 @@ Mit [Pull-Requests](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retai
 Vorschau der We.Retail-Begrüßungsseite:
 
 ![screencapture-localhost-4502-editor-html-content-we-retail-us-html-2018-08-17-14_33_32](assets/screencapture-localhost-4502-editor-html-content-we-retail-us-en-html-2018-08-17-14_33_32.png)
-
