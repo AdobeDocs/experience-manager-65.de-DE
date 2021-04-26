@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
+exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 92%
 
 ---
-
 
 # Komponenten{#components}
 
@@ -62,7 +62,7 @@ Die folgenden Seiten enthalten Links zu einigen zusätzlichen, wichtigen Informa
 
 * [Communities](/help/communities/author-communities.md) – Komponenten bieten interaktive Funktionen für eine Website, z. B. Foren und Kommentare. Viele dieser Komponenten sind enthalten, wenn eine [Community-Site](/help/communities/overview.md) erstellt wird.
 
-* [eCommerce](/help/sites-administering/ecommerce.md)  - Die eCommerce-Funktionalität in AEM umfasst auch eine Reihe von Komponenten. Die tatsächliche Verwendung kann von der verwendeten Commerce-Engine abhängen.
+* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)  - Die eCommerce-Funktionalität in AEM umfasst auch eine Reihe von Komponenten. Die tatsächliche Verwendung kann von der verwendeten Commerce-Engine abhängen.
 
 ### Konfigurieren von Komponenten {#configuring-components}
 
@@ -70,4 +70,3 @@ Neben den Komponenten, auf die Autoren in einer Standardinstallation zugreifen k
 
 * Wenn Ihre Seite auf der empfohlenen, modernen, bearbeitbaren Vorlage basiert, können Sie die [Vorlage bearbeiten](/help/sites-authoring/templates.md), diese aktivieren/deaktivieren und Parameter für bestimmte Komponenten bearbeiten.
 * Wenn Ihre Seite auf einer statischen Vorlage basiert, können Sie den [Designmodus](/help/sites-authoring/default-components-designmode.md#enable-disable-components) verwenden, um diese zu aktivieren/deaktivieren und Parameter für bestimmte Komponenten zu bearbeiten.
-
