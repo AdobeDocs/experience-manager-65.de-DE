@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: e48cc0ed-688c-44c8-b6d6-5f3c8593a295
 docset: aem65
+exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
 translation-type: tm+mt
-source-git-commit: cb07e24b01084f57ad46615cb463ad5a0329c181
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '1833'
 ht-degree: 82%
 
 ---
-
 
 # Bereitstellen und Verwalten{#deploying-and-maintaining}
 
@@ -50,7 +50,7 @@ Nachdem Sie sich mit diesen Grundlagen vertraut gemacht haben, finden Sie auf de
 * [Start und Stopp über die Befehlszeile](/help/sites-deploying/command-line-start-and-stop.md)
 * [Konfiguration](/help/sites-deploying/configuring.md)
 * [Aktualisieren auf AEM 6.5](/help/sites-deploying/upgrade.md)
-* [eCommerce](/help/sites-deploying/ecommerce.md)
+* [E-Commerce](/help/commerce/cif-classic/deploying/ecommerce.md)
 * [Artikel mit Anleitungen für die Konfiguration](/help/sites-deploying/ht-deploy.md)
 * [Web-Konsole](/help/sites-deploying/web-console.md)
 * [Fehlerbehebung bei Replikationsproblemen](/help/sites-deploying/troubleshoot-rep.md)
@@ -59,7 +59,7 @@ Nachdem Sie sich mit diesen Grundlagen vertraut gemacht haben, finden Sie auf de
 * [Einführung in die AEM-Plattform](/help/sites-deploying/platform.md)
 * [Leistungsrichtlinien](/help/sites-deploying/performance-guidelines.md)
 * [Erste Schritte mit AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [Was ist AEM Screens?](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [Was ist AEM Screens? ](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## Grundlegende Konzepte {#basic-concepts}
 
@@ -78,7 +78,7 @@ Auf dieser Grundlage bietet AEM einige Funktionen auf Anwendungsebene für die V
 * **Websites**
 * **Mobilanwendungen**
 * **digitalen Veröffentlichungen**
-* **Formulare**
+* **Forms**
 * **Digitale Assets**
 * **Communities**
 * **Online-Handel**
@@ -311,7 +311,7 @@ Im obigen Abschnitt sollten Sie ein solides Verständnis der Grundlagen der AEM-
 * [Start und Stopp über die Befehlszeile](/help/sites-deploying/command-line-start-and-stop.md)
 * [Konfiguration](/help/sites-deploying/configuring.md)
 * [Aktualisieren auf AEM 6.5](/help/sites-deploying/upgrade.md)
-* [eCommerce](/help/sites-deploying/ecommerce.md)
+* [E-Commerce](/help/commerce/cif-classic/deploying/ecommerce.md)
 * [Artikel mit Anleitungen für die Konfiguration](/help/sites-deploying/ht-deploy.md)
 * [Web-Konsole](/help/sites-deploying/web-console.md)
 * [Fehlerbehebung bei Replikationsproblemen](/help/sites-deploying/troubleshoot-rep.md)
@@ -320,4 +320,4 @@ Im obigen Abschnitt sollten Sie ein solides Verständnis der Grundlagen der AEM-
 * [Einführung in die AEM-Plattform](/help/sites-deploying/platform.md)
 * [Leistungsrichtlinien](/help/sites-deploying/performance-guidelines.md)
 * [Erste Schritte mit AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [Was ist AEM Screens?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [Was ist AEM Screens? ](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
