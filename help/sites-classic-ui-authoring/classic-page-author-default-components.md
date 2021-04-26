@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9ed820de-c108-416e-aaf7-b63a64ab4f80
+exl-id: 9e0a01da-7940-47aa-8604-788d74e5daa0
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 92%
 
 ---
-
 
 # Komponenten{#components}
 
@@ -37,7 +37,7 @@ Die folgenden Seiten bieten schnellen Zugriff auf die Hauptbereiche des Content 
 
    Komponenten, die zum Erstellen von Standardseiteninhalten verwendet werden, sind in erster Linie in den Gruppen **Allgemein**, **Spalten** und **Forms** enthalten.
 
-* [eCommerce](/help/sites-administering/ecommerce.md)
+* [E-Commerce](/help/commerce/cif-classic/administering/ecommerce.md)
 
    
 Die eCommerce-Funktion in AEM umfasst ebenfalls mehrere Komponenten, die in der Gruppe **Commerce** enthalten sind. Die tatsächliche Nutzung kann von der verwendeten Commerce-Engine abhängig sein.
@@ -45,4 +45,3 @@ Die eCommerce-Funktion in AEM umfasst ebenfalls mehrere Komponenten, die in der 
 ## Konfigurieren von Komponenten mit dem Designmodus {#using-design-mode-to-configure-components}
 
 Neben den Komponenten, auf die Autoren in einer Standardinstallation über den Sidekick zugreifen können, sind auch verschiedene andere Komponenten verfügbar. Mit dem [Designmodus](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#enable-disable-components) können Sie diese Komponenten aktivieren/deaktivieren und Parameter für spezielle Komponenten bearbeiten.
-
