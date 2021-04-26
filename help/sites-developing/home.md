@@ -4,9 +4,9 @@ seo-title: AEM 6.5-Entwickleranleitung
 description: In dieser Anleitung wird beschrieben, wie Sie Ihre AEM-Instanz erstellen.
 seo-description: Behandelt das Erstellen Ihrer AEM Instanz.
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 4dd47341ad1c966e8db6ef7ed1da93bf4e9abb52
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '357'
 ht-degree: 45%
 
 ---
@@ -18,7 +18,7 @@ In dieser Anleitung wird beschrieben, wie Sie Ihre AEM-Instanz erstellen.
 
 ## Wichtige AEM
 
-* [Erste Schritte mit AEM](https://helpx.adobe.com/experience-manager/get-started.html)
+* [Erste Schritte mit AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=de)
 * [Versionshinweise zu AEM 6.5](/help/release-notes/home.md)
 * [Aktuelle Aktualisierungen der Dokumentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Checkliste für die AEM-Sicherheit](/help/sites-administering/security-checklist.md)
@@ -38,6 +38,7 @@ In dieser Anleitung wird beschrieben, wie Sie Ihre AEM-Instanz erstellen.
 | [Bereitstellungshandbuch für Benutzer](/help/sites-deploying/home.md) | Dieser Leitfaden zeigt Ihnen die Grundlagen der AEM. |
 | [Benutzerhandbuch für Entwickler](/help/sites-developing/home.md) | Erfahren Sie, wie Sie Ihre AEM Instanz erstellen. |
 | [Verwalten des Benutzerhandbuchs](/help/managing/home.md) | In diesem Handbuch wird beschrieben, wie Sie ein AEM Projekt erfolgreich verwalten. |
+| [Benutzerhandbuch für Commerce](/help/commerce/home.md) | Erfahren Sie mehr über Commerce Integration Framework auf AEM. |
 | [Mobiles Benutzerhandbuch](/help/mobile/home.md) | In diesem Handbuch wird das Erstellen und Verwalten von Inhalten für mobile Anwendungen beschrieben. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Dieses Handbuch zeigt Ihnen, wie Sie benutzergenerierte Inhalte mit Livefyre teilen. |
 
