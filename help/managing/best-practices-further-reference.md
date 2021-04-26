@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
+exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
 translation-type: tm+mt
-source-git-commit: 37ec3d8ce779ba392e6a92c828efb5fad749abec
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '3783'
 ht-degree: 88%
 
 ---
-
 
 # Die Checkliste - Weitere Referenzen{#the-checklist-further-reference}
 
@@ -34,18 +34,18 @@ Bei der Implementierung von AEM (vor allem zum ersten Mal) müssen Sie die [Funk
 
 Beachten Sie die Funktionen von AEM, die Sie verwenden werden, und die Auswirkungen auf Ihr Design, zum Beispiel:
 
-* [Commerce](/help/sites-administering/ecommerce.md)
+* [Commerce](/help/commerce/cif-classic/administering/ecommerce.md)
 * [Screens](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html)
 * [Assets](/help/assets/assets.md)
 * [Tags](/help/sites-administering/tags.md)
 * [Multi-Site-Management und Übersetzung](/help/sites-administering/msm-and-translation.md)
-* [Formulare](/help/forms/home.md)
+* [Forms](/help/forms/home.md)
 * [Communities](/help/communities/deploy-communities.md)
 * [Livefyre](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
 
 Überprüfen Sie außerdem die [Versionshinweise](/help/release-notes/release-notes.md) für die verschiedenen Versionen von AEM, um zu sehen, wann neue Funktionen hinzugefügt wurden.
 
-### Integrationen  {#integrations}
+### Integrationen {#integrations}
 
 AEM kann mit anderen Adobe-Produkten und/oder Dienstleistungen von Drittanbietern integriert werden. Diese können die Ihnen zur Verfügung stehende Leistung und Funktionalität steigern.
 
