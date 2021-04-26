@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
+exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
 translation-type: tm+mt
-source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '3533'
 ht-degree: 89%
 
 ---
-
 
 # Entwickeln von AEM-Komponenten{#developing-aem-components}
 
@@ -26,8 +26,8 @@ AEM-Komponenten werden verwendet, um den Inhalt, den Sie auf Ihren Web-Seiten be
 
 * Beim [Erstellen von Seiten](/help/sites-authoring/default-components.md) erlauben es die Komponenten den Autoren, den Inhalt zu bearbeiten und zu konfigurieren.
 
-   * Beim Erstellen einer [Commerce](/help/sites-administering/ecommerce.md)-Site können die Komponenten beispielsweise Informationen aus dem Katalog sammeln und rendern.
-Weitere Informationen finden Sie unter [Entwicklung von eCommerce](/help/sites-developing/ecommerce.md).
+   * Beim Erstellen einer [Commerce](/help/commerce/cif-classic/administering/ecommerce.md)-Site können die Komponenten beispielsweise Informationen aus dem Katalog sammeln und rendern.
+Weitere Informationen finden Sie unter [Entwicklung von eCommerce](/help/commerce/cif-classic/developing/ecommerce.md).
 
    * Wenn Sie eine [Communities](/help/communities/author-communities.md)-Site erstellen, können die Komponenten Informationen für Ihre Besucher bereitstellen und Informationen erfassen.
 Weitere Informationen finden Sie unter [Entwicklung von Communities](/help/communities/communities.md).
