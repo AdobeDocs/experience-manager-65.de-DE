@@ -9,10 +9,10 @@ user-guide-description: Erfahren Sie mehr über die Installation, Bereitstellung
 feature: Bereitstellen
 role: Architect
 translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 93%
+source-wordcount: '328'
+ht-degree: 92%
 
 ---
 
@@ -90,11 +90,6 @@ ht-degree: 93%
    + [Forms-Repository-Neustrukturierung in AEM 6.5](forms-repository-restructuring-in-aem-6-5.md)
    + [E-Commerce-Repository-Neustrukturierung in AEM 6.5](ecommerce-repository-restructuring-in-aem-6-5.md)
    + [Repository-Neustrukturierung für AEM Communities in 6.5](communities-repository-restructuring-in-aem-6-5.md)
-+ E-Commerce {#ecommerce}
-   + [E-Commerce-Übersicht](ecommerce.md)
-   + [SAP Commerce Cloud](sap-commerce-cloud.md)
-   + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
-   + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
 + Best Practices {#practices}
    + [Best Practices für die Bereitstellung](best-practices.md)
    + [Leistungsübersicht](performance-tree.md)
