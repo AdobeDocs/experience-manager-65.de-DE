@@ -3,14 +3,14 @@ title: Adobe Experience Manager 6.5, Forms-Anleitung
 seo-title: AEM 6.5 Forms-Handbuch
 description: Dieses Handbuch behandelt alle AEM Forms-Aufgaben, einschließlich der Erstellung, Verwaltung, Veröffentlichung und Aktualisierung digitaler Formulare.
 seo-description: Behandelt alle AEM Forms-Aufgaben, einschließlich der Erstellung, Verwaltung, Veröffentlichung und Aktualisierung digitaler Formulare.
+exl-id: e66383b0-ae58-4cfe-8f1b-28b4e124fd06
 translation-type: tm+mt
-source-git-commit: d97cc2ad393fc10ff545ae374180426eb1574ba9
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '378'
 ht-degree: 37%
 
 ---
-
 
 # Adobe Experience Manager 6.5, Forms-Anleitung
 
@@ -18,7 +18,7 @@ Dieses Handbuch behandelt alle AEM Forms-Aufgaben, einschließlich der Erstellun
 
 ## Wichtige AEM
 
-* [Erste Schritte mit AEM](https://helpx.adobe.com/experience-manager/get-started.html)
+* [Erste Schritte mit AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=de)
 * [Versionshinweise zu AEM 6.5](/help/release-notes/home.md)
 * [Aktuelle Aktualisierungen der Dokumentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Checkliste für die AEM-Sicherheit](/help/sites-administering/security-checklist.md)
@@ -38,6 +38,7 @@ Dieses Handbuch behandelt alle AEM Forms-Aufgaben, einschließlich der Erstellun
 | [Bereitstellungshandbuch für Benutzer](/help/sites-deploying/home.md) | Dieser Leitfaden zeigt Ihnen die Grundlagen der AEM. |
 | [Benutzerhandbuch für Entwickler](/help/sites-developing/home.md) | Erfahren Sie, wie Sie Ihre AEM Instanz erstellen. |
 | [Verwalten des Benutzerhandbuchs](/help/managing/home.md) | In diesem Handbuch wird beschrieben, wie Sie ein AEM Projekt erfolgreich verwalten. |
+| [Benutzerhandbuch für Commerce](/help/commerce/home.md) | Erfahren Sie mehr über Commerce Integration Framework auf AEM. |
 | [Mobiles Benutzerhandbuch](/help/mobile/home.md) | In diesem Handbuch wird das Erstellen und Verwalten von Inhalten für mobile Anwendungen beschrieben. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Dieses Handbuch zeigt Ihnen, wie Sie benutzergenerierte Inhalte mit Livefyre teilen. |
 
