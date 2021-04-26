@@ -3,14 +3,14 @@ title: Adobe Experience Manager 6.5 Communities Guide
 seo-title: Adobe Experience Manager 6.5 Communities Guide
 description: In diesem Handbuch werden alle AEM Communities-Aufgaben behandelt, z. B. das Erstellen von Online-Erlebnissen wie Foren, Benutzergruppen, Lernressourcen und anderen sozialen Funktionen.
 seo-description: Behandelt alle AEM Communities-Aufgaben, z. B. das Erstellen von Online-Erlebnissen wie Foren, Benutzergruppen, Lernressourcen und anderen sozialen Funktionen.
+exl-id: 63040353-d34c-4306-9e7a-584ba48d8ad5
 translation-type: tm+mt
-source-git-commit: d340f34704149c9e096aa6988bb3e3fda1caf3d7
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '399'
 ht-degree: 32%
 
 ---
-
 
 # Adobe Experience Manager 6.5 Communities Guide
 
@@ -18,7 +18,7 @@ In diesem Handbuch werden alle AEM Communities-Aufgaben behandelt, z. B. das Ers
 
 ## Wichtige AEM
 
-* [Erste Schritte mit AEM](https://helpx.adobe.com/experience-manager/get-started.html)
+* [Erste Schritte mit AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=de)
 * [Versionshinweise zu AEM 6.5](/help/release-notes/home.md)
 * [Aktuelle Aktualisierungen der Dokumentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Checkliste für die AEM-Sicherheit](/help/sites-administering/security-checklist.md)
@@ -38,6 +38,7 @@ In diesem Handbuch werden alle AEM Communities-Aufgaben behandelt, z. B. das Ers
 | [Bereitstellungshandbuch für Benutzer](/help/sites-deploying/home.md) | Dieser Leitfaden zeigt Ihnen die Grundlagen der AEM. |
 | [Benutzerhandbuch für Entwickler](/help/sites-developing/home.md) | Erfahren Sie, wie Sie Ihre AEM Instanz erstellen. |
 | [Verwalten des Benutzerhandbuchs](/help/managing/home.md) | In diesem Handbuch wird beschrieben, wie Sie ein AEM Projekt erfolgreich verwalten. |
+| [Benutzerhandbuch für Commerce](/help/commerce/home.md) | Erfahren Sie mehr über Commerce Integration Framework auf AEM. |
 | [Mobiles Benutzerhandbuch](/help/mobile/home.md) | In diesem Handbuch wird das Erstellen und Verwalten von Inhalten für mobile Anwendungen beschrieben. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Dieses Handbuch zeigt Ihnen, wie Sie benutzergenerierte Inhalte mit Livefyre teilen. |
 
