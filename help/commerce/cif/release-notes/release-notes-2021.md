@@ -2,9 +2,9 @@
 title: AEM Content and Commerce - Versionshinweise 2021
 description: AEM Content and Commerce - Versionshinweise 2021
 translation-type: tm+mt
-source-git-commit: 2d0b52dbf85e1fbe91c09a8366744aa77f25cd73
+source-git-commit: 1a6d713e74056333b18ed68f58876c2a75d535b8
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '498'
 ht-degree: 15%
 
 ---
@@ -27,13 +27,11 @@ ht-degree: 15%
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
-| CIF-Add-on | v2021.04.22 | [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
+| CIF-Add-on | v021.04.22 | [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
 | CIF-Kernkomponenten | 1,10,0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF-Venedig-Referenzseite | 2021,04,22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Neuerungen {#what-is-new-april}
-
-* **CIF-Add-on jetzt über  [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) erhältlich. Der alte AEM CIF Connector befindet sich im Wartungsmodus und sollte nicht mehr verwendet werden. Bitte migrieren Sie zum neuen CIF-Add-on.**
 
 * Unterstützung für Kategorie-UID - Hierdurch werden Commerce-Integrationen von Drittanbietern für Systeme freigeschaltet, die Strings für Kategorien-IDs verwenden
 
