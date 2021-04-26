@@ -10,14 +10,14 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
+exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 translation-type: tm+mt
-source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '2979'
 ht-degree: 95%
 
 ---
-
 
 # Grundlegende Handhabung{#basic-handling}
 
@@ -108,7 +108,7 @@ Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
   </tr>
   <tr>
    <td>Commerce</td>
-   <td>Damit können Sie Produkte, Produktkataloge und Bestellungen verwalten, die im Zusammenhang mit Ihren <a href="/help/sites-administering/ecommerce.md">Commerce</a>-Websites stehen.</td>
+   <td>Damit können Sie Produkte, Produktkataloge und Bestellungen verwalten, die im Zusammenhang mit Ihren <a href="/help/commerce/cif-classic/administering/ecommerce.md">Commerce</a>-Websites stehen.</td>
   </tr>
   <tr>
    <td>Experience Fragments</td>
@@ -593,4 +593,3 @@ Diese Optionen sind über den Pfeil neben dem **Kommentarfeld** aufrufbar.
 Hierdurch wird ein dem [Suchbereich](/help/sites-authoring/search.md) ähnliches Fenster mit bereits entsprechend eingestellten Ortsfiltern geöffnet. So können Sie den für die Anzeige gewünschten Inhalt weiter filtern.
 
 ![bh-29](assets/bh-29.png)
-
