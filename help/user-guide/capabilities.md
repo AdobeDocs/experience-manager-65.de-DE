@@ -3,14 +3,14 @@ title: AEM 6.5 Funktionen - Benutzerhandbuch
 seo-title: AEM 6.5 Funktionen - Benutzerhandbuch
 description: Überblick über die wesentlichen Funktionen von AEM 6.5
 seo-description: Überblick über die wesentlichen Funktionen von AEM 6.5
+exl-id: d9941242-a01d-48fa-bad0-4c5b9dd16f4c
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 52%
+source-wordcount: '157'
+ht-degree: 47%
 
 ---
-
 
 # AEM 6.5 Funktionen Benutzerhandbücher {#aem-65-capabilities-user-guides}
 
@@ -34,9 +34,13 @@ ht-degree: 52%
 
 [Digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren.](/help/forms/home.md)
 
-## Handbuch mit Best Practices für {#aem-screens}
+## AEM Screens {#aem-screens}
 
-[Erfahren Sie mehr über die Lösung für digitale Signaturen zur Veröffentlichung dynamischer und interaktiver Erlebnisse.](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html)
+[Erfahren Sie mehr über die Lösung für digitale Signaturen zur Veröffentlichung dynamischer und interaktiver Erlebnisse.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+
+## AEM Commerce {#aem-commerce}
+
+[Erfahren Sie mehr über AEM Commerce.](/help/commerce/home.md)
 
 ## AEM Communities {#aem-communities}
 
@@ -46,6 +50,6 @@ ht-degree: 52%
 
 [Freigeben von benutzergenerierten Inhalten mit AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html)
 
-## AEM Mobile {#aem-mobile}
+## AEM  Mobile {#aem-mobile}
 
 [Erstellen und verwalten Sie Inhalte für Mobile Apps.](/help/mobile/home.md)
