@@ -8,16 +8,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
-feature: Carousel Banners
+feature: Karussellbanner
 role: Business Practitioner, Administrator
+exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '4807'
+source-wordcount: '4804'
 ht-degree: 98%
 
 ---
-
 
 # Karussellbanner {#carousel-banners}
 
@@ -57,7 +57,7 @@ So schaffen Sie einen schnellen Einstieg:
 
    >[!NOTE]
    >
-   >Wenn Sie AEM Sites- oder eCommerce-Kunde sind, können Sie die integrierte Funktion verwenden, um zu den Produktseiten zu navigieren und die vorhandenen SKUs im Produktkatalog zu suchen. Sie müssen keine Hotspot- oder Imagemap-Variablen manuell eingeben. Weitere Informationen finden Sie unter [Einrichten von eCommerce](/help/sites-administering/generic.md).
+   >Wenn Sie AEM Sites- oder eCommerce-Kunde sind, können Sie die integrierte Funktion verwenden, um zu den Produktseiten zu navigieren und die vorhandenen SKUs im Produktkatalog zu suchen. Sie müssen keine Hotspot- oder Imagemap-Variablen manuell eingeben. Weitere Informationen finden Sie unter [Einrichten von eCommerce](/help/commerce/cif-classic/administering/generic.md).
    >
    >
    >Wenn Sie AEM Assets und dynamische Medien verwenden, geben Sie Daten für Hotspots und Imagemaps manuell ein und fügen Sie dann die veröffentlichte URL oder den Einbettungscode in Ihrem Drittanbietersystem für Web Content Management ein.
@@ -104,7 +104,7 @@ Beim Hinzufügen von Hotspots oder Imagemaps zu einem Bannerbild in AEM Assets m
 
 >[!NOTE]
 >
->Wenn Sie AEM Sites- und/oder AEM eCommerce-Kunde sind, können Sie diesen Schritt überspringen. Sie müssen keine Hotspot- oder Imagemap-Variablen manuell ermitteln. Sie können die Integration mit eCommerce für die Produktintegration verwenden. Weitere Informationen finden Sie unter [Einrichten von eCommerce](/help/sites-administering/generic.md). Darüber hinaus können Sie die interaktive Komponente verwenden und in Ihre Webseite einfügen.
+>Wenn Sie AEM Sites- und/oder AEM eCommerce-Kunde sind, können Sie diesen Schritt überspringen. Sie müssen keine Hotspot- oder Imagemap-Variablen manuell ermitteln. Sie können die Integration mit eCommerce für die Produktintegration verwenden. Weitere Informationen finden Sie unter [Einrichten von eCommerce](/help/commerce/cif-classic/administering/generic.md). Darüber hinaus können Sie die interaktive Komponente verwenden und in Ihre Webseite einfügen.
 >
 >Wenn Sie AEM Assets- oder Medien-Kunde sind, veröffentlichen Sie den URL- oder Einbettungscode, integrieren Sie ihn dann in Ihrem Drittanbieter-Content Management System und ermitteln Sie Hotspots und Imagemaps manuell.
 
