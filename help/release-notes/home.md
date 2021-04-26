@@ -1,14 +1,14 @@
 ---
 title: Adobe Experience Manager 6.5 - Versionshinweise
 description: Die AEM-Versionshinweise enthalten wichtige Informationen zur neuesten Version von AEM, einschließlich neuer unterstützter Plattformen, nicht mehr unterstützter und eingestellter Funktionen und bekannter Probleme.
+exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
 translation-type: tm+mt
-source-git-commit: 90ab21c4a25fa1a2dcdf04af61fd30982cae7aae
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '384'
 ht-degree: 46%
 
 ---
-
 
 # Adobe Experience Manager 6.5 - Versionshinweise
 
@@ -16,7 +16,7 @@ Die AEM-Versionshinweise enthalten wichtige Informationen zur neuesten Version v
 
 ## Wichtige AEM
 
-* [Erste Schritte mit AEM](https://helpx.adobe.com/de/experience-manager/get-started.html)
+* [Erste Schritte mit AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=de)
 * [Aktuelle Aktualisierungen der Dokumentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Checkliste für die AEM-Sicherheit](/help/sites-administering/security-checklist.md)
 
@@ -34,6 +34,7 @@ Die AEM-Versionshinweise enthalten wichtige Informationen zur neuesten Version v
 | [Bereitstellungshandbuch für Benutzer](/help/sites-deploying/home.md) | Dieser Leitfaden zeigt Ihnen die Grundlagen der AEM. |
 | [Benutzerhandbuch für Entwickler](/help/sites-developing/home.md) | Erfahren Sie, wie Sie Ihre AEM Instanz erstellen. |
 | [Verwalten des Benutzerhandbuchs](/help/managing/home.md) | In diesem Handbuch wird beschrieben, wie Sie ein AEM Projekt erfolgreich verwalten. |
+| [Benutzerhandbuch für Commerce](/help/commerce/home.md) | Erfahren Sie mehr über Commerce Integration Framework auf AEM. |
 | [Mobiles Benutzerhandbuch](/help/mobile/home.md) | In diesem Handbuch wird das Erstellen und Verwalten von Inhalten für mobile Anwendungen beschrieben. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Dieses Handbuch zeigt Ihnen, wie Sie benutzergenerierte Inhalte mit Livefyre teilen. |
 
