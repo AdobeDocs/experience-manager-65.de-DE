@@ -10,14 +10,14 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
+exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '2239'
 ht-degree: 97%
 
 ---
-
 
 # Bearbeiten: Umgebung und Tools{#authoring-the-environment-and-tools}
 
@@ -171,7 +171,7 @@ Wenn Sie eine Änderung an einem der Assets vornehmen möchten, können Sie den 
 
 ![](do-not-localize/screen_shot_2018-03-22at142448.png)
 
-## Inhaltsstruktur   {#content-tree}
+## Inhaltsstruktur  {#content-tree}
 
 Die **Inhaltsstruktur** bietet einen Überblick über alle auf der Seite verwendeten Komponenten in einer hierarchischen Darstellung, sodass Sie direkt feststellen können, wie die Seite aufgebaut ist.
 
@@ -243,7 +243,7 @@ Wählen Sie den gewünschten Verweistyp, um weitere Informationen anzuzeigen: In
 
 * Instanzen von geliehenen und verliehenen Inhalten, die die **Referenz**-Komponente verwenden. Sie können von hier aus zur referenzierten Seite navigieren.
 
-* [Verweise auf Produktseiten](/help/sites-administering/generic.md#showing-product-references) (verfügbar in der Konsole „E-Commerce - Produkte“)
+* [Verweise auf Produktseiten](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (verfügbar in der Konsole „E-Commerce - Produkte“)
 * [Launches](/help/sites-authoring/launches.md) bietet Zugriff auf zugehörige Launches.
 * [](/help/sites-administering/msm.md)„Live Copies“ zeigt die Pfade aller Live Copies an, die auf der gewählten Ressource basieren. 
 * [Blueprint](/help/sites-administering/msm-best-practices.md), enthält Details und verschiedene Aktionen
