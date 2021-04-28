@@ -3,9 +3,9 @@ title: Einführung und Übersicht
 description: Einführung und Übersicht über Inhalt und Handel. Experience Manager Commerce Integration Framework (CIF) ist ein von der Adobe empfohlenes Muster zur Integration und Erweiterung von Commerce-Dienstleistungen von Magento und anderen kommerziellen Lösungen von Drittanbietern mit dem Experience Cloud.
 thumbnail: introducing-aem-commerce.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '869'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ Marken können Experience Manager mit Adobe Commerce, Teil von Adobe Experience 
 
 * Größere Skalierbarkeit und Innovation
 * Personalisieren von Erlebnissen zur Förderung der Konvertierung
-* einmal erstellen und überall veröffentlichen
+* Einmal erstellen und überall veröffentlichen
 * Kundenerlebnisse bereichern und differenzieren
 * Optimiertes Authoring mit Zugriff auf Commerce-Daten
 
@@ -58,7 +58,7 @@ Leistungsstarke CIF-Tools in AEM ermöglichen es Inhaltserstellern, umfangreiche
 
 ### Time-to-Value (TTV)
 
-Beschleunigt die Projektentwicklung mit [AEM Kernkomponenten](https://www.aemcomponents.dev/), [AEM Venia-Referenzspeicher](https://github.com/adobe/aem-cif-guides-venia), [AEM Projekttyp](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html) und Integrationsmuster für PWA (Headless Content &amp; Commerce).
+Beschleunigt die Projektentwicklung mit [AEM Kernkomponenten](https://www.aemcomponents.dev/), [AEM Venia-Referenzspeicher](https://github.com/adobe/aem-cif-guides-venia), [AEM Projekttyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) und Integrationsmuster für PWA (Headless Content and Commerce).
 
 CIF ist für kontinuierliche Innovation mit einem immer aktuellen Add-on konzipiert, mit dem Kunden auf neue und verbesserte Funktionen zugreifen können.
 
