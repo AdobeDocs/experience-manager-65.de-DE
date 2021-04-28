@@ -7,10 +7,10 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 translation-type: tm+mt
-source-git-commit: 8ead3d1b24177effa4d40141408c5676eaabcc30
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 38%
+source-wordcount: '874'
+ht-degree: 37%
 
 ---
 
@@ -30,7 +30,7 @@ Für die Arbeit mit CIF-Projekten wird eine lokale Entwicklungsumgebung empfohle
 
 >[!NOTE]
 >
->Die folgenden Anweisungen helfen Ihnen beim Einrichten einer lokalen AEM Umgebung für AEM Commerce mit CIF mit Schwerpunkt für AEM 6.5). Wenn Sie AEM als Cloud Service verwenden, lesen Sie bitte die [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/home.html)-Dokumentation.
+>Die folgenden Anweisungen helfen Ihnen beim Einrichten einer lokalen AEM Umgebung für AEM Commerce mit CIF mit Schwerpunkt für AEM 6.5). Wenn Sie AEM als Cloud Service verwenden, lesen Sie bitte die [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html)-Dokumentation.
 
 Das AEM Commerce Hinzufügen-On für AEM 6.5 alias. CIF Hinzufügen-On steht auch für die lokale Entwicklung zur Verfügung und wird als AEM angeboten. Es kann als Feature Pack vom [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) heruntergeladen werden.
 
@@ -46,7 +46,7 @@ Folgendes sollte lokal installiert werden:
 - [npm 6+](https://www.npmjs.com/)
 - [Git](https://git-scm.com/)
 
-### Zugriff auf das CIF-Add-on
+### Zugriff auf das CIF-Hinzufügen
 
 Das CIF-Add-on kann vom [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) heruntergeladen werden, suchen Sie nach &quot;AEM Commerce Add-on&quot;.
 
