@@ -9,10 +9,10 @@ content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
 translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '3009'
-ht-degree: 87%
+ht-degree: 86%
 
 ---
 
@@ -642,7 +642,7 @@ Auf der Demo-Website (Geometrixx Outdoors – Englisch) ist das Gutscheinformula
 
 >[!NOTE]
 >
->Beachten Sie Folgendes: Im Lieferzustand verfügt AEM nicht über Aktionen, die für standardmäßige Funktionen für Bestellungen erforderlich sind, z. B. Warenrückgabe, Aktualisierung des Bestellstatus, Bestellabwicklung, Generierung von Lieferscheinen. Der Hauptzweck ist die Technologievorschau.
+>Es sollte beachtet werden, dass vordefinierte AEM keine Aktionen für Standardfunktionalität im Zusammenhang mit Bestellungen enthalten, wie z.B. Rücksendung von Waren, Aktualisierung des Bestellstatus, Durchführung von Fulfillments und Generierung von Packungsbeilagen. Der Hauptzweck ist die Technologievorschau.
 >
 >Die generische Auftragsverwaltung in AEM wurde grundsätzlich beibehalten. Die im Assistenten verfügbaren Felder hängen von der Gerüste ab:
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
@@ -664,7 +664,7 @@ Auf der Demo-Website (Geometrixx Outdoors – Englisch) ist das Gutscheinformula
 
    ![](/help/sites-administering/do-not-localize/chlimage_1-14.png)
 
-1. Der Assistent wird geöffnet. Verwenden Sie die Registerkarten **Allgemein**, **Inhalt**, **Zahlung** und **Erfüllung**, um die [Informationen zur neuen Bestellung](/help/commerce/cif-classic/administering/concepts.md#order-information) einzugeben.
+1. Der Assistent wird geöffnet. Verwenden Sie die Registerkarten **Basic**, **Content**, **Payment** und **Fulfillment**, um [Informationen zur neuen Bestellung](/help/commerce/cif-classic/administering/concepts.md#order-information) einzugeben.
 
 1. Wählen Sie **Erstellen** aus, um die Informationen zu speichern.
 
