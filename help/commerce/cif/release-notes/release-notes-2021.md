@@ -2,10 +2,10 @@
 title: AEM Content and Commerce - Versionshinweise 2021
 description: AEM Content and Commerce - Versionshinweise 2021
 translation-type: tm+mt
-source-git-commit: 1a6d713e74056333b18ed68f58876c2a75d535b8
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '498'
-ht-degree: 15%
+ht-degree: 14%
 
 ---
 
@@ -27,11 +27,11 @@ ht-degree: 15%
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
-| CIF-Add-on | v021.04.22 | [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
+| CIF-Add-on | 2021,04,22 | [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
 | CIF-Kernkomponenten | 1,10,0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF-Venedig-Referenzseite | 2021,04,22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
-### Neuerungen {#what-is-new-april}
+### Neue Funktionen {#what-is-new-april}
 
 * Unterstützung für Kategorie-UID - Hierdurch werden Commerce-Integrationen von Drittanbietern für Systeme freigeschaltet, die Strings für Kategorien-IDs verwenden
 
@@ -73,15 +73,15 @@ ht-degree: 15%
 | CIF-Kernkomponenten | 1.8.0 | [Versionshinweise](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF-Venedig-Referenzseite | 2021,02,24 | [Versionshinweise](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
-### Neuerungen {#what-is-new-february}
+### Neue Funktionen {#what-is-new-february}
 
 * Produkt-Experience-Management: Richten Sie Produktkatalogseiten einzeln mit Erlebnisfragmenten ein.
 
-* Die Eigenschaften der Produktkonsole wurden erweitert, um verknüpfte Assets und Erlebnisfragmente anzuzeigen, einschließlich Aktionen zum schnellen Navigieren zu den zugehörigen Inhalten.
+* Die Eigenschaften der Produktkonsole wurden erweitert, um verknüpfte Assets und Erlebnisfragmente anzuzeigen, einschließlich Aktionen zum schnellen Navigieren zum zugehörigen Inhalt.
 
-### Verbesserte Funktionen  {#what-is-improved-february}
+### Verbesserte {#what-is-improved-february}
 
-* Verbesserte clientseitige Datenschicht mit Produkt-Image-URL und Kategorieinformationen
+* Verbesserte clientseitige Datenschicht mit Informationen zur Produktbild-URL und Kategorie.
 
 * Mehrere Fehlerkorrekturen.
 
@@ -93,11 +93,11 @@ ht-degree: 15%
 | CIF-Kernkomponenten | 1.7.0 | [Versionshinweise](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF-Venedig-Referenzseite | 2021,02,02 | [Versionshinweise](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
-### Neuerungen {#what-is-new-january}
+### Neue Funktionen {#what-is-new-january}
 
 * Produkt-Experience-Management: Neue Registerkarte &quot;Commerce&quot;-Eigenschaft für Assets und Erlebnisfragmente. Auf dieser Registerkarte können Sie Assets und Erlebnisfragmente mit Produkten und Kategorien verknüpfen. Auf der Registerkarte werden auch Echtzeitdaten für verknüpfte Commerce-Objekte und ein Link zur Anzeige von Details in der Produktkonsole angezeigt.
 
-### Verbesserte Funktionen  {#what-is-improved-january}
+### Verbesserte {#what-is-improved-january}
 
 * Senden Sie Benutzerdaten nach der Authentifizierung an die Adobe Client Data Layer.
 
