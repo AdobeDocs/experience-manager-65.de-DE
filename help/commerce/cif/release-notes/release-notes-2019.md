@@ -2,10 +2,10 @@
 title: AEM Content and Commerce - Versionshinweise 2021
 description: AEM Content and Commerce - Versionshinweise 2021
 translation-type: tm+mt
-source-git-commit: c2fb9af056fa4be13cfd7e60e8a44485e8712c0b
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '973'
-ht-degree: 9%
+ht-degree: 8%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 9%
 | CIF-Kernkomponenten | 0,6,0 | [Versionshinweise](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF-Archetyp | 0,6,2 | [Versionshinweise](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
-### Neuerungen {#what-is-new-november}
+### Neue Funktionen {#what-is-new-november}
 
 * Autoren können Produktdetails und Produktseiten mit Produkten/Kategorien mit einer neuen Option &quot;Ansicht mit Produkt/Kategorie&quot;im Sites-Editor Vorschau.
 
@@ -29,7 +29,7 @@ ht-degree: 9%
 
 * Braintree Zahlungsunterstützung in AEM Venia Shop Front hinzugefügt.
 
-### Verbesserte Funktionen {#what-is-improved-november}
+### Verbesserte {#what-is-improved-november}
 
 * Kategorien-/Produktwähler wurden verbessert, um die angegebene Magento Store-Ansicht in einem Multi-Store-Setup zu respektieren.
 
@@ -45,7 +45,7 @@ ht-degree: 9%
 | CIF-Kernkomponenten | 0,5,0 | [Versionshinweise](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF-Archetyp | 0,5,0 | [Versionshinweise](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
-### Neuerungen {#what-is-new-october}
+### Neue Funktionen {#what-is-new-october}
 
 * Vollständig verlässliche Vorlagen für Produktdetailseite und Produktseite für die Liste. Autoren können jetzt neue Vorlagen erstellen und Produktdetailkomponenten per Drag &amp; Drop auf diese Vorlagen ziehen. Neben dem Hinzufügen anderer Komponenten können Autoren jetzt auch das Layout dieser Vorlagen ändern, sodass sie unbegrenzte Freiheit haben, erstaunliche Erlebnisse zu erstellen, die Marketing- und Commerce-Inhalte kombinieren.
 
@@ -53,7 +53,7 @@ ht-degree: 9%
 
 * Kundenspezifische Komponenten für die Kontoverwaltung. Diese Version unterstützt die folgenden Funktionen: Melden Sie sich an, vergessen Sie das Kennwort und erstellen Sie ein Konto.
 
-### Verbesserte Funktionen  {#what-is-improved-october}
+### Verbesserte {#what-is-improved-october}
 
 * Produktdetails und Produktkomponenten wurden erweitert, um Platzhalterdaten anzuzeigen und Autoren eine Vorschau des Layouts bereitzustellen, wenn diese Listen auf einer Vorlage/Seite platziert werden.
 
@@ -67,7 +67,7 @@ ht-degree: 9%
 | CIF-Kernkomponenten | 0,4,0 | [Versionshinweise](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF-Archetyp | 0,4,0 | [Versionshinweise](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
-### Neuerungen {#what-is-new-september}
+### Neue Funktionen {#what-is-new-september}
 
 * Funktion mit mehreren Vorlagen, mit der Autoren bestimmte Produktdetailseiten oder Produktseiten erweitern können. Autoren können auf einfache Weise eine benutzerspezifische Produktdetailseite oder Produktseite erstellen und mit der Produkt- oder Kategorie-Auswahl die benutzerspezifische Liste einem bestimmten Produkt oder einer bestimmten Kategorie zuweisen.
 
@@ -77,7 +77,7 @@ ht-degree: 9%
 
 * Die Kassengangkomponente umfasst Adressformulare, Zahlungsauswahl und Versandmethodenauswahl.
 
-### Verbesserte Funktionen  {#what-is-improved-september}
+### Verbesserte {#what-is-improved-september}
 
 * Die Komponenten Teaser und Product Carousel unterstützen Produktvarianten.
 
@@ -89,7 +89,7 @@ ht-degree: 9%
 | CIF-Kernkomponenten | 0,3,0 | [Versionshinweise](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF-Archetyp | 0,3,0 | [Versionshinweise](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
-### Neuerungen {#what-is-new-august}
+### Neue Funktionen {#what-is-new-august}
 
 * Das Einbetten von CIF Connector in CIF Archetype wurde optional, um Entwicklern mehr Flexibilität zu bieten.
 
@@ -105,7 +105,7 @@ ht-degree: 9%
 
 * Schaltfläche, mit der Autoren eine AEM Seite platzieren und entweder eine Verknüpfung zu einer AEM, Produktdetailseite, Produktseite oder zu einer Liste eines externen Links herstellen können.
 
-### Verbesserte Funktionen  {#what-is-improved-august}
+### Verbesserte {#what-is-improved-august}
 
 * Die Konfiguration des Magento-Stores wurde von OSGi in AEM Produktkonsole verschoben, um die Integration noch autorfreundlicher zu gestalten.
 
@@ -117,7 +117,7 @@ ht-degree: 9%
 | CIF-Kernkomponenten | 0,2,0 | [Versionshinweise](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF-Archetyp | 0,2,0 | [Versionshinweise](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
-### Neuerungen {#what-is-new-july}
+### Neue Funktionen {#what-is-new-july}
 
 * Erster CIF-Archetyp, der Entwicklern mehrere Bereitstellungsoptionen bereitstellt: 1. Stellen Sie AEM Venia Store 2 bereit. Stellen Sie Gerüste für ein neues Projekt bereit 3. CIF-Elemente in einem vorhandenen Projekt verwenden
 
@@ -131,7 +131,7 @@ ht-degree: 9%
 
 * Serverseitige Liste der speziellen Kategorie, um die Liste der Kategorien auf einer AEM anzuzeigen.
 
-### Verbesserte Funktionen  {#what-is-improved-july}
+### Verbesserte {#what-is-improved-july}
 
 * Unterstützung für Magento 2.3.2 und Fehlerbehebungen im Zusammenhang mit Produkteigenschaften werden in der Produktkonsole angezeigt.
 
@@ -142,7 +142,7 @@ ht-degree: 9%
 | CIF-Anschluss | 0,2,0 | [Versionshinweise](https://github.com/adobe/commerce-cif-connector/releases) |
 | CIF-Kernkomponenten | 0,1,0 | [Versionshinweise](https://github.com/adobe/aem-core-cif-components/releases) |
 
-### Neuerungen {#what-is-new-june}
+### Neue Funktionen {#what-is-new-june}
 
 * AEM B2C-Schaufenster mit dem mobilen ersten Venia CSS-Stil, der Landingpage, der dynamischen Katalognavigation über Produkt- und Kategorien-Seiten, der Produktsuchseite und den Funktionen des Einkaufswagens, um Handelsprojekte zu starten und zu beschleunigen.
 
