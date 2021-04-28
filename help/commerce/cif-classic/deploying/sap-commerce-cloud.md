@@ -7,10 +7,10 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '733'
-ht-degree: 86%
+ht-degree: 85%
 
 ---
 
@@ -203,7 +203,7 @@ Mit diesem Verfahren wird das Demonstrationsgeschäft Geometrixx Online hochgela
    * Benutzername: admin
    * password: nimda
 
-1. Erweitern Sie in der Sidebar **System** und **Tools**. Wählen Sie dann **Import** aus, um das Fenster **Wizard: CSV Import** zu öffnen.
+1. Erweitern Sie in der Seitenleistennavigation **System** und **Tools**. Wählen Sie dann **Import** aus, um das Fenster **Wizard: CSV Import** zu öffnen.
 1. Wählen Sie auf der Registerkarte **Configuration** die Option **Upload** für die folgende **Importdatei**:
 
    [Datei laden](/help/sites-deploying/assets/geometrixx-outdoors-export.csv)
