@@ -9,10 +9,10 @@ feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 100%
+source-wordcount: '104'
+ht-degree: 88%
 
 ---
 
@@ -22,6 +22,6 @@ ht-degree: 100%
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
-Weitere Informationen zu diesem Thema finden Sie in den folgenden Ressourcen:
+Weitere Informationen zu diesem Thema finden Sie in der folgenden Ressource:
 
 - [AEM CIF-Kernkomponenten – Konfiguration mehrere Katalogseiten](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
