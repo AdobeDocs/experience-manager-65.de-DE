@@ -1,16 +1,16 @@
 ---
-title: AEM Commerce
-description: AEM Commerce-Selbsthilfe und Links zur Dokumentation
+title: AEM Content und Commerce
+description: AEM- und Commerce-Selbsthilfe und Links zur Dokumentation
 translation-type: tm+mt
-source-git-commit: b8a46b96db1b81897186f1c8078c06bea64789c4
+source-git-commit: 7b03772e3c7f185cb107c6576e2423275c1a6ccc
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 37%
+source-wordcount: '315'
+ht-degree: 35%
 
 ---
 
 
-# AEM Commerce {#commerce-guide}
+# AEM Content and Commerce {#commerce-guide}
 
 Auf dieser Seite werden die Selbsthilfe-Ressourcen zu AEM Commerce Liste.
 
