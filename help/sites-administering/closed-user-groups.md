@@ -11,11 +11,11 @@ content-type: reference
 discoiquuid: a2bd7045-970f-4245-ad5d-a272a654df0a
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
-feature: Security
+feature: Sicherheit
 translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: cb4b0cb60b8709beea3da70495a15edc8c4831b8
 workflow-type: tm+mt
-source-wordcount: '6891'
+source-wordcount: '6886'
 ht-degree: 61%
 
 ---
@@ -773,7 +773,7 @@ Die Konfiguration von CUGs in Verbindung mit LiveCopy wird im Repository durch d
 
 Beide Elemente werden unter `cq:Page` erstellt. Beim aktuellen Entwurf verarbeitet MSM nur Knoten und Eigenschaften, die sich unter dem Knoten `cq:PageContent` (`jcr:content`) befinden.
 
-Daher können CUG-Gruppen nicht aus einem Blueprint in eine Live Copy zurückgesetzt werden. Planen Sie entsprechend, wenn Sie eine Live Copy einrichten.
+Deshalb können CUG-Gruppen nicht in Live Copies von Blueprints ausgeführt werden. Planen Sie dies ein, wenn Sie eine Live Copy konfigurieren.
 
 ## Änderungen mit der neuen CUG-Implementierung {#changes-with-the-new-cug-implementation}
 
