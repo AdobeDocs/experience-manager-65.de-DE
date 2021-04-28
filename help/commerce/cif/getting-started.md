@@ -5,9 +5,9 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: 3df590b5b5dd4a72af1808fe55c8e61338334d0d
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '682'
 ht-degree: 6%
 
 ---
@@ -28,7 +28,7 @@ Die Onboarding für AEM Content and Commerce ist ein zweistufiger Prozess:
 
 2. AEM mit Ihrer Commerce-Lösung verbinden
 
-### Installieren Sie das AEM Content and Commerce-Add-on für AEM 6.5 {#install-add-on}
+### Installieren Sie AEM Content and Commerce Hinzufügen-On für AEM 6.5 {#install-add-on}
 
 Laden Sie das AEM Commerce Hinzufügen-On für AEM 6.5 aus dem [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) Portal herunter und installieren Sie es.
 
@@ -38,7 +38,7 @@ Beginn und installieren Sie das erforderliche AEM 6.5 Service Pack. Es wird empf
 >
 >Dies wird von der CSE für AEM Managed Service-Kunden durchgeführt.
 
-### AEM an Ihr Commerce-System {#connect} anschließen
+### AEM mit dem Commerce-System {#connect} verbinden
 
 AEM können mit jedem Commerce-System verbunden werden, das über einen zugänglichen GraphQL-Endpunkt für AEM verfügt. Diese Endpunkte sind in der Regel öffentlich verfügbar oder können je nach Projekteinrichtung über private VPN oder lokale Verbindungen verbunden werden.
 
@@ -50,11 +50,11 @@ Ersetzen Sie den Wert von `url` in `com.adobe.cq.commerce.graphql.client.impl.Gr
 
 Die AEM Content- und Commerce-Hinzufügen-On- und CIF-Core-Komponenten verwenden sowohl AEM serverseitige als auch clientseitige Verbindungen. Clientseitige CIF-Kernkomponenten und CIF-Hinzufügen-On-Authoring-Werkzeuge verbinden sich standardmäßig mit `/api/graphql`. Dies kann bei Bedarf über die CIF-Cloud Service-Konfiguration angepasst werden (siehe unten).
 
-Das CIF-Add-on stellt ein GraphQL-Proxy-Servlet bei `/api/graphql` bereit, das optional für [lokale Entwicklung](develop.md) verwendet werden kann. Bei Produktionsbereitstellungen wird dringend empfohlen, einen Reverse-Proxy zum Commerce-GraphQL-Endpunkt über den AEM Dispatcher oder auf anderen Netzwerkebenen (wie CDN) einzurichten.
+Das CIF-Hinzufügen-On stellt ein GraphQL-Proxy-Servlet bei `/api/graphql` bereit, das optional für [lokale Entwicklung](develop.md) verwendet werden kann. Bei Produktionsbereitstellungen wird dringend empfohlen, einen Reverse-Proxy zum Commerce-GraphQL-Endpunkt über den AEM Dispatcher oder auf anderen Netzwerkebenen (wie CDN) einzurichten.
 
 ## Konfigurieren von Stores und Katalogen {#catalog}
 
-Das Add-on und die [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) können auf mehreren AEM Site-Strukturen verwendet werden, die mit verschiedenen Commerce-Stores (oder Store-Ansichten usw.) verbunden sind. Standardmäßig wird das CIF-Add-on mit einer Standardkonfiguration bereitgestellt, die mit dem Standardspeicher und -katalog von Adobe Commerce (Magento) verbunden ist.
+Das Hinzufügen-On und das [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) können auf mehreren AEM Sitestrukturen verwendet werden, die mit verschiedenen Commerce-Stores (oder Store-Ansichten usw.) verbunden sind. Standardmäßig wird das CIF-Hinzufügen-On mit einer Standardkonfiguration bereitgestellt, die mit dem Standardspeicher und -katalog von Adobe Commerce (Magento) verbunden ist.
 
 Diese Konfiguration kann mithilfe der CIF-Cloud Service-Konfiguration wie folgt für das Projekt angepasst werden:
 
