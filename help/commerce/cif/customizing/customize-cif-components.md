@@ -11,10 +11,10 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '2549'
-ht-degree: 98%
+source-wordcount: '2541'
+ht-degree: 94%
 
 ---
 
@@ -61,7 +61,7 @@ Wir werden das [Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) kl
 
 1. Fügen Sie die erforderlichen OSGi-Konfigurationen hinzu, um Ihre AEM-Instanz mit einer Magento-Instanz zu verbinden, oder fügen Sie die Konfigurationen dem neu erstellten Projekt hinzu.
 
-1. An diesem Punkt sollten Sie über eine funktionierende Version einer Storefront verfügen, die mit einer Magento-Instanz verbunden ist. Navigieren Sie zur Seite `US` > `Home` unter: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. An dieser Stelle sollten Sie über eine funktionierende Version eines Stores verfügen, der mit einer Magento-Instanz verbunden ist. Navigieren Sie zur Seite `US` > `Home` unter: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
    Sie sollten sehen, dass die Storefront derzeit im Venia-Design erscheint. Wenn Sie das Hauptmenü der Storefront erweitern, sollten verschiedene Kategorien angezeigt werden, was darauf hinweist, dass die Verbindung mit Magento funktioniert.
 
@@ -196,7 +196,7 @@ Verwenden Sie [eine IDE Ihrer Wahl](https://docs.adobe.com/content/help/de-DE/ex
 
    ![Kern-Speicherort-IDE](../assets/customize-cif-components/core-location-ide.png)
 
-   `MyProductTeaser.java` ist eine Java-Schnittstelle, die die CIF-[ProductTeaser](https://github.com/adobe/aem-core-cif-components/blob/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/models/productteaser/ProductTeaser.java)-Schnittstelle erweitert.
+   `MyProductTeaser.java` ist eine Java-Schnittstelle, die die CIF- [](https://github.com/adobe/aem-core-cif-components/blob/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/models/productteaser/ProductTeaser.java) ProductTeaserinterface erweitert.
 
    Es wurde bereits eine neue Methode mit dem Namen `isShowBadge()` zur Anzeige eines Abzeichens hinzugefügt, wenn das Produkt als „Neu“ gilt.
 
@@ -287,7 +287,7 @@ Verwenden Sie [eine IDE Ihrer Wahl](https://docs.adobe.com/content/help/de-DE/ex
 
    Das Hinzufügen zur `extendProductQueryWith`-Methode ist eine effektive Möglichkeit, um sicherzustellen, dass dem Rest des Modells zusätzliche Produktattribute zur Verfügung stehen. Außerdem wird die Anzahl der ausgeführten Abfragen minimiert.
 
-   Im obigen Code wird das `addCustomSimpleField` zum Abrufen des `eco_friendly`-Attributs verwendet. Dadurch wird deutlich, wie Sie Abfragen für beliebige benutzerdefinierte Attribute durchführen können, die Teil des Magento-Schemas sind.
+   Im obigen Code wird das Attribut `addCustomSimpleField` zum Abrufen des Attributs `eco_friendly` verwendet. Dadurch wird deutlich, wie Sie Abfragen für beliebige benutzerdefinierte Attribute durchführen können, die Teil des Magento-Schemas sind.
 
    >[!NOTE]
    >
@@ -326,7 +326,7 @@ Verwenden Sie [eine IDE Ihrer Wahl](https://docs.adobe.com/content/help/de-DE/ex
    }
    ```
 
-   Bei der obigen Methode wird `productRetriever` genutzt, um das Produkt abzurufen, während die `getAsInteger()`-Methode dazu dient, den Wert des `eco_friendly`-Attributs abzurufen. Dank der GraphQL-Abfragen, die wir zuvor ausgeführt haben, wissen wir, dass der erwartete Wert, wenn das `eco_friendly`-Attribut auf „**Ja**“ gesetzt ist, eigentlich eine Ganzzahl von **1** ist.
+   Bei der obigen Methode wird `productRetriever` zum Abrufen des Produkts verwendet, und die `getAsInteger()`-Methode wird verwendet, um den Wert des `eco_friendly`-Attributs abzurufen. Dank der GraphQL-Abfragen, die wir zuvor ausgeführt haben, wissen wir, dass der erwartete Wert, wenn das `eco_friendly`-Attribut auf „**Ja**“ gesetzt ist, eigentlich eine Ganzzahl von **1** ist.
 
    Nachdem das Sling-Modell aktualisiert wurde, muss das Komponenten-Markup aktualisiert werden, um basierend auf dem Sling-Modell ein Zeichen für **Umweltfreundlich** anzuzeigen.
 
@@ -488,14 +488,14 @@ Sie haben gerade Ihre erste AEM CIF-Komponente angepasst. Laden Sie die [fertige
 
 ## Bonusaufgabe {#bonus-challenge}
 
-Überprüfen Sie die Funktionalität des **neuen** Abzeichens, das bereits im Produkt-Teaser implementiert wurde. Versuchen Sie, ein zusätzliches Kontrollkästchen hinzuzufügen, damit Autoren steuern können, wann das **Umweltfreundlich**-Zeichen angezeigt werden soll. Sie müssen das Komponentendialogfeld unter `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml` aktualisieren.
+Überprüfen Sie die Funktionalität des Kennzeichens **Neu**, das bereits im Product Teaser implementiert wurde. Versuchen Sie, ein zusätzliches Kontrollkästchen hinzuzufügen, damit Autoren steuern können, wann das **Umweltfreundlich**-Zeichen angezeigt werden soll. Sie müssen das Komponentendialogfeld unter `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml` aktualisieren.
 
 ![Aufgabe zur Implementierung neuer Abzeichen](../assets/customize-cif-components/new-badge-implementation-challenge.png)
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-- [AEM-Archetyp](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html)
+- [AEM-Archetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de)
 - [AEM-CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components)
 - [Anpassen von AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
-- [Anpassen der Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/customizing.html)
-- [Erste Schritte mit AEM Sites](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [Anpassen der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=de)
+- [Erste Schritte mit AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
