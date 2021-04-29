@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 16c7a97d-884a-447e-9aad-18a2db1bda1d
 docset: aem65
+exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
 translation-type: tm+mt
-source-git-commit: 06cb3a7cdd9b6de00aff67c66327abadce3e0920
+source-git-commit: 97182f9a7b5fa5f96106fed59eeecf866c6d34ff
 workflow-type: tm+mt
 source-wordcount: '3205'
-ht-degree: 86%
+ht-degree: 85%
 
 ---
-
 
 # Technische Anforderungen{#technical-requirements}
 
@@ -228,7 +228,7 @@ Adobe Experience Manager funktioniert mit den folgenden Serverplattformen in Pro
 1. Linux Kernel 2.6, 3.x und 4.x beinhaltet Derivate von Red Hat Distribution, einschließlich Red Hat Enterprise Linux, CentOS, Oracle Linux und Amazon Linux. AEM Forms-Add-On-Funktionen werden nur unter CentOS 7 und Red Hat Enterprise Linux 7 unterstützt.
 1. AEM Forms wird nur auf Ubuntu 16.04 LTS unterstützt.
 1. Linux-Distribution wird von Adobe Managed Services unterstützt.
-1. Microsoft Windows-Produktionsbereitstellungen werden für Kunden unterstützt, die ein Upgrade auf 6.5 durchführen, sowie für Nicht-Produktionseinsätze. Neue Bereitstellungen erfolgen auf Anforderung für AEM Sites und Assets.
+1. Microsoft Windows-Produktionsimplementierungen werden für Kunden unterstützt, die auf 6.5 aktualisieren, und für Nicht-Produktionsumgebungen. Neue Bereitstellungen erfolgen auf Anforderung für AEM Sites und Assets.
 1. AEM Forms wird auf Microsoft Windows Server ohne Support-Level-R-Einschränkungen unterstützt.
 
 ### Virtuelle und Cloud-Computing-Umgebungen {#virtual-cloud-computing-environments}
