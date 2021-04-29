@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: f9bcb6eb-1df4-4709-bcec-bef0931f797a
+exl-id: c81c5910-b6c9-41bd-8840-a6782792701f
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: adbdff9ff5b5bd8f5f6b22fb724a0e5273072de2
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 63%
+source-wordcount: '386'
+ht-degree: 58%
 
 ---
-
 
 # Designs und der Designer{#designs-and-the-designer}
 
@@ -24,7 +24,7 @@ ht-degree: 63%
 >
 >In diesem Artikel wird beschrieben, wie Sie eine Website basierend auf der klassischen Benutzeroberfläche erstellen. Adobe empfiehlt, die neuesten AEM-Technologien für Ihre Websites zu nutzen, wie ausführlich im Artikel [Erste Schritte bei der Entwicklung von AEM Sites](/help/sites-developing/getting-started.md) beschrieben.
 
-Sie müssen ein Design für Ihre Website erstellen. In AEM verwenden Sie dazu den Designer.
+Der Designer wird verwendet, um einen Entwurf für Ihre Website mithilfe der [Klassischen Benutzeroberfläche](/help/release-notes/touch-ui-features-status.md) in AEM zu erstellen.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Ihr Entwurf kann im Abschnitt **Designs** der Registerkarte **Tools** definiert 
 
 Hier erstellen Sie die Struktur, die zum Speichern des Designs erforderlich ist, und laden dann die erforderlichen Cascaded Style Sheet und Bilder hoch.
 
-Entwürfe werden unter `/etc/designs` gespeichert. Der Pfad zu einem Design, das für eine Website verwendet wird, wird anhand der Eigenschaft `cq:designPath` des Knotens `jcr:content` angegeben.
+Entwürfe werden unter `/apps/<your-project>` gespeichert. Der Pfad zu einem Design, das für eine Website verwendet wird, wird anhand der Eigenschaft `cq:designPath` des Knotens `jcr:content` angegeben.
 
 ![chlimage_1-74](assets/chlimage_1-74a.png)
 
@@ -55,7 +55,7 @@ Zur Realisierung des Design benötigen Sie:
 
 ### Überlegungen zum Entwurf Ihrer Website {#considerations-when-designing-your-website}
 
-Beim Entwickeln einer Website wird dringend empfohlen, Bilder und CSS-Dateien unter `/etc/design/<project>` zu speichern, damit Sie auf Ihre Ressourcen basierend auf dem aktuellen Design verweisen können, wie im folgenden Codefragment beschrieben.
+Beim Entwickeln einer Website wird dringend empfohlen, Bilder und CSS-Dateien unter `/apps/<your-project>` zu speichern, damit Sie auf Ihre Ressourcen basierend auf dem aktuellen Design verweisen können, wie im folgenden Codefragment beschrieben.
 
 ```xml
 <%= currentDesign.getPath() + "/static/img/icon.gif %>
@@ -67,4 +67,3 @@ Im obigen Angebot werden mehrere Leistungen angeboten:
 * Die Neugestaltung der Website kann einfach erfolgen, indem Sie den Designpfad auf einen anderen Knoten im Stammverzeichnis der Website von `design/v1` bis `design/v2.` zeigen.
 
 * `/etc/designs` und  `/content` sind die einzigen externen URLs, die der Browser sieht, um Sie davor zu schützen, dass ein externer Benutzer neugierig darauf wird, was sich unter Ihrem  `/apps` Baum befindet. Die obigen URL-Vorteile helfen auch Ihrem Systemadministrator, bessere Sicherheitsmaßnahmen einzurichten, weil die Angriffsfläche der Assets auf wenige spezifische Orte beschränkt wird.
-
