@@ -10,14 +10,14 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 844e5c96-2a18-4869-b4c8-2fb9efe0332a
 docset: aem65
+exl-id: a80bc883-e0f6-4714-bd28-108262f96d77
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: eeb4c7f6a80d6bad5cd1b540dfacfc7bc5071664
 workflow-type: tm+mt
-source-wordcount: '1694'
-ht-degree: 83%
+source-wordcount: '1761'
+ht-degree: 79%
 
 ---
-
 
 # Single Page Applications (SPAs) und Server-seitiges Rendering {#spa-and-server-side-rendering}
 
@@ -64,7 +64,9 @@ In den folgenden Abschnitten wird erläutert, wie Sie mit Adobe I/O Runtime SSR 
 
 >[!NOTE]
 >
->Adobe empfiehlt für jede AEM-Umgebung eine separate Adobe I/O Runtime-Instanz (Autor, Veröffentlichung, Staging usw.).
+>Adobe empfiehlt einen separaten Adobe I/O Runtime Workspace pro Umgebung (Phase, Test, Test usw.). Dies ermöglicht typische Lebenszyklusmuster für die Systementwicklung (SDLC) mit verschiedenen Versionen einer einzelnen Anwendung, die auf verschiedenen Umgebung bereitgestellt werden. Weitere Informationen finden Sie im Dokument [CI/CD für Project Firefly Applications](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md).
+>
+>Eine separate Arbeitsfläche ist nicht pro Instanz (Autor, Veröffentlichung) erforderlich, es sei denn, die Implementierung der Laufzeitumgebung unterscheidet sich je Instanztyp.
 
 ## Remote Renderer-Konfiguration {#remote-renderer-configuration}
 
