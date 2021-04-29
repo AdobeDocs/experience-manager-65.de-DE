@@ -10,14 +10,14 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 7e2b30a3-75ff-4735-8038-5c5391ac36f3
 docset: aem65
+exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
 translation-type: tm+mt
-source-git-commit: 4e5e6ef022dc9f083859e13ab9c86b622fc3d46e
+source-git-commit: 429f3ee859477fb38938fd6b9706c8006623eb03
 workflow-type: tm+mt
-source-wordcount: '2793'
+source-wordcount: '2815'
 ht-degree: 83%
 
 ---
-
 
 # Berichterstellung {#reporting}
 
@@ -31,6 +31,10 @@ Um Ihnen bei der Überwachung und Analyse des Status Ihrer Instanz zu helfen, st
 * [Benutzerbericht](#user-report)
 * [Bericht der Workflow-Instanz](#workflow-instance-report)
 * [Workflow-Bericht](#workflow-report)
+
+>[!NOTE]
+>
+>Diese Berichte stehen nur in der klassischen Benutzeroberfläche zur Verfügung. Informationen zur Systemüberwachung und zum Berichte in der modernen Benutzeroberfläche finden Sie im Dashboard [Vorgänge.](/help/sites-administering/operations-dashboard.md)
 
 Über die Konsole **Tools** kann auf alle Berichte zugegriffen werden. Wählen Sie im linken Bereich **Berichte** aus und doppelklicken Sie dann im rechten Bereich auf den benötigten Bericht, um ihn zur Anzeige und/oder Konfiguration zu öffnen.
 
@@ -401,7 +405,7 @@ Dieser Bericht stellt Informationen zu benutzergenerierten Inhalten bereit – s
 
 [Spalten mit Informationen](#selecting-and-positioning-the-data-columns) zu:
 
-* Datum 
+* Datum
 * IP-Adresse
 * Seite 
 * Referrer
