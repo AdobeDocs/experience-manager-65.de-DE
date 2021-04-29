@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
+exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
 translation-type: tm+mt
-source-git-commit: 28fdb57f51a5bd97ce78b626db86f4a59de6f0be
+source-git-commit: 78e28636eec331314c2f29c93d516215b1572f20
 workflow-type: tm+mt
-source-wordcount: '3386'
-ht-degree: 84%
+source-wordcount: '3367'
+ht-degree: 85%
 
 ---
-
 
 # Grundlegende AEM-Konzepte {#aem-core-concepts}
 
@@ -441,13 +441,13 @@ Die folgende Liste gibt einen Überblick über die Struktur, die Sie im Reposito
 
 * `/var`
 
-    Dateien, die sich ändern und vom System aktualisiert werden; wie Audit-Logs, Statistiken, Event-Handling. Der Unterordner `/var/classes` enthält die Java-Servlets in Quell- und kompilierten Formularen, die aus den Komponenten-Skripten generiert wurden.
+    Dateien, die sich ändern und vom System aktualisiert werden; wie Audit-Logs, Statistiken, Event-Handling.
 
 ## Umgebungen {#environments}
 
 Bei AEM besteht eine Produktionsumgebung häufig aus zwei verschiedenen Arten von Instanzen: einer [Autoren- und einer Veröffentlichungsinstanz](/help/sites-deploying/deploy.md#author-and-publish-installs).
 
-## Der Dispatcher  {#the-dispatcher}
+## Der Dispatcher {#the-dispatcher}
 
 Der Dispatcher ist das Tool von Adobe für Caching und/oder Lastenausgleich. Weitere Informationen finden Sie unter [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html).
 
