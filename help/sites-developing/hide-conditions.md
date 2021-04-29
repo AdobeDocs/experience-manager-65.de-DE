@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: 104d1c64-b9b3-40f5-8f9b-fe92d9daaa1f
+exl-id: 65f5d5e1-ac11-4a3c-8a51-ce06a741c264
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: baf2c6339a554743b6cc69486fb77b121048ba4b
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 93%
+source-wordcount: '646'
+ht-degree: 98%
 
 ---
 
-
-# Verwenden von Bedingungen zum Ausblenden {#using-hide-conditions}
+# Verwenden von Bedingungen zum Ausblenden  {#using-hide-conditions}
 
 Bedingungen zum Ausblenden können verwendet werden, um festzustellen, ob eine Komponentenressource gerendert wird. Etwa wenn ein Vorlagenautor die Kernkomponente [Listenkomponente](https://helpx.adobe.com/experience-manager/core-components/using/list.html) im [Vorlageneditor](/help/sites-authoring/templates.md) konfiguriert und beschließt, die Optionen zum Erstellen der Liste auf Basis untergeordneter Seiten zu deaktivieren. Durch das Deaktivieren dieser Option im Designdialogfeld wird eine Eigenschaft so festgelegt, dass beim Rendern der Listenkomponente die Bedingung zum Ausblenden ausgewertet und die Option zum Anzeigen untergeordneter Seiten nicht angezeigt wird.
 
@@ -32,7 +32,7 @@ Durch die Verwendung von Bedingungen zum Ausblenden haben Administratoren, Entwi
 >
 >Das Ausblenden einer Ressource auf Grundlage eines Ausdrucks ersetzt nicht die ACL-Berechtigungen. Der Inhalt bleibt bearbeitbar, wird aber einfach nicht angezeigt.
 
-## Implementierung und Nutzungsdetails  {#implementation-and-usage-details}
+## Implementierung und Nutzungsdetails   {#implementation-and-usage-details}
 
 `com.adobe.granite.ui.components.FilteringResourceWrapper` ist verantwortlich für das Filtern der Ressourcen basierend auf dem Vorhandensein und dem Wert der Eigenschaft `granite:hide` für das zu filternde Feld. Die Implementierung `/libs/cq/gui/components/authoring/dialog/dialog.jsp` umfasst eine Instanz von `FilteringResourceWrapper.`
 
@@ -72,16 +72,15 @@ Wenn Vorlagenautoren die Option für die untergeordneten Seiten deaktivieren, wi
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
-1. Eine Richtlinienknoten wird unter `/conf/we-retail/settings/wcm/policies/weretail/components/content/lis`t erstellt, wobei die Eigenschaft `disableChildren` auf `true` eingestellt ist.
-1. Die Ausblenden-Bedingung ist definiert als der Wert einer `granite:hid`e-Eigenschaft auf dem Knoten der dialog-Eigenschaft `/conf/we-retail/settings/wcm/policies/weretail/components/content/list`
+1. Ein Richtlinienknoten wird unter `/conf/we-retail/settings/wcm/policies/weretail/components/content/list` erstellt, wobei die Eigenschaft `disableChildren` auf `true` festgelegt wird.
+1. Die Bedingung zum Ausblenden wird als Wert der Eigenschaft `granite:hide` des Dialogfeldeigenschafts-Knotens `/conf/we-retail/settings/wcm/policies/weretail/components/content/list` definiert.
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
 
-1. Der Wert von `disableChildren` wird aus der Design-Konfiguration gezogen und der Ausdruck `${cdDesign.disableChildren}` wird als `false` ausgewertet, was bedeutet, dass die Option nicht als Teil der Komponente gerendert wird.
+1. Der Wert von `disableChildren` wird aus der Design-Konfiguration gezogen und der Ausdruck `${cqDesign.disableChildren}` wird als `false` ausgewertet, was bedeutet, dass die Option nicht als Teil der Komponente gerendert wird.
 
    Sie können den hide-Ausdruck als Wert der Eigenschaft `granite:hide` hier [auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40) ansehen.
 
 1. Die Option **Untergeordnete Seiten** wird für Seitenautoren bei Verwendung der Listenkomponente nicht mehr gerendert.
 
    ![chlimage_1-221](assets/chlimage_1-221.png)
-
