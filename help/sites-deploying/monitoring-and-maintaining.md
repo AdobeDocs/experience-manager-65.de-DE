@@ -77,7 +77,7 @@ Dazu müssen Sie erst[ein Backup des gesamten Repositorys erstellen](#backing-up
 
 >[!CAUTION]
 >
->Falls Sie einen Anwendungsserver eines Drittanbieters verwenden, gibt es möglicherweise zusätzliche Ordner an anderen Speicherorten, die Sie ebenfalls sichern müssen. Informationen dazu, wie Sie Anwendungsserver installieren, finden Sie unter [Installieren von AEM mit einem Anwendungsserver. ](/help/sites-deploying/application-server-install.md) [](/content/docs/en/aem/6-3/deploy/installing.md#installing adobe experience manager with an application server)
+>Falls Sie einen Anwendungsserver eines Drittanbieters verwenden, gibt es möglicherweise zusätzliche Ordner an anderen Speicherorten, die Sie ebenfalls sichern müssen. Informationen dazu, wie Sie Anwendungsserver installieren, finden Sie unter [Installieren von AEM mit einem Anwendungsserver. ](/help/sites-deploying/application-server-install.md)
 
 >[!CAUTION]
 >
