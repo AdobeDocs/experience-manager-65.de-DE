@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: Security
 discoiquuid: badfaa18-472e-4777-a7dc-9c28441b38b7
+exl-id: 1c3d0d48-5c31-42a8-8698-922d7c2127e9
 translation-type: tm+mt
-source-git-commit: bb50e530f0d015c0e7d06650157e3e3994082483
+source-git-commit: cd895fcab5adce600ce230fb6867392e45963c16
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 48%
+source-wordcount: '255'
+ht-degree: 33%
 
 ---
 
-
-# Content-Disposition-Filter{#content-disposition-filter}
+# Content-Disposition-Filter {#content-disposition-filter}
 
 Der Content-Disposition-Filter ist eine Sicherheitsfunktion zum Schutz vor XSS-Angriffen auf SVG-Dateien.
 
@@ -30,8 +30,8 @@ Sie können den Filter [Apache Sling Content Disposition in GitHub](https://gith
 
 Die Optionen für den Content-Disposition-Filter bieten die folgenden Funktionen:
 
-* Pfade zur Inhaltsanzeige: eine Liste von Pfaden, auf die der Filter angewendet wird, gefolgt von einer Liste von MIME-Typen, die auf diesem Pfad ausgeschlossen werden sollen. Dieser Pfad muss ein absoluter Pfad sein und kann am Ende einen Platzhalter (&#39;&amp;ast;&#39;) enthalten, damit jeder Ressourcenpfad mit dem angegebenen Pfadpräfix übereinstimmt. Beispiel: /content/&amp;ast;:image/jpeg,image/svg+xml &quot; wendet den Filter auf jeden Knoten in /content mit Ausnahme von jpg und svg images an
+* **Pfadtrennungspfade:** eine Liste von Pfaden, auf die der Filter angewendet wird, gefolgt von einer Liste von MIME-Typen, die auf diesem Pfad ausgeschlossen werden sollen. Dieser Pfad muss ein absoluter Pfad sein und kann am Ende einen Platzhalter (`*`) enthalten, damit jeder Ressourcenpfad mit dem angegebenen Pfadpräfix übereinstimmt. Beispiel: `/content/*:image/jpeg,image/svg+xml` wird der Filter auf jeden Knoten in&quot;/content angewendet? außer jpg und svg
 
-* „Excluded Resource Paths“ (Ausgeschlossene Ressourcenpfade): Eine Liste der ausgeschlossenen Ressourcen. Alle Ressourcenpfade müssen als absolute und voll qualifizierte Pfade angegeben werden. Präfixabgleiche/Platzhalter werden nicht unterstützt.
+* **Ausgeschlossene Ressourcenpfade:** Eine Liste ausgeschlossener Ressourcen. Jeder Ressourcenpfad muss als absoluter und voll qualifizierter Pfad angegeben werden. Präfixabgleiche/Platzhalter werden nicht unterstützt.
 
-* „Enable For All Resource Paths“ (Für alle Ressourcenpfade aktivieren): Diese Kennzeichnung steuert, ob dieser Filter für alle Pfade aktiviert werden soll. Ausgenommen sind dabei die durch „Excluded Resource Paths“ definierten ausgeschlossenen Pfade. Ist diese Option auf „true“ festgelegt, werden die Content-Disposition-Pfade ignoriert. Unabhängig von der Konfiguration werden nur Ressourcenpfade behandelt, die eine Eigenschaft mit dem Namen &quot;jcr:data&quot;oder &quot;jcr:content/jcr:data&quot;enthalten.
+* **Für alle Ressourcenpfade aktivieren:** Dieses Flag steuert, ob dieser Filter für alle Pfade aktiviert werden soll, mit Ausnahme der ausgeschlossenen Pfade, die von Ausgeschlossenen Ressourcenpfaden definiert werden. Ist diese Option auf „true“ festgelegt, werden die Content-Disposition-Pfade ignoriert. Unabhängig von der Konfiguration werden nur Ressourcenpfade behandelt, die eine Eigenschaft mit dem Namen `jcr:data` oder `jcr:content/jcr:data` enthalten.
