@@ -1,21 +1,21 @@
 ---
-title: 'Metadaten-Schema zum Definieren des Layouts der Metadateneigenschaften-Seite in [!DNL Adobe Experience Manager Assets]. '
+title: 'Metadaten-Schemas definieren das Layout der Metadateneigenschaften-Seite '
 description: Das Metadatenschema definiert das Layout der Eigenschaftsseite und die für Assets angezeigten Metadaten-Eigenschaften. Erfahren Sie, wie Sie benutzerdefinierte Metadatenschemen erstellen und Metadatenschemen bearbeiten und auf Assets anwenden können.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Metadata
+role: Business Practitioner,Administrator
+feature: 'Metadaten  '
+exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+source-git-commit: ae0c8bda918e2e8a7a6a32e0228d1a2410b283d9
 workflow-type: tm+mt
-source-wordcount: '3605'
+source-wordcount: '3571'
 ht-degree: 61%
 
 ---
 
-
 # Metadatenschemata {#metadata-schemas}
 
-Organisationen verfügen über ein Metadatenmodell, das die Ermittlung, Verwendung, Interoperabilität usw. von Assets verbessert. Die Anwendung für korrekte Metadaten ist für die Aufrechterhaltung von metadatenbasierten Workflows und Prozessen ungefährlich. Um die unternehmensweite Metadatenstrategie und -standards einzuhalten, können Sie Metadaten-Schema verwenden, die DAM-Benutzern helfen, diese auszurichten. [!DNL Adobe Experience Manager] ermöglicht einfache und flexible Methoden zum Erstellen, Verwalten und Anwenden von Metadaten-Schemas.
+Organisationen verfügen über ein Metadatenmodell, das die Ermittlung, Verwendung, Interoperabilität usw. von Assets verbessert. Die korrekte Metadaten-Anwendung ist unzulässig, um metadatengesteuerte Workflows und Prozesse zu erhalten. Um die unternehmensweite Metadatenstrategie und -standards einzuhalten, können Sie Metadaten-Schema verwenden, die DAM-Benutzern helfen, diese auszurichten. [!DNL Adobe Experience Manager] ermöglicht einfache und flexible Methoden zum Erstellen, Verwalten und Anwenden von Metadaten-Schemas.
 
 In [!DNL Adobe Experience Manager Assets] enthalten Schemas spezielle Felder, um bestimmte Informationen auszufüllen. Es enthält außerdem Layoutinformationen, um Metadatenfelder benutzerfreundlich anzuzeigen. Zu den Metadateneigenschaften gehören Titel, Beschreibung, MIME-Typen, Tags und mehr. Sie können den Editor [!UICONTROL Metadaten-Schema Forms] verwenden, um die vorhandenen Schema zu ändern oder benutzerspezifische Metadaten-Schema hinzuzufügen.
 
@@ -27,9 +27,9 @@ Gehen Sie wie folgt vor, um die Eigenschaftsseite für ein Asset Ansicht und zu 
 
    ![Grundlegende Registerkarte der Asset-Eigenschaften, auf der der Asset-Typ nicht geändert werden kann](assets/asset-properties-basic-tab.png)
 
-*Abbildung: Registerkarte &quot;Einfach&quot;bei Asset- [!UICONTROL Eigenschaften].*
+   *Abbildung: Registerkarte &quot;Einfach&quot;bei Asset- [!UICONTROL Eigenschaften].*
 
-Verwenden Sie zum Ändern des MIME-Typs für ein Asset ein benutzerdefiniertes Metadatenschema-Formular oder ändern Sie ein vorhandenes Formular. Weitere Informationen finden Sie unter [Metadaten-Schema bearbeiten Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms). Wenn Sie das Metadaten-Schema eines MIME-Typs ändern, wird das Layout der Eigenschaftsseite für die Assets und alle Untertypen geändert. Durch die Bearbeitung des jpeg-Schemas unter `default/image` wird nur das Metadaten-Layout (Asset-Eigenschaften) für Assets mit dem MIME-Typ `image/jpeg` bearbeitet. Wenn Sie allerdings das „default“-Schema ändern, wird dadurch das Metadaten-Layout für alle Asset-Typen geändert.
+   Verwenden Sie zum Ändern des MIME-Typs für ein Asset ein benutzerdefiniertes Metadatenschema-Formular oder ändern Sie ein vorhandenes Formular. Weitere Informationen finden Sie unter [Metadaten-Schema bearbeiten Forms](#edit-metadata-schema-forms). Wenn Sie das Metadaten-Schema eines MIME-Typs ändern, wird das Layout der Eigenschaftsseite für die Assets und alle Untertypen geändert. Durch die Bearbeitung des jpeg-Schemas unter `default/image` wird nur das Metadaten-Layout (Asset-Eigenschaften) für Assets mit dem MIME-Typ `image/jpeg` bearbeitet. Wenn Sie allerdings das „default“-Schema ändern, wird dadurch das Metadaten-Layout für alle Asset-Typen geändert.
 
 ## Metadaten-Schema-Formulare {#default-metadata-schema-forms}
 
@@ -113,7 +113,7 @@ Im Folgenden finden Sie die gültigen Werte für diese Eigenschaft:
 
 * `./jcr:content/metadata/dc:title`: Speichert den Wert im Metadatenknoten des Assets als die Eigenschaft `dc:title`.
 
-* `./jcr:created`: Speichert das Erstellungsdatum und die Erstellungsuhrzeit eines Assets. Dies ist eine geschützte Eigenschaft. Wenn Sie diese Eigenschaften konfigurieren, empfiehlt Adobe, dass Sie sie mit Bearbeitung deaktivieren markieren.
+* `./jcr:created`: Speichert das Erstellungsdatum und die Erstellungsuhrzeit eines Assets. Dies ist eine geschützte Eigenschaft. Wenn Sie diese Eigenschaften konfigurieren, empfiehlt Adobe, dass Sie sie mit Bearbeitung deaktivieren markieren. Andernfalls tritt der Fehler „Assets konnten nicht geändert werden“ auf, wenn Sie die Eigenschaften des Assets speichern.
 
 Um sicherzustellen, dass die Komponente im Metadaten-Schemaformular korrekt angezeigt wird, sollte der Eigenschaftenpfad keine Leerzeichen enthalten.
 
@@ -301,7 +301,7 @@ Erstellen Sie in diesem Fall einen Knoten unter `/etc/dam/metadataeditor/mimetyp
 [!DNL Assets] ordnet die folgenden MIME-Typen und Schemaformulare zu:
 
 | Schemaformular | MIME-Typen |
-| --------------------------- | --------------------------------------------------- |
+|---|---|
 | image/jpeg | image/pjpeg |
 | image/tiff | image/x-tiff |
 | application/pdf | application/postscript |
@@ -326,9 +326,7 @@ Zum Beispiel können Sie eine Variante des Standard-Metadatenschemas definieren 
 
 Nur Assets, die in den Ordner hochgeladen wurden, auf den dieses Schema angewendet wird, entsprechen den geänderten Metadaten, die im Schema für Variantenmetadaten definiert wurden. [!DNL Assets] in anderen Ordnern, für die das ursprüngliche Schema gilt, entsprechen weiterhin den im ursprünglichen Schema definierten Metadaten.
 
-Die Metadatenübernahme durch Assets richtet sich nach dem Schema, das auf den Ordner der ersten Ebene in der Hierarchie angewendet wird. Assets in Ordnern, die keine Unterordner enthalten, übernehmen die Metadaten aus dem Schema, das auf ihren Ordner angewendet wird.
-
-Sie können ein anderes Schema auf den Unterordner anwenden. Die Assets in einem Unterordner übernehmen das Metadaten-Schema des unmittelbaren Unterordners. Wenn kein Schema oder dasselbe Schema auf Unterordnerebene angewendet wird, übernehmen die Assets Schema vom übergeordneten Ordner.
+Die Vererbung von Metadaten nach Assets basiert auf dem Schema, das auf den Ordner der obersten Ebene in der Hierarchie angewendet wird. Das gleiche Schema wird auf die Unterordner angewendet oder von diesen übernommen. Wenn ein anderes Schema auf Unterordnerebene angewendet wird, wird die Vererbung beendet.
 
 1. Navigieren Sie in der [!DNL Experience Manager]-Schnittstelle zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadaten-Schema]**. Die Seite **[!UICONTROL Metadatenschema-Formulare]** wird angezeigt.
 1. Aktivieren Sie das Kontrollkästchen vor einem Formular, z. B. das Standard-Metadatenformular, und klicken Sie auf **[!UICONTROL Kopieren]** und speichern Sie es als benutzerdefiniertes Formular. Geben Sie einen benutzerdefinierten Namen für das Formular an, beispielsweise `my_default`. Alternativ können Sie ein benutzerdefiniertes Formular erstellen.
