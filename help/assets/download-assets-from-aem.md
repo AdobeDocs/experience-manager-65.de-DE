@@ -3,15 +3,14 @@ title: Herunterladen von Assets
 description: Erfahren Sie, wie Sie Assets von [!DNL Adobe Experience Manager] herunterladen und die Download-Funktion aktivieren oder deaktivieren.
 contentOwner: AG
 role: Business Practitioner
-feature: Asset Management,Asset Distribution
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Asset-Verwaltung, Asset-Verteilung
+exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
+source-git-commit: 92983232216a5c7c563ebddc3baf6fcd81aaa4e2
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 78%
+source-wordcount: '891'
+ht-degree: 75%
 
 ---
-
 
 # Herunterladen von Assets aus [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
@@ -64,6 +63,8 @@ Um das Herunterladen von Assets aus dem DAM zuzulassen, z. B. wenn Sie die Asset
    enabled=B"true"
    asset.download.prezip.maxcontentsize=I"102400"
    ```
+
+Standardmäßig erzwingt `GET`-Anforderungen zum Herunterladen von Dateien [!DNL Experience Manager] eine Beschränkung von 50 MB auf die Downloadgröße des ZIP-Archivs. Downloads, die über `POST`-Anforderungen oder die Benutzeroberfläche initiiert werden, werden von dieser Beschränkung nicht berührt.
 
 ## Deaktivieren des Asset-Download-Servlets {#disable-asset-download-servlet}
 
