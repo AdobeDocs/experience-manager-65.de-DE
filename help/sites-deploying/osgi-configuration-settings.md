@@ -10,15 +10,14 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Konfiguration
+exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
+source-git-commit: ca66c0655bcd878644e275fc8f7a41b38110beae
 workflow-type: tm+mt
-source-wordcount: '3806'
-ht-degree: 60%
+source-wordcount: '3561'
+ht-degree: 64%
 
 ---
-
 
 # OSGi-Konfigurationseinstellungen{#osgi-configuration-settings}
 
@@ -426,29 +425,6 @@ Die anderen Modi können vom Sidekick aus aufgerufen werden, oder das Suffix `?w
 Weitere Informationen finden Sie unter [Löschen von Versionen](/help/sites-deploying/version-purging.md).
 
 **Day CQ Workflow Email Notification** ServiceKonfigurieren Sie die E-Mail-Einstellungen für Benachrichtigungen, die von einem Workflow gesendet werden.
-
-**Day CQSE HTTP** ServiceControl der CQ-Servlet-Engine:
-
-* **NIO für HTTP, **Ob NIO für HTTP verwendet werden soll oder nicht. Standardwert ist „true“. Wird nur verwendet, wenn HTTP aktiviert ist.
-* **Connection Timeout, **Connection timeout in Millisekunden. Diese Eigenschaft gilt für HTTP- und HTTPS-Verbindungen. Der Standardwert ist 60 Sekunden.
-
-* **Aktivieren Sie HTTPS,** unabhängig davon, ob HTTPS aktiviert ist. Der Standardwert ist false.
-* **Sitzungs-Timeout**, Standardlebensdauer einer HTTP-Sitzung in Minuten angegeben. Wenn der Timeout 0 oder kleiner ist, erfolgt kein Timeout für Sitzungen. Der Standardwert ist 10 Minuten.
-* **Debug-Protokollierung**, ob Meldungen auf DEBUG-Ebene geschrieben werden sollen oder nicht. Der Standardwert ist false.
-* **Anforderungs-Puffergröße**, Größe des Puffers für Anforderungen in Byte. Der Standardwert ist 8 KB.
-* **Maximale Anzahl an Threads**, maximale Anzahl an Threads, die zur Bearbeitung von Anforderungen verwendet werden. Der Standardwert ist 200.
-
-Die folgenden Eigenschaften gelten nur, wenn HTTPS aktiviert ist.
-
-* **HTTPS-Anschluss**, Anschluss für HTTPS-Anforderung. Standardwert ist 433.
-* **NIO für HTTPS**, ob NIO für HTTP verwendet werden soll oder nicht. Der Standardwert ist der NIO-Wert für die HTTP-Eigenschaft.
-* **Keystore**, Absoluter Pfad zum Keystore, der für HTTPS verwendet werden soll. Erforderlich, wenn HTTPS aktiviert ist.
-* **Keystore Password**, Password, um auf den Keystore zuzugreifen.
-* **Key Alias**, Alias des geheimen Schlüssels im Keystore.
-* **Key Password**, Password, um den geheimen Schlüssel im Keystore zu entsperren.
-* **Client-Zertifikat**, Anforderung, dass der Client ein gültiges Zertifikat bereitstellt. Die Standardeinstellung ist &quot;Ohne&quot;.
-
-Weitere Informationen zu den SSL-bezogenen Optionen und eine vollständige Beschreibung zur Aktivierung von HTTPS für CQSE finden Sie unter [Aktivieren von HTTP Over SSL](/help/sites-administering/ssl-by-default.md).
 
 **CQ-Rewriter – HTML-Parser-Factory**
 
