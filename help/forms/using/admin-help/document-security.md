@@ -10,15 +10,14 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
-feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Dokumentensicherheit
+exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
+source-git-commit: 76201cc58f2d3f7d65f867801fcb95f5390baada
 workflow-type: tm+mt
-source-wordcount: '2548'
-ht-degree: 99%
+source-wordcount: '2560'
+ht-degree: 98%
 
 ---
-
 
 # Informationen zu Document Security {#about-document-security}
 
@@ -223,6 +222,10 @@ Richtliniensatzkoordinatoren können diese Aufgaben ausführen:
 * Richtlinien- und Dokumentereignisse für die Richtlinien oder Dokumente im Richtliniensatz anzeigen
 * Den Zugriff auf Dokumente aufheben
 * Richtlinien für das Dokument wechseln
+
+>[!NOTE]
+>
+>Sie können maximal 1000 Richtliniensatznamen aus der Datenbank abrufen.
 
 Richtliniensätze werden auf den Document Security-Administrationswebseiten von Administratoren und Richtliniensatzkoordinatoren erstellt und gelöscht, denen die entsprechenden Berechtigungen erteilt wurden.
 
