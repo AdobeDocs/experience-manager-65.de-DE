@@ -10,15 +10,14 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Konfiguration
+exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
+source-git-commit: d9565be9183bd4485036d99869585a79999be54b
 workflow-type: tm+mt
-source-wordcount: '2732'
-ht-degree: 83%
+source-wordcount: '2719'
+ht-degree: 82%
 
 ---
-
 
 # Ausführen von AEM mit der TarMK-Cold-Standby-Funktion{#how-to-run-aem-with-tarmk-cold-standby}
 
@@ -282,7 +281,7 @@ Die folgenden OSGi-Einstellungen sind für den Cold-Standby-Dienst verfügbar:
 
 * **Zulässige IP-Bereiche (`primary.allowed-client-ip-ranges`):** - die IP-Bereiche, aus denen die primären Verbindungen zulassen.
 * **Sicher (`secure`):SSL-Verschlüsselung** aktivieren. Damit Sie die Einstellung nutzen können, muss sie auf allen Instanzen aktiviert werden.
-* **Standby Read Timeout (`standby.readtimeout`):** Timeout für Anfragen, die von der Standby-Instanz in Millisekunden ausgegeben werden. Die empfohlene Timeout-Einstellung lautet 43200000. In der Regel wird empfohlen, einen Timeout-Wert von mindestens 12 Stunden festzulegen.
+* **Standby Read Timeout (`standby.readtimeout`):** Timeout für Anfragen, die von der Standby-Instanz in Millisekunden ausgegeben werden. Der Standardwert ist 60000 (eine Minute).
 
 * **Automatische Standby-Bereinigung (`standby.autoclean`):** Rufen Sie die Bereinigungsmethode auf, wenn die Größe des Speichers bei einem Synchronisierungszyklus zunimmt.
 
@@ -410,4 +409,3 @@ Es ist wichtig, hin und wieder eine Speicherbereinigung (Garbage Collection) fü
    >[!NOTE]
    >
    >Wenn Sie keinen freigegebenen Datenspeicher verwenden, muss die Speicherbereinigung zuerst auf der primären und dann auf der Standby-Instanz ausgeführt werden.
-
