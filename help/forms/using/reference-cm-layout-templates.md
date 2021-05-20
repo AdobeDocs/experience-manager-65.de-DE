@@ -8,20 +8,19 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: correspondence-management
 discoiquuid: afeb9f4d-3feb-4a0e-8884-e3ec1309b33b
-translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+exl-id: 40d127b5-1ce6-41fb-ac4c-2bf7ae79da82
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 91%
 
 ---
 
-
 # Vorlagen für Empfehlungsschreiben {#reference-letter-templates}
 
 In Correspondence Management enthält eine Briefvorlage typische typische Formularfelder, Layoutmerkmale wie Kopf- und Fußzeilen sowie leere „Zielbereiche“ zum Einfügen des Inhalts.
 
-Correspondence Management stellt Briefvorlagen im AEM Forms-Paket [AEM-FORMS-REFERENCE-LAYOUT-TEMPLATES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES) bereit. Informationen zum Installieren eines Pakets finden Sie unter [So arbeiten Sie mit Paketen](/help/sites-administering/package-manager.md). Sie können die Vorlagen in Designer an Ihre Branding- und Geschäftsanforderungen anpassen. Das Paket enthält die folgenden Vorlagen:
+Correspondence Management stellt Briefvorlagen im AEM Forms-Package [AEM-FORMS-REFERENCE-LAYOUT-TEMPLATES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES) bereit. Informationen zum Installieren eines Pakets finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md). Sie können die Vorlagen in Designer entsprechend Ihren Branding- und Geschäftsanforderungen anpassen. Das Paket enthält die folgenden Vorlagen:
 
 * Klassisch
 * Klassisch einfach
@@ -37,7 +36,7 @@ Nach der Installation des Pakets werden die Layout-Vorlagen (XDPs) im Vorlagenor
 
 Im Folgenden werden die allgemeinen Datenfelder in allen Vorlagen in diesem Paket aufgeführt:
 
-* Datum 
+* Datum
 * Anrede
 * Schließender Text
 * Unterschriften-Text
@@ -66,7 +65,7 @@ PDF-Vorschau eines Briefs erstellt mithilfe der klassischen einfachen Vorlage
 
 Die Symmetrisch links-Vorlage beinhaltet das Logo links neben dem Brief.
 
-![ausgeglichene Linke](assets/balancedleft.png)
+![balancedleft](assets/balancedleft.png)
 
 PDF-Vorschau eines Briefs erstellt mithilfe der Symmetrisch links-Vorlage
 
@@ -101,4 +100,3 @@ Die Vorlage „Sichtbar oben - klassisch“ hat eine Kopfzeile oben auf der Seit
 ![visualtopclassic](assets/visualtopclassic.png)
 
 PDF-Vorschau eines Briefs erstellt mithilfe der Vorlage „Sichtbar oben - klassisch“
-
