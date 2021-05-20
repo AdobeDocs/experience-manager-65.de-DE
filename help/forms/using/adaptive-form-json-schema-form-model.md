@@ -1,11 +1,10 @@
 ---
-title: Erstellen eines adaptiven Forms mit dem JSON-Schema
-description: Erfahren Sie, wie Sie adaptive Formulare mit dem JSON-Schema als Formularmodell erstellen. Sie können vorhandene JSON-Schema verwenden, um adaptive Formulare zu erstellen. Machen Sie sich mit einem Beispiel für ein JSON-Schema weiter und konfigurieren Sie Felder in der JSON-Schema-Definition, beschränken Sie die zulässigen Werte für eine adaptive Formularkomponente und lernen Sie nicht unterstützte Konstrukte kennen.
+title: Wie erstelle ich Adaptive Forms mit dem JSON-Schema?
+description: Erfahren Sie, wie Sie adaptive Formulare mithilfe des JSON-Schemas als Formularmodell erstellen. Sie können vorhandene JSON-Schemata verwenden, um adaptive Formulare zu erstellen. Machen Sie sich mit einem Beispiel eines JSON-Schemas genauer vertraut, konfigurieren Sie Felder in der JSON-Schemadefinition vorab, beschränken Sie die akzeptablen Werte für eine adaptive Formularkomponente und lernen Sie nicht unterstützte Konstrukte kennen.
 feature: Adaptive Formulare
 role: Business Practitioner, Developer
 level: Beginner, Intermediate
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
-translation-type: tm+mt
 source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
 source-wordcount: '1450'
@@ -17,16 +16,16 @@ ht-degree: 64%
 
 ## Voraussetzungen {#prerequisites}
 
-Das Authoring eines adaptiven Formulars mit einem JSON-Schema als Formularmodell erfordert grundlegende Kenntnisse zum JSON-Schema. Es wird empfohlen, den folgenden Inhalt vor diesem Artikel durchzulesen.
+Das Authoring eines adaptiven Formulars mit einem JSON-Schema als Formularmodell erfordert grundlegende Kenntnisse des JSON-Schemas. Es wird empfohlen, den folgenden Inhalt vor diesem Artikel durchzulesen.
 
 * [Erstellen eines adaptiven Formulars](creating-adaptive-form.md)
 * [JSON-Schema](https://json-schema.org/) 
 
 ## Verwenden eines JSON-Schemas als Formularmodell  {#using-a-json-schema-as-form-model}
 
-[!DNL Adobe Experience Manager Forms] unterstützt die Erstellung eines adaptiven Formulars mit einem vorhandenen JSON-Schema als Formularmodell. Dieses JSON-Schema stellt die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden. Das verwendete JSON-Schema sollte mit [v4-Spezifikationen](https://json-schema.org/draft-04/schema) konform sein.
+[!DNL Adobe Experience Manager Forms] unterstützt die Erstellung eines adaptiven Formulars mit einem vorhandenen JSON-Schema als Formularmodell. Dieses JSON-Schema stellt die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden. Das JSON-Schema, das Sie verwenden, sollte [v4-Spezifikationen](https://json-schema.org/draft-04/schema) entsprechen.
 
-Die wichtigsten Funktionen eines JSON-Schemas sind:
+Die wichtigsten Funktionen bei der Verwendung eines JSON-Schemas sind:
 
 * Die Struktur der JSON wird als Baumstruktur in der Registerkarte für die Inhaltssuche im Authoring-Modus für ein adaptives Formular angezeigt. Sie können Elemente aus der JSON-Hierarchie in das adaptive Formular ziehen.
 * Sie können das Formular mit JSON, das mit dem zugehörigen Schema konform ist, vorausfüllen.
@@ -62,7 +61,7 @@ Diese Zuordnung von JSON-Elementen zu Komponenten adaptiver Formulare ist wie fo
    <th><strong>Komponente des adaptiven Formulars</strong></th>
   </tr>
   <tr>
-   <td><p>Zeichenfolgeneigenschaften mit Einschränkungen für enum und enumNames.</p> <p>Syntax,</p> <p> <code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"enum" : ["M", "F"]</code></p> <p><code>"enumNames" : ["Male", "Female"]</code></p> <p><code>}</code></p> <p> </p> </td>
+   <td><p>Zeichenfolgeneigenschaften mit Enum- und enumNames-Beschränkung.</p> <p>Syntax,</p> <p> <code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"enum" : ["M", "F"]</code></p> <p><code>"enumNames" : ["Male", "Female"]</code></p> <p><code>}</code></p> <p> </p> </td>
    <td><p>Dropdown-Komponente:</p>
     <ul>
      <li>Die in enumNames aufgeführten Werte werden im Dropdown-Feld angezeigt.</li>
@@ -108,17 +107,17 @@ Diese Zuordnung von JSON-Elementen zu Komponenten adaptiver Formulare ist wie fo
 
 Bei einem adaptiven Formular werden jedem generierten Feld im JSON-Schema verfügbare Informationen zugeordnet. Führen Sie insbesondere die folgenden Aufgaben aus:
 
-* Die `title`-Eigenschaft dient als Bezeichnung für die Komponenten des adaptiven Formulars.
-* Die Eigenschaft `description` wird als lange Beschreibung für eine Komponente des adaptiven Formulars festgelegt.
-* Die Eigenschaft `default` dient als Ausgangswert eines adaptiven Formularfelds.
-* Die `maxLength`-Eigenschaft wird als `maxlength`-Attribut der Textfeldkomponente festgelegt.
+* Die Eigenschaft `title` dient als Beschriftung für die Komponenten des adaptiven Formulars.
+* Die Eigenschaft `description` wird als lange Beschreibung für eine Komponente eines adaptiven Formulars festgelegt.
+* Die Eigenschaft `default` dient als Anfangswert eines adaptiven Formularfelds.
+* Die Eigenschaft `maxLength` wird als Attribut `maxlength` der Textfeldkomponente festgelegt.
 * Die Eigenschaften `minimum`, `maximum`, `exclusiveMinimum` und `exclusiveMaximum` werden für die Komponente &quot;Numerisches Feld&quot;verwendet.
 * Zur Unterstützung des Bereichs für `DatePicker component` werden zusätzliche JSON-Schema-Eigenschaften `minDate` und `maxDate` bereitgestellt.
-* Die Eigenschaften `minItems` und `maxItems` werden verwendet, um die Anzahl der Elemente/Felder einzuschränken, die einer Bereichskomponente hinzugefügt oder daraus entfernt werden können.
-* Die `readOnly`-Eigenschaft legt das `readonly`-Attribut einer adaptiven Formularkomponente fest.
-* Die `required`-Eigenschaft kennzeichnet das Feld für das adaptive Formular als obligatorisch, während die finalen gesendeten JSON-Daten im Bereich (wo type object ist) Felder mit leerem Wert haben, die diesem Objekt entsprechen.
-* Die `pattern`-Eigenschaft wird als Überprüfungsmuster (regulärer Ausdruck) im adaptiven Formular festgelegt.
-* Die Erweiterung der JSON-Schema-Datei muss .Schema.json beibehalten werden. Beispiel: &lt;filename>.Schema.json.
+* Die Eigenschaften `minItems` und `maxItems` werden verwendet, um die Anzahl der Elemente/Felder zu beschränken, die einer Bedienfeldkomponente hinzugefügt oder daraus entfernt werden können.
+* Die Eigenschaft `readOnly` legt das Attribut `readonly` einer Komponente eines adaptiven Formulars fest.
+* Die `required`-Eigenschaft markiert das Feld des adaptiven Formulars als obligatorisch, während in Bereich (wo der Typ &quot;Objekt&quot;ist) die endgültigen gesendeten JSON-Daten Felder mit leerem Wert aufweisen, die diesem Objekt entsprechen.
+* Die Eigenschaft `pattern` wird als Überprüfungsmuster (regulärer Ausdruck) im adaptiven Formular festgelegt.
+* Die Erweiterung der JSON-Schemadatei muss .schema.json beibehalten werden. Beispiel: &lt;filename>.schema.json.
 
 ## JSON-Beispielschema {#sample-json-schema}
 
@@ -304,7 +303,7 @@ Hier ist ein Beispiel für ein JSON-Schema.
 
 ### Wiederverwendbare Schemadefinitionen {#reusable-schema-definitions}
 
-Definitionsschlüssel kennzeichnen wiederverwendbare Schemas. Die wiederverwendbaren Schema-Definitionen werden zum Erstellen von Fragmenten verwendet. Dies geschieht ähnlich wie beim Identifizieren komplexer Typen in XSD. Ein JSON-Beispielschema mit Definitionen wird unten angezeigt:
+Definitionsschlüssel kennzeichnen wiederverwendbare Schemas. Die wiederverwendbaren Schemadefinitionen werden zum Erstellen von Fragmenten verwendet. Dies geschieht ähnlich wie beim Identifizieren komplexer Typen in XSD. Ein JSON-Beispielschema mit Definitionen wird unten angezeigt:
 
 ```json
 {
@@ -335,7 +334,7 @@ Das obige Beispiel definiert einen Kundendatensatz, bei dem jeder Kunde über ei
 
 ## Vorkonfigurieren von Feldern in JSON-Schemadefinitionen {#pre-configuring-fields-in-json-schema-definition}
 
-Mit der Eigenschaft **aem:afProperties** können Sie das JSON-Schema vorkonfigurieren, um es einer benutzerdefinierten adaptiven Formularkomponente zuzuordnen. Ein Beispiel wird unten angezeigt:
+Sie können die Eigenschaft **aem:afProperties** verwenden, um das JSON-Schema-Feld so zu konfigurieren, dass es einer benutzerdefinierten adaptiven Formularkomponente zugeordnet wird. Ein Beispiel wird unten angezeigt:
 
 ```json
 {
@@ -355,11 +354,11 @@ Mit der Eigenschaft **aem:afProperties** können Sie das JSON-Schema vorkonfigur
 }
 ```
 
-## Skripten oder Ausdruck für Formularobjekte {#configure-scripts-or-expressions-for-form-objects} konfigurieren
+## Skripten oder Ausdrücke für Formularobjekte konfigurieren {#configure-scripts-or-expressions-for-form-objects}
 
-JavaScript ist die Ausdruckssprache für adaptive Formulare. Alle Ausdrücke sind gültige JavaScript-Ausdrücke und verwenden Skriptmodell-APIs für adaptive Formulare. Sie können Formularobjekte vorkonfigurieren, um einen Ausdruck[in einem Formular-Ereignis auszuwerten.](adaptive-form-expressions.md)
+JavaScript ist die Ausdruckssprache für adaptive Formulare. Alle Ausdrücke sind gültige JavaScript-Ausdrücke und verwenden Skriptmodell-APIs für adaptive Formulare. Sie können Formularobjekte vorkonfigurieren, um [einen Ausdruck](adaptive-form-expressions.md) für ein Formularereignis auszuwerten.
 
-Verwenden Sie die aem:afproperties-Eigenschaft, um Ausdruck oder Skripten für adaptive Formularkomponenten vorzukonfigurieren. Wenn beispielsweise das Ereignis initialize ausgelöst wird, setzt der folgende Code den Wert des Telefonfelds ein und druckt einen Wert in das Protokoll:
+Verwenden Sie die Eigenschaft aem:afproperties , um adaptive Formularausdrücke oder Skripte für adaptive Formularkomponenten vorzukonfigurieren. Wenn beispielsweise das Initialisierungsereignis ausgelöst wird, setzt der folgende Code den Wert des Telefonfelds und druckt einen Wert in das Protokoll :
 
 ```json
 "telephone": {
@@ -377,7 +376,7 @@ Verwenden Sie die aem:afproperties-Eigenschaft, um Ausdruck oder Skripten für a
 }
 ```
 
-Sie sollten Mitglied der [forms-power-user group](forms-groups-privileges-tasks.md) sein, um Skripte oder Ausdruck für Formularobjekte zu konfigurieren. Die folgende Tabelle Liste alle Skript-Ereignis, die für eine adaptive Formularkomponente unterstützt werden.
+Sie sollten Mitglied der [forms-power-user group](forms-groups-privileges-tasks.md) sein, um Skripte oder Ausdrücke für Formularobjekte zu konfigurieren. In der folgenden Tabelle sind alle Skriptereignisse aufgeführt, die für eine adaptive Formularkomponente unterstützt werden.
 
 <table>
  <tbody>
@@ -582,11 +581,11 @@ Sie sollten Mitglied der [forms-power-user group](forms-groups-privileges-tasks.
  </tbody>
 </table>
 
-Einige Beispiele für die Verwendung von Ereignissen in einem JSON sind das Ausblenden eines Felds beim Initialisieren des Ereignisses und das Konfigurieren des Werts eines anderen Felds im Ereignis zum Bestätigen des Werts. Detaillierte Informationen zum Erstellen von Ausdrücken für die Skript-Ereignis finden Sie unter [Ausdruck für adaptive Formulare](adaptive-form-expressions.md).
+Einige Beispiele für die Verwendung von Ereignissen in einer JSON sind das Ausblenden eines Felds beim Initialisierungsereignis und das Konfigurieren des Werts eines anderen Felds beim Ereignis zum Bestätigen von Werten. Ausführliche Informationen zum Erstellen von Ausdrücken für die Skriptereignisse finden Sie unter [Adaptive Formularausdrücke](adaptive-form-expressions.md).
 
-Im Folgenden finden Sie das Beispiel für JSON-Code für die zuvor erwähnten Beispiele.
+Hier finden Sie den JSON-Beispielcode für die zuvor erwähnten Beispiele.
 
-### Ausblenden eines Felds beim Initialisieren des Ereignisses {#hiding-a-field-on-initialize-event}
+### Ausblenden eines Felds beim Initialisierungsereignis {#hiding-a-field-on-initialize-event}
 
 ```json
 "name": {
@@ -599,7 +598,7 @@ Im Folgenden finden Sie das Beispiel für JSON-Code für die zuvor erwähnten Be
 }
 ```
 
-#### Wert eines anderen Felds im Ereignis für Wertbeanspruchung {#configure-value-of-another-field-on-value-commit-event} konfigurieren
+#### Wert eines anderen Felds für Wert-Commit-Ereignis {#configure-value-of-another-field-on-value-commit-event} konfigurieren
 
 ```json
 "Income": {
@@ -743,6 +742,6 @@ Es gibt zwei Optionen:
 * Blättern Sie durch die Baumstruktur
 * Verwenden Sie das Suchfeld, um ein Element zu finden
 
-**Was sollte die Erweiterung der JSON-Schema-Datei sein?**
+**Was sollte die Erweiterung der JSON-Schemadatei sein?**
 
-Die Erweiterung der JSON-Schema-Datei muss .Schema.json lauten. Beispiel: &lt;filename>.Schema.json.
+Die Erweiterung der JSON-Schemadatei muss .schema.json lauten. Beispiel: &lt;filename>.schema.json.
