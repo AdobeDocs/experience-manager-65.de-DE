@@ -1,22 +1,21 @@
 ---
 title: Dynamic Media-Bildprofile
-description: Erstellen Sie Profile mit Einstellungen für Unschärfemaske und/oder intelligentes Beschneiden oder Muster und wenden Sie das Profil dann auf einen Ordner mit Bild-Assets an.
+description: Erstellen Sie Bildprofile, die Einstellungen für Unschärfemasken, smartes Zuschneiden oder smarte Farb-/Bildmuster (oder beides) enthalten, und wenden Sie dann das Profil auf einen Ordner mit Bild-Assets an.
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
-feature: Image Profiles
+feature: Bildprofile
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2764'
+source-wordcount: '2761'
 ht-degree: 96%
 
 ---
-
 
 # Bildprofile für Dynamic Media {#image-profiles}
 
@@ -105,7 +104,7 @@ In **[!UICONTROL Unschärfemaske]** sind die folgenden Filteroptionen verfügbar
  </tbody>
 </table>
 
-Das Scharfzeichnen wird unter [Scharfzeichnen von Bildern](/help/assets/assets/sharpening_images.pdf.
+Das Scharfzeichnen wird unter [Scharfzeichnen von Bildern] (/help/assets/assets/sharpening_images.pdf) beschrieben.
 
 ## Erstellen von Dynamic Media-Bildprofilen {#creating-image-profiles}
 
@@ -132,7 +131,7 @@ Informationen hierzu finden Sie auch im Thema über die [Best Practices für die
 ## Bearbeiten oder Löschen von Bildprofilen für Dynamic Media {#editing-or-deleting-image-profiles}
 
 1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Bildprofile.]**
-1. Wählen Sie das Profil aus, das Sie bearbeiten oder entfernen möchten. Um es zu bearbeiten, wählen Sie **[!UICONTROL Bildverarbeitungs-Profil bearbeiten.]** Um das Profil zu entfernen, wählen Sie &quot;Bildverarbeitungs-  **[!UICONTROL löschen&quot;.]**
+1. Wählen Sie das Bildprofil aus, das Sie bearbeiten oder entfernen möchten. Um sie zu bearbeiten, wählen Sie **[!UICONTROL Bildverarbeitungsprofil bearbeiten aus.]** Um es zu entfernen, wählen Sie Bildverarbeitungsprofil  **[!UICONTROL löschen aus.]**
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
@@ -277,7 +276,7 @@ Sie können einen smarten Zuschnitt erneut ausführen, um die zusätzlichen Zusc
 
 
 
-1. Tippen Sie in der rechten oberen Ecke der Seite auf **[!UICONTROL Speichern.]** und dann auf **[!UICONTROL Schließen]**, um zum Ordner der Assets zurückzukehren.
+1. Tippen Sie oben rechts auf der Seite auf **[!UICONTROL Speichern.]** und dann auf **[!UICONTROL Schließen]** , um zum Ordner der Assets zurückzukehren.
 
 ## Entfernen eines Bildprofils aus Ordnern {#removing-an-image-profile-from-folders}
 
