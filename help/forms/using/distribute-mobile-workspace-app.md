@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 5756cb52-dd47-4277-981c-fd0af9a20638
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: 375cfa95-ac6f-44c4-a736-f5dd55d24195
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 92%
 
 ---
-
 
 # Bereitstellen der AEM Forms-App {#distribute-aem-forms-app}
 
@@ -38,7 +37,7 @@ Der MDM-Administrator kann IPA- und APK-Dateien auf den MDM-Server hochladen und
 
 ## Profileinstellungen mit Auswirkung auf die AEM Forms-App {#profile-settings-affecting-the-aem-forms-app-br}
 
-Die folgenden Profil-Einstellungen auf Ihrem Gerät wirken sich auf die Funktionsweise der AEM Forms-App auf Ihrem Gerät aus:
+Die folgenden Profileinstellungen auf Ihrem Gerät wirken sich auf die Funktion der AEM Forms-App auf Ihrem Gerät aus:
 
 * **Allow use of camera** im Abschnitt **Device functionality**
 
