@@ -9,8 +9,7 @@ content-type: reference
 discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 role: Business Practitioner, Administrator
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
-feature: Collaboration,Asset Management
-translation-type: tm+mt
+feature: Zusammenarbeit, Asset-Management
 source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
 workflow-type: tm+mt
 source-wordcount: '442'
@@ -35,10 +34,10 @@ Mit Dynamic Media können Sie Assets vor ihrer Veröffentlichung verwalten. Eine
 Funktionen, die nur für Dynamic Media vorgesehen sind:
 
 * [Karussellbanner](carousel-banners.md)
-* [Bild-Sets](image-sets.md)
+* [Bildsets](image-sets.md)
 * [Interaktive Bilder](interactive-images.md)
 * [Interaktive Videos](interactive-videos.md)
-* [Sets für gemischte Medien](mixed-media-sets.md)
+* [Gemischte Mediensets](mixed-media-sets.md)
 * [Panoramabilder](panoramic-images.md)
 
 * [Rotationssets](spin-sets.md)
@@ -61,7 +60,7 @@ Anhand der folgenden Merkmale können Sie erkennen, ob Dynamic Media aktiviert i
 * Bild-Sets, Rotations-Sets und Sets für gemischte Medien sind verfügbar.
 * PTIFF-Ausgabeformate werden erstellt.
 
-Wenn Sie auf ein Bild-Asset klicken, unterscheidet sich die Ansicht des Assets von Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). Dynamic Media nutzt die On-Demand-HTML5-Viewer.
+Wenn Sie auf ein Bild-Asset klicken, unterscheidet sich die Ansicht des Assets von der von Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). Dynamic Media nutzt die On-Demand-HTML5-Viewer.
 
 ### Dynamische Ausgabeformate {#dynamic-renditions}
 
