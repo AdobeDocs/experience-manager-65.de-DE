@@ -1,17 +1,16 @@
 ---
-title: Asset-Editor erweitern
+title: Erweitern des Asset-Editors
 description: Erfahren Sie, wie sich die Funktionen des Asset-Editors mithilfe von benutzerdefinierten Komponenten erweitern lassen.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: Developer Tools
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: Entwickler-Tools
+exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 86%
+source-wordcount: '690'
+ht-degree: 85%
 
 ---
-
 
 # Erweitern des Asset-Editors {#extending-asset-editor}
 
@@ -19,7 +18,7 @@ Beim Asset-Editor handelt es sich um die Seite, die geöffnet wird, wenn auf ein
 
 Die Konfiguration des Editors mit den vordefinierten Bearbeitungskomponenten wird in [Erstellen und Konfigurieren einer Asset-Editor-Seite](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page) behandelt.
 
-Neben der Verwendung bereits vorhandener Editorkomponenten können [!DNL Adobe Experience Manager]-Entwickler auch eigene Komponenten erstellen.
+Neben der Verwendung bereits vorhandener Editor-Komponenten können [!DNL Adobe Experience Manager]-Entwickler auch eigene Komponenten erstellen.
 
 ## Erstellen einer Asset-Editor-Vorlage {#creating-an-asset-editor-template}
 
@@ -31,9 +30,9 @@ Die folgenden Beispielseiten sind in Geometrixx enthalten:
 
 ### Clientlib konfigurieren {#configuring-clientlib}
 
-[!DNL Assets] Komponenten verwenden eine Erweiterung des WCM-Bearbeitungsclientlib. Die clientlibs werden normalerweise in `init.jsp` geladen.
+[!DNL Assets] -Komponenten verwenden eine Erweiterung der WCM-clientlib zum Bearbeiten. Die clientlibs werden normalerweise in `init.jsp` geladen.
 
-Im Vergleich zum standardmäßigen clientlib-Laden (im Core `init.jsp`) muss eine [!DNL Assets]-Vorlage Folgendes aufweisen:
+Im Vergleich zum standardmäßigen Laden der clientlib (im Kernelement `init.jsp`) muss eine [!DNL Assets] -Vorlage Folgendes aufweisen:
 
 * Die Vorlage muss die clientlib `cq.dam.edit` (anstelle von `cq.wcm.edit`) enthalten.
 
@@ -41,7 +40,7 @@ Im Vergleich zum standardmäßigen clientlib-Laden (im Core `init.jsp`) muss ein
 
 In den meisten Fällen sollten diese Erfordernisse erfüllt sein, wenn das vorhandene Muster `init.jsp` (`/apps/geometrixx/components/asseteditor/init.jsp`) kopiert wird.
 
-### JS-Aktionen {#configuring-js-actions} konfigurieren
+### JS-Aktionen konfigurieren {#configuring-js-actions}
 
 Einige der [!DNL Assets]-Komponenten erfordern JS-Funktionen, die in `component.js` definiert sind. Kopieren Sie diese Datei in Ihr Komponentenverzeichnis und verknüpfen Sie sie.
 
@@ -53,7 +52,7 @@ Das Beispiel lädt diese JavaScript-Quelle in `head.jsp`(`/apps/geometrixx/compo
 
 ### Zusätzliche Stylesheets {#additional-style-sheets}
 
-Einige der [!DNL Assets]-Komponenten verwenden die Widgets-Bibliothek. Damit sie im Inhaltskontext ordnungsgemäß gerendert werden, muss ein zusätzliches Stylesheet geladen werden. Die Tag-Aktionskomponente erfordert ein weiteres zusätzliches Stylesheet.
+Einige der [!DNL Assets] -Komponenten verwenden die Widget-Bibliothek. Damit sie im Inhaltskontext ordnungsgemäß gerendert werden, muss ein zusätzliches Stylesheet geladen werden. Die Tag-Aktionskomponente erfordert ein weiteres zusätzliches Stylesheet.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
@@ -203,7 +202,7 @@ In diesem Beispiel wird das Erstellen einer Komponente beschrieben, die die Meta
 
 1. Im **Bearbeitungsmodus** ist die neue Komponente (z. B. **Beispielmetadaten**) jetzt im Sidekick (in der Gruppe **Asset-Editor**) verfügbar. Fügen Sie die Komponente ein. Um die Metadaten speichern zu können, müssen sie dem Metadatenformular hinzugefügt werden.
 
-## Ändern der Metadatenoptionen {#modifying-metadata-options}
+## Ändern von Metadatenoptionen {#modifying-metadata-options}
 
 Sie können die im [Metadatenformular](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component) verfügbaren Namespaces ändern.
 
