@@ -7,14 +7,13 @@ uuid: 19dcbda4-61af-40b3-b10b-68a341373410
 content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 3c48660e-5e4f-4615-82d4-9f1f285c2a39
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 95%
 
 ---
-
 
 # Wählen Sie einen Benutzer oder eine Gruppe für die Arbeitsschritte bezüglich der AEM-Formularzentrale aus.{#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
@@ -22,17 +21,17 @@ Erfahren Sie, wie Sie zur Laufzeit einen Benutzer oder eine Gruppe für einen AE
 
 In großen Unternehmen ist es erforderlich, Benutzer für einen Prozess dynamisch auszuwählen. Beispiel: Auswahl eines Außendienstmitarbeiters zur Betreuung eines Kunden auf Basis der Entfernung zwischen Mitarbeiter und Kunden. In einem solchen Szenario wird der Mitarbeiter dynamisch ausgewählt.
 
-Weisen Sie Aufgabe- und Adobe Sign-Schritte von [Forms-zentrierten Workflows auf OSGi](/help/forms/using/aem-forms-workflow.md) zu. Geben Sie Optionen zur dynamischen Benutzerauswahl an. Sie können ECMAScript oder OSGi-Bundles verwenden, um einen Beauftragten für „Aufgabe zuweisen“ oder eine unterschreibende Person für den Schritt „Dokument unterschreiben“ dynamisch auszuwählen.
+Weisen Sie die Aufgaben- und Adobe Sign-Schritte von [Forms-zentrierten Workflows auf OSGi](/help/forms/using/aem-forms-workflow.md) zu und bieten Sie Optionen zur dynamischen Auswahl eines Benutzers. Sie können ECMAScript oder OSGi-Bundles verwenden, um einen Beauftragten für „Aufgabe zuweisen“ oder eine unterschreibende Person für den Schritt „Dokument unterschreiben“ dynamisch auszuwählen.
 
 ## Verwenden von ECMAScript zur dynamischen Auswahl eines Benutzers oder einer Gruppe {#use-ecmascript-to-dynamically-select-a-user-or-group}
 
 ECMAScript ist eine Skriptsprache. Sie wird für die clientseitige Skripterstellung und Serveranwendungen verwendet. Führen Sie die folgenden Schritte aus, um mit ECMAScript einen Benutzer oder eine Gruppe dynamisch auszuwählen:
 
-1. Öffnen Sie CRXDE Lite. Die URL lautet `https://'[server]:[port]'/crx/de/index.jsp`
+1. Öffnen Sie CRXDE Lite. Die URL lautet `https://'[server]:[port]'/crx/de/index.jsp` .
 1. Erstellen Sie eine Datei mit der Erweiterung „.ecma“ unter folgendem Pfad. Wenn der Pfad (Knotenstruktur) nicht vorhanden ist, erstellen Sie ihn.
 
-   * (Aufgabe für Zuweisen des Pfads) `/apps/fd/dashboard/scripts/participantChooser`
-   * (Pfad für Unterschriftsschritt) `/apps/fd/workflow/scripts/adobesign`
+   * (Pfad für Schritt &quot;Aufgabe zuweisen&quot;) `/apps/fd/dashboard/scripts/participantChooser`
+   * (Pfad für Signaturschritt) `/apps/fd/workflow/scripts/adobesign`
 
 1. Fügen Sie der ECMA-Datei ein ECMAScript hinzu, welches über eine Logik zur dynamischen Auswahl von Benutzern verfügt, hinzu. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
@@ -42,7 +41,7 @@ ECMAScript ist eine Skriptsprache. Sie wird für die clientseitige Skripterstell
 
    1. Erweitern Sie den Skriptknoten, klicken Sie mit der rechten Maustaste auf den Knoten **[!UICONTROL jcr:content]** und dann auf **[!UICONTROL Mixins]**.
    1. Fügen Sie die Eigenschaft `mix:title` im Dialogfeld „Mixins bearbeiten“ hinzu und klicken Sie auf **OK**.
-   1. hinzufügen Sie die folgende Eigenschaft auf den Knoten jcr:content des Skripts:
+   1. Fügen Sie dem Knoten jcr:content des Skripts die folgende Eigenschaft hinzu:
 
       | Name | Typ | Wert |
       |--- |--- |--- |
@@ -350,4 +349,3 @@ public class DummyRecipientChoser implements RecipientInfoSpecifier {
 
 }
 ```
-
