@@ -9,25 +9,24 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 64b88423-aaae-4258-bf48-73df5c9353ea
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 82%
 
 ---
 
-
 # Dynamisches Füllen von Dropdownlisten {#dynamically-populating-drop-down-lists}
 
 ## Voraussetzungen {#prerequisites}
 
 * [Erstellung von OSGI-Bundles](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
-* [Entwickeln von AEM-Komponenten](/help/sites-developing/components.md) 
+* [Entwickeln von AEM-Komponenten ](/help/sites-developing/components.md)
 * [Erstellen von adaptiven Formularen](../../forms/using/creating-adaptive-form.md)
 * [Bearbeiten adaptiver Formulare](../../forms/using/introduction-forms-authoring.md)
 
-## Verfahren zum dynamischen Füllen von Dropdownlisten  {#procedure-to-dynamically-populate-drop-down-lists}
+## Verfahren zum dynamischen Füllen von Dropdownlisten {#procedure-to-dynamically-populate-drop-down-lists}
 
 Gehen Sie von einem Szenario aus, in dem Sie die Dropdownliste **Bundesland** basierend auf einem Wert füllen möchten, den Sie in der Dropdownliste **Land** auswählen. Wenn Sie in der Dropdownliste **Land** den Eintrag „Australien“ wählen, werden in der Dropdownliste **Bundesland** die australischen Bundesstaaten angezeigt. Im folgenden Verfahren wird beschrieben, wie Sie dabei vorgehen.
 
@@ -156,7 +155,7 @@ Gehen Sie von einem Szenario aus, in dem Sie die Dropdownliste **Bundesland** ba
 
    Fügen Sie die Namen der Länder hinzu, die Sie in der Liste „Land“ anzeigen möchten. Fügen Sie in der Liste „Bundesland“ ein Skript hinzu, mit dem sie basierend auf dem in der Liste „Land“ gewählten Land gefüllt wird.
 
-   ![Hinzufügen ](assets/country-dropdown.png) ![von LändernamenHinzufügen von Skripten zum Ausfüllen von ](assets/state-dropdown.png) ![StatusnamenDropdown-Listen &quot;Land&quot;und &quot;Bundesland&quot;zum Zusammenstellen](assets/2dropdowns.png)
+   ![Hinzufügen ](assets/country-dropdown.png) ![von LändernamenHinzufügen von Skripten zum Ausfüllen von ](assets/state-dropdown.png) ![StatusnamenDropdown-Listen &quot;Land&quot;und &quot;Bundesland&quot;](assets/2dropdowns.png)
 
    ```javascript
    JSON.parse(
