@@ -8,7 +8,6 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
-translation-type: tm+mt
 source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '381'
@@ -28,7 +27,7 @@ AEM-Funktionen zur Verwaltung mehrerer Websites von Live Copy und Sprachkopie we
 
 Es empfiehlt sich, eine 1:1-Beziehung zwischen AEM-Site und Magento Store-Ansicht zu verwenden.
 
-Gehen Sie wie folgt vor, um eine AEM-Site und AEM CIF-Kernkomponenten mit einer dedizierten Store-Ansicht zu verbinden:
+Gehen Sie wie folgt vor, um eine AEM Site zu verbinden und CIF-Kernkomponenten so zu einer dedizierten Store-Ansicht AEM:
 
 ## Konfiguration {#configuration}
 
@@ -51,7 +50,7 @@ Gehen Sie wie folgt vor, um eine AEM-Site und AEM CIF-Kernkomponenten mit einer 
 4. Weisen Sie die untergeordnete Konfiguration zu einer AEM-Site zu.
 
    * Wechseln Sie zur AEM Sites-Konsole.
-   * Navigieren Sie zur Region oder zum Sprachstamm Ihrer Site-Struktur, z. B. /content/venia/us _oder_ /content/venia/us/de für die Venia-Beispielseite
+   * Navigieren Sie zum Regions- oder zum Sprach-Stamm Ihrer Site-Struktur, z. B. /content/venia/us _oder_ /content/venia/us/en für die Venia-Beispielseite.
    * Wählen Sie die Seiten aus und öffnen Sie die Seiteneigenschaften.
    * Wählen Sie die Registerkarte „Erweitert“ aus.
    * Wählen Sie im Abschnitt `Configuration` die zuvor erstellte Konfiguration aus.
