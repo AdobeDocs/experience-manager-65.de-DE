@@ -8,15 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Adaptive Formulare
+exl-id: 691608a6-be82-4d81-b876-427de997e5be
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2324'
 ht-degree: 90%
 
 ---
-
 
 # Stilkonstrukte für adaptive Formulare{#styling-constructs-for-adaptive-forms}
 
@@ -26,7 +25,7 @@ Kenntnisse im Umgang mit CSS und von LESS-Framework.
 
 ## Was angepasst werden kann {#what-can-be-customized}
 
-Der Artikel listet öffentlich verfügbare CSS-Klassen von adaptiven Formularen. Sie können diese Klassen nutzen, um verschiedene Komponenten eines adaptiven Formulars zu formatieren. Der Stil von Authoring-Komponenten, wie Dialogfelder und Statusleisten, die Warnungen anzeigen, gehen über den Rahmen dieses Artikels hinaus. Verwenden Sie diese Stilkonstrukte, um Stile (mit CSS oder früher) nur dann zu erstellen, wenn Sie mit dem [Design- Editor ](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/themes.html)keine Komponenten formatieren können.
+Der Artikel listet öffentlich verfügbare CSS-Klassen von adaptiven Formularen. Sie können diese Klassen nutzen, um verschiedene Komponenten eines adaptiven Formulars zu gestalten. Der Stil von Authoring-Komponenten, wie Dialogfelder und Statusleisten, die Warnungen anzeigen, gehen über den Rahmen dieses Artikels hinaus. Verwenden Sie diese Stilkonstrukte, um Stile (mit CSS oder früher) nur dann zu erstellen, wenn Sie mit dem [Design- Editor ](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/themes.html)keine Komponenten formatieren können.
 
 ## Anpassen von Stilen in adaptiven Formularen {#customizing-styles-in-adaptive-forms}
 
@@ -39,9 +38,9 @@ Sie können adaptive Formularstile wie folgt anpassen:
 
 ## Designänderung  {#changing-theme}
 
-Sie können das Design eines adaptiven Formulars ändern, um sicherzustellen, dass sein Erscheinungsbild mit den Webseiten konsistent ist, in denen das adaptive Formular eingebettet ist.
+Sie können das Design eines adaptiven Formulars ändern, um sicherzustellen, dass sein Erscheinungsbild mit den Webseiten konsistent ist, auf denen das adaptive Formular eingebettet ist.
 
-Änderungen des Gesamtaussehens des adaptiven Formulars mithilfe von CSS-Eigenschaften sind in der Regel Teil der Designänderungen. Wesentliche Änderungen am lo &quot;ok and sense of the adaptive form&quot;, wie Änderungen im Layout und der Platzierung von Komponenten, werden nicht als Designänderungen betrachtet.
+Änderungen des Gesamtaussehens des adaptiven Formulars mithilfe von CSS-Eigenschaften sind in der Regel Teil der Designänderungen. Größere Änderungen am &quot;Aussehen und Verhalten des adaptiven Formulars&quot;, wie Änderungen am Layout und an der Platzierung von Komponenten, werden nicht als Designänderungen betrachtet.
 
 Basierend auf dem Bootstrap, definiert der folgende Satz von CSS-Eigenschaften das Design einer Webseite:
 
@@ -57,11 +56,11 @@ Derzeit sind LESS-Variablen nur für diese Eigenschaften der verschiedenen Eleme
 
 ## Änderung des Komponentenstils  {#changing-component-style}
 
-Sie können Änderungen an Aussehen, Layout, Positionierung und Sichtbarkeit von Elementen vornehmen. Um diese Aufgabe zu erreichen, erstellen oder aktualisieren Sie Ihre benutzerdefinierten .css-Dateien, um die in diesem Artikel aufgeführten Stilkonstrukte einzuschließen.
+Sie können Änderungen an Aussehen, Layout, Positionierung und Sichtbarkeit von Elementen vornehmen. Erstellen oder aktualisieren Sie dazu Ihre benutzerdefinierten CSS-Dateien, um die in diesem Artikel aufgelisteten Stilkonstrukte einzuschließen.
 
 Um ein Design auf ein adaptives Formular anzuwenden, öffnen Sie das adaptive Formular zum Bearbeiten, öffnen Sie den Container mit den Eigenschaften des adaptiven Formulars und geben Sie im Basisregister den Pfad der benutzerdefinierten CSS-Datei ein. Standard-Designkonstrukte des adaptiven Formulars und mit den in der benutzerdefinierten CSS-Datei aufgeführten Konstrukten überschriebene Konstrukte.
 
-## Komponenten {#components}
+## Komponenten  {#components}
 
 Komponenten, die in diesem Artikel behandelt werden, verfügen über vordefinierte CSS-Klassen. Sie können die Variablen bearbeiten, um die Stile in den CSS-Klassen zu ändern. Alternativ dazu können Sie die gesamte Klasse neu definieren. In diesem Abschnitt werden die Klassen in den Komponenten und Stile, die Sie mithilfe von Variablen ändern können, beschrieben.
 
@@ -287,7 +286,7 @@ Je nach Typ enthalten Widgets auch Klassen. Normalerweise beinhalten Widgets die
 
 ### Einschränkungen beim Widget-Stil  {#limitations-in-widget-styling}
 
-Der Stil für fokussierte, deaktivierte und Pflichtfelder ist auf Variablen eingeschränkt. Sie können diese jedoch ändern, indem Sie die Stile überschreiben. Einschränkungen mithilfe von Variablen wird hauptsächlich dazu verwendet, um die Anzahl der Variablen zu kontrollieren. Die Einschränkung kann gelockert werden, wenn sich das Erscheinungsbild eines Felds drastisch ändert, da es sich in einem der zuvor besprochenen Status befindet.
+Der Stil für fokussierte, deaktivierte und Pflichtfelder ist auf Variablen eingeschränkt. Sie können diese jedoch ändern, indem Sie die Stile überschreiben. Einschränkungen mithilfe von Variablen wird hauptsächlich dazu verwendet, um die Anzahl der Variablen zu kontrollieren. Die Einschränkung kann gelockert werden, wenn sich das Erscheinungsbild eines Felds drastisch ändert, da es sich in einem der zuvor erwähnten Status befindet.
 
 ## Hilfebeschreibung {#help-description}
 
@@ -321,7 +320,7 @@ Der Verfasser kann den Hilfeinhalt in den Feldern unter Verwendung der kurzen un
   </tr>
   <tr>
    <td><p><code>widgets-help-short-tooltip-bg-color</code></p> </td>
-   <td><p>Hintergrundfarbe der kurzen QuickInfo-Hilfe der Widgets</p> </td>
+   <td><p>Hintergrundfarbe der kurzen QuickInfo des Widgets Hilfe</p> </td>
   </tr>
   <tr>
    <td><p><code>widgets-help-short-tooltip-color</code></p> </td>
@@ -1077,7 +1076,7 @@ Diese Variablen in der folgenden Tabelle beeinflussen das feste Symbolleistenlay
 
 ## Designspezifische Variable  {#theme-specific-variable}
 
-Das **Einfache Einschreibung**-Design unter /etc/clientlibs/fd/af/guidetheme/simpleEnrollment und die Kategorie `guide.theme.simpleEnrollment` führen auch einige Variablen ein. Wenn Sie ein Thema erstellen möchten, das die einfache Registrierung verbessert, können Sie die folgenden &quot;zusätzlichen Variablen verwenden:
+Das Thema **Einfache Registrierung** unter /etc/clientlibs/fd/af/guidetheme/simpleEnrollment und die Kategorie `guide.theme.simpleEnrollment` führen auch einige Variablen ein. Wenn Sie eine einfache Registrierung mit verbessertem Design erstellen möchten, können Sie die folgenden &quot;zusätzlichen Variablen&quot;verwenden:
 
 <table>
  <tbody>
@@ -1131,4 +1130,3 @@ Das **Einfache Einschreibung**-Design unter /etc/clientlibs/fd/af/guidetheme/sim
   </tr>
  </tbody>
 </table>
-
