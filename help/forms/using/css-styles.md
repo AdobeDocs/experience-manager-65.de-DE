@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 8cc90ff7-284e-41cd-bfda-7fa09371e270
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 90%
 
 ---
-
 
 # Erstellen von CSS-Stilen für HTML5-Formulare {#creating-css-styles-for-html-forms}
 
@@ -50,8 +49,8 @@ Das Feldelement enthält zwei verschachtelte Elemente: Widget und Beschriftung.
 Das Widget-Element enthält das Element der Benutzeroberfläche für die Interaktion mit dem Benutzer. Es enthält drei CSS-Klassen:
 
 * **Widget**: Jedes Widget hat diese Klasse.
-* **name**: Alle mit AEM ausgelieferten Widgets enthalten die Widget-Namensklasse. Für benutzerdefinierte Widgets stellt der Widget-Entwickler die name-Klasse bereit.
-* **type**: Jedes Widget hat ein Element der Benutzeroberfläche. Diese Klasse definiert den Typ des Elements der Benutzeroberfläche.
+* **name**: Alle Widgets, die mit AEM ausgeliefert werden, enthalten die name-Klasse des Widgets. Für benutzerdefinierte Widgets stellt der Widget-Entwickler die name-Klasse bereit.
+* **Typ**: Jedes Widget verfügt über ein Element der Benutzeroberfläche. Diese Klasse definiert den Typ des Elements der Benutzeroberfläche.
 
 ```xml
 <!--field with caption-->
@@ -239,7 +238,7 @@ Mithilfe des AEM Forms Designer können Sie statische Zeichenelemente wie Text u
 
 ## Gestalten des Stils anderer Formularteile {#styling-other-parts-of-the-form}
 
-Neben dem Erscheinungsbild der Komponenten der Benutzeroberfläche im HTML-Formular können Sie den Stil von Elementen wie Inline-Fehler, Inline-Warnungen und Felder mit Überprüfungsfehlern ändern.
+Neben dem Erscheinungsbild von Benutzeroberflächen-Komponenten im HTML-Formular können Sie den Stil von Elementen wie Inline-Fehler, Inline-Warnungen und Felder mit Überprüfungsfehlern ändern.
 
 `Styling Inline Errors`
 
@@ -251,4 +250,4 @@ Wenn die Überprüfung eines Feldes eine Warnung ergibt, wird eine Inline-Warnun
 
 `Styling Fields with Validation Errors`
 
-Wenn die Überprüfung eines Feldes fehlschlägt, wird der Stil des Widgets geändert. Diese Stiländerung erfolgt durch Anwenden einer CSS-Klasse **widgetError** auf die Widget-Komponente. Um den Standardstil zu ändern, überschreiben Sie die Klasse **widgetError**.
+Wenn die Überprüfung eines Feldes fehlschlägt, wird der Stil des Widgets geändert. Diese Stiländerung erfolgt durch Anwenden einer CSS-Klasse **widgetError** auf die Widget-Komponente. Um den Standardstil zu ändern, überschreiben Sie die Klasse **widgetError** .
