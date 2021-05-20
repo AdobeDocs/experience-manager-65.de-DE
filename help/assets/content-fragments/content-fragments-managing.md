@@ -10,16 +10,15 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 21a18d60-f3fe-4048-9949-8416b5cb4596
 docset: aem65
-feature: Content Fragments
+feature: Inhaltsfragmente
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+exl-id: 636daf55-2225-4780-9c57-1a2d7464fe2c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1488'
 ht-degree: 99%
 
 ---
-
 
 # Verwalten von Inhaltsfragmenten {#managing-content-fragments}
 
@@ -154,7 +153,7 @@ So öffnen Sie ein Fragment zur Bearbeitung:
 
    * [Anmerkungen](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
    * [Zugehörige Inhalte](#associating-content-with-your-fragment)
-   * [Metadaten](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+   * [Metadaten  ](#viewing-and-editing-the-metadata-properties-of-your-fragment)
 
    ![cfm-10](assets/cfm-10.png)
 
@@ -347,4 +346,3 @@ So löschen Sie ein Fragment:
    >[!CAUTION]
    >
    >Wenn das Fragment bereits in einer Seite referenziert wird, werden Sie in einer Warnung zur Bestätigung des **erzwungenen Löschens** aufgefordert. Das Fragment wird zusammen mit seiner Inhaltsfragmentkomponente aus allen Inhaltsseiten gelöscht.
-
