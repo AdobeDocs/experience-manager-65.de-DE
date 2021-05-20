@@ -1,7 +1,7 @@
 ---
-title: Application Manager Client JavaAPI Quick Beginn (SOAP)
-seo-title: Application Manager Client JavaAPI Quick Beginn (SOAP)
-description: Application Manager Client JavaAPI Quick Beginn (SOAP)
+title: Application Manager Client JavaAPI-Schnellstart (SOAP)
+seo-title: Application Manager Client JavaAPI-Schnellstart (SOAP)
+description: Application Manager Client JavaAPI-Schnellstart (SOAP)
 uuid: 043f1c08-c7de-4e2d-88ca-b46428b1b551
 contentOwner: admin
 content-type: reference
@@ -9,44 +9,43 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2ec2a75e-4191-4660-a6f2-26cc667720b3
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 659eb9b0-93a0-4bae-8836-d4bc9c3a8c77
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 1%
+source-wordcount: '445'
+ht-degree: 0%
 
 ---
 
+# Application Manager Client JavaAPI-Schnellstart (SOAP) {#application-manager-client-javaapi-quick-start-soap}
 
-# Application Manager Client JavaAPI Quick Beginn (SOAP) {#application-manager-client-javaapi-quick-start-soap}
+Die folgenden Java API-Schnellstarts (SOAP) sind für den Application Manager-Client verfügbar.
 
-Der folgende Java API Quick Beginn (SOAP) ist für den Application Manager-Client verfügbar.
+[Schnellstart (SOAP-Modus): Erstellen der Anwendungsversion mithilfe der Java-API](#quick-start-soap-mode-creating-application-version-using-the-java-api)
 
-[Quick Beginn (SOAP-Modus): Erstellen der Anwendungsversion mit der Java-API](#quick-start-soap-mode-creating-application-version-using-the-java-api)
+[Schnellstart (SOAP-Modus): Exportieren von Anwendungen mit der Java-API](#quick-start-soap-mode-exporting-applications-using-the-java-api)
 
-[Quick Beginn (SOAP-Modus): Exportieren von Anwendungen mit der Java-API](#quick-start-soap-mode-exporting-applications-using-the-java-api)
+[Schnellstart (SOAP-Modus): Importieren von Anwendungen mit der Java-API](#quick-start-soap-mode-importing-applications-using-the-java-api)
 
-[Quick Beginn (SOAP-Modus): Anwendungen mit der Java-API importieren](#quick-start-soap-mode-importing-applications-using-the-java-api)
+[Schnellstart (SOAP-Modus): Abrufen einer AEM Forms-Anwendung mit der Java-API](application-manager-client-java-api.md#quick-start-soap-mode-getting-a-application-using-the-java-api)
 
-[Quick Beginn (SOAP-Modus): Abrufen einer AEM Forms-Anwendung mit der Java-API](application-manager-client-java-api.md#quick-start-soap-mode-getting-a-application-using-the-java-api)
+[Schnellstart (SOAP-Modus): Anwendungen mithilfe der Java-API abrufen](application-manager-client-java-api.md#quick-start-soap-mode-getting-the-applications-using-the-java-api)
 
-[Quick Beginn (SOAP-Modus): Anwendungen mithilfe der Java-API abrufen](application-manager-client-java-api.md#quick-start-soap-mode-getting-the-applications-using-the-java-api)
+[Schnellstart (SOAP-Modus): Abrufen des Status von Anwendungen mit der Java-API](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
 
-[Quick Beginn (SOAP-Modus): Abrufen des Anwendungsstatus mit der Java-API](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
+[Schnellstart (SOAP-Modus): Vorschau des AEM Forms- und späteren Anwendungsarchivs mit der Java-API](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
 
-[Quick Beginn (SOAP-Modus): Anzeigen einer Vorschau des AEM Forms- und späteren Anwendungsarchivs mit der Java-API](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
+[Schnellstart (SOAP-Modus): Löschen des AEM Forms-Anwendungsarchivs mithilfe der Java-API](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
 
-[Quick Beginn (SOAP-Modus): Löschen des AEM Forms-Anwendungsarchivs mit der Java-API](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
-
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt sein.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden und der Verbindungsmodus sollte auf SOAP festgelegt werden.
 
 >[!NOTE]
 >
->Quick Beginn im Verzeichnis &quot;Programmieren mit AEM Forms&quot;basieren auf dem Forms-Server, der auf JBoss und dem Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie Unix verwenden, ersetzen Sie fensterspezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Schnellstart für die Programmierung mit AEM Forms basiert auf dem Forms-Server, der auf JBoss und dem Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie Unix verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Quick Beginn (SOAP-Modus): Erstellen der Anwendungsversion mit der Java-API {#quick-start-soap-mode-creating-application-version-using-the-java-api}
+## Schnellstart (SOAP-Modus): Erstellen der Anwendungsversion mithilfe der Java-API {#quick-start-soap-mode-creating-application-version-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird eine Anwendung mit der JAVA-API erstellt.
+Im folgenden Java-Codebeispiel wird eine Anwendung mithilfe der JAVA-API erstellt.
 
 ```java
 /*
@@ -143,9 +142,9 @@ public class CreateApplicationVersion_SOAP {
 }
 ```
 
-## Quick Beginn (SOAP-Modus): Exportieren von Anwendungen mit der Java-API {#quick-start-soap-mode-exporting-applications-using-the-java-api}
+## Schnellstart (SOAP-Modus): Exportieren von Anwendungen mit der Java-API {#quick-start-soap-mode-exporting-applications-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird eine Anwendung mit der JAVA-API exportiert.
+Im folgenden Java-Codebeispiel wird eine Anwendung mithilfe der JAVA-API exportiert.
 
 ```java
 /*
@@ -246,13 +245,13 @@ public class ExportLCA_SOAP {
 }
 ```
 
-## Quick Beginn (SOAP-Modus): Importieren von Anwendungen mit der Java-API {#quick-start-soap-mode-importing-applications-using-the-java-api}
+## Schnellstart (SOAP-Modus): Importieren von Anwendungen mit der Java-API {#quick-start-soap-mode-importing-applications-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird eine Anwendung mit der JAVA-API importiert.
+Im folgenden Java-Codebeispiel wird eine Anwendung mithilfe der JAVA-API importiert.
 
 >[!NOTE]
 >
->Die Java-API importApplication() ersetzt vorhandene Anwendungen mit demselben Namen durch eine neuere Anwendung. Um eine vorhandene Anwendung zu aktualisieren, verwenden Sie API importApplication() anstelle von API updateApplication().
+>Die Java-API importApplication() ersetzt bestehende Anwendungen mit demselben Namen durch eine neuere Anwendung. Um eine vorhandene Anwendung zu aktualisieren, verwenden Sie API importApplication() anstelle von API updateApplication().
 
 ```java
 /*
@@ -333,7 +332,7 @@ public class ImportLCA_SOAP {
 }
 ```
 
-## Quick Beginn (SOAP-Modus): Abrufen einer Anwendung mit der Java-API {#quick-start-soap-mode-getting-a-application-using-the-java-api}
+## Schnellstart (SOAP-Modus): Abrufen einer Anwendung mit der Java-API {#quick-start-soap-mode-getting-a-application-using-the-java-api}
 
 Im folgenden Java-Codebeispiel wird eine Anwendung mit der Java-API abgerufen.
 
@@ -440,9 +439,9 @@ public class GetApplication_SOAP {
 }
 ```
 
-## Quick Beginn (SOAP-Modus): Anwendungen mithilfe der Java-API abrufen {#quick-start-soap-mode-getting-the-applications-using-the-java-api}
+## Schnellstart (SOAP-Modus): Abrufen der Anwendungen mit der Java-API {#quick-start-soap-mode-getting-the-applications-using-the-java-api}
 
-Im folgenden Java-Codebeispiel werden die Anwendungen mit der Java-API abgerufen.
+Im folgenden Java-Codebeispiel werden die Anwendungen mithilfe der Java-API abgerufen.
 
 **Hinweis**: Beim Abrufen der AEM Forms-Anwendungs-API getApplications() werden nur bereitgestellte Anwendungen zurückgegeben.
 
@@ -539,7 +538,7 @@ public class GetApplications_SOAP {
 }
 ```
 
-## Quick Beginn (SOAP-Modus): Abrufen des Anwendungsstatus mit der Java-API {#quick-start-soap-mode-getting-status-of-applications-using-java-api}
+## Schnellstart (SOAP-Modus): Abrufen des Status von Anwendungen mit Java API {#quick-start-soap-mode-getting-status-of-applications-using-java-api}
 
 ```java
 /*
@@ -644,9 +643,9 @@ public class GetApplicationStatus_SOAP {
 }
 ```
 
-## Quick Beginn (SOAP-Modus):Vorschau des LiveCycle ES2- und späteren Anwendungsarchivs mit der Java-API {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api} anzeigen
+## Schnellstart (SOAP-Modus): Vorschau des LiveCycle ES2- und späteren Anwendungsarchivs mit der Java-API {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird die Vorschau des AEM Forms- und späteren Anwendungsarchivs mit der Java-API gezeigt.
+Das folgende Java-Codebeispiel dient der Vorschau des AEM Forms- und späteren Anwendungsarchivs mithilfe der Java-API.
 
 ```java
 /*
@@ -723,7 +722,7 @@ public class PreviewLCA_SOAP {
 }
 ```
 
-## Quick Beginn (SOAP-Modus):Anwendungsarchiv mit der Java-API {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api} löschen
+## Schnellstart (SOAP-Modus): Löschen des Anwendungsarchivs mithilfe der Java-API {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}
 
 Das folgende Java-Codebeispiel dient zum Löschen eines Anwendungsarchivs.
 
@@ -818,4 +817,3 @@ public class DeleteApplication_SOAP {
     }
 }
 ```
-
