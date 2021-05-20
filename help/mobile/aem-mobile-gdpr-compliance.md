@@ -6,20 +6,19 @@ seo-description: 'null'
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 89%
 
 ---
 
-
 # AEM Mobile – Einhaltung der Datenschutz-Grundverordnung {#aem-mobile-gdpr-readiness}
 
 >[!IMPORTANT]
 >
->GDPR wird als Beispiel in den folgenden Abschnitten verwendet, aber die betreffenden Details gelten für alle Datenschutz- und Datenschutzbestimmungen. wie GDPR, CCPA usw.
+>Die DSGVO wird in den folgenden Abschnitten als Beispiel verwendet, die betroffenen Informationen gelten jedoch für alle Datenschutz- und Datenschutzbestimmungen. wie DSGVO, CCPA usw.
 
 ## AEM Mobile – Unterstützung der Datenschutz-Grundverordnung {#aem-mobile-gdpr-support}
 
@@ -45,7 +44,7 @@ Obligatorisch:
 
 * Vertrags-ID des Kunden: *dpsc-contractId*
 
-Geben Sie mindestens 1 der folgenden Punkte ein:
+Geben Sie mindestens 1 der folgenden Werte an:
 
 * Die vom Kunde bereitgestellte OAuth-ID des Endbenutzers (die ID, die im Direct-Entitlement-System des Kunden verwendet wird): *dpsc-directEntitlementId*
 * Bei Windows-App-Benutzern die App Store-ID des Endbenutzers: *dpsc-windowsAppStoreId*
@@ -57,15 +56,15 @@ Geben Sie mindestens 1 der folgenden Punkte ein:
 
 Adobe löscht vorhandene Informationen zu App Store-Käufen (Abonnements usw.), doch die Käufe sind nach wie vor in den App Stores verzeichnet. Wenn die App (der Endbenutzer) im App Store angemeldet ist, werden diese Kaufbelege wieder aufgenommen und anschließend an Adobe geschickt. Diese werden dann als neue Käufe betrachtet und von der App wiederhergestellt, um wieder Zugriff zu erlangen.
 
-**Löscht die Adobe die vom Kunden angegebenen Berechtigungen, wenn eine DELETE-Anforderung initiiert wird?**
+**Löscht Adobe vom Kunden bereitgestellte Berechtigungen beim Initiieren einer DELETE-Anfrage?**
 
 Adobe löscht Informationen, die Adobe zu zusätzlichen direkten Berechtigungsgenehmigungen von Kunden vorliegen. Wenn sich die App (der Endbenutzer) beim OAuth-Mechanismus anmeldet, den der Kunde genutzt hat, sendet sie (er) Informationen an Adobe. Die Services greifen dabei die zusätzlichen Berechtigungen erneut auf.
 
-**Was ist vom Endbenutzer zu erwarten?**
+**Was wird vom Endbenutzer erwartet?**
 
 Da der Schlüssel für die Zuweisung von Berechtigungen zur App sich auf dem Gerät als Teil der Viewer-Software befindet, sollte der Endbenutzer die App deinstallieren. Der Endbenutzer sollte wissen, dass bei einer Deinstallation der App vorhandene (mit dem App Store-Benutzer verknüpfte) Käufe und direkte (mit dem OAuth-Benutzer des Kunden verknüpfte) Berechtigungsgenehmigungen dennoch wiederhergestellt werden.
 
-**Was passiert, wenn eine App auf einem Gerät für andere freigegeben wird?**
+**Was passiert, wenn eine App von Personen auf einem Gerät gemeinsam genutzt wird?**
 
 Adobe verfügt nur über sehr wenige Informationen, die direkt mit einem bestimmten Benutzer verknüpft sind. Das Unternehmen verknüpft die Daten mithilfe einer zufällig erstellten UUID, die in den Daten der App gespeichert ist und bei jeder App-Anfrage übergeben wird. Das bedeutet, dass die Endbenutzer, die die App auf demselben Gerät gemeinsam nutzen, dieselbe UUID verwenden, und dass alle Daten als Daten der Person betrachtet werden, die die DSGVO-Anfrage stellt. Sowohl bei Zugriffs- als auch Löschanfragen sieht DPSC Personen, die eine App gemeinsam nutzen, als eine einzige Person an.
 
@@ -92,7 +91,7 @@ windowsAppStoreId = “testWinAppStoreId”
 email = “test@what.com”
 ```
 
-#### Ausgaben:{#outputs}
+#### Ausgaben: {#outputs}
 
 ```
 {
@@ -303,4 +302,3 @@ email = “test@what.com”
 
 }
 ```
-
