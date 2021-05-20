@@ -9,8 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
-feature: Forms Portal
-translation-type: tm+mt
+feature: Formularportal
 source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
 source-wordcount: '1241'
@@ -52,7 +51,7 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Vorlage für 
 
    >[!NOTE]
    >
-   >Der Titel kann sich vom Knotennamen von sling:Folder unterscheiden, den Sie erstellt haben.
+   >Der Titel kann sich vom Knotennamen des von Ihnen erstellten sling:Folder unterscheiden.
 
    Die folgende Abbildung zeigt die Konfiguration der Komponente „Search &amp; Lister“.
    ![Erstellen eines sling:Folder](assets/1.png)
@@ -84,17 +83,17 @@ Beim Folgenden Beispiel handelt es sich um eine Implementierung einer benutzerde
 
 ## Technische Spezifikationen für benutzerdefinierte Vorlagen  {#technical-specifications-for-custom-templates}
 
-Eine benutzerdefinierte Vorlage für eine beliebige Forms Portal-Komponente enthält wiederholbare und nicht wiederholbare Einträge. Wiederholbare Einträge sind die grundlegenden Einheiten für die Auflistung. Beispiele für wiederholbare Einträge sind Komponenten des Typs „Search &amp; Lister“, „Drafts &amp; Submissions“ sowie „Link“.
+Eine benutzerdefinierte Vorlage für eine Forms Portal-Komponente enthält wiederholbare und nicht wiederholbare Einträge. Wiederholbare Einträge sind die grundlegenden Einheiten für die Auflistung. Beispiele für wiederholbare Einträge sind Komponenten des Typs „Search &amp; Lister“, „Drafts &amp; Submissions“ sowie „Link“.
 
 Forms Portal bietet eine Syntax für Platzhalter zur Anzeige von benutzerdefinierten bzw. OOTB-Metadaten. Die Platzhalter werden nach der Anzeige der Ergebnisse aus Formularen, Entwürfen oder Übermittlungen angezeigt.
 
-Um einen wiederholbaren Eintrag einzuschließen, konfigurieren Sie den Wert des Attributs **data-repeatable** auf **true**.
+Um einen wiederholbaren Eintrag einzuschließen, konfigurieren Sie den Wert des Attributs **data-repeatable** in **true**.
 
-*Im gezeigten Beispiel sind oben in der benutzerdefinierten Vorlage zwei Div-Elemente vorhanden. Das erste mit der CSS-Klasse „__FP_boxes-container“ fungiert als Containerelement für die aufgelisteten Formulare. Das zweite mit der CSS-Klasse „__FP_boxes“ ist eine Vorlage für die Basiseinheiten, in diesem Fall ein Formular. Das im Div-Element vorhandene **data-repeatable**-Attribut hat den Wert **true**.*
+*Im gezeigten Beispiel sind oben in der benutzerdefinierten Vorlage zwei Div-Elemente vorhanden. Das erste mit der CSS-Klasse „__FP_boxes-container“ fungiert als Containerelement für die aufgelisteten Formulare. Das zweite mit der CSS-Klasse „__FP_boxes“ ist eine Vorlage für die Basiseinheiten, in diesem Fall ein Formular. Das Attribut **data-repeatable**im Div-Element hat den Wert **true**.*
 
-Jeder Platzhalter verfügt über einen exklusiven OOTB-Metadatensatz. Um benutzerdefinierte Metadaten an einer bestimmten Stelle im Formular anzuzeigen, fügen Sie die Eigenschaft **${metadata_prop}** an der gewünschten Stelle hinzu.
+Jeder Platzhalter verfügt über einen exklusiven OOTB-Metadatensatz. Um benutzerdefinierte Metadaten an einer bestimmten Stelle im Formular anzuzeigen, fügen Sie die Eigenschaft **${metadata_prop}** an der Stelle hinzu.
 
-*Im Beispiel wird die Metadaten-Eigenschaft in mehreren Instanzen verwendet. Sie wird beispielsweise in **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**und **verwendet 12/>path**in der vorgeschriebenen Weise.*
+*Im Beispiel wird die Metadaten-Eigenschaft in mehreren Instanzen verwendet. Sie wird beispielsweise in **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**und **verwendet. 12/>path**in der vorgeschriebenen Weise.*
 
 ## Vorkonfigurierte Metadaten {#out-of-the-box-metadata}
 
@@ -105,9 +104,9 @@ Verschiedene Forms Portal-Komponenten bieten exklusive OOTB-Metadatensätze, die
 * **Title**: Titel des Formulars
 * **name**: Name des Formulars (meist identisch mit dem Titel)
 * **description**: Beschreibung des Formulars
-* **formUrl**: URL zum Wiedergeben des Formulars als HTML
-* **pdfUrl**: URL zum Wiedergeben des Formulars als PDF
-* **assetType**: Typ des Assets Gültige Werte sind **Formular**,**PDF-Formular**, **Druckformular** und **Adaptives Formular**
+* **formUrl**: URL zum Rendern des Formulars als HTML
+* **pdfUrl**: URL zum Rendern des Formulars als PDF
+* **assetType**: Typ des Assets Zu den gültigen Werten gehören **Form**,**PDF Form**, **Print Form** und **Adaptives Formular**
 
 * **htmlStyle**&amp; **pdfStyle**: Anzeigestil für HTML- bzw. PDF-Symbole für die Ausgabe. Gültige Werte sind &quot;**__FP_display_none**&quot;oder leer.
 
@@ -119,24 +118,24 @@ Verschiedene Forms Portal-Komponenten bieten exklusive OOTB-Metadatensätze, die
 
 Unterstützung für Lokalisierung, Sortierung und Verwendung von Konfigurationseigenschaften in der Benutzeroberfläche (nur Search &amp; Lister):
 
-1. **lokale Anpassung-Support**: Um statischen Text zu lokalisieren, verwenden Sie das Attribut  `${localize-YOUR_TEXT}` und stellen Sie den lokalisierten Wert bereit, falls er nicht bereits vorhanden ist.
-   *In dem beschriebenen Beispiel werden die Attribute  `${localize-Apply}` und  `${localize-Download}` die zum Lokalisieren des Übernehmen- und Herunterladen-Textes verwendet.*
+1. **Lokalisierungsunterstützung**: Um statischen Text zu lokalisieren, verwenden Sie das -Attribut  `${localize-YOUR_TEXT}` und stellen Sie den lokalisierten Wert zur Verfügung, falls noch nicht vorhanden.
+   *In dem Beispiel, das besprochen wurde,  `${localize-Apply}` werden die Attribute  `${localize-Download}` und verwendet, um den Text &quot;Anwenden&quot;und &quot;Herunterladen&quot;zu lokalisieren.*
 
 1. **Unterstützung für die Sortierung**: Klicken Sie auf das HTML-Element, um die Suchergebnisse zu sortieren. Um Sortierung in ein Tabellenlayout einzufügen, fügen Sie dem jeweiligen Tabellen-Header das Attribut „data-sortKey“ hinzu. Fügen Sie außerdem seinen Wert als die Metadaten hinzu, nach denen Sie sortieren möchten.
 So ist z. B. im Header „Title“ in der Rasteransicht der Wert für den Header „data-sortKey“ „title“. Klicken Sie auf die Überschrift, um die Werte in einer bestimmten Spalte zu sortieren.
 
-1. **Verwenden von Konfigurationseigenschaften**: Die Komponente „Search &amp; Lister“ verfügt über mehrere Konfigurationen, die Sie in der Benutzeroberfläche verwenden können. Um beispielsweise HTML-QuickInfo-Text anzuzeigen, der im Bearbeitungsdialogfeld gespeichert wurde, verwenden Sie das Attribut `${config-htmlLinkText}`. **Verwenden Sie für PDF-QuickInfo-Text** `${config-pdfLinkText}` das Attribut.
+1. **Verwenden von Konfigurationseigenschaften**: Die Komponente „Search &amp; Lister“ verfügt über mehrere Konfigurationen, die Sie in der Benutzeroberfläche verwenden können. Um beispielsweise HTML ToolTip-Text anzuzeigen, der im Bearbeitungsdialogfeld gespeichert wurde, verwenden Sie das Attribut `${config-htmlLinkText}` . **Verwenden Sie für PDF-QuickInfo-Text** `${config-pdfLinkText}` das -Attribut.
 
 ### Komponente „Link“{#link-component}
 
 * **Title**: Titel des Formulars
-* **formUrl**: URL zum Wiedergeben des Formulars als HTML
+* **formUrl**: URL zum Rendern des Formulars als HTML
 * **target**: Zielattribut des Links. Gültige Werte sind „_blank“ und „_self“.
 * **linkText**: Beschriftung des Links
 
 ### Komponente „Drafts &amp; Submissions“{#drafts-amp-submissions-component}
 
-* **Path**: Pfad des Entwurfs-/Übermittlungs-Metadatenknotens Verwenden Sie ihn mit der Erweiterung .HTML als URL, um einen Entwurf oder eine Übermittlung zu öffnen.
+* **Path**: Pfad des Entwurfs-/Übermittlungs-Metadatenknotens Verwenden Sie ihn mit der .HTML-Erweiterung als URL, um einen Entwurf oder eine Übermittlung zu öffnen.
 * **contextPath**: Kontextpfad der AEM-Instanz.
 * **firstLetter**: Erster Buchstabe (groß) des Titels des adaptiven Formulars, das als Entwurf gespeichert oder übermittelt wurde.
 * **formName**: Der Titel des adaptiven Formulars, das als Entwurf gespeichert oder übermittelt wurde.
@@ -160,30 +159,30 @@ So ist z. B. im Header „Title“ in der Rasteransicht der Wert für den Header
 
 **A**. Container-Element
 
-**B.** &quot;Pfad&quot;-Metadaten mit einer festen Hierarchie, um die für jedes Formular gespeicherte Miniaturansicht abzurufen.
+**B.**  &quot;Pfad&quot;-Metadaten mit einer festen Hierarchie, um die für jedes Formular gespeicherte Miniaturansicht abzurufen.
 
 **C.** Datenwiederholbares Attribut für den Vorlagenbereich jedes Formulars
 
-**D.Zeichenfolge &quot;Anwenden&quot;** lokalisieren
+**D.** Lokalisieren der Zeichenfolge &quot;Apply&quot;
 
-**E.** Verwenden der Konfigurationseigenschaft pdfLinkText
+**E.** Verwenden der Konfigurationseigenschaft &quot;pdfLinkText&quot;
 
-**F.** Verwenden der &quot;pdfUrl&quot;-Metadaten
+**F.** Verwenden der Metadaten &quot;pdfUrl&quot;
 
 ## Tipps, Tricks und bekannte Probleme {#tips-tricks-and-known-issues}
 
 1. Verwenden Sie in keiner benutzerdefinierten Vorlage einfache Anführungszeichen (&#39;).
-1. Bei benutzerdefinierten Metadaten speichern Sie diese Eigenschaft nur auf dem Knoten **jcr:content/metadata**. Wenn Sie sie an einem anderen Ort speichern, kann Forms Portal die Metadaten nicht anzeigen.
+1. Für benutzerdefinierte Metadaten speichern Sie diese Eigenschaft nur im Knoten **jcr:content/metadata** . Wenn Sie sie an einem anderen Ort speichern, kann Forms Portal die Metadaten nicht anzeigen.
 1. Stellen Sie sicher, dass der Name von benutzerdefinierten bzw. bereits vorhandenen Metadaten keinen Doppelpunkt (:) enthält. Wenn dies der Fall ist, können Sie ihn nicht auf der Benutzeroberfläche anzeigen.
-1. **data-** repeatablehnen keine Bedeutung für eine  **** Linkkomponente. Adobe empfiehlt, diese Eigenschaften in einer Vorlage für eine Komponente des Typs „Link“ zu vermeiden.
+1. **data-** repeatable hat keine Bedeutung für eine  **** Verknüpfungskomponente. Adobe empfiehlt, diese Eigenschaften in einer Vorlage für eine Komponente des Typs „Link“ zu vermeiden.
 
 ## Verwandte Artikel
 
-* [Aktivieren der Forms Portal-Komponenten](/help/forms/using/enabling-forms-portal-components.md)
+* [Aktivieren von Forms Portal-Komponenten](/help/forms/using/enabling-forms-portal-components.md)
 * [Forms Portal-Seite erstellen](/help/forms/using/creating-form-portal-page.md)
 * [Auflisten von Formularen auf einer Webseite mithilfe von APIs](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Komponente &quot;Drafts and Submissions&quot;verwenden](/help/forms/using/draft-submission-component.md)
-* [Anpassen der Datenspeicherung von Entwürfen und gesendeten Formularen](/help/forms/using/draft-submission-component.md)
+* [Anpassen der Speicherung von Entwürfen und gesendeten Formularen](/help/forms/using/draft-submission-component.md)
 * [Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung in die Datenbank](/help/forms/using/integrate-draft-submission-database.md)
 * [Anpassen von Vorlagen für Forms Portal-Komponenten](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Einführung in das Veröffentlichen von Formularen in einem Portal](/help/forms/using/introduction-publishing-forms.md)
