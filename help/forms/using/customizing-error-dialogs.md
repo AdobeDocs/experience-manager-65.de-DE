@@ -8,18 +8,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: f547c0c1-3917-4092-9d63-c1b3aaefcef0
-translation-type: tm+mt
-source-git-commit: 07abce0e6e4d1a299ce32ab130366b4e676b6388
+exl-id: 8d2b07f5-5c4e-4111-8f78-eb1b156221bc
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 53%
 
 ---
 
-
 # Anpassen von Fehlerdialogen {#customizing-error-dialogs}
 
-AEM Forms Workspace ermöglicht Ihnen, Fehlerdialoge anzupassen. Führen Sie die Schritte [Generische Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md) und anschließend die folgenden Schritte aus, um Fehlerdialoge anzupassen.
+AEM Forms Workspace ermöglicht Ihnen, Fehlerdialoge anzupassen. Führen Sie die [Generischen Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md) aus, gefolgt von den folgenden Schritten, um Fehlerdialogfelder anzupassen.
 
 ## Text anpassen {#customizing-text}
 
@@ -53,7 +52,7 @@ AEM Forms Workspace ermöglicht Ihnen, Fehlerdialoge anzupassen. Führen Sie die
 
 ## CSS anpassen {#customizing-css}
 
-1. Sie können Dialogfeld, Kopfzeile, Inhaltsbereich, Fußleiste, Fußleistenschaltflächen und andere Besicherungen aktualisieren, indem Sie das folgende Fragment in die Datei `/apps/ws/css/newStyle.css` einfügen:
+1. Sie können Dialogfeld, Kopfzeile, Inhaltsbereich, Fußleiste, Fußleisten-Schaltflächen und andere Besicherungen aktualisieren, indem Sie das folgende Fragment in die Datei `/apps/ws/css/newStyle.css` einfügen:
 
    ```css
    /*-------- Error Dialog -------------------------------------------------------------------------------------------------------------------*/
@@ -188,7 +187,7 @@ AEM Forms Workspace ermöglicht Ihnen, Fehlerdialoge anzupassen. Führen Sie die
    }
    ```
 
-1. Trennen Sie für den Fußleistenschaltflächenbereich die Schaltflächenbereiche `.error-dialog` und `.foot-bar` von der Composite-Liste. Um diese Änderung vorzunehmen, fügen Sie der Datei „newStyle.css“ Folgendes hinzu:
+1. Trennen Sie die Schaltflächenbereiche `.error-dialog` und `.foot-bar` für die Fußleistenschaltfläche von der zusammengesetzten Liste. Um diese Änderung vorzunehmen, fügen Sie der Datei „newStyle.css“ Folgendes hinzu:
 
    ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
