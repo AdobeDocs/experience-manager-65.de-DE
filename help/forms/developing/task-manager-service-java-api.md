@@ -1,8 +1,8 @@
 ---
-title: Aufgabe Manager Service Java API QuickStart(SOAP)
-seo-title: Aufgabe Manager Service Java API QuickStart(SOAP)
-description: Mit dem Aufgabe Manager-Dienst können Sie Aufgaben zuweisen, Aufgaben sperren, Benutzern zugewiesene Aufgaben abrufen, Formulardaten aus Aufgaben abrufen, Formulardaten ändern, Dateianlagen abrufen und Informationen zur Aufgabe abrufen.
-seo-description: Mit dem Aufgabe Manager-Dienst können Sie Aufgaben zuweisen, Aufgaben sperren, Benutzern zugewiesene Aufgaben abrufen, Formulardaten aus Aufgaben abrufen, Formulardaten ändern, Dateianlagen abrufen und Informationen zur Aufgabe abrufen.
+title: Task Manager Service Java API QuickStart(SOAP)
+seo-title: Task Manager Service Java API QuickStart(SOAP)
+description: Verwenden Sie den Task Manager-Dienst, um Aufgaben zuzuweisen, Aufgaben zu sperren, Benutzern zugewiesene Aufgaben abzurufen, Formulardaten aus Aufgaben abzurufen, Formulardaten zu ändern, Dateianlagen abzurufen und Aufgabeninformationen abzurufen.
+seo-description: Verwenden Sie den Task Manager-Dienst, um Aufgaben zuzuweisen, Aufgaben zu sperren, Benutzern zugewiesene Aufgaben abzurufen, Formulardaten aus Aufgaben abzurufen, Formulardaten zu ändern, Dateianlagen abzurufen und Aufgabeninformationen abzurufen.
 uuid: fd6fceb1-865e-47a7-83fc-a63dcc2c21de
 contentOwner: admin
 content-type: reference
@@ -10,44 +10,43 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d61c20a9-27c6-4b57-ab00-dfaa77fe3f75
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
 
+# Schnellstart für Java-API für Task Manager-Dienst (SOAP) {#task-manager-service-java-api-quickstart-soap}
 
-# Aufgabe Manager Service Java API Quick Beginn (SOAP) {#task-manager-service-java-api-quickstart-soap}
+Die folgenden Schnellstarts sind für den Task Manager-Dienst verfügbar.
 
-Die folgenden Quick-Beginn sind für den Aufgabe Manager-Dienst verfügbar.
+[Schnellstart (SOAP-Modus): Aufgaben mithilfe der Java-API zuweisen](task-manager-service-java-api.md#quick-start-soap-mode-assigning-tasks-using-the-java-api)
 
-[Quick Beginn (SOAP-Modus): Zuweisen von Aufgaben mit der Java-API](task-manager-service-java-api.md#quick-start-soap-mode-assigning-tasks-using-the-java-api)
+[Schnellstart (SOAP-Modus): Sperren von Aufgaben mit der Java-API](task-manager-service-java-api.md#quick-start-soap-mode-locking-tasks-using-the-java-api)
 
-[Quick Beginn (SOAP-Modus): Sperren von Aufgaben mit der Java-API](task-manager-service-java-api.md#quick-start-soap-mode-locking-tasks-using-the-java-api)
+[Schnellstart (SOAP-Modus): Abrufen von Benutzern zugewiesenen Aufgaben mithilfe der Java-API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api)
 
-[Quick Beginn (SOAP-Modus): Abrufen von Aufgaben, die Benutzern mit der Java-API zugewiesen wurden](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api)
+[Schnellstart (SOAP-Modus): Abrufen von Formulardaten aus Aufgaben mithilfe der Java-API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api)
 
-[Quick Beginn (SOAP-Modus): Abrufen von Formulardaten aus Aufgaben mit der Java-API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api)
+[Schnellstart (SOAP-Modus): Ändern von Formulardaten mit der Java-API](task-manager-service-java-api.md#quick-start-soap-mode-modifying-form-data-using-the-java-api)
 
-[Quick Beginn (SOAP-Modus): Ändern von Formulardaten mit der Java-API](task-manager-service-java-api.md#quick-start-soap-mode-modifying-form-data-using-the-java-api)
+[Schnellstart (SOAP-Modus): Abrufen von Dateianlagen von Aufgaben mithilfe der Java-API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api)
 
-[Quick Beginn (SOAP-Modus): Abrufen von Dateianlagen von Aufgaben mit der Java-API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api)
+[Schnellstart (SOAP-Modus): Abrufen von Aufgabeninformationen mit der Java-API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
 
-[Quick Beginn (SOAP-Modus): Abrufen von Informationen zur Aufgabe mit der Java-API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
-
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt sein.
-
->[!NOTE]
->
->Sie können nicht mit der Web-Service-API nach Aufgaben suchen, die Benutzern zugewiesen wurden. Der Grund dafür ist, dass Sie die `taskList`-Methode nicht aufrufen können. Dies ist ein erforderlicher Methodenaufruf zur Durchführung dieser Aufgabe.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden und der Verbindungsmodus sollte auf SOAP festgelegt werden.
 
 >[!NOTE]
 >
->Quick Beginn unter Programmieren mit AEM Forms basieren auf dem Forms Server-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Mit der Webdienst-API können Sie nicht nach Aufgaben suchen, die Benutzern zugewiesen wurden. Der Grund dafür ist, dass Sie die `taskList`-Methode nicht aufrufen können, die ein erforderlicher Methodenaufruf für diese Aufgabe ist.
 
-## Quick Beginn (SOAP-Modus): Zuweisen von Aufgaben mit der Java-API {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
+>[!NOTE]
+>
+>Schnellstart, der unter Programmieren mit AEM Forms zu finden ist, basiert auf dem Forms-Server-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+
+## Schnellstart (SOAP-Modus): Zuweisen von Aufgaben mithilfe der Java-API {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
 
 Im folgenden Java-Codebeispiel wird einem Benutzer mit dem Namen Tony Blue eine Aufgabe zugewiesen.
 
@@ -180,9 +179,9 @@ Im folgenden Java-Codebeispiel wird einem Benutzer mit dem Namen Tony Blue eine 
  
 ```
 
-## Quick Beginn (SOAP-Modus): Sperren von Aufgaben mit der Java-API {#quick-start-soap-mode-locking-tasks-using-the-java-api}
+## Schnellstart (SOAP-Modus): Sperren von Aufgaben mit der Java-API {#quick-start-soap-mode-locking-tasks-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird eine Aufgabe gesperrt, die dem Aufgaben-ID-Wert 2 entspricht.
+Im folgenden Java-Codebeispiel wird eine Aufgabe gesperrt, die dem Aufgabenkennungswert 2 entspricht.
 
 ```java
  /*
@@ -269,9 +268,9 @@ Im folgenden Java-Codebeispiel wird eine Aufgabe gesperrt, die dem Aufgaben-ID-W
  
 ```
 
-## Quick Beginn (SOAP-Modus): Abrufen von Aufgaben, die Benutzern mit der Java-API {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api} zugewiesen wurden
+## Schnellstart (SOAP-Modus): Abrufen von Aufgaben, die Benutzern mit der Java-API zugewiesen wurden {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}
 
-Im folgenden Java-Codebeispiel werden alle Aufgaben abgerufen, die einem Benutzer mit dem Namen *tony blue* zugewiesen sind. Beachten Sie, dass dieser Benutzer in den Verbindungseigenschaften angegeben ist. Es werden Informationen zu zurückgegebenen Aufgaben, z. B. deren Bezeichnerwert und Beschreibung, angezeigt.
+Im folgenden Java-Codebeispiel werden alle Aufgaben abgerufen, die einem Benutzer mit dem Namen *tony blue* zugewiesen sind. Beachten Sie, dass dieser Benutzer in den Verbindungseigenschaften angegeben ist. Informationen zu zurückgegebenen Aufgaben, wie z. B. Kennungswert und Beschreibung, werden angezeigt.
 
 ```java
  /*
@@ -395,9 +394,9 @@ Im folgenden Java-Codebeispiel werden alle Aufgaben abgerufen, die einem Benutze
  }
 ```
 
-## Quick Beginn (SOAP-Modus): Abrufen von Formulardaten aus Aufgaben mit der Java-API {#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api}
+## Schnellstart (SOAP-Modus): Abrufen von Formulardaten aus Aufgaben mithilfe der Java-API {#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api}
 
-Im folgenden Java-Codebeispiel werden Formulardaten aus einer Aufgabe mit dem Bezeichnerwert 304 abgerufen. Formulardaten werden in eine XML-Datei mit dem Namen *FormData.xml* unter C:\Adobe geschrieben.
+Im folgenden Java-Codebeispiel werden Formulardaten von einer Aufgabe mit dem Bezeichnerwert 304 abgerufen. Formulardaten werden in eine XML-Datei mit dem Namen *FormData.xml* unter C:\Adobe geschrieben.
 
 ```java
  /*
@@ -501,7 +500,7 @@ Im folgenden Java-Codebeispiel werden Formulardaten aus einer Aufgabe mit dem Be
  
 ```
 
-## Quick Beginn (SOAP-Modus): Ändern von Formulardaten mit der Java-API {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
+## Schnellstart (SOAP-Modus): Ändern von Formulardaten mit der Java-API {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
 
 Im folgenden Java-Codebeispiel wird ein Formular mit Daten aktualisiert, die sich in der Datei *FormData.xml* befinden.
 
@@ -611,9 +610,9 @@ Im folgenden Java-Codebeispiel wird ein Formular mit Daten aktualisiert, die sic
  
 ```
 
-## Quick Beginn (SOAP-Modus): Abrufen von Dateianlagen von Aufgaben mit der Java-API {#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api}
+## Schnellstart (SOAP-Modus): Abrufen von Dateianlagen von Aufgaben mithilfe der Java-API {#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api}
 
-Im folgenden Java-Codebeispiel werden Dateianlagen abgerufen. Jede Dateianlage wird als TXT-Datei gespeichert.
+Im folgenden Java-Codebeispiel werden Dateianlagen abgerufen. Jeder Dateianhang wird als TXT-Datei gespeichert.
 
 ```java
  /*
@@ -715,9 +714,9 @@ Im folgenden Java-Codebeispiel werden Dateianlagen abgerufen. Jede Dateianlage w
  
 ```
 
-## Quick Beginn (SOAP-Modus): Abrufen von Informationen zur Aufgabe mit der Java-API {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
+## Schnellstart (SOAP-Modus): Abrufen von Aufgabeninformationen mit der Java-API {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
 
-Im folgenden Java-Codebeispiel werden alle Aufgaben abgerufen, die auf einem Prozess mit dem Namen *Hypothekendarlehen - Vorgefertigt* basieren. Der Status jeder zurückgegebenen Aufgabe wird überprüft, um sicherzustellen, dass es sich um eine abgeschlossene Aufgabe handelt. Informationen wie der Name des Benutzers, der die Aufgabe abgeschlossen hat, und das Datum, an dem die Aufgabe abgeschlossen wurde, werden abgerufen und angezeigt.
+Im folgenden Java-Codebeispiel werden alle Aufgaben abgerufen, die auf einem Prozess mit dem Namen *MortgageLoan - Prebuilt* basieren. Der Status jeder zurückgegebenen Aufgabe wird überprüft, um sicherzustellen, dass sie eine abgeschlossene Aufgabe ist. Informationen wie der Name des Benutzers, der die Aufgabe abgeschlossen hat, und das Datum, an dem die Aufgabe abgeschlossen wurde, werden abgerufen und angezeigt.
 
 ```java
  /*
@@ -869,4 +868,3 @@ Im folgenden Java-Codebeispiel werden alle Aufgaben abgerufen, die auf einem Pro
      }
  
 ```
-
