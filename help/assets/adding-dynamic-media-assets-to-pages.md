@@ -10,8 +10,7 @@ discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 role: Business Practitioner, Administrator
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
-feature: Components,Publishing
-translation-type: tm+mt
+feature: Komponenten,Publishing
 source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
 workflow-type: tm+mt
 source-wordcount: '3098'
@@ -34,7 +33,7 @@ Sie fügen Dynamic Media-Assets direkt zur Seite hinzu, wenn Sie Adobe Experienc
 Beim Hinzufügen einer Komponente für 3D Media, Dynamic Media, interaktive Medien, Panoramamedien, Smart-Zuschnitt-Videos oder 360-Grad-Videomedien gehen Sie genauso vor wie beim Hinzufügen einer Komponente zu einer beliebigen Seite. Die Dynamic Media-Komponenten werden in den folgenden Abschnitten beschrieben.
 
 1. Öffnen Sie in Experience Manager die Seite, auf der Sie die Dynamic Media-Komponente hinzufügen möchten.
-1. Klicken Sie im Bedienfeld auf der linken Seite der Seite (möglicherweise müssen Sie die Anzeige des Seitenbedienfelds umschalten) auf das Symbol **[!UICONTROL Komponenten]**.
+1. Klicken Sie im Bedienfeld auf der linken Seite der Seite (Sie müssen ggf. die Anzeige des Seitenbedienfelds umschalten) auf das Symbol **[!UICONTROL Komponenten]**.
 1. Wählen Sie unter der Überschrift **[!UICONTROL Komponenten]** in der Dropdown-Liste **[!UICONTROL Dynamic Media.]**
 
    Wenn keine Liste der Dynamic Media-Komponenten verfügbar ist, müssen Sie wahrscheinlich die zu verwendenden Dynamic Media-Komponenten aktivieren. Informationen hierzu finden Sie unter [Aktivieren von Dynamic Media-Komponenten](#enabling-dynamic-media-components).
@@ -75,7 +74,7 @@ Wenn keine Dynamic Media-Komponenten zum Hinzufügen zu einer Seite verfügbar s
 
    ![Zugelassene Komponenten](/help/assets/assets-dm/allowed-components.png)
 
-1. Scrollen Sie, bis **[!UICONTROL Dynamic Media.]**
+1. Scrollen Sie nach unten, bis **[!UICONTROL Dynamic Media.]** angezeigt wird.
 1. Tippen Sie links neben **[!UICONTROL Dynamic Media]** auf „>“, um die Liste zu erweitern, und wählen Sie die Dynamic Media-Komponenten aus, die Sie aktivieren möchten.
 
    ![Liste der Dynamic Media-Komponenten](/help/assets/assets-dm/dm-components-select.png)
@@ -100,7 +99,7 @@ Zum Lokalisieren von Dynamic Media-Komponenten stehen Ihnen zwei Möglichkeiten 
 
 ## Komponenten vom Typ „Dynamische Medien“{#dynamic-media-components}
 
-Dynamic Media-Komponenten sind verfügbar, wenn Sie auf das Symbol **[!UICONTROL Komponenten]** tippen und dann auf **[!UICONTROL Dynamic Media filtern.]**
+Dynamic Media-Komponenten sind verfügbar, wenn Sie auf das Symbol **[!UICONTROL Komponenten]** tippen und dann nach **[!UICONTROL Dynamic Media filtern.]**
 
 Zu den verfügbaren Dynamic Media-Komponenten zählen:
 
@@ -111,7 +110,7 @@ Zu den verfügbaren Dynamic Media-Komponenten zählen:
 
 >[!NOTE]
 >
->Diese Komponenten sind nicht standardmäßig verfügbar und müssen zunächst über den Vorlageneditor bereitgestellt werden. [Nachdem die Komponenten ](/help/sites-authoring/templates.md#editing-templates-template-authors)im Vorlageneditor verfügbar gemacht wurden, können Sie sie wie jede andere Experience Manager-Komponente zu Ihrer Seite hinzufügen.
+>Diese Komponenten sind nicht standardmäßig verfügbar und müssen zunächst über den Vorlageneditor bereitgestellt werden. [Nachdem sie ](/help/sites-authoring/templates.md#editing-templates-template-authors)im Vorlageneditor verfügbar gemacht wurden, können Sie die Komponenten wie jede andere Experience Manager-Komponente zu Ihrer Seite hinzufügen.
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
@@ -135,7 +134,7 @@ Beachten Sie, dass Sie den einzelnen Dynamic Media-Komponenten auf dieser Seite 
 Wenn Sie die Dynamic Media-Komponente hinzufügen und **[!UICONTROL Einstellungen für Dynamic Media]** leer ist, ist es nicht möglich, ein Asset ordnungsgemäß hinzuzufügen. Überprüfen Sie Folgendes:
 
 * Sie [Dynamic Media aktiviert](/help/assets/config-dynamic.md) haben. Dynamic Media ist standardmäßig deaktiviert.
-* das Bild eine Pyramid TIFF-Datei aufweist. Bilder, die importiert wurden, bevor Dynamic Media aktiviert wurde, haben keine Pyramidenzeitsdatei.
+* das Bild eine Pyramid TIFF-Datei aufweist. Bilder, die vor der Aktivierung von Dynamic Media importiert wurden, haben keine Pyramid TIFF-Datei.
 
 #### Arbeiten mit Bildern   {#when-working-with-images}
 
@@ -143,13 +142,13 @@ Mit der Komponente „Dynamic Media“ können Sie dynamische Bilder, einschlie�
 
 Sie können zudem die Viewer-Vorgabe, Bildvorgabe oder das Bildformat direkt in der Komponente konfigurieren. Um ein Bild dynamisch zu machen, können Sie die Haltepunkte festlegen oder eine dynamische Bildvorgabe anwenden.
 
-Sie müssen *die folgenden Dynamic Media-Einstellungen bearbeiten, indem Sie auf das Symbol **[!UICONTROL Bearbeiten]**in der Komponente und dann auf **[!UICONTROL Dynamic Media-Einstellungen tippen.*]**
+Sie *müssen* die folgenden Dynamic Media-Einstellungen bearbeiten, indem Sie auf das Symbol **[!UICONTROL Bearbeiten]** in der Komponente und dann auf **[!UICONTROL Dynamic Media-Einstellungen]** tippen.
 
 ![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
 >[!NOTE]
 >
->Standardmäßig ist die Bildkomponente für Dynamic Media adaptiv. Wenn Sie eine feste Größe festlegen möchten, setzen Sie sie in der Komponente auf der Registerkarte **[!UICONTROL Erweitert]** mit den Registerkarten **[!UICONTROL Breite]** und **[!UICONTROL Höhe.]**
+>Standardmäßig ist die Bildkomponente für Dynamic Media adaptiv. Wenn Sie eine feste Größe festlegen möchten, legen Sie sie in der Komponente auf der Registerkarte **[!UICONTROL Erweitert]** mit der **[!UICONTROL Breite]** und der **[!UICONTROL Höhe fest.]**
 
 * **[!UICONTROL Viewer-Vorgabe]**: Wählen Sie im Dropdown-Menü eine vorhandene Viewer-Vorgabe aus. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe „Verwalten von Viewer-Vorgaben“. Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
 
@@ -205,7 +204,7 @@ Sie müssen die folgenden Dynamic Media-Einstellungen bearbeiten, indem Sie in d
    Viewer-Modifikatoren ermöglichen z. B. Folgendes:
 
    * Verknüpfen einer Untertiteldatei mit einem Video: [Untertitel][https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=de)
-   * Verknüpfen Sie eine Navigationsdatei mit einem Video: [navigation][https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+   * Verknüpfen einer Navigationsdatei mit einem Video: [navigation][https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
    Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
@@ -223,11 +222,11 @@ Weitere Informationen finden Sie unter [Bildprofile](/help/assets/image-profiles
 
 ![dm-settings-smart-cut](assets/dm-settings-smart-crop.png)
 
-Sie müssen die folgenden Dynamic Media-Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
+Sie müssen die folgende Dynamic Media-Einstellung bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
 >[!NOTE]
 >
->Standardmäßig ist die Bildkomponente für Dynamic Media adaptiv. Wenn Sie eine feste Größe festlegen möchten, setzen Sie sie in der Komponente auf der Registerkarte **[!UICONTROL Erweitert]** mit den Registerkarten **[!UICONTROL Breite]** und **[!UICONTROL Höhe.]**
+>Standardmäßig ist die Bildkomponente für Dynamic Media adaptiv. Wenn Sie eine feste Größe festlegen möchten, legen Sie sie in der Komponente auf der Registerkarte **[!UICONTROL Erweitert]** mit der **[!UICONTROL Breite]** und der **[!UICONTROL Höhe fest.]**
 
 * **[!UICONTROL Bildmodifikatoren]**: Sie können Bildeffekte anwenden, indem Sie zusätzliche Bildbefehle bereitstellen. Diese werden unter „Bildvorgaben“ und in der Referenz zum Image-Serving-Befehl beschrieben.
 
