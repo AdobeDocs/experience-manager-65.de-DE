@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: ba79479b-4159-4a39-95eb-2285e7ece9d4
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: 6c6fb516-1b11-4da4-b638-4388a070e397
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 85%
 
 ---
-
 
 # Startbildschirm{#home-screen}
 
@@ -34,9 +33,9 @@ In der folgenden Abbildung werden die wichtigsten Komponenten auf dem standardm�
 
 ![home-screen-1-1](assets/home-screen-1-1.png)-->
 
-1. **Menüschaltfläche**: Tippen Sie auf die  **** Menüleiste, um zu Aufgaben, Forms, Outbox und Einstellungen zu navigieren. Wenn Ihre AEM Forms-App mit einem AEM Forms JEE-Server verbunden ist, wird die Option „Aufgaben“ angezeigt. Die Option „Aufgaben“ speichert auch die Entwürfe, die aus Aufgaben in einem Prozess erstellt wurden. Beim AEM Forms OSGi-Server ist die Option „Aufgaben“ ausgeblendet. Im Postausgang werden die gespeicherten Formulare und Entwürfe vor der Synchronisierung mit dem Server abgelegt. Alle gespeicherten Formulare und Entwürfe im Postausgang werden auf den AEM Forms-Server hochgeladen, wenn die App mit dem Server [synchronisiert wird. ](../../forms/using/sync-app.md) Weitere Informationen zu den Einstellungen finden Sie unter [Aktualisieren allgemeiner Einstellungen](../../forms/using/update-general-settings.md).
+1. **Menüschaltfläche**: Tippen Sie auf die  **** Schaltfläche &quot;Menubution&quot;, um zu Aufgaben, Forms, Postausgang und Einstellungen zu navigieren. Wenn Ihre AEM Forms-App mit einem AEM Forms JEE-Server verbunden ist, wird die Option „Aufgaben“ angezeigt. Die Option „Aufgaben“ speichert auch die Entwürfe, die aus Aufgaben in einem Prozess erstellt wurden. Beim AEM Forms OSGi-Server ist die Option „Aufgaben“ ausgeblendet. Im Postausgang werden die gespeicherten Formulare und Entwürfe vor der Synchronisierung mit dem Server abgelegt. Alle im Postausgang gespeicherten Formulare und Entwürfe werden auf den AEM Forms-Server hochgeladen, wenn die App [mit dem Server](../../forms/using/sync-app.md) synchronisiert wird. Weitere Informationen zu den Einstellungen finden Sie unter [Aktualisieren allgemeiner Einstellungen](../../forms/using/update-general-settings.md).
 1. **Aufgabe oder Formular**: Tippen Sie auf die aufgeführte Aufgabe oder das Formular, mit denen Sie arbeiten möchten.
-1. **Horizontale Auslassungspunkte**: gibt an, dass Aktionen für das Formular zur Verfügung stehen. Beim Tippen auf die Auslassungspunkte werden die Aktionen und Beschreibungen angezeigt, die vom Autor angegeben wurden. Die Optionen **Entwurf löschen** und **Abschließen** sind sichtbar, wenn Sie auf die Auslassungspunkte tippen.
+1. **Horizontale Auslassungspunkte**: gibt an, dass Aktionen für das Formular zur Verfügung stehen. Beim Tippen auf die Auslassungspunkte werden die Aktionen und Beschreibungen angezeigt, die vom Autor angegeben wurden. Die Option **Entwurf löschen** und **Umfassend** ist sichtbar, wenn Sie auf die Auslassungspunkte tippen.
 1. **Aktualisieren-Symbol**: Tippen Sie auf dieses Symbol, um Ihre App mit dem AEM Forms-Server zu synchronisieren.
 
 ### Anpassen des Startbildschirms  {#customizing-the-home-screen}
