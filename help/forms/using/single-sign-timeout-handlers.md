@@ -9,14 +9,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 698990a2-dd3f-480f-9d15-d87563860297
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: 4f824d80-f3f8-4010-9583-5a9ab1151a7b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 47%
 
 ---
-
 
 # Single Sign-On und Zeitüberschreitungshandler {#single-sign-on-and-timeout-handlers}
 
@@ -28,7 +27,7 @@ Sitzungs-Timeouts für einen Benutzer können in der Administration Console konf
 
 Um den Timeout festzulegen, melden Sie sich bei `https://'[server]:[port]'/adminui` an, navigieren Sie zu **Einstellungen > User Management > Konfiguration > Erweiterte Systemattribute konfigurieren** und nehmen Sie die gewünschten Einstellungen vor.
 
-In AEM Forms Workspace wird Timeout wie folgt verarbeitet:
+Die Zeitüberschreitung in AEM Forms Workspace wird wie folgt gehandhabt:
 
 * Die Sitzungsdauer für einen Benutzer ist als Antwort auf einen `initialize`-Aufruf verfügbar, der die Benutzersitzung initialisiert.
 * Ein Popup-Fenster informiert den Benutzer 15 Sekunden im Voraus, dass die Sitzung gleich ablaufen wird.
@@ -40,4 +39,4 @@ In diesem Popup-Dialog:
 
 >[!NOTE]
 >
->Wenn keine Aktion ausgeführt wird, wird der Benutzer drei Sekunden vor Ablauf der Sitzung automatisch aus AEM Forms Workspace abgemeldet.
+>Wenn keine Aktion ausgeführt wird, wird der Benutzer drei Sekunden vor Ablauf der Sitzung automatisch von AEM Forms Workspace abgemeldet.
