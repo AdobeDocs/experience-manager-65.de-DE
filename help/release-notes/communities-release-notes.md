@@ -1,14 +1,13 @@
 ---
 title: Versionshinweise zu AEM Communities
 description: Spezifische Versionshinweise zu Adobe Experience Manager 6.5. Communities
-translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+exl-id: 8eeaf917-aac8-4f5c-be12-d2a6783c5c5c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 69%
 
 ---
-
 
 # AEM Communities Versionshinweise {#aem-communities-release-notes}
 
@@ -21,25 +20,25 @@ Informationen dazu, wie Sie die neueste Version erhalten, finden Sie in der Doku
 ### Verbesserte Community-Aktivierung {#enhancements-to-community-engagement}
 
 **@Mentions**
-supportAEM Communities ermöglicht es registrierten Benutzern nun, andere registrierte Mitglieder zu taggen (zu erwähnen), um ihre Aufmerksamkeit zu erhalten, in User Generated Content. Die getaggten (erwähnten) Mitglieder werden dann benachrichtigt, und zwar mit einem Deep-Link zu den entsprechenden anwendergenerierten Inhalten. Die Anwender können allerdings Web- und E-Mail-Benachrichtigungen deaktivieren/aktivieren.
+supportAEM Communities ermöglicht es registrierten Benutzern, andere registrierte Mitglieder in benutzergenerierten Inhalten mit Tags zu versehen (Erwähnung), um sie zu informieren. Die getaggten (erwähnten) Mitglieder werden dann benachrichtigt, und zwar mit einem Deep-Link zu den entsprechenden anwendergenerierten Inhalten. Die Anwender können allerdings Web- und E-Mail-Benachrichtigungen deaktivieren/aktivieren.
 
 ![@Mentions-Unterstützung](assets/at-mentions.png)
 
 Community-Anwender müssen nicht nach ihrem Vornamen, Nachnamen oder Anwendernamen suchen, um festzustellen, ob sich jemand an sie gewendet hat oder ein anderer ihre Hilfe braucht. Außerdem können UGC-Autoren Antwort von bestimmten registrierten Anwendern anfordern, die am besten dazu geeignet sind, ein Problem zu lösen und Feedback zu geben.
 
-Die Community-Administratoren müssen auf Community-Komponenten **Erwähnung aktivieren** aktivieren, damit registrierte Benutzer die Funktion auf diesen Komponenten verwenden können.
+Die Community-Administratoren müssen **Erwähnung aktivieren** in Community-Komponenten aktivieren, damit registrierte Benutzer die Funktion für diese Komponenten verwenden können.
 
 **Gruppennachrichten**
 
-Registrierte Community-Mitglieder können nun eine einzige E-Mail verfassen und diese direkt per Massenversand an Gruppen senden, anstatt dieselbe Nachricht einzeln an die jeweiligen Gruppenmitglieder verschicken zu müssen. Um [Gruppennachrichten](/help/communities/configure-messaging.md) zuzulassen, aktivieren Sie beide Instanzen des [Messaging Operations Service](/help/communities/messaging.md#group-messaging).
+Registrierte Community-Mitglieder können nun eine einzige E-Mail verfassen und diese direkt per Massenversand an Gruppen senden, anstatt dieselbe Nachricht einzeln an die jeweiligen Gruppenmitglieder verschicken zu müssen. Um [Gruppennachrichten](/help/communities/configure-messaging.md) zuzulassen, aktivieren Sie beide Instanzen von [Messaging Operations Service](/help/communities/messaging.md#group-messaging).
 
 ![Gruppennachricht](assets/group-messaging.png)
 
 ### Verbesserte Massenmoderation {#enhancements-to-bulk-moderation}
 
-Benutzerdefinierte Filter in Massenmoderation
+Benutzerdefinierte Filter bei der Massenmoderation
 
-[Benutzerdefinierter ](/help/communities/moderation.md#custom-filters) Filterscan wird jetzt entwickelt und der Benutzeroberfläche für die Massenmoderation hinzugefügt.
+[Benutzerdefinierte ](/help/communities/moderation.md#custom-filters) Filter können jetzt entwickelt und der Benutzeroberfläche für die Massenmoderation hinzugefügt werden.
 
 Ein in [Github](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter) vorhandenes [Beispielprojekt](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter) zeigt das Filtern nach Tags. Dieses Projekt kann als Grundlage zum Entwickeln analoger benutzerdefinierter Filter verwendet werden.
 
@@ -65,12 +64,12 @@ Site-Administratoren können eine Gruppe auf jeder Hierarchieebene erstellen und
 
 **SCORM 2017.1-Unterstützung**
 
-Die Aktivierungsfunktionalität von AEM 6.5 Communities unterstützt die Engine &quot;Shareable Content Object Reference Model [(SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)&quot;.
+Die Aktivierungsfunktion von AEM 6.5 Communities unterstützt die Engine Shareable Content Object Reference Model [(SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/).
 
-* Unterstützung der Tastaturnavigation bei Komponenten zur Aktivierung
-* Die Aktivierungskomponenten (z. B. Katalogabspielen und Kurswiedergabe, Zuweisungen, Dateibibliothek) in AEM Communities unterstützen die Tastaturnavigation, um die Zugänglichkeit zu verbessern.
+* Unterstützung der Tastaturnavigation bei Aktivierungskomponenten
+* Aktivierungskomponenten (z. B. Katalog- und Kurswiedergabe, Zuweisungen, Dateibibliothek) in AEM Communities unterstützen die Tastaturnavigation für eine verbesserte Barrierefreiheit.
 
 ### Weitere Verbesserungen {#other-enhancements}
 
-* SOL 7-Unterstützung
-* AEM 6.5 Communities unterstützt Apache Solr 7.0 Version der Suchplattform beim Einrichten von MSRP und DSRP.
+* Unterstützung für Solr 7
+* AEM 6.5 Communities unterstützt die Apache Solr 7.0-Version der Suchplattform bei der Einrichtung von MSRP und DSRP.
