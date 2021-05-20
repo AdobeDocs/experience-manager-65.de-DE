@@ -9,18 +9,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: f6440a36-719a-4f89-b7db-1af918a3469a
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: 9333705b-9944-4a74-a30f-7d9ec85fd824
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '911'
 ht-degree: 79%
 
 ---
 
-
 # Branding-Anpassung {#branding-customization}
 
-Sie können das Symbol und den Namen der Anwendung, Startbilder und die Anmeldeseite anpassen und dadurch ein auf Ihr Unternehmen zugeschnittenes Erscheinungsbild für Ihre Organisation in der AEM Forms-App gestalten. Sie können beispielsweise die Bilder ändern und stattdessen Logos Ihrer Organisation verwenden. Die AEM Forms-App unterstützt die folgenden Anpassungen:
+Sie können das Symbol und den Namen der Anwendung, Startbilder und die Anmeldeseite anpassen und dadurch ein auf Ihr Unternehmen zugeschnittenes Erscheinungsbild für Ihre Organisation in der AEM Forms-App gestalten. Sie können beispielsweise die Bilder ändern und stattdessen Logos Ihrer Organisation verwenden. Das AEM Forms-Programm unterstützt die folgenden Anpassungen:
 
 * Anpassen von Anwendungssymbolen und Startbildern
 * Anpassen des App-Namens
@@ -40,11 +39,11 @@ Führen Sie die folgenden Schritte durch, um das Standardsymbol der App und das 
 #### iOS {#for-ios}
 
 1. Öffnen Sie das Projekt `Capture.xcodeproj` in Xcode.
-1. (***Symbol anpassen***) Navigieren Sie in der Navigatoransicht von „Capture“ zu **[!UICONTROL „Capture“ > „Capture“ > „Unterstützende Dateien“ > Capture-info.plist]**. Klicken Sie auf das Dropdown-Menü neben den Symboldateien. Geben Sie den Namen der Symboldatei (.png) an und laden Sie die Datei in **[!UICONTROL „Capture“ > „Capture“ > „Ressourcen“ > „Symbole“]** hoch. Derzeit werden folgende Dimensionen unterstützt: 29 x 29, 50 x 50, 58 x 58, 72 x 72, 100 x 100 und 144 x 144.
+1. (***Symbol anpassen***) Navigieren Sie in der Navigatoransicht von „Capture“ zu **[!UICONTROL „Capture“ > „Capture“ > „Unterstützende Dateien“ > Capture-info.plist]**. Klicken Sie auf das Dropdown-Menü neben den Symboldateien. Geben Sie den Namen der Symboldatei (.png) an und laden Sie die Datei in **[!UICONTROL „Capture“ > „Capture“ > „Ressourcen“ > „Symbole“]** hoch. Derzeit werden folgende Dimensionen unterstützt: 29x29, 50x50, 58x58, 72x72, 100x100 und 144x144.
 1. (***Startbilder anpassen***) Vergewissern Sie sich, dass die Dateinamen Ihrer Startbilder folgendermaßen lauten.
 
-   * Hochformat: `Default-Portrait~ipad.png` und `Default-Portrait@2x~ipad.png`
-   * Querformat: `Default-Landscape~ipad.png` und `Default-Landscape@2x~ipad.png`
+   * Für Hochformat: `Default-Portrait~ipad.png` und `Default-Portrait@2x~ipad.png`
+   * Für Querformat: `Default-Landscape~ipad.png` und `Default-Landscape@2x~ipad.png`
 
    Laden Sie die Dateien in das Capture-Projekt hoch, wobei Sie bestehende Dateien im Projekt ersetzen.
 
@@ -95,9 +94,9 @@ Führen Sie die folgenden Schritte durch, um das Standardsymbol der App und das 
 ### iOS {#for-ios-1}
 
 1. Öffnen Sie das Projekt `Capture.xcodeproj` in Xcode.
-1. Navigieren Sie in der Navigator-Ansicht von Capture zu **[!UICONTROL Capture > Capture > Supporting Files > InfoPlist.strings]**.
+1. Navigieren Sie in der Navigatoransicht von Capture zu **[!UICONTROL Capture > Capture > Unterstützende Dateien > InfoPlist.strings]**.
 
-   Aktualisieren Sie den Wert des Attributs `CFBundleDisplayName` auf einen Namen, der für die App angezeigt werden soll.
+   Aktualisieren Sie den Wert für das Attribut `CFBundleDisplayName` auf einen Namen, den Sie für die App anzeigen möchten.
 
 1. Erstellen Sie die AEM Forms-App auf einem iOS-Gerät oder einem iOS-Simulator.
 
@@ -120,7 +119,7 @@ Führen Sie die folgenden Schritte durch, um das Standardsymbol der App und das 
 
    `%HOMEPATH%\adobe-lc-mobileworkspace-src-<version>\src\windows\MWSWindows\config.xml`
 
-1. Aktualisieren Sie den Wert im Tag `<name>...</name>`.
+1. Aktualisieren Sie den Wert im Tag `<name>...</name>` .
 1. Erstellen Sie die AEM Forms-App neu.
 
    Informationen zum Erstellen der App für Windows finden Sie unter [Einrichten des Eclipse-Projekts und Erstellen der Android-App](/help/forms/using/setup-visual-studio-project-build-installer.md).
@@ -208,7 +207,7 @@ Stellen Sie sicher, dass Sie das folgende Bild haben:
 1. Öffnen Sie das Projekt `Capture.xcodeproj` in Xcode.
 
 1. Navigieren Sie zum Ordner `www/wsmobile/images`. 
-1. Um das Logo zu ändern, ersetzen Sie die Standarddatei `aem_icon.png` durch die benutzerdefinierte Datei `aem_icon.png`.
+1. Um das Logo zu ändern, ersetzen Sie die Standarddatei `aem_icon.png` durch die benutzerdefinierte Datei `aem_icon.png` .
 1. Erstellen Sie die AEM Forms-App auf einem iOS-Gerät oder einem iOS-Simulator.
 
 ### So passen Sie Bilder auf der Anmeldeseite mit Eclipse an  {#to-customize-images-on-the-login-pages-using-eclipse-1}
@@ -216,7 +215,7 @@ Stellen Sie sicher, dass Sie das folgende Bild haben:
 1. Öffnen Sie das Android-Projekt in Eclipse.
 
 1. Navigieren Sie zum Ordner `assets/www/wsmobile/images`. 
-1. Um das Logo zu ändern, ersetzen Sie die Standarddatei `aem_icon.png` durch die benutzerdefinierte Datei `aem_icon.png`.
+1. Um das Logo zu ändern, ersetzen Sie die Standarddatei `aem_icon.png` durch die benutzerdefinierte Datei `aem_icon.png` .
 1. Erstellen und wählen Sie „AEM Forms App“ auf dem Android-Gerät.
 
 ### So passen Sie Bilder auf den Anmeldeseiten mithilfe von Visual Studio an  {#to-customize-images-on-the-login-pages-using-visual-studio-1}
@@ -224,5 +223,5 @@ Stellen Sie sicher, dass Sie das folgende Bild haben:
 1. Öffnen Sie das Projekt `MWSWindows.sln` in Visual Studio.
 
 1. Navigieren Sie zum Ordner `MWSWindows\www\wsmobile\images`. 
-1. Um das Logo zu ändern, ersetzen Sie die Standarddatei `aem_icon.png` durch die benutzerdefinierte Datei `aem_icon.png`.
+1. Um das Logo zu ändern, ersetzen Sie die Standarddatei `aem_icon.png` durch die benutzerdefinierte Datei `aem_icon.png` .
 1. Erstellen und wählen Sie „AEM Forms App“ auf dem Windows-Gerät.
