@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: fed3b562-bcc2-4fb7-8fd2-35b1ac621e16
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: f8b84f13-02d3-4787-95e1-25fd684e6d3b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 90%
 
 ---
-
 
 # Anzeigen zusätzlicher Daten in der ToDo-Liste{#displaying-additional-data-in-todo-list}
 
@@ -124,7 +123,7 @@ Weitere Informationen über die JSON-Objektbeschreibung finden Sie in [diesem](/
 
 ## Definieren von CSS für die neue Eigenschaft  {#defining-css-for-the-new-property}
 
-1. Sie können einen Stil auf die einer Aufgabe hinzugefügten Informationen (Eigenschaft) anwenden. Dazu müssen Sie Stilinformationen für die neue Eigenschaft hinzufügen, die `/apps/ws/css/newStyle.css` hinzugefügt wird.
+1. Sie können einen Stil auf die einer Aufgabe hinzugefügten Informationen (Eigenschaft) anwenden. Dazu müssen Sie Stilinformationen für die neue Eigenschaft hinzufügen, die zu `/apps/ws/css/newStyle.css` hinzugefügt wird.
 
    Fügen Sie beispielsweise ein:
 
@@ -145,7 +144,7 @@ Schließlich müssen Sie für jede Eigenschaft, die Sie der Aufgabe hinzufügen 
    * von: `/libs/ws/js/runtime/templates/`
    * in: `/apps/ws/js/runtime/templates/`
 
-1. hinzufügen Sie die neuen Informationen auf `/apps/ws/js/runtime/templates/task.html`.
+1. Fügen Sie die neuen Informationen zu `/apps/ws/js/runtime/templates/task.html` hinzu.
 
    Fügen Sie beispielsweise unter `div class="taskProperties"` hinzu:
 
