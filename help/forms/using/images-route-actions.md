@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 687c6569-7189-4039-9c7a-bc29658a7756
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 53%
 
 ---
-
 
 # In Route-Aktionen verwendete Bilder anpassen {#customize-images-used-in-route-actions}
 
@@ -27,7 +26,7 @@ Um die in Route-Aktionen verwendeten Bilder anzupassen, führen Sie die Schritte
 
    `/apps/ws/css/newStyle.css`
 
-   Beispiel: hinzufügen Sie einen neuen Stil mit dem Namen `myStyle1`wie unten dargestellt und laden Sie die Bilddatei `myStyleIcon1.png` mithilfe eines WebDAV-Clients in den Ordner `/apps/ws/image`s hoch.
+   Beispiel: Fügen Sie einen neuen Stil mit dem Namen `myStyle1`hinzu, wie unten dargestellt, und laden Sie die Bilddatei `myStyleIcon1.png` mithilfe eines WebDAV-Clients in den Ordner `/apps/ws/image`s hoch.
 
    >[!NOTE]
    >
@@ -51,7 +50,7 @@ Um die in Route-Aktionen verwendeten Bilder anzupassen, führen Sie die Schritte
 
 1. Kopieren Sie `/libs/ws/js/runtime/templates/task.html` nach `/apps/ws/js/runtime/templates/task.html`.
 
-1. Wenn der Name des CSS-Stils mit dem Route-Aktionsnamen vom Server identisch ist, ändern Sie den folgenden Code in `/apps/ws/js/runtime/templates/task.html`:
+1. Wenn der Name des CSS-Stils mit dem Route-Aktionsnamen vom Server übereinstimmt, ändern Sie den folgenden Code in `/apps/ws/js/runtime/templates/task.html`:
 
    ```jsp
    <%if(routeList == null){%>
@@ -81,7 +80,7 @@ Um die in Route-Aktionen verwendeten Bilder anzupassen, führen Sie die Schritte
                <%}%>
    ```
 
-1. Wenn sich der Name des CSS-Stils vom Route-Aktionsnamen des Servers unterscheidet, ändern Sie den folgenden Code in `/apps/ws/js/runtime/templates/task.html`. Er fügt einen Stapel der `if-else`-Servlet-Bedingungen hinzu, um den Stil dem Route-Aktionsnamen zuzuordnen.
+1. Wenn der Name des CSS-Stils sich vom Route-Aktionsnamen des Servers unterscheidet, ändern Sie den folgenden Code in `/apps/ws/js/runtime/templates/task.html`. Er fügt einen Stapel der `if-else`-Servlet-Bedingungen hinzu, um den Stil dem Route-Aktionsnamen zuzuordnen.
 
 ```jsp
 <%if(routeList == null){%>
@@ -121,7 +120,7 @@ To
 
 1. Kopieren Sie `/libs/ws/js/runtime/templates/taskdetails.html` nach `/apps/ws/js/runtime/templates/taskdetails.html`.
 
-1. Wenn der Name des CSS-Stils mit dem Route-Aktionsnamen vom Server identisch ist, ändern Sie den folgenden Code in `/apps/ws/js/runtime/templates/taskdetails.html`:
+1. Wenn der Name des CSS-Stils mit dem Route-Aktionsnamen vom Server übereinstimmt, ändern Sie den folgenden Code in `/apps/ws/js/runtime/templates/taskdetails.html`:
 
    ```jsp
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -141,7 +140,7 @@ To
                        <%}%>
    ```
 
-1. Wenn sich der Name des CSS-Stils vom Route-Aktionsnamen des Servers unterscheidet, ändern Sie den folgenden Code in `/apps/ws/js/runtime/templates/taskdetails.html`. Er fügt einen Stapel der `if-else`-Servlet-Bedingungen hinzu, um den Stil dem Route-Aktionsnamen zuzuordnen.
+1. Wenn der Name des CSS-Stils sich vom Route-Aktionsnamen des Servers unterscheidet, ändern Sie den folgenden Code in `/apps/ws/js/runtime/templates/taskdetails.html`. Er fügt einen Stapel der `if-else`-Servlet-Bedingungen hinzu, um den Stil dem Route-Aktionsnamen zuzuordnen.
 
    ```jsp
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -169,7 +168,7 @@ To
                <%}%>
    ```
 
-1. Öffnen Sie `/apps/ws/js/registry.js` zur Bearbeitung und suchen Sie den folgenden Text:
+1. Öffnen Sie `/apps/ws/js/registry.js` zur Bearbeitung und suchen Sie nach folgendem Text:
    `"text!/lc/libs/ws/js/runtime/templates/taskdetails.html"`
 
 1. Ersetzen Sie den Text durch Folgendes:
