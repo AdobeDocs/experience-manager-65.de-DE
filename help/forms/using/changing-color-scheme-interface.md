@@ -9,18 +9,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 18dab82a-badf-4c32-83a2-cd5cb04cae89
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: e0a261a2-518b-4984-a5b5-24f0b9222e24
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 76%
 
 ---
 
-
 # Ändern des Farbschemas der Benutzeroberfläche {#changing-the-color-scheme-of-the-interface}
 
-Sie können das Farbschema von Bereichen der Benutzeroberfläche von AEM Forms Workspace Ihren Anforderungen entsprechend ändern. Im Folgenden sehen Sie einige Beispiele für repräsentative Anpassungen des Farbschemas. Zusätzlich zu den in diesem Artikel beschriebenen Schritten finden Sie unter [Generische Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md).
+Sie können das Farbschema von Bereichen der Benutzeroberfläche von AEM Forms Workspace Ihren Anforderungen entsprechend ändern. Im Folgenden sehen Sie einige Beispiele für repräsentative Anpassungen des Farbschemas. Zusätzlich zu den Schritten, die in diesem Artikel beschrieben werden, finden Sie unter [Generische Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md).
 
 ## Navigationsleiste oben {#top-navigation-bar}
 
