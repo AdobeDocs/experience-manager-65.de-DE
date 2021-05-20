@@ -7,8 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 role: Business Practitioner, Administrator
 exl-id: 85fa0414-354e-4530-81f9-a5659bb7f2fd
-feature: Configuration
-translation-type: tm+mt
+feature: Konfiguration
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
 source-wordcount: '255'
@@ -24,15 +23,15 @@ Mithilfe von [Dynamic Media](https://www.adobe.com/de/solutions/web-experience-m
 >
 >In diesem Dokument werden die Funktionen für dynamische Medien beschrieben, die direkt in AEM integriert sind. Wenn Sie Dynamic Media Classic in AEM integriert verwenden, finden Sie weitere Informationen unter [Dynamic Media Classic-Integrationsdokumentation](/help/sites-administering/scene7.md).
 >
->Unter [Dual-Use-Szenario](/help/sites-administering/scene7.md#dual-use-scenario) finden Sie Zeiten, in denen Sie AEM in Dynamic Media Classic in Verbindung mit Dynamic Media integrieren möchten.
+>Unter [Szenario mit doppelter Verwendung](/help/sites-administering/scene7.md#dual-use-scenario) finden Sie die Zeiten, in denen Sie AEM in Dynamic Media Classic gemeinsam mit Dynamic Media integrieren möchten.
 
 Wenn Sie Dynamic Media verwalten, sind für Sie die folgenden Themen interessant:
 
-* [Konfigurieren des Dynamic Media-Scene7-Modus](config-dms7.md) — Verwenden Sie diese Konfiguration, wenn Sie ein neuer Dynamic Media-Kunde sind.
-* [Konfigurieren des Dynamic Media-Hybrid-Modus](config-dynamic.md) — Verwenden Sie diese Konfiguration, wenn Sie bereits ein Dynamic Media-Kunden-Upgrade AEM sind.
+* [Konfigurieren des Dynamic Media-Scene7-Modus](config-dms7.md)  - Verwenden Sie diese Konfiguration, wenn Sie ein neuer Dynamic Media-Kunde sind.
+* [Konfigurieren des Dynamic Media-Hybrid-Modus](config-dynamic.md)  - Verwenden Sie diese Konfiguration, wenn Sie bereits ein Dynamic Media-Kunde sind und AEM aktualisieren.
 * [Verwalten von Bildvorgaben](managing-image-presets.md)
-* [Verwalten von Viewer-Vorgaben](managing-viewer-presets.md)
-* [Fehlerbehebung in Dynamic Media – Scene7-Modus](troubleshoot-dms7.md)
+* [Verwalten von Viewer-Vorgaben ](managing-viewer-presets.md)
+* [Fehlerbehebung in Dynamic Media – Scene7-Modus](troubleshoot-dms7.md)
 
 Weitere Informationen finden Sie in den folgenden Themen:
 
