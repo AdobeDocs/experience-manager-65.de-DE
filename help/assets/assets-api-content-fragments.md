@@ -10,16 +10,15 @@ content-type: reference
 topic-tags: extending-assets
 discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
 docset: aem65
-feature: Content Fragments
+feature: Inhaltsfragmente
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '1861'
 ht-degree: 94%
 
 ---
-
 
 # Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API {#content-fragments-support-in-aem-assets-http-api}
 
@@ -36,13 +35,13 @@ ht-degree: 94%
 >
 Die aktuelle Implementierung der AEM Assets-HTTP-API ist REST.
 
-Die Adobe Experience Manager (AEM) [Assets REST API](/help/assets/mac-api-assets.md) ermöglicht es Entwicklern, über CRUD-Vorgänge (Erstellen, Lesen, Aktualisieren, Löschen) direkt auf AEM Inhalte zuzugreifen.
+Die Adobe Experience Manager (AEM) [Assets-REST-API](/help/assets/mac-api-assets.md) ermöglicht Entwicklern den direkten Zugriff auf (AEM gespeicherte) Inhalte über die HTTP-API über CRUD-Vorgänge (Erstellen, Lesen, Aktualisieren, Löschen).
 
 Die API ermöglicht es Ihnen, AEM als Headless-CMS (Content Management System) auszuführen, indem Sie einer Javascript-Frontend-Applikation Content Services bereitstellen. Oder jedem anderen Programm, das HTTP-Anfragen ausführen und JSON-Antworten verarbeiten kann.
 
 Beispielsweise benötigen Framework-basierte oder benutzerdefinierte Single Page Applications (SPA), die über die HTTP-API bereitgestellten Inhalte häufig im JSON-Format.
 
-AEM Core-Komponenten bieten eine sehr umfassende, flexible und anpassbare API, die für diesen Zweck erforderliche Read-Vorgänge bereitstellen kann und deren JSON-Ausgabe angepasst werden kann. Sie erfordern jedoch AEM WCM (Web-Content-Management)-Know-how für die Implementierung, da sie auf (API-)Seiten gehostet werden müssen, die auf dedizierten AEM-Vorlagen basieren. Nicht jede SPA-Entwicklungsorganisation hat Zugriff auf diese Ressourcen.
+AEM Kernkomponenten bieten eine sehr umfassende, flexible und anpassbare API, die erforderliche Lesevorgänge für diesen Zweck durchführen kann und deren JSON-Ausgabe angepasst werden kann. Für die Implementierung sind jedoch AEM WCM (Web Content Management)-Know-how erforderlich, da sie auf (API-)Seiten gehostet werden müssen, die auf dedizierten AEM-Vorlagen basieren. Nicht jede SPA-Entwicklungsorganisation hat Zugriff auf diese Ressourcen.
 
 Hier kann die Assets-REST-API eingesetzt werden. Damit können Entwickler direkt auf Assets (z. B. Bilder und Inhaltsfragmente) zugreifen, ohne sie zuerst in eine Seite einzubetten, und ihre Inhalte im serialisierten JSON-Format bereitstellen. (Beachten Sie, dass Sie die JSON-Ausgabe nicht über die Assets-REST-API anpassen können). Mit der Assets-REST-API können Entwickler Inhalte ändern, indem sie neue Assets, Inhaltsfragmente und Ordner erstellen, aktualisieren oder vorhandene Assets, Inhaltsfragmente und Ordner löschen.
 
@@ -100,8 +99,8 @@ Dies bedeutet, dass die folgenden (`write`)-Anfragen nicht in einer einzelnen Tr
   </tr>
   <tr>
    <td>Zugriff</td>
-   <td><p>Direkter Zugriff möglich.</p> <p>Verwendet den Endpunkt <code>/api/assets </code> und ist <code>/content/dam</code> zugeordnet (im Repository).</p> <p>So greifen Sie beispielsweise auf Folgendes zu:<code class="code">
-       /content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten</code><br /><br /> <code>/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.model.json</code></p> </td>
+   <td><p>Direkter Zugriff möglich.</p> <p>Verwendet den Endpunkt <code>/api/assets </code> und ist <code>/content/dam</code> zugeordnet (im Repository).</p> <p>Beispiel für den Zugriff auf:<code class="code">
+       /content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten</code><br /> -Anfrage:<br /> <code>/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.model.json</code></p> </td>
    <td><p>Muss über eine AEM-Komponente auf einer AEM-Seite referenziert werden.</p> <p>Verwendet den Selektor <code>.model</code>, um die JSON-Darstellung zu erstellen.</p> <p>Eine Beispiel-URL würde wie folgt aussehen:<br /> <code>https://localhost:4502/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.model.json</code></p> </td>
   </tr>
   <tr>
@@ -214,7 +213,7 @@ Inhaltsfragmente:
 
 * Gelten auch als atomisch, d. h. die Elemente und Varianten werden als Teil der Eigenschaften des Fragments anstatt als Links oder untergeordnete Entitäten bereitgestellt. Dies ermöglicht einen effiziente Zugriff auf die Payload eines Fragments.
 
-#### Inhaltsmodelle und Inhaltsfragmente   {#content-models-and-content-fragments}
+#### Inhaltsmodelle und Inhaltsfragmente  {#content-models-and-content-fragments}
 
 Derzeit werden die Modelle, die die Struktur eines Inhaltsfragments definieren, nicht über eine HTTP-API bereitgestellt. Daher benötigt der *Benutzer* (zumindest einige) Informationen über das Modell eines Fragments. Die meisten Informationen kann er jedoch aus der Payload ableiten. So sind z. B. Datentypen Teil der Definition.
 
@@ -275,7 +274,7 @@ Nutzung erfolgt über
 
 Der Hauptteil muss eine JSON-Darstellung davon enthalten, was für das angegebene Inhaltsfragment aktualisiert werden soll.
 
-Dies kann einfach der Titel oder die Beschreibung eines Inhaltsfragments bzw. ein einzelnes Element oder alle Elementwerte und/oder Metadaten sein. Es ist auch obligatorisch, eine gültige `cq:model`-Eigenschaft für Aktualisierungen bereitzustellen.
+Dies kann einfach der Titel oder die Beschreibung eines Inhaltsfragments bzw. ein einzelnes Element oder alle Elementwerte und/oder Metadaten sein. Es ist auch erforderlich, eine gültige `cq:model` -Eigenschaft für Aktualisierungen bereitzustellen.
 
 ### Löschen {#delete}
 
@@ -380,4 +379,3 @@ Weitere Informationen finden Sie unter:
 
 * [Assets-HTTP-API – Dokumentation ](/help/assets/mac-api-assets.md)
 * [AEM Gem-Sitzung: OAuth](https://helpx.adobe.com/de/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
-
