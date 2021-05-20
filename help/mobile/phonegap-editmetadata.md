@@ -1,22 +1,21 @@
 ---
 title: Bearbeiten von App-Metadaten
 seo-title: Bearbeiten von App-Metadaten
-description: App-Metadaten sind erforderliche Details, um eine Anwendung in einem Store eines Anbieters freizugeben. Auf dieser Seite erfahren Sie mehr über das Bearbeiten von App-Daten.
-seo-description: App-Metadaten sind erforderliche Details, um eine Anwendung in einem Store eines Anbieters freizugeben. Auf dieser Seite erfahren Sie mehr über das Bearbeiten von App-Daten.
+description: App-Metadaten sind erforderliche Details, um eine Anwendung für den Store eines Anbieters freizugeben. Auf dieser Seite erfahren Sie mehr über das Bearbeiten von App-Daten.
+seo-description: App-Metadaten sind erforderliche Details, um eine Anwendung für den Store eines Anbieters freizugeben. Auf dieser Seite erfahren Sie mehr über das Bearbeiten von App-Daten.
 uuid: c140be0f-8403-416e-af0f-29072a2ab942
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 07b38da6-2efa-4a43-9afa-7151a241a5ad
-translation-type: tm+mt
-source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+exl-id: 897a04b9-e357-4f1c-8aa0-2c2528f8556d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 26%
 
 ---
-
 
 # Bearbeiten von App-Metadaten {#editing-app-metadata}
 
@@ -24,7 +23,7 @@ ht-degree: 26%
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Die Kachel **App verwalten** und &quot;App verwalten&quot;bieten eine Möglichkeit zum Ansicht und Bearbeiten von Anwendungsmetadaten. App-Metadaten sind erforderliche Details, um eine Anwendung in einem Store eines Anbieters freizugeben. Dazu können allgemeine Metadaten, iOS-Metadaten und Screenshots gehören. Weitere Informationen zu allgemeinen und iOS-Metadaten finden Sie unter [App-Datei verwalten](/help/mobile/phonegap-app-details-tile.md).
+Die Kachel **App verwalten** und die Seite &quot;App verwalten&quot;bieten eine Möglichkeit, Anwendungsmetadaten anzuzeigen und zu bearbeiten. App-Metadaten sind erforderliche Details, um eine Anwendung für den Store eines Anbieters freizugeben. Dazu können gängige Metadaten, iOS-Metadaten und Screenshots gehören. Weitere Informationen zu allgemeinen und iOS-Metadaten finden Sie unter [App-Kachel verwalten](/help/mobile/phonegap-app-details-tile.md) .
 
 ## Bearbeiten der App-Daten {#editing-the-app-data}
 
@@ -34,22 +33,22 @@ So bearbeiten Sie die Metadaten der App:
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
-1. Um Details durch Klicken auf das Symbol &quot;...&quot;Ansicht oder zu bearbeiten. in der unteren rechten Ecke der Kachel **App verwalten**.
+1. Um Details anzuzeigen oder zu bearbeiten, klicken Sie auf &quot;...&quot; in der unteren rechten Ecke der Kachel **App verwalten**.
 
-1. Geben Sie die Details in eine der fünf Registerkarten ein oder legen Sie sie in der Ansicht nach unten fest.
+1. Geben Sie die Details in einen der fünf verfügbaren Registerkarten ein oder zeigen Sie sie an, wie in der folgenden Abbildung dargestellt.
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
 ## Bearbeiten von allgemeinen und iOS-Metadaten {#editing-common-and-ios-metadata}
 
-Sie können die allgemeinen und IOS-Metadaten bearbeiten:
+Sie können die allgemeinen und iOS-Metadaten bearbeiten:
 
-* Wählen Sie auf der Seite &quot;App-Beschreibung&quot;die Registerkarte **Erweitert**.
-* Bearbeiten oder Ansicht der häufig verwendeten und IOS-Metadaten. Nähere Informationen finden Sie in den unten stehenden Zahlen.
+* Wählen Sie auf der App-Beschreibungsseite die Registerkarte **Erweitert** aus.
+* Bearbeiten oder zeigen Sie die allgemeinen und iOS-Metadaten an. Weitere Informationen finden Sie in den folgenden Zahlen.
 
 ![chlimage_1-31](assets/chlimage_1-31.png) ![chlimage_1-32](assets/chlimage_1-32.png)
 
-## hinzufügen und Entfernen von Screenshots {#add-and-remove-screenshots}
+## Screenshots hinzufügen und entfernen {#add-and-remove-screenshots}
 
 Sie können App-Screenshots in das Metadaten-Rollup einbeziehen. Einige Anbieter benötigen präzise Screenshots, wenn Sie eine App an den App Store senden. Diese Bilder müssen bereits in Assets vorhanden sein. Informationen zum Hochladen Ihrer Screenshots finden Sie unter [Asset-Auswahl](../assets/search-assets.md#assetpicker).
 
@@ -59,16 +58,16 @@ Sie können App-Screenshots in das Metadaten-Rollup einbeziehen. Einige Anbieter
 
 So fügen Sie ein Asset als Screenshot hinzu:
 
-1. Klicken Sie im Bearbeitungsmodus der Seite **App verwalten** auf Hinzufügen (Pluszeichen).
-1. Wählen Sie das Asset aus und klicken Sie auf **Wählen Sie**, um das Asset hinzuzufügen.
+1. Klicken Sie im Bearbeitungsmodus der Seite **App verwalten** auf Hinzufügen (Plussymbol).
+1. Wählen Sie das Asset aus und klicken Sie auf **Wählen Sie** , um das Asset hinzuzufügen.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
-1. Wählen Sie das Asset aus und klicken Sie auf **Wählen Sie**, um das Asset hinzuzufügen.
+1. Wählen Sie das Asset aus und klicken Sie auf **Wählen Sie** , um das Asset hinzuzufügen.
 
 >[!NOTE]
 >
->Der Screenshot muss mit der Bildschirmauflösung des Zielgruppe-Geräts übereinstimmen.
+>Der Screenshot muss mit der Bildschirmauflösung des Zielgeräts übereinstimmen.
 
 ### Löschen von Screenshots {#delete-screenshots}
 
@@ -90,7 +89,7 @@ Weitere Informationen zu anderen Authoring-Rollen finden Sie in den folgenden Re
 
 ### Zusätzliche Ressourcen {#additional-resources}
 
-Informationen zu den Rollen und Verantwortlichkeiten von Administratoren und Entwicklern finden Sie in den nachfolgend aufgeführten Ressourcen:
+Informationen zu den Rollen und Zuständigkeiten von Administratoren und Entwicklern finden Sie in den folgenden Ressourcen:
 
 * [Entwickeln für Adobe PhoneGap Enterprise mit AEM](/help/mobile/developing-in-phonegap.md)
 * [Verwalten von Inhalten für Adobe PhoneGap Enterprise mit AEM](/help/mobile/administer-phonegap.md)
