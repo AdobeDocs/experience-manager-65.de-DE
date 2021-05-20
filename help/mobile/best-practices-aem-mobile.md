@@ -1,22 +1,21 @@
 ---
 title: Best Practices
 seo-title: Best Practices
-description: Auf dieser Seite lernen Sie bewährte Verfahren und Richtlinien kennen, die erfahrenen AEM Entwicklern von Sites helfen, die Vorlagen und Komponenten für mobile Apps erstellen möchten.
-seo-description: Auf dieser Seite lernen Sie bewährte Verfahren und Richtlinien kennen, die erfahrenen AEM Entwicklern von Sites helfen, die Vorlagen und Komponenten für mobile Apps erstellen möchten.
+description: Auf dieser Seite erfahren Sie Best Practices und Richtlinien, die erfahrenen AEM-Entwicklern für Sites helfen, die Vorlagen und Komponenten für mobile Apps erstellen möchten.
+seo-description: Auf dieser Seite erfahren Sie Best Practices und Richtlinien, die erfahrenen AEM-Entwicklern für Sites helfen, die Vorlagen und Komponenten für mobile Apps erstellen möchten.
 uuid: 7733c8b1-a88c-455c-8080-f7add4205b92
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: a0647696-72c3-409b-85ba-9275d8f99cff
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 63ceaba6-b796-4c13-a86d-f0609ec679c9
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 4%
 
 ---
-
 
 # Best Practices {#best-practices}
 
@@ -24,54 +23,54 @@ ht-degree: 4%
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Das Erstellen einer AEM Mobile On-demand Services-App unterscheidet sich vom Erstellen einer App, die direkt in der Cordova-Shell (oder PhoneGap) ausgeführt wird. Die Entwickler sollten mit Folgendem vertraut sein:
+Das Erstellen einer AEM Mobile On-demand Services-App unterscheidet sich vom Erstellen einer App, die direkt in der Cordova- (oder PhoneGap-)Shell ausgeführt wird. Die Entwickler sollten mit folgenden Themen vertraut sein:
 
-* Plugins, die standardmäßig unterstützt werden, sowie die AEM Mobile-spezifischen Plugins.
+* Plug-ins, die standardmäßig unterstützt werden, sowie die AEM Mobile-spezifischen Plug-ins.
 
 >[!NOTE]
 >
->Ausführliche Informationen zu Plugins finden Sie in den folgenden Ressourcen:
+>Ausführliche Informationen zu Plug-ins finden Sie in den folgenden Ressourcen:
 >
->* [Verwenden von Cordova-Zusatzmodulen in AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
->* [Verwenden von AEM Mobile-spezifischen Cordova-kompatiblen Zusatzmodulen](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
+>* [Verwenden von Cordova-Plug-ins in AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
+>* [Verwenden von AEM Mobile-spezifischen Cordova-aktivierten Plug-ins](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
 
 >
 
 
 
-* Vorlagen, die Plugin-Funktionen verwenden, sollten so geschrieben werden, dass sie im Browser immer noch autoritär sind, ohne dass die Plugin-Brücke vorhanden ist.
+* Vorlagen, die Plug-in-Funktionen verwenden, sollten so geschrieben werden, dass sie im Browser noch autorierbar sind, ohne dass die Plug-in-Verbindung vorhanden ist.
 
-   * Warten Sie beispielsweise auf die Funktion *deviceready*, bevor Sie versuchen, auf die API eines Plug-Ins zuzugreifen.
+   * Warten Sie beispielsweise auf die Funktion *device* , bevor Sie versuchen, auf die API eines Plug-ins zuzugreifen.
 
-## Richtlinien für AEM-Entwickler {#guidelines-for-aem-developers}
+## Richtlinien für AEM Entwickler {#guidelines-for-aem-developers}
 
-Die folgenden Richtlinien helfen erfahrenen AEM Entwicklern von Sites, die Vorlagen und Komponenten für mobile Apps erstellen möchten:
+Die folgenden Richtlinien helfen erfahrenen AEM-Entwicklern für Sites, die mobile App-Vorlagen und -Komponenten erstellen möchten:
 
-**Strukturieren AEM Sitevorlagen zur Förderung der Wiederverwendung und Erweiterbarkeit**
+**Strukturieren AEM Sites-Vorlagen zur Förderung der Wiederverwendung und Erweiterbarkeit**
 
 * Mehrere Komponentenskriptdateien über eine einzige monolithische
 
-   * Es stehen eine Reihe leere Erweiterungspunkte zur Verfügung, wie z. B. *customheaderlibs.html* und *customfooterlibs.html*, mit denen Entwickler die Seitenvorlage ändern können, während möglichst wenig Kerncode dupliziert wird.
+   * Es werden eine Reihe leerer Erweiterungspunkte bereitgestellt, z. B. *customheaderlibs.html* und *customfooterlibs.html*, die es dem Entwickler ermöglichen, die Seitenvorlage zu ändern und so wenig Kerncode wie möglich zu duplizieren
    * Vorlagen können dann über den Sling-Mechanismus *sling:resourceSuperType* erweitert und angepasst werden
 
 * Sightly/HTL über JSP als Vorlagensprache bevorzugen
 
-   * Dadurch wird eine Trennung von Code und Markup gefördert, Angebot, die im XSS-Schutz integriert sind, und die eine vertrautere Syntax aufweisen
+   * Dadurch wird eine Trennung von Code und Markup gefördert, bietet integrierten XSS-Schutz und verfügt über eine vertrautere Syntax.
 
-**Optimieren Sie die Leistung auf dem Gerät.**
+**Optimieren der Leistung auf dem Gerät**
 
-* Artikelspezifische Skript- und Stylesheets sollten mithilfe der ContentSync-Vorlage für den Artikel in die Artikelnutzlast einbezogen werden
-* Skript- und Stylesheets, die von mehr als einem Artikel gemeinsam verwendet werden, sollten über die Vorlage &quot;dps-HTMLResources contentsync&quot;in gemeinsam genutzten Ressourcen enthalten sein
-* Kein Verweis auf externe Skripte, die render-locking sind
+* Artikelspezifische Skript- und Stylesheets sollten in die Artikelnutzlast aufgenommen werden, indem die Vorlage contentsync des Artikels dps-article verwendet wird.
+* Skript- und Stylesheets, die von mehr als einem Artikel gemeinsam verwendet werden, sollten über die Vorlage &quot;dps-HTMLResources contentsync&quot;in freigegebenen Ressourcen enthalten sein
+* Referenzieren Sie keine externen Skripte, die Render-Blocking sind
 
 >[!NOTE]
 >
->Ausführlichere Informationen zum Render-Blockieren externer Skripte [finden Sie hier](https://developers.google.com/speed/docs/insights/BlockingJS).
+>Ausführlichere Informationen zum Rendern von blockierenden externen Skripten finden Sie hier [hier](https://developers.google.com/speed/docs/insights/BlockingJS).
 
-**Stellen Sie anwendungsspezifische clientseitige JS- und CSS-Bibliotheken über webspezifische**
+**App-spezifische clientseitige JS- und CSS-Bibliotheken im Vergleich zu webspezifischen**
 
-* Vermeidung von Mehraufwand in Bibliotheken wie jQuery Mobile für die Handhabung einer großen Bandbreite von Geräten und Browsern
-* Wenn eine Vorlage in der Webansicht einer App ausgeführt wird, haben Sie die Kontrolle über die Plattformen und Versionen, die von der App unterstützt werden, sowie das Wissen, dass JavaScript-Unterstützung vorhanden sein wird. Nehmen wir beispielsweise an, dass Sie Ionic (vielleicht nur CSS) gegenüber der Benutzeroberfläche von jQuery Mobile und Onsen bevorzugen, anstatt Bootstrap.
+* So vermeiden Sie Mehraufwand in Bibliotheken wie jQuery Mobile für die Verarbeitung einer großen Bandbreite von Geräten und Browsern
+* Wenn eine Vorlage in der Webansicht einer App ausgeführt wird, haben Sie die Kontrolle über die Plattformen und Versionen, die von der App unterstützt werden, sowie über das Wissen, dass JavaScript-Unterstützung vorhanden sein wird. Nehmen wir beispielsweise an, dass Sie Ionic (vielleicht nur CSS) gegenüber jQuery Mobile und Onsen UI vorziehen.
 
 >[!NOTE]
 >
@@ -79,18 +78,18 @@ Die folgenden Richtlinien helfen erfahrenen AEM Entwicklern von Sites, die Vorla
 
 **Mikrobibliotheken über Vollstapel bevorzugen**
 
-* Die Zeit, die benötigt wird, um Ihre Inhalte auf das Glas des Geräts zu bringen, wird durch jede Bibliothek, von der Ihre Artikel abhängen, verlangsamt. Diese Verlangsamung wird noch verstärkt, wenn ein neuer Webview zum Rendern jedes Artikels verwendet wird. Daher muss jede Bibliothek erneut von Grund auf initialisiert werden
-* Wenn Ihre Artikel nicht als SPA (Einzelseitenanwendungen) erstellt wurden, müssen Sie wahrscheinlich keine vollständige Stapelbibliothek wie Angular einschließen
-* Verwenden Sie kleinere, einzweckige Bibliotheken, um die Interaktivität hinzuzufügen, die Ihre Seite benötigt, z. B. [Fastclick](https://github.com/ftlabs/fastclick) oder [Velocity.js](https://velocityjs.org)
+* Die Zeit, die benötigt wird, um Ihren Inhalt auf das Glas des Geräts zu bringen, wird durch jede Bibliothek, von der Ihre Artikel abhängen, verlangsamt. Diese Verlangsamung wird verstärkt, wenn eine neue Webansicht zum Rendern jedes Artikels verwendet wird. Daher muss jede Bibliothek von Grund auf neu initialisiert werden
+* Wenn Ihre Artikel nicht als SPA (Einzelseiten-Apps) erstellt wurden, müssen Sie wahrscheinlich keine vollständige Stapelbibliothek wie Angular einschließen.
+* Verwenden Sie kleinere eindimensionale Bibliotheken, um die für Ihre Seite erforderliche Interaktivität hinzuzufügen, z. B. [Fastclick](https://github.com/ftlabs/fastclick) oder [Velocity.js](https://velocityjs.org)
 
-**Größe der Artikelnutzlast minimieren**
+**Minimieren der Artikelnutzlast**
 
-* Verwenden Sie die kleinstmöglichen Assets, die effektiv den größten Viewport abdecken können, den Sie unterstützen werden, mit einer angemessenen Auflösung
-* Verwenden Sie ein Werkzeug wie *ImageOptim* auf Ihren Bildern, um überschüssige Metadaten zu entfernen
+* Verwenden Sie die kleinstmöglichen Assets, die den größten von Ihnen unterstützten Viewport effektiv abdecken können, und zwar bei einer angemessenen Auflösung.
+* Verwenden Sie ein Tool wie *ImageOptim* auf Ihren Bildern, um überschüssige Metadaten zu entfernen.
 
-## Vorwärts {#getting-ahead}
+## Erste Schritte {#getting-ahead}
 
-Weitere Informationen zu den beiden anderen Rollen und Verantwortlichkeiten finden Sie in den folgenden Ressourcen:
+Weitere Informationen zu den beiden anderen Rollen und Zuständigkeiten finden Sie in den folgenden Ressourcen:
 
 * [Administrator](/help/mobile/aem-mobile.md)
 * [Autor](/help/mobile/aem-mobile-on-demand.md)
