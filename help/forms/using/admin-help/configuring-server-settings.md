@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2657'
 ht-degree: 90%
 
 ---
-
 
 # Servereinstellungen konfigurieren {#configuring-server-settings}
 
@@ -58,7 +57,7 @@ Wenn Ihre Prozesse so entworfen und implementiert sind, dass sie keine E-Mail be
 
 >[!NOTE]
 >
->Der Flex Workspace wird für AEM Forms-Version nicht mehr unterstützt.
+>Flex Workspace wird für AEM Forms-Version nicht mehr unterstützt.
 
 Standardmäßig enthalten die E-Mails, die von AEM Forms gesendet werden, Links zu Flex Workspace (nicht mehr unterstützt für AEM Forms on JEE). Sie können AEM Forms so konfigurieren, das E-Mails mit Links zu AEM Forms Workspace gesendet werden. Um mehr über die Vorteile von AEM Forms Workspace gegenüber Flex Workspace (nicht mehr unterstützt für AEM Forms on JEE) zu erfahren, lesen Sie [diesen Artikel](/help/forms/using/features-html-workspace-available-flex.md).
 
@@ -194,7 +193,7 @@ Nur für Aufgabenbenachrichtigungen: Der Arbeitsablauf für Formulare enthält z
 >
 >Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.
 
-Wenn Ihre Lösung in einer Clusterlösung bereitgestellt ist, ersetzen Sie `@@notification-host@@` durch die Clusteradresse.
+Wenn Ihre Lösung in einer Clusterumgebung bereitgestellt ist, ersetzen Sie `@@notification-host@@` durch die Clusteradresse.
 
 `<`** `>` PORTist die Anschlussnummer des HTTP-Listeners für den Anwendungsserver. Der Standardanschluss für HTTP-Listener für die unterstützten Anwendungsserver lautet wie folgt:
 
@@ -204,7 +203,7 @@ Wenn Ihre Lösung in einer Clusterlösung bereitgestellt ist, ersetzen Sie `@@no
 
 **IBM WebSphere:** 9080
 
-Damit diese URLs korrekt funktionieren, ersetzen Sie `<`*PORT* `>` durch die Anschlussnummer, die für Ihre Umgebung geeignet ist.
+Damit diese URLs ordnungsgemäß funktionieren, ersetzen Sie `<`*PORT* `>` durch die für Ihre Umgebung geeignete Anschlussnummer.
 
 >[!NOTE]
 >
@@ -212,21 +211,21 @@ Damit diese URLs korrekt funktionieren, ersetzen Sie `<`*PORT* `>` durch die Ans
 
 ### Variablenauswahl {#variable-picker}
 
-Die Liste „Variablenauswahl“ bietet nützliche Variablen, die in die Felder „Betreff“ und „Benachrichtigungsvorlage“ gezogen und dort abgelegt werden können. Wenn Sie eine Variable in den Feldern &quot;Betreff&quot;oder &quot;Benachrichtigungsvorlage&quot;ablegen, wird sie zum tatsächlichen Namen der Variablen für den Arbeitsablauf für Formulare geändert, wobei zwei @-Symbole auf beiden Seiten vorhanden sind, z. B. `@@taskid@@`.
+Die Liste „Variablenauswahl“ bietet nützliche Variablen, die in die Felder „Betreff“ und „Benachrichtigungsvorlage“ gezogen und dort abgelegt werden können. Wenn Sie eine Variable in die Felder &quot;Betreff&quot;oder &quot;Benachrichtigungsvorlage&quot;ziehen, wird sie zum tatsächlichen Namen der Variablen des Arbeitsablaufs für Formulare geändert, wobei sich auf beiden Seiten zwei @-Symbole befinden, z. B. `@@taskid@@`.
 
 Für Erinnerungen, Aufgabenzuweisungen und Termine für Benutzer und Gruppen können Sie die folgenden Variablen in den Feldern „Betreff“ und „Benachrichtigungsvorlage“ verwenden:
 
-**** descriptionDer Inhalt der Eigenschaft &quot;Beschreibung&quot;, wie im Benutzervorgang (Beginn-Point, Vorgang &quot;Aufgabe zuweisen&quot;oder Vorgang &quot;Mehrere Aufgaben zuweisen&quot;) des Prozesses in Workbench definiert.
+**** descriptionDer Inhalt der Eigenschaft &quot;Description&quot;, wie im Benutzerschritt (Startpunkt, Vorgang &quot;Assign Task&quot;oder Vorgang &quot;Assign Multiple Tasks&quot;) des Prozesses in Workbench definiert.
 
-**** instructionsDer Inhalt der Eigenschaft &quot;Aufgabe Instructions&quot;, wie im Benutzervorgang des Prozesses in Workbench definiert.
+**** instructionsDer Inhalt der Eigenschaft &quot;Task Instructions&quot;, wie im Benutzerschritt des Prozesses in Workbench definiert.
 
-**notification-** hostDer Hostname des AEM Forms-Anwendungsservers .
+**notification-** hostDer Hostname des AEM forms-Anwendungsservers .
 
 **process-** nameDer Name des Prozesses.
 
 **operation-** nameDer Name des Schritts.
 
-**** taskidDer eindeutige Bezeichner für die aktuelle Aufgabe.
+**** taskidDie eindeutige Kennung für die aktuelle Aufgabe.
 
 **** actionsErzeugt eine nummerierte Liste gültiger Routen (z. B. Genehmigen, Ablehnen), auf die der Empfänger klicken kann.
 
@@ -240,21 +239,21 @@ Zusätzlich können für Gruppenerinnerungen, Gruppenaufgabenzuweisungen und Gru
 
 Für angehaltene Zweige können Sie die folgenden Variablen in den Feldern „Betreff“ und „Benachrichtigungsvorlage“ verwenden:
 
-**branch-** idDie Zweigstellennummer.
+**branch-** idDie Zweigkennung.
 
-**process-** idDie Prozessinstanzkennung.
+**process-** idDie Kennung der Prozessinstanz.
 
-**notification-** hostDer Hostname des AEM Forms-Anwendungsservers .
+**notification-** hostDer Hostname des AEM forms-Anwendungsservers .
 
 Für angehaltene Vorgänge können Sie die folgenden Variablen in den Feldern „Betreff“ und „Benachrichtigungsvorlage“ verwenden:
 
 **action-** idDie Vorgangskennung.
 
-**branch-** idDie Zweigstellennummer.
+**branch-** idDie Zweigkennung.
 
-**process-** idDie Prozessinstanzkennung.
+**process-** idDie Kennung der Prozessinstanz.
 
-**notification-** hostDer Hostname des AEM Forms-Anwendungsservers .
+**notification-** hostDer Hostname des AEM forms-Anwendungsservers .
 
 ### Variable im Feld „Betreff“ verwenden {#using-a-variable-in-the-subject-box}
 
@@ -289,4 +288,3 @@ Auf der Seite „BAM-Konfigurationseinstellungen“ können Sie die Verbindungen
 1. Geben Sie in das Feld „Serveranschluss“ die vom Formularserver verwendete Anschlussnummer ein.
 1. Geben Sie in die Felder „Benutzername“ und „Kennwort“ die entsprechende Benutzer-ID und das Kennwort für den Zugriff auf den BAM-Server ein. Der Standardbenutzername ist „CognosNowAdmin“, das Standardkennwort „manager“.
 1. Klicken Sie auf Speichern.
-
