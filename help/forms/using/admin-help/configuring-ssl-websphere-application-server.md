@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7c0efcb3-5b07-4090-9119-b7318c8b7980
-translation-type: tm+mt
-source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+exl-id: b0786b52-879e-4a24-9cc9-bd9dcb2473cc
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1240'
 ht-degree: 96%
 
 ---
-
 
 # SSL für WebSphere Application Server konfigurieren {#configuring-ssl-for-websphere-application-server}
 
@@ -73,7 +72,7 @@ Zum Aktivieren von SSL muss WebSphere in der Benutzerregistrierung des lokalen B
 1. Wählen Sie unter „Administrative security“ **Administrative user roles**.
 1. Klicken Sie auf „Add“ und führen Sie folgende Schritte aus:
 
-   1. Geben Sie **&amp;ast;** in das Suchfeld ein und klicken Sie auf Suchen.
+   1. Geben Sie **&amp;ast;** in das Suchfeld ein und klicken Sie auf &quot;Suchen&quot;.
    1. Klicken Sie unter „Roles“ auf **Administrator**.
    1. Fügen Sie den neu erstellten Benutzer zu „Mapped to role“ hinzu und ordnen Sie ihn zu „Administrator“ zu.
 
@@ -159,7 +158,7 @@ Die Konvertierung von HTML in PDF von der Site, deren Zertifikat hinzugefügt wu
 
 ## Konfigurieren von dynamischen Ports  {#configuring-dynamic-ports}
 
-IBM WebSphere erlaubt nicht mehrere Aufrufe von ORB.init (), wenn die globale Sicherheit aktiviert wurde. Sie können sich über die dauerhafte Einschränkung unter https://www-01.ibm.com/support/docview.wss?uid=swg1PK58704 informieren.
+IBM WebSphere erlaubt nicht mehrere Aufrufe von ORB.init (), wenn die globale Sicherheit aktiviert wurde. Sie können über die permanente Einschränkung unter https://www-01.ibm.com/support/docview.wss?uid=swg1PK58704 nachlesen.
 
 Führen Sie die folgenden Schritte aus, um den Port als dynamisch festzulegen und das Problem zu lösen:
 
@@ -176,11 +175,10 @@ Führen Sie die folgenden Schritte aus, um den Port als dynamisch festzulegen un
 ## Konfigurieren der sling.properties-Datei {#configure-the-sling-properties-file}
 
 1. Öffnen Sie die Datei `[aem-forms_root]`\crx-repository\launchpad\sling.properties zur Bearbeitung.
-1. Suchen Sie die `sling.bootdelegation.ibm`-Eigenschaft und fügen Sie `com.ibm.websphere.ssl.*`dem Wertefeld hinzu. Das aktualisierte Feld sieht wie folgt aus:
+1. Suchen Sie die Eigenschaft `sling.bootdelegation.ibm` und fügen Sie dem Wertefeld `com.ibm.websphere.ssl.*`hinzu. Das aktualisierte Feld sieht wie folgt aus:
 
    ```shell
    sling.bootdelegation.ibm=com.ibm.xml.*, com.ibm.websphere.ssl.*
    ```
 
 1. Speichern Sie die Datei und starten Sie den Server neu.
-
