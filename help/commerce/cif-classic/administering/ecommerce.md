@@ -4,7 +4,6 @@ description: Mit AEM eCommerce können Marketingexperten personalisierte Marken-
 topic-tags: e-commerce
 content-type: reference
 docset: aem65
-translation-type: tm+mt
 source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '733'
@@ -55,7 +54,7 @@ Adobe bietet zwei Versionen des Commerce-Integrations-Frameworks:
    <td><p>Produktkatalog</p> </td>
    <td>
     <ul>
-     <li>Produktimporteur, Editor, Zwischenspeicherung in AEM</li>
+     <li>Produkt-Importer, Editor, Zwischenspeicherung in AEM</li>
      <li>Standardkataloge mit AEM- oder Proxy-Seiten</li>
     </ul> </td>
    <td>
@@ -69,7 +68,7 @@ Adobe bietet zwei Versionen des Commerce-Integrations-Frameworks:
    <td><p>Skalierbarkeit</p> </td>
    <td>
     <ul>
-     <li>Kann bis zu wenige Millionen Produkte unterstützen (je nach Anwendungsfall)</li>
+     <li>Kann bis zu einige Millionen Produkte unterstützen (abhängig vom Anwendungsfall)</li>
      <li>Zwischenspeicherung im Dispatcher</li>
     </ul> </td>
    <td>
@@ -122,13 +121,13 @@ Die Implementierung ermöglicht den Echtzeitzugriff auf Produktdaten. Damit läs
 >
 >Um das Integrationsframework mit externen eCommerce-Anbietern zu nutzen, müssen Sie zunächst die benötigten Pakete installieren. Weitere Informationen finden Sie unter [Bereitstellen von eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md).
 >
->Informationen zum Erweitern der eCommerce-Funktionen finden Sie unter [Entwickeln von eCommerce](/help/commerce/cif-classic/developing/ecommerce.md).
+>Informationen zur Erweiterung der eCommerce-Funktionen finden Sie unter [Entwicklung von eCommerce](/help/commerce/cif-classic/developing/ecommerce.md).
 
 ## Zentrale Funktionen {#main-features}
 
 AEM eCommerce bietet Folgendes:
 
-* Eine Reihe von **vordefinierten AEM Komponenten** veranschaulichen, was für Ihr Projekt erreicht werden kann:
+* Eine Reihe von **vordefinierten AEM Komponenten**, um zu veranschaulichen, was für Ihr Projekt erreicht werden kann:
 
    * Produktanzeige
    * Warenkorb
@@ -190,8 +189,8 @@ Im Abschnitt [Konzepte](/help/commerce/cif-classic/administering/concepts.md) fi
 * Das Framework ist erweiterbar.
 * Das Framework stellt keine vorkonfigurierte, sofort verwendbare Website bereit. Ein gewisses Maß an Entwicklungsarbeit ist immer erforderlich, um das Framework an Ihre Vorgaben anzupassen.
 
-### Warum? {#why}
+### Vorteile {#why}
 
-* Bereitstellung der grundlegenden Mechanismen, die zur schnellen Realisierung einer benutzerspezifischen eCommerce-Site erforderlich sind.
+* Bereitstellung der grundlegenden Mechanismen, die für die rasche Realisierung einer angepassten eCommerce-Site erforderlich sind.
 * Flexibilität, die für die Entwicklung einer echten eCommerce-Website nötig ist
 * Veranschaulichung bewährter Verfahren
