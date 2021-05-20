@@ -8,18 +8,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 9ab657cc-fa8e-4168-8a68-e38ac5c51b29
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 79%
 
 ---
 
-
 # Anpassen von Verfolgungstabellen{#customize-tracking-tables}
 
-Auf der Registerkarte &quot;Verfolgung&quot;in AEM Forms Workspace werden die Details der Prozessinstanzen angezeigt, an denen der angemeldete Benutzer beteiligt ist. Um die Verfolgungstabellen anzuzeigen, wählen Sie zunächst einen Prozessnamen im linken Fensterbereich aus, um die zugehörige Instanzenliste im mittleren Bereich anzuzeigen. Wählen Sie eine Prozessinstanz aus, um im rechten Fensterbereich eine Tabelle von Aufgaben anzuzeigen, die von dieser Instanz generiert werden. Standardmäßig enthalten die Tabellenspalten die folgenden Aufgabenattribute (das entsprechende Attribut im Aufgabenmodell wird in Klammern angegeben):
+Die Registerkarte &quot;Tracking&quot;in AEM Forms Workspace wird verwendet, um die Details der Prozessinstanzen anzuzeigen, an denen der angemeldete Benutzer beteiligt ist. Um die Verfolgungstabellen anzuzeigen, wählen Sie zunächst einen Prozessnamen im linken Fensterbereich aus, um die zugehörige Instanzenliste im mittleren Bereich anzuzeigen. Wählen Sie eine Prozessinstanz aus, um im rechten Fensterbereich eine Tabelle von Aufgaben anzuzeigen, die von dieser Instanz generiert werden. Standardmäßig enthalten die Tabellenspalten die folgenden Aufgabenattribute (das entsprechende Attribut im Aufgabenmodell wird in Klammern angegeben):
 
 * ID ( `taskId`)
 * Name ( `stepName`)
@@ -116,7 +115,7 @@ Die übrigen Attribute im Aufgabenmodell, die für die Anzeige in der Aufgabenta
  </tbody>
 </table>
 
-Für die folgenden Anpassungen in der Aufgabentabelle müssen Sie semantische Änderungen im Quellcode vornehmen. Siehe [Einführung in das Anpassen von AEM Forms Workspace](/help/forms/using/introduction-customizing-html-workspace.md), wie Sie semantische Änderungen mithilfe des Workspace-SDK vornehmen und ein minimiertes Paket aus der geänderten Quelle erstellen können.
+Für die folgenden Anpassungen in der Aufgabentabelle müssen Sie semantische Änderungen im Quellcode vornehmen. Siehe [Einführung in das Anpassen von AEM Forms Workspace](/help/forms/using/introduction-customizing-html-workspace.md), wie Sie semantische Änderungen mit dem Workspace-SDK vornehmen und ein minimiertes Paket aus der geänderten Quelle erstellen können.
 
 ## Ändern von Tabellenspalten und ihrer Reihenfolge {#changing-table-columns-and-their-order}
 
@@ -158,7 +157,7 @@ Für die folgenden Anpassungen in der Aufgabentabelle müssen Sie semantische Ä
 
 So sortieren Sie die Aufgabenlistentabelle durch Klicken auf die Spaltenüberschrift:
 
-1. Registrieren Sie einen click-Handler für `.fixedTaskTableHeader th` in der Datei `js/runtime/views/processinstancehistory.js`.
+1. Registrieren Sie einen Klick-Handler für `.fixedTaskTableHeader th` in der Datei `js/runtime/views/processinstancehistory.js`.
 
    ```javascript
    events: {
@@ -168,7 +167,7 @@ So sortieren Sie die Aufgabenlistentabelle durch Klicken auf die Spaltenübersch
    }
    ```
 
-   Rufen Sie im Handler die Funktion `onTaskTableHeaderClick` von `js/runtime/util/history.js` auf.
+   Rufen Sie im -Handler die Funktion `onTaskTableHeaderClick` von `js/runtime/util/history.js` auf.
 
    ```javascript
    onTaskTableHeaderClick: function (event) {
@@ -176,7 +175,7 @@ So sortieren Sie die Aufgabenlistentabelle durch Klicken auf die Spaltenübersch
    }
    ```
 
-1. Machen Sie die `TaskTableHeaderClick`-Methode in `js/runtime/util/history.js` verfügbar.
+1. Zeigen Sie die `TaskTableHeaderClick`-Methode in `js/runtime/util/history.js` an.
 
    Die Methode sucht nach dem task-Attribut im Klick-Ereignis, sortiert die tasklist nach diesem Attribut und gibt die Aufgabentabelle mit der sortierten tasklist aus.
 
