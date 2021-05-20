@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f775933-e989-4456-ad01-9bdf5dee3dad
-translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+exl-id: 0d36160a-29fa-4cc4-a0ff-fc681d3e040e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 95%
 
 ---
-
 
 # Sicherungsstrategien für überwachte Ordner {#backup-strategies-for-watched-folders}
 
@@ -30,7 +29,7 @@ In diesem Abschnitt werden überwachte Ordner unter dem Aspekt der Sicherung und
 * Failure
 * Preserve
 
-Ein Benutzer oder eine Clientanwendung legt zuerst Dateien oder Ordner im Eingabeordner ab. Im Rahmen des Dienstvorgangs wird die Datei dann zur Verarbeitung in den Ordner „Stage“ verschoben. Nachdem der Dienst den vorgesehenen Vorgang ausgeführt hat, wird die geänderte Datei im Ordner „Output“ gespeichert. Erfolgreich verarbeitete Quelldateien werden in den Ordner „Preserve“, nicht verarbeitete Dateien in den Ordner „Failure“ verschoben. Wenn das Attribut `Preserve On Failure` für den überwachten Ordner aktiviert ist, werden nicht verarbeitete Quelldateien in den Ordner &quot;Preserve&quot;verschoben. (Siehe [Endpunkte für überwachte Ordner konfigurieren](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).)
+Ein Benutzer oder eine Clientanwendung legt zuerst Dateien oder Ordner im Eingabeordner ab. Im Rahmen des Dienstvorgangs wird die Datei dann zur Verarbeitung in den Ordner „Stage“ verschoben. Nachdem der Dienst den vorgesehenen Vorgang ausgeführt hat, wird die geänderte Datei im Ordner „Output“ gespeichert. Erfolgreich verarbeitete Quelldateien werden in den Ordner „Preserve“, nicht verarbeitete Dateien in den Ordner „Failure“ verschoben. Wenn das Attribut `Preserve On Failure` für den überwachten Ordner aktiviert ist, werden fehlgeschlagene verarbeitete Quelldateien in den Ordner &quot;Preserve&quot;verschoben. (Siehe [Endpunkte für überwachte Ordner konfigurieren](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).)
 
 Überwachte Ordner können durch Sichern des Dateisystems gesichert werden.
 
@@ -40,7 +39,7 @@ Ein Benutzer oder eine Clientanwendung legt zuerst Dateien oder Ordner im Eingab
 
 ## Funktionsweise überwachter Ordner {#how-watched-folders-work}
 
-In diesem Abschnitt wird der Dateiverarbeitungsprozess für überwachte Ordner beschrieben. Sie müssen mit diesem Prozess vertraut sein, bevor Sie einen Wiederherstellungsplan entwickeln. In diesem Beispiel ist das `Preserve On Failure`-Attribut für den überwachten Ordner aktiviert. Die Dateien werden in der Reihenfolge ihres Eingangs verarbeitet.
+In diesem Abschnitt wird der Dateiverarbeitungsprozess für überwachte Ordner beschrieben. Sie müssen mit diesem Prozess vertraut sein, bevor Sie einen Wiederherstellungsplan entwickeln. In diesem Beispiel ist das Attribut `Preserve On Failure` für den überwachten Ordner aktiviert. Die Dateien werden in der Reihenfolge ihres Eingangs verarbeitet.
 
 In der folgenden Tabelle wird die Dateiverarbeitung von fünf Beispieldateien (Datei1, Datei2, Datei3, Datei4, Datei5) im gesamten Prozess beschrieben. In der Tabelle werden auf der X-Achse die Zeit (z. B. Zeit 1 oder Z1) und auf der Y-Achse die Ordner in der Hierarchie öffentlicher Ordner abgebildet, z. B. „Eingabe“.
 
@@ -89,7 +88,7 @@ In der folgenden Tabelle wird die Dateiverarbeitung von fünf Beispieldateien (D
    <td><p>Datei1_out, Datei2_out, Datei4_out</p></td>
   </tr>
   <tr>
-   <td><p>Fehler</p></td>
+   <td><p>Fehlgeschlagen</p></td>
    <td><p>leer</p></td>
    <td><p>leer</p></td>
    <td><p>leer</p></td>
