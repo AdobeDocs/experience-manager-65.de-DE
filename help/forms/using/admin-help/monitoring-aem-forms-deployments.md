@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b3e7bca0-5aaf-4f28-bddb-fd7e8ed72ee8
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 931e8095-5c7c-4c1f-b95b-75ac2827d4f3
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 76%
 
 ---
-
 
 # Überwachung der AEM Forms-Bereitstellung {#monitoring-aem-forms-deployments}
 
@@ -75,9 +74,9 @@ Mit der JMX-Konsole (JConsole) werden Statistiken von OperationStatistic MBean b
 
 **MBean-Struktur**
 
-**Domänenname der Adobe:** Abhängig vom Anwendungsserver. Wenn der Anwendungsserver die Domäne nicht definiert, lautet die Standarddomäne „adobe.com“.
+**Domänenname der Adobe:** Hängt vom Anwendungsserver ab. Wenn der Anwendungsserver die Domäne nicht definiert, lautet die Standarddomäne „adobe.com“.
 
-**ServiceType:** AdobeService ist der Name, der zur Liste aller Dienste verwendet wird.
+**ServiceType:** AdobeService ist der Name, der zum Auflisten aller Dienste verwendet wird.
 
 **AdobeServiceName:** Dienstname oder Dienst-ID.
 
@@ -89,19 +88,19 @@ Mit der JMX-Konsole (JConsole) werden Statistiken von OperationStatistic MBean b
 
 **Anzahl der Aufrufe:** Die Häufigkeit, mit der der Dienst aufgerufen wird.
 
-**Durchschnittliche Aufrufzeit:** Durchschnittliche Zeit aller Aufrufe, die seit dem Start des Servers ausgeführt wurden.
+**Durchschnittliche Aufrufzeit:**  Durchschnittliche Zeit aller Aufrufe, die seit dem Start des Servers ausgeführt wurden.
 
 **Max. Aufrufzeit:** Die Dauer des längsten Aufrufs, der seit dem Start des Servers ausgeführt wurde.
 
 **Min. Aufrufzeit:** Die Dauer des kürzesten Aufrufs, der seit dem Start des Servers ausgeführt wurde.
 
-**Anzahl der Ausnahmen:** Anzahl der Aufrufe, die zu Fehlern geführt haben.
+**Ausnahmeanzahl:** Anzahl der Aufrufe, die zu Fehlern geführt haben.
 
 **Ausnahmemeldung:** Die Fehlermeldung der letzten aufgetretenen Ausnahme.
 
-**Letztes Sampling Date Time:** Das Datum des letzten Aufrufs.
+**Datum des letzten Samplings:** Das Datum des letzten Aufrufs.
 
-**Zeiteinheit: Der** Standardwert ist Millisekunde.
+**Zeiteinheit:** Der Standardwert ist Millisekunde.
 
 Zum Aktivieren der JMX-Überwachung müssen Anwendungsserver in der Regel konfiguriert werden. Weitere Informationen dazu erhalten Sie in der Dokumentation für Ihren Anwendungsserver.
 
@@ -155,4 +154,3 @@ Zum Anzeigen von MBeans von JConsole müssen Sie die JVM-Startparameter des JBos
    ```
 
 1. Starten Sie WebSphere neu.
-
