@@ -1,19 +1,18 @@
 ---
-title: Verstehen von Metadatenkonzepten
-description: Erfahren Sie mehr über den Bedarf an Metadaten und Typen, die eine einfachere Kategorisierung und Organisation von Assets ermöglichen.
+title: Grundlagen zu Metadatenkonzepten
+description: Erfahren Sie mehr über die Notwendigkeit und die Typen von Metadaten, die eine einfachere Kategorisierung und Organisation von Assets ermöglichen.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: Metadata
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: 'Metadaten  '
+exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2735'
+source-wordcount: '2732'
 ht-degree: 90%
 
 ---
 
-
-# Verstehen Sie Metadatenkonzepte {#why-we-need-metadata}
+# Grundlagen zu Metadatenkonzepten {#why-we-need-metadata}
 
 Metadaten sind Informationen über Daten. In dieser Hinsicht beziehen sich Daten auf Ihr digitales Asset, z. B. ein Bild. Metadaten sind für ein effizientes Asset-Management von entscheidender Bedeutung.
 
@@ -97,7 +96,7 @@ Von Exif definierte Metadatenfelder sind in der Regel technischer Natur und für
 
 Andere Metadaten können aus Dateien von [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel] usw. eingebettet werden.
 
-## Verstehen Sie Metadaten-Schemata {#metadata-schemata}
+## Grundlegendes zu Metadatenschemata {#metadata-schemata}
 
 Metadatenschemata sind vordefinierte Sets aus Metadaten-Eigenschaftsdefinitionen, die in verschiedenen Programmen eingesetzt werden können. Eigenschaften sind stets mit einem Asset verknüpft. Das heißt, die Eigenschaften beziehen sich auf die Ressource.
 
@@ -159,17 +158,17 @@ Die anwendungsspezifischen Metadaten umfassen technische und beschreibende Metad
 * `xmpDM` – [!DNL Dynamic Media].
 * `xmpMM` – Medienverwaltung.
 
-## Metadaten-Schemata-Referenz {#metadata-schemata-reference}
+## Metadatenschema-Referenz {#metadata-schemata-reference}
 
 Die folgende Referenz enthält Informationen zu bestimmten Metadatenschemata (in alphabetischer Reihenfolge) sowie eine Liste mit Eigenschaften und den zugehörigen Definitionen.
 
 ### Dublin Core {#dublin-core}
 
-Dublin Core-Metadaten bieten ein standardisiertes Set aus Konventionen für die Beschreibung von Assets, um die Suche nach ihnen zu erleichtern. In [!DNL Assets] beschreibt der Dublin Core digitale Assets, einschließlich Video, Sound, Bilder und Dokumente.
+Dublin Core-Metadaten bieten ein standardisiertes Set aus Konventionen für die Beschreibung von Assets, um die Suche nach ihnen zu erleichtern. In [!DNL Assets] beschreibt der Dublin Core digitale Assets wie Video, Ton, Bilder und Dokumente.
 
 Das einfache Dublin Core Metadata Element Set (DCMES) enthält 15 Metadatenelemente, die in der folgenden Tabelle aufgeführt werden. Jedes Dublin Core-Element ist optional und kann wiederholt werden. Sie können Dublin Core-Metadateninformationen genauso wie solche für medientypspezifische Metadaten hinzufügen oder löschen.
 
-Neben dem DCMES gibt es weitere Metadatenelemente, die von der Dublin Core Initiative erstellt wurden. Weitere Informationen finden Sie unter [Dublin Core Initiative](https://dublincore.org/).
+Neben dem DCMES wurden auch andere Metadatenelemente von der Dublin Core Initiative erstellt. Weitere Informationen finden Sie unter [Dublin Core Initiative](https://dublincore.org/).
 
 | Eigenschaft | Beschreibung |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------ |
@@ -205,7 +204,7 @@ Mit der Erstellung von metadatengesteuerten Workflows können Sie einige Prozess
 
 ## XMP-Metadaten {#xmp-metadata}
 
-XMP (Extensible Metadata Platform) ist der Metadatenstandard, der von [!DNL Adobe Experience Manager Assets] für das Metadatenmanagement verwendet wird. XMP liefert ein Standardformat für die Erstellung, die Verarbeitung und den Austausch von Metadaten für eine Vielzahl an Programmen.
+XMP (Extensible Metadata Platform) ist der Metadatenstandard, der von [!DNL Adobe Experience Manager Assets] für die gesamte Metadatenverwaltung verwendet wird. XMP liefert ein Standardformat für die Erstellung, die Verarbeitung und den Austausch von Metadaten für eine Vielzahl an Programmen.
 
 XMP bietet nicht nur universelle Metadatenkodierung, die in alle Dateiformate eingebettet werden kann, sondern auch ein [Rich-Content-Modell](#xmp-core-concepts). Außerdem wird XMP [von Adobe](#advantages-of-xmp) und anderen Unternehmen unterstützt, sodass Benutzer, die XMP in Kombination mit einsetzen, über eine leistungsstarke Plattform verfügen.[!DNL Assets]
 
@@ -215,7 +214,7 @@ Die [XMP-Spezifikation](https://www.adobe.com/devnet/xmp.html) wird von Adobe zu
 
 Adobe hat den XMP-Standard zunächst im Rahmen des Adobe Acrobat-Softwareprodukts eingeführt. Mittlerweile ist der XMP-Standard weit verbreitet. [!DNL Assets] unterstützt nativ XMP (die Extensible Metadata Platform von Adobe). XMP ist ein Standard für die Verarbeitung und Speicherung von standardisierten und proprietären Metadaten in digitalen Assets. XMP ist als der gemeinsame Standard konzipiert, dank dem mehrere Programme effektiv mit Metadaten arbeiten können.
 
-Produktionsexperten nutzen beispielsweise die integrierte XMP-Unterstützung innerhalb der Adobe-Programme, um Informationen über mehrere Dateiformate hinweg zu übergeben. [!DNL Assets] repository extrahiert die XMP Metadaten und verwendet sie zur Verwaltung des Inhaltslebenszyklus und Angeboten zur Erstellung von Workflows.
+Produktionsexperten nutzen beispielsweise die integrierte XMP-Unterstützung innerhalb der Adobe-Programme, um Informationen über mehrere Dateiformate hinweg zu übergeben. [!DNL Assets] Das Repository extrahiert die XMP-Metadaten, verwendet sie zur Verwaltung des Inhaltslebenszyklus und bietet die Möglichkeit, Automatisierungs-Workflows zu erstellen.
 
 XMP standardisiert die Art, wie Metadaten definiert, erstellt und verarbeitet werden, indem ein Datenmodell, ein Speichermodell und Schemata bereitgestellt werden. Diese Grundlagen werden alle in diesem Abschnitt behandelt.
 
@@ -267,13 +266,13 @@ XMP kann Eigenschaften von einem oder mehreren der Schemata umfassen. Viele Adob
 
 #### Sprachalternativen {#language-alternatives}
 
-XMP können Sie eine `xml:lang`-Eigenschaft zu Texteigenschaften hinzufügen, um die Sprache des Textes anzugeben.
+Mit XMP können Sie eine `xml:lang`-Eigenschaft zu Texteigenschaften hinzufügen, um die Sprache des Textes anzugeben.
 
 ## Arbeiten mit IPTC-Metadaten {#support-for-iptc-metadata}
 
-Erfahren Sie, wie [!DNL Adobe Experience Manager Assets] die IPTC-Metadaten, Creative Ratings und Suchbegriffe unterstützt, die über [!DNL Adobe Bridge] und andere [!DNL Adobe Creative Cloud]-Apps zu Assets hinzugefügt wurden.
+Erfahren Sie, wie [!DNL Adobe Experience Manager Assets] die IPTC-Metadaten, kreativen Bewertungen und Suchbegriffe unterstützt, die über [!DNL Adobe Bridge] und andere [!DNL Adobe Creative Cloud]-Apps zu Assets hinzugefügt werden.
 
-[!DNL Adobe Experience Manager Assets] unterstützt den IPTC-Metadatenstandard, der häufig zur Beschreibung von Assets verwendet wird. [!DNL Assets] verbessert so die Akzeptanz seiner Bilder bei verschiedenen Parteien, einschließlich Fotografen, Kreativagenturen, Bibliotheken, Museen usw.
+[!DNL Adobe Experience Manager Assets] unterstützt den IPTC-Metadatenstandard, der häufig zur Beschreibung von Assets verwendet wird. Auf diese Weise verbessert [!DNL Assets] die Akzeptanz seiner Bilder bei verschiedenen Parteien, einschließlich Fotografen, Kreativagenturen, Bibliotheken, Museen usw.
 
 Das standardmäßige Metadatenschema für Assets enthält nun die Metadatenschemata IPTC Core und IPTC Extension, damit umfassende Metadateneigenschaften definiert werden können, mit denen Benutzer präzise und zuverlässige Daten über in einem Bild gezeigte Personen, Orte und die Produkte hinzufügen können. Darüber hinaus werden Daten, Namen und Bezeichner zur Bilderstellung sowie flexible Möglichkeiten für die Angabe von Rechtinformationen unterstützt.
 
@@ -281,14 +280,14 @@ Die Eigenschaftenseite für Assets enthält jetzt einzelne Registerkarten, auf d
 
 1. Wählen Sie in der Benutzeroberfläche [!DNL Assets] ein Bild aus.
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften.]**
-1. Klicken Sie auf die Registerkarte **[!UICONTROL IPTC]**, um die IPTC-Metadaten für das Asset Ansicht.
+1. Klicken Sie auf die Registerkarte **[!UICONTROL IPTC]** , um die IPTC-Metadaten für das Asset anzuzeigen.
 1. Bearbeiten Sie die IPTC-Metadateneigenschaften nach Bedarf.
 
    ![iptc_tab](assets/keywords-in-iptc-tab.png)
 
-1. Klicken Sie auf die Registerkarte **[!UICONTROL IPTC-Erweiterung]**, um IPTC-Erweiterungsmetadaten für das Asset Ansicht.
-1. Bearbeiten Sie die Eigenschaften der IPTC-Erweiterungsmetadaten nach Bedarf.
-1. Klicken Sie auf **[!UICONTROL Speichern und Schließen]**, um die Änderungen zu speichern.
+1. Klicken Sie auf die Registerkarte **[!UICONTROL IPTC Extension]** , um die IPTC-Erweiterungsmetadaten für das Asset anzuzeigen.
+1. Bearbeiten Sie die Eigenschaften der IPTC-Erweiterungs-Metadaten nach Bedarf.
+1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**, um die Änderungen zu speichern.
 
 ### Unterstützung für kreative Bewertungen {#creative-rating-support}
 
@@ -300,7 +299,7 @@ Diese Bewertung ist schreibgeschützt und erfolgt im Bereich von 1 bis 5. Sie k
 
 Diese Eigenschaft ist jedoch zurzeit nicht indiziert, um Konflikte mit von Benutzern vorgenommenen Änderungen zu vermeiden.
 
-### Suchbegriffunterstützung {#keyword-support}
+### Unterstützung von Keywords {#keyword-support}
 
 Auf der Registerkarte **[!UICONTROL IPTC]** der Seite [!UICONTROL Eigenschaften] werden auch Suchbegriffe angezeigt, die über Adobe Bridge und andere Adobe Creative Cloud-Apps zu Assets hinzugefügt wurden. Sie können diese Suchbegriffe auch über die Registerkarte **[!UICONTROL IPTC]** bearbeiten und weitere Suchbegriffe hinzufügen.
 
