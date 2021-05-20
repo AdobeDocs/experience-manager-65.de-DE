@@ -1,28 +1,27 @@
 ---
-title: Forum Essentials
-seo-title: Forum Essentials
-description: Forum - Übersicht
-seo-description: Forum - Übersicht
+title: Forumsgrundlagen
+seo-title: Forumsgrundlagen
+description: Forumsübersicht
+seo-description: Forumsübersicht
 uuid: 68849582-8742-40be-9e7e-0b574ae38815
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 059c5bbe-07eb-4873-8157-2196df887b27
-translation-type: tm+mt
-source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+exl-id: 622cf6ca-f119-4310-ad14-537576bd6f6d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 2%
 
 ---
 
+# Forumsgrundlagen {#forum-essentials}
 
-# Forum Essentials {#forum-essentials}
+Diese Seite enthält die wichtigsten Informationen für die Arbeit mit der Forumsfunktion.
 
-Auf dieser Seite finden Sie die wichtigsten Informationen für die Arbeit mit der Forumsfunktion.
-
-## Grundlagen für clientseitige {#essentials-for-client-side}
+## Grundlagen für Client-seitige {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -31,12 +30,12 @@ Auf dieser Seite finden Sie die wichtigsten Informationen für die Arbeit mit de
    <td>social/forum/components/hbs/forum<br /> social/forum/components/hbs/topic<br /> social/forum/components/hbs/post</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließbar</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließen</strong></a></td>
    <td>Nein</td>
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.ckeditor<br /> cq.social.hbs.stimms<br /> cq.social.hbs.forum</td>
+   <td>cq.ckeditor<br /> cq.social.hbs.stimating<br /> cq.social.hbs.forum</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -48,7 +47,7 @@ Auf dieser Seite finden Sie die wichtigsten Informationen für die Arbeit mit de
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Siehe <a href="forum.md">Forum-Funktion</a></td>
+   <td>Siehe <a href="forum.md">Forum Feature</a></td>
   </tr>
  </tbody>
 </table>
@@ -59,27 +58,26 @@ Auf dieser Seite finden Sie die wichtigsten Informationen für die Arbeit mit de
 
 * [Forum-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/forum/client/api/package-summary.html)
 
-* [Endpunkte des Forums](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/forum/client/endpoints/package-summary.html)
+* [Forum-Endpunkte](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/forum/client/endpoints/package-summary.html)
 
 * [Serverseitige Anpassungen](server-customize.md)
 
 ### Forumsfunktion {#forum-function}
 
-Eine Community-Site-Struktur, die die Funktion [Forum](functions.md#forum-function) enthält, enthält eine konfigurierte Komponente `forum` sowie Einstellungen, die sich auf Moderation, Tagging und Übersetzung auswirken.
+Eine Community-Site-Struktur, die die [Forumsfunktion](functions.md#forum-function) enthält, enthält eine konfigurierte `forum`-Komponente sowie Einstellungen, die sich auf Moderation, Tagging und Übersetzung auswirken.
 
-### Zugriff auf Forenbeiträge (UGC) {#accessing-forum-posts-ugc}
+### Zugriff auf Forumbeiträge (UGC) {#accessing-forum-posts-ugc}
 
-UGC sollte mithilfe einer der Standardmethoden für die Moderation moderiert werden.
+UGC sollte mit einer der Standardmethoden für die Moderation moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Datenspeicherung (z. B. ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Stores](working-with-srp.md) für UGC den programmatischen Zugriff auf UGC, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
 
-**Speicherort und Format des UGC im Repository können ohne Warnung** geändert werden.
+**Speicherort und Format der UGC im Repository können sich ohne Warnung** ändern.
 
 Siehe:
 
-* [Übersicht über](srp.md)  den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung.
-* [SRP und UGC Essentials](srp-and-ugc.md)  - SRP Dienstprogrammmethoden und Beispiele.
-* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Coding-Richtlinien.
-* [SocialUtils Refactoring](socialutils.md)  - Zuordnen von nicht mehr unterstützten Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
-
+* [Übersicht über den Speicheranbieter](srp.md)  - Einführung und Übersicht über die Repository-Nutzung.
+* [SRP und UGC Essentials](srp-and-ugc.md)  - SRP-Dienstprogrammmethoden und Beispiele.
+* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md)  - Coding Guidelines.
+* [SocialUtils-Refaktorierung](socialutils.md)  - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
