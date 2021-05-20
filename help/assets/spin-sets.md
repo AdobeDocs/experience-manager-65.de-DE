@@ -8,16 +8,15 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 8e9b3815-2893-4e6b-ac41-77720b42d56b
 docset: aem65
-feature: Spin Sets,Asset Management
+feature: Rotationssets,Asset-Verwaltung
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1829'
 ht-degree: 94%
 
 ---
-
 
 # Rotationssets {#spin-sets}
 
@@ -25,13 +24,13 @@ Ein Rotationsset simuliert das Drehen eines Gegenstands zur genaueren Untersuchu
 
 Ein Rotationsset simuliert die 360-Grad-Anzeige. Dynamic Media bietet Rotationssets mit einer Achse, in denen ein Artikel gedreht werden kann. Darüber hinaus können Benutzer alle Ansichten mit nur wenigen Mausklicks frei zoomen und schwenken. So können Benutzer einen Artikel aus einem bestimmten Blickwinkel genauer untersuchen.
 
-Rotationssets werden von einem Banner mit dem Wort **[!UICONTROL SPINSET gekennzeichnet.]** Wenn das Rotationsset veröffentlicht wird, wird das Veröffentlichungsdatum, das durch das Symbol **[!UICONTROL Welt]** gekennzeichnet ist, auf dem Banner zusammen mit dem letzten Änderungsdatum angezeigt, das durch das Symbol **[!UICONTROL Bleistift]** gekennzeichnet ist.
+Rotationssets werden durch ein Banner mit dem Wort **[!UICONTROL SPINSET gekennzeichnet.]** Darüber hinaus wird bei veröffentlichten Rotationssets das Veröffentlichungsdatum (durch das Symbol **[!UICONTROL Welt]** gekennzeichnet) zusammen mit dem Datum der letzten Änderung (durch das Symbol **[!UICONTROL Bleistift]** gekennzeichnet) im Banner angezeigt.
 
 ![chlimage_1-](assets/chlimage_1-380.png)
 
 >[!NOTE]
 >
->Informationen zur Benutzeroberfläche &quot;Assets&quot;finden Sie unter [Assets verwalten](/help/assets/manage-assets.md).
+>Informationen zur Assets-Benutzeroberfläche finden Sie unter [Verwalten von Assets](/help/assets/manage-assets.md).
 
 ## Schnellstart: Rotationssets  {#quick-start-spin-sets}
 
@@ -124,7 +123,7 @@ In diesem Abschnitt wird beschrieben, wie Sie Rotationssets in AEM erstellen.
 
    >[!NOTE]
    >
-   >Beim Erstellen des Rotationssets können Sie die Miniaturansicht des Rotationssets ändern oder zulassen, dass AEM die Miniaturansicht automatisch basierend auf den Assets im Rotationsset auswählt. Um eine Miniaturansicht auszuwählen, klicken Sie auf **[!UICONTROL Miniatur ändern]** und wählen Sie ein beliebiges Bild aus. (Sie können auch in anderen Ordnern nach Bildern suchen.) Wenn Sie eine Miniaturansicht ausgewählt haben und dann entscheiden, dass Sie eine aus dem Rotationsset generieren AEM, wählen Sie **[!UICONTROL Zu automatischer Miniaturansicht wechseln.]**
+   >Beim Erstellen des Rotationssets können Sie die Miniaturansicht des Rotationssets ändern oder zulassen, dass AEM die Miniaturansicht automatisch basierend auf den Assets im Rotationsset auswählt. Um eine Miniaturansicht auszuwählen, klicken Sie auf **[!UICONTROL Miniatur ändern]** und wählen Sie ein beliebiges Bild aus. (Sie können auch in anderen Ordnern nach Bildern suchen.) Wenn Sie eine Miniaturansicht ausgewählt haben und möchten, dass Sie eine Miniaturansicht aus dem Rotationsset generieren AEM, wählen Sie **[!UICONTROL Zu automatischer Miniatur wechseln.]**
 
 1. Nehmen Sie eine der folgenden Aktionen vor:
 
@@ -133,7 +132,7 @@ In diesem Abschnitt wird beschrieben, wie Sie Rotationssets in AEM erstellen.
    * Tippen Sie in der Mitte des Rotationsset-Editors auf **[!UICONTROL Tippen, um die Asset-Auswahl zu öffnen.]**
    Tippen Sie, um die gewünschten Assets für das Rotationsset auszuwählen. Die ausgewählten Assets sind mit einem Häkchen versehen. Wenn Sie die Assets ausgewählt haben, tippen Sie auf **[!UICONTROL Auswählen.]**
 
-   Mit dem Asset-Selektor können Sie nach Assets suchen, indem Sie ein Keyword eingeben und auf **[!UICONTROL Eingabe]** tippen. Sie können auch Filter anwenden, um Ihre Suchergebnisse genauer abzustimmen. Sie können nach Pfad, Sammlung, Dateityp und Tag filtern. Wählen Sie den Filter und tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Filter]**. Ändern Sie die Ansicht, indem Sie auf das Symbol Ansicht tippen und **[!UICONTROL Ansicht]**, **[!UICONTROL Ansicht]** oder **[!UICONTROL Ansicht der Liste auswählen.]**
+   Mit dem Asset-Selektor können Sie nach Assets suchen, indem Sie ein Keyword eingeben und auf **[!UICONTROL Eingabe]** tippen. Sie können auch Filter anwenden, um Ihre Suchergebnisse genauer abzustimmen. Sie können nach Pfad, Sammlung, Dateityp und Tag filtern. Wählen Sie den Filter und tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Filter]**. Ändern Sie die Ansicht, indem Sie auf das Symbol Ansicht tippen und **[!UICONTROL Spaltenansicht]**, **[!UICONTROL Kartenansicht]** oder **[!UICONTROL Listenansicht.]** auswählen.
 
    Siehe [Arbeiten mit Selektoren](/help/assets/working-with-selectors.md).
 
