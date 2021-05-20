@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing
 content-type: reference
 discoiquuid: 5a98e1bd-f5c1-4f2f-ac02-dbd005dc1de7
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: e10e1904-7016-4eb0-9408-36297285f378
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 2%
 
 ---
-
 
 # Testen von mobilen Apps{#testing-mobile-apps}
 
@@ -24,37 +23,37 @@ ht-degree: 2%
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Angesichts der breiten Palette von Geräten auf dem Markt und von Geräten, die veröffentlicht werden, ist das Testen Ihrer Apps äußerst wichtig geworden. Dies ist ein Bereich, in dem Funktionen und Benutzerfreundlichkeit zu niedrigen Reviews in einem App Store führen können, aber ein Fehler kann dazu führen, dass Ihre App deinstalliert wird. Bei Ihren Testplänen und der Qualitätssicherung muss sorgfältig darauf geachtet werden. Der folgende Link behandelt viele Themen, die allgemein behandelt werden müssen, wie z.B. die Identifizierung Ihrer Umgebung, die Definition von Testfällen, Testtypen, Annahmen, Kundenbeteiligung usw. Darüber hinaus werden Tools zur Unterstützung des Testens besprochen. Interne Tools wie [Hobbes](/help/sites-developing/hobbes.md) können beim webbasierten Testen der Benutzeroberfläche helfen. [Die ](/help/sites-developing/tough-day.md) Tage können Ihre Instanzen mit einer simulierten Last bedienen. Wenn Ihre Test-Umgebung bereits Erfahrung mit Drittanbieter-Tools wie Selen hat, können auch diese verwendet werden.
+Angesichts der breiten Palette von Geräten auf dem Markt und Geräten, die veröffentlicht werden, ist das Testen Ihrer Apps sehr wichtig geworden. In diesem Bereich können Funktionalität und Benutzerfreundlichkeit niedrige Bewertungen in einem Appstore generieren, aber ein einzelner Fehler kann dazu führen, dass Ihre App deinstalliert wird. Bei Ihren Testplänen und der Qualitätssicherung muss besondere Aufmerksamkeit geschenkt werden. Der folgende Link behandelt viele Themen, die allgemein angesprochen werden müssen, z. B. die Identifizierung Ihrer Umgebung, die Definition von Testfällen, Arten von Tests, Annahmen, Kundenbeteiligung usw. Außerdem werden Tools erläutert, die bei den Tests helfen. Interne Tools wie [Hobbes](/help/sites-developing/hobbes.md) können beim webbasierten Testen der Benutzeroberfläche helfen. [Tough ](/help/sites-developing/tough-day.md) Daycan belastet Ihre Instanzen mit einer simulierten Belastung. Wenn Ihre Testumgebung bereits über Erfahrung mit Drittanbieter-Tools wie Selenium verfügt, können auch diese verwendet werden.
 
-Bei der Entwicklung einer mobilen App gibt es viele neue Probleme, die speziell für Geräte gelten, die zusammen mit denen herkömmlicher Tests behandelt werden müssen.
+Bei der Entwicklung einer mobilen App gibt es viele neue Probleme, die speziell für Geräte gelten, die zusammen mit herkömmlichen Tests angesprochen werden müssen.
 
-* Funktionen - Werden alle Anforderungen von Ihrer App erfüllt?
-* Benutzerfreundlichkeit - Ist die App benutzerfreundlich und wird sie von Ihrem Kunden verstanden?
-* Leistung - Was passiert bei einer Spitze der Nutzung? Sind die App-Elemente wie Blättern und Karusselle schnell und lassen sich nicht vom Erlebnis ablenken?
-* Fehler oder Unterbrechungen: Was passiert, wenn während der Ausführung der App ein eingehender Aufruf oder eine eingehende Benachrichtigung erfolgt? Was passiert, wenn ein Netzwerkausfall vorliegt oder der Netzschalter ausgeschaltet ist?
-* Installation und Updates - Wie wird die Installation durchgeführt? Wie werden Updates herausgegeben?
+* Funktion - Werden alle Anforderungen von Ihrer App erfüllt?
+* Benutzerfreundlichkeit - Ist die App von Ihrem Kunden einfach zu verwenden und zu verstehen?
+* Leistung - Was passiert während einer Spitze bei der Verwendung? Sind die App-Elemente, wie Wischen und Karussells, schnell und beeinträchtigen Sie nicht das Erlebnis?
+* Fehler oder Unterbrechungen - Was passiert, wenn während der Ausführung der App ein eingehender Aufruf oder eine eingehende Benachrichtigung erfolgt? Was passiert, wenn das Netzwerk ausfällt oder ausgeschaltet ist?
+* Installation und Updates - Wie funktioniert die Installation? Wie werden Aktualisierungen veröffentlicht?
 * Technisch - Verbraucht Ihre App zu viel Strom von einem Gerät?
-* lokale Anpassung - Werden alle Bereiche in Ihrer App übersetzt?
-* Zertifizierung - Wurde Ihre App zertifiziert? Können Kunden darauf vertrauen, dass alle datenschutzrechtlichen Anforderungen eingehalten werden?
+* Lokalisierung - Sind alle Bereiche in Ihrer App übersetzt?
+* Zertifizierung - Wurde Ihre App zertifiziert? Können Kunden darauf vertrauen, dass alle gesetzlichen Datenschutzbestimmungen eingehalten werden?
 
-Diese Fragen sollten während Ihres automatisierten und manuellen Tests beantwortet werden.
+Diese Fragen sollten während der automatisierten und manuellen Tests beantwortet werden.
 
 ## Automatisierte Tests {#automated-testing}
 
-Es sollte ein gewisses Maß an automatisiertem Test durchgeführt werden, um die verschiedenen Bildschirmgrößen, Speicherbeschränkungen, Eingabemethoden und Betriebssysteme abzudecken. Sie deckt nicht nur viele der Testfälle ab, sondern kann auch Regressionstests beschleunigen, wenn neue Funktionen oder Geräte eingeführt werden. Im Idealfall sollten Ihre Automatisierungstools die Duplizierung reduzieren oder einschränken. Verwenden Sie Tools oder Frameworks, damit Ihr Testaufwand für alle Plattformen gilt. Die folgende Tabelle zeigt eine vereinfachte Struktur einer Testing-Umgebung für webbasierte UI-Tests und mobile App-Tests. Die linke Seite des Diagramms zeigt eine Reihe von Selenium-Knoten mit Browsern. SeleniumGrid kann allgemeine webbasierte UI-Tests an einem dieser Knoten auswerten. Der Selenium-Hub kann auch eine Verbindung zu Appium herstellen, um plattformübergreifende App-Tests durchzuführen. Es werden nur Simulatoren angezeigt, Sie können aber adb für Android- und Xcode-Hilfsprogramme für iOS-Geräte einbinden. Links finden Sie weiter unten in diesem Dokument, wo Sie spezifische Informationen zu den genannten Tools finden.
+Ein gewisser Grad automatisierter Tests sollte durchgeführt werden, um die verschiedenen Bildschirmgrößen, Speicherbeschränkungen, Eingabemethoden und Betriebssysteme abzudecken. Sie deckt nicht nur einen Großteil der Testfälle ab, sondern kann Regressionstests beschleunigen, wenn neue Funktionen oder Geräte eingeführt werden. Idealerweise sollten Ihre Automatisierungstools Doppelarbeit reduzieren oder begrenzen. Verwenden Sie Tools oder Frameworks, damit Ihre Testbemühungen auf allen Plattformen gelten. Die folgende Tabelle zeigt eine vereinfachte Struktur einer Testumgebung für webbasierte Benutzeroberflächentests und Tests mobiler Apps. Die linke Seite des Diagramms zeigt eine Reihe von Selenium-Knoten mit Browsern an. SeleniumGrid kann allgemeine, webbasierte UI-Tests für jeden dieser Knoten auswerten. Der Selenium-Hub kann für plattformübergreifende App-Tests auch eine Verbindung zu Appium herstellen. Es werden nur Simulatoren angezeigt, Sie können aber adb für Android- und Xcode-Dienstprogramme für iOS-Geräte integrieren. Links finden Sie weiter unten in diesem Dokument, in dem Sie spezifische Details zu den erwähnten Tools finden.
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
 ## Manuelle Tests {#manual-testing}
 
-Zusätzlich zu automatisierten Tests sollte Ihre App einen manuellen Testzyklus durchlaufen. Kunden, die die App auf einem echten Gerät ausführen, können nicht durch ein Skript dupliziert werden. Auch hier haben Sie viele Möglichkeiten. Sie können eine Plattform wie HockeyApp verwenden, um zu definieren, wer Zugriff hat und Feedback zu sammeln. Oder Sie können den gesamten Prozess an einen Dienst wie UTest, ElusiveStars oder Test auslagern. Wenn Sie eine Gruppe interner Tester haben, aber keine unterschiedlichen Geräte haben, gibt es Cloud-Dienste, bei denen Sie manuelle Tests auf ihren Gerätepools durchführen können. Ein solcher Dienst, der dies bietet, ist SauceLabs. Sie können Apps auch remote für PhoneGap Enterprise erstellen und auf lokalen Geräten installieren, um Akzeptanztests oder Demos durchzuführen. Die neuesten Funktionen und Dokumentation finden Sie auf der Website [PhoneGap](https://phonegap.com/). Unabhängig vom Ansatz sollten manuelle Prüfungen durchgeführt werden.
+Zusätzlich zu automatisierten Tests sollte Ihre App einen manuellen Testzyklus durchlaufen. Kunden, die die App auf einem echten Gerät ausführen, können nicht durch ein Skript dupliziert werden. Auch hier haben Sie viele Möglichkeiten. Sie können eine Plattform wie HockeyApp verwenden, um festzulegen, wer Zugriff hat und Feedback erfassen kann. Oder Sie können den gesamten Prozess an einen Dienst wie UTest, ElusiveStars oder Test auslagern. Wenn Sie über eine Gruppe interner Tester verfügen, aber nicht über verschiedene Geräte verfügen, gibt es Cloud-Services, mit denen Sie manuelle Tests an ihrem Gerätesool durchführen können. Ein solcher Dienst, der dies bereitstellt, ist SauceLabs. Sie können Apps auch remote für PhoneGap Enterprise erstellen und auf lokalen Geräten installieren, um Akzeptanztests oder Demos durchzuführen. Die neuesten Funktionen und Dokumentationen finden Sie auf der Website [PhoneGap](https://phonegap.com/) . Unabhängig vom Ansatz sollten manuelle Prüfungen durchgeführt werden.
 
-* eine große Zielgruppe von Tester getroffen hat,
-* Testen mit einem großen Pool von Geräten (im Idealfall echte Geräte, aber Simulatoren/Emulatoren, wenn keine echten Geräte verfügbar sind),
-* informatives Feedback geben:
+* eine große Zielgruppe von Tester erreichen,
+* Testen Sie mit einem großen Pool von Geräten (idealerweise echte Geräte, Simulatoren/Emulatoren jedoch, wenn keine echten Geräte verfügbar sind).
+* Feedback geben:
 
    * Absturzberichte,
-   * Analyse/Verfolgung,
+   * Analyse/Tracking,
    * Benutzerfreundlichkeit,
    * besondere Aufmerksamkeit,
    * Leistung,
@@ -62,53 +61,53 @@ Zusätzlich zu automatisierten Tests sollte Ihre App einen manuellen Testzyklus 
 
 ## Tools {#tools}
 
-Zum Testen von mobilen Apps stehen eine breite Palette von Tools zur Verfügung. Die Auswahl der zu verwendenden hängt von Ihrer spezifischen Situation ab: Funktionen, Preis, Support, Abdeckung usw. Im Folgenden werden einige der verfügbaren Tools und Dienste kurz beschrieben.
+Zum Testen von mobilen Apps stehen zahlreiche Tools zur Verfügung. Die Auswahl der zu verwendenden Optionen hängt von Ihrer spezifischen Situation ab: Funktionen, Preis, Support, Abdeckung usw. Im Folgenden finden Sie eine kleine Beschreibung einiger der verfügbaren Tools und Dienste.
 
 **Selenium**
 
-* Framework, das eine API für Testskripte enthält, um WebDriver zu steuern und verschiedene Browser zu steuern.
-* Sie können dies zusammen mit Appium zum Testen auf realen Geräten verwenden.
+* Framework, das eine API für Testskripte enthält, um WebDriver zuzuführen und verschiedene Browser zu steuern.
+* Sie können dies zusammen mit Appium zum Testen auf echten Geräten verwenden.
 * SeleniumGrid leitet Tests zum parallelen Testen über Knoten hinweg.
-* Selenium IDE hilft, die Schreibweise von Testfällen zu reduzieren.
+* Selenium IDE hilft, das Schreiben von Testfällen zu reduzieren.
 
 Weitere Informationen finden Sie unter [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
 
 **Testdroid**
 
 * Ein Cloud-basierter Testdienst mit kontinuierlichen Integrationshaken und echten Gerätetests.
-* Enthält einen App-Crawler, der die Gerätekompatibilität prüft, Protokolle analysiert, Ansichten durchläuft, Screenshots aufnimmt und die Leistung überwacht.
+* Enthält einen App-Crawler, der die Gerätekompatibilität überprüft, Protokolle analysiert, Ansichten durchsucht, Screenshots erstellt und die Leistung überwacht.
 
 Weitere Informationen finden Sie unter [https://testdroid.com/](https://testdroid.com/).
 
 **Appium**
 
-* Appium ist ein beliebtes plattformübergreifendes Framework zur Automatisierung von mobilen Tests.
-* Zusätzlich ist ein Inspektor mit Aufzeichnungsfähigkeiten ausgestattet, um Testfälle zu codieren.
+* Appium ist ein beliebtes plattformübergreifendes Framework zur Automatisierung mobiler Tests.
+* Darüber hinaus ist ein Inspektor mit Datensatzfähigkeiten ausgestattet, um Code-Testfälle zu unterstützen.
 
 Weitere Informationen finden Sie unter [https://appium.io/](https://appium.io/).
 
 **SauceLabs**
 
 * SauceLabs bietet Cloud-basierte Tests und ist mit kontinuierlicher Integration integriert.
-* Tests werden automatisch in der Cloud-Umgebung ausgeführt oder Sie können ein bestimmtes Gerät oder eine bestimmte Plattform Beginn und manuelle Tests durchführen, um Probleme zu debuggen.
+* Tests werden automatisch in der Cloud-Umgebung ausgeführt. Alternativ können Sie ein bestimmtes Gerät oder eine bestimmte Plattform starten und manuelle Tests durchführen, um Probleme zu beheben.
 
 Weitere Informationen finden Sie unter [https://saucelabs.com/](https://saucelabs.com/).
 
 **AppTestNow**
 
-* Ein Outsourcing-Dienst, der Ihre mobilen Apps testen wird.
-* Umfasst einen großen Pool von Geräten und Angebot mit einer Vielzahl von Testtypen: Leistung, Qualität, Funktionalität, Zertifizierung, lokale Anpassung, Datenverbrauch usw.
+* Ein Outsourcing-Service, der Ihre mobilen Apps testet.
+* Umfasst einen großen Pool von Geräten und bietet eine breite Palette von Testtypen: Leistung, Qualität, Funktionalität, Zertifizierung, Lokalisierung, Datennutzung usw.
 
 Weitere Informationen finden Sie unter [https://www.apptestnow.com](https://www.apptestnow.com/).
 
 **HockeyApp**
 
-* HockeyApp wird unter den manuellen Test fallen, bei dem die mobile App an einen persönlichen App Store gesendet wird, in dem die Tester sie herunterladen und ausprobieren können.
+* HockeyApp fällt unter den manuellen Test, bei dem die mobile App an einen persönlichen Appstore gesendet wird, in dem Tester sie herunterladen und ausprobieren können.
 
 Weitere Informationen finden Sie unter [https://hockeyapp.net/features/](https://hockeyapp.net/features/).
 
 **Jenkins**
 
-* Obwohl Jenkins kein Testwerkzeug ist, ist es ein kontinuierliches Integrationsframework, das das Rückgrat für automatisierte Tests bietet. Zur Erweiterung der Funktionalität stehen zahlreiche Drittanbieter-Plugins zur Verfügung. Ein Beispiel: Das SeleniumGrid-Plugin bietet eine Benutzeroberfläche zur Verwaltung des Selenium-Hub und der Selenium-Knoten.
+* Obwohl es sich nicht um ein Testwerkzeug handelt, ist Jenkins ein kontinuierliches Integrations-Framework, das das Rückgrat für automatisierte Tests bildet. Es sind zahlreiche Drittanbieter-Plug-ins verfügbar, um die Funktionalität zu erweitern. Ein Beispiel: Das SeleniumGrid-Plug-in bietet eine Benutzeroberfläche zur Verwaltung des Selenium-Hub und der Selenium-Knoten.
 
 Weitere Informationen finden Sie unter [https://jenkins-ci.org/](https://jenkins-ci.org/) und [https://wiki.jenkins-ci.org/display/JENKINS/Plugins](https://wiki.jenkins-ci.org/display/JENKINS/Plugins).
