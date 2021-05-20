@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: f276d150-8936-4bfb-8475-7ca36815b233
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: a3245f05-6ea3-4f90-8981-bfa89d2e7335
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 85%
 
 ---
 
-
 # Erste Schritte mit HTML5-Formularen {#getting-started-with-html-forms}
 
 HTML5-Formulare bieten zahlreiche für Mobilgeräte geeignete Funktionen. Dies hilft Ihnen, Ihre aktuellen Lösungen und Arbeitsabläufe auf Tablets oder Smartphones mit HTML5-Browsern zu erweitern. Einige der Funktionen:
 
-* **HTML5-basierte Wiedergabe von XFA-Formularvorlagen:** Zusätzlich zu den regulären PDF forms können Sie Ihre vorhandenen XFA-basierten Formulare jetzt im HTML5-Format wiedergeben. Diese Funktion ermöglicht Ihnen, Ihre Clientplattform auf Mobilgeräte (Apple iPad, Android-Tablets und -Smartphones usw.) auszuweiten, die HTML5 unterstützen und Adobe Reader mit XFA-Formularen nicht unterstützen. Weitere Informationen zur HTML5-basierten Renderfunktion finden Sie unter [Einführung in HTML5-Formulare](/help/forms/using/introduction.md).
+* **HTML5-basierte Wiedergabe von XFA-Formularvorlagen:** Zusätzlich zu den normalen PDF forms können Sie Ihre vorhandenen XFA-basierten Formulare jetzt im HTML5-Format wiedergeben. Diese Funktion ermöglicht Ihnen, Ihre Clientplattform auf Mobilgeräte (Apple iPad, Android-Tablets und -Smartphones usw.) auszuweiten, die HTML5 unterstützen und Adobe Reader mit XFA-Formularen nicht unterstützen. Weitere Informationen zur HTML5-basierten Rendering-Funktion finden Sie unter [Einführung in HTML5-Formulare](/help/forms/using/introduction.md).
 
 * **Verwaltung von Formularen:** AEM bietet außerdem neue Funktionen, um das Organisieren und Verwalten von Formularen zu vereinfachen. Sie können Formulare aktivieren, deaktivieren, veröffentlichen und in der Vorschau anzeigen. Weitere Informationen finden Sie unter [Einführung in das Verwalten von Formularen](/help/forms/using/introduction-managing-forms.md).
 
