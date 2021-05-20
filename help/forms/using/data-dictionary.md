@@ -8,15 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: a1a0ad6b-023a-4822-9cce-0618657c3f9d
 docset: aem65
-feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Korrespondenzverwaltung
+exl-id: aaed75e6-8849-46a8-b986-896ad729adda
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '3861'
 ht-degree: 87%
 
 ---
-
 
 # Datenwörterbuch{#data-dictionary}
 
@@ -28,7 +27,7 @@ Ein Datenwörterbuch ist eine unabhängige Darstellung von Metadaten, die zu Gru
 
 Ein Datenwörterbuch besteht aus Datenwörterbuchelementen (DDEs), von denen es drei Typen gibt: Elemente des Typs „Simple“, „Composite“ und „Collection“. Simple-DDEs sind Primitive-Elemente wie Zeichenfolgen, Zahlen, Daten und boolesche Werte, die Informationen wie z. B. den Stadtnamen enthalten. Ein Composite DDE enthält andere DDEs, die vom Typ „Primitive“, „Composite“ oder „Collection“ sein können. Das kann z. B. eine Adresse sein, die aus einer Straße, einer Stadt, einem Bezirk, einem Land und einer Postleitzahl besteht. Eine „Collection“ ist eine Liste von ähnlichen Simple- oder Composite-DDEs. Beispielsweise ein Kunde mit mehreren Wohnsitzen oder mit unterschiedlicher Rechnungs- und Versandadresse.
 
-Correspondence Management verwendet die Daten Back-End, Customer oder Empfänger, die gemäß der Datenwörterbuchstruktur gespeichert werden, um Korrespondenz für verschiedene Kunden zu erstellen. Beispielsweise kann ein Dokument mit Anzeigenamen wie „Lieber {Vorname}“, „Herr {Nachname}“ erstellt werden.
+Correspondence Management verwendet Back-End-, Kunden- oder empfängerspezifische Daten, die gemäß der Datenwörterbuchstruktur gespeichert werden, um Korrespondenz für verschiedene Kunden zu erstellen. Beispielsweise kann ein Dokument mit Anzeigenamen wie „Lieber {Vorname}“, „Herr {Nachname}“ erstellt werden.
 
 In der Regel müssen Geschäftsbenutzer keine Kenntnisse über Metadatendarstellungen wie XSD (XML-Schema) und Java-Klassen haben. Sie müssen allerdings in der Regel Zugriff auf diese Datenstrukturen und Attribute haben, um Lösungen erstellen zu können.
 
@@ -41,7 +40,7 @@ In der Regel müssen Geschäftsbenutzer keine Kenntnisse über Metadatendarstell
 
 ## Voraussetzung {#prerequisite}
 
-Installieren Sie das [Kompatibilitätspaket](compatibility-package.md), um die Option **Datenwörterbücher** auf der Seite **Forms** Ansicht.
+Installieren Sie das [Kompatibilitätspaket](compatibility-package.md), um die Option **Datenwörterbücher** auf der Seite **Forms** anzuzeigen.
 
 ## Datenwörterbuch erstellen {#createdatadictionary}
 
@@ -55,16 +54,16 @@ Verwenden Sie den Datenwörterbucheditor zum Erstellen eines Datenwörterbuchs o
 1. Tippen Sie auf **Datenwörterbuch erstellen**.
 1. Fügen Sie im Bildschirm „Eigenschaften“ Folgendes hinzu:
 
-   * **Titel:** (Optional) Geben Sie den Titel für das Datenwörterbuch ein. Titel müssen nicht eindeutig sein und dürfen Sonderzeichen und nichtenglische Zeichen enthalten. Briefe und andere Dokumentfragmente werden durch ihren Titel (falls verfügbar) referenziert, z. B. in Miniaturansichten und Asset-Eigenschaften. Auf Datenwörterbücher wird nicht über ihre Titel, sondern über ihre Namen verwiesen.
+   * **Titel:**  (Optional) Geben Sie den Titel für das Datenwörterbuch ein. Titel müssen nicht eindeutig sein und dürfen Sonderzeichen und nichtenglische Zeichen enthalten. Briefe und andere Dokumentfragmente werden durch ihren Titel (falls verfügbar) referenziert, z. B. in Miniaturansichten und Asset-Eigenschaften. Auf Datenwörterbücher wird nicht über ihre Titel, sondern über ihre Namen verwiesen.
    * **Name**: Der eindeutige Name des Datenwörterbuchs. Im Feld „Name“ können Sie nur englische Sprachzeichen, Zahlen und Bindestriche eingeben. Das Feld „Name“ wird automatisch basierend auf dem Feld „Titel“ ausgefüllt, wobei Sonderzeichen, Leerzeichen, Zahlen und nichtenglische Zeichen aus dem Feld „Titel“ durch Bindestriche ersetzt werden. Obwohl der Wert im Feld „Titel“ automatisch in das Feld „Name“ kopiert wird, können Sie den Wert bearbeiten.
 
    * **Beschreibung**: (Optional) Beschreibung des Datenwörterbuchs.
-   * **Tags:** (Optional) Um ein benutzerdefiniertes Tag zu erstellen, geben Sie einen Wert in das Textfeld ein und drücken Sie die Eingabetaste. Sie können den Tag unterhalb des Textfeldes der Tags sehen. Wenn Sie diesen Text speichern, werden die neu hinzugefügten Tags auch erstellt.
-   * **Erweiterte Eigenschaften**: (Optional) Tippen Sie auf  **Hinzufügen** Feld, um Metadatenattribute für Ihr Datenwörterbuch anzugeben. Geben Sie in der Spalte „Eigenschaftsname“ einen eindeutigen Namen für die Eigenschaft ein. Geben Sie in der Spalte „Wert“ einen Wert ein, der mit der Eigenschaft verknüpft werden soll.
+   * **Tags:**  (Optional) Geben Sie zum Erstellen eines benutzerdefinierten Tags einen Wert in das Textfeld ein und drücken Sie die Eingabetaste. Sie können den Tag unterhalb des Textfeldes der Tags sehen. Wenn Sie diesen Text speichern, werden die neu hinzugefügten Tags auch erstellt.
+   * **Erweiterte Eigenschaften**: (Optional) Tippen Sie auf  **Feld** hinzufügen , um Metadatenattribute für Ihr Datenwörterbuch anzugeben. Geben Sie in der Spalte „Eigenschaftsname“ einen eindeutigen Namen für die Eigenschaft ein. Geben Sie in der Spalte „Wert“ einen Wert ein, der mit der Eigenschaft verknüpft werden soll.
 
    ![Eigenschaften des Datenwörterbuchs auf Deutsch](do-not-localize/1_ddproperties.png)
 
-1. (Optional) Um eine XSD-Schema-Definition für Ihr Datenwörterbuch hochzuladen, tippen Sie im Bereich &quot;Datenwörterbuchstruktur&quot;auf **XML-Schema hochladen**. Navigieren Sie zur XSD-Datei, wählen Sie sie aus und tippen Sie auf **Öffnen**. Ein Datenwörterbuch wird basierend auf dem hochgeladenen XML-Schema erstellt. Sie müssen die Anzeigenamen und Beschreibungen des Elements im Datenwörterbuch anpassen. Dazu müssen Sie die Namen der Elemente wählen, indem Sie darauf tippen und dann ihre Beschreibungen, Anzeigenamen und andere Details in den Feldern im rechten Bereich ändern.
+1. (Optional) Um eine XSD-Schemadefinition für Ihr Datenwörterbuch hochzuladen, tippen Sie im Bereich &quot;Datenwörterbuchstruktur&quot;auf **XML-Schema** hochladen. Navigieren Sie zur XSD-Datei, wählen Sie sie aus und tippen Sie auf **Öffnen**. Ein Datenwörterbuch wird basierend auf dem hochgeladenen XML-Schema erstellt. Sie müssen die Anzeigenamen und Beschreibungen des Elements im Datenwörterbuch anpassen. Dazu müssen Sie die Namen der Elemente wählen, indem Sie darauf tippen und dann ihre Beschreibungen, Anzeigenamen und andere Details in den Feldern im rechten Bereich ändern.
 
    Weitere Informationen zu berechneten DD-Elementen finden Sie unter [Berechnete Datenwörterbuchelemente](#computedddelements).
 
@@ -77,7 +76,7 @@ Verwenden Sie den Datenwörterbucheditor zum Erstellen eines Datenwörterbuchs o
 
    Sie können auf die drei Punkte auf der rechten Seite eines Elements tippen und der Datenwörterbuchstruktur ein Element hinzufügen.
 
-   ![1_2_createanelement](assets/1_2_createanelement.png)
+   ![1_2_create_anelement](assets/1_2_createanelement.png)
 
    Wählen Sie entweder Composite-Element, Collection-Element oder Primitive-Element aus.
 
@@ -88,22 +87,22 @@ Verwenden Sie den Datenwörterbucheditor zum Erstellen eines Datenwörterbuchs o
    Nachfolgend finden Sie einige Regeln zu Erstellen eines Datenwörterbuchs:
 
    * Nur der Composite-Typ ist als DDE der obersten Ebene in einem Datenwörterbuch zulässig.
-   * Name, Referenzname und Elementtyp sind Pflichtfelder für ein Datenwörterbuch und DDEs.
+   * Name, Referenzname und Elementtyp sind erforderliche Felder für ein Datenwörterbuch und DDEs.
    * Der Referenzname muss eindeutig sein.
    * Ein übergeordnetes DDE (Composite) darf nicht zwei untergeordnete DDE mit demselben Namen haben.
    * „Enums“ enthalten nur Primitive-Zeichenfolgentypen.
 
-   Weitere Informationen zu Composite-, Collection- und Primitive-Elementen und zum Arbeiten mit Datenwörterbuchelementen finden Sie unter [Zuordnen von Datenwörterbuchelementen zu XML-Schema](#mappingddetoschema).
+   Weitere Informationen zu Composite-, Collection- und Primitive-Elementen und zum Arbeiten mit Datenwörterbuchelementen finden Sie unter [Zuordnen von Datenwörterbuchelementen zum XML-Schema](#mappingddetoschema).
 
-   Informationen zu Überprüfungen im Datenwörterbuch finden Sie unter [Validierungen für den Datenwörterbucheditor](#ddvalidations).
+   Informationen zu Validierungen im Datenwörterbuch finden Sie unter [Validierungen des Datenwörterbucheditors](#ddvalidations).
 
    ![2_addddpropertiesbasic](assets/2_addddpropertiesbasic.png)
 
-1. (Optional) Nach der Auswahl eines Elements können Sie auf der Registerkarte „Erweitert“ Eigenschaften (Attribute) hinzufügen. Sie können auch auf **Hinzufügen Feld** tippen und die Eigenschaften eines DD-Elements erweitern.
+1. (Optional) Nach der Auswahl eines Elements können Sie auf der Registerkarte „Erweitert“ Eigenschaften (Attribute) hinzufügen. Sie können auch auf **Feld hinzufügen** tippen und die Eigenschaften eines DD-Elements erweitern.
 
-   ![3_addddpropertiesadvanced](assets/3_addddpropertiesadvanced.png)
+   ![3_addpropertiesadvanced](assets/3_addddpropertiesadvanced.png)
 
-1. (Optional) Sie können ein beliebiges Element entfernen, indem Sie auf die drei Punkte auf der rechten Seite eines Elements tippen und **Löschen** auswählen.
+1. (Optional) Sie können jedes Element entfernen, indem Sie auf die drei Punkte auf der rechten Seite eines Elements tippen und **Löschen** auswählen.
 
    ![4_deleteelement](assets/4_deleteelement.png)
 
@@ -197,12 +196,12 @@ Beim Bearbeiten oder Anzeigen des Datenwörterbuchs sehen Sie, welche Elemente d
 
    >[!NOTE]
    >
-   >In diesem Beispiel erstellt XML Platz für drei Werte für ein Collection-Element, aber die Anzahl der Werte kann gemäß der Anforderung erhöht/verringert werden.
+   >In diesem Beispiel erstellt XML Platz für drei Werte für ein Kollektionselement, aber die Anzahl der Werte kann gemäß den Anforderungen erhöht/verringert werden.
 
 1. Nachdem die Dateneinträge vorgenommen wurden, können Sie diese XML-Datei verwenden, wenn Sie einen Brief mit Testdaten in der Vorschau anzeigen.
 
    Sie können diese Testdaten mit DD hinzufügen (Wählen Sie DD und tippen Sie auf Testdaten hochladen und laden Sie diese XML-Datei hoch)
-Wenn Sie danach den Brief normal (nicht benutzerdefiniert) Vorschau haben, werden diese XML-Daten im Brief verwendet. Sie können auch auf „Benutzerdefiniert“ tippen und diese XML hochladen.
+Wenn Sie danach also einen Brief normal in der Vorschau anzeigen (nicht benutzerdefiniert), werden diese XML-Daten in einem Brief verwendet. Sie können auch auf „Benutzerdefiniert“ tippen und diese XML hochladen.
 
 ## Stichproben {#samples}
 
@@ -311,7 +310,7 @@ In der folgenden Tabelle werden allgemeine Attribute, die mit einem DDE verknüp
   <tr>
    <td>Berechnet</td>
    <td>Boolesch</td>
-   <td>Ein boolesches Feld, um anzuzeigen, ob ein DDE berechnet wurde. Ein berechneter DDE-Wert ist eine Funktion anderer DDE-Werte. Standardmäßig werden JSP-Ausdruck unterstützt.</td>
+   <td>Ein boolesches Feld, um anzuzeigen, ob ein DDE berechnet wurde. Ein berechneter DDE-Wert ist eine Funktion anderer DDE-Werte. Standardmäßig werden JSP-Ausdrücke unterstützt.</td>
   </tr>
   <tr>
    <td>Ausdruck</td>
@@ -341,7 +340,7 @@ In der folgenden Tabelle werden allgemeine Attribute, die mit einem DDE verknüp
  </tbody>
 </table>
 
-### Berechnete Datenwörterbuchelemente  {#computedddelements}
+### Berechnete Datenwörterbuchelemente {#computedddelements}
 
 Ein Datenwörterbuch kann auch berechnete Elemente enthalten. Ein berechnetes Datenwörterbuchelement ist immer mit einem Ausdruck verknüpft. Der Ausdruck wird geprüft, um den Wert eines Datenwörterbuchelements zur Laufzeit abzurufen. Ein berechneter DDE-Wert ist eine Funktion anderer DDE-Werte oder Literale. Standardmäßig werden JSP-Expression Language(EL)-Ausdrücke unterstützt. Die EL-Ausdrücke verwenden die ${ }-Zeichen und gültige Ausdrücke können Literale, Operatoren, Variablen (Datenwörterbuchelementverweise) und Funktionsaufrufe enthalten. Beim Verweisen auf ein Datenwörterbuchelement im Ausdruck wird der Verweisname des DDE verwendet. Der Verweisname ist für jedes Datenwörterbuchelement in einem Datenwörterbuch eindeutig.
 
@@ -380,7 +379,7 @@ Das Exportieren einer XSD-Datei erfordert eine bestimmte Datenzuordnung, die in 
   </tr>
   <tr>
    <td>xs:attribute/xs:element des Typs "xs": boolean <br /> </td>
-   <td>DDE des Typs Boolescher <br /> </td>
+   <td>DDE des Typs Boolesch <br /> </td>
    <td>java.lang.Boolean<br /> </td>
   </tr>
   <tr>
@@ -413,13 +412,13 @@ Das Exportieren einer XSD-Datei erfordert eine bestimmte Datenzuordnung, die in 
 
 ## Beispieldatendatei aus einem Datenwörterbuch herunterladen  {#download-a-sample-data-file-from-a-data-dictionary}
 
-Nachdem Sie ein Datenwörterbuch erstellt haben, können Sie es als XML-Musterdatendatei herunterladen, um darin Texteinträge vorzunehmen.
+Nachdem Sie ein Datenwörterbuch erstellt haben, können Sie es als XML-Beispieldatendatei herunterladen, um darin Texteinträge vorzunehmen.
 
-1. Tippen Sie auf der Seite &quot;Datenwörterbücher&quot;auf **Select** und dann auf ein Datenwörterbuch, um es auszuwählen.
-1. Wählen Sie **XML-Beispieldaten herunterladen**.
+1. Tippen Sie auf der Seite &quot;Datenwörterbücher&quot;auf **Wählen Sie** und tippen Sie dann auf ein Datenwörterbuch, um es auszuwählen.
+1. Wählen Sie **Beispiel-XML-Daten herunterladen** aus.
 1. Tippen Sie in der Warnmeldung auf **OK**.
 
-   Correspondence Management erstellt eine XML-Datei, die auf der ausgewählten Datenwörterbuchstruktur basiert und lädt sie auf Ihren Computer mit dem Namen &lt;data-dictionary-name>-SampleData. Jetzt können Sie diese Datei in einer XML oder einem Texteditor bearbeiten, um Dateneinträge zu tätigen, während Sie [einen Brief](../../forms/using/create-letter.md) erstellen.
+   Correspondence Management erstellt eine XML-Datei, die auf der ausgewählten Datenwörterbuchstruktur basiert und lädt sie auf Ihren Computer mit dem Namen &lt;data-dictionary-name>-SampleData. Jetzt können Sie diese Datei in einem XML- oder Texteditor bearbeiten, um beim Erstellen eines Briefs](../../forms/using/create-letter.md) Dateneinträge vorzunehmen.[
 
 ## Internationalisierung von Metadaten {#internationalization-of-meta-data}
 
@@ -427,8 +426,8 @@ Wenn Sie denselben Brief in unterschiedlichen Sprachen senden möchten, können 
 
 ### Datenwörterbuch lokalisieren {#localize-data-dictionary}
 
-1. Tippen Sie auf der Seite &quot;Datenwörterbücher&quot;auf **Select** und dann auf ein Datenwörterbuch, um es auszuwählen.
-1. Tippen Sie auf **Daten zur Lokale Anpassung herunterladen**.
+1. Tippen Sie auf der Seite &quot;Datenwörterbücher&quot;auf **Wählen Sie** und tippen Sie dann auf ein Datenwörterbuch, um es auszuwählen.
+1. Tippen Sie auf **Lokalisierungsdaten herunterladen**.
 1. Tippen Sie im Warnhinweis auf **OK**. Correspondence Management lädt eine ZIP-Datei auf Ihrem Computer mit dem Namen DataDictionary-&lt;DDname>.zip herunter.
 1. Die ZIP-Datei enthält eine Datei des Typs „.properties“. Diese Datei definiert das heruntergeladene Datenwörterbuch. Der Inhalt dieser Datei ist ähnliche wie folgender Inhalt:
 
@@ -461,7 +460,7 @@ Wenn Sie denselben Brief in unterschiedlichen Sprachen senden möchten, können 
 1. Wählen Sie auf der Seite „Datenwörterbuch“ **Mehr** > **Lokalisierungsdaten hochladen** und wählen Sie die ZIP-Datei mit lokalisierten Eigenschaftendateien.
 1. Um die durch die Lokalisierung vorgenommenen Änderungen anzuzeigen, ändern Sie das Gebietsschemas des Browsers.
 
-## Validierungen für Datenwörterbuch  {#ddvalidations}
+## Validierungen für Datenwörterbuch {#ddvalidations}
 
 Der Datenwörterbucheditor erzwingt folgende Überprüfungen beim Erstellen oder Aktualisieren eines Datenwörterbuchs.
 
@@ -503,7 +502,7 @@ Der Datenwörterbucheditor erzwingt folgende Überprüfungen beim Erstellen oder
 * Die XML-Bindung eines Collection-DDE darf nicht einem Attribut zugeordnet sein.
 * Die XML-Bindungssyntax muss gültig sein, z. B. darf nur ein @-Zeichen erscheinen. Dieses Zeichen ist nur zulässig, wenn danach ein Attributname steht.
 
-## Datenwörterbuchelemente dem XML-Schema zuordnen  {#mappingddetoschema}
+## Datenwörterbuchelemente dem XML-Schema zuordnen {#mappingddetoschema}
 
 Sie können ein Datenwörterbuch aus einem XML-Schema erstellen oder es mithilfe der Datenwörterbuch-Benutzeroberfläche erstellen. Alle Datenwörterbuchelemente innerhalb eines Datenwörterbuchs verfügen über ein XML-Bindungsfeld, um die Bindung des DDE an ein Element im XML-Schema zu speichern. Die Bindung in jedem DDE ist relativ zum übergeordneten DDE.
 
@@ -657,4 +656,3 @@ Die mit diesem Beispiel verknüpfte „Token.xsd“, lautet wie folgt:
 | TokenText | empty(null) |
 | TokenHeading | TokenText/TextHeading |
 | TokenBody | TokenText/TextBody |
-
