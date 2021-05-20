@@ -11,14 +11,13 @@ topic-tags: hTML5_forms
 discoiquuid: 17a86543-30d3-4e16-a373-67b46d551da9
 docset: aem65
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 76bd1e2d-9e65-452c-8cef-123d28886a62
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '669'
 ht-degree: 69%
 
 ---
-
 
 # Erstellen von benutzerspezifischen Erscheinungsbildern in HTML5-Formularen{#create-custom-appearances-in-html-forms}
 
@@ -46,15 +45,15 @@ HTML5-Formulare bieten eine Implementierung des Widget-Frameworks, das erweitert
   </tr>
   <tr>
    <td>render</td>
-   <td>Die Renderfunktion gibt das jQuery-Objekt für das standardmäßige HTML-Element des Widgets zurück. Das standardmäßige HTML-Element sollte fokussierbar sein. Zum Beispiel &lt;a&gt;, &lt;input&gt; und &lt;li&gt;. Das zurückgegebene Element wird als $userControl verwendet. Wenn $userControl die oben genannte Beschränkung angibt, funktionieren die Funktionen der AbstractWidget-Klasse erwartungsgemäß, andernfalls müssen einige der gängigen APIs (focus, click) geändert werden. </td>
+   <td>Die Renderfunktion gibt das jQuery-Objekt für das standardmäßige HTML-Element des Widgets zurück. Das standardmäßige HTML-Element sollte fokussierbar sein. Zum Beispiel &lt;a&gt;, &lt;input&gt; und &lt;li&gt;. Das zurückgegebene Element wird als $userControl verwendet. Wenn $userControl die oben genannte Einschränkung angibt, funktionieren die Funktionen der Klasse AbstractWidget erwartungsgemäß. Anderenfalls erfordern einige der allgemeinen APIs (Fokus, Klick) Änderungen. </td>
   </tr>
   <tr>
    <td>getEventMap</td>
-   <td>Gibt eine Zuordnung zur Konvertierung von HTML-Elementen zu XFA-Ereignissen zurück. <br /> {<br /> Weichzeichnen: XFA_EXIT_EREIGNIS,<br /> }<br /> Dieses Beispiel zeigt, dass der Weichzeichner ein HTML-Ereignis und XFA_EXIT_EREIGNIS ein entsprechendes XFA-Ereignis ist. </td>
+   <td>Gibt eine Zuordnung zur Konvertierung von HTML-Elementen zu XFA-Ereignissen zurück. <br /> {<br /> blur: XFA_EXIT_EVENT,<br /> }<br /> Dieses Beispiel zeigt, dass der Weichzeichner ein HTML-Ereignis und XFA_EXIT_EVENT ein entsprechendes XFA-Ereignis ist. </td>
   </tr>
   <tr>
    <td>getOptionsMap</td>
-   <td>Gibt eine Zuordnung mit detaillierten Informationen zurück, wie eine Option geändert werden kann. Die Schlüssel sind die Optionen, die dem Widget zur Verfügung gestellt werden, und Werte sind die Funktionen, die aufgerufen werden, wenn eine Änderung in dieser Option erkannt wird. Das Widget verfügt über Handler für alle allgemeinen Optionen (außer value und displayValue).</td>
+   <td>Gibt eine Zuordnung mit detaillierten Informationen zurück, wie eine Option geändert werden kann. Die Schlüssel sind die Optionen, die dem Widget zur Verfügung gestellt werden, und Werte sind die Funktionen, die aufgerufen werden, sobald eine Änderung in dieser Option erkannt wird. Das Widget verfügt über Handler für alle allgemeinen Optionen (außer value und displayValue).</td>
   </tr>
   <tr>
    <td>getCommitValue</td>
@@ -71,7 +70,7 @@ HTML5-Formulare bieten eine Implementierung des Widget-Frameworks, das erweitert
  </tbody>
 </table>
 
-Um ein eigenes Widget im oben erstellen Profil zu erstellen, müssen Sie die Verweise der JavaScript-Datei einschließen, die die überschriebenen und neu hinzugefügten Funktionen enthält. Beispiel: Das *reglerNumericFieldWidget* ist ein Widget für numerische Felder. Um das Widget in Ihrem Profil in der Kopfzeile zu verwenden, fügen Sie die folgende Zeile hinzu:
+Um ein eigenes Widget im oben erstellen Profil zu erstellen, müssen Sie die Verweise der JavaScript-Datei einschließen, die die überschriebenen und neu hinzugefügten Funktionen enthält. Beispielsweise ist das *reglerNumericFieldWidget* ein Widget für numerische Felder. Um das Widget in Ihrem Profil in der Kopfzeile zu verwenden, fügen Sie die folgende Zeile hinzu:
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
@@ -79,7 +78,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### Registrieren von benutzerdefinierten Widgets mit XFA Scripting Engine   {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-Wenn der benutzerdefinierte Widget-Code fertig ist, registrieren Sie das Widget bei der Skriptmaschine, indem Sie `registerConfig`API für [Form Bridge](/help/forms/using/form-bridge-apis.md) verwenden. Als Eingabe ist „widgetConfigObject“ erforderlich.
+Wenn der benutzerdefinierte Widget-Code fertig ist, registrieren Sie das Widget bei der Skripterstellungsmaschine, indem Sie die `registerConfig`API für [Form Bridge](/help/forms/using/form-bridge-apis.md) verwenden. Als Eingabe ist „widgetConfigObject“ erforderlich.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",
@@ -89,7 +88,7 @@ window.formBridge.registerConfig("widgetConfig",
     );
 ```
 
-#### widgetConfigObject  {#widgetconfigobject}
+#### widgetConfigObject {#widgetconfigobject}
 
 Die Widget-Konfiguration wird als JSON-Objekt bereitgestellt (eine Sammlung von Schlüssel-Wert-Paaren), bei dem der Schlüssel die Felder identifiziert und der Wert für das Widget steht, das mit den Feldern verwendet werden soll. Eine Beispielkonfiguration sieht wie folgt aus:
 
@@ -102,10 +101,10 @@ Die Widget-Konfiguration wird als JSON-Objekt bereitgestellt (eine Sammlung von 
 }*
 ```
 
-wobei &quot;identifier&quot;ein jQuery CSS-Selektor ist, der ein bestimmtes Feld, eine Gruppe von Feldern eines bestimmten Typs oder alle Felder darstellt. Im Folgenden ist der Wert des Bezeichners in verschiedenen Fällen aufgeführt:
+wobei &quot;identifier&quot;ein jQuery-CSS-Selektor ist, der ein bestimmtes Feld, eine Reihe von Feldern eines bestimmten Typs oder alle Felder darstellt. Im Folgenden ist der Wert des Bezeichners in verschiedenen Fällen aufgeführt:
 
 | Typ des Bezeichners | ID | Beschreibung |
 |---|---|---|
 | Bestimmtes Feld mit Name „fieldname“ | Bezeichner:&quot;div.fieldname&quot; | Alle Felder mit dem Namen „fieldname“ werden mithilfe des Widgets gerendert. |
-| Alle Felder des Typs &quot;type&quot;(wobei Typ NumericField, DateField usw. ist): | Bezeichner: &quot;div.type&quot; | Bei &quot;Timefield&quot;und &quot;DateTimeField&quot;ist der Typ &quot;textfield&quot;, da diese Felder nicht unterstützt werden. |
-| Alle Felder | Bezeichner: &quot;div.field&quot; |  |
+| Alle Felder des Typs &quot;type&quot;(wobei der Typ NumericField, DateField usw. ist): | Bezeichner: &quot;div.type&quot; | Für Timefield und DateTimeField ist der Typ textfield , da diese Felder nicht unterstützt werden. |
+| Alle Felder | Kennung: &quot;div.field&quot; |  |
