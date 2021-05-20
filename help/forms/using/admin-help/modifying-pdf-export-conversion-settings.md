@@ -10,14 +10,13 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 982f7b7e-9ba9-437f-a337-76c355b328ac
 feature: PDF Generator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 48a5d992-4681-41a8-8d1d-4da6767134c2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 100%
 
 ---
-
 
 # Einstellungen für die PDF-Exportkonvertierung ändern {#modifying-the-pdf-export-conversion-settings}
 
@@ -31,4 +30,3 @@ Verwenden Sie das unten beschriebene Verfahren, um die Konvertierungseinstellung
 1. Wählen Sie in der Liste „Dateityp“ das gewünschte Format aus.
 1. Klicken Sie auf „Einstellungen“ und legen Sie die Dateiformateinstellungen den Anforderungen entsprechend fest.
 1. Klicken Sie auf „OK“ und dann auf „Speichern“, um die PDF-Datei zu exportieren.
-
