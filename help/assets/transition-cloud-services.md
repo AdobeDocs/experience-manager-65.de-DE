@@ -3,19 +3,18 @@ title: Anwenden von Übersetzungs-Cloud-Services auf Ordner
 description: Anwenden von Übersetzungs-Cloud-Services auf Ordner
 contentOwner: AG
 role: Administrator
-feature: Translation
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: Übersetzung
+exl-id: f17a33d7-eb2f-406b-8d6c-a3bf564c8702
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '386'
 ht-degree: 73%
 
 ---
 
-
 # Anwenden von Übersetzungs-Cloud-Services auf Ordner {#applying-translation-cloud-services-to-folders}
 
-[!DNL Adobe Experience Manager] Sie können Cloud-basierte Übersetzungsdienste vom Übersetzungsanbieter Ihrer Wahl in Anspruch nehmen, um sicherzustellen, dass Ihre Assets entsprechend Ihren Anforderungen übersetzt werden.
+[!DNL Adobe Experience Manager] bietet Ihnen die Möglichkeit, Cloud-basierte Übersetzungsdienste vom Übersetzungsanbieter Ihrer Wahl zu nutzen, um sicherzustellen, dass Ihre Assets entsprechend Ihren Anforderungen übersetzt werden.
 
 Sie können den Übersetzungs-Cloud-Service direkt auf Ihren Asset-Ordner anwenden, sodass die Assets in den Übersetzungs-Workflows verwendet werden können.
 
@@ -23,8 +22,8 @@ Sie können den Übersetzungs-Cloud-Service direkt auf Ihren Asset-Ordner anwend
 
 Durch die direkte Anwendung der Übersetzungs-Cloud-Services auf Ihren Assets-Ordner entfällt die Notwendigkeit, Übersetzungs-Services zu konfigurieren, wenn Sie Übersetzungs-Workflows erstellen oder aktualisieren.
 
-1. Wählen Sie in der Benutzeroberfläche [!DNL Assets] den Ordner aus, auf den Sie Übersetzungsdienste anwenden möchten.
-1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**, um die Seite **[!UICONTROL Ordnereigenschaften]** anzuzeigen.
+1. Wählen Sie in der [!DNL Assets]-Benutzeroberfläche den Ordner aus, auf den Sie Übersetzungsdienste anwenden möchten.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]** , um die Seite **[!UICONTROL Ordnereigenschaften]** anzuzeigen.
 
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
@@ -37,7 +36,7 @@ Durch die direkte Anwendung der Übersetzungs-Cloud-Services auf Ihren Assets-Or
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Speichern]** und dann auf **[!UICONTROL OK]**, um das Dialogfeld zu schließen.Der Übersetzungsdienst wird auf den Ordner angewendet.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Speichern]** und klicken Sie dann auf **[!UICONTROL OK]**, um das Dialogfeld zu schließen. Der Übersetzungsdienst wird auf den Ordner angewendet.
 
 ## Anwenden eines benutzerdefinierten Übersetzungs-Connectors  {#applying-custom-translation-connector}
 
@@ -49,7 +48,7 @@ Wenn Sie einen benutzerdefinierten Connector für die Übersetzungsservices anwe
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. Klicken Sie auf den Link **[!UICONTROL Jetzt konfigurieren]**, um das Dialogfeld **[!UICONTROL Konfiguration erstellen]** zu öffnen.
+1. Klicken Sie auf den Link **[!UICONTROL Jetzt konfigurieren]** , um das Dialogfeld **[!UICONTROL Konfiguration erstellen]** zu öffnen.
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
