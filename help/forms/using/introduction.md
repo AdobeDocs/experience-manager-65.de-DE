@@ -9,14 +9,13 @@ topic-tags: hTML5_forms
 discoiquuid: 672ee050-63d1-46ed-bef2-f55800208d78
 docset: aem65
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 0facca18-ffa1-420c-859a-6f1f2c449d71
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 92%
 
 ---
-
 
 # Einführung in HTML5-Formulare{#introduction-to-html-forms}
 
@@ -48,4 +47,4 @@ AEM bietet außerdem eine einheitliche Ansicht für die Auflistung und Verwaltun
 
 ### Anpassung von Formularen {#forms-customization}
 
-„HTML5-Formulare“ zeigt Formularvorlagen mithilfe standardmäßiger HTML5-Konstrukte an. Dies vereinfacht die Anpassung und Erweiterung von Formularen im HTML5-Format mithilfe von Webtechnologien, vorwiegend CSS und JavaScript. Sie können das Erscheinungsbild vorhandener Widgets ganz einfach anpassen und Ihre eigenen benutzerdefinierten Widgets oder benutzerdefinierte Formatierungselemente in Formularen verwenden. Weitere Informationen zum Erstellen benutzerdefinierter Widgets und Anpassen vorhandener Widgets finden Sie unter [Benutzerdefinierte Widgets mit HTML5-Formularen ](../../forms/using/custom-widgets.md) hinzufügen.
+„HTML5-Formulare“ zeigt Formularvorlagen mithilfe standardmäßiger HTML5-Konstrukte an. Dies vereinfacht die Anpassung und Erweiterung von Formularen im HTML5-Format mithilfe von Webtechnologien, vorwiegend CSS und JavaScript. Sie können das Erscheinungsbild vorhandener Widgets ganz einfach anpassen und Ihre eigenen benutzerdefinierten Widgets oder benutzerdefinierte Formatierungselemente in Formularen verwenden. Weitere Informationen zum Erstellen benutzerdefinierter Widgets und Anpassen vorhandener Widgets finden Sie unter [Benutzerdefinierte Widgets mit HTML5-Formularen einbinden](../../forms/using/custom-widgets.md).
