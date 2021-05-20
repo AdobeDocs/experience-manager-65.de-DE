@@ -1,6 +1,6 @@
 ---
-title: Essentials des Kalenders
-seo-title: Essentials des Kalenders
+title: Kalendergrundlagen
+seo-title: Kalendergrundlagen
 description: Übersicht über die Kalenderfunktion
 seo-description: Übersicht über die Kalenderfunktion
 uuid: 14ff7a83-b2a7-4f7e-8ee7-88f336329a1a
@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 88932a3c-ba7f-47ba-9e0b-206755c2d42e
-translation-type: tm+mt
-source-git-commit: 82affd528f2526384b319fe89082e0f574ab5855
+exl-id: 069e379d-c6fd-49ca-b337-df6fd466e023
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 3%
 
 ---
 
-
-# Kalender Essentials {#calendar-essentials}
+# Kalendergrundlagen {#calendar-essentials}
 
 Diese Seite enthält wichtige Informationen zum Arbeiten mit der Kalenderfunktion.
 
-## Grundlagen für clientseitige {#essentials-for-client-side}
+## Grundlagen für Client-seitige {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -31,7 +30,7 @@ Diese Seite enthält wichtige Informationen zum Arbeiten mit der Kalenderfunktio
    <td>social/calendar/components/hbs/calendar</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließbar</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließen</strong></a></td>
    <td>Nein</td>
   </tr>
   <tr>
@@ -49,7 +48,7 @@ Diese Seite enthält wichtige Informationen zum Arbeiten mit der Kalenderfunktio
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>siehe <a href="calendar.md">Verwenden von Kalendern</a></td>
+   <td>Siehe <a href="calendar.md">Verwenden von Kalendern</a></td>
   </tr>
  </tbody>
 </table>
@@ -66,18 +65,17 @@ Diese Seite enthält wichtige Informationen zum Arbeiten mit der Kalenderfunktio
 
 ### Kalenderfunktion {#calendar-function}
 
-Eine Community-Site-Struktur, die die [Kalenderfunktion](functions.md#calendar-function) enthält, verfügt über eine konfigurierte `calendar`-Komponente. Die Kalenderfunktion unterstützt die Identifizierung einer [privilegierten Benutzergruppe](users.md#privileged-members-group).
+Eine Community-Site-Struktur, die die [Kalenderfunktion](functions.md#calendar-function) enthält, verfügt über eine konfigurierte `calendar` -Komponente. Die Kalenderfunktion unterstützt die Identifizierung einer [berechtigten Benutzergruppe ](users.md#privileged-members-group).
 
 ### Zugriff auf Kalenderbeiträge (UGC) {#accessing-calendar-posts-ugc}
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Datenspeicherung (z. B. ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Stores](working-with-srp.md) für UGC den programmatischen Zugriff auf UGC, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
 
-**Speicherort und Format des UGC im Repository können ohne Warnung** geändert werden.
+**Speicherort und Format der UGC im Repository können sich ohne Warnung** ändern.
 
 Siehe:
 
-* [Übersicht über](srp.md)  den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung
+* [Übersicht über den Speicher Resource Provider](srp.md)  - Einführung und Übersicht über die Repository-Nutzung
 * [SRP und UGC Essentials](srp-and-ugc.md)  - SRP-Dienstprogrammmethoden und Beispiele
-* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) -Codierungsrichtlinien
-* [SocialUtils Refactoring](socialutils.md)  - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden
-
+* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md)  - Codierungsrichtlinien
+* [SocialUtils-Refaktorierung](socialutils.md)  - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden
