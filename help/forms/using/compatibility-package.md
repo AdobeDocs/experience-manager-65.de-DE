@@ -1,7 +1,7 @@
 ---
 title: Kompatibilitätspaket
 seo-title: Kompatibilitätspaket
-description: Durch die Installation des Kompatibilitätspakets auf AEM Forms 6.5 können Sie die Correspondence Management-Assets von AEM Forms 6.4 und früheren Versionen sowie nicht mehr unterstützte Vorlagen und Seiten für adaptive Formulare verwenden
+description: Durch die Installation des Kompatibilitätspakets auf AEM Forms 6.5 können Sie die Correspondence Management-Assets aus AEM Forms 6.4 und früheren Versionen sowie veraltete Vorlagen und Seiten für adaptive Formulare verwenden
 seo-description: Die Installation des Kompatibilitätspakets auf AEM Forms 6.4 ermöglicht es Ihnen, die Correspondence Management-Assets aus AEM Forms 6.4 sowie veraltete Vorlagen und Seiten für adaptive Formulare zu verwenden.
 uuid: b49633d6-2cb3-422c-a314-25f3b8a37b7f
 contentOwner: gtalwar
@@ -11,20 +11,19 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 73e8ccc6-f857-493e-b6e3-878f93e2a356
 docset: aem65
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: bb16017c-a1bf-40d8-a78d-827c05b7ee2e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '343'
 ht-degree: 64%
 
 ---
-
 
 # Kompatibilitätspaket{#compatibility-package}
 
 ## Überblick {#overview}
 
-Interaktive Kommunikation ist der Standardansatz und der empfohlene Ansatz zur Erstellung von Kundenkommunikation in AEM Forms 6.5. Um weiterhin Briefe in AEM Forms 6.5 zu verwenden, müssen Sie das neueste [AEMFD-Kompatibilitätspaket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) installieren.
+Interaktive Kommunikation ist der standardmäßige und empfohlene Ansatz zur Erstellung von Kundenkommunikation in AEM Forms 6.5. Um weiterhin Briefe in AEM Forms 6.5 zu verwenden, müssen Sie das neueste [AEMFD-Kompatibilitätspaket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) installieren.
 
 Mit dem AEMFD-Kompatibilitätspaket können Sie auch [die folgenden Assets aus AEM Forms 6.4, 6.3 und 6.2 auf AEM Forms 6.5 verwenden:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
 
@@ -33,13 +32,13 @@ Mit dem AEMFD-Kompatibilitätspaket können Sie auch [die folgenden Assets aus A
 * Datenwörterbücher
 * Veraltete Vorlagen und Seiten für adaptive Formulare
 
-Weitere Informationen finden Sie unter [Elemente, die mit AEM Forms 6.5 kompatibel gemacht wurden, indem Sie das Kompatibilitätspaket](../../forms/using/compatibility-package.md#assetsmadecompatible) installieren.
+Weitere Informationen finden Sie unter [Assets, die mit AEM Forms 6.5 kompatibel sind, indem Sie das Kompatibilitätspaket](../../forms/using/compatibility-package.md#assetsmadecompatible) installieren.
 
-## hinzufügen Unterstützung von AEM Forms 6.4-, 6.3- und 6.2-Assets in AEM Forms 6.5 {#add-support-for-aem-forms-and-assets-in-aem-forms}
+## Unterstützung für AEM Forms 6.4, 6.3 und 6.2 Assets in AEM Forms 6.5 {#add-support-for-aem-forms-and-assets-in-aem-forms} hinzufügen
 
 Gehen Sie nach der Aktualisierung wie folgt vor, um das AEM-Kompatibilitätspaket zu installieren und Ihre Assets mit Version 6.5 kompatibel zu machen:
 
-Vergewissern Sie sich, dass [AEM Compatibility Package](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) vorinstalliert ist.
+Stellen Sie sicher, dass das [AEM Kompatibilitätspaket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) vorinstalliert ist.
 
 1. Installieren Sie das neueste 6.5 [Kompatibilitätspaket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
 
@@ -77,4 +76,3 @@ Durch Installation des Kompatibilitätspakets können Sie die folgenden Assets u
    * /libs/fd/af/components/page/survey
    * /libs/fd/af/components/page/tabbedenrollment
    * /libs/fd/afaddon/components/page/advancedenrollment
-
