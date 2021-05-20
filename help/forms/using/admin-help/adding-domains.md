@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d4004ffe-c981-487d-b803-dc4492ae5998
-translation-type: tm+mt
-source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+exl-id: c708936d-7aa7-4b92-be2d-d97008f187d2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '946'
 ht-degree: 99%
 
 ---
-
 
 # Domänen hinzufügen {#adding-domains}
 
@@ -87,4 +86,3 @@ Wenn Sie MySQL als AEM Forms-Datenbank verwenden, gelten die folgenden Einschrä
    * Suchen Sie den Domänennamen, der erweiterte Zeichen oder Multibyte-Zeichen enthält, und legen Sie den Status auf „OBSOLETE“ fest.
 
 1. Importieren Sie die aktualisierte Konfigurationsdatei, wie unter [Konfigurationsdatei importieren und exportieren](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file) beschrieben.
-
