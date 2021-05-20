@@ -1,6 +1,6 @@
 ---
 title: Assets Insights
-description: Erfahren Sie, wie Sie mit der Asset Insights-Funktion Benutzerbewertungen und Nutzungsstatistiken zu Bildern verfolgen können, die in Websites von Drittanbietern, Marketing-Kampagnen und kreativen Lösungen der Adobe verwendet werden.
+description: Erfahren Sie, wie Sie mit der Funktion "Asset Insights"Benutzerbewertungen und Nutzungsstatistiken von Bildern verfolgen können, die auf Drittanbieter-Websites, in Marketingkampagnen und den Kreativlösungen der Adobe verwendet werden.
 contentOwner: AG
 role: Business Practitioner, Administrator
 feature: Asset Insights,Asset-Berichte
@@ -14,13 +14,13 @@ ht-degree: 56%
 
 # Assets Insights {#asset-insights}
 
-Mit der Asset Insights-Funktion können Sie Benutzerbewertungen und Nutzungsstatistiken von Bildern verfolgen, die in Websites von Drittanbietern, Marketing-Kampagnen und kreativen Lösungen der Adobe verwendet werden. Sie hilft, Erkenntnisse über ihre Leistung und Beliebtheit abzuleiten.
+Mit der Funktion Assets Insights können Sie Benutzerbewertungen und Nutzungsstatistiken von Bildern verfolgen, die auf Drittanbieter-Websites, in Marketingkampagnen und den Kreativlösungen der Adobe verwendet werden. Sie hilft, Erkenntnisse über ihre Leistung und Beliebtheit abzuleiten.
 
 [!DNL Assets] Insights hält Details zu Benutzeraktivitäten wie Anzahl der Bildbewertungen, Klickraten und Impressionen (Häufigkeit des Ladens eines Bildes auf einer Website) fest. Basierend auf diesen Statistiken werden Bildern Bewertungen zugewiesen. Sie können Bewertungs- und Leistungsstatistiken nutzen, um beliebte Bilder für Kataloge, Marketing-Kampagnen usw. auszuwählen. Sie können außerdem Richtlinien zu Archivierungen und Lizenzerneuerungen anhand dieser Statistiken formulieren.
 
-Damit [!DNL Assets] Insights Nutzungsstatistiken für Bilder von einer Website erfassen kann, müssen Sie den Einbettungscode für das Bild in den Website-Code aufnehmen.
+Damit [!DNL Assets] Insights Nutzungsstatistiken für Bilder von einer Website erfassen kann, müssen Sie den Einbettungscode für das Bild in den Website-Code einfügen.
 
-Damit Assets Insights Nutzungsstatistiken für Assets anzeigen kann, konfigurieren Sie zunächst die Funktion, um Berichte-Daten von Adobe Analytics abzurufen. Weitere Informationen finden Sie unter [Assets Insights](/help/assets/configure-asset-insights.md) konfigurieren. Um diese Funktion zu verwenden, kaufen Sie die [!DNL Adobe Analytics]-Lizenz separat. Kunden mit [!DNL Managed Services] erhalten eine [!DNL Analytics] Lizenz, die mit [!DNL Experience Manager] gebündelt wird. Siehe [Managed Services Produktbeschreibung](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
+Damit Assets Insights Nutzungsstatistiken für Assets anzeigen kann, konfigurieren Sie zunächst die Funktion, um Berichtsdaten aus Adobe Analytics abzurufen. Weitere Informationen finden Sie unter [Konfigurieren von Assets Insights](/help/assets/configure-asset-insights.md). Um diese Funktion zu verwenden, kaufen Sie die Lizenz [!DNL Adobe Analytics] separat. Kunden mit [!DNL Managed Services] erhalten die [!DNL Analytics] -Lizenz im Paket mit [!DNL Experience Manager]. Siehe [Managed Services-Produktbeschreibung](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >
@@ -28,9 +28,9 @@ Damit Assets Insights Nutzungsstatistiken für Assets anzeigen kann, konfigurier
 
 ## Anzeigen von Statistiken für Bilder {#viewing-statistics-for-an-image}
 
-Sie können die Assets Insights-Bewertungen auf der Metadaten-Seite Ansicht haben.
+Sie können die Asset Insights-Bewertungen auf der Metadatenseite anzeigen.
 
-1. Wählen Sie in der Benutzeroberfläche von [!DNL Assets] das Bild aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Eigenschaften]**.
+1. Wählen Sie in der [!DNL Assets]-Benutzeroberfläche das Bild aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Eigenschaften]** .
 1. Klicken Sie auf der Seite „Eigenschaften“ auf die Registerkarte **[!UICONTROL Statistiken]**.
 1. Überprüfen Sie die Nutzungsdetails für das Asset auf der Registerkarte **[!UICONTROL Insights]**. Der Abschnitt **[!UICONTROL Bewertung]** beschreibt die gesamte Asset-Nutzung und die Leistungsbewertungen eines Assets.
 
@@ -49,7 +49,7 @@ Sie können die Assets Insights-Bewertungen auf der Metadaten-Seite Ansicht habe
 
    >[!NOTE]
    >
-   >Da die Asset Insights-Funktion in der Regel die Lösungsdaten regelmäßig von Adobe Analytics abruft, werden im Abschnitt &quot;Lösungen&quot;möglicherweise nicht die neuesten Daten angezeigt. Der Zeitraum, für den die Daten angezeigt werden, hängt vom Zeitplan des Abrufvorgangs ab, den Assets Insights zum Abrufen von Analytics-Daten ausführt.
+   >Da die Funktion &quot;Assets Insights&quot;normalerweise die Lösungsdaten regelmäßig aus Adobe Analytics abruft, werden im Abschnitt &quot;Lösungen&quot;möglicherweise nicht die neuesten Daten angezeigt. Der Zeitraum, für den die Daten angezeigt werden, hängt vom Zeitplan des Abrufvorgangs ab, den Assets Insights zum Abrufen von Analytics-Daten ausführt.
 
 1. Um Leistungsstatistiken für das Asset für einen bestimmten Zeitraum grafisch anzuzeigen, wählen Sie den gewünschten Zeitraum im Abschnitt **[!UICONTROL Leistungsstatistiken]** aus. Details wie Klicks und Impressions werden als Trend-Linien eines Diagramms angezeigt.
 
@@ -59,7 +59,7 @@ Sie können die Assets Insights-Bewertungen auf der Metadaten-Seite Ansicht habe
    >
    >Im Gegensatz zu den Daten im Abschnitt „Lösungen“ zeigt der Abschnitt „Leistungsstatistiken“ die neuesten Daten an.
 
-1. Um den Einbettungscode für das Asset abzurufen, das Sie in Websites einschließen, um Leistungsdaten abzurufen, klicken Sie unter der Asset-Miniaturansicht auf **[!UICONTROL Einbettungscode abrufen]**. Weitere Informationen zum Einbettungscode in Webseiten von Drittanbietern finden Sie unter [Verwenden von Seiten-Tracker und Einbettungscode in Webseiten](/help/assets/use-page-tracker.md).
+1. Um den Einbettungscode für das Asset zu erhalten, das Sie in Websites zum Abrufen von Leistungsdaten einschließen, klicken Sie unter der Asset-Miniaturansicht auf **[!UICONTROL Einbettungscode abrufen]** . Weitere Informationen dazu, wie Sie Ihren Einbettungscode in Webseiten von Drittanbietern einbeziehen, finden Sie unter [Verwenden von Seitenverfolgung und Einbettungscode in Webseiten](/help/assets/use-page-tracker.md).
 
    ![chlimage_1-98](assets/chlimage_1-303.png)
 
@@ -67,15 +67,15 @@ Sie können die Assets Insights-Bewertungen auf der Metadaten-Seite Ansicht habe
 
 Mit der **[!UICONTROL Insights-Ansicht]** können Sie Bewertungen aller Assets in einem Ordner gleichzeitig anzeigen.
 
-1. Navigieren Sie in der Benutzeroberfläche [!DNL Assets] zu dem Ordner, der die Assets enthält, für die Sie Einblicke Ansicht wünschen.
-1. Klicken Sie in der Symbolleiste auf Layout und wählen Sie dann **[!UICONTROL Insight-Ansicht]**.
+1. Navigieren Sie in der [!DNL Assets]-Benutzeroberfläche zu dem Ordner mit den Assets, für die Sie Einblicke anzeigen möchten.
+1. Klicken Sie in der Symbolleiste auf Layout und wählen Sie dann **[!UICONTROL Insights View]** aus.
 1. Die Seite zeigt die Nutzungsbewertungen für die Assets an. Vergleichen Sie die Bewertungen der verschiedenen Assets und ziehen Sie Ihre Erkenntnisse daraus.
 
 ## Planen von Hintergrundaufträgen {#scheduling-background-job}
 
-Assets Insights ruft in regelmäßigen Abständen Nutzungsdaten für Assets aus Adobe Analytics Report Suites ab. Standardmäßig führt Assets Insights alle 24 Stunden um 2 Uhr einen Hintergrundauftrag aus, um die Daten abzurufen. Sie können jedoch die Häufigkeit und die Zeit ändern, indem Sie den Dienst **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** von der Web-Konsole aus konfigurieren.
+Assets Insights ruft regelmäßig Nutzungsdaten für Assets aus Adobe Analytics Report Suites ab. Standardmäßig führt Assets Insights alle 24 Stunden um 2 Uhr einen Hintergrundauftrag aus, um die Daten abzurufen. Sie können jedoch die Häufigkeit und die Zeit ändern, indem Sie den Dienst **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** von der Web-Konsole aus konfigurieren.
 
-1. Klicken Sie auf das [!DNL Experience Manager]-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Webkonsole]**.
+1. Klicken Sie auf das [!DNL Experience Manager]-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
 1. Öffnen Sie die Service-Konfiguration **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]**.
 
    ![chlimage_1-99](assets/chlimage_1-304.png)
