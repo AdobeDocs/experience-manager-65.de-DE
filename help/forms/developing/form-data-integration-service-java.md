@@ -1,8 +1,8 @@
 ---
-title: JavaAPI Quick Beginn (SOAP) des Formulardatenintegrationsdienstes
-seo-title: JavaAPI Quick Beginn (SOAP) des Formulardatenintegrationsdienstes
-description: Verwenden Sie den Forms Data Integration-Dienst, um Daten in ein PDF-Formular zu importieren und Daten aus einem PDF-Formular mithilfe der Java-API zu exportieren.
-seo-description: Verwenden Sie den Forms Data Integration-Dienst, um Daten in ein PDF-Formular zu importieren und Daten aus einem PDF-Formular mithilfe der Java-API zu exportieren.
+title: JavaAPI-Schnellstart für den Formulardatenintegrationsdienst (SOAP)
+seo-title: JavaAPI-Schnellstart für den Formulardatenintegrationsdienst (SOAP)
+description: Verwenden Sie den Form Data Integration-Dienst, um Daten in ein PDF-Formular zu importieren und mithilfe der Java-API Daten aus einem PDF-Formular zu exportieren.
+seo-description: Verwenden Sie den Form Data Integration-Dienst, um Daten in ein PDF-Formular zu importieren und mithilfe der Java-API Daten aus einem PDF-Formular zu exportieren.
 uuid: bde8e83d-56d3-4331-a025-82b327c219b7
 contentOwner: admin
 content-type: reference
@@ -10,32 +10,31 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 91b738ec-aa00-4f05-bf42-2574ced8d993
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: a2560c87-ae95-4d65-869a-8cba177a1cd6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '286'
 ht-degree: 1%
 
 ---
 
+# Schnellstart zur Java-API für den Formulardatenintegrationsdienst (SOAP) {#form-data-integration-service-javaapi-quick-start-soap}
 
-# Formulardatenintegrationsdienst Java API Quick Beginn (SOAP) {#form-data-integration-service-javaapi-quick-start-soap}
+Die folgenden Schnellstarts sind für den Formulardatenintegrationsdienst verfügbar.
 
-Die folgenden Quick-Beginn sind für den Formulardatenintegrationsdienst verfügbar.
+[Schnellstart (SOAP-Modus): Importieren von Formulardaten mit der Java-API](form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
 
-[Quick Beginn (SOAP-Modus): Formulardaten mit der Java-API importieren](form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
+[Schnellstart (SOAP-Modus): Exportieren von Formulardaten mit der Java-API](form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
 
-[Quick Beginn (SOAP-Modus): Exportieren von Formulardaten mit der Java-API](form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
-
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt sein.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden und der Verbindungsmodus sollte auf SOAP festgelegt werden.
 
 >[!NOTE]
 >
->Quick Beginn unter Programmieren mit AEM Formularen basieren auf dem Forms-Server, der auf JBoss Application Server und dem Microsoft Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Schnellstart, der unter Programmieren mit AEM Formularen zu finden ist, basiert auf dem Forms-Server, der auf JBoss Application Server und dem Microsoft Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Quick Beginn (SOAP-Modus): Formulardaten mit der Java-API {#quick-start-soap-mode-importing-form-data-using-the-java-api} importieren
+## Schnellstart (SOAP-Modus): Importieren von Formulardaten mit der Java-API {#quick-start-soap-mode-importing-form-data-using-the-java-api}
 
-Im folgenden Java-Codebeispiel werden Daten in ein PDF-Formular importiert. Die Daten befinden sich in einer XML-Datei mit dem Namen *Loan_data.xml* und das PDF-Formular wird als PDF-Datei mit dem Namen *ResultLoanForm.pdf* gespeichert. (Siehe [Formulardaten importieren](/help/forms/developing/importing-exporting-data.md#importing-form-data).)
+Im folgenden Java-Codebeispiel werden Daten in ein PDF-Formular importiert. Die Daten befinden sich in einer XML-Datei mit dem Namen *Loan_data.xml* und das PDF-Formular wird als PDF-Datei mit dem Namen *ResultLoanForm.pdf* gespeichert. (Siehe [Importieren von Formulardaten](/help/forms/developing/importing-exporting-data.md#importing-form-data).)
 
 ```java
  /*
@@ -135,7 +134,7 @@ Im folgenden Java-Codebeispiel werden Daten in ein PDF-Formular importiert. Die 
  
 ```
 
-## Quick Beginn (SOAP-Modus): Exportieren von Formulardaten mit der Java-API {#quick-start-soap-mode-exporting-form-data-using-the-java-api}
+## Schnellstart (SOAP-Modus): Exportieren von Formulardaten mit der Java-API {#quick-start-soap-mode-exporting-form-data-using-the-java-api}
 
 Im folgenden Java-Codebeispiel werden Daten aus einem PDF-Formular exportiert. Die Formulardaten werden als XML-Datei mit dem Namen *Loan_data.xml* gespeichert. (Siehe [Exportieren von Formulardaten](/help/forms/developing/importing-exporting-data.md#exporting-form-data).)
 
@@ -231,4 +230,3 @@ Im folgenden Java-Codebeispiel werden Daten aus einem PDF-Formular exportiert. D
      }
  }
 ```
-
