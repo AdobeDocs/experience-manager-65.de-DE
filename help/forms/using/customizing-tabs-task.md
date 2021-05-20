@@ -8,25 +8,24 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ac0a281f-f589-4a70-9bc7-1a23e054b02f
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 8412cfec-bcab-40b7-9e5b-fcc211d43c0b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 51%
 
 ---
 
-
 # Anpassen von Registerkarten für eine Aufgabe {#customizing-tabs-for-a-task}
 
-Sie können Registerkartennamen für die Komponente `Start Process` in der Ansicht `Start Process` und `Task Details` in der Ansicht `ToDo` anpassen.
+Sie können Registerkartennamen für die Komponente `Start Process` in der Uber-Ansicht `Start Process` und die Komponente `Task Details` in der Uber-Ansicht `ToDo` anpassen.
 
 1. Befolgen Sie die [generischen Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md).
-1. Ändern Sie den Wert von `tabname`in der Datei `translation.json`.
+1. Ändern Sie den Wert von `tabname`in der Datei `translation.json` .
 
    Ändern Sie beispielsweise `/apps/ws/locales/en-US/translation.json` für Englisch in Folgendes.
 
-   * Verwenden Sie für Aufgaben, die im Beginn ausgelöst werden, das folgende Codefragment aus dem Block `"startprocess" : {}`.
+   * Für Aufgaben, die im Startprozess initiiert werden, verwenden Sie das folgende Snippet aus dem Block `"startprocess" : {}` .
 
    ```json
    "tabname" : {
@@ -37,7 +36,7 @@ Sie können Registerkartennamen für die Komponente `Start Process` in der Ansic
            }
    ```
 
-   * Verwenden Sie für Aufgaben in Aufgaben den folgenden Codeausschnitt aus dem Block `"todo" : {}`.
+   * Verwenden Sie für Aufgaben in &quot;Aufgaben&quot;den folgenden Codeausschnitt aus dem Block `"todo" : {}` .
 
    ```json
    "tabname" : {
