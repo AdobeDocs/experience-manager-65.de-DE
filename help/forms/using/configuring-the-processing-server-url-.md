@@ -10,14 +10,13 @@ topic-tags: Configuration
 discoiquuid: a7387bd3-8b31-4bd0-a861-daa8f7cb2d05
 docset: aem65
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: c43cab7b-3421-4e1b-a834-b2dd6eb23c1d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '258'
 ht-degree: 61%
 
 ---
-
 
 # AEM DS-Einstellungen konfigurieren{#configuring-aem-ds-settings}
 
@@ -32,10 +31,10 @@ Dieser Artikel beschreibt, wie Sie den **AEM DS-Einstellungen-Dienst** konfiguri
 
 Führen Sie die folgenden Schritte aus, um die **[!UICONTROL AEM DS-Einstellungen]** zu konfigurieren:
 
-1. Öffnen Sie Configuration Manager mithilfe der URL in der Veröffentlichungsinstanz:\
+1. Öffnen Sie Configuration Manager mithilfe der URL auf der Veröffentlichungsinstanz:\
    *https://localhost:port/system/console/configMgr*.
 
-   ![AEM Web-Konsolenkonfiguration](assets/web_configuration_console_new.png)
+   ![Konfiguration der Web-Konsole AEM](assets/web_configuration_console_new.png)
 
 1. Suchen Sie im Fenster **[!UICONTROL Adobe Experience Manager Web Console Configuration]** die Option **[!UICONTROL AEM DS Settings]** und klicken Sie darauf.
 
@@ -43,11 +42,11 @@ Führen Sie die folgenden Schritte aus, um die **[!UICONTROL AEM DS-Einstellunge
 
 1. Das Fenster **[!UICONTROL AEM DS-Einstellungendienst]** zeigt die allgemeinen Konfigurationseinstellungen für AEM DS-Komponenten.
 
-   ![DS-Einstellungsdienst](assets/ds_settings_service_new.png)
+   ![DS Settings Service](assets/ds_settings_service_new.png)
 
 1. Fügen Sie die folgenden Informationen in die entsprechenden Felder ein:
 
-   **[!UICONTROL Verarbeitungsserver-URL]**: Der Verarbeitungsserver ist der Server, auf dem der Forms- oder AEM-Workflow ausgelöst werden muss. Dies kann mit der URL der Instanz im Autorenmodus oder der anderen Server-URL (AEM) identisch sein.
+   **[!UICONTROL Verarbeitungsserver-URL]**: Der Verarbeitungsserver ist der Server, auf dem der Forms- oder AEM-Workflow ausgelöst werden muss. Dies kann mit der URL der AEM Autoreninstanz oder der anderen Server-URL (d. h. https://localhost:port/) übereinstimmen.
 
    **[!UICONTROL Verarbeitungsserver-Benutzername]**: Benutzername des Workflow-Benutzers  [basierend auf der verwendeten Server-URL]
 
@@ -59,5 +58,6 @@ Führen Sie die folgenden Schritte aus, um die **[!UICONTROL AEM DS-Einstellunge
    >    
    >    
    >    * Bei der Verwendung von Formularen oder AEM-Workflows ist es notwendig, den DS-Einstellungendienst zu konfigurieren, bevor Sie eine Übertragung vom Veröffentlichungsserver vornehmen. Andernfalls schlägt die Übermittlung eines Formulars fehlgeschlagen.
+
 
 
