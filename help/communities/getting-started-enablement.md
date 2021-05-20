@@ -1,40 +1,38 @@
 ---
 title: Erste Schritte mit AEM Communities zur Aktivierung
 seo-title: Erste Schritte mit AEM Communities zur Aktivierung
-description: Lernprogramm zum Einrichten einer Community für die Aktivierung
-seo-description: Lernprogramm zum Einrichten einer Community für die Aktivierung
+description: Tutorial zum Einrichten einer Aktivierungs-Community
+seo-description: Tutorial zum Einrichten einer Aktivierungs-Community
 uuid: 25b43ee4-6fdd-496c-94fe-daf1d300aecb
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 31cc7819-cc4d-4804-9fab-005d8bef0714
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: 03fe29ae-2806-4906-b248-7db29ab12069
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 15%
 
 ---
 
-
 # Erste Schritte mit AEM Communities zur Aktivierung {#getting-started-with-aem-communities-for-enablement}
 
-AEM Communities unterstützt Marken bei der Erstellung konsistenter Erlebnisse über digitale und persönliche Kanal hinweg, indem es Mitarbeitern und Kunden die Aktivierung mit einem Katalog an Ressourcen, zugewiesenen Inhalten und dynamischen Empfehlungen erleichtert - alles in einer Social Community, um Interaktionen zu fördern.
+AEM Communities unterstützt Marken bei der Erstellung konsistenter Erlebnisse über digitale und persönliche Kanäle hinweg, indem es die Aktivierung von Mitarbeitern und Kunden ermöglicht - mit einem Katalog an Aktivierungsressourcen, zugewiesenen Inhalten und dynamischen Empfehlungen - die alle innerhalb einer Social Community bereitgestellt werden, um die Interaktion zu fördern.
 
-Im Folgenden finden Sie ein Tutorial zur schnellen Einrichtung einer [Aktivierungsgemeinschaft](overview.md#enablement-community) zu Demonstrations- oder Entwicklungszwecken.
+Im Folgenden finden Sie ein Tutorial zum schnellen Einrichten einer [Aktivierungs-Community](overview.md#enablement-community) für Demonstrations- oder Entwicklungszwecke.
 
-Eine Anleitung zum schnellen Einrichten einer [Einsatzgemeinschaft](overview.md#engagement-community) finden Sie unter [Erste Schritte mit AEM Communities](getting-started.md).
+Eine Anleitung zum schnellen Einrichten einer [Interaktionsgemeinschaft](overview.md#engagement-community) finden Sie unter [Erste Schritte mit AEM Communities](getting-started.md).
 
 >[!NOTE]
 >
->Dieses Lernprogramm setzt die Installation von [Communities feature pack 1](deploy-communities.md#latestfeaturepack) oder neuer voraus.
+>In diesem Tutorial wird die Installation von [Communities Feature Pack 1](deploy-communities.md#latestfeaturepack) oder höher vorausgesetzt.
 
 * [Ersteinrichtung](enablement-setup.md)
 
-* [Erstellen einer neuen Community-Site für die Aktivierung](enablement-create-site.md)
+* [Erstellen einer neuen Community-Site zur Aktivierung](enablement-create-site.md)
 
-* [Ressourcen erstellen und zuweisen](resource.md)
+* [Erstellen und Zuweisen einer Ressource](resource.md)
 
-* [Erleben Sie die veröffentlichte Site](enablement-published-site.md)
-
+* [Erlebnis der veröffentlichten Site](enablement-published-site.md)
