@@ -9,14 +9,13 @@ topic-tags: author
 discoiquuid: 34e6d1bc-4eca-42dc-9ae5-9a2107fbefce
 docset: aem65
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 77%
 
 ---
-
 
 # HTML5-Vorschau eines XDP-Formulars generieren{#generate-html-preview-of-an-xdp-form}
 
@@ -32,8 +31,8 @@ Um Designer für die Erstellung einer HTML-Vorschau für XDP-Formulare zu aktivi
 
 ### Apache Sling Authentifizierungsdienst konfigurieren{#configure-apache-sling-authentication-service} 
 
-1. Gehen Sie zu `https://'[server]:[port]'/system/console/configMgr` unter AEM Forms, das auf OSGi ausgeführt wird, oder
-   `https://'[server]:[port]'/lc/system/console/configMgr` auf AEM Forms, das auf JEE läuft.
+1. Wechseln Sie zu `https://'[server]:[port]'/system/console/configMgr` auf AEM Forms, das auf OSGi ausgeführt wird, oder
+   `https://'[server]:[port]'/lc/system/console/configMgr` auf AEM Forms, die auf JEE ausgeführt wird.
 1. Wählen Sie die Konfiguration **Apache Sling-Authentifizierungsdienst**, um ihn im Modus „Bearbeiten“ zu öffnen.
 
 1. Je nachdem, ob Sie AEM Forms unter OSGi oder JEE ausführen, müssen Sie Folgendes im Feld **Authentifizierungsanforderungen** hinzufügen:   
@@ -69,12 +68,12 @@ Der[ abgesicherte Modus](../../forms/using/get-xdp-pdf-documents-aem.md) ist sta
 ### Details zum AEM Forms-Server bereitstellen  {#provide-details-of-aem-forms-server}
 
 1. Navigieren Sie in Designer zu **Werkzeuge**> **Optionen**.
-1. Wählen Sie im Fenster &quot;Optionen&quot;die Seite **Serveroptionen** aus, geben Sie die folgenden Details ein und klicken Sie auf **OK**.
+1. Wählen Sie im Fenster Optionen die Seite **Serveroptionen** aus, geben Sie die folgenden Details ein und klicken Sie auf **OK**.
 
    * **Server URL**: AEM Forms-Server URL.
 
    * **HTTP-Portnummer**: AEM-Server-Port. Der Standardwert ist 4502. 
-   * **HTML-Vorschauen-Kontext:** Pfad des Profils zum Rendern von XFA-Formularen. Zur Vorschau des Formulars in Designer werden die folgenden Standard-Profile verwendet. Sie können außerdem den Pfad zu einem benutzerdefinierten Profil angeben.
+   * **HTML-Vorschaukontext:** Pfad des Profils für die Wiedergabe von XFA-Formularen. Die folgenden Standardprofile werden verwendet, um eine Vorschau des Formulars in Designer anzuzeigen. Sie können außerdem den Pfad zu einem benutzerdefinierten Profil angeben.
 
       * `/content/xfaforms/profiles/default.html` (AEM Forms on OSGi)
 
@@ -82,17 +81,17 @@ Der[ abgesicherte Modus](../../forms/using/get-xdp-pdf-documents-aem.md) ist sta
    * **Forms Manager Context:** Kontextpfad, an dem die Forms Manager-Benutzeroberfläche bereitgestellt wird. Die Standardwerte lauten:
 
       * `/aem/forms` (AEM Forms unter OSGi)
-      * `/lc/forms` (AEM Forms zu JEE)
+      * `/lc/forms` (AEM Forms on JEE)
 
    >[!NOTE]
    >
-   >Vergewissern Sie sich, dass der AEM Forms-Server betriebsbereit ist. Die HTML-Vorschau verbindet sich mit dem CRX-Server mit einer Vorschau von *generate*.
+   >Stellen Sie sicher, dass der AEM Forms-Server aktiv ist. Die HTML-Vorschau stellt eine Verbindung zum CRX-Server her mit *generate* einer Vorschau.
 
    ![AEM Forms Designer-Optionen ](assets/server_options.png)
 
    AEM Forms Designer-Optionen
 
-1. Um ein Formular in HTML Vorschau, klicken Sie auf die Registerkarte **Vorschau-HTML**.
+1. Um eine Vorschau eines Formulars in HTML anzuzeigen, klicken Sie auf die Registerkarte **HTML-Vorschau** .
 
    >[!NOTE]
    >
@@ -105,7 +104,7 @@ Der[ abgesicherte Modus](../../forms/using/get-xdp-pdf-documents-aem.md) ist sta
 
    >[!CAUTION]
    >
-   >Um das echte Endbenutzererlebnis zu testen, können Sie Ihre Formulare auch in externen Browsern (Google Chrome, Microsoft Edge, Mozilla Firefox usw.) Vorschau haben. Jeder Browser verwendet eine separate Engine zum Rendern von HTML, sodass es einige Unterschiede bei der Vorschau von Formularen in Designer und externen Browsern geben kann.
+   >Um das tatsächliche Endbenutzererlebnis zu testen, zeigen Sie Ihre Formulare auch in externen Browsern (Google Chrome, Microsoft Edge, Mozilla Firefox usw.) an. Jeder Browser verwendet eine separate Engine zum Rendern von HTML, sodass es einige Unterschiede bei der Vorschau eines Formulars in Designer und im externen Browser geben kann.
 
 ## Anzeigen der Vorschau eines Formulars mit Musterdaten {#to-preview-a-form-using-sample-data}
 
