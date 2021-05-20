@@ -10,14 +10,13 @@ topic-tags: Configuration
 discoiquuid: 38c0ec46-5686-4656-bfb4-7125ec194673
 docset: aem65
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 22926757-9cdb-4f8a-9bd9-16ddbc3f954a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '927'
 ht-degree: 79%
 
 ---
-
 
 # Leistungsoptimierung für AEM Forms-Server{#performance-tuning-of-aem-forms-server}
 
@@ -50,7 +49,7 @@ Die standardmäßigen Cacheeinstellungen für AEM Forms erweisen sich für eine 
 
 ## JVM-Parameter   {#jvm-parameters}
 
-Für eine optimale Leistung wird empfohlen, die folgenden JVM `init`-Argumente zu verwenden, um `Java heap` und `PermGen` zu konfigurieren.
+Für eine optimale Leistung wird empfohlen, die folgenden JVM-Argumente `init` zu verwenden, um `Java heap` und `PermGen` zu konfigurieren.
 
 ```shell
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -Xms8192m
@@ -61,7 +60,7 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 
 >[!NOTE]
 >
->Die empfohlenen Einstellungen gelten für Windows 2008 R2 8 Core und Oracle HotSpot 1.7 (64-Bit) JDK und sollten gemäß Ihrer Systemkonfiguration hoch- oder herunterskaliert werden.
+>Die empfohlenen Einstellungen gelten für Windows 2008 R2 8 Core und Oracle HotSpot 1.7 (64 Bit) JDK und sollten gemäß Ihrer Systemkonfiguration skaliert werden.
 
 ## Verwenden eines Webservers {#using-a-web-server}
 
@@ -71,7 +70,7 @@ Führen Sie beispielsweise die folgenden Schritte durch, um die Komprimierung au
 
 >[!NOTE]
 >
->Die folgenden Anweisungen gelten nicht für andere Server als den 32-Bit-Apache Web Server 2.0. Informationen über spezielle Schritte für andere Server finden Sie in der entsprechenden Produktdokumentation.
+>Die folgenden Anweisungen gelten nicht für andere Server als den 32-Bit-Apache-Webserver 2.0. Informationen über spezielle Schritte für andere Server finden Sie in der entsprechenden Produktdokumentation.
 
 Die folgenden Schritte demonstrieren die Änderungen, die erforderlich sind, um die Komprimierung mit Apache Web Server zu aktivieren
 
@@ -96,14 +95,14 @@ Apache können über das HTTP-Protokoll mit CRX kommunizieren. Die Konfiguration
    >Unter Linux ist der Standardwert `APACHE_HOME` `/etc/httpd/`.
 
 1. Konfigurieren Sie das Proxys auf Port 4502 von crx.
-hinzufügen folgende Konfiguration in der Konfigurationsdatei `APACHE_HOME/conf/httpd.conf`.
+Fügen Sie die folgende Konfiguration in die Konfigurationsdatei `APACHE_HOME/conf/httpd.conf` ein.
 
    ```shell
    ProxyPass / https://<server>:4502/
    ProxyPassReverse / https://<server>:4502/
    ```
 
-1. Aktivieren Sie die Komprimierung. hinzufügen folgende Konfiguration in der Konfigurationsdatei `APACHE_HOME/conf/httpd.conf`.
+1. Aktivieren Sie die Komprimierung. Fügen Sie die folgende Konfiguration in die Konfigurationsdatei `APACHE_HOME/conf/httpd.conf` ein.
 
    **Für HTML5-Formulare**
 
@@ -149,9 +148,9 @@ Um die Leistung zu verbessern, können Sie die Antivirensoftware anweisen, die f
 
 * AEM-Installationsverzeichnis. Wenn es nicht möglich ist, das gesamte Verzeichnis auszuschließen, schließen Sie die folgenden Ordner aus:
 
-   * [AEM Installationsordner] \crx-repository\temp
-   * [AEM Installationsordner] \crx-repository\repository
-   * [AEM Installationsordner] \crx-repository\launchpad
+   * [AEM Installationsordner]\crx-repository\temp
+   * [AEM Installationsordner]\crx-repository\repository
+   * [AEM Installationsordner]\crx-repository\launchpad
 
 * Temporärer Ordner des Anwendungsservers. Der Standardspeicherort lautet:
 
@@ -167,14 +166,13 @@ Um die Leistung zu verbessern, können Sie die Antivirensoftware anweisen, die f
 
 * **(Nur AEM Forms unter JEE),** AEM Forms-Serverprotokolle und temporäres Verzeichnis. Der Standardspeicherort lautet:
 
-   * Serverprotokolle - [AEM Forms-Installationsordner]\Adobe\AEM forms\[Anwendungsserver]\server\all\logs
+   * Serverprotokolle - [AEM Forms-Installationsordner]\Adobe\AEM forms\[app-server]\server\all\logs
    * Temporärer Ordner - [AEM Forms-Installationsordner]\temp
 
 >[!NOTE]
 >
->* Wenn Sie einen anderen Speicherort für den globalen Dokumentenspeicher und den temporären Ordner verwenden, öffnen Sie AdminUI unter `https://'[server]:[port]'/adminui`, navigieren Sie zu **Startseite > Einstellungen > Core-Systemeinstellungen > Core-Konfigurationen**, um den verwendeten Speicherort zu bestätigen.
+>* Wenn Sie einen anderen Speicherort für den globalen Dokumentenspeicher und den temporären Ordner verwenden, öffnen Sie die AdminUI unter `https://'[server]:[port]'/adminui`, navigieren Sie zu **Startseite > Einstellungen > Core-Systemeinstellungen > Core-Konfigurationen**, um den verwendeten Speicherort zu bestätigen.
 
-* Wenn der AEM Forms-Server selbst nach dem Ausschluss der vorgeschlagenen Ordner langsam arbeitet, schließen Sie auch die ausführbare Java-Datei (java.exe) aus.
-
+* Wenn der AEM Forms-Server auch nach dem Ausschließen der vorgeschlagenen Verzeichnisse langsam funktioniert, schließen Sie auch die ausführbare Java-Datei (java.exe) aus.
 
 
