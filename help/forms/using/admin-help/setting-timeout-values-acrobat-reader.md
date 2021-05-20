@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a9aeeb89-45e9-4d5d-aa25-8145c89b64f2
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 0a55aab3-14a3-41ad-8533-dc2cd116a848
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 85%
 
 ---
-
 
 # Zeitlimitwerte zur Verwendung mit Acrobat Reader DC Extensions festlegen  {#setting-timeout-values-for-use-with-acrobat-reader-dc-extensions}
 
@@ -34,4 +33,4 @@ Dieser Wert kann in Administration Console festgelegt werden. Wählen Sie „Ein
 
 Speichern Sie die Datei „config.xml“ und importieren Sie sie wieder zurück in Administration Console.
 
-**Sitzungszeitlimit des Anwendungsservers:** Dieser Wert kann auf dem Anwendungsserver festgelegt werden. Weitere Informationen finden Sie in der Dokumentation des entsprechenden Anwendungsservers.
+**Sitzungs-Timeout des Anwendungsservers:** Dieser Wert kann auf dem Anwendungsserver festgelegt werden. Weitere Informationen finden Sie in der Dokumentation des entsprechenden Anwendungsservers.
