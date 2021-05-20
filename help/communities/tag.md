@@ -1,6 +1,6 @@
 ---
-title: Tag Essentials
-seo-title: Tag Essentials
+title: Tag-Grundlagen
+seo-title: Tag-Grundlagen
 description: Tag-Übersicht
 seo-description: Tag-Übersicht
 uuid: a5d52319-f821-4608-b0ab-abc8a1374343
@@ -9,30 +9,29 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
-translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+exl-id: 6e8af8cf-1239-46f9-b2fe-4aa80abc86ea
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 4%
 
 ---
 
+# Tag-Grundlagen {#tag-essentials}
 
-# Tag Essentials {#tag-essentials}
+Wenn AEM Communities-Komponenten mit aktiviertem Tagging konfiguriert sind, können Community-Mitglieder den Inhalt taggen, den sie in der Veröffentlichungsumgebung posten.
 
-Wenn AEM Communities-Komponenten mit aktiviertem Tagging konfiguriert sind, können Community-Mitglieder den Inhalt taggen, den sie in der Umgebung veröffentlichen veröffentlichen.
+Die zugrunde liegende Infrastruktur für Tags, die in der Veröffentlichungsumgebung angewendet werden, entspricht der für Tags, die in der Autorenumgebung auf Inhalte angewendet werden, wie z. B. Seiten und Assets:
 
-Die zugrunde liegende Infrastruktur für Tags, die in der Umgebung &quot;Veröffentlichen&quot;angewendet werden, ist die gleiche wie für Tags, die in der Autoreninhalt-Umgebung angewendet werden, wie z. B. Seiten und Assets:
+* Informationen zum Erstellen und Verwalten von Tags finden Sie unter [Verwalten von Tags](../../help/sites-administering/tags.md) und [Tagging benutzergenerierter Inhalte](tag-ugc.md) (UGC).
 
-* Informationen zum Erstellen und Verwalten von Tags finden Sie unter [Verwalten von Tags](../../help/sites-administering/tags.md) und [Tagging von benutzergenerierten Inhalten](tag-ugc.md) (UGC).
+* Informationen zum [Tagging-Framework](../../help/sites-developing/framework.md) sowie zum Einschließen und Erweitern von Tags in [benutzerdefinierten Anwendungen](../../help/sites-developing/building.md) finden Sie unter ](../../help/sites-developing/tags.md) .[
 
-* Weitere Informationen zum [Tagging-Framework](../../help/sites-developing/framework.md) sowie zum Einschließen und Erweitern von Tags in [benutzerdefinierten Anwendungen](../../help/sites-developing/building.md) finden Sie unter [Tagging für Entwickler](../../help/sites-developing/tags.md).
+* Informationen für Autoren zum Hinzufügen einer `social tag cloud`-Komponente zu einer Seite finden Sie unter [Verwenden der Social Tag Cloud](tagcloud.md) , um die auf UGC angewandten Tags in der Veröffentlichungsumgebung hervorzuheben.
 
-* Unter [Verwenden der Social Tag Cloud](tagcloud.md) finden Sie Informationen für Autoren dazu, wie Sie einer Seite eine `social tag cloud`-Komponente hinzufügen können, um die Tags hervorzuheben, die in der Umgebung &quot;Veröffentlichen&quot;auf UGC angewendet wurden.
+* Informationen zum Tagging von Ressourcen für Kataloge finden Sie unter [Tagging von Aktivierungsressourcen](tag-resources.md) .
 
-* Informationen zum Tagging von Ressourcen für Kataloge finden Sie unter [Tagging-Aktivierungsressourcen](tag-resources.md).
-
-Das Tagging von UGC kann aktiviert werden, wenn eine [Community-Site](sites-console.md#tagging) oder eine der folgenden Funktionen konfiguriert wird:
+Das Tagging von UGC kann beim Konfigurieren einer [Community-Site](sites-console.md#tagging) oder einer der folgenden Funktionen aktiviert werden:
 
 * [Blog](blog-feature.md)
 * [Kalender](calendar.md)
@@ -40,7 +39,7 @@ Das Tagging von UGC kann aktiviert werden, wenn eine [Community-Site](sites-cons
 * [Forum](forum.md)
 * [Frage und Antwort](working-with-qna.md)
 
-## Grundlagen für clientseitige {#essentials-for-client-side}
+## Grundlagen für Client-seitige {#essentials-for-client-side}
 
 ### Social-Tag-Cloud {#social-tag-cloud}
 
@@ -51,7 +50,7 @@ Das Tagging von UGC kann aktiviert werden, wenn eine [Community-Site](sites-cons
    <td>social/commons/components/hbs/tagcloud</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließbar</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließen</strong></a></td>
    <td>Nein</td>
   </tr>
   <tr>
@@ -79,7 +78,7 @@ Das Tagging von UGC kann aktiviert werden, wenn eine [Community-Site](sites-cons
 
 * [Social Tag Cloud-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
 
-* [Social Tag-Manager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
+* [Social Tag Manager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
 
 * [Serverseitige Anpassungen](server-customize.md)
 
