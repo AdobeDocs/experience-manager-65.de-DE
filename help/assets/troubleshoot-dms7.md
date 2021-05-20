@@ -1,6 +1,6 @@
 ---
 title: Fehlerbehebung bei Dynamic Media - Scene7-Modus
-description: Fehlerbehebung für Dynamic Media, wenn es im Scene7-Modus ausgeführt wird.
+description: Fehlerbehebung für Dynamic Media im Scene7-Modus.
 uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,8 +10,7 @@ discoiquuid: 0d48c031-d3ee-4143-b739-a79ba28fd63a
 docset: aem65
 role: Business Practitioner, Administrator
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
-feature: Troubleshooting
-translation-type: tm+mt
+feature: Fehlerbehebung
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
 source-wordcount: '1286'
@@ -27,14 +26,14 @@ Das folgende Dokument beschreibt das Beheben von Fehlern mit Dynamic Media im Au
 
 Stellen Sie sicher, dass Dynamic Media korrekt eingerichtet wurde, indem Sie folgende Schritte ausführen:
 
-* Beginn-up-Befehl enthält das Argument `-r dynamicmedia_scene7` runmode.
+* Der Befehl &quot;Start&quot;enthält das Argument `-r dynamicmedia_scene7` runmode .
 * Alle Cumulative Fix Packs für AEM 6.4 wurden *vor* den verfügbaren Feature Packs für Dynamic Media installiert.
 * Das optionale Feature Pack 18912 wurde installiert.
 
-   Dieses optionale Feature Pack dient zum FTP-Support oder wenn Sie Assets von Dynamic Media Classic nach Dynamic Media migrieren.
+   Dieses optionale Feature Pack ist für die FTP-Unterstützung oder für die Migration von Assets von Dynamic Media Classic zu Dynamic Media vorgesehen.
 
-* Navigieren Sie zur Benutzeroberfläche &quot;Cloud Services&quot;und bestätigen Sie, dass das bereitgestellte Konto unter **[!UICONTROL Verfügbare Konfigurationen angezeigt wird.]**
-* Stellen Sie sicher, dass der Replizierungsagenten `Dynamic Media Asset Activation (scene7)` aktiviert ist.
+* Navigieren Sie zur Cloud Services-Benutzeroberfläche und bestätigen Sie, dass das bereitgestellte Konto unter **[!UICONTROL Verfügbare Konfigurationen angezeigt wird.]**
+* Stellen Sie sicher, dass der Replikationsagent `Dynamic Media Asset Activation (scene7)` aktiviert ist.
 
    Diesen Replizierungsagent finden Sie unter „Agenten für Autor“.
 
@@ -176,7 +175,7 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
     </ul> </td>
    <td>
     <ol>
-     <li>Überprüfen Sie Ihre AEM mit <code>-r dynamicmedia_scene7</code></li>
+     <li>Überprüfen Sie Ihre AEM-Instanz mit <code>-r dynamicmedia_scene7</code></li>
      <li>Prüfen Sie, ob die Dynamic Media-Konfiguration unter Cloud Services ordnungsgemäß eingerichtet ist.</li>
      <li>Überprüfen Sie, ob der Ordner ein Videoprofil hat. Überprüfen Sie außerdem das Videoprofil.</li>
     </ol> </td>
