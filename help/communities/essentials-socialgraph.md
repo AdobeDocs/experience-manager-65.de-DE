@@ -1,32 +1,31 @@
 ---
-title: Grundlagen zu Social-Diagrammen
-seo-title: Grundlagen zu Social-Diagrammen
-description: Folgen Sie der Komponente und der folgenden Komponentenübersicht
-seo-description: Folgen Sie der Komponente und der folgenden Komponentenübersicht
+title: Grundlagen zum Social-Diagramm
+seo-title: Grundlagen zum Social-Diagramm
+description: Folgt der Komponente und der folgenden Komponentenübersicht
+seo-description: Folgt der Komponente und der folgenden Komponentenübersicht
 uuid: 8ea33760-62b1-4de2-b07f-bc2417ade156
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: f8d85d72-0215-4680-a334-e37a530fba58
-translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+exl-id: c037a788-c943-4f95-a028-1fcb0ef48f86
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 13%
 
 ---
 
-
 # Grundlagen zu Social-Diagrammen {#social-graph-essentials}
 
-Die Fähigkeit eines Community-Mitglieds, [Aktivitäten](essentials-activities.md) zu befolgen, wird durch zwei Komponenten ermittelt:
+Die Möglichkeit, dass ein Community-Mitglied [Aktivitäten](essentials-activities.md) folgt und ihnen folgt, wird durch zwei Komponenten festgelegt:
 
-Die `following`-Komponente muss mit einer anderen Ressource verknüpft sein. Diese Zuordnung ist bereits für bestehende Communities-Mitglieder und -Funktionen auf einer [Community-Site](overview.md#communitiessites) eingerichtet.
+Die Komponente `following` muss mit einer anderen Ressource verknüpft sein. Diese Zuordnung ist bereits für bestehende Community-Mitglieder und -Funktionen auf einer [Community-Site](overview.md#communitiessites) eingerichtet.
 
-Die `following`-Komponente Liste die Member, die dem aktuellen Member folgen oder denen das aktuelle Member folgt. Dieses Sozialdiagramm der Mitgliederbeziehungen untereinander ist Teil des Benutzerprofils, das für eine Community-Site bereitgestellt wird.
+Die Komponente `following` listet die Mitglieder auf, die dem aktuellen Mitglied folgen oder dem aktuellen Mitglied folgen. Dieses Sozialdiagramm der Mitgliederbeziehungen untereinander ist Teil des Benutzerprofils, das für eine Community-Site bereitgestellt wird.
 
-## Grundlagen für clientseitige {#essentials-for-client-side}
+## Grundlagen für Client-seitige {#essentials-for-client-side}
 
 ### Folgende {#following}
 
@@ -37,7 +36,7 @@ Die `following`-Komponente Liste die Member, die dem aktuellen Member folgen ode
    <td>social/socialgraph/components/hbs/relations</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließbar</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließen</strong></a></td>
    <td>Nein</td>
   </tr>
   <tr>
@@ -54,20 +53,20 @@ Die `following`-Komponente Liste die Member, die dem aktuellen Member folgen ode
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Siehe <a href="socialgraph.md">Soziales Diagramm verwenden</a></td>
+   <td>Siehe <a href="socialgraph.md">Verwenden von Social Graph</a></td>
   </tr>
   <tr>
-   <td><strong> optional<br />-Eigenschaft</strong></td>
+   <td><strong> optional<br /> Eigenschaft</strong></td>
    <td>
     <ul>
      <li>Name: <strong><code>outgoing</code></strong></li>
      <li>Typ: Boolesch</li>
      <li>Wert:<br />
       <ul>
-       <li><i>True  </i>- Die  <code>following</code> Komponente Liste die Mitglieder, die das derzeit angemeldete Mitglied sind. <code>follows</code></li>
-       <li><i>FALSE  </i>- Die  <code>following</code> Komponente Liste die Mitglieder,  <code>follow </code>die derzeit angemeldet sind.</li>
+       <li><i>True  </i>- Die  <code>following</code> Komponente listet die Mitglieder auf, die das derzeit angemeldete Mitglied sind <code>follows</code></li>
+       <li><i>Falsch  </i>- Die  <code>following</code> Komponente listet die Mitglieder auf,  <code>follow </code>die das derzeit angemeldete Mitglied sind</li>
       </ul> </li>
-    </ul> <p>Die Standardeinstellung ist <i>true</i>, wenn die Eigenschaft fehlt. Derzeit ist es nicht möglich, diese Eigenschaft im Bearbeitungsdialogfeld im Autorenmodus festzulegen. Die Eigenschaft muss mit <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a> einer Instanz des Knotens hinzugefügt werden.<code>following </code></p> </td>
+    </ul> <p>Die Standardeinstellung ist <i>true</i> , wenn die Eigenschaft fehlt. Derzeit ist es nicht möglich, diese Eigenschaft im Bearbeitungsdialogfeld im Autorenmodus festzulegen. Die Eigenschaft muss einer Instanz des Knotens <code>following </code>hinzugefügt werden, indem <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a> verwendet wird.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -76,7 +75,7 @@ Die `following`-Komponente Liste die Member, die dem aktuellen Member folgen ode
 
 | **resourceType** | `social/socialgraph/components/hbs/following` |
 |---|---|
-| [**einschließbar**](scf.md#add-or-include-a-communities-component) | Nein |
+| [**einschließen**](scf.md#add-or-include-a-communities-component) | Nein |
 | **templates** | `/libs/social/socialgraph/components/hbs/following/following.hbs` |
 | **css** | `/libs/social/socialgraph/components/hbs/following/clientlibs/following.css` |
 
@@ -89,4 +88,3 @@ Die `following`-Komponente Liste die Member, die dem aktuellen Member folgen ode
 * [Social Graph-Endpunkte](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
 
 * [Serverseitige Anpassungen](server-customize.md)
-
