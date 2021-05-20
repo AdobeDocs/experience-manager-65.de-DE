@@ -9,16 +9,15 @@ content-type: reference
 discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
-feature: Viewer Presets
+feature: Viewer-Vorgaben
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '4340'
+source-wordcount: '4337'
 ht-degree: 95%
 
 ---
-
 
 # Verwalten von Viewer-Vorgaben {#managing-viewer-presets}
 
@@ -29,7 +28,7 @@ Anweisungen zum Erstellen und Anpassen Ihrer eigenen HTML5-Viewer-Vorgaben finde
 Pfad: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
 Beispiel: 3.10 SDK: [https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
 
-Siehe auch das Dynamic Media Viewer-Referenzhandbuch [Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=de).
+Weitere Informationen finden Sie im [Adobe Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=de).
 
 In diesem Abschnitt wird beschrieben, wie Viewer-Vorgaben erstellt, bearbeitet und verwaltet werden. Sie können jederzeit bei der Vorschau eines Assets eine Viewer-Vorgabe darauf anwenden. Siehe [Anwenden von Viewer-Vorgaben](#applying-a-viewer-preset-to-an-asset).
 
@@ -45,7 +44,7 @@ Weitere Informationen finden Sie unter [Tastaturzugriff und Navigation](https://
 
 ## Verwalten von Viewer-Vorgaben {#managing-viewer-presets-1}
 
-Sie können Viewer-Vorgaben in AEM hinzufügen, bearbeiten, löschen, veröffentlichen, veröffentlichen und die Veröffentlichung rückgängig machen, indem Sie auf **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Assets > Viewer-Vorgaben tippen.]**
+Sie können Viewer-Vorgaben in AEM hinzufügen, bearbeiten, löschen, veröffentlichen, Veröffentlichung rückgängig machen und eine Vorschau davon anzeigen, indem Sie auf **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Assets > Viewer-Vorgaben tippen.]**
 
 ![6_5_tools-assets-viewerpresets](assets/6_5_tools-assets-viewerpresets.png)
 
@@ -57,7 +56,7 @@ Sie können Viewer-Vorgaben in AEM hinzufügen, bearbeiten, löschen, veröffent
 
 Unterschiedliche Web-Seiten haben unterschiedliche Anforderungen. Mitunter möchten Sie vielleicht, dass eine Web-Seite über einen Link verfügt, der den HTML5-Viewer in einem separaten Browser-Fenster öffnet. In anderen Fällen kann es aber auch erforderlich sein, den HTML5-Viewer direkt auf der Host-Seite einzubetten. In letzterem Fall kann die Web-Seite ein statisches Layout aufweisen. Oder sie kann „responsiv“ sein und auf verschiedenen Geräten oder bei verschieden großen Browser-Fenstern anders angezeigt werden. Um all diese Anforderungen zu berücksichtigen, unterstützen sämtliche vordefinierten, standardmäßig vorhandenen HTML5-Viewer, die mit Dynamic Media bereitgestellt werden, sowohl statische als auch responsive Web-Seiten.
 
-Weitere Informationen zum Einbetten von interaktiven Viewern in Ihre Webseiten finden Sie unter [Bibliothek für responsive Bilder](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html?lang=de).
+Weitere Informationen zum Einbetten responsiver Viewer auf Webseiten finden Sie unter [Bibliothek responsiver Bilder](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html?lang=de) in der .
 
 >[!NOTE]
 >
@@ -199,7 +198,7 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>Dimensional</td>
-   <td>Abmessungen</td>
+   <td>Dimensional</td>
    <td><code>html5_dimensionalviewer.css</code></td>
   </tr>
   <tr>
@@ -224,7 +223,7 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>InlineMixedMedia_light</td>
-   <td>Mixed_Media</td>
+   <td>Gemischte Medien</td>
    <td><code>html5_inlinemixedmediaviewer_light.css</code></td>
   </tr>
   <tr>
@@ -234,12 +233,12 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>MixedMedia_dark</td>
-   <td>Mixed_Media</td>
+   <td>Gemischte Medien</td>
    <td><code>html5_mixedmediaviewer_dark.css</code></td>
   </tr>
   <tr>
    <td>MixedMedia_light</td>
-   <td>Mixed_Media</td>
+   <td>Gemischte Medien</td>
    <td><code>html5_mixedmediaviewer_light.css</code></td>
   </tr>
   <tr>
@@ -249,7 +248,7 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>PanoramicImageVR</td>
-   <td>Panoramic_Image</td>
+   <td>panoramic_image</td>
    <td><code>html5_panoramicimage.css</code></td>
   </tr>
   <tr>
@@ -324,7 +323,7 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>ZoomVertical_light</td>
-   <td>Vertikal_Zoom</td>
+   <td>Vertikaler_Zoom</td>
    <td><code>html5_zoomverticalviewer_light.css</code></td>
   </tr>
  </tbody>
@@ -425,7 +424,7 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 
 1. Tippen Sie auf der Seite „Viewer-Vorgaben“ in der Symbolleiste auf **[!UICONTROL Erstellen.]**
-1. Geben Sie im Dialogfeld **[!UICONTROL Neue Viewer-Vorgabe]** im Feld **[!UICONTROL Vorgabenname]** den Namen der neuen Vorgabe ein. Wählen Sie einen Namen sorgfältig aus. Sie können nach dem Tippen auf **[!UICONTROL Erstellen nicht bearbeitet werden.]**
+1. Geben Sie im Dialogfeld **[!UICONTROL Neue Viewer-Vorgabe]** im Feld **[!UICONTROL Vorgabenname]** den Namen der neuen Vorgabe ein. Wählen Sie einen Namen sorgfältig aus. Er kann nach dem Tippen auf **[!UICONTROL Erstellen nicht bearbeitet werden.]**
 
    Wenn Sie die Vorgabe an späterer Stelle in diesen Schritten speichern, wird der Name auf der Seite „Viewer-Vorgaben“ unter der Spaltenüberschrift „Vorgabentitel“ angezeigt.
 
@@ -480,7 +479,7 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
 
 **Wissenswertes über Anzeigemodi für Bildminiaturansichten im Anzeigefeld**
 
-Wenn Sie eine interaktive Video-Viewer-Vorgabe erstellen oder bearbeiten, können Sie festlegen, welcher Anzeigemodus verwendet werden soll, wenn Sie `InteractiveSwatches` aus dem Pulldown-Menü **[!UICONTROL Ausgewählte Komponente]** unter der Registerkarte **[!UICONTROL Verhalten]** auswählen. Der von Ihnen gewählte Anzeigemodus beeinflusst, wie und wann Miniaturansichten während der Videowiedergabe angezeigt werden.  Sie können entweder den Anzeigemodus `segment`oder den Anzeigemodus `continuous` wählen.
+Wenn Sie eine Viewer-Vorgabe für interaktive Videos erstellen oder bearbeiten, können Sie festlegen, welcher Anzeigemodus verwendet werden soll, wenn Sie `InteractiveSwatches` aus dem Pulldown-Menü **[!UICONTROL Ausgewählte Komponente]** unter der Registerkarte **[!UICONTROL Verhalten]** auswählen. Der von Ihnen gewählte Anzeigemodus beeinflusst, wie und wann Miniaturansichten während der Videowiedergabe angezeigt werden.  Sie können entweder einen `segment`Anzeigemodus (Standard) oder einen `continuous` Anzeigemodus wählen.
 
 <table>
  <tbody>
@@ -604,7 +603,7 @@ Wenn Sie das Asset und den ausgewählten Viewer bereits veröffentlicht haben, w
 
 **So wenden Sie eine Viewer-Vorgabe auf ein Asset an**
 
-1. Öffnen Sie das Asset und klicken Sie in der oberen linken Ecke der Seite auf das Dropdown-Menü und wählen Sie **[!UICONTROL Viewer.]**
+1. Öffnen Sie das Asset, tippen Sie oben links auf der Seite auf das Dropdown-Menü und wählen Sie **[!UICONTROL Viewer.]** aus.
 
    >[!NOTE]
    >
