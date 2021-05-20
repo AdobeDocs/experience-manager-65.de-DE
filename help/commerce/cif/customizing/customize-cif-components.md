@@ -10,7 +10,6 @@ audience: developer
 feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
-translation-type: tm+mt
 source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '2541'
@@ -26,7 +25,7 @@ Das [CIF-Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) ist eine 
 >
 > Verwenden Sie den [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype), wenn Sie Ihre eigene Commerce-Implementierung starten.
 
-## Build
+## Was Sie erstellen werden
 
 Die Marke Venia hat vor kurzem begonnen, Produkte mit nachhaltigen Materialien zu produzieren, und das Unternehmen möchte als Teil des Produkt-Teasers ein Zeichen für **Umweltfreundlich** anzeigen. In Magento wird ein neues benutzerspezifisches Attribut erstellt, um anzugeben, ob ein Produkt das **umweltfreundliche** Material verwendet. Dieses benutzerspezifische Attribut wird dann als Teil der GraphQL-Abfrage hinzugefügt und im Produkt-Teaser bei bestimmten Produkten angezeigt.
 
@@ -61,7 +60,7 @@ Wir werden das [Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) kl
 
 1. Fügen Sie die erforderlichen OSGi-Konfigurationen hinzu, um Ihre AEM-Instanz mit einer Magento-Instanz zu verbinden, oder fügen Sie die Konfigurationen dem neu erstellten Projekt hinzu.
 
-1. An dieser Stelle sollten Sie über eine funktionierende Version eines Stores verfügen, der mit einer Magento-Instanz verbunden ist. Navigieren Sie zur Seite `US` > `Home` unter: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. An dieser Stelle sollten Sie über eine funktionierende Version einer Storefront verfügen, die mit einer Magento-Instanz verbunden ist. Navigieren Sie zur Seite `US` > `Home` unter: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
    Sie sollten sehen, dass die Storefront derzeit im Venia-Design erscheint. Wenn Sie das Hauptmenü der Storefront erweitern, sollten verschiedene Kategorien angezeigt werden, was darauf hinweist, dass die Verbindung mit Magento funktioniert.
 
@@ -89,7 +88,7 @@ Die Komponente Produkt-Teaser wird im Laufe dieses Tutorials erweitert. Als erst
 
    ![Produkt-Teaser – Standardstil](../assets/customize-cif-components/product-teaser-default-style.png)
 
-## hinzufügen eines benutzerdefinierten Attributs in Magento {#add-custom-attribute}
+## Hinzufügen eines benutzerdefinierten Attributs in Magento {#add-custom-attribute}
 
 Die in AEM angezeigten Produkte und Produktdaten werden in Magento gespeichert. Als Nächstes fügen Sie als Teil des Produktattributs, das mithilfe der Magento-Benutzeroberfläche definiert wird, ein neues Attribut für **Umweltfreundlich** hinzu.
 
@@ -135,7 +134,7 @@ Die in AEM angezeigten Produkte und Produktdaten werden in Magento gespeichert. 
    >
    > Weitere Informationen zur [Cache-Verwaltung finden Sie im Magento-Benutzerhandbuch](https://docs.magento.com/user-guide/system/cache-management.html).
 
-## GraphQL IDE verwenden, um Attribut {#use-graphql-ide} zu überprüfen
+## GraphQL-IDE zur Überprüfung von Attribut {#use-graphql-ide} verwenden
 
 Bevor Sie mit dem AEM-Code anfangen, sollten Sie [Magento GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) mit einer GraphQL-IDE erkunden. Die Magento-Integration mit AEM erfolgt hauptsächlich über eine Reihe von GraphQL-Abfragen. Das Verstehen und Ändern der GraphQL-Abfragen ist eine der wichtigsten Methoden zum Erweitern der CIF-Kernkomponenten.
 
@@ -261,7 +260,7 @@ Verwenden Sie [eine IDE Ihrer Wahl](https://docs.adobe.com/content/help/de-DE/ex
 
    Die `@PostConstruct`-Anmerkung stellt sicher, dass diese Methode aufgerufen wird, sobald das Sling-Modell initialisiert wurde.
 
-   Beachten Sie, dass die GraphQL-Abfrage des Produkts bereits mit der `extendProductQueryWith`-Methode erweitert wurde, um das zusätzliche `created_at`-Attribut abzurufen. Dieses Attribut wird später als Teil der `isShowBadge()`-Methode verwendet.
+   Beachten Sie, dass die GraphQL-Abfrage des Produkts bereits mit der `extendProductQueryWith` -Methode erweitert wurde, um das zusätzliche `created_at` -Attribut abzurufen. Dieses Attribut wird später als Teil der `isShowBadge()`-Methode verwendet.
 
 1. Aktualisieren Sie die GraphQL-Abfrage, um das `eco_friendly`-Attribut in die partielle Abfrage einzuschließen:
 
@@ -326,11 +325,11 @@ Verwenden Sie [eine IDE Ihrer Wahl](https://docs.adobe.com/content/help/de-DE/ex
    }
    ```
 
-   Bei der obigen Methode wird `productRetriever` zum Abrufen des Produkts verwendet, und die `getAsInteger()`-Methode wird verwendet, um den Wert des `eco_friendly`-Attributs abzurufen. Dank der GraphQL-Abfragen, die wir zuvor ausgeführt haben, wissen wir, dass der erwartete Wert, wenn das `eco_friendly`-Attribut auf „**Ja**“ gesetzt ist, eigentlich eine Ganzzahl von **1** ist.
+   In der obigen Methode wird `productRetriever` zum Abrufen des Produkts verwendet und die `getAsInteger()`-Methode wird verwendet, um den Wert des Attributs `eco_friendly` abzurufen. Dank der GraphQL-Abfragen, die wir zuvor ausgeführt haben, wissen wir, dass der erwartete Wert, wenn das `eco_friendly`-Attribut auf „**Ja**“ gesetzt ist, eigentlich eine Ganzzahl von **1** ist.
 
    Nachdem das Sling-Modell aktualisiert wurde, muss das Komponenten-Markup aktualisiert werden, um basierend auf dem Sling-Modell ein Zeichen für **Umweltfreundlich** anzuzeigen.
 
-## Anpassen der Markup-Funktion des Produkt-Teasers {#customize-markup-product-teaser}
+## Anpassen des Markups des Produkt-Teasers {#customize-markup-product-teaser}
 
 Eine gebräuchliche Erweiterung von AEM-Komponenten besteht darin, das von der Komponente erstellte Markup zu ändern. Dies geschieht durch Überschreiben des [HTL-Skripts](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html), das die Komponente zum Rendern des Markups verwendet. HTML Template Language (HTL) ist eine einfache Vorlagensprache, die AEM-Komponenten nutzen, um Markup basierend auf erstellten Inhalten dynamisch zu rendern, sodass sich die Komponenten wiederverwenden lassen. So kann z. B. der Produkt-Teaser immer wieder neu verwendet werden, um verschiedene Produkte anzuzeigen.
 
@@ -430,7 +429,7 @@ In unserem Fall möchten wir ein Banner auf dem Teaser rendern, um anhand eines 
    >
    > Es können auch Stapelspuren angezeigt werden, wenn das im Teaser verwendete Produkt als Teil seines Attributsatzes nicht über das `eco_friendly`-Attribut verfügt.
 
-## hinzufügen Stile für das Eco Friendly Badge {#add-styles}
+## Stile für das Zeichen &quot;Umweltfreundlich&quot; {#add-styles} hinzufügen
 
 An diesem Punkt funktioniert die Logik dafür, wann das Zeichen **Umweltfreundlich** angezeigt werden soll, bereits, der Text könnte aber noch mehr Stil vertragen. Fügen Sie dem `ui.frontend`-Modul als Nächstes ein Symbol und Stile hinzu, um die Implementierung abzuschließen.
 
@@ -482,13 +481,13 @@ An diesem Punkt funktioniert die Logik dafür, wann das Zeichen **Umweltfreundli
 
    ![Abzeichen für „Umweltfreundlich“ – endgültige Implementierung](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
-## Herzlichen Glückwunsch! {#congratulations}
+## Herzlichen Glückwunsch {#congratulations}
 
 Sie haben gerade Ihre erste AEM CIF-Komponente angepasst. Laden Sie die [fertigen Lösungsdateien hier](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip) herunter.
 
 ## Bonusaufgabe {#bonus-challenge}
 
-Überprüfen Sie die Funktionalität des Kennzeichens **Neu**, das bereits im Product Teaser implementiert wurde. Versuchen Sie, ein zusätzliches Kontrollkästchen hinzuzufügen, damit Autoren steuern können, wann das **Umweltfreundlich**-Zeichen angezeigt werden soll. Sie müssen das Komponentendialogfeld unter `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml` aktualisieren.
+Überprüfen Sie die Funktionalität des Zeichens **Neu** , das bereits im Produkt-Teaser implementiert wurde. Versuchen Sie, ein zusätzliches Kontrollkästchen hinzuzufügen, damit Autoren steuern können, wann das **Umweltfreundlich**-Zeichen angezeigt werden soll. Sie müssen das Komponentendialogfeld unter `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml` aktualisieren.
 
 ![Aufgabe zur Implementierung neuer Abzeichen](../assets/customize-cif-components/new-badge-implementation-challenge.png)
 
