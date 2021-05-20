@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 44dec184-3ef7-4ba6-a87f-ad171d3cb188
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 34ac5f8b-f209-4f99-ad71-4df6f2c88c1e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 100%
 
 ---
-
 
 # Bestehende Domänen bearbeiten und konvertieren{#editing-and-converting-existing-domains}
 
@@ -50,4 +49,3 @@ Sie können auf der Seite „Domänenverwaltung“ die Einstellungen für besteh
 1. Klicken Sie auf In Unternehmensdomäne konvertieren.
 1. Überprüfen Sie die zu Benutzern und Gruppen und zur Benutzerauthentifizierung angezeigten Informationen und klicken Sie auf „OK“.
 1. Klicken Sie auf „Verzeichnis hinzufügen“ und konfigurieren Sie die erforderlichen Ordnerinformationen. (Siehe [Ordner oder benutzerdefinierten SPIs hinzufügen](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis).)
-
