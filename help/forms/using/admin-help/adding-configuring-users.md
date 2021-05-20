@@ -7,14 +7,13 @@ uuid: fe650cdb-7d0d-4f38-9899-e5349559ed32
 contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
-translation-type: tm+mt
-source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1763'
 ht-degree: 74%
 
 ---
-
 
 # Benutzer hinzufügen und konfigurieren {#adding-and-configuring-users}
 
@@ -24,14 +23,14 @@ Benutzer- und Gruppeninformationen werden in einem Speichersystem von Drittanbie
 
 Beim Erstellen von Benutzern können Sie diese Gruppen hinzufügen und ihnen Rollen zuweisen.
 
-1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > User Management > Benutzer und Gruppen]** und dann auf **[!UICONTROL Neuer Benutzer]**.
+1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > User Management > Benutzer und Gruppen]** und klicken Sie auf **[!UICONTROL Neuer Benutzer]**.
 .
 1. Geben Sie unter **[!UICONTROL Allgemeine Einstellungen]** die erforderlichen Informationen ein und klicken Sie dann auf **[!UICONTROL Weiter]**. Informationen zu diesen Einstellungen finden Sie unter [Benutzereinstellungen](adding-configuring-users.md#user-settings).
 1. (Optional) Um den Benutzer einer Gruppe hinzuzufügen, klicken Sie auf **[!UICONTROL Gruppen suchen]** und führen Sie die folgenden Aufgaben aus:
 
-   * Geben Sie in das Feld **[!UICONTROL Suchen]** den gesamten oder einen Teil des Gruppennamen ein.
-   * Wählen Sie die zu durchsuchende Domäne, wählen Sie die Anzahl der anzuzeigenden Elemente aus und klicken Sie auf **[!UICONTROL Suchen]**.
-   * (Optional) Um Gruppendetails Ansicht, wählen Sie den Gruppennamen aus und klicken Sie dann auf **[!UICONTROL OK]**, um zur Suchergebnisseite zurückzukehren.
+   * Geben Sie in das Feld **[!UICONTROL Find]** den gesamten oder einen Teil des Gruppennamen ein.
+   * Wählen Sie die zu suchende Domäne aus, wählen Sie die Anzahl der anzuzeigenden Elemente aus und klicken Sie auf **[!UICONTROL Suchen]**.
+   * (Optional) Um Gruppendetails anzuzeigen, wählen Sie den Gruppennamen aus und klicken Sie dann auf **[!UICONTROL OK]**, um zur Suchergebnisseite zurückzukehren.
    * Aktivieren Sie das Kontrollkästchen für die Gruppe und klicken Sie auf **[!UICONTROL OK]**.
    * Klicken Sie auf **[!UICONTROL Weiter]**.
 
@@ -111,51 +110,51 @@ Vermeiden Sie das Erstellen von Benutzernamen, die mit einem Nummernzeichen begi
 ## Kennwörter für lokale Benutzer ändern  {#change-the-password-for-a-local-user}
 
 1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > User Management > Benutzer und Gruppen]**.
-1. Geben Sie Informationen ein, um die Suche nach einem bestimmten Benutzer einzuschränken, und klicken Sie auf **[!UICONTROL Suchen]**. Die Suchergebnisse werden im unteren Seitenbereich angezeigt. Sie können die Liste durch Klicken auf die Spaltenüberschriften sortieren.
+1. Geben Sie Informationen an, um die Suche für einen bestimmten Benutzer einzuschränken, und klicken Sie auf **[!UICONTROL Suchen]**. Die Suchergebnisse werden im unteren Seitenbereich angezeigt. Sie können die Liste durch Klicken auf die Spaltenüberschriften sortieren.
 1. Klicken Sie auf den Namen des Benutzers und dann auf **[!UICONTROL Kennwort ändern]**.
-1. Geben Sie das neue Kennwort ein und bestätigen Sie es und klicken Sie dann auf **[!UICONTROL OK]**. Das Kennwort muss mindestens acht Zeichen lang sein.
+1. Geben Sie das neue Kennwort ein, bestätigen Sie es und klicken Sie auf **[!UICONTROL OK]**. Das Kennwort muss mindestens acht Zeichen lang sein.
 
 ## Eigenschaften eines Benutzers bearbeiten  {#edit-a-user-s-properties}
 
 1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > User Management > Benutzer und Gruppen]**.
 1. Führen Sie zum Suchen des zu bearbeitenden Benutzers die folgenden Schritte aus:
 
-   * Geben Sie in das Feld **[!UICONTROL Suchen]** Ihre Suchkriterien ein.
-   * Wählen Sie in der Liste **[!UICONTROL Verwenden Sie]** die Optionen **[!UICONTROL Name]**, **[!UICONTROL E-Mail]** oder **[!UICONTROL Benutzer-ID]**.
-   * Wählen Sie unter **[!UICONTROL In Liste]** **[!UICONTROL Users]**.
-   * Wählen Sie die Domäne, die Anzahl der anzuzeigenden Elemente und klicken Sie dann auf **[!UICONTROL Suchen]**.
+   * Geben Sie im Feld **[!UICONTROL Find]** Ihre Suchkriterien ein.
+   * Wählen Sie in der Liste **[!UICONTROL Verwenden von]** **[!UICONTROL Name]**, **[!UICONTROL E-Mail]** oder **[!UICONTROL Benutzer-ID]**.
+   * Wählen Sie in der Liste **** **[!UICONTROL Benutzer]** aus.
+   * Wählen Sie die Domäne aus, wählen Sie die Anzahl der anzuzeigenden Elemente aus und klicken Sie auf **[!UICONTROL Suchen]**.
 
 1. Klicken Sie auf den zu bearbeitenden Benutzer.
-1. Bearbeiten Sie für einen Benutzer, der zu einer lokalen oder Hybriddomäne gehört, auf der Registerkarte **[!UICONTROL Detail]** die **[!UICONTROL Allgemeine Einstellungen]** und **[!UICONTROL Anmeldeeinstellungen]** und klicken Sie auf **[!UICONTROL Speichern]**. Informationen zu diesen Einstellungen finden Sie unter [Benutzereinstellungen](adding-configuring-users.md#user-settings). Die allgemeinen und Anmeldeeinstellungen von Benutzern, die zu einer Unternehmensdomäne gehören, können nicht bearbeitet werden.
-1. Um die Gruppeneinstellungen für den Benutzer zu bearbeiten, klicken Sie auf die Registerkarte **[!UICONTROL Gruppenmitgliedschaft]** und führen Sie die folgenden Aufgaben aus:
+1. Bearbeiten Sie für einen Benutzer, der Teil einer lokalen oder Hybriddomäne ist, auf der Registerkarte **[!UICONTROL Detail]** die **[!UICONTROL allgemeinen Einstellungen]** und **[!UICONTROL Anmeldeeinstellungen]** und klicken Sie auf **[!UICONTROL Speichern]**. Informationen zu diesen Einstellungen finden Sie unter [Benutzereinstellungen](adding-configuring-users.md#user-settings). Die allgemeinen und Anmeldeeinstellungen von Benutzern, die zu einer Unternehmensdomäne gehören, können nicht bearbeitet werden.
+1. Um die Gruppeneinstellungen für den Benutzer zu bearbeiten, klicken Sie auf den Tab **[!UICONTROL Gruppenmitgliedschaft]** und führen Sie die folgenden Aufgaben aus:
 
-   * Klicken Sie auf **[!UICONTROL Gruppe suchen]** und geben Sie die Suchinformationen ein.
-   * Um den Benutzer einer neuen Gruppe hinzuzufügen, aktivieren Sie das Kontrollkästchen der Gruppe, klicken Sie auf **[!UICONTROL OK]** und dann auf **[!UICONTROL Speichern]**.
+   * Klicken Sie auf **[!UICONTROL Gruppe suchen]** und füllen Sie die Suchinformationen aus.
+   * Um den Benutzer einer neuen Gruppe hinzuzufügen, aktivieren Sie das Kontrollkästchen für die Gruppe, klicken Sie auf **[!UICONTROL OK]** und klicken Sie dann auf **[!UICONTROL Speichern]**.
 
    >[!NOTE]
    >
    >Lokale Benutzer können keinen Ordnergruppen hinzugefügt werden. Ordnerbenutzer können jedoch lokalen Gruppen hinzugefügt werden.
 
-   * Um den Benutzer aus einer Gruppe zu entfernen, aktivieren Sie das Kontrollkästchen der Gruppe, klicken Sie auf **[!UICONTROL Löschen]** und dann auf **[!UICONTROL Speichern]**.
+   * Um den Benutzer aus einer Gruppe zu entfernen, aktivieren Sie das Kontrollkästchen für die Gruppe, klicken Sie auf **[!UICONTROL Löschen]** und klicken Sie dann auf **[!UICONTROL Speichern]**.
 
 
-1. Um die Benutzerrollen zu bearbeiten, klicken Sie auf die Registerkarte **[!UICONTROL Rollenzuweisungen]** und führen Sie die folgenden Aufgaben aus:
+1. Um die Benutzerrollen zu bearbeiten, klicken Sie auf die Registerkarte **[!UICONTROL Rollenzuweisungen]** und führen die folgenden Aufgaben aus:
 
-   * Um eine Liste von Rollen anzuzeigen, klicken Sie auf **[!UICONTROL Rollen suchen]**.
+   * Um eine Liste der Rollen anzuzeigen, klicken Sie auf **[!UICONTROL Rollen suchen]**.
    * Um eine Rolle hinzuzufügen, aktivieren Sie das Kontrollkästchen für die Rolle, klicken Sie auf **[!UICONTROL OK]** und dann auf **[!UICONTROL Speichern]**.
-   * Um eine Rolle zu entfernen, aktivieren Sie das Kontrollkästchen der Rolle, klicken Sie auf **[!UICONTROL Zuweisung aufheben]** und klicken Sie dann auf **[!UICONTROL Speichern]**.
+   * Um eine Rolle zu entfernen, aktivieren Sie das Kontrollkästchen für die Rolle, klicken Sie auf **[!UICONTROL Zuweisung aufheben]** und klicken Sie dann auf **[!UICONTROL Speichern]**.
 
 ## Benutzer löschen {#delete-a-user}
 
 1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > User Management > Benutzer und Gruppen]**.
 1. Führen Sie zum Suchen des zu löschenden Benutzers die folgenden Schritte aus:
 
-   * Geben Sie in das Feld **[!UICONTROL Suchen]** Ihre Suchkriterien ein.
-   * Wählen Sie in der Liste **[!UICONTROL Verwenden Sie]** die Optionen **[!UICONTROL Name]**, **[!UICONTROL E-Mail]** oder **[!UICONTROL Benutzer-ID]**.
-   * Wählen Sie unter **[!UICONTROL In Liste]** **[!UICONTROL Users]**.
-   * Wählen Sie die Domäne, die Anzahl der anzuzeigenden Elemente und klicken Sie dann auf **[!UICONTROL Suchen]**.
+   * Geben Sie im Feld **[!UICONTROL Find]** Ihre Suchkriterien ein.
+   * Wählen Sie in der Liste **[!UICONTROL Verwenden von]** **[!UICONTROL Name]**, **[!UICONTROL E-Mail]** oder **[!UICONTROL Benutzer-ID]**.
+   * Wählen Sie in der Liste **** **[!UICONTROL Benutzer]** aus.
+   * Wählen Sie die Domäne aus, wählen Sie die Anzahl der anzuzeigenden Elemente aus und klicken Sie auf **[!UICONTROL Suchen]**.
 
-1. Aktivieren Sie das Kontrollkästchen des Benutzers, klicken Sie auf **[!UICONTROL Löschen]** und dann auf **[!UICONTROL OK]**.
+1. Aktivieren Sie das Kontrollkästchen des Benutzers, klicken Sie auf **[!UICONTROL Löschen]** und klicken Sie dann auf **[!UICONTROL OK]**.
 
 >[!NOTE]
 >
