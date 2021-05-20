@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 5aa2fe48578633cbe5e4324f9e956e1dbbdab8af
+exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1533'
 ht-degree: 85%
 
 ---
-
 
 # Konfigurieren von Analytics und Berichten{#configuring-analytics-and-reports}
 
@@ -30,7 +29,7 @@ AEM Forms ermöglicht die Integration in Adobe Analytics, sodass Sie Leistungsme
 
 ## Überblick {#overview}
 
-Sie können Adobe Analytics verwenden, um Interaktionsmuster und Probleme von Benutzern bei der Verwendung adaptiver Formulare, HTML5-Formulare und interaktiver Kommunikation zu erkennen. Adobe Analytics ist so vorkonfiguriert, dass Informationen zu den folgenden Parametern nachverfolgt und gespeichert werden:
+Sie können Adobe Analytics verwenden, um Interaktionsmuster und Probleme zu ermitteln, die Benutzer bei der Verwendung adaptiver Formulare, HTML5-Formulare und interaktiver Kommunikation haben. Adobe Analytics ist so vorkonfiguriert, dass Informationen zu den folgenden Parametern nachverfolgt und gespeichert werden:
 
 * **Durchschnittliche Füllzeit**: Durchschnittliche Zeit für das Ausfüllen des Formulars.
 * **Ausgaben**: Angabe, wie oft ein Formular geöffnet wurde.
@@ -50,8 +49,8 @@ Analysedaten werden in kundenspezifischen Repositorys gespeichert, die als Repor
 
 Führen Sie die folgenden Schritte aus, um eine Report Suite zu erstellen: 
 
-1. Melden Sie sich bei [https://sc.omniture.com/login/](https://sc.omniture.com/login/) an
-1. Wählen Sie im Marketing Cloud **Admin** > **Admin Console** > **Report Suites**.
+1. Melden Sie sich bei [https://sc.omniture.com/login/](https://sc.omniture.com/login/) an.
+1. Wählen Sie im Marketing Cloud **Admin** > **Admin Console** > **Report Suites** aus.
 1. Wählen Sie im Report Suite-Manager **Neu erstellen** > **Report Suite.**
 
    ![Erstellen einer neuen Report Suite](assets/newreportsuite_new.png)
@@ -73,22 +72,22 @@ Führen Sie die folgenden Schritte aus, um eine Report Suite zu erstellen: 
 
    Allgemeine Kontoeinstellungen
 
-1. Aktivieren Sie im Bildschirm &quot;Allgemeine Kontoeinstellungen&quot;die Option **Geografischer Berichte** und klicken Sie auf **Speichern.**
+1. Aktivieren Sie im Bildschirm &quot;Allgemeine Kontoeinstellungen&quot;die Option **Geografische Berichterstellung** und klicken Sie auf **Speichern.**
 1. Navigieren Sie zu **Einstellungen bearbeiten** > **Traffic** > **Traffic-Variablen**.
 1. Konfigurieren und aktivieren Sie in der Report Suite die folgenden Traffic-Variablen.
 
    * **formName**: Bezeichner für ein adaptives Formular.
    * **formInstance**: Bezeichner einer Instanz eines adaptiven Formulars. Aktivieren Sie Pfadberichte für diese Variable.
-   * **fieldName**: Bezeichner eines adaptiven Formularfelds. Aktivieren Sie Pfadberichte für diese Variable.
-   * **panelName**: Bezeichner eines Bedienfelds für ein adaptives Formular. Aktivieren Sie Pfadberichte für diese Variable.
+   * **fieldName**: Kennung eines adaptiven Formularfelds. Aktivieren Sie Pfadberichte für diese Variable.
+   * **panelName**: Kennung eines Bereichs eines adaptiven Formulars. Aktivieren Sie Pfadberichte für diese Variable.
    * **formTitle**: Titel des Formulars.
    * **fieldTitle**: Titel des Formularfelds.
    * **panelTitle**: Titel des Formularbereichs.
    * **analyticsVersion**: Version der Formular-Analytics.
 
-1. Navigieren Sie zu **Einstellungen bearbeiten** > **Konversion** > **Erfolgserfolg-Ereignis**. Definieren und aktivieren Sie die folgenden Erfolgsereignisse:
+1. Navigieren Sie zu **Einstellungen bearbeiten** > **Konversion** > **Erfolgsereignisse**. Definieren und aktivieren Sie die folgenden Erfolgsereignisse:
 
-   | Erfolgs-Ereignis | Typ |
+   | Erfolgsereignis | Typ |
    |---|---|
    | abandon | Zähler |
    | render | Zähler |
@@ -102,7 +101,7 @@ Führen Sie die folgenden Schritte aus, um eine Report Suite zu erstellen: 
 
    >[!NOTE]
    >
-   >Die zur Konfiguration von AEM Forms Analytics verwendete Ereignis- und Prop-Nummer muss sich von der in der [AEM Analytics](/help/sites-administering/adobeanalytics.md)-Konfiguration verwendeten Ereignis- und Prop-Nummer unterscheiden.
+   >Eine Ereignisnummer und Eigenschaftsnummer, die zur Konfiguration der AEM Forms-Analyse verwendet werden, müssen sich von der Ereignisnummer und der Prop-Nummer unterscheiden, die in der [AEM Analytics](/help/sites-administering/adobeanalytics.md)-Konfiguration verwendet werden.
 
 1. Melden Sie sich bei Ihrem Adobe Marketing Cloud-Konto ab.
 
@@ -111,8 +110,8 @@ Führen Sie die folgenden Schritte aus, um eine Report Suite zu erstellen: 
 Bei einer Cloud-Service-Konfiguration handelt es sich um Informationen zu Ihrem Adobe Analytics-Konto. Anhand der Konfiguration kann Adobe Experience Manager (AEM) eine Verbindung zu Adobe Analytics herstellen. Erstellen Sie für jedes verwendete Analytics-Konto eine separate Konfiguration.
 
 1. Melden Sie sich bei Ihrer AEM-Autoreninstanz als Administrator an.
-1. Klicken Sie in der oberen linken Ecke auf **Adobe Experience Manager** > **Tools** ![](/help/forms/using/assets/tools.png) > **Cloud Services** > **Ältere Cloud Services**.
-1. Suchen Sie das Symbol **Adobe Analytics**. Klicken Sie auf **Konfigurationen anzeigen** und dann auf **[+]**, um eine neue Konfiguration hinzuzufügen.
+1. Klicken Sie oben links auf **Adobe Experience Manager** > **Tools** ![](/help/forms/using/assets/tools.png) > **Cloud Services** > **Alte Cloud Services**.
+1. Suchen Sie das Symbol **Adobe Analytics**. Klicken Sie auf **Konfigurationen anzeigen** und klicken Sie dann auf **[+]**, um eine neue Konfiguration hinzuzufügen.
 
    Wenn Sie ein Erstbenutzer sind, klicken Sie auf **Jetzt konfigurieren**.
 
@@ -122,7 +121,7 @@ Bei einer Cloud-Service-Konfiguration handelt es sich um Informationen zu Ihrem 
 
    * **Unternehmen**: Der Name Ihres Unternehmens, wie er in Adobe Analytics verwendet wird.
    * **Benutzername**: Der Name, den Sie für die Anmeldung bei Adobe Analytics verwenden.
-   * **Kennwort**: Das Adobe Analytics-Kennwort für das oben aufgeführte Konto.
+   * **Kennwort**: Das Adobe Analytics-Kennwort für das obige Konto.
    * **Rechenzentrum**: Das Rechenzentrum Ihres Adobe Analytics-Kontos.
 
 1. Klicken Sie auf **Verbindung zu Analytics herstellen**. In einem Dialogfeld wird bestätigt, dass die Verbindung erfolgreich hergestellt wurde. Klicken Sie auf **OK**.
@@ -165,12 +164,12 @@ Bei einem Adobe Analytics-Framework handelt es sich um eine Reihe von Zuordnunge
    * **SiteCatalyst-Framework**: Wählen Sie das Framework/die Konfiguration aus, das bzw. die Sie im Abschnitt „Einrichten eines Frameworks für die Verfolgung“ definiert haben.
    * **Verfolgungsgrundlinie der Feldzeit**: Legen Sie die Dauer in Sekunden fest, nach dem der Feldaufruf nachverfolgt werden muss. Der Standardwert ist 0. Ist der Wert größer als 0 (Null), werden zwei separate Verfolgungsereignisse an den Adobe Analytics-Server gesendet. Mit dem ersten Ereignis wird der Analytics-Server angewiesen, die Verfolgung für das Feld beim Verlassen zu beenden. Das zweite Ereignis wird nach Ablauf der angegebenen Zeit gesendet. Das zweite Ereignis weist den Analytics-Server an, mit der Verfolgung des besuchten Felds zu beginnen. Durch die Verwendung zweier separater Ereignisse können Sie präzise messen, wie lange das Feld verwendet wurde. Wenn der Wert 0 (Null) ist, wird ein einzelnes Verfolgungsereignis an den Adobe Analytics-Server gesendet.
 
-   * **Berichtsynchronisierungs-cron für Analytics**: Geben Sie einen cron-Ausdruck für das Abrufen von Berichten aus Adobe Analytics an. Der Standardwert ist 0 0 2 ? * * *.
+   * **Berichtsynchronisierungs-cron für Analytics**: Geben Sie einen cron-Ausdruck für das Abrufen von Berichten aus Adobe Analytics an. Der Standardwert ist 0 0 2 ? * *.
 
    * **Zeitlimit für Berichtsabruf:** Geben Sie die Dauer in Sekunden an, die auf den Server für den Abruf des Analyseberichts gewartet werden soll. Der Standardwert ist 120 Sekunden.
    >[!NOTE]
    >
-   >Es kann bis zu 10 Sekunden dauern, bis der Timeout-Berichtsabruf und dann die angegebene Anzahl von Sekunden abgeschlossen ist.
+   >Es kann bis zu 10 Sekunden länger dauern, bis der Abrufvorgang für den Bericht über die Zeitüberschreitung abgeschlossen ist und dann die angegebene Anzahl von Sekunden.
 
 1. Wiederholen Sie die Schritte 1-3 in der Veröffentlichungsinstanz, um Analysen zu konfigurieren.
 
@@ -185,7 +184,6 @@ Jetzt können Sie Analysen für Formulare aktivieren und einen Analysebericht er
 
    Aktivieren der Analyse für ein Formular
 
-   **A.Schaltfläche** Analytics aktivieren  **B.** Ausgewähltes Formular
+   **A.** Analytics-Schaltfläche aktivieren  **B.** Ausgewähltes Formular
 
    Detaillierte Informationen zum Anzeigen von Formularanalyseberichten finden Sie unter [Anzeigen und Verstehen von AEM Forms-Analyseberichten](../../forms/using/view-understand-aem-forms-analytics-reports.md)
-
