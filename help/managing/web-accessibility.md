@@ -1,20 +1,19 @@
 ---
-title: Adobe Experience Manager (AEM) und die Leitlinien für die Web-Zugänglichkeit
-description: Einführung in Adobe Experience Manager (AEM) und die Leitlinien für die Web-Zugänglichkeit
-translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+title: Adobe Experience Manager (AEM) und Richtlinien für barrierefreien Web-Zugang
+description: Einführung in Adobe Experience Manager (AEM) und Richtlinien für barrierefreien Web-Zugang
+exl-id: db8785b9-09eb-444a-addc-74c520e710a9
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 84%
 
 ---
 
-
 # AEM und Richtlinien für barrierefreien Webzugang{#aem-and-the-web-accessibility-guidelines}
 
-Es gibt eine Reihe sozialer, ökonomischer und rechtlicher Gründe dafür, sicherzustellen, dass Web-Inhalte für das Zielpublikum so barrierefrei wie möglich gestaltet werden, ungeachtet möglicher Behinderungen oder Einschränkungen des Zielpublikums. Web-Zugänglichkeit mit Adobe Experience Manager (AEM) ist daher ein zunehmend wichtiger Aspekt eines guten Webdesigns.
+Es gibt eine Reihe sozialer, ökonomischer und rechtlicher Gründe dafür, sicherzustellen, dass Web-Inhalte für das Zielpublikum so barrierefrei wie möglich gestaltet werden, ungeachtet möglicher Behinderungen oder Einschränkungen des Zielpublikums. Die Barrierefreiheit über das Internet mit Adobe Experience Manager (AEM) ist daher ein zunehmend wichtiger Aspekt eines guten Webdesigns.
 
-Zugängliche Websites und Inhalte mit AEM Auswirkungen erstellen:
+Erstellung barrierefreier Websites und Inhalte mit AEM Auswirkungen:
 
 * Administratoren, die für die Konfiguration von AEM verantwortlich sind, um zu gewährleisten, dass die Funktionen für den barrierefreien Zugang aktiviert sind.
 
@@ -59,4 +58,3 @@ Mit Adobe Experience Manager können Inhaltsautoren und/oder Website-Betreiber W
 ## Barrierefreiheit bei Adobe         {#accessibility-at-adobe}
 
 Weitere Informationen finden Sie im [Adobe Accessibility Resource Center](https://www.adobe.com/accessibility/).
-
