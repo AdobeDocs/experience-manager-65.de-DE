@@ -7,14 +7,13 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '890'
 ht-degree: 81%
 
 ---
-
 
 # Forms-Benutzerverwaltung | Umgang mit Benutzerdaten {#forms-user-management-handling-user-data}
 
@@ -30,7 +29,7 @@ Die Benutzerverwaltung ist eine AEM Forms JEE-Komponente, die das Erstellen, Ver
 
 ## Benutzerdaten und Datenspeicher {#user-data-and-data-stores}
 
-Die Benutzerverwaltung speichert Benutzerdaten in einer Datenbank, z. B. MySQL, Oracle, MS SQL Server und IBM DB2. Darüber hinaus wird jeder Benutzer, der sich mindestens einmal bei Forms-Anwendungen bei AEM Autorin bei `https://'[server]:[port]'lc` angemeldet hat, in AEM Repository erstellt. Daher wird die Benutzerverwaltung in den folgenden Datenspeichern gespeichert:
+Die Benutzerverwaltung speichert Benutzerdaten in einer Datenbank, z. B. MySQL, Oracle, MS SQL Server und IBM DB2. Darüber hinaus wird jeder Benutzer, der sich mindestens einmal in Forms-Anwendungen auf AEM Autoreninstanz unter `https://'[server]:[port]'lc` angemeldet hat, in AEM Repository erstellt. Daher wird die Benutzerverwaltung in den folgenden Datenspeichern gespeichert:
 
 * Datenbank
 * AEM-Repository
@@ -60,16 +59,16 @@ Benutzerverwaltung speichert Benutzerdaten in den folgenden Datenbanktabellen:
   </tr>
   <tr>
    <td><p><code>EdcPrincipalLocalAccountEntity</code></p> <p><code class="code">EdcPrincipalLocalAccount
-       </code>(Oracle- und MS SQL-Datenbanken)</p> </td>
+       </code>(Oracle und MS SQL-Datenbanken)</p> </td>
    <td>Speichert Daten nur für lokale Benutzer.</td>
   </tr>
   <tr>
    <td><p><code>EdcPrincipalEmailAliasEntity</code></p> <p><code class="code">EdcPrincipalEmailAliasEn
-       </code>(Oracle- und MS SQL-Datenbanken)</p> </td>
+       </code>(Oracle und MS SQL-Datenbanken)</p> </td>
    <td>Enthält Einträge aller Benutzer aus lokalen, Unternehmens- und Hybriddomänen. Es enthält Benutzer-E-Mail-IDs.</td>
   </tr>
   <tr>
-   <td><p><code>EdcPrincipalGrpCtmntEntity</code></p> <p><code>EdcPrincipalGrpCtmntEnti</code> (Oracle- und MS SQL-Datenbanken)</p> </td>
+   <td><p><code>EdcPrincipalGrpCtmntEntity</code></p> <p><code>EdcPrincipalGrpCtmntEnti</code> (Oracle und MS SQL-Datenbanken)</p> </td>
    <td>Speichert die Zuordnung zwischen Benutzern und Gruppen.</td>
   </tr>
   <tr>
@@ -81,13 +80,13 @@ Benutzerverwaltung speichert Benutzerdaten in den folgenden Datenbanktabellen:
    <td>Speichert die Zuordnung zwischen Prinzipal und Berechtigungen für Benutzer und Gruppen.</td>
   </tr>
   <tr>
-   <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code> (Oracle- und MS SQL-Datenbanken)</p> </td>
+   <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code> (Oracle und MS SQL-Datenbanken)</p> </td>
    <td>Speichert alte und neue Attributwerte, die einem Prinzipal entsprechen. <br /> </td>
   </tr>
  </tbody>
 </table>
 
-### AEM-Repository  {#aem-repository}
+### AEM-Repository {#aem-repository}
 
 Benutzerverwaltungsdaten für Benutzer, die mindestens einmal unter `https://'[server]:[port]'lc` auf die Forms-Anwendungen zugegriffen haben, werden ebenfalls im AEM Repository gespeichert.
 
@@ -99,7 +98,7 @@ Sie können auf Benutzerverwaltungsdaten für Benutzer in den Benutzerverwaltung
 
 Um Benutzerdaten aus der Benutzerverwaltungsdatenbank zu exportieren oder zu löschen, müssen Sie mithilfe eines Datenbank-Clients eine Verbindung mit der Datenbank herstellen und anhand von PII des Benutzers die Prinzipal-ID ermitteln. Um beispielsweise die Prinzipal-ID eines Benutzers mit einer Anmelde-ID abzurufen, führen Sie den folgenden `select`-Befehl in der Datenbank aus.
 
-Ersetzen Sie im Befehl `select` die `<user_login_id>`-ID durch die Anmelde-ID des Benutzers, dessen Haupt-ID Sie abrufen möchten.
+Ersetzen Sie im Befehl `select` die `<user_login_id>` durch die Anmelde-ID des Benutzers, dessen Prinzipal-ID Sie abrufen möchten.
 
 ```sql
 select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_id>
@@ -109,22 +108,22 @@ Nachdem Sie die Prinzipal-ID kennen, können Sie die Benutzerdaten exportieren o
 
 #### Benutzerdaten exportieren  {#export-user-data}
 
-Führen Sie die folgenden Datenbankbefehle aus, um Benutzerverwaltungsdaten für eine Prinzipal-ID aus Datenbanktabellen zu exportieren. Ersetzen Sie im Befehl `select` `<principal_id>` die Prinzipalkennung des Benutzers, dessen Daten Sie exportieren möchten.
+Führen Sie die folgenden Datenbankbefehle aus, um Benutzerverwaltungsdaten für eine Prinzipal-ID aus Datenbanktabellen zu exportieren. Ersetzen Sie im Befehl `select` `<principal_id>` die Prinzipal-ID des Benutzers, dessen Daten Sie exportieren möchten.
 
 >[!NOTE]
 >
 >Die folgenden Befehle verwenden Datenbanktabellennamen in My SQL- und IBM DB2-Datenbanken. Ersetzen Sie beim Ausführen dieser Befehle in Oracle- und MS SQL-Datenbanken die folgenden Tabellennamen in den Befehlen:
 >
->* Ersetzen Sie `EdcPrincipalLocalAccountEntity` durch `EdcPrincipalLocalAccount`
+>* Ersetzen Sie `EdcPrincipalLocalAccountEntity` durch `EdcPrincipalLocalAccount` .
    >
    >
-* Ersetzen Sie `EdcPrincipalEmailAliasEntity` durch `EdcPrincipalEmailAliasEn`
+* Ersetzen Sie `EdcPrincipalEmailAliasEntity` durch `EdcPrincipalEmailAliasEn` .
    >
    >
-* Ersetzen Sie `EdcPrincipalMappingEntity` durch `EdcPrincipalMappingEntit`
+* Ersetzen Sie `EdcPrincipalMappingEntity` durch `EdcPrincipalMappingEntit` .
    >
    >
-* Ersetzen Sie `EdcPrincipalGrpCtmntEntity` durch `EdcPrincipalGrpCtmntEnti`
+* Ersetzen Sie `EdcPrincipalGrpCtmntEntity` durch `EdcPrincipalGrpCtmntEnti` .
 
 >
 
@@ -154,7 +153,7 @@ Führen Sie folgende Schritte aus, um Benutzerverwaltungsdaten für eine Prinzip
 
 1. Löschen Sie gegebenenfalls Benutzerdaten aus dem AEM-Repository, wie in [Benutzerdaten löschen](/help/forms/using/user-management-handling-user-data.md#delete-aem) beschrieben.
 1. Fahren Sie den AEM Forms-Server herunter.
-1. Führen Sie die folgenden Datenbankbefehle aus, um Benutzerverwaltungsdaten für eine Prinzipal-ID aus Datenbanktabellen zu exportieren. Ersetzen Sie im Befehl `Delete` `<principal_id>` die Prinzipalkennung des Benutzers, dessen Daten Sie löschen möchten.
+1. Führen Sie die folgenden Datenbankbefehle aus, um Benutzerverwaltungsdaten für eine Prinzipal-ID aus Datenbanktabellen zu exportieren. Ersetzen Sie im Befehl `Delete` `<principal_id>` die Prinzipal-ID des Benutzers, dessen Daten Sie löschen möchten.
 
    ```sql
    Delete from EdcPrincipalLocalAccountEntity where refuserprincipalid in (Select id from EdcPrincipalUserEntity where refprincipalid in (select id from EdcPrincipalEntity where id='<principal_id>'));
@@ -182,14 +181,13 @@ Forms JEE-Benutzer haben ihre Daten im AEM-Repository, wenn sie mindestens eine 
 
 #### Zugreifen auf Benutzerdaten  {#access-user-data}
 
-Melden Sie sich zur Ansicht eines im AEM Repository erstellten Benutzers mit AEM Administratorberechtigungen bei `https://'[server]:[port]'/lc/useradmin` an. Beachten Sie, dass `server` und `port` in der URL die der AEM-Author-Instanz sind. Hier können Sie nach Benutzern mit ihrem Benutzernamen suchen. Doppelklicken Sie auf einen Benutzer, um Informationen wie Eigenschaften, Berechtigungen und Gruppen für den Benutzer anzuzeigen. Die Eigenschaft `Path`für einen Benutzer gibt den Pfad zum Benutzerknoten an, der im AEM-Repository erstellt wurde.
+Um in AEM Repository erstellte Benutzer anzuzeigen, melden Sie sich mit AEM Administratorberechtigungen bei `https://'[server]:[port]'/lc/useradmin` an. Beachten Sie, dass `server` und `port` in der URL die der AEM-Author-Instanz sind. Hier können Sie nach Benutzern mit ihrem Benutzernamen suchen. Doppelklicken Sie auf einen Benutzer, um Informationen wie Eigenschaften, Berechtigungen und Gruppen für den Benutzer anzuzeigen. Die Eigenschaft `Path`für einen Benutzer gibt den Pfad zum Benutzerknoten an, der im AEM-Repository erstellt wurde.
 
 #### Benutzerdaten löschen {#delete-aem}
 
 So löschen Sie einen Benutzer:
 
-1. Wechseln Sie zu `https://'[server]:[port]'/lc/useradmin` mit AEM Administratorberechtigungen.
-1. Suchen Sie nach einem Benutzer und doppelklicken Sie auf den Benutzernamen, um die Benutzereigenschaften zu öffnen. Kopieren Sie die Eigenschaft `Path`.
-1. Wechseln Sie zu AEM CRX DELite unter `https://'[server]:[port]'/lc/crx/de/index.jsp` und navigieren Sie zum Benutzerpfad oder suchen Sie ihn.
+1. Rufen Sie `https://'[server]:[port]'/lc/useradmin` mit AEM Administratorberechtigungen auf.
+1. Suchen Sie nach einem Benutzer und doppelklicken Sie auf den Benutzernamen, um die Benutzereigenschaften zu öffnen. Kopieren Sie die Eigenschaft `Path` .
+1. Navigieren Sie zu AEM CRX DELite unter `https://'[server]:[port]'/lc/crx/de/index.jsp` und navigieren Sie zum Benutzerpfad oder suchen Sie nach diesem.
 1. Löschen Sie den Pfad und klicken Sie auf **[!UICONTROL Alle speichern]**, um dauerhaft den Benutzer vom AEM-Repository zu löschen.
-
