@@ -8,7 +8,6 @@ audience: marketer
 feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
-translation-type: tm+mt
 source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '104'
