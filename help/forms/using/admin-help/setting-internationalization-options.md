@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e845d13f-bef2-442d-af9a-4f92d7616a46
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 6cf82c2b-29f0-49d5-a138-99d7801d5a28
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 100%
 
 ---
-
 
 # Internationalisierungsoptionen festlegen{#setting-internationalization-options}
 
@@ -35,4 +34,3 @@ Sie können das Gebietsschema angeben, dass beim Wiedergeben eines PDF-Formulars
    Bei HTML-Transformationen unterstützt AEM Forms Zeichenkodierungswerte, die vom Paket `java.nio.charset` definiert werden. Wenn sFormPreference auf PDFForm festgelegt ist, werden nur bestimmte Zeichensätze unterstützt. Der Zeichensatz muss ein gültiger kanonischer Name sein. Der Standardwert ist „ISO-8859-1“.
 
 1. Klicken Sie auf Speichern.
-
