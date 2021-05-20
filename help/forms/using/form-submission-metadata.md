@@ -8,21 +8,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2c971da0-5bd5-40d1-820d-4efc2a44b49d
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Adaptive Formulare
+exl-id: 5ca850e3-30f0-4384-b615-356dc3c2ad0d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 92%
 
 ---
 
-
 # Hinzufügen von Informationen von Benutzerdaten zu Formularübermittlungsmetadaten{#adding-information-from-user-data-to-form-submission-metadata}
 
 Sie können in ein Element eingegebene Werte des Formulars verwenden, um Metadaten-Felder einer Entwurfs- oder einer Formularübermittlung zu berechnen. Mithilfe von Metadaten können Sie inhaltsbasierte Benutzerdaten filtern. Beispiel: Ein Benutzer gibt Bernd Schneider im Feld „Name“ des Formulars ein. Sie können diese Informationen nutzen, um Metadaten zu berechnen, die diesen Beitrag unter den Initialen JD kategorisieren.
 
-Um die Metadatenfelder mit den vom Benutzer eingegebenen Werte zu berechnen, müssen Sie Elemente Ihres Formulars in den Metadaten hinzufügen. Wenn ein Benutzer einen Wert in dieses Element eingibt, verwendet ein Skript diesen Wert zur Berechnung von Informationen. Diese Informationen werden zu den Metadaten hinzugefügt. Wenn Sie ein Element als ein Metadatenfeld hinzufügen möchten, müssen Sie einen Schlüssel für ihn bereitstellen. Der Schlüssel wird als Feld in den Metadaten hinzugefügt und die berechneten Informationen werden anhand dieser Datei protokolliert.
+Um die Metadatenfelder mit den vom Benutzer eingegebenen Werte zu berechnen, müssen Sie Elemente Ihres Formulars in den Metadaten hinzufügen. Wenn ein Benutzer einen Wert in dieses Element eingibt, verwendet ein Skript den Wert zur Berechnung von Informationen. Diese Informationen werden zu den Metadaten hinzugefügt. Wenn Sie ein Element als ein Metadatenfeld hinzufügen möchten, müssen Sie einen Schlüssel für ihn bereitstellen. Der Schlüssel wird als Feld in den Metadaten hinzugefügt und die berechneten Informationen werden anhand dieser Datei protokolliert.
 
 Wenn beispielsweise eine Krankenversicherung ein Formular veröffentlicht. In diesem Formular wird in einem Feld das Alter des Endbenutzers festgehalten. Der Kunde möchte alle Angaben in einem bestimmten Altersbereich überprüfen, nachdem alle Benutzer das Formular eingereicht haben. Statt alle Daten einzeln zu überprüfen, was mit zunehmender Anzahl an Formularen schwieriger wird, helfen zusätzliche Metadaten mit dem Kunden. Der Formularverfasser kann konfigurieren, welche Eigenschaften/Daten, die vom Benutzer ausgefüllt wurden, auf der obersten Ebene gespeichert werden, sodass die Suche einfacher ist. Zusätzliche Metadaten sind vom Benutzer ausgefüllte Informationen, die auf der obersten Ebene des Metadatenknotens gespeichert werden, wie der Verfasser es konfiguriert hat.
 
@@ -34,12 +33,12 @@ Führen Sie die folgenden Schritte aus, um ein Element zu den Metadaten hinzuzuf
 
 1. Öffnen Sie Ihr adaptives Formular im Bearbeitungsmodus.\
    Um das Formular im Bearbeitungsmodus zu öffnen, wählen Sie es im Forms Manager aus und tippen Sie auf **Öffnen**.
-1. Wählen Sie im Bearbeitungsmodus eine Komponente aus, tippen Sie auf ![Feldebene](assets/field-level.png) > **Container des adaptiven Formulars** und dann auf ![cmppr](assets/cmppr.png).
+1. Wählen Sie im Bearbeitungsmodus eine Komponente aus, tippen Sie auf ![Feldebene](assets/field-level.png) > **Container für adaptive Formulare** und tippen Sie dann auf ![cmppr](assets/cmppr.png).
 1. Klicken Sie in der Randleiste auf **Metadaten**.
 1. Klicken Sie im Abschnitt „Metadaten“ auf **Hinzufügen**.
 1. Verwenden Sie das Feld „Wert“ auf der Registerkarte „Metadaten“, um Skripte hinzuzufügen. Die von Ihnen hinzugefügten Skripte erfassen Daten aus den Elementen im Formular und berechnen Werte, die den Metadaten zugeführt werden.
 
-   Beispiel: **true** wird in den Metadaten protokolliert, wenn das eingegebene Alter größer als 21 ist, und **false** wird protokolliert, wenn es kleiner als 21 ist. Sie können das folgende Skript auf der Registerkarte „Metadaten“ eingeben:
+   Beispielsweise wird **true** in den Metadaten protokolliert, wenn das eingegebene Alter größer als 21 ist, und **false** wird protokolliert, wenn es kleiner als 21 ist. Sie können das folgende Skript auf der Registerkarte „Metadaten“ eingeben:
 
    `(agebox.value >= 21) ? true : false`
 
@@ -68,4 +67,3 @@ Wählen Sie einen Container für das adaptive Formular und in den Formulareigens
 >[!NOTE]
 >
 >Das obige Beispiel ist lediglich für Schulungszwecke gedacht. Stellen Sie sicher, dass Sie nach den Metadaten im richtigen Ordner suchen, wie in der AEM Forms-Implementierung konfiguriert.
-
