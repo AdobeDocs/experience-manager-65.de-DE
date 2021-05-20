@@ -1,52 +1,51 @@
 ---
-title: Asset-Tags mit dem Smart Content Service konfigurieren
-description: Erfahren Sie, wie Sie intelligentes Tagging und verbessertes intelligentes Tagging mit dem Smart Content Service in [!DNL Adobe Experience Manager] konfigurieren.
+title: Konfigurieren von Asset-Tags mit dem Smart Content Service
+description: Erfahren Sie, wie Sie mithilfe des Smart Content Service Smart Tagging und verbessertes Smart-Tagging in [!DNL Adobe Experience Manager] konfigurieren.
 contentOwner: AG
 role: Administrator
-feature: Tagging,Smart Tags
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Tagging, Smart-Tags
+exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2174'
+source-wordcount: '2173'
 ht-degree: 56%
 
 ---
 
+# Vorbereiten von [!DNL Assets] für Smart-Tagging {#configure-asset-tagging-using-the-smart-content-service}
 
-# [!DNL Assets] für intelligentes Tagging {#configure-asset-tagging-using-the-smart-content-service} vorbereiten
-
-Bevor Sie mit dem Tagging Ihrer Assets mit Smart Content Services beginnen können, integrieren Sie [!DNL Experience Manager Assets] in die Adobe Developer Console, um den Smart Service von [!DNL Adobe Sensei] zu nutzen. Nach der Konfiguration trainieren Sie den Dienst mit ein paar Bildern und einem Tag.
+Bevor Sie mit dem Tagging Ihrer Assets mithilfe von Smart Content Services beginnen können, integrieren Sie [!DNL Experience Manager Assets] in die Adobe Developer Console, um den Smart-Service von [!DNL Adobe Sensei] zu nutzen. Nach der Konfiguration trainieren Sie den Dienst mit einigen Bildern und einem -Tag.
 
 Bevor Sie den Smart Content Service verwenden, stellen Sie Folgendes sicher:
 
 * [Integrieren von  mit der Adobe Developer Console](#integrate-adobe-io).
-* [Schulung des Smart Content Service](#training-the-smart-content-service).
+* [Trainieren des Smart Content Service](#training-the-smart-content-service).
 
 * Installieren Sie das neueste [[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
 
 ## Integration mit der Adobe Developer Console {#integrate-adobe-io}
 
-Wenn Sie die Integration mit der Adobe Developer Console durchführen, authentifiziert der Server [!DNL Experience Manager] Ihre Dienstanmeldeinformationen mit dem Adobe Developer Console Gateway, bevor Sie Ihre Anforderung an den Smart Content Service weiterleiten. Zur Integration benötigen Sie ein Adobe ID-Konto, das über Administratorrechte für das Unternehmen verfügt, sowie eine Smart Content Service-Lizenz, die für Ihr Unternehmen erworben und aktiviert wurde.
+Wenn Sie die Integration mit der Adobe Developer Console durchführen, authentifiziert der Server [!DNL Experience Manager] Ihre Dienstanmeldeinformationen mit dem Gateway der Adobe Developer Console, bevor Ihre Anforderung an den Smart Content Service weitergeleitet wird. Zur Integration benötigen Sie ein Adobe ID-Konto mit Administratorrechten für die für Ihr Unternehmen erworbene und aktivierte Smart Content Service-Lizenz.
 
-Gehen Sie wie folgt vor, um den Dienst für intelligente Inhalte zu konfigurieren:
+Gehen Sie wie folgt vor, um den Smart Content Service zu konfigurieren:
 
-1. Um einen öffentlichen Schlüssel zu generieren, [Erstellen Sie eine Konfiguration für einen intelligenten Content-Dienst](#obtain-public-certificate) in [!DNL Experience Manager]. [Erlangen Sie ein öffentliches Zertifikat](#obtain-public-certificate) für die OAuth-Integration.
+1. Um einen öffentlichen Schlüssel zu generieren, erstellen Sie die Konfiguration [Smart Content Service](#obtain-public-certificate) in [!DNL Experience Manager]. [Erlangen Sie ein öffentliches Zertifikat](#obtain-public-certificate) für die OAuth-Integration.
 
 1. [Erstellen Sie eine Integration in der Adobe Developer Console](#create-adobe-i-o-integration) und laden Sie den generierten öffentlichen Schlüssel hoch.
 
-1. [Konfigurieren Sie Ihre ](#configure-smart-content-service) Bereitstellung mithilfe des API-Schlüssels und anderer Anmeldedaten aus der Adobe Developer Console.
+1. [Konfigurieren Sie Ihre ](#configure-smart-content-service) Bereitstellung mit dem API-Schlüssel und anderen Anmeldeinformationen aus der Adobe Developer Console.
 
 1. [Testen Sie die Konfiguration](#validate-the-configuration).
 
 1. Optional können Sie [das automatische Tagging beim Hochladen von Assets aktivieren](#enable-smart-tagging-in-the-update-asset-workflow-optional).
 
-### Öffentliches Zertifikat abrufen, indem Sie die Konfiguration für den Smart Content Service {#obtain-public-certificate} erstellen
+### Abrufen eines öffentlichen Zertifikats durch Erstellen der Konfiguration des Smart Content Service {#obtain-public-certificate}
 
 Ein öffentliches Zertifikat ermöglicht Ihnen die Authentifizierung Ihres Profils in der Adobe Developer Console.
 
-1. Rufen Sie in der [!DNL Experience Manager]-Benutzeroberfläche **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Ältere Cloud Services]** auf.
+1. Rufen Sie in der [!DNL Experience Manager] -Benutzeroberfläche **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Legacy-Cloud Services]** auf.
 
-1. Klicken Sie auf der Seite &quot;Cloud Services&quot;unter **[!UICONTROL Assets Smart Tags]** auf **[!UICONTROL Jetzt konfigurieren]**.
+1. Klicken Sie auf der Cloud Services-Seite unter **[!UICONTROL Smart-Tags für Assets]** auf **[!UICONTROL Jetzt konfigurieren]** .
 
 1. Geben Sie im Dialogfeld **[!UICONTROL Konfiguration erstellen]** einen Titel und einen Namen für die Smart-Tags-Konfiguration ein. Klicken Sie auf **[!UICONTROL Erstellen]**.
 
@@ -58,25 +57,25 @@ Ein öffentliches Zertifikat ermöglicht Ihnen die Authentifizierung Ihres Profi
 
    Lassen Sie die anderen Felder vorerst leer (Werte werden später bereitgestellt). Klicken Sie auf **[!UICONTROL OK]**.
 
-   ![Dialogfeld &quot;Experience Manager-Smart-Content-Dienst&quot;zur Bereitstellung der Content-Dienst-URL](assets/aem_scs.png)
+   ![Dialogfeld &quot;Experience Manager Smart Content Service&quot;zur Bereitstellung der Inhaltsdienst-URL](assets/aem_scs.png)
 
 
-   *Abbildung: Dialogfeld &quot;Smart Content Service&quot;zum Bereitstellen der URL des Inhaltsdienstes*
+   *Abbildung: Dialogfeld &quot;Smart Content Service&quot;zur Bereitstellung der Content Service-URL*
 
    >[!NOTE]
    >
-   >Die als [!UICONTROL Dienst-URL] bereitgestellte URL kann nicht über den Browser aufgerufen werden und erzeugt einen 404-Fehler. Die Konfiguration funktioniert mit demselben Wert des Parameters [!UICONTROL Dienst-URL]. Der Gesamtplan für den Dienststatus und die Wartung finden Sie unter [https://status.adobe.com](https://status.adobe.com).
+   >Die als [!UICONTROL Dienst-URL] angegebene URL kann nicht über den Browser aufgerufen werden und erzeugt einen 404-Fehler. Die Konfiguration funktioniert mit dem gleichen Wert wie der Parameter [!UICONTROL Dienst-URL] . Der allgemeine Dienststatus und Wartungsplan finden Sie unter [https://status.adobe.com](https://status.adobe.com).
 
-1. Klicken Sie auf **[!UICONTROL Öffentliches Zertifikat für OAuth-Integration herunterladen]** und laden Sie die Datei für das öffentliche Zertifikat `AEM-SmartTags.crt` herunter.
+1. Klicken Sie auf **[!UICONTROL Öffentliches Zertifikat für OAuth-Integration herunterladen]** und laden Sie die öffentliche Zertifikatdatei `AEM-SmartTags.crt` herunter.
 
    ![Darstellung der für den Smart-Tagging-Service erstellten Einstellungen](assets/smart-tags-download-public-cert.png)
 
 
-   *Abbildung: Einstellungen für den intelligenten Tag-Dienst.*
+   *Abbildung: Einstellungen für den Smart-Tagging-Dienst.*
 
-#### Konfigurieren, wenn ein Zertifikat abläuft {#certrenew}
+#### Neu konfigurieren, wenn ein Zertifikat abläuft {#certrenew}
 
-Nach Ablauf eines Zertifikats wird es nicht mehr als vertrauenswürdig eingestuft. Sie können ein abgelaufenes Zertifikat nicht verlängern. Gehen Sie wie folgt vor, um ein Zertifikat hinzuzufügen.
+Nachdem ein Zertifikat abgelaufen ist, wird es nicht mehr als vertrauenswürdig eingestuft. Sie können ein abgelaufenes Zertifikat nicht verlängern. Gehen Sie wie folgt vor, um ein Zertifikat hinzuzufügen.
 
 1. Melden Sie sich bei Ihrer [!DNL Experience Manager]-Implementierung als Administrator an. Klicken Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Benutzer]**.
 
@@ -95,9 +94,9 @@ Nach Ablauf eines Zertifikats wird es nicht mehr als vertrauenswürdig eingestuf
 
 1. Rufen Sie [https://console.adobe.io](https://console.adobe.io) auf und navigieren Sie zu den vorhandenen Smart Content Services auf der Seite **[!UICONTROL Integrationen]**. Laden Sie das neue Zertifikat hoch. Weitere Informationen finden Sie in den Anweisungen unter [Adobe Developer Console-Integration erstellen](#create-adobe-i-o-integration).
 
-### Adobe Developer Console-Integration {#create-adobe-i-o-integration} erstellen
+### Adobe Developer Console-Integration erstellen {#create-adobe-i-o-integration}
 
-Um Smart Content Service-APIs zu verwenden, erstellen Sie eine Integration in der Adobe Developer Console, um [!UICONTROL API-Schlüssel] (generiert im Feld [!UICONTROL CLIENT-ID] der Adobe Developer Console-Integration), [!UICONTROL TECHNISCHE ACCOUNT-ID], [!UICONTROL ORGANISATION-ID] und [!UICONTROL  zu erhalten. CLIENT SECRET] für [!UICONTROL Assets Smart Tagging Service Settings] der Cloud-Konfiguration in [!DNL Experience Manager].
+Um Smart Content Service-APIs zu verwenden, erstellen Sie eine Integration in der Adobe Developer Console, um [!UICONTROL API-Schlüssel] zu erhalten (generiert im Feld [!UICONTROL CLIENT-ID] der Adobe Developer Console-Integration), [!UICONTROL TECHNISCHE KONTO-ID], [!UICONTROL ORGANIZATION ID] und [!UICONTROL . CLIENT SECRET] für [!UICONTROL Assets Smart Tagging Service Settings] der Cloud-Konfiguration in [!DNL Experience Manager].
 
 1. Rufen Sie [https://console.adobe.io](https://console.adobe.io/) in einem Browser auf. Wählen Sie das entsprechende Konto aus und vergewissern Sie sich, dass die zugehörige Organisationsrolle „Systemadministrator“ ist.
 
@@ -107,13 +106,13 @@ Um Smart Content Service-APIs zu verwenden, erstellen Sie eine Integration in de
 
 1. Wählen Sie **[!UICONTROL Öffentlichen Schlüssel hochladen]** aus. Stellen Sie die von [!DNL Experience Manager] heruntergeladenen Zertifikatdatei bereit. Die Meldung [!UICONTROL Öffentliche(r) Schlüssel erfolgreich hochgeladen] wird angezeigt. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-   [!UICONTROL Auf der ] Seite &quot;Neues Dienstkonto erstellen&quot;wird der öffentliche Schlüssel für das Dienstkonto angezeigt.
+   [!UICONTROL Auf der ] Seite Neues Dienstkonto (JWT) erstellen wird der öffentliche Schlüssel für das Dienstkonto angezeigt.
 
 1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
 1. Wählen Sie auf der Seite **[!UICONTROL Produktprofile auswählen]** die Option **[!UICONTROL Smart Content Services]** aus. Klicken Sie auf **[!UICONTROL Konfigurierte API speichern]**.
 
-   Auf einer Seite werden weitere Informationen zur Konfiguration angezeigt. Lassen Sie diese Seite geöffnet, um diese Werte in [!UICONTROL Assets Smart Tagging Service Settings] der Cloud-Konfiguration in [!DNL Experience Manager] zu kopieren und hinzuzufügen, um Smarttags zu konfigurieren.
+   Auf einer Seite werden weitere Informationen zur Konfiguration angezeigt. Lassen Sie diese Seite geöffnet, um diese Werte zu kopieren und in [!UICONTROL Assets Smart Tagging Service Settings] der Cloud-Konfiguration in [!DNL Experience Manager] hinzuzufügen, um Smart-Tags zu konfigurieren.
 
    ![Auf der Registerkarte „Übersicht“ können Sie die für die Integration bereitgestellten Informationen überprüfen.](assets/integration_details.png)
 
@@ -122,38 +121,38 @@ Um Smart Content Service-APIs zu verwenden, erstellen Sie eine Integration in de
 
 ### Konfigurieren des Smart Content Service {#configure-smart-content-service}
 
-Verwenden Sie zum Konfigurieren der Integration die Werte der Felder [!UICONTROL TECHNISCHE KONTO-ID], [!UICONTROL ORGANISATIONS-ID], [!UICONTROL CLIENT SECRET] und [!UICONTROL CLIENT-ID] aus der Adobe Developer Console. Das Erstellen einer Smart-Tags-Cloud-Konfiguration ermöglicht die Authentifizierung von API-Anforderungen aus der [!DNL Experience Manager]-Bereitstellung.
+Verwenden Sie zum Konfigurieren der Integration die Werte der Felder [!UICONTROL TECHNISCHE KONTO-ID], [!UICONTROL ORGANISATIONS-ID], [!UICONTROL CLIENT-GEHEIMNIS] und [!UICONTROL CLIENT-ID] aus der Adobe Developer-Integration. Das Erstellen einer Smart-Tags-Cloud-Konfiguration ermöglicht die Authentifizierung von API-Anfragen aus der [!DNL Experience Manager]-Implementierung.
 
-1. Navigieren Sie in [!DNL Experience Manager] zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Ältere Cloud Services]**, um die Konsole [!UICONTROL Cloud Services] zu öffnen.
+1. Navigieren Sie in [!DNL Experience Manager] zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Legacy-Cloud Services]** , um die Konsole [!UICONTROL Cloud Services] zu öffnen.
 
 1. Öffnen Sie unter den **[!UICONTROL Smart-Tags für Assets]** die oben erstellte Konfiguration. Klicken Sie auf der Seite mit den Serviceeinstellungen auf **[!UICONTROL Bearbeiten]**.
 
 1. Verwenden Sie im Dialogfeld **[!UICONTROL AEM Smart Content Service]** die vorausgefüllten Werte für die Felder **[!UICONTROL Service-URL]** und **[!UICONTROL Autorisierungsserver]**.
 
-1. Kopieren Sie für die Felder [!UICONTROL API-Schlüssel], [!UICONTROL Technische Konto-ID], [!UICONTROL Organisations-ID] und [!UICONTROL Clientgeheimnis] die folgenden Werte, die in [Adobe Developer Console integration](#create-adobe-i-o-integration) generiert wurden, und verwenden Sie sie.
+1. Kopieren Sie für die Felder [!UICONTROL API-Schlüssel], [!UICONTROL Technische Konto-ID], [!UICONTROL Organisations-ID] und [!UICONTROL Client-Geheimnis] die folgenden Werte, die in [Adobe Developer Console-Integration](#create-adobe-i-o-integration) generiert wurden.
 
    | [!UICONTROL Diensteinstellungen für Smart-Tagging in Assets] | [!DNL Adobe Developer Console] Integrationsfelder |
    |--- |--- |
    | [!UICONTROL API-Schlüssel] | [!UICONTROL CLIENT-ID] |
    | [!UICONTROL ID des technischen Kontos] | [!UICONTROL TECHNISCHE KONTO-ID] |
-   | [!UICONTROL Unternehmens-ID] | [!UICONTROL Organisations-ID] |
+   | [!UICONTROL Unternehmens-ID] | [!UICONTROL ORGANISATIONS-ID] |
    | [!UICONTROL Client-Geheimnis] | [!UICONTROL CLIENT SECRET] |
 
 ### Überprüfen der Konfiguration {#validate-the-configuration}
 
-Nachdem Sie die Konfiguration abgeschlossen haben, können Sie eine JMX MBean verwenden, um die Konfiguration zu validieren. Führen Sie zum Überprüfen die folgenden Schritte aus.
+Nachdem Sie die Konfiguration abgeschlossen haben, können Sie zur Validierung der Konfiguration ein JMX MBean verwenden. Führen Sie zum Überprüfen die folgenden Schritte aus.
 
 1. Greifen Sie auf Ihren [!DNL Experience Manager]-Server unter `https://[aem_server]:[port]` zu.
 
-1. Gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Webkonsole]**, um die OSGi-Konsole zu öffnen. Klicken Sie auf **[!UICONTROL Main] > [!UICONTROL JMX]**.
+1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]** , um die OSGi-Konsole zu öffnen. Klicken Sie auf **[!UICONTROL Main] > [!UICONTROL JMX]**.
 
-1. Klicken Sie auf `com.day.cq.dam.similaritysearch.internal.impl`. Es wird **[!UICONTROL Ähnliche Suche Verschiedene Aufgaben]** geöffnet.
+1. Klicken Sie auf `com.day.cq.dam.similaritysearch.internal.impl`. Es wird **[!UICONTROL Ähnlichkeitssuche Verschiedene Aufgaben]** geöffnet.
 
 1. Klicken Sie auf `validateConfigs()`. Klicken Sie im Dialogfeld **[!UICONTROL Konfigurationen überprüfen]** auf **[!UICONTROL Aufrufen]**.
 
-Die Überprüfungsergebnisse werden im gleichen Dialogfeld angezeigt.
+Die Überprüfungsergebnisse werden im selben Dialogfeld angezeigt.
 
-### Aktivieren Sie intelligentes Tagging im Arbeitsablauf [!UICONTROL DAM-Update-Asset] (Optional) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
+### Aktivieren Sie Smart-Tagging im Workflow [!UICONTROL DAM Update Asset] (optional) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
 
 1. Gehen Sie in [!DNL Experience Manager] zu **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**.
 
@@ -169,28 +168,28 @@ Die Überprüfungsergebnisse werden im gleichen Dialogfeld angezeigt.
 
 1. Öffnen Sie den Schritt im Bearbeitungsmodus. Stellen Sie unter **[!UICONTROL Erweiterte Einstellungen]** sicher, dass die Option **[!UICONTROL Handler-Erweiterung]** ausgewählt ist.
 
-   ![DAM-Arbeitsablauf zum Aktualisieren von Assets konfigurieren und Schritt zum Hinzufügen von Smarttags](assets/smart-tag-step-properties-workflow1.png)
+   ![Konfigurieren des Workflows &quot;DAM-Update-Asset&quot;und Hinzufügen des Schritts &quot;Smart-Tag&quot;](assets/smart-tag-step-properties-workflow1.png)
 
 
-   *Abbildung: DAM-Arbeitsablauf zum Aktualisieren von Assets konfigurieren und Schritt zum Hinzufügen von Smarttags*
+   *Abbildung: Konfigurieren des Workflows &quot;DAM-Update-Asset&quot;und Hinzufügen des Schritts &quot;Smart-Tag&quot;*
 
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Argumente]** die Option **[!UICONTROL Fehler ignorieren]**, wenn der Workflow auch dann abgeschlossen werden soll, falls der automatische Tag-Schritt fehlschlägt.
 
-   ![DAM-Arbeitsablauf zum Aktualisieren von Assets konfigurieren, um einen Schritt zum intelligenten Tag hinzuzufügen und Handler-Modus auszuwählen](assets/smart-tag-step-properties-workflow2.png)
+   ![Konfigurieren Sie den Workflow DAM-Update-Asset , um den Schritt &quot;Smart-Tag&quot;hinzuzufügen und den Handler-Modus auszuwählen.](assets/smart-tag-step-properties-workflow2.png)
 
 
-   *Abbildung: DAM-Arbeitsablauf zum Aktualisieren von Assets konfigurieren, um einen Schritt zum intelligenten Tag hinzuzufügen und Handler-Modus auszuwählen*
+   *Abbildung: Konfigurieren Sie den Workflow DAM-Update-Asset , um den Schritt &quot;Smart-Tag&quot;hinzuzufügen und den Handler-Modus auszuwählen.*
 
    Um Assets unabhängig davon mit Tags zu versehen, ob die Smart-Tagging-Funktion für Ordner aktiviert ist, wählen Sie **[!UICONTROL Smart-Tag-Markierung ignorieren]** aus.
 
-   ![Konfigurieren Sie den Arbeitsablauf für DAM-Aktualisierung für Assets, um einen Schritt für intelligente Tags hinzuzufügen, und wählen Sie &quot;Smart-Tag-Flag ignorieren&quot;](assets/smart-tag-step-properties-workflow3.png)
+   ![Konfigurieren Sie den Workflow DAM-Update-Asset , um den Schritt &quot;Smart-Tag&quot;hinzuzufügen und das Flag &quot;Smart-Tag ignorieren&quot;auszuwählen.](assets/smart-tag-step-properties-workflow3.png)
 
 
-   *Abbildung: Konfigurieren Sie den DAM Update Asset-Workflow, um einen Smart-Tag-Schritt hinzuzufügen und wählen Sie &quot;Smart-Tag-Flag ignorieren&quot;.*
+   *Abbildung: Konfigurieren Sie den Workflow DAM-Update-Asset , um den Schritt Smart-Tag hinzuzufügen und die Option Smart-Tag-Markierung ignorieren auszuwählen.*
 
 1. Klicken Sie auf **[!UICONTROL OK]**, um den Prozessschritt zu schließen, und speichern Sie dann den Workflow.
 
-## Intelligenten Content-Dienst {#training-the-smart-content-service}
+## Trainieren des Smart Content Service {#training-the-smart-content-service}
 
 Damit der Smart Content Service die Taxonomie Ihres Unternehmens erkennen kann, sollten Sie den Dienst auf einen Asset-Satz ausführen, der bereits für Ihr Unternehmen relevante Tags enthält. Um Ihre Markenbilder effektiv mit Tags zu versehen, erfordert der Smart Content Service, dass die Schulungsbilder bestimmten Richtlinien entsprechen. Nach dem Training kann der Dienst dieselbe Taxonomie auf einen ähnlichen Satz von Assets anwenden.
 
@@ -204,7 +203,7 @@ Sie können den Smart Content Service regelmäßig oder je nach Anforderung trai
 
 ### Richtlinien für das Training {#guidelines-for-training}
 
-Die besten Ergebnisse erzielen Sie, wenn die Bilder in Ihrem Schulungssatz den folgenden Richtlinien entsprechen:
+Die besten Ergebnisse erzielen Sie, wenn die Bilder in Ihrem Trainings-Satz den folgenden Richtlinien entsprechen:
 
 **Menge und Größe:** Mindestens 30 Bilder pro Tag. Mindestens 500 Pixel auf der längeren Seite.
 
@@ -214,7 +213,7 @@ So ist es beispielsweise nicht empfehlenswert, all diese Bilder mit dem Tag `my-
 
 ![Veranschaulichende Bilder als Beispiele für die Richtlinien für das Training](/help/assets/assets/do-not-localize/coherence.png)
 
-**Reichweite**: Verwenden Sie ausreichend Abwechslung in den Bildern in der Schulung. Es geht darum, einige, aber recht unterschiedliche Beispiele zu liefern, damit der Experience Manager lernt, sich auf die richtigen Dinge zu konzentrieren. Wenn Sie dasselbe Tag auf visuell unähnliche Bilder anwenden, schließen Sie mindestens fünf Beispiele für jeden Typ ein.
+**Reichweite**: Verwenden Sie ausreichend Vielfalt in den Bildern in der Schulung. Es geht darum, einige wenige, aber einigermaßen unterschiedliche Beispiele anzubieten, damit der Experience Manager lernt, sich auf die richtigen Dinge zu konzentrieren. Wenn Sie dasselbe Tag auf visuell unähnliche Bilder anwenden, schließen Sie mindestens fünf Beispiele für jeden Typ ein.
 
 Beispiel: Schließen Sie für das Tag *model-down-pose* mehr Trainings-Bilder ein, die dem hervorgehobenen Bild unten ähnlich sind, sodass der Service ähnliche Bilder beim Hinzufügen von Tags genauer identifizieren kann.
 
@@ -236,18 +235,18 @@ Beispiel: Für das Tag *casual-shoe* ist das zweite Bild kein guter Kandidat fü
 
 ### Regelmäßiges Trainieren {#periodic-training}
 
-Sie können festlegen, dass der Smart Content Service regelmäßig mit den Assets und zugewiesenen Tags in einem Ordner trainiert wird. Öffnen Sie die Seite [!UICONTROL Eigenschaften] Ihres Asset-Ordners, wählen Sie **[!UICONTROL Smart-Tags aktivieren]** unter der Registerkarte **[!UICONTROL Details]** und speichern Sie die Änderungen.
+Sie können festlegen, dass der Smart Content Service regelmäßig mit den Assets und zugewiesenen Tags in einem Ordner trainiert wird. Öffnen Sie die Seite [!UICONTROL Eigenschaften] Ihres Asset-Ordners, wählen Sie **[!UICONTROL Smart-Tags aktivieren]** auf der Registerkarte **[!UICONTROL Details]** aus und speichern Sie die Änderungen.
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Wenn diese Option für einen Ordner ausgewählt ist, führt [!DNL Experience Manager] automatisch einen Schulungsablauf aus, um den Smart Content Service für die Ordner-Assets und deren Tags auszubilden. Standardmäßig wird der Trainings-Workflow jede Woche samstags um 00:30 Uhr ausgeführt.
+Sobald diese Option für einen Ordner ausgewählt ist, führt [!DNL Experience Manager] automatisch einen Trainings-Workflow aus, um den Smart Content Service für die Ordner-Assets und deren Tags zu trainieren. Standardmäßig wird der Trainings-Workflow jede Woche samstags um 00:30 Uhr ausgeführt.
 
 ### Training bei Bedarf {#on-demand-training}
 
 Sie können den Smart Content Service über die Workflow-Konsole trainieren, wann immer es erforderlich ist.
 
-1. Wechseln Sie in der [!DNL Experience Manager]-Schnittstelle zu **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**.
-1. Wählen Sie auf der Seite **[!UICONTROL Workflow-Modelle]** den Workflow **[!UICONTROL Smart Tags Training]** und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Beginn-Workflow]**.
+1. Wechseln Sie in der [!DNL Experience Manager]-Benutzeroberfläche zu **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**.
+1. Wählen Sie auf der Seite **[!UICONTROL Workflow-Modelle]** den Workflow **[!UICONTROL Smart-Tags-Training]** aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Workflow starten]** .
 1. Suchen Sie im Dialogfeld **[!UICONTROL Workflow ausführen]** nach dem Payload-Ordner, der die mit Tags versehenen Assets für das Trainieren des Diensts enthält.
 1. Geben Sie einen Titel für den Workflow an und fügen Sie einen Kommentar hinzu. Klicken Sie dann auf **[!UICONTROL Ausführen]**. Die Assets und Tags werden für das Training übermittelt.
 
@@ -255,13 +254,13 @@ Sie können den Smart Content Service über die Workflow-Konsole trainieren, wan
 
 >[!NOTE]
 >
->Nachdem die Assets in einem Ordner für die Schulung verarbeitet wurden, werden in den nachfolgenden Schulungszyklen nur die geänderten Assets verarbeitet.
+>Sobald die Assets in einem Ordner für die Schulung verarbeitet wurden, werden nur die geänderten Assets in nachfolgenden Schulungszyklen verarbeitet.
 
-### Ansichten-Schulungsberichte {#viewing-training-reports}
+### Anzeigen von Schulungsberichten {#viewing-training-reports}
 
 Um sicherzustellen, dass der Smart Content Service auf Ihre Tags im Asset-Trainingssatz trainiert ist, überprüfen Sie den Bericht zum Trainings-Workflow über die Berichte-Konsole.
 
-1. Wechseln Sie in der [!DNL Experience Manager]-Schnittstelle zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Berichte]**.
+1. Wechseln Sie in der [!DNL Experience Manager]-Benutzeroberfläche zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Berichte]**.
 1. Klicken Sie auf der Seite **[!UICONTROL Asset-Berichte]** auf **[!UICONTROL Erstellen]**.
 1. Wählen Sie den Bericht **[!UICONTROL Smart-Tags-Training]** aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Weiter]**.
 1. Geben Sie einen Titel und eine Beschreibung für den Bericht an. Lassen Sie unter **[!UICONTROL Berichtplanen]** die Option **[!UICONTROL Jetzt]** aktiviert. Wenn Sie den Bericht für einen späteren Zeitpunkt planen möchten, wählen Sie **[!UICONTROL Später]** und geben Sie ein Datum und eine Uhrzeit an. Klicken Sie dann in der Symbolleiste auf **[!UICONTROL Erstellen]**.
@@ -280,12 +279,12 @@ Um sicherzustellen, dass der Smart Content Service auf Ihre Tags im Asset-Traini
 
    * Subtile Unterschiede in Bildern können nicht erkannt werden. Beispiel: T-Shirts mit schmalem oder normalem Schnitt.
    * Tags können nicht anhand von winzigen Mustern/Teilen eines Bildes identifiziert werden. Beispiel: Logos auf T-Shirts.
-   * Tagging wird in den Gebietsschemas unterstützt, in denen [!DNL Experience Manager] unterstützt wird. Eine Liste der Sprachen finden Sie in den [Versionshinweisen für Smart Content Services](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html?lang=de).
+   * Tagging wird in den Gebietsschemata unterstützt, in denen [!DNL Experience Manager] unterstützt wird. Eine Liste der Sprachen finden Sie in den [Versionshinweisen für Smart Content Services](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html?lang=de).
 
 * Verwenden Sie [!DNL Assets]-OmniSearch (Volltextsuche), um nach Assets mit Smart-Tags (normal oder erweitert) zu suchen. Es gibt kein separates Suchprädikat für Smart-Tags.
 
 >[!MORELIKETHIS]
 >
->* [Übersicht und Schulung von Smart-Tags](enhanced-smart-tags.md)
->* [Videoschulung zu Smart-Tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
+>* [Überblick und Schulung von Smart-Tags](enhanced-smart-tags.md)
+* [Video-Tutorial zu Smart-Tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
 
