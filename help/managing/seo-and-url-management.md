@@ -10,14 +10,13 @@ topic-tags: managing
 content-type: reference
 discoiquuid: 7c8f2cec-870b-41a8-8d98-70e29b495587
 docset: aem65
-translation-type: tm+mt
-source-git-commit: c623724df8d849f4cc01f5dc134c775dc24dafc7
+exl-id: b138f6d1-0870-4071-b96e-4a759ad9a76e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '3119'
 ht-degree: 100%
 
 ---
-
 
 # Best Practices für SEO und URL-Verwaltung{#seo-and-url-management-best-practices}
 
@@ -25,11 +24,11 @@ Suchmaschinenoptimierung (SEO) ist zu einem wichtigen Thema für viele Marketer 
 
 Dieses Dokument beschreibt zunächst einige [Best Practices für SEO](#seo-best-practices) und Empfehlungen zu deren Erreichung bei einer AEM-Implementierung. Anschließend beschäftigt sich das Dokument intensiver mit einigen der [komplexeren Implementierungsschritte](#aem-configurations) aus dem ersten Abschnitt.
 
-## Best Practices für SEO     {#seo-best-practices}
+## Best Practices für SEO  {#seo-best-practices}
 
 Dieser Abschnitt beschreibt einige allgemeine Best Practices für SEO
 
-### URLs      {#urls}
+### URLs  {#urls}
 
 Hinsichtlich URLs bestehen einige allgemein akzeptierte Best Practices.
 
@@ -56,12 +55,11 @@ Im Folgenden finden Sie einige allgemeine Tipps zum Erstellen von URLs für SEO:
    * Selektoren, die einen semantischen Wert bieten, sind auf Seiten, die Selektoren verwenden, zu bevorzugen.
    * Wenn ein Mensch Ihre URL nicht lesen kann, kann eine Suchmaschine das auch nicht.
    * Beispiel:
-
       `mybrand.com/products/product-detail.product-category.product-name.html`
-wird  vorgezogen 
+wird vorgezogen gegenüber 
 `mybrand.com/products/product-detail.1234.html`
 
-* Vermeiden Sie Subdomänen wo möglich, da Suchmaschinen diese als unterschiedliche Einheiten einordnen und so den SEO-Wert der Website fragmentieren.
+* Vermeiden Sie Sub-Domains wo möglich, da Suchmaschinen diese als unterschiedliche Einheiten einordnen und so den SEO-Wert der Website fragmentieren.
 
    * Nutzen Sie stattdessen Unterpfade auf erster Ebene. Verwenden Sie beispielsweise `www.mybrand.com/es/home.html` statt `es.mybrand.com/home.html`.
 
@@ -119,7 +117,7 @@ In den letzten Jahren geht der Trend jedoch dahin, diese zu entfernen, um URLs l
 * ermöglichen es, die Seiten auf dem Dispatcher zwischenzuspeichern, was häufig die Sicherheit erhöht;
 * ermöglichen es, Inhalte direkt zu bearbeiten, anstelle der Verwendung eines allgemeinen Servlets zur Inhaltsabfrage. Dadurch erhalten Sie die Vorteile von ACLs, die Sie auf das Repository anwenden, und Filter, die Sie für den Dispatcher verwenden.
 
-#### Verwenden von Selektoren für Servlets      {#using-selectors-for-servlets}
+#### Verwenden von Selektoren für Servlets   {#using-selectors-for-servlets}
 
 AEM bietet uns zwei Optionen zum Schreiben von Servlets:
 
@@ -128,7 +126,7 @@ AEM bietet uns zwei Optionen zum Schreiben von Servlets:
 
 Das folgende Beispiel zeigt, wie diesen beiden Mustern folgende Servlets registriert werden, sowie den Vorteil, der durch die Verwendung von Sling-Servlets erzielt wird.
 
-#### Container-Servlets (eine Ebene nach unten)      {#bin-servlets-one-level-down}
+#### Container-Servlets (eine Ebene nach unten)   {#bin-servlets-one-level-down}
 
 **Container**-Servlets folgen dem Muster, das viele Entwickler für die J2EE-Programmierung verwenden. Das Servlet wird an einem bestimmten Punkt des Pfades registriert, was im Falle von AEM häufig unter `/bin` geschieht, und Sie extrahieren die erforderlichen Abfrageparameter aus der Abfragezeichenfolge.
 
@@ -184,7 +182,7 @@ Die Vorteile dieses Ansatzes:
 
 ### Umschreiben der URL {#url-rewriting}
 
-In AEM werden all Ihre Websites unter `/content/my-brand/my-content` gespeichert. Während dies aus der Perspektive der Repository-Datenverwaltung nützlich sein kann, ist dies nicht notwendigerweise die Art und Weise, wie Ihre Kunden die Website sehen sollen, und kann im Widerspruch zu den SEO-Richtlinien stehen, URLs so kurz wie möglich zu halten. Zusätzlich kann es sein, dass Sie mehrere Websites von derselben AEM-Instanz und zwei unterschiedlichen Domänennamen aus bedienen.
+In AEM werden all Ihre Websites unter `/content/my-brand/my-content` gespeichert. Während dies aus der Perspektive der Repository-Datenverwaltung nützlich sein kann, ist dies nicht notwendigerweise die Art und Weise, wie Ihre Kunden die Website sehen sollen, und kann im Widerspruch zu den SEO-Richtlinien stehen, URLs so kurz wie möglich zu halten. Zusätzlich kann es sein, dass Sie mehrere Websites von derselben AEM-Instanz und zwei unterschiedlichen Domain-Namen aus bedienen.
 
 Dieser Abschnitt erläutert die verfügbaren AEM-Optionen zum Verwalten und der Präsentation dieser URLs gegenüber dem Benutzer auf leichter lesbare, SEO-freundliche Weise.
 
@@ -295,11 +293,11 @@ Es gibt jedoch einfachere Möglichkeiten, dies zu lösen:
    }
    ```
 
-#### Apache HTTP-Server mod_rewrite      {#apache-http-server-mod-rewrite}
+#### Apache HTTP-Server mod_rewrite   {#apache-http-server-mod-rewrite}
 
 Bisher haben Sie die Zuordnungen gemeinsam mit der Logik in den Komponenten implementiert, um diese Zuordnungen bei der Ausgabe von URLs auf Seiten zu verwenden.
 
-Das letzte Teil des Puzzles besteht darin, diese gekürzten URLs zu verwalten, wenn sie beim Dispatcher ankommen, wobei `mod_rewrite` ins Spiel kommt. Der größte Vorteil bei der Verwendung von `mod_rewrite` besteht darin, dass die URLs zurück in ihre Langform gebracht werden, *bevor* sie an das Dispatcher-Modul gesendet werden. Das bedeutet, dass der Dispatcher die lange URL vom Veröffentlichungsserver abfragt und diese entsprechend zwischenspeichert. Sämtliche vom Veröffentlichungsserver ausgehenden Dispatcher-Flush-Anfragen können diesen Inhalt erfolgreich ungültig machen.
+Das letzte Teil des Puzzles besteht darin, diese gekürzten URLs zu verwalten, wenn sie beim Dispatcher ankommen, wobei `mod_rewrite` ins Spiel kommt. Der größte Vorteil bei der Verwendung von `mod_rewrite` besteht darin, dass die URLs zurück in ihre Langform gebracht werden, *bevor* sie an das Dispatcher-Modul gesendet werden. Das bedeutet, dass der Dispatcher die lange URL vom Veröffentlichungs-Server abfragt und diese entsprechend zwischenspeichert. Sämtliche vom Veröffentlichungs-Server ausgehenden Dispatcher-Flush-Anfragen können diesen Inhalt erfolgreich ungültig machen.
 
 Um diese Regeln zu implementieren, können Sie `RewriteRule`-Elemente unter Ihrem virtuellen Host in der Apache HTTP Server-Konfiguration hinzufügen. Wenn Sie gekürzte URLs aus dem vorherigen Beispiel erweitern möchten, können Sie eine Regel implementieren, die folgendermaßen aussieht:
 
@@ -312,7 +310,7 @@ Um diese Regeln zu implementieren, können Sie `RewriteRule`-Elemente unter Ihre
 </VirtualHost>
 ```
 
-### Kanonische URL-Tags      {#canonical-url-tags}
+### Kanonische URL-Tags   {#canonical-url-tags}
 
 Kanonische URL-Tags sind Link-Tags die in der Kopfzeile des HTML-Dokuments eingegeben werden und festlegen, wie Suchmaschinen die Seite bei der Indizierung des Inhalts behandeln sollen. Ihr Vorteil besteht darin, dass sichergestellt wird, dass eine Seite (verschiedene Versionen davon) auf gleiche Weise indiziert wird, auch wenn die auf die Seite verweisende URL Unterschiede enthält.
 
@@ -364,7 +362,7 @@ Wahlweise können Sie in einer Live-Umgebung bestimmte Pfade ablehnen, die nicht
 
 Der Nachteil der Platzierung einer Datei `robots.txt` im Stammverzeichnis der Website besteht darin, dass Dispatcher-Flush-Anfragen diese Datei löschen könnten und die URL-Zuordnungen den Site-Stamm wahrscheinlich an einen anderen Ort als `DOCROOT` verschieben, wie in der Apache HTTP Server-Konfiguration festgelegt. Aus diesem Grund ist es üblich, diese Datei in der Autoreninstanz am Site-Stamm zu platzieren und sie in der Veröffentlichungsinstanz zu replizieren.
 
-### Erstellen einer XML-Sitemap in AEM      {#building-an-xml-sitemap-on-aem}
+### Erstellen einer XML-Sitemap in AEM   {#building-an-xml-sitemap-on-aem}
 
 Crawler verwenden XML-Sitemaps, um die Websitestrukturen besser zu verstehen. Während es keine Garantie dafür gibt, dass die Bereitstellung einer Sitemap zu verbesserten SEO-Rankings führt, ist dies dennoch eine allgemein anerkannte Best Practice. Sie können die XML-Datei manuell auf einem Webserver als Sitemap verwalten, es wird jedoch empfohlen, die Sitemap programmatisch zu generieren, was gewährleistet, dass die Sitemap automatisch Änderungen widerspiegelt, sobald sie von den Autoren vorgenommen werden.
 
@@ -374,8 +372,8 @@ Um eine Sitemap programmatisch zu generieren, registrieren Sie einen Sling-Servl
 >
 >Sie können ein Sling-Servlet registrieren, um auf den `sitemap`-Selektor mit der Endung `xml` zu warten. Dies führt zur Verarbeitung der Anfrage durch das Servlet, wenn eine URL angefordert wird, die wie folgt endet:
 >    `/<path-to>/page.sitemap.xml`
->Sie können die angeforderte Ressource von der Anfrage erhalten und eine Sitemap für diesen Punkt im Inhaltsbaum generieren, indem Sie die JCR-APIs verwenden.
->Ein solcher Ansatz ist dann vorteilhaft, wenn mehrere Sites von derselben Instanz bedient werden. Eine Anfrage an `/content/siteA.sitemap.xml` würde eine Sitemap für `siteA` generieren, während eine Anfrage an `/content/siteB.sitemap.xml` eine Sitemap für `siteB` generieren würde, ohne dass zusätzlicher Code geschrieben werden muss.
+Sie können die angeforderte Ressource von der Anfrage erhalten und eine Sitemap für diesen Punkt im Inhaltsbaum generieren, indem Sie die JCR-APIs verwenden.
+Ein solcher Ansatz ist dann vorteilhaft, wenn mehrere Sites von derselben Instanz bedient werden. Eine Anfrage an `/content/siteA.sitemap.xml` würde eine Sitemap für `siteA` generieren, während eine Anfrage an `/content/siteB.sitemap.xml` eine Sitemap für `siteB` generieren würde, ohne dass zusätzlicher Code geschrieben werden muss.
 
 ### Erstellen von 301-Weiterleitungen für veraltete URLs {#creating-redirects-for-legacy-urls}
 
@@ -402,4 +400,3 @@ Weitere Informationen finden Sie in den folgenden zusätzlichen Ressourcen:
 * [https://www.internetmarketingninjas.com/blog/search-engine-optimization/301-redirects/](https://www.internetmarketingninjas.com/blog/search-engine-optimization/301-redirects/)
 * [https://github.com/Adobe-Marketing-Cloud/tools/tree/master/dispatcher/redirectTester](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/dispatcher/redirectTester)
 * [https://adobe-consulting-services.github.io/](https://adobe-consulting-services.github.io/)
-
