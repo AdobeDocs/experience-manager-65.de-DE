@@ -8,27 +8,26 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 8b85bdc7-3864-49c9-81b0-cf15b8e986d9
-translation-type: tm+mt
-source-git-commit: 7caf09f7020c066072eac04a349a19b144dfeb7b
+exl-id: 123087a2-9d09-4579-9185-2ccd7d25bf8d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1199'
 ht-degree: 92%
 
 ---
 
-
 # Starten Sie Document Services-APIs aus dem AEM-Arbeitsablauf  {#initiate-document-services-apis-from-aem-workflow}
 
 ## Assembler {#assembler}
 
-AEM Forms stellt benutzerdefinierte Workflows zum Aufrufen der folgenden Assembler-Dienst-APIs bereit:
+AEM Forms bietet benutzerdefinierte Workflows zum Aufrufen der folgenden Assembler-Dienst-APIs:
 
 * **invoke**: Ruft die Prozesse auf, die in der Eingabe-DDX bei gelieferten Eingaben angegeben wurden.
 * **toPDFA**: Konvertiert Eingabe-PDF-Dokumente in PDF/A-Dokumente.
 
 ### Rufen Sie den DDX-Arbeitsablauf auf {#invoke-ddx-workflow}
 
-Der Workflow **Invoke DDX** ruft die API des Assembler-Dienstes auf, mit der Sie Dokumente zusammenführen oder aufteilen, Wasserzeichen zu einer PDF-Datei hinzufügen usw.`Invoke`
+Der Workflow **DDX aufrufen** ruft die `Invoke` Assembler-Dienst-API auf, die Sie zum Zusammenführen oder Aufteilen von Dokumenten, zum Hinzufügen von Wasserzeichen zu einer PDF-Datei usw. verwenden können.
 
 1. Ziehen Sie **[!UICONTROL Invoke DDX]** auf der Registerkarte „Forms Workflow“ in den Sidekick.
 1. Doppelklicken Sie auf „Hinzugefügt“, um die Komponente zu bearbeiten.
@@ -46,7 +45,7 @@ Der Arbeitsablauf „Invoke DDX“ erfordert folgende Eingabedokumente:
 
 * **Create Map from PayLoad**: Ist diese Option ausgewählt, werden alle Dokumente im Payload-Ordner zur Zuordnung des Eingabedokuments für die `invoke`-API im Assembler hinzugefügt. Der Knotenname für jedes Dokument wird als Schlüssel in der Zuordnung verwendet.
 
-* **Input Dokument Map**: Gibt die Zuordnung des Eingabe-Dokuments an. Sie können beliebig viele Einträge hinzufügen, wobei jeder Eintrag den Schlüssel des Dokuments in der Zuordnung und die Quelle des Dokuments angibt.
+* **Input Document&#39;s Map**: Gibt die Zuordnung des Eingabedokuments an. Sie können beliebig viele Einträge hinzufügen, wobei jeder Eintrag den Schlüssel des Dokuments in der Zuordnung und die Quelle des Dokuments angibt.
 
 #### Environment Options {#environment-options}
 
@@ -61,7 +60,7 @@ Auf der Registerkarte „Environment Options“ können Sie die verschiedenen Ve
 
 Je nach Eingabe-DDX kann das invoke-API mehrere Ausgabe-Dokumente erstellen. Auf der Registerkarte „Output Documents“ können Sie festlegen, wo Output Documents gespeichert werden.
 
-1. *Ausgabe in Nutzlast* speichern: Speichert Ausgabedateien im Payload-Ordner oder überschreibt die Payload, wenn Payload eine Dokumente ist.
+1. *Save Output in Payload*: Speichert Ausgabedokumente im Payload-Ordner oder überschreibt die Payload, wenn es sich bei der Payload um eine Datei handelt.
 1. *Output Document&#39;s Map*: Hiermit können Sie explizit angeben, wo jedes output document gespeichert werden soll, indem ein Eintrag pro output document hinzugefügt wird. Jeder Eintrag gibt das Dokument und den entsprechenden Speicherort an. Ein Output Document kann die Payload überschreiben oder im Payload-Ordner speichern. Dies ist nützlich, wenn es mehrere Output Documents gibt.
 
 1. *Job Log*: Gibt an, wo das Auftragsprotokolldokument gespeichert werden soll, was bei Fehlerbehebungsfehlern hilfreich sein kann.
@@ -91,7 +90,7 @@ Mithilfe der Konvertierungsoptionen können Sie Optionen festlegen, die den Vorg
 * *Result Level*: Gibt die Protokollebene, die für die PDF/A-Konvertierungsprotokolle verwendet werden soll, an.
 * *Signatures*: Gibt an, wie die Signaturen im Eingabedokument während der Konvertierung verarbeitet werden müssen.
 * *Color Space*: Gibt den vordefinierten Farbraum, der für das PDF/A-Dokument verwendet werden soll, an.
-* ** VerifyConversion: Gibt an, ob das konvertierte PDF/A-Dokument nach der Konvertierung auf PDF/A-Kompatibilität überprüft werden soll.
+* ** VerifyConversion: Gibt an, ob das konvertierte PDF/A-Dokument nach der Konvertierung auf PDF/A-Konformität überprüft werden soll.
 * *Job Log Level*: Gibt die Protokollebene, die für die Verarbeitung von Protokollen verwendet werden soll, an.
 
 * *Metadata Extension Schema*: Gibt den Pfad zum Metadaten-Erweiterungsschema, der für XMP-Eigenschaften in den Metadaten des PDF-Dokuments verwendet werden soll, an.
@@ -160,4 +159,3 @@ Der Arbeitsablauf „Nicht-interaktive PDF generieren“ ist ein Wrapper um die 
 * Linearized PDF: Gibt an, ob die generierte PDF-Datei für Webanzeige optimiert werden soll.
 * *Tagged PDF*: Gibt an, ob die erstellten PDF-Dateien barrierefrei gemacht werden.
 * *XCI document*: Gibt den Pfad zur XCI-Datei an.
-
