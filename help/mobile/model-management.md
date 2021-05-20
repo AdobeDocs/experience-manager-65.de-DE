@@ -8,14 +8,13 @@ contentOwner: Jyotika Syal
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: c8281f98-9811-42f7-9a31-f82dd0f09319
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 50785534-5784-4354-b123-5e640b7c0242
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 3%
 
 ---
-
 
 # Modellübersicht{#models-overview}
 
@@ -23,70 +22,70 @@ ht-degree: 3%
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Die Modellverwaltung umfasst die Erstellung und Verwaltung von Modellen zum Zweck der Verknüpfung mit Datenobjekten. Jedes Modell enthält alle Eigenschaften und Felddefinitionen, die zur Erleichterung der Erstellung und Wiedergabe von Objekten erforderlich sind.
+Die Modellverwaltung umfasst die Erstellung und Verwaltung von Modellen zum Zweck der Zuordnung zu Datenobjekten. Jedes Modell enthält alle Eigenschaften und Felddefinitionen, die zur Erleichterung der Erstellung und Darstellung von Objekten erforderlich sind.
 
-Die Modellverwaltung umfasst die Erstellung von **Modellen**, **Entitäten** und **Leerzeichen**. Das folgende Diagramm zeigt die Beziehung zwischen dem AEM Content und den Modellen.
+Die Modellverwaltung umfasst die Erstellung von **Modellen**, **Entitäten** und **Leerzeichen**. Das folgende Diagramm zeigt die Beziehung zwischen AEM Content und den Modellen.
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
 ## Das Inhaltsmodell {#the-content-model}
 
-Ein Modell beschreibt den Inhaltstyp und gibt an, welche Informationen der nativen Anwendung zur Verfügung stehen. Es ist eine Beschreibung dessen, was ein Stück Inhalt ausmacht. Ein Inhaltsmodell ist die Regeln zum Erstellen eines Inhaltselements. Das Inhaltsmodell beinhaltet, welche Daten verfügbar sind, welche Assets verwendet werden können, die Beziehung zwischen Assets und Daten, die Beziehung zu anderen Inhaltsmodellen und die verfügbaren Metadaten.
+Ein Modell beschreibt den Inhaltstyp und gibt an, welche Informationen für die native Anwendung verfügbar sein werden. Es ist eine Beschreibung dessen, was ein Inhaltselement ausmacht. Ein Inhaltsmodell ist die Regel zum Erstellen eines Inhaltselements. Das Inhaltsmodell umfasst, welche Daten verfügbar sind, welche Assets verwendet werden können, die Beziehung zwischen Assets und Daten, die Beziehung zu anderen Inhaltsmodellen und die verfügbaren Metadaten.
 
-Modelle dienen auch dazu, vorhandene AEM in Objekte umzuwandeln, die von nativen mobilen Apps einfach verwendet werden können.
+Modelle dienen auch dazu, vorhandene AEM in Objekte umzuwandeln, die von nativen Apps einfach verwendet werden können.
 
-Content Services bietet einige vordefinierte Modelle für häufig verwendete Objekte wie Assets, Asset-Sammlungen, HTML-Seiten, App-Konfigurationen und Kanal-unabhängige Seiten. Diese sind so konfigurierbar, dass sie spezifischen Kundenanforderungen entsprechen, ohne dass AEM Entwicklungsaufwand erforderlich ist.
+Content Services bietet einige vordefinierte Modelle für gängige Objekte wie Assets, Asset-Sammlungen, HTML-Seiten, App-Konfigurationen und kanalunabhängige Seiten. Diese können so konfiguriert werden, dass sie spezifischen Kundenanforderungen gerecht werden, ohne dass AEM Entwicklungsaufwand erforderlich ist.
 
 Der Benutzer kann seine eigenen Modelle erstellen. Dies ermöglicht die Erstellung neuer Inhaltstypen, die noch nicht von AEM verwaltet werden. Die Modellerstellung erfolgt über eine Benutzeroberfläche mit vorhandenen Primitive-Typen.
 
-Das folgende Diagramm zeigt das Inhaltsmodell für AEM Mobile-Apps und die Zuweisung von Entitäten, Ordnern und Leerzeichen zu einer App.
+Das folgende Diagramm zeigt das Inhaltsmodell für AEM Mobile-Apps und wie Entitäten, Ordner und Leerzeichen einer App zugewiesen werden.
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
 ### Die Modelle {#the-models}
 
-Modelle werden verwendet, um zu bestimmen, wie Entitäten erstellt werden. Sie definieren, was in einer Entität verfügbar ist und wie diese Daten aus AEM Inhalten generiert werden. Bevor Sie Beginn mit der Arbeit mit Bereichen, Ordnern und Entitäten haben, sollten Sie sich mit dem Erstellen und Verwalten von Modellen auskennen.
+Modelle werden verwendet, um zu bestimmen, wie Entitäten erstellt werden. Sie definieren, was in einer Entität verfügbar ist und wie diese Daten aus AEM Inhalt generiert werden. Bevor Sie mit der Arbeit mit Leerzeichen, Ordnern und Entitäten beginnen, sollten Sie mit dem Erstellen und Verwalten von Modellen vertraut sein.
 
 >[!NOTE]
 >
->Ein Modell existiert außerhalb einer App, da es von mehr als einer App verwendet werden kann.
+>Ein Modell existiert außerhalb einer App, da mehrere Apps es verwenden können.
 
 
-Siehe **[Modelle](/help/mobile/administer-mobile-apps.md)**, um Modelle im Dashboard und Repository zu erstellen und zu verwalten.
+Siehe **[Modelle](/help/mobile/administer-mobile-apps.md)** zum Erstellen und Verwalten von Modellen im Dashboard und Repository.
 
 ### Entitäten im Inhaltsmodell {#entities-in-content-model}
 
-Eine Entität ist eine Instanz eines Inhaltsmodells. Eine Entität wird über die Content Services-API der clientseitigen Bibliothek bereitgestellt und bietet einer nativen App die Möglichkeit, auf Kanal unabhängig zuzugreifen.
+Eine Entität ist eine Instanz eines Inhaltsmodells. Eine Entität wird über die Content Services-API der Client-seitigen Bibliothek bereitgestellt und bietet einer nativen App die Möglichkeit, kanalunabhängig auf Inhalte zuzugreifen.
 
-Bei vorhandenen AEM wird eine Entität mithilfe eines Modells und der AEM Inhaltsquelle generiert. Eine Seitenentität ist beispielsweise ein vom Kanal und Layout unabhängiges Objekt, das von einer AEM und dem Seitenmodell generiert wird.
+Bei vorhandenem AEM wird eine Entität mithilfe eines Modells und der AEM Inhaltsquelle generiert. Beispielsweise ist eine Seitenentität ein kanalunabhängiges und layout-unabhängiges Objekt, das von einer AEM Seite und dem Seitenmodell generiert wird.
 
-Änderungen am referenzierten Inhalt einer Entität führen zu einer Änderung der Entität. Wenn beispielsweise *cq:page* aktualisiert wird, werden auch alle Entitäten, die auf dieser Seite basieren, aktualisiert.
+Änderungen am referenzierten Inhalt einer Entität führen zu einer Änderung an der Entität. Wenn beispielsweise *cq:page* aktualisiert wird, werden auch alle Entitäten aktualisiert, die auf dieser Seite basieren.
 
-Siehe **[Arbeiten mit Entitäten](/help/mobile/spaces-and-entities.md)**, um benutzerdefinierte Entitäten aus Modellen zu erstellen.
+Informationen zum Erstellen benutzerdefinierter Entitäten aus Modellen finden Sie unter **[Arbeiten mit Entitäten](/help/mobile/spaces-and-entities.md)** .
 
 >[!NOTE]
 >
->Wenn das Modell nicht mit einem vorhandenen AEM übereinstimmt, z. B. wenn der Kunde ein neues Modell erstellt hat, dann gibt es eine Benutzeroberfläche, damit ein Kunde eine neue Entität erstellen kann.
+>Wenn das Modell keinem vorhandenen AEM-Inhalt entspricht, z. B. wenn der Kunde ein neues Modell erstellt hat, gibt es eine Benutzeroberfläche, über die ein Kunde eine neue Entität erstellen kann.
 
 
 ### Leerzeichen im Inhaltsmodell {#spaces-in-content-model}
 
-Ein Leerzeichen wird verwendet, um Entitäten für einfachen Zugriff zu organisieren. Ein Leerzeichen kann einen oder mehrere Entitätstypen enthalten und kann Unterordner enthalten.
+Ein Leerzeichen dient zum Organisieren von Entitäten für einfachen Zugriff. Ein Leerzeichen kann einen oder mehrere Entitätstypen enthalten und Unterordner enthalten.
 
-Auf der AEM Seite ist ein Leerzeichen eine bequeme Möglichkeit, damit verbundene Entitäten zu verwalten. Sie kann auch verwendet werden, um Autorisierungsberechtigungen zuzuweisen. Die Autorisierung kann an einem Ort vorgenommen werden, der dann die Entitäten schützt, die sich in diesem Raum befinden.
+Auf der AEM Seite ist ein Leerzeichen eine bequeme Möglichkeit, verwandte Entitäten zu verwalten. Es kann auch verwendet werden, um Autorisierungsberechtigungen zuzuweisen. Die Autorisierung kann an einem Leerzeichen vorgenommen werden, das dann die Entitäten schützt, die sich in diesem Bereich befinden.
 
 *Beispiel*:
 
-Ein Benutzer verfügt über drei allgemeine Klassifizierungen von Entitäten. Eine ist nur für den internen Gebrauch bestimmt, eine andere für den öffentlichen Gebrauch und eine dritte für allgemeine Entitäten, die von vielen Apps verwendet werden. Um eine einfache Verwaltung zu ermöglichen, erstellt der Benutzer drei Leerzeichen: *internal*, *public* (mit sowohl englischem als auch französischem Inhalt) und *common* für die Verwaltung der entsprechenden Entitäten, wie unten erwähnt:
+Ein Benutzer verfügt über drei allgemeine Klassifizierungen von Entitäten. Eine dient nur der internen Verwendung, eine andere ist für die öffentliche Verwendung zugelassen und die dritte für gängige Entitäten, die von vielen Apps verwendet werden. Um die Verwaltung zu vereinfachen, erstellt der Benutzer drei Leerzeichen: *internal*, *public* (mit sowohl englischem als auch französischem Inhalt) und *common* für die Verwaltung der entsprechenden Entitäten wie unten erwähnt:
 
-* /content/instances/internal
-* /content/entity/public/de
+* /content/entity/internal
+* /content/entity/public/en
 * /content/entity/public/fr
-* /content/instances/common
+* /content/entity/common
 
-Dem Bereich wird ein Dienstendpunkt bereitgestellt, damit die native Client-Bibliothek eine Liste des Inhalts eines Bereichs anfordern kann. Diese &quot;Auflistung&quot;wird als JSON-Objekt zurückgegeben.
+Der Bereich wird mit einem Dienstendpunkt versehen, damit die native Client-Bibliothek eine Liste der Inhalte eines Platzes anfordern kann. Diese &quot;Auflistung&quot;wird als JSON-Objekt zurückgegeben.
 
-Siehe **[Bereiche und Entitäten](/help/mobile/spaces-and-entities.md)** zum Erstellen und Veröffentlichen von Bereichen.
+Informationen zum Erstellen und Veröffentlichen von Platzierungen finden Sie unter **[Platzierungen und Entitäten](/help/mobile/spaces-and-entities.md)** .
 
 >[!NOTE]
 >
@@ -94,6 +93,6 @@ Siehe **[Bereiche und Entitäten](/help/mobile/spaces-and-entities.md)** zum Ers
 
 ### Ordner im Inhaltsmodell {#folders-in-content-model}
 
-Ordner ermöglichen es Benutzern, Entitäten nach Bedarf zu organisieren und erleichtern eine bessere ACL-Steuerung. Leerzeichen können Ordner enthalten, um den Inhalt und die Assets des Raums weiter zu organisieren. Ein Benutzer kann eine eigene Hierarchie unter einem Leerzeichen erstellen.
+Ordner ermöglichen es Benutzern, Entitäten nach Bedarf zu organisieren und erleichtern eine feinere ACL-Steuerung. Leerzeichen können Ordner enthalten, die die weitere Organisation des Inhalts und der Assets des Raums erleichtern. Ein Benutzer kann eine eigene Hierarchie unter einem Leerzeichen erstellen.
 
-Siehe **[Arbeiten mit Ordnern in einem Bereich](/help/mobile/spaces-and-entities.md)**, um Ordner in einem Bereich zu erstellen und zu verwalten.
+Informationen zum Erstellen und Verwalten von Ordnern in einem Bereich finden Sie unter **[Arbeiten mit Ordnern in einem Leerzeichen](/help/mobile/spaces-and-entities.md)**.
