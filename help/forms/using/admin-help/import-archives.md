@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b6f6463a-2ae4-43d2-8d16-cc20a954e50e
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 0c15677a-ee17-425e-a261-fb3ae8688eb2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1465'
 ht-degree: 100%
 
 ---
-
 
 # Archive importieren und verwalten {#import-and-manage-archives}
 
@@ -167,4 +166,3 @@ Verwenden Sie die Registerkarte „Archive“, um LCAs, die in Workbench erstell
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Archivverwaltung“.
 1. Aktivieren Sie auf der Seite Archivverwaltung das Kontrollkästchen für das zu entfernende Archiv und klicken Sie auf „Entfernen“.
-
