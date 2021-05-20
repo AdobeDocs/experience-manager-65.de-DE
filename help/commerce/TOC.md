@@ -1,21 +1,20 @@
 ---
-sub-product: AEM Content und Commerce
-user-guide-title: AEM Content und Commerce
+sub-product: Handbuch zu Adobe Experience Manager Content and Commerce
+user-guide-title: Handbuch zu Adobe Experience Manager Content and Commerce
 breadcrumb-title: Commerce-Anleitung
-user-guide-description: Verstehen Sie, wie Sie AEM Content und Commerce verwenden und verwalten.
-translation-type: tm+mt
+user-guide-description: Erfahren Sie, wie Sie Adobe Experience Manager Content and Commerce verwenden und verwalten.
 source-git-commit: 8612e7c4105a9872fc8bba1988716eaa4b18d550
 workflow-type: tm+mt
 source-wordcount: '104'
-ht-degree: 51%
+ht-degree: 73%
 
 ---
 
 
 # Commerce {#commerce}
 
-+ [AEM Content und Commerce](/help/commerce/home.md)
-+ [Wichtige Änderungen an AEM Content und Commerce](cif/changes.md)
++ [Handbuch zu Adobe Experience Manager Content and Commerce](/help/commerce/home.md)
++ [Wesentliche Änderungen an AEM Content und Commerce](cif/changes.md)
 + [Einführung und Übersicht](cif/introduction.md)
 + Integrationen {#integrations}
    + [Adobe Commerce](cif/integrating/magento.md)
@@ -23,7 +22,7 @@ ht-degree: 51%
 + AEM Storefront {#storefront}
    + [Erste Schritte](cif/getting-started.md)
    + Verwalten {#administering}
-      + [Multi-Store-Einrichtung](cif/configuring/multi-store-setup.md)
+      + [Multi-Store-Setup](cif/configuring/multi-store-setup.md)
       + [Verwendung mehrerer Vorlagen](cif/configuring/multi-template-usage.md)
       + [Konfigurieren von URLs für SEO](cif/configuring/advanced-url-configuration.md)
       + [Zwischenspeicheroptionen](cif/configuring/caching.md)
@@ -31,7 +30,7 @@ ht-degree: 51%
       + [Entwickeln mit AEM](cif/develop.md)
       + [Festlegen des Stils von CIF-Komponenten](cif/customizing/style-cif-component.md)
       + [Anpassen von CIF-Komponenten](cif/customizing/customize-cif-components.md)
-      + [Verwenden von CIF-Katalogwählern](cif/customizing/use-cif-pickers.md)
+      + [Verwenden der CIF-Katalogauswahl](cif/customizing/use-cif-pickers.md)
 + [Migration](cif/migration.md)
 + Versionshinweise {#release-notes}
    + [2021](cif/release-notes/release-notes-2021.md)
@@ -45,8 +44,8 @@ ht-degree: 51%
    + Verwalten {#administering}
       + [E-Commerce](/help/commerce/cif-classic/administering/ecommerce.md)
       + [Konzepte ](/help/commerce/cif-classic/administering/concepts.md)
-      + [Verwaltung des generischen E-Commerce](/help/commerce/cif-classic/administering/generic.md)
-      + [SAP-Commerce Cloud](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
+      + [Verwalten des generischen eCommerce](/help/commerce/cif-classic/administering/generic.md)
+      + [SAP Commerce Cloud](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
    + Entwickeln {#developing}
       + [E-Commerce](/help/commerce/cif-classic/developing/ecommerce.md)
       + [Entwicklung (generisch)](/help/commerce/cif-classic/developing/generic.md)
