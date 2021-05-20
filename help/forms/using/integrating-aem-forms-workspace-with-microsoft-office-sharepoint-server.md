@@ -9,21 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 8990b422-f4f6-4080-871a-33cdf7ca6455
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+exl-id: d080932f-d5fb-482d-9329-62da5df10362
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 86%
 
 ---
 
-
 # Integrieren von AEM Forms Workspace in Microsoft Office SharePoint Server{#integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server}
 
 **- Voraussetzungen**
 
 **Voraussetzung:**
-KenntnisseBevor Sie AEM Forms Workspace zu SharePoint Server hinzufügen können, müssen Sie Zugriff auf SharePoint Server mit den entsprechenden Berechtigungen haben und die URL für den Zugriff auf Workspace kennen. In den folgenden Schritten wird davon ausgegangen, dass Sie mit SharePoint Server vertraut sind. Weitere Informationen zu Webparts in SharePoint Server Webparte finden Sie unter „Webparts in Windows SharePoint-Diensten“.
+KnowledgeBevor Sie AEM Forms Workspace zum SharePoint Server hinzufügen können, müssen Sie Zugriff auf SharePoint Server mit den entsprechenden Berechtigungen haben und über die URL für den Zugriff auf Workspace verfügen. In den folgenden Schritten wird davon ausgegangen, dass Sie mit SharePoint Server vertraut sind. Weitere Informationen zu Webparts in SharePoint Server Webparte finden Sie unter „Webparts in Windows SharePoint-Diensten“.
 
 **Benutzerebene** Erste Schritte
 
@@ -37,7 +36,7 @@ Sie können AEM Forms Workspace als Webpart in Microsoft Office SharePoint Serve
 
 Gehen Sie zur Integration von AEM Forms Workspace in einen Webpart wie folgt vor:
 
-1. Navigieren Sie in einem Webbrowser zur SharePoint-Site, z. B. `https://[myMOSSserver]:44299/default.aspx`, wobei `[myMOSSserver]` der Name oder die IP-Adresse des Sharepoint-Servers ist.
+1. Navigieren Sie in einem Webbrowser zur SharePoint-Site, z. B. `https://[myMOSSserver]:44299/default.aspx` , wobei `[myMOSSserver]` der Name oder die IP-Adresse des Sharepoint-Servers ist.
 
    >[!NOTE]
    >
@@ -58,7 +57,7 @@ Gehen Sie zur Integration von AEM Forms Workspace in einen Webpart wie folgt vor
 
 1. Führen Sie auf der Seite „Seiten-Viewer“ folgende Aufgaben durch:
 
-   1. Geben Sie in das Feld &quot;Link&quot;die URL von AEM Forms Workspace ein, z. B. `https://[AEM_forms_Server]:8080/lc/ws`, wobei `[AEM_forms_Server]` die IP oder den Namen AEM Formularservers darstellt.
+   1. Geben Sie in das Feld &quot;Link&quot;die URL von AEM Forms Workspace ein, z. B. `https://[AEM_forms_Server]:8080/lc/ws`, wobei `[AEM_forms_Server]` die IP-Adresse oder den Namen des AEM Formularservers darstellt.
    1. Klicken Sie auf **Erscheinungsbild** und ändern Sie die Höhe, die Breite und den Titel, damit Sie die gesamte Workspace-Benutzeroberfläche sehen können. Beispielsweise können Sie die Breite und Höhe auf 15 cm bzw. 28 cm festlegen.
    1. Klicken Sie auf **Link testen**. Ein neues Webbrowserfenster mit Workspace wird angezeigt.
    1. (Optional) Klicken Sie auf **Layout** und ändern Sie das Layout von Workspace im Webpart.
@@ -73,4 +72,3 @@ Nachdem Sie die oben beschriebenen Schritte durchgeführt haben, sieht Ihre Shar
 ![AEM Forms Workspace in Microsoft Office SharePoint Server integriert](assets/aem-forms-workspace.jpg)
 
 Abbildung 2 – AEM Forms Workspace in Microsoft Office SharePoint Server integriert
-
