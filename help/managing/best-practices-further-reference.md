@@ -10,7 +10,6 @@ topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '3783'
@@ -30,7 +29,7 @@ Auf dieser Seite finden Sie weitere Details, um die Dokumente und Prinzipien von
 
 ### Funktionen innerhalb von AEM  {#features-within-aem}
 
-Bei der Implementierung von AEM (vor allem zum ersten Mal) müssen Sie die [Funktionen und Workflows von AEM](https://www.adobe.com/de/marketing/experience-manager.html) überprüfen, um sicherzustellen, welche Bereiche Sie möchten/benötigen.
+Bei der Implementierung von AEM (insbesondere zum ersten Mal) müssen Sie die [Funktionen und Workflows von AEM](https://www.adobe.com/de/marketing/experience-manager.html) überprüfen, um sicherzustellen, welche Bereiche Sie benötigen.
 
 Beachten Sie die Funktionen von AEM, die Sie verwenden werden, und die Auswirkungen auf Ihr Design, zum Beispiel:
 
@@ -39,7 +38,7 @@ Beachten Sie die Funktionen von AEM, die Sie verwenden werden, und die Auswirkun
 * [Assets](/help/assets/assets.md)
 * [Tags](/help/sites-administering/tags.md)
 * [Multi-Site-Management und Übersetzung](/help/sites-administering/msm-and-translation.md)
-* [Forms](/help/forms/home.md)
+* [Formulare](/help/forms/home.md)
 * [Communities](/help/communities/deploy-communities.md)
 * [Livefyre](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
 
@@ -69,7 +68,7 @@ Wie bei jedem Projekt ist es wichtig, so schnell wie möglich Grundregeln festzu
 
 >[!NOTE]
 >
->Diese Punkte sind generisch, die Checkliste [Best Practices](/help/managing/best-practices.md) beschäftigt sich mit spezifischen AEM.
+>Diese Punkte sind allgemein gehalten, die [Checkliste mit Best Practices](/help/managing/best-practices.md) behandelt Details zu AEM.
 
 * **Rollen**
 
@@ -207,7 +206,7 @@ Wenn Sie die Struktur für die Website erstellen, folgen Sie der empfohlenen Str
 
 Wenn Sie der Meinung sind, dass Ihr Design nicht den Richtlinien entspricht, oder wenn Sie sich über einige der Auswirkungen unsicher sind, klären Sie diese Fragen, bevor Sie entweder mit der Programmierphase beginnen oder den Inhalt ausfüllen.
 
-### Infrastruktur  {#infrastructure}
+### Infrastruktur {#infrastructure}
 
 Um die Infrastruktur zu definieren oder zu bewerten, hilft es, Zielwerte zu definieren, wie z. B.:
 
@@ -232,7 +231,7 @@ Es gibt mehrere Leistungsfaktoren, die ausgewertet werden können:
 
 * Antwortzeiten für Suchanfragen
 
-Dieser Abschnitt kann in Verbindung mit [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) gelesen werden, die die technischen Details der tatsächlichen Leistungsmessung erweitert.
+Dieser Abschnitt kann in Verbindung mit [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) gelesen werden, die die technischen Details zur tatsächlichen Leistungsmessung erweitert.
 
 #### Antwortzeiten für einzelne Seiten {#response-times-for-individual-pages}
 
@@ -327,7 +326,7 @@ Diese sollten von Anfang des Projekts an geplant und integriert werden. Für die
 
    Um die von Ihnen gesammelten Informationen über Suchanfragen und deren Leistung anzupassen, wird empfohlen, die Informationssammlung in Ihren Projekt-Quellcode aufzunehmen; siehe [Performanceoptimierung](/help/sites-deploying/configuring-performance.md) für weitere Details.
 
-### Gleichzeitigkeit  {#concurrency}
+### Gleichzeitigkeit {#concurrency}
 
 Ihre Website wird einer Reihe von Benutzern/Besuchern zur Verfügung gestellt, sowohl in der Autoren- als auch in der Veröffentlichungsumgebung. Die Zahlen sind oft höher als beim Testen, aber auch schwankend und schwer vorhersehbar. Die Website muss für eine durchschnittliche Anzahl von gleichzeitigen Benutzern/Besuchern konzipiert sein, ohne dass dabei eine negative Auswirkung auf die Performance auftritt. Auch hier kann `request.log` verwendet werden, um Parallelitätstests durchzuführen; siehe [Performanceoptimierung](/help/sites-deploying/configuring-performance.md) für weitere Details.
 
@@ -359,8 +358,8 @@ Bevor wir die entsprechenden Metriken besprechen, eine schnelle Definition der B
 
    | Was/Wo | Kapazität | Volumen |
    |---|---|---|
-   | Client | Rechenleistung des Benutzercomputers. | Komplexität des Seitenlayouts. |
-   | Netzwerk | Netzwerkbandbreite. | Größe der Seite (Code, Bilder usw.) |
+   | Client | Rechenleistung des Computers des Benutzers. | Komplexität des Seitenlayouts. |
+   | Netzwerk | Netzwerkbandbreite. | Größe der Seite (Code, Bilder usw.). |
    | Dispatcher-Cache | Serverspeicher des Webservers (Hauptspeicher und Festplatte). | Webserver (Hauptspeicher und Festplatte). Anzahl und Größe der zwischengespeicherten Seiten. |
    | Output Cache | Serverspeicher des AEM-Servers (Hauptspeicher und Festplatte). | Anzahl und Größe der Seiten im Ausgabe-Zwischenspeicher, die Anzahl der Abhängigkeiten pro Seite. Der Dispatcher-Zwischenspeicher senkt dieses Volumen. |
    | Webserver | Rechenleistung des Webservers. | Anzahl der Anfragen. Der Zwischenspeicher senkt dieses Volumen. |
@@ -379,7 +378,7 @@ Es ist jedoch besser, einen kleinen Satz von genauen, zentralen Metriken zu habe
 
 Sicherheit ist entscheidend und eine immer größere Herausforderung. Sie ***muss*** von Anfang an berücksichtigt und geplant werden.
 
-Die [Sicherheits-Checkliste](/help/sites-administering/security-checklist.md) beschreibt die Schritte, die Sie unternehmen sollten, um sicherzustellen, dass Ihre AEM-Installation bei der Bereitstellung sicher ist. Andere Sicherheitsaspekte werden unter [Sicherheit (bei der Entwicklung)](/help/sites-developing/security.md) und [Benutzerverwaltung und Sicherheit](/help/sites-administering/security.md) behandelt.
+Die [Sicherheits-Checkliste](/help/sites-administering/security-checklist.md) beschreibt die Schritte, die Sie unternehmen sollten, um sicherzustellen, dass Ihre AEM-Installation bei der Bereitstellung sicher ist. Weitere Sicherheitsaspekte werden unter [Sicherheit (bei der Entwicklung)](/help/sites-developing/security.md) und [Benutzerverwaltung und Sicherheit](/help/sites-administering/security.md) behandelt.
 
 ## Parallele und iterative Aufgaben {#parallel-and-iterative-tasks}
 
@@ -387,7 +386,7 @@ Die [Sicherheits-Checkliste](/help/sites-administering/security-checklist.md) be
 >
 >Das Folgende:
 >
->* Angebots an overview related to the *first* implementation of an AEM project.
+>* Bietet einen Überblick über die *first*-Implementierung eines AEM Projekts.
 >* Ist als abstrakte Übersicht gedacht; siehe [Projekt-Checkliste](/help/managing/best-practices.md) für bestimmte Phasen/Milestones/Aufgaben.
 >* Jede Zeitskala ist theoretisch.
 
@@ -491,7 +490,7 @@ Die folgende Liste zeigt Standardannäherungen und Zusammenhänge des Aufwands u
 | Dokumentation | 15 % der Entwicklung |
 | JavaDoc-Dokumentation | 10 % der Entwicklung |
 | Fehlerbehebung | 15 % der Entwicklung |
-| Projektmanagement | 20% der Projektkosten für laufende Projektverwaltung und Projektverwaltung |
+| Projektmanagement | 20% der Projektkosten für laufende Projektverwaltung und Governance |
 
 Die Detailplanung kann dann verfügbare oder benötigte Ressourcen mit Terminen und Kosten verknüpfen.
 
@@ -503,19 +502,19 @@ Die folgenden Site-Metriken sollten definiert werden:
 
 | Klassifizierung | Definition |
 |---|---|
-| Anzahl der Internetseiten |  |
+| Anzahl der Websites |  |
 | Anzahl der Intranet-Sites |  |
 | Anzahl der Codegrundlagen (z. B. wenn Internet und Intranet unterschiedlich sind) |  |
-| Anzahl der einzelnen Seiten |  |
-| Anzahl der Site-Besuche/Tage |  |
-| Anzahl der Ansichten pro Tag |  |
-| Menge (in GB) der Datenübertragung/Tag |  |
+| Anzahl einzelner Seiten |  |
+| Anzahl der Site-Besuche/-Tage |  |
+| Anzahl der Seitenansichten/Tag |  |
+| Datenübertragung (in GB)/Tag |  |
 | Anzahl gleichzeitiger Benutzer (geschlossene Benutzergruppe) |  |
-| Anzahl gleichzeitiger Besucher (Veröffentlichen) |  |
-| Anzahl gleichzeitiger Autoren |  |
+| Anzahl der gleichzeitigen Besucher (Veröffentlichung) |  |
+| Anzahl der gleichzeitigen Autoren |  |
 | Anzahl der registrierten Autoren |  |
-| Anzahl der Aktivierungen/Arbeitstage |  |
-| Anzahl der Aktivierungen während der Bereitstellung |  |
+| Anzahl der Seitenaktivierungen / Arbeitstag |  |
+| Anzahl der Seitenaktivierungen während der Bereitstellung |  |
 
 ## Übersicht der möglichen Werkzeuge {#overview-of-potential-tools}
 
@@ -544,7 +543,7 @@ Die folgende Liste informiert Sie über die verwendbaren Werkzeuge. Sie ist als 
   </tr>
   <tr>
    <td>Selenium</td>
-   <td><a href="https://docs.seleniumhq.org/"></a> Seleniumist ein Open Source Testwerkzeug. Die Tests laufen direkt im Browser ab und emulieren, wie Ihre Benutzer arbeiten.</td>
+   <td><a href="https://docs.seleniumhq.org/"></a> Selenium ist ein Open-Source-Test-Tool. Die Tests laufen direkt im Browser ab und emulieren, wie Ihre Benutzer arbeiten.</td>
   </tr>
   <tr>
    <td>Microsoft Project</td>
@@ -552,23 +551,23 @@ Die folgende Liste informiert Sie über die verwendbaren Werkzeuge. Sie ist als 
   </tr>
   <tr>
    <td>Jira</td>
-   <td><a href="https://www.atlassian.com/software/jira"></a> Jirais ist ein Open-Source-Tool zur Verfolgung und Verwaltung von Details Ihrer Software-Fehler. Arbeitsabläufe können bei Bedarf auf die Fehlerdetails angewendet werden.</td>
+   <td><a href="https://www.atlassian.com/software/jira"></a> Jirais ist ein Open Source-Tool zum Verfolgen und Verwalten von Details Ihrer Softwarefehler. Arbeitsabläufe können bei Bedarf auf die Fehlerdetails angewendet werden.</td>
   </tr>
   <tr>
    <td>Git</td>
-   <td><a href="https://git-scm.com/"></a> Gitis ist eine Software zur Revisionskontrolle.</td>
+   <td><a href="https://git-scm.com/"></a> Gibt eine Revisionskontrollsoftware an.</td>
   </tr>
   <tr>
    <td>Eclipse</td>
-   <td><p>Eclipse ist eine Open Source IDE, die aus verschiedenen Projekten besteht. Diese konzentrieren sich auf den Aufbau einer offenen Entwicklungsplattform, die aus erweiterbaren Frameworks, Tools und Laufzeiten für die Erstellung, Bereitstellung und Verwaltung von Software über den gesamten Lebenszyklus besteht.</p> <p>Weitere Informationen finden Sie unter <a href="/help/sites-developing/howto-projects-eclipse.md">AEM mithilfe von Eclipse</a> entwickeln.</p> </td>
+   <td><p>Eclipse ist eine Open Source IDE, die aus verschiedenen Projekten besteht. Diese konzentrieren sich auf den Aufbau einer offenen Entwicklungsplattform, die aus erweiterbaren Frameworks, Tools und Laufzeiten für die Erstellung, Bereitstellung und Verwaltung von Software über den gesamten Lebenszyklus besteht.</p> <p>Weitere Informationen finden Sie unter <a href="/help/sites-developing/howto-projects-eclipse.md">AEM mit Eclipse entwickeln</a> .</p> </td>
   </tr>
   <tr>
    <td>IntelliJ</td>
-   <td><p>Eine professionelle (und damit lizenzpflichtige) IDE mit einer umfassenden Palette von Features. </p> <p>Weitere Informationen finden Sie unter <a href="/help/sites-developing/ht-intellij.md">Wie Sie AEM Projekte mit IntelliJ IDEA</a> entwickeln.</p> </td>
+   <td><p>Eine professionelle (und damit lizenzkostenpflichtige) IDE mit einer umfassenden Palette von Funktionen. </p> <p>Weitere Informationen finden Sie unter <a href="/help/sites-developing/ht-intellij.md">AEM mit IntelliJ IDEA</a> entwickeln .</p> </td>
   </tr>
   <tr>
    <td>Maven</td>
-   <td><a href="https://maven.apache.org/"></a> Mavenis ist ein Software-Projektmanagement- und -verständniswerkzeug, das den Aufbau eines Projektes (Software und Dokumentation) verwalten kann.</td>
+   <td><a href="https://maven.apache.org/"></a> Mavenis ist ein Software-Projekt-Management- und Verständniswerkzeug, das den Build-Prozess eines Projekts (Software und Dokumentation) verwalten kann.</td>
   </tr>
  </tbody>
 </table>
