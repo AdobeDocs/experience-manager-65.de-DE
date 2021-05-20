@@ -1,5 +1,5 @@
 ---
-title: Übung - Erste interaktive Kommunikation erstellen
+title: Tutorial - Erstellen Ihrer ersten interaktiven Kommunikation
 seo-title: Erstellen Sie Ihre erste interaktive Kommunikation
 description: Erfahren Sie, wie Sie Ihre erste interaktive Kommunikation erstellen.
 seo-description: Erfahren Sie, wie Sie Ihre erste interaktive Kommunikation erstellen.
@@ -8,15 +8,14 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communications, introduction
 discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
-feature: Interactive Communication
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Interaktive Kommunikation
+exl-id: b20bb719-5686-466e-8dde-279b8471bfe3
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1057'
 ht-degree: 91%
 
 ---
-
 
 # Tutorial: Erstellen Sie Ihre erste interaktive Kommunikation {#tutorial-create-your-first-interactive-communication}
 
@@ -53,7 +52,7 @@ Ein Telekommunikationsbetreiber sendet monatliche Rechnungen über die E-Mail an
 * Richten Sie eine AEM-Author-Instanz ein.
 * Installieren Sie das [AEM Forms-Add-On](/help/forms/using/installing-configuring-aem-forms-osgi.md) auf der Author-Instanz
 * Richten Sie die MYSQL-Datenbank ein
-* Beziehen Sie den JDBC-Datenbanktreiber (JAR-Datei) vom Datenbankanbieter. Beispiele im Tutorial basieren auf der MySQL-Datenbank und verwenden Sie Oracle [MySQL JDBC-Datenbanktreiber](https://dev.mysql.com/downloads/connector/j/5.1.html).
+* Beziehen Sie den JDBC-Datenbanktreiber (JAR-Datei) vom Datenbankanbieter. Beispiele im Tutorial basieren auf der SQL-Datenbank und verwenden den Oracle [MySQL JDBC-Datenbanktreiber](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
 ## Schritt 1: Planen Sie die interaktive Kommunikation {#step-plan-the-interactive-communication}
 
@@ -71,7 +70,7 @@ So erstellen Sie eine Anatomie für die interaktive Kommunikation mit den folgen
 * Bedingte Daten
 * Bilder
 
-   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/planning-interactive-communications.md)
+[ ](/help/forms/using/planning-interactive-communications.md)
 
 ## Schritt 2: Erstellen eines Formulardatenmodells {#step-create-form-data-model}
 
@@ -90,7 +89,7 @@ Ein Formulardatenmodell ermöglicht es, eine interaktive Kommunikation mit unter
 * Beispieldaten bearbeiten
 * Testen des Formulardatenmodells und der konfigurierten Dienste mit Testdaten
 
-   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-form-data-model0.md)
+[ ](/help/forms/using/create-form-data-model0.md)
 
 ## Schritt 3: Erstellen Sie Dokumentfragmente {#step-create-document-fragments}
 
@@ -104,7 +103,7 @@ Dokumentfragmente sind wiederverwendbare Komponenten einer Korrespondenz, die zu
 * Variablen erstellen
 * Regeln erstellen und anwenden
 
-   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-document-fragments.md)
+[ ](/help/forms/using/create-document-fragments.md)
 
 ## Schritt 4: Erstellen Sie Vorlagen {#step-create-templates}
 
@@ -122,7 +121,7 @@ Die Vorlagen für den Webkanal werden in AEM erstellt. Vorlagenautoren und Admin
 * Laden Sie die XDP-Vorlagen auf den AEM Forms Server hoch
 * Erstellen und aktivieren Sie Vorlagen für den Webkanal
 
-   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-templates-print-web.md)
+[ ](/help/forms/using/create-templates-print-web.md)
 
 ## Schritt 5: Erstellen Sie interaktive Kommunikation {#step-create-an-interactive-communication}
 
@@ -141,13 +140,13 @@ Interaktive Kommunikation kann über zwei Kanäle erfolgen: Druck und Web. Sie k
 * Erstellen Sie ein Diagramm in der Webversion der interaktiven Kommunikation
 * Erstellen von Hyperlinks in der Webversion der interaktiven Kommunikation
 
-   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-interactive-communication0.md)
+[ ](/help/forms/using/create-interactive-communication0.md)
 
 ## Schritt 6: Testen Sie Ihre interaktive Kommunikation {#step-test-your-interactive-communication}
 
 ![11-test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
 
-Nachdem Sie eine interaktive Kommunikation erstellt haben, ist es wichtig, dass Sie jede Änderung testen, die Sie daran vornehmen. Das Testen aller Bereiche einer interaktiven Kommunikation ist mühsam. AEM Forms bietet ein SDK (Calvin SDK) zum automatischen Testen von adaptiven Formularen.
+Nachdem Sie eine interaktive Kommunikation erstellt haben, ist es wichtig, dass Sie jede Änderung testen, die Sie daran vornehmen. Das Testen aller Felder einer interaktiven Kommunikation ist mühsam. AEM Forms bietet ein SDK (Calvin SDK) zum automatischen Testen von adaptiven Formularen.
 
 **Ziele:**
 
@@ -166,4 +165,3 @@ Wenn Sie interaktive Kommunikation mit Druck- und Webkanälen erstellt und getes
 * Integrieren Sie interaktive Kommunikation in einen E-Mail-Client, um eine Mitteilung an die Kunden senden zu können
 * Fügen Sie ein PDF-Dokument als Anhang ein (interaktive Kommunikation, die im Druckkanal erstellt wurde)
 * Fügen Sie einen Link zur Webversion der interaktiven Kommunikation hinzu
-
