@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2058b501-65ce-4ad3-8e1b-b2eab896f70f
-translation-type: tm+mt
-source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+exl-id: 72edd8d1-8573-4942-8ced-1a100af58d78
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1593'
 ht-degree: 97%
 
 ---
-
 
 # Gruppen konfigurieren und erstellen{#creating-and-configuring-groups}
 
@@ -64,7 +63,7 @@ Bei einer dynamischen Gruppe wählen Sie die Benutzer für die Gruppe nicht einz
 
 Sie haben zwei Möglichkeiten zum Erstellen dynamischer Gruppen:
 
-* Aktivieren Sie die automatische Erstellung dynamischer Gruppen auf Basis von E-Mail-Domänen (z. B. @adobe.com). Wenn Sie diese Funktion aktivieren, erstellt User Management eine dynamische Gruppe für jede eindeutige E-Mail-Domäne in der AEM Forms-Datenbank. Verwenden Sie einen Cron-Ausdruck, um anzugeben, wie oft User Management die AEM Forms-Datenbank nach neuen E-Mail-Domänen durchsuchen soll. Diese dynamischen Gruppen werden der lokalen Domäne &quot;DefaultDom&quot;hinzugefügt und erhalten den Namen &quot;Alle Benutzer mit einer *`[email domain]`*-E-Mail-ID&quot;.
+* Aktivieren Sie die automatische Erstellung dynamischer Gruppen auf Basis von E-Mail-Domänen (z. B. @adobe.com). Wenn Sie diese Funktion aktivieren, erstellt User Management eine dynamische Gruppe für jede eindeutige E-Mail-Domäne in der AEM Forms-Datenbank. Verwenden Sie einen Cron-Ausdruck, um anzugeben, wie oft User Management die AEM Forms-Datenbank nach neuen E-Mail-Domänen durchsuchen soll. Diese dynamischen Gruppen werden der lokalen Domäne &quot;DefaultDom&quot;hinzugefügt und heißen &quot;Alle Benutzer mit einer *`[email domain]`*-E-Mail-ID&quot;.
 * Erstellen Sie eine dynamische Gruppe auf der Grundlage von bestimmten Kriterien, wie E-Mail-Domäne des Benutzers, Beschreibung, allgemeinem Namen, kanonischem Namen und Domänennamen. Damit er in eine dynamische Gruppe aufgenommen werden kann, muss ein Benutzer alle angegebenen Kriterien erfüllen. Zum Festlegen einer „oder“-Bedingung erstellen Sie zwei separate dynamische Gruppen und fügen sie beide einer lokalen Gruppe hinzu. Verwenden Sie diese Vorgehensweise beispielsweise, um eine Gruppe von Benutzern zu erstellen, die zur E-Mail-Domäne „@adobe.com“ gehören oder deren kanonischer Name ou=adobe.com enthält. Die Benutzer müssten jedoch nicht unbedingt beide Bedingungen erfüllen.
 
 Eine dynamische Gruppe enthält nur Benutzer. Sie kann keine anderen Gruppen enthalten. Eine dynamische Gruppe kann jedoch zu einer übergeordneten Gruppe gehören.
@@ -76,7 +75,7 @@ Eine dynamische Gruppe enthält nur Benutzer. Sie kann keine anderen Gruppen ent
 1. Geben Sie an, wann User Manager auf neue E-Mail-Domänen prüfen soll. Diese Zeit sollte nach der Domänensynchronisierungszeit liegen, da die Erstellung dynamischer Gruppen nur sinnvoll ist, wenn die Domänensynchronisierung abgeschlossen ist.
 
    * Um die automatische tägliche Synchronisierung zu aktivieren, geben die Uhrzeit im 24-Stunden-Format in das Feld „Täglich um“ ein. Wenn Sie die Einstellungen speichern, wird dieser Wert in einen Cron-Ausdruck konvertiert, der im Feld unten angezeigt wird.
-   * Um die Synchronisierung an einem bestimmten Tag der Woche bzw. des Monats oder an einem bestimmten Monat zu planen, wählen Sie „Cron-Ausdruck“ aus und geben den entsprechenden Ausdruck in das Feld ein. Der Standardwert ist `0 00 4 ? * *`(d. h. Prüfung bei 4 A.M. jeden Tag).
+   * Um die Synchronisierung an einem bestimmten Tag der Woche bzw. des Monats oder an einem bestimmten Monat zu planen, wählen Sie „Cron-Ausdruck“ aus und geben den entsprechenden Ausdruck in das Feld ein. Der Standardwert ist `0 00 4 ? * *` (d. h. jeden Tag um 4 Uhr morgens überprüfen).
 
       Die Verwendung des Cron-Ausdrucks basiert auf dem Open-Source-Auftragsplanungssystem Quartz, Version 1.4.0.
 
@@ -93,11 +92,11 @@ Eine dynamische Gruppe enthält nur Benutzer. Sie kann keine anderen Gruppen ent
    >
    >Wenn das Gleichheitszeichen mit den Attributen „E-Mail“, „Beschreibung“ oder „Kanonischer Name“ verwendet wird, muss bei den Attributen die Groß- und Kleinschreibung beachtet werden. Bei den Operatoren „Beginnt mit“, „Endet mit“ oder „Enthält“ muss die Groß- und Kleinschreibung nicht beachtet werden.
 
-   **E-Mail:** E-Mail-Domäne des Benutzers, z. B.  `@adobe.com`.
+   **E-Mail:** Die E-Mail-Domäne des Benutzers, z. B.  `@adobe.com`.
 
    **Beschreibung**: Beschreibung des Benutzers, z. B. „Informatiker“.
 
-   **Kanonischer Name:kanonischer Name des** Benutzers, z. B.  `ou=adobe.com`
+   **Kanonischer Name:** kanonischer Name des Benutzers, z. B.  `ou=adobe.com`
 
    **Domänenname**: Der Name der Domäne, zu der der Benutzer gehört, z. B. `DefaultDom`. Bei dem Attribut „Domänenname“ muss die Groß- und Kleinschreibung beachtet werden, wenn der Operator „Enthält“ verwendet wird. Bei den Operatoren „Beginnt mit“, „Endet mit“ oder „Enthält“ muss die Groß- und Kleinschreibung nicht beachtet werden.
 
@@ -155,4 +154,3 @@ Eine dynamische Gruppe enthält nur Benutzer. Sie kann keine anderen Gruppen ent
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Benutzer und Gruppen“.
 1. Wählen Sie in der Liste „In“ die Option „Gruppen“ aus und klicken Sie dann auf „Suchen“.
 1. Aktivieren Sie das Kontrollkästchen der zu löschenden Gruppe und klicken Sie erst auf „Löschen“ und anschließend auf „OK“.
-
