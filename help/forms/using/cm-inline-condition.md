@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: interactive-communications, correspondence-management
 discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
 docset: aem65
-feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Korrespondenzverwaltung
+exl-id: bc5d6c5b-c833-4849-aace-e07f8a522b32
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1696'
 ht-degree: 92%
 
 ---
-
 
 # Inline-Bedingung und Wiederholung in der interaktiven Kommunikation und in Briefen{#inline-condition-and-repeat-in-interactive-communications-and-letters}
 
@@ -37,9 +36,9 @@ Weitere Informationen finden Sie unter:
 
 Um einen Satz, einen Absatz oder eine Textzeichenfolge in einer interaktiven Kommunikation mit Bedingungen zu versehen, können Sie im entsprechenden Textdokumentfragment eine Regel erstellen. Im folgenden Beispiel wird eine Regel verwendet, um eine gebührenfreie Nummer nur für die US-Empfänger der interaktiven Kommunikation anzuzeigen.
 
-Weitere Informationen finden Sie unter Erstellen von Regeln im Text in [Texte in interaktiven Nachrichten](../../forms/using/texts-interactive-communications.md).
+Weitere Informationen finden Sie unter Erstellen einer Regel im Text in [Texte in interaktiven Kommunikationen](../../forms/using/texts-interactive-communications.md).
 
-Wenn Sie das Textfragment in eine interaktive Kommunikation einbeziehen und der Agent die Agent-Benutzeroberfläche zur Erstellung einer interaktiven Kommunikation verwendet, werden die Daten (Formulardatenmodell) für die Empfänger ausgewertet und der Text wird nur den Empfängern in den USA angezeigt.
+Nachdem Sie das Textfragment in eine interaktive Kommunikation eingefügt haben und der Agent die Benutzeroberfläche &quot;Agent&quot;zur Vorbereitung einer interaktiven Kommunikation verwendet, werden die Daten (Formulardatenmodell) für die Empfänger ausgewertet und der Text wird nur den Empfängern in den USA angezeigt.
 
 ### Beispiel: Wenn die Inline-Bedingung in einem Brief verwendet wird, um die entsprechende Adresse zu rendern  {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address}
 
@@ -51,15 +50,15 @@ Sie können Inline-Bedingungen in einen Brief einfügen, indem Sie die Inline-Be
 
 1. Wählen Sie im entsprechenden Textmodul den Teil aus, für den Sie Bedingungen festlegen wollen und tippen Sie auf **Bedingung**.
 
-   ![1_selectedText](assets/1_selecttext.png)
+   ![1_selecttext](assets/1_selecttext.png)
 
    Der Bedingungsdialog wird mit einer leeren Status.
 
-   ![2_Conditiondialog](assets/2_conditiondialog.png)
+   ![2_condition_dialog](assets/2_conditiondialog.png)
 
    >[!NOTE]
    >
-   >Leerer oder ungültiger Bedingungsausdruck kann nicht gespeichert werden. Es muss einen gültigen bedingten Ausdruck innerhalb von `${}` geben, um den Ausdruck zu speichern.
+   >Leerer oder ungültiger Bedingungsausdruck kann nicht gespeichert werden. Es muss einen gültigen bedingten Ausdruck in `${}` geben, um den Ausdruck zu speichern.
 
 1. Führen Sie folgende Schritte aus, um eine Bedingung für die Bewertung zu konstruieren, ob ausgewählter Text oder Text, für den Bedingungen erstellt werden, im Brief angezeigt wird, und tippen Sie auf das Häkchen, um den Ausdruck zu speichern:
 
@@ -132,7 +131,7 @@ Das folgende Beispiel zeigt die Schritte für die Verwendung der Wiederholungsfu
 
 1. Speichern Sie die Bedingung/Regel und dann die Wiederholung. Die bedingte Wiederholung wird auf den ausgewählten Inhalt angewendet.
 
-   ![5_onmouseoverConditionrule](assets/5_onmouseoverconditionrule.png)
+   ![5_onmouseOverconditionRule](assets/5_onmouseoverconditionrule.png)
 
    Wenn Sie mit der Maus darüber fahren, zeigt das Textdokumentfragment die Bedingung und das Trennzeichen an, die bzw. das in der auf den Inhalt angewendeten Wiederholung verwendet wurde.
 
@@ -171,7 +170,7 @@ Das folgende Beispiel zeigt die Schritte für die Verwendung der Wiederholen-Fun
 
 1. Wählen Sie den statischen Text sowie die DD-Elemente, die Sie wiederholen möchten, wie unten gezeigt:
 
-   ![2_repeat_select_text](assets/2_repeat_selecttext.png)
+   ![2_repeat_selecttext](assets/2_repeat_selecttext.png)
 
 1. Tippen Sie auf **Wiederholen**. Das Dialogfeld „Wiederholen“ wird mit einer leeren Inline-Bedingung angezeigt.
 
@@ -207,7 +206,7 @@ Das folgende Beispiel zeigt die Schritte für die Verwendung der Wiederholen-Fun
 
    ![6_repeatoutputpreview](assets/6_repeatoutputpreview.png)
 
-   Die statischen Textwiederholungen mit den Transaktionsdetails. Die Wiederholung von statischem Text wird durch die Wiederholung des Textes in diesem Verfahren erleichtert. Die Bedingung ${DD_creditcard_TransactionAmount > 0.5} stellt sicher, dass die Transaktionen unter USD .5 nicht in dem Brief gerendert werden.
+   Die statischen Textwiederholungen mit den Transaktionsdetails. Die Wiederholung von statischem Text wird durch die Wiederholung erleichtert, die in diesem Verfahren auf den Text angewendet wird. Die Bedingung ${DD_creditcard_TransactionAmount > 0.5} stellt sicher, dass die Transaktionen unter USD .5 nicht in dem Brief gerendert werden.
 
    >[!NOTE]
    >
@@ -223,7 +222,7 @@ Zum Beispiel ist Folgendes eine Wiederholung (rot formatiert) innerhalb einer Be
 
 Während die Wiederholung die Kreditkartentransaktionen rendert, stellt die Bedingung ${DD_creditcard_nooftransactions > 0} sicher, dass das Wiederholungskonstukt nur dann gerendert wird, wenn es mindestens eine Transaktion gibt.
 
-![repeatwitinbedingung](assets/repeatwitincondition.png)
+![repeatwitincondition](assets/repeatwitincondition.png)
 
 Entsprechend Ihren Anforderungen können Sie auch Folgendes erstellen:
 
@@ -231,10 +230,10 @@ Entsprechend Ihren Anforderungen können Sie auch Folgendes erstellen:
 * Eine oder mehrere Bedingungen innerhalb einer Wiederholung
 * Eine Kombination von Bedingungen und Wiederholungen innerhalb einer Bedingung oder Wiederholung
 
-### Leere Inline-Bedingung  {#empty-inline-condition}
+### Leere Inline-Bedingung {#empty-inline-condition}
 
 Möglicherweise müssen Sie leere Inline-Bedingungen einfügen und Text und DD-Elemente später einbetten. Correspondence Management ermöglicht es Ihnen.
 
-![Leere Bedingung](assets/emptycondition.png)
+![emptycondition](assets/emptycondition.png)
 
 Es wird jedoch empfohlen, dass Sie, wenn möglich, den Text und die DD-Elemente zuerst in das Textmodul mit der beabsichtigten Formatierung einfügen, wie Aufzählungspunkte, und danach eine Inline-Bedingung anwenden.
