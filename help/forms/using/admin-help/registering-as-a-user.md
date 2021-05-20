@@ -8,15 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
-feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Dokumentensicherheit
+exl-id: 320d8fa4-e200-4993-b018-a9718cddc5c1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 100%
 
 ---
-
 
 # Benutzer registrieren {#registering-as-a-user}
 
@@ -70,4 +69,3 @@ Informationen dazu, wie Sie einen Document Security-Administrator kontaktieren, 
 1. Klicken Sie in der rechten oberen Ecke der Seite auf „Optionen“. Die Seite „Externe Benutzer“ wird angezeigt.
 1. Wählen Sie „Kennwort ändern“ aus und geben Sie das temporäre Kennwort in das Feld „Altes Kennwort“ ein.
 1. Geben Sie zuerst in das Feld „Neues Kennwort“ ein neues Kennwort ein und geben Sie dann dieses erneut in das Feld „Kennwort bestätigen“ ein.
-
