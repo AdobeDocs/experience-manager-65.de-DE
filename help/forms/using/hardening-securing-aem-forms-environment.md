@@ -7,14 +7,13 @@ uuid: abca7e7c-38c3-44f5-8d8a-4615cfce26c6
 topic-tags: Security
 discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1463'
 ht-degree: 99%
 
 ---
-
 
 # Härten (Absichern) und Schutz von AEM Forms in OSGi-Umgebungen {#hardening-and-securing-aem-forms-on-osgi-environment}
 
