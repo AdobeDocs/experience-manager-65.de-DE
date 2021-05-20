@@ -8,16 +8,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
-feature: Panoramic Images,Asset Management
+feature: Panoramabilder,Asset-Verwaltung
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '584'
 ht-degree: 73%
 
 ---
-
 
 # Panoramabilder {#panoramic-images}
 
@@ -32,7 +31,7 @@ Informationen hierzu finden Sie unter [Verwalten von Viewer-Vorgaben](/help/asse
 Damit hochgeladene Assets als Kreispanoramen gelten und mit dem Viewer für Panoramabilder verwendet werden können, muss mindestens eine der beiden folgenden Eigenschaften zutreffen:
 
 * Ein Seitenverhältnis von 2.
-Sie können die Standardeinstellung für das Seitenverhältnis von 2 in CRXDE Lite wie folgt überschreiben:
+Sie können die standardmäßige Seitenverhältniseinstellung von 2 in CRXDE Lite wie folgt überschreiben:
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
 * Mit den Keywords `equirectangular` oder `spherical` und `panorama` oder `spherical` und `panoramic` als Tags versehen. Weitere Informationen finden Sie unter [Verwenden von Tags](/help/sites-authoring/tags.md).
@@ -43,12 +42,12 @@ Weitere Informationen über den Upload von Assets für die Verwendung mit dem Vi
 
 ## Konfigurieren von Dynamic Media Classic {#configuring-dynamic-media-classic-scene}
 
-Damit der Panorama-Bild-Viewer in AEM ordnungsgemäß funktioniert, müssen Sie die Panorama-Bild-Viewer-Vorgaben mit Dynamic Media Classic- und Dynamic Media Classic-spezifischen Metadaten synchronisieren, damit die Viewer-Vorgaben in der JCR-Datei aktualisiert werden. Konfigurieren Sie dazu Dynamic Media Classic wie folgt:
+Damit der Viewer für Panoramabilder in AEM ordnungsgemäß funktioniert, müssen Sie die Viewer-Vorgaben für Panoramabilder mit Dynamic Media Classic und Dynamic Media Classic-spezifischen Metadaten synchronisieren, damit die Viewer-Vorgaben im JCR aktualisiert werden. Konfigurieren Sie dazu Dynamic Media Classic wie folgt:
 
 1. Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started) und melden Sie sich bei Ihrem Konto an.
 
 1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Veröffentlichungseinrichtung > Image-Server.]**
-1. Wählen Sie auf der Seite &quot;Veröffentlichung des Image-Servers&quot;im Dropdown-Menü **[!UICONTROL Veröffentlichungskontext]** oben **[!UICONTROL Image-Server.]**
+1. Wählen Sie auf der Seite &quot;Veröffentlichung zum Image-Server&quot;aus dem Dropdown-Menü **[!UICONTROL Veröffentlichungskontext]** oben **[!UICONTROL Image-Serving.]**
 
 1. Suchen Sie auf derselben Image-Server-Veröffentlichungsseite die Überschrift **[!UICONTROL Anfrage-Attribute.]**
 1. Suchen Sie unter der Überschrift „Anfrage-Attribute“ die Option **[!UICONTROL Maximale Größe des Antwortbildes.]** Erhöhen Sie anschließend die Werte in den entsprechenden Feldern „Breite“ und „Höhe“ auf die größtmögliche Bildgröße für Panoramabilder.
@@ -61,8 +60,8 @@ Damit der Panorama-Bild-Viewer in AEM ordnungsgemäß funktioniert, müssen Sie 
 
 1. Gehen Sie unter der Überschrift „Anfrage-Attribute“ wie folgt vor:
 
-   * Stellen Sie den Verschleierungsmodus der Anforderung auf **[!UICONTROL Deaktiviert ein.]**
-   * Stellen Sie den Anforderungssperrmodus auf **[!UICONTROL Deaktiviert ein.]**
+   * Stellen Sie den Anforderungsverschleierungsmodus auf **[!UICONTROL Deaktiviert.]** ein.
+   * Setzen Sie den Anforderungssperrmodus auf **[!UICONTROL Deaktiviert.]**
 
    Diese Einstellungen sind für die Verwendung der WCM-Komponente `Panoramic Media` in AEM erforderlich.
 
@@ -74,7 +73,7 @@ Damit der Panorama-Bild-Viewer in AEM ordnungsgemäß funktioniert, müssen Sie 
 
 Wenn Sie ein Bild in der Panoramamedienkomponente in WCM abgelegt haben und der Platzhalter der Komponente ausgeblendet ist, helfen Ihnen möglicherweise die folgenden Schritte zur Fehlerbehebung:
 
-* Wenn Ihnen ein 403-Fehler (Forbidden) angezeigt wird, liegt es möglicherweise daran, dass die angefragte Bildgröße den Grenzwert überschreitet. Überprüfen Sie die Einstellungen für **[!UICONTROL Maximale Antwortbildgröße]** in [Konfigurieren von Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
+* Wenn Ihnen ein 403-Fehler (Forbidden) angezeigt wird, liegt es möglicherweise daran, dass die angefragte Bildgröße den Grenzwert überschreitet. Überprüfen Sie die Einstellungen **[!UICONTROL Maximale Antwortbildgröße]** unter [Konfigurieren von Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 * Überprüfen Sie im Falle einer „ungültigen Sperre“ für das Asset oder einem auf der Seite angezeigten „Parsing-Fehler“ den Anfragenverschleierungs- sowie den Anfragensperrmodus, um sicherzustellen, dass diese Modi deaktiviert sind.
 * Bei einer Fehlermeldung zu einer beschädigten Arbeitsfläche können Sie einen Dateipfad für Regeldefinitionen einrichten und CTN für die vorangegangenen Anforderungen für das Bild-Asset ungültig machen.
