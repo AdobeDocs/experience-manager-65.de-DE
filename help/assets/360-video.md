@@ -8,16 +8,15 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: aac3c850-ae84-4bff-80de-d370e150f675
 docset: aem65
-feature: 360 VR Video
+feature: 360-Grad-VR-Video
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1100'
-ht-degree: 94%
+source-wordcount: '1097'
+ht-degree: 95%
 
 ---
-
 
 # 360-Grad-/VR-Video {#vr-video}
 
@@ -111,7 +110,7 @@ Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](https://helpx.adobe.com/e
 
    Tippen Sie auf das 360-Grad-Videoasset, um die Videovorschau anzuzeigen.
 
-1. Tippen Sie auf der Seite &quot;Vorschau&quot;links oben auf die Dropdown-Liste und wählen Sie **[!UICONTROL Viewer.]**
+1. Tippen Sie auf der Vorschauseite links oben auf der Seite auf die Dropdown-Liste und wählen Sie **[!UICONTROL Viewer.]** aus.
 
    ![6_5_360video-preview-viewers](assets/6_5_360video-preview-viewers.png)
 
