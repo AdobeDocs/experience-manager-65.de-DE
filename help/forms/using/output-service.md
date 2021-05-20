@@ -1,6 +1,6 @@
 ---
-title: Output-Dienst
-seo-title: Output-Dienst
+title: Ausgabe-Service
+seo-title: Ausgabe-Service
 description: Dieser Artikel erläutert den Output-Dienst, eine Komponente der AEM Document Services.
 seo-description: Dieser Artikel erläutert den Output-Dienst, eine Komponente der AEM Document Services.
 uuid: edddef59-b43c-486f-8734-3f97961ecf4d
@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 51ab91ff-c0c0-4165-ae02-f306e45eea03
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+exl-id: 1b62e1c1-428d-4c0f-98a8-486f319fa581
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 80%
 
 ---
 
-
-# Output Service{#output-service}
+# Ausgabe-Service{#output-service}
 
 ## Überblick {#overview}
 
@@ -29,7 +28,7 @@ Dabei können Sie mit dem Output-Dienst Anwendungen mit folgenden Funktionen ers
 * Generieren fertiger Formulardokumente durch Füllen von Vorlagendateien mit XML-Daten
 * Generieren von Ausgabeformularen in verschiedenen Formaten einschließlich nicht interaktiver PDF-, PostScript-, PCL- und ZPL-Druckdatenströme
 * Generieren von druckbaren PDFs aus XFA-Formular-PDFs
-* Generieren Sie PDF-, PostScript-, PCL- und ZPL-Dokumente stapelweise, indem Sie mehrere Datensätze mit den bereitgestellten Vorlagen zusammenführen.
+* Generieren Sie PDF-, PostScript-, PCL- und ZPL-Dokumente stapelweise durch Zusammenführen mehrerer Datensätze mit den bereitgestellten Vorlagen.
 
 >[!NOTE]
 >
@@ -37,11 +36,11 @@ Dabei können Sie mit dem Output-Dienst Anwendungen mit folgenden Funktionen ers
 
 ## Erstellen nicht interaktiver Formulardokumente {#creating-non-interactive-form-documents}
 
-![using_output_changed](assets/usingoutput_modified.png)
+![usingOutput_modified](assets/usingoutput_modified.png)
 
 Normalerweise erstellen Sie Vorlagen mit AEM Forms Designer. Mit den APIs `generatePDFOutput` und `generatePrintedOutput` des Output-Dienstes können Sie diese Vorlagen direkt in verschiedene Formate wie PDF, PostScript, ZPL und PCL konvertieren.
 
-Mit `generatePDFOutput` generieren Sie PDF-Dokumente, während `generatePrintedOutput` Dokumente in den Formaten PostScript, ZPL und PCL generiert. Der erste Parameter beider Vorgänge akzeptiert entweder den Namen der Vorlagendatei (z. B. `ExpenseClaim.xdp`) oder ein Dokumentobjekt, das die Vorlage enthält. Wenn Sie den Namen der Vorlagendatei angeben, vergessen Sie nicht, auch den Inhaltsstamm als Pfad zum Vorlagenordner anzugeben. Sie können den Inhaltsstamm entweder mit dem Parameter `PDFOutputOptions` oder mit dem Parameter `PrintedOutputOptions` angeben. In der Javadoc finden Sie Informationen zu weiteren Optionen, die Sie mit diesen Parametern angeben können.
+Mit `generatePDFOutput` generieren Sie PDF-Dokumente, während `generatePrintedOutput` Dokumente in den Formaten PostScript, ZPL und PCL generiert. Der erste Parameter beider Vorgänge akzeptiert entweder den Namen der Vorlagendatei (z. B. `ExpenseClaim.xdp`) oder ein Dokumentobjekt, das die Vorlage enthält. Wenn Sie den Namen der Vorlagendatei angeben, vergessen Sie nicht, auch den Inhaltsstamm als Pfad zum Vorlagenordner anzugeben. Sie können den Inhaltsstamm entweder mit dem Parameter `PDFOutputOptions` oder `PrintedOutputOptions` angeben. In der Javadoc finden Sie Informationen zu weiteren Optionen, die Sie mit diesen Parametern angeben können.
 
 Der zweite Parameter akzeptiert ein XML-Dokument, das bei der Generierung des Ausgabedokuments mit der Vorlage zusammengeführt wird.
 
@@ -59,9 +58,9 @@ Der erste Parameter ist eine Zuordnung mit einer Zufallszeichenfolge als Schlüs
 
 Der zweite Parameter ist ebenfalls eine Zuordnung, deren Wert ein Dokumentobjekt für die XML-Daten ist. Der Schlüssel ist derselbe wie beim ersten Parameter.
 
-Der dritte Parameter für `generatePDFOutputBatch` oder `generatePrintedOutputBatch` ist vom Typ `PDFOutputOptions` bzw. `PrintedOutputOptions`.
+Der dritte Parameter für `generatePDFOutputBatch` oder `generatePrintedOutputBatch` weist den Typ `PDFOutputOptions` bzw. `PrintedOutputOptions` auf.
 
-Die Parametertypen sind dieselben wie die Parametertypen für die Vorgänge `generatePDFOutput` und `generatePrintedOutput` und haben dieselbe Wirkung.
+Die Parametertypen sind mit den Parametertypen für die Vorgänge `generatePDFOutput` und `generatePrintedOutput` identisch und haben denselben Effekt.
 
 Der vierte Parameter hat den Typ `BatchOptions`, mit dem Sie angeben können, ob für jeden Datensatz eine separate Datei generiert werden kann. Der Standardwert dieses Parameters ist „false“.
 
