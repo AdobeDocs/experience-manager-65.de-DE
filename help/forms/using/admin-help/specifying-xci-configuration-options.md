@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 162c9fda-f4d4-4ad5-a9ab-7554828e821c
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 7cd10389-63e6-41f2-a132-92fd9e40a9b7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 100%
 
 ---
-
 
 # XCI-Konfigurationsoptionen angeben {#specifying-xci-configuration-options}
 
@@ -32,4 +31,3 @@ Sie können Optionen auswählen, die das Außerkraftsetzen der oben angegebenen 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Forms“.
 1. Aktivieren bzw. deaktivieren Sie das Kontrollkästchen „XCI-Systemstandardoptionen verwenden“. Wenn diese Option ausgewählt ist, verwendet Forms seine Standardwerte für die packets-, creator-, producer- und compressObjectStream-Einstellungen. Bei deaktivierter Option verwendet Forms die in der benutzerdefinierten XCI-Datei angegebenen Werte.
 1. Klicken Sie auf Speichern.
-
