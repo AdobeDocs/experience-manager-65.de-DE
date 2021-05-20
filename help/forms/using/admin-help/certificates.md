@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9fd531c0-5206-4be0-a450-13e0dc806068
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 1fe0e7b4-6109-4f7a-8858-8237a1c5c93b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 83%
 
 ---
-
 
 # Zertifikate verwalten {#managing-certificates}
 
@@ -50,7 +49,7 @@ Sie können Zertifikate mit der Trust Manager-API auch importieren und löschen.
    >Der Trust Store vertraut implizit einen Adobe-Stammzertifikat bei der Zertifikatauthentifizierung, der Signatur, dem Prüfen der Signatur und der Identität.
 
 1. Geben Sie in das Feld „Alias“ den Bezeichner für das Zertifikat ein.
-1. Klicken Sie auf **[!UICONTROL Durchsuchen]**, um das Zertifikat zu suchen, und klicken Sie dann auf **[!UICONTROL OK]**.
+1. Klicken Sie auf **[!UICONTROL Browse]**, um das Zertifikat zu suchen, und klicken Sie dann auf **[!UICONTROL OK]**.
 
 ## Zertifikat exportieren {#export-a-certificate}
 
@@ -65,10 +64,9 @@ Sie können Zertifikate mit der Trust Manager-API auch importieren und löschen.
 1. Klicken Sie auf **[!UICONTROL Zertifikat aktualisieren]**.
 1. Geben Sie einen neuen Namen in das Feld „Alias“ ein, um den Aliasnamen des Zertifikats zu ändern.
 1. Um den Trust Store-Typ für das Zertifikat zu aktualisieren, wählen Sie den geeigneten Trust Store-Typ aus.
-1. Um die Richtlinienbeschränkungen zu aktualisieren, geben Sie im Feld &quot;Zertifikatrichtlinien&quot;die Richtlinieninformationen ein und klicken Sie dann auf **[!UICONTROL OK]**.
+1. Um die Richtlinienbeschränkungen zu aktualisieren, geben Sie im Feld &quot;Certificate Policies&quot;die Richtlinieninformationen ein und klicken Sie auf **[!UICONTROL OK]**.
 
 ## Zertifikat löschen {#delete-a-certificate}
 
 1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > Trust Store-Verwaltung > Zertifikate]**.
 1. Aktivieren Sie die Kontrollkästchen der zu löschenden Zertifikate, klicken Sie auf **[!UICONTROL Löschen]** und dann auf **[!UICONTROL OK]**.
-
