@@ -11,20 +11,19 @@ topic-tags: Configuration
 discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d802ac53-e3db-45ca-afcb-7e99d0bb7877
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '279'
 ht-degree: 78%
 
 ---
-
 
 # AEM Forms für OSGi-Gruppen und -Berechtigungen{#aem-forms-on-osgi-groups-and-privileges}
 
 Sie können [Gruppen erstellen](/help/sites-administering/user-group-ac-admin.md#group-administration) und Richtlinien zuweisen und [Benutzer](/help/sites-administering/user-group-ac-admin.md#user-administration) zu den Gruppen in AEM zuweisen. Diese Richtlinien steuern die Berechtigungen der Benutzer, die Teil der Gruppe sind.
 
-Nach der Installation von [AEM Forms-Add-On-Paket](../../forms/using/installing-configuring-aem-forms-osgi.md) stehen die in diesem Artikel genannten Gruppen, z. B. Forms-Benutzer und Forms-Power-User, automatisch für die Zuweisung zur Verfügung. In der folgenden Tabelle sind die Aufgaben aufgeführt, die ein Benutzer für AEM Forms auf OSGi basierend auf den Gruppenzuweisungen ausführen kann:
+Nachdem Sie [AEM Forms Add-On-Paket](../../forms/using/installing-configuring-aem-forms-osgi.md) installiert haben, stehen die in diesem Artikel genannten Gruppen, wie z. B. Formularbenutzer und Formular-Power-User, automatisch für die Zuweisung zur Verfügung. In der folgenden Tabelle sind die Aufgaben aufgeführt, die ein Benutzer für AEM Forms auf OSGi basierend auf den Gruppenzuweisungen ausführen kann:
 
 <table>
  <tbody>
@@ -95,7 +94,7 @@ Nach der Installation von [AEM Forms-Add-On-Paket](../../forms/using/installing-
    <td>workflow-users</td> 
    <td>
     <ul> 
-     <li>Verwenden Sie AEM Posteingangsanwendungen<br /> <strong>Hinweis: </strong>Sie müssen über Gruppenzuweisungen für cm-agent-Benutzer und Workflow-Benutzer verfügen, um auf die Benutzeroberfläche von Interactive Communications Agent in AEM Posteingang zuzugreifen.</li> 
+     <li>Verwenden Sie AEM Posteingangsanwendungen<br /> <strong>Hinweis: </strong>Sie müssen über cm-agent-users und workflow-users-Gruppenzuweisungen verfügen, um auf die Benutzeroberfläche von Interactive Communications Agent im Posteingang zuzugreifen.</li> 
      <li>Workflow-Instanzen verwalten</li> 
     </ul> </td> 
   </tr>
@@ -111,6 +110,5 @@ Nach der Installation von [AEM Forms-Add-On-Paket](../../forms/using/installing-
  </tbody>
 </table>
 
-1. Benutzer mit Gruppenberechtigungen für Formularbenutzer können keine Skripten für adaptive Formulare schreiben.
+1. Benutzer mit Gruppenberechtigungen für Formularbenutzer können keine Skripte für adaptive Formulare schreiben.
 1. Der Benutzer mit Gruppenberechtigungen für Vorlagenautoren kann keine Skripte für Vorlagen schreiben.
-
