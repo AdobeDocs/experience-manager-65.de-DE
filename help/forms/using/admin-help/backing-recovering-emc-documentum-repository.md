@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: bc21659f-88d6-4dff-8baf-12746e1b3ed9
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 88%
 
 ---
-
 
 # EMC Documentum-Repository sichern und wiederherstellen {#backing-up-and-recovering-the-emc-documentum-repository}
 
@@ -215,7 +214,7 @@ In diesem Abschnitt wird die Installation und Konfiguration der EMC NetWorker-So
 
       `NetWorker_Server_Name` ist der Server, auf dem NetWorker installiert ist.
 
-      `username` und  `password` sind der Benutzername und das Kennwort des Datenbankadministrator-Benutzers.
+      `username` &amp;  `password` sind der Benutzername und das Kennwort des Datenbankadministrator-Benutzers.
 
       `database_name` ist der Name der zu sichernden Datenbank.
 
