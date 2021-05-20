@@ -10,14 +10,13 @@ topic-tags: forms-manager
 discoiquuid: e65925ff-1fbf-4da6-bf09-0cf056c86e5a
 docset: aem65
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 1f4f49b7-5f32-47dd-9dc7-a6974faf2bdf
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '721'
 ht-degree: 95%
 
 ---
-
 
 # Suchen nach Formularen und Assets{#searching-for-forms-and-assets}
 
@@ -25,7 +24,7 @@ Sie können über eine Textzeichenfolge oder eine Textzeichenfolge mit Platzhalt
 
 Wenn Sie eines oder mehrere Kriterien auswählen und eine Textzeichenfolge angeben, wird die Schnittmenge von Text und Kriterien als Suchergebnis zurückgegeben. Die Suchergebnisse sind so gut wie die zur Verfügung gestellten Formular- und Asset-Metadaten.
 
-Klicken Sie auf ![aem6forms_search](assets/aem6forms_search.png), um das Suchfeld ein- oder auszublenden.
+Klicken Sie auf ![aem6forms_search](assets/aem6forms_search.png), um den Suchbereich ein- oder auszublenden.
 
 ## Einfache Suche {#basic-search}
 
@@ -39,10 +38,10 @@ Beachten Sie bei der einfachen Suche die folgenden Punkte:
 
 * Die Suche wird mithilfe der Formular- und Asset-Metadaten durchgeführt.
 * Wenn Sie mehr als ein Wort eingeben, wird beim Suchvorgang für den gesamten Text nach Übereinstimmungen gesucht. 
-* Bei der Suche wird die Groß-/Kleinschreibung nicht beachtet. Wenn Sie beispielsweise `geometrixx` eingeben, werden Assets mit den Titeln `Geometrixx`, `GEOMETRIXX` und `GeoMetRixx` in den Suchergebnissen angezeigt.
+* Bei der Suche wird die Groß-/Kleinschreibung nicht beachtet. Wenn Sie beispielsweise `geometrixx` eingeben, werden in den Suchergebnissen Assets mit den Titeln `Geometrixx`, `GEOMETRIXX` und `GeoMetRixx` angezeigt.
 
 * Unvollständige Übereinstimmungen mit einem Wort werden nicht unterstützt. Wenn Sie nach unvollständigen Zeichenfolgen suchen möchten, verwenden Sie den Platzhalter (*). Wenn bei der Suchanfrage jedoch eine Übereinstimmung mit einem vollständigen Wort vorliegt, wird das entsprechende Formular bzw. Asset angezeigt.
-* Zusätzliche Leerzeichen werden berücksichtigt und während der Suche nicht entfernt. `My form` ist beispielsweise nicht dieselbe Abfrage wie `My form`.
+* Zusätzliche Leerzeichen werden berücksichtigt und während der Suche nicht entfernt. `My form` ist beispielsweise nicht dieselbe Suchabfrage wie `My form`.
 
 * Wenn sich die Daten von den Anzeigewerten der Felder in den Metadateneigenschaften abweichen, können Sie Anzeigewerte als Suchparameter nicht verwenden. Beispielsweise können Sie keine Suche auf Basis eines Status, z. B. geändert oder veröffentlicht, durchführen, da diese Eigenschaften in einem anderen Format gespeichert werden.
 
