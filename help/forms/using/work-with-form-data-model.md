@@ -8,19 +8,18 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
-feature: Form Data Model
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Formulardatenmodell
+exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '4151'
 ht-degree: 61%
 
 ---
 
-
 # Arbeiten mit einem Formulardatenmodell{#work-with-form-data-model}
 
-![data-integration](do-not-localize/data-integeration.png)
+![Datenintegration](do-not-localize/data-integeration.png)
 
 Der Formulardatenmodell-Editor bietet eine intuitive Benutzeroberfläche und Werkzeuge zum Bearbeiten und Konfigurieren eines Formulardatenmodells. Mithilfe des Editors können Sie Datenmodellobjekte, Eigenschaften und Dienste aus verknüpften Datenquellen im Formulardatenmodell hinzufügen und konfigurieren. Darüber hinaus können Sie Datenmodellobjekte und -eigenschaften ohne Datenquellen erstellen und später mit den entsprechenden Datenmodellobjekten und -eigenschaften verknüpfen. Sie können auch Beispieldaten für Datenmodellobjekteigenschaften generieren und bearbeiten, die Sie zum Vorbefüllen von adaptiven Formularen und interaktiver Kommunikation während der Vorschau verwenden können. Sie können Datenmodellobjekte und -dienste testen, die in einem Formulardatenmodell konfiguriert sind, um sicherzustellen, dass sie ordnungsgemäß in Datenquellen integriert sind.
 
@@ -38,14 +37,14 @@ Erfahren Sie weitere Details zu verschiedenen Aufgaben und Konfigurationen, die 
 
 ## Datenmodellobjekte und Dienste hinzufügen {#add-data-model-objects-and-services}
 
-Wenn Sie ein Formulardatenmodell mit Datenquellen erstellt haben, können Sie den Formulardatenmodelleditor verwenden, um Datenmodellobjekte und -dienste hinzuzufügen, deren Eigenschaften zu konfigurieren, Verknüpfungen zwischen Datenmodellobjekten zu erstellen und das Formulardatenmodell und die Formulardienste zu testen.
+Wenn Sie ein Formulardatenmodell mit Datenquellen erstellt haben, können Sie den Formulardatenmodell-Editor verwenden, um Datenmodellobjekte und -dienste hinzuzufügen, deren Eigenschaften zu konfigurieren, Verknüpfungen zwischen Datenmodellobjekten zu erstellen und das Formulardatenmodell und die Formulardienste zu testen.
 
 Sie können Datenmodellobjekte und Dienste aus verfügbaren Datenquellen im Formulardatenmodell hinzufügen. Dabei werden hinzugefügte Datenmodellobjekte auf der Registerkarte „Modell“ und hinzugefügte Dienste auf der Registerkarte „Dienste“ angezeigt.
 
-So fügen Sie Datenmodellobjekte und -dienste hinzu:
+So fügen Sie Datenmodellobjekte und Dienste hinzu:
 
 1. Melden Sie sich bei der AEM-Autorinstanz an, navigieren Sie zu **[!UICONTROL Formulare > Datenintegrationen]** und öffnen Sie das Formulardatenmodell, in dem Sie Datenmodellobjekte hinzufügen möchten.
-1. Erweitern Sie im Bereich Data Sources die Datenquellen, um verfügbare Datenmodellobjekte und -dienste Ansicht.
+1. Erweitern Sie im Bereich Data Sources die Datenquellen, um verfügbare Datenmodellobjekte und Dienste anzuzeigen.
 1. Wählen Sie Datenmodellobjekte und Dienste aus, die Sie dem Formulardatenmodell hinzufügen möchten, und tippen Sie auf **[!UICONTROL Ausgewählte hinzufügen]**.
 
    ![selected-object](assets/selected-objects.png)
@@ -109,11 +108,11 @@ Erstellen einer untergeordneten Eigenschaft:
 
 1. Tippen Sie auf **[!UICONTROL Fertig]**, um die Verknüpfung zu speichern, und dann auf **[!UICONTROL Speichern]**, um das Formulardatenmodell zu speichern. Die untergeordnete Eigenschaft wird jetzt zum Datenmodellobjekt hinzugefügt.
 
-Nachdem Sie Datenmodellobjekte und -eigenschaften erstellt haben, können Sie weiterhin basierend auf dem Formulardatenmodell adaptive Formulare und interaktive Kommunikationen erstellen. Später, wenn Datenquellen verfügbar und konfiguriert sind, können Sie das Formulardatenmodell mit Datenquellen verknüpfen. Die Bindung wird automatisch in zugeordneten adaptiven Formularen und interaktiver Kommunikation aktualisiert. Weitere Informationen zum Erstellen adaptiver Formulare und interaktiver Kommunikation mit dem Formulardatenmodell finden Sie unter [Formulardatenmodell verwenden](/help/forms/using/using-form-data-model.md).
+Nachdem Sie Datenmodellobjekte und -eigenschaften erstellt haben, können Sie weiterhin basierend auf dem Formulardatenmodell adaptive Formulare und interaktive Kommunikationen erstellen. Später, wenn Datenquellen verfügbar und konfiguriert sind, können Sie das Formulardatenmodell mit Datenquellen verknüpfen. Die Bindung wird automatisch in zugeordneten adaptiven Formularen und interaktiver Kommunikation aktualisiert. Weitere Informationen zum Erstellen adaptiver Formulare und interaktiver Kommunikation mithilfe des Formulardatenmodells finden Sie unter [Verwenden des Formulardatenmodells](/help/forms/using/using-form-data-model.md).
 
 ### Datenmodellobjekte und -eigenschaften binden {#bind-data-model-objects-and-properties}
 
-Wenn die Datenquellen, die Sie in das Formulardatenmodell integrieren möchten, verfügbar sind, können Sie sie dem Formulardatenmodell hinzufügen, wie unter [Datenquellen aktualisieren](/help/forms/using/create-form-data-models.md#update) beschrieben. Führen Sie anschließend folgende Schritte durch, um die ungebundenen Datenmodellobjekte und -eigenschaften zu binden:
+Wenn die Datenquellen verfügbar sind, die Sie in das Formulardatenmodell integrieren möchten, können Sie sie dem Formulardatenmodell hinzufügen, wie unter [Datenquellen aktualisieren](/help/forms/using/create-form-data-models.md#update) beschrieben. Führen Sie anschließend folgende Schritte durch, um die ungebundenen Datenmodellobjekte und -eigenschaften zu binden:
 
 1. Wählen Sie im Formulardatenmodell die ungebundene Datenquelle aus, die Sie mit einer Datenquelle binden möchten.
 1. Tippen Sie auf **[!UICONTROL Eigenschaften bearbeiten]**.
@@ -159,54 +158,54 @@ Um Daten für ein Datenmodellobjekt zu lesen und zu schreiben, gehen Sie folgend
 
    Für die Mitarbeiterdatenquelle konfigurierte Lese- und Schreibdienste
 
-1. Tippen Sie auf ![aem_6_3_edit](assets/aem_6_3_edit.png), um das read-Dienst-Argument an [an ein User Profil-Attribut, ein Anforderungsattribut oder einen Literalwert](#bindargument) zu binden, und geben Sie den Bindungswert an.
+1. Tippen Sie auf ![aem_6_3_edit](assets/aem_6_3_edit.png) für das Argument des Lesedienstes auf [binden Sie das Argument an ein Benutzerprofilattribut, Anfrageattribut oder Literalwert](#bindargument) und geben Sie den Bindungswert an.
 1. Tippen Sie auf **[!UICONTROL Fertig]**, um das Argument zu speichern, dann auf **[!UICONTROL Fertig]**, um die Eigenschaften zu speichern, und schließlich auf **[!UICONTROL Speichern]**, um das Formulardatenmodell zu speichern.
 
-### Argumente für den Bind Read-Dienst {#bindargument}
+### Argumente für Bind Read-Dienst {#bindargument}
 
-Bind Read-Dienstargument an ein User Profil-Attribut, ein Request-Attribut oder einen Literalwert basierend auf einem Bindungswert. Der Wert wird als Argument an den Dienst übergeben, um Details abzurufen, die mit dem angegebenen Wert aus der Datenquelle verknüpft sind.
+Binden Sie das Read-Service-Argument an ein Benutzerprofilattribut, ein Anforderungsattribut oder einen Literalwert basierend auf einem Bindungswert. Der Wert wird als Argument an den Dienst übergeben, um mit dem angegebenen Wert verknüpfte Details aus der Datenquelle abzurufen.
 
 #### Literalwert {#literal-value}
 
-Wählen Sie **[!UICONTROL Literal]** aus dem Dropdownmenü **[!UICONTROL Bindung an]** und geben Sie einen Wert in das Feld **[!UICONTROL Bindungswert]** ein. Die mit dem Wert verknüpften Details werden aus der Datenquelle abgerufen. Verwenden Sie diese Option, um Details abzurufen, die mit einem statischen Wert verknüpft sind.
+Wählen Sie **[!UICONTROL Literal]** aus dem Dropdown-Menü **[!UICONTROL Bindung an]** und geben Sie einen Wert in das Feld **[!UICONTROL Bindungswert]** ein. Die mit dem Wert verknüpften Details werden aus der Datenquelle abgerufen. Verwenden Sie diese Option, um Details abzurufen, die mit einem statischen Wert verknüpft sind.
 
-In diesem Beispiel werden die mit **4367655678** als Wert für das `mobilenum`-Argument verknüpften Details aus der Datenquelle abgerufen. Die zugehörigen Details, wenn Sie den Wert für ein Mobiltelefonargument übergeben, können Eigenschaften wie Kundenname, Kundenadresse und Ort enthalten.
+In diesem Beispiel werden die Details, die mit **4367655678** als Wert für das `mobilenum`-Argument verknüpft sind, aus der Datenquelle abgerufen. Die zugehörigen Details, wenn Sie den Wert für ein Mobiltelefonargument übergeben, können Eigenschaften wie Kundenname, Kundenadresse und Stadt enthalten.
 
 ![Literalwert](assets/fdm_binding_literal_new.png)
 
 #### Benutzerprofilattribut {#user-profile-attribute}
 
-Wählen Sie **[!UICONTROL Benutzerattribut]** aus dem Dropdown-Menü **[!UICONTROL Bindung an]** und geben Sie den Attributnamen in das Feld **[!UICONTROL Bindungswert]** ein. Die Details des Benutzers, der bei der AEM Instanz angemeldet ist, werden aus der Datenquelle anhand des Attributnamens abgerufen.
+Wählen Sie **[!UICONTROL Benutzerprofilattribut]** aus dem Dropdown-Menü **[!UICONTROL Bindung an]** und geben Sie den Attributnamen in das Feld **[!UICONTROL Bindungswert]** ein. Die Details des Benutzers, der sich bei der AEM-Instanz angemeldet hat, werden aus der Datenquelle anhand des Attributnamens abgerufen.
 
-Der im Feld **[!UICONTROL Bindungswert]** angegebene Attributname muss den vollständigen Bindungspfad bis zum Attributnamen des Benutzers enthalten. Öffnen Sie die folgende URL, um auf die Benutzerdetails in CRXDE zuzugreifen:
+Der im Feld **[!UICONTROL Bindungswert]** angegebene Attributname muss den vollständigen Bindungspfad bis zum Attributnamen für den Benutzer enthalten. Öffnen Sie die folgende URL, um auf die Benutzerdetails in CRXDE zuzugreifen:
 
 `https://[server-name]:[port]/crx/de/index.jsp#/home/users/`
 
 ![Anwenderprofil](assets/binding_crxde_user_profile_new.png)
 
-Geben Sie in diesem Beispiel `profile.empid` im Feld **[!UICONTROL Bindungswert]** für den `grios`-Benutzer an.
+Geben Sie in diesem Beispiel `profile.empid` im Feld **[!UICONTROL Bindungswert]** für den Benutzer `grios` an.
 
 ![Argument bearbeiten](assets/edit_argument_user_profile_new.png)
 
-Das `id`-Argument nimmt den Wert des `empid`-Attributs des user-Profils und übergibt ihn als Argument an den Read-Dienst. Es liest und gibt Werte der zugehörigen Eigenschaften aus dem employee-Datenmodellobjekt für das `empid` zurück, das dem angemeldeten Benutzer zugeordnet ist.
+Das `id`-Argument nimmt den Wert des `empid`-Attributs des Benutzerprofils und übergibt ihn als Argument an den Read-Dienst. Es liest und gibt Werte der zugehörigen Eigenschaften aus dem employee -Datenmodellobjekt für die `empid` zurück, die mit dem angemeldeten Benutzer verknüpft sind.
 
 #### Anfrage-Attribut {#request-attribute}
 
-Verwenden Sie das Anforderungsattribut, um die zugehörigen Eigenschaften aus der Datenquelle abzurufen.
+Verwenden Sie das Anfrageattribut, um die zugehörigen Eigenschaften aus der Datenquelle abzurufen.
 
-1. Wählen Sie **[!UICONTROL Attribut anfordern]** aus dem Dropdownmenü **[!UICONTROL Bindung an]** und geben Sie den Attributnamen in das Feld **[!UICONTROL Bindungswert]** ein.
+1. Wählen Sie **[!UICONTROL Anforderungsattribut]** aus dem Dropdown-Menü **[!UICONTROL Bindung an]** und geben Sie den Attributnamen in das Feld **[!UICONTROL Bindungswert]** ein.
 
 1. Erstellen Sie eine [Überlagerung](../../../help/sites-developing/overlays.md) für head.jsp. Um die Überlagerung zu erstellen, öffnen Sie CRX DE und kopieren Sie die Datei `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp` in `https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`
 
    >[!NOTE]
    >
-   > * Wenn Sie eine statische Vorlage verwenden, überlagern Sie head.jsp unter:
+   > * Wenn Sie eine statische Vorlage verwenden, überlagern Sie die Datei head.jsp unter:
       >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
    > * Wenn Sie eine bearbeitbare Vorlage verwenden, überlagern Sie die Datei aftemplatedpage.jsp unter:
       >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 
-1. Legen Sie [!DNL paramMap] für das Anforderungsattribut fest. Fügen Sie beispielsweise den folgenden Code in die JSP-Datei im Apps-Ordner ein:
+1. Legen Sie [!DNL paramMap] für das Anfrageattribut fest. Fügen Sie beispielsweise den folgenden Code in die JSP-Datei im Apps-Ordner ein:
 
    ```javascript
    <%Map paraMap = new HashMap();
@@ -214,7 +213,7 @@ Verwenden Sie das Anforderungsattribut, um die zugehörigen Eigenschaften aus de
     request.setAttribute("paramMap",paraMap);
    ```
 
-   Verwenden Sie zum Beispiel den folgenden Code, um den Wert der Petid aus der Datenquelle abzurufen:
+   Verwenden Sie beispielsweise den folgenden Code, um den Wert von Petit aus der Datenquelle abzurufen:
 
 
    ```javascript
@@ -223,15 +222,15 @@ Verwenden Sie das Anforderungsattribut, um die zugehörigen Eigenschaften aus de
    request.setAttribute("paramMap",paraMap);%>
    ```
 
-Die Details werden basierend auf dem in der Anforderung angegebenen Attributnamen aus der Datenquelle abgerufen.
+Die Details werden aus der Datenquelle anhand des in der Anfrage angegebenen Attributnamens abgerufen.
 
-Wenn Sie beispielsweise das Attribut `petid=100` in der Anforderung angeben, werden Eigenschaften abgerufen, die mit dem Attributwert aus der Datenquelle verknüpft sind.
+Wenn Sie beispielsweise das Attribut in der Anfrage als `petid=100` angeben, werden Eigenschaften abgerufen, die dem Attributwert aus der Datenquelle zugeordnet sind.
 
 ## Verknüpfungen hinzufügen {#add-associations}
 
 In der Regel werden Verknüpfungen zwischen Datenmodellobjekten in einer Datenquelle erstellt. Dies können Eins-zu-Eins- oder Eins-zu-Viele-Verknüpfungen sein. So könnten mehrere Angehörige mit einem Mitarbeiter verknüpft sein. Dies wird als Eins-zu-Viele-Verknüpfung bezeichnet und in der Form `1:n` auf der Linie dargestellt, die die zugeordneten Datenmodellobjekte verbindet. Wenn jedoch eine Verknüpfung einen eindeutigen Mitarbeiternamen für eine gegebene Mitarbeiter-ID zurückgibt, wird dies als Eins-zu-Eins-Verknüpfung bezeichnet.
 
-Wenn Sie verknüpfte Datenmodellobjekte in einer Datenquelle zu einem Formulardatenmodell hinzufügen, werden deren Verknüpfungen beibehalten und als durch Pfeilzeilen verbundene Elemente angezeigt. Sie können in einem Formulardatenmodell Verknüpfungen zwischen Datenmodellobjekten über unterschiedliche Datenquellen hinweg hinzufügen.
+Wenn Sie verknüpfte Datenmodellobjekte in einer Datenquelle zu einem Formulardatenmodell hinzufügen, werden deren Verknüpfungen beibehalten und über Pfeillinien als verbunden angezeigt. Sie können in einem Formulardatenmodell Verknüpfungen zwischen Datenmodellobjekten über verschiedene Datenquellen hinweg hinzufügen.
 
 >[!NOTE]
 >
@@ -241,7 +240,7 @@ So fügen Sie eine Verknüpfung hinzu:
 
 1. Aktivieren Sie das Kontrollkästchen oben in einem Datenmodellobjekt, um dieses auszuwählen, und tippen Sie auf **[!UICONTROL Verknüpfung hinzufügen]**. Das Dialogfeld „Verknüpfung hinzufügen“ wird geöffnet.
 
-   ![add-associated](assets/add-association.png)
+   ![add-relation](assets/add-association.png)
 
    >[!NOTE]
    >
@@ -249,26 +248,26 @@ So fügen Sie eine Verknüpfung hinzu:
 
    Das Dialogfeld „Verknüpfung hinzufügen“ wird geöffnet.
 
-   ![add-associated-2](assets/add-association-2.png)
+   ![add-relation-2](assets/add-association-2.png)
 
    Dialogfeld „Verknüpfung hinzufügen“
 
 1. Im Bereich „Verknüpfung hinzufügen“:
 
    * Geben Sie einen Titel für die Verknüpfung an.
-   * Wählen Sie den Assoziierungstyp aus — Ein zu eins oder eins zu viele.
+   * Wählen Sie den Assoziierungstyp aus: Eins zu Eins oder Eins zu Viele.
    * Wählen Sie das Datenmodellobjekt aus, zu dem Sie die Verknüpfung erstellen möchten.
    * Wählen Sie den Lesedienst, der die Daten aus dem ausgewählten Modellobjekt lesen soll. Das Argument für den Lesedienst wird angezeigt. Bearbeiten Sie das Argument gegebenenfalls mit den nötigen Änderungen, und binden Sie es an die Eigenschaft des zu verknüpfenden Datenmodellobjekts.
 
    Im folgenden Beispiel ist `dependentid`das Standardargument für den Lesedienst des Datenmodellobjekts „Angehörige“.
 
-   ![add-associated-example](assets/add-association-example.png)
+   ![add-relation-example](assets/add-association-example.png)
 
    Standardargument für den Lesedienst für „Angehörige“ ist „dependentid“
 
-   Das Argument muss allerdings eine mit dem verknüpfenden Datenmodellobjekt gemeinsame Eigenschaft sein, in diesem Beispiel `Employeeid`. Daher muss das `Employeeid`-Argument an die `id`-Eigenschaft des Employee-Datenmodellobjekts gebunden sein, um die zugehörigen Abhängigkeitsdetails vom Datenmodellobjekt &quot;Abhängige&quot;abzurufen.
+   Das Argument muss allerdings eine mit dem verknüpfenden Datenmodellobjekt gemeinsame Eigenschaft sein, in diesem Beispiel `Employeeid`. Daher muss das `Employeeid`-Argument an die `id`-Eigenschaft des Employee-Datenmodellobjekts gebunden sein, um die zugehörigen Abhängigkeitsdetails aus dem Datenmodellobjekt &quot;Abhängige Elemente&quot;abzurufen.
 
-   ![add-associated-example-2](assets/add-association-example-2.png)
+   ![add-relation-example-2](assets/add-association-example-2.png)
 
    Aktualisiertes Argument und Bindung
 
@@ -281,9 +280,9 @@ So fügen Sie eine Verknüpfung hinzu:
 >
 >Die hinzugefügte Verknüpfung wird der Box für das Datenmodellobjekt mit dem angegebenen Titel und einer Linie angezeigt, die die verknüpften Datenmodellobjekte verbindet.
 >
->Sie können eine Zuordnung bearbeiten, indem Sie das Kontrollkästchen dazugehörige Verbindung markieren und auf **[!UICONTROL Zuordnung bearbeiten]** tippen.
+>Sie können eine Zuordnung bearbeiten, indem Sie das entsprechende Kontrollkästchen aktivieren und auf **[!UICONTROL Verknüpfung bearbeiten]** tippen.
 
-![added-association](assets/added-association.png)
+![Added-Association](assets/added-association.png)
 
 ## Eigenschaften bearbeiten {#properties}
 
@@ -304,20 +303,20 @@ Eigenschaften bearbeiten
 
 1. Tippen Sie auf **[!UICONTROL Fertig]**, um die Eigenschaften zu speichern, und dann auf **[!UICONTROL Speichern]**, um das Formulardatenmodell zu speichern.
 
-### Berechnete Eigenschaften erstellen  {#computed}
+### Berechnete Eigenschaften erstellen {#computed}
 
 Eine berechnete Eigenschaft ist diejenige, deren Wert basierend auf einer Regel oder einem Ausdruck berechnet wird. Mithilfe einer Regel können Sie den Wert einer berechneten Eigenschaft auf eine Literalzeichenfolge, eine Zahl, das Ergebnis eines mathematischen Ausdrucks oder den Wert einer anderen Eigenschaft im Formulardatenmodell festlegen.
 
 Beispielsweise können Sie eine berechnete Eigenschaft **FullName** erstellen, deren Wert ein Ergebnis der Verkettung der vorhandenen Eigenschaften **FirstName** und **LastName** ist. Gehen Sie dazu wie folgt vor:
 
-1. Erstellen Sie eine neue Eigenschaft mit dem Namen `FullName`, dessen Datentyp String ist.
+1. Erstellen Sie eine neue Eigenschaft mit dem Namen `FullName`, deren Datentyp &quot;String&quot;ist.
 1. Aktivieren Sie **[!UICONTROL Berechnet]** und tippen Sie auf **[!UICONTROL Fertig]**, um die Eigenschaft zu erstellen.
 
    ![berechnet](assets/computed.png)
 
    Die berechnete FullName-Eigenschaft wird erstellt. Beachten Sie das Symbol neben der Eigenschaft, um eine berechnete Eigenschaft darzustellen.
 
-   ![calculate-prop](assets/computed-prop.png)
+   ![computed-prop](assets/computed-prop.png)
 
 1. Wählen Sie die FullName-Eigenschaft und tippen Sie auf **[!UICONTROL Regel bearbeiten]**. Das Fenster „Regeleditor“ wird geöffnet.
 1. Im Fenster des Regeleditors tippen Sie auf **[!UICONTROL Erstellen]**. Ein Regelfenster **[!UICONTROL Wert festlegen]** wird geöffnet.
@@ -326,7 +325,7 @@ Beispielsweise können Sie eine berechnete Eigenschaft **FullName** erstellen, d
 
 1. Wählen Sie im mathematischen Ausdruck **[!UICONTROL FirstName]** und **[!UICONTROL LastName]** im ersten bzw. zweiten Objekt aus. Wählen Sie **[!UICONTROL plus]** als Bediener.
 
-   Tippen Sie auf **[!UICONTROL Fertig]** und dann auf **[!UICONTROL Schließen]**, um das Fenster des Regeleditors zu schließen. Die Regel sieht ähnlich der Folgenden aus:
+   Tippen Sie auf **[!UICONTROL Fertig]** und dann auf **[!UICONTROL Schließen]** , um das Fenster des Regeleditors zu schließen. Die Regel sieht ähnlich der Folgenden aus:
 
    ![rule](assets/rule.png)
 
@@ -334,7 +333,7 @@ Beispielsweise können Sie eine berechnete Eigenschaft **FullName** erstellen, d
 
 ## Arbeiten mit Navigationseigenschaften von OData-Diensten  {#work-with-navigation-properties-of-odata-services}
 
-In OData-Diensten werden Navigationseigenschaften verwendet, um Zuordnungen zwischen zwei Datenmodellobjekten zu definieren. Diese Eigenschaften werden für einen Entitätstyp oder einen komplexen Typ definiert. Beispiel: In der folgenden Extraktion aus der Metadatendatei der Musterdienste [TripPin](https://www.odata.org/blog/trippin-new-odata-v4-sample-service/) OData enthält die Entität der Person drei Navigationseigenschaften: Friends, BestFriend und Trips.
+In OData-Diensten werden Navigationseigenschaften verwendet, um Zuordnungen zwischen zwei Datenmodellobjekten zu definieren. Diese Eigenschaften werden für einen Entitätstyp oder einen komplexen Typ definiert. Im folgenden Auszug aus der Metadatendatei der Beispieldienste [TripPin](https://www.odata.org/blog/trippin-new-odata-v4-sample-service/) OData enthält die Entität der Person beispielsweise drei Navigationseigenschaften: Friends, BestFriend und Trips.
 
 Weitere Informationen finden Sie in der [OData-Dokumentation](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752536).
 
@@ -364,27 +363,27 @@ Weitere Informationen finden Sie in der [OData-Dokumentation](https://docs.oasis
 </EntityType>
 ```
 
-Wenn Sie einen OData-Dienst in einem Formulardatenmodell konfigurieren, werden alle Navigationseigenschaften in einem Entitätencontainer über einen Dienst im Formulardatenmodell bereitgestellt. In diesem Beispiel des TripPin OData-Dienstes können die drei Navigationseigenschaften im `Person`-Entitäts-Container mit einem `GET LINK`-Dienst im Formulardatenmodell gelesen werden.
+Wenn Sie einen OData-Dienst in einem Formulardatenmodell konfigurieren, werden alle Navigationseigenschaften in einem Entitätencontainer über einen Dienst im Formulardatenmodell bereitgestellt. In diesem Beispiel des OData-Dienstes &quot;TripPin&quot;können die drei Navigationseigenschaften im Entitäts-Container `Person` mit einem `GET LINK`-Dienst im Formulardatenmodell gelesen werden.
 
-Im Folgenden wird der Dienst `GET LINK of Person /People` im Formulardatenmodell hervorgehoben, bei dem es sich um einen kombinierten Dienst für die drei Navigationseigenschaften im `Person`-Element des TripPin OData-Dienstes handelt.
+Im Folgenden wird der Dienst `GET LINK of Person /People` im Formulardatenmodell beschrieben, der ein kombinierter Dienst für die drei Navigationseigenschaften in der `Person`-Entität des OData-Dienstes &quot;TripPin&quot;ist.
 
 ![nav-prop-service](assets/nav-prop-service.png)
 
-Sobald Sie den `GET LINK`-Dienst auf der Registerkarte „Dienste“ im Formulardatenmodell hinzufügen, können Sie die Eigenschaften bearbeiten, um das Modellobjekt für die Ausgabe und die im Dienst zu verwendende Navigationseigenschaft zu wählen. Beispielsweise verwendet der folgende `GET LINK of Person /People`-Dienst im folgenden Beispiel &quot;Trip&quot;als Ausgabemodellobjekt und die Navigationseigenschaft als &quot;Trips&quot;.
+Sobald Sie den `GET LINK`-Dienst auf der Registerkarte „Dienste“ im Formulardatenmodell hinzufügen, können Sie die Eigenschaften bearbeiten, um das Modellobjekt für die Ausgabe und die im Dienst zu verwendende Navigationseigenschaft zu wählen. Der folgende `GET LINK of Person /People`-Dienst im folgenden Beispiel verwendet beispielsweise &quot;Trip&quot;als Ausgabemodellobjekt und die Navigationseigenschaft als &quot;Trips&quot;.
 
 ![edit-prop-nav-prop](assets/edit-prop-nav-prop.png)
 
 >[!NOTE]
 >
->Die im Feld **Standardwert** des Arguments **NavigationPropertyName** verfügbaren Werte hängen vom Status des **Rückkehrarray ab?** ab. Wenn diese Funktion aktiviert ist, zeigt sie Navigationsfunktionen des Typs Sammlung an.
+>Die im Feld **Standardwert** des Arguments **NavigationPropertyName** verfügbaren Werte hängen vom Status des **Rückgabe-Arrays ab?** ab. Wenn diese Funktion aktiviert ist, zeigt sie Navigationsfunktionen des Typs Sammlung an.
 
-In diesem Beispiel können Sie auch das Ausgabemodellobjekt als &quot;Person&quot;und das Argument der Navigationseigenschaft als &quot;Freunde&quot;oder &quot;BestFriend&quot;auswählen (je nachdem, ob **Rückgaberarray?** aktiviert oder deaktiviert ist).
+In diesem Beispiel können Sie das Ausgabemodellobjekt auch als Personen- und Navigations-Eigenschaftsargument als Freunde oder BestFriend auswählen (je nachdem, ob **Array zurückgeben?** aktiviert oder deaktiviert ist).
 
 ![edit-prop-nav-prop2](assets/edit-prop-nav-prop2.png)
 
 Darüber hinaus können Sie beim Hinzufügen von Verknüpfungen im Formulardatenmodell einen `GET LINK`-Dienst wählen und seine Navigationseigenschaften konfigurieren. Damit eine Navigationseigenschaft gewählt werden kann, müssen Sie jedoch darauf achten, dass im Feld **** Bindung an der Wert **Literal** eingestellt ist.
 
-![add-associated-nav-prop](assets/add-association-nav-prop.png)
+![add-relation-nav-prop](assets/add-association-nav-prop.png)
 
 ## Generieren und Bearbeiten von Beispieldaten {#sample}
 
@@ -394,7 +393,7 @@ Gehen Sie folgendermaßen vor, um Beispieldaten zu generieren und zu bearbeiten:
 
 1. Öffnen Sie ein Formulardatenmodell und tippen Sie auf **[!UICONTROL Beispieldaten bearbeiten]**. Es werden Beispieldaten im Fenster „Beispieldaten bearbeiten“ generiert und angezeigt.
 
-   ![Musterdaten erstellen](assets/form_data_model_generate_sample_data_new.png)
+   ![Beispieldaten generieren](assets/form_data_model_generate_sample_data_new.png)
 
 1. Bearbeiten Sie im Fenster **[!UICONTROL Beispieldaten bearbeiten]** Daten je nach Bedarf und tippen Sie auf **[!UICONTROL Speichern]**.
 
@@ -418,19 +417,19 @@ Ihr Formulardatenmodell ist konfiguriert. Bevor Sie es verwenden, sollten Sie je
 
 Auf ähnliche Weise können Sie andere Datenmodellobjekte und Dienste im Formulardatenmodell testen.
 
-## Automatisierte Validierung von Eingabedaten {#automated-validation-of-input-data}
+## Automatische Validierung von Eingabedaten {#automated-validation-of-input-data}
 
-Das Formulardatenmodell validiert Daten, die beim Aufrufen der DermisBridge-API als Eingabe empfangen wurden (basierend auf den im Formulardatenmodell verfügbaren Validierungskriterien). Die Überprüfung basiert auf dem `ValidationOptions`-Flag im Abfrage-Objekt, das zum Aufrufen der API verwendet wird.
+Das Formulardatenmodell überprüft Daten, die beim Aufrufen der DermisBridge-API als Eingabe empfangen wurden (basierend auf den im Formulardatenmodell verfügbaren Validierungskriterien). Die Validierung basiert auf der `ValidationOptions`-Markierung, die im Abfrageobjekt festgelegt ist, das zum Aufrufen der API verwendet wird.
 
-Das Flag kann auf einen der folgenden Werte eingestellt werden:
+Das Flag kann auf einen der folgenden Werte gesetzt werden:
 
-* **VOLLSTÄNDIG**: FDM führt die Überprüfung anhand aller Einschränkungen durch
-* **AUS**: Keine Überprüfung
-* **GRUNDLAGE**: FDM führt die Validierung anhand der Beschränkungen &quot;Erforderlich&quot;und &quot;Nullbar&quot;durch
+* **FULL**: FDM führt die Validierung basierend auf allen Begrenzungen durch
+* **OFF**: Keine Validierung
+* **GRUNDLAGE**: FDM führt die Validierung anhand von &quot;erforderlichen&quot;und &quot;unveränderlichen&quot;Begrenzungen durch
 
-Wenn für das `ValidationOptions`Flag kein Wert festgelegt ist, wird für die Eingabedaten eine **BASIC**-Überprüfung durchgeführt.
+Wenn kein Wert für das `ValidationOptions`Flag festgelegt ist, wird die **BASIC**-Validierung für die Eingabedaten durchgeführt.
 
-Das folgende Beispiel zeigt, wie Sie das ÜberprüfungsFlag auf **FULL** setzen:
+Im Folgenden finden Sie ein Beispiel für die Einstellung des Validierungsfelds auf **FULL**:
 
 ```java
 operationOptions.setValidationOptions(ValidationOptions.FULL);
@@ -438,17 +437,17 @@ operationOptions.setValidationOptions(ValidationOptions.FULL);
 
 >[!NOTE]
 >
->Der Wert, den Sie für ein Attribut in den Eingabedaten angeben, muss mit dem Datentyp übereinstimmen, der für das Attribut im Metadaten-Dokument definiert wurde.\
->Wenn der Wert nicht mit dem für das Attribut definierten Datentyp übereinstimmt, zeigt die DermisBridge-API unabhängig vom Wert des Flags `ValidationOptions` eine Ausnahme an. Wenn die Protokollebene auf &quot;Debuggen&quot;festgelegt ist, wird ein Fehler bei der Datei **error.log** protokolliert.
+>Der Wert, den Sie für ein Attribut in den Eingabedaten angeben, muss mit dem Datentyp übereinstimmen, der für das Attribut im Metadatendokument definiert ist.\
+>Wenn der Wert nicht mit dem für das Attribut definierten Datentyp übereinstimmt, zeigt die DermisBridge-API unabhängig vom Wert der `ValidationOptions`-Markierung eine Ausnahme an. Wenn die Protokollebene auf Debug festgelegt ist, wird ein Fehler in der Datei **error.log** protokolliert.
 
-Das Formulardatenmodell validiert Eingabedaten auf der Grundlage einer Liste von Datentypbeschränkungen. Die Liste von Einschränkungen für Eingabedaten kann je nach Datenquelle variieren.
+Das Formulardatenmodell validiert Eingabedaten anhand einer Liste von Datentypbegrenzungen. Die Liste der Einschränkungen für Eingabedaten kann je nach Datenquelle variieren.
 
-In der folgenden Tabelle werden die Einschränkungen für Eingabedaten basierend auf der Datenquelle Liste:
+In der folgenden Tabelle sind die Einschränkungen für Eingabedaten basierend auf der Datenquelle aufgeführt:
 
 <table>
  <tbody> 
   <tr> 
-   <td>Einschränkungen</td> 
+   <td>Beschränkungen</td> 
    <td>Beschreibung</td> 
    <td>Eingabedatenquelle</td> 
   </tr> 
@@ -460,36 +459,36 @@ In der folgenden Tabelle werden die Einschränkungen für Eingabedaten basierend
   <tr> 
    <td>nullable</td> 
    <td>Wenn "true", kann der Wert für den Parameter in den Eingabedaten auf Null gesetzt werden.</td> 
-   <td>WSDL, Odata und Datenbank</td> 
+   <td>WSDL, Daten und Datenbank</td> 
   </tr> 
   <tr> 
    <td>maximum</td> 
-   <td>Gibt die Obergrenze für numerische Werte an. Der als Obergrenze angegebene Wert kann auch dem Parameter in den Eingabedaten zugewiesen werden.</td> 
+   <td>Gibt die Obergrenze für numerische Werte an. Der als Obergrenze angegebene Maximalwert kann auch dem Parameter in den Eingabedaten zugewiesen werden.</td> 
    <td>Swagger und WSDL</td> 
   </tr> 
   <tr> 
    <td>minimum</td> 
-   <td>Gibt die untere Grenze für numerische Werte an. Der als Untergrenze angegebene Mindestwert kann auch dem Parameter in den Eingabedaten zugewiesen werden.</td> 
+   <td>Gibt die Untergrenze für numerische Werte an. Der als Untergrenze angegebene Mindestwert kann auch dem Parameter in den Eingabedaten zugewiesen werden.</td> 
    <td>Swagger und WSDL</td> 
   </tr> 
   <tr> 
    <td>exclusiveMaximum </td> 
-   <td>Gibt die Obergrenze für numerische Werte an. Der als Obergrenze angegebene Wert darf nicht dem Parameter in den Eingabedaten zugewiesen werden.</td> 
+   <td>Gibt die Obergrenze für numerische Werte an. Der als Obergrenze angegebene Maximalwert darf dem Parameter in den Eingabedaten nicht zugewiesen werden.</td> 
    <td>Swagger und WSDL</td> 
   </tr> 
   <tr> 
    <td>exclusiveMinimum </td> 
-   <td>Gibt die untere Grenze für numerische Werte an. Der als Untergrenze angegebene Mindestwert darf dem Parameter in den Eingabedaten nicht zugewiesen werden.</td> 
+   <td>Gibt die Untergrenze für numerische Werte an. Der als Untergrenze angegebene Mindestwert darf dem Parameter in den Eingabedaten nicht zugewiesen werden.</td> 
    <td>Swagger und WSDL</td> 
   </tr> 
   <tr> 
    <td>minLength</td> 
-   <td>Gibt die untere Grenze für die Anzahl der Zeichen in einer Zeichenfolge an. Der als Untergrenze angegebene Mindestwert kann auch dem Parameter in den Eingabedaten zugewiesen werden.</td> 
+   <td>Gibt die Untergrenze für die Anzahl der Zeichen an, die in einer Zeichenfolge enthalten sind. Der als Untergrenze angegebene Mindestwert kann auch dem Parameter in den Eingabedaten zugewiesen werden.</td> 
    <td>Swagger und WSDL</td> 
   </tr> 
   <tr> 
    <td>maxLength</td> 
-   <td>Gibt die Obergrenze für die Anzahl der Zeichen an, die in einer Zeichenfolge enthalten sind. Der als Obergrenze angegebene Wert kann auch dem Parameter in den Eingabedaten zugewiesen werden.</td> 
+   <td>Gibt die Obergrenze für die Anzahl der Zeichen an, die in einer Zeichenfolge enthalten sind. Der als Obergrenze angegebene Maximalwert kann auch dem Parameter in den Eingabedaten zugewiesen werden.</td> 
    <td>Swagger, WSDL, Odata und Datenbank</td> 
   </tr> 
   <tr> 
@@ -504,7 +503,7 @@ In der folgenden Tabelle werden die Einschränkungen für Eingabedaten basierend
   </tr> 
   <tr> 
    <td>maxItems</td> 
-   <td>Gibt die maximale Anzahl von Elementen in einem Array an. Der als Obergrenze angegebene Wert kann auch dem Parameter in den Eingabedaten zugewiesen werden.</td> 
+   <td>Gibt die maximale Anzahl von Elementen in einem Array an. Der als Obergrenze angegebene Maximalwert kann auch dem Parameter in den Eingabedaten zugewiesen werden.</td> 
    <td>Swagger und WSDL</td> 
   </tr> 
   <tr> 
@@ -525,7 +524,7 @@ In der folgenden Tabelle werden die Einschränkungen für Eingabedaten basierend
  </tbody> 
 </table>
 
-In diesem Beispiel werden die Eingabedaten anhand der in der Swagger-Datei definierten Beschränkungen &quot;maximum&quot;, &quot;minimum&quot;und &quot;required&quot;validiert. Die Eingabedaten erfüllen die Validierungskriterien nur, wenn die Bestell-ID vorhanden ist und ihr Wert zwischen 1 und 10 liegt.
+In diesem Beispiel werden die Eingabedaten anhand der in der Swagger-Datei definierten Mindest-, Mindest- und erforderlichen Einschränkungen validiert. Die Eingabedaten erfüllen die Validierungskriterien nur, wenn die Bestell-ID vorhanden ist und ihr Wert zwischen 1 und 10 liegt.
 
 ```json
    parameters: [
@@ -542,7 +541,7 @@ In diesem Beispiel werden die Eingabedaten anhand der in der Swagger-Datei defin
    ]
 ```
 
-Eine Ausnahme wird angezeigt, wenn die Eingabedaten die Überprüfungskriterien nicht erfüllen. Wenn die Protokollebene auf **Debuggen** eingestellt ist, wird ein Fehler in der Datei **error.log** protokolliert. Beispiel:
+Eine Ausnahme wird angezeigt, wenn die Eingabedaten die Validierungskriterien nicht erfüllen. Wenn die Protokollebene auf **Debug** festgelegt ist, wird ein Fehler in der Datei **error.log** protokolliert. Beispiel:
 
 ```verilog
 21.01.2019 17:26:37.411 *ERROR* com.adobe.aem.dermis.core.validation.JsonSchemaValidator {"errorCode":"AEM-FDM-001-044","errorMessage":"Input validations failed during operation execution.","violations":{"/orderId":["numeric instance is greater than the required maximum (maximum: 10, found: 16)"]}}
