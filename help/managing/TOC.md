@@ -7,7 +7,6 @@ breadcrumb-title: Bedieneranleitung
 user-guide-description: Erfahren Sie, wie Sie ein AEM-Projekt verwalten können.
 feature: Bereitstellen
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
 source-wordcount: '73'
@@ -18,7 +17,7 @@ ht-degree: 93%
 
 # AEM 6.5-Verwaltungsanleitung {#managing}
 
-+ [Verwalten des Benutzerhandbuchs](home.md)
++ [Benutzerhandbuch verwalten](home.md)
 + Verwalten - Checkliste mit Best Practices {#managing-best-practices-checklist}
    + [Verwalten von Projekten - Checkliste mit Best Practices](best-practices.md)
    + [Die Checkliste](best-practices-checklist.md)
