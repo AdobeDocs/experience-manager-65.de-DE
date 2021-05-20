@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 10d406db-ac10-479b-b08b-d0735116a12b
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+exl-id: 4c8a3877-1a3c-410d-ad1f-69c73ba4fcc1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1423'
 ht-degree: 96%
 
 ---
 
-
 # Übersicht über AEM Document Services{#overview-of-aem-document-services}
 
 Bei AEM Document Services handelt es sich um einen Satz an OSGi-Diensten zum Erstellen, Zusammenstellen und Sichern von PDF-Dokumenten. Document Services enthält die folgenden Dienste:
 
-## Output Service {#output-service}
+## Ausgabe-Service {#output-service}
 
 Der Output-Dienst ermöglicht das Erstellen von Dokumenten in verschiedenen Formaten, einschließlich PDF, Laserdruckerformate und Beschriftungsdruckerformate. Laserdruckerformate sind PostScript und Printer Control Language (PCL). In der nachfolgenden Liste sind die Beschriftungsdruckerformate aufgeführt:
 
@@ -45,9 +44,9 @@ Die folgenden vier Output-Dienstvorgänge stehen zur Verwendung zur Verfügung:
 * **generatePrintedOutput**: Führt einen Formularentwurf mit Formulardaten zusammen, um ein Dokument zu erstellen, das entweder an einer Laserdrucker oder einen Beschriftungsnetzwerkdrucker gesendet werden soll.
 
 * **generatePDFOutputBatch**: Führt mehrere Vorlagen mit mehreren Datensätzen in einem einzigen Aufruf zusammen, um einen Stapel von PDF-Dateien zu generieren. Es gibt auch eine Option zum Generieren einer einzigen PDF durch Kombinieren aller PDFs
-* **generatePrintedOutputBatch**: Führt mehrere Vorlagen mit mehreren Datensätzen in einem einzigen Aufruf zusammen, um einen Stapel gedruckter Dokumente (PS, PCL, ZPL, DPL, IPL, TPCL) zu generieren. Es gibt auch eine Option zum Generieren eines einzigen Druckdokuments.
+* **generatePrintedOutputBatch**: Führt mehrere Vorlagen mit mehreren Datensätzen in einem einzigen Aufruf zusammen, um einen Stapel von Druckdokumenten zu generieren (PS, PCL, ZPL, DPL, IPL, TPCL). Es gibt auch eine Option zum Generieren eines einzigen Druckdokuments.
 
-## Assembler-Dienst {#assembler-service}
+## Assembler-Service {#assembler-service}
 
 Mit dem Assembler-Dienst können Sie PDF- und XDP-Dokumente kombinieren, neu anordnen und erweitern sowie Informationen zu PDF-Dokumenten erhalten. Jeder an den Assembler-Dienst übermittelte Auftrag umfasst ein DDX-Dokument (Document Description XML), Quelldokumente und externe Ressourcen (Zeichenfolgen und Grafiken). Das DDX-Dokument enthält Anweisungen dazu, wie die Quelldokumente zum Generieren eines Satzes von Zieldokumenten verwendet werden.
 
@@ -108,7 +107,7 @@ Der Signature-Dienst ermöglicht das Arbeiten mit digitalen Signaturen und Dokum
 
 Der Signature-Dienst greift auf Zertifikate und Berechtigungen zu, die im Trust Store gespeichert sind.
 
-### Encryption-Dienst  {#encryption-service}
+### Encryption-Service {#encryption-service}
 
 Der Encryption-Dienst ermöglicht das Ver- und Entschlüsseln von Dokumenten. Wird ein Dokument verschlüsselt, ist sein Inhalt nicht mehr lesbar. Beim Verschlüsseln eines PDF-Dokuments können Sie das gesamte PDF-Dokument (einschließlich Inhalt, Metadaten und Anlagen), alle Daten außer den Metadaten oder nur die Anlagen verschlüsseln. Ein autorisierter Benutzer kann das Dokument entschlüsseln, um Zugriff auf den Inhalt zu erhalten. Wenn ein PDF-Dokument mit einem Kennwort verschlüsselt wird, muss der Benutzer das Kennwort zum Öffnen angeben, damit das Dokument in Adobe Reader oder Acrobat angezeigt werden kann. Wenn ein PDF-Dokument mit einem Zertifikat verschlüsselt ist, muss der Benutzer das PDF-Dokument mithilfe eines privaten Schlüssels (Zertifikat) entschlüsseln. Der private Schlüssel, der zum Entschlüsseln des PDF-Dokuments verwendet wird, muss dem öffentlichen Schlüssel entsprechen, der zum Verschlüsseln verwendet wurde.
 
@@ -129,8 +128,8 @@ PDF-Dokumente, denen entsprechende Verwendungsrechte hinzugefügt wurden, ermög
 
 Diese speziellen Benutzerfunktionen werden automatisch aktiviert, wenn ein PDF-Dokument mit aktivierten Benutzerrechten in Adobe Reader geöffnet wird. Wenn der Benutzer die Arbeit mit einem Dokument mit aktivierten Benutzerrechten beendet hat, sind diese Funktionen in Adobe Reader wieder deaktiviert. Sie bleiben deaktiviert, bis der Benutzer ein weiteres PDF-Dokument mit aktivierten Benutzerrechten erhält.
 
-Standardmäßig ist der DocAssurance-Dienst nicht verfügbar. Informationen zum Konfigurieren des DocAssurance-Dienstes finden Sie unter [Installieren und Konfigurieren von Dokument Services](../../forms/using/install-configure-document-services.md).
+Standardmäßig ist der DocAssurance-Dienst nicht verfügbar. Informationen zum Konfigurieren des DocAssurance-Dienstes finden Sie unter [Installieren und Konfigurieren von Document Services](../../forms/using/install-configure-document-services.md).
 
 ## An Drucker senden {#send-to-printer-service}
 
-Der Dienst &quot;An Drucker senden&quot;stellt eine API zum Senden von Dokumenten an den angegebenen Drucker zum Drucken bereit.
+&quot;An Drucker senden&quot;bietet API zum Senden von Dokumenten zum Drucken an den angegebenen Drucker.
