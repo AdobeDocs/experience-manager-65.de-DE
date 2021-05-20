@@ -9,15 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
-feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Dokumentensicherheit
+exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '10275'
 ht-degree: 85%
 
 ---
-
 
 # Document Security-Server konfigurieren {#configure-the-document-security-server}
 
@@ -26,7 +25,7 @@ ht-degree: 85%
 
 ## Einstellungen zur Serverkonfiguration {#server-configuration-settings}
 
-**Basis-URL:** Die Basis-Dokument-Sicherheits-URL, die den Servernamen und Anschluss enthält. Durch Anfügen von Informationen an die Basis-URL werden Verbindungs-URLs erstellt. /edc/Main.do wird beispielsweise angefügt, um auf die Webseiten zuzugreifen. Diese URL ermöglicht Benutzern auch , auf Einladungen externer Benutzer zur Registrierung zu antworten.
+**Basis-URL:** Die Basis-Document Security-URL, die den Servernamen und Port enthält. Durch Anfügen von Informationen an die Basis-URL werden Verbindungs-URLs erstellt. /edc/Main.do wird beispielsweise angefügt, um auf die Webseiten zuzugreifen. Diese URL ermöglicht Benutzern auch , auf Einladungen externer Benutzer zur Registrierung zu antworten.
 
 Wenn Sie IPv6 verwenden, geben Sie die Basis-URL als Computernamen oder den DNS-Namen ein. Wenn Sie eine numerische IP-Adresse verwenden, kann Acrobat die richtliniengeschützten Dateien nicht öffnen. Verwenden Sie auch die sichere HTTP-URL (HTTPS) für Ihren Server.
 
@@ -34,42 +33,42 @@ Wenn Sie IPv6 verwenden, geben Sie die Basis-URL als Computernamen oder den DNS-
 >
 >Die Basis-URL ist in durch Richtlinien geschützte Dateien eingebettet. Sie wird von Clientanwendungen verwendet, um sich wieder mit dem Server zu verbinden. Geschützte Dateien enthalten die Basis-URL auch dann weiter, wenn diese später geändert wird. Wenn Sie die Basis-URL ändern, müssen die Konfigurationsinformationen für alle sich mit dem Server verbindenden Clients geändert werden.
 
-**Standardmäßige Offline-Nutzungsdauer:** Die Standarddauer, die ein Benutzer offline ein geschütztes Dokument verwenden kann. Diese Einstellung bestimmt den ursprünglichen Wert der Einstellung für die Automatische Offline-Nutzungsdauer, wenn Sie eine Richtlinie erstellen. (Siehe Richtlinien erstellen und bearbeiten.) Nach Ablauf der Nutzungsdauer muss der Empfänger das Dokument erneut synchronisieren, um es weiter verwenden zu können.
+**Standardmäßige Offline-Nutzungsdauer:** Die Standarddauer, die ein Benutzer ein geschütztes Dokument offline verwenden kann. Diese Einstellung bestimmt den ursprünglichen Wert der Einstellung für die Automatische Offline-Nutzungsdauer, wenn Sie eine Richtlinie erstellen. (Siehe Richtlinien erstellen und bearbeiten.) Nach Ablauf der Nutzungsdauer muss der Empfänger das Dokument erneut synchronisieren, um es weiter verwenden zu können.
 
 Weitere Informationen zur Funktionsweise der Offline-Nutzung und Synchronisation finden Sie unter [Primer zum Konfigurieren der Offline-Nutzung und Synchronisation](https://blogs.adobe.com/security/2009/05/primer_on_configuring_offline.html).
 
-**Standardmäßige Offline-Synchronisierungszeit:** Die maximale Zeit, die ein Dokument offline verwendet werden kann, wenn es ursprünglich geschützt ist.
+**Standardmäßiger Offline-Synchronisierungszeitraum:** Die maximale Zeit, die ein beliebiges Dokument offline verwendet werden kann, wenn es ursprünglich geschützt ist.
 
-**Client-Sitzungszeitlimit:** Die Zeitspanne in Minuten, nach der Dokument Security die Verbindung trennt, wenn ein Benutzer, der über eine Clientanwendung angemeldet ist, nicht mit Dokument Security interagiert.
+**Client-Sitzungs-Timeout:** Die Zeitdauer in Minuten, nach der Document Security die Verbindung trennt, wenn ein Benutzer, der über eine Clientanwendung angemeldet ist, nicht mit Document Security interagiert.
 
-**Zugriff auf anonyme Benutzer zulassen:** Wählen Sie diese Option, um freigegebene und persönliche Richtlinien zu erstellen, die anonymen Benutzern das Öffnen richtliniengeschützter Dokumente ermöglichen. (Benutzer ohne Konto können auf das Dokument zugreifen, sich jedoch nicht bei Document Security anmelden oder andere richtliniengeschützte Dokumente nutzen.)
+**Zugriff für anonyme Benutzer zulassen:** Wählen Sie diese Option, um die Erstellung von freigegebenen und persönlichen Richtlinien zu ermöglichen, die anonymen Benutzern das Öffnen richtliniengeschützter Dokumente ermöglichen. (Benutzer ohne Konto können auf das Dokument zugreifen, sich jedoch nicht bei Document Security anmelden oder andere richtliniengeschützte Dokumente nutzen.)
 
-**Zugriff auf Version 7-Clients deaktivieren:** Gibt an, ob Benutzer mit Acrobat oder Reader 7.0 eine Verbindung zum Server herstellen können. Ist diese Option aktiviert, müssen Benutzer Acrobat oder Reader 8.0 oder höher verwenden, um Document Security-Vorgänge für PDF-Dokumente durchzuführen. Falls Richtlinien erfordern, dass Acrobat oder Reader 8.0 oder höher zum Öffnen richtliniengeschützter Dokumente im zertifizierten Modus ausgeführt werden muss, müssen Sie den Zugriff auf Acobat oder Reader 7 deaktivieren. (Siehe Die Dokumentberechtigungen für Benutzer und Gruppen angeben.)
+**Zugriff auf Version 7-Clients deaktivieren:** Gibt an, ob Benutzer Acrobat oder Reader 7.0 verwenden können, um eine Verbindung zum Server herzustellen. Ist diese Option aktiviert, müssen Benutzer Acrobat oder Reader 8.0 oder höher verwenden, um Document Security-Vorgänge für PDF-Dokumente durchzuführen. Falls Richtlinien erfordern, dass Acrobat oder Reader 8.0 oder höher zum Öffnen richtliniengeschützter Dokumente im zertifizierten Modus ausgeführt werden muss, müssen Sie den Zugriff auf Acobat oder Reader 7 deaktivieren. (Siehe Die Dokumentberechtigungen für Benutzer und Gruppen angeben.)
 
-**Offline-Zugriff pro** Dokument zulassenWählen Sie diese Option, um den Offline-Zugriff pro Dokument festzulegen. Wenn diese Einstellung aktiviert ist, kann der Benutzer nur auf die Dokumente offline zugreifen, die er mindestens einmal online geöffnet hat.
+**Offline-Zugriff pro** Dokument zulassenWählen Sie diese Option, um den Offline-Zugriff pro Dokument anzugeben. Wenn diese Einstellung aktiviert ist, kann der Benutzer nur auf die Dokumente offline zugreifen, die er mindestens einmal online geöffnet hat.
 
-**Authentifizierung mit Benutzername und Kennwort zulassen:** Wählen Sie diese Option, damit Clientanwendungen beim Herstellen einer Serververbindung die Authentifizierung mit Benutzername und Kennwort verwenden können.
+**Authentifizierung für Benutzernamen-Kennwort zulassen:** Wählen Sie diese Option, um Client-Anwendungen die Verwendung der Benutzername-/Kennwortauthentifizierung beim Herstellen einer Verbindung zum Server zu ermöglichen.
 
-**Kerberos-Authentifizierung zulassen:** Wählen Sie diese Option, damit Clientanwendungen beim Herstellen einer Verbindung mit dem Server die Kerberos-Authentifizierung verwenden können.
+**Kerberos-Authentifizierung zulassen:** Wählen Sie diese Option, um Clientanwendungen zu aktivieren, die die Kerberos-Authentifizierung beim Herstellen einer Verbindung zum Server verwenden.
 
-**Client-Zertifikatauthentifizierung zulassen:** Wählen Sie diese Option, damit Clientanwendungen beim Herstellen einer Verbindung mit dem Server die Zertifikatauthentifizierung verwenden können.
+**Client-Zertifikatauthentifizierung zulassen:** Wählen Sie diese Option aus, um Clientanwendungen zu aktivieren, die die Zertifikatauthentifizierung beim Herstellen einer Verbindung zum Server verwenden.
 
-**Erweiterte** Authentifizierung zulassenWählen Sie aus, um die erweiterte Authentifizierung zu aktivieren, und geben Sie dann die Landing-URL der erweiterten Authentifizierung ein.
+**Erweiterte** Authentifizierung zulassenWählen Sie diese Option aus, um die erweiterte Authentifizierung zu aktivieren, und geben Sie dann die Landing-URL für die erweiterte Authentifizierung ein.
 
 Durch Auswahl dieser Option werden Clientanwendungen für die Verwendung der erweiterten Authentifizierung aktiviert. Mit erweiterter Authentifizierung können auf dem AEM Forms-Server angepasste Authentifizierungsprozesse und verschiedene Authentifizierungsoptionen konfiguriert werden. Beispielsweise können Benutzer die SAML-basierte Authentifizierung anstelle des AEM Forms-Benutzernamens/Kennworts von Acrobat- und Reader-Clients aus nutzen. Standardmäßig enthält die Startseiten-URL „*localhost*“ als den Servernamen. Ersetzen Sie den Servernamen durch einen voll qualifizierten Hostnamen. Der Hostname in der Startseiten-URL wird automatisch mit der Basis-URL gefüllt, wenn die erweiterte Authentifizierung noch nicht aktiviert ist. Siehe [Erweiterten Authentifizierungsanbieter hinzufügen](configuring-client-server-options.md#add-the-extended-authentication-provider). 
 
 ***Hinweis **: Erweiterte Authentifizierung wird auf Apple Mac OS X mit Adobe Acrobat ab Version 11.0.6 unterstützt.*
 
-**Bevorzugte HTML-Steuerelementbreite für erweiterte** AuthentifizierungGeben Sie die Breite des Dialogfelds für erweiterte Authentifizierung an, das in Acrobat zur Eingabe von Benutzeranmeldeinformationen geöffnet wird.
+**Bevorzugte HTML-Steuerelementbreite für erweiterte** Authentifizierung Geben Sie die Breite des Dialogfelds für die erweiterte Authentifizierung an, das in Acrobat zur Eingabe von Benutzeranmeldeinformationen geöffnet wird.
 
-**Bevorzugte Höhe des HTML-Steuerelements für erweiterte** AuthentifizierungGeben Sie die Höhe des Dialogfelds für erweiterte Authentifizierung an, das in Acrobat zur Eingabe der Benutzeranmeldeinformationen geöffnet wird.
+**Bevorzugte HTML-Steuerelementhöhe für erweiterte** Authentifizierung Geben Sie die Höhe des Dialogfelds für die erweiterte Authentifizierung an, das in Acrobat zur Eingabe von Benutzeranmeldeinformationen geöffnet wird.
 
 ***Hinweis **: Die Breite und Höhe dieses Dialogfelds sind wie folgt begrenzt:*
 Breite: Minimum = 400, Maximum = 900
 
 Höhe: Minimum = 450; Maximum = 800
 
-**Zwischenspeichern von Clientberechtigungen aktivieren:** Wählen Sie diese Option, damit Benutzer ihre Anmeldeinformationen (Benutzername und Kennwort) zwischenspeichern können. Wenn die Anmeldeinformationen von Benutzern zwischengespeichert werden, müssen sie sie beim Öffnen eines Dokument oder beim Klicken auf die Schaltfläche „Aktualisieren“ auf der Seite „Sicherheitsrichtlinien verwalten“ in Adobe Acrobat nicht immer eingeben. Sie können die Anzahl der Tage angeben, nach deren Ablauf die Benutzer die Anmeldeinformationen erneut eingeben müssen. Bei Festlegung auf 0 Tage werden die Anmeldeinformationen unbegrenzt zwischengespeichert.
+**Zwischenspeicherung von Client-Anmeldedaten aktivieren:** Wählen Sie diese Option, damit Benutzer ihre Anmeldedaten (Benutzername und Kennwort) zwischenspeichern können. Wenn die Anmeldeinformationen von Benutzern zwischengespeichert werden, müssen sie sie beim Öffnen eines Dokument oder beim Klicken auf die Schaltfläche „Aktualisieren“ auf der Seite „Sicherheitsrichtlinien verwalten“ in Adobe Acrobat nicht immer eingeben. Sie können die Anzahl der Tage angeben, nach deren Ablauf die Benutzer die Anmeldeinformationen erneut eingeben müssen. Bei Festlegung auf 0 Tage werden die Anmeldeinformationen unbegrenzt zwischengespeichert.
 
 ## Konfigurieren von Document Security-Benutzern und -Administratoren {#configuring-document-security-users-and-administrators}
 
@@ -127,7 +126,7 @@ Wenn die erweiterte Authentifizierung aktiviert ist, wird beim Öffnen eines ric
    <entry key="sso-o" value="/ssoexample/logout.jsp"/>
    ```
 
-1. Speichern Sie die Datei und importieren Sie dann die aktualisierte Datei von der Seite &quot;Manuelle Konfiguration&quot;: Klicken Sie in Administration Console auf &quot;Einstellungen&quot;> &quot;User Management&quot;> &quot;Konfiguration&quot;> &quot;Konfigurationsdateien importieren und exportieren&quot;.
+1. Speichern Sie die Datei und importieren Sie dann die aktualisierte Datei von der Seite Manuelle Konfiguration : Klicken Sie in Administration Console auf &quot;Einstellungen&quot;> &quot;User Management&quot;> &quot;Konfiguration&quot;> &quot;Konfigurationsdateien importieren und exportieren&quot;.
 
 ## Offline-Sicherheit konfigurieren {#configuring-offline-security}
 
@@ -283,25 +282,25 @@ Sie können die Ereignisprüfung aktivieren und deaktivieren und die zu prüfend
 
 **Dokumentereignisse**
 
-**Ansicht Dokument:** Ein Empfänger Ansicht ein richtliniengeschütztes Dokument.
+**Dokument anzeigen:** Ein Empfänger sieht sich ein richtliniengeschütztes Dokument an.
 
 **Dokument schließen:** Ein Empfänger schließt ein richtliniengeschütztes Dokument.
 
-**Drucken mit niedriger** AuflösungEin Empfänger druckt ein richtliniengeschütztes Dokument mit der angegebenen Option für die niedrige Auflösung.
+**Drucken mit geringer** Auflösung Ein Empfänger druckt ein richtliniengeschütztes Dokument mit der angegebenen Option für die niedrige Auflösung.
 
-**Drucken mit hoher Auflösung:** Ein Empfänger druckt ein richtliniengeschütztes Dokument mit der angegebenen Option für die hohe Auflösung.
+**Drucken mit hoher Auflösung:**  Ein Empfänger druckt ein richtliniengeschütztes Dokument mit angegebener Option für die hohe Auflösung.
 
-**hinzufügen Anmerkung zu Dokument:** Ein Empfänger fügt einem PDF-Dokument eine Anmerkung hinzu.
+**Anmerkung zu Dokument hinzufügen:** Ein Empfänger fügt einem PDF-Dokument eine Anmerkung hinzu.
 
 **Dokument sperren:** Ein Benutzer oder Administrator sperrt den Zugriff auf ein richtliniengeschütztes Dokument.
 
-**Aufhebung der Sperre:** Ein Benutzer oder Administrator installiert den Zugriff auf ein richtliniengeschütztes Dokument erneut.
+**Dokumentsperrung aufheben:**  Ein Benutzer oder Administrator reaktiviert den Zugriff auf ein richtliniengeschütztes Dokument.
 
-**Ausfüllen von Formularen:** Ein Empfänger gibt Informationen in ein PDF-Dokument ein, das ein ausfüllbares Formular ist.
+**Formular ausfüllen:** Ein Empfänger gibt Informationen in ein PDF-Dokument ein, das ein ausfüllbares Formular ist.
 
-**Richtlinie entfernt:** Ein Herausgeber entfernt eine Richtlinie aus einem Dokument, um den Sicherheitsschutz zu entfernen.
+**Richtlinie entfernt:** Ein Herausgeber entfernt eine Richtlinie aus einem Dokument, um die Sicherheitsmaßnahmen zurückzuziehen.
 
-**URL der Sperrung des Dokuments ändern:** Ein Aufruf auf API-Ebene ändert die Sperr-URL, die angegeben wird, um auf ein neues Dokument zuzugreifen, das ein gesperrtes Dokument ersetzt.
+**URL für Dokumentsperrung ändern:** Ein Aufruf auf API-Ebene ändert die Sperrungs-URL, die für den Zugriff auf ein neues Dokument angegeben ist, das ein gesperrtes Dokument ersetzt.
 
 **Dokument ändern:** Ein Empfänger ändert den Inhalt eines richtliniengeschützten Dokuments.
 
@@ -309,17 +308,17 @@ Sie können die Ereignisprüfung aktivieren und deaktivieren und die zu prüfend
 
 **Neues Dokument sichern:** Ein Benutzer wendet eine Richtlinie zum Schutz eines Dokuments an.
 
-**Richtlinie auf Dokument wechseln:** Ein Benutzer oder Administrator schaltet die an ein Dokument angeschlossene Richtlinie.
+**Richtlinie für Dokument wechseln:** Ein Benutzer oder Administrator wechselt die Richtlinie, die an ein Dokument angehängt ist.
 
-**Dokument veröffentlichen als:** Ein neues Dokument, dessen documentName und Lizenz mit einem vorhandenen Dokument identisch sind, wird auf dem Server registriert und die Dokumente haben keine Beziehung zwischen über- und untergeordnet. Dieses Ereignis kann mit dem AEM Forms-SDK ausgelöst werden.
+**Dokument veröffentlichen als:** Ein neues Dokument, dessen documentName und Lizenz mit einem vorhandenen Dokument identisch sind, wird auf dem Server registriert und die Dokumente haben keine über-/untergeordnete Beziehung. Dieses Ereignis kann mit dem AEM Forms-SDK ausgelöst werden.
 
-**Iterate-Dokument:** Ein neues Dokument, dessen documentName und Lizenz mit einem vorhandenen Dokument identisch sind, wird auf dem Server registriert und die Dokumente haben eine übergeordnete/untergeordnete Beziehung. Dieses Ereignis kann mit dem AEM Forms-SDK ausgelöst werden.
+**Dokument durchsuchen:** Ein neues Dokument, dessen documentName und Lizenz mit einem vorhandenen Dokument identisch sind, wird auf dem Server registriert und die Dokumente haben eine über- und untergeordnete Beziehung. Dieses Ereignis kann mit dem AEM Forms-SDK ausgelöst werden.
 
 **Richtlinienereignisse**
 
 **Erstellte Richtlinie:** Ein Benutzer oder Administrator erstellt eine Richtlinie.
 
-**Richtlinie aktiviert:** Ein Administrator stellt eine Richtlinie zur Verfügung.
+**Aktivierte Richtlinie:** Ein Administrator stellt eine Richtlinie zur Verfügung.
 
 **Geänderte Richtlinie:** Ein Benutzer oder Administrator ändert eine Richtlinie.
 
@@ -333,21 +332,21 @@ Sie können die Ereignisprüfung aktivieren und deaktivieren und die zu prüfend
 
 **Gelöschter Benutzer:** Ein Administrator löscht ein Benutzerkonto.
 
-**Eingeladene Benutzer registrieren:** Ein externer Benutzer registriert sich bei Dokument Security.
+**Eingeladene Benutzer registrieren:** Ein externer Benutzer registriert sich bei Document Security.
 
 **Erfolgreiche Anmeldung:** Erfolgreiche Anmeldeversuche von Administratoren oder Benutzern.
 
-**Eingeladene Benutzer:** Dokument Security lädt einen Benutzer zur Registrierung ein.
+**Eingeladene Benutzer:**  Document Security lädt einen Benutzer zur Registrierung ein.
 
-**Aktivierte Benutzer:** Externe Benutzer aktivieren ihre Konten über die URL in der Aktivierungen-E-Mail oder ein Administrator aktiviert ein Konto.
+**Aktivierte Benutzer:**  Externe Benutzer aktivieren ihre Konten über die URL in der Aktivierungs-E-Mail oder ein Administrator aktiviert ein Konto.
 
 **Kennwort ändern:** Eingeladene Benutzer ändern ihr Kennwort oder ein Administrator setzt ein Kennwort für einen lokalen Benutzer zurück.
 
 **Fehlgeschlagene Anmeldung:** Fehlgeschlagene Anmeldeversuche von Administratoren oder Benutzern.
 
-**Benutzer deaktiviert:** Ein Administrator deaktiviert ein lokales Benutzerkonto.
+**Deaktivierte Benutzer:** Ein Administrator deaktiviert ein lokales Benutzerkonto.
 
-**Profil-Aktualisierung:** Eingeladene Benutzer ändern ihren Namen, ihren Firmennamen und ihr Passwort.
+**Profilaktualisierung:** Eingeladene Benutzer ändern ihren Namen, ihren Organisationsnamen und ihr Kennwort.
 
 **Konto gesperrt:** Ein Administrator sperrt ein Konto.
 
@@ -363,15 +362,15 @@ Sie können die Ereignisprüfung aktivieren und deaktivieren und die zu prüfend
 
 **Ordnersynchronisierung abgeschlossen:** Diese Informationen sind auf der Seite &quot;Ereignisse&quot;nicht verfügbar. Die aktuellen Informationen zur Ordnersynchronisierung, einschließlich des aktuellen Synchronisierungszustands und des Zeitpunktes der letzten Synchronisierung, werden auf der Seite „Domänenverwaltung“ angezeigt. Um Zugriff auf die Domänenverwaltung zu erhalten, klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domänenverwaltung“.
 
-**Offline-Zugriff für Client aktivieren:** Ein Benutzer hat den Offline-Zugriff auf Dokumente aktiviert, die auf dem Benutzercomputer gegen den Server geschützt sind.
+**Client Offline-Zugriff aktivieren:**  Ein Benutzer hat den Offline-Zugriff auf Dokumente aktiviert, die auf dem Computer des Benutzers gegen den Server gesichert sind.
 
 **Die synchronisierte** ClientClient-Anwendung muss Informationen mit dem Server synchronisieren, um Offline-Zugriff zu ermöglichen.
 
-**Versionskonflikt:** Eine Version des AEM Forms SDK, die nicht mit dem Server kompatibel ist, versuchte eine Verbindung mit dem Server herzustellen.
+**Versionsabweichung:** Eine Version des AEM Forms SDK, die nicht mit dem Server kompatibel ist, versuchte, eine Verbindung zum Server herzustellen.
 
-**Informationen zur Ordnersynchronisierung:** Diese Informationen stehen auf der Seite &quot;Ereignisse&quot;nicht zur Verfügung. Die aktuellen Informationen zur Ordnersynchronisierung, einschließlich des aktuellen Synchronisierungszustands und des Zeitpunktes der letzten Synchronisierung, werden auf der Seite „Domänenverwaltung“ angezeigt. Um Zugriff auf die Domänenverwaltung zu erhalten, klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domänenverwaltung“.
+**Informationen zur Ordnersynchronisierung:** Diese Informationen sind nicht auf der Seite &quot;Ereignisse&quot;verfügbar. Die aktuellen Informationen zur Ordnersynchronisierung, einschließlich des aktuellen Synchronisierungszustands und des Zeitpunktes der letzten Synchronisierung, werden auf der Seite „Domänenverwaltung“ angezeigt. Um Zugriff auf die Domänenverwaltung zu erhalten, klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domänenverwaltung“.
 
-**Änderung der Serverkonfiguration:** Änderungen an der Serverkonfiguration, die entweder über die Webseiten oder manuell durch Importieren einer Datei &quot;config.xml&quot;vorgenommen werden. Dazu zählen Änderungen der Basis-URL, Sitzungszeitlimits, Anmeldesperren, Ordnereinstellungen, Schlüsselaktualisierungen, SMTP-Servereinstellungen für die externe Registrierung, der Konfiguration von Wasserzeichen, Anzeigeoptionen usw.
+**Änderung der Serverkonfiguration:**  Änderungen an der Serverkonfiguration, die entweder über die Webseiten oder manuell durch Importieren einer Datei &quot;config.xml&quot;vorgenommen werden. Dazu zählen Änderungen der Basis-URL, Sitzungszeitlimits, Anmeldesperren, Ordnereinstellungen, Schlüsselaktualisierungen, SMTP-Servereinstellungen für die externe Registrierung, der Konfiguration von Wasserzeichen, Anzeigeoptionen usw.
 
 ## Erweiterte Nutzungsverfolgung konfigurieren  {#configuring-extended-usage-tracking}
 
@@ -398,13 +397,13 @@ Zum Anzeigen der verfolgten Ereignisse können Sie den Filter „Dokumentereigni
 
 ### Anzeigeeinstellungen {#display-settings}
 
-**Zeilen, die für Suchergebnisse angezeigt werden sollen:** Anzahl der Zeilen, die auf einer Seite angezeigt werden, wenn Suchvorgänge durchgeführt werden.
+**Für Suchergebnisse anzuzeigende Zeilen:** Anzahl der Zeilen, die auf einer Seite angezeigt werden, wenn Suchvorgänge durchgeführt werden.
 
 **Dialogfeld zur Client-Anmeldung anpassen**
 
 Diese Einstellungen steuern den Text in der Anmeldeaufforderung, die angezeigt wird, wenn sich ein Benutzer über eine Clientanwendung bei Document Security anmeldet.
 
-**Begrüßungstext:** Der Begrüßungstext, z. B. &quot;Bitte melden Sie sich mit Ihrem Benutzernamen und Kennwort an&quot;. Der Begrüßungstext sollte Informationen dazu enthalten, wie die Anmeldung bei Document Security erfolgen soll und wie ein Administrator oder anderer Support-Mitarbeiter in Ihrem Unternehmen kontaktiert werden kann, falls Hilfe benötigt wird. Externe Benutzer müssen ggf. einen Administrator kontaktieren, wenn sie ihr Kennwort vergessen haben oder Hilfe bei der Registrierung oder Anmeldung benötigen. Die maximale Länge des Begrüßungstexts ist 512 Zeichen.
+**Willkommenstext:**  Der Begrüßungstext, z. B. &quot;Melden Sie sich mit Ihrem Benutzernamen und Kennwort an&quot;. Der Begrüßungstext sollte Informationen dazu enthalten, wie die Anmeldung bei Document Security erfolgen soll und wie ein Administrator oder anderer Support-Mitarbeiter in Ihrem Unternehmen kontaktiert werden kann, falls Hilfe benötigt wird. Externe Benutzer müssen ggf. einen Administrator kontaktieren, wenn sie ihr Kennwort vergessen haben oder Hilfe bei der Registrierung oder Anmeldung benötigen. Die maximale Länge des Begrüßungstexts ist 512 Zeichen.
 
 **Benutzernamentext:** Die Textbeschriftung für das Feld &quot;Benutzername&quot;.
 
@@ -414,15 +413,15 @@ Diese Einstellungen steuern den Text in der Anmeldeaufforderung, die angezeigt w
 
 Diese Einstellungen steuern den im Dialogfeld für die Zertifikatauthentifizierung angezeigten Text.
 
-**Wählen Sie &quot;Authentifizierungstyp&quot;:** Der Text, der angezeigt wird, um einen Benutzer zur Auswahl eines Authentifizierungstyps anzuweisen.
+**Text für Authentifizierungstyp auswählen:** Der Text, der angezeigt wird, um einen Benutzer zur Auswahl eines Authentifizierungstyps anzuweisen.
 
-**Wählen Sie &quot;Zertifikattext&quot;:** Der Text, der angezeigt wird, um einen Benutzer zur Auswahl eines Zertifikattyps anzuweisen.
+**Zertifikattext auswählen:** Der Text, der angezeigt wird, um einen Benutzer zur Auswahl eines Zertifikattyps anzuweisen.
 
 **Fehlertext &quot;Zertifikate nicht verfügbar&quot;:** Meldung mit bis zu 512 Zeichen, die angezeigt wird, wenn das ausgewählte Zertifikat nicht verfügbar ist.
 
 **Client-Zertifikatanzeige anpassen**
 
-**Aussteller von vertrauenswürdigen Berechtigungen nur anzeigen:** Wenn diese Option aktiviert ist, stellt die Clientanwendung dem Benutzer nur Zertifikate von Ausstellern zur Verfügung, denen AEM Formulare vertraut (siehe Verwalten von Zertifikaten und Berechtigungen). Wenn diese Option nicht ausgewählt ist, wird dem Benutzer eine Liste aller Zertifikate, die sich auf dem System des Benutzers befinden, vorgelegt.
+**Nur vertrauenswürdige Aussteller von Berechtigungen anzeigen:** Wenn diese Option aktiviert ist, stellt die Clientanwendung dem Benutzer nur Zertifikate von Ausstellern bereit, denen AEM Formulare vertraut (siehe Verwalten von Zertifikaten und Berechtigungen). Wenn diese Option nicht ausgewählt ist, wird dem Benutzer eine Liste aller Zertifikate, die sich auf dem System des Benutzers befinden, vorgelegt.
 
 ## Dynamische Wasserzeichen konfigurieren  {#configure-dynamic-watermarks}
 
@@ -582,29 +581,29 @@ Die folgenden Einstellungen befinden sich im Bereich „Filter für E-Mail-Adres
 
 **Ausschluss:** Geben Sie die E-Mail-Adresse eines Benutzers oder einer Gruppe ein, die ausgeschlossen werden soll. Um mehrere Benutzer oder Gruppen auszuschließen, geben Sie jede E-Mail-Adresse in eine neue Zeile ein. Um alle Benutzer, die zu einer bestimmten Domäne gehören, auszuschließen, geben Sie einen Platzhalter und den Domänennamen ein. Um beispielsweise alle Benutzer in der Domäne &quot;example.com&quot;auszuschließen, geben Sie &amp;ast;.example.com ein.
 
-**Aufnahme:** Geben Sie die E-Mail-Adresse eines Benutzers oder einer Gruppe ein, die einbezogen werden soll. Um mehrere Benutzer oder Gruppen einzubeziehen, geben Sie jede E-Mail-Adresse in eine neue Zeile ein. Um alle Benutzer, die zu einer bestimmten Domäne gehören, einzubeziehen, geben Sie einen Platzhalter und den Domänennamen ein. Um beispielsweise alle Benutzer in der Domäne &quot;example.com&quot;einzubeziehen, geben Sie &amp;ast;.example.com ein.
+**Aufnahme:** Geben Sie die E-Mail-Adresse eines Benutzers oder einer Gruppe ein, der/die einbezogen werden soll. Um mehrere Benutzer oder Gruppen einzubeziehen, geben Sie jede E-Mail-Adresse in eine neue Zeile ein. Um alle Benutzer, die zu einer bestimmten Domäne gehören, einzubeziehen, geben Sie einen Platzhalter und den Domänennamen ein. Um beispielsweise alle Benutzer in die Domäne &quot;example.com&quot;einzubeziehen, geben Sie &amp;ast;.example.com ein.
 
 ### Server- und Registrierungskontoparameter {#server-and-registration-account-parameters}
 
 Die folgenden Einstellungen befinden sich im Bereich „Allgemeine Einstellungen“ auf der Seite „Registrierung für eingeladene Benutzer“.
 
-**SMTP-Host:** Der Hostname des SMTP-Servers. Der SMTP-Server verwaltet die ausgehenden E-Mail-Nachrichten für die Registrierung und Aktivierung eingeladener Benutzer.
+**SMTP Host:** Der Hostname des SMTP-Servers. Der SMTP-Server verwaltet die ausgehenden E-Mail-Nachrichten für die Registrierung und Aktivierung eingeladener Benutzer.
 
 Falls für den SMTP-Host erforderlich, füllen Sie die Felder „Kontoname für den SMTP-Server“ und „Kennwort des Kontos für den SMTP-Server“ aus, um eine Verbindung mit dem SMTP-Server herzustellen. Bei einige Unternehmen ist dies nicht erforderlich. Befragen Sie den Systemadministrator, falls Sie Informationen benötigen.
 
-**Name der Socket-Klasse des SMTP-Servers:Name der** Socket-Klasse für den SMTP-Server. Zum Beispiel javax.net.ssl.SSLSocketFactory.
+**Socket-Klassenname des SMTP-Servers:** Socket-Klassenname für den SMTP-Server. Zum Beispiel javax.net.ssl.SSLSocketFactory.
 
-**E-Mail-Inhaltstyp:** Akzeptierter MIME-Typ wie text/plain oder text/html.
+**E-Mail-Inhaltstyp:** Akzeptierter MIME-Typ wie Text/Text/Text/HTML.
 
-**E-Mail-Kodierung:** Kodierformat für das Senden von E-Mail-Nachrichten. Sie können jede beliebige Kodierung angeben, z. B. UTF-8 für Unicode oder ISO-8859-1 für Latein. Die Standardeinstellung ist UTF-8.
+**E-Mail-Kodierung:** Kodierungsformat für den Versand von E-Mail-Nachrichten. Sie können jede beliebige Kodierung angeben, z. B. UTF-8 für Unicode oder ISO-8859-1 für Latein. Die Standardeinstellung ist UTF-8.
 
-**E-Mail-Adresse umleiten:** Wenn Sie für diese Einstellung eine E-Mail-Adresse angeben, wird jede neue Einladung an die angegebene Adresse gesendet. Diese Einstellung kann für Testzwecke sinnvoll sein.
+**E-Mail-Adresse umleiten:** Wenn Sie eine E-Mail-Adresse für diese Einstellung angeben, wird jede neue Einladung an die angegebene Adresse gesendet. Diese Einstellung kann für Testzwecke sinnvoll sein.
 
-**Lokale Domänen verwenden:** Wählen Sie die gewünschte Domäne aus. Stellen Sie bei einer Neuinstallation sicher, dass Sie die Domäne in User Management erstellt haben. Bei einem Update kann eine externe Benutzerdomäne, die während des Updates erstellt wurde, verwendet werden.
+**Lokale Domänen verwenden:** Wählen Sie die entsprechende Domäne aus. Stellen Sie bei einer Neuinstallation sicher, dass Sie die Domäne in User Management erstellt haben. Bei einem Update kann eine externe Benutzerdomäne, die während des Updates erstellt wurde, verwendet werden.
 
 **SSL für SMTP-Server verwenden:** Wählen Sie diese Option, um SSL für den SMTP-Server zu aktivieren.
 
-**Link zum Anmelden auf der Registrierungsseite anzeigen:** Zeigt einen Link zum Anmelden auf der Registrierungsseite an, der für eingeladene Benutzer angezeigt wird.
+**Anmelde-Link auf Registrierungsseite anzeigen:** Zeigt einen Anmelde-Link auf der Registrierungsseite an, der für eingeladene Benutzer angezeigt wird.
 
 **Aktivieren von Transport Layer Security (TLS) für den SMTP-Server**
 
@@ -619,7 +618,7 @@ Falls für den SMTP-Host erforderlich, füllen Sie die Felder „Kontoname für 
    >
    >Wenn Sie Microsoft Office 365 als SMTP-Server zum Senden der Einladungen für eine Benutzerregistrierung verwenden, verwenden Sie die folgenden Einstellungen:
    >
-   >**SMTP-Host:** smtp.office365.com
+   >**SMTP Host:** smtp.office365.com
    >**Port:** 587
 
 1. Als Nächstes müssen Sie „config.xml“ aktualisieren. Weitere Informationen finden Sie unter [Konfiguration für die Aktivierung von SMTP für Transport Layer Security (TLS)](configuring-client-server-options.md#configuration-to-enable-smtp-for-transport-layer-security-tls).
@@ -636,13 +635,13 @@ Wenn der Empfänger sein Konto aktiviert hat, wird er ein lokaler Benutzer.
 
 Die folgenden Einstellungen befinden sich im Bereich „E-Mail-Konfiguration“ auf der Seite „Registrierung für eingeladene Benutzer“.
 
-**Von:** Die E-Mail-Adresse, von der die Einladungs-E-Mail gesendet wird. Das Standardformat der E-Mail-Adresse &quot;Von&quot;ist &quot;postmaster@[your_installation_domain].com&quot;.
+**Von:** Die E-Mail-Adresse, von der die Einladungs-E-Mail gesendet wird. Das Standardformat der Von-E-Mail-Adresse ist postmaster@[your_installation_domain].com.
 
-**Betreff:** Standardbetreff für die Einladungs-E-Mail-Nachricht.
+**Betreff:**  Standardbetreff für die Einladungs-E-Mail-Nachricht.
 
-**Timeout:** Die Anzahl der Tage, nach denen die Registrierungseinladung abläuft, wenn sich der externe Benutzer nicht registriert. Der Standardwert ist 30 Tage .
+**Zeitüberschreitung:** Die Anzahl der Tage, nach denen die Registrierungseinladung abläuft, wenn sich der externe Benutzer nicht registriert. Der Standardwert ist 30 Tage .
 
-**Nachricht:** Der Text, der im Nachrichtentext angezeigt wird und den Benutzer zur Registrierung einlädt.
+**Nachricht:** Der Text, der im Nachrichten-Textkörper angezeigt wird und den Benutzer zur Registrierung einlädt.
 
 ### Einstellungen für Aktivierungs-E-Mail {#activation-email-settings}
 
@@ -656,13 +655,13 @@ Die folgenden Einstellungen befinden sich im Bereich „Konfiguration der Aktivi
 >
 >Es empfiehlt sich auch, eine Meldung auf dem Anmeldebildschirm zu konfigurieren, die externe Benutzer informiert, wie der Administrator für ein neues Kennwort oder andere Informationen kontaktiert werden kann.
 
-**Von:** Die E-Mail-Adresse, von der die Aktivierung-E-Mail gesendet wird. Diese E-Mail-Adresse empfängt Benachrichtigungen zu fehlgeschlagenen Übermittlungen vom E-Mail-Host des Registrierenden sowie Nachrichten, die der Empfänger als Antwort auf die Registrierungs-E-Mail sendet. Das Standardformat der E-Mail-Adresse &quot;Von&quot;ist &quot;postmaster@[your_installation_domain].com&quot;.
+**Von:** Die E-Mail-Adresse, von der die Aktivierungs-E-Mail gesendet wird. Diese E-Mail-Adresse empfängt Benachrichtigungen zu fehlgeschlagenen Übermittlungen vom E-Mail-Host des Registrierenden sowie Nachrichten, die der Empfänger als Antwort auf die Registrierungs-E-Mail sendet. Das Standardformat der Von-E-Mail-Adresse ist postmaster@[your_installation_domain].com.
 
-**Betreff:** Standardbetreff für die Aktivierung-E-Mail-Nachricht.
+**Betreff:**  Standardbetreff für die Aktivierungs-E-Mail-Nachricht.
 
-**Timeout:** Die Anzahl der Tage, nach denen die Einladung zur Aktivierung abläuft, wenn der Benutzer das Konto nicht aktiviert. Der Standardwert ist 30 Tage .
+**Zeitüberschreitung:** Die Anzahl der Tage, nach denen die Aktivierungseinladung abläuft, wenn der Benutzer das Konto nicht aktiviert. Der Standardwert ist 30 Tage .
 
-**Nachricht:** Der Text, der im Textkörper der Nachricht angezeigt wird und der angibt, dass das Benutzerkonto des Empfängers aktiviert werden muss. Sie können nach Wunsch weitere Informationen hinzufügen, z. B. wie der Administrator kontaktiert und ein neues Kennwort bezogen werden kann.
+**Nachricht:** Der Text, der im Nachrichten-Textkörper angezeigt wird und die angibt, dass das Benutzerkonto des Empfängers aktiviert werden muss. Sie können nach Wunsch weitere Informationen hinzufügen, z. B. wie der Administrator kontaktiert und ein neues Kennwort bezogen werden kann.
 
 ### Eine E-Mail zum Zurücksetzen des Kennworts konfigurieren  {#configure-a-password-reset-email}
 
@@ -670,19 +669,19 @@ Wenn Sie das Kennwort eines eingeladenen Benutzers zurücksetzen müssen, wird e
 
 Die folgenden Einstellungen befinden sich im Bereich „Konfiguration der E-Mail zum Zurücksetzen des Kennworts“ auf der Seite „Registrierung für eingeladene Benutzer“.
 
-**Von:** Die E-Mail-Adresse, von der die E-Mail zum Zurücksetzen des Kennworts gesendet wird. Das Standardformat der E-Mail-Adresse &quot;Von&quot;ist &quot;postmaster@[your_installation_domain].com&quot;.
+**Von:** Die E-Mail-Adresse, von der die E-Mail zum Zurücksetzen des Kennworts gesendet wird. Das Standardformat der Von-E-Mail-Adresse ist postmaster@[your_installation_domain].com.
 
-**Betreff:** Standardbetreff für die E-Mail-Nachricht zum Zurücksetzen.
+**Betreff:**  Standardbetreff für die E-Mail-Nachricht zum Zurücksetzen des Kennworts.
 
-**Nachricht:** Der Text, der im Textkörper der Nachricht angezeigt wird und die Meldung enthält, dass das Kennwort des externen Empfängers zurückgesetzt wurde.
+**Nachricht:** Der Text, der im Nachrichten-Textkörper angezeigt wird und die angibt, dass das Kennwort des externen Benutzers des Empfängers zurückgesetzt wurde.
 
 ## Benutzer und Gruppen zum Erstellen von Richtlinien aktivieren {#enable-users-and-groups-to-create-policies}
 
 Die Seite „Konfiguration“ enthält einen Hyperlink zur Seite „Meine Richtlinien“, auf der Sie angeben können, welche Endbenutzer eigene Richtlinien erstellen dürfen und welche Benutzer und Gruppen in Suchergebnissen angezeigt werden. Die Seite „Meine Richtlinien“ hat zwei Registerkarten:
 
-**Richtlinien erstellen, Registerkarte:** Zum Konfigurieren von Benutzerberechtigungen zum Erstellen benutzerdefinierter Richtlinien.
+**Registerkarte &quot;Richtlinien erstellen&quot;:**  Verwenden Sie zum Konfigurieren von Benutzerberechtigungen zum Erstellen benutzerdefinierter Richtlinien.
 
-**Sichtbare Benutzer und Gruppen, Registerkarte:** Mit dieser Option können Sie steuern, welche Benutzer und Gruppen in den Suchergebnissen der Benutzer sichtbar sind. Der Hauptbenutzer oder Richtliniensatzadministrator muss für jeden Richtliniensatz in User Management erstellte Domänen auswählen und zum sichtbaren Benutzer bzw. zur sichtbaren Gruppe hinzufügen. Diese Liste wird dem Richtliniensatzkoordinator angezeigt und dient zum Eingrenzen der Domänen, die der Richtliniensatzkoordinator beim Auswählen von Benutzern durchsuchen kann, die Richtlinien hinzugefügt werden sollen.
+**Registerkarte &quot;Sichtbare Benutzer und Gruppen&quot;:**  Mit dieser Funktion können Sie steuern, welche Benutzer und Gruppen in den Suchergebnissen der Benutzer sichtbar sind. Der Hauptbenutzer oder Richtliniensatzadministrator muss für jeden Richtliniensatz in User Management erstellte Domänen auswählen und zum sichtbaren Benutzer bzw. zur sichtbaren Gruppe hinzufügen. Diese Liste wird dem Richtliniensatzkoordinator angezeigt und dient zum Eingrenzen der Domänen, die der Richtliniensatzkoordinator beim Auswählen von Benutzern durchsuchen kann, die Richtlinien hinzugefügt werden sollen.
 
 Bevor Sie Benutzern die Berechtigung zum Erstellen benutzerdefinierter Richtlinien erteilen, sollten Sie prüfen, welchen Zugriffs- oder Steuerungsgrad die einzelnen Benutzer haben sollen. Prüfen Sie auch, welche Informationen zu Gruppen und Benutzern angezeigt werden sollen, wenn sie in Suchergebnissen angezeigt werden.
 
@@ -1028,7 +1027,7 @@ Nehmen Sie die folgenden Änderungen in „config.xml“ vor, um SOAP-Endpunkte 
 1. Speichern Sie `config.xml`.
 1. Importieren Sie eine Konfigurationsdatei. (Siehe [Manuelles Bearbeiten der Document Security-Konfigurationsdatei](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
-### Erhöhen der Skalierbarkeit des Document Security-Servers  {#increasingscalability}
+### Erhöhen der Skalierbarkeit des Document Security-Servers {#increasingscalability}
 
 Standardmäßig beim Synchronisieren von Dokumenten für die Offline-Nutzung zusammen mit den Informationen zum aktuellen Dokument, rufen die Dokument-Sicherheits-Clients standardmäßig Richtlinien, Lizenzen, Wasserzeichen und Rücknahme-Updateinformation für alle anderen Dokumente, auf den der Benutzer Zugriff hat, auf. Wenn diese Updates und Informationen nicht mit dem Client synchronisiert werden, öffnet sich ein Dokument, das im Offlinemodus geöffnet ist, noch mit den alten Richtlinien Wasserzeichen und Sperrinformationen.
 
@@ -1036,7 +1035,7 @@ Sie können die Skalierbarkeit des Document Security-Servers erhöhen, indem Sie
 
 1. Exportieren Sie die Document Security-Konfigurationsdatei. (Siehe [Manuelles Bearbeiten der Document Security-Konfigurationsdatei](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 1. Öffnen Sie die Konfigurationsdatei in einem Editor und suchen Sie den Knoten ServerSettings.
-1. Legen Sie im Knoten ServerSettings den Wert der Eigenschaft `DisableGlobalOfflineSynchronizationData`auf `true` fest.
+1. Setzen Sie im Knoten ServerSettings den Wert der Eigenschaft `DisableGlobalOfflineSynchronizationData`auf `true`.
 
    `<entry key="DisableGlobalOfflineSynchronizationData" value="true"/>`
 
@@ -1047,4 +1046,3 @@ Sie können die Skalierbarkeit des Document Security-Servers erhöhen, indem Sie
    >Standardmäßig wird der Wert des `DisableGlobalOfflineSynchronizationData`- -Schlüssels auf `false` festgelegt.
 
 1. Speichern und schließen Sie die Konfigurationsdatei. (Siehe [Manuelles Bearbeiten der Document Security-Konfigurationsdatei](/help/forms/using/admin-help/configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
-
