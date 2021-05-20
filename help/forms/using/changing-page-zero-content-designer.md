@@ -8,23 +8,22 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Adaptive Formulare
+exl-id: 466b7e85-a2f8-4e1e-8afc-1566b0ccb84c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 72%
 
 ---
 
-
 # Inhalt auf Seite Null in Designer ändern {#changing-page-zero-content-in-designer}
 
-Der Inhalt von Seite Null wird standardmäßig angezeigt, wenn ein Nicht-Adobe PDF-Viewer, wie der standardmäßige PDF-Viewer in [!DNL Chrome] oder [!DNL Firefox], den Inhalt des PDF/XFA-Formulars nicht lesen kann. Nachfolgend finden Sie die standardmäßige Meldung auf Seite Null.
+Der Inhalt von Seite Null wird standardmäßig angezeigt, wenn ein Nicht-Adobe PDF-Viewer, z. B. der standardmäßige PDF-Viewer in [!DNL Chrome] oder [!DNL Firefox], den Inhalt des PDF/XFA-Formulars nicht lesen kann. Nachfolgend finden Sie die standardmäßige Meldung auf Seite Null.
 
-![defaultPage0message](assets/defaultpage0message.png)
+![defaultpage0message](assets/defaultpage0message.png)
 
-[!DNL AEM Forms] Version von Designer ermöglicht es Ihnen, die Meldung zu ändern, die auf Seite Null angezeigt wird. Zum Ändern der auf Seite Null angezeigten Meldung müssen Sie folgende Schritte ausführen:
+[!DNL AEM Forms] Mit der Designer-Version können Sie die Meldung ändern, die auf Seite Null angezeigt wird. Zum Ändern der auf Seite Null angezeigten Meldung müssen Sie folgende Schritte ausführen:
 
 1. Stellen Sie sicher, dass die [!DNL AEM Forms]-Version von Designer installiert ist. Sie können die Version im Bildschirm „Info“ des Designers überprüfen.
 
@@ -44,7 +43,7 @@ Der Inhalt von Seite Null wird standardmäßig angezeigt, wenn ein Nicht-Adobe P
 
 1. Zeigen Sie das PDF-Formular im Browser an, um sicherzustellen, dass die Meldung aktualisiert wurde. Der obige Beispielwert wird wie folgt angezeigt:
 
-   ![changdmessage](assets/changedmessage.png)
+   ![changeMessage](assets/changedmessage.png)
 
 >[!NOTE]
 >
