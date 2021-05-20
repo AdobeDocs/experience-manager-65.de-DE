@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: a9695d10-43ec-40eb-942f-7720abaa0973
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: bd1216e4-2248-484b-a3c1-c209da4ff94f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 84%
 
 ---
-
 
 # Formularservice {#forms-service}
 
@@ -35,7 +34,7 @@ Der Forms-Dienst bietet folgende Funktionen:
 
 Zur Erstellung von PDF-Formularen für die Datenerfassung verwenden Sie den Forms-Dienst. Als Grundlage verwenden Sie dazu in der Regel eine Adobe AEM Forms Designer-Vorlage. Mit dem Javadoc-Vorgang `renderPDFForm` des Forms-Dienstes konvertieren Sie diese Vorlage in ein PDF-Formular.
 
-Als ersten Parameter des Vorgangs `renderPDFForm` geben Sie den Namen der Vorlagendatei ein (z. B. `ExpenseClaim.xdp`). Sie können die Vorlagendatei in einem lokalen Dateisystem, im CRX-Repository oder an einem HTTP- oder FTP-Speicherort speichern. Sie können den Speicherort der Vorlagendatei angeben, indem Sie den Inhaltsstamm im Parameter `PDFFormRenderOptions` des Vorgangs `renderPDFForm` festlegen. In der Javadoc finden Sie Informationen zu weiteren Optionen, die Sie mit dem Parameter `PDFFormRenderOptions` angeben können.
+Als ersten Parameter des Vorgangs `renderPDFForm` geben Sie den Namen der Vorlagendatei ein (z. B. `ExpenseClaim.xdp`). Sie können die Vorlagendatei in einem lokalen Dateisystem, CRX-Repository oder an einem HTTP- oder FTP-Speicherort speichern. Sie können den Speicherort der Vorlagendatei angeben, indem Sie den Inhaltsstamm im Parameter `PDFFormRenderOptions` des Vorgangs `renderPDFForm` festlegen. In der Javadoc finden Sie Informationen zu weiteren Optionen, die Sie mit dem Parameter `PDFFormRenderOptions` angeben können.
 
 Der Vorgang `renderPDFForm` akzeptiert auch XML-Daten. Die XML-Daten werden beim Erstellen eines PDF-Formulars mit der Vorlage zusammengeführt, sodass das erstellte PDF-Formular die angegebenen Daten enthält. Der zweite Parameter des Vorgangs `renderPDFForm` akzeptiert ein Dokument- bzw. Javadoc-Objekt, das die gewünschten XML-Daten enthält.
 
@@ -57,5 +56,4 @@ Die Verwendung von Fragmenten hat unter anderem folgende Vorteile:
 
 * **Wiederverwendbarkeit von Inhalten**: Sie können Inhalte in mehreren Formularentwürfen wiederverwenden. Am schnellsten können Sie Teile mit demselben Inhalt in mehreren Formularen wiederverwenden, indem Sie ein entsprechendes Fragment erstellen. Kopieren oder gar Neuerstellen des Inhalts dauert in jedem Fall länger. Durch die Verwendung von Fragmenten stellen Sie außerdem sicher, dass häufig verwendete Bestandteile eines Formularentwurfs in allen darauf verweisenden Formularen stets einen konsistenten Inhalt und ein einheitliches Erscheinungsbild besitzen.
 * **Globale Aktualisierungen**: Sie müssen globale Änderungen für mehrere Formulare nur einmal in einer Datei vornehmen. Sie können Inhalt, Skriptobjekte, Datenbindungen, Layout und Stile eines Fragments ändern. Alle XDP-Formulare, die auf dieses Fragment verweisen, spiegeln diese Änderungen wider.
-* **Gemeinsame Entwicklung von Formularen**: Sie können die Formularentwicklung auf mehrere Ressourcen aufteilen. Formularentwickler mit Erfahrung in der Skripterstellung und anderen erweiterten Funktionen von AEM Forms Designer können Fragmente mit Skripten und dynamischen Eigenschaften entwickeln und freigeben. Formularentwickler können diese Fragmente zur Gestaltung ihrer Formulare verwenden. Neben der einfacheren Entwicklung stellen sie dadurch sicher, dass Aussehen und Funktionalität aller Formularteile in allen Formularen einheitlich sind.
-
+* **Gemeinsame Entwicklung von Formularen**: Sie können die Formularentwicklung auf mehrere Ressourcen aufteilen. Formularentwickler mit Erfahrung in der Skripterstellung oder anderen erweiterten Funktionen von AEM Forms Designer können Fragmente entwickeln und freigeben, die Skripterstellung und dynamische Eigenschaften verwenden. Formularentwickler können diese Fragmente zur Gestaltung ihrer Formulare verwenden. Neben der einfacheren Entwicklung stellen sie dadurch sicher, dass Aussehen und Funktionalität aller Formularteile in allen Formularen einheitlich sind.
