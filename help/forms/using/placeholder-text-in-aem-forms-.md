@@ -8,15 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: f9ff2cc5-3f0a-4b2f-a206-2fe0985646ea
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Adaptive Formulare
+exl-id: 6b6e27b5-8b4e-489c-9e72-4d256692c1ca
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 95%
 
 ---
-
 
 # Platzhaltertext in AEM Forms {#placeholder-text-in-aem-forms}
 
@@ -28,7 +27,7 @@ Der Platzhaltertext stellt ein Wort oder einen kurzen Satz dar. Er unterstützt 
 
 ![Datumskomponente mit und ohne Platzhaltertext](assets/dat-picker-place-holder-text.png)
 
-**A.** Date-Komponente mit Platzhaltertext  **B.** Date-Komponente ohne Platzhaltertext
+**A.** Datumskomponente mit Platzhaltertext  **B.** Datumskomponente ohne Platzhaltertext
 
 AEM Forms unterstützt Platzhaltertext für die Felder „Kennwort“, „Datumsauswahl“, „Numerisches Feld“ und „Textfeld“.\
 Platzhaltertexte werden für das native HTML5-Datumswidget nicht unterstützt. Abgabe eines Platzhaltertexts:
@@ -41,4 +40,3 @@ Platzhaltertexte werden für das native HTML5-Datumswidget nicht unterstützt. A
 >[!NOTE]
 >
 >Platzhaltertext wird nicht in Microsoft Internet Explorer 9 unterstützt.
-
