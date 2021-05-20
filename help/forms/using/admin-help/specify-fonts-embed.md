@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 180f0448-d507-4b6d-bb8a-d12a434e1250
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 02c28b2c-0cab-4431-9fab-fa332c96e092
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 100%
 
 ---
-
 
 # Einzubettende Schriften angeben{#specify-fonts-to-embed}
 
@@ -30,4 +29,3 @@ Sie können angeben, welche Schriften immer oder nie in Formulare eingebettet we
 1. Geben Sie unter „Schrifteinbettungseinstellungen“ in das Feld „Schriften immer einbetten“ die Namen der Schriften ein (durch Kommas getrennt), die in Formulare eingebettet werden sollen. Die von Ihnen angegebenen Schriften werden nur in dem erzeugten Formular eingebettet, wenn sie in dem Formular verwendet werden. Diese Einstellung wird ignoriert, wenn die Option „Schrift einbetten“ in der XCI-Datei, die an den Dienst übermittelt wird, aktiviert ist. In diesem Fall werden alle Schriften, die in der PDF-Datei verwendet werden, immer eingebettet.
 1. Geben Sie in das Feld „Schriften nie einbetten“ die Namen der Schriften ein (durch Kommas getrennt), die nicht in Formulare eingebettet werden sollen. Die von Ihnen angegebenen Schriften werden nicht in der PDF-Datei eingebettet, selbst wenn sie in der generierten PDF-Datei verwendet werden. Diese Einstellung wird ignoriert, wenn die Option „Schrift einbetten“ in der XCI-Datei, die an den Dienst übermittelt wird, deaktiviert ist. In diesem Fall wird keine der Schriften, die in der PDF-Datei verwendet werden, eingebettet.
 1. Klicken Sie auf Speichern.
-
