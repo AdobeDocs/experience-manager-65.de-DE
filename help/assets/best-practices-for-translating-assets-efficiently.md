@@ -1,19 +1,18 @@
 ---
-title: Bewährte Verfahren zum Übersetzen von Assets
+title: Best Practices zum Übersetzen von Assets
 description: Best Practices für die effiziente Verwaltung von Assets zur Synchronisation verschiedener übersetzter Versionen und zur Optimierung von Übersetzungs-Workflows.
 contentOwner: AG
 role: Administrator
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: Asset-Verwaltung
+exl-id: e632dcdb-b2b9-45bc-89e7-337b44b6fc61
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '418'
 ht-degree: 86%
 
 ---
 
-
-# Bewährte Verfahren zum Übersetzen von Assets {#best-practices-for-translating-assets-efficiently}
+# Best Practices zum Übersetzen von Assets {#best-practices-for-translating-assets-efficiently}
 
 [!DNL Adobe Experience Manager Assets] unterstützt mehrsprachige Workflows, um Binärdateien, Metadaten und Tags für digitale Assets in verschiedene Gebietsschemas zu übertragen und die übersetzten Assets zu verwalten. Details finden Sie unter [Mehrsprachige Assets](multilingual-assets.md).
 
@@ -46,7 +45,7 @@ Mittels gewisser Änderungen an Workflows und am Framework für die Übersetzung
 
 1. Aktivieren Sie den Workflow [!UICONTROL Letztes Änderungsdatum des Sets].
 
-   Mit dem Workflow [!UICONTROL DAM-Metadaten-Writeback] wird das Datum der letzten Änderung eines Assets konfiguriert. Da Sie diesen Workflow in Schritt 2 deaktivieren, kann [!DNL Assets] das Datum der letzten Änderung der Assets nicht mehr auf dem neuesten Stand halten. Aktivieren Sie daher den Workflow *Letztes Änderungsdatum des Sets*, um sicherzustellen, dass die Datumsangaben für die letzten Asset-Änderungen aktuell sind. Assets mit veralteten Datumsangaben für letzte Änderungen können Fehler verursachen.
+   Mit dem Workflow [!UICONTROL DAM-Metadaten-Writeback] wird das Datum der letzten Änderung eines Assets konfiguriert. Da Sie diesen Workflow in Schritt 2 deaktivieren, kann [!DNL Assets] das Datum der letzten Änderung von Assets nicht mehr auf dem neuesten Stand halten. Aktivieren Sie daher den Workflow *Letztes Änderungsdatum des Sets*, um sicherzustellen, dass die Datumsangaben für die letzten Asset-Änderungen aktuell sind. Assets mit veralteten Datumsangaben für letzte Änderungen können Fehler verursachen.
 
-1. [Konfigurieren Sie das Framework für die Übersetzungsintegration](/help/sites-administering/tc-tic.md), damit Asset-Binärdateien nicht mehr übersetzt werden. Deaktivieren Sie die Option **[!UICONTROL Assets übersetzen]** unter der Registerkarte [!UICONTROL Assets], um die Übersetzung von Asset-Binärdateien zu beenden.
-1. Übersetzen Sie Asset-Metadaten/Tags mit [Mehrsprachigen Workflows](multilingual-assets.md).
+1. [Konfigurieren Sie das Framework für die Übersetzungsintegration](/help/sites-administering/tc-tic.md), damit Asset-Binärdateien nicht mehr übersetzt werden. Heben Sie die Auswahl der Option **[!UICONTROL Assets übersetzen]** auf der Registerkarte [!UICONTROL Assets] auf, um die Übersetzung von Asset-Binärdateien zu stoppen.
+1. Übersetzen Sie Asset-Metadaten/Tags mit [mehrsprachigen Asset-Workflows](multilingual-assets.md).
