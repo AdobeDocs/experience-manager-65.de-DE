@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 1291b395-a981-4ef9-b4f0-c0d3026c5f19
-feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Korrespondenzverwaltung
+exl-id: c7f1acf3-ec2b-4a71-83a4-c71981d4cefa
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 100%
 
 ---
-
 
 # Correspondence Management – Zusammenfassung {#correspondence-management-overview}
 
@@ -49,4 +48,3 @@ Sie können die Kundenkontakte intensivieren indem Sie:
 * interaktive Technologie hinzufügen und so einen in beide Richtungen offenen Kommunikationskanal ermöglichen; papiergebundene Mitteilungen lassen sich dadurch erheblich reduzieren
 * vertrauliche Informationen dank integrierter, durchgängiger Dokumentsicherheit schützen
 * die Korrespondenz über den vom Kunden bevorzugten Kommunikationskanal abwickeln, sei es per E-Mail, Mobiltelefon oder Fax.
-
