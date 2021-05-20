@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 6699e0e7-fd42-41ae-86a2-3b940d905111
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 5b7b9816-38c1-4780-b1fc-8184971f3772
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '340'
 ht-degree: 89%
 
 ---
-
 
 # Herunterladen von XFA- oder PDF-Formularvorlagen {#download-an-xfa-or-a-pdf-form-template}
 
@@ -30,7 +29,7 @@ In AEM Forms wird der Download-Vorgang für die folgenden Assettypen unterstütz
 
 AEM Forms unterstützt den Download dieser Formulartypen – einzeln oder in einem Ordner mit mindestens einem unterstützten Formular.
 
-Neben diesen Assets können Sie den Asset-Typ `Resource` herunterladen, wenn er in einem Ordner vorhanden ist. Diese Funktion wird bereitgestellt, damit Sie neben dem Formular die Ressource herunterladen können, auf die ein XFA-Formular verweist.
+Neben diesen Assets können Sie den Typ `Resource` des Assets herunterladen, wenn es in einem Ordner vorhanden ist. Diese Funktion wird bereitgestellt, damit Sie neben dem Formular die Ressource herunterladen können, auf die ein XFA-Formular verweist.
 
 ## Herunterladen von einem oder mehreren Formularen {#download-one-or-more-forms}
 
@@ -38,7 +37,7 @@ Neben diesen Assets können Sie den Asset-Typ `Resource` herunterladen, wenn er 
 
 1. Navigieren Sie zum Speicherort des Assets, das Sie herunterladen möchten.
 
-1. Wählen Sie das Asset aus. Klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Download]** ![aem6forms_download](assets/aem6forms_download.png).
+1. Wählen Sie das Asset aus. Klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Download]** ![aem6forms_download](assets/aem6forms_download.png) .
 
    >[!NOTE]
    >
@@ -57,4 +56,3 @@ Neben diesen Assets können Sie den Asset-Typ `Resource` herunterladen, wenn er 
 * Sie können die ZIP-Datei in einen beliebigen Speicherort in demselben oder in einem anderen Repository hochladen.
 * Die Hierarchie der Assets in einem Ordner wird während des Upload-Vorgangs beibehalten.
 * Änderungen, die vor dem Download an den Metadaten der heruntergeladenen Assets vorgenommen werden, werden beim Hochladen angezeigt. 
-
