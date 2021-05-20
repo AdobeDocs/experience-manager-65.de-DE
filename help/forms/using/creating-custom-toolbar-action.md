@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 4beca23f-dbb0-4e56-8047-93e4f1775418
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 17f7f0e1-09d8-45cd-a4f6-0846bdb079b6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 84%
 
 ---
-
 
 # Erstellen einer benutzerdefinierten Symbolleistenaktion{#creating-a-custom-toolbar-action}
 
@@ -36,7 +35,7 @@ Neben den standardmäßig bereitgestellten Aktionen können Sie auch benutzerdef
 
 Zur Veranschaulichung der Erstellung einer benutzerdefinierten Symbolleistenaktion erstellen Sie mit den folgenden Schritten eine Schaltfläche, über die Endbenutzer alle adaptiven Formularfelder überprüfen können, bevor Sie ein ausgefülltes Formular senden.
 
-1. Alle Standardaktionen, die von adaptiven Formularen unterstützt werden, befinden sich im Ordner `/libs/fd/af/components/actions`. Kopieren Sie in CRXDE den Knoten `fileattachmentlisting` von `/libs/fd/af/components/actions/fileattachmentlisting` in `/apps/customaction`.
+1. Alle von adaptiven Formularen unterstützten Standardaktionen sind im Ordner `/libs/fd/af/components/actions` vorhanden. Kopieren Sie in CRXDE den Knoten `fileattachmentlisting` von `/libs/fd/af/components/actions/fileattachmentlisting` in `/apps/customaction`.
 
 1. Benennen Sie nach dem Kopieren des Knotens in den Ordner `apps/customaction` den Knotennamen in `reviewbeforesubmit` um. Ändern Sie außerdem die Eigenschaften `jcr:title` und `jcr:description` des Knotens.
 
@@ -44,8 +43,8 @@ Zur Veranschaulichung der Erstellung einer benutzerdefinierten Symbolleistenakti
 
    ![Hierarchie der Knoten zur Anpassung der Symbolleiste](assets/action3.png)
 
-1. Wählen Sie den Knoten `cq:template` im Knoten `reviewbeforesubmit` aus. Stellen Sie sicher, dass der Wert der Eigenschaft `guideNodeClass` `guideButton` `jcr:title`  entsprechend geändert wird.
-1. Ändern Sie die type-Eigenschaft im Knoten `cq:Template`. Für das aktuelle Beispiel ändern Sie die Typeigenschaft in „button“.
+1. Wählen Sie den Knoten `cq:template` im Knoten `reviewbeforesubmit` aus. Stellen Sie sicher, dass der Wert der Eigenschaft `guideNodeClass` `guideButton` ist, und ändern Sie die Eigenschaft `jcr:title` entsprechend.
+1. Ändern Sie die Eigenschaft type im Knoten `cq:Template` . Für das aktuelle Beispiel ändern Sie die Typeigenschaft in „button“.
 
    Der Typwert wird als CSS-Klasse in der generierten HTML für die Komponente hinzugefügt. Benutzer können diese CSS-Klasse verwenden, um ihre Aktionen zu formatieren. Die Standardstile für mobile und Desktopgeräte werden für die Typwerte „button“, „submit“, „reset“ und „save“ bereitgestellt.
 
