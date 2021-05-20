@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5434df9c-ecf6-450a-aa7e-d9ab69b66fe6
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 7e29c9d4-fb82-4308-aac7-0f5cb1f4aef2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 91%
 
 ---
-
 
 # Die Reihenfolge der Auswertung für die Authentifizierung ändern {#change-the-order-of-evaluation-for-authentication}
 
@@ -48,4 +47,3 @@ Wenn Sie mehrere Authentifizierungsanbieter konfiguriert haben, können Sie die 
 
 1. Um die aktualisierte Datei zu importieren, klicken Sie in User Management auf „Konfiguration“ > „Konfigurationsdateien im- und exportieren“.
 1. Klicken Sie auf „Durchsuchen“, um die Datei zu suchen, klicken Sie dann auf „Importieren“ und anschließend auf „OK“.
-
