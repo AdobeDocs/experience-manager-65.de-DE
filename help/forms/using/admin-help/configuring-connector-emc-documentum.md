@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e62370a7-9d9e-43a3-8014-8e53800c870d
-translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+exl-id: a31a496f-87b9-43c0-a98c-5f6ca5d11690
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 93%
 
 ---
-
 
 # Connector für EMC Documentum konfigurieren {#configuring-connector-for-emc-documentum}
 
@@ -62,15 +61,15 @@ Wenn Sie einen falschen Benutzernamen oder ein falsches Kennwort eingeben, erhal
 
 Sie können festlegen, welcher Repository Service Provider mit Documentum verwendet werden soll. Aufrufe des Repository-Dienstes werden an den konfigurierten Provider delegiert. Die folgenden Optionen sind verfügbar:
 
-**Name des aktuellen Repository Dienstleister:** Name des aktuellen Repository-Dienstleisters
+**Aktueller Repository Service Provider-Name:** Der Name des aktuellen Repository Service Providers
 
 **ECM Documentum Repository Provider:** Legt den Documentum Repository Provider als Provider für das Repository fest. Diese Option ist veraltet.
 
-**Repository-Provider:** Legt den nativen Repository-Provider als Provider für das Repository fest
+**Repository-Anbieter:** Legt den nativen Repository-Provider als Provider für das Repository fest.
 
 >[!NOTE]
 >
->Um einen Repository-Dienstleister auszuwählen, der nicht aufgeführt ist, konfigurieren Sie &quot;RepositoryService&quot;unter &quot;Anwendungen und Dienste&quot;> &quot;Dienstverwaltung&quot;. <!-- Fix broken link (See Managing Services) -->.
+>Um einen Repository Service Provider auszuwählen, der nicht aufgeführt ist, konfigurieren Sie RepositoryService unter &quot;Anwendungen und Dienste&quot;> &quot;Dienstverwaltung&quot;. <!-- Fix broken link (See Managing Services) -->.
 
 1. Wählen Sie in Administration Console „Dienste“ > „Connector für EMC Documentum“ > „Konfigurationseinstellungen“.
 1. Wählen Sie im Bereich „Repository Service Provider-Informationen“ einen anderen Repository Service Provider aus.
@@ -117,4 +116,3 @@ In Workspace sind einige manuelle Schritte erforderlich, um sicherzustellen, das
 1. Öffnen Sie in der Ansicht „Variablen“ die Eigenschaften der Variablen „theForm“ und ändern Sie den URI in den Pfad, in dem Sie die Datei „QueueSharing.swf“ in Schritt 5 abgelegt haben.
 1. Speichern Sie den Prozess.
 1. Migrieren Sie den Prozess gemäß den Richtlinien Ihres Unternehmens zur Produktionsumgebung.
-
