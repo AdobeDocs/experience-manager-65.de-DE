@@ -1,18 +1,17 @@
 ---
 title: Kurzanleitung zu WCAG 2.1
 description: Kurzanleitung zu WCAG 2.1
-translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1770'
 ht-degree: 99%
 
 ---
 
-
 # Kurzanleitung zu WCAG 2.1{#quick-guide-to-wcag}
 
-Adobe Experience Manager (AEM) wurde entwickelt, um die Einhaltung der Leitlinien für die Zugänglichkeit von Webinhalten zu maximieren.
+Adobe Experience Manager (AEM) wurde entwickelt, um die Einhaltung der Web Content Accessibility Guidelines zu maximieren.
 
 Die [Web Content Accessibility Guidelines (WCAG), Version 2.1](https://www.w3.org/TR/WCAG/) sind eine vom [World Wide Web Consortium (W3C)](https://www.w3.org/) im Rahmen seiner [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) entwickelte Zusammenstellung international anerkannter Richtlinien.
 
