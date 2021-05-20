@@ -8,15 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 264aa8c0-ba64-4768-b3d1-1b9baa6b4d72
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Adaptive Formulare
+exl-id: 4254c2cb-66cc-4a46-b447-bc5e32def7a0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 77%
 
 ---
-
 
 # Erstellen eines adaptiven Formulars mit einem Satz adaptiver Formulare{#create-an-adaptive-form-using-a-set-of-adaptive-forms}
 
@@ -38,7 +37,7 @@ Funktionen wie die unabhängige Inhaltserstellung und verzögertes Laden bieten 
 
 ## Hinter den Kulissen {#behind-the-scenes}
 
-Sie können XSD-basierte adaptive Formulare und Fragmente zum übergeordneten Formular hinzufügen. Die Struktur des übergeordneten Formulars ist dieselbe wie diejenige eines [beliebigen adaptiven Formulars](../../forms/using/prepopulate-adaptive-form-fields.md). Wenn Sie ein adaptives Formular als untergeordnetes Formular hinzufügen, wird es als Bereich im übergeordneten Formular hinzugefügt. Daten eines gebundenen untergeordneten Formulars werden unter dem `data`Stamm des `afBoundData`-Abschnitts des XML-Schemas des übergeordneten Formulars gespeichert.
+Sie können XSD-basierte adaptive Formulare und Fragmente zum übergeordneten Formular hinzufügen. Die Struktur des übergeordneten Formulars ist dieselbe wie diejenige eines [beliebigen adaptiven Formulars](../../forms/using/prepopulate-adaptive-form-fields.md). Wenn Sie ein adaptives Formular als untergeordnetes Formular hinzufügen, wird es als Bereich im übergeordneten Formular hinzugefügt. Daten eines gebundenen untergeordneten Formulars werden unter dem Stamm `data`des Abschnitts `afBoundData` des XML-Schemas des übergeordneten Formulars gespeichert.
 
 Ihre Kunden füllen zum Beispiel ein Antragsformular aus. Die ersten beiden Felder des Formulars sind „Name“ und „Identität“. Die XML lautet:
 
@@ -76,7 +75,7 @@ Sie können ein anderes Formular in der Anwendung hinzufügen, sodass Ihre Kunde
 </afData>
 ```
 
-Wenn Sie ein anderes Formular einfügen, mit dem Ihre Kunden Hausadresse angeben können, wenden Sie `bindref` `/application/houseAddress or /houseAddress.`Die XML-Datei wie folgt an:
+Wenn Sie ein anderes Formular einfügen, über das Ihre Kunden eine Hausadresse angeben können, wenden Sie `bindref` `/application/houseAddress or /houseAddress.`Die XML-Datei wie folgt an:
 
 ```xml
 <afData>
@@ -100,7 +99,7 @@ Wenn Sie ein anderes Formular einfügen, mit dem Ihre Kunden Hausadresse angeben
 </afData>
 ```
 
-Wenn Sie denselben Substammnamen wie den Schema-Stammordner ( `Address`in diesem Beispiel) beibehalten möchten, verwenden Sie indizierte bindrefs.
+Wenn Sie denselben untergeordneten Stammnamen wie der Schemastamm ( `Address`in diesem Beispiel) beibehalten möchten, verwenden Sie indizierte bindrefs.
 
 Wenden Sie beispielsweise bindrefs `/application/address[1]` oder `/address[1]` und `/application/address[2]` oder `/address[2]` an. Die XML des Formulars lautet:
 
@@ -128,7 +127,7 @@ Wenden Sie beispielsweise bindrefs `/application/address[1]` oder `/address[1]` 
 
 Sie können die Standardunterstruktur des adaptiven Formulars/Fragments mithilfe der Eigenschaft `bindRef` ändern. Mit der Eigenschaft `bindRef` können Sie den Pfad, der auf einen Ordner in der Ordnerstruktur des XML-Schemas zeigt, angeben.
 
-Wenn das untergeordnete Formular ungebunden ist, werden seine Daten im `data`Stammordner des `afUnboundData`-Schemas des übergeordneten Formulars gespeichert.
+Wenn das untergeordnete Formular ungebunden ist, werden seine Daten unter dem Stamm `data`des Abschnitts `afUnboundData` des XML-Schemas des übergeordneten Formulars gespeichert.
 
 Sie können ein adaptives Formular mehrmals als untergeordnetes Formular hinzufügen. Stellen Sie sicher, dass das `bindRef` ordnungsgemäß geändert wird, sodass jede verwendete Instanz des adaptiven Formulars auf einen anderen untergeordneten Stamm des Datenstamms zeigt.
 
@@ -145,5 +144,4 @@ Führen Sie die folgenden Schritte durch, um ein adaptives Formular als untergeo
    [![Auswählen des adaptiven Formulars unter „Assets“](assets/asset.png)](assets/asset-1.png)
 
 1. Ziehen Sie das adaptive Formular, das Sie als untergeordnetes Formular hinzufügen möchten.
-   [ ![Ziehen Sie das adaptive Formular per Drag &amp; Drop in Ihre ](assets/drag-drop.png)](assets/drag-drop-1.png)SiteDas adaptive Formular, das Sie ablegen, wird als untergeordnetes Formular hinzugefügt.
-
+   [ ![Ziehen Sie das adaptive Formular per Drag-and-Drop in Ihre ](assets/drag-drop.png)](assets/drag-drop-1.png)Site. Das adaptive Formular, das Sie ablegen, wird als untergeordnetes Formular hinzugefügt.
