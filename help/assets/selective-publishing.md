@@ -8,8 +8,7 @@ content-type: reference
 docset: aem65
 role: Business Practitioner, Administrator
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
-feature: Publishing
-translation-type: tm+mt
+feature: Veröffentlichung
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
 source-wordcount: '2935'
@@ -25,7 +24,7 @@ Beispielsweise können Sie mit selektiver Veröffentlichung Assets für Produkte
 
 >[!IMPORTANT]
 >
->Selektive Veröffentlichung ist nur im Dynamic Media-Scene7-Modus verfügbar.
+>Selektive Veröffentlichung ist nur im Modus Dynamic Media - Scene7 verfügbar.
 
 >[!NOTE]
 >
@@ -42,7 +41,7 @@ Nachdem Sie selektive Veröffentlichung in einem Ordner konfiguriert haben, habe
 * [Veröffentlichen Sie Assets selektiv für Dynamic Media oder AEM mit „Veröffentlichung verwalten“.](#selective-publish-manage-publication)
 * [Machen Sie die Veröffentlichung von Assets in Dynamic Media oder AEM mithilfe von „Veröffentlichung verwalten“ rückgängig.](#selective-unpublish-manage-publication)
 * [Veröffentlichen Sie Assets in Dynamic Media oder AEM mithilfe von „Quick Publish“.](#quick-publish-aem-dm)
-* [Veröffentlichen Sie Assets mithilfe von Suchergebnissen selektiv bzw. machen Sie die Veröffentlichung rückgängig.](#selective-publish-unpublish-search-results)
+* [Selektive Veröffentlichung oder Rückgängigmachen der Veröffentlichung von Assets mithilfe von Suchergebnissen.](#selective-publish-unpublish-search-results)
 
 **So konfigurieren Sie eine selektive Veröffentlichung auf der Ordnerebene in Dynamic Media**
 
@@ -75,7 +74,7 @@ Nachdem Sie selektive Veröffentlichung in einem Ordner konfiguriert haben, habe
 
 1. Tippen Sie oben rechts auf der Seite auf **[!UICONTROL Speichern und schließen]** und dann auf **[!UICONTROL OK]**, um zu AEM Assets zurückzukehren.
 
-## Assets mithilfe von &quot;Veröffentlichung verwalten{#selective-publish-manage-publication}&quot;selektiv auf Dynamic Media oder AEM veröffentlichen
+## Selektive Veröffentlichung von Assets in Dynamic Media oder AEM mithilfe von &quot;Veröffentlichung verwalten{#selective-publish-manage-publication}&quot;
 
 Bevor Sie **[!UICONTROL Veröffentlichung verwalten]** verwenden können, um Assets in Dynamic Media oder AEM selektiv zu veröffentlichen, müssen Sie sicherstellen, dass Sie die Option **[!UICONTROL Assets veröffentlichen]** in **[!UICONTROL Dynamic Media-Konfiguration]** auf **[!UICONTROL Selektive Veröffentlichung]** gesetzt oder auf der Ordnerebene selektive Veröffentlichung konfiguriert haben.
 
@@ -83,13 +82,13 @@ Siehe [Erstellen einer Dynamic Media-Konfiguration](#configuring-dynamic-media-c
 
 >[!IMPORTANT]
 >
->Selektive Veröffentlichung ist nur im Dynamic Media-Scene7-Modus verfügbar.
+>Selektive Veröffentlichung ist nur im Modus Dynamic Media - Scene7 verfügbar.
 
 >[!NOTE]
 >
 >Beim *Kopieren* von Assets in und aus Ordnern wird der Veröffentlichungsstatus der Assets gelöscht. Wenn Sie Assets in oder aus Ordnern *verschieben*, deren Ordnereigenschaft auf **[!UICONTROL Selektive Veröffentlichung]** festgelegt ist, wird der Veröffentlichungsstatus dieser Assets jedoch beibehalten.
 
-**So veröffentlichen Sie Assets selektiv unter Dynamic Media oder AEM mit &quot;Veröffentlichung verwalten&quot;**
+**So veröffentlichen Sie Assets selektiv in Dynamic Media oder AEM mit &quot;Veröffentlichung verwalten&quot;**
 
 1. Tippen Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen. Tippen Sie auf der linken Seite auf das Navigationssymbol (direkt über dem Werkzeugsymbol) und dann auf **[!UICONTROL Assets > Dateien]**.
 1. Führen Sie in der **[!UICONTROL Kartenansicht]**, **[!UICONTROL Spaltenansicht]** oder **[!UICONTROL Listenansicht]** einen der folgenden Schritte aus:
