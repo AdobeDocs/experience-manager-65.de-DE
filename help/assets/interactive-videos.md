@@ -11,7 +11,6 @@ docset: aem65
 feature: Interaktive Videos
 role: Business Practitioner, Administrator
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '6058'
@@ -29,7 +28,7 @@ Informationen hierzu finden Sie auch unter [Interaktive Bilder](/help/assets/int
 
 ## Interaktives Video in Aktion  {#interactive-video-in-action}
 
-Um ein interaktives, einkaufbares Video in Aktion anzuzeigen, klicken Sie auf [Live-Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), blättern Sie zur Überschrift **[!UICONTROL Einkaufbare Medien]** und klicken Sie dann auf das gewünschte Video.
+Um ein interaktives Video mit Shopping-Funktion anzuzeigen, klicken Sie auf [Live-Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), blättern Sie auf der Seite zur Überschrift **[!UICONTROL Shoppable Media]** und klicken Sie dann auf das gewünschte Video.
 
 * Wenn während der Wiedergabe Produkte im Video verwendet werden, wird das gleiche Produkt auf der rechten Seite als Miniaturansicht angezeigt.
 
@@ -37,7 +36,7 @@ Um ein interaktives, einkaufbares Video in Aktion anzuzeigen, klicken Sie auf [L
 
 <!-- There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
-![Ein Rahmen aus einem interaktiven, einkaufbaren ](assets/chlimage_1-126.png) *VideoEin Videoframe, der von einem interaktiven, einkaufbaren Video erfasst wird.*
+![Ein Frame aus einem interaktiven, Shop-fähigen ](assets/chlimage_1-126.png) *VideoEin Video-Frame, der von einem interaktiven, Shop-fähigen Video erfasst wird.*
 
 >[!NOTE]
 >
@@ -122,7 +121,7 @@ Normalerweise müssen Sie keine speziellen Debugging-Tools verwenden. Moderne We
 
 * Drücken Sie zum Anzeigen aller ausgehenden HTTP-Anfragen in Google Chrome die Taste **F12** (Windows) oder **Befehlstaste + Wahltaste + I** (Mac), um den Bereich für Entwickler-Tools anzuzeigen, und klicken Sie dann auf die Registerkarte **Netzwerk**.
 
-* In Firefox können Sie das Firebug-Plug-in entweder durch Drücken von **F12** (Windows) oder **Befehl+Option+I** (Mac) und über die Registerkarte **`[Net]`** aktivieren oder Sie können das integrierte Inspektor-Tool und die Registerkarte &quot;Netzwerk&quot;verwenden.
+* In Firefox können Sie entweder das Firebug-Plug-in aktivieren, indem Sie **F12** (Windows) oder **Befehl+Option+I** (Mac) drücken und die Registerkarte **`[Net]`** verwenden. Alternativ können Sie das integrierte Inspektor-Tool und die Registerkarte &quot;Netzwerk&quot;verwenden.
 
 * In Internet Explorer aktivieren Sie das Debugger-Tool, indem Sie **F12** drücken.
 
@@ -284,7 +283,7 @@ So fügen Sie Ihrem Video Interaktivität hinzu:
 
       Sie können jedem Zeitsegment, das Sie hinzufügen, mindestens ein Miniaturbild zuweisen und dann diese Miniaturen mit Schnellansicht-Produktseiten verknüpfen, damit Kunden über diese Einkäufe tätigen können, oder mit Web-Seiten, auf denen weitere Informationen zu finden sind.
 
-   * Tippen Sie auf die Schaltfläche **[!UICONTROL Abspielen]**, um mit der Wiedergabe des Videos zu beginnen. Wenn ein bestimmtes Produkt, Dienst oder Detail, das Sie hervorheben möchten, in Ansicht kommt, tippen Sie auf **[!UICONTROL Pause.]** Tippen Sie auf **[!UICONTROL Hinzufügen.]**
+   * Tippen Sie auf die Schaltfläche **[!UICONTROL Abspielen]** , um mit der Wiedergabe des Videos zu beginnen. Wenn ein bestimmtes Produkt, Service oder Detail, das Sie hervorheben möchten, angezeigt wird, tippen Sie auf **[!UICONTROL Pause.]** Tippen Sie auf **[!UICONTROL Segment hinzufügen.]**
 
       Fahren Sie mit dem Wiedergeben und Anhalten des Videos an den Punkten entlang der Zeitleiste fort, an denen Sie ein Segment hinzufügen möchten, bis Sie das Ende des Videos erreicht haben.
 
@@ -365,7 +364,7 @@ So fügen Sie Ihrem Video Interaktivität hinzu:
 
       Wählen Sie das letzte Zeitleistensegment und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Segment löschen.]** Wenn zwei oder mehr Segmente ausgewählt werden, ist die Funktion „Segment löschen“ deaktiviert.
 
-      Sie können nur das letzte Segment löschen. Wenn Sie z. B. alle Segmente in der Zeitleiste löschen möchten, müssen Sie immer die letzte auswählen und dann auf **[!UICONTROL Segment löschen.]** tippen
+      Sie können nur das letzte Segment löschen. Wenn Sie beispielsweise alle Segmente in der Timeline löschen möchten, müssen Sie immer das letzte auswählen und dann auf **[!UICONTROL Segment löschen.]** tippen.
 
 
 1. Wählen Sie ein Zeitsegment aus, mit dem Sie das oder die Miniaturbild(er) verknüpfen möchten.
