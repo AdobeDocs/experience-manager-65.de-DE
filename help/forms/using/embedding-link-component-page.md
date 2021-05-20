@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 9d63152d-41ca-4c7c-bb20-af16c7bdec13
 docset: aem65
-translation-type: tm+mt
-source-git-commit: f9ed171c188a4dfb71f12ae9c98105a4c1895542
+exl-id: eb45adf2-d0f3-4de6-92ac-fb146953e989
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 92%
 
 ---
-
 
 # Einbetten einer Komponente „Link“ in eine Seite{#embedding-link-component-in-a-page}
 
@@ -45,7 +44,7 @@ Gehen Sie wie folgt vor, um der Seite eine Komponente des Typs „Link“ hinzuz
    * **Asset Path**: Pfad für das Repository, in dem das Asset gespeichert ist.
 
    * **Render Type**: Das Wiedergabeformat – PDF, HTML oder Auto Der Wiedergabetyp „Auto“ erkennt die Benutzerumgebung und gibt das Formular entsprechend im HTML- oder PDF-Format wieder. Wenn das Formular beispielsweise auf einem Mobilgerät aufgerufen wird, gibt der Wiedergabetyp „Auto“ das Formular im HTML-Format wieder.
-   * **Sende-URL:**  URL zu dem Servlet, an das die Formulardaten gesendet werden.
+   * **Sende-URL:**  URL zum Servlet, an das die Formulardaten gesendet werden.
    * **HTML Profile**: Profil für die Wiedergabe des Formulars im HTML-Format.
    * **PDF Profile**: Profil für die Wiedergabe des Formulars als PDF-Dokument.
 
