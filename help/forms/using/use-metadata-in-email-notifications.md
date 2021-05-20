@@ -7,14 +7,13 @@ uuid: 9075b64e-1934-44d5-8b16-aa6e95e93da9
 topic-tags: publish
 discoiquuid: d48b5137-c866-43cd-925b-7a6a8eac8c0b
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 18cfc4be-676d-4f08-afc1-4f11bb48dab6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '916'
 ht-degree: 97%
 
 ---
-
 
 # Verwenden von Metadaten in einer E-Mail-Benachrichtigung {#use-metadata-in-an-email-notification}
 
@@ -22,7 +21,7 @@ Mithilfe des Schritts „Aufgabe zuweisen“ können Sie einem Benutzer oder ein
 
 Sie können Metadaten in einer E-Mail-Vorlage verwenden, um Informationen in einer E-Mail-Benachrichtigung dynamisch auszufüllen. Beispielsweise werden die Werte für Titel, Beschreibung, Fälligkeitsdatum, Priorität, Workflow und letztes Datum in der folgenden E-Mail-Benachrichtigung dynamisch zur Laufzeit ausgewählt (wenn eine E-Mail-Benachrichtigung erstellt wird).
 
-![Standardmäßige E-Mail-Vorlage](assets/default_email_template_metadata_new.png)
+![Standard-E-Mail-Vorlage](assets/default_email_template_metadata_new.png)
 
 Metadaten werden in Schlüssel-Wert-Paaren gespeichert. Sie können den Schlüssel in der E-Mail-Vorlage angeben und er wird zur Laufzeit durch einen Wert ersetzt (wenn eine E-Mail-Benachrichtigung erstellt wird). Im folgenden Codebeispiel ist beispielsweise &quot;$ {workitem_title}&quot; ein Schlüssel. Er wird zur Laufzeit durch den Wert „Loan-Request“ ersetzt.
 
