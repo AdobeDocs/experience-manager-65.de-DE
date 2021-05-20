@@ -1,22 +1,21 @@
 ---
 title: Inhaltseigenschaften und Knoten
 seo-title: Inhaltseigenschaften und Knoten
-description: Folgen Sie dieser Seite, um mehr über Inhaltseigenschaften und Knoten zu erfahren.
-seo-description: Folgen Sie dieser Seite, um mehr über Inhaltseigenschaften und Knoten zu erfahren.
+description: Auf dieser Seite erfahren Sie mehr über Inhaltseigenschaften und -knoten.
+seo-description: Auf dieser Seite erfahren Sie mehr über Inhaltseigenschaften und -knoten.
 uuid: 2dad52c8-5b6c-4b90-8498-62217a9a27fc
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: f5721ddc-df5c-496c-be61-38d1cab63ad4
-translation-type: tm+mt
-source-git-commit: 50c0bdfc3203410d392e53536bc7cd00245406e5
+exl-id: 05c8c846-69cc-4075-9149-33890b3d1e08
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 26%
 
 ---
-
 
 # Inhaltseigenschaften und Knoten {#content-properties-and-nodes}
 
@@ -24,22 +23,22 @@ ht-degree: 26%
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Artikel, Banner und Sammlungen werden in AEM als &quot;cq:Pages&quot;dargestellt.
+Artikel, Banner und Sammlungen werden in AEM als cq:Pages dargestellt.
 
-Sie verwenden dieselben allgemeinen Eigenschaften, die in jeder beliebigen Datei &quot;cq:Page&quot;enthalten sind, sowie weitere, unten dargestellte Eigenschaften, die die Metadaten für Adobe Experience Manager (AEM) Mobile On-Demand-Dienste und für die Integration unterstützende Eigenschaften darstellen.
+Sie verwenden dieselben allgemeinen Eigenschaften, die in jeder cq:Page vorhanden sind, sowie mehrere andere, die unten angezeigt werden und die Adobe Experience Manager (AEM) Mobile On-Demand Services-Metadaten und Integrationsunterstützungseigenschaften darstellen.
 
-Die folgenden Tabellen beschreiben die Inhaltseigenschaften und -knoten.
+In den folgenden Tabellen werden die Inhaltseigenschaften und -knoten beschrieben.
 
 ## Allgemeine Integrationseigenschaften {#common-integration-properties}
 
 | **Eigenschaftsname** | **Typ** | **Standardwerte oder erwartete Werte** | **Beschreibung** |
 |---|---|---|---|
-| dps-id | Zeichenfolge |  | von AEM Mobile zugewiesen und von AEM nach dem Hochladen in AEM Mobile oder Import aus AEM Mobile gespeichert |
-| dps-resourceType | Zeichenfolge | dps:Artikel | dps:Banner | dps:Sammlung | entity type-Eigenschaft |
-| dps-version | Zeichenfolge |  | Version der AEM Mobile-Entität (auch in der vollständigen aemm-id enthalten) |
-| dps-lastSynced | Datum  |  | Datum der letzten Synchronisierung/des letzten Imports aus AEM Mobile in AEM |
-| dps-lastUploaded | Datum  |  | Datum des letzten Uploads von AEM nach AEM Mobile |
-| dps-lastUploadedBy | Zeichenfolge:userid |  | ID-Benutzer, der die letzte Upload-Anforderung von AEM nach AEM Mobile ausgeführt hat |
+| dps-id | Zeichenfolge |  | von AEM Mobile zugewiesen und nach dem Hochladen in AEM Mobile von AEM gespeichert oder aus AEM Mobile importiert |
+| dps-resourceType | Zeichenfolge | dps:Artikel | dps:Banner | dps:Sammlung | Entitätstyp-Eigenschaft |
+| dps-version | Zeichenfolge |  | Version der AEM Mobile-Entität (ebenfalls in der vollständigen aemm-id enthalten) |
+| dps-lastSynced | Datum |  | Datum der letzten Synchronisierung/des letzten Imports aus AEM Mobile in AEM |
+| dps-lastUploaded | Datum |  | Datum des letzten Uploads von AEM in AEM Mobile |
+| dps-lastUploadedBy | Zeichenfolge: userid |  | ID-Benutzer, der die letzte Upload-Anfrage von AEM auf AEM Mobile ausgeführt hat |
 
 ## Core-Metadateneigenschaften {#core-metadata-properties}
 
@@ -50,10 +49,10 @@ Die folgenden Tabellen beschreiben die Inhaltseigenschaften und -knoten.
 | dps-abstract | Zeichenfolge |  |
 | dps-shortAbstract | Zeichenfolge |  |
 | dps-department | Zeichenfolge |  |
-| dps-Kategorie | Zeichenfolge |  |
+| dps-category | Zeichenfolge |  |
 | dps-keywords | Zeichenfolge[] |  |
 | dps-internalKeywords | Zeichenfolge[] |  |
-| dps-wichtig | Zeichenfolge[] | Wichtigkeit von {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;} |
+| dps-important | Zeichenfolge[] | Wichtigkeit von {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;} |
 
 ### Artikel {#articles}
 
@@ -72,7 +71,7 @@ Die folgenden Tabellen beschreiben die Inhaltseigenschaften und -knoten.
 
 | **Eigenschaftsname** | **Typ** | **Standardwerte oder erwartete Werte** |
 |---|---|---|
-| dps-tapAction |  | TapAction von {webLink} |
+| dps-tapAction |  | Tippen Sie auf Aktion von {webLink} |
 | dps-tapActionUrl |  |  |
 
 ### Sammlungen {#collections}
@@ -80,7 +79,7 @@ Die folgenden Tabellen beschreiben die Inhaltseigenschaften und -knoten.
 | Eigenschaftsname | Typ | Standardwerte oder erwartete Werte |
 |--- |--- |--- |
 | dps-productId | Zeichenfolge |  |
-| dps-readingPosition | Zeichenfolge | von {&quot;reset&quot;,&quot;preserve&quot;} |
+| dps-readingPosition | Zeichenfolge | von {&quot;reset&quot;,&quot;keep&quot;} |
 | dps-horizontalSwipe | Boolesch |  |
 | dps-allowDownload | Boolesch |  |
 | dps-openDefault | Zeichenfolge | von {&quot;browsePage&quot;,&quot;contentView&quot;} |
