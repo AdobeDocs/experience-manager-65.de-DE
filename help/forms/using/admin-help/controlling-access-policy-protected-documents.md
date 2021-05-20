@@ -9,15 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f34058c3-384a-4b73-a386-5bc9125acbf8
-feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Dokumentensicherheit
+exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2190'
 ht-degree: 85%
 
 ---
-
 
 # Steuern des Zugriffs auf richtliniengeschützte Dokumente {#controlling-access-to-policy-protected-documents}
 
@@ -45,11 +44,11 @@ Auf der (weiter unten beschriebenen) Seite „Dokumentdetails“ können Sie wei
 >
 >Sie müssen auf der Seite „Dokumentdetails“ auf den Link „Richtlinienname“ klicken, um auf Richtlinien zuzugreifen, die in Microsoft Outlook automatisch für Empfänger eines Dokuments generiert wurden, das an eine E-Mail-Nachricht angehängt wurde. Diese Richtlinien werden nicht auf der Seite „Richtlinien“ angezeigt.
 
-**Name des Dokuments:** Der Name des ausgewählten Dokuments.
+**Dokumentname:** Der Name des ausgewählten Dokuments.
 
-**Dokument-ID:** Eine eindeutige ID, die von Dokument Security zugewiesen wird, wenn eine Richtlinie auf das Dokument angewendet wird. Document Security nutzt diese Nummer zum Nachverfolgen des Dokuments.
+**Dokument-ID:** Eine eindeutige Kennung, die Document Security zuweist, wenn eine Richtlinie auf das Dokument angewendet wird. Document Security nutzt diese Nummer zum Nachverfolgen des Dokuments.
 
-**Dokument-Status:** Status des Dokuments (z. B. aktiv oder gesperrt)
+**Dokumentstatus:** Status des Dokuments (z. B. aktiv oder gesperrt)
 
 **Herausgeber:** Name des Benutzers, der die Richtlinie an das Dokument angehängt hat.
 
@@ -59,7 +58,7 @@ Auf der (weiter unten beschriebenen) Seite „Dokumentdetails“ können Sie wei
 
 **Veröffentlichungsdatum:** Das Datum, an dem die Richtlinie auf das Dokument angewendet wurde.
 
-**Verwandte Iterationen:** Wenn das Dokument verwandte Iterationen aufweist, wird dieses Element auch in der Liste angezeigt. Klicken Sie auf den Hyperlink, um die Liste der verwandten Iterationen für das Dokument anzuzeigen.
+**Verwandte Iterationen:** Wenn das Dokument verwandte Iterationen aufweist, wird dieses Element ebenfalls in der Liste angezeigt. Klicken Sie auf den Hyperlink, um die Liste der verwandten Iterationen für das Dokument anzuzeigen.
 
 Benutzer können Informationen zu ihren geschützten Dokumenten anzeigen. Administratoren können Informationen zu Dokumenten anzeigen, die beliebige Benutzer mit einer Richtlinie geschützt haben. Richtliniensatzkoordinatoren können Informationen zu Dokumenten anzeigen, die von Richtlinien in ihren Richtliniensätzen geschützt werden.
 
@@ -89,11 +88,11 @@ Ist diese Funktion aktiviert, können Sie auf der Seite „Dokumente“ die verw
 
 Sie können den Zugriff auf richtliniengeschützte Dokumente sperren und reaktivieren:
 
-**Benutzer:** Kann den Zugriff auf Dokumente, die sie schützen, mit ihren eigenen persönlichen Richtlinien oder freigegebenen Richtlinien sperren oder reaktivieren, für die die Sperrfunktion für den Benutzer aktiviert ist, der die Richtlinie anwendet. Benutzer, die den Zugriff auf ein Dokument nicht sperren oder eine Richtlinie nicht wechseln können, müssen sich an einen Administrator wenden.
+**Benutzer:** Kann den Zugriff auf Dokumente, die sie schützen, mit ihren eigenen persönlichen Richtlinien oder mit freigegebenen Richtlinien sperren oder reaktivieren, für die die Sperrfunktion für den Benutzer aktiviert ist, der die Richtlinie anwendet. Benutzer, die den Zugriff auf ein Dokument nicht sperren oder eine Richtlinie nicht wechseln können, müssen sich an einen Administrator wenden.
 
-**Administratoren:** Können Zugriffsberechtigungen auf richtliniengeschützte Dokument sperren oder reaktivieren, einschließlich solcher, die durch persönliche oder freigegebene Richtlinien geschützt sind. Wenn ein Administrator den Zugriff auf ein Dokument sperrt, das durch eine freigegebene Richtlinie geschützt ist, kann nur der Administrator die Zugriffsberechtigungen für dieses Dokument reaktivieren.
+**Administratoren:** Kann Zugriffsberechtigungen für alle richtliniengeschützten Dokumente sperren oder reaktivieren, einschließlich solcher, die durch persönliche oder freigegebene Richtlinien geschützt sind. Wenn ein Administrator den Zugriff auf ein Dokument sperrt, das durch eine freigegebene Richtlinie geschützt ist, kann nur der Administrator die Zugriffsberechtigungen für dieses Dokument reaktivieren.
 
-**Richtliniensatzkoordinatoren:** Können Zugriffsberechtigungen für Dokumente, die von Richtlinien in ihren Richtliniensätzen geschützt werden, widerrufen oder reaktivieren.
+**Richtliniensatzkoordinatoren:** Können Zugriffsberechtigungen für Dokumente sperren oder reaktivieren, die von Richtlinien in ihren Richtliniensätzen geschützt werden.
 
 Wenn Sie Dokumentzugriffsberechtigungen sperren oder reaktivieren, werden die Änderungen abhängig vom Status des Dokuments wirksam.
 
@@ -147,15 +146,15 @@ Auf der Seite „Dokumente“ können Sie Dokumente über eine Kombination aus D
 
 Einige zusätzliche Suchoptionen stehen nur Administratoren zur Verfügung:
 
-**Dokument-ID:** Eindeutige ID-Nummer, die Dokument Security dem Dokument zuweist, wenn die Richtlinie angewendet wird.
+**Dokument-ID:** Eindeutige ID-Nummer, die Document Security dem Dokument zuweist, wenn die Richtlinie angewendet wird.
 
-**Name des Dokuments:** Name des Dokuments.
+**Dokumentname:** Name des Dokuments.
 
-**Name des Herausgebers:** Name des Benutzers, der die Richtlinie an das Dokument angehängt hat. Sie können den Benutzer aus allen Domänen oder aus einer angegebenen Domäne auswählen.
+**Herausgebername:** Name des Benutzers, der die Richtlinie an das Dokument angehängt hat. Sie können den Benutzer aus allen Domänen oder aus einer angegebenen Domäne auswählen.
 
-**Richtlinie-ID:** ID-Nummer der Richtlinie, die an das Dokument angehängt ist.
+**Richtlinien-ID:** ID-Nummer der Richtlinie, die an das Dokument angehängt ist.
 
-**Richtlinienname:** Name der Richtlinie, die an das Dokument angehängt wird.
+**Richtlinienname:** Name der Richtlinie, die an das Dokument angehängt ist.
 
 **Alle Dokumente:** Alle Dokumente, die von Administratoren und Benutzern geschützt werden. Die Suchoption „Alle Dokumente“ kann sehr viele Dokumente zurückgeben.
 
@@ -197,12 +196,12 @@ Sie können die Seite 0-Support (Wrapper-Dokument) verwenden, damit Nicht-Adobe-
 
 Verwenden Sie die folgenden Vorgänge in Workbench:
 
-**Protect-Dokument mit Titelseite:** Sichert ein PDF-Dokument mit der angegebenen Richtlinie und fügt dem Dokument eine Titelseite hinzu
+**Protect-Dokument mit Titelseite:** Schützt ein PDF-Dokument mit der angegebenen Richtlinie und fügt dem Dokument eine Titelseite hinzu.
 
 **Geschütztes Dokument extrahieren:** Extrahiert das richtliniengeschützte PDF-Dokument aus dem PDF-Dokument mit Titelseite
 
 Verwenden Sie die folgende Document Security-APIs:
 
-**protectDocumentWithCoverPage:** Sichert eine bestimmte PDF-Datei mit der angegebenen Richtlinie und gibt ein Dokument mit einer Titelseite und dem geschützten Dokument als Anhang 
-`//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a PDF document to which a policy is applied FileInputStream fileInputStream = new FileInputStream("C:\\testFile.pdf"); Document inPDF = new Document(fileInputStream); //Reference a Cover Page document FileInputStream coverPageInputStream = new FileInputStream("C:\\CoverPage.pdf"); Document inCoverDoc = new Document(coverPageInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document RMSecureDocumentResult rmSecureDocument = documentManager.protectDocumentWithCoverPage( inPDF, "ProtectedPDF.pdf", "PolicySetName", "PolicyName", null, null, inCoverDoc, true); //Retrieve the policy-protected PDF document Document protectPDF = rmSecureDocument.getProtectedDoc(); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); protectPDF.copyToFile(myFile);` **extractProtectedDocument zurück:** Extrahiert das geschützte Dokument, das eine Anlage im Dokument mit Titelseite ist. Das Dokument mit der Titelseite kann mithilfe der Methode „protectDocumentWithCoverPage“ erstellt werden
+**protectDocumentWithCoverPage:** Schützt eine bestimmte PDF-Datei mit der angegebenen Richtlinie und gibt ein Dokument mit einer Titelseite und dem geschützten Dokument als Anhang 
+`//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a PDF document to which a policy is applied FileInputStream fileInputStream = new FileInputStream("C:\\testFile.pdf"); Document inPDF = new Document(fileInputStream); //Reference a Cover Page document FileInputStream coverPageInputStream = new FileInputStream("C:\\CoverPage.pdf"); Document inCoverDoc = new Document(coverPageInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document RMSecureDocumentResult rmSecureDocument = documentManager.protectDocumentWithCoverPage( inPDF, "ProtectedPDF.pdf", "PolicySetName", "PolicyName", null, null, inCoverDoc, true); //Retrieve the policy-protected PDF document Document protectPDF = rmSecureDocument.getProtectedDoc(); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); protectPDF.copyToFile(myFile);` **extractProtectedDocument zurück:**  Extrahiert das geschützte Dokument, das eine Anlage im Dokument mit Titelseite ist. Das Dokument mit der Titelseite kann mithilfe der Methode „protectDocumentWithCoverPage“ erstellt werden
 `//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a protected PDF document with a Cover Page FileInputStream fileInputStream = new FileInputStream("C:\\policyProtectedDocWithCoverPage.pdf"); Document inPDF = new Document(fileInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document Document extractedDoc = documentManager.extractProtectedDocument(inPDF); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); extractedDoc.copyToFile(myFile);`
