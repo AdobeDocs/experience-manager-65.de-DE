@@ -1,10 +1,9 @@
 ---
-title: AEM 6.5 Funktionen - Benutzerhandbuch
-seo-title: AEM 6.5 Funktionen - Benutzerhandbuch
-description: Überblick über die wesentlichen Funktionen von AEM 6.5
-seo-description: Überblick über die wesentlichen Funktionen von AEM 6.5
+title: AEM 6.5-Funktionen-Benutzerhandbuch
+seo-title: AEM 6.5-Funktionen-Benutzerhandbuch
+description: Überblick über die wichtigsten Funktionen von AEM 6.5
+seo-description: Überblick über die wichtigsten Funktionen von AEM 6.5
 exl-id: d9941242-a01d-48fa-bad0-4c5b9dd16f4c
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '157'
@@ -16,7 +15,7 @@ ht-degree: 47%
 
 ## AEM Foundation {#aem-foundation}
 
-[Erfahren Sie mehr über die Installation, Bereitstellung und Architektur von Adobe Experience Manager 6.5](/help/sites-deploying/home.md), einschließlich der Adobe Managed Services-Cloud-Bereitstellung.
+[Erfahren Sie mehr über die Installation, Bereitstellung und Architektur von Adobe Experience Manager 6.5](/help/sites-deploying/home.md), einschließlich der Adobe Managed Services-Cloud-Implementierung.
 
 [Erfahren Sie, wie Sie ein AEM-Projekt verwalten können](/help/managing/home.md).
 
@@ -36,7 +35,7 @@ ht-degree: 47%
 
 ## AEM Screens {#aem-screens}
 
-[Erfahren Sie mehr über die Lösung für digitale Signaturen zur Veröffentlichung dynamischer und interaktiver Erlebnisse.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+[Erfahren Sie mehr über die Lösung für digitale Beschilderung zur Veröffentlichung dynamischer und interaktiver Erlebnisse.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## AEM Commerce {#aem-commerce}
 
@@ -48,7 +47,7 @@ ht-degree: 47%
 
 ## AEM Livefyre {#aem-livefyre}
 
-[Freigeben von benutzergenerierten Inhalten mit AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html)
+[Geben Sie benutzergenerierte Inhalte für AEM Livefyre frei.](https://docs.adobe.com/content/help/en/livefyre/using/home.html)
 
 ## AEM  Mobile {#aem-mobile}
 
