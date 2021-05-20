@@ -10,22 +10,21 @@ topic-tags: forms-manager
 discoiquuid: 69210727-dde3-495a-87b7-2e8173e6b664
 docset: aem65
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2549'
+source-wordcount: '2548'
 ht-degree: 79%
 
 ---
 
-
 # Importieren und Exportieren von Assets in AEM Forms{#importing-and-exporting-assets-to-aem-forms}
 
-Sie können Formulare und zugehörige Assets, Themen, Datenwörterbücher, Dokument-Fragmente und Briefe zwischen verschiedenen AEM Forms-Instanzen verschieben. Ein solches Verschieben ist bei der Migration von Systemen oder beim Verschieben von Formularen von einem Staging Server auf einen Produktionsserver erforderlich. Für diejenigen Assets, für die das Hochladen und Importieren über die AEM Forms-Benutzeroberfläche unterstützt wird, ist die Verwendung der Forms-Benutzeroberfläche der empfohlene Weg für den Export oder Import. Die Verwendung des AEM Package Manager zum Exportieren oder Importieren solcher Assets wird nicht empfohlen.
+Sie können Formulare und zugehörige Assets, Designs, Datenwörterbücher, Dokumentfragmente und Briefe zwischen verschiedenen AEM Forms-Instanzen verschieben. Ein solches Verschieben ist bei der Migration von Systemen oder beim Verschieben von Formularen von einem Staging Server auf einen Produktionsserver erforderlich. Für diejenigen Assets, für die das Hochladen und Importieren über die AEM Forms-Benutzeroberfläche unterstützt wird, ist die Verwendung der Forms-Benutzeroberfläche der empfohlene Weg für den Export oder Import. Die Verwendung des AEM Package Manager zum Exportieren oder Importieren solcher Assets wird nicht empfohlen.
 
 >[!NOTE]
 >
->* In AEM 6.4 Forms hat sich die Struktur und die Pfade des CRX-Repositorys geändert. Wenn Sie Assets von einer früheren Version auf AEM 6.4 Forms importieren und das Formular Abhängigkeiten von der älteren Struktur aufweist, müssen Sie die Abhängigkeiten manuell exportieren. Weitere Informationen zu Änderungen in der Struktur und den Pfaden des Repositorys finden Sie unter [Repository-Umstrukturierung in AEM](/help/sites-deploying/repository-restructuring.md).
+>* In AEM 6.4 Forms hat sich die Struktur und die Pfade des CRX-Repository geändert. Wenn Sie Assets aus einer früheren Version in AEM 6.4 Forms importieren und das Formular einige Abhängigkeiten von der älteren Struktur aufweist, müssen Sie die Abhängigkeiten manuell exportieren. Weitere Informationen zu Änderungen an der Struktur und den Pfaden des Repositorys finden Sie unter [Repository-Neustrukturierung in AEM](/help/sites-deploying/repository-restructuring.md).
 
 >
 
@@ -35,24 +34,24 @@ Sie können Formulare und zugehörige Assets, Themen, Datenwörterbücher, Dokum
 
 Mithilfe der AEM Forms-Benutzeroberfläche können Sie Assets aus einer AEM-Instanz exportieren, indem Sie sie als CRX-Paket oder Binärdateien herunterladen. Sie können dann das heruntergeladene AEM CRX-Paket oder die Binärdatei in eine andere AEM-Instanz importieren.
 
-Exportieren und Importieren über die AEM Forms-Benutzeroberfläche wird für alle Assets unterstützt, mit Ausnahme von Vorlagen für adaptive Formulare und Inhaltsrichtlinien für adaptive Formulare. Darum werden beim Exportieren eines adaptiven Formulars von der AEM Forms-Benutzeroberfläche die verknüpfte adaptive Formularvorlage und Inhaltsrichtlinien nicht wie andere verknüpfte Assets automatisch exportiert.
+Der Export und Import über die AEM Forms-Benutzeroberfläche wird für alle Assets unterstützt, mit Ausnahme von Vorlagen für adaptive Formulare und Inhaltsrichtlinien für adaptive Formulare. Darum werden beim Exportieren eines adaptiven Formulars von der AEM Forms-Benutzeroberfläche die verknüpfte adaptive Formularvorlage und Inhaltsrichtlinien nicht wie andere verknüpfte Assets automatisch exportiert.
 
 Sie müssen AEM Package Manager verwenden, um ein CRX-Paket dieser Elemente auf dem AEM-Quellserver zu erstellen und das Paket auf dem Zielserver zu installieren. Weitere Informationen zum Erstellen und Installieren von Paketen finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md).
 
 ### Assets für Formulare und Dokumente herunterladen {#download-forms-amp-documents-assets}
 
-So laden Sie Forms- und Dokumente-Assets herunter:
+Herunterladen von Forms- und Dokumenten-Assets:
 
 1. Melden Sie sich bei der AEM Forms-Instanz an.
-1. Tippen Sie auf Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > navigation ![compass](assets/compass.png) icon> Forms > Forms &amp; Dokumente.
+1. Tippen Sie auf das Symbol Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > navigation ![compass](assets/compass.png) Symbol> Forms > Forms und Dokumente.
 1. Wählen Sie die AEM Forms-Assets und klicken Sie auf das Symbol **Herunterladen**.
-1. Wählen Sie unter &quot;Asset(s) herunterladen&quot;eine der folgenden Optionen und tippen Sie auf **Download**.
+1. Wählen Sie unter Asset(s) herunterladen eine der folgenden Optionen aus und tippen Sie auf **Download**.
 
    * **Als CRX-Paket herunterladen:** Verwenden Sie die Option zum Herunterladen und Verschieben des/aller ausgewählten Elements/Elemente und der zugehörigen Abhängigkeiten von einer AEM Forms-Instanz in eine andere. Dadurch werden alle Assets und Ordner als CRX-Paket heruntergeladen. Jegliche Formular-Assets, einschließlich in AEM erstellter Formulare (adaptive Formulare, interaktive Kommunikation und adaptive Formularfragmente), Formularsätze, Formularvorlagen, PDF-Dokumente und Ressourcen (XSDs, XFS, Bilder) können über die AEM Forms-Benutzeroberfläche als Paket heruntergeladen werden.
 Der Vorteil des Herunterladens von Assets als Paket besteht darin, dass dabei auch Assets, die vom zum Herunterladen ausgewählten Assets verwendet wurden, heruntergeladen werden. Beispiel: Sie haben ein adaptives Formular, das eine Formularvorlage, XSD und ein Bild verwendet. Wenn Sie dieses adaptive Formular auswählen und es als Paket herunterladen, enthält das heruntergeladene Paket auch die Formularvorlage, XSD und das Bild. Alle mit dem Asset verknüpften Metadateneigenschaften (einschließlich benutzerdefinierter Eigenschaften) werden ebenfalls heruntergeladen.
 
    * **Asset(s) als Binärdateien herunterladen:** Verwenden Sie die Option nur zum Herunterladen von Formularvorlagen (XDP), PDF-Formularen(PDF), Dokumenten (PDF) und Ressourcen (Bilder, Schemata, Stylesheets). Sie können diese Assets mit externen Anwendungen bearbeiten. Es werden die Forms-Assets als .zip-Datei heruntergeladen, die Binärdaten enthalten, wie XSDs, XDPs, Bilder, PDFs, und XDPs.
-Sie können adaptive Formulare, interaktive Kommunikation, adaptive Formularfragmente, Themen und Formularsätze mit der Option **Asset(s) als Binärdateien herunterladen** nicht herunterladen. Um diese Assets herunterzuladen, müssen Sie die Option **Als CRX-Paket herunterladen** verwenden.
+Sie können adaptive Formulare, interaktive Kommunikation, adaptive Formularfragmente, Designs und Formularsätze mit der Option **Asset(s) als Binärdateien herunterladen** nicht herunterladen. Um diese Assets herunterzuladen, müssen Sie die Option **Als CRX-Paket herunterladen** verwenden.
 
    Die ausgewählten Assets werden als ein Archiv (.zip-Datei) heruntergeladen.
 
@@ -67,11 +66,11 @@ Hochladnen von Assets für  Formulare und Dokumente:
 >[!VIDEO](https://vimeo.com/)
 
 1. Melden Sie sich bei der AEM Forms-Instanz an.
-1. Tippen Sie auf Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > navigation ![compass](assets/compass.png) icon> Forms> Forms &amp; Dokumente.
+1. Tippen Sie auf Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) Symbol > Navigation ![compass](assets/compass.png) Symbol> Forms> Forms &amp; Documents.
 1. Tippen Sie auf **Erstellen** > **Datei hochladen**. Ein Dialogfeld zum Hochladen von Formularen oder Paketen wird angezeigt.
 1. Navigieren Sie im Dialogfeld zum Paket oder Archiv, das importiert werden soll, und wählen Sie es aus. Sie können auch PDF-Dokumente, XSDs, Bilder, Stylesheets und XDP-Formulare auswählen. Tippen Sie auf **Öffnen**. Der ausgewählte Ordner oder Dateiname darf keine Sonderzeichen enthalten.
 
-   Überprüfen Sie im Dialogfeld die Details der hochgeladenen Assets und tippen Sie auf **Hochladen**.
+   Überprüfen Sie im Dialogfeld die Details der hochgeladenen Assets und tippen Sie auf **Upload**.
 
    Wenn Sie ein vorhandenes Formular-Asset hochladen, wird das Element aktualisiert.
 
@@ -90,7 +89,7 @@ Sie können Designs in AEM Forms exportieren und in anderen Projekten oder Insta
 So laden Sie ein Design herunter:
 
 1. Melden Sie sich bei der AEM Forms-Instanz an.
-1. Tippen Sie auf Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > navigation ![compass](assets/compass.png) icon> Forms>-Themen.
+1. Tippen Sie auf Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) Symbol > Navigation ![compass](assets/compass.png) Symbol> Forms> Designs.
 1. Wählen Sie das Design und tippen Sie auf **Herunterladen**. Das Design wird als Archiv (.zip-Datei) heruntergeladen.
 
 ### Hochladen eines Designs {#uploading-a-theme}
@@ -102,10 +101,10 @@ Hochladen von Designs:
 1. In Experience Manager navigieren Sie zu **Formulare > Designs**.
 1. Auf der Seite „Designs“ klicken Sie auf **Erstellen > Dateiaktualisierung**.
 1. In der Eingabeaufforderung zur Dateiaktualisierung suchen Sie ein Designpaket auf Ihrem Computer, wählen es aus und klicken auf **Hochladen**.
-Das hochgeladene Design ist auf der Seite &quot;Themen&quot;verfügbar.
+Das hochgeladene Design ist auf der Designseite verfügbar.
 
 1. Melden Sie sich bei der AEM Forms-Instanz an.
-1. Tippen Sie auf Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > navigation ![compass](assets/compass.png) icon> Forms>-Themen.
+1. Tippen Sie auf Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) Symbol > Navigation ![compass](assets/compass.png) Symbol> Forms> Designs.
 1. Klicken Sie auf **Erstellen**> **Datei hochladen**. In der Eingabeaufforderung zur Dateiaktualisierung suchen Sie ein Designpaket auf Ihrem Computer, wählen es aus und klicken auf **Hochladen**. Das Design wird hochgeladen.
 
 ## Assets in Correspondence Manager importieren und exportieren  {#import-and-export-assets-in-correspondence-management}
@@ -117,7 +116,7 @@ Um Assets wie Datenwörterbücher, Schreiben und Dokumentfragmente an zwei versc
 1. Tippen Sie auf den Seiten für die Briefe, Dokumentfragmente oder Datenwörterbücher auf die Assets, die Sie in ein einzelnes Paket exportieren möchten, und tippen Sie dann auf „Warteschlange für den Download“. Die Elemente werden für den Export aufgelistet.
 1. Wiederholen Sie den oben erwähnten Schritt zum Hinzufügen von Schreiben, Dokumentfragmenten und Datenwörterbüchern nach Bedarf.
 1. Tippen Sie auf **Herunterladen**.
-1. Correspondence Management zeigt das Dialogfeld &quot;Asset(s) herunterladen&quot;mit einer Liste von Assets in der Export-Liste an.
+1. Correspondence Management zeigt das Dialogfeld Asset(s) herunterladen mit einer Liste von Assets in der Exportliste an.
 
    ![export](assets/export.png)
 
@@ -137,12 +136,12 @@ Um alle Correspondence Management-Assets und die zugehörigen Abhängigkeiten al
 
 1. Melden Sie sich beim AEM Forms-Server als Forms-Benutzer an.
 1. Tippen Sie auf **Adobe Experience Manager** in der Menüleiste für globale Navigation.
-1. Tippen Sie auf Werkzeuge ( ![Tools](assets/tools.png)) und dann auf **Forms**.
+1. Tippen Sie auf Tools ( ![tools](assets/tools.png)) und dann auf **Forms**.
 1. Tippen Sie auf **Correspondence Management-Assets exportieren**.
 
    ![publish-cmp-assets-1](assets/publish-cmp-assets-1.png)
 
-   (&quot;Die Seite &quot;Alle Correspondence Management-Assets exportieren&quot;wird angezeigt und enthält Informationen zum letzten Mal, wenn der Exportvorgang versucht wurde, sowie einen Link zum Herunterladen des zuletzt erfolgreich exportierten Pakets.
+   ( &quot;Die Seite &quot;Alle Correspondence Management-Assets exportieren&quot;wird angezeigt und enthält Informationen zum letzten Versuch des Exportvorgangs sowie einen Link zum Herunterladen des zuletzt erfolgreich exportierten Pakets.
 
    ![export-last-run-details](assets/export-last-run-details.png)
 
@@ -156,7 +155,7 @@ Um alle Correspondence Management-Assets und die zugehörigen Abhängigkeiten al
 
 1. Tippen Sie auf den Link **Exportiertes Paket herunterladen**, um die Paketdatei herunterzuladen.
 
-   Um die Assets im Paket einer anderen Instanz von Correspondence Management hinzuzufügen, importieren Sie das Paket [in eine AEM Forms-Instanz](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p).
+   Um die Assets im Paket zu einer anderen Instanz von Correspondence Management hinzuzufügen, importieren Sie das Paket [in eine AEM Forms-Instanz](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p).
 
 ### Importieren von Dokumentfragmenten, Briefen und/oder Datenwörterbüchern in Correspondence Management {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}
 
@@ -164,9 +163,9 @@ Sie können in eine .cmp-Datei exportierte Assets importieren. Eine .cmp-Datei k
 
 >[!NOTE]
 >
->Beim Importieren älterer Correspondence Management-Assets für die Migration, müssen Sie sich mithilfe eines Administratorkontos anmelden. Weitere Informationen zum Migrieren alter Correspondence Management-Assets finden Sie unter [Correspondence Management-Assets in AEM 6.1 forms](/help/forms/using/migration-utility.md) migrieren.
+>Beim Importieren älterer Correspondence Management-Assets für die Migration, müssen Sie sich mithilfe eines Administratorkontos anmelden. Weitere Informationen zum Migrieren alter Correspondence Management-Assets finden Sie unter [Migrieren von Correspondence Management-Assets zu AEM 6.1 forms](/help/forms/using/migration-utility.md).
 
-1. Tippen Sie auf der Seite &quot;Datenwörterbuch, Briefe oder Dokument-Fragmente&quot;auf **Erstellen > Datei-Upload** und wählen Sie die .cmp-Datei aus.
+1. Tippen Sie auf der Seite &quot;Datenwörterbuch, Schreiben oder Dokumentfragmente&quot;auf **Erstellen > Datei-Upload** und wählen Sie die .cmp-Datei aus.
 1. Correspondence Management zeigt das Dialogfeld „Assets importieren“ mit der Liste der Assets, die importiert werden, an. Tippen Sie auf **Import**.
 
    Nachdem Sie die Assets importiert haben, werden die folgenden Eigenschaften des Assets aktualisiert, während die anderen Eigenschaften unverändert bleiben:
@@ -182,7 +181,7 @@ Sie können in eine .cmp-Datei exportierte Assets importieren. Eine .cmp-Datei k
 
 Sie können AEM-Paketmanager verwenden, um Workflow-Anwendungen zu exportieren. Das Verfahren wird unten aufgeführt:
 
-1. Öffnen Sie AEM Forms Paketmanager. Die URL des Paketmanagers lautet https://&lt;server>:&lt;port>/crx/packmgr.
+1. Öffnen Sie AEM Forms Paketmanager. Die URL des Paketmanagers lautet https://&lt;Server>:&lt;Port>/crx/packmgr.
 1. Klicken Sie auf **[!UICONTROL Paket erstellen]**. Das Dialogfeld **[!UICONTROL Neues Paket]** wird angezeigt.
 1. Geben Sie Name, Version und Gruppe für das Paket an. Klicken Sie auf **[!UICONTROL OK]**.
 1. Klicken Sie auf **[!UICONTROL Bearbeiten]** und öffnen Sie die Registerkarte **[!UICONTROL Filter]**. Klicken Sie auf **[!UICONTROL Filter hinzufügen]**. Geben Sie den Pfad der Workflow-Anwendung ein. Beispiel: /etc/fd/dashboard/startpoints/homemortgage. Klicken Sie auf **[!UICONTROL Regel hinzufügen]**.
@@ -200,7 +199,7 @@ Sie können AEM-Paketmanager verwenden, um Workflow-Anwendungen zu exportieren. 
 
 Die Benutzeroberfläche von AEM Forms verwendet Ordner zum Anordnen von Assets.  Diese Ordner werden für Elemente verwendet, die in der Benutzeroberfläche von AEM Forms erstellt werden. In diesen Ordnern können Sie Dateien umbenennen, Unterordner erstellen und Assets und Dokumente ablegen. Wenn Sie Dokumente und Assets in einem Ordner organisieren, können Sie die Dateien für einfache Verwaltung gruppieren. Sie können einen Ordner auswählen und ihn herunterladen oder löschen.
 
-Führen Sie zum Erstellen eines Ordners die folgenden Schritte aus:
+Führen Sie die folgenden Schritte aus, um einen Ordner zu erstellen:
 
 ### Erstellen von Ordnern {#create-a-folder}
 
@@ -214,15 +213,15 @@ Führen Sie zum Erstellen eines Ordners die folgenden Schritte aus:
 
    >[!NOTE]
    >
-   >Standardmäßig wird der Wert des Namensfelds automatisch aus dem Titel gefüllt. Der Name darf nur alphanumerische Zeichen oder die Sonderzeichen Bindestrich (-) und Unterstrich (_) enthalten. Andere Sonderzeichen, die in den Titel eingegeben wurden, werden automatisch durch einen Bindestrich ersetzt und Sie werden aufgefordert, den neuen Namen zu bestätigen. Sie können mit dem vorgeschlagenen Namen fortfahren oder diesen weiter bearbeiten.
+   >Standardmäßig wird der Wert des Namensfelds automatisch aus dem Titel ausgefüllt. Der Name darf nur alphanumerische Zeichen oder die Sonderzeichen Bindestrich (-) und Unterstrich (_) enthalten. Andere Sonderzeichen, die in den Titel eingegeben wurden, werden automatisch durch einen Bindestrich ersetzt und Sie werden aufgefordert, den neuen Namen zu bestätigen. Sie können mit dem vorgeschlagenen Namen fortfahren oder diesen weiter bearbeiten.
 
 1. Ein neuer Ordner mit dem definierten Titel wird an der aktuellen Position in der Asset-Liste angezeigt.
 
-   Wenn ein Ordner mit dem angegebenen Namen vorhanden ist, schlägt die Übermittlung mit einem Fehler fehl. Sie können die Fehlermeldung durch Bewegen des Mauszeigers über das Fehlersymbol ![aem6forms_error_alert](assets/aem6forms_error_alert.png), das neben dem Namensfeld angezeigt wird, Ansicht.
+   Wenn ein Ordner mit dem angegebenen Namen vorhanden ist, schlägt die Übermittlung mit einem Fehler fehl. Sie können die Fehlermeldung anzeigen, indem Sie den Mauszeiger über das Fehlersymbol ![aem6forms_error_alert](assets/aem6forms_error_alert.png) bewegen, das neben dem Namensfeld angezeigt wird.
 
    Sie können auf den neu erstellten Ordner tippen, um innerhalb des Ordners zu navigieren und Assets oder Ordner innerhalb des Ordners zu erstellen. Außerdem können Sie einen Ordner auswählen und ihn für den Download in die Warteschlange stellen, ihn löschen oder seinen Namen bearbeiten.
 
-   ![editdeletedownloadafolder](assets/editdeletedownloadafolder.png)
+   ![editdeletedownloadaffolder](assets/editdeletedownloadafolder.png)
 
 ### Erstellen Sie Kopien eines oder mehrerer Elemente oder Breife {#create-copies-of-one-or-more-assets-or-letters}
 
@@ -234,20 +233,20 @@ Führen Sie die folgenden Schritte aus, um Kopien von Elementen und Briefen zu e
 1. Tippen Sie auf Kopieren. Auf der Benutzeroberfläche wird das Symbol „Einfügen“ angezeigt. Sie können innerhalb eines Ordners vor dem Einfügen navigieren. Verschiedene Ordner können Assets mit demselben Namen enthalten. Weitere Informationen zu Ordnern finden Sie unter [Ordner und Organisieren von Assets](#folders-and-organizing-assets).
 1. Wählen Sie „Einfügen“. Das Dialogfeld „Einfügen“ wird angezeigt. Das System generiert automatisch Namen und Titel für die neuen Kopien von Assets/Briefen, aber Sie können die Titel und Namen der Assets/Briefe bearbeiten.
 
-   Wenn Sie die Assets/Briefe an derselben Stelle kopieren und einfügen, wird dem vorhandenen Namen des Assets/Briefs ein Suffix &quot;-CopyXX&quot;hinzugefügt. Wenn für das kopierte Asset/den Brief kein Titel vorhanden war, bleibt das automatisch generierte Titelfeld leer.
+   Wenn Sie die Assets/Briefe an derselben Stelle kopieren und einfügen, wird dem vorhandenen Namen des Assets/Briefs das Suffix &quot;-CopyXX&quot;hinzugefügt. Wenn für das kopierte Asset/den Brief kein Titel vorhanden war, bleibt das automatisch generierte Titelfeld leer.
 
 1. Bearbeiten Sie gegebenenfalls den Titel und den Namen, mit denen Sie die Kopie des Assets/Briefs speichern möchten.
 1. Wählen Sie „Einfügen“. Neue Kopien der kopierten Assets erstellt.
 
 ## Suche {#search-forms}
 
-Mit der AEM Forms-Benutzeroberfläche können Sie Ihren Inhalt suchen. In der oberen Leiste können Sie auf Suchen **[A]** tippen, um Ihren Inhalt nach Ressourcen wie Assets und Dokumenten zu suchen.
+Mit der AEM Forms-Benutzeroberfläche können Sie Ihren Inhalt suchen. In der oberen Leiste können Sie auf Suchen **[A]** tippen, um Ihren Inhalt nach Ressourcen wie Assets und Dokumenten zu durchsuchen.
 
-Wenn Sie nach Assets suchen, zeigt AEM Forms den Seitenbereich an. Sie können auch auf ![assets-browser-content-only](assets/assets-browser-content-only.png) > Filter **[B]** tippen, um das Seitenbedienfeld aufzurufen. Mithilfe verschiedener Filter im Seitenbereich können Sie Ihre Suche ebenfalls einschränken. Der Seitenbereich bietet Ihnen auch die Möglichkeit, Ihre Sucheinstellungen zu speichern.
+Wenn Sie nach Assets suchen, zeigt AEM Forms den Seitenbereich an. Sie können auch auf ![assets-browser-content-only](assets/assets-browser-content-only.png) > Filter **[B]** tippen, um den Seitenbereich aufzurufen. Mithilfe verschiedener Filter im Seitenbereich können Sie Ihre Suche ebenfalls einschränken. Der Seitenbereich bietet Ihnen auch die Möglichkeit, Ihre Sucheinstellungen zu speichern.
 
 ![search_topbar](assets/search_topbar.png)
 
-**A.** Search  **B.** Filter
+**A.** Suche  **B.** Filter
 
 ![Seitenbereich - Filter](assets/search_sidepanel.png)
 
@@ -261,4 +260,4 @@ Auf der Seitenleiste können Sie die folgenden Funktionen verwenden, um Ihre Suc
 
 Der Seitenbereich ermöglicht es Ihnen, Ihre Sucheinstellungen mit dem Namen Ihrer Wahl zu speichern.
 
-Weitere Informationen und Anleitungen zur Verwendung von Suche, Filtern, gespeicherter Suche und Seitenbedienfeld finden Sie unter [Suche](/help/sites-authoring/search.md).
+Weitere Informationen und Anweisungen zur Verwendung von Suche, Filtern, gespeicherter Suche und Seitenbereich finden Sie unter [Suche](/help/sites-authoring/search.md).
