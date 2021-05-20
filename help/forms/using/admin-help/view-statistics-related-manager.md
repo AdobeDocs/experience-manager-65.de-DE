@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8e1b2f7c-2609-474b-a1b2-fa820df74ae3
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: ce8f7257-bb9a-428d-b816-27b1d1632ee1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 80%
 
 ---
-
 
 # Statistiken mit Bezug auf Work Manager anzeigen {#view-statistics-related-to-work-manager}
 
@@ -33,23 +32,23 @@ Auf der Registerkarte „Work Manager“ werden Statistiken angezeigt, die mit W
 
 **Job Manager:** Alle Aufträge, die zu Job Manager gehören. Job Manager verwaltet seine eigenen Aufträge und verfügt über seine eigenen Auftragsstatus. Informationen hierzu finden Sie in den spezifischen unten beschriebenen Jobstatus.
 
-**Workflow:** Alle Arbeitselemente, die zur Workflow-Ausführung gehören. Workflow verwaltet keine eigenen Arbeitselemente, sondern verlässt sich auf Work Manager. Daher gehören die Status zu Work Manager.
+**Workflow:** Alle Arbeitselemente, die zur Ausführung des Workflows gehören. Workflow verwaltet keine eigenen Arbeitselemente, sondern verlässt sich auf Work Manager. Daher gehören die Status zu Work Manager.
 
-**Ereignis:** Alle Arbeitselemente, die zur Ereignis-Verwaltung gehören. Die Ereignisverwaltung verwaltet keine eigenen Arbeitselemente, sondern verlässt sich auf Work Manager. Daher gehören die Status zu Work Manager.
+**Ereignisse:** Alle Arbeitselemente, die zur Ereignisverwaltung gehören. Die Ereignisverwaltung verwaltet keine eigenen Arbeitselemente, sondern verlässt sich auf Work Manager. Daher gehören die Status zu Work Manager.
 
 ### Status (nur für Standard-, Workflow- oder Ereigniskategorien)  {#status-for-default-workflow-or-events-categories-only}
 
 **Alle anzeigen:** Zeigt alle aktuellen Arbeitselemente an.
 
-**Geplant:** Zeigt alle Arbeitselemente an, die vom Anwendungsserver ausgeführt werden können, aber noch nicht gestartet wurden.
+**Geplant:** Zeigt alle Arbeitselemente an, die für die Ausführung durch den Anwendungsserver bereit sind, aber noch nicht gestartet wurden.
 
-**Angehalten:** Zeigt alle geplanten Arbeitselemente an, die von der Clientanwendung angehalten wurden. Diese Elemente können ausgeführt oder gelöscht werden. (Siehe Arbeitselemente oder Aufträge verwalten.)
+**Angehalten:** Zeigt alle geplanten Arbeitselemente an, die von der Client-Anwendung angehalten wurden. Diese Elemente können ausgeführt oder gelöscht werden. (Siehe Arbeitselemente oder Aufträge verwalten.)
 
-**Wird ausgeführt:** Zeigt alle Arbeitselemente an, die vom Work Manager des Anwendungsservers abgerufen wurden und die entweder abgeschlossen werden oder fehlschlagen. Sie können für diese Arbeitselemente keine Vorgänge verwenden.
+**In Bearbeitung:** Zeigt alle Arbeitselemente an, die der Work Manager des Anwendungsservers ausgewählt hat und die entweder abgeschlossen werden oder fehlschlagen. Sie können für diese Arbeitselemente keine Vorgänge verwenden.
 
 **Abgeschlossen:** Zeigt alle Arbeitselemente an, die erfolgreich ausgeführt wurden. Permanente Arbeitselemente verbleiben in diesem Status und nicht permanente Elemente werden beim Beenden von Rückrufen an die Rückruf-Handler gelöscht. Zum Löschen dieser Elemente verwenden Sie den Vorgang „Elemente löschen“. (Siehe Arbeitselemente oder Aufträge verwalten.)
 
-**Fehlgeschlagen:** Zeigt alle Arbeitselemente an, die aufgrund eines Fehlers nicht erfolgreich abgeschlossen wurden. Diese Arbeitselemente können mehrmals durch Verwenden des Vorgangs „Elemente wiederholen“ wiederholt werden. (Siehe Arbeitselemente oder Aufträge verwalten.) Mithilfe der Fehlerverknüpfung in der Statuszeile können Sie auf Details über den Fehler zugreifen.
+**Fehlgeschlagen:** Zeigt alle Arbeitselemente an, die aufgrund einer Fehlerbedingung nicht erfolgreich abgeschlossen wurden. Diese Arbeitselemente können mehrmals durch Verwenden des Vorgangs „Elemente wiederholen“ wiederholt werden. (Siehe Arbeitselemente oder Aufträge verwalten.) Mithilfe der Fehlerverknüpfung in der Statuszeile können Sie auf Details über den Fehler zugreifen.
 
 **Unbekannt:** Zeigt alle Arbeitselemente an, deren Status unbekannt ist.
 
@@ -57,25 +56,25 @@ Auf der Registerkarte „Work Manager“ werden Statistiken angezeigt, die mit W
 
 **Abgeschlossen:** Zeigt alle Aufträge an, die erfolgreich ausgeführt wurden. Permanente Arbeitselemente verbleiben in diesem Status und nicht permanente Elemente werden beim Beenden von Rückrufen an die Rückruf-Handler gelöscht.
 
-**Abschließen angefordert:** Zeigt Aufträge an, für die eine vollständige Anforderung ausgeführt wurde.
+**Abgeschlossen angefordert:** Zeigt Aufträge an, für die eine vollständige Anforderung ausgeführt wurde.
 
-**Fehler angefordert:** Zeigt Aufträge an, für die eine Fehleranforderung ausgeführt wurde.
+**Fehler angefordert:** Zeigt Aufträge an, für die eine Fehleranfrage durchgeführt wurde.
 
-**Fehlgeschlagen:** Zeigt Aufträge an, die aufgrund eines Fehlers nicht erfolgreich abgeschlossen wurden. Mithilfe der Fehlerverknüpfung in der Statuszeile können Sie auf Details über den Fehler zugreifen.
+**Fehlgeschlagen:** Zeigt Aufträge an, die aufgrund einer Fehlerbedingung nicht erfolgreich abgeschlossen wurden. Mithilfe der Fehlerverknüpfung in der Statuszeile können Sie auf Details über den Fehler zugreifen.
 
-**Angefordert beenden:** Zeigt Aufträge an, für die eine Anforderung zum Beenden ausgeführt wurde.
+**Beenden angefordert:** Zeigt Aufträge an, für die eine Beenden-Anfrage ausgeführt wurde.
 
-**Beendet:** Zeigt Aufträge an, die ohne Abschluss beendet wurden.
+**Beendet:** Zeigt Aufträge an, die beendet wurden, ohne abgeschlossen zu sein.
 
-**Angefordert aussetzen:** Zeigt Aufträge an, für die eine Aussetzungsanforderung ausgeführt wurde.
+**Aussetzen angefordert:** Zeigt Aufträge an, für die eine Aussetzen-Anfrage ausgeführt wurde.
 
 **Ausgesetzt:** Zeigt Aufträge an, die ausgesetzt wurden.
 
-**Fortsetzen angefordert:** Zeigt Aufträge an, für die eine Wiederaufnahme-Anforderung ausgeführt wurde.
+**Fortsetzen angefordert:** Zeigt Aufträge an, für die eine Wiederaufnahmeanfrage durchgeführt wurde.
 
-**Warteschlange:** Zeigt Aufträge an, die sich in der Warteschlange befinden.
+**In Warteschlange:** Zeigt Aufträge an, die sich in der Warteschlange befinden.
 
-**Ausführen:** Zeigt Aufträge an, die ausgeführt werden.
+**Wird ausgeführt:** Zeigt Aufträge an, die ausgeführt werden.
 
 ### Servername {#server-name}
 
