@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 0ce7b338-6686-49b3-b58b-e7ab6b670708
-translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1844'
 ht-degree: 94%
 
 ---
-
 
 # Erstellen oder konfigurieren Sie einen überwachten Ordner {#create-or-configure-a-watched-folder}
 
@@ -76,10 +75,10 @@ Führen Sie die folgenden Schritte aus, um einen überwachten Ordner zu erstelle
    * **Stage-Dateien mit Zeitüberschreitung bei Einschränkung löschen:** Wenn diese Option aktiviert ist, wird der Mechanismus **Zeitüberschreitung für Stage-Dateien nach** nur bei aktivierten Einschränkungen für den überwachten Ordner aktiviert.
    * **Überprüfen des Eingabeordners alle:** Geben Sie das Intervall in Sekunden an, innerhalb dessen der überwachte Ordner auf Eingaben überprüft wird. Außer wenn die Einstellung „Einschränken“ aktiviert ist, muss das Abfrageintervall länger sein als die Verarbeitungsdauer für einen durchschnittlichen Auftrag. Anderenfalls könnte es zu einer Überlastung des Systems kommen. Der Wert für den Intervall muss größer als oder gleich eins sein.
    * **Muster für auszuschließende Dateien:** Geben Sie eine durch Semikolon (;) getrennte Liste von Mustern an, die von einem überwachten Ordner verwendet wird, um zu ermitteln, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Alle Dateien oder Ordner, die diesem angegebenen Muster entsprechen, werden nicht für die Verarbeitung überprüft. Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
-   * **Muster für einzuschließende Dateien:** Geben Sie eine durch Semikolon (;) getrennte Liste von Mustern an, die vom überwachten Ordner verwendet wird, um zu ermitteln, welche Ordner und Dateien überprüft und aufgenommen werden sollen. Beispiel: Wenn das Muster für einzuschließende Dateien &quot;input&amp;ast;&quot;lautet, alle Dateien und Ordner, die mit &quot;input&amp;ast;&quot; übereinstimmen; abgeholt werden. Der Standardwert ist &amp;ast; und zeigt alle Dateien und Ordner an. Weitere Informationen zu Dateimustern finden Sie unter [Über Dateimuster](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
+   * **Muster für einzuschließende Dateien:** Geben Sie eine durch Semikolon (;) getrennte Liste von Mustern an, die vom überwachten Ordner verwendet wird, um zu ermitteln, welche Ordner und Dateien überprüft und aufgenommen werden sollen. Beispiel: Wenn das Muster für einzuschließende Dateien &quot;input&amp;ast;&quot;lautet, werden alle Dateien und Ordner angezeigt, die mit &quot;input&amp;ast&quot;übereinstimmen. abgeholt werden. Der Standardwert ist &amp;ast; und zeigt alle Dateien und Ordner an. Weitere Informationen zu Dateimustern finden Sie unter [Über Dateimuster](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
    * **Wartezeit:** Geben Sie die Zeit in Millisekunden an, die gewartet wird, bevor ein Ordner oder eine Datei nach der Erstellung überprüft wird. Wenn die Wartezeit beispielsweise 3.600.000 Millisekunden (eine Stunde) beträgt und die Datei vor einer Minute erstellt wurde, wird diese Datei nach Ablauf von mindestens 59 Minuten abgerufen. Der Standardwert ist 0.
 
-      Diese Einstellung ist nützlich, um sicherzustellen, dass der gesamte Inhalt einer Datei oder eines Ordners in den Eingabeordner kopiert wurde. Wenn Sie beispielsweise eine große Datei verarbeiten müssen und der Download der Datei zehn Minuten dauert, setzen Sie die Wartezeit auf 10&amp;ast;60&amp;ast;1000 Millisekunden. Dieses Intervall verhindert, dass der überwachte Ordner die Datei bereits überprüft, wenn sie noch keine 10 Minuten alt ist.
+      Diese Einstellung ist nützlich, um sicherzustellen, dass der gesamte Inhalt einer Datei oder eines Ordners in den Eingabeordner kopiert wurde. Wenn Sie beispielsweise eine große Datei verarbeiten müssen und das Herunterladen der Datei zehn Minuten dauert, legen Sie die Wartezeit auf 10&amp;ast;60 &amp;ast;1000 Millisekunden fest. Dieses Intervall verhindert, dass der überwachte Ordner die Datei bereits überprüft, wenn sie noch keine 10 Minuten alt ist.
 
    * **Ergebnisse löschen, die älter sind als:** Geben Sie die Anzahl der Tage an, nach denen die Dateien und Ordner gelöscht werden, die älter als der angegebene Wert sind. Diese Einstellung hilft dafür zu sorgen, dass der Ergebnisordner nicht voll wird. Ein Wert von „-1“ Tage bedeutet, dass der Ergebnisordner nie gelöscht wird. Der Standardwert ist -1.
    * **Ergebnis-Ordnername:** Geben Sie den Namen des Ordners ein, um die Ergebnisse zu speichern. Wenn die Ergebnisse nicht in diesem Ordner angezeigt werden, überprüfen Sie den Fehlerordner. Schreibgeschützte Dateien werden nicht verarbeitet und im Fehlerordner gespeichert. Sie können einen absoluten oder relativen Pfad mit folgendem Dateimuster verwenden:
@@ -109,7 +108,7 @@ Führen Sie die folgenden Schritte aus, um einen überwachten Ordner zu erstelle
    * **throttleOn:** Wenn diese Option aktiviert ist, wird die Anzahl der Aufträge für den überwachten Ordner begrenzt, die AEM Forms zu jeder Zeit verarbeiten kann. Der Wert für die Stapelgröße bestimmt die maximale Anzahl an Aufträgen. Weitere Informationen finden Sie unter [Einschränken](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-throttling).
    * **Vorhandene Dateien mit ähnlichem Namen überschreiben:** Bei Festlegung auf „True“ werden Dateien im Ergebnisordner und im Aufbewahrungsordner überschrieben. Bei Festlegung auf „False“ wird an die Namen von Dateien und Ordnern ein numerisches Indexsuffix angehängt. Der Standardwert ist „False“.
    * **Dateien bei Fehler beibehalten:** Bei Festlegung auf „True“ bleiben Eingabedateien im Falle eines Fehlers erhalten. Der Standardwert lautet true.
-   * **Dateien mit Muster einbeziehen:** Geben Sie eine durch Semikolon (;) getrennte Liste von Mustern an, die vom überwachten Ordner verwendet wird, um zu ermitteln, welche Ordner und Dateien überprüft und aufgenommen werden sollen. Wenn beispielsweise das Muster für einzuschließende Dateien eingegeben wird, werden alle Dateien und Ordner aufgenommen, die der Eingabe entsprechen. Weitere Informationen finden Sie in der [Administration-Hilfe](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md).
+   * **Dateien mit Muster einbeziehen:** Geben Sie eine durch Semikolon (;) getrennte Liste von Mustern an, die vom überwachten Ordner verwendet wird, um zu ermitteln, welche Ordner und Dateien überprüft und aufgenommen werden sollen. Wenn beispielsweise das Muster für einzuschließende Dateien eingegeben wird, werden alle Dateien und Ordner aufgenommen, die mit der Eingabe übereinstimmen. Weitere Informationen finden Sie in der [Administration-Hilfe](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md).
    * **Überwachten Ordner asynchron aufrufen:** Gibt den Aufruftyp als „asynchron“ oder „synchron“ an. Der Standardwert ist „asynchron“. „Asynchron“ wird für langlebige Prozesse empfohlen, während „synchron“ für transiente und kurzlebige Prozesse empfohlen wird.
    * **Überwachten Ordner aktivieren:** Wenn diese Option aktiviert ist, wird der überwachte Ordner aktiviert. Der Standardwert ist „true“.
 
@@ -123,4 +122,3 @@ Zusätzlich zum Namen des überwachten Ordners können Sie alle Eigenschaften ei
 1. Tippen Sie auf **Werkzeuge** > **Formulare** > **Überwachten Ordner konfigurieren.**. Eine Liste der bereits konfigurierten überwachten Ordner wird angezeigt.
 1. Wählen Sie auf der linken Seite des Bildschirms des überwachten Ordners den überwachten Ordner aus und tippen Sie auf **Bearbeiten.** Eine Liste mit den Feldern, die erforderlich sind, um den überwachten Ordner zu erstellen, wird angezeigt. Die Felder, die auf der Registerkarte **Grundeinstellungen** aufgeführt sind, sind Pflichtfelder. Die Registerkarte „Erweitert“ enthält weitere Felder. Die meisten dieser Felder enthalten einen Standardwert. Sie können diese Eigenschaften entsprechend Ihren Anforderungen ändern.
 1. Wenn Sie die Eigenschaften geändert haben, tippen Sie auf **Aktualisierung**. Die geänderten Eigenschaften werden gespeichert.
-
