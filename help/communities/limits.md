@@ -1,8 +1,8 @@
 ---
-title: Beitragsbeschränkungen für Mitglieder
-seo-title: Beitragsbeschränkungen für Mitglieder
-description: Mit der Funktion "Beitragsbeschränkungen"können Sie die Beiträge zum Schutz vor Spam einschränken
-seo-description: Mit der Funktion "Beitragsbeschränkungen"können Sie die Beiträge zum Schutz vor Spam einschränken
+title: Beitragsgrenzen der Mitgliedstaaten
+seo-title: Beitragsgrenzen der Mitgliedstaaten
+description: Mit der Beitragsbegrenzungsfunktion können Sie die Beiträge zum Schutz vor Spam einschränken
+seo-description: Mit der Beitragsbegrenzungsfunktion können Sie die Beiträge zum Schutz vor Spam einschränken
 uuid: 99b2a855-3f0d-41a0-9572-517a7f29af9f
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,80 +10,79 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d00a8eb2-47ce-425a-a312-f043f82912be
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '449'
 ht-degree: 2%
 
 ---
-
 
 # Mitgliederbeitragsbeschränkungen {#member-contribution-limits}
 
 ## Überblick {#overview}
 
-Die Beitragsbegrenzung bietet die Möglichkeit, die Beiträge von Community-Mitgliedern zu beschränken, um gegen Spam zu schützen.
+Die Beitragsbegrenzungsfunktion bietet die Möglichkeit, die Beiträge von Community-Mitgliedern zu beschränken, um sie vor Spam zu schützen.
 
-Wenn ein Mitglied eingeschränkt ist, führt jeder Beitrag, der die zulässige Anzahl von Beiträgen überschreitet, zu einer Warnung, dass die Obergrenze überschritten wurde und der Beitrag abgelehnt wird. Das Community-Mitglied kann dann zum Community Message Center gehen und einen Community Manager kontaktieren, der die Beschränkungen gegebenenfalls entfernen kann.
+Wenn ein Mitglied eingeschränkt ist, führen Beiträge, die die zulässige Anzahl von Beiträgen überschreiten, zu einem Warnhinweis, dass die Beschränkung überschritten wurde und der Beitrag abgelehnt wird. Das Community-Mitglied kann dann zum Community-Message-Center gehen und sich an einen Community-Manager wenden, der die Einschränkungen ggf. entfernen kann.
 
-Beitragsbeschränkungen können einzeln über die [Mitgliederkonsole](members.md) aktiviert und/oder so konfiguriert werden, dass sie automatisch aktiviert werden, wenn Site-Besucher neue Mitglieder werden.
+Beitragsbeschränkungen können einzeln über die [Mitgliederkonsole](members.md) aktiviert und/oder so konfiguriert werden, dass sie automatisch aktiviert werden, wenn Site-Besucher zu neuen Mitgliedern werden.
 
-Mithilfe der Mitgliederkonsole können Beitragsbeschränkungen für ein Mitglied von einem Community Manager jederzeit proaktiv entfernt oder reaktiv entfernt werden, wenn ein Mitglied eine Nachricht an einen Community Manager sendet, der eine solche Anforderung sendet.
+Mithilfe der Mitgliederkonsole können Beitragsbeschränkungen für ein Mitglied jederzeit von einem Community-Manager proaktiv entfernt oder reaktiv entfernt werden, wenn ein Mitglied eine Nachricht an einen Community-Manager sendet, der eine solche Anfrage sendet.
 
-## AEM Communities Benutzergenerierte Inhaltsbeitragsbeschränkungen Konfiguration {#aem-communities-user-generated-content-contribution-limits-configuration}
+## AEM Communities Benutzergenerierte Inhaltsbeiträge - Konfiguration {#aem-communities-user-generated-content-contribution-limits-configuration}
 
 Diese OSGi-Konfiguration:
 
-* Definiert die Merkmale der Beitragsgrenzen (Anzahl der Stellen innerhalb eines Zeitraums).
-* Identifiziert, wer vom Mitglied benachrichtigt werden kann, wenn der Grenzwert erreicht wurde.
+* Definiert die Merkmale der Beitragslimits (Anzahl der Stellen innerhalb eines Zeitraums).
+* Identifiziert, wer vom Mitglied benachrichtigt werden kann, wenn die Grenze erreicht wurde.
 * Identifiziert Domänen, die nie eingeschränkt werden müssen.
 
 So erreichen Sie diese OSGi-Konfiguration:
 
 * Im primären Herausgeber:
 * Melden Sie sich mit Administratorrechten an.
-* Rufen Sie die [Webkonsole](../../help/sites-deploying/configuring-osgi.md) auf.
+* Rufen Sie die [Web-Konsole](../../help/sites-deploying/configuring-osgi.md) auf.
 
    * Beispiel: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* Suchen Sie nach `AEM Communities User Generated Content Contribution Limits Configuration`.
+* Suchen Sie `AEM Communities User Generated Content Contribution Limits Configuration`.
 * Wählen Sie das Bearbeitungssymbol aus.
 
 ![configure-limits](assets/configure-limits.png)
 
-* **[!UICONTROL Automatische Anwendung von UGC-Beitragsbeschränkungen]**
+* **[!UICONTROL Automatische Anwendung von UGC-Beitragslimits]**
 
-   Wenn diese Option aktiviert ist, legen Sie bei der Registrierung als Community-Mitglieder automatisch Beitragsbeschränkungen für Benutzer fest. Dies spiegelt sich im Profil des Community-Mitglieds wider und kann in der [members-Konsole](members.md) aktiviert/deaktiviert werden. Neue Mitglieder mit einer E-Mail-Adresse aus einer Zulassungsliste von Domänen sind nie eingeschränkt.
+   Wenn diese Option aktiviert ist, legen Sie Benutzern automatisch Beitragsbeschränkungen fest, wenn sie sich als Community-Mitglieder registrieren. Dies spiegelt sich im Profil des Community-Mitglieds wider und kann über die [Mitgliederkonsole](members.md) aktiviert/deaktiviert werden. Neue Mitglieder mit einer E-Mail-Adresse aus einer Zulassungsliste von Domänen werden nie eingeschränkt.
 
    Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL UGC-Grenze]**
+* **[!UICONTROL UGC-Limit]**
 
-   Höchstzahl der Beiträge.
+   Maximale Anzahl der Beiträge.
 
-   Der Standardwert ist 10 Beiträge.
+   Der Standardwert beträgt 10 Beiträge.
 
 * **[!UICONTROL UGC-Grenzfrequenz]**
 
-   Der Zeitraum, in dem die UGC-Grenze eingeschränkt wird.
+   Der Zeitraum, der die UGC-Grenze einschränkt.
 
    Der Standardwert ist 60 Minuten.
 
 * **[!UICONTROL Domänen]**
 
-   Eine Zulassungsliste-Liste einer oder mehrerer E-Mail-Domänen. Klicken Sie auf das Symbol +, um weitere Einträge zu erstellen.
+   Eine Zulassungsliste mit einer oder mehreren E-Mail-Domänen. Wählen Sie das Symbol + aus, um weitere Einträge vorzunehmen.
 
-   Benutzer mit E-Mail-Adressen in der Zulassungsliste der Domänen sind davon nicht betroffen, wenn die Beitragsbeschränkungen für UGC automatisch angewendet werden. Wenn beispielsweise die Domäne `mycompany.com` zur Liste der Domänen hinzugefügt wird, wird ein Mitglied mit der E-Mail-Adresse `me@mycompany.com` nie vom Posten ausgeschlossen.
+   Benutzer mit E-Mail-Adressen in der Zulassungsliste der Domänen sind nicht betroffen, wenn die UGC-Beitragsbeschränkungen automatisch angewendet werden. Wenn beispielsweise die Domäne `mycompany.com` zur Domain-Liste hinzugefügt wird, ist ein Mitglied mit der E-Mail-Adresse `me@mycompany.com` nie vom Posten ausgeschlossen.
 
-   Standard ist eine leere Zulassungsliste.
+   Der Standardwert ist eine leere Zulassungsliste.
 
 * **[!UICONTROL Messaging-Empfänger]**
 
-   Liste einer oder mehrerer autorisierbarer IDs von Mitgliedern, die die Beitragsbeschränkungen für Mitglieder ändern können. Klicken Sie auf das Symbol +, um weitere Einträge zu erstellen.
+   Liste mit einer oder mehreren autorisierbaren IDs von Mitgliedern, die die Beitragsbeschränkungen für Mitglieder ändern können. Wählen Sie das Symbol + aus, um weitere Einträge vorzunehmen.
 
-   Die Mitglieder dürfen nur dann mit bestimmten Mitgliedern Kontakt aufnehmen, wenn ihre Grenze erreicht ist.
+   Die Mitglieder können nur an bestimmte Mitglieder Kontakt aufnehmen, wenn ihre Grenze erreicht ist.
 
-   Standard sind keine Empfänger für Nachrichten.
+   Der Standardwert ist kein Nachrichtenempfänger.
 
-Hinweis: Die Standardkonfiguration ergibt eine Beschränkung von 10 Beiträgen innerhalb einer Stunde.
+Hinweis: Die Standardkonfiguration führt innerhalb eines Zeitraums von einer Stunde zu maximal 10 Beiträgen.
