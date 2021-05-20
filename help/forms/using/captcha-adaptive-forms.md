@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 7a3f54d90769708344e6751756b2a12ac6c962d7
+feature: Adaptive Formulare
+exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 43%
 
 ---
-
 
 # Verwenden von CAPTCHA in adaptiven Formularen{#using-captcha-in-adaptive-forms}
 
@@ -45,8 +44,8 @@ Implementieren des reCAPTCHA-Diensts in AEM Forms:
 1. Rufen Sie ein [reCAPTCHA-API-Schlüsselpaar](https://www.google.com/recaptcha/admin) von Google ab. Er enthält einen Site-Schlüssel und einen geheimen Schlüssel.
 1. Erstellen Sie einen Konfigurationscontainer für Cloud-Dienste.
 
-   1. Gehen Sie zu **[!UICONTROL Tools > Allgemein > Konfigurationsbrowser]**.
-      * Weitere Informationen finden Sie in der Dokumentation zum [Konfigurationsbrowser](/help/sites-administering/configurations.md).
+   1. Navigieren Sie zu **[!UICONTROL Tools > Allgemein > Konfigurations-Browser]**.
+      * Weitere Informationen finden Sie in der Dokumentation zum [Konfigurations-Browser](/help/sites-administering/configurations.md) .
    1. Gehen Sie folgendermaßen vor, um den globalen Ordner für Cloud-Konfigurationen zu aktivieren, oder überspringen Sie diesen Schritt, um einen anderen Ordner für Cloud-Dienstkonfigurationen zu erstellen und zu konfigurieren.
 
       1. Wählen Sie im Konfigurationsbrowser  den Ordner **[!UICONTROL global]** und tippen Sie auf **[!UICONTROL Eigenschaften]**.
@@ -55,14 +54,14 @@ Implementieren des reCAPTCHA-Diensts in AEM Forms:
       1. Tippen Sie auf **[!UICONTROL Speichern und schließen]**, um die Konfiguration zu speichern und das Dialogfeld zu schließen.
    1. Tippen Sie im Konfigurationsbrowser auf **[!UICONTROL Erstellen]**.
    1. Legen Sie im Dialogfeld Konfiguration erstellen einen Titel für den Ordner fest und aktivieren Sie **[!UICONTROL Cloud-Konfigurationen]**.
-   1. Tippen Sie auf **[!UICONTROL Erstellen]**, um den Ordner zu erstellen, der für Cloud-Dienstkonfigurationen aktiviert ist.
+   1. Tippen Sie auf **[!UICONTROL Erstellen]** , um den Ordner zu erstellen, der für Cloud Service-Konfigurationen aktiviert ist.
 
 
 1. Konfigurieren Sie den Cloud-Dienst für reCAPTCHA.
 
-   1. Wechseln Sie in Ihrer AEM Autoreninstanz zu ![tools-1](assets/tools-1.png) > **Cloud Services**.
+   1. Wechseln Sie in Ihrer AEM-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **Cloud Services**.
    1. Tippen Sie auf **[!UICONTROL reCAPTCHA]**. Die Konfigurationsseite wird geöffnet. Wählen Sie den im vorherigen Schritt erstellten Konfigurationscontainer und tippen Sie auf **[!UICONTROL Erstellen]**.
-   1. Geben Sie den Namen, den Site-Schlüssel und den geheimen Schlüssel für den reCAPTCHA-Dienst an und tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud-Dienstkonfiguration zu erstellen.
+   1. Geben Sie den Namen, den Site-Schlüssel und den geheimen Schlüssel für den reCAPTCHA-Dienst an und tippen Sie auf **[!UICONTROL Erstellen]** , um die Cloud-Service-Konfiguration zu erstellen.
    1. Wählen Sie im Dialogfeld „Komponente bearbeiten“ und geben Sie die Website sowie den Site- und geheimen Schlüssel an, den Sie in Schritt 1 erhalten haben. Tippen Sie auf **Einstellungen speichern** und dann auf **OK**, um die Konfiguration abzuschließen.
 
    Sobald der reCAPTCHA-Dienst konfiguriert ist, kann er in adaptiven Formularen verwendet werden. Weitere Informationen finden Sie unter [Verwenden von CAPTCHA in adaptiven Formularen](#using-captcha).
@@ -89,7 +88,7 @@ Verwenden von CAPTCHA in adaptiven Formularen:
 
 1. Wählen Sie die hinzugefügte Captcha-Komponente aus und tippen Sie auf ![cmppr](assets/cmppr.png), um ihre Eigenschaften zu bearbeiten.
 1. Geben Sie einen Titel für das CAPTCHA-Widget an. Der Standardwert ist **Captcha**. Wählen Sie **Titel ausblenden**, wenn der Titel nicht angezeigt werden soll.
-1. Wählen Sie in der Dropdownliste **Captcha-Dienst** **reCaptcha** aus, um den reCAPTCHA-Dienst zu aktivieren, wenn Sie ihn wie unter [ReCAPTCHA-Dienst von Google](#google-recaptcha) beschrieben konfiguriert haben. Wählen Sie eine Konfiguration aus der Dropdown-Liste „Einstellungen“. Wählen Sie außerdem als Größe **Normal** oder **Kompakt** für das reCAPTCHA-Widget aus.
+1. Wählen Sie in der Dropdown-Liste **Captcha service** **reCaptcha** aus, um den reCAPTCHA-Dienst zu aktivieren, wenn Sie ihn wie in [reCAPTCHA-Dienst von Google](#google-recaptcha) beschrieben konfiguriert haben. Wählen Sie eine Konfiguration aus der Dropdown-Liste „Einstellungen“. Wählen Sie außerdem als Größe **Normal** oder **Kompakt** für das reCAPTCHA-Widget aus.
 
    >[!NOTE]
    >
@@ -99,39 +98,39 @@ Verwenden von CAPTCHA in adaptiven Formularen:
 
 Der reCAPTCHA-Dienst wird im adaptiven Formular aktiviert. Sie können das Formular in der Vorschau anzeigen und die CAPTCHA-Funktionsweise sehen.
 
-### CAPTCHA-Komponente basierend auf Regeln ein- oder ausblenden{#show-hide-captcha}
+### CAPTCHA-Komponente basierend auf Regeln anzeigen oder ausblenden {#show-hide-captcha}
 
-Sie können die CAPTCHA-Komponente auf Grundlage von Regeln, die Sie auf eine Komponente in einem adaptiven Formular anwenden, ein- oder ausblenden. Tippen Sie auf die Komponente, wählen Sie ![Regeln bearbeiten](assets/edit-rules-icon.svg) und tippen Sie auf **[!UICONTROL Erstellen]**, um eine Regel zu erstellen. Weitere Informationen zum Erstellen von Regeln finden Sie unter [Regel-Editor](rule-editor.md).
+Sie können festlegen, dass die CAPTCHA-Komponente basierend auf Regeln, die Sie auf eine Komponente in einem adaptiven Formular anwenden, ein- oder ausgeblendet wird. Tippen Sie auf die Komponente, wählen Sie ![Bearbeitungsregeln](assets/edit-rules-icon.svg) aus und tippen Sie auf **[!UICONTROL Erstellen]**, um eine Regel zu erstellen. Weitere Informationen zum Erstellen von Regeln finden Sie unter [Regel-Editor](rule-editor.md).
 
-Beispielsweise darf die CAPTCHA-Komponente nur dann in einem adaptiven Formular angezeigt werden, wenn das Feld &quot;Währungswert&quot;im Formular einen Wert von mehr als 25000 aufweist.
+Beispielsweise darf die CAPTCHA-Komponente nur dann in einem adaptiven Formular angezeigt werden, wenn das Feld Währungswert im Formular einen Wert von mehr als 25000 aufweist.
 
-Tippen Sie im Formular auf das Feld **[!UICONTROL Währungswert]** und erstellen Sie die folgenden Regeln:
+Tippen Sie auf das Feld **[!UICONTROL Währungswert]** im Formular und erstellen Sie die folgenden Regeln:
 
 ![Regeln ein- oder ausblenden](assets/rules-show-hide-captcha.png)
 
 ### CAPTCHA überprüfen {#validate-captcha}
 
-Sie können CAPTCHA in einem adaptiven Formular validieren, wenn Sie das Formular senden oder die CAPTCHA-Überprüfung auf Benutzeraktionen und -bedingungen basieren.
+Sie können CAPTCHA in einem adaptiven Formular validieren, wenn Sie das Formular senden oder die CAPTCHA-Validierung auf Benutzeraktionen und -bedingungen basieren.
 
-#### CAPTCHA bei Formularübermittlung überprüfen {#validation-form-submission}
+#### CAPTCHA bei Formularübermittlung validieren {#validation-form-submission}
 
-So validieren Sie ein CAPTCHA beim Senden eines adaptiven Formulars automatisch
+So validieren Sie ein CAPTCHA automatisch, wenn Sie ein adaptives Formular senden:
 
-1. Tippen Sie auf die CAPTCHA-Komponente und wählen Sie ![cmppr](assets/configure-icon.svg), um die Komponenteneigenschaften Ansicht.
-1. Wählen Sie im Abschnitt **[!UICONTROL CAPTCHA überprüfen]** **[!UICONTROL CAPTCHA bei Formularübermittlung überprüfen]**.
+1. Tippen Sie auf die CAPTCHA-Komponente und wählen Sie ![cmppr](assets/configure-icon.svg) aus, um die Komponenteneigenschaften anzuzeigen.
+1. Wählen Sie im Abschnitt **[!UICONTROL CAPTCHA]** überprüfen **[!UICONTROL CAPTCHA bei Formularübermittlung überprüfen]** aus.
 1. Tippen Sie auf ![Fertig](assets/save_icon.svg), um die Komponenteneigenschaften zu speichern.
 
-#### CAPTCHA bei Benutzeraktionen und -bedingungen {#validate-captcha-user-action} validieren
+#### CAPTCHA für Benutzeraktionen und -bedingungen validieren {#validate-captcha-user-action}
 
 So validieren Sie ein CAPTCHA basierend auf Bedingungen und Benutzeraktionen:
 
-1. Tippen Sie auf die CAPTCHA-Komponente und wählen Sie ![cmppr](assets/configure-icon.svg), um die Komponenteneigenschaften Ansicht.
-1. Wählen Sie im Abschnitt **[!UICONTROL CAPTCHA überprüfen]** **[!UICONTROL CAPTCHA für eine Benutzeraktion]** überprüfen.
+1. Tippen Sie auf die CAPTCHA-Komponente und wählen Sie ![cmppr](assets/configure-icon.svg) aus, um die Komponenteneigenschaften anzuzeigen.
+1. Wählen Sie im Abschnitt **[!UICONTROL CAPTCHA]** überprüfen **[!UICONTROL CAPTCHA für eine Benutzeraktion überprüfen]** aus.
 1. Tippen Sie auf ![Fertig](assets/save_icon.svg), um die Komponenteneigenschaften zu speichern.
 
-[!DNL Experience Manager Forms] stellt  `ValidateCAPTCHA` API zur Validierung von CAPTCHA unter Verwendung vordefinierter Bedingungen bereit. Sie können die API mit einer benutzerdefinierten Übermittlungsaktion oder durch Definieren von Regeln für Komponenten in einem adaptiven Formular aufrufen.
+[!DNL Experience Manager Forms] stellt  `ValidateCAPTCHA` API zur Validierung von CAPTCHA mithilfe vordefinierter Bedingungen bereit. Sie können die API mithilfe einer benutzerdefinierten Übermittlungsaktion oder durch Definieren von Regeln für Komponenten in einem adaptiven Formular aufrufen.
 
-Im Folgenden finden Sie ein Beispiel für eine `ValidateCAPTCHA`-API zur Validierung von CAPTCHA unter Verwendung vordefinierter Bedingungen:
+Im Folgenden finden Sie ein Beispiel für eine `ValidateCAPTCHA`-API zur Validierung von CAPTCHA mithilfe vordefinierter Bedingungen:
 
 ```javascript
 if (slingRequest.getParameter("numericbox1614079614831").length() >= 5) {
@@ -145,31 +144,31 @@ if (slingRequest.getParameter("numericbox1614079614831").length() >= 5) {
     }
 ```
 
-Das Beispiel zeigt an, dass die API das CAPTCHA im Formular nur dann validiert, wenn die Anzahl der Stellen im numerischen Feld, die der Benutzer beim Ausfüllen des Formulars angegeben hat, größer als 5 ist.`ValidateCAPTCHA`
+Das Beispiel zeigt, dass die API `ValidateCAPTCHA` das CAPTCHA im Formular nur dann validiert, wenn die Anzahl der Ziffern im numerischen Feld, das vom Benutzer beim Ausfüllen des Formulars angegeben wird, größer als 5 ist.
 
-**Option 1: Verwenden Sie die  [!DNL Experience Manager Forms] ValidateCAPTCHA-API, um CAPTCHA mithilfe einer benutzerdefinierten Übermittlungsaktion zu validieren**
+**Option 1: Verwenden Sie die  [!DNL Experience Manager Forms] ValidateCAPTCHA-API, um CAPTCHA mithilfe einer benutzerdefinierten Übermittlungsaktion zu validieren.**
 
-Führen Sie die folgenden Schritte aus, um die `ValidateCAPTCHA`-API zur Validierung von CAPTCHA mit einer benutzerdefinierten Übermittlungsaktion zu verwenden:
+Führen Sie die folgenden Schritte aus, um die `ValidateCAPTCHA`-API zur Validierung von CAPTCHA mithilfe einer benutzerdefinierten Übermittlungsaktion zu verwenden:
 
-1. hinzufügen Sie das Skript mit der API `ValidateCAPTCHA` in eine benutzerdefinierte Übermittlungsaktion. Weitere Informationen zu benutzerdefinierten Übermittlungsaktionen finden Sie unter [Erstellen einer benutzerdefinierten Übermittlungsaktion für adaptives Forms](custom-submit-action-form.md).
-1. Wählen Sie den Namen der benutzerdefinierten Übermittlungsaktion aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]** in den **[!UICONTROL Übermittlungseigenschaften]** eines adaptiven Formulars.
-1. Tippen Sie auf **[!UICONTROL Senden]**. Das CAPTCHA wird basierend auf den Bedingungen validiert, die in der API `ValidateCAPTCHA` der benutzerdefinierten Übermittlungsaktion definiert sind.
+1. Fügen Sie das Skript hinzu, das die `ValidateCAPTCHA`-API zur benutzerdefinierten Übermittlungsaktion enthält. Weitere Informationen zu benutzerdefinierten Übermittlungsaktionen finden Sie unter [Erstellen einer benutzerdefinierten Übermittlungsaktion für adaptive Forms](custom-submit-action-form.md).
+1. Wählen Sie den Namen der benutzerdefinierten Übermittlungsaktion aus der Dropdownliste **[!UICONTROL Übermittlungsaktion]** in den Eigenschaften **[!UICONTROL Übermittlung]** eines adaptiven Formulars aus.
+1. Tippen Sie auf **[!UICONTROL Submit]**. Das CAPTCHA wird anhand der in der `ValidateCAPTCHA`-API der benutzerdefinierten Übermittlungsaktion definierten Bedingungen validiert.
 
-**Option 2: Verwenden Sie die  [!DNL Experience Manager Forms] ValidateCAPTCHA-API, um CAPTCHA vor dem Senden des Formulars bei einer Benutzeraktion zu validieren**
+**Option 2: Verwenden Sie die  [!DNL Experience Manager Forms] ValidateCAPTCHA-API, um CAPTCHA bei einer Benutzeraktion zu validieren, bevor Sie das Formular senden**
 
-Sie können die API auch aufrufen, indem Sie Regeln für eine Komponente in einem adaptiven Formular anwenden.`ValidateCAPTCHA`
+Sie können auch die `ValidateCAPTCHA`-API aufrufen, indem Sie Regeln auf eine Komponente in einem adaptiven Formular anwenden.
 
-Sie fügen beispielsweise die Schaltfläche **[!UICONTROL CAPTCHA überprüfen]** in einem adaptiven Formular hinzu und erstellen eine Regel, um einen Dienst beim Klicken auf eine Schaltfläche aufzurufen.
+Sie fügen beispielsweise die Schaltfläche **[!UICONTROL CAPTCHA]** in einem adaptiven Formular hinzu und erstellen eine Regel, um einen Dienst durch Klicken auf eine Schaltfläche aufzurufen.
 
-Die folgende Abbildung zeigt, wie Sie einen Dienst beim Klicken auf eine Schaltfläche **[!UICONTROL CAPTCHA überprüfen]** aufrufen können:
+Die folgende Abbildung zeigt, wie Sie einen Dienst beim Klicken auf eine **[!UICONTROL CAPTCHA überprüfen]**-Schaltfläche aufrufen können:
 
 ![CAPTCHA überprüfen](assets/captcha-validation1.gif)
 
-Sie können das benutzerdefinierte Servlet mit der API `ValidateCAPTCHA` mithilfe des Regeleditors aufrufen und die Senden-Schaltfläche des adaptiven Formulars basierend auf dem Überprüfungsergebnis aktivieren oder deaktivieren.
+Sie können das benutzerdefinierte Servlet, das die `ValidateCAPTCHA`-API enthält, mithilfe des Regeleditors aufrufen und die Senden-Schaltfläche des adaptiven Formulars basierend auf dem Überprüfungsergebnis aktivieren oder deaktivieren.
 
-Ebenso können Sie mithilfe des Regeleditors eine benutzerdefinierte Methode zur Validierung von CAPTCHA in ein adaptives Formular einschließen.
+Ebenso können Sie mithilfe des Regeleditors eine benutzerdefinierte Methode zur Validierung von CAPTCHA in ein adaptives Formular einfügen.
 
-### hinzufügen benutzerdefinierten CAPTCHA-Dienste {#add-custom-captcha-service}
+### Hinzufügen benutzerdefinierter CAPTCHA-Dienste {#add-custom-captcha-service}
 
 [!DNL Experience Manager Forms] stellt reCAPTCHA als CAPTCHA-Dienst bereit. Sie können jedoch einen benutzerdefinierten Dienst hinzufügen, der in der Dropdown-Liste **[!UICONTROL CAPTCHA-Dienst]** angezeigt wird.
 
@@ -203,6 +202,6 @@ public interface GuideCaptchaValidator {
 }
 ```
 
-`captchaPropertyNodePath` verweist auf den Ressourcenpfad der CAPTCHA-Komponente im Sling-Repository. Verwenden Sie diese Eigenschaft, um spezifische Details zur CAPTCHA-Komponente einzuschließen. Beispielsweise enthält `captchaPropertyNodePath` Informationen zur reCAPTCHA-Cloud-Konfiguration, die für die CAPTCHA-Komponente konfiguriert ist. Die Cloud-Konfigurationsinformationen enthalten die Einstellungen **[!UICONTROL Site-Schlüssel]** und **[!UICONTROL Geheimschlüssel]** für die Implementierung des reCAPTCHA-Dienstes.
+`captchaPropertyNodePath` bezieht sich auf den Ressourcenpfad der CAPTCHA-Komponente im Sling-Repository. Verwenden Sie diese Eigenschaft, um Details zur CAPTCHA-Komponente einzuschließen. `captchaPropertyNodePath` enthält beispielsweise Informationen für die in der CAPTCHA-Komponente konfigurierte reCAPTCHA-Cloud-Konfiguration. Die Cloud-Konfigurationsinformationen enthalten die Einstellungen **[!UICONTROL Site-Schlüssel]** und **[!UICONTROL Geheimer Schlüssel]** für die Implementierung des reCAPTCHA-Dienstes.
 
-`userResponseToken` bezieht sich auf die  `g_recaptcha_response` Daten, die nach dem Lösen eines CAPTCHA in einem Formular generiert werden.
+`userResponseToken` bezieht sich auf die  `g_recaptcha_response` , die nach dem Lösen eines CAPTCHA in einem Formular generiert wird.
