@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
-feature: Viewers
+feature: Viewer
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1102'
 ht-degree: 90%
 
 ---
-
 
 # Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups {#using-quickviews-to-create-custom-pop-ups}
 
@@ -223,7 +222,7 @@ Der Handler benötigt außerdem einen Funktionsaufruf, damit die Schnellansicht 
    * Interaktiver Bild-Viewer: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html?lang=de)
    * Interaktiver Video-Viewer: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html?lang=de)
 
-1. Verwenden Sie den folgenden Code, um das in den vorherigen Schritten beschriebene Popup an den Viewer anzuhängen:
+1. Verwenden Sie den folgenden Code, um das in den vorherigen Schritten beschriebene Popup-Fenster an den Viewer anzuhängen:
 
    ```xml
    "initComplete":function() {
@@ -271,4 +270,3 @@ Dieses Beispiel verwendet den interaktiven Bild-Viewer.
    `s7interactiveimageviewer.init()`
 
    Nachdem Sie den Viewer in Ihre Host-Seite eingebettet haben, prüfen Sie, ob die Viewer-Instanz erstellt wird und die Handler geladen werden, bevor der Viewer mit `init()` aufgerufen wird.
-
