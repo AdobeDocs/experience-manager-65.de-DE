@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8f8367fe-a8e9-46ee-a980-1633be02932d
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 0f8e1e46-4fc5-43f6-abb1-19a3f20e1f1d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 98%
 
 ---
-
 
 # Konfigurieren von Acrobat Reader DC Extensions für die Datenerfassung {#configuring-acrobat-reader-dc-extensions-for-data-capture}
 
@@ -40,4 +39,3 @@ Für die Datenerfassung ist es erforderlich, dass eine Benutzerrolle für den Zu
 1. Klicken Sie auf der Registerkarte „Rollenbenutzer/-gruppen“ auf „Benutzer/Gruppen suchen“.
 1. Klicken Sie im Bildschirm „Benutzer/Gruppen suchen“ auf „Suchen“, wählen Sie die Benutzer aus, die die Datenerfassungsbenutzerrolle benötigen, und klicken Sie auf „OK“.
 1. Klicken Sie im Bildschirm „Rolle bearbeiten“ auf „Speichern“.
-
