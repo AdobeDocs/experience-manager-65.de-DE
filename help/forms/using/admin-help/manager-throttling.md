@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9a8b4e3a-f416-4dc6-a90a-9018df5c844e
-translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+exl-id: 1f765de2-1362-4318-9302-c5036e6fa7d6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 96%
 
 ---
-
 
 # Work Manager und Einschränkungen{#work-manager-and-throttling}
 
@@ -87,7 +86,7 @@ Sie können die Einschränkungen für Work Manager so konfigurieren, dass Arbeit
 
 **Java-Optionen zu WebLogic hinzufügen**
 
-1. Beginn Sie WebLogic Administration Console, indem Sie in einen Webbrowser `https://[host name]:[port]/console` eingeben.
+1. Starten Sie WebLogic Administration Console, indem Sie in einen Webbrowser `https://[host name]:[port]/console` eingeben.
 1. Geben Sie den von Ihnen erstellten Benutzernamen und das Kennwort für die WebLogic-Serverdomäne ein und klicken Sie unter „Change Center“ auf „Log“ und dann auf „Lock &amp; Edit“.
 1. Klicken Sie unter „Domain Structure“ auf Environment> Servers und anschließend im rechten Bereich auf den Namen des verwalteten Servers.
 1. Klicken Sie im nächsten Bildschirm auf die Registerkarten Configuration > Server Start.
@@ -106,4 +105,3 @@ Sie können die Einschränkungen für Work Manager so konfigurieren, dass Arbeit
 1. Klicken Sie unter „Additional Properties“ auf Java Virtual Machine.
 1. Geben Sie in das Feld „Generic JVM Arguments“ die erforderlichen Argumente ein.
 1. Klicken Sie auf OK oder Apply und dann auf Save directly to the Master Configuration.
-
