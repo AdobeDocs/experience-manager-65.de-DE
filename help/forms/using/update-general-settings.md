@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 7fdb9fab-6bae-49b8-86b6-66138a2a6cd3
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: 3e74cda2-ba3e-4ee9-b7d0-76a804232199
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 85%
 
 ---
-
 
 # Aktualisieren von allgemeinen Einstellungen{#updating-general-settings}
 
@@ -26,7 +25,7 @@ Allgemeine Einstellungen des AEM Forms App können Sie die Einstellungen, z. B. 
 
 Wenn Sie die App mit dem AEM Forms-Server synchronisieren, werden alle Formulare und definierten Aufgaben auf Ihr mobiles Gerät heruntergeladen.
 
-Die im Lieferumfang enthaltene AEM Forms-App-Lösung lädt die mit den einzelnen Formularen verknüpften Anlagen nicht herunter, wenn die App synchronisiert wird.
+Die vordefinierte AEM Forms-App-Lösung lädt die mit den einzelnen Formularen verknüpften Anlagen nicht herunter, wenn die App synchronisiert wird.
 
 Ändern Sie auf der Registerkarte „Allgemein“ die Einstellungen für das Herunterladen von Anlagen, für den Offline-Modus, den Einstiegsbildschirm, die automatische Speicherung und die Synchronisierung. Sie können den [Startbildschirm](../../forms/using/home-screen.md) der App ändern.
 
@@ -58,8 +57,8 @@ Verfügbare Optionen:
 
 * **Default category**: Wählen Sie hier die Kategorie der Formulare aus, die auf dem Startbildschirm angezeigt wird. Wenn Sie „All“ auswählen, können Sie alle Formulare auf dem Startbildschirm sehen. Kategorien werden basierend auf den Formularen ausgefüllt, die in der App geladen werden. Formulare sind in der App je nach den Formulareinstellungen im AEM Forms-Server verfügbar.
 
-* **Autosave Frequency**: So legen Sie die Häufigkeit fest, mit der Ihre  [mobile App ](../../forms/using/autosave-data-app.md) Formulardaten speichert.
-* **Synchronisierungshäufigkeit**: So legen Sie die Häufigkeit fest, mit der die  [mobile App im Online-Modus mit dem AEM Forms-Server ](../../forms/using/sync-app.md) synchronisiert wird.
+* **Autosave Frequency**: So legen Sie fest, wie oft Ihre  [mobile App Formulardaten ](../../forms/using/autosave-data-app.md) speichert.
+* **Synchronisierungshäufigkeit**: So legen Sie fest, wie oft Ihre  [App im Online-Modus mit dem AEM Forms-Server ](../../forms/using/sync-app.md) synchronisiert wird.
    **Clear Local Data**: Löscht die Datenbank, einschließlich Einstellungen und lokaler Daten für alle Benutzer und Dateispeicher auf dem Gerät.
 
 >[!NOTE]
