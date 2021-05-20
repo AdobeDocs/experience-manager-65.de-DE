@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 9fcfd1c2c63d9a32f2d68f5b0c974bc5b5d22b40
+exl-id: 5cb906b6-6a3c-498c-94f5-27a9071ea934
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 62%
 
 ---
-
 
 # Erstellen eines neuen Anmeldungsbildschirms{#creating-a-new-login-screen}
 
@@ -24,7 +23,7 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
 
 ## Voraussetzung {#prerequisite}
 
-1. Melden Sie sich mit Administratorberechtigungen bei `/lc/crx/de` an.
+1. Melden Sie sich bei `/lc/crx/de` mit Administratorberechtigungen an.
 1. Führen Sie die folgenden Aktionen durch:
 
    1. Replizieren Sie die hierarchische Struktur: von `/libs/livecycle/core/content` bei `/apps/livecycle/core/content`.
@@ -37,7 +36,7 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
 
       in: `/apps/livecycle/core`.
 
-   1. Löschen Sie den Inhalt des Ordners `/apps/livecycle/core`.
+   1. Löschen Sie den Inhalt des Ordners `/apps/livecycle/core` .
 
 1. Führen Sie die folgenden Aktionen durch:
 
@@ -49,18 +48,18 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
 
 ### Hinzufügen eines neuen Gebietsschemas {#adding-a-new-locale}
 
-1. Kopieren Sie den Ordner `i18n`:
+1. Kopieren Sie den Ordner `i18n` :
 
    * von `/libs/livecycle/core/components/login`
    * in `/apps/livecycle/core/components/login`
 
-1. Löschen Sie alle Ordner innerhalb von `i18n`, mit Ausnahme von `en`.
+1. Löschen Sie alle Ordner in `i18n` mit Ausnahme eines Ordners, z. B. `en`.
 
 1. Mit dem Ordner `en` führen Sie diese Schritte durch:
 
    1. Benennen Sie den Ordner nach dem Gebietsschema, das unterstützt werden soll. Beispiel: `ar`.
 
-   1. Ändern Sie die Eigenschaft `jcr:language` in `ar`(für den Ordner `ar`).
+   1. Ändern Sie den Wert der Eigenschaft `jcr:language` in `ar` (für den Ordner `ar` ).
    >[!NOTE]
    >
    >Wenn das Gebietsschema eine Sprach- und Ländercodekombination ist, beispielsweise `ar-DZ`, ändern Sie den Ordnernamen und den Eigenschaftswert zu `ar-DZ`.
@@ -198,7 +197,7 @@ String browserLocale = "en";
 
 ### Hinzufügen von neuem Text oder Ändern des vorhandenen Texts {#adding-new-text-or-modifying-existing-text}
 
-1. Kopieren Sie den Ordner `i18n`:
+1. Ordner `i18n` kopieren:
 
    * von `/libs/livecycle/core/components/login`
    * in `/apps/livecycle/core/components/login`
@@ -215,7 +214,7 @@ String browserLocale = "en";
       * in `/apps/livecycle/core/components/login`
    1. Ändern Sie `/apps/livecycle/core/components/login/login.jsp`, um den neu hinzugefügten Text einzufügen.
 
-   ![hinzufügen neues Schlüsselwertpaar](assets/capture_new.png)
+   ![Neues Schlüssel-Wert-Paar hinzufügen](assets/capture_new.png)
 
    ```jsp
    div class="loginContent">
@@ -240,7 +239,7 @@ String browserLocale = "en";
 
 ### Hinzufügen eines neuen Stils oder Ändern des vorhandenen Stils {#adding-new-style-or-modifying-existing-style}
 
-1. Kopieren Sie den Knoten `login`:
+1. Kopieren Sie den Knoten `login` :
 
    * von `/libs/livecycle/core/content`
    * in `/apps/livecycle/core/content`
@@ -249,7 +248,7 @@ String browserLocale = "en";
 1. Ändern Sie die Stile in der CSS-Datei.
 1. Neue Stile hinzufügen:
 
-   1. Neue Stile Hinzufügen `/apps/livecycle/core/content/login/login.css`
+   1. Hinzufügen neuer Stile zu `/apps/livecycle/core/content/login/login.css`
    1. Kopieren `login.jsp`
 
       * von `/libs/livecycle/core/components/login`
@@ -261,7 +260,7 @@ String browserLocale = "en";
 
 Beispiel:
 
-* hinzufügen Sie Folgendes zu `/apps/livecycle/core/content/login/login.css`.
+* Fügen Sie `/apps/livecycle/core/content/login/login.css` Folgendes hinzu.
 
 ```
 css.newLoginContentArea {
@@ -289,16 +288,16 @@ css.newLoginContentArea {
 
 ### Fügen Sie neue Bilder hinzu {#add-new-images}
 
-1. Führen Sie die Schritte zum Hinzufügen eines neuen Stils oder zum Ändern eines vorhandenen Stils aus (siehe oben).
-1. hinzufügen neue Bilder in `/apps/livecycle/core/content/login`. Bild hinzufügen:
+1. Befolgen Sie die Schritte unter Hinzufügen eines neuen Stils oder Ändern des vorhandenen Stils (siehe oben).
+1. Fügen Sie neue Bilder in `/apps/livecycle/core/content/login` hinzu. Bild hinzufügen:
 
    1. Installieren Sie den WebDAV-Client.
-   1. Navigieren Sie mit dem WebDAV-Client zum Ordner `/apps/livecycle/core/content/login`. Weitere Informationen finden Sie unter: [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+   1. Navigieren Sie mit dem WebDAV-Client zum Ordner `/apps/livecycle/core/content/login` . Weitere Informationen finden Sie unter: [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
 
    1. Fügen Sie neue Bilder hinzu.
 
-1. hinzufügen neue Stile in `/apps/livecycle/core/content/login/login.css,` entsprechend den neuen Bildern, die in `/apps/livecycle/core/content/login` hinzugefügt wurden.
-1. Verwenden Sie die neuen Stile in `login.jsp` bei `/apps/livecycle/core/components`.
+1. Fügen Sie neue Stile in `/apps/livecycle/core/content/login/login.css,` hinzu, die neuen Bildern entsprechen, die in `/apps/livecycle/core/content/login` hinzugefügt wurden.
+1. Verwenden Sie die neuen Stile in `login.jsp` unter `/apps/livecycle/core/components`.
 
 Beispiel:
 
