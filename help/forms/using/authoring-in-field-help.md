@@ -8,15 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 78000342-a6a7-4c2e-acab-a88851b82c2a
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Adaptive Formulare
+exl-id: 6569bfba-9af5-4060-8640-e51d7af46614
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 100%
 
 ---
-
 
 # Verfassen von kontextsensitiver Hilfe für Formularfelder{#authoring-in-context-help-for-form-fields}
 
@@ -70,4 +69,3 @@ Zusätzlich zur kontextbezogenen Hilfe für Formularfelder können Sie Hilfe auf
 Wenn Sie Hilfe für einen Bereich hinzufügen, wird das Symbol **„?“** neben der Bereichsbeschreibung angezeigt. Durch Klicken auf das Symbol wird der Inhalt angezeigt, der im Abschnitt „Hilfe-Inhalt“ des Dialogfelds zum Bearbeiten des Bereichs hinzugefügt wurde.
 
 ![Beispiel für kontextbezogene Hilfe auf Formularbereichsebene](assets/photoshop-1.png)
-
