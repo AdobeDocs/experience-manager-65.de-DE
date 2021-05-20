@@ -7,16 +7,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
-feature: Image Presets
+feature: Bildvorgaben
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 98d88b59-eb8f-42db-abb8-04506a5b8c30
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 95%
+source-wordcount: '326'
+ht-degree: 96%
 
 ---
-
 
 # Anwenden von Dynamic Media-Bildvorgaben {#applying-image-presets}
 
@@ -34,7 +33,7 @@ Sie können jederzeit bei der Vorschau eines Bildes eine Bildvorgabe darauf anwe
 
 >[!NOTE]
 >
->Im Dynamic Media-Scene7-Modus werden Bildvorgaben nur für Bild-Assets unterstützt.
+>Im Modus Dynamic Media - Scene7 werden Bildvorgaben nur für Bild-Assets unterstützt.
 
 **So wenden Sie Dynamic Media-Bildvorgaben an**
 
@@ -60,4 +59,3 @@ Sie können jederzeit bei der Vorschau eines Bildes eine Bildvorgabe darauf anwe
    >Wenn das Asset *und* die Bildvorgabe noch nicht veröffentlicht wurden, ist die Schaltfläche **[!UICONTROL URL]** (bzw. die Schaltflächen **[!UICONTROL URL]** und **[!UICONTROL RESS]**, falls zutreffend) nicht verfügbar.
    >
    >Beachten Sie auch, dass Bildvorgaben automatisch auf einem -Server für Dynamic Media veröffentlicht werden.
-
