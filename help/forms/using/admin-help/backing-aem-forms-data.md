@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 52187196-b091-4683-85ae-cc7c250dee54
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1573'
 ht-degree: 92%
 
 ---
-
 
 # Sichern der AEM Forms-Daten {#backing-up-the-aem-forms-data}
 
@@ -55,7 +54,7 @@ Zusätzlich dazu sollten Sie die folgenden Richtlinien für den Sicherungs-/Wied
 
    Berücksichtigen Sie folgende Punkte, wenn Sie Autor- und Veröffentlichungsinstanzen sichern:
 
-   * Stellen Sie sicher, dass die Sicherung für  Autoren- und Veröffentlichungsinstanzen werden gleichzeitig mit Beginn synchronisiert. Obwohl Sie während der Sicherung weiterhin Autor- und Veröffentlichungsinstanzen verwenden können, wird empfohlen, während der Sicherung keine Assets zu veröffentlichen, um nicht erfasste Änderungen zu vermeiden. Warten Sie bis die Sicherung der Autor- und Veröffentlichungsinstanzen beendet ist, bevor Sie neue Elemente veröffentlichen.
+   * Stellen Sie sicher, dass die Sicherung für  Autoren- und Veröffentlichungsinstanzen werden synchronisiert, um gleichzeitig zu starten. Obwohl Sie Autoren- und Veröffentlichungsinstanzen während der Sicherung weiterhin verwenden können, wird empfohlen, während des Backups kein Asset zu veröffentlichen, um nicht erfasste Änderungen zu vermeiden. Warten Sie bis die Sicherung der Autor- und Veröffentlichungsinstanzen beendet ist, bevor Sie neue Elemente veröffentlichen.
    * Die vollständige Sicherung des Autorknotens umfasst die Sicherung der Daten von Forms Manager und AEM Forms Workspace.
    * Workbench-Entwickler können an ihre Prozesse weiterhin lokal bearbeiten. Sie sollten während der Sicherung jedoch keine neuen Prozesse bereitstellen.
    * Die Entscheidung über die Dauer der einzelnen Sicherungssitzungen (für den kontinuierlichen Sicherungsmodus) sollte auf der Gesamtzeit basieren, die zum Sichern aller Daten in AEM Forms erforderlich ist (DB, GDS, AEM-Repository und alle anderen zusätzlichen benutzerdefinierten Daten).
@@ -94,11 +93,11 @@ Sie können entweder Administration Console, den Befehl „LCBackupMode“ oder 
 Sie können die `LCBackupMode`-Skripte verwenden, um AEM Forms über die Befehlszeilenschnittstelle in den abgesicherten Sicherungsmodus zu versetzen.
 
 1. Legen Sie „ADOBE_LIVECYCLE“ fest und starten Sie den Anwendungsserver.
-1. Wechseln Sie zum Ordner `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline`.
+1. Gehen Sie zum Ordner `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` .
 1. Bearbeiten Sie je nach Betriebssystem das Skript `LCBackupMode.cmd` oder `LCBackupMode.sh`, um für Ihr System geeignete Standardwerte anzugeben.
 1. Führen Sie an der Befehlszeile den folgenden Befehl in einer einzelnen Zeile aus:
 
-   * (Windows) `LCBackupMode.cmd enter [-Host=`*Hostname* `] [-port=`*Anschlussnummer* `] [-user=`*Benutzername* `] [-password=`*Kennwort* `] [-label=`*labelname* `] [-timeout=`*seconds* `]`
+   * (Windows) `LCBackupMode.cmd enter [-Host=`*Hostname* `] [-port=`*Anschlussnummer* `] [-user=`*Benutzername* `] [-password=`*Kennwort* `] [-label=`*Beschriftungsname* `] [-timeout=`*Sekunden* `]`
    * (Linux, UNIX) `LCBackupMode.sh enter [-host=`*Hostname* `] [-port=`*Anschlussnummer* `] [-user=`*Benutzername* `] [-password=`*Kennwort* `] [-label=`*Beschriftungsname* `]`
 
    Die Parameter in den vorherigen Befehlen sind wie folgt definiert:
@@ -113,7 +112,7 @@ Sie können die `LCBackupMode`-Skripte verwenden, um AEM Forms über die Befehls
 
    `label` ist die Textbeschriftung dieser Sicherung (kann eine beliebige Zeichenfolge sein).
 
-   `timeout` die Anzahl der Sekunden, nach denen der Sicherungsmodus automatisch verlassen wird. Es kann zwischen 0 und 10.080 liegen. Bei 0 gibt es für den Sicherungsmodus kein Zeitlimit (Standardeinstellung).
+   `timeout` ist die Anzahl der Sekunden, nach denen der Sicherungsmodus automatisch beendet wird. Es kann zwischen 0 und 10.080 liegen. Bei 0 gibt es für den Sicherungsmodus kein Zeitlimit (Standardeinstellung).
 
    Weitere Informationen zum Wechseln in den Sicherungsmodus über die Befehlszeilenschnittstelle finden Sie in der Datei „Bitte-lesen“ im Ordner „BackupRestoreCommandline“.
 
@@ -133,7 +132,7 @@ Führen Sie die folgenden Schritte aus, um AEM Forms über Administration Consol
 
 Sie können die Befehlszeilenschnittstelle verwenden, um den abgesicherten Sicherungsmodus (Snapshot-Modus) für AEM Forms zu deaktivieren bzw. die aktuelle Sicherungsmodussitzung (kontinuierlicher Modus) zu beenden. Beachten Sie, dass Sie Administration Console nicht verwenden können, um den kontinuierlichen Sicherungsmodus zu deaktivieren. Während des kontinuierlichen Sicherungsmodus sind die Steuerungen der Sicherungsdienstprogramme in Administration Console deaktiviert. Sie müssen entweder den API-Aufruf oder den „LCBackupMode“-Befehl verwenden.
 
-1. Wechseln Sie zum Ordner `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline`.
+1. Gehen Sie zum Ordner `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` .
 1. Bearbeiten Sie je nach Betriebssystem das Skript `LCBackupMode.cmd` oder `LCBackupMode.sh`, um für Ihr System geeignete Standardwerte anzugeben.
 
    >[!NOTE]
@@ -165,4 +164,3 @@ Sie können die Befehlszeilenschnittstelle verwenden, um den abgesicherten Siche
    >Wenn Sie die Dokumentenspeicherung in der Datenbank aktiviert haben, sind der Snapshot-Sicherungsmodus und der kontinuierliche Sicherungsmodus nicht möglich.
 
    Weitere Informationen zum Wechseln in den Sicherungsmodus über die Befehlszeilenschnittstelle finden Sie in der Datei „Bitte-lesen“ im Ordner „BackupRestoreCommandline“.
-
