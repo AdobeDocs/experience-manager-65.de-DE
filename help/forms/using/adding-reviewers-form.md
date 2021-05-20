@@ -8,21 +8,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Adaptive Formulare
+exl-id: 46e7b858-44d1-41c8-9f44-4e959e593dc1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 76%
 
 ---
 
-
 # Verknüpfen von Reviewer mit einem Formular für die Übermittlung {#associating-submission-reviewers-with-a-form}
 
 Wenn Sie ein Formular erstellen, können Sie Benutzer angeben, die die Übermittlungen des Formulars über das Formularportal überprüfen und Feedback geben. Ihr Unternehmen kann Feedback erfassen und in die übermittelten Formularen einarbeiten.
 
-Mit AEM Forms können Sie eine Reviewer-Gruppe mit einem Formular verknüpfen. Benutzer, die zu einer Reviewer-Gruppe eines Formulars hinzugefügt wurden, sehen die Übermittlungen dieses Formulars und geben Feedback.
+Mit AEM Forms können Sie eine Reviewer-Gruppe mit einem Formular verknüpfen. Benutzer, die zu einer Überprüfungsgruppe eines Formulars hinzugefügt wurden, sehen die Übermittlungen dieses Formulars und geben Feedback.
 
 Die Reviewer-Gruppen, die mit einem Formular verknüpft sind, können nur die Übertragungen der angegebenen Formulare überprüfen.
 
@@ -46,10 +45,10 @@ Bearbeiten des Metadatenschemas:
 
 1. Wählen Sie **Adaptives Formular** und klicken Sie auf **Bearbeiten**.
 1. Wählen Sie auf der Seite „Formular bearbeiten“ **Erweitert**.
-1. Ziehen Sie auf der Registerkarte &quot;Erweitert&quot;die Komponente **Einzelzeilentext**, die unter &quot;Formular erstellen&quot;verfügbar ist.
+1. Ziehen Sie auf der Registerkarte Erweitert die Komponente **Einzelzeilentext**, die unter Formular erstellen verfügbar ist, per Drag-and-Drop in den Arbeitsbereich.
 1. Wählen Sie die hinzugefügte Textkomponente aus, um die Einstellungen zu überprüfen.
 
-   Geben Sie unter &quot;Einstellungen&quot;im Feld &quot;Zu Eigenschaft zuordnen&quot;`./jcr:content/metadata/form-submission-reviewer-group` ein.
+   Geben Sie unter Einstellungen `./jcr:content/metadata/form-submission-reviewer-group` im Feld Zu Eigenschaft zuordnen ein.
 
    Das Feld für die Reviewer-Gruppe-Gruppenfeld in den erweiterten Eigenschaften des adaptiven Formulars wird mit dem Namen aktiviert, den Sie unter „Feldbezeichnung“ angeben.
 
@@ -62,12 +61,12 @@ Bevor Sie die folgenden Schritte ausführen, lesen Sie die [ Voraussetzungen](..
 
 Um eine Gruppe zu erstellen und ihr Mitglieder hinzuzufügen, navigieren Sie zu **Tools** > **Vorgänge** > **Sicherheit** > **Gruppen**.
 Weitere Informationen finden Sie unter [Benutzerverwaltung und Dienste](/help/sites-administering/security.md).
-Stellen Sie sicher, dass Sie die erstellte Gruppe als Mitglied der vordefinierten Benutzergruppe hinzufügen: **forms-submission-reviewers**. Diese Benutzergruppe wird mit AEM Forms ausgeliefert und stellt sicher, dass Benutzer als Übermittlungsreviewer hinzugefügt werden.
+Stellen Sie sicher, dass Sie die erstellte Gruppe als Mitglied der vordefinierten Benutzergruppe hinzufügen: **forms-submission-reviewers**. Diese Benutzergruppe ist im Lieferumfang von AEM Forms enthalten und stellt sicher, dass Benutzer als Übermittlungsreviewer hinzugefügt werden.
 
 Verknüpfen von Benutzergruppen mit einem adaptiven Formular:
 
 1. Navigieren Sie im Bearbeitungsmodus zu **Formulare** >**Formulare und Dokumente**.
-1. Wählen Sie mit der Option **Select **ein adaptives Formular aus und klicken Sie auf **Ansicht Properties**.
+1. Verwenden Sie die Option &quot;Auswählen&quot;, um ein adaptives Formular auszuwählen, und klicken Sie auf **Eigenschaften anzeigen**.
 1. Klicken Sie im Fenster „Eigenschaften“ des Formulars auf **Bearbeiten** und dann auf **ERWEITERT**.
 1. Geben Sie die Gruppe im Feld „Übermittlungs-Reviewer-Gruppe“ ein und klicken Sie auf **Fertig**.
 
@@ -78,4 +77,3 @@ Verknüpfen von Benutzergruppen mit einem adaptiven Formular:
 >Replizieren Sie Benutzer und Formulare, um die Verfügbarkeit der Benutzer und Formulare in der Remote-Implementierung von AEM Forms sicherzustellen.
 >
 >Stellen Sie sicher, dass alle Benutzer als Review-Mitglieder der Benutzergruppen in der Remote-Implementierung repliziert werden.
-
