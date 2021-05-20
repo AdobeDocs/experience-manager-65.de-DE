@@ -3,13 +3,12 @@ title: Verwenden von Connected Assets zum Freigeben von DAM-Assets in [!DNL Site
 description: Verwenden Sie Assets, die in einer Remote [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] -Implementierung verfügbar sind.
 contentOwner: AG
 role: Business Practitioner, Administrator, Leader
-feature: Connected Assets,User and Groups
+feature: Verbundene Assets, Benutzer und Gruppen
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-translation-type: tm+mt
-source-git-commit: 48e5b55a1d79fef6172f684cb65a4137113fb7fb
+source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
 workflow-type: tm+mt
 source-wordcount: '2739'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -182,7 +181,7 @@ Gehen Sie wie folgt vor, um Referenzen auf die [!DNL Assets]-Bereitstellung anzu
 
 ## Einschränkungen und Best Practices {#tip-and-limitations}
 
-* Um Einblicke in die Asset-Nutzung zu erhalten, konfigurieren Sie die Funktion [Asset-Einblicke](/help/assets/asset-insights.md) in der [!DNL Sites]-Instanz.
+* Um Einblicke in die Asset-Nutzung zu erhalten, konfigurieren Sie die [Assets Insight](/help/assets/asset-insights.md)-Funktion in der [!DNL Sites]-Instanz.
 
 ### Berechtigungen und Asset-Verwaltung {#permissions-and-managing-assets}
 
@@ -212,7 +211,7 @@ Gehen Sie wie folgt vor, um Referenzen auf die [!DNL Assets]-Bereitstellung anzu
 * Wenn Assets aus dem DAM eingestellt werden, werden sie weiterhin auf [!DNL Sites]-Seiten verwendet.
 * Die Remote-Referenzeinträge eines Assets werden asynchron abgerufen. Die Referenzen und die Gesamtanzahl stehen nicht in Echtzeit zur Verfügung und es kann zu Unterschieden kommen, wenn ein Sites-Autor das Asset verwendet, während ein DAM-Benutzer die Referenz anzeigt. DAM-Benutzer können die Seite aktualisieren und in einigen Minuten erneut versuchen, die Gesamtanzahl abzurufen.
 
-## Fehlerbehebung bei Problemen   {#troubleshoot}
+## Fehlerbehebung bei Problemen  {#troubleshoot}
 
 Führen Sie die folgenden Schritte aus, um häufig auftretende Fehler zu beheben:
 
