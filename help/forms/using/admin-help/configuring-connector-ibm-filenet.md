@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: be4994de-12f8-436e-926a-49a6783b006e
-translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+exl-id: f4045df5-a35b-41d7-910e-971017148597
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 94%
 
 ---
-
 
 # Connector für IBM FileNet konfigurieren {#configuring-connector-for-ibm-filenet}
 
@@ -81,11 +80,11 @@ Sie können konfigurieren, welcher Repository Service Provider mit FileNet verwe
 
 Die folgenden Optionen sind verfügbar:
 
-**Name des aktuellen Repository Provider:** Name des aktuellen Repository Dienstleisters
+**Aktueller Repository Provider-Name:** Der Name des aktuellen Repository Service Providers
 
-**IBM FileNet Repository Provider:** Legt den FileNet Repository Provider als Provider für das Repository fest. Diese Option ist veraltet.
+**IBM FileNet Repository Provider:** Stellt den FileNet Repository Provider zum Provider des Repositorys dar. Diese Option ist veraltet.
 
-**Repository-Provider:** Legt den nativen Repository-Provider als Provider für das Repository fest
+**Repository-Anbieter:** Legt den nativen Repository-Provider als Provider für das Repository fest.
 
 >[!NOTE]
 >
