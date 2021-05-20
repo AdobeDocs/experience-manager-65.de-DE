@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 discoiquuid: a128877d-239c-4272-99c2-72d6486d5703
 docset: aem65
-translation-type: tm+mt
-source-git-commit: befbdfd574949a7f7449b70a15480e7c105418fe
+exl-id: 4f45ad22-611b-4b4f-8e89-cb64a122b70a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 93%
 
 ---
-
 
 # Messen und Verbessern der Effektivität und Konvertierung von Formularen{#measure-and-improve-effectiveness-and-conversion-of-forms}
 
@@ -34,7 +33,7 @@ Um die ROI zu maximieren, müssen Unternehmen überwachen, wie ihre Kunden mit D
 
 ## Die Lösung {#the-solution}
 
-AEM Forms ist mit Lösungen von [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) und [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) integriert. So können Sie überwachen und analysieren, wie Ihre Formulare funktionieren, und Sie können das Erlebnis, das zu einem besseren Konversionsrat führt, testen und identifizieren.
+AEM Forms ist mit [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html)-Lösungen - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) und [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) integriert, die Ihnen dabei helfen können, die Leistung Ihrer Formulare zu überwachen und zu analysieren und Ihnen das Experiment und die Identifizierung des Erlebnisses zu ermöglichen, das zu einer besseren Konversionsrate führt.
 
 ## Der Arbeitsablauf {#the-workflow}
 
@@ -74,7 +73,7 @@ Ausführliche Anweisungen finden Sie unter [Konfigurieren von Analyse und Berich
 
 **Target konfigurieren**
 
-Um A/B-Tests für Ihre adaptiven Formulare zu erstellen und auszuführen, konfigurieren Sie die Zielgruppe in AEM Forms wie unter [Einrichten und Integrieren der Zielgruppe in AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p) beschrieben.
+Um A/B-Tests für Ihre adaptiven Formulare zu erstellen und auszuführen, konfigurieren Sie Target in AEM Forms, wie unter [Einrichten und Integrieren von Target in AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p) beschrieben.
 
 #### Schritt 2: Anzeigen des Analyseberichts {#step-view-analytics-report-br}
 
@@ -160,4 +159,3 @@ Einige Empfehlungen zum Entwerfen von Formularen und dem Durchführen von A/B-Te
 * Erstellen Sie vor dem Durchführen des A/B-Tests eine Hypothese und identifizieren Sie Erfolgsmetriken.
 * Führen Sie geringfügige Abweichungen (idealerweise eine zu einem Zeitpunkt) in die alternative Version ein, um zu ermitteln, wodurch die Konvertierungsrate beeinflusst wurde.
 * Testen Sie regelmäßig, um Ineffizienz zu vermeiden.
-
