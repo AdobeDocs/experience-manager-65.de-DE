@@ -2,21 +2,20 @@
 title: Dokumentfragmente
 seo-title: Dokumentfragmente
 description: Mit Dokumentfragmenten wie Text, Listen, Bedingungen und Layout-Fragmente können Sie in Correspondence Management die statischen, dynamischen und wiederholbaren Komponenten von Kundenkorrespondenz gestalten.
-seo-description: Dokumentfragmente, wie Text-, Listen-, Bedingungs- und Layout-Fragmente, können Sie in Correspondence Management die statischen, dynamischen und wiederholbaren Komponenten der Kundenkorrespondenz bilden.
+seo-description: Dokumentfragmente, wie Text, Listen, Bedingungen und Layout-Fragmente, können Sie in Correspondence Management die statischen, dynamischen und wiederholbaren Komponenten der Kundenkorrespondenz bilden.
 uuid: 4273323d-14f5-4b3b-8fed-80beef641efe
 topic-tags: correspondence-management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
-feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Korrespondenzverwaltung
+exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '6935'
 ht-degree: 82%
 
 ---
-
 
 # Dokumentfragmente{#document-fragments}
 
@@ -45,20 +44,20 @@ Die Correspondence Management Solution unterstützt zwei Arten dynamischer Daten
 ### Text erstellen {#create-text}
 
 1. Wählen Sie **Formulare** > **Dokumentfragmente**.
-1. Tippen Sie auf **Erstellen** > **Text** oder wählen Sie ein Textelement und tippen Sie auf **Bearbeiten**.
+1. Tippen Sie auf **Erstellen** > **Text** Oder wählen Sie ein Textelement und tippen Sie auf **Bearbeiten**.
 1. Geben Sie folgende Informationen für den Text an:
 
-   * **Titel: (Optional)** Geben Sie den Titel für das Textelement ein. Titel müssen nicht eindeutig sein und dürfen Sonderzeichen und nichtenglische Zeichen enthalten. Texte werden durch ihren Titel (falls verfügbar) wie etwa in Miniaturen und Asset-Eigenschaften referenziert.
-   * **Name**: Der eindeutige Name für das Textelement. Es ist nicht möglich, dass zwei Elemente (Text, Bedingung oder Liste) mit demselben Namen vorhanden sind, ungeachtet ihres jeweiligen Status. Im Feld „Name“ können Sie nur englische Sprachzeichen, Zahlen und Bindestriche eingeben. Das Feld „Name“ wird automatisch basierend auf dem Feld „Titel“ ausgefüllt. Die im Feld &quot;Titel&quot;eingegebenen Sonderzeichen, Leerzeichen, Zahlen und nichtenglischen Zeichen werden durch Bindestriche im Feld &quot;Name&quot;ersetzt. Obwohl der Wert im Feld „Titel“ automatisch in das Feld „Name“ kopiert wird, können Sie den Wert bearbeiten.
+   * **Titel: (Optional)** Geben Sie den Titel für das Text-Asset ein. Titel müssen nicht eindeutig sein und dürfen Sonderzeichen und nichtenglische Zeichen enthalten. Texte werden durch ihren Titel (falls verfügbar) wie etwa in Miniaturen und Asset-Eigenschaften referenziert.
+   * **Name**: Der eindeutige Name für das Textelement. Es ist nicht möglich, dass zwei Elemente (Text, Bedingung oder Liste) mit demselben Namen vorhanden sind, ungeachtet ihres jeweiligen Status. Im Feld „Name“ können Sie nur englische Sprachzeichen, Zahlen und Bindestriche eingeben. Das Feld „Name“ wird automatisch basierend auf dem Feld „Titel“ ausgefüllt. Die im Feld Titel eingegebenen Sonderzeichen, Leerzeichen, Zahlen und nicht englischen Zeichen werden im Feld Name durch Bindestriche ersetzt. Obwohl der Wert im Feld „Titel“ automatisch in das Feld „Name“ kopiert wird, können Sie den Wert bearbeiten.
    * **Beschreibungen**: Geben Sie eine Beschreibung des Elements ein.
    * **Datenwörterbuch**: Wählen Sie optional das Datenwörterbuch aus, dem das Element zugeordnet werden soll. Dank dieses Attributs können Sie den Datenlexikonelementen in dem Textelement Verweise hinzufügen.
    * **Tags**: Um optional einen benutzerdefinierten Tag zu erstellen, geben Sie einen Wert in das Textfeld ein und drücken Sie die Eingabetaste. Sie können den Tag unterhalb des Textfeldes der Tags sehen. Wenn Sie diesen Text speichern, werden die neu hinzugefügten Tags auch erstellt.
 
-1. Tippen Sie auf **Weiter**. Correspondence Management zeigt die Editor-Seite an, auf der Sie dem Text Textabsätze und Datenelemente hinzufügen können.
+1. Tippen Sie auf **Weiter**. Correspondence Management zeigt die Editor-Seite an, auf der Sie Textabsätze und Datenelemente zum Text hinzufügen können.
 
    Die normale Rechtschreibprüfung Ihres Browsers überprüft die Rechtschreibung im Texteditor. Um die Rechtschreib- und Grammatikprüfung zu verwalten, können Sie die Einstellungen für die Rechtschreibprüfung in Ihrem Browser bearbeiten oder Browser-Plugins/-Addons für die Prüfung von Rechtschreibung und Grammatik installieren.
 
-   Sie können auch die verschiedenen Tastaturbefehle im Texteditor verwenden, um Text zu verwalten, zu bearbeiten und zu formatieren. Weitere Informationen zu den Tastaturbefehlen [Texteditor](/help/forms/using/keyboard-shortcuts.md#p-formatting-p) in Correspondence Management-Tastaturbefehlen.
+   Sie können auch die verschiedenen Tastaturbefehle im Texteditor verwenden, um Text zu verwalten, zu bearbeiten und zu formatieren. Weitere Informationen zu [Texteditor](/help/forms/using/keyboard-shortcuts.md#p-formatting-p) Tastaturbefehlen in Correspondence Management-Tastaturbefehlen.
 
 1. Ein Texteditor wird geöffnet. Geben Sie hier den gewünschten Text ein. Verwenden Sie die Symbolleiste oben auf der Seite, um den Text zu formatieren, Bedingungen, Links und Seitenumbrüche einzufügen.
 
@@ -67,7 +66,7 @@ Die Correspondence Management Solution unterstützt zwei Arten dynamischer Daten
    * **Link**[](#insert-hyperlink): Fügen Sie eine Hypertextverknüpfung in den Text ein.
    * **Wiederholen**: Mit diesem Befehl wird ein Collection-Element unter Verwendung eines Trennzeichens in ein Datenwörterbuch gedruckt.
    * **Bedingung**: Klicken Sie, um eine Bedingung einzufügen. Text wird auf der Grundlage einer Bedingung eingefügt. Nur wenn die Bedingung den Status „true“ hat, wird der Text im Brief sichtbar.
-   * **hinzufügen Beschreibung**: hinzufügen Anmerkung zu einem Textteil. Es handelt sich hierbei um Metadaten, die nur für den Autor sichtbar und nicht Teil des erstellten Briefs sind.
+   * **Beschreibung hinzufügen**: Fügen Sie einem Textabschnitt eine Anmerkung hinzu. Es handelt sich hierbei um Metadaten, die nur für den Autor sichtbar und nicht Teil des erstellten Briefs sind.
    * **Seitenumbruch**: Wenn Sie das Seitenumbruch-Attribut eines Textmoduls auf „false“ setzen, wird das Textmodul nicht auf mehreren Seiten angezeigt.
 
    Ein Texteditor wird geöffnet. Geben Sie den Text ein. Die Symbolleiste ändert sich je nach dem Typ der Bearbeitung, die Sie vornehmen: Absatz, Ausrichtung oder Auflistung:
@@ -79,7 +78,7 @@ Die Correspondence Management Solution unterstützt zwei Arten dynamischer Daten
    ![Absatz-Symbolleiste](assets/fonteditingtoolbar.png)
 
    Absatz-Symbolleiste
-   [ ![Ausrichtung, ](assets/paragrapheditingtoolbar.png)](assets/paragrapheditingtoolbar-1.png)SymbolleisteAusrichtung
+   [ ![Ausrichtungs-](assets/paragrapheditingtoolbar.png)](assets/paragrapheditingtoolbar-1.png)SymbolleisteAusrichtungs-Symbolleiste
 
    ![Auflistungs-Symbolleiste](assets/bulleteditingtoolbar.png)
 
@@ -93,7 +92,7 @@ Die Correspondence Management Solution unterstützt zwei Arten dynamischer Daten
 
    Sie können den Text direkt aus dem MS Word-Dokument in ein bearbeitbares Textmodul kopieren. Die Formatierung wie die Liste mit Aufzählungszeichen, die Schriftart und Textfarbe wird im Textmodul beibehalten.
 
-   ![pastetexttextmodul](assets/pastetexttextmodule.png)
+   ![pastetexttextmodule](assets/pastetexttextmodule.png)
 
    >[!NOTE]
    >
@@ -102,8 +101,8 @@ Die Correspondence Management Solution unterstützt zwei Arten dynamischer Daten
 1. Fügen Sie ggf. Sonderzeichen in das Dokumentfragment ein. Beispielsweise können Sie über die Sonderzeichenpalette die folgenden Zeichen einfügen:
 
    * Währungssymbole wie €,¥ und £
-   * Mathematische Symbole wie z. B. □, , ^ und ^
-   * Interpunktionssymbole wie ‟ und&quot;
+   * Mathematische Symbole wie, Ö, % und ^
+   * Satzzeichen wie ‟ und&quot;
 
    ![specialcharacters-1](assets/specialcharacters-1.png)
 
@@ -111,11 +110,11 @@ Die Correspondence Management Solution unterstützt zwei Arten dynamischer Daten
 
 1. Um Teile eines Textes in einem bearbeitbaren Inline-Modul hervorzuheben, wählen Sie den Text aus und tippen Sie auf „Hervorhebungsfarbe“.
 
-   ![textbackgroundcolorapplied](assets/textbackgroundcolorapplied.png)
+   ![textbackgroundColor](assets/textbackgroundcolorapplied.png)
 
-   Sie können entweder direkt auf eine Grundfarbe `**[A]**` in der Palette &quot;Grundfarben&quot;tippen oder auf **Wählen Sie**, nachdem Sie den Schieberegler `**[B]**` verwendet haben, um die entsprechende Farbschattierung auszuwählen.
+   Sie können entweder direkt auf eine Grundfarbe `**[A]**` tippen, die in der Palette &quot;Grundfarben&quot;vorhanden ist, oder auf **Auswählen** tippen, nachdem Sie den Schieberegler `**[B]**` verwendet haben, um die gewünschte Farbschattierung auszuwählen.
 
-   Optional können Sie auch auf der Registerkarte &quot;Erweitert&quot;die gewünschte Farbe für Farbton, Helligkeit und Sättigung `**[C]**` auswählen, um die exakte Farbe zu erstellen, und dann auf `**[D]**` tippen, um die Farbe anzuwenden und den Text zu markieren.
+   Optional können Sie auch auf der Registerkarte &quot;Erweitert&quot;die gewünschte Farbe für Farbton, Helligkeit und Sättigung `**[C]**` auswählen, um die genaue Farbe zu erstellen. Tippen Sie dann auf Auswählen `**[D]**` , um die Farbe anzuwenden und den Text hervorzuheben.
 
    ![textbackgroundcolor-1](assets/textbackgroundcolor-1.png)
 
@@ -123,7 +122,7 @@ Die Correspondence Management Solution unterstützt zwei Arten dynamischer Daten
 
    An:
 
-   * hinzufügen Sie ein Datenwörterbuchelement im Text, wählen Sie ein Datenelement aus der Liste und klicken Sie auf Einfügen ( ![insert](assets/insert.png)). Wenn Sie Geschützt auswählen, ist das Datenlexikonelement schreibgeschützt und wird im Briefeditor, aber nicht in der Benutzeroberfläche „Korrespondenz erstellen“ oder in der Korrespondenzerstellung angezeigt.
+   * Fügen Sie ein Datenwörterbuchelement in den Text ein, wählen Sie ein Datenelement aus der Liste aus und tippen Sie auf Einfügen ( ![insert](assets/insert.png)). Wenn Sie Geschützt auswählen, ist das Datenlexikonelement schreibgeschützt und wird im Briefeditor, aber nicht in der Benutzeroberfläche „Korrespondenz erstellen“ oder in der Korrespondenzerstellung angezeigt.
    * Um ein Platzhalterelement im Text einzufügen, klicken Sie im Bereich „Datenelemente“ auf „Neu erstellen“. geben Sie die Details des neuen Datenelements ein und klicken Sie auf „Erstellen“, um das neue Element der Liste hinzuzufügen. Der neue Platzhalter kann in den Text auf dieselbe Weise wie ein Datenlexikonelement eingefügt werden. Um einen Platzhalter zu bearbeiten, wählen Sie einen Platzhalter aus und tippen Sie auf „Bearbeiten“.
 
    ![Platzhalterelemente](assets/placeholder_elements_in_xmldata.png)
@@ -134,22 +133,22 @@ Die Correspondence Management Solution unterstützt zwei Arten dynamischer Daten
 
    Platzhalterelementwerte in der CCR-Ansicht wurden von den Datenwörterbuchvariablen aufgefüllt, wie in der von Ihnen erstellten Musterdatendatei angegeben
 
-   Sie können auch das @-Symbol verwenden, um Datenwörterbuch- und Platzhalterelemente zu suchen und dem Texteditor hinzuzufügen. Platzieren Sie den Cursor an der Stelle, an der Sie das Element einfügen möchten. Geben Sie @ gefolgt von der Suchzeichenfolge ein. Der Texteditor führt den Suchvorgang für alle Datenwörterbuchelemente und Platzhalterelemente aus, die im Textabschnitt des Dokuments verfügbar sind. Der Suchvorgang ruft die Elemente mit der Suchzeichenfolge ab und zeigt sie als Dropdown-Liste an. Navigieren Sie durch die Suchergebnisse und klicken Sie auf das Element, das Sie an der Cursorposition einfügen möchten. Drücken Sie Esc, um die Suchergebnisse auszublenden.
+   Sie können auch das @-Symbol verwenden, um Datenwörterbuch- und Platzhalterelemente zu suchen und zum Texteditor hinzuzufügen. Platzieren Sie den Cursor an die Stelle, an der das Element eingefügt werden soll. Geben Sie @ ein, gefolgt von der Suchzeichenfolge. Der Texteditor führt den Suchvorgang für alle Datenwörterbuch- und Platzhalterelemente durch, die im Textdokumentfragment verfügbar sind. Der Suchvorgang ruft die Elemente, die die Suchzeichenfolge enthalten, ab und zeigt sie als Dropdown-Liste an. Navigieren Sie durch die Suchergebnisse und klicken Sie an der Cursorposition auf das Element, das Sie einfügen möchten. Drücken Sie Esc , um die Suchergebnisse auszublenden.
 
-1. Sie können Inline-Bedingungen verwenden und wiederholen, um den Brief sehr kontextabhängig und gut strukturiert zu machen. Weitere Informationen zu Inline-Bedingungen und -Wiederholungen finden Sie unter [Inline-Bedingungen und Wiederholen in Buchstaben](/help/forms/using/cm-inline-condition.md).
+1. Sie können Inline-Bedingungen verwenden und wiederholen, um den Brief sehr kontextabhängig und gut strukturiert zu machen. Weitere Informationen zu Inline-Bedingungen und -Wiederholungen finden Sie unter [Inline-Bedingungen und Wiederholung in Buchstaben](/help/forms/using/cm-inline-condition.md).
 1. Tippen Sie auf **Speichern**.
 
-#### Hyperlink in Text {#insert-hyperlink} einfügen
+#### Hyperlink in Text einfügen {#insert-hyperlink}
 
-Führen Sie die folgenden Schritte aus, um einen Hyperlink in einem Textelement zu erstellen:
+Führen Sie die folgenden Schritte aus, um einen Hyperlink in einem Text-Asset zu erstellen:
 
 1. Wählen Sie den Text oder das Datenmodellobjekt im Texteditor aus.
 
-2. Tippen Sie auf **[!UICONTROL Link]**. Tippen Sie auf das Feld **[!UICONTROL Alt-Text]**, um den vorhandenen Objektnamen oder Text des Datenmodells zu entfernen.
+2. Tippen Sie auf **[!UICONTROL Link]**. Tippen Sie auf das Feld **[!UICONTROL ALT-Text]** , um den vorhandenen Objektnamen oder Text des Datenmodells zu entfernen.
 
 3. Geben Sie die URL an und tippen Sie auf ![Speichern](assets/save_icon.svg).
 
-![Hyperlink in Textelement erstellen](assets/text-create-hyperlink.png)
+![Hyperlink in Text-Asset erstellen](assets/text-create-hyperlink.png)
 
 #### Text suchen und ersetzen {#searching-and-replacing-text}
 
@@ -163,9 +162,9 @@ Mithilfe der Funktion „Suchen und Ersetzen“ können Sie nach jeder beliebige
 
 1. Tippen Sie auf „Suchen und Ersetzen“.
 1. Geben Sie den zu suchenden Text in das Textfeld „Suchen“ ein und klicken Sie auf „Suchen“. Der gesuchte Text wird im Textmodul hervorgehoben.
-1. Um nach der nächsten Textinstanz zu suchen, drücken Sie erneut die Taste Suchen.
+1. Um nach der nächsten Instanz des Textes zu suchen, drücken Sie erneut die Taste Suchen .
 
-   Wenn Sie weiter auf die Schaltfläche „Suchen“ klicken, wird die Suche nach unten fortgesetzt. Nachdem die letzte Instanz des Textes gefunden wurde, gibt die Meldung **An Ende des Moduls** erreicht an, dass keine weiteren Suchergebnisse gefunden wurden.
+   Wenn Sie weiter auf die Schaltfläche „Suchen“ klicken, wird die Suche nach unten fortgesetzt. Nachdem die letzte Instanz des Textes gefunden wurde, zeigt die Meldung **Das erreichte Ende des Moduls** an, dass keine weiteren Suchergebnisse gefunden wurden.
 
    Wenn allerdings keine Instanz des gesuchten Texts im Textmodul gefunden wird, lautet die angezeigte Meldung: **Übereinstimmung nicht gefunden**.
 
@@ -173,15 +172,15 @@ Mithilfe der Funktion „Suchen und Ersetzen“ können Sie nach jeder beliebige
 
 #### Suchoptionen {#search-options}
 
-**Groß-/Kleinschreibung berücksichtigen:** Die Suche gibt Ergebnisse mit derselben Groß-/Kleinschreibung zurück.
+**Groß-/Kleinschreibung berücksichtigen:** Die Suche gibt nur Ergebnisse mit derselben Groß-/Kleinschreibung zurück.
 
-**Ganzes Wort:** Suche gibt nur ganze Wörter zurück.
+**Ganzes Wort:** Die Suche gibt nur ganze Wörter zurück.
 
 >[!NOTE]
 >
 >Wenn Sie Sonderzeichen in das Textfeld &quot;Suchen&quot;eingeben, ist die Option &quot;Ganzes Wort&quot;deaktiviert.
 
-**Reg ex:** Suche mit regulären Ausdrücken. Beispielsweise kann mithilfe des folgenden regulären Ausdrucks nach E-Mail-Adressen in einem Textelement gesucht werden:
+**Reguläre Ausdrücke:** Suche mit regulären Ausdrücken. Beispielsweise kann mithilfe des folgenden regulären Ausdrucks nach E-Mail-Adressen in einem Textelement gesucht werden:
 
 `[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}`
 
@@ -197,7 +196,7 @@ Mithilfe der Funktion „Suchen und Ersetzen“ können Sie nach jeder beliebige
 
 1. Wenn Sie erneut auf „Suchen“ klicken, wird die Suche am Anfang der Seite fortgesetzt.
 
-   Verwenden Sie die Option „Alle ersetzen“, um alle Instanzen des Texts im Textmodul zu ersetzen. Wenn Sie uns tun &quot;, wird die Anzahl der Ersetzungen als Meldung im Dialogfeld Suchen und Ersetzen angezeigt.
+   Verwenden Sie die Option „Alle ersetzen“, um alle Instanzen des Texts im Textmodul zu ersetzen. Wenn Sie dies tun, wird die Anzahl der Ersetzungen als Meldung im Dialogfeld Suchen und Ersetzen angezeigt.
 
 #### Bewährte Methoden/Tipps und Tricks für Textmodule{#best-practices-tips-and-tricks-for-text-modules} 
 
@@ -212,7 +211,7 @@ Mithilfe der Funktion „Suchen und Ersetzen“ können Sie nach jeder beliebige
 
 ## Liste {#list}
 
-Eine Liste ist eine Gruppe von Dokumentfragmenten, einschließlich Text, (anderen) Listen, Bedingungen und Bildern. Die Reihenfolge der Listenelemente kann festgelegt sein oder bearbeitet werden. Beim Erstellen eines Briefs können Sie einige oder alle Listenelemente verwenden, um ein wiederverwendbares Muster von Elementen zu replizieren. Listen verhalten sich grundsätzlich wie Zielgruppen, die in anderen Zielgruppen verschachtelt werden können.
+Eine Liste ist eine Gruppe von Dokumentfragmenten, einschließlich Text, (anderen) Listen, Bedingungen und Bildern. Die Reihenfolge der Listenelemente kann festgelegt sein oder bearbeitet werden. Beim Erstellen eines Briefs können Sie einige oder alle Listenelemente verwenden, um ein wiederverwendbares Muster von Elementen zu replizieren. Listen verhalten sich im Wesentlichen als Ziele, die in anderen Zielen verschachtelt werden können.
 
 ### Listen implementieren {#implementing-lists}
 
@@ -240,20 +239,20 @@ Eine Liste ist eine Gruppe verwandter Inhalte, die in einer Briefvorlage als zus
 
 1. Geben Sie folgende Informationen für die Liste an:
 
-   * **Titel (Optional):** Geben Sie den Titel für die Liste ein. Titel müssen nicht eindeutig sein und dürfen Sonderzeichen und nichtenglische Zeichen enthalten. Listen werden durch ihre Titel (sofern verfügbar) wie z. B. in Miniaturen und Asset-Eigenschaften referenziert.
-   * **Name:** Der eindeutige Name der Liste. Es ist nicht möglich, dass zwei Elemente (Text, Bedingung oder Liste) mit demselben Namen vorhanden sind, ungeachtet ihres jeweiligen Status. Im Feld „Name“ können Sie nur englische Sprachzeichen, Zahlen und Bindestriche eingeben. Das Feld „Name“ wird automatisch mit dem Wert im Feld „Titel“ ausgefüllt. Die im Feld &quot;Titel&quot;eingegebenen Sonderzeichen, Leerzeichen, Zahlen und nichtenglischen Zeichen werden durch Bindestriche im Feld &quot;Name&quot;ersetzt. Obwohl der Wert im Feld „Titel“ automatisch in das Feld „Name“ kopiert wird, können Sie den Wert bearbeiten.
-   * **Beschreibung (optional)**: Geben Sie eine Beschreibung des Assets ein.
+   * **Titel (Optional):** Geben Sie den Titel für die Liste ein. Titel müssen nicht eindeutig sein und dürfen Sonderzeichen und nichtenglische Zeichen enthalten. Listen werden durch ihren Titel (sofern verfügbar) wie z. B. in Miniaturen und Asset-Eigenschaften referenziert.
+   * **Name:** Der eindeutige Name der Liste. Es ist nicht möglich, dass zwei Elemente (Text, Bedingung oder Liste) mit demselben Namen vorhanden sind, ungeachtet ihres jeweiligen Status. Im Feld „Name“ können Sie nur englische Sprachzeichen, Zahlen und Bindestriche eingeben. Das Feld „Name“ wird automatisch mit dem Wert im Feld „Titel“ ausgefüllt. Die im Feld Titel eingegebenen Sonderzeichen, Leerzeichen, Zahlen und nicht englischen Zeichen werden im Feld Name durch Bindestriche ersetzt. Obwohl der Wert im Feld „Titel“ automatisch in das Feld „Name“ kopiert wird, können Sie den Wert bearbeiten.
+   * **Beschreibung (Optional)**: Geben Sie eine Beschreibung des Assets ein.
    * **Datenwörterbuch (optional)**: Wählen Sie optional das Datenwörterbuch aus, mit dem eine Verbindung hergestellt werden soll. Es können nur Elemente der Liste hinzugefügt werden, die das gleiche Datenwörterbuch verwenden wie die Liste oder denen kein Datenwörterbuch zugewiesen ist. Einer Liste ein Datenwörterbuch zuzuweisen, erleichtert es dem Ersteller einer Briefvorlage, die passende Liste zu finden.
    * **Tags (optional)**: Wählen Sie die anzuwendenden Tags aus. Sie können auch den Namen eines neuen Tags eingeben und ihn erstellen. (Das neue Tag wird erstellt, wenn Sie auf **Speichern** tippen.)
 
 1. Tippen Sie auf **Weiter**.
-1. Tippen Sie auf **Hinzufügen Asset**.
-1. Um der Liste Assets hinzuzufügen, wählen Sie sie auf der Seite &quot;Assets auswählen&quot;aus und tippen Sie auf **Fertig**.
+1. Tippen Sie auf **Asset** hinzufügen.
+1. Um Assets zur Liste hinzuzufügen, wählen Sie sie auf der Seite &quot;Assets auswählen&quot;aus und tippen Sie auf **Fertig**.
 
    ![Assets zum Hinzufügen zur Liste auswählen](assets/selectassets.png)
 
 1. Die Assets werden der Seite „Listenelemente“ hinzugefügt.
-Um die Reihenfolge der Assets innerhalb der Liste zu ändern, tippen Sie auf das Pfeilsymbol ( ![dragndrop](assets/dragndrop.png)) und ziehen Sie es per Drag &amp; Drop. Wenn der Benutzer auf der Benutzeroberfläche „Korrespondenz erstellen“ eine Briefvorlage öffnet, wird der Inhalt in der hier festgelegten Reihenfolge zusammengestellt.
+Um die Reihenfolge der Assets in der Liste zu ändern, tippen Sie auf das Pfeilsymbol ( ![dragndrop](assets/dragndrop.png) ) und ziehen Sie per Drag-and-Drop. Wenn der Benutzer auf der Benutzeroberfläche „Korrespondenz erstellen“ eine Briefvorlage öffnet, wird der Inhalt in der hier festgelegten Reihenfolge zusammengestellt.
 
    ![Assets in einer Liste neu anordnen und konfigurieren](assets/listitems.png)
 
@@ -263,13 +262,13 @@ Um die Reihenfolge der Assets innerhalb der Liste zu ändern, tippen Sie auf das
    * **Reihenfolgesperren**: Zum Sperren der Reihenfolge der Assets in der Liste, sodass der Schadensregulierer sie nicht ändern kann, tippen Sie auf „Reihenfolge sperren“. Wenn Sie diese Option nicht aktivieren, kann der Schadensregulierer die Reihenfolge der Listenelemente ändern.
 
    * **Aufzählungszeichen hinzufügen**: Verwenden Sie diese Option, um dem Modul einen Aufzählungs- oder Nummerierungsstil hinzuzufügen. Sie können entweder einen vorgefertigten oder einen benutzerdefinierten Listenstil verwenden. Sie können auch den vor und nach jedem der Listenelemente anzuzeigenden Text festlegen.
-   * **Seitenumbruch**: Wählen Sie diese Option (&quot; ![Umbruch](assets/break.png)&quot;), um einen Seitenumbruch zwischen den Seiteninhalten der Liste hinzuzufügen. Wenn diese Option nicht aktiviert ist ( ![nobreak](assets/nobreak.png)) und der Inhalt der Liste auf die nächste Seite überläuft, wird die gesamte Liste auf die nächste Seite verschoben, anstatt zwischen der Liste zu wechseln.
+   * **Seitenumbruch**: Wählen Sie diese Option (  ![Umbruch](assets/break.png)) aus, um zwischen den Listeninhalten einen Seitenumbruch hinzuzufügen. Wenn diese Option nicht ausgewählt ist ( ![nobreak](assets/nobreak.png)) und der Listeninhalt über die nächste Seite hinausfließt, wird die gesamte Liste auf die nächste Seite verschoben, anstatt auf der Seite zwischen der Liste zu wechseln.
 
    * **Zuweisungskonfiguration**: Verwenden Sie diese Option, um die Mindest- und Höchstanzahl der zur Liste hinzufügbaren Assets festzulegen.
 
 1. Sie können mit Hilfe der folgenden Optionen festlegen, wie sich jedes Element in der Liste zur Laufzeit verhält:
 
-   * **Bearbeitbar:** Wenn diese Option aktiviert ist, kann der Inhalt in der Benutzeroberfläche „Korrespondenz erstellen“ bearbeitet werden. (Diese Option steht nicht für Listen- und Bildmodule zur Verfügung.)
+   * **Bearbeitbar:** Wenn diese Option aktiviert ist, kann der Inhalt in der Benutzeroberfläche „Korrespondenz erstellen“ bearbeitet werden. (Diese Option ist nicht für Listen- und Bildmodule verfügbar.)
    * **Obligatorisch:** Wenn diese Option aktiviert ist, ist der Inhalt in der Benutzeroberfläche „Korrespondenz erstellen“ erforderlich.
    * **Ausgewählt:** Wenn diese Option aktiviert ist, ist der Inhalt der Benutzeroberfläche „Korrespondenz erstellen“ vorab ausgewählt.
    * **Stil überspringen:** Wenn diese Option aktiviert ist, werden Aufzählungszeichen und Nummerierungen in der Benutzeroberfläche „Korrespondenz erstellen“ übersprungen. (Diese Option steht für Bildmodule nicht zur Verfügung. Außerdem kann von den Optionen „Stil überspringen“, „Zusammengesetzte Nummerierung“ und „Listenstil ignorieren“ immer nur eine auf ein Modul angewendet werden. Eine dieser Optionen kann für ein Modul verwendet werden, wenn Sie die Option „Aufzählungszeichen hinzufügen“ für ein Modul auswählen.)
@@ -310,29 +309,29 @@ Im Bedingungseditor haben Sie die Möglichkeit, eine Standardbedingung anzugeben
 1. Wählen Sie **Erstellen > Bedingung**.
 1. Geben Sie folgende Informationen für die Liste an:
 
-   * **Titel (Optional):** Geben Sie den Titel für die Bedingung ein. Titel müssen nicht eindeutig sein und dürfen Sonderzeichen und nichtenglische Zeichen enthalten. Bedingungen werden durch ihren Titel (falls verfügbar) wie etwa in Miniaturen und Asset-Eigenschaften referenziert.
-   * **Name:** Der eindeutige Name der Bedingung. Es ist nicht möglich, dass zwei Elemente (Text, Bedingung oder Liste) mit demselben Namen vorhanden sind, ungeachtet ihres jeweiligen Status. Im Feld „Name“ können Sie nur englische Sprachzeichen, Zahlen und Bindestriche eingeben. Das Feld „Name“ wird automatisch basierend auf dem Feld „Titel“ ausgefüllt. Die im Feld &quot;Titel&quot;eingegebenen Sonderzeichen, Leerzeichen, Zahlen und nichtenglischen Zeichen werden durch Bindestriche im Feld &quot;Name&quot;ersetzt. Obwohl der Wert im Feld „Titel“ automatisch in das Feld „Name“ kopiert wird, können Sie den Wert bearbeiten.
-   * **Beschreibung (Optional)** Geben Sie eine Beschreibung der Bedingung ein.
+   * **Titel (optional):** Geben Sie den Titel für die Bedingung ein. Titel müssen nicht eindeutig sein und dürfen Sonderzeichen und nichtenglische Zeichen enthalten. Bedingungen werden durch ihren Titel (falls verfügbar) wie etwa in Miniaturen und Asset-Eigenschaften referenziert.
+   * **Name:** Der eindeutige Name der Bedingung. Es ist nicht möglich, dass zwei Elemente (Text, Bedingung oder Liste) mit demselben Namen vorhanden sind, ungeachtet ihres jeweiligen Status. Im Feld „Name“ können Sie nur englische Sprachzeichen, Zahlen und Bindestriche eingeben. Das Feld „Name“ wird automatisch basierend auf dem Feld „Titel“ ausgefüllt. Die im Feld Titel eingegebenen Sonderzeichen, Leerzeichen, Zahlen und nicht englischen Zeichen werden im Feld Name durch Bindestriche ersetzt. Obwohl der Wert im Feld „Titel“ automatisch in das Feld „Name“ kopiert wird, können Sie den Wert bearbeiten.
+   * **Beschreibung (Optional)**  Geben Sie eine Beschreibung der Bedingung ein.
    * **Datenwörterbuch (optional)**: Wählen Sie optional das Datenwörterbuch aus, mit dem eine Verbindung hergestellt werden soll. Es können nur Elemente der Liste hinzugefügt werden, die das gleiche Datenwörterbuch verwenden wie die Bedingung oder denen kein Datenwörterbuch zugewiesen ist. Einer Liste ein Datenwörterbuch zuzuweisen, erleichtert es dem Ersteller einer Briefvorlage, die passende Bedingung zu finden.
-   * **Tags (optional)**: Wählen Sie optional die anzuwendenden Tags aus. Sie können auch den Namen eines neuen Tags eingeben und ihn erstellen. (Das neue Tag wird erstellt, wenn Sie auf **Speichern** tippen.)
+   * **Tags (optional)**: Wählen Sie optional die Tags aus, die angewendet werden sollen. Sie können auch den Namen eines neuen Tags eingeben und ihn erstellen. (Das neue Tag wird erstellt, wenn Sie auf **Speichern** tippen.)
 
 1. Tippen Sie auf **Weiter**.
-1. Tippen Sie auf **Hinzufügen Asset**.
+1. Tippen Sie auf **Asset** hinzufügen.
 1. Um der Bedingung ein Asset hinzuzufügen, wählen Sie es auf der Seite &quot;Assets auswählen&quot;aus und tippen Sie auf **Fertig**. Die Assets werden dem Bereich „Ausdruck“ hinzugefügt.
 1. Sie können mithilfe der folgenden Optionen festlegen, wie sich die Bedingung zur Laufzeit verhält:
 
    * **Auswertung mehrerer Ergebnisse deaktivieren/Auswertung mehrerer Ergebnisse aktivieren**: Wenn diese Option aktiviert ist (angezeigt als „Auswertung…aktivieren”), werden alle Bedingungen ausgewertet und das Ergebnis ist die Summe aller Bedingungen, die den Status „true“ haben. Wenn diese Option deaktiviert ist (angezeigt als „Auswertung...deaktivieren“), wird nur die erste Bedingung, die „true“ ergibt, ausgewertet und wird zur Ausgabe der Bedingung.
-   * **Seitenumbruch**: Wählen Sie diese Option (&quot; ![Umbruch](assets/break.png)&quot;), um einen Seitenumbruch zwischen den Modulen der Bedingungen hinzuzufügen. Wenn diese Option nicht ausgewählt ist ( ![nobreak](assets/nobreak.png)) und eine Bedingung auf die nächste Seite überläuft, wird die gesamte Bedingung auf die nächste Seite verschoben, anstatt die Seite zwischen der Bedingung zu wechseln.
+   * **Seitenumbruch**: Wählen Sie diese Option (  ![Umbruch](assets/break.png)) aus, um zwischen den Modulen der Bedingungen einen Seitenumbruch hinzuzufügen. Wenn diese Option nicht ausgewählt ist ( ![nobreak](assets/nobreak.png)) und eine Bedingung über die nächste Seite hinausfließt, wird die gesamte Bedingung auf die nächste Seite verschoben, anstatt auf der Seite zwischen der Bedingung umzubrechen.
 
-1. Um die Reihenfolge der Assets innerhalb der Bedingung zu ändern, tippen Sie auf das Pfeilsymbol ( ![dragndrop](assets/dragndrop.png)) und ziehen Sie es per Drag &amp; Drop. Wenn der Benutzer auf der Benutzeroberfläche „Korrespondenz erstellen“ eine Briefvorlage öffnet, wird der Inhalt in der hier festgelegten Reihenfolge zusammengestellt.
+1. Um die Reihenfolge der Assets innerhalb der Bedingung zu ändern, tippen und halten Sie das Pfeilsymbol ( ![dragndrop](assets/dragndrop.png) ) gedrückt und ziehen Sie per Drag-and-Drop. Wenn der Benutzer auf der Benutzeroberfläche „Korrespondenz erstellen“ eine Briefvorlage öffnet, wird der Inhalt in der hier festgelegten Reihenfolge zusammengestellt.
 1. Tippen Sie auf **Löschen**, um die Zeile zu löschen. Wenn Sie für die Standardzeile auf „Löschen“ tippen, werden nur die Asset-Informationen gelöscht.
-1. Tippen Sie auf **Kopieren**, um eine Zeile Duplikat.
-1. Tippen Sie auf **Bearbeiten**, um das Asset zu ändern oder den Ausdruck zu bearbeiten.
+1. Tippen Sie auf **Kopieren** , um eine Zeile zu duplizieren.
+1. Tippen Sie auf **Bearbeiten** , um das Asset zu ändern oder den Ausdruck zu bearbeiten.
 
    Weiter:
 
    * Um das Asset zu aktualisieren, tippen Sie unter der Spalte „Asset“ auf das Ordnersymbol.
-   * Um den Expression Builder zum Einfügen eines Ausdrucks zu öffnen, tippen Sie unter der Spalte „Ausdruck“ auf das Ordnersymbol. Weitere Informationen zum Ausdruck-Builder finden Sie unter [Ausdruck-Aufbau](/help/forms/using/expression-builder.md).
+   * Um den Expression Builder zum Einfügen eines Ausdrucks zu öffnen, tippen Sie unter der Spalte „Ausdruck“ auf das Ordnersymbol. Weitere Informationen zum Expression Builder finden Sie unter [Expression Builder](/help/forms/using/expression-builder.md).
 
 ### Richtlinien/Tipps und Tricks {#best-practices-tips-and-tricks-1}
 
@@ -389,9 +388,9 @@ Berücksichtigen Sie folgende Punkte beim Entwickeln von Tabellen:
    * Kopf- und Fußzeile für zusätzliche Spalte
    * Breitenverhältnis der einzelnen Spalten
 
-Sie können Fragmente in einem Brief verschachteln. Dies bedeutet, dass Sie ein Fragment innerhalb eines Fragments hinzufügen können. Die Correspondence Management Solution unterstützt bis zu vier Verschachtelungsebenen in einem Brief: **Brief**->**Fragment**->**Fragment**->**Fragment**->**Fragment**
+Sie können Fragmente in einem Brief verschachteln. Dies bedeutet, dass Sie ein Fragment innerhalb eines Fragments hinzufügen können. Die Correspondence Management-Lösung unterstützt bis zu vier Verschachtelungsebenen in einem Brief: **Letter**->**Fragment**->**Fragment**->**Fragment**->**Fragment**
 
-Ein ausführliches Beispiel zur Verwendung von statischen und dynamischen Tabellen in Layout-Fragmenten finden Sie unter [Beispiel mit Beispieldateien: Verwendung statischer und dynamischer Tabellen in einem Brief](#examplewithsamplefiles).
+Ein detailliertes Beispiel für die Verwendung von statischen und dynamischen Tabellen in Layout-Fragmenten finden Sie unter [Beispiel mit Beispieldateien: Verwendung statischer und dynamischer Tabellen in einem Brief](#examplewithsamplefiles).
 
 ### Layout-Fragment erstellen {#creating-a-layout-fragment}
 
@@ -399,14 +398,14 @@ Ein ausführliches Beispiel zur Verwendung von statischen und dynamischen Tabell
 1. Correspondence Management zeigt die verfügbaren XDP-Dateien an. Wählen Sie die XDP aus, auf der das Layout-Fragment basieren soll, und tippen Sie auf **Weiter**.
 1. Geben Sie folgende Informationen für das Layout an:
 
-   * **Titel (Optional):** Geben Sie den Titel für das Layout-Fragment ein. Titel müssen nicht eindeutig sein und dürfen Sonderzeichen und nichtenglische Zeichen enthalten. Layout-Fragmente werden durch ihre Titel (sofern verfügbar) referenziert, z. B. in Miniaturen und Asset-Eigenschaften.
-   * **Name:** Der eindeutige Name des Layout-Fragments. Es ist nicht möglich, dass zwei Elemente (Text, Bedingung oder Liste) mit demselben Namen vorhanden sind, ungeachtet ihres jeweiligen Status. Im Feld „Name“ können Sie nur englische Sprachzeichen, Zahlen und Bindestriche eingeben. Das Feld „Name“ wird automatisch basierend auf dem Feld „Titel“ ausgefüllt. Die im Feld &quot;Titel&quot;eingegebenen Sonderzeichen, Leerzeichen, Zahlen und nichtenglischen Zeichen werden durch Bindestriche im Feld &quot;Name&quot;ersetzt. Obwohl der Wert im Feld „Titel“ automatisch in das Feld „Name“ kopiert wird, können Sie den Wert bearbeiten. Dieser Name wird in der Liste in der Benutzeroberfläche &quot;Elemente verwalten&quot;angezeigt.
-   * **Beschreibung (optional)**: Beschreibung, die in der Liste auf der Benutzeroberfläche &quot;Elemente verwalten&quot;angezeigt wird.
+   * **Titel (Optional):** Geben Sie den Titel für das Layout-Fragment ein. Titel müssen nicht eindeutig sein und dürfen Sonderzeichen und nichtenglische Zeichen enthalten. Layout-Fragmente werden durch ihren Titel (sofern verfügbar) wie z. B. in Miniaturen und Asset-Eigenschaften referenziert.
+   * **Name:** Der eindeutige Name für das Layout-Fragment. Es ist nicht möglich, dass zwei Elemente (Text, Bedingung oder Liste) mit demselben Namen vorhanden sind, ungeachtet ihres jeweiligen Status. Im Feld „Name“ können Sie nur englische Sprachzeichen, Zahlen und Bindestriche eingeben. Das Feld „Name“ wird automatisch basierend auf dem Feld „Titel“ ausgefüllt. Die im Feld Titel eingegebenen Sonderzeichen, Leerzeichen, Zahlen und nicht englischen Zeichen werden im Feld Name durch Bindestriche ersetzt. Obwohl der Wert im Feld „Titel“ automatisch in das Feld „Name“ kopiert wird, können Sie den Wert bearbeiten. Dieser Name wird in der Liste in der Benutzeroberfläche &quot;Assets verwalten&quot;angezeigt.
+   * **Beschreibung (Optional)**: Beschreibung, die in der Liste auf der Benutzeroberfläche &quot;Assets verwalten&quot;angezeigt wird.
    * **Tags (optional)**: Wählen Sie optional die Tags aus, die auf die Bedingung angewendet werden sollen. Sie können auch den Namen eines neuen Tags eingeben und ihn erstellen.
 
 1. Tippen Sie auf die Registerkarte **Tabelle** und geben Sie die folgenden Informationen für das Layout an:
 
-   * **Konfiguration für**: Wählen Sie die zu konfigurierende Tabelle aus. Als Suffix zum Tabellennamen in der Dropdown-Liste ist (Statisch), wenn die Tabelle statisch ist, oder (Dynamisch), wenn es sich bei der Tabelle um eine dynamische Tabelle handelt. Statische Tabellen enthalten eine feste Anzahl Zeilen. Statische Tabellen können Zielbereiche und -felder enthalten. Diese Zielbereiche und -felder können nicht an wiederholende DDEs gebunden werden. Die an Tabellenzellen gebundenen Daten bestimmen die Anzahl der Zeilen für dynamische Tabellen.
+   * **Konfiguration für**: Wählen Sie die zu konfigurierende Tabelle aus. Als Suffix des Tabellennamens in der Dropdown-Liste ist (Statisch) , wenn die Tabelle statisch ist, oder (Dynamisch), wenn es sich bei der Tabelle um eine dynamische Tabelle handelt. Statische Tabellen enthalten eine feste Anzahl Zeilen. Statische Tabellen können Zielbereiche und -felder enthalten. Diese Zielbereiche und -felder können nicht an wiederholende DDEs gebunden werden. Die an Tabellenzellen gebundenen Daten bestimmen die Anzahl der Zeilen für dynamische Tabellen.
 
    * **Zeilen**: Wählen Sie die Anzahl der Zeilen für das Layout aus. Die konfigurierte Zeilenanzahl muss größer oder gleich der ursprünglichen Zeilenanzahl sein.
    * **Spalten**: Wählen Sie die Anzahl der Spalten für das Layout aus. Die konfigurierte Spaltenanzahl muss größer oder gleich der ursprünglichen Spaltenanzahl sein.
@@ -418,7 +417,7 @@ Ein ausführliches Beispiel zur Verwendung von statischen und dynamischen Tabell
    * **Typ**: Typ der zusätzlichen Spalte. Feld- oder Zielbereich Der Typ ist für statische Platzhaltertabellen aktiviert. Der Typ kann auf Spaltenebene definiert werden, nicht auf Zellenebene. Alle Zellen in einer erweiterten Spalte sind vom gleichen Typ. Für eine dynamische Tabelle haben alle Spalten den Typ „Feld“. Für Nicht-Platzhaltertabellen können Sie den Typ der zusätzlichen Spalten nicht definieren. In diesem Fall ist der Typ der zusätzlichen Zellen in einer erweiterten Spalte identisch mit dem Typ der letzten Spalte in dieser Zeile. Der Typ der Zelle in der zusätzlichen Zeile ist identisch mit dem Typ der letzten Zelle in dieser Spalte.
    * **Breitenverhältnis**: Verhältnis der Tabellenspaltenbreiten.
 
-   Ein ausführliches Beispiel zur Verwendung von statischen und dynamischen Tabellen in Layout-Fragmenten finden Sie unter [Beispiel mit Beispieldateien: Verwendung statischer und dynamischer Tabellen in einem Brief](#examplewithsamplefiles).
+   Ein detailliertes Beispiel für die Verwendung von statischen und dynamischen Tabellen in Layout-Fragmenten finden Sie unter [Beispiel mit Beispieldateien: Verwendung statischer und dynamischer Tabellen in einem Brief](#examplewithsamplefiles).
 
 1. Tippen Sie auf **Speichern**.
 
@@ -434,7 +433,7 @@ Bei der Erstellung von Zielbereichen in Designer ist es hilfreich, die Standardb
 
 So legen Sie die Standardbindung fest:
 
-1. Tippen Sie in Designer auf **Werkzeuge** > **Optionen** > **Datenbindungen** > **Teilformularbindung**.
+1. Tippen Sie in Designer auf **Tools** > **Optionen** > **Datenbindungen** > **Teilformularbindung**.
 
 1. Wählen Sie in der Liste „Standardbindung für neue Unterformulare“ die Option **Keine Datenbindung** aus.
 
@@ -448,7 +447,7 @@ Wenn ein auf der Benutzeroberfläche „Korrespondenz erstellen“ erstellter Br
 * Felder mit Beschriftungen sind standardmäßig mit Abschnitt 508 konform. Das Feldattribut /field/assist/speak@priority ist standardmäßig auf „custom“ gesetzt, d. h. sofern kein benutzerdefinierter Text für eine Bildschirmlesehilfe bereitgestellt wird, liest die Bildschirmlesehilfe die Beschriftung des Feldes.
 * Legen Sie bei Feldern ohne Beschriftungen eine QuickInfo fest und weisen Sie Bildschirmlesehilfen an, die QuickInfo zu lesen, indem Sie
 
-`/field/assist/speak@priority="toolTip"` und geben Sie QuickInfo-Text in  `/field/assist/toolTip`.
+`/field/assist/speak@priority="toolTip"` und geben Sie QuickInfo-Text in  `/field/assist/toolTip`an.
 
 #### Datumsformate in Designer und Asset Configuration Manager {#date-formats-in-designer-and-asset-configuration-manager}
 
@@ -500,21 +499,21 @@ Dieses Beispiels zeigt, wie Sie eine dynamische und eine statische Tabelle erste
 
    ![Datenwörterbuchstruktur](assets/dd.jpeg)
 
-   [Datei laden](assets/exportpackage_1431709897770.cmp.zip)
+[Datei laden](assets/exportpackage_1431709897770.cmp.zip)
 
 1. Erstellen Sie in Designer zwei XDPs (Layout-Fragmente): eine dynamische Tabelle und eine statische Tabelle. Für beide Layouts:
 
-   * hinzufügen Teilformular in die Tabellenspalte. Stellen Sie sicher, dass Sie das Layout des übergeordneten Unterformulars der Tabelle auf Fluss ändern, und entfernen Sie die Bindungen des Unterformulars in der Tabelle.
-   * hinzufügen Sie ein Teilformular in die Tabellenzelle. Stellen Sie sicher, dass Sie das Layout des übergeordneten Unterformulars der Tabelle auf Fluss ändern, und entfernen Sie die Bindungen des Unterformulars in der Tabelle.
+   * Fügen Sie der Tabellenspalte ein Teilformular hinzu. Stellen Sie sicher, dass Sie das Layout des übergeordneten Unterformulars der Tabelle auf Fluss ändern, und entfernen Sie die Bindungen des Unterformulars in der Tabelle.
+   * Fügen Sie der Tabellenzelle ein Teilformular hinzu. Stellen Sie sicher, dass Sie das Layout des übergeordneten Unterformulars der Tabelle auf Fluss ändern, und entfernen Sie die Bindungen des Unterformulars in der Tabelle.
 
    Oder verwenden Sie die hier angehängten statischen und dynamischen XDPs.
 
    Weitere Informationen zum Arbeiten mit Layout-Fragmenten finden Sie unter [Layout-Fragmente](#layoutfragments).
 Weitere Informationen zum Entwerfen von Layouts finden Sie unter [Designer-Hilfe](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/).
 
-   [Datei laden](assets/static.xdp.zip)
+[Datei laden](assets/static.xdp.zip)
 
-   [Datei laden](assets/dynamic.xdp.zip)
+[Datei laden](assets/dynamic.xdp.zip)
 
 1. Laden Sie die XDP-Dateien auf AEM Forms hoch.
 1. Erstellen Sie ein Layout-Fragment basierend auf der dynamischen XDP. Die Registerkarte „Tabelle“ der Eigenschaften zeigt an, dass die Tabelle dynamisch ist (Feld „Konfiguration für“). Die Anzahl der Zeilen (1) und Spalten (3) wird von der XDP bzw. dem Layout-Fragment abgeleitet.
@@ -553,4 +552,3 @@ Um ein Dokumentfragment mit den Eigenschaften und Elementen ähnlich wie einem v
 1. Wählen Sie „Einfügen“. Das Dialogfeld „Einfügen“ wird angezeigt. Wenn Sie die Dokumentfragmente kopieren und an derselben Stelle einfügen, weist das System den neuen Kopien automatisch Namen und Titel zu, Sie können diese jedoch ändern.
 1. Bearbeiten Sie gegebenenfalls den Titel und den Namen, mit denen Sie die Kopie des Dokumentfragmenten speichern möchten.
 1. Wählen Sie „Einfügen“. Die Kopie des Dokumentfragments wird erstellt.
-
