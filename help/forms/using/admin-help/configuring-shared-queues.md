@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc403a60-b635-4334-9bf8-2f3d2036b2f3
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 5f4467c1-0f3f-4dc6-9bd5-98259f327295
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 97%
 
 ---
-
 
 # Freigegebene Warteschlangen konfigurieren{#configuring-shared-queues}
 
@@ -85,4 +84,3 @@ Nachdem diese Aufgaben zugewiesen wurden, können sie vom Benutzer, der Workspac
 1. Wählen Sie auf der Registerkarte „Zugriff von einem Benutzer verwalten“ den Benutzer aus, dessen Warteschlange sie verwalten möchten.
 1. Das untere rechte Fenster zeigt die Liste von Benutzerwarteschlangen an, die dem ausgewählten Benutzer zugewiesen sind. Wählen Sie die Benutzerwarteschlange und klicken Sie auf „Sperren“.
 1. Klicken Sie dann auf „Speichern“.
-
