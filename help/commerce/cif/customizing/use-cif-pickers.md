@@ -1,13 +1,12 @@
 ---
-title: Verwendung der CIF-Produkt- und Kategorie-Auswahl
-description: Erfahren Sie, wie Sie mit der CIF-Produkt- und Kategorie-Auswahl in Ihren Commerce-Komponenten Autoren und Marketingfachleute bei der effizienten Arbeit mit Commerce-Produkt- und Katalogdaten unterstützen.
+title: Verwendung der CIF-Produkt- und Kategorieauswahl
+description: Erfahren Sie, wie Sie mit der CIF-Produkt- und Kategorieauswahl in Ihren Commerce-Komponenten für Kunden Autoren und Marketing-Experten unterstützen können, um effizient mit Commerce-Produkten und -Katalogdaten zu arbeiten.
 sub-product: Commerce
 topics: Development
 version: cloud-service
 activity: develop
 audience: developer
 feature: Commerce Integration Framework
-translation-type: tm+mt
 source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
 workflow-type: tm+mt
 source-wordcount: '581'
@@ -15,13 +14,13 @@ ht-degree: 1%
 
 ---
 
-# AEM Content &amp; Commerce Authoring Picker {#cif-pickers}
+# AEM Content &amp; Commerce Authoring-Wähler {#cif-pickers}
 
-AEM Content &amp; Commerce Authoring bietet eine Reihe von Authoring-Werkzeugen, mit denen AEM Autoren und Marketingexperten effizient mit Commerce-Produktdaten und -Katalogen arbeiten können. Die Produktauswahl und die Kategorie-Auswahl sind Teil des CIF-Add-ons und werden von den CIF-Kernkomponenten verwendet. Projekte können diese Picker in jedem Komponentendialog verwenden, um Produkte oder Kategorien auszuwählen.
+AEM Content &amp; Commerce Authoring bietet eine Reihe von Authoring-Tools, mit denen AEM Autoren und Marketing-Experten effizient mit Commerce-Produktdaten und -Katalogen arbeiten können. Die Produktauswahl und die Kategorieauswahl sind Teil des CIF-Add-ons und werden von den CIF-Kernkomponenten verwendet. Projekte können diese Auswahl in jedem Komponentendialogfeld verwenden, um Produkte oder Kategorien auszuwählen.
 
 ## Produktauswahl {#product-picker}
 
-Um die Produktauswahl in einer Projektkomponente zu verwenden, muss ein Entwickler einem Komponentendialogfeld `commerce/gui/components/common/cifproductfield` hinzufügen. Verwenden Sie beispielsweise Folgendes für cq:dialog:
+Um die Produktauswahl in einer Projektkomponente zu verwenden, muss ein Entwickler `commerce/gui/components/common/cifproductfield` zu einem Komponentendialogfeld hinzufügen. Verwenden Sie beispielsweise Folgendes für cq:dialog:
 
 ```xml
 <product jcr:primaryType="nt:unstructured"
@@ -33,26 +32,26 @@ Um die Produktauswahl in einer Projektkomponente zu verwenden, muss ein Entwickl
     selectionId="sku"/>
 ```
 
-Das Produktfeld ermöglicht die Navigation zu dem Produkt, das ein Benutzer über die verschiedenen Ansichten auswählen möchte. Standardmäßig gibt das Produktfeld die ID des Produkts zurück, kann jedoch mithilfe des Attributs `selectionId` konfiguriert werden.
+Das Produktfeld ermöglicht die Navigation zu dem Produkt, das ein Benutzer über die verschiedenen Ansichten auswählen möchte. Standardmäßig gibt das Produktfeld die Kennung des Produkts zurück, kann jedoch mithilfe des Attributs `selectionId` konfiguriert werden.
 
-Das Produktauswahl-Feld unterstützt die folgenden optionalen Eigenschaften:
+Das Produktauswahlfeld unterstützt die folgenden optionalen Eigenschaften:
 
-- selectionId (id, uid, sku, slug, CombinedSlug, CombinedSku) - ermöglicht die Auswahl des Produktattributs, das vom Picker zurückgegeben werden soll (default = id). Bei Verwendung von sku wird der Sku des ausgewählten Produkts zurückgegeben, während Sie CombinedSku verwenden, und es wird eine Zeichenfolge wie base#variation mit dem Skus des Basisprodukts und der ausgewählten Variante oder eine einzelne Sku zurückgegeben, wenn ein Basisprodukt ausgewählt ist.
-- filter (folderOrProduct, folderOrProductOrVariante) - Filter der Inhalte, die vom Picker während der Navigation in der Produktstruktur wiedergegeben werden sollen. folderOrProduct - rendert Ordner und Produkte. folderOrProductOrVariante - rendert Ordner, Produkt- und Produktvarianten. Wenn ein Produkt oder eine Produktvariante gerendert wird, kann sie auch in der Auswahl ausgewählt werden. (default = folderOrProduct)
-- multiple (true, false) - Aktivieren Sie die Auswahl eines oder mehrerer Produkte (Standard = false)
-- emptyText - zum Konfigurieren des leeren Textwerts des Auswahlfelds
+- selectionId (id, uid, sku, slug, CombinedSlug, CombinedSku) - ermöglicht die Auswahl des Produktattributs, das vom Picker zurückgegeben werden soll (Standard = id). Bei Verwendung der SKU wird die SKU des ausgewählten Produkts zurückgegeben, während die kombinierte SKU verwendet wird, und es wird eine Zeichenfolge wie base#variant mit der SKU des Basisprodukts und der ausgewählten Variante oder eine einzelne SKU zurückgegeben, wenn ein Basisprodukt ausgewählt ist.
+- filter (folderOrProduct, folderOrProductOrVariant) - filtert den Inhalt, der vom Picker während der Navigation in der Produktstruktur gerendert werden soll. folderOrProduct - rendert Ordner und Produkte. folderOrProductOrVariant - rendert Ordner, Produkt- und Produktvarianten. Wenn ein Produkt oder eine Produktvariante gerendert wird, kann sie auch in der Auswahl ausgewählt werden. (default = folderOrProduct)
+- multiple (true, false) - Aktivieren der Auswahl eines oder mehrerer Produkte (Standard = false)
+- emptyText - zum Konfigurieren des leeren Textwerts des Picker-Felds
 
-Darüber hinaus werden auch standardmäßige Eigenschaften von Diaglog-Feldern wie `name`, `fieldLabel` oder `fieldDescription` unterstützt.
+Darüber hinaus werden auch standardmäßige Eigenschaften von Dialogfeldfeldern wie `name`, `fieldLabel` oder `fieldDescription` unterstützt.
 
-Die Komponente `cifproductfield` erfordert die clientlib-Datei &quot;cif.shell.picker&quot;. Um einem Dialogfeld eine clientlib hinzuzufügen, können Sie die Eigenschaft extraClientlibs verwenden.
+Für die Komponente `cifproductfield` ist die clientlib cif.shell.picker erforderlich. Um einem Dialogfeld eine clientlib hinzuzufügen, können Sie die Eigenschaft extraClientlibs verwenden.
 
-Ein ausführliches Arbeitsbeispiel für `cifproductfield` finden Sie im Projekt [CIF Core Components](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml). Siehe auch [Anpassen von Dialogen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) in der Dokumentation zu AEM Kernkomponenten.
+Ein vollständiges Arbeitsbeispiel für `cifproductfield` finden Sie im Projekt [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml) . Siehe auch [Anpassen von Dialogfeldern](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) in der Dokumentation zu AEM Kernkomponenten .
 
-## Kategorie-Picker {#category-picker}
+## Kategorieauswahl {#category-picker}
 
-Der Kategorie-Picker kann auch in einem Komponentendialogfeld ähnlich wie die Produktauswahl verwendet werden.
+Die Kategorieauswahl kann auch in einem Komponentendialogfeld auf ähnliche Weise wie die Produktauswahl verwendet werden.
 
-Das folgende Snippet kann in einer cq:dialog-Konfiguration verwendet werden:
+Das folgende Snippet kann in einer cq:dialog -Konfiguration verwendet werden:
 
 ```xml
 <category jcr:primaryType="nt:unstructured" 
@@ -62,13 +61,13 @@ Das folgende Snippet kann in einer cq:dialog-Konfiguration verwendet werden:
     selectionId="uid" />
 ```
 
-Das Auswahlfeld für Kategorien unterstützt die folgenden optionalen Eigenschaften:
+Das Kategorieauswahlfeld unterstützt die folgenden optionalen Eigenschaften:
 
-- selectionId(id, uid, slug, idAndUrlPath, uidAndUrlPath) - ermöglicht die Auswahl des Kategorie-Attributs, das vom Picker zurückgegeben werden soll (Standard = id). idAndUrlPath &amp; uidAndUrlPath sind spezielle Optionen, mit denen die Kategorien id/uid und url_path durch einen | Zeichen wie z.B. 1|Herren/Top.
+- selectionId(id, uid, slug, idAndUrlPath, uidAndUrlPath) - ermöglicht die Auswahl des Kategorieattributs, das vom Picker zurückgegeben werden soll (Standard = id). idAndUrlPath &amp; uidAndUrlPath sind spezielle Optionen, mit denen die Kategorie id/uid und url_path durch einen | Zeichen wie z.B. 1|men/tops.
 - multiple (true, false) - Aktivieren der Auswahl einer oder mehrerer Kategorien (Standard = false)
 
-Darüber hinaus werden auch standardmäßige Eigenschaften von Diaglog-Feldern wie `name`, `fieldLabel` oder `fieldDescription` unterstützt.
+Darüber hinaus werden auch standardmäßige Eigenschaften von Dialogfeldfeldern wie `name`, `fieldLabel` oder `fieldDescription` unterstützt.
 
-Wie bei der Komponente `cifproductfield` erfordert die Komponente `cifcategoryfield` auch die clientlib-Datei &quot;cif.shell.picker&quot;. Um einem Dialogfeld eine clientlib hinzuzufügen, können Sie die Eigenschaft `extraClientlibs` verwenden. Siehe [Anpassen von Dialogen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) in der Dokumentation zu AEM Kernkomponenten.
+Wie die Komponente `cifproductfield` erfordert die Komponente `cifcategoryfield` auch die clientlib cif.shell.picker . Um eine clientlib zu einem Dialogfeld hinzuzufügen, können Sie die Eigenschaft `extraClientlibs` verwenden. Siehe [Anpassen von Dialogfeldern](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) in der Dokumentation zu AEM Kernkomponenten .
 
-Ein ausführliches Arbeitsbeispiel für `cifcategoryfield` finden Sie im Projekt [CIF Core Components](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml).
+Ein vollständiges Arbeitsbeispiel für `cifcategoryfield` finden Sie im Projekt [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml) .
