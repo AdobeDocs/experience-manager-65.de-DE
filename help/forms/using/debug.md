@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 7330c03f-7102-43c0-aac6-825cce8a113d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 71%
 
 ---
-
 
 # Debuggings von HTML5-Formularen {#debugging-html-forms}
 
@@ -51,7 +50,7 @@ Die wahrscheinliche Ursache ist, dass mindestens ein Parameter in der URL falsch
   </tr>
   <tr>
    <td>data</td>
-   <td>UTF-8-kodierte Datenbyte, die mit der Vorlage zusammengeführt werden.</td>
+   <td>UTF-8-kodierte Datenbytes, die mit der Vorlage zusammengeführt werden.</td>
   </tr>
  </tbody>
 </table>
@@ -59,12 +58,12 @@ Die wahrscheinliche Ursache ist, dass mindestens ein Parameter in der URL falsch
 ## Problem: Ein Formular kann nicht gerendert werden (eine Fehlermeldung wird angezeigt) {#problem-unable-to-render-form}
 
 1. Stellen Sie sicher, dass die angegebenen Parameter korrekt sind. Detaillierte Informationen zu Parametern finden Sie unter [Render-Parameter](#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page).
-1. Melden Sie sich bei CRX Package Manager an (unter https://&lt;server>:&lt;port>/crx/packmgr/index.jsp) und überprüfen Sie, ob die folgenden Pakete korrekt installiert wurden:
+1. Melden Sie sich bei CRX Package Manager an (unter https://&lt;Server>:&lt;Port>/crx/packmgr/index.jsp) und überprüfen Sie, ob die folgenden Pakete ordnungsgemäß installiert sind:
 
    * adobe-lc-forms-content-pkg-&lt;version>.zip
    * adobe-lc-forms-runtime-pkg-&lt;version>.zip
 
-1. Melden Sie sich bei der CQ Web Console (Felix Console) unter https://&lt;server>:&lt;port>/system/console/bundles an.
+1. Melden Sie sich bei CQ Web Console (Felix Console) unter https://&lt;Server>:&lt;Port>/system/console/bundles an.
 
     Stellen Sie sicher, dass der Status der folgenden Pakete „aktiv“ ist:
 
@@ -82,8 +81,8 @@ Die wahrscheinliche Ursache ist, dass mindestens ein Parameter in der URL falsch
 
 ## Problem: Formular rendert ohne Stile {#problem-form-renders-without-styles}
 
-1. Rufen Sie im Browser **„Developer Tools“ auf**. Stellen Sie sicher, dass Profil.css verfügbar ist.
-1. Wenn die Datei &quot;Profil.css&quot;nicht verfügbar ist, melden Sie sich bei CRX DE unter https://&lt;server>:&lt;port>/crx/de an.
+1. Rufen Sie im Browser **„Developer Tools“ auf**. Stellen Sie sicher, dass profile.css verfügbar ist.
+1. Wenn die Datei profile.css nicht verfügbar ist, melden Sie sich unter https://&lt;Server>:&lt;Port>/crx/de bei CRX DE an.
 1. Navigieren Sie in der Ordnerhierarchie auf der linken Seite zu /etc/clientlibs/fd/xfaforms/. Öffnen Sie die in den Ordnern aufgeführten css.txt-Dateien.
 
    * Profil
@@ -107,26 +106,26 @@ Die wahrscheinliche Ursache ist, dass mindestens ein Parameter in der URL falsch
 
 ### Problem: Unerwarteter Fehler gefunden {#problem-unexpected-error-encountered}
 
-1. Fügen Sie in der Formular-URL den Parameter &quot;Abfrage&quot;debugClientLibs hinzu und setzen Sie den Wert auf &quot;true&quot;(z. B.: https://&lt;server>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;beliebiger Pfad>&amp;template=&lt;Name der xdp-Datei>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
+1. Fügen Sie in der Formular-URL den Abfrageparameter debugClientLibs hinzu und legen Sie dessen Wert auf true fest (z. B.: https://&lt;server>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;some path>&amp;template=&lt;name of xdp file>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
 1. Im Desktop-Browser, z. B. Chrome, rufen Sie „Developer Tools“ -> „Console“ auf
 1. Öffnen Sie die Protokolle, um den Fehlertyp zu identifizieren. Detaillierte Informationen zu Protokollen finden Sie unter [Protokolle für HTML5-Formulare](/help/forms/using/enable-logs.md).
 1. Wechseln Sie zu „Developer Tools“ -> „Console“. Verwenden Sie die Stapelablaufverfolgung, um den Code zu finden, der den Fehler verursacht hat. Debuggen Sie den Fehler, um das Problem zu lösen.
 
    >[!NOTE]
    >
-   >Bei einem Scripting-Fehler überprüfen Sie, ob das Problem beim Rendern des Formulars in PDF auch auftritt. Wenn ja, gibt es ein Problem in der Formular-Skriptlogik.
+   >Bei einem Scripting-Fehler überprüfen Sie, ob das Problem beim Rendern des Formulars in PDF auch auftritt. Wenn ja, liegt ein Problem in der Formular-Skriptlogik vor.
 
 ## Problem: Formular lässt sich nicht versenden {#problem-unable-to-submit-the-form}
 
 1. Vergewissern Sie sich, dass Sie Zugriffsrechte auf den AEM-Server haben und mit dem Server verbunden sind.
 1. Überprüfen Sie, ob der Parameter „submitUrl“ korrekt ist.
-1. Aktivieren Sie die clientseitigen Protokolle, wie unter [Protokolle für die HTML5-Formulare](/help/forms/using/enable-logs.md) beschrieben, und verwenden Sie die Debugoption **1-a5-b5-c5**. Rendern Sie das Formular erneut und klicken Sie auf „Senden“. Öffnen Sie die Debug-Console im Browser und prüfen Sie, ob Fehler vorliegen.
+1. Aktivieren Sie die clientseitigen Protokolle, wie unter [Protokolle für die HTML5-Formulare](/help/forms/using/enable-logs.md) erwähnt, indem Sie die Debug-Option als **1-a5-b5-c5** verwenden. Rendern Sie das Formular erneut und klicken Sie auf „Senden“. Öffnen Sie die Debug-Console im Browser und prüfen Sie, ob Fehler vorliegen.
 1. Suchen Sie die Serverprotokolle, die erwähnt werden unter [Protokolle für die HTML5-Formulare](/help/forms/using/enable-logs.md). Prüfen Sie, ob in den Serverprotokollen während der Sendung ein Fehler verzeichnet wurde.
 
 ## Problem: Lokalisierte Fehlermeldungen werden nicht angezeigt  {#problem-localized-error-messages-do-not-display}
 
 1. Rendern Sie das Formular mit dem zusätzlichem Abfrageparameter **debugClientLibs=true** im Desktop-Browser, wechseln Sie dann zu „Developer Tools -> Ressourcen“ und suchen Sie die Datei „I18N.css“.
-1. Wenn die Datei nicht verfügbar ist, melden Sie sich bei CRX DE unter https://&lt;server>:&lt;port>/crx/de an.
+1. Wenn die Datei nicht verfügbar ist, melden Sie sich unter https://&lt;Server>:&lt;Port>/crx/de bei CRX DE an.
 1. In der Ordnerhierarchie auf der linken Seite navigieren Sie zu „/libs/fd/xfaforms/clientlibs/I18N“. Stellen Sie sicher, dass die folgenden Dateien und Ordner vorhanden sind:
 
    * Namespace.js
@@ -178,7 +177,7 @@ Schritttext
   </tr>
   <tr>
    <td>data</td>
-   <td>UTF-8-kodierte Datenbyte, die mit der Vorlage zusammengeführt werden.</td>
+   <td>UTF-8-kodierte Datenbytes, die mit der Vorlage zusammengeführt werden.</td>
   </tr>
  </tbody>
 </table>
