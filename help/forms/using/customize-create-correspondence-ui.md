@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
-feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Korrespondenzverwaltung
+exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1101'
 ht-degree: 79%
 
 ---
-
 
 # Anpassen der Benutzeroberfläche „Korrespondenz erstellen“{#customize-create-correspondence-ui}
 
@@ -38,8 +37,8 @@ Um ein Logobild Ihrer Wahl einzurichten, führen Sie die folgenden Schritte durc
 1. Erstellen Sie die entsprechende [Ordnerstruktur in CRX](#creatingfolderstructure).
 1. [Laden Sie die neue Logodatei ](#uploadlogo) in den Ordner hoch, den Sie in CRX erstellt haben.
 
-1. [Richten Sie ](#createcss) CSS auf CRX ein, um auf das neue Logo zu verweisen.
-1. Löschen Sie den Browserverlauf und aktualisieren Sie die Benutzeroberfläche &quot;Korrespondenz erstellen&quot;](#refreshccrui).[
+1. [Richten Sie das ](#createcss) CSS auf CRX ein, um auf das neue Logo zu verweisen.
+1. Löschen Sie den Browserverlauf und aktualisieren Sie [die Benutzeroberfläche &quot;Korrespondenz erstellen](#refreshccrui)&quot;.
 
 ## Erstellen der gewünschten Ordnerstruktur {#creatingfolderstructure}
 
@@ -51,7 +50,7 @@ Die /apps-Verzweigung (Ordnerstruktur):
 
 * Stellt sicher, dass Ihre Dateien im Falle eines Updates für das System sicher sind. Bei einem Upgrade, Feature Pack oder einem Hotfix wird die /libs-Verzweigung aktualisiert und wenn Sie Ihre Änderungen in der /libs-Verzweigung hosten, werden sie überschrieben.
 * Hilft Ihnen dabei, das vorhandene System/die Verzweigung nicht zu beeinträchtigen, was unter Umständen geschehen ist, falls Sie die Standardspeicherorte zum Speichern der benutzerdefinierten Dateien verwendet haben.
-* Hilft den Ressourcen, höhere Priorität zu erhalten, wenn AEM nach Ressourcen sucht. AEM ist so konfiguriert, dass zuerst die /apps-Verzweigung und dann die /libs-Verzweigung nach einer Ressource gesucht wird. Dieser Mechanismus bedeutet, dass das System die Überlagerung verwendet (und alle dort definierten Anpassungen).
+* Hilft den Ressourcen, höhere Priorität zu erhalten, wenn AEM nach Ressourcen sucht. AEM ist so konfiguriert, dass zuerst die Verzweigung /apps und dann die Verzweigung /libs durchsucht wird, um eine Ressource zu finden. Dieser Mechanismus bedeutet, dass das System die Überlagerung verwendet (und alle dort definierten Anpassungen).
 
 Führen Sie die folgenden Schritte aus, um die gewünschte Ordnerstruktur in der /apps-Verzweigung zu erstellen:
 
@@ -60,15 +59,15 @@ Führen Sie die folgenden Schritte aus, um die gewünschte Ordnerstruktur in der
 
    Schritte zum Erstellen des css-Ordners:
 
-   1. Klicken Sie mit der rechten Maustaste auf den Ordner **css** unter folgendem Pfad und wählen Sie **Überlagerungsknoten**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner **css** im folgenden Pfad und wählen Sie **Überlagerungsknoten** aus: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
 
       ![Überlagerungsknoten](assets/1_overlaynode_css.png)
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **Pfad:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
+      **Pfad:**  /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
 
-      **Überlagerungsort:** /apps/
+      **Überlagerungsspeicherort:** /apps/
 
       **Knotentypen abgleichen:** Überprüft
 
@@ -76,7 +75,7 @@ Führen Sie die folgenden Schritte aus, um die gewünschte Ordnerstruktur in der
 
       >[!NOTE]
       >
-      >Nehmen Sie keine Änderungen in der /libs-Verzweigung vor. Alle Änderungen, die Sie vornehmen, gehen möglicherweise verloren, da diese Verzweigung sich ändern kann, wenn Sie:
+      >Nehmen Sie keine Änderungen in der Verzweigung /libs vor. Alle Änderungen, die Sie vornehmen, gehen möglicherweise verloren, da diese Verzweigung sich ändern kann, wenn Sie:
       >
       >    
       >    
@@ -91,12 +90,12 @@ Führen Sie die folgenden Schritte aus, um die gewünschte Ordnerstruktur in der
 
 1. Erstellen Sie im Anwendungsordner einen Ordner mit dem Namen `imgs` mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der imgs-Ordner (im ccrui-Ordner).
 
-   1. Klicken Sie mit der rechten Maustaste auf den Ordner **imgs** unter folgendem Pfad und wählen Sie **Überlagerungsknoten**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner **imgs** im folgenden Pfad und wählen Sie **Überlagerungsknoten** aus: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **Pfad:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
+      **Pfad:**  /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
 
-      **Überlagerungsort:** /apps/
+      **Überlagerungsspeicherort:** /apps/
 
       **Knotentypen abgleichen:** Überprüft
 
@@ -139,11 +138,11 @@ Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Logodatei auf 
 
    ![jcrcontentproperties](assets/jcrcontentproperties.png)
 
-1. Klicken Sie bei gedrückter Dublette auf die Eigenschaft **jcr:data**.
+1. Doppelklicken Sie auf die Eigenschaft **jcr:data** .
 
    Das Dialogfeld „jcr:data bearbeiten“ wird angezeigt.
 
-   Klicken Sie nun auf den Ordner newlogo.png, klicken Sie in der Dublette auf jcr:content (dim-Option) und legen Sie den Typ nt:resource fest. Falls sie nicht vorhanden ist, erstellen Sie zuerst eine Eigenschaft mit dem Namen „jcr:content“.
+   Klicken Sie nun auf den Ordner newlogo.png , doppelklicken Sie auf jcr:content (dim-Option) und legen Sie den Typ nt:resource fest. Falls sie nicht vorhanden ist, erstellen Sie zuerst eine Eigenschaft mit dem Namen „jcr:content“.
 
 1. Klicken Sie im Dialogfeld „jcr:data bearbeiten“, auf **Durchsuchen** und wählen Sie die Bilddatei, die Sie als Logo (hier CustomLogo.png) verwenden möchten.
 
@@ -155,7 +154,7 @@ Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Logodatei auf 
 
 1. Klicken Sie auf **Alle speichern**.
 
-## Erstellen des CSS, um das Logo in der Benutzeroberfläche zu integrieren  {#createcss}
+## Erstellen des CSS, um das Logo in der Benutzeroberfläche zu integrieren {#createcss}
 
 Das benutzerdefinierte Logobild ist ein zusätzliches im Inhaltskontext zu ladendes Stylesheet.
 
@@ -169,7 +168,7 @@ Führen Sie die folgenden Schritte aus, um das Stylesheet für die Wiedergabe de
    Schritte zum Erstellen der customcss.css-Datei:
 
    1. Klicken Sie mit der rechten Maustaste auf den Ordner **css** und wählen Sie **Erstellen > Ordner erstellen**.
-   1. Geben Sie im Dialogfeld &quot;Neue Datei&quot;den Namen der CSS als `customcss.css` ein (Sie können keinen anderen Dateinamen verwenden) und klicken Sie auf **OK**.
+   1. Geben Sie im Dialogfeld &quot;Neue Datei&quot;den Namen des CSS als `customcss.css` ein (Sie können keinen anderen Dateinamen verwenden) und klicken Sie auf **OK**.
    1. Fügen Sie den folgenden Code zu der neu erstellte CSS-Datei hinzu. Geben Sie unter „content:url“ im Code den Namen des Bildes ein, das Sie in den imgs-Ordner in CRXDE hochgeladen haben.
 
       ```css
@@ -180,11 +179,10 @@ Führen Sie die folgenden Schritte aus, um das Stylesheet für die Wiedergabe de
 
    1. Klicken Sie auf **Alle speichern**.
 
-## Aktualisieren der Benutzeroberfläche „Korrespondenz erstellen“, um das benutzerdefinierte Logo zu sehen  {#refreshccrui}
+## Aktualisieren der Benutzeroberfläche „Korrespondenz erstellen“, um das benutzerdefinierte Logo zu sehen {#refreshccrui}
 
 Löschen Sie den Browsercache und öffnen Sie dann die Instanz der Benutzeroberfläche „Korrespondenz erstellen“ in Ihrem Browser. Sie sollten nun Ihr eigenes Logo sehen können.
 
 ![Benutzeroberfläche „Korrespondenz erstellen“ mit benutzerdefiniertem Logo](assets/0_1_introscreenshot-1.png)
 
 Das benutzerdefinierte Symbol in der Benutzeroberfläche „Korrespondenz erstellen“
-
