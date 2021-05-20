@@ -10,14 +10,13 @@ topic-tags: hTML5_forms
 discoiquuid: bd9bf095-d74d-458c-afe7-fab04050849d
 docset: aem65
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 81%
 
 ---
-
 
 # Integrieren von Form Bridge in das benutzerdefinierte Portal für HTML5-Formulare{#integrating-form-bridge-with-custom-portal-for-html-forms}
 
@@ -31,7 +30,7 @@ Eine vorhandene HTML-Anwendung kann die FormBridge-API nutzen, um mit einem Form
 
 1. **Wählen oder erstellen Sie ein Profil.**
 
-   1. Navigieren Sie in der CRX DE-Schnittstelle zu: `https://'[server]:[port]'/crx/de`.
+   1. Navigieren Sie in der CRX DE-Benutzeroberfläche zu: `https://'[server]:[port]'/crx/de`.
    1. Melden Sie sich mit Administratorberechtigungen an.
    1. Erstellen Sie ein Profil oder wählen Sie ein vorhandenes Profil aus.
 
@@ -77,7 +76,7 @@ Eine vorhandene HTML-Anwendung kann die FormBridge-API nutzen, um mit einem Form
 
    >[!NOTE]
    >
-   >Die Zeile 9 **enthält zusätzliche JSP-Referenz für CSS-Stile und JavaScript-Dateien zum Entwerfen der Seite.**
+   >Die **Zeile 9** enthält zusätzliche JSP-Referenz für CSS-Stile und JavaScript-Dateien, um die Seite zu entwerfen.
    >
    >
    >Das Tag &lt;div id=&quot;rightdiv&quot;> in **Zeile 18** bezeichnet das HTML-Fragment des XFA-Formulars.
@@ -92,9 +91,9 @@ Eine vorhandene HTML-Anwendung kann die FormBridge-API nutzen, um mit einem Form
 
    Nachstehend finden Sie ein Beispielskript, das Sie hinzufügen können, um Werte in einem Formularfeld festzulegen.
 
-   Wenn Sie beispielsweise die Funktion **EmployeeName** mithilfe der Werte in den Feldern **Vorname** und **Nachname** festlegen möchten, rufen Sie die Funktion **window.formBridge.setFieldValue** auf.
+   Wenn Sie beispielsweise **EmployeeName** mithilfe der Werte in den Feldern **Vorname** und **Nachname** festlegen möchten, rufen Sie die Funktion **window.formBridge.setFieldValue** auf.
 
-   Ebenso können Sie den Wert lesen, indem Sie die API **window.formBridge.getFieldValue** aufrufen.
+   Auf ähnliche Weise können Sie den Wert lesen, indem Sie die API **window.formBridge.getFieldValue** aufrufen.
 
    ```javascript
    $(function() {
