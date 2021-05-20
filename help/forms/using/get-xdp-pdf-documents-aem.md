@@ -10,14 +10,13 @@ topic-tags: forms-manager
 discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '708'
 ht-degree: 91%
 
 ---
-
 
 # XDP- und PDF-Dokumente in AEM Forms übernehmen{#getting-xdp-and-pdf-documents-in-aem-forms}
 
@@ -29,15 +28,15 @@ Sie können Formulare aus Ihrem lokalen Dateisystem in das CRX-Repository import
 * PDF-Formulare
 * Dokumente (reduzierte PDF-Dokumente)
 
-Sie können die unterstützten Assettypen einzeln oder als ZIP-Archiv hochladen. Sie können ein Asset des Typs `Resource` nur zusammen mit einem XFA-Formular in einem ZIP-Archiv hochladen.
+Sie können die unterstützten Assettypen einzeln oder als ZIP-Archiv hochladen. Sie können ein Asset vom Typ `Resource` nur zusammen mit einem XFA-Formular in einem ZIP-Archiv hochladen.
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass Sie Mitglied der Gruppe `form-power-users` sind, damit Sie XDP-Dateien hochladen können. Wenden Sie sich an Ihren Administrator, um Mitglied der Gruppe zu werden.
+>Stellen Sie sicher, dass Sie Mitglied der Gruppe `form-power-users` sind, um XDP-Dateien hochladen zu können. Wenden Sie sich an Ihren Administrator, um Mitglied der Gruppe zu werden.
 
 ## Hochladen von Formularen {#uploading-forms}
 
-1. Melden Sie sich bei der AEM Forms-Benutzeroberfläche an, indem Sie auf `https://'[server]:[port]'/aem/forms.html` zugreifen.
+1. Melden Sie sich über `https://'[server]:[port]'/aem/forms.html` bei der AEM Forms-Benutzeroberfläche an.
 1. Navigieren Sie zu dem Ordner, in den Sie das Formular oder die Ordner mit Formularen hochladen möchten.
 1. Auf der Aktionensymbolleiste klicken Sie auf **Erstellen > Datei hochladen**.
 
@@ -89,4 +88,3 @@ Wenn eine Formularvorlage entfernt wird, wird das abhängige adaptive Formular b
 Die Kennzeichnung bleibt bestehen, damit schmutzige adaptive Formulare erkannt werden. Diese Informationen befinden sich neben den Metadaten auf der Seite mit den Formulareigenschaften. Nur bei schmutzigen adaptiven Formularen zeigt die Metadateneigenschaft `Model Refresh` den Wert `Recommended` an.
 
 ![Kennzeichnung eines adaptiven Formular, das mit dem XFA-Modell nicht synchronisiert ist](assets/model-refresh.png)
-
