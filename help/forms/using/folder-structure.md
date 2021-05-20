@@ -9,14 +9,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 7427858d-8eec-423d-a0a9-444140420620
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: a4c1d3d8-477e-4edf-9dde-4ef9c766be5a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 66%
 
 ---
-
 
 # Grundlagen der Ordnerstruktur {#understanding-the-folder-structure}
 
@@ -26,15 +25,15 @@ AEM Forms Workspace-Komponenten basieren auf einer MVC-Architektur mit Backbone.
 * Die Vorlage als HTML-Datei mit Steuerelementen der Benutzeroberfläche.
 * Die Ansicht, die als Steuerungklasse für die Vorlage fungiert.
 
-Die Elemente für alle Komponenten werden in der unten beschriebenen Ordnerstruktur gespeichert. Um auf die Assets zuzugreifen, melden Sie sich bei der CRXDE Lite an und navigieren Sie zu `/libs/ws/js/runtime/`.
+Die Elemente für alle Komponenten werden in der unten beschriebenen Ordnerstruktur gespeichert. Um auf die Assets zuzugreifen, melden Sie sich bei CRXDE Lite an und navigieren Sie zu `/libs/ws/js/runtime/`.
 
-**models** Enthält Backbone-Modelle.
+**** modelsEnthält Backbone-Modelle.
 
 **** viewsEnthält Backbone-Ansichten.
 
 **** templatesEnthält nur die HTML-Vorlagen für die Komponenten.
 
-**Routen** Enthält universelle Routen. Der Ordner „templates“ unter „routes“ enthält den HTML-Code und die Verweise auf die Komponenten.
+**** routesEnthält universelle Routen. Der Ordner „templates“ unter „routes“ enthält den HTML-Code und die Verweise auf die Komponenten.
 
 **** servicesEnthält die Dienstschnittstelle zum Aufrufen von Adobe Experience Manager-Server-APIs am REST-Endpunkt.
 
