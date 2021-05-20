@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 6a99042f-79c7-494b-bca0-73f2b5725b58
 docset: aem65
-translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+exl-id: 2acd6b19-0fe8-4994-b0f4-c9d5b9f3fdf1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2143'
 ht-degree: 94%
 
 ---
-
 
 # Assembler-Dienst verwenden{#using-assembler-service}
 
@@ -46,7 +45,7 @@ Das folgende Beispiel stellt ein einfaches DDX-Dokument dar, das zum Zusammenfü
 </PDF>
 ```
 
-Die Dokument-Assembly erzeugt ein resultierendes Dokument, das folgende Inhalte enthält und\
+Die Dokumentzusammenführung erzeugt ein Zieldokument, das den folgenden Inhalt enthält und\
 Merkmale:
 
 * Allen Quelldokumenten (vollständig oder teilweise).
@@ -164,8 +163,8 @@ Sie können den Wert des resolveAssets-Attributs entweder im XDP-Quell-Tag oder 
 
 #### Alle Quellverweise in einem XDP-Dokument auflösen  {#resolve-all-source-references-in-an-xdp-document}
 
-Um alle Verweise in den Quell-XDP-Dokumenten aufzulösen, geben Sie das Attribut resolveAssets für die Variable\
-resultierendes Dokument für alle, wie im folgenden Beispiel:
+Um alle Verweise in den Quell-XDP-Dokumenten aufzulösen, geben Sie das Attribut resolveAssets für die\
+Zieldokument für alle, wie im Beispiel unten gezeigt:
 
 ```xml
 <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
@@ -177,7 +176,7 @@ resultierendes Dokument für alle, wie im folgenden Beispiel:
 </DDX
 ```
 
-Sie können auch das Attribut für alle Quell-XDP-Dokumente unabhängig voneinander angeben, um dasselbe zu erhalten\
+Sie können auch das -Attribut für alle Quell-XDP-Dokumente unabhängig voneinander angeben, um dasselbe zu erhalten\
 Ergebnis.
 
 ```xml
@@ -311,10 +310,10 @@ Mit dem Assembler-Dienst können Sie die folgenden Informationen über PDF-Dokum
    * Position jedes Wortes auf jeder Seite des Dokuments
    * Sätze in jedem Absatz auf jeder Seite des Dokuments
 
-* Lesezeichen, einschließlich der Seitenanzahl, des Titels, Ziels und Erscheinung. Sie können diese\
+* Lesezeichen, einschließlich der Seitenanzahl, des Titels, Ziels und Erscheinung. Sie können dies exportieren\
    Daten aus einem PDF-Dokument und importieren Sie es in ein PDF-Dokument.
 
-* Dateianlagen, einschließlich Dateiinformationen. Bei Anlagen auf Seitenebene enthält er auch die Variable\
+* Dateianlagen, einschließlich Dateiinformationen. Bei Anlagen auf Seitenebene enthält er auch die\
    Speicherort der Dateianlageanmerkung. Sie können diese Daten aus einem PDF-Dokument exportieren und\
    in ein PDF-Dokument importieren.
 
