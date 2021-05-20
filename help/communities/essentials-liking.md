@@ -1,8 +1,8 @@
 ---
-title: '"Gefällt mir"-Essentials'
-seo-title: '"Gefällt mir"-Essentials'
-description: Übersicht über Link-Komponenten
-seo-description: Übersicht über Link-Komponenten
+title: Gefällt mir-Grundlagen
+seo-title: Gefällt mir-Grundlagen
+description: Übersicht über Verknüpfungskomponenten
+seo-description: Übersicht über Verknüpfungskomponenten
 uuid: 89f16859-c901-4090-8e16-363b95c508de
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,24 +10,23 @@ topic-tags: developing
 content-type: reference
 discoiquuid: f176c42b-b16b-42c9-af22-4b6421de5a90
 pagetitle: Liking Essentials
-translation-type: tm+mt
-source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+exl-id: ef314385-cd5c-411c-91df-83691a81c1bc
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 2%
 
 ---
 
-
 # &quot;Gefällt mir&quot;-Grundlagen {#liking-essentials}
 
-Die &quot;Gefällt mir&quot;-Komponente, eine Unterklasse [tally](tally.md), ist ein nützliches Werkzeug, mit dem Mitglieder eine positive Meinung zu einem bestimmten Inhalt äußern können, indem sie einfach das Herzsymbol auswählen.
+Die liking-Komponente, eine [tally](tally.md)-Unterklasse, ist ein nützliches Tool, mit dem Mitglieder durch einfache Auswahl des Herzsymbols eine positive Meinung zu einem bestimmten Inhaltselement äußern können.
 
-Das Platzieren mehrerer Instanzen einer &quot;Gefällt mir&quot;-Komponente auf derselben Seite ist zulässig. Jede Instanz muss mit einer eindeutigen `tally name`-Eigenschaft konfiguriert werden.
+Es ist zulässig, mehrere Instanzen einer liken Komponente auf derselben Seite zu platzieren. Jede Instanz muss mit einer eindeutigen `tally name` -Eigenschaft konfiguriert werden.
 
-Anonyme Veröffentlichung von &quot;Gefällt mir&quot;-Klicks wird nicht unterstützt. Site-Besucher müssen sich registrieren und sich anmelden, um an &quot;Gefällt mir&quot;teilzunehmen. Der angemeldete Besucher (Member) kann jederzeit ein- und ausgeschaltet werden.
+Das anonyme Posten eines &quot;Gefällt mir&quot;-Klicks wird nicht unterstützt. Besucher der Site müssen sich registrieren und sich anmelden, um an &quot;Gefällt mir&quot;-Klicks teilnehmen zu können. Der angemeldete Besucher (Mitglied) kann sich jederzeit ein- und ausschalten.
 
-## Grundlagen für clientseitige {#essentials-for-client-side}
+## Grundlagen für Client-seitige {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -36,7 +35,7 @@ Anonyme Veröffentlichung von &quot;Gefällt mir&quot;-Klicks wird nicht unterst
    <td>social/tally/components/hbs/liken</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließbar</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließen</strong></a></td>
    <td>Ja - Eigenschaften können im <i>design </i>mode bearbeitet werden</td>
   </tr>
   <tr>
@@ -53,7 +52,7 @@ Anonyme Veröffentlichung von &quot;Gefällt mir&quot;-Klicks wird nicht unterst
   </tr>
   <tr>
    <td><strong>properties</strong></td>
-   <td><p>Siehe <a href="liking.md">Verwenden von Link</a></p> </td>
+   <td><p>Siehe <a href="liking.md">Verwenden von "Liken</a>"</p> </td>
   </tr>
  </tbody>
 </table>
@@ -64,23 +63,22 @@ Anonyme Veröffentlichung von &quot;Gefällt mir&quot;-Klicks wird nicht unterst
 
 * [Tally-APIs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Tal-Endpunkte](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Tally Endpoints](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Serverseitige Anpassungen](server-customize.md)
 
 ### Zugriff auf gepostete Abstimmungen (UGC) {#accessing-posted-voting-ugc}
 
-UGC sollte mithilfe einer der Standardmethoden für die Moderation moderiert werden.
+UGC sollte mit einer der Standardmethoden für die Moderation moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Datenspeicherung (z. B. ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Stores](working-with-srp.md) für UGC den programmatischen Zugriff auf UGC, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
 
-**Speicherort und Format des UGC im Repository können ohne Warnung** geändert werden.
+**Speicherort und Format der UGC im Repository können sich ohne Warnung** ändern.
 
 Siehe:
 
-* [Übersicht über](srp.md)  den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung.
-* [SRP und UGC Essentials](srp-and-ugc.md)  - SRP Dienstprogrammmethoden und Beispiele.
-* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) -Codierungsrichtlinien.
-* [SocialUtils Refactoring](socialutils.md)  - Zuordnen von nicht mehr unterstützten Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
-
+* [Übersicht über den Speicheranbieter](srp.md)  - Einführung und Übersicht über die Repository-Nutzung.
+* [SRP und UGC Essentials](srp-and-ugc.md)  - SRP-Dienstprogrammmethoden und Beispiele.
+* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md)  - Codierungsrichtlinien.
+* [SocialUtils-Refaktorierung](socialutils.md)  - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
