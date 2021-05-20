@@ -170,7 +170,7 @@ Auf den Document Security-Webseiten können Benutzer und Administratoren Richtli
 
 In der Clientanwendung kann eine Richtlinie aus einem Dokument entfernt werden.
 
-![rm_psonline_policy](assets/rm_psonline_policy.png)
+![rm_sonline_policy](assets/rm_psonline_policy.png)
 
 Die Abbildung zeigt die folgenden Schritte:
 
@@ -225,7 +225,7 @@ Richtliniensatzkoordinatoren können diese Aufgaben ausführen:
 
 >[!NOTE]
 >
->Sie können mit der API `getAllPolicysetnames()` maximal 1000 Richtliniensatznamen aus der Datenbank abrufen.
+>Sie können mit der API `getAllPolicysetnames()` maximal 1.000 Richtliniensatznamen aus der Datenbank abrufen.
 
 Richtliniensätze werden auf den Document Security-Administrationswebseiten von Administratoren und Richtliniensatzkoordinatoren erstellt und gelöscht, denen die entsprechenden Berechtigungen erteilt wurden.
 
