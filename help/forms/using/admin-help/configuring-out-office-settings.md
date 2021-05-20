@@ -9,18 +9,17 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 30312159-58a5-4781-b554-29dcbce696cb
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 1c8ad09b-d44a-4d90-86d5-d4c66cf5c57c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 96%
 
 ---
 
-
 # Konfigurieren von Abwesenheitseinstellungen {#configuring-out-of-office-settings}
 
-Die Abwesenheitsfunktion ermöglicht es Ihnen, Zeiträume anzugeben, in denen ein Benutzer nicht im Hause und deshalb nicht in der Lage ist, vom Arbeitsablauf für Formulare zugewiesene Aufgaben auszuführen. Während ein Benutzer auf „Abwesenheit“ festgelegt ist, werden dessen Aufgaben einem oder mehreren anderen festgelegten Benutzern zugewiesen. Benutzer können ihre Abwesenheitseinstellungen in Workspace ändern oder Administratoren können die Einstellungen für einen Benutzer im Arbeitsablauf für Formulare ändern.
+Die Abwesenheitsfunktion ermöglicht es Ihnen, Zeiträume anzugeben, in denen ein Benutzer nicht im Hause und deshalb nicht in der Lage ist, vom Arbeitsablauf für Formulare zugewiesene Aufgaben auszuführen. Während ein Benutzer auf „Abwesenheit“ festgelegt ist, werden dessen Aufgaben einem oder mehreren anderen festgelegten Benutzern zugewiesen. Benutzer können ihre Abwesenheitseinstellungen in Workspace ändern oder Administratoren können die Einstellungen im Namen eines Benutzers im Arbeitsablauf für Formulare ändern.
 
 Beim Erstellen eines Prozesses kann der Workbench-Benutzer festlegen, ob eine Aufgabe aufgrund von Abwesenheitseinstellungen weitergeleitet werden darf.
 
@@ -71,4 +70,3 @@ Während ein Benutzer nicht im Hause ist, können Sie einen oder mehrere Benutze
 
    1. Wenn Prozesse vorhanden sind, die nicht an den Standardbenutzer gesendet werden sollen, klicken Sie auf „Ausnahme hinzufügen“, wählen Sie den Prozess aus und wählen Sie dann einen anderen Benutzer aus der Liste aus. Darüber hinaus können Sie „Nicht zuweisen“ auswählen, damit die Aufgabe dem abwesenden Benutzer zugewiesen bleibt.
    1. Klicken Sie auf Speichern.
-
