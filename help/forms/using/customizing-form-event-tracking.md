@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 60d67c6b-5994-42ef-b159-ed6edf5cf9d4
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: d0280a15-5d0d-49cf-bce9-ad1c40530eae
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 77%
 
 ---
-
 
 # Anpassen der Formular-Ereignisverfolgung {#customizing-form-event-tracking}
 
@@ -68,12 +67,12 @@ Wenn ein Benutzer bei der standardmäßigen AEM-Formularkonfiguration mehr als 6
 
 ## Anpassen der Verfolgungsereignisse  {#customizing-the-tracking-events}
 
-Sie können die `trackEvent`in `/libs/afanalytics/js/custom.js` verfügbare Funktion ändern, um die Ereignis-Verfolgung anzupassen. Wenn ein verfolgtes Ereignis in einem adaptiven Formular auftritt, wird die Funktion `trackEvent` aufgerufen. Die Funktion `trackEvent` akzeptiert zwei Parameter: `eventName`und `variableValueMap`.
+Sie können die in der Datei `trackEvent`verfügbare Funktion `/libs/afanalytics/js/custom.js` ändern, um die Ereignisverfolgung anzupassen. Wenn ein verfolgtes Ereignis in einem adaptiven Formular auftritt, wird die Funktion `trackEvent` aufgerufen. Die Funktion `trackEvent` akzeptiert zwei Parameter: `eventName`und `variableValueMap`.
 
-Sie können die Argumente *eventName* und *variableValueMap* auswerten, um das Verfolgungsverhalten von Ereignissen zu ändern. Sie können beispielsweise festlegen, dass die Informationen an den Analytics-Server gesendet werden, nachdem eine bestimmte Anzahl an Fehlerereignissen aufgetreten ist. Sie können außerdem die folgenden Anpassungen ausführen:
+Sie können den Wert der Argumente *eventName* und *variableValueMap* auswerten, um das Tracking-Verhalten von Ereignissen zu ändern. Sie können beispielsweise festlegen, dass die Informationen an den Analytics-Server gesendet werden, nachdem eine bestimmte Anzahl an Fehlerereignissen aufgetreten ist. Sie können außerdem die folgenden Anpassungen ausführen:
 
 * Sie können eine Schwellenwertzeit festlegen, bevor das Ereignis gesendet wird.
-* Sie können einen Status beibehalten, um die Aktion festzulegen, z. B. *fieldVisit* schiebt ein Dummy-Ereignis basierend auf dem Zeitstempel des letzten Ereignisses.
+* Sie können einen Status beibehalten, um die Aktion zu bestimmen. So wird beispielsweise *fieldVisit* ein Platzhalterereignis basierend auf dem Zeitstempel des letzten Ereignisses übergeben.
 * Sie können die Funktion `pushEvent` verwenden, um das Ereignis an den Analytics-Server zu senden *.*
 
 * Sie können festlegen, das Ereignis nicht an den Analytics-Server zu senden.
@@ -93,10 +92,10 @@ case 'error':
 
 ## Anpassen des panelvisit-Ereignisses {#customizing-the-panelvisit-event}
 
-Nach jeweils 60 Sekunden wird beim Standardsetup von AEM Forms überprüft, ob das Fenster mit dem adaptiven Formular aktiv ist. Wenn das Fenster aktiv ist, wird ein `panelVisit`Ereignis für Adobe Analytics ausgelöst. Es ermittelt, of das Dokument oder das Formular aktiv ist und berechnet die Zeit, die für da entsprechende Formular oder Dokument verwendet wird.
+Nach jeweils 60 Sekunden wird beim Standardsetup von AEM Forms überprüft, ob das Fenster mit dem adaptiven Formular aktiv ist. Wenn das Fenster aktiv ist, wird ein `panelVisit`Ereignis an Adobe Analytics ausgelöst. Es ermittelt, of das Dokument oder das Formular aktiv ist und berechnet die Zeit, die für da entsprechende Formular oder Dokument verwendet wird.
 
 >[!NOTE]
 >
 >Der Ereignisname, der zur Ermittlung der Aktivität und Berechnung der Zeit verwendet wird lautet „panelVisit“. Dieses Ereignis unterscheidet sich vom Bereichsbesuchsereignis, das in der obigen Tabelle aufgelistet ist.
 
-Sie können die Funktion scheduleHeartBeatCheck ändern, die in der Datei `/libs/afanalytics/js/custom.js` verfügbar ist, um dieses Ereignis, das in regelmäßigen Abständen an Adobe Analytics gesendet wird, zu ändern oder zu beenden.
+Sie können die scheduleHeartBeatCheck-Funktion ändern, die in der Datei `/libs/afanalytics/js/custom.js` verfügbar ist, um dieses Ereignis, das regelmäßig an Adobe Analytics gesendet wird, zu ändern oder anzuhalten.
