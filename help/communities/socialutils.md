@@ -1,6 +1,6 @@
 ---
-title: SocialUtils-Umgestaltung
-seo-title: SocialUtils-Umgestaltung
+title: SocialUtils-Refaktorierung
+seo-title: SocialUtils-Refaktorierung
 description: Das Paket com.adobe.cq.social.ugcbase.SocialUtils wurde in AEM 6.1 nicht mehr unterstützt.
 seo-description: Das Paket com.adobe.cq.social.ugcbase.SocialUtils wurde in AEM 6.1 nicht mehr unterstützt.
 uuid: 54a0d98e-5ead-4c12-850f-8252ea9b3263
@@ -9,33 +9,32 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 4ade0d6b-041e-4a2f-98f8-3b8fcae0fb29
-translation-type: tm+mt
-source-git-commit: 1429a099288f038510cb0a194fb55632297ef371
+exl-id: 0f731ec6-a12e-4098-a1ec-ee4cd4dc1432
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%
 
 ---
 
-
-# SocialUtils Refactoring {#socialutils-refactoring}
+# SocialUtils-Refaktorierung {#socialutils-refactoring}
 
 ## SocialUtils-Paket veraltet {#socialutils-package-deprecated}
 
 Das Paket `com.adobe.cq.social.ugcbase.SocialUtils` wurde in AEM 6.1 nicht mehr unterstützt.
 
-In den folgenden Tabellen werden die Methoden Liste, die anstelle der `SocialUtils`-Methoden verwendet werden.
+In den folgenden Tabellen sind die Methoden aufgeführt, die anstelle der `SocialUtils`-Methoden verwendet werden sollen.
 
 ## SocialResourceUtilities-Paket {#socialresourceutilities-package}
 
 | Methoden in com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities |
 |---|
-| Boolean checkPermission(ResourceResolver resolver, String path, String action) |  |
+| Boolesch checkPermission(ResourceResolver resolver, String path, String action) |  |
 | SocialResourceProvider getSocialResourceProvider(Resource resource) |  |
-| SocialResourceConfiguration getStorageConfig(ResourceResource) |  |
+| SocialResourceConfiguration getStorageConfig(Resource resource) |  |
 | Resource getUGCResource(Resource userResource) |  |
 | Resource getUGCResource(Resource userResource, ResourceResolverFactory rrf) | new |
-| Resource getUGCResource(Resource userResource, ResourceResolverFactory rf, String resourceTypeHint) | new |
+| Resource getUGCResource(Resource userResource, ResourceResolverFactory rrf, String resourceTypeHint) | new |
 | Resource getUGCResource(Resource userResource, String resourceTypeHint) |  |
 | boolean hasModeratePermissions(Resource resource) |  |
 | String resourceToACLPath(Resource resource) |  |
@@ -46,9 +45,9 @@ In den folgenden Tabellen werden die Methoden Liste, die anstelle der `SocialUti
 
 | Methoden in `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities |
 |---|
-| SocialResourceProvider getSocialResourceProvider(Resource resource) | ersetzt SocialResourceProvider getConfigurationProvider(Resource resource) |
+| SocialResourceProvider getSocialResourceProvider(Resource resource) | ersetzt SocialResourceProvider getConficonfiguredProvider(Resource resource) |
 
-## SCFUtilities Package {#scfutilities-package}
+## SCFUtilities-Paket {#scfutilities-package}
 
 | Methoden in `com.adobe.cq.social.`utilities.scf.api.SCFUtilites |
 |---|
@@ -85,8 +84,7 @@ In den folgenden Tabellen werden die Methoden Liste, die anstelle der `SocialUti
 |---|
 | Resource getResourceAtPath(ResourceResolver resolver, String path) |
 | Resource getResourceAtPath(ResourceResolver resolver, String path, String resourceType) |
-| Configuration getStorageCloudServiceConfig(Resource resource) |
+| Konfiguration getStorageCloudServiceConfig(Resource resource) |
 | TranslationManager getTranslationManager() |
 | TranslationSaveQueue getTranslationSaveQueue() |
 | boolean mayAccessUGC(ResourceResolver resolver) |
-
