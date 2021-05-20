@@ -8,28 +8,27 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: a8aa77fe-5880-4c4e-9e1b-3c5a8772c29d
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Adaptive Formulare
+exl-id: 11cbf865-c8e2-4833-b0b8-a3cb5e42f5cd
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 85%
 
 ---
 
-
 # Trennzeichenkomponenten in adaptiven Formularen{#separator-component-in-adaptive-forms}
 
 Sie können die Trennzeichenkomponente verwenden, um Bereiche eines Formulars visuell zu trennen. Sie können die Gesamtdarstellung und den Stil einer Trennzeichenkomponente definieren, indem Sie die folgenden Eigenschaften einer Trennzeichenkomponente angeben:
 
 * **Elementname:** Gibt den Namen der Komponente an. Die SOM-Ausdrücke richten sich an die Komponenten mit dem Wert, der im Feld „Elementname“ angegeben ist.
-* **Stärke:** Gibt die Stärke der Trennzeichenkomponente in Pixel an.
+* **Stärke:** Gibt die Dicke der Trennzeichenkomponente in Pixel an.
 
 * **CSS-Klasse:** Gibt die benutzerdefinierte CSS-Klasse für die Trennzeichenkomponente an
 
 * **Inline-Stile:** Mit AEM Forms können Sie jetzt CSS-Inline-Stile auf individuelle adaptive Formularkomponenten anwenden und eine Vorschau der Änderungen in Echtzeit anzeigen.
 
-Im Layoutmodus können Sie die Anzahl der Spalten festlegen, die die Trennzeichenkomponente umfasst. Weitere Informationen finden Sie unter [Verwenden Sie den Layoutmodus, um die Größe von Komponenten](../../forms/using/resize-using-layout-mode.md) zu ändern.
+Sie können den Layout -Modus verwenden, um die Anzahl der Spalten zu definieren, die die Trennzeichenkomponente umfasst. Weitere Informationen finden Sie unter [Verwenden Sie den Layout-Modus, um die Größe von Komponenten](../../forms/using/resize-using-layout-mode.md) zu ändern.
 
 Angeben der Eigenschaften einer Trennzeichenkomponente:
 
@@ -40,4 +39,3 @@ Angeben der Eigenschaften einer Trennzeichenkomponente:
 1. Klicken Sie auf **Element hinzufügen**, um eine andere Eigenschaft und deren Wert anzugeben.
 1. Klicken Sie auf **Vorschau**, um eine Vorschau der Änderungen im Formular anzuzeigen.
 1. Klicken Sie auf **OK**, um die Änderungen zu bestätigen oder auf **Abbrechen**, um das Dialogfeld ohne Änderungen zu schließen.
-
