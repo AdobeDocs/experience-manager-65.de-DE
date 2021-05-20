@@ -9,14 +9,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: c9d3f369-3744-41d5-b340-390ab7e03f36
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: b2a6ba3a-0f4c-44b1-8f9a-c15c6fb8c305
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1364'
 ht-degree: 90%
 
 ---
-
 
 # Starten von Prozessen {#starting-processes}
 
@@ -48,9 +47,9 @@ Wenn Sie einen Prozess auswählen, werden die Registerkarten „Formular“ und 
 
 1. Wählen Sie einen Prozess aus, indem Sie auf eine Aufgabe klicken. Auf der Registerkarte „Formulare“ wird das Formular geöffnet, das dem Prozess zugeordnet ist.
 
-   Jedes Formular in einem Prozess hat eine eindeutige URL. Sie können die eindeutige URL verwenden, um HTML Workspace mit dem jeweiligen Prozess und Formular direkt zu starten. Das Format der URL lautet https://&lt;server>:&lt;port>/lc/libs/ws/index.html#/startprocess/%2F&lt;processName>. Die Zeichenfolge &lt;ApplicationName>%2F&lt;ProcessName> ist immer URL-kodiert. Eine Beispiel-URL ist http://localhost:8080/lc/libs/ws/index.html#/startprocess/MyApplication%2FNewProcess. Die Zeichenfolge ApplicationName%2FPprocessName im Beispiel ist URL-kodiert.
+   Jedes Formular in einem Prozess hat eine eindeutige URL. Sie können die eindeutige URL verwenden, um den HTML-Arbeitsbereich direkt mit dem spezifischen Prozess und Formular zu starten. Das Format der URL lautet https://&lt;Server>:&lt;Port>/lc/libs/ws/index.html#/startprocess/&lt;ApplicationName>%2F&lt;ProcessName>. Die Zeichenfolge &lt;ApplicationName>%2F&lt;ProcessName> ist immer URL-kodiert. Eine Beispiel-URL ist http://localhost:8080/lc/libs/ws/index.html#/startprocess/MyApplication%2FNewProcess. Die Zeichenfolge ApplicationName%2FPprocessName im Beispiel ist URL-kodiert.
 
-1. Füllen Sie das Formular entsprechend den zugehörigen Anweisungen aus. Klicken Sie bei Bedarf auf **Maximieren**, um den sichtbaren Bereich des Formulars zu vergrößern.
+1. Füllen Sie das Formular entsprechend den zugehörigen Anweisungen aus. Klicken Sie bei Bedarf auf **Maximieren** , um den sichtbaren Bereich des Formulars zu vergrößern.
 1. Wenn die Registerkarte „Anlagen“ verfügbar ist, fügen Sie nach Bedarf Anlagen hinzu.
 1. Wenn die Registerkarte „Notizen“ verfügbar ist, geben Sie nach Bedarf Notizen an.
 1. Führen Sie einen der folgenden Schritte durch:
@@ -98,7 +97,7 @@ Sie können auch eigene Kommentare über die Anlage hinzufügen. Sie können ein
 1. Klicken Sie auf die Registerkarte **Anlagen** und wählen Sie **Anlage**.
 1. Klicken Sie auf **Durchsuchen**, um die anzuhängende Datei auszuwählen.
 1. Wählen Sie für andere am Prozess teilnehmende Benutzer die Ebene **Berechtigungen** für die Anlage aus. Wenn Sie die **Leseberechtigung** aktivieren, können andere Benutzer die Datei lokal speichern. Wenn Sie eine der Bearbeitungsberechtigungen auswählen, können andere Benutzer auch eine neue Datei hochladen, um Ihre Anlage durch sie zu ersetzen.
-1. Klicken Sie auf **OK**. Die Datei wird an das Formular angehängt. Sie können eine Datei löschen, indem Sie auf die Schaltfläche **Löschen** ![Bild eines Papierkorbs](assets/icondelete.png) neben der Anlage klicken.
+1. Klicken Sie auf **OK**. Die Datei wird an das Formular angehängt. Sie können eine Datei löschen, indem Sie neben der Anlage auf die Schaltfläche **Löschen** ![Bild eines Papierkorbs](assets/icondelete.png) klicken.
 
 ## Entwurfskopien von Formularen speichern {#saving-draft-copies-of-forms}
 
