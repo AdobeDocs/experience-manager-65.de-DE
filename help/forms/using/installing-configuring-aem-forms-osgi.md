@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1910'
 ht-degree: 78%
 
 ---
-
 
 # Installieren und konfigurieren Sie Datenerfassungsfunktionen{#install-and-configure-data-capture-capabilities}
 
@@ -36,7 +35,7 @@ AEM Forms ist eine leistungsstarke Plattform der Enterprise-Klasse und die Daten
 
 AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Sie benötigen nur ein Minimum einer AEM Autor- oder Veröffentlichungsinstanz, um AEM Forms-Datenerfassungsfunktionen auszuführen. Die folgende Topologie wird zum Ausführen von AEM Forms-Datenerfassungsfunktionen von AEM Forms empfohlen. Detaillierte Informationen zu Topologien finden Sie unter [Architektur und Bereitstellungstopologien für AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
-![recommendations-topology](assets/recommended-topology.png)
+![recommended-topology](assets/recommended-topology.png)
 
 ## Systemanforderungen {#system-requirements}
 
@@ -45,7 +44,7 @@ Bevor Sie mit der Installation und Konfiguration der Datenerfassungsfunktion von
 * Hardware- und Software-Infrastruktur ist eingerichtet. Eine detaillierte Liste der unterstützten Hardware und Software finden Sie unter [Technische Anforderungen](/help/sites-deploying/technical-requirements.md).
 
 * Der Installationspfad der AEM-Instanz enthält keine Leerzeichen.
-* Eine AEM-Instanz wird ausgeführt. Installieren Sie für Windows-Benutzer die AEM Instanz im erhöhten Modus. In der AEM-Terminologie entspricht eine „Instanz“ einer Kopie von AEM, die auf einem Server im Autor- oder Veröffentlichungsmodus ausgeführt wird. Sie benötigen mindestens zwei[ AEM-Instanzen (eine Autor- und Veröffentlichungsinstanz),](/help/sites-deploying/deploy.md) um AEM Forms-Datenerfassungsfunktionen auszuführen:
+* Eine AEM-Instanz wird ausgeführt. Installieren Sie für Windows-Benutzer die AEM-Instanz im erweiterten Modus. In der AEM-Terminologie entspricht eine „Instanz“ einer Kopie von AEM, die auf einem Server im Autor- oder Veröffentlichungsmodus ausgeführt wird. Sie benötigen mindestens zwei[ AEM-Instanzen (eine Autor- und Veröffentlichungsinstanz),](/help/sites-deploying/deploy.md) um AEM Forms-Datenerfassungsfunktionen auszuführen:
 
    * **Autor**: Eine zum Erstellen, Hochladen und Bearbeiten von Inhalten sowie zum Verwalten der Website verwendete AEM-Instanz. Sobald der Inhalt für die Veröffentlichung bereit ist, wird er an die Veröffentlichungsinstanz repliziert.
    * **Veröffentlichen**: Eine AEM-Instanz, die den Inhalt über das Internet oder ein internes Netzwerk veröffentlicht.
@@ -56,9 +55,9 @@ Bevor Sie mit der Installation und Konfiguration der Datenerfassungsfunktion von
    * 6 GB temporärer Speicherplatz für UNIX-basierte Installationen.
 
 * Die Replikation und die umgekehrte Replikation für die Autor- und die Veröffentlichungsinstanz werden festgelegt. Weitere Details finden Sie unter [Replikation](/help/sites-deploying/replication.md).
-* Bei UNIX-basierten Systemen:
+* Für UNIX-basierte Systeme:
 
-   * Installieren Sie die folgenden 32-Bit-Pakete vom Installationsmedium:
+   * Installieren Sie die folgenden 32-Bit-Pakete aus dem Installationsmedium:
 
 <table>
  <tbody>
@@ -98,7 +97,7 @@ Bevor Sie mit der Installation und Konfiguration der Datenerfassungsfunktion von
 >[!NOTE]
 >
 >* Wenn OpenSSL bereits auf dem Server installiert ist, aktualisieren Sie es auf die neueste Version.
->* Erstellen Sie die Symlinks libcurl.so, libcrypto.so und libssl.so, die auf die neueste Version der Bibliotheken libcurl, libcrypto und libssl verweisen.
+>* Erstellen Sie die Symlinks libcurl.so, libcrypto.so und libssl.so , die auf die neueste Version der Bibliotheken libcurl, libcrypto und libssl verweisen.
 
 >
 
@@ -116,20 +115,20 @@ AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das 
 1. Tippen Sie im Kopfzeilenmenü auf **[!UICONTROL Adobe Experience Manager]**.
 1. Im Abschnitt **[!UICONTROL Filter]**:
    1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]**.
-   2. Wählen Sie die Version und den Typ für das Paket aus. Sie können die Ergebnisse auch mit der Option **[!UICONTROL Downloads suchen]** filtern.
-1. Tippen Sie auf den Paketnamen, der auf Ihr Betriebssystem zutrifft, wählen Sie **[!UICONTROL EULA-Begriffe akzeptieren]** und tippen Sie auf **[!UICONTROL Herunterladen]**.
+   2. Wählen Sie die Version und den Typ für das Paket aus. Sie können auch die Option **[!UICONTROL Downloads suchen]** verwenden, um die Ergebnisse zu filtern.
+1. Tippen Sie auf den Paketnamen für Ihr Betriebssystem, wählen Sie **[!UICONTROL Endbenutzer-Lizenzbedingungen akzeptieren]** und tippen Sie auf **[!UICONTROL Download]**.
 1. Öffnen Sie [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
-   Sie können das Paket auch über den direkten Link herunterladen, der im Artikel [AEM Forms Releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) aufgeführt ist.
-1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Starten Sie den Server nicht sofort neu.** Bevor Sie den AEM Forms-Server beenden, warten Sie, bis die Nachrichten &quot;ServiceEvent REGISTERED&quot;und &quot;ServiceEvent UNREGISTERED&quot;in der  `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` Datei nicht mehr angezeigt werden und das Protokoll stabil ist.
+   Sie können das Paket auch über den direkten Link herunterladen, der im Artikel [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) aufgeführt ist.
+1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Starten Sie den Server nicht sofort neu.** Warten Sie vor dem Anhalten des AEM Forms-Servers, bis die Meldungen ServiceEvent REGISTERED und ServiceEvent UNREGISTERED nicht mehr in der  `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` Datei angezeigt werden und das Protokoll stabil ist.
 1. Wiederholen Sie Schritten 1-7 für alle Autor- und Veröffentlichungsinstanzen.  
 
-### (Nur Windows) Automatische Installation von Visual Studio redistributables {#automatic-installation-visual-studio-redistributables}
+### (Nur Windows) Automatische Installation von Visual Studio-Redistributables {#automatic-installation-visual-studio-redistributables}
 
-Wenn Sie eine AEM Instanz im erhöhten Modus installieren, werden die fehlenden Visual Studio-Redistributables während der Installation des AEM Forms Add-On-Pakets automatisch installiert.
+Wenn Sie eine AEM-Instanz im erhöhten Modus installieren, werden die fehlenden Visual Studio-Redistributables während der Installation des AEM Forms Add-On-Pakets automatisch installiert.
 
-Um zu prüfen, ob die Visual Studio-Redistributables automatisch installiert werden, öffnen Sie die Datei `error.log`, die im Ordner `/crx-repository/logs/` verfügbar ist. Die Protokolle enthalten die folgende Meldung:
+Um zu prüfen, ob die Redistributables von Visual Studio automatisch installiert sind, öffnen Sie die Datei `error.log` im Verzeichnis `/crx-repository/logs/` . Die Protokolle enthalten die folgende Meldung:
 
 `Redist <service name> already installed on system, will not attempt re-installation`
 
@@ -137,7 +136,7 @@ Wenn die Redistributables nicht installiert werden können, enthalten die Protok
 
 `Current user does not have elevated privileges, aborting installation of redist <service name>`
 
-Um das Problem zu beheben, starten Sie den AEM-Server neu, installieren Sie AEM im erhöhten Modus und installieren Sie dann das AEM Forms-Add-On-Paket.
+Um das Problem zu beheben, starten Sie den AEM-Server neu, installieren Sie AEM im erhöhten Modus und installieren Sie dann das Add-On-Paket für AEM Forms.
 
 Wenn die Berechtigungsprüfung fehlschlägt, enthalten die Protokolle die folgende Meldung:
 
@@ -156,7 +155,7 @@ Führen Sie sowohl auf der Autor- als auch auf der Veröffentlichungsinstanz fol
 1. Beenden Sie die zugrunde liegenden AEM-Instanz.
 1. Öffnen Sie die Datei `[AEM installation directory]\crx-quickstart\conf\sling.properties` zur Bearbeitung.
 
-   Wenn Sie `[AEM installation directory]\crx-quickstart\bin\start.bat` zum Beginn AEM, bearbeiten Sie die Datei &quot;sling.properties&quot;unter `[AEM_root]\crx-quickstart\`.
+   Wenn Sie `[AEM installation directory]\crx-quickstart\bin\start.bat` zum Starten von AEM verwendet haben, bearbeiten Sie die sling.properties-Datei unter `[AEM_root]\crx-quickstart\`.
 
 1. Fügen Sie die folgenden Eigenschaften der sling.properties-Datei hinzu:
 
@@ -169,18 +168,18 @@ Führen Sie sowohl auf der Autor- als auch auf der Veröffentlichungsinstanz fol
 
 #### Konfigurieren Sie den Serialisierungsagenten {#configure-the-serialization-agent}
 
-Führen Sie die folgenden Schritte für alle Instanzen im Autoren- und Veröffentlichungsmodus aus, um das Paket der Zulassungsliste &quot;&quot;hinzuzufügen:
+Führen Sie die folgenden Schritte für alle Autoren- und Veröffentlichungsinstanzen aus, um das Paket zur Zulassungsliste hinzuzufügen:
 
 1. Öffnen Sie AEM Configuration Manager in einem Browserfenster. Die Standardeinstellung ist `https://'[server]:[port]'/system/console/configMgr`.
 1. Suchen Sie nach **com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.name** und öffnen Sie die Konfiguration.
-1. hinzufügen Sie das Paket **sun.util.calendar** in das Feld **Zulassungsliste**. Klicken Sie auf **Speichern**.
+1. Fügen Sie das Paket **sun.util.calendar** zum Feld **Zulassungsliste** hinzu. Klicken Sie auf **Speichern**.
 1. Wiederholen Sie Schritte 1-3 für alle Autor- und Veröffentlichungsinstanzen.
 
 ### Optionale Konfigurationen nach der Installation {#optional-post-installation-configurations}
 
 #### Konfiguration des Dispatchers {#configure-dispatcher}
 
-Dispatcher ist das Caching- und/oder Lastenausgleichstool von Adobe Experience Manager, das in Verbindung mit einem Webserver der Unternehmensklasse verwendet werden kann. Wenn Sie [Dispatcher](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html) verwenden, führen Sie die folgenden Konfigurationen für AEM Forms durch:
+Der Dispatcher ist das Tool zum Zwischenspeichern und/oder Lastenausgleich von Adobe Experience Manager, das in Verbindung mit einem Webserver der Unternehmensklasse verwendet werden kann. Wenn Sie [Dispatcher](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html) verwenden, führen Sie die folgenden Konfigurationen für AEM Forms durch:
 
 1. Konfigurieren des Zugriffs für AEM Forms:
 
@@ -192,7 +191,7 @@ Dispatcher ist das Caching- und/oder Lastenausgleichstool von Adobe Experience M
 
 1. Konfigurieren des Referrer-Filterservice:
 
-   Melden Sie sich beim Apache Felix Configuration Manager als Administrator an. Die Standard-URL des Configuration Managers ist `https://[server]:[port_number]/system/console/configMgr`. Wählen Sie im Menü **Configurations** die Option **Apache Sling Referrer Filter.** Geben Sie im Feld „Hosts zulassen“ den Hostnamen des Dispatchers ein, um ihn als Referrer zuzulassen, und klicken Sie auf **Speichern**. Das Format des Eintrags lautet &quot;https://[server]:[port]&quot;.
+   Melden Sie sich beim Apache Felix Configuration Manager als Administrator an. Die Standard-URL des Konfigurationsmanagers lautet `https://[server]:[port_number]/system/console/configMgr`. Wählen Sie im Menü **Configurations** die Option **Apache Sling Referrer Filter.** Geben Sie im Feld „Hosts zulassen“ den Hostnamen des Dispatchers ein, um ihn als Referrer zuzulassen, und klicken Sie auf **Speichern**. Das Format des Eintrags ist &quot;https://[server]:[port]&quot;.
 
 #### Konfigurieren des Cache {#configure-cache}
 
@@ -203,8 +202,8 @@ Caching ist ein Vorgang, um Datenzugriffszeiten zu verkürzen, die Wartezeit zu 
 
 Führen Sie die folgenden Schritte aus, um den Cache für adaptive Formulare zu konfigurieren:
 
-1. Wechseln Sie zu AEM Web Console Configuration Manager unter https://&#39;[server]:[port]&#39;/system/console/configMgr.
-1. Klicken Sie auf **Konfiguration für adaptive Formulare und interaktiver Kommunikationswebkanal**, um die Konfigurationswerte zu bearbeiten. Geben Sie im Dialogfeld &quot;Konfigurationswerte bearbeiten&quot;die maximale Anzahl von Formularen oder Dokumenten an, die eine Instanz des AEM Forms-Servers im Feld **Anzahl der adaptiven Forms** zwischenspeichern kann. Der Standardwert ist 100. Klicken Sie auf **Speichern**.
+1. Wechseln Sie zu AEM Konfigurationsmanager der Web-Konsole unter https://&#39;[server]:[port]&#39;/system/console/configMgr.
+1. Klicken Sie auf **Konfiguration für adaptive Formulare und interaktiver Kommunikationswebkanal**, um die Konfigurationswerte zu bearbeiten. Geben Sie im Dialogfeld &quot;Konfigurationswerte bearbeiten&quot;die maximale Anzahl von Formularen oder Dokumenten an, die eine Instanz des AEM Forms-Servers im Feld **Anzahl adaptiver Forms** zwischenspeichern kann. Der Standardwert ist 100. Klicken Sie auf **Speichern**.
 
    >[!NOTE]
    >
@@ -243,4 +242,3 @@ Sie haben eine Umgebung für die Verwendung der AEM Forms-Datenerfassungsfunktio
 * [Erstellen Sie Ihr erstes adaptives Formular](/help/forms/using/create-your-first-adaptive-form.md)
 * [Erstellen Sie Ihr erstes PDF Formular](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65_de)
 * [Einführung in HTML5-Formulare](/help/forms/using/introduction.md)
-
