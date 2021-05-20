@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 761e7909-43ba-4642-bcfc-8d76f139b9a3
-translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '7174'
 ht-degree: 86%
 
 ---
-
 
 # Endpunkte des Typs „Überwachter Ordner“ konfigurieren {#configuring-watched-folder-endpoints}
 
@@ -122,19 +121,19 @@ Mithilfe der folgenden Einstellungen können Sie einen Endpunkt des Typs „übe
 
 **Beschreibung:** Eine Beschreibung des Endpunkts. Der Name darf kein &lt;-Zeichen enthalten, weil dadurch die Anzeige des Namens in Workspace abgeschnitten wird.
 
-**Pfad:** (Obligatorisch) Gibt den Speicherort des überwachten Ordners an. In einer Clusterumgebung muss diese Einstellung auf einen freigegebenen Netzwerkordner zeigen, auf den alle Computer im Cluster zugreifen können.
+**Pfad:**  (Obligatorisch) Gibt den Speicherort des überwachten Ordners an. In einer Clusterumgebung muss diese Einstellung auf einen freigegebenen Netzwerkordner zeigen, auf den alle Computer im Cluster zugreifen können.
 
 **Asynchron:** Identifiziert den Aufruftyp als asynchron oder synchron. Der Standardwert ist „asynchron“. „Asynchron“ wird für langlebige Prozesse empfohlen, während „synchron“ für transiente und kurzlebige Prozesse empfohlen wird.
 
 **Cron-Ausdruck:** Geben Sie einen Cron-Ausdruck ein, wenn der überwachte Ordner mithilfe eines Cron-Ausdrucks geplant werden muss. Wenn diese Einstellung konfiguriert ist, wird „Repeat Interval“ ignoriert.
 
-**Wiederholungsintervall:** Das Intervall in Sekunden zum Überprüfen des überwachten Ordners auf Eingabe. Außer wenn die Einstellung „Einschränken“ aktiviert ist, muss „Wiederholungsintervall“ größer als die Dauer zum Verarbeiten eines durchschnittlichen Auftrags sein. Andernfalls kann das System überlastet werden. Der Standardwert ist „5“. Weitere Informationen finden Sie in der Beschreibung für die Stapelgröße.
+**Wiederholungsintervall:** Das Intervall in Sekunden, in dem der überwachte Ordner auf Eingaben überprüft wird. Außer wenn die Einstellung „Einschränken“ aktiviert ist, muss „Wiederholungsintervall“ größer als die Dauer zum Verarbeiten eines durchschnittlichen Auftrags sein. Andernfalls kann das System überlastet werden. Der Standardwert ist „5“. Weitere Informationen finden Sie in der Beschreibung für die Stapelgröße.
 
-**Anzahl der Wiederholungen:** Gibt an, wie oft der überwachte Ordner den Ordner oder das Verzeichnis überprüft. Der Wert „-1“ bedeutet uneingeschränktes Überprüfen („unendlich“). Der Standardwert ist -1.
+**Wiederholungsanzahl:** Gibt an, wie oft der überwachte Ordner den Ordner überprüft. Der Wert „-1“ bedeutet uneingeschränktes Überprüfen („unendlich“). Der Standardwert ist -1.
 
-**Einschränken:** Wenn diese Option aktiviert ist, wird die Anzahl der Aufträge für überwachte Ordner begrenzt, die Formulare zu jeder Zeit AEM. Die maximale Anzahl von Aufträgen wird durch den Wert von „Stapelgröße“ bestimmt. (Siehe Informationen zu Einschränkungen.)
+**Einschränken:** Wenn diese Option aktiviert ist, wird die Anzahl der Aufträge für den überwachten Ordner begrenzt, die AEM Formularprozesse zu jeder Zeit verarbeiten. Die maximale Anzahl von Aufträgen wird durch den Wert von „Stapelgröße“ bestimmt. (Siehe Informationen zu Einschränkungen.)
 
-**Benutzername:** (Obligatorisch) Der Benutzername, der beim Aufrufen eines Zielgruppe-Dienstes aus dem überwachten Ordner verwendet wird. Der Standardwert ist „SuperAdmin“.
+**Benutzername:**  (Obligatorisch) Der Benutzername, der beim Aufrufen eines Zieldienstes aus dem überwachten Ordner verwendet wird. Der Standardwert ist „SuperAdmin“.
 
 **Domänenname:**  (Obligatorisch) Die Domäne des Benutzers. Der Standardwert ist „DefaultDom“.
 
@@ -146,39 +145,39 @@ Falls eine große Anzahl von Dateien abgelegt wird, wählen Sie eine große Stap
 
 Wenn Dateien im überwachten Ordner abgelegt werden, werden die Dateien in der Eingabe aufgelistet. Dadurch kann die Leistung reduziert werden, wenn jede Sekunde eine Überprüfung stattfindet. Durch Erhöhen des Überprüfungsintervalls kann die Leistung verbessert werden. Wenn das Volumen der abgelegten Dateien gering ist, passen Sie die Stapelgröße und das Wiederholungsintervall entsprechend an. Wenn beispielsweise jede Sekunde 10 Dateien abgelegt werden, probieren Sie ein Wiederholungsintervall von 1 Sekunde und eine Stapelgröße von 10 aus. 
 
-**Wartezeit:** Die Zeit in Millisekunden, die gewartet wird, bevor Sie einen Ordner oder eine Datei nach der Erstellung überprüfen. Wenn die Wartezeit beispielsweise 3.600.000 Millisekunden (eine Stunde) beträgt und die Datei vor einer Minute erstellt wurde, wird diese Datei nach Ablauf von mindestens 59 Minuten abgerufen. Der Standardwert ist 0.
+**Wartezeit:** Die Zeit in Millisekunden, die gewartet wird, bevor ein Ordner oder eine Datei nach der Erstellung überprüft wird. Wenn die Wartezeit beispielsweise 3.600.000 Millisekunden (eine Stunde) beträgt und die Datei vor einer Minute erstellt wurde, wird diese Datei nach Ablauf von mindestens 59 Minuten abgerufen. Der Standardwert ist 0.
 
-Diese Einstellung ist nützlich, um sicherzustellen, dass eine Datei oder ein Ordner vollständig in den Eingabeordner kopiert wurde. Wenn Sie beispielsweise eine große Datei verarbeiten müssen und der Download der Datei zehn Minuten dauert, setzen Sie die Wartezeit auf 10&amp;ast;60&amp;ast;1000 Millisekunden. Dies verhindert, dass der überwachte Ordner die Datei überprüft, wenn sie nicht 10 Minuten alt ist.
+Diese Einstellung ist nützlich, um sicherzustellen, dass eine Datei oder ein Ordner vollständig in den Eingabeordner kopiert wurde. Wenn Sie beispielsweise eine große Datei verarbeiten müssen und das Herunterladen der Datei zehn Minuten dauert, legen Sie die Wartezeit auf 10&amp;ast;60 &amp;ast;1000 Millisekunden fest. Dies verhindert, dass der überwachte Ordner die Datei überprüft, wenn sie nicht 10 Minuten alt ist.
 
-**Muster für auszuschließende Dateien:** Eine durch Semikolon  **;** getrennte Liste von Mustern, mit denen ein überwachter Ordner ermittelt, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Alle Dateien oder Ordner, die diesem Muster entsprechen, werden nicht für die Verarbeitung überprüft.
+**Muster für auszuschließende Dateien:** Ein Semikolon  **; eine durch** Trennzeichen getrennte Liste von Mustern, mit denen ein überwachter Ordner bestimmt, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Alle Dateien oder Ordner, die diesem Muster entsprechen, werden nicht für die Verarbeitung überprüft.
 
 Diese Einstellung ist hilfreich, wenn die Eingabe aus einem Ordner mit mehreren Dateien besteht. Der Inhalt des Ordners kann in einen Ordner mit einem Namen kopiert werden, der vom überwachten Ordner aufgenommen wird. Dies verhindert, dass der überwachte Ordner einen Ordner für die Verarbeitung aufnimmt, bevor dieser vollständig in den Eingabeordner kopiert ist.
 
 Sie können Dateimuster verwenden, um Folgendes auszuschließen:
 
 * Dateien mit bestimmten Dateinamenerweiterungen; Beispiel: &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf.
-* Dateien mit bestimmten Namen, z. B. data.&amp;ast; schließen Dateien und Ordner mit den Namen *data1*, *data2* usw. aus.
+* Dateien mit bestimmten Namen, z. B. data.&amp;ast; würde Dateien und Ordner mit den Namen *data1*, *data2* usw. ausschließen.
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
    * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
    * &amp;ast;.[dD][Aa]&#39;port&#39;
-   * &amp;ast;.[XX][Mm][Ll]
+   * &amp;ast;.[Xx][Mm][Ll]
 
 Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](configuring-watched-folder-endpoints.md#about-file-patterns).
 
-**Muster für einzuschließende Dateien:** (Obligatorisch) Eine durch Semikolon  **;** getrennte Liste von Mustern, mit denen der überwachte Ordner ermittelt, welche Ordner und Dateien überprüft und aufgenommen werden sollen. Beispiel: Wenn das Muster für einzuschließende Dateien &quot;input&amp;ast;&quot;lautet, alle Dateien und Ordner, die mit &quot;input&amp;ast;&quot; übereinstimmen; abgeholt werden. Hierzu gehören auch Dateien und Ordner namens „input1“, „input2“ usw.
+**Muster für einzuschließende Dateien:** (Obligatorisch) Ein Semikolon  **; eine** Liste mit Mustern, die vom überwachten Ordner verwendet werden, um zu bestimmen, welche Ordner und Dateien überprüft und aufgenommen werden sollen. Beispiel: Wenn das Muster für einzuschließende Dateien &quot;input&amp;ast;&quot;lautet, werden alle Dateien und Ordner angezeigt, die mit &quot;input&amp;ast&quot;übereinstimmen. abgeholt werden. Hierzu gehören auch Dateien und Ordner namens „input1“, „input2“ usw.
 
 Der Standardwert ist &amp;ast; und zeigt alle Dateien und Ordner an.
 
 Sie können Dateimuster verwenden, um Folgendes einzuschließen:
 
 * Dateien mit bestimmten Dateinamenerweiterungen; Beispiel: &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf.
-* Dateien mit bestimmten Namen, z. B. data.&amp;ast; enthält Dateien und Ordner mit den Namen *data1*, *data2* usw.
+* Dateien mit bestimmten Namen, z. B. data.&amp;ast; würde Dateien und Ordner namens *data1*, *data2* usw. enthalten.
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
    * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
    * &amp;ast;.[dD][Aa]&#39;port&#39;
-   * &amp;ast;.[XX][Mm][Ll]
+   * &amp;ast;.[Xx][Mm][Ll]
 
 Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](configuring-watched-folder-endpoints.md#about-file-patterns).
 
@@ -200,7 +199,7 @@ Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](c
 * %R = Zufallszahl (zwischen 0 und 9)
 * %P = Prozess- oder Auftrags-ID
 
-Beispiel: Wenn es am 17. Juli 2009 um 20 Uhr geht und Sie `C:/Test/WF0/failure/%Y/%M/%D/%H/` angeben, lautet der Ergebnisordner `C:/Test/WF0/failure/2009/07/17/20`.
+Wenn es beispielsweise am 17. Juli 2009 20 Uhr ist und Sie `C:/Test/WF0/failure/%Y/%M/%D/%H/` angeben, ist der Ergebnisordner `C:/Test/WF0/failure/2009/07/17/20`.
 
 Wenn der Pfad nicht absolut, sondern relativ ist, wird der Ordner im überwachten Ordner erstellt. Der Standardwert ist „result/%Y/%M/%D/“, der Ergebnisordner im überwachten Ordner. Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](configuring-watched-folder-endpoints.md#about-file-patterns).
 
@@ -208,7 +207,7 @@ Wenn der Pfad nicht absolut, sondern relativ ist, wird der Ordner im überwachte
 >
 >Je kleiner die Größe des Ergebnisordners ist, desto höher wird die Watched Folder-Leistung sein. Wenn beispielsweise die geschätzte Belastung für den überwachten Ordner bei 1000 Dateien pro Stunde liegt, sollten Sie ein Muster wie `result/%Y%M%D%H` verwenden, sodass jede Stunde ein neuer Unterordner erstellt wird. Wenn die Belastung geringer ist (z. B. 1000 Dateien pro Tag), können Sie ein Muster wie das folgende verwenden: `result/%Y%M%D`.
 
-**Ordner beibehalten:** Der Speicherort, an dem Dateien nach erfolgreicher Überprüfung und Aufnahme gespeichert werden. Dies kann ein absoluter, relativer oder leerer Ordnerpfad sein. Sie können Dateimuster verwenden, wie für „Ergebnisordner“ beschrieben. Der Standardwert ist „preserve/%Y/%M/%D/“.
+**Ordner beibehalten:** Der Speicherort, an dem Dateien nach erfolgreichem Prüfen und Abrufen gespeichert werden. Dies kann ein absoluter, relativer oder leerer Ordnerpfad sein. Sie können Dateimuster verwenden, wie für „Ergebnisordner“ beschrieben. Der Standardwert ist „preserve/%Y/%M/%D/“.
 
 **Fehlerordner:** Der Ordner, in dem Fehlerdateien gespeichert werden. Dieser Speicherort ist stets relativ zum überwachten Ordner. Sie können Dateimuster verwenden, wie für „Ergebnisordner“ beschrieben.
 
@@ -216,29 +215,29 @@ Schreibgeschützte Dateien werden nicht verarbeitet und im Fehlerordner gespeich
 
 Der Standardwert ist „failure/%Y/%M/%D/“.
 
-**Bei Fehler beibehalten:Eingabedateien** beibehalten, wenn der Vorgang für einen Dienst nicht ausgeführt werden konnte. Der Standardwert lautet true.
+**Bei Fehler beibehalten:** Behält die Eingabedateien bei, wenn der Vorgang für einen Dienst nicht ausgeführt werden konnte. Der Standardwert lautet true.
 
-**Duplikat-Dateinamen überschreiben:** Bei Festlegung auf &quot;True&quot;werden Dateien im Ergebnisordner und im Aufbewahrungsordner überschrieben. Bei Festlegung auf „False“ wird an die Namen von Dateien und Ordnern ein numerisches Indexsuffix angehängt. Der Standardwert ist „False“.
+**Doppelte Dateinamen überschreiben:** Bei Festlegung auf &quot;True&quot;werden Dateien im Ergebnisordner und im Aufbewahrungsordner überschrieben. Bei Festlegung auf „False“ wird an die Namen von Dateien und Ordnern ein numerisches Indexsuffix angehängt. Der Standardwert ist „False“.
 
 **Bereinigungsdauer:**  (Obligatorisch) Dateien und Ordner im Ergebnisordner werden bereinigt, wenn sie älter als dieser Wert sind. Dieser Wert wird in Tagen gemessen. Diese Einstellung hilft dafür zu sorgen, dass der Ergebnisordner nicht voll wird.
 
 Ein Wert von „-1“ Tage bedeutet, dass der Ergebnisordner nie gelöscht wird. Der Standardwert ist -1.
 
-**Vorgangsname:**  (Obligatorisch) Eine Liste von Vorgängen, die dem Endpunkt des Typs &quot;überwachter Ordner&quot;zugewiesen werden können.
+**Vorgangsname:**  (Obligatorisch) Eine Liste von Vorgängen, die dem Endpunkt des überwachten Ordners zugewiesen werden können.
 
-**Zuordnungen von Eingabeparametern:** Dient zum Konfigurieren der für die Verarbeitung des Dienstes und Vorgangs erforderlichen Eingabe. Die verfügbaren Einstellungen hängen davon ab, welcher Dienst den überwachten Ordner-Endpunkt verwendet. Es gibt zwei Eingabetypen:
+**Zuordnungen von Eingabeparametern:** Wird zum Konfigurieren der für die Verarbeitung des Dienstes und Vorgangs erforderlichen Eingabe verwendet. Die verfügbaren Einstellungen hängen davon ab, welcher Dienst den überwachten Ordner-Endpunkt verwendet. Es gibt zwei Eingabetypen:
 
-**Literal:** Der überwachte Ordner verwendet den in das Feld eingegebenen Wert, wie er angezeigt wird. Alle grundlegenden Java-Typen werden unterstützt. Wenn eine API beispielsweise Eingaben wie String, Long, Int oder Boolean verwendet, wird die Zeichenfolge in einen ordnungsgemäßen Typ konvertiert und der Dienst aufgerufen.
+**Literal:** Der überwachte Ordner verwendet den in das Feld eingegebenen Wert so, wie er angezeigt wird. Alle grundlegenden Java-Typen werden unterstützt. Wenn eine API beispielsweise Eingaben wie String, Long, Int oder Boolean verwendet, wird die Zeichenfolge in einen ordnungsgemäßen Typ konvertiert und der Dienst aufgerufen.
 
-**Variable:** Der eingegebene Wert ist ein Dateimuster, mit dem der überwachte Ordner die Eingabe auswählt. Beispiel: Bei dem Dienst zum Verschlüsseln eines Kennworts, bei dem das Eingabedateien eine PDF-Dokument sein muss, kann der Benutzer das Dateimuster &amp;ast;.pdf verwenden. Der überwachte Ordner nimmt alle Dateien im überwachten Ordner auf, die diesem Muster entsprechen, und ruft für jede Datei den Dienst auf. Wenn eine Variable verwendet wird, werden alle Eingabedateien in Dokumente konvertiert. Nur APIs, die „Document“ als Eingabetyp verwenden, werden unterstützt.
+**Variable:** Der eingegebene Wert ist ein Dateimuster, mit dem der überwachte Ordner die Eingabe auswählt. Beispielsweise kann der Benutzer im Fall des Kennwortdienstes, bei dem das Eingabedokument eine PDF-Datei sein muss, &amp;ast;.pdf als Dateimuster verwenden. Der überwachte Ordner nimmt alle Dateien im überwachten Ordner auf, die diesem Muster entsprechen, und ruft für jede Datei den Dienst auf. Wenn eine Variable verwendet wird, werden alle Eingabedateien in Dokumente konvertiert. Nur APIs, die „Document“ als Eingabetyp verwenden, werden unterstützt.
 
-**Zuordnungen von Ausgabeparametern:** Dient zum Konfigurieren der Ausgaben des Dienstes und Vorgangs. Die verfügbaren Einstellungen hängen davon ab, welcher Dienst den überwachten Ordner-Endpunkt verwendet.
+**Zuordnungen von Ausgabeparametern:** Wird zum Konfigurieren der Ausgaben des Dienstes und Vorgangs verwendet. Die verfügbaren Einstellungen hängen davon ab, welcher Dienst den überwachten Ordner-Endpunkt verwendet.
 
 Die Watched Folder-Ausgabe kann ein einzelnes Dokument, eine Liste von Dokumenten oder eine Zuordnung von Dokumenten sein. Diese Ausgabe-Dokumente werden anschließend mithilfe des in der Ausgabeparameterzuordnung angegebenen Musters im Ergebnisordner gespeichert.
 
 >[!NOTE]
 >
->Das Angeben von Namen, die zu eindeutigen Ausgabedateinamen führen, verbessert die Leistung. Angenommen, der Dienst gibt ein Output-Dokument zurück und die Ausgabeparameterzuordnung ordnet es `%F.%E` (Dateiname und Dateierweiterung) zu. In diesem Fall, wenn der Benutzer jede Minute Dateien mit demselben Namen ablegt und der Ergebnisordner auf `result/%Y/%M/%D` konfiguriert ist und die Einstellung „Doppelt vorhandene Dateinamen überschreiben“ deaktiviert ist, versucht der Watched Folder-Dienst die doppelten Dateinamen aufzulösen. Der Prozess des Auflösens von doppelten Dateinamen kann Auswirkungen auf die Leistung haben. In diesem Fall kann die Leistung verbessert werden, wenn Sie die Ausgabeparameterzuordnung auf `%F_%h_%m_%s_%l` ändern, um dem Namen Stunden, Minuten, Sekunden und Millisekunden hinzuzufügen oder sicherzustellen, dass abgelegte Dateien eindeutige Namen haben.
+>Das Angeben von Namen, die zu eindeutigen Ausgabedateinamen führen, verbessert die Leistung. Betrachten Sie beispielsweise den Fall, dass der Dienst ein Ausgabedokument zurückgibt und die Ausgabeparameterzuordnung es `%F.%E` (dem Dateinamen und der Erweiterung der Eingabedatei) zuordnet. In diesem Fall, wenn der Benutzer jede Minute Dateien mit demselben Namen ablegt und der Ergebnisordner auf `result/%Y/%M/%D` konfiguriert ist und die Einstellung „Doppelt vorhandene Dateinamen überschreiben“ deaktiviert ist, versucht der Watched Folder-Dienst die doppelten Dateinamen aufzulösen. Der Prozess des Auflösens von doppelten Dateinamen kann Auswirkungen auf die Leistung haben. In diesem Fall kann die Leistung durch Ändern der Ausgabeparameterzuordnung auf `%F_%h_%m_%s_%l` verbessert werden, um dem Namen Stunden, Minuten, Sekunden und Millisekunden hinzuzufügen oder sicherzustellen, dass abgelegte Dateien über eindeutige Namen verfügen.
 
 ## Informationen zu Dateimustern {#about-file-patterns}
 
@@ -250,7 +249,7 @@ Administratoren können den Dateityp angeben, von dem ein Dienst aufgerufen werd
 
    * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
    * &amp;ast;.[dD][Aa]&#39;port&#39;
-   * &amp;ast;.[XX][Mm][Ll]
+   * &amp;ast;.[Xx][Mm][Ll]
 
 Der Administrator kann das Dateimuster für den Ausgabeordner definieren, in dem die Ergebnisse gespeichert werden sollen. Für die Ausgabeordner (Ergebnis, Beibehalten und Fehler; „result“, „preserve“ und „failure“) kann der Administrator jedes der folgenden Dateimuster angeben:
 
@@ -353,7 +352,6 @@ Wenn die Quelldateien im Bereitstellungsordner nicht vom Watched Folder-Dienst v
 
    * Ändern Sie in „Anwendungen und Dienste“ den Parameter „Muster für einzuschließende Dateien“ für den überwachten Ordner-Endpunkt in ein Muster, das keiner der neuen Eingabedateien entspricht (geben Sie beispielsweise `NOMATCH` ein).
    * Setzen Sie den Prozess aus, der neue Eingabedateien erstellt.
-
    Warten Sie, bis AEM Forms alle der Dateien wiederherstellt und verarbeitet. Die Mehrheit der Dateien sollte wiederhergestellt und alle neuen Eingabedateien ordnungsgemäß verarbeitet werden. Der Zeitraum, den Sie darauf warten müssen, dass der Watched Folder-Dienst die Dateien wiederherstellt und verarbeitet, hängt von der Dauer des aufzurufenden Vorgangs sowie von der Anzahl wiederherzustellender Dateien ab.
 
 1. Ermitteln Sie, welche Dateien nicht verarbeitet werden können. Wenn Sie ausreichend lange gewartet und den vorangehenden Schritt ausgeführt haben, sich aber immer noch nicht verarbeitete Dateien im Bereitstellungsordner befinden, fahren Sie mit dem nächsten Schritt fort.
@@ -380,15 +378,15 @@ Im Folgenden finden Sie einige Tipps und Tricks zum Konfigurieren des Endpunkts 
 * Der Watched Folder-Dienst überprüft den Eingabeordner auf Eingaben und erkennt nicht, ob die Quelldatei bzw. der Quellordner bereits vollständig in den Eingabeordner kopiert ist, bevor die Verarbeitung der Datei oder des Ordners begonnen wird. Führen Sie folgende Aufgaben durch, um sicherzustellen, dass die Quelldatei bzw. der Quellordner vollständig in den Eingabeordner des überwachten Ordners kopiert ist, bevor die Datei oder der Ordner aufgenommen wird:
 
    * Verwenden Sie „Wartezeit“, wobei es sich um den Zeitraum in Millisekunden handelt, den der Watched Folder-Dienst ab dem Zeitpunkt der letzten Änderung wartet. Verwenden Sie dieses Feature, wenn große Dateien verarbeitet werden. Wenn das Herunterladen einer Datei z. B. 10 Minuten dauert, geben Sie die Wartezeit als 10&amp;ast;60 &amp;ast;1000 Millisekunden an. Dies verhindert, dass der Watched Folder-Dienst die Datei aufnimmt, wenn sie nicht bereits 10 Minuten alt ist.
-   * Verwenden Sie „Muster für auszuschließende Dateien“ und „Muster für einzuschließende Dateien“. Wenn beispielsweise das Muster für auszuschließende Dateien `ex*` und das Muster für einzuschließende Dateien `in*` ist, nimmt der Watched Folder-Dienst die Dateien auf, die Beginn mit &quot;in&quot;haben, und nimmt die Dateien, die Beginn mit &quot;ex&quot;haben, nicht auf. Benennen Sie zum Kopieren großer Dateien oder Ordner zuerst die Datei bzw. den Ordner so um, dass der Name mit „ex“ beginnt. Nachdem die Datei oder der Ordner &quot;ex&quot;vollständig in den überwachten Ordner kopiert wurde, benennen Sie sie in &quot;in&amp;ast;&quot;um.
+   * Verwenden Sie „Muster für auszuschließende Dateien“ und „Muster für einzuschließende Dateien“. Wenn das Muster für auszuschließende Dateien beispielsweise `ex*` lautet und das Muster für einzuschließende Dateien `in*` lautet, nimmt der Watched Folder-Dienst die Dateien auf, die mit &quot;in&quot;beginnen, und nicht die Dateien, die mit &quot;ex&quot;beginnen. Benennen Sie zum Kopieren großer Dateien oder Ordner zuerst die Datei bzw. den Ordner so um, dass der Name mit „ex“ beginnt. Nachdem die Datei oder der Ordner mit dem Namen &quot;ex&quot;vollständig in den überwachten Ordner kopiert wurde, benennen Sie sie in &quot;in&amp;ast;&quot;um.
 
 * Verwenden Sie die „Bereinigungszeit“, um den Ergebnisordner leer zu halten. Der Watched Folder-Dienst bereinigt alle Dateien, die älter als die unter „Bereinigungszeit“ angegebene Dauer sind. Die Dauer wird in Tagen angegeben.
 * Wenn ein Endpunkt des Typs „überwachter Ordner“ hinzugefügt wird, wird nach der Auswahl des Vorgangsnamens die Zuordnung von Eingabeparametern ausgefüllt. Für jede Eingabe des Vorgangs wird ein Feld für die Zuordnung von Eingabeparametern erzeugt. Im Folgenden finden Sie Beispiele für Zuordnungen von Eingabeparametern:
 
    * Für die Eingabe `com.adobe.idp.Document` gilt: Wenn der Eingabetyp des Dienstvorgangs `Document` ist, kann der Administrator den Zuordnungstyp als `Variable` angeben. Der Watched Folder-Dienst nimmt die Eingabe aus dem Eingabeordner des überwachten Ordners auf Grundlage des im Eingabeparameter angegebenen Dateimusters auf. Wenn der Administrator `*.pdf` als Parameter angibt, wird jede Datei mit der Erweiterung .pdf abgerufen, in `com.adobe.idp.Document` konvertiert und der Dienst aufgerufen.
-   * Für `java.util.Map` Eingabe: Wenn der Dienstvorgang eine Eingabe vom Typ `Map` enthält, kann der Administrator den Zuordnungstyp als `Variable` angeben und einen Zuordnungswert mit einem Muster wie `*.pdf` eingeben. Angenommen ein Dienst benötigt eine Zuordnung von zwei `com.adobe.idp.Document`-Objekten, die zwei Dateien im Eingabeordner repräsentieren, z. B „1.pdf“ und „2.pdf“. Der Watched Folder-Dienst erstellt eine Zuordnung mit dem Dateinamen als Schlüssel und dem Wert `com.adobe.idp.Document`.
-   * Für `java.util.List` Eingabe: Wenn der Dienstvorgang eine Eingabe vom Typ Liste enthält, kann der Administrator den Zuordnungstyp als `Variable` angeben und einen Zuordnungswert mit einem Muster wie `*.pdf` eingeben. Wenn PDF-Dateien im Eingabeordner abgelegt werden, erstellt der Watched Folder-Dienst eine Liste der `com.adobe.idp.Document`-Objekte, die diese Dateien repräsentiert, und ruft den Zieldienst auf.
-   * Für `java.lang.String` gilt: Der Administrator hat zwei Möglichkeiten. Zuerst kann der Administrator den Zuordnungstyp als `Literal` angeben und einen Zuordnungswert als Zeichenfolge eingeben, z. B. `hello.` Der Watched Folder-Dienst ruft den Dienst mit der Zeichenfolge `hello` auf. Zweitens kann der Administrator den Zuordnungstyp als `Variable` angeben und einen Zuordnungswert mit einem Muster wie `*.txt` eingeben. Im zweiten Fall werden Dateien mit der TXT-Endung als Dokument gelesen, das zwangsweise in eine Zeichenfolge umgewandelt ist, um den Dienst aufzurufen.
+   * Für `java.util.Map` Eingabe: Wenn der Dienstvorgang eine Eingabe vom Typ `Map` aufweist, kann der Administrator den Zuordnungstyp als `Variable` angeben und einen Zuordnungswert mit einem Muster wie `*.pdf` eingeben. Angenommen ein Dienst benötigt eine Zuordnung von zwei `com.adobe.idp.Document`-Objekten, die zwei Dateien im Eingabeordner repräsentieren, z. B „1.pdf“ und „2.pdf“. Der Watched Folder-Dienst erstellt eine Zuordnung mit dem Dateinamen als Schlüssel und dem Wert `com.adobe.idp.Document`.
+   * Für `java.util.List` Eingabe: Wenn der Dienstvorgang eine Eingabe vom Typ List aufweist, kann der Administrator den Zuordnungstyp als `Variable` angeben und einen Zuordnungswert mit einem Muster wie `*.pdf` eingeben. Wenn PDF-Dateien im Eingabeordner abgelegt werden, erstellt der Watched Folder-Dienst eine Liste der `com.adobe.idp.Document`-Objekte, die diese Dateien repräsentiert, und ruft den Zieldienst auf.
+   * Für `java.lang.String` gilt: Der Administrator hat zwei Möglichkeiten. Zunächst kann der Administrator den Zuordnungstyp als `Literal` angeben und einen Zuordnungswert als Zeichenfolge eingeben, z. B. `hello.` Der Watched Folder-Dienst ruft den Dienst mit der Zeichenfolge `hello` auf. Zweitens kann der Administrator den Zuordnungstyp als `Variable` angeben und einen Zuordnungswert mit einem Muster wie `*.txt` eingeben. Im zweiten Fall werden Dateien mit der TXT-Endung als Dokument gelesen, das zwangsweise in eine Zeichenfolge umgewandelt ist, um den Dienst aufzurufen.
    * Der Administrator kann den Zuordnungstyp als `Literal` angeben und den Wert vorgeben. Der Watched Folder-Dienst ruft den Dienst mit dem angegebenen Wert auf.
 
 * Der Watched Folder-Dienst ist für die Arbeit mit Dokumenten konzipiert. Die unterstützten Ausgaben sind `com.adobe.idp.Document`, `org.w3c.Document`, `org.w3c.Node` sowie eine Liste und Zuordnung dieser Typen. Jeder andere Typ führt zu einer Fehlerausgabe im Fehlerordner.
@@ -399,8 +397,8 @@ Im Folgenden finden Sie einige Tipps und Tricks zum Konfigurieren des Endpunkts 
 
    * Vorläufige Lösung 1
 
-      1. Geben Sie ein Muster für Muster für auszuschließende Dateien an, z. B. &quot;temp&amp;ast;.ps&quot;.
-      1. Kopieren Sie Dateien, die mit &quot;temp&quot;(z. B. &quot;temp1.ps&quot;) beginnen, in den überwachten Ordner.
+      1. Geben Sie ein Muster für das Muster für auszuschließende Dateien an, z. B. temp&amp;ast;.ps.
+      1. Kopieren Sie Dateien, die mit &quot;temp&quot;beginnen (z. B. &quot;temp1.ps&quot;), in den überwachten Ordner.
       1. Nachdem die Datei vollständig in den überwachten Ordner kopiert wurde, benennen Sie die Datei entsprechend dem für &quot;Muster für einzuschließende Dateien&quot;angegebenen Muster um. Die vollständige Datei wird dann vom überwachten Ordner in „stage“ verschoben.
    * Vorläufige Lösung 2
 
@@ -425,7 +423,7 @@ Für alle Dienste müssen die Stapelgröße und das Wiederholungsintervall des �
 ### Empfehlungen für den Barcoded Forms-Dienst  {#barcoded-forms-service-recommendations}
 
 * Geben Sie zur Erzielung einer optimalen Leistung bei der Verarbeitung von Formularen mit Strichcode (kleine Dateien) als Stapelgröße `10` und als Wiederholungsintervall `2` ein.
-* Befinden sich viele Dateien im Eingabeordner, kann es zu Fehlern mit ausgeblendeten Dateien namens „*thumbs.db*“ kommen. Es wird daher empfohlen, das Muster für einzuschließende Dateien auf denselben Wert festzulegen, der für die Eingabevariable angegeben wurde (z. B. `*.tiff`). Auf diese Weise wird der Watched Folder-Dienst daran gehindert, die DB-Dateien zu verarbeiten.
+* Befinden sich viele Dateien im Eingabeordner, kann es zu Fehlern mit ausgeblendeten Dateien namens „*thumbs.db*“ kommen. Es wird daher empfohlen, das Muster für einzuschließende Dateien auf denselben Wert festzulegen, der für die Eingabevariable festgelegt wurde (z. B. `*.tiff`). Auf diese Weise wird der Watched Folder-Dienst daran gehindert, die DB-Dateien zu verarbeiten.
 * Eine Stapelgröße von `5` und ein Wiederholungsintervall von `2` sind normalerweise ausreichend, da der Barcoded Forms-Dienst für gewöhnlich ungefähr 0,5 Sekunden für die Verarbeitung eines Strichcodes benötigt.
 * Der Watched Folder-Dienst wartet nicht auf den Abschluss des Auftrags durch die Prozess-Engine, bevor neue Dateien oder Ordner aufgenommen werden. Der überwachte Ordner wird weiterhin überprüft und der Zieldienst aufgerufen. Durch dieses Verhalten kann die Prozess-Engine überlastet werden, was zu Ressourcenproblemen und Zeitüberschreitungen führt. Stellen Sie sicher, dass Sie mithilfe des Wiederholungsintervalls und der Stapelgröße die Watched Folder-Eingabe einschränken. Sie können das Wiederholungsintervall erhöhen und die Stapelgröße verringern, wenn mehr überwachte Ordner vorhanden sind, oder die Funktion „Einschränken“ am Endpunkt aktivieren. Informationen zur Funktion „Einschränken“ finden Sie unter [Informationen zu Einschränkungen](configuring-watched-folder-endpoints.md#about-throttling).
 * Der Watched Folder-Dienst nimmt die Identität des im Benutzer- und Domänennamen angegebenen Benutzers an. Der Watched Folder-Dienst ruft den Dienst als dieser Benutzer auf, wenn er direkt aufgerufen wird oder wenn der Prozess eine kurze Lebensdauer hat. Bei einem Prozess mit langer Lebensdauer wird dieser mit dem Systemkontext aufgerufen. Administratoren können Betriebssystemrichtlinien für den Watched Folder-Dienst festlegen, um zu bestimmen, welchen Benutzern der Zugriff gewährt oder verweigert werden soll.
@@ -435,4 +433,3 @@ Für alle Dienste müssen die Stapelgröße und das Wiederholungsintervall des �
 
    * Einer der Threads findet die Datei erfolgreich und ruft den Zieldienst mit der Datei auf.
    * Der zweite Thread sieht zwar die Datei, schlägt aber bei der Überprüfung der Gültigkeit der Datei fehl (Lesen oder Schreiben der Datei), wodurch falsch positive Fehler erzeugt werden, die anzeigen, dass der Dateiinhalt nicht verarbeitet werden kann, weil die Datei schreibgeschützt ist. Dies tritt nur ein, wenn das Wiederholungsintervall niedrig und die Stapelgröße hoch sind.
-
