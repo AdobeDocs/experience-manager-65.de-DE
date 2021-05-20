@@ -10,8 +10,7 @@ discoiquuid: e3b44330-d476-49c6-b7ba-079d0d60e500
 docset: aem65
 role: Business Practitioner, Administrator
 exl-id: 274af114-845a-46bd-b091-802cf589687a
-feature: Asset Management,Renditions
-translation-type: tm+mt
+feature: Asset-Management,Ausgabeformate
 source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
 workflow-type: tm+mt
 source-wordcount: '309'
@@ -40,11 +39,11 @@ Weitere Informationen finden Sie in den folgenden Themen:
 
 * [Hinzufügen von Dynamic Media-Assets zu Web-Seiten](/help/assets/adding-dynamic-media-assets-to-pages.md)
 * [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](/help/assets/embed-code.md)
-* [Aktivieren des Hotlink-Schutzes in Dynamic Media](hotlink-protection.md)
+* [Aktivieren des Hotlink-Schutzes in Dynamic Media  ](hotlink-protection.md)
 * [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/linking-urls-to-yourwebapplication.md)
 * [Bereitstellen von optimierten Bildern für eine responsive Site](/help/assets/responsive-site.md)
 * [Bereitstellung von Inhalt über HTTP/2 ](/help/assets/http2.md)
-* [Ungültigmachen des CDN-Cache über Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
+* [Invalidierung des CDN-Cache mithilfe von Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
 * [Verwenden von Regelsätzen zum Konvertieren von URLs](/help/assets/using-rulesets-to-transform-urls.md)
 
 
