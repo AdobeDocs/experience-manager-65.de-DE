@@ -9,34 +9,33 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 68912260-179a-4d1b-b944-0a1777c021ac
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 63%
 
 ---
 
-
 # Aktivieren von Anlagen für ein HTML5-Formular {#enabling-attachments-for-an-html-form}
 
 Sie können Anlagen mit HTML5-Formularen hochladen, anzeigen und senden. Standardmäßig ist die Unterstützung der Anlage deaktiviert. Gehen Sie wie folgt vor, um die Unterstützung der Anlage zu aktivieren:
 
 1. Erstellen Sie ein [benutzerdefiniertes Profil](/help/forms/using/custom-profile.md) mit der Eigenschaft Mehrfachauswahlzeichenfolge`mfAttachmentOptions` .
-1. Geben Sie im benutzerdefinierten Profil die Eigenschaften `fileSizeLimit`, `multiSelect` und `buttonTex`t an, um die Optionen des Dateianhangswidgets zu konfigurieren. Bei Bedarf können Sie auch weitere benutzerdefinierte Eigenschaften angeben.
+1. Geben Sie im benutzerdefinierten Profil die Eigenschaften `fileSizeLimit`, `multiSelect` und `buttonTex`t an, um die Optionen des Dateianlagen-Widgets zu konfigurieren. Bei Bedarf können Sie auch weitere benutzerdefinierte Eigenschaften angeben.
 
 1. Verwenden Sie im benutzerdefinierten Profil die folgenden Konfigurationen:
 
    * **multiSelect** -> „true“ oder „false“ (true standardmäßig ausgewählt)
-   * **fileSizeLimit** -> value_in_mb (z. B. 5) (standardmäßig 2 MB)
-   * **buttonText** -> Schaltflächentext für Popupfenster (&quot;Anhängen&quot;)
-   * **accept** -> Dateitypen, die akzeptiert werden sollen (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot;, standardmäßig)
+   * **fileSizeLimit**  -> value_in_mb (z. B. 5) (standardmäßig 2 MB)
+   * **buttonText**  -> Schaltflächentext für Popup-Fenster (standardmäßig &quot;Anhängen&quot;)
+   * **accept**  -> Dateitypen, die akzeptiert werden sollen (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; standardmäßig)
 
    >[!NOTE]
    >
    >In Microsoft Internet Explorer 9 können Benutzer Dateien anfügen, die größer sind, als der angegebene Grenzwert. Hierbei handelt es sich um ein bekanntes Problem.
 
-1. Verwenden Sie den [Metadateneditor](/help/forms/using/manage-form-metadata.md), um das benutzerdefinierte Profil auszuwählen, das Sie oben für HTML5-Formulare erstellt haben.
+1. Verwenden Sie den [Metadaten-Editor](/help/forms/using/manage-form-metadata.md), um das benutzerdefinierte Profil auszuwählen, das Sie oben für HTML5-Formulare erstellt haben.
 1. Sie können die Formularvorlage mit dem benutzerdefinierten Profil wiedergeben und das Anlagensymbol würde in der Symbolleiste „Formulare“ angezeigt.
 
    >[!NOTE]
@@ -55,10 +54,10 @@ Sie können Anlagen mit HTML5-Formularen hochladen, anzeigen und senden. Standar
 
 ## Format der Anlage bei Einsendung {#attachment-submission-format}
 
-Wenn Anlagen aktiviert sind, sendet das HTML5-Formular mehrteilige Daten. Die mehrteiligen Übermittlungsdaten bestehen aus zwei Teilen **dataXml** und **Anlagen**.
+Wenn Anlagen aktiviert sind, sendet das HTML5-Formular mehrteilige Daten. Die mehrteiligen Sendedaten haben zwei Teile **dataXml** und **Anlagen**.
 
 >[!NOTE]
 >
->Wenn die Option `mfAllowAttachments` für die Abwärtskompatibilität deaktiviert ist, senden die HTML5-Formulare die mehrteiligen Daten nicht. Es sendet einfache Daten-XML im Format **application/xml**.
+>Wenn die Option `mfAllowAttachments` aus Gründen der Abwärtskompatibilität deaktiviert ist, senden die HTML5-Formulare die mehrteiligen Daten nicht. Es sendet einfache Daten-XML im Format **application/xml**.
 
 Wenn das Flag „mfAllowAttachments“ aktiviert ist, werden die mehrteiligen Daten vom [Sendedienst Proxydienst](/help/forms/using/service-proxy.md) mit dataXml und Anlagen gesendet.
