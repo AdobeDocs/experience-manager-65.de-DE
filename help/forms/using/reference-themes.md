@@ -1,25 +1,24 @@
 ---
 title: Referenzthemen
 seo-title: Referenzthemen
-description: AEM Forms stellt Themen für adaptive Formulare bereit, die Sie aus der Softwareverteilung erhalten und zum Formatieren eines Formulars verwenden können.
-seo-description: AEM Forms stellt Themen für adaptive Formulare bereit, die Sie aus der Softwareverteilung erhalten und zum Formatieren eines Formulars verwenden können.
+description: AEM Forms bietet Designs für adaptive Formulare, die Sie aus Softwareverteilung beziehen und zum Gestalten eines Formulars verwenden können.
+seo-description: AEM Forms bietet Designs für adaptive Formulare, die Sie aus Softwareverteilung beziehen und zum Gestalten eines Formulars verwenden können.
 uuid: 3c6bd309-aa5a-4953-91ed-25ed5ba5671a
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: a69d3787-8149-4bca-835d-aeecfb11702b
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+exl-id: f6c24894-c322-4c44-b001-8978954d6e53
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 79%
 
 ---
 
-
 # Referenzthemen{#reference-themes}
 
-[Designs](../../forms/using/themes.md) ermöglichen Ihnen, Ihre Formulare ohne fundierte Kenntnisse im Umgang mit CSS zu formatieren. Zusätzlich zum Standarddesign können Sie die folgenden Themen abrufen, indem Sie das [AEM-FORMS-REFERENCE-THEMEN](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES)-Paket installieren:
+[Designs](../../forms/using/themes.md) ermöglichen Ihnen, Ihre Formulare ohne fundierte Kenntnisse im Umgang mit CSS zu formatieren. Zusätzlich zum Standarddesign können Sie die folgenden Designs abrufen, indem Sie das Paket [AEM-FORMS-REFERENCE-THEMES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) installieren:
 
 * Beryl
 * Exec
@@ -36,7 +35,7 @@ Jedes Design enthält einen eindeutigen und eleganten Stil, den Sie verwenden k�
 
 Die Designs, die in diesem Paket enthalten sind, sind responsive und die Formatierung in diesen Themen ist definiert für Mobil- und Desktopanzeigen. Die meisten modernen Browser auf einer Vielzahl von Geräten können Formulare rendern, die mit einem dieser Designs mühelos angewendet werden.
 
-Weitere Informationen zum Installieren des Pakets finden Sie unter [So arbeiten Sie mit Paketen](/help/sites-administering/package-manager.md).
+Weitere Informationen zur Installation des Pakets finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md).
 
 ## Beryl {#beryl}
 
@@ -98,7 +97,7 @@ Das Ultramarine-Design verwendet dunkelblaue Töne, um Komponenten wie Registerk
 
 ## Urbane {#urbane}
 
-Urbane Thema betont ein minimalistisches und funktionelles Aussehen Ihres Formulars. Wenn Sie das Urbane-Design auf Ihr Formular anwenden, sehen Sie, dass die Komponenten flach sind. Die Bedienfelder erhalten dünne Konturen, um einen modernen Look zu erzielen.
+Das Urbane-Design betont ein minimalistisches und funktionales Erscheinungsbild für Ihr Formular. Wenn Sie das Urbane-Design auf Ihr Formular anwenden, können Sie sehen, dass die Komponenten flach sind. Die Bedienfelder erhalten dünne Konturen, um einen modernen Look zu erzielen.
 
 ![Urbane-Design](assets/urbane.png)
 
@@ -108,7 +107,7 @@ Urbane Thema betont ein minimalistisches und funktionelles Aussehen Ihres Formul
 
 ## U.S. Web Design Standards {#u-s-web-design-standards}
 
-Das Thema &quot;Webdesign-Standards&quot;der USA verwendet, wie der Name nahe legt, Schriftarten und Stile, die auf der Website &quot;Entwurf der US-Webdesign-Standards&quot;beschrieben sind. Der Webstandard wird von verschiedenen Bundesorganisationen verwendet, um konsistente Web-Erlebnisse für Bundesregierungswebsites zu erstellen.
+Wie der Name schon sagt, verwendet das Thema Web Design Standards in den USA Schriften und Stile, die auf der Website Draft U.S. Web Design Standards beschrieben sind. Der Webstandard wird von verschiedenen Bundesorganisationen verwendet, um konsistente Web-Erlebnisse für Bundesregierungswebsites zu erstellen.
 
 ![U.S. Web Design Standards-Design](assets/us-web-standards.png)
 
