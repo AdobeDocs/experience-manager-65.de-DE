@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 68e3071e-7ce6-4bdc-8561-14bcaeae2b6c
 docset: aem65
-feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Korrespondenzverwaltung
+exl-id: b41af9fe-c698-44b3-9ac6-97d42cdc02d4
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '802'
 ht-degree: 83%
 
 ---
-
 
 # Remote-Funktionen im Ausdrucksgenerator{#remote-functions-in-expression-builder}
 
@@ -25,7 +24,7 @@ Mithilfe des Ausdrucksgenerators können Sie Ausdrücke oder Bedingungen erstell
 
 ## Erstellen von Ausdrücken und Remote-Funktionen mit dem Ausdrucksgenerator {#creating-expressions-and-remote-functions-with-expression-builder}
 
-Der Ausdruck Builder verwendet intern JSP-EL-Bibliotheken, sodass der Ausdruck die JSPEL-Syntax einhält. Weitere Informationen finden Sie unter [Beispielausdrücke](#exampleexpressions).
+Der Expression Builder verwendet intern JSP EL-Bibliotheken, sodass der Ausdruck die JSPEL-Syntax einhält. Weitere Informationen finden Sie unter [Beispielausdrücke](#exampleexpressions).
 
 ![Ausdrucksgenerator](assets/expressionbuilder.png)
 
@@ -38,12 +37,12 @@ Die zur Verwendung in Ausdrücken verfügbaren Operatoren sind auf der oberen Le
 Im Folgenden werden einige Beispiele für häufige JSP-EL-Verwendungszwecke gezeigt, die Sie für Ihre Correspondence Management-Lösung verwenden können.
 
 * So fügen Sie zwei Zahlen hinzu: ${number1 + number2}
-* So verketten Sie zwei Zeichenfolgen: ${str1} ${str2}
+* Verketten zweier Zeichenfolgen: ${str1} ${str2}
 * So vergleichen Sie zwei Zahlen: ${age &lt; 18}
 
 Weitere Informationen finden Sie in der [JSP-EL-Spezifikation](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). Der clientseitige Expression Manager unterstützt nicht alle Variablen und Funktionen in der JSP-EL-Spezifikation. Dabei gilt:
 
-* Sammlungsindizes und Zuordnungsschlüssel (unter Verwendung der []-Notation) werden in Variablennamen für clientseitig ausgewertete Ausdruck nicht unterstützt.
+* Sammlungsindizes und Zuordnungsschlüssel (unter Verwendung der []-Notation) werden in Variablennamen für Ausdrücke, die clientseitig ausgewertet werden, nicht unterstützt.
 * Die folgenden Parameter sind als Parametertypen oder Rückgabetypen für in Ausdrücken verwendete Funktionen unterstützt:
 
    * java.lang.String
@@ -79,7 +78,7 @@ Remote-Funktionen ermöglichen die Nutzung von benutzerdefinierter Logik in Ausd
 Sie können ein benutzerdefiniertes Bundle erstellen, um Ihre eigenen Remote-Funktionen zur Verwendung in Ausdrücken zu exportieren. Um ein benutzerdefiniertes Bundle zum Exportieren Ihrer eigenen Remote-Funktionen zu erstellen, führen Sie folgende Schritte aus. Sie demonstrieren, wie Sie eine benutzerdefinierte Funktion schreiben, deren Eingabezeichenfolge groß geschrieben wird.
 
 1. Definieren Sie eine Schnittstelle für den OSGi-Dienst, die Methoden enthält, die zur Verwendung in Expression Manager exportiert werden sollen.
-1. Deklarieren Sie Methoden auf der Schnittstelle A und kommentieren Sie sie mit der Anmerkung &quot;@ServiceMethod&quot;(com.adobe.exm.expeval.ServiceMethod). Expression Manager ignoriert alle Methoden, bei denen keine Anmerkungen vorhanden sind. Die ServiceMethod-Anmerkung verfügt über die folgenden optionalen Attribute, die ebenfalls angegeben werden können:
+1. Deklarieren Sie Methoden auf der Schnittstelle A und kommentieren Sie sie mit der Anmerkung @ServiceMethod (com.adobe.exm.expeval.ServiceMethod). Expression Manager ignoriert alle Methoden, bei denen keine Anmerkungen vorhanden sind. Die ServiceMethod-Anmerkung verfügt über die folgenden optionalen Attribute, die ebenfalls angegeben werden können:
 
    1. **Enabled**: Bestimmt, ob diese Methode aktiviert ist. Expression Manager ignoriert deaktivierte Methoden.
    1. **familyId**: Legt die Familie (Gruppe) der Methode fest. Wenn dieses Attribut leer ist, geht Expression Manager davon aus, dass die Methode zur Standardfamilie gehört. Es ist keine Registrierung für Familien (außer der Standardeinstellung) vorhanden, um die Auswahl von Funktionen zu ermöglichen. Expression Manager erstellt die Registrierung dynamisch durch Zusammenführen aller Familien-IDs, die durch sämtliche von den verschiedenen Bundles exportierte Funktionen angegeben werden. Stellen Sie sicher, dass hier eine lesbare ID angegeben wird, da diese auch in der Authoring-Benutzeroberfläche für die Ausdrücke angezeigt wird.
@@ -97,11 +96,11 @@ Sie können ein benutzerdefiniertes Bundle erstellen, um Ihre eigenen Remote-Fun
    }
    ```
 
-   Die Parameter der Methoden können optional auch mit der Anmerkung &quot;@ServiceMethodParameter&quot;(com.adobe.exm.expeval.ServiceMethodParameter) kommentiert werden. Diese Anmerkung wird nur dazu verwendet, für Menschen lesbare Namen und Beschreibungen von Methodenparametern für die Verwendung in der Authoring-Benutzeroberfläche anzugeben. Stellen Sie sicher, dass die Parameter und Rückgabewerte der Methoden für die Schnittstelle zu den folgenden Typen gehören:
+   Die Parameter der Methoden können optional auch mit der Anmerkung @ServiceMethodParameter (com.adobe.exm.expeval.ServiceMethodParameter) kommentiert werden. Diese Anmerkung wird nur dazu verwendet, für Menschen lesbare Namen und Beschreibungen von Methodenparametern für die Verwendung in der Authoring-Benutzeroberfläche anzugeben. Stellen Sie sicher, dass die Parameter und Rückgabewerte der Methoden für die Schnittstelle zu den folgenden Typen gehören:
 
    * java.lang.String
    * java.lang.Character
-   * Zeichen
+   * Char
    * java.lang.Boolean
    * Boolesch
    * java.lang.Integer
@@ -111,9 +110,9 @@ Sie können ein benutzerdefiniertes Bundle erstellen, um Ihre eigenen Remote-Fun
    * java.lang.Byte
    * byte
    * java.lang.Double
-   * Dublette
+   * Double
    * java.lang.Long
-   * lang
+   * Lang
    * java.lang.Float
    * Float
    * java.util.Calendar
@@ -121,7 +120,7 @@ Sie können ein benutzerdefiniertes Bundle erstellen, um Ihre eigenen Remote-Fun
    * java.util.List
 
 
-1. Definieren Sie die Implementierung der Schnittstelle, konfigurieren Sie sie als OSGI-Dienst und definieren Sie die folgenden Diensteigenschaften:
+1. Definieren Sie die Implementierung der Schnittstelle, konfigurieren Sie sie als OSGi-Dienst und definieren Sie die folgenden Diensteigenschaften:
 
 ```jsp
 @org.apache.felix.scr.annotations.Properties({
@@ -158,7 +157,7 @@ public class RemoteFuntionImpl implements RemoteFunction {
 
 Nachfolgend finden Sie Beispiel-Archive:
 
-* **GoodFunctions.jar.** zipis die JAR-Datei mit Bundle, die eine Definition für eine Muster-Remote-Funktion enthält. Laden Sie die GoodFunctions.jar.zip-Datei herunter und dekomprimieren Sie diese, um die JAR-Datei zu erhalten.
+* **GoodFunctions.jar.** zip ist die JAR-Datei mit dem Bundle, das eine Definition für eine Beispiel-Remote-Funktion enthält. Laden Sie die GoodFunctions.jar.zip-Datei herunter und dekomprimieren Sie diese, um die JAR-Datei zu erhalten.
 * **GoodFunctions.zip** ist das Paket des Quellcodes zum Definieren einer benutzerdefinierten Remote-Funktion und eines Bundles dafür.
 
 GoodFunctions.jar.zip
