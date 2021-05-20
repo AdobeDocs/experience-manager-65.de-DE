@@ -9,14 +9,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 9b8c5933-b783-48f9-b463-15a01e06ee98
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 58%
 
 ---
-
 
 # Designanpassung {#theme-customization}
 
@@ -30,15 +29,15 @@ Sie können den HTML-Code und die CSS-Datei anpassen, um der AEM Forms-App ein u
 
 1. Öffnen Sie Ihr Projekt.
 
-   * Für iOS öffnen Sie `Capture.xcodeproj` in Xcode
+   * Öffnen Sie für iOS `Capture.xcodeproj` in Xcode.
    * In Android öffnen Sie das Android-Projekt in Eclipse.
-   * Öffnen Sie unter Windows `MWSWindows.sln` in Visual Studio.
+   * Öffnen Sie für Windows `MWSWindows.sln` in Visual Studio.
 
 1. Navigieren Sie zum Ordner „templates“.
 
-   * Navigieren Sie in Xcode zum Ordner **Capture > www > wsmobile > js > runtime > templates**.
-   * Navigieren Sie in Eclipse zum Ordner **assets > www > wsmobile > js > runtime > templates**.
-   * Navigieren Sie in Visual Studio zum Ordner **MWSWindows > www > wsmobile > js > runtime > templates**.
+   * Navigieren Sie in Xcode zum Ordner **Capture > www > wsmobile > js > runtime > templates** .
+   * Navigieren Sie in Eclipse zum Ordner **assets > www > wsmobile > js > runtime > templates** .
+   * Navigieren Sie in Visual Studio zum Ordner **MWSWindows > www > wsmobile > js > runtime > templates** .
 
 1. Öffnen Sie die Datei `template.html` zur Bearbeitung.
 1. Suchen Sie die folgende Zeichenfolge:
@@ -75,7 +74,7 @@ Sie können den HTML-Code und die CSS-Datei anpassen, um der AEM Forms-App ein u
 
 1. Navigieren Sie zum Ordner „css“.
 
-   * In Xcode navigieren Sie zu **Capture > www > wsmobile > css**.
+   * Navigieren Sie in Xcode zu **Capture > www > wsmobile > css**.
    * Navigieren Sie in Eclipse zu **assets > www > wsmobile > css**.
    * Navigieren Sie in Visual Studio zu **MWSWindows > www > wsmobile > css**.
 
