@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: b5e27b54-d141-48dd-a4ed-dd0a691319a5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 96%
 
 ---
-
 
 # Aufrufen von Aufgabenvariablen in der Zusammenfassungs-URL {#getting-task-variables-in-summary-url}
 
@@ -34,7 +33,7 @@ In dieser Beispielorchestrierung reicht ein Mitarbeiter ein Urlaubsantragsformul
 
    >[!NOTE]
    >
-   >Dieser Renderer ist die Vorlage für die Zusammenfassungsseite.
+   >Dieser Renderer ist die Zusammenfassungsseitenvorlage.
 
    Der folgende Beispielcode für diesen Renderer ist enthalten in:
 
