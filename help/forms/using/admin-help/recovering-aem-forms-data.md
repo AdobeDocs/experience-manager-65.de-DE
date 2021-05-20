@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
-translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 95%
 
 ---
-
 
 # Wiederherstellen der AEM Forms-Daten {#recovering-the-aem-forms-data}
 
@@ -109,11 +108,11 @@ Wenn ein einzelner Knoten eines Clusters mit mehreren Knoten ausgefallen ist, di
       Für die Wiederherstellung in einer Clusterumgebung finden Sie weitere Informationen unter [Strategie für Sicherung und Wiederherstellung in einer Clusterumgebung](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md#strategy-for-backup-and-restore-in-a-clustered-environment).
 
 1. Löschen Sie alle temporären AEM Forms-Dateien, die im Ordner „java.io.temp“ oder im temporären Adobe-Ordner erstellt wurden.
-1. Beginn AEM Formulare (siehe [Dienste starten und beenden](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/help/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
+1. Starten Sie AEM Formulare (siehe [Starten und Beenden von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/help/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
 
 ## Speicherort des globalen Dokumentenspeichers während der Wiederherstellung ändern {#changing-the-gds-location-during-recovery}
 
-Falls der globale Dokumentenspeicher an anderen als dem ursprünglichen Speicherort wiederhergestellt wird, führen Sie das Skript „LCSetGDS“ aus, um den globalen Dokumentenspeicher auf den neuen Speicherort festzulegen. Das Skript befindet sich im Ordner `[aem-forms root]\sdk\misc\Foundation\SetGDSCommandline`. Das Skript akzeptiert zwei Parameter: `defaultGDS` und `newGDS`. Lesen Sie die Datei `ReadMe.txt` im selben Ordner für Anweisungen zum Ausführen des Skripts.
+Falls der globale Dokumentenspeicher an anderen als dem ursprünglichen Speicherort wiederhergestellt wird, führen Sie das Skript „LCSetGDS“ aus, um den globalen Dokumentenspeicher auf den neuen Speicherort festzulegen. Das Skript befindet sich im Ordner `[aem-forms root]\sdk\misc\Foundation\SetGDSCommandline` . Das Skript akzeptiert zwei Parameter: `defaultGDS` und `newGDS`. Lesen Sie die Datei `ReadMe.txt` im selben Ordner für Anweisungen zum Ausführen des Skripts.
 
 >[!NOTE]
 >
@@ -134,4 +133,3 @@ Fahren Sie zum Ändern des Speicherortes des globalen Dokumentenspeichers den ge
 >[!NOTE]
 >
 >Wenn der vollständige Abschluss des Starts eines einzelnen Knotens vor dem Starten anderer Knoten nicht sichergestellt werden kann, müssen Sie das Skript LCSetGDS auf allen Knoten im Cluster ausführen, bevor Sie den Cluster starten.
-
