@@ -1,37 +1,36 @@
 ---
-title: Rendern und Versand
-seo-title: Rendern und Versand
-description: Rendern und Versand
+title: Rendering und Versand
+seo-title: Rendering und Versand
+description: Rendering und Versand
 seo-description: 'null'
 uuid: 1253b6a5-6bf3-42b1-be3a-efa23b6ddb51
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 11%
 
 ---
 
-
-# Rendern und Versand{#rendering-and-delivery}
+# Rendering and Delivery{#rendering-and-delivery}
 
 >[!NOTE]
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-AEM Inhalte können einfach über [Sling Default Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) gerendert werden, um [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) und andere Formate wiederzugeben.
+AEM Inhalt kann einfach über [Sling Default Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) gerendert werden, um [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) und andere Formate zu rendern.
 
-Diese sofort einsetzbaren Renderer führen normalerweise das Repository aus und geben Inhalt wie bisher zurück.
+Diese vordefinierten Renderer führen normalerweise das Repository durch und geben Inhalt unverändert zurück.
 
-AEM unterstützt über Sling auch die Entwicklung und Bereitstellung von benutzerdefinierten Sling-Renderern, um das gerenderte Schema und den gerenderten Inhalt vollständig zu steuern.
+AEM unterstützt über Sling auch die Entwicklung und Bereitstellung benutzerdefinierter Sling-Renderer, um die volle Kontrolle über das gerenderte Schema und den gerenderten Inhalt zu übernehmen.
 
-Content Services-Standard-Renderer füllen die Lücke zwischen den standardmäßigen Sling-Standardeinstellungen und der benutzerdefinierten Entwicklung, sodass viele Aspekte des gerenderten Inhalts ohne Entwicklung angepasst und gesteuert werden können.
+Content Services Default Renderer füllen die Lücke zwischen vordefinierten Sling Defaults und benutzerdefinierter Entwicklung, um die Anpassung und Kontrolle vieler Aspekte des gerenderten Inhalts ohne Entwicklung zu ermöglichen.
 
-Das folgende Diagramm zeigt die Wiedergabe von Inhaltsdiensten.
+Das folgende Diagramm zeigt die Darstellung von Inhaltsdiensten.
 
 ![chlimage_1-15](assets/chlimage_1-15.png)
 
@@ -43,15 +42,15 @@ Verwenden Sie **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.** js
  <tbody>
   <tr>
    <td>RESSOURCE</td>
-   <td>eine Entitätsressource unter /content/entity<br /> oder <br /> eine Inhaltsressource unter /content</td>
+   <td>eine Entitätsressource unter /content/entils<br /> oder <br /> einer Inhaltsressource unter /content</td>
   </tr>
   <tr>
    <td>EXPORT-CONFIG</td>
-   <td><p><strong>OPTIONAL</strong><br /> </p> <p>eine Exportkonfiguration gefunden unter /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br /> Wenn keine Exportkonfiguration angegeben wird, wird die Standardexportkonfiguration angewendet. </p> </td>
+   <td><p><strong>OPTIONAL</strong><br /> </p> <p>eine Exportkonfiguration, die unter /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br /> gefunden wird. Wenn diese Option weggelassen wird, wird die standardmäßige Exportkonfiguration angewendet </p> </td>
   </tr>
   <tr>
    <td>DEPTH-INT</td>
-   <td><strong></strong><br /> <br /> OPTIONALdepth-Rekursion für das Rendering von Kindern, wie beim Sling-Rendering verwendet</td>
+   <td><strong></strong><br /> <br /> OPTIONALdepth-Rekursion für das Rendering von untergeordneten Elementen, wie beim Sling-Rendering verwendet</td>
   </tr>
  </tbody>
 </table>
@@ -60,9 +59,9 @@ Verwenden Sie **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.** js
 
 Exportkonfigurationen können erstellt werden, um das JSON-Rendering anzupassen.
 
-Sie können einen Konfigurationsknoten unter */apps/mobileapps/caas/exportConfigs erstellen.*
+Sie können einen Konfigurationsknoten unter */apps/mobileapps/caas/exportConfigs.* erstellen.
 
-| Knotenname | Name der Konfiguration (für die Renderauswahl) |
+| Knotenname | Name der Konfiguration (für Rendering-Selektor) |
 |---|---|
 | jcr:primaryType | nt:unstructured |
 
@@ -73,7 +72,7 @@ Die folgende Tabelle zeigt die Eigenschaften von Exportkonfigurationen:
   <tr>
    <td><strong>Name</strong></td>
    <td><strong>Typ</strong></td>
-   <td><strong>Standard (falls nicht festgelegt)</strong></td>
+   <td><strong>Standard (if, not set)</strong></td>
    <td><strong>Wert</strong></td>
    <td><strong>Beschreibung</strong></td>
   </tr>
@@ -82,42 +81,42 @@ Die folgende Tabelle zeigt die Eigenschaften von Exportkonfigurationen:
    <td>Zeichenfolge[]</td>
    <td>alles einschließen</td>
    <td>sling:resourceType</td>
-   <td>Ausschließen von Details für Knoten mit angegebenem sling:resourceType vom JSON-Export</td>
+   <td>Ausschließen von Details für Knoten mit dem angegebenen sling:resourceType vom JSON-Export</td>
   </tr>
   <tr>
    <td>excludeComponents</td>
    <td>Zeichenfolge[]</td>
    <td>nichts ausschließen</td>
    <td>sling:resourceType</td>
-   <td>umfassen nur Details für Knoten mit angegebenem sling:resourceType vom JSON-Export</td>
+   <td>Include-Details nur für Knoten mit dem angegebenen sling:resourceType vom JSON-Export</td>
   </tr>
   <tr>
    <td>excludePropertyPrefixes</td>
    <td>Zeichenfolge[]</td>
    <td>nichts ausschließen</td>
-   <td>Präfixe für Eigenschaften</td>
-   <td>Ausschließen von Eigenschaften, die Beginn mit angegebenen Präfixen aus dem JSON-Export enthalten</td>
+   <td>Eigenschaftspräfixe</td>
+   <td>Ausschließen von Eigenschaften, die mit angegebenen Präfixen beginnen, aus dem JSON-Export</td>
   </tr>
   <tr>
    <td>excludeProperties</td>
    <td>Zeichenfolge[]</td>
    <td>nichts ausschließen</td>
    <td>Eigenschaftsnamen</td>
-   <td>Ausschließen spezifizierter Eigenschaften aus dem JSON-Export</td>
+   <td>Ausschluss spezifizierter Eigenschaften aus dem JSON-Export</td>
   </tr>
   <tr>
    <td>includeProperties</td>
    <td>Zeichenfolge[]</td>
    <td>alles einschließen</td>
    <td>Eigenschaftsnamen</td>
-   <td><p>Wenn excludePropertyPrefixes set<br /> enthält, enthält dies angegebene Eigenschaften, obwohl das Präfix ausgeschlossen wurde,</p> <p>else (Eigenschaften ausschließen ignoriert) schließen Sie nur diese Eigenschaften ein</p> </td>
+   <td><p>Wenn excludePropertyPrefixes set<br /> dies angegebene Eigenschaften enthält, obwohl das Präfix mit dem Präfix ausgeschlossen wird,</p> <p>else (Eigenschaften ausschließen ignoriert) schließen nur diese Eigenschaften ein</p> </td>
   </tr>
   <tr>
    <td>includeChildren</td>
    <td>Zeichenfolge[]</td>
    <td>alles einschließen</td>
    <td>untergeordnete Namen</td>
-   <td>Ausschließen spezifizierter untergeordneter Elemente aus dem JSON-Export</td>
+   <td>Ausschluss bestimmter untergeordneter Elemente aus dem JSON-Export</td>
   </tr>
   <tr>
    <td>excludeChildren</td>
@@ -131,12 +130,12 @@ Die folgende Tabelle zeigt die Eigenschaften von Exportkonfigurationen:
    <td>Zeichenfolge[]<br /> <br /> </td>
    <td>nichts umbenennen</td>
    <td>&lt;actual_property_name&gt;,&lt;replacement_property_name&gt;</td>
-   <td>Eigenschaften mit Ersetzungen umbenennen</td>
+   <td>Umbenennen von Eigenschaften mithilfe von Ersetzungen</td>
   </tr>
  </tbody>
 </table>
 
-### Exportbeschränkungen für Ressourcentypen {#resource-type-export-overrides}
+### Export von Ressourcentypen überschreibt {#resource-type-export-overrides}
 
 Erstellen Sie einen Konfigurationsknoten unter */apps/mobileapps/caas/exportConfigs.*
 
@@ -151,7 +150,7 @@ Die folgende Tabelle zeigt die Eigenschaften:
   <tr>
    <td><strong>Name</strong></td>
    <td><strong>Typ</strong></td>
-   <td><strong>Standard (falls nicht festgelegt)</strong></td>
+   <td><strong>Standard (if, not set)</strong></td>
    <td><strong>Wert</strong></td>
    <td><strong>Beschreibung</strong></td>
   </tr>
@@ -160,7 +159,7 @@ Die folgende Tabelle zeigt die Eigenschaften:
    <td>Zeichenfolge[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>Bei den folgenden Sling-Ressourcentypen sollten Sie den standardmäßigen CaaS-JSON-Export nicht zurückgeben.<br /> Geben Sie einen Kunden-JSON-Export zurück, indem Sie die Ressource als;<br /> &lt;resource&gt; wiedergeben.&lt;selector_to_inc&gt;.json </td>
+   <td>Für die folgenden Sling-Ressourcentypen sollten Sie nicht den standardmäßigen CaaS-JSON-Export zurückgeben.<br /> Geben Sie einen Customer JSON-Export zurück, indem Sie die Ressource als <br /> &lt;resource&gt; rendern.&lt;selector_to_inc&gt;.json </td>
   </tr>
  </tbody>
 </table>
@@ -170,9 +169,9 @@ Die folgende Tabelle zeigt die Eigenschaften:
 Content Services umfasst zwei Exportkonfigurationen:
 
 * default (keine Konfiguration angegeben)
-* page (zum Rendern von Site-Seiten)
+* Seite (zum Rendern von Site-Seiten)
 
-#### Standardmäßige Exportkonfiguration {#default-export-configuration}
+#### Standard-Exportkonfiguration {#default-export-configuration}
 
 Die standardmäßige Exportkonfiguration für Content Services wird angewendet, wenn im angeforderten URI eine Konfiguration angegeben ist.
 
@@ -213,7 +212,7 @@ Die standardmäßige Exportkonfiguration für Content Services wird angewendet, 
    <td> </td>
   </tr>
   <tr>
-   <td>Sling JSON Overrides</td>
+   <td>Sling JSON-Überschreibungen</td>
    <td>foundation/components/image<br /> wcm/foundation/components/image<br /> mobileapps/caas/components/data/contentReference<br /> mobileapps/caas/components/data/assetlist</td>
   </tr>
  </tbody>
@@ -221,15 +220,14 @@ Die standardmäßige Exportkonfiguration für Content Services wird angewendet, 
 
 #### Seitenexportkonfiguration {#page-export-configuration}
 
-Diese Konfiguration erweitert den Standard um die Einbeziehung von untergeordneten Elementen unter einem untergeordneten Knoten.
+Diese Konfiguration erweitert die Standardeinstellung, um die Gruppierung von untergeordneten Elementen unter einem untergeordneten Knoten einzuschließen.
 
 &lt;site_page>.caas.page[.&lt;depth-int>].json
 
 ### Zusätzliche Ressourcen {#additional-resources}
 
-Weitere Informationen zu zusätzlichen Themen in Content Services finden Sie in den nachfolgend aufgeführten Ressourcen:
+Weitere Informationen zu zusätzlichen Themen in Content Services finden Sie in den folgenden Ressourcen:
 
 * [Entwicklung von Modellen](/help/mobile/administer-mobile-apps.md)
-* [Authoring von Content Services](/help/mobile/develop-content-as-a-service.md)
+* [Authoring - Content Services](/help/mobile/develop-content-as-a-service.md)
 * [Verwalten von Content Services](/help/mobile/developing-content-services.md)
-
