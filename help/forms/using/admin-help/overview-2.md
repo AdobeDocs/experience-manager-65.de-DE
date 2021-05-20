@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 986d16fc-4c81-4785-b1f3-fe8bd7ff669e
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 74bf0e77-f47b-475a-b2a7-52cfb3baaa22
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 86%
 
 ---
-
 
 # Grundlagen zum Verwalten von Zertifikaten und Berechtigungen {#basics-of-managing-certificates-and-credentials}
 
@@ -54,4 +53,3 @@ Wenn Sie vermuten, dass Ihr Schlüssel verloren gegangen ist oder beschädigt wu
 1. Informieren Sie die Zertifizierungsstelle, damit der beschädigte Schlüssel auf die Zertifikatsperrliste gesetzt und gesperrt wird.
 1. Beziehen Sie von der Zertifizierungsstelle einen neuen Schlüssel und das zugehörige Zertifikat.
 1. Signieren Sie die Dokumente, die mit dem beschädigten Schlüssel signiert wurden, erneut mit dem neuen Schlüssel.
-
