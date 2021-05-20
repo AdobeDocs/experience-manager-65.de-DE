@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9161c8ca-ef33-4ec9-affc-94b5b3e48a4c
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 375376d1-60b3-49a4-8893-ba9336e6bf7b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '864'
 ht-degree: 68%
 
 ---
-
 
 # Mit Aufgaben arbeiten {#working-with-tasks}
 
@@ -46,9 +45,9 @@ Die Ergebnisse der Suche nach Aufgaben werden auf der Seite „Aufgabenliste“ 
 
 Die Aufgaben werden mit folgenden Informationen angezeigt:
 
-**Aufgaben-ID:** Die positive Ganzzahl, die vom Arbeitsablauf für Formulare zugewiesen wird, wenn die Aufgabe instanziiert (von einem Benutzer initiiert) wird. Anhand dieser ID können Sie die Aufgabe während ihres gesamten Lebenszyklus verfolgen. Klicken Sie auf eine Aufgaben-ID, um Informationen zum Aufgabenverlauf anzuzeigen oder die Aufgabe einem anderen Benutzer zuweisen.
+**Aufgabe-ID:** Die positive Ganzzahl, die der Arbeitsablauf für Formulare zuweist, wenn die Aufgabe instanziiert (von einem Benutzer initiiert) wird. Anhand dieser ID können Sie die Aufgabe während ihres gesamten Lebenszyklus verfolgen. Klicken Sie auf eine Aufgaben-ID, um Informationen zum Aufgabenverlauf anzuzeigen oder die Aufgabe einem anderen Benutzer zuweisen.
 
-**Status:** Zugewiesen bedeutet, dass die Aufgabe dem Benutzer derzeit zugewiesen ist. Nicht zugewiesen bedeutet, dass die Aufgabe dem Benutzer zuvor zugewiesen war. Möglich ist auch der Status Abgeschlossen.
+**Status:** Zugewiesen bedeutet, dass die Aufgabe derzeit dem Benutzer zugewiesen ist. Nicht zugewiesen bedeutet, dass die Aufgabe dem Benutzer zuvor zugewiesen war. Möglich ist auch der Status Abgeschlossen.
 
 **Aktivität:** Zeigt das Formular und den Namen für einen ersten Vorgang oder den Prozessvorgang an, der die Aufgabe generiert hat.
 
@@ -58,7 +57,7 @@ Die Aufgaben werden mit folgenden Informationen angezeigt:
 
 **Anwendung:** Der Name der Anwendung, zu der der Prozess gehört, wie in Workbench definiert.
 
-**Erstellungsdatum:** Das Datum und die Uhrzeit der Erstellung der Aufgabe.
+**Erstellungsdatum:** Datum und Uhrzeit der Erstellung der Aufgabe.
 
 ## Aufgabenverlauf anzeigen und Aufgaben neu zuweisen {#viewing-task-history-and-reassigning-tasks}
 
@@ -68,27 +67,27 @@ Für jede Aufgabenzuweisung werden in der Liste die folgenden Informationen ange
 
 **Name:** Der Name des Benutzers.
 
-**Status:** Zugewiesen bedeutet, dass die Aufgabe dem Benutzer derzeit zugewiesen ist. Nicht zugewiesen bedeutet, dass die Aufgabe dem Benutzer zuvor zugewiesen war.
+**Status:** Zugewiesen bedeutet, dass die Aufgabe derzeit dem Benutzer zugewiesen ist. Nicht zugewiesen bedeutet, dass die Aufgabe dem Benutzer zuvor zugewiesen war.
 
-**Arbeitslisten-ID:** Die numerische ID der Benutzerwarteschlange, zu der die Aufgabe gehört. Ein Prozess kann von mehreren Benutzern gemeinsam verwendet werden.
+**Arbeitslisten-ID:** Die numerische Kennung der Benutzerwarteschlange, zu der die Aufgabe gehört. Ein Prozess kann von mehreren Benutzern gemeinsam verwendet werden.
 
 **Typ:** Gibt an, wie die Aufgabe zugewiesen wurde:
 
-**Initial:** Dem Benutzer wurde ursprünglich die Aufgabe zugewiesen.
+**Anfänglich:** Dem Benutzer wurde die Aufgabe ursprünglich zugewiesen.
 
-**Weiterleiten:** Der ursprüngliche Eigentümer der Aufgabe hat die Aufgabe einem anderen Benutzer zugewiesen.
+**Weiterleiten:** Der ursprüngliche Aufgabenbesitzer hat die Aufgabe einem anderen Benutzer zugewiesen.
 
 **Ablehnen:** Eine weitergeleitete Aufgabe wurde abgelehnt oder eine Aufgabe wurde an eine Arbeitsliste zurückgegeben, ohne abgeschlossen zu sein.
 
-**Anforderung:** Der Benutzer hat die Aufgabe in einer freigegebenen Arbeitsliste angefordert.
+**Anspruch:** Der Benutzer hat die Aufgabe in einer freigegebenen Arbeitsliste angefordert.
 
-**Eskalation:** Ein vorgegebener Zeitraum (wie in der Benutzeraktion in Workbench festgelegt) ohne Benutzerinteraktion verstrichen und einem anderen Benutzer wurde die Aufgabe zugewiesen.
+**Eskalation:** Eine vordefinierte Zeit (wie in der Benutzeraktion in Workbench festgelegt) ohne Benutzerinteraktion verstrichen und einem anderen Benutzer wurde die Aufgabe zugewiesen.
 
-**Besprechen:** Der Eigentümer der Aufgabe hat diese Aufgabe an einen anderen Benutzer weitergeleitet, der das Formular öffnen, Daten speichern, die Anlagen und Hinweise ändern kann, den Vorgang jedoch nicht abschließen kann. Der Benutzer muss die Aufgabe an den Aufgabenbesitzer zurückgeben, der sich mit dem Benutzer besprochen hat.
+**Besprechen:** Der Aufgabenbesitzer hat diese Aufgabe an einen anderen Benutzer weitergeleitet, der das Formular öffnen, Daten speichern und die Anlagen und Notizen ändern kann, den Schritt jedoch nicht abschließen kann. Der Benutzer muss die Aufgabe an den Aufgabenbesitzer zurückgeben, der sich mit dem Benutzer besprochen hat.
 
 **Admin-Neuzuweisung:** Die Aufgabe wurde von einem Administrator neu zugewiesen.
 
-**Zuweisungsdatum:** Datum und Uhrzeit der Zuweisung der Aufgabe zum Benutzer.
+**Zuweisungsdatum:** Datum und Uhrzeit der Zuweisung der Aufgabe an den Benutzer.
 
 ### Einer Aufgabe einen neuen Benutzer zuweisen {#assigning-a-new-user-to-a-task}
 
@@ -97,4 +96,3 @@ Auf der Seite „Benutzer zuweisen“ werden die Benutzer aufgeführt, die einer
 1. Geben Sie auf der Seite „Benutzer zuweisen“ in das Feld „Suche nach“ den gewünschten Benutzernamen oder die E-Mail-Adresse vollständig oder zum Teil ein.
 1. Wählen Sie unter „mit“ den Eintrag „Name“ oder „E-Mail-Adresse“ aus und klicken Sie auf „Suchen“. Die Benutzer, die der Suche entsprechen, werden angezeigt.
 1. Wählen Sie den Benutzer in der Liste aus und klicken Sie auf „OK“. Die Seite „Aufgabenverlauf“ wird mit der neuen Benutzerzuweisung angezeigt.
-
