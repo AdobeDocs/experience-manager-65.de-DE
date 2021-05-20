@@ -1,11 +1,10 @@
 ---
-title: Erstellen eines adaptiven Forms mit XML-Schema
-description: Erfahren Sie, wie Sie XML-Schema als Formularmodell in einem adaptiven Formular verwenden. Sie können vorhandene XSD-Vorlagen anwenden, um adaptive Formulare zu erstellen und Schema-Elemente per Drag & Drop aus XSD in Ihr adaptives Formular zu übernehmen. Machen Sie sich mit einem Beispiel für ein XML-Schema genauer vertraut, fügen Sie mithilfe von XML-Schema Sondereigenschaften zu Feldern hinzu und beschränken Sie die zulässigen Werte für eine adaptive Formularkomponente.
+title: Wie erstelle ich Adaptive Forms mithilfe des XML-Schemas?
+description: Erfahren Sie, wie Sie das XML-Schema als Formularmodell in einem adaptiven Formular verwenden. Sie können vorhandene XSD-Vorlagen anwenden, um adaptive Formulare zu erstellen und Schemaelemente aus XSD auf Ihr adaptives Formular zu ziehen und abzulegen. Nehmen Sie ein Beispiel eines XML-Schemas genauer vor, fügen Sie mithilfe des XML-Schemas spezielle Eigenschaften zu Feldern hinzu und beschränken Sie die zulässigen Werte für eine adaptive Formularkomponente.
 feature: Adaptive Formulare
 role: Business Practitioner, Developer
 level: Beginner, Intermediate
 exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
-translation-type: tm+mt
 source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
 source-wordcount: '1075'
@@ -169,7 +168,7 @@ Sie können die folgenden Attribute zu XML-Schemaelementen hinzufügen, um spezi
 
 >
 >
-Wenn Sie beispielsweise das Schema `userFirstName` hinzufügen, wird im adaptiven Formular eine Beschriftung `User First Name` generiert.
+Wenn Sie beispielsweise das Schemaelement `userFirstName` hinzufügen, lautet die im adaptiven Formular generierte Beschriftung `User First Name`.
 
 ## Einschränken der gültigen Werte für eine Komponente eines adaptiven Formulars {#limit-acceptable-values-for-an-adaptive-form-component}
 
@@ -270,7 +269,7 @@ Sie können die folgenden Einschränkungen zu XML-Schemaelementen hinzufügen, u
    <td><p>Legt die zulässige Höchstzahl von Dezimalstellen in einer Komponente fest. fractionDigits muss größer oder gleich null sein.</p> </td>
    <td>
     <ul>
-     <li> Numerisches Feld mit Datentyp float oder decimal</li>
+     <li> Numerisches Feld mit Datentyp "float"oder "decimal"</li>
     </ul> </td>
   </tr>
   <tr>
@@ -289,15 +288,15 @@ Sie können die folgenden Einschränkungen zu XML-Schemaelementen hinzufügen, u
 
 **Woher weiß ich, welches Element in der Baumstruktur mit welchem XML-Element verknüpft ist?**
 
-Wenn Sie in der Inhaltssuche auf ein Dublette-Element klicken, wird in einem Popupfenster ein Feldname und eine Eigenschaft mit der Bezeichnung `bindRef` angezeigt. Diese Eigenschaft ordnet das Baumstrukturelement dem Element oder Attribut im Schema zu.
+Wenn Sie in der Inhaltssuche auf ein Element doppelklicken, wird in einem Popup-Fenster der Feldname und die Eigenschaft `bindRef` angezeigt. Diese Eigenschaft ordnet das Baumstrukturelement dem Element oder Attribut im Schema zu.
 
 ![Ein bindref-Feld eines XML-Schemaelements](assets/dblclick.png)
 
-Das Feld bindRef</code> zeigt die Verbindung zwischen einem Baumstrukturelement und einem Element oder Attribut in einem Schema an.
+Das Feld bindRef</code> zeigt die Verknüpfung zwischen einem Baumstrukturelement und einem Element oder Attribut in einem Schema an.
 
 >[!NOTE]
 >
->Attribute haben ein `@`-Symbol in ihrem `bindRef`Wert, um sie von Elementen zu unterscheiden. Beispiel: `/config/projectDetails/@duration`.
+>Attribute haben ein `@` -Symbol in ihrem `bindRef`Wert, um sie von Elementen zu unterscheiden. Beispiel: `/config/projectDetails/@duration`.
 
 **Warum kann ich nicht einzelne Elemente eines Teilformulars (Struktur aus einem komplexen Typ generiert) für wiederholbare Teilformulare ziehen (Wert von minOccours oder maxOccurs ist größer als 1)?**
 
