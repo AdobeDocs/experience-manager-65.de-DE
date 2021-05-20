@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d958ae65-3008-4d68-9e11-4346e149827f
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 9cbea8c8-4d42-446b-b98d-c090709624d7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 94%
 
 ---
-
 
 # Zertifikatbasierte Authentifizierung konfigurieren {#configuring-certificate-based-authentication}
 
@@ -57,8 +56,8 @@ Wenn Sie ein Zertifikat testen, lädt User Management die Zertifikatüberprüfun
 
    Sie können folgende Zeichen in dem Regex verwenden:
 
-   * : (alle Zeichen)
-   * &amp;ast; (0 oder mehr Vorfälle)
+   * . (alle Zeichen)
+   * &amp;ast; (0 oder mehr Vorkommen)
    * () (Geben Sie die Gruppe in Klammern an)
    * \ (Wird verwendet, um ein Regex-Zeichen durch ein reguläres Zeichen zu ersetzen)
    * $n (Wird verwendet, um auf die n-te Gruppe zu verweisen)
@@ -98,4 +97,3 @@ Wenn Sie ein Zertifikat testen, lädt User Management die Zertifikatüberprüfun
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Konfiguration“ > „Zertifikatzuordnung“.
 1. Aktivieren Sie das Kontrollkästchen der zu löschenden Zertifikatzuordnung und klicken Sie auf „Löschen“ und anschließend auf „OK“.
-
