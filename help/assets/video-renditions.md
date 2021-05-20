@@ -5,14 +5,13 @@ uuid: a02f9ec1-30d9-4cbb-8746-8391ac614f0a
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 1601b473-7227-4a56-bb7c-289de2987e4b
-translation-type: tm+mt
-source-git-commit: 66f46a34832254af74c72da16ec8ebe3eb8cd46d
+exl-id: a644558e-5be9-4ba2-b560-fc300497fbdf
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 79%
 
 ---
-
 
 # Videoausgabeformate {#video-renditions}
 
@@ -42,6 +41,6 @@ Nachdem Sie den Proxyserver konfiguriert und Videoprofile erstellt haben, könne
 
 >[!NOTE]
 >
->Die Audiowiedergabe funktioniert nicht bei OGG- und WAV-Dateien in Microsoft Internet Explorer 11. Der Fehler `Invalid Source` wird auf der Seite mit den Asset-Details für Assets mit der Erweiterung OGG oder WAV angezeigt.
+>Die Audiowiedergabe funktioniert nicht für OGG- und WAV-Dateien in Microsoft Internet Explorer 11. Auf der Asset-Detailseite wird für Assets mit der Erweiterung OGG oder WAV ein Fehler `Invalid Source` angezeigt.
 >
->Auf MS Edge- und iPad-Geräten werden OGG-Dateien nicht abgespielt und es wird ein Fehler im nicht unterstützten Format ausgegeben.
+>Auf MS Edge und iPad werden OGG-Dateien nicht abgespielt und es wird ein nicht unterstützter Formatfehler ausgegeben.
