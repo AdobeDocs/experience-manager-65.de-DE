@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 17c9b69a-3c6f-47e3-a828-841bb90eba8b
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: d739806c-ce72-40fd-b304-3262a0988d96
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 94%
 
 ---
-
 
 # Formularausgabe konfigurieren{#configuring-form-output}
 
@@ -27,7 +26,7 @@ ht-degree: 94%
 
    **Voll-HTML**, um das Formular mit vollständigen HTML-Tags wiederzugeben (eine vollständige HTML-Seite). Dies ist der Standardwert.
 
-   **Formularhauptteil:** Zum Wiedergeben des Formulars in  `<BODY>` Tags (keine vollständige HTML-Seite).
+   **Formulartext:** Zum Rendern des Formulars innerhalb von  `<BODY>` Tags (keine vollständige HTML-Seite).
 
 1. Klicken Sie auf Speichern.
 
@@ -56,4 +55,3 @@ Führen Sie zum Aktivieren der Funktion folgende Schritte durch:
    >[!NOTE]
    >
    >*Um die Funktion zu deaktivieren, können Sie die JavaScript-Variable entfernen oder ihren Wert auf 0 einstellen.*
-
