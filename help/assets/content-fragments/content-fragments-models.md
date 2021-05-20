@@ -9,16 +9,15 @@ topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 9da10294-2dc8-4e82-8d32-f034e6a5aeeb
 docset: aem65
-feature: Content Fragments
+feature: Inhaltsfragmente
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+exl-id: 76f3a684-027d-4822-9eb4-220fc96956e3
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '755'
 ht-degree: 98%
 
 ---
-
 
 # Inhaltsfragmentmodelle{#content-fragment-models}
 
@@ -161,4 +160,3 @@ So veröffentlichen Sie ein Inhaltsfragmentmodell:
 
    >[!NOTE]
    Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
-
