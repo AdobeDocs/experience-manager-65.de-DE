@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9fda71e4-78a1-4581-9d02-bf06a75c3bcb
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: f0ab712f-ecd9-4be8-a7a5-fd1a7a8c9a0b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 100%
 
 ---
-
 
 # Abgesicherten Sicherungsmodus aktivieren und deaktivieren {#enabling-and-disabling-safe-backup-mode}
 
@@ -41,4 +40,3 @@ Im abgesicherten Sicherungsmodus wird AEM Forms normal ausgeführt mit der Ausna
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „Core-Systemeinstellungen“ > „Sicherungseinstellungen“.
 1. Deaktivieren Sie auf der Seite „Sicherungseinstellungen“ die Option „Im abgesicherten Sicherungsmodus arbeiten“ und klicken Sie auf „OK“.
-
