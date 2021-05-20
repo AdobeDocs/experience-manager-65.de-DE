@@ -8,7 +8,6 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
-translation-type: tm+mt
 source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '791'
@@ -24,13 +23,13 @@ ht-degree: 91%
 
 ## Konfiguration {#configuration}
 
-Um den Dienst `UrlProvider` gemäß den SEO-Anforderungen zu konfigurieren und ein Projekt muss eine OSGI-Konfiguration für die &quot;CIF URL Provider-Konfiguration&quot;bereitstellen und den Dienst wie unten beschrieben konfigurieren.
+Um den Dienst `UrlProvider` gemäß den SEO-Anforderungen zu konfigurieren, muss ein Projekt eine OSGi-Konfiguration für die Konfiguration &quot;CIF URL Provider&quot;bereitstellen und den Dienst wie unten beschrieben konfigurieren.
 
 >[!NOTE]
 >
 > Das Projekt [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia) (siehe unten) enthält Beispielkonfigurationen, um die Verwendung benutzerdefinierter URLs für Produkt- und Kategorienseiten zu demonstrieren.
 
-### URL-Vorlage der Produktseite {#product}
+### URL-Vorlage für Produktseiten {#product}
 
 Damit werden die URLs der Produktseiten mit den folgenden Eigenschaften konfiguriert:
 
@@ -41,7 +40,7 @@ Damit werden die URLs der Produktseiten mit den folgenden Eigenschaften konfigur
 * **Speicherort der Produktkennung**: definiert den Speicherort der Kennung, die zum Abrufen der Produktdaten verwendet wird. Der Standardwert lautet `SELECTOR`, der andere mögliche Wert `SUFFIX`. In Bezug auf die vorherige Beispiel-URL bedeutet dies, dass die Kennung `chaz-kangeroo-hoodie` zum Abrufen der Produktdaten verwendet wird.
 * **Produktkennungstyp**: definiert den Speicherort der Kennung, die zum Abrufen der Produktdaten verwendet wird. Der Standardwert lautet `URL_KEY`, der andere mögliche Wert `SKU`. In Bezug auf die vorherige Beispiel-URL bedeutet dies, dass die Produktdaten mit einem Magento-GraphQL-Filter wie `filter:{url_key:{eq:"chaz-kangeroo-hoodie"}}` abgerufen werden.
 
-### URL-Vorlage für Produktseiten-Listen {#product-list}
+### URL-Vorlage für Produktlisten-Seite {#product-list}
 
 Damit werden die URLs der Kategorie- oder Produktlistenseiten mit den folgenden Eigenschaften konfiguriert:
 
@@ -65,7 +64,7 @@ URL-Neuschreibungen können auch mithilfe des AEM Dispatcher-HTTP-Servers mit de
 
 ## Beispiel
 
-Das Projekt [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia) enthält Beispielkonfigurationen, um die Verwendung benutzerdefinierter URLs für Produkt- und Kategorienseiten zu demonstrieren. Dadurch kann jedes Projekt individuelle URL-Muster für Produktseiten und Kategorien entsprechend ihren SEO-Anforderungen einrichten. Es wird eine Kombination aus CIF-`UrlProvider` und Sling-Zuordnungen verwendet, wie oben beschrieben.
+Das Projekt [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia) enthält Beispielkonfigurationen, um die Verwendung benutzerdefinierter URLs für Produkt- und Kategorienseiten zu demonstrieren. Dadurch kann jedes Projekt individuelle URL-Muster für Produkt- und Kategorieseiten entsprechend ihren SEO-Anforderungen einrichten. Es wird eine Kombination aus CIF-`UrlProvider` und Sling-Zuordnungen verwendet, wie oben beschrieben.
 
 >[!NOTE]
 >
