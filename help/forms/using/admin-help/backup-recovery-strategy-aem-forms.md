@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f192a8a3-1116-4d32-9b57-b53d532c0dbf
-translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1520'
 ht-degree: 93%
 
 ---
-
 
 # Sicherungs- und Wiederherstellungsstrategie für AEM Forms{#backup-and-recovery-strategy-for-aem-forms}
 
@@ -36,7 +35,7 @@ Die AEM Forms-Sicherungsstrategie umfasst zwei Sicherungsarten:
 
 **Systemabbild:** Eine vollständige Systemsicherung, mit der Sie den Inhalt Ihres Computers wiederherstellen können, wenn die Festplatte oder der gesamte Computer nicht mehr funktioniert. Eine Systemabbildsicherung ist nur vor der Bereitstellung von AEM Forms in der Produktionsumgebung erforderlich. Interne Unternehmensrichtlinien bestimmen anschließend, wie häufig Systemabbildsicherungen erforderlich sind.
 
-**AEM formularspezifische Daten:** Anwendungsdaten sind in der Datenbank, der globalen Dokument-Datenspeicherung (GDS) und AEM Repository vorhanden und müssen in Echtzeit gesichert werden. Der globale Dokumentenspeicher ist ein Ordner zum Speichern dauerhaft in einem Prozess genutzter Dateien. Diese Dateien können PDFs, Richtlinien und Formularvorlagen beinhalten.
+**AEM formularspezifische Daten:** Anwendungsdaten sind in der Datenbank, dem globalen Dokumentenspeicher (GDS) und AEM Repository vorhanden und müssen in Echtzeit gesichert werden. Der globale Dokumentenspeicher ist ein Ordner zum Speichern dauerhaft in einem Prozess genutzter Dateien. Diese Dateien können PDFs, Richtlinien und Formularvorlagen beinhalten.
 
 >[!NOTE]
 >
@@ -83,12 +82,12 @@ Bevor Sie den Formularserver nach einer Wiederherstellung neu starten, führen S
 1. Starten Sie das System im Wartungsmodus.
 1. Führen Sie folgende Schritte aus, um sicherzustellen, dass Forms Manager im Wartungsmodus mit AEM Forms synchronisiert wird:
 
-   1. Wechseln Sie zu https://&lt;*server*:&lt;*port*>/lc/fm und melden Sie sich mit den Anmeldeinformationen von adminstrator/password an.
+   1. Wechseln Sie zu https://&lt;*server*:&lt;*port*/lc/fm und melden Sie sich mit den Anmeldeinformationen von adminstrator/password an.
    1. Klicken Sie rechts oben auf den Namen des Benutzers (in diesem Fall „Super Administrator“).
    1. Klicken Sie auf **Admin-Optionen**.
    1. Klicken Sie auf **Start**, um Elemente im Repository zu synchronisieren.
 
-1. In einer geclusterten Umgebung sollte der primäre Knoten (in Bezug auf AEM) vor den sekundären Knoten liegen.
+1. In einer Clusterumgebung sollte sich der primäre Knoten (in Bezug auf AEM) vor den sekundären Knoten befinden.
 1. Stellen Sie sicher, dass keine Prozesse aus internen oder externen Quellen, z. B. dem Internet, SOAP oder EJB-Prozessinitiatoren, initiiert werden, bis der normale Betrieb des Systems überprüft wurde.
 
 Wenn die AEM Forms-Hauptdatenbank verschoben oder geändert wird, lesen Sie die entsprechenden Installationshandbücher für Ihren Anwendungsserver, um Informationen zur Aktualisierung der Datenbankverbindungsinformationen für die AEM Forms-Datenquellen IDP_DS und EDC_DS zu finden.
@@ -103,7 +102,7 @@ Wenn Sie die Dateisystempfade für einen eigenständigen Knoten ändern, müssen
 
 In einer Clusterumgebung muss die Konfiguration des Dateisystempfads des Repositorys für alle Clusterknoten vor der Sicherung und nach der Wiederherstellung gleich sein.
 
-Verwenden Sie das Skript `LCSetGDS`im Ordner `[*aem-forms root]*\sdk\misc\Foundation\SetGDSCommandline`, um den GDS-Pfad festzulegen, nachdem Sie die Dateisystempfade geändert haben. Einzelheiten finden Sie in der `ReadMe.txt`-Datei im selben Ordner. Wenn der alte GDS-Ordnerpfad nicht verwendet werden kann, muss das `LCSetGDS`-Skript verwendet werden, um den neuen Pfad für den GDS festzulegen, bevor Sie AEM Forms starten.
+Verwenden Sie das Skript `LCSetGDS`im Ordner `[*aem-forms root]*\sdk\misc\Foundation\SetGDSCommandline` , um den GDS-Pfad festzulegen, nachdem Sie die Dateisystempfade geändert haben. Einzelheiten finden Sie in der `ReadMe.txt`-Datei im selben Ordner. Wenn der alte GDS-Ordnerpfad nicht verwendet werden kann, muss das `LCSetGDS`-Skript verwendet werden, um den neuen Pfad für den GDS festzulegen, bevor Sie AEM Forms starten.
 
 >[!NOTE]
 >
