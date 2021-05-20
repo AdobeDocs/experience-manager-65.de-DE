@@ -1,35 +1,34 @@
 ---
 title: Zugehörige Assets
-description: Erfahren Sie, wie digitale Assets, die einige allgemeine Attribute gemeinsam haben, miteinander verknüpft werden. Erstellen Sie auch Quell-abgeleitete Beziehungen zwischen digitalen Assets.
+description: Erfahren Sie, wie Sie digitale Assets verknüpfen, die einige gemeinsame Attribute aufweisen. Erstellen Sie außerdem Quell-abgeleitete Beziehungen zwischen digitalen Assets.
 contentOwner: AG
 role: Business Practitioner
-feature: Collaboration,Asset Management
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Zusammenarbeit, Asset-Management
+exl-id: ddb69727-74a0-4a4d-a14e-7d3bb5ceea2a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 47%
+source-wordcount: '635'
+ht-degree: 46%
 
 ---
 
-
 # Zugehörige Assets {#related-assets}
 
-[!DNL Adobe Experience Manager Assets] ermöglicht die manuelle Verknüpfung von Assets auf Grundlage der Anforderungen Ihres Unternehmens mithilfe der entsprechenden Asset-Funktion. Beispielsweise können Sie einem Asset oder einem Bild/Video eine Lizenzdatei zu einem ähnlichen Thema zuordnen. Sie können Assets zuordnen, die bestimmte gängige Attribute teilen. Mit der Funktion können Sie außerdem Quellbeziehungen/abgeleitete Beziehungen zwischen Assets erstellen. Beispielsweise können Sie PDF-Dateien, die aus einer INDD-Datei generiert wurden, der INDD-Quelldatei zuordnen.
+[!DNL Adobe Experience Manager Assets] ermöglicht Ihnen die manuelle Zuordnung von Assets zu den Anforderungen Ihrer Organisation mithilfe der zugehörigen Asset-Funktion. Beispielsweise können Sie einem Asset oder einem Bild/Video eine Lizenzdatei zu einem ähnlichen Thema zuordnen. Sie können Assets zuordnen, die bestimmte gängige Attribute teilen. Mit der Funktion können Sie außerdem Quellbeziehungen/abgeleitete Beziehungen zwischen Assets erstellen. Beispielsweise können Sie PDF-Dateien, die aus einer INDD-Datei generiert wurden, der INDD-Quelldatei zuordnen.
 
-Mit dieser Funktion haben Sie die Flexibilität, eine PDF- oder JPG-Datei mit niedriger Auflösung für Händler oder Agenturen freizugeben und die hochauflösende INDD-Datei nur auf Anfrage verfügbar zu machen.
+Mit dieser Funktion können Sie eine PDF- oder JPG-Datei mit niedriger Auflösung für Anbieter oder Agenturen freigeben und die hochauflösende INDD-Datei nur auf Anfrage verfügbar machen.
 
 >[!NOTE]
 >
->Nur Benutzer mit Bearbeitungsberechtigungen für Assets können die Assets verknüpfen und die Verknüpfung aufheben.
+>Nur Benutzer mit Bearbeitungsberechtigungen für Assets können die Assets verknüpfen und die Zuordnung aufheben.
 
 ## Zuordnen von Assets {#relating-assets}
 
-1. Öffnen Sie in der Oberfläche [!DNL Experience Manager] die Seite **[!UICONTROL Eigenschaften]** für ein Asset, das Sie verknüpfen möchten.
+1. Öffnen Sie in der [!DNL Experience Manager]-Benutzeroberfläche die Seite **[!UICONTROL Eigenschaften]** für ein Asset, das Sie zuordnen möchten.
 
-   ![Öffnen der Seite &quot;Eigenschaften&quot;eines Assets, um das Asset zu verknüpfen](assets/asset-properties-relate-assets.png)
+   ![Öffnen Sie die Seite Eigenschaften eines Assets, um das Asset zuzuordnen.](assets/asset-properties-relate-assets.png)
 
-   *Abbildung:  [!DNL Assets] [!UICONTROL Eigenschaften ] zu verknüpfen.*
+   *Abbildung:  [!DNL Assets]  Eigenschaftenseite zum Zuordnen von Assets.*
 
    Wählen Sie alternativ das gewünschte Asset in der Liste aus.
 
@@ -39,7 +38,7 @@ Mit dieser Funktion haben Sie die Flexibilität, eine PDF- oder JPG-Datei mit ni
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. Um ein anderes Asset mit dem ausgewählten Asset zu verknüpfen, klicken Sie in der Symbolleiste auf **[!UICONTROL Relate]** ![Verknüpfen von Assets](assets/do-not-localize/link-relate.png).
+1. Um ein anderes Asset mit dem ausgewählten Asset zu verknüpfen, klicken Sie in der Symbolleiste auf **[!UICONTROL Relate]** ![Zuordnen von Assets](assets/do-not-localize/link-relate.png) .
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Um die Quelldatei des Elements zuzuordnen, wählen Sie **[!UICONTROL Quelle]** aus der Liste aus.
@@ -55,9 +54,9 @@ Mit dieser Funktion haben Sie die Flexibilität, eine PDF- oder JPG-Datei mit ni
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
-1. Um die Verknüpfung eines Assets aufzuheben, klicken Sie in der Symbolleiste auf **[!UICONTROL Aufheben der Verknüpfung]** ![Aufheben der Verknüpfung von Assets](assets/do-not-localize/link-unrelate-icon.png).
+1. Um die Zuordnung eines Assets aufzuheben, klicken Sie in der Symbolleiste auf **[!UICONTROL Verknüpfung aufheben]** ![Verknüpfung von Assets aufheben](assets/do-not-localize/link-unrelate-icon.png) .
 
-1. Wählen Sie im Dialogfeld **[!UICONTROL Beziehungen entfernen]** die Elemente aus, für die Sie die Verknüpfung aufheben möchten, und klicken Sie auf **[!UICONTROL Aufheben der Verknüpfung]**.
+1. Wählen Sie die Assets aus, die Sie vom Dialogfeld **[!UICONTROL Beziehungen entfernen]** entfernen möchten, und klicken Sie auf **[!UICONTROL Verknüpfung aufheben]**.
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 
@@ -65,15 +64,15 @@ Mit dieser Funktion haben Sie die Flexibilität, eine PDF- oder JPG-Datei mit ni
 
 ## Übersetzen zugehöriger Assets {#translating-related-assets}
 
-Das Erstellen von Quell-/abgeleiteten Beziehungen zwischen Assets mithilfe der entsprechenden Asset-Funktion ist auch bei der Workflows hilfreich. Wenn Sie einen Übersetzungs-Workflow für ein abgeleitetes Asset ausführen, ruft [!DNL Experience Manager Assets] automatisch jedes Asset ab, auf das die Quelldatei verweist, und fügt es zur Übersetzung ein. Auf diese Weise wird das vom Quell-Asset referenzierte Asset zusammen mit dem Quell-Asset und den abgeleiteten Assets übersetzt. Beispiel: In einem Szenario enthält die Kopie in englischer Sprache ein abgeleitetes Asset und die entsprechende Quelldatei wie gezeigt.
+Das Erstellen von Quell-/abgeleiteten Beziehungen zwischen Assets mithilfe der zugehörigen Asset-Funktion ist auch in Übersetzungs-Workflows hilfreich. Wenn Sie einen Übersetzungs-Workflow für ein abgeleitetes Asset ausführen, ruft [!DNL Experience Manager Assets] automatisch alle Assets ab, auf die die Quelldatei verweist, und fügt sie zur Übersetzung hinzu. Auf diese Weise wird das vom Quell-Asset referenzierte Asset zusammen mit dem Quell-Asset und den abgeleiteten Assets übersetzt. Beispiel: In einem Szenario enthält die Kopie in englischer Sprache ein abgeleitetes Asset und die entsprechende Quelldatei wie gezeigt.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-Wenn die Quelldatei mit einem anderen Asset verknüpft ist, ruft [!DNL Experience Manager Assets] das referenzierte Asset ab und fügt es zur Übersetzung ein.
+Wenn die Quelldatei mit einem anderen Asset verknüpft ist, ruft [!DNL Experience Manager Assets] das referenzierte Asset ab und fügt es zur Übersetzung hinzu.
 
-![Seite &quot;Asset-Eigenschaften&quot;zeigt die Quelldatei des zugehörigen Assets an, die zur Übersetzung verwendet werden soll](assets/asset-properties-source-asset.png)
+![Asset-Eigenschaftenseite zeigt die Quelldatei des zugehörigen Assets an, das zur Übersetzung hinzugefügt werden soll](assets/asset-properties-source-asset.png)
 
-*Abbildung: Quell-Asset der zugehörigen Assets, die für die Übersetzung verwendet werden sollen.*
+*Abbildung: Quell-Asset der zugehörigen Assets, die zur Übersetzung hinzugefügt werden sollen.*
 
 1. Übersetzen Sie die Assets im Quellordner für eine Zielsprache, indem Sie die Schritte unter [Neues Übersetzungsprojekt erstellen](translation-projects.md#create-a-new-translation-project) befolgen. Übersetzen Sie in diesem Fall zum Beispiel Ihre Assets ins Französische.
 
@@ -83,14 +82,14 @@ Wenn die Quelldatei mit einem anderen Asset verknüpft ist, ruft [!DNL Experienc
 
    ![chlimage_1-284](assets/chlimage_1-284.png)
 
-1. Klicken Sie auf die Auslassungspunkte unter der Karte Übersetzungsauftrag, um den Übersetzungsstatus Ansicht.
+1. Klicken Sie auf die Auslassungszeichen unter der Karte Übersetzungsauftrag , um den Übersetzungsstatus anzuzeigen.
 
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. Wählen Sie das Asset aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL In Assets anzeigen]**, um den Übersetzungsstatus für das Asset Ansicht.
+1. Wählen Sie das Asset aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL In Assets einblenden]** , um den Übersetzungsstatus für das Asset anzuzeigen.
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
-1. Klicken Sie auf das Quellelement, um zu überprüfen, ob die mit der Quelle verknüpften Assets übersetzt wurden.
+1. Um zu überprüfen, ob die mit der Quelle verknüpften Assets übersetzt wurden, klicken Sie auf das Quell-Asset.
 
-1. Wählen Sie das Asset aus, das mit der Quelle in Beziehung steht, und klicken Sie dann auf **[!UICONTROL In Assets anzeigen]**. Das übersetzte zugehörige Asset wird angezeigt.
+1. Wählen Sie das mit der Quelle verknüpfte Asset aus und klicken Sie dann auf **[!UICONTROL In Assets einblenden]**. Das übersetzte zugehörige Asset wird angezeigt.
