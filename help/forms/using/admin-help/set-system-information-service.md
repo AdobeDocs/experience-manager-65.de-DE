@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/system_information_service
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 14de0652-717d-4c84-b7b4-b7b78f325baa
-translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+exl-id: 734ed463-2441-49fc-bacb-deb40851af42
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '117'
 ht-degree: 94%
 
 ---
-
 
 # Systeminformationsdienst einrichten {#set-up-the-system-information-service}
 
@@ -27,4 +26,3 @@ Der Systeminformationsdienst stellt REST-APIs zum Abrufen von Informationen bere
 1. Klicken Sie auf der Seite „Dienstverwaltung“ auf den Dienst **SystemInfo**.
 1. Wählen Sie auf der Registerkarte „Endpunkte“ REST und klicken Sie auf **Hinzufügen**.
 1. Klicken Sie im Bildschirm „REST-Endpunkt hinzufügen“ auf **Hinzufügen**.
-
