@@ -8,14 +8,13 @@ contentOwner: gtalwar
 topic-tags: interactive-communications, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
-translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+exl-id: 6cfbeec0-0be3-48b2-a4bb-fd19c69c92c7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 80%
 
 ---
-
 
 # Interaktive Kommunikation - Übersicht {#interactive-communications-overview}
 
@@ -23,7 +22,7 @@ Dieser Artikel enthält eine Übersicht, Beispiele für Anwendungsfälle, einen 
 
 ![](do-not-localize/correspondence-management.png)
 
-Interactive Communications zentralisiert und verwaltet die Erstellung, Zusammenstellung und den Versand sicherer, personalisierter und interaktiver Schriftstücke, wie z. B. Geschäftskorrespondenz, Dokumente, Aussagen, Vorteilsmitteilungen, Marketing-E-Mails, Rechnungen und Begrüßungs-Kits.
+Interaktive Kommunikation zentralisiert und verwaltet die Erstellung, Zusammenstellung und Bereitstellung sicherer, personalisierter und interaktiver Schriftstücke, wie z. B. Geschäftskorrespondenz, Dokumente, Kontoauszüge, Hinweise zu Vorteilen, Marketing-E-Mails, Rechnungen und Willkommenskits.
 
 ## Schlüsselfunktionen {#key-capabilities}
 
@@ -33,7 +32,7 @@ Im Folgenden sind die wichtigsten Funktionen von interaktiver Kommunikation aufg
 * Eine integrierte Autorbenutzeroberfläche für Druck- und Webkanal mit der Möglichkeit zum automatischen Erstellen von Druck- und Webkanälen
 * Diagramme zur Darstellung von Informationen in leicht verständlichen visuellen Formaten in Druck und Web
 * Dokumentfragmente unterstützen den Regeleditor und das Formulardatenmodell
-* Die Benutzeroberfläche des Agenten zeigt die Druck- und Web-Vorschau der interaktiven Kommunikation an
+* Benutzeroberfläche für Agenten zeigt Druck- und Webvorschau der interaktiven Kommunikation an
 * Drag-and-Drop-Komponenten zum schnellen Erstellen von Druck- und Webkanälen
 
 ## Erstellung einer interaktiven Kommunikation  {#interactive-communication-creation}
@@ -42,7 +41,7 @@ Im Folgenden sind die wichtigsten Funktionen von interaktiver Kommunikation aufg
 
 ### Workflow {#workflow}
 
-Um eine interaktive Kommunikation zu erstellen, müssen Sie die [Bausteine](#buildingblocks) für die interaktive Kommunikation fertig stellen und die folgenden Schritte ausführen:
+Um eine interaktive Kommunikation zu erstellen, lassen Sie die [Bausteine](#buildingblocks) für interaktive Kommunikation bereit und führen Sie dann die folgenden Schritte aus:
 
 1. Wählen Sie [Erstellen Sie eine interaktive Kommunikation](/help/forms/using/create-interactive-communication.md).
 
@@ -67,11 +66,11 @@ Im Folgenden sind die Bausteine &#x200B;&#x200B;aufgeführt, die für die Erstel
 * [Druck- und Webkanal-Vorlagen](/help/forms/using/web-channel-print-channel.md)
 * [Dokumentfragmente](/help/forms/using/document-fragments.md)
 * Bilder
-* [](/help/forms/using/themes.md) Themen für den Web-Kanal
+* [](/help/forms/using/themes.md) Designs für den Webkanal
 
 ## Interaktive Kommunikation im Vergleich zu Correspondence Management {#interactive-communications-vs-correspondence-management}
 
-Interaktive Kommunikation ist der Standardansatz und der empfohlene Ansatz zur Erstellung von Kundenkommunikation. Um die Briefe, die in AEM 6.3 Forms und AEM 6.2 Forms erstellt wurden, weiterhin zu verwenden, müssen Sie ein [Kompatibilitätspaket installieren](/help/forms/using/compatibility-package.md). Im Folgenden finden Sie einen Vergleich zwischen den Funktionen der interaktiven Kommunikation und des Briefs.
+Interaktive Kommunikation ist der standardmäßige und empfohlene Ansatz zur Erstellung von Kundenkommunikation. Um die Briefe, die in AEM 6.3 Forms und AEM 6.2 Forms erstellt wurden, weiterhin zu verwenden, müssen Sie ein [Kompatibilitätspaket installieren](/help/forms/using/compatibility-package.md). Im Folgenden finden Sie einen Vergleich zwischen den Funktionen der interaktiven Kommunikation und des Briefs.
 
 <table>
  <tbody>
@@ -146,4 +145,3 @@ Interaktive Kommunikation ist der Standardansatz und der empfohlene Ansatz zur E
   </tr>
  </tbody>
 </table>
-
