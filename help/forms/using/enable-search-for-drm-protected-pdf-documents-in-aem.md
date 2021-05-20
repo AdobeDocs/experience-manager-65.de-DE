@@ -10,15 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: b79c147c-f846-4e48-bec0-8b658502bb6f
 docset: aem65
-feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Dokumentensicherheit
+exl-id: 7cf17fb6-021a-473e-bc3b-27c317953002
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 86%
 
 ---
-
 
 # AEM zum Durchsuchen von durch Document Security geschützten PDF-Dokumenten aktivieren{#enable-aem-to-search-document-security-protected-pdf-documents}
 
@@ -38,15 +37,15 @@ Mithilfe der AEM-Suche kann nach AEM-Assets gesucht werden und es kann eine Text
 * Wenn Sie nur den AEM Forms on JEE-Server verwenden, ist das Indexpaket bereits installiert. 
 * Stellen Sie sicher, dass alle Pakete aktiv sind. Wenn nicht alle Pakete aktiv sind, warten Sie, bis alle Pakete aktiv sind. 
 
-   * Bei AEM Forms unter OSGi werden die Pakete unter https://&#39;[server]:[port]&#39;/system/console/bundles aufgelistet.
-   * Bei AEM Forms on JEE werden die Pakete unter https://&#39;[server]:[port]&#39;/[context-path]/system/console/bundles aufgelistet. Beispiel: https://localhost:8080/lc/system/console/bundles.
+   * Bei AEM Forms unter OSGi sind die Bundles unter https://&#39;[server]:[port]&#39;/system/console/bundles aufgeführt.
+   * Bei AEM Forms on JEE sind die Bundles unter https://&#39;[server]:[port]&#39;/[context-path]/system/console/bundles aufgeführt. Beispiel: https://localhost:8080/lc/system/console/bundles.
 
-* hinzufügen Sie das *sun.util.calendar*-Paket auf die Zulassungsliste. So fügen Sie das Paket der Zulassungsliste hinzu:
+* Fügen Sie das Paket *sun.util.calendar* zur Zulassungsliste hinzu. So fügen Sie das Paket zur Zulassungsliste hinzu:
 
    1. Öffnen Sie die AEM Web-Konsole. Die URL lautet https://&#39;[server]:[port]&#39;/system/console/configMgr.
    1. Suchen und öffnen Sie **Deserialisierungs-Firewallkonfiguration**. 
 
-   1. hinzufügen Sie das Paket sun.util.calendar in das Feld für die Auf die Zulassungsliste gesetzt Klassen oder Paketpräfixe ein und klicken Sie auf **Speichern**.
+   1. Fügen Sie das Paket sun.util.calendar zum Feld Auf die Zulassungsliste gesetzt Klassen oder Paketpräfixe hinzu und klicken Sie auf **Speichern**.
 
 ### Erstellen Sie eine sichere Verknüpfung zwischen AEM Forms JEE- und OSGi-Stapeln.{#establish-a-secure-connection-between-aem-forms-jee-and-osgi-stacks}
 
@@ -89,4 +88,3 @@ Sie können eine der folgenden Methoden verwenden, um die sichere Verbindung her
 1. Erstellen Sie einen Ordner in AEM Digital Asset Manager und laden Sie die durch Richtlinien geschützten PDF-Dokumente in den neu erstellten Ordner hoch.
 
    Jetzt können Sie richtliniengeschützte Dokumente mit der AEM-Suche durchsuchen.
-
