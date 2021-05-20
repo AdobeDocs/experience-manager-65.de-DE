@@ -5,21 +5,20 @@ description: Schützen von Dokumenten im Auftrag eines anderen Benutzers
 uuid: 76f4b30b-6d0c-4cae-98b3-334efdbf27bb
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 7cb8140d-dd62-4659-8cc7-21361bd5d3f6
-feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Dokumentensicherheit
+exl-id: e5c80569-d3c0-4358-9b91-b98a64d1c004
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 95%
 
 ---
 
-
 # Schützen von Dokumenten im Auftrag eines anderen Benutzers {#protect-a-document-on-behalf-of-another-user}
 
 AEM Forms Document Security Java SDK stellt APIs bereit, mit denen ein Benutzerkonto ein Dokument im Auftrag eines anderen Benutzers schützen kann, ohne die Berechtigungen zum Bearbeiten des Dokuments zu erhalten. Sie können die APIs in einem Arbeitsablauf-Prozess oder programmgesteuert als Dokumentdienst verwenden. Die folgenden neuen APIs wurden eingeführt:
 
-* **** protectDocumentVerwenden Sie die ProtectDocument-API, um eine Richtlinie auf ein Dokument im Namen von
+* **** protectDocumentVerwendet die ProtectDocument-API zum Anwenden einer Richtlinie auf ein Dokument im Namen von
 
    ein anderes Benutzerkonto. Die Berechtigungen des Benutzerkontos, das zum Anwenden der Richtlinie verwendet wird, bleiben auf den Schutz des Dokuments beschränkt. Es erhält keine Rechte zum Öffnen und Anzeigen des Dokuments. RMSecureDocumentResult protectDocument(Document inDoc, String documentName, String policySetName, String policyName, RMLocale locale, boolean bExactMatchForNames)
 
@@ -151,4 +150,3 @@ Führen Sie die folgenden Schritte aus, um ein Dokument im Auftrag eines anderen
    }
    }
    ```
-
