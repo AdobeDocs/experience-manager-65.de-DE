@@ -8,15 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Adaptive Formulare
+exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2095'
 ht-degree: 95%
 
 ---
-
 
 # Adaptive Formularfragmente{#adaptive-form-fragments}
 
@@ -30,7 +29,7 @@ Sie können adaptive Formularfragmente von Grund auf neu erstellen oder ein Fens
 
 ### Erstellen Sie Fragmente von Grund auf neu {#create-fragment-from-scratch}
 
-1. Melden Sie sich bei der AEM Forms-Autoreninstanz unter https://[*Hostname*]:[*Anschluss*]/aem/forms.html an.
+1. Melden Sie sich bei der AEM Forms-Autoreninstanz unter https://[*Hostname*]:[*Port*]/aem/forms.html an.
 1. Klicken Sie auf **Erstellen > Adaptives Formularfragment**.
 1. Geben Sie Titel, Name, Beschreibung und Tags für das Fragment an.
 
@@ -118,9 +117,9 @@ Alle Fragmente, die Sie in adaptive Formulare einfügen, werden als Platzhalterb
 
 Führen Sie die folgenden Schritte aus, um vollständige Fragmente in Formularen anzuzeigen:
 
-1. Wechseln Sie zu AEM Web-Konsolenkonfigurationsseite unter https:[*host*]:[*port*]/system/console/configMgr.
+1. Rufen Sie AEM Web Console-Konfigurationsseite unter https:[*host*]:[*port*]/system/console/configMgr auf.
 
-1. Suchen Sie nach und klicken Sie auf **[!UICONTROL Konfiguration des adaptiven Formulars und des interaktiven Kommunikations-Web-Kanals]**, um es im Bearbeitungsmodus zu öffnen.
+1. Suchen Sie nach **[!UICONTROL Webkanalkonfiguration für adaptive Formulare und interaktive Kommunikation]** und klicken Sie darauf, um sie im Bearbeitungsmodus zu öffnen.
 1. Deaktivieren Sie das Kontrollkästchen **[!UICONTROL Platzhalter anstelle von Fragment aktivieren]**, um das vollständige Fragment anstelle des Platzhalterbildes anzuzeigen.
 
 ### Einfügen eines Formularfragments in ein adaptives Formular  {#insert-a-fragment-in-an-adaptive-form}
@@ -128,7 +127,7 @@ Führen Sie die folgenden Schritte aus, um vollständige Fragmente in Formularen
 Die adaptive Formularfragmente, die Sie erstellen, werden auf der Registerkarte „Adaptive Formularfragmente“ der AEM Inhaltssuche angezeigt. Einfügen eines adaptiven Formularfragments in ein adaptives Formular
 
 1. Öffnen Sie das adaptive Formular im Erstellungsmodus, in das Sie ein adaptives Formularfragment einfügen möchten.
-1. Klicken Sie in der Seitenleiste auf **Assets** ![assets-browser](assets/assets-browser.png). Wählen Sie im Assets-Browser **Adaptive Formularfragmente** aus der Dropdownliste.
+1. Klicken Sie in der Seitenleiste auf **Assets** ![assets-browser](assets/assets-browser.png) . Wählen Sie im Asset-Browser **Adaptive Formularfragmente** aus der Dropdown-Liste aus.
 
    Sie können auch festlegen, dass alle adaptiven Formularfragmente angezeigt oder nach Formularmodell (Formularvorlage, XML-Schema oder Allgemein) gefiltert werden.
 
@@ -241,7 +240,7 @@ Zum Lokalisieren eines adaptiven Formulars, das adaptive Formularfragmente enth�
 * Wenn Sie ein adaptives Formular veröffentlichen, müssen Sie das eigenständige adaptive Formularfragment veröffentlichen, das als Verweis im adaptiven Formular eingefügt wurde.
 * Wenn Sie ein aktualisiertes adaptives Formularfragment veröffentlichen, werden die Änderungen in den veröffentlichten Instanzen des adaptiven Formulars vorgenommen, in denen das Fragment verwendet wird.
 * Adaptive Formulare, die die Verify-Komponente enthalten, unterstützen keine anonymen Benutzer. Außerdem wird nicht empfohlen, die Verify-Komponente in einem adaptiven Formularfragment zu verwenden.
-* (**Nur Mac**) Um sicherzustellen, dass die Formularfragmentfunktionalität in allen Szenarien einwandfrei funktioniert, fügen Sie den folgenden Eintrag zur Datei &quot;/private/etc/hosts&quot;hinzu:
+* (**Nur Mac**) Um sicherzustellen, dass die Formularfragmentfunktionalität in allen Szenarien perfekt funktioniert, fügen Sie den folgenden Eintrag zur Datei /private/etc/hosts hinzu:
    `127.0.0.1 <Host machine>` **Hostcomputer**: Der Apple Mac-Computer, auf dem AEM Forms bereitgestellt wird.
 
 ## Referenzfragmente {#reference-fragments}
