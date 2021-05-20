@@ -8,21 +8,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: a20736b7-f7b4-4da1-aa32-2408049b1209
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Adaptive Formulare
+exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 81%
 
 ---
 
-
 # Leistung großer Formulare mit verzögertem Laden verbessern{#improve-performance-of-large-forms-with-lazy-loading}
 
 ## Einführung in das verzögerte Laden {#introduction-to-lazy-loading}
 
-Wenn Formulare durch Hunderte und Tausende von Feldern groß und komplex werden, erleben die Endbenutzer lange Reaktionszeiten während des Abspielens von Formularen zur Laufzeit. Um die Reaktionszeiten zu minimieren, können Sie adaptive Formulare in logische Fragmente unterteilen und konfigurieren, dass die Initialisierung oder das Laden von Fragmenten aufgeschoben wird, bis das Fragment sichtbar sein soll. Dies wird als „verzögertes Laden“ bezeichnet. Außerdem werden die für verzögertes Laden konfigurierten Fragmente entladen, sobald der Benutzer zu anderen Abschnitten im Formular navigiert und die Fragmente nicht mehr sichtbar sind.
+Wenn Formulare durch Hunderte und Tausende von Feldern groß und komplex werden, erleben die Endbenutzer lange Reaktionszeiten während des Abspielens von Formularen zur Laufzeit. Um die Reaktionszeiten zu minimieren, können Sie adaptive Formulare in logische Fragmente unterteilen und konfigurieren, dass die Initialisierung oder das Laden von Fragmenten aufgeschoben wird, bis das Fragment sichtbar sein soll. Dies wird als „verzögertes Laden“ bezeichnet. Darüber hinaus werden die für verzögertes Laden konfigurierten Fragmente entladen, sobald der Benutzer zu anderen Abschnitten im Formular navigiert und die Fragmente nicht mehr sichtbar sind.
 
 Im Folgenden werden zunächst die Anforderungen und vorbereitenden Schritte vor dem Konfigurieren des verzögerten Ladens erklärt.
 
@@ -31,7 +30,7 @@ Im Folgenden werden zunächst die Anforderungen und vorbereitenden Schritte vor 
 Bevor Sie verzögertes Laden von Fragmenten in Ihrem adaptiven Formular konfigurieren, müssen Sie Strategien entwickeln für das Erstellen von Fragmenten, Identifizieren von Werten, die in den Skripten verwendet oder in andere Fragment referenziert werden, und Definieren von Regeln, die die Sichtbarkeit von Feldern in verzögert geladenen Fragmenten steuern.
 
 * **Identifizieren und Erstellen von**
-FragmentenSie können nur adaptive Formularfragmente für verzögertes Laden konfigurieren. Ein Fragment ist ein eigenständiges Segment, das sich außerhalb eines adaptiven Formulars befindet und über Formulare hinweg wiederverwendet werden kann. Der erste Schritt zur Implementierung von verzögertem Laden besteht also darin, logische Abschnitte in einem Formular zu identifizieren und sie in Fragmente zu konvertieren. Sie können ein Fragment von Grund auf neu erstellen oder ein vorhandenes Formularbedienfeld als Fragment speichern.
+FragmentenSie können nur adaptive Formularfragmente für verzögertes Laden konfigurieren. Ein Fragment ist ein eigenständiges Segment, das sich außerhalb eines adaptiven Formulars befindet und über mehrere Formulare hinweg wiederverwendet werden kann. Der erste Schritt zur Implementierung von verzögertem Laden besteht darin, logische Abschnitte in einem Formular zu identifizieren und sie in Fragmente zu konvertieren. Sie können ein Fragment von Grund auf neu erstellen oder ein vorhandenes Formularfeld als Fragment speichern.
 
     Weitere Informationen zum Erstellen von Fragmenten finden Sie unter [Adaptive Formularfragmente](../../forms/using/adaptive-form-fragments.md).
 
@@ -58,7 +57,7 @@ Führen Sie zum Aktivieren des verzögerten Ladens in einem adaptiven Formularfr
 Sie können die Werte von Objekten im verzögert geladenen Fragment als „global“ markieren, sodass sie für die Verwendung in Skripten verfügbar sind, selbst wenn das enthaltende Fragment nicht geladen wird. Gehen Sie folgendermaßen vor:
 
 1. Öffnen Sie das adaptive Formularfragment im Bearbeitungsmodus.
-1. Tippen Sie auf das Feld, dessen Wert Sie als &quot;global&quot;markieren möchten, und dann auf ![cmppr](assets/cmppr.png).
+1. Tippen Sie auf das Feld, dessen Wert Sie als global markieren möchten, und dann auf ![cmppr](assets/cmppr.png).
 1. Aktivieren Sie in der Randleiste **Wert bei verzögertem Laden verwenden**.
 
    ![Feld „Verzögertes Laden“ in der Randleiste](assets/enable-lazy-loading.png)
@@ -70,8 +69,8 @@ Sie können die Werte von Objekten im verzögert geladenen Fragment als „globa
 Einige der folgenden Einschränkungen, Empfehlungen und wichtigen Aspekte sind beim Arbeiten mit verzögertem Laden zu beachten:
 
 * Es wird empfohlen, XSD-schemabasierte statt XFA-basierte adaptive Formulare für die Konfiguration von verzögertem Laden bei großen Formularen zu verwenden. Die Leistungsverbesserung aufgrund von verzögertem Laden ist in XFA-basierten adaptiven Formularen verhältnismäßiger geringer als in XSD-basierten adaptiven Formularen.
-* Konfigurieren Sie kein verzögertes Laden auf Fragmenten in einem adaptiven Formular, das **[!UICONTROL Responsive -alles auf einer Seite ohne Navigation]**-Layout für das Stammbedienfeld verwendet. Aufgrund der Konfiguration des responsiven Layouts werden alle Fragmente gleichzeitig in einem adaptiven Formular geladen. Es kann auch zu einer verminderten Leistung führen.
-* Es wird empfohlen, das verzögerte Laden des ersten Fragments in einem adaptiven Formular nicht zu konfigurieren.
+* Konfigurieren Sie kein verzögertes Laden auf Fragmenten in einem adaptiven Formular, das **[!UICONTROL Responsive -alles auf einer Seite ohne Navigation]** Layout für das Stammbedienfeld verwendet. Aufgrund der Konfiguration für responsives Layout werden alle Fragmente gleichzeitig in einem adaptiven Formular geladen. Dies kann auch zu einer Leistungsverschlechterung führen.
+* Es wird empfohlen, das verzögerte Laden auf dem ersten Fragment in einem adaptiven Formular nicht zu konfigurieren.
 * Es wird empfohlen, verzögertes Laden nicht in Fragmenten im ersten Bereich zu konfigurieren, das beim Laden des adaptiven Formulars angezeigt wird.
 * Verzögertes Laden wird für bis zu zwei Ebenen in der Fragmenthierarchie unterstützt.
 * Vergewissern Sie sich, dass als „global“ markierte Felder im gesamten adaptiven Formular eindeutig sind.
@@ -87,4 +86,3 @@ Weiterhin sollten Sie Folgendes beim Entwickeln von Skripten für das verzögert
 * Leiten Sie nicht den Referenzwert eines Feld innerhalb eines verzögert geladenen Bereichs weiter, egal ob das Feld als global in allen Fragmenten markiert ist oder nicht.
 * Über die Funktion zum Zurücksetzen des Bereichs können Sie alle sichtbaren Elemente im Bereich zurückzusetzen, indem Sie den folgenden Ausdruck für ein Klickereignis verwenden.\
    guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;})).resetData()
-
