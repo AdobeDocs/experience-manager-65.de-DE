@@ -1,6 +1,6 @@
 ---
-title: Transaktionsberichte Abrechnungsfähige APIs
-seo-title: Transaktionsberichte Abrechnungsfähige APIs
+title: Abrechenbare APIs für Transaktionsberichte
+seo-title: Abrechenbare APIs für Transaktionsberichte
 description: Liste aller APIs, die als Transaktionen bilanziert werden
 seo-description: Liste aller APIs, die als Transaktionen bilanziert werden
 uuid: d2f38ae4-75df-426f-af34-52ae6fb324f3
@@ -8,41 +8,40 @@ topic-tags: forms-manager
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 929a298d-7f22-487f-bf7d-8ab2556d0d81
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 13016df927448d93af86899f746199e1815fdfe7
+exl-id: 1bc99f3b-3f28-4e74-b259-6ebddc11ffc5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1963'
 ht-degree: 9%
 
 ---
 
-
 # Transaktionsberichte Abrechnungsfähige APIs{#transaction-reports-billable-apis}
 
-AEM Forms bietet mehrere APIs zum Senden von Formularen, zum Verarbeiten von Dokumenten und zum Rendern von Dokumenten. Einige APIs werden als Transaktionen erfasst und andere können kostenlos verwendet werden. Dieses Dokument bietet eine Liste aller APIs, die in einem Transaktionsbericht als Transaktionen bilanziert werden. Im Folgenden finden Sie einige gängige Szenarien, in denen eine abrechnungsfähige API verwendet wird:
+AEM Forms bietet mehrere APIs zum Senden von Formularen, zum Verarbeiten von Dokumenten und zum Rendern von Dokumenten. Einige APIs werden als Transaktionen erfasst und andere können verwendet werden. Dieses Dokument enthält eine Liste aller APIs, die in einem Transaktionsbericht als Transaktionen bilanziert werden. Im Folgenden finden Sie einige gängige Szenarien, in denen eine abrechnungsfähige API verwendet wird:
 
-* Übermitteln eines adaptiven Formulars, HTML5-Formulars und Formularsatzes
-* Wiedergabe einer Druck- oder Webversion einer interaktiven Kommunikation
-* Konvertieren eines Dokuments von einem Format in ein anderes
+* Senden eines adaptiven Formulars, HTML5-Formulars und Formularsatzes
+* Rendern einer Druck- oder Webversion einer interaktiven Kommunikation
+* Konvertieren eines Dokuments aus einem Format in ein anderes
 * Reduzieren eines dynamischen PDF-Dokuments
-* Erstellen eines Dokuments aus Datensatz
+* Generieren eines Datensatzdokuments
 * Zusammenführen eines interaktiven PDF-Dokuments mit einem anderen PDF-Dokument
-* Verwenden der Schritte zum Zuweisen der Aufgabe und des Dokumentendiensts von AEM Workflows
-* Verwenden von adaptiven Formularen in einem adaptiven Formular
+* Verwenden der Schritte &quot;Aufgabe zuweisen&quot;und &quot;Dokumentendienst&quot;AEM Workflows
+* Verwenden des adaptiven Formulars in einem adaptiven Formular
 
-Die Abrechnungs-APIs berücksichtigen nicht die Anzahl der Seiten, die Länge eines Dokuments oder Formulars oder das endgültige Format des gerenderten Dokuments. Ein Transaktionsbericht unterteilt die Transaktionen in zwei Kategorien: Dokumente gerendert und Forms gesendet.
+Abrechnungs-APIs berücksichtigen nicht die Anzahl der Seiten, die Länge eines Dokuments oder Formulars oder das endgültige Format des wiedergegebenen Dokuments. Ein Transaktionsbericht unterteilt die Transaktionen in zwei Kategorien: Gerenderte und übermittelte Forms-Dokumente
 
-* **Forms gesendet:** Wenn Daten von einem beliebigen mit AEM Forms erstellten Formulartypen gesendet werden und die Daten an ein Datenspeicher gesendet werden, gilt dies als Formularübermittlung. Beispielsweise werden das Senden eines adaptiven Formulars, HTML5-Formulars, PDF forms und Formularsätze als gesendete Formulare verbucht. Jedes Formular in einem Formularsatz gilt als Übermittlung. Wenn ein Formularsatz beispielsweise 5 Formulare enthält, zählt der Berichte-Dienst ihn beim Senden des Formularsatzes als 5 Übermittlungen.
+* **Forms Submitted:** Wenn Daten von einem mit AEM Forms erstellten Formulartyp gesendet werden und die Daten an ein Datenspeicherrepository oder eine Datenbank gesendet werden, gilt dies als Formularübermittlung. Beispielsweise werden beim Senden eines adaptiven Formulars, HTML5-Formulars, PDF forms und Formularsatzes Formulare als übermittelte Formulare berücksichtigt. Jedes Formular in einem Formularsatz gilt als Übermittlung. Wenn ein Formularsatz beispielsweise 5 Formulare umfasst, zählt der Transaktionsberichtsdienst ihn bei der Übermittlung des Formularsatzes als 5 Übermittlungen.
 
-* **Gerenderte Dokumente:** Generieren eines Dokuments durch Kombinieren einer Vorlage und von Daten, digitale Unterzeichnung oder Zertifizierung eines Dokuments, Verwendung einer abrechnungsfähigen Dokument Services APIs für Dokument-Services oder Konvertieren eines Dokuments von einem Format in ein anderes werden als gerenderte Dokumente erfasst.
+* **Gerenderte Dokumente:** Das Generieren eines Dokuments durch Kombinieren einer Vorlage und von Daten, das digitale Signieren oder Zertifizieren eines Dokuments, das Verwenden abrechnungsfähiger Document Services-APIs für Document Services oder das Konvertieren eines Dokuments aus einem Format in ein anderes werden als gerenderte Dokumente berücksichtigt.
 
 >[!NOTE]
 >
->Die Benutzeroberfläche &quot;Transaktionsberichte&quot;enthält drei Kategorien: Forms gesendet, gerenderte Dokumente und verarbeitete Dokumente. Sowohl gerenderte Dokumente als auch verarbeitete Dokumente werden als gerenderte Dokumente erfasst.
+>Die Benutzeroberfläche &quot;Transaktionsberichte&quot;zeigt drei Kategorien an: Forms Gesendet, gerenderte Dokumente und verarbeitete Dokumente. Sowohl gerenderte als auch verarbeitete Dokumente werden als gerenderte Dokumente verbucht.
 
-## Billable Dokument Services APIs {#billable-document-services-apis}
+## Abrechnungsfähige Document Services-APIs {#billable-document-services-apis}
 
-### Generieren des PDF-Dienstes {#generate-pdf-service}
+### Generate PDF Service {#generate-pdf-service}
 
 <table>
  <tbody>
@@ -109,7 +108,7 @@ Die Abrechnungs-APIs berücksichtigen nicht die Anzahl der Seiten, die Länge ei
  </tbody>
 </table>
 
-### Distiller Service {#distiller-service}
+### Distiller-Dienst {#distiller-service}
 
 <table>
  <tbody>
@@ -134,7 +133,7 @@ Die Abrechnungs-APIs berücksichtigen nicht die Anzahl der Seiten, die Länge ei
  </tbody>
 </table>
 
-### Dokument of Record Service (DoR Service) {#document-of-record-service-dor-service}
+### Document of Record Service (DoR Service) {#document-of-record-service-dor-service}
 
 <table>
  <tbody>
@@ -146,14 +145,14 @@ Die Abrechnungs-APIs berücksichtigen nicht die Anzahl der Seiten, die Länge ei
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/addon/dor/DoRService.html#render-com.adobe.aemds.guide.addon.dor.DoROptions-" target="_blank">render</a></td>
-   <td>Ruft die angegebene Render-Methode auf, um ein Dokument aus Datensatz mit den bereitgestellten Parametern zu generieren.</td>
+   <td>Ruft die angegebene Render-Methode auf, um mithilfe der bereitgestellten Parameter ein Datensatzdokument zu generieren.</td>
    <td>Verarbeitete Dokumente</td>
    <td> </td>
   </tr>
  </tbody>
 </table>
 
-### Output Service {#output-service}
+### Ausgabe-Service {#output-service}
 
 <table>
  <tbody>
@@ -179,25 +178,25 @@ Die Abrechnungs-APIs berücksichtigen nicht die Anzahl der Seiten, die Länge ei
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PDFOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePDFOutputBatch</a></td>
    <td>Führt Daten und Vorlagen zusammen, um einen Satz von PDF-Dokumenten zu erstellen.</td>
    <td>Verarbeitete Dokumente</td>
-   <td> Die generatePDFOutputBatch-API kombiniert eine Formularvorlage mit einem Datensatz und generiert eine PDF-Datei. Wenn Sie einen Datensatzstapel verarbeiten, zählt der Transaktions-Berichte-Dienst jeden Datensatz als separate PDF-Darstellung. <br> Sie können das Flag  <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--"></a> getGenerateManyFilesFlag verwenden, um mehrere Darstellungen zu einer einzelnen PDF-Datei zu kombinieren. Unabhängig vom Status des Flag zählt der Dienst jeden Datensatz als separate PDF-Darstellung. </td>
+   <td> Die generatePDFOutputBatch -API kombiniert eine Formularvorlage mit einem Datensatz und generiert eine PDF-Datei. Wenn Sie einen Datensatz-Batch verarbeiten, zählt der Transaktionsberichtsdienst jeden Datensatz als separate PDF-Ausgabe. <br> Sie können das Flag  <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--"></a> getGenerateManyFilesflag verwenden, um mehrere Ausgabedarstellungen zu einer einzelnen PDF-Datei zu kombinieren. Unabhängig vom Status des Flag zählt der Dienst jeden Datensatz als separate PDF-Ausgabe. </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PrintedOutputOptions-" target="_blank">generatePrintedOutput</a></td>
-   <td>Konvertiert XDP- und PDF-Dokumente in die Formate PostScript (PS), Printer Command Language (PCL) und ZPL. </td>
+   <td>Konvertiert XDP- und PDF-Dokumente in die Dateiformate PostScript (PS), Printer Command Language (PCL) und ZPL. </td>
    <td>Verarbeitete Dokumente</td>
    <td> </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutput-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PrintedOutputOptions-" target="_blank">generatePrintedOutput</a></td>
-   <td>Konvertiert XDP- und PDF-Dokumente in die Formate PostScript (PS), Printer Command Language (PCL) und ZPL. </td>
+   <td>Konvertiert XDP- und PDF-Dokumente in die Dateiformate PostScript (PS), Printer Command Language (PCL) und ZPL. </td>
    <td>Verarbeitete Dokumente</td>
    <td> </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PrintedOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePrintedOutputBatch</a></td>
-   <td>Konvertiert eine Reihe von XDP- und PDF-Dokumenten in eine Reihe von PostScript- (PS), Printer Command Language (PCL)- und ZPL-Dateiformaten. </td>
+   <td>Konvertiert einen Satz von XDP- und PDF-Dokumenten in die Formate PostScript (PS), Printer Command Language (PCL) und ZPL. </td>
    <td>Verarbeitete Dokumente</td>
-   <td> Die generatePDFOutputBatch-API kombiniert eine Formularvorlage mit einem Datensatz und generiert eine PDF-Datei. Wenn Sie einen Datensatzstapel verarbeiten, zählt der Transaktions-Berichte-Dienst jeden Datensatz als separate PDF-Darstellung. <br> Sie können das Flag  <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--"></a> getGenerateManyFilesFlag verwenden, um mehrere Darstellungen zu einer einzelnen PDF-Datei zu kombinieren. Unabhängig vom Status des Flag zählt der Dienst jeden Datensatz als separate PDF-Darstellung. </td>
+   <td> Die generatePDFOutputBatch -API kombiniert eine Formularvorlage mit einem Datensatz und generiert eine PDF-Datei. Wenn Sie einen Datensatz-Batch verarbeiten, zählt der Transaktionsberichtsdienst jeden Datensatz als separate PDF-Ausgabe. <br> Sie können das Flag  <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--"></a> getGenerateManyFilesflag verwenden, um mehrere Ausgabedarstellungen zu einer einzelnen PDF-Datei zu kombinieren. Unabhängig vom Status des Flag zählt der Dienst jeden Datensatz als separate PDF-Ausgabe. </td>
   </tr>
  </tbody>
 </table>
@@ -239,13 +238,13 @@ Die Abrechnungs-APIs berücksichtigen nicht die Anzahl der Seiten, die Länge ei
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toImage</a></td>
-   <td>Konvertiert ein PDF-Dokument in eine Liste von Dokumenten. Unterstützte Bildformate sind JPEG, JPEG2K, PNG und TIFF.</td>
+   <td>Konvertiert ein PDF-Dokument in eine Liste von Bilddokumenten. Unterstützte Bildformate sind JPEG, JPEG2K, PNG und TIFF.</td>
    <td>Verarbeitete Dokumente</td>
    <td> </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toPS</a></td>
-   <td>Konvertiert eine einfache PDF-Datei in das PostScript-Format mit den in der Optionsangabe angegebenen Optionen.</td>
+   <td>Konvertiert eine einfache PDF-Datei in das PostScript-Format mithilfe der in der Optionsbeschreibung angegebenen Optionen.</td>
    <td>Verarbeitete Dokumente</td>
    <td> </td>
   </tr>
@@ -264,14 +263,14 @@ Die Abrechnungs-APIs berücksichtigen nicht die Anzahl der Seiten, die Länge ei
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode-com.adobe.aemfd.docmanager.Document-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-com.adobe.fd.bcf.api.CharSet-" target="_blank">decode</a></td>
-   <td>Dekodiert alle Barcodes in einem Dokument-Objekt und gibt ein Objekt "org.w3c.dom.Dokument"zurück, das Daten enthält, die aus dem Barcode abgerufen wurden.</td>
+   <td>Dekodiert alle Barcodes in einem Dokumentobjekt und gibt ein org.w3c.dom.Document -Objekt zurück, das Daten enthält, die aus dem Barcode abgerufen wurden.</td>
    <td>Verarbeitete Dokumente</td>
    <td> </td>
   </tr>
  </tbody>
 </table>
 
-### Assembler-Dienst {#assembler-service}
+### Assembler-Service {#assembler-service}
 
 <table>
  <tbody>
@@ -288,14 +287,14 @@ Die Abrechnungs-APIs berücksichtigen nicht die Anzahl der Seiten, die Länge ei
    <td>Folgende Vorgänge werden nicht als Transaktionen erfasst:
     <ul>
      <li>Erstellen von Paketen oder Portfolios</li>
-     <li>Mehrere XDPs anheften </li>
+     <li>Zuordnen mehrerer XDPs </li>
     </ul> </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">invoke</a></td>
    <td>Führt das angegebene DDX-Dokument aus und gibt ein <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a>-Objekt zurück, das die resultierenden Dokumente enthält. </td>
    <td>Verarbeitete Dokumente</td>
-   <td>Der Assembler-Dienst unterstützt alle Eingabedateiformate, die von PDF Generator, Forms und Output unterstützt werden, als Ausgabeformate. </td>
+   <td>Assembler-Dienst unterstützt alle Eingabedateiformate, die von PDF Generator, Forms und den Output-Diensten unterstützt werden, als Ausgabedateiformate. </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#toPDFA-com.adobe.aemfd.docmanager.Document-com.adobe.fd.assembler.client.PDFAConversionOptionSpec-">toPDFA</a></td>
@@ -308,8 +307,8 @@ Die Abrechnungs-APIs berücksichtigen nicht die Anzahl der Seiten, die Länge ei
 
 >[!NOTE]
 >
->* Die invoke-API des Assembler-Dienstes kann intern abhängig von der Eingabe eine abrechnungsfähige API eines anderen Dienstes aufrufen. Die invoke-API kann also als keine, einzelne oder mehrere Transaktionen bilanziert werden. Die Anzahl der gezählten Transaktionen hängt von der Eingabe und den aufgerufen internen APIs ab.
->* Ein einzelnes mit Assembler-Dienst erstelltes PDF-Dokument kann als keine, einzelne oder mehrere Transaktionen erfasst werden. Die Anzahl der gezählten Transaktionen hängt vom bereitgestellten DDX-Code ab.
+>* Die invoke-API des Assembler-Dienstes kann abhängig von der Eingabe intern eine abrechnungsfähige API eines anderen Dienstes aufrufen. Daher kann die invoke-API als keine, einzelne oder mehrere Transaktionen bilanziert werden. Die Anzahl der gezählten Transaktionen hängt von der Eingabe und den aufgerufenen internen APIs ab.
+>* Ein einzelnes PDF-Dokument, das mit Assembler-Dienst erstellt wurde, kann als keine, einzelne oder mehrere Transaktionen erfasst werden. Die Anzahl der gezählten Transaktionen hängt vom bereitgestellten DDX-Code ab.
 
 >
 
@@ -334,9 +333,9 @@ Die Abrechnungs-APIs berücksichtigen nicht die Anzahl der Seiten, die Länge ei
  </tbody>
 </table>
 
-## Billable Datenerfassungs-APIs {#billable-data-capture-apis}
+## Abrechenbare Datenerfassungs-APIs {#billable-data-capture-apis}
 
-Alle Ereignisse zum Senden von adaptiven Formularen, HTML5-Forms und Formularsätzen werden als Transaktionen erfasst. Standardmäßig wird die Übermittlung eines PDF-Formulars nicht als Transaktion erfasst. Verwenden Sie die bereitgestellte [Transaktions-Recorder-API](record-transaction-custom-implementation.md), um eine Übermittlung von PDF forms als Transaktion aufzuzeichnen.
+Alle Übermittlungsereignisse von adaptiven Formularen, HTML5 Forms und Formularsätzen werden als Transaktionen berücksichtigt. Standardmäßig wird die Übermittlung eines PDF-Formulars nicht als Transaktion berücksichtigt. Verwenden Sie die bereitgestellte [Transaktions-Recorder-API](record-transaction-custom-implementation.md), um eine PDF forms-Übermittlung als Transaktion aufzuzeichnen.
 
 ### Adaptive Formulare {#adaptive-forms}
 
@@ -350,12 +349,12 @@ Alle Ereignisse zum Senden von adaptiven Formularen, HTML5-Forms und Formularsä
   </tr>
   <tr>
    <td>Senden eines adaptiven Formulars</td>
-   <td>Sendet ein adaptives Formular zur konfigurierten Übermittlungsaktion. </td>
+   <td>Sendet ein adaptives Formular an die konfigurierte Sendeaktion. </td>
    <td>Übermittelte Formulare</td>
    <td>
     <ul>
-     <li>Erfolgreiches Übermittlungskonto für ein oder zwei Transaktionen. Die Anzahl der gezählten Transaktionen hängt von der Art der Sendeaktion ab, die für die Übermittlung verwendet wird. Beispielsweise werden beim Senden von PDF per E-Mail-Übermittlungsaktion zwei Transaktionszahlen erfasst. Eine Transaktion für die Formularübermittlung und eine andere für mit dem Dokument of Record (DOR)-Dienst generierte PDF. </li>
-     <li>Bei Verwendung des adaptiven Formulars in einem adaptiven Formular (adaptiven Formularsatz) wird nur eine Transaktion erfasst. Sie können eine beliebige Anzahl adaptiver Formulare in einem adaptiven Formular haben.</li>
+     <li>Erfolgreiche Übermittlungen für einzelne oder zwei Transaktionen. Die Anzahl der gezählten Transaktionen hängt vom Typ der für die Übermittlung verwendeten Sendeaktion ab. Beispielsweise werden beim Senden von PDF-Dateien über E-Mail-Übermittlungsaktionen zwei Zählungen von Transaktionen berücksichtigt. Eine Transaktion für die Formularübermittlung und eine andere für mit dem DOR-Dienst (Document of Record) generierte PDF-Dateien. </li>
+     <li>Bei Verwendung des adaptiven Formulars in einem adaptiven Formular (adaptiver Formularformsatz) wird nur eine Transaktion berücksichtigt. Sie können eine beliebige Anzahl adaptiver Formulare in einem adaptiven Formular haben.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -373,7 +372,7 @@ Alle Ereignisse zum Senden von adaptiven Formularen, HTML5-Forms und Formularsä
   </tr>
   <tr>
    <td>Senden eines HTML5-Formulars</td>
-   <td>Sendet ein HTML5-Formular, um die im Formular konfigurierte URL zu senden.</td>
+   <td>Sendet ein HTML5-Formular, um die URL zu senden, die im Formular konfiguriert ist.</td>
    <td>Übermittelte Formulare</td>
    <td> </td>
   </tr>
@@ -396,16 +395,16 @@ Alle Ereignisse zum Senden von adaptiven Formularen, HTML5-Forms und Formularsä
    <td>Übermittelte Formulare</td>
    <td>
     <ul>
-     <li>Bei Verwendung des adaptiven Formulars in einem adaptiven Formular (adaptiven Formularsatz) wird nur eine Transaktion erfasst. Sie können eine beliebige Anzahl adaptiver Formulare in einem adaptiven Formular haben.</li>
-     <li>Jedes Formular in einem HTML5-Forms-Formularsatz wird als separate Transaktion behandelt. </li>
+     <li>Bei Verwendung des adaptiven Formulars in einem adaptiven Formular (adaptiver Formularformsatz) wird nur eine Transaktion berücksichtigt. Sie können eine beliebige Anzahl adaptiver Formulare in einem adaptiven Formular haben.</li>
+     <li>Jedes Formular in einem HTML5-Forms-Formularsatz wird als separate Transaktion erfasst. </li>
     </ul> </td>
   </tr>
  </tbody>
 </table>
 
-## Billable interaktive Kommunikation und formularzentrierte AEM Workflows für OSGi-APIs {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
+## Abrechnungsfähige interaktive Kommunikation und formularzentrierte AEM Workflows in OSGi-APIs {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
 
-Weisen Sie Aufgabe- und Dokument-Services-Schritte für Form-zentrierte AEM auf OSGi und alle Darstellungen der interaktiven Kommunikation zu und werden als Transaktionen erfasst. Die Vorschau einer interaktiven Kommunikation auf der Autoreninstanz und die Vorschau auf der Veröffentlichungsinstanz mithilfe der Agent-Benutzeroberfläche werden nicht als Transaktionen erfasst. Wenn ein Workflow-Schritt eine Transaktion abschließt und der Workflow nicht abgeschlossen werden kann, wird die Transaktionsanzahl nicht umgekehrt.
+Weisen Sie die Schritte &quot;Aufgaben&quot;und &quot;Document Services&quot;von formularzentrierten AEM Workflows in OSGi und allen Ausgabedarstellungen der interaktiven Kommunikation zu und werden als Transaktionen erfasst. Die Vorschau einer interaktiven Kommunikation auf der Autoreninstanz und die Vorschau auf der Veröffentlichungsinstanz mithilfe der Benutzeroberfläche für Agenten werden nicht als Transaktionen berücksichtigt. Wenn ein Workflow-Schritt eine Transaktion abschließt und der Workflow nicht abgeschlossen werden kann, wird die Transaktionsanzahl nicht zurückgesetzt.
 
 ### Webkanal für interaktive Kommunikation {#interactive-communication-web-channel}
 
@@ -418,7 +417,7 @@ Weisen Sie Aufgabe- und Dokument-Services-Schritte für Form-zentrierte AEM auf 
    <td>Zusätzliche Informationen</td>
   </tr>
   <tr>
-   <td>Wiedergeben eines Web-Kanals</td>
+   <td>Webkanal rendern</td>
    <td>Öffnet die Webversion einer interaktiven Kommunikation.</td>
    <td>Gerenderte Dokumente</td>
    <td>
@@ -428,7 +427,7 @@ Weisen Sie Aufgabe- und Dokument-Services-Schritte für Form-zentrierte AEM auf 
  </tbody>
 </table>
 
-### Interaktive Kommunikation - Kanal drucken {#interactive-communication-print-channel}
+### Interaktive Kommunikation - Druckkanal {#interactive-communication-print-channel}
 
 <table>
  <tbody>
@@ -459,19 +458,19 @@ Weisen Sie Aufgabe- und Dokument-Services-Schritte für Form-zentrierte AEM auf 
    <td>Zusätzliche Informationen</td>
   </tr>
   <tr>
-   <td>Übermitteln einer Aufgabe zuweisen</td>
+   <td>Übermitteln eines Schritts "Assign Task"</td>
    <td>Übermittelte Formulare</td>
    <td>
     <div>
     </div> </td>
   </tr>
   <tr>
-   <td>Senden eines Startpunkts für eine Workflow-Anwendung </td>
+   <td>Senden eines Start-Punkts einer Workflow-Anwendung </td>
    <td>Übermittelte Formulare</td>
    <td> </td>
   </tr>
   <tr>
-   <td>Senden einer interaktiven Kommunikation (Print Kanal) von der Benutzeroberfläche des Agenten an einen Workflow</td>
+   <td>Senden einer interaktiven Kommunikation (Druckkanal) von der Benutzeroberfläche des Agenten an einen Workflow</td>
    <td>Gerenderte Dokumente</td>
    <td> </td>
   </tr>
@@ -480,11 +479,10 @@ Weisen Sie Aufgabe- und Dokument-Services-Schritte für Form-zentrierte AEM auf 
 
 ## Aufzeichnen von abrechnungsfähigen APIs als Transaktionen für benutzerdefinierten Code {#recording-billable-apis-as-transactions-for-custom-code}
 
-Aktionen wie das Senden eines PDF-Formulars, die Verwendung der Agent-Benutzeroberfläche zur Vorschau einer interaktiven Kommunikation, die Verwendung nicht standardmäßiger Formularübermittlung und benutzerdefinierte Implementierungen werden nicht als Transaktionen erfasst. AEM Forms stellt eine API zur Aufzeichnung von Aktionen wie Transaktionen bereit. Sie können die API aus Ihren benutzerdefinierten Implementierungen aufrufen, um [eine Transaktion](/help/forms/using/record-transaction-custom-implementation.md) aufzuzeichnen.
+Aktionen wie das Senden eines PDF-Formulars, die Verwendung der Benutzeroberfläche für Agenten zur Vorschau einer interaktiven Kommunikation, die Verwendung nicht standardmäßiger Formularübermittlung und benutzerdefinierte Implementierungen werden nicht als Transaktionen berücksichtigt. AEM Forms bietet eine API zum Aufzeichnen von Aktionen wie Transaktionen. Sie können die API von Ihren benutzerdefinierten Implementierungen zu [Aufzeichnen einer Transaktion](/help/forms/using/record-transaction-custom-implementation.md) aufrufen.
 
 ## Verwandte Artikel {#related-articles}
 
 * [Übersicht über Transaktionsberichte](../../forms/using/transaction-reports-overview.md)
 * [Anzeigen und Verstehen von Transaktionsberichten](../../forms/using/viewing-and-understanding-transaction-reports.md)
 * [Eine Transaktion für benutzerdefinierte Implementierungen aufzeichnen](/help/forms/using/record-transaction-custom-implementation.md)
-
