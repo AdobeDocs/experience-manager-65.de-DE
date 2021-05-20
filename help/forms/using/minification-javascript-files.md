@@ -9,14 +9,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: c88a3013-5da2-4b09-9f29-ac1fb00822ec
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: d88c6831-8ae9-426d-acb5-2a7e066ad158
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 85%
 
 ---
-
 
 # Minimierung der JavaScript-Dateien {#minification-of-the-javascript-files}
 
@@ -24,13 +23,13 @@ Durch die Minimierung werden die redundanten Zeichen im Quellcode, wie Leerzeich
 
 Um minimierten Code für semantische Änderungen zu generieren, führen Sie folgende Schritte aus.
 
-1. Kopieren Sie `client-html/src/main/webapp/js` aus src-package auf dem Dateisystem.
+1. Kopieren Sie `client-html/src/main/webapp/js` aus src-package im Dateisystem.
 
    >[!NOTE]
    >
    >Weitere Informationen finden Sie unter [Einführung zum Anpassen von AEM Forms Workspace](/help/forms/using/introduction-customizing-html-workspace.md) finden Sie weitere Informationen über die Pakete.
 
-1. Aktualisieren Sie Pfade in `main.js` unter client-html/src/main/webapp/js für hinzugefügte/aktualisierte Modelle/Ansichten.
+1. Aktualisieren Sie Pfade in `main.js` unter client-html/src/main/webapp/js, um hinzugefügte/aktualisierte Modelle/Ansichten zu erhalten.
 
    Ändern Sie zum Beispiel nach Hinzufügen eines neuen Sharequeue-Modells mySharequeue:
 
