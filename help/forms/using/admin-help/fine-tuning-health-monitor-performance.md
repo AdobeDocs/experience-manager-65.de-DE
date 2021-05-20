@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
-translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+exl-id: 41042e08-5e14-4809-89b7-16d98a72d1b4
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 88%
 
 ---
-
 
 # Leistung von Systemüberwachung optimieren{#fine-tuning-health-monitor-performance}
 
@@ -72,7 +71,7 @@ Das Sammeln der Systemstatistiken, die in der Systemüberwachung angegeben werde
 
 ## Java-Optionen zu WebLogic hinzufügen  {#add-java-options-to-weblogic}
 
-1. Beginn Sie WebLogic Administration Console, indem Sie in die Adresszeile eines Browsers https://[Hostname]:&#39;Anschluss&#39;/console eingeben.
+1. Starten Sie WebLogic Administration Console, indem Sie in die Adresszeile eines Browsers https://[Hostname]:&#39;port&#39;/console eingeben.
 1. Geben Sie den von Ihnen erstellten Benutzernamen und das Kennwort für die WebLogic-Serverdomäne ein und klicken Sie unter „Change Center“ auf „Log“ und dann auf „Lock &amp; Edit“.
 1. Klicken Sie unter „Domain Structure“ auf Environment> Servers und anschließend im rechten Bereich auf den Namen des verwalteten Servers.
 1. Klicken Sie im nächsten Bildschirm auf die Registerkarten Configuration > Server Start.
@@ -93,4 +92,3 @@ Das Sammeln der Systemstatistiken, die in der Systemüberwachung angegeben werde
 1. Klicken Sie unter „Additional Properties“ auf Java Virtual Machine.
 1. Geben Sie in das Feld „Generic JVM Arguments“ die erforderlichen Argumente ein.
 1. Klicken Sie auf OK oder Apply und dann auf Save directly to the Master Configuration.
-
