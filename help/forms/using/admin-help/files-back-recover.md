@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2187'
 ht-degree: 89%
 
 ---
-
 
 # Zu sichernde und wiederherzustellende Dateien {#files-to-back-up-and-recover}
 
@@ -25,7 +24,7 @@ Die zu sichernden Anwendungs- und Datendateien werden in den folgenden Abschnitt
 Berücksichtigen Sie folgende Punkte zu Sicherung und Wiederherstellung:
 
 * Die Datenbank sollte vor GDS und AEM-Repository gesichert werden.
-* Wenn Sie die Nodes in einer geclusterten Umgebung zur Sicherung herunterfahren müssen, stellen Sie sicher, dass die sekundären Nodes vor dem primären Knoten heruntergefahren werden. Andernfalls kann es zu Unregelmäßigkeiten im Cluster oder im Server kommen. Außerdem sollte der primäre Knoten vor jedem sekundären Knoten live geschaltet werden.
+* Wenn Sie die Knoten in einer Clusterumgebung zur Sicherung herunterfahren müssen, stellen Sie sicher, dass die sekundären Knoten vor dem primären Knoten heruntergefahren werden. Andernfalls kann es zu Unregelmäßigkeiten im Cluster oder im Server kommen. Außerdem sollte der primäre Knoten vor jedem sekundären Knoten live geschaltet werden.
 * Für den Wiederherstellungsvorgang eines Clusters sollte der Anwendungsserver für jeden Knoten im Cluster angehalten werden.
 
 ## Ordner des globalen Dokumentenspeichers {#global-document-storage-directory}
@@ -59,7 +58,7 @@ Sie können mithilfe von Administration Console in der AEM Forms-Datenbank AEM F
 
 Wenn Sie die Option „Dokumentspeicher in der Datenbank aktivieren“ in den Core-Systemeinstellungen in Administration Console wählen oder Configuration Manager verwenden, sind in AEM Forms der Snapshot-Sicherungsmodus und der kontinuierliche Sicherungsmodus nicht zulässig. Daher ist keine Verwaltung von Sicherungsmodi erforderlich, wenn Sie AEM Forms verwenden. Wenn Sie diese Option verwenden, sollten Sie den globalen Dokumentenspeicher nur sichern, nachdem Sie die Option aktiviert haben. Wenn Sie AEM Forms aus einer Sicherung wiederherstellen, müssen Sie den Sicherungsordner für den GDS nicht umbenennen oder wiederherzustellen.
 
-## AEM-Repository {#aem-repository}
+## AEM-Repository  {#aem-repository}
 
 AEM-Repository (CRX-Repository) wird erstellt, wenn CRX-Repository bei der Installation von AEM Forms konfiguriert wurde. Der Speicherort des CRX-Repository-Ordners wird während des Installationsprozesses von AEM Forms bestimmt. Das Sichern und Wiederherstellen des AEM-Repository zusammen mit Datenbank und GDS ist für konsistente AEM Forms-Daten in AEM Forms erforderlich. AEM-Repository enthält Daten für Correspondence Management Solution, Forms Manager und AEM Forms Workspace.
 
@@ -95,7 +94,7 @@ Um die Datenbank in Echtzeit zu sichern, müssen Sie den Snapshot-Modus wählen 
 >
 >Adobe® LiveCycle® Content Services ES (nicht mehr unterstützt) ist ein Inhaltsverwaltungssystem, das mit LiveCycle installiert wird. Es ermöglicht es Benutzern, am Menschen orientierte Prozesse zu entwerfen, zu verwalten, zu überwachen und zu optimieren. Die Unterstützung von Content Services (veraltet) endet am 31.12.2014. Siehe[ Adobe-Produkt-Lifecycle-Dokument](https://www.adobe.com/de/support/products/enterprise/eol/eol_matrix.html). Informationen zum Konfigurieren von Content Services (nicht mehr unterstützt) finden Sie unter [Content Services verwalten](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
 
-### DB2 {#db2}
+### DB2 {#db2}
 
 Konfigurieren Sie DB2-Datenbank für die Ausführung im Archivprotokollmodus.
 
@@ -131,7 +130,7 @@ SQL Server bietet auch zwei Sicherungs- und Wiederherstellungswerkzeuge:
 * SQL Server Management Studio (grafische Benutzeroberfläche)
 * T-SQL (Befehlszeile)
 
-Weitere Informationen finden Sie unter [Sicherung und Wiederherstellung](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
+Weitere Informationen finden Sie unter [Backup and Restore](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
 
 ### MySQL {#mysql}
 
@@ -141,7 +140,7 @@ Verwenden Sie MySQLAdmin oder ändern Sie die INI-Dateien unter Windows so, dass
 >
 >Der binäre Standardprotokolliermodus für MySQL ist „Statement“. Dieser Modus ist mit von Content Services (nicht mehr unterstützt) verwendeten Tabellen nicht kompatibel. Durch die Verwendung der binären Protokollierung in diesem Standardmodus schlägt Content Services (nicht mehr unterstützt) fehl. Wenn Ihr System Content Services (nicht mehr unterstützt) enthält, verwenden Sie den Protokollmodus „Gemischt“. Um die Protokollierung im Modus „Gemischt“ zu aktivieren, fügen Sie der Datei „my.ini“ folgende Argumente hinzu:  `binlog_format=mixed log-bin=logname`
 
-Mit dem Dienstprogramm „mysqldump“ können Sie eine vollständige Datenbanksicherung erstellen. Vollständige Sicherungen sind erforderlich, aber nicht immer zweckmäßig. Sie erzeugen große Sicherungsdateien und ihre Erzeugung nimmt viel Zeit in Anspruch. Um eine inkrementelle Sicherung durchzuführen, stellen Sie sicher, dass Sie den Server mit der Option - `log-bin` wie im vorherigen Abschnitt beschrieben Beginn haben. Bei jedem Neustart des MySQL-Servers wird das Schreiben in das aktuelle Binärprotokoll beendet und ein neues erstellt, das ab dann als aktuelles Binärprotokoll gilt. Mit dem Befehl `FLUSH LOGS SQL` können Sie einen Schalter manuell erzwingen. Nach der ersten vollständigen Sicherung erfolgen nachfolgende inkrementelle Sicherungen mithilfe von „mysqladmin“ und dem Befehl `flush-logs`, der die nächste Protokolldatei generiert.
+Mit dem Dienstprogramm „mysqldump“ können Sie eine vollständige Datenbanksicherung erstellen. Vollständige Sicherungen sind erforderlich, aber nicht immer zweckmäßig. Sie erzeugen große Sicherungsdateien und ihre Erzeugung nimmt viel Zeit in Anspruch. Stellen Sie für eine inkrementelle Sicherung sicher, dass Sie den Server mit der Option - `log-bin` starten, wie im vorherigen Abschnitt beschrieben. Bei jedem Neustart des MySQL-Servers wird das Schreiben in das aktuelle Binärprotokoll beendet und ein neues erstellt, das ab dann als aktuelles Binärprotokoll gilt. Mit dem Befehl `FLUSH LOGS SQL` können Sie einen Wechsel manuell erzwingen. Nach der ersten vollständigen Sicherung erfolgen nachfolgende inkrementelle Sicherungen mithilfe von „mysqladmin“ und dem Befehl `flush-logs`, der die nächste Protokolldatei generiert.
 
 Siehe [Backup Strategy Summary](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html).
 
@@ -158,7 +157,7 @@ Der Stammordner für Inhalte enthält das Repository für Content Services (nich
 
 Der Stammordner für Inhalte wird bei der Installation von Content Services (nicht mehr unterstützt) erstellt. Der Speicherort des Stammordners für Inhalte wird während des Installationsprozesses von AEM Forms bestimmt.
 
-Der Standardspeicherort für den Stammordner für Datenspeicherung für Inhalte ist `[aem-forms root]/lccs_data`.
+Der Standardspeicherort für den Stammordner für Inhalte ist `[aem-forms root]/lccs_data`.
 
 Sichern Sie folgende Ordner, die sich im Stammordner für Inhalte befinden:
 
@@ -180,7 +179,7 @@ Bei der Installation von Content Services (nicht mehr unterstützt) in einer Clu
 
 **Indexstammordner:** Ein Ordner, der auf jedem Knoten im Cluster erstellt wird und immer denselben Pfad und Ordnernamen hat.
 
-Der Standardspeicherort für den Stammordner für Datenspeicherung für Inhalte ist `[GDS root]/lccs_data`, wobei `[GDS root]` der unter [GDS-Speicherort](files-back-recover.md#gds-location) beschriebene Speicherort ist. Sichern Sie folgende Ordner, die sich im Stammordner für Inhalte befinden:
+Der Standardspeicherort für den Stammordner für Inhalte ist `[GDS root]/lccs_data`, wobei `[GDS root]` der unter [GDS-Speicherort](files-back-recover.md#gds-location) beschriebene Speicherort ist. Sichern Sie folgende Ordner, die sich im Stammordner für Inhalte befinden:
 
 /audit.contentstore
 
@@ -200,6 +199,6 @@ Wenn Sie zusätzliche Schriftarten in Ihrer AEM Forms-Umgebung installiert haben
 
 >[!NOTE]
 >
->Standardmäßig befinden sich die mit AEM Formularen installierten Adoben-Schriftarten im Ordner `[aem-forms root]/fonts`.
+>Standardmäßig befinden sich die mit AEM Formularen installierten Adobe-Schriftarten im Ordner `[aem-forms root]/fonts` .
 
 Wenn das Betriebssystem auf dem Hostcomputer neu initialisiert wird und Sie Schriftarten des vorherigen Betriebssystems verwenden möchten, muss der Inhalt des Ordners mit den Systemschriftarten ebenfalls gesichert werden. (Spezifische Anweisungen finden Sie in der Dokumentation zum Betriebssystem.)
