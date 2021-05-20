@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 37e702c2-8716-4360-a3eb-d9877b28cc86
-translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+exl-id: 21a2317d-3542-4ccb-98db-3cedf20c89ea
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1656'
 ht-degree: 74%
 
 ---
-
 
 # Verwalten von Prozessen {#managing-processes}
 
@@ -28,7 +27,7 @@ Auf der Seite „Prozessliste“ werden die Prozesse angezeigt, die von einem Be
 
    **Anwendung:** Die Anwendung, zu der der Prozess gehört, wie in Workbench definiert.
 
-   **Status:** Aktiv bedeutet, dass der Prozess für die Prozessversion aktiviert ist. Inaktiv bedeutet, dass der Prozess eine alte Version ist, von der immer noch Prozessinstanzen vorhanden sind.
+   **Status:** Aktiv bedeutet, dass der Prozess der für die Prozessversion aktivierte ist. Inaktiv bedeutet, dass der Prozess eine alte Version ist, von der immer noch Prozessinstanzen vorhanden sind.
 
    **Erstellungsdatum:** Datum und Uhrzeit der Bereitstellung des Prozesses.
 
@@ -48,7 +47,7 @@ Für jede Prozessinstanz werden in der Liste die folgenden Informationen angezei
 
 **Erstellungsdatum:** Datum und Uhrzeit der Erstellung der Prozessinstanz.
 
-**Datum aktualisieren:** Datum und Uhrzeit der letzten Änderung des Status der Prozessinstanz.
+**Datum der Aktualisierung:** Datum und Uhrzeit der letzten Änderung des Status der Prozessinstanz.
 
 Sie können folgende Aufgaben auf der Seite „Prozessinstanz“ ausführen:
 
@@ -60,23 +59,23 @@ Sie können folgende Aufgaben auf der Seite „Prozessinstanz“ ausführen:
 
 Eine Prozessinstanz, einschließlich ihrer Teilprozesse, kann folgende Status haben:
 
-**ABGESCHLOSSEN:** Alle Verzweigungen und Vorgänge in der Prozessinstanz sind abgeschlossen. Dies ist der endgültige Status einer Prozessinstanz.
+**COMPLETE:** Alle Zweige und Vorgänge in der Prozessinstanz sind abgeschlossen. Dies ist der endgültige Status einer Prozessinstanz.
 
-**ABSCHLIESSEN:** Der Status der Prozessinstanz wird in &quot;ABGESCHLOSSEN&quot;geändert.
+**ABGESCHLOSSEN:** Der Status der Prozessinstanz wird sich in &quot;COMPLETE&quot;ändern.
 
-**INITIATED:** Die Prozessinstanz wurde erstellt, wird aber noch nicht ausgeführt. Dies ist der erste Status einer Prozessinstanz.
+**INITIIERT:** Die Prozessinstanz wurde erstellt, wird jedoch noch nicht ausgeführt. Dies ist der erste Status einer Prozessinstanz.
 
 **WIRD AUSGEFÜHRT:** Die Prozessinstanz wird normal ausgeführt. Möglicherweise ist ein automatischer Schritt aktiv oder die Prozessinstanz empfängt eventuell Benutzereingaben bzw. wartet auf Benutzerinteraktion.
 
 **AUSGESETZT:** Die Prozessinstanz wurde von einem Administrator oder einem Schritt im Prozess ausgesetzt. Bis zur Änderung des Status werden keine weiteren Vorgänge ausgeführt.
 
-**AUSSETZEN:** Der Status wird in AUSGESETZT geändert. Wenn ein Vorgang so angelegt wurde, dass er Aussetzanforderungen ignoriert, und dieser noch nicht abgeschlossen ist, muss dieser Vorgang zuerst abgeschlossen werden, damit die Prozessinstanz ausgesetzt werden kann.
+**AUSSETZEN:** Der Status ändert sich in AUSGESETZT. Wenn ein Vorgang so angelegt wurde, dass er Aussetzanforderungen ignoriert, und dieser noch nicht abgeschlossen ist, muss dieser Vorgang zuerst abgeschlossen werden, damit die Prozessinstanz ausgesetzt werden kann.
 
 **BEENDET:** Die Prozessinstanz wurde von einem Administrator beendet.
 
-**BEENDEN:** Der Status wird demnächst auf BEENDET geändert. Wenn ein Vorgang so angelegt wurde, dass er Beenden-Anforderungen ignoriert, und dieser noch nicht abgeschlossen ist, muss dieser Vorgang zuerst abgeschlossen werden, damit die Prozessinstanz beendet werden kann.
+**BEENDET:** Der Status ist dabei, auf BEENDET zu wechseln. Wenn ein Vorgang so angelegt wurde, dass er Beenden-Anforderungen ignoriert, und dieser noch nicht abgeschlossen ist, muss dieser Vorgang zuerst abgeschlossen werden, damit die Prozessinstanz beendet werden kann.
 
-**UNSUSPENDING:** Der Status wird nach dem AUSSETZEN in WIRD AUSGEFÜHRT geändert.
+**UNSUSPENDING:** Der Status wechselt nach DEM AUSSETZEN in WIRD AUSGEFÜHRT.
 
 >[!NOTE]
 >
@@ -122,23 +121,23 @@ Auf der Registerkarte „Vorgänge“ werden die Vorgänge für die Prozessinsta
 
 **Status:** Gibt an, ob der Vorgang normal ausgeführt wird oder beendet wurde. (Siehe Informationen zum Status von Prozessinstanzen.)
 
-**Zweigname:** Der Name der Verzweigung, wie in Workbench definiert.
+**Zweigname:** Der Name des Zweigs, wie in Workbench definiert.
 
-**Datum des Beginns:** Datum und Uhrzeit des Beginns des Vorgangs.
+**Startdatum:** Datum und Uhrzeit des Beginns des Vorgangs.
 
 **Abschlussdatum:** Datum und Uhrzeit des Abschlusses des Vorgangs.
 
 Ein Teilprozess ist eine Prozessinstanz, die von einem anderen Prozess gestartet und unabhängig von diesem anderen Prozess ausgeführt wird. Teilprozesse werden nur angezeigt, wenn sie als Teil des Prozesses in Workbench angelegt wurden. Auf der Registerkarte „Teilprozesse“ wird jeder Teilprozess mit den folgenden Informationen angezeigt:
 
-**Prozess-ID:** Diese positive Ganzzahl, die vom Arbeitsablauf für Formulare zugewiesen wird, wenn der Prozess instanziiert wird (d. h. wenn ein Benutzer oder ein automatisierter Schritt den Prozess initiiert). Anhand dieser ID können Sie die Prozessinstanz während ihres gesamten Lebenszyklus verfolgen.
+**Prozess-ID:** Diese positive Ganzzahl, die der Arbeitsablauf für Formulare zuweist, wenn der Prozess instanziiert wird (d. h. wenn ein Benutzer oder ein automatisierter Schritt den Prozess initiiert). Anhand dieser ID können Sie die Prozessinstanz während ihres gesamten Lebenszyklus verfolgen.
 
 **Prozessname - Version:** Der Name des Prozesses, wie in Designer definiert.
 
-**Status:** Gibt an, ob die Prozessinstanz normal ausgeführt wird, den Status ändert oder beendet wird. (Siehe Informationen zum Status von Prozessinstanzen.)
+**Status:** Gibt an, ob die Prozessinstanz normal ausgeführt wird, den Status ändert oder angehalten wird. (Siehe Informationen zum Status von Prozessinstanzen.)
 
 **Erstellungsdatum:** Datum und Uhrzeit der Erstellung des Teilprozesses.
 
-**Datum aktualisieren:** Datum und Uhrzeit der letzten Änderung des Status des Teilprozesses.
+**Datum der Aktualisierung:** Datum und Uhrzeit der letzten Änderung des Status des Teilprozesses.
 
 Sie können folgende Aufgaben auf der Seite „Prozessinstanzdetail“ ausführen:
 
@@ -150,9 +149,9 @@ Sie können folgende Aufgaben auf der Seite „Prozessinstanzdetail“ ausführe
 
 Ein Vorgang (ein Schritt in einem Prozess) kann folgende Status haben:
 
-**ABGESCHLOSSEN:** Der Vorgang ist abgeschlossen.
+**COMPLETE:** Der Vorgang ist abgeschlossen.
 
-**WIRD AUSGEFÜHRT:** Der Vorgang wird normal ausgeführt. Möglicherweise empfängt er Benutzereingaben oder wartet auf Benutzerinteraktion oder ein automatischer Schritt kann aktiv sein.
+**WIRD AUSGEFÜHRT:**  Der Vorgang wird normal ausgeführt. Möglicherweise empfängt er Benutzereingaben oder wartet auf Benutzerinteraktion oder ein automatischer Schritt kann aktiv sein.
 
 **ANGEHALTEN:** Während der Verarbeitung des Vorgangs ist ein Problem aufgetreten. Auf der Seite „Angehaltene Vorgänge“ können Sie den Fehler oder die Ausnahme überprüfen.
 
@@ -197,7 +196,6 @@ Auf der Seite „Vorgangsdetails“ wird die Zusammenfassung eines in einem Proz
 
    **Anwendung:** Die Anwendung, zu der der Prozess gehört, wie in Workbench definiert.
 
-   **Status:** Aktiv bedeutet, dass der Prozess für die Prozessversion aktiviert ist. Inaktiv bedeutet, dass der Prozess eine alte Version ist, von der immer noch Prozessinstanzen vorhanden sind.
+   **Status:** Aktiv bedeutet, dass der Prozess der für die Prozessversion aktivierte ist. Inaktiv bedeutet, dass der Prozess eine alte Version ist, von der immer noch Prozessinstanzen vorhanden sind.
 
    **Erstellungsdatum:** Datum und Uhrzeit der Bereitstellung des Prozesses.
-
