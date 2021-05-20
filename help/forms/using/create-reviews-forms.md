@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: d8c1c507-a6c4-44f5-be01-ee902bc28410
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Adaptive Formulare
+exl-id: 9ca4fcd6-3eb0-4fc1-a09c-e4ad532bbed0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 88%
 
 ---
-
 
 # Erstellen und Verwalten von Überprüfungen von Assets in Formularen{#creating-and-managing-reviews-for-assets-in-forms}
 
@@ -28,13 +27,13 @@ Bei einer Überprüfung handelt es sich um einen Mechanismus, bei dem ein oder m
 ## Einrichten einer Überprüfung {#setting-up-a-review}
 
 1. Navigieren Sie zur Formularregisterkarte und wählen Sie ein Formular aus.
-1. Wenn für das Asset keine Überprüfung ausgeführt wird, wird in der Aktionsleiste das Symbol zum Überprüfen des Beginns ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) angezeigt. Klicken Sie auf das Symbol zum Überprüfen des Beginns ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
+1. Wenn für das Asset keine Überprüfung ausgeführt wird, wird in der Aktionsleiste das Symbol zum Starten einer Überprüfung ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) angezeigt. Klicken Sie auf das Symbol Überprüfung starten ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) .
 1. Geben Sie die folgenden Informationen ein:
 
    * Überprüfungsname: obligatorisch – kann alphanumerische Zeichen, Bindestriche oder Unterstriche enthalten.
    * Überprüfungsbeschreibung: optional – Beschreibung des Zwecks/des Inhalts der Überprüfung.
    * Überprüfungstermin: optional – Datum, an dem die Überprüfung beendet wird. Wenn der Termin bereits abgelaufen ist, wird die Aufgabe als „überfällig“ angezeigt.
-   * Überprüfer: Es muss mindestens ein Wert angegeben werden. Verwenden Sie das Kombinationsfeld, um Überprüfer hinzuzufügen. Beim Eingeben eines Namens werden alle passenden Namen angezeigt. Wählen Sie einen Namen aus und klicken Sie auf „Hinzufügen“.
+   * Überprüfer: Es ist mindestens 1 erforderlich. Verwenden Sie das Kombinationsfeld, um Überprüfer hinzuzufügen. Beim Eingeben eines Namens werden alle passenden Namen angezeigt. Wählen Sie einen Namen aus und klicken Sie auf „Hinzufügen“.
 
 1. Füllen Sie alle weiteren Details und klicken Sie dann auf „Start“.
 
@@ -59,7 +58,7 @@ In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erst
 
 1. Navigieren Sie zur Formularregisterkarte und wählen Sie ein Formular aus.
 
-1. Wenn ein Asset derzeit eine Überprüfung durchführt und Sie der Initiator der Überprüfung sind, werden in der Aktionsleiste Symbole zum Verwalten von Überprüfungen ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) angezeigt. Nur Initiatoren von Überprüfungen können die Überprüfung verwalten (aktualisieren/beenden).
+1. Wenn für ein Asset eine Überprüfung ausgeführt wird und Sie der Initiator der Überprüfung sind, werden in der Aktionsleiste die Symbole Überprüfung verwalten ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) angezeigt. Nur Initiatoren von Überprüfungen können die Überprüfung verwalten (aktualisieren/beenden).
 
    Klicken Sie auf das Symbol zum Verwalten der Überprüfung ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
 
@@ -113,4 +112,3 @@ In diesem Abschnitt wird beschrieben, was beim Beenden/Bearbeiten von Überprüf
    1. **Überprüfer**: Bei allen Überprüfern werden zugewiesene Aufgaben, die unvollständig sind, beendet. Die Aufgabe wird im Benachrichtigungsabschnitt des Überprüfers nicht mehr als „Ausstehend“ angezeigt.
    1. **Initiator**: Die dem Initiator der Überprüfung zugewiesene Aufgabe wird als abgeschlossen markiert. Die Aufgabe wird aus dem Benachrichtigungsabschnitt des Initiators von Überprüfungen entfernt.
    1. **Alle**: Die Überprüfung wird im Abschnitt für die vorherigen Überprüfungen angezeigt. Es können keine weiteren Kommentare hinzugefügt werden.
-
