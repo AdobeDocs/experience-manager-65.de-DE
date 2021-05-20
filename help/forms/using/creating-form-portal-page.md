@@ -9,8 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 8fff78cb-9ef9-426e-8b30-d70b4f26887f
 docset: aem65
-feature: Forms Portal
-translation-type: tm+mt
+feature: Formularportal
 source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
 source-wordcount: '1670'
@@ -27,7 +26,7 @@ Forms Portal-Komponenten bieten Webentwicklern Komponenten zum Erstellen und Anp
 
 Forms Portal-Komponenten stehen nicht standardmäßig zur Verfügung. Stellen Sie sicher, dass die folgenden Forms Portal-Komponentenkategorien aktiviert sind, wie unter [Aktivieren der Komponenten im Forms Portal](/help/forms/using/enabling-forms-portal-components.md) beschrieben.
 
-**Dokument** ServicesUmfasst die Komponenten &quot;Search &amp; Lister&quot;, &quot;Link&quot;und &quot;Drafts and Submissions&quot;.
+**Document** ServicesUmfasst die Komponenten &quot;Search &amp; Lister&quot;, &quot;Link&quot;und &quot;Drafts and Submissions&quot;.
 
 **Document Services-Eigenschaften**: Umfasst die Komponenten „Date Predicate“, „Full Text Predicate“, „Properties Predicate“ und Tags Predicate. Diese Komponenten werden zum Konfigurieren der Suche in der Komponente „Search &amp; Lister“ verwendet.
 
@@ -44,7 +43,7 @@ Die Komponente „Search &amp; Lister“, die in der Document Services- Komponen
 * Listenbereich, in dem die Formulare aufgeführt sind.
 * Suchbereich, in dem Sie die Suchfunktion hinzufügen.
 
-Sie können die Komponente &quot;Search &amp; Lister&quot;aus der Kategorie der Dokument Services-Komponenten im Komponentenbrowser auf die Seite ziehen. Ist die Komponente hinzugefügt, sieht sie beispielsweise wie folgt aus.
+Sie können die Komponente &quot;Search &amp; Lister&quot;aus der Document Services-Komponentenkategorie im Komponenten-Browser auf die Seite ziehen. Ist die Komponente hinzugefügt, sieht sie beispielsweise wie folgt aus.
 
 ![Komponente „Search &amp; Lister“ auf einer Seite](assets/fp-grid-viw.png)
 
@@ -54,13 +53,13 @@ Komponente „Search &amp; Lister“ auf einer Seite mit Rasterlayout
 
 Im Listenbereich werden die Formulare aufgeführt. Die Komponente „Search &amp; Lister“ bietet unterschiedliche Konfigurationsoptionen, mit denen Sie die Anzeige von Formularen im Listenbereich steuern können.
 
-Um den Bereich &quot;Liste&quot;zu konfigurieren, tippen Sie auf die Komponente &quot;Search and Lister&quot;und dann auf ![settings_icon](assets/settings_icon.png). Das Dialogfeld **[!UICONTROL Komponente bearbeiten]** wird geöffnet.
+Um den Listenbereich zu konfigurieren, tippen Sie auf die Komponente &quot;Search and Lister&quot;und dann auf ![settings_icon](assets/settings_icon.png). Das Dialogfeld **[!UICONTROL Komponente bearbeiten]** wird geöffnet.
 
 ![Listenbereich im Bearbeitungsmodus](assets/edit-list.png)
 
 Listenbereich im Bearbeitungsmodus
 
-Das Dialogfeld **Bearbeiten** enthält mehrere Registerkarten mit Konfigurationsoptionen (siehe Tabelle unten). Tippen Sie nach Abschluss der Konfiguration auf **OK**, um die Konfiguration zu speichern.
+Das Dialogfeld **Bearbeiten** enthält mehrere Registerkarten mit Konfigurationsoptionen (siehe Tabelle unten). Tippen Sie auf **OK**, um die Konfiguration zu speichern, wenn Sie fertig sind.
 
 <table>
  <tbody>
@@ -102,17 +101,17 @@ Das Dialogfeld **Bearbeiten** enthält mehrere Registerkarten mit Konfigurations
   <tr>
    <td> </td>
    <td>Ergebnistext</td>
-   <td><p>Konfiguriert den Ergebnistext (zum Beispiel 1-12 von 601 <strong>Ergebnissen</strong>). Der Standardwert ist <strong>Ergebnissen</strong>.</p> <p>Wenn Sie beispielsweise <strong>Forms </strong>in diesem Feld angeben und insgesamt 601 Formulare vorhanden sind, wird der Ergebnistext in 1-12 von 601 <strong>Forms geändert.</strong></p> </td>
+   <td><p>Konfiguriert den Ergebnistext (zum Beispiel 1-12 von 601 <strong>Ergebnissen</strong>). Der Standardwert ist <strong>Ergebnissen</strong>.</p> <p>Wenn Sie beispielsweise <strong>Forms </strong>in dieses Feld eingeben und insgesamt 601 Formulare vorhanden sind, wird der Ergebnistext in 1-12 von 601 <strong>Forms.</strong></p> </td>
   </tr>
   <tr>
    <td> </td>
    <td>Seitentext</td>
-   <td><p>Konfiguriert den Seitentext (z. B. <strong>Seite </strong>1 von 51). Der Standardwert ist <strong>Seite</strong>.</p> <p>Wenn Sie beispielsweise <strong>Antragsformular </strong>in diesem Feld angeben und es 51 Seiten gibt, wird der Seitentext in <strong>Antragsformular </strong>1 von 51 geändert.</p> </td>
+   <td><p>Konfiguriert den Seitentext (z. B. <strong>Seite </strong>1 von 51). Der Standardwert ist <strong>Seite</strong>.</p> <p>Wenn Sie beispielsweise <strong>Antragsformular </strong>in dieses Feld eingeben und es 51 Seiten gibt, ändert sich der Seitentext in <strong>Antragsformular </strong>1 von 51.</p> </td>
   </tr>
   <tr>
    <td> </td>
    <td>Text für „Von“</td>
-   <td><p>Ersetzt das Wort <strong>von</strong> durch den angegebenen Text (Seite 1 <strong>von </strong>51). Der Standardwert ist <strong>von</strong>.</p> <p>Wenn Sie beispielsweise <strong>von </strong>in diesem Feld angeben, wird der Text in Seite 1 <strong>von </strong>51 geändert.</p> </td>
+   <td><p>Ersetzt das Wort <strong>von</strong> durch den angegebenen Text (Seite 1 <strong>von </strong>51). Der Standardwert ist <strong>von</strong>.</p> <p>Wenn Sie beispielsweise <strong>von </strong>in diesem Feld angeben, ändert sich der Text in Seite 1 <strong>von </strong>51.</p> </td>
   </tr>
   <tr>
    <td><span class="uicontrol"><strong>Formular-Link</strong></code></td>
@@ -147,7 +146,7 @@ Das Dialogfeld **Bearbeiten** enthält mehrere Registerkarten mit Konfigurations
   <tr>
    <td><span class="uicontrol"><strong>Stil</strong></code></td>
    <td>Style Type (Stiltyp)</td>
-   <td>Ermöglicht Ihnen, <strong>Kein Stil, Standardstil</strong> oder <strong>Benutzerdefinierter Stil </strong>für die Auflistung der Formulare anzugeben.</td>
+   <td>Ermöglicht die Angabe von <strong>No Style, Default Style</strong> oder <strong>Custom Style </strong>für die Auflistung der Formulare.</td>
   </tr>
   <tr>
    <td> </td>
@@ -161,7 +160,7 @@ Das Dialogfeld **Bearbeiten** enthält mehrere Registerkarten mit Konfigurations
 
 Über den Suchbereich können Sie die Komponenten „Date Predicate“, „Full Text Predicate“, „Properties Predicate“ und „Tags Predicate“ aus der Kategorie „Document Services Predicates“ im AEM Sidekick hinzufügen. Diese Komponenten implementieren die Suchfunktion, mit der Benutzer nach den aufgeführten Formularen suchen können.
 
-**Tipp:** *Sie können anhand vorgegebener Kriterien die Liste der Formulare festlegen, die im Formularportal angezeigt werden, und die Suchfunktion für Endbenutzer ausblenden. Um die Formularliste zu steuern, verwenden Sie die Prädikatkomponenten, um Suchfilter anzuwenden. Sie können auch die Standardfilterwerte angeben und die Suche auf der Registerkarte &quot;Anzeigen&quot;des Dialogfelds &quot;Komponente bearbeiten&quot;deaktivieren.*
+**Tipp:** *Sie können anhand vorgegebener Kriterien die Liste der Formulare festlegen, die im Formularportal angezeigt werden, und die Suchfunktion für Endbenutzer ausblenden. Um die Formularliste zu steuern, verwenden Sie die Prädikatkomponenten, um Suchfilter anzuwenden. Sie können auch die Standardfilterwerte angeben und die Suche auf der Registerkarte Anzeige des Dialogfelds Komponente bearbeiten deaktivieren.*
 
 ![Suchbereich mit den Eigenschaften für Datum, Volltext, Eigenschaften und Tags](assets/search-with-predicates.png)
 
@@ -208,7 +207,7 @@ Konfigurieren der Komponente „Properties Predicate“:
 1. Tippen Sie auf der Registerkarte „Optionen“ auf **Element hinzufügen**.
 1. Wählen Sie eine Eigenschaft in der Dropdownliste aus und geben Sie für die Eigenschaft eine Suchbeschriftung im Feld unter der Dropdown-Liste an.
 1. Wiederholen Sie Schritt 4, um weitere Eigenschaften hinzuzufügen. Sie können auch einen Standardfilterwert für die Auflistung von Formularen anhand der angegebenen Kriterien festlegen und die Eigenschaft für die Suche durch Endbenutzer ausblenden. Aktivieren Sie das Kontrollkästchen „Ausblenden“ für eine Eigenschaft und legen Sie den Standardfilterwert fest.
- Wenn Sie beispielsweise Formulare anzeigen möchten, die „Reise“ in ihrem Titel enthalten, wählen Sie „Ausblenden“ neben der Eigenschaft „Titel“. Geben Sie außerdem &quot;Reise&quot;in das Textfeld für den Standardfilterwert ein.
+ Wenn Sie beispielsweise Formulare anzeigen möchten, die „Reise“ in ihrem Titel enthalten, wählen Sie „Ausblenden“ neben der Eigenschaft „Titel“. Geben Sie außerdem &quot;Reise&quot;im Textfeld für den Standardfilterwert an.
 
 1. Tippen Sie auf **OK**
 
@@ -229,13 +228,13 @@ Die ausgewählten Tags werden im Suchbereich zusammen mit den Kontrollkästchen 
 
 Um Formulare auf einer Seite aufzulisten, fügen Sie die Komponente **[!UICONTROL Search &amp; Lister]** der Seite hinzu und konfigurieren Sie den **[!UICONTROL Listenbereich]**. Damit Endbenutzer Formulare nach Datum, Text und Tags suchen können, fügen Sie eine **[!UICONTROL Suchbereichskomponente]** hinzu.
 
-Um einen Link zu einem Formular an einer beliebigen Stelle auf der Seite anzuzeigen, verwenden Sie die Komponente „Link“. Weitere Informationen zur Komponente &quot;Link&quot;finden Sie unter [Einbetten der Komponente &quot;Link&quot;in eine Seite](../../forms/using/embedding-link-component-page.md).
+Um einen Link zu einem Formular an einer beliebigen Stelle auf der Seite anzuzeigen, verwenden Sie die Komponente „Link“. Weitere Informationen zur Linkkomponente finden Sie unter [Einbetten der Verknüpfungskomponente in eine Seite](../../forms/using/embedding-link-component-page.md).
 
 Um Formulare mit dem Status „Entwurf“ sowie bereits gesendete Formulare aufzulisten, verwenden Sie die Komponente **[!UICONTROL Drafts and Submissions]**. Weitere Informationen finden Sie unter [Anpassen der Komponente „Drafts and Submissions](../../forms/using/draft-submission-component.md).
 
 ## Eignung für Mobilgeräte {#mobile-device-friendliness}
 
-Die Forms-Portal-Komponente „Search &amp; Lister“ ist für Mobilgeräte geeignet und passt sich entsprechend an. Alle drei Standardeinstellungen: Raster-, Karten-, Bedienfeld-Layouts entsprechend dem Gerät, auf dem die Site geöffnet wird, vorausgesetzt, dass sich die Webseite auch anpasst. Die simple Tatsache besteht darin, dass „Search &amp; Lister“ nur eine Komponente ist und nicht den Seitenstil steuert.
+Die Forms-Portal-Komponente „Search &amp; Lister“ ist für Mobilgeräte geeignet und passt sich entsprechend an. Alle drei Standardansichten: Raster-, Karten-, Bedienfeld-Layouts entsprechend dem Gerät, auf dem die Site geöffnet wird, vorausgesetzt, die Webseite passt sich ebenfalls an. Die simple Tatsache besteht darin, dass „Search &amp; Lister“ nur eine Komponente ist und nicht den Seitenstil steuert.
 
 In der folgenden Abbildung wird die Komponente „Search &amp; Lister“ angezeigt, wenn sie auf einem Mobilgerät geöffnet wird:
 
@@ -253,11 +252,11 @@ Standardmäßig stellt Forms Portal Renderaktionen bereit. Sie können Forms Por
 
 ## Verwandte Artikel
 
-* [Aktivieren der Forms Portal-Komponenten](/help/forms/using/enabling-forms-portal-components.md)
+* [Aktivieren von Forms Portal-Komponenten](/help/forms/using/enabling-forms-portal-components.md)
 * [Forms Portal-Seite erstellen](/help/forms/using/creating-form-portal-page.md)
 * [Auflisten von Formularen auf einer Webseite mithilfe von APIs](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Komponente &quot;Drafts and Submissions&quot;verwenden](/help/forms/using/draft-submission-component.md)
-* [Anpassen der Datenspeicherung von Entwürfen und gesendeten Formularen](/help/forms/using/draft-submission-component.md)
+* [Anpassen der Speicherung von Entwürfen und gesendeten Formularen](/help/forms/using/draft-submission-component.md)
 * [Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung in die Datenbank](/help/forms/using/integrate-draft-submission-database.md)
 * [Anpassen von Vorlagen für Forms Portal-Komponenten](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Einführung in das Veröffentlichen von Formularen in einem Portal](/help/forms/using/introduction-publishing-forms.md)
