@@ -9,18 +9,17 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ee54d9d4-190d-4665-925a-9740ac65fbd5
-translation-type: tm+mt
-source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+exl-id: 89561ed0-d094-4ef7-9bc1-bde11f3c5bc3
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1538'
 ht-degree: 95%
 
 ---
 
-
 # Aktivieren der einmaligen Anmeldung in AEM Forms{#enabling-single-sign-on-in-aem-forms}
 
-AEM Forms bietet zwei Möglichkeiten, Single Sign-On (SSO) zu aktivieren: HTTP-Kopfzeilen und SPNEGO.
+AEM forms bietet zwei Möglichkeiten, Single Sign-On (SSO) zu aktivieren: HTTP-Header und SPNEGO.
 
 Wenn die einmalige Anmeldung implementiert ist, sind die AEM Forms-Anmeldeseiten nicht erforderlich und werden nicht angezeigt, sofern der Benutzer bereits durch sein Firmenportal authentifiziert wurde.
 
@@ -145,7 +144,7 @@ ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 
 Damit die SPNEGO-basierte Authentifizierung funktioniert, muss der Clientcomputer zu der Domäne gehören, in der das Benutzerkonto erstellt wurde. Sie müssen außerdem den Clientbrowser so konfigurieren, dass SPNEGO-basierte Authentifizierung zulässig ist. Ebenso muss die Site, die SPNEGO-basierte Authentifizierung erfordert, eine vertrauenswürdige Site sein.
 
-Wenn der Zugriff auf den Server über den Computernamen, z. B. https://lcserver:8080, erfolgt, sind keine Einstellungen für Internet Explorer erforderlich. Wenn Sie eine URL eingeben, die keine Punkte („.“) enthält, wird diese Site von Internet Explorer als lokale Intranetsite behandelt. Bei Verwendung eines voll qualifizierten Namens für die Site muss diese als vertrauenswürdige Site hinzugefügt werden.
+Wenn der Zugriff auf den Server über den Computernamen erfolgt (z. B. https://lcserver:8080), sind für Internet Explorer keine Einstellungen erforderlich. Wenn Sie eine URL eingeben, die keine Punkte („.“) enthält, wird diese Site von Internet Explorer als lokale Intranetsite behandelt. Bei Verwendung eines voll qualifizierten Namens für die Site muss diese als vertrauenswürdige Site hinzugefügt werden.
 
 **Internet Explorer 6.x konfigurieren**
 
@@ -153,20 +152,19 @@ Wenn der Zugriff auf den Server über den Computernamen, z. B. https://lcserver:
 1. Klicken Sie auf das Symbol „Lokales Intranet“ und klicken Sie auf „Websites“.
 1. Klicken Sie auf „Erweitert“ und geben Sie in das Feld „Diese Website zur Zone hinzufügen“ die URL Ihres Formularservers ein. Geben Sie beispielsweise `https://lcserver.um.lc.com`
 1. Klicken Sie wiederholt auf „OK“, bis alle Dialogfelder geschlossen sind.
-1. Testen Sie die Konfiguration durch Zugriff auf die URL Ihres AEM Forms-Servers. Geben Sie beispielsweise in das Feld Browser-URL `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true` ein.
+1. Testen Sie die Konfiguration durch Zugriff auf die URL Ihres AEM Forms-Servers. Geben Sie beispielsweise in das Feld für die Browser-URL `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true` ein.
 
 **Mozilla Firefox konfigurieren**
 
-1. Geben Sie in das Feld Browser-URL `about:config` ein
+1. Geben Sie in das Feld für die Browser-URL `about:config` ein.
 
    Das Mozilla Firefox-Dialogfeld „about:config“ wird angezeigt.
 
 1. Geben Sie in das Feld „Filter“ den Wert `negotiate` ein.
 1. Klicken Sie in der angezeigten Liste auf „network.negotiate-auth.trusted-uris“ und geben Sie einen der folgenden Befehle Ihrer Umgebung entsprechend ein:
 
-   `.um.lc.com`- Konfiguriert Firefox, um SPNEGO für jede URL zuzulassen, die mit um.lc.com endet. Stellen Sie sicher, dass Sie den Punkt (&quot;&quot;) einschließen. am Anfang.
+   `.um.lc.com`- Konfiguriert Firefox so, dass SPNEGO für jede URL zugelassen wird, die auf um.lc.com endet. Stellen Sie sicher, dass Sie den Punkt (&quot;.&quot;) am Anfang.
 
    `lcserver.um.lc.com`–  – Hierdurch wird Firefox so konfiguriert, dass SPNEGO nur für bestimmte Server zugelassen wird. Beginnen Sie diesen Wert nicht mit einem Punkt („.“).
 
 1. Testen Sie die Konfiguration durch Zugriff auf die Anwendung. Die Begrüßungsseite der Zielanwendung sollte angezeigt werden.
-
