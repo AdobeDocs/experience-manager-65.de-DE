@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integration
 discoiquuid: e397c6ce-d73f-4183-8445-1897a8906960
 docset: aem65
-feature: Form Data Model
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Formulardatenmodell
+exl-id: dd1146e4-952d-4dfa-8084-46c6096c4177
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 90%
 
 ---
-
 
 # [!DNL AEM Forms] Datenintegration {#aem-forms-data-integration}
 
@@ -31,19 +30,19 @@ Verteilte, modulare Systeme bieten ihre Vorteile, die Herausforderung besteht je
 
 ## Übersicht über die Datenintegration {#data-integration-overview}
 
-![aem-forms-data-integer](assets/aem-forms-data-integeration.png)
+![aem-forms-data-integration](assets/aem-forms-data-integeration.png)
 
-[!DNL AEM Forms] Die Datenintegration ermöglicht die Konfiguration und Verbindung unterschiedlicher Datenquellen mit  [!DNL AEM Forms]. In der intuitiven Benutzeroberfläche können Sie eine einheitliche Darstellung der Geschäftsbereiche und Dienste für sämtliche verbundenen Datenquellen erstellen. Diese einheitliche Darstellung wird als Formulardatenmodell bezeichnet. Es handelt sich um eine Erweiterung des JSON-Schemas. Die Entitäten in einem Formulardatenmodell werden als Datenmodellobjekte bezeichnet. Ein Formulardatenmodell gibt Ihnen folgende Möglichkeiten:
+[!DNL AEM Forms] Die Datenintegration ermöglicht die Konfiguration und Verbindung verschiedener Datenquellen mit  [!DNL AEM Forms]. In der intuitiven Benutzeroberfläche können Sie eine einheitliche Darstellung der Geschäftsbereiche und Dienste für sämtliche verbundenen Datenquellen erstellen. Diese einheitliche Darstellung wird als Formulardatenmodell bezeichnet. Es handelt sich um eine Erweiterung des JSON-Schemas. Die Entitäten in einem Formulardatenmodell werden als Datenmodellobjekte bezeichnet. Ein Formulardatenmodell gibt Ihnen folgende Möglichkeiten:
 
 * Zugreifen auf Datenmodellobjekte, Eigenschaften und Dienste aus verbundenen Datenquellen.
 * Erstellen Sie benutzerdefinierte Datenmodellobjekte und -eigenschaften
-* Erstellen Sie Verknüpfungen zwischen Datenmodellobjekten innerhalb und zwischen Datenquellen.
+* Erstellen Sie Verknüpfungen zwischen Datenmodellobjekten innerhalb und über Datenquellen hinweg.
 * Aufrufen von Diensten für Datenmodellobjekte zum Abfragen von Daten aus und Schreiben von Daten in Datenquellen.
 
 Nachdem Sie ein Formulardatenmodell erstellt haben, können Sie es in verschiedenen Workflows für adaptive Formulare und interaktive Kommunikation verwenden, zum Beispiel:
 
 * Erstellen adaptiver Formulare und interaktiver Kommunikation basierend auf dem Formulardatenmodell
-* Vorfüllen adaptiver Formulare und interaktiver Kommunikation aus konfigurierten Datenquellen
+* Vorausfüllen adaptiver Formulare und interaktiver Kommunikation aus konfigurierten Datenquellen
 * Aufrufen von Datenquellendiensten/-vorgängen mit Regeln für adaptive Formulare
 * Übermittelte Formulardaten in Datenquellen schreiben
 
@@ -59,4 +58,3 @@ Der erste Schritt zur Implementierung der Datenintegration besteht darin, Datenq
 * [Formulardatenmodell erstellen](../../forms/using/create-form-data-models.md)
 * [Arbeiten mit einem Formulardatenmodell](../../forms/using/work-with-form-data-model.md)
 * [Verwenden eines Formulardatenmodells](../../forms/using/using-form-data-model.md)
-
