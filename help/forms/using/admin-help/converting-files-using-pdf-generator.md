@@ -10,14 +10,13 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 feature: PDF Generator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 0e2c12b5-24c8-4aca-8826-cb661051ce4f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1182'
 ht-degree: 94%
 
 ---
-
 
 # Dateien mithilfe von PDF Generator konvertieren{#converting-files-using-pdf-generator}
 
@@ -68,16 +67,16 @@ Wenn die ZIP-Datei auf der untersten Ebene der Ordnerhierarchie mehr als eine HT
 >* Für die Konvertierung von HTML in PDF müssen bestimmte Schriftarten im Schriftartensystemordner enthalten sein. Unter Linux-, Solaris- und AIX-Systemen muss der Schriftartensystemordner die Schriftart Courier enthalten. Unter Windows-Systemen muss der Schriftartensystemordner die Schriftart Times New Roman enthalten.
    >
    >
-* (Nur UNIX-basiertes System) Eine der folgenden japanischen Schriften sollte auf dem AEM Forms-Server verfügbar sein, um eine Webseite mit japanischer Schrift in ein PDF-Dokument zu konvertieren.
+* (Nur UNIX-basiertes System) Eine der folgenden japanischen Schriftarten sollte auf dem AEM Forms-Server verfügbar sein, um eine Webseite mit japanischer Schriftart in ein PDF-Dokument zu konvertieren.
    >
    >  
 * &quot;Sazanami Gothic&quot;
 >  * &quot;Kozuka Gothic Pro-VI&quot;
 >  * &quot;Kozuka Mincho Pro-VI&quot;
 >  * &quot;Sazanami Gothic&quot;
->  * ‚Kozuka Mincho Pr6N‘
+>  * &quot;Kozuka Mincho Pr6N&quot;
 >  * &quot;Sazanami Mincho&quot;
->  * ‚Adobe Heiti Std.‘
+>  * &quot;Adobe Heiti Std.&quot;
 >  * &quot;Adobe Song Std.&quot;
 
    >
@@ -140,4 +139,3 @@ PDF Generator unterstützt die Funktion zum Reduzieren der Größe von PDF-Date
    * Um eine vorhandene Einstellungsdatei zu verwenden, wählen Sie „Einstellungsdatei hochladen“ aus und klicken Sie auf „Durchsuchen“, um zum Speicherort der Datei zu wechseln.
 
 1. Klicken Sie auf Erstellen.
-
