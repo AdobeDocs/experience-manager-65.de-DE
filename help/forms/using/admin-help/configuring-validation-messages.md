@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5f2f8129-e45e-4f3f-ae30-c09330d0e152
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 14314383-5228-4904-98c1-586f48a1142c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 100%
 
 ---
-
 
 # Überprüfungsmeldungen konfigurieren {#configuring-validation-messages}
 
@@ -63,7 +62,6 @@ Wenn „Berichte“ auf „Frame“ festgelegt ist, können Sie die Rahmenstärk
 
 1. Geben Sie unter „Überprüfungsausgabe“ im Feld „Rahmenstärke“ die Stärke des Rahmens in Pixel ein.
 
-   Die Rahmenstärke muss gleich oder größer 0 sein. Der Standardwert ist 1. 
+   Die Rahmenstärke muss gleich oder größer 0 sein. Der Standardwert ist 1.
 
 1. Klicken Sie auf Speichern.
-
