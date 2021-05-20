@@ -8,14 +8,13 @@ topic-tags: publish
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6ebb6420-68b6-4abc-b298-c252db038416
-translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+exl-id: 51ca2844-91f0-453a-9b39-b876399ebecb
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 89%
 
 ---
-
 
 # Konfigurieren von Speicherdiensten für Entwürfe und Übermittlungen {#configuring-storage-services-for-drafts-and-submissions}
 
@@ -41,7 +40,7 @@ Neben dem oben erwähnten Standardverfahren steht als Alternative eine Implement
 
 ## Konfigurieren von Forms Portal-Diensten für Entwürfe und Übermittlungen  {#configuring-forms-portal-drafts-and-submissions-services}
 
-Klicken Sie in der AEM Web-Konsolenkonfiguration ( `https://[host]:'port'/system/console/configMgr`) auf , um **Forms Portal Draft and Submission Configuration** im Bearbeitungsmodus zu öffnen.
+Klicken Sie in der AEM Web Console Configuration ( `https://[host]:'port'/system/console/configMgr`) auf , um **Forms Portal Draft and Submission Configuration** im Bearbeitungsmodus zu öffnen.
 
 Geben Sie wie unten beschrieben die Werte für die Eigenschaften an wie für Ihre Zwecke benötigt:
 
@@ -105,9 +104,8 @@ Daten werden direkt an die konfigurierte Ferninstanz weitergeleitet.
 
 Geben Sie außer der oben angegebenen Konfiguration Informationen über die konfigurierte Fernverarbeitungsinstanz an.
 
-Klicken Sie in der AEM Web-Konsolenkonfiguration ( `https://[host]:'port'/system/console/configMgr`) auf , um **AEM DS-Einstellungsdienst** im Bearbeitungsmodus zu öffnen. Geben Sie im Dialogfeld des AEM DS-Einstellungsdienstes Informationen zu URL, Benutzername und Kennwort des Verarbeitungsservers an.
+Klicken Sie in der AEM Web Console Configuration ( `https://[host]:'port'/system/console/configMgr`) auf , um **AEM DS Settings Service** im Bearbeitungsmodus zu öffnen. Geben Sie im Dialogfeld des AEM DS-Einstellungsdienstes Informationen zu URL, Benutzername und Kennwort des Verarbeitungsservers an.
 
 >[!NOTE]
 >
->Eine Beispielimplementierung für die Speichern von Benutzerdaten in einer Datenbank wird ebenfalls bereitgestellt. Informationen zum Konfigurieren von Daten- und Metadatendiensten zum Speichern von Benutzerdaten in einer externen Datenbank finden Sie unter [Beispiel für die Integration der Komponente &quot;Drafts &amp; Submissions&quot;in die Datenbank](/help/forms/using/integrate-draft-submission-database.md).
-
+>Eine Beispielimplementierung für die Speichern von Benutzerdaten in einer Datenbank wird ebenfalls bereitgestellt. Informationen zum Konfigurieren von Daten- und Metadatendiensten zum Speichern von Benutzerdaten in einer externen Datenbank finden Sie unter [Beispiel für die Integration der Komponente für Entwurf und Übermittlung in die Datenbank](/help/forms/using/integrate-draft-submission-database.md).
