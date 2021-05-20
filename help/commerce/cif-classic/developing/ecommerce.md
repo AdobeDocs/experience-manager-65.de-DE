@@ -9,7 +9,6 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 docset: aem65
-translation-type: tm+mt
 source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '151'
@@ -31,7 +30,7 @@ Weitere Informationen finden Sie unter:
 
 >[!NOTE]
 >
->Da das eCommerce-Framework mit jeder eCommerce-Lösung verwendet werden kann, finden Sie unter [Entwickeln (allgemein)](/help/commerce/cif-classic/developing/generic.md) weitere Informationen zur Entwicklung von Möglichkeiten.
+>Da das eCommerce-Framework mit jeder eCommerce-Lösung verwendet werden kann, finden Sie unter [Entwicklung (generisch)](/help/commerce/cif-classic/developing/generic.md) weitere Informationen zur Entwicklung von Möglichkeiten.
 
 >[!NOTE]
 >
