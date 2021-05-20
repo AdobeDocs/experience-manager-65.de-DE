@@ -7,16 +7,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
-feature: Asset Management
+feature: Asset-Verwaltung
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 753d806f-5f44-4d73-a3a3-a2a0fc3e154b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '333'
 ht-degree: 93%
 
 ---
-
 
 # Bereitstellen von optimierten Bildern für eine responsive Site {#delivering-optimized-images-for-a-responsive-site}
 
@@ -42,7 +41,7 @@ Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwe
    >
    >Das ausgewählte Asset *und* die ausgewählte Bildvorgabe oder Viewer-Vorgabe müssen veröffentlicht werden, um die Schaltfläche **[!UICONTROL URL]** oder **[!UICONTROL RESS]** verfügbar zu machen.
    >
-   >Für den Dynamic Media-Hybridmodus müssen Sie Bildvorgaben veröffentlichen. Dynamic Media - Scene7-Modus veröffentlicht Bildvorgaben automatisch.
+   >Für den Hybridmodus von Dynamic Media müssen Sie Bildvorgaben veröffentlichen. Im Modus Dynamic Media - Scene7 werden Bildvorgaben automatisch veröffentlicht.
 
 1. Tippen Sie auf **[!UICONTROL RESS]**.
 
