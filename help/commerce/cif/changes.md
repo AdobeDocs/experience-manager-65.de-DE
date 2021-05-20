@@ -1,8 +1,7 @@
 ---
-title: Wichtige Änderungen des CIF-Add-ons (Commerce Integration Framework)
-description: Im Vergleich zu alten CIF-Versionen wurden beim Commerce Integration Framework (CIF)-Add-On merkliche Änderungen vorgenommen.
+title: Wesentliche Änderungen des CIF-Add-ons (Commerce Integration Framework)
+description: Wesentliche Änderungen des Commerce Integration Framework (CIF)-Add-ons im Vergleich zu alten CIF-Versionen.
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32,c136763f-56aa-450e-8796-bc84bf6c205d
-translation-type: tm+mt
 source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '321'
@@ -10,9 +9,9 @@ ht-degree: 3%
 
 ---
 
-# Wichtige Änderungen am CIF-Add-on für das Commerce Integration Framework{#notable-changes}
+# Wesentliche Änderungen am Add-on für das Commerce Integration Framework (CIF){#notable-changes}
 
-Dieses Dokument hebt die wichtigen Unterschiede zwischen dem Commerce Integration Framework (CIF) Add-On und alten CIF-Versionen hervor, die hauptsächlich CIF Classic (Quickstart) und CIF Open-Source genannt werden.
+In diesem Dokument werden die wichtigen Unterschiede zwischen dem Commerce Integration Framework (CIF)-Add-on und alten CIF-Versionen, hauptsächlich CIF Classic (Quickstart) und CIF Open Source, erläutert.
 
 ## Installation und Updates
 
@@ -20,8 +19,8 @@ Das AEM CIF-Add-On-Paket wird installiert und mit AEM Package Manager aktualisie
 
 **Vorherige CIF-Versionen**
 
-* CIF Classic: Keine Installation erforderlich, CIF war Teil des Quickstart. CIF-Aktualisierungen waren Teil regelmäßiger AEM- oder Service Pack-Aktualisierungen.
-* CIF Open Source: Installation über GitHub. Aktualisierungen waren Teil der manuellen Aktualisierungs-/Wartungsarbeiten.
+* CIF Classic: Keine Installation erforderlich, CIF war Teil des Schnellstarts. CIF-Aktualisierungen waren Teil regelmäßiger AEM- oder Service Pack-Aktualisierungen
+* CIF Open Source: Installation über GitHub. Aktualisierungen waren Teil der manuellen Aktualisierung/Wartung.
 
 ## Endpunktkonfiguration
 
@@ -29,10 +28,10 @@ Der Endpunkt wird über die OSGi-Konsole konfiguriert.
 
 **Vorherige CIF-Versionen**
 
-* CIF Classic: Über OSGi-Konfiguration in AEM
+* CIF Classic: Über die OSGi-Konfiguration in AEM
 * CIF Open Source: Über den CIF-Konfigurationsbrowser
 
-## Bereitstellung des CIF-Venia-Projekts
+## Implementierung des CIF-Venia-Projekts
 
 Projekt verfügbar unter [GitHub AEM Guides - CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) und Bereitstellung über AEM Package Manager.
 
@@ -42,20 +41,20 @@ Projekt verfügbar unter [GitHub AEM Guides - CIF Venia Project](https://github.
 
 ## Produktkatalogdaten
 
-Produktkatalogdaten werden bei Bedarf über Echtzeitaufrufe an einen externen Endpunkt angefordert, der die erforderlichen GraphQL-APIs unterstützt. Diese APIs unterstützen den Zugriff auf Live- oder Stage-Daten zu jedem beliebigen Datum. Keine Replikation erforderlich.
+Produktkatalogdaten werden bei Bedarf über Echtzeitaufrufe an einen externen Endpunkt angefordert, der die erforderlichen GraphQL-APIs unterstützt. Diese APIs unterstützen den Zugriff auf Live- oder Staging-Daten zu einem beliebigen Zeitpunkt. Keine Replikation erforderlich.
 
 **Vorherige CIF-Versionen**
 
-* CIF Classic: Live- und Stage-Produktdaten werden über den vollständigen oder Delta-Produktimport in JCR unter AEM Author importiert und beibehalten. Live-Produktdaten werden in AEM Publish repliziert.
+* CIF Classic: Live- und gestaffelte Produktdaten werden in JCR in der AEM-Autoreninstanz über den vollständigen oder Delta-Produktimport importiert und beibehalten. Live-Produktdaten werden in AEM Publish repliziert.
 
-## Produktkatalog-Erlebnisse mit AEM Rendering
+## Produktkatalogerlebnisse mit AEM Rendering
 
-AEM rendert Produktkatalog-Erlebnisse spontan mit AEM Katalogvorlagen, die Produkten und Kategorien zugewiesen wurden. Keine Replikation erforderlich.
+AEM rendert Produktkatalog-Erlebnisse direkt mithilfe AEM Katalogvorlagen, die Produkten und Kategorien zugewiesen wurden. Keine Replikation erforderlich.
 
 **Vorherige CIF-Versionen**
 
-* CIF Classic: AEM Author erstellt mithilfe des Katalogentwurfstools eine AEM für jede Kategorie/jedes Produkt. Diese Seiten werden in AEM Publish repliziert.
+* CIF Classic: Die AEM-Autoreninstanz erstellt mit dem Katalog-Blueprint-Tool eine AEM für jede Kategorie/jedes Produkt. Diese Seiten werden in AEM Publish repliziert.
 
 >[!NOTE]
 >
->Weitere Dokumentation zur Verwendung von CIF mit AEM Managed Service oder AEM On-Premise finden Sie unter [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>Weitere Informationen zur Verwendung von CIF mit AEM Managed Service oder AEM On-Premise finden Sie unter [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
