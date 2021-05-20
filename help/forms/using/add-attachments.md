@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: d5976ed2-4482-495c-bf77-6d192379cfef
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: 82282e2d-63a1-47e9-b2ec-f50a4bd32bd3
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 70%
 
 ---
 
-
 # Hinzufügen von Anhängen{#adding-attachments}
 
-## Hinzufügen von Anlagen in mit dem AEM Forms Workflow-Server (AEM Forms on JEE) synchronisierten Formularen {#adding-annotations}
+## Hinzufügen von Anlagen in Formularen, die mit dem AEM Forms Workflow-Server (AEM Forms on JEE) synchronisiert werden {#adding-annotations}
 
-Mit der AEM Forms-App können Sie Bilder, Notizen und Kommentare zu Ihrem Formular hinzufügen, das mit dem AEM Forms JEE-Server synchronisiert wird. Wenn das Formular von einem AEM Forms Workflow-Server geladen wird, werden die Anlagen zu dem Formular hinzugefügt. Sie können auf die Schaltfläche für Anlagen ![attachments-app](assets/attachments-app.png) tippen, um alle Anlagen in einem Formular zusammen anzuzeigen. Die rote Benachrichtigung gibt die Anzahl von Anlagen im Formular an. Wenn keine Anlagen im Formular vorhanden sind, wird die rote Benachrichtigungsschaltfläche nicht angezeigt. Wenn keine Anlagen im Formular vorhanden sind und Sie auf die Schaltfläche für Anlagen ![Attch](assets/attch.png) tippen, erhalten Sie Optionen zum Anhängen von Fotos oder Scribbles.
+Mit der AEM Forms-App können Sie Bilder, Notizen und Kommentare zu Ihrem Formular hinzufügen, das mit dem AEM Forms JEE-Server synchronisiert wird. Wenn das Formular von einem AEM Forms Workflow-Server geladen wird, werden die Anlagen zu dem Formular hinzugefügt. Sie können auf die Schaltfläche für Anlagen ![attachments-app](assets/attachments-app.png) tippen, um alle Anlagen in einem Formular zusammen anzuzeigen. Die rote Benachrichtigung gibt die Anzahl von Anlagen im Formular an. Wenn das Formular keine Anlagen enthält, wird die rote Benachrichtigungsschaltfläche nicht angezeigt. Wenn keine Anlagen im Formular vorhanden sind, erhalten Sie beim Tippen auf die Schaltfläche für Anlagen ![Attch](assets/attch.png) Optionen zum Anhängen von Fotos oder Scribbles.
 
 Ihre Optionen sind:
 
@@ -30,11 +29,11 @@ Ihre Optionen sind:
 
 * **Kamera**: Hiermit können Sie ein Foto aufnehmen und es zum Formular hinzufügen. 
 
-* **Hinweise**: Hiermit können Sie eine Notiz oder Textanmerkung hinzufügen. Verwenden Sie ![scribble](assets/scribble.png), um ein Scribble hinzuzufügen, und ![tastatur](assets/keyboard.png), um eine Textanmerkung hinzuzufügen.
+* **Hinweise**: Hiermit können Sie eine Notiz oder Textanmerkung hinzufügen. Verwenden Sie ![Scribble](assets/scribble.png), um ein Scribble hinzuzufügen, und ![Tastatur](assets/keyboard.png), um eine Textanmerkung hinzuzufügen.
 
 >[!NOTE]
 >
->Von einem Benutzer hinzugefügte Anlagen sind für andere AEM Forms-App-Benutzer sichtbar. Andere Benutzer können die Anlagen nicht löschen, die von einem Benutzer hinzugefügt werden.
+>Von einem Benutzer hinzugefügte Anlagen sind für andere Benutzer der AEM Forms-App sichtbar. Andere Benutzer können die Anlagen nicht löschen, die von einem Benutzer hinzugefügt werden.
 
 
 ### Der Bildschirm „Anlagen“{#the-attachments-screen}
@@ -49,15 +48,15 @@ Verwenden Sie die Schaltfläche mit dem **Pluszeichen** (+) im Bildschirm „Anl
 
 Sie können die Kamera Ihres Mobilgeräts oder auf Ihrem Gerät gespeicherte Bilder verwenden, um ein Bild im Formular anzuhängen.
 
-1. Tippen Sie unten im Fenster auf die Schaltfläche für Anlagen ![Attch](assets/attch.png).
+1. Tippen Sie auf die Schaltfläche für Anlagen ![Attch](assets/attch.png) am unteren Rand des Fensters.
 1. Tippen Sie auf **Galerie** oder **Kamera** im Popup-Menü, das angezeigt wird.
 1. Führen Sie je nach ausgewählter Option einen der folgenden Schritte aus:
 
    1. Wenn Sie **Kamera** auswählen:
 
-      Nehmen Sie ein Foto auf. Tippen Sie dann auf die Schaltfläche **Verwenden** ![use-pic](assets/use-pic.png).
+      Nehmen Sie ein Foto auf. Tippen Sie dann auf die Schaltfläche **Verwenden Sie** ![use-pic](assets/use-pic.png).
 
-      Oder tippen Sie auf die Schaltfläche **Wiederholen** ![Wiederholen](assets/retake.png), um das Foto erneut aufzunehmen.
+      Oder tippen Sie auf die Schaltfläche **Retake** ![retake](assets/retake.png) , um das Foto erneut aufzunehmen.
 
    1. Wenn Sie **Galerie** auswählen:
 
@@ -67,7 +66,7 @@ Sie können die Kamera Ihres Mobilgeräts oder auf Ihrem Gerät gespeicherte Bil
 
 Mit der Option **Notizen** können Sie dem Formular Freihand-Scribbles oder Textanlagen hinzufügen.
 
-1. Tippen Sie unten im Fenster auf die Schaltfläche für Anlagen ![Attch](assets/attch.png).
+1. Tippen Sie auf die Schaltfläche für Anlagen ![Attch](assets/attch.png) am unteren Rand des Fensters.
 1. Tippen Sie auf **Notizen** im Popup-Menü, das angezeigt wird.
 1. Dadurch wird die Benutzeroberfläche „Notizen“ gestartet, auf der Sie ein Freihand-Scribble erfassen können.
 
