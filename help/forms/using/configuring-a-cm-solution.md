@@ -7,15 +7,14 @@ topic-tags: correspondence-management
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 186ca75c-638b-4057-826e-cd5d56aa0397
-feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Korrespondenzverwaltung
+exl-id: f7f5eb0d-a283-45ea-84d3-d6375d2bb95b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 78%
 
 ---
-
 
 # Konfigurieren einer Correspondence Management-Lösung {#configuring-a-correspondence-management-solution}
 
@@ -25,7 +24,7 @@ Führen Sie die folgenden Schritte aus, um eine URL der Autorinstanz zur Wiederh
 
 1. Gehen Sie zu *https://:&lt;PublishHost>:&lt;PublishPort>/lc/system/console/configMgr*. Melden Sie sich mit den Anmeldedaten der OSGi Management Console an. Standardmäßig lauten die Anmeldedaten: admin/admin.
 1. Klicken Sie auf **[!UICONTROL Bearbeiten]** neben der Einstellung **[!UICONTROL com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name]**.
-1. Geben Sie im Feld **[!UICONTROL VersionRestoreManager-Autor-URL]** die URL der Autoreninstanz von VersionRestoreManager an.
+1. Geben Sie im Feld **[!UICONTROL VersionRestoreManager Author URL]** die URL der Autoreninstanz von VersionRestoreManager an.
 
    **URL-Zeichenfolge**:
 
@@ -33,7 +32,7 @@ Führen Sie die folgenden Schritte aus, um eine URL der Autorinstanz zur Wiederh
 
    >[!NOTE]
    >
-   >Wenn mehrere Instanzen im Autorenmodus (gruppiert) mit der Frontierung eines Lastenausgleichs vorhanden sind, geben Sie die URL für den Lastenausgleich im Feld **[!UICONTROL VersionRestoreManager-Autor-URL]** an.
+   >Wenn mehrere Autoreninstanzen (geclustert) von einem Lastenausgleich vorgestellt werden, geben Sie die URL zum Lastenausgleich im Feld **[!UICONTROL VersionRestoreManager-Autoren-URL]** an.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
