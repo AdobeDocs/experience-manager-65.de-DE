@@ -8,21 +8,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: dac4539b-804d-4420-9170-68000ebb2638
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Adaptive Formulare
+exl-id: fed67c23-a9b7-403e-9199-dfd527d5f209
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 83%
 
 ---
 
-
 # Synchronisieren von adaptiven Formularen mit XFA-Formularvorlagen{#synchronizing-adaptive-forms-with-xfa-form-templates}
 
 ## Einführung {#introduction}
 
-Sie können ein adaptives Formular basierend auf einer XFA-Formularvorlage ( `*.XDP`-Datei) erstellen. Diese Wiederverwendung ermöglicht es Ihnen, Ihre Investition in vorhandene XFA-Formulare beizubehalten. Informationen zum Verwenden einer XFA-Formularvorlage zum Erstellen eines adaptiven Formulars finden Sie unter [Erstellen eines adaptiven Formulars basierend auf einer Vorlage](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
+Sie können ein adaptives Formular basierend auf einer XFA-Formularvorlage ( `*.XDP`-Datei) erstellen. Diese Wiederverwendung ermöglicht es Ihnen, Ihre Investition in vorhandene XFA-Formulare beizubehalten. Informationen zur Verwendung einer XFA-Formularvorlage zum Erstellen eines adaptiven Formulars finden Sie unter [Erstellen eines adaptiven Formulars basierend auf einer Vorlage](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
 
 Sie können Felder aus der XDP-Datei in Ihrem adaptiven Formular wiederverwenden. Diese Felder werden auch als gebundene Felder bezeichnet. Die Eigenschaften der gebundenen Felder (wie Skripte, Beschriftungen und Anzeigeformat) werden aus der XDP-Datei kopiert. Sie können auch die Werte einiger dieser Eigenschaften überschreiben.
 
@@ -48,7 +47,7 @@ Der Artikel verwendet ein Beispiel, um zu veranschaulichen, wie Sie das adaptive
 
 Nachdem Sie das Paket hochgeladen haben, können Sie diese Assets in der AEM Forms-UI anzeigen.
 
-Installieren Sie das Paket mit dem Package Manager: `https://<server>:<port>/crx/packmgr/index.jsp`
+Installieren Sie das Paket mithilfe des Package Manager: `https://<server>:<port>/crx/packmgr/index.jsp`
 
 Das Paket enthält die folgenden Assets:
 
@@ -58,7 +57,7 @@ Das Paket enthält die folgenden Assets:
 
 ### Hinzufügen von Inhalt zu einem adaptiven Formular {#add-content-to-adaptive-form-br}
 
-1. Navigieren Sie zu https://&lt;server>:&lt;port>/aem/forms.html. Geben Sie Ihre Anmeldeinformationen ein, wenn Sie danach gefragt werden.
+1. Navigieren Sie zu https://&lt;Server>:&lt;Port>/aem/forms.html. Geben Sie Ihre Anmeldeinformationen ein, wenn Sie danach gefragt werden.
 1. Öffnen Sie sample-af-xfa zur Bearbeitung im Authoring-Modus.
 1. Wählen Sie im Inhalt-Browser in der Seitenleiste die Registerkarte „Datenmodellobjekte“. Ziehen Sie NumericField1 und TextField1 auf das adaptive Formular.
 1. Ändern Sie den Titel von NumericField1 von **Numeric Field** in **AF Numeric Field.**
@@ -75,7 +74,7 @@ Nachdem Sie eine XDP-Datei aktualisiert haben, müssen Sie sie erneut in die AEM
 
 Als Beispiel aktualisieren wir die Datei `sample-form.xdp` anhand der folgenden Schritte:
 
-1. Navigieren Sie zu `https://<server>:<port>/projects.html.` Geben Sie bei Aufforderung Ihre Anmeldedaten ein.
+1. Navigieren Sie zu `https://<server>:<port>/projects.html.` Geben Sie Ihre Anmeldedaten ein, wenn Sie dazu aufgefordert werden.
 1. Klicken Sie links auf die Registerkarte „Formulare“.
 1. Laden Sie die Datei `sample-form.xdp` auf Ihren lokalen Computer herunter. Die XDP-Datei wird als `.zip`-Datei heruntergeladen, die mit einem beliebigen Dienstprogramm zur Dateidekomprimierung extrahiert werden kann.
 
@@ -101,13 +100,13 @@ Durch Klicken auf die Meldung werden die Felder im adaptiven Formular mit den en
 
 Alle Eigenschaften, die aus der XDP-Datei in das adaptive Formular kopiert wurden, werden aktualisiert, mit Ausnahme der Eigenschaften, die explizit im adaptiven Formular (aus dem Komponentendialogfeld) vom Autor überschrieben wurden. Die Liste der Eigenschaften, die aktualisiert wurden, ist in den Serverprotokollen verfügbar.
 
-Um die Eigenschaften im adaptiven Beispielformular zu aktualisieren, klicken Sie in der Meldung auf den Link (mit der Bezeichnung `"Click Here"`). Der Titel von TextField1 ändert sich von **Textfeld** in **Mein Textfeld**.
+Um die Eigenschaften im adaptiven Beispielformular zu aktualisieren, klicken Sie auf den Link (mit der Bezeichnung `"Click Here"`) in der Nachricht. Der Titel von TextField1 ändert sich von **Textfeld** in **Mein Textfeld**.
 
 ![update-property](assets/update-property.png)
 
 >[!NOTE]
 >
->Die Beschriftung AF Numeric Field wurde nicht geändert, da Sie diese Eigenschaft im Dialogfeld Komponenteneigenschaften überschrieben haben, wie unter [Hinzufügen Inhalt in adaptive Formulare](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-add-content-to-adaptive-form-br-p) beschrieben.
+>Die Beschriftung &quot;AF Numeric Field&quot;wurde nicht geändert, da Sie diese Eigenschaft im Dialogfeld &quot;Komponenteneigenschaften&quot;überschrieben haben, wie unter [Hinzufügen von Inhalt zu adaptiven Formularen](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-add-content-to-adaptive-form-br-p) beschrieben.
 
 ### Hinzufügen neuer Felder aus einer XDP-Datei in ein adaptives Formular   {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
 
@@ -123,9 +122,9 @@ Die folgenden Schritte veranschaulichen diesen Gebrauchsfluss für die Assets in
 
 1. Aktualisieren Sie die Datei `sample-form.xdp` und löschen Sie NumericField1.
 1. Laden Sie die Datei `sample-form.xdp` in die AEM Forms-Benutzeroberfläche hoch.
-1. Öffnen Sie das adaptive Formular `sample-xfa-af` zum Authoring. Die folgende Fehlermeldung wird angezeigt: Schema-/Formularvorlage für das adaptive Formular wurde aktualisiert. `Click Here` , um es mit der neuen Version neu zu erstellen.
+1. Öffnen Sie das adaptive Formular `sample-xfa-af` zum Authoring. Die folgende Fehlermeldung wird angezeigt: Die Schema-/Formularvorlage für das adaptive Formular wurde aktualisiert. `Click Here` , um es mit der neuen Version neu zu erstellen.
 
-1. Klicken Sie in der Nachricht auf den Link (mit der Bezeichnung &quot; `Click Here`&quot;). Eine Fehlermeldung wird angezeigt, dass das Feld nicht mehr in der XDP-Datei vorhanden ist.
+1. Klicken Sie auf den Link (mit der Bezeichnung &quot; `Click Here`&quot;) in der Nachricht. Eine Fehlermeldung wird angezeigt, dass das Feld nicht mehr in der XDP-Datei vorhanden ist.
 
 ![Fehler, der angezeigt wird, wenn Sie ein Element in der XDP-Datei löschen](assets/no-element-xdp.png)
 
