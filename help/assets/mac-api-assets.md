@@ -3,12 +3,11 @@ title: '[!DNL Assets] HTTP-API.'
 description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in  [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Developer
-feature: APIs,Assets HTTP API,Developer Tools
+feature: APIs,Assets-HTTP-API,Entwicklertools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
-translation-type: tm+mt
 source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
 workflow-type: tm+mt
-source-wordcount: '1730'
+source-wordcount: '1729'
 ht-degree: 79%
 
 ---
@@ -17,7 +16,7 @@ ht-degree: 79%
 
 ## Überblick {#overview}
 
-Die [!DNL Assets] HTTP-API ermöglicht die Erstellung-Lesen-Update-Löschvorgänge (CRUD) für digitale Assets, einschließlich Metadaten, Darstellungen und Kommentare, zusammen mit strukturierten Inhalten mit Inhaltsfragmenten [!DNL Experience Manager]. Sie wird unter `/api/assets` bereitgestellt und als REST-API implementiert. Dazu gehört die [Unterstützung von Inhaltsfragmenten](/help/assets/assets-api-content-fragments.md).
+Die HTTP-API [!DNL Assets] ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen/Lesen/Aktualisieren/Löschen) für digitale Assets, einschließlich Metadaten, Ausgabedarstellungen und Kommentaren sowie strukturierten Inhalten mit [!DNL Experience Manager] Inhaltsfragmenten. Sie wird unter `/api/assets` bereitgestellt und als REST-API implementiert. Dazu gehört die [Unterstützung von Inhaltsfragmenten](/help/assets/assets-api-content-fragments.md).
 
 So greifen Sie auf die API zu:
 
@@ -30,7 +29,7 @@ Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabedarstellunge
 
 >[!CAUTION]
 >
->[Die HTTP-API aktualisiert die Metadateneigenschaften ](#update-asset-metadata) im  `jcr` Namensraum. Die Benutzeroberfläche des Experience Managers aktualisiert jedoch die Metadateneigenschaften im Namensraum `dc`.
+>[Die HTTP-API aktualisiert die Metadateneigenschaften ](#update-asset-metadata) im  `jcr` Namespace. Die Experience Manager-Benutzeroberfläche aktualisiert jedoch die Metadateneigenschaften im Namespace `dc` .
 
 ## Inhaltsfragmente {#content-fragments}
 
@@ -40,7 +39,7 @@ Weitere Informationen finden Sie unter [Unterstützung von Inhaltsfragmenten in 
 
 ## Datenmodell {#data-model}
 
-Die HTTP-API [!DNL Assets] stellt zwei Hauptelemente, Ordner und Assets (für Standard-Assets) zur Verfügung.
+Die HTTP-API [!DNL Assets] stellt zwei wichtige Elemente, Ordner und Assets bereit (für Standard-Assets).
 
 Außerdem stellt sie ausführlichere Elemente für die benutzerdefinierten Datenmodelle bereit, die strukturierte Inhalte in Inhaltsfragmenten beschreiben. Weitere Informationen finden Sie im Abschnitt [Datenmodelle für Inhaltsfragmente](/help/assets/assets-api-content-fragments.md#content-fragments).
 
@@ -70,7 +69,7 @@ Ordner verhalten sich wie Verzeichnisse in traditionellen Dateisystemen. Sie ste
 Experience Managers ein Asset die folgenden Elemente enthält:
 
 * Die Eigenschaften und Metadaten des Assets.
-* Mehrere Ausgabedarstellungen, z. B. die ursprüngliche Ausgabedarstellung (das ursprünglich hochgeladene Asset), eine Miniaturansicht und viele andere Ausgabedarstellungen. Weitere Darstellungen können Bilder unterschiedlicher Größe, verschiedene Videokodierungen oder extrahierte Seiten aus PDF- oder [!DNL Adobe InDesign]-Dateien sein.
+* Mehrere Ausgabedarstellungen, z. B. die ursprüngliche Ausgabedarstellung (das ursprünglich hochgeladene Asset), eine Miniaturansicht und viele andere Ausgabedarstellungen. Zusätzliche Ausgabedarstellungen können Bilder unterschiedlicher Größe, unterschiedliche Videokodierungen oder extrahierte Seiten aus PDF- oder [!DNL Adobe InDesign]-Dateien sein.
 * Optionale Kommentare.
 
 Weitere Informationen über Elemente in Inhaltsfragmenten finden Sie unter [Unterstützung von Inhaltsfragmenten in der Experience Manager Assets-HTTP-API](/help/assets/assets-api-content-fragments.md#content-fragments).
@@ -141,9 +140,9 @@ Wenn der übergeordnete Knoten des angegebenen Pfades nicht vorhanden ist, schl�
 
 ## Erstellen von Assets {#create-an-asset}
 
-Platzieren Sie die bereitgestellte Datei am angegebenen Pfad, um ein Asset im DAM-Repository zu erstellen. Wenn anstelle eines Knotennamens ein `*` angegeben wird, verwendet das Servlet den Parameternamen oder den Dateinamen als Knotennamen.
+Platzieren Sie die bereitgestellte Datei im angegebenen Pfad, um ein Asset im DAM-Repository zu erstellen. Wenn anstelle eines Knotennamens `*` ein  angegeben wird, verwendet das Servlet den Parameternamen oder den Dateinamen als Knotennamen.
 
-**Parameter**: Die Parameter beziehen sich  `name` auf den Asset-Namen und  `file` auf die Dateireferenz.
+**Parameter**: Die Parameter sind  `name` für den Asset-Namen und  `file` für die Dateireferenz.
 
 **Anfrage**
 
@@ -152,14 +151,14 @@ Platzieren Sie die bereitgestellte Datei am angegebenen Pfad, um ein Asset im DA
 
 **Antwort-Codes**: Die Antwort-Codes sind:
 
-* 201 - ERSTELLT - wenn Asset erfolgreich erstellt wurde.
-* 409 - KONFLIKT - wenn Asset bereits vorhanden.
+* 201 - ERSTELLT - wenn das Asset erfolgreich erstellt wurde.
+* 409 - KONFLIKT - wenn Asset bereits vorhanden ist.
 * 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
 ## Aktualisieren von Asset-Binärdateien {#update-asset-binary}
 
-Aktualisiert die Binärdatei eines Assets (Darstellung mit dem Namen Original). Bei einer Aktualisierung wird der standardmäßige Arbeitsablauf für die Verarbeitung von Assets ausgeführt, sofern er konfiguriert ist.
+Aktualisiert die Binärdatei eines Assets (Ausgabedarstellung mit dem ursprünglichen Namen). Bei einer Aktualisierung wird der standardmäßige Asset-Verarbeitungs-Workflow ausgeführt, sofern er konfiguriert ist.
 
 **Anfrage**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png`
 
@@ -183,9 +182,9 @@ Aktualisiert die Asset-Metadateneigenschaften. Wenn Sie eine Eigenschaft im `dc:
 * 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
-### Synchronisieren Sie Metadaten-Update zwischen `dc` und `jcr` Namensraum {#sync-metadata-between-namespaces}
+### Synchronisieren von Metadaten-Updates zwischen `dc` und `jcr` Namespace {#sync-metadata-between-namespaces}
 
-Die API-Methode aktualisiert die Metadateneigenschaften im Namensraum `jcr`. Die mithilfe der Benutzeroberfläche vorgenommenen Aktualisierungen ändern die Metadateneigenschaften im Namensraum `dc`. Um die Metadatenwerte zwischen dem Namensraum `dc` und dem `jcr` zu synchronisieren, können Sie einen Workflow erstellen und Experience Manager konfigurieren, der den Workflow beim Bearbeiten von Assets ausführt. Verwenden Sie ein ECMA-Skript, um die erforderlichen Metadateneigenschaften zu synchronisieren. Das folgende Beispielskript synchronisiert die Titelzeichenfolge zwischen `dc:title` und `jcr:title`.
+Die API-Methode aktualisiert die Metadateneigenschaften im Namespace `jcr` . Die mithilfe der Benutzeroberfläche vorgenommenen Aktualisierungen ändern die Metadateneigenschaften im Namespace `dc` . Um die Metadatenwerte zwischen `dc` und dem `jcr`-Namespace zu synchronisieren, können Sie einen Workflow erstellen und Experience Manager konfigurieren, um den Workflow bei der Asset-Bearbeitung auszuführen. Verwenden Sie ein ECMA-Skript zum Synchronisieren der erforderlichen Metadateneigenschaften. Das folgende Beispielskript synchronisiert die Titelzeichenfolge zwischen `dc:title` und `jcr:title`.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();
@@ -281,7 +280,7 @@ Verschiebt einen Ordner oder ein Asset in dem angegebenen Pfad in ein neues Ziel
 
 **Anfrage**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
-Verwenden Sie nicht `/content/dam` in der URL. Ein Beispielbefehl zum Verschieben von Assets und Überschreiben vorhandener Assets:
+Verwenden Sie nicht `/content/dam` in der URL. Ein Beispielbefehl zum Verschieben von Assets und zum Überschreiben vorhandener Assets:
 
 ```shell
 curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.png -H "X-Destination: http://[aem_server]:[port]/api/assets/destination/file.png" -H "X-Overwrite: T"
@@ -312,6 +311,6 @@ Löscht eine Ressource(nstruktur) im angegebenen Pfad.
 
 ## Tipps und Einschränkungen {#tips-best-practices-limitations}
 
-* [Die HTTP-API aktualisiert die Metadateneigenschaften ](#update-asset-metadata) im  `jcr` Namensraum. Die Benutzeroberfläche des Experience Managers aktualisiert jedoch die Metadateneigenschaften im Namensraum `dc`.
+* [Die HTTP-API aktualisiert die Metadateneigenschaften ](#update-asset-metadata) im  `jcr` Namespace. Die Experience Manager-Benutzeroberfläche aktualisiert jedoch die Metadateneigenschaften im Namespace `dc` .
 
-* Assets HTTP API gibt nicht die vollständigen Metadaten zurück. Die Namensraum sind hartcodiert und nur diese Namensraum werden zurückgegeben. Vollständige Metadaten finden Sie im Asset-Pfad `/jcr_content/metadata.json`.
+* Die Assets-HTTP-API gibt die vollständigen Metadaten nicht zurück. Die Namespaces sind fest codiert und nur diese Namespaces werden zurückgegeben. Vollständige Metadaten finden Sie im Asset-Pfad `/jcr_content/metadata.json`.
