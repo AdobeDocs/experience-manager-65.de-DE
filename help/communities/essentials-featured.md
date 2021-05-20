@@ -1,6 +1,6 @@
 ---
-title: Essentials zu speziellen Inhalten
-seo-title: Essentials zu speziellen Inhalten
+title: Grundlegende Inhalte
+seo-title: Grundlegende Inhalte
 description: Arbeiten mit Funktionsinhalten
 seo-description: Arbeiten mit Funktionsinhalten
 uuid: b376828a-1431-4d16-ad6b-b23a3ea62a75
@@ -9,23 +9,22 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 781625f1-39a0-4e34-948c-d4eab35dd5c1
-translation-type: tm+mt
-source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+exl-id: 70b0ad6a-c891-4588-8515-449aed206805
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 7%
 
 ---
 
+# Grundlagen zu speziellen Inhalten {#featured-content-essentials}
 
-# Essentials für spezielle Inhalte {#featured-content-essentials}
+Diese Seite enthält die wichtigsten Informationen für die Arbeit mit speziellen Inhalten.
 
-Auf dieser Seite finden Sie die wichtigsten Informationen zum Arbeiten mit speziellen Inhalten.
-
-Im Gegensatz zum Veröffentlichen eines Beitrags am Anfang eines Forums ermöglicht diese Funktion, dass Inhalte überall auf der Community-Site hervorgehoben werden.
+Im Gegensatz dazu, einen Beitrag an den Anfang eines Forums zu knüpfen, ermöglicht diese Funktion, dass Inhalte überall auf der Community-Site hervorgehoben werden.
 
 
-## Grundlagen für clientseitige {#essentials-for-client-side}
+## Grundlagen für Client-seitige {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -34,7 +33,7 @@ Im Gegensatz zum Veröffentlichen eines Beitrags am Anfang eines Forums ermögli
    <td>social/commons/components/hbs/featuredcontent</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließbar</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließen</strong></a></td>
    <td>Nein</td>
   </tr>
   <tr>
@@ -60,4 +59,4 @@ Im Gegensatz zum Veröffentlichen eines Beitrags am Anfang eines Forums ermögli
 
 ### Dateibibliotheksfunktion {#file-library-function}
 
-Eine Community-Site-Struktur, die die Funktion [Vorgestellter Inhalt](functions.md#featured-content-function) enthält, enthält eine konfigurierte Komponente `featured content`.
+Eine Community-Site-Struktur, die die Funktion [Spezifischer Inhalt](functions.md#featured-content-function) enthält, enthält eine konfigurierte Komponente `featured content`.
