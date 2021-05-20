@@ -7,18 +7,17 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: a0c6a02c-47a3-4e70-a14c-953ee016b8e4
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '545'
 ht-degree: 89%
 
 ---
 
-
 # Correspondence Management | Umgang mit Benutzerdaten {#correspondence-management-handling-user-data}
 
-Mit Correspondence Management von AEM Forms können Sie sichere und personalisierte Kundenkorrespondenzen erstellen, verwalten und optimieren. Es bietet eine intuitive Benutzerschnittstelle für Geschäftsbenutzer, um Mitteilungen unter Verwendung vorab genehmigter Inhaltsblöcke und Medienelemente zu erstellen. Weitere Informationen zum Erstellen von Korrespondenzen finden Sie unter [Korrespondenz erstellen](/help/forms/using/create-correspondence.md).
+Mit Correspondence Management von AEM Forms können Sie sichere und personalisierte Kundenkorrespondenzen erstellen, verwalten und optimieren. Es bietet eine intuitive Benutzerschnittstelle für Geschäftsbenutzer, um Mitteilungen unter Verwendung vorab genehmigter Inhaltsblöcke und Medienelemente zu erstellen. Weitere Informationen zum Erstellen von Schriftstücken finden Sie unter [Korrespondenz erstellen](/help/forms/using/create-correspondence.md).
 
 Wenn ein Geschäftsbenutzer oder ein Agent eine Korrespondenz als Entwurf speichert oder übermittelt, wird eine Briefinstanz im AEM-Repository gespeichert. Die Briefinstanz enthält Korrespondenzdaten und Metadaten.
 
@@ -54,7 +53,7 @@ Abhängig von der für Ihre AEM-Bereitstellung konfigurierten Datenspeicherpersi
 
 Im oben angegebenen AEM-Repository-Speicherort:
 
-* `[yyyy]/[mm]/[dd]` ist die Knotenstruktur, die auf dem Datum basiert, an dem die Briefinstanz erstellt wurde
+* `[yyyy]/[mm]/[dd]` ist die Knotenstruktur basierend auf dem Datum, an dem die Briefinstanz erstellt wurde
 * `[node-id]` ist die ID, die dem Ordner mit dem Brief zugewiesen wurde
 * `[letter-instance-name]` ist der Name, der beim Speichern oder Senden eines Briefes angegeben wurde
 
@@ -71,7 +70,7 @@ Unter dem Knoten [letter-instance-name] wird die folgende Knotenstruktur erstell
 
 Sie können in den konfigurierten Datenspeichern auf Entwürfe und übermittelte Korrespondenzdaten zugreifen und diese ggf. löschen.
 
-### Zugreifen auf Benutzerdaten  {#access-user-data}
+### Zugreifen auf Benutzerdaten {#access-user-data}
 
 Die Korrespondenzverwaltung stellt APIs bereit, mit denen Sie Entwürfe und übermittelte Briefinstanzen finden und darauf zugreifen können. Mit den APIs können Sie Briefinstanzen mit der Briefinstanz-ID oder dem Benutzer, der die Korrespondenz gespeichert oder übermittelt hat, finden und öffnen. Weitere Informationen finden Sie unter [APIs für den Zugriff auf Briefinstanzen](/help/forms/using/cm-apis-to-access-letter-instances.md).
 
