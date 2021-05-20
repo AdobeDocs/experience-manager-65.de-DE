@@ -9,24 +9,23 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: a9879445-d626-4279-8a95-a9009294b483
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 66%
 
 ---
 
-
 # Speichern eines HTML5-Formulars als Entwurf {#saving-an-html-form-as-a-draft}
 
-Sie können ein HTML5-Formular als Entwurf speichern, und das Formular zu einem späteren Zeitpunkt ausfüllen. Im Forms Portal können Benutzer HTML5-Formulare speichern und wiederherstellen. Um die Funktion &quot;Als Entwurf speichern&quot;zu aktivieren, fügen Sie dem Profil-Knoten die folgenden Konfigurationen hinzu:
+Sie können ein HTML5-Formular als Entwurf speichern, und das Formular zu einem späteren Zeitpunkt ausfüllen. Im Forms Portal können Benutzer HTML5-Formulare speichern und wiederherstellen. Um die Funktion &quot;Als Entwurf speichern&quot;zu aktivieren, fügen Sie die folgenden Konfigurationen zum Profilknoten hinzu:
 
 ## benutzerdefiniertes Profil zum Aktivieren der Funktion „Als Entwurf speichern“{#custom-profile-to-allow-save-as-draft-feature}
 
 Standardmäßig stellt AEM Forms das Profil **Als Entwurf speichern** bereit. Sie können ein Formular mit dem Profil „Als Entwurf speichern“ wiedergeben, um für ein HTML5-Formular die Entwurffunktion zu aktivieren. Sie können HTML-Renderprofile für ein Formular in [Forms Manager](/help/forms/using/introduction-managing-forms.md) angeben.
 
-Um die Funktion &quot;Als Entwurf speichern&quot;für Ihr vorhandenes [benutzerdefiniertes Profil](/help/forms/using/custom-profile.md) zu aktivieren, fügen Sie Ihrem benutzerdefinierten Profil-Knoten die folgenden Eigenschaften hinzu:
+Um die Funktion &quot;Als Entwurf speichern&quot;für Ihr vorhandenes [benutzerdefiniertes Profil](/help/forms/using/custom-profile.md) zu aktivieren, fügen Sie Ihrem benutzerdefinierten Profilknoten die folgenden Eigenschaften hinzu:
 
 <table>
  <tbody>
@@ -55,7 +54,7 @@ Um die Funktion &quot;Als Entwurf speichern&quot;für Ihr vorhandenes [benutzerd
 
 Nach der Aktivierung der Funktion „Als Entwurf speichern“ wird das Formular, wenn es gespeichert wurde, in der Komponente [Drafts and Submission (Entwurf und Übermittlung)](/help/forms/using/draft-submission-component.md) aufgelistet. Sie können das gespeicherte Formular aus der Komponente „Drafts and Submissions“ abrufen und mit dem Ausfüllen beginnen.
 
-Um die Formularauflistung für die Komponente &quot;Drafts and Submission&quot;zu aktivieren, fügen Sie die folgende Eigenschaft zum Profil-Knoten hinzu:
+Um die Formularauflistung für die Komponente &quot;Drafts and Submissions&quot;zu aktivieren, fügen Sie dem Profilknoten die folgende Eigenschaft hinzu:
 
 <table>
  <tbody>
@@ -69,9 +68,9 @@ Um die Formularauflistung für die Komponente &quot;Drafts and Submission&quot;z
    <td>fp.enablePortalSubmit</td>
    <td>Zeichenfolge</td>
    <td>true</td>
-   <td>So aktivieren Sie, dass Entwürfe und Formulare nach dem Senden in der Komponente "Forms Portal-Entwürfe und -Übermittlungen"aufgelistet werden<br /></td>
+   <td>So aktivieren Sie die Auflistung von Entwürfen und Formularen in der Komponente <br /> Forms Portal Drafts &amp; Submissions nach der Übermittlung</td>
   </tr>
  </tbody>
 </table>
 
-Standardmäßig speichert AEM Forms die mit dem Entwurf und der Übermittlung eines Formulars verknüpften Benutzerdaten im Knoten /content/forms/fp in der Veröffentlichungsinstanz. Sie können einen benutzerdefinierten Speicheranbieter hinzufügen. Weitere Informationen finden Sie unter [Benutzerdefinierter Speicher für Komponenten „Drafts and Submissions (Entwurf und Übermittlung)“](/help/forms/using/adding-custom-storage-provider-forms.md).
+Standardmäßig speichert AEM Forms die Benutzerdaten, die mit dem Entwurf und der Übermittlung eines Formulars im Knoten /content/forms/fp in der Veröffentlichungsinstanz verknüpft sind. Sie können einen benutzerdefinierten Speicheranbieter hinzufügen. Weitere Informationen finden Sie unter [Benutzerdefinierter Speicher für Komponenten „Drafts and Submissions (Entwurf und Übermittlung)“](/help/forms/using/adding-custom-storage-provider-forms.md).
