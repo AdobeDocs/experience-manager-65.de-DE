@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 598a9a03-3773-4620-8867-1f754d8ca031
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: c5905272-7d09-47e4-8b35-4cc25a148477
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 98%
 
 ---
-
 
 # Lokale Berechtigungen verwalten {#managing-local-credentials}
 
@@ -72,4 +71,3 @@ Nachdem eine Berechtigung importiert wurde, können der Aliasname und der Trust 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
 1. Aktivieren Sie die Kontrollkästchen der Berechtigungen, die gelöscht werden sollen.
 1. Klicken Sie auf „Löschen“ und dann auf „OK“.
-
