@@ -1,14 +1,13 @@
 ---
 title: Allgemeine Versionshinweise für  [!DNL Adobe Experience Manager] 6.5
 description: '[!DNL Adobe Experience Manager]Informationen zu  6.5 mit Versionshinweisen, Angaben zu neuen Funktionen und zur Installation sowie ausführlichen Änderungslisten.'
-translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2150'
 ht-degree: 66%
 
 ---
-
 
 # Allgemeine Versionshinweise für [!DNL Adobe Experience Manager] 6.5{#general-release-notes-for-adobe-experience-manager}
 
@@ -18,12 +17,12 @@ ht-degree: 66%
 |---|---|
 | Version | 6.5 |
 | Typ | Hauptversion |
-| Datum der allgemeinen Verfügbarkeit | Montag, 8. April 2019 |
-| Empfohlene Updates | Siehe [AEM letzten Updates](https://helpx.adobe.com/experience-manager/aem-releases-updates.html). |
+| Datum der allgemeinen Verfügbarkeit | 8. April 2019 |
+| Empfohlene Updates | Siehe [AEM aktuelle Updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de). |
 
 ### Wissenswertes {#trivia}
 
-Der Versionszyklus für diese Version von [!DNL Adobe Experience Manager] begann am 4. April 2018, durchlief 23 Qualitätssicherungs- und Fehlerbeseitigungsdurchläufen und endete am 28. März 2019. Insgesamt wurden in dieser Version 1345 kundenbezogene Probleme behandelt, einschließlich Verbesserungen und neuer Funktionen.
+Der Veröffentlichungszyklus für diese Version von [!DNL Adobe Experience Manager] begann am 4. April 2018, durchlief 23 Iterationen zur Qualitätssicherung und Fehlerbehebung und endete am 28. März 2019. Insgesamt wurden in dieser Version 1345 kundenbezogene Probleme behandelt, einschließlich Verbesserungen und neuer Funktionen.
 
 [!DNL Adobe Experience Manager] 6.5 ist seit dem 8. April 2019 allgemein verfügbar.
 
@@ -31,37 +30,37 @@ Der Versionszyklus für diese Version von [!DNL Adobe Experience Manager] begann
 
 ## Neue Funktionen {#what-s-new}
 
-[!DNL Adobe Experience Manager] 6.5 ist eine Upgrade-Version auf die  [!DNL Adobe Experience Manager] 6.4-Codebasis. Die Software bietet neue und erweiterte Funktionen, wichtige Kundenkorrekturen, Erweiterungen für Kunden mit hoher Priorität und allgemeine Fehlerbehebungen, die auf die Produktstabilisierung ausgerichtet sind. Es enthält auch die Versionen von [!DNL Adobe Experience Manager] 6.4 Service Pack bis zu SP4.
+[!DNL Adobe Experience Manager] 6.5 ist eine Upgrade-Version für die Codebasis von  [!DNL Adobe Experience Manager] 6.4. Die Software bietet neue und erweiterte Funktionen, wichtige Kundenkorrekturen, Erweiterungen für Kunden mit hoher Priorität und allgemeine Fehlerbehebungen, die auf die Produktstabilisierung ausgerichtet sind. Es enthält auch [!DNL Adobe Experience Manager] 6.4 Service Pack-Versionen bis SP4.
 
-Die nachstehende Liste gibt einen Überblick - während die nachfolgenden Seiten die vollständigen Details Liste.
+Die nachstehende Liste bietet eine Übersicht, während die nachfolgenden Seiten die vollständigen Details auflisten.
 
 ### [!DNL Experience Manager Foundation] {#experience-manager-foundation}
 
 Vollständige Liste der Änderungen in [AEM Foundation](/help/release-notes/wcm-platform.md).
 
-Die Plattform von [!DNL Adobe Experience Manager] 6.5 basiert auf aktualisierten Versionen des OSGi-basierten Frameworks (Apache Sling und Apache Felix) und des Java Content Repository: Apache Jackrabbit Oak 1.10.2.
+Die Plattform von [!DNL Adobe Experience Manager] 6.5 basiert auf aktualisierten Versionen des OSGi-basierten Frameworks (Apache Sling und Apache Felix) und dem Java Content Repository: Apache Jackrabbit Oak 1.10.2.
 
 Quickstart verwendet Eclipse Jetty 9.4.15 als Servlet-Engine.
 
 #### Java-Unterstützung  {#java-support}
 
-* Neue Unterstützung für Java 11 sowie das bereits unterstützte Java 8.
-* Um eine optimale Leistung zu erzielen, überschreiben Sie die GC-Standardwerte mit anderen Werten. Weitere Informationen finden Sie im Abschnitt [install and update](/help/sites-deploying/custom-standalone-install.md).
-* Wartungs-Updates für Java 11 und Java 8 werden von der Adobe für die Kundennutzung in AEM-bezogenen Projekten bereitgestellt, wenn sie nicht von Oracle öffentlich verfügbar sind.
+* Neue Unterstützung für Java 11 sowie für bereits unterstützte Java 8.
+* Um eine optimale Leistung zu erzielen, überschreiben Sie die GC-Standardwerte mit anderen Werten. Weitere Informationen finden Sie im Abschnitt [Installieren und Aktualisieren](/help/sites-deploying/custom-standalone-install.md) .
+* Java 11- und Java 8-Wartungsupdates werden von Adobe für die Kundennutzung in AEM-bezogenen Projekten verteilt, wenn sie nicht über Oracle öffentlich verfügbar sind.
 
 #### Java-Entwicklung {#java-development}
 
-* Es gibt jetzt [zwei Versionen von Uberjar](/help/sites-developing/ht-projects-maven.md#experience-manager-api-dependencies), eine empfohlene Version mit öffentlichen Benutzeroberflächen, die nicht als veraltet markiert sind, sowie eine Version, die Schnittstellen enthält, die für veraltet markiert sind.
+* Es gibt jetzt [zwei Versionen von Uberjar](/help/sites-developing/ht-projects-maven.md#experience-manager-api-dependencies), eine empfohlene Version mit öffentlichen Schnittstellen, die nicht für die Einstellung markiert sind, sowie eine Version, die Schnittstellen enthält, die für die Einstellung markiert sind.
 
 #### Benutzeroberfläche {#user-interface}
 
 Die Benutzeroberfläche wurde verbessert, um sie effizienter und anwenderfreundlicher zu gestalten.
 
-* Neue Benutzeroberfläche zur Verwaltung von Berechtigungen für Benutzer und Gruppen.
+* Neue Benutzeroberfläche für die Berechtigungsverwaltung für Benutzer und Gruppen.
 * In Spaltenansichten werden nun auch nur noch die Einträge geladen, die auf dem Bildschirm sichtbar sind. Weitere Einträge werden lediglich geladen, wenn der Anwender einen Bildlauf durchführt. In der Listen- und Kartenansicht wurde so bereits seit Version 6.0 verfahren (verbessert in Version 6.4)..
-* Spalten-Ansichten enthalten jetzt den Workflow-Status für Seiten/Assets, sofern zutreffend.
+* Spaltenansichten enthalten jetzt ggf. den Workflow-Status für Seiten/Assets.
 * Die Aktion [Alle auswählen](/help/sites-authoring/basic-handling.md#select-all) ist eine schnelle Möglichkeit, eine Aktion mit allen Seiten/Assets im selben Ordner auszuführen.
-* Mit der Aktion [Alle auswählen](/help/sites-authoring/basic-handling.md#select-all) wird versucht, die Aktion für alle Seiten/Assets durchzuführen, nicht nur für die geladenen Elemente. Ein Warndialogfeld wird angezeigt, wenn die Aktion nicht aktualisiert wurde, um Massenaktionen zu verarbeiten.
+* Mit der Aktion [Alle auswählen](/help/sites-authoring/basic-handling.md#select-all) wird versucht, die Aktion für alle Seiten/Assets durchzuführen, nicht nur für die geladenen Elemente. Ein Warndialogfeld wird angezeigt, wenn die Aktion nicht für die Verarbeitung von Massenaktionen aktualisiert wurde.
 
 >[!CAUTION]
 >
@@ -69,7 +68,7 @@ Die Benutzeroberfläche wurde verbessert, um sie effizienter und anwenderfreundl
 
 #### Suche und Indizierung {#indexing-and-search}
 
-* Die Suche in Oak unterstützt jetzt dynamische Facetten. Beispielsweise zeigt die Filterleiste in der Asset-Suche die geschätzte Ergebnismenge an.
+* Die Suche in Oak unterstützt jetzt dynamische Facetten. Beispielsweise zeigt die Filterleiste bei der Asset-Suche die geschätzte Ergebnismenge an.
 * QueryBuilder wurde erweitert, um Ergebnisse mit dynamischen Facetten bereitzustellen.
 
 #### Aktualisierung {#upgrade}
@@ -91,13 +90,13 @@ Der Seiten-Editor ermöglicht nun kontextbezogene Inhaltsbearbeitungen und Erste
 Die zunächst als Teil von AEM 6.4 SP2 bereitgestellte SPA-Unterstützung bietet in AEM 6.5 folgende Funktionen:
 
 * Bearbeiten und Konfigurieren der bearbeitbaren AEM-Teile der SPA mit dem Vorlagen-Editor
-* Verwenden Sie Multi-Site-Management, um ein Land-, Franchise- oder White-Label-SPA zu erstellen.
+* Verwenden Sie Multi-Site-Management, um länderspezifische, Franchise- oder White-Label-SPA zu erstellen.
 
 #### Headless-Content-Management {#headless-content-management}
 
 Mit AEM können Inhalte in verschiedenen Formaten und aus verschiedenen Ebenen des Stapels bereitgestellt werden. Einige von ihnen sind durch das [Sling GET-](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) und [POST-Servlet](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) bereits seit 2008 verfügbar. Content Services ([Sling Model Exporter](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/foundation/development/develop-sling-model-exporter.html)) wurden in AEM 6.3 eingeführt und sind die von AEM SJ SDK eingesetzte Hydrationsmethode für Single-Page-Apps. Die [HTTP-API für Assets](/help/assets/mac-api-assets.md) ist eine für AEM 6.5 erweiterte CRUD-API. 
 
-Neue Funktionen der HTTP-API:
+Neue HTTP-API-Funktionen:
 
 * Neuerdings [Unterstützung von Inhaltsfragmenten in der HTTP-API für Assets](/help/assets/assets-api-content-fragments.md) zum Erstellen, Aktualisieren, Lesen und Löschen von Fragmenten
 * Offenlegung von Inhaltsfragmentlisten über Content Services mit der [Kernkomponenten-Inhaltsfragmentliste](https://opensource.adobe.com/aem-core-wcm-components/library/content-fragment-list.html)
@@ -126,13 +125,13 @@ Weitere Informationen zu Änderungen an AEM Screens finden Sie in den Versionshi
 
 ### [!DNL Experience Manager Assets] {#experience-manager-assets}
 
-Vollständige Liste der Änderungen in [AEM 6.5 Asset-Versionshinweise](/help/release-notes/assets.md).
+Vollständige Liste der Änderungen in den [AEM 6.5 Assets-Versionshinweisen](/help/release-notes/assets.md).
 
 AEM 6.5 beinhaltet die folgenden neuen Funktionen und Erweiterungen mit denen AEM-Anwender, DAM-Anwender und Anwender mit entsprechenden Kreativ- sowie Marketingfunktionen ihre Produktivität steigern können.
 
 #### Integrieren in Adobe Creative Cloud  {#integration-with-adobe-creative-cloud}
 
-Neu hinzugekommen ist [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html). Damit profitieren kreative Anwender, die mit Adobe Creative Cloud-Anwendungen wie Photoshop, Illustrator und InDesign arbeiten, von In-App-Erlebnissen – für eine optimierte Zusammenarbeit zwischen Kreativen und Marketern bei der Inhaltserstellung. AEM Desktop-App unterstützt weiterhin die Anforderungen von Benutzern, die mit Assets von AEM auf dem Desktop aus arbeiten, wobei jeder Dateityp und jede Desktopanwendung verwendet werden.
+Neu hinzugekommen ist [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html). Damit profitieren kreative Anwender, die mit Adobe Creative Cloud-Anwendungen wie Photoshop, Illustrator und InDesign arbeiten, von In-App-Erlebnissen – für eine optimierte Zusammenarbeit zwischen Kreativen und Marketern bei der Inhaltserstellung. AEM Desktop-Programm unterstützt weiterhin die Anforderungen von Benutzern, die mit Assets von AEM auf dem Desktop arbeiten, wobei jeder Dateityp und jedes Desktop-Programm verwendet werden.
 
 Darüber hinaus ist AEM in Adobe Stock integriert und ermöglicht so die Suche, Vorschau, Lizenzierung und Speicherung von Adobe Stock-Assets direkt über die AEM-Web-UI.
 
@@ -140,7 +139,7 @@ Darüber hinaus ist AEM in Adobe Stock integriert und ermöglicht so die Suche, 
 
 #### Connected Assets {#connected-assets}
 
-Die Funktion &quot;Connected Assets&quot;ist auf größere Implementierungen mit einer Reihe von AEM Sites-Bereitstellungen ausgerichtet, bei denen Assets von einer zentralen AEM Assets DAM-Bereitstellung genutzt werden müssen. Dadurch wird nicht nur die Governance im Zusammenhang mit zentral verwalteten Assets verbessert, sondern auch eine hocheffiziente Bereitstellung von Assets für verschiedene Sites-Implementierungen ermöglicht.
+Die Funktion &quot;Connected Assets&quot;ist auf größere Bereitstellungen mit einer Reihe von AEM Sites-Bereitstellungen ausgerichtet, die Assets aus einer zentralen AEM Assets DAM-Bereitstellung nutzen müssen. Dadurch wird nicht nur die Governance im Zusammenhang mit zentral verwalteten Assets verbessert, sondern auch eine hocheffiziente Bereitstellung von Assets für verschiedene Sites-Implementierungen ermöglicht.
 
 ### Dynamic Media {#dynamic-media}
 
@@ -148,10 +147,10 @@ Dynamic Media bietet eine erweiterte Rich-Media-Erstellung und -Bereitstellung i
 
 Zu den neuen Funktionen zählen:
 
-* Unterstützung für 360-Video- und VR-Headsets
+* Unterstützung für 360-Grad-Video- und VR-Headsets
 * Benutzerdefinierte Videominiaturen
 * Verbesserte Unterstützung für Barrierefreiheit
-* Schutz vor Verknüpfung
+* Schutz gegen Hotlinking
 
 #### Anwendererlebnis und Suche {#user-experience-and-search}
 
@@ -170,7 +169,7 @@ AEM 6.5 wurde um zahlreiche neue Funktionen und Erweiterungen ergänzt. Hier ei
 * Sortierung adaptiver Formulare und interaktiver Kommunikationstabellen
 * Automatische Validierung von Eingabedaten in Formulardatenmodellen
 
-Informationen zu neuen und verbesserten Funktionen und Dokumentationsressourcen finden Sie unter [Zusammenfassung der neuen Funktionen und Verbesserungen in AEM 6.5 Forms](/help/forms/using/whats-new.md).
+Weitere Informationen zu neuen und verbesserten Funktionen und Dokumentationsressourcen finden Sie in der [Zusammenfassung der neuen Funktionen und Verbesserungen in AEM 6.5 Forms](/help/forms/using/whats-new.md) .
 
 ### [!DNL Experience Manager Communities] {#communitiesreleasenotes}
 
@@ -181,21 +180,21 @@ AEM 6.5 bietet verschiedene neue Funktionen und Erweiterungen für Communities.
 * Benutzerdefinierte Filter, entwickelt und hinzugefügt zur UI für Massenmoderation; Ein [Beispielprojekt](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter), das die Filterung nach Tags demonstriert, kann als Grundlage für die Entwicklung analoger benutzerdefinierter Filter verwendet werden.
 * Neue Listenansicht mit verbesserter UI für die Massenmoderation
 * Möglichkeit zur Zuweisung verschiedener Administratoren für unterschiedliche Community-Sites und verschachtelte Gruppen (statt eines einzigen Community-Administrators)
-* Die Aktivierungsfunktion von AEM 6.5 Communities unterstützt die [(SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)-Engine.
+* Die Aktivierungsfunktion von AEM 6.5 Communities unterstützt die Engine [ (SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/).
 * Verbesserte Barrierefreiheit durch unterstützte Tastaturnavigation bei Aktivierungskomponenten
 * Apache Solr 7.0-Unterstützung beim Einrichten von MSRP und DSRP
 
-Eine detaillierte Liste der Änderungen finden Sie unter [AEM 6.5 Communities release notes](/help/release-notes/communities-release-notes.md).
+Eine detaillierte Liste der Änderungen finden Sie unter [AEM 6.5 Communities Versionshinweise](/help/release-notes/communities-release-notes.md).
 
 ### [!DNL Experience Manager Livefyre] {#experience-manager-livefyre}
 
-Livefyre lässt sich in AEM 6.5-Instanzen integrieren. Siehe [Wie Sie Livefyre mit AEM](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html) integrieren.
+Livefyre lässt sich in AEM 6.5-Instanzen integrieren. Siehe [Wie man Livefyre mit AEM](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html) integriert.
 
-### Nutzen Sie kundenorientierte Entwicklung {#leverage-customer-focused-development}
+### Kundenorientierte Entwicklung nutzen {#leverage-customer-focused-development}
 
 Adobe verwendet ein kundenorientiertes Entwicklungsmodell, das es den Kunden ermöglicht, zu allen Phasen des Entwicklungsprozesses von der Spezifikation bis zur Entwicklung und zum Test beizutragen. Unser Dank geht an alle beteiligten Kunden und Partner in diesem Prozess.
 
-Adobe hält die erforderlichen Vorgehensweisen und Prozesse bereit, um die Erfassung, Priorisierung und Verfolgung kundenorientierter Fehlerbehebungs- und Verbesserungsanforderungsentwicklung zu ermöglichen. Das [Adobe Marketing Cloud Support Portal](https://helpx.adobe.com/de/contact/enterprise-support.ec.html) ist in das Adobe Enhancement and Defect Tracking System integriert. Kundenprobleme werden, wenn möglich, gemeinsam mit dem Kundendienst identifiziert und gelöst. Bei einer Weiterleitung an Forschung und Entwicklung werden alle Kundeninformationen erfasst und zu Priorisierungs- und Berichterstellungszwecken verwendet. Bei der Entwicklung werden gebührenpflichtige Unterstützung, Garantieprobleme und kundenbezahlte Erweiterungen bevorzugt.
+Adobe hält die erforderlichen Vorgehensweisen und Prozesse bereit, um die Erfassung, Priorisierung und Verfolgung kundenorientierter Fehlerbehebungs- und Verbesserungsanforderungsentwicklung zu ermöglichen. Das [Adobe Marketing Cloud Support Portal](https://helpx.adobe.com/de/contact/enterprise-support.ec.html) ist in das Adobe Enhancement and Defect Tracking System integriert. Kundenprobleme werden, wenn möglich, gemeinsam mit dem Kundendienst identifiziert und gelöst. Bei einer Weiterleitung an Forschung und Entwicklung werden alle Kundeninformationen erfasst und zu Priorisierungs- und Berichterstellungszwecken verwendet. Bei der Entwicklung werden gebührenpflichtiger Support, Garantieprobleme und kundenbezahlte Verbesserungen Priorität eingeräumt.
 
 Dieser Prozess der Priorisierung hat zu mehr als 750 kundenorientierten Änderungen geführt, die in AEM 6.5 vorgenommen wurden.
 
@@ -205,7 +204,7 @@ Dieser Prozess der Priorisierung hat zu mehr als 750 kundenorientierten Änderu
 
 * Eigenständiger Schnellstart: `cq-quickstart-6.5.0.jar`.
 * Anwendungsserver-Schnellstart: `cq-quickstart-6.5.0.war`.
-* Dispatcher 4.3.2 oder höher für die verschiedenen Webserver und Plattformen. Siehe [Download-Link](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/release-notes.html)
+* Dispatcher 4.3.2 oder höher für die verschiedenen Webserver und Plattformen. Siehe [Downloadlink](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/release-notes.html)
 * Plug-in für Eclipse IDE ([weitere Informationen und Download](/help/sites-developing/aem-eclipse.md))
 
 * Erweiterung für Brackets-Code-Editor ([weitere Informationen und Download](/help/sites-developing/aem-brackets.md))
@@ -236,7 +235,7 @@ Dieser Prozess der Priorisierung hat zu mehr als 750 kundenorientierten Änderu
 * Paket zum Hinzufügen der erweiterten PDF Rasterizer-Bibliothek ([weitere Informationen](/help/assets/aem-pdf-rasterizer.md))
 * Paket zum Hinzufügen von erweiterter Rohbildunterstützung ([weitere Informationen](/help/assets/camera-raw.md))
 
-**Formulare**
+**Forms**
 
 * [Pakete für AEM Forms-Funktionen](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
 * [AEM Forms OSGi Client SDK](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/6.0.80/)
@@ -258,9 +257,9 @@ Die Benutzeroberfläche ist in den folgenden Sprachen verfügbar:
 
 [!DNL Experience Manager] 6.5 ist für GB18030-2005 CITS zertifiziert und kann daher den chinesischen Kodierungsstandard verwenden.
 
-## {#install-update} installieren und aktualisieren
+## Installieren und Aktualisieren von {#install-update}
 
-Informationen zu den Installationsanforderungen finden Sie unter [Installationsanweisungen](/help/sites-deploying/custom-standalone-install.md).
+Informationen zu Einrichtungsanforderungen finden Sie unter [Installationsanweisungen](/help/sites-deploying/custom-standalone-install.md).
 
 Detaillierte Anweisungen finden Sie unter [Upgrade-Dokumentation](/help/sites-deploying/upgrade.md).
 
@@ -270,13 +269,13 @@ Finden Sie die vollständige Matrix der unterstützten Plattformen einschließli
 
 >[!NOTE]
 >
->Oracle hat ein Long Term Support (LTS)-Modell für Oracle Java SE-Produkte entwickelt. Java 9 und 10 sind nicht-LTS-Versionen von Oracle. Siehe [Oracle Java SE-Support-Roadmap](https://www.oracle.com/technetwork/java/eol-135779.html). Adobe bietet Unterstützung für LTS-Versionen von Java, um nur AEM in der Produktion auszuführen. Java 11 ist die empfohlene Version für AEM 6.5.
+>Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle-Java SE-Produkte umgestiegen. Java 9 und 10 sind Nicht-LTS-Versionen von Oracle. Siehe [Oracle Java SE-Support-Roadmap](https://www.oracle.com/technetwork/java/eol-135779.html). Adobe unterstützt LTS-Versionen von Java, damit sie nur AEM in der Produktion ausführen können. Java 11 ist die empfohlene Version für AEM 6.5.
 
 ## Veraltete und entfernte Funktionen {#deprecated-and-removed-features}
 
 Adobe prüft kontinuierlich den Bedarf an Funktionen im Produkt und ersetzt ggf. Funktionen durch leistungsstärkere Versionen oder implementiert ausgewählte Teile neu, um besser auf zukünftige Erwartungen oder Erweiterungen vorbereitet zu sein.
 
-Lesen Sie für [!DNL Adobe Experience Manager] 6.5 [die Liste der veralteten und entfernten Funktionen](/help/release-notes/deprecated-removed-features.md). Die Seite enthält auch Vorankündigungen für Änderungen in nächster Zeit sowie wichtige Hinweise für Kunden, die frühere Versionen aktualisieren.
+Für [!DNL Adobe Experience Manager] 6.5, [lesen Sie die Liste veralteter und entfernter Funktionen](/help/release-notes/deprecated-removed-features.md). Die Seite enthält auch Vorankündigungen für Änderungen in nächster Zeit sowie wichtige Hinweise für Kunden, die frühere Versionen aktualisieren.
 
 ## Bekannte Probleme {#known-issues}
 
@@ -284,10 +283,10 @@ Lesen Sie für [!DNL Adobe Experience Manager] 6.5 [die Liste der veralteten und
 
 ### Produktdownload und Support (beschränkte Websites) {#product-download-and-support-restricted-sites}
 
-Die folgenden Sites stehen nur Kunden zur Verfügung. Wenn Sie Kunde sind und Zugriff benötigen, wenden Sie sich an Ihren Adobe Account Manager.
+Die folgenden Sites sind nur für Kunden verfügbar. Wenn Sie Kunde sind und Zugriff benötigen, wenden Sie sich an Ihren Adobe Account Manager.
 
 * [Produktdownload unter licensing.adobe.com](https://licensing.adobe.com/).
 
-* Produktupdates, Patches und Pakete für zusätzliche Funktionen bei [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+* Produktaktualisierungen, Patches und Pakete für zusätzliche Funktionen auf [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
-* [Kundenservice per Admin Console](https://adminconsole.adobe.com/). Weitere Informationen finden Sie unter [Erlebnis des Kundensupports für neue Adobe](https://docs.adobe.com/content/help/en/customer-one/using/home.html).
+* [Kundensupport über Admin Console](https://adminconsole.adobe.com/). Weitere Informationen finden Sie unter [Neues Kundenunterstützungs-Erlebnis für Adobe](https://docs.adobe.com/content/help/en/customer-one/using/home.html).
