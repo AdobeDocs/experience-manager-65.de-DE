@@ -1,8 +1,8 @@
 ---
 title: Blogfunktion
 seo-title: Blogfunktion
-description: Gemeinschaftsinformationen in journalistischer Form
-seo-description: Gemeinschaftsinformationen in journalistischer Form
+description: Community-Informationen im Journalformat
+seo-description: Community-Informationen im Journalformat
 uuid: 7323063f-81e8-45c3-9035-bf7df6124830
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,14 +10,13 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1676'
 ht-degree: 47%
 
 ---
-
 
 # Blogfunktion {#blog-feature}
 
@@ -25,7 +24,7 @@ ht-degree: 47%
 
 Die Blogfunktion für AEM Communities wurde von einer Erstellungsaktivität in eine richtige Community-Aktivität umgewandelt, die in der Veröffentlichungsumgebung stattfindet.
 
-Die Blogfunktion unterstützt die Bereitstellung von Community-Informationen in einem Aufzeichnungsformat. Blog-Einträge werden in der Umgebung &quot;Veröffentlichen&quot;von autorisierten Mitgliedern (registrierte, angemeldete Benutzer) vorgenommen.
+Die Blogfunktion unterstützt die Bereitstellung von Community-Informationen in einem Aufzeichnungsformat. Blogeinträge werden in der Veröffentlichungsumgebung von autorisierten Mitgliedern (registrierten, angemeldeten Benutzern) vorgenommen.
 
 Die Blogfunktion bietet Folgendes:
 
@@ -41,7 +40,7 @@ Die Blogfunktion bietet Folgendes:
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben::
 
 * Hinzufügen der Blog-Funktion zu einer AEM Site
-* Konfigurationseinstellungen für Blog-Komponenten
+* Konfigurationseinstellungen für Blogkomponenten
 
 >[!NOTE]
 >
@@ -51,22 +50,22 @@ In diesem Abschnitt der Dokumentation wird Folgendes beschrieben::
 
 ## Hinzufügen von Blog-Komponenten zu einer Seite {#adding-blog-components-to-a-page}
 
-Wenn Sie im Autorenmodus einen Blog zu einer Seite hinzufügen möchten, suchen Sie im Komponentenbrowser nach
+Wenn Sie im Autorenmodus einen Blog zu einer Seite hinzufügen möchten, suchen Sie mit dem Komponenten-Browser nach
 
 * `Communities / Blog`
 * `Communities / Blog Sidebar`
 
 und ziehen Sie die Elemente an die jeweilige Position auf der Seite, auf der das Blog angezeigt werden soll.
 
-Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](/help/communities/basics.md).
+Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die [erforderlichen clientseitigen Bibliotheken](/help/communities/blog-developer-basics.md#essentials-for-client-side) einbezogen werden, wird die `Blog`-Komponente wie folgt angezeigt:
+Wenn die [erforderlichen clientseitigen Bibliotheken](/help/communities/blog-developer-basics.md#essentials-for-client-side) eingeschlossen sind, wird die Komponente `Blog` so angezeigt:
 
 ![add-blog-component](assets/add-blog-component.png)
 
 ### Konfigurieren eines Blogs {#configuring-blog}
 
-Wählen Sie die platzierte Komponente `Blog` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
+Wählen Sie die platzierte Komponente `Blog` aus, um auf das Symbol `Configure` zuzugreifen, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![konfigurieren](assets/configure-new.png)
 
@@ -82,159 +81,159 @@ Geben Sie auf der Registerkarte **Einstellungen** die grundlegenden Eigenschafte
 
 * **Max. Anhangminiaturgröße**
 
-   Maximale Größe (in Pixel) des Miniaturbilds der Anlage. Der Standardwert ist 800 x 800.
+   Maximale Größe (in Pixel) des Miniaturbilds des Anhangs. Der Standardwert ist 800 x 800.
 
 * **Minimale Bildgröße für Miniaturansicht**
 
-   Mindestgröße (in Byte) des Bildes für die Erstellung von Miniaturbildern für Inline-Bilder. Der Standardwert ist 100000 Byte (100 KB).
+   Mindestgröße (in Byte) des Bildes zum Generieren von Miniaturansichten für Inline-Bilder. Der Standardwert ist 100000 Bytes (100 KB).
 
 * **Max. Miniaturgröße**
 
-   Maximale Größe (in Pixel) des Miniaturbilds für Inline-Bild. Der Standardwert ist 800 x 800.
+   Maximale Größe (in Pixel) des Miniaturbilds für Inline-Bilder. Der Standardwert ist 800 x 800.
 
 * **Privilegierte Mitglieder zulassen**
 
-   Wenn diese Option aktiviert ist, dürfen nur Privilegierte Mitglieder Inhalte erstellen.
+   Wenn diese Option aktiviert ist, dürfen nur privilegierte Mitglieder Inhalte erstellen.
 
 * **Zugelassene privilegierte Mitglieder**
 
-   hinzufügen die privilegierten Mitglieder, die Inhalte erstellen dürfen.
+   Fügen Sie die berechtigten Mitglieder hinzu, die Inhalte erstellen dürfen.
 
 * **Benutzergenerierte Inhalte im Autoren-Bearbeitungsmodus blockieren**
 
-   Wenn diese Option aktiviert ist, wird der vom Benutzer erstellte Inhalt bei der Bearbeitung im Autorenmodus blockiert.
+   Wenn diese Option aktiviert ist, wird benutzergenerierter Inhalt bei der Bearbeitung im Autorenmodus blockiert.
 
 * **Journaltitel**
 
-   Der Blog-Titel, der auf der Seite angezeigt werden soll.
+   Der Blogtitel, der auf der Seite angezeigt werden soll.
 
 >[!NOTE]
 >
->Mit dem Protokoll-Titel wird automatisch eine URL für den Blog erstellt.
+>Der Journaltitel wird verwendet, um automatisch eine URL für den Blog zu erstellen.
 >
->Maximal 50 Zeichen (zusätzlich 5 Zeichen für die Eindeutigkeit) werden aus dem hier angegebenen Protokoll-Titel verwendet, um eine URL für den Blog zu erstellen.
+>Maximal 50 Zeichen (mit 5 zusätzlichen Zeichen für Eindeutigkeit) werden aus dem hier angegebenen Journaltitel verwendet, um eine URL für den Blog zu erstellen.
 
 * **Journalbeschreibung**
 
-   Die Blog-Beschreibung.
+   Die Blogbeschreibung.
 
 * **Themen pro Seite**
 
-   Definiert die Anzahl der Blog-Einträge/Kommentare pro Seite. Standard: 10.
+   Definiert die Anzahl der Blogeinträge/Kommentare, die pro Seite angezeigt werden. Standard: 10.
 
 * **Moderiert**
 
-   Wenn diese Option aktiviert ist, muss die Veröffentlichung von Blog-Einträgen und Kommentaren genehmigt werden, bevor sie auf einer veröffentlichten Site erscheinen. Die Standardeinstellung ist deaktiviert.
+   Wenn diese Option aktiviert ist, muss das Posten von Blogeinträgen und Kommentaren genehmigt werden, bevor sie auf einer veröffentlichten Site erscheinen. Die Standardeinstellung ist deaktiviert.
 
 * **Geschlossen**
 
-   Wenn diese Option aktiviert ist, wird der Blog für neue Blog-Einträge und Kommentare geschlossen. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, ist der Blog für neue Blog-Einträge und Kommentare geschlossen. Diese Option ist standardmäßig deaktiviert.
 
 * **Rich-Text-Editor**
 
-   Wenn diese Option aktiviert ist, können Blog-Einträge und Kommentare mit Markup eingegeben werden. Diese Option ist standardmäßig aktiviert.
+   Wenn diese Option aktiviert ist, können Blogeinträge und Kommentare mit Markup eingegeben werden. Diese Option ist standardmäßig aktiviert.
 
 * **Tagging zulassen**
 
-   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, ihrem Beitrag Tagbeschriftungen hinzuzufügen (siehe **Feld** Registerkarte). Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Mitglieder ihrem Beitrag Tag-Beschriftungen hinzufügen (siehe Registerkarte **Tag-Feld** ). Diese Option ist standardmäßig deaktiviert.
 
 * **Datei-Uploads zulassen**
 
-   Wenn diese Option aktiviert ist, können Sie zulassen, dass dem Blog-Eintrag oder -Kommentar Dateianlagen hinzugefügt werden. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Sie einem Blogeintrag oder Kommentar Dateianlagen hinzufügen. Diese Option ist standardmäßig deaktiviert.
 
 * **Max. Dateigröße**
 
-   Relevant nur, wenn `Allow File Uploads` markiert ist. Mit diesem Feld lässt sich die Größe (in Byte) der hochgeladenen Dateien beschränken. Der Standardwert ist 104857600 (10 MB).
+   Nur relevant, wenn `Allow File Uploads` aktiviert ist. Mit diesem Feld lässt sich die Größe (in Byte) der hochgeladenen Dateien beschränken. Der Standardwert ist 104857600 (10 MB).
 
 * **Zulässige Dateitypen**
 
-   Relevant nur, wenn `Allow File Uploads` markiert ist. Eine kommagetrennte Liste der zulässigen Dateierweiterungen inklusive Punkt. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wurden Dateitypen festgelegt, können Dateien nicht angegebenen Typs nicht hochgeladen werden. Die Standardeinstellung ist nicht angegeben, sodass alle Dateitypen zulässig sind.
+   Nur relevant, wenn `Allow File Uploads` aktiviert ist. Eine kommagetrennte Liste der zulässigen Dateierweiterungen inklusive Punkt. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wurden Dateitypen festgelegt, können Dateien nicht angegebenen Typs nicht hochgeladen werden. Die Standardeinstellung ist nicht so festgelegt, dass alle Dateitypen zulässig sind.
 
 * **Maximale Dateigröße für Bildanhang**
 
-   Relevant nur, wenn &quot;Datei-Uploads zulassen&quot;aktiviert ist. Die maximal zulässige Anzahl von Bytes einer Bilddatei. Der Standardwert ist 2097152 (2 MB).
+   Nur relevant, wenn die Option Datei-Uploads zulassen aktiviert ist. Die maximal zulässige Anzahl von Bytes einer Bilddatei. Der Standardwert ist 2097152 (2 MB).
 
 * **Antworten zulassen**
 
-   Wenn diese Option aktiviert ist, lassen Sie Antworten auf Kommentare zu, die im Blog-Eintrag veröffentlicht wurden. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, erlauben Sie Antworten auf Kommentare, die auf den Blogeintrag gepostet wurden. Diese Option ist standardmäßig deaktiviert.
 
 * **Abstimmung zulassen**
 
-   Wenn diese Option aktiviert ist, fügen Sie die Funktion &quot;Abstimmung&quot;in einen Blog-Eintrag ein. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, fügen Sie die Funktion Abstimmung in einen Blogeintrag ein. Diese Option ist standardmäßig deaktiviert.
 
 * **Benutzern das Löschen von Anmerkungen und Themen ermöglichen**
 
-   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, die von ihnen veröffentlichten Kommentare und Blog-Einträge zu löschen. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Mitglieder die Kommentare und Blogeinträge löschen, die sie veröffentlicht haben. Diese Option ist standardmäßig deaktiviert.
 
 * **Folgende zulassen**
 
-   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Blog-Artikel hinzu, mit der Mitglieder über neue Beiträge benachrichtigt werden können. [](/help/communities/notifications.md) Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Blog-Artikel hinzu, mit der Mitglieder [benachrichtigt](/help/communities/notifications.md) über neue Beiträge werden können. Diese Option ist standardmäßig deaktiviert.
 
 * **E-Mail-Abonnements zulassen**
 
-   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, per E-Mail über neue Beiträge informiert zu werden ([Abonnement](/help/communities/subscriptions.md)). Erfordert die Überprüfung von `Allow Following` und [E-Mail-Konfiguration](/help/communities/email.md). Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Mitglieder per E-Mail über neue Beiträge benachrichtigt werden ([subscription](/help/communities/subscriptions.md)). Erfordert die Überprüfung von `Allow Following` und die Konfiguration von [E-Mail](/help/communities/email.md). Diese Option ist standardmäßig deaktiviert.
 
 * **Abzeichen anzeigen**
 
-   Wenn aktiviert, zeigen Sie verdiente und zugewiesene [Abzeichen](/help/communities/implementing-scoring.md) mit dem Blog-Eintrag eines Mitglieds an. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, zeigen Sie verdiente und zugewiesene [Badges](/help/communities/implementing-scoring.md) mit dem Blogeintrag eines Mitglieds an. Diese Option ist standardmäßig deaktiviert.
 
 * **Keine Antworten auf der Listenseite erhalten**
 
 * **Feature-Inhalt zulassen**
 
-   Wenn diese Option aktiviert ist, kann die Idee als [gekennzeichneter Inhalt](/help/communities/featured.md) identifiziert werden. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, kann die Idee als [Inhalt mit Funktionen](/help/communities/featured.md) identifiziert werden. Diese Option ist standardmäßig deaktiviert.
 
 * **Erwähnung aktivieren**
 
-   Wenn diese Option aktiviert ist, können Benutzer der registrierten Community andere registrierte Mitglieder identifizieren (mit Vorname, Nachname, Benutzername) und sie mit einem Tag versehen, das die übliche @user-name-Syntax verwendet. Die getaggten Benutzer erhalten Benachrichtigungen über ihre Erwähnungen.
+   Wenn diese Option aktiviert ist, können registrierte Community-Benutzer andere registrierte Mitglieder (unter Verwendung von Vorname, Nachname, Benutzername) identifizieren und sie mit der gemeinsamen Syntax @user-name versehen. Die getaggten Benutzer erhalten Benachrichtigungen über ihre Erwähnungen.
 
 * **Max. Erwähnungen**
 
-   Schränken Sie die maximale Anzahl an Erwähnungen ein, die in einem Beitrag zulässig sind. Der Standardwert ist 10.
+   Schränken Sie die maximale Anzahl der Erwähnungen ein, die in einem Beitrag zulässig sind. Der Standardwert ist 10.
 
 * **UI-Erwähnungsmuster**
 
-   Geben Sie die zulässige Musterzeichenfolge an, um den registrierten Benutzer in einem Beitrag zu taggen (@Erwähnung). Beispiel: ~{{familyName}}{{vorname}}.
+   Geben Sie die zulässige Musterzeichenfolge an, um den registrierten Benutzer in einem Beitrag mit Tags zu versehen (@mention). Beispiel: ~{{familyName}{{givenName}}.
 
-#### Benutzermoderation, Registerkarte {#user-moderation-tab}
+#### Registerkarte Benutzermoderation {#user-moderation-tab}
 
 Geben Sie auf der Registerkarte **Benutzermoderation** die Moderationseinstellungen an:
 
 * **Posts ablehnen**
 
-   Wenn diese Option aktiviert ist, können Moderatoren vertrauenswürdiger Mitglieder Beiträge verweigern und verhindern, dass der Beitrag im öffentlichen Forum erscheint. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Moderatoren vertrauenswürdiger Mitglieder Beiträge ablehnen und verhindern, dass der Beitrag im öffentlichen Forum erscheint. Diese Option ist standardmäßig deaktiviert.
 
 * **Themen schließen/erneut öffnen**
 
-   Wenn diese Option aktiviert ist, können Moderatoren mit vertrauenswürdigen Mitgliedern ein Thema schließen, um weitere Änderungen und Kommentare vorzunehmen, und ein Thema erneut öffnen. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Moderatoren von vertrauenswürdigen Mitgliedern ein Thema schließen, um weitere Bearbeitungen und Kommentare vorzunehmen, und ein Thema möglicherweise erneut öffnen. Diese Option ist standardmäßig deaktiviert.
 
 * **Posts kennzeichnen**
 
-   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, die Themen oder Kommentare anderer als unangemessen zu kennzeichnen. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Mitglieder Themen oder Kommentare anderer Mitglieder als unangemessen kennzeichnen. Diese Option ist standardmäßig deaktiviert.
 
 * **Liste mit Kenn-zeichnungsgründen**
 
-   Wenn diese Option aktiviert ist, können die Mitglieder aus einer Dropdown-Liste auswählen, aus welchem Grund sie ein Thema oder einen Kommentar als unangemessen kennzeichnen. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Mitglieder aus einer Dropdown-Liste den Grund auswählen, aus dem Themen oder Kommentare als unangemessen gekennzeichnet werden. Diese Option ist standardmäßig deaktiviert.
 
 * **Grund für benutzerdefinierte Kennzeichnung**
 
-   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, einen eigenen Grund für die Kennzeichnung eines Themas oder Kommentars als unangemessen einzugeben. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Mitglieder einen eigenen Grund für die Kennzeichnung eines Themas oder Kommentars als unangemessen eingeben. Diese Option ist standardmäßig deaktiviert.
 
 * **Schwellenwert für Moderation**
 
-   Geben Sie an, wie oft ein Thema oder Kommentar von Mitgliedern gekennzeichnet werden muss, bevor Moderatoren benachrichtigt werden. Der Standardwert ist 1 (einmal).
+   Geben Sie an, wie oft ein Thema oder Kommentar von Mitgliedern gekennzeichnet werden muss, bevor Moderatoren benachrichtigt werden. Der Standardwert ist 1 ( einmal).
 
 * **Kennzeichnungslimit**
 
-   Geben Sie an, wie oft ein Thema oder Kommentar markiert werden muss, bevor er aus der öffentlichen Ansicht ausgeblendet wird. Bei einem Wert von -1 wird das gekennzeichnete Thema oder der gekennzeichnete Kommentar nie ausgeblendet. In allen anderen Fällen muss der Wert größer als der oder gleich dem „Schwellenwert für Moderation“ sein. Der Standardwert ist 5.
+   Geben Sie an, wie oft ein Thema oder Kommentar gekennzeichnet werden muss, bevor er in der öffentlichen Ansicht ausgeblendet wird. Bei einem Wert von -1 wird das gekennzeichnete Thema oder der gekennzeichnete Kommentar nie ausgeblendet. In allen anderen Fällen muss der Wert größer als der oder gleich dem „Schwellenwert für Moderation“ sein. Der Standardwert ist 5.
 
-#### Tag-Feld, Registerkarte {#tag-field-tab}
+#### Registerkarte &quot;Tag-Feld&quot;{#tag-field-tab}
 
 Auf der Registerkarte **Tag-Feld** können Sie angeben, welche Tags verwendet werden dürfen, wenn die Option **Tagging zulassen** auf der Registerkarte **Einstellungen** aktiviert wurde:
 
 * **Zulässige Namespaces**
 
-   Relevant, wenn `Allow Tagging` unter der Registerkarte **Einstellungen** markiert ist. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namensraum umfasst &quot;Standard-Tags&quot;(den standardmäßigen Namensraum) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
+   Relevant, wenn `Allow Tagging` auf der Registerkarte **Einstellungen** aktiviert ist. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
 
 * **Empfehlungsgrenze**
 
@@ -242,7 +241,7 @@ Auf der Registerkarte **Tag-Feld** können Sie angeben, welche Tags verwendet we
 
 ### Konfigurieren einer Blog-Seitenleiste {#configuring-blog-sidebar}
 
-Wenn Sie mit der Dublette auf die Komponente `Blog Sidebar` klicken, wird ein Dialogfeld zum Bearbeiten geöffnet.
+Wenn Sie auf die Komponente `Blog Sidebar` doppelklicken, wird ein Dialogfeld zum Bearbeiten geöffnet.
 
 Auf der Registerkarte **Journal-Sidebar-Einstellungen** können Sie das Datumsformat für Archive festlegen und angeben, welche Eintragstypen in der Seitenleiste aufgeführt werden sollen:
 
@@ -250,7 +249,7 @@ Auf der Registerkarte **Journal-Sidebar-Einstellungen** können Sie das Datumsfo
 
 * **Datumsformat**
 
-   Das Format, das für die Anzeige von Archiven von Blog-Einträgen verwendet wird. In diesem Format finden sich Platzhalter, die der Java-Konvention folgen.
+   Das Format, das für die Anzeige von Archiven von Blogeinträgen verwendet wird. In diesem Format finden sich Platzhalter, die der Java-Konvention folgen.
 
    * JJJJ: lange Jahresangabe, z. B. 2015
    * JJ: kurze Jahresangabe, z. B. 15
@@ -258,25 +257,25 @@ Auf der Registerkarte **Journal-Sidebar-Einstellungen** können Sie das Datumsfo
    * MMM: abgekürzter Monat, z. B. Jun
    * MM: Monatszahl, z. B. 06
 
-   Der Standardwert ist &quot;yyyy MMMMM&quot;, der z. B. &quot;Juni 2015&quot;anzeigen würde.
+   Der Standardwert ist &quot;jjjj MMMMM&quot;, der beispielsweise &quot;Juni 2015&quot;anzeigen würde.
 
 * **Ansichtstyp**
 
-   Titel und Typ der Blog-Einträge, die in der Seitenleiste angezeigt werden sollen. Die können aus folgenden Kategorien wählen:
+   Der Titel und der Typ der Blogeinträge, die in der Seitenleiste angezeigt werden sollen. Die können aus folgenden Kategorien wählen:
 
    * Autoren
    * Kategorien
    * Archive
 
-* **Blopg-Komponentenpfad**
+* **Pfad der Blopg-Komponente**
 
-   *(Optional)* Der Speicherort der Blog-Ressource, aus der Blog-Artikel aufgelistet werden sollen. Wenn das Feld leer gelassen wird, wird die Komponente von resourceType `social/journal/components/hbs/journal` verwendet, die auf derselben Seite angezeigt wird.
+   *(Optional)* Der Speicherort der Blog-Ressource, von der aus Blog-Artikel aufgelistet werden sollen. Wenn Sie das Feld leer lassen, wird die Komponente von resourceType `social/journal/components/hbs/journal` verwendet, die auf derselben Seite angezeigt wird.
 
    * Beispiel: `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
 * **Empfehlungsgrenze**
 
-   Die Anzahl der anzuzeigenden Blog-Artikel. Der Wert -1 bedeutet keine Begrenzung. Der Standardwert ist -1.
+   Die Anzahl der anzuzeigenden Blogartikel. Der Wert -1 bedeutet keine Begrenzung. Der Standardwert ist -1.
 
 ## Site-Besuchererlebnis {#site-visitor-experience}
 
@@ -290,7 +289,7 @@ Die Verfügbarkeit weiterer Optionen hängt davon ab, ob der Site-Besucher Moder
 
 ### Arbeiten mit Artikeln  {#working-with-articles}
 
-Beim Erstellen eines neuen Blog-Artikels haben Sie folgende Möglichkeiten:
+Beim Erstellen eines neuen Blogartikels haben Sie folgende Möglichkeiten:
 
 1. Sofort veröffentlichen
 1. Einen Entwurf veröffentlichen
@@ -306,16 +305,16 @@ Verfügt der angemeldete Benutzer über Moderator- oder Administratorrechte, kan
 
 #### Mitglieder {#members}
 
-Wenn der angemeldete Benutzer ein Community-Mitglied oder [ein privilegiertes Mitglied](/help/communities/users.md#privileged-members-group) ist (je nach Konfiguration), können sie `New Article` auswählen, um einen neuen Blog-Artikel zu erstellen und zu posten.
+Wenn der angemeldete Benutzer Community-Mitglied oder [privilegiertes Mitglied](/help/communities/users.md#privileged-members-group) ist (je nach Konfiguration), kann er `New Article` auswählen, um einen neuen Blog-Artikel zu erstellen und zu posten.
 
-Insbesondere können sie
+Insbesondere können sie:
 
-* Erstellen eines neuen Blog-Artikels
-* Posten Sie einen neuen Blog-Artikel im Auftrag eines anderen Mitglieds
-* Posten eines Kommentars zu einem Blog-Artikel
-* Bearbeiten Sie einen eigenen Blog-Artikel oder -Kommentar
-* Löschen Sie einen eigenen Blog-Artikel oder -Kommentar
-* Markieren von Blog-Artikeln oder -Kommentaren anderer Benutzer
+* Erstellen eines neuen Blogartikels
+* Posten eines neuen Blogartikels im Namen eines anderen Mitglieds
+* Posten eines Kommentars zu einem Blogartikel
+* Bearbeiten eigener Blogartikel oder Kommentare
+* Löschen eigener Blogartikel oder Kommentare
+* Kennzeichnen von Blogartikeln oder -kommentaren anderer Benutzer
 
 ![member-homepage](assets/member-homepage.png)
 
@@ -325,7 +324,7 @@ Insbesondere können sie
 
 Nicht angemeldete Besucher können veröffentlichte Blogartikel und Kommentare lediglich lesen und übersetzen (falls unterstützt), jedoch keine eigenen Artikel oder Kommentare hinzufügen und keine Artikel und Kommentare anderer Benutzer kennzeichnen.
 
-![anonymous-user-Ansicht](assets/anonymous-user-view.png)
+![anonymous-user-view](assets/anonymous-user-view.png)
 
 ## Zusätzliche Informationen {#additional-information}
 
