@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fad65765-d56d-4a9f-82d5-bcceb1758953
-translation-type: tm+mt
-source-git-commit: a26bc4e4ea10370dd2fc3403500004b9e378c418
+exl-id: 6e2f3d4c-2ead-45b3-98e7-32cacc7e2985
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1886'
 ht-degree: 95%
 
 ---
-
 
 # Leistung des Anwendungsservers verbessern{#enhancing-application-server-performance}
 
@@ -57,7 +56,7 @@ Wenn der Administrator des Anwendungsservers die richtigen Einstellungen für de
 
    * Anfangskapazität
    * Maximale Kapazität
-   * Kapazitätszuwachs
+   * Capacity Increment
    * Statement Cache Size
 
 1. Klicken Sie auf Save und dann auf Activate Changes.
@@ -108,7 +107,7 @@ Wenn der Dokumentinhalt kleiner als die Inline-Maximalgröße ist, wird er in de
 
    >[!NOTE]
    >
-   >Der Wert der Eigenschaft &quot;Max. Inline-Größe&quot;des Dokuments muss für AEM Forms auf JEE-Umgebung identisch sein, während AEM Forms auf OSGi-Bundle AEM Forms on JEE-Umgebung enthält. Diese Schritte sind nur aktualisierte Werte für die AEM Forms on JEE-Umgebung und nicht für AEM Forms on OSGi-Bundle in der AEM Forms on JEE-Umgebung.
+   >Der Wert der Eigenschaft &quot;Max. Inline-Größe des Dokuments&quot;muss für die AEM Forms on JEE-Umgebung identisch sein und für AEM Forms im OSGi-Bundle, das die AEM Forms on JEE-Umgebung enthält. Diese Schritte sind nur aktualisierte Werte für die AEM Forms on JEE-Umgebung und nicht für AEM Forms on OSGi-Bundle in der AEM Forms on JEE-Umgebung.
 
 1. Starten Sie den Anwendungsserver mit folgenden Systemeigenschaft neu:
 
@@ -158,13 +157,13 @@ In diesem Abschnitt werden Einstellungen beschrieben, die spezifisch für eine W
 
 Wenn Sie Configuration Manager ausführen oder versuchen, Enterprise JavaBeans-(EJB-)Bereitstellungscode über das Befehlszeilen-Dienstprogramm *ejbdeploy* zu erstellen und ein Fehler wegen ungenügenden Arbeitsspeichers auftritt, erhöhen Sie die Größe des Speichers, welcher der JVM zugewiesen ist.
 
-1. Bearbeiten Sie das Skript ejbdeploy im Ordner *[Anwendungsserver-Stammordner]*/deploytool/itp/:
+1. Bearbeiten Sie das Skript ejbdeploy im Ordner *[appserver root]*/deploytool/itp/ :
 
    * (Windows) `ejbdeploy.bat`
    * (Linux und UNIX) `ejbdeploy.sh`
 
 1. Suchen Sie den Parameter `-Xmx256M` und ändern Sie ihn in einen höheren Wert, z. B. `-Xmx1024M`.
-1. Speichern Sie die Datei .
+1. Speichern Sie die Datei.
 1. Führen Sie den Befehl `ejbdeploy` aus oder führen Sie mit dem Configuration Manager eine erneute Bereitstellung aus.
 
 ## Windows Server 2003-Leistung mit LDAP verbessern {#improving-windows-server-2003-performance-with-ldap}
@@ -176,13 +175,13 @@ Durch die Verwendung von Verbindungspools bei der Suchverbindung kann die Anzahl
 ### Windows Server für die Verwendung von Verbindungspools konfigurieren  {#configure-your-windows-server-for-connection-pooling}
 
 1. Klicken Sie auf „Start“ > „Ausführen“, um den Registrierungs-Editor zu starten. Geben Sie dann in das Feld „Öffnen“ den Befehl `regedit` ein und klicken Sie auf „OK“.
-1. Wechseln Sie zum Registrierungsschlüssel `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters`
+1. Navigieren Sie zum Registrierungsschlüssel `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters` .
 1. Suchen Sie im rechten Bereich des Registrierungs-Editors den Wertnamen „TcpTimedWaitDelay“. Falls der Name fehlt, wählen Sie in der Menüleiste den Befehl „Bearbeiten“ > „Neu“ > „DWORD-Wert“ aus, um den Namen hinzuzufügen.
 1. Geben Sie in das Feld „Name“`TcpTimedWaitDelay`
 
    >[!NOTE]
    >
-   >Wenn Sie keinen blinkenden Cursor und `New Value #` in dem Feld sehen, klicken Sie mit der rechten Maustaste in das rechte Fenster, wählen Sie Umbenennen und geben Sie im Feld Name `TcpTimedWaitDelay`*ein.*
+   >Wenn kein blinkender Cursor und `New Value #` im Feld angezeigt werden, klicken Sie mit der rechten Maustaste in das rechte Bedienfeld, wählen Sie &quot;Umbenennen&quot;und geben Sie im Feld &quot;Name&quot;`TcpTimedWaitDelay`*.* ein.
 
 1. Wiederholen Sie Schritt 4 für die Wertnamen „MaxUserPort“, „MaxHashTableSize“ und „MaxFreeTcbs“.
 1. Doppelklicken Sie im rechten Bereich, um den Wert „TcpTimedWaitDelay“ festzulegen. Wählen Sie unter „Basis“ die Option „Dezimal“ und geben Sie in das Feld „Wert“ den Wert `30`.
@@ -193,4 +192,3 @@ Durch die Verwendung von Verbindungspools bei der Suchverbindung kann die Anzahl
 >[!NOTE]
 >
 >Wenn Sie mit dem Registrierungs-Editor oder einer anderen Methode fehlerhafte Änderungen an der Registrierung vornehmen, kann dies schwerwiegende Folgen haben. Im Extremfall müssen Sie eventuell das Betriebssystem neu installieren. Alle Änderungen an der Registrierung erfolgen auf eigenes Risiko.
-
