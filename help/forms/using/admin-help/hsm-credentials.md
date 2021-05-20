@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e5f17ba8-8aab-4449-811a-20ad33de1c6f
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: facbeab2-de95-4778-894c-faa771d3391e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1313'
 ht-degree: 99%
 
 ---
-
 
 # HSM-Berechtigungen verwalten {#managing-hsm-credentials}
 
@@ -106,4 +105,3 @@ Dieser Mechanismus unterstützt keine Online-Erstellung von HSM-Profilen oder St
 
 * Erstellen Sie eine AEM Forms-Clientberechtigung durch Übergabe des Zertifikats des Unterzeichners. Führen Sie die Schritte unter [Konfigurieren von HSM-Support für AEM Forms ES mit Sun JDK auf Windows 64-Bit-Plattform](https://kb2.adobe.com/cps/808/cpsid_80835.html) aus. Der Webdienst-Speicherort wird als Berechtigungseigenschaft übergeben. Offline-HSM-Profile, die entweder mit DER- oder SHA-1-Hexadezimal-Zertifikat erstellt wurden, werden ebenfalls unterstützt. Wenn Sie jedoch aus einer früheren Version von AEM Forms auf AEM Forms aktualisiert haben, nehmen Sie Clientänderungen vor, da die Berechtigung Zertifikats- und Webdienstinformationen enthielt.
 * Der Speicherort des Webdienstes wird in Administration Console für den Signature-Dienst angegeben. (Siehe [Einstellungen des Signature-Dienstes](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings).) Hier enthielt der Client nur den Alias des HSM-Profils im Trust Store. Sie können diese Option nahtlos ohne Clientänderungen verwenden, auch wenn Sie aus einer früheren Version von AEM Forms auf AEM Forms aktualisiert haben. Diese Option unterstützt keine HSM-Profile, die ein SHA-1-Hexadezimal-Zertifikat verwenden.
-
