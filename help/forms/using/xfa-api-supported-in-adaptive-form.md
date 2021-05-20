@@ -8,15 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Adaptive Formulare
+exl-id: 255be73f-3169-457c-aaa7-a2fb59f1f2cd
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 89%
 
 ---
-
 
 # XFA-Unterstützung in XDP-basierten adaptiven Formularen{#xfa-support-in-xdp-based-adaptive-forms}
 
@@ -134,7 +133,7 @@ Die folgende Tabelle erfasst, wie verschiedene XFA-Skripte, die in den XDP-Datei
    <td><p>Der speakPriority-Eigenschaft im adaptiven Formular zugeordnet.</p> </td>
   </tr>
   <tr>
-   <td><p>Zugänglichkeit: speakText</p> </td>
+   <td><p>Barrierefreiheit: speakText</p> </td>
    <td><p>Dem benutzerdefinierten barrierefreien Text im adaptiven Formular zugeordnet.</p> </td>
   </tr>
   <tr>
@@ -154,7 +153,7 @@ Die folgende Tabelle erfasst, wie verschiedene XFA-Skripte, die in den XDP-Datei
    <td><p>Der value-Eigenschaft im adaptiven Formular zugeordnet.</p> </td>
   </tr>
   <tr>
-   <td><p>items<em> (Liste, Kontrollkästchen)</em></p> </td>
+   <td><p>items<em> (Listenfeld, Kontrollkästchen)</em></p> </td>
    <td><p>Der options-Eigenschaft im adaptiven Formular zugeordnet. Mit dem Optionsausdruck überschreibbar.</p> </td>
   </tr>
   <tr>
@@ -174,7 +173,7 @@ Die folgende Tabelle erfasst, wie verschiedene XFA-Skripte, die in den XDP-Datei
    <td><p>Der Lead digits-Eigenschaft im adaptiven Formular zugeordnet.</p> </td>
   </tr>
   <tr>
-   <td><p>multiSelect<em> (Liste Box)</em></p> </td>
+   <td><p>multiSelect<em> (Listenfeld)</em></p> </td>
    <td><p>Der Allows multiple selection-Eigenschaft im adaptiven Formular zugeordnet.</p> </td>
   </tr>
  </tbody>
@@ -248,15 +247,15 @@ Die folgende Tabelle erfasst, wie XFA-Überprüfungen den Überprüfungen in ada
    <td><p>validatePictureMessage</p> </td>
   </tr>
   <tr>
-   <td><p>Erforderlich (nullTest)</p> </td>
+   <td><p>Erforderlich (nullTest )</p> </td>
    <td><p>mandatory </p> </td>
   </tr>
   <tr>
-   <td><p>Leere Meldung (nullTestMessage) </p> </td>
+   <td><p>Meldung bei leerem Feld (nullTestMessage) </p> </td>
    <td><p>mandatoryMessage</p> </td>
   </tr>
   <tr>
-   <td><p>Überprüfungsskript (scriptTest)</p> </td>
+   <td><p>Skript überprüfen (scriptTest)</p> </td>
    <td><p>validateExp</p> </td>
   </tr>
   <tr>
@@ -269,4 +268,3 @@ Die folgende Tabelle erfasst, wie XFA-Überprüfungen den Überprüfungen in ada
 >[!NOTE]
 >
 >Es ist nicht möglich, die obligatorische Eigenschaft für die Optionsfeld- und Kontrollkästchengruppe im adaptiven Formular außer Kraft zu setzen, die an XFA-Prüfungsschaltflächen gebunden sind.
-
