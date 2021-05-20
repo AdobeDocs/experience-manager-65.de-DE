@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish, developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
-feature: Forms Portal
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Formularportal
+exl-id: a685889e-5d24-471c-926d-dbb096792bc8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '572'
 ht-degree: 95%
 
 ---
-
 
 # APIs zum Arbeiten mit gesendeten Formularen in Forms Portal {#apis-to-work-with-submitted-forms-on-forms-portal}
 
@@ -24,7 +23,7 @@ AEM Forms bietet APIs, mit deren Hilfe Sie über das Formularportal gesendete Fo
 
 >[!NOTE]
 >
->Benutzer, die die APIs aufrufen, müssen zur Reviewer-Gruppe hinzugefügt werden, wie unter [Verknüpfen von Reviewern mit einem Formular](/help/forms/using/adding-reviewers-form.md) beschrieben.
+>Benutzer, die die APIs aufrufen, müssen zur Gruppe der Überprüfer hinzugefügt werden, wie unter [Verknüpfen von Reviewer mit einem Formular](/help/forms/using/adding-reviewers-form.md) beschrieben.
 
 ## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
@@ -230,4 +229,3 @@ https://[host]:'port'/content/forms/portal/submission.review.json?func=updateSub
 ```json
 {"formName":"form2","owner":"admin","jcr:lastModified":1446727516593,"path":"/content/forms/fp/admin/submit/metadata/1403037413508500.html","submitID":"1403037413508500","status":"submitted"}
 ```
-
