@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 0f335ea0-504f-4cc0-b97b-c3fc715bcc2e
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Adaptive Formulare
+exl-id: 1333c6cb-15cc-429b-a13e-5d23afdee69a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 100%
 
 ---
-
 
 # Einführung in die mehrteilige Formularsequenz{#introduction-to-multi-step-form-sequence}
 
@@ -50,4 +49,3 @@ Nehmen wir ein Fallbeispiel, bei dem Sie für ein Formular eine Sequenz der Schr
 1. Führen Sie die restlichen Schritte aus, um die Formularvorlage zu erstellen. Weitere Informationen hierzu finden Sie unter [Erstellen einer benutzerdefinierten adaptiven Formularvorlage](../../forms/using/custom-adaptive-forms-templates.md).
 
 Nachdem Sie die Formularsequenz in der Formularvorlage definiert haben, können Sie sie zum Erstellen von Formularen verwenden, deren Grundstruktur der gegenwärtig definierten Sequenz entspricht. Sie haben jedoch immer die Möglichkeit, das Formular Ihren Bedürfnissen anzupassen.
-
