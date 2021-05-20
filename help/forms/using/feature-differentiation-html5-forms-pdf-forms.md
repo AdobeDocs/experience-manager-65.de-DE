@@ -11,14 +11,13 @@ topic-tags: hTML5_forms
 discoiquuid: bdd97c20-d1f2-4898-9862-1a6a8071be88
 docset: aem65
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 88%
 
 ---
-
 
 # Funktionsunterschiede zwischen HTML5- und PDF-Formularen {#feature-differentiation-between-html-forms-and-pdf-forms}
 
@@ -54,7 +53,7 @@ Die folgende Tabelle zeigt die Funktionsunterstützung für HTML5- und PDF-Formu
   <tr>
    <td>Seitenumbruch<br /> </td>
    <td><p>Ein HTML5-Formular ist in Bereiche und Felder unterteilt, damit es wie ein PDF-Formular wirkt. Die Seitengröße wird dynamisch berechnet. Wenn der gesamte Inhalt einer Seite in einem HTML5-Formular gelöscht oder als ausgeblendet markiert wird, wird die leere Seite ausgeblendet und es wird kein Leerraum zwischen den Seiten angezeigt, die der leeren Seite vorangehen und folgen.</p> <p>Wird einer Seite durch Datenzusammenführung oder Skripte Inhalt hinzugefügt, wird die Seite verlängert, damit der neu hinzukommende Inhalt Platz findet. Dem Formular werden keine neuen Seiten für den neuen Inhalt hinzugefügt. </p> <p><strong>Hinweis:</strong> Wenn der gesamte Inhalt einer Seite in einem HTML5-Formular gelöscht oder als ausgeblendet markiert wird, bleibt die leere Seite zwischen der ersten und zweiten, nicht jedoch zwischen den weiteren Seiten sichtbar.</p> </td>
-   <td>Die Paginierung in PDF hängt vom zusammengeführten Dateninhalt oder vom Benutzerinhalt ab und die Seitenanzahl wird je nach Inhalt erhöht/verringert.</td>
+   <td>Die Paginierung in PDF hängt vom zusammengeführten Dateninhalt oder dem Benutzerinhalt ab und die Seitenzahl wird je nach Inhalt erhöht/reduziert.</td>
   </tr>
   <tr>
    <td>Kopf- und Fußzeilen </td>
@@ -68,7 +67,7 @@ Die folgende Tabelle zeigt die Funktionsunterstützung für HTML5- und PDF-Formu
   </tr>
   <tr>
    <td>XFA-Skript-API</td>
-   <td>Unterstützt die am häufigsten verwendeten XFA-Skriptkonstrukte. Weitere Informationen zur Liste der unterstützten Konstrukte finden Sie unter <a href="/help/forms/using/scripting-support.md">Skriptunterstützung</a>.</td>
+   <td>Unterstützt die am häufigsten verwendeten XFA-Skriptkonstrukte. Eine detaillierte Liste der unterstützten Konstrukte finden Sie unter <a href="/help/forms/using/scripting-support.md">Skriptunterstützung</a>.</td>
    <td>Unterstützt alle XFA-Skriptkonstrukte.</td>
   </tr>
   <tr>
