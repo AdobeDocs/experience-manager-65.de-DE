@@ -7,27 +7,26 @@ uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Adaptive Formulare
+exl-id: cf037174-3153-486f-85b1-c974cd5a1ace
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 35%
 
 ---
 
-
 # API zum Aufrufen von Formulardatenmodelldiensten aus adaptiven Formularen {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
 ## Überblick {#overview}
 
-AEM Forms ermöglicht es Formularautoren, das Ausfüllen von Formularen weiter zu vereinfachen und zu verbessern, indem sie Dienste, die in einem Formulardatenmodell konfiguriert sind, aus einem adaptiven Formularfeld heraus aufrufen. Um einen Datenmodelldienst aufzurufen, können Sie entweder eine Regel im Visual Editor erstellen oder mit der API `guidelib.dataIntegrationUtils.executeOperation` im Code-Editor des [Regeleditors](/help/forms/using/rule-editor.md) ein JavaScript angeben.
+AEM Forms ermöglicht es Formularautoren, das Ausfüllen von Formularen weiter zu vereinfachen und zu verbessern, indem sie Dienste, die in einem Formulardatenmodell konfiguriert sind, aus einem adaptiven Formularfeld heraus aufrufen. Um einen Datenmodelldienst aufzurufen, können Sie entweder eine Regel im Visual Editor erstellen oder mithilfe der `guidelib.dataIntegrationUtils.executeOperation`-API im Code-Editor des [Regel-Editors](/help/forms/using/rule-editor.md) ein JavaScript angeben.
 
 In diesem Dokument wird das Schreiben von JavaScript im API`guidelib.dataIntegrationUtils.executeOperation` für den Aufruf eines Dienst beschrieben.
 
 ## Verwenden der API {#using-the-api}
 
-Die `guidelib.dataIntegrationUtils.executeOperation`-API ruft einen Dienst aus einem Feld für ein adaptives Formular auf. Für die API gilt die folgende Syntax:
+Die `guidelib.dataIntegrationUtils.executeOperation`-API ruft einen Dienst aus einem Feld in einem adaptiven Formular auf. Für die API gilt die folgende Syntax:
 
 ```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
@@ -77,24 +76,24 @@ Die API-Struktur gibt die folgenden Informationen zum Webdienst-Vorgang an.
   </tr>
   <tr>
    <td><code>Outputs</code></td>
-   <td>Ordnet ein oder mehrere Formularobjekte Ausgabewerten aus dem Dienstvorgang zu, um Formularfelder auszufüllen.<br /> </td>
+   <td>Ordnet ein oder mehrere Formularobjekte Ausgabewerten aus dem Dienstvorgang zu, um Formularfelder auszufüllen<br /> </td>
   </tr>
   <tr>
    <td><code>success</code></td>
-   <td>Gibt Werte basierend auf den Eingabeargumenten für den Dienstvorgang zurück. Dies ist ein optionaler Parameter, der als Rückruffunktion verwendet wird.<br /> </td>
+   <td>Gibt Werte basierend auf den Eingabeargumenten für den Dienstvorgang zurück. Dies ist ein optionaler Parameter, der als Callback-Funktion verwendet wird.<br /> </td>
   </tr>
   <tr>
    <td><code>failure</code></td>
-   <td>Zeigt eine Fehlermeldung an, wenn die Rückruffunktion success die Ausgabenwerte basierend auf den Eingabeargumenten nicht anzeigen kann. Dies ist ein optionaler Parameter, der als Rückruffunktion verwendet wird.<br /> </td>
+   <td>Zeigt eine Fehlermeldung an, wenn die success -Rückruffunktion die Ausgabewerte basierend auf den Eingabeargumenten nicht anzeigen kann. Dies ist ein optionaler Parameter, der als Callback-Funktion verwendet wird.<br /> </td>
   </tr>
  </tbody>
 </table>
 
 ## Beispielskript zum Erstellen eines Dienstes {#sample-script-to-invoke-a-service}
 
-Das folgende Beispielskript verwendet die API `guidelib.dataIntegrationUtils.executeOperation`, um den im Formulardatenmodell `employeeAccount` konfigurierten Dienstvorgang `getAccountById` aufzurufen.
+Das folgende Beispielskript verwendet die `guidelib.dataIntegrationUtils.executeOperation`-API, um den im Formulardatenmodell `employeeAccount` konfigurierten Dienstvorgang `getAccountById` aufzurufen.
 
-Der Vorgang `getAccountById` nimmt den Wert im Formularfeld `employeeID` als Eingabe für das `empId`-Argument und gibt Mitarbeitername, Kontonummer und Kontostand für den entsprechenden Mitarbeiter zurück. Die Ausgabewerte werden in den angegebenen Formularfeldern befüllt. Beispielsweise wird der Wert im Argument `name` im Formularelement `fullName` und der Wert für `accountNumber` im `account`-Formularelement gefüllt.
+Der Vorgang `getAccountById` nimmt den Wert im Formularfeld `employeeID` als Eingabe für das `empId`-Argument und gibt den Mitarbeiternamen, die Kontonummer und den Kontostand für den entsprechenden Mitarbeiter zurück. Die Ausgabewerte werden in den angegebenen Formularfeldern befüllt. Beispielsweise wird der Wert im Argument `name` im Formularelement `fullName` und der Wert für das Argument `accountNumber` im Formularelement `account` eingetragen.
 
 ```javascript
 var operationInfo = {
@@ -112,25 +111,25 @@ var outputs = {
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 ```
 
-## Verwenden der API mit der Rückruffunktion {#using-the-api-callback}
+## Verwenden der API mit der Callback-Funktion {#using-the-api-callback}
 
-Sie können den Formulardatenmodelldienst auch mit der API `guidelib.dataIntegrationUtils.executeOperation` mit einer Rückruffunktion aufrufen. Für die API gilt die folgende Syntax:
+Sie können den Formulardatenmodelldienst auch mit der `guidelib.dataIntegrationUtils.executeOperation`-API mit einer Rückruffunktion aufrufen. Für die API gilt die folgende Syntax:
 
 ```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, callbackFunction)
 ```
 
-Die Rückruffunktion kann über die Rückruffunktionen `success` und `failure` verfügen.
+Die Callback-Funktion kann über die Callback-Funktionen `success` und `failure` verfügen.
 
-### Beispielskript mit Rückruffunktionen für Erfolg und Fehler {#callback-function-success-failure}
+### Beispielskript mit Callback-Funktionen für Erfolg und Fehler {#callback-function-success-failure}
 
-Das folgende Beispielskript verwendet die API `guidelib.dataIntegrationUtils.executeOperation`, um den im Formulardatenmodell `employeeOrder` konfigurierten Dienstvorgang `GETOrder` aufzurufen.
+Das folgende Beispielskript verwendet die `guidelib.dataIntegrationUtils.executeOperation`-API, um den im Formulardatenmodell `employeeOrder` konfigurierten Dienstvorgang `GETOrder` aufzurufen.
 
-Der Vorgang `GETOrder` nimmt den Wert im Formularfeld `Order ID` als Eingabe für das `orderId`-Argument und gibt den Wert für die Bestellmenge in der Rückruffunktion `success` zurück.  Wenn die Rückruffunktion `success` nicht die Bestellmenge zurückgibt, zeigt die Rückruffunktion `failure` die Meldung `Error occured` an.
+Der Vorgang `GETOrder` nimmt den Wert im Formularfeld `Order ID` als Eingabe für das `orderId`-Argument und gibt den Wert der Bestellmenge in der Callback-Funktion `success` zurück.  Wenn die Rückruffunktion `success` die Auftragsmenge nicht zurückgibt, zeigt die Rückruffunktion `failure` die Meldung `Error occured` an.
 
 >[!NOTE]
 >
-> Wenn Sie die Rückruffunktion `success` verwenden, werden die Ausgabewerte nicht in die angegebenen Formularfelder eingefügt.
+> Wenn Sie die Callback-Funktion `success` verwenden, werden die Ausgabewerte nicht in die angegebenen Formularfelder eingefügt.
 
 ```javascript
 var operationInfo = {
