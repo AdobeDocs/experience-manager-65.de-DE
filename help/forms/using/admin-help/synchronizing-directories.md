@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7ec0698a-9e6e-48d4-bba2-5a6eee313900
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: cb642289-4137-4ba7-8bde-0e458c8c94fe
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 97%
 
 ---
-
 
 # Ordner synchronisieren {#synchronizing-directories}
 
@@ -72,7 +71,7 @@ Sie können User Management so konfigurieren, dass regelmäßige Prüfungen auf 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Konfiguration“ > „Erweiterte Systemattribute konfigurieren“.
 1. Geben Sie unter „Synchronisations-Finisher Cron Expression“ einen Cron-Ausdruck ein, der das Intervall, in dem User Management die fehlgeschlagenen Synchronisierungen erneut auszuführen versucht, angibt. Die Verwendung des Cron-Ausdrucks basiert auf dem Open-Source-Auftragsplanungssystem Quartz, Version 1.4.0.
 
-   Der Standardwert ist 0/13 &amp;ast; ? &amp;ast; , was bedeutet, dass die Überprüfung alle 13 Minuten erfolgt.
+   Der Standardwert ist 0/13 &amp;ast; ? &amp;ast; , was bedeutet, dass die Prüfung alle 13 Minuten durchgeführt wird.
 
 ## Ordner manuell synchronisieren {#manually-synchronize-directories}
 
@@ -100,4 +99,3 @@ Die Verwendung des Cron-Ausdrucks basiert auf dem Open-Source-Auftragsplanungssy
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domänenverwaltung“.
 1. Klicken Sie auf „Beenden“. Diese Schaltfläche wird nur während einer aktiven Ordnersynchronisierung angezeigt.
-
