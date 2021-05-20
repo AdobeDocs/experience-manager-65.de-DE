@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5bb32fb1-4b6e-412f-aa16-f60db9dcaba1
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: e8015d59-7587-46dc-a672-e0f1108102ad
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 97%
 
 ---
-
 
 # Konfigurieren von Berechtigungen für die Verwendung mit Acrobat Reader DC Extensions{#configuring-credentials-for-use-with-acrobat-reader-dc-extensions}
 
@@ -62,4 +61,3 @@ Der Trust Store enthält möglicherweise mehr als eine Acrobat Reader DCExtensio
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
 1. Notieren Sie sich den Alias der vorhandenen Berechtigung, wählen Sie ihn aus und klicken Sie auf „Löschen“.
 1. Importieren Sie die neue Berechtigung unter Verwendung von exakt demselben Aliasnamen.
-
