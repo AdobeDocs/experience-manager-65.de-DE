@@ -8,7 +8,6 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
-translation-type: tm+mt
 source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '719'
@@ -21,7 +20,7 @@ ht-degree: 86%
 
 AEM Forms stellt eine REST-basierte Such-API bereit, die Web-Entwickler verwenden können, um Abfragen in Formularsätzen durchzuführen und Formularsätze abzurufen, die die Suchkriterien erfüllen. Sie können APIs zum Durchsuchen von Formularen auf Basis verschiedener Filter verwenden. Das Antwortobjekt enthält Formularattribute, -Eigenschaften und Render-Endpunkte der Formulare.
 
-Um Formulare mit der REST-API zu suchen, senden Sie eine GET mit den unten beschriebenen Abfragen an den Server unter `https://'[server]:[port]'/libs/fd/fm/content/manage.json`.
+Um Formulare mithilfe der REST-API zu suchen, senden Sie eine GET-Anfrage unter `https://'[server]:[port]'/libs/fd/fm/content/manage.json` mit den unten beschriebenen Abfrageparametern an den Server.
 
 ## Abfrageparameter {#query-parameters}
 
@@ -68,7 +67,7 @@ Um Formulare mit der REST-API zu suchen, senden Sie eine GET mit den unten besch
   </tr>
   <tr>
    <td>returnCount</td>
-   <td>Gibt an, ob die Suchergebnisse, die den angegebenen Kriterien entsprechen, zurückgegeben werden sollen. </td>
+   <td>Gibt an, ob die Suchergebnisse zurückgegeben werden sollen, die den angegebenen Kriterien entsprechen oder nicht. </td>
   </tr>
   <tr>
    <td>statements</td>
@@ -107,7 +106,7 @@ Um Formulare mit der REST-API zu suchen, senden Sie eine GET mit den unten besch
        entityBuilder.add("orderings", orderingsArray.toString());</code></p>
     <ul>
      <li><strong>name</strong>: Gibt den Namen der Eigenschaft an, die zum Sortieren der Suchergebnisse verwendet werden soll.</li>
-     <li><strong>criteria</strong>: Gibt die Reihenfolge der Ergebnisse an. Das order-Attribut akzeptiert folgende Werte:
+     <li><strong>criteria</strong>: Gibt die Reihenfolge der Ergebnisse an. Das Bestellattribut akzeptiert die folgenden Werte:
       <ul>
        <li>ASC – verwenden Sie ASC, um die Ergebnisse in aufsteigender Reihenfolge anzuordnen.<br /> </li>
        <li>DES - Verwenden Sie DES, um die Ergebnisse in absteigender Reihenfolge anzuordnen.</li>
@@ -171,11 +170,11 @@ orderings:[{"name" :“lastModifiedDate“:”order”:”ASC”}]
 
 ## Verwandte Artikel
 
-* [Aktivieren der Forms Portal-Komponenten](/help/forms/using/enabling-forms-portal-components.md)
+* [Aktivieren von Forms Portal-Komponenten](/help/forms/using/enabling-forms-portal-components.md)
 * [Forms Portal-Seite erstellen](/help/forms/using/creating-form-portal-page.md)
 * [Auflisten von Formularen auf einer Webseite mithilfe von APIs](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Komponente &quot;Drafts and Submissions&quot;verwenden](/help/forms/using/draft-submission-component.md)
-* [Anpassen der Datenspeicherung von Entwürfen und gesendeten Formularen](/help/forms/using/draft-submission-component.md)
+* [Anpassen der Speicherung von Entwürfen und gesendeten Formularen](/help/forms/using/draft-submission-component.md)
 * [Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung in die Datenbank](/help/forms/using/integrate-draft-submission-database.md)
 * [Anpassen von Vorlagen für Forms Portal-Komponenten](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Einführung in das Veröffentlichen von Formularen in einem Portal](/help/forms/using/introduction-publishing-forms.md)
