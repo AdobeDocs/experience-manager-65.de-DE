@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a62b68b4-7735-49b1-8938-f0d9e4c4a051
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 7a4281e7-1544-473a-a471-e9a4c2819a58
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 89%
 
 ---
-
 
 # IBM DB2-Datenbank: Befehle zur regelmäßigen Wartung ausführen {#ibm-db-database-running-commands-for-regular-maintenance}
 
@@ -24,7 +23,7 @@ Die folgenden IBM DB2-Befehle werden für die regelmäßige Wartung Ihrer AEM Fo
 
 * **runstats:** Dieser Befehl aktualisiert Statistiken, die die physischen Merkmale einer Datenbanktabelle sowie der dazugehörigen Indizes beschreiben. Von AEM Forms generierte dynamische SQL-Anweisungen verwenden automatisch diese aktualisierten Statistiken. Für statische SQL-Anweisungen, die innerhalb einer Datenbank erstellt wurden, muss jedoch auch der Befehl `db2rbind` ausgeführt werden.
 * **db2rbind:** Dieser Befehl bindet alle Pakete in der Datenbank neu. Rufen Sie diesen Befehl nach Ausführung des Dienstprogramms `runstats` aus, um alle Pakete in der Datenbank erneut zu überprüfen.
-* **REORG-Tabelle oder -Index:** Dieser Befehl prüft, ob eine Neuorganisation bestimmter Tabellen und Indizes erforderlich ist.
+* **reorg table oder index:** Dieser Befehl überprüft, ob eine Neuorganisation einiger Tabellen und Indizes erforderlich ist.
 
    Da Datenbanken anwachsen und sich verändern, ist die Neuberechnung von Tabellenstatistiken wichtig für die Datenbankleistung und muss deshalb regelmäßig durchgeführt werden. Diese Befehle können entweder manuell mithilfe von Skripten oder über einen Cron-Auftrag ausgeführt werden.
 
@@ -44,7 +43,7 @@ Führen Sie den Befehl `runstats` für die folgenden AEM Forms-Datenbanktabellen
 >
 >Der Befehl `runstats` muss nur während der ersten Datenbanksynchronisation ausgeführt werden. Er sollte jedoch während dieses Prozesses zweimal ausgeführt werden: einmal während der Synchronisation von „Benutzer und Gruppen“ und anschließend während der Synchronisation von „Gruppenmitglieder“. Stellen Sie sicher, dass das Skript bei jeder Ausführung vollständig ausgeführt wird.
 
-Die ordnungsgemäße Syntax und Verwendung wird in der Dokumentation des Datenbankherstellers beschrieben. Unten wird `<schema>` verwendet, um das Schema anzugeben, das mit Ihrem DB2-Benutzernamen verknüpft ist. Wenn Sie eine einfache DB2-Standardinstallation haben, ist dies der Datenbankschemaname.
+Die ordnungsgemäße Syntax und Verwendung wird in der Dokumentation des Datenbankherstellers beschrieben. Unten wird `<schema>` verwendet, um das Schema zu kennzeichnen, das Ihrem DB2-Benutzernamen zugeordnet ist. Wenn Sie eine einfache DB2-Standardinstallation haben, ist dies der Datenbankschemaname.
 
 ```sql
      TABLE <schema>.EDCPRINCIPALGROUPENTITY
@@ -93,4 +92,3 @@ Führen Sie den Befehl `reorg` für die folgenden AEM Forms-Datenbanktabellen un
  
      INDEXES ALL FOR TABLE <schema>.EDCPRINCIPALGRPCTMNTENTITY
 ```
-
