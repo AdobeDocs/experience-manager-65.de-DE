@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7a85e13d-4800-47c4-812a-5c6e2355298a
-translation-type: tm+mt
-source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1928'
 ht-degree: 93%
 
 ---
-
 
 # Konfigurieren von Geschäftskalendern {#configuring-business-calendars}
 
@@ -40,11 +39,11 @@ Wenn für einige der Benutzer in Ihrer Organisation abweichende geschäftsfreie 
 
 1. Entscheiden Sie, wie Benutzern geeignete Geschäftskalender zugewiesen werden sollen. Es gibt zwei Methoden, um einem Benutzer einen Geschäftskalender zuzuordnen.
 
-   **Gruppenmitgliedschaft:** Sie können einem Benutzer einen Geschäftskalender zuweisen, der auf der Gruppenmitgliedschaft des Benutzers basiert. In diesem Fall verwenden alle Benutzer der Gruppe denselben Geschäftskalender.
+   **Gruppenmitgliedschaft:** Sie können einem Benutzer einen Geschäftskalender auf Grundlage der Gruppenmitgliedschaft des Benutzers zuweisen. In diesem Fall verwenden alle Benutzer der Gruppe denselben Geschäftskalender.
 
    Ist ein Benutzer Mitglied in zwei verschiedenen Gruppen, die unterschiedlichen Geschäftskalendern zugeordnet sind, verwendet AEM Forms den ersten in den Suchergebnissen gefundenen Kalender. In diesem Fall sollten Sie in Betracht ziehen, Benutzer anhand von Geschäftskalenderschlüsseln den Geschäftskalendern zuzuordnen.
 
-   **Geschäftskalenderschlüssel:** Sie können einem Benutzer einen Geschäftskalender auf der Grundlage eines Geschäftskalenderschlüssels zuweisen, wobei es sich um eine in User Management festgelegte Einstellung handelt. Anschließend ordnen Sie den Geschäftskalenderschlüssel einem Geschäftskalender im Arbeitsablauf für Formulare zu. 
+   **Geschäftskalenderschlüssel:** Sie können einem Benutzer einen Geschäftskalender auf der Grundlage eines Geschäftskalenderschlüssels zuweisen, was einer in User Management festgelegten Einstellung entspricht. Anschließend ordnen Sie den Geschäftskalenderschlüssel einem Geschäftskalender im Arbeitsablauf für Formulare zu. 
 
     Die Methode zum Zuweisen von Geschäftskalenderschlüsseln zu Benutzern ist davon abhängig, ob eine Unternehmens-, eine lokale oder eine Hybriddomäne verwendet wird. Detaillierte Informationen zum Einrichten von Domänen finden Sie unter [Domänen hinzufügen](/help/forms/using/admin-help/adding-domains.md#adding-domains). 
 
@@ -74,7 +73,7 @@ Wenn in Ihrer Organisation verschiedene Benutzergruppen mit unterschiedlichen ge
    Wählen Sie zum Bearbeiten eines vorhandenen Geschäftskalenders diesen aus der Dropdown-Liste aus.
 
 1. Wählen Sie unter „Geschäftsfreier Standardtag“ alle geschäftsfreien Wochentage aus, wie z. B. Wochenenden.
-1. [] OptionalWählen Sie Geschäftszeiten verwenden und geben Sie den Beginn und die Endzeit für die Geschäftstage an.
+1. [] Optional: Wählen Sie Geschäftszeiten verwenden aus und geben Sie die Start- und Endzeiten für die Geschäftstage an.
 
    Wenn Sie diese Option wählen, wird ein Ereignis, das vor dem angegebenen Zeitraum eintritt, an den Anfang des Zeitraums verschoben, und ein Ereignis, das nach dem Zeitraum eintritt, wird an die Anfangszeit des nächsten Geschäftstages verschoben.
 
@@ -82,7 +81,7 @@ Wenn in Ihrer Organisation verschiedene Benutzergruppen mit unterschiedlichen ge
 
 1. Doppelklicken Sie im Kalender auf der linken Seite auf alle weiteren geschäftsfreien Tage, wie z. B. Feiertage. Tage, die in der Vergangenheit liegen, können nicht ausgewählt werden. Die von Ihnen ausgewählten geschäftsfreien Tage werden in einer Liste auf der rechten Seite angezeigt, wobei das Datum zweimal pro Zeile angezeigt wird. Wählen Sie das linke Datum aus, um einen Namen oder eine Beschreibung für den geschäftsfreien Tag einzugeben.
 
-   Um einen geschäftsfreien Tag aus der Liste zu entfernen, klicken Sie neben dem Tag auf ![bus_cal_trash](assets/bus_cal_trash.png).
+   Um einen geschäftsfreien Tag aus der Liste zu entfernen, klicken Sie neben dem Tag auf ![bus_cal_trash](assets/bus_cal_trash.png) .
 
 1. [] OptionalWenn dieser Kalender der Standardkalender sein soll, wählen Sie &quot;Standardkalender&quot;. Der Standardkalender wird verwendet, wenn keine anderen Kalenderzuordnungen für Benutzern zugeordnete Ereignisse vorhanden sind oder wenn kein Geschäftskalender für das Timer-Ereignis oder den Wait-Dienst festgelegt ist. Der Standardkalender kann nicht gelöscht werden.
 1. Wenn die Definition der geschäftsfreien Tage fertig gestellt ist, wählen Sie „Kalender aktiviert“, um den Kalender zu aktivieren, und klicken dann auf „Speichern“.
@@ -100,7 +99,7 @@ Es gibt zwei Methoden, um einem Benutzer einen Geschäftskalender zuzuordnen. Si
 ### Benutzern Geschäftskalender auf Grundlage von Geschäftskalenderschlüsseln zuordnen  {#associate-business-calendars-with-users-based-on-business-calendar-keys}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Geschäftskalender“, und klicken Sie dann auf die Registerkarte „Zuordnung“.
-1. Wählen Sie in der Liste &quot;Das System verwendet&quot;die Option &quot;User Manager-Geschäftskalenderschlüssel-Auflösung&quot;.
+1. Wählen Sie in der Liste &quot;System Will Use&quot;die Option User Manager Business Calendar Key Resolution.
 1. Wählen Sie „User Manager-Geschäftskalenderschlüssel anzeigen“. Eine Liste mit einem Satz eindeutiger Geschäftskalenderschlüssel, die in User Management definiert wurden, wird angezeigt.
 
    Bei lokalen und Hybriddomänen zeigt die Liste die Werte an, die in User Management in das Feld „Geschäftskalenderschlüssel“ eingegeben wurden. Bei Unternehmensdomänen (LDAP) zeigt die Liste den eindeutigen Satz an, der von dem LDAP-Feld zurückgegeben wird (z. B. „country“), das in den LDAP-Domäneneinstellungen konfiguriert wurde.
@@ -113,7 +112,7 @@ Es gibt zwei Methoden, um einem Benutzer einen Geschäftskalender zuzuordnen. Si
 ### Benutzern und Gruppen Geschäftskalender auf Grundlage von Ordnerdienstgruppen zuordnen  {#associate-business-calendars-with-users-and-groups-based-on-directory-service-groups}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Geschäftskalender“, und klicken Sie dann auf die Registerkarte „Zuordnung“.
-1. Wählen Sie im System, das die Liste verwendet, die Option Vom Ordnerserver definierte Gruppen.
+1. Wählen Sie in der Liste &quot;System Will Use&quot;die Option vom Verzeichnisserver definierte Gruppen aus.
 1. Wählen Sie auf der Registerkarte „Zuordnung“ die Option „Verzeichnisdienstgruppen anzeigen“. Eine Liste mit den Gruppen, die in User Management definiert wurden, wird angezeigt. (Siehe [Ordnereinstellungen](/help/forms/using/admin-help/configuring-directories.md#directory-settings).)
 
    >[!NOTE]
@@ -149,4 +148,3 @@ Alle Geschäftskalender, die in Ihrer Organisation nicht mehr benötigt werden, 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Geschäftskalender“.
 1. Wählen Sie den Kalender aus.
 1. Klicken Sie auf Löschen.
-
