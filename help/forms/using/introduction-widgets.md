@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: 3458471a-9815-463e-8044-68631073863c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1200'
 ht-degree: 93%
 
 ---
-
 
 # Erscheinungsbild-Framework für adaptive und HTML5-Formulare {#appearance-framework-for-adaptive-and-html-forms}
 
@@ -53,7 +52,7 @@ Im Folgenden die globalen Optionen. Diese Optionen sind für jedes Feld verfügb
   </tr>
   <tr>
    <td>screenReaderText</td>
-   <td>Bildschirmlesehilfen verwenden diesen Wert, um Informationen über das Feld vorzulesen. Das Formular gibt den Wert an und Sie können den Wert überschreiben.<br /> </td>
+   <td>Bildschirmlesehilfen verwenden diesen Wert, um Informationen über das Feld vorzulesen. Das Formular stellt den Wert bereit und Sie können den Wert überschreiben.<br /> </td>
   </tr>
   <tr>
    <td>tabIndex</td>
@@ -135,10 +134,10 @@ Die Erscheinungsbild-Framework ruft einige Funktionen des Widgets auf, die in de
   </tr>
   <tr>
    <td>click : function()</td>
-   <td>Fokus wird auf das Feld gelegt und XFA_CLICK_EREIGNIS wird aufgerufen.</td>
+   <td>Fokus wird auf das Feld gelegt und XFA_CLICK_EVENT wird aufgerufen.</td>
   </tr>
   <tr>
-   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>erorrMessage: Zeichenfolge </em>zur Darstellung des Fehlers<br /> <em>errorType: string ("warning"/"error")</em></p> <p><strong>Hinweis</strong>: Gilt nur für HTML5-Formulare.</p> </td>
+   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>erorrMessage: string </em>der den Fehler<br /> <em>errorType darstellt: string ("warning"/"error")</em></p> <p><strong>Hinweis</strong>: Gilt nur für HTML5-Formulare.</p> </td>
    <td>Sendet Fehlermeldung und Fehlertyp an das Widget. Das Widget zeigt den Fehler an.</td>
   </tr>
   <tr>
@@ -248,7 +247,7 @@ Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen 
    <th>Beschreibung</th>
   </tr>
   <tr>
-   <td>Werte</td>
+   <td>values</td>
    <td><p>Werte-Array(an/aus/neutral).</p> <p>Werte-Array für die verschiedenen Statusangaben des CheckButton. Wert[0] steht für den Status AN, Wert[1] steht für den Status AUS,<br /> Wert[2] steht für den Status NEUTRAL. Die Länge des Werte-Arrays entspricht dem Wert der Status-Option.<br /> </p> </td>
   </tr>
   <tr>
