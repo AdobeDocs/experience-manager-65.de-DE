@@ -7,15 +7,14 @@ uuid: 9ec359ea-f518-441c-9c3d-e3c1ea07a532
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Adaptive Formulare
+exl-id: aed5703e-4fe6-4839-9657-c660ac48521e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 89%
 
 ---
-
 
 # Formularvorschau {#previewing-a-form}
 
@@ -54,11 +53,11 @@ In der folgenden Tabelle sind die Vorschauoptionen aufgeführt, für unterschied
 
 ## Formularvorschau {#previewing-a-form-1}
 
-1. Wählen Sie ein Asset aus, das Sie Vorschauen vornehmen möchten, und klicken Sie in der Aktionsleiste auf Vorschau ![aem6forms_Vorschau](assets/aem6forms_preview.png).
+1. Wählen Sie ein Asset aus, das Sie in der Vorschau anzeigen möchten, und klicken Sie in der Aktionssymbolleiste auf Vorschau ![aem6forms_preview](assets/aem6forms_preview.png) .
 
    >[!NOTE]
    >
-   >Um ein Asset auszuwählen, wechseln Sie aus der Standardkartenansicht in die Listenansicht. Klicken Sie auf ![aem6forms_viewlist](assets/aem6forms_viewlist.png) oder ![aem6forms_viewcard](assets/aem6forms_viewcard.png), um die Ansichten zu wechseln.
+   >Um ein Asset auszuwählen, wechseln Sie aus der Standardkartenansicht in die Listenansicht. Klicken Sie auf ![aem6forms_viewlist](assets/aem6forms_viewlist.png) oder ![aem6forms_viewcard](assets/aem6forms_viewcard.png) , um die Ansichten zu wechseln.
 
 1. Wenn Sie auf „Vorschau“ klicken, werden die möglichen Vorschauoptionen für den ausgewählten Asset-Typ aufgelistet. Klicken Sie auf die gewünschte Option, um das ausgewählte Asset in einer neuen Registerkarte anzuzeigen.
 
@@ -72,6 +71,5 @@ In der folgenden Tabelle sind die Vorschauoptionen aufgeführt, für unterschied
 
 Wenn Sie **Vorschau mit Daten** auswählen, können Sie das Formular mit echten eingegebenen Daten sehen. Bei der Option „Vorschau mit Daten“ können Sie eine XML hochladen, die Beispielbenutzerdaten enthält. Die Beispielbenutzerdaten werden verwendet, um das Vorschauformular in dem ausgewählten Format auszufüllen.
 
-1. Wählen Sie ein Asset aus, klicken Sie auf Vorschau ![aem6forms_Vorschau](assets/aem6forms_preview.png) und wählen Sie **Vorschau mit Daten**.
+1. Wählen Sie ein Asset aus, klicken Sie auf Vorschau ![aem6forms_preview](assets/aem6forms_preview.png) und wählen Sie **Vorschau mit Daten** aus.
 1. Geben Sie im Dialogfeld „Preview Form“ (Formularvorschau) FormData als XML-Datei an. Klicken Sie auf „Vorschau“, um das Formular mit den zusammengeführten Daten aus der XML anzuzeigen.
-
