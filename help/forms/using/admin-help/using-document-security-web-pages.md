@@ -9,15 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
-feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Dokumentensicherheit
+exl-id: caa31752-a02d-4d20-b7d9-c4aad5d0fae6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 97%
 
 ---
-
 
 # Verwenden der Document Security-Webseiten {#using-the-document-security-webpages}
 
@@ -49,9 +48,9 @@ Für Administratoren wird ein standardmäßiges Superadministratorkonto während
 
 1. Geben Sie die URL in den Browser ein.
 
-   Dokument-Sicherheits-URL: `https://[host]:[port]/edc`
+   Document Security-URL: `https://[host]:[port]/edc`
 
-   oder URL der Administrationskonsole: `https://[host]:[port]/adminui`
+   oder Administration Console-URL: `https://[host]:[port]/adminui`
 
 1. Geben Sie im Anmeldefenster Ihren Benutzernamen und Ihr Kennwort ein und klicken Sie auf „OK“.
 1. Klicken Sie in Administration Console auf „Dienste“ > „Document Security“.
@@ -107,4 +106,3 @@ Melden Sie sich ab, wenn Sie die Aufgaben auf den Webseiten erledigt haben, dami
 
 1. Klicken Sie oben rechts auf der Seite auf „Abmelden“.
 1. Wenn eine Meldung auf der Seite „Abmelden“ angezeigt wird, schließen Sie das Browserfenster, um sich vollständig abzumelden. Ansonsten können Sie den Browser für andere Zwecke weiter verwenden.
-
