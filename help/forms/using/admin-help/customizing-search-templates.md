@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
-translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+exl-id: bf69de86-2ca6-4d21-936c-07c1debacfa0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '891'
 ht-degree: 88%
 
 ---
-
 
 # Suchvorlagen anpassen {#customizing-search-templates}
 
@@ -47,9 +46,9 @@ Sie können ganz nach Bedarf beliebig viele Suchvorlagen erstellen.
 
    * Wählen Sie oben in der Registerkarte „Kriterien“ ein Prozess- oder Aufgabenelement aus.
 
-      **Tipp**:  *Wenn Sie zuvor das Element &quot;Prozessname&quot;ausgewählt und einen Prozess angegeben haben, stehen alle in diesem Prozess definierten Prozessvariablen ebenfalls zur Auswahl bereit.*
+      **Tipp**:  *Wenn Sie zuvor das Element &quot;Process Name&quot;ausgewählt und einen Prozess angegeben haben, können auch alle in diesem Prozess definierten Prozessvariablen ausgewählt werden.*
 
-      **Tipp**:  *Wenn Sie das Element &quot;Aufgabe sichtbar&quot;auswählen, können Benutzer abgeschlossene Aufgaben aus den Suchergebnissen entfernen.*
+      **Tipp**:  *Wenn Sie das Element &quot;Aufgabe eingeblendet&quot;auswählen, können Benutzer abgeschlossene Aufgaben aus den Suchergebnissen entfernen.*
 
       Die Suchkriterienfelder für das ausgewählte Element werden am unteren Rand der Registerkarte angezeigt.
 
@@ -88,4 +87,3 @@ Sie können ganz nach Bedarf beliebig viele Suchvorlagen erstellen.
 
 1. Wählen Sie auf der Registerkarte „Kennung“ einen Namen in der Liste „Suchvorlagenname“ aus.
 1. Klicken Sie auf „Diese Vorlage löschen“ und dann auf „OK“.
-
