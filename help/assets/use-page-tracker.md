@@ -1,21 +1,20 @@
 ---
-title: Verwenden von Seiten-Tracker und Einbettungscode in Webseiten
+title: Verwenden des Seitentrackers und des Einbettungscodes in Webseiten
 description: Erfahren Sie mehr über das Miteinbeziehen der Seitenverfolgung und das Einbetten von JavaScript-Codes in Ihren Website-Code, damit Adobe Analytics Nutzungsdaten zu Assets erfassen kann.
 contentOwner: AG
 role: Architect, Administrator
-feature: Asset Reports
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: 'Asset-Berichte '
+exl-id: 14d02015-df00-4566-a098-de76eaf42605
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '178'
 ht-degree: 70%
 
 ---
 
+# Verwenden des Seitentrackers und des Einbettungscodes in Webseiten {#using-page-tracker-and-embed-code-in-web-pages}
 
-# Verwenden von Seiten-Tracker und Einbettungscode in Webseiten {#using-page-tracker-and-embed-code-in-web-pages}
-
-Page Tracker ist ein JavaScript-Code, den Sie in den Code von Drittanbieter-Websites aufnehmen, damit Adobe Analytics Nutzungsdaten rund um [!DNL Adobe Experience Manager Assets] auf diesen Websites erfassen kann.
+Seitenverfolgung ist ein JavaScript-Code, den Sie in den Code von Drittanbieter-Websites einfügen, damit Adobe Analytics Nutzungsdaten rund um [!DNL Adobe Experience Manager Assets] auf diesen Websites erfassen kann.
 
 Um Ereignisse wie Klicks usw. zu erfassen, die Asset-spezifisch sind, beziehen Sie auch den Einbettungscode in den Code der Websites von Drittanbietern ein.
 
@@ -61,7 +60,7 @@ Der folgende Beispiel-Code veranschaulicht, wie eine Web-Seite aussieht, die sow
 </html>
 ```
 
-## hinzufügen Seiten-Tracker-Code {#adding-page-tracker-code}
+## Hinzufügen des Seitenverfolgungscodes {#adding-page-tracker-code}
 
 Sie fügen den Seitenverfolgungs-Code in der Kopfzeile des Website-Codes hinzu. Das folgende Codebeispiel zeigt den Seitenverfolgungscode, der in einer Beispielwebseite enthalten ist:
 
@@ -81,7 +80,7 @@ Sie fügen den Seitenverfolgungs-Code in der Kopfzeile des Website-Codes hinzu. 
  </head>
 ```
 
-## hinzufügen Einbettungscode {#add-embed-code}
+## Einbettungscode hinzufügen {#add-embed-code}
 
 Sie können Einbettungs-Code im Hauptteil des Website-Codes hinzufügen. Das folgende Code-Beispiel zeigt den Einbettungs-Code, der in einer Web-Seite enthalten ist:
 
