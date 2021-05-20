@@ -11,14 +11,13 @@ topic-tags: designer
 discoiquuid: ecd7f538-9c24-48e7-8450-596851e99cff
 docset: aem65
 feature: Designer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 2025182f-195b-40d0-aee7-67669f55b964
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 89%
 
 ---
-
 
 # Verwenden der Scribble-Signatur in HTML5-Formularen{#using-scribble-signature-in-html-forms}
 
@@ -46,7 +45,7 @@ HTML5-Formulare werden zunehmend auf Touch-Geräten verwendet. Sie sind eine all
       >
       >Um die Registerkarte &quot;XML-Quelle&quot;zu öffnen, klicken Sie auf **Ansicht** > **XML-Quelle**.
 
-   1. Suchen Sie das `<ui>`-Tag im `<field>`-Tag und ändern Sie den Quellcode wie folgt:
+   1. Suchen Sie das Tag `<ui>` im Tag `<field>` und ändern Sie den Quellcode wie folgt:
 
       ```xml
       <extras name="x-scribble-add-on">
@@ -67,7 +66,7 @@ Nachdem ein Scribble-Signatur-Feld dem Formular hinzugefügt wurde und das Formu
 
 ![Geolocation](assets/geolocation.png)
 
-**A.** Brush  **B.** Radiergummi  **C.** Geolocation  **D.** Geolocation
+**A.** Pinsel  **B.** Radiergummi  **C.** Geolocation  **D.** Geolocation-Informationen
 
 ### Geotagging {#geo-tagging}
 
@@ -85,7 +84,7 @@ Diese Einstellung kann auf iPads geändert werden, indem in den init-Parametern 
 
 ### Löschen einer Signatur  {#clearing-a-signature}
 
-Bei Verwendung dieser Funktion kann ein Benutzer auf das Symbol **Radiergummi** klicken, um das Feld zu löschen, und den Beginn darüber aufheben. Wenn zuvor geografische Informationen hinzugefügt wurden, werden diese ebenfalls gelöscht.
+Bei Verwendung dieser Funktion kann ein Benutzer auf das Symbol **Radiergummi** klicken, um das Feld zu löschen und neu zu beginnen. Wenn zuvor geografische Informationen hinzugefügt wurden, werden diese ebenfalls gelöscht.
 
 ### Speichern einer Signatur  {#saving-a-signature}
 
