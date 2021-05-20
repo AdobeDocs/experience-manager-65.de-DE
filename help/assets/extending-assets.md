@@ -1,34 +1,33 @@
 ---
-title: ' [!DNL Assets] anpassen und erweitern'
+title: Anpassen und Erweitern von  [!DNL Assets]
 description: Informieren Sie sich, wie Sie die Asset-Freigabe und den Asset-Editor anpassen und erweitern können, um Benutzern eine maßgeschneiderte Oberfläche und passende Funktionen zur Verfügung zu stellen.
 contentOwner: AG
 role: Developer
-feature: Developer Tools
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: Entwickler-Tools
+exl-id: 0271c528-23b0-4a3a-b5e8-5baf6cdeecc7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '255'
 ht-degree: 58%
 
 ---
 
+# Anpassen und Erweitern von [!DNL Assets] {#customizing-and-extending-assets}
 
-# [!DNL Assets] {#customizing-and-extending-assets} anpassen und erweitern
+Der Asset-Editor ist der primäre Zugriffspunkt, den Benutzer einer Adobe Enterprise Manager-Website verwenden, um die digitalen Assets in Ihrem Repository zu finden, anzuzeigen und zu bearbeiten.
 
-Der Asset-Editor ist der Hauptzugriff, den Benutzer einer Adobe Enterprise Manager-Website zum Suchen, Ansichten und Manipulieren der digitalen Assets in Ihrem Repository verwenden.
-
-Als [!DNL Experience Manager]-Entwickler können Sie den Asset-Editor auf verschiedene Weise anpassen und erweitern, indem Sie den Benutzern eine speziell angepasste Oberfläche und eine Reihe von Funktionen präsentieren.
+Als Entwickler von [!DNL Experience Manager] können Sie den Asset-Editor auf verschiedene Arten anpassen und erweitern, indem Sie Benutzern eine speziell auf sie zugeschnittene Benutzeroberfläche und eine Reihe von Funktionen präsentieren.
 
 Die folgenden Funktionen können angepasst bzw. verbessert werden:
 
-* [Asset-Editor erweitern](asseteditorx.md)
-* [Suche nach Assets erweitern](searchx.md)
-* [Verarbeiten von Assets mithilfe von Media Handlers und Workflows](media-handlers.md)
-* [Assets mit Aktivitäten-Stream integrieren](extending-activity-stream.md)
-* [Asset Proxy-Entwicklung](proxy.md)
-* [Empfohlene Vorgehensweisen zum Konfigurieren von ImageMagick](best-practices-for-imagemagick.md)
+* [Erweitern des Asset-Editors](asseteditorx.md)
+* [Erweitern der Asset-Suche](searchx.md)
+* [Verarbeiten von Assets mit Medien-Handlern und Workflows](media-handlers.md)
+* [Integrieren von Assets in Aktivitäts-Streams](extending-activity-stream.md)
+* [Asset-Proxy-Entwicklung](proxy.md)
+* [Best Practices zum Konfigurieren von ImageMagick](best-practices-for-imagemagick.md)
 
-## Erscheinungsbild {#customizing-the-look-and-feel} anpassen
+## Anpassen des Erscheinungsbilds {#customizing-the-look-and-feel}
 
 Die folgenden Aspekte des Erscheinungsbilds des Asset-Editors sind anpassbar:
 
@@ -36,8 +35,8 @@ Die folgenden Aspekte des Erscheinungsbilds des Asset-Editors sind anpassbar:
 * Farben und Schriftarten: Sie können die Farben und Schriftarten ändern, die in der Benutzeroberfläche verwendet werden.
 * HTML-Code: Zur besseren Anpassung können Sie den zugrunde liegenden HTML-Code ändern, der die Benutzeroberflächen definiert.
 
-## Darstellungen {#customizing-renditions} anpassen
+## Anpassen von Ausgabeformaten {#customizing-renditions}
 
-In der [!DNL Experience Manager Assets]-Terminologie ist eine Darstellung das Formular, in dem ein Asset angezeigt wird. Im Allgemeinen kann ein Asset mehrere Ausgabeformate haben. Z. B. kann ein Farbbild in seiner Originalgröße ausgegeben, verkleinert oder verkleinert und in Graustufen konvertiert sein.
+In der [!DNL Experience Manager Assets]-Terminologie ist eine Ausgabedarstellung das Formular, in dem ein Asset angezeigt wird. Im Allgemeinen kann ein Asset mehrere Ausgabeformate haben. Z. B. kann ein Farbbild in seiner Originalgröße ausgegeben, verkleinert oder verkleinert und in Graustufen konvertiert sein.
 
 Die Ausgabeformate, in denen ein bestimmtes Asset verfügbar ist, können angepasst werden und es können neue Ausgaben erstellt haben.
