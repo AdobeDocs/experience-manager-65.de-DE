@@ -1,126 +1,124 @@
 ---
-title: Verwenden Sie den Layoutmodus, um die Größe von Komponenten für adaptive Formulare zu ändern
-description: 'Definieren der Position von Komponenten mithilfe des im Layoutmodus verfügbaren interaktiven Rasters '
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+title: Verwenden Sie den Layout-Modus, um die Größe von Komponenten für adaptive Formulare zu ändern
+description: 'Definieren Sie die Position der Komponenten mithilfe des im Layout -Modus verfügbaren responsiven Rasters. '
+feature: Adaptive Formulare
+exl-id: 5cf76cb1-c92c-4aed-9945-37494fef2d29
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 2%
 
 ---
 
+# Verwenden Sie den Layout-Modus, um die Größe von Komponenten {#use-layout-mode-to-resize-components} zu ändern.
 
-# Verwenden Sie den Layoutmodus, um die Größe von Komponenten {#use-layout-mode-to-resize-components} zu ändern
+Mit der Authoring-Oberfläche für adaptive Formulare können Sie die Größe von Komponenten mithilfe des Layout-Modus ändern. Ziehen Sie blaue Punkte in die Spalten, um die Start- und Endpunkte zum Positionieren von Komponenten zu definieren. Die blauen Punkte werden angezeigt, nachdem auf die Komponente im responsiven Raster getippt wurde. Das responsive Raster besteht aus 12 gleichen Spalten. Die weiße und blaue Farbschattierung in alternativen Spalten unterscheidet eine Spalte von der anderen.
 
-Die Authoring-Oberfläche für adaptive Formulare ermöglicht es Ihnen, die Größe von Komponenten mithilfe des Layoutmodus zu ändern. Ziehen Sie blaue Punkte in Spalten, um den Beginn und den Endpunkt für die Positionierung der Komponenten zu definieren. Die blauen Punkte werden angezeigt, nachdem auf die Komponente im interaktiven Raster getippt wurde. Das reaktionsfähige Raster besteht aus 12 gleichen Spalten. Die weiße und blaue Farbschattierung in alternativen Spalten unterscheidet eine Spalte von der anderen.
+Sie können den Layout -Modus verwenden, um die Größe von Komponenten für alle Gerätetypen wie Desktop, Tablet, Telefon und andere kleinere Geräte zu ändern. Das Tablet leitet die Layoutkonfiguration automatisch von der Desktop-Version ab und die kleineren Geräte leiten die Layoutkonfiguration vom Telefon ab. Sie können jedoch die automatisch abgeleiteten Konfigurationen überschreiben, um für jeden Gerätetyp eine andere Konfiguration zu definieren.
 
-Sie können den Layoutmodus verwenden, um die Größe von Komponenten für alle Gerätetypen wie Desktop, Tablet, Smartphone und andere kleinere Geräte zu ändern. Das Tablet leitet die Layoutkonfiguration automatisch von der Desktop-Version ab und die kleineren Geräte leiten die Layoutkonfiguration vom Smartphone ab. Sie können die automatisch abgeleiteten Konfigurationen jedoch überschreiben, um für jeden Gerätetyp eine andere Konfiguration zu definieren.
+## Zugriff auf Layout-Modus {#access-layout-mode}
 
-## Layout-Modus aufrufen {#access-layout-mode}
-
-Wählen Sie **Layout** aus der Dropdown-Liste, die oben in der Authoring-Oberfläche für adaptive Formulare neben der Option **Vorschau** angezeigt wird. Das Formular wird im Layoutmodus angezeigt.
+Wählen Sie **Layout** aus der Dropdown-Liste, die oben in der Authoring-Benutzeroberfläche für adaptive Formulare neben der Option **Vorschau** angezeigt wird. Das Formular wird im Layout -Modus angezeigt.
 
 1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **Adobe Experience Manager** > **Formulare** > **Formulare und Dokumente**.
 1. Erstellen Sie ein neues oder öffnen Sie ein vorhandenes [adaptives Formular](../../forms/using/creating-adaptive-form.md).
-1. Wählen Sie **Layout** aus der Dropdown-Liste, die oben neben der Option **Vorschau** angezeigt wird. Das Formular wird im Layoutmodus angezeigt.
+1. Wählen Sie **Layout** aus der Dropdownliste, die oben neben der Option **Vorschau** angezeigt wird. Das Formular wird im Layout -Modus angezeigt.
 
    ![Layout-Modus](assets/layout_mode_ic_new.png)
 
 ## Größe von Komponenten anpassen {#resize-components}
 
-1. Tippen Sie im Layoutmodus auf die zu ändernde Komponente. Die blauen Punkte werden am Beginn und am Ende des reaktionsfähigen Rasters angezeigt.
-1. Ziehen Sie die blauen Punkte per Drag &amp; Drop, um die Position der Komponente im interaktiven Raster zu definieren.
+1. Tippen Sie im Layout -Modus auf die Komponente, um die Größe zu ändern. Die blauen Punkte werden am Anfang und Ende des responsiven Rasters angezeigt.
+1. Ziehen Sie die blauen Punkte per Drag-and-Drop in das responsive Raster, um die Position der Komponente zu definieren.
 
-   ![Größe mithilfe des Layoutmodus ändern](assets/layout_mode_resize_new_updated1.png)
+   ![Größenanpassung mithilfe des Layout-Modus](assets/layout_mode_resize_new_updated1.png)
 
    Die Symbolleiste, die nach dem Tippen auf Komponenten angezeigt wird, besteht aus den folgenden Optionen:
 
    * **[!UICONTROL Übergeordnet]**: Wählen Sie das übergeordnete Element einer Komponente aus.
-   * **[!UICONTROL Haltepunktlayout]** zurücksetzen: Rückgängigmachen aller Änderungen der Größe und Anwenden des Standardlayouts auf die Komponente
-   * **[!UICONTROL In neue Zeile]** schwebend: Versetzen Sie die Komponente in die nächste Zeile, wenn sich mehrere Komponenten in derselben Zeile befinden.
+   * **[!UICONTROL Breakpoint-Layout zurücksetzen]**: Machen Sie alle Größenänderungen rückgängig und wenden Sie das Standardlayout auf die Komponente an.
+   * **[!UICONTROL In neue Zeile]** verschieben: Schalten Sie die Komponente in die nächste Zeile um, wenn sich mehrere Komponenten in derselben Zeile befinden.
 
-   Sie können auch die Option **[!UICONTROL Haltepunktlayout umkehren]** ( ![Haltepunkt zurücksetzen](assets/reverttopreviouslypublishedversion.png)) auf Bereichsebene verwenden, um alle Änderungen der Größe rückgängig zu machen.
+   Sie können auch die Option **[!UICONTROL Breakpoint-Layout]** zurücksetzen ( ![Breakpoint](assets/reverttopreviouslypublishedversion.png) zurücksetzen) auf Bereichsebene verwenden, um alle Größenänderungen rückgängig zu machen.
 
    >[!NOTE]
    >
-   >Die Größe von Tabellenspalten, Symbolleisten-, Symbolleisten- und Zielgruppen-Bereichskomponenten kann im Layoutmodus nicht geändert werden. Verwenden Sie den Stilmodus, um die Größe dieser Komponenten zu ändern.
+   >Sie können die Größe von Tabellenspalten, Symbolleiste, Symbolleisten-Schaltfläche und Zielbereichskomponenten nicht im Layout -Modus ändern. Verwenden Sie den Stilmodus, um die Größe dieser Komponenten zu ändern.
 
 ### Beispiel {#example}
 
-**Ziel:** Sie möchten eine Tabellenkomponente und eine Bildkomponente einfügen und sie in einem adaptiven Formular parallel zueinander positionieren.
+**Zielsetzung:** Sie möchten eine Tabellenkomponente und eine Bildkomponente einfügen und sie in einem adaptiven Formular parallel zueinander positionieren.
 
-1. Fügen Sie die Tabellen- und Bildkomponenten im Bearbeitungsmodus im adaptiven Formular ein. Die Image-Komponente wird nach der Tabellenkomponente angezeigt.
-1. Wechseln Sie zum Layoutmodus und tippen Sie auf die Komponente &quot;Tabelle&quot;. Die blauen Punkte zur Größenanpassung der Komponente werden in den Spalten 1 und 12 angezeigt.
-1. Ziehen Sie den blauen Punkt in Spalte 12 in Spalte 6 des interaktiven Rasters.
+1. Fügen Sie die Tabellen- und Bildkomponenten im Bearbeitungsmodus in das adaptive Formular ein. Die Bildkomponente wird nach der Tabellenkomponente angezeigt.
+1. Wechseln Sie in den Layout -Modus und tippen Sie auf die Komponente Tabelle . Die blauen Punkte zur Größenanpassung der Komponente werden in den Spalten 1 und 12 angezeigt.
+1. Ziehen Sie den blauen Punkt in Spalte 12 in Spalte 6 des responsiven Rasters.
 
-   ![Definieren des Endpunkts der Tabelle](assets/layout_mode_end_point_table_new.png)
+   ![Endpunkt der Tabelle definieren](assets/layout_mode_end_point_table_new.png)
 
-1. Wählen Sie auf ähnliche Weise die Image-Komponente aus und ziehen Sie den blauen Punkt in Spalte 1 in Spalte 7 des interaktiven Rasters. Die Tabellen- und Bildkomponenten werden parallel zueinander angezeigt.
+1. Wählen Sie auf ähnliche Weise die Bildkomponente aus und ziehen Sie den blauen Punkt in Spalte 1 in Spalte 7 des responsiven Rasters. Die Tabellen- und Bildkomponenten werden parallel zueinander angezeigt.
 
-   ![Tabelle und Bild parallel im Layoutmodus](assets/table_image_parallel_new.png)
+   ![Tabelle und Bild im Layout-Modus parallel](assets/table_image_parallel_new.png)
 
-   Sie können die Image-Komponente auswählen und auf die Option **Zu neuer Zeile** tippen, die in der Symbolleiste verfügbar ist, um die Image-Komponente zur nächsten Zeile zu verschieben.
+   Sie können die Bildkomponente auswählen und auf die Option **In neue Zeile verschieben** tippen, die in der Symbolleiste verfügbar ist, um die Bildkomponente in die nächste Zeile zu verschieben.
 
-## Größe von Bedienfeldern ändern {#resize-panels-layout-mode}
+## Größe von Bereichen ändern {#resize-panels-layout-mode}
 
 Führen Sie die folgenden Schritte aus, wenn Sie die Größe des gesamten Bedienfelds anstelle einzelner Komponenten ändern möchten:
 
-1. Tippen Sie auf eine der Komponenten im Bedienfeld, deren Größe Sie ändern möchten, wählen Sie ![Übergeordnet auswählen](assets/select_parent_icon.svg) und wählen Sie die erste Option in der Dropdown-Liste aus, wenn das Bedienfeld direkt über der Komponente liegt.
+1. Tippen Sie auf eine der Komponenten im Bedienfeld, deren Größe Sie ändern möchten, wählen Sie ![Übergeordnetes Element auswählen](assets/select_parent_icon.svg) und wählen Sie die erste Option in der Dropdown-Liste aus, wenn das Bedienfeld das unmittelbare übergeordnete Element der Komponente ist.
 
-   Die blauen Punkte werden am Beginn und am Ende des reaktionsfähigen Rasters angezeigt.
+   Die blauen Punkte werden am Anfang und Ende des responsiven Rasters angezeigt.
 
-1. Ziehen Sie die blauen Punkte per Drag &amp; Drop, um die Position des Bereichs im interaktiven Raster zu definieren.
-Sie können die Schritte 1 und 2 wiederholen und ![Übergeordnetes Element auswählen ](assets/float_to_new_line_icon.svg) auswählen, um den Bereich mit der Größenanpassung zur nächsten Zeile zu verschieben.
+1. Ziehen Sie die blauen Punkte per Drag-and-Drop in das responsive Raster, um die Position des Bedienfelds zu definieren.
+Sie können die Schritte 1 und 2 wiederholen und ![Übergeordnetes Element auswählen](assets/float_to_new_line_icon.svg) auswählen, um das Bedienfeld mit der Größenänderung zur nächsten Zeile zu verschieben.
 
-## Definieren des Layouts für mehrere Spalten für ein Bedienfeld
+## Mehrspaltiges Layout für einen Bereich definieren
 
-Führen Sie die folgenden Schritte aus, um die Anzahl der Spalten für ein Bedienfeld zu definieren:
+Führen Sie die folgenden Schritte aus, um die Anzahl der Spalten für einen Bereich zu definieren:
 
-1. Tippen Sie im Modus **[!UICONTROL Bearbeiten]** auf das Bedienfeld, wählen Sie ![Konfigurieren](assets/configure_icon.png) und wählen Sie **[!UICONTROL Responsive - alles auf der Seite ohne Navigation]** aus der Dropdown-Liste **[!UICONTROL Bedienfeldlayout]**.
+1. Tippen Sie im Modus **[!UICONTROL Bearbeiten]** auf das Bedienfeld, wählen Sie ![Konfigurieren](assets/configure_icon.png) und wählen Sie **[!UICONTROL Responsiv - alles auf der Seite ohne Navigation]** aus der Dropdownliste **[!UICONTROL Bedienfeldlayout]** aus.
 
 1. Tippen Sie auf ![Speichern](assets/save_icon.svg), um die Eigenschaften zu speichern.
 
-1. Tippen Sie im Modus **[!UICONTROL Layout]** auf eine der Komponenten im Bedienfeld, wählen Sie ![Übergeordnetes Element](assets/select_parent_icon.svg) aus und wählen Sie das Bedienfeld aus.
+1. Tippen Sie im Modus **[!UICONTROL Layout]** auf eine der Komponenten im Bereich, wählen Sie ![Übergeordnetes Element](assets/select_parent_icon.svg) aus und wählen Sie das Bedienfeld aus.
 
-1. Tippen Sie auf ![mehrspaltig](assets/multi-column.svg) und wählen Sie die Spaltenanzahl aus der Dropdown-Liste aus. Die Anzahl der Spalten kann zwischen 1 und 12 liegen. Das Bedienfeld wird in ein mehrspaltiges Layout unterteilt.
+1. Tippen Sie auf ![mehrspaltige](assets/multi-column.svg) und wählen Sie die Anzahl der Spalten aus der Dropdownliste aus. Die Anzahl der Spalten kann zwischen 1 und 12 liegen. Das Bedienfeld wird in ein mehrspaltiges Layout unterteilt.
 
-![mehrere Spalten im Layoutmodus](assets/multi-column-layout.png)
+![Mehrspalten im Layout-Modus](assets/multi-column-layout.png)
 
-## Aktivieren Sie das neue interaktive Raster für alte reaktionsfähige Layouts {#enableresponsivegrid}
+## Aktivieren des neuen responsiven Rasters für alte responsive Layouts {#enableresponsivegrid}
 
-Aktivieren Sie das neue interaktive Raster für Formulare, die Sie mit AEM Forms 6.4 oder einer niedrigeren Version erstellen, um die Größe von Komponenten zu ändern.
+Aktivieren Sie das neue responsive Raster für Formulare, die Sie mit AEM Forms 6.4 oder einer niedrigeren Version erstellen, um die Größe von Komponenten zu ändern.
 
 >[!NOTE]
 >
->Beim Wechsel zum neuen interaktiven Raster werden die Layouteigenschaften verworfen, die bereits für im Formular verwendete Komponenten definiert wurden.
+>Beim Wechseln zum neuen responsiven Raster werden die Layouteigenschaften verworfen, die bereits für im Formular verwendete Komponenten definiert sind.
 
-Führen Sie die folgenden Schritte aus, um das neue interaktive Raster zu aktivieren:
+Führen Sie die folgenden Schritte aus, um das neue responsive Raster zu aktivieren:
 
-1. Wählen Sie **Layout** aus der Dropdown-Liste, die oben neben der Option **Vorschau** angezeigt wird. Eine Bestätigung zur Aktivierung des Layoutmodus wird angezeigt.
+1. Wählen Sie **Layout** aus der Dropdownliste, die oben neben der Option **Vorschau** angezeigt wird. Es wird eine Bestätigung angezeigt, um den Layout -Modus zu aktivieren.
 1. Tippen Sie auf **Ja**, um den Modus **Layout** für das Formular zu aktivieren.
 
-### Einbetten eines alten Fragments in ein adaptives Formular mit einem neuen reaktionsfähigen Layout {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
+### Einbetten eines alten Fragments in ein adaptives Formular mit neuem responsiven Layout {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
-Mit dem neuen reaktionsfähigen Layout für adaptive Formulare können Sie ein adaptives Formularfragment mit dem alten reaktionsfähigen Layout zum Formular hinzufügen. Das neue Layout verwirft jedoch die Layouteigenschaften, die bereits für im Fragment verwendete Komponenten definiert wurden. Sie können zum Modus &quot;Layout&quot;wechseln, um die Layouteigenschaften für die im Fragment verwendeten Komponenten zu definieren.
+Mit dem neuen responsiven Layout für adaptive Formulare können Sie ein adaptives Formularfragment mit dem alten responsiven Layout zum Formular hinzufügen. Das neue Layout verwirft jedoch die Layout-Eigenschaften, die bereits für die im Fragment verwendeten Komponenten definiert sind. Sie können in den Layout -Modus wechseln, um die Layouteigenschaften für die im Fragment verwendeten Komponenten zu definieren.
 
-### Einbetten eines Fragments mit einem neuen reaktionsfähigen Layout in ein altes adaptives Formular {#embed-a-fragment-with-new-responsive-layout-in-an-old-adaptive-form}
+### Einbetten eines Fragments mit einem neuen responsiven Layout in ein altes adaptives Formular {#embed-a-fragment-with-new-responsive-layout-in-an-old-adaptive-form}
 
-Wenn Sie ein Fragment mit dem neuen reaktionsfähigen Layout in ein adaptives Formular mit einem alten reaktionsfähigen Layout einbetten, fordert Sie das System auf, den Layoutmodus für das Formular zu aktivieren und das Fragment erneut einzubetten.
+Wenn Sie ein Fragment mit dem neuen responsiven Layout in ein adaptives Formular mit einem alten responsiven Layout einbetten, fordert Sie das System auf, den Layout-Modus für das Formular zu aktivieren und das Fragment erneut einzubetten.
 
-Um den Layoutmodus zu aktivieren, wählen Sie **Layout** aus der Dropdown-Liste, die oben neben der Option **Vorschau** angezeigt wird, und tippen Sie zur Bestätigung auf **Ja**. Wählen Sie **Bearbeiten**, um das Fragment erneut einzubetten.
+Um den Layout -Modus zu aktivieren, wählen Sie **Layout** aus der Dropdown-Liste, die oben neben der Option **Vorschau** angezeigt wird, und tippen Sie zur Bestätigung auf **Ja**. Wählen Sie den Modus **Bearbeiten** aus, um das Fragment erneut einzubetten.
 
-## Layout-Modus für Formulare mit altem reaktionsfähigem Layout {#disable-layout-mode-for-forms-with-old-responsive-layout} deaktivieren
+## Layout-Modus für Formulare mit altem responsiven Layout deaktivieren {#disable-layout-mode-for-forms-with-old-responsive-layout}
 
-Sie können den Layoutmodus für Formulare mit einem alten reaktionsfähigen Layout deaktivieren, indem Sie die Eigenschaften der im Formular verwendeten Vorlage bearbeiten.
+Sie können den Layout -Modus für Formulare mit dem alten responsiven Layout deaktivieren, indem Sie Eigenschaften für die im Formular verwendete Vorlage bearbeiten.
 
-Führen Sie die folgenden Schritte aus, um den Layoutmodus zu deaktivieren:
+Führen Sie die folgenden Schritte aus, um den Layout -Modus zu deaktivieren:
 
-1. Wählen Sie **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Vorlagen]** und öffnen Sie die Vorlage, die im Formular im Modus **[!UICONTROL Bearbeiten]** verwendet wird.
-1. Wählen Sie den Container Dokument im linken Bereich aus und tippen Sie auf **[!UICONTROL Richtlinie.]**
+1. Wählen Sie **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Vorlagen]** und öffnen Sie die im Formular verwendete Vorlage im Modus **[!UICONTROL Bearbeiten]** .
+1. Wählen Sie den Dokumentcontainer im linken Bereich aus und tippen Sie auf **[!UICONTROL Richtlinie.]**
 
-   ![Layout deaktivieren, Modus](assets/policy_disable_layout_mode.png)
+   ![Layout-Modus deaktivieren](assets/policy_disable_layout_mode.png)
 
-1. Tippen Sie auf die Registerkarte **[!UICONTROL Layouteinstellungen]** und wählen Sie **[!UICONTROL Layout-Modus deaktivieren]**.
+1. Tippen Sie auf die Registerkarte **[!UICONTROL Layout-Einstellungen]** und wählen Sie **[!UICONTROL Layout-Modus deaktivieren]** aus.
 1. Tippen Sie auf ![Änderungen speichern](assets/save_icon.png), um die Vorlageneigenschaften zu speichern.
-
