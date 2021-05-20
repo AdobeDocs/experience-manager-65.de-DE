@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: d431c4cb-e4be-41a5-8085-42393d4d468c
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+exl-id: edaf12be-473f-4175-b4e0-549b41159a55
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1042'
 ht-degree: 93%
 
 ---
-
 
 # Barcoded Forms-Dienst{#barcoded-forms-service}
 
@@ -129,11 +128,11 @@ Beachten Sie auch die folgenden Einschränkungen bei der Verwendung des Barcoded
 * Der Dienst unterstützt AcroForms und statische Formulare mit 2D-Strichcodes, die mit Adobe Reader oder Acrobat gespeichert wurden, in vollem Umfang. Für 1D-Strichcodes müssen Sie das Formular jedoch reduzieren oder es als gescanntes PDF- oder TIFF-Dokument zur Verfügung stellen.
 * Dynamische XFA-Formulare werden nicht in vollem Umfang unterstützt. Für die ordnungsgemäße Dekodierung eines 1D- und 2D-Strichcodes in einem dynamischen Formular müssen Sie das Formular entweder reduzieren oder es als gescanntes PDF- oder TIFF-Dokument bereitstellen.
 
-Der Dienst kann zusätzlich sämtliche Strichcodes dekodieren, die unterstützte Symbologien nutzen, sofern die oben genannten Beschränkungen eingehalten werden. Weitere Informationen zum Erstellen interaktiver mit Strichcode versehener Formulare finden Sie unter [Designer-Hilfe](https://www.adobe.com/go/learn_aemforms_designer_63).
+Der Dienst kann zusätzlich sämtliche Strichcodes dekodieren, die unterstützte Symbologien nutzen, sofern die oben genannten Beschränkungen eingehalten werden. Weitere Informationen zum Erstellen interaktiver Barcoded Forms finden Sie unter [Designer-Hilfe](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 ## Konfigurieren Sie die Eigenschaften des Dienstes   {#configureproperties}
 
-Sie können den Dienst **AEMFD Barcoded Forms-Dienst** in AEM-Konsole verwenden, um Eigenschaften für diesen Dienst zu konfigurieren. Die Standard-URL AEM Konsole ist `https://[host]:'port'/system/console/configMgr`.
+Sie können den Dienst **AEMFD Barcoded Forms-Dienst** in AEM-Konsole verwenden, um Eigenschaften für diesen Dienst zu konfigurieren. Die Standard-URL AEM Konsole lautet `https://[host]:'port'/system/console/configMgr`.
 
 ## Verwendung des Dienstes {#using}
 
@@ -236,7 +235,7 @@ Der folgende Beispielcode dekodiert einen Barcode in einem Dokument und speicher
 
 Die Ausführung des Barcoded Forms-Dienstes über einen Workflow ist ähnlich wie die Ausführung über JSP/Servlet. Der einzige Unterschied beim Ausführen des Dienstes über JSP/Servlet liegt darin, dass das Dokumentobjekt automatisch eine Instanz des ResourceResolver-Objekts vom ResourceResolverHelper-Objekt abruft. Dieser automatische Mechanismus funktioniert nicht, wenn der Code in einem Workflow aufgerufen wird.
 
-Bei einem Workflow müssen Sie ausdrücklich eine Instanz des ResourceResolver-Objekts an die Dokument-Klassen-Constructor übermitteln. Anschließend verwendet das Dokument-Objekt das bereitgestellte ResourceResolver-Objekt, um Inhalte aus dem Repository zu lesen.
+Bei einem Workflow müssen Sie ausdrücklich eine Instanz des ResourceResolver-Objekts an die Dokument-Klassen-Constructor übermitteln. Anschließend verwendet das Dokumentobjekt das bereitgestellte ResourceResolver-Objekt, um Inhalte aus dem Repository zu lesen.
 
 Der folgende Workflowprozess dekodiert einen Barcode in einem Dokument und speichert das Ergebnis auf der Festplatte. Der Code ist in ECMAScript geschrieben und das Dokument wird als Workflow-Nutzlast übergeben:
 
@@ -305,4 +304,3 @@ function saveW3CDocument(inputDoc, filePath) {
    os.close();
 }
 ```
-
