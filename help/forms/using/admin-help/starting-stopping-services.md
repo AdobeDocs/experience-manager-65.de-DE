@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b93060bd-c6e1-40d2-8acd-ccafb8ed56da
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 55bf5196-22c6-4286-8c92-ff44d81dde49
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 82%
 
 ---
-
 
 # Dienste starten und beenden {#starting-and-stopping-services}
 
@@ -36,19 +35,18 @@ AEM Forms-Module (z. B. Forms, Rights Management, Output) arbeiten als Dienste. 
 
 Eine vollständige Implementierung von AEM Forms umfasst einen Anwendungsserver und Datenbankdienste:
 
-* *`[application server]`* für AEM
-* *`[database]`* für AEM
+* *`[application server]`* für AEM Formulare
+* *`[database]`* für AEM Formulare
 
-Unter Windows sind diese Dienste über das Bedienfeld **Verwaltung** > **Dienste** verfügbar. Wenn Sie z. B. AEM Forms unter JBoss mit der Turnkey-Methode installiert haben, stehen auf Ihrem System die folgenden Dienste zur Verfügung:
+Unter Windows können Sie auf diese Dienste über das Bedienfeld **Administrative Tools** > **Dienste** zugreifen. Wenn Sie z. B. AEM Forms unter JBoss mit der Turnkey-Methode installiert haben, stehen auf Ihrem System die folgenden Dienste zur Verfügung:
 
 * JBoss für Adobe Experience Manager Forms
 * MySQL für Adobe Experience Manager Forms
 
 Sie können Sie diese Dienste starten bzw. beenden, indem Sie sie in der Liste im Bereich „Dienste“ auswählen und anschließend auf die entsprechende Aktionsschaltfläche klicken.
 
-Geben Sie unter UNIX® oder Linux den folgenden Text in einer Befehlszeile ein, wobei *`[service name]`* der Name des zu überprüfenden Dienstes ist:
+Geben Sie unter UNIX® oder Linux in einer Befehlszeile den folgenden Text ein, wobei *`[service name]`* der Name des zu überprüfenden Dienstes ist:
 
 ```java
      ps -A | grep [service name]
 ```
-
