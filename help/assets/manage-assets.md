@@ -4,12 +4,11 @@ description: Erfahren Sie mehr über die Asset-Management-Aufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 role: Business Practitioner
-feature: Asset Management,Search
+feature: Asset-Verwaltung, Suche
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-translation-type: tm+mt
-source-git-commit: 46b11d0b59d748f2035e7ed46dc8caeef79d48c0
+source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
 workflow-type: tm+mt
-source-wordcount: '9798'
+source-wordcount: '9796'
 ht-degree: 59%
 
 ---
@@ -114,7 +113,7 @@ Sie können festlegen, ob ein vorhandenes Asset ersetzt, eine neue Version erste
 >
 >Wenn Sie im Dialogfeld [!UICONTROL Namenskonflikt] die Option **[!UICONTROL Ersetzen]** auswählen, wird die Asset-ID für das neue Asset neu generiert. Diese ID unterscheidet sich von der ID des vorherigen Assets.
 >
->Wenn Asset Insights zur Verfolgung von Impressions/Klicks mit Adobe Analytics aktiviert ist, werden die für das Asset in Analytics erfassten Daten durch die erneut generierte Asset-ID ungültig.
+>Wenn Asset Insights zur Verfolgung von Impressionen oder Klicks mit [!DNL Adobe Analytics] aktiviert ist, werden die für das Asset in [!DNL Analytics] erfassten Daten durch die erneut generierte Asset-ID ungültig.
 
 Wenn das hochgeladene Asset in [!DNL Assets] vorhanden ist, wird im Dialogfeld **[!UICONTROL Duplikat erkannt]** gewarnt, dass Sie versuchen, ein Duplikat-Asset hochzuladen. Das Dialogfeld wird nur angezeigt, wenn der Prüfsummenwert der Binärdatei des vorhandenen Assets mit dem Prüfsummenwert des hochgeladenen Assets übereinstimmt. `SHA 1` In diesem Fall spielen die Namen der Assets keine Rolle.
 
@@ -733,7 +732,7 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 1. Klicken Sie auf die Option **[!UICONTROL Annotate]** aus einer der folgenden Optionen:
 
    * [Schnellaktionen](/help/assets/manage-assets.md#quick-actions)
-   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben  oder zur Asset-Seite navigiert sind.
+   * Klicken Sie in der Symbolleiste auf das Asset oder navigieren Sie zur Asset-Seite.
 
 1. Fügen Sie im Feld **[!UICONTROL Kommentar]** am unteren Rand der Zeitleiste einen Kommentar hinzu. Sie haben auch die Möglichkeit, einen Bereich im Bild zu markieren und im Dialogfeld **[!UICONTROL Anmerkung hinzufügen]** eine Anmerkung hinzuzufügen.
 
@@ -931,7 +930,7 @@ Weitere Informationen zur Sammlungsverwaltung finden Sie unter [Sammlungen verwa
 
 [!DNL Experience Manager] Die Desktop-App ermöglicht den Zugriff auf das DAM-Repository von Windows- oder Mac-Desktop aus. Adobe Asset Link ermöglicht den Zugriff auf Assets aus den unterstützten [!DNL Creative Cloud] Desktop-Anwendungen.
 
-Beim Durchsuchen von Assets in der [!DNL Experience Manager]-Benutzeroberfläche werden die abgelaufenen Assets nicht angezeigt. Um beim Durchsuchen von Assets aus der Desktop-App und Asset Link zu verhindern, dass abgelaufene Assets angezeigt, durchsucht und abgerufen werden, können Administratoren die folgende Konfiguration durchführen. Die Konfiguration funktioniert für alle Benutzer, unabhängig von den Administratorberechtigungen.
+Beim Durchsuchen von Assets in der [!DNL Experience Manager]-Benutzeroberfläche werden die abgelaufenen Assets nicht angezeigt. Um die Anzeige, das Durchsuchen und den Abruf abgelaufener Assets beim Durchsuchen von Assets im Desktop-Programm und über Asset Link zu verhindern, können Administratoren die folgende Konfiguration durchführen. Die Konfiguration funktioniert für alle Benutzer, unabhängig von den Administratorberechtigungen.
 
 Führen Sie den folgenden CURL-Befehl aus. Vergewissern Sie sich, dass Benutzer, die auf Assets zugreifen, auf `/conf/global/settings/dam/acpapi/` Lesezugriff haben. Benutzer, die zur Gruppe `dam-user` gehören, haben standardmäßig die Berechtigung.
 
