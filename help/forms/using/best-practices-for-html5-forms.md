@@ -11,14 +11,13 @@ content-type: reference
 discoiquuid: db22f775-fab1-4a78-b334-a9c4fa613e43
 docset: aem65
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 62ff6306-9989-43b0-abaf-b0a811f0a6a4
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 87%
 
 ---
-
 
 # Empfohlene Vorgehensweisen für HTML5-Formulare{#best-practices-for-html-forms}
 
@@ -28,7 +27,7 @@ AEM Forms bieten eine Komponente, die HTML5-Formulare genannt wird. Auf diese We
 
 Die meisten Mobilgeräte haben eine begrenzten Verarbeitungsleistung und Arbeitsspeicher. Es trägt dazu bei, dass die Standby-Zeit von tragbaren Geräten verbessert wird. Die Webbrowser, die auf einem Mobilgerät ausgeführt werden, haben Zugriff auf beschränkte Ressourcen (begrenzter Arbeitsspeicher und Verarbeitungsfähigkeiten). Sobald das Limit erreicht ist, wird das Browserverhalten langsam. Dieses Dokument enthält Empfehlungen, um die Größe eines HTML5-Formulars zu kontrollieren. Ein kleineres Formular erreicht nicht das Limit des Arbeitsspeichers und der Verarbeitungsleistung eines Geräts und läuft mühelos.
 
-Obwohl die Empfehlungen, die in diesem Artikel diskutiert werden, auf HTML5-Formulare abzielen, gelten diese aber auch für XFA-basierte PDF-Formulare. Diese Best Practices tragen zusammen zur Gesamtleistung von HTML5-Formularen bei. Es erfordert eine sorgfältige Planung, um effiziente und produktive Formen zu entwickeln. Erste Schritte:
+Obwohl die Empfehlungen, die in diesem Artikel diskutiert werden, auf HTML5-Formulare abzielen, gelten diese aber auch für XFA-basierte PDF-Formulare. Diese bewährten Verfahren tragen zusammen zur Gesamtleistung von HTML5-Formularen bei. Es erfordert eine sorgfältige Planung, um effiziente und produktive Formulare zu entwickeln. Erste Schritte:
 
 ## Knoten sind Währung der HTML5-Formulare, nutzen Sie diese sinnvoll {#nodes-are-currency-of-html-forms-spend-them-wisely}
 
@@ -61,20 +60,20 @@ Ein HTML5-Formular kann hunderte von Seiten umfassen. Ein Formular mit vielen Fe
 
 HTML5-Formulare können datenbasierte Felder enthalten (Tabellen und Unterformulare). Diese Felder erweitern die Größe des Formulars in der Laufzeitumgebung. So kann zum Beispiel eine datenbasierte Tabelle in einem HTML5-Formular tausende von Zeilen umfassen. Diese Tabellen können zu Layout- und Leistungsverringerung führen. Mit unten vorgeschlagenen Optimierungen können Sie die Ladezeiten von HTML5-Formularen mit datengesteuerten Felder verringern:
 
-* Verwenden Sie XFA-Skipt zur ausgelagerten Navigation, um dynamische datengesteuerte Felder anzuzeigen (Tabellen und Unterformulare). In ausgelagerter Navigation werden nur bestimmte Daten auf einer Seite angezeigt. Dadurch wird der Browser-Malvorgang auf die jeweils angezeigten Felder beschränkt und die Navigation in einem Formular erleichtert. Außerdem interessieren sich die Nutzer der Mobilgeräte nur für eine Untergruppe von Daten. Damit wird größere Benutzerfreundlichkeit geboten und die Zeit zum Laden der benötigten Daten wird verkürzt. Das Ergebnis sind zwei Lösungen. Beachten Sie auch, dass die seitenweise Navigation nicht standardmäßig verfügbar ist. Sie können XFA-Skripterstellung verwenden, um die ausgelagerte Navigation zu entwickeln.
+* Verwenden Sie XFA-Skipt zur ausgelagerten Navigation, um dynamische datengesteuerte Felder anzuzeigen (Tabellen und Unterformulare). In ausgelagerter Navigation werden nur bestimmte Daten auf einer Seite angezeigt. Dadurch wird die Bedienung der Browserfarbe auf die Felder beschränkt, die gleichzeitig angezeigt werden, und die Navigation in einem Formular wird vereinfacht. Darüber hinaus interessieren sich Benutzer auf Mobilgeräten nur für eine Untergruppe von Daten. Damit wird größere Benutzerfreundlichkeit geboten und die Zeit zum Laden der benötigten Daten wird verkürzt. Das Ergebnis sind zwei Lösungen. Beachten Sie außerdem, dass die Seitennavigation nicht standardmäßig verfügbar ist. Sie können XFA-Skripterstellung verwenden, um die ausgelagerte Navigation zu entwickeln.
 
 * Bewerten Sie das Zusammenführen mehrerer schreibgeschützter Spalten zu einer einzelnen Spalte. Außerdem wird der Arbeitsspeicher, der benötigt wird, um das Formular anzuzeigen, reduziert. Vermeiden Sie es, die Spalten anzuzeigen, die keine Eingaben von den Benutzern erfordern.
-* Bewerten Sie das Teilen des datengesteuerten Formulars in einen [Formularsatz](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html), wenn die obigen Vorschläge nicht viele Verbesserungen bringen. Wenn beispielsweise eine Tabelle mehr als 1000 Zeilen aufweist, verschieben Sie jede 100. Zeile zu ein anderes Formular. Das würde die Ladezeit und die Leistung der Formulare verbessern. Beachten Sie außerdem, dass ein Formularsatz eine konsolidierte Senden-XML für alle Formulare erzeugt. Um Daten für jedes Formular zu unterscheiden, verwenden Sie verschiedene Datenstämme. Weitere Informationen finden Sie unter[ Formularsatz in AEM Forms](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html).
+* Bewerten Sie das Teilen des datengesteuerten Formulars in einen [Formularsatz](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html), wenn die obigen Vorschläge nicht viele Verbesserungen bringen. Wenn beispielsweise eine Tabelle mehr als 1000 Zeilen aufweist, verschieben Sie jede 100. Zeile zu ein anderes Formular. Das würde die Ladezeit und die Leistung der Formulare verbessern. Beachten Sie außerdem, dass ein Formularsatz eine konsolidierte Sende-XML für alle Formulare erzeugt. Um Daten für jedes Formular zu unterscheiden, verwenden Sie verschiedene Datenstämme. Weitere Informationen finden Sie unter[ Formularsatz in AEM Forms](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html).
 
 ## Zweierpotenz für Datensatzdokument (DOR) {#power-of-two-for-document-of-record-dor}
 
-Ein XFA-Formular kann viele Abschnitte enthalten, die nur für Datensatzdokumente (DOR) verwendet werden. Um die Anzahl der Knoten zu reduzieren und die Leistung eines solchen Formulars zu verbessern, können Sie verschiedene Kopien des Formulars verwalten - eine Kopie zum Ausfüllen des Formulars und eine andere zum Generieren eines Dokuments aus Datensatz auf dem Server. Zeigen Sie Felder in der Kopie, die nur zum Erfassen von Daten erforderlich sind. Behalten Sie Felder, die nur in der gedruckten Ausgabe des Formulars erforderlich sind, im Datensatzdokumente-XFA bei. Bevor Sie den vorgeschlagene Ansatz wählen, bewerten Sie die Leistungssteigerung und die Wartung.
+Ein XFA-Formular kann viele Abschnitte enthalten, die nur für Datensatzdokumente (DOR) verwendet werden. Um die Anzahl der Knoten zu reduzieren und die Leistung eines solchen Formulars zu verbessern, können Sie verschiedene Kopien des Formulars verwalten - eine Kopie zum Ausfüllen des Formulars und eine andere zum Generieren des Datensatzdokuments auf dem Server. Zeigen Sie Felder in der Kopie, die nur zum Erfassen von Daten erforderlich sind. Behalten Sie Felder, die nur in der gedruckten Ausgabe des Formulars erforderlich sind, im Datensatzdokumente-XFA bei. Bevor Sie den vorgeschlagene Ansatz wählen, bewerten Sie die Leistungssteigerung und die Wartung.
 
 ## Weiterführende Informationen   {#recommended-reads}
 
 Mit Adobe Experience Manager (AEM) Forms können Sie komplexe Transaktionen in einfache, beeindruckende digitale Erlebnisse umwandeln. Es bedarf jedoch gemeinsamer Bemühungen, um effiziente und produktive Formulare zu entwickeln. Zusätzlich zu HTML5-Formularen finden Sie hier einige Informationen für bewährte Verfahren zu AEM:
 
-* [Best Practices für die Bereitstellung und Verwaltung von AEM](/help/sites-deploying/best-practices.md)
+* [Best Practices für Bereitstellung und Verwaltung von AEM](/help/sites-deploying/best-practices.md)
 * [Bewährte Verfahren zum Erstellen von Inhalten](/help/sites-authoring/best-practices.md)
 * [Best Practices für die Verwaltung von AEM](/help/sites-administering/administer-best-practices.md)
 * [Bewährte Verfahren zur Entwicklung von Lösungen](/help/sites-developing/best-practices.md)
@@ -83,5 +82,5 @@ Mit Adobe Experience Manager (AEM) Forms können Sie komplexe Transaktionen in e
 
 ## Schnellnachweiskarte {#quick-reference-card}
 
-Sie können folgende Karte drucken (klicken Sie auf eine Karte, um eine hochauflösende Version herunterzuladen) und diese auf Ihrem Schreibtisch aufbewahren, um eine kurze Referenz zu erhalten:
-[ ![Best Practices für HTML5 Forms Quick Reference Card](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
+Sie können folgende Karte drucken (klicken Sie auf eine Karte, um eine hochauflösende Version herunterzuladen) und auf Ihrem Schreibtisch behalten, um eine kurze Referenz zu erhalten:
+[ ![Best Practices für HTML5 Forms-Schnellreferenzkarte](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
