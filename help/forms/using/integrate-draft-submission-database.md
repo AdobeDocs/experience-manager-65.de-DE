@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 88%
 
 ---
-
 
 # Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung in die Datenbank {#sample-for-integrating-drafts-submissions-component-with-database}
 
@@ -29,7 +28,7 @@ Das in diesem Dokument gezeigte Beispiel ist eine Referenzimplementierung benutz
 >
 >* Die Beispiele und Konfigurationen in diesem Dokument entsprechen MySQL 5.6.24 und Sie müssen sie für Ihr Datenbanksystem anpassen.
 >* Stellen Sie sicher, dass Sie die neueste Version des AEM Forms Add-On-Pakets installiert haben. Eine Liste der verfügbaren Pakete finden Sie im Artikel [AEM Forms Freigabe](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
->* Das Musterpaket funktioniert nur mit adaptiven Forms-Übermittlungsaktionen.
+>* Das Beispielpaket funktioniert nur mit Übermittlungsaktionen für adaptive Forms.
 
 
 ## Beispiel installieren und konfigurieren {#set-up-and-configure-the-sample}
@@ -40,14 +39,14 @@ Führen Sie die folgenden Schritte für alle Autoren- und Veröffentlichungsinst
 
    Beispielpaket für Datenbankintegration
 
-   [Datei laden](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
+[Datei laden](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
-1. Wechseln Sie zu AEM Package Manager unter https://[*host*]:[*port*]/crx/packmgr/.
+1. Gehen Sie zu AEM Paketmanager unter https://[*host*]:[*port*]/crx/packmgr/.
 1. Klicken Sie auf **[!UICONTROL Paket hochladen]**.
 
 1. Navigieren Sie zum Paket **aem-fp-db-integration-sample-pkg-6.1.2.zip**, wählen Sie es aus und klicken Sie auf **[!UICONTROL OK]**.
 1. Klicken Sie neben dem Paket auf **[!UICONTROL Installieren]**, um das Paket zu installieren.
-1. Gehen Sie zu **[!UICONTROL AEM Web-Konsolenkonfiguration]**
+1. Gehen Sie zu **[!UICONTROL AEM Web Console Configuration]**
 Seite unter https://[*host*]:[*port*]/system/console/configMgr.
 1. Klicken Sie, um die **[!UICONTROL Konfiguration des Forms Portals für Entwurf und Übermittlung]** im Bearbeitungsmodus zu öffnen.
 
@@ -84,7 +83,7 @@ Seite unter https://[*host*]:[*port*]/system/console/configMgr.
    * Auf der Seite zur Web-Konsolenkonfiguration klicken Sie auf die Beispielimplementierung des Forms Portal-Datenservice. Sie können die Werte der Datenquelle und Datentabellennamen ändern.
    >[!NOTE]
    >
-   >Wenn Sie die Tabellennamen ändern, geben Sie sie in der Form Portal-Konfiguration an.
+   >Wenn Sie die Tabellennamen ändern, geben Sie sie in der Forms Portal-Konfiguration an.
 
 1. Belassen Sie die anderen Konfigurationen und klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -317,7 +316,7 @@ Führen Sie die folgenden Schritte auf allen Autoren- und Veröffentlichungsinst
 1. Navigieren Sie zu `https://'[server]:[port]'/system/console/bundles` und klicken Sie auf **[!UICONTROL Installieren/Aktualisieren]**.
 1. Klicken Sie auf **[!UICONTROL Datei auswählen]** und wählen Sie die Datei mysql-connector-java-5.1.39-bin.jar. Aktivieren Sie außerdem die Kontrollkästchen **[!UICONTROL Paket starten]** und **[!UICONTROL Paket aktualisieren]**.
 1. Klicken Sie auf **[!UICONTROL Installieren oder Aktualisieren]**. Wenn dies abgeschlossen ist, starten Sie den Server neu.
-1. (*Nur Windows*) Schalten Sie die System-Firewall für Ihr Betriebssystem aus.
+1. (*Nur Windows*) Deaktivieren Sie die System-Firewall für Ihr Betriebssystem.
 
 ## Beispielcode für Formularportaldaten und Metadatendienst {#sample-code-for-forms-portal-data-and-metadata-service}
 
@@ -343,7 +342,7 @@ Führen Sie die folgenden Schritte aus, um eine[ Client-Bibliothek zu erstellen]
     util.js
    ```
 
-   Im vorstehenden Code ist `util` der Name des Ordners und`util.js` der Name der Datei im `util`-Ordner. Der Ordner `util` und die Datei `util.js` werden in den folgenden Schritten erstellt.
+   Im vorstehenden Code ist `util` der Name des Ordners und`util.js` der Name der Datei im `util`-Ordner. Der Ordner `util` und die Datei `util.js` werden in den nächsten Schritten erstellt.
 
 1. Klicken Sie mit der rechten Maustaste auf den Knoten `cq:ClientLibraryFolder`, der in Schritt 2 erstellt wurde, wählen Sie „Erstellen“ > „Ordner erstellen“. Erstellen Sie einen Ordner mit dem Namen `util`. Klicken Sie auf **[!UICONTROL Alle speichern]**. Klicken Sie mit der rechten Maustaste auf den Ordner `util` und wählen Sie „Erstelle“ > „Ordner erstellen“. Erstellen Sie eine Datei mit dem Namen `util.js`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
@@ -414,13 +413,12 @@ Führen Sie die folgenden Schritte aus, um eine[ Client-Bibliothek zu erstellen]
 
    * **[!UICONTROL Multi-Option:]** Aktiviert
 
-1. Navigieren Sie zu `/libs/fd/af/runtime/clientlibs/guideRuntime`und hängen Sie den Wert `fp.validation` an die Eigenschaft embed an.
+1. Navigieren Sie zu `/libs/fd/af/runtime/clientlibs/guideRuntime`und hängen Sie den Wert `fp.validation` an die Einbettungseigenschaft an.
 
 1. Navigieren Sie zu /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA und hängen Sie den Wert `fp.validation` an die Eigenschaft embed an.
 
    >[!NOTE]
    >
-   >Wenn Sie benutzerdefinierte Clientbibliotheken anstelle der Clientbibliotheken guideRuntime und guideWithXfa verwenden, verwenden Sie den Namen der Kategorie, um die in diesem Verfahren erstellte Client-Bibliothek in Ihre zur Laufzeit geladenen benutzerdefinierten Bibliotheken einzubetten.
+   >Wenn Sie benutzerdefinierte Client-Bibliotheken anstelle der guideRuntime- und guideRuntimeWithXfa-Client-Bibliotheken verwenden, verwenden Sie den Kategorienamen, um die in diesem Verfahren erstellte Client-Bibliothek in Ihre zur Laufzeit geladenen benutzerdefinierten Bibliotheken einzubetten.
 
-1. Klicken Sie auf **[!UICONTROL Alle speichern.]** Wenn der Dateiname nun größer als 150 Zeichen (einschließlich Erweiterung) ist, wird eine Meldung angezeigt.
-
+1. Klicken Sie auf **[!UICONTROL Alle speichern.]** Wenn der Dateiname größer als 150 Zeichen (einschließlich der Erweiterung) ist, wird eine Meldung angezeigt.
