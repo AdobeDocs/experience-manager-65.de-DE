@@ -9,7 +9,6 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c908d064-6596-473a-b218-22a2496c83f7
-translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 workflow-type: tm+mt
 source-wordcount: '639'
@@ -51,7 +50,7 @@ In mehreren Verfahren müssen Sie die Instanz von WebLogic Server, auf der Sie A
 
 >[!NOTE]
 >
->Wenn Sie WebLogic Server unter Red Hat® Enterprise Linux Advanced Server 4.0 ausführen, setzen Sie die Variable `LD_ASSUME_KERNEL` Umgebung mithilfe des Befehls `export LD_ASSUME_KERNEL=2.4.19` auf 2.4.19. Führen Sie anschließend WebLogic Server von der gleichen Shell aus, in der Sie auch die Umgebungsvariable eingerichtet haben.
+>Wenn Sie WebLogic Server unter Red Hat® Enterprise Linux Advanced Server 4.0 ausführen, setzen Sie die Umgebungsvariable `LD_ASSUME_KERNEL` mithilfe des Befehls `export LD_ASSUME_KERNEL=2.4.19` auf 2.4.19. Führen Sie anschließend WebLogic Server von der gleichen Shell aus, in der Sie auch die Umgebungsvariable eingerichtet haben.
 
 ## WebLogic Server starten {#start-weblogic-server}
 
@@ -63,7 +62,7 @@ In mehreren Verfahren müssen Sie die Instanz von WebLogic Server, auf der Sie A
 
 ## WebLogic Server anhalten {#stop-weblogic-server}
 
-1. Beginn WebLogic Server Administration Console durch Eingabe von `https://[host name]:7001/console` in die Adresszeile eines Webbrowsers.
+1. Starten Sie WebLogic Server Administration Console, indem Sie in die Adresszeile eines Webbrowsers `https://[host name]:7001/console` eingeben.
 1. Melden Sie sich an, indem Sie den Benutzernamen und das Kennwort für diese WebLogic-Konfiguration eingeben und auf „Log In“ klicken.
 1. Klicken Sie unter „Change Center“ auf Lock &amp; Edit.
 1. Klicken Sie im Bereich „Domain Structure“ auf „Environment“ > „Servers“.
@@ -76,7 +75,7 @@ Die WebLogic Server-Verwaltungskonsole wird nicht mehr angezeigt und die Eingabe
 
 ## WebLogic Administration Console starten  {#start-weblogic-administration-console}
 
-1. Wenn WebLogic Admin Server noch nicht ausgeführt wird, wechseln Sie an einer Eingabeaufforderung zum Ordner *[Anwendungsserver-Stammordner]\user_projects\domains\[Domänenname]* und geben Sie den folgenden Befehl ein:
+1. Wenn WebLogic Admin Server noch nicht ausgeführt wird, wechseln Sie an einer Eingabeaufforderung zum Ordner *[appserver root]\user_projects\domains\[Domänenname]* und geben Sie den folgenden Befehl ein:
 
    * (Windows) `startWebLogic.cmd`
    * (Linux, UNIX) ./ `startWebLogic.sh`
@@ -87,7 +86,7 @@ Die WebLogic Server-Verwaltungskonsole wird nicht mehr angezeigt und die Eingabe
 ## Node Manager starten  {#start-node-manager}
 
 1. Stellen Sie sicher, dass WebLogic Server ausgeführt wird.
-1. Wechseln Sie an einer neuen Eingabeaufforderung zum Ordner *[Anwendungsserver-Stammordner]*/server/bin.
+1. Wechseln Sie an einer neuen Eingabeaufforderung zum Ordner *[appserver root]*/server/bin.
 1. Geben Sie den folgenden Befehl ein:
 
    * (Windows) `startNodeManager.cmd`
@@ -104,7 +103,7 @@ Nach dem Herunterfahren von WebLogic Server können Sie die Eingabeaufforderung 
 >Dieser Schritt kann nur ausgeführt werden, nachdem Sie eine WebLogic-Domäne und einen verwalteten Server erstellt haben.
 
 1. Vergewissern Sie sich, dass WebLogic Server und Node Manager ausgeführt werden.
-1. Beginn WebLogic Server Administration Console durch Eingabe von `https://host name]:[port]`/console&quot; in die Adresszeile eines Webbrowsers.
+1. Starten Sie WebLogic Server Administration Console, indem Sie in die Adresszeile eines Webbrowsers `https://host name]:[port]`/console eingeben.
 1. Klicken Sie im Bereich „Domain Structure“ auf „Environment“ > „Servers“.
 1. Klicken Sie im rechten Fenster auf die Registerkarte „Control“.
 1. Wählen Sie den verwalteten Server aus, den Sie starten möchten.
@@ -112,7 +111,7 @@ Nach dem Herunterfahren von WebLogic Server können Sie die Eingabeaufforderung 
 
 ## Einen verwalteten Server für WebLogic beenden  {#stop-a-weblogic-managed-server}
 
-1. Beginn WebLogic Server Administration Console durch Eingabe von `https://`*[Hostname]:[Anschluss ]*`/console` in die Adresszeile eines Webbrowsers.
+1. Starten Sie WebLogic Server Administration Console, indem Sie in die Adresszeile eines Webbrowsers `https://`*[Hostname]:[Port ]*`/console` eingeben.
 1. Klicken Sie im Bereich „Domain Structure“ auf „Environment“ > „Servers“.
 1. Klicken Sie im rechten Fenster auf die Registerkarte „Control“.
 1. Wählen Sie den verwalteten Server aus, den Sie beenden möchten.
