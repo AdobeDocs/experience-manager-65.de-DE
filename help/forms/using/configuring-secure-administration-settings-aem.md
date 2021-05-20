@@ -1,26 +1,25 @@
 ---
 title: Konfigurieren sicherer Verwaltungseinstellungen für AEM Forms on JEE
 seo-title: Konfigurieren sicherer Verwaltungseinstellungen für AEM Forms on JEE
-description: Erfahren Sie, wie Sie Benutzerkonten und -dienste verwalten, die zwar in einer privaten Entwicklungs-Umgebung erforderlich sind, in einer Umgebung von AEM Forms on JEE jedoch nicht erforderlich sind.
-seo-description: Erfahren Sie, wie Sie Benutzerkonten und -dienste verwalten, die zwar in einer privaten Entwicklungs-Umgebung erforderlich sind, in einer Umgebung von AEM Forms on JEE jedoch nicht erforderlich sind.
+description: Erfahren Sie, wie Sie Benutzerkonten und Dienste verwalten, die zwar in einer privaten Entwicklungsumgebung erforderlich sind, aber in einer Produktionsumgebung von AEM Forms on JEE nicht erforderlich sind.
+seo-description: Erfahren Sie, wie Sie Benutzerkonten und Dienste verwalten, die zwar in einer privaten Entwicklungsumgebung erforderlich sind, aber in einer Produktionsumgebung von AEM Forms on JEE nicht erforderlich sind.
 uuid: 04e45d06-f57d-406c-8228-15f483199430
 content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '884'
 ht-degree: 80%
 
 ---
 
-
 # Konfigurieren sicherer Verwaltungseinstellungen für AEM Forms on JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
-Erfahren Sie, wie Sie Benutzerkonten und -dienste verwalten, die zwar in einer privaten Entwicklungs-Umgebung erforderlich sind, in einer Umgebung von AEM Forms on JEE jedoch nicht erforderlich sind.
+Erfahren Sie, wie Sie Benutzerkonten und Dienste verwalten, die zwar in einer privaten Entwicklungsumgebung erforderlich sind, aber in einer Produktionsumgebung von AEM Forms on JEE nicht erforderlich sind.
 
 Im Allgemeinen verwenden Entwickler nicht die -Produktionsumgebung zum Erstellen und Testen ihrer Anwendungen. Sie müssen daher Benutzerkonten und -dienste verwalten, die, obwohl sie in einer privaten Entwicklungsumgebung benötigt werden, in einer Produktionsumgebung nicht erforderlich sind.
 
@@ -34,7 +33,7 @@ AEM Forms on JEE-Dienste erfordern zwar, dass gültige Berechtigungen für einen
 
 AEM Forms on JEE-Dienste benötigen zumindest SOAP-Zugriff. Diese Dienste sind meist für die Verwendung durch Workbench erforderlich; es sind jedoch auch Dienste darunter, die von der Workspace-Webanwendung aufgerufen werden.
 
-Führen Sie dieses Verfahren mithilfe der Webseite &quot;Anwendungen und Dienste&quot;in Administration Console aus:
+Führen Sie dieses Verfahren über die Web-Seite &quot;Anwendungen und Dienste&quot;in Administration Console aus:
 
 1. Melden Sie sich bei Administration Console an, indem Sie die folgende URL in einen Webbrowser eingeben:
 
@@ -79,7 +78,7 @@ Einige Formularserverdienste lassen den nicht authentifizierten (anonymen) Aufru
 
 1. Klicken Sie auf **Dienste > Anwendungen und Dienste > Dienstverwaltung**.
 1. Klicken Sie auf den Namen des zu deaktivierenden Dienstes (z. B. AuthenticationManagerService).
-1. Klicken Sie auf die Registerkarte **Sicherheit**, deaktivieren Sie **Anonymer Zugriff zulässig** und klicken Sie auf **Speichern**.
+1. Klicken Sie auf die Registerkarte **Sicherheit**, deaktivieren Sie die Option **Anonymer Zugriff erlaubt** und klicken Sie auf **Speichern**.
 1. Wiederholen Sie die Schritte 3 und 4 für die folgenden Dienste:
 
    * AuthenticationManagerService
@@ -130,4 +129,3 @@ Endbenutzer können sich über Workbench, AEM Forms-Webanwendungen oder benutzer
 1. Wechseln Sie in Administration Console zur Seite „Konfigurationsdateien importieren und exportieren“.
 1. Geben Sie den Pfad der geänderten „config.xml“-Datei ein oder klicken Sie auf „Durchsuchen“, um zu dieser Datei zu wechseln.
 1. Klicken Sie auf **Importieren**, um die geänderte „config.xml“-Datei hochzuladen und klicken Sie dann auf **OK**.
-
