@@ -1,19 +1,18 @@
 ---
-title: Erstellen und Konfigurieren von Asset Editor-Seiten
+title: Erstellen und Konfigurieren von Asset-Editor-Seiten
 description: Erfahren Sie, wie Sie benutzerdefinierte Asset-Editor-Seiten erstellen und mehrere Assets gleichzeitig bearbeiten können.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: Developer Tools,Asset Management
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Entwicklertools,Asset Management
+exl-id: 53e310a9-c511-447a-91bd-8c5b2760dc03
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2132'
-ht-degree: 70%
+source-wordcount: '2129'
+ht-degree: 69%
 
 ---
 
-
-# Erstellen und Konfigurieren der Asset Editor-Seiten {#creating-and-configuring-asset-editor-pages}
+# Erstellen und Konfigurieren von Asset-Editor-Seiten {#creating-and-configuring-asset-editor-pages}
 
 Dieses Dokument beschäftigt sich mit den folgenden Fragestellungen:
 
@@ -27,15 +26,15 @@ Dieses Dokument beschäftigt sich mit den folgenden Fragestellungen:
 >
 >Asset-Freigabe ist als Open-Source-Refrerenzimplementierung verfügbar. Siehe [Asset-Freigabe](https://adobe-marketing-cloud.github.io/asset-share-commons/). Wird nicht offiziell unterstützt.
 
-## Warum Assets Editor-Seiten erstellen und konfigurieren? {#why-create-and-configure-asset-editor-pages}
+## Warum erstellen und konfigurieren Sie Asset-Editor-Seiten? {#why-create-and-configure-asset-editor-pages}
 
-Digital Asset Management wird in einer immer größeren Anzahl von Szenarien eingesetzt. Wenn Sie von einer kleinen Benutzergruppe mit professionell geschulten Benutzern - z. B. Fotografen oder Taxonomen - zu größeren und vielfältigeren Benutzergruppen - wie z. B. Geschäftskunden, WCM-Autoren, Journalisten usw. wechseln, kann die leistungsstarke Benutzeroberfläche von [!DNL Adobe Experience Manager Assets] für professionelle Anwender zu viele Informationen und Interessengruppen-Beginn bereitstellen, um bestimmte Benutzeroberflächen oder Anwendungen für den Zugriff auf die für sie relevanten digitalen Assets anzufordern.
+Digital Asset Management wird in einer immer größeren Anzahl von Szenarien eingesetzt. Wenn Sie von einer kleinen Lösung für eine kleine Benutzergruppe professionell ausgebildeter Benutzer - z. B. Fotografen oder Taxonomen - zu größeren und vielfältigeren Benutzergruppen (z. B. Geschäftsbenutzer, WCM-Autoren, Journalisten usw.) wechseln, kann die leistungsstarke Benutzeroberfläche von [!DNL Adobe Experience Manager Assets] für professionelle Benutzer zu viele Informationen bereitstellen und Interessengruppen beginnen, spezifische Benutzeroberflächen oder Anwendungen für den Zugriff auf digitale Assets anzufordern, die für sie relevant sind.
 
-Diese Asset-orientierten Anwendungen können einfache Fotogalerien in einem Intranet sein, in denen Mitarbeiter Fotos von Messebesuchen oder einem Pressezentrum auf einer öffentlich zugänglichen Website hochladen können. Asset-orientierte Anwendungen können sich auch auf Komplettlösungen, einschließlich Warenkorb, Kassen- und Prüfprozessen, erstrecken.
+Bei diesen Asset-orientierten Anwendungen kann es sich um einfache Fotogalerien in einem Intranet handeln, in denen Mitarbeiter Fotos von Messebesuchen oder einem Pressezentrum auf einer öffentlich zugänglichen Website hochladen können. Asset-orientierte Anwendungen können sich auch auf Komplettlösungen, einschließlich Warenkorb, Kassen- und Prüfprozessen, erstrecken.
 
-Eine Asset-orientierte Anwendung zu erstellen, wird so in erster Linie zu einem Konfigurationsvorgang, der keinerlei Kodierung erfordert. Sie müssen lediglich mit den Benutzergruppen, deren Bedürfnissen und den verwendeten Metadaten vertraut sein. Asset-orientierte Anwendungen, die mit [!DNL Assets] erstellt wurden, sind erweiterbar: Mit moderatem Kodieraufwand können wiederverwendbare Komponenten für die Suche, Anzeige und Bearbeitung von Assets erstellt werden.
+Eine Asset-orientierte Anwendung zu erstellen, wird so in erster Linie zu einem Konfigurationsvorgang, der keinerlei Kodierung erfordert. Sie müssen lediglich mit den Benutzergruppen, deren Bedürfnissen und den verwendeten Metadaten vertraut sein. Asset-orientierte Anwendungen, die mit [!DNL Assets] erstellt wurden, sind erweiterbar: Mit moderatem Kodierungsaufwand können wiederverwendbare Komponenten für die Suche, Anzeige und Änderung von Assets erstellt werden.
 
-Eine Asset-orientierte Anwendung in [!DNL Experience Manager] besteht aus einer Asset-Editor-Seite, mit der eine detaillierte Ansicht eines bestimmten Assets abgerufen werden kann. Über eine Asset-Editor-Seite können zudem Metadaten bearbeitet werden, sofern der Benutzer, der auf das Asset zugreift, über die erforderlichen Berechtigungen verfügt.
+Eine Asset-zentrierte Anwendung in [!DNL Experience Manager] besteht aus einer Asset-Editor-Seite, die verwendet werden kann, um eine detaillierte Ansicht eines bestimmten Assets zu erhalten. Über eine Asset-Editor-Seite können zudem Metadaten bearbeitet werden, sofern der Benutzer, der auf das Asset zugreift, über die erforderlichen Berechtigungen verfügt.
 
 <!--
 ## Create and configure an Asset Share page {#creating-and-configuring-an-asset-share-page}
@@ -191,13 +190,13 @@ For more information, see the [predicate Javadocs](https://helpx.adobe.com/exper
 ![screen_shot_2012-04-23at15640pm](assets/screen_shot_2012-04-23at15640pm.png)
 -->
 
-## Erstellen und Konfigurieren einer Asset Editor-Seite {#creating-and-configuring-an-asset-editor-page}
+## Erstellen und Konfigurieren einer Asset-Editor-Seite {#creating-and-configuring-an-asset-editor-page}
 
 Durch Anpassen des Asset-Editors können Sie bestimmen, wie Benutzer digitale Assets anzeigen und bearbeiten können. Hierzu erstellen Sie eine neue Asset-Editor-Seite und passen dann die Ansichten und die Aktionen, die der Benutzer ausführen kann, auf dieser Seite an.
 
 >[!NOTE]
 >
->Wenn Sie benutzerdefinierte Felder zum DAM-Asset-Editor hinzufügen möchten, fügen Sie `cq:Widget`-Knoten zu `/apps/dam/content/asseteditors.` hinzu
+>Wenn Sie benutzerdefinierte Felder zum DAM-Asset-Editor hinzufügen möchten, fügen Sie `cq:Widget`-Knoten zu `/apps/dam/content/asseteditors.` hinzu.
 
 ### Erstellen einer Asset-Editor-Seite {#creating-the-asset-editor-page}
 
@@ -214,11 +213,11 @@ Die mit der Vorlage „Geometrixx-Asset-Editor“ erstellte Standardseite sieht 
 
 ![assetshare5](assets/assetshare5.png)
 
-Anpassen können Sie die Asset-Editor-Seite mithilfe der Elemente aus dem Sidekick. Die Asset Editor-Seite, auf die über das **Geometrixx Press Center** zugegriffen wird, ist eine benutzerdefinierte Version einer Seite, die auf dieser Vorlage basiert:
+Anpassen können Sie die Asset-Editor-Seite mithilfe der Elemente aus dem Sidekick. Die Asset-Editor-Seite, auf die über das **Geometrixx Press Center** zugegriffen wird, ist eine angepasste Version einer Seite, die auf dieser Vorlage basiert:
 
 ![assetshare6](assets/assetshare6.png)
 
-#### Asset-Editor zum Öffnen auf einer Asset-Freigabeseite {#setting-which-asset-editor-opens-from-an-asset-share-page} festlegen
+#### Asset-Editor zum Öffnen auf einer Asset-Freigabe-Seite festlegen {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
 Nachdem Sie die angepasste Asset-Editor-Seite erstellt haben, müssen Sie sicherstellen, dass beim Doppelklicken auf Assets über die von Ihnen erstellte angepasste Asset-Freigabe die Assets auf der angepassten Editorseite geöffnet werden.
 
@@ -234,7 +233,7 @@ So stellen Sie die Asset-Editor-Seite ein:
 
 ![screen_shot_2012-04-23at21653pm](assets/screen_shot_2012-04-23at21653pm.png)
 
-#### hinzufügen Asset Editor-Komponenten {#adding-asset-editor-components}
+#### Hinzufügen von Asset-Editor-Komponenten {#adding-asset-editor-components}
 
 Sie können bestimmen, welche Funktionen ein Asset-Editor besitzt, indem Sie der Seite Komponenten hinzufügen.
 
@@ -254,10 +253,10 @@ So fügen Sie Asset-Editor-Komponenten hinzu:
 
 | Komponente | Beschreibung |
 |---|---|
-| **[!UICONTROL Metadaten-] Formular- und  [!UICONTROL Metadaten-Textfeld]** | Ermöglicht das Hinzufügen zusätzlicher Metadaten zu einem Asset und das Durchführen einer Aktion, z. B. das Senden, zu diesem Asset. |
-| **[!UICONTROL Unter-Assets]** | Ermöglicht das Anpassen von Teilassets. |
-| **Tags** | Ermöglicht Benutzern das Auswählen und Hinzufügen von Tags zu einem Asset. |
-| **[!UICONTROL Miniaturansicht]** | Zeigt eine Miniaturansicht des Assets und den Dateinamen an und ermöglicht das Hinzufügen eines alternativen Textes. Hierüber können Sie zudem Asset-Editor-Aktionen hinzufügen. |
+| **[!UICONTROL Metadaten-] Formular und  [!UICONTROL Metadaten-Textfeld]** | Ermöglicht das Hinzufügen zusätzlicher Metadaten zu einem Asset und das Ausführen einer Aktion (z. B. Senden) für dieses Asset. |
+| **[!UICONTROL Unter-Assets]** | Ermöglicht die Anpassung von Unter-Assets. |
+| **Tags** | Ermöglicht Benutzern, Tags auszuwählen und zu einem Asset hinzuzufügen. |
+| **[!UICONTROL Miniaturansicht]** | Zeigt eine Miniaturansicht des Assets und dessen Dateinamen an und ermöglicht das Hinzufügen eines alternativen Textes. Hierüber können Sie zudem Asset-Editor-Aktionen hinzufügen. |
 | **[!UICONTROL Titel]** | Zeigt den Asset-Titel an, der angepasst werden kann. |
 
 ![screen_shot_2012-04-23at22743pm](assets/screen_shot_2012-04-23at22743pm.png)
@@ -270,7 +269,7 @@ Das Metadatenformular ist ein Formular mit Start- und Endaktion. Dazwischen nehm
 
 ![screen_shot_2012-04-23at22911pm](assets/screen_shot_2012-04-23at22911pm.png)
 
-1. Erstellen Sie eine Endaktion, indem Sie im Endbereich des Formulars auf **Bearbeiten** klicken. Sie können beispielsweise eine Option **[!UICONTROL Senden]** erstellen, mit der Benutzer ihre Metadatenänderungen senden können. Optional können Sie eine Option **Zurücksetzen** hinzufügen, mit der die Metadaten auf ihren ursprünglichen Status zurückgesetzt werden.
+1. Erstellen Sie eine Endaktion, indem Sie im Endbereich des Formulars auf **Bearbeiten** klicken. Sie können beispielsweise die Option **[!UICONTROL Submit]** erstellen, damit Benutzer ihre Metadatenänderungen senden können. Optional können Sie eine Option **Zurücksetzen** hinzufügen, mit der die Metadaten auf ihren ursprünglichen Status zurückgesetzt werden.
 
 ![screen_shot_2012-04-23at23138pm](assets/screen_shot_2012-04-23at23138pm.png)
 
@@ -280,7 +279,7 @@ Das Metadatenformular ist ein Formular mit Start- und Endaktion. Dazwischen nehm
 
 ![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
-Informationen zum Ändern der im Metadatenformular verfügbaren Namensraum finden Sie unter [Anpassen und Erweitern von Assets](/help/assets/extending-assets.md).
+Informationen zum Ändern der im Metadatenformular verfügbaren Namespaces finden Sie unter [Anpassen und Erweitern von Assets](/help/assets/extending-assets.md) .
 
 1. Klicken Sie auf die Registerkarte **Beschränkungen**. Hier können Sie festlegen, ob ein Feld erforderlich ist, und ggf. weitere Beschränkungen hinzufügen.
 
@@ -318,7 +317,7 @@ Mit der Komponente „Tags“ können Benutzer einem Asset vorhandene Tags zuwei
 
 ![screen_shot_2012-04-23at25031pm](assets/screen_shot_2012-04-23at25031pm.png)
 
-Doppelklicken Sie auf die Komponente „Tags“, um das gleichnamige Dialogfeld zu öffnen, in dem Sie den Titel „Tags“ ggf. ändern und die zugewiesenen Namespaces auswählen können. Um dieses Feld bearbeitbar zu machen, deaktivieren Sie das Kontrollkästchen **[!UICONTROL Bearbeiten]** ausblenden. Standardmäßig können Tags bearbeitet werden.
+Doppelklicken Sie auf die Komponente „Tags“, um das gleichnamige Dialogfeld zu öffnen, in dem Sie den Titel „Tags“ ggf. ändern und die zugewiesenen Namespaces auswählen können. Um dieses Feld bearbeitbar zu machen, deaktivieren Sie das Kontrollkästchen **[!UICONTROL Bearbeiten]** ausblenden . Standardmäßig können Tags bearbeitet werden.
 
 ![screen_shot_2012-04-23at24731pm](assets/screen_shot_2012-04-23at24731pm.png)
 
@@ -336,7 +335,7 @@ In der Komponente „Miniatur“ zeigt das Asset die ausgewählte Miniatur an (f
 
 ![screen_shot_2012-04-23at25452pm](assets/screen_shot_2012-04-23at25452pm.png)
 
-Doppelklicken Sie auf die Komponente „Miniatur“, um den gleichnamigen Dialog zum Ändern des ALT-Texts zu öffnen. Standardmäßig ist der alt-Text für die Miniaturansicht standardmäßig auf **Klicken, um das**-Asset herunterzuladen.
+Doppelklicken Sie auf die Komponente „Miniatur“, um den gleichnamigen Dialog zum Ändern des ALT-Texts zu öffnen. Standardmäßig ist der Alt-Text für die Miniaturansicht standardmäßig **Klicken Sie zum Herunterladen** des Assets auf .
 
 ![screen_shot_2012-04-23at25604pm](assets/screen_shot_2012-04-23at25604pm.png)
 
@@ -354,7 +353,7 @@ Standardmäßig liegt die Komponente im schreibgeschützten Modus vor, um eine B
 
 Wenn der Titel bearbeitbar ist, können Sie einen Titel und eine Beschreibung hinzufügen, indem Sie auf das Bleistiftsymbol klicken und so das Fenster **Asset-Eigenschaften** öffnen. Darüber hinaus ist es möglich, das Asset durch Auswahl von Datum und Uhrzeit zu aktiveren bzw. zu deaktivieren.
 
-Beim Bearbeiten von [!UICONTROL Titel] können Benutzer die **Titel**, **Beschreibung** ändern und **An- und** Aus-Zeiten **eingeben, um das Asset zu aktivieren bzw. zu deaktivieren.**
+Beim Bearbeiten des [!UICONTROL Titels] können Benutzer den **Titel**, **Beschreibung** ändern und **Ein** und **Ausschaltzeiten** eingeben, um das Asset ein- und auszuschalten.
 
 ![screen_shot_2012-04-23at35241pm](assets/screen_shot_2012-04-23at35241pm.png)
 
@@ -362,32 +361,32 @@ Es folgt ein Beispiel für eine ausgefüllte Komponente „Titel“:
 
 ![chlimage_1-164](assets/chlimage_1-392.png)
 
-#### hinzufügen Asset Editor-Aktionen {#adding-asset-editor-actions}
+#### Hinzufügen von Asset-Editor-Aktionen {#adding-asset-editor-actions}
 
 Sie können anhand einer Auswahl vordefinierter Aktionen festlegen, welche Aktionen Benutzer für ausgewählte digitale Assets ausführen können.
 
 So fügen Sie der Asset-Editor-Seite Aktionen hinzu:
 
-1. Klicken Sie auf der Seite &quot;Asset-Editor&quot;, die Sie anpassen möchten, im Sidekick auf **Asset-Editor**.
+1. Klicken Sie auf der anzupassenden Asset-Editor-Seite im Sidekick auf **Asset-Editor** .
 
 ![screen_shot_2012-04-23at35515pm](assets/screen_shot_2012-04-23at35515pm.png)
 
-Die folgenden Aktionen stehen zur Verfügung:
+Die folgenden Aktionen sind verfügbar:
 
 | Aktion | Beschreibung |
 |---|---|
-| [!UICONTROL Download] | Ermöglicht Benutzern das Herunterladen der ausgewählten   Assets auf ihren Computern. |
-| [!UICONTROL Editoren] | Ermöglicht Benutzern das Bearbeiten eines Bildes   (Interaktive Bearbeitung) |
-| [!UICONTROL Lightbox] | Speichert Assets in einem   &quot;lightbox&quot;, wo Sie andere Aktionen ausführen können. Dies ist praktisch, wenn über mehrere Seiten hinweg an Assets gearbeitet wird. |
-| [!UICONTROL Sperren] | Ermöglicht Benutzern das Sperren eines Assets. Diese Funktion ist nicht standardmäßig aktiviert und muss in der Liste der Komponenten aktiviert werden. |
-| [!UICONTROL Verweise] | Klicken Sie hier, um auf welchen Seiten anzuzeigen   das Asset verwendet wird. |
+| [!UICONTROL Download] | Ermöglicht Benutzern das Herunterladen der ausgewählten   Assets auf ihren Computern hinzugefügt. |
+| [!UICONTROL Editoren] | Ermöglicht Benutzern die Bearbeitung eines Bildes   (interaktive Bearbeitung) |
+| [!UICONTROL Lightbox] | Speichert Assets in einem   &quot;Lightbox&quot;, in der Sie andere Aktionen ausführen können. Dies ist praktisch, wenn über mehrere Seiten hinweg an Assets gearbeitet wird. |
+| [!UICONTROL Sperren] | Benutzer können ein Asset sperren. Diese Funktion ist nicht standardmäßig aktiviert und muss in der Liste der Komponenten aktiviert werden. |
+| [!UICONTROL Verweise] | Klicken Sie auf diese Option, um anzuzeigen, auf welchen Seiten   das Asset verwendet wird. |
 | [!UICONTROL Versionierung] | Ermöglicht die Erstellung und Wiederherstellung   Versionen eines Assets. |
 
-1. Ziehen Sie die entsprechende Aktion in den Bereich **Aktionen** auf der Seite. Es wird eine Option erstellt, mit der die Aktion ausgeführt wird, die auf die Seite gezogen wird.
+1. Ziehen Sie die entsprechende Aktion in den Bereich **Aktionen** auf der Seite. Es wird eine Option erstellt, mit der die auf die Seite gezogene Aktion ausgeführt wird.
 
 ![chlimage_1-165](assets/chlimage_1-393.png)
 
-## Assets mit der Asset-Editor-Seite {#multi-editing-assets-with-the-asset-editor-page} bearbeiten
+## Mehrere Assets mit der Asset-Editor-Seite {#multi-editing-assets-with-the-asset-editor-page} bearbeiten
 
 Mit [!DNL Experience Manager Assets] können Sie Änderungen an mehreren Assets gleichzeitig vornehmen. Nach Auswahl der Assets können Sie bei diesen gleichzeitig Folgendes ändern:
 
@@ -396,15 +395,15 @@ Mit [!DNL Experience Manager Assets] können Sie Änderungen an mehreren Assets 
 
 So führen Sie eine Mehrfachbearbeitung von Assets mit der Asset-Editor-Seite durch:
 
-1. Öffnen Sie die Seite Geometrixx **Pressezentrum**:
+1. Öffnen Sie die Seite Geometrixx **Pressezentrum** :
    `https://localhost:4502/content/geometrixx/en/company/press.html`
 
 1. Wählen Sie die Assets aus:
 
-   * Windows: `Ctrl + click` jedes Asset.
-   * Mac: `Cmd + click` jedes Asset.
+   * unter Windows: `Ctrl + click` jedes Asset.
+   * unter Mac: `Cmd + click` jedes Asset.
 
-   So wählen Sie einen Asset-Bereich aus: Klicken Sie auf das erste Asset und dann auf das letzte Asset.`Shift + click`
+   So wählen Sie einen Asset-Bereich aus: Klicken Sie auf das erste Asset und dann auf `Shift + click` das letzte Asset.
 
 1. Klicken Sie im Feld **Aktionen** auf **Metadaten bearbeiten** (linker Seitenbereich).
 1. Die Geometrixx-Seite mit dem **Pressezentrum-Asset-Editor** wird auf einer neuen Registerkarte geöffnet. Die Metadaten der Assets werden wie folgt angezeigt:
@@ -413,21 +412,21 @@ So führen Sie eine Mehrfachbearbeitung von Assets mit der Asset-Editor-Seite du
    * Ein Tag, das für alle Assets gilt, wird mit einer normalen Schriftart angezeigt.
    * Andere Metadaten als Tags: Der Wert des Felds wird nur angezeigt, wenn dieser für alle ausgewählten Assets identisch ist.
 
-1. Klicken Sie auf **Herunterladen**, um eine ZIP-Datei herunterzuladen, die die ursprünglichen Ausgabeformate der Assets enthält.
-1. Klicken Sie auf die Option Tags bearbeiten, die neben dem Feld **Tags** steht.
+1. Klicken Sie auf **Download** , um eine ZIP-Datei herunterzuladen, die die Original-Ausgabeformate der Assets enthält.
+1. Klicken Sie auf die Option &quot;Tags bearbeiten&quot;, die sich neben dem Feld **Tags** befindet.
 
    * Ein Tag, das nicht für alle Assets gilt, sondern nur für einige wenige, hat einen grauen Hintergrund.
    * Ein Tag, das für alle Assets gilt, hat einen weißen Hintergrund.
 
    Sie haben folgende Möglichkeiten:
 
-   * Klicken Sie auf `x`, um das Tag für alle Assets zu entfernen.
-   * Klicken Sie auf `+`, um das Tag allen Assets hinzuzufügen.
+   * Klicken Sie auf `x` , um das Tag für alle Assets zu entfernen.
+   * Klicken Sie auf `+` , um das Tag zu allen Assets hinzuzufügen.
    * Klicken Sie auf den **Pfeil** und wählen Sie ein Tag aus, um allen Assets ein neues Tag hinzuzufügen.
 
    Klicken Sie auf **OK**, um die Änderungen in das Formular zu schreiben. Das Kästchen neben dem Feld **Tags** wird automatisch aktiviert.
 
-1. Bearbeiten Sie das Feld Beschreibung. Legen Sie beispielsweise Folgendes fest:
+1. Bearbeiten Sie das Feld Beschreibung . Setzen Sie sie beispielsweise auf:
 
    `This is a common description`
 
@@ -437,4 +436,4 @@ So führen Sie eine Mehrfachbearbeitung von Assets mit der Asset-Editor-Seite du
 
 1. Klicken Sie auf **Metadaten aktualisieren**, um das Formular abzusenden und die Änderungen für alle Assets zu speichern.
 
-   Hinweis: nur die geprüften Metadaten geändert werden.
+   Hinweis: nur die aktivierten Metadaten geändert werden.
