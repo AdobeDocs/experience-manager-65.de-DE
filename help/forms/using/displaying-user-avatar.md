@@ -9,18 +9,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: aec03ea5-17a6-4775-92cb-2ad361895fdf
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: ee0708b0-b630-4a2b-84b6-3c0b92dd7777
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 80%
 
 ---
 
-
 # Anzeigen des Benutzeravatars {#displaying-the-user-avatar}
 
-Der Avatar des angemeldeten Benutzers wird in der oberen rechten Ecke von AEM Forms Workspace angezeigt. Auch die Avatare von direkten Berichten in der hierarchischen Struktur werden in der Manageransicht angezeigt. Sie können AEM Forms Workspace so konfigurieren, dass die Benutzerbilder aus Ihrer Datenbank, z. B. dem LDAP-Server, abgerufen werden.
+Der Avatar des angemeldeten Benutzers wird in der oberen rechten Ecke von AEM Forms Workspace angezeigt. Auch die Avatare von direkten Berichten in der hierarchischen Struktur werden in der Manageransicht angezeigt. Sie können AEM Forms Workspace so konfigurieren, dass die Benutzerbilder aus Ihrer Datenbank, z. B. vom LDAP-Server, ausgewählt werden.
 
 >[!NOTE]
 >
