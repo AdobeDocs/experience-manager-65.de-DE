@@ -9,15 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 65720eed-ab06-463f-9567-2fdc468b6219
-feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Dokumentensicherheit
+exl-id: 23f71b34-a0cb-4664-bb8b-a60f33dc70d8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1222'
 ht-degree: 100%
 
 ---
-
 
 # Konten eingeladener und lokaler Benutzer verwalten {#managing-invited-and-local-user-accounts}
 
@@ -134,4 +133,3 @@ Sie können Benutzer einfacher finden, indem Sie die Benutzerliste nach Spalten�
    1. Klicken Sie in Administration Console auf „Dienste“ > „Document Security“ > „Eingeladene und lokale Benutzer“.
    1. Um eingeladene Benutzer zu sortieren, klicken Sie auf die Registerkarte „Eingeladene Benutzer“ und anschließend auf die gewünschte Spaltenüberschrift.
    1. Um lokale Benutzer zu sortieren, klicken Sie auf die Registerkarte „Lokale Benutzer“ und anschließend auf die gewünschte Spaltenüberschrift.
-
