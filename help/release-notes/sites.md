@@ -1,14 +1,13 @@
 ---
 title: Versionshinweise zu AEM Sites
 description: Spezifische Versionshinweise für Adobe Experience Manager 6.5 Sites
-translation-type: tm+mt
-source-git-commit: 23656e023a9a0bfc335655f9cfb0530aa917b3ef
+exl-id: 0bd0933c-f14d-4be2-9ad0-3f8207d7fa5d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 61%
 
 ---
-
 
 # Versionshinweise zu AEM Sites {#aem-sites-release-notes}
 
@@ -28,13 +27,13 @@ Im Folgenden sind die Verbesserungen für AEM Sites 6.5 aufgeführt:
       ${'a' in myObject}
       ```
 
-   * Variablendeklarationen mit Datensatz:
+   * Variablendeklarationen mit data-sly-set :
       `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
-   * Liste- und Wiederholungskontrollparameter: begin, step, end:
+   * Listen- und Wiederholungsparameter: begin, step, end:
       `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
-   * Bezeichner für die datenbasierte Aufhebung:
+   * Kennungen für data-sly-unwrap:
 
       ```html
       <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
@@ -46,13 +45,13 @@ Im Folgenden sind die Verbesserungen für AEM Sites 6.5 aufgeführt:
 
 * Kernkomponenten 2.3.2+, siehe [Versionshinweise zu Github](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/releases).
 * Rastersystem für Layout-Container, siehe [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-responsivegrid).
-* Clientlib Manager: Google Closure Compiler standardmäßig auf Minimierung von JavaScript clientlibs festgelegt (früher war Yahoo YUI) und Google Closure Compiler auf Version v20190121 aktualisiert
+* Clientlib Manager: Google Closure Compiler standardmäßig für die Minimierung von JavaScript-Clientlibs festgelegt (alter Standard war Yahoo YUI) und Google Closure Compiler auf Version v20190121 aktualisiert
 * Vorlagen-Editor und Richtlinien:
 
-   * Erstellen und bearbeiten Sie Vorlagen für einseitige Apps, die das JS SDK verwenden (auch als SPA Editor bezeichnet)
+   * Erstellen und bearbeiten Sie Vorlagen für Einzelseiten-Apps, die das JS-SDK verwenden (auch als SPA Editor bezeichnet)
 
 * Referenz-Website We.Retail 4.0, siehe [Versionshinweise zu GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases).
-* Toolkit zum Aktualisieren vorhandener Sites zur Nutzung der neuesten Editorfunktionen finden Sie unter [Github-Repository](https://github.com/adobe/aem-modernize-tools)
+* Toolkit zum Aktualisieren vorhandener Sites, um die neuesten Editor-Funktionen zu nutzen, siehe [GitHub-Repository](https://github.com/adobe/aem-modernize-tools)
 
 >[!CAUTION]
 >
@@ -72,7 +71,7 @@ Im Folgenden sind die Verbesserungen für AEM Sites 6.5 aufgeführt:
 ## Inhaltsfragmente und Editor {#content-fragments-amp-editor}
 
 * Mit der neuen Leiste [Anmerkungen](/help/assets/content-fragments/content-fragments-variations.md#viewing-editing-deleting-annotations) im Inhaltsfragmente-Editor können Sie allgemeine Kommentare erstellen und Kommentare innerhalb des Texts anzeigen (erscheinen ebenfalls in der Leiste „Timeline“).
-* Möglichkeit, den Standard-Inhaltstyp eines mehrzeiligen Textelements in einem [Inhaltsfragmentmodell](/help/assets/content-fragments/content-fragments-models.md) auf einfachen Text, Rich-Text oder Markdown festzulegen
+* Möglichkeit, den standardmäßigen Inhaltstyp eines mehrzeiligen Textelements in einem [Inhaltsfragmentmodell](/help/assets/content-fragments/content-fragments-models.md) auf einfachen Text, Rich-Text oder Markdown festzulegen
 * [Kommentare/Anmerkungen](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment) können per Textauswahl in RTE (Vollbildansicht) hinzugefügt werden.
 * In der Leiste „Verweis“ können Versionen von Inhaltsfragmenten nebeneinander [verglichen](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) werden.
 * Der heruntergeladene Bericht eines Assets zeigt nun die entsprechenden Inhaltsfragmente an.
@@ -93,9 +92,9 @@ Im Folgenden sind die Verbesserungen für AEM Sites 6.5 aufgeführt:
 
 ## Multi-Site-Management (MSM) {#multi-site-management-msm}
 
-* Bei Rollout-Konfigurationen, die PushOnModify verwenden, sollten Sie den Vorgang zum Verschieben der Seite besser handhaben, um einen inkonsistenten Status zu vermeiden
+* Bei Rollout-Konfigurationen, die PushOnModify verwenden, ist die Handhabung des Seitenverschiebungsvorgangs besser, um inkonsistente Zustände zu vermeiden
 * Durch Erstellen einer neuen Seite in der Live Copy-Struktur wird nun standardmäßig eine eigenständige Seite generiert.
-* Verwenden Sie MSM-Funktionen in einseitigen Apps, die das JS SDK verwenden (auch als SPA Editor bezeichnet)
+* Verwenden Sie MSM-Funktionen in Einzelseiten-Apps, die das JS-SDK verwenden (auch als SPA Editor bezeichnet).
 
 ## Launches {#launches}
 
@@ -110,22 +109,22 @@ Im Folgenden sind die Verbesserungen für AEM Sites 6.5 aufgeführt:
 
 >[!CAUTION]
 >
->Zurzeit:
+>Aktuell:
 >
->* Nur `at.js 1.x` wird unterstützt, wenn Sie Adobe Target als Targeting-Engine in AEM Aktivitäten-Konsole verwenden.
+>* Nur `at.js 1.x` wird unterstützt, wenn Sie Adobe Target als Targeting-Engine in AEM Aktivitätskonsole verwenden.
    >
    >
-* Sowohl `at.js. 1.x` als auch `at.js 2.x` werden unterstützt, wenn Sie Experience Fragment-Export in Zielgruppe verwenden und Aktivitäten in der Konsole der Zielgruppe ausführen.
+* Sowohl `at.js. 1.x` als auch `at.js 2.x` werden unterstützt, wenn Sie den Experience Fragment-Export in Target verwenden und Aktivitäten in der Target-Konsole ausführen.
 
 
-* Zur Adobe Target-Integration kann nun die Target Standard-API verwendet werden. Frühere Versionen von AEM verwenden die Zielgruppe Classic HTTP API, die jetzt nicht mehr unterstützt wird.
-* Adobe Target `mbox.js` Version 63 ist enthalten. Adobe empfiehlt dringend, die Implementierung auf `at.js` v1.x zu wechseln.
+* Zur Adobe Target-Integration kann nun die Target Standard-API verwendet werden. Frühere Versionen von AEM verwenden die Target Classic-HTTP-API, die jetzt nicht mehr unterstützt wird.
+* Adobe Target `mbox.js` Version 63 ist enthalten. Adobe empfiehlt dringend, die Implementierung auf `at.js` v1.x umzustellen.
 * `at.js` Version 1.5.0 ist jetzt enthalten. Adobe empfiehlt, [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) zu verwenden, um `at.js` v1.x für die Site bereitzustellen.
 
 ## AEM und Adobe Analytics {#aem-amp-adobe-analytics}
 
-* `s_code.js` H.27.5 ist enthalten. Adobe empfiehlt, die Implementierung auf `AppMeasurement.js` zu umstellen
-* `AppMeasurement.js` Version 1.8.0 ist enthalten. Adobe empfiehlt, [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) zu verwenden, um AppMeasurement.js in der Site bereitzustellen.
+* `s_code.js` H.27.5 ist enthalten. Adobe empfiehlt, die Implementierung auf `AppMeasurement.js` umzustellen.
+* `AppMeasurement.js` Version 1.8.0 ist enthalten. Adobe empfiehlt die Verwendung von [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html), um AppMeasurement.js auf der Site bereitzustellen.
 
 ## AEM und Commerce {#aem-commerce}
 
@@ -137,7 +136,7 @@ Weitere Informationen hierzu finden Sie auf der [Seite mit Versionshinweisen fü
 
 ## Screens-Add-on  {#screens-add-on}
 
-* Verwenden von Starts zur Planung künftiger Inhaltsänderungen für Signaturinhalte
+* Verwenden von Launches zum Planen künftiger Inhaltsänderungen für Signaturinhalte
 * Es sind getaktete Wiedergaben in einem Sequenzkanal möglich.
 * Sie können Projektstrukturen anhand einer Quelldatei, z. B. einer Excel-Tabelle, automatisch erstellen lassen.
 
