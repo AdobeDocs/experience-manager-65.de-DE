@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '3911'
 ht-degree: 98%
 
 ---
-
 
 # Skriptunterstützung für HTML5-Formulare {#scripting-support-for-html-forms}
 
@@ -49,7 +48,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   <tr>
    <td><code>newtext</code></td>
    <td>Gibt den Inhalt des Feldes nach einer Änderung aufgrund von Benutzeraktionen an.</td>
-   <td><p>Die <code>newText</code>-Eigenschaft funktioniert in folgenden Fällen nicht ordnungsgemäß:</p>
+   <td><p>Die Eigenschaft <code>newText</code> funktioniert in folgenden Fällen nicht ordnungsgemäß:</p>
     <ul>
      <li>Beim Markieren und Ersetzen von Texten</li>
      <li>Beim Löschen, Kopieren und Einfügen von Texten</li>
@@ -64,7 +63,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   <tr>
    <td>change</td>
    <td>Gibt den Wert an, den ein Benutzer unmittelbar nach der Durchführung der Aktion in ein Feld eingibt oder einfügt. </td>
-   <td><p>Die Eigenschaft change funktioniert in folgenden Fällen nicht ordnungsgemäß:</p>
+   <td><p>Die Eigenschaft "change"funktioniert in folgenden Fällen nicht ordnungsgemäß:</p>
     <ul>
      <li>Beim Markieren und Ersetzen von Texten</li>
      <li>Beim Löschen, Kopieren und Einfügen von Texten</li>
@@ -103,7 +102,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   <tr>
    <td><code>name</code></td>
    <td>Gibt den Namen der aktuellen Anwendung zurück.</td>
-   <td>Gibt den Browsernamen und die Version zurück. In Chrome-Browser wird beispielsweise der zurückgegebene Wert <code>Chrome &lt;version&gt;.</code></td>
+   <td>Gibt den Browsernamen und die Version zurück. Im Chrome-Browser lautet der zurückgegebene Wert beispielsweise <code>Chrome &lt;version&gt;.</code></td>
   </tr>
   <tr>
    <td><code>numPages</code></td>
@@ -350,7 +349,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
  </tbody>
 </table>
 
-## Formular- {#form}
+## Formular-  {#form}
 
 | **Eigenschaft** | **Beschreibung** | **Ausnahme** |
 |---|---|---|
@@ -379,7 +378,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
 | `item` | Index auf der Basis Null zur Sammlung. |
 | `append` | Fügt am Ende der Liste der Nodes eine Node an. |
 | `remove` | Entfernt einen Knoten aus der Knotenliste. |
-| `insert` | Fügt eine Node vor einer angegebenen Node in die Knotenliste ein. |
+| `insert` | Fügt einen Knoten vor einem angegebenen Knoten in die Knotenliste ein. |
 
 ## node {#node}
 
@@ -584,7 +583,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
  </tbody>
 </table>
 
-## Füllung  {#fill}
+## Füllung {#fill}
 
 <table>
  <tbody>
@@ -706,7 +705,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
  </tbody>
 </table>
 
-## draw  {#draw}
+## draw {#draw}
 
 <table>
  <tbody>
@@ -872,7 +871,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
  </tbody>
 </table>
 
-## textEdit  {#textedit}
+## textEdit {#textedit}
 
 <table>
  <tbody>
@@ -1001,7 +1000,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
  </tbody>
 </table>
 
-## Bogen {#arc}
+## arc {#arc}
 
 <table>
  <tbody>
@@ -1106,7 +1105,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
  </tbody>
 </table>
 
-## items  {#items}
+## items {#items}
 
 | **Eigenschaft** | **Beschreibung** | **Ausnahme** |
 |---|---|---|
@@ -1116,7 +1115,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
 
 FormCalc ist eine XFA-spezifische Sprache zum Erstellen von E-Formular-orientierter Logik und Berechnungsstämmen. FormCalculation stellt einen umfangreichen Satz an Erstellungsfunktionen bereit.
 
-### Von FormCalc unterstützte Funktionen  {#formcalc-supported-functions}
+### Von FormCalc unterstützte Funktionen {#formcalc-supported-functions}
 
 ### Von FormCalc unterstützte Ausdrücke {#formcalc-expression-support}
 
@@ -1164,7 +1163,7 @@ FormCalc ist eine XFA-spezifische Sprache zum Erstellen von E-Formular-orientier
   <tr>
    <td>for each</td>
    <td><br type="_moz" /> </td>
-   <td>for each i in (1, 2, 3) <br /> do s = s + i endfor</td>
+   <td>für jede i in (1, 2, 3) <br /> do s = s + i endfor</td>
   </tr>
   <tr>
    <td>Funktionsdeklaration</td>
@@ -1329,7 +1328,7 @@ FormCalc ist eine XFA-spezifische Sprache zum Erstellen von E-Formular-orientier
   <tr>
    <td>app.formsVersion</td>
    <td>Die Versionsnummer der Viewer-Software. Aktivieren Sie diese Eigenschaft, um festzulegen, ob Objekte, Eigenschaften oder Methoden in den neueren Versionen der Software verfügbar sind, wenn Sie die Abwärtskompatibilität in den Skripten beibehalten möchten.</td>
-   <td>11.001 immer.</td>
+   <td>Immer 11.001.</td>
   </tr>
   <tr>
    <td>app.language</td>
