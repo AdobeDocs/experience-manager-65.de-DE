@@ -9,18 +9,17 @@ topic-tags: document_services, publish
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
-translation-type: tm+mt
-source-git-commit: d324586eb1d4fb809bf87641001b92a1941e6548
+exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1133'
 ht-degree: 70%
 
 ---
 
-
 # Verwalten von Formularanwendungen und Aufgaben im AEM-Posteingang{#manage-forms-applications-and-tasks-in-aem-inbox}
 
-Zu den vielen Möglichkeiten, einen formularzentrierten Workflow zu starten oder auszulösen, gehören Anwendungen im AEM-Posteingang. Sie müssen eine Workflow-Anwendung erstellen, um einen Forms-Workflow als Anwendung im Posteingang verfügbar zu machen. Weitere Informationen zur Workflow-Anwendung und anderen Methoden zum Starten von Forms Workflows finden Sie unter [Einen Forms-zentrierten Workflow unter OSGi](../../forms/using/aem-forms-workflow.md#launch) starten.
+Zu den vielen Möglichkeiten, einen formularzentrierten Workflow zu starten oder auszulösen, gehören Anwendungen im AEM-Posteingang. Sie müssen eine Workflow-Anwendung erstellen, um einen Forms-Workflow als Anwendung im Posteingang verfügbar zu machen. Weitere Informationen zur Workflow-Anwendung und anderen Möglichkeiten zum Starten von Forms-Workflows finden Sie unter [Starten eines Forms-zentrierten Workflows unter OSGi](../../forms/using/aem-forms-workflow.md#launch).
 
 Darüber hinaus führt der AEM-Posteingang Benachrichtigungen und Aufgaben aus verschiedenen AEM-Komponenten einschließlich Forms-Workflows zusammen. Wenn ein Forms-Workflow ausgelöst wird, der einen Schritt zur Zuweisung einer Aufgabe enthält, wird die dazugehörige Anwendung als Aufgabe im Posteingang der zugewiesenen Person angezeigt. Wenn der Empfänger eine Gruppe ist, wird die Aufgabe im Posteingang aller Gruppenmitglieder angezeigt, bis eine Person die Aufgabe beansprucht oder delegiert.
 
@@ -34,8 +33,8 @@ Kurz zusammengefasst: Mit dem Posteingang können Sie neue Anwendungen erstellen
 
 ## Anwendung erstellen {#create-application}
 
-1. Gehen Sie zu AEM Posteingang unter https://&#39;[server]:[port]&#39;/aem/inbox.
-1. Tippen Sie in der Benutzeroberfläche des Posteingangs auf **[!UICONTROL Erstellen > Anwendung]**. Die Seite &quot;Anwendung auswählen&quot;wird angezeigt.
+1. Gehen Sie zum AEM Posteingang unter https://&#39;[server]:[port]&#39;/aem/inbox.
+1. Tippen Sie in der Benutzeroberfläche des Posteingangs auf **[!UICONTROL Erstellen > Anwendung]**. Die Seite Anwendung auswählen wird angezeigt.
 1. Wählen Sie eine Anwendung aus und klicken Sie auf **[!UICONTROL Erstellen]**. Das mit der Anwendung verknüpfte adaptive Formular wird geöffnet. Füllen Sie die Informationen im adaptiven Formular aus und tippen Sie auf **[!UICONTROL Senden]**. Der dazugehörige Workflow wird gestartet und erstellt eine Aufgabe im Posteingang des Empfängers.
 
 ## Aufgaben verwalten {#manage-tasks}
@@ -48,7 +47,7 @@ Aufgaben, die einer Gruppe zugewiesen sind, werden im Posteingang aller Gruppenm
 
 1. Tippen Sie auf die Miniaturansicht der Aufgabe, um sie auszuwählen. Optionen zum Öffnen oder Delegieren der Aufgabe werden oben angezeigt.
 
-   ![select-Aufgabe](assets/select-task.png)
+   ![select-task](assets/select-task.png)
 
 1. Führen Sie einen der folgenden Schritte aus:
 
@@ -71,7 +70,7 @@ Wenn Sie eine Aufgabe öffnen, können Sie Aufgabendetails anzeigen und verfügb
    >
    >Wenn eine Aufgabe einer Gruppe zugewiesen ist, müssen Sie sie annehmen, damit Sie sie in der detaillierten Ansicht anzeigen können.
 
-![Aufgabe-Details](assets/task-details.png)
+![Aufgabendetails](assets/task-details.png)
 
 Die detaillierte Aufgabenansicht umfasst die folgenden Abschnitte:
 
@@ -82,15 +81,15 @@ Die detaillierte Aufgabenansicht umfasst die folgenden Abschnitte:
 
 #### Aufgabendetails {#task-details}
 
-Der Abschnitt „Aufgabendetails“ zeigt Informationen zur Aufgabe an. Die angezeigten Informationen hängen von den Konfigurationseinstellungen von [Aufgabe zuweisen](/help/sites-developing/workflows-step-ref.md) im Workflow ab. Das Beispiel oben zeigt die Beschreibung, den Status, das Startdatum und den verwendeten Workflow für die Aufgabe an. Es ist außerdem möglich, Dateien an Aufgaben anzuhängen.
+Der Abschnitt „Aufgabendetails“ zeigt Informationen zur Aufgabe an. Die angezeigten Informationen hängen von den Konfigurationseinstellungen des Schritts [Aufgabe zuweisen](/help/sites-developing/workflows-step-ref.md) im Workflow ab. Das Beispiel oben zeigt die Beschreibung, den Status, das Startdatum und den verwendeten Workflow für die Aufgabe an. Es ist außerdem möglich, Dateien an Aufgaben anzuhängen.
 
-#### Formular- {#form}
+#### Formular-  {#form}
 
 Auf der Registerkarte „Formular“ im Hauptinhaltsbereich werden das übermittelte Formular und gegebenenfalls Anhänge für einzelne Felder angezeigt.
 
 #### Workflow-Details {#workflow-details}
 
-Die Registerkarte „Workflow-Details“ oben zeigt den Fortschritt der Aufgabe in verschiedenen Phasen des Workflows an. Sie zeigt abgeschlossene, aktuelle und ausstehende Phasen der Aufgabe. Die Schritte für einen Workflow werden im Schritt [Aufgabe zuweisen](/help/sites-developing/workflows-step-ref.md) des zugehörigen Workflows definiert.
+Die Registerkarte „Workflow-Details“ oben zeigt den Fortschritt der Aufgabe in verschiedenen Phasen des Workflows an. Sie zeigt abgeschlossene, aktuelle und ausstehende Phasen der Aufgabe. Die Phasen eines Workflows werden im Schritt [Aufgabe zuweisen](/help/sites-developing/workflows-step-ref.md) des zugehörigen Workflows definiert.
 
 Darüber hinaus wird auf der Registerkarte der Aufgabenverlauf für jede abgeschlossene Phase im Workflow angezeigt. Sie können auf **[!UICONTROL Details anzeigen]** für eine abgeschlossene Phase tippen, um Details zu dieser Phase anzuzeigen. Dies zeigt Kommentare, Formular- und Aufgabenanhänge, Status, Start- und Enddatum usw. für die Aufgabe an.
 
@@ -106,43 +105,43 @@ Wenn Sie eine Aktion für die Aufgabe ausführen, wird diese im Workflow weiterg
 
 Im AEM-Posteingang werden nur aktive Aufgaben angezeigt. Abgeschlossene Aufgaben werden nicht in der Liste aufgeführt. Sie können jedoch mithilfe von Posteingangsfiltern Aufgaben basierend auf verschiedenen Parametern filtern, z. B. Aufgabentyp, Status, Start- und Enddatum usw. Abgeschlossene Aufgaben anzeigen:
 
-1. Tippen Sie in AEM Posteingang auf ![umschaltbares Bedienfeld1](assets/toggle-side-panel1.png), um die Filterauswahl zu öffnen.
+1. Tippen Sie in AEM Posteingang auf ![Umschalter-Seitenbereich1](assets/toggle-side-panel1.png) , um die Filterauswahl zu öffnen.
 1. Tippen Sie auf das Akkordion **[!UICONTROL Aufgabenstatus]** und wählen Sie **[!UICONTROL Abgeschlossen]**. Alle Ihre abgeschlossenen Aufgaben werden angezeigt.
 
    ![filter](assets/filter.png)
 
 1. Wählen Sie eine Aufgabe und klicken Sie auf **[!UICONTROL Öffnen]**.
 
-Die Aufgabe wird geöffnet und das dazugehörige Dokument oder adaptive Formular wird angezeigt. Bei adaptiven Formularen zeigt die Aufgabe das schreibgeschützte adaptive Formular oder das zugehörige PDF-Dokument des Datensatzes an, wie auf der Registerkarte &quot;Formular/Dokument&quot;im Schritt [Aufgabe zuweisen](/help/sites-developing/workflows-step-ref.md) konfiguriert.
+Die Aufgabe wird geöffnet und das dazugehörige Dokument oder adaptive Formular wird angezeigt. Bei adaptiven Formularen zeigt die Aufgabe das schreibgeschützte adaptive Formular oder das PDF-Datensatzdokument an, das auf der Registerkarte Formular/Dokument des [Workflow-Schritts &quot;Aufgabe zuweisen&quot;](/help/sites-developing/workflows-step-ref.md) konfiguriert wurde.
 
 Im Abschnitt mit den Aufgabendetails werden Informationen wie die durchgeführte Aktion, der Aufgabenstatus, das Startdatum und das Enddatum angezeigt.
 
-![completed-Aufgabe](assets/completed-task.png)
+![completed-task](assets/completed-task.png)
 
-Auf der Registerkarte **[!UICONTROL Workflow-Details]** werden die einzelnen Schritte des Workflows angezeigt. Tippen Sie auf **[!UICONTROL Details zur Ansicht]**, um detaillierte Informationen zu erhalten.
+Die Registerkarte **[!UICONTROL Workflow-Details]** zeigt jeden Schritt des Workflows an. Tippen Sie auf **[!UICONTROL Details anzeigen]** , um einen Schritt mit detaillierten Informationen anzuzeigen.
 
-![completed-Aufgabe-workflow](assets/completed-task-workflow.png)
+![completed-task-workflow](assets/completed-task-workflow.png)
 
 ## Fehlerbehebung {#troubleshooting-workflows}
 
-### Elemente im Zusammenhang mit AEM Workflow in AEM Posteingang können nicht Ansicht werden.{#unable-to-see-aem-worklow-items}
+### Elemente im Zusammenhang mit AEM Workflow können nicht in AEM Posteingang {#unable-to-see-aem-worklow-items} angezeigt werden.
 
-Ein Eigentümer des Workflow-Modells kann Elemente im Zusammenhang mit AEM Arbeitsablauf nicht in AEM Posteingang Ansichten durchführen. Um das Problem zu beheben, fügen Sie die unten aufgeführten Indizes zum AEM Repository hinzu und erstellen Sie den Index neu.
+Ein Eigentümer eines Workflow-Modells kann Elemente im Zusammenhang mit AEM Workflow in AEM Posteingang nicht anzeigen. Um das Problem zu beheben, fügen Sie die unten aufgeführten Indizes zu Ihrem AEM-Repository hinzu und erstellen Sie den Index neu.
 
 1. Verwenden Sie eine der folgenden Methoden, um Indizes hinzuzufügen:
 
-   * Erstellen Sie die folgenden Knoten in CRX DE bei `/oak:index/workflowDataLucene/indexRules/granite:InboxItem/properties` mit den entsprechenden Eigenschaften, wie in der folgenden Tabelle angegeben:
+   * Erstellen Sie die folgenden Knoten in CRX DE unter `/oak:index/workflowDataLucene/indexRules/granite:InboxItem/properties` mit den entsprechenden Eigenschaften, wie in der folgenden Tabelle angegeben:
 
       | Node | Eigenschaft | Typ |
       |---|---|---|
       | sharedWith | sharedWith | ZEICHENFOLGE |
-      | locked | gesperrt | BOOLESCH |
+      | locked | locked | BOOLESCH |
       | zurückgegeben | zurückgegeben | BOOLESCH |
       | allowInboxSharing | allowInboxSharing | BOOLESCH |
-      | allowExplizitesSharing | allowExplizitesSharing | BOOLESCH |
+      | allowExplicitSharing | allowExplicitSharing | BOOLESCH |
 
 
-   * Stellen Sie die Indizes über ein AEM Paket bereit. Sie können ein [AEM Archetype](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype)-Projekt verwenden, um ein bereitstellbares AEM zu erstellen. Verwenden Sie den folgenden Beispielcode, um einem AEM Archetype-Projekt Indizes hinzuzufügen:
+   * Stellen Sie die Indizes über ein AEM bereit. Sie können ein [AEM Archetyp](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype)-Projekt verwenden, um ein bereitstellbares AEM-Paket zu erstellen. Verwenden Sie den folgenden Beispielcode, um einem AEM Archetyp-Projekt Indizes hinzuzufügen:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
@@ -152,8 +151,8 @@ Ein Eigentümer des Workflow-Modells kann Elemente im Zusammenhang mit AEM Arbei
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [Erstellen Sie einen Eigenschaftsindex und legen Sie ihn auf true](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/queries-and-indexing.html#the-property-index) fest.
+1. [Erstellen Sie einen Eigenschaftsindex und legen Sie ihn auf &quot;true&quot;](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/queries-and-indexing.html#the-property-index) fest.
 
-1. Nachdem Sie Indizes in CRX DE konfiguriert oder über ein Paket bereitgestellt haben, indizieren Sie das Repository [erneut.](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex)
+1. Nachdem Sie Indizes in CRX DE konfiguriert oder über ein Paket bereitgestellt haben, indizieren Sie [das Repository](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex) erneut.
 
 https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/queries-and-indexing.html
