@@ -8,7 +8,6 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
-translation-type: tm+mt
 source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '3009'
@@ -26,7 +25,7 @@ Die generische AEM-Lösung verfügt über Methoden zum Verwalten der Commerce-In
 * [Promotions](/help/commerce/cif-classic/administering/concepts.md#promotions)
 * [Gutscheine](/help/commerce/cif-classic/administering/concepts.md#vouchers)
 * [Bestellungen](/help/commerce/cif-classic/administering/concepts.md#shopping-cart-and-orders)
-* [Proxy-Seiten](/help/commerce/cif-classic/administering/concepts.md#proxy-pages)
+* [Proxyseiten](/help/commerce/cif-classic/administering/concepts.md#proxy-pages)
 
 >[!NOTE]
 >
@@ -73,11 +72,11 @@ Für jeden Produkttyp ist eine separate Strukturvorlage erforderlich. Die Strukt
 
    * **Importtool**
 
-      Der Importeur für den spezifischen [Commerce-Anbieter](/help/commerce/cif-classic/administering/concepts.md#commerce-providers), standardmäßig `Geometrixx`.
+      Das Importtool für den spezifischen [Commerce-Anbieter](/help/commerce/cif-classic/administering/concepts.md#commerce-providers), standardmäßig `Geometrixx`.
 
    * **Quelle**
 
-      Die Datei, die importiert werden soll; Sie können den Browser verwenden, um eine Datei auszuwählen.
+      Die zu importierende Datei; Sie können den Browser verwenden, um eine Datei auszuwählen.
 
    * **Inkrementeller Import**
 
@@ -111,17 +110,17 @@ Für jeden Produkttyp ist eine separate Strukturvorlage erforderlich. Die Strukt
 
    * **Name speichern**
 
-      Die Produkte werden in folgende Länder importiert:
+      Die Produkte werden nach folgenden Kriterien importiert:
 
       `/etc/commerce/products/<*store name*>/`
 
    * **Commerce-Anbieter**
 
-      Der Importeur für Ihren [Commerce-Provider](/help/commerce/cif-classic/administering/concepts.md#commerce-providers); standardmäßig Geometrixx.
+      Das Importtool für Ihren [Commerce-Anbieter](/help/commerce/cif-classic/administering/concepts.md#commerce-providers); standardmäßig Geometrixx.
 
    * **Quelldatei**
 
-      Der Speicherort im Repository der Datei, die importiert werden soll.
+      Der Speicherort im Repository der zu importierenden Datei.
 
    * **Inkrementeller Import**
 
@@ -225,10 +224,10 @@ Sie können eine vorhandene Facette ändern oder neue hinzufügen, indem Sie CRX
 
    `http://localhost:4502/crx/de/index.jsp#/libs/commerce/gui/content/products/aside/items/search/items/searchpanel/facets`
 
-1. Beispielsweise können Sie die Größen ändern, die auf der Seite für die Produktsuche angezeigt werden. Klicken Sie auf den Knoten `sizegroup`.
-1. Klicken Sie auf `items`-Knoten und dann auf `propertypredicate`-Knoten.
-1. Sie können das `propertyValues` ändern. Beispielsweise können Sie XS oder XXL hinzufügen oder eine Größe entfernen.
-1. Klicken Sie auf **Alle speichern** und navigieren Sie zur Produktsuchseite. Ihre Änderungen sollten angezeigt werden.
+1. Beispielsweise können Sie die Größen ändern, die auf der Seite für die Produktsuche angezeigt werden. Klicken Sie auf den Knoten `sizegroup` .
+1. Klicken Sie auf den Knoten `items` und dann auf den Knoten `propertypredicate` .
+1. Sie können den `propertyValues` ändern. Beispielsweise können Sie XS oder XXL hinzufügen oder eine Größe entfernen.
+1. Klicken Sie auf **Alle speichern** und navigieren Sie zur Seite &quot;Produktsuche&quot;. Ihre Änderungen sollten angezeigt werden.
 
 ### Mehrere Assets  {#multiple-assets}
 
@@ -241,7 +240,7 @@ Sie können in der Produktkomponente mehrere Assets hinzufügen und dann das Ass
 #### Hinzufügen mehrerer Assets  {#adding-multiple-assets}
 
 1. Navigieren Sie zur **Produktekonsole**; nutzen Sie dazu die Option **Commerce**.
-1. Navigieren Sie mit der Konsole **Produkte** zum gewünschten Produkt.
+1. Navigieren Sie mit der Konsole **Products** zum gewünschten Produkt.
 
    >[!NOTE]
    >
@@ -254,7 +253,7 @@ Sie können in der Produktkomponente mehrere Assets hinzufügen und dann das Ass
    ![chlimage_1-91](/help/sites-administering/assets/chlimage_1-91.png)
 
 1. Klicken oder tippen Sie auf **Hinzufügen**. Ein neuer Platzhalter für Assets wird angezeigt.
-1. Durch Tippen/Klicken auf **Ändern **wird ein Dialogfeld geöffnet, in dem Sie ein Asset auswählen können.
+1. Durch Tippen/Klicken auf &quot;Ändern&quot;wird ein Dialogfeld geöffnet, in dem Sie ein Asset auswählen können.
 1. Wählen Sie das Asset aus, das Sie hinzufügen möchten.
 
    >[!NOTE]
@@ -265,7 +264,7 @@ Sie können in der Produktkomponente mehrere Assets hinzufügen und dann das Ass
 
 In Ihrer Produktkomponente sind jetzt zwei Assets gespeichert. Sie können konfigurieren, welches auf der Produktseite angezeigt wird. Hierfür wird ein Kategoriesystem verwendet. Zuerst müssen Sie den einzelnen Assets eine Kategorie hinzufügen:
 
-1. Tippen/klicken Sie auf **Produktdaten der Ansicht**.
+1. Tippen/klicken Sie auf **Produktdaten anzeigen**.
 1. Geben Sie eine **Asset-Kategorie** unter den Assets ein, z. B. `cat1` und `cat2`.
 
    >[!NOTE]
@@ -306,15 +305,15 @@ Der Ablauf zum Auswählen des angezeigten Bilds ist wie folgt:
 1. Navigieren Sie zu Ihrem Katalog.
 1. Klicken oder tippen Sie auf **Eigenschaften anzeigen**.
 1. Tippen/klicken Sie auf **Bearbeiten**.
-1. Tippen/klicken Sie auf die Registerkarte **Assets**.
+1. Tippen/klicken Sie auf die Registerkarte **Assets** .
 1. Geben Sie die gewünschte **Produkt-Asset-Kategorie** ein.
 1. Klicken oder tippen Sie auf **Fertig**.
 1. Führen Sie für Ihre Änderungen den [Rollout](#rolling-out-a-catalog) durch.
 
 #### Produktekonsole {#products-console}
 
-1. Navigieren Sie mit der Konsole **Produkte** zum gewünschten Produkt.
-1. Tippen/klicken Sie auf **Produktdaten der Ansicht**.
+1. Navigieren Sie mit der Konsole **Products** zum gewünschten Produkt.
+1. Tippen/klicken Sie auf **Produktdaten anzeigen**.
 1. Tippen/klicken Sie auf **Bearbeiten**.
 1. Geben Sie eine **Standard-Asset-Kategorie** ein.
 1. Klicken oder tippen Sie auf **Fertig**.
@@ -326,9 +325,9 @@ Der Ablauf zum Auswählen des angezeigten Bilds ist wie folgt:
 
 >[!NOTE]
 >
->Häufig werden Produktinformationen über die Seiten veröffentlicht, die darauf verweisen. Wenn Sie z. B. Seite X veröffentlichen, die auf Produkt Y verweist, werden AEM fragen, ob Sie auch Produkt Y veröffentlichen möchten.
+>Häufig werden Produktinformationen über die Seiten veröffentlicht, die darauf verweisen. Wenn Sie beispielsweise Seite X veröffentlichen, die auf Produkt Y verweist, werden AEM fragen, ob Sie auch Produkt Y veröffentlichen möchten.
 >
->In besonderen Fällen unterstützt AEM auch die Veröffentlichung direkt aus den Produktdaten.
+>Für Sonderfälle unterstützt AEM auch die direkte Veröffentlichung aus den Produktdaten.
 
 1. Navigieren Sie in der **Produktekonsole** (über **Commerce**) zu Ihren Produktinformationen.
 1. Verwenden Sie eine der folgenden Optionen:
@@ -364,15 +363,15 @@ Es ist ein Ereignis-Handler vorhanden, der ein Ereignis protokolliert, wenn ein 
 * `com/adobe/cq/commerce/pim/PRODUCT_PAGE_MODIFIED`
 * `com/adobe/cq/commerce/pim/PRODUCT_PAGE_DELETED`
 
-Bei den `PRODUCT_*`-Ereignissen verweist der Pfad auf das Basisprodukt in `/etc/commerce/products`. Bei den Ereignissen `PRODUCT_PAGE_*` verweist der Pfad auf den Knoten `cq:Page`.
+Für die `PRODUCT_*` -Ereignisse verweist der Pfad auf das Basisprodukt in `/etc/commerce/products`. Für die Ereignisse `PRODUCT_PAGE_*` verweist der Pfad auf den Knoten `cq:Page` .
 
-Sie können sie in der Web-Konsole in OSGI-Ereignissen ( `/system/console/events`) anzeigen. Beispiel:
+Sie können sie in der Web-Konsole in OSGi-Ereignissen anzeigen ( `/system/console/events`), z. B.:
 
 ![](/help/sites-administering/do-not-localize/chlimage_1-20.png)
 
 >[!NOTE]
 >
->Lesen Sie auch [Ereignis-Handling in AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/). [](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)
+>Lesen Sie auch [Ereignisbehandlung in AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/). [](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)
 
 ### Bild mit Links für Hinzufügen zum Warenkorb {#image-with-add-to-cart-links}
 
@@ -385,7 +384,7 @@ Beim Klicken auf den Hotspot wird ein Dialogfeld geöffnet, in dem Sie die Grö�
 1. Ziehen Sie ein Bild aus dem [Asset-Browser](/help/sites-authoring/author-environment-tools.md#assets-browser) und legen Sie es in der Komponente ab.
 1. Wählen Sie eine der folgenden Möglichkeiten aus:
 
-   * Klicken Sie auf die Komponente und dann auf das Symbol Bearbeiten
+   * Klicken Sie auf die Komponente und dann auf das Symbol Bearbeiten .
    * Führen Sie einen langsamen Doppelklick aus.
 
 1. Klicken Sie auf das Symbol für „Vollbild“.
@@ -416,7 +415,7 @@ Beim Klicken auf den Hotspot wird ein Dialogfeld geöffnet, in dem Sie die Grö�
    ![](/help/sites-administering/do-not-localize/chlimage_1-22.png)
 
 1. Wechseln Sie in den Modus [Vorschau](/help/sites-authoring/editing-content.md#previewingpagestouchoptimizedui).
-1. Klicken Sie auf den Hotspot „+“ Es wird ein Dialogfeld geöffnet, in dem Sie die Größe und Menge des Produkts auswählen können, das Sie unter **Pfad** eingegeben haben.
+1. Klicken Sie auf den Hotspot „+“ Ein Dialogfeld wird geöffnet, in dem Sie die Größe und Menge des Produkts auswählen können, das Sie in **Pfad** eingegeben haben.
 
    ![chlimage_1-95](/help/sites-administering/assets/chlimage_1-95.png)
 
@@ -442,9 +441,9 @@ Sie können konfigurieren, wie das Dialogfeld aussieht, wenn Sie auf den Hotspot
 
 1. Klicken Sie auf das Symbol „Fertig“.
 
-## Kataloge  {#catalogs}
+## Kataloge {#catalogs}
 
-### Generieren eines Katalogs {#generating-a-catalog}
+### Generieren eines Katalogs  {#generating-a-catalog}
 
 #### Generieren eines Katalogs – Touch-optimierte Benutzeroberfläche {#generating-a-catalog-touch-optimized-ui}
 
@@ -460,7 +459,7 @@ Generieren Sie wie folgt einen Katalog:
 
    ![create-icon](/help/sites-administering/do-not-localize/chlimage_1-23.png)
 
-1. Wählen Sie in der Liste **Katalog erstellen** aus, wird der Assistent &quot;Katalog erstellen&quot;geöffnet.
+1. Wählen Sie in der Liste **Katalog erstellen** aus, wird der Assistent zum Erstellen eines Katalogs geöffnet.
 
    ![chlimage_1-99](/help/sites-administering/assets/chlimage_1-99.png)
 
@@ -477,7 +476,7 @@ Generieren Sie wie folgt einen Katalog:
 
 1. Wenn Sie auf die Schaltfläche **Fertig** klicken oder tippen, gelangen Sie wieder zur Sites-Konsole, in der der Katalog angezeigt wird.
 
-   Durch Tippen/Klicken auf die Schaltfläche **Katalog öffnen** wird der Katalog geöffnet (z. B. `http://localhost:4502/editor.html/content/test-catalog.html`).
+   Durch Tippen/Klicken auf die Schaltfläche **Katalog öffnen** wird Ihr Katalog geöffnet (z. B. `http://localhost:4502/editor.html/content/test-catalog.html`).
 
 #### Generieren eines Katalogs – klassische Benutzeroberfläche {#generating-a-catalog-classic-ui}
 
@@ -526,14 +525,14 @@ Führen Sie den Rollout für einen Katalog wie folgt durch:
 
    ![Rollout](/help/sites-administering/do-not-localize/chlimage_1-24.png)
 
-1. Legen Sie im Assistenten die Rollout nach Bedarf fest und tippen/klicken Sie dann auf **Rollout-Änderungen**.
-1. Ein Dialogfeld wird geöffnet. Tippen/klicken Sie auf **Fertig**, wenn der Prozess abgeschlossen ist.
+1. Legen Sie im Assistenten den Rollout nach Bedarf fest und tippen/klicken Sie dann auf **Rollout-Änderungen**.
+1. Ein Dialogfeld wird geöffnet. Tippen/klicken Sie auf **Fertig** , wenn der Prozess abgeschlossen ist.
 
 #### Durchführen des Rollouts für einen Katalog – klassische Benutzeroberfläche {#rolling-out-a-catalog-classic-ui}
 
 Führen Sie den Rollout für einen Katalog wie folgt durch:
 
-1. Navigieren Sie zum Katalog, den Sie aktualisieren möchten. Beispiel:
+1. Navigieren Sie zum Katalog, für den Sie einen Rollout durchführen möchten. Beispiel:
 
    `http://localhost:4502/cf#/content/catalogs/geometrixx-outdoors/base-catalog.html`
 
@@ -569,9 +568,9 @@ Führen Sie den Rollout für einen Katalog wie folgt durch:
 1. Legen Sie den Import wie gewünscht fest.
 1. Klicken Sie auf **Katalog-Blueprints importieren**.
 
-## Promotions  {#promotions}
+## Promotions {#promotions}
 
-### Erstellen einer Promotion {#creating-a-promotion}
+### Erstellen einer Promotion  {#creating-a-promotion}
 
 #### Erstellen einer Promotion – klassische Benutzeroberfläche {#creating-a-promotion-classic-ui}
 
@@ -599,9 +598,9 @@ Führen Sie den Rollout für einen Katalog wie folgt durch:
 
 1. Sie können Ihre Promotion jetzt aktivieren, damit sie für Käufer auf der Veröffentlichungsinstanz angezeigt wird.
 
-## Gutscheine  {#vouchers}
+## Gutscheine {#vouchers}
 
-### Erstellen eines Gutscheins {#creating-a-voucher}
+### Erstellen eines Gutscheins  {#creating-a-voucher}
 
 #### Erstellen eines Gutscheins – klassische Benutzeroberfläche {#creating-a-voucher-classic-ui}
 
@@ -638,13 +637,13 @@ Sie können die integrierte Komponente **Gutscheine** (Kategorie „Commerce“)
 
 Auf der Demo-Website (Geometrixx Outdoors – Englisch) ist das Gutscheinformular auf der Warenkorb-Seite unter dem eigentlichen Warenkorb dargestellt.
 
-## Bestellungen  {#orders}
+## Bestellungen {#orders}
 
 >[!NOTE]
 >
->Es sollte beachtet werden, dass vordefinierte AEM keine Aktionen für Standardfunktionalität im Zusammenhang mit Bestellungen enthalten, wie z.B. Rücksendung von Waren, Aktualisierung des Bestellstatus, Durchführung von Fulfillments und Generierung von Packungsbeilagen. Der Hauptzweck ist die Technologievorschau.
+>Es sollte beachtet werden, dass native AEM keine Aktionen für Standardfunktionen im Zusammenhang mit Bestellungen wie z. B. Rücksendung von Waren, Aktualisierung des Bestellstatus, Durchführung der Erfüllung oder Generierung von Verpackungsfolien erfordert. Der Hauptzweck ist die Technologievorschau.
 >
->Die generische Auftragsverwaltung in AEM wurde grundsätzlich beibehalten. Die im Assistenten verfügbaren Felder hängen von der Gerüste ab:
+>Die allgemeine Auftragsverwaltung in AEM wurde grundlegend aufbewahrt. Die im Assistenten verfügbaren Felder hängen von der Grundlage ab:
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 >
 >Wenn Sie eine angepasste Strukturvorlage erstellen, können Sie mehr Bestellinformationen speichern.
@@ -664,7 +663,7 @@ Auf der Demo-Website (Geometrixx Outdoors – Englisch) ist das Gutscheinformula
 
    ![](/help/sites-administering/do-not-localize/chlimage_1-14.png)
 
-1. Der Assistent wird geöffnet. Verwenden Sie die Registerkarten **Basic**, **Content**, **Payment** und **Fulfillment**, um [Informationen zur neuen Bestellung](/help/commerce/cif-classic/administering/concepts.md#order-information) einzugeben.
+1. Der Assistent wird geöffnet. Verwenden Sie die Registerkarten **Basic**, **Content**, **Payment** und **Fulfillment** , um die [Informationen zur neuen Bestellung](/help/commerce/cif-classic/administering/concepts.md#order-information) einzugeben.
 
 1. Wählen Sie **Erstellen** aus, um die Informationen zu speichern.
 
