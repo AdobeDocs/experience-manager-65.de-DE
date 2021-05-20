@@ -1,67 +1,66 @@
 ---
 title: Empfohlene Topologien für Communities
 seo-title: Empfohlene Topologien für Communities
-description: Vorgehensweise beim Umgang mit benutzergenerierten Inhalten (UGC)
-seo-description: Vorgehensweise beim Umgang mit benutzergenerierten Inhalten (UGC)
+description: Vorgehensweise bei der Verarbeitung von benutzergenerierten Inhalten (UGC)
+seo-description: Vorgehensweise bei der Verarbeitung von benutzergenerierten Inhalten (UGC)
 uuid: 4bc1c423-0ba9-4f2e-b11c-4d6824f45641
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
-translation-type: tm+mt
-source-git-commit: 612d102b5925704ce459ad818554e487ec0d5355
+exl-id: b6658330-d862-44e3-aac0-824fb91cd087
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 7%
 
 ---
 
-
 # Empfohlene Topologien für Communities {#recommended-topologies-for-communities}
 
-Ab AEM Communities 6.1 wurde ein einzigartiger Ansatz für die Behandlung benutzergenerierter Inhalte (UGC) gewählt, die von Besuchern der Site (Mitglieder) aus der Umgebung &quot;Veröffentlichen&quot;eingereicht wurden.
+Ab AEM Communities 6.1 wurde ein einzigartiger Ansatz für die Verarbeitung benutzergenerierter Inhalte (UGC) gewählt, die von Site-Besuchern (Mitgliedern) aus der Veröffentlichungsumgebung eingereicht wurden.
 
-Dieser Ansatz unterscheidet sich grundsätzlich von der Art und Weise, wie die AEM Plattform Site-Inhalte verarbeitet, die im Allgemeinen von der Autorenversion verwaltet werden.
+Dieser Ansatz unterscheidet sich grundlegend von der Art und Weise, wie die AEM Plattform Site-Inhalte verarbeitet, die im Allgemeinen aus der Autorenumgebung verwaltet werden.
 
-Die AEM-Plattform verwendet einen Knotenspeicher, der den Site-Inhalt vom Autor bis zur Veröffentlichung repliziert, während AEM Communities einen einzigen gemeinsamen Speicher für UGC verwendet, der nie repliziert wird.
+Die AEM-Plattform verwendet einen Knotenspeicher, der Site-Inhalte vom Autor zur Veröffentlichung repliziert, während AEM Communities einen einzigen, gemeinsamen Speicher für benutzergenerierte Inhalte verwendet, der nie repliziert wird.
 
-Für den allgemeinen UGC-Store muss ein [Datenspeicherung Resource Provider (SRP)](working-with-srp.md) ausgewählt werden. Die empfohlenen Optionen sind:
+Für den gängigen UGC-Speicher ist es erforderlich, einen [Speicherressourcenanbieter (SRP)](working-with-srp.md) auszuwählen. Die empfohlenen Optionen sind:
 
-* [DSRP - Ressourcenanbieter für relationale Datenspeicherung](dsrp.md)
-* [MSRP - MongoDB Datenspeicherung Resource Provider](msrp.md)
-* [ASRP - Adobe Datenspeicherung Resource Provider](asrp.md)
+* [DSRP - Resource Provider für relationale Datenbankspeicher](dsrp.md)
+* [MSRP - MongoDB Storage Resource Provider](msrp.md)
+* [ASRP - Adobe Storage Resource Provider](asrp.md)
 
-Eine andere SRP-Option, [JSRP - JCR Datenspeicherung Resource Provider](jsrp.md), unterstützt keinen gemeinsamen UGC-Store für Autor- und Veröffentlichungseinstellungen für beide Umgebung.
+Eine andere SRP-Option, [JSRP - JCR Storage Resource Provider](jsrp.md), unterstützt keinen gängigen UGC-Speicher für die Autoren- und Veröffentlichungsumgebungen für beide Zugriffe.
 
-Die Anforderung eines gemeinsamen Speichers führt zu den folgenden empfohlenen Topologien.
+Die Anforderung eines gemeinsamen Stores führt zu den folgenden empfohlenen Topologien.
 
 >[!NOTE]
 >
 >Bei AEM Communities wird [UGC nie repliziert](working-with-srp.md#ugc-never-replicated).
 >
->Wenn die Bereitstellung keinen [gemeinsamen Speicher](working-with-srp.md) enthält, ist UGC nur auf der AEM- oder Autoreninstanz sichtbar, auf der sie eingegeben wurde.
+>Wenn die Bereitstellung keinen [gemeinsamen Speicher](working-with-srp.md) enthält, ist die benutzergenerierte Inhalte nur in der AEM- oder Autoreninstanz sichtbar, in der sie eingegeben wurde.
 
 
 >[!NOTE]
 >
 >Weitere Informationen zur AEM finden Sie unter [Empfohlene Bereitstellungen](../../help/sites-deploying/recommended-deploys.md) und [Einführung in die AEM Plattform](../../help/sites-deploying/data-store-config.md).
 
-## Für Produktion {#for-production}
+## Für die Produktion {#for-production}
 
-Die Schaffung eines gemeinsamen Speicherplatzes für UGC ist unverzichtbar, und daher hängt der zugrunde liegende Einsatz von seiner Fähigkeit ab, einen gemeinsamen Speicher zu unterstützen.
+Die Einrichtung eines gemeinsamen Stores für benutzergenerierte Inhalte ist unerlässlich, und daher ist die zugrunde liegende Bereitstellung von der Fähigkeit abhängig, einen gemeinsamen Speicher zu unterstützen.
 
 Zwei Beispiele:
 
-1. Wenn das erwartete Volumen von UGC hoch ist und eine lokale MongoDB-Instanz möglich ist, dann wäre die Auswahl [MSRP](msrp.md).
+1. Wenn das erwartete Volumen von UGC hoch ist und eine lokale MongoDB-Instanz möglich ist, wählen Sie [MSRP](msrp.md) aus.
 
-1. Für eine optimale Leistung bei Seiteninhalten würde die Auswahl einer [Veröffentlichungsfarm](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) und [ASRP](asrp.md) eine optimale Skalierung von UGC bei relativ unkomplizierten Vorgängen bieten.
+1. Für eine optimale Leistung für Seiteninhalte würde die Auswahl einer [Veröffentlichungsfarm](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) und [ASRP](asrp.md) eine optimale Skalierung der benutzergenerierten Inhalte bei relativ unkomplizierten Vorgängen liefern.
 
 Für beide kann die Bereitstellung auf einem beliebigen OAK-Mikrokernel basieren.
 
-Um den passenden gemeinsamen Store auszuwählen, sollten Sie die eindeutigen [Merkmale](working-with-srp.md#characteristics-of-srp-options) sorgfältig beachten.
+Um den entsprechenden gemeinsamen Speicher auszuwählen, beachten Sie sorgfältig die eindeutigen [Merkmale](working-with-srp.md#characteristics-of-srp-options).
 
-Weitere Informationen zu Oak-Mikrokernen finden Sie unter [Empfohlene Bereitstellungen](../../help/sites-deploying/recommended-deploys.md).
+Weitere Informationen zu Oak-Mikrokernals finden Sie unter [Empfohlene Bereitstellungen](../../help/sites-deploying/recommended-deploys.md).
 
 ### TarMK-Veröffentlichungsfarm {#tarmk-publish-farm}
 
@@ -72,44 +71,44 @@ Wenn es sich bei der Topologie um eine Veröffentlichungsfarm handelt, sind folg
 
 ### Empfohlen: DSRP, MSRP oder ASRP {#recommended-dsrp-msrp-or-asrp}
 
-| MicroKernel | SITE-INHALT | BENUTZER GENERIERTE INHALTE | Datenspeicherung RESOURCE PROVIDER | HÄUFIG GESPEICHERT |
+| MicroKernel | SITE CONTENTREPOSITORY | BENUTZERGENERIERTER CONTENTREPOSITORY | RESSOURCENANBIETER SPEICHERN | HÄUFIGES SPEICHER |
 |-------------|------------------------|----------------------------------|---------------------------|---------------|
 | beliebig | JCR | MySQL | DSRP | Ja |
 | beliebig | JCR | MongoDB | MSRP | Ja |
-| beliebig | JCR | On-Demand-Speicher für Adoben | ASRP | Ja |
+| beliebig | JCR | Adobe On-Demand-Speicher | ASRP | Ja |
 
 ### JSRP {#jsrp}
 
 
-| Bereitstellung | SITE-INHALT | BENUTZER GENERIERTE INHALTE | Datenspeicherung RESOURCE PROVIDER | HÄUFIG GESPEICHERT |
+| Bereitstellung | SITE CONTENTREPOSITORY | BENUTZERGENERIERTER CONTENTREPOSITORY | RESSOURCENANBIETER SPEICHERN | HÄUFIGES SPEICHER |
 |----------------------|------------------------|----------------------------------|---------------------------|---------------------------------|
-| TarMK Farm (Standard) | JCR | JCR | JSRP | Nein |
-| Oak-Cluster | JCR | JCR | JSRP | Nur zur Veröffentlichung Umgebung |
+| TarMK-Farm (Standard) | JCR | JCR | JSRP | Nein |
+| Oak-Cluster | JCR | JCR | JSRP | Nur für Veröffentlichungsumgebung |
 
 ## Für Entwicklung {#for-development}
 
-Bei Nicht-Produktions-Umgebung bietet [JSRP](jsrp.md) eine einfache Möglichkeit, eine Development-Umgebung mit einer Autoreninstanz und einer Veröffentlichungsinstanz einzurichten.
+Bei Nicht-Produktionsumgebungen bietet [JSRP](jsrp.md) eine einfache Möglichkeit, eine Entwicklungsumgebung mit einer Autoreninstanz und einer Veröffentlichungsinstanz einzurichten.
 
-Wenn Sie für die Produktion [ASRP](asrp.md), [DSRP](dsrp.md) oder [MSRP](msrp.md) auswählen, ist es auch möglich, eine ähnliche Umgebung für die Entwicklung mit Adobe On-Demand-Datenspeicherung oder MongoDB einzurichten. Ein Beispiel finden Sie unter [HowTo Setup MongoDB for Demo](demo-mongo.md).
+Wenn Sie [ASRP](asrp.md), [DSRP](dsrp.md) oder [MSRP](msrp.md) für die Produktion auswählen, ist es auch möglich, eine ähnliche Entwicklungsumgebung mit Adobe On-Demand-Speicher oder MongoDB einzurichten. Ein Beispiel finden Sie unter [So richten Sie MongoDB für Demo](demo-mongo.md) ein.
 
 ## Verweise {#references}
 
 * [Benutzersynchronisierung](sync.md)
 
-   Behandelt die Synchronisierung von Benutzerdaten zwischen Instanzen im Veröffentlichungsmodus.
+   Beschreibt die Synchronisierung von Benutzerdaten zwischen Veröffentlichungsfarm-Instanzen.
 
 * [Verwalten von Benutzern und Benutzergruppen](users.md)
 
-   Erläutert die Rollen von Benutzern und Benutzergruppen in den Umgebung zum Erstellen und Veröffentlichen.
+   Erläutert die Rollen von Benutzern und Benutzergruppen in der Autoren- und Veröffentlichungsumgebung.
 
-* UGC [gemeinsamer Speicher](working-with-srp.md)
+* UGC [Common Store](working-with-srp.md)
 
-   Beschreibt die Datenspeicherung von Community-Inhalten, die vom Site-Inhalt getrennt sind.
+   Beschreibt die Speicherung von Community-Inhalten, die von Site-Inhalten getrennt sind.
 
-* [Node Stores und Data Stores](../../help/sites-deploying/data-store-config.md)
+* [Knotenspeicher und Datenspeicher](../../help/sites-deploying/data-store-config.md)
 
-   Grundsätzlich wird der Site-Inhalt in einem Node Store gespeichert. Bei Assets kann ein Datenspeicher konfiguriert werden, um Binärdaten zu speichern. Bei Communities muss ein gemeinsamer Store zur Auswahl des SRP konfiguriert werden.
+   Grundsätzlich wird der Site-Inhalt in einem Knotenspeicher gespeichert. Für Assets kann ein Datenspeicher zum Speichern von Binärdaten konfiguriert werden. Für Communities muss ein gemeinsamer Speicher zur Auswahl des SRP konfiguriert werden.
 
-* [Datenspeicherung](../../help/sites-deploying/storage-elements-in-aem-6.md)
+* [Speicherelemente](../../help/sites-deploying/storage-elements-in-aem-6.md)
 
-   Beschreibt die beiden Node-Datenspeicherung-Implementierungen: Tar und MongoDB.
+   Beschreibt die beiden Implementierungen des Knotenspeichers: Tar und MongoDB.
