@@ -8,15 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: author, correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Adaptive Formulare
+exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 79%
 
 ---
-
 
 # Tastaturbefehle für AEM Forms {#aem-forms-keyboard-shortcuts}
 
@@ -26,7 +25,7 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 
 | **Aktion** | **Tastaturbefehl unter Windows** | **Tastaturbefehl unter Mac OS** |
 |---|---|---|
-| Öffnen des Eigenschaftenbrowsers für die ausgewählte Komponente des adaptiven Formulars | Alt+Eingabe | Alt+Eingabe |
+| Eigenschaftenbrowser für die ausgewählte Komponente des adaptiven Formulars öffnen | Alt+Eingabe | Alt+Eingabe |
 | Eigenschaftenbrowser für die ausgewählte Komponente eines adaptiven Formulars schließen | Strg+Alt+W | Befehl+Alt+W |
 | Änderungen im Eigenschaftenbrowser für die ausgewählte Komponente eines adaptiven Formulars speichern | Strg+S | Befehl+S |
 | Regel für die ausgewählte Komponente des adaptiven Formulars bearbeiten | Strg+Alt+Eingabe | Befehl+Alt+Eingabe |
@@ -34,18 +33,18 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 | Letzte Änderung rückgängig machen | Strg+Z | Strg+Z&amp;ast; |
 | Letzte Änderung wiederholen | Strg+Y | Strg+Y&amp;ast; |
 | Mehrere Komponenten auswählen | Umschalt+Klick | Umschalt+Klick |
-| Ausgewählte Komponente kopieren | Strg-C | Strg-C&amp;ast; |
-| Ausgewählte Komponente(n) ausschneiden. Die Schnittkomponente wird erst ausgeblendet, wenn sie an der neuen Position eingefügt wird. | Strg-X | Strg-X&amp;ast; |
-| Komponente(n) einfügen | Strg+V | Strg+V |
-| Ausgewählte Komponente(n) löschen | Strg+Entf | Strg+Entf&amp;ast; |
-| Ausgewählte Komponente(n) löschen | Strg+Rücktaste | Strg+Backspace&amp;ast; |
+| Ausgewählte Komponente kopieren | Strg-C | Strg+C&amp;Zurück |
+| Ausgewählte Komponente(n) ausschneiden. Die ausgeschnittene Komponente verschwindet erst, wenn sie an der neuen Position eingefügt wurde. | Strg-X | Strg-X&amp;ast; |
+| Einfügen von Komponenten | Strg+V | Strg+V |
+| Ausgewählte Komponente(n) löschen | Strg+Entf | Strg+Entf&amp;Letzte |
+| Ausgewählte Komponente(n) löschen | Strg+Rücktaste | Strg+Rücktaste&amp;ast; |
 | Text in Rich-Text-Editor-Komponente im Vorschaumodus fett formatieren | Strg+B | Strg+B&amp;ast; |
-| Kuratieren von Text bei Verwendung der Rich-Text-Editor-Komponente im Vorschau-Modus | Strg+I | Strg+I&amp;ast; |
+| Kuratieren von Text bei Verwendung der Rich-Text-Editor-Komponente im Vorschaumodus | Strg+I | Strg+I&amp;ast; |
 | Text in Rich-Text-Editor-Komponente im Vorschaumodus fett formatieren | Strg+U | Strg+U&amp;ast; |
 
 >[!NOTE]
 >
->Die mit &quot;&amp;ast;&quot;markierten Tastaturbefehle funktionieren unter Mac OS sowohl mit der Strg- als auch mit der Befehlstaste.
+>Tastaturbefehle, die mit &quot;&amp;ast;&quot;markiert sind, funktionieren unter Mac OS sowohl mit der Strg- als auch mit der Befehlstaste.
 
 >[!NOTE]
 >
@@ -66,32 +65,32 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 | Eigenschaftenbrowser für die ausgewählte Komponente in einem Design schließen | Strg+Alt+W | Befehl+Alt+W |
 | Letzte Änderung rückgängig machen | Strg+Z | Strg+Z&amp;ast; |
 | Letzte Änderung wiederholen | Strg+Y | Strg+Y&amp;ast; |
-| Änderungen im Eigenschaftenbrowser für die ausgewählte Komponente in einem Design speichern | Strg+S | Strg+S&amp;ast; |
+| Speichern von Änderungen im Eigenschaftenbrowser für die ausgewählte Komponente in einem Design | Strg+S | Strg+S&amp;ast; |
 
 >[!NOTE]
 >
->Die mit &quot;&amp;ast;&quot;markierten Tastaturbefehle funktionieren unter Mac OS sowohl mit der Strg- als auch mit der Befehlstaste.
+>Tastaturbefehle, die mit &quot;&amp;ast;&quot;markiert sind, funktionieren unter Mac OS sowohl mit der Strg- als auch mit der Befehlstaste.
 
 ## Inhaltsbrowser  {#contentbrowser}
 
 | **Aktion** | **Tastaturbefehl unter Windows** | **Tastaturbefehl unter Mac OS** |
 |---|---|---|
-| Alle Akkordeons in der Formularobjektstruktur anzeigen, wenn im Fokus | Strg+A zur Auswahl aller Akkordeons, gefolgt von dem Pfeil nach rechts zur Erweiterung | Befehl+A zur Auswahl aller Akkordeons, gefolgt vom Rechtspfeil zur Erweiterung |
-| Alle Akkordeons in der Formularobjektstruktur ausblenden, wenn im Fokus | Strg+A, um alle Akkordeons auszuwählen, anschließend Linkspfeil zum Reduzieren | Befehl+A zur Auswahl aller Akkordeons, gefolgt von zum Reduzieren neigendem Linkspfeil |
+| Alle Akkordeons in der Formularobjektstruktur anzeigen, wenn im Fokus | Strg+A, um alle Akkordeons auszuwählen, dann Pfeil nach rechts zum Erweitern | Befehl+A zur Auswahl aller Akkordeons, gefolgt von dem Pfeil nach rechts zum Erweitern |
+| Alle Akkordeons in der Formularobjektstruktur ausblenden, wenn im Fokus | Strg+A, um alle Akkordeons auszuwählen, dann Pfeil nach links zum Reduzieren | Befehl+A zur Auswahl aller Akkordeons, gefolgt von dem nach links gerichteten Pfeil zum Reduzieren |
 | Ausgewähltes Akkordeon in der Formularobjektstruktur erweitern | Rechtspfeil | Rechtspfeil |
 | Ausgewähltes Akkordeon in der Formularobjektstruktur ausblenden | Nach-links-Taste | Nach-links-Taste |
 | Nächsten Eintrag in der Formularobjektstruktur auswählen | Nach-unten-Pfeil | Nach-unten-Pfeil |
 | Vorherigen Eintrag in der Formularobjektstruktur auswählen | Nach-oben-Taste | Nach-oben-Taste |
 
-[1 ] Ersetzt Strg + Nach-rechts-Taste für Windows und Befehl + Nach-rechts-Taste für Mac OS.\
-[2 ] Ersetzt Strg+Linkspfeil für Windows und Befehl+Linkspfeil für Mac OS.
+[1] Ersetzt Strg + Rechtspfeil für Windows und Befehl + Rechtspfeil für Mac OS.\
+[2] Ersetzt Strg + Linkspfeil für Windows und Befehl + Linkspfeil für Mac OS.
 
 ## Korrespondenzverwaltung {#correspondence-management}
 
 In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheit-Tastaturbefehl aufgeführt, die Sie im Correspondence Management-Texteditor verwenden können. Diese Tastaturkürzel können Sie wie folgt verwenden:
 
 * Erstellen oder Bearbeiten eines [Text](texts-interactive-communications.md)-Assets
-* Bearbeiten eines Textmoduls nach dem Tippen auf das entsprechende Symbol zum Bearbeiten ( ![edittextmodule](assets/edittextmodule.png)) beim Erstellen einer Korrespondenz](/help/forms/using/create-correspondence.md).[
+* Bearbeiten eines Textmoduls nach dem Tippen auf das relevante Bearbeitungssymbol ( ![edittextmodule](assets/edittextmodule.png)) beim Erstellen einer Korrespondenz [a3/>.](/help/forms/using/create-correspondence.md)
 
 ### Textauswahl und Bewegen des Cursors {#text-selection-and-moving-the-cursor-around}
 
@@ -362,4 +361,3 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheit-Tas
   </tr>
  </tbody>
 </table>
-
