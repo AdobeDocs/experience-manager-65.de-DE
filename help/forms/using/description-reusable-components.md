@@ -9,14 +9,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: d3facd17-ceb0-4799-8cd9-ff9e81e09793
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: b8cb7233-3d9e-41d4-85c5-8e8c2481f89c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1257'
 ht-degree: 88%
 
 ---
-
 
 # Beschreibung wiederverwendbarer Komponenten {#description-of-reusable-components}
 
@@ -56,7 +55,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
     </ul></td>
   </tr>
   <tr>
-   <td><p>Listening-Ereignis (Ereignis - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
    <td>
     <ul>
      <li><p>filterSelected – TaskList-Modell</p></li>
@@ -100,7 +99,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
     </ul></td>
   </tr>
   <tr>
-   <td><p>Listening-Ereignis (Ereignis - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
    <td>
     <ul>
      <li><p>submitComplete – Task-Modell</p></li>
@@ -114,7 +113,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
 >
 >Workspace ruft die fetchTasks-Funktion des TaskList-Modells auf, um Task-Modelle für diese Komponente zu erstellen.
 
-## FilterList  {#filterlist}
+## FilterList {#filterlist}
 
 <table>
  <tbody>
@@ -139,7 +138,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>nicht vorhanden</p></td>
   </tr>
   <tr>
-   <td><p>Listening-Ereignis (Ereignis - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
    <td>
     <ul>
      <li><p>fetched – TaskList-Modell </p></li>
@@ -181,12 +180,12 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
   </tr>
   <tr>
    <td><p>Listener-Ereignisse</p> </td>
-   <td><p>N/V</p> </td>
+   <td><p>nicht vorhanden</p> </td>
   </tr>
  </tbody>
 </table>
 
-## TeamQueues  {#teamqueues}
+## TeamQueues {#teamqueues}
 
 <table>
  <tbody>
@@ -211,7 +210,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>nicht vorhanden</p></td>
   </tr>
   <tr>
-   <td><p>Listening-Ereignis (Ereignis - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
    <td>
     <ul>
      <li><p>fetched – TaskList-Modell </p></li>
@@ -223,7 +222,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
  </tbody>
 </table>
 
-## TeamFilter  {#teamfilter}
+## TeamFilter {#teamfilter}
 
 <table>
  <tbody>
@@ -266,7 +265,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
 >
 >TeamFilter ruft das Ereignis ab, das angibt, welche Aufgabe aus der TaskList-Komponente ausgewählt wurde. Obwohl diese Komponenten dieselbe Modellklasse haben, gibt es keine andere Abhängigkeit.
 
-## TaskDetails  {#taskdetails}
+## TaskDetails {#taskdetails}
 
 <table>
  <tbody>
@@ -299,7 +298,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Listening-Ereignis (Ereignis - Trigger)</p> </td>
+   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p> </td>
    <td>
     <ul>
      <li><p>forwarded – Task-Modell</p> </li>
@@ -324,7 +323,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
  </tbody>
 </table>
 
-## CategoryList  {#categorylist}
+## CategoryList {#categorylist}
 
 <table>
  <tbody>
@@ -353,7 +352,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
     </ul></td>
   </tr>
   <tr>
-   <td><p>Listening-Ereignis (Ereignis - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
    <td>
     <ul>
      <li><p>allStartpointsFetched – CategoryList-Modell </p></li>
@@ -396,7 +395,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
     </ul></td>
   </tr>
   <tr>
-   <td><p>Listening-Ereignis (Ereignis - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
    <td>
     <ul>
      <li><p>changed – CategoryList-Modell </p></li>
@@ -407,7 +406,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
  </tbody>
 </table>
 
-## StartPointList  {#startpointlist}
+## StartPointList {#startpointlist}
 
 <table>
  <tbody>
@@ -444,7 +443,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
     </ul></td>
   </tr>
   <tr>
-   <td><p>Listening-Ereignis (Ereignis - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
    <td>
     <ul>
      <li><p>category:selected – CategoryList-Modell </p></li>
@@ -458,7 +457,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
 >
 >Die Komponenten StartPointList und CategoryList weisen dieselbe Modellklasse auf, sodass die erste Komponente von der zweiten abhängig ist. CategoryList greift auf die Informationen darüber zu, für welche Kategorie die Startpunkte angezeigt werden. Um StartPointList unabhängig zu verwenden, simulieren Sie den Ereignisauslöser über CategoryList.
 
-## StartPoint  {#startpoint}
+## StartPoint {#startpoint}
 
 <table>
  <tbody>
@@ -483,13 +482,13 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>Task-Modell</p></td>
   </tr>
   <tr>
-   <td><p>Listening-Ereignis (Ereignis - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
    <td><p>change – StartPoint-Modell </p></td>
   </tr>
  </tbody>
 </table>
 
-## StartProcess  {#startprocess}
+## StartProcess {#startprocess}
 
 <table>
  <tbody>
@@ -527,7 +526,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Listening-Ereignis (Ereignis - Trigger)</p> </td>
+   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p> </td>
    <td>
     <ul>
      <li><p>category:selected – CategoryList-Modell</p> </li>
@@ -552,7 +551,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
 >
 >Die Komponenten StartProcess und StartPointList weisen dieselbe Modellklasse auf. Diese Komponente wird relevant, wenn Sie in StartPointList einen Startpunkt auswählen.
 
-## ProcessNameList  {#processnamelist}
+## ProcessNameList {#processnamelist}
 
 <table>
  <tbody>
@@ -577,7 +576,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>ProcessName-Modell</p></td>
   </tr>
   <tr>
-   <td><p>Listening-Ereignis (Ereignis - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
    <td>
     <ul>
      <li><p>add – ProcessNameList-Modell </p></li>
@@ -592,7 +591,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
 >
 >ProcessNameList ist nicht von anderen Komponenten abhängig. Intern ist sie jedoch von der Modellklasse ProcessInstanceList abhängig, die wiederum von anderen Komponenten abhängig ist. Daher verwendet ProcessNameList viele Modellklassen wie ProcessInstanceList, ProcessInstance, TaskList, TeamTask und Task. Abgesehen von diesen Abhängigkeiten kann ProcessNameList unabhängig verwendet werden.
 
-## ProcessName  {#processname}
+## ProcessName {#processname}
 
 <table>
  <tbody>
@@ -617,13 +616,13 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>ProcessInstanceList-Modell</p></td>
   </tr>
   <tr>
-   <td><p>Listening-Ereignis (Ereignis - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
    <td><p>change – ProcessName-Modell </p></td>
   </tr>
  </tbody>
 </table>
 
-## ProcessInstanceList  {#processinstancelist}
+## ProcessInstanceList {#processinstancelist}
 
 <table>
  <tbody>
@@ -648,7 +647,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>ProcessName-Modell</p></td>
   </tr>
   <tr>
-   <td><p>Listening-Ereignis (Ereignis - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
    <td>
     <ul>
      <li><p>processname:selected – ProcessNameList-Modell </p></li>
@@ -662,7 +661,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
 >
 >ProcessInstanceList erwartet ein Ereignis von ProcessNameList, das den Prozessnamen für das Abrufen und Anzeigen von Instanzen angibt. Um ProcessInstanceList unabhängig zu verwenden, simulieren Sie den Ereignisauslöser separat.
 
-## ProcessInstance  {#processinstance}
+## ProcessInstance {#processinstance}
 
 <table>
  <tbody>
@@ -687,13 +686,13 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>TaskList-Modell</p></td>
   </tr>
   <tr>
-   <td><p>Listening-Ereignis (Ereignis - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
    <td><p>change – ProcessInstance-Modell </p></td>
   </tr>
  </tbody>
 </table>
 
-## ProcessInstanceHistory  {#processinstancehistory}
+## ProcessInstanceHistory {#processinstancehistory}
 
 <table>
  <tbody>
@@ -722,7 +721,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
     </ul></td>
   </tr>
   <tr>
-   <td><p>Listening-Ereignis (Ereignis - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
    <td>
     <ul>
      <li><p>processname:selected – ProcessNameList-Modell </p></li>
@@ -737,7 +736,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
 >
 >ProcessInstanceHistory erwartet ein Ereignis von ProcessInstanceList, das angibt, für welche Instanz der Verlauf angezeigt werden soll. Abgesehen von dieser Abhängigkeit kann die Komponente unabhängig verwendet werden.
 
-## OutofOffice  {#outofoffice}
+## OutofOffice {#outofoffice}
 
 <table>
  <tbody>
@@ -762,7 +761,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>UserSearch-Ansicht</p> </td>
   </tr>
   <tr>
-   <td><p>Listening-Ereignis (Ereignis - Trigger)</p> </td>
+   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p> </td>
    <td>
     <ul>
      <li><p>outOfOfficeSettingsFetched – OutofOffice-Modell</p> </li>
@@ -778,7 +777,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
 >
 >OutofOffice kann unabhängig verwendet werden.
 
-## ShareQueue  {#sharequeue}
+## ShareQueue {#sharequeue}
 
 <table>
  <tbody>
@@ -803,7 +802,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>UserSearch-Ansicht</p> </td>
   </tr>
   <tr>
-   <td><p>Listening-Ereignis (Ereignis - Trigger)</p> </td>
+   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p> </td>
    <td>
     <ul>
      <li><p>queueAccessGranted – sharequeue-Modell</p> </li>
@@ -822,7 +821,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
 >
 >ShareQueue kann unabhängig verwendet werden.
 
-## UISettings  {#uisettings}
+## UISettings {#uisettings}
 
 <table>
  <tbody>
@@ -847,7 +846,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>nicht vorhanden</p></td>
   </tr>
   <tr>
-   <td><p>Listening-Ereignis (Ereignis - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
    <td>
     <ul>
      <li><p>preferencesFetched – UISettings-Modell </p></li>
@@ -861,7 +860,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
 >
 >UISettings kann unabhängig verwendet werden.
 
-## AppNavigation  {#appnavigation}
+## AppNavigation {#appnavigation}
 
 <table>
  <tbody>
@@ -896,7 +895,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
 >
 >AppNavigation kann unabhängig verwendet werden.
 
-## UserInfo  {#userinfo}
+## UserInfo {#userinfo}
 
 <table>
  <tbody>
@@ -921,7 +920,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>nicht vorhanden</p> </td>
   </tr>
   <tr>
-   <td><p>Listening-Ereignis (Ereignis - Trigger)</p> </td>
+   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p> </td>
    <td>
     <ul>
      <li>userImageUrlFetched – UserInfo-Modell</li>
@@ -936,7 +935,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
 >
 >UserInfo kann unabhängig verwendet werden.
 
-## WSError  {#wserror}
+## WSError {#wserror}
 
 <table>
  <tbody>
@@ -961,13 +960,13 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>nicht vorhanden</p></td>
   </tr>
   <tr>
-   <td><p>Listening-Ereignis (Ereignis - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
    <td><p>newWsError – WSError-Modell </p></td>
   </tr>
  </tbody>
 </table>
 
-## UserSearch  {#usersearch}
+## UserSearch {#usersearch}
 
 <table>
  <tbody>
@@ -992,7 +991,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>nicht vorhanden</p> </td>
   </tr>
   <tr>
-   <td><p>Listening-Ereignis (Ereignis - Trigger)</p> </td>
+   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p> </td>
    <td>
     <ul>
      <li>principalSearched – principalsearch-Modell</li>
@@ -1002,7 +1001,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
  </tbody>
 </table>
 
-## SearchTemplate  {#searchtemplate}
+## SearchTemplate {#searchtemplate}
 
 <table>
  <tbody>
@@ -1027,13 +1026,13 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>nicht vorhanden</p> </td>
   </tr>
   <tr>
-   <td><p>Listening-Ereignis (Ereignis - Trigger)</p> </td>
+   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p> </td>
    <td><p>templateFetched – searchtemplate-Modell</p> </td>
   </tr>
  </tbody>
 </table>
 
-## SearchTemplateList  {#searchtemplatelist}
+## SearchTemplateList {#searchtemplatelist}
 
 <table>
  <tbody>
@@ -1058,13 +1057,13 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>searchtemplate-Modell</p> </td>
   </tr>
   <tr>
-   <td><p>Listening-Ereignis (Ereignis - Trigger)</p> </td>
+   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p> </td>
    <td><p>change – searchtemplatelist-Modell</p> </td>
   </tr>
  </tbody>
 </table>
 
-## SearchTemplateDetails  {#searchtemplatedetails}
+## SearchTemplateDetails {#searchtemplatedetails}
 
 <table>
  <tbody>
@@ -1089,7 +1088,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td>nicht vorhanden<br /> </td>
   </tr>
   <tr>
-   <td><p>Listening-Ereignis (Ereignis - Trigger)</p> </td>
+   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p> </td>
    <td><p>searchTemplate:selected - searchtemplate-Modell</p> </td>
   </tr>
  </tbody>
