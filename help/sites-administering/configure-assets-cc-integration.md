@@ -2,32 +2,31 @@
 title: AEM Assets-Integration mit Experience Cloud konfigurieren
 description: Erfahren Sie, wie Sie die AEM Assets-Integration mit Experience Cloud konfigurieren.
 contentOwner: AG
-feature: Asset Management
+feature: Asset-Verwaltung
 role: Business Practitioner, Architect, Administrator
-translation-type: tm+mt
-source-git-commit: a9c9194ac1d163be3ab642ab5a6323de02d67363
+exl-id: d167cf97-6829-45a7-ba46-2239d530b060
+source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '988'
 ht-degree: 45%
 
 ---
 
+# Konfigurieren der AEM Assets-Integration mit Experience Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
 
-# AEM Assets-Integration mit Experience Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud} konfigurieren
-
-Wenn Sie Adobe Experience Cloud-Kunde sind, können Sie Ihre Assets innerhalb von Adobe Experience Manager Assets mit Adobe Creative Cloud synchronisieren und umgekehrt. Sie können Ihre Assets auch mit Experience Cloud synchronisieren und umgekehrt. Sie können diese Synchronisierung über [!DNL Adobe I/O] einrichten. Der aktualisierte Name von [!DNL Adobe Marketing Cloud] ist [!DNL Adobe Experience Cloud].
+Wenn Sie Adobe Experience Cloud-Kunde sind, können Sie Ihre Assets in Adobe Experience Manager Assets mit Adobe Creative Cloud synchronisieren und umgekehrt. Sie können Ihre Assets auch mit Experience Cloud synchronisieren und umgekehrt. Sie können diese Synchronisation über [!DNL Adobe I/O] einrichten. Der aktualisierte Name von [!DNL Adobe Marketing Cloud] ist [!DNL Adobe Experience Cloud].
 
 Der Workflow zur Einrichtung dieser Integration ist:
 
 1. Erstellen Sie eine Authentifizierung in [!DNL Adobe I/O] mithilfe eines öffentlichen Gateways und erhalten Sie eine Anwendungs-ID.
-1. Erstellen Sie mit der Anwendungs-ID ein Profil auf Ihrer AEM Assets-Instanz.
+1. Erstellen Sie ein Profil in Ihrer AEM Assets-Instanz mithilfe der Anwendungs-ID.
 1. Verwenden Sie diese Konfiguration, um Ihre Assets zu synchronisieren.
 
 Am Backend authentifiziert der AEM-Server Ihr Profil gegenüber dem Gateway und synchronisiert dann die Daten zwischen Assets und Experience Cloud.
 
 >[!NOTE]
 >
->Diese Funktion wird in AEM Assets nicht mehr unterstützt. Suchen Sie nach Ersetzungen in [Best Practices zur AEM- und Creative Cloud-Integration](/help/assets/aem-cc-integration-best-practices.md). Wenn Sie Abfragen haben, wenden Sie sich an die Adobe [Kundenunterstützung](https://www.adobe.com/account/sign-in.supportportal.html).
+>Diese Funktion wird in [!DNL Assets] nicht mehr unterstützt. Suchen Sie nach Ersetzungen in [Best Practices für die AEM- und Creative Cloud-Integration](/help/assets/aem-cc-integration-best-practices.md). Wenden Sie sich bei Fragen an die Kundenunterstützung von Adobe](https://www.adobe.com/account/sign-in.supportportal.html).[
 
 <!-- Hiding this for now via cqdoc-16834.
 ![Flow of data when AEM Assets and Creative Cloud are integrated](assets/chlimage_1-48.png)
@@ -45,15 +44,15 @@ Am Backend authentifiziert der AEM-Server Ihr Profil gegenüber dem Gateway und 
    >
    >Sie benötigen Administratorrechte, um eine Anwendungs-ID zu erstellen.
 
-1. Navigieren Sie im linken Bereich zu **[!UICONTROL Entwicklerwerkzeuge]** > **[!UICONTROL Anwendungen]**, um eine Liste von Anwendungen Ansicht.
-1. Klicken Sie auf **[!UICONTROL Hinzufügen]** ![aem_assets_addcircle_icon](assets/aem_assets_addcircle_icon.png), um eine Anwendung zu erstellen.
+1. Navigieren Sie im linken Bereich zu **[!UICONTROL Entwicklertools]** > **[!UICONTROL Anwendungen]** , um eine Liste der Anwendungen anzuzeigen.
+1. Klicken Sie auf **[!UICONTROL Hinzufügen]** ![aem_assets_addcircle_icon](assets/aem_assets_addcircle_icon.png) , um eine Anwendung zu erstellen.
 1. Wählen Sie aus der Liste **[!UICONTROL Client-Anmeldeinformationen]** die Option **[!UICONTROL Dienstkonto (JWT-Assertion)]** aus. Dies ist ein Server-zu-Server-Kommunikationsdienst für die Serverauthentifizierung.
 
    ![chlimage_1-49](assets/chlimage_1-49.png)
 
 1. Geben Sie einen Namen für die Anwendung und eine optionale Beschreibung an.
 1. Wählen Sie aus der Liste **[!UICONTROL Organisation]** die Organisation aus, für die Sie die Assets synchronisieren möchten.
-1. Wählen Sie in der Liste **[!UICONTROL Scope]** **[!UICONTROL dam-read]**, **[!UICONTROL dam-sync]**, **[!UICONTROL dam-write]** und **[!UICONTROL cc-share]**.
+1. Wählen Sie in der Liste **[!UICONTROL Perimeter]** **[!UICONTROL dam-read]**, **[!UICONTROL dam-sync]**, **[!UICONTROL dam-write]** und **[!UICONTROL cc-share]** aus.
 1. Klicken Sie auf **[!UICONTROL Erstellen]**. Eine Meldung informiert Sie darüber, dass die Anwendung erstellt wurde.
 
    ![Benachrichtigung über die erfolgreiche Erstellung der Anwendung, die AEM Assets mit Adobe CC integrieren soll](assets/chlimage_1-50.png)
@@ -64,11 +63,11 @@ Am Backend authentifiziert der AEM-Server Ihr Profil gegenüber dem Gateway und 
    >
    >Achten Sie darauf, dass Sie nicht versehentlich das **[!UICONTROL Anwendungsgeheimnis]** anstelle der **[!UICONTROL Anwendungs-ID]** kopieren.
 
-## Neue Konfiguration für Experience Cloud {#add-a-new-configuration} Hinzufügen
+## Hinzufügen einer neuen Konfiguration zu Experience Cloud {#add-a-new-configuration}
 
 1. Klicken Sie auf das AEM-Logo in der Benutzeroberfläche in Ihrer lokalen AEM Assets-Instanz und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud-Services]** > **[!UICONTROL Legacy-Cloud-Services]**.
 
-1. Suchen Sie den Dienst **[!UICONTROL Adobe Experience Cloud]**. Wenn keine Konfigurationen vorhanden sind, klicken Sie auf **[!UICONTROL Jetzt konfigurieren]**. Wenn Konfigurationen vorhanden sind, klicken Sie auf **[!UICONTROL Konfigurationen anzeigen]** und klicken Sie auf `+`, um eine neue Konfiguration hinzuzufügen.
+1. Suchen Sie den Dienst **[!UICONTROL Adobe Experience Cloud]** . Wenn keine Konfigurationen vorhanden sind, klicken Sie auf **[!UICONTROL Jetzt konfigurieren]**. Wenn Konfigurationen vorhanden sind, klicken Sie auf **[!UICONTROL Konfigurationen anzeigen]** und klicken Sie auf `+` , um eine neue Konfiguration hinzuzufügen.
 
    >[!NOTE]
    >
@@ -82,21 +81,21 @@ Am Backend authentifiziert der AEM-Server Ihr Profil gegenüber dem Gateway und 
 
    1. Navigieren Sie zu **Werkzeuge > Cloud Services > Legacy-Cloud Services**. Klicken Sie unter Adobe Experience Cloud auf **Konfigurationen anzeigen**.
    1. Wählen Sie die zu bearbeitende vorhandene Konfiguration aus. Bearbeiten Sie die Konfiguration und ersetzen Sie `marketing.adobe.com` durch `experiencecloud.adobe.com`.
-   1. Speichern Sie die Konfiguration. Testen Sie die Agenten für die MAC-Synchronisierung.
+   1. Speichern Sie die Konfiguration. Testen Sie die Replikationsagenten für die MAC-Synchronisierung.
 
-1. Fügen Sie im Feld **[!UICONTROL Client-ID]** die kopierte Anwendungs-ID am Ende des Verfahrens [eine Anwendung ](#create-an-application) ein.
+1. Fügen Sie im Feld **[!UICONTROL Client-ID]** die Anwendungs-ID ein, die Sie am Ende des Verfahrens kopiert haben [Erstellen Sie eine Anwendung](#create-an-application).
 
    ![Angeben der erforderlichen Anwendungs-ID-Werte für die Integration von AEM Assets und Creative Cloud](assets/cloudservices_tenant_info.png)
 
-1. Wählen Sie unter **[!UICONTROL Synchronisierung]** die Option **[!UICONTROL Aktiviert]** aus, um die Synchronisierung zu aktivieren, und klicken Sie auf **[!UICONTROL OK]**. Wenn Sie **disabled** auswählen, funktioniert die Synchronisierung in einer Richtung.
+1. Wählen Sie unter **[!UICONTROL Synchronisierung]** die Option **[!UICONTROL Aktiviert]** aus, um die Synchronisierung zu aktivieren, und klicken Sie auf **[!UICONTROL OK]**. Wenn Sie **disabled** auswählen, funktioniert die Synchronisation in eine einzige Richtung.
 
-1. Klicken Sie auf der Konfigurationsseite auf **[!UICONTROL Öffentlichen Schlüssel anzeigen]**, um den für Ihre Instanz generierten öffentlichen Schlüssel anzuzeigen. Alternativ können Sie auf **[!UICONTROL Öffentlichen Schlüssel für OAuth Gateway herunterladen]** klicken, um die Datei mit dem öffentlichen Schlüssel herunterzuladen. Öffnen Sie dann die Datei, um den öffentlichen Schlüssel anzuzeigen.
+1. Klicken Sie auf der Konfigurationsseite auf **[!UICONTROL Öffentlichen Schlüssel anzeigen]**, um den für Ihre Instanz generierten öffentlichen Schlüssel anzuzeigen. Klicken Sie alternativ auf **[!UICONTROL Öffentlichen Schlüssel für OAuth-Gateway herunterladen]** , um die Datei mit dem öffentlichen Schlüssel herunterzuladen. Öffnen Sie dann die Datei, um den öffentlichen Schlüssel anzuzeigen.
 
-## Aktivieren der Synchronisierung {#enable-synchronization}
+## Aktivieren der Synchronisierung  {#enable-synchronization}
 
-1. Zeigen Sie den öffentlichen Schlüssel mit einer der folgenden Methoden an, die im letzten Schritt des Verfahrens [Neue Konfiguration zu Experience Cloud](#add-a-new-configuration) hinzugefügt werden. Klicken Sie auf **[!UICONTROL Öffentlichen Schlüssel anzeigen]**.
+1. Zeigen Sie den öffentlichen Schlüssel mit einer der folgenden Methoden an, die im letzten Schritt des Verfahrens [Hinzufügen einer neuen Konfiguration zu Experience Cloud](#add-a-new-configuration) erwähnt wurden. Klicken Sie auf **[!UICONTROL Öffentlichen Schlüssel anzeigen]**.
 
-1. Kopieren Sie den öffentlichen Schlüssel und fügen Sie ihn in das Feld **[!UICONTROL Öffentlicher Schlüssel]** der Konfigurationsoberfläche der Anwendung ein, die Sie unter [Anwendung erstellen](#create-an-application) erstellt haben.
+1. Kopieren Sie den öffentlichen Schlüssel und fügen Sie ihn in das Feld **[!UICONTROL Öffentlicher Schlüssel]** der Konfigurationsoberfläche der Anwendung ein, die Sie in [Erstellen einer Anwendung](#create-an-application) erstellt haben.
 
    ![chlimage_1-53](assets/chlimage_1-53.png)
 
@@ -104,8 +103,8 @@ Am Backend authentifiziert der AEM-Server Ihr Profil gegenüber dem Gateway und 
 
 ## Testen der Synchronisierung {#test-the-synchronization}
 
-1. Klicken Sie in der Benutzeroberfläche Ihrer lokalen AEM Assets-Instanz auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools]** **[!UICONTROL Bereitstellung]**> **[!UICONTROL Replikation]**, um die für die Synchronisierung erstellten Replizierungs-Profil zu finden.
-1. Klicken Sie auf der Seite **[!UICONTROL Replication]** auf **[!UICONTROL Agenten unter author]**.
+1. Klicken Sie auf das AEM -Logo in der Benutzeroberfläche Ihrer lokalen AEM Assets-Instanz und navigieren Sie zu **[!UICONTROL Tools]** **[!UICONTROL Bereitstellung]** **[!UICONTROL Replikation]**, um die für die Synchronisierung erstellten Replikationsprofile zu finden.
+1. Klicken Sie auf der Seite **[!UICONTROL Replikation]** auf **[!UICONTROL Agenten für Autor]**.
 1. Klicken Sie in der Liste der Profile auf das Standardreplikationsprofil zu Ihrer Organisation, um es zu öffnen.
 1. Klicken Sie im Dialogfeld auf **[!UICONTROL Verbindung testen]**.
 
@@ -113,10 +112,10 @@ Am Backend authentifiziert der AEM-Server Ihr Profil gegenüber dem Gateway und 
 
 1. Sehen Sie sich den unteren Bereich der Testergebnisse an, um zu prüfen, ob die Replikation erfolgreich war.
 
-## hinzufügen von Benutzern auf Experience Cloud {#add-users-to-experience-cloud}
+## Benutzer zu Experience Cloud hinzufügen {#add-users-to-experience-cloud}
 
 1. Melden Sie sich mit Administratorberechtigungen bei Experience Cloud an.
-1. Wechseln Sie in den Leisten zu **[!UICONTROL Administration]** und klicken Sie dann auf **[!UICONTROL Enterprise Dashboard starten]**.
+1. Gehen Sie von den Leisten zu **[!UICONTROL Administration]** und klicken Sie dann auf **[!UICONTROL Enterprise Dashboard starten]**.
 1. Klicken Sie in der Leiste auf **[!UICONTROL Benutzer]**, um die Seite **[!UICONTROL Benutzerverwaltung]** zu öffnen.
 1. Klicken Sie in der Symbolleiste auf **Hinzufügen** ![aem_assets_add_icon](assets/aem_assets_add_icon.png).
 1. Fügen Sie einen oder mehr Benutzer hinzu, denen Sie die Möglichkeit zur Freigabe von Assets für Creative Cloud bereitstellen möchten.
@@ -132,14 +131,14 @@ Am Backend authentifiziert der AEM-Server Ihr Profil gegenüber dem Gateway und 
 
 1. Melden Sie sich bei AEM Assets an.
 1. Erstellen Sie in der Assets-Konsole einen Ordner und laden Sie einige Assets dort hoch. Erstellen Sie zum Beispiel einen Ordner **mc-demo** und laden Sie ein Asset dort hoch.
-1. Wählen Sie den Ordner aus und klicken Sie auf **Freigeben** ![assets_share](assets/do-not-localize/assets_share.png).
-1. Wählen Sie im Menü **[!UICONTROL Adobe Experience Cloud]** und klicken Sie auf **[!UICONTROL Freigeben]**. In einer Meldung wird angezeigt, dass der Ordner für Experience Cloud freigegeben wurde.
+1. Wählen Sie den Ordner aus und klicken Sie auf **Share** ![assets_share](assets/do-not-localize/assets_share.png).
+1. Wählen Sie im Menü **[!UICONTROL Adobe Experience Cloud]** aus und klicken Sie auf **[!UICONTROL Share]**. Eine Meldung informiert Sie, dass der Ordner für Experience Cloud freigegeben wurde.
 
    >[!NOTE]
    >
-   >Die Freigabe eines Assets-Ordners des Typs `sling:OrderedFolder` wird im Zusammenhang mit der Freigabe in Adobe Experience Cloud nicht unterstützt. Wenn Sie einen Ordner bei seiner Erstellung in AEM Assets freigeben möchten, wählen Sie nicht die Option **[!UICONTROL Geordnet]** aus.
+   >Die Freigabe eines Assets-Ordners vom Typ `sling:OrderedFolder` wird im Zusammenhang mit der Freigabe in Adobe Experience Cloud nicht unterstützt. Wenn Sie einen Ordner bei seiner Erstellung in AEM Assets freigeben möchten, wählen Sie nicht die Option **[!UICONTROL Geordnet]** aus.
 
-1. Aktualisieren Sie die AEM Assets-Benutzeroberfläche. Der Ordner, den Sie in der Asset-Konsole Ihrer lokalen AEM Assets-Instanz erstellt haben, wird in die Experience Cloud-Benutzeroberfläche kopiert. Das Asset, das Sie in den Ordner in AEM Assets hochladen, wird in der Ordnerkopie in Experience Cloud angezeigt, nachdem es vom AEM verarbeitet wurde.
+1. Aktualisieren Sie die AEM Assets-Benutzeroberfläche. Der Ordner, den Sie in der Assets-Konsole Ihrer lokalen AEM Assets-Instanz erstellt haben, wird in die Experience Cloud-Benutzeroberfläche kopiert. Das Asset, das Sie in den Ordner in AEM Assets hochladen, wird in der Ordnerkopie in Experience Cloud angezeigt, nachdem es vom AEM verarbeitet wurde.
 1. Sie können auch ein Asset in die replizierte Kopie des Ordners in Experience Cloud hochladen. Nach der Verarbeitung wird das Asset im freigegebenen Ordner in AEM Assets angezeigt.
 
 <!-- Removing as per PM guidance via https://jira.corp.adobe.com/browse/CQDOC-16834?focusedCommentId=22881523&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-22881523.
@@ -171,6 +170,5 @@ For example, if an asset is uploaded from an AEM Assets (on premises) instance, 
 
 >[!MORELIKETHIS]
 >
->* [Best Practices zur Asset- und Creative Cloud-Integration](/help/assets/aem-cc-integration-best-practices.md)
->* [Best Practices für den Austausch von Assets im Creative Cloud-Ordner](/help/assets/aem-cc-folder-sharing-best-practices.md)
+>* [Best Practices für die Integration von Assets und Creative Clouden](/help/assets/aem-cc-integration-best-practices.md)
 
