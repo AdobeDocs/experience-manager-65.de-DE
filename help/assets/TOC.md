@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, verarbeiten und verteilen Sie digitale Assets.
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 58%
+source-wordcount: '582'
+ht-degree: 59%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 58%
    + [Hinzufügen von Dynamic Media-Funktionen zu Ihrer Seite](scene7.md)
    + [Bereitstellung von Inhalten per HTTP/2](http2.md)
    + [Bereitstellen von Dynamic Media-Assets](delivering-dynamic-media-assets.md)
-   + [Aktivieren des Hotlink-Schutzes in Dynamic Media  ](hotlink-protection.md)
+   + [Aktivieren des Hotlink-Schutzes in Dynamic Media](hotlink-protection.md)
    + [3D-Unterstützung](/help/assets/assets-3d.md)
    + [Bildsets](image-sets.md)
    + [Panoramabilder](panoramic-images.md)
@@ -124,7 +124,6 @@ ht-degree: 58%
    + [Multi-Tenancy für Sammlungen, Snippets und Snippet-Vorlagen](multi-tenancy.md)
    + [Versehen Sie Assets mit Wasserzeichen](watermarking.md)
    + [Asset-Vorlagen](asset-templates.md)
-   + [Best Practices zum Freigeben von Ordnern für  [!DNL Creative Cloud]](aem-cc-folder-sharing-best-practices.md)
 + Brand Portal {#brandportal}
    + [Konfigurieren von [!DNL Assets] mit [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Veröffentlichen von Assets in [!DNL Brand Portal]](brand-portal-publish-assets.md)
