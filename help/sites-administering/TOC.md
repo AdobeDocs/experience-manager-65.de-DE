@@ -8,10 +8,9 @@ breadcrumb-title: Administratorenanleitung
 user-guide-description: Erfahren Sie mehr über die Verwaltung von AEM.
 feature: Verwalten
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '627'
 ht-degree: 92%
 
 ---
@@ -19,11 +18,11 @@ ht-degree: 92%
 
 # AEM 6.5-Administratorenanleitung {#administering}
 
-+ [Überblick über das Administrationshandbuch](home.md)
++ [Übersicht über das Benutzerhandbuch für Administratoren](home.md)
 + Sites-Funktionen {#introduction}
-   + [Website-Verwaltung](msm-and-translation.md)
+   + [Website-Administration](msm-and-translation.md)
    + [Asynchrone Aufträge](asynchronous-jobs.md)
-   + [Wiederverwenden von Inhalten: Multi-Site-Manager und Live Copy](msm.md)
+   + [Wiederverwenden von Inhalten: Multi Site Manager und Live Copy](msm.md)
    + [Konsole „Live Copy-Übersicht“](msm-livecopy-overview.md)
    + [Konfigurieren der Synchronisierung von Live Copies](msm-sync.md)
    + [Erstellen und Synchronisieren von Live Copies](msm-livecopy.md)
@@ -32,7 +31,7 @@ ht-degree: 92%
    + [Übersetzen von Inhalten für mehrsprachige Sites](translation.md)
    + [Verwalten von Übersetzungsprojekten](tc-manage.md)
    + [Identifizieren zu übersetzender Inhalte](tc-rules.md)
-   + [Vorbereiten von Inhalten auf die Übersetzung](tc-prep.md)
+   + [Vorbereiten von Inhalten für die Übersetzung](tc-prep.md)
    + [Erstellen eines Sprach-Stamms mithilfe der klassischen Benutzeroberfläche](tc-lroot-classic.md)
    + [Herstellen einer Verbindung mit Microsoft Translator](tc-msconf.md)
    + [Konfigurieren des Frameworks für die Übersetzungsintegration](tc-tic.md)
@@ -71,7 +70,7 @@ ht-degree: 92%
    + [Konfigurieren von Layout-Container und Layout-Modus](configuring-responsive-layout.md)
    + [Bearbeiter](enable-classic-ui-editor.md)
    + [Aktivierung des Zugriffs auf die klassische Benutzeroberfläche](enable-classic-ui.md)
-   + [Admin-Konsolen](enable-classic-ui-admin.md)
+   + [Admin Consoles](enable-classic-ui-admin.md)
 + Sicherheit {#security}
    + [Benutzerverwaltung und Sicherheit](security.md)
    + [Verwaltung von Benutzern, Gruppen und Zugriffsrechten](user-group-ac-admin.md)
@@ -99,9 +98,9 @@ ht-degree: 92%
    + [Prinzipalansicht für die Berechtigungsverwaltung](touch-ui-principal-view.md)
    + [Content-Disposition-Filter](content-disposition-filter.md)
    + [Zuordnung benutzerdefinierter Benutzergruppen in AEM 6.5](/help/sites-administering/cug-mapping.md)
-   + [Selbe Site-Cookie-Unterstützung](same-site-cookie-support.md)
+   + [Unterstützung von Same Site-Cookies](same-site-cookie-support.md)
 + Personalisierung  {#personalization}
-   + [Personalisierung ](personalization.md)
+   + [Personalisierung](personalization.md)
    + [Konfigurieren von ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-configuring.html)
    + [ClientContext](client-context.md)
    + [Kampagnen](campaigns.md)
@@ -112,20 +111,20 @@ ht-degree: 92%
 + Integration {#integration}
    + [Integrieren mit Services von Dritten](third-party-services.md)
    + [Integration mit Salesforce](salesforce.md)
-   + [Integration mit Adobe Target](target.md)
+   + [Integrieren mit Adobe Target](target.md)
    + [Integration mit Adobe Analytics](adobeanalytics.md)
-   + [Herstellen einer Verbindung mit Adobe Analytics und Erstellen von Frameworks](adobeanalytics-connect.md)
+   + [Herstellen einer Verbindung mit Adobe Analytics und Erstellen von Frameworks](adobeanalytics-connect.md)
    + [Konfigurieren des Linktrackings für Adobe Analytics](adobeanalytics-link.md)
-   + [Zuordnen von Komponentendaten mit Adobe Analytics-Eigenschaften](adobeanalytics-mapping.md)
-   + [Konfigurieren von Videotracking für Adobe Analytics](adobeanalytics-video.md)
+   + [Zuordnen von Komponentendaten zu Adobe Analytics-Eigenschaften](adobeanalytics-mapping.md)
+   + [Konfigurieren von Videotracking für Adobe Analytics](adobeanalytics-video.md)
    + [Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ)](scene7-http2faq.md)
-   + [Fehlerbehebung bei der Adobe Campaign-Integration](troubleshooting-campaignintegration.md)
+   + [Fehlerbehebung bei der Adobe Campaign-Integration](troubleshooting-campaignintegration.md)
    + [SharePoint Connector-Lizenzen, Urheberrechtsvermerke und Haftungsausschlüsse](sharepoint-connector-licenses.md)
    + [SharePoint-Connector](sharepoint-connector.md)
    + [Häufig gestellte Fragen zur Einstellung der Unterstützung für DHTML-Viewer](dhtml-viewer-endoflifefaqs.md)
    + [Integration mit Adobe Campaign Classic](campaignonpremise.md)
    + [Verwandte Community-Artikel](related-community-articles.md)
-   + [Integrieren mit Adobe Campaign Standard](campaignstandard.md)
+   + [Integrieren mit Adobe Campaign Standard](campaignstandard.md)
    + [Hinweis zur Einstellung von Flash-Viewer](flash-viewers-eol.md)
    + [Produkt-Feed](product-feed.md)
    + [Integrieren mit Adobe Dynamic Tag Management](dtm.md)
@@ -136,7 +135,6 @@ ht-degree: 92%
    + [Fehlerbehebung für Integrationsprobleme](troubleshooting-integration-issues.md)
    + [Integration mit BrightEdge Content Optimizer](brightedge.md)
    + [Catalog Producer](catalog-producer.md)
-   + [AEM Assets-Integration mit Experience Cloud und Creative Cloud konfigurieren](configure-assets-cc-integration.md)
    + [Integrieren mit Silverpop Engage](silverpop.md)
    + [Integrieren mit Adobe Campaign](campaign.md)
    + [Integration mit ExactTarget](exacttarget.md)
@@ -148,7 +146,7 @@ ht-degree: 92%
    + [Adobe Classifications](adobeanalytics-classifications.md)
    + [Integrieren mit Adobe Search&amp;Promote](search-and-promote.md)
    + [Lösungsintegration](integration.md)
-   + [Exportieren von Erlebnisfragmenten nach Adobe Target](experience-fragments-target.md)
+   + [Exportieren von Experience Fragments in Adobe Target](experience-fragments-target.md)
    + [Best Practices für E-Mail-Vorlagen](best-practices-for-email-templates.md)
    + [Integrieren mit Livefyre](livefyre.md)
 + Best Practices {#bestpractices}
