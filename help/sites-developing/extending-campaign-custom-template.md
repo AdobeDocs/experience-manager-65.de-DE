@@ -9,18 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: c3f6eed4-bbda-454a-88ce-c7f2041d4217
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: de5c634a-c0d7-4e69-b941-d2fbfe83117d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 59%
 
 ---
 
-
 # Erstellen benutzerdefinierter AEM-Seitenvorlagen mit Adobe Campaign-Formularkomponenten{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-Diese Seite erläutert, wie Sie eine benutzerdefinierte Seitenvorlage erstellen, die [Adobe Campaign Form](/help/sites-authoring/adobe-campaign-components.md)-Komponenten verwendet, indem Sie untersuchen, wie die Geometrixx-Outdoors-Vorlage ( `/apps/geometrixx-outdoors/components/page_campaign_profile`) implementiert ist, und verweist auf wichtige Informationen, die Sie beim Erstellen Ihrer eigenen benutzerdefinierten Vorlage benötigen.
+Auf dieser Seite wird erläutert, wie Sie eine benutzerdefinierte Seitenvorlage erstellen, die [Adobe Campaign Form](/help/sites-authoring/adobe-campaign-components.md)-Komponenten verwendet, indem Sie untersuchen, wie die Geometrixx-Outdoors-Vorlage ( `/apps/geometrixx-outdoors/components/page_campaign_profile`) implementiert ist, und Sie auf wichtige Informationen verweisen, die Sie beim Erstellen Ihrer eigenen benutzerdefinierten Vorlage benötigen.
 
 >[!NOTE]
 >
@@ -30,9 +29,9 @@ Um eine benutzerdefinierte AEM-Seitenvorlage mit Adobe Campaign-Formularkompone
 
 1. **Die richtige resourceSuperType-Klasse**
 
-   Vergewissern Sie sich, dass die Seitenkomponente von `mcm/campaign/components/profile` erbt.
+   Stellen Sie sicher, dass die Seitenkomponente von `mcm/campaign/components/profile` erbt.
 
-   Dies ist erforderlich, damit die Servlets Informationen abrufen und speichern können.
+   Dies ist erforderlich, damit die Servlets Informationen abrufen und speichern können
 
    * `com.day.cq.mcm.campaign.servlets.TemplateListServlet`
    * `com.day.cq.mcm.campaign.servlets.SaveProfileServlet`
@@ -76,11 +75,10 @@ Um eine benutzerdefinierte AEM-Seitenvorlage mit Adobe Campaign-Formularkompone
 
 1. **Vorlageneinstellungen**.
 
-   In der Vorlage ( `/apps/geometrixx-outdoors/templates/campaign_profile/jcr:content`) werden die folgenden Standardwerte angezeigt:
+   In der Vorlage ( `/apps/geometrixx-outdoors/templates/campaign_profile/jcr:content`) sehen Sie die folgenden Standardwerte:
 
-   | **acMapping** | mapRecipient (für Adobe Campaign 6.1), Profil (für Adobe Campaign Standard) |
+   | **acMapping** | mapRecipient (für Adobe Campaign 6.1), profile (für Adobe Campaign Standard) |
    |---|---|
    | **acTemplateId** | mail |
 
    ![chlimage_1-204](assets/chlimage_1-204.png)
-
