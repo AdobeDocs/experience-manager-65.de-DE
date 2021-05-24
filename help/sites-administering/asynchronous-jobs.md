@@ -1,14 +1,13 @@
 ---
 title: Asynchrone Aufträge
 description: Adobe Experience Manager optimiert die Leistung durch asynchrone Ausführung einiger ressourcenintensiver Aufgaben.
-translation-type: tm+mt
-source-git-commit: c3f85314740c4e9ca8ed0c9a724b49ff4276616a
+exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '891'
 ht-degree: 98%
 
 ---
-
 
 # Asynchrone Vorgänge {#asynchronous-operations}
 
@@ -144,9 +143,9 @@ Wenn die Anzahl der Verweise auf die zu verschiebende(n) Seite(n) den Schwellenw
 >[!MORELIKETHIS]
 >
 >* [Erstellen und Organisieren von Seiten](/help/sites-authoring/managing-pages.md)
->* [Erstellen und Synchronisieren von Live Copies](/help/sites-administering/msm-livecopy.md)
->* [Konfigurieren Sie E-Mail in Experience Manager](/help/sites-administering/notification.md).
->* [Asset-Metadaten](/help/assets/metadata.md#import-metadata) importieren.
->* [Exportieren von Asset-Metadaten](/help/assets/metadata.md#export-metadata).
->* [Verwenden Sie verbundene Assets, um DAM-Assets aus Remote-Implementierungen freizugeben](/help/assets/use-assets-across-connected-assets-instances.md).
+* [Erstellen und Synchronisieren von Live Copies](/help/sites-administering/msm-livecopy.md)
+* [E-Mail in Experience Manager konfigurieren](/help/sites-administering/notification.md).
+* [Importieren von Asset-Metadaten](/help/assets/metadata.md#import-metadata).
+* [Exportieren von Asset-Metadaten](/help/assets/metadata.md#export-metadata).
+* [Verwenden Sie verbundene Assets, um DAM-Assets aus Remote-Implementierungen freizugeben](/help/assets/use-assets-across-connected-assets-instances.md).
 
