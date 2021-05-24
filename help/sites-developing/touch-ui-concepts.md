@@ -10,22 +10,21 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: df3aaed1-97b5-4a4a-af74-cb887462475b
 docset: aem65
-translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+exl-id: f13ac6c2-16ab-422d-9005-ab0b49172271
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2197'
 ht-degree: 91%
 
 ---
 
-
 # Konzepte der Touch-optimierten Benutzeroberfläche von AEM{#concepts-of-the-aem-touch-enabled-ui}
 
-AEM verfügt über eine Touch-fähige Benutzeroberfläche mit [Responsive Design](/help/sites-authoring/responsive-layout.md) für die Authoring-Umgebung, die sowohl auf Touch- als auch auf Desktop-Geräten ausgeführt werden kann.
+AEM verfügt über eine Touch-optimierte Benutzeroberfläche mit [responsivem Design](/help/sites-authoring/responsive-layout.md) für die Autorenumgebung, die sowohl für Touch- als auch für Desktop-Geräte entwickelt wurde.
 
 >[!NOTE]
 >
->Die touchfähige Benutzeroberfläche ist die Standard-Benutzeroberfläche für AEM. Die klassische Benutzeroberfläche wurde mit AEM 6.4 veraltet.
+>Die Touch-optimierte Benutzeroberfläche ist die Standard-Benutzeroberfläche für AEM. Die klassische Benutzeroberfläche wurde mit AEM 6.4 eingestellt.
 
 Die Touch-optimierte Benutzeroberfläche umfasst Folgendes:
 
@@ -70,7 +69,7 @@ Die Grundprinzipien der Touch-optimierten Benutzeroberfläche lauten:
 * Einbettung von Tests
 * Bottom-Up-Design zur Sicherstellung, dass diese Prinzipien auf alle Elemente und Komponenten angewendet werden
 
-Eine weitere Übersicht über die touchfähige UI-Struktur finden Sie im Artikel [Struktur der AEM Touch-Enabled-UI](/help/sites-developing/touch-ui-structure.md).
+Einen weiteren Überblick über die Struktur der Touch-optimierten Benutzeroberfläche finden Sie im Artikel [Struktur der AEM Touch-optimierten Benutzeroberfläche](/help/sites-developing/touch-ui-structure.md).
 
 ## AEM-Technologiestapel {#aem-technology-stack}
 
@@ -113,8 +112,8 @@ Hierfür werden die folgenden Anforderungen erfüllt:
 ![chlimage_1-81](assets/chlimage_1-81.png)
 GraniteUI.pdf
 
-[Datei ](assets/graniteui.pdf)
-abrufenGranite-Benutzeroberfläche:
+[Abrufen ](assets/graniteui.pdf)
+von DateienDie Granite-Benutzeroberfläche:
 
 * Nutzung der RESTful-Architektur von Sling
 * Implementierung von Komponentenbibliotheken, die für die Erstellung von inhaltszentrierten Web-Anwendungen bestimmt sind
@@ -177,7 +176,7 @@ Die Unterschiede zwischen der Granite-Benutzeroberfläche und ExtJS (für die kl
    <td><strong>Granite-Benutzeroberfläche</strong></td>
   </tr>
   <tr>
-   <td>Remote-Prozeduraufruf<br /> </td>
+   <td>Remoteprozeduraufruf<br /> </td>
    <td>Staatliche Übergänge</td>
   </tr>
   <tr>
@@ -185,8 +184,8 @@ Die Unterschiede zwischen der Granite-Benutzeroberfläche und ExtJS (für die kl
    <td>Hypermedia</td>
   </tr>
   <tr>
-   <td>Client kennt Serverinternals</td>
-   <td>Kunde kennt keine Internale</td>
+   <td>Client kennt interne Server</td>
+   <td>Der Kunde kennt keine Internalen</td>
   </tr>
   <tr>
    <td>"FAT-Client"</td>
@@ -194,7 +193,7 @@ Die Unterschiede zwischen der Granite-Benutzeroberfläche und ExtJS (für die kl
   </tr>
   <tr>
    <td>Spezialisierte Client-Bibliotheken</td>
-   <td>Universelle Clientbibliotheken</td>
+   <td>Universelle Client-Bibliotheken</td>
   </tr>
  </tbody>
 </table>
@@ -278,8 +277,8 @@ Implementierung:
 
 CoralUI.pdf
 
-[Get ](assets/coralui.pdf)
-FileCoral UI (CUI) ist eine Implementierung des visuellen Stils der Adobe für die touchfähige Benutzeroberfläche, die für Konsistenz in der Benutzererfahrung über mehrere Produkte hinweg ausgelegt ist. Mit der Coral-Benutzeroberfläche werden alle Elemente bereitgestellt, die Sie zur Übernahme des visuellen Stils der Autorenumgebung benötigen.
+[Die Get ](assets/coralui.pdf)
+FileCoral-Benutzeroberfläche (CUI) ist eine Implementierung des visuellen Stils der Adobe für die Touch-optimierte Benutzeroberfläche, die darauf ausgelegt ist, die Konsistenz des Benutzererlebnisses über mehrere Produkte hinweg zu gewährleisten. Mit der Coral-Benutzeroberfläche werden alle Elemente bereitgestellt, die Sie zur Übernahme des visuellen Stils der Autorenumgebung benötigen.
 
 >[!CAUTION]
 >
@@ -370,7 +369,7 @@ Viele der HTML-Elemente müssen ein bestimmtes dynamisches Verhalten aufweisen, 
 
 Für ein Plug-in gilt einer der folgenden Fälle:
 
-* Es ist für ein spezifisches DOM-Element ausgelegt. Beispiel: Ein Dialogfeld-Plugin erwartet, `DIV class=dialog` zu finden
+* Es ist für ein spezifisches DOM-Element ausgelegt. Beispielsweise erwartet ein Dialog-Plugin, `DIV class=dialog` zu finden
 * Es ist generischer Art. Über einen Layout-Manager wird beispielsweise das Layout für eine Liste mit `DIV`- oder `LI`-Elementen bereitgestellt.
 
 Das Plug-in-Verhalten kann auf folgende Arten mit Parametern angepasst werden:
@@ -380,10 +379,10 @@ Das Plug-in-Verhalten kann auf folgende Arten mit Parametern angepasst werden:
 
 Entwickler können für jedes Plug-in den besten Ansatz wählen, aber die Faustregel lautet:
 
-* `data-*` Attribute für Optionen im Zusammenhang mit dem HTML-Layout. Beispielsweise zum Angeben der Anzahl von Spalten.
+* `data-*` -Attribute für Optionen im Zusammenhang mit dem HTML-Layout. Beispielsweise zum Angeben der Anzahl von Spalten.
 * API-Optionen/-Klassen für Funktionalität in Verbindung mit Daten. Beispiel: Erstellung der Liste mit den anzuzeigenden Elementen.
 
-Dasselbe Konzept wird auch verwendet, um die Formularvalidierung zu implementieren. Für ein Element, das überprüft werden soll, müssen Sie das erforderliche Eingabefeld als benutzerdefiniertes `data-*`-Attribut angeben. Dieses Attribut wird dann als Option für ein Validierungs-Plug-in verwendet.
+Dasselbe Konzept wird auch verwendet, um die Formularvalidierung zu implementieren. Für ein Element, das überprüft werden soll, müssen Sie das erforderliche Eingabeformular als benutzerdefiniertes `data-*`-Attribut angeben. Dieses Attribut wird dann als Option für ein Validierungs-Plug-in verwendet.
 
 >[!NOTE]
 >
@@ -399,7 +398,7 @@ Zweck:
 Implementierung:
 
 * jQuery-Plug-in, an ein spezifisches DOM-Element (auch mehrere) gebunden
-* Verwenden von Attributen `data-*` zum Anpassen des Verhaltens
+* Verwenden von `data-*`-Attributen zum Anpassen des Verhaltens
 
 Ein Auszug aus Markup-Beispielcode (beachten Sie die als data-*-Attribute angegebenen Optionen):
 
