@@ -10,15 +10,14 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: 5a67aa9f-e5eb-4d7e-89da-2ee1a45eb8ce
 docset: aem65
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Aktualisieren
+exl-id: ceac2b52-6885-496d-9517-5fc7291ad070
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 92%
 
 ---
-
 
 # Prüfungen und Fehlerbehebung nach einer Aktualisierung{#post-upgrade-checks-and-troubleshooting}
 
@@ -47,7 +46,7 @@ Nach einer [ersetzenden Aktualisierung](/help/sites-deploying/in-place-upgrade.m
 
 * [Durchführen des Testplans](#main-pars-header-1167972233)
 
-### Überprüfen der Protokolle auf eine erfolgreiche Aktualisierung {#verify-logs-for-upgrade-success}
+### Überprüfen der Protokolle auf eine erfolgreiche Aktualisierung  {#verify-logs-for-upgrade-success}
 
 **upgrade.log**
 
@@ -64,7 +63,7 @@ Um diesem Rechnung zu tragen, wurde das Verfahren für die Generierung von Proto
 
 Dies ist ein Beispielbericht für eine Aktualisierung ohne Fehler:
 
-![1487887443006](assets/1487887443006.png)
+![148787443006](assets/1487887443006.png)
 
 Dies ist ein Beispielbericht mit einem Bundle, das beim Aktualisierungsvorgang nicht installiert wurde:
 
@@ -74,17 +73,17 @@ Dies ist ein Beispielbericht mit einem Bundle, das beim Aktualisierungsvorgang n
 
 Die Datei „error.log“ sollte beim Start von AEM und danach anhand der JAR-Datei der Zielversion sorgfältig überprüft werden. Alle Warnungen und Fehler müssen dabei geprüft werden. Im Allgemeinen ist es am besten, am Anfang der Datei nach möglichen Problemen zu suchen. Fehler, die weiter unten im Protokoll aufgeführt werden, sind u. U. Nebeneffekte einer Grundursache, die sich am Dateianfang findet. Wenn wiederholte Fehler und Warnungen auftreten, finden Sie im nachfolgenden Abschnitt [Analysieren von Problemen bei der Aktualisierung](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-the-upgrade) weitere Informationen.
 
-### Überprüfen von OSGi-Bundles {#verify-osgi-bundles}
+### Überprüfen von OSGi-Bundles  {#verify-osgi-bundles}
 
-Navigieren Sie zur OSGi-Konsole `/system/console/bundles` und prüfen Sie, ob keine Pakete gestartet wurden. Wenn sich Pakete in einem installierten Zustand befinden, ermitteln Sie das Stammproblem mit dem `error.log`.
+Navigieren Sie zur OSGi-Konsole `/system/console/bundles` und prüfen Sie, ob keine Bundles gestartet wurden. Wenn sich Pakete in einem installierten Zustand befinden, ermitteln Sie mit dem `error.log` das Root-Problem.
 
 ### Überprüfen der Oak-Version {#verify-oak-version}
 
-Nach der Aktualisierung sollte ersichtlich sein, dass die Oak-Version auf Version **1.10.2** aktualisiert wurde. Um die Oak-Version zu überprüfen, navigieren Sie zur OSGi-Konsole und sehen Sie sich die Version an, die den Oak-Bundles zugeordnet ist: Eichenkern, EichenCommons, Eichensegmentter.
+Nach der Aktualisierung sollte ersichtlich sein, dass die Oak-Version auf Version **1.10.2** aktualisiert wurde. Um die Oak-Version zu überprüfen, navigieren Sie zur OSGi-Konsole und sehen Sie sich die Version an, die Oak-Bundles zugeordnet ist: Oak-Kern, Oak-Commons, Oak-Segment-Tar.
 
 ### Überprüfen des Ordners „PreUpgradeBackup“{#inspect-preupgradebackup-folder}
 
-Während der Aktualisierung versucht AEM, Anpassungen zu sichern und sie unter `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>` zu speichern. Um diesen Ordner in CRXDE Lite anzuzeigen, müssen Sie [CRXDE Lite vorübergehend aktivieren](/help/sites-administering/enabling-crxde-lite.md).
+Während des Upgrades versucht AEM, Anpassungen zu sichern und sie unter `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>` zu speichern. Um diesen Ordner in CRXDE Lite anzuzeigen, müssen Sie [CRXDE Lite vorübergehend aktivieren](/help/sites-administering/enabling-crxde-lite.md).
 
 Der Ordner mit dem Zeitstempel sollte die Eigenschaft `mergeStatus` mit dem Wert `COMPLETED` aufweisen. Der Ordner **to-process** sollte leer sein und der Knoten **overwritten** zeigt an, welche Knoten bei der Aktualisierung überschrieben wurden. Unter dem Knoten **leftovers** angezeigte Inhalte konnten bei der Aktualisierung nicht problemlos zusammengeführt werden. Wenn Ihre Implementierung von einem der untergeordneten Knoten abhängig ist (und nicht bereits von Ihrem aktualisierten Codepaket installiert wurde), muss eine manuelle Zusammenführung durchgeführt werden.
 
@@ -92,7 +91,7 @@ Deaktivieren Sie CRXDE Lite nach dieser Übung, wenn eine Staging- oder Produkti
 
 ### Erstüberprüfung von Seiten  {#initial-validation-of-pages}
 
-Führen Sie in AEM eine Erstüberprüfung mithilfe von mehreren Seiten durch. Wenn Sie eine Authoring-Umgebung aktualisieren, öffnen Sie die Beginn- und Begrüßungsseite ( `/aem/start.html`, `/libs/cq/core/content/welcome.html`). Öffnen Sie in Autoren- und Veröffentlichungsumgebungen einige Anwendungsseiten und prüfen Sie, ob diese richtig angezeigt werden. Wenn Probleme auftreten, finden Sie in der Datei `error.log` weitere Informationen zur Fehlerbehebung.
+Führen Sie in AEM eine Erstüberprüfung mithilfe von mehreren Seiten durch. Wenn Sie eine Autorenumgebung aktualisieren, öffnen Sie die Startseite und die Begrüßungsseite ( `/aem/start.html`, `/libs/cq/core/content/welcome.html`). Öffnen Sie in Autoren- und Veröffentlichungsumgebungen einige Anwendungsseiten und prüfen Sie, ob diese richtig angezeigt werden. Wenn Probleme auftreten, finden Sie in der Datei `error.log` weitere Informationen zur Fehlerbehebung.
 
 ### Anwenden von AEM Service Packs {#apply-aem-service-packs}
 
@@ -106,7 +105,7 @@ Für eine Reihe von Funktionen in AEM sind nach einer Aktualisierung zusätzlich
 
 #### Aktivieren der Bereinigung des Datenspeichers {#enable-data-store-garbage-collection}
 
-Wenn Sie einen Dateidatenspeicher verwenden, stellen Sie sicher, dass die Aufgabe „Data Store-Abfallsammlung“ aktiviert ist und zur Liste für die wöchentliche Wartung hinzugefügt wurde. Anweisungen hierzu finden Sie unter [hier](/help/sites-administering/data-store-garbage-collection.md).
+Wenn Sie einen Dateidatenspeicher verwenden, stellen Sie sicher, dass die Aufgabe „Data Store-Abfallsammlung“ aktiviert ist und zur Liste für die wöchentliche Wartung hinzugefügt wurde. Anweisungen hierzu finden Sie [hier](/help/sites-administering/data-store-garbage-collection.md).
 
 >[!NOTE]
 >
@@ -134,7 +133,7 @@ In diesem Abschnitt sind einige Problemszenarien enthalten, die möglicherweise 
 
 Diese Szenarien sollen dabei helfen, die Grundursache der mit der Aktualisierung im Zusammenhang stehenden Probleme zu identifizieren. Ferner sollen sie dazu beitragen, projekt- oder produktspezifische Probleme zu ermitteln.
 
-### Fehler bei der Repository-Migration  {#repository-migration-failing-}
+### Fehler bei der Repository-Migration   {#repository-migration-failing-}
 
 Die Datenmigration von CRX2 auf OAK sollte für alle Szenarien mit Quellinstanzen auf Basis von CQ 5.4 durchführbar sein. Stellen Sie sicher, dass Sie die Aktualisierungsanweisungen in diesem Dokument genau befolgen. Dazu gehört auch, dass Sie die Datei `repository.xml` entsprechend vorbereiten und sicherstellen, dass keine benutzerdefinierte Authentifizierung über JAAS gestartet wurde und dass die Instanz vor dem Start der Migration auf Inkonsistenzen überprüft wurde.
 
@@ -176,11 +175,11 @@ Führen Sie abschließend eine Überprüfung auf fehlerhafte Konfigurationen dur
 
 In den meisten Fällen sind die Grundursachen für diese Probleme dieselben wie für nicht gestartete Bundles oder nicht installierte Pakete. Der einzige Unterschied besteht darin, dass die Probleme bei der ersten Verwendung der Komponenten auftreten.
 
-Bei fehlerhaftem benutzerdefiniertem Code sollten Sie zunächst Feuerproben durchführen, um die Ursache zu identifizieren. Sobald Sie sie gefunden haben, sehen Sie sich die Empfehlungen in diesem Abschnitt [link] des Artikels an, um diese zu beheben.
+Bei fehlerhaftem benutzerdefiniertem Code sollten Sie zunächst Feuerproben durchführen, um die Ursache zu identifizieren. Sobald Sie sie gefunden haben, sehen Sie sich die Empfehlungen in diesem Abschnitt [link] des Artikels an, wie Sie sie beheben können.
 
 ### Fehlende Anpassungen unter „/etc“{#missing-customizations-under-etc}
 
-`/apps` und  `/libs` werden durch die Aktualisierung gut behandelt, aber Änderungen unter  `/etc` Umständen müssen manuell von  `/var/upgrade/PreUpgradeBackup` nach der Aktualisierung wiederhergestellt werden. Überprüfen Sie diesen Speicherort auf Inhalte, die manuell zusammengeführt werden müssen.
+`/apps` und  `/libs` werden von der Aktualisierung gut verarbeitet, Änderungen unter  `/etc` müssen jedoch unter Umständen  `/var/upgrade/PreUpgradeBackup` nach der Aktualisierung manuell wiederhergestellt werden. Überprüfen Sie diesen Speicherort auf Inhalte, die manuell zusammengeführt werden müssen.
 
 ### Analysieren der Dateien „error.log“ und „upgrade.log“  {#analyzing-the-error.log-and-upgrade.log}
 
