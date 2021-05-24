@@ -9,31 +9,30 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 8ae7ccec-489b-4d20-ac56-6101402fb18a
-translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+exl-id: da3f7b7e-87e5-446a-9a77-4b12b850a381
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 48%
 
 ---
 
-
 # Integrieren von Einstiegsseiten in Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
 
-AEM hat die Landingpages-Lösung mit [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) mithilfe der folgenden Aktionsaufruf-Komponenten (CTA) integriert:
+AEM hat die Landingpage-Lösung mit [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) integriert, indem die folgenden Aktionsaufruf-Komponenten (CTA) verwendet werden:
 
 1. Click Through-Komponente
 1. Grafischer Link
 
-Diese Komponenten stellen bestimmte Attribute zur Verfügung, die über Adobe Analytics-Variablen (Traffic, Konversionsvariablen) und Erfolgsvariablen zugeordnet werden können, um Informationen an Adobe Analytics zu senden.
+Diese Komponenten legen bestimmte Attribute offen, die über Adobe Analytics-Variablen (Traffic- und Konversionsvariablen) und Erfolgsereignisse zugeordnet werden können, um Informationen an Adobe Analytics zu senden.
 
 ## Voraussetzungen {#prerequisites}
 
-Adobe empfiehlt, die [bestehende AEM-Adobe Analytics-Integration](/help/sites-administering/adobeanalytics.md) zu durchlaufen, um zu verstehen, wie diese Integration funktioniert.
+Adobe empfiehlt, die [vorhandene AEM-Adobe Analytics-Integration](/help/sites-administering/adobeanalytics.md) durchzugehen, um zu verstehen, wie diese Integration funktioniert.
 
 ## Verfügbare Komponenten für die Zuordnung {#components-available-for-mapping}
 
-In AEM können die Komponenten **Aktionsaufruf** - **ClickThroughLink** und **GraphicalLink** -, die hier im Sidekick angezeigt werden, Adobe Analytics-Variablen zugeordnet werden.
+In AEM können die Komponenten **Aktionsaufruf** - **ClickThroughLink** und **GraphicalLink** - die hier im Sidekick angezeigt werden, Adobe Analytics-Variablen zugeordnet werden.
 
 ![chlimage_1-21](assets/chlimage_1-21a.jpeg)
 
@@ -41,7 +40,7 @@ In AEM können die Komponenten **Aktionsaufruf** - **ClickThroughLink** und **Gr
 
 Sie können wie folgt Einstiegsseitenkomponenten zu Adobe Analytics zuordnen:
 
-1. Wählen Sie nach dem Erstellen der Adobe Analytics-Konfiguration und dem Erstellen eines neuen Frameworks die entsprechende Berichte-Suite aus dem Dropdownmenü. Hierdurch erfolgt das Abrufen der Adobe Analytics-Variablen und ihre Anzeige in der Inhaltssuche.
+1. Nachdem Sie die Adobe Analytics-Konfiguration erstellt und ein neues Framework erstellt haben, wählen Sie die entsprechende Report Suite aus dem Dropdown-Menü aus. Hierdurch erfolgt das Abrufen der Adobe Analytics-Variablen und ihre Anzeige in der Inhaltssuche.
 1. Ziehen Sie Aktionsaufrufkomponenten bei Bedarf vom Sidekick in den Zuordnungsbereich in der Mitte der Seite und legen Sie sie dort ab.
 
 <table>
@@ -53,46 +52,45 @@ Sie können wie folgt Einstiegsseitenkomponenten zu Adobe Analytics zuordnen:
   </tr>
   <tr>
    <td><strong>CTA-Click-Through-Link</strong></td>
-   <td><i>eventData.clickthroughLinkLabel</i> <br /> </td>
-   <td>Die Beschriftung auf dem Link oder der Text des Links </td>
+   <td><i>eventdata.clickthroughLinkLabel</i> <br /> </td>
+   <td>Titel des Links oder Text des Links </td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
-   <td><i>eventData.clickthroughLinkTarget</i> <br /> </td>
-   <td>Das Ziel, an dem Sie sich befinden, wenn Sie auf den Link klicken </td>
+   <td><i>eventdata.clickthroughLinkTarget</i> <br /> </td>
+   <td>Das Ziel, an dem Sie beim Klicken auf den Link gelangt sind </td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
-   <td><i>eventData.Ereignisses.clickthroughLinkClick</i> <br /> </td>
+   <td><i>eventdata.events.clickthroughLinkClick</i> <br /> </td>
    <td>Das Klickereignis </td>
   </tr>
   <tr>
    <td><strong>CTA-Grafiklink</strong></td>
-   <td><i>eventData.clicktroughImageLabel</i> <br /> </td>
+   <td><i>eventdata.clicktroughImageLabel</i> <br /> </td>
    <td>Der Titel des CTA-Bildes </td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
-   <td><i>eventData.clicktroughImageTarget</i> <br /> </td>
+   <td><i>eventdata.clicktroughImageTarget</i> <br /> </td>
    <td>Das Ziel, das aufgerufen wird, wenn Sie auf das Bild mit Link klicken</td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
-   <td><i>eventData.clicktroughImageAsset</i> <br /> </td>
+   <td><i>eventdata.clicktroughImageAsset</i> <br /> </td>
    <td>Der Pfad zum Bild-Asset im Repository </td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
-   <td><i>eventData.Ereignisses.clicktroughImageClick</i> <br /> </td>
+   <td><i>eventdata.events.clicktroughImageClick</i> <br /> </td>
    <td>Das Klickereignis</td>
   </tr>
  </tbody>
 </table>
 
 1. Weisen Sie diese offengelegten Attribute beliebigen Adobe Analytics-Variablen aus der Inhaltssuche zu. Das Framework ist nun einsatzbereit.
-1. Sie können jetzt eine neue Landingpage erstellen oder eine vorhandene Landingpage mit vorhandenen CTA-Komponenten öffnen und im Sidekick auf die Registerkarte **Cloud Services** unter **Seiteneigenschaften** klicken (in der touchoptimierten Benutzeroberfläche wählen Sie **Eigenschaften öffnen** und klicken Sie auf **Cloud Services**) und konfigurieren Sie das Framework für die Verwendung mit Landingpage. Wählen Sie das Framework aus der Dropdown-Liste aus.
+1. Sie können jetzt eine neue Landingpage erstellen oder eine vorhandene Landingpage mit vorhandenen CTA-Komponenten öffnen und im Sidekick auf die Registerkarte **Cloud Services** in **Seiteneigenschaften** klicken (in der Touch-optimierten Benutzeroberfläche wählen Sie **Eigenschaften öffnen** aus und klicken Sie auf **Cloud Services**) und konfigurieren Sie das für die Landingpage zu verwendende Framework. Wählen Sie das Framework aus der Dropdown-Liste aus.
 
    ![chlimage_1-25](assets/chlimage_1-25a.png)
 
 1. Nach dem Konfigurieren des Frameworks für die Einstiegsseite können Sie nun die instrumentierten Komponenten verwenden. Sämtliche Klicks auf den Aktionsaufrufen werden dann in Adobe Analytics aufgezeichnet.
-
