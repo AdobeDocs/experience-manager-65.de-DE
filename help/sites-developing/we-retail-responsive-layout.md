@@ -9,18 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 2d374e88-ea09-43d5-986c-5d77b0705b93
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 6df5fb10-a7f1-4d5d-ac00-b4be3d5d3d18
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 75%
 
 ---
 
-
 # Ausprobieren von responsivem Layout in We.Retail{#trying-out-responsive-layout-in-we-retail}
 
-Alle Web.Retail-Seiten verwenden die Komponente Layout Container, um reaktionsfähiges Design zu implementieren. Der Layout-Container bietet ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster positionieren können. Dieses Raster kann das Layout abhängig von der Größe des Geräts/Fensters und des Formats neu anordnen. Die Komponente wird zusammen mit dem Modus **Layout** im Seiteneditor verwendet, mit dem Sie Ihr reaktionsfähiges Layout je nach Gerät erstellen und bearbeiten können.
+Alle We.Retail-Seiten verwenden die Komponente Layout-Container , um responsives Design zu implementieren. Der Layout-Container bietet ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster positionieren können. Dieses Raster kann das Layout abhängig von der Größe des Geräts/Fensters und des Formats neu anordnen. Die Komponente wird im Seiteneditor zusammen mit dem Modus **Layout** verwendet, mit dem Sie Ihr responsives Layout geräteabhängig erstellen und bearbeiten können.
 
 ## Testen {#trying-it-out}
 
@@ -48,4 +47,4 @@ Alle Web.Retail-Seiten verwenden die Komponente Layout Container, um reaktionsf�
 
 ## Weiterführende Informationen {#further-information}
 
-Weitere Informationen finden Sie im Authoring-Dokument [Responsive Layout](/help/sites-authoring/responsive-layout.md) oder im Administrator-Dokument [Konfigurieren des Layout-Containers und des Layoutmodus](/help/sites-administering/configuring-responsive-layout.md).
+Weitere Informationen finden Sie im Authoring-Dokument [Responsives Layout](/help/sites-authoring/responsive-layout.md) oder im Administratordokument [Konfigurieren des Layout-Containers und des Layout-Modus](/help/sites-administering/configuring-responsive-layout.md) .
