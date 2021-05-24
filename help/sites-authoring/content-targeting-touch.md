@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
-translation-type: tm+mt
-source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+exl-id: edde225d-0be7-4306-8dda-d18d46fae977
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '5374'
 ht-degree: 95%
 
 ---
-
 
 # Verfassen zielgerichteter Inhalte im Targeting-Modus {#authoring-targeted-content-using-targeting-mode}
 
@@ -32,7 +31,7 @@ Verfassen von zielgerichteten Inhalten im Targeting-Modus von AEM. Im Targeting-
 * Simulieren Sie Benutzererlebnisse.
 * Für weitere Anpassungsmöglichkeiten muss zunächst die Target-Komponente konfiguriert werden.
 
-Als Targeting-Engine können Sie entweder AEM oder Adobe Target einsetzen (möchten Sie Adobe Target nutzen, benötigen Sie ein aktives Adobe Target-Konto). Wenn Sie Adobe Target verwenden, müssen Sie zunächst die Integration konfigurieren. Siehe [Anleitungen zur Integration mit Adobe Target](/help/sites-administering/target.md).
+Als Targeting-Engine können Sie entweder AEM oder Adobe Target einsetzen (möchten Sie Adobe Target nutzen, benötigen Sie ein aktives Adobe Target-Konto). Wenn Sie Adobe Target verwenden, müssen Sie zunächst die Integration konfigurieren. Siehe [Anweisungen zur Integration mit Adobe Target](/help/sites-administering/target.md).
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
@@ -53,7 +52,7 @@ Die im Target-Modus sichtbaren Aktivitäten und Erlebnisse spiegeln die Optionen
 >
 >Beim Targeting bleibt die Kombination aus Branding und Aktivität auf Benutzerebene gleich, nicht auf Kanalebene.
 
-## Wechseln in den Modus „Targeting“  {#switching-to-targeting-mode}
+## Wechseln in den Modus „Targeting“   {#switching-to-targeting-mode}
 
 Wechseln Sie in den Targeting-Modus, um auf die Werkzeuge für die Erstellung von zielgerichtetem Inhalt zuzugreifen.
 
@@ -296,8 +295,8 @@ Möchten Sie Targeting-Inhalte bearbeiten, müssen Sie zunächst auf **Targeting
    >Sollte diese Einstellung vom Administrator gefordert werden, müssen Sie den Ort möglicherweise genau angeben.
    >
    >
-   >Administratoren können unter **festlegen, ob diese Einstellung zwingend vorgenommen werden muss.https://&lt;Host>:&lt;Anschluss>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
-   Wenn Benutzer einen Ort eingeben müssen, aktivieren Sie das Kontrollkästchen **Position erzwingen **s.
+   >Administratoren können unter **festlegen, ob diese Einstellung zwingend vorgenommen werden muss.https://&lt;Host>:&lt;Port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
+   Wenn Sie von Benutzern verlangen möchten, einen Ort einzugeben, aktivieren Sie das Kontrollkästchen &quot;Ortsangabe erzwingen&quot;.
 
 1. Wählen Sie das Erlebnis aus, für das ein Angebot erstellt werden soll.
 1. So erstellen Sie das Angebot:
@@ -465,7 +464,7 @@ Es sind folgende Erfolgsmetriken verfügbar (nur für die Veröffentlichung eins
    <td><strong>Konversion</strong></td>
    <td><p>Die Prozentzahl der Besucher, die auf einen beliebigen Teil des getesteten Erlebnisses geklickt haben. Eine Konversion kann entweder einmal pro Besucher oder jedes Mal, wenn ein Besucher eine Umrechnung durchführt, gezählt werden. Die Konversionsmetrik ist auf einen der folgenden Werte eingestellt:</p>
     <ul>
-     <li><strong>Seitenansicht</strong>  - Sie können festlegen, welche Audience angezeigt wird, indem Sie entweder die  <strong>URL auswählen </strong> und dann die URL oder mehrere URLs definieren oder indem Sie  <strong>URL-</strong> Container auswählen und dann einen Pfad oder einen Suchbegriff hinzufügen.</li>
+     <li><strong>Seite angezeigt</strong>  - Sie können festlegen, welche Seite die Zielgruppe angezeigt hat, indem Sie entweder  <strong>URL auswählen </strong> und dann die URL oder mehrere URLs definieren oder indem Sie  <strong>URL-</strong> Container auswählen und dann einen Pfad oder einen Suchbegriff hinzufügen.</li>
      <li><strong>Mbox angezeigt</strong> – Sie können festlegen, welche Mbox Ihre Zielgruppe angezeigt haben muss, indem Sie deren Namen eingeben. Durch Klicken auf <strong>Mbox hinzufügen</strong> können Sie mehrere Mboxes bestimmen.</li>
     </ul> </td>
   </tr>
@@ -473,7 +472,7 @@ Es sind folgende Erfolgsmetriken verfügbar (nur für die Veröffentlichung eins
    <td><strong>Umsatz</strong></td>
    <td><p>Durch den Besuch generierter Umsatz. Sie können aus den folgenden Umsatzmetriken auswählen:</p>
     <ul>
-     <li>Umsatz pro Besucher</li>
+     <li>Umsatz pro Besucher (RPV)</li>
      <li>Durchschnittlicher Bestellwert</li>
      <li>Gesamtverkäufe </li>
      <li>Aufträge</li>
@@ -506,13 +505,13 @@ Verwenden Sie die erweiterten Optionen, um festzulegen, was geschehen soll, **we
    <td>Geben Sie an, wie die Anzahl erhöht wird:
     <ul>
      <li>Einmal pro Teilnehmer</li>
-     <li>Bei jeder Impression, ohne Seitenaktualisierungen</li>
+     <li>Bei jeder Impression, außer Seitenaktualisierungen</li>
      <li>Bei jeder Impression</li>
     </ul> </td>
   </tr>
   <tr>
    <td><strong>Anzahl erhöhen, Benutzer freigeben und Wiedereintritt erlauben</strong></td>
-   <td>Wählen Sie das Erlebnis aus, das dem Besucher angezeigt wird, wenn er erneut in die Aktivität eintritt:
+   <td>Wählen Sie das Erlebnis aus, das dem Besucher angezeigt wird, wenn er die Aktivität erneut aufruft:
     <ul>
      <li>Gleiches Erlebnis</li>
      <li>Zufälliges Erlebnis</li>
@@ -521,9 +520,9 @@ Verwenden Sie die erweiterten Optionen, um festzulegen, was geschehen soll, **we
   </tr>
   <tr>
    <td><strong>Anzahl erhöhen, Benutzer freigeben und an Wiedereintritt hindern</strong></td>
-   <td>Bestimmen Sie, was der Benutzer anstelle des Inhalts der Aktivität sieht:
+   <td>Bestimmen Sie, was der Benutzer anstelle des Aktivitätsinhalts sieht:
     <ul>
-     <li>Gleiches Erlebnis ohne Verfolgung</li>
+     <li>Gleiches Erlebnis, ohne Tracking</li>
      <li>Standardinhalt oder Inhalt einer anderen Aktivität</li>
     </ul> </td>
   </tr>
@@ -666,7 +665,7 @@ Sie können die Komponente „Target“ anpassen, indem Sie auf eine von zwei m�
   </tr>
   <tr>
    <td><strong>Engine</strong></td>
-   <td>Wählen Sie zwischen <strong>Clientseitige Regeln (ohne Verfolgung), Adobe Target, ContextHub, </strong>und<strong> Adobe Campaign </strong>aus, je nachdem, welche Engine Sie verwenden möchten.</td>
+   <td>Wählen Sie zwischen <strong>Client-seitige Regeln (ohne Tracking), Adobe Target, ContextHub, </strong>und<strong> Adobe Campaign </strong>aus, je nachdem, welche Engine Sie verwenden möchten.</td>
   </tr>
  </tbody>
 </table>
@@ -683,7 +682,7 @@ Wenn Sie Adobe Target als Engine auswählen:
   </tr>
   <tr>
    <td><strong>Präzise Zielgruppenerfassung</strong></td>
-   <td><p>Durch Aktivierung der genauen Verfolgung wird der Komponente mitgeteilt, auf verfügbare Client Context- oder Context-Hub-Daten zu warten, bevor eine Anfrage an Adobe Target gesendet wird. Dies kann die Ladezeit verlängern. Beim Verfassen ist stets die präzise Zielgruppenerfassung aktiviert.</p> <p>Wenn Sie das Kontrollkästchen <strong>Präzise Zielgruppenerfassung</strong> aktivieren, führt die Mbox zunächst <code>mboxDefine</code> und anschließend <code>mboxUpdate</code> durch, was bei Verfügbarkeit der Daten zu einer Ajax-Anfrage führt.</p> <p>Wenn Sie das Kontrollkästchen <strong>Akkurates Targeting</strong> nicht aktivieren, führt die mbox eine <code>mboxCreate</code>-Abfrage durch, die zu einer synchronen Anforderung führt (in diesem Fall sind möglicherweise noch nicht alle Kontextdaten verfügbar).</p> <p><strong>Hinweis:</strong> Das Aktivieren und Deaktivieren der präzisen Zielgruppenerfassung einer Komponente wirkt sich nicht auf globale Einstellungen aus. Globale Einstellungen lassen sich jederzeit außer Kraft setzen, indem Sie die präzise Zielgruppenerfassung in der Komponente aktivieren.</p> </td>
+   <td><p>Durch Aktivierung der genauen Verfolgung wird der Komponente mitgeteilt, auf verfügbare Client Context- oder Context-Hub-Daten zu warten, bevor eine Anfrage an Adobe Target gesendet wird. Dies kann die Ladezeit verlängern. Beim Verfassen ist stets die präzise Zielgruppenerfassung aktiviert.</p> <p>Wenn Sie das Kontrollkästchen <strong>Präzise Zielgruppenerfassung</strong> aktivieren, führt die Mbox zunächst <code>mboxDefine</code> und anschließend <code>mboxUpdate</code> durch, was bei Verfügbarkeit der Daten zu einer Ajax-Anfrage führt.</p> <p>Wenn Sie das Kontrollkästchen <strong>Präzise Zielgruppenerfassung</strong> nicht aktivieren, führt die Mbox sofort eine <code>mboxCreate</code> aus, was zu einer synchronen Anforderung führt (in diesem Fall sind möglicherweise noch nicht alle Kontextdaten verfügbar).</p> <p><strong>Hinweis:</strong> Das Aktivieren und Deaktivieren der präzisen Zielgruppenerfassung einer Komponente wirkt sich nicht auf globale Einstellungen aus. Globale Einstellungen lassen sich jederzeit außer Kraft setzen, indem Sie die präzise Zielgruppenerfassung in der Komponente aktivieren.</p> </td>
   </tr>
   <tr>
    <td><strong>Einschließen gelöster Segmente</strong></td>
@@ -695,11 +694,11 @@ Wenn Sie Adobe Target als Engine auswählen:
   </tr>
   <tr>
    <td><strong>Kontextparameter</strong></td>
-   <td>Klicken Sie auf oder tippen Sie auf <strong>Hinzufügen Feld</strong>, um weitere Kontextparameter zu konfigurieren (genau wie im Zielgruppe-Framework verfügbar). Kontextparameter, die der Komponente hinzugefügt wurden, gelten <i>nur</i> für die gewählte Komponente, nicht für andere Komponenten, wie dies der Fall wäre, wenn Kontextparameter direkt dem Framework hinzugefügt würden.</td>
+   <td>Klicken oder tippen Sie auf <strong>Feld</strong> hinzufügen , um zusätzliche Kontextparameter zu konfigurieren (genau wie im Target-Framework verfügbar). Kontextparameter, die der Komponente hinzugefügt wurden, gelten <i>nur</i> für die gewählte Komponente, nicht für andere Komponenten, wie dies der Fall wäre, wenn Kontextparameter direkt dem Framework hinzugefügt würden.</td>
   </tr>
   <tr>
    <td><strong>Statische Parameter</strong></td>
-   <td>Klicken Sie auf oder tippen Sie auf <strong>Hinzufügen Feld</strong>, um weitere statische Parameter zu konfigurieren (genau wie im Zielgruppe-Framework verfügbar). Statische Parameter, die der Komponente hinzugefügt werden, wenden <i>nur auf die Komponente und nicht auf andere Komponenten an, wie es der Fall wäre, wenn Sie statische Parameter direkt zum Framework hinzufügen. </i> Statische Parameter stammen nicht aus dem Kontext (Client Context des ContentHub).</td>
+   <td>Klicken oder tippen Sie auf <strong>Feld</strong> hinzufügen , um weitere statische Parameter zu konfigurieren (entspricht den verfügbaren Parametern im Target-Framework). Statische Parameter, die zur Komponente hinzugefügt werden, wenden <i>nur</i> auf die Komponente an und nicht auf andere Komponenten, wie dies der Fall wäre, wenn Sie statische Parameter direkt zum Framework hinzufügen würden. Statische Parameter stammen nicht aus dem Kontext (Client Context des ContentHub).</td>
   </tr>
  </tbody>
 </table>
@@ -723,7 +722,7 @@ Wenn Sie Client Context (Client-Seite) als Engine auswählen:
     <ul>
      <li><strong>Erste(r)</strong>: das laut Sortierung der Kampagne an erster Stelle stehende Erlebnis.</li>
      <li><strong>Zufällig</strong>: Es wird ein beliebiges Erlebnis verwendet.</li>
-     <li><strong>Clickstream-Ergebnis</strong>: Die Tags und zugehörigen Tag-Treffer, die im Clientkontext verfolgt werden, werden verwendet. Die Trefferraten für Tags, die auf der Teaser-Seite definiert sind, werden verglichen.</li>
+     <li><strong>Clickstream-Ergebnis</strong>: Die Tags und zugehörigen Tag-Treffer, die im ClientContext verfolgt werden, werden verwendet. Die Trefferraten für Tags, die auf der Teaser-Seite definiert sind, werden verglichen.</li>
     </ul> </td>
   </tr>
  </tbody>
