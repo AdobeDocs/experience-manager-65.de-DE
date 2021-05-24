@@ -10,14 +10,13 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: b41de64a-7d27-4633-a8d5-ac91d47eb1bb
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+exl-id: c2fbf858-8815-426e-a2e5-f92bcf909ad0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 95%
 
 ---
-
 
 # Erstellen einer effektiven Einstiegsseite für Newsletter{#creating-an-effective-newsletter-landing-page}
 
@@ -51,7 +50,7 @@ Informationen dazu, wie Sie ein eigenes Newsletterformular erstellen, finden Sie
 
 Die ausgeblendeten Felder in dem folgenden Beispiel enthalten die minimal erforderlichen Informationen (E-Mail); zusätzlich hierzu können Sie später weitere Felder hinzufügen, was jedoch Auswirkungen auf die Konversionsrate hat.
 
-Das folgende Beispiel zeigt ein Formular, das unter https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html erstellt wurde.
+Das folgende Beispiel ist ein Formular, das unter https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html erstellt wurde.
 
 1. Erstellen Sie das Formular.
 
@@ -89,7 +88,7 @@ Gehen Sie folgendermaßen vor, um Teaser für eine effektive Newsletter-Startsei
 
 1. Erstellen Sie eine Kampagne mit zwei Teasern; kennzeichnen Sie einen Teaser als &quot;geschäftlich&quot; und belassen Sie den anderen ohne Kennzeichnung.
 
-### Push-Übertragung von Inhalt an Abonnenten {#pushing-content-to-subscribers}
+### Push-Übertragung von Inhalt an Abonnenten  {#pushing-content-to-subscribers}
 
 Übernehmen Sie alle Änderungen an Seiten über die Newsletter-Funktion in MCM. Sie können dann aktualisierte Inhalte an Abonnenten weitergeben.
 
