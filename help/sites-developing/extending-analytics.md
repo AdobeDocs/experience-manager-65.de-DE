@@ -9,26 +9,25 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: e0372f4a-fe7b-4526-8391-5bb345b51d70
-translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+exl-id: a71d20e6-0321-4afb-95fe-6de8b7b37245
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 53%
 
 ---
 
-
 # Erweitern der Ereignisverfolgung{#extending-event-tracking}
 
 Mit AEM Analytics können Sie Benutzerinteraktionen auf Ihrer Website verfolgen. Als Entwickler müssen Sie möglicherweise:
 
-* verfolgen, wie Besucher mit Ihren Komponenten interagieren. Dies kann mit [Benutzerspezifischen Ereignissen erfolgen.](#custom-events)
-* [Greifen Sie auf Werte im ContextHub](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub) zu.
+* verfolgen, wie Besucher mit Ihren Komponenten interagieren. Dies kann mit [benutzerdefinierten Ereignissen erfolgen.](#custom-events)
+* [Auf Werte in ContextHub zugreifen](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
 * [Datensatzrückrufe hinzufügen](#adding-record-callbacks).
 
 >[!NOTE]
 >
->Diese Informationen sind im Wesentlichen generisch, verwenden jedoch [Adobe Analytics](/help/sites-administering/adobeanalytics.md) für spezifische Beispiele.
+>Diese Informationen sind im Wesentlichen generisch, werden aber für bestimmte Beispiele [Adobe Analytics](/help/sites-administering/adobeanalytics.md) verwendet.
 >
 >[Allgemeine Informationen zum Entwickeln von Komponenten und Dialogfeldern finden Sie unter ](/help/sites-developing/components.md)Entwickeln von Komponenten.
 
@@ -36,9 +35,9 @@ Mit AEM Analytics können Sie Benutzerinteraktionen auf Ihrer Website verfolgen.
 
 Benutzerspezifische Ereignisse verfolgen alles, was von der Verfügbarkeit einer bestimmten Komponente auf der Seite abhängt. Hierzu gehören auch vorlagenspezifische Ereignisse, da die Seitenkomponente als eine weitere Komponente behandelt wird.
 
-### Verfolgen von benutzerspezifischen Ereignissen beim Laden einer Seite {#tracking-custom-events-on-page-load}
+### Verfolgen von benutzerspezifischen Ereignissen beim Laden einer Seite  {#tracking-custom-events-on-page-load}
 
-Dies kann mithilfe des pseudo-Attributs `data-tracking` erfolgen (das ältere record-Attribut wird noch für die Abwärtskompatibilität unterstützt). Sie können dieses einem beliebigen HTML-Tag hinzufügen.
+Dies kann mithilfe des Pseudo-Attributs `data-tracking` erfolgen (das ältere Datensatzattribut wird aus Gründen der Abwärtskompatibilität weiterhin unterstützt). Sie können dieses einem beliebigen HTML-Tag hinzufügen.
 
 Die Syntax für `data-tracking` lautet
 
@@ -61,7 +60,7 @@ Ein Beispiel kann wie folgt aussehen:
 </span>
 ```
 
-Beim Laden der Seite werden alle `data-tracking`-Attribute erfasst und zum Ereignis-Store des ContextHub hinzugefügt, wo sie Adobe Analytics-Ereignissen zugeordnet werden können. Ereignis, die nicht zugeordnet sind, werden von Adobe Analytics nicht verfolgt. Weitere Informationen zum Zuordnen von Ereignissen finden Sie unter [Herstellen einer Verbindung mit Adobe Analytics](/help/sites-administering/adobeanalytics.md).
+Beim Laden der Seite werden alle `data-tracking`-Attribute erfasst und zum Ereignisspeicher des ContextHub hinzugefügt, wo sie Adobe Analytics-Ereignissen zugeordnet werden können. Ereignisse, die nicht zugeordnet sind, werden von Adobe Analytics nicht verfolgt. Weitere Informationen zur Zuordnung von Ereignissen finden Sie unter [Herstellen einer Verbindung zu Adobe Analytics](/help/sites-administering/adobeanalytics.md) .
 
 ### Verfolgen von benutzerspezifischen Ereignissen nach dem Laden einer Seite {#tracking-custom-events-after-page-load}
 
@@ -75,9 +74,9 @@ wobei
 
 * `values` enthält alle zu verfolgenden Werte.
 * `collect` ist optional und gibt ein Array mit den Ereignis- und Objektdaten zurück.
-* `options` ist optional und enthält Linkverfolgungsoptionen wie HTML-Element  `obj` und  ` [defaultLinkType](https://microsite.omniture.com/t2/help/en_US/sc/implement/index.html#linkType)`.
+* `options` ist optional und enthält Linktracking-Optionen wie HTML-Element  `obj` und  ` [defaultLinkType](https://microsite.omniture.com/t2/help/en_US/sc/implement/index.html#linkType)`.
 
-* `componentPath` ist ein notwendiges Attribut und es wird empfohlen,  `<%=resource.getResourceType()%>`
+* `componentPath` ist ein erforderliches Attribut und es wird empfohlen,  `<%=resource.getResourceType()%>`
 
 Beispielsweise verursacht bei folgender Definition das Klicken eines Benutzers auf den Link **Jump to top**, dass die beiden Ereignisse `jumptop` und `headlineclick` ausgelöst werden:
 
@@ -89,13 +88,13 @@ Beispielsweise verursacht bei folgender Definition das Klicken eines Benutzers a
 
 ## Zugreifen auf Werte in ContextHub {#accessing-values-in-the-contexthub}
 
-Die ContextHub JavaScript-API verfügt über eine `getStore(name)`-Funktion, die den angegebenen Store zurückgibt, sofern verfügbar. Der Store verfügt über eine `getItem(key)`-Funktion, die den Wert des angegebenen Schlüssels zurückgibt, sofern verfügbar. Mithilfe der Funktion `getKeys()` können Sie ein Array mit definierten Schlüsseln für den jeweiligen Store abrufen.
+Die ContextHub-JavaScript-API verfügt über eine `getStore(name)`-Funktion, die den angegebenen Store zurückgibt, sofern verfügbar. Der Store verfügt über eine `getItem(key)` -Funktion, die den Wert des angegebenen Schlüssels zurückgibt, sofern verfügbar. Mithilfe der Funktion `getKeys()` können Sie ein Array definierter Schlüssel für den spezifischen Store abrufen.
 
-Sie können über Werteänderungen in einem Speicher benachrichtigt werden, indem Sie eine Funktion mit der Funktion `ContextHub.getStore(name).eventing.on(ContextHub.Constants.EVENT_STORE_UPDATED, handler, selector, triggerForPastEvents)` binden.
+Sie können über Wertänderungen in einem Store benachrichtigt werden, indem Sie eine Funktion mithilfe der Funktion `ContextHub.getStore(name).eventing.on(ContextHub.Constants.EVENT_STORE_UPDATED, handler, selector, triggerForPastEvents)` binden.
 
-Die beste Art, über die anfängliche Verfügbarkeit des ContextHub informiert zu werden, ist die Funktion `ContextHub.eventing.on(ContextHub.Constants.EVENT_ALL_STORES_READY, handler, selector, triggerForPastEvents);` zu verwenden.
+Die beste Möglichkeit, über die anfängliche Verfügbarkeit von ContextHub informiert zu werden, besteht in der Verwendung der Funktion `ContextHub.eventing.on(ContextHub.Constants.EVENT_ALL_STORES_READY, handler, selector, triggerForPastEvents);` .
 
-**Zusätzliche Ereignis für ContextHub:**
+**Zusätzliche Ereignisse für ContextHub:**
 
 Alle Speicher bereit:
 
@@ -107,7 +106,7 @@ Speicherspezifisch:
 
 >[!NOTE]
 >
->Siehe auch die vollständige [ContextHub-API-Referenz](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference)
+>Weitere Informationen finden Sie in der vollständigen [ContextHub-API-Referenz](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference)
 
 ## Hinzufügen von Datensatzrückrufen {#adding-record-callbacks}
 
