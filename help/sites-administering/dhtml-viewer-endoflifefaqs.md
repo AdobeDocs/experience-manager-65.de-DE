@@ -1,25 +1,24 @@
 ---
-title: DHTML Viewer-Ende
-description: Ab dem 31. Januar 2014 endet die DHTML-Viewer-Plattform offiziell.
+title: Einstellung der Unterstützung für DHTML-Viewer
+description: Am 31. Januar 2014 wurde die DHTML-Viewer-Plattform offiziell eingestellt.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
-translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+exl-id: 06b74770-1f96-4f6b-98c0-afef7000e42b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '42'
-ht-degree: 14%
+ht-degree: 100%
 
 ---
 
+# Einstellung der Unterstützung für DHTML-Viewer {#dhtml-viewer-end-of-life}
 
-# DHTML Viewer-Ende der Lebensdauer {#dhtml-viewer-end-of-life}
+Am 31. Januar 2014 wurde die DHTML-Viewer-Plattform offiziell eingestellt.
 
-Ab dem 31. Januar 2014 endet die DHTML-Viewer-Plattform offiziell.
-
-Die neuesten unterstützten Viewer finden Sie im Dynamic Media Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=de).[
+Die neuesten unterstützten Viewer finden Sie im [Dynamic Media Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=de).
 
 <!-- OBSOLETE CONTENT **What is the change?**
 
