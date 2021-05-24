@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: e7b6b9ee-d807-4eb0-8e96-75ca1e66a4e4
-translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+exl-id: 4e6f452d-0251-46f3-ba29-1bd85cda73a6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 89%
 
 ---
-
 
 # Erstellen und Verarbeiten von Aufträgen für die Abladung{#creating-and-consuming-jobs-for-offloading}
 
@@ -24,7 +23,7 @@ Die Apache Sling Discovery-Funktion stellt eine Java-API bereit, die das Erstell
 
 Weitere Informationen zum Erstellen von Abladetopologien und zum Konfigurieren der Themenverarbeitung finden Sie unter [Abladen von Aufträgen](/help/sites-deploying/offloading.md).
 
-## Verarbeiten von Auftragsnutzlasten {#handling-job-payloads}
+## Verarbeiten von Auftragsnutzlasten  {#handling-job-payloads}
 
 Das Abladungs-Framework definiert zwei Auftragseigenschaften zum Identifizieren der Auftragsnutzlast. Die Replikationsagenten zur Abladung ziehen diese Eigenschaften heran, um die Ressourcen für die Replikation der Instanzen in der Topologie zu identifizieren:
 
@@ -44,7 +43,7 @@ Erstellen Sie einen Client, der die Methode „JobManager.addJob“ aufruft, um 
 
 * Thema: Das Auftragsthema.
 * Name: (Optional)
-* Eigenschaftenzuordnung: Ein `Map<String, Object>`-Objekt, das eine beliebige Anzahl von Eigenschaften enthält, z. B. die Payload-Pfade für die Eingabe und die Ausgabe. Dieses Zuordnungsobjekt ist für das JobConsumer-Objekt verfügbar, das den Auftrag ausführt.
+* Eigenschaftenzuordnung: Ein `Map<String, Object>` -Objekt, das eine beliebige Anzahl von Eigenschaften enthält, wie z. B. die Pfade der Eingabenutzlast und die Payload-Ausgabepfade. Dieses Zuordnungsobjekt ist für das JobConsumer-Objekt verfügbar, das den Auftrag ausführt.
 
 Der Dienst im folgenden Beispiel erstellt einen Auftrag für ein bestimmtes Thema und einen bestimmten Nutzlastpfad.
 
@@ -104,7 +103,7 @@ Das Protokoll enthält die folgende Meldung, wenn JobGeneratorImpl.createJob fü
 
 Um Aufträge zu verarbeiten, entwickeln Sie einen OSGi-Dienst, der die Schnittstelle `org.apache.sling.event.jobs.consumer.JobConsumer` implementiert. Identifizieren Sie das zu verarbeitende Thema mithilfe der Eigenschaft `JobConsumer.PROPERTY_TOPICS`.
 
-Im folgenden Beispiel wird die JobConsumer-Implementierung mit dem `com/adobe/example/offloading`-Thema registriert. Der JobConsumer-Dienst legt einfach den Wert für die Eigenschaft „Consumed“ des Nutzlast-Inhaltknotens auf „true“ fest.
+Die folgende Beispielimplementierung JobConsumer registriert sich beim `com/adobe/example/offloading` -Thema. Der JobConsumer-Dienst legt einfach den Wert für die Eigenschaft „Consumed“ des Nutzlast-Inhaltknotens auf „true“ fest.
 
 ```java
 package com.adobe.example.offloading;
@@ -217,4 +216,3 @@ Für die vorherigen Beispiele sind auch die folgenden Abhängigkeitsdefinitionen
    <scope>provided</scope>
 </dependency>
 ```
-
