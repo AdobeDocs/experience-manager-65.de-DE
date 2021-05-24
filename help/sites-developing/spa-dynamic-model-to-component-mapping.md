@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 8b4b0afc-8534-4010-8f34-cb10475a8e79
-translation-type: tm+mt
-source-git-commit: 4c9a0bd73e8d87d3869c6a133f5d1049f8430cd1
+exl-id: 5b2ccac0-bf1d-4f06-8743-7fce6fb68378
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 85%
 
 ---
-
 
 # Zuordnung dynamischer Modelle zu Komponenten für SPAs{#dynamic-model-to-component-mapping-for-spas}
 
@@ -24,7 +23,7 @@ In diesem Dokument wird beschrieben, wie die Zuordnung des dynamischen Modells z
 
 >[!NOTE]
 >
->Der SPA Editor ist die empfohlene Lösung für Projekte, bei denen SPA Framework-basiertes clientseitiges Rendering (z.B. React oder Angular) erforderlich ist.
+>Der SPA Editor ist die empfohlene Lösung für Projekte, die SPA Framework-basiertes Client-seitiges Rendering erfordern (z. B. React oder Angular).
 
 ## ComponentMapping-Modul {#componentmapping-module}
 
@@ -50,11 +49,10 @@ Single Page Applications, die das JavaScript SPA SDK für AEM nutzen, sind model
 Jede Komponente wird mit den Funktionen von [ `ModelProvider`](/help/sites-developing/spa-blueprint.md#the-model-provider) erweitert. Die Initialisierung hat daher die folgende allgemeine Form:
 
 1. Jeder Modellanbieter initialisiert sich selbst und wartet auf Änderungen, die an dem Modell vorgenommen wurden, das seiner inneren Komponente entspricht.
-1. [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) muss initialisiert werden, wie durch den [Initialisierungsfluss](/help/sites-developing/spa-blueprint.md) dargestellt.
+1. Der [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) muss entsprechend dem [Initialisierungsfluss](/help/sites-developing/spa-blueprint.md) initialisiert werden.
 
 1. Nach dem Speichern gibt der Seitenmodell-Manager das vollständige Modell der App zurück.
 1. Dieses Modell wird dann an die Frontend-Stamm-[Container](/help/sites-developing/spa-blueprint.md#container)-Komponente der App übergeben.
 1. Teile des Modells werden schließlich auf jede einzelne untergeordnete Komponente übertragen.
 
 ![app_model_initialization](assets/app_model_initialization.png)
-
