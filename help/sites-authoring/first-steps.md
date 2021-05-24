@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 85ebc05d-ce45-4bbb-b9cc-b21810d0d877
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 38ef8fc8d80009c8ca79aca9e45cf10bd70e1f1e
+exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 93%
 
 ---
-
 
 # Erste Schritte für Autoren{#first-steps-for-authors}
 
@@ -26,7 +25,7 @@ In diesem Abschnitt finden Sie einen Überblick über die wichtigsten Funktionen
 Er deckt folgende Themen ab:
 
 * [Erste Schritte](#getting-started)\
-   Detaillierte Darstellung der grundlegenden Reihenfolge der Ereignis, die Sie zum Erstellen und Veröffentlichen der ersten Seite benötigen.
+   Details zur grundlegenden Ereignisabfolge, die Sie zum Erstellen und Veröffentlichen Ihrer ersten Seite benötigen.
 
 * [Weitere Aktionen](#further-actions)\
    Im Anschluss an die vielen anderen Aktionen, die Sie beim Authoring verwenden können.
@@ -43,7 +42,7 @@ Der Inhalt Ihrer Website wird in einer Baumstruktur archiviert. Wenn Sie eine Se
 
 Vor der Bearbeitung müssen Sie [eine neue Seite erstellen](/help/sites-authoring/managing-pages.md#creating-a-new-page).
 
-### Öffnen einer Seite {#opening-a-page}
+### Öffnen einer Seite  {#opening-a-page}
 
 Bei vielen Aktionen, wie beim Bearbeiten, müssen Sie [eine Seite öffnen](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 
@@ -58,9 +57,9 @@ Unabhängig davon, ob Ihre Instanz bereits über vorhandene Seiten verfügt oder
 
 * [Rückgängigmachen und Wiederholen von Seitenbearbeitungen](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)
 * [Verwenden des Vorschaumodus](/help/sites-authoring/editing-content.md#preview-mode) (um die Darstellung der Seite bei der Veröffentlichung zu prüfen)
-* [Sperren einer Seite](/help/sites-authoring/editing-content.md#locking-a-page)
+* [Sperren einer Seite  ](/help/sites-authoring/editing-content.md#locking-a-page)
 
-### Veröffentlichen einer Seite  {#publishing-a-page}
+### Veröffentlichen einer Seite {#publishing-a-page}
 
 Wenn Sie die Bearbeitung der Seite abgeschlossen haben, möchten Sie [den Inhalt sicherlich veröffentlichen (bzw. aktivieren)](/help/sites-authoring/publishing-pages.md#main-pars-title-10), damit er für Besucher Ihrer Website verfügbar ist.
 
