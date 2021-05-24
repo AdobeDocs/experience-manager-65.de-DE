@@ -21,23 +21,23 @@ ht-degree: 70%
 
 In diesem Abschnitt wird die Vorgehensweise zum Aktualisieren von AEM für Anwendungsserverinstallationen beschrieben.
 
-Alle Beispiele in diesem Vorgang verwenden Tomcat als Anwendungsserver und implizieren, dass Sie bereits eine Arbeitsversion von AEM bereitgestellt haben. In dieser Anleitung wird die Aktualisierung von Version **AEM 6.4 auf 6.5** beschrieben.
+In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungsserver verwendet, was bedeutet, dass Sie bereits über eine funktionierende Version von AEM verfügen. In dieser Anleitung wird die Aktualisierung von Version **AEM 6.4 auf 6.5** beschrieben.
 
-1. Zuerst, Beginn TomCat. In den meisten Fällen können Sie dies tun, indem Sie das Startskript `./catalina.sh` des Beginns ausführen, indem Sie den folgenden Befehl aus dem Terminal ausführen:
+1. Beginne zuerst TomCat. In den meisten Fällen können Sie dies tun, indem Sie das Startskript `./catalina.sh` ausführen, indem Sie diesen Befehl über das Terminal ausführen:
 
    ```shell
    $CATALINA_HOME/bin/catalina.sh start
    ```
 
-1. Wenn AEM 6.4 bereits bereitgestellt ist, überprüfen Sie, ob die Pakete korrekt funktionieren, indem Sie auf Folgendes zugreifen:
+1. Wenn AEM 6.4 bereits bereitgestellt ist, überprüfen Sie, ob die Bundles ordnungsgemäß funktionieren, indem Sie auf Folgendes zugreifen:
 
    ```shell
    https://<serveraddress:port>/cq/system/console/bundles
    ```
 
-1. Lösen Sie anschließend AEM 6.4 auf. Dies kann über den TomCat App Manager (`http://serveraddress:serverport/manager/html`) erfolgen.
+1. Lösen Sie als Nächstes AEM 6.4 die Bereitstellung auf. Dies kann über den TomCat App Manager (`http://serveraddress:serverport/manager/html`) erfolgen.
 
-1. Migrieren Sie das Repository nun mithilfe des crx2oak-Migrationstools. Laden Sie dazu die neueste Version von crx2oak von [dieser Position](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak) herunter.
+1. Migrieren Sie das Repository nun mithilfe des crx2oak-Migrationstools. Laden Sie dazu die neueste Version von crx2oak von [diesem Speicherort](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak) herunter.
 
    ```shell
    SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -XX:MaxPermSize=2048M -jar crx2oak.jar --load-profile segment-fds
@@ -45,7 +45,7 @@ Alle Beispiele in diesem Vorgang verwenden Tomcat als Anwendungsserver und impli
 
 1. Löschen Sie die erforderlichen Eigenschaften in der Datei sling.properties folgendermaßen:
 
-   1. Öffnen Sie die Datei unter `crx-quickstart/launchpad/sling.properties`
+   1. Öffnen Sie die Datei unter `crx-quickstart/launchpad/sling.properties` .
    1. Entfernen Sie die folgenden Eigenschaften und speichern Sie die Datei:
 
       1. `sling.installer.dir`
@@ -83,7 +83,7 @@ Alle Beispiele in diesem Vorgang verwenden Tomcat als Anwendungsserver und impli
 
 1. Bearbeiten Sie die Konfigurationsdateien, damit sie einsatzbereit sind. Gehen Sie dazu folgendermaßen vor:
 
-   * hinzufügen Sie die folgende Zeile zu `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`:
+   * Fügen Sie `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` die folgende Zeile hinzu:
 
       `customBlobStore=true`
 
@@ -106,7 +106,7 @@ Alle Beispiele in diesem Vorgang verwenden Tomcat als Anwendungsserver und impli
    <param-value >author</param-value>
    ```
 
-1. Ändern Sie den obigen Autorenwert und legen Sie die Ausführungsmodi wie folgt fest: `author,crx3,crx3tar`. Der letzte Codeblock sollte wie folgt aussehen:
+1. Ändern Sie den obigen Autorenwert und legen Sie die Ausführungsmodi auf Folgendes fest: `author,crx3,crx3tar`. Der endgültige Codeblock sollte wie folgt aussehen:
 
    ```
    <init-param>
@@ -123,4 +123,4 @@ Alle Beispiele in diesem Vorgang verwenden Tomcat als Anwendungsserver und impli
    jar cvf aem65.war
    ```
 
-1. Stellen Sie schließlich die neue Kriegsdatei in TomCat bereit.
+1. Stellen Sie schließlich die neue War-Datei in TomCat bereit.
