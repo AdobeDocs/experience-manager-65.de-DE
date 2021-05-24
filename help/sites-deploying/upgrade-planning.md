@@ -10,15 +10,14 @@ content-type: reference
 topic-tags: upgrading
 discoiquuid: 49210824-ad87-4b6a-9ae8-77dcfe2b5c06
 docset: aem65
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Aktualisieren
+exl-id: 0dea2b3e-fd7c-4811-a04a-6852ffc1e6d6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2448'
 ht-degree: 93%
 
 ---
-
 
 # Planung der Aktualisierung{#planning-your-upgrade}
 
@@ -30,7 +29,7 @@ Dieser Leitfaden unterstützt Sie bei der Formulierung von klaren Zielen, Phasen
 
 Der Aktualisierungsprozess für AEM erfordert sorgfältig ausgeführte Planungs-, Analyse- und Durchführungsphasen, für die jeweils wichtige Ergebnisse festgelegt werden müssen.
 
-Beachten Sie, dass es möglich ist, direkt von AEM Version 6.0 und bis zu 6.5 zu aktualisieren. Kunden, die 5.6.x und höher ausführen, müssen zuerst auf Version 6.0 oder höher aktualisieren, wobei 6.0(SP3) empfohlen wird. Darüber hinaus wird seit 6.3 für den Segment-Knotenspeicher das neue OAK-Segment-TAR-Format verwendet. Eine Repository-Migration in dieses neue Format ist sogar für die Versionen 6.0, 6.1 und 6.2 obligatorisch.
+Beachten Sie, dass ein direktes Upgrade von AEM Version 6.0 und bis zu 6.5 möglich ist. Kunden, die 5.6.x und älter ausführen, müssen ein Upgrade zuerst auf Version 6.0 oder höher durchführen, wobei 6.0 (SP3) empfohlen wird. Darüber hinaus wird seit 6.3 für den Segment-Knotenspeicher das neue OAK-Segment-TAR-Format verwendet. Eine Repository-Migration in dieses neue Format ist sogar für die Versionen 6.0, 6.1 und 6.2 obligatorisch.
 
 >[!CAUTION]
 >
@@ -70,7 +69,7 @@ Nachfolgend finden Sie eine Liste der Bereiche, die von einem typischen AEM-Aktu
   <tr>
    <td>AEM-Komponenten/-Inhalte</td>
    <td>Moderate Auswirkungen</td>
-   <td><code>/libs</code> und <code>/apps</code> sind durch die Aktualisierung einfach zu handhaben, aber <code>/etc</code> erfordert in der Regel eine manuelle Neuanwendung der Anpassungen.</td>
+   <td><code>/libs</code> und <code>/apps</code> sind durch die Aktualisierung einfach zu handhaben, für <code>/etc</code> ist jedoch in der Regel eine manuelle Neuanwendung der Anpassungen erforderlich.</td>
   </tr>
   <tr>
    <td>AEM-Dienste</td>
@@ -92,7 +91,7 @@ Nachfolgend finden Sie eine Liste der Bereiche, die von einem typischen AEM-Aktu
 
 Sie müssen sicherstellen, dass ein unterstütztes Betriebssystem, eine unterstützte Java-Laufzeitumgebung sowie eine unterstützte httpd- und Dispatcher-Version ausgeführt werden. Weitere Informationen finden Sie auf der Seite [Technische Anforderungen für AEM 6.5](/help/sites-deploying/technical-requirements.md). Die Aktualisierung dieser Komponenten muss im Projektplan berücksichtigt werden und sollte vor der AEM-Aktualisierung durchgeführt werden.
 
-## Projektphasen {#project-phases}
+## Projektphasen  {#project-phases}
 
 Mit der Planung und Durchführung einer AEM-Aktualisierung ist ein hoher Arbeitsaufwand verbunden. Um den Arbeitsaufwand besser zu verdeutlichen, haben wir die Planungs- und Durchführungsschritte in separate Phasen unterteilt. In den nachfolgenden Abschnitten resultiert jede Phase in einem Ergebnis, das häufig für eine zukünftige Phase des Projekts genutzt wird.
 
@@ -100,7 +99,7 @@ Mit der Planung und Durchführung einer AEM-Aktualisierung ist ein hoher Arbeits
 
 In jeder neuen Version ist mit potenziellen Änderungen an der Benutzeroberfläche und den Benutzer-Workflows zu rechnen. Außerdem werden neue Funktionen eingeführt, deren Nutzung sich für das Unternehmen als vorteilhaft erweisen kann. Adobe empfiehlt die eingeführten Funktionsänderungen zu überprüfen und einen Schulungsplan für Benutzer zu erstellen, damit diese neue Funktionen effektiv nutzen können.
 
-![unu_beschnitten](assets/unu_cropped.png)
+![unu_cut](assets/unu_cropped.png)
 
 Neue Funktionen in AEM 6.5 finden Sie im [Bereich zu AEM auf adobe.com](/help/release-notes/release-notes.md). Achten Sie vor allem auf Änderungen an Benutzeroberflächen oder Produktfunktionen, die in Ihrem Unternehmen häufig verwendet werden. Wenn Sie sich über die neuen Funktionen informieren, achten Sie auch auf neue Funktionen, die für Ihr Unternehmen von Nutzen sein können. Sobald Sie sich mit den Änderungen in AEM 6.5 vertraut gemacht haben, entwickeln Sie einen Schulungsplan für Ihre Autoren. Hierzu können Sie kostenlos verfügbare Ressourcen wie Videos zu Funktionen des Adobe-Supports oder formelle Schulungen nutzen, die von [Adobe Digital Learning Services](https://www.adobe.com/training.html) angeboten werden.
 
@@ -140,7 +139,7 @@ Sie müssen bei einer Aktualisierung möglicherweise auch andere Komponenten Ihr
 
 #### Überlegungen zur Neustrukturierung des Contents {#content-restructuring-considerations}
 
-Mit AEM werden Änderungen an der Repository-Struktur eingeführt, mit denen Upgrades noch nahtloser durchgeführt werden können. Diese Änderungen erfordern, dass Inhalte aus dem Ordner /etc in Ordner wie /libs, /apps und /content verschoben werden – je nachdem, ob Adobe oder der Kunde Eigentümer des Inhalts ist – um die Wahrscheinlichkeit zu verringern, dass Inhalte durch Aktualisierungen überschrieben werden. Die Repository-Restrukturierung wurde so durchgeführt, dass zum Zeitpunkt der 6.5-Aktualisierung keine Codeänderungen erforderlich sind. Es wird jedoch empfohlen, die Details unter [Repository Restructuring in AEM](/help/sites-deploying/repository-restructuring.md) während der Planung einer Aktualisierung zu überprüfen.
+Mit AEM werden Änderungen an der Repository-Struktur eingeführt, mit denen Upgrades noch nahtloser durchgeführt werden können. Diese Änderungen erfordern, dass Inhalte aus dem Ordner /etc in Ordner wie /libs, /apps und /content verschoben werden – je nachdem, ob Adobe oder der Kunde Eigentümer des Inhalts ist – um die Wahrscheinlichkeit zu verringern, dass Inhalte durch Aktualisierungen überschrieben werden. Die Repository-Neustrukturierung wurde so durchgeführt, dass zum Zeitpunkt der Aktualisierung von 6.5 keine Codeänderungen erforderlich sind. Es wird jedoch empfohlen, die Details unter [Repository-Neustrukturierung in AEM](/help/sites-deploying/repository-restructuring.md) während der Planung einer Aktualisierung zu überprüfen.
 
 ### Bewertung der Komplexität der Aktualisierung {#assessing-upgrade-complexity}
 
@@ -152,7 +151,7 @@ Nach dieser anfänglichen Bewertung kann in einem umfangreicheren nächsten Schr
 
 ![trei_cut](assets/trei_cropped.png)
 
-Der kürzlich eingeführte Musterdetektor liefert Ihnen eine recht genaue Schätzung dessen, was Sie während einer Aktualisierung in den meisten Fällen erwarten können. Bei komplexeren Anpassungen und Bereitstellungen mit inkompatiblen Änderungen können Sie jedoch eine Entwicklungsinstanz gemäß den Anweisungen unter [Durchführen einer ersetzenden Aktualisierung](/help/sites-deploying/in-place-upgrade.md) auf AEM 6.5 aktualisieren. Führen Sie nach der Aktualisierung eine Reihe Feuerproben der hohen Stufe für die Umgebung durch. Sie dienen nicht dazu, das Nutzungsszenario umfassend zu testen und eine formelle Liste mit Defekten zu erstellen. Vielmehr soll der geschätzte erforderliche Arbeitsaufwand für die Aktualisierung des Codes ermittelt werden, um die Kompatibilität mit Version 6.5 sicherzustellen. Wenn die [Mustererkennung](/help/sites-deploying/pattern-detector.md) mit den Änderungen an der Architektur kombiniert wird, die im vorherigen Abschnitt beschrieben wurden, liefert dies eine grobe Schätzung, mit deren Hilfe das Projektleiterteam die Aktualisierung planen kann.
+Der kürzlich eingeführte Musterdetektor liefert Ihnen eine recht genaue Schätzung dessen, was Sie während einer Aktualisierung in den meisten Fällen erwarten können. Für komplexere Anpassungen und Bereitstellungen mit inkompatiblen Änderungen können Sie jedoch eine Entwicklungsinstanz gemäß den Anweisungen unter [Durchführen einer ersetzenden Aktualisierung](/help/sites-deploying/in-place-upgrade.md) auf AEM 6.5 aktualisieren. Führen Sie nach der Aktualisierung eine Reihe Feuerproben der hohen Stufe für die Umgebung durch. Sie dienen nicht dazu, das Nutzungsszenario umfassend zu testen und eine formelle Liste mit Defekten zu erstellen. Vielmehr soll der geschätzte erforderliche Arbeitsaufwand für die Aktualisierung des Codes ermittelt werden, um die Kompatibilität mit Version 6.5 sicherzustellen. Wenn die [Mustererkennung](/help/sites-deploying/pattern-detector.md) mit den Änderungen an der Architektur kombiniert wird, die im vorherigen Abschnitt beschrieben wurden, liefert dies eine grobe Schätzung, mit deren Hilfe das Projektleiterteam die Aktualisierung planen kann.
 
 ### Erstellen des Runbooks für die Aktualisierung und das Rollback {#building-the-upgrade-and-rollback-runbook}
 
@@ -181,7 +180,7 @@ Ein umfassender Projektplan sollte folgende Punkte beinhalten:
 
 ### Entwicklung und Qualitätssicherung (QS)  {#performing-development-and-qa}
 
-Wir haben Verfahren für das [Aktualisieren von Code und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md) bereitgestellt, damit diese mit AEM 6.5 kompatibel sind. Wenn dieser iterative Prozess ausgeführt wird, sollten nach Bedarf Änderungen am Runbook vorgenommen werden. Weitere Informationen dazu, wie Ihre Anpassungen in den meisten Fällen abwärtskompatibel bleiben können, ohne dass die Entwicklung unmittelbar nach der Aktualisierung erforderlich ist, finden Sie unter [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md).
+Wir haben Verfahren für das [Aktualisieren von Code und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md) bereitgestellt, damit diese mit AEM 6.5 kompatibel sind. Wenn dieser iterative Prozess ausgeführt wird, sollten nach Bedarf Änderungen am Runbook vorgenommen werden. Siehe auch [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md) für Informationen dazu, wie Ihre Anpassungen in den meisten Fällen abwärtskompatibel bleiben können, ohne dass sofort nach der Aktualisierung eine Entwicklung erforderlich ist.
 
 ![patru_cut](assets/patru_cropped.png)
 
