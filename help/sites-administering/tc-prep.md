@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 8bd67d71-bcb7-4ca0-9751-3ff3ee054011
-feature: Language Copy
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Sprachkopie
+exl-id: 81978733-89a6-4436-bcf1-4bde962ed54f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '694'
-ht-degree: 88%
+ht-degree: 97%
 
 ---
-
 
 # Vorbereiten von Inhalten für die Übersetzung{#preparing-content-for-translation}
 
@@ -37,29 +36,29 @@ Die Beispiel-Geometrixx-Website umfasst mehrere Sprachzweige und weist die folge
              |- zh
 ```
 
-Jeder Sprachzweig einer Website wird als Sprachkopie bezeichnet. Die Stammseite einer Sprachkopie, auch als Sprachstamm bezeichnet, identifiziert die Sprache des Inhalts in der Sprachkopie. Zum Beispiel ist `/content/geometrixx/fr` der Sprachstamm für die französische Sprachkopie. Sprachkopien müssen einen [korrekt konfigurierten Sprachstamm](/help/sites-administering/tc-prep.md#creating-a-language-root) verwenden, damit die korrekte Sprache angesprochen wird, wenn Übersetzungen von einer Quell-Website durchgeführt werden.
+Jeder Sprachzweig einer Website wird als Sprachkopie bezeichnet. Die Stammseite einer Sprachkopie, auch als Sprachstamm bezeichnet, identifiziert die Sprache des Inhalts in der Sprachkopie. Beispielsweise stellt `/content/geometrixx/fr` den Sprachstamm der französischen Sprachkopie dar. Sprachkopien müssen einen [korrekt konfigurierten Sprachstamm](/help/sites-administering/tc-prep.md#creating-a-language-root) verwenden, damit die korrekte Sprache angesprochen wird, wenn Übersetzungen von einer Quell-Website durchgeführt werden.
 
 Die Sprachkopie, für die Sie ursprünglich Inhalte verfassen, ist der Sprach-Master. Die Sprach-Master-Vorlage ist die Quelle, die in andere Sprachen übersetzt wird.
 
 Führen Sie die folgenden Schritte aus, um Ihre Website für die Übersetzung vorzubereiten:
 
-1. Erstellen Sie den Sprachstamm für Ihren Sprach-Master. Der Sprachstamm der englischen Beispiel-Geometrixx-Website ist z. B. /content/geometrixx/en. Stellen Sie sicher, dass der Sprachstamm gemäß den Informationen unter [Erstellen eines Sprachstamms](/help/sites-administering/tc-prep.md#creating-a-language-root) richtig konfiguriert ist.
+1. Erstellen Sie den Sprachstamm für Ihren Sprach-Master. Der Sprachstamm der englischen Beispiel-Geometrixx-Website ist z. B. /content/geometrixx/en. Stellen Sie sicher, dass der Sprachstamm entsprechend den Informationen unter [Erstellen eines Sprachstamms](/help/sites-administering/tc-prep.md#creating-a-language-root) konfiguriert ist.
 1. Verfassen Sie den Inhalt des Sprach-Masters.
 1. Erstellen Sie den Sprachstamm jeder Sprachkopie für die Website. Der Sprachstamm der französischen Beispiel-Geometrixx-Website ist z. B. /content/geometrixx/fr.
 
-Wenn Sie die Inhalte für die Übersetzung vorbereitet haben, können Sie automatisch fehlende Seiten in den Sprachkopien und zugehörigen Übersetzungsprojekten erstellen. (Siehe [Erstellen eines Übersetzungsprojekts](/help/sites-administering/tc-manage.md).) Eine Übersicht über den Übersetzungsprozess für Inhalte in AEM finden Sie unter [Übersetzung von Inhalten für mehrsprachige Websites](/help/sites-administering/translation.md).
+Wenn Sie die Inhalte für die Übersetzung vorbereitet haben, können Sie automatisch fehlende Seiten in den Sprachkopien und zugehörigen Übersetzungsprojekten erstellen. (Siehe [Erstellen eines Übersetzungsprojekts](/help/sites-administering/tc-manage.md).) Einen Überblick über den Prozess der Inhaltsübersetzung in AEM finden Sie unter [Übersetzen von Inhalten für mehrsprachige Websites](/help/sites-administering/translation.md).
 
 ## Erstellen eines Sprachstamms {#creating-a-language-root}
 
 Erstellen Sie einen Sprachstamm als Stammseite einer Sprachkopie, die die Sprache der Inhalte identifiziert. Nachdem Sie den Sprachstamm erstellt haben, können Sie Übersetzungsprojekte erstellen, die die Sprachkopie umfassen.
 
-Um den Sprachstamm zu erstellen, erstellen Sie eine Seite und verwenden Sie einen ISO-Sprachcode als Wert für die Eigenschaft „Name“. Der Sprachcode muss eines der folgenden Formate aufweisen:
+Um den Sprachstamm zu erstellen, erstellen Sie eine Seite und verwenden Sie einen ISO-Sprachcode als Wert für die Eigenschaft Name. Der Sprachcode muss eines der folgenden Formate aufweisen:
 
 * `<language-code>`Der unterstützte Sprachcode ist ein Code mit zwei Buchstaben gemäß ISO-639-1, zum Beispiel `en`.
 
-* `<language-code>_<country-code>` oder  `<language-code>-<country-code>`der unterstützte Ländercode ist ein aus zwei Buchstaben bestehender Code in Kleinbuchstaben oder Großbuchstaben, wie er in ISO 3166 definiert ist, z. B.  `en_US`,  `en_us`,  `en_GB`,  `en-gb`.
+* `<language-code>_<country-code>` oder  `<language-code>-<country-code>`Der unterstützte Ländercode ist ein aus zwei Buchstaben bestehender Code mit Kleinbuchstaben oder Großbuchstaben gemäß ISO 3166, z. B.  `en_US`,  `en_us`,  `en_GB`,  `en-gb`.
 
-Sie können jedes dieser Formate verwenden, passend zur Struktur Ihrer globalen Website.  Beispielsweise verfügt die Stammseite der französischen Sprachkopie der Geometrixx-Website über die „Name“-Eigenschaft `fr`. Beachten Sie, dass die Eigenschaft „Name“ als Name des Seitenknotens im Repository verwendet wird und daher den Pfad der Seite bestimmt. (http://localhost:4502/content/geometrixx/fr.html)
+Sie können jedes dieser Formate verwenden, passend zur Struktur Ihrer globalen Website.  Beispielsweise verfügt die Stammseite der französischen Sprachkopie der Geometrixx-Website über die „Name“-Eigenschaft `fr`. Beachten Sie, dass die Eigenschaft Name als Name des Seitenknotens im Repository verwendet wird und daher den Pfad der Seite bestimmt. (http://localhost:4502/content/geometrixx/fr.html)
 
 Im folgenden Verfahren wird die Touch-optimierte Benutzeroberfläche genutzt, um eine Sprachkopie einer Website zu erstellen. Die entsprechenden Anleitungen für die klassische Benutzeroberfläche finden Sie unter [Erstellen eines Sprachstamms über die klassische Benutzeroberfläche](/help/sites-administering/tc-lroot-classic.md).
 
@@ -72,14 +71,14 @@ Im folgenden Verfahren wird die Touch-optimierte Benutzeroberfläche genutzt, um
 
    ![chlimage_1-21](assets/chlimage_1-21a.png)
 
-1. Wählen Sie die Seitenvorlage aus und klicken oder tippen Sie auf „Weiter“.
-1. Geben Sie im Feld Name den Ländercode im Format `<language-code>` oder `<language-code>_<country-code>` ein, z. B. `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Geben Sie einen Titel für die Seite ein.
+1. Wählen Sie die Seitenvorlage aus und klicken oder tippen Sie auf Weiter.
+1. Geben Sie in den Feldtyp Name den Ländercode im Format `<language-code>` oder `<language-code>_<country-code>` ein, z. B. `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Geben Sie einen Titel für die Seite ein.
 
    ![chlimage_1-22](assets/chlimage_1-22a.png)
 
 1. Klicken oder tippen Sie auf Erstellen. Klicken oder tippen Sie im Bestätigungsdialogfeld auf **Fertig**, um zur Sites-Konsole zurückzukehren, oder auf **Öffnen**, um die Sprachkopie zu öffnen.
 
-## Anzeigen des Status der Sprachstämme {#seeing-the-status-of-language-roots}
+## Anzeigen des Status der Sprachstämme  {#seeing-the-status-of-language-roots}
 
 Die Touch-optimierte Benutzeroberfläche bietet den Bereich „Verweise“, der eine Liste der erstellten Sprachstämme anzeigt.
 
@@ -92,4 +91,3 @@ Das folgende Verfahren verwendet die Touch-optimierte Benutzeroberfläche, um de
    ![chlimage_1-24](assets/chlimage_1-24a.png)
 
 1. Klicken oder tippen Sie im Bereich „Verweise“ auf **Sprachkopien**. Im Bereich „Sprachkopien“ werden die Sprachkopien der Website angezeigt.
-
