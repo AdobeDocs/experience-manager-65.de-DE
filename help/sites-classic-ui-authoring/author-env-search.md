@@ -10,16 +10,15 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8d32960c-47c3-4e92-b02e-ad4d8fea7b2d
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
+exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 87%
 
 ---
 
-
-# Suche{#searching}
+# Suchen{#searching}
 
 Die Autorenumgebung von AEM bietet abhängig vom Ressourcentyp verschiedene Möglichkeiten zur Inhaltssuche.
 
@@ -61,7 +60,7 @@ Starten Sie die Suche, indem Sie unten im Bereich auf **Suchen** klicken. Klicke
 
 ## Filter {#filter}
 
-An verschiedenen Stellen können Sie einen Filter setzen (oder löschen), um die Ansicht weiter zu spezialisieren und zu verfeinern:
+An verschiedenen Positionen können Sie einen Filter setzen (oder löschen), um die Ansicht weiter zu spezialisieren und zu verfeinern:
 
 ![chlimage_1-102](assets/chlimage_1-102.png)
 
@@ -82,7 +81,7 @@ In der Konsole **Websites** ermöglicht Ihnen die Menüoption **Suchen und Erset
    * Angabe, ob Groß -und Kleinschreibung beachtet werden sollen
    * Angabe, ob nur ganze Wörter gefunden werden sollen (andernfalls werden auch Wortteile von der Suche erfasst)
 
-   Klicken Sie auf **Vorschau** Listen, in denen der Begriff gefunden wurde. Sie können bestimmte zu ersetzende Instanzen auswählen/löschen:
+   Wenn Sie auf **Vorschau** klicken, wird angezeigt, wo der Begriff gefunden wurde. Sie können bestimmte Instanzen auswählen/löschen, die ersetzt werden sollen:
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
@@ -95,7 +94,7 @@ Der Standardbereich für das Servlet „Suchen und Ersetzen“ deckt die folgend
 * `jcr:text`
 * `text`
 
-Der Umfang kann mithilfe der Apache Felix Web Management Console geändert werden (z. B. unter `https://localhost:4502/system/console/configMgr`). Wählen Sie `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` und konfigurieren Sie den Bereich nach Bedarf.
+Der Umfang kann mithilfe der Apache Felix Web Management Console geändert werden (z. B. unter `https://localhost:4502/system/console/configMgr`). Wählen Sie `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` aus und konfigurieren Sie den Umfang nach Bedarf.
 
 >[!NOTE]
 >
