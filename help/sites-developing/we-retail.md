@@ -10,7 +10,6 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: f50150af-deff-4c29-bfe0-1cfc67b29d51
 exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '779'
@@ -58,7 +57,7 @@ We.Retail wird als AEM-Beispielinhalte bereitgestellt. Um die Inhalte zu verwend
 
 ### Neueste Version {#latest-version}
 
-Obwohl We.Retail mit dem der AEM-Version bereitgestellt wird, werden die Inhalte und ihre Funktionen ggf. nach deren Veröffentlichung aktualisiert. Daher ist es möglich, [die neueste Version von GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) und [upload](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) und [install](/help/sites-administering/package-manager.md#installing-packages) als Paket auf Ihrer AEM Instanz herunterzuladen.
+Obwohl We.Retail mit dem der AEM-Version bereitgestellt wird, werden die Inhalte und ihre Funktionen ggf. nach deren Veröffentlichung aktualisiert. Daher ist es möglich, [die neueste Version von GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) herunterzuladen und [Upload](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) und [Installation](/help/sites-administering/package-manager.md#installing-packages) als Paket auf Ihrer AEM-Instanz herunterzuladen.
 
 ### Erste Schritte {#first-steps}
 
@@ -73,7 +72,7 @@ Geometrixx und seine vielen Varianten dienten als Beispielinhalte in früheren V
 
 We.Retail ist technisch robuster und nutzt die neueste AEM-Technologie, um mehr Flexibilität und Skalierbarkeit zu bieten und gleichzeitig die neuesten Funktionen des Produkts zu demonstrieren.
 
-### Funktionsvergleich {#feature-comparison}
+### Funktionsvergleich  {#feature-comparison}
 
 Die folgende Tabelle stellt einen Überblick über die wichtigsten Funktionen bereit, die in We.Retail im Vergleich zu Geometrixx verfügbar sind.
 
@@ -82,7 +81,7 @@ Die folgende Tabelle stellt einen Überblick über die wichtigsten Funktionen be
 
 | **Funktion** | **We.Retail** | **Geometrixx** |
 |---|---|---|
-| Globalisierte Site-Struktur | Sprachmaster live kopiert in länderspezifische Sites | Nicht verfügbar |
+| Globalisierte Site-Struktur | Sprach-Master werden live in länderspezifische Sites kopiert | Nicht verfügbar |
 | Inhaltsfragmente | Verfügbar | Nicht verfügbar |
 | Experience Fragments | Verfügbar | Nicht verfügbar |
 | Responsives Layout   | Für alle Seiten | Nur Geometrixx Media |
@@ -109,12 +108,12 @@ CODE AUF GITHUB
 
 Den Code dieser Seite finden Sie auf GitHub.
 
-* [Open aem-sample-we-trading project on GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
+* [Öffnen Sie das Projekt aem-sample-we-retail auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/archive/master.zip) herunter.
 
 Die neueste Version kann auch [direkt als installierbares Paket heruntergeladen](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases/latest) werden.
 
-Sollten Sie Probleme haben, schreiben Sie bitte [GitHub-Probleme](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues).
+Falls Probleme auftreten, führen Sie bitte [GitHub-Probleme](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues) aus.
 
 Mit [Pull-Requests](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/pulls) können Sie weiter ins Detail gehen und eigene Beiträge veröffentlichen.
 
@@ -122,4 +121,4 @@ Mit [Pull-Requests](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retai
 
 Vorschau der We.Retail-Begrüßungsseite:
 
-![screencapture-localhost-4502-editor-html-content-we-retail-us-html-2018-08-17-14_33_32](assets/screencapture-localhost-4502-editor-html-content-we-retail-us-en-html-2018-08-17-14_33_32.png)
+![screenCapture-localhost-4502-editor-html-content-we-retail-us-en-html-2018-08-17-14_33_32](assets/screencapture-localhost-4502-editor-html-content-we-retail-us-en-html-2018-08-17-14_33_32.png)
