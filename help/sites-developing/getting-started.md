@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: introduction
 discoiquuid: 95346ce1-84b7-4bd1-a1e2-6a803139dc69
 docset: aem65
-translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+exl-id: 8314d7fe-0a46-453d-9592-f1bcd8c8f10a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 88%
 
 ---
-
 
 # Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial {#getting-started-developing-aem-sites-wknd-tutorial}
 
@@ -47,4 +46,4 @@ Wir empfehlen Ihnen, das Tutorial durchzugehen, bevor Sie sich mit diesen Konzep
 
 ## Nächste Schritte {#next-steps}
 
-Wenn Sie das [Tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html) abgeschlossen haben, sollten Sie das Dokument [AEM Kernkonzepte](/help/sites-developing/the-basics.md) überprüfen, um ein besseres Verständnis einiger der zugrunde liegenden Technologien und Entwicklungsparadigmen von AEM zu erhalten.
+Wenn Sie das [Tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html) abgeschlossen haben, sollten Sie das Dokument [AEM Core Concepts](/help/sites-developing/the-basics.md) lesen, um ein besseres Verständnis der zugrunde liegenden Technologien und Entwicklungsparadigmen von AEM zu erhalten.
