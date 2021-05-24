@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 6fdce35d-2709-41cc-87fb-27a4b867e960
-translation-type: tm+mt
-source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
+exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1175'
 ht-degree: 66%
 
 ---
-
 
 # Anwendungsserver-Installation{#application-server-install}
 
@@ -38,7 +37,7 @@ Lesen Sie die entsprechende Anwendungsserverdokumentation, um weitere Informatio
 
 >[!NOTE]
 >
->Wenn Sie Dynamic Media in einer WAR-Bereitstellung verwenden, lesen Sie bitte die [Dynamic Media-Dokumentation](/help/assets/config-dynamic.md#enabling-dynamic-media).
+>Wenn Sie Dynamic Media in einer WAR-Bereitstellung verwenden, lesen Sie die [Dynamic Media-Dokumentation](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
 ## Allgemeine Beschreibung {#general-description}
 
@@ -48,10 +47,10 @@ AEM wird als eine einzelne bereitzustellende WAR-Datei geliefert.
 
 Nach der Bereitstellung erfolgt standardmäßig Folgendes:
 
-* Der Ausführungsmodus ist `author`
-* die Instanz (Repository, Felix OSGI-Umgebung, Bundles usw.) unter `${user.dir}/crx-quickstart`installiert ist, wobei `${user.dir}` der aktuelle Arbeitsordner ist, wird dieser Pfad zu crx-quickstart mit `sling.home`
+* Der Ausführungsmodus lautet `author` .
+* die Instanz (Repository, Felix OSGI-Umgebung, Bundles usw.) wird in `${user.dir}/crx-quickstart`installiert, wobei `${user.dir}` das aktuelle Arbeitsverzeichnis ist, dieser Pfad zu crx-quickstart heißt `sling.home`
 
-* Der Kontextstamm ist der Name der Kriegsdatei, z. B.: `aem-6`
+* Der Kontextstamm ist der Name der WAR-Datei, z. B. : `aem-6`
 
 #### Konfiguration {#configuration}
 
@@ -77,25 +76,25 @@ Um eine Veröffentlichungsinstanz bereitzustellen, müssen Sie den Ausführungsm
 Um zu überprüfen, ob alles installiert ist, haben Sie folgende Möglichkeiten:
 
 * Untersuchen der Datei `error.log`, um anzuzeigen, ob der gesamte Inhalt installiert ist.
-* Suchen Sie in `/system/console`, dass alle Pakete installiert sind.
+* Suchen Sie in `/system/console` , ob alle Pakete installiert sind.
 
 #### Zwei Instanzen desselben Anwendungsservers {#two-instances-on-the-same-application-server}
 
 Zu Demonstrationszwecken kann es angemessen sein, die Erstellungs- und Veröffentlichungsinstanzen auf einem Anwendungsserver zu installieren. Dafür müssen Sie wie folgt vorgehen:
 
-1. Ändern Sie die Variablen &quot;sling.home&quot;und &quot;sling.run.models&quot;der Veröffentlichungsinstanz.
-1. Entpacken Sie die Datei WEB-INF/web.xml aus der AEM Kriegsdatei.
+1. Ändern Sie die Variablen sling.home und sling.run.modes der Veröffentlichungsinstanz.
+1. Entpacken Sie die Datei WEB-INF/web.xml aus der AEM WAR-Datei.
 1. Ändern Sie den Parameter „sling.home“ in einen anderen Pfad (absolute und relative Pfade sind möglich).
-1. Ändern Sie sling.run.models in die Veröffentlichungsinstanz.
+1. Ändern Sie sling.run.modes in Veröffentlichungsinstanz.
 1. Replizieren Sie die Datei &quot;web.xml&quot;.
-1. Benennen Sie die Kriegsdateien um, sodass sie unterschiedliche Namen haben: z. B. einen Namen in aemauthor.war und den anderen in aempublish.war umbenannt.
-1. Verwenden Sie höhere Speichereinstellungen, z. B. für AEM Standardinstanzen, z. B.: -Xmx3072m
+1. Benennen Sie die WAR-Dateien um, sodass sie unterschiedliche Namen haben: Beispiel: Eine Umbenennung erfolgt in aemauthor.war und die andere in aempublish.war.
+1. Verwenden Sie höhere Speichereinstellungen, z. B. für Standard-AEM-Instanzen, z. B.: -Xmx3072m
 1. Stellen Sie die beiden Webanwendungen bereit.
 1. Halten Sie nach der Bereitstellung die zwei Webanwendungen an.
-1. Sowohl in der Autor- als auch in der Veröffentlichungsinstanz wird sichergestellt, dass die Eigenschaft felix.service.urlhandlers=false in den Dateien sling.properties auf false festgelegt ist (standardmäßig ist true festgelegt).
+1. Sowohl in der Autoren- als auch in der Veröffentlichungsinstanz stellen Sie sicher, dass in den sling.properties-Dateien die Eigenschaft felix.service.urlhandlers=false auf false festgelegt ist (standardmäßig ist true festgelegt).
 1. Starten Sie die zwei Webanwendungen erneut.
 
-## Installationsverfahren für Anwendungsserver {#application-servers-installation-procedures}
+## Installationsverfahren für Anwendungsserver  {#application-servers-installation-procedures}
 
 ### WebSphere 8.5 {#websphere}
 
@@ -115,10 +114,10 @@ Lesen Sie oben [Allgemeine Beschreibung](#general-description), bevor Sie eine B
 * Laden Sie die AEM-WAR-Datei herunter.
 * Nehmen Sie bei Bedarf Konfigurationen in der Datei „web.xml“ vor (siehe oben unter „Allgemeine Beschreibung“).
 
-   * WEB-INF/web.xml
-   * Parameter sling.run.models für die Veröffentlichung ändern
-   * uncomment sling.home initial parameter und legen Sie diesen pfad wie gewünscht fest
-   * Datei &quot;web.xml&quot;wiederholen
+   * WEB-INF/web.xml Datei entpacken
+   * Parameter sling.run.modes zum Veröffentlichen ändern
+   * Entfernen Sie den Kommentar für den anfänglichen Parameter sling.home und legen Sie diesen Pfad nach Bedarf fest.
+   * Datei &quot;web.xml&quot;replizieren
 
 * Stellen Sie die AEM-WAR-Datei bereit.
 
@@ -132,11 +131,11 @@ Lesen Sie oben [Allgemeine Beschreibung](#general-description), bevor Sie eine B
 
 **JBoss-Servervorbereitung**
 
-Legen Sie Speicherargumente in Ihrer conf-Datei fest (z. `standalone.conf`)
+Legen Sie Speicherargumente in Ihrer conf-Datei fest (z. B. `standalone.conf`)
 
 * JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
 
-Wenn Sie den Deployment-Scanner zum Installieren der AEM Webanwendung verwenden, kann es sinnvoll sein, das `deployment-timeout,`-Attribut für diesen Satz in der XML-Datei Ihrer Instanz zu erhöhen (z. B. `configuration/standalone.xml)`:`deployment-timeout`
+Wenn Sie den Bereitstellungsscanner für die Installation der AEM Webanwendung verwenden, kann es sinnvoll sein, das `deployment-timeout,` für dieses Attribut zu erhöhen, indem Sie ein `deployment-timeout` -Attribut in der XML-Datei Ihrer Instanz festlegen (z. B. `configuration/standalone.xml)`:
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
@@ -158,32 +157,32 @@ Hierbei wird ein einfaches Serverlayout mit nur einem Administratorserver verwen
 
 **WebLogic-Servervorbereitung**
 
-* Fügen Sie unter `${myDomain}/config/config.xml`zum Abschnitt &quot;security-configuration&quot;hinzu:
+* Fügen Sie in `${myDomain}/config/config.xml`zum Abschnitt &quot;security-configuration&quot;hinzu:
 
-   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` siehe  [https://xmlns.oracle.com/weblogic/domain/1.0/domain.](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) xsdfür die richtige Position (standardmäßig ist es am Ende des Abschnitts OK)
+   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` die richtige Position auf  [https://xmlns.oracle.com/weblogic/domain/1.0/domain.](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) xsdsdf anzeigen (standardmäßig ist es ok, sie am Ende des Abschnitts zu positionieren)
 
 * Erhöhen Sie den für die virtuelle Maschine eingestellten Arbeitsspeicherwert:
 
-   * open `${myDomain}/bin/setDomainEnv.cmd` (resp .sh) search for WLS_MEM_ARGS, set z.B. set `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
+   * Öffnen Sie `${myDomain}/bin/setDomainEnv.cmd` (bzw. .sh) die Suche nach WLS_MEM_ARGS, setzen Sie z. B. `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
    * WebLogic Server neu starten
 
-* Erstellen Sie in `${myDomain}` einen Paketordner und in einem Ordner &quot;cq&quot;und in einem Ordner &quot;Plan&quot;
+* Erstellen Sie in `${myDomain}` einen Paketordner und in einem cq-Ordner und darin einen Planordner.
 
 **Bereitstellung der AEM-Webanwendung**
 
 * Laden Sie die AEM-WAR-Datei herunter.
-* Legen Sie die AEM Kriegsdatei in den Ordner &quot;${myDomain}/packages/cq&quot;ab
-* Konfigurationen bei Bedarf in `WEB-INF/web.xml` vornehmen (siehe oben in der allgemeinen Beschreibung)
+* Platzieren Sie die AEM WAR-Datei in den Ordner ${myDomain}/packages/cq .
+* Nehmen Sie bei Bedarf Ihre Konfigurationen in `WEB-INF/web.xml` vor (siehe oben in der allgemeinen Beschreibung).
 
-   * Datei entpacken `WEB-INF/web.xml`
-   * Parameter sling.run.models für die Veröffentlichung ändern
-   * uncomment sling.home initial parameter und legen Sie diesen Pfad wie gewünscht fest (siehe Allgemeine Beschreibung)
-   * Datei &quot;web.xml&quot;wiederholen
+   * Entpacken Sie die Datei `WEB-INF/web.xml`a
+   * Parameter sling.run.modes zum Veröffentlichen ändern
+   * Entfernen Sie den Kommentar für den anfänglichen Parameter sling.home und legen Sie diesen Pfad nach Bedarf fest (siehe Allgemeine Beschreibung).
+   * Datei &quot;web.xml&quot;replizieren
 
 * Stellen Sie die AEM-WAR-Datei als eine Anwendung bereit (verwenden Sie für andere Einstellungen die Standardeinstellungen).
 * Die Installation kann einige Zeit dauern.
 * Überprüfen Sie, ob die Installation wie oben unter „Allgemeine Beschreibung“ beschrieben abgeschlossen wurde (beispielsweise durch Untersuchen der Datei „error.log“).
-* Sie können den Kontextstamm auf der Registerkarte &quot;Konfiguration&quot;der Webanwendung im WebLogic `/console` ändern
+* Sie können den Kontextstamm auf der Registerkarte &quot;Konfiguration&quot;der Webanwendung in der WebLogic `/console` ändern
 
 #### Tomcat 8/8.5 {#tomcat}
 
@@ -193,7 +192,7 @@ Lesen Sie oben [Allgemeine Beschreibung](#general-description), bevor Sie eine B
 
    * Erhöhen Sie den für die virtuelle Maschine eingestellten Arbeitsspeicherwert:
 
-      * Fügen Sie in `bin/catalina.bat` (resp `catalina.sh` auf Unix) die folgende Einstellung hinzu:
+      * Fügen Sie in `bin/catalina.bat` (bzw. `catalina.sh` unter Unix) die folgende Einstellung hinzu:
       * `set "JAVA_OPTS= -Xmx2048m`
    * Tomcat ermöglicht weder dem Administrator noch dem Manager bei der Installation den Zugriff. Daher müssen Sie `tomcat-users.xml` manuell bearbeiten, um den Zugriff für diese Konten zuzulassen:
 
@@ -218,7 +217,7 @@ Lesen Sie oben [Allgemeine Beschreibung](#general-description), bevor Sie eine B
       * Halten Sie „ROOT webapp“ an und heben Sie ihre Bereitstellung auf.
       * Benennen Sie den Ordner „ROOT.war“ in den Ordner „webapps“ von Tomcat um.
       * Starten Sie webapp erneut.
-   * Wenn Sie die AEM-Webanwendung mithilfe der manager-gui installieren, müssen Sie die maximale Größe einer hochgeladenen Datei erhöhen, da die Standardeinstellung nur eine Uploadgröße von 50 MB zulässt. Öffnen Sie dazu die Web.xml der Manager-Webanwendung,
+   * Wenn Sie die AEM-Webanwendung mithilfe der manager-gui installieren, müssen Sie die maximale Größe einer hochgeladenen Datei erhöhen, da die Standardeinstellung nur eine Uploadgröße von 50 MB zulässt. Öffnen Sie dazu die Datei web.xml der Manager-Webanwendung,
 
       `webapps/manager/WEB-INF/web.xml`
 
@@ -241,10 +240,10 @@ Lesen Sie oben [Allgemeine Beschreibung](#general-description), bevor Sie eine B
    * Laden Sie die AEM-WAR-Datei herunter.
    * Nehmen Sie bei Bedarf Konfigurationen in der Datei „web.xml“ vor (siehe oben unter „Allgemeine Beschreibung“).
 
-      * WEB-INF/web.xml
-      * Parameter sling.run.models für die Veröffentlichung ändern
-      * uncomment sling.home initial parameter und legen Sie diesen pfad wie gewünscht fest
-      * Datei &quot;web.xml&quot;wiederholen
+      * WEB-INF/web.xml Datei entpacken
+      * Parameter sling.run.modes zum Veröffentlichen ändern
+      * Entfernen Sie den Kommentar für den anfänglichen Parameter sling.home und legen Sie diesen Pfad nach Bedarf fest.
+      * Datei &quot;web.xml&quot;replizieren
    * Benennen Sie die AEM-WAR-Datei in „ROOT.war“ um, wenn Sie sie als „ROOT webapp“ bereitstellen möchten. Benennen Sie sie beispielsweise in „aemauthor.war“ um, wenn „aemauthor“ als Kontextstamm fungieren soll.
    * Kopieren Sie sie in den Ordner „webapps“ von Tomcat.
    * Warten Sie, bis AEM installiert wurde.
