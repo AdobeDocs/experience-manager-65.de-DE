@@ -9,34 +9,33 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: be2aa297-5b78-4b1d-8ff1-e6a585a177dd
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 17a4e4dc-804e-44a9-9942-c37dbfc8016f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 73%
 
 ---
 
-
 # Implementieren serverseitiger Seitennamen für Analytics{#implementing-server-side-page-naming-for-analytics}
 
 Adobe Analytics verwendet die Eigenschaft `s.pageName`, um Seiten eindeutig zu identifizieren und die für die Seiten erfassten Daten zu verknüpfen. Normalerweise führen Sie in AEM die folgenden Aufgaben aus, um dieser Eigenschaft, die AEM an Analytics übermittelt, einen Wert zuzuordnen:
 
-* Verwenden Sie das Framework des Analytics-Cloud-Service, um der Analytics-Eigenschaft `s.pageName` eine CQ-Variable zuzuordnen. (Siehe [Zuordnen von Komponentendaten zu Adobe Analytics-Eigenschaften](/help/sites-administering/adobeanalytics-mapping.md).)
+* Verwenden Sie das Framework des Analytics-Cloud-Service, um der Analytics-Eigenschaft `s.pageName` eine CQ-Variable zuzuordnen. (Siehe [Zuordnen von Komponentendaten zu Adobe Analytics Properties](/help/sites-administering/adobeanalytics-mapping.md).)
 
-* Gestalten Sie die Seitenkomponente so, dass sie die CQ-Variable enthält, die Sie der Eigenschaft `s.pageName` zuordnen. (Siehe [Implementieren der Adobe Analytics-Verfolgung für benutzerdefinierte Komponenten](/help/sites-developing/extending-analytics-components.md).)
+* Gestalten Sie die Seitenkomponente so, dass sie die CQ-Variable enthält, die Sie der Eigenschaft `s.pageName` zuordnen. (Siehe [Implementieren des Adobe Analytics-Trackings für benutzerdefinierte Komponenten](/help/sites-developing/extending-analytics-components.md).)
 
-Um Analytics-Berichtsdaten in der Sites-Konsole und in Inhaltseinblicken anzuzeigen, benötigt AEM den Wert der Eigenschaft `s.pageName` für jede Seite. Die AEM Analytics Java-API definiert die `AnalyticsPageNameProvider`-Schnittstelle, die Sie implementieren, um die Sites-Konsole und Content Insights mit dem Wert der `s.pageName`-Eigenschaft bereitzustellen. Ihr Dienst `AnaltyicsPageNameProvider` löst die Eigenschaft „pageName“ auf dem Server zu Berichtszwecken auf, da sie dynamisch mittels JavaScript auf dem Client aus Gründen der Nachverfolgung festgelegt werden kann.
+Um Analytics-Berichtsdaten in der Sites-Konsole und in Inhaltseinblicken anzuzeigen, benötigt AEM den Wert der Eigenschaft `s.pageName` für jede Seite. Die AEM Analytics Java-API definiert die `AnalyticsPageNameProvider`-Schnittstelle, die Sie implementieren, um die Sites-Konsole und Inhaltseinblicke mit dem Wert der `s.pageName`-Eigenschaft bereitzustellen. Ihr Dienst `AnaltyicsPageNameProvider` löst die Eigenschaft „pageName“ auf dem Server zu Berichtszwecken auf, da sie dynamisch mittels JavaScript auf dem Client aus Gründen der Nachverfolgung festgelegt werden kann.
 
 ## Der standardmäßige AnalyticsPageNameProvider-Dienst {#the-default-analytics-page-name-provider-service}
 
-Der `DefaultPageNameProvider`-Dienst ist der Standarddienst, der den Wert der `s.pageName`-Eigenschaft bestimmt, die zum Abrufen von Analytics-Daten für eine Seite verwendet wird. Der Dienst funktioniert in Verbindung mit der AEM Foundation-Seitenkomponente ( `/libs/foundation/components/page`). Diese Seitenkomponente definiert die folgenden CQ-Variablen, die für die Zuordnung zur Eigenschaft `s.pageName` vorgesehen sind:
+Der Dienst `DefaultPageNameProvider` ist der Standarddienst, der den Wert der Eigenschaft `s.pageName` bestimmt, die zum Abrufen von Analytics-Daten für eine Seite verwendet werden soll. Der Dienst funktioniert in Verbindung mit der AEM Foundation-Seitenkomponente ( `/libs/foundation/components/page`). Diese Seitenkomponente definiert die folgenden CQ-Variablen, die für die Zuordnung zur Eigenschaft `s.pageName` vorgesehen sind:
 
 * `pagedata.path`: Der Wert wird auf den Seitenpfad festgelegt.
 * `pagedata.title`: Der Wert wird auf den Seitentitel festgelegt.
 * `pagedata.navTitle`: Der Wert wird auf den Seitennavigationstitel festgelegt.
 
-Der `DefaultPageNameProvider`-Dienst bestimmt, welche dieser CQ-Variablen der `s.pageName`-Eigenschaft im Analytics Cloud-Service-Framework zugeordnet wird. Der Dienst bestimmt dann die entsprechende Seiteneigenschaft, die für das Abrufen von Analytics-Berichtsdaten verwendet werden soll:
+Der `DefaultPageNameProvider`-Dienst bestimmt, welche dieser CQ-Variablen der `s.pageName`-Eigenschaft im Analytics Cloud Service-Framework zugeordnet ist. Der Dienst bestimmt dann die entsprechende Seiteneigenschaft, die für das Abrufen von Analytics-Berichtsdaten verwendet werden soll:
 
 * `pagedata.path`: Der Dienst verwendet  `page.getPath()`
 
@@ -44,13 +43,13 @@ Der `DefaultPageNameProvider`-Dienst bestimmt, welche dieser CQ-Variablen der `s
 
 * `pagedata.navTitle`: Der Dienst verwendet  `page.getNavigationTitle()`
 
-Das `page`-Objekt ist das Java-Objekt [ `com.day.cq.wcm.api.Page`](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) für die Seite.
+Das `page` -Objekt ist das Java-Objekt [ `com.day.cq.wcm.api.Page`](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) für die Seite.
 
-Wenn Sie der Eigenschaft `s.pageName` im Framework keine CQ-Variable zuordnen, wird der Wert für `s.pageName` aus dem Seitenpfad generiert. Beispielsweise verwendet die Seite mit dem Pfad `/content/geometrixx/en` den Wert `content:geometrixx:en` für `s.pageName`.
+Wenn Sie eine CQ-Variable nicht der Eigenschaft `s.pageName` im Framework zuordnen, wird der Wert für `s.pageName` aus dem Seitenpfad generiert. Beispielsweise verwendet die Seite mit dem Pfad `/content/geometrixx/en` den Wert `content:geometrixx:en` für `s.pageName`.
 
 >[!NOTE]
 >
->Der DefaultPageNameProvider-Dienst verwendet den Dienstrang 100.
+>Der DefaultPageNameProvider-Dienst verwendet das Dienstranking 100.
 
 ## Wahren der Kontinuität bei der Analytics-Berichterstellung {#maintaining-continuity-in-analytics-reporting}
 
@@ -81,11 +80,11 @@ Implementieren Sie die Schnittstelle `com.day.cq.analytics.sitecatalyst.Analytic
 
 Die Schnittstelle „AnalyticsPageNameProvider“ definiert zwei Methoden, die Sie implementieren müssen:
 
-* `getPageName`: Gibt einen  `String` Wert zurück, der den als  `s.pageName` Eigenschaft zu verwendenden Wert darstellt.
+* `getPageName`: Gibt einen  `String` Wert zurück, der den Wert darstellt, der als  `s.pageName` Eigenschaft verwendet werden soll.
 
-* `getResource`: Gibt ein  `org.apache.sling.api.resource.Resource` Objekt zurück, das die mit der  `s.pageName` Eigenschaft verknüpfte Seite darstellt.
+* `getResource`: Gibt ein  `org.apache.sling.api.resource.Resource` Objekt zurück, das die Seite darstellt, die mit der  `s.pageName` Eigenschaft verknüpft ist.
 
-Beide Methoden verwenden ein `com.day.cq.analytics.sitecatalyst.AnalyticsPageNameContext`-Objekt als Parameter. Die `AnalyticsPageNameContext`-Klasse stellt Informationen zum Kontext der Analytics-Aufrufe bereit:
+Beide Methoden verwenden ein `com.day.cq.analytics.sitecatalyst.AnalyticsPageNameContext` -Objekt als Parameter. Die `AnalyticsPageNameContext`-Klasse stellt Informationen zum Kontext der Analytics-Aufrufe bereit:
 
 * Der Basispfad der Seitenressource.
 * Das `Framework`-Objekt für die Konfiguration des Analytics-Cloud-Service.
@@ -94,7 +93,7 @@ Beide Methoden verwenden ein `com.day.cq.analytics.sitecatalyst.AnalyticsPageNam
 
 Die Klasse stellt auch einen Setter für den Seitennamen zur Verfügung.
 
-### AnalyticsPageNameProvider-Beispielimplementierung {#example-analyticspagenameprovider-implementation}
+### AnalyticsPageNameProvider-Beispielimplementierung  {#example-analyticspagenameprovider-implementation}
 
 Die folgende `AnalyticsPageNameProvider`-Beispielimplementierung unterstützt eine Seitenkomponente:
 
@@ -251,4 +250,3 @@ public class ExamplePageNameProvider implements AnalyticsPageNameProvider {
     }
 }
 ```
-
