@@ -11,7 +11,6 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '2979'
@@ -77,14 +76,14 @@ Sie können das globale Navigationsfenster schließen, indem Sie auf **Schließe
 
 Die globale Navigation verfügt über zwei Fenster, die am linken Bildschirmrand durch Symbole dargestellt werden:
 
-* **[Navigation](/help/sites-authoring/basic-handling.md#navigation-panel)** – dargestellt durch einen Kompass 
+* **[Navigation](/help/sites-authoring/basic-handling.md#navigation-panel)** – dargestellt durch einen Kompass
 * **[Tools](/help/sites-authoring/basic-handling.md#tools-panel)** – dargestellt durch einen Hammer
 
 Die in diesen Fenstern verfügbaren Optionen werden im Folgenden beschrieben.
 
 ### Navigationsfenster  {#navigation-panel}
 
-Das Navigationsfenster bietet Zugriff auf die AEM Konsolen:
+Das Bedienfeld Navigation bietet Zugriff auf die AEM Konsolen:
 
 ![bh-01](assets/bh-01.png)
 
@@ -119,7 +118,7 @@ Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
    <td>In dieser Konsole können Sie <a href="/help/forms/home.md">Formulare und Dokumente</a> erstellen, verwalten und verarbeiten.</td>
   </tr>
   <tr>
-   <td>Personalisierung </td>
+   <td>Personalisierung</td>
    <td>Diese Konsole bietet ein <a href="/help/sites-authoring/personalization.md">Framework aus Tools für die Bearbeitung von Inhalt für eine bestimmte Zielgruppe und die Darstellung personalisierter Erlebnisse</a>.</td>
   </tr>
   <tr>
@@ -147,7 +146,7 @@ Im Werkzeugfenster besitzt jede Option im Seitenbereich mehrere Untermenüs. Die
 
 Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meisten Optionen in der Kopfzeile bleiben unabhängig von Ihrer Position im System gleich, manche sind aber kontextspezifisch.
 
-![bh-03](assets/bh-03.png)
+![bh-05](assets/bh-03.png)
 
 * [Globale Navigation](#navigatingconsolesandtools)
 
@@ -205,7 +204,7 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
 
    ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
 
-   Diese Option ist nur in der Listenansicht verfügbar. Weitere Informationen finden Sie unter [Ansicht der Liste](#list-view).
+   Diese Option ist nur in der Listenansicht verfügbar. Weitere Informationen finden Sie unter [Listenansicht](#list-view) .
 
 * Schaltfläche **Erstellen**
 
@@ -225,9 +224,9 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
 
 * Navigation über die Tastatur
 
-   Sie haben die Möglichkeit, auf einer Website nur mit der Tastatur zu navigieren. Dabei wird die standardmäßige Browserfunktion des Schlüssels **TAB** (oder **OPT+TAB**) verwendet, um Sie zwischen Elementen auf der Seite zu bewegen, die *fokussierbar* sind.
+   Sie haben die Möglichkeit, auf einer Website nur mit der Tastatur zu navigieren. Hierbei wird die standardmäßige Browserfunktion des Schlüssels **TAB** (oder **OPT+TAB**) verwendet, um zwischen Elementen auf der Seite zu wechseln, die *fokussierbar* sind.
 
-   In der **Sites**-Konsole gibt es die zusätzliche Option, **zum Hauptinhalt zu wechseln**. Dies wird sichtbar, wenn Sie *tab* durch die Kopfzeilenoptionen navigieren, und beschleunigt die Navigation, indem Sie die Standardelemente in der (Produkt-)Symbolleiste überspringen und Sie direkt zum Hauptinhalt weiterleiten können.
+   In der **Sites**-Konsole gibt es die zusätzliche Option, **zum Hauptinhalt zu wechseln**. Dies wird sichtbar, wenn Sie *tab* durch die Kopfzeilenoptionen navigieren, und beschleunigt Ihre Navigation, indem Sie die Standardelemente in der (Produkt-)Symbolleiste überspringen und direkt zum Hauptinhalt gelangen.
 
    ![bh-30](assets/bh-30.png)
 
@@ -271,7 +270,7 @@ Entwicklungsressourcen und Downloads
    >Eine Aufstellung aller Tastaturbefehle finden Sie in den folgenden Dokumenten:
    >
    >    * [Tastaturbefehle für die Seitenbearbeitung](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-   >    * [Tastaturbefehle für Konsolen](/help/sites-authoring/keyboard-shortcuts.md)
+   * [Tastaturbefehle für Konsolen](/help/sites-authoring/keyboard-shortcuts.md)
 
 
 ## Aktionssymbolleiste {#actions-toolbar}
@@ -291,10 +290,9 @@ Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbo
 ![bh-12](assets/bh-12.png)
 
 >[!NOTE]
->
->Die einzelnen verfügbaren Symbole werden gemäß der/des jeweils zutreffenden Konsole/Funktion/Szenarios dokumentiert.
+Die einzelnen verfügbaren Symbole werden gemäß der/des jeweils zutreffenden Konsole/Funktion/Szenarios dokumentiert.
 
-## Schnellaktionen   {#quick-actions}
+## Schnellaktionen  {#quick-actions}
 
 In der [Kartenansicht](#cardviewquickactions) sind bestimmte Aktionen sowohl als Schnellaktionssymbole als auch auf der Symbolleiste vorhanden. Schnellaktionssymbole sind für jeweils ein einzelnes Element verfügbar. Die Notwendigkeit der Vorauswahl entfällt dabei.
 
@@ -314,10 +312,9 @@ Sie können Ressourcen in jeder der verfügbaren Ansichten anzeigen, darin navig
 * [Listenansicht](#list-view)
 
 >[!NOTE]
->
->Standardmäßig zeigt AEM Assets in keiner der Ansichten die ursprüngliche Ausgabedarstellung von Assets als Miniaturansicht in der Benutzeroberfläche an. Administratoren können mithilfe von Überlagerungen AEM Assets so konfigurieren, dass ursprüngliche Ausgabedarstellungen als Miniaturen angezeigt werden.
+Standardmäßig zeigt AEM Assets in keiner der Ansichten die ursprüngliche Ausgabedarstellung von Assets als Miniaturansicht in der Benutzeroberfläche an. Administratoren können mithilfe von Überlagerungen AEM Assets so konfigurieren, dass ursprüngliche Ausgabedarstellungen als Miniaturen angezeigt werden.
 
-### Auswählen von Ressourcen   {#selecting-resources}
+### Auswählen von Ressourcen  {#selecting-resources}
 
 Die Auswahl einer bestimmten Ressource hängt von der Kombination der Ansicht und des Geräts ab:
 
@@ -345,7 +342,7 @@ Die Auswahl einer bestimmten Ressource hängt von der Kombination der Ansicht un
    <td>Kartenansicht<br /> </td>
    <td>
     <ul>
-     <li>Desktop:<br /> Maus über und verwenden Sie dann die Schnellaktion mit dem Häkchen</li>
+     <li>Desktop:<br /> Bewegen Sie den Mauszeiger über die und verwenden Sie dann die Schnellaktion mit Häkchen .</li>
      <li>Mobilgerät: <br /> Tippen und halten Sie die Karte</li>
     </ul> </td>
    <td>
@@ -416,7 +413,7 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
 
    * Beim Tippen bzw. Klicken werden Ressourcenname und Pfeil hervorgehoben.
 
-   ![bh-15](assets/bh-17.png)
+   ![bh-17](assets/bh-17.png)
 
    * Die untergeordneten Elemente der ausgewählten Ressource werden in der Spalte rechts neben der Ressource angezeigt.
    * Wenn Sie auf einen Ressourcennamen tippen oder klicken, der keine untergeordneten Elemente besitzt, werden die Ressourcendetails in der letzten Spalte angezeigt.
@@ -499,8 +496,7 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
 * Ändern Sie die Reihenfolge der Elemente mithilfe des vertikalen gepunkteten Balkens am rechten Rand jedes Elements.
 
    >[!NOTE]
-   >
-   >Das Ändern der Reihenfolge funktioniert nur innerhalb eines sortierten Ordners, der den Wert `jcr:primaryType` als `sling:OrderedFolder` hat.
+   Das Ändern der Reihenfolge funktioniert nur innerhalb eines sortierten Ordners, der den Wert `jcr:primaryType` als `sling:OrderedFolder` hat.
 
    ![bh-22](assets/bh-22.png)
 
@@ -525,8 +521,7 @@ So können Sie z. B. in Sites nur Inhalt (Standard), die Inhaltsstruktur, die Z
 Wenn „Nur Inhalt“ ausgewählt ist, wird lediglich das Schienensymbol angezeigt. Bei Auswahl einer anderen Option wird der Optionsname neben dem Schienensymbol angezeigt.
 
 >[!NOTE]
->
->[Tastaturbefehle](/help/sites-authoring/keyboard-shortcuts.md) sind verfügbar, um schnell zwischen Optionen zur Schienenanzeige wechseln zu können.
+[Tastaturbefehle](/help/sites-authoring/keyboard-shortcuts.md) sind verfügbar, um schnell zwischen Optionen zur Schienenanzeige wechseln zu können.
 
 ### Inhaltsstruktur {#content-tree}
 
@@ -537,10 +532,8 @@ Mit dem seitlichen Bedienfeld der Inhaltsstruktur und einer Listen- oder Kartena
 ![bh-26](assets/bh-26.png)
 
 >[!NOTE]
->
->Sobald ein Eintrag in der Hierarchieansicht ausgewählt wurde, kann mit den Pfeiltasten schnell in der Hierarchie navigiert werden.
->
->Weitere Informationen finden Sie unter [Tastaturbefehle](/help/sites-authoring/keyboard-shortcuts.md).
+Sobald ein Eintrag in der Hierarchieansicht ausgewählt wurde, kann mit den Pfeiltasten schnell in der Hierarchie navigiert werden.
+Weitere Informationen finden Sie unter [Tastaturbefehle](/help/sites-authoring/keyboard-shortcuts.md).
 
 ### Zeitleiste {#timeline}
 
