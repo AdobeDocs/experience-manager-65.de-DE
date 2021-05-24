@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 1c761aa7-a72f-46f0-8717-0b6e0d1cff55
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 91%
 
 ---
-
 
 # Tastaturbefehle für die Seitenbearbeitung{#keyboard-shortcuts-when-editing-pages}
 
@@ -24,7 +23,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 
 >[!NOTE]
 >
->In den folgenden Tabellen funktionieren für die Tastenkombinationen in der Spalte **Shortcut** sowohl die Strg- als auch die Befehlstaste unter macOS.
+>In den folgenden Tabellen funktionieren für die Tastenkombinationen in der Spalte **Tastaturbefehl** sowohl die Strg- als auch die Befehlstaste unter macOS.
 
 >[!NOTE]
 >
@@ -120,7 +119,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-U</code></strong><br /> </td>
-   <td>Unterstreichen</td>
+   <td>Unterstrichen</td>
   </tr>
   <tr>
    <td>Content Finder - Suchfeld</td>
@@ -157,7 +156,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 
 Desktop-Benutzern stehen bei Verwendung der ](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md)Konsolen[ ebenfalls verschiedene Tastaturbefehle zur Verfügung.
 
-## Tastaturbefehle für Entwickler {#keyboard-shortcuts-for-development}
+## Tastaturbefehle für Entwickler  {#keyboard-shortcuts-for-development}
 
 Desktop-Entwicklern stehen bei Verwendung des Seiteneditors zusätzliche Tastaturbefehle zur Verfügung.
 
@@ -170,9 +169,8 @@ Desktop-Entwicklern stehen bei Verwendung des Seiteneditors zusätzliche Tastatu
   </tr>
   <tr>
    <td>Modus Bearbeiten</td>
-   <td>Legen Sie das folgende Suffix in der URL fest:<br /> <code>?debugClientLibs=true</code><br /> Dann verwenden Sie:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
+   <td>Legen Sie das folgende Suffix in der URL fest:<br /> <code>?debugClientLibs=true</code><br /> Verwenden Sie dann Folgendes:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
    <td>Anzeige von zeitlichen Statistiken zum Laden von Seiten.</td>
   </tr>
  </tbody>
 </table>
-
