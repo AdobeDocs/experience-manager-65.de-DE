@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: eb8bbb85-ca2f-4877-8ee0-bb1ee8b7d8de
-translation-type: tm+mt
-source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
+exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2295'
 ht-degree: 86%
 
 ---
-
 
 # Sichern und Wiederherstellen{#backup-and-restore}
 
@@ -52,7 +51,7 @@ In den meisten Fällen erstellen Sie mithilfe eines Dateisystem-Snapshots eine s
 
 Da das Snapshot-Backup normalerweise nur ein paar Sekunden dauert, ist die gesamte Ausfallzeit nicht länger als ein paar Minuten.
 
-## Online-Backup {#online-backup}
+## Online-Backup  {#online-backup}
 
 Bei dieser Backup-Methode erstellen Sie ein Backup vom gesamten Repository, einschließlich aller darunter bereitgestellten Anwendungen wie beispielsweise AEM. Das Backup enthält die Inhalte, den Versionsverlauf, die Konfiguration, die Software, Hotfixes, benutzerdefinierte Anwendungen, Protokolldateien, Suchindizes usw. Falls Sie die Clustering-Option verwenden oder der freigegebene Ordner ein Unterverzeichnis von `crx-quickstart` ist (entweder physikalisch oder per Softlink), wird das freigegebene Verzeichnis ebenfalls gesichert.
 
@@ -69,7 +68,7 @@ In jedem Fall wird während des Backups ein Image (oder Snapshot) des Repository
 
 >[!NOTE]
 >
->Wenn AEM Funktion &quot;Online-Sicherung&quot;auf einer AEM Instanz mit einer benutzerdefinierten Blobstore-Konfiguration verwendet wird, wird empfohlen, den Pfad des Datenspeichers so zu konfigurieren, dass er sich außerhalb des Ordners &quot;`crx-quickstart`&quot;befindet, und den Datenspeicher separat zu sichern.
+>Wenn AEM Online-Backup-Funktion auf einer AEM-Instanz mit einer benutzerdefinierten Blobstore-Konfiguration verwendet wird, wird empfohlen, den Pfad des Datenspeichers so zu konfigurieren, dass er sich außerhalb des Ordners &quot;`crx-quickstart`&quot;befindet, und den Datenspeicher separat zu sichern.
 
 >[!CAUTION]
 >
@@ -81,11 +80,11 @@ Mithilfe eines Online-Backups von Ihrem Repository können Sie Backup-Dateien er
 
 >[!CAUTION]
 >
->Führen Sie AEM Onlinesicherung nicht gleichzeitig mit [Datastore Garbage Collection](/help/sites-administering/data-store-garbage-collection.md) oder [Revision Cleanup](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup) aus. Dies beeinträchtigt die Systemleistung.
+>Führen Sie AEM Online-Backup nicht gleichzeitig mit [Datastore Garbage Collection](/help/sites-administering/data-store-garbage-collection.md) oder [Revisionsbereinigung](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup) aus. Dies beeinträchtigt die Systemleistung.
 
 Zu Beginn eines Backups können Sie den **Zielpfad** und/oder eine **Verzögerung** festlegen.
 
-**Zielgruppe** PathDie Sicherungsdateien werden in der Regel im übergeordneten Ordner des Ordners gespeichert, in dem sich die Schnellstart-JAR-Datei (.jar) befindet. Wenn sich die AEM-JAR-Datei beispielsweise im Ordner /InstallationKits/AEM befindet, wird das Backup im Ordner /InstallationKits generiert. Sie können auch ein Ziel an einem Speicherort Ihrer Wahl angeben.
+**Ziel-** PfadDie Backup-Dateien werden normalerweise im übergeordneten Ordner des Ordners gespeichert, der die JAR-Schnellstartdatei (.jar) enthält. Wenn sich die AEM-JAR-Datei beispielsweise im Ordner /InstallationKits/AEM befindet, wird das Backup im Ordner /InstallationKits generiert. Sie können auch ein Ziel an einem Speicherort Ihrer Wahl angeben.
 
 Wenn unter **Zielpfad** ein Verzeichnis angegeben wird, wird das Image des Repositorys in diesem Verzeichnis erstellt. Falls dasselbe Verzeichnis mehrmals (oder immer) zum Speichern von Backups verwendet wird,
 
@@ -106,9 +105,9 @@ Wenn unter **Zielpfad** ein Verzeichnis angegeben wird, wird das Image des Repos
 
 >
 >
-Wenn Sie eine ZIP-Datei als Sicherungsformat erstellen müssen, sollten Sie eine Sicherung in einem Verzeichnis erstellen und dann ein Komprimierungs-Programm verwenden, um die ZIP-Datei zu erstellen.
+Wenn Sie eine ZIP-Datei als Backup-Format erstellen müssen, sollten Sie eine Sicherung in einem Verzeichnis vornehmen und dann ein Komprimierungsprogramm verwenden, um die ZIP-Datei zu erstellen.
 
-**** DelayGibt eine Verzögerung (in Millisekunden) an, sodass die Repository-Leistung nicht beeinträchtigt wird. Standardmäßig wird das Repository-Backup mit voller Geschwindigkeit ausgeführt. Sie können die Geschwindigkeit der Erstellung eines Online-Backups verringern, sodass das Backup nicht dazu führt, dass andere Aufgaben langsamer ausgeführt werden.
+**** DelayGibt eine Zeitverzögerung (in Millisekunden) an, sodass die Repository-Leistung nicht beeinträchtigt wird. Standardmäßig wird das Repository-Backup mit voller Geschwindigkeit ausgeführt. Sie können die Geschwindigkeit der Erstellung eines Online-Backups verringern, sodass das Backup nicht dazu führt, dass andere Aufgaben langsamer ausgeführt werden.
 
 Achten Sie bei der Festlegung einer sehr großen Verzögerung darauf, dass das Online-Backup nicht länger als 24 Stunden dauert. Andernfalls verwerfen Sie dieses Backup, da es möglicherweise nicht alle Binärdateien enthält.
  Eine Verzögerung von 1 ms führt in der Regel zu einer 10%igen CPU-Auslastung und eine Verzögerung von 10 ms führt normalerweise zu einer CPU-Auslastung von weniger als 3 %. Die Gesamtverzögerung in Sekunden können Sie wie folgt schätzen: die Repository-Größe (in MB) multipliziert mit der Verzögerung in ms geteilt durch 2 (wenn die ZIP-Option verwendet wird) bzw. geteilt durch 4 (wenn das Backup in einem Verzeichnis gespeichert wird). Das bedeutet, dass sich die Backup-Zeit durch ein Backup eines 200 MB großen Repositorys in einem Verzeichnis bei einer Verzögerung von 1 ms um 50 Sekunden erhöht.
@@ -121,7 +120,7 @@ So erstellen Sie ein Backup:
 
 1. Melden Sie sich bei AEM als Administrator an.
 
-1. Gehen Sie zu **Tools - Vorgänge - Sicherung.**
+1. Wechseln Sie zu **Tools - Vorgänge - Backup.**.
 1. Klicken Sie auf **Erstellen**. Die Backup-Konsole wird geöffnet.
 
    ![chlimage_1-1](assets/chlimage_1-1a.png)
@@ -165,13 +164,13 @@ Backups können mit den HTTP-Clients `wget` oder `curl` automatisiert werden. Na
 
 >[!CAUTION]
 >
->Im folgenden Beispiel müssen verschiedene Parameter im Befehl `curl` möglicherweise für Ihre Instanz konfiguriert werden. Beispiel: Hostname ( `localhost`), Anschluss ( `4502`), Administratorkennwort ( `xyz`) und Dateiname ( `backup.zip`).
+>Im folgenden Beispiel müssen möglicherweise verschiedene Parameter im Befehl `curl` für Ihre Instanz konfiguriert werden. Beispiel: Hostname ( `localhost`), Port ( `4502`), Administratorkennwort ( `xyz`) und Dateiname ( `backup.zip`).
 
 ```shell
 curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.granite:type=Repository/op/startBackup/java.lang.String?target=backup.zip
 ```
 
-Die Backup-Datei bzw. das Backup-Verzeichnis wird auf dem Server im übergeordneten Ordner des Ordners erstellt, der den `crx-quickstart`-Ordner enthält (genauso wie beim Erstellen des Backups mithilfe eines Browsers). Wenn Sie beispielsweise AEM im Ordner `/InstallationKits/crx-quickstart/` installiert haben, wird die Sicherung im Ordner `/InstallationKits` erstellt.
+Die Backup-Datei bzw. das Backup-Verzeichnis wird auf dem Server im übergeordneten Ordner des Ordners erstellt, der den `crx-quickstart`-Ordner enthält (genauso wie beim Erstellen des Backups mithilfe eines Browsers). Wenn Sie beispielsweise AEM im Verzeichnis `/InstallationKits/crx-quickstart/` installiert haben, wird die Sicherung im Verzeichnis `/InstallationKits` erstellt.
 
 Der „curl“-Befehl wird sofort zurückgegeben. Daher müssen Sie dieses Verzeichnis überwachen, um zu sehen, wann die ZIP-Datei fertig ist. Während der Erstellung des Backups wird ein temporäres Verzeichnis (dessen Name auf dem der fertigen ZIP-Datei basiert) angezeigt, das am Ende in einer ZIP-Datei komprimiert wird. Beispiel:
 
@@ -182,9 +181,9 @@ Der „curl“-Befehl wird sofort zurückgegeben. Daher müssen Sie dieses Verze
 
 Normalerweise wird die Backup-Datei bzw. das Verzeichnis auf dem Server im übergeordneten Ordner des Ordners erstellt, der den `crx-quickstart`-Ordner enthält.
 
-Wenn Sie Ihre Sicherung (von jeder Sorte) an einem anderen Speicherort speichern möchten, können Sie einen absoluten Pfad &quot;zum Parameter `target` im Befehl `curl` festlegen.
+Wenn Sie Ihre Sicherung (von beiden Sorten) an einem anderen Speicherort speichern möchten, können Sie einen absoluten Pfad auf den Parameter `target` im Befehl `curl` festlegen.
 
-So generieren Sie beispielsweise `backupJune.zip` im Ordner `/Backups/2012`:
+So generieren Sie beispielsweise `backupJune.zip` im Verzeichnis `/Backups/2012`:
 
 ```shell
 curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.granite:type=Repository/op/startBackup/java.lang.String?target=/Backups/2012/backupJune.zip"
@@ -219,12 +218,12 @@ Für das Online-Backup wird der folgende Algorithmus verwendet:
 
 1. Wenn Sie eine ZIP-Datei erstellen, ist der erste Schritt die Erstellung oder Lokalisierung des Zielverzeichnisses.
 
-   * Beim Sichern in eine ZIP-Datei wird ein temporäres Verzeichnis erstellt. Der Ordnername Beginn `backup.` und endet mit `.temp`. zum Beispiel `backup.f4d3.temp`.
+   * Beim Sichern in eine ZIP-Datei wird ein temporäres Verzeichnis erstellt. Der Verzeichnisname beginnt mit `backup.` und endet mit `.temp`. zum Beispiel `backup.f4d3.temp`.
    * Beim Sichern in ein Verzeichnis wird der im Zielpfad festgelegte Name verwendet. Ein vorhandenes Verzeichnis kann verwendet werden, andernfalls wird ein neues Verzeichnis erstellt.
 
       Es wird eine leere Datei mit dem Namen `backupInProgress.txt` im Zielverzeichnis erstellt, wenn das Backup gestartet wird. Diese Datei wird gelöscht, sobald das Backup abgeschlossen ist.
 
-1. Die Dateien werden aus dem Quellverzeichnis in das Zielverzeichnis (oder das temporäre Verzeichnis, wenn eine Zip-Datei erstellt wird) kopiert. Der Segmentspeicher wird vor dem Datenspeicher kopiert, um eine Beschädigung des Repositorys zu vermeiden. Der Index und die Zwischenspeicherdaten werden bei der Erstellung des Backups ausgelassen. Daher werden Daten von `crx-quickstart/repository/cache` und `crx-quickstart/repository/index` nicht in die Sicherung einbezogen. Der Fortschrittsleistenindikator des Prozesses liegt bei 0 % - 70 % beim Erstellen einer ZIP-Datei bzw. bei 0 % - 100 %, wenn keine ZIP-Datei erstellt wurde.
+1. Die Dateien werden aus dem Quellverzeichnis in das Zielverzeichnis (oder das temporäre Verzeichnis, wenn eine Zip-Datei erstellt wird) kopiert. Der Segmentspeicher wird vor dem Datenspeicher kopiert, um eine Beschädigung des Repositorys zu vermeiden. Der Index und die Zwischenspeicherdaten werden bei der Erstellung des Backups ausgelassen. Daher sind Daten von `crx-quickstart/repository/cache` und `crx-quickstart/repository/index` nicht in der Sicherung enthalten. Der Fortschrittsleistenindikator des Prozesses liegt zwischen 0 % - 70 % beim Erstellen einer ZIP-Datei oder 0 % - 100 %, wenn keine ZIP-Datei erstellt wird.
 
 1. Falls das Backup in einem vorab vorhandenen Verzeichnis erstellt wird, werden die „alten“ Dateien im Zielverzeichnis gelöscht. Alte Dateien sind Dateien, die im Quellverzeichnis nicht vorhanden sind.
 
@@ -236,7 +235,7 @@ Das Kopieren der Dateien in das Zielverzeichnis lässt sich in vier Phasen unter
    * Phase B: Nur der Datenspeicher wird kopiert (mit Verzögerung).
 
 1. In der zweiten Kopierphase (Fortschrittsanzeige 63 % bis 65,8 %, wenn eine ZIP-Datei erstellt wird, oder 90 % bis 94 %, wenn keine ZIP-Datei erstellt wird) werden nur Dateien kopiert, die seit dem Start der ersten Kopierphase im Quellverzeichnis erstellt oder geändert wurden. Abhängig von der Aktivität des Repositorys kann dies bedeuten, dass gar keine Dateien bis hin zu einer signifikanten Anzahl an Dateien enthalten sind (da die erste Dateikopierphase in der Regel sehr viel Zeit in Anspruch nimmt). Der Kopierprozess entspricht dem der ersten Phase (Phase A und Phase B mit Verzögerung).
-1. In der dritten Kopierphase (Fortschrittsanzeige 65,8 % bis 68,6 %, wenn eine ZIP-Datei erstellt wird, oder 94 % bis 98 %, wenn keine ZIP-Datei erstellt wird) werden nur Dateien kopiert, die seit dem Start der zweiten Kopierphase im Quellverzeichnis erstellt oder geändert wurden. Abhängig von der Aktivität des Repositorys kann dies bedeuten, dass gar keine Dateien oder nur sehr wenige Dateien zu kopieren sind (da die zweite Dateikopierphase in der Regel sehr schnell abgeschlossen ist). Der Kopiervorgang ähnelt der zweiten Phase - Phase A und Phase B, jedoch ohne Verzögerung.
+1. In der dritten Kopierphase (Fortschrittsanzeige 65,8 % bis 68,6 %, wenn eine ZIP-Datei erstellt wird, oder 94 % bis 98 %, wenn keine ZIP-Datei erstellt wird) werden nur Dateien kopiert, die seit dem Start der zweiten Kopierphase im Quellverzeichnis erstellt oder geändert wurden. Abhängig von der Aktivität des Repositorys kann dies bedeuten, dass gar keine Dateien oder nur sehr wenige Dateien zu kopieren sind (da die zweite Dateikopierphase in der Regel sehr schnell abgeschlossen ist). Der Kopierprozess ähnelt der zweiten Phase - Phase A und Phase B, jedoch ohne Verzögerung.
 1. Die Dateikopierphasen 1 bis 3 werden zeitgleich ausgeführt, während das Repository ausgeführt wird. Nur Dateien, die seit dem Start der dritten Kopierphase im Quellordner erstellt oder geändert wurden, werden kopiert. Abhängig von der Aktivität des Repositorys kann dies bedeuten, dass gar keine Dateien oder nur äußerst wenige Dateien zu kopieren sind (da die zweite Dateikopierphase in der Regel sehr schnell abgeschlossen ist). Die Fortschrittsanzeige zeigt 68,6 % bis 70 % an, wenn eine ZIP-Datei erstellt wird, oder 98 % bis 100 %, wenn keine ZIP-Datei erstellt wird. Der Kopierprozess entspricht der dritten Phase.
 1. Abhängig vom Ziel:
 
@@ -258,13 +257,12 @@ Weitere Informationen zu den Funktionen und Austauschbeziehungen von jedem diese
 
 ### Backup-Umfang  {#scope-of-backup}
 
-Wenn Sie Knoten mit dem Package Manager oder dem Content Zipper sichern, speichert CRX die folgenden Informationen:
+Wenn Sie Knoten entweder mit dem Package Manager oder dem Content Zipper sichern, speichert CRX die folgenden Informationen:
 
 * Die Repository-Inhalte unterhalb der hierarchischen Struktur, die Sie ausgewählt haben
 * Die Knotentyp-Definitionen, die für die zu sichernden Inhalte verwendet werden
 * Die Namespace-Definitionen, die für die zu sichernden Inhalte verwendet werden
 
-Beim Sichern gehen AEM die folgenden Informationen verloren:
+AEM verliert beim Sichern die folgenden Informationen:
 
 * Der Versionsverlauf
-
