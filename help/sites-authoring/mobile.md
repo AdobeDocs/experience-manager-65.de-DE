@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 9554cdb3-b604-4d50-9760-89b9e7a7755f
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 9c6c6386-5ffd-4fa6-9aa1-f5b0e31d1046
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 89%
 
 ---
-
 
 # Verfassen einer Seite für Mobilgeräte{#authoring-a-page-for-mobile-devices}
 
@@ -26,16 +25,16 @@ Geräte sind entsprechend ihrer Fähigkeit zur Wiedergabe einer Seite in die Kat
 
 >[!NOTE]
 >
->Zur Erstellung einer Website für Mobilgeräte auf der Grundlage einer bestehenden Standard-Site erstellen Sie eine Live Copy der Standard-Site. (Siehe [Erstellen einer Live-Kopie für verschiedene Kanal](/help/sites-administering/msm-livecopy.md).)
+>Zur Erstellung einer Website für Mobilgeräte auf der Grundlage einer bestehenden Standard-Site erstellen Sie eine Live Copy der Standard-Site. (Siehe [Erstellen einer Live Copy für verschiedene Kanäle](/help/sites-administering/msm-livecopy.md).)
 >
->AEM-Entwickler können neue Gerätegruppen erstellen. (Siehe [Erstellen von Filtern für Gerätegruppen](/help/sites-developing/groupfilters.md).)
+>AEM-Entwickler können neue Gerätegruppen erstellen. (Siehe [Erstellen von Gerätegruppenfiltern](/help/sites-developing/groupfilters.md).)
 
 Gehen Sie wie folgt vor, um eine Seite für Mobilgeräte zu erstellen:
 
 1. Öffnen Sie ausgehend von der globalen Navigation die **Sites-Konsole**.
 1. Öffnen Sie die Seite **We.Retail** -> **Vereinigte Staaten** -> **Englisch**.
 
-1. Wechseln Sie in den Modus **Vorschau**.
+1. Wechseln Sie in den Modus **Vorschau** .
 1. Wechseln Sie durch Klicken auf das Gerätesymbol am oberen Seitenrand zum gewünschten Emulator.
 1. Verschieben Sie per Drag-and-Drop Komponenten aus dem Komponenten-Browser auf die Seite.
 
@@ -46,4 +45,3 @@ Die Seite sieht ähnlich wie die folgende aus:
 >[!NOTE]
 >
 >Die Emulatoren sind deaktiviert, wenn eine Seite in der Autoreninstanz von einem Mobilgerät aus aufgerufen wird.
-
