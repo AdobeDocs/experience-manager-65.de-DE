@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: dbdf981f-791b-4ff7-8ca8-039d0bdc9c92
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: a9de8ec6-6948-4643-89c3-62d9b1f6293a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 84%
 
 ---
 
-
 # Prozessreferenz für Workflows{#workflow-process-reference}
 
 AEM bietet verschiedene Prozessschritte für die Erstellung von Workflow-Modellen. Darüber hinaus können auch benutzerdefinierte Prozessschritte für Aufgaben hinzugefügt werden, die nicht von den integrierten Schritten abgedeckt werden (vergleiche [Erstellen von Workflow-Modellen](/help/sites-developing/workflows-models.md)).
 
-## Prozessmerkmale {#process-characteristics}
+## Prozessmerkmale  {#process-characteristics}
 
 Die folgenden Merkmale werden für jeden Prozessschritt beschrieben.
 
@@ -33,7 +32,7 @@ Prozessschritte werden entweder durch eine Java-Klasse oder ein ECMAScript defin
 * Bei Java-Klassenprozessen wird der vollqualifizierte Klassenname angegeben.
 * Bei ECMAScript-Prozessen wird der Pfad des Skripts angegeben.
 
-### Nutzlast  {#payload}
+### Nutzlast {#payload}
 
 Die Nutzlast ist die Entität, auf die die Workflow-Instanz reagiert. Die Nutzlast wird implizit durch den Kontext ausgewählt, in dem eine Workflow-Instanz gestartet wird.
 
@@ -45,7 +44,7 @@ Meistens besteht die Nutzlast aus einem JCR-Knoten im Repository (beispielsweise
 
 Einige Workflow-Prozesse akzeptieren Argumente, die der Administrator beim Einrichten des Workflow-Schritts angibt.
 
-Argumente werden als einzelne Zeichenfolge im Bereich **Eigenschaften** des Workflow-Editors in der Eigenschaft **Prozess-Argumente** angegeben. Das Format der Argumentzeichenfolge wird für jeden unten beschriebenen Prozess in einfacher EBNF-Grammatik angegeben. Beispielsweise zeigt Folgendes an, dass die Argumentzeichenfolge aus einem oder mehreren durch Kommas getrennten Paaren besteht, wobei jedes Paar aus einem Dublette-Doppelpunkt (also einer Zeichenfolge) und einem Wert besteht:
+Argumente werden als einzelne Zeichenfolge im Bereich **Eigenschaften** des Workflow-Editors in der Eigenschaft **Prozess-Argumente** angegeben. Das Format der Argumentzeichenfolge wird für jeden unten beschriebenen Prozess in einfacher EBNF-Grammatik angegeben. Das folgende Beispiel zeigt, dass die Argumentzeichenfolge aus einem oder mehreren durch Kommas getrennten Paaren besteht, wobei jedes Paar aus einem Namen (der eine Zeichenfolge ist) und einem Wert besteht, getrennt durch einen Doppelpunkt:
 
 ```
     args := name '::' value [',' name '::' value]*
@@ -60,7 +59,7 @@ Nach einer gewissen Zeitüberschreitung funktioniert der Workflow-Schritt nicht 
 
 ### Berechtigungen {#permissions}
 
-Die an `WorkflowProcess` weitergeleitete Sitzung wird vom Dienstbenutzer für den Workflow-Prozessdienst gesichert, der über die folgenden Berechtigungen im Stammordner des Repositorys verfügt:
+Die an `WorkflowProcess` übergebene Sitzung wird vom Dienstbenutzer für den Workflow-Prozessdienst unterstützt, der über die folgenden Berechtigungen im Stammverzeichnis des Repositorys verfügt:
 
 * `jcr:read`
 * `rep:write`
@@ -68,7 +67,7 @@ Die an `WorkflowProcess` weitergeleitete Sitzung wird vom Dienstbenutzer für de
 * `jcr:lockManagement`
 * `crx:replicate`
 
-Wenn dieser Berechtigungssatz für Ihre `WorkflowProcess`-Implementierung nicht ausreicht, muss eine Sitzung mit den erforderlichen Berechtigungen verwendet werden.
+Wenn dieser Berechtigungssatz nicht für Ihre `WorkflowProcess`-Implementierung ausreicht, muss eine Sitzung mit den erforderlichen Berechtigungen verwendet werden.
 
 Hierfür wird empfohlen, einen Dienstbenutzer mit einer minimalen Untergruppe der erforderlichen Berechtigungen zu verwenden.
 
@@ -82,7 +81,7 @@ Hierfür wird empfohlen, einen Dienstbenutzer mit einer minimalen Untergruppe de
 >
 >Eine kurzfristige Lösung ist auch für Abwärtskompatibilitätszwecke verfügbar, wenn Codeänderungen nicht möglich sind:
 >
->* Suchen Sie mithilfe der Web-Konsole ( `/system/console/configMgr` den **Adobe Granite Workflow Configuration Service**
+>* Suchen Sie mithilfe der Web-Konsole ( `/system/console/configMgr`) den **Adobe Granite Workflow Configuration Service** .
    >
    >
 * Aktivieren Sie den **Legacymodus des Workflow-Prozesses**.
@@ -157,7 +156,7 @@ Die folgenden Prozesse führen einfache Aufgaben durch oder dienen als Beispiel.
 >
 >Sie dürfen ***keinerlei*** Änderungen im Pfad `/libs` vornehmen.
 >
->Der Grund dafür ist, dass der Inhalt von `/libs` beim nächsten Aktualisieren der Instanz überschrieben wird (und möglicherweise überschrieben wird, wenn Sie einen Hotfix oder ein Feature Pack anwenden).
+>Dies liegt daran, dass der Inhalt von `/libs` beim nächsten Upgrade Ihrer Instanz überschrieben wird (und möglicherweise überschrieben wird, wenn Sie einen Hotfix oder ein Feature Pack anwenden).
 
 ### Löschen Sie {#delete}
 
@@ -225,7 +224,7 @@ Sperrt die Nutzlast des Workflows.
 
 * **Java-Klasse:** `com.day.cq.workflow.impl.process.LockProcess`
 
-* **Payload:** JCR_PATH und JCR_UUID
+* **Nutzlast:** JCR_PATH und JCR_UUID
 * **Argumente:** Keine
 * **Zeitüberschreitung:** Ignoriert
 
@@ -240,7 +239,7 @@ Entsperrt die Nutzlast des Workflows.
 
 * **Java-Klasse:** `com.day.cq.workflow.impl.process.UnlockProcess`
 
-* **Payload:** JCR_PATH und JCR_UUID
+* **Nutzlast:** JCR_PATH und JCR_UUID
 * **Argumente:** Keine
 * **Zeitüberschreitung:** Ignoriert
 
@@ -253,7 +252,7 @@ Unter folgenden Bedingungen ist der Schritt nicht wirksam:
 
 Der folgende Prozess führt eine versionsbezogene Aufgabe aus.
 
-### CreateVersionProcess  {#createversionprocess}
+### CreateVersionProcess {#createversionprocess}
 
 Erstellt eine neue Version der Workflow-Nutzlast (AEM-Seite oder DAM-Asset).
 
@@ -262,4 +261,3 @@ Erstellt eine neue Version der Workflow-Nutzlast (AEM-Seite oder DAM-Asset).
 * **Nutzlast**: JCR-Pfad oder UUID, der auf eine Seite oder ein DAM-Asset verweist
 * **Argumente**: Keine
 * **Zeitüberschreitung**: Berücksichtigt
-
