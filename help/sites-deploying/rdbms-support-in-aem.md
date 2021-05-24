@@ -10,15 +10,14 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6a754d42-da30-4c2f-8b9c-369e1f1f92b5
 docset: aem65
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Konfiguration
+exl-id: 1e34c5ca-9e08-4b2a-901c-ab28aeb4a807
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 85%
 
 ---
-
 
 # RDBMS-Unterstützung in AEM 6.4{#rdbms-support-in-aem}
 
@@ -68,7 +67,7 @@ Wenn die Bundles erstellt wurden, befolgen Sie die nachfolgenden Schritte zum Ko
 
    1. Platzieren Sie die JDBC-JAR-Datei im neuen Ordner.
 
-1. Schließlich AEM Beginn mit den Ausführungsmodi `crx3` und `crx3rdb`:
+1. Beginnen Sie AEM mit den Ausführungsmodi `crx3` und `crx3rdb`:
 
    ```java
    java -jar quickstart.jar -r crx3,crx3rdb
@@ -104,11 +103,10 @@ Je nach dem zu verwendenden Datenbanktyp wird ein unterschiedliches URL-Zeichenf
 * `jdbc:db2://localhost:port/databasename` für DB2;
 * `jdbc:oracle:thin:localhost:port:SID` für Oracle;
 * `jdbc:mysql://localhost:3306/databasename` für MySQL und MariaDB (experimentell)
-* `jdbc:sqlserver://localhost:1453;databaseName=name` für Microsoft SQL Server (experimental).
+* `jdbc:sqlserver://localhost:1453;databaseName=name` für Microsoft SQL Server (experimentell).
 
 ## Bekannte Einschränkungen {#known-limitations}
 
 Obwohl die RDBMS-Persistenz die gleichzeitige Verwendung mehrerer AEM-Instanzen mit einer einzigen Datenbank unterstützt, trifft dies nicht auf gleichzeitige Installationen zu.
 
 Um dieses Problem zu umgehen, führen Sie zuerst die Installation mit nur einer Instanz aus und fügen Sie dann nach Abschluss derselben weitere hinzu.
-
