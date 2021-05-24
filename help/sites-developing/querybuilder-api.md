@@ -11,14 +11,13 @@ content-type: reference
 discoiquuid: 7965b7ef-dec4-441a-a012-daf1d60df0fb
 pagetitle: Query Builder API
 tagskeywords: querybuilder
-translation-type: tm+mt
-source-git-commit: a491d4e9bd9ffc68c4ba7cac3149f48cf7576ee8
+exl-id: b2288442-d055-4966-8057-8b7b7b6bff28
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2350'
 ht-degree: 91%
 
 ---
-
 
 # Query Builder-API {#query-builder-api}
 
@@ -36,13 +35,13 @@ Die REST-API ermöglicht den Zugriff auf genau die gleichen Funktionen per HTTP,
 >
 >Die QueryBuilder-API wird mit der JCR-API erstellt. Sie können Adobe Experience Manager-JCR auch abfragen, indem Sie die JCR-API innerhalb eines OSGi-Bundles verwenden. Weitere Informationen erhalten Sie unter [Abfragen von Adobe Experience Manager-Daten mit der JCR-API](https://helpx.adobe.com/de/experience-manager/using/querying-experience-manager-data-using1.html).
 
-## Gem-Sitzung  {#gem-session}
+## Gem-Sitzung   {#gem-session}
 
 [AEM Gems](https://helpx.adobe.com/de/experience-manager/kt/eseminars/gems/aem-index.html) ist eine Serie mit ausführlichen technischen Erläuterungen zu Adobe Experience Manager von Adobe-Experten. Diese Sitzung zum Query Builder ist sehr nützlich, um einen allgemeinen Überblick und Informationen zum Tool zu erhalten.
 
 >[!NOTE]
 >
->Eine ausführliche Übersicht über den Abfrage Builder finden Sie in der AEM Gem-Sitzung [Mit dem AEM Abfragegenerator erstellte Suchformulare.](https://helpx.adobe.com/de/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html)
+>Eine detaillierte Übersicht über den Query Builder finden Sie in der AEM Gem-Sitzung [Suchformulare, die mit dem AEM Querybuilder](https://helpx.adobe.com/de/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html) einfach gemacht wurden.
 
 ## Beispielabfragen {#sample-queries}
 
@@ -138,7 +137,7 @@ Standardmäßig würde der Query Builder auch die Anzahl von Treffern angeben. J
 
 Beispielsweise kann für die Benutzeroberfläche der folgende Ansatz genutzt werden:
 
-* die genaue Anzahl der Treffer abrufen und anzeigen ([SearchResult.getTotalMatches()](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/SearchResult.html#gettotalmatches) oder die Gesamtzahl in der Antwort &quot;querybuilder.json&quot;) kleiner oder gleich 100 ist;
+* Die genaue Anzahl der Treffer insgesamt ([SearchResult.getTotalMatches()](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/SearchResult.html#gettotalmatches) oder die Gesamtzahl in der querybuilder.json-Antwort) wird abgerufen und angezeigt und ist kleiner oder gleich 100.
 * Legen Sie `guessTotal` auf 100 fest, während Sie den Query Builder-Aufruf durchführen.
 
 * Die Antwort kann das folgende Ergebnis enthalten:
@@ -219,7 +218,7 @@ Für diese Abfrage wird eine *Gruppe* (mit dem Namen „`group`“) verwendet. D
 
 `"Management" and ("/content/geometrixx/en/company/management" or "/content/geometrixx/en/company/bod")`
 
-Im Beispiel wird in der Gruppe die Eigenschaft `path` mehrere Male genutzt. Um die beiden Instanzen des Prädikats zu unterscheiden und anzuordnen (für einige Prädikate ist eine Reihenfolge erforderlich), müssen Sie den Präfix für die Prädikate *N* `_ where`*N* als Sortierindex angeben. Im obigen Beispiel lauten die sich ergebenden Eigenschaften `1_path` und `2_path`.
+Im Beispiel wird in der Gruppe die Eigenschaft `path` mehrere Male genutzt. Um die beiden Instanzen des Prädikats zu unterscheiden und anzuordnen (für einige Prädikate ist eine Sortierung erforderlich), müssen Sie den Prädikaten *N* `_ where`*N* den Anordnungs-Index voranstellen. Im obigen Beispiel lauten die sich ergebenden Eigenschaften `1_path` und `2_path`.
 
 Das `p` in `p.or` ist ein spezielles Trennzeichen, mit dem angezeigt wird, dass ein `or`Parameter *der Gruppe folgt (in diesem Fall ein*) und keine Untereigenschaft der Gruppe, z. B. `1_path`.
 
@@ -434,7 +433,7 @@ Ausführung der gleichen Abfrage per HTTP mit dem Query-Builder-Servlet (JSON):
 
 ## Speichern und Laden von Abfragen {#storing-and-loading-queries}
 
-Abfragen können zur späteren Verwendung im Repository gespeichert werden. Die `QueryBuilder`-Methode stellt die folgende Signatur bereit:`storeQuery`
+Abfragen können zur späteren Verwendung im Repository gespeichert werden. `QueryBuilder` stellt die Methode &quot;`storeQuery`&quot;mit der folgenden Signatur bereit:
 
 ```java
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
@@ -478,14 +477,14 @@ Erläutern Sie **alle** Abfragen während des Entwicklungszyklus für den festge
 
 * Aktivieren Sie DEBUG-Protokolle für QueryBuilder, um eine zugrunde liegende erläuterbare XPath-Abfrage zu erhalten.
 
-   * Navigieren Sie zu https://&lt;server-address>:&lt;server-port>/system/console/slinglog. Erstellen Sie einen neuen Logger für `com.day.cq.search.impl.builder.QueryImpl` unter **DEBUG**.
+   * Navigieren Sie zu https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Erstellen Sie einen neuen Logger für `com.day.cq.search.impl.builder.QueryImpl` unter **DEBUG**.
 
 * Nachdem DEBUG für die obige Klasse aktiviert wurde, zeigen die Protokolle den von Query Builder generierten XPath an.
 * Kopieren Sie die XPath-Abfrage aus dem Protokolleintrag für die zugeordnete QueryBuilder-Abfrage. Beispiel:
 
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
-* Fügen Sie die XPath-Abfrage in [Abfrage](/help/sites-administering/operations-dashboard.md#explain-query) als XPath hinzu, um den Abfrage-Plan abzuwickeln.
+* Fügen Sie die XPath-Abfrage in [Abfrage](/help/sites-administering/operations-dashboard.md#explain-query) als XPath ein, um den Abfrageplan abzurufen.
 
 ### Abrufen von erläuterbarem XPath über den Query-Builder-Debugger {#obtain-explain-able-xpath-via-the-query-builder-debugger}
 
@@ -497,14 +496,14 @@ Erläutern Sie **alle** Abfragen während des Entwicklungszyklus für den festge
 
 * Aktivieren Sie DEBUG-Protokolle für QueryBuilder, um eine zugrunde liegende erläuterbare XPath-Abfrage zu erhalten.
 
-   * Navigieren Sie zu https://&lt;server-address>:&lt;server-port>/system/console/slinglog. Erstellen Sie einen neuen Logger für `com.day.cq.search.impl.builder.QueryImpl` unter **DEBUG**.
+   * Navigieren Sie zu https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Erstellen Sie einen neuen Logger für `com.day.cq.search.impl.builder.QueryImpl` unter **DEBUG**.
 
 * Nachdem DEBUG für die obige Klasse aktiviert wurde, zeigen die Protokolle den von Query Builder generierten XPath an.
 * Kopieren Sie die XPath-Abfrage aus dem Protokolleintrag für die zugeordnete QueryBuilder-Abfrage. Beispiel:
 
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
-* Fügen Sie die XPath-Abfrage in [Abfrage](/help/sites-administering/operations-dashboard.md#explain-query) als XPath hinzu, um den Abfrage-Plan zu erhalten.
+* Fügen Sie die XPath-Abfrage in [Abfrage](/help/sites-administering/operations-dashboard.md#explain-query) als XPath ein, um den Abfrageplan zu erhalten.
 
 **Abrufen von erläuterbarem XPath über den Query-Builder-Debugger**
 
@@ -531,7 +530,7 @@ Eine Beschreibung der Vorgehensweise zum Debuggen von Abfragen mit QueryBuilder 
 
 >[!NOTE]
 >
->Die Konfiguration der Anmelder wird im Abschnitt [Erstellen Ihrer eigenen Anmelder und Autoren](/help/sites-deploying/configure-logging.md#creating-your-own-loggers-and-writers) beschrieben.
+>Die Konfiguration der Logger wird im Abschnitt [Erstellen eigener Logger und Writer](/help/sites-deploying/configure-logging.md#creating-your-own-loggers-and-writers) beschrieben.
 
 Die Protokollausgabe (INFO-Ebene) der Query-Builder-Implementierung beim Ausführen der Abfrage, die unter „Testen und Debuggen“ beschrieben wurde:
 
@@ -569,11 +568,10 @@ com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 
 | **Javadoc** | **Beschreibung** |
 |---|---|
-| [com.day.cq.search](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/package-summary.html) | Grundlegende API für QueryBuilder und Abfrage |
+| [com.day.cq.search](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/package-summary.html) | Grundlegende QueryBuilder- und Query-API |
 | [com.day.cq.search.result](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/package-summary.html) | Ergebnis-API |
 | [com.day.cq.search.facets](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/package-summary.html) | Facetten |
 | [com.day.cq.search.facets.buckets](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | Behälter (in Facetten enthalten) |
 | [com.day.cq.search.eval](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html) | Eigenschaftenauswertungen |
 | [com.day.cq.search.facets.extractors](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Facettenextraktoren (für Auswertungen) |
-| [com.day.cq.search.writer](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/writer/package-summary.html) | JSON Result Hit Writer for Querybuilder servlet (/bin/querybuilder.json) |
-
+| [com.day.cq.search.writer](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/writer/package-summary.html) | JSON Result Hit Writer for QueryBuilder servlet (/bin/querybuilder.json) |
