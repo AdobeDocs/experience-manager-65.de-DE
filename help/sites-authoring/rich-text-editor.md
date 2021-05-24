@@ -8,14 +8,13 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 813fda6a-e877-452b-82c3-e758720e7dd0
 docset: aem65
-translation-type: tm+mt
-source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
+exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 70%
 
 ---
-
 
 # Verwenden des Rich-Text-Editors zum Erstellen von Inhalten {#use-rich-text-editor-to-author-content}
 
@@ -45,11 +44,11 @@ Diese Symbolleiste beinhaltet die folgenden Optionen:
 * **Schließen**
 * **Speichern**
 
-## Bearbeiten im Vollbildmodus {#full-screen-editing}
+## Bearbeiten im Vollbildmodus  {#full-screen-editing}
 
-Bei textbasierten Komponenten wird durch Tippen auf den Vollbildmodus in der Symbolleiste ![](do-not-localize/screen_shot_2018-03-21at163236.png) der Rich-Text-Editor geöffnet und der Rest des Seiteninhalts ausgeblendet.
+Bei textbasierten Komponenten öffnet das Tippen auf den Vollbildmodus in der Symbolleiste ![](do-not-localize/screen_shot_2018-03-21at163236.png) den Rich-Text-Editor und blendet den Rest des Seiteninhalts aus.
 
-Im Vollbildmodus werden alle konfigurierten Optionen angezeigt, die Sie zum Authoring verwenden können. Die Verfügbarkeit der Optionen [hängt von der Konfiguration](/help/sites-administering/rich-text-editor.md) ab.
+Im Vollbildmodus werden alle konfigurierten Optionen angezeigt, die Sie für die Bearbeitung verwenden können. Die Verfügbarkeit der Optionen [hängt von der Konfiguration](/help/sites-administering/rich-text-editor.md) ab.
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 
@@ -66,4 +65,4 @@ Den Vollbildmodus schließen Sie, indem Sie auf das Symbol zum Minimieren klicke
 
 >[!NOTE]
 >
->Das Kopieren verschachtelter Listen aus Microsoft Word in die RTE kann zu inkonsistenten Ergebnissen führen und erfordert möglicherweise eine manuelle Anpassung, nachdem der Text in die RTE eingefügt wurde.
+>Das Kopieren verschachtelter Listen aus Microsoft Word in den RTE kann zu inkonsistenten Ergebnissen führen und erfordert möglicherweise eine manuelle Anpassung, nachdem der Text in den RTE eingefügt wurde.
