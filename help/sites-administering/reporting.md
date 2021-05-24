@@ -11,7 +11,6 @@ content-type: reference
 discoiquuid: 7e2b30a3-75ff-4735-8038-5c5391ac36f3
 docset: aem65
 exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
-translation-type: tm+mt
 source-git-commit: 429f3ee859477fb38938fd6b9706c8006623eb03
 workflow-type: tm+mt
 source-wordcount: '2815'
@@ -34,7 +33,7 @@ Um Ihnen bei der Überwachung und Analyse des Status Ihrer Instanz zu helfen, st
 
 >[!NOTE]
 >
->Diese Berichte stehen nur in der klassischen Benutzeroberfläche zur Verfügung. Informationen zur Systemüberwachung und zum Berichte in der modernen Benutzeroberfläche finden Sie im Dashboard [Vorgänge.](/help/sites-administering/operations-dashboard.md)
+>Diese Berichte sind nur in der klassischen Benutzeroberfläche verfügbar. Informationen zur Systemüberwachung und -berichterstellung in der modernen Benutzeroberfläche finden Sie im [Vorgangs-Dashboard.](/help/sites-administering/operations-dashboard.md)
 
 Über die Konsole **Tools** kann auf alle Berichte zugegriffen werden. Wählen Sie im linken Bereich **Berichte** aus und doppelklicken Sie dann im rechten Bereich auf den benötigten Bericht, um ihn zur Anzeige und/oder Konfiguration zu öffnen.
 
@@ -89,7 +88,7 @@ Jede Spalte des Berichts verfügt über ein Dropdown-Menü. Es wird angezeigt, w
 
 Ganz rechts neben der Zelle mit dem Titel wird eine Pfeilspitze angezeigt (die nicht mit der Pfeilspitze direkt rechts neben dem Titeltext verwechselt werden sollte, die den [aktuellen Sortiermechanismus](#sorting-the-data) anzeigt).
 
-![reportcolumnNsort](assets/reportcolumnsort.png)
+![reportcolumnsort](assets/reportcolumnsort.png)
 
 Die im Menü verfügbaren Optionen hängen von der (während der Projektentwicklung vorgenommenen) Konfiguration der Spalte ab. Alle ungültigen Optionen werden ausgegraut.
 
@@ -114,7 +113,7 @@ Wenn Sie Ihren Mauszeiger über das Tortendiagramm bewegen, wird der zusammengef
 
 In geeigneten Spalten können Sie außerdem die **Filtereinstellungen** und/oder **Zusammenfassungen** im [Dropdown-Menü der Spalte](#column-drop-down-menu) konfigurieren.
 
-#### Filter  {#filters}
+#### Filter {#filters}
 
 Mithilfe der Filtereinstellungen können Sie die Kriterien für anzuzeigende Einträge festlegen. Die verfügbaren Operatoren lauten:
 
@@ -134,7 +133,7 @@ Sie können den Filter wie folgt deaktivieren:
 1. Entfernen Sie den Filtertext.
 1. Klicken Sie auf **Übernehmen**.
 
-#### Zusammenfassungen  {#aggregates}
+#### Zusammenfassungen {#aggregates}
 
 Sie können auch eine Zusammenfassungsmethode auswählen (diese können je nach ausgewählter Spalte variieren):
 
@@ -169,7 +168,7 @@ Sobald die Datenerfassung begonnen hat, können Sie Folgendes auswählen:
 
 * **Zeitraum**
 
-   Sie können zwischen den und den Datumsangaben für die anzuzeigenden Berichtsdaten wählen.
+   Sie können für die Anzeige der Berichtsdaten zwischen und wählen.
 
 * **Intervall**
 
@@ -177,8 +176,8 @@ Sobald die Datenerfassung begonnen hat, können Sie Folgendes auswählen:
 
    Wenn zum Beispiel für Februar 2011 tägliche Momentaufnahmen verfügbar sind:
 
-   * Wenn das Intervall auf `Day` eingestellt ist, wird jeder Schnappschuss als einzelner Wert im Diagramm angezeigt.
-   * Wenn das Intervall auf `Month` festgelegt ist, werden alle Snapshots für Februar in einem einzelnen Wert zusammengefasst (der im Diagramm als einzelner &quot;Punkt&quot;angezeigt wird).
+   * Wenn das Intervall auf `Day` festgelegt ist, wird jeder Schnappschuss als einzelner Wert im Diagramm angezeigt.
+   * Wenn das Intervall auf `Month` festgelegt ist, werden alle Momentaufnahmen für Februar in einem einzigen Wert zusammengefasst (in der Grafik als einzelner &quot;Punkt&quot; angezeigt).
 
 Wählen Sie Ihre Anforderungen aus und klicken Sie dann auf **Los**, um sie auf den Bericht anzuwenden. Um die Anzeige nach der Anfertigung weiterer Momentaufnahmen zu aktualisieren, klicken Sie erneut auf **Los**.
 
@@ -196,14 +195,14 @@ Wenn die Momentaufnahmen erfasst werden, können Sie:
 
 >[!NOTE]
 >
->Schnappschüsse werden unter `/var/reports/...` gespeichert, wobei der Rest des Pfads den Pfad des jeweiligen Berichts und der ID spiegelt, die beim Abschluss des Berichts erstellt wurden.
+>Momentaufnahmen werden unter `/var/reports/...` gespeichert, wobei der Rest des Pfads dem Pfad des entsprechenden Berichts und der ID entspricht, die beim Abschluss des Berichts erstellt wurden.
 >
 >
 >Alte Momentaufnahmen können manuell gelöscht werden, wenn Sie vollkommen sicher sind, dass Sie diese Instanzen nicht mehr benötigen.
 
 >[!NOTE]
 >
->Die vorkonfigurierten Berichte sind nicht leistungsintensiv, es wird jedoch empfohlen, tägliche Snapshots auf einer Produktions-Umgebung zu verwenden. Führen Sie diese täglichen Schnappschüsse nach Möglichkeit zu einer Tageszeit aus, zu der Ihre Website nicht viel Aktivität aufweist; dies kann mit dem Parameter `Daily snapshots (repconf.hourofday)` für **Day CQ Berichte Configuration** definiert werden; Weitere Informationen zum Konfigurieren finden Sie unter [OSGI-Konfiguration](/help/sites-deploying/configuring-osgi.md).
+>Die vorkonfigurierten Berichte sind nicht leistungsintensiv, es wird jedoch dennoch empfohlen, tägliche Momentaufnahmen in einer Produktionsumgebung zu verwenden. Führen Sie diese täglichen Momentaufnahmen nach Möglichkeit zu einer Tageszeit aus, zu der auf Ihrer Website nicht viel Aktivität stattfindet. Dies kann mit dem Parameter `Daily snapshots (repconf.hourofday)` für **Day CQ Reporting Configuration** definiert werden. Weitere Informationen zur Konfiguration finden Sie unter [OSGI-Konfiguration](/help/sites-deploying/configuring-osgi.md) .
 
 #### Anzeigelimits {#display-limits}
 
@@ -250,17 +249,17 @@ Dies ist ein Speicherort, an dem der Zeitraum für die Erfassung [früherer Date
 
 * **Stammpfad**  (*nur aktiv für bestimmte Berichte*)
 
-   Verwenden Sie diese Option, um den Bericht auf einen (Unter-)Abschnitt des Repositorys zu beschränken.
+   Verwenden Sie dies, um den Bericht auf einen (Unter-)Abschnitt des Repositorys zu beschränken.
 
 * **Berichtsverarbeitung**
 
    * **Daten automatisch aktualisieren**
 
-      Die Berichtsdaten werden bei jeder Aktualisierung der Berichtsdefinition aktualisiert.
+      Die Berichtsdaten werden jedes Mal aktualisiert, wenn Sie die Berichtsdefinition aktualisieren.
 
    * **Daten manuell aktualisieren**
 
-      Diese Option kann verwendet werden, um Verzögerungen zu vermeiden, die durch automatische Aktualisierungsvorgänge bei einer großen Datenmenge verursacht werden.
+      Diese Option kann verwendet werden, um Verzögerungen zu verhindern, die durch automatische Aktualisierungsvorgänge bei einem großen Datenvolumen verursacht werden.
 
       Diese Auswahl zeigt an, dass die Berichtsdaten manuell aktualisiert werden müssen, wenn sich ein beliebiger Aspekt der Berichtskonfiguration verändert hat. Außerdem bedeutet dies, dass die Berichtstabelle bei jeder Änderung eines Aspekts der Konfiguration ausgeblendet wird.
 
@@ -278,7 +277,7 @@ Durch das Klicken auf **Daten laden** werden die Daten neu geladen und der angez
 
 Die Auswahl von „Daten manuell aktualisieren“ bedeutet Folgendes:
 
-1. Sobald Sie die Berichtskonfiguration ändern, wird die Tabelle der Berichtsdaten entfernt.
+1. Sobald Sie die Berichtkonfiguration ändern, wird die Tabelle der Berichtsdaten ausgeblendet.
 
    Wenn Sie beispielsweise den Sortiermechanismus einer Spalte ändern, werden die Daten nicht angezeigt.
 
@@ -294,7 +293,7 @@ Wenn Sie den Bericht **beenden**, geschieht Folgendes:
 
 Mit diesem Dialogfeld können Sie Ihren eigenen Titel und Ihre eigene Beschreibung für den resultierenden Bericht definieren oder aktualisieren.
 
-![reportOberfläche](assets/reportfinish.png)
+![reportfinish](assets/reportfinish.png)
 
 ## Berichttypen {#report-types}
 
@@ -325,7 +324,7 @@ Bedeutet, dass Sie zum Beispiel Folgendes sehen können:
 
 Alle Komponenten werden als Produktstandard und projektspezifisch einbezogen. Mithilfe des Dialogfelds **Bearbeiten** kann der Benutzer auch ein **Stammverzeichnis** festlegen, das den Startpunkt des Berichts definiert. Alle Komponenten unter diesem Stammverzeichnis werden für den Bericht berücksichtigt.
 
-![](assets/reportcomponent.png) ![reportcomponentReportCompentall](assets/reportcompentall.png)
+![](assets/reportcomponent.png) ![reportcomponentreportcompentall](assets/reportcompentall.png)
 
 ### Speichernutzung {#disk-usage}
 
@@ -337,10 +336,10 @@ Der Bericht beginnt im Stamm ( / ) des Repositorys. Durch das Klicken auf einen 
 
 ### Konsistenzprüfung {#health-check}
 
-Dieser Bericht analysiert das aktuelle Anforderungsprotokoll:
+Dieser Bericht analysiert das aktuelle Anfrageprotokoll:
 
 `<cq-installation-dir>/crx-quickstart/logs/request.log`
-, um Ihnen bei der Ermittlung der teuersten Anforderung(en) innerhalb eines bestimmten Zeitraums zu helfen.
+um Ihnen zu helfen, die teuersten Anforderungen innerhalb eines bestimmten Zeitraums zu identifizieren.
 
 Zum Generieren des Berichts können Sie Folgendes Festlegen:
 
@@ -352,7 +351,7 @@ Zum Generieren des Berichts können Sie Folgendes Festlegen:
 
 * **max. Ergebnisse**
 
-   Maximale Anzahl der Ausgabelinien.
+   Maximale Anzahl an Ausgabezeilen.
 
    Standard: `50`
 
@@ -364,17 +363,17 @@ Zum Generieren des Berichts können Sie Folgendes Festlegen:
 
 * **E-Mail-Adresse**
 
-   Senden Sie die Ergebnisse an eine E-Mail-Adresse.
+   Ergebnisse an eine E-Mail-Adresse senden.
 
    Optional; Standard: leer
 
 * **Täglich ausführen um (hh:mm)**
 
-   Geben Sie an, wie lange der Bericht täglich automatisch ausgeführt werden soll.
+   Geben Sie eine Zeit an, zu der der Bericht automatisch täglich ausgeführt werden soll.
 
    Optional; Standard: leer
 
-![reporthohealth](assets/reporthealth.png)
+![reporthhealth](assets/reporthealth.png)
 
 ### Seitenaktivitätsbericht {#page-activity-report}
 
@@ -395,7 +394,7 @@ Bedeutet, dass Sie Folgendes überwachen können:
 * Seiten, die am häufigsten/seltensten geändert wurden
 * Aktivste/am wenigsten aktive Benutzer
 
-Der Seitenaktivitätsbericht bezieht alle Informationen aus dem Auditprotokoll. Standardmäßig ist der Stammpfad für das Prüfprotokoll unter `/var/audit/com.day.cq.wcm.core.page` konfiguriert.
+Der Seitenaktivitätsbericht bezieht alle Informationen aus dem Auditprotokoll. Standardmäßig ist der Stammpfad im Auditprotokoll unter `/var/audit/com.day.cq.wcm.core.page` konfiguriert.
 
 ![reportpageActivity](assets/reportpageactivity.png)
 
@@ -466,21 +465,21 @@ Das Dialogfeld „Generische Spalte“ wird geöffnet, wenn Sie entweder:
 
 * **Eigenschaft**
 
-   Der Eigenschaftsname, wie er im Repository gespeichert ist, normalerweise im Profil des Benutzers.
+   Der Eigenschaftsname, der im Repository gespeichert ist, normalerweise im Profil des Benutzers.
 
 * **Pfad**
 
-   Normalerweise wird die Eigenschaft von `profile` genommen.
+   Normalerweise wird die Eigenschaft aus `profile` übernommen.
 
 * **Typ**
 
    Wählen Sie den Feldtyp aus `String`, `Number`, `Integer`, `Date`.
 
-* **Standard-Aggregat**
+* **Standardaggregat**
 
-   Dies definiert das standardmäßig verwendete Aggregat, wenn die Gruppierung in einem Bericht mit mindestens einer gruppierten Spalte aufgehoben wird. Wählen Sie das gewünschte Aggregat aus `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
+   Dies definiert das standardmäßig verwendete Aggregat, wenn die Gruppierung der Spalte in einem Bericht mit mindestens einer gruppierten Spalte aufgehoben wird. Wählen Sie das erforderliche Aggregat aus `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
 
-   Beispielsweise bedeutet *Count* für ein `String`-Feld, dass die Anzahl der eindeutigen `String`-Werte für die Spalte im aggregierten Status angezeigt wird.
+   Beispielsweise bedeutet *Count* für ein `String`-Feld, dass die Anzahl unterschiedlicher `String`-Werte für die Spalte im aggregierten Status angezeigt wird.
 
 In der Spalte **Erweitert** können Sie außerdem die verfügbaren Zusammenfassungen und Filter festlegen:
 
@@ -504,7 +503,7 @@ Dies bedeutet, dass Sie:
 
 * die durchschnittliche Dauer der Workflows überwachen können. Wenn dies regelmäßig passiert, können Probleme innerhalb des Workflows hervorgehoben werden.
 
-![reportworkflowIntent](assets/reportworkflowintance.png)
+![reportworkflowintanz](assets/reportworkflowintance.png)
 
 ### Workflow-Bericht {#workflow-report}
 
@@ -536,7 +535,7 @@ Da in der Veröffentlichungsumgebung keine Berichtskonfiguration zulässig ist, 
 
 >[!CAUTION]
 >
->Der Zugang zu diesen Berichten kann ein Sicherheitsproblem sein. Daher empfehlen wir Ihnen, den Dispatcher so zu konfigurieren, dass `/etc/reports` nicht für externe Besucher verfügbar ist. Weitere Informationen finden Sie unter [Sicherheitscheckliste](security-checklist.md).
+>Der Zugriff auf diese Berichte kann ein Sicherheitsproblem sein. Daher empfehlen wir, den Dispatcher so zu konfigurieren, dass `/etc/reports` nicht für externe Besucher verfügbar ist. Weitere Informationen finden Sie unter [Sicherheitscheckliste](security-checklist.md).
 
 ## Für die Ausführung von Berichten benötigte Berechtigungen {#permissions-needed-for-running-reports}
 
