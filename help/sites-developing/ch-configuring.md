@@ -8,16 +8,15 @@ contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-translation-type: tm+mt
-source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1850'
 ht-degree: 90%
 
 ---
 
-
-# Konfigurieren von ContextHub  {#configuring-contexthub}
+# Konfigurieren von ContextHub   {#configuring-contexthub}
 
 ContextHub ist ein Framework zum Speichern, Ändern und Darstellen von Kontextdaten. Ausführlichere Informationen zu ContextHub finden Sie in der [Entwicklerdokumentation](/help/sites-developing/contexthub.md). ContextHub ersetzt [ClientContext](/help/sites-administering/client-context.md) auf der Touch-Benutzeroberfläche.
 
@@ -40,7 +39,7 @@ oder
 
 >[!NOTE]
 >
->[Aufgrund der Repository-Restrukturierung in AEM 6.4 wurde ](/help/sites-deploying/repository-restructuring.md) der Speicherort der ContextHub-Konfigurationen von  `/etc/cloudsettings` folgenden Werten geändert:
+>[Aufgrund der Repository-Umstrukturierung in AEM 6.4 wurde ](/help/sites-deploying/repository-restructuring.md) der Speicherort von ContextHub-Konfigurationen von  `/etc/cloudsettings` zu:
 >
 > * `/libs/settings/cloudsettings`
 > * `/conf/global/settings/cloudsettings`
@@ -105,9 +104,9 @@ Die Eigenschaften von UI-Modulen enthalten eine Detailkonfiguration, in der Sie 
 | [contexthub.datetime](/help/sites-developing/ch-samplemodules.md#contexthub-datetime-ui-module-type) | Zeigt Informationen zu Datum und Uhrzeit an | datetime |
 | [contexthub.device](/help/sites-developing/ch-samplemodules.md#contexthub-device-ui-module-type) | Client-Gerät anzeigen | emulators |
 | [contexthub.location](/help/sites-developing/ch-samplemodules.md#contexthub-location-ui-module-type) | Zeigt den Breiten- und Längengrad des Clients sowie den Standort auf einer Karte an. Sie können den Standort ändern. | Geolocation |
-| [contexthub.screen-orientation](/help/sites-developing/ch-samplemodules.md#contexthub-screen-orientation-ui-module-type) | Zeigt die Bildschirmausrichtung des Geräts (Querformat oder Hochformat) an | Emulatoren |
+| [contexthub.screen-orientation](/help/sites-developing/ch-samplemodules.md#contexthub-screen-orientation-ui-module-type) | Zeigt die Bildschirmausrichtung des Geräts (Querformat oder Hochformat) an | emulators |
 | [contexthub.tagcloud](/help/sites-developing/ch-samplemodules.md#contexthub-tagcloud-ui-module-type) | Zeigt Statistiken zu Seiten-Tags an | tagcloud |
-| [granite.profile](/help/sites-developing/ch-samplemodules.md#granite-profile-ui-module-type) | Zeigt Informationen zum Profil des aktuellen Benutzers an, einschließlich authorizedID, displayName und familyName. Sie können den Wert von displayName und familyName ändern. | Profil |
+| [granite.profile](/help/sites-developing/ch-samplemodules.md#granite-profile-ui-module-type) | Zeigt die Profilinformationen für den aktuellen Benutzer an, einschließlich authorizableID, displayName und familyName. Sie können den Wert von displayName und familyName ändern. | Profil |
 
 1. Klicken oder tippen Sie auf der Experience Manager-Leiste auf „Tools“ > „Sites“ > „ContextHub“.
 1. Klicken oder tippen Sie auf den Konfigurations-Container, dem Sie ein UI-Modul hinzufügen möchten.
@@ -143,12 +142,12 @@ In AEM werden die folgenden Beispiele für Store-Kandidaten bereitgestellt, die 
 | Filialtyp | Beschreibung |
 |---|---|
 | [aem.segmentation](/help/sites-developing/ch-samplestores.md#aem-segmentation-sample-store-candidate) | Store für gelöste und ungelöste ContextHub-Segmente. Ruft automatisch Segmente aus dem ContextHub SegmentManager zurück |
-| [aem.resolvedsegmente](/help/sites-developing/ch-samplestores.md#aem-resolvedsegments-sample-store-candidate) | Speichert die aktuell gelösten Segmente. Hört auf den ContextHub SegmentManager-Dienst automatisch, um den Store automatisch zu aktualisieren |
+| [aem.resolvedsegments](/help/sites-developing/ch-samplestores.md#aem-resolvedsegments-sample-store-candidate) | Speichert die aktuell gelösten Segmente. Hört auf den ContextHub SegmentManager-Dienst automatisch, um den Store automatisch zu aktualisieren |
 | [contexthub.geolocation](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) | Speichert den Breiten- und Längengrad des Browser-Standorts. |
 | [contexthub.datetime](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate) | Speichert das aktuelle Datum, die aktuelle Uhrzeit und die aktuelle Saison für den Browser-Standort |
 | [granite.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) | Definiert Eigenschaften und Funktionen für eine Reihe von Geräten und erkennt das aktuelle Client-Gerät. |
 | [contexthub.generic-jsonp](/help/sites-developing/ch-samplestores.md#contexthub-generic-jsonp-sample-store-candidate) | Ruft Daten von einem JSONP-Dienst ab und speichert sie |
-| [granite.Profil](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) | Speichert die Profildaten für den aktuellen Benutzer. |
+| [granite.profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) | Speichert die Profildaten für den aktuellen Benutzer. |
 | [contexthub.surferinfo](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) | Speichert die Informationen zum Client, z. B. Geräteinformationen, Browser-Typ und Fensterausrichtung. |
 | [contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) | Speichert Seiten-Tags und Tag-Zählungen |
 
@@ -169,7 +168,7 @@ In AEM werden die folgenden Beispiele für Store-Kandidaten bereitgestellt, die 
 1. (Optional) Geben Sie im Feld „Detailkonfiguration (JSON)“ ein JSON-Objekt ein, um die Standardkonfiguration für den Store außer Kraft zu setzen.
 1. Klicken oder tippen Sie auf „Speichern“.
 
-## Beispiel: Verwenden eines JSONP-Service   {#example-using-a-jsonp-service}
+## Beispiel: Verwenden eines JSONP-Service    {#example-using-a-jsonp-service}
 
 In diesem Beispiel wird veranschaulicht, wie Sie einen Store konfigurieren und die Daten in einem UI-Modul anzeigen. In diesem Beispiel wird der MD5-Service der Website „jsontest.com“ als Datenquelle für einen Store verwendet. Der Service gibt den MD5-Hashcode einer bestimmten Zeichenfolge im JSON-Format zurück.
 
@@ -218,7 +217,7 @@ Fügen Sie der ContextHub-Symbolleiste ein UI-Modul hinzu, um die Daten anzuzeig
 
 ![chlimage_1-323](assets/chlimage_1-323.png)
 
-Verwenden Sie das Verfahren unter [Hinzufügen eines UI-Moduls](#adding-a-ui-module), um das UI-Modul einem vorhandenen UI-Modus hinzuzufügen, z. B. dem Beispiel für den Perona-UI-Modus. Verwenden Sie für das UI-Modul die folgenden Eigenschaftswerte:
+Verwenden Sie das Verfahren unter [Hinzufügen eines UI-Moduls](#adding-a-ui-module), um das UI-Modul einem vorhandenen UI-Modus hinzuzufügen, z. B. dem Perona-UI-Beispielmodus. Verwenden Sie für das UI-Modul die folgenden Eigenschaftswerte:
 
 * **UI-Modultitel:** MD5
 * **Modultyp:** contexthub.base
@@ -256,7 +255,7 @@ Verwenden Sie CRXDE Lite, um die Eigenschaft `debug` unter auf **true** festzule
 
 >[!NOTE]
 >
->Bei ContextHub-Konfigurationen, die sich noch unter ihren veralteten Pfaden befinden, ist der Speicherort für `debug property` `/libs/settings/cloudsettings/legacy/contexthub` .
+>Für ContextHub-Konfigurationen, die sich noch unter ihren alten Pfaden befinden, lautet der Speicherort für `debug property` `/libs/settings/cloudsettings/legacy/contexthub` .
 
 ### Unbeaufsichtigter Modus {#silent-mode}
 
@@ -278,14 +277,14 @@ ContextHub-Konfigurationen werden in einem Ordner mit dem Namen `contexthub` unt
 * `/conf/global/settings/cloudsettings`
 * `/conf/<tenant>/settings/cloudsettings`
 
-Nach einer Aktualisierung wird die Sicherung in einem Ordner mit dem Namen `contexthub` unter einem Knoten mit dem Namen:
+Nach einem Upgrade wird die Sicherung in einem Ordner mit dem Namen `contexthub` unter einem Knoten mit dem Namen gespeichert:
 
 `/conf/global/settings/cloudsettings/default-pre-upgrade_yyyymmdd_xxxxxxx` oder
 `/conf/<tenant>/settings/cloudsettings/default-pre-upgrade_yyyymmdd_xxxxxxx`
 
-Der Abschnitt `yyyymmdd` des Knotennamens ist das Datum, an dem die Aktualisierung durchgeführt wurde.
+Der `yyyymmdd`-Teil des Knotennamens ist das Datum, an dem die Aktualisierung durchgeführt wurde.
 
-Um Ihre ContextHub-Konfigurationen wiederherzustellen, kopieren Sie mithilfe der CRXDE Lite die Knoten, die Ihre Stores, UI-Modi und UI-Module darstellen, von unterhalb des Knotens `default-pre-upgrade_yyyymmdd_xxxxxx` nach unten:
+Um Ihre ContextHub-Konfigurationen wiederherzustellen, kopieren Sie mithilfe der CRXDE Lite die Knoten, die Ihre Stores, Benutzeroberflächenmodi und Benutzeroberflächenmodule darstellen, von unterhalb des Knotens `default-pre-upgrade_yyyymmdd_xxxxxx` nach unten:
 
 * `/conf/global/settings/cloudsettings` oder
 * `/conf/<tenant>/settings/cloudsettings`
