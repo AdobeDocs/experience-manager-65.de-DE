@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 1368347a-9b65-4cfc-87e1-62993dc627fd
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 188434543403fab48f79be06356b86e132e2888a
+exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1094'
 ht-degree: 97%
 
 ---
-
 
 # Arbeiten mit Seitenversionen{#working-with-page-versions}
 
@@ -27,7 +26,7 @@ Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem besti
 * Wiederherstellen einer früheren Seitenversion, um z. B. eine Änderung rückgängig zu machen
 * Vergleichen der aktuellen Version einer Seite mit einer früheren Version, wobei die Unterschiede in Text und Bildern hervorgehoben sind
 
-## Erstellen einer neuen Version   {#creating-a-new-version}
+## Erstellen einer neuen Version    {#creating-a-new-version}
 
 Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 
@@ -129,7 +128,7 @@ So vergleichen Sie eine frühere Version mit der aktuellen Seite:
 
 1. Wählen Sie **Mit akt. Version vergleichen** aus. Die Seite [Differenz](/help/sites-authoring/page-diff.md) wird geöffnet. Sie enthält alle vorhandenen Unterschiede.
 
-## Timewarp   {#timewarp}
+## Timewarp  {#timewarp}
 
 Timewarp ist eine Funktion, die den *Veröffentlichungsstatus* einer Seite zu einer bestimmten Zeit in der Vergangenheit simuliert.
 
@@ -152,11 +151,11 @@ Timewarp ist ein [Modus](/help/sites-authoring/author-environment-tools.md#page-
 
 1. Legen Sie im Dialogfeld ein Datum und eine Uhrzeit fest und tippen/klicken Sie auf **Datum einstellen**. Wenn Sie keine Zeit auswählen, wird die aktuelle Zeit standardmäßig eingestellt.
 
-   ![wwpv-02](assets/wwpv-02.png)
+   ![www-02](assets/wwpv-02.png)
 
 1. Die Seite wird entsprechend dem eingestellten Datum angezeigt. Der Timewarp-Modus ist durch die blaue Statusleiste am oberen Fensterrand gekennzeichnet. Verwenden Sie die Links in der Statusleiste, um ein neues Datum auszuwählen oder den Timewarp-Modus zu beenden.
 
-   ![wwpv-03](assets/wwpv-03.png)
+   ![www-03](assets/wwpv-03.png)
 
 ### Timewarp-Beschränkungen {#timewarp-limitations}
 
@@ -172,4 +171,4 @@ Timewarp versucht, eine Seite zu einem bestimmten Zeitpunkt zu reproduzieren. Au
 
 >[!CAUTION]
 >
->Timewarp wurde als Tool entwickelt, um Autoren beim Verstehen und Erstellen ihres Inhalts zu unterstützen. Es ist nicht als Prüfprotokoll oder zu rechtlichen Zwecken gedacht.
+>Timewarp wurde als Tool entwickelt, um Autoren beim Verstehen und Erstellen ihrer Inhalte zu unterstützen. Es ist nicht als Prüfprotokoll oder zu rechtlichen Zwecken gedacht.
