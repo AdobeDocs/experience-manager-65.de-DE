@@ -10,14 +10,13 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 3649cffb-418a-4ad6-862f-56346a831b0b
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 743512254850698a32fd77151e2278dd8cc4ce7d
+exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 80%
 
 ---
-
 
 # Der Bulk Editor{#the-bulk-editor}
 
@@ -78,19 +77,19 @@ So bearbeiten Sie mit dem Bulk Editor mehrere Elemente gleichzeitig:
   </tr>
   <tr>
    <td>Stammverzeichnis</td>
-   <td>Gibt den Stammpfad an, den der Masseneditor durchsucht.<br /> Beispiel, <code>/content/geometrixx/en</code>. Der Bulk Editor durchsucht alle untergeordneten Knoten.</td>
+   <td>Gibt den Stammpfad an, den der Bulk Editor durchsucht.<br /> Beispiel, <code>/content/geometrixx/en</code>. Der Bulk Editor durchsucht alle untergeordneten Knoten.</td>
   </tr>
   <tr>
    <td>Abfrage-Parameter</td>
-   <td>Geben Sie mithilfe der GQL-Parameter die Suchzeichenfolge ein, nach der der Masseneditor im Repository suchen soll. <code>type:Page</code> sucht beispielsweise nach allen Seiten im Stammpfad, <code>text:professional</code> sucht nach allen Seiten, die das Wort "professionell"enthalten, und <code>"jcr:title":English</code> sucht nach allen Seiten, die "Englisch"als Titel haben. Sie können nur nach Zeichenfolgen suchen.</td>
+   <td>Geben Sie mithilfe von GQL-Parametern die Suchzeichenfolge ein, nach der der Bulk Editor im Repository suchen soll. <code>type:Page</code> sucht beispielsweise nach allen Seiten im Stammverzeichnis, <code>text:professional</code> sucht nach allen Seiten, die das Wort "professionell"enthalten, und <code>"jcr:title":English</code> sucht nach allen Seiten, die "Englisch"als Titel haben. Sie können nur nach Zeichenfolgen suchen.</td>
   </tr>
   <tr>
    <td>Kontrollkästchen "Inhaltsmodus"</td>
-   <td>Aktivieren Sie dieses Kontrollkästchen, um Eigenschaften innerhalb des Unterknotens <code>jcr:content</code> der Suchergebnisse zu lesen, falls vorhanden. Diese Option ist nur für Seiten nutzbar. Eigenschaftsnamen erhalten das Präfix <code>"jcr:content/"</code></td>
+   <td>Aktivieren Sie dieses Kontrollkästchen, um Eigenschaften im Unterknoten <code>jcr:content</code> der Suchergebnisse zu lesen, sofern vorhanden. Diese Option ist nur für Seiten nutzbar. Eigenschaftsnamen erhalten das Präfix <code>"jcr:content/"</code></td>
   </tr>
   <tr>
    <td>Eigenschaften/Spalten</td>
-   <td>Aktivieren Sie die Kontrollkästchen der Eigenschaften, die vom Masseneditor zurückgegeben werden sollen. Die ausgewählten Eigenschaften stellen die Spaltenüberschriften im Ergebnisbereich dar. Standardmäßig wird der Knotenpfad in den Ergebnissen angezeigt.</td>
+   <td>Aktivieren Sie die Kontrollkästchen für die Eigenschaften, die der Bulk Editor zurückgeben soll. Die ausgewählten Eigenschaften stellen die Spaltenüberschriften im Ergebnisbereich dar. Standardmäßig wird der Knotenpfad in den Ergebnissen angezeigt.</td>
   </tr>
   <tr>
    <td>Benutzerdefinierte Eigenschaften/Spalten</td>
@@ -120,10 +119,10 @@ Im Beispiel oben werden alle Seiten, die Ihren Suchkriterien entsprechen, zurüc
 
 #### Weitere GQL-Abfrageparameter {#additional-gql-query-parameters}
 
-* **path:** Nur Suchknoten unterhalb dieses Pfades. Wenn Sie mehr als einen Begriff mit einem Pfadpräfix festlegen, wird nur der letzte berücksichtigt.
-* **type:** Nur zurückgegebene Nodes der angegebenen Node-Typen. Das schließt primäre und Mixin-Typen ein. Sie können mehrere Knotentypen durch Kommas voneinander getrennt festlegen. GQL gibt Knoten zurück, die einen der festgelegten Typen aufweisen.
-* **order:** Ordnen Sie das Ergebnis nach den angegebenen Eigenschaften an. Sie können mehrere Eigenschaftsnamen durch Kommas voneinander getrennt festlegen. Um das Ergebnis in absteigender Reihenfolge zu sortieren, stellen Sie dem Eigenschaftsnamen ein Minuszeichen voran. Beispiel: order:-name. Ein Pluszeichen gibt das Ergebnis in aufsteigender Reihenfolge zurück. Dies ist die Standardeinstellung.
-* **limit:** begrenzt die Anzahl der Ergebnisse mit einem Intervall. Beispiel: limit:10..20 Bitte beachten Sie, dass das Intervall auf null basiert, der Beginn inklusiv und das Ende exklusiv ist. Sie können auch eine offene Intervallbegrenzung festlegen: limit:10.. oder limit:..20 Wenn die Punkte weggelassen werden und nur ein Wert angegeben ist, gibt GQL maximal diese Anzahl von Ergebnissen zurück. Beispiel: limit:10 (gibt die ersten 10 Ergebnisse zurück)
+* **path:** sucht nur Knoten unter diesem Pfad. Wenn Sie mehr als einen Begriff mit einem Pfadpräfix festlegen, wird nur der letzte berücksichtigt.
+* **type:** gibt nur Knoten der angegebenen Knotentypen zurück. Das schließt primäre und Mixin-Typen ein. Sie können mehrere Knotentypen durch Kommas voneinander getrennt festlegen. GQL gibt Knoten zurück, die einen der festgelegten Typen aufweisen.
+* **order:** sortiert das Ergebnis nach den angegebenen Eigenschaften. Sie können mehrere Eigenschaftsnamen durch Kommas voneinander getrennt festlegen. Um das Ergebnis in absteigender Reihenfolge zu sortieren, stellen Sie dem Eigenschaftsnamen ein Minuszeichen voran. Beispiel: order:-name. Ein Pluszeichen gibt das Ergebnis in aufsteigender Reihenfolge zurück. Dies ist die Standardeinstellung.
+* **limit:** begrenzt die Anzahl der Ergebnisse mithilfe eines Intervalls. Beispiel: limit:10..20 Bitte beachten Sie, dass das Intervall auf null basiert, der Beginn inklusiv ist und das Ende exklusiv ist. Sie können auch eine offene Intervallbegrenzung festlegen: limit:10.. oder limit:..20 Wenn die Punkte weggelassen werden und nur ein Wert angegeben ist, gibt GQL höchstens diese Anzahl an Ergebnissen zurück. Beispiel: limit:10 (gibt die ersten 10 Ergebnisse zurück)
 
 ### Exportieren von Inhalten {#exporting-content}
 
@@ -156,7 +155,7 @@ Standardmäßig ist die Importfunktion ausgeblendet, wenn Sie den Bulk Editor ö
 So importieren Sie Inhalte:
 
 1. Öffnen Sie den Bulk Editor.
-1. hinzufügen `?hib=false` zur URL, z. B.:
+1. Fügen Sie `?hib=false` zur URL hinzu, z. B.:
    `https://localhost:4502/etc/importers/bulkeditor.html?hib=false`
 1. Wählen Sie **Importieren**.
 1. Wählen Sie die Datei `.tsv` aus. Die Daten werden in das Repository importiert.
