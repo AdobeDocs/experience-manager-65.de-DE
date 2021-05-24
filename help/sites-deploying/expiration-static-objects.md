@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 73f37b3c-5dbe-4132-bb60-daa8de871884
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Konfiguration
+exl-id: bfd5441c-19cc-4fa8-b597-b1221465f75d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 95%
 
 ---
-
 
 # Ablauf statischer Objekte{#expiration-of-static-objects}
 
@@ -76,7 +75,7 @@ Alle Dateien, die nicht dynamisch sind und im Laufe der Zeit nicht geändert wer
    </Location>
    ```
 
-   Hierdurch wird ermöglicht, dass der temporäre Cache (etwa der Browsercache) CSS-, JavaScript-, PNG- und GIF-Dateien einen Tag lang in Clientcaches speichert. Obwohl dieses Beispiel die globalen Einstellungen für alles unterhalb von `/content` und `/etc/designs` veranschaulicht, sollten Sie sie granularer gestalten.
+   Hierdurch wird ermöglicht, dass der temporäre Cache (etwa der Browsercache) CSS-, JavaScript-, PNG- und GIF-Dateien einen Tag lang in Clientcaches speichert. Obwohl dieses Beispiel die globalen Einstellungen für alles unterhalb von `/content` und `/etc/designs` veranschaulicht, sollten Sie es detaillierter gestalten.
 
    Abhängig vom Aktualisierungsintervall der Website käme für Sie ggf. auch das Caching von HTML-Seiten in Frage. Ein angemessener Zeitraum wäre etwa 1 Stunde:
 
