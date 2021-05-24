@@ -1,7 +1,7 @@
 ---
 title: Experience Fragments
-seo-title: Erlebnisfragmente
-description: Erlebnisfragmente
+seo-title: Experience Fragments
+description: Experience Fragments
 seo-description: 'null'
 uuid: 9a1d12ef-5690-4a2e-8635-a710775efa39
 contentOwner: User
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 4c5b52c3-5e23-4125-9306-48bf2ded23cb
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 96%
 
 ---
-
 
 # Experience Fragments{#experience-fragments}
 
@@ -46,7 +45,7 @@ Experience Fragments können in folgenden Fällen verwendet werden:
 >    `experience-fragments-editors`
 Wenden Sie sich an Ihren Systemadministrator, falls Probleme auftreten.
 
-## Wann ist die Verwendung von Experience Fragments sinnvoll?   {#when-should-you-use-experience-fragments}
+## Wann ist die Verwendung von Experience Fragments sinnvoll?    {#when-should-you-use-experience-fragments}
 
 Experience Fragments sollten in folgenden Fällen verwendet werden:
 
@@ -160,7 +159,7 @@ Gehen Sie zum Erstellen eines Experience Fragment folgendermaßen vor:
 
    ![xf-01](assets/xf-01.png)
 
-1. Navigieren Sie zum gewünschten Ordner und wählen Sie **Erstellen**.
+1. Navigieren Sie zum gewünschten Ordner und wählen Sie **Erstellen** aus.
 
    ![xf-02](assets/xf-02.png)
 
@@ -224,7 +223,7 @@ Je nach Ihren Anforderungen können Sie Varianten eines Experience Fragment erst
    * **Beschreibung**
    * **Varianten-Tags**
 
-   ![xf-08](assets/xf-06.png)
+   ![xf-06](assets/xf-06.png)
 
 1. Bestätigen Sie Ihre Auswahl mit der Option **Fertig** (Häkchen). Daraufhin wird die neue Variante im Bedienfeld angezeigt:
 
@@ -240,7 +239,7 @@ Jetzt können Sie das Experience Fragment auf Ihren Seiten verwenden:
 
 1. Erstellen Sie eine Instanz der Experience-Fragment-Komponente, indem Sie die Komponente aus dem Komponenten-Browser auf das Seitenabsatzsystem ziehen:
 
-   ![xf-06](assets/xf-08.png)
+   ![xf-08](assets/xf-08.png)
 
 1. Fügen Sie das eigentliche Experience Fragment zur Komponenteninstanz hinzu, indem Sie einen der folgenden Schritte ausführen:
 
