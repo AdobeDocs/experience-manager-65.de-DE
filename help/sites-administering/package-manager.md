@@ -10,14 +10,13 @@ topic-tags: content
 content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 03967fcdc9685c9a8bf1dead4bd5e389603ff91b
+exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '3934'
 ht-degree: 80%
 
 ---
-
 
 # Arbeiten mit Paketen{#how-to-work-with-packages}
 
@@ -27,7 +26,7 @@ Sie können von den folgenden Seiten aus auf Pakete zugreifen und/oder Pakete ve
 
 * [Package Manager](#package-manager), mit dessen Hilfe Sie die Pakete auf der lokalen AEM-Instanz verwalten.
 
-* [Softwareverteilung](#software-distribution), ein zentralisierter Server, der sowohl öffentlich verfügbare als auch private Pakete für Ihre Firma enthält. Die öffentlichen Pakete können Hotfixes, neue Funktionen, Dokumentationen usw. enthalten.
+* [Softwareverteilung](#software-distribution), ein zentralisierter Server, der sowohl öffentlich verfügbare als auch private Pakete für Ihr Unternehmen enthält. Die öffentlichen Pakete können Hotfixes, neue Funktionen, Dokumentationen usw. enthalten.
 
 Sie können Pakete zwischen Package Manager, Software Distribution und Ihrem Dateisystem übertragen.
 
@@ -37,7 +36,7 @@ Ein Paket ist eine Zip-Datei mit Repository-Inhalten in Form einer Dateisystem-S
 
 Pakete enthalten sowohl Seiteninhalte als auch projektspezifische Inhalte, die mithilfe von Filtern ausgewählt werden.
 
-Ein Paket enthält auch Vault-Metadaten, einschließlich der Filterdefinitionen und Import-Konfigurationsinformationen. Zusätzliche Inhaltseigenschaften (die nicht für die Extraktion von Paketen verwendet werden) können in das Paket aufgenommen werden, z. B. eine Beschreibung, ein visuelles Bild oder ein Symbol. Diese Eigenschaften dienen nur dem Benutzer des Inhaltspakets und nur zu Informationszwecken.
+Ein Paket enthält auch Vault-Metadaten, einschließlich der Filterdefinitionen und Import-Konfigurationsinformationen. Zusätzliche Inhaltseigenschaften (die nicht für die Paketextraktion verwendet werden) können in das Paket aufgenommen werden, z. B. eine Beschreibung, ein visuelles Bild oder ein Symbol. Diese Eigenschaften dienen nur dem Inhaltspaket-Verbraucher und Informationszwecken.
 
 >[!NOTE]
 >
@@ -56,11 +55,11 @@ Sie können die folgenden Aktionen hinsichtlich der Pakete ausführen:
 * Pakete von AEM in das Dateisystem herunterladen
 * Hochladen von Paketen aus Ihrem Dateisystem in Ihre lokale AEM-Instanz
 * Validieren von Paketinhalten vor der Installation
-* Führen Sie eine Trockenausführungsinstallation durch
+* Führen Sie eine Trockenlaufinstallation durch
 * Pakete installieren (AEM installiert Pakete nach dem Hochladen nicht automatisch)
 * Pakete löschen
-* Herunterladen von Paketen wie Hotfixes aus der Software-Distribution-Bibliothek
-* Hochladen von Paketen in den Firma-internen Bereich der Softwareverteilungsbibliothek
+* Pakete wie Hotfixes aus der Software Distribution-Bibliothek herunterladen
+* Laden Sie Pakete in den unternehmensinternen Abschnitt der Software Distribution-Bibliothek hoch.
 
 ## Paketinformationen {#package-information}
 
@@ -83,9 +82,9 @@ Rufen Sie das Dialogfeld **Paketeinstellungen** über die Schaltfläche **Bearbe
 |---|---|
 | Name | Der Name des Pakets. |
 | Gruppe | Der Name der Gruppe, der das Paket hinzugefügt werden soll, um Pakete zu organisieren. Geben Sie den Namen für eine neue Gruppe ein oder wählen Sie eine vorhandene Gruppe aus. |
-| Version | Für die benutzerdefinierte Version zu verwendender Text. |
+| Version | Text für die benutzerdefinierte Version. |
 | Beschreibung | Eine kurze Beschreibung des Pakets. HTML-Markup kann zum Formatieren verwendet werden. |
-| Miniaturansicht  | Das Symbol, das mit der Paketliste angezeigt wird. Klicken Sie auf „Durchsuchen“, um eine lokale Datei auszuwählen. |
+| Miniaturansicht | Das Symbol, das mit der Paketliste angezeigt wird. Klicken Sie auf „Durchsuchen“, um eine lokale Datei auszuwählen. |
 
 ![chlimage_1-108](assets/chlimage_1-108.png)
 
@@ -142,21 +141,21 @@ Rufen Sie das Dialogfeld **Paketeinstellungen** über die Schaltfläche **Bearbe
  </tbody>
 </table>
 
-![packagesabhängigkeiten](assets/packagesdependencies.png)
+![packagesdependencies](assets/packagesdependencies.png)
 
 | **Feld** | **Beschreibung** | **Format/Beispiel** |
 |---|---|---|
-| Testen mit | Der Produktname und die Version, auf die dieses Paket ausgerichtet ist oder mit der es kompatibel ist. | *AEM 6* |
-| Behobene Fehler/Probleme | Ein Textfeld, das die Liste von Details zu Fehlern ermöglicht, die mit diesem Paket behoben wurden. Listen Sie die einzelnen Fehler in separaten Zeilen auf. | bug-nr-Zusammenfassung |
-| Abhängig von | Abhängigkeitsinformationen von Listen, die beachtet werden müssen, wenn andere Pakete benötigt werden, damit das aktuelle Paket erwartungsgemäß ausgeführt werden kann. Dieses Feld ist bei Verwendung von Hotfixes wichtig. | groupId:name:version |
-| Ersetzungen | Eine Liste veralteter Pakete, die dieses Paket ersetzt. Überprüfen Sie vor der Installation, ob dieses Paket alle erforderlichen Inhalte von den veralteten Paketen beinhaltet, sodass keine Inhalte überschrieben werden. | groupId:name:version |
+| Getestet mit | Der Produktname und die Version, auf die dieses Paket ausgerichtet ist oder mit der es kompatibel ist. | *AEM 6* |
+| Behobene Fehler/Probleme | Ein Textfeld, in dem Sie Details zu Fehlern auflisten können, die mit diesem Paket behoben wurden. Listen Sie die einzelnen Fehler in separaten Zeilen auf. | bug-nr summary |
+| Abhängig von | Listet Abhängigkeitsinformationen auf, die beachtet werden müssen, wenn andere Pakete erforderlich sind, damit das aktuelle Paket erwartungsgemäß ausgeführt werden kann. Dieses Feld ist bei Verwendung von Hotfixes wichtig. | groupId:name:version |
+| Ersetzt | Eine Liste veralteter Pakete, die dieses Paket ersetzt. Überprüfen Sie vor der Installation, ob dieses Paket alle erforderlichen Inhalte von den veralteten Paketen beinhaltet, sodass keine Inhalte überschrieben werden. | groupId:name:version |
 
 ### Paketfilter {#package-filters}
 
 Filter identifizieren die Repository-Knoten, die in das Paket eingeschlossen werden sollen. Eine **Filterdefinition** legt die folgenden Informationen fest:
 
 * Den **Stammpfad** der einzufügenden Inhalte
-* **Regeln,** die bestimmte Knoten unterhalb des Stammpfads einschließen oder ausschließen.
+* **** Regeln, die bestimmte Knoten unter dem Stammpfad ein- oder ausschließen.
 
 Filter können keine oder mehrere Regeln enthalten. Wenn keine Regeln definiert sind, enthält das Paket alle Inhalte unter dem Stammpfad.
 
@@ -227,7 +226,7 @@ Der Package Manager verwaltet die Pakete auf der lokalen AEM-Installation. Nachd
 * [Paketeinstellungen](#package-settings)
 * [Paketfilter](#package-filters)
 
-### Für die Verwendung des Package Manager erforderlichen Berechtigungen  {#permissions-needed-for-using-the-package-manager}
+### Für die Verwendung des Package Manager erforderlichen Berechtigungen {#permissions-needed-for-using-the-package-manager}
 
 Wenn Sie Benutzern das Recht zum Erstellen, Ändern, Hochladen und Installieren von Paketen gewähren wollen, müssen Sie ihnen die entsprechenden Berechtigungen für die folgenden Orte zuweisen:
 
@@ -240,7 +239,7 @@ Weitere Informationen zum Ändern von Berechtigungen finden Sie in [Festlegen vo
 
 So erstellen Sie eine neue Paketdefinition:
 
-1. Klicken Sie im AEM Begrüßungsbildschirm auf **Pakete** (oder auf **Tools** Konsolen-Dublette **Pakete**).
+1. Klicken Sie im AEM Begrüßungsbildschirm auf **Pakete** (oder doppelklicken Sie in der Konsole **Tools** auf **Pakete**).
 
 1. Wählen Sie dann **Package Manager** aus.
 1. Klicken Sie auf **Paket erstellen**.
@@ -257,7 +256,7 @@ So erstellen Sie eine neue Paketdefinition:
 
    * **Gruppenname**
 
-      Der Name der Zielpopulation (oder des Ordners). Gruppen sind für die Organisation Ihrer Pakete vorgesehen.
+      Der Name der Zielgruppe (oder des Ordners). Gruppen sollen Ihnen bei der Organisation Ihrer Pakete helfen.
 
       Das System legt einen Ordner für die Gruppe an, sollte sie noch nicht vorhanden sein. Wenn Sie keinen Gruppennamen eingeben, wird das Paket in der Hauptpaketliste („Startseite“ > „Pakete“) erstellt.
 
@@ -270,7 +269,7 @@ So erstellen Sie eine neue Paketdefinition:
       Ein Textfeld zur Eingabe einer Version. Diese wird an den Paketnamen angehängt, um den Namen der ZIP-Datei zu bilden.
    Klicken Sie auf **OK**, um das Paket zu erstellen.
 
-1. AEM wird das neue Paket im entsprechenden Gruppenordner Liste.
+1. AEM listet das neue Paket im entsprechenden Gruppenordner auf.
 
    ![packagesitem](assets/packagesitem.png)
 
@@ -341,7 +340,7 @@ Nach der Erstellung kann das Paket bei Bedarf neu eingegliedert werden.
 
 Bei einer Neueingliederung werden die Paketinformationen *ohne* Änderung der Paketinhalte geändert. Zu den Paketinformationen gehören die Miniaturansicht, die Beschreibung usw., d. h. alle Informationen, die Sie im Dialogfeld **Paketeinstellungen** bearbeiten können (klicken Sie zum Öffnen des Dialogfelds auf **Bearbeiten**).
 
-Ein wichtiger Anwendungsfall für Umbruch ist die Vorbereitung eines Pakets. Es könnte beispielsweise sein, dass Sie ein vorhandenes Paket haben, das Sie für andere freigeben möchten. Bevor Sie dies tun, möchten Sie eine Miniaturansicht und eine Beschreibung hinzufügen. Anstatt das gesamte Paket mit allen Funktionen neu zu erstellen (was möglicherweise einige Zeit in Anspruch nimmt und das Risiko birgt, dass das Paket nicht mit dem Original identisch ist), können Sie es neu eingliedern und nur die Miniaturansicht und die Beschreibung hinzufügen.
+Ein wichtiger Anwendungsfall für die Umverpackung ist die Vorbereitung eines Pakets. Es könnte beispielsweise sein, dass Sie ein vorhandenes Paket haben, das Sie für andere freigeben möchten. Bevor Sie dies tun, möchten Sie eine Miniaturansicht und eine Beschreibung hinzufügen. Anstatt das gesamte Paket mit allen Funktionen neu zu erstellen (was möglicherweise einige Zeit in Anspruch nimmt und das Risiko birgt, dass das Paket nicht mit dem Original identisch ist), können Sie es neu eingliedern und nur die Miniaturansicht und die Beschreibung hinzufügen.
 
 1. Öffnen Sie die Paketdefinition im **Package Manager** (klicken Sie auf das Paketsymbol oder den Paketnamen).
 
@@ -385,18 +384,18 @@ Nach der Erstellung eines Pakets können Sie dessen Inhalte anzeigen:
 
 In diesem Abschnitt wird beschrieben, wie Sie mit dem **Package Manager** ein Paket von AEM in das Dateisystem herunterladen.
 
-1. Klicken Sie im AEM Begrüßungsbildschirm auf **Pakete** und wählen Sie **Package Manager**.
+1. Klicken Sie im AEM Begrüßungsbildschirm auf **Pakete** und wählen Sie dann **Package Manager** aus.
 1. Navigieren Sie zum Paket, das Sie herunterladen möchten.
 
    ![packagesdownload](assets/packagesdownload.png)
 
 1. Klicken Sie auf den Link, der sich aus dem Namen der ZIP-Datei (unterstrichen) für das Paket ergibt, das Sie herunterladen möchten. Beispiel: `export-for-offline.zip`.
 
-   AEM lädt das Paket auf Ihren Computer herunter (mit einem standardmäßigen Browser-Downloaddialogfeld).
+   AEM lädt das Paket auf Ihren Computer herunter (mithilfe eines standardmäßigen Browser-Download-Dialogfelds).
 
 ### Hochladen von Paketen von dem Dateisystem {#uploading-packages-from-your-file-system}
 
-Beim Hochladen eines Pakets können Sie ein Paket aus Ihrem Dateisystem in den AEM Package Manager hochladen.
+Mit einem Package-Upload können Sie ein Paket aus Ihrem Dateisystem in den AEM Package Manager hochladen.
 So laden Sie ein Paket hoch:
 
 1. Navigieren Sie zum **Package Manager**. Klicken Sie dann auf den Gruppenordner, in den Sie das Paket hochladen wollen.
@@ -409,11 +408,11 @@ So laden Sie ein Paket hoch:
 
    * **File**
 
-      Sie können entweder den Dateinamen direkt eingeben oder **Durchsuchen...**, um das gewünschte Paket aus Ihrem lokalen Dateisystem auszuwählen (nach Auswahl klicken Sie auf **OK**).
+      Sie können entweder den Dateinamen direkt eingeben oder **Durchsuchen... verwenden.** Dialogfeld, um das erforderliche Paket aus Ihrem lokalen Dateisystem auszuwählen (klicken Sie nach der Auswahl auf **OK**).
 
    * **Hochladen erzwingen**
 
-      Wenn bereits ein Paket mit diesem Namen vorhanden ist, können Sie auf dieses klicken, um das Hochladen zu erzwingen (und das vorhandene Paket zu überschreiben).
+      Wenn bereits ein Paket mit diesem Namen existiert, können Sie auf dieses klicken, um den Upload zu erzwingen (und das vorhandene Paket zu überschreiben).
    Klicken Sie auf **OK**, damit das neue Paket hochgeladen und in der Package Manager-Liste angezeigt wird.
 
    >[!NOTE]
@@ -422,7 +421,7 @@ So laden Sie ein Paket hoch:
 
 ### Validieren von Paketen  {#validating-packages}
 
-Vor der Installation eines Pakets sollten Sie seinen Inhalt überprüfen. Da Pakete überlagerte Dateien unter `/apps` ändern und/oder ACLs hinzufügen, ändern und entfernen können, ist es oft sinnvoll, diese Änderungen vor der Installation zu validieren.
+Vor der Installation eines Pakets sollten Sie seinen Inhalt überprüfen. Da Pakete überlagerte Dateien unter `/apps` ändern und/oder ACLs hinzufügen, ändern und entfernen können, ist es oft nützlich, diese Änderungen vor der Installation zu validieren.
 
 #### Validierungsoptionen {#validation-options}
 
@@ -442,7 +441,7 @@ Diese Optionen werden nachfolgend beschrieben.
 
    **Berichterstellung**
 
-   Abhängigkeiten von Versionen, die von der AEM nicht erfüllt werden können, werden im Paket-Manager im **Aktivität-Protokoll** aufgelistet.
+   Alle versionierten Abhängigkeiten, die von der AEM nicht erfüllt werden können, werden im **Aktivitätsprotokoll** des Package Managers aufgelistet.
 
    **Fehlerstatus**
 
@@ -458,7 +457,7 @@ Diese Optionen werden nachfolgend beschrieben.
 
    Diese Validierung ermittelt, ob das zu installierende Paket eine Datei enthält, die bereits in der AEM-Zielinstanz überlagert ist.
 
-   Beispiel: Bei einer vorhandenen Überlagerung unter `/apps/sling/servlet/errorhandler/404.jsp` ein Paket, das `/libs/sling/servlet/errorhandler/404.jsp` enthält, wird die vorhandene Datei unter `/libs/sling/servlet/errorhandler/404.jsp` geändert.
+   Wenn beispielsweise eine vorhandene Überlagerung unter `/apps/sling/servlet/errorhandler/404.jsp` vorhanden ist, ein Paket, das `/libs/sling/servlet/errorhandler/404.jsp` enthält, wird die vorhandene Datei unter `/libs/sling/servlet/errorhandler/404.jsp` geändert.
 
    **Berichterstellung**
 
@@ -470,11 +469,11 @@ Diese Optionen werden nachfolgend beschrieben.
 
    **Fehlerbehebung**
 
-   Um dieses Problem zu beheben, muss der Betreuer der Überlagerungsdatei in `/apps` die Änderungen an der überlagerten Datei in `/libs` überprüfen und die erforderlichen Änderungen in die Überlagerung ( `/apps`) übernehmen und die überlagerte Datei erneut bereitstellen.
+   Um dieses Problem zu beheben, muss der Betreuer der Überlagerungsdatei in `/apps` die Änderungen an der überlagerten Datei in `/libs` überprüfen, die erforderlichen Änderungen in die Überlagerung ( `/apps`) übernehmen und die überlagerte Datei erneut bereitstellen.
 
    >[!NOTE]
    >
-   >Beachten Sie, dass der Überprüfungsmechanismus nicht miteinander in Einklang gebracht werden kann, wenn der überlagerte Inhalt ordnungsgemäß in die Überlagerungsdatei integriert wurde. Daher berichtet diese Validierung auch weiterhin über Konflikte, selbst wenn die erforderlichen Änderungen vorgenommen wurden.
+   >Beachten Sie, dass der Validierungsmechanismus keine Möglichkeit zur Abstimmung bietet, wenn der überlagerte Inhalt ordnungsgemäß in die Überlagerungsdatei integriert wurde. Daher berichtet diese Validierung auch weiterhin über Konflikte, selbst wenn die erforderlichen Änderungen vorgenommen wurden.
 
 * **ACLs bestätigen**
 
@@ -511,8 +510,8 @@ Die Validierung von Paketen kann auf zweierlei Weise erfolgen:
 
 **Paketvalidierung über Package Manager**
 
-1. Öffnen Sie Package Manager unter `https://<server>:<port>/crx/packmgr`
-1. Wählen Sie das Paket in der Liste aus und wählen Sie dann **Mehr** aus der Überschrift und dann **Validate** aus dem Dropdownmenü.
+1. Öffnen Sie den Paketmanager unter `https://<server>:<port>/crx/packmgr` .
+1. Wählen Sie das Paket in der Liste aus und wählen Sie dann **Mehr** aus der Dropdown-Liste aus der Überschrift und dann **Validate** aus dem Dropdown-Menü.
 
    >[!NOTE]
    >
@@ -540,7 +539,7 @@ https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImpor
 
 >
 >
-Der Wert von `type` ist standardmäßig `osgiPackageImports`, wenn er nicht weitergegeben wird.
+Der Wert von `type` wird standardmäßig auf `osgiPackageImports` gesetzt, wenn er nicht übergeben wird.
 
 Im Folgenden finden Sie ein Beispiel für die Verwendung von cURL zur Ausführung einer Paketvalidierung.
 
@@ -571,10 +570,10 @@ Nachdem Sie ein Paket hochgeladen haben, müssen Sie dessen Inhalte installieren
 >Um die Inhalte oder Auswirkungen eines Pakets anzuzeigen, können Sie:
 >
 >* Führen Sie eine Testinstallation des Pakets durch, ohne den Inhalt zu ändern:
-   >  Öffnen Sie das Paket (klicken Sie auf das Symbol oder den Namen des Pakets) und klicken Sie auf **Test Install**.
+   >  Öffnen Sie das Paket (klicken Sie auf das Paketsymbol oder den Paketnamen) und klicken Sie auf **Installation testen**.
    >
    >
-* Siehe Liste der Paketinhalte:
+* Eine Liste der Paketinhalte anzeigen:
    >  Öffnen Sie das Paket und klicken Sie auf **Inhalt**.
 
 >
@@ -614,7 +613,7 @@ Die Deaktivierung des WorkflowLauncher gewährleistet, dass die Assets nach der 
 
 ### Dateisystem-basierte(r) Upload und Installation  {#file-system-based-upload-and-installation}
 
-Es gibt eine alternative Methode, um Pakete auf Ihre Instanz hochzuladen und dort zu installieren. In Ihrem Dateisystem befindet sich neben der Datei &quot;jar&quot;und &quot;`license.properties`&quot;ein Ordner. `crx-quicksart` Sie müssen einen Ordner mit dem Namen `install` unter `crx-quickstart` erstellen. Dann haben Sie so etwas: `<aem_home>/crx-quickstart/install`
+Es gibt eine alternative Methode, um Pakete auf Ihre Instanz hochzuladen und dort zu installieren. In Ihrem Dateisystem befindet sich neben Ihrer JAR- und `license.properties`-Datei ein Ordner `crx-quicksart` . Sie müssen einen Ordner mit dem Namen `install` unter `crx-quickstart` erstellen. Sie haben dann Folgendes: `<aem_home>/crx-quickstart/install`
 
 In diesem „install“-Ordner können Sie die Pakete direkt hinzufügen. Sie werden automatisch auf Ihre Instanz hochgeladen und dort installiert. Anschließend können Sie die Pakete im Package Manager sehen.
 
@@ -646,7 +645,7 @@ So löschen Sie ein Paket aus der/den Package Manager-Liste(n):
 >
 >Die installierten Dateien/Knoten aus dem Paket werden **nicht** gelöscht.
 
-1. Erweitern Sie in der Konsole **Tools** den Ordner **Pakete**, um Ihr Paket im rechten Bereich anzuzeigen.
+1. Erweitern Sie in der Konsole **Tools** den Ordner **Pakete** , um Ihr Paket im rechten Bereich anzuzeigen.
 
 1. Klicken Sie auf das zu löschende Paket, um es zu markieren, und:
 
@@ -655,7 +654,7 @@ So löschen Sie ein Paket aus der/den Package Manager-Liste(n):
 
    ![packagesdelete](assets/packagesdelete.png)
 
-1. AEM fragt nach der Bestätigung, dass Sie das Paket löschen möchten. Klicken Sie auf **OK**, um den Löschvorgang zu bestätigen.
+1. AEM bittet um Bestätigung, dass Sie das Paket löschen möchten. Klicken Sie auf **OK**, um den Löschvorgang zu bestätigen.
 
 >[!CAUTION]
 >
@@ -672,17 +671,16 @@ Replizieren Sie die Inhalte eines Pakets, um sie auf der veröffentlichten Insta
 
 ## Package Share {#package-share}
 
-Package Share war ein zentralisierter Server, der öffentlich zur Freigabe von Content-Packages zur Verfügung gestellt wurde.
+Package Share war ein zentralisierter Server, der öffentlich für die Freigabe von Inhaltspaketen zur Verfügung gestellt wurde.
 
-Sie wurde durch [Software-Distribution](#software-distribution) ersetzt.
+Sie wurde durch [Softwareverteilung](#software-distribution) ersetzt.
 
 ## Softwareverteilung {#software-distribution}
 
-[Software ](https://downloads.experiencecloud.adobe.com) Distribution ist die neue Benutzeroberfläche, die die Suche und den Download von AEM Packages vereinfacht.
+[Software ](https://downloads.experiencecloud.adobe.com) Distribution ist die neue Benutzeroberfläche, die die Suche und den Download von AEM-Paketen vereinfacht.
 
 Weitere Informationen finden Sie in der [Dokumentation zur Softwareverteilung](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
 
 >[!CAUTION]
 >
->AEM Package Manager ist derzeit nicht mit Software Distribution verwendbar, laden Sie Ihre Pakete auf Ihre lokale Festplatte herunter.
-
+>AEM Package Manager kann derzeit nicht mit Software Distribution verwendet werden, laden Sie Ihre Pakete auf Ihre lokale Festplatte herunter.
