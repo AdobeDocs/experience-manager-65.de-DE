@@ -10,8 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
 exl-id: 1e05faf5-619a-4ea3-acbf-2fd37c71e6d2
-feature: Operations
-translation-type: tm+mt
+feature: Betrieb
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
 source-wordcount: '616'
@@ -41,9 +40,9 @@ Jede der Optionen kann durch Erstellen von Regeln in der Web-Konsole von AEM kon
 
 Führen Sie zum Konfigurieren der Auditprotokolllöschung die folgenden Schritte aus:
 
-1. Gehen Sie zum Web-Konsolenadministrator, indem Sie Ihren Browser auf `http://localhost:4502/system/console/configMgr/` zeigen.
+1. Navigieren Sie zum Web-Konsolenadministrator, indem Sie Ihren Browser auf `http://localhost:4502/system/console/configMgr/` verweisen.
 
-1. Suchen Sie nach einem Element mit dem Namen **Seitenaudit-Protokollbereinigungsregel** und klicken Sie darauf.
+1. Suchen Sie nach einem Element namens **Seitenaudit Log Purge rule** und klicken Sie darauf.
 
    ![chlimage_1-365](assets/chlimage_1-365.png)
 
@@ -56,30 +55,30 @@ Führen Sie zum Konfigurieren der Auditprotokolllöschung die folgenden Schritte
 
    >[!NOTE]
    >
-   >Der Inhaltspfad gilt nur für untergeordnete Elemente des `/var/audit/com.day.cq.wcm.core.page`-Knotens im Repository.
+   >Der Inhaltspfad gilt nur für untergeordnete Elemente des Knotens `/var/audit/com.day.cq.wcm.core.page` im Repository.
 
 1. Speichern Sie die Regel.
 1. Die gerade von Ihnen erstellte Regel muss im Vorgangs-Dashboard vorhanden sein, um ausgeführt werden zu können. Gehen Sie hierzu über den AEM-Begrüßungsbildschirm zu **Tools > Vorgänge > Wartung**.
 
 1. Klicken Sie auf die Karte **Wöchentliches Wartungsfenster**.
 
-1. Die bereits vorhandene Aufgabe zur Wartung finden Sie unter der Aufgabe **AuditLog Maintenance**.
+1. Sie finden die Wartungsaufgabe, die bereits unter der Karte **AuditLog Maintenance Task** vorhanden ist.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
 1. Sie können entweder das Datum der nächsten Ausführung ermitteln, es konfigurieren oder es durch das Drücken der Wiedergabetaste manuell ausführen.
 
-Wenn in AEM 6.3 das geplante Wartungsfenster geschlossen wird, bevor die Aufgabe zur Bereinigung des Prüfprotokolls abgeschlossen werden kann, wird die Aufgabe automatisch beendet. Sie wird fortgesetzt, wenn das nächste Wartungsfenster beginnt.
+Wenn in AEM 6.3 das geplante Wartungsfenster geschlossen wird, bevor die Aufgabe &quot;Auditprotokoll-Bereinigung&quot;abgeschlossen werden kann, wird die Aufgabe automatisch beendet. Sie wird fortgesetzt, wenn das nächste Wartungsfenster beginnt.
 
-**Mit AEM 6.5** können Sie eine laufende Aufgabe zum Bereinigen des Prüfprotokolls manuell beenden, indem Sie auf das  **** Stopsymbol klicken. Bei der nächsten Ausführung wird die Aufgabe auf sichere Art und Weise wiederaufgenommen.
+**Mit AEM 6.5** können Sie eine laufende Audit Log Purge Task durch Klicken auf das  **** Stopp-Symbol manuell stoppen. Bei der nächsten Ausführung wird die Aufgabe auf sichere Art und Weise wiederaufgenommen.
 
 >[!NOTE]
 >
 >Das Anhalten der Wartungsaufgabe bedeutet, dass ihre Ausführung verschoben wird, ohne den Überblick über den aktuell bereits ausgeführten Auftrag zu verlieren.
 
-## Konfigurieren der DAM-Auditprotokolllöschung {#configure-dam-audit-log-purging}
+## Konfigurieren der DAM-Auditprotokolllöschung  {#configure-dam-audit-log-purging}
 
-1. Navigieren Sie zur Systemkonsole unter *https://&lt;server-address>:&lt;server-port>/system/console/configMgr*
+1. Navigieren Sie zur Systemkonsole unter *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*.
 1. Suchen Sie nach **DAM audit Log Purge rule** und klicken Sie auf das Ergebnis.
 1. Konfigurieren Sie im nächsten Fenster Ihre Regel entsprechend: Die Optionen sind:
 
@@ -90,9 +89,9 @@ Wenn in AEM 6.3 das geplante Wartungsfenster geschlossen wird, bevor die Aufgabe
 
 1. Klicken Sie auf **Speichern**, um Ihre Konfiguration zu speichern.
 
-## Konfigurieren der Replizierungs-Auditprotokolllöschung  {#configure-replication-audit-log-purging}
+## Konfigurieren der Replizierungs-Auditprotokolllöschung   {#configure-replication-audit-log-purging}
 
-1. Navigieren Sie zur Systemkonsole unter *https://&lt;server-address>:&lt;server-port>/system/console/configMgr*
+1. Navigieren Sie zur Systemkonsole unter *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*.
 1. Suchen Sie nach **Replication audit Log Purge Scheduler** und klicken Sie auf das Ergebnis.
 1. Konfigurieren Sie im nächsten Fenster Ihre Regel entsprechend: Die Optionen sind:
 
