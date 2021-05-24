@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
-feature: Multi Site Manager
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Multi-Site-Manager
+exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '551'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-
-# Konsole „Live Copy-Übersicht“{#live-copy-overview-console}
+# Konsole „Live Copy-Übersicht“ {#live-copy-overview-console}
 
 Über die **Live Copy-Übersicht** können Sie folgende Vorgänge durchführen:
 
@@ -38,11 +37,11 @@ Sie können die Live Copy-Übersicht wie folgt öffnen:
 * [über das seitliche Bedienfeld „Verweise“ einer Blueprint-Seite (Sites-Konsole);](#opening-live-copy-overview-references-for-a-blueprint-page)
 * [über die Eigenschaften der Blueprint-Seite.](#opening-live-copy-overview-properties-of-a-blueprint-page)
 
-### Öffnen der Live Copy-Übersicht – Verweise für eine Blueprint-Seite  {#opening-live-copy-overview-references-for-a-blueprint-page}
+### Öffnen der Live Copy-Übersicht – Verweise für eine Blueprint-Seite {#opening-live-copy-overview-references-for-a-blueprint-page}
 
-Die **Übersicht über die Live-Kopie** kann über das Seitenbedienfeld **Verweise** der Konsole **Sites** geöffnet werden:
+Die **Live Copy-Übersicht** wird über das seitliche Bedienfeld **Verweise** der Konsole **Sites** geöffnet:
 
-1. Navigieren Sie in der **Sites-Konsole** [zu Ihrer Blueprint-Seite und wählen Sie diese aus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Navigieren Sie in der Konsole **Sites** [zu Ihrer Blueprint-Seite und wählen Sie diese aus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Öffnen Sie das Bedienfeld **[Verweise](/help/sites-authoring/basic-handling.md#references)** und wählen Sie **Live Copies** aus.
 
    ![chlimage_1-359](assets/chlimage_1-359.png)
@@ -78,7 +77,7 @@ Mit der **Live Copy-Übersicht** können auch Aktionen für die Live Copy durch
 1. Öffnen Sie die **Live Copy-Übersicht**.
 1. Wählen Sie die erforderliche Blueprint- oder Live Copy-Seite aus; die Symbolleiste wird mit den verfügbaren Aktionen aktualisiert. Die verfügbaren [Aktionen](/help/sites-administering/msm.md#terms-used) hängen davon ab, ob Sie eine [Blueprint](#actions-for-a-blueprint-page)- oder [Live Copy](#actions-for-a-live-copy-page)-Seite auswählen:
 
-### Aktionen für Blueprint-Seiten  {#actions-for-a-blueprint-page}
+### Aktionen für Blueprint-Seiten {#actions-for-a-blueprint-page}
 
 Bei Auswahl einer Blueprint-Seite sind die folgenden Aktionen verfügbar:
 
@@ -92,7 +91,7 @@ Bei Auswahl einer Blueprint-Seite sind die folgenden Aktionen verfügbar:
 
    * Führt einen Rollout durch, um Änderungen von der Quelle auf die Live Copy zu pushen.
 
-### Aktionen für eine Live Copy-Seite  {#actions-for-a-live-copy-page}
+### Aktionen für eine Live Copy-Seite {#actions-for-a-live-copy-page}
 
 Bei Auswahl einer Live Copy-Seite sind die folgenden Aktionen verfügbar:
 
@@ -108,7 +107,7 @@ Bei Auswahl einer Live Copy-Seite sind die folgenden Aktionen verfügbar:
 
 * [Synchronisieren](/help/sites-administering/msm.md#rollout-and-synchronize)
 
-   * Synchronisiert eine Live Copy, um Änderungen von der Quelle per Pull auf die Live Copy zu übertragen.
+   * Synchronisieren Sie eine Live Copy, um Änderungen von der Quelle per Pull auf die Live Copy zu übertragen.
 
 * [Zurücksetzen](/help/sites-administering/msm-livecopy.md#resetting-a-live-copy-page)
 
@@ -118,7 +117,7 @@ Bei Auswahl einer Live Copy-Seite sind die folgenden Aktionen verfügbar:
 
    * Deaktiviert vorübergehend die Live-Beziehung zwischen einer Live Copy und der zugehörigen Blueprint-Seite.
 
-* [Fortsetzen](/help/sites-administering/msm-livecopy.md#resuming-inheritance-for-a-page)
+* [Fortsetzen ](/help/sites-administering/msm-livecopy.md#resuming-inheritance-for-a-page)
 
    * Reaktiviert eine ausgesetzte Beziehung.
 
@@ -126,14 +125,14 @@ Bei Auswahl einer Live Copy-Seite sind die folgenden Aktionen verfügbar:
 
    * Entfernt dauerhaft die Live-Beziehung zwischen einer Live Copy und der zugehörigen Blueprint-Seite.
 
-## Beziehungsstatus  {#relationship-status}
+## Beziehungsstatus {#relationship-status}
 
 Die Konsole **Beziehungsstatus** verfügt über zwei Registerkarten mit verschiedenen Funktionen:
 
 * [Informationen zum Beziehungsstatus](#relationship-status-information)
 * [Informationen zur Live Copy](#live-copy-information)
 
-### Informationen zum Beziehungsstatus  {#relationship-status-information}
+### Informationen zum Beziehungsstatus {#relationship-status-information}
 
 Diese Registerkarte liefert detaillierte Informationen zum Status der Beziehung zwischen Blueprint und Live Copy:
 
@@ -144,4 +143,3 @@ Diese Registerkarte liefert detaillierte Informationen zum Status der Beziehung 
 Auf dieser Registerkarte können Sie die Live Copy-Konfiguration anzeigen und bearbeiten:
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
-
