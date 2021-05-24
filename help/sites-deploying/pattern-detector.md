@@ -10,15 +10,14 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Aktualisieren
+exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 89%
 
 ---
-
 
 # Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor 
 
@@ -52,17 +51,17 @@ Sie haben verschiedene Möglichkeiten, das Ergebnis des Musterdetektors zu prüf
 
 * **Über die Felix Inventory-Konsole:** 
 
-1. Gehen Sie zur AEM Web Console, indem Sie zu *https://serveraddress:serverport/system/console/configMgr* navigieren.
+1. Navigieren Sie zur AEM Web-Konsole, indem Sie zu *https://serveraddress:serverport/system/console/configMgr* navigieren.
 1. Wählen Sie **Status - Musterdetektor** aus, wie im Bild unten dargestellt:
 
-   ![screenshot-2018-2-5pattern-detektor](assets/screenshot-2018-2-5pattern-detector.png)
+   ![screen-shot-2018-2-5pattern-detektor](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **Über eine auf reaktivem Text basierende oder die reguläre JSON-Schnittstelle** 
-* **Über eine reaktive JSON-Leitungsschnittstelle, **die ein separates JSON-Dokument in jeder Zeile generiert.
+* **Über eine reaktive JSON-Zeilen-Oberfläche generiert **das in jeder Zeile ein separates JSON-Dokument.
 
 Beide Methoden werden im Folgenden erläutert:
 
-## Reaktive Schnittstelle {#reactive-interface}
+## Reaktive Schnittstelle  {#reactive-interface}
 
 Mit einer reaktiven Schnittstelle kann der Bericht zu den Verstößen verarbeitet werden, sobald ein Problem erkannt wird.
 
