@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 5150867a-02a9-45c9-b2fd-e536b60ffa8c
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: cc54d637-d66c-49d2-99ee-00d96f1a74e0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 90%
 
 ---
-
 
 # Verwalten des Zugriffs auf Workflows{#managing-access-to-workflows}
 
@@ -41,7 +40,7 @@ Sie können Aktionen für Workflows ausführen, wenn:
 >
 >Dies sind die Mindestanforderungen. Das Konto muss zudem der zugewiesene Teilnehmer oder ein Mitglied der zugewiesenen Gruppe sein, um bestimmte Schritte ausführen zu können.
 
-## Konfigurieren des Zugriffs auf Workflows {#configuring-access-to-workflows}
+## Konfigurieren des Zugriffs auf Workflows  {#configuring-access-to-workflows}
 
 Workflow-Modelle übernehmen (erben) die Standard-Zugriffssteuerungsliste (ACL, Access Control List), um zu steuern, wie Benutzer mit Workflows interagieren können. Zum Anpassen des Benutzerzugriffs auf einen Workflow bearbeiten Sie die Zugriffssteuerungsliste (ACL) im Repository für den Ordner, der den Knoten des Workflow-Modells enthält:
 
@@ -54,7 +53,7 @@ Workflow-Modelle übernehmen (erben) die Standard-Zugriffssteuerungsliste (ACL, 
 
 ### Anwenden einer ACL für das spezifische Workflow-Modell unter /var/workflow/models  {#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models}
 
-Wenn das Workflow-Modell in `/var/workflow/models` gespeichert ist, können Sie eine spezifische ACL zuweisen, die nur für diesen Workflow relevant ist:
+Wenn das Workflow-Modell in `/var/workflow/models` gespeichert ist, können Sie dem Ordner eine spezifische ACL zuweisen, die nur für diesen Workflow relevant ist:
 
 1. Öffnen Sie CRXDE Lite im Webbrowser ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Wählen Sie in der Knotenstruktur den Knoten für den Ordner der Workflow-Modelle aus:
@@ -65,14 +64,14 @@ Wenn das Workflow-Modell in `/var/workflow/models` gespeichert ist, können Sie 
 1. Klicken Sie in der Tabelle **Richtlinien zur lokalen Zugriffssteuerung** (**Zugriffssteuerungsliste**) auf das Plussymbol, um einen Eintrag hinzuzufügen ****.
 1. Fügen Sie im Dialogfeld **Neuen Eintrag hinzufügen** einen neuen ACE mit folgenden Eigenschaften hinzu:
 
-   * **Grundsatz**:  `content-authors`
+   * **Prinzipal**:  `content-authors`
    * **Typ**: `Deny`
    * **Berechtigungen**:  `jcr:read`
    * **rep:glob**: Verweis auf den spezifischen Workflow
 
    ![wf-108](assets/wf-108.png)
 
-   Die Liste **Zugriffskontrolle** enthält jetzt die Einschränkung für `content-authors` für das Workflow-Modell `prototype-wfm-01`.
+   Die Tabelle **Zugriffssteuerungsliste** enthält jetzt die Beschränkung für `content-authors` auf das Workflow-Modell `prototype-wfm-01` .
 
    ![wf-109](assets/wf-109.png)
 
@@ -102,7 +101,7 @@ Sie können dann dem Ordner selbst eine ACL hinzufügen.
 1. Klicken Sie in der Tabelle **Richtlinien zur lokalen Zugriffssteuerung** (**Zugriffssteuerungsliste**) auf das Plussymbol, um einen Eintrag hinzuzufügen ****.
 1. Fügen Sie im Dialogfeld **Neuen Eintrag hinzufügen** einen neuen ACE mit folgenden Eigenschaften hinzu:
 
-   * **Grundsatz**:  `content-authors`
+   * **Prinzipal**:  `content-authors`
    * **Typ**: `Deny`
    * **Berechtigungen**:  `jcr:read`
 
@@ -112,11 +111,10 @@ Sie können dann dem Ordner selbst eine ACL hinzufügen.
 
    ![wf-110](assets/wf-110.png)
 
-   Die Liste **Zugriffskontrolle** enthält jetzt die Einschränkungen für `content-authors` im Ordner `prototypes`.
+   Die Tabelle **Zugriffssteuerungsliste** enthält jetzt die Beschränkung für `content-authors` auf den Ordner `prototypes` .
 
    ![wf-111](assets/wf-111.png)
 
 1. Klicken Sie auf **Alle speichern**.
 
    Die Modelle im `prototypes`-Ordner sind nicht länger für Mitglieder der Gruppe `content-authors` verfügbar.
-
