@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
-translation-type: tm+mt
-source-git-commit: e594c53b2a26c1c9e484ac07220dc89c283cf7da
+exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 89%
 
 ---
-
 
 # Best Practices{#best-practices}
 
@@ -29,22 +28,22 @@ Die folgenden Bereiche enthalten Hinweise zu bewährten Vorgehensweisen:
 
 Best Practices für die Bearbeitung, Bereitstellung, Pflege und Entwicklung finden Sie unter folgenden Themen:
 
-* [Best Practices für die Bearbeitung](/help/sites-authoring/best-practices.md)
+* [Best Practices für die Inhaltserstellung](/help/sites-authoring/best-practices.md)
 * [Best Practices für die Entwicklung](/help/sites-developing/best-practices.md)
-* [Best Practices für die Bereitstellung](/help/sites-deploying/best-practices.md)
+* [Best Practices für die Bereitstellung ](/help/sites-deploying/best-practices.md)
 
 Spezielle Dokumente werden in den folgenden Tabellen beschrieben und verknüpft.
 
 ## Assets {#assets}
 
-Die Best Practices für Assets, einschließlich der Dynamic Media-Funktionalität und der Dynamic Media Classic-Integration, werden in den folgenden Themen beschrieben:
+Best Practices für Assets, einschließlich der Dynamic Media-Funktion und der Dynamic Media Classic-Integration, werden in den folgenden Themen beschrieben:
 
 <table>
  <tbody>
   <tr>
-   <td>Best Practices in verschiedenen Bereichen rund um Assets zur Verbesserung der Systemstabilität und Leistung unter Last</td>
+   <td>Best Practices in verschiedenen Bereichen rund um Assets zur Verbesserung der Systemstabilität und der Leistung bei Belastung</td>
    <td><a href="/help/assets/best-practices-for-assets.md">Best Practices für Assets</a></td>
-   <td>Enthält Links zu Leitfäden zu Best Practices in verschiedenen Bereichen rund um Assets. Wenn Sie diese gelesen haben, verfügen Sie über die Kenntnisse und Tools zur Erstellung und Verwaltung eines Enterprise-Asset-Management-Systems.</td>
+   <td>Enthält Links zu Best Practices-Handbüchern in verschiedenen Bereichen rund um Assets. Wenn Sie diese gelesen haben, verfügen Sie über die Kenntnisse und Tools zur Erstellung und Verwaltung eines Enterprise-Asset-Management-Systems.</td>
   </tr>
   <tr>
    <td>Organisieren Ihres Inhalts (Ordnerhierarchie)</td>
@@ -98,7 +97,7 @@ Zur Verwaltung und Bearbeitung Ihrer Website-Inhalte wurden einige Best Practice
   <tr>
    <td>Benutzerverwaltung</td>
    <td><a href="/help/sites-administering/security.md#best-practices">Best Practices zu Berechtigungen und Rechten</a></td>
-   <td>Beschreibt bewährte Verfahren beim Arbeiten mit Berechtigungen und Berechtigungen </td>
+   <td>Beschreibt Best Practices beim Arbeiten mit Berechtigungen und Berechtigungen </td>
   </tr>
   <tr>
    <td>Workflows</td>
@@ -107,4 +106,3 @@ Zur Verwaltung und Bearbeitung Ihrer Website-Inhalte wurden einige Best Practice
   </tr>
  </tbody>
 </table>
-
