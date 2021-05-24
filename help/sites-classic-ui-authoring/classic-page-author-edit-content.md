@@ -10,16 +10,15 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
+exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1780'
 ht-degree: 99%
 
 ---
 
-
-# Bearbeiten des Seiteninhalts{#editing-page-content}
+# Bearbeiten des Seiteninhalts {#editing-page-content}
 
 Sobald Ihre Seite erstellt ist (neu oder im Rahmen eines Launch oder einer Live Copy), können Sie den Inhalt bearbeiten und die erforderlichen Aktualisierungen vornehmen.
 
@@ -51,7 +50,7 @@ Unter anderem sind folgende Registerkarten und Symbole verfügbar:
 
 Diese bieten Zugriff auf eine Vielzahl von Funktionen, zu denen unter anderem folgende gehören:
 
-* [Auwählen der Komponenten](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick)
+* [Auswählen der Komponenten](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick)
 * [Anzeigen der Verweise](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#showing-references)
 * [Zugriff auf das Auditprotokoll](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#audit-log)
 * [Umschalten zwischen Modi](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)
@@ -61,9 +60,9 @@ Diese bieten Zugriff auf eine Vielzahl von Funktionen, zu denen unter anderem fo
 
 * [Bearbeiten der Seiteneigenschaften](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)
 
-* [Strukturvorlagen](/help/sites-authoring/scaffolding.md)
+* [scaffolding](/help/sites-authoring/scaffolding.md)
 
-* [Client-Kontext](/help/sites-administering/client-context.md)
+* [ClientContext](/help/sites-administering/client-context.md)
 
 ## Einfügen einer Komponente {#inserting-a-component}
 
@@ -177,7 +176,7 @@ Wie beim [Löschen einer Komponente](#deleting-a-component) können Sie das Kont
 
 Vererbte Komponenten können sich aus diversen Szenarien ergeben, wie:
 
-* [Multi-Site-Management](/help/sites-administering/msm.md); auch in Verbindung mit [Strukturvorlagen](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance)
+* [Multi-Site-Management](/help/sites-administering/msm.md); auch in Kombination mit [Strukturvorlage](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
 
 * [Launch](/help/sites-classic-ui-authoring/classic-launches.md) (wenn er auf Live Copy basiert).
 * Spezifische Komponenten, z. B. das Vererbungs-Absatzsystem in Geometrixx.
@@ -206,7 +205,7 @@ Sie können die Vererbung deaktivieren (und dann wieder aktivieren). Abhängig v
 
 [Anmerkungen](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) bieten anderen Autoren die Möglichkeit Feedback zu Ihrem Inhalt zu erteilen. Dies wird häufig zu Korrektur- oder Überprüfungszwecken verwendet.
 
-## Anzeigen einer Seitenvorschau   {#previewing-pages}
+## Anzeigen einer Seitenvorschau  {#previewing-pages}
 
 Für die Vorschau von Seiten sind zwei Symbole am unteren Rand des Sidekicks von Bedeutung:
 
@@ -298,7 +297,7 @@ Die können die folgenden Arten von Seitenbearbeitungen rückgängig machen bzw.
 * Hinzufügen, Bearbeiten, Entfernen und Verschieben von Absätzen
 * Bearbeitung von Absatzinhalten im Kontext
 * Kopieren, Ausschneiden und Einfügen von Elementen innerhalb einer Seite
-* Kopieren, Ausschneiden und Einfügen von Elementen über Seiten hinweg
+* Kopieren, Ausschneiden und Einfügen von Elementen auf Seiten
 * Hinzufügen, Entfernen und Ändern von Bildern
 * Hinzufügen, Entfernen und Ändern von Anmerkungen und Zeichnungen
 * Änderungen an Grundlage
