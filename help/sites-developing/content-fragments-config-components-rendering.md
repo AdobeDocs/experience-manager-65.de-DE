@@ -9,14 +9,13 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 2aef9048-9d6e-4f5d-b443-5e73f8066d76
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+exl-id: 9ef9ae75-cd8c-4adb-9bcb-e951d200d492
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 82%
 
 ---
-
 
 # Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren{#content-fragments-configuring-components-for-rendering}
 
@@ -36,7 +35,7 @@ Dies erfolgt durch die Konfiguration von [OSGi-Dienst – Konfiguration der Inha
 >
 >Sie können eine Komponente von Grund auf neu schreiben, die nur die Inhaltsfragmente-API verwendet, ohne die erweiterten Dienste zu nutzen. In einem solchen Fall müssen Sie Ihre Komponente jedoch so entwickeln, dass sie die entsprechende Verarbeitung übernimmt.
 >
->Daher wird empfohlen, die Kernkomponenten zu verwenden.
+>Daher wird die Verwendung der Kernkomponenten empfohlen.
 
 ## Definition erweiterter Dienste, die konfiguriert werden müssen {#definition-of-advanced-services-that-need-configuration}
 
@@ -49,7 +48,7 @@ Die Dienste, die die Registrierung einer Komponente erfordern:
 * Dispatcher-Flush für referenzierte Fragmente (wenn eine Seite, die ein Fragment enthält, erneut veröffentlicht wird),
 * verwenden absatzbasiertes Rendering.
 
-Wenn Sie eine oder mehrere dieser Funktionen benötigen, ist es in der Regel einfacher, die vordefinierte Funktion zu verwenden, anstatt sie von Grund auf zu entwickeln.
+Wenn Sie eine oder mehrere dieser Funktionen benötigen, ist es (in der Regel) einfacher, die vordefinierte Funktion zu verwenden, anstatt sie von Grund auf neu zu entwickeln.
 
 ## OSGi-Dienst – Konfiguration der Inhaltsfragment-Komponente {#osgi-service-content-fragment-component-configuration}
 
@@ -59,7 +58,7 @@ Die Konfiguration muss an den OSGi-Dienst **Konfiguration der Inhaltsfragment-Ko
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie unter [OSGi konfigurieren](/help/sites-deploying/configuring-osgi.md).
+>Weitere Informationen finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md) .
 
 Beispiel:
 
@@ -97,7 +96,7 @@ Die OSGi-Konfiguration lautet:
  </tbody>
 </table>
 
-Für einige Funktionen (z. B. zum Rendern eines Absatzbereichs) müssen Sie einige Konventionen einhalten:
+Für einige Funktionen (z. B. um nur einen Absatzbereich zu rendern) müssen Sie einige Konventionen einhalten:
 
 <table>
  <tbody>
@@ -148,4 +147,3 @@ dam.cfm.component.fileReferenceProp="fragmentPath"
 dam.cfm.component.elementsProp="elementName"
 dam.cfm.component.variationProp="variationName"
 ```
-
