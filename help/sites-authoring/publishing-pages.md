@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 1f5eb646-acc7-49d5-b839-e451e68ada9e
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1612'
 ht-degree: 88%
 
 ---
-
 
 # Veröffentlichen von Seiten {#publishing-pages}
 
@@ -40,7 +39,7 @@ Sie können eine Seite auch sofort oder zu einem vordefinierten künftigen Zeitp
    >
    >
 * **Replizieren/Replikation**
-   >  Dies sind die technischen Begriffe, die die Datenübertragung (z. B. Seiteninhalt, Dateien, Code, Benutzerkommentare) von einer Umgebung zur anderen beschreiben, z. B. beim Veröffentlichen oder Reproduzieren von Benutzerkommentaren.
+   >  Dies sind die technischen Begriffe, die die Verschiebung von Daten (z. B. Seiteninhalt, Dateien, Code, Benutzerkommentare) von einer Umgebung in eine andere beschreiben, z. B. bei der Veröffentlichung oder umgekehrten Replizierung von Benutzerkommentaren.
 >
 
 
@@ -99,10 +98,10 @@ Wenn Sie eine Seite bearbeiten, kann sie direkt im Editor veröffentlicht werden
 
 In der Sites-Konsole gibt es zwei Möglichkeiten zur Veröffentlichung:
 
-* [Quick Publish](/help/sites-authoring/publishing-pages.md#quick-publish)
-* [Veröffentlichung verwalten](/help/sites-authoring/publishing-pages.md#manage-publication)
+* [Quick Publish ](/help/sites-authoring/publishing-pages.md#quick-publish)
+* [Veröffentlichung verwalten ](/help/sites-authoring/publishing-pages.md#manage-publication)
 
-#### Quick Publish  {#quick-publish}
+#### Quick Publish   {#quick-publish}
 
 **Quick Publish** wird für einfache Fälle verwendet. Die ausgewählten Seiten werden damit sofort ohne weitere Interaktion veröffentlicht. Aus diesem Grund werden auch alle nicht-veröffentlichten Verweise ebenfalls automatisch veröffentlicht.
 
@@ -112,7 +111,7 @@ So veröffentlichen Sie eine Seite mit der Funktion „Quick Publish“:
 
    ![pp-02](assets/pp-02.png)
 
-1. Bestätigen Sie die Veröffentlichung im Dialogfeld &quot;Schnellveröffentlichung&quot;, indem Sie auf **Veröffentlichen** klicken oder indem Sie auf **Abbrechen** klicken. Beachten Sie, dass auch alle unveröffentlichten Verweise ebenfalls automatisch veröffentlicht werden.
+1. Bestätigen Sie im Dialogfeld Quick Publish die Veröffentlichung, indem Sie auf **Publish** klicken oder brechen Sie die Veröffentlichung ab, indem Sie auf **Abbrechen** klicken. Beachten Sie, dass auch alle unveröffentlichten Verweise ebenfalls automatisch veröffentlicht werden.
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
@@ -145,7 +144,7 @@ So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgäng
 
    Klicken Sie auf **Weiter**, um fortzufahren.
 
-1. Im nächsten Schritt des Assistenten zum Verwalten von Veröffentlichungen können Sie den Umfang der Veröffentlichung bzw. der Aufhebung der Veröffentlichung festlegen, z. B. einschließlich untergeordneter Seiten und/oder einschließlich Verweise.****
+1. Im nächsten Schritt des Assistenten &quot;Veröffentlichung verwalten&quot;können Sie **Umfang** den Umfang der Veröffentlichung/der Aufhebung der Veröffentlichung definieren, z. B. um untergeordnete Seiten und/oder Verweise einzuschließen.
 
    ![screen_shot_2018-03-21at153354](assets/screen_shot_2018-03-21at153354.png)
 
@@ -179,9 +178,9 @@ So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgäng
 
    ![pp-04](assets/pp-04.png)
 
-   Im Dialogfeld **Veröffentlichte Referenzen** werden die Referenzen für den ausgewählten Inhalt angezeigt. Standardmäßig sind alle ausgewählt und werden veröffentlicht bzw. die Veröffentlichung wird rückgängig gemacht. Sie können sie aber auch deaktivieren, um die Auswahl aufzuheben, sodass sie nicht in die Aktion einbezogen werden.
+   Das Dialogfeld **Veröffentlichte Verweise** zeigt die Verweise für den ausgewählten Inhalt an. Standardmäßig sind alle ausgewählt und werden veröffentlicht bzw. die Veröffentlichung wird rückgängig gemacht. Sie können sie aber auch deaktivieren, um die Auswahl aufzuheben, sodass sie nicht in die Aktion einbezogen werden.
 
-   Klicken Sie auf **Fertig**, um Ihre Änderungen zu speichern, oder auf **Abbrechen**, um die Auswahl abzubrechen und zum Assistenten zurückzukehren.
+   Klicken Sie auf **Fertig** , um Ihre Änderungen zu speichern, oder auf **Abbrechen** , um die Auswahl abzubrechen und zum Assistenten zurückzukehren.
 
    Im Assistenten wird die Spalte **Verweise** aktualisiert und zeigt Ihre Auswahl von Verweisen an, die veröffentlicht werden sollen bzw. deren Veröffentlichung rückgängig gemacht werden soll.
 
@@ -195,12 +194,12 @@ So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgäng
 
    >[!NOTE]
    >
-   >Der gezeigte **Workflow**-Schritt hängt von den Rechten des jeweiligen Benutzers ab. Weitere Informationen finden Sie unter [vorheriger Hinweis auf dieser Seite](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) zu Veröffentlichungsberechtigungen sowie [Verwalten des Zugriffs auf Workflows](/help/sites-administering/workflows-managing.md) und [Anwenden von Workflows auf Seiten](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd).
+   >Der gezeigte **Workflow**-Schritt hängt von den Rechten des jeweiligen Benutzers ab. Weitere Informationen finden Sie im [vorherigen Hinweis auf dieser Seite](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) zu Veröffentlichungsberechtigungen sowie [Verwalten des Zugriffs auf Workflows](/help/sites-administering/workflows-managing.md) und [Anwenden von Workflows auf Seiten](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) .
 
    Die Ressourcen werden gemäß den ausgelösten Workflows gruppiert, wobei Sie für jede Ressource folgende Möglichkeiten haben:
 
    * Definieren des Workflow-Titels
-   * Behalten Sie das Workflow-Paket bei, sofern der Workflow über [Unterstützung für mehrere Ressourcen](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) verfügt.
+   * Behalten Sie das Workflow-Paket bei, vorausgesetzt der Workflow unterstützt [mehrere Ressourcen](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
    * Definieren des Titels des Workflow-Pakets, sofern die Option zum Beibehalten des Workflow-Pakets ausgewählt wurde
 
    Klicken Sie auf **Veröffentlichen** oder **Später veröffentlichen**, um die Veröffentlichung abzuschließen.
@@ -262,7 +261,7 @@ Dazu können Sie in der Sites-Konsole die Option [Veröffentlichung verwalten](/
 
    Sie können die zu veröffentlichenden Verweise auch in der Option **Veröffentlichte Verweise** überprüfen.
 
-1. [Fahren Sie mit dem Assistenten zum Verwalten von Veröffentlichungen ](#manage-publication) normal fort, um die Veröffentlichung der Struktur abzuschließen oder die Veröffentlichung rückgängig zu machen.
+1. [Fahren Sie mit dem Assistenten Veröffentlichung verwalten ](#manage-publication) normal fort, um die Veröffentlichung oder das Rückgängigmachen der Veröffentlichung des Baums abzuschließen.
 
 ## Bestimmen des Veröffentlichungsstatus {#determining-publication-status}
 
