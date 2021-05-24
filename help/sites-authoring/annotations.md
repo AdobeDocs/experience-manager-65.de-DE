@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
-translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 99%
 
 ---
-
 
 # Anmerkungen beim Bearbeiten einer Seite{#annotations-when-editing-a-page}
 
@@ -53,9 +52,7 @@ Zum Erstellen und Ansehen von Anmerkungen wird ein spezieller [Modus](/help/site
 >Sie können Anmerkungen zu einer Vielzahl von Ressourcen anfügen: 
 >
 >* [Anmerkungen zu Assets](/help/assets/manage-assets.md#annotating)
->* [Kommentieren von Video-Assets](/help/assets/managing-video-assets.md#annotate-video-assets)
-
->
+* [Kommentieren von Video-Assets](/help/assets/managing-video-assets.md#annotate-video-assets)
 
 
 
@@ -70,14 +67,12 @@ Im Anmerkungsmodus können Sie Anmerkungen für Ihre Inhalte erstellen, bearbeit
    Sie können nun vorhandene Anmerkungen anzeigen.
 
    >[!NOTE]
-   >
-   >Zum Beenden des Anmerkungsmodus tippen/klicken Sie auf das Anmerkungssymbol (x-Symbol) oben rechts in der Symbolleiste.
+   Zum Beenden des Anmerkungsmodus tippen/klicken Sie auf das Anmerkungssymbol (x-Symbol) oben rechts in der Symbolleiste.
 
 1. Klicken/tippen Sie auf das Symbol „Anmerkung hinzufügen“ (Plussymbol links in der Symbolleiste), um mit dem Hinzufügen von Anmerkungen zu beginnen.
 
    >[!NOTE]
-   >
-   >Wenn Sie keine weiteren Anmerkungen hinzufügen möchten (und zur Anzeige zurückkehren wollen), tippen/klicken Sie auf das Symbol „Abbrechen“ (x-Symbol in einem weißen Kreis) links in der Symbolleiste oben.
+   Wenn Sie keine weiteren Anmerkungen hinzufügen möchten (und zur Anzeige zurückkehren wollen), tippen/klicken Sie auf das Symbol „Abbrechen“ (x-Symbol in einem weißen Kreis) links in der Symbolleiste oben.
 
 1. Tippen/klicken Sie auf die erforderliche Komponente (Komponenten, denen eine Anmerkung hinzugefügt werden kann, sind mit einem blauen Rand gekennzeichnet), um die Anmerkung hinzuzufügen und das Dialogfeld zu öffnen:
 
@@ -118,12 +113,10 @@ Im Anmerkungsmodus können Sie Anmerkungen für Ihre Inhalte erstellen, bearbeit
 1. Um den Anmerkungsmodus zu beenden und zum vorher verwendeten Modus zurückzukehren, tippen/klicken Sie auf das Anmerkungssymbol (x-Symbol) oben rechts in der Symbolleiste.
 
 >[!NOTE]
->
->Anmerkungen können nicht zu einer Seite hinzugefügt werden, die von einem anderen Benutzer gesperrt wurde.
+Anmerkungen können nicht zu einer Seite hinzugefügt werden, die von einem anderen Benutzer gesperrt wurde.
 
 ### Kennzeichnung von Anmerkungen {#annotation-indicator}
 
 Anmerkungen werden nicht im Bearbeitungsmodus angezeigt, doch die Kennzeichnung oben rechts in der Symbolleiste gibt an, wie viele Anmerkungen auf der aktuellen Seite vorhanden sind. Die Kennzeichnung ersetzt das standardmäßige Anmerkungssymbol, dient jedoch ebenfalls als schneller Link, mit dem Sie den Anmerkungsmodus aktivieren/deaktivieren können:
 
 ![chlimage_1-242](assets/chlimage_1-242.png)
-
