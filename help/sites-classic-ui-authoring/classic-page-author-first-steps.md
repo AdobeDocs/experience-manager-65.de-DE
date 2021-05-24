@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: page-authoring, introduction
 discoiquuid: 7f5713fe-01e3-450e-b71a-dc567d9a192e
-translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+exl-id: b41aa7e5-1a5f-4e5e-be79-637d9f71ad72
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 93%
 
 ---
-
 
 # Erste Schritte für Autoren{#first-steps-for-authors}
 
@@ -24,7 +23,7 @@ In diesem Abschnitt finden Sie einen Überblick über die wichtigsten Funktionen
 
 Er deckt folgende Themen ab:
 
-* [Erste Schritte](#getting-started): Detaillierte Darstellung der grundlegenden Reihenfolge der Ereignis, die Sie zum Erstellen und Veröffentlichen der ersten Seite benötigen.
+* [Erste Schritte](#getting-started): Details zur grundlegenden Ereignisabfolge, die Sie zum Erstellen und Veröffentlichen Ihrer ersten Seite benötigen.
 
 * [Weitere Maßnahmen](#further-actions): Im Anschluss an die vielen anderen Aktionen, die Sie beim Authoring verwenden können.
 
@@ -40,7 +39,7 @@ Der Inhalt Ihrer Website wird in einer Baumstruktur archiviert. Wenn Sie eine Se
 
 Vor der Bearbeitung müssen Sie [eine neue Seite erstellen](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#creating-a-new-page).
 
-### Öffnen einer Seite {#opening-a-page}
+### Öffnen einer Seite  {#opening-a-page}
 
 Bei vielen Aktionen, wie beim Bearbeiten, müssen Sie [eine Seite öffnen](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#opening-a-page-for-editing).
 
@@ -55,10 +54,10 @@ Unabhängig davon, ob Ihre Instanz bereits über vorhandene Seiten verfügt oder
 * [Ausschneiden/Kopieren/Einfügen einer Komponente](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#cut-copy-paste-a-component)
 * [Rückgängigmachen und Wiederholen von Seitenbearbeitungen](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#undoing-and-redoing-page-edits)
 * [Verwenden des Vorschaumodus](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages) (um die Darstellung der Seite bei der Veröffentlichung zu prüfen)
-* [Sperren einer Seite](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
+* [Sperren einer Seite  ](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
 * [Entsperren einer Seite](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#unlocking-a-page)
 
-### Veröffentlichen einer Seite  {#publishing-a-page}
+### Veröffentlichen einer Seite {#publishing-a-page}
 
 Wenn Sie die Bearbeitung der Seite abgeschlossen haben, möchten Sie [den Inhalt sicherlich veröffentlichen (bzw. aktivieren)](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#main-pars-title-10), damit er für Besucher Ihrer Website verfügbar ist.
 
