@@ -8,7 +8,6 @@ breadcrumb-title: Authoring-Handbuch
 user-guide-description: Erfahren Sie mehr über die wichtigsten Konzepte zum Erstellen von Inhalten und Authoring in AEM.
 feature: 'Authoring – '
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
 source-wordcount: '299'
@@ -20,7 +19,7 @@ ht-degree: 88%
 # AEM 6.5 Authoring-Benutzeranleitung {#authoring}
 
 + [Authoring-Benutzerhandbuch - Übersicht](home.md)
-+ Grundlegende Aufgaben, Tools und Konzepte für AEM Authoring {#essentials}
++ Wesentliche Aufgaben, Tools und Konzepte für AEM Authoring {#essentials}
    + [Erste Schritte für Autoren](first-steps.md)
    + [Bearbeiten von Seiten](page-authoring.md)
    + [Kurzanleitung zur Seitenbearbeitung (Authoring)](qg-page-authoring.md)
@@ -29,8 +28,8 @@ ht-degree: 88%
    + [Suchen](search.md)
    + [Konfigurieren der Kontoumgebung](user-properties.md)
    + [Ihr Posteingang](inbox.md)
-   + [Tastaturbefehle für Konsolen](keyboard-shortcuts.md)
-   + [Festlegen der Benutzeroberfläche](select-ui.md)
+   + [Tastaturbefehle für Konsolen  ](keyboard-shortcuts.md)
+   + [Auswahl der Benutzeroberfläche](select-ui.md)
 + Authoring {#authoring}
    + [Autorenumgebung und Tools](author-environment-tools.md)
    + [Anmerkungen beim Bearbeiten einer Seite](annotations.md)
@@ -41,8 +40,8 @@ ht-degree: 88%
    + [Veröffentlichen von Seiten](publishing-pages.md)
    + [Seitenbearbeitung mit Inhaltsfragmenten](content-fragments.md)
    + [Experience Fragments](experience-fragments.md)
-   + [Exportieren in CSV](csv-export.md)
-   + [Komponenten](default-components.md)
+   + [Exportieren in CSV  ](csv-export.md)
+   + [Komponenten ](default-components.md)
    + [Verfassen einer Seite für Mobilgeräte](mobile.md)
    + [Fehlerbehebung in AEM beim Authoring](troubleshooting.md)
    + [Tastaturbefehle für die Seitenbearbeitung](page-authoring-keyboard-shortcuts.md)
@@ -54,9 +53,9 @@ ht-degree: 88%
    + [Arbeiten mit Seitenversionen](working-with-page-versions.md)
    + [Seitenvergleich](page-diff.md)
    + [Komponentenkonsole](default-components-console.md)
-   + [Responsives Layout](responsive-layout.md)
+   + [Responsives Layout  ](responsive-layout.md)
    + [Inhaltseinblick ](content-insights.md)
-   + [Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.1-Richtlinien) ](creating-accessible-content.md)
+   + [Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.1-Richtlinien)](creating-accessible-content.md)
    + [Konfigurieren von Komponenten im Designmodus](default-components-designmode.md)
    + [Foundation-Komponenten](default-components-foundation.md)
    + [Strukturvorlage](scaffolding.md)
@@ -74,7 +73,7 @@ ht-degree: 88%
    + [Weiterleiten von Launches](launches-promoting.md)
 + Workflows {#workflows}
    + [Arbeiten mit Workflows](workflows.md)
-   + [Anwenden von Workflows auf Seiten ](workflows-applying.md)
+   + [Anwenden von Workflows auf Seiten](workflows-applying.md)
    + [Teilnehmen an Workflows](workflows-participating.md)
    + [Arbeiten mit Projekt-Workflows](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/projects-with-workflows.html)
 + Seitenleistung {#page-performance}
@@ -83,14 +82,14 @@ ht-degree: 88%
    + [Anzeigen von Seitenanalysedaten](pa-using.md)
    + [Hinzufügen von Search&amp;Promote-Funktionen zu Ihrer Seite](search-and-promote.md)
 + Personalisierung  {#personalization}
-   + [Personalisierung ](personalization.md)
-   + [Vorschau von Seiten mit ContextHub-Daten ](ch-previewing.md)
+   + [Personalisierung](personalization.md)
+   + [Vorschau von Seiten mit ContextHub-Daten](ch-previewing.md)
    + [Verfassen zielgerichteter Inhalte im Targeting-Modus](content-targeting-touch.md)
    + [Verwenden zielgerichteter Inhalte in Multisites](multisite-support-targeted-content.md)
    + [Strukturierung von Multisite-Management für zielgerichtete Inhalte](technical-multisite-targeted.md)
-   + [Verwalten von Aktivitäten](activitylib.md)
+   + [Verwalten von Aktivitäten ](activitylib.md)
    + [Verwalten von Zielgruppen](managing-audiences.md)
-   + [Erstellen und Verwalten von Angeboten](offerlib.md)
+   + [Erstellen und Verwalten von Angeboten  ](offerlib.md)
    + [Grundlegendes zur Segmentierung](segmentation-overview.md)
 + AEM und Adobe Campaign {#aem-adobe-campaign}
    + [Arbeiten mit Adobe Campaign](adobe-campaign.md)
