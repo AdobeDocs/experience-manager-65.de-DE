@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 4dda6a03-d3ad-4e65-8b37-cee030fa4f7f
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2906'
 ht-degree: 100%
 
 ---
-
 
 # Verwenden zielgerichteter Inhalte in Multisites{#working-with-targeted-content-in-multisites}
 
@@ -39,15 +38,15 @@ Gehen Sie wie folgt vor, um die Anzeige personalisierter Inhalte auf Ihren Sites
 
 1. [Verknüpfen Sie Ihre Website oder Seite](#linking-sites-to-an-area) mit einem Gebiet.
 
-Sie können die Vererbung dabei jederzeit aussetzen oder wiederherstellen. Zudem können Sie, wenn die Vererbung nicht ausgesetzt werden soll, zusätzlich lokale Erlebnisse erstellen. Standardmäßig verweisen alle Seiten auf das Mastergebiet, außer es wurde eigens ein anderes Gebiet festgelegt.
+Sie können die Vererbung dabei jederzeit aussetzen oder wiederherstellen. Zudem können Sie, wenn die Vererbung nicht ausgesetzt werden soll, zusätzlich lokale Erlebnisse erstellen. Standardmäßig verweisen alle Seiten auf das primäre Gebiet, außer es wurde eigens ein anderes Gebiet festgelegt.
 
-## Einführung in die Multisite-Unterstützung für zielgerichtete Inhalte   {#introduction-to-multisite-support-for-targeted-content}
+## Einführung in die Multisite-Unterstützung für zielgerichtete Inhalte  {#introduction-to-multisite-support-for-targeted-content}
 
-Die Multisite-Unterstützung für zielgerichtete Inhalte ist als einsatzbereite Standardfunktion erhältlich und ermöglicht das Pushen von zielgerichteten Inhalten von der mit MSM verwalteten Master-Seite an eine lokale Live Copy sowie die lokale und globale Bearbeitung solcher Inhalte.
+Die Multisite-Unterstützung für zielgerichtete Inhalte ist als einsatzbereite Standardfunktion erhältlich und ermöglicht das Pushen von zielgerichteten Inhalten von der mit MSM verwalteten primären Seite an eine lokale Live Copy sowie die lokale und globale Bearbeitung solcher Inhalte.
 
 Diese Funktion wird in einem **Gebiet** verwaltet. Gebiete trennen auf verschiedenen Sites eingesetzte zielgerichtete Inhalte (Aktivitäten, Erlebnisse und Angebote) voneinander und ermöglichen durch einen MSM-basierten Mechanismus das Erstellen und Verwalten der Vererbung zielgerichteter Inhalte sowie der Site-Vererbung. So wird verhindert, dass Sie zielgerichtete Inhalte in vererbten Seiten erneut erstellen müssen, wie das in AEM vor Version 6.2 der Fall war.
 
-Innerhalb eines Gebiets können nur Aktivitäten, die mit diesem Gebiet verknüpft sind, an Live Copys gepusht werden. Standardmäßig ist das Mastergebiet ausgewählt. Nach der Erstellung weiterer Gebiete lassen sich diese mit Ihren Sites oder Seiten verknüpfen, wodurch bestimmt wird, welche zielgerichteten Inhalte gepusht werden.
+Innerhalb eines Gebiets können nur Aktivitäten, die mit diesem Gebiet verknüpft sind, an Live Copys gepusht werden. Standardmäßig ist das primäre Gebiet ausgewählt. Nach der Erstellung weiterer Gebiete lassen sich diese mit Ihren Sites oder Seiten verknüpfen, wodurch bestimmt wird, welche zielgerichteten Inhalte gepusht werden.
 
 Eine Site oder Live Copy verweist auf ein Gebiet, das die Aktivitäten enthält, die auf dieser Site oder Live Copy zur Verfügung gestellt werden müssen. Standardmäßig ist die Site oder Live Copy mit dem Mastergebiet verknüpft, es können jedoch auch andere Gebiete zugewiesen werden.
 
@@ -57,15 +56,16 @@ Eine Site oder Live Copy verweist auf ein Gebiet, das die Aktivitäten enthält,
 >
 >* Wenn Sie Rollouts oder Live Copys verwenden, ist eine MSM-Lizenz erforderlich.
 >* Wenn Sie die Synchronisierung mit Adobe Target verwenden, ist eine Adobe Target-Lizenz erforderlich.
+
 >
 
 
 
-## Anwendungsfälle    {#use-cases}
+## Anwendungsfälle  {#use-cases}
 
 Sie können die Multisite-Unterstützung für zielgerichtete Inhalte auf verschiedene Art einrichten, je nachdem, welches Szenario sich für Ihre Zwecke am besten eignet. In diesem Abschnitt wird beschrieben, wie diese Einrichtung theoretisch für eine Marke funktioniert. Zudem finden Sie in unserem [Beispiel: Inhalts-Targeting basierend auf geografischen Angaben](#example-targeting-content-based-on-geography) eine Darstellung zur praktischen Anwendung von Inhalts-Targeting auf mehreren Sites.
 
-Zielgerichtete Inhalte werden in sogenannten Gebieten erfasst, mit denen wiederum ihr Geltungsbereich auf Sites oder Seiten bestimmt wird. Diese Gebiete werden auf Ebene der Marke definiert. Eine Marke kann mehrere Gebiete umfassen. Gebiete können sich von Marke zu Marke unterscheiden. So kann beispielsweise eine Marke nur das Mastergebiet enthalten, das für alle Marken gilt, während eine andere Marke hingegen zeitgleich mehrere Gebiete enthält (beispielsweise mit Unterschieden je nach Region). Marken müssen somit nicht zwingend die gleichen Gebiete aufweisen.
+Zielgerichtete Inhalte werden in sogenannten Gebieten erfasst, mit denen wiederum ihr Geltungsbereich auf Sites oder Seiten bestimmt wird. Diese Gebiete werden auf Ebene der Marke definiert. Eine Marke kann mehrere Gebiete umfassen. Gebiete können sich von Marke zu Marke unterscheiden. So kann beispielsweise eine Marke nur das primäre Gebiet enthalten, das für alle Marken gilt, während eine andere Marke hingegen zeitgleich mehrere Gebiete enthält (beispielsweise mit Unterschieden je nach Region). Marken müssen somit nicht zwingend die gleichen Gebiete aufweisen.
 
 Mithilfe der Multisite-Unterstützung für zielgerichtete Inhalte können Sie beispielsweise zwei (oder mehr) Sites **einer** Marke einrichten, die eine der folgenden Eigenschaften aufweisen:
 
@@ -79,7 +79,7 @@ Mithilfe der Multisite-Unterstützung für zielgerichtete Inhalte können Sie be
    * Site A ist mit Gebiet X verknüpft.
    * Site B ist mit Gebiet X verknüpft.
 
-* Bestimmte zielgerichtete Inhalte werden über MSM von einer anderen Site *übernommen*: Die Inhalte können unidirektional vom Master an die Live Copy übermittelt werden. Beispiel:
+* Bestimmte zielgerichtete Inhalte werden über MSM von einer anderen Site *übernommen*: Die Inhalte können unidirektional von der Quelle an die Live Copy übermittelt werden. Beispiel:
 
    * Site A ist mit Gebiet X verknüpft.
    * Site B ist mit Gebiet Y verknüpft (dieses Gebiet ist eine Live Copy von Gebiet X).
@@ -98,14 +98,14 @@ Mithilfe der Multisite-Unterstützung für zielgerichtete Inhalte können Sie pe
 
 Abhängig von geografischen Daten gibt es für die gleiche Site vier verschiedene Versionen:
 
-* Die Site für die **Vereinigten Staaten** befindet sich oben links und dient als Master-Site. In diesem Beispiel wurde sie im Targeting-Modus geöffnet.
+* Die Site für die **Vereinigten Staaten** befindet sich oben links und dient als primäre Site. In diesem Beispiel wurde sie im Targeting-Modus geöffnet.
 * Die drei übrigen Versionen sind diejenigen für **Kanada**, **Großbritannien** und **Australien**, wobei es sich bei diesen um Live Copys handelt. Diese Sites wurden im Vorschaumodus geöffnet.
 
 ![chlimage_1-271](assets/chlimage_1-271.png)
 
 Alle Seiten teilen sich die personalisierten Inhalte der unterschiedlichen Regionen:
 
-* Für Kanada wird das gleiche Mastergebiet wie für die Vereinigten Staaten verwendet.
+* Für Kanada wird das gleiche primäre Gebiet wie für die Vereinigten Staaten verwendet.
 * Die Site für Großbritannien wurde mit Europa verknüpft und übernimmt die Inhalte des europäischen Mastergebietes.
 * Australien verfügt über eigene personalisierte Inhalte, da es sich auf der Südhalbkugel befindet und saisonal bedingte Produkte nicht mit Produkten für die anderen Länder übereinstimmen.
 
@@ -115,17 +115,17 @@ Für die Nordhalbkugel wurde eine Winteraktivität erstellt, doch der nordamerik
 
 ![chlimage_1-273](assets/chlimage_1-273.png)
 
-Nach Aktualisierung der Registerkarte erscheint auch auf der Site für Kanada das neue Bild, ohne dass dies eigens eingestellt werden muss. Diese Änderung geschieht, da die Site von Kanada sich auf das gleiche Mastergebiet wie die Site der Vereinigten Staaten bezieht. Die Bilder auf den Sites für Großbritannien und Australien ändern sich hingegen nicht.
+Nach Aktualisierung der Registerkarte erscheint auch auf der Site für Kanada das neue Bild, ohne dass dies eigens eingestellt werden muss. Diese Änderung geschieht, da die Site von Kanada sich auf das gleiche primäre Gebiet wie die Site der Vereinigten Staaten bezieht. Die Bilder auf den Sites für Großbritannien und Australien ändern sich hingegen nicht.
 
 ![chlimage_1-274](assets/chlimage_1-274.png)
 
-Der Marketingexperte möchte diese Änderungen auf das europäische Gebiet übertragen und [aktiviert die Live Copy](/help/sites-administering/msm-livecopy.md), indem er auf **Seiten-Rollout** tippt oder klickt. Nach Aktualisierung der Registerkarte erscheint auf der Site für Großbritannien das neue Bild, da das europäische Gebiet dieses (nach dem Rollout) vom Master-Gebiet bezieht. 
+Der Marketingexperte möchte diese Änderungen auf das europäische Gebiet übertragen und [aktiviert die Live Copy](/help/sites-administering/msm-livecopy.md), indem er auf **Seiten-Rollout** tippt oder klickt. Nach Aktualisierung der Registerkarte erscheint auf der Site für Großbritannien das neue Bild, da das europäische Gebiet dieses (nach dem Rollout) vom primären Gebiet bezieht.
 
 ![chlimage_1-275](assets/chlimage_1-275.png)
 
 Das Bild der Site für Australien bleibt wie gewünscht unverändert, da es in Australien Sommer ist und der Marketingexperte die Inhalte für dieses Land somit nicht ändern möchte. Die Site für Australien ändert sich nicht, da sie kein Gebiet mit den anderen Regionen teilt und keine Live Copy einer der anderen Regionen darstellt. Der Marketingexperte muss sich in keinem Fall sorgen, dass die zielgerichteten Inhalte für die australische Site überschrieben werden könnten.
 
-Zudem kann für die Site für Großbritannien, deren Gebiet eine Live Copy des Mastergebiets darstellt, der Vererbungsstatus anhand des grünen Indikators neben dem Aktivitätennamen erkannt werden. Wird eine Aktivität geerbt, kann sie nicht bearbeitet werden, solange die Live Copy nicht ausgesetzt oder deaktiviert wurde.
+Zudem kann für die Site für Großbritannien, deren Gebiet eine Live Copy des primären Gebiets darstellt, der Vererbungsstatus anhand des grünen Indikators neben dem Aktivitätennamen erkannt werden. Wird eine Aktivität geerbt, kann sie nicht bearbeitet werden, solange die Live Copy nicht ausgesetzt oder deaktiviert wurde.
 
 Die Vererbung kann jederzeit ausgesetzt oder vollständig deaktiviert werden. Zudem können Sie jederzeit lokale Erlebnisse hinzufügen, die ohne Aussetzen der Vererbung nur für diese Region verfügbar sind.
 
@@ -143,24 +143,24 @@ Sollte über MSM jedoch eine Vererbung der beiden Seiten eingerichtet sein, ist 
 >
 >Handelt es sich bei einer Seite um eine Live Copy, verknüpft mit einem Gebiet, das selbst wiederum eine mit dem Gebiet der Seitenvorlage verknüpfte Live Copy ist, werden durch den Standard-Rollout alle folgenden Rollouts der zielgerichteten Inhalte ausgelöst.
 
-In der folgenden Darstellung finden Sie beispielsweise vier Sites, von denen sich zwei ein Master-Gebiet (sowie alle Aktivitäten dieses Gebiets) teilen, eine weitere Site über ein Gebiet verfügt, das eine Live Copy des Master-Gebiets ist, sodass die Aktivitäten bei einem Rollout geteilt werden, und die letzte Site völlig eigenständig ist (und somit ein eigenes Aktivitätsgebiet benötigt).
+In der folgenden Darstellung finden Sie beispielsweise vier Sites, von denen sich zwei ein primäres Gebiet (sowie alle Aktivitäten dieses Gebiets) teilen, eine weitere Site über ein Gebiet verfügt, das eine Live Copy des primären Gebiets ist, sodass die Aktivitäten bei einem Rollout geteilt werden, und die letzte Site völlig eigenständig ist (und somit ein eigenes Aktivitätsgebiet benötigt).
 
 ![chlimage_1-276](assets/chlimage_1-276.png)
 
 Gehen Sie wie folgt vor, um diese Konfiguration in AEM nachzustellen:
 
-* Site A ist mit dem Mastergebiet verknüpft – es muss kein eigenes Gebiet erstellt werden. Das Mastergebiet ist in AEM standardmäßig ausgewählt. Site B und Site A teilen sich Aktivitäten usw.
-* Site B ist mit dem Mastergebiet verknüpft – es muss kein eigenes Gebiet erstellt werden. Das Mastergebiet ist in AEM standardmäßig ausgewählt. Site B und Site A teilen sich Aktivitäten usw.
-* Site C ist mit dem vererbten Gebiet verknüpft, das wiederum eine Live Copy des Mastergebiets ist – erstellen Sie ein neues Gebiet als Live Copy, wenn eine Live Copy erstellt werden soll, die auf dem Mastergebiet beruht. Im Rahmen des Rollouts übernimmt das erbende Gebiet Aktivitäten aus dem Mastergebiet.
+* Site A ist mit dem primären Gebiet verknüpft – es muss kein eigenes Gebiet erstellt werden. Das primäre Gebiet ist in AEM standardmäßig ausgewählt. Site B und Site A teilen sich Aktivitäten usw.
+* Site B ist mit dem primären Gebiet verknüpft – es muss kein eigenes Gebiet erstellt werden. Das primäre Gebiet ist in AEM standardmäßig ausgewählt. Site B und Site A teilen sich Aktivitäten usw.
+* Site C ist mit dem vererbten Gebiet verknüpft, das wiederum eine Live Copy des primären Gebiets ist – erstellen Sie ein neues Gebiet als Live Copy, wenn eine Live Copy erstellt werden soll, die auf dem primären Gebiet beruht. Im Rahmen des Rollouts übernimmt das erbende Gebiet Aktivitäten aus dem primären Gebiet.
 * Site D ist mit einem eigenen, separaten Gebiet verknüpft – erstellen Sie ein Gebiet, das keine bereits festgelegten Aktivitäten erhält. Dieses isolierte Gebiet übernimmt keine Aktivitäten der anderen Sites.
 
-## Erstellen neuer Gebiete    {#creating-new-areas}
+## Erstellen neuer Gebiete  {#creating-new-areas}
 
 Gebiete können aktivitäten- und angebotsübergreifend gelten. Nach der Erstellung eines Gebiets in einer der Kategorien (beispielsweise in den Aktivitäten), kann dieses Gebiet auch in der anderen (beispielsweise in den Angeboten) verfügbar gemacht werden.
 
 >[!NOTE]
 >
->Der Standardbereich „Masterbereich“ wird standardmäßig ausgeblendet, wenn Sie auf den Namen einer Marke tippen/klicken, **bis** Sie einen anderen Bereich erstellen. Wählen Sie entweder in der **Aktivitäts-** oder der **Angebotskonsole** eine Marke aus, wird Ihnen die **Gebietskonsole** angezeigt.
+>Der Standardbereich „primäres Gebiet“ wird standardmäßig ausgeblendet, wenn Sie auf den Namen einer Marke tippen/klicken, **bis** Sie einen anderen Bereich erstellen. Wählen Sie entweder in der **Aktivitäts-** oder der **Angebotskonsole** eine Marke aus, wird Ihnen die **Gebietskonsole** angezeigt.
 
 So erstellen Sie ein neues Gebiet:
 
@@ -173,7 +173,7 @@ So erstellen Sie ein neues Gebiet:
 1. Geben Sie im Feld **Titel** einen Namen für das neue Gebiet ein. Wählen Sie, falls gewünscht, Tags aus.
 1. Tippen oder klicken Sie auf **Erstellen**.
 
-   AEM leitet Sie auf das Markenfenster um, in dem alle erstellten Gebiete aufgelistet sind. Sollten neben dem Mastergebiet noch andere Gebiete angezeigt werden, können Sie Gebiete direkt in der Markenkonsole erstellen.
+   AEM leitet Sie auf das Markenfenster um, in dem alle erstellten Gebiete aufgelistet sind. Sollten neben dem primären Gebiet noch andere Gebiete angezeigt werden, können Sie Gebiete direkt in der Markenkonsole erstellen.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
@@ -208,7 +208,7 @@ So erstellen Sie ein Gebiet als Live Copy:
 
 1. Tippen oder klicken Sie auf **Erstellen**.
 
-   AEM leitet Sie auf das Markenfenster um, in dem alle erstellten Gebiete aufgelistet sind. Sollten neben dem Mastergebiet noch andere Gebiete angezeigt werden, können Sie Gebiete direkt im Markenfenster erstellen.
+   AEM leitet Sie auf das Markenfenster um, in dem alle erstellten Gebiete aufgelistet sind. Sollten neben dem primären Gebiet noch andere Gebiete angezeigt werden, können Sie Gebiete direkt im Markenfenster erstellen.
 
    ![chlimage_1-282](assets/chlimage_1-282.png)
 
@@ -216,7 +216,7 @@ So erstellen Sie ein Gebiet als Live Copy:
 
 Gebiete können entweder mit Seiten oder einer Site verknüpft werden. Gebiete werden von allen Unterseiten übernommen, falls diese auf der Unterseite nicht durch eine Zuordnung überschrieben werden. Im Allgemeinen erfolgen Verknüpfungen jedoch auf Site-Ebene.
 
-Führen Sie eine Verknüpfung durch, stehen nur die Aktivitäten, Erlebnisse und Angebote des verknüpften Gebiets zur Verfügung. Somit wird eine Verwechslung mit unabhängig verwalteten Inhalten verhindert. Wird kein weiteres Gebiet konfiguriert, gilt das Mastergebiet der jeweiligen Marke.
+Führen Sie eine Verknüpfung durch, stehen nur die Aktivitäten, Erlebnisse und Angebote des verknüpften Gebiets zur Verfügung. Somit wird eine Verwechslung mit unabhängig verwalteten Inhalten verhindert. Wird kein weiteres Gebiet konfiguriert, gilt das primäre Gebiet der jeweiligen Marke.
 
 >[!NOTE]
 >
@@ -249,11 +249,12 @@ Eine Aktivität, die Daten von einer anderen Site erbt, weist neben ihrem Namen 
 >
 >* Sie können Live Copys nur in einer Aktivität aussetzen oder deaktivieren.
 >* Live Copys müssen nicht ausgesetzt oder getrennt werden, um eine geerbte Aktivität zu erweitern. Sie können jederzeit **neue** lokale Erlebnisse und Angebote für die Aktivität erstellen. Möchten Sie eine bestehende Aktivität bearbeiten, müssen Sie die Vererbung aussetzen.
+
 >
 
 
 
-### Aussetzen der Vererbung    {#suspending-inheritance}
+### Aussetzen der Vererbung  {#suspending-inheritance}
 
 So deaktivieren Sie die Vererbung zielgerichteter Inhalte oder setzen sie aus:
 
@@ -274,7 +275,7 @@ So deaktivieren Sie die Vererbung zielgerichteter Inhalte oder setzen sie aus:
 
 So deaktivieren Sie die Vererbung zielgerichteter Inhalte einer Aktivität:
 
-1. Navigieren Sie zu der Seite, deren Live Copy Sie vom Mastergebiet trennen möchten, und klicken oder tippen Sie im Modus-Dropdown-Menü auf **Targeting**.
+1. Navigieren Sie zu der Seite, deren Live Copy Sie vom primären Gebiet trennen möchten, und klicken oder tippen Sie im Modus-Dropdown-Menü auf **Targeting**.
 1. Ist Ihre Seite mit einem Gebiet verknüpft, das eine Live Copy darstellt, wird der Vererbungsstatus angezeigt. Tippen oder klicken Sie auf **Targeting starten**.
 1. Wählen Sie aus dem Dropdown-Menü in der Symbolleiste die Option **Live Copy trennen**. AEM bestätigt, dass Sie die Live Copy trennen möchten.
 1. Tippen oder klicken Sie auf **Entfernen**, um die Live Copy von der Aktivität zu trennen. Nach der Trennung ist das Dropdown-Menü für die Vererbung nicht länger verfügbar. Die Aktivität ist jetzt eine lokale Aktivität.
@@ -295,13 +296,12 @@ So stellen Sie die Vererbung zielgerichteter Inhalte wieder her:
 
 1. Tippen oder klicken Sie auf **Fortsetzen**, um zu bestätigen, dass Sie die Vererbung an die Live Copy wieder aufnehmen möchten. Alle Änderungen, die an der aktuellen Aktivität vorgenommen wurden, gehen bei Wiederherstellung der Vererbung verloren.
 
-## Löschen von Gebieten    {#deleting-areas}
+## Löschen von Gebieten  {#deleting-areas}
 
-Löschen Sie ein Gebiet, werden sämtliche Aktivitäten dieses Gebiets ebenfalls gelöscht. Vor dem Löschen eines Gebiets werden Sie von AEM gewarnt. Sollten Sie ein Gebiet löschen, das mit einer Site verknüpft ist, wird die Marke stattdessen automatisch mit dem Master-Gebiet verknüpft.
+Löschen Sie ein Gebiet, werden sämtliche Aktivitäten dieses Gebiets ebenfalls gelöscht. Vor dem Löschen eines Gebiets werden Sie von AEM gewarnt. Sollten Sie ein Gebiet löschen, das mit einer Site verknüpft ist, wird die Marke stattdessen automatisch mit dem primären Gebiet verknüpft.
 
 So löschen Sie Gebiete:
 
 1. Navigieren Sie zu **Personalisierung** > **Aktivitäten** oder **Angebote** und dann zu Ihrer Marke.
 1. Tippen oder klicken Sie auf das Symbol neben dem Gebiet, das Sie löschen möchten.
 1. Tippen oder klicken Sie auf **Löschen** und bestätigen Sie, dass das Gebiet gelöscht werden soll.
-
