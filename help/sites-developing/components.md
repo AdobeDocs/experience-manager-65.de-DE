@@ -2,21 +2,20 @@
 title: Komponentenübersicht
 seo-title: 'Komponenten '
 description: Bei Komponenten handelt es sich um modulare Einheiten, mit denen spezifische Funktionalität zum Darstellen von Inhalten auf Ihrer Website realisiert wird.
-seo-description: Komponenten sind modulare Einheiten, die spezielle Funktionen zur Darstellung Ihrer Inhalte auf Ihrer Website implementieren.
+seo-description: Komponenten sind modulare Einheiten, die bestimmte Funktionen zur Darstellung Ihrer Inhalte auf Ihrer Website bereitstellen
 uuid: fb39aeb8-8f43-4091-8083-ebfab89e6e63
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
-translation-type: tm+mt
-source-git-commit: 5597fb39500ac1f85d03263bfa1e5239d35d2a2c
+exl-id: 9e30c969-2692-4380-943a-b022ee900ce8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 82%
 
 ---
-
 
 # Komponentenübersicht{#components-overview}
 
@@ -33,7 +32,7 @@ Diese Seite enthält einen Überblick über die Komponenten von Adobe Experience
 * Verfügen über eine standardisierte Benutzeroberfläche.
 * Verfügen über ein konfigurierbares Bearbeitungsverhalten.
 * Verwenden Dialogfelder, die basierend auf Granite-UI-Komponenten mit Unterelementen erstellt werden
-* werden mit [HTL](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html) (empfohlen) oder JSP entwickelt.
+* Werden mit [HTL](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html) (empfohlen) oder JSP entwickelt.
 * Können für die Erstellung von angepassten Komponenten entwickelt werden, mit denen die Standardfunktionalität erweitert wird.
 
 Da die Komponenten modular sind, haben Sie folgende Möglichkeiten:
@@ -47,30 +46,30 @@ Für jede AEM-Komponente gilt Folgendes:
 
 * Ist ein Ressourcentyp.
 * Ist eine Sammlung mit Skripten, mit denen eine bestimmte Funktion vollständig realisiert wird.
-* Kann in *Isolation* funktionieren, d. h. entweder innerhalb AEM oder eines Portals.
+* Kann in *Isolation* funktionieren, d. h. entweder in AEM oder in einem Portal.
 
 ## Im Lieferumfang von AEM enthaltene Komponenten {#out-of-the-box-components-within-aem}
 
 AEM verfügt über verschiedene [im Lieferumfang enthaltene Komponenten](/help/sites-authoring/default-components.md) mit umfassender Funktionalität, z. B.:
 
 * Absatzsystem ( `parsys`)
-* Seite ( `responsivegrid` - nur touchfähige Benutzeroberfläche)
+* Seite ( `responsivegrid` - nur Touch-optimierte Benutzeroberfläche)
 * Text
 * Bild mit Begleittext
 * Symbolleiste
 
 Mit den bereitgestellten Komponenten und deren Nutzung auf den bereitgestellten [We.Retail-Beispiel-Websites](/help/sites-developing/we-retail.md) wird veranschaulicht, wie Sie sie implementieren und verwenden können. Die Komponenten werden mit dem gesamten Quellcode bereitgestellt und können unverändert oder als Ausgangspunkte für geänderte oder erweiterte Komponenten genutzt werden.
 
-### Kernkomponenten und Foundation-Komponenten {#core-components-and-foundation-components}
+### Kernkomponenten und Foundation-Komponenten  {#core-components-and-foundation-components}
 
 Von Adobe werden zwei Sätze mit AEM-Komponenten bereitgestellt:
 
 * [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
 * [Foundation-Komponenten](/help/sites-authoring/default-components-foundation.md)
 
-**Core** Components wurde mit AEM 6.3 und Angebot mit flexiblen und leistungsstarken Authoring-Funktionen eingeführt. Die [We.Retail-Referenz-Website](/help/sites-developing/we-retail.md) zeigt, wie die Kernkomponenten verwendet werden können und stellt die aktuellen Best Practices der Komponentenentwicklung dar.
+**Kernkomponenten** wurden mit AEM 6.3 eingeführt und bieten flexible und funktionsreiche Authoring-Funktionen. Die [We.Retail-Referenz-Site](/help/sites-developing/we-retail.md) zeigt, wie die Kernkomponenten verwendet werden können, und stellt die aktuellen Best Practices für die Komponentenentwicklung dar.
 
-**Foundation-Komponenten** gehören in vielen Versionen von AEM zur Grundausstattung und sind direkt nach einer Standardinstallation verfügbar. Obwohl sie noch unterstützt werden, wurden die meisten nicht mehr unterstützt, wurden nicht mehr verbessert und basieren auf alten Technologien.
+**Foundation-Komponenten** gehören in vielen Versionen von AEM zur Grundausstattung und sind direkt nach einer Standardinstallation verfügbar. Die meisten werden zwar weiterhin unterstützt, sind jedoch veraltet, werden nicht mehr verbessert und basieren auf älteren Technologien.
 
 >[!NOTE]
 >
@@ -96,7 +95,7 @@ Alternativ hierzu können Sie auch CRXDE Lite verwenden, um eine Liste mit allen
 
 ## Zusätzliche Ressourcen {#further-reading}
 
-Auf den folgenden Seiten finden Sie detaillierte Informationen zur Entwicklung dieser und anderer Komponenten:
+Die folgenden Seiten enthalten detailliertere Informationen zur Entwicklung dieser - und anderer - Komponenten:
 
 * [AEM-Komponenten – Grundlagen](/help/sites-developing/components-basics.md)
 * [Entwickeln von AEM-Komponenten](/help/sites-developing/developing-components.md)
@@ -108,11 +107,10 @@ Auf den folgenden Seiten finden Sie detaillierte Informationen zur Entwicklung d
 * [Ermitteln von Seiteninformationen im JSON-Format](/help/sites-developing/pageinfo.md)
 * [Internationalisieren von Komponenten](/help/sites-developing/i18n.md)
 * [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [Verwenden von Bedingungen zum Ausblenden](/help/sites-developing/hide-conditions.md)
+* [Verwenden von Bedingungen zum Ausblenden ](/help/sites-developing/hide-conditions.md)
 * Klassische Benutzeroberfläche
 
    * [AEM-Komponenten (klassische Benutzeroberfläche)](/help/sites-developing/developing-components-classic.md)
    * [Verwenden und Erweitern von Widgets (klassische Benutzeroberfläche)](/help/sites-developing/widgets.md)
    * [Verwenden von xtypes (klassische Benutzeroberfläche)](/help/sites-developing/xtypes.md)
    * [Entwicklung von Formularen (klassische Benutzeroberfläche)](/help/sites-developing/developing-forms.md)
-
