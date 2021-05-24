@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 968b9131-ccdf-4856-b504-bc1a44974980
 docset: aem65
-translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+exl-id: cf5849c7-1c6a-46d8-9cc4-f1f20a507a0c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 93%
 
 ---
-
 
 # Hinzufügen von Search&amp;Promote-Funktionen zu Ihrer Seite{#adding-search-promote-features-to-your-page}
 
@@ -73,30 +72,30 @@ Facetten werden auf dem Search&amp;Promote-Server konfiguriert, genau wie die vo
  </tbody>
 </table>
 
-## Erstellen der Suchergebnisseite {#creating-the-search-results-page}
+## Erstellen der Suchergebnisseite  {#creating-the-search-results-page}
 
 Verwenden Sie die WCM-Websites-Konsole, um eine Seite für die Anzeige von Suchergebnissen zu erstellen. Die Suchergebnisse aus einer beliebigen Suchkomponente können auf dieser Seite angezeigt werden, sofern für sie dieselben Search&amp;Promote-Services verwendet werden.
 
 Die Komponenten, die es Benutzern ermöglichen, Suchergebnisse zu überprüfen, sind „Ergebnisse“ und „Seitenumbruch“. Die Komponente **Ergebnisse** weist weder im Bearbeitungs- noch im Designmodus konfigurierbare Eigenschaften auf. Die Komponente „Ergebnisse“ listet lediglich Suchergebnisse auf, die Links zu anderen Seiten enthalten, und zeigt die Anzahl der Ergebnisse für jeden Suchbegriff an.
 
-![srchresultsComp](assets/srchresultscomp.png)
+![srchresultscomp](assets/srchresultscomp.png)
 
 Die Komponente **Seitenumbruch** ermöglicht Benutzern die Navigation durch mehrere Seiten mit Suchergebnissen. Benutzer können die Anzahl der Seiten einsehen, zur nächsten oder vorherigen Seite wechseln, eine zu öffnende Seite auswählen und alle Ergebnisse auf einer Seite zusammenfassen.
 
-![srchpaginierung](assets/srchpagination.png)
+![srchpagination](assets/srchpagination.png)
 
 Sie können die folgenden Komponenteneigenschaften im Bearbeitungsmodus konfigurieren, um das Verhalten zur Laufzeit zu steuern:
 
-* Einfache Ergebnisseite ausblenden: Wählen Sie diese Option, um die Seitennavigationssteuerelemente auszublenden, wenn die Suche eine einzelne Ergebnisseite zurückgibt.
+* Ausblenden einer einzelnen Ergebnisseite: Wählen Sie diese Option, um die Seitennavigationssteuerelemente auszublenden, wenn die Suche eine einzelne Ergebnisseite zurückgibt.
 * Erste/Letzte ausblenden: Wenn Sie diese Option auswählen, können Benutzer nicht zur ersten oder letzten Suchergebnisseite wechseln.
 * Vorherige/Nächste ausblenden: Legt fest, ob Benutzer zu Ergebnisseiten relativ zur aktuellen Seite navigieren können.
 * „Alle anzeigen“ ausblenden: Legt fest, ob Benutzer alle Suchergebnisse auf einer einzigen Seite zusammenfassen können. In der Regel erfolgt die Nutzung von Serverressourcen bei Daten mit Seitenaufteilung effizienter. Wählen Sie diese Option aus, um die Übertragung großer Datenmengen in einer einzelnen Antwortmeldung zu verhindern.
 
 ### Aktivieren der Filterung von Ergebnissen durch Facetten  {#enabling-the-filtering-of-results-by-facets}
 
-Sie können Benutzern die Filterung von Suchergebnissen durch Facetten ermöglichen. Die Komponenten **Facette für die Liste des Kontrollkästchens**, **Dropdown-Facette** und **Facet der Liste verknüpfen** ermöglichen es dem Benutzer, eine oder mehrere Facetten zum Filtern auszuwählen. Bei Verwendung dieser Komponenten sollten Sie auch die Komponente **Breadcrumbs** einschließen. Breadcrumbs zeigen die aktuell verwendeten Filter an.
+Sie können Benutzern die Filterung von Suchergebnissen durch Facetten ermöglichen. Die Komponenten **Checkbox List Facet**, **Dropdown-Facette** und **Link List Facet** ermöglichen es Benutzern, eine oder mehrere Facetten für die Filterung auszuwählen. Bei Verwendung dieser Komponenten sollten Sie auch die Komponente **Breadcrumbs** einschließen. Breadcrumbs zeigen die aktuell verwendeten Filter an.
 
-Die Komponenten **Checkbox-Liste**, **Dropdown-Facet** und **Link-Liste-Facet** verfügen jeweils über die folgenden Eigenschaften, die Sie im Modus **Bearbeiten** konfigurieren:
+Die Komponenten **Checkbox List Facet**, **Dropdown Facet** und **Link List Facet** verfügen jeweils über die folgenden Eigenschaften, die Sie im Modus **Bearbeiten** konfigurieren:
 
 * **Facettenname**: Der Name der zur Filterung verwendeten Facette.
 
@@ -110,7 +109,7 @@ Die Komponente **Facette als Dropdown** ermöglicht es Kunden, ein Facetteneleme
 
 Die Dropdown-Liste wird mit den Facetten gefüllt, die mit allen Suchergebnissen verbunden sind. Bei Auswahl eines Elements in der Dropdown-Liste wird die Seite mit einem aktualisierten Ergebnissatz neu geladen. Die Elemente in der Dropdown-Liste ändern sich nicht, sodass Kunden jederzeit zwischen verschiedenen Facetten wechseln können.
 
-![sandpdropdown-Abteilung](assets/sandpdropdowndepartment.png)
+![SandpDropdown-Abteilung](assets/sandpdropdowndepartment.png)
 
 Mit der Komponente **Facette als Link-Liste** können Kunden ihren Fokus immer stärker auf Elemente beschränken, die unter mehreren Facettenmitgliedern bzw. Facetten kategorisiert sind.
 
@@ -138,11 +137,11 @@ Konfigurieren Sie die folgenden Eigenschaften im Bearbeitungsmodus, um das Verha
 * Pfad zur Ergebnisseite: Der Pfad zu der Seite, auf der die Suchergebnisse anzeigt werden.
 * „Automatisch auffüllen“ aktivieren: Wählen Sie diese Option aus, um Vorschläge für Suchbegriffe anzuzeigen, wenn der Kunde mit der Eingabe im Suchfeld beginnt.
 
-![sandpsearcomp](assets/sandpsearchcomp.png)
+![sandpsearchcomp](assets/sandpsearchcomp.png)
 
 ### Hinzufügen von Bannern {#adding-banners}
 
-Die Bannerkomponente zeigt Bannerwerbung entsprechend den Search&amp;Promote des Kunden an. Logik auf dem Search&amp;Replace-Server ermittelt, welches Banner angezeigt wird. Beispielsweise könnte bei einer Suche nach Jeans ein Banner angezeigt werden, das mit Mode zu tun hat. Durch Filtern auf die Herrenabteilung könnte die Auswahl des Banners noch weiter verfeinert werden.
+Die Banner-Komponente zeigt Bannerwerbung entsprechend den Search&amp;Promote des Kunden an. Logik auf dem Search&amp;Replace-Server ermittelt, welches Banner angezeigt wird. Beispielsweise könnte bei einer Suche nach Jeans ein Banner angezeigt werden, das mit Mode zu tun hat. Durch Filtern auf die Herrenabteilung könnte die Auswahl des Banners noch weiter verfeinert werden.
 
 Die Komponente „Banner“ weist die konfigurierbare Eigenschaft „Banner-Bereich“ auf. Klicken Sie im Bearbeitungsmodus auf einen der Eigenschaftswerte, um die Darstellungsweise des Banners festzulegen. Der Search&amp;Promote-Service legt die Liste der Werte fest, aus denen Sie auswählen können.
 
@@ -150,4 +149,4 @@ Die Komponente „Banner“ weist die konfigurierbare Eigenschaft „Banner-Bere
 
 Dieses Diagramm zeigt die Komponenten an, die zu einer Seite hinzugefügt werden, um die voll funktionsfähige Search&amp;Promote-Ergebnisseite wie abgebildet zu erstellen.
 
-![1328213789109](assets/1328213789109.png) ![Beispiel](assets/sandppageexample.png)
+![1328213789109](assets/1328213789109.png) ![Sandpage-Beispiel](assets/sandppageexample.png)
