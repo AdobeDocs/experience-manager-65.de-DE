@@ -9,31 +9,30 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: a79839e2-be39-418b-a3bd-f5457e555172
-translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+exl-id: fbe15e1b-830b-4752-bd02-0d239a90bc68
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 78%
 
 ---
 
-
 # Handbuch zur Leistung von Assets{#assets-performance-guide}
 
-Das digitale Asset-Management wird häufig in Fällen eingesetzt, in denen Leistungsaspekte wichtig sind. Das typische DAM-Setup enthält jedoch eine Reihe von Hardware- und Softwarekomponenten, die sich auf die Leistung auswirken können. Dieses Dokument umfasst Folgendes:
+Digital Asset Management wird häufig verwendet, wenn es auf die Leistung ankommt. Das typische DAM-Setup enthält jedoch eine Reihe von Hardware- und Softwarekomponenten, die sich auf die Leistung auswirken können. Dieses Dokument umfasst Folgendes:
 
 * Informationen für Systemadministratoren zur Bestimmung der optimalen Hardwaredimensionierung für eine neue Digital-Asset-Management-Einrichtung
 * Informationen für Softwareentwickler zur Fehlerbehebung bei DAM-Instanzen mit Leistungsproblemen
 
-## Leistungsprobleme {#performance-issues}
+## Leistungsprobleme  {#performance-issues}
 
 Eine unzureichende Leistung beim Digital Asset Management kann das Benutzererlebnis in dreierlei Hinsicht beeinflussen: interaktive Leistung, Asset-Verarbeitung und Downloadgeschwindigkeit. Um die Leistung zu verbessern, ist es wichtig, die beobachtete Leistung ordnungsgemäß zu messen und Zielmetriken festzulegen.
 
-**1. Interaktive Suche und Durchsuchen** Benutzer suchen nach Assets oder suchen den DAM Finder und beschweren sich über langsame Reaktionszeiten oder dass die Suchergebnisse nicht sofort angezeigt werden. handelt es sich um ein Problem im Zusammenhang mit der interaktiven Leistung.
+**1. Interaktive Suche und Durchsuchen** Benutzer suchen nach Assets oder durchsuchen den DAM Finder und beschweren sich über langsame Antwortzeiten oder dass Suchergebnisse nicht sofort angezeigt werden. handelt es sich um ein Problem im Zusammenhang mit der interaktiven Leistung.
 
 Die interaktive Leistung wird anhand der Seitenantwortzeit gemessen. Dies ist die Zeit vom Erhalt der HTTP-Anfrage bis zum Abschließen der HTTP-Antwort, ermittelbar über die Log-Dateien der Anfragen. Als typische Sollleistung gilt eine Seitenantwortzeit von weniger als 2 Sekunden.
 
-**2. Die Verarbeitung von Assets** Ein Problem bei der Verarbeitung von Assets besteht darin, dass Benutzer Assets hochladen und es dauert einige Minuten, bis Assets problemlos konvertiert und in AEM DAM aufgenommen werden.
+**2. Die Asset-Verarbeitung** Ein Problem bei der Asset-Verarbeitung besteht darin, dass Benutzer Assets hochladen und es dauert, bis Assets leicht konvertiert und in AEM DAM aufgenommen werden.
 
 Die Leistung bei der Asset-Verarbeitung wird anhand der durchschnittlichen Abschlusszeit des Workflowprozesses gemessen. Dies ist die Zeit vom Auslösen bis zum Abschließen des Workflowprozesses für Asset-Updates, ermittelbar über die Benutzeroberfläche für Workflowberichte. Die typische Sollleistung ist abhängig von Größe und Typ der verarbeiteten Assets sowie von der Wiedergabeanzahl. Mögliche Beispiele für Sollleistungen:
 
@@ -41,7 +40,7 @@ Die Leistung bei der Asset-Verarbeitung wird anhand der durchschnittlichen Absch
 * unter einer Minute für Bilder mit einer Größe von weniger als 100 MB bei Standardwiedergaben
 * unter fünf Minuten für HD-Videoclips mit einer Länge von weniger als einer Minute
 
-**3. Download-Geschwindigkeit** Ein Durchsatzproblem besteht darin, dass das Herunterladen von AEM DAM lange dauert und Miniaturansichten nicht sofort angezeigt werden, wenn der DAM-Administrator oder der DAM-Finder durchsucht wird.
+**3. Download-Geschwindigkeit** Ein Durchsatzproblem besteht beim Herunterladen aus AEM DAM, das lange dauert und Miniaturansichten beim Durchsuchen des DAM-Administrators oder des DAM-Finders nicht sofort angezeigt werden.
 
 Die Durchsatzleistung wird anhand der Downloadrate in Kilobit pro Sekunde gemessen. Als typische Sollleistung gelten 300 Kilobit pro Sekunde für 100 gleichzeitige Downloads.
 
@@ -63,7 +62,7 @@ Im Falle großer Mengen können DAM-Prozesse sehr gut parallel durchgeführt wer
 
 Zur umfangreichen Verarbeitung digitaler Assets sind optimierte Hardwareressourcen erforderlich; die wichtigsten Faktoren hierbei sind die Bildgröße und der Spitzendurchsatz verarbeiteter Bilder.
 
-Ordnen Sie mindestens 16 GB Heap zu und konfigurieren Sie den Arbeitsablauf [!UICONTROL DAM Update Asset], um das [Camera Raw-Paket](/help/assets/camera-raw.md) für die Aufnahme von Rohbildern zu verwenden.
+Weisen Sie mindestens 16 GB Heap zu und konfigurieren Sie den Workflow [!UICONTROL DAM Update Asset] so, dass das [Camera Raw Package](/help/assets/camera-raw.md) für die Aufnahme von Rohbildern verwendet wird.
 
 ## Wissenswertes über das System {#understanding-the-system}
 
@@ -71,19 +70,19 @@ Eine typische DAM-Einrichtung umfasst Endbenutzer, die per Lastenausgleichsmodul
 
 In der folgenden Legende werden Bereiche mit möglichen Leistungsproblemen samt einer Reihe von ggf. anwendbaren Lösungen beschrieben.
 
-**Netzwerkverbindung zum** EndbenutzerEine langsame Netzwerkverbindung kann Durchsatzprobleme verursachen, in einigen seltenen Fällen auch Latenzprobleme. Manchmal erhalten Benutzer eine langsame Verbindung vom Internetdienstanbieter (Internet Service Provider, ISP), insbesondere bei Intranets. Dies ist ein Anzeichen für eine unsachgemäße Netzwerktopologie.
+**Netzwerkverbindung zum Endbenutzer** Eine langsame Netzwerkverbindung kann Durchsatzprobleme verursachen, in seltenen Fällen auch Latenzprobleme. Manchmal erhalten Benutzer eine langsame Verbindung vom Internetdienstanbieter (Internet Service Provider, ISP), insbesondere bei Intranets. Dies ist ein Anzeichen für eine unsachgemäße Netzwerktopologie.
 
-**Temporäres Dateisystem** Ein langsame lokale Dateisystem kann zu interaktiven Leistungsproblemen führen, insbesondere bei der Suche, da die Suchindizes auf der lokalen Festplatte gespeichert werden. Darüber hinaus können Probleme bei der Asset-Verarbeitung auftreten, sofern der Befehlszeilenprozess verwendet wird.
+**Temporäres** DateisystemEin langsames lokales Dateisystem kann zu interaktiven Leistungsproblemen führen, insbesondere bei der Suche, da die Suchindizes auf der lokalen Festplatte gespeichert werden. Darüber hinaus können Probleme bei der Asset-Verarbeitung auftreten, sofern der Befehlszeilenprozess verwendet wird.
 
-**AEM DAM** FinderInteraktive Leistungsprobleme, die häufig bei Suchvorgängen auftreten, werden durch eine hohe CPU-Auslastung verursacht, die durch viele gleichzeitige Benutzer oder andere CPU-konsumierende Prozesse auf derselben Instanz verursacht wird. Durch den Wechsel von virtuellen Maschinen zu dedizierten Maschinen und die Sicherstellung, dass keine weiteren Dienste auf dem Rechner ausgeführt werden, kann die Leistung verbessert werden. Wenn eine hohe CPU-Last durch eine Asset-Verarbeitung und viele gleichzeitige Benutzer verursacht wird, empfiehlt Day das Hinzufügen weiterer Clusterknoten.
+**AEM DAM** FinderInteraktive Leistungsprobleme, die häufig bei Suchvorgängen auftreten, werden durch eine hohe CPU-Auslastung aufgrund vieler gleichzeitiger Benutzer oder anderer CPU-intensiver Prozesse auf derselben Instanz verursacht. Durch den Wechsel von virtuellen Maschinen zu dedizierten Maschinen und die Sicherstellung, dass keine weiteren Dienste auf dem Rechner ausgeführt werden, kann die Leistung verbessert werden. Wenn eine hohe CPU-Last durch eine Asset-Verarbeitung und viele gleichzeitige Benutzer verursacht wird, empfiehlt Day das Hinzufügen weiterer Clusterknoten.
 
-**AEM DAM-** WorkflowDauerhaft ausgeführte Arbeitsablaufprozesse während der Asset-Erfassung verursachen Leistungsprobleme bei der Asset-Verarbeitung. Abhängig vom Typ der verarbeiteten Assets kann dies auf eine Überauslastung der CPU hindeuten. Day empfiehlt, die Anzahl der anderen im System ausgeführten Prozesse zu reduzieren und die Anzahl der verfügbaren CPUs durch Hinzufügen von Clusterknoten zu erhöhen.
+**AEM DAM-** WorkflowLange laufende Workflow-Prozesse während der Asset-Erfassung verursachen Leistungsprobleme bei der Asset-Verarbeitung. Abhängig vom Typ der verarbeiteten Assets kann dies auf eine Überauslastung der CPU hindeuten. Day empfiehlt, die Anzahl der anderen im System ausgeführten Prozesse zu reduzieren und die Anzahl der verfügbaren CPUs durch Hinzufügen von Clusterknoten zu erhöhen.
 
-**NAS** ConnectivitySchlechte Netzwerkverbindung zum NAS verursacht interaktive Leistungsprobleme, da der Zugriff auf neue Knoten während der Asset-Verarbeitung aufgrund der Netzwerklatenz verlangsamt wird. Außerdem wirkt sich ein langsamer Netzwerkdurchsatz nicht nur negativ auf den Durchsatz aus, sondern auch auf die Leistung bei der Asset-Verarbeitung, denn Wiedergaben werden langsamer geladen und gespeichert.
+**NAS** ConnectivitySchlechte Netzwerkkonnektivität zum NAS verursacht interaktive Leistungsprobleme, da der Zugriff auf neue Knoten während der Asset-Verarbeitung aufgrund der Netzwerklatenz verlangsamt wird. Außerdem wirkt sich ein langsamer Netzwerkdurchsatz nicht nur negativ auf den Durchsatz aus, sondern auch auf die Leistung bei der Asset-Verarbeitung, denn Wiedergaben werden langsamer geladen und gespeichert.
 
 Ursachen für eine schlechte Latenz und unzureichenden Durchsatz in einem NAS sind gewöhnlich die Netzwerktopologie oder eine NAS-Überauslastung durch andere Dienste.
 
-**Netzwerkangehängter** SpeicherDurch zu viele Netzwerkverbindungen verbundene Datenspeicherung können zu einer Reihe von Problemen führen:
+**Netzwerkbezogene** DatenspeicherungZu wenig genutzte netzwerkfähige Speichersysteme können zu einer Reihe von Problemen führen:
 
 * Geringer Festplattenspeicher ist ein häufig auftretendes Problem, das durch eine ordnungsgemäße Dimensionierung von DAM-Projekten verhindert werden kann.
 * Eine hohe Festplattenlatenz führt zu langsamen Zugriffszeiten für CRX und kann Probleme mit der interaktiven Leistung verursachen.
@@ -111,4 +110,3 @@ Die folgenden Leistungsoptimierungen wurden bisher in Projekten angewendet:
 ## Weiterführende Literatur {#further-reading}
 
 * [Analysieren von langsamen und blockierten Prozessen](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
-
