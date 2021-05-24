@@ -12,7 +12,6 @@ discoiquuid: 52cc3162-b638-410d-854a-383399e2effb
 docset: aem65
 pagetitle: Deploying eCommerce with Demandware
 redirecttarget: https //github.com/adobe/commerce-salesforce
-translation-type: tm+mt
 source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 workflow-type: tm+mt
 source-wordcount: '481'
@@ -23,7 +22,7 @@ ht-degree: 66%
 
 # Salesforce Commerce Cloud{#salesforce-commerce-cloud}
 
-Die Bereitstellung der erforderlichen eCommerce-Pakete bietet die volle Funktionalität des eCommerce-Frameworks sowie eine Referenz-Implementierung der eCommerce-Funktionalität, wie sie mit einer Salesforce-Commerce Cloud-/Demandware-Implementierung (einschließlich eines Demonstrationskatalogs) bereitgestellt wird.
+Durch die Bereitstellung der erforderlichen eCommerce-Pakete erhalten Sie alle Funktionen des eCommerce-Frameworks sowie eine Referenzimplementierung der eCommerce-Funktionalität, die mit einer Salesforce-Commerce Cloud-/Demandware-Implementierung (einschließlich eines Demonstrationskatalogs) bereitgestellt wird.
 
 ## Für eCommerce mit Salesforce Commerce Cloud benötigte Pakete {#packages-needed-for-ecommerce-with-salesforce-commerce-cloud}
 
@@ -46,7 +45,7 @@ Zur Installation der eCommerce-Funktionalität benötigen Sie:
 Um AEM mit einer Demandware Commerce-Integrationskonfiguration (mithilfe des Demonstrationskatalogs Geometrixx Outdoors) zu installieren, gehen Sie folgendermaßen vor:
 
 1. [Installieren Sie AEM](/help/sites-deploying/deploy.md).
-1. Installieren Sie das Inhaltspaket mit dem [Paketmanager](/help/sites-administering/package-manager.md):
+1. Installieren Sie das Inhaltspaket mit dem [Package Manager](/help/sites-administering/package-manager.md):
 1. [Erstellen](/help/sites-authoring/page-authoring.md) Sie etwaige zusätzliche Seiten, die Sie in AEM benötigen.
 
 >[!NOTE]
@@ -71,7 +70,7 @@ Die Serververbindung zwischen AEM und der Demandware-Sandbox muss konfiguriert w
 
 #### Replikation {#replication}
 
-Die Replikation sollte nach der Paketinstallation aktiviert sein. Sie können hier überprüfen, ob: [https://localhost:4502/etc/replication/agents.author/demandware.html](https://localhost:4502/etc/replication/agents.author/demandware.html)
+Die Replikation sollte nach der Paketinstallation aktiviert sein. Sie können dies hier überprüfen: [https://localhost:4502/etc/replication/agents.author/demandware.html](https://localhost:4502/etc/replication/agents.author/demandware.html)
 
 >[!NOTE]
 >
@@ -84,7 +83,7 @@ Der OAuth-Client ist so konfiguriert, dass er mit einer Demandware-Sandbox-Insta
 Für Staging- und Produktionssysteme müssen die OAuth-Clients mit der entsprechenden Client-ID und einem Passwort konfiguriert werden.
 
 1. Navigieren Sie zu [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-1. Klicken Sie auf **Demandware Zugriffstoken Provider**.
+1. Klicken Sie auf **Demandware Access Token Provider**.
 
    ![chlimage_1-7](assets/chlimage_1-7.png)
 
@@ -102,11 +101,11 @@ Die Demandware-Sandbox muss so konfiguriert werden, dass die neue Vorlagen-Engin
 1. Klicken Sie auf **Edit**.
 1. Überprüfen Sie die Werte und klicken Sie auf **OK**.
 1. Klicken Sie auf **Initialize**.
-1. Wechseln Sie zum Ordner WebDAV und suchen Sie nach veröffentlichten Vorlagendateien, z. B. unter `adobe01-tech-prtnr-na01-dw.demandware.net/on/demandware.servlet/webdav/Sites/Dynamic/SiteGenesis`.
+1. Gehen Sie zum Ordner WebDAV und suchen Sie nach veröffentlichten Vorlagendateien, z. B. unter `adobe01-tech-prtnr-na01-dw.demandware.net/on/demandware.servlet/webdav/Sites/Dynamic/SiteGenesis`.
 
    >[!NOTE]
    >
-   >Die Erweiterung ist `.vs`.
+   >Die Erweiterung lautet `.vs`.
 
-1. Überprüfen Sie auch, ob exportierte JS- und CSS-Dateien vorhanden sind, z. B. unter `adobe01-tech-prtnr-na01-dw.demandware.net/on/demandware.servlet/webdav/Sites/Libraries/SiteGenesisSharedLibrary`.
+1. Suchen Sie auch nach exportierten JS- und CSS-Dateien, z. B. unter `adobe01-tech-prtnr-na01-dw.demandware.net/on/demandware.servlet/webdav/Sites/Libraries/SiteGenesisSharedLibrary`.
 
