@@ -10,14 +10,13 @@ topic-tags: components
 content-type: reference
 discoiquuid: 589e3a83-7d1a-43fd-98b7-3b947122829d
 docset: aem65
-translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 88%
 
 ---
-
 
 # Entwicklermodus{#developer-mode}
 
@@ -43,7 +42,7 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
    >
    >   
    * Dies gilt bei einer Breite von weniger als 1024 Pixel.
->* Ist nur Benutzern verfügbar, die Mitglieder der `administrators`-Gruppe sind.
+>* Ist nur für Benutzer verfügbar, die Mitglieder der Gruppe `administrators` sind.
 
 
 >[!CAUTION]
@@ -52,7 +51,7 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 >
 >Falls nötig, kann der Modus konfiguriert werden für die Verwendung:
 >
->* auf einer Autoreninstanz mit dem Ausführungsmodus nosampleContent
+>* auf einer Autoreninstanz im Ausführungsmodus nosamplecontent
 >* auf einer Veröffentlichungsinstanz
 
 >
@@ -70,7 +69,7 @@ Der Modus sollte nach der Verwendung wieder deaktiviert werden.
 
 
 
-## Öffnen des Entwicklermodus {#opening-developer-mode}
+## Öffnen des Entwicklermodus  {#opening-developer-mode}
 
 Der Entwicklermodus ist als Seitenbereich im Seiten-Editor implementiert. Um den Bereich zu öffnen, wählen Sie in der Symbolleiste des Seiten-Editors aus der Modusauswahl die Option **Entwickler** aus:
 
@@ -78,11 +77,11 @@ Der Entwicklermodus ist als Seitenbereich im Seiten-Editor implementiert. Um den
 
 Der Bereich ist in zwei Registerkarten unterteilt:
 
-* **[Komponenten](/help/sites-developing/developer-mode.md#components)** : Zeigt eine Komponentenstruktur, ähnlich der  [Inhaltsstruktur ](/help/sites-authoring/author-environment-tools.md#content-tree) für Autoren
+* **[Komponenten](/help/sites-developing/developer-mode.md#components)**  - Zeigt eine Komponentenstruktur an, ähnlich der  [Inhaltsstruktur ](/help/sites-authoring/author-environment-tools.md#content-tree) für Autoren
 
 * **[Fehler](/help/sites-developing/developer-mode.md#errors)** – Wenn ein Problem auftritt, werden hier die Details für die jeweilige Komponente angezeigt.
 
-### Komponenten {#components}
+### Komponenten  {#components}
 
 ![chlimage_1-12](assets/chlimage_1-12.png)
 
@@ -127,7 +126,7 @@ Jeder Komponenteneintrag kann (z. B.) Folgendes beinhalten:
 
 >[!CAUTION]
 >
->Einige Links zeigen auf das Skript unter `/libs`. Sie dürfen jedoch unter **nichts unter** bearbeiten, da Ihre Änderungen möglicherweise verloren gehen. `/libs` Grund dafür ist, dass diese Verzweigung jedes Mal geändert wird, wenn Sie ein Upgrade durchführen oder ein Hotfix/Feature Pack anwenden. Alle erforderlichen Änderungen sollten unter `/apps` vorgenommen werden, siehe [Überlagerungen und Überschreibungen](/help/sites-developing/overlays.md).
+>Einige Links zeigen auf das Skript unter `/libs`. Diese dienen jedoch nur als Referenz. Sie dürfen **keine** Elemente unter `/libs` bearbeiten, da Ihre Änderungen möglicherweise verloren gehen. Grund dafür ist, dass diese Verzweigung jedes Mal geändert wird, wenn Sie ein Upgrade durchführen oder ein Hotfix/Feature Pack anwenden. Alle erforderlichen Änderungen sollten unter `/apps` vorgenommen werden, siehe [Überlagerungen und Überschreibungen](/help/sites-developing/overlays.md).
 
 ### Fehler {#errors}
 
@@ -144,11 +143,10 @@ Wird beispielsweise eine nicht definierte Methode aufgerufen, wird der daraus re
 
 Der Komponenteneintrag in der Struktur auf der Registerkarte „Komponenten“ wird ebenfalls entsprechend markiert, wenn ein Fehler auftritt.
 
-### Tests  {#tests}
+### Tests {#tests}
 
 >[!CAUTION]
 >
 >In AEM 6.2 wurden die Testfunktionen für den Entwicklermodus neu als eigenständige Toolanwendung implementiert.
 >
 >Ausführliche Informationen finden Sie unter [Testen der Benutzeroberfläche](/help/sites-developing/hobbes.md).
-
