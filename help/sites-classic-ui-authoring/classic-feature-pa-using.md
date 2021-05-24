@@ -10,7 +10,6 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 28529cae-6fbd-4879-a5b8-3ec8e1bcd586
 docset: aem65
-translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
 workflow-type: tm+mt
 source-wordcount: '106'
@@ -33,4 +32,4 @@ Seitenanalysedaten werden in der Sites-Konsole angezeigt. Wenn Websites im Liste
 
 >[!NOTE]
 >
->Die Anzeige der Site-Analysedaten direkt in der Konsole ist nur in der Touch-optimierten Benutzeroberfläche möglich. Weitere Informationen finden Sie unter [Anzeigen von Seitenanalysedaten](/help/sites-authoring/page-analytics-using.md) in der Standard-Authoring-Dokumentation.
+>Die Anzeige der Site-Analysedaten direkt in der Konsole ist nur in der Touch-optimierten Benutzeroberfläche möglich. Weitere Informationen finden Sie unter [Anzeigen von Seitenanalysedaten](/help/sites-authoring/page-analytics-using.md) in der Standarddokumentation für die Bearbeitung.
