@@ -10,14 +10,13 @@ topic-tags: integration
 content-type: reference
 discoiquuid: aca444f6-418a-4c01-ae19-663b4e04fab9
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+exl-id: 15f45978-a983-49a0-91cf-c7610fc37eef
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 77%
 
 ---
-
 
 # Integrieren mit Adobe Search&amp;Promote{#integrating-with-adobe-search-promote}
 
@@ -34,8 +33,8 @@ Führen Sie zum Abrufen des Dienstes Adobe Search&amp;Promote von unserer Websit
 >
 >Wenn Sie Search&amp;Promote mit einer benutzerdefinierten Proxy-Konfiguration verwenden, müssen Sie beide HTTP-Client-Proxy-Konfigurationen vornehmen, da manche AEM-Funktionen 3.x-APIs verwenden und andere wiederum 4.x-APIs:
 >
->* 3.x ist mit [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient) konfiguriert
->* 4.x ist mit [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator) konfiguriert
+>* 3.x wird mit [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient) konfiguriert.
+>* 4.x ist mit [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator) konfiguriert.
 
 >
 
@@ -43,7 +42,7 @@ Führen Sie zum Abrufen des Dienstes Adobe Search&amp;Promote von unserer Websit
 
 ## Ändern der URL des Search&amp;Promote-Diensts {#changing-the-search-promote-service-url}
 
-Die Standard-URL, die für den Search&amp;Promote-Dienst konfiguriert ist, ist `https://searchandpromote.omniture.com/px/`. Verwenden Sie zur Verwendung eines anderen Diensts die OSGi-Konsole, um eine andere URL anzugeben.
+Die Standard-URL, die für den Search&amp;Promote-Dienst konfiguriert ist, lautet `https://searchandpromote.omniture.com/px/`. Verwenden Sie zur Verwendung eines anderen Diensts die OSGi-Konsole, um eine andere URL anzugeben.
 
 1. Öffnen Sie die OSGi-Konsole und klicken Sie auf die Registerkarte „Konfiguration“. ([https://localhost:4502/system/console/configMgr.](https://localhost:4502/system/console/configMgr))
 1. Klicken Sie auf das Element „Day CQ Search&amp;Promote-Konfiguration“.
@@ -53,7 +52,7 @@ Die Standard-URL, die für den Search&amp;Promote-Dienst konfiguriert ist, ist `
 
 Konfigurieren Sie eine oder mehrere Verbindungen mit Search&amp;Promote, sodass Ihre Webseiten mit dem Dienst interagieren können. Für die Verbindung benötigen Sie die Mitgliedsidentifikations- und Kontonummer Ihres Search&amp;Promote-Kontos.
 
-1. Wählen Sie unter **Tools** > **Bereitstellung** **Cloud Services** aus.
+1. Wählen Sie im Symbol **Tools** > **Bereitstellung** die Option **Cloud Services** aus.
 
    Hierdurch werden Sie zum Dashboard der Cloud-Services weitergeleitet. Wenn auf einem lokalen Computer die URL des Dashboards in etwa wie folgt aussieht:
 
@@ -61,7 +60,7 @@ Konfigurieren Sie eine oder mehrere Verbindungen mit Search&amp;Promote, sodass 
 
 1. dann klicken Sie auf der Seite „Cloud Services“ auf den Search&amp;Promote-Link oder das Search&amp;Promote-Symbol.
 
-1. Wenn Sie zum ersten Mal Adobe Search&amp;Promote konfigurieren, klicken Sie auf **Jetzt konfigurieren**, um das Bedienfeld &quot;Konfiguration erstellen&quot;zu öffnen.
+1. Wenn Sie die Adobe-Search&amp;Promote zum ersten Mal konfigurieren, klicken Sie auf **Jetzt konfigurieren** , um den Bereich Konfiguration erstellen zu öffnen.
 
    Wenn Sie mehr über Search&amp;Promote erfahren möchten, klicken Sie stattdessen auf **Weitere Informationen**.
 
@@ -82,7 +81,7 @@ Konfigurieren Sie eine oder mehrere Verbindungen mit Search&amp;Promote, sodass 
 
    >[!NOTE]
    >
-   >Um diese Informationen abzurufen, müssen Sie sich zunächst bei **selbst,** anmelden
+   >Um diese Informationen zu erhalten, müssen Sie sich zunächst bei **a1/> anmelden.**
    >
    >[https://searchandpromote.omniture.com/center/](https://searchandpromote.omniture.com/center/)
    >
@@ -95,15 +94,15 @@ Konfigurieren Sie eine oder mehrere Verbindungen mit Search&amp;Promote, sodass 
    >
    >**Hierbei gilt:**
    >
-   >    * **** XXXXXXXX entspricht Ihrer** Mitglieds-ID**
-   >    * **** spYYYYYYentspricht Ihrer  **Kontonummer**
+   >    * **** XXXXXXXXXX entspricht Ihrer ** Mitglieds-ID**
+   >    * **** spYYYYYYYYentspricht Ihrer  **Kontonummer**
 
 
 1. Klicken Sie auf **Verbinden mit Search&amp;Promote**.
 
    Wenn die Meldung „Verbindung erfolgreich“ angezeigt wird, klicken Sie auf **OK**.
 
-   (Nach dem Verbinden ändert sich der Schaltflächentext in** Erneut verbinden mit Search&amp;Promote**.)
+   (Nach dem Verbinden ändert sich der Schaltflächentext in &quot;Erneut mit Search&amp;Promote verbinden&quot;.)
 
 1. Klicken Sie auf **OK**. Die Seite mit den Search&amp;Promote-Einstellungen wird für die gerade von Ihnen erstellte Konfiguration angezeigt.
 
@@ -113,7 +112,7 @@ Wenn Ihr Search&amp;Promote-Konto sich in Asien oder Europa befindet, müssen Si
 
 Sie können das Datenzentrum wie folgt konfigurieren:
 
-1. Navigieren Sie zur Webkonsole unter `https://localhost:4502/system/console/configMgr/com.day.cq.searchpromote.impl.SearchPromoteServiceImpl`
+1. Navigieren Sie zur Webkonsole unter `https://localhost:4502/system/console/configMgr/com.day.cq.searchpromote.impl.SearchPromoteServiceImpl` .
 
    ![](assets/chlimage_1-61.png)
 
@@ -125,11 +124,11 @@ Sie können das Datenzentrum wie folgt konfigurieren:
 
 1. Klicken Sie auf **Speichern**.
 
-## Hinzufügen von Search&amp;Promote-Komponenten zum Sidekick {#adding-search-promote-components-to-sidekick}
+## Hinzufügen von Search&amp;Promote-Komponenten zum Sidekick  {#adding-search-promote-components-to-sidekick}
 
 Bearbeiten Sie im Designmodus eine **par**-Komponente, sodass sie die Search&amp;Promote-Komponenten im Sidekick zulässt. (In der Dokumentation zu den [Komponenten](/help/sites-developing/components.md#addinganewcomponenttotheparagraphsystemdesignmode) finden Sie weitere Informationen.)
 
-Weitere Informationen zur Verwendung der Komponenten finden Sie unter [Hinzufügen von Search&amp;Promote zu einer Webseite](/help/sites-authoring/search-and-promote.md).)
+Weitere Informationen zur Verwendung der Komponenten finden Sie unter [Hinzufügen von Search&amp;Promote-Funktionen zu einer Webseite](/help/sites-authoring/search-and-promote.md).)
 
 ## Angeben des von Ihren Seiten verwendeten Search&amp;Promote-Dienstes {#specifying-the-search-promote-service-that-your-pages-use}
 
@@ -141,7 +140,7 @@ Wenn Sie die Search&amp;Promote-Eigenschaften für eine Hostseite konfigurieren,
 >
 >Die Dienstverbindung muss bereits konfiguriert sein. (Siehe [Konfigurieren der Verbindung zu Search&amp;Promote](#connection).)
 
-1. Öffnen Sie das Dialogfeld **Seiteneigenschaften**. Klicken Sie beispielsweise auf der Seite** Websites* mit der rechten Maustaste auf die Seite und dann auf **Eigenschaften**.
+1. Öffnen Sie das Dialogfeld **Seiteneigenschaften**. Klicken Sie beispielsweise auf der Seite &quot;Websites&quot;mit der rechten Maustaste auf die Seite und klicken Sie auf **Eigenschaften**.
 1. Klicken Sie auf die Registerkarte **Cloud-Services.**
 1. Zum Deaktivieren der Vererbung der Cloud Service-Konfigurationen von einer übergeordneten Seite klicken Sie auf das Schlosssymbol neben dem Vererbungspfad.
 
