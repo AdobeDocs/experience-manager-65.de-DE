@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 94%
 
 ---
-
 
 # Grundlegende Handhabung{#basic-handling}
 
@@ -60,7 +59,7 @@ Die Hauptkonsolen sind:
   </tr>
   <tr>
    <td><strong>Launches</strong></td>
-   <td>Hier können Sie Ihre <a href="/help/sites-classic-ui-authoring/classic-launches.md">Launches</a> verwalten. Damit können Sie Inhalte für eine künftige Version einer oder mehrerer aktivierter Webseiten entwickeln.<br /> <i>Hinweis: In der touchfähigen Benutzeroberfläche ist ein Großteil der gleichen Funktionalität in der Site-Konsole verfügbar, zusammen mit der References-Leiste.</i><i>Bei Bedarf ist diese Konsole über die Konsole „Tools“ erreichbar. Wählen Sie „Vorgänge“ gefolgt von „Launches“.</i></td>
+   <td>Hier können Sie Ihre <a href="/help/sites-classic-ui-authoring/classic-launches.md">Launches</a> verwalten. Damit können Sie Inhalte für eine künftige Version einer oder mehrerer aktivierter Webseiten entwickeln.<br /> <i>Hinweis: In der Touch-optimierten Benutzeroberfläche ist ein Großteil der gleichen Funktionalität in der Sites-Konsole verfügbar, zusammen mit der Leiste Verweise .</i><i>Bei Bedarf ist diese Konsole über die Konsole „Tools“ erreichbar. Wählen Sie „Vorgänge“ gefolgt von „Launches“.</i></td>
   </tr>
   <tr>
    <td><strong>Posteingang </strong></td>
@@ -99,7 +98,7 @@ Die Konsole **Websites** enthält zwei Bereiche, in denen Sie Ihre Seiten verwal
 
 * Rechter Bereich
 
-   Dies zeigt die Seiten (an der im linken Fensterbereich ausgewählten Stelle) und kann für Aktionen verwendet werden.
+   Dies zeigt die Seiten (an der im linken Bereich ausgewählten Stelle) an und kann für Aktionen verwendet werden.
 
 Hier können Sie [Ihre Seiten verwalten](/help/sites-authoring/managing-pages.md). Dabei können Sie die Symbolleiste oder ein Kontextmenü verwenden oder eine Seite für weitere Aktionen öffnen.
 
@@ -164,7 +163,7 @@ Die folgenden sind verfügbar, ein Teil dieser Felder wird standardmäßig angez
    <td><strong>Beschreibung</strong></td>
   </tr>
   <tr>
-   <td>Miniaturansicht </td>
+   <td>Miniaturansicht</td>
    <td>Zeigt eine Miniatur der Seite an.</td>
   </tr>
   <tr>
@@ -208,7 +207,7 @@ Die folgenden sind verfügbar, ein Teil dieser Felder wird standardmäßig angez
    <td>Zeigt an, ob eine Seite gesperrt wurde und von welchem Benutzerkonto sie gesperrt wurde.</td>
   </tr>
   <tr>
-   <td>Live Copy </td>
+   <td>Live Copy</td>
    <td>Zeigt an, ob die Seite Teil einer Live Copy ist.</td>
   </tr>
  </tbody>
@@ -234,4 +233,3 @@ Die Farben neben den Seiten in den Spalten **Veröffentlicht** und **Geändert**
 Die klassische Benutzeroberfläche nutzt für die Navigation und für das Starten von Aktionen vertraute Mechanismen wie Klicks oder Doppelklicks. Abhängig von der aktuellen Situation ist außerdem eine Reihe von Kontextmenüs verfügbar (diese werden im Allgemeinen per Rechtsklick aufgerufen):
 
 ![chlimage_1-11](assets/chlimage_1-11a.png)
-
