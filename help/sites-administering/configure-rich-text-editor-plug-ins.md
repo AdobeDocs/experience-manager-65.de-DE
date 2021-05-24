@@ -1,9 +1,8 @@
 ---
 title: 'Konfigurieren der Rich-Text-Editor-Plug-ins '
-description: Erfahren Sie, wie Sie die Adobe Experience Manager Rich Text Editor-Plugins konfigurieren, um individuelle Funktionen zu aktivieren.
+description: Erfahren Sie, wie Sie die Adobe Experience Manager Rich-Text-Editor-Plug-ins konfigurieren, um einzelne Funktionen zu aktivieren.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-translation-type: tm+mt
 source-git-commit: 443115b306ff34ee98da9403222874a9700d8aed
 workflow-type: tm+mt
 source-wordcount: '4397'
@@ -11,7 +10,7 @@ ht-degree: 95%
 
 ---
 
-# Konfigurieren der Rich-Text-Editor-Plug-ins  {#configure-the-rich-text-editor-plug-ins}
+# Konfigurieren der Rich-Text-Editor-Plug-ins   {#configure-the-rich-text-editor-plug-ins}
 
 RTE-Funktionen werden über eine Reihe von Plug-ins mit jeweils einer Eigenschaft „Funktionen“ bereitgestellt. Sie können die Eigenschaft „features“ so konfigurieren, dass eine oder mehrere RTE-Funktionen aktiviert oder deaktiviert werden. In diesem Artikel wird beschrieben, wie Sie die RTE-Plug-ins spezifisch konfigurieren.
 
@@ -21,7 +20,7 @@ Weitere Informationen zu den anderen RTE-Konfigurationen finden Sie unter [Konfi
 >
 >Beim Arbeiten mit CRXDE Lite ist es ratsam, die Änderungen regelmäßig mit der Option [!UICONTROL Alle speichern] zu speichern.
 
-## Aktivieren von Plug-ins und Konfigurieren der Eigenschaft „features“{#activateplugin}
+## Aktivieren von Plug-ins und Konfigurieren der Eigenschaft „features“ {#activateplugin}
 
 Gehen Sie wie folgt vor, um ein Plug-in zu aktivieren. Einige Schritte sind nur erforderlich, wenn Sie ein Plug-in zum ersten Mal konfigurieren, da die entsprechenden Knoten noch nicht vorhanden sind.
 
@@ -244,7 +243,7 @@ Für spätere (Neu-)Konfigurationen, beispielsweise um weitere Stile hinzuzufüg
 >
 >Auch für [Tabellen oder Tabellenzellen](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles) können Stile definiert werden. Diese Konfigurationen erfordern unterschiedliche Vorgehensweisen.
 
-### Aktivieren der Dropdown-Auswahlliste „Stil“ {#styleselectorlist}
+### Aktivieren der Dropdown-Auswahlliste „Stil“  {#styleselectorlist}
 
 Aktivieren Sie dazu das styles-Plug-in.
 
@@ -327,7 +326,7 @@ Geben Sie dann die Speicherorte für die Stylesheets an, auf die Sie verweisen m
 
    Wiederholen Sie die obigen Schritte für jeden erforderlichen Stil.
 
-### RTE für optimale Wortumbrüche auf Japanisch konfigurieren   {#jpwordwrap}
+### RTE für optimale Wortumbrüche auf Japanisch konfigurieren  {#jpwordwrap}
 
 Autoren, die AEM zum Erstellen von japanischen Sprachinhalten verwenden, können einen Stil auf Zeichen anwenden, um Zeilenumbrüche zu vermeiden, bei denen kein Umbruch erforderlich ist. Dadurch können Autoren die Sätze an der gewünschten Position umbrechen. Der Stil für diese Funktion basiert auf der CSS-Klasse, die im CSS-Stylesheet vordefiniert ist.
 
@@ -384,7 +383,7 @@ Wenn das paraformat-Plug-in zum ersten Mal aktiviert wird, sind keine Standabsat
 
 Für spätere (Neu-)Konfigurationen, beispielsweise um weitere Formate hinzuzufügen, folgen Sie nur dem entsprechenden Teil der Anweisungen.
 
-### Aktivieren der Dropdown-Auswahl „Format“.    {#formatselectorlist}
+### Aktivieren der Dropdown-Auswahl „Format“.   {#formatselectorlist}
 
 Aktivieren Sie zunächst das paraformat-Plug-in:
 
@@ -452,7 +451,7 @@ Sie können den RTE aber auch so konfigurieren, dass Ihre eigene Auswahl an Zeic
 >[!CAUTION]
 Durch das Hinzufügen eigener Sonderzeichen wird die Standardauswahl überschrieben. Definieren Sie diese Zeichen bei Bedarf in Ihrer eigenen Auswahl (neu).
 
-### Definieren einzelner Zeichen    {#definesinglechar}
+### Definieren einzelner Zeichen   {#definesinglechar}
 
 1. Navigieren Sie in Ihrer Komponente zum Knoten `<rtePlugins-node>/misctools`. Erstellen Sie die Knoten, falls diese noch nicht vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
 1. Erstellen Sie die `features`-Eigenschaft für den Knoten `misctools`:
@@ -582,7 +581,7 @@ Die Funktion zum Kopieren und Einfügen von Tabellen in oder aus der RTE-Kompone
 
 Wiederholen Sie die obigen Schritte für jeden erforderlichen Stil.
 
-### Konfigurieren von ausgeblendeten Kopfzeilen in Tabellen, um die Zugänglichkeit zu verbessern   {#hiddenheader}
+### Konfigurieren von ausgeblendeten Kopfzeilen in Tabellen, um die Zugänglichkeit zu verbessern  {#hiddenheader}
 
 Manchmal kann es sein, dass Sie Datentabellen ohne visuellen Text in einer Spaltenkopfzeile erstellen, da Sie voraussetzen, dass sich der Zweck der Kopfzeile durch die visuelle Beziehung der Spalte mit anderen Spalten ergibt. In diesem Fall ist es erforderlich, dass Sie ausgeblendeten inneren Text innerhalb der Zelle in der Kopfzeilenzelle bereitstellen, damit Bildschirmlesehilfen und andere unterstützende Technologien Benutzern mit unterschiedlichen Bedürfnissen helfen können, den Zweck der Spalte zu verstehen.
 
@@ -600,21 +599,21 @@ Um Autoren bei der Anwendung von CSS auf ausgeblendete Kopfzeilen im Vorschaumod
 
 Wenn Sie sowohl die CSS- als auch die Stilzeichenfolge im Code angeben, hat die CSS-Klasse Vorrang vor der Stilzeichenfolge. Sie überschreibt möglicherweise Konfigurationsänderungen, die mittels der Stilzeichenfolge vorgenommen werden.
 
-## Hinzufügen von Wörterbüchern für die Rechtschreibprüfung   {#adddict}
+## Hinzufügen von Wörterbüchern für die Rechtschreibprüfung  {#adddict}
 
 Wenn das spellcheck-Plug-in aktiviert wird, verwendet der RTE Wörterbücher für jede entsprechende Sprache. Diese werden dann entsprechend der Sprache der Website ausgewählt, indem entweder die language-Eigenschaft der Unterstruktur verwendet oder die Sprache aus der URL extrahiert wird. So wird beispielsweise für den `/en/`-Zweig das englische und für den `/de/`-Zweig das deutsche Wörterbuch für die Überprüfung verwendet.
 
 >[!NOTE]
-Die Meldung `Spell checking failed` wird angezeigt, wenn versucht wird, eine Sprache zu überprüfen, die nicht installiert ist. Diese Standardwörterbücher finden Sie zusammen mit den entsprechenden README-Dateien unter `/libs/cq/spellchecker/dictionaries`. Diese Dateien sollten nicht geändert werden.
+Die Meldung `Spell checking failed` wird angezeigt, wenn versucht wird, eine Überprüfung für eine Sprache durchzuführen, die nicht installiert ist. Diese Standardwörterbücher finden Sie zusammen mit den entsprechenden README-Dateien unter `/libs/cq/spellchecker/dictionaries`. Diese Dateien sollten nicht geändert werden.
 
-Eine Standardinstallation AEM die Wörterbücher für amerikanisches Englisch (`en_us`) und Britisches Englisch (`en_gb`). Gehen Sie wie folgt vor, um weitere Wörterbücher hinzuzufügen.
+Eine standardmäßige AEM-Installation umfasst die Wörterbücher für amerikanisches Englisch (`en_us`) und britisches Englisch (`en_gb`). Gehen Sie wie folgt vor, um weitere Wörterbücher hinzuzufügen.
 
 1. Navigieren Sie zur Seite [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 
-1. Führen Sie einen der folgenden Schritte aus, um ein Wörterbuch Ihrer Sprache zu suchen:
+1. Führen Sie einen der folgenden Schritte aus, um ein Wörterbuch Ihrer Sprache zu finden:
 
-   * Suchen Sie nach einem Wörterbuch Ihrer Sprache. Suchen Sie auf der Wörterbuchseite den Link zur ursprünglichen Quelle oder zur Autorenseite. Suchen Sie die Wörterbuchdateien für v2.x auf einer solchen Seite.
-   * Suchen Sie nach Wörterbuchdateien der Version 2.x unter [https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries).
+   * Suchen Sie nach einem Wörterbuch Ihrer Sprache. Suchen Sie auf der Wörterbuchseite den Link zur ursprünglichen Quelle oder zur Webseite des Autors. Suchen Sie die Wörterbuchdateien für v2.x auf einer solchen Seite.
+   * Suchen Sie unter [https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries) nach Wörterbuchdateien der Version 2.x.
 
 1. Laden Sie das Archiv mit den Rechtschreibdefinitionen herunter. Entpacken Sie den Inhalt des Archivs in Ihrem Dateisystem.
 
@@ -625,10 +624,10 @@ Eine Standardinstallation AEM die Wörterbücher für amerikanisches Englisch (`
 1. Laden Sie die *.aff- und die *.dic-Dateien in das Repository unter `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
-Die RTE-Rechtschreibprüfung ist nur auf Abruf verfügbar. Sie wird nicht automatisch ausgeführt, wenn Sie beginnen, Text einzugeben. Um die Rechtschreibprüfung auszuführen, klicken Sie in der Symbolleiste auf [!UICONTROL Rechtschreibprüfung]. RTE überprüft die Rechtschreibung von Wörtern und hebt die falsch geschriebenen Wörter hervor.
-Wenn Sie Änderungen einbeziehen, die die Rechtschreibprüfung vorschlägt, werden die Textänderungen und falsch geschriebenen Wörter nicht mehr hervorgehoben. Tippen/klicken Sie erneut auf die Schaltfläche „Rechtschreibprüfung“, um die Rechtschreibprüfung auszuführen.
+Die RTE-Rechtschreibprüfung ist nur auf Abruf verfügbar. Sie wird nicht automatisch ausgeführt, wenn Sie beginnen, Text einzugeben. Um die Rechtschreibprüfung auszuführen, klicken Sie in der Symbolleiste auf [!UICONTROL Rechtschreibprüfung] . RTE überprüft die Rechtschreibung von Wörtern und markiert die falsch geschriebenen Wörter.
+Wenn Sie Änderungen einbeziehen, die die Rechtschreibprüfung vorschlägt, werden der Status des Textes und falsch geschriebene Wörter nicht mehr hervorgehoben. Tippen/klicken Sie erneut auf die Schaltfläche „Rechtschreibprüfung“, um die Rechtschreibprüfung auszuführen.
 
-## Konfigurieren der Verlaufsgröße für die Aktionen „Rückgängig“ und „Wiederholen“{#undohistory}
+## Konfigurieren der Verlaufsgröße für die Aktionen „Rückgängig“ und „Wiederholen“ {#undohistory}
 
 Der RTE bietet Autoren die Möglichkeit, bei Bedarf die letzten Bearbeitungsschritte rückgängig zu machen bzw. zu wiederholen. Standardmäßig werden im Verlauf 50 Schritte gespeichert. Sie können diesen Wert nach Bedarf konfigurieren.
 
@@ -641,7 +640,7 @@ Der RTE bietet Autoren die Möglichkeit, bei Bedarf die letzten Bearbeitungsschr
 
 1. Speichern Sie die Änderungen.
 
-## Konfigurieren der Tabulator-Schrittweite   {#tabsize}
+## Konfigurieren der Tabulator-Schrittweite  {#tabsize}
 
 Wenn das Tabulatorzeichen innerhalb eines beliebigen Texts gedrückt wird, wird eine vordefinierte Anzahl von Leerzeichen eingefügt. Standardmäßig werden drei geschützte Leerzeichen und ein normales Leerzeichen eingefügt.
 
@@ -656,7 +655,7 @@ So definieren Sie die Tabulator-Schrittweite:
 
 1. Speichern Sie die Änderungen.
 
-## Festlegen des Einzugsrands   {#indentmargin}
+## Festlegen des Einzugsrands  {#indentmargin}
 
 Wenn die Einzugsfunktion aktiviert ist (Standardeinstellung), können Sie die Einzugsgröße definieren:
 
@@ -731,7 +730,7 @@ Um zu konfigurieren, wie Links in AEM von einem anderen Programm aus hinzugefüg
       * **Name** `cssExternal`
       * **Typ** `String`
       * **Wert:** Der Name der CSS-Klasse (ohne „.“ voranzustellen; beispielsweise `cssClass` anstatt `.cssClass`)
-   * Array mit gültigen **Protokollen**. Die unterstützten Protokolle sind `http://`, `https://`, `file://` und `mailto:`.
+   * Array gültiger **Protokolle**. Die unterstützten Protokolle sind `http://`, `https://`, `file://` und `mailto:`.
 
       * **Name** `protocols`
       * **Typ** `String[]`
