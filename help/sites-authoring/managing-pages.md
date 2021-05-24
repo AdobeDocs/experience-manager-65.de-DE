@@ -1,14 +1,13 @@
 ---
 title: Erstellen und Organisieren von Seiten
 description: So erstellen und verwalten Sie neue Seiten mit AEM
-translation-type: tm+mt
-source-git-commit: 90364cdf6044616d43c1851b3def9b1f063449ca
+exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2523'
 ht-degree: 94%
 
 ---
-
 
 # Erstellen und Organisieren von Seiten {#creating-and-organizing-pages}
 
@@ -35,15 +34,15 @@ Sie können Ihre Inhalte auch mithilfe von [Ordnern](#creating-a-new-folder) org
 
 Die Struktur einer Website kann als Baumstruktur gesehen werden, die die Inhaltsseiten enthält. Die Namen dieser Inhaltsseiten werden zur Bildung der URLs verwendet. Der Titel wird zusammen mit dem Seiteninhalt angezeigt.
 
-Die folgende Abbildung zeigt ein Beispiel auf der Website We.Retail, auf der auf eine Seite mit Wanderkursen ( `desert-sky-shorts`) zugegriffen wird:
+Im folgenden Beispiel sehen Sie ein Beispiel von der Site &quot;We.Retail&quot;, auf die eine Shortseite für Wanderungen ( `desert-sky-shorts`) aufgerufen wird:
 
-* Autor-Umgebung
+* Autorenumgebung
    `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 * Veröffentlichungsumgebung
    `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-Abhängig von der Konfiguration Ihrer Instanz kann die Verwendung von `/content` auf der Umgebung zum Veröffentlichen optional sein.
+Je nach Konfiguration Ihrer Instanz kann die Verwendung von `/content` in der Veröffentlichungsumgebung optional sein.
 
 ```xml
  /content
@@ -163,9 +162,9 @@ Eine Liste von Vorlagen, die für das Erstellen neuer Seiten verwendet werden k�
 >
 >Sofern auf Ihrer Instanz konfiguriert, [können Vorlagenautoren Vorlagen mit dem Vorlageneditor erstellen](/help/sites-authoring/templates.md).
 
-### Komponenten {#components}
+### Komponenten  {#components}
 
-Komponenten sind die von AEM bereitgestellten Elemente, sodass Sie bestimmte Inhaltstypen hinzufügen können. AEM enthält eine Reihe von [Out-of-the-Box-Komponenten](/help/sites-authoring/default-components-console.md), die eine umfassende Funktionalität bieten. Dazu gehören:
+Komponenten sind die von AEM bereitgestellten Elemente, sodass Sie bestimmte Inhaltstypen hinzufügen können. AEM enthält eine Reihe von [vordefinierten Komponenten](/help/sites-authoring/default-components-console.md), die umfassende Funktionen bieten. Dazu gehören:
 
 * Text
 * Bild
@@ -393,11 +392,11 @@ Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträ
 
 >[!NOTE]
 >
->Weitere Informationen zur asynchronen Auftragsverarbeitung und zum Konfigurieren der Begrenzung für Seitenumbruchs-/Umbenennungsaktionen finden Sie im Dokument [Asynchrone Aufträge](/help/sites-administering/asynchronous-jobs.md) im Administrationsbenutzerhandbuch.
+>Weitere Informationen zur asynchronen Auftragsverarbeitung und zum Konfigurieren der Begrenzung für Seitenverschiebungs-/Umbenennungsaktionen finden Sie im Dokument [Asynchrone Aufträge](/help/sites-administering/asynchronous-jobs.md) im Benutzerhandbuch zu Administration.
 
 >[!NOTE]
 >
->Für die Verarbeitung asynchroner Seitenverschiebungen ist AEM 6.5.3.0 oder höher erforderlich.
+>Für die asynchrone Seitenverschiebung ist AEM 6.5.3.0 oder höher erforderlich.
 
 ### Löschen einer Seite {#deleting-a-page}
 
@@ -413,7 +412,7 @@ Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträ
 1. Es wird ein Bestätigungsdialogfeld angezeigt.
 
    * Mit **Abbrechen** können Sie den Vorgang abbrechen.
-   * **Löschen** bestätigen Sie die Aktion.
+   * Mit **Löschen** bestätigen Sie die Aktion.
 
       * Wenn die Seite keine Referenzen aufweist, wird die Seite gelöscht.
       * Wenn die Seite Verweise enthält, werden Sie in einem Meldungsfeld darauf hingewiesen, dass **eine oder mehrere Seiten über einen Verweis verfügen**. Sie können **Löschen erzwingen** oder **Abbrechen** auswählen.
