@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 5773ec1a-f15b-462d-8f9f-54ee1d7ead44
-translation-type: tm+mt
-source-git-commit: f64eb57a69f2124523bd6eaed3e2f58a54c1ea8e
+exl-id: 42e8d804-6b6a-432e-a651-940b9f45db4e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 81%
 
 ---
-
 
 # Konfigurieren der Verwendung von Cookies{#configuring-cookie-usage}
 
@@ -27,7 +26,7 @@ AEM bietet einen Dienst, mit dem Sie konfigurieren und steuern können, wie Cook
 
 Verwenden Sie diese Funktion, um sicherzustellen, dass Ihre Seiten der Einverständniserklärung Ihrer Benutzer zur Verwendung von Cookies entsprechen.
 
-## Konfigurieren zulässiger Cookies {#configuring-allowed-cookies}
+## Konfigurieren zulässiger Cookies  {#configuring-allowed-cookies}
 
 Konfigurieren Sie den Opt-out-Service von Adobe Granite, um festzulegen, wie Cookies auf Ihren Webseiten verwendet werden. In der folgenden Tabelle werden die Eigenschaften beschrieben, die Sie konfigurieren können.
 
@@ -35,9 +34,9 @@ Zum Konfigurieren des Dienstes können Sie die [Web-Konsole](/help/sites-deployi
 
 | Eigenschaftsname (Web-Konsole) | OSGi-Eigenschaftsname | Beschreibung |
 |---|---|---|
-| Ausschluss-Cookies | optout.cookies | Die Namen von Cookies, die darauf hinweisen, dass der Benutzer, wenn er auf dem Gerät des Benutzers vorhanden ist, der Verwendung von Cookies nicht zugestimmt hat. |
-| Ausschluss-HTTP-Header | optout.headers | Die Namen von HTTP-Headern, die angeben, wenn vorhanden, dass der Benutzer der Verwendung von Cookies nicht zugestimmt hat. |
-| Cookies in weißer Liste | optout.whitelist.cookies | Eine Liste von Cookies, die für das Funktionieren der Website unerlässlich sind und ohne Zustimmung des Benutzers verwendet werden können. |
+| Opt-out-Cookies | optout.cookies | Die Namen von Cookies, die angeben, dass der Benutzer der Verwendung von Cookies nicht zugestimmt hat, sofern sie auf dem Gerät des Benutzers vorhanden sind. |
+| HTTP-Header für Opt-out | optout.headers | Die Namen von HTTP-Headern, die angeben, wenn vorhanden, dass der Benutzer der Verwendung von Cookies nicht zugestimmt hat. |
+| Cookies auf der White-List | optout.whitelist.cookies | Eine Liste von Cookies, die für die Funktionsweise der Website unerlässlich sind und ohne Zustimmung des Benutzers verwendet werden können. |
 
 ## Überprüfen der Verwendung von Cookies {#validating-cookie-usage}
 
@@ -115,4 +114,4 @@ Bestimmt, ob ein bestimmtes Cookie im Browser des Benutzers verwendet werden kan
 
 **Rückgabe**
 
-Ein boolescher Wert von `true`, wenn `cookieName` verwendet werden kann, oder ein Wert von `false`, wenn `cookieName` nicht verwendet werden kann.
+Der boolesche Wert `true`, wenn `cookieName` verwendet werden kann, oder der Wert `false` , wenn `cookieName` nicht verwendet werden kann.
