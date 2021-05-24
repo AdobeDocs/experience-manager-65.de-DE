@@ -10,20 +10,19 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 57cd61d5-78f2-4f8c-99ee-75e100c052ef
 docset: aem65
-translation-type: tm+mt
-source-git-commit: cf0c80928bc9f6cfcf472fc5c75215b3812e2c7c
+exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '681'
 ht-degree: 98%
 
 ---
 
-
 # Analysieren der Seitenleistung{#analyzing-page-performance}
 
 Öffnen Sie die Seite [Inhaltseinblick](/help/sites-authoring/content-insights.md), um die Leistung der Seite zu analysieren, die Sie bearbeiten. Konfigurieren Sie den Berichtszeitraum, um Ihre Analyse zu fokussieren.
 
-## Öffnen von Analytics und Empfehlungen für eine Seite {#opening-analytics-and-recommendations-for-a-page}
+## Öffnen von Analytics und Empfehlungen für eine Seite  {#opening-analytics-and-recommendations-for-a-page}
 
 Führen Sie die folgenden Schritte aus, um Analysen und Empfehlungen für eine Seite anzuzeigen:
 
@@ -111,4 +110,3 @@ Führen Sie die folgenden Schritte aus, um eine Aufgabe für eine SEO-Empfehlung
    **Hinweis:** Die Aufgabe, die erstellt wird, enthält den Pfad zu der Seite, für die die SEO-Empfehlung gilt.
 
 1. Klicken oder tippen Sie auf „Fertig“, um die Meldung „Aufgabe erstellt“ zu schließen.
-
