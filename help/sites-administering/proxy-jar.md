@@ -10,14 +10,13 @@ topic-tags: operations
 content-type: reference
 discoiquuid: ca98dc3c-7056-4cdc-b4d3-23e471da5730
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 4e5e6ef022dc9f083859e13ab9c86b622fc3d46e
+exl-id: 3df50303-5cdd-4df0-abec-80831d2ccef7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 97%
 
 ---
-
 
 # Proxyserver-Tool (proxy.jar){#proxy-server-tool-proxy-jar}
 
@@ -37,7 +36,7 @@ Sie können den Proxyserver verwenden, um alle Interaktionen zwischen Client und
 
 Sie können den Proxyserver zum Beispiel zwischen zwei Anwendungen schalten, die über ein TCP/IP-Netzwerk kommunizieren, etwa einem Webbrowser und AEM. So können Sie genau überprüfen, was passiert, wenn Sie eine AEM-Seite anfordern.
 
-## Starten des Proxyservertools {#starting-the-proxy-server-tool}
+## Starten des Proxyservertools  {#starting-the-proxy-server-tool}
 
 Das Tool befindet sich im Ordner /opt/helpers Ihrer AEM Installation. Geben Sie Folgendes ein, um es zu starten:
 
@@ -118,7 +117,7 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 * „C“ gibt an, dass dieser Eintrag vom Client stammt (es handelt sich dabei um die Anforderung einer Webseite).
 * „0“ ist die Verbindungsnummer (der Verbindungszähler startet bei 0).
 * # 00000 ist der Versatz im Bytestream. Hierbei handelt es sich um den ersten Eintrag, weshalb der Versatz bei 0 ist.
-* [GET  &lt;?>] ist der Inhalt der Anforderung, im Beispiel einer der HTTP-Header (URL).
+* [GET  &lt;?>] ist der Inhalt der Anfrage, im Beispiel einer der HTTP-Header (URL).
 
 Wenn eine Verbindung geschlossen wird, werden die folgenden Informationen protokolliert:
 
