@@ -11,22 +11,21 @@ content-type: reference
 discoiquuid: ebd99cc4-8762-4c28-a177-d62dac276afe
 docset: aem65
 targetaudience: target-audience upgrader
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Aktualisieren
+exl-id: 722d544c-c342-4c1c-80e5-d0a1244f4d36
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '721'
 ht-degree: 82%
 
 ---
 
-
-# Aktualisieren auf AEM 6.5 {#upgrading-to-aem}
+# Aktualisieren auf AEM 6.5  {#upgrading-to-aem}
 
 In diesem Abschnitt wird das Aktualisieren einer AEM-Installation auf AEM 6.5 beschrieben:
 
 * [Planung der Aktualisierung](/help/sites-deploying/upgrade-planning.md)
-* [Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor](/help/sites-deploying/pattern-detector.md) 
+* [Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor ](/help/sites-deploying/pattern-detector.md)
 * [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md)
 
 <!--* [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
@@ -35,7 +34,7 @@ In diesem Abschnitt wird das Aktualisieren einer AEM-Installation auf AEM 6.5 be
 * [Wartungsaufgaben vor einer Aktualisierung](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
 * [Durchführen einer In-Place-Aktualisierung](/help/sites-deploying/in-place-upgrade.md)
 * [Prüfungen und Fehlerbehebung nach einer Aktualisierung](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
-* [Nachhaltige Aktualisierungen](/help/sites-deploying/sustainable-upgrades.md) 
+* [Nachhaltige Aktualisierungen](/help/sites-deploying/sustainable-upgrades.md)
 * [Lazy-Content-Migration](/help/sites-deploying/lazy-content-migration.md)
 * [Repository-Neustrukturierung in AEM 6.5](/help/sites-deploying/repository-restructuring.md)
 
@@ -87,11 +86,10 @@ Die Aktualisierung von AEM ist ein mehrstufiger Prozess, der in manchen Fällen 
 
 ## Aktualisierungsablauf {#upgrade-overview-1}
 
-Das folgende Diagramm zeigt den für die Aktualisierung empfohlenen Ablauf. Beachten Sie den Verweis auf die neu eingeführten Funktionen. Die Aktualisierung sollte mit dem Musterdetektor (siehe [Beurteilung der Aktualisierungskomplexität mit dem Musterdetektor](/help/sites-deploying/pattern-detector.md)) Beginn haben. Anhand dieser Informationen können Sie anhand der Muster im erstellten Bericht festlegen, welchen Pfad Sie zur Kompatibilität mit AEM 6.4 verwenden möchten.
+Das folgende Diagramm zeigt den für die Aktualisierung empfohlenen Ablauf. Beachten Sie den Verweis auf die neu eingeführten Funktionen. Das Upgrade sollte mit dem Musterdetektor beginnen (siehe [Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor](/help/sites-deploying/pattern-detector.md)), mit dem Sie anhand der Muster im erstellten Bericht festlegen können, welchen Pfad Sie für die Kompatibilität mit AEM 6.4 verwenden möchten.
 
-In 6.5 wurde der Fokus auf die Abwärtskompatibilität aller neuen Funktionen gelegt. In Fällen, in denen jedoch noch Kompatibilitätsprobleme mit dem Abwärtsmodus auftreten, können Sie die Entwicklung vorübergehend verschieben, um den benutzerdefinierten Code mit 6.5 kompatibel zu halten. Dieser Ansatz hilft Ihnen, Entwicklungsaufwand unmittelbar nach der Aktualisierung zu vermeiden (siehe [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md)).
+In Version 6.5 wurde der Fokus darauf gelegt, alle neuen Funktionen abwärtskompatibel zu halten. In Fällen, in denen jedoch noch einige Abwärtskompatibilitätsprobleme auftreten, können Sie mit dem Kompatibilitätsmodus die Entwicklung zeitweise verschieben, um Ihren benutzerdefinierten Code mit 6.5 kompatibel zu halten. Dieser Ansatz hilft Ihnen, Entwicklungsaufwand unmittelbar nach der Aktualisierung zu vermeiden (siehe [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md)).
 
-In Ihrem 6.5-Entwicklungszyklus schließlich helfen Ihnen Funktionen, die unter Nachhaltige Upgrades eingeführt wurden (siehe [Nachhaltige Upgrades](/help/sites-deploying/sustainable-upgrades.md)), Best Practices zu befolgen, um zukünftige Upgrades noch effizienter und nahtloser zu gestalten.
+Schließlich helfen Ihnen in Ihrem 6.5-Entwicklungszyklus Funktionen, die unter &quot;Nachhaltige Aktualisierungen&quot;eingeführt wurden (siehe [Nachhaltige Aktualisierungen](/help/sites-deploying/sustainable-upgrades.md)), Best Practices zu befolgen, um zukünftige Upgrades noch effizienter und nahtloser zu gestalten.
 
-![6_4_upgrade_overviewflow chart-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)
-
+![6_4_upgrade_overviewFlussdiagramm-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)
