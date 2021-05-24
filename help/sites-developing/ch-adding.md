@@ -1,16 +1,15 @@
 ---
 title: 'Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher '
 description: Fügen Sie Ihren Seiten ContextHub hinzu, um die ContextHub-Funktionen zu aktivieren und eine Verknüpfung mit den ContextHub-JavaScript-Bibliotheken herzustellen
-translation-type: tm+mt
-source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+exl-id: ae745af9-b49f-46b9-ab48-2fd256e9a681
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 100%
 
 ---
 
-
-# Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher  {#adding-contexthub-to-pages-and-accessing-stores}
+# Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher   {#adding-contexthub-to-pages-and-accessing-stores}
 
 Fügen Sie Ihren Seiten ContextHub hinzu, um die ContextHub-Funktionen zu aktivieren und eine Verknüpfung mit den ContextHub-JavaScript-Bibliotheken herzustellen.
 
