@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 430a27b5-f344-404f-8bf8-0d91b49b605e
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: d5372474-d8aa-4e64-919d-0bd29ba99d99
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 92%
 
 ---
-
 
 # Verfassen einer Seite für Mobilgeräte{#authoring-a-page-for-mobile-devices}
 
@@ -26,9 +25,9 @@ Geräte sind entsprechend ihrer Fähigkeit zur Wiedergabe einer Seite in die Kat
 
 >[!NOTE]
 >
->Zur Erstellung einer Website für Mobilgeräte auf der Grundlage einer bestehenden Standard-Site erstellen Sie eine Live Copy der Standard-Site. (Siehe [Erstellen einer Live-Kopie für verschiedene Kanal](/help/sites-administering/msm-livecopy.md).)
+>Zur Erstellung einer Website für Mobilgeräte auf der Grundlage einer bestehenden Standard-Site erstellen Sie eine Live Copy der Standard-Site. (Siehe [Erstellen einer Live Copy für verschiedene Kanäle](/help/sites-administering/msm-livecopy.md).)
 >
->AEM-Entwickler können neue Gerätegruppen erstellen. (Siehe [Erstellen von Filtern für Gerätegruppen.](/help/sites-developing/groupfilters.md))
+>AEM-Entwickler können neue Gerätegruppen erstellen. (Siehe [Erstellen von Gerätegruppenfiltern.](/help/sites-developing/groupfilters.md))
 
 Gehen Sie wie folgt vor, um eine Seite für Mobilgeräte zu erstellen:
 
@@ -49,5 +48,4 @@ Die Seite nimmt die folgende Gestalt an:
 
 >[!NOTE]
 >
->Die Emulatoren sind deaktiviert, wenn eine Seite in der Autoreninstanz von einem Mobilgerät aus aufgerufen wird. Das Authoring kann dann über die touchfähige Benutzeroberfläche durchgeführt werden.
-
+>Die Emulatoren sind deaktiviert, wenn eine Seite in der Autoreninstanz von einem Mobilgerät aus aufgerufen wird. Die Bearbeitung kann dann über die Touch-optimierte Benutzeroberfläche erfolgen.
