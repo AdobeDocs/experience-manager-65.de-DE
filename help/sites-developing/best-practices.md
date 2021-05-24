@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
-translation-type: tm+mt
-source-git-commit: e562939f1c64d8345b4c2a28e4b882200d9e4c07
+exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 80%
 
 ---
-
 
 # Best Practices{#best-practices}
 
@@ -47,9 +46,9 @@ Spezielle Dokumente werden in den folgenden Tabellen beschrieben und verknüpft.
 
 Best Practices für die Verwaltung, Bereitstellung und Pflege oder Inhaltserstellung finden Sie unter folgenden Themen:
 
-* [Best Practices für die Verwaltung](/help/sites-administering/administer-best-practices.md) 
+* [Best Practices für die Verwaltung ](/help/sites-administering/administer-best-practices.md)
 * [Best Practices für die Inhaltserstellung](/help/sites-authoring/best-practices.md)
-* [Best Practices für die Bereitstellung](/help/sites-deploying/best-practices.md) 
+* [Best Practices für die Bereitstellung ](/help/sites-deploying/best-practices.md)
 
 ## Sites {#sites}
 
@@ -82,13 +81,13 @@ Zur Verwaltung und Bearbeitung Ihrer Website-Inhalte wurden einige Best Practice
 
 ## Communities {#communities}
 
-[AEM ](/help/communities/overview.md) Community vereinfacht die Gründung und Verwaltung von lokalen Gemeinschaften.
+[AEM ](/help/communities/overview.md) Communities vereinfacht die Erstellung und Verwaltung von On-Premise-Communities.
 
 Einige Best Practices für Communities sind hier beschrieben:
 
 |  |  |  |
 |---|---|---|
-| Best Practices für die Arbeit mit benutzerdefinierten Inhalten (UGC) | [Kodierungsrichtlinien ](/help/communities/code-guide.md) | Richtlinien für die Entwicklung von flexiblem, portablen Code für das [Framework für soziale Komponenten](/help/communities/scf.md) (SCF). |
+| Best Practices für die Arbeit mit benutzergenerierten Inhalten (UGC) | [Kodierungsrichtlinien ](/help/communities/code-guide.md) | Richtlinien für die Entwicklung von flexiblem, portablen Code für das [Social Component Framework](/help/communities/scf.md) (SCF). |
 | Beispielverwendung von Communities-Komponenten | [Handbuch der Community-Komponenten](/help/communities/components-guide.md) | Ein interaktives Entwicklungstool. |
 
 ## Tools/HTL {#tooling-htl}
@@ -102,6 +101,5 @@ HTML Template Language (HTL) ist ein neues HTML-Vorlagensystem, das mit AEM 6.0
 
 >[!NOTE]
 >
->Für die Best Practice zum Einrichten eines neuen AEM-Projekts, in dem die Kernkomponenten, bearbeitbare Vorlagen, Client-Bibliotheken und Komponentenentwicklung ausführlich beschrieben werden, könnte es von Interesse sein, ein mehrteiliges Lernprogramm zu folgen:
+>Das Befolgen eines mehrteiligen Tutorials kann für die Best Practice zum Einrichten eines neuen AEM-Projekts interessant sein, in dem die Kernkomponenten, bearbeitbaren Vorlagen, Client-Bibliotheken und die Komponentenentwicklung detailliert beschrieben werden:
 >[Erste Schritte mit AEM Sites - WKND-Tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
-
