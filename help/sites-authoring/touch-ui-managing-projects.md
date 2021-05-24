@@ -1,22 +1,21 @@
 ---
 title: Verwalten von Projekten
 seo-title: Verwalten von Projekten
-description: Mit Projekten können Sie Ihr Projekt organisieren, indem Sie Ressourcen in einer Entität gruppieren, die in der Projektkonsole aufgerufen und verwaltet werden kann
-seo-description: Mit Projekten können Sie Ihr Projekt organisieren, indem Sie Ressourcen in einer Entität gruppieren, die in der Projektkonsole aufgerufen und verwaltet werden kann
+description: Mithilfe von Projekten können Sie Ihr Projekt organisieren, indem Sie Ressourcen in einer Entität gruppieren, auf die über die Projektekonsole zugegriffen und diese verwaltet werden kann
+seo-description: Mithilfe von Projekten können Sie Ihr Projekt organisieren, indem Sie Ressourcen in einer Entität gruppieren, auf die über die Projektekonsole zugegriffen und diese verwaltet werden kann
 uuid: ac937582-181f-429b-9404-3c71d1241495
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
-translation-type: tm+mt
-source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 90%
 
 ---
-
 
 # Verwalten von Projekten{#managing-projects}
 
@@ -38,7 +37,7 @@ In „Projekte“ können Sie ein Projekt erstellen, Ressourcen mit Ihrem Projek
 
 >[!CAUTION]
 >
->Damit Projektbenutzer andere Benutzer/Gruppen sehen können, während sie die Projektfunktion verwenden, z. B. Projekte erstellen, Aufgaben/Workflows erstellen, das Team anzeigen und verwalten, müssen diese Benutzer Lesezugriff auf **/home/users** und **/home/groups** haben. Um dies umzusetzen, erteilen Sie am besten der Gruppe **projects-users** Lesezugriff auf **/home/users** und **/home/groups**.
+>Damit Benutzer in Projekten andere Benutzer/Gruppen sehen können, während sie die Projektfunktionen wie das Erstellen von Projekten, das Erstellen von Aufgaben/Workflows, das Anzeigen und Verwalten des Teams verwenden, müssen diese Benutzer Lesezugriff auf **/home/users** und **/home/groups** haben. Um dies umzusetzen, erteilen Sie am besten der Gruppe **projects-users** Lesezugriff auf **/home/users** und **/home/groups**.
 
 ## Erstellen eines Projekts {#creating-a-project}
 
@@ -52,7 +51,7 @@ Standardmäßig enthält AEM folgende Vorlagen für die Projekterstellung:
 Die Vorgehensweise beim Erstellen eines Projekts ist für jedes Projekt identisch. Unterschiede zwischen den Projekttypen gibt es in Bezug auf verfügbare [Benutzerrollen](/help/sites-authoring/projects.md) und [Workflows](/help/sites-authoring/projects-with-workflows.md).  So erstellen Sie ein neues Projekt:
 
 1. Tippen Sie in **Projekte** auf **Erstellen**, um den Assistenten zur **Projekterstellung** zu öffnen:
-1. Wählen Sie eine Vorlage aus. Standardmäßig sind Simple Project, Media Project, [Translation Project](/help/sites-administering/tc-manage.md) und [Product Foto Shoot Product](/help/sites-authoring/managing-product-information.md) verfügbar und klicken Sie auf **Next**.
+1. Wählen Sie eine Vorlage aus. Standardmäßig sind einfache Projekte, Medienprojekte, [Übersetzungsprojekte](/help/sites-administering/tc-manage.md) und [Produkt-Fotoshooting-Produkt](/help/sites-authoring/managing-product-information.md) verfügbar und klicken Sie auf **Weiter**.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
@@ -62,7 +61,7 @@ Die Vorgehensweise beim Erstellen eines Projekts ist für jedes Projekt identisc
 
 1. Tippen oder klicken Sie auf **Erstellen**. Daraufhin werden Sie gefragt, ob Sie ein neues Projekt öffnen oder zur Konsole zurückkehren möchten.
 
-### Zuordnen von Ressourcen zum Projekt   {#associating-resources-with-your-project}
+### Zuordnen von Ressourcen zum Projekt    {#associating-resources-with-your-project}
 
 Da Projekte es Ihnen ermöglichen, Ressourcen zu einer Einheit zu gruppieren, können Sie diese Ressourcen nun Ihrem Projekt hinzufügen. Die Ressourcen werden als **Kacheln** bezeichnet. Die Ressourcentypen, die Sie mit einem Projekt verknüpfen können, werden unter [Projektkacheln](/help/sites-authoring/projects.md#project-tiles) beschrieben.
 
@@ -164,4 +163,3 @@ So legen Sie ein Projekt als inaktiv (oder aktiv) fest:
    ![chlimage_1-267](assets/chlimage_1-267.png)
 
 1. Tippen/klicken Sie auf **Fertig**, um Ihre Änderungen zu speichern.
-
