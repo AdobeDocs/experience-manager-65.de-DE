@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: 505bf3e3-ce3c-40aa-9619-e1b9f6634deb
-translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+exl-id: 7c856e87-9f90-435d-aceb-994f10ea6f50
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '969'
 ht-degree: 82%
 
 ---
-
 
 # Ermitteln von Seiteninformationen im JSON-Format{#obtaining-page-information-in-json-format}
 
@@ -55,7 +54,7 @@ Seitenkomponenten können einem oder mehreren `com.day.cq.wcm.api.PageInfoProvid
 >
 >Ähnlich wie PageInfoProvider-Dienste verwenden Sie ListInfoProvider-Dienste, um Listen von Informationen im JSON-Format zu aktualisieren. (Siehe [Anpassen der Website-Administrationskonsole](/help/sites-developing/customizing-siteadmin.md).)
 
-## Standardmäßige PageInfoProvider-Dienste {#default-page-information-providers}
+## Standardmäßige PageInfoProvider-Dienste  {#default-page-information-providers}
 
 Die Komponente `/libs/foundation/components/page` ist mit den folgenden PageInfoProvider-Diensten verknüpft:
 
@@ -474,7 +473,7 @@ Beispielsweise gibt das PageInfo-Servlet die folgende JSON-Antwort für den Knot
 
 ## Filtern von Informationen zu Workflow-Paketen {#filtering-workflow-package-information}
 
-Konfigurieren Sie den Day CQ WCM Workflow Package Info Provider-Dienst so, dass er nur Informationen zu den Workflow-Paketen zurückgibt, an denen Sie interessiert sind. Standardmäßig gibt der Workflow Package Info Provider-Dienst Informationen zu jedem Workflow-Paket im Repository zurück. Die Serverressourcen werden weniger beansprucht, wenn nur ein Teil der Workflow-Pakete durchlaufen wird.
+Konfigurieren Sie den Dienst Day CQ WCM Workflow Package Info Provider so, dass er nur Informationen zu den Workflow-Paketen zurückgibt, an denen Sie interessiert sind. Standardmäßig gibt der Workflow Package Info Provider-Dienst Informationen zu jedem Workflow-Paket im Repository zurück. Die Serverressourcen werden weniger beansprucht, wenn nur ein Teil der Workflow-Pakete durchlaufen wird.
 
 >[!NOTE]
 >
@@ -520,7 +519,7 @@ Gehen Sie wie folgt vor, um den Dienst in Ihrer Projektquelle zu konfigurieren:
 
 1. Suchen oder erstellen Sie den Konfigurationsordner für Ihre AEM-Anwendung in Ihrer Projektquelle.
 
-   Wenn Sie zum Beispiel den Archetyp für mehrere Module des Content Package Maven-Plugins verwendet haben, um Ihr Projekt zu erstellen, lautet der Ordnerpfad `<projectroot>/content/src/ for example content/src/main/content/jcr_root/apps/<appname>/config`.
+   Wenn Sie beispielsweise den Archetyp multimodule des Inhaltspaket-Maven-Plug-ins zum Erstellen Ihres Projekts verwendet haben, lautet der Ordnerpfad `<projectroot>/content/src/ for example content/src/main/content/jcr_root/apps/<appname>/config`.
 1. Erstellen Sie im Ordner „config“ eine Textdatei mit dem Namen com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider.xml.
 1. Kopieren Sie den folgenden Text in die Datei:
 
@@ -532,7 +531,7 @@ Gehen Sie wie folgt vor, um den Dienst in Ihrer Projektquelle zu konfigurieren:
     workflowpackageinfoprovider.filter="[]"/>
    ```
 
-1. Geben Sie in die Klammern (`[]`), die die `workflowpackageinfoprovider.filter`-Eigenschaft umgeben, eine kommagetrennte Liste von Filterwerten ein, ähnlich dem folgenden Beispiel:
+1. Geben Sie in den Klammern (`[]`), die die `workflowpackageinfoprovider.filter`-Eigenschaft umgeben, eine kommagetrennte Liste mit Filterwerten ein, die dem folgenden Beispiel ähnelt:
 
    `workflowpackageinfoprovider.filter="[-/etc/workflow/packages(/.*)?,+/etc/workflow/packages/Editions(/.*)?]"/>`
 
@@ -544,9 +543,9 @@ Erstellen Sie einen benutzerdefinierten PageInfoProvider-Dienst, um Seitenmetada
 
 1. Implementieren Sie die Schnittstelle `com.day.cq.wcm.api.PageInfoProvider`.
 1. Bündeln Sie die Klasse und stellen Sie sie als OSGi-Dienst bereit.
-1. Erstellen Sie eine Seitenkomponente in Ihrer Anwendung. Verwenden Sie `foundation/components/page` als Wert der `sling:resourceSuperType`-Eigenschaft.
+1. Erstellen Sie eine Seitenkomponente in Ihrer Anwendung. Verwenden Sie `foundation/components/page` als Wert der Eigenschaft `sling:resourceSuperType` .
 
-1. hinzufügen einer Node unter dem Komponentenknoten `cq:infoProviders`.
+1. Fügen Sie einen Knoten unter dem Komponentenknoten `cq:infoProviders` hinzu.
 1. Fügen Sie unter dem Knoten `cq:infoProviders` einen Knoten für Ihren PageInfoProvider-Dienst hinzu. Sie können einen beliebigen Namen für den Knoten angeben.
 1. Fügen Sie die folgende Eigenschaft zu Ihrem PageInfoProvider-Knoten hinzu:
 
@@ -616,4 +615,3 @@ Der PageUrlInfoProvider-Dienst gibt die folgenden Daten für den Knoten `/conten
     "publishURL": "http://localhost:4503/content/we-retail/us/en"
 }
 ```
-
