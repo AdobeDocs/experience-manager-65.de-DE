@@ -1,8 +1,8 @@
 ---
 title: Experience Fragments
-seo-title: Erlebnisfragmente
-description: Erfahren Sie mehr zum Anpassen von Erlebnisfragmenten.
-seo-description: Erfahren Sie mehr zum Anpassen von Erlebnisfragmenten.
+seo-title: Experience Fragments
+description: Erfahren Sie mehr über das Anpassen von Experience Fragments.
+seo-description: Erfahren Sie mehr über das Anpassen von Experience Fragments.
 uuid: fc9f7e59-bd7c-437a-8c63-de8559b5768d
 contentOwner: aheimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: c02e713e-15f3-408b-879a-d5eb014aef02
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 25eff10d4be811774e7a25cebf7e0506acfd5b0b
+exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1667'
 ht-degree: 92%
 
 ---
-
 
 # Experience Fragments{#experience-fragments}
 
@@ -88,7 +87,7 @@ Komponenten, die diese Konvention nicht verwenden, werden nicht berücksichtigt.
 >
 >Für Experience Fragments werden ***nur***[ bearbeitbare Vorlagen unterstützt.](/help/sites-developing/page-templates-editable.md)
 
-Beim Entwickeln einer neuen Vorlage für Erlebnisfragmente folgen Sie den Standardverfahren für eine [bearbeitbare Vorlage](/help/sites-developing/page-templates-editable.md).
+Bei der Entwicklung einer neuen Vorlage für Experience Fragments folgen Sie den Standardpraktiken für eine [bearbeitbare Vorlage](/help/sites-developing/page-templates-editable.md).
 
 Um eine Experience Fragment-Vorlage zu erstellen, die vom **Experience Fragment**-Assistenten erstellt wird, müssen Sie einen dieser Regelsätze verfolgen:
 
@@ -99,8 +98,8 @@ Um eine Experience Fragment-Vorlage zu erstellen, die vom **Experience Fragment*
 
    1. Der Name der Vorlage muss beginnen mit:
       `experience-fragments`
-Dadurch können Benutzer Erlebnisfragmente in /content/experience-fragments als 
-`cq:allowedTemplates` enthält alle Vorlagen, deren Namen mit  `experience-fragment`beginnen. Kunden können diese Eigenschaft aktualisieren, um ihr eigenes Namensschema oder ihre eigenen Vorlagenspeicherorte einzuschließen.
+Dadurch können Benutzer Experience Fragments in /content/experience-fragments als 
+`cq:allowedTemplates` -Eigenschaft dieses Ordners enthält alle Vorlagen, deren Namen mit  `experience-fragment`beginnen. Kunden können diese Eigenschaft aktualisieren, um ihr eigenes Namensschema oder ihre eigenen Vorlagenspeicherorte einzuschließen.
 
 1. [Zulässige Vorlagen](/help/sites-authoring/experience-fragments.md#configure-allowed-templates-folder) können in der Experience Fragments-Konsole konfiguriert werden.
 
@@ -117,7 +116,7 @@ Dadurch können Benutzer Erlebnisfragmente in /content/experience-fragments als
 
 [Die Entwicklung von Komponenten für die Verwendung mit/in Experience Fragments erfolgt gemäß den üblichen Verfahren.](/help/sites-developing/components.md)
 
-Die einzige zusätzliche Konfiguration besteht darin, sicherzustellen, dass die Komponenten in der Vorlage [zulässig sind. Dies wird mit der Inhaltsrichtlinie](/help/sites-developing/page-templates-editable.md#content-policies) erreicht.
+Die einzige zusätzliche Konfiguration besteht darin sicherzustellen, dass die Komponenten in der Vorlage [zulässig sind. Dies wird mit der Inhaltsrichtlinie](/help/sites-developing/page-templates-editable.md#content-policies) erreicht.
 
 ## Der Experience Fragment Link Rewriter Provider – HTML {#the-experience-fragment-link-rewriter-provider-html}
 
@@ -130,13 +129,13 @@ Einer der Anwendungsfälle für solche Gruppen ist das Einbetten von Inhalten in
 
 ### Standardmäßige Link-Umschreibung {#default-link-rewriting}
 
-Mit der Funktion [In Zielgruppe](/help/sites-administering/experience-fragments-target.md) exportieren können Sie:
+Mit der Funktion [Nach Target exportieren](/help/sites-administering/experience-fragments-target.md) können Sie:
 
 * ein Experience Fragment erstellen,
 * Komponenten hinzufügen,
 * und es dann als Adobe Target-Angebot entweder im HTML- oder JSON-Format exportieren.
 
-Diese Funktion kann in einer Autoreninstanz von AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites) aktiviert werden. [ Sie erfordert eine gültige Adobe Target-Konfiguration und Konfigurationen für den Link Externalizer.
+Diese Funktion kann [in einer Autoreninstanz von AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites) aktiviert sein. Sie erfordert eine gültige Adobe Target-Konfiguration und Konfigurationen für den Link Externalizer.
 
 Der Link Externalizer wird verwendet, um die richtigen URLs zu ermitteln, die beim Erstellen der HTML-Version des Target-Angebots erforderlich sind, die anschließend an Adobe Target gesendet wird. Dies ist erforderlich, da Adobe Target erfordert, dass alle Links im Target-HTML-Angebot öffentlich zugänglich sind. Dies bedeutet, dass alle Ressourcen, auf die die Links verweisen, und das Experience Fragment selbst veröffentlicht werden müssen, bevor sie verwendet werden können.
 
@@ -285,7 +284,7 @@ Als Eingabe erhält die Methode die folgenden Parameter:
 
 * `link`
 Die 
-`String` Darstellung des Links, der derzeit verarbeitet wird. Dies ist normalerweise eine relative URL, die auf die Ressource in der Autoreninstanz verweist.
+`String` -Darstellung des Links, der derzeit verarbeitet wird. Dies ist normalerweise eine relative URL, die auf die Ressource in der Autoreninstanz verweist.
 
 * `tag`
 Der Name des HTML-Elements, das derzeit verarbeitet wird.
@@ -311,7 +310,7 @@ In unserem Beispiel möchten wir den `/etc.clientlibs`-Teil der URL entfernen un
 
 >[!NOTE]
 >
->Weitere Informationen zum Abrufen eines Ressourcenauflösers durch einen Dienstbenutzer finden Sie unter [Dienstbenutzer in AEM](/help/sites-administering/security-service-users.md).
+>Weitere Informationen zum Abrufen eines Ressourcen-Resolvers über einen Dienstbenutzer finden Sie unter [Dienstbenutzer in AEM](/help/sites-administering/security-service-users.md).
 
 ```java
 private ResourceResolver resolver;
