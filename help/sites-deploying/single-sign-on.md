@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring, Security
 content-type: reference
 discoiquuid: 86e8dc12-608d-4aff-ba7a-5524f6b4eb0d
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Konfiguration
+exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 83%
 
 ---
-
 
 # Single Sign-On {#single-sign-on}
 
@@ -36,9 +35,9 @@ Konfigurieren Sie die folgenden beiden Dienste, um den Namen des Attributs zu id
 * Das Anmeldemodul
 * Den SSO-Authentifizierungsdienst
 
-Sie müssen denselben Attributnamen für beide Dienste angeben. Das Attribut ist in der `SimpleCredentials` enthalten, die `Repository.login` bereitgestellt wird. Der Wert des Attributs ist unwichtig und wird ignoriert. Nur das Vorhandensein ist wichtig und wird überprüft.
+Sie müssen denselben Attributnamen für beide Dienste angeben. Das Attribut ist im `SimpleCredentials` enthalten, das `Repository.login` bereitgestellt wird. Der Wert des Attributs ist unwichtig und wird ignoriert. Nur das Vorhandensein ist wichtig und wird überprüft.
 
-## Konfigurieren von SSO {#configuring-sso}
+## Konfigurieren von SSO  {#configuring-sso}
 
 Um SSO für eine AEM-Instanz zu konfigurieren, müssen Sie den [SSO-Authentifizierungs-Handler](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler) konfigurieren:
 
@@ -46,20 +45,20 @@ Um SSO für eine AEM-Instanz zu konfigurieren, müssen Sie den [SSO-Authentifizi
 
    Legen Sie beispielsweise für NTLM Folgendes fest:
 
-   * **Pfad:** nach Bedarf; zum Beispiel  `/`
+   * **Pfad:** nach Bedarf; Beispiel:  `/`
    * **Kopfzeilennamen**:  `LOGON_USER`
    * **ID-Format**:  `^<DOMAIN>\\(.+)$`
 
       Dabei wird `<*DOMAIN*>` durch Ihren eigenen Domänennamen ersetzt.
    Für CoSign:
 
-   * **Pfad:** nach Bedarf; zum Beispiel  `/`
+   * **Pfad:** nach Bedarf; Beispiel:  `/`
    * **Kopfzeilennamen**: remote_user
    * **ID-Format:** AsIs
 
    Für SiteMinder:
 
-   * **Pfad:** nach Bedarf; zum Beispiel  `/`
+   * **Pfad:** nach Bedarf; Beispiel:  `/`
    * **Kopfzeilennamen:** SM_USER
    * **ID-Format:** AsIs
 
@@ -92,7 +91,7 @@ Um SSO für eine AEM-Instanz zu konfigurieren, müssen Sie den [SSO-Authentifizi
 >
 >
 Legen Sie in `disp_iis.ini` Folgendes fest:
->(Weitere Informationen finden Sie unter [Installieren des Dispatchers mit dem Microsoft Internet Information Server](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html#microsoft-internet-information-server))
+>(Weitere Informationen finden Sie unter [Installieren des Dispatchers mit dem Microsoft Internet Information Server](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html#microsoft-internet-information-server) .)
 >
 >* `servervariables=1` (leitet IIS-Servervariablen als Anforderungskopfzeilen an die Remote-Instanz weiter)
 >* `replaceauthorization=1` (ersetzt alle Kopfzeilen mit dem Namen „Authorization“ mit Ausnahme von „Basic“ durch die Entsprechung von „Basic“)
@@ -114,7 +113,7 @@ Mithilfe der **Authentifizierungs**-Option in der Felix-Konsole können Sie sehe
 
 `http://localhost:4502/system/console/slingauth`
 
-Der Handler, der zum größten Teil mit dem Pfad übereinstimmt, wird zuerst abgefragt. Wenn Sie beispielsweise handler-A für den Pfad `/` und handler-B für den Pfad `/content` konfigurieren, wird bei einer Anforderung an `/content/mypage.html` zunächst handler-B Abfrage.
+Der Handler, der zum größten Teil mit dem Pfad übereinstimmt, wird zuerst abgefragt. Wenn Sie beispielsweise Handler-A für den Pfad `/` und Handler-B für den Pfad `/content` konfigurieren, fragt eine Anfrage an `/content/mypage.html` zuerst Handler-B ab.
 
 ![screen_shot_2012-02-15at21006pm](assets/screen_shot_2012-02-15at21006pm.png)
 
@@ -161,7 +160,7 @@ Transfer-Encoding: chunked
 Dies funktioniert auch, wenn Sie Folgendes anfordern:
 `http://localhost:4502/libs/cq/core/content/welcome.html?TestParameter=admin`
 
-Sie können auch den folgenden Befehl &quot;curl&quot;verwenden, um die `TestHeader`-Kopfzeile an `admin:` zu senden
+Oder Sie können den folgenden curl-Befehl verwenden, um die Kopfzeile `TestHeader` an `admin:` zu senden
 `curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
 
 >[!NOTE]
@@ -174,14 +173,14 @@ Bei Verwendung von SSO werden An- und Abmeldung extern gehandhabt, sodass die AE
 
 Sie können den Abmelde-Link auf dem Begrüßungsbildschirm mit folgenden Schritten entfernen.
 
-1. Überlagerung `/libs/cq/core/components/welcome/welcome.jsp` auf `/apps/cq/core/components/welcome/welcome.jsp`
+1. Überlagern Sie `/libs/cq/core/components/welcome/welcome.jsp` in `/apps/cq/core/components/welcome/welcome.jsp`
 1. Entfernen Sie folgenden Teil aus der JSP-Datei:
 
    `<a href="#" onclick="signout('<%= request.getContextPath() %>');" class="signout"><%= i18n.get("sign out", "welcome screen") %>`
 
 Um den Abmelde-Link oben rechts aus dem persönlichen Menü des Benutzers zu entfernen, folgen Sie diesen Schritten:
 
-1. Überlagerung `/libs/cq/ui/widgets/source/widgets/UserInfo.js` auf `/apps/cq/ui/widgets/source/widgets/UserInfo.js`
+1. Überlagern Sie `/libs/cq/ui/widgets/source/widgets/UserInfo.js` in `/apps/cq/ui/widgets/source/widgets/UserInfo.js`
 
 1. Entfernen Sie den folgenden Teil aus der Datei:
 
@@ -193,4 +192,3 @@ Um den Abmelde-Link oben rechts aus dem persönlichen Menü des Benutzers zu ent
    });
    menu.addSeparator();
    ```
-
