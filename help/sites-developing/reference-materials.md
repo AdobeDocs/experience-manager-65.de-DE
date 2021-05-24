@@ -11,16 +11,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: d8c9c2db-6709-409a-93d0-11b802763ada
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 5b33f615f1c82ec7cf80ae00c440cb5e3f0741fa
+exl-id: 8d8a7237-8e87-4730-be90-2a18144fc65a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 87%
 
 ---
 
-
-# API-Handbücher {#api-guides}
+# API-Handbücher  {#api-guides}
 
 Adobe Experience Manager (AEM) stellt mehrere APIs zum Entwickeln von Applikationen und Erweitern von AEM bereit. Die folgende Liste enthält die Dokumentation für APIs, die von AEM unterstützt werden:
 
@@ -29,7 +28,7 @@ Adobe Experience Manager (AEM) stellt mehrere APIs zum Entwickeln von Applikatio
 * [Coral-UI-Handbuch](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 * [Dokumentation zur Widgets-API (klassische Benutzeroberfläche)](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)
 * [JavaScript-API-Referenz zum UI-Test-Framework](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html)
-* [JavaScript-API-Referenz zum Editor](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)
+* [Referenz zur JavaScript-API für den Editor](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)
 
 AEM Single-Page Application (SPA) Editor – SDK-Framework-JavaScript-API-Referenzen:
 
@@ -42,7 +41,7 @@ APIs für AEM-Bereitstellung und Content Management:
 
 * Kernkomponenten (JSON)
 
-   * [JSON Exporter](/help/sites-developing/json-exporter.md)
+   * [JSON Exporter](/help/sites-developing/json-exporter.md)
    * [Aktivieren eines JSON-Exports für eine Komponente](/help/sites-developing/json-exporter-components.md)
    * Weitere Informationen finden Sie im [Abschnitt „Komponenten“ des Benutzerhandbuchs für Entwickler](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js).
 
