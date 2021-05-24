@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 98%
 
 ---
-
 
 # Teilnehmen an Workflows{#participating-in-workflows}
 
@@ -44,7 +43,7 @@ Sie können die folgenden Aktionen durchführen, um ein Arbeitselement zu verarb
 
    Wenn Sie erkennen, dass ein Schritt oder eine Reihe von Schritten wiederholt werden muss, können Sie zu einem vorherigen Schritt zurückkehren. Auf diese Weise können Sie einen früheren Schritt im Workflow zur erneuten Verarbeitung auswählen. Der Workflow kehrt zum angegebenen Schritt zurück und wird ab dieser Stelle fortgesetzt.
 
-## Teilnehmen an einem Workflow {#participating-in-a-workflow}
+## Teilnehmen an einem Workflow  {#participating-in-a-workflow}
 
 ### Benachrichtigungen über zugewiesene Workflow-Aktionen {#notifications-of-assigned-workflow-actions}
 
@@ -52,11 +51,11 @@ Wenn Ihnen ein Arbeitselement zugewiesen wird (z. B. **Inhalte genehmigen**), we
 
 * Die Spalte **Status** der Websites-Konsole zeigt an, wenn eine Seite in einem Workflow enthalten ist:
 
-   ![workflowStatus-1](assets/workflowstatus-1.png)
+   ![workflowstatus-1](assets/workflowstatus-1.png)
 
 * Wenn Ihnen oder einer Gruppe, der Sie angehören, ein Arbeitselement im Rahmen eines Workflows zugewiesen wird, wird das Arbeitselement in Ihrem AEM-Workflow-Posteingang angezeigt.
 
-   ![workflowsInbox](assets/workflowinbox.png)
+   ![workflowinbox](assets/workflowinbox.png)
 
 ### Fertigstellen eines Teilnehmerschritts {#completing-a-participant-step}
 
@@ -65,7 +64,7 @@ Nachdem Sie die angegebene Aktion abgeschlossen haben, können Sie das Arbeitsel
 1. Wählen Sie den Workflow-Schritt aus und klicken Sie in der oberen Navigationsleiste auf die Schaltfläche **Fertig stellen**.
 1. Wählen Sie im angezeigten Dialogfeld die Option **Nächster Schritt** aus. Damit ist der Schritt gemeint, der als nächster ausgeführt werden soll. Eine Dropdown-Liste zeigt alle entsprechenden Ziele an. Sie können auch einen **Kommentar** eingeben.
 
-   ![workflowComplete](assets/workflowcomplete.png)
+   ![workflowcomplete](assets/workflowcomplete.png)
 
    Die Anzahl der aufgeführten Schritte hängt vom Design des Workflow-Modells ab.
 
@@ -78,7 +77,7 @@ Gehen Sie folgendermaßen vor, um ein Arbeitselement zu delegieren.
 1. Klicken Sie in der oberen Navigationsleiste auf die Schaltfläche **Delegieren**.
 1. Wählen Sie im Dialogfeld mithilfe der Dropdown-Liste den **Benutzer** aus, an den das Arbeitselement delegiert wird. Sie können auch einen **Kommentar** hinzufügen.
 
-   ![workflow delegate](assets/workflowdelegate.png)
+   ![workflowdelegate](assets/workflowdelegate.png)
 
 1. Klicken Sie auf **OK**, um die Aktion zu bestätigen.
 
@@ -92,4 +91,3 @@ Gehen Sie folgendermaßen vor, um zu einem vorherigen Teilnehmerschritt zurückz
    ![screen_shot_2018-08-10at155325](assets/screen_shot_2018-08-10at155325.jpg)
 
 1. Klicken Sie auf „OK“, um die Aktion zu bestätigen.
-
