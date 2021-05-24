@@ -1,8 +1,8 @@
 ---
 title: Bearbeiten einer externen SPA in AEM
 description: In diesem Dokument werden die empfohlenen Schritte zum Hochladen eines eigenständigen SPA zu einer AEM Instanz, zum Hinzufügen bearbeitbarer Inhaltsabschnitte und zum Aktivieren des Authoring beschrieben.
-translation-type: tm+mt
-source-git-commit: 431bed450ed5b0239d9191dcf061f01e64b8981a
+exl-id: 25236af4-405a-4152-8308-34d983977e9a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2118'
 ht-degree: 99%
@@ -332,5 +332,5 @@ Das folgende Referenzmaterial kann hilfreich sein, um SPAs im Kontext der AEM zu
 * [Erste Schritte mit SPAs in AEM unter Verwendung von React](spa-getting-started-react.md)
 * [SPA-Referenzmaterialien (API-Referenzen)](spa-reference-materials.md)
 * [SPA-Blueprint und PageModelManager](spa-blueprint.md#pagemodelmanager)
-* [SPA-Modell-Routing ](spa-routing.md)
-* [Single Page Applications (SPAs) und Server-seitiges Rendering ](spa-ssr.md)
+* [SPA-Modell-Routing](spa-routing.md)
+* [Single Page Applications (SPAs) und Server-seitiges Rendering](spa-ssr.md)
