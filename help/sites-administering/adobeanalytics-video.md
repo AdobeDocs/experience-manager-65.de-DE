@@ -10,14 +10,13 @@ topic-tags: integration
 content-type: reference
 discoiquuid: a18ddac1-9e4c-4857-9cb3-4d5eeb8dd9ec
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1766'
 ht-degree: 43%
 
 ---
-
 
 # Konfigurieren von Videotracking für Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
 
@@ -41,9 +40,9 @@ Mit der folgenden Vorgehensweise können Sie ein Framework für das Videotrackin
 
 1. [Erstellen Sie eine Adobe Analytics-Konfiguration und ein Framework](/help/sites-administering/adobeanalytics.md).
 
-   * Die folgenden Beispiele in den folgenden Abschnitten verwenden den Namen **my-sc-configuration** für die Konfiguration und **videofw** für das Framework.
+   * Die Beispiele in den folgenden Abschnitten verwenden den Namen **my-sc-configuration** für die Konfiguration und **videofw** für das Framework.
 
-1. Wählen Sie auf der Seite &quot;Framework&quot;eine RSID aus und legen Sie die Nutzung auf &quot;all&quot;fest. ([https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html](https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html))
+1. Wählen Sie auf der Framework-Seite eine RSID aus und setzen Sie die Verwendung auf &quot;all&quot;. ([https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html](https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html))
 1. Ziehen Sie die Videokomponente aus der Komponentenkategorie „Allgemein“ im Sidekick in das Framework.
 1. Wählen Sie eine Tracking-Methode aus:
 
@@ -58,13 +57,13 @@ Mit der folgenden Vorgehensweise können Sie ein Framework für das Videotrackin
 
 Die Milestones-Methode verfolgt die meisten Informationen zum Video nach, ist hochgradig anpassbar und leicht zu konfigurieren.
 
-Um die Milestones-Methode zu nutzen, legen Sie den zeitbasierten Tracking-Versatz fest, um die Milestones zu definieren. Wenn eine Videowiedergabe einen Meilenstein erreicht, ruft die Seite Adobe Analytics auf, um das Ereignis zu verfolgen. Für jeden von Ihnen definierten Meilenstein erstellt die Komponente eine CQ-Variable, die Sie einer Adobe Analytics-Eigenschaft zuordnen können. Der Name dieser CQ-Variablen verwendet das folgende Format:
+Um die Milestones-Methode zu nutzen, legen Sie den zeitbasierten Tracking-Versatz fest, um die Milestones zu definieren. Wenn eine Videowiedergabe einen Meilenstein übergibt, ruft die Seite Adobe Analytics auf, um das Ereignis zu verfolgen. Für jeden Meilenstein, den Sie definieren, erstellt die Komponente eine CQ-Variable, die Sie einer Adobe Analytics-Eigenschaft zuordnen können. Der Name dieser CQ-Variablen verwendet das folgende Format:
 
 ```shell
 eventdata.events.milestoneXX
 ```
 
-Das XX-Suffix ist der Tracking-Versatz, der den Milestone definiert. Wenn Sie beispielsweise einen Verfolgungsoffset von 4, 8, 16, 20 und 28 Sekunden festlegen, werden die folgenden CQ-Variablen generiert:
+Das XX-Suffix ist der Tracking-Versatz, der den Milestone definiert. Wenn Sie beispielsweise die Tracking-Versatzwerte von 4, 8, 16, 20 und 28 Sekunden festlegen, werden die folgenden CQ-Variablen generiert:
 
 * `eventdata.events.milestone4`
 * `eventdata.events.milestone8`
@@ -82,15 +81,15 @@ In der folgenden Tabelle sind die standardmäßigen CQ-Variablen beschrieben, di
   </tr>
   <tr>
    <td>eventdata.videoName </td>
-   <td>Variablen, die dieser Variablen zugeordnet sind, enthalten den <strong>benutzerfreundlichen </strong>-Namen (<strong>Title</strong>) des Videos, falls im DAM festgelegt; Wenn dies nicht festgelegt ist, wird stattdessen der <strong>Dateiname</strong> des Videos gesendet. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
+   <td>Variablen, die diesem zugeordnet sind, enthalten den <strong>benutzerfreundlichen</strong>-Namen (<strong>Titel</strong>) des Videos, falls im DAM festgelegt; Wenn dies nicht festgelegt ist, wird stattdessen der Dateiname <strong>des Videos</strong> gesendet. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
-   <td>Variablen, die dieser Datei zugeordnet sind, enthalten den Namen der Datei. Wird nur zusammen mit eventData.Ereignisses.a.media.Ansicht gesendet </td>
+   <td>Variablen, die diesem zugeordnet sind, enthalten den Namen der Datei. Wird nur zusammen mit eventdata.events.a.media.view gesendet </td>
   </tr>
   <tr>
    <td>eventdata.videoFilePath </td>
-   <td>Variablen, die dieser Datei zugeordnet sind, enthalten den Pfad der Datei auf dem Server. Wird nur zusammen mit eventData.Ereignisses.a.media.Ansicht gesendet </td>
+   <td>Variablen, die diesem zugeordnet sind, enthalten den Pfad der Datei auf dem Server. Wird nur zusammen mit eventdata.events.a.media.view gesendet </td>
   </tr>
   <tr>
    <td>eventdata.events.a.media.segmentView </td>
@@ -98,27 +97,27 @@ In der folgenden Tabelle sind die standardmäßigen CQ-Variablen beschrieben, di
   </tr>
   <tr>
    <td>eventdata.events.a.media.timePlayed</td>
-   <td>Wird jedes Mal gesendet, wenn ein Meilenstein ausgelöst wird, wird die Anzahl der Sekunden, die der Benutzer mit dem Anzeigen des angegebenen Segments verbracht hat, zusammen mit diesem Ereignis gesendet. z. B. eventX=21<br /> </td>
+   <td>Wird jedes Mal gesendet, wenn ein Meilenstein ausgelöst wird, wird die Anzahl der Sekunden, die der Benutzer mit der Wiedergabe des angegebenen Segments verbracht hat, ebenfalls zusammen mit diesem Ereignis gesendet. z. B. eventX=21<br /> </td>
   </tr>
   <tr>
    <td>eventdata.events.a.media.view </td>
-   <td>Wird bei der Initialisierung der Video-Ansicht gesendet</td>
+   <td>Wird beim Initialisieren der Videoansicht gesendet</td>
   </tr>
   <tr>
    <td>eventdata.events.a.media.complete </td>
-   <td>Wird gesendet, wenn die Wiedergabe des Videos beendet ist<br /> </td>
+   <td>Wird gesendet, wenn die Videowiedergabe abgeschlossen ist<br /> </td>
   </tr>
   <tr>
    <td>eventdata.events.milestoneX </td>
-   <td>Wird gesendet, wenn der angegebene Meilenstein übergeben wird, steht X für die Sekunde, in der der Meilenstein bei <br /> ausgelöst wird </td>
+   <td>Wird gesendet, wenn der angegebene Meilenstein übergeben wird, steht X für die Sekunde, in der der Meilenstein bei<br /> ausgelöst wird. </td>
   </tr>
   <tr>
    <td>eventdata.a.contentType </td>
-   <td>an jedem Meilenstein gesendet; wird im Adobe Analytics-Aufruf als pev3 angezeigt, normalerweise als "video"<br /> gesendet </td>
+   <td>Wird auf jedem Meilenstein gesendet; wird im Adobe Analytics-Aufruf als pev3 angezeigt, normalerweise als "video"<br /> gesendet </td>
   </tr>
   <tr>
    <td>eventdata.a.media.name </td>
-   <td>Stimmt genau mit eventData.videoName überein </td>
+   <td>Sucht genau nach eventdata.videoName </td>
   </tr>
   <tr>
    <td>eventdata.a.media.segment </td>
@@ -129,7 +128,7 @@ In der folgenden Tabelle sind die standardmäßigen CQ-Variablen beschrieben, di
 
 >[!NOTE]
 >
->Sie können den benutzerfreundlichen **Namen eines Videos** festlegen, indem Sie das Video zur Bearbeitung im DAM öffnen und das Metadatenfeld **Titel** auf den gewünschten Namen setzen.
+>Sie können den **benutzerfreundlichen**-Namen eines Videos festlegen, indem Sie das Video zur Bearbeitung in DAM öffnen und das Metadatenfeld **Titel** auf den gewünschten Namen setzen.
 
 1. Nachdem Sie Milestones als Tracking-Methode ausgewählt haben, geben Sie im Kasten „Versatz nachverfolgen“ eine kommagetrennte Liste der Tracking-Versätzen in Sekunden ein. Beispielsweise definieren die folgenden Werte Milestones bei 4, 8, 16, 20 und 28 Sekunden nach Start des Videos:
 
@@ -139,14 +138,14 @@ In der folgenden Tabelle sind die standardmäßigen CQ-Variablen beschrieben, di
 
    Die Versatzwerte müssen Ganzzahlen größer als 0 sein. Der Standardwert ist `10,25,50,75`.
 
-1. Um die CQ-Variablen den Adobe Analytics-Eigenschaften zuzuordnen, ziehen Sie die Adobe Analytics-Eigenschaften aus ContentFinder neben der CQ-Variablen auf der Komponente.
+1. Um die CQ-Variablen den Adobe Analytics-Eigenschaften zuzuordnen, ziehen Sie die Adobe Analytics-Eigenschaften aus ContentFinder neben die CQ-Variable auf die Komponente.
 
-   Informationen zum Optimieren der Zuordnungen finden Sie im Handbuch [Videomessung in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html).
+   Weitere Informationen zum Optimieren der Zuordnungen finden Sie im Handbuch [Videomessung in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) .
 
-1. [hinzufügen Sie das ](/help/sites-administering/adobeanalytics.md) Framework auf die Seite.
-1. Um das Setup im **Vorschau-Modus** zu testen, spielen Sie das Video ab, um Adobe Analytics-Aufrufe an Trigger zu erhalten.
+1. [Fügen Sie das ](/help/sites-administering/adobeanalytics.md) Framework zur Seite hinzu.
+1. Um das Setup in **Vorschaumodus** zu testen, spielen Sie das Video ab, um Adobe Analytics-Aufrufe an Trigger zu erhalten.
 
-Die folgenden Adobe Analytics-Verfolgungsdatenbeispiele gelten für die Meilensteinverfolgung mit Verfolgungsoffset 4,8,16,20 und 24 und den folgenden Zuordnungen für die CQ-Variablen:
+Die folgenden Beispiele für Adobe Analytics-Tracking-Daten gelten für das Meilensteintracking mit Tracking-Versatzwerten von 4,8,16,20 und 24 sowie die folgenden Zuordnungen für die CQ-Variablen:
 
 <table>
  <tbody>
@@ -180,7 +179,7 @@ Die folgenden Adobe Analytics-Verfolgungsdatenbeispiele gelten für die Meilenst
   </tr>
   <tr>
    <td>eventdata.events.a.media.complete </td>
-   <td>Ereignis4<br /> </td>
+   <td>event4<br /> </td>
   </tr>
   <tr>
    <td>eventdata.events.milestone4</td>
@@ -225,11 +224,11 @@ Bei diesem Beispiel wird die Videokomponente wie folgt auf der Framework-Seite a
 >
 >Um die Aufrufe an Adobe Analytics anzuzeigen, verwenden Sie ein geeignetes Tool wie DigitalPulse Debugger oder Fiddler.
 
-Aufrufe an Adobe Analytics mit dem bereitgestellten Beispiel sollten wie folgt aussehen, wenn sie mit dem DigitalPulse Debugger angezeigt werden:
+Aufrufe an Adobe Analytics mit dem angegebenen Beispiel sollten wie folgt aussehen, wenn sie mit DigitalPulse Debugger angezeigt werden:
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-*Dies ist der **erste**Aufruf an Adobe Analytics, der die folgenden Werte enthält:*
+*Dies ist der **erste**Aufruf an Adobe Analytics mit den folgenden Werten:*
 
 * *prop1 und eVar1 für eventdata.a.media.name,*
 * *props2–4 zusammen mit eVar2 und eVar3, wobei contentType (video) und segment (1:O:1-4) enthalten sind*
@@ -249,9 +248,9 @@ Aufrufe an Adobe Analytics mit dem bereitgestellten Beispiel sollten wie folgt a
 
 Die Methode „Non-Legacy Milestones“ ähnelt der Milestones-Methode, mit dem Unterschied, dass Milestones mit Prozentwerten der Titellänge definiert werden. Folgende Gemeinsamkeiten liegen vor:
 
-* Wenn eine Videowiedergabe einen Meilenstein erreicht, ruft die Seite Adobe Analytics auf, um das Ereignis zu verfolgen.
+* Wenn eine Videowiedergabe einen Meilenstein übergibt, ruft die Seite Adobe Analytics auf, um das Ereignis zu verfolgen.
 * Der [statische Satz von CQ-Variablen](#cqvars), die für die Zuordnung zu Adobe Analytics-Eigenschaften definiert sind.
-* Für jeden von Ihnen definierten Meilenstein erstellt die Komponente eine CQ-Variable, die Sie einer Adobe Analytics-Eigenschaft zuordnen können.
+* Für jeden Meilenstein, den Sie definieren, erstellt die Komponente eine CQ-Variable, die Sie einer Adobe Analytics-Eigenschaft zuordnen können.
 
 Der Name dieser CQ-Variablen verwendet das folgende Format:
 
@@ -274,12 +273,12 @@ eventdata.events.milestoneXX
 
    Die Versatzwerte müssen Ganzzahlen größer als 0 sein.
 
-1. Um die CQ-Variablen den Adobe Analytics-Eigenschaften zuzuordnen, ziehen Sie die Adobe Analytics-Eigenschaften aus ContentFinder neben der CQ-Variablen auf der Komponente.
+1. Um die CQ-Variablen den Adobe Analytics-Eigenschaften zuzuordnen, ziehen Sie die Adobe Analytics-Eigenschaften aus ContentFinder neben die CQ-Variable auf die Komponente.
 
-   Informationen zum Optimieren der Zuordnungen finden Sie im Handbuch [Videomessung in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html).
+   Weitere Informationen zum Optimieren der Zuordnungen finden Sie im Handbuch [Videomessung in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) .
 
-1. [hinzufügen Sie das ](/help/sites-administering/adobeanalytics.md) Framework auf die Seite.
-1. Um das Setup im **Vorschau-Modus** zu testen, spielen Sie das Video ab, um Adobe Analytics-Aufrufe an Trigger zu erhalten.
+1. [Fügen Sie das ](/help/sites-administering/adobeanalytics.md) Framework zur Seite hinzu.
+1. Um das Setup in **Vorschaumodus** zu testen, spielen Sie das Video ab, um Adobe Analytics-Aufrufe an Trigger zu erhalten.
 
 ## Legacy Milestones {#legacy-milestones}
 
@@ -293,17 +292,17 @@ Diese Methode ähnelt der Milestones-Methode, mit dem Unterschied, dass die im F
 
    * Beispiel: 10, 50, 75, 100
 
-   Außerdem sind die an Adobe Analytics gesendeten Informationen weniger anpassbar. Es sind nur drei Variablen für die Zuordnung verfügbar:
+   Außerdem können die an Adobe Analytics gesendeten Informationen weniger angepasst werden. Es sind nur drei Variablen für die Zuordnung verfügbar:
 
 <table>
  <tbody>
   <tr>
-   <td>eventData.videoName <br /> </td>
-   <td>Variablen, die dieser Variablen zugeordnet sind, enthalten den <strong>benutzerfreundlichen </strong>-Namen (<strong>Title</strong>) des Videos, falls im DAM festgelegt; Wenn der Titel nicht festgelegt ist, wird stattdessen der Dateiname <strong>des Videos</strong> gesendet. Nur einmal gesendet, zu Beginn der Videowiedergabe.<br /> </td>
+   <td>eventdata.videoName <br /> </td>
+   <td>Variablen, die diesem zugeordnet sind, enthalten den <strong>benutzerfreundlichen</strong>-Namen (<strong>Titel</strong>) des Videos, falls im DAM festgelegt; Wenn der Titel nicht festgelegt ist, wird stattdessen der Dateiname <strong>des Videos</strong> gesendet. Nur einmal gesendet, zu Beginn der Videowiedergabe.<br /> </td>
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
-   <td>Variablen, die dieser Datei zugeordnet sind, enthalten den Namen der Datei. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
+   <td>Variablen, die diesem zugeordnet sind, enthalten den Namen der Datei. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
   </tr>
   <tr>
    <td>eventdata.videoFilePath </td>
@@ -314,13 +313,13 @@ Diese Methode ähnelt der Milestones-Methode, mit dem Unterschied, dass die im F
 
 >[!NOTE]
 >
->Sie können den benutzerfreundlichen **Namen eines Videos** festlegen, indem Sie das Video zur Bearbeitung im DAM öffnen und das Metadatenfeld **Titel** auf den gewünschten Namen setzen. Wenn Sie fertig sind, müssen Sie die Änderungen speichern.
+>Sie können den **benutzerfreundlichen**-Namen eines Videos festlegen, indem Sie das Video zur Bearbeitung in DAM öffnen und das Metadatenfeld **Titel** auf den gewünschten Namen setzen. Wenn Sie fertig sind, müssen Sie die Änderungen speichern.
 
 1. Ordnen Sie diese Variablen zu props 1 bis 3 zu.
 
    Der **Rest der relevanten Informationen** im Aufruf wird verkettet in **eine**-Variable namens **pev3** gesendet.
 
-   **Beispiel-** Aufrufe an Adobe Analytics mit dem bereitgestellten Beispiel sollten wie folgt aussehen, wenn sie mit dem DigitalPulse-Debugger angezeigt werden:
+   **Beispielaufrufe** an Adobe Analytics mit dem angegebenen Beispiel sollten wie folgt aussehen, wenn sie mit DigitalPulse Debugger angezeigt werden:
 
    ![lmilestones1](assets/lmilestones1.png)
 
@@ -330,36 +329,36 @@ Diese Methode ähnelt der Milestones-Methode, mit dem Unterschied, dass die im F
 
    * *Länge*  - Die Länge der Videodatei in Sekunden (*100*)
 
-   * *Playername*  - Der Videoplayer, mit dem die Videodatei wiedergegeben wird (*HTML5-Video*)
+   * *Player Name*  - Der Videoplayer, mit dem die Videodatei wiedergegeben wird (*HTML5-Video*)
 
-   * *Abgespielte*  Sekunden gesamt - Die Gesamtdauer der Sekunden, in denen das Video abgespielt wurde (*25*)
+   * *Gesamtzahl der wiedergegebenen Sekunden*  - Die Gesamtanzahl der Sekunden, in denen das Video wiedergegeben wurde (*25*)
 
-   * *Beginn-Zeitstempel*  - Zeitstempel, der angibt, wann die Videowiedergabe gestartet wurde (*1331035567*)
+   * *Start-Zeitstempel*  - Zeitstempel, der angibt, wann die Videowiedergabe gestartet wurde (*1331035567*)
 
-   * *Sitzung*  abspielen - Die Details der Wiedergabesitzung. Dieses Feld gibt an, wie der Benutzer mit dem Video interagiert hat. Dazu zählen Daten wie der Beginn der Videowiedergabe, die Verwendung des Videoreglers zum Vorspulen des Videos und die Einstellung der Videowiedergabe (*L10E24S58L58 - Video wurde um Sekunden gestoppt. 25 von Abschnitt L10 angehalten, dann sprang der Benutzer zu Sekunde  48*)
+   * *Wiedergabesitzung*  - Die Details der Wiedergabesitzung. Dieses Feld gibt an, wie der Benutzer mit dem Video interagiert hat. Dazu können Daten gehören, wie z. B. wo sie mit der Wiedergabe des Videos begonnen haben, ob sie den Videoregler zum Voranbringen des Videos verwendet haben und wo sie die Wiedergabe des Videos angehalten haben (*L10E24S58L58 - Video wurde bei Sekunde angehalten. 25 von Abschnitt L10 angehalten, dann sprang der Benutzer zu Sekunde  48*)
 
-## Legacy Seconds {#legacy-seconds}
+## Legacy Seconds  {#legacy-seconds}
 
-Bei Verwendung der**-Methode aus älteren Sekunden** werden alle N Sekunden Adobe Analytics-Aufrufe ausgelöst, wobei N im Feld für den Versatz der Verfolgung angegeben ist.
+Bei Verwendung der Methode &quot;Alte Sekunden**&quot;werden alle N Sekunden Adobe Analytics-Aufrufe ausgelöst, wobei N im Feld Versatz verfolgen angegeben ist.
 
-1. Setzen Sie den Versatz für die Verfolgung auf eine beliebige Anzahl Sekunden,
+1. Setzen Sie den Versatz &quot;Verfolgen&quot;auf eine beliebige Anzahl von Sekunden.
 
    * Beispiel: 6
    >[!NOTE]
    >
    >Das Feld „Vesatz nachverfolgen“ akzeptiert nur Ganzzahlen, die größer als 0 sind.
 
-   Die an Adobe Analytics gesendeten Informationen können weniger angepasst werden. Für die Zuordnung stehen nur drei Variablen zur Verfügung:
+   Die Informationen, die an Adobe Analytics gesendet werden, sind weniger anpassbar. Für die Zuordnung stehen nur drei Variablen zur Verfügung:
 
 <table>
  <tbody>
   <tr>
-   <td>eventData.videoName <br /> </td>
-   <td>Variablen, die dieser Variablen zugeordnet sind, enthalten den <strong>benutzerfreundlichen </strong>-Namen (<strong>Title</strong>) des Videos, falls im DAM festgelegt; Wenn der Titel nicht festgelegt ist, wird stattdessen der Dateiname <strong>des Videos</strong> gesendet. Nur einmal gesendet, zu Beginn der Videowiedergabe.<br /> </td>
+   <td>eventdata.videoName <br /> </td>
+   <td>Variablen, die diesem zugeordnet sind, enthalten den <strong>benutzerfreundlichen</strong>-Namen (<strong>Titel</strong>) des Videos, falls im DAM festgelegt; Wenn der Titel nicht festgelegt ist, wird stattdessen der Dateiname <strong>des Videos</strong> gesendet. Nur einmal gesendet, zu Beginn der Videowiedergabe.<br /> </td>
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
-   <td>Die dieser Variablen zugeordnete Variable enthält den Dateinamen. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
+   <td>Die dieser Variablen zugeordnete Variable enthält den Namen der Datei. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
   </tr>
   <tr>
    <td>eventdata.videoFilePath </td>
@@ -370,13 +369,13 @@ Bei Verwendung der**-Methode aus älteren Sekunden** werden alle N Sekunden Adob
 
 >[!NOTE]
 >
->Sie können den benutzerfreundlichen **Namen eines Videos** festlegen, indem Sie das Video zur Bearbeitung im DAM öffnen und das Metadatenfeld **Titel** auf den gewünschten Namen setzen. Wenn Sie fertig sind, müssen Sie die Änderungen speichern.
+>Sie können den **benutzerfreundlichen**-Namen eines Videos festlegen, indem Sie das Video zur Bearbeitung in DAM öffnen und das Metadatenfeld **Titel** auf den gewünschten Namen setzen. Wenn Sie fertig sind, müssen Sie die Änderungen speichern.
 
 1. Ordnen Sie diese Variablen zu prop1, prop2 und prop3 zu.
 
    Die **übrigen relevanten Informationen** des Aufrufs werden zusammenhängend in **einer** Variablen namens **pev3** gesendet.
 
-   Aufrufe an Adobe Analytics mit dem bereitgestellten Beispiel sollten wie folgt aussehen, wenn sie mit dem DigitalPulse Debugger angezeigt werden:
+   Aufrufe an Adobe Analytics mit dem angegebenen Beispiel sollten wie folgt aussehen, wenn sie mit DigitalPulse Debugger angezeigt werden:
 
    ![lseconds](assets/lseconds.png)
 
