@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
 discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: a8d50c09-72d0-406e-874e-50a985227a56
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2345'
 ht-degree: 83%
 
 ---
-
 
 # Verwalten von Wörterbüchern mithilfe des Übersetzers{#using-translator-to-manage-dictionaries}
 
@@ -36,7 +35,7 @@ Hinweis: Das Übersetzertool und die Wörterbücher, die Sie verwalten, dienen z
 
 >[!NOTE]
 >
->Das Übersetzungstool verfügt zwar über eine klassische Benutzeroberfläche, wird jedoch unabhängig von der Schnittstelle, auf der diese Ausdrücke gefunden werden, für die Übersetzung von Ausdrücken verwendet.
+>Obwohl das Übersetzer-Tool über eine klassische Benutzeroberfläche verfügt, wird es unabhängig von der Oberfläche, in der diese Ausdrücke gefunden werden, für die Übersetzung von Ausdrücken verwendet.
 
 Das Übersetzertool zeigt die in AEM verwendeten Texte zusammen mit den verschiedenen Übersetzungen nebeneinander an:
 
@@ -62,7 +61,7 @@ Sie können die englischen und übersetzten Texte durchsuchen, filtern und bearb
    >
    >Weitere Informationen zu Übersetzungsprojekten finden Sie unter [Verwalten von Übersetzungsprojekten](/help/sites-administering/tc-manage.md).
 
-## Erstellen eines Wörterbuchs {#creating-a-dictionary}
+## Erstellen eines Wörterbuchs  {#creating-a-dictionary}
 
 Erstellen Sie ein Wörterbuch zur Verwaltung Ihrer lokalisierten Zeichenfolgen für die Benutzeroberfläche. Nach der Erstellung kann das Wörterbuch mithilfe des Übersetzungstools verwaltet werden.
 
@@ -86,11 +85,11 @@ Erstellen Sie ein Wörterbuch zur Verwaltung Ihrer lokalisierten Zeichenfolgen f
    >
    >Dies ist die Struktur des [Sling-i18n-Moduls](https://sling.apache.org/site/internationalization-support.html).
 
-1. Laden Sie den Übersetzer und den Wörterbuchpfad (z. `/apps/myProject/i18n`) wird in der Dropdown-Auswahl in der Symbolleiste verfügbar sein. Wählen Sie diese aus, um mit dem Hinzufügen von Zeichenfolgen und deren Übersetzungen zu beginnen.
+1. Laden Sie den Übersetzer und den Wörterbuchpfad neu (z. B. `/apps/myProject/i18n`) in der Dropdown-Auswahl in der Symbolleiste verfügbar sein. Wählen Sie diese aus, um mit dem Hinzufügen von Zeichenfolgen und deren Übersetzungen zu beginnen.
 
    >[!NOTE]
    >
-   >Der Übersetzer speichert nur Übersetzungen für Sprachen, die sich unter dem Pfad befinden (z. `/apps/myProject/i18n`).
+   >Der Übersetzer speichert nur Übersetzungen für Sprachen, die tatsächlich unter dem Pfad vorhanden sind (z. B. `/apps/myProject/i18n`).
    >
    >Achten Sie darauf, dass diese den im Raster dargestellten Sprachen entsprechen.
 
@@ -112,7 +111,7 @@ Die Zeichenfolgen, die Sie einem Wörterbuch hinzufügen, müssen jeweils exakt 
 
 **Angeben von Übersetzungshinweisen**
 
-Verwenden Sie die Kommentareigenschaft der Wörterbuchzeichenfolge, um den Übersetzer mit Informationen zur Bedeutung der Zeichenfolge bei seiner Arbeit zu unterstützen. Benutzer können die Bedeutung mehrdeutiger Wörter in der Regel anhand der Benutzeroberfläche erschließen. Der Übersetzer sieht die Zeichenfolge allerdings nicht im Kontext der Benutzeroberfläche. Mit einem Übersetzungshinweis können mögliche Mehrdeutigkeiten beseitigt werden. Ein Kommentar hilft dem Übersetzer beispielsweise, zu verstehen, dass das englische Wort &quot;Anforderung&quot;als Substantiv statt als Verb verwendet wird.
+Verwenden Sie die Kommentareigenschaft der Wörterbuchzeichenfolge, um den Übersetzer mit Informationen zur Bedeutung der Zeichenfolge bei seiner Arbeit zu unterstützen. Benutzer können die Bedeutung mehrdeutiger Wörter in der Regel anhand der Benutzeroberfläche erschließen. Der Übersetzer sieht die Zeichenfolge allerdings nicht im Kontext der Benutzeroberfläche. Mit einem Übersetzungshinweis können mögliche Mehrdeutigkeiten beseitigt werden. Beispielsweise hilft ein Kommentar dem Übersetzer zu verstehen, dass das englische Wort &quot;Request&quot;als Substantiv und nicht als Verb verwendet wird.
 
 Übersetzungshinweise ermöglichen auch die Unterscheidung identischer Zeichenfolgen mit unterschiedlicher Bedeutung. So kann beispielsweise das Wort „Search“ ein Verb oder ein Substantiv sein, weshalb das Wörterbuch zwei Einträge mit unterschiedlichen Übersetzungshinweisen enthalten muss. Der Übersetzungshinweis ist auch in dem Code enthalten, der die Zeichenfolge anfordert, sodass auf der Benutzeroberfläche die korrekte Zeichenfolge verwendet wird.
 
@@ -120,7 +119,7 @@ Verwenden Sie die Kommentareigenschaft der Wörterbuchzeichenfolge, um den Über
 
 Sie können Variablen in die lokalisierte Zeichenfolge einfügen, um dem Satz Kontextbedeutung zu geben. Ein Beispiel: Nach der Anmeldung bei einer Webanwendung wird auf der Homepage folgende Nachricht angezeigt: „Willkommen zurück, Administrator. Sie haben zwei Nachrichten in Ihrem Posteingang.“ Der Seitenkontext bestimmt den Benutzernamen und die Anzahl der Nachrichten.
 
-Um Variablen in die lokalisierte Zeichenfolge einzubeziehen, platzieren Sie im ersten Argument der get-Methode die in Klammern gesetzten Indizes an der Position der Variablen. Beschreiben Sie die Werte in einem Übersetzungshinweis. Der Übersetzer muss die Bedeutung der Variablen kennen, da andere Sprachen ggf. eine andere Satzstruktur erfordern.
+Um Variablen in die lokalisierte Zeichenfolge einzubeziehen, platzieren Sie in Klammern gesetzte Indizes an der Position der Variablen im ersten Argument der get -Methode. Beschreiben Sie die Werte in einem Übersetzungshinweis. Der Übersetzer muss die Bedeutung der Variablen kennen, da andere Sprachen ggf. eine andere Satzstruktur erfordern.
 
 [Der Code, der die übersetzte Zeichenfolge anfordert](/help/sites-developing/i18n-dev.md#including-variables-in-localized-sentences), gibt abhängig vom Kontext entsprechende Werte für die indizierten Variablen an.
 
@@ -177,8 +176,8 @@ Gehen Sie wie folgt vor, um eine Zeichenfolge aus einem Wörterbuch zu entfernen
 
 Die Suchleiste am unteren Rand des Übersetzertools bietet verschiedene Auswahloptionen für Zeichenfolgen:
 
-* **Nach Text filtern:** Ein Muster, das mit der englischen Zeichenfolge, dem englischen Kommentar oder den englischen Übersetzungen übereinstimmt. Nur Elemente, die dem Muster ganz oder teilweise entsprechen, werden in der Tabelle angezeigt.
-* **Änderungen: Beliebige, modifizierte, neue, gelöschte: Elemente** anzeigen, die geändert und nicht gespeichert wurden.
+* **Nach Text filtern:** Ein Muster, das mit der englischen Zeichenfolge, dem Kommentar oder den Übersetzungen übereinstimmt. Nur Elemente, die dem Muster ganz oder teilweise entsprechen, werden in der Tabelle angezeigt.
+* **Änderungen: Beliebige, geänderte, neue, gelöschte:** Zeigt Elemente an, die geändert und nicht gespeichert wurden.
 
    * Beliebig: Zeigt Elemente an, die geändert, hinzugefügt oder entfernt wurden.
    * Geändert: Zeigt geänderte Elemente an.
@@ -270,7 +269,7 @@ Fügen Sie vom Übersetzungstool unterstützte Sprachen hinzu, die Benutzern auf
 
 ### Ändern der in der Wörterbuchtabelle aufgeführten Sprachen  {#changing-languages-listed-in-the-dictionary-table}
 
-Das Übersetzungstool enthält die folgenden Sprachen in der Wörterbuchtabelle:
+Das Übersetzer-Tool enthält die folgenden Sprachen in der Wörterbuchtabelle:
 
 * de – Deutsch
 * fr – Französisch
@@ -305,13 +304,13 @@ Gehen Sie wie folgt vor, um Sprachen hinzuzufügen oder zu entfernen:
 
    >[!NOTE]
    >
-   >Der Übersetzer speichert nur Übersetzungen für Sprachen, die tatsächlich [im Wörterbuch](#creating-a-dictionary) vorhanden sind (d.h. unter dem Wörterbuchpfad wie `/apps/myProject/i18n`).
+   >Der Übersetzer speichert Übersetzungen nur für Sprachen, die tatsächlich [im Wörterbuch](#creating-a-dictionary) vorhanden sind (d. h. unter dem Wörterbuchpfad wie `/apps/myProject/i18n`).
    >
    >Achten Sie darauf, dass diese den im Raster dargestellten Sprachen entsprechen.
 
 ### Verfügbarmachen von Sprachen für Autoren {#making-languages-available-to-authors}
 
-Nachdem Sie ein Wörterbuch für eine neue Sprache in Ihrer AEM-Instanz definiert haben, müssen Sie es den Autoren zur Auswahl zur Verfügung stellen (z. B. zur Verwendung in **Voreinstellungen**):
+Nachdem Sie ein Wörterbuch für eine neue Sprache für Ihre AEM-Instanz definiert haben, müssen Sie es den Autoren zur Auswahl zur Verfügung stellen (z. B. zur Verwendung in **Voreinstellungen**):
 
 1. Gehen Sie wie folgt vor, um die Liste mit den Sprachen zu ändern, die in der **Sicherheitskonsole** unter **Voreinstellungen** verfügbar sind:
 
@@ -336,13 +335,13 @@ Nachdem Sie ein Wörterbuch für eine neue Sprache in Ihrer AEM-Instanz definier
 
 ### Ändern von Sprachennamen und Standardländern  {#changing-language-names-and-default-countries}
 
-In vielen Ländern wird die gleiche Sprache gesprochen – beispielsweise Englisch in den USA, in Großbritannien und in Australien. Dies wird durch einen Code gekennzeichnet, der sowohl Sprache als auch Land wie `en_US`, `en_GB` und `en_AU` angibt.
+In vielen Ländern wird die gleiche Sprache gesprochen – beispielsweise Englisch in den USA, in Großbritannien und in Australien. Dies wird durch einen Code gekennzeichnet, der sowohl Sprache als auch Land angibt, z. B. `en_US`, `en_GB` und `en_AU`.
 
 Die Standardländer werden verwendet, wenn Flaggen angezeigt werden (etwa im Dialogfeld zum Kopieren einer Sprache) und dienen zum Auflösen des Landes für einen Sprachcode.
 
 >[!NOTE]
 >
->Für Lokalisierungen, die wie beschrieben durch den Übersetzer verwaltet werden, funktioniert nur die genaue Sprache. Wenn die Dropdownliste mit den Spracheinstellungen `en_uk` verwendet, muss im Repository ein `en_uk`-Wörterbuch vorhanden sein.
+>Für Lokalisierungen, die wie beschrieben durch den Übersetzer verwaltet werden, funktioniert nur die genaue Sprache. Wenn die Dropdown-Liste mit den Spracheinstellungen `en_uk` verwendet, muss im Repository ein `en_uk` -Wörterbuch vorhanden sein.
 
 So ändern Sie die Standarddefinitionen:
 
@@ -354,13 +353,13 @@ So ändern Sie die Standarddefinitionen:
 
    `/apps/wcm/core/resources/languages`
 
-   Ändern oder erweitern Sie die Liste dort. Die Eigenschaft `defaultCountry` auf einem Sprachknoten (z. `ja`) muss den vollständigen Code enthalten, z. B. `ja_jp`, der `jp` als Standardland für die Sprache `ja` definiert.
+   Ändern oder erweitern Sie die Liste dort. Die Eigenschaft `defaultCountry` auf einem Sprachknoten (z. B. `ja`) muss den vollständigen Code enthalten, z. B. `ja_jp`, der `jp` als Standardland für die Sprache `ja` definiert.
 
 1. Aktualisieren Sie den **CQ WCM Language Manager**.
 
    * **Sprachliste**:
 
-      Der Pfad zur Sprachliste im Repository Legen Sie hier den Speicherort für die Überlagerung fest:
+      Der Pfad zur Sprachliste im Repository Legen Sie dies auf den Speicherort fest, der für die Überlagerung verwendet wird:
 
       ```
              /apps/wcm/core/resources/languages
@@ -382,9 +381,8 @@ Des Weiteren empfiehlt es sich, Wörterbuchzeichenfolgen im Rahmen des reguläre
 
 >[!NOTE]
 >
->Regelmäßige Veröffentlichungsfunktionen oder Replizierung sollten nicht für Wörterbücher verwendet werden. Stattdessen sollten Wörterbücher genauso behandelt werden wie Code und Konfiguration. Dazu gehört die Verwendung der Quellcodeverwaltung zur Verfolgung von Änderungen und die Verwendung von Inhaltspaketen, um Änderungen auf Autor und Veröffentlichung anzuwenden.
+>Regelmäßige Veröffentlichungsfunktionen oder Replikation sollten nicht für Wörterbücher verwendet werden. Stattdessen sollten Wörterbücher genauso behandelt werden wie Code und Konfiguration. Dazu gehört die Verwendung der Quell-Code-Kontrolle zur Verfolgung von Änderungen und die Verwendung von Inhaltspaketen zur Anwendung von Änderungen auf Autoren- und Veröffentlichungsinstanz.
 
 >[!NOTE]
 >
 >Bei Verwendung von Dispatcher müssen Sie [zwischengespeicherte Seiten ungültig machen](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html), um neue Wörterbuchzeichenfolgen in gerenderte Komponenten-Zeichenfolgen einzuschließen.
-
