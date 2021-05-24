@@ -10,14 +10,13 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6612f89d-c518-4e5a-8df1-6487cc330a9a
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: b07134b2-074a-4d52-8d0c-7e7abe51fc3a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 92%
 
 ---
-
 
 # Entwicklung und Seitenvergleich{#developing-and-page-diff}
 
@@ -41,7 +40,7 @@ Es wird automatisch eine Bereinigungsaufgabe ausgeführt, um diesen temporären 
 
 ## Berechtigungen {#permissions}
 
-In der klassischen Benutzeroberfläche mussten bisher besondere Entwicklungsabwägungen vorgenommen werden, um die AEM zu vereinfachen (z. B. `cq:text` tag lib oder benutzerspezifische Integration des `DiffService` OSGi-Dienstes in Komponenten). Für die neue Vergleichsfunktion ist dies nicht mehr notwendig, da sie clientseitig durch DOM-Vergleich ausgeführt wird.
+Zuvor musste in der klassischen Benutzeroberfläche bei der Entwicklung besonders berücksichtigt werden, um die AEM zu vereinfachen (z. B. die Verwendung der Tag-Bibliothek `cq:text` oder die benutzerdefinierte Integration des `DiffService`-OSGi-Dienstes in Komponenten). Für die neue Vergleichsfunktion ist dies nicht mehr notwendig, da sie clientseitig durch DOM-Vergleich ausgeführt wird.
 
 Es gibt jedoch einige Einschränkungen, die der Entwickler beachten muss.
 
