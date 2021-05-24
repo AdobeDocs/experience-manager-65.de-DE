@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: c117b9d1-e4ae-403f-8619-6e48d424a761
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: 4b6c273c-560e-4330-b886-a02825d5aaa1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 83%
 
 ---
 
-
 # Verwenden von Tags{#using-tags}
 
 Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website. Tags können als Keywords oder Beschriftungen betrachtet werden, die einer Seite, einem Asset oder einem anderen Inhalt zugeordnet werden können, um Suchen zu ermöglichen und dadurch Inhalte und verwandte Inhalte zu finden.
 
-* Informationen zum Erstellen und Verwalten von Tags sowie zu den angewendeten Inhalts-Tags finden Sie unter [Verwalten von Tags](/help/sites-administering/tags.md).
+* Informationen zum Erstellen und Verwalten von Tags sowie dazu, auf welche Inhalts-Tags angewendet wurden, finden Sie unter [Verwalten von Tags](/help/sites-administering/tags.md) .
 * Unter [Tagging für Entwickler](/help/sites-developing/tags.md) finden Sie Informationen über das Tagging-Framework sowie die Einbeziehung und Erweiterung von Tags in benutzerdefinierten Anwendungen.
 
 ## Zehn Gründe für das Verwenden von Tags {#ten-reasons-to-use-tagging}
@@ -40,11 +39,11 @@ Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten 
 
 Wenn Sie die Inhaltsstruktur für eine Website oder das Metadatenschema für Assets entwerfen, sollten Sie den leichten und zugänglichen Ansatz berücksichtigen, den Tagging bietet.
 
-## Anwenden von Tags  {#applying-tags}
+## Anwenden von Tags   {#applying-tags}
 
 In der Autorenumgebung wenden Autoren möglicherweise Tags an, indem sie auf die Seiteneigenschaften zugreifen und ein oder mehrere Tags im Feld **Tags/Keywords** eingeben.
 
-Um [vordefinierte Tags](/help/sites-administering/tags.md) anzuwenden, verwenden Sie im Fenster **Seiteneigenschaften** das Pulldown-Feld `Tags/Keywords`, um aus der Liste der für die Seite zulässigen Tags auszuwählen. Die Registerkarte **Standard-Tags** ist der standardmäßige Namensraum. Das bedeutet, dass der Taxonomie kein `namespace-string:` vorangestellt wird.
+Um [vordefinierte Tags](/help/sites-administering/tags.md) anzuwenden, verwenden Sie im Fenster **Seiteneigenschaften** das Pulldown-Feld `Tags/Keywords` , um aus der Liste der für die Seite zulässigen Tags auszuwählen. Die Registerkarte **Standard-Tags** ist der Standard-Namespace. Das bedeutet, dass der Taxonomie kein `namespace-string:`-Präfix vorangestellt ist.
 
 ![chlimage_1-2](assets/chlimage_1-2a.png)
 
@@ -60,7 +59,7 @@ Wie bei Seiten können die folgenden Aufgaben für Tags und Namespaces durchgef�
 
 >[!NOTE]
 >
->Wenn Sie eine Seite aktivieren, wird automatisch ein Dialogfeld geöffnet, in dem Sie inaktivierte Tags aktivieren können, die zur Seite gehören.
+>Wenn Sie eine Seite aktivieren, wird automatisch ein Dialogfeld geöffnet, in dem Sie nicht aktivierte Tags, die zur Seite gehören, aktivieren können.
 
 **Deaktivieren**
 
@@ -78,7 +77,6 @@ Sie können sowohl in der Autoren- als auch in der Veröffentlichungsumgebung na
 
 ### Verwenden der Suchkomponente  {#using-search-component}
 
-Das Hinzufügen einer [Suchkomponente](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) zu einer Seite bietet eine Suchfunktion, die Tags enthält und sowohl in der Autor- als auch in der Veröffentlichungs-Umgebung verwendet werden kann.
+Das Hinzufügen einer [Suchkomponente](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) zu einer Seite bietet eine Suchfunktion, die Tags enthält und sowohl in der Autoren- als auch in der Veröffentlichungsumgebung verwendet werden kann.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
-
