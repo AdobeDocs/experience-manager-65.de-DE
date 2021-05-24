@@ -10,14 +10,13 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: e3afffd0-d90c-4bd0-b814-f7aeac6ceb6d
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '3288'
 ht-degree: 63%
 
 ---
-
 
 # Referenz für Workflow-Schritte {#workflow-step-reference}
 
@@ -30,9 +29,7 @@ Workflow-Modelle beinhalten eine Reihe von Schritten unterschiedlichen Typs. Je 
 >Informationen zu Schritten für spezifische Module finden Sie unter:
 >
 >* [Referenz für Workflow-Schritte in AEM Forms](/help/forms/using/aem-forms-workflow-step-reference.md)
->* [Verarbeitung von Assets mithilfe von Medien-Handlern und Workflows](/help/assets/media-handlers.md)
-
->
+* [Verarbeitung von Assets mithilfe von Medien-Handlern und Workflows](/help/assets/media-handlers.md)
 
 
 
@@ -51,12 +48,12 @@ Eine Beschreibung des Schritts.
 
 * **Workflow-Status**
 
-   Eine Dropdown-Auswahl, um eine [Stufe](/help/sites-developing/workflows.md#workflow-stages) auf den Schritt anzuwenden.
+   Eine Dropdown-Auswahl, um einen [Stage](/help/sites-developing/workflows.md#workflow-stages) auf den Schritt anzuwenden.
 
 * **Zeitüberschreitung**
 
-   Der Zeitraum, nach dem der Schritt mit der Zeitüberschreitung abgeschlossen wird.
-Sie können zwischen folgenden Optionen auswählen: **Aus**, **Sofort**, **1h**, **6h**, **12h**, **24h**.
+   Der Zeitraum, nach dem der Schritt &quot;abgelaufen&quot;wird.
+Sie können zwischen folgenden Optionen wählen: **Aus**, **Sofort**, **1h**, **6h**, **12h**, **24h**.
 
 * **Zeitüberschreitungs-Handler**
 
@@ -65,7 +62,7 @@ Sie können zwischen folgenden Optionen auswählen: **Aus**, **Sofort**, **1h**,
 
 * **Handler-Modus**
 
-   Wählen Sie diese Option, um den Workflow automatisch zum nächsten Schritt nach der Ausführung zu verschieben. Wenn diese Option nicht ausgewählt ist, muss das Implementierungsskript den Workflow weiterleiten.
+   Wählen Sie diese Option, um den Workflow nach der Ausführung automatisch zum nächsten Schritt zu führen. Wenn diese Option nicht ausgewählt ist, muss das Implementierungsskript den Workflow weiterleiten.
 
 ### Schritt-Eigenschaften – Registerkarte „Benutzer/Gruppe“{#step-properties-user-group-tab}
 
@@ -80,12 +77,12 @@ Die folgenden Eigenschaften sind für viele Workflow-Schrittkomponenten im Eigen
 
    * Sie können einen Benutzer oder eine Gruppe aus einem Dropdown-Menü auswählen.
    * Falls Sie den Schritt einem bestimmten Benutzer zuweisen, kann nur dieser Benutzer Aktionen für den Schritt durchführen.
-   * Wenn Sie den Schritt einer gesamten Gruppe zuweisen, haben alle Benutzer dieser Gruppe die Aktion in ihrem **Workflow-Posteingang**, wenn der Workflow diesen Schritt erreicht.
+   * Wenn Sie den Schritt einer ganzen Gruppe zuweisen, haben alle Benutzer dieser Gruppe die Aktion im **Workflow-Posteingang**, wenn der Workflow diesen Schritt erreicht.
    * Weitere Informationen finden Sie unter [Teilnehmen an Workflows](/help/sites-authoring/workflows-participating.md).
 
 ## UND-Teilung  {#and-split}
 
-Die Variable **AND Split** erstellt eine Teilung im Workflow, nach der beide Zweige aktiv sein werden. Sie fügen jeder Verzweigung nach Bedarf Workflow-Schritte hinzu. Mit diesem Schritt können Sie mehrere Prozesspfade in einem Workflow einrichten. Sie können z. B. mehrere Bewertungsschritte parallel zulassen, sodass Sie Zeit sparen.
+Die **UND-Teilung** erstellt eine Aufspaltung im Workflow, nach der beide Zweige aktiv sind. Sie fügen jeder Verzweigung nach Bedarf Workflow-Schritte hinzu. Mit diesem Schritt können Sie mehrere Prozesspfade in einem Workflow einrichten. Sie können z. B. mehrere Bewertungsschritte parallel zulassen, sodass Sie Zeit sparen.
 
 ![wf-26](assets/wf-26.png)
 
@@ -121,12 +118,12 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 
 ## Zum Schritt wechseln  {#goto-step}
 
-Mit **Goto Step** können Sie den nächsten Schritt angeben, der im Workflow-Modell ausgeführt werden soll. Sie können eine Regeldefinition, ein externes Skript oder ein ECMA-Skript als Routing-Ausdruck angeben, um den nächsten Schritt für das Workflow-Modell auszuwerten.
+Mit **Zum Schritt wechseln** können Sie den nächsten Schritt angeben, der im Workflow-Modell ausgeführt werden soll. Sie können eine Regeldefinition, ein externes Skript oder ein ECMA-Skript als Routing-Ausdruck angeben, um den nächsten Schritt für das Workflow-Modell zu bewerten.
 
-* Wenn die angegebene Bedingung &quot;true&quot;lautet, wird der **Goto-Schritt** abgeschlossen und das Workflow-Engine führt den angegebenen Schritt aus.
-* Wenn die angegebene Bedingung nicht &quot;true&quot;lautet, wird der **Goto-Schritt** abgeschlossen und die normale Routing-Logik bestimmt den nächsten auszuführenden Schritt.
+* Wenn die von Ihnen angegebene Bedingung &quot;true&quot;lautet, wird **Zum Schritt wechseln** abgeschlossen und die Workflow-Engine führt den angegebenen Schritt aus.
+* Wenn die von Ihnen angegebene Bedingung nicht &quot;true&quot;lautet, wird **Zum Schritt wechseln** abgeschlossen und die normale Routing-Logik bestimmt den nächsten auszuführenden Schritt.
 
-Mit **Zum Schritt wechseln** können Sie erweiterte Routingstrukturen im Workflow-Modell implementieren. Um beispielsweise eine Schleife zu implementieren, kann der **Goto-Schritt** definiert werden, um einen vorherigen Arbeitsablaufschritt auszuführen, wobei der Routing-Ausdruck eine Schleifenbedingung auswertet.
+Mit **Zum Schritt wechseln** können Sie erweiterte Routingstrukturen im Workflow-Modell implementieren. Um beispielsweise eine Schleife zu implementieren, kann **Zum Schritt wechseln** definiert werden, um einen vorherigen Schritt im Workflow auszuführen, wobei der Routing-Ausdruck eine Schleifenbedingung auswertet.
 
 ### Zum Schritt wechseln – Konfiguration {#goto-step-configuration}
 
@@ -135,12 +132,12 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 * [Allgemein](#step-properties-common-tab)
 * **Prozess**
 
-   * **Zielgruppe**: Wählen Sie den auszuführenden Schritt aus, nachdem Sie die Bedingung für den Routing-Ausdruck ausgewertet haben.
-   * **Routing Ausdruck**: Wählen Sie &quot;Regeldefinition&quot;, &quot;Externes Skript&quot;oder ein ECMA-Skript, das bestimmt, ob der  **Zielgruppe-Schritt** ausgeführt werden soll.
+   * **Target-Schritt**: Wählen Sie den auszuführenden Schritt aus, nachdem Sie die Bedingung für den Routing-Ausdruck ausgewertet haben.
+   * **Routing-Ausdruck**: Wählen Sie Regeldefinition, externes Skript oder ein ECMA-Skript aus, das bestimmt, ob der  **Target-Schritt** ausgeführt werden soll.
 
-      * **Regeldefinition:** Definieren Sie die Regel mithilfe des  [Ausdruck-](/help/forms/using/variable-in-aem-workflows.md#use-expression-editor) Editors.
+      * **Regeldefinition:** Definieren Sie die Regel mithilfe des  [Ausdruckseditors ](/help/forms/using/variable-in-aem-workflows.md#use-expression-editor) .
       * **Externes Skript:** Der Pfad des externen Skripts.
-      * **ECMA-Skript**: Das Skript, das bestimmt, ob der  **Goto-Schritt** ausgeführt werden soll.
+      * **ECMA-Skript**: Das Skript, das bestimmt, ob der  **Zum Schritt wechseln** ausgeführt werden soll.
 
 #### Simulieren einer for-Schleife {#simulating-a-for-loop}
 
@@ -149,7 +146,7 @@ Um eine for-Schleife zu simulieren, müssen Sie die Zahl der erfolgten Schleifen
 * Die Zahl steht in der Regel für einen Index der Elemente, für die im Workflow Aktionen erfolgen.
 * Die Zahl wird als Beendigungskriterium der Schleife ausgewertet.
 
-Um beispielsweise einen Workflow zu implementieren, der eine Aktion für mehrere JCR-Knoten durchführt, können Sie eine Schleifenzahl als Index für die Knoten verwenden. Um die Anzahl beizubehalten, speichern Sie einen `integer`-Wert in der Datenzuordnung der Workflow-Instanz. Verwenden Sie das Skript für **Zum Schritt wechseln**, um die Zahl zu erhöhen und mit den Beendigungskriterien zu vergleichen.
+Um beispielsweise einen Workflow zu implementieren, der eine Aktion für mehrere JCR-Knoten durchführt, können Sie eine Schleifenzahl als Index für die Knoten verwenden. Um die Anzahl beizubehalten, speichern Sie einen `integer` -Wert in der Datenzuordnung der Workflow-Instanz. Verwenden Sie das Skript für **Zum Schritt wechseln**, um die Zahl zu erhöhen und mit den Beendigungskriterien zu vergleichen.
 
 ```
 function check(){
@@ -177,25 +174,24 @@ function check(){
 
 ### Simulieren einer for-Schleife mithilfe der Regeldefinition {#simulateforloop}
 
-Sie können auch eine for-Schleife simulieren, indem Sie &quot;Regeldefinition&quot;als Routing-Ausdruck verwenden. [Erstellen Sie eine  **** ](/help/forms/using/variable-in-aem-workflows.md#create-a-variable) zählbare Variable des Datentyps &quot;Lang&quot;. Verwenden Sie **Ausdruck** als Zuordnungsmodus im Schritt **[Variable setzen](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable)**, um den Wert der Variablen **count** auf **count + 1** bei jeder Ausführung des Schritts **Variable festlegen** einzustellen.
+Sie können auch eine für eine Schleife simulieren, indem Sie die Regeldefinition als Routing-Ausdruck verwenden. [Erstellen Sie eine  **** ](/help/forms/using/variable-in-aem-workflows.md#create-a-variable) zählbare Variable des Datentyps Long . Verwenden Sie **Expression** als Zuordnungsmodus im Schritt **[Variable](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable)** festlegen , um den Wert der Variable **count** bei jeder Ausführung des Schritts **Variable festlegen auf** count + 1 **festzulegen.**
 
 ![Simulieren einer for-Schleife](assets/variable_use_case_count_new.png)
 
-Verwenden Sie unter **Gehe zu Schritt** **Variable** als **Zielgruppe-Schritt** und **zählen Sie &lt; 5** als Routing-Ausdruck.
+Verwenden Sie in **Zum Schritt wechseln** **Variable** als **Target-Schritt** und **Zählung &lt; 5** als Routing-Ausdruck.
 
 ![Bedingung für die Simulation einer for-Schleife](assets/variable_use_case_count1_new.png)
 
-Der Schritt **Variable setzen** führt wiederholt aus und inkrementiert den Wert der Variablen **count** bei jeder Ausführung um 1, bis der Wert 5 erreicht.
+Der Schritt **Variable** festlegen führt wiederholt aus und inkrementiert den Wert der Variable **count** bei jeder Ausführung um 1, bis der Wert 5 erreicht.
 
 ## ODER-Teilung {#or-split}
 
 Mit der **ODER-Teilung** wird der Workflow so geteilt, dass nur eine Verzweigung aktiv bleibt. Mit diesem Schritt können Sie bedingte Prozesspfade in einem Workflow einrichten. Sie fügen jeder Verzweigung nach Bedarf Workflow-Schritte hinzu.
 
 >[!NOTE]
->
->Weitere Informationen zum Erstellen einer ODER-Teilung finden Sie unter [https://helpx.adobe.com/experience-manager/using/aem64_workflow_servlet.html](https://helpx.adobe.com/experience-manager/using/aem64_workflow_servlet.html)
+Weitere Informationen zum Erstellen einer ODER-Teilung finden Sie unter: [https://helpx.adobe.com/experience-manager/using/aem64_workflow_servlet.html](https://helpx.adobe.com/experience-manager/using/aem64_workflow_servlet.html)
 
-![Verzweigungen mit ODER-Teilung](assets/variables_orsplit_new.png)
+![Verzweigung mithilfe der ODER-Teilung](assets/variables_orsplit_new.png)
 
 ### ODER-Teilung – Konfiguration {#or-split-configuration}
 
@@ -205,27 +201,25 @@ Zum Konfigurieren der Teilung:
 
    * **Allgemein**
 
-      * Geben Sie den Namen der Teilung an.
-   * **Zweige (*x)***
+      * Geben Sie den Namen der Aufspaltung an.
+   * **Verzweigungen (*x)***
 
-      * **hinzufügen Zweig:** Hinzufügen weitere Verzweigungen.
-      * **Routing-Ausdruck** auswählen: Wählen Sie den Routing-Ausdruck aus, um die aktive Verzweigung auszuwerten. Mögliche Werte sind: Regeldefinition, externes Skript und ECMA-Skript.
-      * **Klicken Sie, um Ausdruck** zu Hinzufügen: hinzufügen Ausdruck, um die aktive Verzweigung auszuwerten, wenn Sie  **Regeldefinitionen als Routing-Ausdruck** auswählen.
-      * **Skriptpfad**: Der Pfad zu einer Datei, die das Skript enthält, mit dem die aktive Verzweigung ausgewertet werden soll, wenn Sie als Routing-Ausdruck  **External** Scriptas auswählen.
-      * **Skript**: hinzufügen Sie das Skript im Feld, um die aktive Verzweigung auszuwerten, wenn Sie  **ECMA** Scriptas als Routing-Ausdruck auswählen.
-      * **Standardweg**: Bei mehreren Zweigen wird die Standardverzweigung befolgt. Sie können nur eine Verzweigung als Standard festlegen.
-
-   >[!NOTE]
-   >
-   >    * Eine Verzweigung wird zu einem Zeitpunkt auf Grundlage des Routing-Ausdrucks ausgewertet.
-   >    * Die Verzweigungen werden von oben nach unten ausgewertet.
-   >    * Das erste Skript, das &quot;true&quot;ergibt, wird ausgeführt.
-   >    * Wenn keine Verzweigung &quot;true&quot;ergibt, wird der Workflow nicht weitergeleitet.
-
+      * **Verzweigung hinzufügen:** Fügen Sie dem Schritt weitere Verzweigungen hinzu.
+      * **Wählen Sie Routing-Ausdruck** aus: Wählen Sie den Routing-Ausdruck aus, um die aktive Verzweigung auszuwerten. Mögliche Werte sind: Regeldefinition, externes Skript und ECMA-Skript.
+      * **Klicken Sie auf Ausdruck hinzufügen** : Fügen Sie einen Ausdruck hinzu, um die aktive Verzweigung auszuwerten, wenn Sie  **Regeldefinitionen als Routing-Ausdruck** auswählen.
+      * **Skriptpfad**: Der Pfad zu einer Datei, die das Skript zum Auswerten der aktiven Verzweigung enthält, wenn Sie  **Externe** Skripte als Routing-Ausdruck auswählen.
+      * **Skript**: Fügen Sie das Skript in das Feld ein, um die aktive Verzweigung auszuwerten, wenn Sie  **ECMA-** Skripte als Routing-Ausdruck auswählen.
+      * **Standardroute**: Die Standardverzweigung wird bei mehreren Verzweigungen verwendet. Sie können nur eine Verzweigung als Standard festlegen.
 
    >[!NOTE]
-   >
-   >Weitere Informationen finden Sie unter [Definieren einer Regel für eine ODER-Teilung](/help/sites-developing/workflows-models.md#defineruleecmascript).
+   * Eine Verzweigung wird anhand des Routing-Ausdrucks gleichzeitig ausgewertet.
+   * Die Verzweigungen werden von oben nach unten ausgewertet.
+   * Das erste Skript, das als &quot;true&quot;ausgewertet wird, wird ausgeführt.
+   * Wenn keine Verzweigung &quot;true&quot;ergibt, wird der Workflow nicht weitergeleitet.
+
+
+   >[!NOTE]
+   Weitere Informationen finden Sie unter [Definieren einer Regel für eine ODER-Teilung](/help/sites-developing/workflows-models.md#defineruleecmascript).
 
 * Fügen Sie bei Bedarf Workflow-Schritte zu den Verzweigungen hinzu.
 
@@ -245,19 +239,14 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 * [Benutzer/Gruppe](#step-properties-user-group-tab)
 
 >[!NOTE]
->
->Der Workflow-Initiator wird immer benachrichtigt, wenn:
->
->* der Workflow abgeschlossen (beendet) wurde.
->* der Workflow abgebrochen (beendet) wurde.
-
->
+Der Workflow-Initiator wird immer benachrichtigt, wenn:
+* der Workflow abgeschlossen (beendet) wurde.
+* der Workflow abgebrochen (beendet) wurde.
 
 
 
 >[!NOTE]
->
->Einige Eigenschaften müssen konfiguriert werden, um E-Mail-Benachrichtigungen zu aktivieren. Sie können die E-Mail-Vorlage auch anpassen oder eine E-Mail-Vorlage für eine neue Sprache hinzufügen. Siehe [Konfigurieren der E-Mail-Benachrichtigung](/help/sites-administering/notification.md#configuringemailnotification), um E-Mail-Benachrichtigungen in AEM zu konfigurieren.
+Einige Eigenschaften müssen konfiguriert werden, um E-Mail-Benachrichtigungen zu aktivieren. Sie können die E-Mail-Vorlage auch anpassen oder eine E-Mail-Vorlage für eine neue Sprache hinzufügen. Informationen zum Konfigurieren von E-Mail-Benachrichtigungen in AEM finden Sie unter [Konfigurieren von E-Mail-Benachrichtigungen](/help/sites-administering/notification.md#configuringemailnotification) .
 
 ### Dialogfeld „Teilnehmer-Schritt“{#dialog-participant-step}
 
@@ -275,14 +264,14 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 * [Benutzer/Gruppe](#step-properties-user-group-tab)
 * **Dialogfeld**
 
-   * **Dialogpfad**: Der Pfad zum Knoten &quot;dialog&quot;des von Ihnen erstellten  [Dialogfelds](#dialog-participant-step-creating-a-dialog).
+   * **Dialogpfad**: Der Pfad zum Dialogfeldknoten des  [erstellten](#dialog-participant-step-creating-a-dialog) Dialogfelds.
 
 #### Dialogfeld „Teilnehmer – Schritt“ – Erstellen eines Dialogfelds {#dialog-participant-step-creating-a-dialog}
 
 Um ein Dialogfeld zu erstellen, müssen Sie wie folgt vorgehen:
 
 * Entscheiden Sie, wo die erfassten Daten [in der Nutzlast gespeichert werden](#dialog-participant-step-storing-data-in-the-payload).
-* [Definieren des Dialogs; Hierzu gehört auch die Definition der Felder, die zum Erfassen (und Speichern) der Daten](#dialog-participant-step-dialog-definition) verwendet werden.
+* [Dialogfeld definieren; Hierzu gehört auch die Definition der Felder, die zum Erfassen (und Speichern) der Daten](#dialog-participant-step-dialog-definition) verwendet werden.
 
 #### Dialogfeld „Teilnehmer-Schritt“ – Speichern von Daten in der Nutzlast {#dialog-participant-step-storing-data-in-the-payload}
 
@@ -290,7 +279,7 @@ Sie können Widget-Daten in der Workflow-Nutzlast oder in den Metadaten des Arbe
 
 * **Daten mit der Nutzlast speichern**
 
-   * Um Widget-Daten als Eigenschaft der Workflow-Nutzlast zu speichern, verwenden Sie das folgende Format für den Wert der Eigenschaft name des Widget-Knotens:
+   * Um Widget-Daten als Eigenschaft der Workflow-Payload zu speichern, verwenden Sie das folgende Format für den Wert der name-Eigenschaft des Widget-Knotens:
       `./jcr:content/nodename`
 
    * Die Daten werden in der `nodename`-Eigenschaft des Nutzlastknotens gespeichert. Falls der Knoten diese Eigenschaft nicht enthält, wird die Eigenschaft erstellt.
@@ -327,12 +316,11 @@ Sie können Widget-Daten in der Workflow-Nutzlast oder in den Metadaten des Arbe
    ```
 
    >[!NOTE]
-   >
-   >Weitere Informationen finden Sie unter [Erstellen und Konfigurieren eines Dialogfelds](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog).
+   Weitere Informationen finden Sie unter [Erstellen und Konfigurieren eines Dialogfelds](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog).
 
 1. **Eigenschaft „Dialogpfad“**
 
-   Der Schritt **Dialogfeld-Teilnehmer** verfügt über die Eigenschaft **Dialogpfad** (zusammen mit den Eigenschaften eines [Teilnehmerschritts](#participant-step)). Der Wert der Eigenschaft **Dialogpfad** entspricht dem Pfad zum Knoten `dialog` im Dialogfeld.
+   Der **Dialog Participant Step** verfügt über die Eigenschaft **Dialog Path** (zusammen mit den Eigenschaften eines [Participant Step](#participant-step)). Der Wert der Eigenschaft **Dialogpfad** entspricht dem Pfad zum Knoten `dialog` im Dialogfeld.
 
    Das Dialogfeld kann sich beispielsweise in einer Komponente mit dem Namen `EmailWatch` befindet, die im Knoten gespeichert ist:
 
@@ -407,18 +395,15 @@ Erstellen Sie einen OSGi-Dienst oder ein ECMA-Skript zum Auswählen eines Benutz
 
 * **ECMA-Skript**
 
-   Skripte müssen eine getParticipant-Funktion enthalten, mit der eine Benutzer-ID als `String`-Wert zurückgegeben wird. Speichern Sie Ihre benutzerdefinierten Skripten beispielsweise im Ordner `/apps/myapp/workflow/scripts` oder in einem Unterordner.
+   Skripte müssen eine getParticipant-Funktion enthalten, mit der eine Benutzer-ID als `String`-Wert zurückgegeben wird. Speichern Sie Ihre benutzerdefinierten Skripte beispielsweise im Ordner `/apps/myapp/workflow/scripts` oder in einem Unterordner.
 
    Ein Beispielskript ist in einer Standard-AEM-Instanz enthalten:
 
    `/libs/workflow/scripts/initiator-participant-chooser.ecma`
 
    >[!CAUTION]
-   >
-   >Sie dürfen ***keinerlei*** Änderungen im Pfad `/libs` vornehmen.
-   >
-   >
-   >Der Grund dafür ist, dass der Inhalt von `/libs` beim nächsten Aktualisieren der Instanz überschrieben wird (und möglicherweise überschrieben wird, wenn Sie einen Hotfix oder ein Feature Pack anwenden).
+   Sie dürfen ***keinerlei*** Änderungen im Pfad `/libs` vornehmen.
+   Dies liegt daran, dass der Inhalt von `/libs` beim nächsten Upgrade Ihrer Instanz überschrieben wird (und möglicherweise überschrieben wird, wenn Sie einen Hotfix oder ein Feature Pack anwenden).
 
    Mit diesem Skript wird der Workflow-Initiator als Teilnehmer ausgewählt:
 
@@ -429,28 +414,23 @@ Erstellen Sie einen OSGi-Dienst oder ein ECMA-Skript zum Auswählen eines Benutz
    ```
 
    >[!NOTE]
-   >
-   >Die Komponente **Workflow Initiator Participant Chooser** erweitert den **Dynamic Participant Step** und verwendet dieses Skript als Schrittimplementierung.
+   Die Komponente **Workflow-Initiator-Teilnehmerauswahl** erweitert den **Dynamischer Teilnehmer-Schritt** und verwendet dieses Skript als Schrittimplementierung.
 
 * **OSGi-Dienst**
 
-   Dienste müssen die [com.day.cq.workflow.exec.ParticipantStepChooser](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html)-Schnittstelle implementieren. Die Schnittstelle definiert die folgenden Mitglieder:
+   Dienste müssen die Schnittstelle [com.day.cq.workflow.exec.ParticipantStepChooser](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) implementieren. Die Schnittstelle definiert die folgenden Mitglieder:
 
-   * `SERVICE_PROPERTY_LABEL` Feld: Verwenden Sie dieses Feld, um den Namen der Teilnehmerauswahl anzugeben. Der Name wird in einer Liste der verfügbaren Teilnehmerauswahlen in den Eigenschaften **Dynamischer Teilnehmer – Schritt** angezeigt.
+   * `SERVICE_PROPERTY_LABEL` -Feld: Verwenden Sie dieses Feld, um den Namen der Teilnehmerauswahl anzugeben. Der Name wird in einer Liste der verfügbaren Teilnehmerauswahlen in den Eigenschaften **Dynamischer Teilnehmer – Schritt** angezeigt.
 
-   * `getParticipant` Methode: Gibt die dynamisch aufgelöste Principal-ID als  `String` Wert zurück.
+   * `getParticipant` -Methode: Gibt die dynamisch aufgelöste Prinzipal-ID als  `String` Wert zurück.
    >[!CAUTION]
-   >
-   >Die `getParticipant`-Methode gibt die dynamisch aufgelöste Principal-ID zurück. Dies kann entweder eine Gruppen-ID oder eine Benutzer-ID sein.
-   >
-   >
-   >Eine Gruppen-ID kann jedoch nur für eine Komponente **Teilnehmer-Schritt** verwendet werden, wenn eine Liste der Teilnehmer zurückgegeben wird. Bei einem **Schritt des dynamischen Teilnehmers** wird eine leere Liste zurückgegeben, die nicht für die Übertragung verwendet werden kann.
+   Die `getParticipant`-Methode gibt die dynamisch aufgelöste Prinzipal-ID zurück. Dies kann entweder eine Gruppen-ID oder eine Benutzer-ID sein.
+   Eine Gruppen-ID kann jedoch nur für eine Komponente **Teilnehmer-Schritt** verwendet werden, wenn eine Liste der Teilnehmer zurückgegeben wird. Für einen **Dynamischer Teilnehmer-Schritt** wird eine leere Liste zurückgegeben, die nicht für die Zuweisung verwendet werden kann.
 
    Um die Implementierung für Komponenten **Dynamischer Teilnehmer – Schritt** verfügbar zu machen, fügen Sie die Java-Klasse zum OSGi-Bundle hinzu, das den Dienst exportiert, und stellen Sie das Bundle auf dem AEM-Server bereit.
 
    >[!NOTE]
-   >
-   >Die **zufallsbasierte Teilnehmerauswahl** ist ein Sampling-Dienst, der willkürlich einen Benutzer auswählt ( `com.day.cq.workflow.impl.process.RandomParticipantChooser`). Die Sampling-Komponente **Zufallsbasierte Teilnehmerauswahl** erweitert die Komponente **Dynamischer Teilnehmer – Schritt** und verwendet diesen Dienst für die Implementierung des Schritts.
+   Die **zufallsbasierte Teilnehmerauswahl** ist ein Sampling-Dienst, der willkürlich einen Benutzer auswählt ( `com.day.cq.workflow.impl.process.RandomParticipantChooser`). Die Sampling-Komponente **Zufallsbasierte Teilnehmerauswahl** erweitert die Komponente **Dynamischer Teilnehmer – Schritt** und verwendet diesen Dienst für die Implementierung des Schritts.
 
 #### Dynamischer Teilnehmer – Schritt – Beispiel für Teilnehmerauswahldienst  {#dynamic-participant-step-example-participant-chooser-service}
 
@@ -495,7 +475,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 }
 ```
 
-Im Dialogfeld **Eigenschaften des dynamischen Teilnehmerschritts** enthält die **Teilnehmerauswahl**-Liste das Element `Workflow Initiator Participant Chooser (script)`, das diesen Dienst darstellt.
+Im Eigenschaftendialogfeld **Dynamischer Teilnehmer - Schritt** enthält die Liste **Teilnehmer-Auswahl** das Element `Workflow Initiator Participant Chooser (script)`, das diesen Dienst darstellt.
 
 Wenn das Workflow-Modell gestartet wird, wird in der Protokolldatei die ID des Benutzers angegeben, der den Workflow initiiert hat und dem das Arbeitselement zugewiesen ist. In diesem Beispiel hat der Benutzer `admin` den Workflow gestartet.
 
@@ -508,8 +488,7 @@ Wenn das Workflow-Modell gestartet wird, wird in der Protokolldatei die ID des B
 Um diesen Schritt zu konfigurieren, geben Sie die Gruppe oder den Benutzer, der/dem das Arbeitselement zugewiesen werden soll, und den Pfad zum Formular an.
 
 >[!CAUTION]
->
->Dieser Abschnitt behandelt den Abschnitt [Forms von Foundation Components for Page Authoring](/help/sites-authoring/default-components-foundation.md#form).
+Dieser Abschnitt behandelt den Abschnitt [Forms von Foundation-Komponenten für die Seitenbearbeitung](/help/sites-authoring/default-components-foundation.md#form).
 
 #### Formular „Teilnehmer – Schritt“ – Konfiguration {#form-participant-step-configuration}
 
@@ -519,21 +498,21 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 * [Benutzer/Gruppe](#step-properties-user-group-tab)
 * **Formular**
 
-   * **Formularpfad**: Der Pfad zum erstellten  [Formular](#form-participant-step-creating-the-form).
+   * **Formularpfad**: Der Pfad zum  [Formular, das Sie erstellen](#form-participant-step-creating-the-form).
 
 #### Formular „Teilnehmer – Schritt“ - Erstellen des Formulars {#form-participant-step-creating-the-form}
 
 Erstellen Sie wie gewohnt ein Formular mit einem **Formular „Teilnehmer – Schritt“**. Formulare für Formular „Teilnehmer – Schritt“ müssen wie folgt konfiguriert werden:
 
-* Für den **Beginn der Form**-Komponente muss die Eigenschaft **Aktionstyp** auf `Edit Workflow Controlled Resource(s)` eingestellt sein.
-* Die Komponente **Beginn von Form** muss einen Wert für die Eigenschaft `Form Identifier` haben.
+* Für die Komponente **Beginn des Formulars** muss die Eigenschaft **Aktionstyp** auf `Edit Workflow Controlled Resource(s)` gesetzt sein.
+* Die Komponente **Beginn des Formulars** muss einen Wert für die Eigenschaft `Form Identifier` aufweisen.
 * Für die Formularkomponenten muss die Eigenschaft **Elementname** auf den Pfad des Knotens verweisen, in dem die Felddaten gespeichert werden. Der Pfad muss auf einen Knoten im Nutzlastinhalt des Workflows verweisen. Der Wert verwendet das folgende Format:
 
    `./jcr:content/path_to_node`
 
-* Das Formular muss eine Komponente **Workflow-Senden-Schaltfläche(n)** enthalten. Sie konfigurieren keine Eigenschaften für die Komponente.
+* Das Formular muss eine Komponente vom Typ **Workflow-Senden-Schaltfläche(n)** enthalten. Sie konfigurieren keine Eigenschaften für die Komponente.
 
-Die Workflow-Anforderungen bestimmen, wo Felddaten gespeichert werden sollen. Beispielsweise können Felddaten verwendet werden, um die Eigenschaften von Seiteninhalten zu konfigurieren. Der folgende Wert einer **Elementname**-Eigenschaft speichert Felddaten als Wert der `redirectTarget`-Eigenschaft des `jcr:content`-Knotens:
+Die Workflow-Anforderungen bestimmen, wo Felddaten gespeichert werden sollen. Beispielsweise können Felddaten verwendet werden, um die Eigenschaften von Seiteninhalten zu konfigurieren. Der folgende Wert einer Eigenschaft **Elementname** speichert Felddaten als Wert der Eigenschaft `redirectTarget` des Knotens `jcr:content` :
 
 `./jcr:content/redirectTarget`
 
@@ -570,7 +549,7 @@ Um diesen Schritt zu konfigurieren, bearbeiten Sie die folgenden Registerkarten:
 
 * [Allgemein](#step-properties-common-tab)
 
-## Prozessschritt  {#process-step}
+## Prozessschritt {#process-step}
 
 Ein **Prozessschritt** führt ein ECMAScript aus oder ruft einen OSGi-Dienst auf, um eine automatische Verarbeitung durchzuführen.
 
@@ -583,7 +562,7 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 * [Allgemein](#step-properties-common-tab)
 * **Prozess**
 
-   * **Prozess**: Die Implementierung des Prozesses, die durchgeführt werden soll. Wählen Sie im Dropdown-Menü den Dienst ECMAScript oder OSGi aus. Informationen:
+   * **Prozess**: Die Implementierung des Prozesses, die durchgeführt werden soll. Wählen Sie über das Dropdown-Menü den ECMAScript- oder OSGi-Dienst aus. Informationen:
 
       * zu den standardmäßigen ECMA-Skripten und OSGi-Diensten finden Sie unter [Integrierte Prozesse für Prozessschritte](/help/sites-developing/workflows-process-ref.md).
       * zum Erstellen von ECMA-Skripten für einen Prozessschritt finden Sie unter [Implementieren eines Prozessschritts mit einem ECMA-Skript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
@@ -594,9 +573,9 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 
 ## Variable festlegen {#set-variable}
 
-Mit dem Schritt Variable einstellen können Sie den Wert einer Variablen festlegen und die Reihenfolge festlegen, in der die Werte eingestellt werden. Die Variable wird in der Reihenfolge festgelegt, in der die Variablenzuordnungen im Schritt Variable festlegen aufgeführt werden.
+Im Schritt Variable festlegen können Sie den Wert einer Variablen festlegen und die Reihenfolge definieren, in der die Werte festgelegt werden. Die Variable wird in der Reihenfolge festgelegt, in der die Variablenzuordnungen im Schritt Variable festlegen aufgeführt werden.
 
-![hinzufügen Zuordnung zum Festlegen einer Variablen](assets/set_variable_addmappingnew.png)
+![Hinzufügen einer Zuordnung zum Festlegen einer Variablen](assets/set_variable_addmappingnew.png)
 
 ### Variable festlegen - Konfiguration {#setvariable}
 
@@ -605,14 +584,14 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 * [Allgemein](/help/sites-developing/workflows-step-ref.md#step-properties-common-tab)
 * **Zuordnung**
 
-   * **Variable auswählen:** Verwenden Sie diese Option, um eine Variable zum Festlegen ihres Werts auszuwählen.
-   * **Zuordnungsmodus auswählen:** Wählen Sie einen Zuordnungsmodus, um den Wert für die Variable festzulegen. Je nach Datentyp der Variablen können Sie die folgenden Optionen verwenden, um den Wert einer Variablen festzulegen:
+   * **Variable auswählen:** Verwenden Sie diese Option, um eine Variable auszuwählen und ihren Wert festzulegen.
+   * **Zuordnungsmodus auswählen:** Wählen Sie einen Zuordnungsmodus aus, um den Wert für die Variable festzulegen. Je nach Datentyp der Variablen können Sie die folgenden Optionen verwenden, um den Wert einer Variablen festzulegen:
 
       * **Literal:** Verwenden Sie die Option, wenn Sie den genauen, zu spezifizierenden Wert kennen.
-      * **Ausdruck:** Verwenden Sie die Option, wenn der zu verwendende Wert auf einem Ausdruck berechnet wird. Der Ausdruck wird im bereitgestellten Ausdruck-Editor erstellt.
-      * **JSON-Punktnotiz:** Verwenden Sie die Option, um einen Wert aus einer JSON- oder FDM-Typvariablen abzurufen.
+      * **Ausdruck:** Verwenden Sie die Option, wenn der zu verwendende Wert auf der Grundlage eines Ausdrucks berechnet wird. Der Ausdruck wird im bereitgestellten Ausdruckseditor erstellt.
+      * **JSON Dot Notation:** Verwenden Sie die Option, um einen Wert aus einer JSON- oder FDM-Variablen abzurufen.
       * **XPATH:** Verwenden Sie die Option, um einen Wert aus einer XML-Typvariablen abzurufen.
-      * **Relativ zur Nutzlast:** Verwenden Sie die Option, wenn der in einer Variablen zu speichernde Wert unter einem Pfad relativ zur Nutzlast verfügbar ist.
-      * **Absoluter Pfad:** Verwenden Sie die Option, wenn der in einer Variablen zu speichernde Wert unter einem absoluten Pfad verfügbar ist.
+      * **Relativ zur Payload:** Verwenden Sie die Option, wenn der in einer Variablen zu speichernde Wert in einem Pfad relativ zur Payload verfügbar ist.
+      * **Absoluter Pfad:** Verwenden Sie die Option, wenn der in einer Variablen zu speichernde Wert in einem absoluten Pfad verfügbar ist.
    * **Wert angeben:** Geben Sie einen Wert an, der der Variablen zugeordnet werden soll. Der Wert, den Sie in diesem Feld angeben, hängt vom Zuordnungsmodus ab.
-   * **hinzufügen:** Verwenden Sie diese Option, um weitere Zuordnungen hinzuzufügen, um einen Wert für die Variable festzulegen.
+   * **Zuordnung hinzufügen:** Mit dieser Option können Sie weitere Zuordnungen hinzufügen, um einen Wert für die Variable festzulegen.
