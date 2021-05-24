@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
 discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 4acc5f7f-0bcb-4b5a-8531-52e146cffeae
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 71%
 
 ---
-
 
 # Extrahieren von Zeichenfolgen zur Übersetzung{#extracting-strings-for-translating}
 
@@ -26,7 +25,7 @@ Verwenden Sie xgettext-maven-plugin, um Zeichenfolgen, die übersetzt werden mü
 * JavaScript-Quelldateien
 * XML-Darstellungen von SVN-Ressourcen (JCR-Knoten)
 
-## Konfiguration der Zeichenfolgen-Extraktion {#configuring-string-extraction}
+## Konfiguration der Zeichenfolgen-Extraktion  {#configuring-string-extraction}
 
 Konfigurieren Sie, wie xgettext-maven-plugin Zeichenfolgen für Ihr Projekt extrahiert.
 
@@ -49,10 +48,10 @@ Konfigurieren Sie, wie xgettext-maven-plugin Zeichenfolgen für Ihr Projekt extr
 | Abschnitt | Beschreibung |
 |---|---|
 | /filter | Identifiziert die analysierten Dateien. |
-| /parsers/vaultxml | Konfiguriert die Analyse von Vault-Dateien. Gibt die JCR-Knoten an, die externalisierte Zeichenfolgen und Lokalisierungshinweise enthalten. Gibt außerdem JCR-Knoten an, die ignoriert werden sollen. |
-| /parsers/javascript | Identifiziert die JavaScript-Funktionen, die Zeichenfolgen extern verarbeiten. Sie müssen diesen Abschnitt nicht ändern. |
-| /parsers/regexp | Konfiguriert die Analyse von Java-, JSP- und ExtJS-Vorlagendateien. Sie müssen diesen Abschnitt nicht ändern. |
-| /Potenziale | Die Formel zum Erkennen von zu internationalisierenden Zeichenfolgen. |
+| /parsers/vaultxml | Konfiguriert das Parsen von Vault-Dateien. Gibt die JCR-Knoten an, die externalisierte Zeichenfolgen und Lokalisierungshinweise enthalten. Gibt außerdem JCR-Knoten an, die ignoriert werden sollen. |
+| /parsers/javascript | Identifiziert die JavaScript-Funktionen, die Zeichenfolgen externalisieren. Sie müssen diesen Abschnitt nicht ändern. |
+| /parsers/regexp | Konfiguriert das Parsen von Java-, JSP- und ExtJS-Vorlagendateien. Sie müssen diesen Abschnitt nicht ändern. |
+| /potentials | Die Formel zur Erkennung von Zeichenfolgen, die internationalisiert werden sollen. |
 
 ### Bestimmung der zu parsenden Dateien {#identifying-the-files-to-parse}
 
@@ -68,10 +67,10 @@ Das Muster einer Regel wird verwendet, um die Namen der Dateien abzugleichen, di
 | Präfix | Ergebnis |
 |---|---|
 | / | Gibt einen JCR-Pfad an. Daher gleicht dieses Präfix Dateien unter dem Verzeichnis jcr_root ab. |
-| &amp;ast; | Gibt eine normale Datei im Dateisystem an. |
-| keine | Kein Präfix oder ein Muster, das mit einem Ordner- oder Dateinamen beginnt, zeigt eine normale Datei im Dateisystem an. |
+| &amp;ast; | Gibt eine reguläre Datei im Dateisystem an. |
+| keine | Kein Präfix oder ein Muster, das mit einem Ordner oder Dateinamen beginnt, zeigt eine reguläre Datei im Dateisystem an. |
 
-Bei Verwendung innerhalb eines Musters gibt das /-Zeichen einen Unterordner und den &amp;ast an. entspricht allen Zeichen. In der folgenden Tabelle sind einige Beispielregeln aufgeführt.
+Wenn es in einem Muster verwendet wird, zeigt das Zeichen / ein Unterverzeichnis und das Zeichen &amp;ast an. entspricht allen Zeichen. In der folgenden Tabelle sind einige Beispielregeln aufgeführt.
 
 <table>
  <tbody>
@@ -89,13 +88,13 @@ Bei Verwendung innerhalb eines Musters gibt das /-Zeichen einen Unterordner und 
   </tr>
   <tr>
    <td><code> { /exclude "*/pom.xml" }</code></td>
-   <td>Schließen Sie POM-Dateien aus.</td>
+   <td>Ausschluss von POM-Dateien.</td>
   </tr>
   <tr>
    <td><code class="code">{ /exclude "/content/*" }
       { /include "/content/catalogs/geometrixx/templatepages" }
       { /include "/content/catalogs/geometrixx/templatepages/*" }</code></td>
-   <td><p>Schließen Sie alle Dateien unterhalb des Knotens "/content"aus.</p> <p>Schließen Sie den Knoten /content/catalogs/geometrixx/templatesPages ein.</p> <p>Schließen Sie alle untergeordneten Knoten von /content/catalogs/geometrixx/templatesPages ein.</p> </td>
+   <td><p>Schließen Sie alle Dateien unter dem Knoten /content aus.</p> <p>Schließen Sie den Knoten /content/catalogs/geometrixx/templatepages ein.</p> <p>Schließen Sie alle untergeordneten Knoten von /content/catalogs/geometrixx/templatepages ein.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -137,10 +136,9 @@ mvn xgettext:extract
 ### Ausgabedateien {#output-files}
 
 * `raw.xliff`: extrahierte Zeichenfolgen
-* `warn.log`: (sofern vorhanden), wenn die  `CQ.I18n.getMessage()` API nicht korrekt verwendet wird. In diesen Fällen ist immer eine Fehlerbehebung und anschließend eine Wiederholung erforderlich.
+* `warn.log`: (falls vorhanden), wenn die  `CQ.I18n.getMessage()` API falsch verwendet wird. In diesen Fällen ist immer eine Fehlerbehebung und anschließend eine Wiederholung erforderlich.
 
 * `parserwarn.log`: Parser-Warnungen (falls vorhanden), z. B. js-Parserprobleme
 * `potentials.xliff`: „potenzielle“ Kandidaten, die nicht extrahiert werden, aber möglicherweise von Menschen lesbare Zeichenfolgen sind, die übersetzt werden müssen (kann ignoriert werden, da es noch eine große Menge an falsch positiven Ergebnissen findet)
 * `strings.xliff`: Zusammengefasste xliff-Datei für den Import in ALF
 * `backrefs.txt`: ermöglicht ein schnelles Nachschlagen der Position bestimmter Zeichenfolgen im Quellcode
-
