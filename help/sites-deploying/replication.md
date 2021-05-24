@@ -10,15 +10,14 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 3cae081e-93e3-4317-b307-1316283c307a
 docset: aem65
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Konfiguration
+exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '3444'
 ht-degree: 79%
 
 ---
-
 
 # Replikation{#replication}
 
@@ -36,7 +35,7 @@ Anforderungen werden zur Verarbeitung durch den entsprechenden Agenten in eine [
 >
 >Bei mehreren Veröffentlichungsinstanzen werden Benutzerdaten mithilfe von Sling verteilt, wenn die [Benutzersynchronisierung](/help/sites-administering/sync.md) aktiviert ist.
 
-## Replizieren von der Autoren- auf der Veröffentlichungsinstanz {#replicating-from-author-to-publish}
+## Replizieren von der Autoren- auf der Veröffentlichungsinstanz  {#replicating-from-author-to-publish}
 
 Die Replikation auf einer Veröffentlichungsinstanz oder einem Dispatcher verläuft in mehreren Schritten:
 
@@ -61,13 +60,13 @@ Die Rückwärtsreplikation nutzt einen Agenten in der Veröffentlichungsumgebung
 
 In anderen Fällen wie etwa bei Communities-Funktionen (z. B. Foren, Blogs, Kommentare und Rezensionen) ist es schwierig, das hohe Volumen der in die Veröffentlichungsumgebung eingegebenen, benutzergenerierten Inhalte (UGC) mittels Replikation effizient auf allen AEM-Instanzen zu synchronisieren.
 
-AEM [Communities](/help/communities/overview.md) verwendet nie Replizierung für UGC. Stattdessen ist zur Bereitstellung von benutzerdefinierten Inhalten für Communities ein Common Store erforderlich (siehe [Community-Inhaltsspeicher](/help/communities/working-with-srp.md)).
+AEM [Communities](/help/communities/overview.md) verwendet niemals die Replikation für benutzergenerierte Inhalte. Stattdessen ist zur Bereitstellung von benutzerdefinierten Inhalten für Communities ein Common Store erforderlich (siehe [Community-Inhaltsspeicher](/help/communities/working-with-srp.md)).
 
 ### Replikation – vorkonfiguriert {#replication-out-of-the-box}
 
-Die in einer Standardinstallation von AEM enthaltene Website für den Handel kann zur Veranschaulichung der Replikation verwendet werden.
+Die Website für den Internet-Handel, die in einer Standardinstallation von AEM enthalten ist, kann zur Veranschaulichung der Replikation verwendet werden.
 
-Um diesem Beispiel zu folgen und die standardmäßigen Replizierungsagenten zu verwenden, müssen Sie AEM[installieren mit:](/help/sites-deploying/deploy.md)
+Um diesem Beispiel zu folgen und die standardmäßigen Replikationsagenten zu verwenden, müssen Sie [AEM](/help/sites-deploying/deploy.md) installieren mit:
 
 * die Autorenumgebung an Port `4502`
 * die Veröffentlichungsumgebung an Port `4503`
@@ -81,8 +80,8 @@ Um diesem Beispiel zu folgen und die standardmäßigen Replizierungsagenten zu v
 >
 Standardmäßig deaktiviert (ab AEM 6.1):
 >
->* Agenten beim Autor: Replizierungsagenten umkehren (publish_reverse)
->* Agenten beim Veröffentlichen: Rückwärtsreplikation (Postausgang)
+>* Agenten für Autor : Agent für Rückwärtsreplikation (publish_reverse)
+>* Agenten für Veröffentlichung : Rückwärtsreplikation (Postausgang)
 
 >
 >
@@ -95,14 +94,14 @@ Der Status des Agenten oder der Warteschlange kann mithilfe der **Tools-Konsole*
    **https://localhost:4502/content/we-retail/us/en/experience.html** `<pi>`
 1. Bearbeiten Sie die Seite, um neuen Text hinzuzufügen.
 1. **Aktivieren Sie die Seite**, um die Änderungen zu veröffentlichen.
-1. Öffnen Sie die Support-Seite auf der Umgebung &quot;Veröffentlichen&quot;:
+1. Öffnen Sie die Support-Seite in der Veröffentlichungsumgebung:
    **https://localhost:4503/content/we-retail/us/en/experience.html**
 1. Jetzt können Sie die Änderungen sehen, die Sie in der Autorenumgebung eingegeben haben.
 
 Diese Replikation wird von der Autorenumgebung aus durch folgende Komponenten verarbeitet:
 
 * **Standardagent („publish“)**  Dieser Agent repliziert Inhalte auf der Standard-Veröffentlichungsinstanz.
-Die Details dazu (Konfiguration und Protokolle) können über die Tools-Konsole der Autor-Umgebung aufgerufen werden. oder:
+Details dazu (Konfiguration und Protokolle) können über die Tools-Konsole der Autorenumgebung aufgerufen werden. oder:
 
    `https://localhost:4502/etc/replication/agents.author/publish.html`.
 
@@ -114,11 +113,11 @@ Die folgenden Agenten sind in der Standard-AEM-Installation verfügbar:
 
 * Dispatcher Flush Dient zum Verwalten des Dispatcher-Caches. Weitere Informationen finden Sie unter [Invalidierung des Dispatcher-Caches aus der Autorenumgebung](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) und [Invalidierung des Dispatcher-Caches von einer Veröffentlichungsinstanz](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance).
 
-* [Rückwärtsreplikation](#reverse-replication-publish-to-author) Dient zum Replizieren von der Veröffentlichungs- auf der Autoreninstanz. Die umgekehrte Replizierung wird nicht für Communities-Funktionen wie Foren, Blogs und Kommentare verwendet. Es ist effektiv deaktiviert, da der Postausgang nicht aktiviert ist. Für die Rückwärtsreplikation ist eine benutzerdefinierte Konfiguration erforderlich.
+* [Rückwärtsreplikation](#reverse-replication-publish-to-author) Dient zum Replizieren von der Veröffentlichungs- auf der Autoreninstanz. Die Rückwärtsreplikation wird nicht für Communities-Funktionen wie Foren, Blogs und Kommentare verwendet. Sie ist effektiv deaktiviert, da der Postausgang nicht aktiviert ist. Für die Rückwärtsreplikation ist eine benutzerdefinierte Konfiguration erforderlich.
 
 * Statischer Agent
 Dies ist ein &quot;Agent, der eine statische Darstellung eines Knotens im Dateisystem speichert&quot;.
-Bei den Standardeinstellungen werden z. B. Inhaltsseiten und DAM-Assets unter `/tmp` gespeichert, entweder als HTML oder das entsprechende Asset-Format. Siehe die Registerkarten `Settings` und `Rules` für die Konfiguration.
+Mit den Standardeinstellungen werden beispielsweise Inhaltsseiten und DAM-Assets unter `/tmp` entweder als HTML oder im entsprechenden Asset-Format gespeichert. Siehe die Registerkarten `Settings` und `Rules` für die Konfiguration.
  Der Grund hierfür war, dass die Inhalte sichtbar sein sollten, wenn die Seite direkt vom Anwendungsserver angefordert wird. Hierbei handelt es sich um einen speziellen Agenten, der (wahrscheinlich) für den Großteil der Instanzen nicht benötigt wird.
 
 ## Replikationsagenten – Konfigurationsparameter {#replication-agents-configuration-parameters}
@@ -183,9 +182,9 @@ Beim Konfigurieren eines Replikationsagenten in der Tools-Konsole stehen vier Re
 
    Gibt den Detaillierungsgrad an, der für Protokollmeldungen verwendet werden soll.
 
-   * `Error`: Nur Fehler werden protokolliert
+   * `Error`: werden nur Fehler protokolliert
    * `Info`: Fehler, Warnungen und andere Informationsmeldungen werden protokolliert
-   * `Debug`: In den Meldungen wird eine hohe Detailgenauigkeit verwendet, hauptsächlich zu Debugging-Zwecken
+   * `Debug`: In den Nachrichten wird eine hohe Detailtiefe verwendet, in erster Linie zu Debugging-Zwecken
 
    Standard: `Info`
 
@@ -205,12 +204,12 @@ Beim Konfigurieren eines Replikationsagenten in der Tools-Konsole stehen vier Re
 
    Beispiel:
 
-   * Ein Standardagent kann `https://localhost:4503/bin/receive` replizieren
-   * Ein Dispatcher-Flush-Agent kann zu `https://localhost:8000/dispatcher/invalidate.cache` replizieren
+   * Ein Standardagent kann auf `https://localhost:4503/bin/receive` repliziert werden
+   * Ein Dispatcher Flush-Agent kann auf `https://localhost:8000/dispatcher/invalidate.cache` repliziert werden
 
    Das hier angegebene Protokoll (HTTP oder HTTPS) bestimmt die Transportmethode.
 
-   Bei Dispatcher Flush-Agenten wird die URI-Eigenschaft nur verwendet, wenn Sie pfadbasierte virtualhost-Einträge verwenden, um zwischen Farmen zu unterscheiden. In diesem Feld können Sie die Farm für ungültig erklären. Beispiel: Farm 1 hat den virtuellen Host `www.mysite.com/path1/*` und Farm 2 den virtuellen Host `www.mysite.com/path2/*`. Mit der URL `/path1/invalidate.cache` können Sie die erste Farm und mit `/path2/invalidate.cache` die zweite Farm bestimmen.
+   Bei Dispatcher Flush-Agenten wird die URI-Eigenschaft nur verwendet, wenn Sie pfadbasierte virtualhost-Einträge verwenden, um zwischen Farmen zu unterscheiden. Sie verwenden dieses Feld, um die Farm als Ziel für die Invalidierung zu verwenden. Beispiel: Farm 1 hat den virtuellen Host `www.mysite.com/path1/*` und Farm 2 den virtuellen Host `www.mysite.com/path2/*`. Mit der URL `/path1/invalidate.cache` können Sie die erste Farm und mit `/path2/invalidate.cache` die zweite Farm bestimmen.
 
 * **Benutzer**
 
@@ -236,7 +235,7 @@ Beim Konfigurieren eines Replikationsagenten in der Tools-Konsole stehen vier Re
 
    Aktivieren Sie diese Option, wenn abgelaufene SSL-Zertifikate akzeptiert werden sollen.
 
-#### Proxy  {#proxy}
+#### Proxy {#proxy}
 
 Die folgenden Einstellungen müssen nur festgelegt werden, wenn ein Proxy benötigt wird:
 
@@ -264,7 +263,7 @@ Die folgenden Einstellungen müssen nur festgelegt werden, wenn ein Proxy benöt
 
    Die NTLM-Domäne des Proxys.
 
-#### Erweitert  {#extended}
+#### Erweitert {#extended}
 
 * **Benutzeroberfläche**
 
@@ -290,7 +289,7 @@ Die folgenden Einstellungen müssen nur festgelegt werden, wenn ein Proxy benöt
 
    Diese dienen ggf. dazu, die Aktion anzugeben, die beim Leeren des Handles oder Pfades verwendet werden soll. Die Unterparameter sind dynamisch:
 
-   * `{action}` gibt eine Replizierungsaktion an
+   * `{action}` gibt eine Replikationsaktion an
 
    * `{path}` gibt einen Pfad an
 
@@ -370,7 +369,7 @@ Auf der Registerkarte „Tools“ der Autorenumgebung können Sie Replikationsag
 
    ![chlimage_1-22](assets/chlimage_1-22.png)
 
-1. Die angegebenen Werte sollten für eine Standardinstallation ausreichend sein. Wenn Sie Änderungen vornehmen, klicken Sie auf **OK**, um sie zu speichern (weitere Informationen zu den einzelnen Parametern finden Sie unter [Replizierungsagenten - Konfigurationsparameter](#replication-agents-configuration-parameters)).
+1. Die angegebenen Werte sollten für eine Standardinstallation ausreichend sein. Wenn Sie Änderungen vornehmen, klicken Sie auf **OK**, um sie zu speichern (weitere Informationen zu den einzelnen Parametern finden Sie unter [Replikationsagenten - Konfigurationsparameter](#replication-agents-configuration-parameters) ).
 
 >[!NOTE]
 >
@@ -391,17 +390,17 @@ Da sich die Veröffentlichungsumgebung in der Regel in der DMZ befindet, muss ei
 
 >[!NOTE]
 >
->Bei AEM [Communities](/help/communities/overview.md) wird die Replizierung nicht für vom Benutzer generierte Inhalte in einer Veröffentlichungsinstanz verwendet. Weitere Informationen finden Sie unter [Community-Inhaltsspeicher](/help/communities/working-with-srp.md).
+>Bei AEM [Communities](/help/communities/overview.md) wird die Replikation nicht für benutzergenerierte Inhalte auf einer Veröffentlichungsinstanz verwendet. Weitere Informationen finden Sie unter [Community-Inhaltsspeicher](/help/communities/working-with-srp.md).
 
 Hierzu benötigen Sie Folgendes:
 
-**Ein Agenten für die Rückwärtsreplikation in der** AutorenumgebungDies dient als aktive Komponente zum Erfassen von Informationen aus dem Postausgang in der Umgebung &quot;Veröffentlichen&quot;:
+**Ein Agenten für die Rückwärtsreplikation in der** Autorenumgebung. Dies dient als aktive Komponente zum Erfassen von Informationen aus dem Postausgang in der Veröffentlichungsumgebung:
 
 Falls Sie die Rückwärtsreplikation nutzen möchten, muss dieser Agent aktiviert sein.
 
 ![chlimage_1-23](assets/chlimage_1-23.png)
 
-**Ein Agenten für die Rückwärtsreplikation in der Veröffentlichungs-Umgebung (ein Postausgang)** Dies ist das passive Element, da es als &quot;Outbox&quot;fungiert. Benutzereingaben werden hier abgelegt und vom Agenten in der Autorenumgebung abgerufen.
+**Ein Agenten für die Rückwärtsreplikation in der Veröffentlichungsumgebung (ein Postausgang)**  Dies ist das passive Element, da es als &quot;Postausgang&quot;fungiert. Benutzereingaben werden hier abgelegt und vom Agenten in der Autorenumgebung abgerufen.
 
 ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
@@ -411,7 +410,7 @@ Falls Sie die Rückwärtsreplikation nutzen möchten, muss dieser Agent aktivier
 >
 >Nur Inhalte werden repliziert – keine Benutzerdaten (Benutzer, Benutzergruppen und -profile).
 >
->Um Benutzerdaten über mehrere Instanzen im Veröffentlichungsmodus zu synchronisieren, aktivieren Sie [Benutzersynchronisierung](/help/sites-administering/sync.md).
+>Um Benutzerdaten über mehrere Veröffentlichungsinstanzen hinweg zu synchronisieren, aktivieren Sie [Benutzersynchronisierung](/help/sites-administering/sync.md).
 
 Bei der Installation wird bereits ein Standardagent für die Replikation von Inhalten auf einer Veröffentlichungsinstanz konfiguriert, die an Port 4503 von localhost ausgeführt wird.
 
@@ -431,10 +430,10 @@ Zum Konfigurieren der Replikation von Inhalten für eine weitere Veröffentlichu
       * Geben Sie eine **Beschreibung** ein.
       * Setzen Sie den Wert für **Verzögerung wiederh.** auf `60000`.
 
-      * Lassen Sie **Serialisierungstyp** als `Default`.
+      * Belassen Sie den Serialisierungstyp **a1/> auf `Default`.**
    * Führen Sie auf der Registerkarte **Transport** folgende Schritte aus:
 
-      * Geben Sie den erforderlichen URI für die neue Instanz im Veröffentlichungsmodus ein. zum Beispiel
+      * Geben Sie den erforderlichen URI für die neue Veröffentlichungsinstanz ein. Beispiel:
          `https://localhost:4504/bin/receive`.
 
       * Geben Sie das Site-spezifische Benutzerkonto für die Replikation ein.
@@ -447,7 +446,7 @@ Sie können dann einen Funktionstest durchführen, indem Sie eine Seite in der A
 
 Die Aktualisierungen werden auf allen Veröffentlichungsinstanzen angezeigt, die wie oben beschrieben konfiguriert wurden.
 
-Falls Probleme auftreten, können Sie die Protokolle der Autoreninstanz überprüfen. Abhängig von der erforderlichen Detailstufe können Sie auch **Protokollierungsstufe** mithilfe des Dialogfelds **Agenteneinstellungen** auf `Debug` setzen.
+Falls Probleme auftreten, können Sie die Protokolle der Autoreninstanz überprüfen. Abhängig von der erforderlichen Detailtiefe können Sie auch die **Protokollebene** mithilfe des Dialogfelds **Agenteneinstellungen** auf `Debug` setzen.
 
 >[!NOTE]
 >
@@ -467,7 +466,7 @@ Die Installation umfasst Standardagenten. Es müssen jedoch trotzdem gewisse Kon
 
 1. Öffnen Sie die Registerkarte **Tools** in AEM.
 1. Klicken Sie auf **Bereitstellung**.
-1. Wählen Sie **Replication** und dann **Agenten bei der Veröffentlichung**.
+1. Wählen Sie **Replication** und dann **Agents on publish**.
 1. Doppelklicken Sie auf das Element **Dispatcher Flush**, um die Übersicht zu öffnen.
 1. Klicken Sie auf **Bearbeiten**. Das Dialogfeld **Agenteneinstellungen** wird geöffnet:
 
@@ -477,16 +476,16 @@ Die Installation umfasst Standardagenten. Es müssen jedoch trotzdem gewisse Kon
       * Geben Sie eine **Beschreibung** ein.
       * Behalten Sie **als** Anordnungstyp`Dispatcher Flush` bei oder legen Sie diese Einstellung fest, wenn Sie einen neuen Agenten erstellen.
 
-      * (Optional) Wählen Sie **Alias-Update** aus, um Alias- oder Vanity-Pfadinvalidierungsanforderungen für Dispatcher zu aktivieren.
+      * (optional) Wählen Sie **Alias-Update** aus, um Invalidierungsanforderungen für Alias- oder Vanity-Pfade für den Dispatcher zu aktivieren.
    * Führen Sie auf der Registerkarte **Transport** folgende Schritte aus:
 
-      * Geben Sie den erforderlichen URI für die neue Instanz im Veröffentlichungsmodus ein. zum Beispiel
+      * Geben Sie den erforderlichen URI für die neue Veröffentlichungsinstanz ein. Beispiel:
          `https://localhost:80/dispatcher/invalidate.cache`.
 
       * Geben Sie das Site-spezifische Benutzerkonto für die Replikation ein.
       * Die anderen Parameter können nach Bedarf konfiguriert werden.
 
-   Bei Dispatcher Flush-Agenten wird die URI-Eigenschaft nur verwendet, wenn Sie pfadbasierte virtualhost-Einträge verwenden, um zwischen Farmen zu unterscheiden. In diesem Feld können Sie die Farm für ungültig erklären. Beispiel: Farm 1 hat den virtuellen Host `www.mysite.com/path1/*` und Farm 2 den virtuellen Host `www.mysite.com/path2/*`. Mit der URL `/path1/invalidate.cache` können Sie die erste Farm und mit `/path2/invalidate.cache` die zweite Farm bestimmen.
+   Bei Dispatcher Flush-Agenten wird die URI-Eigenschaft nur verwendet, wenn Sie pfadbasierte virtualhost-Einträge verwenden, um zwischen Farmen zu unterscheiden. Sie verwenden dieses Feld, um die Farm als Ziel für die Invalidierung zu verwenden. Beispiel: Farm 1 hat den virtuellen Host `www.mysite.com/path1/*` und Farm 2 den virtuellen Host `www.mysite.com/path2/*`. Mit der URL `/path1/invalidate.cache` können Sie die erste Farm und mit `/path2/invalidate.cache` die zweite Farm bestimmen.
 
    >[!NOTE]
    >
@@ -495,7 +494,7 @@ Die Installation umfasst Standardagenten. Es müssen jedoch trotzdem gewisse Kon
 1. Klicken Sie auf **OK**, um die Änderungen zu speichern.
 1. Kehren Sie zur Registerkarte **Tools** zurück. Hier können Sie den Agenten **Dispatcher Flush** (**Agenten bei Veröffentlichung**) **aktivieren**.
 
-Auf der Autoreninstanz ist der Replikationsagent **Dispatcher Flush** nicht aktiv. Sie können auf dieselbe Seite in der Umgebung &quot;Veröffentlichen&quot;zugreifen, indem Sie den entsprechenden URI verwenden. zum Beispiel `https://localhost:4503/etc/replication/agents.publish/flush.html`.
+Auf der Autoreninstanz ist der Replikationsagent **Dispatcher Flush** nicht aktiv. Sie können in der Veröffentlichungsumgebung mit dem entsprechenden URI auf dieselbe Seite zugreifen. z. B. `https://localhost:4503/etc/replication/agents.publish/flush.html`.
 
 ### Steuern des Zugriffs auf Replikationsagenten {#controlling-access-to-replication-agents}
 
@@ -509,7 +508,7 @@ Der Zugriff auf die Seiten zum Konfigurieren der Replikationsagenten kann mithil
 
 >[!NOTE]
 >
->Die Erstellung von Replizierungsagenten wird nur im Repository-Speicherort `/etc/replication` unterstützt. Dies ist erforderlich, damit die zugehörigen ACLs ordnungsgemäß verarbeitet werden. Das Erstellen eines Replizierungsagenten an einem anderen Speicherort der Struktur kann zu nicht autorisiertem Zugriff führen.
+>Die Erstellung von Replikationsagenten wird nur im Repository-Speicherort `/etc/replication` unterstützt. Dies ist erforderlich, damit die zugehörigen ACLs ordnungsgemäß verarbeitet werden können. Das Erstellen eines Replikationsagenten an einem anderen Speicherort des Baums kann zu nicht autorisiertem Zugriff führen.
 
 Mit CRXDE Lite können verschiedene Parameter der Replikationsagenten konfiguriert werden.
 
@@ -519,7 +518,7 @@ Wenn Sie zu `/etc/replication` navigieren, sehen Sie die folgenden drei Knoten:
 * `agents.publish`
 * `treeactivation`
 
-Die beiden `agents` halten Konfigurationsinformationen zur entsprechenden Umgebung und sind nur aktiv, wenn diese Umgebung ausgeführt wird. Beispielsweise wird `agents.publish` nur in der Veröffentlichungsumgebung verwendet. Der nachfolgende Screenshot zeigt den Veröffentlichungsagenten der Autorenumgebung, der im Lieferumfang von AEM WCM enthalten ist:
+Die beiden `agents` speichern Konfigurationsinformationen über die entsprechende Umgebung und sind nur aktiv, wenn diese Umgebung ausgeführt wird. Beispielsweise wird `agents.publish` nur in der Veröffentlichungsumgebung verwendet. Der nachfolgende Screenshot zeigt den Veröffentlichungsagenten der Autorenumgebung, der im Lieferumfang von AEM WCM enthalten ist:
 
 ![chlimage_1-24](assets/chlimage_1-24.png)
 
@@ -564,28 +563,28 @@ Gehen Sie wie folgt vor, um Replikationsagenten zu überwachen:
 
 ## Batch-Replikation {#batch-replication}
 
-Die Stapelreplikation repliziert keine einzelnen Seiten oder Assets, wartet jedoch darauf, dass der erste Schwellenwert der beiden je nach Zeit oder Größe ausgelöst wird.
+Die Batch-Replikation repliziert keine einzelnen Seiten oder Assets, wartet jedoch darauf, dass der erste Schwellenwert der beiden, basierend auf der Zeit oder Größe, ausgelöst wird.
 
-Anschließend werden alle Replikationselemente in einem Paket zusammengefasst, das dann als eine einzelne Datei an den Herausgeber repliziert wird.
+Anschließend werden alle Replikationselemente in einem Paket zusammengefasst, das dann als einzelne Datei an den Herausgeber repliziert wird.
 
-Der Herausgeber entpackt alle Elemente, speichert sie und meldet sie dem Autor zurück.
+Der Herausgeber entpackt alle Elemente, speichert sie und meldet sie dem Autor erneut.
 
-### Stapelreplikation konfigurieren {#configuring-batch-replication}
+### Konfigurieren der Batch-Replikation {#configuring-batch-replication}
 
 1. Wechseln zu `http://serveraddress:serverport/siteadmin`
-1. Drücken Sie auf das Symbol **[!UICONTROL Tools]** oben auf dem Bildschirm.
-1. Klicken Sie auf der linken Navigationsleiste auf **[!UICONTROL Replizierung - Agenten auf Autor]** und Dublette auf **[!UICONTROL Standardagent]**.
-   * Sie können auch den standardmäßigen Agenten für die Veröffentlichungsreplikation erreichen, indem Sie direkt zu `http://serveraddress:serverport/etc/replication/agents.author/publish.html` gehen.
-1. Drücken Sie die Taste **[!UICONTROL Bearbeiten]** über der Replikationswarteschlange.
-1. Gehen Sie im folgenden Fenster zur Registerkarte **[!UICONTROL Stapel]**:
+1. Drücken Sie auf das Symbol **[!UICONTROL Tools]** in der oberen Bildschirmseite.
+1. Wechseln Sie in der linken Navigationsleiste zu **[!UICONTROL Replikation - Agenten für Autor]** und doppelklicken Sie auf **[!UICONTROL Standardagent]**.
+   * Sie können auch den standardmäßigen Agenten für die Veröffentlichungsreplikation erreichen, indem Sie direkt zu `http://serveraddress:serverport/etc/replication/agents.author/publish.html` navigieren.
+1. Drücken Sie die Schaltfläche **[!UICONTROL Bearbeiten]** oberhalb der Replikationswarteschlange.
+1. Gehen Sie im folgenden Fenster zur Registerkarte **[!UICONTROL Batch]** :
    ![Batchreplikation](assets/batchreplication.png)
 1. Konfigurieren Sie den Agenten.
 
 ### Parameter {#parameters}
 
-* `[!UICONTROL Enable Batch Mode]` - Aktiviert oder deaktiviert den Stapelreplikationsmodus
-* `[!UICONTROL Max Wait Time]` - Maximale Wartezeit bis zum Starten einer Stapelanforderung in Sekunden. Der Standardwert ist 2 Sekunden.
-* `[!UICONTROL Trigger Size]` - Stapelreplikation von Beginn, wenn diese Größenbeschränkung
+* `[!UICONTROL Enable Batch Mode]` - Aktivierung oder Deaktivierung des Batch-Replikationsmodus
+* `[!UICONTROL Max Wait Time]` - Maximale Wartezeit bis zum Start einer Batch-Anfrage in Sekunden. Der Standardwert ist 2 Sekunden.
+* `[!UICONTROL Trigger Size]` - Startet die Batch-Replikation, wenn diese Größenbeschränkung
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
