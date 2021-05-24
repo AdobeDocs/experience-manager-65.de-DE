@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
+exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 89%
 
 ---
-
 
 # Bearbeiten: Umgebung und Tools {#authoring-the-environment-and-tools}
 
@@ -62,7 +61,7 @@ Sie können die Inhaltssuche verwenden, um eine Reihe von Ressourcen zu ermittel
 * [Bilder](#finding-images)
 * [Dokumente](#finding-documents)
 * [Filme](#finding-movies)
-* [Dynamic Media Browser](/help/sites-administering/scene7.md#scene7contentbrowser)
+* [Dynamic Media-Browser](/help/sites-administering/scene7.md#scene7contentbrowser)
 * [](#products) [Seiten](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#finding-pages)
 
 * [Absätze](#referencing-paragraphs-from-other-pages)
@@ -103,7 +102,7 @@ In dieser Registerkarte werden sämtliche Produkte aufgeführt. Nachdem Sie eine
 
 ### Suchen nach Seiten {#finding-pages}
 
-Auf dieser Registerkarte werden alle Seiten angezeigt. Klicken Sie mit der Dublette auf eine beliebige Seite, um sie zur Bearbeitung zu öffnen.
+Auf dieser Registerkarte werden alle Seiten angezeigt. Doppelklicken Sie auf eine beliebige Seite, um sie zur Bearbeitung zu öffnen.
 
 ![chlimage_1-115](assets/chlimage_1-115.png)
 
@@ -148,11 +147,11 @@ wird dies mit dem folgenden Suchmuster gefunden (und ebenso alle anderen Bilder,
 beim Zeichenabgleich wird *nicht* zwischen Groß- und Kleinschreibung unterschieden.
 
 * `name:ad?nm??is.*`
-Sie können beliebig viele Platzhalter in einer Abfrage verwenden.
+können Sie eine beliebige Anzahl von Platzhaltern in einer Abfrage verwenden.
 
 >[!NOTE]
 >
->Sie können auch die [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html)-Suche verwenden.
+>Sie können auch die Suche [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) verwenden.
 
 ## Anzeigen von Verweisen {#showing-references}
 
@@ -164,7 +163,7 @@ So zeigen Sie direkte Seitenverweise an:
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. Wählen Sie **Referenzen anzeigen...** AEM öffnet das Fenster &quot;Referenzen&quot;und zeigt an, welche Seiten auf die ausgewählte Seite verweisen, einschließlich der Pfade.
+1. Wählen Sie **Verweise anzeigen...** AEM öffnet das Fenster &quot;Verweise&quot;und zeigt an, welche Seiten auf die ausgewählte Seite verweisen, einschließlich der Pfade.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -177,7 +176,7 @@ In bestimmten Situationen sind weitere Aktionen im Sidekick verfügbar:
 
 Auf der Websites-Konsole sind weitere [Seitenbeziehungen](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) zu sehen.
 
-## Auditprotokoll {#audit-log}
+## Auditprotokoll  {#audit-log}
 
 Das **Auditprotokoll** kann über die Registerkarte **Informationen** im Sidekick aufgerufen werden. Dort werden die kürzlich durchgeführten Aktionen für die aktuelle Seite aufgeführt. Beispiel:
 
@@ -185,9 +184,9 @@ Das **Auditprotokoll** kann über die Registerkarte **Informationen** im Sidekic
 
 ## Seiteninformationen {#page-information}
 
-Die Website-Konsole bietet auch Informationen zum aktuellen Status der Seite](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), wie Veröffentlichung, Änderung, Sperrung, Livecopy usw.[
+Die Website-Konsole [enthält auch Informationen zum aktuellen Status der Seite](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), z. B. Veröffentlichung, Änderung, gesperrt, Live Copy usw.
 
-## Seitenmodi   {#page-modes}
+## Seitenmodi  {#page-modes}
 
 Beim Bearbeiten einer Seite in der klassischen Benutzeroberfläche können Sie verschiedene Modi über die Symbole unten im Sidekick aufrufen:
 
@@ -209,9 +208,9 @@ In diesem Modus können Sie das Design der Seite bearbeiten, indem Sie die verf�
 >Es sind weitere Optionen verfügbar:
 >
 >* [Strukturvorlage](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
->* [ClientContext](/help/sites-administering/client-context.md)
->* Websites - öffnet die Konsole „Websites“.
->* Neu laden - aktualisiert die Seite.
+* [ClientContext](/help/sites-administering/client-context.md)
+* Websites - öffnet die Konsole „Websites“.
+* Neu laden - aktualisiert die Seite.
 
 
 ## Tastaturbefehle {#keyboard-shortcuts}
