@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 9333ff84-f624-4cfa-a9e4-c5e3882171ff
-translation-type: tm+mt
-source-git-commit: 3f53945579eaf5de1ed0b071aa9cce30dded89f1
+exl-id: 21041b55-240c-487d-9d79-c54c877f4e1e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 93%
 
 ---
-
 
 # Start und Stopp über die Befehlszeile{#command-line-start-and-stop}
 
@@ -24,7 +23,7 @@ ht-degree: 93%
 
 Das Skript `start` befindet sich im Verzeichnis *&lt;cq-installation>/bin*. Sowohl die Unix- als auch die Windows-Version wird bereitgestellt. Das Skript startet die im Verzeichnis *&lt;cq-installation>* installierte Instanz.
 
-Diese beiden Versionen unterstützen eine Liste von Umgebung-Variablen, die zum Beginn und zur Abstimmung der AEM verwendet werden können.
+Diese beiden Versionen unterstützen eine Liste von Umgebungsvariablen, die zum Starten und Optimieren der AEM-Instanz verwendet werden können.
 
 <table>
  <tbody>
@@ -71,7 +70,7 @@ Diese beiden Versionen unterstützen eine Liste von Umgebung-Variablen, die zum 
 >
 >Beachten Sie, dass einige Ausführungsmodi, wie „author“ und „publish“, vor dem ersten Starten von AEM eingerichtet werden müssen und im Nachhinein nicht mehr geändert werden können. Lesen Sie vor dem Einrichten einer AEM-Instanz, die in der Produktion verwendet werden soll, die [Dokumentation für die Ausführungsmodi](/help/sites-deploying/configure-runmodes.md), um weitere Informationen zu erhalten.
 
-### „start.bat“-Skriptbeispiel für Windows-Plattform {#windows-platform-start-bat-script-example}
+### „start.bat“-Skriptbeispiel für Windows-Plattform  {#windows-platform-start-bat-script-example}
 
 ```shell
 SET CQ_PORT=1234 & ./start.bat
@@ -125,4 +124,3 @@ Wenn Sie das Repository einfach vorkonfigurieren möchten (ohne seine Position z
 * `bootstrap.properties` erstellen und `repository.config` definieren
 
 Zur Erinnerung: Führen Sie diese Aktionen vor der tatsächlichen Installation aus.
-
