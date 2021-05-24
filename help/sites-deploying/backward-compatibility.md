@@ -10,15 +10,14 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: f3b4ec1d-9054-47d4-afcb-0a0121b94190
 docset: aem65
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Aktualisieren
+exl-id: c432a014-2dab-4c49-a25b-e4f461d13f9b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 79%
 
 ---
-
 
 # Abwärtskompatibilität in AEM 6.5{#backward-compatibility-in-aem}
 
@@ -32,7 +31,7 @@ In AEM 6.5 wurden alle Funktionen im Hinblick auf die Abwärtskompatibilität en
 
 In den meisten Fällen sollten Kunden, die mit AEM 6.3 arbeiten, weder ihren Code noch ihre Anpassungen ändern müssen, wenn sie die Aktualisierung durchführen. Kunden mit AEM 6.1 und 6.2 müssen nicht mehr zusätzliche Änderungen durchführen, als dies bei einem Upgrade auf 6.3 erforderlich ist.
 
-In Ausnahmefällen, in denen Funktionen nicht rückwärtskompatibel gehalten werden konnten, können Probleme mit der Abwärtskompatibilität von Paketen und Inhalten durch die Installation eines Kompatibilitätspakets für 6.4 gemildert werden (weitere Informationen zum Herunterladen finden Sie unter Setup weiter unten). Dieses Compat-Paket wird in den meisten Fällen helfen, die Kompatibilität für Anwendungen wiederherzustellen, die AEM 6.4 entsprechen.
+Für Ausnahmen, in denen Funktionen nicht abwärtskompatibel gehalten werden konnten, können Abwärtskompatibilitätsprobleme für Bundles und Inhalte durch die Installation eines Kompatibilitätspakets für 6.4 reduziert werden (weitere Informationen dazu, wo Sie diese herunterladen können, finden Sie unten). Dieses Compat-Paket wird in den meisten Fällen dazu beitragen, die Kompatibilität für Anwendungen wiederherzustellen, die mit AEM 6.4 kompatibel sind.
 
 Mit dem Kompatibilitätspaket können Sie AEM im Kompatibilitätsmodus ausführen und so die benutzerdefinierte Entwicklung für neue AEM-Funktionen zurückstellen:
 
@@ -64,7 +63,7 @@ Der Legacy-Modus eignet sich für Kunden, die benutzerdefinierte Schnittstellen 
 
 ## Einrichtung {#how-to-set-up}
 
-Das AEM 6.3-Kompatibilitätspaket kann mit Package Manager als Paket installiert werden. Sie können das [AEM 6.3 Kompatibilitätspaket von der Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63)-Site herunterladen.
+Das AEM 6.3-Kompatibilitätspaket kann mit Package Manager als Paket installiert werden. Sie können das Kompatibilitätspaket [AEM 6.3 von der Website Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63) herunterladen.
 
 Sobald das Kompatibilitätspaket installiert wurde, können Sie das Routing über einen Schalter in der OSGi-Konfiguration aktivieren oder deaktivieren:
 
