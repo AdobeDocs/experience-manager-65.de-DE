@@ -9,28 +9,27 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: fde9027b-9057-48c3-ae34-3f3258c5b371
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: 6cda0a68-0df9-44e7-ae4f-9951411af6dd
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 87%
 
 ---
 
-
 # Nachverfolgen nicht zugestellter E-Mails{#tracking-bounced-emails}
 
 >[!NOTE]
 >
->Die Adobe plant nicht, die Verfolgung von E-Mails, die von AEM SMTP-Dienst geöffnet/abgeschnitten werden, weiter zu verbessern.
+>Adobe plant nicht, das Tracking geöffneter/Bounce-E-Mails, die von AEM SMTP-Dienst gesendet werden, weiter zu verbessern.
 >
->Die Empfehlung lautet: [Leverage-Adobe Campaign und dessen AEM Integration](/help/sites-administering/campaign.md).
+>Es wird empfohlen, [Adobe Campaign und seine AEM-Integration](/help/sites-administering/campaign.md) zu nutzen.
 
 Wenn Sie einen Newsletter an viele Benutzer senden, sind in der Liste im Allgemeinen einige ungültige E-Mail-Adressen enthalten. Newsletter, die an diese Adressen gesendet werden, können nicht zugestellt werden. AEM kann diese nicht zugestellten E-Mails verwalten und den Versand von Newslettern an diese Adressen einstellen, wenn die festgelegte Anzahl nicht erfolgreicher Zustellversuche überschritten wird. Der Standardwert für fehlgeschlagene Zustellversuche beträgt 3, er kann jedoch angepasst werden.
 
-Wenn Sie AEM so einrichten möchten, dass nicht zugestellte E-Mails nachverfolgt werden, müssen Sie festlegen, dass AEM vorhandene Postfächer abfragt, an die E-Mails nicht zugestellt werden können (im Allgemeinen handelt es sich dabei um die E-Mail-Adresse, die Sie für den Versand des Newsletters angegeben haben). AEM fragt diesen Posteingang ab und importiert alle E-Mails in das in den Abrufeinstellungen festgelegte Verzeichnis. Anschließend wird ein Arbeitsablauf ausgelöst, um nach den abgeschnittenen E-Mail-Adressen innerhalb der Benutzer zu suchen und den Wert der Eigenschaft &quot;bounceCounter&quot;des Benutzers entsprechend zu aktualisieren. Wenn der festgelegte Maximalwert für fehlgeschlagene Zustellversuche überschritten wird, wird der Benutzer aus der Newsletter-Liste gelöscht.
+Wenn Sie AEM so einrichten möchten, dass nicht zugestellte E-Mails nachverfolgt werden, müssen Sie festlegen, dass AEM vorhandene Postfächer abfragt, an die E-Mails nicht zugestellt werden können (im Allgemeinen handelt es sich dabei um die E-Mail-Adresse, die Sie für den Versand des Newsletters angegeben haben). AEM fragt diesen Posteingang ab und importiert alle E-Mails in das in den Abrufeinstellungen festgelegte Verzeichnis. Anschließend wird ein Workflow ausgelöst, der innerhalb der Benutzer nach den nicht zugestellten E-Mail-Adressen sucht und den Wert der Eigenschaft &quot;bounceCounter&quot;des Benutzers entsprechend aktualisiert. Wenn der festgelegte Maximalwert für fehlgeschlagene Zustellversuche überschritten wird, wird der Benutzer aus der Newsletter-Liste gelöscht.
 
-## Konfigurieren des Feed Importers {#configuring-the-feed-importer}
+## Konfigurieren des Feed Importers  {#configuring-the-feed-importer}
 
 Mit dem Feed Importer können Sie wiederholt Inhalte aus externen Quellen in Ihr Repository importieren. Bei dieser Konfiguration des Feed Importers prüft AEM den Posteingang des Absenders auf nicht zugestellte E-Mails.
 
@@ -54,7 +53,7 @@ So konfigurieren Sie den Feed Importer für das Nachverfolgen nicht zugestellter
 
    **Eigenschaften der POP3-Konfiguration:**
 
-   `pop3.leave.on.server`: Definiert, ob Meldungen auf dem Server bleiben sollen oder nicht. Wählen Sie „true“, wenn Nachrichten auf dem Server bleiben sollen, bzw. „false“, wenn dies nicht der Fall sein soll. Standardwert ist „true“.
+   `pop3.leave.on.server`: Definiert, ob Nachrichten auf dem Server bleiben sollen oder nicht. Wählen Sie „true“, wenn Nachrichten auf dem Server bleiben sollen, bzw. „false“, wenn dies nicht der Fall sein soll. Standardwert ist „true“.
 
    **POP3-Beispiele:**
 
@@ -68,7 +67,7 @@ So konfigurieren Sie den Feed Importer für das Nachverfolgen nicht zugestellter
 
    `imap.flag.SEEN`:Wählen Sie „false“ für eine neue/nicht gelesene Nachricht und „true“ für bereits gelesene Nachrichten
 
-   Die vollständige Liste der Flags finden Sie unter [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html).
+   Eine vollständige Liste der Flags finden Sie unter [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html) .
 
    **IMAP-Beispiele:**
 
