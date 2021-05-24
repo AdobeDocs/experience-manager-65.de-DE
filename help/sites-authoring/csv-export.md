@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 7be506fb-f5c4-48dd-bec2-a3ea3ea19397
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 317093bce043ff2aaa5b5ceb8499f057fa9fa24b
+exl-id: 18910143-f2f2-4cfe-88b9-651df90d9cb9
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 86%
 
 ---
-
 
 # Exportieren in CSV  {#export-to-csv}
 
@@ -42,7 +41,7 @@ Mit **CSV-Bericht erstellen** können Sie Informationen über Ihre Seiten in ein
       * Workflow
    * Übersetzung
       * Übersetzt
-   * Analyse
+   * Analytics
       * Seitenansichten
       * Individuelle Besucher
       * Zeit auf Seite
@@ -56,7 +55,7 @@ Die resultierende Datei `export.csv` kann in Excel (oder einer anderen kompatibl
 
 ![etc-01](assets/etc-01.png)
 
-Die Option zum Erstellen eines **CSV-Berichts** ist verfügbar, wenn Sie in der Konsole **Sites** (in Liste-Ansicht) navigieren: Es handelt sich um eine Option im Dropdownmenü **Erstellen**:
+Die Option **CSV-Bericht** ist verfügbar, wenn Sie die Konsole **Sites** (in der Listenansicht) durchsuchen: Es handelt sich um eine Option des Dropdown-Menüs **Erstellen**:
 
 ![etc-02](assets/etc-02.png)
 
