@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
-translation-type: tm+mt
-source-git-commit: 530b1c3c1922eb10622888804a603cc82b3eb3aa
+exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 79%
 
 ---
-
 
 # Ihr Posteingang {#your-inbox}
 
@@ -46,11 +45,9 @@ Sie erhalten diese Benachrichtigung in Ihrem eigenen Posteingang, in dem Sie die
 >Weitere Informationen zu den Elementtypen finden Sie außerdem unter:
 >
 >* [Projekte](/help/sites-authoring/touch-ui-managing-projects.md)
->* [Projekte – Arbeiten mit Aufgaben](/help/sites-authoring/task-content.md)
->* [Workflows](/help/sites-authoring/workflows.md)
->* [Formulare](/help/forms/home.md)
-
->
+* [Projekte – Arbeiten mit Aufgaben](/help/sites-authoring/task-content.md)
+* [Workflows](/help/sites-authoring/workflows.md)
+* [Formulare](/help/forms/home.md)
 
 
 
@@ -61,10 +58,9 @@ In sämtlichen Konsolen wird in der Kopfzeile die Anzahl der aktuell in Ihrem Po
 ![wf-80](assets/wf-80.png)
 
 >[!NOTE]
->
->Bestimmte Aktionen werden auch in der [Kartenansicht der jeweiligen Ressource](/help/sites-authoring/basic-handling.md#card-view) angezeigt.
+Bestimmte Aktionen werden auch in der [Kartenansicht der jeweiligen Ressource](/help/sites-authoring/basic-handling.md#card-view) angezeigt.
 
-## Standardmäßige Verwaltungsaufgaben  {#out-of-the-box-administrative-tasks}
+## Standardmäßige Verwaltungsaufgaben   {#out-of-the-box-administrative-tasks}
 
 AEM beinhaltet vier vorgefertigte Aufgaben, die standardmäßig der Administrator-Benutzergruppe zugewiesen sind.
 
@@ -73,7 +69,7 @@ AEM beinhaltet vier vorgefertigte Aufgaben, die standardmäßig der Administrato
 * Aggregierte Sammlung von Nutzungsstatistiken aktivieren
 * [HTTPS konfigurieren](/help/sites-administering/ssl-by-default.md)
 
-## Öffnen des Posteingangs     {#opening-the-inbox}
+## Öffnen des Posteingangs      {#opening-the-inbox}
 
 So öffnen Sie den Benachrichtigungs-Posteingang in AEM:
 
@@ -87,8 +83,7 @@ So öffnen Sie den Benachrichtigungs-Posteingang in AEM:
    ![wf-79](assets/inbox-list-view.png)
 
 >[!NOTE]
->
->Der Posteingang fungiert als Konsole. Verwenden Sie daher die [globale Navigation](/help/sites-authoring/basic-handling.md#global-navigation) oder die [Suche](/help/sites-authoring/search.md), um zu einer anderen Position zu navigieren, wenn Sie fertig sind.
+Der Posteingang fungiert als Konsole. Verwenden Sie daher die [globale Navigation](/help/sites-authoring/basic-handling.md#global-navigation) oder die [Suche](/help/sites-authoring/search.md), um zu einer anderen Position zu navigieren, wenn Sie fertig sind.
 
 ### Posteingang – Listenansicht {#inbox-list-view}
 
@@ -136,41 +131,40 @@ Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
 
    ![wf-83](assets/inbox-settings.png)
 
-### Posteingang - Administratorsteuerung {#inbox-admin-control}
+### Posteingang - Admin Control {#inbox-admin-control}
 
-Mit der Option &quot;Admin-Steuerung&quot;können Administratoren:
+Die Option Admin Control ermöglicht Administratoren Folgendes:
 
-* Anpassen der AEM-Posteingangsspalten
+* Anpassen der Spalten AEM Posteingangs
 
 * Anpassen von Kopfzeilentext und Logo
 
-* Steuern der Anzeige der in der Kopfzeile verfügbaren Navigationslinks
+* Steuern der Anzeige von Navigationslinks in der Kopfzeile
 
-Die Option &quot;Admin-Steuerung&quot;ist nur für die Mitglieder der Gruppe `administrators` oder `workflow-administrators` sichtbar.
+Die Option &quot;Admin-Kontrolle&quot;ist nur für die Mitglieder der Gruppe `administrators` oder `workflow-administrators` sichtbar.
 
-* **Spaltenanpassung**: Passen Sie einen AEM-Posteingang an, um den Standardtitel einer Spalte zu ändern, die Position einer Spalte neu anzuordnen und zusätzliche Spalten anzuzeigen, die auf den Daten eines Workflows basieren.
-   * **hinzufügen Spalte**: Wählen Sie eine Spalte aus, die in AEM Posteingang hinzugefügt werden soll.
-   * **Spalte** bearbeiten: Bewegen Sie den Mauszeiger über den Spaltentitel und tippen Sie auf  ![](assets/edit.svg) Bearbeiten, um einen Spaltenanzeigenamen einzugeben.
-   * **Spalte** löschen: Tippen Sie auf das  ![](assets/delete_updated.svg) Löschen-Symbol, um die Spalte aus AEM Posteingang zu löschen.
-   * **Spalte** verschieben: Ziehen Sie das  ![](assets/move_updated.svg) moveicon, um eine Spalte in AEM Posteingang an eine neue Position zu verschieben.
+* **Spaltenanpassung**: Passen Sie einen AEM Posteingang an, um den Standardtitel einer Spalte zu ändern, die Position einer Spalte neu anzuordnen und zusätzliche Spalten basierend auf den Daten eines Workflows anzuzeigen.
+   * **Spalte hinzufügen**: Wählen Sie eine Spalte aus, die AEM Posteingang hinzugefügt werden soll.
+   * **Spalte** bearbeiten: Bewegen Sie den Mauszeiger über den Spaltentitel und tippen Sie auf  ![](assets/edit.svg) Bearbeiten , um einen Anzeigenamen für die Spalte einzugeben.
+   * **Spalte löschen**: Tippen Sie auf das  ![](assets/delete_updated.svg) Löschsymbol, um die Spalte aus AEM Posteingang zu löschen.
+   * **Spalte verschieben**: Ziehen Sie das  ![](assets/move_updated.svg) Maussymbol, um eine Spalte in AEM Posteingang an eine neue Position zu verschieben.
 
    ![admin-control](assets/admin-control-column-customize.png)
 
 * **Branding-Anpassung**
 
-   * **Kopfzeilentext anpassen:** Geben Sie den Text an, der in der Kopfzeile angezeigt werden soll, um den Standardtext von  **Adobe Experience** Manager zu ersetzen.
+   * **Kopfzeilentext anpassen:** Geben Sie den Text an, der in der Kopfzeile angezeigt werden soll, um den standardmäßigen  **Adobe Experience** Manager-Text zu ersetzen.
 
-   * **Logo anpassen:** Geben Sie das Bild an, das in der Kopfzeile als Logo angezeigt werden soll. Laden Sie ein Bild in Digital Asset Management (DAM) hoch und verweisen Sie auf dieses Bild im Feld.
+   * **Logo anpassen:** Geben Sie das in der Kopfzeile anzuzeigende Bild als Logo an. Laden Sie ein Bild in Digital Asset Management (DAM) hoch und verweisen Sie im Feld auf dieses Bild.
 
 * **Benutzernavigation**
-   * **Navigationsoptionen ausblenden:** Wählen Sie diese Option, um die in der Kopfzeile verfügbaren Navigationsoptionen auszublenden. Zu den Navigationsoptionen gehören Links zu anderen Lösungen, Hilfe-Links und die Authoring-Optionen, die beim Tippen auf Adobe Experience Manager-Logo oder -Text verfügbar sind.
-* **Speichern:** Tippen/klicken Sie auf diese Option, um die Einstellungen zu speichern.
+   * **Navigationsoptionen ausblenden:** Wählen Sie diese Option, um die in der Kopfzeile verfügbaren Navigationsoptionen auszublenden. Zu den Navigationsoptionen gehören Links zu anderen Lösungen, Hilfe-Link und die Bearbeitungsoptionen, die beim Tippen auf Adobe Experience Manager-Logo oder -Text verfügbar sind.
+* **Speichern:**  Tippen/klicken Sie auf diese Option, um die Einstellungen zu speichern.
 
 ## Anwenden von Aktionen auf ein Element {#taking-action-on-an-item}
 
 >[!NOTE]
->
->Obwohl es möglich ist, mehr als ein Element auszuwählen, können Aktionen immer nur für ein Element zur gleichen Zeit durchgeführt werden.
+Obwohl es möglich ist, mehr als ein Element auszuwählen, können Aktionen immer nur für ein Element zur gleichen Zeit durchgeführt werden.
 
 
 1. Um eine Aktion auf ein Element anzuwenden, wählen Sie die Miniatur des gewünschten Elements aus. In der Symbolleiste werden Symbole für die Aktionen angezeigt, die auf das Element angewendet werden können.
@@ -191,10 +185,8 @@ Die Option &quot;Admin-Steuerung&quot;ist nur für die Mitglieder der Gruppe `ad
    * Erstellen eines Projekts auf Basis des Elements.
 
    >[!NOTE]
-   >
-   >Weitere Informationen finden Sie unter:
-   >
-   >* Workflow-Elemente – [Teilnehmen an Workflows](/help/sites-authoring/workflows-participating.md)
+   Weitere Informationen finden Sie unter:
+   * Workflow-Elemente – [Teilnehmen an Workflows](/help/sites-authoring/workflows-participating.md)
 
 
 1. Abhängig vom ausgewählten Element wird eine bestimmte Aktion gestartet, z. B.:
@@ -249,10 +241,8 @@ Bei einigen Aufgaben besteht die Möglichkeit, auf deren Basis ein [Projekt](/he
 1. Wählen Sie die gewünschte Aufgabe aus, indem Sie auf die Miniatur tippen/klicken.
 
    >[!NOTE]
-   >
-   >Für die Erstellung eines Projekts können nur Aufgaben verwendet werden, die im **Posteingang** über die Option **Erstellen** erstellt wurden.
-   >
-   >Arbeitselemente (aus einem Workflow) können nicht für die Erstellung eines Projekts verwendet werden.
+   Für die Erstellung eines Projekts können nur Aufgaben verwendet werden, die im **Posteingang** über die Option **Erstellen** erstellt wurden.
+   Arbeitselemente (aus einem Workflow) können nicht für die Erstellung eines Projekts verwendet werden.
 
 1. Wählen Sie **Projekt erstellen** aus der Symbolleiste aus, um den Assistenten zu öffnen.
 1. Wählen Sie die gewünschte Vorlage und klicken Sie auf **Weiter**.
@@ -269,8 +259,7 @@ Bei einigen Aufgaben besteht die Möglichkeit, auf deren Basis ein [Projekt](/he
 
       * **Name**
    >[!NOTE]
-   >
-   >Ausführliche Informationen hierzu finden Sie unter [Erstellen eines Projekts](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project).
+   Ausführliche Informationen hierzu finden Sie unter [Erstellen eines Projekts](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project).
 
 1. Klicken Sie auf **Erstellen**, um die Aktion zu bestätigen.
 
@@ -289,6 +278,4 @@ Sie können die aufgeführten Elemente filtern:
    ![wf-89](assets/wf-89.png)
 
    >[!NOTE]
-   >
-   >Bei Verwendung der [Listenansicht](#inbox-list-view) können Sie außerdem über die [Anzeigeeinstellungen](#inbox-view-settings) die Sortierreihenfolge festlegen.
-
+   Bei Verwendung der [Listenansicht](#inbox-list-view) können Sie außerdem über die [Anzeigeeinstellungen](#inbox-view-settings) die Sortierreihenfolge festlegen.
