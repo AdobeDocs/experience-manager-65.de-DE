@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 2e408acb-3802-4837-8619-688cfc3abfa7
-translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+exl-id: 9e171b62-8efb-4143-a202-ba6555658d4b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 79%
 
 ---
-
 
 # Anpassung der Willkommens-Konsole (klassische Benutzeroberfläche){#customizing-the-welcome-console-classic-ui}
 
@@ -35,7 +34,7 @@ Sie können die sichtbaren Links konfigurieren. Sie können diese Konfiguration 
 * [Hauptkonsolen](#links-in-main-console-left-pane) – Links in der Hauptkonsole (linker Bereich)
 * [Ressourcen, Dokumentation und Verweis, Eigenschaften](#links-in-sidebar-right-pane) – Links in der Seitenleiste (rechter Bereich)
 
-## Links in der Hauptkonsole (linker Bereich) {#links-in-main-console-left-pane}
+## Links in der Hauptkonsole (linker Bereich)  {#links-in-main-console-left-pane}
 
 Dies sind die Hauptkonsolen von AEM.
 
@@ -63,7 +62,7 @@ Berechtigungen auf Knotenebene legen fest, ob der Link sichtbar ist. Die betreff
 
 Beispiel:
 
-* Um den Zugriff auf **Tools** einzuschränken, entfernen Sie den Lesezugriff von
+* Um den Zugriff auf **Tools** zu beschränken, entfernen Sie den Lesezugriff von
 
    `/libs/wcm/core/content/misc`
 
@@ -164,15 +163,15 @@ Drei Abschnitte werden standardmäßig bereitgestellt (leicht getrennt):
 
 Sie können einen Link für bestimmte Benutzer oder Gruppen ausblenden, indem Sie den Lesezugriff auf die Knoten entfernen, die diesen Link repräsentieren.
 
-* Ressourcen - den Zugriff auf
+* Ressourcen - Entfernen des Zugriffs auf:
 
    `/libs/cq/core/content/welcome/resources/<link-target>`
 
-* Dokumente - den Zugriff auf
+* Dokumente - Entfernen Sie den Zugriff auf:
 
    `/libs/cq/core/content/welcome/docs/<link-target>`
 
-* Funktionen - den Zugriff auf:
+* Funktionen - Entfernen Sie den Zugriff auf:
 
    `/libs/cq/core/content/welcome/features/<link-target>`
 
@@ -182,7 +181,7 @@ Beispiel:
 
    `/libs/cq/core/content/welcome/resources/reports`
 
-* Um den Link zu **Paketen** zu entfernen, entfernen Sie den Lesezugriff von
+* Um den Link zu **Packages** zu entfernen, entfernen Sie den Lesezugriff von
 
    `/libs/cq/core/content/welcome/features/packages`
 
@@ -190,9 +189,9 @@ Im [Abschnitt „Sicherheit“](/help/sites-administering/security.md) finden Si
 
 ### Link-Auswahlmechanismus  {#link-selection-mechanism}
 
-In `/libs/cq/core/components/welcome/welcome.jsp` wird [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html) verwendet, das eine Abfrage auf Knoten ausführt, die die Eigenschaft haben:
+In `/libs/cq/core/components/welcome/welcome.jsp` wird [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html) verwendet, was eine Abfrage für Knoten mit der Eigenschaft ausführt:
 
-* `jcr:mixinTypes` mit dem Wert:  `cq:Console`
+* `jcr:mixinTypes` durch den Wert:  `cq:Console`
 
 >[!NOTE]
 >
@@ -210,7 +209,6 @@ Wenn ein Benutzer oder eine Gruppe keine Leseberechtigungen für einen Knoten mi
 
 Mit dem [Link-Auswahlmechanismus](#link-selection-mechanism) können Sie Ihr selbst definiertes Element zur Linkliste hinzufügen.
 
-hinzufügen Sie Ihr benutzerdefiniertes Element zur Liste, indem Sie die `cq:Console`-Mischung zu Ihrem Widget oder Ihrer Ressource hinzufügen. Definieren Sie dazu die Eigenschaft:
+Fügen Sie Ihr benutzerdefiniertes Element zur Liste hinzu, indem Sie das Mixin `cq:Console` zu Ihrem Widget oder Ihrer Ressource hinzufügen. Definieren Sie dazu die Eigenschaft:
 
-* `jcr:mixinTypes` mit dem Wert:  `cq:Console`
-
+* `jcr:mixinTypes` durch den Wert:  `cq:Console`
