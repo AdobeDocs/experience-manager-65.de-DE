@@ -8,15 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 42df2db3-4d3c-4954-a03e-221e2f548305
-feature: Language Copy
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Sprachkopie
+exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 85%
 
 ---
-
 
 # Verbesserungen an der Übersetzung{#translation-enhancements}
 
@@ -28,7 +27,7 @@ Es wurden Optionen zur Verbesserung der Produktivität bei der Arbeit mit Übers
 
 1. Klicken oder tippen Sie in Ihrem Übersetzungsprojekt unten auf der Kachel **Zusammenfassung der Übersetzung** auf die Auslassungspunkte.
 
-   ![screen_shot_2018-04-19at22622](assets/screen_shot_2018-04-19at222622.jpg)
+   ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
 1. Wechseln Sie zur Registerkarte **Erweitert**. Unten können Sie die Option **Übersetzungsstarts automatisch hervorheben** wählen.
 
@@ -48,9 +47,9 @@ Es ist möglich, mehrere Zielsprachen in einem Übersetzungsprojekt zu konfiguri
 
 1. Klicken oder tippen Sie in Ihrem Übersetzungsprojekt unten auf der Kachel **Zusammenfassung der Übersetzung** auf die Punkte.
 
-   ![screen_shot_2018-04-19at22622](assets/screen_shot_2018-04-19at222622.jpg)
+   ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
-1. Wechseln Sie zur Registerkarte **Erweitert**. Unter **Zielgruppe** können Sie mehrere Sprachen hinzufügen.
+1. Wechseln Sie zur Registerkarte **Erweitert**. Sie können unter **Zielsprache** mehrere Sprachen hinzufügen.
 
    ![screen_shot_2018-04-22at212601](assets/screen_shot_2018-04-22at212601.jpg)
 
@@ -66,11 +65,11 @@ Es ist möglich, mehrere Zielsprachen in einem Übersetzungsprojekt zu konfiguri
 
 Für manuelle Bearbeitungen von übersetzten Inhalten kann wieder eine Synchronisierung mit dem System für die Übersetzungsverwaltung (Translation Management System, TMS) durchgeführt werden, um das Translation Memory zu trainieren.
 
-1. Wählen Sie in der Site-Konsole nach dem Aktualisieren des Textinhalts auf einer übersetzten Seite **Translation Memory** aktualisieren.
+1. Wählen Sie in der Sites-Konsole nach der Aktualisierung des Textinhalts auf einer übersetzten Seite **Translation Memory aktualisieren**.
 
    ![screen_shot_2018-04-22at234430](assets/screen_shot_2018-04-22at234430.jpg)
 
-1. In einer Listenansicht werden die Quelle und die Übersetzung für jede bearbeitete Textkomponente nebeneinander verglichen. Wählen Sie aus, welche Übersetzungsaktualisierungen mit dem Translation Memory synchronisiert werden sollen, und wählen Sie **Speicher aktualisieren**.
+1. In einer Listenansicht werden die Quelle und die Übersetzung für jede bearbeitete Textkomponente nebeneinander verglichen. Wählen Sie aus, welche Übersetzungsaktualisierungen mit dem Translation Memory synchronisiert werden sollen, und wählen Sie **Speicher aktualisieren** aus.
 
    ![screen_shot_2018-04-22at235024](assets/screen_shot_2018-04-22at235024.jpg)
 
@@ -118,4 +117,3 @@ In der Sites-Listenansicht können Sie jetzt eine Eigenschaft auswählen, mit de
 Die Spalte **Übersetzt** mit dem Übersetzungsstatus der Seiten wird angezeigt.
 
 ![screen_shot_2018-04-23at133821](assets/screen_shot_2018-04-23at133821.jpg)
-
