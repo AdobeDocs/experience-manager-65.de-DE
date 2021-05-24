@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
-translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+exl-id: 1eed754e-9a7d-4b65-a929-757fc962614d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 99%
 
 ---
-
 
 # Verwenden des Sling Resource Merger in AEM    {#using-the-sling-resource-merger-in-aem}
 
@@ -63,7 +62,7 @@ Die Ziele der Verwendung des Sling Resource Merger in AEM lauten wie folgt:
 >
 >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
 >
->1. Erstellen Sie das erforderliche Element (d. h. wie es in `/libs` vorhanden ist) unter `/apps` neu
+>1. Erstellen Sie das erforderliche Element (d. h. wie es in `/libs` vorhanden ist) unter `/apps` neu.
    >
    >
 1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
@@ -269,9 +268,8 @@ Einige Beispiele sind enthalten:
 * Überlagerung:
 
    * [Anpassen der Konsolen](/help/sites-developing/customizing-consoles-touch.md)
-   * [Anpassen der Seitenbearbeitung](/help/sites-developing/customizing-page-authoring-touch.md)
+   * [Anpassung des Seiten-Authorings](/help/sites-developing/customizing-page-authoring-touch.md)
 
 * Überschreiben:
 
-   * [Konfigurieren von Seiteneigenschaften](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)
-
+   * [Konfiguration von Seiteneigenschaften](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)
