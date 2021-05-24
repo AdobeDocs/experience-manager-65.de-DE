@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: f3781d9a-421a-446e-8b49-40744b9ef58e
-translation-type: tm+mt
-source-git-commit: 3cbbad3ce9d93a353f48fc3206df989a8bf1991a
+exl-id: 01e9ab67-15e2-4bc4-9b8f-0c84bcd56862
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '969'
 ht-degree: 66%
 
 ---
-
 
 # Beheben von Serialisierungsproblemen in AEM{#mitigating-serialization-issues-in-aem}
 
@@ -26,11 +25,11 @@ ht-degree: 66%
 
 Bei der in diesem Paket enthaltenen Agent-JAR-Datei handelt es sich um die modifizierte NotSoSerial-Distribution von Adobe.
 
-NotSoSerial ist eine Lösung auf Java-Ebene für ein Problem auf Java-Ebene und nicht AEM-spezifisch. Sie fügt einem Deserialisierungsversuch für ein Objekt eine Preflight-Prüfung hinzu. Mit dieser Prüfung wird ein Klassenname gegen eine Firewall-ähnliche Zulassungsliste und/oder Blockierungsliste getestet. Aufgrund der begrenzten Anzahl von Klassen in der Standardklasse ist es unwahrscheinlich, dass sich dies auf Ihre Blockierungslisten oder Ihren Code auswirkt.
+NotSoSerial ist eine Lösung auf Java-Ebene für ein Problem auf Java-Ebene und nicht AEM-spezifisch. Sie fügt einem Deserialisierungsversuch für ein Objekt eine Preflight-Prüfung hinzu. Bei dieser Prüfung wird ein Klassenname mit einer Zulassungsliste und/oder Blockierungsliste im Firewall-Stil getestet. Aufgrund der begrenzten Anzahl von Klassen in der Standard-Blockierungsliste wird dies wahrscheinlich keine Auswirkungen auf Ihre Systeme oder Ihren Code haben.
 
-Standardmäßig führt der Agent eine Blockierungsliste-Prüfung für aktuelle bekannte verwundbare Klassen durch. Diese Blockierungsliste soll Sie vor der aktuellen Liste von Exploits schützen, die diese Art von Verwundbarkeit nutzen.
+Standardmäßig führt der Agent eine Blockierungsliste-Prüfung für aktuelle bekannte anfällige Klassen durch. Diese Blockierungsliste soll Sie vor der aktuellen Liste der Exploits schützen, die diese Art von Verwundbarkeit nutzen.
 
-Die Blockierungsliste und Zulassungsliste können gemäß den Anweisungen im Abschnitt [Konfigurieren des Agenten](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) dieses Artikels konfiguriert werden.
+Die Blockierungsliste und Zulassungsliste können konfiguriert werden, indem Sie die Anweisungen im Abschnitt [Konfigurieren des Agenten](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) dieses Artikels befolgen.
 
 Der Agent unterstützt Sie bei der Behandlung der neuesten bekannten Klassen mit Sicherheitsrisiko. Wenn Ihr Projekt nicht vertrauenswürdige Daten deserialisiert, ist es unter Umständen weiterhin anfällig für Denial-of-Service-Angriffe, Out-of-Memory-Angriffe und bislang noch unbekannte Deserialisierungs-Exploits.
 
@@ -44,10 +43,10 @@ Adobe unterstützt offiziell Java 6, 7 und 8. Nach unserem Kenntnisstand unter
 
 1. Installieren Sie das Bundle **com.adobe.cq.cq-serialization-tester**.
 
-1. Wechseln Sie zur Bundle Web Console unter `https://server:port/system/console/bundles`
+1. Wechseln Sie zur Bundle-Web-Konsole unter `https://server:port/system/console/bundles`
 1. Suchen Sie nach dem Serialisierungsbundle und starten Sie es. Daraufhin wird der NotSoSerial-Agent automatisch dynamisch geladen.
 
-## Installieren des Agents auf Anwendungsservern {#installing-the-agent-on-application-servers}
+## Installieren des Agents auf Anwendungsservern  {#installing-the-agent-on-application-servers}
 
 Der NotSoSerial-Agent ist nicht in der Standardverteilung von AEM für Anwendungsserver enthalten. Sie können ihn jedoch aus der AEM-JAR-Distribution extrahieren und mit Ihrer Anwendungsservereinrichtung verwenden:
 
@@ -57,9 +56,9 @@ Der NotSoSerial-Agent ist nicht in der Standardverteilung von AEM für Anwendung
    java -jar aem-quickstart-6.2.0.jar -unpack
    ```
 
-1. Wechseln Sie zum Speicherort des neu entpackten AEM Schnellstarts und kopieren Sie den Ordner `crx-quickstart/opt/notsoserial/` in den Ordner `crx-quickstart` der Installation des AEM Anwendungsservers.
+1. Wechseln Sie zum Speicherort des neu entpackten AEM Schnellstarts und kopieren Sie den Ordner `crx-quickstart/opt/notsoserial/` in den Ordner `crx-quickstart` der Installation des AEM-Anwendungsservers.
 
-1. Ändern Sie das Eigentumsrecht an `/opt` in den Benutzer, der den Server ausführt:
+1. Ändern Sie das Eigentum von `/opt` in den Benutzer, der den Server ausführt:
 
    ```shell
    chown -R opt <user running the server>
@@ -69,11 +68,11 @@ Der NotSoSerial-Agent ist nicht in der Standardverteilung von AEM für Anwendung
 
 ## Konfigurieren des Agents  {#configuring-the-agent}
 
-Die Standardkonfiguration ist für die meisten Installationen ausreichend. Dies umfasst eine Blockierungsliste bekannter, durch entfernte Ausführung verwundbarer Klassen und eine Zulassungsliste von Paketen, bei denen die Deserialisierung vertrauenswürdiger Daten relativ sicher sein sollte.
+Die Standardkonfiguration ist für die meisten Installationen ausreichend. Dies umfasst eine Blockierungsliste bekannter anfälliger Klassen für die Remote-Ausführung und eine Zulassungsliste von Paketen, bei denen die Deserialisierung vertrauenswürdiger Daten relativ sicher sein sollte.
 
 Die Firewallkonfiguration ist dynamisch und kann jederzeit wie folgt geändert werden:
 
-1. Wechseln zur Webkonsole unter `https://server:port/system/console/configMgr`
+1. Wechseln Sie zur Web-Konsole unter `https://server:port/system/console/configMgr` .
 1. Suchen Sie nach **Deserialization Firewall Configuration** und klicken Sie darauf.
 
    >[!NOTE]
@@ -85,15 +84,15 @@ Die Firewallkonfiguration ist dynamisch und kann jederzeit wie folgt geändert w
 
 Diese Konfiguration enthält die Protokollierung von Zulassungsliste, Blockierungsliste und Deserialisierung.
 
-**Listen zulassen**
+**Zulassungsauflistung**
 
-Im Abschnitt Listen zulassen sind dies Klassen oder Paket-Präfixe, die zur Deserialisierung zugelassen werden. Beachten Sie, dass Sie, wenn Sie eigene Klassen deserialisieren, entweder die Klassen oder Pakete zu dieser Zulassungsliste hinzufügen müssen.
+Im Abschnitt zur Zulassungsauflistung sind dies Klassen oder Paketpräfixe, die zur Deserialisierung zugelassen werden. Beachten Sie, dass Sie, wenn Sie eigene Klassen deserialisieren, entweder die Klassen oder Pakete zu dieser Zulassungsliste hinzufügen müssen.
 
-**Blockliste**
+**Blockierungsauflistung**
 
-Im Abschnitt Blockauflistungen finden Sie Klassen, die niemals deserialisiert werden dürfen. Standardmäßig umfasst die Liste nur Klassen, die für Remoteausführungsangriffe anfällig sind. Die Blockierungsliste wird vor allen zulässigen Einträgen angewendet.
+Im Abschnitt zur Blockierungsauflistung finden Sie Klassen, die nie zur Deserialisierung zugelassen werden. Standardmäßig umfasst die Liste nur Klassen, die für Remoteausführungsangriffe anfällig sind. Die Blockierungsliste wird vor allen in der Zulassungsliste aufgeführten Einträgen angewendet.
 
-**Diagnoseprotokollierung**
+**Diagnostische Protokollierung**
 
 Im Abschnitt zur Diagnoseprotokollierung können Sie mehrere Optionen auswählen, die protokolliert werden sollen, wenn eine Deserialisierung stattfindet. Diese werden nur bei der ersten Verwendung protokolliert. Bei erneuter Verwendung findet keine erneute Protokollierung statt.
 
@@ -113,7 +112,7 @@ Weitere Informationen zum Behandeln von Problemen mit dem Agent finden Sie weite
 
 >[!NOTE]
 >
->Wenn Sie der Zulassungsliste `org.apache.commons.collections.functors` hinzufügen, schlägt die Gesundheitsprüfung immer fehl.
+>Wenn Sie der Zulassungsliste `org.apache.commons.collections.functors` hinzufügen, schlägt die Konsistenzprüfung immer fehl.
 
 ## Behandeln von Fehlern beim dynamischen Laden des Agents {#handling-errors-with-dynamic-agent-loading}
 
@@ -133,7 +132,7 @@ Gehen Sie zum manuellen Laden des Agents wie folgt vor:
 
    >[!NOTE]
    >
-   >Die Distribution der Adobe der NotSoSerial Agent JAR finden Sie im Ordner `crx-quickstart/opt/notsoserial/` Ihrer AEM.
+   >Die Adobe-Distribution der NotSoSerial Agent-JAR finden Sie im Ordner `crx-quickstart/opt/notsoserial/` Ihrer AEM.
 
 1. Beenden Sie die JVM-Instanz und starten Sie sie neu.
 
