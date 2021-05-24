@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 39546c0a-b72f-42df-859b-98428ee0d5fb
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 89%
 
 ---
-
 
 # Datenmodellierung – Modell von David Nuescheler{#data-modeling-david-nuescheler-s-model}
 
@@ -26,7 +25,7 @@ Bei den folgenden Informationen handelt es sich um Anregungen und Kommentare von
 
 David Nuescheler war Mitbegründer und CTO von Day Software AG, einem führenden Anbieter von Content-Management- und Content-Infrastruktur-Software, der im Jahr 2010 von Adobe übernommen wurde. Nuescheler ist nun Fellow und VP des Bereichs Enterprise Technology bei Adobe und leitet die Entwicklung von JSR-170, der Java Content Repository-API (JCR), die den Technologiestandard für Content-Management bildet.
 
-Weitere Aktualisierungen finden Sie unter [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
+Weitere Aktualisierungen finden Sie auch unter [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
 ## Einführung von David Nuescheler {#introduction-from-david}
 
@@ -42,7 +41,7 @@ Ich möchte diese Erfahrungslücken schließen, indem ich meine eigenen Ideen zu
 
 ## Sieben einfache Regeln {#seven-simple-rules}
 
-### Regel Nr. 1: Daten zuerst, Struktur später. Zumindest gegebenenfalls. {#rule-data-first-structure-later-maybe}
+### Regel 1: Daten zuerst, Struktur später. Zumindest gegebenenfalls. {#rule-data-first-structure-later-maybe}
 
 #### Erklärung {#explanation-1}
 
@@ -94,17 +93,17 @@ Ich würde ein einfaches Blogging-System wie folgt modellieren. Dabei mache ich 
 /content/myblog/comments/iphone_shipping/i_like_it_too/i_hate_it
 ```
 
-Ich denke, eines der Dinge, die sich zeigen, ist, dass wir alle die Struktur des Inhalts auf der Grundlage des Beispiels ohne weitere Erklärungen verstehen.
+Ich denke, dass eines der Dinge, die sichtbar werden, ist, dass wir alle die Struktur des Inhalts verstehen, basierend auf dem Beispiel ohne weitere Erklärungen.
 
 Überraschend ist möglicherweise zunächst, dass ich die „comments“ nicht mit dem „post“ speichere, was auf die Zugriffskontrolle zurückzuführen ist, die ich auf angemessen hierarchische Weise anwenden möchte.
 
 Mit dem obigen Content-Modell kann ich es einem anonymen Benutzer ohne Weiteres gestatten, Kommentare zu erstellen, ohne dabei den Schreibschutz für den Rest des Workspace für diesen Benutzer aufzuheben.
 
-### 3. Regel: Workspaces sind für „clone()“, „merge()“ und „update()“ vorgesehen. {#rule-workspaces-are-for-clone-merge-and-update}
+### 3. Regel: Workspaces sind für „clone()“, „merge()“ und „update()“ vorgesehen.  {#rule-workspaces-are-for-clone-merge-and-update}
 
 #### Erklärung {#explanation-3}
 
-Wenn Sie die Methoden `clone()`, `merge()` oder `update()` in Ihrer Anwendung nicht verwenden, ist wahrscheinlich eine einzelne Arbeitsfläche der richtige Weg.
+Wenn Sie die Methoden `clone()`, `merge()` oder `update()` in Ihrer Anwendung nicht verwenden, ist wahrscheinlich ein einziger Arbeitsbereich der richtige Weg.
 
 „Korrespondierende Knoten“ sind ein in den JCR-Spezifikationen definiertes Konzept. Im Wesentlichen handelt es sich dabei um Knoten, die denselben Inhalt in verschiedenen sogenannten Workspaces repräsentieren.
 
@@ -173,17 +172,17 @@ Also würde ich diese Verweise entweder über schwache Referenzen modellieren (i
 
 Möglicherweise gibt es Nutzungsszenarien, in denen ein System wirklich nicht funktionieren kann, solange ein Verweis nicht zugeordnet wird, aber ein praktisches Beispiel fällt mir dazu nicht ein.
 
-### Regel Nr. 6: Dateien sind Dateien. {#rule-files-are-files}
+### Regel 6: Dateien sind Dateien. {#rule-files-are-files}
 
 #### Erklärung {#explanation-6}
 
-Wenn ein Inhaltsmodell etwas offenbart, das auch remote *riecht nach* wie einer Datei oder einem Ordner, den ich zu verwenden (oder zu erweitern) `nt:file`, `nt:folder` und `nt:resource` versuche.
+Wenn ein Inhaltsmodell etwas offenbart, das *sogar remote* wie eine Datei oder einen Ordner riecht, versuche ich `nt:file`, `nt:folder` und `nt:resource` zu verwenden (oder zu erweitern).
 
 Meiner Erfahrung nach lassen viele generische Anwendungen implizit die Interaktion mit „nt:folder“ und „nt:files“ zu und wissen, wie sie diese Ereignisse verarbeiten und anzeigen müssen, wenn sie zusätzliche Meta-Informationen aufweisen. Beispielsweise wird eine direkte Interaktion mit Dateiserverimplementierungen wie CIFS oder WebDAV, die auf JCR aufsetzen, implizit.
 
-Als gute Faustregel könnte man Folgendes verwenden: Wenn Sie den Dateinamen und den mime-type speichern müssen, ist `nt:file`/ `nt:resource` eine sehr gute Übereinstimmung. Wenn Sie möglicherweise mehrere „files“ haben, bietet sich „nt:folder“ für ihre Speicherung an.
+Als Faustregel kann man meines Erachtens Folgendes verwenden: Wenn Sie den Dateinamen und den MIME-Typ speichern müssen, ist `nt:file`/ `nt:resource` eine sehr gute Übereinstimmung. Wenn Sie möglicherweise mehrere „files“ haben, bietet sich „nt:folder“ für ihre Speicherung an.
 
-Wenn Sie Meta-Informationen für Ihre Ressource hinzufügen müssen, beispielsweise die Eigenschaft „author“ oder „description“, erweitern Sie `nt:resource` und nicht `nt:file`. Ich kann nt:file selten erweitern und `nt:resource` häufig erweitern.
+Wenn Sie Meta-Informationen für Ihre Ressource hinzufügen müssen, beispielsweise die Eigenschaft „author“ oder „description“, erweitern Sie `nt:resource` und nicht `nt:file`. Ich erweitere selten nt:file und erweitere häufig `nt:resource`.
 
 #### Beispiel {#example-6}
 
@@ -215,7 +214,7 @@ Es ist zwar richtig, dass einige Knoten während ihres gesamten Lebenszyklus ein
 
 Beachten Sie außerdem, dass Elemente durch einen Pfad identifiziert werden können. Und auch wenn in einem Unix-Dateisystem Symlinks für die meisten Benutzer sinnvoller als Hardlinks sind, bietet sich für die meisten Anwendungen ein Pfad zum Verweisen auf einen Zielknoten an.
 
-Wichtiger noch ist, dass **mix**:referenzierbar ist. Dies bedeutet, dass es zu dem Zeitpunkt auf einen Knoten angewendet werden kann, zu dem Sie eigentlich darauf verweisen müssen.
+Wichtiger noch: Es ist **mix**:referenceable, was bedeutet, dass es zu einem Zeitpunkt auf einen Knoten angewendet werden kann, zu dem Sie tatsächlich darauf verweisen müssen.
 
 Wenn Sie also beispielsweise auf einen Knoten vom Typ „Document“ verweisen können möchten, bedeutet das nicht, dass Ihr Knotentyp „Document“ statisch von „mix:referenceable“ erweitert werden muss, da er dynamisch zu jeder Instanz von „Document“ hinzugefügt werden kann.
 
@@ -245,4 +244,3 @@ anstelle von:
 -- filename
 + resource (nt:resource)
 ```
-
