@@ -10,18 +10,17 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 81ff6f6f-11b3-4f8e-80e6-b3e104158394
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 18dcbf04bd88f63335ef36e2ec7ea81835e11b51
+exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 88%
 
 ---
 
+# Bearbeiten{#authoring}
 
-# Authoring{#authoring}
-
-## Das Konzept der Bearbeitung (und Veröffentlichung) {#concept-of-authoring-and-publishing}
+## Die Begriffe des Authoring und Publishing (Bearbeiten und Veröffentlichen)  {#concept-of-authoring-and-publishing}
 
 AEM bietet Ihnen zwei Umgebungen:
 
@@ -69,11 +68,11 @@ Außerdem gibt es administrative Aufgaben, die Sie beim Verwalten des Inhalts un
 
 #### Veröffentlichungsumgebung {#publish-environment}
 
-Sobald die AEM bereit ist, wird der Inhalt der Site in der Umgebung **publish** veröffentlicht. Hier werden die Seiten der Website in Übereinstimmung mit dem Aussehen der entworfenen Oberfläche der vorgesehenen Zielgruppe bereitgestellt.
+Wenn der Inhalt der AEM Site fertig ist, wird er in der **Veröffentlichungsumgebung** veröffentlicht. Hier werden die Seiten der Website in Übereinstimmung mit dem Aussehen der entworfenen Oberfläche der vorgesehenen Zielgruppe bereitgestellt.
 
 Normalerweise befindet sich die Veröffentlichungsumgebung innerhalb der DMZ, d. h. es besteht die Möglichkeit des Zugriffs vom Internet aus und der vollständige Schutz durch das eigene Netzwerk ist nicht mehr gewährleistet.
 
-Handelt es sich bei der AEM-Site um eine [Community-Site](/help/communities/overview.md) oder enthält sie [Community-Komponenten](/help/communities/author-communities.md), können alle angemeldeten Besucher der Site (Mitglieder) die Community-Funktionen nutzen. So können sie z. B. in einem Forum posten, einen Kommentar posten oder anderen Mitgliedern folgen. Mitglieder erhalten möglicherweise die Berechtigung, Aktivitäten durchzuführen, die normalerweise nur in der Autorenumgebung verfügbar sind. Hierzu gehören unter anderem das Erstellen neuer Seiten (Community-Gruppen) oder Blog-Beiträge oder die Moderation der Beiträge anderer Mitglieder.
+Handelt es sich bei der AEM-Site um eine [Community-Site](/help/communities/overview.md) oder enthält sie [Community-Komponenten](/help/communities/author-communities.md), können alle angemeldeten Besucher der Site (Mitglieder) die Community-Funktionen nutzen. Sie können beispielsweise in einem Forum posten, einen Kommentar posten oder anderen Mitgliedern folgen. Mitglieder erhalten möglicherweise die Berechtigung, Aktivitäten durchzuführen, die normalerweise nur in der Autorenumgebung verfügbar sind. Hierzu gehören unter anderem das Erstellen neuer Seiten (Community-Gruppen) oder Blog-Beiträge oder die Moderation der Beiträge anderer Mitglieder.
 
 >[!NOTE]
 >
@@ -88,7 +87,7 @@ Handelt es sich bei der AEM-Site um eine [Community-Site](/help/communities/over
    >
    >
 * **Replizieren/Replikation**
-   >  Hierbei handelt es sich um die technischen Begriffe, die zur Angabe der Datenbewegung (z. B. Seiteninhalt, Dateien, Code, Benutzerkommentare) von einer Umgebung zur anderen verwendet werden; z. B. beim Veröffentlichen oder Reproduzieren von Benutzerkommentaren.
+   >  Hierbei handelt es sich um technische Begriffe, die die Verschiebung von Daten (z. B. Seiteninhalt, Dateien, Code, Benutzerkommentare) von einer Umgebung zur anderen anzeigen. d. h. beim Veröffentlichen oder bei der umgekehrten Replizierung von Benutzerkommentaren.
 >
 
 
