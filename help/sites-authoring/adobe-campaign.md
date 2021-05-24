@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 28582d42-ef24-4ca1-98e6-e02248fc9dea
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 0954fd5f-cd70-4f2f-85e9-df1c7a3037e1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 100%
 
 ---
-
 
 # Arbeiten mit Adobe Campaign{#working-with-adobe-campaign}
 
@@ -39,5 +38,4 @@ Sie müssen bereits eine [Integration von AEM und Adobe Campaign](/help/sites-a
 Möchten Sie zudem Ihre Integrationen anpassen, finden Sie Informationen dazu in folgenden Artikeln:
 
 * [Erstellen benutzerspezifischer Erweiterungen](/help/sites-developing/extending-campaign-extensions.md)
-* [Erstellen benutzerspezifischer Formular-Zuordnungen](/help/sites-developing/extending-campaign-form-mapping.md)
-
+* [Erstellen benutzerdefinierter Formularzuordnungen](/help/sites-developing/extending-campaign-form-mapping.md)
