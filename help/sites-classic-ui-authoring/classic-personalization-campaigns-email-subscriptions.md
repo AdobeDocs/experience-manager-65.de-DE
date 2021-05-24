@@ -9,38 +9,37 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 295cb0a6-29db-42aa-824e-9141b37b5086
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: add05d22-3a11-49e9-a554-2315962552d5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 77%
 
 ---
 
-
 # Verwalten von Abonnements{#managing-subscriptions}
 
 >[!NOTE]
 >
->Die Adobe plant nicht, diese Funktion weiter zu verbessern (Verwaltung von Interessenten und Listen).
->Es wird empfohlen, [Adobe Campaign und dessen AEM Integration](/help/sites-administering/campaign.md) zu nutzen.
+>Adobe plant nicht, diese Funktion weiter auszubauen (Leads und Listen verwalten).
+>Es wird empfohlen, [Adobe Campaign und seine AEM Integration](/help/sites-administering/campaign.md) zu nutzen.
 
-Benutzer können mithilfe der auf einer AEM Webseite verwendeten Komponente **E-Mail-Dienstleister** aufgefordert werden, die Mailing-Listen des **Form**-E-Mail- zu abonnieren. Damit Sie eine AEM-Seite mit einem Abonnementformular erstellen können, das für die Anmeldung bei Ihren E-Mail-Dienst-Mailing-Listen konfiguriert ist, müssen Sie die entsprechende Dienstkonfiguration auf die AEM-Seite anwenden, die der potenzielle Abonnent besuchen wird.
+Benutzer können mithilfe der **Formular**-Komponente des E-Mail-Dienstanbieters, die auf einer AEM Web-Seite verwendet wird, aufgefordert werden, **E-Mail-Dienstanbieter-Mailinglisten** zu abonnieren. Damit Sie eine AEM-Seite mit einem Abonnementformular erstellen können, das für die Anmeldung bei Ihren E-Mail-Dienst-Mailing-Listen konfiguriert ist, müssen Sie die entsprechende Dienstkonfiguration auf die AEM-Seite anwenden, die der potenzielle Abonnent besuchen wird.
 
 ## Anwenden der E-Mail-Dienstanbieterkonfiguration auf eine Seite {#applying-email-service-configuration-to-a-page}
 
 So konfigurieren Sie eine AEM-Seite:
 
 1. Navigieren Sie zur Registerkarte **Websites**.
-1. Wählen Sie die Seite, die für den Dienst konfiguriert werden soll. Klicken Sie mit der rechten Maustaste auf die Seite und wählen Sie **Eigenschaften**.
+1. Wählen Sie die Seite, die für den Dienst konfiguriert werden soll. Klicken Sie mit der rechten Maustaste auf die Seite und wählen Sie **Eigenschaften** aus.
 
-1. Wählen Sie **Cloud Services** und **Hinzufügen Dienst**. Wählen Sie eine Konfiguration aus der Liste der verfügbaren Konfigurationen.
+1. Wählen Sie **Cloud Services** und dann **Dienst hinzufügen**. Wählen Sie eine Konfiguration aus der Liste der verfügbaren Konfigurationen.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
 1. Klicken Sie auf **OK**.
 
-## Erstellen von Abonnementformularen auf einer AEM-Seite für das Abonnieren/Abbestellen von Listen {#creating-a-sign-up-form-on-an-aem-page-for-subscribing-unsubscribing-to-lists}
+## Erstellen von Abonnementformularen auf einer AEM-Seite für das Abonnieren/Abbestellen von Listen  {#creating-a-sign-up-form-on-an-aem-page-for-subscribing-unsubscribing-to-lists}
 
 So erstellen Sie ein Abonnementformular und konfigurieren es für die Anmeldung bei E-Mail-Dienstanbieter-Mailing-Listen:
 
@@ -48,9 +47,9 @@ So erstellen Sie ein Abonnementformular und konfigurieren es für die Anmeldung 
 1. Wenden Sie die Konfiguration des E-Mail-Dienstanbieters auf die Seite an.
 
 1. Fügen Sie eine Komponente des Typs **Formular** hinzu, indem Sie sie aus dem Sidekick auf die Seite ziehen. Wenn die Komponente nicht verfügbar ist, wechseln Sie in den Designmodus und aktivieren Sie die **Formulargruppe**.
-1. Klicken Sie auf **Bearbeiten** in der Leiste **Beginn des Formulars** und navigieren Sie zur Registerkarte **Erweitert**.
-1. Wählen Sie im Dropdownmenü **Formular** **E-Mail-Dienst: Erstellen Sie den Abonnenten** und fügen Sie ihn der Liste hinzu.
-1. Öffnen Sie unten im Dialogfeld die Dropdownliste **Aktionskonfiguration**, in der Sie eine oder mehrere Abonnement-Listen auswählen können.
+1. Klicken Sie in der Leiste **Beginn des Formulars** auf **und navigieren Sie zur Registerkarte** Erweitert **.**
+1. Wählen Sie im Dropdown-Menü **Formular** die Option **E-Mail-Dienst: Erstellen Sie Abonnenten** und fügen Sie sie zur Liste hinzu.
+1. Öffnen Sie am unteren Rand des Dialogfelds die Dropdown-Liste **Aktionskonfiguration** , in der Sie eine oder mehrere Abonnementlisten auswählen können.
 1. Wählen Sie unter **Liste auswählen** die Liste aus, bei der sich Benutzer anmelden sollen. Über die Schaltfläche mit dem Plus (**Element hinzufügen**) können Sie mehrere Listen hinzufügen.
 
    ![chlimage_1-10](assets/chlimage_1-10.jpeg)
@@ -85,7 +84,7 @@ So melden Sie Benutzer aus Listen ab:
 1. Öffnen Sie die Seiteneigenschaften der AEM-Seite, die das Abonnementformular enthält, über das sich ein Lead abmelden kann.
 1. Wenden Sie die Dienst-Konfiguration auf die Seite an.
 1. Erstellen Sie auf der Seite ein Abonnementformular.
-1. Wählen Sie beim Konfigurieren der Komponente die Aktion **E-Mail-Dienst**: **Abmelden des Benutzers von der Liste.**
+1. Wählen Sie beim Konfigurieren der Komponente die Aktion **E-Mail-Dienst** aus: **Benutzer von Liste abmelden.**
 1. Wählen Sie in der Dropdown-Liste die Liste, von der der Benutzer beim Abmelden gelöscht wird.
 
    ![chlimage_1-11](assets/chlimage_1-11.jpeg)
@@ -96,16 +95,16 @@ So melden Sie Benutzer aus Listen ab:
 
 So konfigurieren Sie eine automatische Nachricht für einen Abonnenten:
 
-1. Öffnen Sie die Seiteneigenschaften der AEM Seite mit dem Anmeldeformular, um den automatischen Antwortsender für einen Interessenten zu konfigurieren.
+1. Öffnen Sie die Seiteneigenschaften der AEM Seite, die über das Anmeldeformular verfügt, um den automatischen Antwortsender für einen Lead zu konfigurieren.
 1. Wenden Sie die ExactTarget-Konfiguration auf die Seite an.
 
 1. Fügen Sie eine Komponente des Typs **Formular** hinzu, indem Sie sie aus dem Sidekick auf die Seite ziehen. Wenn die Komponente nicht verfügbar ist, wechseln Sie in den Designmodus und aktivieren Sie die **Formulargruppe**.
-1. Klicken Sie auf **Bearbeiten** in der Leiste **Beginn des Formulars** und navigieren Sie zur Registerkarte **Erweitert**.
-1. Wählen Sie im Dropdownmenü **Formular** **E-Mail-Dienst: Senden der E-Mail mit automatischer Antwort.**
-1. **Wählen Sie eine E-Mail**  aus (dies ist die E-Mail, die als E-Mail mit automatischer Antwort gesendet wird).
+1. Klicken Sie in der Leiste **Beginn des Formulars** auf **und navigieren Sie zur Registerkarte** Erweitert **.**
+1. Wählen Sie im Dropdown-Menü **Formular** die Option **E-Mail-Dienst: Automatische Antwort-E-Mail senden.**
+1. **Wählen Sie eine E-Mail**  aus (dies ist die E-Mail, die als automatische Nachricht gesendet wird).
 
-1. **Wählen Sie Klassifizierung**  (diese Klassifizierung wird zum Senden der E-Mail verwendet).
-1. Wählen Sie die Seite **Vielen Dank** aus (die Seite, zu der Benutzer weitergeleitet werden, sobald sie das Formular senden).
+1. **Wählen Sie Classification**  aus (diese Classification wird zum Senden der E-Mail verwendet).
+1. Wählen Sie die Seite **Vielen Dank** aus (die Seite, auf die Benutzer weitergeleitet werden, sobald sie das Formular senden).
 
    Wählen Sie auf der Registerkarte **Formular** die Dankeseite, die Benutzer sehen sollen, nachdem sie das Formular gesendet haben. (Erfolgt hier keine Angabe, wird das Formular nach der Übermittlung erneut angezeigt.) Klicken Sie auf **OK**.
 
@@ -119,4 +118,3 @@ So konfigurieren Sie eine automatische Nachricht für einen Abonnenten:
    >Damit das Abonnieren über das Formular ordnungsgemäß funktioniert, [müssen die Verschlüsselungsschlüssel des Autors exportiert und in die Veröffentlichungsinstanz importiert werden](#exporting-keys-from-author-and-importing-on-publish).
 
    ![chlimage_1-12](assets/chlimage_1-12.jpeg)
-
