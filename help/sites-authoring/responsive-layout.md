@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
-translation-type: tm+mt
-source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1795'
 ht-degree: 92%
 
 ---
-
 
 # Responsives Layout  {#responsive-layout}
 
@@ -68,7 +67,7 @@ Je nach Projekt kann der Layout-Container als standardmäßiges Absatzsystem fü
 
 >[!NOTE]
 >
->Die Verwendung des obigen Mechanismus wird durch die Konfiguration der Vorlage aktiviert. Weitere Informationen finden Sie unter [Konfigurieren des responsiven Layouts](/help/sites-administering/configuring-responsive-layout.md).
+>Die Verwendung des obigen Mechanismus wird durch die Konfiguration der Vorlage aktiviert. Weitere Informationen finden Sie unter [Konfigurieren des responsiven Layouts](/help/sites-administering/configuring-responsive-layout.md) .
 
 ## Layout-Definitionen, Geräteemulation und Breakpoints {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -225,15 +224,15 @@ Im Layout-Modus können Sie verschiedene Aktionen für ein Raster durchführen:
 
    * **Übergeordnet**
 
-      Ermöglicht die Auswahl der gesamten Layout-Container-Komponente zum Durchführen von Aktionen.
+      Ermöglicht die Auswahl der gesamten Layout-Container-Komponente, damit Sie insgesamt Aktionen durchführen können.
 
    * **Gleitkommawert in neue Zeile**
 
-      Die Komponente wird je nach dem im Raster verfügbaren Platz in eine neue Zeile verschoben.
+      Die Komponente wird in eine neue Zeile verschoben, abhängig vom im Raster verfügbaren Platz.
 
    * **Komponente ausblenden**
 
-      Die Komponente wird unsichtbar gemacht (sie kann über die Symbolleiste des Layout-Containers wiederhergestellt werden).
+      Die Komponente wird unsichtbar (sie kann über die Symbolleiste des Layout-Containers wiederhergestellt werden).
    ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
 * Im **Layout**-Modus können Sie auf **Komponenten hierher ziehen** tippen/klicken, um die gesamte Komponente auszuwählen. Dadurch wird die Symbolleiste für diesen Modus angezeigt.
@@ -244,7 +243,7 @@ Im Layout-Modus können Sie verschiedene Aktionen für ein Raster durchführen:
 
    ![](do-not-localize/screen_shot_2018-03-23at090823.png)
 
-   * **Ausgeblendete Komponenten**  anzeigen: Alle oder einzelne Komponenten anzeigen. Die Zahl gibt an, wie viele ausgeblendete Komponenten es derzeit gibt. Der Zähler zeigt an, wie viele Komponenten ausgeblendet sind.
+   * **Verborgene Komponenten anzeigen**  - Alle oder einzelne Komponenten einblenden. Die Zahl gibt an, wie viele ausgeblendete Komponenten es derzeit gibt. Der Zähler zeigt an, wie viele Komponenten ausgeblendet sind.
 
    ![](do-not-localize/screen_shot_2018-03-23at091007.png)
 
@@ -264,9 +263,9 @@ Im Layout-Modus können Sie verschiedene Aktionen für ein Raster durchführen:
    >
    >Im obigen Beispiel sind die Aktionen zum Verschieben und Ausblenden verfügbar, weil dieser Layout-Container in einem übergeordneten Layout-Container verschachtelt ist.
 
-   * **Aufhebung der**
+   * **Einblenden von**
 KomponentenWählen Sie die übergeordneten Komponenten aus, um die Aktionssymbolleiste mit der 
-**Option** für ausgeblendete Komponenten anzeigen. In diesem Beispiel gibt es zwei ausgeblendete Komponenten.
+**Option &quot;Verborgene** Komponenten anzeigen&quot;. In diesem Beispiel gibt es zwei ausgeblendete Komponenten.
    ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
    Bei Auswahl der Option **Verborgene Komponenten einblenden** werden die jeweils ausgeblendeten Komponenten in Blau an ihren ursprünglichen Positionen angezeigt.
@@ -274,4 +273,3 @@ KomponentenWählen Sie die übergeordneten Komponenten aus, um die Aktionssymbol
    ![screen_shot_2018-03-23at091224](assets/screen_shot_2018-03-23at091224.png)
 
    Bei Auswahl der Option **Alle wiederherstellen** werden alle verborgenen Komponenten eingeblendet.
-
