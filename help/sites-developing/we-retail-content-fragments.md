@@ -9,22 +9,21 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 1e5d8184-7164-4984-b43e-421015e8bf52
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 79%
 
 ---
 
-
 # Testen von Inhaltsfragmenten in We.Retail{#trying-out-content-fragments-in-we-retail}
 
-Inhaltsfragmente ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen. **We.Retail**  (wie in einer vordefinierten Instanz von AEM verfügbar) bietet das Fragment  **Arctic Surfing in** Lofotenas ein einfaches Beispiel. Dies verdeutlicht:
+Inhaltsfragmente ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen. **We.Retail**  (wie in einer vordefinierten Instanz von AEM verfügbar) stellt das Fragment  **Arktisches Surfen in** Lofotenas als einfaches Beispiel bereit. Dies verdeutlicht:
 
 * Content Fragments für Adobe Experience Manager (AEM) werden [als seitenunabhängige Assets erstellt und verwaltet](/help/assets/content-fragments/content-fragments.md). Sie ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen.
 
-   * Siehe [Wo finden Sie Inhaltsfragment-Elemente in We.Retail](#where-to-find-content-fragments-in-we-retail)
+   * Siehe [Wo finden Sie Inhaltsfragment-Assets in We.Retail](#where-to-find-content-fragments-in-we-retail)
 
 * Sie können [diese Fragmente und ihre Varianten bei der Erstellung Ihrer Inhaltsseiten](/help/sites-authoring/content-fragments.md) verwenden.
 
@@ -47,11 +46,11 @@ Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, ab
 
 ## Suche nach Inhaltsfragment-Assets in We.Retail {#where-to-find-content-fragments-in-we-retail}
 
-Es gibt mehrere Beispielinhalt-Fragmente in We.Retail. navigieren Sie über **Assets**, **Dateien**, **We.Retail**, **Englisch**, **Erlebnisse**.
+Es gibt mehrere Beispielinhaltsfragmente in We.Retail. Navigieren Sie über **Assets**, **Dateien**, **We.Retail**, **Englisch**, **Erlebnisse**.
 
 Diese enthalten **Arktisches Surfen in Lofoten**, ein Fragment zusammen mit dazu gehörenden visuellen Assets:
 
-* Navigieren Sie über **Assets**, **Dateien**, **We.Retail**, **Englisch**, **Erlebnisse**, **Artisches Surfen in Lofoten**:
+* Navigieren Sie zu **Assets**, **Dateien**, **We.Retail**, **Englisch**, **Erlebnisse**, **Artisches Surfen in Lofoten**:
 
    * [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten ) 
 
@@ -77,9 +76,9 @@ Unter folgendem Link finden Sie mehrere Beispiele zum Veranschaulichen der [Seit
 
 * [http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience](http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience)
 
-Beispielsweise wird auf der Seite &quot;Sites&quot;auf das Inhaltsfragment **Arktisches Surfen in Lofoten** verwiesen:
+Beispielsweise wird auf der Sites-Seite auf das Inhaltsfragment **Arktisches Surfen in Lofoten** verwiesen:
 
-* Navigieren Sie über **Sites**, **We.Retail**, **Sprachführer**, **Englisch**, **Erlebnis**. Öffnen Sie dann **Arktisches Surfen in Lofoten** zur Bearbeitung:
+* Navigieren Sie zu **Sites**, **We.Retail**, **Sprachmaster**, **English**, **Erlebnis**. Öffnen Sie dann **Arktisches Surfen in Lofoten** zur Bearbeitung:
 
    * [http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html](http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html)
 
@@ -104,4 +103,3 @@ Weitere Informationen finden Sie unter:
 * [Entwickeln und Erweitern von Inhaltsfragmenten](/help/sites-developing/customizing-content-fragments.md)
 
    * Informationen, mit deren Hilfe Sie Inhaltsfragmente entwickeln und erweitern können.
-
