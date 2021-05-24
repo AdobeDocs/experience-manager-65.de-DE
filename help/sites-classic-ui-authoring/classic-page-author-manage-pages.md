@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1935'
 ht-degree: 91%
 
 ---
-
 
 # Erstellen und Organisieren von Seiten{#creating-and-organizing-pages}
 
@@ -39,9 +38,9 @@ Sie können Ihre Inhalte auch mithilfe von [Ordnern](#creating-a-new-folder) org
 
 Die Struktur einer Website kann als *Baumstruktur* gesehen werden, die die Inhaltsseiten enthält. Die Namen dieser Inhaltsseiten werden zur Bildung der URLs verwendet. Der Titel wird zusammen mit dem Seiteninhalt angezeigt.
 
-Im Folgenden ist ein Auszug aus dem Geometrixx dargestellt: auf die z. B. die Seite `Triangle` zugegriffen wird:
+Nachstehend finden Sie einen Auszug aus der Geometrixx. wo beispielsweise auf die Seite `Triangle` zugegriffen wird:
 
-* Autor-Umgebung
+* Autorenumgebung
 
    `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
@@ -49,7 +48,7 @@ Im Folgenden ist ein Auszug aus dem Geometrixx dargestellt: auf die z. B. die Se
 
    `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
-   Abhängig von der Konfiguration Ihrer Instanz kann die Verwendung von `/content` auf der Umgebung zum Veröffentlichen optional sein.
+   Je nach Konfiguration Ihrer Instanz kann die Verwendung von `/content` in der Veröffentlichungsumgebung optional sein.
 
 ```xml
   /content
@@ -89,9 +88,9 @@ Beim Erstellen einer neuen Seite gibt es zwei Schlüsselfelder:
    * Mit diesem Wert wird der URI generiert.
    * Benutzereingaben sind für dieses Feld optional. Wenn kein Name angegeben ist, wird er vom Titel abgeleitet.
 
-Beim Erstellen einer neuen Seite überprüft AEM [den Seitennamen gemäß den von AEM und JCR festgelegten Konventionen](/help/sites-developing/naming-conventions.md).
+Beim Erstellen einer neuen Seite validiert AEM [den Seitennamen entsprechend den Konventionen](/help/sites-developing/naming-conventions.md), die von AEM und JCR vorgeschrieben sind.
 
-Die Implementierung und die Liste der zulässigen Zeichen unterscheiden sich je nach Benutzeroberfläche geringfügig (sie ist für die touchaktivierte Benutzeroberfläche umfassender). Es ist jedoch mindestens Folgendes zulässig:
+Die Implementierung und die Liste der zulässigen Zeichen unterscheiden sich je nach Benutzeroberfläche geringfügig (sie ist für die Touch-optimierte Benutzeroberfläche umfassender). Es ist jedoch mindestens Folgendes zulässig:
 
 * „a“ bis „z“
 * „A“ bis „Z“
@@ -117,7 +116,7 @@ Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben
 In der klassischen Benutzeroberfläche können Sie **keine ungültigen Zeichen** im Feld **Name** eingeben.
 
 >[!NOTE]
->In der touchfähigen Benutzeroberfläche können Sie **keine ungültigen Zeichen** im Feld **Name** senden. Wenn AEM ungültige Zeichen erkennt, wird das Feld markiert und eine erklärende Meldung angezeigt, die auf zu entfernende/ersetzende Zeichen verweist.
+>In der Touch-optimierten Benutzeroberfläche können Sie **keine ungültigen Zeichen** im Feld **Name** senden. Wenn AEM ungültige Zeichen erkennt, wird das Feld markiert und eine erklärende Meldung angezeigt, die auf zu entfernende/ersetzende Zeichen verweist.
 
 >[!NOTE]
 >
@@ -142,7 +141,7 @@ Wird beim Benennen der Seite verwendet.
 * **Vorlage**
 Eine Liste von Vorlagen, die für das Erstellen neuer Seiten verwendet werden können.
 
-### Komponenten {#components}
+### Komponenten  {#components}
 
 Komponenten sind die Elemente, die von AEM bereitgestellt werden, damit Sie bestimmte Inhaltstypen hinzufügen können. AEM ist mit einsatzbereiten Komponenten ausgestattet, die umfangreiche Funktionen bieten, wie:
 
@@ -152,7 +151,7 @@ Komponenten sind die Elemente, die von AEM bereitgestellt werden, damit Sie best
 * Video
 * viele weitere
 
-Nachdem Sie eine Seite erstellt und geöffnet haben, können Sie [Inhalte mit den Komponenten](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph) hinzufügen, die unter [Sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick) verfügbar sind.
+Nachdem Sie eine Seite erstellt und geöffnet haben, können Sie [Inhalte mithilfe der Komponenten](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph) hinzufügen, die über den [Sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick) verfügbar sind.
 
 ## Verwalten von Seiten {#managing-pages}
 
@@ -198,7 +197,7 @@ Sofern nicht alle Seiten für Sie im Voraus erstellt wurden, müssen Sie vor dem
 
    >[!NOTE]
    >
-   >Sie können auch eine Seite erstellen, wenn Sie eine vorhandene Seite bearbeiten. Mit **Untergeordnete Seite erstellen **aus der Registerkarte **Seite** des Sidekick wird eine neue Seite direkt unter der bearbeiteten Seite erstellt.
+   >Sie können auch eine Seite erstellen, wenn Sie eine vorhandene Seite bearbeiten. Mit der Option &quot;Untergeordnete Seite erstellen&quot;auf der Registerkarte **Seite** des Sidekicks wird eine neue Seite direkt unter der bearbeiteten Seite erstellt.
 
 ### Öffnen einer Seite zur Bearbeitung {#opening-a-page-for-editing}
 
@@ -338,4 +337,3 @@ Sie können entweder in einer Konsole oder beim Bearbeiten einer Seite eine [Sei
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
 1. Wählen Sie **Erstellen**, um den Ordner zu erstellen.
-
