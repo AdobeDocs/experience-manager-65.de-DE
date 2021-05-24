@@ -11,7 +11,6 @@ topic-tags: site-features
 discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
-translation-type: tm+mt
 source-git-commit: 47870c05d231bacc424cfbf308f78bc1eaeb907b
 workflow-type: tm+mt
 source-wordcount: '854'
@@ -19,7 +18,7 @@ ht-degree: 94%
 
 ---
 
-# Launches{#launches}
+# Starts{#launches}
 
 Mithilfe von Launches können Sie effizient Inhalte für eine künftige Version entwickeln.
 
@@ -105,9 +104,9 @@ Launches ermöglichen Folgendes:
 
 >[!CAUTION]
 >
->Die Neuanordnung von Komponenten auf einer Startseite wird nicht unterstützt.
+>Die Neuanordnung von Komponenten auf einer Launch-Seite wird nicht unterstützt.
 >
->Wenn die Seite beworben wird, werden alle Inhaltsänderungen angezeigt, aber die Komponentenpositionen werden nicht geändert.
+>Wenn die Seite beworben wird, werden alle Inhaltsänderungen angezeigt, aber die Komponentenpositionen ändern sich nicht.
 
 
 ### Die Konsole „Launches“ {#the-launches-console}
