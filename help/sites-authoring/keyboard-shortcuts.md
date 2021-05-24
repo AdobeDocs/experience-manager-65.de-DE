@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
-translation-type: tm+mt
-source-git-commit: 34aadbc35d7aad127fe98211a5f37d623d101c0c
+exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 98%
 
 ---
-
 
 # Tastaturbefehle für Konsolen  {#keyboard-shortcuts-for-consoles}
 
@@ -96,4 +95,3 @@ Es gibt zwei Möglichkeiten, Tastaturbefehle zu deaktivieren:
 >[!NOTE]
 >
 >Die navigationsbezogenen Tastaturbefehle für die Spaltenansicht und Inhaltsstruktur sind immer aktiv.
-
