@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 10466b49-f8bd-4c2c-8106-b0c7ba054989
 docset: aem65
-translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 94%
 
 ---
-
 
 # Konfigurieren von Komponenten im Designmodus{#configuring-components-in-design-mode}
 
@@ -64,7 +63,7 @@ Im Designmodus ist der Sidekick minimiert dargestellt und Sie haben die Möglich
 
    ![](do-not-localize/sidekick-collapsed.png)
 
-## Konfigurieren des Designs von Komponenten {#configuring-the-design-of-a-component}
+## Konfigurieren des Designs von Komponenten  {#configuring-the-design-of-a-component}
 
 Im Designmodus können Sie auch Attribute für die einzelnen Komponenten konfigurieren. Jede Komponente verfügt über eigene Parameter. Im folgenden Beispiel wird die **Bildkomponente** gezeigt:
 
@@ -74,7 +73,7 @@ Im Designmodus können Sie auch Attribute für die einzelnen Komponenten konfigu
 
 1. Sie können das Design von Komponenten konfigurieren.
 
-   Wenn Sie beispielsweise auf **Bearbeiten** in der Image-Komponente (**Bilddesign**) klicken, können Sie die komponentenspezifischen Parameter konfigurieren:
+   Wenn Sie beispielsweise auf **Bearbeiten** in der Bildkomponente (**Bilddesign**) klicken, können Sie die komponentenspezifischen Parameter konfigurieren:
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
 
