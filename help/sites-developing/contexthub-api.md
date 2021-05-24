@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 90605f41-1861-4891-a7c8-b8b5918cd5c6
-feature: Context Hub
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Context-Hub
+exl-id: b472d96f-b1a5-40b7-be2a-52f3396f6884
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '5031'
 ht-degree: 93%
 
 ---
-
 
 # Referenz zur ContextHub-JavaScript-API{#contexthub-javascript-api-reference}
 
@@ -34,8 +33,8 @@ In der folgenden Tabelle sind die Namen von Ereignissen aufgeführt, die bei Con
 | Konstante | Beschreibung | Wert |
 |---|---|---|
 | ContextHub.Constants.EVENT_NAMESPACE | Ereignis-Namespace von ContextHub | ch |
-| ContextHub.Constants.EVENT_ALL_STORES_READY | Gibt an, dass alle erforderlichen Stores registriert, initialisiert und einsatzbereit sind | all-store-ready |
-| ContextHub.Constants.EVENT_STORES_PARTIALLY_READY | Gibt an, dass nicht alle Stores innerhalb eines bestimmten Timeouts initialisiert wurden | store-teilweise bereit |
+| ContextHub.Constants.EVENT_ALL_STORES_READY | Gibt an, dass alle erforderlichen Stores registriert, initialisiert und einsatzbereit sind | all-stores-ready |
+| ContextHub.Constants.EVENT_STORES_PARTIALLY_READY | Gibt an, dass nicht alle Stores innerhalb eines bestimmten Timeouts initialisiert wurden | stores-teilweise bereit |
 | ContextHub.Constants.EVENT_STORE_REGISTERED | Wird ausgelöst, wenn ein Store registriert ist | store-registered |
 | ContextHub.Constants.EVENT_STORE_READY | Gibt an, dass Stores einsatzbereit sind. Wird sofort nach der Registrierung ausgelöst, außer bei JSONP-Stores, wo es ausgelöst wird, wenn Daten abgerufen werden. | store-ready |
 | ContextHub.Constants.EVENT_STORE_UPDATED | Wird ausgelöst, wenn ein Store seine Persistenz aktualisiert | store-updated |
@@ -43,7 +42,7 @@ In der folgenden Tabelle sind die Namen von Ereignissen aufgeführt, die bei Con
 | ContextHub.Constants.SERVICE_RAW_RESPONSE_KEY | Speichert den spezifischen Namen des Persistenzschlüssels, wenn das unformatierte JSON-Ergebnis gespeichert wird | /_/raw-response |
 | ContextHub.Constants.SERVICE_RESPONSE_TIME_KEY | Speichert einen bestimmten Zeitstempel, der angibt, wann JSON-Daten abgerufen wurden | /_/response-time |
 | ContextHub.Constants.SERVICE_LAST_URL_KEY | Speichert spezifische URL des JSON-Diensts, der beim letzten Aufruf verwendet wurde | /_/url |
-| ContextHub.Constants.IS_CONTAINER_EXPANDED | Gibt an, ob die Benutzeroberfläche von ContextHub erweitert ist | /_/Container-erweitert |
+| ContextHub.Constants.IS_CONTAINER_EXPANDED | Gibt an, ob die Benutzeroberfläche von ContextHub erweitert ist | /_/container-extended |
 
 ### Benutzeroberflächen-Ereigniskonstanten {#ui-event-constants}
 
@@ -56,27 +55,27 @@ In der folgenden Tabelle sind die Namen der Ereignisse aufgeführt, die für die
 | ContextHub.Constants.EVENT_UI_MODE_RENDERER_REGISTERED | Wird ausgelöst, wenn ein Modus-Renderer registriert wird | ui-mode-renderer-registered |
 | ContextHub.Constants.EVENT_UI_MODE_RENDERER_UNREGISTERED | Wird ausgelöst, wenn ein Modus-Renderer deregistriert wird | ui-mode-renderer-unregistered |
 | ContextHub.Constants.EVENT_UI_MODE_ADDED | Wird ausgelöst, wenn ein neuer Modus hinzugefügt wird | ui-mode-added |
-| ContextHub.Constants.EVENT_UI_MODE_REMOVED | Wird ausgelöst, wenn ein Modus entfernt wird | ui-mode-remove |
+| ContextHub.Constants.EVENT_UI_MODE_REMOVED | Wird ausgelöst, wenn ein Modus entfernt wird | ui-mode-removed |
 | ContextHub.Constants.EVENT_UI_MODE_SELECTED | Wird ausgelöst, wenn der Benutzer einen Modus auswählt | ui-mode-selected |
 | ContextHub.Constants.EVENT_UI_MODULE_REGISTERED | Wird ausgelöst, wenn ein neues Modul registriert wird | ui-module-registered |
 | ContextHub.Constants.EVENT_UI_MODULE_UNREGISTERED | Wird ausgelöst, wenn ein Modul deregistriert wird | ui-module-unregistered |
 | ContextHub.Constants.EVENT_UI_MODULE_RENDERER_REGISTERED | Wird ausgelöst, wenn ein Modul-Renderer registriert wird | ui-module-renderer-registered |
 | ContextHub.Constants.EVENT_UI_MODULE_RENDERER_UNREGISTERED | Wird ausgelöst, wenn ein Modul-Renderer deregistriert wird | ui-module-renderer-unregistered |
 | ContextHub.Constants.EVENT_UI_MODULE_ADDED | Wird ausgelöst, wenn ein neues Modul hinzugefügt wird | ui-module-added |
-| ContextHub.Constants.EVENT_UI_MODULE_REMOVED | Wird ausgelöst, wenn ein Modul entfernt wird | ui-module-remove |
-| ContextHub.Constants.EVENT_UI_CONTAINER_ADDED | Wird ausgelöst, wenn der UI-Container der Seite hinzugefügt wird | ui-Container hinzugefügt |
-| ContextHub.Constants.EVENT_UI_CONTAINER_OPENED | Wird ausgelöst, wenn die ContextHub-Benutzeroberfläche geöffnet wird | ui-Container-open |
-| ContextHub.Constants.EVENT_UI_CONTAINER_CLOSED | Wird ausgelöst, wenn die ContextHub-Benutzeroberfläche reduziert wird | ui-Container-geschlossen |
-| ContextHub.Constants.EVENT_UI_PROPERTY_MODIFIED | Wird ausgelöst, wenn eine Eigenschaft geändert wird | ui-property-changed |
+| ContextHub.Constants.EVENT_UI_MODULE_REMOVED | Wird ausgelöst, wenn ein Modul entfernt wird | ui-module-removed |
+| ContextHub.Constants.EVENT_UI_CONTAINER_ADDED | Wird ausgelöst, wenn der UI-Container der Seite hinzugefügt wird | ui-container-added |
+| ContextHub.Constants.EVENT_UI_CONTAINER_OPENED | Wird ausgelöst, wenn die ContextHub-Benutzeroberfläche geöffnet wird | ui-container-opened |
+| ContextHub.Constants.EVENT_UI_CONTAINER_CLOSED | Wird ausgelöst, wenn die ContextHub-Benutzeroberfläche reduziert wird | ui-container-closed |
+| ContextHub.Constants.EVENT_UI_PROPERTY_MODIFIED | Wird ausgelöst, wenn eine Eigenschaft geändert wird | ui-property-modified |
 | ContextHub.Constants.EVENT_UI_RENDERED | Wird jedes Mal ausgelöst, wenn die ContextHub-Benutzeroberfläche gerendert wird (z. B. nach einer Eigenschaftsänderung) | ui-gerendert |
-| ContextHub.Constants.EVENT_UI_INITIALIZED | Wird ausgelöst, wenn der UI-Container initialisiert wird | ui-initialisiert |
+| ContextHub.Constants.EVENT_UI_INITIALIZED | Wird ausgelöst, wenn der UI-Container initialisiert wird | ui-initialized |
 | ContextHub.Constants.ACTIVE_UI_MODE | Zeigt den aktiven UI-Modus an | /_/active-ui-mode |
 
 ## Referenz zur ContextHub-JavaScript-API {#contexthub-javascript-api-reference-2}
 
 Das ContextHub-Objekt bietet Zugriff auf alle Stores.
 
-### Funktionen (ContextHub)  {#functions-contexthub}
+### Funktionen (ContextHub)   {#functions-contexthub}
 
 #### getAllStores() {#getallstores}
 
@@ -127,7 +126,7 @@ Stellt ein ContextHub-Segment dar. Verwenden Sie ContextHub.SegmentEngine.Segmen
 
 Gibt den Namen des Segments als Stringwert zurück.
 
-#### getPath()   {#getpath}
+#### getPath()  {#getpath}
 
 Gibt den Repository-Pfad der Segmentdefinition als Stringwert zurück.
 
@@ -207,7 +206,7 @@ Ein `boolean`-Wert:
 
 Löst das `ready`-Ereignis für diesen Store aus. Diese Funktion hat keine Parameter und gibt keinen Wert zurück.
 
-#### clean()   {#clean}
+#### clean()  {#clean}
 
 Entfernt alle Daten aus dem Store. Die Funktion hat keine Parameter und keinen Rückgabewert.
 
@@ -241,7 +240,7 @@ Ruft die Referenzen aus dem Store ab.
 
 **Rückgabe**
 
-Ein Array, das Schlüssel als Indizes für die referenzierten Schlüssel verwendet:
+Ein Array, das referenzierende Schlüssel als Indizes für die referenzierten Schlüssel verwendet:
 
 * Referenzschlüssel entsprechen dem `key`-Parameter der `addReference`-Funktion.
 
@@ -429,7 +428,7 @@ Gibt die unbearbeitete Antwort zurück, die seit dem letzten Aufruf des JSONP-Di
 
 Ein Objekt, das die unbearbeitete Antwort darstellt.
 
-#### getServiceDetails()   {#getservicedetails}
+#### getServiceDetails()  {#getservicedetails}
 
 Ruft das Dienstobjekt für dieses ContextHub.Store.JSONPStore-Objekt ab. Das Dienstobjekt enthält alle Informationen, die zum Erstellen der Service-URL erforderlich sind.
 
@@ -440,7 +439,7 @@ Ein Objekt mit den folgenden Eigenschaften:
 * **host:** (String) Servername oder IP-Adresse.
 * **jsonp:** (Boolesch) Ein Wert true zeigt an, dass der Dienst ein JSONP-Dienst ist, andernfalls ist er false. Falls „true“, {callback: &quot;ContextHub.Callbacks.*Object.name*} Objekt wird dem service.params-Objekt hinzugefügt.
 
-* **params:** (Objekt-)URL-Parameter, die als Objekteigenschaften dargestellt werden. Parameternamen sind Eigenschaftsnamen und Parameterwerte sind Eigenschaftswerte.
+* **params:**  (Object) URL-Parameter, die als Objekteigenschaften dargestellt werden. Parameternamen sind Eigenschaftsnamen und Parameterwerte sind Eigenschaftswerte.
 * **path:** (String) Der Pfad zum Dienst.
 * **port:** (Number) Die Portnummer des Dienstes.
 * **secure:** (String oder Boolesch) Bestimmt das für die Service-URL zu verwendende Protokoll:
@@ -473,7 +472,7 @@ initialisiert das ContextHub.Store.JSONPStore-Objekt.
    * EventDeferring: 32.
    * eventing: Das ContextHub.Utils.Eventing-Objekt für diesen Store. Der Standardwert ist das `ContextHub.eventing`-Objekt.
    * persistence: Das ContextHub.Utils.Persistence-Objekt für diesen Store. Standardmäßig wird die Store-Persistenz verwendet (JavaScript-Objekt).
-   * Dienst: (Objekt)
+   * -Dienst: (Objekt)
 
       * host: (String) Servername oder IP-Adresse.
       * jsonp: (Boolesch) Ein Wert „true“ zeigt an, dass der Service ein JSONP-Service ist, andernfalls ist er „false“. Wenn „true“, wird das `{callback: "ContextHub.Callbacks.*Object.name*}`-Objekt `service.params` hinzugefügt.
@@ -519,11 +518,11 @@ ContextHub.Store.PersistedJSONPStore erweitert [ContextHub.Store.JSONPStore](/he
 
 ## ContextHub.Store.PersistedStore {#contexthub-store-persistedstore}
 
-ContextHub.Store.PersistedStore erweitert [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core), sodass alle Funktionen dieser Klasse übernommen werden. Die Daten in diesem Store werden gemäß der Konfiguration der ContextHub-Persistenz beibehalten.
+ContextHub.Store.PersistedStore erweitert [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) so, dass es alle Funktionen dieser Klasse übernimmt. Die Daten in diesem Store werden gemäß der Konfiguration der ContextHub-Persistenz beibehalten.
 
 ## ContextHub.Store.SessionStore   {#contexthub-store-sessionstore}
 
-ContextHub.Store.SessionStore erweitert [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core), sodass alle Funktionen dieser Klasse übernommen werden. Die Daten in diesem Store werden mithilfe der speicherinternen Persistenz beibehalten (JavaScript-Objekt).
+ContextHub.Store.SessionStore erweitert [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) so, dass es alle Funktionen dieser Klasse übernimmt. Die Daten in diesem Store werden mithilfe der speicherinternen Persistenz beibehalten (JavaScript-Objekt).
 
 ## ContextHub.UI   {#contexthub-ui}
 
@@ -538,7 +537,7 @@ Registriert einen Benutzeroberflächenmodulrenderer mit ContextHub. Nachdem der 
 **Parameter**
 
 * **moduleType:**(String) Die Kennung für den Benutzeroberflächenmodulrenderer. Wenn ein Renderer bereits mit dem angegebenen Wert registriert ist, wird die Registrierung des vorhandenen Renderers aufgehoben, bevor dieser Renderer registriert wird.
-* **renderer:** (String) Der Name der Klasse, die das UI-Modul rendert.
+* **renderer:**  (String) Der Name der Klasse, die das UI-Modul rendert.
 * **dontRender:** (Boolesch) Auf `true` gesetzt, um zu verhindern, dass die ContextHub-Benutzeroberfläche nach der Registrierung des Renderers gerendert wird. Der Standardwert ist `false`.
 
 **Beispiel**
@@ -670,7 +669,7 @@ Erstellt ein Cookie mit dem angegebenen Schlüssel und Wert und fügt das Cookie
 * **options:** (Optional) Ein Objekt, das eine der folgenden Eigenschaften enthält, die die Cookie-Attribute konfigurieren:
 
    * expires: Ein `date`- oder `number`wert, der angibt, wann das Cookie abläuft. Ein Datumswert gibt die absolute Verfallszeit an. Eine Zahl (in Tagen) legt die Verfallszeit auf die aktuelle Zeit plus die Zahl fest. Der Standardwert ist `undefined`.
-   * secure: Ein `boolean`-Wert, der das `Secure`-Attribut des Cookies angibt. Der Standardwert ist `false`.
+   * secure: Ein `boolean` -Wert, der das `Secure` -Attribut des Cookies angibt. Der Standardwert ist `false`.
    * : Ein `String`wert, der als `Path`path-Attribut des Cookies verwendet wird. Der Standardwert ist `undefined`.
 
 **Rückgabe**
@@ -714,9 +713,9 @@ Löst eine Funktion von einem Ereignis.
 
 **Parameter**
 
-* **name:** Der  [Name des ](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) Ereignisses, für das Sie die Bindung der Funktion aufheben.
+* **name:** Der  [Name des ](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) Ereignisses, für das Sie die Funktion aufheben.
 
-* **selector:** Der Selektor, der die Bindung identifiziert. (Siehe Parameter `selector` für die Funktionen [on](/help/sites-developing/contexthub-api.md#on-name-handler-selector-triggerforpastevents) und [once](/help/sites-developing/contexthub-api.md#once-name-handler-selector-triggerforpastevents)).
+* **selector:** Der Selektor, der die Bindung identifiziert. (Siehe Parameter `selector` für die Funktionen [on](/help/sites-developing/contexthub-api.md#on-name-handler-selector-triggerforpastevents) und [once](/help/sites-developing/contexthub-api.md#once-name-handler-selector-triggerforpastevents) ).
 
 **Rückgabe**
 
@@ -731,7 +730,7 @@ Bindet eine Funktion an ein Ereignis. Die Funktion wird jedes Mal aufgerufen, we
 * **name:** (String) Der [Name des Ereignisses](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing), an das Sie die Funktion binden.
 
 * **handler:** (Function) Die Funktion zum Binden an das Ereignis.
-* **selector:** (String) Ein eindeutiger Bezeichner für die Bindung. Sie benötigen den Selektor, um die Bindung zu identifizieren, wenn Sie die `off`-Funktion verwenden möchten, um die Bindung zu entfernen.
+* **selector:**  (String) Eine eindeutige Kennung für die Bindung. Sie benötigen den Selektor, um die Bindung zu identifizieren, wenn Sie die `off`-Funktion verwenden möchten, um die Bindung zu entfernen.
 
 * **triggerForPastEvents:** (Boolesch) Gibt an, ob der Handler für Ereignisse ausgeführt werden soll, die in der Vergangenheit aufgetreten sind. Ein Wert `true` ruft den Handler für vergangene Ereignisse auf. Ein Wert `false` ruft den Handler für zukünftige Ereignisse auf. Der Standardwert ist `true`.
 
@@ -773,7 +772,7 @@ Bindet eine Funktion an ein Ereignis. Die Funktion wird nur einmal beim ersten A
 * **name:** (String) Der [Name des Ereignisses](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing), an das Sie die Funktion binden.
 
 * **handler:** (Function) Die Funktion zum Binden an das Ereignis.
-* **selector:** (String) Ein eindeutiger Bezeichner für die Bindung. Sie benötigen den Selektor, um die Bindung zu identifizieren, wenn Sie die `off`-Funktion verwenden möchten, um die Bindung zu entfernen.
+* **selector:**  (String) Eine eindeutige Kennung für die Bindung. Sie benötigen den Selektor, um die Bindung zu identifizieren, wenn Sie die `off`-Funktion verwenden möchten, um die Bindung zu entfernen.
 
 * **triggerForPastEvents:** (Boolesch) Gibt an, ob der Handler für Ereignisse ausgeführt werden soll, die in der Vergangenheit aufgetreten sind. Ein Wert `true` ruft den Handler für vergangene Ereignisse auf. Ein Wert `false` ruft den Handler für zukünftige Ereignisse auf. Der Standardwert ist `true`.
 
@@ -867,14 +866,14 @@ Erstellt eine Kopie eines Datenobjekts und fügt die Datenstruktur aus einem zwe
 
 **Parameter**
 
-* **tree:** Das kopierte Objekt.
+* **tree:** Das Objekt, das kopiert wird.
 * **secondTree:** Das Objekt, das mit der Kopie des  `tree` Objekts zusammengeführt wird.
 
 **Rückgabe**
 
 Ein Objekt, das die zusammengeführten Daten enthält.
 
-#### cleanup()   {#cleanup}
+#### cleanup()  {#cleanup}
 
 Erstellt eine Kopie eines Objekts, sucht und entfernt Elemente in der Datenstruktur, die keine Werte, Nullwerte oder undefinierten Werte enthalten, und gibt die Kopie zurück.
 
@@ -886,7 +885,7 @@ Erstellt eine Kopie eines Objekts, sucht und entfernt Elemente in der Datenstruk
 
 Eine Kopie der Struktur, die bereinigt wird.
 
-#### getItem()   {#getitem}
+#### getItem()  {#getitem}
 
 Ruft den Wert eines Objekts für den a-Schlüssel ab.
 
@@ -943,7 +942,7 @@ Object {
 }
 ```
 
-#### getKeys()   {#getkeys}
+#### getKeys()  {#getkeys}
 
 Ruft alle Schlüssel aus der Datenstruktur eines Objekts ab. Optional können Sie nur die Schlüssel der untergeordneten Elemente eines bestimmten Schlüssels abrufen. Sie können optional auch eine Sortierreihenfolge der abgerufenen Schlüssel angeben.
 
@@ -1043,7 +1042,7 @@ Bereinigt Stringwerte, um sie als Schlüssel nutzbar zu machen. Um einen String 
 
 Verwenden Sie das resultierende Array, um einen verwendbaren Schlüssel zu erstellen.  **Parameter**
 
-* **key:** Das  `string` zu bereinigende Element.
+* **key:** Die  `string` zu bereinigende
 
 **Rückgabe**
 
@@ -1128,7 +1127,7 @@ Gibt einen Store-Typ aus den registrierten Kandidaten zurück. Wenn mehr als ein
 
 Ein Objekt, das den registrierten Storekandidaten darstellt. Wenn der angeforderte Storetyp nicht registriert ist, wird ein Fehler ausgelöst.
 
-#### getSupportedStoreTypes()   {#getsupportedstoretypes}
+#### getSupportedStoreTypes()  {#getsupportedstoretypes}
 
 Gibt die Namen der Storetypen zurück, die als Storekandidaten registriert sind. Diese Funktion erfordert keine Parameter.
 
@@ -1146,7 +1145,7 @@ Die Priorität ist eine Zahl, die die Bedeutung der gleichnamigen Store angibt. 
 
 * **store:** (Objekt) Das Storeobjekt, das als Storekandidat registriert werden soll.
 * **storeType:** (String) Der Name des Storekandidaten. Dieser Wert wird beim Erstellen einer Instanz des Store-Kandidaten benötigt.
-* **Priorität:** (Zahl) Die Priorität des Store-Kandidaten.
+* **priority:**  (Number) Die Priorität des Store-Kandidaten.
 * **applies:** (Funktion) Die aufzurufende Funktion wertet die Anwendbarkeit des Stores in der aktuellen Umgebung aus. Die Funktion muss `true` zurückgeben, wenn der Store anwendbar ist, andernfalls `false`. Der Standardwert ist eine Funktion, die „true“ zurückgibt: `function() {return true;}`
 
 **Beispiel**
@@ -1155,4 +1154,3 @@ Die Priorität ist eine Zahl, die die Bedeutung der gleichnamigen Store angibt. 
 ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
                                 'contexthub.mystorecandiate', 0);
 ```
-
