@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
-translation-type: tm+mt
-source-git-commit: e5e00cc181c2dc3a28e25beb52f9a4c459ee313a
+exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1779'
 ht-degree: 97%
 
 ---
-
 
 # Konfigurieren der Segmentierung mit ContextHub {#configuring-segmentation-with-contexthub}
 
@@ -49,7 +48,7 @@ Der **Segmenteditor** ermöglicht Ihnen die einfache Veränderung eines Segment
 
 Mithilfe des Komponenten-Browsers können Sie **UND**- und **ODER**-Container zur Festlegung der Segmentlogik und anschließend zusätzliche Komponenten zum Vergleich von Eigenschaften und Werten oder Referenzskripts oder anderen Segmenten zur Definition der Auswahlkriterien (siehe [Erstellen eines neuen Segments](#creating-a-new-segment)) hinzufügen, um das genaue Szenario für die Auswahl des Segments festzulegen.
 
-Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird das Segment aufgelöst. Falls mehrere Segmente zutreffen, wird außerdem der Faktor **Verstärken** verwendet. Weitere Informationen zum Verstärkungsfaktor [finden Sie unter Erstellen eines neuen Segments](#creating-a-new-segment).[](/help/sites-administering/campaign-segmentation.md#boost-factor)
+Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird das Segment aufgelöst. Falls mehrere Segmente zutreffen, wird außerdem der Faktor **Verstärken** verwendet. Weitere Informationen zum Faktor [Verstärken finden Sie unter ](/help/sites-administering/campaign-segmentation.md#boost-factor) unter Erstellen eines neuen Segments](#creating-a-new-segment) .[
 
 >[!CAUTION]
 >
@@ -134,7 +133,7 @@ So legen Sie Ihr neues Segment fest:
 
 1. Navigieren Sie nach dem [Zugriff auf die Segmente](/help/sites-administering/segmentation.md#accessing-segments) [zu dem Ordner](#organizing-segments), in dem Sie das Segment erstellen möchten, oder belassen Sie es im Stammverzeichnis.
 
-1. Klicken oder tippen Sie auf die Schaltfläche Erstellen und wählen Sie **ContextHub-Segment** erstellen.
+1. Klicken oder tippen Sie auf die Schaltfläche Erstellen und wählen Sie **ContextHub-Segment erstellen** aus.
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
@@ -157,7 +156,7 @@ So legen Sie Ihr neues Segment fest:
 1. Klicken Sie auf **OK**, um Ihre Definition zu speichern:
 1. Fügen Sie bei Bedarf weitere Komponenten hinzu. Sie können boolesche Ausdrücke anhand der Containerkomponenten für UND- und ODER-Vergleiche formulieren (siehe [Verwenden von UND- und ODER-Containern](/help/sites-administering/segmentation.md#using-and-and-or-containers) weiter unten). Mit dem Segmenteditor können Sie nicht mehr benötigte Komponenten löschen oder diese an neue Positionen innerhalb der Anweisung ziehen.
 
-### Verwenden von UND- und ODER-Containern  {#using-and-and-or-containers}
+### Verwenden von UND- und ODER-Containern   {#using-and-and-or-containers}
 
 Mithilfe von UND- und ODER-Containerkomponenten können Sie komplexe Segmente in AEM erstellen. Hierbei ist es hilfreich, sich einige grundlegende Punkte bewusst zu machen:
 
