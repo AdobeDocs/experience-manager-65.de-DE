@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 4b09cd44-434e-4834-bc0d-c9c082a4ba5a
-translation-type: tm+mt
-source-git-commit: 5a99daa208d1d109d2736525fdca3accdcfb4dd1
+exl-id: 10eecfb8-d43d-4f01-9778-87c752dee64c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '788'
 ht-degree: 86%
 
 ---
-
 
 # Verwalten von Workflows{#administering-workflows}
 
@@ -32,14 +31,14 @@ Workflows ermöglichen Ihnen die Automatisierung von Adobe Experience Manager (A
 Die von Ihrer Organisation etablierten Geschäftsprozesse können als Workflows dargestellt werden. Der Prozess der Veröffentlichung von Website-Inhalten umfasst z. B. in der Regel Schritte wie die Genehmigung und Abnahme durch verschiedene beteiligte Personen. Diese Prozesse können als AEM-Workflows implementiert und auf Inhaltsseiten und Assets angewandt werden.
 
 * [Starten von Workflows](/help/sites-administering/workflows-starting.md)
-* [Verwalten der Workflow-Instanzen](/help/sites-administering/workflows-administering.md)
+* [Verwalten von Workflow-Instanzen](/help/sites-administering/workflows-administering.md)
 * [Verwalten des Zugriffs auf Workflows](/help/sites-administering/workflows-managing.md)
 
 >[!NOTE]
 >
 >Weitere Informationen finden Sie unter:
 >
->* Beantragung und Teilnahme an Workflows: [Arbeiten mit Workflows](/help/sites-authoring/workflows.md).
+>* Anwenden und Teilnehmen an Workflows: [Arbeiten mit Workflows](/help/sites-authoring/workflows.md).
 >* Das Erstellen von Workflow-Modellen und die Erweiterung der Workflow-Funktionalität: [Entwickeln und Erweitern von Workflows](/help/sites-developing/workflows.md).
 >* Verbesserung der Leistung von Workflows, die bedeutende Serverressourcen nutzen: [Gleichzeitige Workflow-Verarbeitung](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
 
@@ -47,7 +46,7 @@ Die von Ihrer Organisation etablierten Geschäftsprozesse können als Workflows 
 
 
 
-## Workflow-Modelle und -Instanzen {#workflow-models-and-instances}
+## Workflow-Modelle und -Instanzen  {#workflow-models-and-instances}
 
 [Workflow-Modelle](/help/sites-developing/workflows.md#model) in AEM sind die Darstellung und Implementierung von Geschäftsprozessen:
 
@@ -60,9 +59,9 @@ Wenn ein Workflow-Modell gestartet (ausgeführt) wird, wird eine Workflow-Instan
 
 >[!CAUTION]
 >
->Die Schritte sind diejenigen, die vom Workflow-Modell *zum Zeitpunkt der Generierung der Instanz* festgelegt wurden. Weitere Informationen finden Sie unter [Entwickeln Workflows](/help/sites-developing/workflows.md#model).
+>Die Schritte sind diejenigen, die vom Workflow-Modell *zum Zeitpunkt der Generierung der Instanz* festgelegt wurden. Weitere Informationen finden Sie unter [Entwickeln von Workflows](/help/sites-developing/workflows.md#model) .
 
-Workflow-Instanzen werden über den folgenden Lebenszyklus fortgeführt:
+Workflow-Instanzen durchlaufen den folgenden Lebenszyklus:
 
 1. Das Workflow-Modell wird gestartet und eine Workflow-Instanz wird erstellt und ausgeführt.
 
@@ -97,7 +96,7 @@ Ein Workflow kann einen der folgenden Status aufweisen:
 * **WIRD AUSGEFÜHRT**: Die Workflow-Instanz wird ausgeführt.
 * **ABGESCHLOSSEN**: Die Workflow-Instanz wurde erfolgreich beendet.
 
-* **AUSGESETZT**: Markiert den Workflow als ausgesetzt. Beachten Sie jedoch den Hinweis zur Vorsicht unten zu einem bekannten Problem mit diesem Status.
+* **AUSGESETZT**: Markiert den Workflow als ausgesetzt. Beachten Sie jedoch die unten stehende Hinweise zu einem Bekanntheitsfehler mit diesem Status.
 * **ABGEBROCHEN**: Die Workflow-Instanz wurde beendet.
 * **ALT**: Die Fortführung der Workflow-Instanz erfordert, dass ein Auftrag im Hintergrund ausgeführt wird, allerdings ist der Auftrag nicht im System zu finden. Diese Situation kann auftreten, wenn es bei der Ausführung des Workflows zu einem Fehler kommt.
 
@@ -111,8 +110,7 @@ Je nach dem aktuellen Status können Sie Aktionen zur Ausführung von Workflow-I
 
 >[!CAUTION]
 >
->Das Kennzeichnen eines Workflow-Status als &quot;Aussetzen&quot;hat ein bekanntes Problem. In diesem Status ist es möglich, Aktionen für ausgesetzte Workflow-Elemente in einem Posteingang durchzuführen.
+>Das Markieren eines Workflow-Status mit &quot;Aussetzen&quot;hat ein bekanntes Problem. In diesem Status ist es möglich, Aktionen für ausgesetzte Workflow-Elemente in einem Posteingang durchzuführen.
 
-* **Fortsetzen**: Startet einen unterbrochenen Workflow an demselben Punkt der Ausführung, an dem er ausgesetzt wurde, und verwendet dieselbe Konfiguration.
-* **Beenden**: Beendet die Workflow-Ausführung und ändert den Status in  **ABORTED**. Eine abgebrochene Workflow-Instanz kann nicht neu gestartet werden.
-
+* **Fortsetzen**: Startet einen ausgesetzten Workflow an der Stelle der Ausführung neu, an der er ausgesetzt wurde, und verwendet dabei dieselbe Konfiguration.
+* **Beenden**: Beendet die Workflow-Ausführung und ändert den Status in  **ABGEBROCHEN**. Eine abgebrochene Workflow-Instanz kann nicht neu gestartet werden.
