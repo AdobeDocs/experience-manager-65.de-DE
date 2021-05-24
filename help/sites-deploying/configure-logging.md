@@ -1,23 +1,22 @@
 ---
 title: Protokollierung
 seo-title: Protokollierung
-description: Erfahren Sie, wie Sie globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für einzelne Dienste festlegen oder eine Datenprotokollierung anfordern können.
-seo-description: Erfahren Sie, wie Sie globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für einzelne Dienste festlegen oder eine Datenprotokollierung anfordern können.
+description: Erfahren Sie, wie Sie globale Parameter für den zentralen Protokollierungs-Service konfigurieren, bestimmte Einstellungen für einzelne Services festlegen oder eine Datenprotokollierung anfordern können.
+seo-description: Erfahren Sie, wie Sie globale Parameter für den zentralen Protokollierungs-Service konfigurieren, bestimmte Einstellungen für einzelne Services festlegen oder eine Datenprotokollierung anfordern können.
 uuid: 8c9e3628-2f2c-445d-9706-5c7725b85fe2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 5aa69b10-2cd0-4d34-8104-8c3b88405926
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Konfiguration
+exl-id: b32001a1-0078-43f6-89d6-781d6d2e9c94
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 93%
 
 ---
-
 
 # Protokollierung{#logging}
 
@@ -25,7 +24,7 @@ Mit AEM können Sie Folgendes konfigurieren:
 
 * Globale Parameter für den zentralen Protokollierungsdienst
 * Anforderung einer Datenprotokollierung; eine spezielle Protokollierungskonfiguration zum Anfordern von Informationen
-* Spezifische Einstellungen für die einzelnen Dienste; zum Beispiel eine einzelne Protokolldatei und ein bestimmtes Format für die Protokollmeldungen
+* Spezifische Einstellungen für die einzelnen Dienste; Beispiel: eine einzelne Protokolldatei und das Format für die Protokollmeldungen
 
 Hierbei handelt es sich jeweils um [OSGi-Konfigurationen](/help/sites-deploying/configuring-osgi.md).
 
@@ -72,13 +71,13 @@ Diese Elemente sind über die folgenden Parameter mit den entsprechenden Element
 
    Hiermit werden der Dienst bzw. die Dienste zum Generieren der Meldungen definiert.
 
-* **Protokolldatei (Protokollprotokollierung)**
+* **Protokolldatei (Logging Logger)**
 
    Definieren Sie die physische Datei zum Speichern der Protokollmeldungen.
 
    Auf diese Weise werden Logging Logger und Logging Writer miteinander verknüpft. Der Wert muss für die herzustellende Verbindung mit den Parametern in der Logging-Writer-Konfiguration übereinstimmen.
 
-* **Protokolldatei (Protokollautor)**
+* **Protokolldatei (Protokollierungs-Writer)**
 
    Definieren Sie die physische Datei, in die die Protokollmeldungen geschrieben werden.
 
@@ -150,4 +149,3 @@ Sie können ein eigenes Logger-/Writer-Paar definieren:
 >[!NOTE]
 >
 >Unter bestimmten Bedingungen empfiehlt sich die Erstellung einer [benutzerdefinierten Protokolldatei](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
-
