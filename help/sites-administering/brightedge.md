@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: cf25c9a8-0555-4c67-8aa5-55984fd8d301
-translation-type: tm+mt
-source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
+exl-id: f14cc5fd-aeab-4619-b926-b6f1df7e50e5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 100%
 
 ---
-
 
 # Integration mit BrightEdge Content Optimizer{#integrating-with-brightedge-content-optimizer}
 
@@ -36,7 +35,7 @@ Wenn Sie die Konfiguration erstellen, geben Sie einen Titel ein. Der Titel sollt
 1. Geben Sie einen Titel für die Konfiguration ein. Optional können Sie einen Namen für den Knoten eingeben, mit dem die Konfiguration im Repository gespeichert wird. Klicken Sie auf Erstellen.
 1. Geben Sie im Dialogfeld „BrightEdge Content Optimizer-Konfiguration“ den Benutzernamen und das Kennwort des BrightEdge-Kontos ein und klicken Sie dann auf „OK“.
 
-## Bearbeiten einer BrightEdge-Konfiguration {#editing-a-brightedge-configuration}
+## Bearbeiten einer BrightEdge-Konfiguration  {#editing-a-brightedge-configuration}
 
 Ändern Sie bei Bedarf den Benutzernamen und das Kennwort einer BrightEdge-Konfiguration. Die Änderungen wirken sich auf alle Seiten aus, die die Konfiguration verwenden.
 
@@ -72,4 +71,3 @@ Aktivieren Sie eine BrightEdge-Konfiguration, um sie auf der Veröffentlichungsi
 1. Überprüfen Sie, ob in der angezeigten Liste der Konfigurationen Ihre BrightEdge-Konfiguration ausgewählt ist, und klicken Sie dann auf „Veröffentlichen“.
 
    ![chlimage_1-8](assets/chlimage_1-8a.png)
-
