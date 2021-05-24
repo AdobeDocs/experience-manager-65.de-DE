@@ -11,8 +11,7 @@ content-type: reference
 discoiquuid: ba6a56e5-b91c-4779-9154-d4300b2827f8
 docset: aem65
 exl-id: 7a4406c9-2f98-4bf8-b32c-1ec1e7ff36f0
-feature: Operations
-translation-type: tm+mt
+feature: Betrieb
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
 source-wordcount: '326'
@@ -34,11 +33,11 @@ Das Upgrade ermöglicht das Prüfen von Erstellungs-, Lese-, Aktualisierungs- un
 
 Standardmäßig werden die Einträge in die Datei `error.log` geschrieben. Um die Überwachung zu vereinfachen, empfiehlt es sich, diese Einträge in einer separaten Protokolldatei zu speichern. Weitere Informationen dazu finden Sie im folgenden Abschnitt.
 
-## Umleiten der Ausgabe in eine separate Protokolldatei {#redirecting-the-output-to-a-separate-log-file}
+## Umleiten der Ausgabe in eine separate Protokolldatei  {#redirecting-the-output-to-a-separate-log-file}
 
 Um die Protokollierungsausgabe in eine separate Protokolldatei umzuleiten, müssen Sie eine neue **Apache Sling Logging Logger**-Konfiguration erstellen. Im folgenden Beispiel verwenden wir `useraudit.log` als Namen dieser separaten Datei.
 
-1. Gehen Sie zur Web-Konsole, indem Sie *https://serveraddress:serverport/system/console/configMgr*
+1. Navigieren Sie zur Web-Konsole, indem Sie zu *https://serveraddress:serverport/system/console/configMgr* navigieren.
 1. Suchen Sie nach **Apache Sling Logging Logger Configuration**. Klicken Sie dann auf das Pluszeichen (+) auf der rechten Seite des Eintrags, um eine neue Werkskonfiguration zu erstellen.
 1. Erstellen Sie die folgende Konfiguration:
 
