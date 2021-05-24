@@ -10,7 +10,6 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '445'
@@ -18,7 +17,7 @@ ht-degree: 92%
 
 ---
 
-# Komponenten{#components}
+# Komponenten {#components}
 
 Adobe Experience Manager (AEM) ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website-Autoren umfangreiche Funktionen bieten. Diese sind beim [Bearbeiten einer Seite](/help/sites-authoring/editing-content.md) verfügbar und werden nach Hauptfunktionsbereich (d. h. Komponentengruppe) gruppiert, um die Filterung zu erleichtern.
 
@@ -30,7 +29,7 @@ Die Komponenten sind verfügbar, wenn Sie [eine Seite bearbeiten](/help/sites-au
 >
 >Abhängig von Ihrer Instanz besitzen Sie möglicherweise benutzerdefinierte Komponenten, die speziell für Ihre Anforderungen entwickelt wurden. Möglicherweise haben diese sogar denselben Namen wie die hier behandelten Komponenten.
 
-## Allgemeine Verwendung   {#general-usage}
+## Allgemeine Verwendung    {#general-usage}
 
 Die Komponenten sind im Seiten-Editor auf dem seitlichen Bedienfeld der Registerkarte **Komponenten** verfügbar, wenn Sie eine [Seite bearbeiten](/help/sites-authoring/editing-content.md).
 
@@ -62,7 +61,7 @@ Die folgenden Seiten enthalten Links zu einigen zusätzlichen, wichtigen Informa
 
 * [Communities](/help/communities/author-communities.md) – Komponenten bieten interaktive Funktionen für eine Website, z. B. Foren und Kommentare. Viele dieser Komponenten sind enthalten, wenn eine [Community-Site](/help/communities/overview.md) erstellt wird.
 
-* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)  - Die eCommerce-Funktionalität in AEM umfasst auch eine Reihe von Komponenten. Die tatsächliche Verwendung kann von der verwendeten Commerce-Engine abhängen.
+* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)  - Die eCommerce-Funktion in AEM umfasst auch eine Reihe von Komponenten. Die tatsächliche Verwendung kann von der verwendeten Commerce-Engine abhängen.
 
 ### Konfigurieren von Komponenten {#configuring-components}
 
