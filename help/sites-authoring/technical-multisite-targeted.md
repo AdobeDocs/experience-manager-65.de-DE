@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 7dd851ab-3fa7-426e-89cb-08b67e9b5999
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: d8ba91ff-ad6e-4540-baff-a2c0c764a299
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 100%
 
 ---
-
 
 # Strukturierung von Multisite-Management für zielgerichtete Inhalte{#how-multisite-management-for-targeted-content-is-structured}
 
@@ -35,4 +34,3 @@ Im folgenden Diagramm finden Sie ein Beispiel dafür, wie die Logik im Falle der
 * Site1 bezieht sich für Marke1 auf MeinGebiet1 und für Marke2 auf AnderesGebiet2, basierend auf der Gebietszuordnung.
 * Site2 bezieht sich für Marke1 auf MeinGebiet1 und für Marke2 auf das Mastergebiet, da nur für Marke1 Gebiete zugewiesen wurden.
 * Site3 bezieht sich für Marke1 und für Marke2 auf das Mastergebiet, weil für diese Site keine Gebietszuordnung vorgenommen wurde.
-
