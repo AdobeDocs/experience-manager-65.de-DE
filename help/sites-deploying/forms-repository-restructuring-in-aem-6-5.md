@@ -8,25 +8,24 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 1ce9a622-5968-407f-a74b-d325a2bff669
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Aktualisieren
+exl-id: d555422e-dc97-4d45-9525-4299d22315e2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 83%
 
 ---
 
-
 # Forms-Repository-Neustrukturierung in AEM 6.5{#forms-repository-restructuring-in-aem}
 
-Wie auf der übergeordneten Seite [Repository-Umstrukturierung in AEM 6.5](/help/sites-deploying/repository-restructuring.md) beschrieben, sollten Kunden, die auf AEM 6.5 aktualisieren, diese Seite verwenden, um den Arbeitsaufwand zu bewerten, der mit Repository-Änderungen verbunden ist, die die AEM Forms-Lösung beeinträchtigen. Einige Änderungen erfordern Arbeitsaufwand während des AEM 6.5-Aktualisierungsprozesses, während andere bis zu einem zukünftigen Upgrade verschoben werden können.
+Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/help/sites-deploying/repository-restructuring.md) beschrieben, sollten Kunden, die auf AEM 6.5 aktualisieren, diese Seite verwenden, um den Arbeitsaufwand im Zusammenhang mit Repository-Änderungen zu bewerten, die sich auf die AEM Forms-Lösung auswirken. Einige Änderungen erfordern während des Aktualisierungsprozesses von AEM 6.5 Arbeitsaufwand, während andere bis zu einer zukünftigen Aktualisierung verschoben werden können.
 
 **Mit der Aktualisierung auf 6.5**
 
 * [Verschiedenes](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#misc)
 
-**Vor der zukünftigen Aktualisierung**
+**Vor der künftigen Aktualisierung**
 
 * [Echosign-Cloud-Service-Konfiguration](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#echosign-cloud-service-configuration)
 * [Recaptcha-Cloud-Service-Konfigurationen](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#recaptcha-cloud-service-configurations)
@@ -40,7 +39,7 @@ Wie auf der übergeordneten Seite [Repository-Umstrukturierung in AEM 6.5](/help
 | **Vorheriger Speicherort** | `/etc/clientlibs/fd/fp` |
 |---|---|
 | **Neuer Speicherort** | `/libs/fd/fp/components` |
-| **Leitfaden für die Neustrukturierung** | Alle expliziten Verweise im benutzerdefinierten Code auf den Speicherort &quot;Veraltet&quot;müssen auf den Speicherort &quot;Neu&quot;aktualisiert werden. |
+| **Leitfaden für die Neustrukturierung** | Alle expliziten Verweise im benutzerdefinierten Code auf den alten Speicherort müssen an den neuen Speicherort aktualisiert werden. |
 | **Hinweise** | Diese Client-Bibliotheken sollten nicht modifiziert oder erweitert werden. |
 
 | **Vorheriger Speicherort** | `/etc/clientlibs/fd/rte` |
@@ -91,7 +90,7 @@ Wie auf der übergeordneten Seite [Repository-Umstrukturierung in AEM 6.5](/help
 | **Leitfaden für die Neustrukturierung** | Das Ändern dieser Client-Bibliotheken wurde nie empfohlen oder unterstützt. Wenn Änderungen an diesen Client-Bibliotheken vorgenommen wurden, sollten diese auf den von AEM bereitgestellten Code zurückgesetzt werden. |
 | **Hinweise** | Nicht zutreffend |
 
-## Vor der zukünftigen Aktualisierung {#prior-to-upgrade}
+## Vor der künftigen Aktualisierung {#prior-to-upgrade}
 
 ### Echosign-Cloud-Service-Konfiguration {#echosign-cloud-service-configuration}
 
@@ -101,7 +100,7 @@ Wie auf der übergeordneten Seite [Repository-Umstrukturierung in AEM 6.5](/help
 | **Leitfaden für die Neustrukturierung** | Das Dienstprogramm [Erleichterte Inhaltsmigration](/help/sites-deploying/lazy-content-migration.md) wird von der Migrationsoberfläche von Forms ausgelöst. |
 | **Hinweise** | Nicht zutreffend |
 
-### Recaptcha-Cloud-Service-Konfigurationen {#recaptcha-cloud-service-configurations}
+### Recaptcha-Cloud-Service-Konfigurationen  {#recaptcha-cloud-service-configurations}
 
 | **Vorheriger Speicherort** | `/etc/cloudservices/recaptcha` |
 |---|---|
@@ -128,6 +127,5 @@ Wie auf der übergeordneten Seite [Repository-Umstrukturierung in AEM 6.5](/help
 | **Vorheriger Speicherort** | `/etc/designs/fd/fp` |
 |---|---|
 | **Neuer Speicherort** | `/libs/fd/fp` |
-| **Leitfaden für die Neustrukturierung** | Alle Verweise auf die /etc-Vorlagen sollten irgendwann aktualisiert werden, um auf ihre `/libs`-Entsprechungen zu verweisen. |
+| **Leitfaden für die Neustrukturierung** | Alle Verweise auf die /etc-Vorlagen sollten schließlich aktualisiert werden, um auf ihre `/libs`-Entsprechungen zu verweisen. |
 | **Hinweise** | Nicht zutreffend |
-
