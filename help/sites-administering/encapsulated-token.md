@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
-translation-type: tm+mt
-source-git-commit: 215f062f80e7abfe35698743ce971394d01d0ed6
+exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 88%
 
 ---
-
 
 # Unterstützung von Encapsulated Tokens{#encapsulated-token-support}
 
@@ -36,11 +35,11 @@ Die Lösung besteht darin, dauerhafte Verbindungen auf der Ebene des Load-Balanc
 
 Wenn eine Veröffentlichungsinstanz nicht mehr verfügbar ist, gehen die Sitzungen aller auf dieser Instanz authentifizierten Benutzer verloren. Dies liegt daran, dass der Zugriff auf das Repository zur Validierung des Authentifizierungs-Cookies erforderlich ist.
 
-## „Stateless“-Authentifizierung mit dem Encapsulated Token {#stateless-authentication-with-the-encapsulated-token}
+## „Stateless“-Authentifizierung mit dem Encapsulated Token  {#stateless-authentication-with-the-encapsulated-token}
 
 Die Lösung für die horizontale Skalierbarkeit besteht in der „Stateless“-Authentifizierung, bei der die neue Unterstützung von Encapsulated Tokens in AEM genutzt wird.
 
-Das verkapselte Token ist ein Teil der Kryptographie, mit dem AEM Authentifizierungsinformationen sicher offline erstellen und validieren können, ohne auf das Repository zugreifen zu müssen. So kann eine Authentifizierungsabfrage auf allen Veröffentlichungsinstanzen ohne dauerhafte Verbindung erfolgen. Außerdem bietet dieser Ansatz den Vorteil, dass die Authentifizierungsleistung verbessert wird, da nicht bei jeder Authentifizierungsabfrage ein Zugriff auf das Repository vonnöten ist.
+Das Encapsulated Token ist eine Kryptografie, mit der AEM Authentifizierungsinformationen sicher offline erstellen und validieren können, ohne auf das Repository zugreifen zu müssen. So kann eine Authentifizierungsabfrage auf allen Veröffentlichungsinstanzen ohne dauerhafte Verbindung erfolgen. Außerdem bietet dieser Ansatz den Vorteil, dass die Authentifizierungsleistung verbessert wird, da nicht bei jeder Authentifizierungsabfrage ein Zugriff auf das Repository vonnöten ist.
 
 Wie dies in einer geografisch verteilten Bereitstellung mit MongoMK-Autoren und TarMK-Veröffentlichungsinstanzen funktioniert, sehen Sie in der folgenden Grafik:
 
@@ -56,12 +55,12 @@ Wie dies in einer geografisch verteilten Bereitstellung mit MongoMK-Autoren und 
 ## Konfigurieren des Encapsulated Tokens  {#configuring-the-encapsulated-token}
 
 >[!NOTE]
->Alle Authentifizierungs-Handler, die Benutzer synchronisieren und die Token-Authentifizierung nutzen (z. B. SAML und OAuth), funktionieren nur mit verkapselten Token, wenn:
+>Alle Authentifizierungs-Handler, die Benutzer synchronisieren und sich auf Token-Authentifizierung (wie SAML und OAuth) verlassen, funktionieren nur mit verkapselten Token, wenn:
 >
->* Fixierbare Sitzungen sind aktiviert oder
+>* fixierbare Sitzungen sind aktiviert oder
    >
    >
-* Benutzer werden bereits in AEM erstellt, wenn die Synchronisierung Beginn. Dies bedeutet, dass verkapselte Token nicht unterstützt werden, wenn die Handler **create** während des Synchronisierungsprozesses die Benutzer erstellen.
+* Benutzer werden bereits in AEM erstellt, wenn die Synchronisierung beginnt. Dies bedeutet, dass gekapselte Token in Situationen nicht unterstützt werden, in denen die Handler **create** -Benutzer während des Synchronisierungsprozesses verwenden.
 
 
 Bei der Konfiguration des Encapsulated Tokens müssen Sie einige Aspekte berücksichtigen:
@@ -105,4 +104,3 @@ Wenn Sie den HMAC-Schlüssel repliziert haben, können Sie das Encapsulated Toke
 1. Verweisen Sie Ihren Browser auf `https://serveraddress:port/system/console/configMgr`
 1. Suchen Sie den Eintrag **Day CRX Token Authentication Handler** und klicken Sie darauf.
 1. Aktivieren Sie im daraufhin angezeigten Fenster das Kontrollkästchen **Unterstützung von Encapsulated Tokens aktivieren**. Klicken Sie dann auf **Speichern**.
-
