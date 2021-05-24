@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
-translation-type: tm+mt
-source-git-commit: a156e09e77951041dce017f2f78069bc050b6bdb
+exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 88%
 
 ---
-
 
 # Prinzipalansicht für die Berechtigungsverwaltung{#principal-view-for-permissions-management}
 
@@ -43,7 +42,7 @@ Es gibt einen Filter, mit dem der Benutzer die Art der Prinzipale auswählen kan
 
 ![](assets/image2019-3-20_23-52-51.png)
 
-### Anzeigen von Berechtigungen für einen Prinzipal {#viewing-permissions-for-a-principal}
+### Anzeigen von Berechtigungen für einen Prinzipal  {#viewing-permissions-for-a-principal}
 
 Im Bereich auf der linken Seite können Benutzer nach unten blättern, um einen Prinzipal zu finden oder über den ausgewählten Filter nach einer Gruppe oder einem Benutzer zu suchen:
 
@@ -67,7 +66,7 @@ Hier wählen wir einen Pfad aus, in dem wir eine Berechtigung für **dam-users**
 
 ![](assets/sase-1.png)
 
-Nach Auswahl des Pfades kehrt der Workflow zu diesem Bildschirm zurück, wo der Benutzer eine oder mehrere der verfügbaren Namensraum auswählen kann (z. B. `jcr`, `rep` oder `crx`), wie unten dargestellt.
+Nachdem der Pfad ausgewählt wurde, kehrt der Workflow zu diesem Bildschirm zurück, wo der Benutzer eine oder mehrere der Berechtigungen aus den verfügbaren Namespaces auswählen kann (z. B. `jcr`, `rep` oder `crx`), wie unten dargestellt.
 
 Berechtigungen können hinzugefügt werden, indem Sie mit dem Textfeld suchen und dann aus der Liste auswählen.
 
@@ -93,7 +92,7 @@ Zusätzlich zur Liste der Berechtigungen und dem Berechtigungstyp für einen bes
 
 Einschränkungen können wie unten dargestellt hinzugefügt werden, indem Sie den Einschränkungstyp auswählen, den Wert eingeben und auf das **Pluszeichen** klicken. ![](assets/sapte-1.png) ![](assets/opt-1.png)
 
-Der neue ACE wird wie unten dargestellt in der Zugriffsteuerungsliste angezeigt. Beachten Sie, dass `jcr:write` eine Aggregat-Berechtigung ist, die `jcr:removeNode` enthält, die oben hinzugefügt wurde, aber unten nicht als deren abgedeckt unter `jcr:write` angezeigt wird.
+Der neue ACE wird wie unten dargestellt in der Zugriffsteuerungsliste angezeigt. Beachten Sie, dass `jcr:write` eine aggregierte Berechtigung ist, die `jcr:removeNode` enthält, die oben hinzugefügt wurde, aber unten nicht angezeigt wird, da sie unter `jcr:write` erfasst wird.
 
 ### Bearbeiten von ACEs {#editing-aces}
 
@@ -111,7 +110,7 @@ Hier fügen wir die Berechtigung `addChildNodes` für **dam-users** im angegeben
 
 ![](assets/image2019-3-21_0-45-35.png)
 
-Änderungen können gespeichert werden, indem Sie oben rechts auf die Schaltfläche **Speichern** klicken. Die Änderungen werden in den neuen Berechtigungen für **dam-Benutzer **wie unten dargestellt übernommen:
+Änderungen können gespeichert werden, indem Sie oben rechts auf die Schaltfläche **Speichern** klicken. Die Änderungen werden in den neuen Berechtigungen für **dam-users** übernommen, wie unten dargestellt:
 
 ![](assets/zece-1.png)
 
@@ -163,4 +162,3 @@ Das führte zu Unklarheit, was genau konfiguriert wird. In der folgenden Tabelle
   </tr>
  </tbody>
 </table>
-
