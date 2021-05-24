@@ -11,7 +11,6 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '2239'
@@ -141,7 +140,7 @@ In der Symbolleiste des Asset-Browsers können Sie Assets nach folgenden Kriteri
 * Name
 * Pfad
 * Asset-Typ (d. h. Bilder, Manuskripte, Dokumente, Videos, Seiten, Absätze oder Produkte)
-* Asset-Eigenschaften wie Ausrichtung (Hochformat, Querformat, Quadrat) und Stil (Farbe, Monochrom, Graustufen)
+* Asset-Eigenschaften wie Ausrichtung (Hochformat, Querformat, Quadrat) und Stil (Farbe, Schwarzweiß, Graustufen)
 
    * Nur für bestimmte Asset-Typen verfügbar
 
@@ -245,8 +244,8 @@ Wählen Sie den gewünschten Verweistyp, um weitere Informationen anzuzeigen: In
 
 * [Verweise auf Produktseiten](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (verfügbar in der Konsole „E-Commerce - Produkte“)
 * [Launches](/help/sites-authoring/launches.md) bietet Zugriff auf zugehörige Launches.
-* [](/help/sites-administering/msm.md)„Live Copies“ zeigt die Pfade aller Live Copies an, die auf der gewählten Ressource basieren. 
-* [Blueprint](/help/sites-administering/msm-best-practices.md), enthält Details und verschiedene Aktionen
+* [Live Copies](/help/sites-administering/msm.md) zeigt die Pfade aller Live Copies an, die auf der gewählten Ressource basieren.
+* [Blueprint](/help/sites-administering/msm-best-practices.md) bietet Details und verschiedene Aktionen.
 * [Sprachenkopien](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel) bietet Details und verschiedene Aktionen
 
 Sie können beispielsweise einen beschädigten Verweis innerhalb einer Verweiskomponente reparieren:
@@ -274,7 +273,7 @@ Mit „Seiteninformationen“ (Equalizer-Symbol) öffnen Sie ein Menü, das auch
 * [Eigenschaften öffnen](/help/sites-authoring/editing-page-properties.md)
 * [Seiten-Rollout](/help/sites-administering/msm.md#msm-from-the-ui)
 * [Workflow starten](/help/sites-authoring/workflows-applying.md#starting-a-workflow-from-the-page-editor)
-* [Seite sperren](/help/sites-authoring/editing-content.md#locking-a-page)
+* [Sperren einer Seite](/help/sites-authoring/editing-content.md#locking-a-page)
 * [Seite veröffentlichen](/help/sites-authoring/publishing-pages.md#main-pars-title-10)
 * [Veröffentlichen einer Seite rückgängig machen](/help/sites-authoring/publishing-pages.md#main-pars-title-5)
 * [Vorlage bearbeiten](/help/sites-authoring/templates.md), wenn die Seite auf einer [bearbeitbaren Vorlage](/help/sites-authoring/templates.md#editable-and-static-templates) basiert.
@@ -286,11 +285,11 @@ Mit „Seiteninformationen“ (Equalizer-Symbol) öffnen Sie ein Menü, das auch
 Beispielsweise stehen unter **Seiteninformationen** ggf. auch folgende Optionen zur Verfügung:
 
 * [Launch bewerben](/help/sites-authoring/launches-promoting.md), wenn die Seite ein Launch ist.
-* [In der klassischen ](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) Benutzeroberfläche öffnen, wenn diese Optionen von einem Administrator  [aktiviert wurden](/help/sites-administering/enable-classic-ui-editor.md)
+* [In klassischer ](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) Benutzeroberfläche öffnen, wenn diese Optionen von einem Administrator  [aktiviert wurden](/help/sites-administering/enable-classic-ui-editor.md)
 
 Darüber hinaus können über die **Seiteninformationen** ggf. auch Analysen und Empfehlungen aufgerufen werden.
 
-## Seitenmodi   {#page-modes}
+## Seitenmodi  {#page-modes}
 
 Für die Bearbeitung von Seiten stehen verschiedene Modi zur Verfügung, über die jeweils unterschiedliche Aktionen durchgeführt werden können:
 
@@ -328,7 +327,7 @@ Sie können darauf über das Symbol oben rechts im Bildschirm zugreifen. Das Sym
 
 ## Pfadauswahl {#path-selection}
 
-Oft muss bei der Bearbeitung einer Seite eine andere Ressource ausgewählt werden (z. B. zum Definieren eines Links zu einer anderen Seite/Ressource oder zum Auswählen eines Bilds). Zur Vereinfachung der Pfadauswahl werden Eingaben in den [Pfad-Feldern](/help/sites-authoring/author-environment-tools.md#path-fields) automatisch ausgefüllt. Ergänzend dazu stehen zudem leistungsstarke Auswahlfunktionen im [Pfadbrowser](/help/sites-authoring/author-environment-tools.md#path-browser) zur Verfügung.
+Oft muss bei der Bearbeitung einer Seite eine andere Ressource ausgewählt werden (z. B. zum Definieren eines Links zu einer anderen Seite/Ressource oder zum Auswählen eines Bilds). Zur Vereinfachung der Pfadauswahl werden Eingaben in den [Pfad-Feldern](/help/sites-authoring/author-environment-tools.md#path-fields) automatisch ausgefüllt. Ergänzend dazu stehen zudem leistungsstarke Auswahlfunktionen im [Pfad-Browser](/help/sites-authoring/author-environment-tools.md#path-browser) zur Verfügung.
 
 ### Pfadfelder {#path-fields}
 
