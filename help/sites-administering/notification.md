@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
-translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 76%
 
 ---
-
 
 # Konfigurieren von E-Mail-Benachrichtigungen{#configuring-email-notification}
 
@@ -38,7 +37,7 @@ Wenn ein Benutzer benachrichtigt wird, erhält er eine E-Mail in der Sprache, di
 >
 >Beim Arbeiten mit AEM sind mehrere Methoden zum Verwalten der Konfigurationseinstellungen für solche Dienste verfügbar. Weitere Informationen und empfohlene Verfahren finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
-## Konfigurieren des E-Mail-Diensts {#configuring-the-mail-service}
+## Konfigurieren des E-Mail-Diensts  {#configuring-the-mail-service}
 
 Damit AEM E-Mails versenden kann, muss der **Day CQ Mail Service** ordnungsgemäß konfiguriert sein. Sie können die Konfiguration in der Web-Konsole anzeigen. Beim Arbeiten mit AEM sind mehrere Methoden zum Verwalten der Konfigurationseinstellungen für solche Dienste verfügbar. Weitere Informationen und empfohlene Verfahren finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
@@ -64,17 +63,17 @@ Wenn Sie entweder Benachrichtigungen zu Seiten- oder Forenereignissen abonniert 
 Fügen Sie zum Konfigurieren der „Von“-E-Mail-Adresse einen `sling:OsgiConfig`-Knoten zum Repository hinzu. Verwenden Sie das folgende Verfahren, um den Knoten direkt mithilfe von CRXDE Lite hinzuzufügen:
 
 1. Fügen Sie in CRXDE Lite einen Ordner mit dem Namen `config` unter Ihrem Anwendungsordner hinzu.
-1. Fügen Sie im Ordner &quot;config&quot;einen Knoten mit dem Namen:
+1. Fügen Sie im Konfigurationsordner einen Knoten mit dem Namen hinzu:
 
    `com.day.cq.wcm.notification.email.impl.EmailChannel` vom Typ `sling:OsgiConfig`
 
-1. hinzufügen Sie eine `String`-Eigenschaft auf den Knoten `email.from`. Legen Sie zu dem Wert die E-Mail-Adresse fest, die Sie verwenden möchten.
+1. Fügen Sie dem Knoten `email.from` eine `String` -Eigenschaft hinzu. Legen Sie zu dem Wert die E-Mail-Adresse fest, die Sie verwenden möchten.
 
 1. Klicken Sie auf **Alle speichern**.
 
 Gehen Sie wie folgt vor, um den Knoten in den Inhaltspaketen Ihrer Quellordner festzulegen:
 
-1. Erstellen Sie in Ihrer `jcr_root/apps/*app_name*/config folder`-Datei eine Datei mit dem Namen `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`
+1. Erstellen Sie in `jcr_root/apps/*app_name*/config folder` eine Datei mit dem Namen `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`
 
 1. Fügen Sie die folgende XML für den Knoten hinzu:
 
@@ -138,18 +137,18 @@ Die Vorlage muss folgendes Format aufweisen:
 
 Dabei kann &lt;text_x> ein Mix von statischem Text und dynamischen Stringvariablen sein. Die folgenden Variablen können innerhalb der E-Mail-Vorlage für Seitenbenachrichtigungen verwendet werden:
 
-* `${time}`, Ereignis und Uhrzeit.
+* `${time}`, Datum und Uhrzeit des Ereignisses.
 
 * `${userFullName}`, der vollständige Name des Benutzers, der das Ereignis ausgelöst hat.
 
 * `${userId}`, die ID des Benutzers, der das Ereignis ausgelöst hat.
-* `${modifications}`, beschreibt den Typ des Seiten-Ereignisses und den Seitenpfad im Format:
+* `${modifications}`beschreibt den Typ des Seitenereignisses und den Seitenpfad im folgenden Format:
 
    &lt;page event=&quot;&quot; type=&quot;&quot;> =>  &lt;page path=&quot;&quot;>
 
    Beispiel:
 
-   PageModified => /content/geometrixx/de/products
+   PageModified => /content/geometrixx/en/products
 
 ### E-Mail-Vorlagen für die Forumsbenachrichtigung {#email-templates-for-forum-notification}
 
@@ -198,7 +197,7 @@ Dabei kann `<text_x>` eine Mischung aus statischem Text und dynamischen Zeichenf
 
 Die folgenden Variablen können innerhalb der E-Mail-Vorlage für Forumsbenachrichtigungen verwendet werden:
 
-* `${time}`, Ereignis und Uhrzeit.
+* `${time}`, Datum und Uhrzeit des Ereignisses.
 
 * `${forum.path}`, der Pfad zur Forumsseite.
 
@@ -251,20 +250,20 @@ subject=<text_1>
 
 >[!NOTE]
 >
->Dabei kann `<text_x>` eine Mischung aus statischem Text und dynamischen Zeichenfolgenvariablen sein. Jede Zeile eines Elements `<text_x>` muss mit einem umgekehrten Schrägstrich ( `\`) beendet werden, mit Ausnahme der letzten Instanz, wenn das Fehlen des umgekehrten Schrägstrichs das Ende der Zeichenfolgenvariablen `<text_x>` angibt.
+>Dabei kann `<text_x>` eine Mischung aus statischem Text und dynamischen Zeichenfolgenvariablen sein. Jede Zeile eines Elements `<text_x>` muss mit einem umgekehrten Schrägstrich ( `\`) enden, mit Ausnahme der letzten Instanz, wenn das Fehlen des umgekehrten Schrägstrichs das Ende der String-Variable `<text_x>` anzeigt.
 >
 >Weitere Informationen zum Vorlagenformat werden von der Methode [javadocs der Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-)-Methode bereitgestellt.
 
-Die Methode `${payload.path.open}` zeigt den Pfad zur Nutzlast des Arbeitselements an. Beispiel: Für eine Seite in Sites wäre `payload.path.open` ähnlich wie `/bin/wcmcommand?cmd=open&path=…`.; dies ohne den Servernamen ist, weshalb die Vorlage dieser mit `${host.prefix}` voranstellt.
+Die Methode `${payload.path.open}` zeigt den Pfad zur Payload des Arbeitselements an. Für eine Seite in Sites wäre `payload.path.open` beispielsweise `/bin/wcmcommand?cmd=open&path=…` ähnlich wie .; Dies ist ohne den Servernamen, weshalb der Vorlage `${host.prefix}` vorangestellt wird.
 
 Die folgenden Variablen können innerhalb der E-Mail-Vorlage verwendet werden:
 
-* `${event.EventType}`, Typ des Ereignisses
+* `${event.EventType}`, Ereignistyp
 * `${event.TimeStamp}`, Datum und Uhrzeit des Ereignisses
 * `${event.User}`, der Benutzer, der das Ereignis ausgelöst hat
-* `${initiator.home}`, der Pfad des Initiator-Knotens
+* `${initiator.home}`, den Initiator-Knotenpfad
 
-* `${initiator.name}`, der Name des Initiators
+* `${initiator.name}`, den Namen des Initiators
 
 * `${initiator.email}`, die E-Mail-Adresse des Initiators
 * `${item.id}`, die ID des Arbeitselements
@@ -273,7 +272,7 @@ Die folgenden Variablen können innerhalb der E-Mail-Vorlage verwendet werden:
 * `${participant.email}`, E-Mail-Adresse des Teilnehmers
 * `${participant.name}`, Name des Teilnehmers
 * `${participant.familyName}`, Familienname des Teilnehmers
-* `${participant.id}`, ID des Teilnehmers
+* `${participant.id}`, der Teilnehmerkennung
 * `${participant.language}`, die Teilnehmersprache
 * `${instance.id}`, die Workflow-ID
 * `${instance.state}`, den Workflow-Status
@@ -281,9 +280,9 @@ Die folgenden Variablen können innerhalb der E-Mail-Vorlage verwendet werden:
 * `${model.id}`, die ID des Workflow-Modells
 
 * `${model.version}`, die Version des Workflow-Modells
-* `${payload.data}`, Nutzlast
+* `${payload.data}`, die Payload
 
-* `${payload.type}`, den Nutzlasttyp
+* `${payload.type}`, der Payload-Typ
 * `${payload.path}`, Pfad der Payload
 * `${host.prefix}`, Host-Präfix, z. B. http://localhost:4502
 
@@ -294,7 +293,7 @@ Sie können wie folgt eine Vorlage in einer neuen Sprache hinzufügen:
 1. Fügen Sie in CRXDE eine Datei `<language-code>.txt` unten hinzu:
 
    * `/etc/notification/email/default/com.day.cq.wcm.core.page` : für Seitenbenachrichtigungen
-   * `/etc/notification/email/default/com.day.cq.collab.forum` : Forumsbenachrichtigungen
+   * `/etc/notification/email/default/com.day.cq.collab.forum` : für Forumsbenachrichtigungen
    * `/etc/workflow/notification/email/default` : für Workflow-Benachrichtigungen
 
 1. Passen Sie die Datei an die Sprache an.
@@ -302,7 +301,7 @@ Sie können wie folgt eine Vorlage in einer neuen Sprache hinzufügen:
 
 >[!NOTE]
 >
->Der als Dateiname für die E-Mail-Vorlage verwendete `<language-code>` muss ein aus zwei Buchstaben bestehender Sprachcode sein, der von AEM erkannt wird. AEM nutzt die Sprachcodes gemäß ISO-639-1.
+>`<language-code>`, der als Dateiname für die E-Mail-Vorlage verwendet wird, muss ein aus zwei Buchstaben bestehender untergeordneter Sprachcode sein, der von AEM erkannt wird. AEM nutzt die Sprachcodes gemäß ISO-639-1.
 
 ## Konfigurieren von E-Mail-Benachrichtigungen für AEM Assets {#assetsconfig}
 
@@ -311,4 +310,3 @@ Wenn Sammlungen in AEM Assets freigegeben werden oder ihre Freigabe aufgehoben w
 1. Konfigurieren Sie den E-Mail-Dienst, wie oben unter [Konfigurieren des E-Mail-Diensts](/help/sites-administering/notification.md#configuring-the-mail-service) beschrieben.
 1. Melden Sie sich in AEM als Administrator an. Klicken Sie auf **Tools**> **Vorgänge**> **Web-Konsole**, um die Konfiguration der Web-Konsole zu öffnen.
 1. Bearbeiten Sie das **Day CQ DAM-Ressourcensammlungs-Servlet**. Wählen Sie **E-Mail senden**. Klicken Sie auf **Speichern**.
-
