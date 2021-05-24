@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 4f62078d-b5b0-4eb9-bd9b-7647a093dec2
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: e64a66cb-d56a-4504-8883-609143d0daf8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 74%
 
 ---
 
-
-# Launches{#launches}
+# Starts{#launches}
 
 Mithilfe von Launches können Sie effizient Inhalte für eine künftige Version entwickeln.
 
@@ -26,12 +25,12 @@ Ein Launch wird erstellt, damit Sie (unter Beibehaltung der aktuellen Seiten) Ä
 
 >[!NOTE]
 >
->Die Theorie hinter Startvorgängen wird in der Standarddokumentation zur Inhaltserstellung unter [Launches](/help/sites-authoring/launches.md) ausführlich beschrieben.
+>Die Theorie hinter den Launches wird ausführlich unter [Launches](/help/sites-authoring/launches.md) in der Standarddokumentation für die Bearbeitung beschrieben.
 >
->Spezifische Informationen zur Verwendung von Launches in der klassischen Benutzeroberfläche finden Sie in der folgenden Dokumentation zusammen mit [Erstellen von Launches](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Editing Launches](/help/sites-classic-ui-authoring/classic-launches-editing.md) und [Promoting Launches](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
+>Spezifische Informationen zur Verwendung von Launches in der klassischen Benutzeroberfläche finden Sie in der folgenden Dokumentation zusammen mit [Erstellen von Launches](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Bearbeiten von Launches](/help/sites-classic-ui-authoring/classic-launches-editing.md) und [Weiterleiten von Launches](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
 
 >[!CAUTION]
 >
 >Mehrere Quellseiten für einen Launch sind in der klassischen Benutzeroberfläche nicht möglich.
 
-Die Startkonsole kann direkt mit [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html) aufgerufen werden.
+Die Konsole &quot;Launches&quot;kann direkt mit [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html) aufgerufen werden.
