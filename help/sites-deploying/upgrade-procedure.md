@@ -11,15 +11,14 @@ content-type: reference
 discoiquuid: 5c035d4c-6e03-48b6-8404-800b52d659b8
 docset: aem65
 targetaudience: target-audience upgrader
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Aktualisieren
+exl-id: 5242600c-2281-46f9-a347-d985b4e319b3
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 94%
 
 ---
-
 
 # Aktualisierungsverfahren {#upgrade-procedure}
 
@@ -35,7 +34,7 @@ Wenn Sie die AEM-Umgebungen aktualisieren, müssen Sie sich die Unterschiede bei
 >The downtime during the upgrade can be significally reduced by indexing the repository before performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)
 -->
 
-## Autorenschicht auf TarMK {#tarmk-author-tier}
+## Autorenschicht auf TarMK  {#tarmk-author-tier}
 
 ### Starten der Topologie {#starting-topology}
 
@@ -78,7 +77,7 @@ In diesem Abschnitt wird von einer Topologie mit einem Autorenserver ausgegangen
 
 ### Bei fehlgeschlagener Aktualisierung (Rollback) {#if-unsuccessful-rollback}
 
-![rollback](assets/rollback.jpg)
+![Rollback](assets/rollback.jpg)
 
 1. Starten Sie die Cold-Standby-Instanz als neue Primärinstanz.
 
@@ -99,8 +98,8 @@ In diesem Abschnitt wird von einer Topologie mit einem MongoMK-Autoren-Cluster m
 1. Beenden Sie das Verfassen von Inhalten.
 1. Erstellen Sie einen Klon des Datenspeichers als Backup.
 1. Beenden Sie alle AEM-Autoreninstanzen bis auf eine, die als primäre Autoreninstanz fungiert.
-1. Entfernen Sie alle bis auf einen MongoDB-Knoten aus dem Replikationssatz, Ihrer primären Mongo-Instanz
-1. Aktualisieren Sie die `DocumentNodeStoreService.cfg`-Datei im primären Autor, um den Replikationssatz Ihres einzelnen Mitglieds wiederzugeben.
+1. Entfernen Sie alle bis auf einen MongoDB-Knoten aus der Replikatgruppe, Ihrer primären Mongo-Instanz.
+1. Aktualisieren Sie die Datei `DocumentNodeStoreService.cfg` auf der primären Autoreninstanz, um die Replikatgruppe Ihrer einzelnen Mitglieder widerzuspiegeln.
 1. Starten Sie die primäre Autoreninstanz neu, um sicherzustellen, dass diese richtig ausgeführt wird.
 1. Deaktivieren Sie die Replikationsagenten auf der primären Autoreninstanz.
 1. Führen Sie die [Wartungsaufgaben vor einer Aktualisierung](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) auf der primären Autoreninstanz aus.
@@ -108,7 +107,7 @@ In diesem Abschnitt wird von einer Topologie mit einem MongoMK-Autoren-Cluster m
 
 ### Ausführen der Aktualisierung {#Upgrade-execution-1}
 
-![Mongo-Ausführung](assets/mongo-execution.jpg)
+![mongo-execution](assets/mongo-execution.jpg)
 
 1. Führen Sie [„Ersetzende Aktualisierung“](/help/sites-deploying/in-place-upgrade.md) auf der primären Autoreninstanz aus.
 1. Aktualisieren Sie das Dispatcher- oder Web-Modul, *falls erforderlich*.
@@ -116,7 +115,7 @@ In diesem Abschnitt wird von einer Topologie mit einem MongoMK-Autoren-Cluster m
 
 ### Bei erfolgreicher Aktualisierung {#if-successful-1}
 
-![Mongo-Sekondarien](assets/mongo-secondaries.jpg)
+![mongo-secondaries](assets/mongo-secondaries.jpg)
 
 1. Erstellen Sie neue 6.5-Autoreninstanzen, die mit der aktualisierten Mongo-Instanz verbunden sind.
 
@@ -201,4 +200,3 @@ In diesem Abschnitt wird von einer Topologie mit zwei TarMK-Veröffentlichungsin
 1. Führen Sie[ Prüfungen nach der Aktualisierung](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md) durch.
 
 ![final](assets/final.jpg)
-
