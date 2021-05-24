@@ -74,13 +74,13 @@ Darüber hinaus können Sie festlegen, welche Standby-Instanzen eine Verbindung 
 >
 >Es wird empfohlen, einen Lastenausgleich zwischen dem Dispatcher und den Servern hinzuzufügen, die Teil der Cold-Standby-Konfiguration bilden. Der Lastenausgleich sollte so konfiguriert werden, dass Benutzer-Traffic nur an die **primäre** Instanz weitergeleitet wird. Dies soll die Konsistenz fördern und verhindern, dass Inhalte auf der Standby-Instanz mit anderen Mitteln als dem Cold-Standby-Mechanismus kopiert werden.
 
-## Erstellen einer TarMK-Cold-Standby-Konfiguration für AEM {#creating-an-aem-tarmk-cold-standby-setup}
+## Erstellen einer TarMK-Cold-Standby-Konfiguration für AEM  {#creating-an-aem-tarmk-cold-standby-setup}
 
 >[!CAUTION]
 >
 >Die PID für den Segment-Knotenspeicher und den Standby-Speicherdienst in AEM 6.3 wurde im Vergleich zu Vorgängerversionen wie folgt geändert:
 >
->* von org.apache.jackrabbit.oak.**plugins**.segment.standby.store.StandbyStoreService zu org.apache.jackrabbit.oak.segment.standby.store.StandbyStore.StandbyStoreService
+>* von org.apache.jackrabbit.oak.**plugins**.segment.standby.store.StandbyStoreService zu org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService
 >* von org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService zu org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
 
 >
@@ -96,7 +96,7 @@ Nachfolgend sind die erforderlichen Schritte zum Erstellen einer Konfiguration m
 1. Beenden Sie die Instanz und kopieren Sie deren Installationsordner an den Speicherort, von dem aus die Cold-Standby-Instanz ausgeführt werden soll. Selbst wenn sie auf unterschiedlichen Rechnern ausgeführt wird, müssen Sie jedem Ordner einen aussagekräftigen Namen zuweisen (z. B. *aem-primary* oder *aem-standby*), um zwischen den Instanzen zu unterscheiden.
 1. Navigieren Sie zum Installationsordner der primären Instanz und führen Sie folgende Schritte aus:
 
-   1. Prüfen und löschen Sie alle vorherigen OSGi-Konfigurationen, die Sie unter `aem-primary/crx-quickstart/install` haben
+   1. Überprüfen und löschen Sie alle vorherigen OSGi-Konfigurationen, die Sie unter `aem-primary/crx-quickstart/install` haben
 
    1. Erstellen Sie einen Ordner mit dem Namen `install.primary` unter `aem-primary/crx-quickstart/install`
 
@@ -145,12 +145,12 @@ Nachfolgend sind die erforderlichen Schritte zum Erstellen einer Konfiguration m
    java -jar quickstart.jar -r primary,crx3,crx3tar
    ```
 
-1. Erstellen Sie einen neuen Apache Sling Logging Logger für das Paket **org.apache.jackrabbit.oak.segment**. Setzen Sie die Protokollebene auf &quot;Debug&quot;und verweisen Sie die Protokollausgabe auf eine separate Protokolldatei, z. B. */logs/tarmk-coldstandby.log*. Weitere Informationen finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md).
+1. Erstellen Sie einen neuen Apache Sling Logging Logger für das Paket **org.apache.jackrabbit.oak.segment**. Setzen Sie die Protokollebene auf &quot;Debuggen&quot;und verweisen Sie die Protokollausgabe auf eine separate Protokolldatei, z. B. */logs/tarmk-coldstandby.log*. Weitere Informationen finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md).
 1. Navigieren Sie zum Speicherort der Instanz **standby** und starten Sie diese durch Ausführen der JAR-Datei.
 1. Erstellen Sie dieselbe Protokollierungskonfiguration wie für die primäre Instanz. Beenden Sie anschließend die Instanz.
 1. Bereiten Sie dann die Standby-Instanz vor. Hierzu können Sie dieselben Schritte wie für die primäre Instanz ausführen:
 
-   1. Löschen Sie alle Dateien, die Sie unter `aem-standby/crx-quickstart/install` haben.
+   1. Löschen Sie alle Dateien, die Sie möglicherweise unter `aem-standby/crx-quickstart/install` haben.
    1. Erstellen Sie einen neuen Ordner mit dem Namen `install.standby` unter `aem-standby/crx-quickstart/install`
 
    1. Erstellen Sie zwei Konfigurationsdateien mit den folgenden Namen:
@@ -204,15 +204,15 @@ Nachfolgend sind die erforderlichen Schritte zum Erstellen einer Konfiguration m
 
 Der Dienst kann auch über die Web-Konsole konfiguriert werden. Führen Sie hierzu folgende Schritte aus:
 
-1. Gehen Sie zur Web-Konsole unter: *https://serveraddress:serverport/system/console/configMgr*
-1. Suchen Sie nach einem Dienst namens **Apache Jackrabbit Oak Segment Tar Cold Standby Service** und klicken Sie auf diesen Dienst, um die Einstellungen zu bearbeiten.
+1. Wechseln Sie zur Web-Konsole unter: *https://serveraddress:serverport/system/console/configMgr*
+1. Suchen Sie nach einem Dienst namens **Apache Jackrabbit Oak Segment Tar Cold Standby Service** und doppelklicken Sie darauf, um die Einstellungen zu bearbeiten.
 1. Speichern Sie die Einstellungen und starten Sie die Instanzen neu, damit die neuen Einstellungen übernommen werden.
 
 >[!NOTE]
 >
 >Sie können die Rolle einer Instanz jederzeit überprüfen, indem Sie in der Web-Konsole für die Sling-Einstellungen prüfen, ob die Ausführungsmodi **primary** oder **standby** vorhanden sind.
 >
->Dazu gehen Sie zu *https://localhost:4502/system/console/status-slingsettings* und überprüfen Sie die Zeile **&quot;Ausführungsmodi&quot;**.
+>Gehen Sie dazu zu *https://localhost:4502/system/console/status-slingsettings* und überprüfen Sie die Zeile **&quot;Ausführungsmodi&quot;** .
 
 ## Erstsynchronisierung {#first-time-synchronization}
 
@@ -272,18 +272,18 @@ Die folgenden OSGi-Einstellungen sind für den Cold-Standby-Dienst verfügbar:
 
 * **Konfiguration beibehalten:** Bei Aktivierung dieser Option wird die Konfiguration im Repository anstatt wie üblich in den OSGi-Konfigurationsdateien gespeichert. Es wird empfohlen, diese Einstellung auf Produktionssystemen zu deaktivieren, damit die Konfiguration der primären Instanz nicht von der Standby-Instanz abgerufen wird.
 
-* **Modus (`mode`):** Hiermit wird der Ausführungsmodus der Instanz ausgewählt.
+* **Modus (`mode`):** Dadurch wird der Ausführungsmodus der Instanz ausgewählt.
 
 * **Port (port):** Der für die Kommunikation zu verwendende Port. Der Standardwert lautet `8023`.
 
-* **Primär host (`primary.host`):** - der Host der primären Instanz. Diese Einstellung gilt nur für die Standby-Instanz.
+* **Primärer Host (`primary.host`):**  - der Host der primären Instanz. Diese Einstellung gilt nur für die Standby-Instanz.
 * **Synchronisierungsintervall (`interval`):**  Diese Einstellung bestimmt das Intervall zwischen der Synchronisierungsanforderung und gilt nur für die Standby-Instanz.
 
-* **Zulässige IP-Bereiche (`primary.allowed-client-ip-ranges`):** - die IP-Bereiche, aus denen die primären Verbindungen zulassen.
-* **Sicher (`secure`):SSL-Verschlüsselung** aktivieren. Damit Sie die Einstellung nutzen können, muss sie auf allen Instanzen aktiviert werden.
-* **Standby Read Timeout (`standby.readtimeout`):** Timeout für Anfragen, die von der Standby-Instanz in Millisekunden ausgegeben werden. Der Standardwert ist 60000 (eine Minute).
+* **Zulässige IP-Bereiche (`primary.allowed-client-ip-ranges`):**  - die IP-Bereiche, aus denen die primäre Instanz Verbindungen zulässt.
+* **Sicher (`secure`):** Aktivieren Sie die SSL-Verschlüsselung. Damit Sie die Einstellung nutzen können, muss sie auf allen Instanzen aktiviert werden.
+* **Standby-Lesezeitlimit (`standby.readtimeout`):**  Zeitüberschreitung für von der Standby-Instanz ausgegebene Anforderungen in Millisekunden. Der Standardwert ist 60000 (eine Minute).
 
-* **Automatische Standby-Bereinigung (`standby.autoclean`):** Rufen Sie die Bereinigungsmethode auf, wenn die Größe des Speichers bei einem Synchronisierungszyklus zunimmt.
+* **Automatische Bereinigung im Standby-Modus (`standby.autoclean`):**  Rufen Sie die Bereinigungsmethode auf, wenn die Größe des Stores in einem Synchronisierungszyklus zunimmt.
 
 >[!NOTE]
 >
@@ -319,9 +319,9 @@ Die empfohlene Methode zum Anwenden von Hotfixes auf eine Cold-Standby-Konfigura
 
 Führen Sie hierzu die nachfolgend beschriebenen Schritte aus:
 
-1. Beenden Sie den Synchronisierungsprozess auf der kalten Standby-Instanz, indem Sie zur JMX-Konsole navigieren und die Datei **org.apache.jackrabbit.oak verwenden: Status (&quot;Standby&quot;)**Bean. Weitere Informationen dazu finden Sie im Abschnitt [Überwachung](#monitoring).
+1. Beenden Sie den Synchronisierungsprozess auf der Cold-Standby-Instanz, indem Sie zur JMX-Konsole navigieren und die **org.apache.jackrabbit.oak verwenden: Status (&quot;Standby&quot;)**Bean. Weitere Informationen dazu finden Sie im Abschnitt zu [Monitoring](#monitoring).
 1. Beenden Sie die Cold-Standby-Instanz.
-1. Installieren Sie den Hotfix auf der primären Instanz. Weitere Informationen zum Installieren eines Hotfixes finden Sie unter [So arbeiten Sie mit Paketen](/help/sites-administering/package-manager.md).
+1. Installieren Sie den Hotfix auf der primären Instanz. Weitere Informationen zum Installieren eines Hotfixes finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md).
 1. Testen Sie die Instanz nach der Installation auf mögliche Probleme.
 1. Entfernen Sie die Cold-Standby-Instanz durch Löschen des entsprechenden Installationsordners.
 1. Beenden Sie die primäre Instanz und klonen Sie sie. Erstellen Sie hierzu eine Dateisystemkopie des gesamten Installationsordners am Speicherort der Cold-Standby-Instanz.
@@ -330,7 +330,7 @@ Führen Sie hierzu die nachfolgend beschriebenen Schritte aus:
 
 ## Überwachung {#monitoring}
 
-Diese Funktion stellt Informationen mithilfe von JMX oder MBeans bereit. So können Sie den aktuellen Status der Standby- und Master-Instanz mithilfe der [JMX-Konsole](/help/sites-administering/jmx-console.md) überprüfen. Die Informationen befinden sich in einem MBean von `type org.apache.jackrabbit.oak:type="Standby"`mit dem Namen `Status`.
+Diese Funktion stellt Informationen mithilfe von JMX oder MBeans bereit. So können Sie den aktuellen Status der Standby- und Master-Instanz mithilfe der [JMX-Konsole](/help/sites-administering/jmx-console.md) überprüfen. Die Informationen finden Sie in einem MBean von `type org.apache.jackrabbit.oak:type="Standby"`mit dem Namen `Status`.
 
 **Standby**-Instanz
 
@@ -345,19 +345,19 @@ Dieser Knoten verfügt über fünf schreibgeschützte Attribute:
 * `Status:` eine Textdarstellung des aktuellen Status (wie  `running` oder  `stopped`).
 
 * `FailedRequests:`Die Anzahl aufeinanderfolgender Fehler.
-* `SecondsSinceLastSuccess:` die Anzahl der Sekunden seit der letzten erfolgreichen Kommunikation mit dem Server. Es wird `-1` angezeigt, wenn keine erfolgreiche Kommunikation stattgefunden hat.
+* `SecondsSinceLastSuccess:` die Anzahl der Sekunden seit der letzten erfolgreichen Kommunikation mit dem Server. Er zeigt `-1` an, wenn keine erfolgreiche Kommunikation stattgefunden hat.
 
 Darüber hinaus gibt es drei aufrufbare Methoden:
 
-* `start():` Der Synchronisierungsprozess wird Beginn.
-* `stop():` beendet den Synchronisierungsprozess.
+* `start():` startet den Synchronisierungsprozess.
+* `stop():` stoppt den Synchronisierungsprozess.
 * `cleanup():` Führt den Bereinigungsvorgang auf der Standby-Instanz durch.
 
 **Primäre Instanz**
 
 Beim Überwachen der primären Instanz wird eine Reihe allgemeiner Informationen über ein MBean angezeigt, dessen ID-Value die Port-Nummer ist, die vom TarMK-Standby-Dienst verwendet wird (standardmäßig 8023). Die meisten Methoden und Attribute sind dieselben wie für die Standby-Instanz, mit einigen Ausnahmen:
 
-* `Mode:` wird immer der Wert angezeigt  `primary`.
+* `Mode:` zeigt immer den Wert  `primary`an.
 
 Desweiteren können Informationen für bis zu 10 Clients (Standby-Instanzen) abgerufen werden, die mit der Master-Instanz verbunden sind. Die MBean-ID ist die UUID der Instanz. Für diese MBeans sind keine aufrufbaren Methoden vorhanden, jedoch einige nützliche, schreibgeschützte Attribute:
 
@@ -375,13 +375,13 @@ Desweiteren können Informationen für bis zu 10 Clients (Standby-Instanzen) ab
 
 >[!NOTE]
 >
->Wenn Sie auf der primären Instanz die [Online-Revisionsbereinigung](/help/sites-deploying/revision-cleanup.md) ausführen, ist das im Folgenden vorgestellte manuelle Verfahren nicht erforderlich. Wenn Sie die Online-Überarbeitungsbereinigung verwenden, wird der Vorgang `cleanup ()` auf der Standby-Instanz automatisch ausgeführt.
+>Wenn Sie auf der primären Instanz die [Online-Revisionsbereinigung](/help/sites-deploying/revision-cleanup.md) ausführen, ist das im Folgenden vorgestellte manuelle Verfahren nicht erforderlich. Wenn Sie die Online-Revisionsbereinigung verwenden, wird der `cleanup ()`-Vorgang auf der Standby-Instanz automatisch ausgeführt.
 
 >[!NOTE]
 >
 >Führen Sie auf der Standby-Instanz keine Offline-Revisionsbereinigung aus. Dies ist nicht erforderlich und die Größe des Segmentspeichers wird dadurch nicht reduziert.
 
-Adobe empfiehlt die regelmäßige Wartung, um ein übermäßiges Repository-Wachstum im Laufe der Zeit zu vermeiden. Führen Sie zum manuellen Warten des Cold-Standby-Repositorys die folgenden Schritte aus:
+Adobe empfiehlt, regelmäßige Wartungsarbeiten durchzuführen, um ein übermäßiges Repository-Wachstum im Laufe der Zeit zu verhindern. Führen Sie zum manuellen Warten des Cold-Standby-Repositorys die folgenden Schritte aus:
 
 1. Beenden Sie den Standby-Prozess auf der Standby-Instanz. Wechseln Sie dazu zur JMX-Konsole und verwenden Sie das Bean **org.apache.jackrabbit.oak: Status (&quot;Standby&quot;)**. Weitere Informationen finden Sie im obigen Abschnitt zur [Überwachung](/help/sites-deploying/tarmk-cold-standby.md#monitoring).
 
@@ -390,7 +390,7 @@ Adobe empfiehlt die regelmäßige Wartung, um ein übermäßiges Repository-Wach
 1. Starten Sie die primäre Instanz.
 1. Starten Sie den Standby-Prozess auf der Standby-Instanz. Verwenden Sie dazu dasselbe JMX-Bean wie im ersten Schritt beschrieben.
 1. Überwachen Sie die Protokolle und warten Sie, bis die Synchronisierung abgeschlossen ist. Möglicherweise nimmt die Größe des Standby-Repositorys jetzt erheblich zu.
-1. Führen Sie den Vorgang `cleanup()` auf der Standby-Instanz aus und verwenden Sie dieselbe JMX-Bean wie im ersten Schritt beschrieben.
+1. Führen Sie den Vorgang `cleanup()` auf der Standby-Instanz aus, indem Sie dasselbe JMX-Bean verwenden, wie im ersten Schritt beschrieben.
 
 Es kann länger als üblich dauern, bis die Synchronisierung der Standby-Instanz mit der primären Instanz abgeschlossen ist, da bei der Offline-Komprimierung der Repository-Verlauf neu geschrieben wird und die Berechnung von Änderungen in den Repositorys deshalb länger dauert. Ebenfalls zu beachten ist, dass das Repository auf der Standby-Instanz nach Abschluss des Vorgangs etwa dieselbe Größe hat wie das Repository auf der primären Instanz.
 
@@ -400,11 +400,11 @@ Alternativ dazu kann das Repository der primären Instanz nach Durchführung der
 
 Es ist wichtig, hin und wieder eine Speicherbereinigung (Garbage Collection) für die Dateidatenspeicher-Instanz durchzuführen, da andernfalls gelöschte Binärdateien im Dateisystem bleiben und mit der Zeit den Festplattenspeicherplatz belegen. Gehen Sie wie folgt vor, um eine Speicherbereinigung durchzuführen:
 
-1. Führen Sie eine kalte Standby-Repository-Wartung aus, wie im Abschnitt [oben](/help/sites-deploying/tarmk-cold-standby.md#cold-standby-repository-maintenance) beschrieben.
+1. Führen Sie die Wartung des Cold-Standby-Repositorys aus, wie im Abschnitt [über](/help/sites-deploying/tarmk-cold-standby.md#cold-standby-repository-maintenance) beschrieben.
 1. Wenn die Wartung abgeschlossen und die Instanz neu gestartet wurde, führen Sie die folgenden Schritte aus:
 
-   * Führen Sie auf der primären Seite die Datenspeicher-Garbage Collection über die entsprechende JMX-Bean aus, wie in [diesem Artikel](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console) beschrieben.
-   * Im Standby-Modus ist die Datspeicher-Garbage Collection nur über **BlobGarbageCollection** MBean - `startBlobGC()` verfügbar. **RepositoryManagement **MBean ist im Bereitschaftszustand nicht verfügbar.
+   * Führen Sie auf der primären Instanz die automatische Datenspeicherbereinigung über das entsprechende JMX-Bean aus, wie in [diesem Artikel](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console) beschrieben.
+   * Auf der Standby-Instanz ist die automatische Datenspeicherbereinigung nur über das MBean **BlobGarbageCollection** - `startBlobGC()` verfügbar. Das MBean &quot;RepositoryManagement&quot;ist nicht auf der Standby-Instanz verfügbar.
 
    >[!NOTE]
    >
