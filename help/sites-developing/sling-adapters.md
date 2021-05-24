@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
-translation-type: tm+mt
-source-git-commit: 36cc5ca0de9ae2933a0d7585a00f26cc984d24db
+exl-id: 6465e2c4-28e5-4fc8-8cca-7b632f10ba5a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2350'
 ht-degree: 96%
 
 ---
-
 
 # Verwenden von Sling-Adaptern {#using-sling-adapters}
 
@@ -293,7 +292,7 @@ Adaption von **[Page](https://helpx.adobe.com/experience-manager/6-5/sites/devel
    <td>Ressource der Seite.</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/LabeledResource.html">LabelResource</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td>
    <td>Bezeichnete Ressource (== this).</td>
   </tr>
   <tr>
@@ -324,7 +323,7 @@ Adaption von **[Template](https://helpx.adobe.com/experience-manager/6-5/sites/d
    <td>Ressource der Vorlage.</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/LabeledResource.html">LabelResource</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td>
    <td>Bezeichnete Ressource (== this).</td>
   </tr>
   <tr>
