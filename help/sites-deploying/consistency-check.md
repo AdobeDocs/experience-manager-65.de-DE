@@ -8,15 +8,14 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 discoiquuid: af9a3e9d-194a-42e5-be28-b238e0c1e55e
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Konfiguration
+exl-id: 10dde29b-5dc7-4d4e-80ae-3d4fd0397f7e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 84%
 
 ---
-
 
 # Konsistenz- und Ausnahmeprüfungen{#consistency-and-traversal-checks}
 
@@ -34,13 +33,12 @@ javax.jcr.RepositoryException: Error indexing workspace: Error indexing workspac
 
 ## Ausführen einer Konsistenzüberprüfung {#perform-a-consistency-check}
 
-Um eine Konsistenzprüfung durchzuführen, navigieren Sie zur Administrationsseite für JMX Mbean** com.adobe.granite (Repository)**. Wechseln Sie auf dem AEM-Hauptbildschirm zu:
+Um eine Konsistenzprüfung durchzuführen, navigieren Sie zur Administrationsseite für das JMX Mbean** com.adobe.granite (Repository)**. Wechseln Sie auf dem AEM-Hauptbildschirm zu:
 
-**Werkzeuge > Web-Konsole > Main(on menu bar) > JMX > com.adobe.granite (Repository)**
+**Tools > Web-Konsole > Haupt(in Menüleiste) > JMX > com.adobe.granite (Repository)**
 
 In einer Standardinstallation befindet er sich hier: **[|Anzeigen|](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)**
 
 Im Abschnitt **Vorgänge** der Seite finden Sie zwei Methoden: **`traversalCheck`** und **`consistencyCheck`** Klicken Sie zum Ausführen einer Überprüfung auf den Vorgang und geben Sie die gewünschten Parameter ein.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
-
