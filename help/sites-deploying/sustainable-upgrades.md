@@ -1,6 +1,6 @@
 ---
-title: 'Nachhaltige Aktualisierungen '
-seo-title: 'Nachhaltige Aktualisierungen '
+title: Nachhaltige Aktualisierungen
+seo-title: Nachhaltige Aktualisierungen
 description: Erfahren Sie mehr über nachhaltige Aktualisierungen in AEM 6.4.
 seo-description: Erfahren Sie mehr über nachhaltige Aktualisierungen in AEM 6.4.
 uuid: 80673076-624b-4308-8233-129cb4422bd5
@@ -10,17 +10,16 @@ content-type: reference
 topic-tags: upgrading
 discoiquuid: e35c9352-f0d5-4db5-b88f-0720af8f6883
 docset: aem65
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Aktualisieren
+exl-id: b777fdca-e7a5-427a-9e86-688dd7cac636
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 74%
 
 ---
 
-
-# Nachhaltige Aktualisierungen{#sustainable-upgrades} 
+# Nachhaltige Aktualisierungen{#sustainable-upgrades}
 
 ## Anpassungs-Framework {#customization-framework}
 
@@ -30,7 +29,7 @@ Das Anpassungs-Framework hilft Ihnen, Verstöße in nicht erweiterbaren Bereiche
 
 Das Anpassungs-Framework besteht aus zwei Komponenten: **API-Oberfläche** und **Inhaltsklassifizierung**.
 
-#### API-Oberfläche {#api-surface}
+#### API-Oberfläche  {#api-surface}
 
 In früheren Versionen von AEM wurden viele APIs über das Uber JAR verfügbar gemacht. Einige dieser APIs sollten nicht von Kunden verwendet werden, wurden jedoch verfügbar gemacht, um AEM-Funktionen der Pakete zu unterstützen. In Zukunft werden Java-APIs als „Öffentlich“ oder „Privat“ gekennzeichnet, damit Kunden erkennen, welche APIs im Hinblick auf Aktualisierungen sicher verwendet werden können. Weitere Besonderheiten:
 
@@ -38,11 +37,11 @@ In früheren Versionen von AEM wurden viele APIs über das Uber JAR verfügbar g
 
 * Die öffentlichen APIs werden durch die Installation eines Kompatibilitätspakets abwärtskompatibel sein. 
 * Das Kompatibilitätspaket wird ein Kompatibilitäts-Uber JAR enthalten, um die Abwärtskompatibilität sicherzustellen. 
-* Als `Private` markierte Java-APIs sind nur für die Verwendung AEM internen Bundles vorgesehen und sollten nicht von benutzerdefinierten Bundles verwendet werden.
+* Java-APIs, die als `Private` gekennzeichnet sind, sind nur für die Verwendung AEM internen Bundles vorgesehen und sollten nicht von benutzerdefinierten Bundles verwendet werden.
 
 >[!NOTE]
 >
->Das Konzept von `Private` und `Public` in diesem Kontext sollte nicht mit Java-Vorstellungen öffentlicher und privater Klassen verwechselt werden.
+>Das Konzept von `Private` und `Public` in diesem Kontext sollte nicht mit Java-Konzepten öffentlicher und privater Klassen verwechselt werden.
 
 ![image2018-2-12_23-52-48](assets/image2018-2-12_23-52-48.png)
 
@@ -54,21 +53,21 @@ Um dies sicherer zu machen und für Kunden deutlicher zu kennzeichnen, welche Be
 
 * **Öffentlich (granite:PublicArea)** - Definiert einen Knoten als „Öffentlich“, damit er überlagert, vererbt (`sling:resourceSuperType`) oder direkt verwendet (`sling:resourceType`) werden kann. Als „Öffentlich“ gekennzeichnete Knoten unter /libs können sicher aktualisiert werden, indem ein Kompatibilitätspaket hinzugefügt wird. Kunden sollten grundsätzlich nur Knoten nutzen, die als „Öffentlich“ gekennzeichnet sind. 
 
-* **Abstrakt (granite:AbstractArea)** - Definiert einen Knoten als „Abstrakt“. Knoten können überlagert oder geerbt werden ( `sling:resourceSupertype`), dürfen jedoch nicht direkt ( `sling:resourceType`) verwendet werden.
+* **Abstrakt (granite:AbstractArea)** - Definiert einen Knoten als „Abstrakt“. Knoten können überlagert oder vererbt werden ( `sling:resourceSupertype`), dürfen jedoch nicht direkt verwendet werden ( `sling:resourceType`).
 
-* **Endgültig (granite:FinalArea)** - Definiert einen Knoten als „Endgültig“. Als endgültig eingestufte Nodes sollten nicht überlagert oder vererbt werden. Endgültige Knoten können direkt über `sling:resourceType` verwendet werden. Unterknoten der endgültigen Knoten werden standardmäßig als intern eingestuft
+* **Endgültig (granite:FinalArea)** - Definiert einen Knoten als „Endgültig“. Als endgültig klassifizierte Knoten sollten idealerweise nicht überlagert oder vererbt werden. Endgültige Knoten können direkt über `sling:resourceType` verwendet werden. Unterknoten der endgültigen Knoten werden standardmäßig als intern eingestuft
 
-* ***Internal (granite:InternalArea)*** *- *Definiert einen Knoten als intern. Als „intern“ klassifizierte Knoten sollten idealerweise nicht überlagert, vererbt oder direkt verwendet werden. Diese Knoten sind ausschließlich für interne Funktionen von AEM vorgesehen.
+* ***Intern (granite:InternalArea)*** * - *Definiert einen Knoten als intern. Als „intern“ klassifizierte Knoten sollten idealerweise nicht überlagert, vererbt oder direkt verwendet werden. Diese Knoten sind ausschließlich für interne Funktionen von AEM vorgesehen.
 
 * **Keine Anmerkung** - Knoten übernehmen die Klassifizierung gemäß der Baumstruktur. Der /-Stamm ist standardmäßig „Öffentlich“. **Knoten mit einem übergeordneten Knoten, der als „Intern“ oder „Endgültig“ klassifiziert ist, werden ebenfalls als „Intern“ behandelt.** 
 
 >[!NOTE]
 >
->Diese Richtlinien werden nur für Mechanismen erzwungen, die auf dem Sling-Suchpfad basieren. Andere Bereiche von **/libs** wie eine clientseitige Bibliothek können als `Internal` markiert werden, können aber dennoch mit standardmäßiger clientlib-Einbindung verwendet werden. Es ist wichtig, dass Kunden in diesen Fällen die Klassifizierung „Intern“ beachten.
+>Diese Richtlinien werden nur für Mechanismen erzwungen, die auf dem Sling-Suchpfad basieren. Andere Bereiche von **/libs** wie eine Client-seitige Bibliothek können als `Internal` markiert werden, können aber dennoch mit der standardmäßigen clientlib-Einbindung verwendet werden. Es ist wichtig, dass Kunden in diesen Fällen die Klassifizierung „Intern“ beachten.
 
 #### CRXDE Lite-Inhaltstypindikatoren   {#crxde-lite-content-type-indicators}
 
-In CRXDE Lite angewendete Mixins zeigen Inhaltsknoten und Bäume an, die als `INTERNAL` ausgegraut markiert sind. Bei `FINAL` ist nur das Symbol grau ausgeblendet. Die untergeordneten Elemente dieser Knoten werden ebenfalls grau angezeigt. Die Überlagerungsknotenfunktion ist in beiden Fällen deaktiviert.
+In CRXDE Lite angewendete Mixins zeigen Inhaltsknoten und Bäume, die als `INTERNAL` markiert sind, als grau ausgeblendet an. Für `FINAL` ist nur das Symbol grau ausgeblendet. Die untergeordneten Elemente dieser Knoten werden ebenfalls grau angezeigt. Die Überlagerungsknotenfunktion ist in beiden Fällen deaktiviert.
 
 **Öffentlich**
 
@@ -86,13 +85,13 @@ In CRXDE Lite angewendete Mixins zeigen Inhaltsknoten und Bäume an, die als `IN
 
 >[!NOTE]
 >
->Ab AEM 6.5 empfiehlt Adobe die Verwendung des Musterdetektors, um Inhaltszugriffsverletzungen zu erkennen. Musterdetektorberichte sind detaillierter, erkennen mehr Probleme und verringern die Wahrscheinlichkeit von Falsch-Positiv-Werten.
+>Ab AEM 6.5 empfiehlt Adobe die Verwendung des Musterdetektors, um Inhaltszugriffsverletzungen zu erkennen. Musterdetektorberichte sind detaillierter, erkennen mehr Probleme und reduzieren die Wahrscheinlichkeit falsch-positiver Ergebnisse.
 >
->Weitere Informationen finden Sie unter [Überprüfen der Aktualisierungskomplexität mit dem Musterdetektor](/help/sites-deploying/pattern-detector.md).
+>Weitere Informationen finden Sie unter [Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor](/help/sites-deploying/pattern-detector.md).
 
 AEM 6.5 bietet außerdem eine Konsistenzprüfung, die Kunden warnt, wenn überlagerter oder referenzierter Inhalt auf eine Weise verwendet wird, die nicht der Inhaltsklassifizierung entspricht.
 
-Die** Sling/Granite Content Access Check** ist eine neue Gesundheitsprüfung, die das Repository überwacht, um zu sehen, ob der Kundencode fälschlicherweise auf geschützte Knoten in AEM zugreift.
+Die &quot;Prüfung des Sling/Granite-Inhaltszugriffs&quot;ist eine neue Konsistenzprüfung, die das Repository überwacht, um festzustellen, ob der Kundencode fälschlicherweise auf geschützte Knoten in AEM zugreift.
 
 Dabei wird **/apps** gescannt. Dies dauert in der Regel einige Sekunden.
 
@@ -105,10 +104,10 @@ Verfahren Sie wie folgt, um auf diese neue Konsistenzprüfung zuzugreifen:
 
 Nachdem der Scan abgeschlossen ist, wird eine Liste mit Warnmeldungen angezeigt, die den Endbenutzer des unzulässig referenzierten geschützten Knotens informiert:
 
-![screenshot-2018-2-5healthreports](assets/screenshot-2018-2-5healthreports.png)
+![screen-shot-2018-2-5healthreports](assets/screenshot-2018-2-5healthreports.png)
 
 Nach der Korrektur der Verstöße wird der Zustand grün angezeigt:
 
-![screenshot-2018-2-5healthreports-verletzungen](assets/screenshot-2018-2-5healthreports-violations.png)
+![screen-shot-2018-2-5healthreports-verletzungen](assets/screenshot-2018-2-5healthreports-violations.png)
 
 Die Konsistenzprüfung zeigt die Informationen an, die von einem Hintergrunddienst gesammelt werden, der asynchron prüft, sobald eine Überlagerung oder ein Ressourcentyp in allen Sling-Suchpfaden verwendet wird. Wenn Content-Mixins unzulässig verwendet wurden, wird ein Verstoß gemeldet.
