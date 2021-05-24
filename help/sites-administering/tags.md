@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
 discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
-translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+exl-id: ff041ef0-e566-4373-818e-76680ff668d8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1769'
 ht-degree: 65%
 
 ---
 
-
-# Verwalten von Tags {#administering-tags}
+# Verwalten von Tags  {#administering-tags}
 
 Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website. Sie können Sie sich als Stichwörter oder Bezeichnungen (Metadaten) vorstellen, mit denen sich Inhalte schneller finden lassen als über die normale Suche.
 
@@ -42,11 +41,11 @@ Zu den Funktionen von Tags in AEM gehören u. a. folgende:
 * Die wesentliche Einschränkung für neu erstellte Tags besteht darin, dass sie in einem bestimmten Namespace eindeutig sein müssen.
 * Der Titel eines Tags sollte keine Trennzeichen des Tag-Pfads enthalten (falls doch vorhanden, werden sie nicht angezeigt).
 
-   * colon `:` - trennt das Namensraum-Tag
-   * Schrägstrich `/` - Trennzeichen unter Tags
+   * Doppelpunkt `:` - Trennt das Namespace-Tag
+   * Schrägstrich `/` - Trennzeichen für Untertags
 
 * Tags können von Autoren und Websitebesuchern angewendet werden. Unabhängig davon, wer die Tags erstellt hat, stehen alle Arten von Tags zur Verfügung, um sie einer Seite hinzuzufügen oder wenn man die Tags durchsucht.
-* Tags können von Mitgliedern der Gruppe &quot;Tag-Administratoren&quot; und von Mitgliedern, die Änderungsrechte für `/content/cq:tags` haben, erstellt und ihre Taxonomie geändert werden.
+* Tags können von Mitgliedern der Gruppe &quot;Tag-Administratoren&quot;und Mitgliedern mit Änderungsrechten für `/content/cq:tags` erstellt und ihre Taxonomie geändert werden.
 
    * Ein Tag, das untergeordnete Tags enthält, bezeichnet man als Container-Tag.
    * Ein Tag, das kein Container-Tag ist, wird Leaf-Tag genannt.
@@ -75,11 +74,11 @@ So greifen Sie auf die Tagging-Konsole zu:
    * auswählen **`General`**
    * auswählen **`Tagging`**
 
-![managing_tags_usingThetagasadministrationConsole](assets/managing_tags_usingthetagasministrationconsolea.png)
+![managing_tags_using_thetagasadministrationconsole](assets/managing_tags_usingthetagasministrationconsolea.png)
 
 ### Erstellen eines Namespace {#creating-a-namespace}
 
-Um einen neuen Namensraum zu erstellen, wählen Sie das Symbol **`Create Namespace`** aus.
+Um einen neuen Namespace zu erstellen, wählen Sie das Symbol **`Create Namespace`** aus.
 
 Der Namespace selbst ist ein Tag und muss keine untergeordneten Tags enthalten. Um jedoch mit dem Erstellen eines Klassifikationsschemas fortzufahren, [erstellen Sie untergeordnete Tags](#creating-tags), bei denen es sich um Leaf-Tags oder Container-Tags handeln kann.
 
@@ -87,14 +86,14 @@ Der Namespace selbst ist ein Tag und muss keine untergeordneten Tags enthalten. 
 
 * **Titel**
 
-   *(Erforderlich)* Ein Anzeigentitel für den Namensraum.
+   *(erforderlich)* Ein Anzeigetitel für den Namespace.
 
 * **Name**
-   *(Optional)* Ein Name für den Namensraum. Wenn Sie keinen festlegen, wird ein gültiger Knotenname aus dem Titel erstellt. Siehe [TagID](/help/sites-developing/framework.md#tagid).
+   *(optional)* Ein Name für den Namespace. Wenn Sie keinen festlegen, wird ein gültiger Knotenname aus dem Titel erstellt. Siehe [TagID](/help/sites-developing/framework.md#tagid).
 
 * **Beschreibung**
 
-   *(optional)* Eine Beschreibung des Namensraums.
+   *(optional)* Eine Beschreibung des Namespace.
 
 Wenn Sie die erforderlichen Informationen eingegeben haben:
 
@@ -109,14 +108,14 @@ Wenn Sie einen Namespace oder ein anderes Tag auswählen, werden die folgenden V
 * [Tag erstellen](#creating-tags)
 * [Bearbeiten](#editing-tags)
 * [Verschieben](#moving-tags)
-* [Merge](#merging-tags)
+* [Zusammenführen](#merging-tags)
 * [Veröffentlichen](#publishing-tags)
 * [Veröffentlichung rückgängig machen](#unpublishing-tags)
 * [Löschen](#deleting-tags)
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
 
-Wenn das Browserfenster nicht breit genug ist, um alle Symbole anzuzeigen, werden die Symbole ganz rechts unter einem **`... More`**-Symbol gruppiert, das bei Auswahl eine Dropdown-Liste der Symbole für ausgeblendete Vorgänge anzeigt.
+Wenn das Browser-Fenster nicht groß genug ist, um alle Symbole anzuzeigen, werden die Symbole ganz rechts unter einem **`... More`**-Symbol gruppiert, wodurch bei Auswahl eine Dropdown-Liste der ausgeblendeten Vorgangssymbole angezeigt wird.
 
 ![chlimage_1-185](assets/chlimage_1-185.png)
 
@@ -132,7 +131,7 @@ Um ein oder mehrere Tags für die Vorgänge auszuwählen, wählen Sie nur das Sy
 
 ![chlimage_1-188](assets/chlimage_1-188.png)
 
-Wenn ein Namensraum oder ein anderes Tag ausgewählt ist, werden bei Auswahl des Symbols **`View Properties`** Informationen zum `name`, zum Zeitpunkt der letzten Bearbeitung und zur Anzahl der Verweise angezeigt. Bei veröffentlichten Tags werden die Zeit der letzten Veröffentlichung und die ID des Herausgebers angezeigt. Diese Informationen werden in einer Spalte links von der Tag-Spalte angezeigt.
+Wenn ein Namespace oder ein anderes Tag ausgewählt wird, wird durch Auswahl des Symbols **`View Properties`** Informationen zu `name`, zum Zeitpunkt der letzten Bearbeitung und zur Anzahl der Verweise angezeigt. Bei veröffentlichten Tags werden die Zeit der letzten Veröffentlichung und die ID des Herausgebers angezeigt. Diese Informationen werden in einer Spalte links von der Tag-Spalte angezeigt.
 
 ![chlimage_1-189](assets/chlimage_1-189.png)
 
@@ -156,18 +155,18 @@ Der Pfad zum Verweis wird als Tooltip angezeigt, wenn Sie mit dem Mauszeiger üb
 
 ![chlimage_1-193](assets/chlimage_1-193.png)
 
-Wenn ein Namensraum oder ein anderes Tag ausgewählt ist (durch Auswahl des Symbols neben dem Titel), kann ein untergeordnetes Tag für das aktuelle Tag erstellt werden, indem das Symbol **`Create Tag`** ausgewählt wird.
+Wenn ein Namespace oder ein anderes Tag ausgewählt wird (durch Auswahl des Symbols neben dem Titel), kann ein untergeordnetes Tag für das aktuelle Tag erstellt werden, indem Sie das Symbol **`Create Tag`** auswählen.
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
 * **Titel**
-* (erforderlich) *Ein Anzeigentitel für das Tag.
+* (erforderlich) *Ein Anzeigetitel für das Tag.
 
 * **Name**
-*(optional) *Ein Name für das Tag. Wenn Sie keinen festlegen, wird ein gültiger Knotenname aus dem Titel erstellt. Siehe [TagID](/help/sites-developing/framework.md#tagid).
+* (optional) *Ein Name für das Tag. Wenn Sie keinen festlegen, wird ein gültiger Knotenname aus dem Titel erstellt. Siehe [TagID](/help/sites-developing/framework.md#tagid).
 
 * **Beschreibung**
-*(optional) *Eine Beschreibung des Tags.
+* (optional) *Eine Beschreibung des Tags.
 
 Wenn Sie die erforderlichen Informationen eingegeben haben:
 
@@ -177,7 +176,7 @@ Wenn Sie die erforderlichen Informationen eingegeben haben:
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
-Wenn ein Namensraum oder ein anderes Tag ausgewählt ist, können Sie Titel, Beschreibung und lokale Anpassungen des Titels ändern, indem Sie das Symbol **`Edit`**auswählen.
+Wenn Sie einen Namespace oder ein anderes Tag ausgewählt haben, können Sie den Titel, die Beschreibung und die Lokalisierungen des Titels ändern, indem Sie das Symbol **`Edit`**auswählen.
 
 Wenn Sie die Änderungen vorgenommen haben, klicken Sie auf **Speichern**.
 
@@ -189,11 +188,11 @@ Weitere Informationen zum Hinzufügen von Sprachübersetzungen finden Sie im Abs
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
-Wenn ein Namensraum oder ein anderes Tag ausgewählt ist, können Tags-Administratoren und -Entwickler die Taxonomie bereinigen, indem sie das Tag an einen neuen Speicherort verschieben oder umbenennen. **`Move`** Wenn es sich bei dem ausgewählten Tag um ein Container-Tag handelt, werden beim Verschieben auch die untergeordneten Tags verschoben.
+Wenn ein Namespace oder ein anderes Tag ausgewählt ist, können Tag-Administratoren und Entwickler die Taxonomie bereinigen, indem sie das Tag an einen neuen Speicherort verschieben oder umbenennen. **`Move`** Wenn es sich bei dem ausgewählten Tag um ein Container-Tag handelt, werden beim Verschieben auch die untergeordneten Tags verschoben.
 
 >[!NOTE]
 >
->Es wird empfohlen, dass Autoren nur die [edit](#editing-tags) des Tags `title` verwenden dürfen, um Tags nicht zu verschieben oder umzubenennen.
+>Es wird empfohlen, dass Autoren nur die [Bearbeitung](#editing-tags) des `title`-Tags des Tags zulassen dürfen, nicht um Tags zu verschieben oder umzubenennen.
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
@@ -204,8 +203,8 @@ Wenn ein Namensraum oder ein anderes Tag ausgewählt ist, können Tags-Administr
 * **Verschieben nach** Wählen Sie den neuen Pfad aus, in den das Tag verschoben werden soll.
 
 * **Umbenennen**
-zuAnfänglich zeigt die aktuelle 
-`name`des Tags. Es kann ein neuer `name`eingegeben werden.
+in zeigt zunächst den aktuellen 
+`name`des Tags. Ein neuer `name`kann eingegeben werden.
 
 * Klicken Sie auf **Speichern**.
 
@@ -215,13 +214,13 @@ zuAnfänglich zeigt die aktuelle
 
 Das Zusammenführen von Tags kann sich anbieten, wenn im Klassifikationsschema Duplikate vorhanden sind. Wenn Tag A mit Tag B zusammengeführt wird, werden alle mit Tag A gekennzeichneten Seiten mit Tag B gekennzeichnet und Tag A steht den Autoren nicht mehr zur Verfügung.
 
-Wenn ein Namensraum oder ein anderes Tag ausgewählt ist, wird durch Auswahl des Symbols **Zusammenführen** ein Bereich geöffnet, in dem der Pfad zum Zusammenführen ausgewählt werden kann.
+Wenn ein Namespace oder ein anderes Tag ausgewählt ist, wird durch Auswahl des Symbols **Zusammenführen** ein Bereich geöffnet, in dem der Pfad für die Zusammenführung ausgewählt werden kann.
 
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
 * **Pfad**
 
-   *(schreibgeschützt)* Der Pfad des Tags, der zum Zusammenführen mit einem anderen Tag ausgewählt wurde.
+   *(schreibgeschützt)* Der Pfad des Tags, das ausgewählt wurde, um mit einem anderen Tag zusammengeführt zu werden.
 
 * **Zusammenführen in** Wählen Sie den Pfad des Tags aus, mit dem das erste Tag zusammengeführt werden soll.
 
@@ -235,7 +234,7 @@ Wenn ein Namensraum oder ein anderes Tag ausgewählt ist, wird durch Auswahl des
 
 ![chlimage_1-201](assets/chlimage_1-201.png)
 
-Wenn ein Namensraum oder ein anderes Tag ausgewählt ist, klicken Sie auf das Symbol **Veröffentlichen**, um das Tag in der Umgebung &quot;Veröffentlichen&quot;zu aktivieren. Ähnlich wie bei Seiteninhalten wird nur das ausgewählte Tag veröffentlicht, gleich, ob es sich um ein Container-Tag handelt oder nicht.
+Wenn ein Namespace oder ein anderes Tag ausgewählt ist, wählen Sie das Symbol **Veröffentlichen** aus, um das Tag in der Veröffentlichungsumgebung zu aktivieren. Ähnlich wie bei Seiteninhalten wird nur das ausgewählte Tag veröffentlicht, gleich, ob es sich um ein Container-Tag handelt oder nicht.
 
 Um ein Klassifikationsschema (einen Namespace und untergeordnete Tags) zu veröffentlichen, empfehlen wir, ein [Paket](/help/sites-administering/package-manager.md) des Namespace zu erstellen (siehe [Klassifikationsschema-Stammknoten](/help/sites-developing/framework.md#taxonomy-root-node)). Stellen Sie sicher, dass Sie [Berechtigungen](#setting-tag-permissions) auf den Namespace anwenden, bevor Sie das Paket erstellen.
 
@@ -243,17 +242,17 @@ Um ein Klassifikationsschema (einen Namespace und untergeordnete Tags) zu veröf
 
 ![chlimage_1-202](assets/chlimage_1-202.png)
 
-Wenn ein Namensraum oder ein anderes Tag ausgewählt ist, wird durch Auswahl des Symbols **Veröffentlichung rückgängig machen** das Tag in der Authoring-Umgebung deaktiviert und aus der Veröffentlichungs-Umgebung entfernt. Ähnlich wie bei der Operation `Delete`werden alle untergeordneten Tags in der Autorendatei deaktiviert und aus der Veröffentlichungs-Umgebung entfernt, wenn es sich bei dem ausgewählten Tag um ein Container-Tag handelt.
+Wenn ein Namespace oder ein anderes Tag ausgewählt ist, wird durch Auswahl des Symbols **Veröffentlichung rückgängig machen** das Tag in der Autorenumgebung deaktiviert und aus der Veröffentlichungsumgebung entfernt. Ähnlich wie der `Delete`Vorgang werden alle untergeordneten Tags in der Autorenumgebung deaktiviert und aus der Veröffentlichungsumgebung entfernt, wenn das ausgewählte Tag ein Container-Tag ist.
 
 ### Löschen von Tags {#deleting-tags}
 
 ![chlimage_1-203](assets/chlimage_1-203.png)
 
-Wenn ein Namensraum oder ein anderes Tag ausgewählt ist, wird das Tag durch Auswahl des Symbols **Löschen** endgültig aus der Autorendatei entfernt. Wenn das Tag veröffentlicht war, wird es auch von der Veröffentlichungsumgebung entfernt. Wenn es sich bei dem ausgewählten Tag um ein Container-Tag handelt, werden alle untergeordneten Tags ebenfalls entfernt.
+Wenn ein Namespace oder ein anderes Tag ausgewählt ist, wird durch Auswahl des Symbols **Löschen** das Tag dauerhaft aus der Autorenumgebung entfernt. Wenn das Tag veröffentlicht war, wird es auch von der Veröffentlichungsumgebung entfernt. Wenn es sich bei dem ausgewählten Tag um ein Container-Tag handelt, werden alle untergeordneten Tags ebenfalls entfernt.
 
 ## Festlegen der Tag-Berechtigungen {#setting-tag-permissions}
 
-Tag-Berechtigungen sind [&#39;secure (standardmäßig)&#39;](/help/sites-administering/production-ready.md); eine Best Practice für die Veröffentlichungs-Umgebung, bei der die Leseberechtigung erforderlich ist, damit Tags explizit zulässig sind. Erreicht wird dies, indem nach dem Festlegen der Berechtigungen in der Autorenumgebung ein Paket vom Tag-Namespace erstellt und anschließend auf allen Veröffentlichungsinstanzen installiert wird.
+Tag-Berechtigungen sind [&#39;secure (standardmäßig)&#39;](/help/sites-administering/production-ready.md); eine Best Practice für die Veröffentlichungsumgebung, bei der Leseberechtigungen explizit für Tags zulässig sein müssen. Erreicht wird dies, indem nach dem Festlegen der Berechtigungen in der Autorenumgebung ein Paket vom Tag-Namespace erstellt und anschließend auf allen Veröffentlichungsinstanzen installiert wird.
 
 * Bei der Autoreninstanz:
 
@@ -262,10 +261,10 @@ Tag-Berechtigungen sind [&#39;secure (standardmäßig)&#39;](/help/sites-adminis
 
       * z. B. unter http://localhost:4502/useradmin.
    * Wählen Sie im linken Bedienfeld die Gruppe oder die Benutzer aus, für die die [Leseberechtigung](/help/sites-administering/security.md#permissions) gelten soll.
-   * im rechten Bereich den **Pfad **zum Tag-Namensraum
+   * Suchen Sie im rechten Bereich den **Pfad **zum Tag-Namespace
 
-      * Beispiel, `/content/cq:tags/mycommunity`
-   * Wählen Sie `checkbox`in der Spalte **Lesen**
+      * Beispiel: `/content/cq:tags/mycommunity`
+   * Wählen Sie `checkbox`in der Spalte **Read** aus.
    * Wählen Sie **Speichern** aus
 
 
@@ -279,7 +278,7 @@ Tag-Berechtigungen sind [&#39;secure (standardmäßig)&#39;](/help/sites-adminis
       * Wählen Sie auf der Registerkarte `Advanced` für `AC Handling` `Overwrite`
    * Replizieren Sie das Paket.
 
-      * wählen Sie `Replicate` aus dem Paketmanager
+      * Wählen Sie `Replicate` aus dem Paketmanager aus.
 
 
 ## Verwalten von Tags in verschiedenen Sprachen {#managing-tags-in-different-languages}
@@ -288,9 +287,9 @@ Die Eigenschaft `title` eines Tags kann in verschiedene Sprachen übersetzt werd
 
 ### Festlegen von Tag-Titeln in verschiedenen Sprachen {#defining-tag-titles-in-multiple-languages}
 
-Im Folgenden wird beschrieben, wie Sie die `title`des Tags **Tiere** aus dem Englischen ins Deutsche und Französische übersetzen.
+Im Folgenden wird beschrieben, wie Sie die `title`des Tags **Animals** aus dem Englischen ins Deutsche und Französische übersetzen.
 
-Beginn durch Auswahl des Tags unter dem Namensraum **Lagerfotografie** und Auswahl des Symbols **`Edit`**(siehe Abschnitt [Tags bearbeiten](#editing-tags)).
+Wählen Sie zunächst das Tag unter dem Namespace **Stock Fotografy** aus und wählen Sie das Symbol **`Edit`**aus (siehe Abschnitt [Bearbeiten von Tags](#editing-tags) ).
 
 Im Bedienfeld „Tag bearbeiten“ können Sie die Sprachen auswählen, in die der Tag-Titel übersetzt werden soll.
 
@@ -308,7 +307,7 @@ Informationen zum Hinzufügen einer neuen Sprache zum Dialogfeld finden Sie unte
 
 >[!NOTE]
 >
->Die Tag-Cloud und die Meta-Suchbegriffe in der Standardseitenkomponente verwenden das lokalisierte Tag `titles`basierend auf der Seitensprache, sofern verfügbar.
+>Die Tag-Cloud und die Meta-Schlüsselwörter in der Standardseitenkomponente verwenden das lokalisierte Tag `titles`basierend auf der Seitensprache, sofern verfügbar.
 
 ## Ressourcen {#resources}
 
@@ -317,4 +316,3 @@ Informationen zum Hinzufügen einer neuen Sprache zum Dialogfeld finden Sie unte
    Informationen zum Tagging-Framework sowie zum Erweitern und Einschließen von Tags in benutzerdefinierten Anwendungen.
 
 * [Tagging-Konsole der klassischen Benutzeroberfläche](/help/sites-administering/classic-console.md)
-
