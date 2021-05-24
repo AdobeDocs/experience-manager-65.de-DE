@@ -10,22 +10,21 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
-translation-type: tm+mt
-source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1889'
 ht-degree: 78%
 
 ---
 
-
 # ClientContext{#client-context}
 
 >[!NOTE]
 >
->ClientContext wurde durch ContextHub abgelöst. Weitere Informationen finden Sie in den Dokumenten [configuration]ch-configuring.md) und [developer](/help/sites-developing/contexthub.md).
+>ClientContext wurde durch ContextHub abgelöst. Weitere Informationen finden Sie in der zugehörigen Dokumentation [configuration]ch-configuring.md) und [developer](/help/sites-developing/contexthub.md) .
 
-Der Client-Kontext ist ein Mechanismus, mit dem Sie bestimmte Informationen über die aktuelle Seite und den aktuellen Besucher erhalten. Sie kann mit **Strg-Alt-c** (Windows) oder **control-option-c** (Mac) geöffnet werden:
+ClientContext ist ein Mechanismus, der Ihnen bestimmte Informationen über die aktuelle Seite und den aktuellen Besucher bereitstellt. Sie kann mit **Strg-Alt-c** (Windows) oder **control-option-c** (Mac) geöffnet werden:
 
 ![](assets/clientcontext_alisonparker.png)
 
@@ -51,31 +50,31 @@ In der [Veröffentlichungs- und in der Autorenumgebung werden Informationen zu F
 
 ClientContext kann die folgenden Eigenschaften anzeigen ([abhängig von der mit „Bearbeiten“ getroffenen Auswahl](#adding-a-property-component)):
 
-**Surfer-** InformationenZeigt die folgenden clientseitigen Informationen an:
+**Surfer** InformationZeigt die folgenden clientseitigen Informationen an:
 
 * **IP-Adresse**
 * **** Suchbegriffe, die für Suchmaschinenverweise verwendet werden
 * der verwendete **Browser**
-* das verwendete **Betriebssystem** (Betriebssystem)
-* der Bildschirm **resolution**
+* das verwendete **OS** (Betriebssystem)
+* den Bildschirm **resolution**
 * die Position **Maus X**
 * die Position **Maus Y**
 
-**Aktivität** StreamHier finden Sie Informationen zur sozialen Aktivität des Benutzers auf verschiedenen Plattformen. zum Beispiel die AEM Foren, Blogs, Ratings usw.
+**Aktivitäts-** StreamHier finden Sie Informationen zur sozialen Aktivität des Benutzers auf verschiedenen Plattformen. z. B. die AEM Foren, Blogs, Bewertungen usw.
 
-**** Kampagne Ermöglicht Autoren, ein bestimmtes Erlebnis für eine Kampagne zu simulieren. Diese Komponente setzt die normale Kampagnenauflösung und Erlebnisauswahl außer Kraft, um verschiedene Permutationen testen zu können.
+**** CampaignErmöglicht es Autoren, ein bestimmtes Erlebnis für eine Kampagne zu simulieren. Diese Komponente setzt die normale Kampagnenauflösung und Erlebnisauswahl außer Kraft, um verschiedene Permutationen testen zu können.
 
-Die Auflösung der Kampagne basiert normalerweise auf der Eigenschaft priority der Kampagne. Das Erlebnis wird im Regelfall auf Grundlage der Segmentierung ausgewählt.
+Die Kampagnenauflösung basiert normalerweise auf der Eigenschaft priority der Kampagne. Das Erlebnis wird im Regelfall auf Grundlage der Segmentierung ausgewählt.
 
-**Warenkorb** Zeigt Informationen zum Warenkorb einschließlich der Produkteinträge (Titel, Menge, PreisFormatiert usw.), gelöste Promotions (Titel, Nachricht usw.) und Gutscheine (Code, Beschreibung usw.).
+**** WarenkorbZeigt Informationen zum Warenkorb, einschließlich Produkteinträgen (Titel, Menge, PreisFormatiert usw.), aufgelösten Promotions (Titel, Nachricht usw.) und Gutscheine (Code, Beschreibung usw.).
 
 Der Warenkorbsitzungsstore benachrichtigt mit dem ClientContextCartServlet zudem den Server über aufgelöste Promotionsänderungen (basierend auf Segmentierungsänderungen).
 
-**Generischer** StoreEine generische Komponente, die den Inhalt eines Speichers anzeigt. Es handelt sich um eine untergeordnete Version der Komponente „Generische Store-Eigenschaften“.
+**Generischer** StoreEine generische Komponente, die den Inhalt eines Stores anzeigt. Es handelt sich um eine untergeordnete Version der Komponente „Generische Store-Eigenschaften“.
 
 Der generische Store muss mit einem JS-Renderer konfiguriert werden, der die Daten benutzerdefiniert anzeigt.
 
-**Generische Store-** EigenschaftenEine allgemeine Komponente, die den Inhalt eines Stores anzeigt. Es handelt sich um eine übergeordnete Version der Komponente „Generischer Store“.
+**Generische Store-** EigenschaftenEine generische Komponente, die den Inhalt eines Stores anzeigt. Es handelt sich um eine übergeordnete Version der Komponente „Generischer Store“.
 
 Die Komponente „Generische Store-Eigenschaften“ beinhaltet einen Standardrenderer, der die konfigurierten Eigenschaften (mit einer Miniatur) auflistet.
 
@@ -89,7 +88,7 @@ Bei Anzeige in der Kontext-Cloud nutzt die Komponente eine Google-API, um eine K
 
 **JSONP** StoreEine Komponente, die Inhalte anzeigt, die von Ihrer Installation abhängig sind.
 
-Der JSON-Standard ist eine JSON-Ergänzung, mit der dieselbe ursprüngliche Richtlinie umgangen werden kann (sodass eine Web-App mit Servern in einer anderen Domäne kommunizieren kann). Es besteht darin, das JSON-Objekt in einen Funktionsaufruf einzuschließen, um es als `<script>` von der anderen Domäne laden zu können (was eine zulässige Ausnahme von derselben Herkunft ist).
+Der JSON-Standard ist eine JSON-Ergänzung, mit der dieselbe ursprüngliche Richtlinie umgangen werden kann (sodass eine Web-App mit Servern in einer anderen Domäne kommunizieren kann). Es besteht darin, das JSON-Objekt in einen Funktionsaufruf einzuschließen, um es als `<script>` von der anderen Domäne laden zu können (was eine zulässige Ausnahme von derselben Ursprungsrichtlinie ist).
 
 Der JSONP-Store ist zwar wie jeder andere Store, er lädt allerdings Informationen aus einer anderen Domäne, ohne dass für diese Informationen ein Proxy in der aktuellen Domäne benötigt wird. Siehe hierzu das Beispiel unter [Speichern von Daten in ClientContext über JSON](/help/sites-administering/client-context.md#storing-data-in-client-context-via-jsonp).
 
@@ -97,28 +96,28 @@ Der JSONP-Store ist zwar wie jeder andere Store, er lädt allerdings Information
 >
 >Der JSONP-Store speichert die Informationen nicht im Cookie zwischen, ruft aber die Daten bei jedem Seitenladevorgang ab.
 
-**Profil** DataZeigt Informationen an, die im Profil des Benutzers erfasst wurden. z. B. Geschlecht, Alter, E-Mail-Adresse usw.
+**Profil** DataZeigt Informationen an, die im Benutzerprofil erfasst wurden. z. B. Geschlecht, Alter, E-Mail-Adresse usw.
 
-**Aufgelöste** SegmenteZeigt, welche Segmente zurzeit aufgelöst werden (häufig abhängig von anderen im Clientkontext angezeigten Informationen). Dies ist beim Konfigurieren von Kampagnen von Interesse.
+**Gelöste** Segmente Zeigt an, welche Segmente derzeit aufgelöst werden (häufig abhängig von anderen im Client-Kontext angezeigten Informationen). Dies ist beim Konfigurieren von Kampagnen von Interesse.
 
-Beispiel: die Frage, ob sich die Maus aktuell im linken oder rechten Fensterbereich befindet. Dieses Segment wird hauptsächlich zum Testen verwendet, da Änderungen sofort angezeigt werden können.
+Beispiel: die Frage, ob sich die Maus aktuell im linken oder rechten Fensterbereich befindet. Dieses Segment wird hauptsächlich zum Testen verwendet, da Änderungen sofort sichtbar sind.
 
-**Social** GraphZeigt das soziale Diagramm der Freunde und Anhänger des Benutzers an.
+**Social** GraphZeigt das soziale Diagramm der Freunde und Follower des Benutzers an.
 
 >[!NOTE]
 >
 >Dieses Feature ist derzeit als Demofunktion verfügbar und auf vorkonfigurierte Datensätze im Profilknoten unserer Demobenutzer angewiesen. Beispiel:
 >
->`/home/users/geometrixx/aparker@geometrixx.info/profile` => friends-Eigenschaft
+>`/home/users/geometrixx/aparker@geometrixx.info/profile` => Eigenschaft &quot;Freunde&quot;
 
-**Tag** CloudZeigt Tags an, die auf der aktuellen Seite festgelegt wurden, sowie Tags, die beim Surfen auf der Site gesammelt wurden. Wenn Sie mit der Maus auf ein Tag zeigen, sehen Sie, wie oft der aktuelle Benutzer auf Seiten mit diesem bestimmten Tag zugegriffen hat.
+**Tag** CloudZeigt Tags an, die auf der aktuellen Seite gesetzt sind und die beim Surfen auf der Site erfasst wurden. Wenn Sie mit der Maus auf ein Tag zeigen, sehen Sie, wie oft der aktuelle Benutzer auf Seiten mit diesem bestimmten Tag zugegriffen hat.
 
 >[!NOTE]
 Auf DAM-Assets gesetzte Tags, die auf besuchten Seiten angezeigt werden, werden nicht gezählt.
 
-**Technographics** StoreDiese Komponente ist von Ihrer Installation abhängig.
+**Technografikspeicher** Diese Komponente hängt von Ihrer Installation ab.
 
-**** ViewedProductsHält Produkte, die der Käufer angesehen hat, im Blick. Es kann das zuletzt angesehene Produkt oder das zuletzt angesehene Produkt, das sich nicht bereits im Warenkorb befindet, abgerufen werden.
+**** ViewedProductsHält die vom Käufer angezeigten Produkte im Auge. Es kann das zuletzt angesehene Produkt oder das zuletzt angesehene Produkt, das sich nicht bereits im Warenkorb befindet, abgerufen werden.
 
 Dieser Sitzungsstore verfügt über keine standardmäßige ClientContext-Komponente.
 
@@ -143,7 +142,7 @@ Sie können ein Profil wie folgt ändern:
 
 Wenn Sie fertig sind, können Sie das [Profil zurücksetzen](#resetting-the-profile-to-the-current-user).
 
-#### Laden neuer Besucherprofile mit dem Symbol „Profil laden“ {#loading-a-new-visitor-profile-with-the-load-profile-icon}
+#### Laden neuer Besucherprofile mit dem Symbol „Profil laden“  {#loading-a-new-visitor-profile-with-the-load-profile-icon}
 
 1. Klicken Sie auf das Symbol „Profil laden“:
 
@@ -207,7 +206,7 @@ Mittels ClientContext-Bearbeitung können die Werte bestimmter Eigenschaften fes
 
 ### Hinzufügen von Eigenschaftskomponenten {#adding-a-property-component}
 
-Nachdem Sie die **ClientContext-Entwurfsseite** geöffnet haben, können Sie auch **Hinzufügen** eine vollständig neue Eigenschaft verwenden, indem Sie die verfügbaren Komponenten verwenden (die Komponenten werden sowohl im Sidekick als auch im Dialogfeld **Neue Komponente einfügen** aufgelistet, das nach einem Klick auf das Feld **Komponenten oder Elemente hierher ziehen** geöffnet wird):
+Nachdem Sie die **ClientContext-Designseite** geöffnet haben, können Sie auch **eine vollständig neue Eigenschaft hinzufügen, indem Sie die verfügbaren Komponenten verwenden (die Komponenten werden sowohl im Sidekick als auch im Dialogfeld** Neue Komponente einfügen **aufgelistet, das nach einem Doppelklick auf das Feld** Komponenten oder Assets hierhin ziehen **geöffnet wird):**
 
 ![](assets/clientcontext_alisonparker_new.png)
 
@@ -226,7 +225,7 @@ In diesem Beispiel wird die Beispiel-Website Geometrixx Outdoors verwendet, um a
 Fügen Sie die Komponente „JSONP-Store“ zu ClientContext hinzu und nutzen Sie diese zum Abrufen und Speichern von Geolocation-Informationen zum Webclient.
 
 1. Öffnen Sie die englische Homepage der Geometrixx Outdoors-Site in der AEM-Autoreninstanz. ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
-1. Um den Client-Kontext zu öffnen, drücken Sie Strg-Alt-c (Fenster) oder Strg-Option-c (Mac).
+1. Um ClientContext zu öffnen, drücken Sie Strg-Alt-c (Windows) oder Strg-Wahltaste-c (Mac).
 1. Klicken Sie oben im ClientContext-Bereich auf das Bearbeitungssymbol, um ClientContext-Designer zu öffnen.
 
    ![](do-not-localize/chlimage_1.png)
@@ -253,7 +252,7 @@ Fügen Sie die Komponente „JSONP-Store“ zu ClientContext hinzu und nutzen Si
 
 Verwenden Sie die Daten aus dem Sitzungsstore, den Sie mit der Komponente „JSONP-Store“ erstellt haben. Das Segment verwendet den Breitengrad aus dem Sitzungsstore und das aktuelle Datum, um zu bestimmen, ob am Kundenstandort Winter ist.
 
-1. Öffnen Sie die Konsole Tools in Ihrem Webbrowser (`https://localhost:4502/miscadmin#/etc`).
+1. Öffnen Sie die Tools-Konsole in Ihrem Webbrowser (`https://localhost:4502/miscadmin#/etc`).
 1. Klicken Sie in der Ordnerstruktur auf den Ordner „Tools/Segmentation“ und dann auf „Neu“ > „Neuer Ordner“. Geben Sie die folgenden Eigenschaftswerte an und klicken Sie dann auf „Erstellen“:
 
    * Name: mysegments
@@ -280,4 +279,3 @@ Verwenden Sie die Daten aus dem Sitzungsstore, den Sie mit der Komponente „JSO
 1. Ziehen die Komponente „Skript“ in denselben UND-Container und öffnen Sie das zugehörige Bearbeitungsdialogfeld. Fügen Sie das folgende Skript hinzu und klicken Sie dann auf „OK“:
 
    `3 < new Date().getMonth() < 12`
-
