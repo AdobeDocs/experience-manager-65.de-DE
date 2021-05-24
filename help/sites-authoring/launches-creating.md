@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1008'
 ht-degree: 98%
 
 ---
-
 
 # Erstellen von Launches{#creating-launches}
 
@@ -85,7 +84,7 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
    * **Launch-Titel**: Der Name des Launches. Der Name sollte für Autoren einen Sinn ergeben.
    * **mit vorhandenem Inhalt**: Der ursprüngliche Inhalt wird verwendet, um den Launch zu erstellen.
    * **mit einer neuen Vorlage, um die Seite zu ersetzen**: Weitere Einzelheiten erfahren Sie unter [Erstellen von Launches mit einer neuen Vorlage](#create-launch-with-new-template).
-   * **Quellseiten-Live-Daten übernehmen**: Wählen Sie diese Option aus, um den Inhalt von Launch-Seiten automatisch zu aktualisieren, wenn die Quellseiten sich ändern. Mit dieser Option wird dies erreicht, indem der Launch eine [Live-Kopie](/help/sites-administering/msm.md) erstellt wird.
+   * **Quellseiten-Live-Daten übernehmen**: Wählen Sie diese Option aus, um den Inhalt von Launch-Seiten automatisch zu aktualisieren, wenn die Quellseiten sich ändern. Diese Option erreicht dies, indem der Launch zu einer [Live Copy](/help/sites-administering/msm.md) gemacht wird.
 
       Standardmäßig ist diese Option aktiviert.
 
@@ -170,4 +169,3 @@ Sie können einen Launch aus der [Launch-Konsole](/help/sites-authoring/launches
 >[!CAUTION]
 >
 >Durch Löschen eines Launches werden der Launch selbst sowie alle nachfolgenden verschachtelten Launches entfernt.
-
