@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: e9a1ff95-e88e-41f0-9731-9a59159b4653
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1849'
 ht-degree: 65%
 
 ---
 
-
 # Entwickeln des Bulk Editors{#developing-the-bulk-editor}
 
 In diesem Abschnitt wird erläutert, wie Sie das Bulk Editor-Tool entwickeln und die Produktlisten-Komponente erweitern, die auf dem Bulk Editor basiert.
 
-## Abfrageparameter für den Bulk Editor {#bulk-editor-query-parameters}
+## Abfrageparameter für den Bulk Editor  {#bulk-editor-query-parameters}
 
 Wenn Sie den Bulk Editor verwenden, können Sie einige Abfrageparameter zur URL hinzufügen, um den Bulk Editor mit einer bestimmten Konfiguration aufzurufen. Wenn Sie den Bulk Editor immer mit einer bestimmten Konfiguration nutzen möchten, beispielsweise in der Produktlisten-Komponente, müssen Sie die Datei bulkeditor.jsp (zu finden unter /libs/wcm/core/components/bulkeditor) ändern oder eine Komponente mit der spezifischen Konfiguration erstellen. Änderungen, die über Abfrageparameter erfolgen, sind nicht dauerhaft.
 
@@ -46,7 +45,7 @@ Nachstehend finden Sie eine Liste der Abfrageparameter für den Bulk Editor:
    <td> </td>
   </tr>
   <tr>
-   <td><p> Parameter</p> <p>(Name/Kurzname)<br /> </p> </td>
+   <td><p> Parameter</p> <p>(Langname/Kurzname)<br /> </p> </td>
    <td> Typ <br /> </td>
    <td> Beschreibung <br /> </td>
   </tr>
@@ -58,17 +57,17 @@ Nachstehend finden Sie eine Liste der Abfrageparameter für den Bulk Editor:
   <tr>
    <td> queryParams / qp<br /> </td>
    <td> Zeichenfolge</td>
-   <td> Abfrage suchen</td>
+   <td> Suchabfrage</td>
   </tr>
   <tr>
    <td> contentMode / cm<br /> </td>
    <td> Boolesch</td>
-   <td> Wenn "true", ist der Inhaltsmodus aktiviert<br /> </td>
+   <td> Wenn "true", wird der Inhaltsmodus aktiviert<br /> </td>
   </tr>
   <tr>
-   <td> colValue / cv<br /> </td>
+   <td> colsValue / cv<br /> </td>
    <td> Zeichenfolge[]</td>
-   <td> durchsuchte Eigenschaften (angekreuzte Werte aus "colsSelection"werden als Kontrollkästchen angezeigt)</td>
+   <td> durchsuchte Eigenschaften (angekreuzte Werte aus colsSelection werden als Kontrollkästchen angezeigt)</td>
   </tr>
   <tr>
    <td> extraCols / ec<br /> </td>
@@ -78,17 +77,17 @@ Nachstehend finden Sie eine Liste der Abfrageparameter für den Bulk Editor:
   <tr>
    <td> initialSearch / is<br /> </td>
    <td> Boolesch</td>
-   <td> Wenn true, wird die Abfrage beim Laden der Seite ausgeführt<br /> </td>
+   <td> Wenn "true", wird die Abfrage beim Laden der Seite ausgeführt<br /> </td>
   </tr>
   <tr>
-   <td> colSelection / cs<br /> </td>
+   <td> colsSelection / cs<br /> </td>
    <td> Zeichenfolge[]</td>
-   <td> Auswahl der gesuchten Eigenschaften (als Kontrollkästchen angezeigt)</td>
+   <td> Auswahl durchsuchter Eigenschaften (angezeigt als Kontrollkästchen)</td>
   </tr>
   <tr>
    <td> showGridOnly / sgo<br /> </td>
    <td> Boolesch</td>
-   <td> Wenn true, wird nur das Raster und nicht das Suchfeld <br /> angezeigt </td>
+   <td> wenn "true", zeigt nur das Raster und nicht das Suchfeld <br /> an </td>
   </tr>
   <tr>
    <td> searchPanelCollapsed/spc</td>
@@ -98,57 +97,57 @@ Nachstehend finden Sie eine Liste der Abfrageparameter für den Bulk Editor:
   <tr>
    <td> hideRootPath / hrp</td>
    <td> Boolesch</td>
-   <td> Wenn true, wird das Feld für den Stammpfad ausgeblendet</td>
+   <td> Wenn "true", blendet das Stammpfadfeld aus</td>
   </tr>
   <tr>
    <td> hideQueryParams/hqp</td>
    <td> Boolesch</td>
-   <td> Wenn "true", wird das Feld "Abfrage"ausgeblendet</td>
+   <td> wenn "true", blendet das Abfragefeld aus</td>
   </tr>
   <tr>
    <td> hideContentMode/hcm</td>
    <td> Boolesch</td>
-   <td> Wenn "true", wird das Feld "Inhaltsmodus"ausgeblendet</td>
+   <td> Wenn "true", wird das Feld für den Inhaltsmodus ausgeblendet</td>
   </tr>
   <tr>
-   <td> hideColsSelection / hcs</td>
+   <td> hideColsSelection/hcs</td>
    <td> Boolesch</td>
-   <td> Wenn "true", wird das Auswahlfeld für Spalten ausgeblendet</td>
+   <td> blendet, wenn "true", das Spaltenauswahlfeld aus</td>
   </tr>
   <tr>
    <td> hideExtraCols / hec</td>
    <td> Boolesch</td>
-   <td> Wenn true, wird das Feld für zusätzliche Spalten ausgeblendet</td>
+   <td> Wenn "true", wird das zusätzliche Spaltenfeld ausgeblendet</td>
   </tr>
   <tr>
    <td> hideSearchButton</td>
    <td> Boolesch</td>
-   <td> Wenn true, wird die Suchschaltfläche ausgeblendet</td>
+   <td> Wenn "true", wird die Suchschaltfläche ausgeblendet.</td>
   </tr>
   <tr>
-   <td> hideSaveButton/hsavep</td>
+   <td> hideSaveButton/savep</td>
    <td> Boolesch</td>
    <td> Wenn "true", wird die Schaltfläche "Speichern"ausgeblendet</td>
   </tr>
   <tr>
    <td> hideExportButton/hexpb</td>
    <td> Boolesch</td>
-   <td> Wenn "true", wird die Exportschaltfläche ausgeblendet</td>
+   <td> Wenn "true", wird die Export-Schaltfläche ausgeblendet</td>
   </tr>
   <tr>
    <td> hideImportButton/hib</td>
    <td> Boolesch</td>
-   <td> Wenn "true", wird die Importschaltfläche ausgeblendet</td>
+   <td> blendet bei "true"die Importschaltfläche aus</td>
   </tr>
   <tr>
    <td> hideResultNumber / hrn</td>
    <td> Boolesch</td>
-   <td> Wenn "true", wird der Text der Rastersuchergebnisnummer ausgeblendet</td>
+   <td> Wenn "true", blendet den Text der Rastersuchergebnisnummer aus.</td>
   </tr>
   <tr>
-   <td> hideInsertButton / hinsertb</td>
+   <td> hideInsertButton/hinsertb</td>
    <td> Boolesch</td>
-   <td> Wenn "true", wird die Rastereinfügeschaltfläche ausgeblendet</td>
+   <td> blendet bei "true"die Rastereinfüge-Schaltfläche aus</td>
   </tr>
   <tr>
    <td> hideDeleteButton/hdelb</td>
@@ -158,7 +157,7 @@ Nachstehend finden Sie eine Liste der Abfrageparameter für den Bulk Editor:
   <tr>
    <td> hidePathCol/hpc</td>
    <td> Boolesch</td>
-   <td> bei "true"wird die Rasterspalte "path"ausgeblendet</td>
+   <td> blendet bei "true"die Spalte "path"des Rasters aus</td>
   </tr>
  </tbody>
 </table>
@@ -171,7 +170,7 @@ Mit der Produktlisten-Komponente können Benutzer eine Tabelle mit Daten anzeige
 
 Mit dem Bulk Editor können Sie Zeilen hinzufügen, ändern, löschen, filtern und exportieren, Änderungen speichern und einen Satz an Zeilen importieren. Jede Zeile wird als Knoten unter der Instanz der Produktlisten-Komponente gespeichert. Jede Zelle ist eine Eigenschaft eines jeden Knotens. Dies wurde bei der Entwicklung festgelegt und kann leicht geändert werden. Sie können Knoten beispielsweise auch an anderer Stelle im Repository speichern. Die Aufgabe des Abfrage-Servlets besteht darin, eine Liste der anzuzeigenden Knoten zurückzugeben; der Suchpfad ist als Produktliste-Instanz definiert.
 
-Der Quellcode der Produktkomponenten-Liste ist im Repository unter /apps/geometrixx/components/productlist verfügbar und besteht aus mehreren Komponenten wie allen AEM:
+Der Quellcode der Produktlisten-Komponente ist im Repository unter /apps/geometrixx/components/productlist verfügbar und besteht aus mehreren Teilen wie allen AEM Komponenten:
 
 * HTML-Rendering: Das Rendering erfolgt in einer JSP-Datei (/apps/geometrixx/components/productlist/productlist.jsp). Die JSP-Datei liest die untergeordneten Knoten der aktuellen Produktlisten-Komponente und zeigt jeden dieser Knoten als Zeile einer HTML-Tabelle an.
 * Dialogfeld „Bearbeiten“: Hier definieren Sie die Bulk Editor-Konfiguration. Passen Sie das Dialogfeld an die Anforderungen der Komponente an: verfügbare Spalten und mögliche Aktionen, die beim Raster oder bei der Suche ausgeführt werden sollen. Informationen zu allen Konfigurationseigenschaften finden Sie unter [Konfigurationseigenschaften des Bulk Editors](#bulk-editor-configuration-properties).
@@ -287,43 +286,43 @@ Jeder Teil des Bulk Editors kann konfiguriert werden. In der folgenden Tabelle s
   </tr>
   <tr>
    <td>contentMode</td>
-   <td>True, um den Inhaltsmodus zu aktivieren: Eigenschaften werden auf dem Knoten "jcr:content"und nicht auf dem Knoten "Suchergebnis"gelesen</td>
+   <td>True zum Aktivieren des Inhaltsmodus: Eigenschaften werden auf dem Knoten jcr:content und nicht im Suchergebnisknoten gelesen</td>
   </tr>
   <tr>
    <td>colsValue</td>
-   <td>Durchsuchte Eigenschaften (angekreuzte Werte aus "colSelection"werden als Kontrollkästchen angezeigt)</td>
+   <td>Durchsuchte Eigenschaften (angekreuzte Werte aus colsSelection werden als Kontrollkästchen angezeigt)</td>
   </tr>
   <tr>
    <td>extraCols</td>
-   <td>Extra durchsuchte Eigenschaften (in einem Textfeld mit Komma getrennt angezeigt)</td>
+   <td>Zusätzliche durchsuchte Eigenschaften (in einem Textfeld durch Kommas getrennt angezeigt)</td>
   </tr>
   <tr>
    <td>initialSearch</td>
-   <td>True für die Ausführung der Abfrage beim Laden der Seite</td>
+   <td>True zum Ausführen einer Abfrage beim Laden der Seite</td>
   </tr>
   <tr>
    <td>colsSelection</td>
-   <td>Auswahl der gesuchten Eigenschaften (als Kontrollkästchen angezeigt)</td>
+   <td>Auswahl der durchsuchten Eigenschaften (angezeigt als Kontrollkästchen)</td>
   </tr>
   <tr>
    <td>showGridOnly</td>
-   <td>True, um nur das Raster und nicht das Suchfeld anzuzeigen (vergessen Sie nicht, die initialSearch auf true festzulegen)</td>
+   <td>True , um nur das Raster und nicht das Suchfeld anzuzeigen (vergessen Sie nicht, initialSearch auf "true"festzulegen)</td>
   </tr>
   <tr>
    <td>searchPanelCollapsed</td>
-   <td>True to collapse search panel by default</td>
+   <td>"True"zum standardmäßigen Reduzieren des Suchfelds</td>
   </tr>
   <tr>
    <td>hideRootPath</td>
-   <td>Stammpfadfeld ausblenden</td>
+   <td>Feld für Stammpfad ausblenden</td>
   </tr>
   <tr>
    <td>hideQueryParams</td>
-   <td>Feld Abfrage ausblenden</td>
+   <td>Abfragefeld ausblenden</td>
   </tr>
   <tr>
    <td>hideContentMode</td>
-   <td>Feld "Inhaltsmodus ausblenden"</td>
+   <td>Feld für Inhaltsmodus ausblenden</td>
   </tr>
   <tr>
    <td>hideColsSelection</td>
@@ -331,7 +330,7 @@ Jeder Teil des Bulk Editors kann konfiguriert werden. In der folgenden Tabelle s
   </tr>
   <tr>
    <td>hideExtraCols</td>
-   <td>Feld "Zusatzprotokolle ausblenden"</td>
+   <td>Feld "Zusätzliche Protokolle ausblenden"</td>
   </tr>
   <tr>
    <td>hideSearchButton</td>
@@ -339,7 +338,7 @@ Jeder Teil des Bulk Editors kann konfiguriert werden. In der folgenden Tabelle s
   </tr>
   <tr>
    <td>hideSaveButton</td>
-   <td>Schaltfläche "Speichern"ausblenden</td>
+   <td>Schaltfläche "Speichern ausblenden"</td>
   </tr>
   <tr>
    <td>hideExportButton</td>
@@ -359,7 +358,7 @@ Jeder Teil des Bulk Editors kann konfiguriert werden. In der folgenden Tabelle s
   </tr>
   <tr>
    <td>hideDeleteButton</td>
-   <td>Schaltfläche zum Löschen des Rasters ausblenden</td>
+   <td>Schaltfläche zum Löschen eines Rasters ausblenden</td>
   </tr>
   <tr>
    <td>hidePathCol</td>
@@ -378,12 +377,12 @@ Jeder Teil des Bulk Editors kann konfiguriert werden. In der folgenden Tabelle s
    <td>Pfad zum Importieren des Servlets</td>
   </tr>
   <tr>
-   <td>insertResourceType</td>
-   <td>Ressourcentyp zum Knoten hinzugefügt, wenn eine Zeile eingefügt wird</td>
+   <td>addedResourceType</td>
+   <td>Ressourcentyp, der dem Knoten hinzugefügt wird, wenn eine Zeile eingefügt wird</td>
   </tr>
   <tr>
    <td>saveButton</td>
-   <td>Schaltfläche speichern, Widget-Konfiguration</td>
+   <td>Schaltfläche speichern Widget-Konfiguration</td>
   </tr>
   <tr>
    <td>searchButton</td>
@@ -391,15 +390,15 @@ Jeder Teil des Bulk Editors kann konfiguriert werden. In der folgenden Tabelle s
   </tr>
   <tr>
    <td>exportButton</td>
-   <td>Widget-Konfiguration für Schaltfläche exportieren</td>
+   <td>Konfigurieren des Widgets "Schaltfläche exportieren"</td>
   </tr>
   <tr>
    <td>importButton</td>
-   <td>Widget-Konfiguration für Schaltfläche importieren</td>
+   <td>Konfigurieren des Widgets "Schaltfläche importieren"</td>
   </tr>
   <tr>
    <td>searchPanel</td>
-   <td>Widget-Konfiguration des Suchfelds</td>
+   <td>Widget-Konfiguration des Suchbereichs</td>
   </tr>
   <tr>
    <td>grid</td>
@@ -407,7 +406,7 @@ Jeder Teil des Bulk Editors kann konfiguriert werden. In der folgenden Tabelle s
   </tr>
   <tr>
    <td>store</td>
-   <td>Store-Konfiguration</td>
+   <td>Store config</td>
   </tr>
   <tr>
    <td>colModel</td>
@@ -427,21 +426,21 @@ Jeder Teil des Bulk Editors kann konfiguriert werden. In der folgenden Tabelle s
   </tr>
   <tr>
    <td>colsSelectionInput</td>
-   <td>colSelection-Widget-Konfiguration</td>
+   <td>colsSelection-Widget config</td>
   </tr>
   <tr>
    <td>extraColsInput</td>
-   <td>extraCols widget config</td>
+   <td>extraCols-Widget-Konfiguration</td>
   </tr>
   <tr>
-   <td>colMetadata</td>
-   <td>Konfiguration der Spaltenmetadaten. Mögliche Eigenschaften sind (auf alle Zellen der Spalte angewendet): <br />
+   <td>colsMetadata</td>
+   <td>Konfiguration der Spaltenmetadaten. Mögliche Eigenschaften sind (werden auf alle Zellen der Spalte angewendet): <br />
     <ul>
-     <li>cellStyle: html-Stil </li>
+     <li>cellStyle: HTML-Stil </li>
      <li>cellCls: css-Klasse </li>
-     <li>readOnly: true, um Wert nicht ändern zu können </li>
-     <li>Kontrollkästchen: true, um alle Zellen der Spalte als Kontrollkästchen zu definieren (true/false-Werte) </li>
-     <li>forcedPosition: ganzzahliger Wert, der angibt, wo die Spalte im Raster platziert werden muss (zwischen 0 und der Anzahl Spalten-1)<p><br /> </p> </li>
+     <li>readOnly: true , um Wert nicht ändern zu können </li>
+     <li>Kontrollkästchen: true , um alle Zellen der Spalte als Kontrollkästchen zu definieren (true/false-Werte) </li>
+     <li>forcedPosition: Ganzzahlwert, um anzugeben, wo die Spalte im Raster platziert werden soll (zwischen 0 und der Anzahl der Spalten-1)<p><br /> </p> </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -565,14 +564,14 @@ Jede aktualisierte Eigenschaft wird im folgenden Format an das Servlet gesendet:
 
 * Parametername: &lt;jcr path>/&lt;property name>
 
-   Beispiel: /content/geometrixx/de/products/jcr:content/par/productlist/1258674859000/SellingSku
+   Beispiel: /content/geometrixx/en/products/jcr:content/par/productlist/1258674859000/SellingSku
 
-* Wert: &lt;value>
+* Wert: &lt;Wert>
 
    Beispiel: 12123
 
 Das Servlet muss wissen, wo die Eigenschaft catalogCode gespeichert ist.
 
-Eine standardmäßige Save-Servlet-Implementierung ist unter /libs/wcm/bulkeditor/save/POST.jsp verfügbar und wird in der Produktkomponente verwendet. Es nimmt alle Parameter aus der Anforderung (mit dem Format &lt;jcr path>/&lt;property name>) und schreibt Eigenschaften mithilfe der JCR-API auf Knoten. Außerdem erstellt das Servlet Knoten, wenn sie nicht vorhanden sind (in das Raster eingefügte Zeilen).
+Eine standardmäßige Save-Servlet-Implementierung ist unter /libs/wcm/bulkeditor/save/POST.jsp verfügbar und wird in der Produktlisten-Komponente verwendet. Es nimmt alle Parameter aus der Anfrage (mit dem Format &lt;jcr path>/&lt;property name> ) und schreibt Eigenschaften mithilfe der JCR-API auf Knoten. Außerdem erstellt das Servlet Knoten, wenn sie nicht vorhanden sind (in das Raster eingefügte Zeilen).
 
-Der Standardcode sollte nicht so verwendet werden, wie er es nativ implementiert (eine POST auf &lt;jcr path>/&lt;property name>), und ist daher nur ein guter Ausgangspunkt zum Erstellen eines Save-Servlets, das ein Eigenschaftsvererbungsmodell verwaltet.
+Der Standardcode sollte nicht so verwendet werden, wie es ist, da er das, was der Server nativ tut (eine POST auf &lt;jcr path>/&lt;property name>), neu implementiert und daher nur ein guter Ausgangspunkt für die Erstellung eines Save-Servlets ist, das ein Eigenschaftsvererbungsmodell verwaltet.
