@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: b1d45f01-78de-423c-8f6b-5cb7067c3a2f
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 317bab41-3504-4e46-9ddc-72e291a34e06
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 70%
 
 ---
-
 
 # Fehlerbehebung bei der Adobe Campaign-Integration{#troubleshooting-your-adobe-campaign-integration}
 
@@ -34,15 +33,15 @@ Bezüglich beider Integrationen können Sie überprüfen, ob HTTP-Aufrufe versen
 * Für AEM-Funktionen werden JSON-Aufrufe von der AEM-Autorenschnittstelle angefordert. Diese sollten keinen HTTP-500-Fehler verursachen. Wenn HTTP-500-Fehler auftreten, überprüfen Sie die Datei `error.log`, um weitere Informationen zu erhalten.
 * Das Erhöhen der Debugging-Stufe für „campaign-classes“ in AEM hilft ebenfalls bei der Problembehebung.
 
-## Falls die Verbindung fehlschlägt {#if-the-connection-fails}
+## Falls die Verbindung fehlschlägt  {#if-the-connection-fails}
 
-Überprüfen Sie, ob Sie den Operator **aemserver** in Adobe Campaign konfiguriert haben.
+Vergewissern Sie sich, dass Sie den Operator **aemserver** in Adobe Campaign konfiguriert haben.
 
 ## Falls in der Adobe Campaign-Konsole keine Bilder angezeigt werden {#if-images-do-not-appear-in-the-adobe-campaign-console}
 
-Überprüfen Sie die HTML-Quelle und bestätigen Sie, dass Sie die URL vom Clientcomputer aus öffnen können. Wenn die URL localhost:4503 enthält, ändern Sie die Konfiguration von Day CQ Link Externalizer in Ihrer Autoreninstanz, um auf eine Veröffentlichungsinstanz zu verweisen, die vom Adobe Campaign-Konsolencomputer aus erreicht werden kann.
+Überprüfen Sie die HTML-Quelle und bestätigen Sie, dass Sie die URL vom Clientcomputer aus öffnen können. Wenn die URL localhost:4503 enthält, ändern Sie die Konfiguration von Day CQ Link Externalizer in Ihrer Autoreninstanz, um auf eine Veröffentlichungsinstanz zu verweisen, die vom Adobe Campaign Console-Computer aus aufgerufen werden kann.
 
-Siehe [Konfigurieren des Externalisierers.](/help/sites-administering/campaignstandard.md#configuring-the-externalizer)
+Siehe [Konfigurieren des Externalizers.](/help/sites-administering/campaignstandard.md#configuring-the-externalizer)
 
 ## Wenn Sie keine Verbindung zwischen AEM und Adobe Campaign herstellen können.{#if-you-cannot-connect-from-aem-to-adobe-campaign}
 
@@ -52,7 +51,7 @@ Suchen Sie nach folgender Fehlermeldung in Adobe Campaign:
 
 `Make sure the DNS alias used to access the server is correct (for example, avoid hard-coded IP addresses). (iRc=16384)`
 
-Um dieses Problem zu beheben, ändern Sie Folgendes in **$KAMPAGNE_HOME/conf/config-&lt;instance-name>.xml**:
+Um dieses Problem zu beheben, ändern Sie Folgendes in **$CAMPAIGN_HOME/conf/config-&lt;instance-name>.xml**:
 
 `<dataStore hosts="*" lang="en_GB">`
 
@@ -64,7 +63,7 @@ Um dieses Problem zu beheben, ändern Sie Folgendes in **$KAMPAGNE_HOME/conf/con
 
 ## Falls Sie eine Warnung zu Ihrer „setlocale“ erhalten {#if-you-get-a-warning-about-your-setlocale}
 
-Wenn Sie den Apache HTTPD-Dienst starten und den Fehler `"Warning: setlocale: LC_CTYPE cannot change locale"` sehen, stellen Sie sicher, dass das Gebietsschema **en_CA.ISO-8859-15** auf Ihrem System installiert ist.
+Wenn Sie den Apache HTTPD-Dienst starten und den Fehler `"Warning: setlocale: LC_CTYPE cannot change locale"` sehen, stellen Sie sicher, dass das **en_CA.ISO-8859-15-Gebietsschema** auf Ihrem System installiert ist.
 
 Mit `local -a` können Sie überprüfen, ob es installiert ist. Wenn es nicht installiert ist, können Sie das Skript **/usr/local/neolane/nl6/env.sh** patchen und ein installiertes Eingabegebietsschema festlegen.
 
@@ -78,14 +77,14 @@ Verwenden Sie folgende Problemumgehung:
 
 1. Öffnen Sie die Datei **$CAMPAIGN_HOME/datakit/nms/fra/js/amcIntegration.js**.
 1. Zeile 467 der Methode &quot;amcGetSeedMetaData&quot;ändern
-1. `label : [inclView.@label](mailto:inclView.@label)` in `label : String([inclView.@label](mailto:inclView.@label))` ändern
+1. Ändern Sie `label : [inclView.@label](mailto:inclView.@label)` in `label : String([inclView.@label](mailto:inclView.@label))`
 
 1. Speichern.
 1. Starten Sie den Server neu.
 
 ## Falls Adobe Campaign einen Fehler ausgibt, wenn Sie auf die Schaltfläche zum Synchronisieren klicken  {#if-adobe-campaign-displays-an-error-when-clicking-the-synchronize-button}
 
-Wenn Sie in Adobe Campaign Classic auf die Schaltfläche **Synchronisieren** klicken, wird der folgende Fehler angezeigt:
+Wenn beim Klicken auf die Schaltfläche **Synchronisieren** in Adobe Campaign Classic der folgende Fehler angezeigt wird:
 
 `Error while executing the method ‘aemListContent' of service [nms:delivery](https://nmsdelivery/)`
 
@@ -128,12 +127,12 @@ Beim Versuch, Inhalt in der Adobe Campaign-Bereitstellung zu synchronisieren, g
 Das Problem beheben Sie wie folgt:
 
 * Entweder der Dispatcher oder der Reverse-Proxy muss so konfiguriert werden, dass er das ursprüngliche Protokoll als Kopfzeile übergibt.
-* Der *Apache Felix HTTP-Dienst-SSL-Filter* in der OSGi-Konfiguration ([https://&lt;Host>:&lt;Anschluss>/system/console/configMgr](http://localhost:4502/system/console/configMgr)) muss mit den entsprechenden Header-Einstellungen konfiguriert werden. Siehe [https://felix.apache.org/documentation/subprojects/apache-felix-http-service.html#using-the-ssl-filter](https://felix.apache.org/documentation/subprojects/apache-felix-http-service.html#using-the-ssl-filter)
+* Der *Apache Felix Http Service SSL Filter* in der OSGi-Konfiguration ([https://&lt;host>:&lt;port>/system/console/configMgr](http://localhost:4502/system/console/configMgr)) muss entsprechend den jeweiligen Kopfzeileneinstellungen konfiguriert werden. Siehe [https://felix.apache.org/documentation/subprojects/apache-felix-http-service.html#using-the-ssl-filter](https://felix.apache.org/documentation/subprojects/apache-felix-http-service.html#using-the-ssl-filter)
 
 ## Falls die selbst erstellte benutzerdefinierte Vorlage unter Seiteneigenschaften nicht ausgewählt werden kann {#if-the-custom-template-i-created-cannot-be-selected-in-page-properties}
 
-Beim Erstellen einer E-Mail-Vorlage für Adobe Campaign müssen Sie die Eigenschaft **acMapping** mit dem Wert **mapRecipient** in den **jcr:content**-Knoten der Vorlage einschließen, oder Sie können die Vorlage für das Adobe Campaign nicht in **Seiteneigenschaften** von AEM (deaktiviert ist) auswählen ).
+Beim Erstellen einer E-Mail-Vorlage für Adobe Campaign müssen Sie die Eigenschaft **acMapping** mit dem Wert **mapRecipient** im Knoten **jcr:content** der Vorlage einbeziehen oder Sie können die Adobe Campaign-Vorlage nicht im Knoten **Seiteneigenschaften** der AEM auswählen (Feld ist deaktiviert).
 
 ## Falls in den Protokollen der Fehler „com.day.cq.mcm.campaign.servlets.util.ParameterMapper“ auftritt {#if-you-get-the-error-com-day-cq-mcm-campaign-servlets-util-parametermapper-in-your-logs}
 
-Wenn Sie Ihre benutzerdefinierte Vorlage verwenden, erhalten Sie den Fehler &quot;com.day.cq.mcm.Kampagne.servlets.util.ParameterMapper&quot;in Ihren Protokollen. In diesem Fall müssen Sie das Feature Pack 6576 von [Package Share](/help/sites-administering/package-manager.md#package-share) installieren. Wenn die Eigenschaft acMapping auf einen anderen Wert als Empfänger.firstName gesetzt ist, wird auf der Seite des Adobe Campaign-Managers ein leerer Wert erstellt.
+Wenn Sie Ihre benutzerdefinierte Vorlage verwenden, erhalten Sie den Fehler &quot;com.day.cq.mcm.campaign.servlets.util.ParameterMapper&quot;in Ihren Protokollen. In diesem Fall müssen Sie das Feature Pack 6576 von [Package Share](/help/sites-administering/package-manager.md#package-share) installieren. Dies ist ein Problem, bei dem, wenn die acMapping -Eigenschaft auf einen anderen Wert als recipient.firstName festgelegt ist, ein leerer Wert auf der Seite &quot;Adobe Campaign Manager&quot;erstellt wird.
