@@ -10,7 +10,6 @@ topic-tags: components
 content-type: reference
 discoiquuid: 104d1c64-b9b3-40f5-8f9b-fe92d9daaa1f
 exl-id: 65f5d5e1-ac11-4a3c-8a51-ce06a741c264
-translation-type: tm+mt
 source-git-commit: baf2c6339a554743b6cc69486fb77b121048ba4b
 workflow-type: tm+mt
 source-wordcount: '646'
@@ -18,7 +17,7 @@ ht-degree: 98%
 
 ---
 
-# Verwenden von Bedingungen zum Ausblenden  {#using-hide-conditions}
+# Verwenden von Bedingungen zum Ausblenden   {#using-hide-conditions}
 
 Bedingungen zum Ausblenden können verwendet werden, um festzustellen, ob eine Komponentenressource gerendert wird. Etwa wenn ein Vorlagenautor die Kernkomponente [Listenkomponente](https://helpx.adobe.com/experience-manager/core-components/using/list.html) im [Vorlageneditor](/help/sites-authoring/templates.md) konfiguriert und beschließt, die Optionen zum Erstellen der Liste auf Basis untergeordneter Seiten zu deaktivieren. Durch das Deaktivieren dieser Option im Designdialogfeld wird eine Eigenschaft so festgelegt, dass beim Rendern der Listenkomponente die Bedingung zum Ausblenden ausgewertet und die Option zum Anzeigen untergeordneter Seiten nicht angezeigt wird.
 
