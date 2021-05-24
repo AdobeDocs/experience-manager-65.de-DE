@@ -9,22 +9,21 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: d2267663-6c1d-413c-9862-e82e21ae6906
-translation-type: tm+mt
-source-git-commit: ea4de28525ec4c2094e84d98aad6a518b03f011e
+exl-id: c4f7f45f-224b-4fc3-b4b0-f5b21b8a466f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 76%
 
 ---
 
-
 # Sicherheit{#security}
 
 Anwendungssicherheit beginnt während der Entwicklung. Adobe empfiehlt die folgenden Best Practices, um die Sicherheit zu verbessern.
 
-## Verwenden Sie Sitzungsanfragen {#use-request-session}
+## Verwenden Sie Sitzungsanfragen  {#use-request-session}
 
-Nach dem Prinzip der geringsten Berechtigungen empfiehlt Adobe, dass jeder Repository-Zugriff über die Sitzung erfolgt, die an die Benutzeranforderung und die richtige Zugriffskontrolle gebunden ist.
+Gemäß dem Grundsatz der geringsten Berechtigungen empfiehlt Adobe, dass jeder Repository-Zugriff über die mit der Benutzeranfrage verknüpfte Sitzung und eine ordnungsgemäße Zugriffskontrolle erfolgt.
 
 ## Schutz vor Cross-Site Scripting (XSS) {#protect-against-cross-site-scripting-xss}
 
@@ -42,7 +41,7 @@ Es ist wichtig, dass Sie diese Konfiguration an Ihre eigenen Sicherheitsanforder
 >
 >Wir empfehlen Ihnen dringend, immer mit der [von AEM bereitgestellten XSSAPI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/xss/XSSAPI.html) auf die XSS-Schutz-API zuzugreifen.
 
-Darüber hinaus kann eine Web-Anwendungs-Firewall, wie z. B. [mod_security for Apache](https://www.modsecurity.org), eine zuverlässige und zentrale Kontrolle über die Sicherheit der Bereitstellungs-Umgebung bieten und vor zuvor unentdeckten Cross-Site-Scripting-Angriffen schützen.
+Darüber hinaus kann eine Webanwendungs-Firewall, z. B. [mod_security für Apache](https://www.modsecurity.org), eine zuverlässige, zentrale Kontrolle über die Sicherheit der Bereitstellungsumgebung bieten und vor zuvor nicht erkannten Cross-Site-Scripting-Angriffen schützen.
 
 ## Zugriff auf Cloud-Service-Informationen {#access-to-cloud-service-information}
 
@@ -58,9 +57,9 @@ Das webservicesupport-Modul schreibt Statistiken und Konfigurationsinformationen
 
 Mit den Standardberechtigungen:
 
-* Autor-Umgebung: `read` für `contributors`
+* Autorenumgebung: `read` für `contributors`
 
-* Umgebung veröffentlichen: `read` für `everyone`
+* Veröffentlichungsumgebung: `read` für `everyone`
 
 ## Schützen Sie sich vor Cross-Site Request Forgery-Angriffen {#protect-against-cross-site-request-forgery-attacks}
 
