@@ -1,22 +1,21 @@
 ---
 title: Bearbeiten von Seiten (Authoring)
 seo-title: Bearbeiten von Seiten (Authoring)
-description: Es gibt zwei Übersichten zum Authoring mit AEM. (1) Erste Schritte für Autoren - eine Einführung für neue Autoren und (2) Quick Guide to Authoring Pages - eine schnelle Anleitung (auf hoher Ebene) zu den wichtigsten Aktionen.
-seo-description: Es gibt zwei Übersichten zum Authoring mit AEM. (1) Erste Schritte für Autoren - eine Einführung für neue Autoren und (2) Quick Guide to Authoring Pages - eine schnelle Anleitung (auf hoher Ebene) zu den wichtigsten Aktionen.
+description: Es gibt zwei Übersichten zum Authoring mit AEM. (1) Erste Schritte für Autoren - eine Einführung für neue Autoren und (2) Kurzanleitung zur Bearbeitung von Seiten - eine (allgemeine) Kurzanleitung zu den wichtigsten Aktionen.
+seo-description: Es gibt zwei Übersichten zum Authoring mit AEM. (1) Erste Schritte für Autoren - eine Einführung für neue Autoren und (2) Kurzanleitung zur Bearbeitung von Seiten - eine (allgemeine) Kurzanleitung zu den wichtigsten Aktionen.
 uuid: 95d12bd6-c51d-4b7c-9d67-a152a822eb01
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 3fe5b6cc-1494-43e1-add7-2f7828b676ad
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: a3606d72-1bd8-4886-9285-6457dae66486
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 78%
 
 ---
-
 
 # Bearbeiten von Seiten (Authoring){#authoring-pages}
 
@@ -52,4 +51,3 @@ Mit einem Rechtsklick auf die meisten Bildschirmelemente (z. B. Absätze auf de
 
 * **Suche während der Eingabe**
 In bestimmten Szenarios (z. B. bei der Pfadauswahl in Dialogfeldern für die Bearbeitung) liefert die Inhaltssuche in der AEM-Oberfläche bereits während der Eingabe dynamische Suchergebnisse.
-
