@@ -11,7 +11,6 @@ content-type: reference
 discoiquuid: 6ae57874-a9a1-4208-9001-7f44a1f57cbe
 docset: aem65
 exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
-translation-type: tm+mt
 source-git-commit: cb4b0cb60b8709beea3da70495a15edc8c4831b8
 workflow-type: tm+mt
 source-wordcount: '808'
@@ -40,7 +39,7 @@ So konfigurieren Sie einen solchen Bereich innerhalb Ihrer Website:
 >
 >Die Auswirkungen der CUGs sollten bei Leistungstests immer berücksichtigt werden.
 
-## Erstellen der zu verwendenden Benutzergruppe {#creating-the-user-group-to-be-used}
+## Erstellen der zu verwendenden Benutzergruppe  {#creating-the-user-group-to-be-used}
 
 So erstellen Sie eine geschlossene Benutzergruppe:
 
@@ -52,16 +51,16 @@ So erstellen Sie eine geschlossene Benutzergruppe:
 
 1. Wählen Sie im nächsten Bildschirm die Karte **Gruppen** aus.
 
-   ![screenshot_2018-10-30at145502](assets/screenshot_2018-10-30at145502.png)
+   ![screen_shot_2018-10-30at145502](assets/screenshot_2018-10-30at145502.png)
 
 1. Klicken Sie auf die Schaltfläche **Erstellen** oben rechts, um eine neue Gruppe zu erstellen.
-1. Benennen Sie Ihre neue Gruppe; zum Beispiel `cug_access`.
+1. Benennen Sie Ihre neue Gruppe. z. B. `cug_access`.
 
-   ![screenshot_2018-10-30at151459](assets/screenshot_2018-10-30at151459.png)
+   ![screen_shot_2018-10-30at151459](assets/screenshot_2018-10-30at151459.png)
 
 1. Gehen Sie zur Registerkarte **Mitglieder** und weisen Sie dieser Gruppe die erforderlichen Benutzer zu.
 
-   ![screenshot_2018-10-30at151808](assets/screenshot_2018-10-30at151808.png)
+   ![screen_shot_2018-10-30at151808](assets/screenshot_2018-10-30at151808.png)
 
 1. Aktivieren Sie alle Benutzer, die Sie Ihrer CUG zugewiesen haben. Dies sind in diesem Fall alle Mitglieder der Gruppe `cug_access`.
 1. Aktivieren Sie die geschlossene Benutzergruppe, sodass sie in der Publishing-Umgebung verfügbar ist. In diesem Fall ist dies die Gruppe `cug_access`.
@@ -73,29 +72,29 @@ So wenden Sie die CUG auf eine Seite an:
 1. Navigieren Sie zur Stammseite des eingeschränkten Bereichs, dem Sie die CUG zuweisen möchten.
 1. Wählen Sie die Seite aus, indem Sie auf die Miniaturansicht klicken und dann in der oberen Leiste auf **Eigenschaften** klicken.
 
-   ![screenshot_2018-10-30at162632](assets/screenshot_2018-10-30at162632.png)
+   ![screen_shot_2018-10-30at162632](assets/screenshot_2018-10-30at162632.png)
 
 1. Rufen Sie im folgenden Fenster die Registerkarte **Erweitert** auf.
 1. Blättern Sie nach unten und aktivieren Sie das Kontrollkästchen im Bereich **Authentifizierungsanforderungen**.
 
-1. hinzufügen Sie unten Ihren Konfigurationspfad und drücken Sie dann auf Speichern.
+1. Fügen Sie unten Ihren Konfigurationspfad hinzu und klicken Sie auf Speichern .
 1. Rufen Sie dann die Registerkarte **Berechtigungen** auf und klicken Sie auf die Schaltfläche **Geschlossene Benutzergruppe bearbeiten**.
 
-   ![screenshot_2018-10-30at163003](assets/screenshot_2018-10-30at163003.png)
+   ![screen_shot_2018-10-30at163003](assets/screenshot_2018-10-30at163003.png)
 
    >[HINWEIS!]
    >
-   > Beachten Sie, dass CUGs auf der Registerkarte &quot;Berechtigungen&quot;nicht in Live Copies von Blueprints ausgeführt werden können. Planen Sie dies ein, wenn Sie eine Live Copy konfigurieren.
+   > Beachten Sie, dass CUGs auf der Registerkarte &quot;Berechtigungen&quot;nicht für Live Copies aus Blueprints bereitgestellt werden können. Planen Sie dies ein, wenn Sie eine Live Copy konfigurieren.
    >
    > Weitere Informationen finden Sie auf [dieser Seite](closed-user-groups.md#aem-livecopy).
 
 1. Suchen Sie nach Ihrer CUG im folgenden Fenster und fügen Sie in diesem Fenster die Gruppe **cug_access** hinzu. Klicken Sie abschließend **Speichern**.
 1. Klicken Sie auf **Aktiviert**, um festzulegen, dass diese Seite (und alle untergeordneten Seiten) zu einer CUG gehören.
-1. Geben Sie die **Anmeldeseite** an, die Mitglieder der Gruppe verwenden; Beispiel:
+1. Geben Sie die **Anmeldeseite** an, die von Mitgliedern der Gruppe verwendet werden soll. Beispiel:
 
    `/content/geometrixx/en/toolbar/login.html`
 
-   Dies ist optional. Wenn Sie das Feld leer lassen, wird die Standard-Anmeldeseite verwendet.
+   Dies ist optional. Wenn Sie das Feld leer lassen, wird die standardmäßige Anmeldeseite verwendet.
 
 1. Fügen Sie die zugelassenen Gruppen unter **Zugelassene Gruppen** hinzu. Fügen Sie mit dem Plussymbol (+) Gruppen hinzu bzw. entfernen Sie Gruppen mit dem Minussymbol (-). Nur Mitglieder dieser Gruppen können sich bei diesen Seiten anmelden und darauf zugreifen.
 1. Weisen Sie bei Bedarf einen **Bereich** zu (d. h. einen Namen für die Gruppen von Seiten). Frei lassen, um den Seitentitel zu verwenden.
@@ -119,7 +118,7 @@ Falls Sie den Dispatcher verwenden, müssen Sie eine Dispatcher-Farm mit den fol
 
 ### Konfigurieren des Dispatcher-Sitzungsmanagements für CUGs  {#configuring-dispatcher-session-management-for-cugs}
 
-Konfigurieren Sie [die Sitzungsverwaltung in der Datei dispatcher.any](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) für das CUG. Der Authentifizierungs-Handler, der verwendet wird, wenn der Zugriff für CUG-Seiten angefordert wird, legt fest, wie Sie die Sitzungsverwaltung konfigurieren.
+Konfigurieren Sie die [Sitzungsverwaltung in der Datei &quot;dispatcher.any](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement)&quot;für die CUG. Der Authentifizierungs-Handler, der verwendet wird, wenn der Zugriff für CUG-Seiten angefordert wird, bestimmt, wie Sie die Sitzungsverwaltung konfigurieren.
 
 ```xml
 /sessionmanagement
@@ -130,10 +129,10 @@ Konfigurieren Sie [die Sitzungsverwaltung in der Datei dispatcher.any](https://h
 
 >[!NOTE]
 >
->Wenn für eine Dispatcher-Farm das Sitzungsmanagement aktiviert ist, werden alle von der Farm verarbeiteten Seiten nicht zwischengespeichert. Um Seiten, die sich außerhalb von CUG befinden, zwischenzuspeichern, erstellen Sie eine zweite Farm in dispatcher.any
+>Wenn für eine Dispatcher-Farm das Sitzungsmanagement aktiviert ist, werden alle von der Farm verarbeiteten Seiten nicht zwischengespeichert. Um Seiten zwischenzuspeichern, die sich außerhalb der CUG befinden, erstellen Sie eine zweite Farm in dispatcher.any
 >, der die Nicht-CUG-Seiten verarbeitet.
 
-1. Konfigurieren Sie [/sessionmanagement](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) durch Definieren von `/directory`. Beispiel:
+1. Konfigurieren Sie [/sessionmanagement](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) durch Definition von `/directory`. Beispiel:
 
    ```xml
    /sessionmanagement
