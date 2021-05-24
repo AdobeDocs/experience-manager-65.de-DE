@@ -10,24 +10,23 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6dbe82c2-7a25-49ab-a980-3635f0344817
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 954c1d5b06b54d59f523483ce5c1af36c2083a76
+exl-id: d4de517e-50bc-4ca5-89b1-295d259fd5bb
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 69%
 
 ---
 
-
 # Admin Consolen{#admin-consoles}
 
 In der Standardeinstellung ist die Option zum Wechseln zur klassischen Benutzeroberfläche über die Admin Consoles nun deaktiviert. Aus diesem Grund werden die Pop-up-Symbole, die beim Bewegen des Mauszeigers auf bestimmte Konsolensymbole angezeigt wurden, um den Zugriff auf die klassische Benutzeroberfläche zu ermöglichen, nicht mehr eingeblendet.
 
-Jede Konsole mit einer klassischen UI-Version in `/libs/cq/core/content/nav` kann einzeln erneut aktiviert werden, sodass die Option **Klassische Benutzeroberfläche** erneut über das Konsolensymbol angezeigt wird, wenn die Maus darüber bewegt wird.
+Jede Konsole, die über eine klassische Benutzeroberflächenversion in `/libs/cq/core/content/nav` verfügt, kann einzeln wieder aktiviert werden, sodass die Option **Klassische Benutzeroberfläche** erneut über das Konsolensymbol angezeigt wird, wenn die Maus darauf bewegt wird.
 
 In diesem Beispiel aktivieren wir die klassische Benutzeroberfläche wieder für die Sites-Konsole.
 
-1. Suchen Sie mithilfe von CRXDE Lite den Knoten, der der Admin-Konsole entspricht, für die Sie die klassische Benutzeroberfläche erneut aktivieren möchten. Sie finden ihn hier:
+1. Suchen Sie mithilfe von CRXDE Lite den Knoten, der der Admin Console entspricht, für die Sie die klassische Benutzeroberfläche erneut aktivieren möchten. Sie finden ihn hier:
 
    `/libs/cq/core/content/nav`
 
@@ -39,7 +38,7 @@ In diesem Beispiel aktivieren wir die klassische Benutzeroberfläche wieder für
 
    `/libs/cq/core/content/nav/sites`
 
-1. Erstellen Sie eine Überlagerung mit der Option **Überlagerungsknoten**. Beispiel:
+1. Erstellen Sie eine Überlagerung mit der Option **Überlagerungsknoten** . Beispiel:
 
    * **Pfad**: `/apps/cq/core/content/nav/sites`
    * **Pfad für Überlagerung**: `/apps/`
