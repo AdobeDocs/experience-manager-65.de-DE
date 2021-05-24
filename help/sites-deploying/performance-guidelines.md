@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Konfiguration
+exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2994'
 ht-degree: 84%
 
 ---
-
 
 # Leistungsrichtlinien{#performance-guidelines}
 
@@ -243,7 +242,7 @@ Nachfolgend sind die verfügbaren Bereitstellungsoptionen für AEM dargestellt (
    <td><p> </p> </td>
   </tr>
   <tr>
-   <td><p>-Desktop-Programm </p> </td>
+   <td><p>-Desktop-Programm</p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
@@ -263,7 +262,7 @@ Nachfolgend sind die verfügbaren Bereitstellungsoptionen für AEM dargestellt (
 >
 >Die Leistungsrichtlinien gelten hauptsächlich für AEM Sites.
 
-## Nutzung der Leistungsrichtlinien {#when-to-use-the-performance-guidelines}
+## Nutzung der Leistungsrichtlinien  {#when-to-use-the-performance-guidelines}
 
 Die Leistungsrichtlinien sollten in den folgenden Situationen Einsatz finden:
 
@@ -283,17 +282,17 @@ Die AEM-Plattform besteht aus folgenden Komponenten:
 
 ![chlimage_1](assets/chlimage_1a.png)
 
-Weitere Informationen zur AEM finden Sie unter [Was ist AEM](/help/sites-deploying/deploy.md#what-is-aem)?
+Weitere Informationen zur AEM finden Sie unter [Was ist AEM](/help/sites-deploying/deploy.md#what-is-aem).
 
 ### Die AEM-Architektur {#the-aem-architecture}
 
-Eine AEM-Bereitstellung umfasst drei wichtige Bausteine. Die **Autoreninstanz**, die von Inhaltsautoren, Redakteuren und Genehmigungsberechtigten zum Erstellen und Überprüfen von Inhalten verwendet wird. Wenn Inhalte genehmigt werden, werden sie auf einem zweiten Instanztyp, der **Veröffentlichungsinstanz** veröffentlicht, über die Endbenutzer auf die Inhalte zugreifen können. Der dritte Baustein ist der **Dispatcher**, ein Modul, das die Zwischenspeicherung und URL-Filterung verarbeitet und auf dem Webserver installiert ist. Weitere Informationen zur AEM-Architektur finden Sie unter [Typische Bereitstellungsszenarien](/help/sites-deploying/deploy.md#typical-deployment-scenarios).
+Eine AEM-Bereitstellung umfasst drei wichtige Bausteine. Die **Autoreninstanz**, die von Inhaltsautoren, Redakteuren und Genehmigungsberechtigten zum Erstellen und Überprüfen von Inhalten verwendet wird. Wenn Inhalte genehmigt werden, werden sie auf einem zweiten Instanztyp, der **Veröffentlichungsinstanz** veröffentlicht, über die Endbenutzer auf die Inhalte zugreifen können. Der dritte Baustein ist der **Dispatcher**, ein Modul, das das Caching und URL-Filtern verarbeitet und auf dem Webserver installiert ist. Weitere Informationen zur AEM-Architektur finden Sie unter [Typische Bereitstellungsszenarien](/help/sites-deploying/deploy.md#typical-deployment-scenarios).
 
 ![chlimage_1-1](assets/chlimage_1-1a.png)
 
 ### Mikrokernels {#micro-kernels}
 
-Mikrokernels fungieren als Persistenzmanager in AEM. Es gibt drei Arten von Micro-Kerneln, die mit AEM verwendet werden: TarMK, MongoDB und Relational Database (unter eingeschränkter Unterstützung). Welcher Mikrokernel Ihre Anforderungen erfüllt, hängt vom Zweck Ihrer Instanz und dem Bereitstellungstyp ab. Weitere Informationen zu Micro-Kerneln finden Sie auf der Seite [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md).
+Mikrokernels fungieren als Persistenzmanager in AEM. Es gibt drei Arten von Mikrokernels, die mit AEM verwendet werden: TarMK, MongoDB und relationale Datenbank (unter eingeschränkter Unterstützung). Welcher Mikrokernel Ihre Anforderungen erfüllt, hängt vom Zweck Ihrer Instanz und dem Bereitstellungstyp ab. Weitere Informationen zu Mikrokernels finden Sie auf der Seite [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md) .
 
 ![chlimage_1-2](assets/chlimage_1-2a.png)
 
@@ -319,15 +318,15 @@ Weitere Informationen zu den verfügbaren Konfigurationsoptionen finden Sie unte
 
 >[!NOTE]
 >
->Adobe empfiehlt folgende Bereitstellungsoption: AEM auf Azure oder Amazon Web Services (AWS) mit Adobe Managed Services. Dadurch profitieren Kunden vom Zugang zu einem Expertenteam, das Erfahrung mit der Bereitstellung und dem Betrieb von AEM in diesen Cloud-Computing-Umgebungen hat. Bitte lesen Sie die [zusätzliche Dokumentation zu Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
+>Adobe empfiehlt folgende Bereitstellungsoption: AEM auf Azure oder Amazon Web Services (AWS) mit Adobe Managed Services. Dadurch profitieren Kunden vom Zugang zu einem Expertenteam, das Erfahrung mit der Bereitstellung und dem Betrieb von AEM in diesen Cloud-Computing-Umgebungen hat. Weitere Informationen finden Sie in der [zusätzlichen Dokumentation zu Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
 >
 >Für die Bereitstellung von AEM auf Azure oder AWS ohne Adobe Managed Services wird dringend empfohlen, direkt mit dem Cloud-Anbieter oder einem unserer Partner, der die Bereitstellung von AEM in der gewünschten Cloud-Umgebung unterstützt, zusammenzuarbeiten. Der ausgewählte Cloud-Anbieter oder Partner ist für die Größenspezifikation, das Design und die Implementierung der von ihm unterstützten Architektur verantwortlich, um Ihre spezifischen Anforderungen an Leistung, Last, Skalierbarkeit und Sicherheit zu erfüllen.
 >
->Weitere Informationen finden Sie auf der Seite [Technische Anforderungen](/help/sites-deploying/technical-requirements.md#supported-platforms).
+>Weitere Informationen finden Sie auch auf der Seite [Technische Anforderungen](/help/sites-deploying/technical-requirements.md#supported-platforms) .
 
 ### Suche {#search-features}
 
-In diesem Abschnitt sind die in AEM verwendeten benutzerdefinierten Index-Provider aufgeführt. Weitere Informationen zur Indexierung finden Sie unter [Oak-Abfragen und Indizierung](/help/sites-deploying/queries-and-indexing.md).
+In diesem Abschnitt sind die in AEM verwendeten benutzerdefinierten Index-Provider aufgeführt. Weitere Informationen zur Indizierung finden Sie unter [Oak-Abfragen und Indizierung](/help/sites-deploying/queries-and-indexing.md).
 
 >[!NOTE]
 >
@@ -372,7 +371,7 @@ Weitere Einzelheiten zur Entwicklung in AEM finden Sie unter [Entwicklung – G
 >
 >Alle auf dieser Seite gezeigten Benchmarktests wurden in einer Lab-Umgebung durchgeführt.
 
-Die unten beschriebenen Testszenarien werden für die Abschnitte mit den Benchmarktests der Kapitel „TarMK“, „MongoMK“ und „TarMK im Vergleich zu MongoMK“ verwendet. Um zu sehen, welches Szenario für einen bestimmten Benchmark-Test verwendet wurde, lesen Sie das Feld Szenario in der Tabelle [Technische Spezifikationen](/help/sites-deploying/performance-guidelines.md#tarmk-performance-benchmark).
+Die unten beschriebenen Testszenarien werden für die Abschnitte mit den Benchmarktests der Kapitel „TarMK“, „MongoMK“ und „TarMK im Vergleich zu MongoMK“ verwendet. Um zu sehen, welches Szenario für einen bestimmten Benchmarktest verwendet wurde, lesen Sie das Feld Szenario aus der Tabelle [Technische Spezifikationen](/help/sites-deploying/performance-guidelines.md#tarmk-performance-benchmark) .
 
 **Einzelprodukt-Szenario**
 
@@ -396,19 +395,19 @@ Medien:
 * Artikelseite lesen (27,4 %), Seite lesen (10,9 %), Sitzung erstellen (2,6 %), Inhaltsseite aktivieren (1,7 %), Inhaltsseite erstellen (0,4 %), Absatz erstellen (4,3 %), Absatz bearbeiten (0,9 %), Bildkomponente (0,9 %), Assets durchsuchen (20 %), Asset-Metadaten lesen (8,5 %), Asset herunterladen (4,2 %), Nach Asset suchen (0, 2 %), Asset-Metadaten aktualisieren (2,4 %), Asset hochladen (1,2 %), Projekt durchsuchen (4,9 %), Projekt lesen (6,6 %), Asset zu Projekt hinzufügen (1,2 %), Site zu Projekt hinzufügen (1,2 %), Projekt erstellen (0,1 %), Autorensuche (0,4 %)
 * Ausführungsmodus: gleichzeitige Benutzer, gemischte Interaktion pro Benutzer
 
-## TarMK  {#tarmk}
+## TarMK {#tarmk}
 
 Dieses Kapitel enthält allgemeine Leistungsrichtlinien für TarMK sowie die Mindestanforderungen für die Architektur und die Konfigurationseinstellungen. Darüber hinaus werden Informationen zu Benchmarktests als zusätzliche Erläuterung bereitgestellt.
 
 Adobe empfiehlt Kunden, TarMK als Standard-Persistenztechnologie in allen Bereitstellungsszenarien zu verwenden, sowohl für die Autoren- als auch die Veröffentlichungsinstanz von AEM.
 
-Weitere Informationen zu TarMK finden Sie unter [Bereitstellungsszenarios](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) und [Teer-Datenspeicherung](/help/sites-deploying/storage-elements-in-aem-6.md#tar-storage).
+Weitere Informationen zu TarMK finden Sie unter [Bereitstellungsszenarios](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) und [Tar-Speicher](/help/sites-deploying/storage-elements-in-aem-6.md#tar-storage).
 
 ### Mindestarchitektur für TarMK – Richtlinien {#tarmk-minimum-architecture-guidelines}
 
 >[!NOTE]
 >
->Die unten angegebenen Richtlinien zur Mindestarchitektur gelten für Produktionsumgebungen und Sites mit einem hohen Traffic-Volumen. Dies sind **not** die [Minimalspezifikationen](/help/sites-deploying/technical-requirements.md#prerequisites), die zum Ausführen von AEM erforderlich sind.
+>Die unten angegebenen Richtlinien zur Mindestarchitektur gelten für Produktionsumgebungen und Sites mit einem hohen Traffic-Volumen. Dies sind **nicht** die [minimalen Spezifikationen](/help/sites-deploying/technical-requirements.md#prerequisites), die zum Ausführen von AEM erforderlich sind.
 
 Um bei Verwendung von TarMK eine optimale Leistung zu erzielen, sollten Sie als Ausgangspunkt eine Architektur mit folgenden Komponenten nutzen:
 
@@ -432,7 +431,7 @@ Nachfolgend sind die Architekturrichtlinien für AEM Sites und AEM Assets beschr
 
 ### TarMK-Einstellungen – Richtlinien {#tarmk-settings-guideline}
 
-Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellungsrichtlinien befolgen. Anweisungen zum Ändern der Einstellungen finden Sie auf dieser Seite [unter ](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html).
+Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellungsrichtlinien befolgen. Anweisungen zum Ändern der Einstellungen finden Sie auf dieser Seite](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html).[
 
 <table>
  <tbody>
@@ -495,17 +494,17 @@ Die Benchmarktests wurden für die folgenden Spezifikationen durchgeführt:
 
 |  | **Autorenknoten** |
 |---|---|
-| Server | Bare Metal Hardware (HP) |
+| Server | Hardware für Bare Metal (HP) |
 | Betriebssystem | RedHat Linux |
-| CPU/Kerne | Intel(R) Xeon(R) CPU E5-2407 bei 2,40 GHz, 8 Kerne |
+| CPU/Kerne | Intel(R) Xeon(R) CPU E5-2407 @2,40 GHz, 8 Kerne |
 | RAM | 32 GB |
 | Festplatte | Magnetisch |
-| Java | Oracle JRE-Version 8 |
+| Java | Oracle JRE Version 8 |
 | JVM-Heap | 16 GB |
 | Produkt | AEM 6.2 |
 | Knotenspeicher | TarMK |
 | Datenspeicher  | Datei DS |
-| Szenario | Einzelprodukt: Assets/30 parallele Threads |
+| Szenario | Einzelprodukt: Assets/30 gleichzeitige Threads |
 
 #### Ergebnisse der Leistungsbenchmarktests {#performance-benchmark-results}
 
@@ -519,7 +518,7 @@ Die Benchmarktests wurden für die folgenden Spezifikationen durchgeführt:
 
 Der Hauptgrund dafür, warum anstatt des TarMK der MongoMK als Persistenz-Backend ausgewählt werden sollte, liegt in der horizontalen Skalierung der Instanzen. Das bedeutet, dass immer mindestens zwei aktive Autoreninstanzen ausgeführt werden und MongoDB als Persistenzspeichersystem verwendet wird. Der Grund, warum mehr als eine Autoreninstanz ausgeführt werden muss, besteht im Allgemeinen darin, dass die CPU- und Speicherkapazität eines einzelnen Servers, der alle simultanen Bearbeitungsaktivitäten unterstützt, nicht mehr ausreichend ist.
 
-Weitere Informationen zu TarMK finden Sie unter [Bereitstellungsszenarios](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) und [Mongo-Datenspeicherung](/help/sites-deploying/storage-elements-in-aem-6.md#mongo-storage).
+Weitere Informationen zu TarMK finden Sie unter [Bereitstellungsszenarien](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) und [Mongo-Speicher](/help/sites-deploying/storage-elements-in-aem-6.md#mongo-storage).
 
 ### Mindestarchitektur für MongoMK – Richtlinien {#mongomk-minimum-architecture-guidelines}
 
@@ -542,7 +541,7 @@ Um bei Verwendung von MongoMK eine optimale Leistung zu erzielen, sollten Sie al
 
 ### MongoMK-Einstellungen – Richtlinien {#mongomk-settings-guidelines}
 
-Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellungsrichtlinien befolgen. Anweisungen zum Ändern der Einstellungen finden Sie auf dieser Seite [unter ](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
+Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellungsrichtlinien befolgen. Anweisungen zum Ändern der Einstellungen finden Sie auf dieser Seite](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).[
 
 <table>
  <tbody>
@@ -567,7 +566,7 @@ Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellung
   <tr>
    <td>JVM-Parameter  </td>
    <td><p><code>Doak.queryLimitInMemory</code></p> <p><code>Doak.queryLimitReads</code></p> <p><code>Dupdate.limit</code></p> <p><code>Doak.fastQuerySize</code></p> <p><code>Doak.mongo.maxQueryTimeMS</code></p> </td>
-   <td><p>500000</p> <p>100000</p> <p>250000</p> <p>true</p> <p>60000</p> </td>
+   <td><p>500000</p> <p>100000</p> <p>250000</p> <p>True</p> <p>60000</p> </td>
    <td>Fügen Sie diese JVM-Parameter zum AEM-Startskript hinzu, um zu verhindern, dass umfangreiche Abfragen die Systeme überlasten.</td>
   </tr>
   <tr>
@@ -605,17 +604,17 @@ Die Benchmarktests wurden für die folgenden Spezifikationen durchgeführt:
 
 |  | **Autorenknoten** | **MongoDB-Knoten** |
 |---|---|---|
-| Server | Bare Metal Hardware (HP) | Bare Metal Hardware (HP) |
+| Server | Hardware für Bare Metal (HP) | Hardware für Bare Metal (HP) |
 | Betriebssystem | RedHat Linux | RedHat Linux |
-| CPU/Kerne | Intel(R) Xeon(R) CPU E5-2407 bei 2,40 GHz, 8 Kerne | Intel(R) Xeon(R) CPU E5-2407 bei 2,40 GHz, 8 Kerne |
+| CPU/Kerne | Intel(R) Xeon(R) CPU E5-2407 @2,40 GHz, 8 Kerne | Intel(R) Xeon(R) CPU E5-2407 @2,40 GHz, 8 Kerne |
 | RAM | 32 GB | 32 GB |
-| Festplatte | Magnetisch - > 1 k IOPS | Magnetisch - > 1 k IOPS |
-| Java | Oracle JRE-Version 8 | Nicht zutreffend |
+| Festplatte | Magnesium - > 1 k IOPS | Magnesium - > 1 k IOPS |
+| Java | Oracle JRE Version 8 | Nicht zutreffend |
 | JVM-Heap | 16 GB | Nicht zutreffend |
 | Produkt | AEM 6.2 | MongoDB 3.2 WiredTiger |
 | Knotenspeicher | MongoMK | Nicht zutreffend |
 | Datenspeicher  | Datei DS | Nicht zutreffend |
-| Szenario | Einzelprodukt: Assets/30 parallele Threads | Einzelprodukt: Assets/30 parallele Threads |
+| Szenario | Einzelprodukt: Assets/30 gleichzeitige Threads | Einzelprodukt: Assets/30 gleichzeitige Threads |
 
 ### Ergebnisse der Leistungsbenchmarktests {#performance-benchmark-results-1}
 
@@ -639,7 +638,7 @@ Weitere Einzelheiten zu den Unterschieden zwischen TarMK und MongoMK finden Sie 
 
 * Wurde speziell für Content-Management-Anwendungen entwickelt
 * Dateien sind immer konsistent und können mit einem beliebigen dateibasierten Sicherungstool gesichert werden
-* Stellt einen Ausfallsicherungsmechanismus bereit - weitere Informationen finden Sie unter [Cold Standby](/help/sites-deploying/tarmk-cold-standby.md)
+* Stellt einen Failover-Mechanismus bereit - weitere Informationen finden Sie unter [Cold Standby](/help/sites-deploying/tarmk-cold-standby.md) .
 * Bietet hohe Leistung und zuverlässige Datenspeicherung bei minimalem Betriebsaufwand
 * Niedrige Gesamtbetriebskosten
 
@@ -663,14 +662,14 @@ Weitere Einzelheiten zu den Unterschieden zwischen TarMK und MongoMK finden Sie 
  <tbody>
   <tr>
    <td><strong> </strong></td>
-   <td><strong>OAK-Autorenknoten</strong></td>
+   <td><strong>Autoren-OAK-Knoten</strong></td>
    <td><strong>MongoDB-Knoten</strong></td>
    <td> </td>
   </tr>
   <tr>
    <td>Server</td>
-   <td>Bare Metal Hardware (HP)</td>
-   <td>Bare Metal Hardware (HP)</td>
+   <td>Hardware für Bare Metal (HP)</td>
+   <td>Hardware für Bare Metal (HP)</td>
    <td> </td>
   </tr>
   <tr>
@@ -681,8 +680,8 @@ Weitere Einzelheiten zu den Unterschieden zwischen TarMK und MongoMK finden Sie 
   </tr>
   <tr>
    <td>CPU/Kerne</td>
-   <td>Intel(R) Xeon(R) CPU E5-2407 bei 2,40 GHz, 8 Kerne</td>
-   <td>Intel(R) Xeon(R) CPU E5-2407 bei 2,40 GHz, 8 Kerne</td>
+   <td>Intel(R) Xeon(R) CPU E5-2407 @2,40 GHz, 8 Kerne</td>
+   <td>Intel(R) Xeon(R) CPU E5-2407 @2,40 GHz, 8 Kerne</td>
    <td> </td>
   </tr>
   <tr>
@@ -693,18 +692,18 @@ Weitere Einzelheiten zu den Unterschieden zwischen TarMK und MongoMK finden Sie 
   </tr>
   <tr>
    <td>Festplatte</td>
-   <td>Magnetisch - &gt; 1 k IOPS</td>
-   <td>Magnetisch - &gt; 1 k IOPS</td>
+   <td>Magnesium - &gt; 1 k IOPS</td>
+   <td>Magnesium - &gt; 1 k IOPS</td>
    <td> </td>
   </tr>
   <tr>
    <td>Java</td>
-   <td>Oracle JRE-Version 8</td>
+   <td>Oracle JRE Version 8</td>
    <td>Nicht zutreffend</td>
    <td> </td>
   </tr>
   <tr>
-   <td>JVM-Heap 16 GB</td>
+   <td>JVM Heap16GB</td>
    <td>16 GB</td>
    <td>Nicht zutreffend</td>
    <td> </td>
@@ -729,7 +728,7 @@ Weitere Einzelheiten zu den Unterschieden zwischen TarMK und MongoMK finden Sie 
   </tr>
   <tr>
    <td>Szenario</td>
-   <td><p><br /> Einzelprodukt: Assets/30 parallele Threads pro Ausführung</p> </td>
+   <td><p><br /> Einzelprodukt: Assets/30 gleichzeitige Threads pro Ausführung</p> </td>
    <td> </td>
    <td> </td>
   </tr>
@@ -751,7 +750,7 @@ Weitere Einzelheiten zu den Unterschieden zwischen TarMK und MongoMK finden Sie 
   <tr>
    <td><strong> </strong></td>
    <td><strong>Autor-TarMK-Knoten</strong></td>
-   <td><strong>Autor MongoMK-Knoten</strong></td>
+   <td><strong>Autorenknoten MongoMK</strong></td>
    <td><strong>MongoDB-Knoten</strong></td>
   </tr>
   <tr>
@@ -786,12 +785,12 @@ Weitere Einzelheiten zu den Unterschieden zwischen TarMK und MongoMK finden Sie 
   </tr>
   <tr>
    <td>Java</td>
-   <td>Oracle JRE-Version 8</td>
-   <td><br /> Oracle JRE-Version 8</td>
+   <td>Oracle JRE Version 8</td>
+   <td><br /> Oracle JRE Version 8</td>
    <td>Nicht zutreffend</td>
   </tr>
   <tr>
-   <td>JVM-Heap 16 GB</td>
+   <td>JVM Heap16GB</td>
    <td>30 GB</td>
    <td>30 GB</td>
    <td>Nicht zutreffend</td>
@@ -816,7 +815,7 @@ Weitere Einzelheiten zu den Unterschieden zwischen TarMK und MongoMK finden Sie 
   </tr>
   <tr>
    <td>Szenario</td>
-   <td><p><br /> <br /> Vertikaler Anwendungsfall: Media/2000 parallele Threads</p> </td>
+   <td><p><br /> <br /> Vertikaler Anwendungsfall: Gleichzeitige Medien/2000-Threads</p> </td>
    <td></td>
    <td></td>
   </tr>
@@ -856,6 +855,6 @@ Die auf dieser Seite beschriebenen Richtlinien können wie folgt zusammengefasst
 
    * Für die benutzerdefinierten Indizes sollten Lucene-Indizes verwendet werden
 
-* **Durch Anpassen des Workflows kann die Leistung** erheblich verbessert werden, z. B. durch Entfernen des Videoschritts im Arbeitsablauf &quot;Asset aktualisieren&quot;, Deaktivieren von nicht verwendeten Listenern usw.
+* **Die Anpassung des Workflows kann die Leistung** erheblich verbessern, z. B. das Entfernen des Videoschritts im Workflow &quot;Asset aktualisieren&quot;, das Deaktivieren von nicht verwendeten Listenern usw.
 
 Weitere Einzelheiten finden Sie auch auf der Seite [Empfohlen Bereitstellungen](/help/sites-deploying/recommended-deploys.md).
