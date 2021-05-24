@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 3cc7efc5-bcb2-41c9-b78b-308f6b7a298e
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 2cf3ac3f-ee17-480d-a32a-c57631502693
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 67%
 
 ---
-
 
 # Konfigurieren von Rückgängig-Vorgängen zur Seitenbearbeitung{#configuring-undo-for-page-editing}
 
@@ -44,7 +43,7 @@ Sie können diese Eigenschaften des OSGi-Diensts für Ihre eigene Instanz konfig
 >
 >Beim Arbeiten mit AEM sind mehrere Methoden zum Verwalten der Konfigurationseinstellungen für solche Dienste verfügbar. Weitere Informationen und empfohlene Verfahren finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
-Mit den folgenden Listen werden die in der Webkonsole angezeigten Eigenschaften sowie der Name des entsprechenden OSGi-Parameters zusammen mit einer Beschreibung und dem Standardwert (sofern zutreffend) aktualisiert:
+Im Folgenden werden die Eigenschaften aufgelistet, die in der Web-Konsole angezeigt werden, gefolgt vom Namen des entsprechenden OSGi-Parameters, zusammen mit einer Beschreibung und dem Standardwert (sofern zutreffend):
 
 * **Aktivieren**
 ( 
@@ -58,7 +57,7 @@ Mit den folgenden Listen werden die in der Webkonsole angezeigten Eigenschaften 
 ( 
 `cq.wcm.undo.path`)
 
-   * **Beschreibung**: Der Repository-Pfad zum Beibehalten von Rückgängig-Binärdaten. Wenn Autoren Binärdaten wie Bilder ändern, wird die ursprüngliche Version der Daten hier beibehalten. Wenn Änderungen an binären Daten rückgängig gemacht werden, werden diese binären Rückgängig-Daten auf der Seite wiederhergestellt.
+   * **Beschreibung**: Der Repository-Pfad zum Beibehalten von Rückgängig-Binärdaten. Wenn Autoren Binärdaten wie Bilder ändern, wird die ursprüngliche Version der Daten hier beibehalten. Wenn Änderungen an Binärdaten rückgängig gemacht werden, werden diese binären Rückgängig-Daten auf der Seite wiederhergestellt.
    * **Standard**: `/var/undo`
    * **Typ**: `String`
 
@@ -70,7 +69,7 @@ Mit den folgenden Listen werden die in der Webkonsole angezeigten Eigenschaften 
 ( 
 `cq.wcm.undo.validity`)
 
-   * **Beschreibung**: Die Mindestdauer, die binäre Rückgängig-Daten in Stunden gespeichert werden. Nach dieser Zeit können die Binärdaten gelöscht werden, um Festplattenspeicher einzusparen.
+   * **Beschreibung**: Die Mindestdauer, für die binäre Rückgängig-Daten gespeichert werden (in Stunden). Nach dieser Zeit können die Binärdaten gelöscht werden, um Festplattenspeicher einzusparen.
    * **Standard**: `10`
    * **Typ**: `Integer`
 
@@ -78,7 +77,7 @@ Mit den folgenden Listen werden die in der Webkonsole angezeigten Eigenschaften 
 ( 
 `cq.wcm.undo.steps`)
 
-   * **Beschreibung**: Die maximale Anzahl von Seitenaktionen, die im Rückgängig-Verlauf gespeichert werden.
+   * **Beschreibung**: Die maximale Anzahl von Seitenaktionen, die im Verlauf der Rückgängigmachungen gespeichert sind.
    * **Standard**: `20`
    * **Typ**: `Integer`
 
@@ -86,10 +85,10 @@ Mit den folgenden Listen werden die in der Webkonsole angezeigten Eigenschaften 
 ( 
 `cq.wcm.undo.persistence`)
 
-   * **Beschreibung**: Die Klasse, die den Rückgängig-Verlauf beibehalten. Zwei persistente Klassen werden bereitgestellt:
+   * **Beschreibung**: Die Klasse, die den Verlauf der Rückgängigmachungen beibehält. Zwei persistente Klassen werden bereitgestellt:
 
       * `CQ.undo.persistence.WindowNamePersistence`: Behält den Verlauf mit der Eigenschaft „window.name“ bei.
-      * `CQ.undo.persistence.CookiePersistance`: Besteht aus dem Verlauf mithilfe von Cookies.
+      * `CQ.undo.persistence.CookiePersistance`: Behält den Verlauf mithilfe von Cookies bei.
    * **Standard**: `CQ.undo.persistence.WindowNamePersistence`
    * **Typ**: `String`
 
@@ -98,14 +97,14 @@ Mit den folgenden Listen werden die in der Webkonsole angezeigten Eigenschaften 
 ( 
 `cq.wcm.undo.persistence.mode`)
 
-   * **Beschreibung**: Bestimmt, wann der Rückgängig-Verlauf beibehalten wird. Aktivieren Sie diese Option, damit der Verlauf der Rückgängigmachungen nach jeder Seitenbearbeitung beibehalten wird. Deaktivieren Sie diese Option, damit der Verlauf nur beim erneuten Laden einer Seite beibehalten wird (wenn der Benutzer z. B. zu einer anderen Seite navigiert).
+   * **Beschreibung**: Bestimmt, wann der Verlauf der Rückgängigmachungen beibehalten wird. Aktivieren Sie diese Option, damit der Verlauf der Rückgängigmachungen nach jeder Seitenbearbeitung beibehalten wird. Deaktivieren Sie diese Option, damit der Verlauf nur beim erneuten Laden einer Seite beibehalten wird (wenn der Benutzer z. B. zu einer anderen Seite navigiert).
 
       Der Verlauf der Rückgängigmachungen wird mittels Webbrowserressourcen beibehalten. Wenn der Browser Ihrer Benutzer langsam auf Seitenbearbeitungen reagiert, versuchen Sie, den Verlauf der Rückgängigmachungen bei Seitenneuladungen beizubehalten.
 
    * **Standard**: `Selected`
    * **Typ**: `Boolean`
 
-* **Markierungsmodus**
+* **Marker mode**
 ( 
 `cq.wcm.undo.markermode`)
 
@@ -118,16 +117,16 @@ Mit den folgenden Listen werden die in der Webkonsole angezeigten Eigenschaften 
 
 
 * **Gute Komponenten**
-( 
+ ( 
 `cq.wcm.undo.whitelist`)
 
-   * **Beschreibung**: Eine Liste von Komponenten, für die die Befehle „Rückgängig“ und „Wiederherstellen“ angewendet werden sollen. Fügen Sie dieser Liste Komponentenpfade hinzu, wenn sie korrekt mit „Rückgängig“/„Wiederherstellen“ funktionieren. Fügen Sie ein Sternchen (&amp;ast;) an, um eine Gruppe von Komponenten anzugeben:
+   * **Beschreibung**: Eine Liste von Komponenten, für die die Befehle „Rückgängig“ und „Wiederherstellen“ angewendet werden sollen. Fügen Sie dieser Liste Komponentenpfade hinzu, wenn sie korrekt mit „Rückgängig“/„Wiederherstellen“ funktionieren. Hängen Sie ein Sternchen (&amp;ast;) an, um eine Gruppe von Komponenten anzugeben:
 
-      * Der folgende Wert gibt die Basistextkomponente an:
+      * Der folgende Wert gibt die Foundation-Textkomponente an:
 
          `foundation/components/text`
 
-      * Der folgende Wert gibt alle Stiftkomponenten an:
+      * Der folgende Wert gibt alle Foundation-Komponenten an:
 
          `foundation/components/*`
    * Wenn der Befehl „Rückgängig“ oder „Wiederherstellen“ für eine Komponente ausgegeben wird, die nicht in dieser Liste vorhanden ist, wird durch eine Meldung darauf hingewiesen, dass der Befehl unzuverlässig sein kann.
@@ -136,14 +135,14 @@ Mit den folgenden Listen werden die in der Webkonsole angezeigten Eigenschaften 
    * **Typ**: `String[]`
 
 
-* **Unangemessene Komponenten**
-( 
+* **Ungültige Komponenten**
+ ( 
 `cq.wcm.undo.blacklist`)
 
-   * **Beschreibung**: Eine Liste von Komponenten- und/oder Komponentenoperationen, die vom Rückgängig-Befehl nicht betroffen sein sollen. Fügen Sie Komponenten und Komponentenvorgänge hinzu, die sich beim Anwenden des Befehls „Rückgängig“ nicht ordnungsgemäß verhalten:
+   * **Beschreibung**: Eine Liste von Komponenten und/oder Komponentenvorgängen, die vom Befehl &quot;Rückgängig&quot;nicht betroffen sein sollen. Fügen Sie Komponenten und Komponentenvorgänge hinzu, die sich beim Anwenden des Befehls „Rückgängig“ nicht ordnungsgemäß verhalten:
 
       * Fügen Sie einen Komponentenpfad hinzu, wenn keiner der Komponentenvorgänge im Verlauf der Rückgängigmachungen angezeigt werden soll, z. B. `collab/forum/components/post`.
-      * Fügen Sie einen Doppelpunkt (:) und einen Vorgang an den Pfad an, wenn Sie möchten, dass dieser bestimmte Vorgang aus dem Rückgängig-Verlauf ausgelassen wird (andere Vorgänge funktionieren korrekt), z. B. `collab/forum/components/post:insertParagraph.`
+      * Hängen Sie einen Doppelpunkt (:) und einen Vorgang an den Pfad an, wenn Sie möchten, dass dieser bestimmte Vorgang im Verlauf der Rückgängigmachungen weggelassen wird (andere Vorgänge funktionieren ordnungsgemäß), z. B. `collab/forum/components/post:insertParagraph.`
 
    >[!NOTE]
    >
@@ -157,7 +156,3 @@ Mit den folgenden Listen werden die in der Webkonsole angezeigten Eigenschaften 
       * `updateParagraph`: Die Absatzeigenschaften werden geändert.
    * **Standard**: Die Eigenschaft wird mit mehreren Komponentenvorgängen aufgefüllt.
    * **Typ**: `String[]`
-
-
-
-
