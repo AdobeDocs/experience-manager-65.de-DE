@@ -11,15 +11,14 @@ content-type: reference
 discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
 docset: aem65
 targetaudience: target-audience upgrader
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Aktualisieren
+exl-id: a36a310d-5943-4ff5-8ba9-50eaedda98c5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2205'
 ht-degree: 76%
 
 ---
-
 
 # Aktualisierung von Code und Anpassungen{#upgrading-code-and-customizations}
 
@@ -28,24 +27,24 @@ Beim Planen einer Aktualisierung sollten folgende Bereiche der Implementierung u
 * [Aktualisieren der Codebasis](#upgrade-code-base)
 * [Anpassung an die 6.5-Repository-Struktur](#align-repository-structure)
 * [AEM-Anpassungen](#aem-customizations)
-* [Testverfahren](#testing-procedure) 
+* [Testverfahren](#testing-procedure)
 
 ## Überblick {#overview}
 
-1. **Mustererkennung** : Führen Sie den Musterdetektor wie in der Aktualisierungsplanung beschrieben und auf  [dieser ](/help/sites-deploying/pattern-detector.md) Seite detailliert beschrieben aus, um einen Musterdetektor-Bericht zu erhalten, der weitere Details zu Bereichen enthält, die zusätzlich zu den nicht verfügbaren APIs/Bundles in der Zielgruppe-Version von AEM behoben werden müssen. Der Bericht &quot;Mustererkennung&quot;sollte Sie auf Inkompatibilitäten im Code hinweisen. Wenn keine Kompatibilität besteht und Ihre Bereitstellung bereits 6.5 kompatibel ist, können Sie dennoch eine neue Entwicklung für die Verwendung der 6.5-Funktionalität durchführen. Sie benötigen sie jedoch nicht nur zur Aufrechterhaltung der Kompatibilität. Wenn Inkompatibilitäten gemeldet werden, können Sie entweder a) Im Kompatibilitätsmodus ausführen und Ihre Entwicklung auf neue 6.5-Funktionen oder Kompatibilität verschieben, b) beschließen, die Entwicklung nach der Aktualisierung durchzuführen und zu Schritt 2 wechseln. Weitere Informationen finden Sie unter [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md).
+1. **Mustererkennung**  - Führen Sie den Musterdetektor aus, wie in der Aktualisierungsplanung beschrieben und auf  [dieser ](/help/sites-deploying/pattern-detector.md) Seite detailliert beschrieben, um einen Musterdetektorbericht zu erhalten, der weitere Details zu Bereichen enthält, die zusätzlich zu den nicht verfügbaren APIs/Bundles in der Zielversion von AEM behoben werden müssen. Der Mustererkennungsbericht sollte Hinweise auf Inkompatibilitäten in Ihrem Code enthalten. Wenn keine vorhanden sind, ist Ihre Bereitstellung bereits mit 6.5 kompatibel. Sie können dennoch eine neue Entwicklung für die Verwendung von 6.5-Funktionen durchführen, aber Sie benötigen sie nicht nur zur Erhaltung der Kompatibilität. Wenn Inkompatibilitäten gemeldet werden, können Sie entweder a) Im Kompatibilitätsmodus ausführen und Ihre Entwicklung auf neue 6.5-Funktionen oder Kompatibilität verschieben, b) nach der Aktualisierung eine Entwicklung durchführen und zu Schritt 2 wechseln. Weitere Informationen finden Sie unter [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md).
 
-1. **Codebasis für 6.5 entwickeln **- Erstellen Sie eine dedizierte Verzweigung oder ein Repository für die Codebasis für die Zielgruppe. Nutzen Sie bei der Kompatibilitätsprüfung die vor der Aktualisierung erfassten Daten, um die Codebereiche zu planen, die aktualisiert werden sollen.
-1. **Compile with 6.5 Uber jar **- Update code base POMs to point to 6.5 uber jar und Kompilieren von Code dagegen.
-1. **Update AEM Anpassung*** - *Alle Anpassungen oder Erweiterungen zu AEM sollten aktualisiert/validiert werden, um in 6.5 zu funktionieren und der 6.5 Codebasis hinzugefügt werden. Dies beinhaltet Benutzeroberflächen-Suchformulare, Asset-Anpassungen und alle Komponenten, die „/mnt/overlay“ verwenden.
+1. **Codebasis für 6.5 entwickeln ** - Erstellen Sie eine dedizierte Verzweigung oder ein dediziertes Repository für die Codebasis der Target-Version. Nutzen Sie bei der Kompatibilitätsprüfung die vor der Aktualisierung erfassten Daten, um die Codebereiche zu planen, die aktualisiert werden sollen.
+1. **Kompilieren Sie mit 6.5 UberJar ** - Aktualisieren Sie Code-Basis-POMs so, dass sie auf 6.5 uberJar verweisen, und kompilieren Sie Code dafür.
+1. **Aktualisierung AEM Anpassungen*** - *Alle Anpassungen oder Erweiterungen für AEM sollten aktualisiert/validiert werden, damit sie in 6.5 funktionieren, und zur 6.5-Codebasis hinzugefügt werden. Dies beinhaltet Benutzeroberflächen-Suchformulare, Asset-Anpassungen und alle Komponenten, die „/mnt/overlay“ verwenden.
 
-1. **Bereitstellung auf 6.5 Umgebung**  - Eine saubere Instanz von AEM 6.5 (Autor + Veröffentlichung) sollte in einer Dev/QA-Umgebung stehen. Stellen Sie die aktualisierte Codebasis und ein repräsentatives Inhaltsbeispiel (aus der aktuellen Produktion) bereit.
-1. **Validierung und Fehlerkorrektur**  der Qualitätssicherung: Die Qualitätssicherung sollte die Anwendung sowohl in der Autoren- als auch in der Veröffentlichungsinstanz von 6.5 validieren. Alle gefundenen Fehler sollten behoben und an die 6.5-Codebasis gebunden werden. Wiederholen Sie den Entwicklungszyklus, falls erforderlich, bis alle Fehler korrigiert sind.
+1. **Bereitstellung in 6.5-Umgebung**  - In einer Entwicklungs-/QA-Umgebung sollte eine saubere Instanz von AEM 6.5 (Autor und Veröffentlichung) eingerichtet werden. Stellen Sie die aktualisierte Codebasis und ein repräsentatives Inhaltsbeispiel (aus der aktuellen Produktion) bereit.
+1. **QA-Validierung und Fehlerbehebung**  - QA sollte die Anwendung auf der Autoren- und Veröffentlichungsinstanz von 6.5 validieren. Alle gefundenen Fehler sollten behoben und an die Codebasis von 6.5 übertragen werden. Wiederholen Sie den Entwicklungszyklus, falls erforderlich, bis alle Fehler korrigiert sind.
 
 Bevor Sie mit der Aktualisierung beginnen, benötigen Sie eine stabile Anwendungscodebasis, die sorgfältig gegen die Zielversion von AEM getestet wurde. Basierend auf den im Rahmen der Tests gemachten Beobachtungen kann möglicherweise der benutzerdefinierte Code optimiert werden. Dazu können die Umgestaltung des Codes zum Durchsuchen des Repositorys, die benutzerdefinierte Indizierung für optimierte Suchabfragen, die Verwendung von unsortierten Knoten in JCR und andere Optimierungen gehören.
 
 AEM 6.5 bietet Ihnen die Option, Ihre Codebasis und Ihre Anpassungen für die Zusammenarbeit mit der neuen AEM-Version zu aktualisieren. Außerdem hilft Ihnen AEM 6.5, Ihre Anpassungen mit der Abwärtskompatibilitätsfunktion effizienter zu verwalten, was auf [dieser Seite](/help/sites-deploying/backward-compatibility.md) beschrieben wird.
 
-Wie oben bereits erwähnt und im folgenden Diagramm dargestellt, hilft Ihnen das Ausführen des [Musterdetektors](/help/sites-deploying/pattern-detector.md) im ersten Schritt, die gesamte Komplexität der Aktualisierung zu beurteilen und zu entscheiden, ob Sie den Kompatibilitätsmodus nutzen oder Ihre Anpassungen aktualisieren möchten, um alle neuen Funktionen von AEM 6.5 zu verwenden. Weitere Informationen finden Sie auf der Seite [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md).
+Wie oben bereits erwähnt und im folgenden Diagramm dargestellt, hilft Ihnen das Ausführen des [Musterdetektors](/help/sites-deploying/pattern-detector.md) im ersten Schritt, die gesamte Komplexität der Aktualisierung zu beurteilen und zu entscheiden, ob Sie den Kompatibilitätsmodus nutzen oder Ihre Anpassungen aktualisieren möchten, um alle neuen Funktionen von AEM 6.5 zu verwenden. Weitere Informationen finden Sie auf der Seite [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md) .
 [ ![opt_cut](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
 
 ## Aktualisieren der Codebasis {#upgrade-code-base}
@@ -68,9 +67,9 @@ AEM-UberJar beinhaltet alle AEM-APIs als einzelne Abhängigkeiten in der Datei `
 </dependency>
 ```
 
-### Einstellen der Verwendung des administrativen Ressourcen-Resolver {#phase-out-use-of-administrative-resource-resolver}
+### Einstellen der Verwendung des administrativen Ressourcen-Resolver  {#phase-out-use-of-administrative-resource-resolver}
 
-Die Verwendung einer Verwaltungssitzung durch `SlingRepository.loginAdministrative()` und `ResourceResolverFactory.getAdministrativeResourceResolver()` war in Codebasen vor AEM 6.0 ziemlich weit verbreitet. Diese Methoden wurden aus Sicherheitsgründen nicht mehr unterstützt, da sie zu weit reichende Zugangsmöglichkeiten bieten. [In künftigen Versionen von Sling ist diese Methode nicht mehr enthalten](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication). Es wird dringend empfohlen, stattdessen „Dienstbenutzer“ für den Code zu verwenden. Weitere Informationen zu Dienstbenutzern und dazu, [wie Sie die Verwendung von administrativen Sessions einstellen, finden Sie hier](/help/sites-administering/security-service-users.md#how-to-phase-out=admin-sessions).
+Die Verwendung einer Verwaltungssitzung über `SlingRepository.loginAdministrative()` und `ResourceResolverFactory.getAdministrativeResourceResolver()` war in Codedatenbanken vor AEM 6.0 weit verbreitet. Diese Methoden werden aus Sicherheitsgründen nicht mehr unterstützt, da sie zu weit gefasst sind. [In künftigen Versionen von Sling ist diese Methode nicht mehr enthalten](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication). Es wird dringend empfohlen, stattdessen „Dienstbenutzer“ für den Code zu verwenden. Weitere Informationen zu Dienstbenutzern und dazu, [wie Sie die Verwendung von administrativen Sessions einstellen, finden Sie hier](/help/sites-administering/security-service-users.md#how-to-phase-out=admin-sessions).
 
 ### Abfragen und Oak-Indizes  {#queries-and-oak-indexes}
 
@@ -90,9 +89,9 @@ Das klassische Benutzeroberflächen-Authoring ist in AEM 6.5 weiterhin verfügba
 
 ## Anpassung an die 6.5-Repository-Struktur {#align-repository-structure}
 
-Um Aktualisierungen zu vereinfachen und sicherzustellen, dass Konfigurationen während einer Aktualisierung nicht überschrieben werden, wird das Repository in 6.4 umstrukturiert, um Inhalt und Konfiguration voneinander zu trennen.
+Um Upgrades zu vereinfachen und sicherzustellen, dass Konfigurationen während einer Aktualisierung nicht überschrieben werden, wird das Repository in 6.4 neu strukturiert, um Inhalt und Konfiguration voneinander zu trennen.
 
-Daher müssen einige Einstellungen verschoben werden, um nicht mehr unter `/etc` zu bleiben, wie dies in der Vergangenheit der Fall war. Um alle Bedenken hinsichtlich der Repository-Umstrukturierung zu prüfen, die in der Aktualisierung auf AEM 6.4 zu prüfen und zu berücksichtigen sind, siehe [Repository-Umstrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md).
+Daher müssen einige Einstellungen verschoben werden, damit sie sich nicht mehr wie bisher unter `/etc` befinden. Um die vollständigen Bedenken hinsichtlich der Repository-Umstrukturierung zu überprüfen, die in der Aktualisierung auf AEM 6.4 zu berücksichtigen sind, lesen Sie [Repository-Neustrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md).
 
 ## AEM-Anpassungen  {#aem-customizations}
 
@@ -114,9 +113,9 @@ Benutzerdefinierte Suchfacetten müssen nach der Aktualisierung teilweise manuel
 
 Instanzen mit benutzerdefinierten bereitgestellten Assets müssen für die Aktualisierung vorbereitet werden. Damit soll sichergestellt werden, dass alle benutzerdefinierten Inhalte mit der neuen Knotenstruktur von AEM 6.4 kompatibel sind.
 
-Sie können Anpassungen der Benutzeroberfläche &quot;Assets&quot;wie folgt vorbereiten:
+Sie können Anpassungen der Assets-Benutzeroberfläche wie folgt vorbereiten:
 
-1. Öffnen Sie auf der Instanz, die aktualisiert werden muss, die CRXDE Lite unter *https://server:port/crx/de/index.jsp*
+1. Öffnen Sie auf der Instanz, die aktualisiert werden muss, die CRXDE Lite, indem Sie zu *https://server:port/crx/de/index.jsp* navigieren.
 
 1. Navigieren Sie zum folgenden Knoten:
 
@@ -134,7 +133,7 @@ Sie können Anpassungen der Benutzeroberfläche &quot;Assets&quot;wie folgt vorb
 
 ### Generieren von Asset-IDs für vorhandene Assets {#generating-asset-ids-for-existing-assets}
 
-Um Asset-IDs für vorhandene Assets zu generieren, aktualisieren Sie diese, wenn Sie die AEM-Instanz auf AEM 6.5 aktualisieren. Dies ist erforderlich, um die Funktion [Assets Insights](/help/assets/asset-insights.md) zu aktivieren. Weitere Informationen finden Sie unter [Hinzufügen Einbettungscode](/help/assets/use-page-tracker.md#add-embed-code).
+Um Asset-IDs für vorhandene Assets zu generieren, aktualisieren Sie diese, wenn Sie die AEM-Instanz auf AEM 6.5 aktualisieren. Dies ist erforderlich, um die Funktion [Assets Insights](/help/assets/asset-insights.md) zu aktivieren. Weitere Informationen finden Sie unter [Einbettungscode hinzufügen](/help/assets/use-page-tracker.md#add-embed-code).
 
 Um Assets zu aktualisieren, konfigurieren Sie das Paket „Associate Asset IDs“ in der JMX-Konsole. Je nach Anzahl der Assets im Repository kann das Ausführen von `migrateAllAssets` lange dauern. Internen Tests zufolge liegt der Schätzwert für TarMK bei einem Durchsatz von 125000 Assets pro Stunde.
 
@@ -142,11 +141,11 @@ Um Assets zu aktualisieren, konfigurieren Sie das Paket „Associate Asset IDs�
 
 Falls Sie Asset-IDs für eine Untermenge Ihrer gesamten Assets benötigen, verwenden Sie die API `migrateAssetsAtPath`.
 
-Verwenden Sie für alle anderen Zwecke die API `migrateAllAssets()`.
+Verwenden Sie für alle anderen Zwecke die API `migrateAllAssets()` .
 
 ### InDesign-Skript-Anpassungen {#indesign-script-customizations}
 
-Adobe empfiehlt, benutzerdefinierte Skripten an einem `/apps/settings/dam/indesign/scripts`-Speicherort abzulegen. Weitere Informationen zu InDesign-Skript-Anpassungen finden Sie [hier](/help/assets/indesign.md#configuring-the-aem-assets-workflow).
+Adobe empfiehlt, benutzerdefinierte Skripte an `/apps/settings/dam/indesign/scripts`-Speicherort einzufügen. Weitere Informationen zu InDesign-Skript-Anpassungen finden Sie [hier](/help/assets/indesign.md#configuring-the-aem-assets-workflow).
 
 ### Wiederherstellen von ContextHub-Konfigurationen  {#recovering-contexthub-configurations}
 
@@ -154,7 +153,7 @@ ContextHub-Konfigurationen sind von einer Aktualisierung betroffen. Anweisungen,
 
 ### Workflow-Anpassungen {#workflow-customizations}
 
-Vorkonfigurierte Workflows werden häufig angepasst, um Funktionen hinzuzufügen oder nicht erforderliche Funktionen zu löschen. Ein häufig angepasster Arbeitsablauf ist der Arbeitsablauf [!UICONTROL DAM-Update-Asset]. Erstellen Sie eine Sicherungskopie aller für eine angepasste Implementierung erforderlichen Workflows und speichern Sie diese in der Versionskontrolle, da sie möglicherweise bei einer Aktualisierung überschrieben werden.
+Vorkonfigurierte Workflows werden häufig angepasst, um Funktionen hinzuzufügen oder nicht erforderliche Funktionen zu löschen. Ein häufig angepasster Workflow ist der Workflow [!UICONTROL DAM Update Asset] . Erstellen Sie eine Sicherungskopie aller für eine angepasste Implementierung erforderlichen Workflows und speichern Sie diese in der Versionskontrolle, da sie möglicherweise bei einer Aktualisierung überschrieben werden.
 
 ### Bearbeitbare Vorlagen {#editable-templates}
 
@@ -166,7 +165,7 @@ Die Struktur bearbeitbarer Vorlagen in AEM 6.2 wurde in Version 6.3 geändert. W
 
 ### Änderungen der CUG-Implementierung  {#cug-implementation-changes}
 
-Die Implementierung geschlossener Benutzergruppen (Closed User Groups, CUG) wurde weitgehend geändert, um die Leistungs- und Skalierbarkeitsbeschränkungen früherer AEM-Versionen zu beheben. Die vorherige Version von CUG ist in 6.3 nicht mehr enthalten. Die neue Implementierung wird nur in der Touch-optimierten Benutzeroberfläche unterstützt. Wenn Sie von 6.2 oder früher aktualisieren, finden Sie Anweisungen zur Migration zur neuen CUG-Implementierung [hier](/help/sites-administering/closed-user-groups.md#upgradetoaem63).
+Die Implementierung geschlossener Benutzergruppen (Closed User Groups, CUG) wurde weitgehend geändert, um die Leistungs- und Skalierbarkeitsbeschränkungen früherer AEM-Versionen zu beheben. Die vorherige Version von CUG ist in 6.3 nicht mehr enthalten. Die neue Implementierung wird nur in der Touch-optimierten Benutzeroberfläche unterstützt. Wenn Sie ein Upgrade von 6.2 oder früher durchführen, finden Sie Anweisungen zum Migrieren zur neuen CUG-Implementierung [hier](/help/sites-administering/closed-user-groups.md#upgradetoaem63).
 
 ## Testverfahren {#testing-procedure}
 
@@ -176,7 +175,7 @@ Zum Testen von Aktualisierungen sollte ein umfassender Testplan erstellt werden.
 
 Testen Sie das hier beschriebene Aktualisierungsverfahren in Entwicklungs- und QA-Umgebungen, wie im benutzerdefinierten Runbook dokumentiert (siehe [Planung der Aktualisierung](/help/sites-deploying/upgrade-planning.md)). Das Aktualisierungsverfahren muss wiederholt werden, bis alle Schritte im Aktualisierungs-Runbook dokumentiert sind und das Aktualisierungsverfahren reibungslos läuft.
 
-### Testbereiche der Implementierung  {#implementation-test-areas-}
+### Testbereiche der Implementierung   {#implementation-test-areas-}
 
 Im Folgenden sind wichtige Bereiche einer AEM-Implementierung genannt, die vom Testplan abgedeckt sein müssen, sobald die Umgebung aktualisiert und die aktualisierte Codebasis bereitgestellt wurde.
 
