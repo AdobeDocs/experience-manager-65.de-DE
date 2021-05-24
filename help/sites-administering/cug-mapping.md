@@ -11,8 +11,7 @@ content-type: reference
 discoiquuid: 13085dd3-d283-4354-874b-cd837a9db9f9
 docset: aem65
 exl-id: 661602eb-a117-454d-93d3-a079584f7a5d
-feature: Security
-translation-type: tm+mt
+feature: Sicherheit
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
 source-wordcount: '505'
@@ -34,7 +33,7 @@ ht-degree: 74%
   <tr>
    <td><p>Eigenschaft: cq:cugEnabled</p> <p>Deklarierender Knotentyp: nicht zutreffend, Resteigenschaft</p> </td>
    <td><p>Autorisierung:</p> <p>Knoten: rep:cugPolicy des Knotentyps rep:CugPolicy</p> <p>Deklarierender Knotentyp: rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Authentifizierung:</p> <p>Mixin-Typ: granite:AuthenticationRequired</p> </td>
-   <td><p>Um den Lesezugriff einzuschränken, wird eine dedizierte CUG-Richtlinie auf den Zielknoten angewendet.</p> <p>HINWEIS: Richtlinien können nur für die konfigurierten unterstützten Pfade angewendet werden.</p> <p>Knoten mit dem Namen rep:Cugpolicy und Typ rep:Cugpolicy sind geschützt und können nicht mit normalen JCR-API-Aufrufen geschrieben werden. Verwenden Sie stattdessen JCR-Zugangssteuerungsverwaltung.</p> <p>Weitere Informationen finden Sie auf <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">dieser Seite</a>.</p> <p>Um die Authentifizierungsanforderung für einen Knoten zu erzwingen, reicht es aus, den mixin-Typ granite:AuthenticationRequired hinzuzufügen.</p> <p>HINWEIS: Wird nur unter den konfigurierten unterstützten Pfaden berücksichtigt.</p> </td>
+   <td><p>Um den Lesezugriff einzuschränken, wird eine dedizierte CUG-Richtlinie auf den Zielknoten angewendet.</p> <p>HINWEIS: Richtlinien können nur für die konfigurierten unterstützten Pfade angewendet werden.</p> <p>Knoten mit dem Namen rep:Cugpolicy und Typ rep:Cugpolicy sind geschützt und können nicht mit normalen JCR-API-Aufrufen geschrieben werden. Verwenden Sie stattdessen JCR-Zugangssteuerungsverwaltung.</p> <p>Weitere Informationen finden Sie auf <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">dieser Seite</a>.</p> <p>Um die Authentifizierungspflicht für einen Knoten zu erzwingen, reicht es aus, den Mixin-Typ granite:AuthenticationRequired hinzuzufügen.</p> <p>HINWEIS: Wird nur unter den konfigurierten unterstützten Pfaden berücksichtigt.</p> </td>
   </tr>
   <tr>
    <td><p>Eigenschaft: cq:cugPrincipals</p> <p>Deklarierender Knotentyp: nicht zutreffend, Resteigenschaft</p> </td>
@@ -44,7 +43,7 @@ ht-degree: 74%
   <tr>
    <td><p>Eigenschaft: cq:cugLoginPage</p> <p>Deklarierender Knotentyp: nicht zutreffend, Resteigenschaft</p> </td>
    <td><p>Eigenschaft: granite:loginPath (optional)</p> <p>Deklarierender Knotentyp: granite:AuthenticationRequired</p> </td>
-   <td><p>Ein JCR-Knoten, für den der mixin-Typ "granite:AuthenticationRequired"definiert ist, kann optional einen alternativen Anmeldepfad definieren.</p> <p>HINWEIS: Wird nur unter den konfigurierten unterstützten Pfaden berücksichtigt.</p> </td>
+   <td><p>Ein JCR-Knoten, für den der Mixin-Typ granite:AuthenticationRequired definiert ist, kann optional einen alternativen Anmeldepfad definieren.</p> <p>HINWEIS: Wird nur unter den konfigurierten unterstützten Pfaden berücksichtigt.</p> </td>
   </tr>
   <tr>
    <td><p>Eigenschaft: cq:cugRealm</p> <p>Deklarierender Knotentyp: nicht zutreffend, Resteigenschaft</p> </td>
@@ -54,7 +53,7 @@ ht-degree: 74%
  </tbody>
 </table>
 
-## Vergleich der OSGi-Dienste {#comparison-of-osgi-services}
+## Vergleich der OSGi-Dienste  {#comparison-of-osgi-services}
 
 **Ältere AEM-Versionen**
 
@@ -68,36 +67,36 @@ Name: com.day.cq.auth.impl.CugSupportImpl
 
    Name: org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugConfiguration
 
-   ConfigurationPolicy = ERFORDERLICH
+   ConfigurationPolicy = REQUIRED
 
 * Bezeichnung: Apache Jackrabbit Oak CUG Exclude List
 
    Name: org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugExcludeImpl
 
-   ConfigurationPolicy = ERFORDERLICH
+   ConfigurationPolicy = REQUIRED
 
 * Name: com.adobe.granite.auth.requirement.impl.RequirementService
 * Bezeichnung: Adobe Granite Authentication Requirement and Login Path Handler
 
    Name: com.adobe.granite.auth.requirement.impl.DefaultRequirementHandler
 
-   ConfigurationPolicy = ERFORDERLICH
+   ConfigurationPolicy = REQUIRED
 
 **Kommentare**
 
 * Konfiguration der CUG-Autorisierung und Aktivieren/Deaktivieren der Bewertung.
-Dienst zum Konfigurieren der Liste von Prinzipalen, die von der CUG-Genehmigung nicht betroffen sein sollten.
+Dienst zum Konfigurieren der Ausschlussliste von Prinzipalen, die von der CUG-Autorisierung nicht betroffen sein sollten.
 
    >[!NOTE]
    > 
-   >Wenn `CugExcludeImpl` nicht konfiguriert ist, wird `CugConfiguration` auf die Standardeinstellung zurückgesetzt.
+   >Wenn `CugExcludeImpl` nicht konfiguriert ist, wird `CugConfiguration` auf den Standardwert zurückgesetzt.
 
    Es ist möglich, bei besonderen Anforderungen eine benutzerdefinierte CugExclude-Implementierung zu verbinden.
 
 * OSGi-Komponente, die den LoginPathProvider implementiert, der einen übereinstimmenden Anmeldepfad zum LoginSelectorHandler bereitstellt. Verfügt über einen obligatorischen Verweis auf einen RequirementHandler. Dieser wird dazu verwendet, den Beobachter zu registrieren, der auf geänderte Authentifizierungsanforderungen wartet, die im Inhalt durch den Mixin-Typ granite:AuthenticationRequired gespeichert sind.
-* OSGi-Komponente zur Implementierung von RequirementHandler, die den SlingAuthenticator über Änderungen an Authoring-Anforderungen informiert.
+* OSGi-Komponente, die RequirementHandler implementiert, der den SlingAuthenticator über Änderungen an den Authoring-Anforderungen informiert.
 
-   Da die Konfigurationspolitik für diese Komponente ERFORDERLICH ist, wird sie nur aktiviert, wenn eine Reihe unterstützter Pfade angegeben ist.
+   Da die Konfigurationsrichtlinie für diese Komponente ERFORDERLICH ist, wird sie nur aktiviert, wenn eine Reihe unterstützter Pfade angegeben ist.
 
    Durch Aktivierung des Dienstes wird RequirementService gestartet.
 
