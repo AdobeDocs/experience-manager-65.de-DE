@@ -9,14 +9,13 @@ content-type: reference
 topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
-translation-type: tm+mt
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+exl-id: 6d127e14-767e-46ad-aaeb-0ce9dd14d553
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 98%
 
 ---
-
 
 # Aktivieren eines JSON-Exports für eine Komponente{#enabling-json-export-for-a-component}
 
@@ -31,7 +30,7 @@ Das bedeutet, dass die Komponente über ein Sling-Modell verfügen muss, wenn JS
 * [Definieren eines Sling-Modells für die Komponente](/help/sites-developing/json-exporter-components.md#define-a-sling-model-for-the-component)
 * [Kommentieren der Sling-Modell-Oberfläche](#annotate-the-sling-model-interface)
 
-## Definieren eines Sling-Modells für die Komponente  {#define-a-sling-model-for-the-component}
+## Definieren eines Sling-Modells für die Komponente   {#define-a-sling-model-for-the-component}
 
 Zunächst muss ein Sling-Modell für die Komponente definiert werden.
 
@@ -98,6 +97,5 @@ Weitere Informationen finden Sie unter:
 
 * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
 * [Bearbeitung mit Inhaltsfragmenten](/help/sites-authoring/content-fragments.md)
-* [JSON-Exporter für Content Services](/help/sites-developing/json-exporter.md)
+* [JSON-Exporter für Content Services ](/help/sites-developing/json-exporter.md)
 * [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) und die [Inhaltsfragmentkomponente](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
-
