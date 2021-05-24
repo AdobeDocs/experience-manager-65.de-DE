@@ -10,14 +10,13 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 11ff8bb3-39eb-4f77-b3dc-720262fa7f3f
 docset: aem65
-translation-type: tm+mt
-source-git-commit: dc1985c25c797f7b994f30195d0586f867f9b3ee
+exl-id: 0e13112b-d9df-4ba6-bd73-431c87890b79
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1218'
 ht-degree: 97%
 
 ---
-
 
 # Arbeiten mit dem Marketing Campaign Manager{#working-with-the-marketing-campaign-manager}
 
@@ -60,7 +59,7 @@ Wenn Sie einen Bericht auswählen, wird die Berichtseite geöffnet.
 
 Das Dashboard enthält vier Bereiche, die Ihnen eine Übersicht über Ihre (Lead-)Listen, Segmente, Berichte und Kampagnen bieten. Hier können Sie ebenfalls auf die entsprechenden Grundfunktionen zugreifen.
 
-![mcm_Dashboard](assets/mcm_dashboard.png)
+![mcm_dashboard](assets/mcm_dashboard.png)
 
 ### Leads {#leads}
 
@@ -115,7 +114,7 @@ Wenn Sie auf eine Marke klicken, geschieht Folgendes:
 * **Rechter Bereich**: Hier werden für jede Marke Symbole angezeigt (historische Kampagnen werden nicht aufgeführt).
 Sie können darauf doppelklicken, um die Markenübersicht anzuzeigen.
 
-#### Markenübersicht {#brand-overview}
+#### Markenübersicht  {#brand-overview}
 
 ![mcm_brandoverview](assets/mcm_brandoverview.png)
 
@@ -167,7 +166,7 @@ Für die einzelnen Kampagnen sind zwei Ansichten verfügbar:
 
    Hier können Sie folgende Aktionen durchführen:
 
-   * Erstellen Sie eine **Neu...** Erlebnis; zum Beispiel Adobe Target-Angebote, Teaser und Newsletter.
+   * Erstellen Sie eine **Neu...** Erlebnis; z. B. Adobe Target-Angebote, Teaser und Newsletter.
    * **Bearbeiten** der Details einer bestimmten Teaser-Seite oder eines bestimmten Newsletters (auch per Doppelklick möglich).
    * Definieren der **Eigenschaften** für eine bestimmte Teaser-Seite oder einen bestimmten Newsletter.
    * **Simulieren** des Aussehens eines Erlebnisses (Teaser-Seite oder Newsletter).
@@ -183,7 +182,7 @@ Wenn die simulierte Seite geöffnet ist, können Sie den Sidekick öffnen, um in
 
 Klicken Sie im Marketing Campaign Manager auf **Kampagnen**. Vergewissern Sie sich, dass die Listenansicht aktiv ist, wählen Sie dann die gewünschte Kampagnenerfahrung und klicken Sie auf **Simulieren**. Der Touchpoint (Teaser- oder Newsletter-Seite) wird geöffnet und das gewählte Erlebnis wird angezeigt (so, wie der Besucher es sieht).
 
-![mcm_simulateexperience](assets/mcm_simulateexperience.png)
+![mcm_simateexperience](assets/mcm_simulateexperience.png)
 
 Von hier aus können Sie auch den Sidekick öffnen (klicken Sie auf den kleinen Pfeil nach unten), um zum Bearbeitungsmodus zu wechseln und die Seite zu aktualisieren.
 
@@ -191,4 +190,4 @@ Von hier aus können Sie auch den Sidekick öffnen (klicken Sie auf den kleinen 
 
 Klicken Sie im Marketing Campaign Manager auf **Kampagnen**. Vergewissern Sie sich, dass die Listenansicht aktiv ist, wählen Sie dann die gewünschte Kampagnenerfahrung und klicken Sie auf **Analysieren...**. Ein Diagramm mit den Seiten-Impressions im Zeitverlauf wird angezeigt.
 
-![mcm_campaign analyze](assets/mcm_campaignanalyze.png)
+![mcm_campaignanalyze](assets/mcm_campaignanalyze.png)
