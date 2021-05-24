@@ -10,14 +10,13 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 4537c1fb-f99c-42e2-a222-b037794bdb52
 docset: aem65
-translation-type: tm+mt
-source-git-commit: cb141914428f42a9755b5479ab1652c8ca51f640
+exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2155'
 ht-degree: 93%
 
 ---
-
 
 # Entwickeln mit CRXDE Lite{#developing-with-crxde-lite}
 
@@ -25,13 +24,13 @@ In diesem Abschnitt wird beschrieben, wie Sie Ihre AEM-Anwendung mit CRXDE Lite 
 
 Weitere Informationen zu den verschiedenen verfügbaren Entwicklungsumgebungen finden Sie in der Übersichtsdokumentation.
 
-CRXDE Lite ist in AEM integriert und ermöglicht Ihnen die Durchführung von Standardentwicklungsaufgaben im Browser. Mit der CRXDE Lite können Sie ein Projekt erstellen, Dateien (wie .jsp und .java), Ordner, Vorlagen, Komponenten, Dialoge, Knoten, Eigenschaften und Bundles erstellen und bearbeiten, während Sie die Protokollierung durchführen.
+CRXDE Lite ist in AEM integriert und ermöglicht Ihnen die Durchführung von Standardentwicklungsaufgaben im Browser. Mit CRXDE Lite können Sie ein Projekt erstellen, Dateien (wie .jsp und .java), Ordner, Vorlagen, Komponenten, Dialogfelder, Knoten, Eigenschaften und Bundles erstellen und bearbeiten, während Sie die Protokollierung vornehmen.
 CRXDE Lite wird empfohlen, wenn Sie keinen direkten Zugriff auf den AEM-Server haben, wenn Sie eine Anwendung entwickeln, indem Sie die im Lieferumfang enthaltenen Komponenten und Java-Bundle erweitern oder modifizieren, oder wenn Sie keinen dedizierten Debugger, Code-Vervollständigung und Syntaxhervorhebung benötigen.
 
 >[!NOTE]
 >
 >Ab AEM 6.5.5.0 ist der anonyme Zugriff auf die CRXDE Lite nicht mehr möglich.
->Benutzer werden zum Anmeldebildschirm umgeleitet.
+>Benutzer werden zum Anmeldebildschirm weitergeleitet.
 
 
 >[!NOTE]
@@ -43,7 +42,7 @@ CRXDE Lite wird empfohlen, wenn Sie keinen direkten Zugriff auf den AEM-Server h
 Um mit CRXDE Lite zu beginnen, gehen Sie wie folgt vor:
 
 1. Installieren Sie AEM.
-1. Geben Sie im Browser `https://<host>:<port>/crx/de` ein. Standardmäßig ist es `https://localhost:4502/crx/de`.
+1. Geben Sie im Browser `https://<host>:<port>/crx/de` ein. Standardmäßig ist dies `https://localhost:4502/crx/de`.
 1. Geben Sie Ihren **Benutzernamen** und Ihr **Kennwort** ein. Standardmäßig sind es `admin` und `admin`.
 
 1. Klicken Sie auf **OK**.
@@ -106,7 +105,7 @@ CRXDE Lite bietet folgende Funktionen:
   </tr>
   <tr>
    <td>Erstellen ...<br /> </td>
-   <td><p>Dropdown-Menü, um Folgendes unter dem ausgewählten Knoten zu erstellen:<br /> </p> <p>- <strong>Knoten</strong>: ein Knoten mit einem beliebigen Knotentyp<br /> </p> <p>- <strong>Datei</strong>: nt:file-Knoten und zugehörige nt:resource-Unterknoten</p> <p>- <strong>Ordner</strong>: nt:folder-Knoten</p> <p>- <strong>Vorlage</strong>: AEM-Vorlage</p> <p>- <strong>Komponente</strong>: AEM-Komponente</p> <p>- <strong>Dialog</strong>: AEM-Dialogfeld</p> </td>
+   <td><p>Dropdown-Menü, um Folgendes unter dem ausgewählten Knoten zu erstellen:<br /> </p> <p>- <strong>Knoten</strong>: ein Knoten mit einem beliebigen Knotentyp<br /> </p> <p>- <strong>File</strong>: nt:file-Knoten und sein nt:resource-Unterknoten</p> <p>- <strong>Ordner</strong>: nt:folder-Knoten</p> <p>- <strong>Vorlage</strong>: AEM-Vorlage</p> <p>- <strong>Komponente</strong>: AEM-Komponente</p> <p>- <strong>Dialog</strong>: AEM-Dialogfeld</p> </td>
   </tr>
   <tr>
    <td>Löschen<br /> </td>
@@ -154,7 +153,7 @@ So erstellen Sie einen Ordner mit CRXDE Lite:
 
 1. Klicken Sie auf **Alle speichern**, um die Änderungen auf dem Server zu speichern.
 
-## Erstellen einer Vorlage {#creating-a-template}
+## Erstellen einer Vorlage  {#creating-a-template}
 
 So erstellen Sie eine Vorlage mit CRXDE Lite:
 
@@ -165,7 +164,7 @@ So erstellen Sie eine Vorlage mit CRXDE Lite:
 
 1. Dieser Schritt ist optional: Legen Sie die **zugelassenen Pfade** fest. Klicken Sie auf **Weiter**
 
-1. Dieser Schritt ist optional: Legen Sie **Zulässige Eltern** fest. Klicken Sie auf **Weiter**.
+1. Dieser Schritt ist optional: Legen Sie die **Zulässige übergeordnete Elemente** fest. Klicken Sie auf **Weiter**.
 
 1. Dieser Schritt ist optional: Legen Sie **Zulässige Kinder** fest. Klicken Sie auf **OK**.
 
@@ -173,7 +172,7 @@ So erstellen Sie eine Vorlage mit CRXDE Lite:
 
 Folgendes wird erstellt:
 
-* Eine Node des Typs `cq:Template` mit Vorlageneigenschaften
+* Ein Knoten des Typs `cq:Template` mit Vorlageneigenschaften
 
 * Ein untergeordneter Knoten vom Typ `cq:PageContent` mit Seiteninhaltseigenschaften
 
@@ -209,7 +208,7 @@ Folgendes wird erstellt:
 So erstellen Sie ein Dialogfeld mit CRXDE Lite:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
-1. Klicken Sie im Navigationsbereich mit der rechten Maustaste auf die Komponente, in der Sie das Dialogfeld erstellen möchten, und wählen Sie **Erstellen ...**, dann **Dialogfeld erstellen ...**.
+1. Klicken Sie im Navigationsfenster mit der rechten Maustaste auf die Komponente, in der Sie das Dialogfeld erstellen möchten, und wählen Sie **Erstellen ...**, dann **Dialogfeld erstellen ...**.
 
 1. Geben Sie **Beschriftung** und **Titel** ein. Klicken Sie auf **OK**.
 
@@ -265,7 +264,7 @@ So erstellen Sie ein neues Skript:
 
 ## Exportieren und Importieren von Knotentypen {#exporting-and-importing-node-types}
 
-Mit der CRXDE Lite können Sie Knotentypdefinitionen in [CND (Compact Namensraum and Node Type Definition) Notation](https://jackrabbit.apache.org/jcr/node-type-notation.html) importieren und/oder exportieren.
+Mit CRXDE Lite können Sie Knotentypdefinitionen in die [CND-Notation (Compact Namespace and Node Type Definition)](https://jackrabbit.apache.org/jcr/node-type-notation.html) importieren und/oder exportieren.
 
 So exportieren Sie eine Knotentypdefinition:
 
