@@ -10,14 +10,13 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 0aa2c22f-32bb-4e50-8328-63ed73c0f19e
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/microkernels-in-aem-6-0
-translation-type: tm+mt
-source-git-commit: 2fc35bfd93585a586cb1d4e3299261611db49ba6
+exl-id: 52437eb5-f9fb-4945-9950-5a1562fe878d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 81%
 
 ---
-
 
 # Speicherelemente in AEM 6.5{#storage-elements-in-aem}
 
@@ -32,13 +31,13 @@ Eine der wichtigsten Änderungen in AEM 6 sind die Innovationen auf Repository-E
 
 Derzeit sind in AEM 6 zwei Implementierungen von Knotenspeicher verfügbar: TAR-Speicher und MongoDB-Speicher.
 
-### TAR-Speicher {#tar-storage}
+### TAR-Speicher  {#tar-storage}
 
 #### Ausführen einer neu installierten AEM-Instanz mit TAR-Speicher {#running-a-freshly-installed-aem-instance-with-tar-storage}
 
 >[!CAUTION]
 >
->Die PID für den Segment-Knotenspeicher wurde von org.apache.jackrabbit.oak geändert.**plugins**.segment.SegmentNodeStoreService in früheren Versionen von AEM 6 bis org.apache.jackrabbit.oak.segment.SegmentNodeStoreService in AEM 6.3. Stellen Sie sicher, dass Sie die erforderlichen Konfigurationsanpassungen vornehmen, um diese Änderung widerzuspiegeln.
+>Die PID für den Segment-Knotenspeicher wurde von org.apache.jackrabbit.oak geändert.**plugins**.segment.SegmentNodeStoreService in früheren Versionen von AEM 6 zu org.apache.jackrabbit.oak.segment.SegmentNodeStoreService in AEM 6.3. Stellen Sie sicher, dass Sie die erforderlichen Konfigurationsanpassungen vornehmen, um diese Änderung widerzuspiegeln.
 
 Standardmäßig verwendet AEM 6 den TAR-Speicher zum Speichern von Knoten und Binärdateien und verwendet dabei die Standardkonfigurationsoptionen. Führen Sie folgende Schritte aus, um die Speichereinstellungen manuell zu konfigurieren:
 
@@ -47,7 +46,7 @@ Standardmäßig verwendet AEM 6 den TAR-Speicher zum Speichern von Knoten und Bi
 
    `java -jar cq-quickstart-6.jar -unpack`
 
-1. Erstellen Sie im Installationsordner einen Ordner mit dem Namen `crx-quickstart\install`.
+1. Erstellen Sie einen Ordner mit dem Namen `crx-quickstart\install` im Installationsverzeichnis.
 
 1. Erstellen Sie die Datei `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg` im neu erstellten Ordner.
 
@@ -69,11 +68,11 @@ AEM 6 kann für die Ausführung mit MongoDB-Speicher konfiguriert werden, wie na
 
    `java -jar cq-quickstart-6.jar -unpack`
 
-1. Vergewissern Sie sich, dass MongoDB installiert ist und eine Instanz von `mongod` ausgeführt wird. Weitere Informationen finden Sie unter [Installieren von MongoDB](https://docs.mongodb.org/manual/installation/).
-1. Erstellen Sie im Installationsordner einen Ordner mit dem Namen `crx-quickstart\install`.
+1. Stellen Sie sicher, dass MongoDB installiert ist und eine Instanz von `mongod` ausgeführt wird. Weitere Informationen finden Sie unter [Installieren von MongoDB](https://docs.mongodb.org/manual/installation/).
+1. Erstellen Sie einen Ordner mit dem Namen `crx-quickstart\install` im Installationsverzeichnis.
 1. Konfigurieren Sie den Knotenspeicher. Erstellen Sie dazu eine Konfigurationsdatei mit dem Namen der Konfiguration, die Sie im Verzeichnis `crx-quickstart\install` verwenden möchten.
 
-   Der Dokument Node Store (der die Grundlage für die Implementierung AEM MongoDB-Datenspeicherung bildet) verwendet eine Datei mit dem Namen `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`
+   Der Document Node Store (die Grundlage für AEM MongoDB-Speicherimplementierung) verwendet eine Datei namens `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`
 
 1. Bearbeiten Sie die Datei und legen Sie die Konfigurationsoptionen fest. Die folgenden Optionen sind verfügbar:
 
@@ -91,14 +90,14 @@ AEM 6 kann für die Ausführung mit MongoDB-Speicher konfiguriert werden, wie na
    java -jar cq-quickstart-6.jar -r crx3,crx3mongo
    ```
 
-   Dabei ist **`-r`** der Backend-Runmode. In diesem Beispiel beginnt dieser mit MongoDB-Unterstützung.
+   Dabei ist **`-r`** der Backend-Ausführungsmodus. In diesem Beispiel beginnt dieser mit MongoDB-Unterstützung.
 
 #### Deaktivieren von Transparent Huge Pages  {#disabling-transparent-huge-pages}
 
 Red Hat Linux nutzt einen Speicherverwaltungsalgorithmus mit der Bezeichnung THP (Transparent Huge Pages). Während AEM feinkörnige Lese- und Schreibvorgänge durchführt, ist THP für große Operationen optimiert. Aus diesem Grund wird empfohlen, dass Sie THP auf Tar- und Mongospeicher deaktivieren. Um den Algorithmus zu deaktivieren, führen Sie die folgenden Schritte aus:
 
 1. Öffnen Sie die Datei `/etc/grub.conf` im Texteditor Ihrer Wahl.
-1. hinzufügen Sie die folgende Zeile in die Datei **grub.conf** ein:
+1. Fügen Sie der Datei **grub.conf** die folgende Zeile hinzu:
 
    ```
    transparent_hugepage=never
@@ -120,8 +119,8 @@ Red Hat Linux nutzt einen Speicherverwaltungsalgorithmus mit der Bezeichnung THP
 >
 >Zusätzlich können Sie auch die folgenden Ressourcen konsultieren:
 >
->* Weitere Informationen zu transparenten großen Seiten unter Red Hat Linux finden Sie in diesem [Artikel](https://access.redhat.com/solutions/46111).
->* Tipps zur Linux-Anpassung finden Sie in diesem [Artikel](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html).
+>* Weitere Informationen zu Transparent Huge Pages unter Red Hat Linux finden Sie in diesem [Artikel](https://access.redhat.com/solutions/46111).
+>* Tipps zur Linux-Optimierung finden Sie in diesem [Artikel](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html).
 
 >
 
@@ -129,4 +128,4 @@ Red Hat Linux nutzt einen Speicherverwaltungsalgorithmus mit der Bezeichnung THP
 
 ## Wartung von Repositorys {#maintaining-the-repository}
 
-Bei jeder Repository-Aktualisierung wird eine neue Inhaltsrevision erstellt. Dadurch wächst mit jeder Aktualisierung die Größe des Repositorys. Um ein unkontrolliertes Repository-Wachstum zu vermeiden, müssen alte Revisionen bereinigt werden, um Festplattenressourcen freizugeben. Diese Wartungsfunktionalität wird als Revisionsbereinigung bezeichnet. Bei der Revisionsbereinigung wird durch Löschen veralteter Daten aus dem Repository Festplattenspeicher zurückgewonnen. Weitere Informationen zur Revisionsbereinigung finden Sie auf der [Seite über die Revisionsbereinigung](/help/sites-deploying/revision-cleanup.md).
+Bei jeder Repository-Aktualisierung wird eine neue Inhaltsrevision erstellt. Dadurch wächst bei jeder Aktualisierung die Größe des Repositorys. Um ein unkontrolliertes Repository-Wachstum zu vermeiden, müssen alte Revisionen bereinigt werden, um Festplattenressourcen freizugeben. Diese Wartungsfunktionalität wird als Revisionsbereinigung bezeichnet. Bei der Revisionsbereinigung wird durch Löschen veralteter Daten aus dem Repository Festplattenspeicher zurückgewonnen. Weitere Informationen zur Revisionsbereinigung finden Sie auf der [Seite über die Revisionsbereinigung](/help/sites-deploying/revision-cleanup.md).
