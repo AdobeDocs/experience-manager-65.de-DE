@@ -10,28 +10,27 @@ content-type: reference
 topic-tags: introduction
 discoiquuid: b315720f-e9b8-4063-99e2-1b9aa6bba460
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
+exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 14%
 
 ---
 
-
 # Migration zur Touch-Benutzeroberfläche{#migration-to-the-touch-ui}
 
-Ab Version 6.0 hat Adobe Experience Manager (AEM) eine neue Benutzeroberfläche eingeführt, die als *touchfähige Benutzeroberfläche* bezeichnet wird (auch bekannt als *Touch-Benutzeroberfläche*). Es ist an die Adobe Marketing Cloud und die allgemeinen Richtlinien der Benutzeroberfläche der Adobe angepasst. Dies ist die Standardbenutzeroberfläche in AEM mit der alten, Desktop-orientierten Oberfläche, die als *klassische Benutzeroberfläche* bezeichnet wird.
+Ab Version 6.0 führte Adobe Experience Manager (AEM) eine neue Benutzeroberfläche ein, die als *Touch-optimierte Benutzeroberfläche* bezeichnet wird (auch *Touch-Benutzeroberfläche* genannt). Sie ist an die Adobe Marketing Cloud und die allgemeinen Richtlinien für die Benutzeroberfläche der Adobe angepasst. Dies ist inzwischen die Standard-Benutzeroberfläche in AEM mit der veralteten, Desktop-orientierten Benutzeroberfläche, die als *klassische Benutzeroberfläche* bezeichnet wird.
 
 Wenn Sie AEM mit der klassischen Benutzeroberfläche verwendet haben, müssen Sie Maßnahmen ergreifen, um Ihre Instanz zu migrieren. Diese Seite soll als Sprungbrett dienen, indem Links zu einzelnen Ressourcen bereitgestellt werden.
 
 >[!NOTE]
 >
->Ein solches Migrationsprojekt kann erhebliche Auswirkungen auf Ihre Instanz haben. Empfohlene Richtlinien finden Sie unter [Verwalten von Projekten - Best Practices](/help/managing/best-practices.md).
+>Ein solches Migrationsprojekt kann erhebliche Auswirkungen auf Ihre Instanz haben. Empfohlene Richtlinien finden Sie unter [Verwalten von Projekten - Best Practices](/help/managing/best-practices.md) .
 
 ## Grundlagen {#the-basics}
 
-Beachten Sie beim Migrieren die folgenden (wichtigen) Unterschiede zwischen der klassischen und der Touch-Benutzeroberfläche:
+Beachten Sie bei der Migration die folgenden (wichtigen) Unterschiede zwischen der klassischen und der Touch-Benutzeroberfläche:
 
 <table>
  <tbody>
@@ -41,7 +40,7 @@ Beachten Sie beim Migrieren die folgenden (wichtigen) Unterschiede zwischen der 
   </tr>
   <tr>
    <td>Wird im JCR-Repository als Knotenstruktur beschrieben. Jeder Knoten, der ein Element der Benutzeroberfläche darstellt, wird als <em>ExtJS-Widget</em> bezeichnet und clientseitig von <code>ExtJS</code> gerendert.</td>
-   <td>Wird auch im JCR-Repository als Knotenstruktur beschrieben. In diesem Fall bezieht sich jedoch jeder Knoten auf einen Sling-Ressourcentyp (Sling-Komponente), der für das Rendering zuständig ist. Die Benutzeroberfläche wird also (im Grunde) serverseitig gerendert.</td>
+   <td>Wird auch im JCR-Repository als Knotenstruktur beschrieben. In diesem Fall bezieht sich jedoch jeder Knoten auf einen Sling-Ressourcentyp (Sling-Komponente), der für das Rendering zuständig ist. Die Benutzeroberfläche wird daher (im Grunde) serverseitig gerendert.</td>
   </tr>
   <tr>
    <td><p><code>sling:resourceType</code></p>
@@ -67,77 +66,77 @@ Beachten Sie beim Migrieren die folgenden (wichtigen) Unterschiede zwischen der 
     </ul> </td>
   </tr>
   <tr>
-   <td><p>JavaScript-Speicherort:</p>
+   <td><p>Javascript-Speicherort:</p>
     <ul>
-     <li>Imperative Teile werden direkt mit Listenern eingebettet oder in clientlibs verwaltet.</li>
+     <li>Imperative Teile werden direkt über Listener eingebettet oder in Clientlibs verwaltet.</li>
     </ul> </td>
-   <td><p>JavaScript-Speicherort:</p>
+   <td><p>Javascript-Speicherort:</p>
     <ul>
-     <li>Imperative Teile können nicht in die Dialogdefinition eingebettet werden. Trennung der Zuständigkeiten.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td><p>Umgang mit Ereignissen:</p>
-    <ul>
-     <li>Dialog-Widgets verweisen direkt auf JavaScript-Code.</li>
-    </ul> </td>
-   <td><p>Umgang mit Ereignissen:</p>
-    <ul>
-     <li>JavaScript überwacht Dialogfelder.</li>
+     <li>Imperative Teile können nicht in die Dialogfelddefinition eingebettet werden. Aufgabentrennung.</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>Vom Client durchgeführte Wiedergabe:
+   <td><p>Ereignisverarbeitung:</p>
     <ul>
-     <li>Client erstellt die Komponenten der Benutzeroberfläche dynamisch.</li>
-     <li>Client-Anforderungen (Pull) Komponentendefinition (als JSON) vom Server.</li>
+     <li>Dialogfeld-Widgets verweisen direkt auf JavaScript-Code.</li>
     </ul> </td>
-   <td>Vom Server ausgeführte Wiedergabe:
+   <td><p>Ereignisverarbeitung:</p>
     <ul>
-     <li>Der Client fordert Seiten zusammen mit der entsprechenden Benutzeroberfläche an.</li>
-     <li>Der Server sendet (push) die Benutzeroberfläche als HTML-Dokumente; Verwenden von Coral UI-Komponenten.<br /> </li>
+     <li>JavaScript beobachtet Dialogfeldereignisse.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>Rendering durch den Client:
+    <ul>
+     <li>Der Client erstellt dynamisch die Komponenten der Benutzeroberfläche.</li>
+     <li>Komponentendefinition für Client-Anforderungen (Pull) (als JSON) vom Server.</li>
+    </ul> </td>
+   <td>Vom Server durchgeführte Wiedergabe:
+    <ul>
+     <li>Der Client fordert Seiten zusammen mit der zugehörigen Benutzeroberfläche an.</li>
+     <li>Der Server sendet (push) die Benutzeroberfläche als HTML-Dokumente. Verwenden von Coral-UI-Komponenten.<br /> </li>
     </ul> </td>
   </tr>
  </tbody>
 </table>
 
-Mit anderen Worten bedeutet die Migration eines Abschnitts Ihrer Benutzeroberfläche von der klassischen Benutzeroberfläche zur Touch-Benutzeroberfläche, dass ein *ExtJS-Widget* in eine *Sling-Komponente* portiert wird. Um dies zu erleichtern, basiert die Touch-Benutzeroberfläche auf dem Granite UI-Framework, das bereits einige Sling-Komponenten für die Benutzeroberfläche bereitstellt (als Granite UI-Komponenten bezeichnet).
+Das heißt, dass die Migration eines Abschnitts Ihrer Benutzeroberfläche von der klassischen Benutzeroberfläche zur Touch-Benutzeroberfläche bedeutet, dass ein *ExtJS-Widget* in eine *Sling-Komponente* übertragen wird. Um dies zu vereinfachen, basiert die Touch-Benutzeroberfläche auf dem Granite-UI-Framework, das bereits einige Sling-Komponenten für die Benutzeroberfläche bereitstellt (als Granite-UI-Komponenten bezeichnet).
 
-Prüfen Sie vor dem Beginn den Status und die entsprechenden Empfehlungen:
+Bevor Sie beginnen, überprüfen Sie den Status und die zugehörigen Empfehlungen:
 
-* [Status der Touch-UI-Funktionen](/help/release-notes/touch-ui-features-status.md)
+* [Status der Funktionen der Touch-optimierten Benutzeroberfläche](/help/release-notes/touch-ui-features-status.md)
 * [Empfehlungen für Kunden zur Benutzeroberfläche](/help/sites-deploying/ui-recommendations.md)
 
-Die Grundlagen für die Entwicklung der Touch-Benutzeroberfläche bieten eine solide Grundlage:
+Die Grundlagen der Entwicklung der Touch-Benutzeroberfläche bieten eine solide Grundlage:
 
 * [Konzepte der Touch-optimierten Benutzeroberfläche von AEM](/help/sites-developing/touch-ui-concepts.md)
 * [Struktur der Touch-optimierten Benutzeroberfläche von AEM](/help/sites-developing/touch-ui-structure.md)
 
-## Migrieren von Seiten-Authoring {#migrating-page-authoring}
+## Migrieren der Seitenbearbeitung {#migrating-page-authoring}
 
-Dialoge sind ein wichtiger Faktor bei der Migration Ihrer Komponenten:
+Dialoge sind bei der Migration Ihrer Komponenten ein wichtiger Faktor:
 
-* [Entwickeln AEM Komponenten](/help/sites-developing/developing-components.md)  (mit der touchfähigen Benutzeroberfläche)
+* [Entwickeln AEM Komponenten](/help/sites-developing/developing-components.md)  (mit der Touch-optimierten Benutzeroberfläche)
 * [Migration von einer klassischen Komponente](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
-* [AEM Modernisierungstools](/help/sites-developing/modernization-tools.md)  - Unterstützung beim Konvertieren der Dialoge Ihrer klassischen UI-Komponenten in die Touch-Benutzeroberfläche
+* [AEM-Modernisierungs-Tools](/help/sites-developing/modernization-tools.md)  - Hilfe beim Konvertieren der Dialogfelder Ihrer Komponenten der klassischen Benutzeroberfläche in die Touch-Benutzeroberfläche
 
-   * Es gibt eine Kompatibilitätsebene in der Touch-Benutzeroberfläche, um ein klassisches UI-Dialogfeld in einem &quot;Touch-UI-Wrapper&quot; zu öffnen, aber dies hat eingeschränkte Funktionalität und wird langfristig nicht empfohlen.
+   * In der Touch-Benutzeroberfläche gibt es eine Kompatibilitätsebene, um ein Dialogfeld der klassischen Benutzeroberfläche in einem &quot;Touch-UI-Wrapper&quot;zu öffnen. Dies hat jedoch eingeschränkte Funktionalität und wird langfristig nicht empfohlen.
 
-* [Anpassen von Dialogfeldern in der Touch-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
+* [Anpassen von Dialogfeldern in der Touch-optimierten Benutzeroberfläche](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [Erstellen einer neuen Feld-Komponente in der Granite-Benutzeroberfläche](/help/sites-developing/granite-ui-component.md)
-* [Anpassen der Seitenbearbeitung](/help/sites-developing/customizing-page-authoring-touch.md)  (mit der touchfähigen Benutzeroberfläche)
+* [Anpassen der Seitenbearbeitung](/help/sites-developing/customizing-page-authoring-touch.md)  (mit der Touch-optimierten Benutzeroberfläche)
 
 ## Migrieren von Konsolen {#migrating-consoles}
 
 Sie können die Konsolen auch anpassen:
 
-* [Anpassen der Konsolen](/help/sites-developing/customizing-consoles-touch.md)  (für die touchfähige Benutzeroberfläche)
+* [Anpassen der Konsolen](/help/sites-developing/customizing-consoles-touch.md)  (für die Touch-optimierte Benutzeroberfläche)
 
 ## Verwandte Aspekte {#related-considerations}
 
-Es gibt zwar nicht direkt mit einer Migration auf die Touch-Benutzeroberfläche zu tun, aber es lohnt sich, gleichzeitig einige Probleme zu prüfen, da diese ebenfalls empfohlen werden:
+Obwohl dies nicht direkt mit einer Migration auf die Touch-Benutzeroberfläche in Zusammenhang steht, sollten gleichzeitig auch verwandte Probleme in Betracht gezogen werden, da dies ebenfalls empfohlen wird:
 
-* [Vorlagen](/help/sites-developing/templates.md)  -  [bearbeitbare Vorlagen](/help/sites-developing/page-templates-editable.md)
+* [Vorlagen](/help/sites-developing/templates.md)  -  [Bearbeitbare Vorlagen](/help/sites-developing/page-templates-editable.md)
 * [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
 * [HTL](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)
 
@@ -147,16 +146,15 @@ Es gibt zwar nicht direkt mit einer Migration auf die Touch-Benutzeroberfläche 
 
 ## Weitere Ressourcen {#further-resources}
 
-Ausführliche Informationen über die Entwicklung AEM sind der Sammlung der Mittel zu entnehmen unter:
+Umfassende Informationen zur Entwicklung von AEM finden Sie in der Sammlung von Ressourcen unter:
 
 * [Benutzerhandbuch für Entwickler](/help/sites-developing/home.md)
 * [Dokumentation zur Granite-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-* [AEM 6.5 Tutorials und Videos](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/overview.html)
+* [Tutorials und Videos zu AEM 6.5 Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/overview.html)
 * [Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial](/help/sites-developing/getting-started.md)
 * [AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html)
 * [AEM-Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]
 >
->AEM Moderationstools sind eine Community-Anstrengung und werden von der Adobe nicht unterstützt oder garantiert.
-
+>AEM Modernisierungs-Tools sind Community-Maßnahmen und werden von der Adobe nicht unterstützt oder garantiert.
