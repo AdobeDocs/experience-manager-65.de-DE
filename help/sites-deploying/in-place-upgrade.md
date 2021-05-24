@@ -10,15 +10,14 @@ content-type: reference
 topic-tags: upgrading
 discoiquuid: fcb17227-ff1f-4b47-ae94-6b7f60923876
 docset: aem65
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Aktualisieren
+exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1276'
 ht-degree: 83%
 
 ---
-
 
 # Durchführen einer In-Place-Aktualisierung{#performing-an-in-place-upgrade}
 
@@ -54,7 +53,7 @@ Vor der Durchführung eines Upgrades müssen einige Schritte ausgeführt werden.
 
 Diese Migration ist nicht erforderlich, wenn Sie eine Aktualisierung von AEM 6.3 durchführen. Für Versionen vor 6.3 bietet Adobe ein Tool, mit dem Sie das Repository in die neue Version von Oak Segment Tar von AEM 6.3 migrieren können. Es befindet sich im Schnellstartpaket und muss für alle Upgrades eingesetzt werden, die TarMK verwenden sollen. Upgrades für Umgebungen, die MongoMK verwenden, erfordern keine Repository-Migration. Weitere Informationen zu den Vorteilen des neuen Segment-Tar-Formats finden Sie unter [FAQ zur Migration zu Oak Segment Tar](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions).
 
-Die eigentliche Migration wird mithilfe der standardmäßigen AEM Schnellstart-JAR-Datei durchgeführt, die mit einer neuen `-x crx2oak`-Option ausgeführt wird, die das crx2oak-Tool ausführt, um die Aktualisierung zu vereinfachen und sie robuster zu machen.
+Die tatsächliche Migration wird mithilfe der standardmäßigen Schnellstart-JAR-Datei durchgeführt, die mit einer neuen `-x crx2oak` -Option ausgeführt wird, die das crx2oak-Tool ausführt, um die Aktualisierung zu vereinfachen und die Stabilität zu steigern.
 
 >[!NOTE]
 >
@@ -72,7 +71,7 @@ Um den Befehl zu ermitteln, den Sie ausführen sollten, verwenden Sie den folgen
 java -Xmx4096m -jar aem-quickstart.jar -v -x crx2oak -xargs -- --load-profile <<YOUR_PROFILE>> <<ADDITIONAL_FLAGS>>
 ```
 
-Dabei werden `<<YOUR_PROFILE>>` und `<<ADDITIONAL_FLAGS>>` durch das Profil und die Flags ersetzt, die in der folgenden Tabelle aufgeführt sind:
+Dabei werden `<<YOUR_PROFILE>>` und `<<ADDITIONAL_FLAGS>>` durch das Profil und die Flags in der folgenden Tabelle ersetzt:
 
 <table>
  <tbody>
@@ -125,27 +124,27 @@ Dabei werden `<<YOUR_PROFILE>>` und `<<ADDITIONAL_FLAGS>>` durch das Profil und 
 
 **Möglicherweise benötigen Sie auch zusätzliche Schalter für folgende Szenarien:** 
 
-* Wenn Sie die Aktualisierung auf einem Windows-System durchführen, bei dem die Java-Speicherzuordnung nicht korrekt verarbeitet wird, fügen Sie dem Befehl den Parameter `--disable-mmap` hinzu.
+* Wenn Sie die Aktualisierung auf einem Windows-System durchführen, bei dem die Java-Speicherzuordnung nicht ordnungsgemäß durchgeführt wird, fügen Sie dem Befehl den Parameter `--disable-mmap` hinzu.
 
 * Wenn Sie Java 7 verwenden, fügen Sie den Parameter `-XX:MaxPermSize=2048m` direkt nach dem Parameter `-Xmx` hinzu.
 
-Weitere Informationen über die Verwendung des crx2oak-Tools finden Sie unter „Verwenden des [CRX2Oak Migration Tools](/help/sites-deploying/using-crx2oak.md). crx2oak helper JAR kann bei Bedarf manuell aktualisiert werden, indem die Datei manuell durch neuere Versionen ersetzt wird, nachdem die Schnellstart-Datei entpackt wurde. Sie finden die Datei im AEM-Installationsordner unter: `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. Die neueste Version des CRX2Oak-Migrationstools kann vom Adobe Repository hier heruntergeladen werden: [https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/)
+Weitere Informationen über die Verwendung des crx2oak-Tools finden Sie unter „Verwenden des [CRX2Oak Migration Tools](/help/sites-deploying/using-crx2oak.md). crx2oak helper JAR kann bei Bedarf manuell aktualisiert werden, indem die Datei manuell durch neuere Versionen ersetzt wird, nachdem die Schnellstart-Datei entpackt wurde. Sie finden die Datei im AEM-Installationsordner unter:  `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. Die neueste Version des CRX2Oak-Migrationstools kann vom Adobe Repository hier heruntergeladen werden: [https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/)
 
 Wenn die Migration erfolgreich abgeschlossen wurde, wird das Tool mit einem Exit Code von null beendet. Beachten Sie zusätzlich etwaige WARN- und ERROR-Meldungen in der Datei `upgrade.log` im AEM-Installationsverzeichnis unter `crx-quickstart/logs`. Diese Meldungen führen Fehler auf, die nicht schwerwiegend sind und bei der Migration auftraten.
 
-Überprüfen Sie die Konfigurationsdateien unter dem Ordner `crx-quickstart/install`. Wenn eine Migration erforderlich war, werden diese auf das Ziel-Repository aktualisiert.
+Überprüfen Sie die Konfigurationsdateien im Ordner `crx-quickstart/install` . Wenn eine Migration erforderlich war, werden diese auf das Ziel-Repository aktualisiert.
 
 **Ein Hinweis zu Datenspeichern:** 
 
 `FileDataStore` ist der neue Standard für Installationen von AEM 6.3 und es ist kein externer Datenspeicher erforderlich. Während ein externer Datenspeicher für Produktionsbereitstellungen empfohlen wird, ist er bei Upgrades nicht Voraussetzung. Aufgrund der gegebenen Komplexität beim Upgrade von AEM empfehlen wir, das Upgrade ohne Datenspeicher-Migration durchzuführen. Falls erwünscht, kann danach eine separate Datenspeicher-Migration ausgeführt werden.
 
-## Problembehebung bei der Migration {#troubleshooting-migration-issues}
+## Problembehebung bei der Migration  {#troubleshooting-migration-issues}
 
 Überspringen Sie diesen Abschnitt, wenn Sie von 6.3 aktualisieren. Die bereitgestellten crx2oak-Profile erfüllen die Anforderungen der meisten Kunden. In einigen Fällen sind jedoch zusätzliche Parameter erforderlich. Wenn während der Migration ein Fehler auftritt, sind für manche Aspekte Ihrer Umgebung möglicherweise zusätzliche Konfigurationsoptionen nötig. In diesem Fall tritt wahrscheinlich folgender Fehler auf:
 
 **Checkpoints werden nicht kopiert, da kein externer Datenspeicher spezifiziert wurde. Dadurch wird das gesamte Repository beim ersten Start neu indiziert. Verwenden Sie „Checkpoints überspringen“, um die Migration zu erzwingen, oder lesen Sie https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration für weitere Informationen.** 
 
-Während des Migrationsprozesses muss auf Binärdateien im Datenspeicher zugegriffen werden, was misslingt. Um die Konfiguration des Datenspeichers anzugeben, fügen Sie die folgenden Flags im Abschnitt `<<ADDITIONAL_FLAGS>>` Ihres Migrationsbefehls ein:
+Während des Migrationsprozesses muss auf Binärdateien im Datenspeicher zugegriffen werden, was misslingt. Um Ihre Datenspeicherkonfiguration anzugeben, fügen Sie die folgenden Flags in den `<<ADDITIONAL_FLAGS>>` -Abschnitt Ihres Migrationsbefehls ein:
 
 **Für S3-Datenspeicher:**
 
@@ -169,13 +168,13 @@ Dabei steht `/path/to/datastore` für den Pfad zum Dateidatenspeicher.
 
 1. Entfernen Sie etwaige JARs unter `crx-quickstart/install`, die mit einer früheren Version des S3 Connectors verknüpft sind.
 
-1. Laden Sie die neueste Version des 1.10.x S3 Connectors von [https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/) herunter
+1. Laden Sie die neueste Version des 1.10.x S3-Connectors von [https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/) herunter.
 
-1. Extrahieren Sie das Paket in einen temporären Ordner und kopieren Sie den Inhalt von `jcr_root/libs/system/install` in den Ordner `crx-quickstart/install`.
+1. Extrahieren Sie das Paket in einen temporären Ordner und kopieren Sie den Inhalt von `jcr_root/libs/system/install` in den Ordner `crx-quickstart/install` .
 
 ### Bestimmen des korrekten Befehls zum Starten des Upgrades {#determining-the-correct-upgrade-start-command}
 
-Um das Upgrade durchzuführen, muss AEM mithilfe der JAR-Datei gestartet werden, um die Instanz zu öffnen. Für ein Upgrade auf 6.5 sehen Sie bitte auch andere Optionen für die Inhaltsumstrukturierung und -migration in [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md), die Sie mit dem Aktualisierungsbefehl auswählen können.
+Um das Upgrade durchzuführen, muss AEM mithilfe der JAR-Datei gestartet werden, um die Instanz zu öffnen. Informationen zur Aktualisierung auf 6.5 finden Sie auch unter den anderen Optionen zur Inhaltsumstrukturierung und -migration unter [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) , die Sie mit dem Aktualisierungsbefehl auswählen können.
 
 >[!IMPORTANT]
 >
@@ -189,7 +188,7 @@ Beachten Sie, dass beim Starten von AEM mit dem Start-Skript das Upgrade nicht g
    ps -ef | grep java
    ```
 
-1. Suchen Sie nach dem AEM-Prozess. Es sieht in etwa so aus:
+1. Suchen Sie nach dem AEM-Prozess. Sie sieht ungefähr so aus:
 
    ```shell
    /usr/bin/java -server -Xmx1024m -XX:MaxPermSize=256M -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.2.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties
