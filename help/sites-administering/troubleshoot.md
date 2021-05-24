@@ -10,16 +10,15 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6346cd93-1ca3-4510-9c31-a74c41017ddb
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '555'
-ht-degree: 78%
+ht-degree: 80%
 
 ---
 
-
-# Beheben von Fehlern in AEM {#troubleshooting-aem}
+# Beheben von Fehlern in AEM  {#troubleshooting-aem}
 
 Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei der Arbeit mit AEM stoßen können, und liefert entsprechende Lösungsvorschläge.
 
@@ -51,7 +50,7 @@ Die folgende Tabelle bietet einen Überblick über Probleme, die Administratoren
   </tr>
   <tr>
    <td><p>Systemadministrator</p> </td>
-   <td><p>Der AEM Begrüßungsbildschirm wird nach dem Klicken der Dublette auf AEM CM QuickStart nicht im Browser angezeigt</p> </td>
+   <td><p>Der AEM Begrüßungsbildschirm wird nach einem Doppelklick auf AEM CM QuickStart nicht im Browser angezeigt</p> </td>
   </tr>
   <tr>
    <td><p>Systemadministrator</p> <p>Admin-Benutzer</p> </td>
@@ -80,8 +79,8 @@ Eine Thread-Sicherungskopie ist eine Liste aller Java-Threads, die derzeit aktiv
 
 ### Verwenden des Sling Thread Dumper  {#using-sling-thread-dumper}
 
-1. Öffnen Sie die **AEM Webkonsole**. zum Beispiel bei `https://localhost:4502/system/console/`.
-1. Wählen Sie die Registerkarte **Threads** unter **Status**.
+1. Öffnen Sie die **AEM Web Console**. z. B. bei `https://localhost:4502/system/console/`.
+1. Wählen Sie die Registerkarte **Threads** unter **Status** aus.
 
 ![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
 
@@ -99,7 +98,7 @@ Eine Thread-Sicherungskopie ist eine Liste aller Java-Threads, die derzeit aktiv
 
 >[!NOTE]
 >
->Sie können die Thread-Dumps mithilfe der Ausgabeumleitung `>>` an eine Protokolldatei anhängen:
+>Sie können die Thread-Sicherheitskopien mithilfe der Ausgabeumleitung `>>` an eine Protokolldatei anhängen:
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
@@ -110,7 +109,7 @@ Weitere Informationen dazu finden Sie in der Dokumentation [Erstellen von Thread
 Wenn Funktionen für AEM WCM entwickelt werden, werden möglicherweise JCR-Sitzungen geöffnet (vergleichbar mit dem Öffnen einer Datenbankverbindung). Werden die geöffneten Sitzungen nie geschlossen, können folgende Probleme in Ihrem System auftreten:
 
 * Das System wird langsamer.
-* Sie können eine Menge CacheManager sehen: resizeAlle Einträge in der Protokolldatei; Wenn die folgende Zahl (size=&lt;x>) die Anzahl der Caches anzeigt, werden bei jeder Sitzung mehrere Caches geöffnet.
+* Sie können eine Menge CacheManager sehen: resizeAll -Einträge in der Protokolldatei; Wenn die folgende Zahl (size=&lt;x>) die Anzahl der Caches anzeigt, öffnet jede Sitzung mehrere Caches.
 * Gelegentlich reicht der Speicherplatz des Systems nicht aus (nach einigen Stunden, Tagen oder Wochen – je nach Schweregrad).
 
 Lesen Sie den Knowledgebase-Artikel [Analysieren von nicht beendeten Sitzungen](https://helpx.adobe.com/crx/kb/AnalyzeUnclosedSessions.html), um nicht beendete Sitzungen zu analysieren und festzustellen, welcher Code dazu führt, dass eine Sitzung nicht beendet wird.
@@ -119,12 +118,11 @@ Lesen Sie den Knowledgebase-Artikel [Analysieren von nicht beendeten Sitzungen](
 
 Der Status der OSGi-Bundles kann auch frühzeitig auf mögliche Probleme hinweisen.
 
-1. Öffnen Sie die **AEM Webkonsole**. zum Beispiel bei `https://localhost:4502/system/console/`.
-1. Wählen Sie **Pakete** unter **OSGI**.
+1. Öffnen Sie die **AEM Web Console**. z. B. bei `https://localhost:4502/system/console/`.
+1. Wählen Sie **Bundles** auf der Registerkarte **OSGI** aus.
 1. Überprüfen Sie Folgendes:
 
    * den Status der Bundles. Falls Status wie „Inaktiv“ oder „Nicht erfüllt“ angezeigt werden, versuchen Sie, das Bundle zu stoppen und neu zu starten. Wenn das Problem weiterhin besteht, müssen Sie dies mithilfe anderer Methoden weiter untersuchen.
    * ob Bundles mit fehlenden Abhängigkeiten vorliegen. Dies können Sie herausfinden, indem Sie auf den einzelnen Bundle-Namen klicken, bei dem es sich um einen Link handelt (im folgenden Beispiel sind keine Probleme aufgetreten):
 
 ![screen_shot_2012-02-13at44706pm](assets/screen_shot_2012-02-13at44706pm.png)
-
