@@ -9,22 +9,21 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
-translation-type: tm+mt
-source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2202'
 ht-degree: 75%
 
 ---
 
-
-# Manuelles Konfigurieren der Integration mit Adobe Target {#manually-configuring-the-integration-with-adobe-target}
+# Manuelles Konfigurieren der Integration mit Adobe Target  {#manually-configuring-the-integration-with-adobe-target}
 
 Sie können entweder die Konfigurationen für den Opt-in-Assistenten ändern, die Sie während der Nutzung des Assistenten vorgenommen haben, oder Sie können die Integration mit Adobe Target manuell durchführen, ohne den Assistenten zu nutzen.
 
 ## Ändern der Konfigurationen für den Opt-in-Assistenten {#modifying-the-opt-in-wizard-configurations}
 
-Der [Anmeldungsassistent](/help/sites-administering/opt-in.md), der [AEM mit Adobe Target](/help/sites-administering/target.md) integriert, erstellt automatisch eine Zielgruppe-Cloud-Konfiguration mit dem Namen Provisioned Zielgruppe Configuration. Außerdem erstellt der Assistent ein Target-Framework für die Cloud-Konfiguration mit dem Namen „Bereitgestelltes Target-Framework“. Sie können die Eigenschaften der Cloud-Konfiguration und des Frameworks bei Bedarf ändern.
+Der [Opt-in-Assistent](/help/sites-administering/opt-in.md), den [AEM in Adobe Target](/help/sites-administering/target.md) integriert, erstellt automatisch eine Target-Cloud-Konfiguration mit dem Namen &quot;Bereitgestellte Target-Konfiguration&quot;. Außerdem erstellt der Assistent ein Target-Framework für die Cloud-Konfiguration mit dem Namen „Bereitgestelltes Target-Framework“. Sie können die Eigenschaften der Cloud-Konfiguration und des Frameworks bei Bedarf ändern.
 
 Darüber hinaus können Sie Adobe Target auch als Quelle für die Berichterstellung für bestimmte Inhalte konfigurieren, indem Sie die „A4T-Analyse-Cloud-Konfiguration“ konfigurieren.
 
@@ -34,21 +33,21 @@ Um die Cloud-Konfiguration und das Framework zu finden, navigieren Sie zu **Clou
 
 Die folgenden Eigenschaftswerte werden in der Cloud-Konfiguration „Bereitgestellte Target-Konfiguration“ verwendet, die vom Opt-in-Assistenten erstellt wird:
 
-* **Client-Code:** Wie im Einwahlassistenten angegeben.
-* **E-Mail:** Wie im Einwahlassistenten angegeben.
-* **Kennwort:** Wie im Einwahlassistenten angegeben.
+* **Client-Code:** Wie im Opt-in-Assistenten eingegeben.
+* **E-Mail:** Wie im Opt-in-Assistenten eingegeben.
+* **Kennwort:** Wie im Opt-in-Assistenten eingegeben.
 * **API-Typ:** REST
 * **Segmente aus Adobe Target synchronisieren:** Ausgewählt.
 
 * **Client-Bibliothek:** mbox.js.
-* **Verwenden Sie DTM zur Bereitstellung der Client-Bibliothek:** Nicht ausgewählt. Wählen Sie diese Option, wenn Sie [DTM](/help/sites-administering/dtm.md) oder ein anderes Tag-Management-System verwenden, um die Datei &quot;mbox.js&quot;oder &quot;AT.js&quot;zu hosten. Adobe empfiehlt zum Bereitstellen der Bibliothek die Verwendung von DTM anstelle von AEM.
+* **Verwenden Sie DTM zur Bereitstellung der Client-Bibliothek:** Nicht ausgewählt. Wählen Sie diese Option aus, wenn Sie [DTM](/help/sites-administering/dtm.md) oder ein anderes Tag-Management-System verwenden, um die Datei mbox.js oder AT.js zu hosten. Adobe empfiehlt zum Bereitstellen der Bibliothek die Verwendung von DTM anstelle von AEM.
 
-* **Benutzerdefinierte mbox.js:** Keine angegeben, sodass die standardmäßige mbox.js-Datei verwendet wird. Geben Sie bei Bedarf eine benutzerdefinierte Version der Datei „mbox.js“ an. Sie wird nur angezeigt, wenn Sie „mbox.js“ ausgewählt haben.
-* **Benutzerdefinierte AT.js:** Keine angegeben, sodass die Standard-Datei AT.js verwendet wird. Geben Sie bei Bedarf eine benutzerdefinierte Version der Datei „AT.js“ an. Sie wird nur angezeigt, wenn Sie „AT.js“ ausgewählt haben.
+* **Benutzerdefinierte mbox.js:** Keine Angabe, sodass die standardmäßige mbox.js-Datei verwendet wird. Geben Sie bei Bedarf eine benutzerdefinierte Version der Datei „mbox.js“ an. Sie wird nur angezeigt, wenn Sie „mbox.js“ ausgewählt haben.
+* **Benutzerdefiniertes AT.js:** Keine Angabe, sodass die standardmäßige AT.js-Datei verwendet wird. Geben Sie bei Bedarf eine benutzerdefinierte Version der Datei „AT.js“ an. Sie wird nur angezeigt, wenn Sie „AT.js“ ausgewählt haben.
 
 >[!NOTE]
 >
->In AEM 6.3 können Sie die Zielgruppe Library-Datei [AT.JS](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-download.html) auswählen, eine neue Implementierungsbibliothek für Adobe Target, die sowohl für typische Webimplementierungen als auch für Einzelseitenanwendungen entwickelt wurde.
+>In AEM 6.3 können Sie die Target-Bibliotheksdatei [AT.JS](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-download.html) auswählen. Hierbei handelt es sich um eine neue Implementierungsbibliothek für Adobe Target, die sowohl für typische Webimplementierungen als auch für Einzelseitenanwendungen entwickelt wurde.
 >
 >„AT.js“ bietet im Vergleich zur Bibliothek „mbox.js“ viele Verbesserungen, z. B.:
 >
@@ -72,7 +71,7 @@ Sie können Adobe Target so konfigurieren, dass Adobe Analytics als Quelle für 
 
 Hierfür müssen Sie angeben, mit welcher A4T-Cloud-Konfiguration Ihre Adobe Target-Cloud-Konfiguration verbunden werden soll:
 
-1. Navigieren Sie zu **Cloud Services** über das **AEM-Logo** > **Tools** > **Bereitstellung** > **Cloud Services**.
+1. Navigieren Sie zu **Cloud Services** über das AEM **Logo** > **Tools** > **Bereitstellung** > **Cloud Services**.
 1. Klicken Sie im Abschnitt **Adobe Target** auf **Jetzt konfigurieren**.
 1. Stellen Sie erneut eine Verbindung mit Ihrer Adobe Target-Konfiguration her.
 1. Wählen Sie im Dropdown-Menü **A4T-Analyse-Cloud-Konfiguration** das Framework aus.
@@ -98,7 +97,7 @@ Hierfür müssen Sie angeben, mit welcher A4T-Cloud-Konfiguration Ihre Adobe Tar
 Sie können das Integrieren mit Adobe Target auch manuell durchführen, anstatt den Opt-in-Assistenten zu verwenden.
 
 >[!NOTE]
-Die Zielgruppe Library-Datei [AT.JS](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-download.html) ist eine neue Implementierungsbibliothek für Adobe Target, die sowohl für typische Webimplementierungen als auch für Einzelseitenanwendungen entwickelt wurde. Adobe empfiehlt, anstelle von „mbox.js“ die Datei „AT.js“ als Client-Bibliothek zu verwenden.
+Die Target-Bibliotheksdatei [AT.JS](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-download.html) ist eine neue Implementierungsbibliothek für Adobe Target, die sowohl für typische Webimplementierungen als auch für Einzelseitenanwendungen entwickelt wurde. Adobe empfiehlt, anstelle von „mbox.js“ die Datei „AT.js“ als Client-Bibliothek zu verwenden.
 „AT.js“ bietet im Vergleich zur Bibliothek „mbox.js“ viele Verbesserungen, z. B.:
 * Verbesserte Seitenladezeiten für Web-Implementierungen
 * Verbesserte Sicherheit
@@ -117,15 +116,15 @@ Sie können die Cloud-Konfiguration so konfigurieren, dass Segmente aus Adobe Ta
 
 Verwenden Sie das folgende Verfahren, um eine Target-Cloud-Konfiguration in AEM zu erstellen:
 
-1. Navigieren Sie zu **Cloud Services** über das **AEM-Logo** > **Tools** > **Bereitstellung** > **Cloud Services**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. Navigieren Sie zu **Cloud Services** über das AEM **Logo** > **Tools** > **Bereitstellung** > **Cloud Services**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
    Die Übersichtsseite **Adobe Marketing Cloud** wird geöffnet.
 
 1. Klicken Sie im Abschnitt **Adobe Target** auf **Jetzt konfigurieren**.
-1. Im Dialogfeld **Konfiguration erstellen**:
+1. Im Dialogfeld **Konfiguration erstellen** :
 
-   1. Geben Sie der Konfiguration **Title**.
-   1. Wählen Sie die Vorlage **Adobe Target Configuration**.
+   1. Geben Sie der Konfiguration **Titel**.
+   1. Wählen Sie die Vorlage **Adobe Target Configuration** aus.
    1. Klicken Sie auf **Erstellen**.
 
    Das Dialogfeld „Bearbeiten“ wird geöffnet.
@@ -148,10 +147,10 @@ Verwenden Sie das folgende Verfahren, um eine Target-Cloud-Konfiguration in AEM 
    * **API-Typ**: Entweder „REST“ oder „XML“.
    * **A4T-Analyse-Cloud-Konfiguration**: Wählen Sie die Analyse-Cloud-Konfiguration aus, die für Target-Aktivitätsziele und -metriken verwendet wird. Sie benötigen sie, wenn Sie Adobe Analytics als Quelle für die Berichterstellung für bestimmte Inhalte verwenden. Wenn Ihre Cloud-Konfiguration nicht angezeigt wird, finden Sie weitere Informationen unter [Konfigurieren der A4T-Analytics Cloud-Konfiguration](#configuring-a-t-analytics-cloud-configuration).
 
-   * **Verwenden Sie genaues Targeting:** Standardmäßig ist dieses Kontrollkästchen aktiviert. Bei Aktivierung dieser Option wird für die Cloud Service-Konfiguration gewartet, bis das Laden des Kontexts erfolgt ist, bevor der Inhalt geladen wird. Siehe Hinweis unten.
-   * **Segmente aus Adobe Target synchronisieren:** Wählen Sie diese Option, um Segmente herunterzuladen, die in der Zielgruppe definiert sind, um sie in AEM zu verwenden. Sie müssen diese Option auswählen, wenn die Eigenschaft „API-Typ“ auf „REST“ festgelegt ist, da Inline-Segmente nicht unterstützt werden und Sie immer Segmente aus Target verwenden müssen. (Beachten Sie, dass der AEM-Begriff „Segment“ hier dem Target-Begriff „Zielgruppe“ entspricht.)
-   * **Client-Bibliothek:** Wählen Sie aus, ob die Client-Bibliothek &quot;mbox.js&quot;oder &quot;AT.js&quot;verwendet werden soll.
-   * **Verwenden Sie DTM zur Bereitstellung der Client-Bibliothek** . Wählen Sie diese Option, um entweder AT.js oder mbox.js aus DTM oder einem anderen Tag-Management-System zu verwenden. Sie müssen [die DTM-Integration](/help/sites-administering/dtm.md) konfigurieren, um diese Option verwenden zu können. Adobe empfiehlt zum Bereitstellen der Bibliothek die Verwendung von DTM anstelle von AEM.
+   * **Präzise Zielgruppenbestimmung verwenden:** Standardmäßig ist dieses Kontrollkästchen aktiviert. Bei Aktivierung dieser Option wird für die Cloud Service-Konfiguration gewartet, bis das Laden des Kontexts erfolgt ist, bevor der Inhalt geladen wird. Siehe Hinweis unten.
+   * **Segmente aus Adobe Target synchronisieren:** Wählen Sie diese Option, um in Target definierte Segmente herunterzuladen und in AEM zu verwenden. Sie müssen diese Option auswählen, wenn die Eigenschaft „API-Typ“ auf „REST“ festgelegt ist, da Inline-Segmente nicht unterstützt werden und Sie immer Segmente aus Target verwenden müssen. (Beachten Sie, dass der AEM-Begriff „Segment“ hier dem Target-Begriff „Zielgruppe“ entspricht.)
+   * **Client-Bibliothek:** Wählen Sie aus, ob die mbox.js- oder AT.js-Client-Bibliothek verwendet werden soll.
+   * **DTM zur Bereitstellung der Client-Bibliothek**  verwenden - Wählen Sie diese Option, um entweder AT.js oder mbox.js aus DTM oder einem anderen Tag-Management-System zu verwenden. Sie müssen [die DTM-Integration](/help/sites-administering/dtm.md) konfigurieren, um diese Option verwenden zu können. Adobe empfiehlt zum Bereitstellen der Bibliothek die Verwendung von DTM anstelle von AEM.
    * **Benutzerdefinierte mbox.js**: Lassen Sie dieses Feld leer, wenn Sie das Feld „DTM“ aktiviert haben oder die standardmäßige Datei „mbox.js“ verwenden möchten. Alternativ hierzu können Sie Ihre benutzerdefinierte Datei „mbox.js“ hochladen. Sie wird nur angezeigt, wenn Sie „mbox.js“ ausgewählt haben.
    * **Benutzerdefiniertes AT.js**: Lassen Sie dieses Feld leer, wenn Sie das Feld „DTM“ aktiviert haben oder die standardmäßige Datei „AT.js“ verwenden möchten. Alternativ hierzu können Sie Ihre benutzerdefinierte Datei „AT.js“ hochladen. Sie wird nur angezeigt, wenn Sie „AT.js“ ausgewählt haben.
 
@@ -171,12 +170,12 @@ Nachdem Sie die Target-Cloud-Konfiguration konfiguriert haben, können Sie ein T
 
 Sie können für eine Target-Konfiguration mehrere Frameworks erstellen. Mehrere Frameworks sind nützlich, wenn Sie für unterschiedliche Abschnitte Ihrer Website jeweils einen anderen Parametersatz an Target senden müssen. Erstellen Sie ein Framework für jeden Parametersatz, der gesendet werden muss. Ordnen Sie die einzelnen Abschnitte Ihrer Website jeweils dem passenden Framework zu. Beachten Sie, dass für eine Webseite nur jeweils ein Framework verwendet werden kann.
 
-1. Klicken Sie auf der Konfigurationsseite Ihrer Zielgruppe auf das Pluszeichen **+** neben Verfügbare Frameworks.
-1. Geben Sie im Dialogfeld &quot;Framework erstellen&quot;einen **Titel**, wählen Sie das **Adobe Target Framework** und klicken Sie auf **Erstellen**.
+1. Klicken Sie auf Ihrer Target-Konfigurationsseite auf das Pluszeichen **+** neben Verfügbare Frameworks.
+1. Geben Sie im Dialogfeld &quot;Framework erstellen&quot;einen **Titel** an, wählen Sie das **Adobe Target Framework** aus und klicken Sie auf **Erstellen**.
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
-   Die Framework-Seite wird geöffnet. Sidekick stellt Komponenten bereit, die Informationen aus dem [Client-Kontext](/help/sites-administering/client-context.md) oder [ContextHub](/help/sites-developing/ch-configuring.md) darstellen, den Sie zuordnen können.
+   Die Framework-Seite wird geöffnet. Der Sidekick stellt Komponenten bereit, die Informationen aus dem [ClientContext](/help/sites-administering/client-context.md) oder [ContextHub](/help/sites-developing/ch-configuring.md) darstellen, den Sie zuordnen können.
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
@@ -185,7 +184,7 @@ Sie können für eine Target-Konfiguration mehrere Frameworks erstellen. Mehrere
    >[!NOTE]
    Bei der Zuordnung werden Parameter über einfache Zeichenfolgen an mbox übergeben. Es ist nicht möglich, Arrays aus ContextHub zuzuordnen.
 
-   Wenn Sie beispielsweise **Profil Data** für Ihre Sitebesucher verwenden möchten, um die Kampagne Ihrer Zielgruppe zu steuern, ziehen Sie die Komponente **Profil Data** auf die Seite. Es werden die Profildatenvariablen angezeigt, die für die Zuordnung zu Target-Parametern verfügbar sind.
+   Wenn Sie beispielsweise **Profildaten** für Ihre Site-Besucher verwenden möchten, um Ihre Target-Kampagne zu steuern, ziehen Sie die Komponente **Profildaten** auf die Seite. Es werden die Profildatenvariablen angezeigt, die für die Zuordnung zu Target-Parametern verfügbar sind.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
@@ -198,9 +197,9 @@ Sie können für eine Target-Konfiguration mehrere Frameworks erstellen. Mehrere
 
 Ihr Framework wird erstellt. Verwenden Sie die Sidekick-Option **Framework aktivieren**, um das Framework auf der Veröffentlichungsinstanz zu replizieren.
 
-### Zuordnen von Aktivitäten zur Target-Cloud-Konfiguration  {#associating-activities-with-the-target-cloud-configuration}
+### Zuordnen von Aktivitäten zur Target-Cloud-Konfiguration   {#associating-activities-with-the-target-cloud-configuration}
 
-Verknüpfen Sie Ihre [AEM Aktivitäten](/help/sites-authoring/activitylib.md) mit Ihrer Zielgruppe-Cloud-Konfiguration, damit Sie die Aktivitäten in [Adobe Target](https://docs.adobe.com/content/help/en/target/using/experiences/offers/manage-content.html) spiegeln können.
+Verknüpfen Sie Ihre [AEM Aktivitäten](/help/sites-authoring/activitylib.md) mit Ihrer Target-Cloud-Konfiguration, damit Sie die Aktivitäten in [Adobe Target](https://docs.adobe.com/content/help/en/target/using/experiences/offers/manage-content.html) spiegeln können.
 
 >[!NOTE]
 Welche Aktivitätstypen zur Verfügung stehen, hängt von folgenden Faktoren ab:
@@ -217,7 +216,7 @@ Nachdem Sie in AEM ein Target-Framework erstellt haben, können Sie dem Framewor
 Wenn Sie dem Framework eine Seite zuordnen, erben die untergeordneten Seiten die Zuordnung.
 
 1. Navigieren Sie in der Konsole **Sites** zu der Site, die Sie konfigurieren möchten.
-1. Wählen Sie unter [Schnellaktionen](/help/sites-authoring/basic-handling.md#quick-actions) oder [Auswahlmodus](/help/sites-authoring/basic-handling.md) **Ansichten-Eigenschaften.**
+1. Wählen Sie entweder [Schnellaktionen](/help/sites-authoring/basic-handling.md#quick-actions) oder [Auswahlmodus](/help/sites-authoring/basic-handling.md) **Eigenschaften anzeigen** aus.
 1. Wählen Sie die Registerkarte **Cloud-Services** aus.
 1. Tippen/klicken Sie auf **Bearbeiten**.
 1. Klicken oder tippen Sie unter **Cloud Service-Konfigurationen** auf **Konfiguration hinzufügen** und wählen Sie **Adobe Target** aus.
@@ -243,4 +242,3 @@ Führen Sie die folgenden Aufgaben aus, um Probleme zu behandeln, die bei der Ve
 * Vergewissern Sie sich, dass die AEM-Instanz eine Verbindung mit dem Target-Server herstellen kann. Achten Sie beispielsweise darauf, dass Firewallregeln nicht zu einer Blockierung von ausgehenden AEM-Verbindungen führen oder dass AEM für die Verwendung erforderlicher Proxys konfiguriert ist.
 * Suchen Sie im AEM-Fehlerprotokoll nach hilfreichen Meldungen. Die Datei „error.log“ ist im Verzeichnis **crx-quickstart/logs** enthalten, in dem AEM installiert ist.
 * Beim Bearbeiten der Aktivität in Adobe Target zeigt die URL auf „localhost“. Umgehen Sie dies, indem Sie den AEM-Externalizer auf die richtige URL festlegen.
-
