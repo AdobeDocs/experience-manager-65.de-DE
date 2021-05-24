@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: f5025f64-d3ce-43e8-9666-5c7c162536c7
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: e3488c9d-035f-4165-ad32-21103ec7e581
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 85%
 
 ---
-
 
 # Strukturvorlage{#scaffolding}
 
@@ -26,5 +25,4 @@ Eine Strukturvorlage dient zur Erstellung eines Formulars (einer Struktur), dess
 
 >[!NOTE]
 >
->Obwohl ein Gerüst [Modus](/help/sites-authoring/author-environment-tools.md#page-modes) verfügbar ist, erfolgt die Pflege und Erstellung von Gerüsten sowie das Erstellen neuer Seiten aus Gerüsten in der klassischen Benutzeroberfläche. Weitere Informationen finden Sie unter [Strukturvorlage](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) in der Dokumentation für die Bearbeitung in der klassischen Benutzeroberfläche.
-
+>Obwohl eine Strukturvorlage [mode](/help/sites-authoring/author-environment-tools.md#page-modes) verfügbar ist, erfolgt die Pflege und Erstellung von Gerüsten sowie die Erstellung neuer Seiten aus Gerüsten in der klassischen Benutzeroberfläche. Weitere Informationen finden Sie unter [Strukturvorlage](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) in der Dokumentation für die Bearbeitung in der klassischen Benutzeroberfläche.
