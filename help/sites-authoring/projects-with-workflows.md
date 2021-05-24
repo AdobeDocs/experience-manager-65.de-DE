@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 discoiquuid: 9d2bf30c-5190-4924-82cd-bcdfde24eb39
-translation-type: tm+mt
-source-git-commit: 0033dfac2540f56b3903c19f6ca19677af050db3
+exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 100%
 
 ---
-
 
 # Arbeiten mit Projekt-Workflows{#working-with-project-workflows}
 
@@ -45,7 +44,7 @@ Je nachdem, welche Projektvorlage Sie auswählen, sind bestimmte Workflows verf�
 
 >[!NOTE]
 >
->&amp;ast; Diese Workflows werden nicht auf der Kachel **Workflow** in Projekten gestartet. Weitere Informationen finden Sie unter [Erstellen von Sprachkopien für Assets](/help/sites-administering/tc-manage.md). 
+>&amp;ast; Diese Workflows werden nicht auf der Kachel **Workflow** in Projekten gestartet. Weitere Informationen finden Sie unter [Erstellen von Sprachkopien für Assets](/help/sites-administering/tc-manage.md).
 
 Das Starten und Abschließen eines Workflows ist unabhängig vom gewählten Workflow immer gleich. Nur die Schritte dazwischen ändern sich.
 
@@ -53,13 +52,13 @@ Sie starten einen Workflow direkt in Projekten (mit Ausnahme von „DAM-Sprachko
 
 Weitere Informationen zum Arbeiten mit Workflows in AEM finden Sie unter:
 
-* [Teilnehmen an Workflows](/help/sites-authoring/workflows-participating.md) 
-* [Anwenden von Workflows auf Seiten](/help/sites-authoring/workflows-applying.md) 
+* [Teilnehmen an Workflows](/help/sites-authoring/workflows-participating.md)
+* [Anwenden von Workflows auf Seiten](/help/sites-authoring/workflows-applying.md)
 * [Konfigurieren von Workflows](/help/sites-administering/workflows.md)
 
 Dieser Abschnitt beschreibt die Workflows, die für Projekte verfügbar sind.
 
-## Workflow „Kopie anfordern“   {#request-copy-workflow}
+## Workflow „Kopie anfordern“  {#request-copy-workflow}
 
 Mit diesem Workflow können Sie ein Manuskript von einem Benutzer anfordern und es dann genehmigen. So starten Sie den Workflow „Kopie anfordern“:
 
@@ -68,7 +67,7 @@ Mit diesem Workflow können Sie ein Manuskript von einem Benutzer anfordern und 
 
    ![chlimage_1-321](assets/chlimage_1-321.png)
 
-1. Klicken Sie auf **Erstellen**. Der Workflow startet. Die Aufgabe wird in der Kachel **Aufgabe** angezeigt.
+1. Klicken Sie auf **Erstellen**. Der Workflow startet. Die Aufgabe wird in der Kachel **Aufgaben** angezeigt.
 
    ![chlimage_1-322](assets/chlimage_1-322.png)
 
@@ -85,7 +84,7 @@ Im Workflow für Projektbestätigung weisen Sie Inhalte einem Benutzer zu, über
 
    ![chlimage_1-323](assets/chlimage_1-323.png)
 
-1. Klicken Sie auf **Erstellen**. Der Workflow startet. Die Aufgabe wird in der Kachel **Aufgabe** angezeigt.
+1. Klicken Sie auf **Erstellen**. Der Workflow startet. Die Aufgabe wird in der Kachel **Aufgaben** angezeigt.
 
    ![chlimage_1-324](assets/chlimage_1-324.png)
 
@@ -120,7 +119,7 @@ Mit diesem Workflow können Sie eine E-Mail anfordern. Es ist der derselbe Workf
 
    ![chlimage_1-327](assets/chlimage_1-327.png)
 
-1. Klicken Sie auf **Erstellen**. Der Workflow startet. Die Aufgabe wird in der Kachel **Aufgabe** angezeigt.
+1. Klicken Sie auf **Erstellen**. Der Workflow startet. Die Aufgabe wird in der Kachel **Aufgaben** angezeigt.
 
    ![chlimage_1-328](assets/chlimage_1-328.png)
 
