@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Konfiguration
+exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1457'
 ht-degree: 93%
 
 ---
-
 
 # Replizieren mit MSSL{#replicating-using-mutual-ssl}
 
@@ -43,10 +42,10 @@ Sie müssen festlegen, mit welchem Benutzerkonto die Replikation ausgeführt wir
 Sie benötigen einen privaten Schlüssel und ein öffentliches Zertifikat für die Autoren- und Veröffentlichungsinstanz:
 
 * Private Schlüssel müssen im PKCS#12- oder JKS-Format vorliegen.
-* Zertifikate müssen im Format &quot;pkcs#12&quot;oder &quot;JKS&quot;enthalten sein. Zertifikate im CER-Format können ebenfalls zu Granite Truststore hinzugefügt werden.
+* Zertifikate müssen im PKCS#12- oder JKS-Format enthalten sein. Zertifikate im CER-Format können ebenfalls zu Granite Truststore hinzugefügt werden.
 * Zertifikate können von einer anerkannten Zertifizierungsstelle (Certification Authority, CA) selbst signiert oder signiert werden.
 
-### JKS-Format {#jks-format}
+### JKS-Format  {#jks-format}
 
 Erstellen Sie einen privaten Schlüssel und ein Zertifikat im JKS-Format. Der private Schlüssel wird in einer KeyStore-Datei, das Zertifikat in einer TrustStore-Datei gespeichert. Verwenden Sie [Java `keytool`](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html), um beide zu erstellen.
 
@@ -216,11 +215,11 @@ Konfigurieren Sie die Eigenschaften des Apache Felix Jetty-basierten HTTP-Dienst
 
 In der folgenden Tabelle sind die OSGi-Eigenschaften aufgeführt, die Sie konfigurieren müssen, wenn Sie die Web-Konsole verwenden.
 
-| Eigenschaftsname in der Webkonsole | OSGi-Eigenschaftsname | Wert |
+| Eigenschaftsname in der Web-Konsole | OSGi-Eigenschaftsname | Wert |
 |---|---|---|
 | HTTPS aktivieren | org.apache.felix.https.enable | true |
-| HTTPS zur Verwendung von Granite KeyStore aktivieren | org.apache.felix.https.use.granite.keystore | true |
-| HTTPS-Port | org.osgi.service.http.port.secure | 8443 (oder ein anderer gewünschter Anschluss) |
+| Aktivieren Sie HTTPS zur Verwendung von Granite KeyStore. | org.apache.felix.https.use.granite.keystore | true |
+| HTTPS-Port | org.osgi.service.http.port.secure | 8443 (oder anderer gewünschter Anschluss) |
 | Client-Zertifikat | org.apache.felix.https.clientcertificate | &quot;Client-Zertifikat gewünscht&quot; |
 
 ## Konfigurieren des Replikationsagenten auf der Autoreninstanz {#configure-the-replication-agent-on-author}
@@ -295,4 +294,3 @@ Wenn Sie den Replikationsagenten konfiguriert haben, testen Sie die Verbindung, 
 29.08.2014 14:02:46 - Replication (TEST) of /content successful.
 Replication test succeeded
 ```
-
