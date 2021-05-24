@@ -10,14 +10,13 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 69ca5acb-83f9-4e1b-9639-ec305779c931
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 96%
 
 ---
-
 
 # E-Mail-Marketing{#e-mail-marketing}
 
@@ -47,7 +46,7 @@ In diesem Dokument werden die Grundlagen der Newslettererstellung in AEM erläut
 >
 >Sollten Sie E-Mail-Dienste aktualisieren, einen Testlauf durchführen oder einen Newsletter verschicken wollen, schlagen diese Aktionen fehl, wenn der Newsletter nicht zunächst in der Veröffentlichungsinstanz veröffentlicht wurde oder wenn diese Instanz nicht verfügbar ist. Stellen Sie sicher, dass Sie Ihren Newsletter veröffentlichen und die Veröffentlichungsinstanz ordnungsgemäß funktioniert.
 
-## Erstellen eines Newsletter-Erlebnisses {#creating-a-newsletter-experience}
+## Erstellen eines Newsletter-Erlebnisses  {#creating-a-newsletter-experience}
 
 >[!NOTE]
 >
@@ -133,7 +132,7 @@ So personalisieren Sie einen Newsletter und simulieren das Erscheinungsbild:
 
 >[!NOTE]
 >
->Prüfen Sie vor dem Versand der Newsletter die OSGi-Konfiguration für Day CQ Link Externalizer unter `https://localhost:4502/system/console/configMgr`.
+>Prüfen Sie vor dem Versand von Newslettern die OSGi-Konfiguration für Day CQ Link Externalizer unter `https://localhost:4502/system/console/configMgr`.
 >
 >Der Wert des Parameters ist standardmäßig `localhost:4502` und der Vorgang kann nicht abgeschlossen werden, wenn der Port für die aktive Instanz geändert wird.
 
@@ -221,7 +220,7 @@ Sie können einen Newsletter entweder aus dem Newsletter selbst oder aus der Lis
 
 >[!NOTE]
 >
->Prüfen Sie vor dem Versand der Newsletter die OSGi-Konfiguration für Day CQ Link Externalizer unter `https://localhost:4502/system/console/configMgr`.
+>Prüfen Sie vor dem Versand von Newslettern die OSGi-Konfiguration für Day CQ Link Externalizer unter `https://localhost:4502/system/console/configMgr`.
 >
 >Der Wert des Parameters ist standardmäßig `localhost:4502` und der Vorgang kann nicht abgeschlossen werden, wenn der Port für die aktive Instanz geändert wird.
 
@@ -250,7 +249,7 @@ So versenden Sie einen Newsletter aus einer Kampagne:
 
 1. Es wird eine Bestätigung angezeigt, dass die Einrichtung abgeschlossen wurde. Klicken Sie auf **Senden**, um den Newsletter dann tatsächlich zu versenden.
 
-   ![mcm_newslettersendverify](assets/mcm_newslettersendconfirm.png)
+   ![mcm_newslettersendconfirm](assets/mcm_newslettersendconfirm.png)
 
    >[!NOTE]
    >
@@ -278,7 +277,7 @@ So versenden Sie einen Newsletter aus einer Liste:
 
 1. Es wird eine Bestätigung angezeigt, dass die Einrichtung abgeschlossen wurde. Klicken Sie auf **Senden**, um den ausgewählten Newsletter an die angegebene Liste der Leads zu senden.
 
-   ![mcm_newslettersenddialog_firm](assets/mcm_newslettersenddialog_confirmation.png)
+   ![mcm_newslettersenddialog_validation](assets/mcm_newslettersenddialog_confirmation.png)
 
    Ihr Newsletter wird an die angegebenen Empfänger gesendet.
 
