@@ -10,16 +10,15 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
-translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '3064'
 ht-degree: 94%
 
 ---
 
-
-# Bearbeiten des Seiteninhalts{#editing-page-content}
+# Bearbeiten des Seiteninhalts {#editing-page-content}
 
 Sobald Ihre Seite erstellt ist (neu oder im Rahmen eines Launch oder einer Live Copy), können Sie den Inhalt bearbeiten und die erforderlichen Aktualisierungen vornehmen.
 
@@ -43,7 +42,7 @@ Der Inhalt wird mit mithilfe von (zum Inhaltstyp passenden) [Komponenten](/help/
 
 Die Seite-Symbolleiste bietet Zugriff auf die entsprechenden Funktionen, die von der Seitenkonfiguration abhängig sind.
 
-![screen_shot_2018-03-22at11338](assets/screen_shot_2018-03-22at111338.png)
+![screen_shot_2018-03-22at111338](assets/screen_shot_2018-03-22at111338.png)
 
 Die Symbolleiste bietet Zugriff auf eine Vielzahl von Optionen. Je nachdem, in welchem Kontext Sie gerade arbeiten und welche Konfiguration Sie aktuell verwenden, stehen einige Optionen u. U. nicht zur Verfügung.
 
@@ -69,13 +68,13 @@ Die Symbolleiste bietet Zugriff auf eine Vielzahl von Optionen. Je nachdem, in w
 
    Öffnet den [ContextHub](/help/sites-authoring/ch-previewing.md). Dieser ist nur im Vorschaumodus verfügbar.
 
-   ![screen_shot_2018-03-22at11543](assets/screen_shot_2018-03-22at111543.png)
+   ![screen_shot_2018-03-22at111543](assets/screen_shot_2018-03-22at111543.png)
 
 * **Seitentitel**
 
    Dient nur zu Informationszwecken.
 
-   ![screen_shot_2018-03-22at11554](assets/screen_shot_2018-03-22at111554.png)
+   ![screen_shot_2018-03-22at111554](assets/screen_shot_2018-03-22at111554.png)
 
 * **Modusauswahl**
 
@@ -99,7 +98,7 @@ Die Symbolleiste bietet Zugriff auf eine Vielzahl von Optionen. Je nachdem, in w
 
 Wird eine Seite bearbeitet, die einem oder mehreren [Workflows](/help/sites-authoring/workflows.md) unterliegt, wird oben im Bildschirm eine Benachrichtigungsleiste mit einem entsprechenden Hinweis angezeigt.
 
-![screen_shot_2018-03-22at11739](assets/screen_shot_2018-03-22at111739.png)
+![screen_shot_2018-03-22at111739](assets/screen_shot_2018-03-22at111739.png)
 
 >[!NOTE]
 >
@@ -107,9 +106,9 @@ Wird eine Seite bearbeitet, die einem oder mehreren [Workflows](/help/sites-auth
 
 In der Benachrichtigung ist der Workflow aufgeführt, dem die Seite zugeordnet ist. Wenn der Benutzer am aktuellen Workflow-Schritt beteiligt ist, sind zusätzlich auch Optionen verfügbar, die sich [auf den Workflow-Status auswirken](/help/sites-authoring/workflows-participating.md) und die weitere Informationen zum Workflow liefern, darunter:
 
-* **Complete**  - Öffnet den  **Dialog** zum Abschluss der Arbeit
+* **Abschließen**  - Öffnet das Dialogfeld  **Abschließen des** Arbeitsablaufs
 
-* **Delegate**  - Öffnet den  **Dialog** zum Abschluss
+* **Delegieren**  - Öffnet das  **Dialogfeld &quot;** Arbeitsablauf abschließen&quot;
 
 * **Details anzeigen**: Öffnet das Fenster **Details** des entsprechenden Workflows.
 
@@ -125,7 +124,7 @@ Der Komponenten-Platzhalter zeigt an, wo eine Komponente platziert wird, wenn Si
 
 * Wenn Sie eine neue Komponente zur Seite hinzufügen (die Sie aus dem Komponenten-Browser ziehen):
 
-   ![screen_shot_2018-03-22at11928](assets/screen_shot_2018-03-22at111928.png)
+   ![screen_shot_2018-03-22at111928](assets/screen_shot_2018-03-22at111928.png)
 
 * Wenn Sie eine vorhandene Komponente verschieben:
 
@@ -312,9 +311,9 @@ Für das Hinzufügen und/oder Bearbeiten von Inhalten in Komponenten sind zwei V
 * Öffnen Sie das Dialogfeld [Komponente](#component-edit-dialog) für die Bearbeitung.
 * [Ziehen Sie ein Asset](#draganddropintocomponent) aus dem Asset-Browser, um Inhalt direkt hinzuzufügen.
 
-### Dialogfeld „Komponente bearbeiten“   {#component-edit-dialog}
+### Dialogfeld „Komponente bearbeiten“  {#component-edit-dialog}
 
-Sie können eine Komponente öffnen, um den Inhalt zu bearbeiten, indem Sie das Symbol [„Bearbeiten“ (Stiftsymbol) der Komponenten-Symbolleiste](#edit-configure-copy-cut-delete-paste) verwenden.
+Sie können eine Komponente öffnen, um den Inhalt zu bearbeiten, indem Sie das Symbol [„Bearbeiten“ (Stiftsymbol) in der Komponenten-Symbolleiste](#edit-configure-copy-cut-delete-paste) verwenden.
 
 Welche Bearbeitungsoptionen verfügbar sind, hängt von der Komponente ab (und für einige Komponenten sind [alle Aktionen nur im Vollbildmodus verfügbar)](#edit-content-full-screen-mode). Beispiel:
 
@@ -350,7 +349,7 @@ Für bestimmte Komponententypen können Sie Assets aus dem Asset-Browser direkt 
 | **Asset-Typ** | **Komponententyp** |
 |---|---|
 | Bild | Bild |
-| Dokument | Herunterladen |
+| Dokument | Download |
 | Produkt | Produkt |
 | Video | Flash |
 | Inhaltsfragment | Inhaltsfragmente |
@@ -412,7 +411,7 @@ Wenn Sie eine Komponente anpassen möchten, müssen Sie nicht ständig zwischen 
 
 >[!NOTE]
 >
->Die Layout-Aktion ist immer auf die jeweils ausgewählte Komponente beschränkt. Wenn Sie beispielsweise das Layout einer Komponente bearbeiten und dann auf eine andere Komponente klicken, wird die Standard-Bearbeitungssymbolleiste (nicht die Layout-Symbolleiste) für die neu ausgewählte Komponente und die Größenänderungsgriffe sowie die Emulator-Symbolleiste ausgeblendet.
+>Die Layout-Aktion ist immer auf die jeweils ausgewählte Komponente beschränkt. Wenn Sie beispielsweise das Layout einer Komponente bearbeiten und dann auf eine andere Komponente klicken, wird die standardmäßige Bearbeitungssymbolleiste (nicht die Layout-Symbolleiste) für die neu ausgewählte Komponente angezeigt. Die Größenänderungs-Handles sowie die Emulator-Symbolleiste werden nicht mehr angezeigt.
 >
 >Um das Layout für die gesamte Seite, d. h. über mehrere Komponenten hinweg, zu bearbeiten, wechseln Sie in den [Layout-Modus](/help/sites-authoring/responsive-layout.md).
 
@@ -454,7 +453,7 @@ Sie können die Vererbung deaktivieren (und dann wieder aktivieren). Abhängig v
 
 Wenn die Seite auf einer [bearbeitbaren Vorlage](/help/sites-authoring/templates.md#editable-and-static-templates) basiert, können Sie schnell und einfach zum [Vorlagen-Editor](/help/sites-authoring/templates.md#editing-templates-template-authors) wechseln, indem Sie im Menü [Seiteninformationen](/help/sites-authoring/author-environment-tools.md#page-information) die Option **Vorlage bearbeiten** auswählen.
 
-Wenn die Seite auf einer [statischen Vorlage](/help/sites-authoring/templates.md#editable-and-static-templates) basiert, können Sie mithilfe der [Seitenmodusauswahl](/help/sites-authoring/author-environment-tools.md#page-modes) auf der Symbolleiste zum [Designmodus wechseln, um Komponenten zur Verwendung auf der Seite zu aktivieren/deaktivieren.](/help/sites-authoring/default-components-designmode.md)
+Wenn die Seite auf einer [statischen Vorlage](/help/sites-authoring/templates.md#editable-and-static-templates) basiert, können Sie mithilfe der [Seitenmodusauswahl](/help/sites-authoring/author-environment-tools.md#page-modes) in der Symbolleiste zum [Designmodus](/help/sites-authoring/default-components-designmode.md) wechseln, um Komponenten für die Verwendung auf der Seite zu aktivieren/deaktivieren.
 
 Durch Auswählen der Seite in der [Spaltenansicht](/help/sites-authoring/basic-handling.md#column-view) oder [Listenansicht](/help/sites-authoring/basic-handling.md#list-view) können Sie schnell und einfach feststellen, auf welcher Vorlage die Seite basiert.
 
@@ -473,7 +472,7 @@ Beispiel:
 
 [Anmerkungen](/help/sites-authoring/annotations.md) bieten Reviewern und anderen Autoren die Möglichkeit, Feedback zu Ihrem Inhalt zu erteilen. Dies wird häufig zu Korrektur- oder Überprüfungszwecken verwendet.
 
-## Anzeigen einer Seitenvorschau   {#previewing-pages}
+## Anzeigen einer Seitenvorschau  {#previewing-pages}
 
 Für die Anzeige einer Seitenvorschau stehen zwei Optionen zur Verfügung:
 
@@ -563,7 +562,7 @@ Mit den folgenden Symbolen können Sie eine Aktion rückgängig machen oder wied
 >
 >Der [Tastaturbefehl](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` ist auch verfügbar, um Seitenbearbeitungsaktionen rückgängig zu machen.
 >
->Der Tastaturbefehl `Ctrl-Y` ist auch verfügbar, um Seitenbearbeitungsaktionen erneut durchzuführen.
+>Der Tastaturbefehl `Ctrl-Y` ist auch verfügbar, um Seitenbearbeitungsaktionen zu wiederholen.
 
 >[!NOTE]
 >
@@ -608,4 +607,3 @@ Für Formularfelder, die durch Formular-Komponenten erzeugt werden, dürfen beim
 >[!NOTE]
 >
 >Änderungen an Dateien und Bildern können für einen Verlauf von mindestens zehn Stunden rückgängig gemacht werden. Bei länger zurückliegenden Änderungen ist dies unter Umständen nicht mehr möglich. Ihr Administrator kann die Standarddauer von zehn Stunden ändern.
-
