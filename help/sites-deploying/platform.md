@@ -10,14 +10,13 @@ topic-tags: platform
 content-type: reference
 discoiquuid: fccf9a0f-ebab-45ab-8460-84c86b3c4192
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/introduction-to-oak
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 8ee5f4ff-648d-45ea-a51e-894cd4385e62
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 94%
 
 ---
-
 
 # Einführung in die AEM-Plattform{#introduction-to-the-aem-platform}
 
@@ -25,7 +24,7 @@ Die AEM-Plattform in AEM 6 basiert auf Apache Jackrabbit Oak.
 
 Apache Jackrabbit Oak implementiert ein skalierbares und leistungsstarkes, hierarchisches Inhalts-Repository, das als Grundlage für moderne, erstklassige Websites und andere anspruchsvolle Inhaltsanwendungen dienen soll.
 
-Es ist der Nachfolger von Jackrabbit 2 und wird von AEM 6 als Standard-Backend für sein Inhalts-Repository, CRX, verwendet.
+Es ist die Nachfolgerin von Jackrabbit 2 und wird von AEM 6 als Standard-Backend für sein Inhalts-Repository CRX verwendet.
 
 ## Designrichtlinien und -ziele {#design-principles-and-goals}
 
@@ -48,7 +47,7 @@ Die Speicherschicht erfüllt folgende Zwecke:
 * Austauschfähigkeit des Speichers
 * Bereitstellung eines Clustering-Mechanismus
 
-### Oak-Kern {#oak-core}
+### Oak-Kern  {#oak-core}
 
 Der Oak-Kern fügt mehrere Ebenen zur Speicherschicht hinzu:
 
@@ -69,7 +68,7 @@ Darüber hinaus sind jetzt nicht-Java-basierte Implementierungen möglich, die T
 
 Die Oak-Speicherschicht stellt eine Abstraktionsschicht für die tatsächliche Speicherung der Inhalte bereit.
 
-Zurzeit stehen in AEM6 zwei Implementierungen der Datenspeicherung zur Verfügung: **Tar-Datenspeicherung** und **MongoDB-Datenspeicherung**.
+Zurzeit sind in AEM6 zwei Speicherimplementierungen verfügbar: **Tar Storage** und **MongoDB Storage**.
 
 ### TAR-Speicher {#tar-storage}
 
@@ -121,7 +120,7 @@ Eine typische AEM-Clusterkonfiguration mit MongoDB-Speicher:
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
-## Was ist anders als Jackrabbit 2? {#what-is-different-from-jackrabbit}
+## Was unterscheidet sich von Jackrabbit 2? {#what-is-different-from-jackrabbit}
 
 Da Oak für Abwärtskompatibilität mit dem JCR 1.0-Standard entwickelt wurde, gibt es auf Benutzerebene so gut wie keine Änderungen. Beim Konfigurieren einer Oak-basierten AEM-Installation muss jedoch eine Reihe wichtiger Änderungen berücksichtigt werden:
 
@@ -137,4 +136,3 @@ Weitere Informationen zur AEM-Plattform finden Sie zudem in den nachfolgenden Ar
 * [Oak-Abfragen und Indizierung](/help/sites-deploying/queries-and-indexing.md)
 * [Speicherelemente in AEM 6](/help/sites-deploying/storage-elements-in-aem-6.md)
 * [AEM mit MongoDB](/help/sites-deploying/aem-with-mongodb.md)
-
