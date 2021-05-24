@@ -10,14 +10,13 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
+exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 99%
 
 ---
-
 
 # Die Tools-Konsolen{#tools-consoles}
 
@@ -390,7 +389,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
    <td>Konfiguration der Manager-Einstellungen.</td>
   </tr>
   <tr>
-   <td>Commerce</td>
+   <td>Handel</td>
    <td>Bietet Zugriff auf Importtools und unterschiedliche Produktdaten</td>
   </tr>
   <tr>
@@ -414,7 +413,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
    <td>Enthält die Liste der erhaltenen Formulareinsendungen</td>
   </tr>
   <tr>
-   <td>Importeure </td>
+   <td>Importtools </td>
    <td>Bietet Zugriff auf verschiedene Optionen.</td>
   </tr>
   <tr>
@@ -462,9 +461,8 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
    <td>Ermöglicht es Ihnen, Seitenversionen bei Bedarf zu bereinigen</td>
   </tr>
   <tr>
-   <td>Arbeitsablauf</td>
+   <td>Workflow</td>
    <td>Workflows steuern eine Serie von Aktionen auf Seiten oder digitalen Assets, die jeden Bearbeitungsvorgang unterstützen.</td>
   </tr>
  </tbody>
 </table>
-
