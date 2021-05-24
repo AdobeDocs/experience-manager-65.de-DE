@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 27a6b012-576e-40bc-9b50-c310b3c56c9e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 95%
 
 ---
-
 
 # Fehlerbehebung in AEM beim Authoring{#troubleshooting-aem-when-authoring}
 
@@ -71,7 +70,7 @@ Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei 
 
 * **Problem:**
 
-   * Bei Verwendung der Option **Suchen &amp; Ersetzen** kann es vorkommen, dass nicht alle Instanzen des Begriffs `find` auf einer Seite ersetzt werden.
+   * Bei Verwendung der Option **Suchen und Ersetzen** kann es vorkommen, dass nicht alle Instanzen des Begriffs `find` auf einer Seite ersetzt werden.
 
 * **Grund**:
 
@@ -87,4 +86,3 @@ Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei 
    * Diese Definitionen können mit der Konfiguration für **Day CQ WCM Find Replace Servlet** geändert werden, indem z. B. die **Web-Konsole** verwendet wird:
 
       `http://localhost:4502/system/console/configMgr`
-
