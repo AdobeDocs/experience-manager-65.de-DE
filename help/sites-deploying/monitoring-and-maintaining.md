@@ -10,15 +10,14 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Konfiguration
+exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '5892'
 ht-degree: 82%
 
 ---
-
 
 # Überwachung und Wartung der AEM-Instanz{#monitoring-and-maintaining-your-aem-instance}
 
@@ -31,7 +30,7 @@ Um potenzielle Probleme erkennen zu können, müssen Sie unbedingt wissen, wie I
 | Backup-Plan. |  | Gehen Sie wie folgt vor, um [ein Backup für Ihre Instanz zu erstellen](/help/sites-deploying/monitoring-and-maintaining.md#backups). |
 | Plan für die Notfallwiederherstellung | Richtlinien Ihres Unternehmens für die Notfallwiederherstellung. |  |
 | Ein System zur Fehlersuche steht Ihnen für die Problemberichterstattung zur Verfügung. | Zum Beispiel [Bugzilla](https://www.bugzilla.org/), [Jira](https://www.atlassian.com/software/jira/) oder eines von vielen anderen. |  |
-| Dateisysteme werden überwacht. | Das CRX-Repository wird „eingeforen“, wenn nicht genügend freier Speicherplatz vorhanden ist. Es wird fortgesetzt, sobald Speicherplatz frei wird. | &quot; `*ERROR* LowDiskSpaceBlocker`&quot;-Meldungen können in der Protokolldatei angezeigt werden, wenn der freie Speicherplatz gering ist. |
+| Dateisysteme werden überwacht. | Das CRX-Repository wird „eingeforen“, wenn nicht genügend freier Speicherplatz vorhanden ist. Es wird fortgesetzt, sobald Speicherplatz frei wird. | &quot; `*ERROR* LowDiskSpaceBlocker`&quot;-Meldungen werden in der Protokolldatei angezeigt, wenn der freie Speicherplatz gering ist. |
 | [Protokolldateien](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) werden überwacht. |  |  |
 | Die Systemüberwachung wird (ständig) im Hintergrund ausgeführt. | Einschließlich CPU-, Arbeitsspeicher-, Festplatten- und Netzwerkauslastung. Verwendet wird z. B. iostat / vmstat / perfmon. | Protokollierte Daten werden angezeigt und können zum Nachverfolgen von Leistungsproblemen verwendet werden. Rohdaten sind ebenfalls verfügbar. |
 | [Die AEM-Leistung wird überwacht](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | Einschließlich [Anfragezähler](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) zur Überwachung des Traffic-Niveaus. | Bei großem oder anhaltendem Leistungsverlust sollte eine detaillierte Analyse erfolgen. |
@@ -73,11 +72,11 @@ Nach der Installation oder nach größeren Konfigurationsänderungen sollten Sie
 Dazu müssen Sie erst[ein Backup des gesamten Repositorys erstellen](#backing-up-your-repository) und dann folgende Schritte ausführen:
 
 1. AEM anhalten.
-1. Sichern Sie das gesamte `<cq-installation-dir>` aus Ihrem Dateisystem.
+1. Sichern Sie den gesamten `<cq-installation-dir>` aus Ihrem Dateisystem.
 
 >[!CAUTION]
 >
->Falls Sie einen Anwendungsserver eines Drittanbieters verwenden, gibt es möglicherweise zusätzliche Ordner an anderen Speicherorten, die Sie ebenfalls sichern müssen. Informationen dazu, wie Sie Anwendungsserver installieren, finden Sie unter [Installieren von AEM mit einem Anwendungsserver. ](/help/sites-deploying/application-server-install.md)
+>Falls Sie einen Anwendungsserver eines Drittanbieters verwenden, gibt es möglicherweise zusätzliche Ordner an anderen Speicherorten, die Sie ebenfalls sichern müssen. Informationen dazu, wie Sie Anwendungsserver installieren, finden Sie unter [Installieren von AEM mit einem Anwendungsserver. ](/help/sites-deploying/application-server-install.md) [](/content/docs/en/aem/6-3/deploy/installing.md#installing adobe experience manager with an application server)
 
 >[!CAUTION]
 >
@@ -107,17 +106,17 @@ Das Tool **Versionsbereinigung** ist in der **[Tools](/help/sites-administering/
 
 ![screen_shot_2012-03-15at14418pm](assets/screen_shot_2012-03-15at14418pm.png)
 
-**Beginn** PathEin absoluter Pfad, auf dem die Bereinigung durchgeführt werden muss. Sie können den Startpfadauswählen, indem Sie auf den Navigatorbaum im Repository klicken.
+**Start** PathEin absoluter Pfad, auf dem die Bereinigung durchgeführt werden muss. Sie können den Startpfadauswählen, indem Sie auf den Navigatorbaum im Repository klicken.
 
-**** RekursivBeim Bereinigen von Daten können Sie zwischen der Ausführung des Vorgangs auf einer Node oder einer ganzen Hierarchie wählen, indem Sie Rekursiv auswählen. Im letzteren Fall definiert der angegebene Pfad den Stammknoten der Hierarchie.
+**** RekursivBeim Bereinigen von Daten können Sie zwischen der Ausführung des Vorgangs auf einem Knoten oder auf einer ganzen Hierarchie wählen, indem Sie Rekursiv auswählen. Im letzteren Fall definiert der angegebene Pfad den Stammknoten der Hierarchie.
 
-**Maximale Versionen, die** beibehalten werden sollenDie maximale Anzahl von Versionen, die für einen Knoten beibehalten werden sollen. Wenn die Anzahl diesen Wert überschreitet, werden die ältesten Versionen gelöscht.
+**Maximale Versionen, die** beibehalten werden sollen Die maximale Anzahl von Versionen, die für einen Knoten beibehalten werden sollen. Wenn die Anzahl diesen Wert überschreitet, werden die ältesten Versionen gelöscht.
 
-**Maximales** Alter der VersionDas maximale Alter der Version eines Knotens. Wenn das Alter einer Version diesen Wert überschreitet, wird sie gelöscht.
+**Maximales** Alter der VersionenDas maximale Alter der Version eines Knotens. Wenn das Alter einer Version diesen Wert überschreitet, wird sie gelöscht.
 
-**Dry** RunDa das Entfernen von Inhaltsversionen definitiv ist und ohne Wiederherstellung einer Sicherung nicht rückgängig gemacht werden kann, stellt das Bereinigen-Werkzeug einen trockenen Ausführungsmodus bereit, mit dem Sie die bereinigten Versionen Vorschau haben. Klicken Sie auf Probelauf, um einen Probelauf des Bereinigungsvorgangs zu starten.
+**Trockenes** AusführenDa das Entfernen von Versionen Ihres Inhalts definiert ist und nicht ohne Wiederherstellen eines Backups rückgängig gemacht werden kann, bietet das Tool Versionen bereinigen einen trockenen Ausführungsmodus, mit dem Sie die bereinigten Versionen in der Vorschau anzeigen können. Klicken Sie auf Probelauf, um einen Probelauf des Bereinigungsvorgangs zu starten.
 
-**Bereinigen** Bereinigen Sie die Bereinigung der Beginn auf dem Knoten, der durch den Pfad definiert wird.
+**** Bereinigen Sie Launch die Bereinigung der Versionen auf dem Knoten, der durch den Startpfad definiert wird.
 
 ### Bereinigen von Versionen einer Website {#purging-versions-of-a-web-site}
 
@@ -149,19 +148,19 @@ Beim den Vorgängen **Probelauf** und **Löschen** werden alle Knoten aufgeliste
 * `ignore (no version)`: Für den Knoten sind keine Versionen vorhanden und er wird beim Bereinigungsvorgang ignoriert.
 
 * `retained`: Der Knoten wurde nicht gelöscht.
-* `purged`: die Node wird bereinigt.
+* `purged`: der Knoten bereinigt wird.
 
 Darüber hinaus stellt die Konsole nützliche Informationen zu den Versionen bereit: 
 
 * `V 1.0`: die Versionsnummer.
 * `V 1.0.1` *: Der Stern gibt an, dass es sich um die aktuelle Version handelt. 
 
-* `Thu Mar 15 2012 08:37:32 GMT+0100`: Datum der Version.
+* `Thu Mar 15 2012 08:37:32 GMT+0100`: das Datum der Version.
 
 Im folgenden ein Beispiel:
 
 * Die Versionen unter **[!DNL Shirts]** werden gelöscht, da sie älter als 2 Tage sind.
-* Die **[!DNL Tonga Fashions!]**-Versionen werden bereinigt, da die Anzahl der Versionen größer als 5 ist.
+* Die **[!DNL Tonga Fashions!]**-Versionen werden gelöscht, da die Anzahl der Versionen größer als 5 ist.
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
 
@@ -181,9 +180,9 @@ AEM WCM-System zeichnet detaillierte Protokolle auf. Wenn Sie Quickstart entpack
 
 Protokolldateirotation bezeichnet einen Vorgang, bei dem das Dateiwachstum durch das regelmäßige Erstellen einer neuen Datei beschränkt wird. In AEM wird die Protokolldatei `error.log` täglich nach folgenden Regeln rotiert:
 
-* Die Datei `error.log` wird entsprechend dem Muster {original_filename} `.yyyy-MM-dd` umbenannt. Beispielsweise wird am 11. Juli 2010 die aktuelle Protokolldatei in `error.log-2010-07-10` umbenannt und anschließend ein neuer `error.og` erstellt.
+* Die `error.log`-Datei wird gemäß dem Muster {original_filename} `.yyyy-MM-dd` umbenannt. Beispielsweise wird die aktuelle Protokolldatei am 11. Juli 2010 in `error.log-2010-07-10` umbenannt und dann ein neuer `error.og` erstellt.
 
-* Frühere Protokolldateien werden nicht gelöscht, daher ist es Ihre Verantwortung, alte Protokolldateien regelmäßig zu bereinigen, um die Datenträgernutzung zu begrenzen.
+* Vorherige Protokolldateien werden nicht gelöscht. Daher ist es Ihre Verantwortung, alte Protokolldateien regelmäßig zu bereinigen, um die Festplattenauslastung zu begrenzen.
 
 >[!NOTE]
 >
@@ -205,38 +204,38 @@ Moderationsaktionen werden hier registriert.
 Hier werden Fehlermeldungen (mit unterschiedlichem Schweregrad) registriert.
 
    * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
-Dieses Protokoll wird nur verwendet, wenn es aktiviert  [!DNL Dynamic Media] ist. Er enthält Statistiken und analytische Informationen, die zur Analyse des Verhaltens des internen ImageServer-Prozesses verwendet werden.
+Dieses Protokoll wird nur verwendet, wenn aktiviert  [!DNL Dynamic Media] ist. Es stellt Statistiken und analytische Informationen bereit, die zur Analyse des Verhaltens des internen ImageServer-Prozesses verwendet werden.
 
    * `request.log`
 Hier werden alle Zugriffsanfragen zusammen mit der Antwort registriert.
 
    * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
-Dieses Protokoll wird nur verwendet, wenn es aktiviert  [!DNL Dynamic Media] ist. Das s7access-Protokoll zeichnet jede Anforderung auf, die an [!DNL Dynamic Media] bis `/is/image` und `/is/content` gesendet wurde.
+Dieses Protokoll wird nur verwendet, wenn aktiviert  [!DNL Dynamic Media] ist. Das s7access-Protokoll zeichnet alle Anfragen auf, die an [!DNL Dynamic Media] über `/is/image` und `/is/content` gestellt wurden.
 
-   * `stderr.log` Enthält Fehlermeldungen (ebenfalls mit unterschiedlichem Schweregrad), die beim Starten generiert werden. Standardmäßig ist die Protokollierungsstufe auf 
+   * `stderr.log` Enthält Fehlermeldungen (ebenfalls mit unterschiedlichem Schweregrad), die beim Starten generiert werden. Standardmäßig ist die Protokollebene auf 
 `Warning` ( `WARN`)
 
    * `stdout.log`
 Enthält Protokollmeldungen, die auf Ereignisse beim Starten verweisen.
 
    * `upgrade.log`
-Bietet ein Protokoll aller Aktualisierungsvorgänge, die über die Variable 
-`com.day.compat.codeupgrade` und  `com.adobe.cq.upgradesexecutor` Pakete.
+Bietet ein Protokoll aller Aktualisierungsvorgänge, die von der 
+`com.day.compat.codeupgrade` und  `com.adobe.cq.upgradesexecutor` Packages.
 
 * `<cq-installation-dir>/crx-quickstart/repository`
 
    * `revision.log`
-Überarbeitung der Journalinformationen.
+Informationen zur Revisionsjournalisierung.
 
 >[!NOTE]
 >
->Die ImageServer- und s7access-Protokolle sind nicht im **Download Full **Package enthalten, das aus der **system/console/status-bundlelist **Seite generiert wurde. Wenn Sie Probleme mit [!DNL Dynamic Media] haben, hängen Sie bitte auch die ImageServer- und s7access-Protokolle an, wenn Sie den Kundensupport kontaktieren.
+>Die Protokolle &quot;ImageServer&quot;und &quot;s7access&quot;sind nicht im Paket &quot;Download Full&quot;enthalten, das von der Seite &quot;system/console/status-Bundlelist&quot;generiert wird. Wenn Sie Probleme mit [!DNL Dynamic Media] haben, hängen Sie zur Unterstützung die Protokolle ImageServer und s7access an, wenn Sie sich an den Support wenden.
 
 ### Aktivieren der DEBUG-Protokollebene {#activating-the-debug-log-level}
 
 Die Standard-Protokollebene ([Apache Sling-Protokollierungskonfiguration](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)) ist „Information“, d. h. es werden keine Debugging-Meldungen protokolliert.
 
-Um die Debugging-Protokollebene für eine Protokollierung zu aktivieren, müssen Sie für die Eigenschaften `org.apache.sling.commons.log.level` im Repository den Wert „debug“ festlegen. Beispielsweise können Sie bei `/libs/sling/config/org.apache.sling.commons.log.LogManager` das globale Apache Sling Logging](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration) konfigurieren.[
+Um die Debugging-Protokollebene für eine Protokollierung zu aktivieren, müssen Sie für die Eigenschaften `org.apache.sling.commons.log.level` im Repository den Wert „debug“ festlegen. Beispielsweise auf `/libs/sling/config/org.apache.sling.commons.log.LogManager` zum Konfigurieren der [globalen Apache Sling-Protokollierung](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration).
 
 >[!CAUTION]
 >
@@ -284,13 +283,13 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
 
       Typ: String
 
-      Wert: die Protokolldatei angeben; zum Beispiel `logs/myLogFile.log`
+      Wert: die Protokolldatei angeben; Beispiel: `logs/myLogFile.log`
 
    * Name: `org.apache.sling.commons.log.names`
 
-      Typ: Zeichenfolge[] (Zeichenfolge + Multi)
+      Typ: String[] (String + Multi)
 
-      Wert: Geben Sie die OSGi-Dienste an, für die die Protokollfunktion Meldungen protokollieren soll. zum Beispiel alle folgenden Elemente:
+      Wert: die OSGi-Dienste angeben, für die der Logger Meldungen protokollieren soll; Beispiel: alle folgenden Elemente:
 
       * `org.apache.sling`
       * `org.apache.felix`
@@ -299,7 +298,7 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
 
       Typ: String
 
-      Wert: Geben Sie die erforderliche Protokollebene an ( `debug`, `info`, `warn` oder `error`); zum Beispiel `debug`
+      Wert: Geben Sie die erforderliche Protokollebene an ( `debug`, `info`, `warn` oder `error`); Beispiel: `debug`
 
    * Konfigurieren Sie ggf. weitere Parameter:
 
@@ -307,7 +306,7 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
 
          Typ: `String`
 
-         Wert: das Muster der Protokollmeldung nach Bedarf angeben; zum Beispiel
+         Wert: das Muster der Protokollmeldung nach Bedarf angeben; Beispiel:
 
          `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
    >[!NOTE]
@@ -316,15 +315,15 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
    >
    >{0} Der Zeitstempel des Typs `java.util.Date`
    >
-   >{1} die Protokollmarkierung
+   >{1} Protokollmarkierung
    >
    >{2} der Name des aktuellen Threads
    >
-   >{3} Name der Protokollfunktion
+   >{3} Name des Loggers
    >
-   >{4} die Protokollebene
+   >{4} Protokollebene
    >
-   >{5} die Protokollmeldung
+   >{5} Protokollmeldung
    >
    >Falls der Protokollaufruf den Parameter `Throwable` enthält, wird der StackTrace an die Meldung angefügt.
 
@@ -351,7 +350,7 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
    >wird in folgendes Verzeichnis geschrieben:
    >
    >`<cq-installation-dir>/logs/`\
-   >(z. B. neben `<cq-installation-dir>/crx-quickstart/`)
+   >(d. h. neben `<cq-installation-dir>/crx-quickstart/`)
 
 1. Dieser Schritt muss nur ausgeführt werden, wenn ein neuer Writer erforderlich ist (d. h. mit einer Konfiguration, die vom standardmäßigen Writer abweicht). 
 
@@ -365,7 +364,7 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
 
    * Name: `org.apache.sling.commons.log.LogManager.factory.writer-<identifier>` (da dies ein Writer ist)
 
-      Wie beim Logger wird `<identifier>` durch freien Text ersetzt, den Sie (müssen) eingeben, um die Instanz zu identifizieren (Sie können diese Informationen nicht weglassen). Beispiel: `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
+      Wie beim Logger wird `<identifier>` durch freien Text ersetzt, den Sie eingeben (müssen), um die Instanz zu identifizieren (diese Informationen können nicht weggelassen werden). Beispiel: `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
 
    * Typ: `sling:OsgiConfig`
    >[!NOTE]
@@ -378,7 +377,7 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
 
       Typ: `String`
 
-      Wert: Geben Sie die Protokolldatei so an, dass sie mit der im Protokollprogramm angegebenen Datei übereinstimmt.
+      Wert: Geben Sie die Protokolldatei so an, dass sie mit der im Logger angegebenen Datei übereinstimmt.
 
       für dieses Beispiel `../logs/myLogFile.log`.
 
@@ -388,13 +387,13 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
 
          Typ: `Long`
 
-         Wert: die Anzahl der zu speichernden Protokolldateien angeben; zum Beispiel `5`
+         Wert: die Anzahl der Protokolldateien angeben, die Sie beibehalten möchten; Beispiel: `5`
 
       * Name: `org.apache.sling.commons.log.file.size`
 
          Typ: `String`
 
-         Wert: müssen Sie die Dateidrehung nach Größe/Datum steuern. zum Beispiel `'.'yyyy-MM-dd`
+         Wert: die Angabe, die erforderlich ist, um die Dateirotation nach Größe/Datum zu steuern; Beispiel: `'.'yyyy-MM-dd`
    >[!NOTE]
    >
    >`org.apache.sling.commons.log.file.size` steuert die Rotation der Protokolldatei durch eine der folgenden Einstellungen:
@@ -405,7 +404,7 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
    >
    >um anzugeben, wann eine neue Datei erstellt wird (und die vorhandene Datei gemäß dem Namensmuster umbenannt wird).
    >
-   >* Eine Größenbeschränkung kann mit einer Zahl angegeben werden. Wenn kein Größenindikator angegeben ist, wird dies als Anzahl der Byte betrachtet oder Sie können einen der Größenindikatoren hinzufügen: `KB`, `MB` oder `GB` (Groß-/Kleinschreibung wird ignoriert).
+   >* Eine Größenbeschränkung kann mit einer Zahl angegeben werden. Wenn kein Größenindikator angegeben ist, wird dies als Anzahl von Bytes betrachtet oder Sie können einen der Größenindikatoren hinzufügen: `KB`, `MB` oder `GB` (Groß-/Kleinschreibung wird ignoriert).
    >* Sie können einen Zeit-/Terminplan nach dem `java.util.SimpleDateFormat`-Muster angeben. Dieser gibt den Zeitraum an, in dem die Datei rotiert wird, sowie das Suffix, das an die rotierte Datei angehängt wurde (zur einfachen Identifizierung).
 
    >
@@ -418,14 +417,14 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
    >| `'.'yyyy-ww` | Rotation am ersten Wochentag (abhängig vom Gebietsschema). |
    >| `'.'yyyy-MM-dd` | Rotation jeden Tag um Mitternacht. |
    >| `'.'yyyy-MM-dd-a` | Rotation jeden Tages um Mitternacht und Mittag. |
-   >| `'.'yyyy-MM-dd-HH` | Rotation am Anfang jeder Stunde. |
-   >| `'.'yyyy-MM-dd-HH-mm` | Rotation am Anfang jeder Minute. |
+   >| `'.'yyyy-MM-dd-HH` | Rotation zu Beginn jeder Stunde. |
+   >| `'.'yyyy-MM-dd-HH-mm` | Rotation zu Beginn jeder Minute. |
    >
    >Hinweis: Bei der Angabe einer Uhrzeit/eines Datums ist Folgendes zu beachten:
-   > 1. Sie sollten literalen Text innerhalb eines Paars mit einfachen Anführungszeichen (&#39; &#39;) &quot;Escape&quot;;
+   > 1. Sie sollten literalen Text in einem Paar von einfachen Anführungszeichen (&#39; &#39;) &quot;Escape&quot;;
       >
       >     
-      Dadurch soll verhindert werden, dass bestimmte Zeichen als Musterbuchstaben interpretiert werden.
+      Dadurch wird verhindert, dass bestimmte Zeichen als Musterbuchstaben interpretiert werden.
       >
       >  
    1. Verwenden Sie nur Zeichen, die für einen gültigen Dateinamen im Optionsfeld zulässig sind.
@@ -433,7 +432,7 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
 
 1. Lesen Sie die neue Protokolldatei mit dem von Ihnen ausgewählten Tool.
 
-   Die mit diesem Beispiel erstellte Protokolldatei lautet `../crx-quickstart/logs/myLogFile.log`.
+   Die von diesem Beispiel erstellte Protokolldatei lautet `../crx-quickstart/logs/myLogFile.log`.
 
 Die Felix-Konsole enthält auch Informationen zum Sling Log-Support unter `../system/console/slinglog`; beispielsweise `https://localhost:4502/system/console/slinglog`.
 
@@ -453,7 +452,7 @@ Auditdatensätze werden als Nachweis darüber aufbewahrt, wer wann welche Aktion
 
 #### AEM WCM-Auditdatensätze im Repository  {#aem-wcm-auditing-records-within-the-repository}
 
-Innerhalb des Ordners `/var/audit` werden die Prüfaufzeichnungen gemäß der Ressource gespeichert. Sie können ein Drilldown durchführen, bis einzelne Datensätze und die darin enthaltenen Informationen angezeigt werden.
+Im Ordner `/var/audit` werden Auditdatensätze entsprechend der Ressource gespeichert. Sie können ein Drilldown durchführen, bis einzelne Datensätze und die darin enthaltenen Informationen angezeigt werden.
 
 Diese Einträge enthalten die gleichen Informationen wie sie beim Bearbeiten einer Seite angezeigt werden.
 
@@ -469,7 +468,7 @@ Sie können [Replikations-Warteschlangen](/help/sites-deploying/replication.md) 
 
 * Sind alle erforderlichen Warteschlangen aktiviert?
 * Sind alle deaktivierten Warteschlangen noch erforderlich?
-* alle `enabled`-Warteschlangen müssen den Status `idle` oder `active` haben, der den normalen Betrieb angibt; keine Warteschlangen sollten `blocked` sein, was häufig ein Zeichen für Probleme auf der Empfängerseite ist.
+* alle `enabled`-Warteschlangen sollten den Status `idle` oder `active` aufweisen, der den normalen Betrieb angibt; keine Warteschlangen sollten `blocked` sein, was häufig ein Zeichen für Probleme auf der Empfängerseite ist.
 
 * Wenn die Warteschlange im Laufe der Zeit größer wird, kann dies auf eine Blockierung hindeuten.
 
@@ -507,7 +506,7 @@ Gehen Sie wie folgt vor, um Replikationsagenten zu überwachen:
    >
    >`/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
 
-Nochmals können Sie eine Lösung entwickeln, um alle Replizierungsagenten (unter `/etc/replication/author` oder `/etc/replication/publish`) zu erkennen, und dann den Status des Agenten ( `enabled`, `disabled`) und die zugrunde liegende Warteschlange ( `active`, `idle`, `blocked`) überprüfen.
+Auch hier können Sie eine Lösung entwickeln, um alle Replikationsagenten (unter `/etc/replication/author` oder `/etc/replication/publish`) zu erkennen, und dann den Status des Agenten ( `enabled`, `disabled`) und die zugrunde liegende Warteschlange ( `active`, `idle`, `blocked`) überprüfen.
 
 ## Leistungsüberwachung {#monitoring-performance}
 
@@ -590,17 +589,17 @@ Einige von diesen sind von Ihrem Betriebssystem abhängig.
   <tr>
    <td>Heap-Dumps</td>
    <td>Probleme mit dem Speicher, die zu Leistungsverlusten führen.</td>
-   <td><p>hinzufügen Sie die Option:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> zum Java-Aufruf an AEM.</p> <p>Siehe <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">Anleitung zur Fehlersuche für Java SE 6 with HotSpot VM</a>.</p> </td>
+   <td><p>Fügen Sie die Option:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> zum Java-Aufruf an AEM hinzu.</p> <p>Siehe <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">Anleitung zur Fehlersuche für Java SE 6 with HotSpot VM</a>.</p> </td>
   </tr>
   <tr>
    <td>Systemaufrufe</td>
    <td>Erkennen von Zeitproblemen.</td>
-   <td><p>Aufrufe von <code>System.currentTimeMillis()</code> oder <code>com.day.util</code>.Timing werden zum Generieren von Zeitstempeln aus Ihrem Code oder über <a href="#html-comments">HTML-Kommentare</a> verwendet.</p> <p><strong>Hinweis:</strong> Diese sollten implementiert werden, damit sie bei Bedarf aktiviert/deaktiviert werden können. Wenn ein System reibungslos läuft, können Sie den Mehraufwand für das Erfassen von Statistiken vermeiden.</p> </td>
+   <td><p>Aufrufe von <code>System.currentTimeMillis()</code> oder <code>com.day.util</code>.Timing werden verwendet, um Zeitstempel aus Ihrem Code oder über <a href="#html-comments">HTML-Kommentare</a> zu generieren.</p> <p><strong>Hinweis:</strong> Diese sollten implementiert werden, damit sie bei Bedarf aktiviert/deaktiviert werden können. Wenn ein System reibungslos läuft, können Sie den Mehraufwand für das Erfassen von Statistiken vermeiden.</p> </td>
   </tr>
   <tr>
    <td>Apache Bench</td>
    <td>Identifizieren Sie Speicherlecks, analysieren Sie selektiv Reaktionszeiten.</td>
-   <td><p>Grundlegende Verwendung:</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>Ausführliche Informationen finden Sie unter <a href="#apache-bench">Apache Bench</a> und <a href="https://httpd.apache.org/docs/2.2/programs/ab.html">ab man page</a>.</p> </td>
+   <td><p>Grundlegende Verwendung:</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>Weitere Informationen finden Sie unter <a href="#apache-bench">Apache Bench</a> und auf der <a href="https://httpd.apache.org/docs/2.2/programs/ab.html">ab man-Seite</a> .</p> </td>
   </tr>
   <tr>
    <td>Rechercheanalyse</td>
@@ -635,7 +634,7 @@ Einige von diesen sind von Ihrem Betriebssystem abhängig.
   <tr>
    <td>Zeitstatistiken</td>
    <td>Siehe Zeitstatistiken für das Laden von Seiten.</td>
-   <td><p>Zum Anzeigen der Zeitstatistiken für die Seitenwiedergabe können Sie <strong>Strg-Umschalt-U</strong> zusammen mit <code>?debugClientLibs=true</code> in der URL einstellen.</p> </td>
+   <td><p>Um Zeitstatistiken für das Seiten-Rendering anzuzeigen, können Sie <strong>Strg-Umschalt-U</strong> zusammen mit <code>?debugClientLibs=true</code> verwenden, die in der URL festgelegt sind.</p> </td>
   </tr>
   <tr>
    <td>CPU- und Speicher-Profiling-Tool<br /> </td>
@@ -740,7 +739,7 @@ Sie sollten testen, wie viele gleichzeitige Benutzer das System unterstützt, be
 
 ### Verwenden von rlog.jar bei der Suche nach Anforderungen mit langer Dauer  {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
-AEM enthält verschiedene Hilfstools unter:
+AEM umfasst verschiedene Hilfstools unter:
 `<cq-installation-dir>/crx-quickstart/opt/helpers`
 
 Eines dieser Tools, `rlog.jar`, kann zum schnellen Sortieren von `request.log` verwendet werden, sodass Anforderungen nach Dauer (längste bis kürzeste Zeit) angezeigt werden.
@@ -851,7 +850,7 @@ Percentage of the requests served within a certain time (ms)
 
 Die obigen Zahlen stammen von einem MacBook Pro-Laptop (Mitte 2010), der auf die Unternehmensseite von Geometrixx zugreift, wie sie in einer Standardinstallation von AEM enthalten ist. Die Seite ist sehr einfach aufgebaut, aber nicht für Leistung optimiert.
 
-`apachebench` zeigt auch die Zeit pro Anforderung als Mittelwert für alle gleichzeitigen Anforderungen an; see  `Time per request: 54.595 [ms]` (Mittelwert für alle gleichzeitigen Anforderungen). Sie können den Wert des Gleichzeitigkeitsparameters `-c` (Anzahl der gleichzeitig auszuführenden Anforderungen) ändern, um eventuelle Effekte anzuzeigen.
+`apachebench` zeigt außerdem die Zeit pro Anforderung als Mittelwert für alle gleichzeitigen Anforderungen an; siehe  `Time per request: 54.595 [ms]` (Mittelwert für alle gleichzeitigen Anforderungen). Sie können den Wert des Gleichzeitigkeitsparameters `-c` (Anzahl der gleichzeitig auszuführenden Mehrfachanfragen) ändern, um beliebige Auswirkungen anzuzeigen.
 
 ### Anforderungszähler {#request-counters}
 
@@ -871,7 +870,7 @@ Informationen können erfasst werden, um Folgendes anzuzeigen:
 
 ### HTML-Kommentare {#html-comments}
 
-Es wird empfohlen, dass jedes Projekt für die Serverleistung `html comments` enthält. Es gibt viele gute Beispiele. Öffnen Sie eine Seite, zeigen Sie den Quelltext an und scrollen Sie zum Ende, dann wird ein Code wie der Folgende angezeigt:
+Es wird empfohlen, dass jedes Projekt `html comments` für die Serverleistung enthält. Es gibt viele gute Beispiele. Öffnen Sie eine Seite, zeigen Sie den Quelltext an und scrollen Sie zum Ende, dann wird ein Code wie der Folgende angezeigt:
 
 ```xml
 </body>
@@ -889,7 +888,7 @@ Der Tool-Befehl `jconsole` ist bei JDK verfügbar.
 1. Ausführen `jconsole.`
 1. Wählen Sie Ihre AEM-Instanz und **Verbinden**.
 
-1. Klicken Sie in der Anwendung `Local` bei Dublette-Klick auf `com.day.crx.quickstart.Main`; Die Übersicht wird standardmäßig angezeigt:
+1. Doppelklicken Sie in der Anwendung `Local` auf `com.day.crx.quickstart.Main`. Die Übersicht wird als Standard angezeigt:
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
@@ -903,14 +902,14 @@ Ab JDK 1.6 ist der Tool-Befehl `jvisualvm` verfügbar. Wenn Sie JDK 1.6 installi
 
    >[!NOTE]
    >
-   >Bei Verwendung von Java 5 können Sie das `-Dcom.sun.management.jmxremote`-Argument zur Java-Befehlszeile hinzufügen, die Ihre JVM Beginn. JMX ist bei Java 6 standardmäßig aktiviert.
+   >Bei Verwendung von Java 5 können Sie das `-Dcom.sun.management.jmxremote`-Argument zur Java-Befehlszeile hinzufügen, die Ihre JVM startet. JMX ist bei Java 6 standardmäßig aktiviert.
 
 1. Führen Sie einen der beiden Befehle aus:
 
    * `jvisualvm`: im Ordner „bin“ von JDK 1.6 (getestete Version)
    * `visualvm`: kann von [VisualVM](https://visualvm.dev.java.net/) heruntergeladen werden (allerneueste Version)
 
-1. Klicken Sie in der Anwendung `Local` bei Dublette-Klick auf `com.day.crx.quickstart.Main`; Die Übersicht wird standardmäßig angezeigt:
+1. Doppelklicken Sie in der Anwendung `Local` auf `com.day.crx.quickstart.Main`. Die Übersicht wird als Standard angezeigt:
 
    ![chlimage_1-2](assets/chlimage_1-2.png)
 
@@ -926,7 +925,7 @@ Wenn Sie möglichst viele Informationen zur Installation haben, ist es einfacher
 
 Die folgenden Informationen können hilfreich sein:
 
-* [Wie viele Autoren arbeiten mit dem System?](#how-many-authors-are-working-with-the-system) 
+* [Wie viele Autoren arbeiten mit dem System?](#how-many-authors-are-working-with-the-system)
 * [Wie viele Seiten werden im Durchschnitt pro Tag aktiviert?](#what-is-the-average-number-of-page-activations-per-day)
 * [Wie viele Seiten unterhalten Sie derzeit auf diesem System?](#how-many-pages-do-you-currently-maintain-on-this-system)
 * [Falls Sie MSM verwenden, wie hoch ist die durchschnittliche Anzahl der Rollouts pro Monat?](#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month)
@@ -938,7 +937,7 @@ Die folgenden Informationen können hilfreich sein:
 * [Wie viele Anforderungen pro Stunde erfolgen zu Spitzenzeiten auf dem Autorensystem?](#how-many-requests-per-hour-do-you-have-on-the-author-system-at-peak-time)
 * [Wie viele Anforderungen pro Stunde erfolgen zu Spitzenzeiten auf dem Veröffentlichungssystem?](#how-many-requests-per-hour-do-you-have-on-the-publish-system-at-peak-time)
 
-#### Wie viele Autoren arbeiten mit dem System?  {#how-many-authors-are-working-with-the-system}
+#### Wie viele Autoren arbeiten mit dem System? {#how-many-authors-are-working-with-the-system}
 
 Um die Anzahl der Autoren anzuzeigen, die das System seit der Installation verwendet haben, verwenden Sie folgende Befehlszeile:
 
@@ -1009,7 +1008,7 @@ Um anzuzeigen, wie viele DAM-Assets Sie derzeit unterhalten, verwenden Sie eine 
 
 #### Wie groß sind die Assets im Durchschnitt? {#what-is-the-average-size-of-the-assets}
 
-So bestimmen Sie die Gesamtgröße des Ordners `/var/dam`:
+So bestimmen Sie die Gesamtgröße des Ordners `/var/dam` :
 
 1. Verwenden Sie WebDAV, um das Repository dem lokalen Dateisystem zuzuordnen.
 
@@ -1020,7 +1019,7 @@ So bestimmen Sie die Gesamtgröße des Ordners `/var/dam`:
    du -sh dam/
    ```
 
-   Um die durchschnittliche Größe abzurufen, teilen Sie die globale Größe durch die Gesamtanzahl der Assets in `/var/dam` (siehe oben).
+   Um die durchschnittliche Größe zu erhalten, teilen Sie die globale Größe durch die Gesamtanzahl der Assets in `/var/dam` (ermittelt oben).
 
 #### Wie viele Vorlagen werden derzeit verwendet? {#how-many-templates-are-currently-used}
 
@@ -1097,7 +1096,7 @@ Falls das System nicht genügend Speicher hat, kann sich dies auf verschiedene W
 
 In diesen Fällen müssen Sie Folgendes überprüfen:
 
-* Die für [Beginn AEM](/help/sites-deploying/deploy.md#getting-started) verwendeten JVM-Einstellungen
+* Die JVM-Einstellungen, die zum Starten von [AEM](/help/sites-deploying/deploy.md#getting-started) verwendet werden
 * Wissensdatenbank:
 
    * [Analysieren von Speicherproblemen](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html) 
@@ -1153,7 +1152,7 @@ Das entsprechende Protokoll kann mit einem GC-Visualizer erfasst werden:
 
 Oder mit JConsole:
 
-* Diese Einstellungen gelten für eine &quot;breite&quot;JMX-Verbindung:
+* Diese Einstellungen beziehen sich auf eine JMX-Verbindung mit &quot;breiter Öffnung&quot;:
 
    ```
    -Dcom.sun.management.jmxremote \
@@ -1162,10 +1161,10 @@ Oder mit JConsole:
     -Dcom.sun.management.jmxremote.ssl=false
    ```
 
-* Schließen Sie dann die JVM mit der JConsole an. siehe:
+* Stellen Sie dann mit der JConsole eine Verbindung zur JVM her. siehe:
    ` [https://docs.oracle.com/javase/6/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/6/docs/technotes/guides/management/jconsole.html)`
 
-Dies ist hilfreich, wenn Sie herausfinden möchten, wie viel Arbeitsspeicher belegt ist, welche GC-Algorithmen verwendet werden, wie lange diese ausgeführt werden und welche Auswirkung dies auf die Anwendungsleistung hat. Andernfalls ist die Abstimmung nur &quot;zufällig drehende Knopf&quot;.
+Dies ist hilfreich, wenn Sie herausfinden möchten, wie viel Arbeitsspeicher belegt ist, welche GC-Algorithmen verwendet werden, wie lange diese ausgeführt werden und welche Auswirkung dies auf die Anwendungsleistung hat. Andernfalls ist die Tuning-Funktion nur &quot;zufällige Tupfen&quot;.
 
 >[!NOTE]
 >
