@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
-translation-type: tm+mt
-source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
+exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1590'
 ht-degree: 97%
 
 ---
-
 
 # Kurzanleitung zur Seitenbearbeitung (Authoring){#quick-guide-to-authoring-pages}
 
@@ -63,9 +62,7 @@ Bevor wir eine Übersicht über die Details präsentieren, finden Sie hier eine 
 >Es gibt eine Reihe von Tastaturbefehlen, die die Bearbeitung vereinfachen.
 >
 >* [Tastaturbefehle bei der Seitenbearbeitung](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
->* [Tastaturbefehle für Konsolen](/help/sites-authoring/keyboard-shortcuts.md)
-
->
+* [Tastaturbefehle für Konsolen  ](/help/sites-authoring/keyboard-shortcuts.md)
 
 
 
@@ -98,7 +95,7 @@ Es gibt verschiedene Möglichkeiten, eine Seite zu finden: Sie können navigiere
 
 1. Dadurch wird der Assistent geöffnet, der Sie durch das Erfassen der erforderlichen Informationen beim [Erstellen der neuen Seite](/help/sites-authoring/managing-pages.md#creating-a-new-page) führt. Befolgen Sie die Anweisungen auf dem Bildschirm.
 
-### Auswählen Ihrer Seite für weitere Aktionen   {#selecting-your-page-for-further-action}
+### Auswählen Ihrer Seite für weitere Aktionen    {#selecting-your-page-for-further-action}
 
 Sie können eine Seite auswählen, um Aktionen damit auszuführen. Wenn Sie eine Seite auswählen, wird die Symbolleiste automatisch aktualisiert, damit die für diese Ressource relevanten Aktionen angezeigt werden.
 
@@ -123,8 +120,7 @@ Wie Sie eine Seite auswählen, hängt von der in der Konsole verwendeten Ansicht
 
    * Auf der Karte wird die ausgewählte Seite durch ein Häkchen gekennzeichnet.
    >[!NOTE]
-   >
-   >Wenn Sie sich im Auswahlmodus befinden, ändert sich das Symbol **Auswählen** (ein Häkchen) in das Symbol **Deaktivieren** (ein Kreuz).
+   Wenn Sie sich im Auswahlmodus befinden, ändert sich das Symbol **Auswählen** (ein Häkchen) in das Symbol **Deaktivieren** (ein Kreuz).
 
 ### Schnellaktionen (nur Kartenansicht/Desktop) {#quick-actions-card-view-desktop-only}
 
@@ -179,8 +175,7 @@ So bearbeiten Sie Ihre Seite:
 
       * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Verwenden Sie die Symbole **Kopieren** und **Einfügen** nach Bedarf.
    >[!NOTE]
-   >
-   >Sie können Komponenten auf derselben oder einer anderen Seite **einfügen**. Wenn Sie Komponenten auf einer anderen Seite einfügen, die bereits vor dem Ausschneiden und Kopieren geöffnet war, muss diese Seite aktualisiert werden.
+   Sie können Komponenten auf derselben oder einer anderen Seite **einfügen**. Wenn Sie Komponenten auf einer anderen Seite einfügen, die bereits vor dem Ausschneiden und Kopieren geöffnet war, muss diese Seite aktualisiert werden.
 
    * Eine Komponente [löschen](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste):
 
@@ -197,8 +192,7 @@ So bearbeiten Sie Ihre Seite:
    * Mit der Dropdown-Auswahl **Bearbeiten** zum Bearbeitungsmodus zurückkehren (oder einen anderen Modus auswählen)
 
    >[!NOTE]
-   >
-   >Verwenden Sie den [Vorschaumodus](/help/sites-authoring/editing-content.md#preview-mode), wenn Sie mithilfe von Links im Inhalt navigieren möchten.
+   Verwenden Sie den [Vorschaumodus](/help/sites-authoring/editing-content.md#preview-mode), wenn Sie mithilfe von Links im Inhalt navigieren möchten.
 
 ### Bearbeiten der Seiteneigenschaften    {#editing-the-page-properties}
 
@@ -275,8 +269,7 @@ Diese Aktionen können alle wie folgt ausgelöst werden:
 
       * Sie werden aufgefordert, den Vorgang zu bestätigen.
    >[!NOTE]
-   >
-   >Löschen ist nicht als Schnellaktion verfügbar.
+   Löschen ist nicht als Schnellaktion verfügbar.
 
 ### Sperren (und Entsperren) Ihrer Seite {#locking-your-page-then-unlocking}
 
