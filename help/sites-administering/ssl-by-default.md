@@ -10,20 +10,19 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 93ee9338fc2e78d01a9b62e8040c4674262ef6be
+exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 74%
 
 ---
 
-
 # Die Funktion „SSL By Default“ (SSL als Standard){#ssl-by-default}
 
-Um die Sicherheit von AEM kontinuierlich zu verbessern, hat die Adobe eine Funktion namens &quot;SSL by Default&quot;eingeführt. Der Zweck dieser Funktion ist, die Verwendung von HTTPS zum Herstellen einer Verbindung zu AEM-Instanzen zu fördern.
+Um die Sicherheit von AEM kontinuierlich zu verbessern, hat Adobe eine Funktion namens &quot;SSL By Default&quot;eingeführt. Der Zweck dieser Funktion ist, die Verwendung von HTTPS zum Herstellen einer Verbindung zu AEM-Instanzen zu fördern.
 
-## Aktivieren der Funktion „SSL By Default“ (SSL als Standard) {#enabling-ssl-by-default}
+## Aktivieren der Funktion „SSL By Default“ (SSL als Standard)  {#enabling-ssl-by-default}
 
 Sie beginnen mit der Konfiguration der Funktion „SSL By Default“ (SSL als Standard), indem Sie auf Ihrem AEM-Startbildschirm im Posteingang auf die relevante Nachricht klicken. Drücken Sie zum Aufrufen des Posteingangs auf das Glockensymbol in der oberen rechten Ecke des Bildschirms. Klicken Sie dann auf **Alles anzeigen**. Daraufhin wird eine Liste mit allen Warnungen, die in einer Listenansicht angeordnet sind, angezeigt.
 
@@ -33,11 +32,11 @@ Wählen Sie in der Liste die Warnung **HTTPS konfigurieren** aus und öffnen Sie
 
 >[!NOTE]
 >
->Wenn die Warnung **HTTPS konfigurieren** nicht im Posteingang vorhanden ist, können Sie direkt zum HTTPS-Assistenten navigieren, indem Sie *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>* aufrufen.
+>Wenn der Warnhinweis **HTTPS** im Posteingang nicht vorhanden ist, können Sie direkt zum HTTPS-Assistenten navigieren, indem Sie zu *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>* navigieren.
 
-Ein Dienstbenutzer mit dem Namen **ssl-service** wurde für diese Funktion erstellt. Nach dem Öffnen der Warnung werden Sie durch den folgenden Konfigurationsassistenten geführt:
+Ein Dienstbenutzer mit dem Namen **ssl-service** wurde für diese Funktion erstellt. Nach dem Öffnen des Warnhinweises werden Sie durch den folgenden Konfigurationsassistenten geführt:
 
-1. Richten Sie als Erstes die Store-Anmeldedaten ein. Dies sind die Anmeldeinformationen für den Hauptspeicher des Systembenutzers **ssl-service**, der den privaten Schlüssel und den Trust Store für den HTTPS-Listener enthält.
+1. Richten Sie als Erstes die Store-Anmeldedaten ein. Dies sind die Anmeldeinformationen für den Key Store des Systembenutzers **ssl-service**, der den privaten Schlüssel und den Trust Store für den HTTPS-Listener enthält.
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
@@ -160,7 +159,7 @@ Alternativ können Sie das SSL-Setup auch automatisieren, indem Sie ein Paket ho
 
 ### Generieren eines Paares aus privatem Schlüssel/Zertifikat für die Verwendung im Assistenten {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
-Nachstehend finden Sie ein Beispiel für das Erstellen eines selbstsignierten Zertifikats im DER-Format, das der SSL-Assistent verwenden kann. Installieren Sie OpenSSL basierend auf dem Betriebssystem, öffnen Sie die OpenSSL-Eingabeaufforderung und ändern Sie den Ordner in den Ordner, in dem Sie den privaten Schlüssel/das Zertifikat generieren möchten.
+Nachstehend finden Sie ein Beispiel für das Erstellen eines selbstsignierten Zertifikats im DER-Format, das der SSL-Assistent verwenden kann. Installieren Sie OpenSSL auf der Basis des Betriebssystems, öffnen Sie die OpenSSL-Eingabeaufforderung und ändern Sie den Ordner in den Ordner, in dem Sie den privaten Schlüssel/Zertifikat generieren möchten.
 
 >[!NOTE]
 >
@@ -173,7 +172,7 @@ Nachstehend finden Sie ein Beispiel für das Erstellen eines selbstsignierten Ze
    openssl rsa -in localhostprivate.key -out localhostprivate.key
    ```
 
-1. Erstellen Sie dann eine CSR-Anforderung (Certificate Signing Request) mit einem privaten Schlüssel:
+1. Erstellen Sie dann eine Certificate Signing Request (CSR) mithilfe des privaten Schlüssels:
 
    ```shell
    openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj "/CN=localhost"
@@ -197,7 +196,7 @@ Abschließend laden Sie **localhostprivate.der** als privaten Schlüssel und **l
 
 >[!NOTE]
 >
->Eine zentralisierte Liste mit hilfreichen cURL-Befehlen in AEM finden Sie unter [Verwenden von cURL mit AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html).
+>Eine zentrale Liste mit hilfreichen cURL-Befehlen in AEM finden Sie unter [Verwenden von cURL mit AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) .
 
 Sie können die SSL-Konfiguration auch automatisieren, indem Sie das cURL-Tool verwenden. Posten Sie dazu die Konfigurationsparameter an diese URL:
 
@@ -207,7 +206,7 @@ Nachfolgend sind die Parameter aufgeführt, mit denen Sie die zahlreichen Einste
 
 * `-F "keystorePassword=password"` - das Keystore-Kennwort;
 
-* `-F "keystorePasswordConfirm=password"` - das Keystore-Kennwort bestätigen;
+* `-F "keystorePasswordConfirm=password"` - Bestätigen Sie das KeyStore-Kennwort.
 
 * `-F "truststorePassword=password"` - das TrustStore-Kennwort;
 
@@ -224,7 +223,7 @@ Nachfolgend sind die Parameter aufgeführt, mit denen Sie die zahlreichen Einste
 >
 >Die schnellste Art, cURL auszuführen, um die SSL-Konfiguration zu automatisieren, ist über den Ordner, in dem sich die DER- und CRT-Dateien befinden. Alternativ dazu können Sie den vollständigen Pfad in den Argumenten `privatekeyFile` und „certificateFile“ festlegen.
 >
->Sie müssen auch authentifiziert sein, um die Aktualisierung durchzuführen. Stellen Sie daher sicher, dass Sie den Befehl cURL mit dem Parameter `-u user:passeword` anhängen.
+>Sie müssen auch authentifiziert sein, um die Aktualisierung durchzuführen. Stellen Sie daher sicher, dass Sie den cURL-Befehl mit dem Parameter `-u user:passeword` anhängen.
 >
 >Ein richtiger cURL-Post-Befehl sieht wie folgt aus:
 
