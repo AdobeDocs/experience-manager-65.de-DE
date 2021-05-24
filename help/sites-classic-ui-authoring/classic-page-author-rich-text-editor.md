@@ -6,14 +6,13 @@ contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 7bf6657a8fd7677ab15e0f91324a065b684e2f92
+exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1801'
 ht-degree: 77%
 
 ---
-
 
 # Rich-Text-Editor {#rich-text-editor}
 
@@ -55,9 +54,9 @@ Derzeit ist die Bearbeitung im Kontext für Seitenelemente möglich, die durch d
 >
 >Die [!UICONTROL Titel]-Komponente wurde konzipiert, um kurzen Text ohne Zeilenumbrüche zu enthalten. Wenn Sie einen Titel im kontextbasierten Bearbeitungsmodus bearbeiten, wird durch Einfügen eines Zeilenumbruchs eine neue **Text**-Komponente unter dem Titel geöffnet.
 
-## Funktionen des Rich-Text-Editors {#features-of-the-rich-text-editor}
+## Funktionen des Rich-Text-Editors  {#features-of-the-rich-text-editor}
 
-Der Rich-Text-Editor bietet eine Reihe von Funktionen, die von der Konfiguration](/help/sites-administering/rich-text-editor.md) der einzelnen Komponente abhängen. Die Funktionen sind sowohl für die touchoptimierte als auch für die klassische Benutzeroberfläche verfügbar.[
+Der Rich-Text-Editor bietet eine Reihe von Funktionen, diese [hängen von der Konfiguration](/help/sites-administering/rich-text-editor.md) der einzelnen Komponente ab. Die Funktionen sind sowohl für die Touch-optimierte als auch für die klassische Benutzeroberfläche verfügbar.
 
 ### Grundlegende Zeichenformate {#basic-character-formats}
 
@@ -77,7 +76,7 @@ Alle Funktionen arbeiten als Schalter, wenn Sie also erneut darauf klicken, wird
 
 ### Vordefinierte Stile und Formate  {#predefined-styles-and-formats}
 
-![cq55_rte_stylesparagraphen](assets/cq55_rte_stylesparagraph.png)
+![cq55_rte_stylesparagraph](assets/cq55_rte_stylesparagraph.png)
 
 Ihre Installation kann außerdem vordefinierte Stile und Formate aufweisen, die in den Dropdownlisten **[!UICONTROL Art]** (also Stil) und **[!UICONTROL Format]** zur Verfügung stehen und auf von Ihnen ausgewählten Text angewendet werden können.
 
@@ -87,7 +86,7 @@ Ein Stil kann auf eine bestimmte Zeichenfolge angewendet werden (ein Stil ist CS
 
 Ein Format hingegen wird auf einen gesamt Textabsatz angewendet (Format sind HTML-basiert):
 
-![cq55_rte_paragraphen_use](assets/cq55_rte_paragraph_use.png)
+![cq55_rte_paragraph_use](assets/cq55_rte_paragraph_use.png)
 
 Ein spezifisches Format kann nur geändert werden (der Standardwert lautet **[!UICONTROL Absatz]**).
 
@@ -106,11 +105,11 @@ Die Standardfunktionen **[!UICONTROL Ausschneiden]** und **[!UICONTROL Kopieren]
 * Ausschneiden (Strg+X)
 * Kopieren (Strg-C)
 * Einfügen
-Dies ist der standardmäßige Einfügemechanismus (Strg-V) für die Komponente. bei der Installation standardmäßig konfiguriert, dass [!UICONTROL Aus Word einfügen] verwendet wird.
+Dies ist der standardmäßige Einfügemechanismus (Strg+V) für die Komponente. Wenn Sie vorkonfiguriert installiert haben, ist dies auf [!UICONTROL Aus Word einfügen] konfiguriert.
 
-* Als Text einfügen: Entfernt alle Stile und Formatierungen, um nur den Text einzufügen.
+* Als Text einfügen: Entfernt alle Stile und Formatierungen, um nur den Nur-Text einzufügen.
 
-* Aus Word einfügen: Hierdurch wird der Inhalt als HTML eingefügt (mit einigen erforderlichen Neuformatierungen).
+* Aus Word einfügen: Dadurch wird der Inhalt als HTML eingefügt (mit einigen erforderlichen Neuformatierungen).
 
 ### Rückgängig/Wiederholen {#undo-redo}
 
@@ -152,13 +151,13 @@ Verschachtelte Listen lassen sich durch Einrücken eines oder mehrerer Listenpun
 
 Der Stil der Liste kann einfach dadurch geändert werden, dass Sie den Cursor innerhalb der Liste platzieren und einen anderen Stil wählen. Außerdem kann eine Unterliste einen anderen Stil aufweisen als die übergeordnete Liste. Dieser Stil kann angewendet werden, sobald Sie die Unterliste (durch Einrücken) erstellt haben.
 
-![cq55_rte_Listen_use](assets/cq55_rte_lists_use.png)
+![cq55_rte_lists_use](assets/cq55_rte_lists_use.png)
 
 ### Links {#links}
 
 ![](do-not-localize/cq55_rte_links.png)
 
-Ein Link zu einer URL (entweder innerhalb Ihrer Website oder an einer externen Position) wird generiert, indem der erforderliche Text markiert und anschließend auf das Hyperlink-Symbol geklickt wird:
+Ein Link zu einer URL (entweder innerhalb Ihrer Website oder an einer externen Position) wird durch Hervorhebung des erforderlichen Texts und anschließendes Klicken auf das Hyperlink-Symbol generiert:
 
 ![](do-not-localize/chlimage_1-9.png)
 
@@ -168,21 +167,21 @@ Daraufhin wird ein Dialogfeld angezeigt, in dem Sie die Ziel-URL angeben können
 
 Sie haben folgende Möglichkeiten:
 
-* Direkte Eingabe einer URI
-* Verwenden Sie die Siteübersicht, um eine Seite innerhalb Ihrer Website auszuwählen.
-* Geben Sie den URI ein und fügen Sie dann den Anker für die Zielgruppe an. z. B. `www.TargetUri.org#AnchorName`
+* Direktes Eingeben eines URI
+* Verwenden Sie die Sitemap, um eine Seite innerhalb Ihrer Website auszuwählen.
+* Geben Sie den URI ein und hängen Sie dann den Zielanker an. z. B. `www.TargetUri.org#AnchorName`
 * Geben Sie nur einen Anker ein (um auf &quot;die aktuelle Seite&quot;zu verweisen). Beispiel: `#anchor`
-* Suchen Sie nach einer Seite in der Inhaltssuche und ziehen Sie dann das Seitensymbol in das Hyperlink-Dialogfeld
+* Suchen Sie im Content Finder nach einer Seite und ziehen Sie dann das Seitensymbol in das Dialogfeld &quot;Hyperlink&quot;.
 
 >[!NOTE]
 >
->Der URI kann jedes der Protokolle vorangestellt werden, die für die jeweilige Installation konfiguriert sind. Bei einer Standardinstallation sind dies `https://`, `ftp://` und `mailto:`. Protokolle, die nicht für die jeweilige Installation konfiguriert sind, werden zurückgewiesen und als ungültig markiert.
+>Der URI kann jedes der Protokolle vorangestellt werden, die für die jeweilige Installation konfiguriert sind. In einer Standardinstallation sind dies `https://`, `ftp://` und `mailto:`. Protokolle, die nicht für die jeweilige Installation konfiguriert sind, werden zurückgewiesen und als ungültig markiert.
 
 Um den Hyperlink zu entfernen, klicken Sie auf eine beliebige Stelle innerhalb des Link-Texts und klicken Sie auf das Symbol[!UICONTROL Verknüpfung aufheben]:
 
 ![](do-not-localize/chlimage_1-10.png)
 
-### Anker  {#anchors}
+### Anker {#anchors}
 
 ![](do-not-localize/cq55_rte_anchor.png)
 
@@ -250,7 +249,7 @@ Tabellen können auf zwei Arten eingefügt werden:
 
    >[!NOTE]
    >
-   >Obwohl Tabellen in der RTE verfügbar sind, wird empfohlen, beim Erstellen von Tabellen die Komponente **Tabelle** zu verwenden.
+   >Obwohl Tabellen im RTE verfügbar sind, wird empfohlen, beim Erstellen von Tabellen die Komponente **Tabelle** zu verwenden.
 
 Sowohl in der Komponente **Text** als auch in der Komponente **Tabelle** sind die Tabellenoptionen über das Kontextmenü verfügbar, das in der Regel durch Klicken mit der rechten Maustaste auf die Tabelle aufgerufen wird. Beispiel:
 
@@ -263,12 +262,12 @@ Sowohl in der Komponente **Text** als auch in der Komponente **Tabelle** sind di
 Dies sind die tabellenspezifischen Funktionen:
 
 * [Tabelleneigenschaften](#table-properties)
-* [Cell Properties](#cell-properties)
-* [Add or Delete Rows](#add-or-delete-rows)
-* [Add or Delete Columns](#add-or-delete-columns)
-* [Selecting Entire Rows or Columns](#selecting-entire-rows-or-columns)
-* [Merge Cells](#merge-cells)
-* [Split Cells](#split-cells)
+* [Zellen-Eigenschaften](#cell-properties)
+* [Zeilen hinzufügen oder löschen](#add-or-delete-rows)
+* [Spalten hinzufügen oder löschen](#add-or-delete-columns)
+* [Ganze Zeilen oder Spalten auswählen](#selecting-entire-rows-or-columns)
+* [Zellen verbinden](#merge-cells)
+* [Zellen teilen](#split-cells)
 * [Verschachtelte Tabellen](#creating-nested-tables)
 * [Tabelle entfernen](#remove-table)
 
@@ -286,9 +285,9 @@ Sie können die grundlegenden Eigenschaften der Tabelle angeben und dann auf **O
 
 * **Rahmen**: Die Größe des Tabellenrahmens.
 
-* **Zellfüllung**: Dies definiert den Leerraum zwischen dem Zelleninhalt und seinen Rändern.
+* **Zellauffüllung**: Dadurch wird der Leerraum zwischen dem Zelleninhalt und den Rändern definiert.
 
-* **Zellabstand**: Dies definiert den Abstand zwischen den Zellen.
+* **Zellenabstand**: Dies definiert den Abstand zwischen den Zellen.
 
 >[!NOTE]
 >
@@ -308,10 +307,10 @@ Die Eigenschaften einer Zelle bzw. einer Reihe von Zellen können konfiguriert w
 
 * **Breite**
 * **Höhe**
-* **Horizontale Ausrichtung**  - links, zentriert oder rechts
-* **Vertikale Ausrichtung** : oben, Mitte, unten oder Grundlinie
+* **Horizontale Ausrichtung**  - Links, Mitte oder Rechts
+* **Vertikale Ausrichtung**  - oben, Mitte, unten oder Grundlinie
 * **Zellentyp** - Daten oder Kopfzeile
-* **Anwenden auf:** Einzelne Zelle, gesamte Zeile, Gesamte Spalte
+* **Anwenden auf:** Einzelne Zelle, gesamte Zeile, gesamte Spalte
 
 #### Zeilen hinzufügen oder löschen {#add-or-delete-rows}
 
@@ -362,7 +361,7 @@ Durch Erstellen einer verschachtelten Tabelle wird eine neue separate Tabelle in
 >Bestimmte weitere Optionen sind browserabhängig.
 >
 >* Windows IE: Verwenden Sie Strg+primäre Maustaste (in der Regel linke Maustaste) zur Auswahl mehrerer Zellen.
->* Firefox: Ziehen Sie den Zeiger, um einen Zellbereich auszuwählen.
+>* Firefox: Ziehen Sie den Mauszeiger, um einen Zellenbereich auszuwählen.
 
 
 #### Remove Table {#remove-table}
