@@ -10,15 +10,14 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 5d68a101-67e1-4dbc-9943-24fb754d4f77
 docset: aem65
-feature: Language Copy
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Sprachkopie
+exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 81%
 
 ---
-
 
 # Assistent „Sprachkopie erstellen“{#language-copy-wizard}
 
@@ -26,7 +25,7 @@ Der Assistent „Sprachkopie erstellen“ führt Sie durch die Erstellung und Ve
 
 >[!NOTE]
 >
->Der Benutzer muss Mitglied der Gruppe der Projektadministratoren sein, um die Sprachkopie einer Site zu erstellen.
+>Der Benutzer muss Mitglied der Gruppe &quot;project-administrators&quot;sein, um die Sprachkopie einer Site zu erstellen.
 
 Sie können wie folgt auf diesen Assistenten zugreifen:
 
@@ -61,4 +60,3 @@ Sie können wie folgt auf diesen Assistenten zugreifen:
 1. Mit der Schaltfläche **Erstellen** wird der Assistent beendet.
 
    ![chlimage_1-14](assets/chlimage_1-14.jpeg)
-
