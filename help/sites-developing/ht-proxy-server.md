@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: dfbc1d2f-80c1-4564-a01c-a5028b7257d7
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 7222a0c3-cdb9-4c73-9d53-26f00792e439
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 91%
 
 ---
-
 
 # Verwendung des Proxyservertools{#how-to-use-the-proxy-server-tool}
 
@@ -69,7 +68,7 @@ Aktivieren Sie den binären Modus, wenn Sie nach bestimmten Bytekombinationen im
 
 Fügt jedem Eintrag im Protokoll einen Zeitstempel hinzu. Der Zeitstempel wird in Sekunden angegeben, weshalb er möglicherweise nicht zur Prüfung einzelner Anfragen geeignet ist. Verwenden Sie die Option, um Ereignisse ausfindig zu machen, die zu einem bestimmten Zeitpunkt erfolgt sind, wenn Sie den Proxyserver über einen längeren Zeitraum nutzen.
 
-`-logfile <filename>`(in Protokolldatei schreiben)
+`-logfile <filename>`(Schreiben in Protokolldatei)
 
 Schreibt die Interaktionen zwischen Client und Server in eine Protokolldatei. Dieser Parameter kann auch im stillen Modus genutzt werden.
 
@@ -90,7 +89,7 @@ So kann eine Webseitenanforderung zum Beispiel wie folgt aussehen:
 * „C“ gibt an, dass dieser Eintrag vom Client stammt (es handelt sich dabei um die Anforderung einer Webseite).
 * „0“ ist die Verbindungsnummer (der Verbindungszähler startet bei 0).
 * # 00000 ist der Versatz im Bytestream. Hierbei handelt es sich um den ersten Eintrag, weshalb der Versatz bei 0 ist.
-* `[GET <?>]` ist der Inhalt der Anforderung, im Beispiel einer der HTTP-Header (URL).
+* `[GET <?>]` ist der Inhalt der Anfrage, im Beispiel einer der HTTP-Header (URL).
 
 Wenn eine Verbindung geschlossen wird, werden die folgenden Informationen protokolliert:
 
@@ -129,11 +128,11 @@ Der Inhalt von `test.html` lautet:
 </html>
 ```
 
-Wenn die AEM Instanz auf `localhost:4502` ausgeführt wird, wird der Proxy wie folgt Beginn:
+Wenn die AEM-Instanz auf `localhost:4502` ausgeführt wird, starten wir den Proxy wie folgt:
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-Die CQ/CRX-Instanz kann nun über den Proxy unter `localhost:4444` aufgerufen werden und die gesamte Kommunikation über diesen Anschluss wird an `test.log` protokolliert.
+Die CQ-/CRX-Instanz kann jetzt über den Proxy unter `localhost:4444` aufgerufen werden und die gesamte Kommunikation über diesen Port wird unter `test.log` protokolliert.
 
 Wenn Sie sich nun die Ausgabe des Proxys ansehen, können Sie die Interaktion zwischen dem Browser und der AEM-Instanz beobachten.
 
@@ -148,7 +147,7 @@ Wenn Sie anschließend einen Browser öffnen und auf die Testseite unter
 
 `http://localhost:4444/content/test.html`
 
-und wir sehen, dass der Browser eine `GET` Anforderung für die Seite stellt:
+und wir sehen, dass der Browser eine `GET` -Anfrage für die Seite stellt:
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]
@@ -233,4 +232,3 @@ Gehen Sie wie folgt vor, wenn gelegentlich hängende Anforderungen auftreten:
 * Starten Sie den Proxy.
 * Warten Sie oder schreiben Sie das Zugriffsprotokoll in eine Datei, in der jeder Eintrag einen Zeitstempel aufweist.
 * Wenn hängende Anforderungen auftreten, können Sie sehen, wie viele Verbindungen offen waren und welche Anforderung dafür verantwortlich ist.
-
