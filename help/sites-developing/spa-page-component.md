@@ -10,14 +10,13 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6329301c-1a26-4a46-99ae-1b7cc15b08be
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 14cc66dfef7bc7781907bdd6093732912c064579
+exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 89%
 
 ---
-
 
 # SPA-Seitenkomponente{#spa-page-component}
 
@@ -25,7 +24,7 @@ In einer SPA stellt die Seitenkomponente die HTML-Elemente ihrer untergeordneten
 
 >[!NOTE]
 >
->Der SPA Editor ist die empfohlene Lösung für Projekte, bei denen SPA Framework-basiertes clientseitiges Rendering (z.B. React oder Angular) erforderlich ist.
+>Der SPA Editor ist die empfohlene Lösung für Projekte, die SPA Framework-basiertes Client-seitiges Rendering erfordern (z. B. React oder Angular).
 
 ## Einführung {#introduction}
 
@@ -92,9 +91,9 @@ Die Meta-Ressourceneigenschaften, die den SPA-Inhalt beschreiben:
 
 >[!CAUTION]
 >
->Dieses Dokument verwendet die App &quot;We.Retail Protokoll&quot;nur zu Demonstrationszwecken. Sie sollte nicht für Projektaufgaben verwendet werden.
+>In diesem Dokument wird die App &quot;We.Retail Journal&quot;nur zu Demonstrationszwecken verwendet. Sie sollte nicht für Projektaufgaben verwendet werden.
 >
->Jedes AEM Projekt sollte das [AEM Projekt Archetype](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html) nutzen, das SPA Projekte mit React oder Angular unterstützt und das SPA SDK nutzt.Alle SPA Projekte auf AEM sollten auf dem Maven Archetype for SPA Starter Kit basieren.
+>Jedes AEM Projekt sollte den [AEM Projektarchetyp](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html) nutzen, der SPA Projekte mit React oder Angular unterstützt und das SPA SDK nutzt. Alle SPA Projekte auf AEM sollten auf dem Maven-Archetyp für SPA Starter Kit basieren.
 
 ## Synchronisation von Seiteneditor-Überlagerungen {#page-editor-overlay-synchronization}
 
