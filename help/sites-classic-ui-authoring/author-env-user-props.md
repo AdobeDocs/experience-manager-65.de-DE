@@ -10,14 +10,13 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: d6f55d2c-e7a9-4421-918c-6000c6961776
 docset: aem65
-translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+exl-id: 9abdaa6d-79ee-448e-a23f-d216433591f8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 80%
 
 ---
-
 
 # Konfigurieren der Kontoumgebung{#configuring-your-account-environment}
 
@@ -25,8 +24,8 @@ AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenum
 
 Über die [Kontoeinstellungen](#account-settings) und [Benutzereinstellungen](#user-preferences) können die folgenden Optionen und Einstellungen definiert werden:
 
-* **Bearbeitungssymbolleiste** Legen Sie fest, ob die globale Bearbeitungssymbolleiste angezeigt werden soll. Diese Symbolleiste, die oben im Browser-Fenster angezeigt wird, zeigt Ihnen 
-**Kopieren**,  **Ausschneiden**,  **Einfügen** und  **** Löschen für die Verwendung mit den Absatzkomponenten auf dieser Seite:
+* **Bearbeitungssymbolleiste** Legen Sie fest, ob die globale Bearbeitungssymbolleiste angezeigt werden soll. Diese Symbolleiste, die oben im Browser-Fenster angezeigt wird, bietet Ihnen 
+**Kopieren**,  **Ausschneiden**,  **Einfügen**,  **** Löschen für die Verwendung mit den Absatzkomponenten auf dieser Seite:
 
    * Bei Bedarf anzeigen (Standardeinstellung)
    * Immer anzeigen
@@ -36,7 +35,7 @@ AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenum
 Mit der Funktion [Identität annehmen als](/help/sites-administering/security.md#impersonating-another-user) kann ein Benutzer im Namen eines anderen Benutzers arbeiten.
 
 * ****
-SpracheDie für die Benutzeroberfläche der Authoring-Umgebung zu verwendende Sprache. Wählen Sie in der verfügbaren Liste die gewünschte Sprache aus.
+SpracheDie Sprache, die für die Benutzeroberfläche der Authoring-Umgebung verwendet werden soll. Wählen Sie in der Liste die gewünschte Sprache aus.
 
 * **Fensterverwaltung**
 Wählen Sie entweder:
