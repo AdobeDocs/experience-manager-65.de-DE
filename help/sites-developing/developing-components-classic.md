@@ -10,14 +10,13 @@ topic-tags: components
 content-type: reference
 discoiquuid: c68f724f-f9b3-4018-8d3a-1680c53d73f8
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
-translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2423'
 ht-degree: 72%
 
 ---
-
 
 # Entwickeln von AEM-Komponenten (klassische Benutzeroberfläche){#developing-aem-components-classic-ui}
 
@@ -25,19 +24,19 @@ Die klassische Benutzeroberfläche nutzt ExtJS, um Widgets zu erstellen, die das
 
 >[!NOTE]
 >
->Viele Aspekte der Komponentenentwicklung sind sowohl in der klassischen Benutzeroberfläche als auch in der touchfähigen Benutzeroberfläche üblich. **Sie müssen daher [AEM Komponenten - Die Grundlagen](/help/sites-developing/components-basics.md) lesen, bevor Sie** diese Seite verwenden, die sich mit den Besonderheiten der klassischen Benutzeroberfläche befasst.
+>Viele Aspekte der Komponentenentwicklung sind sowohl in der klassischen als auch in der Touch-optimierten Benutzeroberfläche üblich. **Sie müssen daher [AEM Komponenten - Die Grundlagen](/help/sites-developing/components-basics.md) vor** diese Seite lesen, die sich mit den Besonderheiten der klassischen Benutzeroberfläche befasst.
 
 >[!NOTE]
 >
 >Auch wenn die HTML Template Language (HTL) und JSP beide für die Entwicklung von Komponenten für die klassische Benutzeroberfläche verwendet werden können, ist auf dieser Seite nur die Entwicklung mit JSP abgebildet. Dies liegt einzig an der Historie der Verwendung von JSP für die klassische Benutzeroberfläche.
 >
->HTL ist jetzt die empfohlene Skriptsprache für AEM. Siehe [HTL](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html) und [Entwickeln von AEM](/help/sites-developing/developing-components.md) zum Vergleichen von Methoden.
+>HTL ist jetzt die empfohlene Skriptsprache für AEM. Siehe [HTL](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html) und [Entwickeln AEM Komponenten](/help/sites-developing/developing-components.md) , um Methoden zu vergleichen.
 
 ## Struktur {#structure}
 
-Die Grundstruktur einer Komponente wird auf der Seite [AEM Komponenten - Die Grundlagen](/help/sites-developing/components-basics.md#structure) behandelt, auf der sowohl die Touch- als auch die klassische Benutzeroberfläche angewendet wird. Auch wenn Sie die Einstellungen für die Touch-optimierte Benutzeroberfläche in Ihrer neuen Komponente nicht verwenden müssen, ist es möglicherweise hilfreich, diese beim Vererben aus vorhandenen Komponenten zu beachten.
+Die grundlegende Struktur einer Komponente wird auf der Seite [AEM Komponenten - Die Grundlagen](/help/sites-developing/components-basics.md#structure) behandelt, auf der sowohl die Touch-optimierte als auch die klassische Benutzeroberfläche angewendet werden. Auch wenn Sie die Einstellungen für die Touch-optimierte Benutzeroberfläche in Ihrer neuen Komponente nicht verwenden müssen, ist es möglicherweise hilfreich, diese beim Vererben aus vorhandenen Komponenten zu beachten.
 
-## JSP-Skripte {#jsp-scripts}
+## JSP-Skripte  {#jsp-scripts}
 
 JSP-Skripte oder -Servlets können verwendet werden, um Komponenten zu rendern. Gemäß den Anforderungsverarbeitungsregeln von Sling lautet der Name für das Standardskript:
 
@@ -55,7 +54,7 @@ Der Speicherort der standardmäßigen `global.jsp` ist:
 
 >[!NOTE]
 >
->Der Pfad `/libs/wcm/global.jsp`, der von den Versionen CQ 5.3 und früher verwendet wurde, ist jetzt veraltet.
+>Der Pfad `/libs/wcm/global.jsp`, der von den Versionen CQ 5.3 und früher verwendet wurde, ist nun veraltet.
 
 ### Funktion von global.jsp, verwendeten APIs und Taglibs {#function-of-global-jsp-used-apis-and-taglibs}
 
@@ -70,7 +69,7 @@ Zusammenfassung:
    * `resource` - Das Sling-Ressourcenobjekt (  `slingRequest.getResource();`).
    * `resourceResolver` - Das Sling Resource Resolver-Objekt (  `slingRequest.getResoucreResolver();`).
    * `currentNode` – der aufgelöste JCR-Knoten für die Anforderung.
-   * `log` - Die Standard-Protokollfunktion ().
+   * `log` - Die Standardprotokollierung ().
    * `sling` - Der Sling-Skript-Helfer.
    * `properties` - Die Eigenschaften der adressierten Ressource (  `resource.adaptTo(ValueMap.class);`).
    * `pageProperties` – die Eigenschaften der Seite der betreffenden Ressource.
@@ -84,23 +83,23 @@ Zusammenfassung:
 
 Es gibt drei Methoden für den Zugriff auf Inhalte in AEM WCM:
 
-* Über das in `global.jsp` eingeführte Eigenschaftsobjekt:
+* Über das Eigenschaftenobjekt, das in `global.jsp` eingeführt wurde:
 
-   Das properties-Objekt ist eine Instanz einer ValueMap (siehe [Sling API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ValueMap.html)) und enthält alle Eigenschaften der aktuellen Ressource.
+   Das properties -Objekt ist eine Instanz einer ValueMap (siehe [Sling API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ValueMap.html)) und enthält alle Eigenschaften der aktuellen Ressource.
 
-   Beispiel: `String pageTitle = properties.get("jcr:title", "no title");` wird im Renderskript einer Seitenkomponente verwendet.
+   Beispiel: `String pageTitle = properties.get("jcr:title", "no title");` wird im Rendering-Skript einer Seitenkomponente verwendet.
 
-   Beispiel: `String paragraphTitle = properties.get("jcr:title", "no title");` wird im Rendering-Skript einer Standardabsatzkomponente verwendet.
+   Beispiel: `String paragraphTitle = properties.get("jcr:title", "no title");` wird im Rendering-Skript einer standardmäßigen Absatzkomponente verwendet.
 
-* Über das in `global.jsp` eingeführte `currentPage`-Objekt:
+* Über das `currentPage`-Objekt, das in `global.jsp` eingeführt wird:
 
-   Das `currentPage`-Objekt ist eine Instanz einer Seite (siehe [AEM API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.mhtml)). Die Seitenklasse bietet verschiedene Methoden, um auf Inhalte zuzugreifen.
+   Das `currentPage` -Objekt ist eine Instanz einer Seite (siehe [AEM API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.mhtml)). Die Seitenklasse bietet verschiedene Methoden, um auf Inhalte zuzugreifen.
 
    Beispiel: `String pageTitle = currentPage.getTitle();`
 
-* Über `currentNode`-Objekt eingeführt in `global.jsp`:
+* Über das `currentNode`-Objekt, das in `global.jsp` eingeführt wird:
 
-   Das `currentNode`-Objekt ist eine Instanz eines Knotens (siehe [JCR-API](https://jackrabbit.apache.org/api/2.16/org/apache/jackrabbit/standalone/cli/core/CurrentNode.html)). Auf die Eigenschaften eines Knotens kann mit der `getProperty()`-Methode zugegriffen werden.
+   Das `currentNode` -Objekt ist eine Instanz eines Knotens (siehe [JCR-API](https://jackrabbit.apache.org/api/2.16/org/apache/jackrabbit/standalone/cli/core/CurrentNode.html)). Auf die Eigenschaften eines Knotens kann über die `getProperty()`-Methode zugegriffen werden.
 
    Beispiel: `String pageTitle = currentNode.getProperty("jcr:title");`
 
@@ -114,21 +113,21 @@ Weitere Informationen finden Sie im Dokument [Tag-Bibliotheken](/help/sites-deve
 
 Moderne Websites beruhen in hohem Maße auf der clientseitigen Verarbeitung durch einen komplexen JavaScript- und CSS-Code. Die Organisation und Optimierung der Bereitstellung dieses Codes kann äußerst kompliziert sein.
 
-Um dieses Problem zu lösen, stellt AEM **Clientseitige Bibliotheksordner** bereit, mit denen Sie den clientseitigen Code im Repository speichern, in Kategorien organisieren und definieren können, wann und wie die einzelnen Kategorien von Code dem Client bereitgestellt werden sollen. Das clientseitige Bibliotheksystem übernimmt dann das Herstellen der richtigen Links auf der endgültigen Webseite, um den korrekten Code zu laden.
+Um dieses Problem zu beheben, stellt AEM **Client-seitige Bibliotheksordner** bereit, mit denen Sie Ihren clientseitigen Code im Repository speichern, in Kategorien organisieren und definieren können, wann und wie jede Codekategorie dem Client bereitgestellt werden soll. Das clientseitige Bibliotheksystem übernimmt dann das Herstellen der richtigen Links auf der endgültigen Webseite, um den korrekten Code zu laden.
 
-Weitere Informationen finden Sie im Dokument [Verwenden clientseitiger HTML-Bibliotheken](/help/sites-developing/clientlibs.md).
+Weitere Informationen finden Sie im Dokument [Verwendung clientseitiger HTML-Bibliotheken](/help/sites-developing/clientlibs.md) .
 
 ## Dialogfeld {#dialog}
 
 Ihre Komponente benötigt ein Dialogfeld für Autoren, um Inhalte hinzuzufügen und zu konfigurieren.
 
-Weitere Informationen finden Sie unter [AEM Komponenten - Die Grundlagen](/help/sites-developing/components-basics.md#dialogs).
+Weitere Informationen finden Sie unter [AEM Komponenten - Grundlagen](/help/sites-developing/components-basics.md#dialogs) .
 
 ## Konfigurieren des Bearbeitungsverhaltens {#configuring-the-edit-behavior}
 
 Sie können das Bearbeitungsverhalten einer Komponente konfigurieren. Hierzu zählen Attribute, wie für die Komponente verfügbare Aktionen, Eigenschaften des Editors für die Bearbeitung im Kontext und die Listener, die im Zusammenhang mit den Ereignissen der Komponente stehen. Die Konfiguration ist für die Touch-optimierte und die klassische Benutzeroberfläche dieselbe, auch wenn bestimmte, spezifische Unterschiede bestehen.
 
-Das [Bearbeitungsverhalten einer Komponente wird konfiguriert, indem unter dem Komponentenknoten (vom Typ `cq:Component`) ein `cq:editConfig`-Knoten des Typs `cq:EditConfig` hinzugefügt und bestimmte Eigenschaften und untergeordnete Knoten hinzugefügt werden.](/help/sites-developing/components-basics.md#edit-behavior)
+Das [Bearbeitungsverhalten einer Komponente wird](/help/sites-developing/components-basics.md#edit-behavior) konfiguriert, indem ein `cq:editConfig` -Knoten des Typs `cq:EditConfig` unter dem Komponentenknoten (vom Typ `cq:Component`) hinzugefügt und spezifische Eigenschaften und untergeordnete Knoten hinzugefügt werden.
 
 ## Verwenden und Erweitern von ExtJS-Widgets {#using-and-extending-extjs-widgets}
 
@@ -159,19 +158,19 @@ Um neue Komponenten für AEM basierend auf einer vorhandenen Komponente zu entwi
    * von `/libs/foundation/components/text`
    * in `/apps/myProject/components/text`
 
-1. Ändern Sie `jcr:title`, um den neuen Namen wiederzugeben.
+1. Ändern Sie `jcr:title`, um den neuen Namen widerzuspiegeln.
 1. Öffnen Sie den neuen Komponentenordner und nehmen Sie die erforderlichen Änderungen vor. Löschen Sie zudem alle irrelevanten Informationen im Ordner.
 
    Sie können Änderungen vornehmen, wie etwa:
 
    * Hinzufügen eines neuen Felds im Dialogfeld
 
-      * `cq:dialog` - Dialogfeld für die touchfähige Benutzeroberfläche
+      * `cq:dialog` - Dialogfeld für die Touch-optimierte Benutzeroberfläche
       * `dialog` – Dialogfeld für die klassische Benutzeroberfläche
-   * Ersetzen der Datei `.jsp` (Benennen Sie sie nach der neuen Komponente)
+   * Ersetzen der `.jsp`-Datei (nennen Sie sie nach der neuen Komponente)
    * oder vollständiges Überarbeiten der gesamten Komponente, falls gewünscht
 
-   Wenn Sie beispielsweise eine Kopie der Standardtextkomponente erstellen, können Sie dem Dialogfeld ein zusätzliches Feld hinzufügen und dann das `.jsp` aktualisieren, um die dort eingegebenen Daten zu verarbeiten.
+   Wenn Sie beispielsweise eine Kopie der standardmäßigen Textkomponente erstellen, können Sie dem Dialogfeld ein zusätzliches Feld hinzufügen und dann das `.jsp` aktualisieren, um die dort vorgenommenen Eingaben zu verarbeiten.
 
    >[!NOTE]
    >
@@ -191,21 +190,21 @@ Um neue Komponenten für AEM basierend auf einer vorhandenen Komponente zu entwi
 
 1. Einer der folgenden Knoten muss vorhanden und ordnungsgemäß initialisiert sein, damit die neue Komponente angezeigt wird:
 
-   * `cq:dialog` - Dialogfeld für die touchfähige Benutzeroberfläche
+   * `cq:dialog` - Dialogfeld für die Touch-optimierte Benutzeroberfläche
    * `dialog` – Dialogfeld für die klassische Benutzeroberfläche
    * `cq:editConfig` – Verhalten von Komponenten in der Bearbeitungsumgebung (z. B Ziehen und Ablegen)
    * `design_dialog` - Dialogfeld für den Designmodus (nur klassische Benutzeroberfläche)
 
 1. Aktivieren Sie die neue Komponente in Ihrem Absatzsystem anhand folgender Optionen:
 
-   * Verwenden der CRXDE Lite, um den Wert `<path-to-component>` (z. B. `/apps/geometrixx/components/myComponent`) den Eigenschaftenkomponenten des Knotens `/etc/designs/geometrixx/jcr:content/contentpage/par` hinzuzufügen.
+   * mithilfe der CRXDE Lite den Wert `<path-to-component>` (z. B. `/apps/geometrixx/components/myComponent`) zu den Eigenschaftskomponenten des Knotens `/etc/designs/geometrixx/jcr:content/contentpage/par` hinzufügen
    * Beachten der Anweisungen in [Hinzufügen neuer Komponenten zu Absatzsystemen](#adding-a-new-component-to-the-paragraph-system-design-mode)
 
 1. Öffnen Sie in AEM WCM auf Ihrer Website eine Seite und fügen Sie einen neuen Absatz vom gerade erstellten Typ ein, um zu gewährleisten, dass die Komponente ordnungsgemäß funktioniert.
 
 >[!NOTE]
 >
->Zum Anzeigen der Zeitstatistiken für das Laden der Seite können Sie Strg-Umschalt-U verwenden - wobei `?debugClientLibs=true` in der URL eingestellt ist.
+>Um Zeitstatistiken für das Laden von Seiten anzuzeigen, können Sie Strg-Umschalt-U verwenden - wobei `?debugClientLibs=true` in der URL festgelegt ist.
 
 ### Hinzufügen einer neuen Komponente zum Absatzsystem (Designmodus) {#adding-a-new-component-to-the-paragraph-system-design-mode}
 
@@ -253,13 +252,13 @@ Die folgenden Techniken werden in dieser Übung erläutert:
 
 >[!NOTE]
 >
->Dieses Beispiel beruht auf dem Geometrixx-Beispielinhalt, der nicht mehr im Lieferumfang von AEM enthalten ist und durch We.Retail ersetzt wird. Informationen zum Herunterladen und Installieren von Geometrixx finden Sie im Dokument [We.Retail Reference Implementation](/help/sites-developing/we-retail.md#we-retail-geometrixx).
+>Dieses Beispiel beruht auf dem Geometrixx-Beispielinhalt, der nicht mehr im Lieferumfang von AEM enthalten ist und durch We.Retail ersetzt wird. Informationen zum Herunterladen und Installieren von Geometrixx finden Sie im Dokument [We.Retail Reference Implementation](/help/sites-developing/we-retail.md#we-retail-geometrixx) .
 
 #### Erweitern der vorhandenen textimage-Komponente {#extending-the-existing-textimage-component}
 
-Um die neue Komponente zu erstellen, verwenden wir die Standard-textimage-Komponente als Grundlage und ändern sie. Wir speichern die neue Komponente in der Geometrixx-AEM WCM-Beispielanwendung.
+Um die neue Komponente zu erstellen, verwenden wir die standardmäßige textimage-Komponente als Grundlage und ändern sie. Wir speichern die neue Komponente in der Geometrixx-AEM WCM-Beispielanwendung.
 
-1. Kopieren Sie die Standardtextimage-Komponente von `/libs/foundation/components/textimage` in den Komponentenordner `/apps/geometrixx/components`, wobei Sie textimage als Zielgruppe-Knotenname verwenden. (Kopieren Sie die Komponente, indem Sie zur Komponente navigieren, mit der rechten Maustaste klicken, „Kopieren“ auswählen und zum Zielverzeichnis navigieren.)
+1. Kopieren Sie die standardmäßige textimage-Komponente von `/libs/foundation/components/textimage` in den Geometrixx-Komponentenordner `/apps/geometrixx/components`, wobei Sie textimage als Zielknotennamen verwenden. (Kopieren Sie die Komponente, indem Sie zur Komponente navigieren, mit der rechten Maustaste klicken, „Kopieren“ auswählen und zum Zielverzeichnis navigieren.)
 
    ![chlimage_1-59](assets/chlimage_1-59a.png)
 
@@ -267,13 +266,13 @@ Um die neue Komponente zu erstellen, verwenden wir die Standard-textimage-Kompon
 
    * Dialogdefinition: `textimage/dialog`
    * Komponentenskript: `textimage/textimage.jsp`
-   * Konfigurationsknoten bearbeiten (Drag &amp; Drop von Assets möglich): `textimage/cq:editConfig`
+   * Bearbeitungskonfigurationsknoten (erlaubt Drag &amp; Drop von Assets): `textimage/cq:editConfig`
 
    >[!NOTE]
    >
    >Die Dialogfelddefinition hängt von der Benutzeroberfläche ab:
    >
-   >* Touch-aktivierte Benutzeroberfläche: `textimage/cq:dialog`
+   >* Touch-optimierte Benutzeroberfläche: `textimage/cq:dialog`
    >* Klassische Benutzeroberfläche: `textimage/dialog`
 
 
@@ -281,20 +280,20 @@ Um die neue Komponente zu erstellen, verwenden wir die Standard-textimage-Kompon
 
    * Komponentenname
 
-      * `jcr:description` auf `Text Image Component (Extended)` setzen
-      * `jcr:title` auf `Text Image (Extended)` setzen
+      * Setzen Sie `jcr:description` auf `Text Image Component (Extended)`
+      * Setzen Sie `jcr:title` auf `Text Image (Extended)`
    * Gruppe, in der die Komponente im Sidekick aufgelistet ist (unverändert lassen)
 
-      * Lassen Sie `componentGroup` auf `General` eingestellt
+      * Lassen Sie `componentGroup` auf `General` gesetzt
    * Übergeordnete Komponente für die neue Komponente (die standardmäßige textimage-Komponente)
 
-      * `sling:resourceSuperType` auf `foundation/components/textimage` setzen
+      * Setzen Sie `sling:resourceSuperType` auf `foundation/components/textimage`
 
    Nach diesem Schritt sieht der Komponentenknoten wie folgt aus:
 
    ![chlimage_1-60](assets/chlimage_1-60a.png)
 
-1. Ändern Sie die Eigenschaft `sling:resourceType` des Konfigurationsknotens zum Bearbeiten des Bildes (Eigenschaft: `textimage/cq:editConfig/cq:dropTargets/image/parameters/sling:resourceType`) bis `geometrixx/components/textimage.`
+1. Ändern Sie die Eigenschaft `sling:resourceType` des Bearbeitungskonfigurationsknotens des Bildes (Eigenschaft: `textimage/cq:editConfig/cq:dropTargets/image/parameters/sling:resourceType`) bis `geometrixx/components/textimage.`
 
    Auf diese Weise wird beim Ablegen eines Bilds in der Komponente auf der Seite die `sling:resourceType`-Eigenschaft der erweiterten textimage-Komponente auf `geometrixx/components/textimage.` festgelegt.
 
@@ -307,21 +306,21 @@ Um die neue Komponente zu erstellen, verwenden wir die Standard-textimage-Kompon
    * Für die ersten beiden Registerkarten (tab1 und tab2):
 
       * Ändern Sie xtype in cqinclude (um von der Standardkomponente zu erben).
-      * hinzufügen einer Pfadeigenschaft mit den Werten `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json`und `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`.
+      * Fügen Sie eine Pfadeigenschaft mit den Werten `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json`und `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json` hinzu.
       * Entfernen Sie alle anderen Eigenschaften oder Unterknoten.
    * Für tab3:
 
       * Lassen Sie die Funktionen und Unterknoten unverändert.
-      * hinzufügen einer neuen Felddefinition auf `tab3/items`, Knotenposition des Typs `cq:Widget`
+      * Fügen Sie `tab3/items`, die Knotenposition des Typs `cq:Widget`, eine neue Felddefinition hinzu.
       * Legen Sie die folgenden Eigenschaften (vom Typ String) für den neuen Knoten `tab3/items/position`fest:
 
          * `name`: `./imagePosition`
          * `xtype`:  `selection`
          * `fieldLabel`:  `Image Position`
          * `type`:  `select`
-      * hinzufügen Unterknoten `position/options` des Typs `cq:WidgetCollection`, um die beiden Optionen für die Bildplatzierung darzustellen, und erstellen Sie darunter zwei Knoten, o1 und o2 des Typs `nt:unstructured`.
-      * Legen Sie für Knoten `position/options/o1` die Eigenschaften fest: `text` bis `Left` und `value` bis `left.`
-      * Legen Sie für Knoten `position/options/o2` die Eigenschaften fest: `text` bis `Right` und `value` bis `right`.
+      * Fügen Sie den Unterknoten `position/options` des Typs `cq:WidgetCollection` hinzu, um die beiden Optionen für die Bildplatzierung darzustellen, und erstellen Sie darunter zwei Knoten, o1 und o2 des Typs `nt:unstructured`.
+      * Legen Sie für den Knoten `position/options/o1` die Eigenschaften fest: `text` bis `Left` und `value` bis `left.`
+      * Legen Sie für den Knoten `position/options/o2` die Eigenschaften fest: `text` bis `Right` und `value` bis `right`.
    * Löschen Sie tab4.
 
    Die Bildposition wird im Inhalt als `imagePosition`-Eigenschaft des Knotens beibehalten, der für den Absatz `textimage` steht. Nach diesen Schritten sieht das Komponentendialogfeld folgendermaßen aus:
@@ -368,9 +367,9 @@ Die Komponente speichert den Inhalt in einem Absatz auf der Unternehmensseite.
 
 ### Upload-Funktion der image-Komponente deaktivieren  {#disable-upload-capability-of-the-image-component}
 
-Um diese Funktion zu deaktivieren, verwenden wir die Standard-Bildkomponente als Grundlage und ändern sie. Wir speichern die neue Komponente in der Geometrixx-Beispielanwendung.
+Um diese Funktion zu deaktivieren, verwenden wir die standardmäßige Bildkomponente als Grundlage und ändern sie. Wir speichern die neue Komponente in der Geometrixx-Beispielanwendung.
 
-1. Kopieren Sie die Standardbildkomponente von `/libs/foundation/components/image` in den Komponentenordner `/apps/geometrixx/components`, wobei Sie image als Zielgruppe-Knotenname verwenden.
+1. Kopieren Sie die standardmäßige Bildkomponente von `/libs/foundation/components/image` in den Komponentenordner `/apps/geometrixx/components`, wobei Sie image als Zielknotennamen verwenden.
 
    ![chlimage_1-62](assets/chlimage_1-62a.png)
 
@@ -401,4 +400,3 @@ Um diese Funktion zu deaktivieren, verwenden wir die Standard-Bildkomponente als
    ![chlimage_1-65](assets/chlimage_1-65a.png)
 
 1. Die Komponente ist jetzt einsatzbereit.
-
