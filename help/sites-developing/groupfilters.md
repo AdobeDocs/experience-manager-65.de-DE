@@ -11,14 +11,13 @@ content-type: reference
 discoiquuid: 9fef1f91-a222-424a-8e20-3599bedb8b41
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
-translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 86%
 
 ---
-
 
 # Erstellen von Gerätegruppenfiltern{#creating-device-group-filters}
 
@@ -32,11 +31,11 @@ Entwerfen Sie Ihre Filter so, dass Sie Kombinationen von ihnen verwenden können
 
 Nachdem Sie einen Filter erstellt haben, können Sie ihn in der [Gruppenkonfiguration](/help/sites-developing/mobile.md#creating-a-device-group) verwenden.
 
-## Die Filter-Java-Klasse {#the-filter-java-class}
+## Die Filter-Java-Klasse  {#the-filter-java-class}
 
 Ein Gerätegruppenfilter ist eine OSGi-Komponente, die die Schnittstelle [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) implementiert. Bei der Bereitstellung stellt die Implementierungsklasse einen Filterservice bereit, der für Gerätegruppenkonfigurationen verfügbar ist.
 
-Die in diesem Artikel beschriebene Lösung verwendet das Apache Felix Maven-SCR-Plug-in, um die Entwicklung von Komponenten und Diensten zu erleichtern. Daher verwendet die Java-Beispielklasse die Anmerkungen `@Component`und `@Service`. Die Klasse hat die folgende Struktur:
+Die in diesem Artikel beschriebene Lösung verwendet das Apache Felix Maven-SCR-Plug-in, um die Entwicklung von Komponenten und Diensten zu erleichtern. Daher verwendet die Java-Beispielklasse die Anmerkungen `@Component`und `@Service` . Die Klasse hat die folgende Struktur:
 
 ```java
 package com.adobe.example.myapp;
@@ -107,7 +106,7 @@ boolean cssSupport = true;
 cssSupport = NumberUtils.toInt(capabilities.get(DeviceSpecsConstants.DSPEC_XHTML_SUPPORT_LEVEL)) > 1;
 ```
 
-Das `org.apache.commons.lang.math`-Paket stellt die Klasse `NumberUtils` bereit.
+Das Paket `org.apache.commons.lang.math` stellt die Klasse `NumberUtils` bereit.
 
 >[!NOTE]
 >
@@ -117,7 +116,7 @@ Das `org.apache.commons.lang.math`-Paket stellt die Klasse `NumberUtils` bereit.
 
 Die folgende Beispiel-Implementierung von DeviceGroupFilter bestimmt, ob die physische Größe des Geräts die Mindestanforderungen erfüllt. Dieser Filter soll der Touch-Gerätegruppe Granularität verleihen. Die Größe der Schaltflächen in der Anwendungsoberfläche sollte unabhängig von der physischen Bildschirmgröße gleich sein. Die Größe von anderen Elementen, z. B. Text, kann variieren. Der Filter ermöglicht die dynamische Auswahl eines bestimmten CSS, das die Größe der Benutzeroberflächenelemente steuert.
 
-Dieser Filter wendet Größenkriterien auf die Namen der Eigenschaften `physical_screen_height` und `physical_screen_width` WURFL™ an.
+Dieser Filter wendet Größenkriterien auf die Namen der WURFL™-Eigenschaften `physical_screen_height` und `physical_screen_width` an.
 
 ```java
 package com.adobe.example.myapp;
@@ -172,7 +171,7 @@ Der Stringwert, den die getTitle-Methode in der Dropdown-Liste der Gerätegruppe
 
 Die Stringwerte, die die getTitle- und getDescription-Methoden zurückgeben, sind am unteren Rand der Zusammenfassungsseite der Gerätegruppe enthalten.
 
-![filterbeschreibung](assets/filterdescription.png)
+![filterdescription](assets/filterdescription.png)
 
 ### Die Maven POM-Datei {#the-maven-pom-file}
 
@@ -186,11 +185,11 @@ Der folgende POM-Code ist nützlich, wenn Sie Maven zum Erstellen Ihrer Anwendun
 
 **Abhängigkeiten:**
 
-* `cq-wcm-mobile-api-5.5.2.jar`: Stellt die DeviceGroup- und DeviceGroupFilter-Schnittstellen bereit.
+* `cq-wcm-mobile-api-5.5.2.jar`: Stellt die Schnittstellen DeviceGroup und DeviceGroupFilter bereit.
 
 * `org.apache.felix.scr.annotations.jar`: Stellt die Anmerkungen zu Komponenten und Diensten bereit.
 
-Die DeviceGroup- und DeviceGroupFilter-Schnittstellen sind im Day Communique 5 WCM Mobile API-Bundle enthalten. Die Felix-Anmerkungen sind im Apache Felix Declarative Services Bundle enthalten. Sie können diese JAR-Datei über das öffentliche Adobe-Repository beziehen.
+Die DeviceGroup- und DeviceGroupFilter-Schnittstellen sind im Day Communique 5 WCM Mobile API-Bundle enthalten. Die Felix-Anmerkungen sind im Apache Felix Declarative Services-Bundle enthalten. Sie können diese JAR-Datei über das öffentliche Adobe-Repository beziehen.
 
 Zum Zeitpunkt der Erstellung ist 5.5.2 die Version des WCM Mobile API-Bundles, das in der neuesten Version von AEM enthalten ist. Verwenden Sie die Adobe Web Console ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)), um sicherzustellen, dass dies die Bundle-Version ist, die in Ihrer Umgebung bereitgestellt wird.
 
