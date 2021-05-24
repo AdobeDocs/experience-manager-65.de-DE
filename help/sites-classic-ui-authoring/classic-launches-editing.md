@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 666b967a-e94b-4f94-a676-00adf150580f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 21776f42-cd81-459d-b4b9-1d92e0aec164
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 100%
 
 ---
-
 
 # Bearbeiten von Launches{#editing-launches}
 
@@ -58,7 +57,7 @@ Wenn Sie einen Launch erstellt haben, können Sie den Namen und das Datum des La
 
 1. Klicken Sie auf **Speichern**.
 
-## Ermitteln des Launch-Status einer Seite   {#discovering-the-launch-status-of-a-page}
+## Ermitteln des Launch-Status einer Seite  {#discovering-the-launch-status-of-a-page}
 
 Wenn Sie den Launch einer Seite bearbeiten, werden unten auf der Registerkarte **Versionierung** des Sidekicks Informationen zum Launch angezeigt:
 
@@ -68,4 +67,3 @@ Wenn Sie den Launch einer Seite bearbeiten, werden unten auf der Registerkarte *
 * Der Status des Flags **Produktionsbereit** (orange = nicht festgelegt; grün = festgelegt). 
 
 ![chlimage_1-186](assets/chlimage_1-186.png)
-
