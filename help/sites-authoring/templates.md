@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 149cdd00f745ad897f506434d7156b8147ef5bae
+exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '4901'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
-
 
 # Erstellen von Seitenvorlagen {#creating-page-templates}
 
@@ -46,7 +45,7 @@ Ausführliche Informationen zur Funktionsweise von bearbeitbaren Vorlagen auf te
 
 >[!CAUTION]
 >
->Seiten und Vorlagen, die mit der **Vorlagenkonsole** erstellt wurden, sind nicht für die Verwendung mit der klassischen Benutzeroberfläche vorgesehen und werden nicht unterstützt.
+>Seiten und Vorlagen, die mit der **Vorlagenkonsole** erstellt wurden, sind nicht für die Verwendung mit der klassischen Benutzeroberfläche vorgesehen und eine solche Verwendung wird nicht unterstützt.
 
 ## Bevor Sie beginnen {#before-you-start}
 
@@ -94,7 +93,7 @@ Aufgrund der Natur einiger Aufgaben (etwa dem Erstellen eines Ordners) ist eine 
 
 Die im vorliegenden Dokument beschriebenen Aufgaben sind zusammen mit der Rolle der Person aufgeführt, die für die Ausführung der Aufgaben verantwortlich ist.
 
-### Bearbeitbare und statische Vorlagen {#editable-and-static-templates}
+### Bearbeitbare und statische Vorlagen  {#editable-and-static-templates}
 
 AEM bietet jetzt zwei grundlegende Arten von Vorlagen:
 
@@ -111,7 +110,7 @@ AEM bietet jetzt zwei grundlegende Arten von Vorlagen:
    * Sie werden [von Ihren Entwicklern bereitgestellt](/help/sites-developing/page-templates-static.md) und können somit nicht von Autoren erstellt oder bearbeitet werden.
    * Sie werden kopiert, um die neue Seite zu erstellen, wobei danach keine dynamische Verbindung besteht (obwohl der Name der Vorlage zu Informationszwecken registriert ist).
    * Verwenden Sie den [Designmodus](/help/sites-authoring/default-components-designmode.md), um Designeigenschaften beizubehalten.
-   * Da die Bearbeitung statischer Vorlagen die exklusive Aufgabe eines Entwicklers ist, finden Sie weitere Informationen im Developer Dokument [Seitenvorlagen - Statisch](/help/sites-developing/page-templates-static.md).
+   * Da die Bearbeitung statischer Vorlagen die ausschließliche Aufgabe eines Entwicklers ist, finden Sie im Entwicklerdokument [Seitenvorlagen - Statisch](/help/sites-developing/page-templates-static.md) weitere Informationen.
 
 Laut Definition ermöglichen die Vorlagenkonsole und der Vorlagen-Editor nur das Erstellen und Bearbeiten von bearbeitbaren Vorlagen. Das vorliegende Dokument beschäftigt sich daher nur mit bearbeitbaren Vorlagen.
 
@@ -148,7 +147,7 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 
 >[!CAUTION]
 >
->Geben Sie in eine Vorlage nie Informationen ein, die [internationalisiert](/help/sites-developing/i18n.md) werden müssen. Für die Internalisierung werden die [lokale Anpassung-Funktionen der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) empfohlen.
+>Geben Sie in eine Vorlage nie Informationen ein, die [internationalisiert](/help/sites-developing/i18n.md) werden müssen. Für die Internationalisierung werden die [Lokalisierungsfunktionen der Hauptkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=de) empfohlen.
 
 ### Erstellen eines Vorlagenordners – Administrator {#creating-a-template-folder-admin}
 
@@ -211,9 +210,9 @@ So zeigen Sie die Eigenschaften an bzw. bearbeiten sie:
 
 >[!NOTE]
 >
->Vorlagen sind leistungsstarke Tools zur Optimierung Ihres Arbeitsablaufs bei der Seitenerstellung. Allerdings können zu viele Vorlagen die Autoren überwältigen und die Erstellung von Seiten verwirrend machen. Eine gute Faustregel ist, die Anzahl der Vorlagen unter 100 zu halten.
+>Vorlagen sind leistungsstarke Tools zur Optimierung des Seitenerstellungs-Workflows. Allerdings können zu viele Vorlagen die Autoren überwältigen und das Erstellen von Seiten unübersichtlich machen. Eine gute Faustregel ist, die Anzahl der Vorlagen unter 100 zu halten.
 >
->Adobe empfiehlt, aufgrund möglicher Leistungsauswirkungen nicht mehr als 1000 Vorlagen zu verwenden.
+>Adobe empfiehlt, aufgrund möglicher Leistungsauswirkungen nicht mehr als 1.000 Vorlagen zu verwenden.
 
 >[!NOTE]
 >
@@ -474,7 +473,7 @@ Im Modus **Struktur** des Vorlagen-Editors:
 
    Um eine Konfiguration zu entfernen, klicken oder tippen Sie auf die Schaltfläche **Löschen**, die sich rechts neben der Konfiguration befindet.
 
-   Um eine Konfiguration zu entfernen, klicken oder tippen Sie auf die Schaltfläche** Löschen*.
+   Um eine Konfiguration zu entfernen, klicken oder tippen Sie auf die Schaltfläche &quot;Löschen&quot;.
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -623,7 +622,7 @@ Der Seitenentwurf, einschließlich der erforderlichen Client-seitigen Bibliothek
 
 So greifen Sie auf das Dialogfeld **Seitendesign** zu:
 
-1. Wählen Sie in der Symbolleiste **Vorlageneditor** **Seiteninformationen** und dann **Seitendesign** aus, um das Dialogfeld zu öffnen.
+1. Wählen Sie im **Vorlagen-Editor** **Seiteninformationen** aus der Symbolleiste und dann **Seitendesign** aus, um das Dialogfeld zu öffnen.
 1. Das Dialogfeld **Seitendesign** wird geöffnet. Es ist in zwei Abschnitte unterteilt:
 
    * Die linke Hälfte definiert die [Seitenrichtlinien](/help/sites-authoring/templates.md#page-policies).
@@ -664,7 +663,7 @@ Mithilfe der Seiteneigenschaften können Sie die erforderlichen Client-seitigen 
 
 ![chlimage_1-162](assets/chlimage_1-162.png)
 
-* Geben Sie die Client-seitigen Bibliotheken an, die auf die mit dieser Vorlage erstellten Seiten angewendet werden sollen. Eingabe des Namens einer Bibliothek in das Textfeld im Bereich **Client-Bibliothekn**.
+* Geben Sie die Client-seitigen Bibliotheken an, die auf die mit dieser Vorlage erstellten Seiten angewendet werden sollen. Eingabe des Namens einer Bibliothek in das Textfeld im Bereich **Client-Bibliotheken**.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
