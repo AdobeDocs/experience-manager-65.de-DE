@@ -10,14 +10,13 @@ topic-tags: operations
 content-type: reference
 discoiquuid: da92d751-6f14-4512-9d77-7ecf098bd58e
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 8b53e79e3a88f58423e99477db930a4912a1ba09
+exl-id: ab4fc41f-e0e9-4577-aab2-f0b4298f9a59
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 93%
 
 ---
-
 
 # Arbeiten mit Protokollen{#working-with-logs}
 
@@ -57,7 +56,7 @@ Die Protokollebenen lauten wie folgt:
 
 ## Ausführliche Option „verbose“ zur Fehlerbehebung {#verbose-option-used-for-troubleshooting}
 
-Beim Beginn von CRX können Sie die Option -v (verbose) wie folgt zur Befehlszeile hinzufügen:
+Wenn Sie CRX starten, können Sie die Option -v (verbose) zur Befehlszeile hinzufügen, wie in:
 
 ` java -jar crx-<*version*>-<*edition*>.jar -v`
 
