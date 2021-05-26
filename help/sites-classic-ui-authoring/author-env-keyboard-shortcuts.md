@@ -26,10 +26,8 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich e
 >Mehrfachauswahl auf einem Desktop-Gerät:
 >
 >* Windows: **Strg** + **Klick** auf die erforderlichen Komponenten.
-   >
-   >
-* Mac: **Befehl** + **Klick** auf die erforderlichen Komponenten.
-
+>
+>* Mac: **Befehl** + **Klick** auf die erforderlichen Komponenten.
 >
 
 
