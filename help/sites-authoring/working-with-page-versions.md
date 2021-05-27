@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 1368347a-9b65-4cfc-87e1-62993dc627fd
 docset: aem65
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4d5f7057178ea0a1f00ea363b76dacdfb714b5e3
 workflow-type: tm+mt
-source-wordcount: '1094'
-ht-degree: 97%
+source-wordcount: '1487'
+ht-degree: 98%
 
 ---
 
@@ -62,40 +62,109 @@ Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 
 1. Bestätigen Sie die neue Version, indem Sie auf **Erstellen** klicken.
 
-   Die Informationen in der Timeline werden entsprechend der neuen Version aktualisiert.
+   Die Informationen in der Zeitleiste werden entsprechend der neuen Version aktualisiert.
 
-## Wiederherstellen einer früheren Seitenversion {#reverting-to-a-page-version}
+## Reaktivierung von Versionen {#reinstating-versions}
 
-Nachdem eine Version erstellt wurde, können Sie diese Version bei Bedarf wiederherstellen.
+Nachdem Sie eine Version Ihrer Seite erstellt haben, gibt es verschiedene Methoden, eine ältere Version zu reaktivieren:
+
+* die Option **Auf diese Version zurück** in der [Zeitleiste](/help/sites-authoring/basic-handling.md#timeline).
+
+   Reaktivieren Sie eine frühere Version einer ausgewählten Seite.
+
+* die Optionen zum **Wiederherstellen** in der oberen [Symbolleiste für Aktionen](/help/sites-authoring/basic-handling.md#actions-toolbar)
+
+   * **Version wiederherstellen**
+
+      Reaktivieren Sie Versionen bestimmter Seiten im derzeit ausgewählten Ordner; dies kann auch die Wiederherstellung von zuvor gelöschten Seiten umfassen.
+
+   * **Baum wiederherstellen**
+
+      Reaktivieren Sie eine Version eines gesamten Baums zu einem bestimmten Datum und einer bestimmten Uhrzeit; dies kann Seiten umfassen, die zuvor gelöscht wurden.
 
 >[!NOTE]
 >
->Wenn eine Seite wiederhergestellt wird, gehört die erstellte Version zu einem neuen Zweig.
+>Wenn eine Seite reaktiviert wird, gehört die erstellte Version zu einem neuen Zweig.
 >
 >Beispiel:
 >
 >1. Erstellen Sie Versionen einer beliebigen Seite.
->1. Die anfänglichen Etiketten und Versionsknotennamen lauten 1.0, 1.1, 1.2 usw.
->1. Stellen Sie die erste Version wieder her, d. h. Version 1.0.
+>1. Die anfänglichen Beschriftungen und Versionsknotennamen lauten 1.0, 1.1, 1.2 usw.
+>1. Reaktivieren Sie die erste Version, d. h. Version 1.0.
 >1. Erstellen Sie weitere neue Versionen.
 >1. Die erzeugten Beschriftungen und Knotennamen lauten jetzt 1.0.0, 1.0.1, 1.0.2 usw.
 
->
 
+### Auf eine Version zurücksetzen {#revert-to-a-version}
 
-
-So stellen Sie eine frühere Version wieder her:
+So können Sie die ausgewählte Seite in einer früheren Version **wiederherstellen**:
 
 1. Navigieren Sie zu der Seite, für die Sie eine frühere Version wiederherstellen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Öffnen Sie die **Zeitleiste** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus. Die Seitenversionen für die ausgewählte Seite werden aufgelistet.
 1. Wählen Sie die Version, die Sie wiederherstellen möchten. Die möglichen Optionen werden angezeigt:
 
-   ![screen-shot_2019-03-05at112505](assets/screen-shot_2019-03-05at112505.png)
+   ![Auf diese Version zurück](assets/screen-shot_2019-03-05at112505.png)
 
 1. Wählen Sie **Auf diese Version zurück**. Die ausgewählte Version wird wiederhergestellt und die Informationen in der Zeitleiste werden aktualisiert.
 
-## Vorschau einer Version    {#previewing-a-version}
+### Version wiederherstellen {#restore-version}
+
+Mit dieser Methode können Versionen bestimmter Seiten im aktuellen Ordner wiederhergestellt werden. Dies kann auch die Wiederherstellung von Seiten umfassen, die zuvor gelöscht wurden:
+
+1. Navigieren Sie zum gewünschten Ordner und [wählen](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) Sie ihn aus.
+
+1. Wählen Sie **Wiederherstellen** und dann **Version wiederherstellen** in der oberen [Symbolleiste für Aktionen](/help/sites-authoring/basic-handling.md#actions-toolbar).
+
+   >[!NOTE]
+   >
+   >Wenn Sie:
+   >
+   >* eine einzelne Seite ausgewählt haben, die noch nie untergeordnete Seiten hatte,
+   >* oder keine der Seiten im Ordner Versionen enthält,
+
+   >
+   >ist die Anzeige leer, da keine Versionen verfügbar sind.
+
+1. Die verfügbaren Versionen werden aufgeführt:
+
+   ![Version wiederherstellen – Liste aller Seiten im Ordner](/help/sites-authoring/assets/versions-restore-version-01.png)
+
+1. Verwenden Sie für eine bestimmte Seite die Dropdown-Auswahl unter **WIEDERHERZUSTELLENDE VERSION**, um die erforderliche Version für diese Seite auszuwählen.
+
+   ![Version wiederherstellen – Version auswählen](/help/sites-authoring/assets/versions-restore-version-02.png)
+
+1. Wählen Sie in der Hauptanzeige die zu wiederherzustellende Seite aus:
+
+   ![Version wiederherstellen – Seite auswählen](/help/sites-authoring/assets/versions-restore-version-03.png)
+
+1. Wählen Sie für die ausgewählte Version der ausgewählten Seite, die als aktuelle Version wiederhergestellt werden soll, die Option **Wiederherstellen**.
+
+>[!NOTE]
+>
+>Die Reihenfolge, in der Sie eine erforderliche Seite und die zugehörige Version auswählen, ist austauschbar.
+
+### Baum wiederherstellen {#restore-tree}
+
+Diese Methode kann verwendet werden, um eine Version eines Baums, wie er zu einem bestimmten Datum und zu einer bestimmten Zeit war, wiederherzustellen; dies kann Seiten umfassen, die zuvor gelöscht wurden:
+
+1. Navigieren Sie zum gewünschten Ordner und [wählen](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) Sie ihn aus.
+
+1. Wählen Sie **Wiederherstellen** und dann **Baum wiederherstellen** in der oberen [Symbolleiste für Aktionen](/help/sites-authoring/basic-handling.md#actions-toolbar). Die aktuelle Version des Baums wird angezeigt:
+
+   ![Baum wiederherstellen](/help/sites-authoring/assets/versions-restore-tree-02.png)
+
+1. Verwenden Sie die Datums- und Uhrzeitauswahl unter **Neueste Versionen am Datum**, um eine andere Version des Baums auszuwählen – und zwar die, die wiederhergestellt werden soll.
+
+1. Setzen Sie bei Bedarf das Flag **Seiten ohne Versionsangabe beibehalten**:
+
+   * Wenn diese Option aktiviert (markiert) ist, werden alle Seiten ohne Versionierung beibehalten und von der Wiederherstellung nicht beeinflusst.
+
+   * Wenn diese Option deaktiviert (nicht markiert) ist, werden alle Seiten ohne Versionierung entfernt, da sie nicht im versionierten Baum vorhanden waren.
+
+1. Wählen Sie **Wiederherstellen** für die ausgewählte Version des Baums, die als *aktuelle* Version wiederhergestellt werden soll.
+
+## Vorschau einer Version   {#previewing-a-version}
 
 Sie können eine Vorschau einer bestimmten Version anzeigen:
 
