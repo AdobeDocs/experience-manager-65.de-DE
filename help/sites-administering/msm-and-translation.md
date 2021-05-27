@@ -63,6 +63,6 @@ Das folgende Diagramm veranschaulicht, wie sich die Hauptkonzepte überschneiden
 >* [Best Practices für MSM](/help/sites-administering/msm-best-practices.md); insbesondere:
 >
 >   * [Erstellen einer Website](/help/sites-administering/msm-best-practices.md#create-site)
-   * [MSM und mehrsprachige Websites](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
-* [Best Practices für die Übersetzung](/help/sites-administering/tc-bp.md)
+>   * [MSM und mehrsprachige Websites](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+>* [Best Practices für die Übersetzung](/help/sites-administering/tc-bp.md)
 
