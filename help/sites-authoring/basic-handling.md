@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 440aa5a2f4a020a16104f11eaf484a2cf7291e1f
 workflow-type: tm+mt
-source-wordcount: '2979'
+source-wordcount: '2980'
 ht-degree: 95%
 
 ---
@@ -68,7 +68,7 @@ Sie können mithilfe des globalen Navigationsfensters zwischen den Konsolen navi
 
 Sie können das globale Navigationsfenster schließen, indem Sie auf **Schließen** klicken oder tippen. Sie kehren dann zu Ihrer vorherigen Position zurück.
 
-![bh-03](assets/bh-03.png)
+![bh-05](assets/bh-03.png)
 
 >[!NOTE]
 >
@@ -287,7 +287,7 @@ Wie Sie [eine Ressource auswählen](/help/sites-authoring/basic-handling.md#view
 
 Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbolleiste schnell länger als der verfügbare Platz werden. In diesem Fall werden weitere Optionen angezeigt. Durch Klicken oder Tippen auf die Auslassungspunkte (drei Punkte bzw. **…**) wird eine Dropdown-Auswahl geöffnet, die alle verbleibenden Aktionen enthält. Beispiel: Sie haben eine Seite in der **Sites-Konsole** ausgewählt:
 
-![bh-12](assets/bh-12.png)
+![Aktionssymbolleiste](assets/bh-12.png)
 
 >[!NOTE]
 Die einzelnen verfügbaren Symbole werden gemäß der/des jeweils zutreffenden Konsole/Funktion/Szenarios dokumentiert.
@@ -395,7 +395,7 @@ In allen Ansichten kann die Auswahl aller Elemente aufgehoben werden, indem Sie 
 
 1. Beispiel für die Kartenansicht:
 
-   ![bh-15](assets/bh-15.png)
+   ![bh-17](assets/bh-15.png)
 
 1. Nach Auswahl einer Ressource wird die obere Kopfzeile von der [Aktionssymbolleiste](#actionstoolbar) überdeckt, die Zugriff auf die Aktionen bietet, die für die ausgewählte Ressource verfügbar sind.
 
