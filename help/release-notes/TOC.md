@@ -7,7 +7,7 @@ breadcrumb-title: Versionshinweise
 user-guide-description: In den Versionshinweisen erhalten Sie Informationen zu den neuesten neuen Funktionen in AEM 6.5.
 feature: Versionshinweise
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: dafc10e6e73967566ec8bff8ac0e4c39bc7cd885
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 46%
@@ -21,7 +21,7 @@ ht-degree: 46%
 + [Allgemeine Versionshinweise](release-notes.md)
 + Service Pack  – Versionshinweise {#service-pack}
    + [Neue Funktionen](new-features-latest-service-pack.md)
-   + [Service Pack 8 – Versionshinweise](sp-release-notes.md)
+   + [Service Pack 9 – Versionshinweise](sp-release-notes.md)
    + [Frühere Versionshinweise zum Service Pack](previous-hotfixes-featurepacks.md)
 + [Versionshinweise zu AEM Sites](sites.md)
 + [Versionshinweise zu AEM Assets](assets.md)
