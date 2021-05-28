@@ -1,10 +1,10 @@
 ---
 title: AEM Content and Commerce - Versionshinweise 2021
 description: AEM Content and Commerce - Versionshinweise 2021
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+source-git-commit: 99636664a49da3ac5d236db5a1185ad6659ee255
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 14%
+source-wordcount: '648'
+ht-degree: 15%
 
 ---
 
@@ -14,13 +14,37 @@ ht-degree: 14%
 
 Überprüfen Sie die Mindestanforderungen in der folgenden Tabelle für die CIF-Version, die Sie derzeit verwenden oder in Zukunft verwenden möchten.
 
-**Das CIF-Add-on ist jetzt über  [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) verfügbar. Der alte AEM CIF Connector befindet sich im Wartungsmodus und sollte nicht mehr verwendet werden. Migrieren Sie zum neuen CIF-Add-on.**
+**Mit der Version vom April haben wir den CIF Connector von GitHub durch das CIF-Add-on ersetzt, das auf der Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) verfügbar ist. Der Wechsel zum Add-on bringt große Vorteile für Projekte mit sich:
+
+* Die meisten neuen Funktionen stehen ab AEM 6.5 sofort zur Verfügung (keine Wartezeiten mehr auf Feature Side Port).
+* Einfache Aktualisierung auf neue Add-on-Versionen
+* Bereit für Cloud Service
+
+Der alte AEM CIF Connector befindet sich im Wartungsmodus und sollte nicht mehr verwendet werden. Ersetzen Sie den CIF-Connector durch das neue CIF-Add-on. Für die meisten Projekte sollte einfach ein Package-Ersatz möglich sein. **
 
 | Komponente | Systemanforderungen |
 |:-------|:-----:|
 | CIF-Add-on | Minimum: AEM 6.5.7, Magento 2.3.5 GraphQL-Schemata |
 | CIF-Kernkomponenten | [Systemanforderungen](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM-Projektarchetyp | [Systemanforderungen](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Releasedatum: Mai 2021
+
+| Komponente | Version | Details |
+|:-------|:-----:|---------------------:|
+| CIF-Add-on | 2021,05,26 | [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.05.26.zip) |
+| CIF-Kernkomponenten | 1,11,0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.11.0) |
+| CIF Venia-Referenz-Site | 2021,05,24 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.05.24) |
+
+### Neue Funktionen {#what-is-new-may}
+
+* Paginierungsunterstützung für verknüpften Inhalt in den Eigenschaften der Produktkonsole
+
+### Fehlerbehebungen {#bug-fixes-may}
+
+* Asset-Miniaturansichten werden nicht auf der Registerkarte &quot;Asset&quot;der Produkteigenschaften angezeigt
+
+* Breadcrumb setzt Vorschaudaten in der Produktkonsole zurück
 
 ## Releasedatum: April 2021
 
@@ -74,7 +98,7 @@ ht-degree: 14%
 
 ### Neue Funktionen {#what-is-new-february}
 
-* Produkt-Experience-Management: Reichern Sie Produktkatalogseiten einzeln mit Experience Fragments an.
+* Produkt-Experience-Management: Reichern Sie Produktkatalogseiten individuell mit Experience Fragments an.
 
 * Die Eigenschaften der Produktkonsole wurden erweitert, um verknüpfte Assets und Experience Fragments anzuzeigen, einschließlich Aktionen zur schnellen Navigation zum zugehörigen Inhalt.
 
