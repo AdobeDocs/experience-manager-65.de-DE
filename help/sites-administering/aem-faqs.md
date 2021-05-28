@@ -8,10 +8,10 @@ contentOwner: jsyal
 discoiquuid: a3bb5695-6593-413d-9c2f-4c164e663b15
 docset: aem65
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
 workflow-type: tm+mt
-source-wordcount: '1356'
-ht-degree: 80%
+source-wordcount: '1114'
+ht-degree: 74%
 
 ---
 
@@ -93,17 +93,9 @@ Unter [Gründe für die Aktualisierung AEM](https://helpx.adobe.com/experience-m
 
 Wenn der Benutzer, der die Filmdateien hochlädt, nicht über die Berechtigungen zum Löschen für den Asset-Knoten verfügt, schlägt die Löschung von Chunk-Knoten fehl und der Upload wird neu gestartet.
 
-#### Wie viele digitale Assets können derzeit maximal gleichzeitig mit AEM 6.4 hochgeladen werden?  {#what-is-the-maximum-number-of-digital-assets-that-can-be-operated-with-aem-at-a-time}
-
-Mit Adobe Experience Manager (AEM) 6.5 können Sie derzeit jeweils bis zu 2 GB an Assets hochladen.
-
-Weitere Informationen dazu, wie viele digitale Assets derzeit maximal gleichzeitig mit AEM 6.5 hochgeladen werden können, finden Sie im [Handbuch zur Assets-Dimensionierung](/help/assets/assets-sizing-guide.md).
-
 #### Was sind die Standardeinstellungen für OOTB -Konfigurationen beim Erstellen von Sprachkopien? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
-Beim Erstellen von Sprachkopien über die klassische Benutzeroberfläche werden Assets nicht unter die neue Sprachhierarchie verschoben, sondern über den Sprach-Master verwendet.
-
-Wenn Sie hingegen eine Kopie über die Touch-optimierte Benutzeroberfläche erstellen (**Verweise** -> **Sprachkopie aktualisieren**), wird unter der neuen Sprache ein neuer DAM-Ordner erstellt und von dort aus auf Assets verwiesen.
+Wenn Sie eine Sprachkopie über die Touch-Benutzeroberfläche erstellen (**Verweise** -> **Sprachkopie aktualisieren**), wird unter der neuen Sprache ein neuer DAM-Ordner erstellt und von dort aus werden Assets referenziert.
 
 Dies ist die Standardeinstellung für OOTB-Konfigurationen. Sie können in Übersetzungskonfigurationen für die Option **Seiten-Assets übersetzen** die Einstellung **Nicht übersetzen** festlegen.
 Klicken Sie dazu in AEM 6.4 auf **Tools** > **Cloud-Services** > **Übersetzungs-Cloud-Services**.
@@ -115,10 +107,6 @@ Sie können den OSGi Component Disabler deaktivieren. Informationen zur Verwen
 Als Problemumgehung können Sie die Komponente auch manuell deaktivieren und zwar entweder über die Benutzeroberfläche oder per `curl`-Befehl (siehe nachstehendes Beispiel) nach jedem Neustart von AEM.
 
 `curl -u admin:$(pass CQ_Admin) 'https://localhost:4502/system/console/components/com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporter' --data 'action=disable'`
-
-#### Wie lässt sich Asset Insights mit AEM 6.5-Instanzen konfigurieren? {#how-to-configure-asset-insights-with-aem-instance}
-
-Informationen zum Einrichten und Konfigurieren von Asset Insights für Experience Manager, der über Adobe Activation (DTM) bereitgestellt wird, finden Sie unter [Einrichten von Asset Insights mit AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
 #### Wie lassen sich Admin-Konsolen anpassen? {#how-to-customize-admin-consoles}
 
@@ -136,20 +124,8 @@ Um mehr über Suchoptimierung/Ranking zu erfahren und weitere Informationen zur 
 
 Bei der Implementierung der einfachen Suche handelt es sich um die Materialien vom Summit Lab „AEM Search Demystified“ von 2017.
 
-#### Was ist der Unterschied zwischen AEM Assets und AEM MediaLibrary? {#what-is-the-difference-between-aem-assets-and-aem-medialibrary}
-
-AEM Assets ist eine Anwendung auf der AEM-Plattform, durch die unsere Kunden ihre digitalen Assets (Bilder, Videos, Dokumente und Audioclips) in einem webbasierten Repository verwalten können, während die Medienbibliothek AEM Media Library ein bestimmter Teil des AEM WCM-Inhaltsrepositorys ist, in dem Bilder und andere freigegebene Ressourcen gespeichert sind.
-
-Weitere Informationen finden Sie unter [AEM Assets und AEM Media Library](/help/assets/medialibrary.md).
-
-#### Ist es möglich, Plug-ins für WordPress zu erstellen, mit denen Kunden Bilder über die Asset-Auswahl von Adobe auswählen können?  {#is-it-possible-to-build-plugin-for-wordpress-that-allows-a-customer-to-access-adobe-asset-picker-to-select-images}
+#### Ist es möglich, ein Plug-in für WordPress zu erstellen, das einem Kunden den Zugriff auf die Adobe Asset-Auswahl ermöglicht, um Bilder auszuwählen? {#is-it-possible-to-build-plugin-for-wordpress-that-allows-a-customer-to-access-adobe-asset-picker-to-select-images}
 
 Ja, WordPress-Kunden können mithilfe der Asset-Auswahl von Adobe Bilder von ihrem AEM Assets-Server auszuwählen, um sie zu Beiträgen auf ihrer WordPress-Site hinzuzufügen.
 
 Weitere Informationen finden Sie unter [Asset-Wähler](../assets/search-assets.md#assetpicker).
-
-#### Ist es möglich, die Suchfacetten in AEM Assets zu erweitern, um zusätzliche Prädikate hinzuzufügen?  {#is-it-possible-to-extend-the-search-facets-in-aem-assets-to-add-additional-predicates}
-
-Eine unternehmensweite Bereitstellung von Adobe Experience Manager (AEM) Assets bietet die Möglichkeit, eine Vielzahl von Assets zu speichern. Fügen Sie dem standardmäßigen Formular Prädikate hinzu oder verwenden Sie ein benutzerdefiniertes Formular, das Facetten Ihrer Wahl enthält.
-
-Weitere Informationen finden Sie unter [Suchfacetten](/help/assets/search-facets.md).
