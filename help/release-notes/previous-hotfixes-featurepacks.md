@@ -3,7 +3,7 @@ title: '[!DNL Adobe Experience Manager] 6.5 Frühere Versionshinweise zum Servic
 description: Versionshinweise für  [!DNL Adobe Experience Manager] 6.5 Service Packs.
 contentOwner: AK
 exl-id: aeed49a0-c7c2-44da-b0b8-ba9f6b6f7101
-source-git-commit: 8c69687ef4fbc2e4ee729d98232fe56db9b1df5a
+source-git-commit: d06e60baac692c92358244944226b77d5dad4022
 workflow-type: tm+mt
 source-wordcount: '20321'
 ht-degree: 16%
@@ -1107,7 +1107,7 @@ Im Folgenden finden Sie eine Liste der Fehlerbehebungen in [!DNL Experience Mana
 
 * Wenn Sie kaskadierendes Popup in Metadatenschemata verwenden, verschwindet beim Auswählen und Speichern einer Dropdown-Option mit einem Apostroph (aus der untergeordneten Dropdown-Liste) die ausgewählte Apostroph-Option nach dem erneuten Öffnen des Assets [!UICONTROL Eigenschaften] (NPR-32649).
 
-* [!UICONTROL Asset Insights Sync ] JBobile und schlägt fehl, wenn auf ungültige Einträge (auf der Analytics-Seite) gestoßen wird, anstatt zum nächsten Eintrag zu wechseln (NPR-32674).
+* [!UICONTROL Assets Insights Sync ] JBobile schlägt fehl, wenn auf ungültige Einträge (auf der Analytics-Seite) gestoßen wird, anstatt zum nächsten Eintrag zu wechseln (NPR-32674).
 
 * Gyroscope ist nicht funktionsfähig, da die Bewegungssensoren in mobilen Browsern im Panorama-Viewer standardmäßig deaktiviert sind (CQ-4272937).
 
