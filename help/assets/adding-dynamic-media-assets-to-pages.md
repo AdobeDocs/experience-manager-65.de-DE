@@ -11,10 +11,10 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Komponenten,Publishing
-source-git-commit: 00fc290d91de3c194ada837a931f1d86a5557939
+source-git-commit: 8199702fe778f11cc2a953979a4ccfdcef3f1154
 workflow-type: tm+mt
-source-wordcount: '3108'
-ht-degree: 68%
+source-wordcount: '3210'
+ht-degree: 66%
 
 ---
 
@@ -170,16 +170,16 @@ Bearbeiten Sie die folgenden Dynamic Media-Einstellungen, indem Sie in der Kompo
 
    Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** tippen.
 
-<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 * **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
+* **[!UICONTROL Für Geräte mit höherer Auflösung optimieren]**  - Aktivieren Sie das Kontrollkästchen (Standard), um die Optimierung der DPR (Device Pixel Ratio) zu ermöglichen.
 
-  See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
+   Die Option **[!UICONTROL Für Geräte mit höherer Auflösung optimieren]** wird nur angezeigt, wenn Folgendes zutrifft:
+   * Unter &quot;Vorgabetyp&quot;ist **[!UICONTROL Bildvorgabe]** ausgewählt und **[!UICONTROL RESS_IP]** wird aus der Dropdownliste **[!UICONTROL Bildvorgabe]** ausgewählt.
 
-  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored.
+   ![Gerätepixelverhältniseinstellung für Bildvorgabe](/help/assets/assets-dm/dpr-ress-ip.png)
 
-  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
-  * Under Preset Type, **[!UICONTROL Image Preset]** is selected, and **[!UICONTROL RESS_IP]** is selected from the **[!UICONTROL Image Preset]** drop-down list.
+<!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
 
-  ![device pixel ratio setting for image preset](/help/assets/assets-dm/dpr-ress-ip.png) -->
+  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
 
 * **[!UICONTROL Titel]**  - Ändern Sie den Titel des Bildes.
 
@@ -247,17 +247,17 @@ Bearbeiten Sie die folgende Dynamic Media-Einstellung, indem Sie in der Komponen
 
 * **[!UICONTROL Seitenverhältnisübereinstimmung aktivieren]**  - Damit Dynamic Media eine intelligente Zuschnittwiedergabe mit einem Seitenverhältnis wählen kann, das dem Seitenverhältnis des Originalbilds am besten entspricht, wählen Sie diese Option aus.
 
-<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 * **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization. 
+* **[!UICONTROL Für Geräte mit höherer Auflösung optimieren]**  - Aktivieren Sie das Kontrollkästchen (Standard), um die Optimierung der DPR (Device Pixel Ratio) zu ermöglichen.
 
-  See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
+   Die Option **[!UICONTROL Für Geräte mit höherer Auflösung optimieren]** wird nur angezeigt, wenn Folgendes zutrifft:
 
-  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored.
+   * Unter &quot;Vorgabetyp&quot;ist die Option **[!UICONTROL Smartes Zuschneiden]** ausgewählt.
 
-  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
+   ![Gerätepixelverhältniseinstellung für smartes Zuschneiden](/help/assets/assets-dm/dpr-smartcrop.png)
 
-  * Under Preset Type, **[!UICONTROL Smart Crop]** option is selected.
+<!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
 
-  ![device pixel ratio setting for smart crop](/help/assets/assets-dm/dpr-smartcrop.png) -->
+  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
 
 * **[!UICONTROL Titel]**  - Ändern Sie den Titel des Smart-Zuschnitt-Bildes.
 
