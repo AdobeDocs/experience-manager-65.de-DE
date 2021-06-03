@@ -10,14 +10,14 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 exl-id: 9c97f99e-d6ef-4817-8b2a-201ab22f2b38
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 21%
 
 ---
 
-# Konfigurieren der Videokomponente  {#configure-the-video-component}
+# Konfigurieren der Videokomponente {#configure-the-video-component}
 
 Mit der Komponente [Video](/help/sites-authoring/default-components-foundation.md#video) können Sie ein vordefiniertes OTB-Video-Asset (Out-of-the-Box) auf Ihrer Seite platzieren.
 
@@ -81,7 +81,7 @@ Gehen Sie wie folgt vor, um **AEM** zu konfigurieren:
    >
    >Überlagern und bearbeiten Sie den gesamten Profilknoten und nicht nur die Eigenschaft, die geändert werden muss. Solche Ressourcen werden nicht über SlingResourceMerger aufgelöst.
 
-4. Haben Sie eine der Eigenschaften geändert, klicken Sie auf **[!UICONTROL Alle speichern.]**
+4. Haben Sie eine der Eigenschaften geändert, klicken Sie auf **[!UICONTROL Alle speichern]**.
 
 >[!NOTE]
 >
