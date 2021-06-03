@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 exl-id: d2ebfca5-19f9-4fa5-b142-b978f46a912f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '1685'
 ht-degree: 55%
@@ -23,7 +23,7 @@ Sie fügen Dynamic Media-Assets direkt zur Seite hinzu, wenn Sie AEM als Ihren W
 >
 >Imagemaps sind für Karussellbanner umgehend verfügbar.
 
-## Hinzufügen einer Dynamic Media-Komponente zu einer Seite  {#adding-a-dynamic-media-component-to-a-page}
+## Hinzufügen einer Dynamic Media-Komponente zu einer Seite {#adding-a-dynamic-media-component-to-a-page}
 
 Das Hinzufügen der Komponente [!UICONTROL Dynamic Media] oder [!UICONTROL Interaktive Medien] zu einer Seite entspricht dem Hinzufügen einer Komponente zu einer beliebigen Seite. Die Komponenten [!UICONTROL Dynamic Media] und [!UICONTROL Interaktive Medien] werden in den folgenden Abschnitten detailliert beschrieben.
 
@@ -43,7 +43,7 @@ So fügen Sie einer Seite eine Komponente bzw. einen Viewer vom Typ „Dynamisch
 
 ## Komponenten vom Typ „Dynamische Medien“{#dynamic-media-components}
 
-[!UICONTROL Dynamic ] Media und  [!UICONTROL interaktive ] Medien sind im   Sidekickunder  **[!UICONTROL Dynamic Media verfügbar.]** Verwenden Sie die Komponente **[!UICONTROL Interaktive Medien]** für beliebige interaktive Assets wie interaktive Videos, interaktive Bilder oder Karussell-Sets. Verwenden Sie für alle anderen Dynamic Media-Komponenten die Komponente **[!UICONTROL Dynamic Media]** .
+[!UICONTROL Dynamic ] Media und  [!UICONTROL interaktive ] Medien sind im   Sidekickunder  **[!UICONTROL Dynamic Media]** verfügbar. Verwenden Sie die Komponente **[!UICONTROL Interaktive Medien]** für beliebige interaktive Assets wie interaktive Videos, interaktive Bilder oder Karussell-Sets. Verwenden Sie für alle anderen Dynamic Media-Komponenten die Komponente **[!UICONTROL Dynamic Media]** .
 
 ![chlimage_1-71](assets/chlimage_1-71a.png)
 
