@@ -11,10 +11,10 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Administrator
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 3d6b0c696b625869bc4ed682a310399b3b6301fb
 workflow-type: tm+mt
-source-wordcount: '3309'
-ht-degree: 75%
+source-wordcount: '3323'
+ht-degree: 76%
 
 ---
 
@@ -94,6 +94,16 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
   <tr>
    <td><p>Oracle Java™ SE 11 (64 Bit)</p> </td>
    <td><p>Z: Nicht unterstützt</p> </td>
+   <td><p> </p> </td>
+  </tr>
+  <tr>
+   <td>Azul Zulu OpenJDK 11 - 64 Bit</td>
+   <td>Z: Nicht unterstützt</td>
+   <td><p> </p> </td>
+  </tr>
+  <tr>
+   <td>Azul Zulu OpenJDK 8 - 64 Bit</td>
+   <td>Z: Nicht unterstützt</td>
    <td><p> </p> </td>
   </tr>
   <tr>
@@ -555,12 +565,12 @@ Für zusätzliche Anforderungen siehe:
 * Prozessor mit 1 GHz oder höher mit Unterstützung für PAE, NX und SSE2.
 * 1 GB RAM für 32-Bit-Betriebssysteme oder 2 GB RAM für 64-Bit-Betriebssysteme
 * 16 GB Speicherplatz für 32-Bit-Betriebssysteme oder 20 GB Speicherplatz für 64-Bit-Betriebssysteme
-* Grafikspeicher - 128 MB GPU (256 MB empfohlen)
+* Grafikspeicher – 128 MB GPU (256 MB empfohlen)
 * 2,35 GB verfügbarer Festplattenspeicher
 * Bildschirmauflösung 1024 x 768 Pixel oder höher
 * Beschleuniger für Grafik-Hardware (optional)
 * Acrobat Pro DC, Acrobat Standard DC oder Adobe Acrobat Reader DC.
-* Administratorberechtigungen für die Installation von Designer.
+* Administratorrechte für die Installation von Designer.
 
 ### Adobe Acrobat und Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
@@ -719,7 +729,7 @@ AEM Forms on JEE unterstützt Updates, Patches und Fix Packs zusätzlich zu der 
 
 ## Supportrichtlinie für Patches von Drittanbietern {#third-party-patch-support-policy}
 
-Die Anforderungen an Drittpartei-Software für AEM Forms on JEE werden im Abschnitt „Systemanforderungen“ der jeweiligen Produktdokumente erläutert. Die gesamte Dokumentation ist unter [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65) verfügbar.
+Die Anforderungen an Drittpartei-Software für AEM Forms on JEE werden im Abschnitt „Systemanforderungen“ der jeweiligen Produktdokumente erläutert. Die gesamte Dokumentation ist unter [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65_de) verfügbar.
 
 Die für AEM Forms on JEE verwendeten Referenzplattformen von Drittanbietern stellen ein spezifisches Patchlevel für die Infrastruktur von Drittanbietern dar, das während der Entwicklung und Veröffentlichung der jeweiligen Versionen von AEM Forms on JEE aktuell war, und bilden das Mindest-Patchlevel oder Service Pack-Level der Infrastruktur, die von dieser Version von AEM Forms on JEE unterstützt wird.
 
