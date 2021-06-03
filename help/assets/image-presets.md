@@ -10,16 +10,16 @@ discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 feature: Bildvorgaben
 role: Business Practitioner, Administrator
 exl-id: 98d88b59-eb8f-42db-abb8-04506a5b8c30
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 96%
+source-wordcount: '328'
+ht-degree: 76%
 
 ---
 
 # Anwenden von Dynamic Media-Bildvorgaben {#applying-image-presets}
 
-Anhand von Bildvorgaben können Assets Bilder mit unterschiedlichen Größen und Formaten oder anderen Bildeigenschaften, die dynamisch generiert werden, dynamisch bereitstellen. Sie können eine Vorgabe auswählen, wenn Sie Bilder exportieren, sodass die Bilder entsprechend den Spezifikationen des Administrators umformatiert werden.
+Mit Bildvorgaben können Assets Bilder in unterschiedlichen Größen, Formaten oder mit anderen Bildeigenschaften dynamisch bereitstellen. Sie können beim Exportieren von Bildern eine Vorgabe auswählen. Die Vorgabe formatiert Bilder entsprechend den Spezifikationen, die Ihr Administrator angegeben hat.
 
 Darüber hinaus können Sie eine responsive Bildvorgabe auswählen (nach der Auswahl durch die Schaltfläche **[!UICONTROL RESS]** gekennzeichnet).
 
@@ -35,9 +35,9 @@ Sie können jederzeit bei der Vorschau eines Bildes eine Bildvorgabe darauf anwe
 >
 >Im Modus Dynamic Media - Scene7 werden Bildvorgaben nur für Bild-Assets unterstützt.
 
-**So wenden Sie Dynamic Media-Bildvorgaben an**
+**So wenden Sie Dynamic Media-Bildvorgaben an:**
 
-1. Öffnen Sie das Asset und tippen Sie in der linken Leiste auf das Dropdown-Menü und anschließend auf **[!UICONTROL Ausgabedarstellungen.]**
+1. Öffnen Sie das Asset und tippen Sie in der linken Leiste auf das Dropdown-Menü und anschließend auf **[!UICONTROL Ausgabedarstellungen]**.
 
    >[!NOTE]
    >
@@ -51,11 +51,11 @@ Sie können jederzeit bei der Vorschau eines Bildes eine Bildvorgabe darauf anwe
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Wählen Sie eine dynamische Ausgabedarstellung aus, um eine Vorschau der Bildvorgabe anzuzeigen.
-   * Tippen Sie auf **[!UICONTROL URL]**, **[!UICONTROL Einbetten]** oder **[!UICONTROL RESS]**, um das Popup-Fenster anzuzeigen.
+   * Wählen Sie ein dynamisches Ausgabeformat aus, damit Sie eine Vorschau der Bildvorgabe anzeigen können.
+   * Um das Popup anzuzeigen, tippen Sie auf **[!UICONTROL URL]**, **[!UICONTROL Einbetten]** oder **[!UICONTROL RESS]**.
 
    >[!NOTE]
    >
-   >Wenn das Asset *und* die Bildvorgabe noch nicht veröffentlicht wurden, ist die Schaltfläche **[!UICONTROL URL]** (bzw. die Schaltflächen **[!UICONTROL URL]** und **[!UICONTROL RESS]**, falls zutreffend) nicht verfügbar.
+   >Wenn das Asset *und* die Bildvorgabe noch nicht veröffentlicht wurden, ist die Schaltfläche **[!UICONTROL URL]** (bzw. die Schaltflächen „URL“ und „RESS“, falls zutreffend) nicht verfügbar.********
    >
    >Beachten Sie auch, dass Bildvorgaben automatisch auf einem -Server für Dynamic Media veröffentlicht werden.
