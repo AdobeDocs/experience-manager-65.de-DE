@@ -9,10 +9,10 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
 feature: Veröffentlichung
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '2935'
-ht-degree: 98%
+ht-degree: 85%
 
 ---
 
@@ -32,9 +32,9 @@ Beispielsweise können Sie mit selektiver Veröffentlichung Assets für Produkte
 
 Falls Sie sich später entscheiden, die Einstellungen für **[!UICONTROL Selektive Veröffentlichung]** in einem Ordner zu ändern, wirken sich diese Änderungen nur auf neue Assets aus, die Sie ab diesem Zeitpunkt in den Ordner hochladen. Der Veröffentlichungsstatus vorhandener Assets im Ordner bleibt unverändert, bis Sie ihn im Dialogfeld **[!UICONTROL Quick Publish]** oder **[!UICONTROL Veröffentlichung verwalten]** manuell ändern.
 
-Die Option **[!UICONTROL Veröffentlichungsmodus für Dynamic Media]** auf der Ordnerebene ist standardmäßig immer auf den Wert eingestellt, der in der Einstellung **[!UICONTROL Assets veröffentlichen]** in Ihrer **[!UICONTROL Dynamic Media-Konfiguration]** enthalten ist. Folgende Schritte in diesem Thema zeigen Ihnen jedoch, wie Sie diesen Standardwert auf der Ordnerebene manuell ändern können (wie in den folgenden Schritten beschrieben), um den Wert für die **[!UICONTROL Dynamic Media-Konfiguration]** zu überschreiben.
+Die Option **[!UICONTROL Dynamic Media-Veröffentlichungsmodus]** auf Ordnerebene ist standardmäßig immer auf den Wert festgelegt, der in der Einstellung **[!UICONTROL Assets veröffentlichen]** in **[!UICONTROL Dynamic Media-Konfiguration]** zu finden ist. enthalten ist. Folgende Schritte in diesem Thema zeigen Ihnen jedoch, wie Sie diesen Standardwert auf der Ordnerebene manuell ändern können (wie in den folgenden Schritten beschrieben), um den Wert für die **[!UICONTROL Dynamic Media-Konfiguration]** zu überschreiben.
 
-Unabhängig davon, ob Sie sich auf den Wertesatz **[!UICONTROL Assets veröffentlichen]**, der in **[!UICONTROL Dynamic Media-Konfiguration]** festgelegt ist, oder den in den Eigenschaften der Ordnerebene festgelegten Wertesatz **[!UICONTROL Veröffentlichungsmodus für Dynamic Media]** verlassen, können Sie zwischen **[!UICONTROL Sofort]**, **[!UICONTROL Bei Aktivierung]** und **[!UICONTROL Selektive Veröffentlichung]** wählen. Sie können beispielsweise den Wert **[!UICONTROL Assets veröffentlichen]** in Ihrer **[!UICONTROL Dynamic Media-Konfiguration]** auf **[!UICONTROL Bei Aktivierung]** setzen, den Wert für den **[!UICONTROL Veröffentlichungsmodus für Dynamic Media]** auf der Ordnerebene aber auf **[!UICONTROL Selektive Veröffentlichung]** setzen und umgekehrt usw.
+Unabhängig davon, ob Sie sich auf den Wert **[!UICONTROL Assets veröffentlichen]** verlassen, der in **[!UICONTROL Dynamic Media Configuration]** festgelegt ist, oder auf den Wert **[!UICONTROL Dynamic Media Publish mode]**, der in den Eigenschaften auf Ordnerebene festgelegt ist, können Sie weiterhin **[!UICONTROL Sofort]**, **[!UICONTROL Bei Aktivierung]** oder &lt;a1 auswählen. 0/>Selektive Veröffentlichung ]**.**[!UICONTROL  wählen. Sie können beispielsweise den Wert **[!UICONTROL Assets veröffentlichen]** in Ihrer **[!UICONTROL Dynamic Media-Konfiguration]** auf **[!UICONTROL Bei Aktivierung]** setzen, den Wert für den **[!UICONTROL Veröffentlichungsmodus für Dynamic Media]** auf der Ordnerebene aber auf **[!UICONTROL Selektive Veröffentlichung]** setzen und umgekehrt usw.
 
 Nachdem Sie selektive Veröffentlichung in einem Ordner konfiguriert haben, haben Sie folgende Möglichkeiten:
 
@@ -48,19 +48,19 @@ Nachdem Sie selektive Veröffentlichung in einem Ordner konfiguriert haben, habe
 1. Tippen Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen. Tippen Sie auf der linken Seite auf das Navigationssymbol (direkt über dem Werkzeugsymbol) und dann auf **[!UICONTROL Assets > Dateien]**.
 1. Führen Sie einen der folgenden Schritte aus:
    * Eigenschaften eines vorhandenen Ordners bearbeiten – Navigieren Sie in der **[!UICONTROL Kartenansicht]**, der **[!UICONTROL Spaltenansicht]** oder der **[!UICONTROL Listenansicht]** zu einem Ordner, dessen Eigenschaften Sie bearbeiten möchten. Wählen Sie den Ordner aus und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Eigenschaften]**.
-   * Eigenschaften eines neuen Ordners bearbeiten – Tippen Sie in der **[!UICONTROL Kartenansicht]**, der **[!UICONTROL Spaltenansicht]** oder der **[!UICONTROL Listenansicht]** oben rechts auf der Seite auf **[!UICONTROL Erstellen > Ordner]**. Geben Sie im Dialogfeld **[!UICONTROL Ordner erstellen]** einen Titel für den Ordner ein (erforderlich) und tippen Sie dann auf **[!UICONTROL Erstellen]**. Wählen Sie den Ordner aus und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Eigenschaften]**.
+   * Bearbeiten Sie die Eigenschaften eines neuen Ordners: Tippen Sie in **[!UICONTROL Kartenansicht]**, **[!UICONTROL Spaltenansicht]** oder **[!UICONTROL Listenansicht]** in der oberen rechten Ecke der Seite auf **[!UICONTROL Erstellen]** > **[!UICONTROL Ordner]**. Geben Sie im Dialogfeld **[!UICONTROL Ordner erstellen]** einen Titel (erforderlich) für den Ordner ein und tippen Sie dann auf **[!UICONTROL Erstellen]**. Wählen Sie den Ordner aus und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Eigenschaften]**.
 
 1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Synchronisationsmodus]** eine der folgenden Optionen aus:
 
    | Synchronisationsmodus | Beschreibung |
    | --- | --- |
-   | **[!UICONTROL Übernommen]** | Kein expliziter Synchronisationswert für den Ordner. Stattdessen übernimmt der Ordner den Synchronisationswert von einem seiner Vorgängerordner oder den Standardmodus, der in Ihrer **[!UICONTROL Dynamic Media-Konfiguration]** festgelegt ist. Der detaillierte Status für **[!UICONTROL übernommene]** Daten wird als QuickInfo angezeigt. |
-   | **[!UICONTROL Alles in diesem Unterbaum des Ordners mit Dynamic Media synchronisieren]** | Damit das Veröffentlichen in Dynamic Media erfolgreich ist, müssen Assets mit Dynamic Media synchronisiert werden. Wenn Sie diese Option wählen, werden alle Assets in diesem Unterbaum bei der Synchronisation mit Dynamic Media einbezogen. Die ordnerspezifischen Einstellungen setzen die Standardeinstellung in der **[!UICONTROL Dynamic Media-Konfiguration]** außer Kraft. |
+   | **[!UICONTROL Übernommen]** | Kein expliziter Synchronisierungswert für den Ordner; Stattdessen übernimmt der Ordner den Synchronisierungswert von einem seiner Vorgängerordner oder den Standardmodus, der in Ihrer **[!UICONTROL Dynamic Media-Konfiguration]** festgelegt ist. festgelegt ist. Der detaillierte Status für **[!UICONTROL übernommene]** Daten wird als QuickInfo angezeigt. |
+   | **[!UICONTROL Alles in diesem Unterbaum des Ordners mit Dynamic Media synchronisieren]** | Damit das Veröffentlichen in Dynamic Media erfolgreich ist, müssen Assets mit Dynamic Media synchronisiert werden. Wenn Sie diese Option wählen, werden alle Assets in diesem Unterbaum bei der Synchronisation mit Dynamic Media einbezogen. Die ordnerspezifischen Einstellungen überschreiben die Standardeinstellung in **[!UICONTROL Dynamic Media Configuration]**. |
    | **[!UICONTROL Alles in diesem Unterbaum des Ordners von der Dynamic Media-Synchronisation ausschließen]** | Schließen Sie alle Assets in diesem Unterbaum von der Synchronisation mit Dynamic Media aus. |
 
    ![Selektive Veröffentlichung auf Ordnerebene](/help/assets/assets-dm/createfolder-properties-selectivepublish.png)
 
-1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Veröffentlichungsmodus für Dynamic Media]** eine Option aus. Beachten Sie, dass bei der Option **[!UICONTROL Veröffentlichungsmodus für Dynamic Media]** standardmäßig immer der in der **[!UICONTROL Dynamic Media-Konfiguration]** festgelegte Wert verwendet wird. Sie können diesen Standardwert für die **[!UICONTROL Dynamic Media-Konfiguration]** jedoch manuell überschreiben, indem Sie eine der folgenden Optionen nutzen.
+1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Veröffentlichungsmodus für Dynamic Media]** eine Option aus. Beachten Sie, dass die Option **[!UICONTROL Dynamic Media Publish mode]** standardmäßig immer den Wert verwendet, der in der **[!UICONTROL Dynamic Media-Konfiguration]** festgelegt ist. festgelegte Wert verwendet wird. Sie können diesen Standardwert für die **[!UICONTROL Dynamic Media-Konfiguration]** jedoch manuell überschreiben, indem Sie eine der folgenden Optionen nutzen.
 
    >[!IMPORTANT]
    >
@@ -90,10 +90,10 @@ Siehe [Erstellen einer Dynamic Media-Konfiguration](#configuring-dynamic-media-c
 
 **So veröffentlichen Sie Assets selektiv in Dynamic Media oder AEM mit &quot;Veröffentlichung verwalten&quot;**
 
-1. Tippen Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen. Tippen Sie auf der linken Seite auf das Navigationssymbol (direkt über dem Werkzeugsymbol) und dann auf **[!UICONTROL Assets > Dateien]**.
+1. Tippen Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen. Tippen Sie auf der linken Seite auf das Navigationssymbol (direkt über dem Werkzeugsymbol) und dann auf **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
 1. Führen Sie in der **[!UICONTROL Kartenansicht]**, **[!UICONTROL Spaltenansicht]** oder **[!UICONTROL Listenansicht]** einen der folgenden Schritte aus:
-   * Navigieren Sie zu einem Ordner, dessen Assets Sie veröffentlichen möchten. Wählen Sie den Ordner aus und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Veröffentlichung verwalten]**. Es ist ggf. hilfreich, die **[!UICONTROL Listenansicht]** zu verwenden, damit Sie den Veröffentlichungsstatus eines bestimmten Ordners leichter erkennen können.
-   * Navigieren Sie zu einem Ordner, dessen Assets Sie veröffentlichen möchten. Öffnen Sie den Ordner und wählen Sie dann ein oder mehrere Assets aus. Tippen Sie in der Symbolleiste auf **[!UICONTROL Veröffentlichung verwalten]**. Es ist ggf. hilfreich, die **[!UICONTROL Listenansicht]** zu verwenden, um den Veröffentlichungsstatus eines bestimmten Assets leichter erkennen zu können.
+   * Navigieren Sie zu einem Ordner, dessen Assets Sie veröffentlichen möchten. Wählen Sie den Ordner aus und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Veröffentlichung verwalten]**.  . Es ist ggf. hilfreich, die **[!UICONTROL Listenansicht]** zu verwenden, damit Sie den Veröffentlichungsstatus eines bestimmten Ordners leichter erkennen können.
+   * Navigieren Sie zu einem Ordner, dessen Assets Sie veröffentlichen möchten. Öffnen Sie den Ordner und wählen Sie dann ein oder mehrere Assets aus. Tippen Sie in der Symbolleiste auf **[!UICONTROL Veröffentlichung verwalten]**. . Es ist ggf. hilfreich, die **[!UICONTROL Listenansicht]** zu verwenden, um den Veröffentlichungsstatus eines bestimmten Assets leichter erkennen zu können.
 
       >[!NOTE]
       >
@@ -122,10 +122,10 @@ Siehe [Erstellen einer Dynamic Media-Konfiguration](#configuring-dynamic-media-c
 
 ### Rückgängigmachen der Veröffentlichung von Assets in Dynamic Media oder AEM mithilfe von „Veröffentlichung verwalten“ {#selective-unpublish-manage-publication}
 
-1. Tippen Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen. Tippen Sie auf der linken Seite auf das Navigationssymbol (direkt über dem Werkzeugsymbol) und dann auf **[!UICONTROL Assets > Dateien]**.
+1. Tippen Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen. Tippen Sie auf der linken Seite auf das Navigationssymbol (direkt über dem Werkzeugsymbol) und dann auf **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
 1. Führen Sie in der **[!UICONTROL Kartenansicht]**, **[!UICONTROL Spaltenansicht]** oder **[!UICONTROL Listenansicht]** einen der folgenden Schritte aus:
-   * Navigieren Sie zu einem Ordner, für dessen Assets Sie die Veröffentlichung rückgängig machen möchten. Wählen Sie den Ordner aus und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Veröffentlichung verwalten]**. Es ist ggf. hilfreich, die **[!UICONTROL Listenansicht]** zu verwenden, damit Sie den Veröffentlichungsstatus eines bestimmten Ordners leichter erkennen können.
-   * Navigieren Sie zu einem Ordner, für dessen Assets Sie die Veröffentlichung rückgängig machen möchten. Öffnen Sie den Ordner und wählen Sie dann ein oder mehrere Assets aus. Tippen Sie in der Symbolleiste auf **[!UICONTROL Veröffentlichung verwalten]**. Es ist ggf. hilfreich, die **[!UICONTROL Listenansicht]** zu verwenden, um den Veröffentlichungsstatus eines bestimmten Assets leichter erkennen zu können.
+   * Navigieren Sie zu einem Ordner, für dessen Assets Sie die Veröffentlichung rückgängig machen möchten. Wählen Sie den Ordner aus und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Veröffentlichung verwalten]**.  . Es ist ggf. hilfreich, die **[!UICONTROL Listenansicht]** zu verwenden, damit Sie den Veröffentlichungsstatus eines bestimmten Ordners leichter erkennen können.
+   * Navigieren Sie zu einem Ordner, für dessen Assets Sie die Veröffentlichung rückgängig machen möchten. Öffnen Sie den Ordner und wählen Sie dann ein oder mehrere Assets aus. Tippen Sie in der Symbolleiste auf **[!UICONTROL Veröffentlichung verwalten]**. . Es ist ggf. hilfreich, die **[!UICONTROL Listenansicht]** zu verwenden, um den Veröffentlichungsstatus eines bestimmten Assets leichter erkennen zu können.
 
       >[!NOTE]
       >
@@ -161,10 +161,10 @@ Für einfache Asset-Aktivierungen können Sie **[!UICONTROL Quick Publish]** ver
 
 **So veröffentlichen Sie Assets in Dynamic Media oder AEM mit „Quick Publish“**
 
-1. Tippen Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen. Tippen Sie links auf der Seite auf das Navigationssymbol (direkt über dem Werkzeugsymbol) und dann rechts auf der Seite auf **[!UICONTROL Assets > Dateien]**.
+1. Tippen Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen. Tippen Sie links auf der Seite auf das Navigationssymbol (direkt über dem Werkzeugsymbol) und dann rechts auf der Seite auf **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
 1. Führen Sie in der **[!UICONTROL Kartenansicht]**, **[!UICONTROL Spaltenansicht]** oder **[!UICONTROL Listenansicht]** einen der folgenden Schritte aus:
-   * Navigieren Sie zu einem Ordner, dessen Assets Sie veröffentlichen möchten. Wählen Sie den Ordner aus und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Quick Publish]**. Es ist ggf. hilfreich, die **[!UICONTROL Listenansicht]** zu verwenden, damit Sie den Veröffentlichungsstatus eines bestimmten Ordners leichter erkennen können.
-   * Navigieren Sie zu einem Ordner, dessen Assets Sie veröffentlichen möchten. Öffnen Sie den Ordner und wählen Sie dann ein oder mehrere Assets aus. Tippen Sie in der Symbolleiste auf **[!UICONTROL Quick Publish]**. Es ist ggf. hilfreich, die **[!UICONTROL Listenansicht]** zu verwenden, um den Veröffentlichungsstatus eines bestimmten Assets leichter erkennen zu können.
+   * Navigieren Sie zu einem Ordner, dessen Assets Sie veröffentlichen möchten. Wählen Sie den Ordner aus und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Quick Publish]**.  . Es ist ggf. hilfreich, die **[!UICONTROL Listenansicht]** zu verwenden, damit Sie den Veröffentlichungsstatus eines bestimmten Ordners leichter erkennen können.
+   * Navigieren Sie zu einem Ordner, dessen Assets Sie veröffentlichen möchten. Öffnen Sie den Ordner und wählen Sie dann ein oder mehrere Assets aus. Tippen Sie in der Symbolleiste auf **[!UICONTROL Quick Publish]**. . Es ist ggf. hilfreich, die **[!UICONTROL Listenansicht]** zu verwenden, um den Veröffentlichungsstatus eines bestimmten Assets leichter erkennen zu können.
 
       >[!NOTE]
       >
@@ -177,10 +177,10 @@ Für einfache Asset-Aktivierungen können Sie **[!UICONTROL Quick Publish]** ver
    | Option „Quick Publish“ | Funktion |
    | --- | --- | 
    | In AEM veröffentlichen | Veröffentlicht die ausgewählten Assets sofort in AEM. |
-   | In Brand Portal veröffentlichen | Veröffentlicht die ausgewählten Assets sofort in **[!UICONTROL Brand Portal.]**<br>Diese Option ist nur verfügbar, wenn**[!UICONTROL  Brand Portal ]**bereits für Ihre AEM Assets-Instanz konfiguriert wurde. |
-   | In Dynamic Media veröffentlichen | Veröffentlicht die ausgewählten Assets sofort in Dynamic Media.<br>Ein Asset muss bereits mit Dynamic Media synchronisiert worden sein. Stellen Sie bei Bedarf sicher, dass der **[!UICONTROL Synchronisationsmodus]** in den Eigenschaften eines Ordners schon auf **[!UICONTROL Alles in diesem Unterbaum des Ordners mit Dynamic Media synchronisieren]** gesetzt ist. |
+   | In Brand Portal veröffentlichen | Veröffentlicht die ausgewählten Assets sofort in **[!UICONTROL Brand Portal]**.<br>Diese Option ist nur verfügbar, wenn **[!UICONTROL Brand Portal]** bereits für Ihre AEM Assets-Instanz konfiguriert wurde. |
+   | In Dynamic Media veröffentlichen | Veröffentlicht die ausgewählten Assets sofort in Dynamic Media.<br>Ein Asset muss bereits mit Dynamic Media synchronisiert worden sein. Stellen Sie bei Bedarf sicher, dass **[!UICONTROL Synchronisationsmodus]** in den Eigenschaften eines Ordners bereits auf **[!UICONTROL Alles in diesem Unterbaum des Ordners mit Dynamic Media]** synchronisieren festgelegt ist. |
 
-1. Tippen Sie auf **[!UICONTROL OK]** und dann auf **[!UICONTROL Schließen.]**
+1. Tippen Sie auf **[!UICONTROL OK]** und dann auf **[!UICONTROL Close]**.
 
 ## Selektive Veröffentlichung oder Rückgängigmachen der Veröffentlichung von Assets mithilfe von Suchergebnissen {#selective-publish-unpublish-search-results}
 
@@ -190,7 +190,7 @@ Siehe auch [Suchen nach Assets in AEM](/help/assets/search-assets.md).
 
 **So veröffentlichen Sie Assets selektiv mithilfe von Suchergebnissen oder machen die Veröffentlichung rückgängig**
 
-1. Tippen Sie in AEM links oben auf der Seite auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen. Tippen Sie auf der Seite links auf das Navigationssymbol (direkt über dem Werkzeugsymbol) und dann auf **[!UICONTROL Assets > Dateien]**.
+1. Tippen Sie in AEM links oben auf der Seite auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen. Tippen Sie links auf der Seite auf das Navigationssymbol (direkt über dem Werkzeugsymbol) und dann auf **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
 1. Tippen Sie in der Symbolleiste rechts oben auf der Seite auf das Suchsymbol (Lupe).
 1. Geben Sie im Textfeld **[!UICONTROL Zu suchender Typ]** ein Keyword ein und drücken Sie dann die **[!UICONTROL Eingabetaste]**.
 1. Tippen Sie oben rechts auf der Seite auf das Symbol **[!UICONTROL Listenansicht]**.
@@ -204,7 +204,7 @@ Optional können Sie diese Kontrollkästchen zusammen mit dem Suchprädikat **[!
 1. Führen Sie einen der folgenden Schritte aus:
    * Wählen Sie ein oder mehrere Assets aus, die Sie veröffentlichen oder deren Veröffentlichung Sie rückgängig machen möchten.
    * Tippen Sie in der rechten oberen Ecke der Seite **[!UICONTROL Suchergebnisse]** auf **[!UICONTROL Alle auswählen]**.
-1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Veröffentlichung verwalten]**. Möglicherweise müssen Sie in der Symbolleiste auf das Symbol mit den Auslassungszeichen tippen, um die Option **[!UICONTROL Veröffentlichung verwalten]** anzuzeigen.
+1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Veröffentlichung verwalten]**. Möglicherweise müssen Sie in der Symbolleiste auf das Symbol mit den Auslassungszeichen tippen, um **[!UICONTROL Veröffentlichung verwalten]** anzuzeigen.
 1. Wählen Sie auf der Seite **[!UICONTROL Veröffentlichung verwalten – Optionen]** die gewünschte Aktion aus.
 
    | Ausgewählte Aktion | Einstellung für die Veröffentlichung von Assets in der Dynamic Media-Konfiguration | Asset-Status |
@@ -250,10 +250,10 @@ Sie können in AEM die **[!UICONTROL Zeitleistensegment]** mit der **[!UICONTROL
 
 **So prüfen Sie den Veröffentlichungsstatus eines Assets**
 
-1. Tippen Sie in AEM links oben auf der Seite auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen. Tippen Sie auf der Seite links auf das Navigationssymbol (direkt über dem Werkzeugsymbol) und dann auf **[!UICONTROL Assets > Dateien]**.
+1. Tippen Sie in AEM links oben auf der Seite auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen. Tippen Sie links auf der Seite auf das Navigationssymbol (direkt über dem Werkzeugsymbol) und dann auf **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
 1. Öffnen Sie in der **[!UICONTROL Kartenansicht]**, **[!UICONTROL Spaltenansicht]** oder **[!UICONTROL Listenansicht]** (im Screenshot unten ist die **[!UICONTROL Listenansicht]** dargestellt) einen Ordner, der Assets enthält, die Sie veröffentlicht haben oder deren Veröffentlichung Sie rückgängig gemacht haben.
 1. Wählen Sie ein Asset aus, damit es mit einem Häkchen angezeigt wird. Siehe als Beispiel den Screenshot unten.
-1. Wählen Sie links oben auf der Seite aus dem Dropdown-Menü die Option **[!UICONTROL Zeitleistensegment]**. Der Bereich **[!UICONTROL Status]** links zeigt den Veröffentlichungsstatus des ausgewählten Assets an.
+1. Wählen Sie links oben auf der Seite aus dem Dropdown-Menü **[!UICONTROL Timeline]** aus. . Der Bereich **[!UICONTROL Status]** links zeigt den Veröffentlichungsstatus des ausgewählten Assets an.
 Wenn Sie die **[!UICONTROL Listenansicht]** verwenden, wird eine zusätzliche Spalte für den Veröffentlichungsstatus in **[!UICONTROL Dynamic Media]** angezeigt.
    * In einem Ordner, der für die Synchronisation mit Dynamic Media konfiguriert wurde, wird die Spalte **[!UICONTROL Dynamic Media]** standardmäßig angezeigt.
    * In einem Ordner, der *nicht* für die Synchronisation mit Dynamic Media konfiguriert wurde, wird die Dynamic Media-Spalte nicht angezeigt.
