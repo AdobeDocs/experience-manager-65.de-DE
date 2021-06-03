@@ -8,10 +8,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 exl-id: c540aa49-9981-4e8c-97df-972085b26490
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 42%
+source-wordcount: '1699'
+ht-degree: 41%
 
 ---
 
@@ -42,7 +42,7 @@ Die folgenden Formate werden für die Dynamic Media Classic-Videokomponente unte
 * F4V H.264
 * H.264 (.mp4)
 
-### Festlegen eines Speicherorts für hochgeladene Videos  {#deciding-where-to-upload-your-video}
+### Festlegen eines Speicherorts für hochgeladene Videos {#deciding-where-to-upload-your-video}
 
 Der Speicherort für hochgeladene Videos hängt von folgenden Faktoren ab:
 
@@ -71,7 +71,7 @@ Wenn Sie keinen Workflow oder keine Versionierung für Ihre Assets benötigen, s
 
 **So konfigurieren Sie universelle Vorlagen**:
 
-1. Navigieren Sie in **[!UICONTROL Cloud Services]** zu Ihrer **[!UICONTROL Dynamic Media Classic]**-Konfiguration und klicken Sie auf **[!UICONTROL Bearbeiten.]**
+1. Navigieren Sie in **[!UICONTROL Cloud Services]** zu Ihrer **[!UICONTROL Dynamic Media Classic]**-Konfiguration und klicken Sie auf **[!UICONTROL Bearbeiten]**.
 1. Wählen Sie die Registerkarte **[!UICONTROL Video]** aus.
 
    >[!NOTE]
@@ -148,8 +148,8 @@ Die verschiedenen Videokodierungen werden entsprechend den in der Cloud-Konfigur
 >
 >Neue Videoprofile und Änderungen daran müssen für eine Veröffentlichung aktiviert werden.
 
-1. Starten Sie AEM, gehen Sie zu **[!UICONTROL Tools]** und wählen Sie **[!UICONTROL Konfigurationskonsole aus.]** Navigieren Sie in der Konfigurationskonsole in der Navigationsstruktur zu  **[!UICONTROL Tools]**  >  **[!UICONTROL Assets]**  >  **[!UICONTROL Video-]** Profile.
-1. Erstellen Sie ein neues Dynamic Media Classic-Videoprofil. Im **[!UICONTROL Neu..]** wählen Sie im Menü **[!UICONTROL Seite erstellen]** aus und wählen Sie dann die Vorlage Dynamic Media Classic-Videoprofil aus. Geben Sie der neuen Videoprofilseite einen Namen und klicken Sie auf **[!UICONTROL Erstellen.]**
+1. Gehen Sie in Experience Manager zu **[!UICONTROL Tools]** und wählen Sie **[!UICONTROL Konfigurationskonsole]** aus. Navigieren Sie in der Konfigurationskonsole in der Navigationsstruktur zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Videoprofile]** .
+1. Erstellen Sie ein neues Dynamic Media Classic-Videoprofil. Im **[!UICONTROL Neu]**. wählen Sie **[!UICONTROL Seite erstellen]** und wählen Sie dann die Vorlage Dynamic Media Classic-Videoprofil aus. Geben Sie der neuen Videoprofilseite einen Namen und klicken Sie auf **[!UICONTROL Erstellen]**.
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
