@@ -10,10 +10,10 @@ discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 role: Business Practitioner, Administrator
 exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
 feature: Konfiguration
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '1275'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -27,7 +27,7 @@ Um diese URL-Zeichenfolgen auf Ihren Web-Seiten und in Ihren Programmen zu platz
 
 >[!NOTE]
 >
->URL-Zeichenfolgen sind nur für dynamische Ausgabeformate von Assets verfügbar. Sie sind derzeit nicht für statische Assets verfügbar, die sich in DAM und nicht auf dem Dynamic Media-Server befinden. Die Schaltfläche URL wird nicht für statische Ausgabedarstellungen angezeigt.
+>URL-Zeichenfolgen sind nur für dynamische Ausgabedarstellungen von Assets verfügbar. Sie sind derzeit nicht für statische Assets verfügbar, die im DAM und nicht auf dem Dynamic Media-Server gespeichert sind. Für statische Ausgabedarstellungen wird die URL-Schaltfläche nicht angezeigt.
 
 Siehe auch [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite.](embed-code.md)
 
@@ -67,25 +67,25 @@ Sie können URL-Zeichenfolgen auf verschiedene Arten abrufen. Im Folgenden wird 
 
 1. Führen Sie je nach gewähltem Asset eine der folgenden Aktionen aus:
 
-   * Wenn Sie ein Bild im Dropdown-Menü ausgewählt haben, tippen Sie auf **[!UICONTROL Ausgabedarstellungen.]**
+   * Wenn Sie ein Bild im Dropdown-Menü ausgewählt haben, tippen Sie auf **[!UICONTROL Ausgabedarstellungen]**.
 
       Tippen Sie unter der Überschrift **[!UICONTROL Dynamisch]** auf einen Vorgabennamen, um die zugehörige Ausgabedarstellung im rechten Rahmen anzuzeigen. Möglicherweise müssen Sie in der Liste der Ausgabedarstellungen einen Bildlauf durchführen, um die Überschrift „Dynamisch“ anzuzeigen.
 
-      Tippen Sie unten in der linken Seitenleiste auf **[!UICONTROL URL.]**
+      Tippen Sie unten in der linken Seitenleiste auf **[!UICONTROL URL]**.
 
       ![chlimage_1-270](assets/chlimage_1-270.png)
 
-   * Wenn Sie ein Rotationsset, Bildset, Karussellset oder Video ausgewählt haben, tippen Sie im Dropdown-Menü auf **[!UICONTROL Viewer.]**
+   * Wenn Sie ein Rotationsset, Bildset, Karussellset oder Video ausgewählt haben, tippen Sie im Dropdown-Menü auf **[!UICONTROL Viewer]**.
 
       Tippen Sie auf der linken Schiene auf den Namen einer Viewer-Vorgabe. Eine Vorschau des Sets oder Videos wird auf einer separaten Seite geöffnet.
 
-      Tippen Sie auf der linken Leiste unten auf **[!UICONTROL URL.]**
+      Tippen Sie auf der linken Leiste unten auf **[!UICONTROL URL]**.
 
       ![chlimage_1-271](assets/chlimage_1-271.png)
 
 1. Markieren Sie den Text und kopieren Sie ihn in den Webbrowser, um eine Vorschau des Assets anzuzeigen oder es der Web-Inhaltsseite hinzuzufügen.
 
-   Um das URL-Fenster zu verlassen, tippen Sie auf das **[!UICONTROL X]** oder auf **[!UICONTROL Schließen.]**
+   Um das URL-Fenster zu verlassen, tippen Sie auf das **[!UICONTROL X]** oder auf **[!UICONTROL Schließen]**.
 
 ## Abrufen einer URL für ein statisches Asset {#obtaining-a-url-for-a-static-asset}
 
@@ -123,8 +123,8 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
 ## Abrufen einer Video-URL für eine veröffentlichtes Videoausgabedarstellung {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. Navigieren Sie in AEM zu **[!UICONTROL Tools > Bereitstellung > Cloud > Cloud Services.]**
-1. Scrollen Sie auf der Seite **[!UICONTROL Cloud Services]** nach unten zur Überschrift **[!UICONTROL Dynamic Media Cloud Services]** und tippen Sie dann auf **[!UICONTROL Konfigurationen anzeigen.]**
+1. Navigieren Sie AEM zu **[!UICONTROL Tools]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
+1. Scrollen Sie auf der Seite **[!UICONTROL Cloud Services]** nach unten zur Überschrift **[!UICONTROL Dynamic Media Cloud Services]** und tippen Sie dann auf **[!UICONTROL Konfigurationen anzeigen]**.
 1. Tippen Sie unter **[!UICONTROL Verfügbare Konfigurationen]** auf den Namen der gewünschten Konfiguration.
 
 1. Kopieren Sie auf der Seite **[!UICONTROL Cloud-Einstellungen für Dynamic Media]** unter **[!UICONTROL Videodienst-URL]** den gesamten URL-Pfad. Der kopierte URL-Pfad wird in nachfolgenden Schritten benötigt.
@@ -139,7 +139,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
    Beispiel: Für die Registrierungs-ID `87654321|MyCompany` lautet der Name des Kunden `MyCompany`.
 
-1. Tippen Sie oben links auf der Seite auf **[!UICONTROL Cloud Services]**, tippen Sie auf das Experience Manager-Logo und navigieren Sie zu **[!UICONTROL Allgemein > CRXDE Lite.]**
+1. Tippen Sie oben links auf der Seite auf **[!UICONTROL Cloud Services]**, tippen Sie dann auf das Experience Manager-Logo und navigieren Sie zu **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
 1. Kopieren Sie den gesamten Pfad für die Videoausgabedarstellung aus dem JCR (Java Content Repository).
 
    Der Pfad für die Videoausgabedarstellung kann zum Beispiel folgendermaßen aussehen:
@@ -160,8 +160,8 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
 ## Abrufen einer Video-URL für adaptives Streaming (HLS)   {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
-1. Navigieren Sie in AEM zu **[!UICONTROL Tools > Bereitstellung > Cloud > Cloud Services.]**
-1. Scrollen Sie auf der Seite **[!UICONTROL Cloud Services]** nach unten zur Überschrift **[!UICONTROL Dynamic Media Cloud Services]** und tippen Sie dann auf **[!UICONTROL Konfigurationen anzeigen.]**
+1. Navigieren Sie AEM zu **[!UICONTROL Tools]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
+1. Scrollen Sie auf der Seite **[!UICONTROL Cloud Services]** nach unten zur Überschrift **[!UICONTROL Dynamic Media Cloud Services]** und tippen Sie dann auf **[!UICONTROL Konfigurationen anzeigen]**.
 1. Tippen Sie unter **[!UICONTROL Verfügbare Konfigurationen]** auf den Namen der gewünschten Konfiguration.
 1. Gehen Sie auf der Seite **[!UICONTROL Cloud Services-Einstellungen für Dynamic Media]** wie folgt vor:
 
@@ -203,6 +203,6 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
 ## Verwendung von HTTP/2 zur Bereitstellung von Dynamic Media-Assets {#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2 ist das neue, aktualisierte Webprotokoll, das die Kommunikation zwischen Browser und Servern verbessert. Es beschleunigt die Übertragung von Informationen und reduziert die erforderliche Prozessorleistung. Es ist jetzt möglich, Dynamic Media-Assets über HTTP/2 bereitzustellen, das schnellere Reaktions- und Ladezeiten bietet.
+HTTP/2 ist das neue, aktualisierte Web-Protokoll, das die Kommunikation zwischen Browser und Servern verbessert. Es beschleunigt die Übertragung von Informationen und reduziert die erforderliche Prozessorleistung. Es ist jetzt möglich, Dynamic Media-Assets über HTTP/2 bereitzustellen, das schnellere Reaktions- und Ladezeiten bietet.
 
 Vollständige Informationen zu den ersten Schritten mit HTTP/2 und Ihrem Dynamic Media-Konto finden Sie unter [Bereitstellung von Inhalt über HTTP/2](http2.md).
