@@ -10,10 +10,10 @@ discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 role: Business Practitioner, Administrator
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Video
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '1583'
-ht-degree: 63%
+source-wordcount: '1589'
+ht-degree: 56%
 
 ---
 
@@ -74,7 +74,7 @@ Wenn Sie keinen Workflow und keine Versionierung für Ihre Assets benötigen, so
 
 So konfigurieren Sie universelle Vorlagen:
 
-1. Navigieren Sie in **[!UICONTROL Cloud-Services]** zu Ihrer **[!UICONTROL Scene7]**-Konfiguration und klicken Sie auf **[!UICONTROL Bearbeiten.]**
+1. Navigieren Sie in **[!UICONTROL Cloud-Services]** zu Ihrer **[!UICONTROL Scene7]**-Konfiguration und klicken Sie auf **[!UICONTROL Bearbeiten]**.
 1. Wählen Sie die Registerkarte **[!UICONTROL Video]** aus.
 
    ![chlimage_1-363](assets/chlimage_1-363.png)
@@ -95,7 +95,7 @@ So konfigurieren Sie universelle Vorlagen:
 
 ## Aktualisieren von Viewer- und Kodierungsvorlagen  {#updating-viewer-and-encoding-presets}
 
-Wenn Sie in AEM die Viewer- und Kodierungsvorlagen für Videos aktualisieren müssen, da die Vorlagen in Scene7 aktualisiert wurden, navigieren Sie zur Scene7-Konfiguration in der Cloud-Konfiguration und klicken Sie auf **[!UICONTROL Aktualisieren der Viewer- und Kodierungsvorlagen.]**
+Wenn Sie die Viewer- und Kodierungsvorgaben für Videos in Experience Manager aktualisieren müssen, da die Vorgaben in Scene7 aktualisiert wurden, navigieren Sie zur Scene7-Konfiguration in der Cloud-Konfiguration und klicken Sie auf **[!UICONTROL Aktualisieren Sie die Viewer- und Kodierungsvorgaben]**.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
@@ -112,9 +112,9 @@ Wenn Sie in AEM die Viewer- und Kodierungsvorlagen für Videos aktualisieren mü
 
 ## Foundation-Videokomponente im Vergleich zur Scene7-Videokomponente {#foundation-video-component-versus-scene-video-component}
 
-Wenn Sie AEM nutzen, haben Sie auf die Videokomponente, die in Websites verfügbar ist, und auf die Scene7-Videokomponente Zugriff. Diese Komponenten sind nicht austauschbar.
+Bei Verwendung von Experience Manager haben Sie Zugriff auf die Videokomponente, die in Sites verfügbar ist, und auf die Scene7-Videokomponente. Diese Komponenten sind nicht austauschbar.
 
-Die Scene7-Videokomponente funktioniert nur für Scene7-Videos. Die Foundation-Komponente funktioniert mit Videos, die in AEM (mit ffmpeg) gespeichert wurden, und Scene7-Videos.
+Die Scene7-Videokomponente funktioniert nur für Scene7-Videos. Die Foundation-Komponente funktioniert mit Videos, die aus Experience Manager (mithilfe von ffmpeg) und Scene7-Videos gespeichert werden.
 
 Die folgende Matrix verdeutlicht, wann Sie welche Komponente nutzen sollten:
 
@@ -122,13 +122,13 @@ Die folgende Matrix verdeutlicht, wann Sie welche Komponente nutzen sollten:
 
 >[!NOTE]
 >
->Die S7-Videokomponente verwendet standardmäßig das universelle Videoprofil. Sie können jedoch den HTML5-basierten Videoplayer für die Verwendung durch AEM abrufen, indem Sie in Scene7 einen der folgenden Schritte ausführen: Kopieren Sie den Einbettungscode des vordefinierten HTML5-Videoplayers und fügen Sie ihn in Ihre AEM ein.
+>Die S7-Videokomponente verwendet standardmäßig das universelle Videoprofil. Sie können jedoch den HTML5-basierten Videoplayer für die Verwendung durch Experience Manager abrufen, indem Sie in Scene7 eine der folgenden Aktionen durchführen: Kopieren Sie den Einbettungscode des vordefinierten HTML5-Videoplayers und fügen Sie ihn in Ihre Experience Manager-Seite ein.
 
 ## AEM-Videokomponente {#aem-video-component}
 
-Es wird zwar empfohlen, zum Abspielen von Scene7-Videos die Scene7-Videokomponente zu verwenden, in diesem Abschnitt wird der Vollständigkeit halber aber trotzdem beschrieben, wie Sie Scene7-Videos in AEM mit der Foundation-Videokomponente verwenden.
+Auch wenn die Verwendung der Scene7-Videokomponente für die Anzeige von Scene7-Videos empfohlen wird, wird in diesem Abschnitt beschrieben, wie Scene7-Videos mit der Foundation-Videokomponente in Experience Manager verwendet werden, um die Vollständigkeit zu gewährleisten.
 
-### Ein Vergleich der AEM-Videokomponente und der Scene7-Videokomponente  {#aem-video-and-scene-video-comparison}
+### Ein Vergleich der AEM-Videokomponente und der Scene7-Videokomponente {#aem-video-and-scene-video-comparison}
 
 In der folgenden Tabelle finden Sie einen Vergleich der unterstützen Funktionen der AEM-Foundation-Videokomponente und der Scene7-Videokomponente:
 
@@ -150,9 +150,9 @@ Die verschiedenen Videokodierungsmethoden werden anhand der S7-Kodierungsvorlage
 >
 >Neue Videoprofile und Änderungen daran müssen für eine Veröffentlichung aktiviert werden.
 
-1. Tippen Sie AEM auf **[!UICONTROL Tools] > [!UICONTROL Konfigurationskonsole]**.
-1. Navigieren Sie in der **[!UICONTROL Konfigurationskonsole]** in der Navigationsstruktur zu **[!UICONTROL Tools > DAM > Videoprofile]** .
-1. Erstellen Sie ein neues S7-Videoprofil. Im **[!UICONTROL Neu..]** wählen Sie im Menü **[!UICONTROL Seite erstellen]** aus und wählen Sie dann die Scene7-Videoprofilvorlage aus. Geben Sie der neuen Videoprofilseite einen Namen und klicken Sie auf **[!UICONTROL Erstellen.]**
+1. Tippen Sie AEM auf **[!UICONTROL Tools]** > **[!UICONTROL Konfigurationskonsole]**.
+1. Navigieren Sie in der **[!UICONTROL Konfigurationskonsole]** zu **[!UICONTROL Tools]** > **[!UICONTROL DAM]** > **[!UICONTROL Videoprofile]** in der Navigationsstruktur.
+1. Erstellen Sie ein neues S7-Videoprofil. Wählen Sie im Menü **[!UICONTROL Neu]**. die Option **[!UICONTROL Seite erstellen]** und wählen Sie dann die Vorlage Scene7-Videoprofil aus. Geben Sie der neuen Videoprofilseite einen Namen und klicken Sie auf **[!UICONTROL Erstellen]**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
