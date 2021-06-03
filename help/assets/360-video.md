@@ -11,10 +11,10 @@ docset: aem65
 feature: 360-Grad-VR-Video
 role: Business Practitioner, Administrator
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '1055'
-ht-degree: 79%
+ht-degree: 80%
 
 ---
 
@@ -52,7 +52,7 @@ Weitere Informationen finden Sie unter [Bearbeiten von 360-Grad-/VR-Videos](http
 **So laden Sie Assets für die Verwendung mit dem 360-Grad-Video-Viewer hoch:**
 
 1. Erstellen Sie einen Ordner für Ihr 360-Grad-Video-Asset.
-1. [Wenden Sie ein adaptives Videoprofil auf den Ordner an.](/help/assets/video-profiles.md#applying-a-video-profile-to-folders)
+1. [Wenden Sie ein adaptives Videoprofil auf den Ordner an](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 
    Das Rendern von 360-Grad-Videos ist mit höheren Anforderungen an die Auflösung des Quellvideos sowie der kodierten Ausgabedarstellungen verbunden als Standard-Videoinhalte.
 
@@ -98,7 +98,7 @@ Siehe auch [Bearbeiten von Viewer-Vorgaben](/help/assets/managing-viewer-presets
 
 Wenn das 360-Grad-Video Ihren Vorstellungen entspricht, können Sie es veröffentlichen.
 
-Siehe [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite.](/help/assets/embed-code.md)
+Siehe [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](/help/assets/embed-code.md).
 Siehe [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/linking-urls-to-yourwebapplication.md). Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
 Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
@@ -110,7 +110,7 @@ Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/adding-dynam
 
    Tippen Sie auf das 360-Grad-Video-Asset, damit Sie eine Vorschau des Videos anzeigen können.
 
-1. Tippen Sie auf der Vorschauseite links oben auf der Seite auf die Dropdown-Liste und wählen Sie **[!UICONTROL Viewer.]** aus.
+1. Tippen Sie links oben auf der Vorschauseite auf die Dropdown-Liste und wählen Sie **[!UICONTROL Viewer]** aus.
 
    ![6_5_360video-preview-viewers](assets/6_5_360video-preview-viewers.png)
 
@@ -121,13 +121,13 @@ Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/adding-dynam
 
    ![6_5_360video-preview-video360-social ](assets/6_5_360video-preview-video360-social.png)*Screenshot eines 360-Grad-Videos.*
 
-   * Tippen Sie in der Viewer-Liste auf **[!UICONTROL Video360VR.]**
+   * Tippen Sie in der Viewer-Liste auf **[!UICONTROL Video360VR]**.
 
       Virtual Reality (VR)-Videos sind interaktive Videoinhalte, die über Virtual Reality-Headsets angezeigt werden. Wie bei herkömmlichen Videos erstellen Sie VR-Videos zu Beginn, wenn ein Video mit 360-Grad-Videokameras aufgezeichnet oder erfasst wird.
    ![6_5_360video-preview-video360vr](assets/6_5_360video-preview-video360vr.png)
    *Screenshot eines 360-Grad-VR-Videos.*
 
-1. Tippen Sie oben rechts auf der Vorschauseite auf **[!UICONTROL Schließen.]**
+1. Tippen Sie oben rechts auf der Vorschauseite auf **[!UICONTROL Schließen]**.
 
 ## Veröffentlichen von 360-Grad-Videos {#publishing-video}
 
