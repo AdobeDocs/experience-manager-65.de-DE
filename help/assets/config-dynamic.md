@@ -12,7 +12,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: Business Practitioner, Administrator
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Konfiguration,Hybridmodus
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: d2649ec83424978ba01b9bb61e9f935bdc79aa62
 workflow-type: tm+mt
 source-wordcount: '7843'
 ht-degree: 39%
@@ -66,7 +66,7 @@ In den folgenden Konfigurationsaufgaben werden die hier angegebenen Begriffe ver
 
 | **Begriff** | **Dynamic Media aktiviert** | **Beschreibung** |
 |---|---|---|
-| Autorenknoten des Experience Managers | Weißes Häkchen in einem grünen Kreis | Der Autorknoten, den Sie On-Premise oder über Managed Services bereitstellen. |
+| Experience Manager-Autorenknoten | Weißes Häkchen in einem grünen Kreis | Der Autorknoten, den Sie On-Premise oder über Managed Services bereitstellen. |
 | Veröffentlichungsknoten des Experience Managers | Weißes X in einem roten Quadrat. | Der Veröffentlichungsknoten, den Sie On-Premise oder über Managed Services bereitstellen. |
 | Veröffentlichungsknoten des Bilddienstes | Weißes Häkchen in einem grünen Kreis. | Der Veröffentlichungsknoten, den Sie in Rechenzentren ausführen, die von Adobe verwaltet werden. Bezieht sich auf die Bilddienst-URL. |
 
@@ -141,11 +141,11 @@ Sie können Dynamic Media nur für die Bildbearbeitung, nur für Videos oder fü
 
 ## Aktivieren von Dynamic Media {#enabling-dynamic-media}
 
-[Dynamic Media ist standardmäßig deaktiviert. ](https://www.adobe.com/de/solutions/web-experience-management/dynamic-media.html) Um die Funktionen von Dynamic Media nutzen zu können, müssen Sie Dynamic Media mit dem Ausführungsmodus `dynamicmedia` aktivieren, wie Sie es beispielsweise mit dem Ausführungsmodus `publish` tun würden. Prüfen Sie vor dem Aktivieren die [technischen Anforderungen](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on).
+[Dynamic Media ist standardmäßig deaktiviert. ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Um die Funktionen von Dynamic Media nutzen zu können, müssen Sie Dynamic Media mit dem Ausführungsmodus `dynamicmedia` aktivieren, wie Sie es beispielsweise mit dem Ausführungsmodus `publish` tun würden. Prüfen Sie vor dem Aktivieren die [technischen Anforderungen](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on).
 
 >[!NOTE]
 >
->Die Aktivierung von Dynamic Media über den Ausführungsmodus ersetzt die Funktionalität in Experience Manager 6.1 und Experience Manager 6.0, in dem Sie Dynamic Media aktiviert haben, indem Sie die `dynamicMediaEnabled` -Markierung auf **[!UICONTROL true setzen.]** Dieses Flag bietet keine Funktionen in Experience Manager 6.2 und höher. Außerdem müssen Sie den Schnellstart nicht neu starten, um Dynamic Media zu aktivieren.
+>Die Aktivierung von Dynamic Media über den Ausführungsmodus ersetzt die Funktionalität in Experience Manager 6.1 und Experience Manager 6.0, in dem Sie Dynamic Media aktiviert haben, indem Sie die `dynamicMediaEnabled` -Markierung auf **[!UICONTROL true]** setzen. Dieses Flag bietet keine Funktionen in Experience Manager 6.2 und höher. Außerdem müssen Sie den Schnellstart nicht neu starten, um Dynamic Media zu aktivieren.
 
 Durch Aktivierung von Dynamic Media sind die Dynamic Media-Funktionen in der Benutzeroberfläche verfügbar. Jedes hochgeladene Bild-Asset erhält ein *cqdam.pyramid.tiff* -Ausgabeformat, das für die schnelle Bereitstellung dynamischer Bilddarstellungen verwendet wird. Diese PTIFF-Dateien haben erhebliche Vorteile wie die folgenden:
 
@@ -156,7 +156,7 @@ Wenn Sie Dynamic Media Classic in Experience Manager verwenden möchten, aktivie
 
 Um Dynamic Media zu aktivieren, müssen Sie den Dynamic Media-Ausführungsmodus entweder über die Befehlszeile oder über den Namen der Schnellstartdatei aktivieren.
 
-**So aktivieren Sie Dynamic Media**
+**So aktivieren Sie Dynamic Media:**
 
 1. In der Befehlszeile haben Sie nach dem Starten des Schnellstartvorgangs die folgenden Möglichkeiten:
 
@@ -268,12 +268,12 @@ Richten Sie die Replikationsauthentifizierung auf der Autoreninstanz ein, damit 
 **Gehen Sie wie folgt vor, um die Authentifizierung einzurichten**
 
 1. Wenden Sie sich an die Kundenunterstützung von Adobe, wenn Sie noch nicht über die Datei und das Kennwort verfügen. Diese Informationen sind ein notwendiger Teil der Bereitstellung. Die Schlüssel werden Ihrem Konto zugeordnet.
-1. Tippen Sie in Experience Manager auf das Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen, und tippen Sie dann auf **[!UICONTROL Tools > Sicherheit > Benutzer.]**
+1. Tippen Sie in Experience Manager auf das Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen. Tippen Sie dann auf **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Benutzer]**.
 1. Navigieren Sie auf der Seite Benutzerverwaltung zum Benutzer **[!UICONTROL dynamic-media-replication]** und tippen Sie dann zum Öffnen.
 
    ![dm-replication](assets/dm-replication.png)
 
-1. Tippen Sie auf der Seite „Benutzereinstellungen für dynamic-media-replication bearbeiten“ auf die Registerkarte **[!UICONTROL Keystore]** und dann auf **[!UICONTROL KeyStore erstellen.]**
+1. Tippen Sie auf der Seite „Benutzereinstellungen für dynamic-media-replication bearbeiten“ auf die Registerkarte **[!UICONTROL Keystore]** und dann auf **[!UICONTROL KeyStore erstellen]**.
 
    ![dm-replication-keystore](assets/dm-replication-keystore.png)
 
@@ -287,7 +287,7 @@ Richten Sie die Replikationsauthentifizierung auf der Autoreninstanz ein, damit 
 1. Erweitern Sie auf der Seite **[!UICONTROL Benutzereinstellungen für dynamic-media-replication bearbeiten]** den Bereich **Privaten Schlüssel aus KeyStore-Datei hinzufügen** und fügen Sie Folgendes ein (siehe folgende Abbildungen):
 
    * Geben Sie im Feld **[!UICONTROL Neuer Alias]** den Namen eines Alias ein, den Sie später in der Replikationskonfiguration verwenden möchten. Sie können beispielsweise `replication` als Alias verwenden.
-   * Tippen Sie auf **[!UICONTROL KeyStore-Datei.]** Navigieren Sie zur KeyStore-Datei, die Sie von Adobe, wählen Sie sie aus und tippen Sie auf **[!UICONTROL Öffnen.]**
+   * Tippen Sie auf **[!UICONTROL KeyStore-Datei]**. Navigieren Sie zur KeyStore-Datei, die Sie von Adobe, wählen Sie sie aus und tippen Sie auf **[!UICONTROL Öffnen]**.
    * Geben Sie im Feld **[!UICONTROL KeyStore File Password]** das Kennwort für die KeyStore-Datei ein. Dieses Kennwort ist **nicht** das KeyStore-Kennwort, das Sie in Schritt 5 erstellt haben. Es ist jedoch die KeyStore-Adobe für Dateikennwörter, die in der Begrüßungs-E-Mail enthalten ist, die Sie während der Bereitstellung erhalten haben. Wenden Sie sich an die Kundenunterstützung von Adobe, um Ihre KeyStore-Datei und das dazugehörige Kennwort zu erhalten (falls noch nicht vorhanden).
    * Geben Sie im Feld **[!UICONTROL Passwort für privaten Schlüssel]** das Kennwort für den privaten Schlüssel ein (es kann sich um dasselbe Kennwort für den privaten Schlüssel handeln, das im vorherigen Schritt bereitgestellt wurde). Das Kennwort für den privaten Schlüssel ist in der Begrüßungs-E-Mail von Adobe enthalten, die während der Bereitstellung an Sie gesendet wird. Nehmen Sie Kontakt mit der Kundenunterstützung von Adobe auf, falls Sie kein Kennwort für den privaten Schlüssel erhalten haben.
    * Geben Sie im Feld **[!UICONTROL Alias für privaten Schlüssel]** den Alias für den privaten Schlüssel ein. Beispiel: `*companyname*-alias`. Der Alias für den privaten Schlüssel ist in der Begrüßungs-E-Mail von Adobe enthalten, die während der Bereitstellung an Sie gesendet wird. Nehmen Sie Kontakt mit der Kundenunterstützung von Adobe auf, falls Sie keinen Alias für den privaten Schlüssel erhalten haben.
@@ -296,20 +296,20 @@ Richten Sie die Replikationsauthentifizierung auf der Autoreninstanz ein, damit 
 
 1. Tippen Sie auf **[!UICONTROL Speichern und schließen]**, um Ihre Änderungen für diesen Benutzer zu speichern.
 
-   Als Nächstes müssen Sie [den Replikationsagenten konfigurieren.](#configuring-the-replication-agent)
+   Als Nächstes müssen Sie [den Replikationsagenten](#configuring-the-replication-agent) konfigurieren.
 
 ### Konfigurieren des Replikationsagenten {#configuring-the-replication-agent}
 
-1. Tippen Sie in Experience Manager auf das Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen. Tippen Sie dann auf **[!UICONTROL Tools > Bereitstellung > Replikation > Agenten für Autor.]**
-1. Tippen Sie auf der Seite „Agenten für Autor“ auf **[!UICONTROL Hybride Bildreplikation für dynamische Medien (s7delivery).]**
-1. Tippen Sie auf **[!UICONTROL Bearbeiten.]**
+1. Tippen Sie in Experience Manager auf das Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen. Tippen Sie dann auf **[!UICONTROL Tools]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Replikation]** > **[!UICONTROL Agenten für Autor]**.
+1. Tippen Sie auf der Seite „Agenten für Autor“ auf **[!UICONTROL Hybride Bildreplikation für dynamische Medien (s7delivery)]**.
+1. Tippen Sie auf **[!UICONTROL Bearbeiten]**.
 1. Tippen Sie auf die Registerkarte **[!UICONTROL Einstellungen]** und geben Sie dann Folgendes ein:
 
    * **[!UICONTROL Aktiviert]**: Aktivieren Sie dieses Kontrollkästchen, um den Replikationsagenten zu aktivieren.
    * **[!UICONTROL Region]**  - Auf die entsprechende Region eingestellt: Nordamerika, Europa oder Asien
    * **[!UICONTROL Mandantenkennung]**  - Dieser Wert ist der Name Ihres Unternehmens/Mandanten, das/der im Replikationsdienst veröffentlicht wird. Dieser Wert ist die Mandantenkennung, die die Adobe in der Begrüßungs-E-Mail bereitstellt, die Ihnen während der Bereitstellung gesendet wird. Wenn Sie diese Informationen nicht erhalten haben, wenden Sie sich an die Kundenunterstützung von Adobe.
-   * **[!UICONTROL Key Store Alias]**  - Dieser Wert entspricht dem Wert &quot;New Alias&quot;, der beim Generieren des Schlüssels unter  [Einrichten der Authentifizierung](#setting-up-authentication) festgelegt wurde. z. B.  `replication`. (Siehe Schritt 7 unter [Einrichten der Authentifizierung](#setting-up-authentication).)
-   * **[!UICONTROL Key Store Password]**  - Das KeyStore-Kennwort, das erstellt wurde, als Sie auf KeyStore  **[!UICONTROL erstellen tippen.]** Dieses Kennwort wird nicht von Adobe bereitgestellt. Siehe Schritt 5 von [Einrichten der Authentifizierung](#setting-up-authentication).
+   * **[!UICONTROL Key Store Alias]**  - Dieser Wert entspricht dem  **neuen** Aliaswert, der beim Generieren des Schlüssels in  [Einrichten der Authentifizierung](#setting-up-authentication) festgelegt wurde. z. B.  `replication`. (Siehe Schritt 7 unter [Einrichten der Authentifizierung](#setting-up-authentication).)
+   * **[!UICONTROL Key Store Password]**  - Das KeyStore-Kennwort, das erstellt wurde, als Sie auf KeyStore  **[!UICONTROL erstellen tippen]**. Dieses Kennwort wird nicht von Adobe bereitgestellt. Siehe Schritt 5 von [Einrichten der Authentifizierung](#setting-up-authentication).
 
    In der folgenden Abbildung ist der Replikationsagent mit Beispieldaten dargestellt:
 
@@ -321,7 +321,7 @@ Richten Sie die Replikationsauthentifizierung auf der Autoreninstanz ein, damit 
 
 Gehen Sie wie folgt vor, um den Replikationsagenten für Dynamic Media zu validieren:
 
-Tippen Sie auf **[!UICONTROL Verbindung testen.]** Die Beispielausgabe lautet wie folgt:
+Tippen Sie auf **[!UICONTROL Verbindung testen]**. Die Beispielausgabe lautet wie folgt:
 
 ```shell
 11.03.2016 10:57:55 - Transferring content for ReplicationAction{type=TEST, path[0]='/content/dam', time=1457722675402, userId='admin', revision='null'}
@@ -456,7 +456,7 @@ Beispiel für Replikationsprotokoll:
 
 **Lösung:**
 
-1. Klicken Sie in Experience Manager auf **[!UICONTROL Tools > Allgemein > CRXDE Lite.]**
+1. Klicken Sie in Experience Manager auf **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
 
    `localhost:4502/crx/de/index.jsp`
 
@@ -467,7 +467,7 @@ Beispiel für Replikationsprotokoll:
 
    `enableOauth=true`
 
-1. Tippen Sie in der oberen linken Ecke der Seite auf **[!UICONTROL Alle speichern.]**
+1. Tippen Sie in der oberen linken Ecke der Seite auf **[!UICONTROL Alle speichern]**.
 
 ### Testen Ihrer Konfiguration {#testing-your-configuration}
 
@@ -478,12 +478,12 @@ Stellen Sie sicher, dass Sie vor Beginn dieses Tests bereits Folgendes durchgef�
 * Hinzufügen von Bildvorgaben.
 * Abschließen der **[!UICONTROL Dynamic Media-Konfiguration (vor 6.3)]** unter „Cloud-Services“. Die Bilddienst-URL ist für diesen Test nicht erforderlich.
 
-**Gehen Sie wie folgt vor, um die Konfiguration zu testen**
+**Gehen Sie wie folgt vor, um die Konfiguration zu testen:**
 
-1. Laden Sie ein Bild-Asset hoch. (Tippen Sie in Assets auf **[!UICONTROL Erstellen > Dateien]** und wählen Sie die Datei aus.)
+1. Laden Sie ein Bild-Asset hoch. (Tippen Sie in Assets auf **[!UICONTROL Erstellen]** > **[!UICONTROL Dateien]** und wählen Sie die Datei aus.)
 1. Warten Sie, bis der Workflow abgeschlossen ist.
-1. Veröffentlichen Sie das Bild-Asset. (Wählen Sie das Asset aus und tippen Sie auf **[!UICONTROL Quick Publish.]**)
-1. Navigieren Sie zu den Ausgabeformaten für dieses Bild, indem Sie das Bild öffnen und auf **[!UICONTROL Ausgabeformate tippen.]**
+1. Veröffentlichen Sie das Bild-Asset. (Wählen Sie das Asset aus und tippen Sie auf **[!UICONTROL Quick Publish]**.)
+1. Navigieren Sie zu den Ausgabeformaten für dieses Bild, indem Sie das Bild öffnen und auf **[!UICONTROL Ausgabeformate]** tippen.
 
    ![chlimage_1-510](assets/chlimage_1-510.png)
 
@@ -504,8 +504,8 @@ Bevor Sie Dynamic Media-Cloud Services einrichten, stellen Sie sicher, dass Ihre
 
 So konfigurieren Sie Dynamic Media Cloud Services:
 
-1. Tippen Sie in Experience Manager auf das Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen, und tippen Sie dann auf **[!UICONTROL Tools > Cloud Services > Dynamic Media-Konfiguration (vor 6.3).]**
-1. Wählen Sie auf der Seite &quot;Dynamic Media Configuration Browser&quot;im linken Bereich **[!UICONTROL global]** und tippen Sie dann auf **[!UICONTROL Erstellen.]**
+1. Tippen Sie in Experience Manager auf das Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen, und tippen Sie dann auf **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media-Konfiguration (vor 6.3)]**.
+1. Wählen Sie auf der Seite Dynamic Media Configuration Browser im linken Bereich **[!UICONTROL global]** und tippen Sie dann auf **[!UICONTROL Erstellen]**.
 1. Geben Sie im Dialogfeld **[!UICONTROL Dynamic Media-Konfiguration erstellen]** im Feld „Titel“ einen Titel ein.
 1. Wenn Sie Dynamic Media für Video konfigurieren,
 
@@ -530,7 +530,7 @@ Mit Dynamic Media Hybrid können Sie Videoberichte für mehrere Installationen v
 
 ### Erstellen eines Vorgabenpakets für die Videoanalyse nach der Konfiguration des ersten Autorknotens {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node}
 
-Wenn Sie diese Aufgabe abgeschlossen haben, verfügen Sie über eine Paketdatei, die die Video Analytics-Vorgaben enthält. Diese Vorgaben enthalten eine Report Suite, den Tracking-Server, den Tracking-Namespace und die Marketing Cloud-Organisations-ID (falls verfügbar).
+Wenn Sie diese Aufgabe abgeschlossen haben, verfügen Sie über eine Paketdatei, die die Video Analytics-Vorgaben enthält. Diese Vorgaben enthalten eine Report Suite, den Tracking-Server, den Tracking-Namespace und die Organisations-ID des Experience Cloud, sofern verfügbar.
 
 1. Konfigurieren Sie – falls noch nicht geschehen – die Dynamic Media-Konfiguration (vor 6.3).
 1. (Optional) Zeigen Sie die Report Suite-ID an und kopieren Sie diese (Sie benötigen Zugriff auf das JCR). Eine Report Suite-ID ist nicht erforderlich vereinfacht jedoch die Überprüfung.
@@ -631,7 +631,7 @@ Veröffentlichen Sie Ihre eigenen Standardkatalogeinstellungen als Teil des Einr
    `https://<*server*>:<*port*>/crx/de/index.jsp#/conf/global/settings/dam/dm/imageserver/`
 
 1. Tippen Sie auf die Registerkarte **[!UICONTROL Replikation]**.
-1. Tippen Sie auf **[!UICONTROL Replizieren.]**
+1. Tippen Sie auf **[!UICONTROL Replizieren]**.
 
 ## Replizieren von Viewer-Vorgaben {#replicating-viewer-presets}
 
@@ -707,16 +707,16 @@ Filter gelten für MIME-Typen und können nicht pfadspezifisch sein.
 
 Wenn Sie Dynamic Media ausschließlich für Videos nutzen, können Sie mit diesen Schritten Asset-Filter für die Replikation einrichten:
 
-1. Tippen Sie in Experience Manager auf das Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen, und tippen Sie dann auf **[!UICONTROL Tools > Bereitstellung > Replikation > Agenten für Autor.]**
-1. Tippen Sie auf der Seite „Agenten für Autor“ auf **[!UICONTROL Standardagent (Publish).]**
-1. Tippen Sie auf **[!UICONTROL Bearbeiten.]**
+1. Tippen Sie in Experience Manager auf das Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen, und tippen Sie dann auf **[!UICONTROL Tools]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Replikation]** > **[!UICONTROL Agenten für Autor]**.
+1. Tippen Sie auf der Seite „Agenten für Autor“ auf **[!UICONTROL Standardagent (Publish)]**.
+1. Tippen Sie auf **[!UICONTROL Bearbeiten]**.
 1. Aktivieren Sie im Dialogfeld **[!UICONTROL Agenteneinstellungen]** auf der Registerkarte **[!UICONTROL Einstellungen]** die Option **[!UICONTROL Aktiviert]**, um den Agenten zu aktivieren.
 1. Tippen Sie auf **[!UICONTROL OK]**.
-1. Tippen Sie in Experience Manager auf **[!UICONTROL Tools > Allgemein > CRXDE Lite.]**
+1. Tippen Sie in Experience Manager auf **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
 1. Navigieren Sie in der Ordnerstruktur auf der linken Seite zu `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters` .
-1. Suchen Sie nach **[!UICONTROL filter-video]**, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Kopieren.]**
+1. Suchen Sie nach **[!UICONTROL filter-video]**, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Kopieren]**.
 1. Navigieren Sie in der Ordnerstruktur auf der linken Seite zu `/etc/replication/agents.author/publish` .
-1. Suchen Sie nach **[!UICONTROL jcr:content]**, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Einfügen.]**
+1. Suchen Sie nach **[!UICONTROL jcr:content]**, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Einfügen]**.
 
 Mit diesen Schritten wird die Experience Manager-Veröffentlichungsinstanz eingerichtet, um das Videobild und die für die Wiedergabe erforderlichen Videometadaten bereitzustellen, während das  selbst vom Dynamic Media-Cloud Service bereitgestellt wird. Der Filter schließt auch die Original-Video- und statischen Miniaturansichten aus der Replikation aus, die in der Veröffentlichungsinstanz nicht benötigt werden.
 
@@ -724,25 +724,25 @@ Mit diesen Schritten wird die Experience Manager-Veröffentlichungsinstanz einge
 
 Wenn Sie Dynamic Media für die Bilddarstellung in Bereitstellungen außerhalb der Produktion nutzen, können Sie mit diesen Schritten Asset-Filter für die Replikation einrichten:
 
-1. Tippen Sie in Experience Manager auf das Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen, und tippen Sie dann auf **[!UICONTROL Tools > Bereitstellung > Replikation > Agenten für Autor.]**
-1. Tippen Sie auf der Seite „Agenten für Autor“ auf **[!UICONTROL Standardagent (Publish).]**
-1. Tippen Sie auf **[!UICONTROL Bearbeiten.]**
+1. Tippen Sie in Experience Manager auf das Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen, und tippen Sie dann auf **[!UICONTROL Tools]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Replikation]** > **[!UICONTROL Agenten für Autor]**.
+1. Tippen Sie auf der Seite „Agenten für Autor“ auf **[!UICONTROL Standardagent (Publish)]**.
+1. Tippen Sie auf **[!UICONTROL Bearbeiten]**.
 1. Aktivieren Sie im Dialogfeld **[!UICONTROL Agenteneinstellungen]** auf der Registerkarte **[!UICONTROL Einstellungen]** die Option **[!UICONTROL Aktiviert]**, um den Agenten zu aktivieren.
 1. Tippen Sie auf **[!UICONTROL OK]**.
-1. Tippen Sie in Experience Manager auf **[!UICONTROL Tools > Allgemein > CRXDE Lite.]**
+1. Tippen Sie in Experience Manager auf **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
 1. Navigieren Sie in der Ordnerstruktur auf der linken Seite zu `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters` .
 
    ![image-2018-01-16-10-22-40-410](assets/image-2018-01-16-10-22-40-410.png)
 
-1. Suchen Sie nach **[!UICONTROL filter-images]**, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Kopieren.]**
+1. Suchen Sie nach **[!UICONTROL filter-images]**, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Kopieren]**.
 1. Navigieren Sie in der Ordnerstruktur auf der linken Seite zu `/etc/replication/agents.author/publish` .
-1. Suchen Sie **[!UICONTROL jcr:content]**, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Erstellen > Knoten erstellen.]** Geben Sie den Namen  `damRenditionFilters` des Typs  `nt:unstructured`ein.
-1. Suchen Sie `damRenditionFilters`, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Einfügen.]** aus.
+1. Suchen Sie **[!UICONTROL jcr:content]**, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Knoten erstellen]** aus. Geben Sie den Namen `damRenditionFilters` des Typs `nt:unstructured` ein.
+1. Suchen Sie `damRenditionFilters`, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Einfügen]** aus.
 
 Mit diesen Schritten wird die Experience Manager-Veröffentlichungsinstanz eingerichtet, um die Bilder für Ihre Nicht-Produktionsumgebung bereitzustellen. Der Filter schließt auch das Originalbild und statische Ausgabeformate aus der Replikation aus, die in der Veröffentlichungsinstanz nicht benötigt werden.
 
 >[!NOTE]
-Wenn es für einen Autor viele verschiedene Filter gibt, muss jedem Agenten ein anderer Benutzer zugewiesen werden. Der Granite-Code erzwingt, dass pro Benutzer nur ein Filter angewendet wird. Deswegen sollten Sie für jeden eingerichteten Filter einen anderen Benutzer festlegen.
+Wenn es für einen Autor viele verschiedene Filter gibt, muss jedem Agenten ein anderer Benutzer zugewiesen werden. Der Granite-Code erzwingt, dass pro Benutzer nur ein Filter angewendet wird. Verwenden Sie immer einen anderen Benutzer für jede Filtereinrichtung.
 Verwenden Sie mehr als einen Filter auf einem Server? Beispielsweise einen Filter für die zu veröffentlichende Replikation und einen zweiten Filter für die s7delivery. Ist dies der Fall, müssen Sie sicherstellen, dass diesen beiden Filtern im Knoten **jcr:content** eine andere **userId** zugewiesen ist. Sehen Sie sich das folgende Bild an:
 
 ![image-2018-01-16-10-26-28-465](assets/image-2018-01-16-10-26-28-465.png)
@@ -751,14 +751,14 @@ Verwenden Sie mehr als einen Filter auf einem Server? Beispielsweise einen Filte
 
 Gehen Sie wie folgt vor, um Asset-Filter für die Replikation optional anzupassen:
 
-1. Tippen Sie in Experience Manager auf das Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen, und tippen Sie dann auf **[!UICONTROL Tools > Allgemein > CRXDE Lite.]**
+1. Tippen Sie in Experience Manager auf das Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen, und tippen Sie dann auf **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
 1. Navigieren Sie in der linken Ordnerstruktur zu `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters` , um die Filter zu überprüfen.
 
    ![chlimage_1-511](assets/chlimage_1-511.png)
 
 1. Zum Definieren des MIME-Typs für den Filter können Sie den MIME-Typ wie folgt ermitteln:
 
-   Erweitern Sie in der linken Leiste `content > dam > <locate_your_asset> >  jcr:content > metadata` und suchen Sie dann in der Tabelle **[!UICONTROL dc:format.]**
+   Erweitern Sie in der linken Leiste `content > dam > <locate_your_asset> >  jcr:content > metadata` und suchen Sie dann in der Tabelle **[!UICONTROL dc:format]**.
 
    Die folgende Grafik ist ein Beispiel für den Pfad eines Assets zu „dc:format“.
 
@@ -812,11 +812,11 @@ Das Konfigurieren des Dynamic Media-Bildservers umfasst die Bearbeitung des Ado
 >[!NOTE]
 Dynamic Media arbeitet standardmäßig [nach der Aktivierung](#enabling-dynamic-media). Sie können Ihre Installation jedoch optional anpassen, indem Sie Dynamic Media Image Server so konfigurieren, dass bestimmte Spezifikationen oder Anforderungen erfüllt werden.
 
-**Voraussetzung**:  ** Stellen Sie vor der Konfiguration von Dynamic Media Image Server sicher, dass Ihre Windows®-VM eine Installation der Microsoft® Visual C++-Bibliotheken enthält. Diese Bibliotheken werden benötigt, um den Dynamic Media-Bildserver auszuführen. Sie können [das Microsoft® Visual C++ 2010 Redistributable Package (x64) hier](https://www.microsoft.com/de-de/download/details.aspx?id=14632) herunterladen.
+**Voraussetzung**:  ** Stellen Sie vor der Konfiguration von Dynamic Media Image Server sicher, dass Ihre Windows®-VM eine Installation der Microsoft® Visual C++-Bibliotheken enthält. Diese Bibliotheken werden benötigt, um den Dynamic Media-Bildserver auszuführen. Sie können [das Microsoft® Visual C++ 2010 Redistributable Package (x64) hier](https://www.microsoft.com/de-de/download/details.aspx?id=26999) herunterladen.
 
 So konfigurieren Sie die Einstellungen für den Dynamic Media-Bildserver:
 
-1. Tippen Sie in der linken oberen Ecke des Experience Managers auf **[!UICONTROL Adobe Experience Manager]** , um auf die globale Navigationskonsole zuzugreifen, und tippen Sie dann auf **[!UICONTROL Tools > Vorgänge > Web-Konsole.]**
+1. Tippen Sie in der linken oberen Ecke des Experience Managers auf **[!UICONTROL Adobe Experience Manager]** , um auf die globale Navigationskonsole zuzugreifen, und tippen Sie dann auf **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
 1. Tippen Sie auf der Seite &quot;Adobe Experience Manager Web Console Configuration&quot;auf **[!UICONTROL OSGi > Configuration]** , um alle Bundles aufzulisten, die derzeit in Experience Manager ausgeführt werden.
 
    Die Dynamic Media-Bereitstellungsserver befinden sich unter den folgenden Namen in der Liste:
@@ -824,7 +824,7 @@ So konfigurieren Sie die Einstellungen für den Dynamic Media-Bildserver:
    * `Adobe CQ Scene7 ImageServer`
    * `Adobe CQ Scene7 PlatformServer`
 
-1. Tippen Sie in der Liste mit den Bundles rechts von Adobe CQ Scene7 ImageServer auf das Symbol „Bearbeiten“.
+1. Tippen Sie in der Liste der Bundles rechts neben Adobe CQ Scene7 ImageServer auf das Symbol **[!UICONTROL Bearbeiten]** .
 1. Legen Sie im Dialogfeld für Adobe CQ Scene7 ImageServer die folgenden Konfigurationswerte fest:
 
    >[!NOTE]
@@ -833,7 +833,7 @@ So konfigurieren Sie die Einstellungen für den Dynamic Media-Bildserver:
 <table>
  <tbody>
   <tr>
-   <td><strong>Property</strong></td>
+   <td><strong>Eigenschaft</strong></td>
    <td><strong>Standardwert</strong></td>
    <td><strong>Beschreibung</strong></td>
   </tr>
@@ -860,7 +860,7 @@ So konfigurieren Sie die Einstellungen für den Dynamic Media-Bildserver:
   <tr>
    <td>RandomAccessUrlTimeout</td>
    <td>20</td>
-   <td>Zeitüberschreitungswert für die Dauer in Sekunden, die der Image-Server auf die Antwort des JCR auf eine Anforderung für Bereiche mit Kacheln wartet.</td>
+   <td>Zeitüberschreitungswert für die Dauer in Sekunden, die der Image-Server auf die Antwort des JCR auf eine Bereichskachelanforderung wartet.</td>
   </tr>
   <tr>
    <td>WorkerThreads</td>
@@ -877,7 +877,7 @@ So konfigurieren Sie die Einstellungen für den Dynamic Media-Bildserver:
    >[!NOTE]
    Der Dynamic Media-Bildserver verwendet einen eigenen Datenträgercache für das Zwischenspeichern von Antworten. Der Experience Manager-HTTP-Cache und der Dispatcher können nicht verwendet werden, um Antworten vom Dynamic Media-Image-Server zwischenzuspeichern.
 
-   | **Eigenschaft** | **Standardwert** | **Beschreibung** |
+   | Eigenschaft | Standardwert | Beschreibung |
    |---|---|---|
    | Cache enabled | Aktiviert | Gibt an, ob der Antwort-Cache aktiviert ist |
    | Cache roots | cache | Mindestens ein Pfad zu Ordnern des Caches für Antworten. Relative Pfade werden für den internen s7imaging-Bundle-Ordner aufgelöst. |
@@ -976,14 +976,14 @@ Erweiterte Anwendungsfälle können einen manuellen Modifikator `icc=` verwenden
 * `iccEmbed` -  [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
 
 >[!NOTE]
-Der Standardsatz mit Adobe-Farbprofilen ist nur verfügbar, wenn [Feature Pack 12445 von Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) installiert ist. Alle Feature Packs und Service Packs sind unter [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) verfügbar. Feature Pack 12445 enthält die Adobe-Farbprofile.
+Der Standardsatz der Farbprofile der Adobe ist nur verfügbar, wenn Sie [Feature Pack 12445 von Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) installiert haben. Alle Feature Packs und Service Packs sind unter [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) verfügbar. Feature Pack 12445 bietet Farbprofile der Adobe.
 
 
-### Installieren von Feature Pack 12445  {#installing-feature-pack}
+### Installieren von Feature Pack 12445 {#installing-feature-pack}
 
 Um die Dynamic Media-Farbverwaltungsfunktionen zu verwenden, installieren Sie Feature Pack 12445.
 
-**Gehen Sie wie folgt vor, um Feature Pack 12445 zu installieren**
+**Gehen Sie wie folgt vor, um Feature Pack 12445 zu installieren:**
 
 1. Navigieren Sie zu [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) und laden Sie `cq-6.3.0-featurepack-12445` herunter.
 
@@ -1005,7 +1005,7 @@ Nachdem Sie das Feature Pack installiert haben, konfigurieren Sie die entspreche
 
    Die Farbkorrektureigenschaften werden in der Tabelle **Farbkorrektureigenschaften** beschrieben. Werte, die Sie Farbkorrektureigenschaften zuweisen können, sind in der Tabelle **Farbprofil** angegeben.
 
-   Fügen Sie beispielsweise **[!UICONTROL Name]** `iccprofilecmyk` hinzu, wählen Sie **[!UICONTROL Typ]** `String` und fügen Sie `WebCoated` als **[!UICONTROL Wert hinzu.]** Tippen Sie dann auf  **** Hinzufügen und dann auf  **[!UICONTROL Alle speichern]** , um Ihre Werte zu speichern.
+   Fügen Sie beispielsweise **[!UICONTROL Name]** `iccprofilecmyk` hinzu, wählen Sie **[!UICONTROL Typ]** `String` und fügen Sie `WebCoated` als **[!UICONTROL Wert]** hinzu. Tippen Sie dann auf **[!UICONTROL Hinzufügen]** und dann auf **[!UICONTROL Alle speichern]**, um Ihre Werte zu speichern.
 
    ![chlimage_1-515](assets/chlimage_1-515.png)
 
@@ -1253,17 +1253,17 @@ Die folgenden Farbprofile werden installiert:
  </tbody>
 </table>
 
-1. Tippen Sie auf **[!UICONTROL Alle speichern.]**
+1. Tippen Sie auf **[!UICONTROL Alle speichern]**.
 
-Sie können beispielsweise **[!UICONTROL iccprofilergb]** auf `sRGB` und **[!UICONTROL iccprofilecmyk]** auf **[!UICONTROL WebCoated.]** setzen.
+Sie können beispielsweise **[!UICONTROL iccprofilergb]** auf `sRGB` und **[!UICONTROL iccprofilecmyk]** auf **[!UICONTROL WebCoated]** setzen.
 
 Dies hat folgende Auswirkungen:
 
 * Die Farbkorrektur für RGB- und CMYK-Bilder wird aktiviert.
-* Für RGB-Bilder ohne Farbprofil wird angenommen, dass sie sich im Farbraum *sRGB* befinden.
-* Für CMYK-Bilder ohne Farbprofil wird angenommen, dass sie sich im Farbraum *WebCoated* befinden.
+* Für RGB-Bilder ohne Farbprofil wird angenommen, dass sie sich im Farbraum *sRGB* befinden.
+* Für CMYK-Bilder ohne Farbprofil wird angenommen, dass sie sich im Farbraum *WebCoated* befinden.
 * Dynamische Ausgabeformate, die die RGB-Ausgabe zurückgeben, geben sie im Farbraum *sRGB *zurück.
-* Dynamische Ausgabeformate, die eine CMYK-Ausgabe zurückgeben, geben sie im Farbraum *WebCoated* zurück.
+* Für dynamische Ausgabedarstellungen, bei denen eine CMYK-Ausgabe zurückgegeben wird, erfolgt dies im Farbraum *WebCoated*.
 
 ## Bereitstellen von Assets {#delivering-assets}
 
