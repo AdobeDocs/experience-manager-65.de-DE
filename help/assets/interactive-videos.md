@@ -11,10 +11,10 @@ docset: aem65
 feature: Interaktive Videos
 role: Business Practitioner, Administrator
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '6058'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ Wenn das Video beendet wird, wird eine visuelle Zusammenfassung sämtlicher Ange
 
 Informationen hierzu finden Sie auch unter [Interaktive Bilder](/help/assets/interactive-images.md).
 
-## Interaktives Video in Aktion  {#interactive-video-in-action}
+## Interaktives Video in Aktion {#interactive-video-in-action}
 
 Um ein interaktives Video mit Shopping-Funktion anzuzeigen, klicken Sie auf [Live-Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), blättern Sie auf der Seite zur Überschrift **[!UICONTROL Shoppable Media]** und klicken Sie dann auf das gewünschte Video.
 
@@ -42,7 +42,7 @@ Um ein interaktives Video mit Shopping-Funktion anzuzeigen, klicken Sie auf [Liv
 >
 >Bei interaktiven Videos, die eine Web-Seite aufrufen, sobald ein Benutzer auf eine Miniaturansicht klickt, wird die Anzeige der Popup-Web-Seite auf einigen Geräten blockiert. In diesen Fällen müssen Sie die Popup-Blocker-Einstellung auf dem Gerät ändern. Auf einem Apple iPhone 6 tippen Sie beispielsweise auf **[!UICONTROL Einstellungen]** > **Safari** > **Popups blockieren** und schieben Sie das Steuerelement auf **[!UICONTROL Aus]**. Wenn Sie ein interaktives Video wiedergeben und auf eine Miniaturansicht klicken, werden Sie gefragt, ob das Popup geöffnet werden soll. Wenn Sie dies akzeptieren, wird die Web-Seite geöffnet.
 
-### Erstellen von interaktiven Videos   {#watch-how-interactive-videos-are-created}
+### Erstellen von interaktiven Videos  {#watch-how-interactive-videos-are-created}
 
 Hier erhalten Sie eine Einführung (7 Min., 30 Sek.) in die [Erstellung interaktiver Videos](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) [](https://outv.omniture.com?v=s4NHQ2dzqd7hIqWjeG2sIdyNWsTWyupA).
 (Obwohl die Videoeinführung mit Assets on Demand erstellt wurde, gelten die Prinzipien und Schritte auch für interaktive Videos in AEM Assets.)
@@ -52,7 +52,8 @@ Hier erhalten Sie eine Einführung (7 Min., 30 Sek.) in die [Erstellung intera
 Im Webinar „Using Interactive Video, Link Sharing, and YouTube sharing in AEM Assets“ (Verwenden von interaktiven Videos, Link- und YouTube-Freigabe in AEM Assets) erfahren Sie, wie mit interaktiven Videos und anderen Funktionen konvertierungsgesteuerte Ereignisse in Videomarketinginhalte eingebunden werden.
 
 >[!NOTE]
-[Verwenden des interaktiven Videos, der Linkfreigabe und der YouTube-Freigabe in AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
+>
+>[Verwenden des interaktiven Videos, der Linkfreigabe und der YouTube-Freigabe in AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
 
 ## Schnellstart: interaktive Videos {#quick-start-interactive-videos}
 
@@ -60,7 +61,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen dabei helfen, interak
 
 Suchen Sie nach der Überschrift **Beispiele** in einigen der Schnellstartaufgaben. Hier finden Sie ein kurzes Tutorial, das auf dieser Demo-Web-Seite basiert, der noch *keine* Interaktivität hinzugefügt wurde:
 
-[https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-video/john-lewis/landing-0.html)
+[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
 
 Die **Beispiele** veranschaulichen die Schritte zur Integration interaktiver Videos auf Ihrer Website.
 
@@ -94,10 +95,14 @@ Wenn Sie einen Drittanbieter-WCM (Web Content Manager) verwenden, müssen Sie da
 ## (Optional) Ermitteln von Schnellansichtsvariablen {#optional-identifying-quickview-variables}
 
 >[!NOTE]
-Diese Aufgabe ist nur erforderlich, wenn Folgendes zutrifft:
-* Sie möchten das Bild durch Auslösen von Schnellansichten in ein interaktives Video umwandeln.
-* Ihre AEM-Implementierung verwendet *kein* E-Commerce-Integrations-Framework, um Produktdaten aus einer E-Commerce-Lösung wie IBM Websphere Commerce, Elastic Path, hybris oder Intershop in AEM abzurufen. Siehe [eCommerce-Konzepte in AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
+>
+>Diese Aufgabe ist nur erforderlich, wenn Folgendes zutrifft:
+>
+>* Sie möchten das Bild durch Auslösen von Schnellansichten in ein interaktives Video umwandeln.
+>* Ihre AEM-Implementierung verwendet *kein* E-Commerce-Integrations-Framework, um Produktdaten aus einer E-Commerce-Lösung wie IBM Websphere Commerce, Elastic Path, hybris oder Intershop in AEM abzurufen. Siehe [eCommerce-Konzepte in AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
 
+>
+>
 Wenn Ihre AEM-Implementierung E-Commerce nutzt, können Sie diese Aufgabe überspringen und mit der nächsten Aufgabe fortfahren.
 
 Ermitteln Sie zunächst die durch Ihre vorhandene Schnellansichtsimplementierung verwendeten dynamischen Variablen, damit Sie die Produktminiaturen während des Erstellungsvorgangs des interaktiven Videos der entsprechenden Produktschnellansicht zuordnen können.
@@ -217,7 +222,7 @@ Basierend auf dieser Analyse stellen Sie fest, dass Sie die beiden folgenden Var
 
 Sie können jetzt ein Video und die zugehörigen Miniatur-Assets hochladen.
 
-## (Optional) Erstellen einer Viewer-Vorgabe für ein interaktives Video   {#optional-creating-an-interactive-video-viewer-preset}
+## (Optional) Erstellen einer Viewer-Vorgabe für ein interaktives Video  {#optional-creating-an-interactive-video-viewer-preset}
 
 Sie können diese Aufgabe überspringen und mit der nächsten fortfahren, wenn Sie eine der standardmäßig bereitgestellten Viewer-Vorgaben für interaktive Videos, `Shoppable_Video_dark` oder `Shoppable_Video_light`, verwenden möchten.
 
@@ -257,10 +262,12 @@ Nach dem Hinzufügen von Zeitleistensegmenten fügen Sie Miniaturbilder in jedem
 Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-authoring/experience-fragments.md).
 
 >[!NOTE]
-Beachten Sie, dass im interaktiven Video die Tools zur Freigabe in Social Media nicht unterstützt werden, wenn Sie den Viewer in ein Experience Fragment einbetten. Um dies zu vermeiden, können Sie Viewer-Vorgaben verwenden oder erstellen, die keine Tools zur Freigabe in Social Media aufweisen. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Experience Fragments einbetten.
+>
+>Beachten Sie, dass im interaktiven Video die Tools zur Freigabe in Social Media nicht unterstützt werden, wenn Sie den Viewer in ein Experience Fragment einbetten. Um dies zu vermeiden, können Sie Viewer-Vorgaben verwenden oder erstellen, die keine Tools zur Freigabe in Social Media aufweisen. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Experience Fragments einbetten.
 
 >[!NOTE]
-Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in AEM Sites.
+>
+>Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in AEM Sites.
 
 Die Optionen „Rückgängig“ und „Wiederholen“ in der Nähe der oberen rechten Ecke der Seite werden während der aktuellen Erstellungs-/Bearbeitungssitzung unterstützt.
 
@@ -271,11 +278,11 @@ So fügen Sie Ihrem Video Interaktivität hinzu:
 1. Navigieren Sie in der Ansicht „Assets“ zum Video, das Sie hochgeladen haben und interaktiv machen möchten.
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Bewegen Sie den Mauszeiger über das Bild und tippen Sie auf **[!UICONTROL Auswählen]** (Häkchensymbol). Tippen Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten.]**
+   * Bewegen Sie den Mauszeiger über das Bild und tippen Sie auf **[!UICONTROL Auswählen]** (Häkchensymbol). Tippen Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**.
 
-   * Bewegen Sie den Mauszeiger über das Bild und tippen Sie dann auf **[!UICONTROL Mehr Aktionen]** (Ellipsensymbol) > **[!UICONTROL Bearbeiten.]**
+   * Bewegen Sie den Mauszeiger über das Bild und tippen Sie dann auf **[!UICONTROL Mehr Aktionen]** (Ellipsensymbol) > **[!UICONTROL Bearbeiten]**.
 
-   * Tippen Sie auf das Bild, um es auf der Seite „Detailansicht“ zu öffnen. Tippen Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten.]**
+   * Tippen Sie auf das Bild, um es auf der Seite „Detailansicht“ zu öffnen. Tippen Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**.
 
 1. Führen Sie auf der Seite „Interaktives Video erstellen“ eine der folgenden Aktionen aus:
 
@@ -283,7 +290,7 @@ So fügen Sie Ihrem Video Interaktivität hinzu:
 
       Sie können jedem Zeitsegment, das Sie hinzufügen, mindestens ein Miniaturbild zuweisen und dann diese Miniaturen mit Schnellansicht-Produktseiten verknüpfen, damit Kunden über diese Einkäufe tätigen können, oder mit Web-Seiten, auf denen weitere Informationen zu finden sind.
 
-   * Tippen Sie auf die Schaltfläche **[!UICONTROL Abspielen]** , um mit der Wiedergabe des Videos zu beginnen. Wenn ein bestimmtes Produkt, Service oder Detail, das Sie hervorheben möchten, angezeigt wird, tippen Sie auf **[!UICONTROL Pause.]** Tippen Sie auf **[!UICONTROL Segment hinzufügen.]**
+   * Tippen Sie auf die Schaltfläche **[!UICONTROL Abspielen]** zum Wiedergeben des Videos. Wenn bestimmte Produkte, Services oder Einzelheiten, die Sie hervorheben möchten, in der Ansicht angezeigt werden, tippen Sie auf **[!UICONTROL Pause]**. Tippen Sie auf **[!UICONTROL Segment hinzufügen]**.
 
       Fahren Sie mit dem Wiedergeben und Anhalten des Videos an den Punkten entlang der Zeitleiste fort, an denen Sie ein Segment hinzufügen möchten, bis Sie das Ende des Videos erreicht haben.
 
@@ -362,9 +369,9 @@ So fügen Sie Ihrem Video Interaktivität hinzu:
 
    * So löschen Sie ein Segment:
 
-      Wählen Sie das letzte Zeitleistensegment und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Segment löschen.]** Wenn zwei oder mehr Segmente ausgewählt werden, ist die Funktion „Segment löschen“ deaktiviert.
+      Wählen Sie das letzte Zeitleistensegment und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Segment löschen]**. Wenn zwei oder mehr Segmente ausgewählt werden, ist die Funktion „Segment löschen“ deaktiviert.
 
-      Sie können nur das letzte Segment löschen. Wenn Sie beispielsweise alle Segmente in der Timeline löschen möchten, müssen Sie immer das letzte auswählen und dann auf **[!UICONTROL Segment löschen.]** tippen.
+      Sie können nur das letzte Segment löschen. Wenn Sie beispielsweise alle Zeitleistensegment-Segmente löschen möchten, müssen Sie immer zunächst das letzte auswählen und dann auf **[!UICONTROL Segment löschen]** tippen.
 
 
 1. Wählen Sie ein Zeitsegment aus, mit dem Sie das oder die Miniaturbild(er) verknüpfen möchten.
@@ -478,10 +485,11 @@ So fügen Sie Ihrem Video Interaktivität hinzu:
 
    Wenn Sie Ihre eigene Viewer-Vorgabe für interaktive Videos erstellt haben, sehen Sie sie auch in der Liste der Vorgaben, aus der Sie eine Auswahl treffen können.
 
-   Wenn Sie fertig sind, tippen Sie auf **[!UICONTROL Speichern.]**
+   Wenn Sie fertig sind, tippen Sie auf **[!UICONTROL Speichern]**.
 
    >[!NOTE]
-   Beim Speichern des interaktiven Videos wird automatisch eine zugehörige `.vtt`-Datei gespeichert. Die `.vtt`-Datei wird im Ordner `_VTT` gespeichert. Dieser befindet sich im Stamm von **[!UICONTROL Assets.]** Die Datei und der Ordner sind erforderlich, damit das interaktive Video auf Ihrer Website richtig wiedergegeben werden kann. Daher sollten Sie weder den Ordner `_VTT` noch dessen Inhalte verschieben, bearbeiten oder löschen.
+   >
+   >Beim Speichern des interaktiven Videos wird automatisch eine zugehörige `.vtt`-Datei gespeichert. Die `.vtt`-Datei wird im Ordner `_VTT` gespeichert. Dieser befindet sich im Stamm von **[!UICONTROL Assets]**. Die Datei und der Ordner sind erforderlich, damit das interaktive Video auf Ihrer Website richtig wiedergegeben werden kann. Daher sollten Sie weder den Ordner `_VTT` noch dessen Inhalte verschieben, bearbeiten oder löschen.
 
 1. Veröffentlichen des interaktiven Videos Durch das Veröffentlichen wird der Integrations-Code oder die URL erstellt, die Sie schließlich kopieren und auf die Website-Oberfläche einfügen.
 
@@ -490,7 +498,8 @@ So fügen Sie Ihrem Video Interaktivität hinzu:
    Siehe [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md).
 
    >[!NOTE]
-   Um ein Video mit Shopping-Funktion und Schnellansichten zu veröffentlichen, stellen Sie sicher, dass Sie auch alle zugehörigen Bild-Assets des Videos aus Ihrem E-Commerce-Bereich separat veröffentlichen.
+   >
+   >Um ein Video mit Shopping-Funktion und Schnellansichten zu veröffentlichen, stellen Sie sicher, dass Sie auch alle zugehörigen Bild-Assets des Videos aus Ihrem E-Commerce-Bereich separat veröffentlichen.
 
    Nachdem Sie Zeitleistensegment-Segmente hinzugefügt und das interaktive Video veröffentlicht haben, sind Sie bereit, sie zur Landingpage Ihrer vorhandenen Website hinzuzufügen. Siehe [Integrieren eines interaktiven Videos auf Ihrer Website](#integrating-an-interactive-video-with-your-website).
 
@@ -515,12 +524,14 @@ Wenn Sie die Interaktivität mit Schnellansichten hinzugefügt haben, verwenden 
 Der kopierte Integrations-Code wird für eine responsive Umgebung festgelegt. Daher sollte automatisch der Bereich angepasst werden, der zuvor vom statischen Video belegt war.
 
 >[!NOTE]
-An dieser Stelle sind Sie fertig, wenn Sie die Interaktivität mit ausschließlich per Hyperlink verbundener Web-Seiten hinzugefügt haben.
-Wenn Sie jedoch Interaktivität hinzugefügt haben, um eine Schnellansicht auszulösen, dienen die Miniaturen, die an das interaktive Video angrenzen, nur zu Anzeigezwecken. Sie sind nicht in Ihren vorhandenen Schnellansichten integriert. In einem solchen Fall müssen Sie das interaktive Video in den vorhandenen Schnellansichten auf Ihrer Website integrieren.
+>
+>An dieser Stelle sind Sie fertig, wenn Sie die Interaktivität mit ausschließlich per Hyperlink verbundener Web-Seiten hinzugefügt haben.
+>
+>Wenn Sie jedoch Interaktivität hinzugefügt haben, um eine Schnellansicht auszulösen, dienen die Miniaturen, die an das interaktive Video angrenzen, nur zu Anzeigezwecken. Sie sind nicht in Ihren vorhandenen Schnellansichten integriert. In einem solchen Fall müssen Sie das interaktive Video in den vorhandenen Schnellansichten auf Ihrer Website integrieren.
 
 **Beispiel**
 
-Verwenden der Demowebsite als ein Beispiel:
+Verwenden der Demo-Website als ein Beispiel:
 
 [https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
 
@@ -558,7 +569,8 @@ Zur Integration müssen Sie den Video-Einbettungs-Code nur durch den Einbettungs
 ## Integrieren eines interaktiven Videos mit einer Schnellansicht   {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
-Diese Aufgabe ist nur relevant, wenn Sie die Standalone-Version von AEM Assets verwenden.
+>
+>Diese Aufgabe ist nur relevant, wenn Sie die Standalone-Version von AEM Assets verwenden.
 
 Im letzten Schritt in diesem Prozess integrieren Sie das interaktive Video in einer vorhandenen Schnellansichtsimplementierung, die auf Ihrer Website verwendet wird. Es gibt keine Lösung für die Integration, die für alle Fälle funktioniert. Jede Schnellansichtsimplementierung ist einzigartig. Daher ist ein spezifischer Ansatz erforderlich, wofür höchstwahrscheinlich die Unterstützung eines Frontend-IT-Mitarbeiters nötig ist.
 
@@ -750,7 +762,7 @@ Der vollständige Quell-Code lautet wie folgt:
 </script>
 ```
 
-Die endgültige Demowebsite mit dem vollständig integrierten interaktiven Video hat folgendes Aussehen:
+Die endgültige Demo-Website mit dem vollständig integrierten interaktiven Video hat folgendes Aussehen:
 
 [https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html)
 
