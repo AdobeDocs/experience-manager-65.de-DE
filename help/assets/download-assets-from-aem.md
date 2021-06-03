@@ -5,10 +5,10 @@ contentOwner: AG
 role: Business Practitioner
 feature: Asset-Management, Asset-Verteilung
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
-source-git-commit: 92983232216a5c7c563ebddc3baf6fcd81aaa4e2
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '891'
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
@@ -22,13 +22,13 @@ Sie können Assets einschließlich der statischen und dynamischen Ausgabedarstel
 
 Die Asset-Typen „Bildset“, „Rotationsset“ „Set für gemischte Medien“ und „Karussellset“ können nicht heruntergeladen werden.
 
-Gehen Sie wie folgt vor, um Assets herunterzuladen:
+**Gehen Sie wie folgt vor, um Assets herunterzuladen:**
 
 1. Klicken Sie in der linken oberen Ecke auf das -Logo. Klicken Sie in der linken Leiste auf **[!UICONTROL Navigation]**.
-1. Klicken Sie auf der Seite [!UICONTROL Navigation] auf **[!UICONTROL Assets]** > **[!UICONTROL Dateien.]**
+1. Klicken Sie auf der Seite [!UICONTROL Navigation] auf **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
 1. Navigieren Sie zu einem Ordner mit den Assets, die Sie herunterladen möchten.
 1. Wählen Sie den Ordner oder ein oder mehrere Assets im Ordner aus.
-1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Herunterladen.]**
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Herunterladen]**.
 
    ![Verfügbare Optionen beim Herunterladen von Assets aus AEM Assets](/help/assets/assets/asset-download1.png)
 
@@ -45,7 +45,7 @@ Gehen Sie wie folgt vor, um Assets herunterzuladen:
    | **[!UICONTROL Smartes Zuschneiden]** | Wählen Sie diese Option, um alle Ausgabedarstellungen des ausgewählten Assets, die mit der Funktion „Smartes Zuschneiden“ erstellt wurden, aus AEM herunterzuladen. Eine ZIP-Datei mit den Ausgabedarstellungen, die mit der Funktion „Smartes Zuschneiden“ erstellt wurden, wird erstellt und auf Ihren lokalen Computer heruntergeladen. |
    | **[!UICONTROL Dynamische Ausgabedarstellung(en)]** | Wählen Sie diese Option, um eine Reihe von alternativen Ausgabedarstellungen in Echtzeit zu erstellen. Wenn Sie diese Option wählen, wählen Sie durch Auswahl aus der Liste [Bildvorgabe](image-presets.md) auch die Ausgabedarstellungen, die Sie dynamisch erstellen möchten. <br>Außerdem können Sie Größe und Einheit, Format, Farbraum, Auflösung und beliebige Bild-Modifikatoren auswählen (um das Bild z. B. umzukehren). Die Option ist nur verfügbar, wenn Sie [!DNL Dynamic Media] aktiviert haben. |
 
-1. Klicken Sie im Dialogfeld auf **[!UICONTROL Herunterladen.]**.
+1. Klicken Sie im Dialogfeld auf **[!UICONTROL Herunterladen]**..
 
 Wenn Sie einen Ordner zum Herunterladen auswählen, wird die komplette Asset-Hierarchie unter dem Ordner heruntergeladen. Um jedes heruntergeladene Asset (einschließlich Assets in untergeordneten Ordnern) in einem eigenen Ordner abzulegen, wählen Sie die Option **[!UICONTROL Separaten Ordner für jedes Asset erstellen]**.
 
@@ -76,7 +76,7 @@ Das `Asset Download Servlet` kann in einer [!DNL Experience Manager]-Veröffentl
 
 >[!MORELIKETHIS]
 >
->* [Herunterladen von Assets mit Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
+>* [Herunterladen von Assets mit Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html?lang=de)
 >* [Herunterladen von DRM-geschützten Assets](drm.md).
 >* [Herunterladen von Assets mit dem Experience Manager-Desktop-Programm auf einem Windows- oder Mac-Desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#download-assets).
 >* [Herunterladen von Assets mit Adobe Assets Link aus den unterstützten Adobe Creative Cloud-Programmen](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html).
