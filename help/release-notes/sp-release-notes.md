@@ -4,10 +4,10 @@ description: Spezifische Versionshinweise für  [!DNL Adobe Experience Manager] 
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 0f70c011cc192df0650c3ec666bae2c26653b444
+source-git-commit: 7d3c8d9266bdec3f75211cfa0636217fd8b054ca
 workflow-type: tm+mt
-source-wordcount: '3391'
-ht-degree: 4%
+source-wordcount: '3874'
+ht-degree: 5%
 
 ---
 
@@ -75,6 +75,18 @@ Die wichtigsten Funktionen und Verbesserungen, die in [!DNL Adobe Experience Man
       >
    * Asien-Pazifik 24. Juni 2021.
 
+
+* Möglichkeit, eine Benachrichtigungs-E-Mail mit dem Workflow-Schritt [!UICONTROL Aufgabe zuweisen] an eine Gruppe zu senden.
+
+* Möglichkeit, einen Entwurf für interaktive Kommunikation abzurufen, nachdem die Quelle für interaktive Kommunikation geändert wurde.
+
+* Legen Sie den benutzerdefinierten Domänennamen für das Laden, Rendern und Überprüfen des reCAPTCHA-Dienstes in [!DNL Experience Manager Forms] fest.
+
+* Verbesserungen der Eingabedaten für den Workflow-Schritt [!UICONTROL Formulardatenmodelldienst aufrufen] .
+
+* Möglichkeit zur Verwendung mehrerer Übergeordneter Seiten in einer Datensatzdokumentvorlage in [!DNL Experience Manager Forms].
+
+* Unterstützt Seitenumbrüche im Datensatzdokument in [!DNL Experience Manager Forms].
 
 * Das integrierte Repository (Apache Jackrabbit Oak) wird auf  1.22.7 aktualisiert.
 
@@ -307,7 +319,50 @@ Adobe Experience Manager 6.5.9.0 Assets behebt die folgenden Probleme in [!DNL D
 
 >[!NOTE]
 >
->[!DNL Experience Manager Forms] veröffentlicht die Add-On-Pakete eine Woche nach dem geplanten Veröffentlichungsdatum der [!DNL Experience Manager] Service Packs.
+>* [!DNL Experience Manager Forms] veröffentlicht die Add-On-Pakete eine Woche nach dem geplanten Veröffentlichungsdatum der [!DNL Experience Manager] Service Packs.
+>* Sie können jetzt Anwendungen mit [!DNL Azul Zulu]-Builds von [!DNL OpenJDK] für [!DNL Experience Manager Forms] in OSGi-Bereitstellungen entwickeln und betreiben.
+
+
+**Adaptive Formulare**
+
+* Sprachinitialisierungsprobleme in [!DNL Experience Manager Forms] 6.5.7.0 beim Generieren mehrerer Übersetzungswörterbücher (NPR-36439).
+* Wenn Sie eine Anlage zum adaptiven Formularfragment hinzufügen und das Formular senden, zeigt [!DNL Experience Manager Forms] die folgende Fehlermeldung an (NPR-36195):
+
+   ```TXT
+    POST /content/forms/af/attachmentissue/jcr:content/guideContainer.af.submit.jsp HTTP/1.1] com.adobe.aemds.guide.servlet.GuideSubmitServlet [AF] Invalid file name or mime type for file resulted in submission failure
+   ```
+
+* Wenn Sie mit der menschlichen Übersetzung ein Wörterbuch aktualisieren und dann ein adaptives Formular in der Vorschau anzeigen, werden die Änderungen nicht angezeigt. (NPR-36035)
+
+**Interaktive Kommunikation**
+
+* Wenn Sie ein Bild mit dem Druckkanal für interaktive Kommunikation hochladen und bearbeiten, ist das Bild nicht mehr sichtbar (NPR-36518).
+
+* Beim Bearbeiten eines Text-Assets und Füllen eines Platzhalters werden alle interaktiven Elemente aus dem Navigationsbereich entfernt (NPR-35991).
+
+**Arbeitsablauf**
+
+* Wenn Sie den REST-Endpunkt eines [!DNL Experience Manager Forms]-Dienstes auf JBoss aufrufen, zeigt [!DNL Experience Manager] die folgende Fehlermeldung an (NPR-36305):
+
+   ```TXT
+   Invalid input. The maximum length of 2000 characters was exceeded.
+   ```
+
+**BackendIntegration**
+
+* Es kann kein Formulardatenmodell gespeichert werden, während das Read Service-Argument an einen Literalwert gebunden wird, der einen Bindestrich enthält (NPR-36366).
+
+**Dokumentensicherheit**
+
+* Wenn Sie Zertifizierung und HSM für GlobalSign festlegen, zeigt [!DNL Experience Manager Forms] die Fehlermeldungen `Unsuported Algorithm` und `Invalid TSA Certificate` an, während ein Zeitstempel zu LTV hinzugefügt wird (NPR-36026, NPR-36025).
+
+**Document Services**
+
+* Aktualisierungen der [!DNL Gibson]-Bibliothek für die Integration mit [!DNL Experience Manager Forms] (NPR-36211).
+
+**Foundation JEE**
+
+* Wenn Sie Endpunktverwaltung in der AdminUI auswählen, zeigt [!DNL Experience Manager Forms] die Fehlermeldung `endpoint registry failure` an (CQ-4320249).
 
 Informationen zu Sicherheitsupdates finden Sie auf der Seite [Experience Manager-Sicherheitsbulletins](https://helpx.adobe.com/security/products/experience-manager.html).
 
@@ -365,34 +420,31 @@ B. Verwenden Sie die [HTTP-API von Package Manager](/help/sites-administering/pa
 
 Informationen zu den Plattformen, die für diese Version zertifiziert sind, finden Sie unter [Technische Anforderungen](/help/sites-deploying/technical-requirements.md).
 
-<!--
-
-### Install Adobe Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
+### Installieren des Adobe Experience Manager Forms Add-On-Pakets {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
->Skip if you are not using Experience Manager Forms. Fixes in Experience Manager Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
+>Überspringen Sie diesen Schritt, wenn Sie Experience Manager Forms nicht verwenden. Fehlerbehebungen in Experience Manager Forms werden eine Woche nach der geplanten Veröffentlichung des Service Packs über ein separates Add-On-Paket bereitgestellt.[!DNL Experience Manager]
 
-1. Ensure that you have installed the Adobe Experience Manager Service Pack.
-1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#forms-updates) for your operating system.
-1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
-
->[!NOTE]
->
->AEM 6.5.9.0 includes a new version of [AEM Forms Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases). If you are using an older version of AEM Forms Compatibility Package and updating to AEM 6.5.9.0, install the latest version of the package post installation of Forms Add-On Package.
-
-### Install Adobe Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
+1. Stellen Sie sicher, dass Sie das Adobe Experience Manager Service Pack installiert haben.
+1. Wählen Sie unter den aufgeführten [AEM Forms-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#forms-updates) das für Ihr Betriebssystem passende Forms-Add-on-Paket aus und laden Sie es herunter.
+1. Installieren Sie das Forms Add-On-Paket wie unter [Installieren von AEM Forms Add-On-Paketen](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package) beschrieben.
 
 >[!NOTE]
 >
->Skip if you are not using AEM Forms on JEE. Fixes in Adobe Experience Manager Forms on JEE are delivered through a separate installer.
+>AEM 6.5.9.0 enthält eine neue Version von [AEM Forms Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases). Wenn Sie eine ältere Version des AEM Forms-Kompatibilitätspakets verwenden und auf AEM 6.5.9.0 aktualisieren, installieren Sie die neueste Version des Pakets nach der Installation des Forms Add-On-Pakets.
 
-For information about installing the cumulative installer for Experience Manager Forms on JEE and post-deployment configuration, see the [release notes](jee-patch-installer-65.md).
+### Installieren von Adobe Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
->After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
--->
+>Überspringen Sie diesen Schritt, wenn Sie AEM Forms JEE nicht verwenden. Fehlerbehebungen in Adobe Experience Manager Forms on JEE werden über ein separates Installationsprogramm bereitgestellt.
+
+Informationen zum Installieren des kumulativen Installationsprogramms für Experience Manager Forms on JEE und zur Konfiguration nach der Bereitstellung finden Sie in den [Versionshinweisen](jee-patch-installer-65.md).
+
+>[!NOTE]
+>
+>Nachdem Sie das kumulative Installationsprogramm für Experience Manager Forms on JEE installiert haben, installieren Sie das neueste Add-On-Paket für Forms, löschen Sie das Add-On-Paket für Forms aus dem Ordner `crx-repository\install` und starten Sie den Server neu.
 
 ### UberJar {#uber-jar}
 
