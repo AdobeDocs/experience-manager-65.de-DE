@@ -6,7 +6,7 @@ docset: aem65
 feature: 3D-Assets
 role: Business Practitioner
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
-source-git-commit: 666bc5d943af371726708cb2ef157a9b3f07eb8e
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 65%
@@ -55,7 +55,7 @@ Wenn Sie die Kamera interaktiv bearbeiten, muss darüber hinaus die Kapazität d
 
 1. Stellen Sie sicher, dass Sie 3D-Assets in Adobe Experience Manager hochgeladen haben.
 Siehe [Unterstützte Formate für die 3D-Vorschau](#supported-3d-previewing-assets) und [Hochladen von Assets](/help/assets/manage-assets.md#uploading-assets).
-1. Tippen Sie in Adobe Experience Manager auf der Seite **[!UICONTROL Navigation]** auf **[!UICONTROL Assets > Dateien.]**
+1. Tippen Sie in Adobe Experience Manager auf der Seite **[!UICONTROL Navigation]** auf **[!UICONTROL Assets > Dateien]**.
 
    ![Navigationsseite](/help/assets/assets-dm/navigation-assets.png)
 
@@ -79,4 +79,4 @@ Siehe [Unterstützte Formate für die 3D-Vorschau](#supported-3d-previewing-asse
    | **Zurücksetzen** | Tippen Sie in der rechten unteren Ecke der Seite auf das Symbol &quot;Zurücksetzen&quot;, um den Zielpunkt der Ansicht wieder in die Mitte des 3D-Assets zu setzen. Durch das Zurücksetzen wird die Kamera auch näher heran oder weiter weg bewegt, um das Asset in seiner Gesamtheit und in einer angemessenen Betrachtungsgröße zu zeigen. |  |  |
    | **Vollbildmodus** | Um in den Vollbildmodus zu wechseln, tippen Sie unten rechts auf der Seite auf das Symbol &quot;Vollbild&quot;. |  |  |
 
-1. Tippen Sie zum Abschluss unten rechts auf der Seite auf **[!UICONTROL Schließen.]**
+1. Tippen Sie zum Abschluss unten rechts auf der Seite auf **[!UICONTROL Schließen]**.
