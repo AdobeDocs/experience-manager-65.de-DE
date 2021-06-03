@@ -11,10 +11,10 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Komponenten,Publishing
-source-git-commit: 1c95217c98cdf24182eebbfea09c807318b2d514
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '3210'
-ht-degree: 66%
+ht-degree: 68%
 
 ---
 
@@ -34,7 +34,7 @@ Beim Hinzufügen einer Komponente für 3D Media, Dynamic Media, interaktive Med
 
 1. Öffnen Sie in Experience Manager die Seite, auf der Sie die Dynamic Media-Komponente hinzufügen möchten.
 1. Klicken Sie im Bedienfeld auf der linken Seite der Seite (bei Bedarf können Sie die Anzeige des Seitenbedienfelds umschalten) auf das Symbol **[!UICONTROL Komponenten]** .
-1. Wählen Sie unter der Überschrift **[!UICONTROL Komponenten]** in der Dropdown-Liste **[!UICONTROL Dynamic Media.]**
+1. Wählen Sie unter der Überschrift **[!UICONTROL Komponenten]** in der Dropdown-Liste **[!UICONTROL Dynamic Media]** aus.
 
    Wenn keine Liste der Dynamic Media-Komponenten verfügbar ist, müssen Sie die Dynamic Media-Komponenten aktivieren, die Sie verwenden möchten. Informationen hierzu finden Sie unter [Aktivieren von Dynamic Media-Komponenten](#enabling-dynamic-media-components).
 
@@ -65,7 +65,7 @@ Wenn keine Dynamic Media-Komponenten zum Hinzufügen zu einer Seite verfügbar s
 
    ![edit-template](/help/assets/assets-dm/edit-template.png)
 
-1. Tippen Sie oben rechts auf der Seite in der Symbolleiste in der Dropdown-Liste auf **[!UICONTROL Struktur.]**
+1. Tippen Sie oben rechts auf der Seite in der Symbolleiste in der Dropdown-Liste auf **[!UICONTROL Struktur]**.
 
    ![Richtlinie](/help/assets/assets-dm/structure-mode.png)
 
@@ -74,7 +74,7 @@ Wenn keine Dynamic Media-Komponenten zum Hinzufügen zu einer Seite verfügbar s
 
    ![Zugelassene Komponenten](/help/assets/assets-dm/allowed-components.png)
 
-1. Scrollen Sie nach unten, bis **[!UICONTROL Dynamic Media.]** angezeigt wird.
+1. Scrollen Sie nach unten, bis **[!UICONTROL Dynamic Media]** angezeigt wird.
 1. Tippen Sie links neben **[!UICONTROL Dynamic Media]** auf das Symbol > , damit Sie die Liste erweitern und dann die Dynamic Media-Komponenten auswählen können, die Sie aktivieren möchten.
 
    ![Liste der Dynamic Media-Komponenten](/help/assets/assets-dm/dm-components-select.png)
@@ -99,7 +99,7 @@ Zum Lokalisieren von Dynamic Media-Komponenten stehen Ihnen zwei Möglichkeiten 
 
 ## Komponenten vom Typ „Dynamische Medien“{#dynamic-media-components}
 
-Dynamic Media-Komponenten sind verfügbar, wenn Sie auf das Symbol **[!UICONTROL Komponenten]** tippen und dann nach **[!UICONTROL Dynamic Media filtern.]**
+Dynamic Media-Komponenten sind verfügbar, wenn Sie auf das Symbol **[!UICONTROL Komponenten]** tippen und nach **[!UICONTROL Dynamic Media]** filtern.
 
 Zu den verfügbaren Dynamic Media-Komponenten zählen:
 
@@ -148,7 +148,7 @@ Bearbeiten Sie die folgenden Dynamic Media-Einstellungen, indem Sie in der Kompo
 
 >[!NOTE]
 >
->Standardmäßig ist die Bildkomponente für Dynamic Media adaptiv. Wenn Sie eine feste Größe festlegen möchten, legen Sie sie in der Komponente auf der Registerkarte **[!UICONTROL Erweitert]** mit der **[!UICONTROL Breite]** und der **[!UICONTROL Höhe fest.]**
+>Standardmäßig ist die Bildkomponente für Dynamic Media adaptiv. Wenn Sie eine feste Größe einrichten möchten, legen Sie sie auf der Registerkarte **[!UICONTROL Erweitert]** in der Komponente mit der **[!UICONTROL Breite]** und **[!UICONTROL Höhe]** fest.
 
 * **[!UICONTROL Viewer-Vorgabe]** : Wählen Sie eine vorhandene Viewer-Vorgabe aus dem Dropdown-Menü aus. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe [Verwalten von Viewer-Vorgaben](/help/assets/managing-viewer-presets.md). Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
 
@@ -236,7 +236,7 @@ Bearbeiten Sie die folgende Dynamic Media-Einstellung, indem Sie in der Komponen
 
 >[!NOTE]
 >
->Standardmäßig ist die Bildkomponente für Dynamic Media adaptiv. Wenn Sie eine feste Größe festlegen möchten, legen Sie sie in der Komponente auf der Registerkarte **[!UICONTROL Erweitert]** mit der **[!UICONTROL Breite]** und der **[!UICONTROL Höhe fest.]**
+>Standardmäßig ist die Bildkomponente für Dynamic Media adaptiv. Wenn Sie eine feste Größe einrichten möchten, legen Sie sie auf der Registerkarte **[!UICONTROL Erweitert]** in der Komponente mit der **[!UICONTROL Breite]** und **[!UICONTROL Höhe]** fest.
 
 * **[!UICONTROL Bildmodifikatoren]** : Sie können Bildeffekte anwenden, indem Sie zusätzliche Bildbefehle bereitstellen. Diese Effekte werden unter Bildvorgaben und in der Referenz zum Image Serving-Befehl beschrieben.
 
