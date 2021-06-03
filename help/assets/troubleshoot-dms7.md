@@ -11,10 +11,10 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: Fehlerbehebung
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '1286'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -32,7 +32,7 @@ Stellen Sie sicher, dass Dynamic Media korrekt eingerichtet wurde, indem Sie fol
 
    Dieses optionale Feature Pack ist für die FTP-Unterstützung oder für die Migration von Assets von Dynamic Media Classic zu Dynamic Media vorgesehen.
 
-* Navigieren Sie zur Cloud Services-Benutzeroberfläche und bestätigen Sie, dass das bereitgestellte Konto unter **[!UICONTROL Verfügbare Konfigurationen angezeigt wird.]**
+* Navigieren Sie zur Cloud Services-Benutzeroberfläche und vergewissern Sie sich, dass das angegebene Konto unter **[!UICONTROL Verfügbare Konfigurationen]** aufgeführt wird.
 * Stellen Sie sicher, dass der Replikationsagent `Dynamic Media Asset Activation (scene7)` aktiviert ist.
 
    Diesen Replizierungsagent finden Sie unter „Agenten für Autor“.
