@@ -10,7 +10,7 @@ discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 role: Business Practitioner, Administrator
 exl-id: 750627fc-2a29-43ff-867e-55cb2e371043
 feature: Veröffentlichung
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 87%
@@ -21,7 +21,7 @@ ht-degree: 87%
 
 Sie veröffentlichen Ihre Dynamic Media-Assets, indem Sie die bereits hochgeladenen Assets auswählen und auf **[!UICONTROL Veröffentlichen]** oder **[!UICONTROL Quick Publish]** tippen. Nachdem Ihre Dynamic Media-Assets veröffentlicht wurden, können Sie sie über eine URL auf einer Web-Seite einschließen oder den Code auf der Seite einbetten.
 
-Sie können hochgeladene Assets auch umgehend und ohne Benutzerinteraktion veröffentlichen. Siehe [Konfigurieren von Dynamic Media - Scene7-Modus .](config-dms7.md)
+Sie können hochgeladene Assets auch umgehend und ohne Benutzerinteraktion veröffentlichen. Siehe [Konfigurieren von Dynamic Media - Scene7-Modus](config-dms7.md).
 Sie können Assets für Dynamic Media oder AEM auch selektiv veröffentlichen (sich gegenseitig ausschließend), indem Sie auf der Ordnerebene die Option **[!UICONTROL Selektive Veröffentlichung]** verwenden. Siehe [Arbeiten mit selektiver Veröffentlichung in Dynamic Media](/help/assets/selective-publishing.md).
 
 In der **[!UICONTROL Kartenansicht]** wird ein kleines Globussymbol direkt unter dem Namen eines Assets und links von Datum und Uhrzeit angezeigt, um anzuzeigen, dass es veröffentlicht wurde. In der **[!UICONTROL Listenansicht]** gibt eine Spalte **[!UICONTROL Veröffentlicht]** an, welche Assets veröffentlicht sind.
@@ -47,7 +47,7 @@ Siehe auch [Einbetten des Dynamic Media-Video- oder Bild-Viewers auf einer Web-S
 
 Ausführliche Informationen zum Veröffentlichen von Sets oder des Assets finden Sie unter [Veröffentlichen von Assets](manage-assets.md).
 
-## Bereitstellung von Dynamic Media-Assets über HTTP/2   {#http-delivery-of-dynamic-media-assets}
+## Bereitstellung von Dynamic Media-Assets über HTTP/2  {#http-delivery-of-dynamic-media-assets}
 
 AEM unterstützt jetzt die Bereitstellung aller Dynamic Media-Inhalte (Bilder und Videos) über HTTP/2. Das heißt, dass eine veröffentlichte URL oder ein eingebetteter Code für ein Bild oder Video verfügbar ist und in beliebige Programme integriert werden kann, die gehostete Assets akzeptiert. Dieses veröffentlichte Asset wird dann über das HTTP/2-Protokoll bereitgestellt. Dieses Bereitstellungsverfahren verbessert die Kommunikation zwischen Browser und Server und verbessert die Antwort- und Ladezeiten aller Dynamic Media-Assets.
 
