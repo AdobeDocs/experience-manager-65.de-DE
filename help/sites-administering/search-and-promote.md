@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: aca444f6-418a-4c01-ae19-663b4e04fab9
 docset: aem65
 exl-id: 15f45978-a983-49a0-91cf-c7610fc37eef
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 77%
@@ -44,7 +44,7 @@ Führen Sie zum Abrufen des Dienstes Adobe Search&amp;Promote von unserer Websit
 
 Die Standard-URL, die für den Search&amp;Promote-Dienst konfiguriert ist, lautet `https://searchandpromote.omniture.com/px/`. Verwenden Sie zur Verwendung eines anderen Diensts die OSGi-Konsole, um eine andere URL anzugeben.
 
-1. Öffnen Sie die OSGi-Konsole und klicken Sie auf die Registerkarte „Konfiguration“. ([https://localhost:4502/system/console/configMgr.](https://localhost:4502/system/console/configMgr))
+1. Öffnen Sie die OSGi-Konsole und klicken Sie auf die Registerkarte „Konfiguration“. ([https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr))
 1. Klicken Sie auf das Element „Day CQ Search&amp;Promote-Konfiguration“.
 1. Geben Sie die URL in das Feld „URI des Remoteservers“ ein und klicken Sie auf „Speichern“.
 
@@ -92,7 +92,7 @@ Konfigurieren Sie eine oder mehrere Verbindungen mit Search&amp;Promote, sodass 
    >
    >[https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY](https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY)
    >
-   >**Hierbei gilt:**
+   >**Dabei ist:**
    >
    >    * **** XXXXXXXXXX entspricht Ihrer ** Mitglieds-ID**
    >    * **** spYYYYYYYYentspricht Ihrer  **Kontonummer**
@@ -124,7 +124,7 @@ Sie können das Datenzentrum wie folgt konfigurieren:
 
 1. Klicken Sie auf **Speichern**.
 
-## Hinzufügen von Search&amp;Promote-Komponenten zum Sidekick  {#adding-search-promote-components-to-sidekick}
+## Hinzufügen von Search&amp;Promote-Komponenten zum Sidekick {#adding-search-promote-components-to-sidekick}
 
 Bearbeiten Sie im Designmodus eine **par**-Komponente, sodass sie die Search&amp;Promote-Komponenten im Sidekick zulässt. (In der Dokumentation zu den [Komponenten](/help/sites-developing/components.md#addinganewcomponenttotheparagraphsystemdesignmode) finden Sie weitere Informationen.)
 
