@@ -11,7 +11,7 @@ docset: aem65
 feature: Gemischte Mediensets,Asset-Verwaltung
 role: Business Practitioner, Administrator
 exl-id: 70a72fb9-a289-4eda-abcc-300edf9f1961
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '1470'
 ht-degree: 98%
@@ -38,7 +38,7 @@ Führen Sie die folgenden Schritte aus, um den schnellen Einstieg in die Arbeit 
 
    Laden Sie zunächst die Bilder und Videos für Ihre gemischten Mediensets hoch. Erstellen Sie bei Bedarf [Bildsets](/help/assets/image-sets.md) und [Rotationssets](/help/assets/spin-sets.md). Da Benutzer Bilder im Viewer für gemischte Mediensets zoomen können, sollten Sie beim Auswählen von Bildern auch das Zoomen berücksichtigen. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2.000 Pixel hat.
 
-1. [Erstellen Sie Sets für gemischte Medien.](#creating-mixed-media-sets)
+1. [Erstellen Sie gemischte Mediensets](#creating-mixed-media-sets).
 
    Zum Erstellen eines gemischten Mediensets tippen Sie auf der Seite „Assets“ auf **[!UICONTROL Erstellen > Gemischtes Medienset]**. Benennen Sie dann das Set, wählen Sie die Assets und die Reihenfolge der Bilder aus.
 
@@ -50,13 +50,13 @@ Führen Sie die folgenden Schritte aus, um den schnellen Einstieg in die Arbeit 
 
    Um Viewer-Vorgaben zu erstellen oder zu bearbeiten, wählen Sie **[!UICONTROL Tools > Assets > Viewer-Vorgaben]**.
 
-   Siehe [Hinzufügen und Bearbeiten von Viewer-Vorgaben.](/help/assets/managing-viewer-presets.md)
+   Siehe [Hinzufügen und Bearbeiten von Viewer-Vorgaben](/help/assets/managing-viewer-presets.md).
 
-1. [Zeigen Sie eine Vorschau der Sets für gemischte Medien an.](#previewing-mixed-media-sets)
+1. [Zeigen Sie eine Vorschau der gemischten Mediensets an](#previewing-mixed-media-sets).
 
    Wenn Sie das gemischte Medienset auswählen, können Sie eine Vorschau davon anzeigen. Klicken Sie auf die Miniaturansichtssymbole, um das gemischte Medienset im gewählten Viewer zu untersuchen. Sie können verschiedene Viewer aus dem Menü **[!UICONTROL Viewer]** wählen, das Sie links in der Leiste über die Dropdown-Liste aufrufen können.
 
-1. [Veröffentlichen Sie gemischte Mediensets.](#publishing-mixed-media-sets)
+1. [Veröffentlichen Sie gemischte Mediensets](#publishing-mixed-media-sets).
 
    Beim Veröffentlichen eines gemischten Mediensets wird die URL- und Integrationszeichenfolge aktiviert. Außerdem müssen Sie [die Viewer-Vorgabe veröffentlichen](/help/assets/managing-viewer-presets.md#publishing-viewer-presets).
 
@@ -86,7 +86,7 @@ Sie können Ihrem gemischten Medienset Bilder, Bildsets, Rotationssets und Video
 
 Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Reihenfolge hinzugefügt. Sie können die Assets manuell neu anordnen oder sortieren, nachdem sie hinzugefügt wurden.
 
-**So erstellen Sie ein gemischtes Medienset**
+**So erstellen Sie ein gemischtes Medienset:**
 
 1. Navigieren Sie in Assets an die Stelle, an der Sie ein gemischtes Medienset erstellen möchten, und klicken Sie auf **[!UICONTROL Erstellen]**. Wählen Sie dann **[!UICONTROL Gemischtes Medienset]** aus. Sie können das Set auch in einem Ordner erstellen, der die gewünschten Assets enthält. Der Editor für gemischte Mediensets wird angezeigt.
 
@@ -132,7 +132,7 @@ Sie können direkt auf der Benutzeroberfläche eine Vielzahl an Bearbeitungsaufg
 * Wenden Sie Viewer-Vorgaben an.
 * Ändern Sie die Standardminiatur.
 
-**So bearbeiten Sie ein gemischtes Medienset**
+**So bearbeiten Sie ein gemischtes Medienset:**
 
 1. Führen Sie einen der folgenden Schritte aus:
 
