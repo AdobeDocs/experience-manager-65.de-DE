@@ -11,7 +11,7 @@ docset: aem65
 feature: Asset-Verwaltung
 role: Business Practitioner, Administrator
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '11748'
 ht-degree: 95%
@@ -356,7 +356,7 @@ Diese Tabelle enthält die Datenraten von typischen Verbindungsgeschwindigkeiten
 
 ### Auflösung {#resolution}
 
-**Auflösung** bezeichnet die Höhe und Breite einer Videodatei in Pixel. Die meisten Quellvideos werden mit hoher Auflösung gespeichert (z. B. 1920 x 1080). Zu Streaming-Zwecken werden Quellvideos in eine niedrigere Auflösung komprimiert (640 x 480 oder weniger).
+Die **Auflösung** bezeichnet die Höhe und Breite einer Videodatei in Pixel. Die meisten Quellvideos werden mit hoher Auflösung gespeichert (z. B. 1920 x 1080). Zu Streaming-Zwecken werden Quellvideos in eine niedrigere Auflösung komprimiert (640 x 480 oder weniger).
 
 Auflösung und Datenrate stellen zwei eng miteinander verknüpfte Faktoren der Videoqualität dar. Um dieselbe Videoqualität beizubehalten gilt: Je höher die Anzahl Pixel in einer Videodatei (also je höher die Auflösung), desto höher muss auch die Datenrate sein. Betrachten Sie z. B. die Anzahl Pixel pro Frame in einer Videodatei mit der Auflösung 320 x 240 und einer Datei mit der Auflösung 640 x 480:
 
@@ -548,7 +548,7 @@ Für das Veröffentlichen von Videos auf YouTube benötigen Sie mindestens einen
 >
 >Sie müssen mindestens einen Kanal in YouTube eingerichtet haben, *bevor* Sie unter den YouTube-Einstellungen in AEM (siehe [Einrichten von YouTube in AEM](#setting-up-youtube-in-aem) unten) Kanäle hinzufügen. Wenn Sie das nicht tun, wird keine Warnung zu nicht vorhandenen Kanälen angezeigt. Beim Hinzufügen eines Kanals wird allerdings weiterhin eine Google-Authentifizierung vorgenommen. Es kann jedoch nicht ausgewählt werden, an welchen Kanal das Video gesendet wird.
 
-So erstellen Sie einen YouTube-Kanal:
+**So erstellen Sie einen YouTube-Kanal:**
 
 1. Rufen Sie [https://www.youtube.com](https://www.youtube.com/) auf und melden Sie sich mithilfe Ihrer Google-Kontoanmeldeinformationen an.
 1. Klicken Sie in der rechten oberen Ecke der YouTube-Seite auf Ihr Profilbild (kann auch als Buchstabe in einem einfarbigen Kreis angezeigt werden). Klicken Sie dann auf **[!UICONTROL YouTube-Einstellungen]** (Zahnradsymbol).
@@ -761,7 +761,7 @@ Nun verknüpfen Sie die Tags, die Sie den Video-Assets zuvor hinzugefügt haben.
 >
 >Ausführlichere Fortschrittsinformation können Sie dem YouTube-Protokoll unter „Replikation“ entnehmen. Hinweis: Für die Überwachung solcher Informationen benötigen Sie Administratorzugriff.
 
-So veröffentlichen Sie Videos in Ihrem YouTube-Kanal:
+**So veröffentlichen Sie Videos in Ihrem YouTube-Kanal:**
 
 1. Navigieren Sie in AEM zu einem Video-Asset, das Sie in Ihrem YouTube-Kanal veröffentlichen möchten.
 1. Wählen Sie das Video-Asset aus (das adaptive Videoset).
@@ -797,7 +797,7 @@ Sie können nach dem Veröffentlichen des Videos eine YouTube-URL-Zeichenfolge a
 >
 >Die YouTube-URL kann erst kopiert werden, wenn Sie das Video-Asset in YouTube veröffentlicht haben.
 
-So verknüpfen Sie YouTube-URLs mit einer Web-Anwendung:
+**So verknüpfen Sie YouTube-URLs mit einer Web-Anwendung:**
 
 1. Navigieren Sie zum *auf YouTube veröffentlichten* Video-Asset, dessen URL Sie kopieren möchten, und wählen Sie es aus.
 
@@ -821,7 +821,7 @@ Wenn Sie die Veröffentlichung eines Video-Assets in AEM rückgängig machen, wi
 >
 >Siehe [Überwachen der Videokodierung und des YouTube Publishing-Fortschritts](#monitoring-video-encoding-and-youtube-publishing-progress).
 
-So machen Sie die Veröffentlichung von Videos rückgängig, um sie aus YouTube zu entfernen:
+**So machen Sie die Veröffentlichung von Videos rückgängig, um sie aus YouTube zu entfernen:**
 
 1. Navigieren Sie zu den Video-Assets, deren Veröffentlichung in Ihrem YouTube-Kanal Sie rückgängig machen möchten.
 1. Wählen Sie in einem Asset-Auswahlmodus eines oder mehrere der veröffentlichten Video-Assets aus.
@@ -836,7 +836,7 @@ Wenn Sie ein neues Video in einen Ordner hochladen, auf den Videokodierung angew
 
 ### Fortschritt überwachen {#monitoring-progress}
 
-So überwachen Sie den Fortschritt (auch die fehlgeschlagene Kodierung/YouTube-Veröffentlichung):
+**So überwachen Sie den Fortschritt (auch die fehlgeschlagene Kodierung/YouTube-Veröffentlichung):**
 
 1. Fortschritt der Videokodierung in Ihrem Asset-Ordner anzeigen:
 
@@ -987,7 +987,7 @@ Wenn Sie die Funktion „Videoberichte“ zum ersten Mal aufrufen, enthält der 
 
 Damit Videoberichte ordnungsgemäß funktionieren, wird automatisch eine Report Suite-ID erstellt, wenn Dynamic Media Cloud Services konfiguriert wurde. Gleichzeitig wird die Report Suite-ID an den Veröffentlichungs-Server übergeben, damit sie für die Funktion „URL kopieren“ bei der Asset-Vorschau verfügbar ist. Dafür muss der Veröffentlichungs-Server aber bereits eingerichtet sein. Wenn der Veröffentlichungs-Server nicht eingerichtet ist, können Sie zwar die Veröffentlichung vornehmen, um den Videobericht anzuzeigen, müssen aber zur Cloud-Konfiguration für Dynamic Media zurückkehren und auf **[!UICONTROL OK]** tippen.
 
-So zeigen Sie Videoberichte an:
+**So zeigen Sie Videoberichte an:**
 
 1. Tippen Sie in der linken oberen Ecke von AEM auf das AEM-Logo, tippen Sie dann links in der Leiste auf **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Assets]** > **[!UICONTROL Videoberichte]**.
 1. Führen Sie auf der Seite „Videoberichte“ eine der folgenden Aktionen aus:
@@ -1008,7 +1008,7 @@ Wenn Sie einen von Dynamic Media standardmäßig bereitgestellten Video-Viewer v
 
 Verwenden Sie das [Adobe Dynamic Media Viewer Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=de) und die [HTML5 Viewer SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) , um eigene Video-Viewer zu erstellen.
 
-So zeigen Sie Videoberichte basierend auf einem Video-Viewer an, den Sie mit der HTML5 Viewer SDK-API erstellt haben:
+**So zeigen Sie Videoberichte basierend auf einem Video-Viewer an, den Sie mit der HTML5 Viewer SDK-API erstellt haben:**
 
 1. Navigieren Sie zu einem veröffentlichten Video-Asset.
 1. Wählen Sie links oben auf der Seite des Assets aus der Dropdown-Liste die Option **[!UICONTROL Viewer]** aus.
@@ -1311,7 +1311,7 @@ Siehe [Hinzufügen von Videominiaturen](#adding-a-video-thumbnail).
 1. Tippen Sie auf **[!UICONTROL OK]**, um zur Registerkarte „Eigenschaften“ zurückzukehren.
 1. Tippen Sie in der linken oberen Ecke der Seite „CRXDE Lite“ auf **[!UICONTROL Alle speichern]** und tippen Sie dann auf das Symbol „Zurück zur Startseite“, um zu AEM zurückzukehren.
 
-   Siehe [Hinzufügen von Videominiaturen.](#adding-a-video-thumbnail)
+   Siehe [Hinzufügen von Videominiaturen](#adding-a-video-thumbnail).
 
 ### Hinzufügen benutzerdefinierter Videominiaturen {#adding-a-custom-video-thumbnail-1}
 
