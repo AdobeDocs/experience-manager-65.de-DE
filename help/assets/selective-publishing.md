@@ -9,7 +9,7 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
 feature: Veröffentlichung
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '2935'
 ht-degree: 85%
@@ -38,10 +38,10 @@ Unabhängig davon, ob Sie sich auf den Wert **[!UICONTROL Assets veröffentliche
 
 Nachdem Sie selektive Veröffentlichung in einem Ordner konfiguriert haben, haben Sie folgende Möglichkeiten:
 
-* [Veröffentlichen Sie Assets selektiv für Dynamic Media oder AEM mit „Veröffentlichung verwalten“.](#selective-publish-manage-publication)
-* [Machen Sie die Veröffentlichung von Assets in Dynamic Media oder AEM mithilfe von „Veröffentlichung verwalten“ rückgängig.](#selective-unpublish-manage-publication)
-* [Veröffentlichen Sie Assets in Dynamic Media oder AEM mithilfe von „Quick Publish“.](#quick-publish-aem-dm)
-* [Selektive Veröffentlichung oder Rückgängigmachen der Veröffentlichung von Assets mithilfe von Suchergebnissen.](#selective-publish-unpublish-search-results)
+* [Veröffentlichen Sie Assets selektiv in Dynamic Media oder AEM mit Veröffentlichung verwalten](#selective-publish-manage-publication).
+* [Machen Sie die Veröffentlichung von Assets in Dynamic Media oder AEM mithilfe von „Veröffentlichung verwalten“ rückgängig](#selective-unpublish-manage-publication).
+* [Veröffentlichen von Assets in Dynamic Media oder AEM mithilfe von &quot;Quick Publish&quot;](#quick-publish-aem-dm).
+* [Veröffentlichen Sie Assets mithilfe von Suchergebnissen selektiv bzw. machen Sie die Veröffentlichung rückgängig](#selective-publish-unpublish-search-results).
 
 **So konfigurieren Sie eine selektive Veröffentlichung auf der Ordnerebene in Dynamic Media**
 
