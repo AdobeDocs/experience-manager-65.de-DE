@@ -10,7 +10,7 @@ discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 role: Business Practitioner, Administrator
 exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
 feature: Konfiguration
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 94%
@@ -29,15 +29,15 @@ Um diese URL-Zeichenfolgen auf Ihren Web-Seiten und in Ihren Programmen zu platz
 >
 >URL-Zeichenfolgen sind nur für dynamische Ausgabedarstellungen von Assets verfügbar. Sie sind derzeit nicht für statische Assets verfügbar, die im DAM und nicht auf dem Dynamic Media-Server gespeichert sind. Für statische Ausgabedarstellungen wird die URL-Schaltfläche nicht angezeigt.
 
-Siehe auch [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite.](embed-code.md)
+Siehe auch [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](embed-code.md).
 
 Siehe auch [Verknüpfen von YouTube-URLs mit einer Web-Anwendung](video.md).
 
-Siehe auch [Bereitstellen von optimierten Bildern für eine responsive Site.](responsive-site.md)
+Siehe auch [Bereitstellen von optimierten Bildern für eine responsive Site](responsive-site.md).
 
-Informationen hierzu finden Sie auch unter [Hochladen von Assets.](manage-assets.md#uploading-assets)
+Informationen hierzu finden Sie auch unter [Hochladen von Assets](manage-assets.md#uploading-assets).
 
-## Abrufen einer URL für ein Asset     {#obtaining-a-url-for-an-asset}
+## Abrufen einer URL für ein Asset  {#obtaining-a-url-for-an-asset}
 
 Sie können eine URL-Zeichenfolge abrufen, die von einer Bild- oder Viewer-Vorgabe generiert wird. Wenn Sie die URL kopieren, wird sie in der Zwischenablage abgelegt, sodass Sie sie nach Bedarf in Seiten einer Website oder einem Programm einfügen können.
 
