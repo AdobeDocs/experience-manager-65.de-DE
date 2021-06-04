@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '5517'
 ht-degree: 11%
@@ -53,7 +53,7 @@ Wenn Sie in dieser Lösung mit Assets arbeiten, nutzen Sie eine der folgenden Vo
 * Hochladen von Assets direkt in Dynamic Media Classic und anschließender Zugriff über den Inhaltsbrowser **Dynamic Media Classic** für die Seitenbearbeitung oder
 * Laden Sie in Experience Manager Assets hoch und aktivieren Sie dann die automatische Veröffentlichung in Dynamic Media Classic. Zugriff über den Inhaltsbrowser **Assets** für die Seitenbearbeitung
 
-Die Komponenten, die Sie für diese Integration verwenden, befinden sich im Komponentenbereich **Dynamic Media Classic** im Designmodus [](/help/sites-authoring/author-environment-tools.md#page-modes).
+Die Komponenten, die Sie für diese Integration verwenden, befinden sich im Komponentenbereich **Dynamic Media Classic** im [Designmodus](/help/sites-authoring/author-environment-tools.md#page-modes).
 
 ### Experience Manager Dynamic Media {#aem-dynamic-media}
 
@@ -72,7 +72,7 @@ Die von Ihnen für Dynamic Media verwendeten Komponenten befinden sich im Kompon
 
 * **[!UICONTROL Interaktive Medien]**  - Die  **[!UICONTROL interaktive]** Medienkomponente eignet sich für Assets wie Karussellbanner, interaktive Bilder und interaktive Videos. Solche Assets weisen Interaktivität auf, z. B. Hotspots oder Imagemaps. Diese Komponente ist intelligent. Je nachdem, ob Sie ein Bild oder Video hinzufügen, haben Sie verschiedene Optionen. Darüber hinaus ist der Viewer responsiv - die Größe des Bildschirms ändert sich automatisch basierend auf der Bildschirmgröße. Bei allen Viewern handelt es sich um HTML5-Viewer.
 
-### Szenario einer Doppelnutzung  {#dual-use-scenario}
+### Szenario einer Doppelnutzung {#dual-use-scenario}
 
 Standardmäßig können Sie die Dynamic Media- und Dynamic Media Classic-Integrationsfunktionen von Experience Manager gleichzeitig verwenden. In der folgenden Tabelle mit Anwendungsfällen wird beschrieben, wann Sie bestimmte Bereiche ein- und ausschalten.
 
@@ -423,8 +423,8 @@ Wenn Sie jedoch nicht möchten, dass Assets, die an Dynamic Media Classic gesend
 
 Bevor Sie Assets in Dynamic Media Classic übertragen können, ohne sie zu veröffentlichen, müssen Sie Folgendes einrichten:
 
-1. [Verwenden Sie die Admin Console, um einen Support-Fall zu erstellen.](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Bitten Sie in Ihrem Support-Fall um die Aktivierung einer sicheren Vorschau für Ihr Dynamic Media Classic-Konto.
-1. Folgen Sie den Anweisungen unter [Einrichten einer sicheren Vorschau für Ihr Dynamic Media Classic-Konto.](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)
+1. [Verwenden Sie die Admin Console, um einen Support-Fall zu erstellen](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Bitten Sie in Ihrem Support-Fall um die Aktivierung einer sicheren Vorschau für Ihr Dynamic Media Classic-Konto.
+1. Folgen Sie den Anweisungen unter [Einrichten einer sicheren Vorschau für Ihr Dynamic Media Classic-Konto](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html).
 
 Diese Schritte sind dieselben, die Sie ausführen würden, um sichere Testeinstellungen in Dynamic Media Classic zu erstellen.
 
