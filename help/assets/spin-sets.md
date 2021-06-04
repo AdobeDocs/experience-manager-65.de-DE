@@ -11,7 +11,7 @@ docset: aem65
 feature: Rotationssets,Asset-Verwaltung
 role: Business Practitioner, Administrator
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 99%
@@ -36,11 +36,11 @@ Rotationssets werden durch ein Banner mit dem Wort **[!UICONTROL SPINSET]** geke
 
 Führen Sie die folgenden Schritte aus, um den schnellen Einstieg in die Arbeit mit Rotationssets zu schaffen:
 
-1. [Laden Sie die Bilder für mehrere Ansichten hoch.](#uploading-assets-for-spin-sets)
+1. [Laden Sie die Bilder für mehrere Ansichten hoch](#uploading-assets-for-spin-sets).
 
    Sie benötigen mindestens 8 bis 12 Aufnahmen eines Artikels für ein eindimensionales Rotationsset und 16 bis 24 Aufnahmen für ein zweidimensionales Rotationsset. Die Aufnahmen müssen in regelmäßigen Abständen gemacht werden, um den Eindruck zu erwecken, dass der Artikel gedreht wird. Beispiel: Wenn ein eindimensionales Rotationsset 12 Aufnahmen umfasst, drehen Sie den Artikel für jede Aufnahme um 30 Grad (360/12).
 
-1. [Erstellen Sie Rotationssets.](#creating-spin-sets)
+1. [Erstellen Sie Rotationssets](#creating-spin-sets).
 
    Zum Erstellen eines Rotationssets wählen Sie **[!UICONTROL Erstellen > Rotationsset]** und benennen Sie das Set, wählen Sie die Assets und wählen Sie die Reihenfolge der Bilder.
 
@@ -56,17 +56,17 @@ Führen Sie die folgenden Schritte aus, um den schnellen Einstieg in die Arbeit 
 
    Um Viewer-Vorgaben zu erstellen oder zu bearbeiten, wählen Sie **[!UICONTROL Tools > Assets > Viewer-Vorgaben]**.
 
-   Siehe [Hinzufügen und Bearbeiten von Viewer-Vorgaben.](/help/assets/managing-viewer-presets.md)
+   Siehe [Hinzufügen und Bearbeiten von Viewer-Vorgaben](/help/assets/managing-viewer-presets.md).
 
 1. [Zeigen Sie Rotationssets an](#viewing-spin-sets).
 
    Es gibt drei verschiedene Arten, über Stapelsatzvorgaben erstellte Sätze anzuzeigen und darauf zuzugreifen. (In der Benutzeroberfläche werden *keine* mit Stapelsatzvorgaben erstellten Sets angezeigt.)
 
-1. [Zeigen Sie eine Vorschau der Rotationssets an.](/help/assets/previewing-assets.md)
+1. [Zeigen Sie eine Vorschau der Rotationssets an](/help/assets/previewing-assets.md).
 
    Wählen Sie das Rotationsset aus, um dessen Vorschau anzuzeigen. Drehen Sie das Rotationsset. Sie können verschiedene Viewer aus dem Menü **[!UICONTROL Viewer]** wählen, das Sie links in der Leiste über die Dropdown-Liste aufrufen können.
 
-1. [Veröffentlichen Sie Rotationssets.](/help/assets/publishing-dynamicmedia-assets.md)
+1. [Veröffentlichen Sie Rotationssets](/help/assets/publishing-dynamicmedia-assets.md).
 
    Beim Veröffentlichen eines Rotationssets wird die URL- und Integrationszeichenfolge aktiviert. Außerdem müssen Sie [die Viewer-Vorgabe veröffentlichen](/help/assets/managing-viewer-presets.md).
 
@@ -142,7 +142,7 @@ In diesem Abschnitt wird beschrieben, wie Sie Rotationssets in AEM erstellen.
 
    Ziehen Sie das Symbol zum Neuanordnen eines Assets ggf. rechts neben den Dateinamen des Assets, um Bilder in der Setliste nach oben oder unten zu bewegen.
 
-   ![Ordnen Sie Frame 11 im Rotationsset neu an, indem Sie ihn an eine neue Position ziehen.](assets/6_5_spinset-reorderassets.png)
+   ![Ordnen Sie Frame 11 im Rotationsset neu an, indem Sie ihn an eine neue Position ziehen](assets/6_5_spinset-reorderassets.png).
 
    Ordnen Sie Frame 11 im Rotationsset neu an, indem Sie ihn an eine neue Position ziehen.
 
@@ -162,7 +162,7 @@ Sie können Rotationssets in der Benutzeroberfläche oder automatisch über [Sta
 >
 >Sets können auch über die Benutzeroberfläche angezeigt werden, wie unter [Bearbeiten von Rotationssets](#editing-spin-sets) beschrieben.
 
-**So zeigen Sie Rotationssets an**
+**So zeigen Sie Rotationssets an:**
 
 1. Beim Öffnen der Eigenschaften eines einzelnen Assets. Die Eigenschaften zeigen an, zu welchen Sets das ausgewählte Asset gehört (unter **[!UICONTROL Mitglied von Sets]**). Klicken Sie auf den Namen des Sets, um das gesamte Set anzuzeigen.
 
@@ -188,7 +188,7 @@ Sie können mehrere Bearbeitungsaufgaben für Rotationssets ausführen, z. B. d
 * Wenden Sie Viewer-Vorgaben an.
 * Löschen Sie das Rotationsset.
 
-**So bearbeiten Sie ein Rotationsset**
+**So bearbeiten Sie ein Rotationsset:**
 
 1. Führen Sie einen der folgenden Schritte aus:
 
