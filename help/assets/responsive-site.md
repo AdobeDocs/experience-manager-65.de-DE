@@ -10,7 +10,7 @@ discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
 feature: Asset-Verwaltung
 role: Business Practitioner, Administrator
 exl-id: 753d806f-5f44-4d73-a3a3-a2a0fc3e154b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 93%
@@ -23,11 +23,11 @@ Verwenden Sie die Funktion für responsiven Code, wenn Sie den Code für respons
 
 Verwenden Sie diese Funktion, wenn sich Ihre Website auf einem Drittanbieter-WCM befindet. Wenn sich Ihre Website jedoch auf AEM befindet, rendert ein Offsite-Image-Server das Bild und stellt es der Webseite bereit.
 
-Informationen hierzu finden Sie unter [Einbetten des Video-Viewers auf einer Web-Seite.](embed-code.md)
+Informationen hierzu finden Sie unter [Einbetten des Video-Viewers auf einer Web-Seite](embed-code.md).
 
 Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwebapplication.md).
 
-**So stellen Sie optimierte Bilder für eine responsive Site bereit**:
+**So stellen Sie optimierte Bilder für eine responsive Site bereit:**
 
 1. Wechseln Sie zu dem Bild, für das Sie responsiven Code bereitstellen möchten, und tippen Sie im Dropdown-Menü auf **[!UICONTROL Ausgabeformate]**.
 
