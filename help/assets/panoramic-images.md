@@ -11,10 +11,10 @@ docset: aem65
 feature: Panoramabilder,Asset-Verwaltung
 role: Business Practitioner, Administrator
 exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 79%
+source-wordcount: '578'
+ht-degree: 61%
 
 ---
 
@@ -42,11 +42,11 @@ Weitere Informationen über den Upload von Assets für die Verwendung mit dem Vi
 
 ## Konfigurieren von Dynamic Media Classic {#configuring-dynamic-media-classic-scene}
 
-Damit der Viewer für Panoramabilder in AEM ordnungsgemäß funktioniert, müssen Sie die Viewer-Vorgaben für Panoramabilder mit Dynamic Media Classic und Dynamic Media Classic-spezifischen Metadaten synchronisieren, damit die Viewer-Vorgaben im JCR aktualisiert werden. Konfigurieren Sie dazu Dynamic Media Classic wie folgt:
+Damit der Viewer für Panoramabilder in Adobe Experience Manager ordnungsgemäß funktioniert, synchronisieren Sie die Viewer-Vorgaben für Panoramabilder mit Dynamic Media Classic und Dynamic Media Classic-spezifischen Metadaten, damit die Viewer-Vorgaben im JCR aktualisiert werden. Um diese Synchronisation durchzuführen, konfigurieren Sie Dynamic Media Classic wie folgt:
 
 1. Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started) und melden Sie sich bei Ihrem Konto an.
 
-1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Veröffentlichungseinrichtung > Image-Server]**.
+1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Einstellungen]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Veröffentlichungseinrichtung]** > **[!UICONTROL Image-Server]**.
 1. Wählen Sie auf der Image-Server-Veröffentlichungsseite im Dropdownmenü **[!UICONTROL Veröffentlichungskontext]** oben die Option **[!UICONTROL Image-Serving]** aus.
 
 1. Suchen Sie auf derselben Image-Server-Veröffentlichungsseite die Überschrift **[!UICONTROL Anfrage-Attribute]**.
@@ -56,14 +56,14 @@ Damit der Viewer für Panoramabilder in AEM ordnungsgemäß funktioniert, müsse
 
    >[!NOTE]
    >
-   >Es werden nur Bilder innerhalb der zulässigen Maximalgröße unterstützt. Anfragen zu Bildern oberhalb der Obergrenze geben einen „403“-Fehler zurück.
+   >Es werden nur Bilder innerhalb der zulässigen Maximalgröße unterstützt. Anfragen für Bilder, die über der Größenbeschränkung liegen, führen zu einer Antwort mit dem Code 403.
 
 1. Gehen Sie unter der Überschrift „Anfrage-Attribute“ wie folgt vor:
 
    * Legen Sie den Anfragenverschleierungsmodus auf **[!UICONTROL Deaktiviert]** fest.
    * Legen Sie den Anfragensperrmodus auf **[!UICONTROL Deaktiviert]** fest.
 
-   Diese Einstellungen sind für die Verwendung der WCM-Komponente `Panoramic Media` in AEM erforderlich.
+   Diese Einstellungen sind für die Verwendung der WCM-Komponente `Panoramic Media` in Experience Manager erforderlich.
 
 1. Klicken Sie unten links auf der Image-Server-Veröffentlichungsseite auf **[!UICONTROL Speichern]**.
 
@@ -71,13 +71,13 @@ Damit der Viewer für Panoramabilder in AEM ordnungsgemäß funktioniert, müsse
 
 ### Fehlerbehebung in der WCM-Komponente für Panoramamedien {#troubleshooting-the-panoramic-media-wcm-component}
 
-Wenn Sie ein Bild in der Panoramamedienkomponente in WCM abgelegt haben und der Platzhalter der Komponente ausgeblendet ist, helfen Ihnen möglicherweise die folgenden Schritte zur Fehlerbehebung:
+Wenn Sie ein Bild in der Komponente Panoramamedien in Ihrem WCM abgelegt haben und der Komponenten-Platzhalter reduziert ist, führen Sie eine Fehlerbehebung für Folgendes durch:
 
-* Wenn Ihnen ein 403-Fehler (Forbidden) angezeigt wird, liegt es möglicherweise daran, dass die angefragte Bildgröße den Grenzwert überschreitet. Überprüfen Sie die Einstellungen **[!UICONTROL Maximale Antwortbildgröße]** unter [Konfigurieren von Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
+* Wenn der Fehler 403 Verboten auftritt, kann dies durch die zu große angeforderte Bildgröße verursacht werden. Überprüfen Sie die Einstellungen **[!UICONTROL Maximale Antwortbildgröße]** unter [Konfigurieren von Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 * Überprüfen Sie im Falle einer „ungültigen Sperre“ für das Asset oder einem auf der Seite angezeigten „Parsing-Fehler“ den Anfragenverschleierungs- sowie den Anfragensperrmodus, um sicherzustellen, dass diese Modi deaktiviert sind.
-* Bei einer Fehlermeldung zu einer beschädigten Arbeitsfläche können Sie einen Dateipfad für Regeldefinitionen einrichten und CTN für die vorangegangenen Anforderungen für das Bild-Asset ungültig machen.
-* Wenn die Bildqualität infolge einer Bildanforderung mit einer Größe, die den unterstützten Bereich überschreitet, sehr gering wird, stellen Sie sicher, dass die Einstellung **[!UICONTROL JPEG-Codierungsattribute > Qualität]** nicht leer ist. Eine typische Einstellung für das Feld **[!UICONTROL Qualität]** ist `95`. Sie finden die Einstellung auf der Image-Server-Veröffentlichungsseite. Informationen zum Zugriff auf die Seite finden Sie unter [Konfigurieren von Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
+* Richten Sie für einen Fehler mit beschädigter Arbeitsfläche einen Dateipfad für Regeldefinitionen ein und ungültigen die CTN für die vorherigen Anforderungen für das Bild-Asset.
+* Wenn die Bildqualität nach einer Bildanforderung mit einer Größe, die über dem unterstützten Limit liegt, niedrig wird, überprüfen Sie, ob die Einstellung **[!UICONTROL JPEG-Kodierungsattribute > Qualität]** nicht leer ist. Eine typische Einstellung für das Feld **[!UICONTROL Qualität]** ist `95`. Sie finden die Einstellung auf der Image-Server-Veröffentlichungsseite. Informationen zum Zugriff auf die Seite finden Sie unter [Konfigurieren von Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 ## Anzeigen einer Vorschau für Panoramabilder {#previewing-panoramic-images}
 
