@@ -6,18 +6,18 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 exl-id: d2ebfca5-19f9-4fa5-b142-b978f46a912f
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
 workflow-type: tm+mt
-source-wordcount: '1685'
-ht-degree: 55%
+source-wordcount: '1668'
+ht-degree: 44%
 
 ---
 
 # Hinzufügen von Dynamic Media-Assets zu Seiten{#adding-dynamic-media-assets-to-pages}
 
-Um die Dynamic Media-Funktion zu Assets hinzuzufügen, die Sie auf Ihren Websites verwenden, können Sie die Komponente **[!UICONTROL Dynamic Media]** oder **[!UICONTROL Interaktive Medien]** direkt auf der Seite hinzufügen. Wechseln Sie dazu in den Modus [!UICONTROL Design] und aktivieren Sie die Dynamic Media-Komponenten. Anschließend können Sie der Seite diese Komponenten und der Komponente Assets hinzufügen. Die Dynamic Media- und interaktiven Medienkomponenten sind intelligent. Sie wissen, ob Sie ein Bild oder Video hinzufügen. Die verfügbaren Optionen ändern sich entsprechend.
+Um die Dynamic Media-Funktion zu Assets hinzuzufügen, die Sie auf Ihren Websites verwenden, können Sie die Komponente **[!UICONTROL Dynamic Media]** oder **[!UICONTROL Interaktive Medien]** direkt auf der Seite hinzufügen. Wechseln Sie in den Modus **[!UICONTROL Design]** und aktivieren Sie die Dynamic Media-Komponenten. Anschließend können Sie der Seite diese Komponenten und der Komponente Assets hinzufügen. Die Dynamic Media- und interaktiven Medienkomponenten sind intelligent. Sie wissen, ob Sie ein Bild oder Video hinzufügen. Die verfügbaren Optionen ändern sich entsprechend.
 
-Sie fügen Dynamic Media-Assets direkt zur Seite hinzu, wenn Sie AEM als Ihren WCM verwenden.
+Sie fügen Dynamic Media-Assets direkt zur Seite hinzu, wenn Sie Adobe Experience Manager als WCM verwenden.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Das Hinzufügen der Komponente [!UICONTROL Dynamic Media] oder [!UICONTROL Inter
 
 So fügen Sie einer Seite eine Komponente bzw. einen Viewer vom Typ „Dynamische Medien“ hinzu:
 
-1. Öffnen Sie in AEM die Seite, auf der Sie die Dynamic Media-Komponente hinzufügen möchten.
+1. Öffnen Sie in Experience Manager die Seite, auf der Sie die Dynamic Media-Komponente hinzufügen möchten.
 1. Wenn keine Dynamic Media-Komponente verfügbar ist, klicken Sie auf das Lineal im [!UICONTROL Sidekick], um den Modus **[!UICONTROL Design]** zu öffnen, klicken Sie auf **[!UICONTROL Bearbeiten]** parsys und wählen Sie **[!UICONTROL Dynamic Media]** aus, um die Dynamic Media-Komponenten verfügbar zu machen.
 
    >[!NOTE]
@@ -38,7 +38,7 @@ So fügen Sie einer Seite eine Komponente bzw. einen Viewer vom Typ „Dynamisch
 
 1. Kehren Sie zum Modus **[!UICONTROL Bearbeiten]** zurück, indem Sie auf das Stiftsymbol im [!UICONTROL Sidekick] klicken.
 1. Ziehen Sie die Komponente **[!UICONTROL Dynamic Media]** oder **[!UICONTROL Interaktive Medien]** aus der Gruppe **[!UICONTROL Andere]** im Sidekick auf die Seite an der gewünschten Position.
-1. Klicken Sie auf **[!UICONTROL Bearbeiten]**, um die Komponente zu öffnen.
+1. Klicken Sie auf **[!UICONTROL Bearbeiten]** , damit die Komponente geöffnet wird.
 1. [](#dynamic-media-component)Bearbeiten Sie die Komponente bei Bedarf und klicken Sie auf **[!UICONTROL OK]**, um die Änderungen zu speichern.
 
 ## Komponenten vom Typ „Dynamische Medien“{#dynamic-media-components}
@@ -49,7 +49,7 @@ So fügen Sie einer Seite eine Komponente bzw. einen Viewer vom Typ „Dynamisch
 
 >[!NOTE]
 >
->Diese Komponenten sind standardmäßig nicht verfügbar und müssen im Designmodus ausgewählt werden, bevor sie verwendet werden können. [Nachdem sie im Designmodus zur Verfügung gestellt wurden](/help/sites-authoring/default-components-designmode.md), können Sie die Komponenten wie jede andere AEM-Komponente Ihrer Seite hinzufügen.
+>Diese Komponenten sind standardmäßig nicht verfügbar und müssen vor der Verwendung im Designmodus ausgewählt werden. [Nachdem sie im Designmodus](/help/sites-authoring/default-components-designmode.md) verfügbar gemacht wurden, können Sie die Komponenten wie jede andere Experience Manager-Komponente zu Ihrer Seite hinzufügen.
 
 ### Komponente „Dynamische Medien“{#dynamic-media-component}
 
@@ -84,17 +84,17 @@ Sie können die folgenden Dynamic Media-Einstellungen bearbeiten, indem Sie in d
 
 **[!UICONTROL Viewer-Vorgabe]** : Wählen Sie eine vorhandene Viewer-Vorgabe aus dem Dropdown-Menü aus. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe [Verwalten von Viewer-Vorgaben](/help/assets/managing-viewer-presets.md). Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
 
-Dies ist die einzig verfügbare Option beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien. Die angezeigten Viewer-Vorgaben sind ebenfalls intelligent. Es werden nur relevante Viewer-Vorgaben angezeigt.
+Diese Option ist nur verfügbar, wenn Sie Bildsets, Rotationssets oder Sets für gemischte Medien anzeigen. Die angezeigten Viewer-Vorgaben sind intelligent. Das heißt, es werden nur relevante Viewer-Vorgaben angezeigt.
 
 **[!UICONTROL Bildvorgabe]** : Wählen Sie eine vorhandene Bildvorgabe aus dem Dropdown-Menü aus. Wenn die gewünschte Bildvorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe [Verwalten von Bildvorgaben](/help/assets/managing-image-presets.md). Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
 
 Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
-**[!UICONTROL Bildmodifikatoren]** : Sie können Bildeffekte ändern, indem Sie zusätzliche Bildbefehle bereitstellen. Diese werden unter [Verwalten von Bildvorgaben](/help/assets/managing-viewer-presets.md) und [Befehlsreferenz](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) beschrieben.
+**[!UICONTROL Bildmodifikatoren]** : Sie können Bildeffekte ändern, indem Sie zusätzliche Bildbefehle bereitstellen. Diese Befehle werden unter [Verwalten von Bildvorgaben](/help/assets/managing-viewer-presets.md) und der [Befehlsreferenz](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) beschrieben.
 
 Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
-**[!UICONTROL Haltepunkte]**  - Wenn Sie dieses Asset auf einer responsiven Site verwenden, müssen Sie die Seitenhaltepunkte hinzufügen. Bildhaltepunkte müssen durch Kommas (,) voneinander getrennt werden. Diese Option kann verwendet werden, wenn in einer Bildvorgabe keine Höhe oder Breite festgelegt ist.
+**[!UICONTROL Haltepunkte]**  - Wenn Sie dieses Asset auf einer responsiven Site verwenden, müssen Sie die Seitenhaltepunkte hinzufügen. Bildhaltepunkte werden durch Kommas (,) getrennt. Diese Option kann verwendet werden, wenn in einer Bildvorgabe keine Höhe oder Breite festgelegt ist.
 
 Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
@@ -114,7 +114,7 @@ Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemisc
 
 #### Arbeiten mit Video {#when-working-with-video}
 
-Verwenden Sie die Komponente [!UICONTROL Dynamic Media] , um Ihren Webseiten dynamische Videos hinzuzufügen. Beim Bearbeiten der Komponente können Sie eine vordefinierte Video-Viewer-Vorgabe für das Wiedergeben des Videos auf der Seite verwenden.
+Verwenden Sie die Komponente **[!UICONTROL Dynamic Media]** , um Ihren Webseiten dynamische Videos hinzuzufügen. Beim Bearbeiten der Komponente können Sie eine vordefinierte Video-Viewer-Vorgabe für das Wiedergeben des Videos auf der Seite verwenden.
 
 ![chlimage_1-74](assets/chlimage_1-74a.png)
 
@@ -134,7 +134,7 @@ Sie können die folgenden [!UICONTROL Erweitert]-Einstellungen bearbeiten, indem
 
 #### Sichere Videowiedergabe {#how-to-delivery-secure-video}
 
-Wenn Sie in AEM 6.2 [FP-13480](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480) installieren, können Sie festlegen, ob ein Video über eine sichere SSL-Verbindung (HTTPS) oder eine unsichere Verbindung (HTTP) wiedergegeben wird. Standardmäßig wird automatisch das Videowiedergabeprotokoll der Webseite übernommen, in die das Video eingebettet wird. Wenn die Webseite über HTTPS geladen wird, wird das Video ebenfalls über HTTPS wiedergegeben. Umgekehrt wird das Video über HTTP wiedergegeben, wenn die Webseite HTTP verwendet. In den meisten Fällen ist dieses Verhalten korrekt und es müssen keine Konfigurationsänderungen vorgenommen werden. Sie können dieses Standardverhalten jedoch außer Kraft setzen, indem Sie `VideoPlayer.ssl=on` am Ende des URL-Pfades oder zur Liste weiterer Viewer-Konfigurationsparameter in einem Embed-Code-Snippet hinzufügen, um eine sichere Videowiedergabe zu erzwingen.
+In Experience Manager 6.2 können Sie bei der Installation von [FP-13480](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480) steuern, ob ein Video über eine sichere SSL-Verbindung (HTTPS) oder eine unsichere Verbindung (HTTP) bereitgestellt wird. Standardmäßig wird automatisch das Videowiedergabeprotokoll der Webseite übernommen, in die das Video eingebettet wird. Wenn die Webseite über HTTPS geladen wird, wird das Video ebenfalls über HTTPS wiedergegeben. Umgekehrt wird das Video über HTTP bereitgestellt, wenn sich die Webseite auf HTTP befindet. Normalerweise ist dieses Standardverhalten in Ordnung und es müssen keine Konfigurationsänderungen vorgenommen werden. Sie können dieses Standardverhalten jedoch überschreiben. Hängen Sie `VideoPlayer.ssl=on` entweder an das Ende eines URL-Pfads oder an die Liste anderer Viewer-Konfigurationsparameter in einem Einbettungscode-Snippet an. Beide Aktionen erzwingen die sichere Videobereitstellung.
 
 Weitere Informationen zur sicheren Videowiedergabe sowie zur Verwendung des Konfigurationsattributs `VideoPlayer.ssl` in Ihrem URL-Pfad finden Sie im Referenzhandbuch zu den Viewern unter [Sichere Videowiedergabe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html). Neben dem Video-Viewer ist die sichere Videobereitstellung für den Viewer für gemischte Medien und den Viewer für interaktive Videos verfügbar.
 
@@ -148,7 +148,7 @@ Die Komponente [!UICONTROL Interaktive Medien] ist intelligent. Je nachdem, ob S
 
 Sie können die folgenden allgemeinen Einstellungen **** bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
-**[!UICONTROL Viewer-Vorgabe]** : Wählen Sie eine vorhandene Viewer-Vorgabe aus dem Dropdown-Menü aus. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Viewer-Vorgaben müssen veröffentlicht werden, bevor sie verwendet werden können. Siehe „Verwalten von Viewer-Vorgaben“.
+**[!UICONTROL Viewer-Vorgabe]** : Wählen Sie eine vorhandene Viewer-Vorgabe aus dem Dropdown-Menü aus. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Viewer-Vorgaben müssen veröffentlicht werden, bevor sie verwendet werden können. Siehe [Verwalten von Viewer-Vorgaben](/help/assets/managing-viewer-presets.md).
 
 **[!UICONTROL Titel]**  - Ändern Sie den Titel des Videos.
 
