@@ -11,10 +11,10 @@ docset: aem65
 feature: Asset-Verwaltung
 role: Business Practitioner, Administrator
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
+source-git-commit: 900a2ccbf33575644f934e5a75380d8dd3eab5d8
 workflow-type: tm+mt
-source-wordcount: '11655'
-ht-degree: 69%
+source-wordcount: '11657'
+ht-degree: 68%
 
 ---
 
@@ -120,7 +120,7 @@ Weitere Informationen zu [Best Practices für die Organisation Ihrer digitalen A
 
 ## Arbeiten mit Video in Dynamic Media  {#working-with-video-in-dynamic-media}
 
-Video in Dynamic Media ist eine End-to-End-Lösung, mit der Sie hochwertige adaptive Videos für das Streaming auf mehreren Bildschirmen veröffentlichen können, darunter Desktop-, iOS-, Android™-, Blackberry- und Windows-Mobilgeräte. Ein adaptives Videoset gruppiert Versionen desselben Videos, die mit unterschiedlichen Bitraten und Formaten kodiert sind, z. B. 400 kBit/s, 800 kBit/s und 1000 kBit/s. Der Desktop-Computer oder das Mobilgerät erkennt die verfügbare Bandbreite.
+Video in Dynamic Media ist eine End-to-End-Lösung, mit der Sie hochwertige adaptive Videos für das Streaming auf mehreren Bildschirmen veröffentlichen können, darunter Desktop-, iOS-, Android™-, BlackBerry®- und Windows-Mobilgeräte. Ein adaptives Videoset gruppiert Versionen desselben Videos, die mit unterschiedlichen Bitraten und Formaten kodiert sind, z. B. 400 kBit/s, 800 kBit/s und 1000 kBit/s. Der Desktop-Computer oder das Mobilgerät erkennt die verfügbare Bandbreite.
 
 Auf einem iOS-Mobilgerät wird beispielsweise die Bandbreite 3G, 4G oder WLAN erkannt. Dann wird automatisch das richtig kodierte Video aus den verschiedenen Video-Bitraten im adaptiven Videoset ausgewählt. Das Video wird auf Desktops, Mobilgeräten oder Tablets gestreamt.
 
@@ -145,11 +145,11 @@ Für das Verwalten von einzelnen Videos und adaptiven Videosets wird Folgendes u
 
 * Videountertitelung in allen HTML5-Video-Viewern
 * Organisieren und Durchsuchen von Videos mit kompletter Metadatenunterstützung für die effiziente Verwaltung von Video-Assets
-* Bereitstellen von adaptiven Videosets für das Internet, Desktops und Mobilgeräte, einschließlich iPhone, iPad, Android, Blackberry und Windows Phone.
+* Bereitstellen von adaptiven Videosets für das Internet, Desktops und Mobilgeräte, einschließlich iPhone, iPad, Android™, BlackBerry® und Windows Phone.
 
 Das adaptive Video-Streaming wird auf verschiedenen iOS-Plattformen unterstützt. Siehe [Dynamic Media Viewers-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html?lang=de#Video).
 
-Dynamic Media unterstützt die mobile Videowiedergabe für MP4 H.264-Videos. Welche BlackBerry-Geräte dieses Videoformat unterstützen, können Sie hier einsehen: [Unterstützte Videoformate für BlackBerry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
+Dynamic Media unterstützt die mobile Videowiedergabe für MP4 H.264-Videos. BlackBerry®-Geräte, die dieses Videoformat unterstützen, finden Sie hier: [Unterstützte Videoformate auf BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
 Windows-Geräte, die dieses Videoformat unterstützen, finden Sie unter: [Unterstützte Medien-Codecs für Windows Phone 8](https://docs.microsoft.com/en-us/previous-versions/windows/apps/ff462087(v=vs.105))
 
@@ -239,17 +239,17 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
   </tr>
   <tr>
    <td>Mobilgerät</td>
-   <td>Chrome (Android 6 oder früher)</td>
+   <td>Chrome (Android™ 6 oder früher)</td>
    <td>Progressiver Download.</td>
   </tr>
   <tr>
    <td>Mobilgerät</td>
-   <td>Chrome (Android 7 oder neuer)</td>
+   <td>Chrome (Android™ 7 oder höher)</td>
    <td>HLS</td>
   </tr>
   <tr>
    <td>Mobilgerät</td>
-   <td>Android (Standard-Browser)</td>
+   <td>Android™ (Standardbrowser)</td>
    <td>Progressiver Download.</td>
   </tr>
   <tr>
@@ -264,7 +264,7 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
   </tr>
   <tr>
    <td>Mobilgerät</td>
-   <td>Blackberry</td>
+   <td>BlackBerry®</td>
    <td>HLS</td>
   </tr>
  </tbody>
@@ -602,7 +602,7 @@ Ab Experience Manager 6.4 wurde eine neue Touch-Benutzeroberflächenmethode eing
 1. Geben Sie auf der Seite „YouTube-Veröffentlichungskonfiguration erstellen“ unter „Google Cloud Platform-Einstellungen“ im Feld **[!UICONTROL Anwendungsname]** die Google-Projekt-ID ein.
 
    Sie haben die Projekt-ID bereits während der Konfiguration der Google Cloud-Einstellungen angegeben.
-Lassen Sie die Seite „YouTube-Konfiguration erstellen“ geöffnet. Sie kehren gleich zu ihr zurück.
+Lassen Sie die Seite YouTube-Konfiguration erstellen geöffnet. gleich wirst du darauf zurückkommen.
 
    ![6_5_youtubepublish-createyoutubeconconfiguration](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
 
@@ -1038,7 +1038,7 @@ Verwenden Sie das [Adobe Dynamic Media Viewer Reference Guide](https://experienc
 
 1. Erstellen Sie die TrackingManager-Komponente wie folgt:
 
-   * Erstellen Sie nach dem Aufruf von `s7sdk.Util.init();` eine TrackingManager-Instanz, um Ereignisse zu verfolgen. Fügen Sie dazu Folgendes hinzu:
+   * Nachdem Sie `s7sdk.Util.init();` aufgerufen haben, erstellen Sie eine TrackingManager-Instanz, um Ereignisse zu verfolgen, indem Sie Folgendes hinzufügen:
 
       `var trackingManager = new s7sdk.TrackingManager();`
 
@@ -1211,7 +1211,7 @@ Siehe [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/)
 
 Eine Videominiatur ist eine verkleinerte Version eines Videoframes oder eines Bild-Assets, in dem das Video dem Kunden vorgestellt wird. Die Miniaturansicht dient dazu, einen Kunden dazu anzuregen, auf das Video zu klicken.
 
-Alle Videos in Experience Manager müssen über eine zugehörige Miniaturansicht verfügen. Sie können eine Miniaturansicht nicht löschen, ohne sie zu ersetzen. Standardmäßig wird beim Hochladen eines Videos in Experience Manager der erste Frame als Miniaturansicht verwendet. Sie können jedoch die Miniaturansicht anpassen, z. B. für Branding oder visuelle Suche. Wenn Sie eine Videominiatur-Ansicht anpassen, können Sie entweder das Video abspielen und beim gewünschten Frame anhalten oder Sie können ein Bild-Asset auswählen, das Sie bereits in Ihrem Digital Asset Manager hochgeladen und *veröffentlicht* haben.
+Alle Videos in Experience Manager müssen über eine zugehörige Miniaturansicht verfügen. Sie können eine Miniaturansicht nicht löschen, ohne sie zu ersetzen. Standardmäßig wird beim Hochladen eines Videos in Experience Manager der erste Frame als Miniaturansicht verwendet. Sie können jedoch die Miniaturansicht anpassen, z. B. für Branding oder visuelle Suche. Wenn Sie eine Videominiatur anpassen, können Sie das Video abspielen und den Frame anhalten, den Sie verwenden möchten. Alternativ können Sie ein Bild-Asset, das Sie bereits hochgeladen haben, und *publish* in Ihrem Digital Asset Manager auswählen.
 
 Ein benutzerdefiniertes Videominiaturbild, das Sie aus einem Video auswählen, wird nicht extrahiert und im DAM als separates und eigenständiges Asset gespeichert. Benutzerdefinierte Videominiaturen, die Sie aus vorhandenen Bild-Assets auswählen, werden hingegen im JCR gespeichert. Der Pfad der ausgewählten Assets wird wie im folgenden Beispiel im Knoten des Video-Assets gespeichert:
 
