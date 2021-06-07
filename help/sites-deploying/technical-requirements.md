@@ -6,10 +6,10 @@ seo-description: Eine Liste der unterstützten Client- und Serverplattformen fü
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: ed10c7230557f84511dfadd6fddb6b566466a049
+source-git-commit: 5ce72a51d69e97d7e07e9f734bfd7547fccd51f1
 workflow-type: tm+mt
-source-wordcount: '3265'
-ht-degree: 82%
+source-wordcount: '3273'
+ht-degree: 83%
 
 ---
 
@@ -132,7 +132,7 @@ Adobe Experience Manager funktioniert mit den folgenden Versionen von Java Virtu
  </tbody>
 </table>
 
-1. Die Unterstützung und Verteilung von Azul Zulu Builds von OpenJDK, einschließlich aller Wartungsupdates von LTS-Releases, wird von Adobe direkt für alle AEM Kunden unterstützt, die die Azul Zulu Builds von OpenJDK verwenden, beginnend mit AEM 6.5 SP9. Weitere Informationen finden Sie unter [Azul Java-Unterstützung für Adobe Experience Manager Q&amp;A](assets/adobe-azul-openjdk-license-agreement.pdf) .
+1. Die Unterstützung und Verteilung von Azul Zulu Builds von OpenJDK, einschließlich aller Wartungsupdates von LTS-Releases, wird von Adobe direkt für alle AEM Kunden unterstützt, die die Azul Zulu Builds von OpenJDK verwenden, beginnend mit AEM 6.5 SP9 bzw. AEM 6.5 SP10 für AEM Forms Java EE. Weitere Informationen finden Sie unter [Azul Java-Unterstützung für Adobe Experience Manager Q&amp;A](assets/adobe-azul-openjdk-license-agreement.pdf) .
 
 1. Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle Java SE-Produkte umgestiegen. Java 9, Java 10 und Java 12 sind Non-LTS-Versionen von Oracle (siehe [Oracle Java SE-Support-Roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Um AEM in Produktionsumgebungen bereitzustellen, unterstützt Adobe ausschließlich LTS-Versionen von Java. Der Support und die Verteilung des Oracle Java SE JDK, einschließlich aller Wartungsupdates der LTS-Versionen, die über das Ende der öffentlichen Updates hinausgehen, werden von Adobe direkt für alle AEM Kunden unterstützt, die die Oracle Java SE-Technologie **bis Dezember 2022** nutzen. Weitere Informationen finden Sie unter [Oracle Java-Unterstützung für Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf) .
 
@@ -153,7 +153,7 @@ Es gibt verschiedene Optionen, um das Repository von Adobe Experience Manager be
 | MongoDB Enterprise 4.0 | Repository | A: Unterstützt `[2, 3]` |
 | MongoDB Enterprise 3.6 | Repository | Z: Nicht unterstützt |
 | MongoDB Enterprise 3.4 | Repository | Z: Nicht unterstützt |
-| IBM DB2 10.5 | Repository und Forms-Datenbank | R: Eingeschränkte Unterstützung   `[4]` |
+| IBM DB2 10.5 | Repository und Forms-Datenbank | R: Eingeschränkte Unterstützung  `[4]` |
 | Oracle Database 12c (12.1.x) | Repository und Forms-Datenbank | R: Eingeschränkte Unterstützung  |
 | Microsoft SQL Server 2016 | Forms-Datenbank | A: Unterstützt |
 | **Apache Lucene (Schnellstart integriert)**  | Suchservice | A: Unterstützt |
@@ -515,12 +515,12 @@ Windows x86:
 * Prozessor mit 1 GHz oder höher mit Unterstützung für PAE, NX und SSE2.
 * 1 GB RAM für 32-Bit-Betriebssysteme oder 2 GB RAM für 64-Bit-Betriebssysteme
 * 16 GB Speicherplatz für 32-Bit-Betriebssysteme oder 20 GB Speicherplatz für 64-Bit-Betriebssysteme
-* Grafikspeicher - 128 MB GPU (256 MB empfohlen)
+* Grafikspeicher – 128 MB GPU (256 MB empfohlen)
 * 2,35 GB verfügbarer Festplattenspeicher
 * Bildschirmauflösung 1024 x 768 Pixel oder höher
 * Beschleuniger für Grafik-Hardware (optional)
 * Acrobat Pro DC, Acrobat Standard DC oder Adobe Acrobat Reader DC.
-* Administratorberechtigungen für die Installation von Designer.
+* Administratorrechte für die Installation von Designer.
 
 ### Anforderungen für das Zurückschreiben von XMP-Metadaten der AEM-Assets {#requirements-for-aem-assets-xmp-metadata-write-back}
 
