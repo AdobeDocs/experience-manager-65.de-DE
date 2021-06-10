@@ -4,10 +4,10 @@ description: Spezifische Versionshinweise für  [!DNL Adobe Experience Manager] 
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 2e01bb0b16728a8073e5de47deb88de69486d408
+source-git-commit: f62c675af34a4b11cc152eafb7bc561f8b6890a9
 workflow-type: tm+mt
-source-wordcount: '3877'
-ht-degree: 5%
+source-wordcount: '3857'
+ht-degree: 4%
 
 ---
 
@@ -22,17 +22,15 @@ ht-degree: 5%
 | Datum | 27. Mai 2021 |
 | Download-URL | [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.9.zip) |
 
-<!-- TBD: Update the SD link when SP8 is available. Same link is duplicated below in install -->
-
 ## Was ist enthalten in [!DNL Adobe Experience Manager] 6.5.9.0 {#what-s-included-in-aem}
 
 [!DNL Adobe Experience Manager] 6.5.9.0 enthält neue Funktionen, wichtige von Kunden angeforderte Verbesserungen sowie Verbesserungen hinsichtlich Leistung, Stabilität und Sicherheit, die seit der Veröffentlichung der Version 6.5 im April 2019 veröffentlicht wurden. Das Service Pack ist auf [!DNL Adobe Experience Manager] 6.5 installiert.
 
 Die wichtigsten Funktionen und Verbesserungen, die in [!DNL Adobe Experience Manager] 6.5.9.0 eingeführt wurden, sind:
 
-* Mit der AEM Sites Dynamic Media Foundation-Komponente können Sie jetzt die Optimierung für Geräte mit höherer Auflösung aktivieren oder deaktivieren, wenn Sie responsive Bildvorgaben oder smartes Zuschneiden verwenden.
+* [!DNL Experience Manager Sites] Die Dynamic Media Foundation-Komponente ermöglicht jetzt die Aktivierung oder Deaktivierung der Optimierung für Geräte mit höherer Auflösung bei der Verwendung von responsiven Bildvorgaben oder smartem Zuschneiden.
 
-* Um die Leistung zu verbessern, wird die Bedingung hidden=false von der JCR-Abfrage in den QueryBuilder-Auswerter verschoben. Um sicherzustellen, dass ein ausgeblendetes Prädikat nach der Änderung funktioniert, prüft Adobe Experience Manager, ob kein ausgeblendeter Ordner auf der Benutzeroberfläche angezeigt wird.
+* Um die Leistung zu verbessern, wird die Bedingung hidden=false von der JCR-Abfrage in den QueryBuilder-Auswerter verschoben. Um sicherzustellen, dass ein ausgeblendetes Prädikat nach der Änderung funktioniert, prüft Experience Manager, ob kein ausgeblendeter Ordner auf der Benutzeroberfläche angezeigt wird.
 
 * Möglichkeit, gelöschte Seiten und Baume auf einer [!DNL Experience Manager Sites]-Seite wiederherzustellen.
 
@@ -94,9 +92,9 @@ Eine vollständige Liste der in [!DNL Experience Manager] 6.5.9.0 eingeführten 
 
 >[!NOTE]
 >
->Ab AEM Service Pack 9 können [!DNL Experience Manager] -Kunden ihre [!DNL Experience Manager] -Anwendungen mit Distributionen der [!DNL Azul Zulu] -Builds von OpenJDK entwickeln und betreiben, die standardkonform mit Java SE sind.
+>Ab Service Pack 9 können [!DNL Experience Manager] -Kunden ihre [!DNL Experience Manager] -Anwendungen mit Distributionen der [!DNL Azul Zulu] -Builds von OpenJDK entwickeln und betreiben, die standardkonform mit Java SE sind.
 >Die Unterstützung für die [!DNL Azul Zulu]-JDKs wird auch von Adobe für [!DNL Experience Manager]-Kunden bereitgestellt.
->Sie können die entsprechenden Versionen von [!DNL Azul Zulu JDKs] von [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) herunterladen.
+>Sie können die entsprechenden Versionen der [!DNL Azul Zulu] JDKs von [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) herunterladen.
 >Die Nutzungsrechte für die Oracle Java-Technologie, wie sie von Adobe verteilt werden, laufen Ende Dezember 2022 aus. [!DNL Experience Manager] -Kunden wird empfohlen, die Verwendung für die  [!DNL Azul Zulu] JDKs bis spätestens zu diesem Datum zu planen und zu implementieren. Weitere Informationen zur Verwendung der [!DNL Oracle Java]-Technologie und der [!DNL Azul Zulu]-Technologie finden Sie in den zugehörigen [FAQs](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en).
 
 Im Folgenden finden Sie eine Liste der Fehlerbehebungen in [!DNL Experience Manager] Version 6.5.9.0.
@@ -109,7 +107,7 @@ Im Folgenden finden Sie eine Liste der Fehlerbehebungen in [!DNL Experience Mana
 
 * Bei Verwendung der API `com.day.cq.wcm.commons.ReferenceSearch` wird eine traversale Abfrage ausgelöst. Dies wirkt sich auf die Leistung des [!DNL Experience Manager]-Servers aus (NPR-36407).
 
-* Verschachtelter Layout-Container in einem anderen Layout-Container, dessen Größe geändert wird, zeigt eine falsche Anzahl von Spalten für die untergeordneten Komponenten an, sodass diese Komponenten nicht am Raster ausgerichtet werden (NPR-36359).
+* Verschachtelter Layout-Container in einem anderen Größenangepassten Layout-Container zeigt eine falsche Anzahl von Spalten für die untergeordneten Komponenten, sodass diese Komponenten nicht am Raster ausgerichtet werden (NPR-36359).
 
 * Der externe Link-Checker zeigt gültige externe Links als ungültige Links an (NPR-36289).
 
@@ -212,7 +210,7 @@ Adobe Experience Manager 6.5.9.0 Assets behebt die folgenden Probleme in [!DNL D
 
 * Site-Autoren mit schreibgeschützten Berechtigungen können die Funktion für das smarte Zuschneiden auf Assets verwenden und die Ausgabedarstellungen für das smarte Zuschneiden bearbeiten. Benutzer mit schreibgeschützten Berechtigungen dürfen jedoch keine Asset-Eigenschaften in der Sites-Entwicklungsinstanz bearbeiten können (CQ-4316450).
 
-* Videoanmerkungen funktionieren nicht für Ordnerpfade, bei denen die Dynamic Media-Konfiguration nicht aktiviert ist, auch wenn die AEM-Instanz im Dynamic Media-Modus eingerichtet ist (CQ-4314950).
+* Videoanmerkungen funktionieren nicht für Ordnerpfade [!DNL where Dynamic] Die Medienkonfiguration ist nicht aktiviert, auch wenn die [!DNL Experience Manager]-Instanz im [!DNL Dynamic Media]-Modus eingerichtet ist (CQ-4314950).
 
 * Wenn der Asset-Titel Doppelbyte-, Multibyte-, High ASCII-, Kyrillisch-, Surrogate-Paar-, Hebräisch-, Arabisch- und GB18030-Zeichen aufweist, haben beim Veröffentlichen in Dynamic Media die Asset-Titel ein Fragezeichen (?) (CQ-4311872).
 
@@ -261,7 +259,7 @@ Adobe Experience Manager 6.5.9.0 Assets behebt die folgenden Probleme in [!DNL D
 
 * Ein `resourceresolver` Sling-Bundle führt dazu, dass die `Sling:alias`-Abfrage fehlschlägt (NPR-35335).
 
-* Der Kontextpfad wird beim Einrichten von SSL in AEM entfernt (NPR-35294).
+* Der Kontextpfad wird beim Einrichten von SSL in Experience Manager entfernt (NPR-35294).
 
 * Die `SegmentNotFound`-Ausnahme wird nach einer langwierigen Sitzung zurückgegeben (NPR-36405).
 
@@ -275,11 +273,11 @@ Adobe Experience Manager 6.5.9.0 Assets behebt die folgenden Probleme in [!DNL D
 
 ### Projekte {#projects-6590}
 
-* Die Eigenschaften eines Projekts können nicht gespeichert werden, da der JCR-Pfad zum Projekt aufgrund eines zusätzlichen Schrägstrichs (/), der an den Projektpfad angehängt ist, nicht aufgelöst wurde (NPR-36191).
+* Die Eigenschaften eines Projekts können nicht gespeichert werden, da der JCR-Pfad zum Projekt aufgrund eines zusätzlichen Schrägstrichs (`/`), der an den Projektpfad angehängt ist, nicht aufgelöst wurde (NPR-36191).
 
 ### Screens {#screens-6590}
 
-* [!DNL Experience Manager Screens] -Player können sich nicht authentifizieren, wenn ein benutzerdefinierter 2FA-Authentifizierungs-Handler verwendet wird (NPR-35854).
+* [!DNL Experience Manager Screens] -Player können sich nicht authentifizieren, wenn ein benutzerdefinierter Zwei-Faktor-Authentifizierungs-Handler verwendet wird (NPR-35854).
 
 ### Commerce {#commerce-6590}
 
@@ -291,7 +289,7 @@ Adobe Experience Manager 6.5.9.0 Assets behebt die folgenden Probleme in [!DNL D
 
 * Wenn die Option &quot;Automatische Genehmigung&quot;für ein Projekt mit menschlicher Übersetzung ausgewählt ist, wird der Auftragsstatus als `Unknown` angezeigt (NPR-35981).
 
-* Wenn Sie eine Seite übersetzen, wird der Referenzpfad von Experience Fragments nicht zum Ziel-Experience Fragment-Referenzpfad aktualisiert (NPR-35911).
+* Wenn Sie eine Seite übersetzen, wird der Referenzpfad von [!DNL Experience Fragments] nicht zum Zielreferenzpfad [!DNL Experience Fragment] aktualisiert (NPR-35911).
 
 * Wenn Sie Änderungen an den übergeordneten und untergeordneten Seiten vornehmen und die übergeordnete Seite zur Übersetzung senden, werden die untergeordneten Seiten ebenfalls falsch übersetzt (NPR-35896).
 
@@ -303,12 +301,12 @@ Adobe Experience Manager 6.5.9.0 Assets behebt die folgenden Probleme in [!DNL D
 
 ### Workflow {#workflow-6590}
 
-* Wenn Sie für im Posteingang verfügbare Elemente auf die Aktionen &quot;Fertig stellen&quot;, &quot;Delegieren&quot;oder &quot;Öffnen&quot;klicken, gibt es keinen visuellen Hinweis darauf, dass diese Aktionen abgeschlossen sind (NPR-36317).
+* Wenn Sie für im Posteingang verfügbare Elemente auf die Aktionen &quot;Fertig stellen&quot;, &quot;Delegieren&quot;oder &quot;Öffnen&quot;klicken, gibt es keinen visuellen Hinweis für den Abschluss dieser Aktionen (NPR-36317).
 
 ### [!DNL Communities] {#communities-6590}
 
-* Bei der Spam-Filterung verbraucht das System 100 % des JAVA-Heap-Speichers, wodurch der AEM heruntergefahren wird (NPR-36316, NPR-36493).
-* In Foren werden die JCR-Sitzungsdaten aus SearchCommentSocialComponentListProvider ausgetauscht (NPR-36235).
+* Beim Filtern von Spam verbraucht das System 100 % des Java-Heap-Speichers, wodurch der Experience Manager-Server nicht reagiert (NPR-36316, NPR-36493).
+* In Foren werden die JCR-Sitzungsdaten von `SearchCommentSocialComponentListProvider` durchsickert (NPR-36235).
 * Das Öffnen einer bestimmten Posteingangsnachricht spiegelt alle Nachrichten mit unsachgemäßer Paginierung und anderen Problemen wider (NPR-35917).
 
 ### [!DNL Brand Portal] {#brandportal-6590}
@@ -364,7 +362,7 @@ Adobe Experience Manager 6.5.9.0 Assets behebt die folgenden Probleme in [!DNL D
 
 * Wenn Sie Endpunktverwaltung in der AdminUI auswählen, zeigt [!DNL Experience Manager Forms] die Fehlermeldung `endpoint registry failure` an (CQ-4320249).
 
-Informationen zu Sicherheitsupdates finden Sie auf der Seite [Experience Manager-Sicherheitsbulletins](https://helpx.adobe.com/security/products/experience-manager.html).
+Informationen zu Sicherheitsupdates finden Sie auf der [[!DNL Experience Manager] Seite mit Sicherheitsbulletins](https://helpx.adobe.com/security/products/experience-manager.html).
 
 ## Installieren von Version 6.5.9.0 {#install}
 
@@ -400,7 +398,7 @@ Gehen Sie wie folgt vor, um das Service Pack auf einer [!DNL Adobe Experience Ma
 
 **Automatische Installation**
 
-Es gibt zwei Möglichkeiten, Adobe Experience Manager 6.5.9.0 automatisch auf einer funktionierenden Instanz zu installieren:
+Es gibt zwei Möglichkeiten, [!DNL Experience Manager] 6.5.9.0 automatisch auf einer funktionierenden Instanz zu installieren:
 
 A. Platzieren Sie das Paket im Ordner `../crx-quickstart/install` , wenn der Server online verfügbar ist. Das Paket wird automatisch installiert.
 
@@ -410,7 +408,7 @@ B. Verwenden Sie die [HTTP-API von Package Manager](/help/sites-administering/pa
 >
 >Adobe Experience Manager 6.5.9.0 unterstützt keine Installation von Bootstraps.
 
-**Bestätigen der Installation**
+**Installation überprüfen**
 
 1. Auf der Seite mit den Produktinformationen (`/system/console/productinfo`) wird die aktualisierte Versionszeichenfolge `Adobe Experience Manager (6.5.9.0)` unter [!UICONTROL Installierte Produkte] angezeigt.
 
@@ -473,7 +471,7 @@ Nachstehend finden Sie eine Liste der Funktionen, die mit [!DNL Experience Manag
 
 | Bereich | Funktion | Ersatz |
 |---|---|---|
-| Integrationen | Der Bildschirm **[!UICONTROL AEM Cloud Services Opt-in]** wird nicht mehr unterstützt. Da die Experience Manager- und Adobe Target-Integration in Experience Manager 6.5 aktualisiert wurde, um die Adobe Target Standard-API zu unterstützen, die die Authentifizierung über Adobe IMS und I/O verwendet, und die zunehmende Rolle von Adobe Launch bei der Instrumentierung von Experience Manager-Seiten für Analysen und Personalisierung, ist der Opt-in-Assistent funktionell irrelevant geworden. | Konfigurieren Sie Systemverbindungen, die Adobe IMS-Authentifizierung und die [!DNL Adobe I/O]-Integrationen über die entsprechenden Experience Manager-Cloud-Services. |
+| Integrationen | Der Bildschirm **[!UICONTROL AEM Cloud Services Opt-in]** wird nicht mehr unterstützt. Da die Integration von Experience Manager und Adobe Target in Experience Manager 6.5 aktualisiert wurde, um die Adobe Target Standard-API zu unterstützen, die die Authentifizierung über Adobe IMS und [!DNL Adobe I/O] verwendet, und die wachsende Rolle von Adobe Launch bei der Instrumentierung von Experience Manager-Seiten für Analysen und Personalisierung inzwischen von Bedeutung ist, ist der Opt-in-Assistent funktional irrelevant. | Konfigurieren Sie Systemverbindungen, die Adobe IMS-Authentifizierung und die [!DNL Adobe I/O] Integrationen über die entsprechenden [!DNL Experience Manager]-Cloud-Services. |
 | Connectoren | Die Adobe JCR Connector für Microsoft SharePoint 2010 und Microsoft SharePoint 2013 wird für Experience Manager 6.5 nicht mehr unterstützt. | Nicht zutreffend |
 
 ## Bekannte Probleme {#known-issues}
@@ -484,7 +482,7 @@ Nachstehend finden Sie eine Liste der Funktionen, die mit [!DNL Experience Manag
 Um Ihre Laufzeitkopie abzurufen, empfiehlt Adobe, die Entwurfszeitkopie des benutzerdefinierten Workflow-Modells mit der Laufzeitkopie mithilfe der HTTP-API zu synchronisieren:
    `<designModelPath>/jcr:content.generate.json`.
 
-* Wenn ein Ordner in der Hierarchie in [!DNL Experience Manager Assets] umbenannt wird und der verschachtelte Ordner, der ein Asset enthält, in [!DNL Brand Portal] veröffentlicht wird, wird der Titel des Ordners erst dann in [!DNL Brand Portal] aktualisiert, wenn der Stammordner erneut veröffentlicht wird.
+* Wenn ein Ordner in der Hierarchie in [!DNL Assets] umbenannt wird und ein verschachtelter Ordner mit einem Asset in [!DNL Brand Portal] veröffentlicht wird, wird der Titel des Ordners erst dann in [!DNL Brand Portal] aktualisiert, wenn der Stammordner erneut veröffentlicht wird.
 
 * Wenn ein Benutzer ein Feld zum ersten Mal in einem adaptiven Formular konfigurieren möchte, wird die Option zum Speichern einer Konfiguration nicht im Eigenschaftenbrowser angezeigt. Wenn Sie im selben Editor ein anderes Feld des adaptiven Formulars konfigurieren, wird das Problem behoben.
 
