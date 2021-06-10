@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2a866e82a059184ea86f22646e4a20406ad109e8
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 76%
+source-wordcount: '2097'
+ht-degree: 42%
 
 ---
 
@@ -37,7 +37,7 @@ Wenn ein Benutzer benachrichtigt wird, erhält er eine E-Mail in der Sprache, di
 >
 >Beim Arbeiten mit AEM sind mehrere Methoden zum Verwalten der Konfigurationseinstellungen für solche Dienste verfügbar. Weitere Informationen und empfohlene Verfahren finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
-## Konfigurieren des E-Mail-Diensts  {#configuring-the-mail-service}
+## Konfigurieren des E-Mail-Diensts {#configuring-the-mail-service}
 
 Damit AEM E-Mails versenden kann, muss der **Day CQ Mail Service** ordnungsgemäß konfiguriert sein. Sie können die Konfiguration in der Web-Konsole anzeigen. Beim Arbeiten mit AEM sind mehrere Methoden zum Verwalten der Konfigurationseinstellungen für solche Dienste verfügbar. Weitere Informationen und empfohlene Verfahren finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
@@ -310,3 +310,156 @@ Wenn Sammlungen in AEM Assets freigegeben werden oder ihre Freigabe aufgehoben w
 1. Konfigurieren Sie den E-Mail-Dienst, wie oben unter [Konfigurieren des E-Mail-Diensts](/help/sites-administering/notification.md#configuring-the-mail-service) beschrieben.
 1. Melden Sie sich in AEM als Administrator an. Klicken Sie auf **Tools**> **Vorgänge**> **Web-Konsole**, um die Konfiguration der Web-Konsole zu öffnen.
 1. Bearbeiten Sie das **Day CQ DAM-Ressourcensammlungs-Servlet**. Wählen Sie **E-Mail senden**. Klicken Sie auf **Speichern**.
+
+## Einrichten von OAuth {#setting-up-oauth}
+
+AEM bietet OAuth2-Unterstützung für seinen integrierten Mailer-Service, damit Unternehmen die E-Mail-Anforderungen erfüllen können.
+
+Sie können OAuth für mehrere E-Mail-Anbieter konfigurieren, wie unten beschrieben.
+
+### Gmail {#gmail}
+
+1. Erstellen Sie Ihr Projekt unter `https://console.developers.google.com/projectcreate`
+1. Wählen Sie Ihr Projekt aus und navigieren Sie zu **APIs &amp; Services** - **Dashboard - Credentials**
+1. Konfigurieren des OAuth-Einverständnisbildschirms entsprechend Ihren Anforderungen
+1. Fügen Sie im folgenden Bildschirm &quot;Aktualisieren&quot;die beiden Bereiche hinzu:
+   * `https://mail.google.com/`
+   * `https://www.googleapis.com//auth/gmail.send`
+1. Nachdem Sie die Bereiche hinzugefügt haben, gehen Sie im linken Menü zurück zu **Credentials** und gehen Sie dann zu **Create Credentials** - **OAuth Client ID** - **Desktop App**
+1. Daraufhin wird ein neues Fenster mit der Client-ID und dem Client-Geheimnis geöffnet.
+1. Speichern Sie diese Anmeldeinformationen.
+
+**AEM Seitenkonfigurationen**
+
+>[!NOTE]
+>
+>Adobe Managed Service-Kunden können diese Änderungen gemeinsam mit ihrem Customer Service Engineer an Produktionsumgebungen vornehmen.
+
+Konfigurieren Sie zunächst den E-Mail-Dienst:
+
+1. Öffnen Sie die AEM Web-Konsole, indem Sie zu `http://serveraddress:serverport/system/console/configMgr` navigieren.
+1. Suchen Sie nach **Day CQ Mail Service** und klicken Sie auf
+1. Fügen Sie die folgenden Einstellungen hinzu:
+   * SMTP-Server-Hostname: `smtp.gmail.com`
+   * SMTP Server Port: `25` oder `587`, je nach Anforderungen
+   * Markieren Sie die Tickboxes für **SMPT und verwenden Sie StarTLS** und **SMTP erfordert StarTLS**
+   * Markieren Sie **OAuth flow** und klicken Sie auf **Save**.
+
+Konfigurieren Sie anschließend Ihren SMTP-OAuth-Provider wie unten beschrieben:
+
+1. Öffnen Sie die AEM Web-Konsole, indem Sie zu `http://serveraddress:serverport/system/console/configMgr` navigieren.
+1. Suchen Sie nach und klicken Sie auf **CQ Mailer SMTP OAuth2 Provider**
+1. Füllen Sie die erforderlichen Informationen wie folgt aus:
+   * Autorisierungs-URL: `https://accounts.google.com/o/oauth2/auth`
+   * Token-URL: `https://accounts.google.com/o/oauth2/token`
+   * Bereiche: `https://www.googleapis.com/auth/gmail.send` und `https://mail.google.com/`. Sie können mehr als einen Bereich hinzufügen, indem Sie auf die Schaltfläche **+** rechts von jedem konfigurierten Bereich klicken.
+   * Client-ID und Client-Geheimnis: konfigurieren Sie diese Felder mit den Werten, die Sie wie im obigen Absatz beschrieben abgerufen haben.
+   * URL für aktualisierten Token: `https://accounts.google.com/o/oauth2/token`
+   * Token-Ablauf aktualisieren: never
+1. Klicken Sie auf **Speichern**.
+
+<!-- clarify refresh token expiry, currrently not present in the UI -->
+
+Nach der Konfiguration sollten die Einstellungen wie folgt aussehen:
+
+![oauth smtp provider](assets/oauth-smtpprov2.png)
+
+Aktivieren Sie jetzt die OAuth-Komponenten. Gehen Sie dazu wie folgt vor:
+
+1. Rufen Sie die Komponentenkonsole auf, indem Sie diese URL aufrufen: `http://serveraddress:serverport/system/console/components`
+1. Suchen Sie nach den folgenden Komponenten
+   * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeGenerateServlet`
+   * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeAccessTokenGenerator`
+1. Drücken Sie links neben den Komponenten das Symbol Wiedergabe .
+
+   ![Komponenten](assets/oauth-components-play.png)
+
+Bestätigen Sie abschließend die Konfiguration durch:
+
+1. Wechseln Sie zur Adresse der Veröffentlichungsinstanz und melden Sie sich als Administrator an.
+1. Öffnen Sie eine neue Registerkarte im Browser und gehen Sie zu `http://serveraddress:serverport/services/mailer/oauth2/authorize`. Dadurch werden Sie zur Seite Ihres SMTP-Anbieters weitergeleitet, in diesem Fall Gmail.
+1. Anmelden und Einverständnis zur Erteilung der erforderlichen Berechtigungen
+1. Nach der Zustimmung wird das Token im Repository gespeichert. Sie können unter `accessToken` darauf zugreifen, indem Sie direkt auf diese URL in Ihrer Veröffentlichungsinstanz zugreifen: `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth2 `
+1. Wiederholen Sie die obigen Schritte für jede Veröffentlichungsinstanz
+
+<!-- clarify if the ip/server address in the last procedure is that of the publish instance -->
+
+### Microsoft Outlook {#microsoft-outlook}
+
+1. Gehen Sie zu [https://portal.azure.com/](https://portal.azure.com/) und melden Sie sich an.
+1. Suchen Sie in der Suchleiste nach **Azure Active Directory** und klicken Sie auf das Ergebnis. Alternativ können Sie direkt zu [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) navigieren
+1. Klicken Sie auf **App Registration** - **Neue Registrierung**
+
+   ![](assets/oauth-outlook1.png)
+
+1. Füllen Sie die Informationen entsprechend Ihren Anforderungen aus und klicken Sie dann auf **Registrieren**
+1. Wechseln Sie zur neu erstellten App und wählen Sie **API-Berechtigungen** aus.
+1. Gehen Sie zu **Berechtigung hinzufügen** - **Diagrammberechtigungen** - **Delegierte Berechtigungen**
+1. Wählen Sie die folgenden Berechtigungen für Ihre App aus und klicken Sie dann auf **Berechtigung hinzufügen**:
+   * `SMTP.Send`
+   * `Mail.Read`
+   * `Mail.Send`
+   * `openid`
+   * `offline_access`
+1. Gehen Sie zu **Authentifizierung** - **Plattform** - **Web** hinzufügen und fügen Sie im Abschnitt **Umleitungs-URL** die folgende URL für die Umleitung des OAuth-Codes hinzu und drücken Sie dann **Konfigurieren**:
+   * `http://localhost:4503/services/mailer/oauth2/token`
+1. Wiederholen Sie die obigen Schritte für jede Veröffentlichungsinstanz
+1. Konfigurieren Sie die Einstellungen entsprechend Ihren Anforderungen.
+1. Gehen Sie dann zu **Zertifikate und Geheimnisse**, klicken Sie auf **Neues Client-Geheimnis** und führen Sie die Schritte auf dem Bildschirm aus, um ein Geheimnis zu erstellen. Notieren Sie sich dieses Geheimnis für die spätere Verwendung
+1. Drücken Sie **Overview** im linken Bereich und kopieren Sie die Werte für **Application (client) ID** und **Directory (tenant) ID** zur späteren Verwendung.
+
+Um eine Neukodifizierung vorzunehmen, müssen Sie die folgenden Informationen eingeben, um OAuth2 für den Mailer-Dienst auf der AEM zu konfigurieren:
+
+* Die Auth-URL, die mit der Mandanten-ID erstellt wird. Sie hat folgendes Formular: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
+* Die Token-URL, die mit der Mandanten-ID erstellt wird. Sie hat folgendes Formular: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* Die Aktualisieren-URL, die mit der Mandanten-ID erstellt wird. Sie hat folgendes Formular: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* Die Client-ID
+* Client Secret
+
+**AEM Seitenkonfigurationen**
+
+Integrieren Sie anschließend Ihre OAuth2-Einstellungen in AEM:
+
+1. Navigieren Sie zur Web-Konsole Ihrer lokalen Instanz, indem Sie zu `http://serveraddress:serverport/system/console/configMgr` navigieren.
+1. Suchen Sie nach **Day CQ Mail Service** und klicken Sie darauf
+1. Fügen Sie die folgenden Einstellungen hinzu:
+   * SMTP-Server-Hostname: `smtp.office365.com`
+   * SMTP-Benutzer: Ihr Benutzername im E-Mail-Format
+   * &quot;Von&quot;: Die E-Mail-Adresse, die im Feld &quot;Von:&quot; verwendet werden soll, wenn die vom Mailer gesendeten Nachrichten
+   * SMTP Server Port: `25` oder `587` je nach Anforderungen
+   * Markieren Sie die Tickboxes für **SMPT und verwenden Sie StarTLS** und **SMTP erfordert StarTLS**
+   * Markieren Sie **OAuth flow** und klicken Sie auf **Save**.
+1. Suchen Sie nach und klicken Sie auf **CQ Mailer SMTP OAuth2 Provider**
+1. Füllen Sie die erforderlichen Informationen wie folgt aus:
+   * Füllen Sie die URL für Autorisierungs-URL, Token-URL und Aktualisierungstoken aus, indem Sie sie wie unter [Ende dieses Verfahrens](#microsoft-outlook) erstellen.
+   * Client-ID und Client-Geheimnis: konfigurieren Sie diese Felder mit den Werten, die Sie wie oben beschrieben abgerufen haben.
+   * Fügen Sie der Konfiguration die folgenden Perimeter hinzu:
+      * openid
+      * offline_access
+      * `https://outlook.office365.com/Mail.Send`
+      * `https://outlook.office365.com/Mail.Read`
+      * `https://outlook.office365.com/SMTP.Send`
+   * AuthCode-Umleitungs-URL: `http://localhost:4503/services/mailer/oauth2/token`
+   * Aktualisieren der Token-URL: sollte denselben Wert wie die Token-URL oben haben.
+1. Klicken Sie auf **Speichern**.
+
+Nach der Konfiguration sollten die Einstellungen wie folgt aussehen:
+
+![](assets/oauth-outlook-smptconfig.png)
+
+Aktivieren Sie jetzt die OAuth-Komponenten. Gehen Sie dazu wie folgt vor:
+
+1. Rufen Sie die Komponentenkonsole auf, indem Sie diese URL aufrufen: `http://serveraddress:serverport/system/console/components`
+1. Suchen Sie nach den folgenden Komponenten
+   * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeGenerateServlet`
+   * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeAccessTokenGenerator`
+1. Drücken Sie links neben den Komponenten das Symbol Wiedergabe .
+
+![components2](assets/oauth-components-play.png)
+
+Bestätigen Sie abschließend die Konfiguration durch:
+
+1. Wechseln Sie zur Adresse der Veröffentlichungsinstanz und melden Sie sich als Administrator an.
+1. Öffnen Sie eine neue Registerkarte im Browser und gehen Sie zu `http://serveraddress:serverport/services/mailer/oauth2/authorize`. Dadurch werden Sie zur Seite Ihres SMTP-Anbieters weitergeleitet, in diesem Fall Gmail.
+1. Anmelden und Einverständnis zur Erteilung der erforderlichen Berechtigungen
+1. Nach der Zustimmung wird das Token im Repository gespeichert. Sie können unter `accessToken` darauf zugreifen, indem Sie direkt auf diese URL in Ihrer Veröffentlichungsinstanz zugreifen: `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth2 `
