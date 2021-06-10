@@ -10,10 +10,10 @@ audience: developer
 feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+source-git-commit: b132fc30e9ab77da24557c5d644a255173dc23c2
 workflow-type: tm+mt
-source-wordcount: '2541'
-ht-degree: 94%
+source-wordcount: '2587'
+ht-degree: 92%
 
 ---
 
@@ -335,6 +335,10 @@ Eine gebräuchliche Erweiterung von AEM-Komponenten besteht darin, das von der K
 
 In unserem Fall möchten wir ein Banner auf dem Teaser rendern, um anhand eines benutzerspezifischen Attributs anzugeben, dass das Produkt „Umweltfreundlich“ ist. Das Design-Muster zum [Anpassen des Markups](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) einer Komponente ist eigentlich Standard bei allen AEM-Komponenten, nicht nur bei den AEM CIF-Kernkomponenten.
 
+>[!NOTE]
+>
+> Wenn Sie eine Komponente mit den CIF-Produkt- und Kategorieauswahlen wie diesem Produkt-Teaser oder der CIF-Seitenkomponente anpassen, stellen Sie sicher, dass Sie die erforderliche `cif.shell.picker` clientlib für die Komponentendialogfelder einschließen. Weitere Informationen finden Sie unter [Verwendung der CIF-Produkt- und Kategorieauswahl](use-cif-pickers.md) .
+
 1. Navigieren Sie in der IDE zum `ui.apps`-Modul und erweitern Sie es. Erweitern Sie dann die Ordnerhierarchie zu `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` und überprüfen Sie die `.content.xml`-Datei.
 
    ![Produkt-Teaser ui.apps](../assets/customize-cif-components/product-teaser-ui-apps-ide.png)
@@ -498,3 +502,4 @@ Sie haben gerade Ihre erste AEM CIF-Komponente angepasst. Laden Sie die [fertige
 - [Anpassen von AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
 - [Anpassen der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=de)
 - [Erste Schritte mit AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [Verwendung der CIF-Produkt- und Kategorieauswahl](use-cif-pickers.md)
