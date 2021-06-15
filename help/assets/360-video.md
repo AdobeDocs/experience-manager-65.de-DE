@@ -11,7 +11,7 @@ docset: aem65
 feature: 360-Grad-VR-Video
 role: Business Practitioner, Administrator
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
 workflow-type: tm+mt
 source-wordcount: '1055'
 ht-degree: 80%
@@ -81,8 +81,8 @@ Standardmäßig erkennt Experience Manager das Video als &quot;360&quot;, wenn d
 
 * `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
-   * **Eigenschaftstyp**: Doppelt
-   * **Wert:** Gleitkomma-Seitenverhältnis, standardmäßig 2.0.
+   * **Eigenschaftstyp**  - Double
+   * **Wert**  - Gleitkommaseitenverhältnis, Standardwert 2.0.
 
 Wenn Sie diese Eigenschaft festlegen, wird sie umgehend auf vorhandene und neu hochgeladene Videos angewendet.
 
