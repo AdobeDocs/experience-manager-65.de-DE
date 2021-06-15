@@ -12,7 +12,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: Business Practitioner, Administrator
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Konfiguration,Hybridmodus
-source-git-commit: c4221ede672c131aa0864438bc9fd16c73ddf10c
+source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
 workflow-type: tm+mt
 source-wordcount: '7843'
 ht-degree: 39%
@@ -211,7 +211,7 @@ Dynamic Media ist standardmäßig nicht aktiviert. Wenn Sie Dynamic Media jedoch
 
 Um Dynamic Media zu deaktivieren, nachdem Sie es aktiviert haben, entfernen Sie das Ausführungsmodus-Flag `-r dynamicmedia`.
 
-**Gehen Sie wie folgt vor, um Dynamic Media nach der Aktivierung zu deaktivieren**
+**Gehen Sie wie folgt vor, um Dynamic Media nach der Aktivierung zu deaktivieren:**
 
 1. In der Befehlszeile haben Sie nach dem Starten des Schnellstartvorgangs die beiden folgenden Möglichkeiten:
 
@@ -229,7 +229,7 @@ Um Dynamic Media zu deaktivieren, nachdem Sie es aktiviert haben, entfernen Sie 
 
 ## (Optional) Migration von Dynamic Media-Vorgaben und -Konfigurationen von 6.3 zu 6.5 ohne Ausfallzeit {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
-Wenn Sie ein Upgrade von Experience Manager Dynamic Media von 6.3 auf 6.5 durchführen (was jetzt die Möglichkeit bietet, Bereitstellungen ohne Ausfallzeiten durchzuführen), müssen Sie den folgenden curl-Befehl ausführen. Der -Befehl migriert alle Ihre Vorgaben und Konfigurationen in CRXDE Lite von `/etc` zu `/conf`.
+Wenn Sie ein Upgrade von Experience Manager - Dynamic Media von 6.3 auf 6.5 durchführen (was jetzt die Möglichkeit bietet, keine Ausfallzeiten zu erzielen), müssen Sie den folgenden curl-Befehl ausführen. Der -Befehl migriert alle Ihre Vorgaben und Konfigurationen in CRXDE Lite von `/etc` zu `/conf`.
 
 >[!NOTE]
 Wenn Sie Ihre Experience Manager-Instanz im Kompatibilitätsmodus ausführen - d. h. das Kompatibilitätspaket installiert ist - müssen Sie diese Befehle nicht ausführen.
@@ -373,7 +373,8 @@ Replication test to s7delivery:https://s7bern.macromedia.com:8580/is-publish/
  Server returned status code 401 with message: Authorization required.
 ```
 
-**Lösung**: Vergewissern Sie sich, dass  `KeyStore` der Ordner unter  **dynamic-media-replicationuser gespeichert** wird und das richtige Kennwort enthält.
+**Lösung:**
+Überprüfen Sie, ob  `KeyStore` der Ordner unter  **dynamic-media-replicationuser gespeichert** wird und das richtige Kennwort angegeben ist.
 
 #### Problem: Schlüssel kann nicht entschlüsselt werden – Daten können nicht entschlüsselt werden {#problem-could-not-decrypt-key-could-not-decrypt-data}
 
@@ -389,7 +390,8 @@ Replication test to s7delivery:https://<localhost>:8580/is-publish/
 17.06.2016 19:00:16 - Transfer failed for ReplicationAction{type=TEST, path[0]='/content/dam', time=1466215216662, userId='admin', revision='null'}. java.lang.SecurityException: java.security.UnrecoverableKeyException: Could not decrypt key: Could not decrypt data.
 ```
 
-**Lösung**: Überprüfen Sie das Kennwort. Das im Replikationsagenten gespeicherte Kennwort entspricht nicht dem Kennwort, das zum Erstellen des KeyStore verwendet wurde.
+**Lösung:**
+Überprüfen Sie das Kennwort. Das im Replikationsagenten gespeicherte Kennwort entspricht nicht dem Kennwort, das zum Erstellen des KeyStore verwendet wurde.
 
 #### Problem: InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
 
@@ -409,7 +411,8 @@ java.io.IOException: Failed to execute request 'https://replicate-na.assetsadobe
         at com.scene7.is.catalog.service.publish.atomic.PublishingServiceHttp.executePost(PublishingServiceHttp.scala:195)
 ```
 
-**Lösung**: Stellen Sie sicher, dass die Systemeigenschaft für den Java™-Prozess im Experience Manager Author auf einen gültigen Truststore  `-Djavax.net.ssl.trustStore=` festgelegt ist.
+**Lösung:**
+Stellen Sie sicher, dass die Systemeigenschaft für den Java™-Prozess auf der Experience Manager-Autoreninstanz auf einen gültigen Truststore  `-Djavax.net.ssl.trustStore=` festgelegt ist.
 
 #### Problem: KeyStore ist entweder nicht eingerichtet oder nicht initialisiert {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
 
@@ -427,7 +430,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 02.08.2016 14:37:44 - Transfer failed for ReplicationAction{type=TEST, path[0]='/content/dam', time=1470173864834, userId='admin', revision='null'}. com.adobe.granite.keystore.KeyStoreNotInitialisedException: Uninitialised key store for user dynamic-media-replication
 ```
 
-**Lösung**:
+**Lösung:**
 
 1. Navigieren Sie zur Seite Benutzerverwaltung :
    `localhost:4502/libs/granite/security/content/useradmin.html`
@@ -584,7 +587,7 @@ Um beispielsweise die Analytics-Vorgabe im Autorknoten anzuzeigen, können Sie d
       ```
 
    * **Überprüfen Sie die Vorgabe für die Videoanalyse über das Tool für Videoberichte in Experience**
-Manager. Tippen Sie auf  **[!UICONTROL Tools > Assets > Videoberichte.]**
+ManagerTippen Sie auf  **[!UICONTROL Tools]**  >  **[!UICONTROL Assets]**  >  **[!UICONTROL Videoberichte.]**
 
       `https://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
@@ -814,7 +817,7 @@ Das Konfigurieren des Dynamic Media-Bildservers umfasst die Bearbeitung des Ado
 >[!NOTE]
 Dynamic Media arbeitet standardmäßig [nach der Aktivierung](#enabling-dynamic-media). Sie können Ihre Installation jedoch optional anpassen, indem Sie Dynamic Media Image Server so konfigurieren, dass bestimmte Spezifikationen oder Anforderungen erfüllt werden.
 
-**Voraussetzung**:  ** Stellen Sie vor der Konfiguration von Dynamic Media Image Server sicher, dass Ihre Windows®-VM eine Installation der Microsoft® Visual C++-Bibliotheken enthält. Diese Bibliotheken werden benötigt, um den Dynamic Media-Bildserver auszuführen. Sie können [das Microsoft® Visual C++ 2010 Redistributable Package (x64) hier](https://www.microsoft.com/de-de/download/details.aspx?id=26999) herunterladen.
+**Voraussetzung**  -  ** Bevor Sie Dynamic Media Image Server konfigurieren, stellen Sie sicher, dass Ihre Windows®-VM eine Installation der Microsoft® Visual C++-Bibliotheken enthält. Diese Bibliotheken werden benötigt, um den Dynamic Media-Bildserver auszuführen. Sie können [das Microsoft® Visual C++ 2010 Redistributable Package (x64) hier](https://www.microsoft.com/de-de/download/details.aspx?id=26999) herunterladen.
 
 So konfigurieren Sie die Einstellungen für den Dynamic Media-Bildserver:
 
@@ -890,7 +893,7 @@ So konfigurieren Sie die Einstellungen für den Dynamic Media-Bildserver:
 
 Mit dem Standardmanifest können Sie die Standardwerte konfigurieren, die zum Generieren der Antworten für die Dynamic Media-Bereitstellung verwendet werden. Sie können die Qualität (JPEG-Qualität, Auflösung, Resampling-Modus), das Caching (Ablauf) anpassen und das Rendern von zu großen Bildern verhindern (defaultpix, defaultthumbpix, maxpix).
 
-Der Speicherort der Standardmanifest-Konfiguration wird aus dem Standardwert für **[!UICONTROL Catalog root]** des **[!UICONTROL Adobe CQ Scene7 PlatformServer]**-Bundles übernommen. Standardmäßig befindet sich dieser Wert im folgenden Pfad unter **[!UICONTROL Tools > Allgemein > CRXDE Lite]**:
+Der Speicherort der Standardmanifest-Konfiguration wird aus dem Standardwert für **[!UICONTROL Catalog root]** des **[!UICONTROL Adobe CQ Scene7 PlatformServer]**-Bundles übernommen. Standardmäßig befindet sich dieser Wert im folgenden Pfad unter **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**
 
 `/conf/global/settings/dam/dm/imageserver/`
 
@@ -997,9 +1000,9 @@ Um die Dynamic Media-Farbverwaltungsfunktionen zu verwenden, installieren Sie Fe
 
 Nachdem Sie das Feature Pack installiert haben, konfigurieren Sie die entsprechenden Standardfarbprofile, um die Farbkorrektur zu aktivieren, wenn RGB- oder CMYK-Bilddaten angefordert werden.
 
-**Gehen Sie wie folgt vor, um die Standardfarbprofile zu konfigurieren**
+**Gehen Sie wie folgt vor, um die Standardfarbprofile zu konfigurieren:**
 
-1. Navigieren Sie unter **[!UICONTROL Tools > Allgemein > CRXDE Lite]** zu `/conf/global/settings/dam/dm/imageserver/jcr:content` , das die standardmäßigen Adobe Color-Profile enthält.
+1. Navigieren Sie unter **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]** zu `/conf/global/settings/dam/dm/imageserver/jcr:content` , das die standardmäßigen Adobe Color-Profile enthält.
 
    ![chlimage_1-514](assets/chlimage_1-514.png)
 
