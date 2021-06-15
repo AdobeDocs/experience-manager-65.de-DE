@@ -10,10 +10,10 @@ discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 feature: Asset-Verwaltung
 role: Business Practitioner, Administrator
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
-source-git-commit: d2649ec83424978ba01b9bb61e9f935bdc79aa62
+source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
 workflow-type: tm+mt
 source-wordcount: '1448'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 
@@ -81,10 +81,10 @@ Sie können zwei Methoden zur Bild-Scharfzeichnung verwenden:
 
 Es wird empfohlen, mit dem Unschärfemasken-Parameter für den Radius zu beginnen. Sie können zu Beginn die folgenden Radiuseinstellungen verwenden:
 
-* **[!UICONTROL Website]**: 0,2–0,3 Pixel
-* **[!UICONTROL Fotodruck (250–300 ppi)]**: 0,3–0,5 Pixel
-* **[!UICONTROL Offset-Druck (266–300 ppi)]**: 0,7–1,0 Pixel
-* **[!UICONTROL Leinwanddruck (150 ppi)]**: 1,5–2,0 Pixel
+* **[!UICONTROL Website]** : 0,2-0,3 Pixel
+* **[!UICONTROL Fotodruck (250-300 ppi)]**  - 0,3-0,5 Pixel
+* **[!UICONTROL Offset-Druck (266-300 ppi)]**  - 0,7-1,0 Pixel
+* **[!UICONTROL Leinwanddruck (150 ppi)]**  - 1,5-2,0 Pixel
 
 Erhöhen Sie den Wert schrittweise von 1,75 auf maximal 4. Wenn die Scharfzeichnung noch immer nicht Ihren Wünschen entspricht, erhöhen Sie den Radius um eine Dezimalstelle und erhöhen Sie den Wert erneut von 1,75 auf 4. Wiederholen Sie diesen Vorgang nach Bedarf.
 
