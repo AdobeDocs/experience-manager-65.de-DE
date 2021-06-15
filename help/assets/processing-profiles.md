@@ -11,10 +11,10 @@ docset: aem65
 role: Business Practitioner, Administrator
 feature: Workflow,Asset-Management,Ausgabedarstellungen
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 4ad5237939289b5411a988424b2a3ecad15ca029
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 90%
+source-wordcount: '1379'
+ht-degree: 71%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 90%
 
 Profile sind Rezepte, die vorgeben, welche Optionen auf Assets angewendet werden, die in einen Ordner hochgeladen werden. Beispielsweise können Sie angeben, welches Metadatenprofil und welches Videokodierungsprofil auf Video-Assets angewendet wird, die Sie hochladen. Alternativ können Sie angeben, welche Imaging-Profile auf Image-Assets angewendet werden, damit sie entsprechend zugeschnitten werden.
 
-Dazu kann das Hinzufügen von Metadaten, das smarte Zuschneiden von Bildern oder die Erstellung von Videokodierungsprofilen gehören. In AEM können Sie drei Arten von Profilen erstellen. Sie werden unter den folgenden Links detailliert vorgestellt:
+Dazu kann das Hinzufügen von Metadaten, das smarte Zuschneiden von Bildern oder die Erstellung von Videokodierungsprofilen gehören. In Adobe Experience Manager können Sie drei Profiltypen erstellen, die unter den folgenden Links ausführlich beschrieben werden:
 
 * [Metadatenprofile](/help/assets/metadata-config.md#metadata-profiles)
 * [Bildprofile](/help/assets/image-profiles.md)
@@ -32,8 +32,8 @@ Um Metadaten-, Bild- oder Videoprofile erstellen, bearbeiten oder löschen zu k�
 
 Nachdem Sie Ihr Metadaten-, Bild- oder Videoprofil erstellt haben, weisen Sie es mindestens einem Ordner zu, den Sie als Ziel für neu hochgeladene Assets verwenden.
 
-Ein wichtiges Konzept zur Verwendung von Profilen in AEM Assets ist deren Zuweisung zu Ordnern. In einem Profil sind Einstellungen in Form von Metadatenprofilen zusammen mit Videoprofilen oder Bildprofilen enthalten. Mit diesen Einstellungen wird der Inhalt eines Ordners und seiner zugehörigen Unterordner verarbeitet. Wie Sie Ihre Dateien und Ordner benennen, wie Sie Unterordner anordnen und wie Sie die Dateien in diesen Ordnern verarbeiten, hat daher eine erhebliche Auswirkung darauf, wie diese Assets durch ein Profil verarbeitet werden.
-Indem Sie konsistente und geeignete Datei- und Ordnernamensstrategien zusammen mit angemessenen Metadatenpraktiken einsetzen, können Sie die Sammlung Ihrer digitalen Assets optimal nutzen und sicherstellen, dass die richtigen Dateien vom richtigen Profil verarbeitet werden.
+Ein wichtiges Konzept für die Verwendung von Profilen in Experience Manager Assets besteht darin, dass sie Ordnern zugewiesen werden. In einem Profil sind Einstellungen in Form von Metadatenprofilen zusammen mit Videoprofilen oder Bildprofilen enthalten. Mit diesen Einstellungen wird der Inhalt eines Ordners und seiner zugehörigen Unterordner verarbeitet. Wie Sie Dateien und Ordner benennen, wie Sie Unterordner anordnen und wie Sie die Dateien in diesen Ordnern verarbeiten, hat daher erhebliche Auswirkungen darauf, wie diese Assets von einem Profil verarbeitet werden.
+Durch die Verwendung konsistenter und angemessener Strategien zur Datei- und Ordnernamen sowie einer guten Metadatenpraxis können Sie die digitale Asset-Sammlung optimal nutzen und sicherstellen, dass die richtigen Dateien vom richtigen Profil verarbeitet werden.
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Indem Sie konsistente und geeignete Datei- und Ordnernamensstrategien zusammen m
 
 >[!NOTE]
 >
->Gilt nur für *Dynamic Media - Scene7 mode* nur in AEM 6.4.6.0 oder höher.
+>Gilt nur für den Modus *Dynamic Media - Scene7* nur in Experience Manager 6.4.6.0 oder höher.
 
 Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vorhandenes Verarbeitungsprofil verfügt, das Sie nachträglich geändert haben.
 
@@ -53,20 +53,21 @@ Angenommen, Sie haben ein Bildprofil erstellt und es einem Ordner zugewiesen. Be
 
 Sie können den Neuverarbeitungs-Workflow für ein Asset ausführen, bei dem die Verarbeitung beim ersten Mal fehlgeschlagen ist. Selbst wenn Sie kein Verarbeitungsprofil bearbeitet oder angewendet haben, können Sie den Neuverarbeitungs-Workflow jederzeit für einen Asset-Ordner ausführen.
 
-Sie können optional die Batch-Größe des Neuverarbeitungs-Workflows von 50 Assets bis zu 1000 Assets anpassen. Wenn Sie den Workflow _Scene7: Assets erneut verarbeiten_ für in einen Ordner ausführen, werden die Assets in Batches gruppiert und zur Verarbeitung an den Dynamic Media-Server gesendet. Nach der Verarbeitung werden die Metadaten der einzelnen Assets im gesamten Batch auf AEM aktualisiert. Wenn die Batch-Größe sehr groß ist, kann es zu einer Verzögerung bei der Verarbeitung kommen. Wenn die Batch-Größe zu klein ist, kann dies zu vielen Umläufen zum Dynamic Media-Server führen.
+Sie können optional die Batch-Größe des Neuverarbeitungs-Workflows von 50 Assets bis zu 1000 Assets anpassen. Wenn Sie den Workflow _Scene7: Assets erneut verarbeiten_ für einen Ordner ausführen, werden die Assets in Batches gruppiert und zur Verarbeitung an den Dynamic Media-Server gesendet. Nach der Verarbeitung werden die Metadaten der einzelnen Assets im gesamten Batch-Satz beim Experience Manager aktualisiert. Wenn die Batch-Größe groß ist, kann es zu einer Verzögerung bei der Verarbeitung kommen. Wenn die Batch-Größe zu klein ist, kann dies zu vielen Umläufen zum Dynamic Media-Server führen.
 
 Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-load).
 
 >[!NOTE]
 >
->Wenn Sie eine Massenmigration von Assets von Dynamic Media Classic zu AEM durchführen, müssen Sie den Migrationsreplikationsagenten auf dem Dynamic Media-Server aktivieren. Stellen Sie nach Abschluss der Migration sicher, dass Sie den Agenten deaktivieren.
+>Wenn Sie eine Massenmigration von Assets von Dynamic Media Classic zu Adobe Experience Manager durchführen, müssen Sie den Migrationsreplikationsagenten auf dem Dynamic Media-Server aktivieren. Stellen Sie nach Abschluss der Migration sicher, dass Sie den Agenten deaktivieren.
 >
 >Der Migrationsveröffentlichungsagent muss auf dem Dynamic Media-Server deaktiviert werden, damit der Neuverarbeitungs-Workflow erwartungsgemäß funktioniert.
 
 <!-- Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media’s Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. -->
 
-**Neuverarbeitung von Assets in einem Ordner**:
-1. Navigieren Sie in AEM auf der Seite „Assets“ zu einem Ordner mit Assets, dem ein Verarbeitungsprofil zugewiesen ist und für den Sie den Workflow **Scene7: Assets erneut verarbeiten** anwenden möchten.
+**Neuverarbeitung von Assets in einem Ordner:**
+
+1. Navigieren Sie in Experience Manager auf der Seite &quot;Assets&quot;zu einem Ordner mit Assets, dem ein Verarbeitungsprofil zugewiesen ist und für den Sie die Scene7 **[!UICONTROL anwenden möchten: Workflow Asset]** erneut verarbeiten,
 
    Bei Ordnern, denen bereits ein Verarbeitungsprofil zugewiesen wurde, wird der Name des Profils direkt unter dem Ordnernamen in der Kartenansicht angezeigt.
 
@@ -89,11 +90,11 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
 
 1. Klicken Sie auf **[!UICONTROL Starten]** und dann auf **[!UICONTROL Bestätigen]**.
 
-   Um den Workflow zu überwachen oder seinen Fortschritt zu überprüfen, klicken Sie auf der AEM Hauptseite der Konsole auf **[!UICONTROL Tools]** > **[!UICONTROL Workflow]**. Wählen Sie auf der Seite „Workflow-Instanzen“ einen Workflow aus. Klicken Sie in der Menüleiste auf **[!UICONTROL Offener Verlauf]**. Sie können einen ausgewählten Workflow auch auf derselben Seite „Workflow-Instanzen“ beenden, aussetzen oder umbenennen.
+   Um den Workflow zu überwachen oder seinen Fortschritt zu überprüfen, klicken Sie auf der Hauptseite der Experience Manager-Konsole auf **[!UICONTROL Tools]** > **[!UICONTROL Workflow]**. Wählen Sie auf der Seite „Workflow-Instanzen“ einen Workflow aus. Klicken Sie in der Menüleiste auf **[!UICONTROL Offener Verlauf]**. Sie können einen ausgewählten Workflow auch auf derselben Seite „Workflow-Instanzen“ beenden, aussetzen oder umbenennen.
 
 ### Anpassen der Batch-Größe des Neuverarbeitungs-Workflows {#adjusting-load}
 
-(Optional) Die standardmäßige Batch-Größe im Neuverarbeitungs-Workflow beträgt 50 Assets pro Auftrag. Diese optimale Batch-Größe wird durch die durchschnittliche Asset-Größe und die MIME-Typen der Assets bestimmt, bei denen die Neuverarbeitung ausgeführt wird. Ein höherer Wert bedeutet, dass ein Neuverarbeitungsauftrag viele Dateien enthalten wird. Dementsprechend wird das Verarbeitungsbanner länger für AEM-Assets angezeigt. Wenn die durchschnittliche Dateigröße jedoch nur 1 MB oder weniger beträgt, empfiehlt Adobe, den Wert auf mehrere Hundert, aber niemals mehr als 1.000 zu erhöhen. Wenn die durchschnittliche Dateigröße Hunderte von Megabyte beträgt, empfiehlt Adobe, die Batch-Größe auf bis zu 10 zu reduzieren.
+(Optional) Die standardmäßige Batch-Größe im Neuverarbeitungs-Workflow beträgt 50 Assets pro Auftrag. Diese optimale Batch-Größe wird durch die durchschnittliche Asset-Größe und die MIME-Typen der Assets bestimmt, bei denen die Neuverarbeitung ausgeführt wird. Ein höherer Wert bedeutet, dass ein Neuverarbeitungsauftrag viele Dateien enthalten wird. Dementsprechend wird das Verarbeitungsbanner länger für Adobe Experience Manager-Assets angezeigt. Wenn die durchschnittliche Dateigröße jedoch klein ist - 1 MB oder weniger - empfiehlt Adobe, den Wert auf mehrere 100 zu erhöhen, jedoch nie mehr als 1000. Wenn die durchschnittliche Dateigröße groß ist, z. B. Hunderte von Megabyte, empfiehlt Adobe, die Stapelgröße auf 10 zu verringern.
 
 **Anpassen der Batch-Größe des Neuverarbeitungs-Workflows:**
 
@@ -108,7 +109,7 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
 
    ![Komponente „Massen-Upload in Scene7“](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. Legen Sie im Dialogfeld **[!UICONTROL Massen-Upload zu Scene7 – Schritt-Eigenschaften]** Folgendes fest:
+1. Legen Sie im Dialogfeld **[!UICONTROL Massen-Upload zu Scene7 - Schritt-Eigenschaften]** Folgendes fest:
    * Geben Sie in die Textfelder **[!UICONTROL Titel]** und **[!UICONTROL Beschreibung]** einen neuen Titel und eine neue Beschreibung für den Auftrag ein, falls gewünscht.
    * Wählen Sie **[!UICONTROL Handler-Modus]** aus, wenn der Handler mit dem nächsten Schritt fortfahren soll.
    * Geben Sie im Feld **[!UICONTROL Timeout]** den externen Prozess-Timeout (Sekunden) ein.
@@ -143,5 +144,5 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
     ![Saving the new property](/help/assets/assets/workflow-models10.png)
 
 1. On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All]**.
-1. In the upper-left corner of the page, click **[!UICONTROL CRXDE Lite]** to return to the main AEM console
+1. In the upper-left corner of the page, click **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.-->
