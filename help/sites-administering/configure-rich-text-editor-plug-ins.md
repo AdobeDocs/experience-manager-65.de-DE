@@ -3,14 +3,14 @@ title: 'Konfigurieren der Rich-Text-Editor-Plug-ins '
 description: Erfahren Sie, wie Sie die Adobe Experience Manager Rich-Text-Editor-Plug-ins konfigurieren, um einzelne Funktionen zu aktivieren.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 443115b306ff34ee98da9403222874a9700d8aed
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '4397'
+source-wordcount: '4395'
 ht-degree: 95%
 
 ---
 
-# Konfigurieren der Rich-Text-Editor-Plug-ins   {#configure-the-rich-text-editor-plug-ins}
+# Konfigurieren der Rich-Text-Editor-Plug-ins  {#configure-the-rich-text-editor-plug-ins}
 
 RTE-Funktionen werden über eine Reihe von Plug-ins mit jeweils einer Eigenschaft „Funktionen“ bereitgestellt. Sie können die Eigenschaft „features“ so konfigurieren, dass eine oder mehrere RTE-Funktionen aktiviert oder deaktiviert werden. In diesem Artikel wird beschrieben, wie Sie die RTE-Plug-ins spezifisch konfigurieren.
 
@@ -338,7 +338,7 @@ Führen Sie folgende Schritte aus, um den Stil zu erstellen, den Autoren auf jap
 
 1. Erstellen Sie einen neuen Knoten unter dem Stil-Knoten. Siehe [Festlegen eines neuen Stils](#stylesindropdown).
    * Name: `jpn-word-wrap`
-   * Typ: nt:unstructured
+   * Typ: `nt:unstructure`
 
 1. Fügen Sie diesem Knoten die Eigenschaft `cssName` hinzu, um auf die CSS-Klasse zu verweisen. Dieser Klassenname ist ein reservierter Name für die japanische Wortumbruchfunktion.
    * Name: `cssName`
