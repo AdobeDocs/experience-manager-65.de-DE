@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/system_information_service
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 79fccce2-d090-4b50-9c58-3f2a00e651b2
 exl-id: 4da96c8f-8bd0-4cad-9087-18e324f084e7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 69%
@@ -32,7 +32,7 @@ Der Systeminformationsdienst stellt eine Reihe von REST-APIs zum Abrufen von Inf
  <tbody>
   <tr>
    <td><p>SystemInfo.properties</p></td>
-   <td><p>https://'[Server]:[Port]'/rest/services/SystemInfo.properties`</p></td>
+   <td><p>https://'[Server]:[Port]'/rest/services/SystemInfo.properties'</p></td>
    <td><p>Diese API ist ein Wrapper für Java-API<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()"> system.getProperties-Java-API</a>. Sie ruft die Konfiguration des aktuellen Arbeitsbereichs ab. </p></td>
   </tr>
   <tr>
