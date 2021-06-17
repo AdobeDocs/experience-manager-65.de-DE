@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '7912'
+source-wordcount: '7911'
 ht-degree: 4%
 
 ---
@@ -181,7 +181,7 @@ Konvertieren eines Microsoft Word-Dokuments mithilfe der Generate PDF API (Java)
    * Rufen Sie die `getCreatedDocument` -Methode des Objekts `CreatePDFResult` auf, die ein `com.adobe.idp.Document` -Objekt zurückgibt.
    * Rufen Sie die `copyToFile`-Methode des Objekts `com.adobe.idp.Document` auf, um das PDF-Dokument aus dem im vorherigen Schritt erstellten Objekt zu extrahieren.
 
-   Wenn Sie die `createPDF2`-Methode zum Abrufen des Protokolldokuments verwendet haben (nicht für HTML-Konvertierungen anwendbar), führen Sie die folgenden Schritte aus:
+   Wenn Sie die `createPDF2`-Methode zum Abrufen des Protokolldokuments verwendet haben (nicht für HTML-Konvertierungen), führen Sie die folgenden Schritte aus:
 
    * Rufen Sie die `getLogDocument` -Methode des Objekts `CreatePDFResult` auf. Dadurch wird ein `com.adobe.idp.Document` -Objekt zurückgegeben.
    * Rufen Sie die `copyToFile` -Methode des Objekts `com.adobe.idp.Document` auf, um das Protokolldokument zu extrahieren.
@@ -850,7 +850,7 @@ Wenn Sie ein Skript für eine native Anwendung erstellen, die zuvor nicht unters
 
 >[!NOTE]
 >
->In diesem Zusammenhang bedeutet der zusätzliche Begriff den Inhalt der Datei `appmon.[applicationname].addition.[locale]`.xml`. Eine solche Datei gibt Überschreibungen und Ergänzungen der XML-Datei des Dialogfelds an.
+>In diesem Zusammenhang steht der Begriff &quot;zusätzliche&quot;für den Inhalt der Datei `appmon.[applicationname].addition.[locale].xml`. Eine solche Datei gibt Überschreibungen und Ergänzungen der XML-Datei des Dialogfelds an.
 
 Sie können für folgende Zwecke auch die zusätzliche XML-Datei für das Dialogfeld für eine native Anwendung ändern:
 
