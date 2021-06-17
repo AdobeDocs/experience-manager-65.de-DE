@@ -12,10 +12,10 @@ discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 role: Administrator
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
 source-wordcount: '1060'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -130,7 +130,7 @@ Anstatt Punkte mit einem Badge-Bild zu verknüpfen, ist es nur erforderlich, die
   <tr>
    <th>Eigenschaft</th>
    <th>Typ</th>
-   <th>Wertbeschreibung</th>
+   <th>Wert Beschreibung</th>
   </tr>
   <tr>
    <td>badgingPath</td>
@@ -184,28 +184,28 @@ In der Beta-Version sind zwei erweiterte Scoring-Regeln für die [Forenfunktion]
 
 1. `/libs/settings/community/scoring/rules/adv-comments-scoring`
 
-   * `subRules[] =
-/libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
-/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
-/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule`
+   ```
+   subRules[] =
+   /libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+   /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
+   /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule
+   ```
 
 1. `/libs/settings/community/scoring/rules/adv-forums-scoring`
 
-   * `subRules[] =
-/libs/settings/community/scoring/rules/sub-rules/adv-forums-rule
-/libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
-/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner`
+   ```
+   subRules[] =
+   /libs/settings/community/scoring/rules/sub-rules/adv-forums-rule
+   /libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+   /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
+   ```
 
-**Hinweise:**
+**Anmerkungen:**
 
 * Die Knoten `rules` und `sub-rules` weisen den Typ `cq:Page` auf.
-
-* `subRules` ist ein Attribut vom Typ [] String im  `jcr:content` Knoten der Regel.
-
+* `subRules` ist ein Attribut vom Typ `[]` String im  `jcr:content` Knoten der Regel.
 * `sub-rules` kann für verschiedene Scoring-Regeln freigegeben werden.
-
 * `rules` sollte sich in einem Repository-Speicherort mit Leseberechtigung für alle befinden.
-
 * Regelnamen müssen unabhängig vom Speicherort eindeutig sein.
 
 ### Einbezogene Badging-Regeln {#included-badging-rules}
@@ -215,7 +215,7 @@ In der Version sind zwei erweiterte Badging-Regeln enthalten, die den [erweitert
 * `/libs/settings/community/badging/rules/adv-comments-badging`
 * `/libs/settings/community/badging/rules/adv-forums-badging`
 
-**Hinweise:**
+**Anmerkungen:**
 
 * `rules` -Knoten sind vom Typ cq:Page.
 * `rules` sollte sich in einem Repository-Speicherort mit Leseberechtigung für alle befinden.
