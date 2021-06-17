@@ -9,9 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c908d064-6596-473a-b218-22a2496c83f7
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '638'
 ht-degree: 77%
 
 ---
@@ -103,7 +103,7 @@ Nach dem Herunterfahren von WebLogic Server können Sie die Eingabeaufforderung 
 >Dieser Schritt kann nur ausgeführt werden, nachdem Sie eine WebLogic-Domäne und einen verwalteten Server erstellt haben.
 
 1. Vergewissern Sie sich, dass WebLogic Server und Node Manager ausgeführt werden.
-1. Starten Sie WebLogic Server Administration Console, indem Sie in die Adresszeile eines Webbrowsers `https://host name]:[port]`/console eingeben.
+1. Starten Sie WebLogic Server Administration Console, indem Sie in die Adresszeile eines Webbrowsers `https://host name]:[port]/console` eingeben.
 1. Klicken Sie im Bereich „Domain Structure“ auf „Environment“ > „Servers“.
 1. Klicken Sie im rechten Fenster auf die Registerkarte „Control“.
 1. Wählen Sie den verwalteten Server aus, den Sie starten möchten.
