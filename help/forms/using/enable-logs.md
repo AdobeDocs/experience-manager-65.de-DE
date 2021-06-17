@@ -12,9 +12,9 @@ discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
 feature: Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '647'
 ht-degree: 70%
 
 ---
@@ -27,7 +27,7 @@ Sie können das Dienstprogramm der Protokollfunktion konfigurieren, um mit der E
 
 Führen Sie die folgenden Schritte aus, um serverseitige Protokolle zu konfigurieren:
 
-1. Rufen Sie `https://'[server]:[port]'/system/console/configMgr` auf. Suchen und öffnen Sie die Option *Apache Sling Logging Logger configuration* . Das folgende Dialogfeld wird angezeigt:
+1. Rufen Sie `https://'[server]:[port]'/system/console/configMgr` auf. Suchen und öffnen Sie die Option *Apache Sling Logging Logger configuration* . Folgendes Dialogfeld wird angezeigt:
 
    ![ Dialogfeld mit Apache Sling Logging Logger-Konfigurations-Optionen](assets/logconfig.png)
 
@@ -52,7 +52,7 @@ Um die clientseitige Protokollierung in HTML5-Formularen zu aktivieren, können 
 
 ### Aktivieren der Protokollierung mithilfe des Anforderungsparameters {#enabling-logging-using-request-parameter}
 
-Mit dieser Methode können Sie Protokolle für eine bestimmte Anforderung generieren. Der Name des Anforderungsparameters ist &quot;log&quot;. Die Protokoll-URL lautet wie folgt:
+Mit dieser Methode können Sie Protokolle für eine bestimmte Anforderung generieren. Der Name des Anforderungsparameters ist `log`. Die Protokoll-URL lautet wie folgt:
 
 `https://<server>:<port>/content/xfaforms/profiles/test.html?contentRoot=<path of the folder containing form xdp>&template=<name of the xdp>&log=<log configuration>.`
 
@@ -196,7 +196,7 @@ Standardmäßig werden alle Daten der Datei „error.log“ im Ordner „/crx-re
 Speicherort und Namen der Protokolldatei ändern:
 
 1. Melden Sie sich beim Configuration Manager als Administrator an. Die Standard-URL von Configuration Manager lautet `https://'[server]:[port]'/system/console/configMgr`.
-1. Klicken Sie auf **Apache Sling Logging Logger-Konfiguration**. Das folgende Dialogfeld wird angezeigt.
+1. Klicken Sie auf **Apache Sling Logging Logger-Konfiguration**. Folgendes Dialogfeld wird angezeigt.
 
    ![logconfig-1](assets/logconfig-1.png)
 
