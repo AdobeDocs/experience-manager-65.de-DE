@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Administrator
 feature: Übersetzung
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a564f158cf1040ef43cb9f5dde9f7cb22769587f
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '1875'
 ht-degree: 66%
 
 ---
@@ -69,15 +69,9 @@ Wenn Sie diese Option verwenden, werden die zu übersetzenden Assets in den Spra
 
 1. Wählen Sie aus der Liste **[!UICONTROL Zielsprachen]** die Sprache(n), für die Sie eine Ordnerstruktur erstellen möchten.
 
-   ![chlimage_1-65](assets/chlimage_1-65.png)
-
 1. Wählen Sie aus der Liste **[!UICONTROL Projekt]** die Option **[!UICONTROL Neues Übersetzungsprojekt erstellen]**.
 
-   ![chlimage_1-66](assets/chlimage_1-66.png)
-
 1. Geben Sie im Feld **[!UICONTROL Projekttitel]** einen Namen für das Projekt ein.
-
-   ![chlimage_1-67](assets/chlimage_1-67.png)
 
 1. Klicken Sie auf **[!UICONTROL Erstellen]**. [!DNL Assets] aus dem Quellordner werden in die Zielordner für die Gebietsschemata kopiert, die Sie in Schritt 4 gewählt haben.
 
@@ -233,8 +227,6 @@ Wenn Sie diese Option verwenden, wird die Gruppe der Assets zu einem vorhandenen
 1. Klicken Sie unten auf **[!UICONTROL Sprachkopien aktualisieren]** .
 
 1. Wählen Sie aus der Liste **[!UICONTROL Projekt]** die Option **[!UICONTROL Zu vorhandenem Übersetzungsprojekt hinzufügen]**.
-
-   ![chlimage_1-97](assets/chlimage_1-97.png)
 
 1. Wählen Sie aus der Liste **[!UICONTROL Vorhandenes Übersetzungsprojekt]** ein Projekt, dem das zu übersetzende Asset hinzugefügt werden soll.
 
