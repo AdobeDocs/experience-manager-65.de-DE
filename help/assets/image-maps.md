@@ -3,12 +3,12 @@ title: Hinzufügen von Imagemaps mit Hyperlinks
 description: Erfahren Sie, wie Sie einem Bild eine Imagemap mit Hyperlinks hinzufügen.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: Asset-Verwaltung
+feature: Asset-Management
 exl-id: 77da4917-47ce-4f2e-b062-73cee312a7ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1cfa58bb7dcbe70906071a22fbae4a9f479a31d9
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 13%
+source-wordcount: '268'
+ht-degree: 14%
 
 ---
 
@@ -26,8 +26,6 @@ Mit Imagemaps können Sie einen oder mehrere Hyperlinkbereiche hinzufügen, die 
 
    * Wählen Sie in der Ansicht **[!UICONTROL Karte]** oder **[!UICONTROL Liste]** das Asset aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]** .
    * Klicken Sie auf der Asset-Seite auf **[!UICONTROL Bearbeiten]** .
-
-      ![Bearbeitungsoption](assets/do-not-localize/edit_icon.png)
 
 1. Um eine Imagemap einzufügen, klicken Sie in der Symbolleiste auf **[!UICONTROL Map starten]** ![Imagemap](assets/do-not-localize/image-map-icon.png) .
 1. Wählen Sie die Form der Imagemap aus. Der Hotspot der ausgewählten Form wird auf das Bild gelegt.
