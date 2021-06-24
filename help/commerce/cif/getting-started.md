@@ -4,9 +4,10 @@ description: Erfahren Sie, wie Sie ein AEM Content and Commerce-Projekt bereitst
 topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
+source-git-commit: 61b8d0bf960bd03a19d22061f3c897a56259dd24
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '721'
 ht-degree: 6%
 
 ---
@@ -78,6 +79,9 @@ Die folgenden Eigenschaften können konfiguriert werden:
    >
    > Die Unterstützung für UIDs wurde in Adobe Commerce (Magento) 2.4.2 eingeführt. Aktivieren Sie dies nur, wenn Ihr Commerce-Backend ein GraphQL-Schema der Version 2.4.2 oder höher unterstützt.
 - Kennung der Stammkategorie des Katalogs - die Kennung (UID oder ID) des Stammverzeichnisses des Stores
+   >[!CAUTION]
+   >
+   > Ab Version 2.0.0 der CIF-Kernkomponenten wurde die Unterstützung für `id` entfernt und durch `uid` ersetzt. Wenn Ihr Projekt Version 2.0.0 der CIF-Kernkomponenten verwendet, müssen Sie die Unterstützung der Catalog-UID aktivieren und eine gültige Kategorie-UID als &quot;Katalogstamm-Kategorienkennung&quot;verwenden.
 
 Die oben dargestellte Konfiguration dient als Referenz. Projekte sollten ihre eigenen Konfigurationen bereitstellen.
 
@@ -87,4 +91,4 @@ Komplexere Setups mit mehreren AEM Site-Strukturen in Kombination mit verschiede
 
 - [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype)
 - [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
-- [Commerce-Multi-Store-Einrichtung](configuring/multi-store-setup.md)
+- [Multi-Store-Einrichtung in Commerce](configuring/multi-store-setup.md)
