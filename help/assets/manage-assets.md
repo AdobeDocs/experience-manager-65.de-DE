@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Business Practitioner
 feature: Asset-Verwaltung, Suche
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: d06e60baac692c92358244944226b77d5dad4022
+source-git-commit: 550d837c8ad86393eefecb264b69157fca312984
 workflow-type: tm+mt
-source-wordcount: '9775'
+source-wordcount: '9743'
 ht-degree: 59%
 
 ---
@@ -19,7 +19,7 @@ In [!DNL Adobe Experience Manager Assets] können Sie mehr als nur Assets speich
 
 In diesem Artikel werden die grundlegenden Asset-Management-Aufgaben wie Erstellen oder Hochladen beschrieben. Metadatenaktualisierungen; Kopieren, Verschieben und Löschen; Veröffentlichen, Rückgängigmachen der Veröffentlichung und Suchen von Assets. Informationen zur Benutzeroberfläche finden Sie unter [Erste Schritte mit der Assets-Benutzeroberfläche](/help/sites-authoring/basic-handling.md). Informationen zum Verwalten von Inhaltsfragmenten finden Sie unter [Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-managing.md)-Assets.
 
-## Erstellen von Ordnern {#creating-folders}
+## Erstellen von Ordnern   {#creating-folders}
 
 Wenn Sie eine Sammlung von Assets organisieren, etwa alle `Nature`-Aufnahmen, können Sie Ordner erstellen, um diese zu gruppieren. Mit Ordnern können Sie Assets kategorisieren und organisieren. Bei [!DNL Experience Manager Assets] müssen Sie Assets nicht in Ordner organisieren, um besser zu arbeiten.
 
@@ -77,11 +77,9 @@ Die Größe, ab der ein Asset als großes Asset gilt, lässt sich konfigurieren.
 
 Die Option [!UICONTROL Pause] zeigt nicht an, ob eine Datei mit einer Größe von mehr als 1000 MB mit einer Datei von weniger als 1000 MB hochgeladen wurde. Wenn Sie jedoch den Datei-Upload mit einer Größe von weniger als 1000 MB abbrechen, wird die Option **[!UICONTROL Pause]** angezeigt.
 
-Um die Größenbeschränkung zu ändern, konfigurieren Sie die Eigenschaft `chunkUploadMinFileSize` des Knotens `fileupload`im CRX-Repository.
+Um die Größenbeschränkung zu ändern, konfigurieren Sie die Eigenschaft `chunkUploadMinFileSize` des Knotens `fileupload` im CRX-Repository.
 
 Wenn Sie auf **[!UICONTROL Pause]** klicken, wird zur Option **[!UICONTROL Wiedergabe]** gewechselt. Um den Upload fortzusetzen, klicken Sie auf **[!UICONTROL Abspielen]**.
-
-![Fortsetzen des angehaltenen Asset-Uploads](assets/resume-paused-upload.png)
 
 Um einen laufenden Upload abzubrechen, klicken Sie auf „Schließen“ (`X`) neben der Fortschrittsleiste. Wenn Sie den Upload abbrechen, löscht [!DNL Assets] den teilweise hochgeladenen Teil des Assets.
 
@@ -152,7 +150,7 @@ Um dies zu vermeiden, erfasst [!DNL Assets] während eines Massen-Upload-Vorgang
 
 Der serielle Upload von Assets ist standardmäßig aktiviert. Um die Funktion zu deaktivieren und das gleichzeitige Hochladen zuzulassen, überlagern Sie den Knoten `fileupload` in Crx-de und setzen Sie den Wert der Eigenschaft `parallelUploads` auf `true`.
 
-### Hochladen von Assets mit FTP {#uploading-assets-using-ftp}
+### Hochladen von Assets über FTP {#uploading-assets-using-ftp}
 
 Dynamic Media ermöglicht das stapelweise Hochladen von Assets über FTP-Server. Wenn Sie große Assets (> 1 GB) hochladen oder ganze Ordner und Unterordner hochladen möchten, sollten Sie FTP verwenden. Sie können das Hochladen per FTP auch einrichten, um Uploads regelmäßig und nach Plan durchzuführen.
 
@@ -253,7 +251,7 @@ Wenn Sie PostScript (EPS)- oder Illustrator (AI)-Bilddateien hochladen, können 
 |  | Immer CMYK | Zur Konvertierung in den CMYK-Farbraum. |
 |  | Immer Graustufen | Zur Konvertierung in den Graustufenfarbraum. |
 
-#### Photoshop-Uploadoptionen festlegen {#setting-photoshop-upload-options}
+#### Festlegen von Photoshop-Uploadoptionen {#setting-photoshop-upload-options}
 
 Photoshop Document (PSD)-Dateien werden meist zum Erstellen von Bildvorlagen verwendet. Wenn Sie eine PSD-Datei hochladen, können Sie automatisch eine Bildvorlage aus der Datei erstellen (wählen Sie im Bildschirm &quot;Hochladen&quot;die Option [!UICONTROL Vorlage erstellen] aus).
 
@@ -277,7 +275,7 @@ Verwenden Sie die oben beschriebenen [!UICONTROL Zuschnitt-Optionen] und [!UICON
 |  | Photoshop- und Ebenenname | Benennt die Bilder nach der PSD-Datei, gefolgt vom Ebenennamen oder der -nummer. Die Ebenennummer wird verwendet, wenn es sich bei den Ebenennamen in der PSD-Datei um standardmäßige Photoshop-Ebenennamen handelt. Zum Beispiel erhält eine Ebene mit dem Namen „Preisschild“ in einer PSD-Datei mit dem Namen „Frühjahrsannonce“ den Namen „Frühjahrsannonce_Preisschild“. Eine Ebene mit dem standardmäßigen Namen „Ebene 2“ erhält den Namen „Frühjahrsannonce_2“. |
 | Anker |  | Geben Sie an, wie Bilder in Vorlagen, die aus der Zusammenstellung der Ebenen aus der PSD-Datei erstellt werden, verankert werden. Der Anker ist standardmäßig zentriert. Ein zentrierter Anker eignet sich am besten zum Auffüllen desselben Raums mit Ersatzbildern, unabhängig vom Seitenverhältnis der Ersatzbilder. Bilder mit einem anderen Seitenverhältnis, die dieses Bild ersetzen, nehmen effektiv denselben Raum ein, wenn auf die Vorlage verwiesen und die Parameterersetzung durchgeführt wird. Wählen Sie eine andere Einstellung, wenn es für Ihre Anwendung erforderlich ist, dass die Ersatzbilder den zugeordneten Raum in der Vorlage ausfüllen. |
 
-#### Festlegen von PDF-Upload-Optionen {#setting-pdf-upload-options}
+#### PDF-Uploadoptionen festlegen {#setting-pdf-upload-options}
 
 Wenn Sie eine PDF-Datei hochladen, können Sie diese auf verschiedene Arten formatieren. Sie können ihre Seiten zuschneiden, Suchbegriffe extrahieren, eine ppi (Pixel pro Zoll)-Auflösung eingeben und einen Farbraum auswählen. PDF-Dateien enthalten oft einen Beschnittrand, Schnittmarken, Registrierungsmarken und andere Druckermarken. Sie können diese Marken von den Seitenrändern aus zuschneiden, wenn Sie eine PDF-Datei hochladen.
 
@@ -541,7 +539,7 @@ Wenn Sie Assets durch Ziehen verschieben, wird der Assistent [!UICONTROL Asset v
 
    Ebenso können Sie das Bild der Anmerkungsseite durch Überlagern von `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker` anpassen.
 
-   ![Überlagern Sie den Knoten renditionpicker in CRXDE, um das Bild der Anmerkungsseite anzupassen.](assets/renditionpicker-node-crxde.png)
+   ![Überlagern Sie den Knoten renditionpicker in CRXDE, um das Bild der Anmerkungsseite anzupassen.](assets/renditionpicker-node.png)
 
    Navigieren Sie zur Konfiguration der Ausgabedarstellungsabmessungen für ein Video-Asset zum Knoten `videopicker` im CRX-Repository am Speicherort `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, überlagern Sie den Knoten und bearbeiten Sie dann die entsprechende Eigenschaft.
 
@@ -610,7 +608,7 @@ Machen Sie sich mit den folgenden Einschränkungen und Tipps im Zusammenhang mit
 * Die Option [!UICONTROL Veröffentlichung verwalten] ist nur für Benutzerkonten mit Replikationsberechtigungen verfügbar.
 * Wenn Sie die Veröffentlichung eines komplexen Assets rückgängig machen möchten, achten Sie darauf, nur die Veröffentlichung des Assets rückgängig zu machen. Vermeiden Sie das Rückgängigmachen der Veröffentlichung der Verweise, da diese von anderen veröffentlichten Assets referenziert werden können.
 * Leere Ordner werden nicht veröffentlicht.
-* Wenn Sie ein Asset veröffentlichen, das momentan verarbeitet wird, wird nur der ursprüngliche Inhalt veröffentlicht. Die Ausgabedarstellungen fehlen. Warten Sie entweder bis, die Verarbeitung abgeschlossen ist, und veröffentlichen Sie das Asset erst dann bzw. veröffentlichen Sie es erneut, wenn die Verarbeitung abgeschlossen ist.
+* Wenn Sie ein Asset veröffentlichen, das momentan verarbeitet wird, wird nur der ursprüngliche Inhalt veröffentlicht. Die Ausgabedarstellungen fehlen. Warten Sie entweder, bis die Verarbeitung abgeschlossen ist, und veröffentlichen Sie das Asset erst dann, oder veröffentlichen Sie es erneut, wenn die Verarbeitung abgeschlossen ist.
 
 ## Geschlossene Benutzergruppe {#closed-user-group}
 
@@ -655,8 +653,6 @@ In der Listen- und Spaltenansicht wird die Option **[!UICONTROL Auswählen]** an
 
 In der Kartenansicht wird die Option **[!UICONTROL Auswählen]** als Schnellaktion angezeigt.
 
-![Schnellaktion in der Kartenansicht auswählen](assets/select_quick_action.png)
-
 Beim Durchsuchen eines Ordners oder einer Sammlung in der Benutzeroberfläche von [!DNL Assets] in einem Browser können Sie alle angezeigten oder geladenen Assets mithilfe der Option [!UICONTROL Alle auswählen] oben rechts auswählen. Zunächst werden nur 100 Assets in der Kartenansicht geladen und 200 werden in der Listenansicht geladen. Weitere Assets werden in der Ansicht geladen, während Sie auf der Suchergebnisseite scrollen. Die Option [!UICONTROL Alle auswählen] wählt nur die geladenen Assets aus.
 
 Weitere Informationen finden Sie unter [Anzeigen und Auswählen Ihrer Ressourcen](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
@@ -678,8 +674,6 @@ Mit den Bearbeitungswerkzeugen in der Oberfläche von [!DNL Assets] können Sie 
 1. Um das Bild zu beschneiden, klicken Sie auf **[!UICONTROL Zuschneiden]** ![Option zum Zuschneiden eines Bildes](assets/do-not-localize/crop.png).
 
 1. Wählen Sie die gewünschte Option aus der Liste aus. Der Zuschneidebereich wird auf dem Bild je nach gewählter Option angezeigt. Mit der Option **Freihand** können Sie das Bild ohne Einschränkungen des Seitenverhältnisses zuschneiden.
-
-   ![Optionen für das Zuschneiden](assets/crop-options.png)
 
 1. Wählen Sie den zuzuschneidenden Bereich und ändern Sie die Größe oder Position auf dem Bild.
 
@@ -736,11 +730,9 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 
 1. Fügen Sie im Feld **[!UICONTROL Kommentar]** am unteren Rand der Zeitleiste einen Kommentar hinzu. Sie haben auch die Möglichkeit, einen Bereich im Bild zu markieren und im Dialogfeld **[!UICONTROL Anmerkung hinzufügen]** eine Anmerkung hinzuzufügen.
 
-   ![Kommentarfeld im Dialogfeld &quot;Anmerkung hinzufügen&quot;](assets/annotation-comment-box.png)
-
 1. Um einen Benutzer über eine Anmerkung zu benachrichtigen, geben Sie die E-Mail-Adresse des Benutzers an und fügen Sie den Kommentar hinzu. Beispiel: Um Aaron MacDonald über eine Anmerkung zu benachrichtigen, geben Sie „@aa“ ein. Vorschläge für alle übereinstimmenden Benutzer werden in einer Liste angezeigt. Wählen Sie die E-Mail-Adresse von Aaron in der Liste aus, um ihn über den Kommentar zu informieren. Sie können auch weitere Benutzer innerhalb, vor oder nach der Anmerkung taggen.
 
-   ![Geben Sie die E-Mail-Adresse des Benutzers an und fügen Sie Kommentare hinzu, um den Benutzer zu benachrichtigen](assets/annotation-add-user-email.png)
+   ![Geben Sie die E-Mail-Adresse des Benutzers an und fügen Sie Kommentare hinzu, um den Benutzer zu benachrichtigen](assets/annotate-gif.gif)
 
    >[!NOTE]
    >
@@ -807,8 +799,6 @@ Um die Anmerkungen und den Prüfungsstatus zu drucken, klicken Sie auf **[!UICON
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Drucken]**.
 
 1. Wählen Sie im Dialogfeld „Drucken“ die Position, deren Anmerkungen/Prüfungsstatus in der PDF-Datei angezeigt werden sollen. Wenn Sie beispielsweise die Anmerkungen/den Status in der linken oberen Ecke der Seite drucken möchten, die das gedruckte Bild enthält, verwenden Sie die Einstellung **Oben links**. Sie ist standardmäßig aktiviert.
-
-   ![Position der Anmerkung/des Prüfungsstatus auswählen, der im Dialogfeld &quot;Drucken&quot;in der PDF-Datei angezeigt werden soll](assets/Print-annotation-dialog.png)
 
    Sie können auch andere Einstellungen wählen, je nach der von Ihnen gewünschten Position der Anmerkungen oder des Status in der gedruckten PDF-Datei. Wenn sich die von Ihnen gewünschte Position der Anmerkungen/des Status auf einer Seite befindet, die nicht zum gedruckten Asset gehört, wählen Sie **[!UICONTROL Nächste Seite]**.
 
