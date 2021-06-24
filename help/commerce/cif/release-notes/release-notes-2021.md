@@ -1,10 +1,11 @@
 ---
 title: AEM Content and Commerce - Versionshinweise 2021
 description: AEM Content and Commerce - Versionshinweise 2021
-source-git-commit: 99636664a49da3ac5d236db5a1185ad6659ee255
+exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
+source-git-commit: 71782a3caae3f74a4886c52cf9b29f9e998913fa
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 15%
+source-wordcount: '758'
+ht-degree: 16%
 
 ---
 
@@ -27,6 +28,23 @@ Der alte AEM CIF Connector befindet sich im Wartungsmodus und sollte nicht mehr 
 | CIF-Add-on | Minimum: AEM 6.5.7, Magento 2.3.5 GraphQL-Schemata |
 | CIF-Kernkomponenten | [Systemanforderungen](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM-Projektarchetyp | [Systemanforderungen](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Releasedatum: Juni 2021
+
+| Komponente | Version | Details |
+|:-------|:-----:|---------------------:|
+| CIF-Add-on | 2021.06.18 | [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.06.18.zip) |
+| CIF-Kernkomponenten | 1,12,0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.12.0) |
+| CIF Venia-Referenz-Site | 2021,06,12 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.06.17) |
+
+### Neue Funktionen {#what-is-new-june}
+
+* Neue CIF-Produkt- und Kategoriereferenzdatentypen für Inhaltsfragmente (inkl. Benutzeroberflächenunterstützung für Produkt-/Kategorieauswahl
+* Neue Commerce-Inhaltsfragment-Kernkomponente
+* Im AEM Backend unterstützte Volltext-Commerce-Suche
+* Commerce-Kernkomponenten unterstützen die Adobe Commerce Sensei Recs-Datenerfassung
+* Verbesserte SEO-freundliche URLs für Kategorieseiten
+* Unterstützung benutzerdefinierter HTTP-Header pro Site/Konfiguration
 
 ## Releasedatum: Mai 2021
 
@@ -102,7 +120,7 @@ Der alte AEM CIF Connector befindet sich im Wartungsmodus und sollte nicht mehr 
 
 * Die Eigenschaften der Produktkonsole wurden erweitert, um verknüpfte Assets und Experience Fragments anzuzeigen, einschließlich Aktionen zur schnellen Navigation zum zugehörigen Inhalt.
 
-### Verbesserte Funktionen {#what-is-improved-february}
+### Verbesserte Funktionen  {#what-is-improved-february}
 
 * Verbesserte Client-seitige Datenschicht mit Produkt-Bild-URL und Kategorieinformationen.
 
@@ -120,7 +138,7 @@ Der alte AEM CIF Connector befindet sich im Wartungsmodus und sollte nicht mehr 
 
 * Produkt-Experience-Management: Neue Registerkarte mit der Eigenschaft &quot;Commerce&quot;für Assets und Experience Fragments. Auf dieser Registerkarte können Sie Assets und Experience Fragments mit Produkten und Kategorien verknüpfen. Auf der Registerkarte werden auch Echtzeitdaten für verknüpfte Commerce-Objekte und ein Link zur Anzeige von Details in der Produktkonsole angezeigt.
 
-### Verbesserte Funktionen {#what-is-improved-january}
+### Verbesserte Funktionen  {#what-is-improved-january}
 
 * Senden Sie Benutzerdaten nach der Authentifizierung an die Adobe Client-Datenschicht.
 
