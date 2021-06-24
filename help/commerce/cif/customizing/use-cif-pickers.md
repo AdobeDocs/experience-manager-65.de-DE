@@ -7,14 +7,15 @@ version: cloud-service
 activity: develop
 audience: developer
 feature: Commerce Integration Framework
-source-git-commit: d84993e704096eabe85c4d4d61e24096d15ae9bd
+exl-id: 1e7c3748-92b5-45f1-8dd9-f1816e3e34aa
+source-git-commit: 61b8d0bf960bd03a19d22061f3c897a56259dd24
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 1%
+source-wordcount: '648'
+ht-degree: 0%
 
 ---
 
-# AEM Content &amp; Commerce Authoring-Wähler {#cif-pickers}
+# AEM Content &amp; Commerce Authoring-Auswahl {#cif-pickers}
 
 AEM Content &amp; Commerce Authoring bietet eine Reihe von Authoring-Tools, mit denen AEM Autoren und Marketing-Experten effizient mit Commerce-Produktdaten und -Katalogen arbeiten können. Die Produktauswahl und die Kategorieauswahl sind Teil des CIF-Add-ons und werden von den CIF-Kernkomponenten verwendet. Projekte können diese Auswahl in jedem Komponentendialogfeld verwenden, um Produkte oder Kategorien auszuwählen.
 
@@ -46,6 +47,9 @@ Darüber hinaus werden auch standardmäßige Eigenschaften von Dialogfeldfeldern
 >[!CAUTION]
 >
 >Für die Komponente `cifproductfield` ist die clientlib `cif.shell.picker` erforderlich. Um einem Dialogfeld eine clientlib hinzuzufügen, können Sie die Eigenschaft extraClientlibs verwenden.
+>[!CAUTION]
+>
+>Ab Version 2.0.0 der CIF-Kernkomponenten wurde die Unterstützung für `id` entfernt und durch `uid` ersetzt. Es wird dringend empfohlen, `sku` oder `slug` als Produktkennung zu verwenden. `id` wird weiterhin nur für Projekte unterstützt, die CIF-Kernkomponenten Version 1.x verwenden.
 
 Ein vollständiges Arbeitsbeispiel für `cifproductfield` finden Sie im Projekt [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml) . Siehe auch [Anpassen von Dialogfeldern](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) in der Dokumentation zu AEM Kernkomponenten .
 
@@ -73,5 +77,8 @@ Darüber hinaus werden auch standardmäßige Eigenschaften von Dialogfeldfeldern
 >[!CAUTION]
 >
 >Wie die Komponente `cifproductfield` erfordert auch die Komponente `cifcategoryfield` die clientlib `cif.shell.picker` . Um eine clientlib zu einem Dialogfeld hinzuzufügen, können Sie die Eigenschaft `extraClientlibs` verwenden. Siehe [Anpassen von Dialogfeldern](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) in der Dokumentation zu AEM Kernkomponenten .
+>[!CAUTION]
+>
+>Ab Version 2.0.0 der CIF-Kernkomponenten wurde die Unterstützung für `id` entfernt und durch `uid` ersetzt. Es wird dringend empfohlen, `uid` oder `slug` als Kategoriekennung zu verwenden. `id` und `idAndUrlPath` werden weiterhin nur für Projekte unterstützt, die CIF-Kernkomponenten Version 1.x verwenden.
 
 Ein vollständiges Arbeitsbeispiel für `cifcategoryfield` finden Sie im Projekt [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml) .
