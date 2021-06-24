@@ -5,10 +5,10 @@ contentOwner: AG
 role: Administrator, Developer
 feature: Suchen
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e78b42a899de3c8009817ba9e60bac40e161270f
 workflow-type: tm+mt
-source-wordcount: '2425'
-ht-degree: 77%
+source-wordcount: '2397'
+ht-degree: 78%
 
 ---
 
@@ -30,8 +30,6 @@ Für Volltextsuchen fügen Sie dem Formular die Eigenschaft [!UICONTROL Volltext
 
 1. Klicken Sie auf das [!DNL Experience Manager]-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Forms durchsuchen]**.
 1. Wählen Sie auf der Seite Forms suchen die Option **[!UICONTROL Asset-Admin-Suchschiene]** und klicken Sie dann auf **[!UICONTROL Bearbeiten]** ![Bearbeitungssymbol](assets/do-not-localize/aemassets_edit.png).
-
-   ![Suchen und wählen Sie die Assets oder Admin-Suchleiste aus.](assets/assets_admin_searchrail.png)
 
    >[!NOTE]
    >
@@ -125,7 +123,7 @@ Wenn Sie einen vorhandenen Knoten verwenden möchten, legen Sie diesen über das
 1. Geben Sie eine optionale Beschreibung in das Feld **[!UICONTROL Beschreibung]** ein und klicken Sie auf **[!UICONTROL Fertig]**.
 1. Navigieren Sie zum Suchfeld. Die Options-Eigenschaft wird dem Bereich **Suchen** hinzugefügt. Die Optionen für **[!UICONTROL Dateityp]** werden als Kontrollkästchen angezeigt.
 
-## Mehrwert-Eigenschaftsprädikat {#adding-a-multi-value-property-predicate} hinzufügen
+## Mehrwert-Eigenschaftsprädikat hinzufügen {#adding-a-multi-value-property-predicate}
 
 Mit dem Mehrwert-Eigenschaftsprädikat können Sie für mehrere Werte nach Assets suchen. Stellen Sie sich ein Szenario vor, in dem Sie Bilder von mehreren Produkten in [!DNL Assets] haben und die Metadaten für jedes Bild eine SKU-Nummer enthalten, die mit dem Produkt verknüpft ist. Sie können diese Eigenschaft nutzen, um anhand mehrerer Artikelnummern nach Produktbildern zu suchen.
 
@@ -180,7 +178,7 @@ Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigen
 
 Standardmäßig wird vor **[!UICONTROL Asset-Admin-Suchschiene]** auf der Seite **[!UICONTROL Forms durchsuchen]** ein Sperrsymbol ![Sperren angezeigt](assets/do-not-localize/lock_closed_icon.svg). Das Sperrsymbol für eine Option auf der Seite „Suchformulare“ gibt an, dass die Standardeinstellungen intakt und nicht angepasst sind. Das Symbol ![Schlosssymbol](assets/do-not-localize/lock_closed_icon.svg) wird ausgeblendet, wenn Sie Suchfacetten zum Formular hinzufügen, die darauf hinweisen, dass das Standardformular geändert wurde.
 
-![Das Sperrsymbol für eine Option auf der Seite „Suchformulare“ gibt an, dass die Standardeinstellungen intakt und nicht angepasst sind.](assets/locked_admin_rail.png)
+![Symbol &quot;Sperren&quot;](assets/locked_admin_rail.png)
 
 Führen Sie die folgenden Schritte aus, um die standardmäßige Suchfacette wiederherzustellen:
 
@@ -203,5 +201,5 @@ Wenn Ihnen nicht die Rolle eines Administrators zugewiesen wurde, finden Sie hie
 >[!MORELIKETHIS]
 >
 >* [Erweiterung der Asset-Suchfunktion](searchx.md)
-* [Suchen von Assets ](search-assets.md)
+* [Suchen von Assets](search-assets.md)
 
