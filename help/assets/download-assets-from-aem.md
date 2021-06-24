@@ -5,9 +5,9 @@ contentOwner: AG
 role: Business Practitioner
 feature: Asset-Management, Asset-Verteilung
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: eefd19768cc52350ba5858a439b793c125fd23cc
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '875'
 ht-degree: 76%
 
 ---
@@ -29,11 +29,6 @@ Die Asset-Typen „Bildset“, „Rotationsset“ „Set für gemischte Medien�
 1. Navigieren Sie zu einem Ordner mit den Assets, die Sie herunterladen möchten.
 1. Wählen Sie den Ordner oder ein oder mehrere Assets im Ordner aus.
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Herunterladen]**.
-
-   ![Verfügbare Optionen beim Herunterladen von Assets aus AEM Assets](/help/assets/assets/asset-download1.png)
-
-   *Abbildung: Im Dialogfeld &quot;Download&quot;verfügbare Optionen.*
-
 1. Wählen Sie im Dialogfeld „Herunterladen“ die gewünschten Download-Optionen aus.
 
    | Export- oder Download-Option | Beschreibung |
