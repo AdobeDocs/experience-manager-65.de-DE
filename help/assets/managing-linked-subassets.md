@@ -3,11 +3,11 @@ title: Verwalten von ebenenübergreifenden Assets mit Verweisen und mehreren Sei
 description: Erfahren Sie, wie Sie Verweise auf digitale Assets aus  [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop] erstellen. Verwenden Sie die Funktion "Seiten-Viewer", um einzelne Asset-Seiten mit mehrseitigen Dateien wie PDF-, INDD-, PPT-, PPTX- und AI-Dateien anzuzeigen.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: Asset-Verwaltung
+feature: Asset-Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a564f158cf1040ef43cb9f5dde9f7cb22769587f
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1379'
 ht-degree: 18%
 
 ---
@@ -45,7 +45,7 @@ Sie können vorhandene digitale Assets aus einer [!DNL Adobe Illustrator]-Datei 
 
    *Abbildung: Asset-Verweise in Asset-Details.*
 
-## [!DNL Adobe InDesign]: Hinzufügen digitaler Assets als Referenzen  {#add-aem-assets-as-references-in-adobe-indesign}
+## [!DNL Adobe InDesign]: Hinzufügen digitaler Assets als Referenzen {#add-aem-assets-as-references-in-adobe-indesign}
 
 Um digitale Assets aus einer [!DNL InDesign]-Datei zu referenzieren, ziehen Sie die Assets in die Datei [!DNL InDesign] oder exportieren Sie die Datei [!DNL InDesign] als ZIP-Archiv.
 
@@ -57,7 +57,7 @@ Referenzierte Assets sind bereits in [!DNL Experience Manager Assets] vorhanden.
 
 Wenn eine INDD-Datei hochgeladen wird, werden die Verweise abgerufen, indem Assets mit der Eigenschaft `xmpMM:InstanceID` und `xmpMM:DocumentID` im Repository abgefragt werden.
 
-### Erstellen von Verweisen durch Ziehen von Assets {#create-references-by-dragging-aem-assets}
+### Erstellen von Referenzen durch Ziehen von Assets {#create-references-by-dragging-aem-assets}
 
 Dieses Verfahren ähnelt [Hinzufügen digitaler Assets als Referenzen in Adobe Illustrator](#refai).
 
@@ -72,8 +72,6 @@ Dieses Verfahren ähnelt [Hinzufügen digitaler Assets als Referenzen in Adobe I
 ## [!DNL Adobe Photoshop]: Hinzufügen digitaler Assets als Referenzen {#refps}
 
 1. Verwenden Sie das [!DNL Experience Manager]-Desktop-Programm, um auf [!DNL Experience Manager Assets] zuzugreifen. Laden Sie die Assets herunter und zeigen Sie sie im lokalen Dateisystem an. Verwenden Sie die Funktion [!UICONTROL Linked] in [!DNL Adobe Photoshop]. Siehe [Platzieren von Assets im Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
-
-   ![chlimage_1-87](assets/chlimage_1-261.png)
 
 1. Speichern Sie die Datei [!DNL Photoshop] auf dem bereitgestellten Laufwerk oder [laden Sie ](/help/assets/manage-assets.md#uploading-assets) in das [!DNL Experience Manager]-Repository hoch.
 1. Nach Abschluss des Workflows werden die Verweise auf vorhandene [!DNL Experience Manager]-Assets auf der Asset-Detailseite aufgelistet.
