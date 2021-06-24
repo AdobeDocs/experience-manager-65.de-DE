@@ -11,10 +11,10 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Komponenten,Publishing
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 3221454e2d2dfd90b645a4c0303404d44f8d373d
 workflow-type: tm+mt
-source-wordcount: '3210'
-ht-degree: 68%
+source-wordcount: '3252'
+ht-degree: 67%
 
 ---
 
@@ -97,7 +97,7 @@ Zum Lokalisieren von Dynamic Media-Komponenten stehen Ihnen zwei Möglichkeiten 
    >
    >Nicht allen im Menü **[!UICONTROL Sprache]** verfügbaren Sprachen sind derzeit Tokens zugewiesen.
 
-## Komponenten vom Typ „Dynamische Medien“{#dynamic-media-components}
+## Komponenten vom Typ „Dynamische Medien“ {#dynamic-media-components}
 
 Dynamic Media-Komponenten sind verfügbar, wenn Sie auf das Symbol **[!UICONTROL Komponenten]** tippen und nach **[!UICONTROL Dynamic Media]** filtern.
 
@@ -114,7 +114,7 @@ Zu den verfügbaren Dynamic Media-Komponenten zählen:
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
-### Komponente „Dynamische Medien“{#dynamic-media-component}
+### Komponente „Dynamische Medien“ {#dynamic-media-component}
 
 Die Dynamic Media-Komponente ist intelligent. In Abhängigkeit davon, ob Sie ein Bild oder Video hinzufügen, haben Sie verschiedene Optionen. Die Komponente unterstützt Bildvorgaben, bildbasierte Viewer wie Bildsets sowie Rotationssets, Sets für gemischte Medien und Videos. Darüber hinaus ist der Viewer responsiv - die Größe des Bildschirms ändert sich automatisch basierend auf der Bildschirmgröße. Bei allen Viewern handelt es sich um HTML5-Viewer.
 
@@ -136,7 +136,7 @@ Wenn Sie die Dynamic Media-Komponente hinzufügen und **[!UICONTROL Einstellunge
 * Sie [Dynamic Media aktiviert](/help/assets/config-dynamic.md) haben. Dynamic Media ist standardmäßig deaktiviert.
 * das Bild eine Pyramid TIFF-Datei aufweist. Bilder, die Sie vor der Aktivierung von Dynamic Media importieren, verfügen nicht über eine Pyramid TIFF-Datei.
 
-#### Arbeiten mit Bildern  {#when-working-with-images}
+#### Arbeiten mit Bildern {#when-working-with-images}
 
 Mit der Komponente „Dynamic Media“ können Sie dynamische Bilder, einschließlich Bildsets, Rotationssets und Sets für gemischte Medien, hinzufügen. Sie können Vergrößerungen sowie Verkleinerungen vornehmen und (sofern zutreffend) ein Bild in einem Rotationsset drehen oder ein Bild aus einem anderen Set auswählen.
 
@@ -178,7 +178,7 @@ Bearbeiten Sie die folgenden Dynamic Media-Einstellungen, indem Sie in der Kompo
 
    ![Gerätepixelverhältniseinstellung für Bildvorgabe](/help/assets/assets-dm/dpr-ress-ip.png)
 
-<!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr). Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
+   Siehe auch [Informationen zur Optimierung des Gerätepixelverhältnisses](/help/assets/imaging-faq.md#dpr). Beachten Sie, dass alle DSGVO-Werte für die intelligente Bildbearbeitung von Adobe Experience Manager Dynamic Media ignoriert werden.
 
 * **[!UICONTROL Titel]**  - Ändern Sie den Titel des Bildes.
 
@@ -254,7 +254,7 @@ Bearbeiten Sie die folgende Dynamic Media-Einstellung, indem Sie in der Komponen
 
    ![Gerätepixelverhältniseinstellung für smartes Zuschneiden](/help/assets/assets-dm/dpr-smartcrop.png)
 
-<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr). Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
+   Siehe auch [Informationen zur Optimierung des Gerätepixelverhältnisses](/help/assets/imaging-faq.md#dpr). Beachten Sie, dass alle DSGVO-Werte für die intelligente Bildbearbeitung von Adobe Experience Manager Dynamic Media ignoriert werden.
 
 * **[!UICONTROL Titel]**  - Ändern Sie den Titel des Smart-Zuschnitt-Bildes.
 
