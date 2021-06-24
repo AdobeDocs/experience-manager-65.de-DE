@@ -5,7 +5,7 @@ contentOwner: AG
 role: Business Practitioner
 feature: Workflow,Ausgabedarstellungen
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
+source-git-commit: e78b42a899de3c8009817ba9e60bac40e161270f
 workflow-type: tm+mt
 source-wordcount: '2166'
 ht-degree: 49%
@@ -61,7 +61,7 @@ So zeigen Sie die aktiven Medien-Handler an:
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
 
-## Verwenden Sie Medien-Handler in Workflows, um Aufgaben für Assets auszuführen {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
+## Verwenden von Medien-Handlern in Workflows zum Ausführen von Aufgaben für Assets {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
 Medien-Handler sind Dienste, die normalerweise in Verbindung mit Workflows verwendet werden.
 
@@ -71,7 +71,7 @@ Bereits bestehende Workflows können erweitert und neue Workflows können erstel
 
 Das folgende Beispiel zeigt, wie der **[!UICONTROL AEM Assets-Synchronisierungs-Workflow]** erweitert werden kann, damit Teil-Assets für alle Assets außer PDF-Dokumente erstellt werden.
 
-### Deaktivieren oder aktivieren Sie einen Medien-Handler {#disabling-enabling-a-media-handler}
+### Deaktivieren oder Aktivieren eines Medien-Handlers {#disabling-enabling-a-media-handler}
 
 Die Medien-Handler können über die Apache Felix Web Management-Konsole deaktiviert bzw. aktiviert werden. Wenn der Medien-Handler deaktiviert ist, werden seine Aufgaben zur Bearbeitung von Assets nicht durchgeführt.
 
@@ -368,7 +368,7 @@ Nachdem Sie das folgende Verfahren ausgeführt haben, werden beim Hochladen eine
      Layer watermarkLayer;
      try {
       final Session session = node.getSession();
-      watermarkLayer = ImageHelper.createLayer(session, "/content/dam/geometrixx/icons/certificate.png");
+      watermarkLayer = ImageHelper.createLayer(session, "/content/dam/samplesite/icons/certificate.png");
       watermarkLayer.setX(MARGIN);
       watermarkLayer.setY(MARGIN);
       layer.merge(watermarkLayer);
@@ -466,7 +466,7 @@ Der Prozess `CommandLineProcess` führt folgende Vorgänge in der angegebenen Re
 * Löscht das temporäre Verzeichnis.
 * Erstellt Miniaturbilder auf der Grundlage dieser Ausgabeformate, falls angegeben. Die Anzahl und die Abmessungen von Miniaturbildern werden durch die Argumente des Schritts definiert.
 
-### Ein Beispiel mit [!DNL ImageMagick] {#an-example-using-imagemagick}
+### Beispiel mit [!DNL ImageMagick] {#an-example-using-imagemagick}
 
 Das folgende Beispiel zeigt, wie Sie den Befehlszeilenprozessschritt so einrichten, dass jedes Mal, wenn ein Asset mit dem E-Typ &quot;miMIME&quot;GIF oder TIFF zu `/content/dam` auf dem Server [!DNL Experience Manager] hinzugefügt wird, ein gespiegeltes Bild des Originals mit drei zusätzlichen Miniaturansichten (140x100, 48x48 und 125) erstellt wird 0).
 
@@ -496,7 +496,7 @@ Fügen Sie zum Testen des geänderten Workflows ein Asset zu `/content/dam` hinz
 1. Rufen Sie die Konsole **[!UICONTROL CQ5 DAM]** auf, z. B. `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Öffnen Sie das Asset **[!UICONTROL myImage.tiff]** und prüfen Sie, ob das gespiegelte Bilder und die drei Miniaturbilder erstellt wurden.
 
-#### Konfigurieren Sie den Prozessschritt CommandLineProcess {#configuring-the-commandlineprocess-process-step}
+#### Prozessschritt &quot;CommandLineProcess&quot;konfigurieren {#configuring-the-commandlineprocess-process-step}
 
 In diesem Abschnitt wird beschrieben, wie die [!UICONTROL Prozess-Argumente] des [!UICONTROL CommandLineProcess] festgelegt werden.
 
