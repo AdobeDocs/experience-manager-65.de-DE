@@ -41,7 +41,7 @@ Die folgenden Tastaturbefehle stehen für die Konsolen „Sites“, „Commerce�
 | Konsolen | `?` | Hilfe zu Tastaturbefehlen |
 |  | `/` | Aufrufen der [Suche](/help/sites-authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | Umschalten zwischen den anzuzeigenden [Schienenauswahloptionen](/help/sites-authoring/basic-handling.md#rail-selector) |
-|  | ` | Ausblenden der Schiene |
+|  | &grave; | Ausblenden der Schiene |
 |  | `e` | Bearbeiten |
 |  | `p` | Eigenschaften |
 |  | `m` | Verschieben |
