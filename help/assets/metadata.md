@@ -1,14 +1,15 @@
 ---
 title: Verwalten von Metadaten für digitale Assets
-description: Erfahren Sie mehr über die Metadatentypen und wie [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] Assets automatisch basierend auf ihren Metadaten organisiert und verarbeitet werden können.
+description: Erfahren Sie mehr über die Metadatentypen und die Verwaltung von Metadaten für Assets, um Assets einfach zu organisieren und zu verarbeiten.
 contentOwner: AG
+mini-toc-levels: 1
 feature: Tagging, Metadaten
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
-source-git-commit: a7a9a31364497ab67d805e45ba4fa03c927828ed
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
-source-wordcount: '2341'
-ht-degree: 55%
+source-wordcount: '2339'
+ht-degree: 53%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 55%
 
 [!DNL Adobe Experience Manager Assets] speichert Metadaten für jedes Asset. Damit können Assets einfacher kategorisiert und organisiert und bestimmte Assets leichter von Benutzern gefunden werden. Metadaten können aus in [!DNL Experience Manager Assets] hochgeladenen Dateien extrahiert werden. Damit lässt sich die Metadatenverwaltung in den kreativen Workflow integrieren. Da Sie Metadaten mit den Assets speichern und verwalten können, können Sie Assets basierend auf ihren Metadaten automatisch organisieren und verarbeiten.
 
-## Metadaten und ihre Herkunft {#how-to-edit-or-add-metadata}
+## Metadaten und Ursprung {#how-to-edit-or-add-metadata}
 
 Metadaten sind zusätzliche Informationen zum Asset, die durchsucht werden können. Sie wird zu Assets hinzugefügt und in [!DNL Experience Manager] beim Hochladen eines Assets verarbeitet. Sie können die vorhandenen Metadaten bearbeiten und vorhandenen Feldern neue Metadateneigenschaften hinzufügen. Organisationen benötigen gesteuertes und zuverlässiges Metadatenvokabular. Daher erlaubt [!DNL Experience Manager Assets] das On-Demand-Hinzufügen neuer Metadateneigenschaften nicht. Nur Administratoren und Entwickler können neue Eigenschaften oder Felder hinzufügen, die Metadaten enthalten. Benutzer können die vorhandenen Felder mit Metadaten füllen.
 
@@ -116,7 +117,7 @@ Der Metadatenimport ist asynchron und beeinträchtigt nicht die Systemleistung. 
 
 1. Um den korrekten Import zu überprüfen, navigieren Sie zur Seite [!UICONTROL Eigenschaften] eines Assets und überprüfen Sie die Werte in den Feldern.
 
-Um beim Importieren von Metadaten Datum und Zeitstempel hinzuzufügen, verwenden Sie das `YYYY-MM-DDThh:mm:ss.fff-00:00`-Format für Datum und Uhrzeit. Datum und Uhrzeit werden durch `T` getrennt angegeben. `hh` ist Stunden im 24-Stunden-Format, `fff` ist Nanosekunden und `-00:00` ist der Zeitzonenversatz. Zum Beispiel ist `2020-03-26T11:26:00.000-07:00` der 26. März 2020 um 11:26:00.000 Uhr (PST).
+Um beim Importieren von Metadaten Datum und Zeitstempel hinzuzufügen, verwenden Sie das `YYYY-MM-DDThh:mm:ss.fff-00:00`-Format für Datum und Uhrzeit. Datum und Uhrzeit werden durch `T` getrennt angegeben. `hh` ist Stunden im 24-Stunden-Format, `fff` ist Nanosekunden und `-00:00` ist der Zeitzonenversatz. Zum Beispiel ist `2020-03-26T11:26:00.000-07:00` der 26. März 2020 um 11:26:00.000 Uhr PST-Zeit.
 
 >[!CAUTION]
 >
@@ -178,7 +179,7 @@ Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Pr
 
 Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vorhandenes Videoprofil verfügt, das Sie nachträglich geändert haben. Informationen hierzu finden Sie unter [Erneutes Verarbeiten von Assets in einem Ordner nach Bearbeitung des zugehörigen Verarbeitungsprofils](processing-profiles.md#reprocessing-assets).
 
-### Anwenden von Metadatenprofilen auf Ordner aus der [!UICONTROL Profile]-Benutzeroberfläche {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
+### Anwenden von Metadatenprofilen auf Ordner über die Benutzeroberfläche [!UICONTROL Profile] {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
 Gehen Sie wie folgt vor, um das Metadatenprofil anzuwenden:
 
@@ -207,7 +208,7 @@ Wenn Sie ein Metadatenprofil aus einem Ordner entfernen, erben automatisch alle 
 
 Sie können ein Metadatenprofil aus einem Ordner im Menü **[!UICONTROL Tools]** oder aus dem Ordner **[!UICONTROL Eigenschaften]** entfernen.
 
-#### Entfernen von Metadatenprofilen aus Ordnern über die Benutzeroberfläche &quot;Profile&quot;{#removing-metadata-profiles-from-folders-via-profiles-user-interface}
+#### Entfernen von Metadatenprofilen aus Ordnern über die Benutzeroberfläche &quot;Profile&quot; {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
 1. Klicken Sie auf das [!DNL Experience Manager] -Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadatenprofile]**.
 1. Wählen Sie ein Metadatenprofil aus, das Sie aus einem oder mehreren Ordnern entfernen möchten.
@@ -215,7 +216,7 @@ Sie können ein Metadatenprofil aus einem Ordner im Menü **[!UICONTROL Tools]**
 
    Sie können bestätigen, dass das Metadatenprofil nicht länger auf einen Ordner angewendet wird, da der Name in diesem Fall nicht mehr unter dem Ordner angezeigt wird.
 
-#### Entfernen von Metadatenprofilen aus Ordnern über Eigenschaften {#removing-metadata-profiles-from-folders-via-properties}
+#### Entfernen von Metadatenprofilen aus Ordnern über &quot;Eigenschaften&quot; {#removing-metadata-profiles-from-folders-via-properties}
 
 1. Klicken Sie auf das [!DNL Experience Manager]-Logo und navigieren Sie zu **[!UICONTROL Assets]** und dann zu dem Ordner, aus dem Sie ein Metadatenprofil entfernen möchten.
 1. Klicken Sie im Ordner auf das Häkchen, um ihn auszuwählen, und klicken Sie dann auf **[!UICONTROL Eigenschaften]**.
