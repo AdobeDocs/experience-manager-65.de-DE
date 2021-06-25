@@ -13,10 +13,10 @@ docset: aem65
 legacypath: /deploy/platform/data-store-config
 feature: Konfiguration
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e7038e9c2949cb6326470d0248b640e576c7f919
 workflow-type: tm+mt
-source-wordcount: '3424'
-ht-degree: 71%
+source-wordcount: '3487'
+ht-degree: 70%
 
 ---
 
@@ -28,7 +28,7 @@ In Adobe Experience Manager (AEM) können Binärdaten unabhängig von den Inhalt
 
 Sowohl Daten- als auch Knotenspeicher können mithilfe der OSGi-Konfiguration eingerichtet werden. Jede OSGi-Konfiguration wird über eine eindeutige Benennung (Persistent Identifier, PID) referenziert.
 
-## Konfigurationsschritte  {#configuration-steps}
+## Konfigurationsschritte {#configuration-steps}
 
 Um sowohl Knoten- als auch Datenspeicher zu konfigurieren, führen Sie diese Schritte aus:
 
@@ -47,7 +47,7 @@ Um sowohl Knoten- als auch Datenspeicher zu konfigurieren, führen Sie diese Sch
 
 1. Starten Sie AEM.
 
-## Knotenspeicher-Konfigurationen  {#node-store-configurations}
+## Knotenspeicher-Konfigurationen {#node-store-configurations}
 
 >[!CAUTION]
 >
@@ -57,7 +57,7 @@ Um sowohl Knoten- als auch Datenspeicher zu konfigurieren, führen Sie diese Sch
 >
 >Sollten Sie diesen Artikel zur Vorbereitung auf ein Upgrade von einer **AEM 5.x**-Installation lesen, denken Sie daran, sich zuerst mit der Dokumentation zu [Upgrades](https://docs.adobe.com/content/docs/de/aem/6-0/deploy/upgrade.html) vertraut zu machen.
 
-### Knotenspeicher „Segment“  {#segment-node-store}
+### Knotenspeicher „Segment“ {#segment-node-store}
 
 Der Knotenspeicher „Segment“ ist die Basis der Adobe-TarMK-Implementierung in AEM 6. Zur Konfiguration wird die PID `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` verwendet.
 
@@ -85,7 +85,7 @@ tarmk.size=I"256"
 customBlobStore=B"true"
 ```
 
-#### Knotenspeicher „Dokument“{#document-node-store}
+#### Knotenspeicher „Dokument“ {#document-node-store}
 
 Der Knotenspeicher „Dokument“ ist die Basis der AEM-MongoMK-Implementierung. Es verwendet die `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService`* *PID. Folgende Konfigurationsoptionen sind verfügbar:
 
@@ -142,7 +142,7 @@ Die folgenden Konfigurationsoptionen sind verfügbar:
 >
 >Wenn freigegebene Dateidatenspeicher mit einem NAS gespeichert werden, setzen Sie ausschließlich hochperformante Geräte ein, um Leistungsprobleme zu vermeiden.
 
-## Amazon S3-Datenspeicher  {#amazon-s-data-store}
+## Amazon S3-Datenspeicher {#amazon-s-data-store}
 
 AEM kann so konfiguriert werden, dass Daten in Amazon Simple Storage Service (S3) gespeichert werden. Zur Konfiguration wird die PID `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` verwendet.
 
@@ -310,7 +310,7 @@ Um nicht binäre Replikationen mit S3 zu konfigurieren, sind die folgenden Schri
 
 1. Starten Sie alle Autor- und Veröffentlichungsinstanzen neu, um die Änderungen zu übernehmen.
 
-#### Erstellen von Clustern mit S3 und MongoDB  {#creating-a-cluster-using-s-and-mongodb}
+#### Erstellen von Clustern mit S3 und MongoDB {#creating-a-cluster-using-s-and-mongodb}
 
 1. Entpacken Sie die CQ-Schnellstartdatei mithilfe des folgenden Befehls:
 
@@ -335,7 +335,7 @@ Um nicht binäre Replikationen mit S3 zu konfigurieren, sind die folgenden Schri
 1. Wiederholen Sie die Schritte 1 bis 4 für die zweite AEM-Instanz.
 1. Starten Sie die zweite AEM-Instanz.
 
-#### Konfigurieren von freigegebenen Datenspeichern  {#configuring-a-shared-data-store}
+#### Konfigurieren von freigegebenen Datenspeichern {#configuring-a-shared-data-store}
 
 1. Erstellen Sie zunächst die Datenspeicher-Konfigurationsdatei in jeder Instanz, die zum Freigeben des Datenspeichers erforderlich ist:
 
@@ -463,11 +463,19 @@ Sie können die automatische Datenspeicherbereinigung wie folgt ausführen:
    >
    >Der Parameter `markOnly` gibt an, ob die Sweeping-Phase der automatischen Bereinigung ausgeführt wird oder nicht.
 
-## Automatische Bereinigung für freigegebene Datenspeicher {#data-store-garbage-collection-for-a-shared-data-store}
+## Automatische Bereinigung für freigegebene Datenspeicher  {#data-store-garbage-collection-for-a-shared-data-store}
 
 >[!NOTE]
 >
 >Wenn Sie die automatische Bereinigung für einen eingerichteten Cluster- oder freigegebenen Speicher (mit Mongo oder Segment-Tar) durchführen, werden im Protokoll möglicherweise Warnungen angezeigt, wonach bestimmte Blob-IDs nicht gelöscht werden können. Dies geschieht, weil Blob-IDs, die in einer vorherigen Speicherbereinigung gelöscht wurden, fälschlicherweise von anderen Cluster- oder freigegebenen Knoten referenziert werden, die keine Informationen über die ID-Löschungen haben. Daher wird bei der automatischen Bereinigung eine Warnung protokolliert, wenn versucht wird, eine bereits im vorherigen Durchgang gelöschte ID zu entfernen. Dieses Verhalten wirkt sich weder auf die Leistung noch auf die Funktionalität aus.
+
+>[!NOTE]
+> Wenn Sie ein freigegebenes Datenspeicher-Setup verwenden und die Speicherbereinigung deaktiviert ist, kann das Ausführen der Aufgabe Lucene-Binärdatei-Bereinigung plötzlich den verwendeten Speicherplatz erhöhen. Um dies zu vermeiden, müssen Sie BlobTracker für alle Autoren- und Veröffentlichungsinstanzen wie folgt deaktivieren:
+>
+> 1. Beenden Sie die AEM Instanz.
+> 2. Fügen Sie den Parameter `blobTrackSnapshotIntervalInSecs=L"0"` in der Datei `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` hinzu. Für diesen Parameter ist Oak 1.12.0, 1.10.2 oder höher erforderlich.
+> 3. Starten Sie die AEM-Instanz neu.
+
 
 In neueren AEM-Versionen kann die automatische Datenspeicherbereinigung auch in einem Datenspeicher durchgeführt werden, der von mehreren Repositorys genutzt wird. Für eine automatische Datenspeicherbereinigung in einem freigegebenen Datenspeicher führen Sie die folgenden Schritte aus:
 
