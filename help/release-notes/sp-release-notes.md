@@ -4,9 +4,9 @@ description: Spezifische Versionshinweise für  [!DNL Adobe Experience Manager] 
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 557615a019fedee1863e4d1970445fbfa17736cb
+source-git-commit: a0f47b4e0e9f38df208ed78fde63c70813fb7dcc
 workflow-type: tm+mt
-source-wordcount: '3805'
+source-wordcount: '3838'
 ht-degree: 5%
 
 ---
@@ -44,7 +44,7 @@ Die wichtigsten Funktionen und Verbesserungen, die in [!DNL Adobe Experience Man
 
 * Verbesserungen der Barrierefreiheit in [!DNL Experience Manager] [[!DNL Assets]](#assets-accessibility-6590) und [[!DNL Dynamic Media]](#accessibility-dm-6590).
 
-* Die intelligente Bildbearbeitung (Device Pixel Ratio) und die Optimierung der Netzwerkbandbreite ermöglichen eine effiziente Bereitstellung von Bildern mit der besten Qualität. auf Geräten mit hoher Auflösung und eingeschränkter Netzwerkbandbreite. Weitere Informationen und die Timeline finden Sie unter [Häufig gestellte Fragen zur intelligenten Bildbearbeitung](/help/assets/imaging-faq.md).
+* Die intelligente Bildbearbeitung (DSGVO (Device Pixel Ratio) und die Optimierung der Netzwerkbandbreite ermöglichen eine effiziente Bereitstellung von Bildern mit der besten Qualität. auf Geräten mit hoher Auflösung und eingeschränkter Netzwerkbandbreite. Weitere Informationen und die Timeline finden Sie unter [Häufig gestellte Fragen zur intelligenten Bildbearbeitung](/help/assets/imaging-faq.md).
 
 * [!DNL Dynamic Media] delivery (`fmt` URL-Modifikator) unterstützt das Bildformat AVIF der nächsten Generation (AV1-Bildformat). Weitere Informationen und die Timeline finden Sie unter [Image Serving and Rendering API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
@@ -115,6 +115,29 @@ Im Folgenden finden Sie eine Liste der Fehlerbehebungen in [!DNL Experience Mana
 
 ### [!DNL Assets] {#assets-6590}
 
+Die folgenden Verbesserungen am Benutzererlebnis werden in [!DNL Assets] vorgenommen:
+
+* Um Assets anzuzeigen, die nicht nach einer der Optionen [!UICONTROL Erstellen], [!UICONTROL Ändern] oder [!UICONTROL Name] sortiert wurden, bietet [!DNL Adobe Experience Manager] die Option [!UICONTROL Keine] innerhalb der Optionen [!UICONTROL Sortieren nach]. Die Option [!UICONTROL None] stellt sicher, dass die Assets in der Assets-Benutzeroberfläche (in der Karten-, Spalten- und Insights-Ansicht) in derselben Reihenfolge wie im JCR-Knoten vorhanden sind (NPR-36356).
+
+* Damit die E-Mail-ID in der AKP-API-Antwort von [!DNL Adobe Experience Manager] kleingeschrieben wird, wird eine optionale Einstellung eingeführt. als Benutzer [!DNL Adobe Asset Link] konnten Assets nicht einchecken, wenn ihre ID nicht alle Zeichen in Kleinbuchstaben enthielt. Beachten Sie, dass das Bedienfeld [!DNL Adobe Asset Link] die Antwort der AKP-API von [!DNL Adobe Experience Manager] verwendet (CQ-4317704).
+
+[!DNL Adobe Experience Manager] 6.5.9.0  [!DNL Assets] bietet die folgenden Verbesserungen der Barrierefreiheit.
+
+Der Kontrast (mit Hintergrund) des folgenden Texts und der folgenden Symbole wird verbessert, sodass Benutzer mit eingeschränkter Sehkraft und Farbwahrnehmung Folgendes verstehen können:
+
+* Asset-Titel auf der Seite [!UICONTROL Eigenschaften] (NPR-35967).
+* Sternchen-Bewertungssymbole in den Abschnitten [!UICONTROL Bewertung] an verschiedenen Stellen (NPR-36009).
+* Text in der Asset- und Ordnerkartenansicht (NPR-35966).
+* Platzhaltertext in der Ansicht [!UICONTROL Timeline] (NPR-35965).
+* Asset-Namen in den Asset-Suchergebnissen (NPR-35964).
+* Platzhaltertext im Dialogfeld [!UICONTROL Linkfreigabe] (NPR-35963).
+* [!UICONTROL Metadaten],  [!UICONTROL Status] und   anderer Text in der   Liste im Dialogfeld  [!UICONTROL Anzeigeeinstellungen ] (NPR-35910).
+*  Standort und  [!UICONTROL Typ für ] Platzhaltertexte in der globalen Suche (NPR-35909).
+* Erweitern und reduzieren Sie die Symbole unter [!UICONTROL Inhaltsstruktur] (NPR-35908).
+* Der Text [!UICONTROL Assets] auf der Seite, auf der Asset-Ordner angezeigt werden (NPR-35905).
+* Text in [!UICONTROL Asset-Metadaten], [!UICONTROL Nutzungsstatistiken] innerhalb der Option [!UICONTROL Überblick] auf der Asset-Detailseite (NPR-35904).
+* Text für Tastaturbefehle für die Optionen [!UICONTROL properties] und [!UICONTROL edit] auf der Seite mit Asset-Details (NPR-35904).
+
 [!DNL Adobe Experience Manager] 6.5.9.0  [!DNL Assets] behebt die folgenden Probleme.
 
 * Die Tags, die aus einem Tag-Auswahlelement in einem [!UICONTROL Ordner-Metadatenschema] -Formular erstellt wurden, werden nicht gespeichert (NPR-36119).
@@ -141,59 +164,12 @@ Im Folgenden finden Sie eine Liste der Fehlerbehebungen in [!DNL Experience Mana
 
 * DAM-Ordner können nicht gelöscht oder verschoben werden und eine Ausnahme wird protokolliert (NPR-35942).
 
-#### Verbesserungen in Assets {#assets-enhancements}
-
-* Die Option [!UICONTROL Keine] wurde in der Karten-, Spalten- und Insight-Ansicht eingeführt, um Assets in der Reihenfolge zu sortieren, in der sie im JCR-Knoten gespeichert sind (NPR-36356).
-
-* Eine Option wird hinzugefügt, um die E-Mail-ID in der API-Antwort von Adobe Experience Manager in Kleinbuchstaben hinzuzufügen (CQ-4317704).
-
-#### Verbesserungen der Barrierefreiheit in Assets {#assets-accessibility-6590}
-
-[!DNL Adobe Experience Manager] 6.5.9.0  [!DNL Assets] bietet die folgenden Verbesserungen der Barrierefreiheit.
-
-Der Kontrast (mit Hintergrund) des folgenden Texts und der folgenden Symbole wird verbessert, sodass Benutzer mit eingeschränkter Sehkraft und Farbwahrnehmung Folgendes verstehen können:
-
-* Asset-Titel auf der Seite [!UICONTROL Eigenschaften] (NPR-35967).
-* Sternbewertungssymbole in den Abschnitten [!UICONTROL Bewertung] an verschiedenen Stellen (NPR-36009).
-* Text in der Asset- und Ordnerkartenansicht (NPR-35966).
-* Platzhaltertext in der Ansicht [!UICONTROL Timeline] (NPR-35965).
-* Asset-Namen in den Asset-Suchergebnissen (NPR-35964).
-* Platzhaltertext im Dialogfeld [!UICONTROL Linkfreigabe] (NPR-35963).
-* [!UICONTROL Metadaten],  [!UICONTROL Status] und   anderer Text in der   Liste im Dialogfeld  [!UICONTROL Anzeigeeinstellungen ] (NPR-35910).
-*  Standort und  [!UICONTROL Typ für ] Platzhaltertexte in der globalen Suche (NPR-35909).
-* Ein- und Ausblenden von Symbolen unter [!UICONTROL Inhaltsstruktur] (NPR-35908).
-* den Text [!UICONTROL Assets] auf der Seite, auf der Asset-Ordner angezeigt werden (NPR-35905).
-* Text in [!UICONTROL Asset-Metadaten], [!UICONTROL Nutzungsstatistiken] innerhalb der Option [!UICONTROL Überblick] auf der Asset-Detailseite (NPR-35904).
-* Text für Tastaturbefehle für die Optionen [!UICONTROL properties] und [!UICONTROL edit] auf der Asset-Detailseite (NPR-35904).
-
 ### [!DNL Dynamic Media] {#dynamic-media-6590}
-
-Adobe Experience Manager 6.5.9.0 Assets behebt die folgenden Probleme in [!DNL Dynamic Media]:
-
-* Benutzerdefinierte Viewer-Vorgaben und CSS werden nicht nach [!DNL Dynamic Media] repliziert, wenn [!DNL Dynamic Media] selektiv aktiviert und durch [default](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=en#troubleshoot-dm-config) deaktiviert wird (NPR-36232).
-
-* Beim Versuch, Videoausgabeformate auf der Seite mit Asset-Details anzuzeigen, werden die Videos langsam geladen (CQ-4320122).
-
-* Die Browserseite reagiert nicht und verlangsamt sich beim Hochladen von mehr als 200 Assets mit aktivierter Funktion &quot;Duplikat-Asset-Erkennung&quot;. (CQ-4319633)
-
-* Wenn ein Panoramabild-Asset auf einer Seite zur Panoramedienkomponente hinzugefügt wird, wird ein Fehler &quot;Uncaught Reference&quot;protokolliert (CQ-4317666).
-
-* Wenn der interaktive Medien-Viewer mit Experience Fragment implementiert ist, wird das Experience Fragment nicht vom Publisher aus geöffnet und ein Fehler wird protokolliert. (CQ-4317655)
-
-* Die Option In Dynamic Media veröffentlichen ist in der Schnellveröffentlichung in der Metadaten-Editor-Ansicht nicht verfügbar (CQ-4317199).
-
-* Site-Autoren mit schreibgeschützten Berechtigungen können die Funktion für das smarte Zuschneiden auf Assets verwenden und die Ausgabedarstellungen für das smarte Zuschneiden bearbeiten. Benutzer mit schreibgeschützten Berechtigungen dürfen jedoch keine Asset-Eigenschaften in der Sites-Entwicklungsinstanz bearbeiten können (CQ-4316450).
-
-* Videoanmerkungen funktionieren nicht für Ordnerpfade [!DNL where Dynamic] Die Medienkonfiguration ist nicht aktiviert, auch wenn die [!DNL Experience Manager]-Instanz im [!DNL Dynamic Media]-Modus eingerichtet ist (CQ-4314950).
-
-* Wenn der Asset-Titel Doppelbyte-, Multibyte-, High ASCII-, Kyrillisch-, Surrogate-Paar-, Hebräisch-, Arabisch- und GB18030-Zeichen aufweist, haben beim Veröffentlichen in Dynamic Media die Asset-Titel ein Fragezeichen (?) (CQ-4311872).
-
-#### Verbesserungen der Barrierefreiheit in Dynamic Media {#accessibility-dm-6590}
 
 [!DNL Adobe Experience Manager] 6.5.9.0  [!DNL Assets] bietet die folgenden Verbesserungen der Barrierefreiheit in  [!DNL Dynamic Media].
 
-* Wenn Sie das Dialogfeld zum Hinzufügen von Assets mithilfe von Tastaturbefehlen im Bildset-Editor öffnen:
-   * Bildschirmlesehilfen beschreiben, dass das Dialogfeld geöffnet wird.
+* Wenn Sie das Dialogfeld zum Hinzufügen von Assets mithilfe von Tastaturbefehlen im Editor [!UICONTROL Bildset] öffnen:
+   * Bildschirmlesehilfen beschreiben, dass das Dialogfeld geöffnet ist.
    * Der Tastaturfokus wechselt beim Öffnen zum Dialogfeld.
    * Der Tastaturfokus wechselt zurück zur Option Asset hinzufügen , wenn das Dialogfeld geschlossen wird (CQ-4312134).
 
@@ -218,6 +194,26 @@ Adobe Experience Manager 6.5.9.0 Assets behebt die folgenden Probleme in [!DNL D
 * Visuelles Sternchen, um ein Pflichtfeld zu kennzeichnen, wird jetzt im Feld Titel des Assets im Bildset-Editor bereitgestellt und Sprachausgaben geben die erforderlichen Informationen für das Feld an (CQ-4290712).
 
 * Bildschirmlesehilfen können jetzt auf die Asset-Detailseite zugreifen und den Zweck verschiedener interaktiver Optionen in Viewern beschreiben (CQ-4290708).
+
+Adobe Experience Manager 6.5.9.0 Assets behebt die folgenden Probleme in [!DNL Dynamic Media]:
+
+* Benutzerdefinierte Viewer-Vorgaben und CSS werden nicht nach [!DNL Dynamic Media] repliziert, wenn [!DNL Dynamic Media] selektiv aktiviert und durch [default](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=en#troubleshoot-dm-config) deaktiviert wird (NPR-36232).
+
+* Beim Versuch, Videoausgabeformate auf der Seite mit Asset-Details anzuzeigen, werden die Videos langsam geladen (CQ-4320122).
+
+* Die Browserseite reagiert nicht und verlangsamt sich beim Hochladen von mehr als 200 Assets mit aktivierter Funktion &quot;Duplikat-Asset-Erkennung&quot;. (CQ-4319633)
+
+* Wenn ein Panoramabild-Asset auf einer Seite zur Panoramedienkomponente hinzugefügt wird, wird ein Fehler &quot;Uncaught Reference&quot;protokolliert (CQ-4317666).
+
+* Wenn der interaktive Medien-Viewer mit Experience Fragment implementiert ist, wird das Experience Fragment nicht vom Publisher aus geöffnet und ein Fehler wird protokolliert. (CQ-4317655)
+
+* [!UICONTROL Die Option &quot;In Dynamic ] Media veröffentlichen&quot;ist nicht in den Optionen für  [!UICONTROL schnelle ] Veröffentlichung auf der Seite &quot;  Eigenschaften&quot;verfügbar (CQ-4317199).
+
+* Site-Autoren mit schreibgeschützten Berechtigungen können die Funktion für smartes Zuschneiden auf Assets verwenden und die Ausgabedarstellungen für smarte Zuschnitte bearbeiten (CQ-4316450).
+
+* Videoanmerkungen funktionieren nicht für Ordnerpfade, bei denen die [!DNL Dynamic Media]-Konfiguration nicht aktiviert ist, selbst wenn die [!DNL Experience Manager]-Instanz im [!DNL Dynamic Media]-Modus eingerichtet ist (CQ-4314950).
+
+* Wenn der Asset-Titel Doppelbyte-, Multibyte-, High ASCII-, Kyrillisch-, Surrogate-Paar-, Hebräisch-, Arabisch- und GB18030-Zeichen aufweist, haben beim Veröffentlichen in Dynamic Media die Asset-Titel ein Fragezeichen (?) (CQ-4311872).
 
 ### Plattform {#platform-6590}
 
