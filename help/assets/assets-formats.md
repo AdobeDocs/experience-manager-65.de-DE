@@ -2,10 +2,11 @@
 title: Unterstützte Dateiformate und MIME-Typen
 description: Von [!DNL Assets] and [!DNL Dynamic Media] unterstützte Dateiformate und MIME-Typen sowie die für jedes Format unterstützten Funktionen.
 contentOwner: AG
+mini-toc-levels: 1
 role: Business Practitioner, Administrator
 feature: Asset-Management,Ausgabeformate
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 61%
@@ -135,11 +136,11 @@ Die Imaging Transcoding Library unterstützt Dateien in den Formaten JPG/JPEG, P
 
 Siehe [Imaging Transcoding Library](imaging-transcoding-library.md).
 
-## Unterstützte Camera Raw {#supported-camera-raw}
+## Unterstützte Kamera-Raw {#supported-camera-raw}
 
 Die [!DNL Adobe Camera Raw]-Bibliothek ermöglicht [!DNL Assets] die Aufnahme von Rohbildern. Siehe [Camera Raw Unterstützung](camera-raw.md).
 
-## Unterstützte [!DNL Assets] Dokumentenformate {#supported-document-formats}
+## Unterstützte Dokumentenformate [!DNL Assets] {#supported-document-formats}
 
 Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt:
 
@@ -203,7 +204,7 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Funktionen Folgendes:
 | WMV | verwalten | verwalten | - | * | * |
 | SWF | verwalten | verwalten | - | - | - |
 
-## Unterstützte Eingabevideoformate in Dynamic Media zum Transkodieren von {#supported-input-video-formats-for-dynamic-media-transcoding}
+## Unterstützte Eingabevideoformate in Dynamic Media zum Transkodieren {#supported-input-video-formats-for-dynamic-media-transcoding}
 
 | Videodateierweiterung | Container | Empfohlene Video-Codecs | Nicht unterstützte Video-Codecs |
 |---|---|---|---|
