@@ -4,14 +4,14 @@ description: Spezifische Versionshinweise für  [!DNL Adobe Experience Manager] 
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 101cbd0d06d370da315e1579a8c2f274a6138b9a
+source-git-commit: 557615a019fedee1863e4d1970445fbfa17736cb
 workflow-type: tm+mt
-source-wordcount: '3857'
-ht-degree: 4%
+source-wordcount: '3805'
+ht-degree: 5%
 
 ---
 
-# [!DNL Adobe Experience Manager] 6.5 Service Pack - Versionshinweise  {#aem-service-pack-release-notes}
+# [!DNL Adobe Experience Manager] 6.5 Service Pack - Versionshinweise {#aem-service-pack-release-notes}
 
 ## Versionsinformationen {#release-information}
 
@@ -22,7 +22,7 @@ ht-degree: 4%
 | Datum | 27. Mai 2021 |
 | Download-URL | [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.9-1.0.zip) |
 
-## Was ist enthalten in [!DNL Adobe Experience Manager] 6.5.9.0 {#what-s-included-in-aem}
+## Was ist in [!DNL Adobe Experience Manager] 6.5.9.0 enthalten? {#what-s-included-in-aem}
 
 [!DNL Adobe Experience Manager] 6.5.9.0 enthält neue Funktionen, wichtige von Kunden angeforderte Verbesserungen sowie Verbesserungen hinsichtlich Leistung, Stabilität und Sicherheit, die seit der Veröffentlichung der Version 6.5 im April 2019 veröffentlicht wurden. Das Service Pack ist auf [!DNL Adobe Experience Manager] 6.5 installiert.
 
@@ -30,7 +30,7 @@ Die wichtigsten Funktionen und Verbesserungen, die in [!DNL Adobe Experience Man
 
 * [!DNL Experience Manager Sites] Die Dynamic Media Foundation-Komponente ermöglicht jetzt die Aktivierung oder Deaktivierung der Optimierung für Geräte mit höherer Auflösung bei der Verwendung von responsiven Bildvorgaben oder smartem Zuschneiden.
 
-* Um die Leistung zu verbessern, wird die Bedingung hidden=false von der JCR-Abfrage in den QueryBuilder-Auswerter verschoben. Um sicherzustellen, dass ein ausgeblendetes Prädikat nach der Änderung funktioniert, prüft Experience Manager, ob kein ausgeblendeter Ordner auf der Benutzeroberfläche angezeigt wird.
+* Um die Leistung zu verbessern, wird die Bedingung `hidden=false` von der JCR-Abfrage in den Auswerter [!UICONTROL QueryBuilder] verschoben. Um zu überprüfen, ob ein ausgeblendetes Prädikat nach der Änderung funktioniert, überprüft [!DNL Experience Manager], ob ausgeblendete Ordner nicht angezeigt werden.
 
 * Möglichkeit, gelöschte Seiten und Baume auf einer [!DNL Experience Manager Sites]-Seite wiederherzustellen.
 
@@ -42,37 +42,11 @@ Die wichtigsten Funktionen und Verbesserungen, die in [!DNL Adobe Experience Man
 
 * Vorkommen von Namen, die Hongkong, Macau und Taiwan betreffen, werden gemäß den neuen Benennungskonventionen für chinesische Gebietsschemata und Regionen aktualisiert.
 
-* Verbesserungen der Barrierefreiheit in [!DNL Experience Manager] [Assets](#assets-accessibility-6590) und [Dynamic Media](#accessibility-dm-6590).
+* Verbesserungen der Barrierefreiheit in [!DNL Experience Manager] [[!DNL Assets]](#assets-accessibility-6590) und [[!DNL Dynamic Media]](#accessibility-dm-6590).
 
-* Die intelligente Bildbearbeitung (Device Pixel Ratio) und die Optimierung der Netzwerkbandbreite ermöglichen eine effiziente Bereitstellung von Bildern mit der besten Qualität. auf Geräten mit hoher Auflösung angezeigt und die Netzwerkbandbreite eingeschränkt wird. Weitere Informationen finden Sie unter [Häufig gestellte Fragen zur intelligenten Bildbearbeitung](/help/assets/imaging-faq.md).
+* Die intelligente Bildbearbeitung (Device Pixel Ratio) und die Optimierung der Netzwerkbandbreite ermöglichen eine effiziente Bereitstellung von Bildern mit der besten Qualität. auf Geräten mit hoher Auflösung und eingeschränkter Netzwerkbandbreite. Weitere Informationen und die Timeline finden Sie unter [Häufig gestellte Fragen zur intelligenten Bildbearbeitung](/help/assets/imaging-faq.md).
 
-   >[!NOTE]
-   >
-   >Die Veröffentlichungszeitleiste für die oben genannten Verbesserungen der intelligenten Bildbearbeitung lautet:
-   >
-   >* Nordamerika 24. Mai 2021 in NA,
-      >
-      >
-   * Europa, Naher Osten und Afrika, 25. Juni 2021,
-      >
-      >
-   * Asien-Pazifik 19. Juli 2021.
-
-
-* Neue Unterstützung für AVIF-Bildformat der nächsten Generation in der Dynamic Media-Bereitstellung (Fmt-URL-Modifikator). Weitere Informationen finden Sie unter [Image Serving and Rendering api fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
-
-   >[!NOTE]
-   >
-   >Die Veröffentlichungszeitleiste für die AVIF-Unterstützung lautet:
-   >
-   >* Nordamerika 10. Mai 2021,
-      >
-      >
-   * Europa, Naher Osten und Afrika 24. Mai 2021,
-      >
-      >
-   * Asien-Pazifik 24. Juni 2021.
-
+* [!DNL Dynamic Media] delivery (`fmt` URL-Modifikator) unterstützt das Bildformat AVIF der nächsten Generation (AV1-Bildformat). Weitere Informationen und die Timeline finden Sie unter [Image Serving and Rendering API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
 * Möglichkeit, eine Benachrichtigungs-E-Mail mit dem Workflow-Schritt [!UICONTROL Aufgabe zuweisen] an eine Gruppe zu senden.
 
@@ -376,7 +350,7 @@ Informationen zu Sicherheitsupdates finden Sie auf der [[!DNL Experience Manager
 >
 >Adobe rät davon ab, das [!DNL Adobe Experience Manager] 6.5.9.0-Paket zu entfernen oder zu deinstallieren.
 
-### Installieren Sie das Service Pack {#install-service-pack}
+### Service Pack installieren {#install-service-pack}
 
 Gehen Sie wie folgt vor, um das Service Pack auf einer [!DNL Adobe Experience Manager] 6.5-Instanz zu installieren:
 
@@ -418,7 +392,7 @@ B. Verwenden Sie die [HTTP-API von Package Manager](/help/sites-administering/pa
 
 Informationen zu den Plattformen, die für diese Version zertifiziert sind, finden Sie unter [Technische Anforderungen](/help/sites-deploying/technical-requirements.md).
 
-### Installieren des Adobe Experience Manager Forms Add-On-Pakets {#install-aem-forms-add-on-package}
+### Adobe Experience Manager Forms Add-On-Paket installieren {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
@@ -494,7 +468,7 @@ Um Ihre Laufzeitkopie abzurufen, empfiehlt Adobe, die Entwurfszeitkopie des benu
    * Hotspot in einem interaktiven Dynamic Media-Bild ist bei der Vorschau des Assets über den Viewer für Shop-fähige Banner nicht sichtbar.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Zeitüberschreitung, die darauf wartet, dass die Reg-Änderung abgeschlossen und die Registrierung aufgehoben wird.
 
-## OSGi-Pakete und Inhaltspakete enthalten {#osgi-bundles-and-content-packages-included}
+## OSGi-Bundles und Inhaltspakete enthalten {#osgi-bundles-and-content-packages-included}
 
 In den folgenden Textdokumenten werden die OSGi-Pakete und Inhaltspakete aufgelistet, die in [!DNL Experience Manager] 6.5.9.0 enthalten sind:
 
