@@ -4,9 +4,9 @@ description: Neue Funktionen in [!DNL Experience Manager] 6.5 Service Pack 9
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 29e045ef3080866a94e0925bc0c176a91092c729
+source-git-commit: 557615a019fedee1863e4d1970445fbfa17736cb
 workflow-type: tm+mt
-source-wordcount: '3726'
+source-wordcount: '3680'
 ht-degree: 5%
 
 ---
@@ -21,14 +21,14 @@ In diesem Artikel werden die Funktionen des neuesten Service Packs, die [Schlüs
 
 >[!NOTE]
 >
->Ab AEM Service Pack 9 können [!DNL Experience Manager] -Kunden ihre [!DNL Experience Manager] -Anwendungen mit Distributionen der [!DNL Azul Zulu] -Builds von OpenJDK entwickeln und betreiben, die standardkonform mit Java SE sind.
+>Ab [!DNL Experience Manager] Service Pack 9 können [!DNL Experience Manager] -Kunden ihre [!DNL Experience Manager] -Anwendungen mit Distributionen der [!DNL Azul Zulu] -Builds von OpenJDK entwickeln und betreiben, die standardkonform mit Java SE sind.
 >Die Unterstützung für die [!DNL Azul Zulu]-JDKs wird auch von Adobe für [!DNL Experience Manager]-Kunden bereitgestellt.
 >Sie können die entsprechenden Versionen der [!DNL Azul Zulu] JDKs von [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) herunterladen.
 >Die Nutzungsrechte für die Oracle Java-Technologie, wie sie von Adobe verteilt werden, laufen Ende Dezember 2022 aus. [!DNL Experience Manager] -Kunden wird empfohlen, die Verwendung für die  [!DNL Azul Zulu] JDKs bis spätestens zu diesem Datum zu planen und zu implementieren. Weitere Informationen zur Verwendung der [!DNL Oracle Java]-Technologie und der [!DNL Azul Zulu]-Technologie finden Sie in den zugehörigen [FAQs](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en).
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
-### Möglichkeit, gelöschte Seiten und Baum wiederherzustellen {#ability-to-restore-pages-tree}
+### Möglichkeit, gelöschte Seiten und Baume wiederherzustellen {#ability-to-restore-pages-tree}
 
 Sie können jetzt die gelöschten Seiten und die gesamte Baumansicht auf einer [!DNL Experience Manager Sites] -Seite wiederherstellen.
 
@@ -36,49 +36,23 @@ Sie können jetzt die gelöschten Seiten und die gesamte Baumansicht auf einer [
 
 * Die Benennung chinesischer Gebietsschemata und Regionen in Bezug auf Hongkong, Macau und Taiwan wurde aktualisiert, um sie mit den sozialen und politischen Ansichten Chinas in Einklang zu bringen.
 
-* Es wird eine optionale Konfiguration eingeführt, um die E-Mail-IDs in der Antwort der AKP-API von [!DNL Adobe Experience Manager] in Kleinbuchstaben zu schreiben.
+* Eine optionale Konfiguration wird eingeführt, um die Groß-/Kleinschreibung in den E-Mail-IDs in der Antwort der AKP-API von [!DNL Adobe Experience Manager] zu ändern.
 
-   ![Konfiguration, um die E-Mail-IDs in der AKP-Antwort von AEM in Kleinbuchstaben zu schreiben](assets/email-lowcase-config.png)
+   ![Konfiguration zum Ändern der E-Mail-IDs in Kleinbuchstaben in der AKP-Antwort von  [!DNL Experience Manager]](assets/email-lowcase-config.png)
 
-* Der Kontrast (mit Hintergrund) von Text und Symbolen an verschiedenen Stellen wird gemäß WCAG verbessert, um ihn für Benutzer mit eingeschränkter Sehkraft und Farbwahrnehmung verfügbar zu machen. Weitere Informationen finden Sie unter [Verbesserungen der Barrierefreiheit in Assets](sp-release-notes.md#assets-accessibility-6590).
+* Der Kontrast von Text und Symbolen gegenüber dem Hintergrund wird für verschiedene Funktionen verbessert. Diese Implementierung der WCAG-Richtlinien macht [!DNL Assets] für Benutzer mit eingeschränkter Sehkraft und Farbwahrnehmung leichter zugänglich. Siehe [Verbesserungen der Barrierefreiheit in [!DNL Assets]](sp-release-notes.md#assets-accessibility-6590).
 
-### Dynamic Media {#assets-dynamic-media}
+### [!DNL Dynamic Media] {#assets-dynamic-media}
 
-* [Dynamische Medien sind ](sp-release-notes.md#assets-accessibility-6590) leichter zugänglich durch:
+* [[!DNL Dynamic Media] ist leichter ](sp-release-notes.md#assets-accessibility-6590) zugänglich durch:
 
    * Benutzerfreundlichkeit mit Tastaturbefehlen.
    * Kontrast (mit Hintergrund) von Text, Platzhaltertext und Steuerelementen in verschiedenen Editoren.
    * Barrierefreiheit und Erzählung durch Bildschirmlesehilfen.
 
-* Die intelligente Bildbearbeitung (Device Pixel Ratio) und die Optimierung der Netzwerkbandbreite ermöglichen eine effiziente Bereitstellung von Bildern mit der besten Qualität. auf Geräten mit hoher Auflösung und eingeschränkter Netzwerkbandbreite. Weitere Informationen finden Sie unter [Häufig gestellte Fragen zur intelligenten Bildbearbeitung](/help/assets/imaging-faq.md).
+* Die intelligente Bildbearbeitung (Device Pixel Ratio) und die Optimierung der Netzwerkbandbreite ermöglichen eine effiziente Bereitstellung von Bildern mit der besten Qualität. auf Geräten mit hoher Auflösung und eingeschränkter Netzwerkbandbreite. Weitere Informationen und die Timeline finden Sie unter [Häufig gestellte Fragen zur intelligenten Bildbearbeitung](/help/assets/imaging-faq.md).
 
-   >[!NOTE]
-   >
-   >Die Veröffentlichungszeitleiste für die oben genannten Verbesserungen der intelligenten Bildbearbeitung lautet:
-   >
-   >* Nordamerika 24. Mai 2021 in NA,
-      >
-      >
-   * Europa, der Nahe Osten und Afrika, 25. Juni 2021,
-      >
-      >
-   * Asien-Pazifik 19. Juli 2021.
-
-
-* Neue Unterstützung für AVIF-Bildformat der nächsten Generation in der Dynamic Media-Bereitstellung (Fmt-URL-Modifikator). Weitere Informationen finden Sie unter [Image Serving and Rendering api fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
-
-   >[!NOTE]
-   >
-   >Die Veröffentlichungszeitleiste für die AVIF-Unterstützung lautet:
-   >
-   >* Nordamerika 10. Mai 2021,
-      >
-      >
-   * Europa, der Nahe Osten und Afrika 24. Mai 2021,
-      >
-      >
-   * Asien-Pazifik 24. Juni 2021.
-
+* [!DNL Dynamic Media] delivery (`fmt` URL-Modifikator) unterstützt jetzt das Bildformat AVIF der nächsten Generation (AV1-Bildformat). Weitere Informationen und die Timeline finden Sie unter [Image Serving and Rendering API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
@@ -90,19 +64,19 @@ Sie können jetzt die gelöschten Seiten und die gesamte Baumansicht auf einer [
 
 Sie können jetzt Anwendungen mit [!DNL Azul Zulu]-Builds von [!DNL OpenJDK] für [!DNL Experience Manager Forms] in OSGi-Bereitstellungen entwickeln und betreiben. Weitere Informationen finden Sie unter [Experience Manager 6.5 Service Pack 9 - Versionshinweise](sp-release-notes.md) und [Technische Anforderungen](../sites-deploying/technical-requirements.md).
 
-### Möglichkeit zum Senden einer Benachrichtigungs-E-Mail an eine Gruppe mithilfe von [!UICONTROL Aufgabe zuweisen] {#group-notification-email}
+### Möglichkeit, eine Benachrichtigungs-E-Mail mit [!UICONTROL Aufgabe zuweisen] an eine Gruppe zu senden {#group-notification-email}
 
 Sie können jetzt mit dem Workflow-Schritt Aufgabe zuweisen eine Benachrichtigungs-E-Mail an eine Gruppen-E-Mail-Adresse senden.
 
-### Möglichkeit zum Abrufen eines Entwurfs für interaktive Kommunikation nach Änderung der Quelle Interaktive Kommunikation {#retrieve-draft-after-source-modifications}
+### Möglichkeit zum Abrufen eines Entwurfs für eine interaktive Kommunikation nach der Änderung der Quelle für interaktive Kommunikation {#retrieve-draft-after-source-modifications}
 
 Sie können jetzt eine interaktive Kommunikation abrufen, die als Entwurf gespeichert wurde, nachdem Sie Änderungen an der Quell-Interaktiven Kommunikation vorgenommen haben.
 
-### Festlegen des benutzerdefinierten Domänennamens für das Laden, Rendern und Überprüfen des reCAPTCHA-Dienstes {#set-custom-domain-name-recaptcha}
+### Festlegen eines benutzerdefinierten Domänennamens für das Laden, Rendern und Überprüfen des reCAPTCHA-Dienstes {#set-custom-domain-name-recaptcha}
 
-Der reCAPTCHA-Dienst verwendet `https://www.recaptcha.net/` als Standard-Domain. Sie können jetzt die Einstellungen ändern, um `https://www.google.com/` oder einen beliebigen benutzerdefinierten Domänennamen zum Laden, Rendern und Überprüfen des reCAPTCHA-Dienstes festzulegen.
+Der reCAPTCHA-Service verwendet `https://www.recaptcha.net/` als Standard-Domain. Sie können jetzt die Einstellungen ändern, um `https://www.google.com/` oder einen beliebigen benutzerdefinierten Domänennamen zum Laden, Rendern und Überprüfen des reCAPTCHA-Dienstes festzulegen.
 
-### Verbesserungen der Eingabedaten für [!UICONTROL Formulardatenmodelldienst aufrufen] Workflow-Schritt {#input-data-enhancements-fdm}
+### Verbesserungen der Eingabedaten für den Workflow-Schritt [!UICONTROL Formulardatenmodelldienst aufrufen] {#input-data-enhancements-fdm}
 
 Wenn Sie ein Formulardatenmodell und einen Dienst im Workflow-Schritt [!UICONTROL Formulardatenmodelldienst aufrufen] auswählen, geben Sie Dienstargumente für Eingabedaten an.
 
@@ -120,7 +94,7 @@ Sie können einem Datensatzdokument jetzt Seitenumbrüche hinzufügen. Wenn ein 
 
 ### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
 
-#### Sortieren Sie die für das Rollout verfügbaren Live Copy-Seiten (6.5.8.0) {#sort-livecopy-pages}
+#### Sortieren Sie die für das Rollout verfügbaren Live Copy-Seiten (6.5.8.0). {#sort-livecopy-pages}
 
 Sie können die für den Rollout verfügbaren Live Copy-Seiten nun mithilfe der Eigenschaften [!UICONTROL Name], [!UICONTROL Letztes Änderungsdatum] und [!UICONTROL Letztes Rollout-Datum] sortieren. Das [!UICONTROL letzte Rollout-Datum] für eine Seite ist eine neue Eigenschaft, die in dieser Version eingeführt wurde.
 
@@ -184,7 +158,7 @@ Sie können jetzt Stile im Komponentendialogfeld mithilfe des erweiterten Stilsy
 
 * Benutzer können digitale Assets in der Karten- und Spaltenansicht (6.5.7.0) sortieren.
 
-#### Verbesserungen der Barrierefreiheit (6.5.6.0) {#accessibility-assets-6560}
+#### Verbesserungen bei der Barrierefreiheit (6.5.6.0) {#accessibility-assets-6560}
 
 * **Verbesserter Fokus der Benutzeroberfläche während der Tastaturnavigation**, z. B. auf:
 
@@ -240,13 +214,13 @@ Die Unterstützung für 3D-Bilder in [!DNL Dynamic Media] ermöglicht es Kunden,
 
 * Veröffentlichen und zeigen Sie allgemeine 3D-Assets auf [!DNL Experience Manager Sites]-Seiten mithilfe der WCM-Komponente [!DNL Sites] an.
 
-#### [!DNL Experience Manager Assets] mit [!DNL Brand Portal] (6.5.4.0) {#configure-assets-bp} konfigurieren
+#### [!DNL Experience Manager Assets] mit [!DNL Brand Portal] konfigurieren (6.5.4.0) {#configure-assets-bp}
 
 Der Autorisierungskanal zwischen [!DNL Experience Manager Assets] und [!DNL Brand Portal] wird geändert. Zuvor wurde [!DNL Brand Portal] in der klassischen Benutzeroberfläche über das alte OAuth-Gateway konfiguriert, das mithilfe des JWT-Token-Austauschs ein IMS-Zugriffstoken zur Autorisierung abruft. [!DNL Experience Manager Assets] ist jetzt mit  [!DNL Brand Portal] über konfiguriert,  [!DNL Adobe I/O]das ein IMS-Token zur Autorisierung Ihres  [!DNL Brand Portal] Mandanten abruft.
 
 Die Schritte zum Konfigurieren von [!DNL Experience Manager Assets] mit [!DNL Brand Portal] unterscheiden sich je nach Ihrer [!DNL Experience Manager]-Version und davon, ob Sie zum ersten Mal eine Konfiguration durchführen oder die vorhandenen Konfigurationen aktualisieren. Weitere Informationen finden Sie unter [Konfigurieren von Experience Manager Assets mit Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) .
 
-#### Verbesserungen der Barrierefreiheit (6.5.4.0) {#accessibility-enhancements-6540}
+#### Verbesserungen bei der Barrierefreiheit (6.5.4.0) {#accessibility-enhancements-6540}
 
 [!DNL Experience Manager Assets] umfasst die folgenden Verbesserungen der Barrierefreiheit:
 
@@ -295,11 +269,11 @@ Smartes Zuschneiden für Video – eine optionale Funktion, die in Videoprofilen
 
 ### Experience Manager Forms {#aem-forms-previous-service-packs}
 
-#### CAPTCHA-Komponente in einem adaptiven Formular basierend auf Regeln anzeigen oder ausblenden (6.5.8.0) {#show-hide-captcha}
+#### CAPTCHA-Komponente in einem adaptiven Formular basierend auf Regeln ein- oder ausblenden (6.5.8.0) {#show-hide-captcha}
 
 Sie können CAPTCHA jetzt entweder bei der Übermittlung des adaptiven Formulars oder bei der Benutzeraktion überprüfen. Sie können auch Bedingungen hinzufügen, um CAPTCHA bei einer Benutzeraktion zu validieren und die CAPTCHA-Komponente in einem adaptiven Formular basierend auf Regeln ein- oder auszublenden.
 
-#### Fügen Sie benutzerdefinierte CAPTCHA-Dienste hinzu (6.5.8.0) {#add-custom-captcha-services}
+#### Hinzufügen benutzerdefinierter CAPTCHA-Dienste (6.5.8.0) {#add-custom-captcha-services}
 
 [!DNL Experience Manager Forms] bietet vorkonfigurierte Unterstützung für die Verwendung von Google reCAPTCHA (eine separate Lizenz für Google reCAPTCHA-APIs ist erforderlich) als CAPTCHA-Validierungsdienst. Sie können auch einen benutzerdefinierten CAPTCHA-Dienst verwenden, um CAPTCHAs zu validieren.
 
@@ -319,7 +293,7 @@ Sie können CAPTCHA jetzt entweder bei der Übermittlung des adaptiven Formulars
 
 * Konvertieren eines PDF-Formulars in ein adaptives Formular mithilfe von [!DNL Automated Forms Conversion service].
 
-#### Unterstützung für Microsoft SQL Server 2016 Immer On-Verfügbarkeit Gruppen für hohe Verfügbarkeit (6.5.7.0) {#always-on-availability-groups}
+#### Unterstützung für Microsoft SQL Server 2016 &quot;Always on available groups&quot;für hohe Verfügbarkeit (6.5.7.0) {#always-on-availability-groups}
 
 [!DNL Experience Manager Forms] unterstützt jetzt  [!DNL Microsoft] SQL Server 2016-Gruppen &quot;Always On available&quot;für hohe Verfügbarkeit für OSGi-Bereitstellungen.
 
@@ -340,7 +314,7 @@ Sie können den Server [!DNL Experience Manager Forms] jetzt auf [konfigurieren 
 
 [!DNL Experience Manager Forms] Das Formulardatenmodell kann jetzt mit RESTful-APIs auf einem Server  [integriert werden, auf dem eine bidirektionale SSL-Implementierung implementiert ist](../../help/forms/using/configure-data-sources.md).
 
-#### Unterstützung für [!DNL Adobe Sign] Text-Tags in Automated forms conversion Service (6.5.6.0) {#sign-integration-acroform-afcs} hinzugefügt.
+#### Unterstützung für [!DNL Adobe Sign] Text-Tags in Automated forms conversion Service (6.5.6.0) hinzugefügt {#sign-integration-acroform-afcs}
 
 Wenn ein AcroForm [!DNL Adobe Sign] Text-Tags enthält, werden diese Felder jetzt erkannt und als [!DNL Adobe Sign] Felder im adaptiven Formular dargestellt, die mit [!DNL Automated Forms Conversion service] konvertiert wurden. Ein Unterzeichner kann diese Felder beim Unterschreiben des adaptiven Formulars ausfüllen.
 
@@ -356,11 +330,11 @@ Sie können [!DNL Automated Forms Conversion service] verwenden, um farbige PDF 
 
 Sie können [Gebietsschema jetzt als Selektor in der URL des adaptiven Formulars anstelle eines Arguments in der URL des adaptiven Formulars](../../help/forms/using/supporting-new-language-localization.md) angeben. Dies hilft beim Zwischenspeichern übersetzter adaptiver Formulare unter [!DNL Experience Manager Dispatcher]. In früheren Versionen war das Zwischenspeichern übersetzter adaptiver Formulare nicht möglich. Ausführliche Informationen zum Konfigurieren der Zwischenspeicherung für die Verwendung von Gebietsschema als Selektor in der URL des adaptiven Formulars finden Sie unter [Cache für adaptive Formulare beim Dispatcher](../../help/forms/using/configure-adaptive-forms-cache.md) konfigurieren.
 
-#### Speichern Sie die Ausgabe des Formulardatenmodelldienstes in einer Variablen (6.5.6.0) {#save-fdm-service-to-variable}
+#### Speichern der Ausgabe des Formulardatenmodelldienstes in einer Variablen (6.5.6.0) {#save-fdm-service-to-variable}
 
 Mit dem Formulardatenmodell können Sie die Ausgabe eines Formulardatenmodelldienstes in einer Variablen speichern. [!DNL Experience Manager Forms] ordnet nun automatisch den Typ des Formulardatenmodelldienstes dem Variablentyp zu.
 
-#### Mehrere Dateien für Dateianlagenkomponente anhängen (6.5.6.0) {#attach-multiple-files}
+#### Mehrere Dateien für die Dateianlagenkomponente anhängen (6.5.6.0) {#attach-multiple-files}
 
 Sie können jetzt [mehrere Dateien](../../help/forms/using/introduction-forms-authoring.md) an die Komponente [!UICONTROL Dateianhang] von adaptiven Formularen anhängen.
 
@@ -376,7 +350,7 @@ Sie können die Benutzeroberfläche für Agenten verwenden, um einen oder mehrer
 
 ![Als Entwurf speichern](assets/save-as-draft.gif)
 
-#### [!DNL Oracle WebLogic] Anwendungsserverunterstützung (6.5.5.0)  {#weblogic-support}
+#### [!DNL Oracle WebLogic] Anwendungsserverunterstützung (6.5.5.0) {#weblogic-support}
 
 Adobe Experience Manager Forms unterstützt nun [!DNL Oracle WebLogic 12] für Adobe Experience Manager Forms on JEE. Sie können von einer früheren Version aktualisieren oder einen neuen Experience Manager 6.5 Forms on JEE-Server auf [!DNL Oracle WebLogic] 12.2.1.4 und höher einrichten. Später entspricht den geringfügigen Versionsänderungen, wobei x in 12.2.1.x durch eine Versionsnummer ersetzt wird.
 
@@ -390,7 +364,7 @@ Adobe Experience Manager Forms umfasst die folgenden Verbesserungen der Barriere
 
 * Wenn ein adaptives Formular einige Pflichtfelder enthält, wird das obligatorische Attribut für diese Felder im ARIA-Barrierefreiheitsschema auf `True` gesetzt.
 
-#### X-509 Zertifikatbasierte Authentifizierung für SOAP-basierte Webdienste im Formulardatenmodell (6.5.5.0) {#x509-based-authentication-soap}
+#### Authentifizierung für SOAP-basierte Webdienste mittels X-509-Zertifikat im Formulardatenmodell (6.5.5.0) {#x509-based-authentication-soap}
 
 Das Formulardatenmodell unterstützt jetzt die zertifikatbasierte Authentifizierung mit X-509 bei Verwendung von SOAP-Webdiensten als Datenquelle. Weitere Informationen finden Sie unter [SOAP-Webdienste konfigurieren](../forms/using/configure-data-sources.md#configure-soap-web-services).
 
@@ -426,7 +400,7 @@ Die Option &quot;Admin-Kontrolle&quot;ist nur für die Mitglieder der Gruppe `ad
 
 Konvertieren Sie ein Textfeld in einem XFA-Formular in ein Rich-Text-Feld in einem HTML5-Formular. Weitere Informationen finden Sie unter [Entwerfen von Formularvorlagen für HTML5-Formulare](../forms/using/designing-form-template.md).
 
-#### Verbesserungen der Barrierefreiheit (6.5.4.0) {#forms-accessibility-enhancements-6540}
+#### Verbesserungen bei der Barrierefreiheit (6.5.4.0) {#forms-accessibility-enhancements-6540}
 
 Experience Manager Forms umfasst die folgenden Verbesserungen der Barrierefreiheit:
 
@@ -434,11 +408,11 @@ Experience Manager Forms umfasst die folgenden Verbesserungen der Barrierefreihe
 
 * Jede Seite eines adaptiven Formulars enthält jetzt einen Titel und eine Hauptmarkenbeschriftung.
 
-#### Freigeben und Anfordern des Zugriffs auf Inbox-Elemente eines Experience Manager Forms-Benutzers (6.5.3.0) {#share-request-access}
+#### Freigeben und Anfordern des Zugriffs auf die Inbox-Elemente eines Experience Manager Forms-Benutzers (6.5.3.0) {#share-request-access}
 
 Sie können Ihre Posteingangselemente für andere Benutzer freigeben. Sobald ein anderer Benutzer Zugriff auf Ihre Inbox-Elemente erhält, kann der Benutzer die entsprechenden Aktionen für freigegebene Elemente anfordern. Ebenso können Sie von anderen Benutzern Zugriff auf Posteingangselemente anfordern. Siehe [Freigeben und Anfordern des Zugriffs auf Posteingangselemente eines Benutzers](../forms/using/configure-shared-queues-osgi.md).
 
-#### Konfigurieren Sie die Abwesenheitseinstellungen für die Posteingangselemente eines Experience Manager Forms-Benutzers (6.5.3.0) {#configure-out-of-office}
+#### Konfigurieren Sie die Abwesenheitseinstellungen für die Posteingangselemente eines Experience Manager Forms-Benutzers (6.5.3.0). {#configure-out-of-office}
 
 Für geplante Abwesenheitszeiten können Sie festlegen, was während dieser Zeit mit den Ihnen zugeordneten Elementen passieren soll.
 Sie haben die Möglichkeit, ein Anfangs- und Enddatum sowie eine Anfangs- und Enduhrzeit für die Gültigkeit der Abwesenheitseinstellungen anzugeben. Sie können eine Standardperson festlegen, an die alle Ihre Elemente gesendet werden. Siehe [Abwesenheitseinstellungen konfigurieren](../forms/using/configure-out-of-office-settings.md).
