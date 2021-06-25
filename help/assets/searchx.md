@@ -1,11 +1,11 @@
 ---
-title: Erweiterung der Suchfunktion.
+title: Suchfunktion erweitern
 description: Erweitern Sie die Suchfunktionen von [!DNL Adobe Experience Manager Assets] über die Standardeinstellungen hinaus.
 contentOwner: AG
 role: Developer
 feature: Suchen
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 77%
