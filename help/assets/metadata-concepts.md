@@ -3,12 +3,12 @@ title: Grundlagen zu Metadatenkonzepten
 description: Erfahren Sie mehr über die Notwendigkeit und die Typen von Metadaten, die eine einfachere Kategorisierung und Organisation von Assets ermöglichen.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: 'Metadaten  '
+feature: Metadaten
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
-source-wordcount: '2732'
-ht-degree: 90%
+source-wordcount: '2730'
+ht-degree: 89%
 
 ---
 
@@ -28,7 +28,7 @@ Dies sind die grundlegenden Metadaten-Eigenschaften, die [!DNL Experience Manage
 
 Sie können digitalen Assets auch Daten auf höherer Ebene hinzufügen – darunter:
 
-* Typ des Assets (Bild, Video, Audio-Clip oder Dokument).
+* Asset-Typ (Bild, Video, Audio-Clip oder Dokument).
 * Inhaber des Assets.
 * Titel des Assets.
 * Beschreibung des Assets.
@@ -48,14 +48,14 @@ Aus diesen Gründen erhalten Sie mit [!DNL Assets] die richtigen Mittel, um Meta
 
 Die beiden grundlegenden Metadatentypen sind technische Metadaten und beschreibende Metadaten.
 
-Technische Metadaten eignen sich für Software-Anwendungen, die mit digitalen Assets arbeiten und nicht manuell gepflegt werden sollen. [!DNL Experience Manager Assets] und andere Software ermitteln technische Metadaten automatisch. Die Metadaten können sich ändern, wenn das Asset geändert wird. Die verfügbaren technischen Metadaten für ein Asset hängen größtenteils vom Dateityp des Assets ab. Beispiele für technische Metadaten:
+Technische Metadaten eignen sich für Software-Programme, die mit digitalen Assets arbeiten und nicht manuell gepflegt werden sollen. [!DNL Experience Manager Assets] und andere Software ermitteln technische Metadaten automatisch. Die Metadaten können sich ändern, wenn das Asset geändert wird. Die verfügbaren technischen Metadaten für ein Asset hängen größtenteils vom Dateityp des Assets ab. Beispiele für technische Metadaten:
 
 * Größe einer Datei.
 * Abmessungen (Höhe und Breite) eines Bildes.
 * Bitrate einer Audio- oder Videodatei.
 * Auflösung (Detaillierungsgrad) eines Bildes.
 
-Beschreibende Metadaten sind solche, die sich auf die Anwendungsdomäne beziehen – etwa das Unternehmen, aus dem ein Asset stammt. Beschreibende Metadaten können nicht automatisch bestimmt werden. Sie werden manuell oder halbautomatisch erstellt. Beispielsweise kann eine GPS-fähige Kamera automatisch den Längen- und Breitengrad verfolgen und das Bild mit einem Geotag versehen.
+Beschreibende Metadaten sind solche, die sich auf die Programm-Domain beziehen – etwa das Unternehmen, aus dem ein Asset stammt. Beschreibende Metadaten können nicht automatisch bestimmt werden. Sie werden manuell oder halbautomatisch erstellt. Beispielsweise kann eine GPS-fähige Kamera automatisch den Längen- und Breitengrad verfolgen und das Bild mit einem Geotag versehen.
 
 Die Kosten für die manuelle Erstellung beschreibender Metadateninformationen sind hoch. Daher werden Standards festgelegt, um den Austausch von Metadaten zwischen Software-Systemen und Organisationen zu erleichtern. [!DNL Experience Manager Assets] unterstützt alle relevanten Standards für die Metadatenverwaltung.
 
@@ -113,9 +113,9 @@ Die unterstützten Metadatenschemata sind unten aufgeführt.
 * XMP – [!DNL Extensible Metadata Platform].
 * `xmpBJ` – Einfaches Job-Ticketing.
 
-### Anwendungsspezifische Metadaten {#application-specific-metadata}
+### Programmspezifische Metadaten {#application-specific-metadata}
 
-Die anwendungsspezifischen Metadaten umfassen technische und beschreibende Metadaten. Diese Metadaten können unter Umständen nicht von anderen Anwendungen verwendet werden. Beispielsweise kann eine andere Anwendung zum Rendern von Bildern möglicherweise nicht auf [!DNL Adobe Photoshop]-Metadaten zugreifen. Sie können einen Workflow-Schritt erstellen, der eine anwendungsspezifische Eigenschaft in eine Standardeigenschaft ändert.
+Die programmspezifischen Metadaten umfassen technische und beschreibende Metadaten. Diese Metadaten können unter Umständen nicht von anderen Programmen verwendet werden. Beispielsweise kann ein anderes Programm zum Rendern von Bildern möglicherweise nicht auf [!DNL Adobe Photoshop]-Metadaten zugreifen. Sie können einen Workflow-Schritt erstellen, der eine programmspezifische Eigenschaft in eine Standardeigenschaft ändert.
 
 * ACDSee – Vom [!DNL ACDSee]-Programm verwaltete Metadaten. Siehe [www.acdsee.com/](https://www.acdsee.com/).
 * Album – [!DNL Adobe Photoshop Album].
@@ -129,7 +129,7 @@ Die anwendungsspezifischen Metadaten umfassen technische und beschreibende Metad
 * PDF und PDF/X.
 * Photoshop und psAux – [!DNL Adobe Photoshop].
 
-### Digital Rights Management (DRM)-Metadaten {#digital-rights-management-metadata}
+### Digital Rights Management-Metadaten (DRM) {#digital-rights-management-metadata}
 
 * CC – [!DNL Creative Commons].
 * [!DNL XMPRights].
@@ -148,7 +148,7 @@ Die anwendungsspezifischen Metadaten umfassen technische und beschreibende Metad
 
 ### Druckspezifische Metadaten {#print-specific-metadata}
 
-* PDF und PDF/X – Adobe PDF und Drittanbieteranwendungen.
+* PDF und PDF/X – Adobe PDF und Drittanbieterprogramme.
 * PRISM – [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata).
 * XMP – [!DNL Extensible Metadata Platform].
 * `xmpPG` – XMP-Metadaten für Seitentext.
@@ -229,7 +229,7 @@ XMP definiert ein [Metadatenmodell](https://de.wikipedia.org/wiki/Metadaten), da
 
 XMP wird am häufigsten mit einer Untergruppe des [W3C](https://de.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://de.wikipedia.org/wiki/Resource_Description_Framework) (RDF) serialisiert und gespeichert, das wiederum in [XML](https://de.wikipedia.org/wiki/Extensible_Markup_Language) ausgedrückt wird.
 
-### Vorteile von XMP  {#advantages-of-xmp}
+### Vorteile von XMP {#advantages-of-xmp}
 
 XMP bietet die folgenden Vorteile gegenüber anderen Kodierungsstandards und Schemata:
 
@@ -244,7 +244,7 @@ Das XMP-Standardformat ist erweiterbar, sodass Sie den XMP-Daten benutzerdefinie
 >
 >XMP lässt im Allgemeinen nicht zu, dass binäre Datentypen eingebettet werden. Um binäre Daten wie etwa Miniaturansichten in XMP zu übertragen, müssen diese in einem XML-kompatiblen Format wie beispielsweise `Base64` kodiert werden.
 
-### XMP Konzepte {#xmp-core-concepts}
+### XMP {#xmp-core-concepts}
 
 In den folgenden Abschnitten werden die wesentlichen Grundlagen von XMP beschrieben, einschließlich Namespaces und Schemata, Eigenschaften und Werten sowie Sprachalternativen.
 
@@ -279,7 +279,7 @@ Das standardmäßige Metadatenschema für Assets enthält nun die Metadatenschem
 Die Eigenschaftenseite für Assets enthält jetzt einzelne Registerkarten, auf denen die IPTC Core- und IPTC Extension-Metadaten in bearbeitbaren Feldern angezeigt werden.
 
 1. Wählen Sie in der Benutzeroberfläche [!DNL Assets] ein Bild aus.
-1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften.]**
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**.
 1. Klicken Sie auf die Registerkarte **[!UICONTROL IPTC]** , um die IPTC-Metadaten für das Asset anzuzeigen.
 1. Bearbeiten Sie die IPTC-Metadateneigenschaften nach Bedarf.
 
@@ -289,7 +289,7 @@ Die Eigenschaftenseite für Assets enthält jetzt einzelne Registerkarten, auf d
 1. Bearbeiten Sie die Eigenschaften der IPTC-Erweiterungs-Metadaten nach Bedarf.
 1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**, um die Änderungen zu speichern.
 
-### Unterstützung für kreative Bewertungen {#creative-rating-support}
+### Unterstützung kreativer Bewertungen {#creative-rating-support}
 
 Parallel zum Anzeigen individueller Benutzerbewertungen und aggregierter Bewertungen zeigt die Eigenschaftenseite jetzt Asset-Bewertungen an, die über Adobe Bridge und andere Kreativanwendungen erfolgt sind.
 
