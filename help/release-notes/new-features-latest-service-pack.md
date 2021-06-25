@@ -4,9 +4,9 @@ description: Neue Funktionen in [!DNL Experience Manager] 6.5 Service Pack 9
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 557615a019fedee1863e4d1970445fbfa17736cb
+source-git-commit: a0f47b4e0e9f38df208ed78fde63c70813fb7dcc
 workflow-type: tm+mt
-source-wordcount: '3680'
+source-wordcount: '3674'
 ht-degree: 5%
 
 ---
@@ -50,7 +50,7 @@ Sie können jetzt die gelöschten Seiten und die gesamte Baumansicht auf einer [
    * Kontrast (mit Hintergrund) von Text, Platzhaltertext und Steuerelementen in verschiedenen Editoren.
    * Barrierefreiheit und Erzählung durch Bildschirmlesehilfen.
 
-* Die intelligente Bildbearbeitung (Device Pixel Ratio) und die Optimierung der Netzwerkbandbreite ermöglichen eine effiziente Bereitstellung von Bildern mit der besten Qualität. auf Geräten mit hoher Auflösung und eingeschränkter Netzwerkbandbreite. Weitere Informationen und die Timeline finden Sie unter [Häufig gestellte Fragen zur intelligenten Bildbearbeitung](/help/assets/imaging-faq.md).
+* Bieten Sie auf Geräten mit hoher Auflösung und eingeschränkter Netzwerkbandbreite optimale Bilder mit intelligenter Bildbearbeitung (Device Pixel Ratio) und optimierter Netzwerkbandbreite. Siehe [Häufig gestellte Fragen zur intelligenten Bildbearbeitung](/help/assets/imaging-faq.md).
 
 * [!DNL Dynamic Media] delivery (`fmt` URL-Modifikator) unterstützt jetzt das Bildformat AVIF der nächsten Generation (AV1-Bildformat). Weitere Informationen und die Timeline finden Sie unter [Image Serving and Rendering API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
