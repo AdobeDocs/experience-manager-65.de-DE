@@ -2,6 +2,7 @@
 title: Verwalten von Dynamic Media-Bildvorgaben
 description: Grundlegendes zu Dynamic Media-Bildvorgaben und Erfahren Sie, wie Sie Bildvorgaben erstellen, ändern und verwalten
 uuid: 3e9a7af6-bf49-4cff-b516-0a3ee9765391
+mini-toc-levels: 3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -12,9 +13,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Bildvorgaben
 role: Business Practitioner, Administrator
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: 4ad5237939289b5411a988424b2a3ecad15ca029
+source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
 workflow-type: tm+mt
-source-wordcount: '3853'
+source-wordcount: '3851'
 ht-degree: 80%
 
 ---
@@ -67,7 +68,7 @@ Bildvorgaben verwalten Sie in Experience Manager, indem Sie auf das Experience M
 >
 >Das System zeigt verschiedene Ausgabedarstellungen, wenn Sie **[!UICONTROL Ausgabedarstellungen]** in der Detailansicht eines Assets auswählen. Sie können die Anzahl der angezeigten Bildvorgaben erhöhen oder verringern. Siehe [Erhöhung der Anzahl der angezeigten Bildvorgaben](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
-### Smartes Zuschneiden, Adobe Illustrator (AI), Postscript (EPS) und PDF-Dateiformate {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+### Dateiformate Smart-Zuschnitt, Adobe Illustrator (AI), Postscript (EPS) und PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
 >[!NOTE]
 >
@@ -149,7 +150,7 @@ Die max. Breite und die max. Höhe beschränken die Auflösung, in der die Raste
 
 Für die Prozesskomponente `Rasterize PDF/AI Image Preview Rendition` ist ein Maximalwert definiert, um sicherzustellen, dass im Arbeitsspeicher keine zu großen Bilder erstellt werden. Solch große Bilder können den Speicher überlaufen, der der JVM (Java™ Virtual Machine) zur Verfügung gestellt wird. Achten Sie darauf, der JVM ausreichend Arbeitsspeicher zur Verwaltung der konfigurierten Anzahl paralleler Workflows zur Verfügung zu stellen, da jeder Workflow potenziell ein Bild in der konfigurierten Maximalgröße erstellen kann.
 
-### InDesign-Dateiformat (INDD)  {#indesign-indd-file-format}
+### InDesign-Dateiformat (INDD) {#indesign-indd-file-format}
 
 Wenn Sie die Aufnahme von INDD-Dateien unterstützen möchten, um aus diesem Dateiformat dynamische Ausgabedarstellungen zu generieren, sollten Sie die folgenden Informationen lesen, bevor Sie Bildvorgaben erstellen.
 
@@ -180,7 +181,7 @@ Die folgenden Skripte werden von der Dynamic Media-Integration verwendet:
   <tr>
    <td>JPEGPagesExport.jsx</td>
    <td>Ja</td>
-   <td>Generiert für jede Seite ein 300 ppi großes JPEG-Unter-Asset. Das JPEG-Teil-Asset ist ein echtes Asset, das unter dem InDesign-Asset gespeichert wird. Es wird auch vom Workflow <code>DAM Update Asset</code> optimiert und in eine PTIFF-Darstellung umgewandelt.<br /> </td>
+   <td>Generiert für jede Seite ein 300 ppi großes JPEG-Teil-Asset. Das JPEG-Teil-Asset ist ein echtes Asset, das unter dem InDesign-Asset gespeichert wird. Es wird auch vom Workflow <code>DAM Update Asset</code> optimiert und in eine PTIFF-Darstellung umgewandelt.<br /> </td>
   </tr>
   <tr>
    <td>PDFPagesExport.jsx</td>
@@ -224,11 +225,11 @@ Die Größe der Miniaturansichten wird im folgenden Format definiert: **[!UICONT
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**, um die Änderungen am Workflow zu speichern.
 
-### Erhöhen oder Verringern der Anzahl der Dynamic Media-Bildvorgaben, die {#increasing-or-decreasing-the-number-of-image-presets-that-display} anzeigen
+### Erhöhen oder Verringern der Anzahl angezeigter Dynamic Media-Bildvorgaben {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
 Erstellte Bildvorgaben sind auch als dynamische Ausgabedarstellungen verfügbar, wenn Sie eine Vorschau von Assets anzeigen. Experience Manager zeigt verschiedene dynamische Ausgabedarstellungen an, wenn ein Asset über **[!UICONTROL Detailansicht > Ausgabedarstellungen]** angezeigt wird. Sie können die Anzahl der angezeigten Ausgabedarstellungen erhöhen oder verringern.
 
-**So erhöhen oder verringern Sie die Anzahl der angezeigten Dynamic Media-Bildvorgaben:**
+**Erhöhen oder verringern Sie die Anzahl der angezeigten Dynamic Media-Bildvorgaben:**
 
 1. Navigieren Sie zu CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Navigieren Sie zum Knoten für die Bildvorgabenliste unter `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`.
@@ -306,7 +307,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
 
 * **[!UICONTROL Scharfzeichnen: Resampling-Modus]**: Wählen Sie **[!UICONTROL Bikubisch]**.
 
-#### Optionen auf der Registerkarte „Basis“ {#basic-tab-options}
+#### Optionen auf der Registerkarte „Basis“  {#basic-tab-options}
 
 <table>
  <tbody>
@@ -355,7 +356,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
  </tbody>
 </table>
 
-#### Optionen auf der Registerkarte „Erweitert“ {#advanced-tab-options}
+#### Optionen auf der Registerkarte „Erweitert“  {#advanced-tab-options}
 
 <table>
  <tbody>
@@ -405,7 +406,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
     </ul>
     <div>
       Das Scharfzeichnen wird unter
-     <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/sharpening_images.pdf">Scharfzeichnen von Bildern</a> beschrieben.
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf">Scharfzeichnen von Bildern</a> beschrieben.
     </div> </td>
   </tr>
   <tr>
