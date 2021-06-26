@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Business Practitioner, Administrator
 feature: Asset-Management,Ausgabeformate
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
+source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1581'
 ht-degree: 61%
 
 ---
@@ -74,7 +74,7 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Informationen Folgendes:
 
 ## Unterstützte 3D-Formate {#support-3d-formats}
 
-Die folgende Liste von 3D-Formaten wird unterstützt:
+Die folgende Liste von 3D-Formaten wird unterstützt.
 
 Siehe [Arbeiten mit 3D-Assets in Dynamic Media](/help/assets/assets-3d.md).
 
@@ -89,7 +89,7 @@ Siehe [Arbeiten mit 3D-Assets in Dynamic Media](/help/assets/assets-3d.md).
 
 ## Nicht unterstützte Rasterbildformate in Dynamic Media {#unsupported-image-formats-dynamic-media}
 
-In der folgenden Liste werden die Untertypen der Rasterbilddateiformate beschrieben, die in Dynamic Media nicht von *a1/> unterstützt werden.*
+In der folgenden Liste werden die Untertypen von Rasterbilddateiformaten beschrieben, die in Dynamic Media nicht unterstützt werden.**
 
 Siehe auch [Erkennung nicht unterstützter Dateiformate für Dynamic Media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
 
@@ -130,13 +130,13 @@ Siehe [Verwenden von PDF Rasterizer](aem-pdf-rasterizer.md).
 
 ## Unterstützte Bildtranskodierungsbibliothek {#supported-image-transcoding-library}
 
-Die Adobe Imaging Transcoding Library ist eine Bildverarbeitungslösung, die zentrale Bildbearbeitungsfunktionen wie Kodierung, Transkodierung, Neuberechnung und Größenanpassung durchführt.
+Bei der Adobe Imaging Transcoding Library handelt es sich um eine Lösung zur Bildverarbeitung, die essenzielle Bildfunktionen übernimmt, darunter Bildkodierung, -transkodierung, -Resampling und Größenanpassung.
 
 Die Imaging Transcoding Library unterstützt Dateien in den Formaten JPG/JPEG, PNG (8-Bit und 16-Bit), GIF, BMP, TIFF/Komprimiertes TIFF (außer 32-Bit-TIFF- und PTIFF-Dateien), ICO sowie ICN MIME-Typen.
 
 Siehe [Imaging Transcoding Library](imaging-transcoding-library.md).
 
-## Unterstützte Kamera-Raw {#supported-camera-raw}
+## Unterstützung von Camera Raw {#supported-camera-raw}
 
 Die [!DNL Adobe Camera Raw]-Bibliothek ermöglicht [!DNL Assets] die Aufnahme von Rohbildern. Siehe [Camera Raw Unterstützung](camera-raw.md).
 
@@ -211,10 +211,10 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Funktionen Folgendes:
 | MP4 | MPEG-4 | H264/AVC (alle Profile) | - |
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
 | FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (Vektoranimationsdateien) |
-| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Foto Story (WVP2) |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
 | M4V | Apple iTunes | H264/AVC | - |
-| AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
+| AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
 | WebM | WebM | Google VP8 | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
 | MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
@@ -251,7 +251,7 @@ Die Anwendbarkeit der gängigen DAM-Funktionen für einige spezifische Dateiform
 
 >[!NOTE]
 >
->Das Hochladen und Verteilen von JavaScript-Dateien ist möglicherweise nicht sicher. Bei Bedarf können Überlagerungen verwendet werden, um zu verhindern, dass Benutzer JS-Dateien hochladen.
+>Das Hochladen und Verteilen von JavaScript-Dateien ist möglicherweise nicht sicher. Bei Bedarf können Sie Überlagerungen verwenden, um zu verhindern, dass Benutzer JS-Dateien hochladen.
 
 ## Unterstützte MIME-Typen {#supported-mime-types}
 
