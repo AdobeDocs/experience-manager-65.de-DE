@@ -11,10 +11,10 @@ docset: aem65
 feature: 360-Grad-VR-Video
 role: Business Practitioner, Administrator
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
+source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 80%
+source-wordcount: '1054'
+ht-degree: 77%
 
 ---
 
@@ -49,7 +49,7 @@ Weitere Informationen finden Sie unter [Bearbeiten von 360-Grad-/VR-Videos](http
 ![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
 *Ein hochgeladenes 360-Grad-Video-Asset in der Kartenansicht. Das Asset wird als „Multimedia“ gekennzeichnet.*
 
-**So laden Sie Assets für die Verwendung mit dem 360-Grad-Video-Viewer hoch:**
+**Hochladen von Assets zur Verwendung mit dem 360-Grad-Video-Viewer:**
 
 1. Erstellen Sie einen Ordner für Ihr 360-Grad-Video-Asset.
 1. [Wenden Sie ein adaptives Videoprofil auf den Ordner an](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
@@ -61,7 +61,7 @@ Weitere Informationen finden Sie unter [Bearbeiten von 360-Grad-/VR-Videos](http
    * Idealerweise sollten Sie Ihren ursprünglichen 360-Grad-Videoinhalt mit einer der folgenden Auflösungen verwenden:
 
       * 1080p – 1920 x 1080 (Full HD- oder FHD-Auflösung) oder
-      * 2160p – 3840 x 2160 (4K-, UHD- oder Ultra HD-Auflösung). Diese hohe Auflösung ist häufig auf Premium-Fernsehgeräten und Computermonitoren verfügbar. Die 2160p-Auflösung wird häufig als „4K“ bezeichnet, da die Breite fast 4000 Pixel beträgt. Das heißt, sie bietet viermal so viele Pixel wie 1080p.
+      * 2160p - 3840 x 2160, auch als 4k-, UHD- oder Ultra HD-Auflösung bezeichnet. Diese hohe Auflösung ist häufig auf Premium-Fernsehgeräten und Computermonitoren verfügbar. Die 2160p-Auflösung wird oft als &quot;4k&quot;bezeichnet, da die Breite nahe 4000 Pixel liegt. Das heißt, sie bietet viermal so viele Pixel wie 1080p.
    * [Erstellen Sie ein benutzerdefiniertes adaptives Videoprofil](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) mit hochwertigeren Ausgabedarstellungen. Erstellen Sie beispielsweise ein adaptives Videoprofil, das die folgenden drei Einstellungen enthält:
 
       * width=auto; height=720; bitrate=2500 kbps
