@@ -1,6 +1,7 @@
 ---
 title: Konfigurieren von Dynamic Media – Hybridmodus
 description: Erfahren Sie mehr über die Konfiguration von Dynamic Media – Hybridmodus.
+mini-toc-levels: 3
 uuid: 39ad7d83-d310-4baf-9d85-5532c2f201f3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -12,10 +13,10 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: Business Practitioner, Administrator
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Konfiguration,Hybridmodus
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 48463a72108621e94f1c50cf43f911794ec759dd
 workflow-type: tm+mt
-source-wordcount: '7843'
-ht-degree: 39%
+source-wordcount: '7838'
+ht-degree: 38%
 
 ---
 
@@ -189,21 +190,21 @@ Um Dynamic Media zu aktivieren, müssen Sie den Dynamic Media-Ausführungsmodus 
 
 ### Wenn Sie Experience Manager in einen anderen Port oder Kontextpfad installiert haben ... {#if-you-installed-aem-to-a-different-port-or-context-path}
 
-Wenn Sie den Experience Manager [auf einem Anwendungsserver](/help/sites-deploying/application-server-install.md) bereitstellen und Dynamic Media aktiviert haben, müssen Sie die Domäne **self** im Externalizer konfigurieren. Andernfalls funktioniert die Erstellung von Miniaturansichten für Assets nicht ordnungsgemäß für Dynamic Media-Assets.
+Wenn Sie den Experience Manager [auf einem Anwendungsserver](/help/sites-deploying/application-server-install.md) bereitstellen und Dynamic Media aktiviert haben, müssen Sie die Domäne **self-domain** im Externalizer konfigurieren. Andernfalls funktioniert die Erstellung von Miniaturansichten für Assets nicht ordnungsgemäß für Dynamic Media-Assets.
 
-Falls Sie den Schnellstart für einen anderen Port oder Kontextpfad ausführen, müssen Sie die Domäne **self** ebenfalls ändern.
+Wenn Sie Quickstart außerdem an einem anderen Port oder Kontextpfad ausführen, müssen Sie auch die Domäne **self-domain** ändern.
 
 Wenn Dynamic Media aktiviert ist, werden die statischen Miniaturansicht-Wiedergabeformate für Bild-Assets mit Dynamic Media generiert. Damit die Erstellung von Miniaturansichten für Dynamic Media ordnungsgemäß funktioniert, muss der Experience Manager eine URL-Anfrage an sich selbst richten und sowohl die Portnummer als auch den Kontextpfad kennen.
 
 Im Experience Manager:
 
-* Die Domäne **self** im [Externalizer](/help/sites-developing/externalizer.md) wird verwendet, um sowohl die Portnummer als auch den Kontextpfad abzurufen.
-* Wenn keine **self**-Domäne konfiguriert ist, werden die Portnummer und der Kontextpfad vom Jetty-HTTP-Dienst abgerufen.
+* Die **self-domain** im [externalizer](/help/sites-developing/externalizer.md) wird verwendet, um sowohl die Portnummer als auch den Kontextpfad abzurufen.
+* Wenn keine **self-domain** konfiguriert ist, werden die Portnummer und der Kontextpfad vom Jetty-HTTP-Dienst abgerufen.
 
-In einer Experience Manager QuickStart-WAR-Bereitstellung können die Portnummer und der Kontextpfad nicht abgeleitet werden. Daher müssen Sie eine **self**-Domäne konfigurieren. Weitere Informationen zur Konfiguration der Domäne **self** finden Sie in der [Externalizer-Dokumentation](/help/sites-developing/externalizer.md).
+In einer Experience Manager QuickStart-WAR-Bereitstellung können die Portnummer und der Kontextpfad nicht abgeleitet werden. Daher müssen Sie eine **self-domain** konfigurieren. Siehe [Externalizer-Dokumentation](/help/sites-developing/externalizer.md) zur Konfiguration der **Selbsthandlung**.
 
 >[!NOTE]
-In einer [Experience Manager-Schnellstart-eigenständigen Bereitstellung](/help/sites-deploying/deploy.md) muss eine **self**-Domäne im Allgemeinen nicht konfiguriert werden, da die Portnummer und der Kontextpfad automatisch konfiguriert werden können. Wenn jedoch alle Netzwerkschnittstellen deaktiviert sind, müssen Sie die Domäne **self** konfigurieren.
+In einer [Experience Manager-Schnellstart-eigenständigen Bereitstellung](/help/sites-deploying/deploy.md) muss eine **Self-Domain** im Allgemeinen nicht konfiguriert werden, da die Portnummer und der Kontextpfad automatisch konfiguriert werden können. Wenn jedoch alle Netzwerkschnittstellen deaktiviert sind, müssen Sie die Domäne **self-domain** konfigurieren.
 
 ## Deaktivieren von Dynamic Media  {#disabling-dynamic-media}
 
@@ -350,7 +351,7 @@ Sie können die Überprüfung auch durchführen, indem Sie einen der folgenden S
 
 Beim Einrichten der Authentifizierung gibt es einige Probleme, auf die Sie mit ihren Lösungen stoßen können. Stellen Sie vor der Überprüfung auf diese Probleme sicher, dass Sie die Replikation eingerichtet haben.
 
-#### Problem: HTTP-Statuscode 401 mit der Meldung „Authorization Required“ (Autorisierung erforderlich){#problem-http-status-code-with-message-authorization-required}
+#### Problem: HTTP-Statuscode 401 mit der Meldung „Authorization Required“ (Autorisierung erforderlich) {#problem-http-status-code-with-message-authorization-required}
 
 Dieses Problem kann auftreten, wenn der KeyStore für den Benutzer `dynamic-media-replication` nicht eingerichtet wurde.
 
@@ -498,7 +499,7 @@ Stellen Sie sicher, dass Sie vor Beginn dieses Tests bereits Folgendes durchgef�
 
 Eine andere Möglichkeit zum Testen der Bereitstellung Ihrer Assets besteht darin, „req=exists“ an die URL anzufügen.
 
-## Konfigurieren von Dynamic Media Cloud Services  {#configuring-dynamic-media-cloud-services}
+## Konfigurieren von Dynamic Media Cloud Services {#configuring-dynamic-media-cloud-services}
 
 Der Dynamic Media-Cloud Service unterstützt u. a. die hybride Veröffentlichung und Bereitstellung von Bildern und Videos, Videoanalysen und Videokodierung.
 
@@ -557,7 +558,7 @@ Stellen Sie sicher, dass der Zugriff auf das Vorgabenpaket für die Videoanalyse
 1. Installieren Sie das Vorgabenpaket für die Videoanalyse.
 1. Konfigurieren Sie die Dynamic Media-Konfiguration (vor 6.3).
 
-### Überprüfen und Debuggen der Paketinstallation  {#verifying-and-debugging-the-package-installation}
+### Überprüfen und Debuggen der Paketinstallation {#verifying-and-debugging-the-package-installation}
 
 1. Führen Sie einen der folgenden Schritte aus, um die Paketinstallation zu überprüfen und bei Bedarf zu debuggen:
 
@@ -603,7 +604,7 @@ ManagerTippen Sie auf  **[!UICONTROL Tools]**  >  **[!UICONTROL Assets]**  >  **
 
    Dieser Fehler wird auch angezeigt, wenn Videoberichte ausgeführt wird, bevor Sie die Dynamic Media-Konfiguration (vor 6.3) konfigurieren.
 
-### Beheben von Problemen bei der Konfiguration von Videoberichten  {#troubleshooting-the-video-reporting-configuration}
+### Beheben von Problemen bei der Konfiguration von Videoberichten {#troubleshooting-the-video-reporting-configuration}
 
 * Während der Installation treten manchmal Timeouts beim Analytics API Server auf. Bei der Installation wird 20-mal versucht, die Verbindung wiederherzustellen. Wenn diese Situation eintritt, zeichnet die Protokolldatei mehrere Fehler auf. Suchen Sie nach `SiteCatalystReportService`.
 * Wird das Vorgabenpaket für die Analyse nicht vorab installiert, wird möglicherweise eine neue Report Suite erstellt.
@@ -661,7 +662,7 @@ Die Filter bieten Ihnen die Möglichkeit, *Assets vom Veröffentlichen des Exper
 
 ### Verwenden von Asset-Standardfiltern für die Replikation {#using-default-asset-filters-for-replication}
 
-Wenn Sie Dynamic Media für (1) Bildbearbeitung in der Produktion **oder** (2) verwenden, können Sie die von Adobe bereitgestellten Standardfilter unverändert verwenden. Folgende Filter sind standardmäßig aktiviert:
+Wenn Sie Dynamic Media für (1) Bildbearbeitung in der Produktion *oder* (2) verwenden, können Sie die Standardfilter verwenden, die von Adobe bereitgestellt werden. Folgende Filter sind standardmäßig aktiviert:
 
 <table>
  <tbody>
@@ -963,7 +964,7 @@ Tabelle mit Manifesteinstellungen und deren Standardwerte:
  </tbody>
 </table>
 
-## Konfigurieren des Farbmanagements für dynamische Medien  {#configuring-dynamic-media-color-management}
+## Konfigurieren des Farbmanagements für dynamische Medien {#configuring-dynamic-media-color-management}
 
 Mit dem Dynamic Media-Farbmanagement können Sie für die Vorschau korrekte Assets farblich markieren.
 
@@ -1095,7 +1096,7 @@ Die folgenden Farbprofile werden installiert:
    <th><p>Beschreibung</p> </th>
   </tr>
   <tr>
-   <td>AdobeRGB</td>
+   <td>Adobe RGB</td>
    <td>RGB</td>
    <td>Adobe RGB (1998)</td>
   </tr>
@@ -1137,12 +1138,12 @@ Die folgenden Farbprofile werden installiert:
   <tr>
    <td>EuroscaleCoated</td>
    <td>CMYK</td>
-   <td>Euroscale Coated v2</td>
+   <td>Euro-Skala überzogen v2</td>
   </tr>
   <tr>
    <td>EuroscaleUngestrichen</td>
    <td>CMYK</td>
-   <td>Euroscale Unbeschichtv2</td>
+   <td>Euro-Skala, ungestrichen v2</td>
   </tr>
   <tr>
    <td>JapanColorCoated</td>
