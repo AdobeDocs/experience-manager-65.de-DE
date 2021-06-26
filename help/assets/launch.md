@@ -1,6 +1,7 @@
 ---
 title: Integrieren von Dynamic Media Viewers mit Adobe Analytics und Experience Platform Launch
 description: Mit der Dynamic Media Viewer-Erweiterung für Experience Platform Launch sowie Dynamic Media Viewers 5.13 können Kunden von Adobe Analytics und Platform launch Ereignisse und Daten verwenden, die für die Dynamic Media-Viewer in ihrer Platform launch-Konfiguration spezifisch sind.
+mini-toc-levels: 3
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,14 +10,14 @@ docset: aem65
 feature: Viewer
 role: Business Practitioner, Administrator,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: 22a181e77a563ee3590cd661507f4dfeaf9d14da
+source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
 workflow-type: tm+mt
 source-wordcount: '6616'
 ht-degree: 83%
 
 ---
 
-# Integrieren von Dynamic Media Viewers mit Adobe Analytics und Experience Platform Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
+# Integrieren von Dynamic Media Viewers mit Adobe Analytics und Experience Platform Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## Worum geht es bei der Integration von Dynamic Media Viewers mit Adobe Analytics und Experience Platform Launch? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
@@ -54,7 +55,7 @@ Siehe [Verfolgen von Dynamic Media-Viewern mit Einbettungs-Code](#tracking-dynam
 
 Die Integration nutzt zwei separate und unabhängige Typen der Verfolgung von Dynamic Media Viewers: *Adobe Analytics* und *Adobe Analytics for Audio and Video*.
 
-### Informationen zum Tracking mit Adobe Analytics {#about-tracking-using-adobe-analytics}
+### Informationen zum Tracking mit Adobe Analytics   {#about-tracking-using-adobe-analytics}
 
 Mit Adobe Analytics können Sie Aktionen verfolgen, die vom Endbenutzer bei der Interaktion mit Dynamic Media Viewers auf Ihrer Website ausgeführt werden. Mit Adobe Analytics können Sie außerdem Viewer-spezifische Daten verfolgen. Beispielsweise können Sie Ladeereignisse der Ansicht zusammen mit dem Asset-Namen, vorgenommenen Zoom-Aktionen und Videowiedergabeaktionen verfolgen und aufzeichnen.
 
