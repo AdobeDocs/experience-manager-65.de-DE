@@ -10,10 +10,10 @@ discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 role: Business Practitioner, Administrator
 exl-id: 6d165b0d-e3e7-4115-8f2a-827679754b3b
 feature: Selektoren
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: c59ec6e2429095c07c9b2d6bb83dad6ab4f80aa0
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 99%
+source-wordcount: '722'
+ht-degree: 72%
 
 ---
 
@@ -25,11 +25,11 @@ Dieses Thema befasst sich damit, wie die Produkt-, Site- und Asset-Selektoren ve
 
 Sie greifen auf die Selektoren beim Erstellen von Karussellsets, beim Hinzufügen von Hotspots und Imagemaps und beim Erstellen interaktiver Videos und Bilder zu.
 
-Beispiel: In diesem Karussellbanner verwenden Sie den Produktselektor, wenn Sie einen Hotspot oder eine Imagemap mit einer Schnellansichtsseite verknüpfen, Sie verwenden den Site-Selektor, wenn Sie einen Hotspot oder eine Imagemap mit einem Hyperlink verknüpfen, und Sie verwenden den Asset-Selektor, wenn Sie eine neue Folie erstellen.
+In diesem Karussellbanner verwenden Sie beispielsweise den Produktselektor, wenn Sie einen Hotspot oder eine Imagemap mit einer Schnellansichtsseite verknüpfen. Verwenden Sie den Site-Selektor, wenn Sie einen Hotspot oder eine Imagemap mit einem Hyperlink verknüpfen. Verwenden Sie beim Erstellen einer Folie die Asset-Auswahl.
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-Wenn Sie auswählen (statt dies manuell einzugeben), wo sich Hotspots oder Imagemaps befinden sollen, verwenden Sie den Selektor. Der Site-Selektor funktioniert nur, wenn Sie AEM Sites-Kunde sind. Der Produktselektor erfordert außerdem AEM Commerce.
+Wenn Sie auswählen (statt dies manuell einzugeben), wo sich Hotspots oder Imagemaps befinden sollen, verwenden Sie den Selektor. Der Website-Selektor funktioniert nur, wenn Sie Experience Manager Sites-Kunde sind. Der Produktselektor erfordert außerdem Experience Manager Commerce.
 
 ## Auswählen von Produkten {#selecting-products}
 
@@ -45,15 +45,15 @@ Verwenden Sie den Produktselektor, um ein Produkt auszuwählen, wenn Sie möchte
 
    ![chlimage_1-522](assets/chlimage_1-522.png)
 
-   Sie können auch nach Keyword oder Tag filtern, indem Sie auf **[!UICONTROL Filter]** tippen und Keywords eingeben und/oder Tags auswählen.
+   Filtern Sie nach Keyword oder Tag, indem Sie auf **[!UICONTROL Filter]** tippen und Keywords eingeben oder Tags oder beides auswählen.
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   Sie können ändern, wo AEM nach Produktdaten sucht, indem Sie auf **[!UICONTROL Durchsuchen]** tippen und zu einem anderen Ordner gehen.
+   Ändern Sie, wo Experience Manager nach Produktdaten sucht, indem Sie auf **[!UICONTROL Durchsuchen]** tippen und zu einem anderen Ordner navigieren.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Tippen Sie auf **[!UICONTROL Sortieren nach]**, um zu ändern, ob AEM von neu nach alt oder von alt nach neu sortiert.
+   Tippen Sie auf **[!UICONTROL Sortieren]** durch , um zu ändern, ob der Experience Manager von neu nach alt oder von alt nach neu sortiert.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -71,7 +71,7 @@ Verwenden Sie den Produktselektor, um ein Produkt auszuwählen, wenn Sie möchte
 
 ## Auswählen von Sites {#selecting-sites}
 
-Verwenden Sie den Site-Selektor, um eine Web-Seite auszuwählen, wenn Sie einen Hotspot oder eine Imagemap mit einer Website verknüpfen möchten, die in AEM Sites verwaltet wird.
+Verwenden Sie den Site-Selektor, um eine Webseite auszuwählen, wenn Sie möchten, dass ein Hotspot oder eine Imagemap mit einer Webseite verknüpft wird, die in Experience Manager-Sites verwaltet wird.
 
 1. Gehen Sie zum Karussellset, interaktiven Bild oder interaktiven Video und tippen oder klicken Sie auf die Registerkarte **[!UICONTROL Aktionen]** (nur verfügbar, wenn Sie einen Hotspot oder eine Imagemap definiert haben).
 
@@ -79,7 +79,7 @@ Verwenden Sie den Site-Selektor, um eine Web-Seite auszuwählen, wenn Sie einen 
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Tippen Sie auf das Symbol **[!UICONTROL Site-Selektor]** (Ordner mit Lupe) und gehen Sie zu einer Seite in Ihren AEM Sites, mit der Sie den Hotspot oder die Imagemap verknüpfen möchten.
+1. Tippen Sie auf das Symbol **[!UICONTROL Site-Selektor]** (Ordner mit Lupe) und navigieren Sie zu einer Seite in Ihren Experience Manager-Sites, mit der Sie den Hotspot oder die Imagemap verknüpfen möchten.
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -87,15 +87,15 @@ Verwenden Sie den Site-Selektor, um eine Web-Seite auszuwählen, wenn Sie einen 
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. Wenn Sie im **[!UICONTROL Vorschaumodus]** auf den Hotspot oder die Imagemap tippen, gehen Sie zur Seite der AEM-Site, die Sie angegeben haben.
+1. Wenn Sie im **[!UICONTROL Vorschaumodus]** auf den Hotspot oder die Imagemap tippen, gehen Sie zur Seite der Experience Manager-Website, die Sie angegeben haben.
 
 ## Wählen von Assets {#selecting-assets}
 
-Verwenden Sie diesen Selektor, um Bilder zur Verwendung in Karussellbannern, interaktiven Videos, Bildsets, gemischten Mediensets und Rotationssets auszuwählen. In interaktiven Videos ist der Asset-Selektor verfügbar, wenn Sie auf **[!UICONTROL Assets auswählen]** auf der Registerkarte **[!UICONTROL Inhalt]** tippen. In Karussellsets ist der Asset-Selektor verfügbar, wenn Sie eine neue Folie erstellen. In Bildsets, gemischten Mediensets und Rotationssets ist der Asset-Selektor verfügbar, wenn Sie ein neues Bildset, gemischtes Medienset oder Rotationsset erstellen.
+Verwenden Sie diesen Selektor, um Bilder zur Verwendung in Karussellbannern, interaktiven Videos, Bildsets, gemischten Mediensets und Rotationssets auszuwählen. In interaktiven Videos ist der Asset-Selektor verfügbar, wenn Sie auf **[!UICONTROL Assets auswählen]** auf der Registerkarte **[!UICONTROL Inhalt]** tippen. In Karussellsets ist der Asset-Selektor verfügbar, wenn Sie Folie erstellen. In Bildsets, gemischten Mediensets und Rotationssets ist der Asset-Selektor verfügbar, wenn Sie ein neues Bildset, gemischtes Medienset oder Rotationsset erstellen.
 
 Weitere Informationen finden Sie unter [Asset-Auswahl](search-assets.md#assetpicker).
 
-1. Gehen Sie zum Karussellset und erstellen Sie eine neue Folie. Gehen Sie alternativ zum interaktiven Video, zur Registerkarte **[!UICONTROL Inhalt]** und wählen Sie die Assets aus. Erstellen Sie alternativ ein gemischtes Medienset, Bildset oder Rotationsset.
+1. Gehen Sie zum Karussellset und erstellen Sie eine Folie. Sie können auch zum interaktiven Video navigieren, zur Registerkarte **[!UICONTROL Inhalt]** wechseln und Assets auswählen. Erstellen Sie alternativ ein gemischtes Medienset, Bildset oder Rotationsset.
 1. Tippen Sie auf das Symbol **[!UICONTROL Asset-Selektor]** (Ordner mit Lupe) und gehen Sie zu einem Asset.
 
    ![chlimage_1-532](assets/chlimage_1-532.png)
@@ -104,7 +104,7 @@ Weitere Informationen finden Sie unter [Asset-Auswahl](search-assets.md#assetpic
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   Sie können den Ordner, in dem AEM nach Assets suchen soll, angeben, indem Sie im Feld **[!UICONTROL Pfad]** zu einem anderen Ordner navigieren.
+   Ändern Sie, wo Experience Manager nach Assets suchen, indem Sie zu einem anderen Ordner im Feld **[!UICONTROL Pfad]** navigieren.
 
    Tippen Sie auf **[!UICONTROL Sammlung]**, um nur in Sammlungen nach Assets zu suchen.
 
@@ -114,6 +114,6 @@ Weitere Informationen finden Sie unter [Asset-Auswahl](search-assets.md#assetpic
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 
-1. Tippen Sie auf das Häkchen, um das Asset auszuwählen. Das Asset wird angezeigt.
+1. Wählen Sie das Asset aus, indem Sie auf das Häkchen tippen. Das Asset wird angezeigt.
 
    ![chlimage_1-536](assets/chlimage_1-536.png)
