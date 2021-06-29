@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: Business Practitioner
 feature: Asset-Verwaltung, Suche
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: 550d837c8ad86393eefecb264b69157fca312984
+source-git-commit: dc483b9871cebce64f7b60fec2144f1f19ef28ec
 workflow-type: tm+mt
-source-wordcount: '9743'
-ht-degree: 59%
+source-wordcount: '9788'
+ht-degree: 62%
 
 ---
 
@@ -565,7 +565,7 @@ So löschen Sie ein Asset oder einen Ordner mit einem Asset:
 
    * Wenn das Asset keine Referenzen aufweist, wird es gelöscht.
 
-   * Wenn das Asset Verweise aufweist, werden Sie durch eine Fehlermeldung darüber informiert, dass **ein oder mehrere Assets referenziert werden**. Sie können **[!UICONTROL Löschen erzwingen]** oder **[!UICONTROL Abbrechen]** auswählen.
+   * Wenn das Asset Referenzen aufweist, wird eine Fehlermeldung angezeigt mit dem Hinweis **Es wird auf ein oder mehrere Asset(s) verwiesen.** Sie können **[!UICONTROL Löschen erzwingen]** oder **[!UICONTROL Abbrechen]** auswählen.
    >[!NOTE]
    >
    >* Um die eingehenden Verweise von anderen Seiten aufzulösen oder zu entfernen, aktualisieren Sie die entsprechenden Verweise, bevor Sie ein Asset löschen. Deaktivieren Sie außerdem die Option Löschen erzwingen mit einer Überlagerung, um Benutzer daran zu hindern, referenzierte Assets zu löschen und fehlerhafte Links zu hinterlassen.
@@ -588,25 +588,25 @@ Nach dem Hochladen, Verarbeiten oder Bearbeiten Ihrer Assets auf der Autoreninst
 
 Weitere Informationen zu [!DNL Dynamic Media] finden Sie unter [Publishing [!DNL Dynamic Media] Assets](/help/assets/publishing-dynamicmedia-assets.md).
 
-1. Navigieren Sie zum Speicherort des Assets oder Asset-Ordners, das Sie veröffentlichen möchten oder das Sie aus der Veröffentlichungsumgebung entfernen möchten (Veröffentlichung rückgängig machen).
+1. Gehen Sie zum Speicherort des Assets oder Asset-Ordners, das/den Sie veröffentlichen möchten oder das/den Sie aus der Veröffentlichungsumgebung entfernen möchten (Veröffentlichung rückgängig machen).
 
 1. Wählen Sie das Asset oder den Ordner aus, dessen Veröffentlichung rückgängig gemacht werden soll, und klicken Sie in der Symbolleiste auf die Option **[!UICONTROL Veröffentlichung verwalten]** ![Veröffentlichung verwalten](assets/do-not-localize/globe-publication.png) . Um eine schnelle Veröffentlichung durchzuführen, wählen Sie alternativ in der Symbolleiste die Option **[!UICONTROL Quick Publish]** aus. Wenn der Ordner, den Sie veröffentlichen möchten, einen leeren Ordner enthält, wird der leere Ordner nicht veröffentlicht.
 
-1. Wählen Sie nach Bedarf die Option **[!UICONTROL Publish]** oder **[!UICONTROL Unpublish]** aus.
+1. Wählen Sie je nach Bedarf ddie Option **[!UICONTROL Veröffentlichen]** oder **[!UICONTROL Veröffentlichung rückgängig machen]** aus.
 
-   ![Veröffentlichung rückgängig machen](assets/unpublish_action.png)
-   *Abbildung: Veröffentlichungs- und Rückgängigmachen der Veröffentlichung sowie die Planungsoption.*
+   ![Aktion zum Rückgängigmachen der Veröffentlichung](assets/unpublish_action.png)
+   *Abbildung: Veröffentlichen und Rückgängigmachen der Veröffentlichung sowie die Planungsoption.*
 
-1. Wählen Sie **[!UICONTROL Jetzt]** aus, um sofort auf das Asset zu reagieren, oder wählen Sie **[!UICONTROL Später]** aus, um die Aktion zu planen. Wählen Sie ein Datum und eine Uhrzeit aus, wenn Sie die Option **[!UICONTROL Später]** wählen. Klicken Sie auf **[!UICONTROL Weiter]**.
+1. Wählen Sie **[!UICONTROL Jetzt]** aus, um das Asset sofort zu bearbeiten, oder wählen Sie **[!UICONTROL Später]** aus, um die Aktion zu planen. Wählen Sie ein Datum und eine Uhrzeit aus, wenn Sie die Option **[!UICONTROL Später]** wählen. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-1. Wenn ein Asset beim Veröffentlichen auf andere Assets verweist, werden seine Verweise im Assistenten aufgeführt. Es werden nur die Verweise angezeigt, die seit der letzten Veröffentlichung entweder rückgängig gemacht oder geändert wurden. Wählen Sie die Verweise aus, die Sie veröffentlichen möchten.
+1. Wenn ein Asset beim Veröffentlichen auf andere Assets verweist, werden seine Referenzen im Assistenten aufgelistet. Es werden nur die Verweise angezeigt, die seit der letzten Veröffentlichung entweder rückgängig gemacht oder geändert wurden. Wählen Sie die Referenzen aus, die Sie veröffentlichen möchten.
 
-1. Wenn beim Rückgängigmachen der Veröffentlichung ein Asset andere Assets referenziert, wählen Sie die Verweise aus, deren Veröffentlichung Sie rückgängig machen möchten. Klicken Sie auf **[!UICONTROL Veröffentlichung rückgängig machen]**. Klicken Sie im Bestätigungsdialogfeld auf **[!UICONTROL Abbrechen]** , um die Aktion abzubrechen, oder klicken Sie auf **[!UICONTROL Veröffentlichung rückgängig machen]**, um zu bestätigen, dass die Veröffentlichung der Assets zum angegebenen Datum rückgängig gemacht werden soll.
+1. Wenn beim Rückgängigmachen der Veröffentlichung ein Asset auf andere Assets verweist, wählen Sie die Referenzen, deren Veröffentlichung Sie rückgängig machen möchten. Klicken Sie auf **[!UICONTROL Veröffentlichung rückgängig machen]**. Klicken Sie im Bestätigungsdialog auf **[!UICONTROL Abbrechen]**, um die Aktion abzubrechen, oder klicken Sie auf **[!UICONTROL Veröffentlichung rückgängig machen]**, um zu bestätigen, dass die Veröffentlichung der Assets zum angegebenen Datum rückgängig gemacht werden soll.
 
 Machen Sie sich mit den folgenden Einschränkungen und Tipps im Zusammenhang mit dem Veröffentlichen oder Rückgängigmachen der Veröffentlichung von Assets oder Ordnern vertraut:
 
-* Die Option [!UICONTROL Veröffentlichung verwalten] ist nur für Benutzerkonten mit Replikationsberechtigungen verfügbar.
-* Wenn Sie die Veröffentlichung eines komplexen Assets rückgängig machen möchten, achten Sie darauf, nur die Veröffentlichung des Assets rückgängig zu machen. Vermeiden Sie das Rückgängigmachen der Veröffentlichung der Verweise, da diese von anderen veröffentlichten Assets referenziert werden können.
+* Die Option [!UICONTROL Veröffentlichung verwalten] ist nur für Benutzerkonten mit Berechtigungen zur Replikation verfügbar.
+* Wenn Sie die Veröffentlichung eines komplexen Assets rückgängig machen möchten, achten Sie darauf, nur die Veröffentlichung des Assets rückgängig zu machen. Machen Sie nicht die Veröffentlichung der Referenzen rückgängig, da diese möglicherweise auch von anderen veröffentlichten Assets referenziert werden.
 * Leere Ordner werden nicht veröffentlicht.
 * Wenn Sie ein Asset veröffentlichen, das momentan verarbeitet wird, wird nur der ursprüngliche Inhalt veröffentlicht. Die Ausgabedarstellungen fehlen. Warten Sie entweder, bis die Verarbeitung abgeschlossen ist, und veröffentlichen Sie das Asset erst dann, oder veröffentlichen Sie es erneut, wenn die Verarbeitung abgeschlossen ist.
 
@@ -632,7 +632,7 @@ CUGs stellen eine zusätzliche Möglichkeit dar, den Zugang zu Ihren Assets zu b
 1. Veröffentlichen Sie den Ordner und versuchen Sie, über die Veröffentlichungsinstanz darauf zuzugreifen. Es wird ein Anmeldebildschirm angezeigt.
 1. Wenn Sie Mitglied der CUG sind, geben Sie Ihre Anmeldedaten ein. Nachdem Sie von [!DNL Experience Manager] authentifiziert wurden, wird der Ordner angezeigt.
 
-## Suchen von Assets {#assetsearch}
+## Suchen von Assets   {#assetsearch}
 
 Die Suche nach Assets spielt bei der Nutzung eines Digital-Asset-Management-Systems eine zentrale Rolle – sowohl für eine weitere Verwendung durch Kreativprofis als auch für eine robuste Verwaltung von Assets durch Geschäftsbenutzer und Marketing-Experten oder für die Verwaltung durch DAM-Administratoren.
 
@@ -726,7 +726,7 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 1. Klicken Sie in einer der folgenden Optionen auf die Option **[!UICONTROL Anmerken]** :
 
    * [Schnellaktionen](/help/assets/manage-assets.md#quick-actions)
-   * Wählen Sie in der Symbolleiste das Asset aus oder navigieren Sie zur Asset-Seite.
+   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben   oder zur Asset-Seite navigiert sind.
 
 1. Fügen Sie im Feld **[!UICONTROL Kommentar]** am unteren Rand der Zeitleiste einen Kommentar hinzu. Sie haben auch die Möglichkeit, einen Bereich im Bild zu markieren und im Dialogfeld **[!UICONTROL Anmerkung hinzufügen]** eine Anmerkung hinzuzufügen.
 
@@ -765,7 +765,17 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 
 ### Anzeigen gespeicherter Anmerkungen {#viewing-saved-annotations}
 
-1. Um die gespeicherten Anmerkungen zu einem Asset anzuzeigen, navigieren Sie zum Speicherort des Assets und öffnen Sie die Asset-Seite für dieses Asset.
+Es kann jeweils nur eine Anmerkung angezeigt werden.
+
+>[!NOTE]
+>
+>Wenn Sie mehrere Anmerkungen auswählen, wird die neueste Anmerkung in der Benutzeroberfläche angezeigt.
+>
+>Die Mehrfachauswahl wird nur zum Drucken des kommentierten Assets als PDF unterstützt.
+
+**So zeigen Sie gespeicherte Anmerkungen für ein Asset an:**
+
+1. Navigieren Sie zum Speicherort des Assets und öffnen Sie die Asset-Seite.
 
 1. Wählen Sie in der Experience Manager-Benutzeroberfläche **[!UICONTROL Timeline]** aus.
 1. Wählen Sie in der Liste **[!UICONTROL Alle anzeigen]** in der Zeitleiste **[!UICONTROL Kommentare]** aus, um die Ergebnisse anhand von Anmerkungen zu filtern.
@@ -781,6 +791,10 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 Wenn ein Asset Anmerkungen aufweist oder einem Prüfungs-Workflow unterzogen wurde, können Sie das Asset einschließlich der Anmerkungen und des Prüfungsstatus für die Offline-Prüfung als PDF-Datei drucken.
 
 Sie können auch nur die Anmerkungen oder nur den Prüfungsstatus drucken.
+
+>[!NOTE]
+>
+>Sie können beim Drucken des kommentierten Assets mehrere Anmerkungen als PDF auswählen.
 
 Um die Anmerkungen und den Prüfungsstatus zu drucken, klicken Sie auf **[!UICONTROL Drucken]** und befolgen Sie die Anweisungen im Assistenten. Die Option **[!UICONTROL Drucken]** wird nur dann in der Symbolleiste angezeigt, wenn dem Asset mindestens eine Anmerkung oder ein Prüfungsstatus zugewiesen ist.
 
@@ -914,11 +928,11 @@ Weitere Informationen zur Sammlungsverwaltung finden Sie unter [Verwalten von Sa
 
 ## Ausblenden abgelaufener Assets beim Anzeigen von Assets im Desktop-Programm oder Adobe Asset Link {#hide-expired-assets-via-acp-api}
 
-[!DNL Experience Manager] Das -Desktop-Programm ermöglicht den Zugriff auf das DAM-Repository über den Windows- oder Mac-Desktop. Adobe Asset Link ermöglicht den Zugriff auf Assets aus den unterstützten [!DNL Creative Cloud]-Desktop-Applikationen.
+Das [!DNL Experience Manager]-Desktop-Programm ermöglicht den Zugriff auf das DAM-Repository über Windows- oder Mac-Desktops. Adobe Asset Link ermöglicht den Zugriff auf Assets aus den unterstützten [!DNL Creative Cloud]-Desktop-Programmen.
 
 Beim Durchsuchen von Assets in der [!DNL Experience Manager]-Benutzeroberfläche werden die abgelaufenen Assets nicht angezeigt. Um die Anzeige, das Durchsuchen und den Abruf abgelaufener Assets beim Durchsuchen von Assets im Desktop-Programm und über Asset Link zu verhindern, können Administratoren die folgende Konfiguration durchführen. Die Konfiguration funktioniert für alle Benutzer, unabhängig von den Administratorberechtigungen.
 
-Führen Sie den folgenden CURL-Befehl aus. Stellen Sie den Lesezugriff auf `/conf/global/settings/dam/acpapi/` für Benutzer sicher, die auf Assets zugreifen. Benutzer, die zur Gruppe `dam-user` gehören, haben standardmäßig die Berechtigung.
+Führen Sie den folgenden CURL-Befehl aus. Stellen Sie den Lesezugriff auf `/conf/global/settings/dam/acpapi/` für Benutzer sicher, die auf Assets zugreifen. Benutzer, die zur Gruppe `dam-user` gehören, haben standardmäßig die Berechtigung dazu.
 
 ```curl
 curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/global/settings/dam/acpapi/configuration/_jcr_content' \
@@ -930,4 +944,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Weitere Informationen finden Sie unter [Durchsuchen von DAM-Assets mit dem -Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#browse-search-preview-assets) und [Verwendung von Adobe Asset Link](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
+Weitere Informationen finden Sie unter [Durchsuchen von DAM-Assets mit dem Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#browse-search-preview-assets) und [Verwenden von Adobe Asset Link](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
