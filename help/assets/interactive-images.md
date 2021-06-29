@@ -11,10 +11,10 @@ docset: aem65
 feature: Interaktive Bilder
 role: Business Practitioner, Administrator
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
-source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
+source-git-commit: c59ec6e2429095c07c9b2d6bb83dad6ab4f80aa0
 workflow-type: tm+mt
-source-wordcount: '4284'
-ht-degree: 68%
+source-wordcount: '4286'
+ht-degree: 62%
 
 ---
 
@@ -59,8 +59,8 @@ Siehe [Hochladen eines Bildbanners](#uploading-an-image-banner).
 1. **Hinzufügen von Hotspots zu einem Bildbanner** : Fügen Sie einem Bildbanner einen oder mehrere Hotspots hinzu und weisen Sie jedem eine Aktion wie einen Hyperlink, eine Schnellansicht oder ein Experience Fragment zu. Nachdem Sie Hotspots hinzugefügt haben, schließen Sie diese Aufgabe ab, indem Sie das interaktive Bild veröffentlichen.
 
    * Siehe [Hinzufügen von Hotspots zu einem Bildbanner](#adding-hotspots-to-an-image-banner).
-   * Siehe [(Optional) Anzeigen einer Vorschau für interaktive Bilder](#optional-previewing-interactive-images). Bei Bedarf können Sie eine Darstellung des Banners mit Shopping-Funktion anzeigen und dessen Interaktivität testen.
-   * Weitere Informationen zum Veröffentlichen von interaktiven Bild-Assets finden Sie unter [Veröffentlichen von Assets](/help/assets/publishing-dynamicmedia-assets.md).
+   * Siehe [Anzeigen einer Vorschau für interaktive Bilder](#optional-previewing-interactive-images) - Optional. Bei Bedarf können Sie eine Darstellung des Banners mit Shopping-Funktion anzeigen und dessen Interaktivität testen.
+   * Weitere Informationen zum Veröffentlichen interaktiver Bild-Assets finden Sie unter [Veröffentlichen von Assets](/help/assets/publishing-dynamicmedia-assets.md) .
 
 1. **Fügen Sie ein interaktives Bild zu Ihrer Website**  hinzu: Wenn Sie Experience Manager Sites, eCommerce oder beides verwenden, können Sie das interaktive Bild zu einer Web-Seite in Experience Manager hinzufügen. Ziehen Sie die interaktive Medienkomponente auf die Seite. Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
@@ -74,7 +74,7 @@ Siehe [Hochladen eines Bildbanners](#uploading-an-image-banner).
 >
 >Diese Aufgabe ist nur erforderlich, wenn Folgendes zutrifft:
 >
->* Sie möchten das Bild durch Auslösen von Schnellansichten in ein interaktives Bild umwandeln.
+>* Sie möchten dem Bild Interaktivität hinzufügen, indem Sie die Schnellansicht aktivieren.
 >* Ihre Implementierung von Experience Manager verwendet *nicht* ein eCommerce-Integrations-Framework, um Produktdaten aus einer eCommerce-Lösung wie IBM® WebSphere® Commerce, Elastic Path, hybris oder Intershop in den Experience Manager zu ziehen. Siehe [eCommerce-Konzepte in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 >
@@ -164,7 +164,7 @@ Sie können den in den drei oben genannten Beispielen verwendeten Ansatz auch au
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
-Die Demo-Web-Seite enthält mehrere Produkt-Miniaturansichten. Jede davon verfügt über eine Schnellansichts-Schaltfläche mit der Bezeichnung „Mehr anzeigen“. Klicken Sie bei aktiviertem Debugging-Tool des Webbrowsers auf jede Schaltfläche und notieren Sie sich die aufgezeichneten Schnellansichts-URLs. Nachdem Sie alle vier Produktschnellansichten auf der Seite aktiviert haben, verfügen Sie über die folgende Liste mit den an das Backend gesendeten Schnellansichtsanfragen:
+Die Demo-Web-Seite enthält mehrere Produkt-Miniaturansichten. Jede davon verfügt über eine Schnellansichts-Schaltfläche mit der Bezeichnung „Mehr anzeigen“. Klicken Sie bei aktiviertem Debugging-Tool des Webbrowsers auf jede Schaltfläche und notieren Sie sich die aufgezeichneten Schnellansichts-URLs. Nachdem Sie alle vier Produktschnellansichtsanforderungen aktiviert haben, die auf der Seite verfügbar sind, erhalten Sie die folgende Liste mit den an das Backend gesendeten Schnellansichtsanforderungen:
 
 * `/datafeed/Male-Windbreaker.json`
 * `/datafeed/Male-SimpleHenley.json`
@@ -216,7 +216,7 @@ Nachdem Sie die Viewer-Vorgabe gespeichert haben, wird sie automatisch auf der L
 
    Sie sind nun bereit, ein Bildbanner hochzuladen.
 
-## Hochladen eines Bildbanners {#uploading-an-image-banner}
+## Laden Sie ein Bildbanner hoch {#uploading-an-image-banner}
 
 Wenn Sie die gewünschten Bilder bereits hochgeladen haben, fahren Sie mit dem nächsten Schritt fort: [Hinzufügen von Hotspots zu einem Bildbanner](#adding-hotspots-to-an-image-banner).
 
@@ -282,7 +282,7 @@ Wenn Sie interaktive Bilder mit Hotspots bearbeiten, um das Bild zu beschneiden,
       * Wenn Sie Experience Manager Sites oder eCommerce-Kunde sind, tippen oder klicken Sie auf das Produktauswahlsymbol (Lupe), um die Seite &quot; auswählen&quot;zu öffnen. Tippen oder klicken Sie auf das Produkt, das Sie verwenden möchten, und tippen Sie oben rechts auf **[!UICONTROL Wählen Sie]** aus, damit Sie zur Seite &quot;Hotspot-Verwaltung&quot;zurückkehren können.
       * Wenn Sie *kein* Experience Manager Sites- oder E-Commerce-Kunde sind, gehen Sie wie folgt vor:
 
-         * Siehe [Identifizieren von Hotspot-Variablen](#optional-identifying-hotspot-variables); Sie müssen diese Variablen definieren.
+         * Siehe [Ermitteln von Hotspot-Variablen](#optional-identifying-hotspot-variables); müssen Sie diese Variablen definieren.
          * Geben Sie anschließend manuell den SKU-Wert ein. Geben Sie im Textfeld „SKU-Wert“ die Bestandseinheit (Stock Keeping Unit, SKU) des Produkts ein. Hierbei handelt es sich um eine eindeutige Kennung für die jeweiligen von Ihnen angebotenen Produkte oder Services. Der variable Teil der Schnellansichtsvorlage wird automatisch mit dem eingegebenen SKU-Wert ausgefüllt, sodass das System den Hotspot, auf den getippt wird, mit der Schnellansicht einer bestimmten SKU verbinden kann.
          * (Optional) Wenn andere Variablen in der Schnellansicht vorhanden sind, die Sie zur weiteren Identifizierung eines Produkts verwenden müssen, tippen Sie auf **[!UICONTROL Generische Variable hinzufügen]**. Geben Sie im Textfeld eine zusätzliche Variable an. Beispielsweise ist `category=Males` eine hinzugefügte Variable.
    * Tippen Sie auf **[!UICONTROL Hyperlink]**.
@@ -292,7 +292,7 @@ Wenn Sie interaktive Bilder mit Hotspots bearbeiten, um das Bild zu beschneiden,
 
    Vergessen Sie nicht anzugeben, ob der Link auf einer neuen Browser-Registerkarte (empfohlener Standard) oder auf derselben Registerkarte geöffnet werden soll.
 
-   Weitere Informationen finden Sie unter [Arbeiten mit Selektoren](/help/assets/working-with-selectors.md).
+   Weitere Informationen finden Sie unter [Arbeiten mit Selektoren](/help/assets/working-with-selectors.md) .
 
    * Tippen Sie auf **[!UICONTROL Experience Fragment]**.
 
@@ -324,7 +324,7 @@ Sie können die Vorschau verwenden, um eine Darstellung davon anzuzeigen, wie Ih
 
 Wenn das interaktive Bild Ihren Vorstellungen entspricht, können Sie es veröffentlichen.
 Siehe [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](/help/assets/embed-code.md).
-Siehe [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/linking-urls-to-yourwebapplication.md). Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
+Siehe [Verknüpfen von URLs mit einer Webanwendung](/help/assets/linking-urls-to-yourwebapplication.md). Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
 Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 **So zeigen Sie eine Vorschau für interaktive Bilder an:**
@@ -334,9 +334,9 @@ Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/adding-dynam
 1. Tippen Sie in der Liste „Viewer“ auf **[!UICONTROL Shoppable_Banner]** oder auf den Namen der von Ihnen erstellten Viewer-Vorgabe für interaktive Bilder.
 1. Tippen Sie auf Hotspots auf dem Bild, wenn Sie die zugehörigen Aktionen testen möchten.
 
-## Veröffentlichen von interaktiven Bild-Assets {#publishing-interactive-image-assets}
+## Veröffentlichen interaktiver Bild-Assets {#publishing-interactive-image-assets}
 
-Weitere Informationen zum Veröffentlichen von interaktiven Bild-Assets finden Sie unter [Veröffentlichen von Assets](/help/assets/publishing-dynamicmedia-assets.md).
+Weitere Informationen zum Veröffentlichen interaktiver Bild-Assets finden Sie unter [Veröffentlichen von Assets](/help/assets/publishing-dynamicmedia-assets.md) .
 
 ## Integrieren eines interaktiven Bildes auf Ihrer Website {#integrating-an-interactive-image-with-your-website}
 
@@ -369,7 +369,7 @@ Die Integration ist so einfach wie das Entfernen des `IMG`-Tags und dessen Erset
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html)
 
 >[!NOTE]
-Zurzeit dienen die Hotspots auf dem interaktiven Bild mit Shopping-Funktion auf der Demo-Website nur zu Anzeigezwecken. Sie sind zurzeit noch nicht in die Schnellansichten integriert.
+An dieser Stelle dienen die Hotspots auf dem interaktiven Bild mit Shopping-Funktion auf der Demowebsite nur zu Anzeigezwecken. sie sind noch nicht in die Schnellansicht integriert.
 
 Um einen &quot;Zuschnitt&quot;auf ein interaktives Bild mit Shopping-Funktion für eine responsive Umgebung anzuwenden, können Sie das Konfigurationsattribut für interaktive Bilder `ZoomView.iscommand` in den Pfad einbeziehen. Die Komponente `ZoomView` wird aufgerufen und `iscommand` ist der Image Serving-Befehl &quot;Zuschneiden&quot;, den Sie anwenden.
 
@@ -379,7 +379,7 @@ Informationen finden Sie unter [Image-Serving-Befehl](https://experienceleague.a
 
 Jetzt können Sie das interaktive Bild in eine vorhandene Schnellansicht auf Ihrer Website integrieren.
 
-## Integrieren eines interaktiven Bildes in einer Schnellansicht  {#integrating-an-interactive-image-with-an-existing-quickview}
+## Integrieren eines interaktiven Bildes in eine Schnellansicht {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
 Diese Aufgabe ist nur relevant, wenn Sie ein eigenständiger Kunde von Experience Manager Assets sind.
@@ -434,7 +434,7 @@ Daher ist es nur erforderlich, die Auskommentierung des Codes aufzuheben und den
 
 Der Prozess der Erstellung der Schnellansichts-URL ist das Gegenteil des Prozesses, der zur Identifizierung der zuvor behandelten Hotspot-Variablen verwendet wird.
 
-Informationen hierzu finden Sie unter [Ermitteln von Hotspot-Variablen](#optional-identifying-hotspot-variables).
+Siehe [Ermitteln von Hotspot-Variablen](#optional-identifying-hotspot-variables).
 
 Anhand der vorherigen Beispiele für Schnellansichts-URLs können Sie in den folgenden Beispielen sehen, wie die Schnellansichts-URL in jedem Fall erstellt wird:
 
@@ -515,6 +515,6 @@ Die endgültige Demowebsite mit dem vollständig integrierten interaktiven Bild 
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html)
 
-## Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups {#using-quickviews-to-create-custom-pop-ups}
+## Verwenden der Schnellansicht zum Erstellen benutzerdefinierter Popups {#using-quickviews-to-create-custom-pop-ups}
 
-Siehe [Erstellen benutzerdefinierter Popups mit Schnellansichten](/help/assets/custom-pop-ups.md).
+Siehe [Erstellen benutzerdefinierter Popups mit der Schnellansicht](/help/assets/custom-pop-ups.md).
