@@ -3,12 +3,12 @@ title: Suchfunktion erweitern
 description: Erweitern Sie die Suchfunktionen von [!DNL Adobe Experience Manager Assets] über die Standardeinstellungen hinaus.
 contentOwner: AG
 role: Developer
-feature: Suchen
+feature: Suche
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
-source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
+source-git-commit: 0db95c4e7fc1ca20ce4f2d352c1276aa546dc7c3
 workflow-type: tm+mt
 source-wordcount: '839'
-ht-degree: 77%
+ht-degree: 74%
 
 ---
 
@@ -59,7 +59,7 @@ Als Best Practice hat es sich erwiesen, eine vorhandene Eigenschaft zu kopieren 
 
 So erstellen Sie ein Eigenschaftsprädikat:
 
-1. Erstellen Sie einen Komponentenordner in Ihrem Projektverzeichnis, z. B.**/ apps/geometrixx/components/titlepredicate**.
+1. Erstellen Sie einen Komponentenordner in Ihrem Projektverzeichnis, z. B. **/apps/weretail/components/titlepredicate**.
 1. Fügen Sie **content.xml** hinzu:
 
    ```xml
@@ -152,7 +152,7 @@ So erstellen Sie ein Eigenschaftsprädikat:
 
 So erstellen Sie eine Gruppeneigenschaft:
 
-1. Erstellen Sie einen Komponentenordner in Ihrem Projektverzeichnis, z. B. **/apps/geometrixx/components/picspredicate**.
+1. Erstellen Sie einen Komponentenordner in Ihrem Projektverzeichnis, z. B. **/apps/weretail/components/picspredicate**.
 1. Fügen Sie **content.xml** hinzu:
 
    ```xml
