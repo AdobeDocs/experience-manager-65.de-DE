@@ -1,17 +1,17 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-sub-product: Formulare
-solution: Experience Manager, Experience Manager Forms
+sub-product: forms
+solution: Experience Manager, Experience Manager Forms, Experience Manager 6.5
 audience: end-user
 user-guide-title: Adobe Experience Manager 6.5, Forms-Anleitung
 breadcrumb-title: Forms-Anleitung
 user-guide-description: Digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren.
 role: Business Practitioner
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
 workflow-type: tm+mt
 source-wordcount: '3718'
-ht-degree: 71%
+ht-degree: 72%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 71%
    + [Einführung in das Authoring adaptiver Formulare](using/introduction-forms-authoring.md)
    + [Einführung in interaktive Kommunikation](using/interactive-communications-overview.md)
    + [Einführung in das Verwalten von Formularen](using/introduction-managing-forms.md)
-   + [Einführung zum Dienst für die automatische Formularkonvertierung](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/introduction.html)
+   + [Einführung in den Automated Forms Conversion Service (AFCS)](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/introduction.html)
    + Tutorial: Erstellen Sie Ihr erstes adaptives Formular {#create-first-adaptive-form}
       + [Tutorial: Erstellen des ersten adaptiven Formulars](using/create-your-first-adaptive-form.md)
       + [Schulung: Erstellen eines adaptiven Formulars](using/create-adaptive-form.md)
@@ -127,7 +127,7 @@ ht-degree: 71%
    + [Einführung in die AEM Forms-Datenintegration](using/data-integration.md)
    + [Konfigurieren von Datenquellen](using/configure-data-sources.md)
    + [Microsoft Dynamics OData-Konfiguration](using/ms-dynamics-odata-configuration.md)
-   + [Formulardatenmodell erstellen](using/create-form-data-models.md)
+   + [Erstellen des Formulardatenmodells](using/create-form-data-models.md)
    + [Arbeiten mit einem Formulardatenmodell](using/work-with-form-data-model.md)
    + [Verwenden eines Formulardatenmodells](using/using-form-data-model.md)
 + Adaptiv Forms- einfaches Authoring {#adaptive-forms-basic-authoring}
@@ -139,7 +139,7 @@ ht-degree: 71%
    + [Adaptive Formulare Suchbegriffe](using/adaptive-forms-keywords.md)
    + [Tabellen in adaptiven Formularen](using/adaptive-forms-tables.md)
    + [Adaptives Formular automatisch speichern](using/auto-save-an-adaptive-form.md)
-   + [Konfigurieren der Umleitungsseite](using/configuring-redirect-page.md)
+   + [Konfigurieren einer Umleitungsseite](using/configuring-redirect-page.md)
    + [Zugreifbare adaptive Formulare erstellen](using/creating-accessible-adaptive-forms.md)
    + [Erstellen von Formularen mit wiederholbaren Abschnitten](using/creating-forms-repeatable-sections.md)
    + [Betten Sie ein adaptives Formular oder eine interaktive Kommunikation in die AEM-Sites-Seite ein.](using/embed-adaptive-form-aem-sites.md)
@@ -151,11 +151,11 @@ ht-degree: 71%
    + [Formularvorschau](using/previewing-forms.md)
    + [Wiederverwenden adaptiver Formulare](using/reusing-adaptive-forms.md)
    + [Trennzeichenkomponenten in adaptiven Formularen](using/separator-component-in-adaptive-forms.md)
-   + [Anwenden von elektronischen Signaturen auf ein Formular mithilfe von Freihandsignaturen](using/signing-forms-using-scribble.md)
+   + [Anwenden elektronischer Signaturen auf ein Formular mithilfe der Freihandsignatur](using/signing-forms-using-scribble.md)
    + [Tastaturbefehle für AEM Forms](using/keyboard-shortcuts.md)
-   + [Verknüpfen von Reviewer mit einem Formular für die Übermittlung](using/adding-reviewers-form.md)
+   + [Verknüpfen von Übermittlungs-Reviewern mit einem Formular](using/adding-reviewers-form.md)
    + [Verfassen von kontextsensitiver Hilfe für Formularfelder](using/authoring-in-field-help.md)
-   + [Verwenden Sie den Layout-Modus, um die Größe von Komponenten zu ändern](/help/forms/using/resize-using-layout-mode.md)
+   + [Verwenden des Layout-Modus zum Ändern der Größe von Komponenten](/help/forms/using/resize-using-layout-mode.md)
 + Adaptive Formulare - Erweitertes Authoring {#adaptive-forms-advanced-authoring}
    + [Erstellen adaptiver Formulare mithilfe des JSON-Schemas](using/adaptive-form-json-schema-form-model.md)
    + [Adaptive Formulare mithilfe des XML-Schemas erstellen](using/adaptive-form-xml-schema-form-model.md)
@@ -168,10 +168,10 @@ ht-degree: 71%
    + [Adaptive Formularvorlagen](using/template-editor.md)
    + [Adaptive Formularausdrücke](using/adaptive-form-expressions.md)
    + [Generierung eines Datensatzdokuments für adaptive Formulare](using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-   + [Leistung großer Formulare mit verzögertem Laden verbessern](using/lazy-loading-adaptive-forms.md)
+   + [Verbessern der Performance umfangreicher Formulare durch verzögertes Laden](using/lazy-loading-adaptive-forms.md)
    + [Vorbefüllen von Feldern in adaptiven Formularen](using/prepopulate-adaptive-form-fields.md)
    + [Verwenden von SOM-Ausdrücken in adaptiven Formularen](using/using-som-expressions-adaptive-forms.md)
-   + [Hinzufügen von Informationen von Benutzerdaten zu Formularübermittlungsmetadaten](using/form-submission-metadata.md)
+   + [Hinzufügen von Informationen aus Benutzerdaten zu Formularübermittlungsmetadaten](using/form-submission-metadata.md)
    + [XFA-Unterstützung in XDP-basierten adaptiven Formularen](using/xfa-api-supported-in-adaptive-form.md)
    + [Inhalt auf Seite Null in Designer ändern](using/changing-page-zero-content-designer.md)
    + [Ausgewählten Benutzergruppen Zugriff auf den Regel-Editor gewähren](using/rule-editor-access-user-groups.md)
@@ -180,7 +180,7 @@ ht-degree: 71%
    + [Stilkonstrukte für adaptive Formulare](using/styling-constructs-adaptive-forms.md)
    + [Synchronisieren von adaptiven Formularen mit XFA-Formularvorlagen](using/synchronizing-adaptive-forms-xfa.md)
    + [Integrieren von Adobe Sign mit AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
-   + [Erstellen und Verwalten von Überprüfungen von Assets in Formularen](using/create-reviews-forms.md)
+   + [Erstellen und Verwalten von Assetüberprüfungen in Formularen](using/create-reviews-forms.md)
    + [Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation in eine AEM Sites-Einzelseitenanwendung](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
    + [Standardmäßige Validierungsfehlermeldungen Adaptive Forms](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
 + Interaktive Kommunikation {#interactive-communications}
@@ -193,16 +193,16 @@ ht-degree: 71%
    + [Druckkanal und Webkanal](using/web-channel-print-channel.md)
    + [Konfigurationseigenschaften für interaktive Kommunikation](using/interactive-communication-configuration-properties.md)
    + [Generieren mehrerer interaktiver Kommunikation](using/generate-multiple-interactive-communication-using-batch-api.md)
-   + [Verwenden Sie den Layout-Modus, um die Größe von Komponenten zu ändern](using/resize-using-layout-mode-interactive-communication.md)
+   + [Verwenden des Layout-Modus zum Ändern der Größe von Komponenten](using/resize-using-layout-mode-interactive-communication.md)
 + Workflows {#workflows}
    + [Formularzentrierte Workflows in OSGi](using/aem-forms-workflow.md)
    + [Formularzentrierte Workflows in OSGi - Schritt-Referenz](using/aem-forms-workflow-step-reference.md)
-   + [Wählen Sie einen Benutzer oder eine Gruppe für die Arbeitsschritte bezüglich der AEM-Formularzentrale aus.](using/dynamically-select-a-user-or-group-for-aem-workflow.md)
+   + [Dynamische Auswahl eines Benutzers order einer Gruppe für AEM Forms-zentrierte Workflow-Schritte](using/dynamically-select-a-user-or-group-for-aem-workflow.md)
    + [Aktionen und Funktionen formularorientierter AEM-Workflows in OSGi- und AEM Forms JEE-Workflows](using/capabilities-osgi-jee-workflows.md)
    + [Starten Sie Document Services-APIs aus dem AEM-Arbeitsablauf](using/initiating-document-services-apis-aem.md)
    + [Protokollierung in AEM Forms-Workflows](/help/forms/using/forms-workflow-logs.md)
    + [Variablen in AEM Workflows](using/variable-in-aem-workflows.md)
-   + [Freigeben und Anfordern des Zugriffs auf Inbox-Elemente eines Benutzers](using/configure-shared-queues-osgi.md)
+   + [Freigeben und Anfordern des Zugriffs auf Posteingangselemente eines Benutzers](using/configure-shared-queues-osgi.md)
    + [Abwesenheitskonfiguration](using/configure-out-of-office-settings.md)
 + Arbeitsablauf in AEM Forms {#use-aem-forms-workspace}
    + [Einführung in AEM Forms Workspace](using/introduction-html-workspace.md)
@@ -343,7 +343,7 @@ ht-degree: 71%
    + [Überwachter Ordner in AEM Forms](using/watched-folder-in-aem-forms.md)
    + [Komponente „Drafts and Submissions“](using/draft-submission-component.md)
    + [Einbetten einer Komponente „Link“ in eine Seite](using/embedding-link-component-page.md)
-   + [Veröffentlichung von Formularen und Dokumenten und Veröffentlichungen rückgängig machen](using/publishing-unpublishing-forms.md)
+   + [Veröffentlichung von Formularen und Dokumenten und Rückgängigmachen von Veröffentlichungen](using/publishing-unpublishing-forms.md)
    + [Auflisten von Formularen auf einer Webseite mithilfe von APIs](using/listing-forms-webpage-using-apis.md)
    + [Öffnen und Ausfüllen veröffentlichter Formulare](using/accessing-filling-published-forms.md)
    + [Senden einer Formularsendebestätigung per E-Mail](using/form-submission-receipt-via-email.md)
@@ -373,12 +373,12 @@ ht-degree: 71%
    + [AEM aktivieren, um durch Document Security geschützte PDF-Dokumente zu durchsuchen](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [Schützen von Dokumenten im Auftrag eines anderen Benutzers](using/protect-document-on-behalf-of-another-user.md)
 + Forms Designer {#use-forms-designer}
-   + [Verwenden des Designers](http://www.adobe.com/go/learn_aemforms_designer_65)
-   + [Kurzanleitung zu Designer-Lernprogrammen](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65_de)
-   + [Designer -Beispieldateien](http://www.adobe.com/go/learn_aemforms_designer_samples_65_de)
-   + [Designer-Grundlagen zur Skripterstellung](http://www.adobe.com/go/learn_aemforms_scriptingBasics_65)
-   + [Designer -Skriptreferenz](http://www.adobe.com/go/learn_aemforms_scriptingReference_65)
-   + [Designer FormCalc-Referenz](http://www.adobe.com/go/learn_aemforms_formCalc_65)
+   + [Verwenden von Designer](http://www.adobe.com/go/learn_aemforms_designer_65)
+   + [Quickstart-Lernprogramme für Designer](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65_de)
+   + [Beispiele für Designer](http://www.adobe.com/go/learn_aemforms_designer_samples_65_de)
+   + [Skriptgrundlagen für Designer](http://www.adobe.com/go/learn_aemforms_scriptingBasics_65)
+   + [Skriptreferenz für Designer](http://www.adobe.com/go/learn_aemforms_scriptingReference_65)
+   + [FormCalc-Referenz für Designer](http://www.adobe.com/go/learn_aemforms_formCalc_65)
    + [Verwenden der Scribble-Signatur in HTML5-Formularen](using/scribble-signature.md)
 + Passen Sie AEM Forms an {#customize-aem-forms}
    + [Erscheinungsbild-Framework für adaptive und HTML5-Formulare](using/introduction-widgets.md)
