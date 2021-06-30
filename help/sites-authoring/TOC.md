@@ -1,14 +1,14 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
 audience: end-user
 user-guide-title: AEM 6.5 Authoring-Benutzeranleitung
 breadcrumb-title: Authoring-Handbuch
 user-guide-description: Erfahren Sie mehr über die wichtigsten Konzepte zum Erstellen von Inhalten und Authoring in AEM.
 feature: 'Authoring – '
 role: Business Practitioner
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 88%
@@ -25,7 +25,7 @@ ht-degree: 88%
    + [Kurzanleitung zur Seitenbearbeitung (Authoring)](qg-page-authoring.md)
    + [Konzept der Inhaltserstellung](author.md)
    + [Grundlegende Handhabung](basic-handling.md)
-   + [Suchen](search.md)
+   + [Suche](search.md)
    + [Konfigurieren der Kontoumgebung](user-properties.md)
    + [Ihr Posteingang](inbox.md)
    + [Tastaturbefehle für Konsolen  ](keyboard-shortcuts.md)
@@ -40,8 +40,8 @@ ht-degree: 88%
    + [Veröffentlichen von Seiten](publishing-pages.md)
    + [Seitenbearbeitung mit Inhaltsfragmenten](content-fragments.md)
    + [Experience Fragments](experience-fragments.md)
-   + [Exportieren in CSV  ](csv-export.md)
-   + [Komponenten ](default-components.md)
+   + [Exportieren in CSV ](csv-export.md)
+   + [Komponenten](default-components.md)
    + [Verfassen einer Seite für Mobilgeräte](mobile.md)
    + [Fehlerbehebung in AEM beim Authoring](troubleshooting.md)
    + [Tastaturbefehle für die Seitenbearbeitung](page-authoring-keyboard-shortcuts.md)
@@ -81,13 +81,13 @@ ht-degree: 88%
    + [Analysieren der Seitenleistung](ci-analyze.md)
    + [Anzeigen von Seitenanalysedaten](pa-using.md)
    + [Hinzufügen von Search&amp;Promote-Funktionen zu Ihrer Seite](search-and-promote.md)
-+ Personalisierung  {#personalization}
++ Personalisierung {#personalization}
    + [Personalisierung](personalization.md)
    + [Vorschau von Seiten mit ContextHub-Daten](ch-previewing.md)
    + [Verfassen zielgerichteter Inhalte im Targeting-Modus](content-targeting-touch.md)
    + [Verwenden zielgerichteter Inhalte in Multisites](multisite-support-targeted-content.md)
    + [Strukturierung von Multisite-Management für zielgerichtete Inhalte](technical-multisite-targeted.md)
-   + [Verwalten von Aktivitäten ](activitylib.md)
+   + [Verwalten von Aktivitäten   ](activitylib.md)
    + [Verwalten von Zielgruppen](managing-audiences.md)
    + [Erstellen und Verwalten von Angeboten  ](offerlib.md)
    + [Grundlegendes zur Segmentierung](segmentation-overview.md)
