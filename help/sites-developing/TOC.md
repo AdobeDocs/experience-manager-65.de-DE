@@ -1,17 +1,17 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
 audience: end-user
 user-guide-title: AEM 6.5-Entwickleranleitung
 breadcrumb-title: Entwickleranleitung
 user-guide-description: In dieser Anleitung wird beschrieben, wie Sie Ihre AEM-Instanz erstellen.
 feature: Entwickeln
 role: Developer
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
 workflow-type: tm+mt
 source-wordcount: '910'
-ht-degree: 81%
+ht-degree: 82%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 81%
       + [Seitenvorlagen – statisch](page-templates-static.md)
       + [Inhaltsfragmentvorlagen](content-fragment-templates.md)
       + [Rendering von adaptiven Vorlagen](templates-adaptive-rendering.md)
-   + [Verwenden des Sling Resource Merger in AEM    ](sling-resource-merger.md)
+   + [Verwenden des Sling Resource Merger in AEM      ](sling-resource-merger.md)
    + [Überlagerungen](overlays.md)
    + [Benennungskonventionen](naming-conventions.md)
    + [Erstellen einer neuen Feld-Komponente in der Granite-Benutzeroberfläche](granite-ui-component.md)
@@ -70,7 +70,7 @@ ht-degree: 81%
    + [Entwickeln des Bulk Editors](dev-bulk-editor.md)
    + [Entwickeln von Berichten](dev-reports.md)
 + Komponenten{#components}
-   + [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
+   + [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html)
    + [Stilsystem](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html)
    + [Komponentenübersicht](components.md)
    + [AEM-Komponenten – Grundlagen](components-basics.md)
@@ -116,7 +116,7 @@ ht-degree: 81%
       + [Single Page Applications (SPAs) und Server-seitiges Rendering](spa-ssr.md)
       + [Die RemotePage-Komponente](spa-remote-page.md)
       + [Bearbeiten einer externen SPA in AEM](spa-edit-external.md)
-      + [Composite-Komponenten in SPA](spa-composite-component.md)
+      + [Zusammengesetzte Komponenten in SPA](spa-composite-component.md)
       + [SPA-Referenzmaterial](spa-reference-materials.md)
    + [HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
    + [Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments.html)
@@ -140,7 +140,7 @@ ht-degree: 81%
 + Personalisierung{#personlization}
    + [ContextHub](contexthub.md)
    + [Konfigurieren von ContextHub](ch-configuring.md)
-   + [Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher ](ch-adding.md)
+   + [Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher](ch-adding.md)
    + [Erweitern von ContextHub](ch-extend.md)
    + [Beispiele für ContextHub-Store-Kandidaten ](ch-samplestores.md)
    + [Mustertypen von ContextHub-UI-Modulen](ch-samplemodules.md)
