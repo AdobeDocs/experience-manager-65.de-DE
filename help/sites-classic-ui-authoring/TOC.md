@@ -1,13 +1,13 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
 audience: end-user
 user-guide-title: AEM 6.5 Classic UI Authoring-Benutzerhandbuch
 user-guide-description: In diesem Handbuch werden die Konzepte des Authoring in AEM klassischen Benutzeroberfläche behandelt.
 feature: 'Authoring – '
 role: Business Practitioner
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 84%
@@ -25,7 +25,7 @@ ht-degree: 84%
    + [Grundlegende Handhabung](author-env-basic-handling.md)
    + [Konfigurieren der Kontoumgebung](author-env-user-props.md)
    + [Auswahl der Benutzeroberfläche](author-env-select-ui.md)
-   + [Suchen](author-env-search.md)
+   + [Suche](author-env-search.md)
    + [Ihr Posteingang](author-env-inbox.md)
    + [Tastaturbefehle für Konsolen  ](author-env-keyboard-shortcuts.md)
 + Authoring {#authoring}
@@ -50,7 +50,7 @@ ht-degree: 84%
    + [Strukturvorlage](classic-feature-scaffolding.md)
    + [Konfigurieren von Komponenten im Designmodus](classic-page-author-design-mode.md)
    + [Hinzufügen von Search&amp;Promote-Funktionen zu Ihrer Seite](classic-feature-search-promote.md)
-   + [Komponenten ](classic-page-author-default-components.md)
+   + [Komponenten](classic-page-author-default-components.md)
 + Workflows {#workflows}
    + [Teilnehmen an Workflows](classic-workflows-participating.md)
    + [Arbeiten mit Workflows](classic-workflows.md)
@@ -60,7 +60,7 @@ ht-degree: 84%
    + [Erstellen von Launches](classic-launches-creating.md)
    + [Bearbeiten von Launches](classic-launches-editing.md)
    + [Weiterleiten von Launches](classic-launches-promoting.md)
-+ Personalisierung  {#personalization}
++ Personalisierung {#personalization}
    + [Grundlegendes zur Segmentierung](classic-personalization-campaigns-segmentation.md)
    + [Kampagnenmanagement](classic-personalization-campaigns.md)
    + [Landing Pages](classic-personalization-campaigns-landingpage.md)
