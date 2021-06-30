@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: Business Practitioner
 feature: Asset-Verwaltung, Suche
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: dc483b9871cebce64f7b60fec2144f1f19ef28ec
+source-git-commit: 03b171d2af17efee73780b01058fd62bc9d45dbd
 workflow-type: tm+mt
 source-wordcount: '9788'
 ht-degree: 62%
@@ -765,7 +765,7 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 
 ### Anzeigen gespeicherter Anmerkungen {#viewing-saved-annotations}
 
-Es kann jeweils nur eine Anmerkung angezeigt werden.
+Sie können jeweils nur eine Anmerkung anzeigen.
 
 >[!NOTE]
 >
@@ -775,7 +775,7 @@ Es kann jeweils nur eine Anmerkung angezeigt werden.
 
 **So zeigen Sie gespeicherte Anmerkungen für ein Asset an:**
 
-1. Navigieren Sie zum Speicherort des Assets und öffnen Sie die Asset-Seite.
+1. Wechseln Sie zum Speicherort des Assets und öffnen Sie die Asset-Seite.
 
 1. Wählen Sie in der Experience Manager-Benutzeroberfläche **[!UICONTROL Timeline]** aus.
 1. Wählen Sie in der Liste **[!UICONTROL Alle anzeigen]** in der Zeitleiste **[!UICONTROL Kommentare]** aus, um die Ergebnisse anhand von Anmerkungen zu filtern.
