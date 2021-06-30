@@ -1,14 +1,14 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
 audience: admin-user
 user-guide-title: AEM 6.5-Administratorenanleitung
 breadcrumb-title: Administratorenanleitung
 user-guide-description: Erfahren Sie mehr über die Verwaltung von AEM.
 feature: Verwalten
 role: Administrator
-source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
+source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 92%
@@ -28,7 +28,7 @@ ht-degree: 92%
    + [Erstellen und Synchronisieren von Live Copies](msm-livecopy.md)
    + [MSM-Rollout-Konflikte](msm-rollout-conflicts.md)
    + [Best Practices für MSM](msm-best-practices.md)
-   + [Übersetzen von Inhalten für mehrsprachige Sites](translation.md)
+   + [Übersetzen von Inhalten für mehrsprachige Websites](translation.md)
    + [Verwalten von Übersetzungsprojekten](tc-manage.md)
    + [Identifizieren zu übersetzender Inhalte](tc-rules.md)
    + [Vorbereiten von Inhalten für die Übersetzung](tc-prep.md)
@@ -99,7 +99,7 @@ ht-degree: 92%
    + [Content-Disposition-Filter](content-disposition-filter.md)
    + [Zuordnung benutzerdefinierter Benutzergruppen in AEM 6.5](/help/sites-administering/cug-mapping.md)
    + [Unterstützung von Same Site-Cookies](same-site-cookie-support.md)
-+ Personalisierung  {#personalization}
++ Personalisierung {#personalization}
    + [Personalisierung](personalization.md)
    + [Konfigurieren von ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-configuring.html)
    + [ClientContext](client-context.md)
@@ -125,7 +125,7 @@ ht-degree: 92%
    + [Integration mit Adobe Campaign Classic](campaignonpremise.md)
    + [Verwandte Community-Artikel](related-community-articles.md)
    + [Integrieren mit Adobe Campaign Standard](campaignstandard.md)
-   + [Hinweis zur Einstellung von Flash-Viewer](flash-viewers-eol.md)
+   + [Hinweis zum End of Life von Flash-Viewern](flash-viewers-eol.md)
    + [Produkt-Feed](product-feed.md)
    + [Integrieren mit Adobe Dynamic Tag Management](dtm.md)
    + [Opt-in für Adobe Analytics und Adobe Target](opt-in.md)
