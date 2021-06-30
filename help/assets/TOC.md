@@ -1,12 +1,12 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Assets
+solution: Experience Manager, Experience Manager Assets, Experience Manager 6.5
 audience: end-user
 user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, verarbeiten und verteilen Sie digitale Assets.
-source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
+source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 59%
@@ -113,7 +113,7 @@ ht-degree: 59%
    + [PDF Rasterizer verwenden](aem-pdf-rasterizer.md)
    + [Konfigurieren von Upload-Beschränkungen](configuring-asset-upload-restrictions.md)
    + [[!DNL Experience Manager] and [!DNL Creative Cloud] Integration](aem-cc-integration-best-practices.md)
-   + [Integrieren mit [!DNL InDesign Server]](indesign.md)
+   + [Integration von  mit  [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management in Assets](drm.md)
    + [Demopaket für Asset-Einblicke verwenden](use-demo-package-for-asset-insights.md)
    + [Best Practices für Dateiformate in Assets](assets-file-format-best-practices.md)
@@ -125,7 +125,7 @@ ht-degree: 59%
    + [Versehen Sie Assets mit Wasserzeichen](watermarking.md)
    + [Asset-Vorlagen](asset-templates.md)
 + Brand Portal {#brandportal}
-   + [Konfigurieren von [!DNL Assets] mit [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Konfigurieren von  [!DNL Assets]  mit [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Veröffentlichen von Assets in [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [Veröffentlichen von Ordnern in  [!DNL Brand Portal]](brand-portal-publish-folder.md)
    + [Veröffentlichen von Sammlungen in  [!DNL Brand Portal]](brand-portal-publish-collection.md)
