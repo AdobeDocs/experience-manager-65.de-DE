@@ -12,9 +12,9 @@ docset: aem65
 feature: Asset-Management
 role: Business Practitioner, Administrator
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 54230d68fc86c9098f7712044bc501bdc4f16502
+source-git-commit: 0c5759786a698f7c7503a56da7f472229d18f763
 workflow-type: tm+mt
-source-wordcount: '11668'
+source-wordcount: '11672'
 ht-degree: 75%
 
 ---
@@ -23,21 +23,11 @@ ht-degree: 75%
 
 In diesem Abschnitt wird die Arbeit mit Videos in Dynamic Media beschrieben.
 
-Derzeit bekannte Probleme bei der Videowiedergabe in Dynamic Media:
-
-* 
-
-   <!-- CQDOC-18116 -->You cannot play video renditions from the asset's Details page on Experience Manager - Dynamic Media running in hybrid mode.
-
-* 
-
-   <!-- CQDOC-18116 -->You cannot stream videos on Experience Manager - Dynamic Media running in hybrid mode.
-
 ## Schnellstartanleitungen: Videos   {#quick-start-videos}
 
 Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstieg in adaptive Videosets in Dynamic Media erleichtern. Nach jedem Schritt gibt es Querverweise zu Themenüberschriften, in denen Sie weitere Informationen finden können.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Bevor Sie mit Videos in Dynamic Media arbeiten, stellen Sie sicher, dass Ihr Adobe Experience Manager-Administrator Dynamic Media-Cloud Services bereits im Dynamic Media - Scene7 -Modus oder Dynamic Media - Hybridmodus aktiviert und konfiguriert hat.
 >
@@ -45,7 +35,16 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
    >
    >
 * Siehe [Konfigurieren von Dynamic Media Cloud Services](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) unter Konfigurieren von Dynamic Media - Hybridmodus .
+>
+>
+Derzeit bekannte Probleme bei der Videowiedergabe in Dynamic Media *nur unter Experience Manager 6.5.9.0*:
+>
+>* 
 
+   <!-- CQDOC-18116 -->You cannot play video renditions from the asset's Details page on Experience Manager - Dynamic Media running in hybrid mode.
+>* 
+
+   <!-- CQDOC-18116 -->You cannot stream videos on Experience Manager - Dynamic Media running in hybrid mode.
 >
 
 
