@@ -2,10 +2,10 @@
 title: Private Ordner zum Freigeben von Assets
 description: Erfahren Sie, wie Sie einen privaten Ordner im Ordner  [!DNL Adobe Experience Manager Assets] erstellen und ihn für andere Benutzer freigeben und ihnen verschiedene Berechtigungen zuweisen.
 contentOwner: AG
-role: Business Practitioner
+role: User
 feature: Zusammenarbeit
 exl-id: c1aece06-7c1c-43a0-bea0-6f11ecda7e68
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 12%
