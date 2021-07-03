@@ -2,17 +2,17 @@
 title: Ordnerfreigabe in  [!DNL Adobe Creative Cloud] Best Practices
 description: Konfigurieren Sie [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] für den Austausch von Ordnern mit Adobe Creative Cloud (CC)-Benutzern.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Zusammenarbeit
 exl-id: 130cec6d-1cdd-4304-94bb-65e6bb573e55
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 18%
 
 ---
 
-# [!DNL Adobe Experience Manager] zur  [!DNL Adobe Creative Cloud] Ordnerfreigabe  {#aem-to-creative-cloud-folder-sharing-best-practices}
+# [!DNL Adobe Experience Manager] zur  [!DNL Adobe Creative Cloud] Ordnerfreigabe {#aem-to-creative-cloud-folder-sharing-best-practices}
 
 >[!CAUTION]
 >
@@ -29,7 +29,7 @@ Dieser Integrationstyp kann in den folgenden Anwendungsfällen verwendet werden,
 >
 >Bevor Sie dieses Dokument lesen, können Sie sich die allgemeinen Best Practices für die Integration von Experience Managern und Creative Clouden von ](/help/assets/aem-cc-integration-best-practices.md) ansehen, um einen Überblick über die Integration zu erhalten.[
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 [!DNL Experience Manager] Die  [!DNL Creative Cloud] Ordnerfreigabe beruht auf der serverseitigen Freigabe von Ordnern und Dateien zwischen  [!DNL Assets] und  [!DNL Creative Cloud] Konten. Kreativprofis, die das [!DNL Creative Cloud]-Desktop-Programm auf ihren Desktops verwenden, können die freigegebenen Ordner zusätzlich mithilfe der [!DNL Adobe CreativeSync]-Technologie direkt auf ihren Datenträgern verfügbar machen.
 
