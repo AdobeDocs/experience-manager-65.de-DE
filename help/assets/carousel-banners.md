@@ -9,16 +9,16 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 feature: Karussellbanner
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
-source-git-commit: 4ad5237939289b5411a988424b2a3ecad15ca029
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '4740'
 ht-degree: 72%
 
 ---
 
-# Karussellbanner {#carousel-banners}
+# Karussellbanner{#carousel-banners}
 
 Mit Karussellbannern können Marketingexperten die Konversionsrate steigern, indem sie auf einfache Art Drehbanner mit Promo-Inhalten erstellen, die auf beliebigen Bildschirmen bereitgestellt werden können.
 
@@ -93,7 +93,7 @@ So schaffen Sie einen schnellen Einstieg in die Arbeit mit Karussellbannern:
    * [Fügen Sie ein Karussellbanner zu Ihrer Website in Experience ](/help/assets/adding-dynamic-media-assets-to-pages.md) Manager hinzu. Wenn Sie Experience Manager-Sites-Kunde sind, können Sie das Karussellset direkt zur Seite in Experience Manager hinzufügen, indem Sie die interaktive Medienkomponente verwenden.
 
 
-Informationen zum Bearbeiten von Karussellsets finden Sie unter [Bearbeiten von Karussellsets](#editing-carousel-sets). . Darüber hinaus können Sie [Eigenschaften von Karussellsets](manage-assets.md#editing-properties) anzeigen und bearbeiten.
+Informationen zum Bearbeiten von Karussellsets finden Sie unter [Bearbeiten von Karussellsets](#editing-carousel-sets). Darüber hinaus können Sie [Eigenschaften von Karussellsets](manage-assets.md#editing-properties) anzeigen und bearbeiten.
 
 ## Ermitteln von Hotspot- und Imagemap-Variablen {#identifying-hotspot-and-image-map-variables}
 
@@ -183,7 +183,7 @@ Wenn Sie bereits die Bilder hochgeladen haben, die Sie verwenden möchten, fahre
 
 Informationen zum Hochladen von Bildbannern finden Sie unter [Hochladen von Assets](/help/assets/manage-assets.md).
 
-## Erstellen von Karussellsets {#creating-carousel-sets}
+## Erstellen von Karussellsets   {#creating-carousel-sets}
 
 >[!NOTE]
 >
@@ -325,7 +325,7 @@ Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-author
 
    Siehe [Hinzufügen eines Karussellsets zur Landingpage Ihrer Website](#adding-a-carousel-banner-to-your-website-page).
 
-## Bearbeiten von Karussellsets  {#editing-carousel-sets}
+## Bearbeiten von Karussellsets   {#editing-carousel-sets}
 
 >[!NOTE]
 Benutzer, die keine Administratoren sind, müssen der Gruppe **[!UICONTROL dam-users]** hinzugefügt werden, damit sie Karussellbanner erstellen oder bearbeiten können. Sollten Sie Schwierigkeiten beim Erstellen oder Bearbeiten haben, wenden Sie sich an den Systemadministrator, der Sie der Gruppe **[!UICONTROL dam-users]** hinzufügen kann.
@@ -343,7 +343,7 @@ Sie können mehrere Bearbeitungsaufgaben für Karussellsets ausführen, z. B. d
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Bewegen Sie den Mauszeiger über ein Karussell-Asset und tippen Sie auf **[!UICONTROL Bearbeiten]** (Bleistiftsymbol).
+   * Bewegen Sie den Mauszeiger über ein Karussellset-Asset und tippen Sie auf **[!UICONTROL Bearbeiten]** (Bleistiftsymbol).
    * Bewegen Sie den Mauszeiger über ein Karussellset-Asset, tippen Sie auf **[!UICONTROL Auswählen]** (Häkchensymbol) und dann auf **[!UICONTROL Bearbeiten]** in der Symbolleiste.
 
    * Tippen Sie auf ein Karussell-Asset und dann links oben auf der Seite auf **[!UICONTROL Bearbeiten]** (Bleistiftsymbol).
