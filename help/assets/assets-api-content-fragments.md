@@ -11,9 +11,9 @@ topic-tags: extending-assets
 discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
 docset: aem65
 feature: Inhaltsfragmente
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1861'
 ht-degree: 94%
@@ -22,11 +22,11 @@ ht-degree: 94%
 
 # Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API {#content-fragments-support-in-aem-assets-http-api}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 >[!NOTE]
 >
->Die [Assets-HTTP-API](/help/assets/mac-api-assets.md) umfasst:
+>Die [Assets-HTTP-API](/help/assets/mac-api-assets.md) umfasst die:
 >
 >* Assets-REST-API
 >* einschließlich Unterstützung für Inhaltsfragmente
@@ -213,7 +213,7 @@ Inhaltsfragmente:
 
 * Gelten auch als atomisch, d. h. die Elemente und Varianten werden als Teil der Eigenschaften des Fragments anstatt als Links oder untergeordnete Entitäten bereitgestellt. Dies ermöglicht einen effiziente Zugriff auf die Payload eines Fragments.
 
-#### Inhaltsmodelle und Inhaltsfragmente  {#content-models-and-content-fragments}
+#### Inhaltsmodelle und Inhaltsfragmente    {#content-models-and-content-fragments}
 
 Derzeit werden die Modelle, die die Struktur eines Inhaltsfragments definieren, nicht über eine HTTP-API bereitgestellt. Daher benötigt der *Benutzer* (zumindest einige) Informationen über das Modell eines Fragments. Die meisten Informationen kann er jedoch aus der Payload ableiten. So sind z. B. Datentypen Teil der Definition.
 
@@ -364,7 +364,7 @@ Unter den entsprechenden Voraussetzungen werden möglicherweise die folgenden St
    }
    ```
 
-## API-Referenz   {#api-reference}
+## API-Referenz    {#api-reference}
 
 Hier finden Sie detaillierte API-Referenzen:
 
@@ -378,4 +378,4 @@ Hier finden Sie detaillierte API-Referenzen:
 Weitere Informationen finden Sie unter:
 
 * [Assets-HTTP-API – Dokumentation ](/help/assets/mac-api-assets.md)
-* [AEM Gem-Sitzung: OAuth](https://helpx.adobe.com/de/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [AEM Gems-Sitzung: OAuth](https://helpx.adobe.com/de/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
