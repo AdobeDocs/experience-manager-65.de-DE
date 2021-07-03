@@ -5,19 +5,19 @@ uuid: bcd1f9ab-4201-4222-9e4a-ba82b3c7cd6c
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 85fa0414-354e-4530-81f9-a5659bb7f2fd
 feature: Konfiguration
-source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '259'
-ht-degree: 54%
+ht-degree: 57%
 
 ---
 
 # Einrichten von Dynamic Media {#setting-up-dynamic-media}
 
-Mithilfe von [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) können Sie Assets verwalten, indem Sie umfassende visuelle Merchandising- und Marketing-Assets bei Bedarf übermitteln, und zwar automatisch skaliert für die Verwendung im Web, auf Mobilgeräten und in Social Media. Anhand eines Sets von Assets aus Primärquellen können Sie mit Dynamic Media mehrere Varianten ansprechender Inhalte in Echtzeit über das globale, skalierbare und leistungsoptimierte Netzwerk generieren und bereitstellen.
+Mithilfe von [Dynamic Media](https://business.adobe.com/de/products/experience-manager/assets/dynamic-media.html) können Sie Assets verwalten, indem Sie umfassende visuelle Merchandising- und Marketing-Assets bei Bedarf übermitteln, und zwar automatisch skaliert für die Verwendung im Web, auf Mobilgeräten und in Social Media. Anhand eines Sets von Assets aus Primärquellen können Sie mit Dynamic Media mehrere Varianten ansprechender Inhalte in Echtzeit über das globale, skalierbare und leistungsoptimierte Netzwerk generieren und bereitstellen.
 
 >[!NOTE]
 >
