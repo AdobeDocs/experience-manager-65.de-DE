@@ -2,17 +2,17 @@
 title: Migrieren von Assets in großen Mengen
 description: Beschreibt, wie Assets in [!DNL Adobe Experience Manager] übertragen, Metadaten angewendet, Ausgabedarstellungen generiert und auf Veröffentlichungsinstanzen aktiviert werden.
 contentOwner: AG
-role: Architect, Administrator
+role: Architect, Admin
 feature: Migration, Ausgabedarstellungen, Asset-Verwaltung
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 66%
 
 ---
 
-# Migrieren von Assets in großen Mengen {#assets-migration-guide}
+# Massenmigrierung von Assets {#assets-migration-guide}
 
 Bei der Migration von Assets zu [!DNL Adobe Experience Manager] sind mehrere Schritte zu beachten. Das Extrahieren von Assets und Metadaten aus ihrer aktuellen Startseite fällt nicht in den Geltungsbereich dieses Dokuments, da es bei den Implementierungen stark variiert. In diesem Dokument wird jedoch beschrieben, wie Sie diese Assets in [!DNL Experience Manager] einbinden, ihre Metadaten anwenden, Ausgabedarstellungen generieren und sie für Veröffentlichungsinstanzen aktivieren können.
 
@@ -101,7 +101,7 @@ Jeder dieser Ansätze ist dahingehend eingeschränkt, dass die Assets in der Aut
 >
 >Adobe bietet weder Wartung noch Unterstützung für Grabbit.
 
-### Klone Publish {#cloning-publish}
+### Klonen von Veröffentlichungen {#cloning-publish}
 
 Nach Aktivierung der Assets können Sie Ihre Veröffentlichungsinstanz klonen, um die zur Bereitstellung benötigte Anzahl an Kopien zu erstellen. Einen Server zu klonen, ist ein relativ unkomplizierter Vorgang. Dabei müssen jedoch einige wichtige Schritte berücksichtigt werden. So klonen Sie eine Veröffentlichungsinstanz:
 
