@@ -2,10 +2,10 @@
 title: Verwalten von ebenenübergreifenden Assets mit Verweisen und mehreren Seiten
 description: Erfahren Sie, wie Sie Verweise auf digitale Assets aus  [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop] erstellen. Verwenden Sie die Funktion "Seiten-Viewer", um einzelne Asset-Seiten mit mehrseitigen Dateien wie PDF-, INDD-, PPT-, PPTX- und AI-Dateien anzuzeigen.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Asset-Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
-source-git-commit: a564f158cf1040ef43cb9f5dde9f7cb22769587f
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1379'
 ht-degree: 18%
