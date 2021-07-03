@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Unterstützung der Barrierefreiheit in 
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
-feature: Erreichbarkeit
-role: Business Practitioner, Administrator
+feature: Barrierefreiheit
+role: User, Admin
 exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
-source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 71%
@@ -45,7 +45,7 @@ Weitere Informationen finden Sie unter [Bearbeiten von smarten Zuschnitten oder 
 
 <!-- I would not get into much of details of specific keyboard support logic of these editors. One of the reasons - chances are that accessibility support will receive Phase2-like attention, with more holistic approach. -->
 
-## Unterstützung von unterstützender Technologie in [!DNL Dynamic Media] {#assistive-technology-support-for-dm}
+## Unterstützung für unterstützende Technologien in [!DNL Dynamic Media] {#assistive-technology-support-for-dm}
 
 [!DNL Dynamic Media] Benutzeroberflächen-Elemente können mit Hilfstechnologien wie Bildschirmlesehilfen verwendet werden. Beispielsweise werden Orientierungspunkte auf einer Seite erkannt, wenn Sie mithilfe des Tastaturbefehls `D` durch Orientierungspunkte oder mithilfe des Tastaturbefehls `R` durch Regionen navigieren. Außerdem wird die Überschrift vorgelesen, wenn Sie mit dem Tastaturbefehl für Überschriften `H` navigieren.
 
@@ -55,7 +55,7 @@ Alle nativen Viewer-Komponenten [!DNL Dynamic Media] unterstützen den Tastaturz
 
 Weitere Informationen finden Sie unter [Tastaturbedienung und Navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=de) im Dynamic Media Viewers-Referenzhandbuch.
 
-## Unterstützung von Hilfstechnologien in [!DNL Dynamic Media] Viewern {#assistive-technology-support-for-dm-viewers}
+## Unterstützung für unterstützende Technologie in [!DNL Dynamic Media] Viewern {#assistive-technology-support-for-dm-viewers}
 
 Alle [!DNL Dynamic Media] Viewer-Komponenten unterstützen ARIA (Accessible Rich Internet Applications)-Rollen und -Attribute, um die Integration mit Hilfstechnologien wie Bildschirmlesehilfen zu verbessern.
 Weitere Informationen finden Sie im Hilfethema **Unterstützung für Hilfstechnologien** im Dynamic Media Viewers-Referenzhandbuch. Sehen Sie beispielsweise [Unterstützung für Hilfstechnologien](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=de) für den Video-Viewer oder [Unterstützung für Hilfstechnologien](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) für den interaktiven Bild-Viewer.
