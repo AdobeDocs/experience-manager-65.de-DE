@@ -3,13 +3,13 @@ title: Verwalten von digitalen Asset-Sammlungen
 description: Erfahren Sie mehr über die Verwaltung von Asset-Sammlungen, z. B. Erstellen, Anzeigen, Löschen, Bearbeiten und Herunterladen von Sammlungen.
 contentOwner: AG
 mini-toc-levels: 1
-role: Business Practitioner
+role: User
 feature: Sammlungen,Asset-Verwaltung
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2183'
-ht-degree: 64%
+ht-degree: 65%
 
 ---
 
@@ -27,7 +27,7 @@ Sammlungen sind von den folgenden Typen, und zwar auf Grundlage, wie sie Assets 
 
 * Eine Smart-Sammlung, die Assets auf Grundlage eines Suchkriteriums dynamisch verwendet.
 
-## Aufrufen der Konsole „Sammlungen“ {#navigating-the-collections-console}
+## Aufrufen der Konsole „Sammlungen“  {#navigating-the-collections-console}
 
 Um **[!UICONTROL Sammlungen]** in der [!DNL Experience Manager]-Benutzeroberfläche zu öffnen, gehen Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Sammlungen]**.
 
@@ -95,7 +95,7 @@ Gehen Sie wie folgt vor, um eine Smart-Sammlung zu erstellen:
 
    >[!NOTE]
    >
-   >Wenn Sie **[!UICONTROL Öffentlich]** auswählen, wird die Smart-Sammlung nach der Erstellung für alle Benutzer mit der Eigentümerrolle verfügbar. Wenn Sie die Option **[!UICONTROL Öffentlich]** abbrechen, ist die DAM-Benutzergruppe nicht mehr mit der Smart-Sammlung verknüpft.
+   >Wenn Sie **[!UICONTROL Öffentlich]** auswählen, wird die Smart-Sammlung nach der Erstellung für alle Benutzer mit der Eigentümerrolle verfügbar. Wenn Sie die Option **[!UICONTROL Öffentlich]** deaktivieren, ist die DAM-Benutzergruppe nicht mehr mit der Smart-Sammlung verknüpft.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]** , um die Smart-Sammlung zu erstellen, und schließen Sie dann das Meldungsfeld, um den Prozess abzuschließen.
 
@@ -153,7 +153,7 @@ Sie können die Metadaten von mehreren Sammlungen gleichzeitig bearbeiten. Mit d
 1. Wählen Sie in der Konsole &quot;Sammlungen&quot;mindestens zwei Sammlungen aus.
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**.
 1. Bearbeiten Sie auf der Seite **[!UICONTROL Sammlungs-Metadaten]** die Metadaten auf den Registerkarten **[!UICONTROL Allgemein]** und **[!UICONTROL Erweitert]** nach Bedarf.
-1. Um die Metadateneigenschaften für eine bestimmte Sammlung anzuzeigen, brechen Sie die Auswahl der verbleibenden Sammlungen in der Sammlungsliste ab. Die Metadateneditorfelder werden mit den Metadaten für die bestimmte Sammlung gefüllt.
+1. Heben Sie die Auswahl der anderen Sammlungen in der Sammlungsliste auf, um die Metadateneigenschaften für eine bestimmte Sammlung anzuzeigen. Die Metadateneditorfelder werden mit den Metadaten für die bestimmte Sammlung gefüllt.
 
    >[!NOTE]
    >
@@ -180,7 +180,7 @@ Sie können mit der Konsole „Sammlungen“ nach Sammlungen suchen. Wenn Sie di
 
 Wenn Sie auf der obersten Ebene nach Sammlungen suchen, werden nur die einzelnen Sammlungen in den Suchergebnissen zurückgegeben. [!DNL Assets] oder Ordner in den Sammlungen werden ausgeschlossen. In allen anderen Fällen (z. B. innerhalb einer individuellen Sammlung oder in einer Ordnerhierarchie) werden alle relevanten Assets, Ordner und Sammlungen zurückgegeben.
 
-## Suchen in Sammlungen {#searching-within-collections}
+## In Sammlungen suchen {#searching-within-collections}
 
 Klicken Sie in der Konsole &quot;Sammlungen&quot;auf eine Sammlung, um sie zu öffnen.
 
@@ -211,7 +211,7 @@ Wenn Sie eine Sammlung herunterladen, wird die gesamte Asset-Hierarchie innerhal
 
 1. Wählen Sie in der Konsole „Sammlungen“ eine oder mehrere Sammlungen für den Download aus.
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Download]**.
-1. Klicken Sie im Dialogfeld **[!UICONTROL Herunterladen]** auf **[!UICONTROL Herunterladen]**. Wählen Sie **[!UICONTROL Ausgabeformate]** aus, wenn Sie die Ausgabedarstellungen des Assets in der Sammlung herunterladen möchten. Wählen Sie die Option **[!UICONTROL E-Mail]** aus, um eine E-Mail-Benachrichtigung an den Eigentümer der Sammlung zu senden.
+1. Klicken Sie im Dialogfeld **[!UICONTROL Herunterladen]** auf **[!UICONTROL Herunterladen]**. Wählen Sie **[!UICONTROL Ausgabedarstellungen]** aus, wenn Sie die Ausgabedarstellungen des Assets in der Sammlung herunterladen möchten. Wählen Sie die Option **[!UICONTROL E-Mail]** aus, um eine E-Mail-Benachrichtigung an den Eigentümer der Sammlung zu senden.
 
    Bei Auswahl einer Sammlung für den Download wird die gesamte Ordnerstruktur unter dieser Sammlung heruntergeladen. Um jede Sammlung (einschließlich Assets in untergeordneten Sammlungen, die unter der übergeordneten Sammlung verschachtelt sind), die Sie herunterladen, in einem eigenen Ordner zu speichern, wählen Sie **[!UICONTROL Separaten Ordner für jedes Asset erstellen]** aus.
 
@@ -233,7 +233,7 @@ Sie können eine Sammlung zu einer anderen Sammlung hinzufügen und so eine vers
 >
 >Smart-Sammlungen können nicht verschachtelt werden. Das heißt, Smart-Sammlungen können keine anderen Sammlungen enthalten.
 
-## Gespeicherte Suchvorgänge  {#saved-searches}
+## Gespeicherte Suchvorgänge {#saved-searches}
 
 In der [!DNL Assets]-Benutzeroberfläche können Sie Assets basierend auf bestimmten Regeln, Suchkriterien oder benutzerdefinierten Suchfacetten suchen oder filtern. Wenn Sie diese Einstellungen als **[!UICONTROL Gespeicherte Suchen]** speichern, können Sie später in der Liste **[!UICONTROL Gespeicherte Suchen]** im Filterbereich darauf zugreifen. Beim Erstellen einer gespeicherten Suche wird auch eine Smart-Sammlung erstellt.
 
