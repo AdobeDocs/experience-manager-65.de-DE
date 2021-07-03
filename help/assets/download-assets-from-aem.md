@@ -2,13 +2,13 @@
 title: Herunterladen von Assets
 description: Erfahren Sie, wie Sie Assets von  [!DNL Adobe Experience Manager] herunterladen und die Download-Funktion aktivieren oder deaktivieren können.
 contentOwner: AG
-role: Business Practitioner
-feature: Asset-Management, Asset-Verteilung
+role: User
+feature: Asset-Management,Asset-Verteilung
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
-source-git-commit: eefd19768cc52350ba5858a439b793c125fd23cc
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '875'
-ht-degree: 76%
+ht-degree: 77%
 
 ---
 
