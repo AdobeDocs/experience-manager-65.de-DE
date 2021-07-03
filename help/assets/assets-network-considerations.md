@@ -2,17 +2,17 @@
 title: Netzwerküberlegungen und Anforderungen
 description: Erläutert Netzwerküberlegungen bei der Erstellung einer [!DNL Adobe Experience Manager Assets] Bereitstellung.
 contentOwner: AG
-role: Architect, Administrator
+role: Architect, Admin
 feature: Entwickler-Tools
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 72%
 
 ---
 
-# [!DNL Assets] Netzwerküberlegungen  {#assets-network-considerations}
+# [!DNL Assets] Netzwerküberlegungen {#assets-network-considerations}
 
 Das Verständnis Ihres Netzwerks ist so wichtig wie das Verständnis von [!DNL Adobe Experience Manager Assets]. Das Netzwerk kann Uploads, Downloads und Benutzererlebnisse beeinflussen. Eine grafische Darstellung Ihrer Netzwerktopologie hilft bei der Erkennung von Engpässen und unzureichend optimierten Bereichen im Netzwerk, die Sie beseitigen bzw. korrigieren müssen, um die Netzwerkleistung und das Benutzererlebnis zu verbessern.
 
@@ -77,7 +77,7 @@ Die [!DNL Experience Manager]-Bereitstellung teilt die 1 Gbit/s-Verbindung mit m
 
 Wenn Sie das Netzwerk vom Client-Gerät bis zur [!DNL Experience Manager]-Bereitstellung überprüfen, scheint der kleinste Schokoladepunkt die Firewall-Drosselklappe von 10 Mbit für Unternehmen zu sein. Sie können diese Werte in der in der [Anleitung zur Dimensionierung in Assets](assets-sizing-guide.md) beschriebenen Größenberechnung verwenden, um das Benutzererlebnis zu bestimmen.
 
-## Definierte Workflows der [!DNL Experience Manager] -Implementierung {#defined-workflows-of-the-aem-deployment}
+## Definierte Workflows der [!DNL Experience Manager]-Implementierung {#defined-workflows-of-the-aem-deployment}
 
 Bei Überlegungen zur Netzwerkleistung ist es möglicherweise wichtig, die Workflows und die im System stattfindenden Veröffentlichungen zu berücksichtigen. Außerdem beanspruchen S3 oder Speicher, der im Netzwerk zugeteilt ist und von Ihnen verwendet wird, und I/O-Anforderungen Netzwerkbandbreite. Daher wird die Leistung selbst in einem voll optimierten Netzwerk durch die Anzahl der Datenträger-I/O beschränkt.
 
