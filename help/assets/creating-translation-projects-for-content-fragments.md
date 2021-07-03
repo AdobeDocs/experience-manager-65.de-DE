@@ -10,9 +10,9 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
 feature: Inhaltsfragmente
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 86%
@@ -27,7 +27,7 @@ Die Arten von Workflows, die Sie bei Inhaltsfragmenten ausführen können, sind 
 
 Sie können die folgenden Arten von Sprachkopie-Workflows bei Inhaltsfragmenten ausführen:
 
-**Erstellen und übersetzen** 
+**Erstellen und übersetzen**
 
 In diesem Workflow wird das zu übersetzende Inhaltsfragment in den Sprachstamm der Sprache kopiert, in die Sie übersetzen möchten. Darüber hinaus wird, abhängig von den gewählten Optionen, ein Übersetzungsprojekt für die Inhaltsfragmente in der Projektekonsole erstellt. Je nach Einstellungen kann das Übersetzungsprojekt manuell gestartet oder automatisch ausgeführt werden, sobald es erstellt wurde.
 
