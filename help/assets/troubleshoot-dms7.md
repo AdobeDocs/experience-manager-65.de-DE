@@ -8,17 +8,17 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 0d48c031-d3ee-4143-b739-a79ba28fd63a
 docset: aem65
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: Fehlerbehebung
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 95%
 
 ---
 
-# Fehlerbehebung in Dynamic Media – Scene7-Modus{#troubleshooting-dynamic-media-scene-mode}
+# Fehlerbehebung in Dynamic Media – Scene7-Modus{#troubleshooting-dynamic-media-scene-mode}
 
 Das folgende Dokument beschreibt das Beheben von Fehlern mit Dynamic Media im Ausführungsmodus **dynamicmedia_scene7**.
 
@@ -41,7 +41,7 @@ Stellen Sie sicher, dass Dynamic Media korrekt eingerichtet wurde, indem Sie fol
 
 Die folgenden allgemeinen Tipps und Tricks gelten für alle Assets.
 
-### Asset-Synchronisierungsstatuseigenschaften  {#asset-synchronization-status-properties}
+### Asset-Synchronisierungsstatuseigenschaften    {#asset-synchronization-status-properties}
 
 Anhand der folgenden Asset-Eigenschaften können Sie in CRXDE Lite prüfen, ob Assets erfolgreich zwischen AEM und Dynamic Media synchronisiert wurden:
 
@@ -72,7 +72,7 @@ Wenn Sie ein vorhandenes Dynamic Media-Asset (gleicher Name und Speicherort) ers
 
 * Das Erstellen einer Version wird im Scene7-Modus von Dynamic Media nicht unterstützt. Die neue Version ersetzt das vorhandene Asset in der Implementierung.
 
-## Bilder und Sets   {#images-and-sets}
+## Bilder und Sets  {#images-and-sets}
 
 Falls Sie Probleme mit Bildern und Sets haben, sehen Sie sich die folgende Anleitung zur Fehlerbehebung an.
 
