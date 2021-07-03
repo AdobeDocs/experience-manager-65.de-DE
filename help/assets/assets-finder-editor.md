@@ -2,10 +2,10 @@
 title: Erstellen und Konfigurieren von Asset-Editor-Seiten
 description: Erfahren Sie, wie Sie benutzerdefinierte Asset-Editor-Seiten erstellen und mehrere Assets gleichzeitig bearbeiten können.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Entwicklertools,Asset Management
 exl-id: 53e310a9-c511-447a-91bd-8c5b2760dc03
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2129'
 ht-degree: 69%
@@ -217,7 +217,7 @@ Anpassen können Sie die Asset-Editor-Seite mithilfe der Elemente aus dem Sideki
 
 ![assetshare6](assets/assetshare6.png)
 
-#### Asset-Editor zum Öffnen auf einer Asset-Freigabe-Seite festlegen {#setting-which-asset-editor-opens-from-an-asset-share-page}
+#### Asset-Editor zum Öffnen über eine Asset-Freigabe-Seite festlegen {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
 Nachdem Sie die angepasste Asset-Editor-Seite erstellt haben, müssen Sie sicherstellen, dass beim Doppelklicken auf Assets über die von Ihnen erstellte angepasste Asset-Freigabe die Assets auf der angepassten Editorseite geöffnet werden.
 
@@ -233,7 +233,7 @@ So stellen Sie die Asset-Editor-Seite ein:
 
 ![screen_shot_2012-04-23at21653pm](assets/screen_shot_2012-04-23at21653pm.png)
 
-#### Hinzufügen von Asset-Editor-Komponenten {#adding-asset-editor-components}
+#### Hinzufügen von Asset Editor-Komponenten {#adding-asset-editor-components}
 
 Sie können bestimmen, welche Funktionen ein Asset-Editor besitzt, indem Sie der Seite Komponenten hinzufügen.
 
@@ -329,7 +329,7 @@ Es folgt ein Beispiel für eine ausgefüllte Komponente „Tags“:
 
 ![screen_shot_2012-04-23at25244pm](assets/screen_shot_2012-04-23at25244pm.png)
 
-#### Miniaturansicht  {#thumbnail}
+#### Miniaturansicht {#thumbnail}
 
 In der Komponente „Miniatur“ zeigt das Asset die ausgewählte Miniatur an (für eine Vielzahl der Formate wird die Miniatur automatisch extrahiert). Außerdem präsentiert die Komponente den Dateinamen und [von Ihnen veränderbare Aktionen](/help/assets/assets-finder-editor.md#adding-asset-editor-actions).
 
@@ -361,7 +361,7 @@ Es folgt ein Beispiel für eine ausgefüllte Komponente „Titel“:
 
 ![chlimage_1-164](assets/chlimage_1-392.png)
 
-#### Hinzufügen von Asset-Editor-Aktionen {#adding-asset-editor-actions}
+#### Hinzufügen von Asset Editor-Aktionen {#adding-asset-editor-actions}
 
 Sie können anhand einer Auswahl vordefinierter Aktionen festlegen, welche Aktionen Benutzer für ausgewählte digitale Assets ausführen können.
 
@@ -386,7 +386,7 @@ Die folgenden Aktionen sind verfügbar:
 
 ![chlimage_1-165](assets/chlimage_1-393.png)
 
-## Mehrere Assets mit der Asset-Editor-Seite {#multi-editing-assets-with-the-asset-editor-page} bearbeiten
+## Mehrere Assets mit der Asset-Editor-Seite bearbeiten {#multi-editing-assets-with-the-asset-editor-page}
 
 Mit [!DNL Experience Manager Assets] können Sie Änderungen an mehreren Assets gleichzeitig vornehmen. Nach Auswahl der Assets können Sie bei diesen gleichzeitig Folgendes ändern:
 
