@@ -7,13 +7,13 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
-feature: Asset-Verwaltung
-role: Business Practitioner, Administrator
+feature: Asset-Management
+role: User, Admin
 exl-id: 74242ee5-1036-498b-88ef-2310ba2643ce
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '116'
-ht-degree: 89%
+ht-degree: 91%
 
 ---
 
