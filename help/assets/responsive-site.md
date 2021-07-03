@@ -1,5 +1,5 @@
 ---
-title: Bereitstellen von optimierten Bildern für eine responsive Site
+title: Bereitstellen von optimierten Bildern für eine responsive Website
 description: Anleitung zur Bereitstellung optimierter Bilder mit der responsiven Codefunktion
 uuid: 7c6baef5-7513-4644-94ed-2383e8724c17
 contentOwner: Rick Brough
@@ -7,13 +7,13 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
-feature: Asset-Verwaltung
-role: Business Practitioner, Administrator
+feature: Asset-Management
+role: User, Admin
 exl-id: 753d806f-5f44-4d73-a3a3-a2a0fc3e154b
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '333'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
