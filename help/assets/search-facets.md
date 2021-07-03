@@ -2,10 +2,10 @@
 title: Suchfacetten zum Filtern von Suchergebnissen
 description: So erstellen, ändern und verwenden Sie Suchfacetten in [!DNL Adobe Experience Manager].
 contentOwner: AG
-role: Administrator, Developer
-feature: Suchen
+role: Admin, Developer
+feature: Suche
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
-source-git-commit: e78b42a899de3c8009817ba9e60bac40e161270f
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2397'
 ht-degree: 78%
@@ -201,5 +201,5 @@ Wenn Ihnen nicht die Rolle eines Administrators zugewiesen wurde, finden Sie hie
 >[!MORELIKETHIS]
 >
 >* [Erweiterung der Asset-Suchfunktion](searchx.md)
-* [Suchen von Assets](search-assets.md)
+* [Suchen von Assets  ](search-assets.md)
 
