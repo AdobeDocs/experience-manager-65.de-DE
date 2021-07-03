@@ -1,18 +1,18 @@
 ---
-title: Integrieren Sie [!DNL Assets] mit [!DNL InDesign Server].
+title: Integration von  [!DNL Assets]  mit  [!DNL InDesign Server]
 description: Erfahren Sie, wie Sie [!DNL Adobe Experience Manager Assets] mit [!DNL Adobe InDesign Server] integrieren.
 contentOwner: AG
-role: Administrator
+role: Admin
 feature: Veröffentlichung
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: 3c1a30f36222c319c354afa408555982bfe2804e
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1565'
 ht-degree: 37%
 
 ---
 
-# Integrieren Sie [!DNL Adobe Experience Manager Assets] mit [!DNL Adobe InDesign Server] {#integrating-aem-assets-with-indesign-server}
+# Integration von [!DNL Adobe Experience Manager Assets] mit [!DNL Adobe InDesign Server] {#integrating-aem-assets-with-indesign-server}
 
 [!DNL Adobe Experience Manager Assets] den:
 
@@ -60,7 +60,7 @@ Dieses Befehlsskript führt folgende Aktionen aus:
    * Der extrahierte Text und die Dateien werden in [!DNL Experience Manager Assets] gespeichert.
    * Alle Ausgabedarstellungen werden in [!DNL Experience Manager Assets] im Asset selbst gespeichert.
 
-## Integrieren Sie [!DNL InDesign Server] in den Experience Manager {#integrating-the-indesign-server-with-aem}.
+## Integrieren von [!DNL InDesign Server] in Experience Manager {#integrating-the-indesign-server-with-aem}
 
 Um [!DNL InDesign Server] für die Verwendung mit [!DNL Experience Manager Assets] zu integrieren und nach der Konfiguration Ihres Proxys müssen Sie:
 
@@ -69,7 +69,7 @@ Um [!DNL InDesign Server] für die Verwendung mit [!DNL Experience Manager Asset
 Dies ist nur dann notwendig, wenn die Standardwerte für Ihre Instanz nicht geeignet sind.
 1. Konfigurieren Sie einen [Proxy Worker für InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
 
-### Installieren Sie [!DNL InDesign Server] {#installing-the-indesign-server}
+### [!DNL InDesign Server] installieren {#installing-the-indesign-server}
 
 So installieren und starten Sie [!DNL InDesign Server] zur Verwendung mit [!DNL Experience Manager]:
 
@@ -88,7 +88,7 @@ So installieren und starten Sie [!DNL InDesign Server] zur Verwendung mit [!DNL 
    >Wenn Sie die Ausgabemeldungen in einer Datei speichern möchten, müssen Sie dazu eine Umleitung verwenden, z. B. unter Windows:
    >`<ids-installation-dir>/InDesignServer.com -port 8080 > ~/temp/INDD-logfile.txt 2>&1`
 
-### [!DNL Experience Manager Assets] Workflow {#configuring-the-aem-assets-workflow} konfigurieren
+### Workflow [!DNL Experience Manager Assets] konfigurieren {#configuring-the-aem-assets-workflow}
 
 [!DNL Experience Manager Assets] verfügt über einen vorkonfigurierten Workflow  **[!UICONTROL DAM Update Asset]**, der mehrere Prozessschritte speziell für  [!DNL InDesign]Folgendes umfasst:
 
@@ -146,7 +146,7 @@ Anpassungen können Sie im Schritt **[!UICONTROL Extrahierung von Seiten]** auf 
 
 * **Seitendesign**: Der Seitenentwurf, der beim Generieren der resultierenden Seite verwendet werden soll.
 
-### Proxy Worker für [!DNL InDesign Server] {#configuring-the-proxy-worker-for-indesign-server} konfigurieren
+### Proxy Worker für [!DNL InDesign Server] konfigurieren {#configuring-the-proxy-worker-for-indesign-server}
 
 >[!NOTE]
 >
@@ -175,7 +175,7 @@ Wenn sich die [!DNL InDesign Server] und [!DNL Experience Manager] auf unterschi
 
    ![Externalizer-Einstellung für Link](assets/link-externalizer-config.png)
 
-### Aktivieren Sie die parallele Auftragsverarbeitung für [!DNL InDesign Server] {#enabling-parallel-job-processing-for-indesign-server}
+### Aktivieren der parallelen Auftragsverarbeitung für [!DNL InDesign Server] {#enabling-parallel-job-processing-for-indesign-server}
 
 Sie können jetzt die parallele Auftragsverarbeitung für IDS aktivieren. Bestimmen Sie die maximale Anzahl paralleler Aufträge (`x`), die von [!DNL InDesign Server] verarbeitet werden können:
 
@@ -213,7 +213,7 @@ TBD: Make updates to configurations for allow and block list after product updat
 >
 >Standardmäßig wird der IDS-Worker nach der konfigurierbaren (`retry.interval.to.whitelist.name`) Zeit in Minuten erneut validiert. Wenn der Worker online gefunden wird, wird er aus der Blockierungsliste entfernt.
 
-## Unterstützung für [!DNL InDesign Server] 10.0 oder höher {#enabling-support-for-indesign-server-or-later} aktivieren
+## Unterstützung für [!DNL InDesign Server] 10.0 oder höher aktivieren {#enabling-support-for-indesign-server-or-later}
 
 Führen Sie für [!DNL InDesign Server] 10.0 oder höher die folgenden Schritte aus, um die Unterstützung für mehrere Sitzungen zu aktivieren.
 
@@ -225,7 +225,7 @@ Führen Sie für [!DNL InDesign Server] 10.0 oder höher die folgenden Schritte 
 >
 >Verwenden Sie für die Integration von [!DNL InDesign Server] mit [!DNL Experience Manager Assets] einen Multicore-Prozessor, da die für die Integration erforderliche Sitzungsunterstützungsfunktion auf einzelnen Kernsystemen nicht unterstützt wird.
 
-## [!DNL Experience Manager]-Anmeldedaten {#configure-aem-credentials} konfigurieren
+## Konfigurieren von [!DNL Experience Manager]-Anmeldedaten {#configure-aem-credentials}
 
 Sie können die standardmäßigen Administratorberechtigungen (Benutzername und Kennwort) für den Zugriff auf [!DNL InDesign Server] aus Ihrer [!DNL Experience Manager]-Implementierung ändern, ohne die Integration mit [!DNL InDesign Server] zu unterbrechen.
 
