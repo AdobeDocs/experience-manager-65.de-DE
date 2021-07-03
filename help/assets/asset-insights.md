@@ -2,13 +2,13 @@
 title: Assets Insights
 description: Erfahren Sie, wie Sie mit der Funktion "Asset Insights"Benutzerbewertungen und Nutzungsstatistiken von Bildern verfolgen können, die auf Drittanbieter-Websites, in Marketingkampagnen und den Kreativlösungen der Adobe verwendet werden.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Asset Insights,Asset-Berichte
 exl-id: 0130ac40-a72b-4caf-a10f-3c7d76eaa1e6
-source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '760'
-ht-degree: 56%
+ht-degree: 60%
 
 ---
 
@@ -59,7 +59,7 @@ Sie können die Asset Insights-Bewertungen auf der Metadatenseite anzeigen.
    >
    >Im Gegensatz zu den Daten im Abschnitt „Lösungen“ zeigt der Abschnitt „Leistungsstatistiken“ die neuesten Daten an.
 
-1. Um den Einbettungscode für das Asset zu erhalten, das Sie in Websites zum Abrufen von Leistungsdaten einschließen, klicken Sie unter der Asset-Miniaturansicht auf **[!UICONTROL Einbettungscode abrufen]** . Weitere Informationen dazu, wie Sie Ihren Einbettungscode in Webseiten von Drittanbietern einbeziehen, finden Sie unter [Verwenden von Seitenverfolgung und Einbettungscode in Webseiten](/help/assets/use-page-tracker.md).
+1. Um den Einbettungs-Code für das Asset zu erhalten, das Sie in die Websites einbeziehen, um Leistungsdaten zu erhalten, klicken Sie unter dem Asset-Miniaturbild auf **[!UICONTROL Einbettungs-Code abrufen]**. Weitere Informationen dazu, wie Sie Ihren Einbettungscode in Webseiten von Drittanbietern einbeziehen, finden Sie unter [Verwenden von Seitenverfolgung und Einbettungscode in Webseiten](/help/assets/use-page-tracker.md).
 
    ![chlimage_1-98](assets/chlimage_1-303.png)
 
