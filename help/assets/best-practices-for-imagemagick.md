@@ -2,10 +2,10 @@
 title: Installieren und Konfigurieren von ImageMagick
 description: Erfahren Sie mehr über die ImageMagick-Software, wie Sie diese installieren, den Befehlszeilenprozessschritt einrichten und damit Miniaturansichten von Bildern bearbeiten, zusammenstellen und generieren können.
 contentOwner: AG
-role: Administrator
+role: Admin
 feature: Ausgabeformate,Entwicklertools
 exl-id: 6c149d31-1e64-4d29-a32a-58bd69e9fa98
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '696'
 ht-degree: 48%
@@ -34,7 +34,7 @@ Es sind mehrere ImageMagick-Installationsdateien für verschiedene Betriebssyste
 1. Legen Sie die Path-Umgebungsvariable auf das ImageMagick-Installationsverzeichnis fest.
 1. Um zu überprüfen, ob die Installation erfolgreich war, führen Sie den Befehl `identify -version` aus.
 
-## Einrichten eines Befehlszeilenprozessschritts {#set-up-the-command-line-process-step}
+## Einrichten des Befehlszeilenprozessschritts {#set-up-the-command-line-process-step}
 
 Sie können den Befehlszeilenprozesssschritt für Ihren jeweiligen Anwendungsfall einrichten. Führen Sie diese Schritte aus, um jedes Mal, wenn Sie eine JPEG-Bilddatei zu `/content/dam` auf dem [!DNL Experience Manager]-Server hinzufügen, ein gespiegeltes Bild und Miniaturansichten (140x100, 48x48, 319x319 und 1280) zu generieren:
 
