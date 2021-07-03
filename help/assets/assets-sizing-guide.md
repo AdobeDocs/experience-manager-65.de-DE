@@ -2,17 +2,17 @@
 title: '[!DNL Assets] Größenleitfaden'
 description: Best Practices zur Bestimmung effizienter Metriken zur Schätzung der Infrastruktur und der Ressourcen, die für die Bereitstellung von  [!DNL Adobe Experience Manager Assets] erforderlich sind.
 contentOwner: AG
-role: Architect, Administrator
-feature: Asset-Verwaltung
+role: Architect, Admin
+feature: Asset-Management
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1617'
 ht-degree: 62%
 
 ---
 
-# [!DNL Assets] Größenleitfaden  {#assets-sizing-guide}
+# [!DNL Assets] Größenleitfaden {#assets-sizing-guide}
 
 Bei der Dimensionierung der Umgebung für eine [!DNL Adobe Experience Manager Assets]-Implementierung muss sichergestellt werden, dass ausreichend Ressourcen zur Verfügung stehen, d. h. Festplatten-, CPU-, Speicher-, I/O- und Netzwerkdurchsatz. Zur Dimensionierung dieser Ressourcen muss bekannt sein, wie viele Assets in das System geladen werden. Wenn keine bessere Metrik verfügbar ist, können Sie die Größe der vorhandenen Bibliothek durch das Alter der Bibliothek dividieren, um die Rate zu ermitteln, mit der Assets erstellt werden.
 
@@ -54,11 +54,11 @@ Die in das Tool aufgefüllten Beispieldaten zeigen, wie wichtig die Ausführung 
 
 [Datei laden](assets/disk_sizing_tool.xlsx)
 
-### Gemeinsame Datenspeicher {#shared-datastores}
+### Freigegebene Datenspeicher {#shared-datastores}
 
 Bei großen Datenspeichern können Sie einen freigegebenen Datenspeicher entweder über einen freigegebenen Dateidatenspeicher auf einem Netzwerklaufwerk oder über einen Amazon S3-Datenspeicher implementieren. In diesem Fall müssen einzelne Instanzen keine Kopie der Binärdateien aufbewahren. Darüber hinaus erleichtert ein freigegebener Datenspeicher die Binärdatei-lose Replikation und reduziert die Bandbreite, die zur Replikation von Assets in Veröffentlichungsumgebungen verwendet wird.
 
-#### Anwendungsfälle  {#use-cases}
+#### Anwendungsfälle {#use-cases}
 
 Der Datenspeicher kann gemeinsam von primärer und Standby-Autoreninstanz genutzt werden, um den zeitlichen Aufwand zum Aktualisieren der Standby-Instanz mit Änderungen der primären Instanz zu minimieren. Sie können den Datenspeicher zudem zwischen Autor- und Veröffentlichungsinstanzen freigeben, um den Traffic während der Replikation zu minimieren.
 
@@ -86,7 +86,7 @@ Bei einem freigegebenen Datenspeicher müssen die Binärdateien auf einem Laufwe
 
 Latenz in S3-Implementierungen ist auf die im Hintergrund durchgeführten Schreibthreads zurückzuführen. Sicherungsverfahren müssen diese Latenz berücksichtigen. Außerdem bleiben Lucene-Indizes möglicherweise unvollständig, wenn eine Sicherung durchgeführt wird. Dies gilt für alle zeitempfindlichen Dateien, die in einen S3-Datenspeicher geschrieben werden und auf die von einer anderen Instanz zugegriffen wird.
 
-### Knotenspeicher oder Dokumentenspeicher {#node-store-document-store}
+### Knotenspeicher oder Dokumentspeicher {#node-store-document-store}
 
 Es ist schwierig, genaue Dimensionierungszahlen für einen Knotenspeicher oder Dokumentspeicher zu ermitteln, da Ressourcen durch Folgendes verbraucht werden:
 
