@@ -2,10 +2,10 @@
 title: Best Practices zur Überwachung der [!DNL Assets] Bereitstellung
 description: Best Practices zur Überwachung der Umgebung und Leistung Ihrer [!DNL Adobe Experience Manager] Bereitstellung nach deren Bereitstellung.
 contentOwner: AG
-role: Administrator, Architect
-feature: Asset-Verwaltung
+role: Admin, Architect
+feature: Asset-Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1670'
 ht-degree: 69%
@@ -74,7 +74,7 @@ Die Umgebungsüberwachung umfasst die Überwachung der folgenden Punkte:
 
 Sie benötigen externe Tools, z. B. NewRelic(TM) und AppDynamics(TM), um die einzelnen Elemente zu überwachen. Mit diesen Tools können Sie spezifische Warnungen für Ihr System generieren, z. B. für hohe Systemauslastung, Workflow-Stau, Fehler bei Integritätsprüfungen oder nicht authentifizierten Zugriff auf Ihre Website. Adobe spricht keinerlei Empfehlungen für bestimmte Tools aus. Ermitteln Sie, welches Tool für Ihre Zwecke am besten geeignet ist, und setzen Sie es dann ein, um die erwähnten Punkte zu überwachen.
 
-#### Interne Anwendungsüberwachung  {#internal-application-monitoring}
+#### Interne Anwendungsüberwachung {#internal-application-monitoring}
 
 Die interne Anwendungsüberwachung umfasst die Überwachung der Anwendungskomponenten, aus denen der [!DNL Experience Manager]-Stapel besteht, einschließlich JVM, des Inhalts-Repositorys und die Überwachung durch benutzerdefinierten Anwendungscode, der auf der Plattform erstellt wurde. Im Allgemeinen wird dies mithilfe von JMX MBeans durchgeführt, die mit vielen beliebten Überwachungslösungen, z. B. SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) und anderen, direkt überwacht werden können. Für Systeme, für die keine direkte Verbindung mit JMX unterstützt wird, können Sie Shell-Skripte schreiben, um die JMX-Daten zu extrahieren und für diese Systeme in einem Format verfügbar zu machen, das nativ verstanden wird.
 
@@ -188,7 +188,7 @@ Hier sind einige im Lieferumfang enthaltene Konsistenzprüfungen aufgeführt, di
    * Alarmschwellenwert: Wenn der Status nicht „OK“ lautet.
    * Alarmdefinition: Die Protokolldateien enthalten Fehler. Weitere Informationen zur Ursache des Problems finden Sie unter dem Protokollattribut.
 
-## Allgemeine Probleme und Lösungen {#common-issues-and-resolutions}
+## Gemeinsame Themen und Entschließungen  {#common-issues-and-resolutions}
 
 Im Rahmen der Überwachung finden Sie bei Problemen folgende Fehlerbehebungsaufgaben, die Sie ausführen können, um häufige Probleme mit [!DNL Experience Manager] -Bereitstellungen zu beheben:
 
