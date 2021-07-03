@@ -3,16 +3,16 @@ title: '[!DNL Assets] Erlebnis der Homepage'
 description: Personalisieren Sie die Startseite [!DNL Experience Manager Assets] für ein umfangreiches Begrüßungsbildschirm-Erlebnis, einschließlich einer Momentaufnahme der aktuellen Aktivitäten rund um Assets.
 contentOwner: AG
 feature: Entwicklertools, Asset Management
-role: Administrator, Business Practitioner
+role: Admin, User
 exl-id: 042bd959-256a-4794-a34d-0848a6b8840d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 36%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] Startseiten-Erlebnis  {#aem-assets-home-page-experience}
+# [!DNL Adobe Experience Manager Assets] Startseiten-Erlebnis {#aem-assets-home-page-experience}
 
 Personalisieren Sie die Startseite [!DNL Adobe Experience Manager Assets] für ein umfangreiches Begrüßungsbildschirm-Erlebnis, einschließlich einer Momentaufnahme der aktuellen Aktivitäten rund um Assets.
 
