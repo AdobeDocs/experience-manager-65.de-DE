@@ -2,10 +2,10 @@
 title: Best Practices für [!DNL Assets]
 description: Erhöht die Systemstabilität und die Auslastung, indem Best Practices identifiziert und befolgt werden, die von Ihrer Bereitstellung und Konfiguration abhängen.
 contentOwner: AG
-feature: Asset-Verwaltung
-role: Architect, Administrator
+feature: Asset-Management
+role: Architect, Admin
 exl-id: 6b50f1b3-9c1c-47c8-a43e-6f40c42a41cc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 25%
