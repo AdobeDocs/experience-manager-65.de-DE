@@ -8,12 +8,12 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 feature: 3D Assets,Asset Management
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
-source-git-commit: 1c95217c98cdf24182eebbfea09c807318b2d514
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2306'
-ht-degree: 67%
+ht-degree: 76%
 
 ---
 
@@ -104,7 +104,7 @@ Wenn Sie die Kamera interaktiv bearbeiten, muss darüber hinaus die Kapazität d
 >
 >Siehe [Verwalten von Viewer-Vorgaben](/help/assets/managing-viewer-presets.md).
 
-## Anzeigen von und Interagieren mit einem 3D-Asset auf der Seite „Asset-Details“ {#viewing-three-d-assets-from-asset-details-page}
+## Anzeigen von und Interagieren mit einem 3D-Asset auf der Seite „Asset-Details“  {#viewing-three-d-assets-from-asset-details-page}
 
 Siehe auch [Asset-Vorschau über die Software-Oberfläche](/help/assets/previewing-assets.md).
 
@@ -114,20 +114,20 @@ Siehe auch [Asset-Vorschau über die Software-Oberfläche](/help/assets/previewi
 
    Siehe [Hochladen von 3D-Assets zur Verwendung in Dynamic Media](/help/assets/manage-assets.md#uploading-assets).
 
-1. Tippen Sie in Experience Manager auf der Seite **[!UICONTROL Navigation]** auf **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
+1. Tippen Sie in Adobe Experience Manager auf der Seite **[!UICONTROL Navigation]** auf **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
 1. Tippen Sie oben rechts auf der Seite in der Dropdown-Liste **[!UICONTROL Ansicht]** auf **[!UICONTROL Kartenansicht]**.
 1. Navigieren Sie zu einem 3D-Asset, das Sie anzeigen möchten.
 1. Tippen Sie auf die Karte des 3D-Assets.
 1. Führen Sie auf der Seite mit der Detailansicht für das 3D-Asset einen der folgenden Schritte aus:
 
-   | Anzeigen | Beschreibung | Mausaktion | Aktion auf dem Touchscreen |
+   | Anzeigen | Beschreibung | Mausaktion | Touchscreen-Aktion |
    | --- | --- | --- | --- |
-   | **Kamera drehen** | Drehen Sie die Ansicht um die 3D-Szene und Objekte | Klicken und ziehen Sie mit der linken Maustaste. | Drücken und ziehen Sie mit einem Finger. |
-   | **Kamera schwenken** | Schwenken Sie die Ansicht nach links, rechts, oben oder unten. | Klicken und ziehen Sie mit der rechten Maustaste. | Drücken und ziehen Sie mit zwei Fingern. |
-   | **Kamera zoomen** | Verschieben Sie Bereiche in die 3D-Szene ein- und aus ihnen. | Scrollen Sie mit dem Mausrad. | Pinch mit zwei Fingern. |
-   | **Kamera neu zentrieren** | Zentrieren Sie Ihre Kamera neu auf einen Punkt auf einem Objekt in der 3D-Szene. | Doppelklicken. | Doppeltippen. |
-   | **Zurücksetzen** | Tippen Sie in der rechten unteren Ecke der Seite auf das Symbol &quot;Zurücksetzen&quot;, um den Zielpunkt der Ansicht wieder in die Mitte des 3D-Assets zu setzen. Durch das Zurücksetzen wird die Kamera auch näher heran oder weiter weg bewegt, um das Asset in seiner Gesamtheit und in einer angemessenen Betrachtungsgröße zu zeigen. |  |  |
-   | **Vollbildmodus** | Um in den Vollbildmodus zu wechseln, tippen Sie unten rechts auf der Seite auf das Symbol &quot;Vollbild&quot;. |  |  |
+   | **Kamera drehen** | Drehen Sie die Ansicht um die 3D-Szene und Objekte. | Klicken und ziehen Sie mit der linken Maustaste. | Drücken und ziehen Sie mit einem Finger. |
+   | **Kamera schwenken** | Schwenken Sie nach links, rechts, oben und unten. | Klicken und ziehen Sie mit der rechten Maustaste. | Drücken und ziehen Sie mit zwei Fingern. |
+   | **Kamera zoomen** | Verschieben Sie Bereiche in die 3D-Szene ein- und aus ihnen. | Scrollen Sie mit dem Mausrad. | Bewegen Sie zwei Finger auseinander- bzw. zusammen. |
+   | **Kamera neu zentrieren** | Zentrieren Sie die Kamera neu auf einen Punkt an einem Objekt in der 3D-Szene. | Doppelklicken. | Doppeltippen. |
+   | **Zurücksetzen** | Tippen Sie unten rechts auf der Seite auf das Symbol „Zurücksetzen“, um den Zielpunkt der Ansicht wieder in die Mitte des 3D-Assets zu setzen. Durch das Zurücksetzen wird die Kamera auch näher heran oder weiter weg bewegt, um das Asset in seiner Gesamtheit und in einer angemessenen Betrachtungsgröße zu zeigen. |  |  |
+   | **Vollbildmodus** | Um in den Vollbildmodus zu wechseln, tippen Sie unten rechts auf Seite auf das Symbol „Vollbild“. |  |  |
 
 1. Tippen Sie in der linken oberen Ecke der Seite auf **[!UICONTROL Schließen]**, um zur Seite „Assets“ zurückzukehren.
 
@@ -153,14 +153,14 @@ Ein vollständig interaktives 3D-Asset, wie im **[!UICONTROL Vorschaumodus]** an
 
 1. Führen Sie im **[!UICONTROL Vorschaumodus]** einen der folgenden Schritte aus:
 
-   | Anzeigen | Beschreibung | Mausaktion | Aktion auf dem Touchscreen |
+   | Anzeigen | Beschreibung | Mausaktion | Touchscreen-Aktion |
    | --- | --- | --- | --- |
-   | **Kamera drehen** | Drehen Sie die Ansicht um die 3D-Szene und Objekte | Klicken und ziehen Sie mit der linken Maustaste. | Drücken und ziehen Sie mit einem Finger. |
-   | **Kamera schwenken** | Schwenken Sie die Ansicht nach links, rechts, oben oder unten. | Klicken und ziehen Sie mit der rechten Maustaste. | Drücken und ziehen Sie mit zwei Fingern. |
-   | **Kamera zoomen** | Verschieben Sie Bereiche in die 3D-Szene ein- und aus ihnen. | Scrollen Sie mit dem Mausrad. | Pinch mit zwei Fingern. |
-   | **Kamera neu zentrieren** | Zentrieren Sie Ihre Kamera neu auf einen Punkt auf einem Objekt in der 3D-Szene. | Doppelklicken. | Doppeltippen. |
-   | **Zurücksetzen** | Tippen Sie in der rechten unteren Ecke der Seite auf das Symbol &quot;Zurücksetzen&quot;, um den Zielpunkt der Ansicht wieder in die Mitte des 3D-Assets zu setzen. Durch das Zurücksetzen wird die Kamera auch näher heran oder weiter weg bewegt, um das Asset in seiner Gesamtheit und in einer angemessenen Betrachtungsgröße zu zeigen. |  |  |
-   | **Vollbildmodus** | Um in den Vollbildmodus zu wechseln, tippen Sie unten rechts auf der Seite auf das Symbol &quot;Vollbild&quot;. |  |  |
+   | **Kamera drehen** | Drehen Sie die Ansicht um die 3D-Szene und Objekte. | Klicken und ziehen Sie mit der linken Maustaste. | Drücken und ziehen Sie mit einem Finger. |
+   | **Kamera schwenken** | Schwenken Sie nach links, rechts, oben und unten. | Klicken und ziehen Sie mit der rechten Maustaste. | Drücken und ziehen Sie mit zwei Fingern. |
+   | **Kamera zoomen** | Verschieben Sie Bereiche in die 3D-Szene ein- und aus ihnen. | Scrollen Sie mit dem Mausrad. | Bewegen Sie zwei Finger auseinander- bzw. zusammen. |
+   | **Kamera neu zentrieren** | Zentrieren Sie die Kamera neu auf einen Punkt an einem Objekt in der 3D-Szene. | Doppelklicken. | Doppeltippen. |
+   | **Zurücksetzen** | Tippen Sie unten rechts auf der Seite auf das Symbol „Zurücksetzen“, um den Zielpunkt der Ansicht wieder in die Mitte des 3D-Assets zu setzen. Durch das Zurücksetzen wird die Kamera auch näher heran oder weiter weg bewegt, um das Asset in seiner Gesamtheit und in einer angemessenen Betrachtungsgröße zu zeigen. |  |  |
+   | **Vollbildmodus** | Um in den Vollbildmodus zu wechseln, tippen Sie unten rechts auf Seite auf das Symbol „Vollbild“. |  |  |
 
 ## Wissenswertes über die Arbeit mit der 3D-Medien-Komponente {#working-with-three-d-media-component}
 
