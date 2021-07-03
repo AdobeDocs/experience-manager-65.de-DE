@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Konfiguration,Scene7-Modus
-source-git-commit: 90737593086c680f0a948f5b9cab6e58767b6373
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '6153'
 ht-degree: 59%
@@ -46,7 +46,7 @@ Mit der neuen Architektur ist Experience Manager für Primärquellen-Assets und 
 
 ## Aktivieren von Dynamic Media im Scene7-Modus {#enabling-dynamic-media-in-scene-mode}
 
-[Dynamic Media ist standardmäßig deaktiviert. ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Um die Funktionen von Dynamic Media nutzen zu können, müssen Sie sie aktivieren.
+[Dynamic Media ist standardmäßig deaktiviert. ](https://business.adobe.com/de/products/experience-manager/assets/dynamic-media.html) Um die Funktionen von Dynamic Media nutzen zu können, müssen Sie sie aktivieren.
 
 >[!WARNING]
 Dynamic Media - Scene7-Modus ist nur für die *Experience Manager-Autoreninstanz* vorgesehen. Daher müssen Sie `runmode=dynamicmedia_scene7` in der Experience Manager-Autoreninstanz konfigurieren, *nicht* in der Experience Manager-Veröffentlichungsinstanz.
@@ -76,7 +76,7 @@ Um benutzerdefinierte Viewer-Vorgaben und Konfigurationen zu migrieren, die Sie 
 
 Die Installation von Feature Pack 18912 ist *optional*.
 
-Mit Feature Pack 18912 können Sie Assets entweder per FTP stapelweise erfassen oder Assets im Experience Manager aus dem Dynamic Media - Hybridmodus oder Dynamic Media Classic in den Dynamic Media - Scene7 -Modus migrieren. Sie ist verfügbar unter [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
+Mit Feature Pack 18912 können Sie Assets entweder per FTP stapelweise erfassen oder Assets im Experience Manager aus dem Dynamic Media - Hybridmodus oder Dynamic Media Classic in den Dynamic Media - Scene7 -Modus migrieren. Sie ist verfügbar unter [Adobe Professional Services](https://business.adobe.com/de/customers/consulting-services/main.html).
 
 Weitere Informationen finden Sie unter [Installieren von Feature Pack 18912 für die Massenmigration von Assets](/help/assets/bulk-ingest-migrate.md) .
 
@@ -486,7 +486,7 @@ Wenn das Rotationsset hochgeladen und veröffentlicht wird, aktivieren Sie den N
 
    Durch das Aktivieren dieser Vorgabe wird sichergestellt, dass beim Hochladen von Assets in Dynamic Media die Stapelsatzvorgabe zur Erstellung des Satzes angewendet wird.
 
-### (Optional) Steigern der Leistung von Dynamic Media – Scene7-Modus  {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
+### (Optional) Steigern der Leistung von Dynamic Media – Scene7-Modus {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
 Damit der Dynamic Media-Scene7-Modus reibungslos ausgeführt werden kann, empfiehlt Adobe die folgenden Tipps zur Optimierung der Synchronisierungsleistung/-skalierbarkeit:
 
