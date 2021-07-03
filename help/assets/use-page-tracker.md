@@ -2,10 +2,10 @@
 title: Verwenden des Seitentrackers und des Einbettungscodes in Webseiten
 description: Erfahren Sie mehr über das Miteinbeziehen der Seitenverfolgung und das Einbetten von JavaScript-Codes in Ihren Website-Code, damit Adobe Analytics Nutzungsdaten zu Assets erfassen kann.
 contentOwner: AG
-role: Architect, Administrator
-feature: 'Asset-Berichte '
+role: Architect, Admin
+feature: Asset-Berichte
 exl-id: 14d02015-df00-4566-a098-de76eaf42605
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 70%
@@ -60,7 +60,7 @@ Der folgende Beispiel-Code veranschaulicht, wie eine Web-Seite aussieht, die sow
 </html>
 ```
 
-## Hinzufügen des Seitenverfolgungscodes {#adding-page-tracker-code}
+## Hinzufügen von Seitentracker-Code {#adding-page-tracker-code}
 
 Sie fügen den Seitenverfolgungs-Code in der Kopfzeile des Website-Codes hinzu. Das folgende Codebeispiel zeigt den Seitenverfolgungscode, der in einer Beispielwebseite enthalten ist:
 
