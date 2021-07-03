@@ -3,12 +3,12 @@ title: Optimierte Smart-Tags
 description: Optimierte Smart-Tags
 contentOwner: AG
 feature: Smart-Tags, Suche
-role: Business Practitioner
+role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1600'
-ht-degree: 47%
+ht-degree: 51%
 
 ---
 
@@ -117,7 +117,7 @@ Die Suchergebnisse, die in Metadatenfeldern alle Suchbegriffe aufweisen, werden 
 >
 >Wenn die Lucene-Indizierung von [!DNL Adobe Experience Manager] ausgeführt wird, funktioniert die Suche, die auf Smart-Tags basiert, nicht erwartungsgemäß.
 
-## Tagging von Assets mit Tags {#tagging-assets-automatically}
+## Assets automatisch taggen {#tagging-assets-automatically}
 
 Wenn Sie den Smart Content Service trainiert haben, können Sie den Tagging-Workflow starten, um automatisch passende Tags auf einen anderen Satz ähnlicher Assets anzuwenden.
 
@@ -143,7 +143,7 @@ Sie können den Tagging-Workflow über die Workflow-Konsole oder die Timeline Tr
 
 #### Tagging von Assets über die Workflow-Konsole {#tagging-assets-from-the-workflow-console}
 
-1. Wechseln Sie in der [!DNL Experience Manager]-Benutzeroberfläche zu **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**.
+1. Gehen Sie in der [!DNL Experience Manager]-Benutzeroberfläche zu **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**.
 1. Wählen Sie auf der Seite **[!UICONTROL Workflow-Modelle]** den Workflow **[!UICONTROL DAM Smart Tags Assets]** aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Workflow starten]**.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
@@ -157,7 +157,7 @@ Sie können den Tagging-Workflow über die Workflow-Konsole oder die Timeline Tr
 
 #### Tagging von Assets über die Zeitleiste {#tagging-assets-from-the-timeline}
 
-1. Wählen Sie in der [!DNL Assets]-Benutzeroberfläche den Ordner mit Assets oder bestimmten Assets aus, auf die Sie Smart-Tags anwenden möchten.
+1. Wählen Sie über die [!DNL Assets]-Benutzeroberfläche den Ordner mit Assets oder bestimmte Assets aus, auf die Sie Smart-Tags anwenden möchten.
 1. Öffnen Sie die **[!UICONTROL Zeitleiste]** oben links.
 1. Öffnen Sie die Aktionen unten in der linken Seitenleiste und klicken Sie auf **[!UICONTROL Workflow starten]**.
 
@@ -168,9 +168,9 @@ Sie können den Tagging-Workflow über die Workflow-Konsole oder die Timeline Tr
 
 >[!NOTE]
 >
->In den nachfolgenden Tagging-Zyklen werden nur die geänderten Assets erneut mit neu trainierten Tags getaggt. Allerdings werden auch unveränderte Assets mit Tags versehen, wenn das Intervall zwischen dem letzten und dem aktuellen Tagging-Zyklus für den Tagging-Workflow 24 Stunden überschreitet. Bei periodischen Tagging-Workflows werden unveränderte Assets mit Tags versehen, wenn der Zeitraum sechs Monate überschreitet.
+>In zukünftigen Tagging-Zyklen werden nur geänderte Assets mit neu trainierten Tags versehen. Allerdings werden auch unveränderte Assets mit Tags versehen, wenn das Intervall zwischen dem letzten und dem aktuellen Tagging-Zyklus für den Tagging-Workflow 24 Stunden überschreitet. Bei periodischen Tagging-Workflows werden unveränderte Assets mit Tags versehen, wenn das Intervall sechs Monate überschreitet.
 
-## Kuratieren oder moderieren Sie die angewendeten Smart-Tags {#manage-smart-tags}
+## Kuratieren oder Moderieren der angewendeten Smart-Tags {#manage-smart-tags}
 
 Sie können Smart-Tags kuratieren, um ungenaue Tags zu entfernen, die Ihren Markenbildern zugewiesen sind, sodass nur die relevantesten Tags angezeigt werden.
 
