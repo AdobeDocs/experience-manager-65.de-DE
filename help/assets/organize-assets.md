@@ -2,10 +2,10 @@
 title: Digitale Assets organisieren
 description: Organisieren Sie Ihre digitalen Assets, Bilder, Dateien, Ordner usw. mithilfe von Experience Manager.
 contentOwner: AG
-role: Business Practitioner
+role: User
 feature: Asset-Verwaltung, Suche
 exl-id: d6f815b5-e4fc-4f8c-a6c1-9e50035ab9f2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 8%
@@ -38,7 +38,7 @@ Die einfachste Möglichkeit zum Organisieren von Assets besteht darin, diese in 
 * Erstellen Sie einen Ordner mit Ordnern, die sich wahrscheinlich nicht ändern werden, damit Anpassungen oder Automatisierungen weiterhin funktionieren. Beispielsweise funktionieren die zugewiesenen Verarbeitungsprofile weiterhin.
 * Wenn ein Asset bereits veröffentlicht ist und Sie [!DNL Experience Manager] verwenden, um das Asset in einen anderen Ordner zu verschieben und es von seinem neuen Speicherort aus erneut zu veröffentlichen, ist der ursprünglich veröffentlichte Asset-Speicherort weiterhin verfügbar, zusammen mit dem neu veröffentlichten Asset. Das ursprünglich veröffentlichte Asset ist jedoch *lost* bis [!DNL Experience Manager] und kann nicht rückgängig gemacht werden. Daher empfiehlt es sich, zunächst die Veröffentlichung eines Assets rückgängig zu machen und es dann in einen anderen Ordner zu verschieben.
 
-## Organisieren von Assets mit den Tags {#use-tags-to-organize-assets}
+## Organisieren von Assets mit Tags {#use-tags-to-organize-assets}
 
 Mithilfe von Tags als Metadaten können Sie mühelos Assets suchen, Sammlungen mithilfe der Suchergebnisse erstellen, das Suchangebot für einige Assets verbessern und KI-Algorithmen von Adobe Sensei für die Asset-Erkennung nutzen.
 
@@ -61,7 +61,7 @@ Any hints/recommendations of when to use what method of organizing? Some example
 Add back links to blog posts by marketing?
 -->
 
-## Organisieren Sie Ihre Assets für die Verwendung von Profilen {#organize-to-use-profiles}
+## Organisieren von Assets zur Verwendung von Profilen {#organize-to-use-profiles}
 
 Ein Verarbeitungsprofil enthält [!DNL Assets] Verarbeitungsbefehle, die für Assets gelten, die in vordefinierte Ordner hochgeladen werden. Profile werden verwendet, um die Verarbeitung von Inhalten eines Ordners oder von neu hochgeladenen Assets zu automatisieren. Sie können Profile nutzen, um Ihre Assets besser zu organisieren.
 
