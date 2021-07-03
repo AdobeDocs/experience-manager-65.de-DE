@@ -3,10 +3,10 @@ title: Integration mit Best Practices für Adobe Creative Cloud
 description: Best Practices zur Integration von [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] zur Optimierung von Workflows zur Asset-Übertragung und zur Erzielung einer hohen Content-Geschwindigkeit.
 contentOwner: AG
 mini-toc-levels: 1
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Zusammenarbeit, Adobe Asset Link, Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
-source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '3254'
 ht-degree: 54%
@@ -127,7 +127,7 @@ Für das Entwickeln eines effizienten Workflows zwischen Kreativ-Teams und Marke
 
 Das Speichern von Assets in DAM macht sie leicht zugänglich und auffindbar. Es wird sichergestellt, dass die Assets von verschiedenen Benutzern in der gesamten Organisation oder im gesamten System genutzt werden, z. B. von Kunden, Partnern usw.
 
-Die meisten Unternehmen speichern nur Assets, die für nachgelagerte Marketing-/LOB-Prozesse relevant sind (Veröffentlichung in Kanälen wie Webkanal über [!DNL Experience Manager Sites] oder andere Kanäle, die von Adobe Experience Cloud bereitgestellt werden - Marketing Cloud, Advertising Cloud, von Analytics Cloud gemessen, Bereitstellung für Benutzer/Partner usw.). Außerdem speichern Organisationen Assets, für die möglicherweise ein Prüfungs-/Genehmigungsprozess in DAM erfolgt. Auf diese Weise werden hauptsächlich Assets in DAM gespeichert, die mit hoher Wahrscheinlichkeiten genutzt werden, und das Speichern von Assets im Leerlauf wird vermieden.
+Die meisten Unternehmen speichern nur Assets, die für nachgelagerte Marketing-/LOB-Prozesse relevant sind (Veröffentlichung in Kanälen wie Webkanal über [!DNL Experience Manager Sites] oder andere Kanäle, die von Adobe Experience Cloud bereitgestellt werden - Marketing Cloud, Advertising Cloud, von Analytics Cloud gemessen, bereitgestellt für Benutzer/Partner usw.). Außerdem speichern Organisationen Assets, für die möglicherweise ein Prüfungs-/Genehmigungsprozess in DAM erfolgt. Auf diese Weise werden hauptsächlich Assets in DAM gespeichert, die mit hoher Wahrscheinlichkeiten genutzt werden, und das Speichern von Assets im Leerlauf wird vermieden.
 
 Die Speicherung von Assets hängt außerdem von Überlegungen zu technischen Aspekten und zur Ressourcennutzung ab. DAM bietet zusätzliche Services rund um gespeicherte Assets, darunter Extrahieren von Metadaten, Versionierung, Erstellen von Vorschauen/Transcodierung, Verwalten von Referenzen und Hinzufügen von Informationen zur Zugriffssteuerung. Diese Services erfordern zusätzlich Zeit und Infrastrukturressourcen.
 
