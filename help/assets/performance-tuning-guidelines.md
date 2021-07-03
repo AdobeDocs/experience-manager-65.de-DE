@@ -3,10 +3,10 @@ title: Leistungsoptimierung [!DNL Assets].
 description: Empfehlungen und Anleitungen zur [!DNL Experience Manager] Konfiguration, Änderungen an Hardware-, Software- und Netzwerkkomponenten, um Engpässe zu beseitigen und die Leistung von [!DNL Experience Manager Assets] zu optimieren.
 contentOwner: AG
 mini-toc-levels: 1
-role: Architect, Administrator
-feature: Asset-Verwaltung
+role: Architect, Admin
+feature: Asset-Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2743'
 ht-degree: 52%
@@ -15,7 +15,7 @@ ht-degree: 52%
 
 <!-- TBD: Get reviewed by engineering. -->
 
-# [!DNL Adobe Experience Manager Assets] Handbuch zur Leistungsoptimierung  {#assets-performance-tuning-guide}
+# [!DNL Adobe Experience Manager Assets] Handbuch zur Leistungsoptimierung {#assets-performance-tuning-guide}
 
 Ein [!DNL Experience Manager Assets]-Setup enthält eine Reihe von Hardware-, Software- und Netzwerkkomponenten. Je nach Ihrem Bereitstellungsszenario benötigen Sie möglicherweise bestimmte Konfigurationsänderungen an den Hardware-, Software- und Netzwerkkomponenten, um Leistungsengpässe zu vermeiden.
 
@@ -75,7 +75,7 @@ Legen Sie die folgenden JVM-Parameter fest:
 
 Die Trennung des Datenspeichers vom Segmentspeicher wird für alle [!DNL Experience Manager Assets] -Benutzer empfohlen. Außerdem kann die Leistung durch die Konfiguration der Parameter `maxCachedBinarySize` und `cacheSizeInMB` maximiert werden. Stellen Sie `maxCachedBinarySize` auf die kleinste im Cache unterstützte Dateigröße ein. Geben Sie die Größe des Arbeitsspeicher-Cache für den Datenspeicher in `cacheSizeInMB` ein. Adobe empfiehlt, diesen Wert auf 2–10 Prozent der gesamten Heap-Größe einzustellen. Mithilfe von Last-/Leistungstests lässt sich die ideale Einstellung herausfinden.
 
-### Konfigurieren der Maximalgröße des gepufferten Bilder-Caches    {#configure-the-maximum-size-of-the-buffered-image-cache}
+### Konfigurieren der Maximalgröße des gepufferten Bilder-Caches   {#configure-the-maximum-size-of-the-buffered-image-cache}
 
 Verringern Sie beim Hochladen großer Mengen von Assets auf [!DNL Adobe Experience Manager] die konfigurierte Maximalgröße des gepufferten Bild-Caches, um unerwartete Spitzen bei der Speicherbelegung zu ermöglichen und zu verhindern, dass JVM mit OutOfMemoryErrors fehlschlägt. Betrachten wir ein Beispiel mit einem System, das über eine maximale Heap-Größe (-`Xmx`param) von 5 GB verfügt und bei dem der Oak-Blob-Cache auf 1 GB und der Dokumenten-Cache auf 2 GB eingestellt ist. In diesem Fall würde der gepufferte Cache das Maximum von 1,25 GB Speicher in Anspruch nehmen, wodurch nur 0,75 GB Speicher für unerwartete Spitzen verblieben.
 
@@ -83,7 +83,7 @@ Konfigurieren Sie die Größe des gepufferten Cache in der OSGi-Webkonsole. Lege
 
 Wenn Sie von Experience Manager 6.1 SP1 aus einen `sling:osgiConfig` -Knoten für die Konfiguration dieser Eigenschaft verwenden, stellen Sie sicher, dass Sie den Datentyp auf &quot;Long&quot;einstellen. Weitere Details finden Sie unter [CQBufferedImageCache belegt beim Asset-Upload den Heap](https://helpx.adobe.com/de/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html).
 
-### Gemeinsame Datenspeicher    {#shared-data-stores}
+### Gemeinsame Datenspeicher   {#shared-data-stores}
 
 Mit der Implementierung eines S3-Datenspeichers oder Shared File Datastore sparen Sie Speicherplatz auf der Festplatte und erhöhen den Netzwerkdurchsatz in großen Implementierungen. Weitere Informationen zu den Vor- und Nachteilen der Verwendung eines freigegebenen Datenspeichers finden Sie unter [Handbuch zur Dimensionierung von Assets](/help/assets/assets-sizing-guide.md).
 
@@ -151,7 +151,7 @@ Dauert die Bereinigung zu lange, kommt es zu einem Timeout. Daher sollten Sie si
 
 Nach Ausführung zahlreicher nicht transienter Workflows (die Workflow-Instanzknoten erstellen) können Sie beispielsweise [ACS AEM Commons Workflow Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) auf Ad-hoc-Basis ausführen. Es entfernt redundante, abgeschlossene Workflow-Instanzen sofort, ohne dass Sie auf die Ausführung des Adobe Granite-Workflow-Bereinigungsplaners warten müssen.
 
-### Maximal parallel ausführbare Aufträge    {#maximum-parallel-jobs}
+### Maximal parallel ausführbare Aufträge   {#maximum-parallel-jobs}
 
 Standardmäßig führt [!DNL Experience Manager] eine maximale Anzahl paralleler Aufträge aus, die der Anzahl der Prozessoren auf dem Server entspricht. Das Problem bei dieser Einstellung besteht darin, dass in Zeiten hoher Auslastung alle Prozessoren von den Workflows [!UICONTROL DAM Update Asset] belegt werden, wodurch die Reaktionsfähigkeit der Benutzeroberfläche verlangsamt und [!DNL Experience Manager] daran gehindert wird, andere Prozesse auszuführen, die die Serverleistung und -stabilität gewährleisten. Es hat sich bewährt, diese Einstellung so zu wählen, dass nur die Hälfte der auf dem Server verfügbaren Prozessoren verwendet wird:
 
@@ -230,7 +230,7 @@ Wenn Sie eine große Menge an Metadaten importieren, kann es zu ressourcenintens
 
 Wenn Sie Assets in einer große Menge an veröffentlichten Instanzen replizieren (beispielsweise in einer Sites-Implementierung), empfiehlt Adobe die Kettenreplikation. In diesem Fall wird die Autorinstanz in eine einzelne Veröffentlichungsinstanz repliziert, die wiederum in die anderen Veröffentlichungsinstanzen repliziert wird und so die Autorinstanz freihält.
 
-### Konfiguration der Kettenreplikation    {#configure-chain-replication}
+### Konfiguration der Kettenreplikation   {#configure-chain-replication}
 
 1. Wählen Sie die Veröffentlichungsinstanz, mit der Sie die Replikationen verketten möchten.
 1. Fügen Sie dieser Veröffentlichungsinstanz Agenten hinzu, die auf die anderen Veröffentlichungsinstanzen verweisen.
@@ -240,7 +240,7 @@ Wenn Sie Assets in einer große Menge an veröffentlichten Instanzen replizieren
 >
 >Adobe rät von der automatischen Aktivierung von Assets ab. Falls jedoch notwendig, sollte dies der letzte Schritt in einem Workflow, normalerweise „DAM-Update-Asset“, sein.
 
-## Durchsuchen von Indizes    {#search-indexes}
+## Durchsuchen von Indizes   {#search-indexes}
 
 Installieren Sie [die neuesten Service Packs](/help/release-notes/sp-release-notes.md) und leistungsbezogene Hotfixes, da diese häufig Aktualisierungen von Systemindizes enthalten. Unter [Tipps zur Leistungsoptimierung](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html) finden Sie einige Indexoptimierungen.
 
@@ -276,7 +276,7 @@ Wenn Dateien bei Verwendung eines freigegebenen S3-Datenspeichers eine Größe v
 
 Legen Sie für jede [!DNL Experience Manager]-Implementierung ein Leistungstestsystem fest, das Engpässe schnell erkennen und beheben kann. Konzentrieren Sie sich dabei auf die folgenden Schlüsselaspekte.
 
-### Netzwerktests    {#network-testing}
+### Netzwerktests   {#network-testing}
 
 Führen Sie für alle Aspekte, die die für Kunden relevante Netzwerkleistung betreffen, die folgenden Aufgaben aus:
 
@@ -286,7 +286,7 @@ Führen Sie für alle Aspekte, die die für Kunden relevante Netzwerkleistung be
 * Testen Sie unter Verwendung eines Benchmark-Tools für Netzwerke.
 * Testen Sie mit dem Dispatcher.
 
-### [!DNL Experience Manager] Bereitstellungstests  {#aem-deployment-testing}
+### [!DNL Experience Manager] Bereitstellungstests {#aem-deployment-testing}
 
 Um Latenzzeiten zu minimieren und durch effiziente CPU-Auslastung und Lastverteilung einen hohen Durchsatz zu erzielen, überwachen Sie regelmäßig die Leistung Ihrer [!DNL Experience Manager]-Implementierung. Führen Sie insbesondere die folgenden Aufgaben aus:
 
