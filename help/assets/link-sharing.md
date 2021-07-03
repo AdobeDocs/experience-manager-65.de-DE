@@ -2,17 +2,17 @@
 title: Freigeben von Assets über einen Link
 description: Freigeben von Assets, Ordnern und Sammlungen als URL.
 contentOwner: AG
-role: Business Practitioner
+role: User
 feature: Linkfreigabe, Asset-Verwaltung
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
-source-git-commit: 3ec39279d001297dcc11ebd1110bb452de8ca980
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 38%
 
 ---
 
-# Freigeben von Assets über einen Link {#asset-link-sharing}
+# Asset über einen Link freigeben {#asset-link-sharing}
 
 [!DNL Adobe Experience Manager Assets]Mit können Sie Assets, Ordner und Sammlungen als URL für Mitglieder Ihres Unternehmens und externe Einheiten (z. B. Partner und Anbieter) freigeben. Die Freigabe von Assets über einen Link ist eine praktische Methode, um Ressourcen für externe Parteien verfügbar zu machen, ohne dass sich diese zunächst bei [!DNL Assets] anmelden müssen.
 
