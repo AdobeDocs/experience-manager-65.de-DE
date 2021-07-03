@@ -4,10 +4,10 @@ description: 'Der Dynamic Media Newsletter von Experience League ist ein monatli
 keywords: Dynamic Media; Newsletter; Produktupdates; Tipps und Tricks; Ereignisse; Kundenerfolg; Blog; Blogs; Bilder; Videos; Funktionen; Funktionen
 contentOwner: Rick Brough
 solution: Dynamic Media Classic, Experience Manager
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 8aa779e0-cf76-45a7-a474-556fdfded31b
 feature: Zusammenarbeit, Dynamic Media Classic
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1182'
 ht-degree: 79%
@@ -61,7 +61,7 @@ Dieser Newsletter enthält wertvolle Ressourcen zum Wissensaufbau. Es enthält V
    In dieser Ausgabe:
 
    * Nehmen Sie an neuen Skill Builder-Webinaren teil und werden Sie zum Experten für Dynamic Media Classic.
-   * Hier finden Sie Dynamic Media auf dem Adobe Summit 2020.
+   * Hier finden Sie Dynamic Media im Adobe Summit 2020.
    * Entdecken Sie, wie Sie das magische Zuschneiden von Dynamic Media verwenden.
    * Profitieren Sie von einer kostenlosen Prüfung, damit Sie von Dynamic Media Classic profitieren können.
    * Informieren Sie sich über die neue Benutzeroberfläche von Dynamic Media Classic.
