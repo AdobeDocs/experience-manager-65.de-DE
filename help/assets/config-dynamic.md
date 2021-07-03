@@ -10,10 +10,10 @@ content-type: reference
 discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Konfiguration,Hybridmodus
-source-git-commit: 48463a72108621e94f1c50cf43f911794ec759dd
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '7838'
 ht-degree: 38%
@@ -142,7 +142,7 @@ Sie können Dynamic Media nur für die Bildbearbeitung, nur für Videos oder fü
 
 ## Aktivieren von Dynamic Media {#enabling-dynamic-media}
 
-[Dynamic Media ist standardmäßig deaktiviert. ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Um die Funktionen von Dynamic Media nutzen zu können, müssen Sie Dynamic Media mit dem Ausführungsmodus `dynamicmedia` aktivieren, wie Sie es beispielsweise mit dem Ausführungsmodus `publish` tun würden. Prüfen Sie vor dem Aktivieren die [technischen Anforderungen](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on).
+[Dynamic Media ist standardmäßig deaktiviert. ](https://business.adobe.com/de/products/experience-manager/assets/dynamic-media.html) Um die Funktionen von Dynamic Media nutzen zu können, müssen Sie Dynamic Media mit dem Ausführungsmodus `dynamicmedia` aktivieren, wie Sie es beispielsweise mit dem Ausführungsmodus `publish` tun würden. Prüfen Sie vor dem Aktivieren die [technischen Anforderungen](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on).
 
 >[!NOTE]
 >
