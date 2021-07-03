@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Video
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1568'
 ht-degree: 38%
@@ -54,7 +54,7 @@ Der Speicherort für hochgeladene Videos hängt von folgenden Faktoren ab:
 
 Falls Sie eine der Fragen mit „ja“ beantworten können, laden Sie Ihr Video direkt in Adobe DAM hoch. Wenn die Antwort auf beide Fragen &quot;Nein&quot;lautet, laden Sie Ihr Video direkt in Dynamic Media Classic hoch. Der Workflow für die einzelnen Szenarien wird im folgenden Abschnitt beschrieben.
 
-### Wenn Sie Ihr Video direkt in Adobe DAM hochladen  {#if-you-are-uploading-your-video-directly-to-adobe-dam}
+### Wenn Sie Ihr Video direkt in Adobe DAM hochladen {#if-you-are-uploading-your-video-directly-to-adobe-dam}
 
 Wenn Sie einen Workflow oder eine Versionierung für Ihre Assets benötigen, laden Sie zuerst in Adobe DAM hoch. Der folgende Workflow wird empfohlen:
 
@@ -93,13 +93,13 @@ So konfigurieren Sie universelle Vorlagen:
 
 1. Die ausgewählten Kodierungsprofile werden automatisch auf alle Videos angewendet, die in den CQ DAM-Zielordner, den Sie für diese Scene7-Cloud-Konfiguration einrichten, hochgeladen werden. Sie können mehrere Scene7-Cloud-Konfigurationen mit verschiedenen Zielordnern einrichten, um nach Bedarf verschiedene Kodierungsprofile anzuwenden.
 
-## Aktualisieren von Viewer- und Kodierungsvorlagen  {#updating-viewer-and-encoding-presets}
+## Aktualisieren von Viewer- und Kodierungsvorlagen {#updating-viewer-and-encoding-presets}
 
 Um die Viewer- und Kodierungsvorgaben für Videos zu aktualisieren, da die Vorgaben in Scene7 aktualisiert wurden, navigieren Sie zur Scene7-Konfiguration in der Cloud-Konfiguration und tippen Sie auf **[!UICONTROL Viewer- und Kodierungsvorgaben aktualisieren]**.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
-## Hochladen des Primärvideos von Adobe DAM {#uploading-your-master-video} in Scene7
+## Hochladen des Primärvideos von Adobe DAM zu Scene7 {#uploading-your-master-video}
 
 1. Navigieren Sie zum CQ DAM-Zielordner, in dem Sie Ihre Cloud-Konfiguration mit Scene7-Kodierungsprofilen eingerichtet haben.
 1. Klicken Sie auf **[!UICONTROL Upload]** , um das Primärvideo hochzuladen. Das Hochladen und die Kodierung von Videos sind abgeschlossen, nachdem der Workflow [!UICONTROL DAM-Update-Asset] abgeschlossen ist und **[!UICONTROL In Scene7 veröffentlichen]** ein Häkchen aufweist.
@@ -140,7 +140,7 @@ Die folgende Tabelle bietet einen allgemeinen Vergleich der unterstützten Funkt
 | Erweiterbarkeit | Ja | Nein |
 | Mobile Videos | Ja | Ja |
 
-### Einrichtung  {#setting-up}
+### Einrichtung {#setting-up}
 
 #### Erstellen von Videoprofilen {#creating-video-profiles}
 
@@ -168,7 +168,7 @@ Die verschiedenen Videokodierungsmethoden werden anhand der S7-Kodierungsvorlage
 
    Wiederholen Sie diesen Schritt für alle in der Cloud-Konfiguration ausgewählten Kodierungsvorlagen, die Sie in der Videokomponente verwenden möchten.
 
-#### Konfigurieren des Designs {#configuring-design}
+#### Design konfigurieren {#configuring-design}
 
 Die Komponente **[!UICONTROL Foundation-Video]** muss wissen, welche Videoprofile zum Erstellen der Videoquellenliste verwendet werden sollen. Öffnen Sie das Dialogfeld &quot;Design&quot;der Videokomponenten und konfigurieren Sie das Komponentendesign für die Verwendung der neuen Videoprofile.
 
