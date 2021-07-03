@@ -2,13 +2,13 @@
 title: Berichte zur Verwendung und Freigabe von Assets
 description: Berichte zu Ihren Assets in  [!DNL Adobe Experience Manager Assets] , die Ihnen dabei helfen, Nutzung, Aktivität und Freigabe Ihrer digitalen Assets zu verstehen.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Asset-Berichte ,Asset Management
+role: User, Admin
+feature: Asset-Berichte,Asset-Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1143'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
@@ -90,15 +90,15 @@ Gehen Sie wie folgt vor, um Berichte zu erstellen:
 
    ![Detailseite des Berichts „Dateien“](assets/files_report.png)
 
-   Der Bericht **[!UICONTROL Link-Freigabe]** zeigt URLs zu Assets an, die für externe Benutzer aus [!DNL Assets] freigegeben wurden. Er enthält E-Mail-IDs des Benutzers, der die Assets freigegeben hat, E-Mail-IDs von Benutzern, für die die Assets freigegeben wurden, Freigabedatum und Ablaufdatum des Links. Die Spalten können nicht angepasst werden.
+   Der Bericht **[!UICONTROL Linkfreigabe]** zeigt URLs zu Assets an, die für externe Benutzer aus [!DNL Assets] freigegeben wurden. Er enthält E-Mail-IDs des Benutzers, der die Assets freigegeben hat, E-Mail-IDs von Benutzern, für die die Assets freigegeben wurden, Freigabedatum und Ablaufdatum des Links. Die Spalten können nicht angepasst werden.
 
-   Der Bericht **[!UICONTROL Link-Freigabe]** umfasst keine Optionen für Unterordner und Ausgabedarstellungen, da er lediglich die freigegebenen URLs veröffentlicht, die unter `/var/dam/share` zu finden sind.
+   Der Bericht **[!UICONTROL Linkfreigabe]** umfasst keine Optionen für Unterordner und Ausgabedarstellungen, da er lediglich die freigegebenen URLs veröffentlicht, die unter `/var/dam/share` zu finden sind.
 
-   ![Detailseite des Berichts „Link-Freigabe“](assets/link_share.png)
+   ![Detailseite des Berichts „Linkfreigabe“](assets/link_share.png)
 
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Weiter]**.
 
-1. Auf der Seite **[!UICONTROL Spalten konfigurieren]** sind einige Spalten standardmäßig für den Bericht ausgewählt. Sie können zusätzliche Spalten auswählen. Abbrechen der Auswahl einer Spalte, um sie im Bericht auszuschließen.
+1. Auf der Seite **[!UICONTROL Spalten konfigurieren]** sind einige Spalten standardmäßig für den Bericht ausgewählt. Sie können zusätzliche Spalten auswählen. Heben Sie die Auswahl einer Spalte auf, um sie im Bericht auszuschließen.
 
    ![Auswahl der Berichtsspalten auswählen oder abbrechen](assets/configure_columns.png)
 
@@ -113,7 +113,7 @@ Gehen Sie wie folgt vor, um Berichte zu erstellen:
 
    Klicken Sie in der Symbolleiste auf **[!UICONTROL Download]**, um den Bericht im CSV-Format herunterzuladen.
 
-## Hinzufügen benutzerdefinierter Spalten  {#add-custom-columns}
+## Hinzufügen benutzerdefinierter Spalten   {#add-custom-columns}
 
 Sie können folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weitere Daten für Ihre speziellen Anforderungen anzuzeigen:
 
