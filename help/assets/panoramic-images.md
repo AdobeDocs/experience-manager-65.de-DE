@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
-feature: Panoramabilder,Asset-Verwaltung
-role: Business Practitioner, Administrator
+feature: Panoramabilder,Asset-Management
+role: User, Admin
 exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
-source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 61%
@@ -83,6 +83,6 @@ Wenn Sie ein Bild in der Komponente Panoramamedien in Ihrem WCM abgelegt haben u
 
 Weitere Informationen finden Sie im Abschnitt [Asset-Vorschau](/help/assets/previewing-assets.md).
 
-## Veröffentlichen von Panoramabildern   {#publishing-panoramic-images}
+## Veröffentlichen von Panoramabildern    {#publishing-panoramic-images}
 
 Siehe [Veröffentlichen von Assets](/help/assets/publishing-dynamicmedia-assets.md).
