@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 feature: Dynamic Media Classic
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: 900a2ccbf33575644f934e5a75380d8dd3eab5d8
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2849'
 ht-degree: 24%
@@ -74,7 +74,7 @@ Nachdem sie im Modus **[!UICONTROL Design]** verfügbar gemacht wurden, können 
 >
 >Wenn Sie benutzerdefinierte Viewer erstellen und entwickeln und die Inhaltssuche verwenden, müssen Sie den Parameter `allowfullscreen` explizit hinzufügen.
 
-### Hinweis zur Einstellung von Flash-Viewer {#flash-viewers-end-of-life-notice}
+### Hinweis zum End of Life von Flash-Viewern {#flash-viewers-end-of-life-notice}
 
 Mit Wirkung vom 31. Januar 2017 hat Adobe Dynamic Media Classic die Unterstützung für die Flash-Viewer-Plattform eingestellt.
 
@@ -229,7 +229,7 @@ Der Text berücksichtigt den Namen des aktuell angemeldeten Benutzers. Sie könn
 
 ![chlimage_1-237](assets/chlimage_1-237.png)
 
-#### Erstellen einer Dynamic Media Classic-Bildvorlage als Link {#making-the-scene-image-template-a-link}
+#### Verknüpfen der Dynamic Media Classic-Bildvorlage {#making-the-scene-image-template-a-link}
 
 1. Tippen Sie auf der Seite mit der Komponente Dynamic Media Classic **[!UICONTROL Bildvorlage]** auf **[!UICONTROL Bearbeiten]**.
 1. Geben Sie im Feld **[!UICONTROL URL]** die URL ein, zu der Benutzer navigieren, wenn auf das Bild getippt wird. Wählen Sie im Feld **[!UICONTROL Öffnen in]** aus, ob das Ziel (in einem neuen oder im selben Fenster) geöffnet werden soll.
@@ -238,7 +238,7 @@ Der Text berücksichtigt den Namen des aktuell angemeldeten Benutzers. Sie könn
 
 1. Tippen Sie auf **[!UICONTROL OK]**.
 
-### Komponente „Video“{#video-component}
+### Komponente „Video“ {#video-component}
 
 Die Komponente Dynamic Media Classic **[!UICONTROL Video]** (verfügbar im Dynamic Media Classic-Abschnitt des Sidekicks) verwendet die Geräte- und Bandbreitenerkennung, um jedem Bildschirm das richtige Video bereitzustellen. Bei dieser Komponente handelt es sich um einen HTML5-Video-Player. Es ist ein einzelner Viewer, der kanalübergreifend verwendet werden kann.
 
