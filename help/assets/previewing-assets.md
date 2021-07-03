@@ -8,17 +8,17 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: bb8c355c-4475-45ec-9096-0975f0ce2c27
 docset: aem65
-feature: Asset-Verwaltung
-role: Business Practitioner, Administrator
+feature: Asset-Management
+role: User, Admin
 exl-id: 84f0c406-4ab6-48c7-8223-61a8c3ade363
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1346'
-ht-degree: 83%
+ht-degree: 84%
 
 ---
 
-# Vorschau von Assets über die Software-Oberfläche {#previewing-assets}
+# Asset-Vorschau über die Software-Oberfläche {#previewing-assets}
 
 Mit der Vorschau können Sie prüfen, wie ein von Ihnen hochgeladenes digitales Asset aussieht, wenn es von einem Kunden im eigenen Webbrowser angezeigt wird. Die Vorschau erfolgt über den eingebetteten, geräteübergreifenden Standard-Viewer, der dem Asset zugewiesen ist.
 
@@ -144,7 +144,7 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
     </tbody>
     </table>
 
-## Vorschau von Assets mit einer Tastatur {#keyboard-navigation-asset-preview}
+## Asset-Vorschau über eine Tastatur {#keyboard-navigation-asset-preview}
 
 1. Navigieren Sie in der Assets-Benutzeroberfläche zu einem Ordner, der ein Asset enthält, das Sie in der Vorschau anzeigen möchten.
 
