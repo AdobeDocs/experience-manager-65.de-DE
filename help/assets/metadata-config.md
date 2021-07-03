@@ -2,10 +2,10 @@
 title: Konfiguration und Verwaltung von Metadatenfunktionen.
 description: Konfiguration und Verwaltung von [!DNL Experience Manager Assets] Funktionen im Zusammenhang mit dem Hinzufügen und Verwalten von Metadaten.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: 'Metadaten  '
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 55%
@@ -22,11 +22,11 @@ ht-degree: 55%
 
 [!DNL Adobe Experience Manager Assets] speichert Metadaten für jedes Asset. Damit können Assets einfacher kategorisiert und organisiert und bestimmte Assets leichter von Benutzern gefunden werden. Da Sie Metadaten mit den Assets speichern und verwalten können, können Sie Assets basierend auf ihren Metadaten automatisch organisieren und verarbeiten. [!DNL Adobe Experience Manager Assets] ermöglicht es Administratoren, die Metadatenfunktionalität zu konfigurieren und anzupassen, um das standardmäßige Adobe-Angebot zu ändern.
 
-## Bearbeiten des Metadatenschemas {#metadata-schema}
+## Metadatenschema bearbeiten {#metadata-schema}
 
 Weitere Informationen finden Sie unter [Bearbeiten von Metadatenschema-Formularen](metadata-schemas.md#edit-metadata-schema-forms).
 
-## Registrieren Sie einen benutzerdefinierten Namespace in [!DNL Experience Manager] {#registering-a-custom-namespace-within-aem}
+## Registrieren Sie einen benutzerdefinierten Namespace innerhalb von [!DNL Experience Manager]. {#registering-a-custom-namespace-within-aem}
 
 Sie können innerhalb von [!DNL Experience Manager] eigene Namespaces hinzufügen. Ebenso wie es vordefinierte Namespaces wie `cq`, `jcr` und `sling` gibt, können Sie einen Namespace für Ihre Repository-Metadaten und die XML-Verarbeitung haben.
 
@@ -35,7 +35,7 @@ Sie können innerhalb von [!DNL Experience Manager] eigene Namespaces hinzufüge
 1. Um einen Namespace hinzuzufügen, klicken Sie unten auf der Seite auf **[!UICONTROL Neu]**.
 1. Geben Sie einen benutzerdefinierten Namespace in der XML-Namespace-Konvention an. Geben Sie die ID in Form eines URI und ein verknüpftes Präfix für die ID an. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-## Konfigurieren von Beschränkungen für die Aktualisierung von Massenmetadaten {#bulk-metadata-update-limit}
+## Konfigurieren von Beschränkungen für die Massenaktualisierung von Metadaten {#bulk-metadata-update-limit}
 
 Um eine DOS-ähnliche Situation (Denial of Service) zu verhindern, beschränkt [!DNL Enterprise Manager] die Anzahl der Parameter, die in einer Sling-Anfrage unterstützt werden. Wenn Sie die Metadaten vieler Assets auf einmal aktualisieren, erreichen Sie möglicherweise den Grenzwert, sodass die Metadaten für weitere Assets nicht aktualisiert werden können. Enterprise Manager generiert die folgende Warnung in den Protokollen:
 
@@ -81,7 +81,7 @@ Mit einem Metadatenprofil können Sie Standardmetadaten auf Assets in einem Ordn
 | Komponente | Eigenschaften |
 | ----------------------------- | ----------------------------------------------------------------------- |
 | [!UICONTROL Bereichs-Kopfzeile] | Feldbezeichnung, <br> Beschreibung |
-| [!UICONTROL Einzelzeilentext] | Feldbezeichnung, <br> Zu Eigenschaft zuordnen, <br> Standardwert |
+| [!UICONTROL Einzeilentext] | Feldbezeichnung, <br> Zu Eigenschaft zuordnen, <br> Standardwert |
 | [!UICONTROL Mehrwerttext] | Feldbezeichnung, <br> Zu Eigenschaft zuordnen, <br> Standardwert |
 | [!UICONTROL Zahl] | Feldbezeichnung, <br> Zu Eigenschaft zuordnen, <br> Standardwert |
 | [!UICONTROL Datum] | Feldbezeichnung, <br> Zu Eigenschaft zuordnen, <br> Standardwert |
@@ -142,7 +142,7 @@ Verwenden Sie den Editor für Metadatenschema-Formulare, um Metadatenschemata f�
 1. Klicken Sie auf der Seite [!UICONTROL Ordner-Metadatenschema Forms] auf **[!UICONTROL Erstellen]**.
 1. Geben Sie einen Namen für das Formular ein und klicken Sie auf **[!UICONTROL Erstellen]**. Das neue Schemaformular wird auf der Seite [!UICONTROL Schema Forms] aufgeführt.
 
-### Bearbeiten von Ordner-Metadatenschema-Formularen   {#edit-folder-metadata-schema-forms}
+### Bearbeiten von Ordner-Metadatenschema-Formularen  {#edit-folder-metadata-schema-forms}
 
 Sie können neu erstellte oder bestehende Metadatenschema-Formulare bearbeiten. Hierzu zählen folgende Elemente:
 
@@ -172,14 +172,14 @@ Sie können diese Formularelemente einem Feld innerhalb eines Metdatenknotens im
 
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Speichern]** , um die Änderungen zu speichern.
 
-#### Komponenten zum Erstellen von Formularen   {#components-to-build-forms}
+#### Komponenten zum Erstellen von Formularen  {#components-to-build-forms}
 
 Die Registerkarte **[!UICONTROL Formular erstellen]** enthält Formularelemente, die Sie im Ordner-Metadatenschema-Formular verwenden. Die Registerkarte **[!UICONTROL Einstellungen]** enthält die Attribute für jedes Element, das Sie auf der Registerkarte **[!UICONTROL Formular erstellen]** auswählen. Im Folgenden finden Sie eine Liste der auf der Registerkarte **[!UICONTROL Formular erstellen]** verfügbaren Elemente:
 
 | Komponentenname | Beschreibung |
 |---|---|
 | [!UICONTROL Bereichs-Kopfzeile] | Fügen Sie eine Abschnittsüberschrift für eine Liste allgemeiner Komponenten hinzu. |
-| [!UICONTROL Einzelzeilentext] | Fügen Sie eine einzeilige Texteigenschaft hinzu. Diese wird als Zeichenfolge gespeichert. |
+| [!UICONTROL Einzeilentext] | Fügen Sie eine einzeilige Texteigenschaft hinzu. Diese wird als Zeichenfolge gespeichert. |
 | [!UICONTROL Mehrwerttext] | Fügen Sie eine Texteigenschaft mit mehreren Werten hinzu. Diese wird als Zeichenfolgen-Array gespeichert. |
 | [!UICONTROL Zahl] | Fügen Sie eine Zahlenkomponente hinzu. |
 | [!UICONTROL Datum] | Fügen Sie eine Datumskomponente hinzu. |
@@ -187,7 +187,7 @@ Die Registerkarte **[!UICONTROL Formular erstellen]** enthält Formularelemente,
 | [!UICONTROL Standard-Tags] | Fügen Sie ein Tag hinzu. |
 | [!UICONTROL Ausgeblendetes Feld] | Fügen Sie ein ausgeblendetes Feld hinzu. Dieses wird beim Speichern des Assets als POST-Parameter gesendet. |
 
-#### Bearbeiten von Formularelementen   {#editing-form-items}
+#### Bearbeiten von Formularelementen  {#editing-form-items}
 
 Um die Eigenschaften von Formularelementen zu bearbeiten, klicken Sie auf die Komponente und bearbeiten Sie alle oder eine Untergruppe der folgenden Eigenschaften auf der Registerkarte **[!UICONTROL Einstellungen]**.
 
@@ -213,7 +213,7 @@ Um zu gewährleisten, dass die Komponente ordnungsgemäß im Metadatenschema-For
 
 **[!UICONTROL Klasse]**: Objektklasse, der die Eigenschaft zugeordnet ist.
 
-### Löschen von Ordner-Metadatenschema-Formularen   {#delete-folder-metadata-schema-forms}
+### Löschen von Ordner-Metadatenschema-Formularen  {#delete-folder-metadata-schema-forms}
 
 Sie können Ordner-Metadatenschema-Formulare über die Seite „Ordner-Metadatenschema-Formulare“ löschen. Um ein Formular zu löschen, wählen Sie es aus und klicken Sie in der Symbolleiste auf die Option Löschen .
 
@@ -225,7 +225,7 @@ Sie können ein Ordner-Metadatenschema über die Seite „Ordner-Metadatenschema
 
 Wenn Sie ein Metadatenschema für einen Ordner konfigurieren, wird der Pfad zum Schemaformular in der Eigenschaft `folderMetadataSchema` des Ordnerknotens unter `./jcr:content` gespeichert.
 
-#### Zuweisen eines Schemas über die Seite „Ordner-Metadatenschema“   {#assign-to-a-schema-from-the-folder-metadata-schema-page}
+#### Zuweisen eines Schemas über die Seite „Ordner-Metadatenschema“  {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
 1. Wechseln Sie in der [!DNL Experience Manager]-Benutzeroberfläche zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Ordner-Metadatenschemata]**.
 1. Wählen Sie auf der Seite „Ordner-Metadatenschema-Formulare“ das Schemaformular aus, das Sie auf einen Ordner anwenden möchten.
