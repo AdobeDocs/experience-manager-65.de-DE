@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Scene7-Modus,Hybridmodus
 exl-id: 07f0803c-4ec4-4745-8214-63370e9d0282
-source-git-commit: 61e703e73b831a9b4e7045e5d5fffeef5be7ed6d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 2%
@@ -37,9 +37,9 @@ Beim Wechsel von Dynamic Media-Hybrid zu Dynamic Media-Scene7 stehen zwei Option
 
 Erwägen Sie einfach, mit einer neuen, bereitgestellten Instanz von Dynamic Media-Scene7 in Adobe Experience Manager zu beginnen. Neben der Erfassung und Verarbeitung von Assets über Dynamic Media Cloud Service wird eine Adobe-Prüfung der Asset-Nutzung, der Workflows und der Komponenten dringend empfohlen. In vielen Fällen können benutzerdefinierte Komponenten und Workflows durch neuere vordefinierte Funktionen ersetzt werden.
 
-## Option 2 - Migration der vorhandenen Instanz von Dynamic Media-Hybrid zu Dynamic Media-Scene7 {#process-for-migrating}
+## Option 2: Migration der vorhandenen Instanz von Dynamic Media-Hybrid zu Dynamic Media-Scene7 {#process-for-migrating}
 
-| Schritt | Aufgabe | Besonderheiten |
+| Schritt | Aufgabe | Aspekte |
 |---|---|---|
 | 1 | Dynamic Media-Hybrid-Autoreninstanz klonen. | Sie sollten Ihre vorhandene Instanz der Dynamic Media-Hybrid-Autoreninstanz für Ausweichzwecke beibehalten, bis die verbleibenden Schritte in diesem Migrationsprozess erfolgreich abgeschlossen sind. |
 | 2 | Starten Sie die geklonte Autoreninstanz im Dynamic Media-Scene7-Modus. |  |
