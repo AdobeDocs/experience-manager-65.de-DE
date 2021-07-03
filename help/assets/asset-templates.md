@@ -2,10 +2,10 @@
 title: Asset-Vorlagen
 description: Erfahren Sie mehr über Asset-Vorlagen in [!DNL Adobe Experience Manager Assets] und wie Sie mit Asset-Vorlagen Marketingmaterialien erstellen können.
 contentOwner: AG
-role: Business Practitioner
+role: User
 feature: Asset Management,Entwicklertools
 exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1548'
 ht-degree: 33%
@@ -36,7 +36,7 @@ Wenn Sie eine Vorlage für Ihr Material auswählen, erstellt [!DNL Experience Ma
 
 Sie können die aktualisierte Datei im übergeordneten Ordner in die Formate INDD, PDF oder JPG exportieren. Sie können die Ausgabe in diesen Formaten auch in Ihr lokales Dateisystem herunterladen.
 
-## Erstellen Sie ein Material {#creating-a-collateral}
+## Erstellen von Material {#creating-a-collateral}
 
 Stellen Sie sich einen Fall vor, in dem Sie digitales druckbares Marketingmaterial, z. B. Broschüren, Flyer und Anzeigen, für eine anstehende Kampagne erstellen und für Ihre Geschäfte weltweit bereitstellen möchten. Wenn Sie das Material basierend auf einer Vorlage erstellen, können Sie kanalübergreifend eine einheitliche Kundenerfahrung erzielen. Designer können die Kampagnenvorlagen (einseitige oder mehrseitige) mithilfe einer kreativen Lösung wie [!DNL InDesign] erstellen und die Vorlagen für Sie in [!DNL Experience Manager Assets] hochladen. Bevor Sie ein Material erstellen, lassen Sie eine oder mehrere INDD-Vorlagen im Voraus in [!DNL Experience Manager] hochladen und verfügbar sein.
 
@@ -64,7 +64,7 @@ Stellen Sie sich einen Fall vor, in dem Sie digitales druckbares Marketingmateri
 
    ![chlimage_1-107](assets/chlimage_1-312.png)
 
-## Bearbeiten von Zusätzen {#editing-a-collateral}
+## Bearbeiten von Sicherheiten {#editing-a-collateral}
 
 Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ können Sie sie über die Seite [!UICONTROL Vorlagen] oder die Asset-Seite öffnen.
 
