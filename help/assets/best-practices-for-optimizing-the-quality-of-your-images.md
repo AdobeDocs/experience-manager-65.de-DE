@@ -7,13 +7,13 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
-feature: Asset-Verwaltung
-role: Business Practitioner, Administrator
+feature: Asset-Management
+role: User, Admin
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
-source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1448'
-ht-degree: 82%
+ht-degree: 89%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 82%
 
 Die Optimierung der Bildqualität kann viel Zeit in Anspruch nehmen, da zahlreiche Faktoren dazu beitragen, angemessene Ergebnisse zu erzielen. Das Ergebnis ist teilweise subjektiv, da Einzelpersonen die Bildqualität unterschiedlich empfinden. Daher ist strukturiertes Experimentieren entscheidend.
 
-Adobe Experience Manager umfasst mehr als 100 Dynamic Media-Bildbereitstellungsbefehle zum Optimieren und Optimieren von Bildern und zum Rendern von Ergebnissen. Mit den folgenden Richtlinien können Sie den Prozess anhand von einigen wesentlichen Befehlen und Best Practices optimieren und schnell angemessene Ergebnisse erzielen.
+Adobe Experience Manager umfasst mehr als 100 Bildbereitstellungsbefehle für Dynamic Media, mit denen Bilder angepasst und optimiert und Ergebnisse gerendert werden können. Mit den folgenden Richtlinien können Sie den Prozess anhand von einigen wesentlichen Befehlen und Best Practices optimieren und schnell angemessene Ergebnisse erzielen.
 
 ## Best Practices für das Bildformat (`&fmt=`) {#best-practices-for-image-format-fmt}
 
@@ -45,14 +45,14 @@ Verwenden Sie als Best Practice für die Bildgröße `&wid=<value>&hei=<value>&r
 
 ## Best Practices für Bild-Scharfzeichnung {#best-practices-for-image-sharpening}
 
-Die Bild-Scharfzeichnung stellt den komplexesten Aspekt bei der Kontrolle von Bildern auf Websites dar. Hier werden viele Fehler gemacht. Nehmen Sie sich die Zeit, um mehr über die Funktionsweise von Scharfzeichnen und Unschärfemaske in Experience Manager zu erfahren, indem Sie auf die folgenden hilfreichen Ressourcen verweisen:
+Die Bild-Scharfzeichnung stellt den komplexesten Aspekt bei der Kontrolle von Bildern auf Websites dar. Hier werden viele Fehler gemacht. Nehmen Sie sich die Zeit und machen Sie sich mit der Funktionsweise von Scharfzeichnung und Unschärfemaske in Experience Manager vertraut, indem Sie die folgenden nützlichen Ressourcen lesen:
 
 Whitepaper zu Best Practices [Scharfzeichnen von Bildern in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf) , das auch für Experience Manager gilt.
 
 <!-- To be reviewed and updated: Broken link.
 See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html). -->
 
-Mit Experience Manager können Sie Bilder bei der Aufnahme, bei der Bereitstellung oder beidem scharfzeichnen. In der Regel werden Bilder jedoch nur mit der einen oder der anderen Methode scharfgezeichnet, jedoch nicht mit beiden. Normalerweise erhalten Sie die besten Ergebnisse beim Scharfzeichnen von Bildern bei der Bereitstellung mit einer URL.
+Mit Experience Manager können Sie Bilder bei der Aufnahme, bei der Ausgabe oder bei beidem scharfzeichnen. In der Regel werden Bilder jedoch nur mit der einen oder der anderen Methode scharfgezeichnet, jedoch nicht mit beiden. Normalerweise erhalten Sie die besten Ergebnisse beim Scharfzeichnen von Bildern bei der Bereitstellung mit einer URL.
 
 Sie können zwei Methoden zur Bild-Scharfzeichnung verwenden:
 
@@ -76,7 +76,7 @@ Sie können zwei Methoden zur Bild-Scharfzeichnung verwenden:
 
          Whitepaper zu Best Practices [Scharfzeichnen von Bildern in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
 
-      * Mit Experience Manager können Sie auch einen vierten Parameter steuern: monochrom (0,1). Dieser Parameter bestimmt, ob die Unschärfemaske auf jede Farbkomponente separat mit dem Wert 0 oder auf die Bildhelligkeit/-intensität mit dem Wert 1 angewendet wird.
+      * In Experience Manager können Sie auch einen vierten Parameter steuern: monochrome (0,1). Dieser Parameter bestimmt, ob eine Unschärfemaske auf jede Farbkomponente separat (mit dem Wert 0) oder auf die Bildhelligkeit/-intensität (mit dem Wert 1) angewendet wird.
 
 
 Es wird empfohlen, mit dem Unschärfemasken-Parameter für den Radius zu beginnen. Sie können zu Beginn die folgenden Radiuseinstellungen verwenden:
@@ -128,4 +128,4 @@ Beim Experimentieren können die folgenden allgemeinen Vorschläge hilfreich sei
 
 * Testen Sie verschiedene Parameter in Echtzeit direkt auf einer URL.
 * Denken Sie daran, dass Sie Dynamic Media-Bildverarbeitungsbefehle in einer Bildvorgabe zusammenfassen können. Eine Bildvorgabe besteht im Grunde aus URL-Befehlsmakros mit benutzerspezifischen Vorgabenamen (wie `$thumb_low$` und `&product_high$`). Der benutzerdefinierte Vorgabenname in einem URL-Pfad ruft diese Vorgaben auf. Mit dieser Funktion können Sie Befehle und Qualitätseinstellungen für verschiedene Nutzungsmuster von Bildern auf Ihrer Website verwalten und die Gesamtlänge von URLs reduzieren.
-* Experience Manager bietet außerdem erweiterte Funktionen für die Optimierung der Bildqualität, wie das Scharfzeichnen von Bildern bei der Aufnahme. Für erweiterte Anwendungsfälle, in denen Optionen zur Abstimmung und Optimierung von Rendering-Ergebnissen zur Verfügung stehen, kann [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html) Ihnen mit benutzerdefinierten Einblicken und Best Practices helfen.
+* Experience Manager bietet außerdem erweiterte Funktionen für die Optimierung der Bildqualität, wie das Scharfzeichnen von Bildern bei der Aufnahme. Für erweiterte Anwendungsfälle, in denen Optionen zur Abstimmung und Optimierung von Rendering-Ergebnissen zur Verfügung stehen, kann [Adobe Professional Services](https://business.adobe.com/de/customers/consulting-services/main.html) Ihnen mit benutzerdefinierten Einblicken und Best Practices helfen.
