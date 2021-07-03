@@ -7,17 +7,17 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 750627fc-2a29-43ff-867e-55cb2e371043
 feature: Veröffentlichung
-source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 54%
+ht-degree: 58%
 
 ---
 
-# Veröffentlichen von Dynamic Media-Assets  {#publishing-dynamic-media-assets}
+# Veröffentlichen von Dynamic Media-Assets {#publishing-dynamic-media-assets}
 
 Sie veröffentlichen Ihre Dynamic Media-Assets, indem Sie die bereits hochgeladenen Assets auswählen und auf **[!UICONTROL Veröffentlichen]** oder **[!UICONTROL Quick Publish]** tippen. Nachdem Ihre Dynamic Media-Assets veröffentlicht wurden, können Sie sie über eine URL auf einer Web-Seite einschließen oder den Code auf der Seite einbetten.
 
@@ -47,7 +47,7 @@ Siehe auch [Einbetten des Dynamic Media-Video- oder Bild-Viewers auf einer Web-S
 
 Ausführliche Informationen zum Veröffentlichen von Sets oder des Assets finden Sie unter [Veröffentlichen von Assets](manage-assets.md).
 
-## Bereitstellung von Dynamic Media-Assets über HTTP/2  {#http-delivery-of-dynamic-media-assets}
+## Bereitstellung von Dynamic Media-Assets über HTTP/2   {#http-delivery-of-dynamic-media-assets}
 
 Experience Manager unterstützt jetzt die Bereitstellung aller Dynamic Media-Inhalte (Bilder und Videos) über HTTP/2. Das heißt, dass eine veröffentlichte URL oder ein eingebetteter Code für ein Bild oder Video verfügbar ist und in beliebige Programme integriert werden kann, die gehostete Assets akzeptiert. Dieses veröffentlichte Asset wird dann über das HTTP/2-Protokoll bereitgestellt. Dieses Bereitstellungsverfahren verbessert die Kommunikation zwischen Browser und Server und verbessert die Antwort- und Ladezeiten aller Dynamic Media-Assets.
 
