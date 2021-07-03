@@ -2,10 +2,10 @@
 title: Einführung in [!DNL Adobe Experience Manager Assets]
 description: Erfahren Sie, was Digital Asset Management, seine Anwendungsfälle und [!DNL Adobe Experience Manager Asset] Angebot sind.
 contentOwner: AG
-feature: Asset-Verwaltung
-role: Leader, Architect, Business Practitioner
+feature: Asset-Management
+role: Leader, Architect, User
 exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 36%
@@ -35,7 +35,7 @@ ht-degree: 36%
 
 Die grundlegende Benutzeroberfläche entspricht der von [!DNL Sites]. Ausführliche Informationen finden Sie unter [Übersicht der Sites](/help/sites-authoring/page-authoring.md) .
 
-### Digital Asset Management versus Bildkomponente {#digital-asset-management-versus-image-component}
+### Digital Asset Management im Vergleich zur Bildkomponente {#digital-asset-management-versus-image-component}
 
 Berücksichtigen Sie bei der Entscheidung, ob ein Bild in das DAM-Repository eingefügt oder eine Bildkomponente verwendet werden soll, den Bildlebenszyklus:
 
@@ -52,7 +52,7 @@ Bei einem Asset handelt es sich im Wesentlichen um eine binäre Datei mitsamt Me
 >
 >Das Hochladen und/oder Bearbeiten einer großen Menge von Assets (insbesondere von Bildern) kann sich auf die Leistung Ihrer [!DNL Experience Manager]-Implementierung auswirken.
 
-### [!DNL Experience Manager Assets] Terminologie  {#aem-assets-terminology}
+### [!DNL Experience Manager Assets] Terminologie {#aem-assets-terminology}
 
 Beim Arbeiten mit digitalen Assets in [!DNL Experience Manager] müssen Sie die folgende Terminologie verstehen:
 
