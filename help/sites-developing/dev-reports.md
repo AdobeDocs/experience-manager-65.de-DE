@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
-source-git-commit: 08269877be5e98405474e4b1793526763cab174f
+source-git-commit: 071bc0e36ed2d8eb4ce7bd0ba46823adc0e43095
 workflow-type: tm+mt
 source-wordcount: '5252'
 ht-degree: 78%
@@ -50,34 +50,17 @@ Für die mit AEM gelieferten Standardberichte:
 >In den hier aufgeführten Beispielen und Definitionen wird die folgende Notation verwendet:
 >
 >* Jede Zeile definiert einen Knoten oder eine Eigenschaft, wobei:
-   >
-   >  
-* `N:<name> [<nodeType>]`
-   >
-   >     
-   Beschreibt einen Knoten mit dem Namen `<*name*>` und dem Knotentyp `<*nodeType*>`*.*
-   >
-   >  
-* `P:<name> [<propertyType]`
-   >
-   >     
-   Beschreibt eine Eigenschaft mit dem Namen `<*name*>` und den Eigenschaftstyp `<*propertyType*>`.
-   >
-   >  
-* `P:<name> = <value>`
-   >
-   >     
-   Beschreibt eine Eigenschaft `<name>` , die auf den Wert von `<value>` gesetzt werden muss.
+   >  `N:<name> [<nodeType>]` : Beschreibt einen Knoten mit dem Namen  `<*name*>` und dem Knotentyp  `<*nodeType*>`*.*
+   >  `P:<name> [<propertyType]` : Beschreibt eine Eigenschaft mit dem Namen  `<*name*>` und dem Eigenschaftstyp  `<*propertyType*>`.
+   >  `P:<name> = <value>` : Beschreibt eine Eigenschaft,  `<name>` die auf den Wert von  `<value>` gesetzt werden muss.
    >
    >
 * Die Einrückung veranschaulicht die hierarchischen Abhängigkeiten zwischen den Knoten.
->* Elemente, getrennt durch | eine Liste möglicher Elemente; zum Beispiel Typen oder Namen:
+>* Elemente, getrennt durch | eine Liste möglicher Elemente; beispielsweise Typen oder Namen; z. B. `String|String[]` bedeutet, dass die Eigenschaft entweder &quot;String&quot;oder &quot;String[]&quot;sein kann.
 
->
->  
-z. B. `String|String[]` bedeutet, dass die Eigenschaft entweder &quot;String&quot;oder &quot;String[]&quot;sein kann.
->
->* `[]` stellt ein Array dar; z. B. [] Zeichenfolge oder ein Array von Knoten wie in der  [Abfragedefinition](#query-definition) beschrieben.
+   >
+   >
+* `[]` stellt ein Array dar; z. B. [] Zeichenfolge oder ein Array von Knoten wie in der  [Abfragedefinition](#query-definition) beschrieben.
 >
 >
 Sofern nicht anders angegeben, lauten die Standardtypen:
