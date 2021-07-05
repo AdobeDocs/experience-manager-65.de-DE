@@ -1,25 +1,25 @@
 ---
-sub-product: Handbuch zu Adobe Experience Manager Content and Commerce
-user-guide-title: Handbuch zu Adobe Experience Manager Content and Commerce
+sub-product: Handbuch zu AEM Content and Commerce
+user-guide-title: Handbuch zu AEM Content and Commerce
 breadcrumb-title: Commerce-Anleitung
 user-guide-description: Erfahren Sie, wie Sie Adobe Experience Manager Content and Commerce verwenden und verwalten.
-source-git-commit: 8612e7c4105a9872fc8bba1988716eaa4b18d550
+source-git-commit: 538dc7620317f86c0b3d762eaef597d0a7969ace
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 73%
+source-wordcount: '108'
+ht-degree: 82%
 
 ---
 
 
 # Commerce {#commerce}
 
-+ [Handbuch zu Adobe Experience Manager Content and Commerce](/help/commerce/home.md)
++ [Handbuch zu AEM Content and Commerce](/help/commerce/home.md)
 + [Wesentliche Änderungen an AEM Content und Commerce](cif/changes.md)
 + [Einführung und Übersicht](cif/introduction.md)
 + Integrationen {#integrations}
    + [Adobe Commerce](cif/integrating/magento.md)
-   + [Drittanbieter-Commerce-Lösung](cif/integrating/third-party.md)
-+ AEM Storefront {#storefront}
+   + [Drittanbieterlösung für den Handel](cif/integrating/third-party.md)
++ AEM-Storefront {#storefront}
    + [Erste Schritte](cif/getting-started.md)
    + Verwalten {#administering}
       + [Multi-Store-Setup](cif/configuring/multi-store-setup.md)
@@ -31,12 +31,13 @@ ht-degree: 73%
       + [Festlegen des Stils von CIF-Komponenten](cif/customizing/style-cif-component.md)
       + [Anpassen von CIF-Komponenten](cif/customizing/customize-cif-components.md)
       + [Verwenden der CIF-Katalogauswahl](cif/customizing/use-cif-pickers.md)
++ [Adobe Commerce-PWA Studio](cif/pwa-studio/getting-started.md)
 + [Migration](cif/migration.md)
 + Versionshinweise {#release-notes}
    + [2021](cif/release-notes/release-notes-2021.md)
    + [2020](cif/release-notes/release-notes-2020.md)
    + [2019](cif/release-notes/release-notes-2019.md)
-+ [Häufig gestellte Fragen (FAQ)](cif/faq.md)
++ [Häufig gestellte Fragen (FAQ) ](cif/faq.md)
 + Classic CIF {#classic}
    + Bereitstellen {#deploying}
       + [E-Commerce-Übersicht](/help/commerce/cif-classic/deploying/ecommerce.md)
