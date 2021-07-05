@@ -10,14 +10,15 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 08269877be5e98405474e4b1793526763cab174f
 workflow-type: tm+mt
 source-wordcount: '5252'
 ht-degree: 78%
 
 ---
 
-# Entwickeln von Berichten{#developing-reports}
+
+# Entwickeln von Berichten {#developing-reports}
 
 AEM bietet eine Auswahl von [Standardberichten](/help/sites-administering/reporting.md), von denen die meisten auf einem Berichterstellungs-Framework basieren.
 
@@ -107,7 +108,7 @@ Die Berichtseite:
 * ist eine CQ5-Standardseite.
 * basiert auf einer [CQ5-Standardvorlage, die für den Bericht konfiguriert wurde](#report-template).
 
-### Die reportbase-Komponente  {#report-base}
+### Die reportbase-Komponente {#report-base}
 
 Die [`reportbase`-Komponente](#report-base-component) bildet die Grundlage eines jeden Berichts:
 
@@ -125,7 +126,7 @@ Jede Spalte ist eine Instanz der [`columnbase`-Komponente](#column-base-componen
 * Sie definiert den Link zum [zugrunde liegenden Ergebnissatz](#the-query-and-data-retrieval), d. h. sie definiert die spezifischen Daten, auf die im Ergebnissatz verwiesen wird, und wie diese verarbeitet werden.
 * Sie enthält neben jeglichen Standardwerten zusätzliche Definitionen, beispielsweise die verfügbaren Aggregate und Filter.
 
-### Die Abfrage und der Datenabruf  {#the-query-and-data-retrieval}
+### Die Abfrage und der Datenabruf {#the-query-and-data-retrieval}
 
 Die Abfrage:
 
@@ -218,7 +219,7 @@ Um einen Bericht zu erstellen und zu konfigurieren, wird Folgendes benötigt:
 * Ein [Bereichtsdesign](#report-design)
 * Eine [Berichtsvorlage](#report-template)
 
-### Speicherort von Berichtskomponenten  {#location-of-report-components}
+### Speicherort von Berichtskomponenten {#location-of-report-components}
 
 Die standardmäßigen Berichterstellungskomponenten befinden sich unter `/libs/cq/reporting/components`.
 
@@ -251,7 +252,7 @@ Eine Berichtseite muss die `sling:resourceType` von `/libs/cq/reporting/componen
 
 Eine benutzerdefinierte Seitenkomponente sollte (in den meisten Fällen) nicht erforderlich sein.
 
-## reportbase-Komponente  {#report-base-component}
+## reportbase-Komponente {#report-base-component}
 
 Für jeden Berichtstyp ist eine aus `/libs/cq/reporting/components/reportbase` abgeleitete Container-Komponente erforderlich.
 
@@ -269,7 +270,7 @@ N:<reportname> [cq:Component]
     N:queryBuilder
 ```
 
-### Abfragedefinition  {#query-definition}
+### Abfragedefinition {#query-definition}
 
 ```xml
 N:queryBuilder
@@ -487,7 +488,7 @@ Zusätzlich kann ein Stammpfad für den Bericht definiert werden:
    * Die [Berichtsvorlage](#report-template) (entweder als fester Wert oder als Standardwert für das Konfigurationsdialogfeld).
    * Den Benutzer (mithilfe dieses Parameters).
 
-## columnbase-Komponente  {#column-base-component}
+## columnbase-Komponente {#column-base-component}
 
 Für jeden Spaltentyp ist eine von `/libs/cq/reporting/components/columnbase` abgeleitete Komponente erforderlich.
 
@@ -527,7 +528,7 @@ N:<columnname> [cq:Component]
 
 Siehe auch [Definieren neuer Berichte](#defining-your-new-report).
 
-### Spaltenspezifische Abfrage  {#column-specific-query}
+### Spaltenspezifische Abfrage {#column-specific-query}
 
 Diese definiert die spezifische Datenextraktion (aus dem [Datenergebnissatz des Berichts](#the-query-and-data-retrieval)) für die Verwendung in der jeweiligen Spalte..
 
@@ -602,7 +603,7 @@ function(v) {
 }
 ```
 
-### Resolver und Vorverarbeitung  {#resolvers-and-preprocessing}
+### Resolver und Vorverarbeitung {#resolvers-and-preprocessing}
 
 Die [Verarbeitungswarteschlange](#processing-queue) definiert die verschiedenen Resolver und konfiguriert die Vorverarbeitung:
 
@@ -789,7 +790,7 @@ N:definitions
                 P:format          // data type formatter
 ```
 
-#### Vorverarbeitung – Muster zum Suchen und Ersetzen  {#preprocessing-find-and-replace-patterns}
+#### Vorverarbeitung – Muster zum Suchen und Ersetzen {#preprocessing-find-and-replace-patterns}
 
 Zur Vorverarbeitung können Sie einen `pattern` (definiert als [regulärer Ausdruck](https://en.wikipedia.org/wiki/Regular_expression) oder Regex) angeben, der sich befindet und dann durch das `replace`-Muster ersetzt wird:
 
@@ -1133,7 +1134,7 @@ Die Angabe von Designs für einzelne Spalten ist nicht erforderlich. Verfügbare
 >
 >Standardspalten können beim Erstellen eines Berichts automatisch erstellt werden. Diese werden in der Vorlage angegeben.
 
-## Berichtsvorlage  {#report-template}
+## Berichtsvorlage {#report-template}
 
 Jeder Berichtstyp muss eine Vorlage bereitstellen. Dabei handelt es sich um die standardmäßigen [CQ-Vorlagen](/help/sites-developing/templates.md), die auch als solche konfiguriert werden können.
 
@@ -1409,7 +1410,7 @@ In diesem Abschnitt werden die erweiterten Konfigurationsoptionen für die OSGi-
 
 Diese können über das Konfigurationsmenü der Web-Konsole angezeigt werden (verfügbar z. B. unter `http://localhost:4502/system/console/configMgr`). Bei AEM können Sie die Konfigurationseinstellungen für Dienste dieser Art auf unterschiedliche Weise vornehmen. Informationen zur empfohlenen Vorgehensweise finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
-### Grundlegender Dienst („Day CQ Reporting Configuration“)  {#basic-service-day-cq-reporting-configuration}
+### Grundlegender Dienst („Day CQ Reporting Configuration“) {#basic-service-day-cq-reporting-configuration}
 
 * **Zeitzone** definiert die Zeitzone, für die Verlaufsdaten erstellt werden. Damit soll sichergestellt werden, dass das Diagramm mit den Verlaufsdaten für jeden Benutzer weltweit dieselben Daten anzeigt.
 * **Gebietsschema** definiert das Gebietsschema, das in Verbindung mit der **Zeitzone** für Verlaufsdaten verwendet werden soll. Das Gebietsschema wird verwendet, um einige gebietsschemaspezifische Kalendereinstellungen festzulegen (z. B. ob der erste Tag der Woche Sonntag oder Montag ist).
@@ -1433,7 +1434,7 @@ Diese können über das Konfigurationsmenü der Web-Konsole angezeigt werden (ve
 
 * **Momentaufnahmenbenutzer erzwingen** – wenn diese Option aktiviert ist, werden alle Momentaufnahmen mit dem unter *Momentaufnahmenbenutzer* angegebenen Benutzer gemacht. Dies kann schwerwiegende Auswirkungen auf die Sicherheit haben, wenn es nicht richtig gehandhabt wird.
 
-### Cache Settings (Day CQ Reporting Cache) {#cache-settings-day-cq-reporting-cache}
+### Cache-Einstellungen („Day CQ Reporting Cache“) {#cache-settings-day-cq-reporting-cache}
 
 * **Aktivieren** ermöglicht es Ihnen, das Caching von Berichtsdaten zu aktivieren bzw. zu deaktivieren. Das Aktivieren des Berichtcaches hält die Berichtsdaten während mehrerer Anforderungen im Speicher vor. Damit lässt sich zwar die Leistung steigern, allerdings wird auch mehr Speicherplatz beansprucht, was in unter extremen Umständen zu Speicherausfällen führen kann.
 * **TTL** definiert die Zeit (in Sekunden), für die Berichtsdaten zwischengespeichert werden. Mit einem höheren Wert wird zwar die Leistung gesteigert, ggf. werden dann aber ungenaue Daten zurückgegeben, wenn sich die Daten innerhalb des Zeitraums ändern.
