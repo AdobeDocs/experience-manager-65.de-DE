@@ -1,18 +1,17 @@
 ---
-title: Erste Schritte mit AEM Content und Commerce
+title: Erste Schritte mit AEM Content and Commerce
 description: Erfahren Sie, wie Sie ein AEM Content and Commerce-Projekt bereitstellen.
 topics: Commerce
 feature: Commerce Integration Framework
-thumbnail: 37843.jpg
-exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
-source-git-commit: 61b8d0bf960bd03a19d22061f3c897a56259dd24
+source-git-commit: 1b200ea21709cd9234c92da8a8ef6145d2c2f635
 workflow-type: tm+mt
 source-wordcount: '721'
-ht-degree: 6%
+ht-degree: 38%
 
 ---
 
-# Erste Schritte mit AEM Content und Commerce {#start}
+
+# Erste Schritte mit AEM Content and Commerce {#start}
 
 Um mit AEM Content and Commerce zu beginnen, müssen Sie das AEM Content and Commerce Add-On für AEM 6.5 installieren.
 
@@ -58,37 +57,37 @@ Das Add-On und die [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-c
 
 Diese Konfiguration kann mithilfe der CIF-Cloud Service-Konfiguration wie folgt für das Projekt angepasst werden:
 
-1. Navigieren Sie AEM zu Tools > Cloud Services > CIF-Konfiguration .
+1. Gehen Sie in AEM zu „Tools“ > „Cloud Services“ > „CIF-Konfiguration“
 
 2. Wählen Sie die Commerce-Konfiguration aus, die Sie ändern möchten
 
-3. Öffnen Sie die Konfigurationseigenschaften über die Symbolleiste.
+3. Öffnen Sie die Konfigurationseigenschaften über die Symbolleiste
 
 ![CIF-Cloud Services-Konfiguration](/help/commerce/cif/assets/cif-cloud-service-config.png)
 
 Die folgenden Eigenschaften können konfiguriert werden:
 
-- GraphQL-Client : Wählen Sie den konfigurierten GraphQL-Client für die Commerce-Backend-Kommunikation aus. Dies sollte in der Regel standardmäßig beibehalten werden.
-- Store View - die Kennung der (Magento-)Store-Ansicht. Wenn leer, wird die standardmäßige Store-Ansicht verwendet.
-- GraphQL-Proxy-Pfad - der URL-Pfad GraphQL-Proxy in AEM zum Proxy von Anforderungen an den Commerce-Backend-GraphQL-Endpunkt verwendet wird.
+- GraphQL-Client – Wählen Sie den konfigurierten GraphQL-Client für die Commerce-Back-End-Kommunikation aus. Dies sollte normalerweise auf der Standardeinstellung bleiben.
+- Shop-Ansicht – die Kennung der (Magento-)Shop-Ansicht. Wenn leer, wird die standardmäßige Shop-Ansicht verwendet.
+- GraphQL-Proxy-Pfad – der URL-Pfad des GraphQL-Proxy in AEM, der als Proxy für Anfragen an den Commerce-Back-End-GraphQL-Endpunkt verwendet wird.
    >[!NOTE]
    >
-   > In den meisten Setups darf der Standardwert `/api/graphql` nicht geändert werden. Nur erweiterte Einstellungen, die nicht den bereitgestellten GraphQL-Proxy verwenden, sollten diese Einstellung ändern.
-- Unterstützung der Catalog-UID aktivieren - Aktivieren Sie die Unterstützung für UID anstelle der ID in den Commerce-Backend-GraphQL-Aufrufen.
+   > In den meisten Setups darf der Standardwert `/api/graphql` nicht geändert werden. Nur komplexere Setups, die nicht den bereitgestellten GraphQL-Proxy verwenden, sollten diese Einstellung ändern.
+- Unterstützung der Catalog-UID aktivieren – aktiviert die Unterstützung für UID anstelle von ID in den Commerce-Back-End-GraphQL-Aufrufen.
    >[!NOTE]
    >
-   > Die Unterstützung für UIDs wurde in Adobe Commerce (Magento) 2.4.2 eingeführt. Aktivieren Sie dies nur, wenn Ihr Commerce-Backend ein GraphQL-Schema der Version 2.4.2 oder höher unterstützt.
-- Kennung der Stammkategorie des Katalogs - die Kennung (UID oder ID) des Stammverzeichnisses des Stores
+   > Die Unterstützung für UIDs wurde in Adobe Commerce (Magento) 2.4.2 eingeführt. Aktivieren Sie dies nur, wenn Ihr Commerce-Back-End ein GraphQL-Schema der Version 2.4.2 oder höher unterstützt.
+- Kennung der Stammkategorie des Katalogs – die Kennung (UID oder ID) des Stammverzeichnisses des Shops
    >[!CAUTION]
    >
    > Ab Version 2.0.0 der CIF-Kernkomponenten wurde die Unterstützung für `id` entfernt und durch `uid` ersetzt. Wenn Ihr Projekt Version 2.0.0 der CIF-Kernkomponenten verwendet, müssen Sie die Unterstützung der Catalog-UID aktivieren und eine gültige Kategorie-UID als &quot;Katalogstamm-Kategorienkennung&quot;verwenden.
 
 Die oben dargestellte Konfiguration dient als Referenz. Projekte sollten ihre eigenen Konfigurationen bereitstellen.
 
-Komplexere Setups mit mehreren AEM Site-Strukturen in Kombination mit verschiedenen Commerce-Katalogen finden Sie im Tutorial [Commerce Multi-Store Setup](configuring/multi-store-setup.md) .
+Komplexere Setups mit mehreren AEM-Website-Strukturen in Kombination mit verschiedenen Commerce-Katalogen finden Sie im Tutorial [Einrichten von mehreren Commerce-Shops](configuring/multi-store-setup.md).
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
 - [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype)
 - [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
-- [Multi-Store-Einrichtung in Commerce](configuring/multi-store-setup.md)
+- [Einrichten von mehreren Commerce-Shops](configuring/multi-store-setup.md)
