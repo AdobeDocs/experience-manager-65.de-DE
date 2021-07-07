@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Zusammenarbeit, Adobe Asset Link, Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
 workflow-type: tm+mt
-source-wordcount: '3254'
-ht-degree: 54%
+source-wordcount: '3250'
+ht-degree: 55%
 
 ---
 
@@ -89,7 +89,7 @@ Um Nutzungsszenarien zum Verteilen von Assets zu unterstützen, sollten andere L
 
 ### Überlegungen zur Integration von [!DNL Experience Manager] und [!DNL Creative Cloud] {#considerations-when-using-aem-and-creative-cloud-integration}
 
-* Siehe [Best Practices für das Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=en#best-practices-to-prevent-troubles)
+* Siehe [Best Practices für das Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles)
 * Siehe [Adobe Stock-Integration](aem-assets-adobe-stock.md)
 * Weitere Informationen finden Sie unter [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 
@@ -209,7 +209,7 @@ Die Beschreibung bezieht sich auf das betriebsbedingte Hochladen von Dateien (z.
 
 Sie können die folgenden Upload-Funktionen nutzen:
 
-* Um große/hierarchische Ordner stapelweise hochzuladen, verwenden Sie das [!DNL Experience Manager]-Desktop-Programm, das die Funktion [Ordner-Upload](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#upload-and-add-new-assets-to-aem) bietet. Sie können auch hierarchische Ordnerstrukturen hochladen. [!DNL Assets]Das Hochladen von erfolgt im Hintergrund und ist daher nicht an eine Webbrowser-Sitzung gebunden.
+* Um große/hierarchische Ordner stapelweise hochzuladen, verwenden Sie das [!DNL Experience Manager]-Desktop-Programm, das die Funktion [Ordner-Upload](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#upload-and-add-new-assets-to-aem) bietet. Sie können auch hierarchische Ordnerstrukturen hochladen. [!DNL Assets]Das Hochladen von erfolgt im Hintergrund und ist daher nicht an eine Webbrowser-Sitzung gebunden.
 * Um einige Dateien aus einem einzigen Ordner hochzuladen, ziehen Sie die Dateien direkt in die Web-Oberfläche oder verwenden Sie die Option Erstellen in der Web-Oberfläche [!DNL Assets] .
 * Je nach Ihren Geschäftsanforderungen können Sie auch benutzerdefinierte Upload-Programme verwenden.
 
