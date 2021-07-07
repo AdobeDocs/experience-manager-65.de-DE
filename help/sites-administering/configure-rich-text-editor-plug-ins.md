@@ -3,12 +3,13 @@ title: 'Konfigurieren der Rich-Text-Editor-Plug-ins '
 description: Erfahren Sie, wie Sie die Adobe Experience Manager Rich-Text-Editor-Plug-ins konfigurieren, um einzelne Funktionen zu aktivieren.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 7f8263a9304ff51e08878c13115c8aeeafce3de3
 workflow-type: tm+mt
-source-wordcount: '4395'
-ht-degree: 95%
+source-wordcount: '4405'
+ht-degree: 94%
 
 ---
+
 
 # Konfigurieren der Rich-Text-Editor-Plug-ins  {#configure-the-rich-text-editor-plug-ins}
 
@@ -82,7 +83,7 @@ Bei Verwendung des RTE können Autoren Inhalte in einem der drei folgenden Modi 
 
 * **Microsoft Word-Modus**: Fügen Sie beim Kopieren aus Microsoft Word Text, einschließlich Tabellen, mitsamt Formatierung ein. Das Kopieren und Einfügen von Text aus einer anderen Quelle wie einer Web-Seite oder Microsoft Excel wird nicht unterstützt und dabei wird nur ein Teil der Formatierung beibehalten.
 
-### Konfigurieren der in der RTE-Symbolleiste verfügbaren Einfüge-Optionen {#configure-paste-options-available-on-the-rte-toolbar}
+### Konfigurieren der in der RTE-Symbolleiste verfügbaren Einfüge-Optionen   {#configure-paste-options-available-on-the-rte-toolbar}
 
 Sie können Ihren Autoren in der RTE-Symbolleiste nur einige, alle oder keine dieser drei Symbole zur Verfügung stellen:
 
@@ -155,53 +156,18 @@ So konfigurieren Sie, welche Formate beim Einfügen von Text in AEM von einem an
    >
    >Ist der Wert nicht explizit festgelegt, wird der Standardwert „true“ verwendet und das Format akzeptiert.
 
-1. Es können mithilfe einer Reihe anderer Eigenschaften oder Knoten auch andere Formate auf den Knoten `htmlPasteRules` angewendet werden:
+1. Es können mithilfe einer Reihe anderer Eigenschaften oder Knoten auch andere Formate auf den Knoten `htmlPasteRules` angewendet werden. Speichern Sie alle Änderungen.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Eigenschaft</strong></td>
-   <td><strong>Typ</strong></td>
-   <td><strong>Beschreibung</strong></td>
-  </tr>
-  <tr>
-   <td>allowBlockTags</td>
-   <td>Zeichenfolge[]</td>
-   <td><p>Definiert die Liste der zulässigen Block-Tags.</p> <p>Zu den möglichen Block-Tags gehören:</p>
-    <ul>
-     <li>Überschriften (h1, h2, h3)</li>
-     <li>Absätze (p)</li>
-     <li>Listen (ol, ul)</li>
-     <li>Tabellen (table)</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>fallbackBlockTag</td>
-   <td>Zeichenfolge</td>
-   <td><p>Definiert das Block-Tag, das für alle Blöcke mit einem Block-Tag verwendet wird, das nicht in „allowBlockTags“ eingeschlossen ist.</p> <p> „p“ sollte in den meisten Fällen ausreichen.</p> </td>
-  </tr>
-  <tr>
-   <td>table</td>
-   <td>nt:unstructured</td>
-   <td><p>Definiert das Verhalten beim Einfügen von Tabellen.<br /> </p> <p>Dieser Knoten muss über die Eigenschaft <code>allow</code> (Typ <code>Boolean</code>) verfügen, um festzulegen, ob das Einfügen von Tabellen zulässig ist.</p> <p>Wenn <code>allow</code> auf <code>false</code> gesetzt ist, müssen Sie den Wert für die Eigenschaft <code>ignoreMode</code> (Typ <code> String</code>) angeben, um festzulegen, wie eingefügte Tabelleninhalte verarbeitet werden sollen. Gültige Werte für <code>ignoreMode</code> sind:</p>
-    <ul>
-     <li><code>remove</code>: Entfernt Tabelleninhalte.</li>
-     <li><code>paragraph</code>: Wandelt Tabellenzellen in Absätze um.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>list</td>
-   <td>nt:unstructured</td>
-   <td><p>Definiert das Verhalten beim Einfügen von Listen.<br /> </p> <p>Muss über die Eigenschaft <code>allow</code> (Typ <code>Boolean</code>) verfügen, um festzulegen, ob das Einfügen von Listen zulässig ist.</p> <p>Wenn <code>allow</code> auf <code>false</code> gesetzt ist, müssen Sie den Wert für die Eigenschaft <code>ignoreMode</code> (Typ <code>String</code>) angeben, um festzulegen, wie eingefügte Listeninhalte verarbeitet werden. Gültige Werte für <code>ignoreMode</code> sind:</p>
-    <ul>
-     <li><code>remove</code>: Entfernt Listeninhalte.</li>
-     <li><code>paragraph</code>: Wandelt Listenelemente in Absätze um.</li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
+Sie können die folgenden Eigenschaften für `htmlPasteRules` verwenden.
 
-Beispiel einer gültigen `htmlPasteRules`-Struktur:
+| Eigenschaft | Typ | Beschreibung |
+|---|---|---|
+| `allowBlockTags` | Zeichenfolge | Definiert die Liste der zulässigen Block-Tags. Zu den möglichen Block-Tags gehören: <ul> <li>Überschriften (h1, h2, h3)</li> <li>Absätze (p)</li> <li>Listen (ol, ul)</li> <li>Tabellen (table)</li> </ul> |
+| `fallbackBlockTag` | Zeichenfolge | Definiert das Block-Tag, das für alle Blöcke mit einem Block-Tag verwendet wird, das nicht in `allowBlockTags` enthalten ist. `p` in den meisten Fällen ausreicht. |
+| table | nt:unstructured | Definiert das Verhalten beim Einfügen von Tabellen. Dieser Knoten muss über die Eigenschaft `allow` (Typ Boolean) verfügen, um festzulegen, ob das Einfügen von Tabellen zulässig ist. Wenn allow auf `false` gesetzt ist, müssen Sie den Wert für die Eigenschaft `ignoreMode` (Typ String) angeben, um festzulegen, wie eingefügte Tabelleninhalte verarbeitet werden sollen. Gültige Werte für `ignoreMode` sind: <ul> <li>`remove`: Entfernt Tabelleninhalte.</li> <li>`paragraph`: Wandelt Tabellenzellen in Absätze um.</li> </ul> |
+| list | nt:unstructured | Definiert das Verhalten beim Einfügen von Listen. Muss über die Eigenschaft `allow` (Typ: Boolean) verfügen, um festzulegen, ob das Einfügen von Listen zulässig ist. Wenn `allow` auf `false` gesetzt ist, müssen Sie den Wert für die Eigenschaft `ignoreMode` (Typ String) angeben, um festzulegen, wie eingefügte Listeninhalte verarbeitet werden. Gültige Werte für `ignoreMode` sind: <ul><li> `remove`: Entfernt Listeninhalte.</li> <li>`paragraph`: Wandelt Listenelemente in Absätze um.</li> </ul> |
+
+Ein Beispiel für eine gültige `htmlPasteRules`-Struktur ist unten aufgeführt.
 
 ```xml
 "htmlPasteRules": {
@@ -223,13 +189,9 @@ Beispiel einer gültigen `htmlPasteRules`-Struktur:
 }
 ```
 
-1. Speichern Sie alle Änderungen.
-
 ## Konfigurieren von Textstilen {#textstyles}
 
-Autoren können Stile anwenden, um das Erscheinungsbild eines Textabschnitts zu ändern. Die Stile basieren auf CSS-Klassen, die Sie in Ihrem CSS-Stylesheet vordefinieren. Stilisierter Inhalt wird in `span`-Tags eingeschlossen, wobei das Attribut `class` zum Verweis auf die CSS-Klasse verwendet wird. Beispiel:
-
-`<span class=monospaced>Monospaced Text Here</span>`
+Autoren können Stile anwenden, um das Erscheinungsbild eines Textabschnitts zu ändern. Die Stile basieren auf CSS-Klassen, die Sie in Ihrem CSS-Stylesheet vordefinieren. Stilisierter Inhalt wird in `span`-Tags eingeschlossen, wobei das Attribut `class` zum Verweis auf die CSS-Klasse verwendet wird. Beispiel: `<span class=monospaced>Monospaced Text Here</span>`.
 
 Wenn das styles-Plug-in zum ersten Mal aktiviert wird, sind keine Standardstile verfügbar. Die Popup-Liste ist leer. Gehen Sie wie folgt vor, um Stile für Autoren bereitzustellen:
 
@@ -237,11 +199,11 @@ Wenn das styles-Plug-in zum ersten Mal aktiviert wird, sind keine Standardstile 
 * Geben Sie die Speicherorte der Stylesheets an.
 * Geben Sie die einzelnen Stile an, die in der Dropdown-Liste „Stil“ auswählbar sein sollen.
 
-Für spätere (Neu-)Konfigurationen, beispielsweise um weitere Stile hinzuzufügen, befolgen Sie nur die Anweisungen zum Verweisen auf ein neues Stylesheet und zum Angeben zusätzlicher Stile.
+Für spätere Konfigurationen, beispielsweise um weitere Stile hinzuzufügen, befolgen Sie nur die Anweisungen zum Verweisen auf ein neues Stylesheet und zum Angeben zusätzlicher Stile.
 
 >[!NOTE]
 >
->Auch für [Tabellen oder Tabellenzellen](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles) können Stile definiert werden. Diese Konfigurationen erfordern unterschiedliche Vorgehensweisen.
+>Sie können Stile für [Tabellen oder Tabellenzellen](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles) definieren. Diese Konfigurationen erfordern unterschiedliche Vorgehensweisen.
 
 ### Aktivieren der Dropdown-Auswahlliste „Stil“  {#styleselectorlist}
 
@@ -708,10 +670,7 @@ Um zu konfigurieren, wie Links in AEM von einem anderen Programm aus hinzugefüg
    * **Typ** `String`
    * **Wert** `richtext`
 
-   Der Speicherort des Knotens `../items/text` kann je nach Struktur des Dialogfelds variieren. Nachfolgend sehen Sie zwei Beispiele:
-   * `/apps/myProject>/components/text/dialog/items/text`
-   * `/apps/<myProject>/components/text/dialog/items/panel/items/text`
-
+   Der Speicherort des Knotens `../items/text` kann je nach Struktur des Dialogfelds variieren. zwei Beispiele sind `/apps/myProject>/components/text/dialog/items/text` und `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
 1. Erstellen Sie unter `htmlRules` einen neuen Knoten.
 
