@@ -3,9 +3,9 @@ title: 'Konfigurieren der Rich-Text-Editor-Plug-ins '
 description: Erfahren Sie, wie Sie die Adobe Experience Manager Rich-Text-Editor-Plug-ins konfigurieren, um einzelne Funktionen zu aktivieren.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 7f8263a9304ff51e08878c13115c8aeeafce3de3
+source-git-commit: 11cda989e6a28428f03a269c407a7672e6eab747
 workflow-type: tm+mt
-source-wordcount: '4405'
+source-wordcount: '4406'
 ht-degree: 94%
 
 ---
@@ -245,19 +245,11 @@ Geben Sie dann die Speicherorte für die Stylesheets an, auf die Sie verweisen m
 >
 >Der Rich-Text-Editor verwendet ein Container-DOM-Element mit einer ID von `CQrte`, die verwendet werden kann, um verschiedene Stile für die Anzeige und Bearbeitung bereitzustellen:
 >
+>`#CQ td {`
+>` // defines the style for viewing }`
 >
-```
->#CQ td {
-> // defines the style for viewing
-> }
->```
->
->
-```
->#CQrte td {
-> // defines the style for editing
-> }
->```
+>`#CQrte td {`
+>` // defines the style for editing }`
 
 ### Festlegen von Stilen, die in der Popup-Liste verfügbar sein sollen {#stylesindropdown}
 
@@ -496,7 +488,7 @@ Die Funktion zum Kopieren und Einfügen von Tabellen in oder aus der RTE-Kompone
 
    * **Name** `features`
    * **Typ** `String`
-   * **Wert** `*`
+   * **Wert:** `*` (Sternchen)
 
    >[!NOTE]
    Wenn Sie nicht alle Tabellen-Features aktivieren möchten, erstellen Sie die `features`-Eigenschaft wie folgt:
@@ -613,7 +605,7 @@ So definieren Sie die Tabulator-Schrittweite:
 
    * **Name** `tabSize`
    * **Typ** `String`
-   * **Wert:** Die Anzahl an für den Tabulator verwendeten Leerzeichen.
+   * **Wert:** Die Anzahl an für den Tabulator verwendeten Leerzeichen
 
 1. Speichern Sie die Änderungen.
 
