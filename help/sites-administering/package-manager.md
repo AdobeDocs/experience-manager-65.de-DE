@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4a2a9f177049e8199662ed94cf7aace9aa937655
 workflow-type: tm+mt
-source-wordcount: '3934'
-ht-degree: 80%
+source-wordcount: '3964'
+ht-degree: 79%
 
 ---
 
@@ -199,7 +199,7 @@ Paketfilter werden in den meisten Fällen bei der [Erstellung des Pakets](#creat
 
 Sie können Screenshots an das Paket anhängen, um eine visuelle Darstellung vom Erscheinungsbild der Inhalte bereitzustellen. So können Sie beispielsweise Screenshots von neuen Funktionen bereitstellen.
 
-### Paketsymbole  {#package-icons}
+### Paketsymbole {#package-icons}
 
 Sie können auch ein Symbol an das Paket anhängen, um eine schnelle visuelle Darstellung von dem bereitzustellen, was im Paket enthalten ist. Dieses wird dann in der Paketliste angezeigt und ermöglicht Ihnen, das Paket oder die Klasse des Pakets auf einfache Weise zu identifizieren.
 
@@ -233,9 +233,15 @@ Wenn Sie Benutzern das Recht zum Erstellen, Ändern, Hochladen und Installieren 
 * **/etc/packages** (umfassende Rechte außer „Löschen“)
 * den Knoten, der die Paketinhalte beinhaltet
 
+>[!CAUTION]
+>
+>Die Erteilung von Berechtigungen für Pakete kann zu sensiblen Informationen und Datenverlust führen.
+>
+>Um diese Risiken zu begrenzen, wird dringend empfohlen, bestimmte Gruppenberechtigungen nur für dedizierte Unterbäume zu gewähren, z. B. `/etc/packages/site-content`.
+
 Weitere Informationen zum Ändern von Berechtigungen finden Sie in [Festlegen von Berechtigungen](/help/sites-administering/security.md#setting-page-permissions).
 
-### Erstellen eines neuen Pakets  {#creating-a-new-package}
+### Erstellen eines neuen Pakets {#creating-a-new-package}
 
 So erstellen Sie eine neue Paketdefinition:
 
@@ -419,7 +425,7 @@ So laden Sie ein Paket hoch:
    >
    >Denken Sie daran, [das Paket zu installieren](#installing-packages), damit die Inhalte in AEM verfügbar sind.
 
-### Validieren von Paketen  {#validating-packages}
+### Validieren von Paketen {#validating-packages}
 
 Vor der Installation eines Pakets sollten Sie seinen Inhalt überprüfen. Da Pakete überlagerte Dateien unter `/apps` ändern und/oder ACLs hinzufügen, ändern und entfernen können, ist es oft nützlich, diese Änderungen vor der Installation zu validieren.
 
@@ -497,7 +503,7 @@ Diese Optionen werden nachfolgend beschrieben.
    >
    >Als Best Practice wird empfohlen, dass Pakete keine Auswirkungen auf von AEM bereitgestellte ACLs haben sollten, da dies möglicherweise zu unerwartetem Produktverhalten führen kann.
 
-#### Durchführen der Validierung  {#performing-validation}
+#### Durchführen der Validierung {#performing-validation}
 
 Die Validierung von Paketen kann auf zweierlei Weise erfolgen:
 
@@ -611,7 +617,7 @@ Die Deaktivierung des WorkflowLauncher gewährleistet, dass die Assets nach der 
 
    Das Wort **Installiert** wird neben dem Paket angezeigt, nachdem es installiert wurde.
 
-### Dateisystem-basierte(r) Upload und Installation  {#file-system-based-upload-and-installation}
+### Dateisystem-basierte(r) Upload und Installation {#file-system-based-upload-and-installation}
 
 Es gibt eine alternative Methode, um Pakete auf Ihre Instanz hochzuladen und dort zu installieren. In Ihrem Dateisystem befindet sich neben Ihrer JAR- und `license.properties`-Datei ein Ordner `crx-quicksart` . Sie müssen einen Ordner mit dem Namen `install` unter `crx-quickstart` erstellen. Sie haben dann Folgendes: `<aem_home>/crx-quickstart/install`
 
@@ -623,7 +629,7 @@ Wird Ihre Instanz ausgeführt und Sie fügen dem `install`-Ordner ein Paket hinz
 >
 >Sie können dies auch tun, bevor Sie die Instanz das erste Mal starten. Dazu müssen Sie zunächst den Ordner `crx-quickstart` manuell erstellen, dann unter diesem Ordner den Ordner `install` erstellen und die Pakete dort speichern. Wenn Sie dann Ihre Instanz das erste Mal starten, werden die Pakete in alphabetischer Reihenfolge installiert.
 
-### Deinstallieren von Paketen  {#uninstalling-packages}
+### Deinstallieren von Paketen {#uninstalling-packages}
 
 AEM ermöglicht die Deinstallation von Paketen. Durch diese Aktion werden die Inhalte des Repositorys zurückgesetzt, die im Snapshot enthalten sind, der unmittelbar vor der Paketinstallation erstellt wurde.
 
