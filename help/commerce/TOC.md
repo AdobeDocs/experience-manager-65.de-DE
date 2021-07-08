@@ -3,10 +3,10 @@ sub-product: Handbuch zu AEM Content and Commerce
 user-guide-title: Handbuch zu AEM Content and Commerce
 breadcrumb-title: Commerce-Anleitung
 user-guide-description: Erfahren Sie, wie Sie Adobe Experience Manager Content and Commerce verwenden und verwalten.
-source-git-commit: 538dc7620317f86c0b3d762eaef597d0a7969ace
+source-git-commit: a5bf6a1a6e9013e44209ea865145af1557445318
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 82%
+source-wordcount: '111'
+ht-degree: 80%
 
 ---
 
@@ -26,6 +26,7 @@ ht-degree: 82%
       + [Verwendung mehrerer Vorlagen](cif/configuring/multi-template-usage.md)
       + [Konfigurieren von URLs für SEO](cif/configuring/advanced-url-configuration.md)
       + [Zwischenspeicheroptionen](cif/configuring/caching.md)
+      + [Benutzerdefinierte HTTP-Header](/help/commerce/cif/configuring/custom-http-headers.md)
    + Entwickeln {#developing}
       + [Entwickeln mit AEM](cif/develop.md)
       + [Festlegen des Stils von CIF-Komponenten](cif/customizing/style-cif-component.md)
