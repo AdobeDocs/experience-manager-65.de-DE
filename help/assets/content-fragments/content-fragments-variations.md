@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 324df1da-78fa-460f-a744-3504259f1d4a
 docset: aem65
 feature: Inhaltsfragmente
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: ded05f24-ab5c-4195-b5c4-704a9fd93c7e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1746'
 ht-degree: 92%
 
 ---
 
-# Varianten – Erstellen von Fragmentinhalten {#variations-authoring-fragment-content}
+# Varianten – Erstellen von Fragmentinhalten{#variations-authoring-fragment-content}
 
 [Varianten](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sind eine wichtige Funktion für Inhaltsfragmente, da sie Ihnen die Möglichkeit bieten, Kopien des primären Inhalts zu erstellen und zu bearbeiten und diese für bestimmte Kanäle und/oder Szenarien zu verwenden.
 
@@ -311,7 +311,7 @@ So erstellen Sie eine neue Variante:
    >
    >Wenn eine neue Variante erstellt wird, wird immer die **Primäre Version** kopiert, nicht die gerade geöffnete Variante.
 
-### Bearbeiten einer Variante   {#editing-a-variation}
+### Bearbeiten einer Variante    {#editing-a-variation}
 
 Sie können nach einer der folgenden Aktionen Änderungen am Inhalt der Variante vornehmen:
 
@@ -375,7 +375,7 @@ Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zur Synchronisie
 
 1. Master und Variante werden nebeneinander angezeigt:
 
-   * Grün zeigt an, dass Inhalt (zur Variante) hinzugefügt  wurde
+   * Grün zeigt an, dass Inhalt (zur Variante) hinzugefügt    wurde
    * Rot zeigt an, dass Inhalt entfernt wurde (aus der Variante)
 
    ![cfm-6420-27](assets/cfm-6420-27.png)
