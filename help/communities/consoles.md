@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
-role: Administrator
+role: Admin
 exl-id: 36f2e3d2-46c7-48a8-a1e9-213f581bd9f3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 2%
@@ -71,6 +71,6 @@ Um auf die verschiedenen Communities-Konsolen zuzugreifen, wählen Sie in der gl
 
    In der Ressourcenkonsole erstellen, verwalten und weisen [Aktivierungsmanager](enablement.md#communitymanagers) Ressourcen zu Mitgliedern einer [Aktivierungs-Community-Site](overview.md#enablement-community) zu. Die Konsole ist nur in der Autorenumgebung verfügbar.
 
-## Tools-Konsole {#tools-console}
+## Konsole „Tools“ {#tools-console}
 
 So greifen Sie über die globale Navigation auf [Communities-Tools](tools.md) (ehemals Administration Console) zu: **[!UICONTROL Tools]** > **[!UICONTROL Communities]**
