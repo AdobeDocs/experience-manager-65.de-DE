@@ -6,9 +6,9 @@ uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
-role: Administrator
+role: Admin
 exl-id: 00c01a12-1180-4f35-9179-461bf177c787
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '953'
 ht-degree: 59%
@@ -94,7 +94,7 @@ select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_
 
 Nachdem Sie die Prinzipal-ID kennen, können Sie die Benutzerdaten exportieren oder löschen.
 
-### Benutzerdaten exportieren  {#export-user-data}
+### Benutzerdaten exportieren {#export-user-data}
 
 Führen Sie die folgenden Datenbankbefehle aus, um Benutzerdaten für eine Prinzipal-ID aus Datenbanktabellen zu exportieren. Ersetzen Sie im Befehl `select` `<principal_id>` die Prinzipal-ID des Benutzers, dessen Daten Sie exportieren möchten.
 
