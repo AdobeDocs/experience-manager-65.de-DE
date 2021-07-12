@@ -10,12 +10,12 @@ content-type: reference
 topic-tags: Configuration
 discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: d802ac53-e3db-45ca-afcb-7e99d0bb7877
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '279'
-ht-degree: 78%
+ht-degree: 79%
 
 ---
 
@@ -72,7 +72,7 @@ Nachdem Sie [AEM Forms Add-On-Paket](../../forms/using/installing-configuring-ae
    <td><p>fdm-authors</p> </td> 
    <td>
     <ul> 
-     <li>Formulardatenmodell erstellen und ändern</li> 
+     <li>Erstellen und Ändern des Formulardatenmodells</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -87,7 +87,7 @@ Nachdem Sie [AEM Forms Add-On-Paket](../../forms/using/installing-configuring-ae
    <td>
     <ul> 
      <li>Erstellen einer Posteingangs-Anwendung</li> 
-     <li>Workflow-Modell erstellen</li> 
+     <li>Erstellen eines Workflow-Modells</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -104,7 +104,7 @@ Nachdem Sie [AEM Forms Add-On-Paket](../../forms/using/installing-configuring-ae
     <ul> 
      <li>PDF Generator konfigurieren</li> 
      <li>Überwachten Ordner konfigurieren</li> 
-     <li>Workflow-Anwendungen verwalten</li> 
+     <li>Verwalten von Workflow-Programmen</li> 
     </ul> </td> 
   </tr>
  </tbody>
