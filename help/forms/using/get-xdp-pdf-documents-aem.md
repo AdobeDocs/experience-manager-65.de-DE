@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 91%
@@ -20,7 +20,7 @@ ht-degree: 91%
 
 # XDP- und PDF-Dokumente in AEM Forms übernehmen{#getting-xdp-and-pdf-documents-in-aem-forms}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Sie können Formulare aus Ihrem lokalen Dateisystem in das CRX-Repository importieren, indem Sie sie in AEM Forms hochladen. Der Upload-Vorgang wird für die folgenden Assettypen unterstützt:
 
@@ -62,7 +62,7 @@ Sie können die unterstützten Assettypen einzeln oder als ZIP-Archiv hochladen.
 
 Wenn der Upload abgeschlossen ist, wird basierend auf der Asset-Vorschau über einen Workflow im Hintergrund für jedes Asset eine Miniatur generiert. Wenn neuere Versionen von Assets hochgeladen werden, werden die vorhandenen Assets überschrieben.
 
-### Geschützter Modus  {#protected-mode}
+### Geschützter Modus {#protected-mode}
 
 AEM Forms-Server ermöglicht es Ihnen, JavaScript-Code auszuführen. Ein schadhafter JavaScript-Code kann eine AEM Forms-Umgebung beschädigen. Der abgesicherte Modus beschränkt AEM Forms darauf, XDP-Dateien nur von vertrauenswürdigen Assets und Speicherorten auszuführen. Alle XDPs, die in der AEM Forms-Benutzeroberfläche verfügbar sind, gelten als vertrauenswürdige Assets.
 
