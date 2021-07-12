@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: manage
 discoiquuid: c30332b6-e012-442d-8e84-28832c116c7b
 noindex: true
-role: Administrator
+role: Admin
 exl-id: b87e07b1-4a19-4888-bad0-c0f5327b9ad3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 63%
@@ -23,7 +23,7 @@ Mit AEM Desktop-Programm können Sie das Adobe Experience Manager (AEM) Assets-R
 
 Sie können die App aus einer AEM-Instanz aus herunterladen. Ausführliche Informationen zum Herunterladen der App finden Sie unter [AEM Versionshinweise zum Desktop-Programm](https://helpx.adobe.com/experience-manager/desktop-app/release-notes.html).
 
-## Unterstützte AEM Forms-Assets in AEM -Desktop-Programm {#aem-forms-assets-supported-in-aem-desktop-app}
+## Unterstützte AEM Forms-Assets in AEM Desktop-Programm {#aem-forms-assets-supported-in-aem-desktop-app}
 
 Mithilfe der App können Sie AEM Forms-Binärdateien der Typen Formatvorlage (.xdp), PDF-Formular (.pdf), Dokument (.pdf), Bilder, XML-Schema (.xsd) und Formatvorlage (.xfs) synchronisieren. Die App listet alle anderen Dateien (nicht unterstützte Dateien) als 0-Byte-Dateien auf. Durch die Anzeige nicht unterstützter Dateien als 0-Byte-Dateien wird der Benutzer darauf aufmerksam gemacht, dass andere Assets auf dem AEM Forms-Server vorhanden sind.
 
@@ -36,7 +36,7 @@ Mithilfe der App können Sie AEM Forms-Binärdateien der Typen Formatvorlage (.x
 AEM Desktop App verwendet das WebDAV-Protokoll unter Microsoft Windows und SMB1 unter Mac OS X, um eine Verbindung zu einem AEM Forms-Server herzustellen. Standardmäßig ist der AEM Forms-Server nicht zum Synchronisieren von Binärdateien und anderen Assets mit einem WebDAV- oder SMB-Client aktiviert. Führen Sie die folgenden Schritte aus, um AEM Forms für AEM Desktop App zu aktivieren:
 
 1. Melden Sie sich bei AEM Forms als Administrator an.
-1. Klicken Sie in der Autoreninstanz auf ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager > Tools]** ![Hammer](assets/hammer.png) **[!UICONTROL > Bereitstellung > Vorgänge > Web-Konsole]**. Die Web-Konsole wird in einem neuen Fenster geöffnet.
+1. Klicken Sie in der Autoreninstanz auf ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager > Tools]** ![Hammer](assets/hammer.png) **[!UICONTROL > Bereitstellung > Vorgänge > Web-Konsole]**. Die Webkonsole wird in einem neuen Fenster geöffnet.
 1. Suchen Sie im Fenster der Web-Konsole die Option **[!UICONTROL FormsManager AddOn Configuration]** und öffnen Sie sie.
 1. Deaktivieren Sie im Dialogfeld „FormsManager AddOn Configuration“ das Kontrollkästchen **[!UICONTROL Asynchronously Sync Resources]** und klicken Sie auf **[!UICONTROL Speichern]**.
 1. Starten Sie den AEM Forms-Server neu. Nach dem Neustart ist der AEM Forms-Server für die Annahme und Freigabe von Inhalten für AEM Desktop-Programm aktiviert.
