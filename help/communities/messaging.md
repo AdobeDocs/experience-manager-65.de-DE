@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: ee94f093-fd14-49f2-9990-fbe853d924b1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 # Messaging konfigurieren {#configure-messaging}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Die Messaging-Funktion für AEM Communities bietet angemeldeten Site-Besuchern (Mitgliedern) die Möglichkeit, Nachrichten miteinander zu senden, auf die bei der Anmeldung auf der Site zugegriffen werden kann.
 
@@ -31,13 +31,13 @@ Diese Seite enthält Informationen zur Standardkonfiguration und möglichen Anpa
 
 Weitere Informationen für Entwickler finden Sie unter [Messaging Essentials](/help/communities/essentials-messaging.md).
 
-## Messaging Operations Service {#messaging-operations-service}
+## Messaging Operations-Dienst {#messaging-operations-service}
 
 Die Konfiguration [AEM Communities Messaging Operations Service](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifiziert den Endpunkt, der mit Messaging-bezogenen Anfragen verarbeitet, die Ordner, die der Dienst zum Speichern von Nachrichten verwenden soll, und wenn Nachrichten Dateianhänge enthalten können, welche Dateitypen sind zulässig.
 
 Bei Community-Sites, die mit `Communities Sites console` erstellt wurden, ist bereits eine Instanz des Dienstes vorhanden, wobei der Posteingang auf `/mail/inbox` gesetzt ist.
 
-### Community Messaging Operations Service {#community-messaging-operations-service}
+### Community Messaging-Dienst {#community-messaging-operations-service}
 
 Wie unten gezeigt, existiert eine Konfiguration des Dienstes für Sites, die mit dem [Website-Erstellungsassistenten](/help/communities/sites-console.md) erstellt wurden. Die Konfiguration kann durch Auswahl des Stiftsymbols neben der Konfiguration angezeigt oder bearbeitet werden.
 
@@ -135,7 +135,7 @@ Um eine neue Konfiguration hinzuzufügen, wählen Sie das Pluszeichen &quot;**+*
 >
 >Um alle Dateinamenerweiterungen zuzulassen, mit Ausnahme der auf die Blockierungsliste gesetzt, verwenden Sie das Symbol &quot;**-**&quot;, um (erneut) den einzelnen leeren Eintrag zu entfernen, bevor Sie auf **Speichern** klicken.
 
-## Group Messaging {#group-messaging}
+## Gruppennachrichten {#group-messaging}
 
 Damit registrierte Benutzer Direktnachrichten stapelweise an Benutzergruppen senden können, stellen Sie sicher, dass Sie **Gruppennachrichten aktivieren** in den folgenden beiden Instanzen der Konfiguration **Messaging Operation Services** aktivieren:
 
