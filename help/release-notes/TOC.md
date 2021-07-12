@@ -6,8 +6,8 @@ user-guide-title: Adobe Experience Manager 6.5 - Versionshinweise
 breadcrumb-title: Versionshinweise
 user-guide-description: In den Versionshinweisen erhalten Sie Informationen zu den neuesten neuen Funktionen in AEM 6.5.
 feature: Versionshinweise
-role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
-source-git-commit: dafc10e6e73967566ec8bff8ac0e4c39bc7cd885
+role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 46%
@@ -15,7 +15,7 @@ ht-degree: 46%
 ---
 
 
-# Adobe Experience Manager 6.5 Versionshinweise {#release-notes}
+# Adobe Experience Manager 6.5 - Versionshinweise {#release-notes}
 
 + [Übersicht über AEM 6.5](home.md)
 + [Allgemeine Versionshinweise](release-notes.md)
