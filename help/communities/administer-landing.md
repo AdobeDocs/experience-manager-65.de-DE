@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
-role: Administrator
+role: Admin
 exl-id: e3ffc73e-2bc5-492d-b64b-750cc7d8ab9b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 9%
@@ -22,7 +22,7 @@ ht-degree: 9%
 
 Dieser Abschnitt richtet sich an diejenigen, die AEM Communities verwalten und mit AEM Communities-Funktionen vertraut sind.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Einen Überblick und die ersten Schritte finden Sie unter:
 
@@ -30,7 +30,7 @@ Einen Überblick und die ersten Schritte finden Sie unter:
 * [Einstieg in AEM Communities](getting-started.md)
 * [Erste Schritte mit AEM Communities zur Aktivierung](getting-started-enablement.md)
 
-## Administrations- und Konfigurationsprobleme {#administration-and-configuration-topics}
+## Administrations- und Konfigurationsthemen {#administration-and-configuration-topics}
 
 ### Communities Site-Erstellung und -Verwaltung {#communities-site-creation-and-management}
 
