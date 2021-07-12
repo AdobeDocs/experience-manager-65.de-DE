@@ -6,8 +6,8 @@ user-guide-title: AEM 6.5 Communities-Benutzeranleitung
 breadcrumb-title: Communities-Anleitung
 user-guide-description: Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere Community-Funktionen.
 feature: Communities
-role: Business Practitioner
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+role: User
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 30%
