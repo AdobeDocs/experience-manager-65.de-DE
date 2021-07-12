@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
-role: Administrator
+role: Admin
 exl-id: 799d5ae1-caac-4c92-8835-696ad25de553
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1209'
 ht-degree: 3%
@@ -49,7 +49,7 @@ Siehe auch [Eigenschaften der SRP-Optionen](working-with-srp.md#characteristics-
 
 ## MongoDB-Konfiguration {#mongodb-configuration}
 
-### MSRP {#select-msrp} auswählen
+### MSRP auswählen {#select-msrp}
 
 Die [Speicherkonfigurationskonsole](srp-config.md) ermöglicht die Auswahl der standardmäßigen Speicherkonfiguration, die angibt, welche SRP-Implementierung verwendet werden soll.
 
@@ -114,7 +114,7 @@ Weitere Informationen zu Replikationssets finden Sie in der Dokumentation zu Mon
 
 Informationen zum Arbeiten mit Replikatsätzen und zum Definieren von Verbindungen zwischen Anwendungen und MongoDB-Instanzen finden Sie in der Dokumentation zu MongoDB [Connection String URI Format](https://docs.mongodb.org/manual/reference/connection-string/).
 
-#### Beispiel-URL für die Verbindung zu einem Replikat-Set {#example-url-for-connecting-to-a-replica-set}
+#### Beispiel-URL für die Verbindung zu einem Replikat-Set  {#example-url-for-connecting-to-a-replica-set}
 
 ```shell
 # Example url for:
@@ -164,7 +164,7 @@ Informationen zu *Benutzern*, *Benutzerprofilen* und *Benutzergruppen*, die häu
 * [Benutzersynchronisierung](sync.md)
 * [Verwalten von Benutzern und Benutzergruppen](users.md)
 
-## MSRP Reindex Tool {#msrp-reindex-tool}
+## MSRP-Reindex-Tool {#msrp-reindex-tool}
 
 Es gibt einen HTTP-Endpunkt für die Neuindizierung von Solr für MSRP bei der Installation neuer Konfigurationsdateien oder der Reparatur eines beschädigten Solr-Index.
 
@@ -181,7 +181,7 @@ Der angemessene Standardwert ist 5000:
 * Wenn der Speicher ein Problem darstellt, geben Sie eine kleinere Zahl an
 * Wenn die Geschwindigkeit ein Problem darstellt, geben Sie eine größere Zahl an, um die Geschwindigkeit zu erhöhen
 
-### Ausführen des MSRP-Reindex-Tools mit cURL-Befehl {#running-msrp-reindex-tool-using-curl-command}
+### Ausführen des MSRP-Reindex-Tools mithilfe des cURL-Befehls {#running-msrp-reindex-tool-using-curl-command}
 
 Der folgende cURL-Befehl zeigt, was erforderlich ist, damit eine HTTP-Anforderung UGC neu indiziert, die in MSRP gespeichert ist.
 
@@ -215,13 +215,13 @@ cURL -u *signin* -d *data* *reindex-url*
 curl -s -u admin:admin -d 'batchSize=10000&path=/content/usergenerated/asi/mongo/' http://localhost:4503/services/social/datastore/mongo/reindex
 ```
 
-## Demo MSRP {#how-to-demo-msrp}
+## Demo von MSRP {#how-to-demo-msrp}
 
 Informationen zum Einrichten von MSRP für eine Demonstrations- oder Entwicklungsumgebung finden Sie unter [So richten Sie MongoDB für Demo](demo-mongo.md) ein.
 
 ## Fehlerbehebung {#troubleshooting}
 
-### UGC in MongoDB nicht sichtbar {#ugc-not-visible-in-mongodb}
+### UGC nicht in MongoDB sichtbar {#ugc-not-visible-in-mongodb}
 
 Stellen Sie sicher, dass MSRP als Standardanbieter konfiguriert wurde, indem Sie die Konfiguration der Speicheroption aktivieren. Standardmäßig ist der Speicher-Ressourcenanbieter JSRP.
 
