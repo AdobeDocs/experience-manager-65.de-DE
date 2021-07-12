@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
-role: Administrator
+role: Admin
 exl-id: 338be220-659a-459c-8e90-55e3a11ddeb0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Communities-Abonnements {#communities-subscriptions}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Ab Communities [FP1](deploy-communities.md#latestfeaturepack) können Community-Mitglieder per E-Mail mit der Community interagieren, indem sie eine Funktion verwenden, die als Abonnements bezeichnet wird.
 
@@ -58,7 +58,7 @@ Die Schaltfläche **Folgen** enthält nur dann die Option `Email Subscriptions`,
 
 * Für einen bestimmten Eintrag, z. B. ein Forenthema, eine Frage zur Frage oder einen Blog-Artikel Wird eine E-Mail senden, wenn Aktivitäten für diesen bestimmten Eintrag vorhanden sind.
 
-## Antworten nach E-Mail {#reply-by-email}
+## Antwort per E-Mail {#reply-by-email}
 
 Wenn die E-Mail-Adresse [für die Antwort per E-Mail](email.md#configure-polling-importer) konfiguriert ist, erhält das Abonnent eine E-Mail mit dem veröffentlichten Inhalt und einen Link zum Online-Inhalt.
 
