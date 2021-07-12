@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 765a3d9b-4552-403e-872c-fdf684ac271d
-role: Administrator
+role: Admin
 exl-id: b635e2ed-4637-4b2f-a746-ec8dc7541bab
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 4%
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 # Konfiguration von Aktivierungsfunktionen {#configuring-enablement-features}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Die Aktivierungsfunktionen bieten die Möglichkeit, [Aktivierungsgruppen](overview.md#enablement-community) zu erstellen.
 
