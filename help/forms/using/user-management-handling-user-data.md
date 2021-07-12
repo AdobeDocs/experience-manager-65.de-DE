@@ -6,9 +6,9 @@ uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
-role: Administrator
+role: Admin
 exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 81%
@@ -94,7 +94,7 @@ Benutzerverwaltungsdaten für Benutzer, die mindestens einmal unter `https://'[s
 
 Sie können auf Benutzerverwaltungsdaten für Benutzer in den Benutzerverwaltungsdatenbanken und im AEM-Repository zugreifen und sie exportieren und bei Bedarf dauerhaft löschen.
 
-### Datenbank  {#database-1}
+### Datenbank {#database-1}
 
 Um Benutzerdaten aus der Benutzerverwaltungsdatenbank zu exportieren oder zu löschen, müssen Sie mithilfe eines Datenbank-Clients eine Verbindung mit der Datenbank herstellen und anhand von PII des Benutzers die Prinzipal-ID ermitteln. Um beispielsweise die Prinzipal-ID eines Benutzers mit einer Anmelde-ID abzurufen, führen Sie den folgenden `select`-Befehl in der Datenbank aus.
 
@@ -106,7 +106,7 @@ select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_
 
 Nachdem Sie die Prinzipal-ID kennen, können Sie die Benutzerdaten exportieren oder löschen.
 
-#### Benutzerdaten exportieren  {#export-user-data}
+#### Benutzerdaten exportieren {#export-user-data}
 
 Führen Sie die folgenden Datenbankbefehle aus, um Benutzerverwaltungsdaten für eine Prinzipal-ID aus Datenbanktabellen zu exportieren. Ersetzen Sie im Befehl `select` `<principal_id>` die Prinzipal-ID des Benutzers, dessen Daten Sie exportieren möchten.
 
@@ -175,11 +175,11 @@ Führen Sie folgende Schritte aus, um Benutzerverwaltungsdaten für eine Prinzip
 
 1. Starten Sie den AEM Forms-Server.
 
-### AEM-Repository  {#aem-repository-1}
+### AEM-Repository {#aem-repository-1}
 
 Forms JEE-Benutzer haben ihre Daten im AEM-Repository, wenn sie mindestens eine der AEM Forms-Author-Instanzen aufgerufen haben. Sie können auf ihre Benutzerdaten zugreifen und diese aus dem AEM-Repository löschen.
 
-#### Zugreifen auf Benutzerdaten  {#access-user-data}
+#### Zugreifen auf Benutzerdaten {#access-user-data}
 
 Um in AEM Repository erstellte Benutzer anzuzeigen, melden Sie sich mit AEM Administratorberechtigungen bei `https://'[server]:[port]'/lc/useradmin` an. Beachten Sie, dass `server` und `port` in der URL die der AEM-Author-Instanz sind. Hier können Sie nach Benutzern mit ihrem Benutzernamen suchen. Doppelklicken Sie auf einen Benutzer, um Informationen wie Eigenschaften, Berechtigungen und Gruppen für den Benutzer anzuzeigen. Die Eigenschaft `Path`für einen Benutzer gibt den Pfad zum Benutzerknoten an, der im AEM-Repository erstellt wurde.
 
