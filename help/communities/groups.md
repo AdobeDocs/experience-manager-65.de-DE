@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
-role: Administrator
+role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 3%
@@ -109,7 +109,7 @@ Der Standardstamm ist die übergeordnete Site, der Stammordner kann jedoch an ei
 
 ### Schritt 2: Design {#step-design}
 
-### GEMEINSCHAFTSGRUPPENTHEMA {#community-group-theme}
+### GEMEINSCHAFTSGRUPPENTHEMEN {#community-group-theme}
 
 ![communityGrouptheme](assets/communitygrouptheme.png)
 
@@ -121,7 +121,7 @@ Es ist möglich, ein Design auszuwählen, das sich vom Design der übergeordnete
 
 Nachdem die Community-Site veröffentlicht wurde, können Sie [die Eigenschaften](#modifyinggroupproperties) bearbeiten und ein anderes Design auswählen.
 
-### GEMEINSCHAFTSGRUPPENBRANDING {#community-group-branding}
+### GEMEINSCHAFTSGRUPPENBRANCHE {#community-group-branding}
 
 ![community-group-branding](assets/community-group-branding.png)
 
@@ -210,7 +210,7 @@ Nach Abschluss des Vorgangs wird die Karte für die neue Unter-Community-Site (G
 
 Der Seiteninhalt einer Gruppe kann mit denselben Tools wie jede andere AEM erstellt werden. Um die Gruppe für die Bearbeitung zu öffnen, wählen Sie das Symbol Site öffnen aus, das angezeigt wird, wenn Sie den Mauszeiger über die Gruppenkarte bewegen.
 
-## Ändern der Gruppeneigenschaften {#modify-group-properties}
+## Gruppeneigenschaften ändern {#modify-group-properties}
 
 Die Eigenschaften einer vorhandenen Unter-Community-Site, die während des Erstellungsprozesses einer Community-Gruppe angegeben wird, können geändert werden, indem Sie das Symbol Site bearbeiten auswählen, das angezeigt wird, wenn Sie den Mauszeiger über die Gruppenkarte bewegen:
 
@@ -220,7 +220,7 @@ Die Details der folgenden Eigenschaften entsprechen den Beschreibungen, die im A
 
 ![community-group-basic](assets/community-group-basic.png)
 
-### Ändern von Basic {#modify-basic}
+### Standard ändern {#modify-basic}
 
 Das BASIC-Bedienfeld ermöglicht die Änderung von
 
@@ -286,7 +286,7 @@ Das Bedienfeld [MEMBERSHIP](#membership) ist nur informativ. Es ist nicht mögli
 
 Das Bedienfeld [MINIATURANSICHT](#thumbnail) ermöglicht das Hochladen eines Bildes, das die Community-Gruppe für Site-Besucher in der Veröffentlichungsumgebung sowie in der Gruppenkonsole der Communities-Site in der Autorenumgebung darstellt.
 
-## Veröffentlichen Sie die Gruppe {#publish-the-group}
+## Gruppe veröffentlichen {#publish-the-group}
 
 ![publish-site](assets/publish-site.png)
 
@@ -302,7 +302,7 @@ Nachdem die Gruppe erfolgreich veröffentlicht wurde, wird eine Meldung angezeig
 >
 >Die Community-Site und verschachtelte Gruppen sollten von oben nach unten veröffentlicht werden.
 
-## Löschen Sie die Gruppe {#delete-the-group}
+## Gruppe löschen {#delete-the-group}
 
 ![Löschsymbol](assets/deleteicon.png)
 
