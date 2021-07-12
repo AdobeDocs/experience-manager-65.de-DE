@@ -8,16 +8,16 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
-role: Administrator
+role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '7698'
+source-wordcount: '7696'
 ht-degree: 71%
 
 ---
 
-# Härtung der AEM Forms on JEE-Umgebung {#hardening-your-aem-forms-on-jee-environment}
+# Härtung Ihrer AEM Forms on JEE-Umgebung {#hardening-your-aem-forms-on-jee-environment}
 
 Erfahren Sie mehr über die verschiedenen Sicherheitshärtungseinstellungen, um die Sicherheit von AEM Forms on JEE in einem Unternehmens-Intranet zu verbessern.
 
@@ -135,7 +135,7 @@ In diesem Abschnitt werden Verfahren beschrieben, die Sie während des AEM Forms
    <td><p>Platzieren Sie AEM Forms on JEE auf einer dedizierten Festplattenpartition. Die Festplattenaufteilung ist ein Prozess, bei dem bestimmte Daten auf dem Server auf separaten physischen Festplatten verwaltet werden, um die Sicherheit zu erhöhen. Durch eine solche Datenanordnung lässt sich das Risiko von Directory Traversal-Angriffen verringern. Planen Sie die Erstellung einer von der Systempartition getrennten Partition, auf der Sie das AEM Forms on JEE-Inhaltsverzeichnis installieren können. (Unter Windows enthält die Systempartition den Ordner „system32“, das auch als Boot-Partition bezeichnet wird.)</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Komponenten </p> </td> 
+   <td><p>Komponenten</p> </td> 
    <td><p>Prüfen Sie die vorhandenen Dienste und deaktivieren oder deinstallieren Sie nicht erforderliche Dienste. Installieren Sie keine unnötigen Komponenten und Dienste.</p> <p>Die Standardinstallation eines Anwendungsservers kann Dienste beinhalten, die Sie nicht benötigen. Sie sollten alle unnötigen Dienste vor der Bereitstellung deaktivieren, um die Einstiegspunkte für Angriffe zu minimieren. Unter JBoss können Sie beispielsweise nicht benötigte Dienste in der Deskriptordatei „META-INF/jboss-service.xml“ durch das Einfügen von Kommentarzeichen deaktivieren.</p> </td> 
   </tr> 
   <tr> 
@@ -354,7 +354,7 @@ Beim Schützen der Datenbank sollten Sie die vom Datenbankhersteller beschrieben
 
 Unter Oracle benötigt das verwendete Datenbankkonto nur die Berechtigungen CONNECT, RESOURCE und CREATE VIEW. Informationen zu ähnlichen Anforderungen für andere Datenbanken erhalten Sie unter [Vorbereiten der Installation von AEM Forms on JEE (Einzelserver)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64).
 
-#### Integrierte Sicherheit für SQL Server unter Windows für JBoss konfigurieren   {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
+#### Integrierte Sicherheit für SQL Server unter Windows für JBoss konfigurieren  {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
 
 1. Ändern Sie [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml}, um `integratedSecurity=true` zur Verbindungs-URL hinzuzufügen, wie in diesem Beispiel gezeigt:
 
@@ -366,7 +366,7 @@ Unter Oracle benötigt das verwendete Datenbankkonto nur die Berechtigungen CONN
 1. Ändern Sie die Eigenschaft des JBoss Windows-Dienstes (JBoss for AEM Forms on JEE) für „Anmelden als“ von „Lokales System“ in ein Anmeldekonto mit einer AEM Forms-Datenbank und einem Mindestsatz von Berechtigungen. Wenn Sie JBoss von der Befehlszeile und nicht als Windows-Dienst ausführen, ist dieser Schritt nicht erforderlich.
 1. Ändern Sie die Sicherheitseinstellung von SQL Server von **Gemischt** in **Nur Windows-Authentifizierung**.
 
-#### Integrierte Sicherheit für SQL Server unter Windows für WebLogic konfigurieren {#configuring-integrated-security-for-sql-server-on-windows-for-weblogic}
+#### Integrierte Sicherheit für SQL Server unter Windows für WebLogic konfigurieren  {#configuring-integrated-security-for-sql-server-on-windows-for-weblogic}
 
 1. Starten Sie WebLogic Server Administration Console, indem Sie die folgende URL in die Adresszeile eines Webbrowsers eingeben:
 
@@ -382,7 +382,7 @@ Unter Oracle benötigt das verwendete Datenbankkonto nur die Berechtigungen CONN
 1. Fügen Sie die Datei „sqljdbc_auth.dll“ zum Windows-Systempfad (C:\Windows) auf dem Computer hinzu, auf dem der Anwendungsserver ausgeführt wird. Die Datei „sqljdbc_auth.dll“ wird zusammen mit dem Microsoft SQL JDBC 6.2.1.0-Treiber installiert.
 1. Ändern Sie die Sicherheitseinstellung von SQL Server von **Gemischt** in **Nur Windows-Authentifizierung**.
 
-#### Integrierte Sicherheit für SQL Server unter Windows für WebSphere konfigurieren {#configuring-integrated-security-for-sql-server-on-windows-for-websphere}
+#### Integrierte Sicherheit für SQL Server unter Windows für WebSphere konfigurieren  {#configuring-integrated-security-for-sql-server-on-windows-for-websphere}
 
 Unter WebSphere können Sie die integrierte Sicherheit nur konfigurieren, wenn Sie einen externen JDBC-Treiber für SQL Server und nicht den in WebSphere eingebetteten JDBC-Treiber für SQL Server verwenden.
 
@@ -399,7 +399,7 @@ Unter WebSphere können Sie die integrierte Sicherheit nur konfigurieren, wenn S
 1. Wählen Sie **Dieses Konto** aus und geben Sie die benötigten Informationen ein, um das gewünschte Anmeldekonto festzulegen.
 1. Ändern Sie die Sicherheitseinstellung von SQL Server von **Gemischt** in **Nur Windows-Authentifizierung**.
 
-### Sensible Inhalte in der Datenbank schützen  {#protecting-access-to-sensitive-content-in-the-database}
+### Sensible Inhalte in der Datenbank schützen {#protecting-access-to-sensitive-content-in-the-database}
 
 Das AEM Forms-Datenbankschema enthält sensible Informationen über die Systemkonfiguration und Geschäftsprozesse und sollte hinter der Firewall geschützt sein. Für die Datenbank sollte dieselbe Sicherheitsstufe wie für den Formularserver gelten. Um die Offenlegung von Informationen und den Diebstahl von Geschäftsdaten zu verhindern, muss die Datenbank vom DBA (Datenbankadministrator) so konfiguriert werden, dass nur autorisierte Administratoren Zugriff haben.
 
@@ -415,20 +415,20 @@ Informationen zu herstellerspezifischen Tools finden Sie unter [&quot;Informatio
 
 AEM Forms on JEE nutzt meist einen LDAP-Ordner (Lightweight Directory Access Protocol) als Quelle für Informationen über Unternehmensbenutzer und Gruppen sowie zur Durchführung der Kennwortauthentifizierung. Sie sollten sicherstellen, dass Ihr LDAP-Ordner für die Verwendung von Secure Socket Layer (SSL) konfiguriert ist und AEM Forms on JEE für den Zugriff auf den LDAP-Ordner über dessen SSL-Anschluss konfiguriert ist.
 
-#### LDAP-Dienstblockade  {#ldap-denial-of-service}
+#### LDAP-Dienstblockade {#ldap-denial-of-service}
 
 Angriffe mittels LDAP bestehen häufig darin, dass ein Angreifer die Authentifizierung bewusst mehrmals fehlschlagen lässt. Dies zwingt den LDAP-Ordnerserver dazu, einen Benutzer für alle auf LDAP basierenden Dienste zu sperren.
 
 Sie können die Anzahl fehlgeschlagener Versuche sowie die nachfolgende Sperrdauer festlegen, die AEM Forms implementiert, wenn die AEM Forms-Authentifizierung eines Benutzers wiederholt fehlschlägt. Wählen Sie in Administration Console niedrige Werte aus. Bei der Auswahl der Anzahl von Fehlversuchen ist wichtig, dass Sie sich bewusst sind, dass der Benutzer nach Durchführung aller Versuche von AEM Forms gesperrt wird, bevor dies durch den LDAP-Ordnerserver erfolgt.
 
-#### Automatische Kontosperrung festlegen  {#set-automatic-account-locking}
+#### Automatische Kontosperrung festlegen {#set-automatic-account-locking}
 
 1. Melden Sie sich bei Administration Console an.
 1. Klicken Sie auf **Einstellungen** > **User Management** > **Domänenverwaltung**.
 1. Stellen Sie unter „Einstellungen für die automatische Kontosperrung“ für **Maximale Anzahl aufeinander folgender Authentifizierungsfehler** einen niedrigen Wert, wie etwa 3 ein.
 1. Klicken Sie auf **Speichern**.
 
-### Prüfung und Protokollierung  {#auditing-and-logging}
+### Prüfung und Protokollierung {#auditing-and-logging}
 
 Der richtige und sichere Einsatz der Anwendungsprüfung und -protokollierung kann dazu beitragen, dass sicherheitsrelevante und andere, unnormale Ereignisse schnellstmöglich verfolgt und erkannt werden. Die effektive Verwendung der Prüfung und Protokollierung innerhalb einer Anwendung beinhaltet Aspekte wie das Verfolgen erfolgreicher und fehlgeschlagener Anmeldungen sowie Schlüsselereignisse der Anwendung wie das Erstellen oder Löschen von Schlüsseldatensätzen.
 
@@ -473,7 +473,7 @@ Sie können Benutzern ohne Administratorberechtigungen die Verwendung von PDF Ge
 
 Nachdem Sie AEM Forms on JEE erfolgreich installiert haben, müssen Sie die Sicherheitseinrichtungen der Umgebung unbedingt in regelmäßigen Abständen warten. In diesem Abschnitt werden die empfohlenen Aufgaben für die Sicherheitswartung des LiveCycle AEM Forms on JEE-Produktionsservers beschrieben.
 
-### Reverse-Proxys für den Webzugriff einrichten   {#setting-up-a-reverse-proxy-for-web-access}
+### Reverse-Proxys für den Webzugriff einrichten  {#setting-up-a-reverse-proxy-for-web-access}
 
 Sie können einen *Reverse-Proxy* verwenden, um sicherzustellen, dass eine Gruppe von URLs für AEM Forms on JEE-Webanwendungen sowohl für externe als auch interne Benutzer verfügbar ist. Diese Konfiguration bietet mehr Sicherheit als die Erlaubnis für Benutzer, eine direkte Verbindung zu dem Anwendungsserver herzustellen, auf dem AEM Forms on JEE ausgeführt wird. Der Reverse-Proxy führt alle HTTP-Anfragen für den Anwendungsserver durch, auf dem AEM Forms on JEE läuft. Benutzer haben nur Netzwerkzugriff auf den Reverse-Proxy und können nur URL-Verbindungen aufbauen, die der Reverse-Proxy unterstützt.
 
@@ -658,7 +658,7 @@ Einige URLs sind als Endbenutzer-orientierte Webanwendungen gekennzeichnet. Sie 
  </tbody> 
 </table>
 
-## Schutz vor Cross-Site Request Forgery-Angriffen  {#protecting-from-cross-site-request-forgery-attacks}
+## Schutz vor Cross-Site Request Forgery-Angriffen {#protecting-from-cross-site-request-forgery-attacks}
 
 Ein Cross-Site Request Forgery-Angriff (CSRF) nutzt das Vertrauen einer Website für den Benutzer, um Befehle zu übertragen, die vom Benutzer nicht autorisiert und unbeabsichtigt sind. Der Angriff wird eingerichtet, indem ein Link, ein Skript oder eine URL in eine E-Mail-Nachricht eingefügt werden, um auf eine andere Website zuzugreifen, für die der Benutzer bereits authentifiziert wurde.
 
@@ -805,7 +805,7 @@ Wenn rechtmäßige Serveranforderungen vom CSRF-Filter blockiert werden, haben S
 * Wenn der Client einen Browser verwenden kann, versuchen Sie es mit diesem Bereitstellungsmodell.
 * Als letzten Ausweg können Sie die Ressource zur Liste „Zulässige URIs“ hinzufügen. Diese Vorgehensweise wird jedoch nicht empfohlen.
 
-## Sichere Netzwerkkonfiguration  {#secure-network-configuration}
+## Sichere Netzwerkkonfiguration {#secure-network-configuration}
 
 In diesem Abschnitt finden Sie Beschreibungen der für AEM Forms on JEE erforderlichen Protokolle und Anschlüsse sowie Empfehlungen für die Bereitstellung von AEM Forms on JEE in einer sicheren Netzwerkkonfiguration.
 
@@ -887,7 +887,7 @@ Wenn Sie, wie im vorherigen Abschnitt beschrieben, eine sichere Netzwerkarchitek
  </tbody> 
 </table>
 
-### Anschlüsse für Anwendungsserver  {#ports-for-application-servers}
+### Anschlüsse für Anwendungsserver {#ports-for-application-servers}
 
 In diesem Abschnitt werden die Standardanschlüsse (und alternativen Konfigurationsbereiche) für jeden unterstützten Anwendungsservertyp beschrieben. Abhängig davon, welche Netzwerkfunktionalität Sie für Clients bereitstellen möchten, die eine Verbindung zu dem Anwendungsserver herstellen, auf dem AEM Forms on JEE ausgeführt wird, müssen diese Anschlüsse in der inneren Firewall aktiviert bzw. deaktiviert werden.
 
@@ -989,11 +989,11 @@ Informationen zum Konfigurieren der SSL-Umleitung für WebSphere oder WebLogic f
 
 Dieser Abschnitt enthält Sicherheitsempfehlungen, die für Windows spezifisch sind, wenn AEM Forms on JEE unter Windows ausgeführt wird.
 
-### JBoss-Dienstkonten  {#jboss-service-accounts}
+### JBoss-Dienstkonten {#jboss-service-accounts}
 
 Bei der AEM Forms on JEE-Turnkey-Installation wird standardmäßig unter Verwendung des Kontos „Lokales System“ ein Dienstkonto eingerichtet. Das integrierte Benutzerkonto „Lokales System“ hat hohe Zugriffsrechte; es gehört zur Gruppe „Administratoren“. Wenn eine Worker Process-ID als Benutzerkonto „Lokales System“ ausgeführt wird, hat dieser Worker Process vollen Zugriff auf das gesamte System.
 
-#### Anwendungsserver unter Verwendung eines Kontos ohne Administratorrechte ausführen  {#run-the-application-server-using-a-non-administrative-account}
+#### Anwendungsserver unter Verwendung eines Kontos ohne Administratorrechte ausführen {#run-the-application-server-using-a-non-administrative-account}
 
 1. Erstellen Sie in der Microsoft Management Console (MMC) einen lokalen Benutzer für den Formularserverdienst, der für die Anmeldung verwendet werden soll:
 
@@ -1033,7 +1033,7 @@ Benutzer, die bei UNIX-basierten Systemen nicht als Root-Benutzer angemeldet sin
 
 1. Starten Sie den Application Server-Dienst.
 
-### Dateisystemsicherheit  {#file-system-security}
+### Dateisystemsicherheit {#file-system-security}
 
 AEM Forms on JEE verwendet das Dateisystem wie folgt:
 
@@ -1043,7 +1043,7 @@ AEM Forms on JEE verwendet das Dateisystem wie folgt:
 
 Wenn Sie überwachte Ordner verwenden, um Dokumente mit einem Formularserverdienst zu senden und zu empfangen, müssen Sie besondere Sicherheitsmaßnahmen für das Dateisystem ergreifen. Wenn ein Benutzer Inhalte in einem überwachten Ordner ablegt, werden diese Inhalte durch den überwachten Ordner offengelegt. In diesem Fall wird der tatsächliche Endbenutzer nicht vom Dienst authentifiziert. Stattdessen ist der Dienst darauf angewiesen, dass durch Zugriffssteuerungslisten und Freigabesicherheitseinstellungen auf Ordnerebene bestimmt wird, von wem der Dienst tatsächlich aufgerufen werden darf.
 
-## JBoss-spezifische Sicherheitsempfehlungen  {#jboss-specific-security-recommendations}
+## JBoss-spezifische Sicherheitsempfehlungen {#jboss-specific-security-recommendations}
 
 Dieser Abschnitt enthält Empfehlungen für die Konfiguration des Anwendungsservers, die für JBoss 7.0.6 spezifisch sind, wenn es zum Ausführen von AEM Forms on JEE verwendet wird.
 
@@ -1051,7 +1051,7 @@ Dieser Abschnitt enthält Empfehlungen für die Konfiguration des Anwendungsserv
 
 Wenn Sie AEM Forms mit der Turnkey-Installationsmethode unter JBoss installieren, ist der Zugriff auf JBoss Management Console und die JMX-Konsole bereits konfiguriert (die JMX-Überwachung ist deaktiviert). Wenn Sie einen eigenen JBoss-Anwendungsserver verwenden, stellen Sie sicher, dass JBoss Management Console und die JMX-Überwachungskonsole geschützt sind. Der Zugriff auf die JMX-Überwachungskonsole wird in der JBoss-Konfigurationsdatei „jmx-invoker-service.xml“ festgelegt.
 
-### Directory Browsing deaktivieren  {#disable-directory-browsing}
+### Directory Browsing deaktivieren {#disable-directory-browsing}
 
 Nach der Anmeldung bei Administration Console können Sie die Ordnerliste der Konsole durchsuchen, indem Sie die URL ändern. Wenn Sie beispielsweise die URL in eine der folgenden URLs ändern, wird eine Liste angezeigt:
 
@@ -1064,7 +1064,7 @@ https://<servername>:8080/um/
 
 Dieser Abschnitt enthält Empfehlungen für die Anwendungsserverkonfiguration zum Schützen von WebLogic 9.1 beim Ausführen von AEM Forms on JEE.
 
-### Directory Browsing deaktivieren  {#disable_directory_browsing-1}
+### Directory Browsing deaktivieren {#disable_directory_browsing-1}
 
 Stellen Sie in der Datei „weblogic.xml“ die Eigenschaften zu „index-directories“ auf `false` ein, wie im folgenden Beispiel gezeigt:
 
@@ -1079,11 +1079,11 @@ Stellen Sie in der Datei „weblogic.xml“ die Eigenschaften zu „index-direct
 
 WebLogic aktiviert den SSL-Standardüberwachungsanschluss 7002 standardmäßig nicht. Aktivieren Sie diesen Anschluss in der WebLogic Server Administration Console, bevor Sie SSL konfigurieren.
 
-## WebSphere-spezifische Sicherheitsempfehlungen  {#websphere-specific-security-recommendations}
+## WebSphere-spezifische Sicherheitsempfehlungen {#websphere-specific-security-recommendations}
 
 Dieser Abschnitt enthält Empfehlungen für die Anwendungsserverkonfiguration zum Schützen von WebSphere beim Ausführen von AEM Forms.
 
-### Directory Browsing deaktivieren  {#disable_directory_browsing-2}
+### Directory Browsing deaktivieren {#disable_directory_browsing-2}
 
 Legen Sie die Eigenschaft `directoryBrowsingEnabled` in der Datei ibm-web-ext.xml auf `false` fest.
 
