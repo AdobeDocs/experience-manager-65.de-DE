@@ -2,13 +2,13 @@
 title: Wie erstelle ich Adaptive Forms mithilfe des XML-Schemas?
 description: Erfahren Sie, wie Sie das XML-Schema als Formularmodell in einem adaptiven Formular verwenden. Sie können vorhandene XSD-Vorlagen anwenden, um adaptive Formulare zu erstellen und Schemaelemente aus XSD auf Ihr adaptives Formular zu ziehen und abzulegen. Nehmen Sie ein Beispiel eines XML-Schemas genauer vor, fügen Sie mithilfe des XML-Schemas spezielle Eigenschaften zu Feldern hinzu und beschränken Sie die zulässigen Werte für eine adaptive Formularkomponente.
 feature: Adaptive Formulare
-role: Business Practitioner, Developer
+role: User, Developer
 level: Beginner, Intermediate
 exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1075'
-ht-degree: 85%
+ht-degree: 87%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 85%
 
 ## Voraussetzungen {#prerequisites}
 
-Für das Authoring eines adaptiven Formulars mit einem XML-Schema als Formularmodell sind grundlegende Kenntnisse zu XML-Schemata erforderlich. Außerdem wird empfohlen, den folgenden Inhalt vor diesem Artikel durchzulesen.
+Für das Authoring eines adaptiven Formulars mit einem XML-Schema als Formularmodell sind grundlegende Kenntnisse zu XML-Schemata erforderlich. Außerdem wird empfohlen, folgenden Inhalt vor diesem Artikel durchzulesen.
 
 * [Erstellen eines adaptiven Formulars](creating-adaptive-form.md)
 * [XML-Schema](https://www.w3.org/TR/xmlschema-2/)
@@ -71,7 +71,7 @@ Diese Zuordnung von XML-Elementen zu Komponenten adaptiver Formulare sieht wie f
   </tr>
   <tr>
    <td>Jedes Element mit komplexem Typ</td>
-   <td>Fenster</td>
+   <td>Bedienfeld</td>
   </tr>
  </tbody>
 </table>
@@ -124,7 +124,7 @@ Im Folgenden finden Sie ein Beispiel eines XML-Schemas.
 >
 >Stellen Sie sicher, dass das XML-Schema nur ein Stammelement hat. Ein XML-Schema mit mehreren Stammelementen wird nicht unterstützt.
 
-## Hinzufügen von speziellen Eigenschaften zu Feldern mit dem XML-Schema {#adding-special-properties-to-fields-using-xml-schema}
+## Hinzufügen spezieller Eigenschaften zu Feldern mithilfe eines XML-Schemas {#adding-special-properties-to-fields-using-xml-schema}
 
 Sie können die folgenden Attribute zu XML-Schemaelementen hinzufügen, um spezielle Eigenschaften zu den Feldern des zugehörigen adaptiven Formulars hinzuzufügen.
 
@@ -137,7 +137,7 @@ Sie können die folgenden Attribute zu XML-Schemaelementen hinzufügen, um spezi
   </tr>
   <tr>
    <td><code>use=required </code></td>
-   <td>Markiert ein Pflichtfeld<br /> </td>
+   <td>Markiert ein Feld als Pflichtfeld<br /> </td>
    <td>Attribut</td>
   </tr>
   <tr>
@@ -239,7 +239,7 @@ Sie können die folgenden Einschränkungen zu XML-Schemaelementen hinzufügen, u
   <tr>
    <td><p><code>minLength</code></p> </td>
    <td><p>Zeichenfolge</p> </td>
-   <td><p>Legt die zulässige Mindestanzahl von Zeichen in einer Komponente fest. Die minimale Länge muss größer oder gleich Null sein.</p> </td>
+   <td><p>Legt die zulässige Mindestanzahl von Zeichen in einer Komponente fest. Die minimale Länge muss größer oder gleich null sein.</p> </td>
    <td>
     <ul>
      <li>Textfeld</li>
@@ -269,7 +269,7 @@ Sie können die folgenden Einschränkungen zu XML-Schemaelementen hinzufügen, u
    <td><p>Legt die zulässige Höchstzahl von Dezimalstellen in einer Komponente fest. fractionDigits muss größer oder gleich null sein.</p> </td>
    <td>
     <ul>
-     <li> Numerisches Feld mit Datentyp "float"oder "decimal"</li>
+     <li> Numerisches Feld mit Datentyp „Gleitkomma“ oder „Dezimal“.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -298,17 +298,17 @@ Das Feld bindRef</code> zeigt die Verknüpfung zwischen einem Baumstrukturelemen
 >
 >Attribute haben ein `@` -Symbol in ihrem `bindRef`Wert, um sie von Elementen zu unterscheiden. Beispiel: `/config/projectDetails/@duration`.
 
-**Warum kann ich nicht einzelne Elemente eines Teilformulars (Struktur aus einem komplexen Typ generiert) für wiederholbare Teilformulare ziehen (Wert von minOccours oder maxOccurs ist größer als 1)?**
+**Warum kann ich nicht einzelne Elemente eines Teilformulars (Struktur aus einem komplexen Typ generiert) für wiederholbare Teilformulare ziehen (Wert von „minOccurs“ oder „maxOccurs“ ist größer als 1)?**
 
-In einem wiederholbaren Teilformular müssen Sie das Teilformular &quot;Complete&quot;verwenden. Wenn Sie nur einzelne Felder möchten, verwenden Sie die gesamte Struktur und löschen Sie unerwünschte Felder.
+In einem wiederholbaren Teilformular müssen Sie das gesamte Teilformular verwenden. Wenn Sie nur einzelne Felder nutzen möchten, verwenden Sie die gesamte Struktur und löschen Sie unerwünschte Felder.
 
 **Ich habe eine lange komplexe Struktur in der Inhaltssuche. Wie kann ich ein bestimmtes Element suchen?**
 
 Es gibt zwei Optionen:
 
-* Blättern Sie durch die Baumstruktur
+* Scrollen Sie durch die Baumstruktur
 * Verwenden Sie das Suchfeld, um ein Element zu finden
 
 **Was ist bindRef?**
 
-`bindRef` ist die Verbindung zwischen einer Komponente eines adaptiven Formulars und einem Schemaelement oder -attribut. Dieses Element gibt den `XPath` vor, in dem der Wert, der von dieser Komponente oder diesem Feld erfasst wird, in der Ausgabe-XML verfügbar ist. Ein `bindRef` wird auch verwendet, wenn ein Feldwert aus vorausgefüllter XML im Voraus gefüllt wird.
+`bindRef` ist die Verbindung zwischen einer Komponente eines adaptiven Formulars und einem Schemaelement oder -attribut. Dieses Element gibt den `XPath` vor, in dem der Wert, der von dieser Komponente oder diesem Feld erfasst wird, in der Ausgabe-XML verfügbar ist. Ein `bindRef` wird auch verwendet, wenn ein Feldwert aus (vorausgefüllter) XML im Voraus gefüllt wird.
