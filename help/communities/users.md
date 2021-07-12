@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
-role: Administrator
+role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '2183'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Verwalten von Benutzern und Benutzergruppen {#managing-users-and-user-groups}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 In AEM Communities können sich Benutzer in der Veröffentlichungsumgebung selbst registrieren und ihre Profile bearbeiten. Mit den entsprechenden Berechtigungen können sie auch:
 
@@ -60,7 +60,7 @@ Wenn der Site-Name beispielsweise &quot;*engage*&quot;für eine Site mit dem Nam
 
 ## Autorenumgebung {#author-environment}
 
-### Tunnel-Dienst {#tunnel-service}
+### Tunneldienst {#tunnel-service}
 
 Wenn Sie die Autorenumgebung für [Sites erstellen](sites-console.md), [Siteeigenschaften ändern](sites-console.md#modifying-site-properties) und [Community-Mitglieder und Mitgliedergruppen verwalten](members.md), müssen Sie auf Benutzer und Benutzergruppen zugreifen, die in der Veröffentlichungsumgebung registriert sind.
 
@@ -81,7 +81,7 @@ Um in der Autorenumgebung registrierte Benutzer und Benutzergruppen zu verwalten
 | Community &lt;*Site-Name* Sitecontentmanager | Der Community-Site-Inhaltsmanager kann herkömmliche AEM erstellen, Seiten für eine Community-Site erstellen und ändern. |
 | Community-Aktivierungsmanager | Die Gruppe Community-Aktivierungsmanager besteht aus Benutzern, die für die Zuweisung zur Verwaltung der Gruppe Aktivierungsmanager einer Community-Site zur Verfügung stehen. |
 | Community &lt;*Site-Name* > SiteEnablementmanager | Die Gruppe Community-Site-Aktivierungsmanager besteht aus Benutzern, die zugewiesen wurden, um die Aktivierung einer Community-Site zu verwalten [Ressourcen](resources.md). |
-| Kein | Ein anonymer Site-Besucher kann nicht auf die Autorenumgebung zugreifen. |
+| Ohne | Ein anonymer Site-Besucher kann nicht auf die Autorenumgebung zugreifen. |
 
 ### Systemadministratoren {#system-administrators}
 
@@ -95,7 +95,7 @@ Beachten Sie unbedingt die [Sicherheits-Checkliste](../../help/sites-administeri
 
 ## Veröffentlichungsumgebung {#publish-environment}
 
-### Mitglied werden {#becoming-a-member}
+### Mitgliedschaft {#becoming-a-member}
 
 In der Veröffentlichungsumgebung kann ein Site-Besucher abhängig von den [settings](sites-console.md#user-management) der Community-Site Community-Mitglied werden:
 
@@ -120,7 +120,7 @@ In der Veröffentlichungsumgebung kann ein Site-Besucher abhängig von den [sett
 | Community &lt;*Site-Name* &lt;*Gruppenname*> Mitglieder | Ein Community-Gruppenmitglied ist ein Community-Mitglied, das entweder einer offenen Community-Gruppe beigetreten ist oder zu einer geschlossenen Community-Gruppe eingeladen wurde. Sie verfügen über die Fähigkeiten eines Mitglieds für diese Community-Gruppe innerhalb der Site. |
 | Community &lt;*Site-Name* Groupadministrators | Ein Community-Site-Gruppenadministrator ist ein vertrauenswürdiges Community-Mitglied, das zum Erstellen und Verwalten von Untergruppen (Gruppen) innerhalb einer Community-Site zugewiesen ist. Dazu gehört die Möglichkeit, kontextbezogene Moderation bereitzustellen. |
 | *Sicherheitsgruppe für berechtigte Mitglieder* | Eine manuell erstellte und gepflegte Benutzergruppe zur Einschränkung der Inhaltserstellung. Siehe [Gruppe privilegierter Mitglieder](#privileged-members-group). |
-| Kein | Ein anonymer Site-Besucher, der die Site entdeckt, kann Community-Sites anzeigen und durchsuchen, die einen anonymen Zugriff zulassen. Um an Inhalten teilnehmen und diese veröffentlichen zu können, muss sich der Benutzer selbst registrieren (falls erlaubt) und Mitglied der Community werden. |
+| Ohne | Ein anonymer Site-Besucher, der die Site entdeckt, kann Community-Sites anzeigen und durchsuchen, die einen anonymen Zugriff zulassen. Um an Inhalten teilnehmen und diese veröffentlichen zu können, muss sich der Benutzer selbst registrieren (falls erlaubt) und Mitglied der Community werden. |
 
 ### Zuweisen von Mitgliedern zu Veröffentlichungsgruppenrollen {#assigning-members-to-publish-group-roles}
 
@@ -196,7 +196,7 @@ Es gibt vier separate Konsolen, die nur in der Autorenumgebung verfügbar sind:
 | verwaltet | Benutzer in der Autoreninstanz | Benutzergruppen für Autor | Mitglieder in der Veröffentlichungsumgebung | Mitgliedergruppen in der Veröffentlichungsumgebung |
 | erfordert | Administratorberechtigung | Administratorberechtigung | Administratorberechtigungen, Tunneldienst, Benutzersynchronisierung für Veröffentlichungsfarm | Administratorberechtigungen, Tunneldienst, Benutzersynchronisierung für Veröffentlichungsfarm |
 
-### Community-Aktivierungsmanager-Rolle {#community-enablement-manager-role}
+### Rolle &quot;Community-Aktivierungsmanager&quot; {#community-enablement-manager-role}
 
 Die Möglichkeit für einen Site-Besucher, sich selbst zu registrieren, ist für eine [Aktivierungs-Community](overview.md#enablement-community) normalerweise nicht zulässig, da jedem Mitglied Kosten zugeordnet sind. Aktivierungslernende und -ressourcen werden von einem Benutzer verwaltet, dem die [Rolle](#author-group-roles) von `enablement manager` [während der Site-Erstellung](sites-console.md#enablement) auf der Autoreninstanz zugewiesen wurde (als Mitglied der Gruppe `Community <site-name> Siteenablementmanagers` hinzugefügt). `enablement manager` ist auch für [Zuweisen von Lernressourcen](resources.md) zu Community-Mitgliedern auf der Autoreninstanz verantwortlich.
 
