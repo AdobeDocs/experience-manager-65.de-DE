@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
-role: Administrator
+role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '2884'
 ht-degree: 3%
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 # Communities-Scoring und -Abzeichen {#communities-scoring-and-badges}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Die AEM Communities-Scoring- und -Badges-Funktion bietet die Möglichkeit, Community-Mitglieder zu identifizieren und zu belohnen.
 
@@ -52,7 +52,7 @@ Wenn sie an einem anderen Speicherort gespeichert sind, sollten sie für alle le
 
 Abzeichen werden in UGC dahingehend unterschieden, ob sie gemäß den Regeln zugewiesen wurden oder verdient wurden. Derzeit werden zugewiesene Abzeichen als Text und Earned Abzeichen als Bild angezeigt.
 
-### Badge-Management-Benutzeroberfläche {#badge-management-ui}
+### Benutzeroberfläche der Badge-Verwaltung {#badge-management-ui}
 
 Die Communities [Badges-Konsole](/help/communities/badges.md) bietet die Möglichkeit, benutzerdefinierte Abzeichen hinzuzufügen, die für ein Mitglied angezeigt werden können, wenn es eine bestimmte Rolle in der Community spielt (zugewiesen).
 
@@ -78,7 +78,7 @@ In der Version sind drei rollenbasierte Abzeichen enthalten:
 
    ![assigned-badges](assets/assigned-badges.png)
 
-### Zugewiesene Abzeichen {#awarded-badges}
+### Ausgezeichnete Abzeichen {#awarded-badges}
 
 Belohnungsbasierte Abzeichen werden vom Scoring-Dienst an Community-Mitglieder vergeben, basierend auf Regeln, die auf ihre Aktivität in der Community angewendet werden.
 
@@ -146,7 +146,7 @@ Wenn der Knoten vom Typ `cq:Page` (empfohlen) ist, fügen Sie mithilfe von CRXDE
 >
 >Wenn eine Scoring-Regel anscheinend keine Auswirkungen auf das Verteilen von Abzeichen hat, stellen Sie sicher, dass die Scoring-Regel nicht von der Eigenschaft scoringRules der Badging-Regel blockiert wurde. Siehe Abschnitt [Badging Rules](#badging-rules).
 
-### Badges für Komponente aktivieren {#enable-badges-for-component}
+### Aktivieren von Abzeichen für Komponenten {#enable-badges-for-component}
 
 Die Scoring- und Bading-Regeln gelten nur für Instanzen von Komponenten, die das Badging durch Bearbeiten der Komponentenkonfiguration im [Authoring-Modus](/help/communities/author-communities.md) aktiviert haben.
 
@@ -160,7 +160,7 @@ Eine boolesche Eigenschaft `allowBadges` aktiviert/deaktiviert die Anzeige von A
 >
 >Jede Komponente kann überlagert werden, um Abzeichen anhand des in Foren, Fragen und Antworten sowie Kommentaren enthaltenen HBS-Codes anzuzeigen.
 
-## Scoring Rules {#scoring-rules}
+## Scoring-Regeln {#scoring-rules}
 
 Scoring-Regeln sind die Grundlage für die Bewertung zum Zweck der Vergabe von Badges.
 
@@ -218,7 +218,7 @@ Unterregeln sind Knoten des Typs `cq:Page` mit Eigenschaften auf dem Knoten `jcr
   <tr>
    <th>Eigenschaft</th>
    <th>Typ</th>
-   <th> Wertbeschreibung</th>
+   <th> Wert Beschreibung</th>
   </tr>
   <tr>
    <td><i><code>VERB</code></i></td>
@@ -296,7 +296,7 @@ In der Version sind zwei Scoring-Regeln für die [Forumfunktion](/help/communiti
 /libs/settings/community/scoring/rules/sub-rules/member-given-Votum
 /libs/settings/community/scoring/rules/sub-rules/member-is-moderated
 
-**Hinweise:**
+**Anmerkungen:**
 
 * Die Knoten `rules` und `sub-rules` weisen den Typ cq:Page auf.
 
@@ -349,7 +349,7 @@ Die `scoringRules`-Eigenschaft einer Badging-Regel beschränkt einfach, welche S
   <tr>
    <th>Eigenschaft</th>
    <th>Typ</th>
-   <th>Wertbeschreibung</th>
+   <th>Wert Beschreibung</th>
   </tr>
   <tr>
    <td>Schwellenwerte</td>
@@ -382,7 +382,7 @@ In der Version sind zwei Badging-Regeln enthalten, die den [Foren und Kommentar-
 
 * `/libs/settings/community/badging/rules/forums-badging`
 
-**Hinweise:**
+**Anmerkungen:**
 
 * `rules` -Knoten sind vom Typ cq:Page.
 * `rules` sollte sich in einem Repository-Speicherort mit Leseberechtigung für alle befinden.
@@ -423,13 +423,13 @@ cURL -i -X POST -H *header* -u *signin* -F *operation* -F *badge* *member-profil
 
 ### Beispiele: {#examples}
 
-#### Moderatorzeichen {#assign-a-moderator-badge} zuweisen
+#### Moderatorzeichen zuweisen {#assign-a-moderator-badge}
 
 ```shell
 curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/libs/settings/community/badging/images/moderator/jcr:content/moderator.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
 ```
 
-#### Setzen Sie ein zugewiesenes Silber-Zeichen {#revoke-an-assigned-silver-badge} zurück.
+#### Verknüpftes Silber-Zeichen sperren {#revoke-an-assigned-silver-badge}
 
 ```shell
 curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:deleteBadge" -F "badgeContentPath=/libs/settings/community/badging/images/silver/jcr:content/silver.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
@@ -574,7 +574,7 @@ Wenn Scoring- und Badging-Regeln auf den Inhalt der Website angewendet wurden un
 
 Siehe die `scoringRules`-Eigenschaft von [Badging Rules](#badging-rules).
 
-### Groß-/Kleinschreibung Typo {#case-sensitive-typo}
+### Groß-/Kleinschreibung {#case-sensitive-typo}
 
 Bei den meisten Eigenschaften und Werten, insbesondere den Verben, wird zwischen Groß- und Kleinschreibung unterschieden. Verben müssen bei Verwendung in einer Scoring-Unterregel alle UPPERCASE sein.
 
@@ -595,9 +595,9 @@ Mit der Website [Erste Schritte-Tutorial](/help/communities/getting-started.md) 
    * **Typ**: `String`
    * Wählen Sie **Multi**
    * Wählen Sie **Hinzufügen**
-   * Geben Sie Folgendes ein `/libs/settings/community/badging/rules/forums-badging`
+   * Geben Sie `/libs/settings/community/badging/rules/forums-badging` ein
    * Wählen Sie nun eine der folgenden Optionen aus **+**
-   * Geben Sie Folgendes ein `/libs/settings/community/badging/rules/comments-badging`
+   * Geben Sie `/libs/settings/community/badging/rules/comments-badging` ein
    * Wählen Sie **OK** aus
 
 * Fügen Sie die Eigenschaft scoringRules hinzu:
@@ -606,9 +606,9 @@ Mit der Website [Erste Schritte-Tutorial](/help/communities/getting-started.md) 
    * **Typ**: `String`
    * Wählen Sie **Multi**
    * Wählen Sie **Hinzufügen**
-   * Geben Sie Folgendes ein `/libs/settings/community/scoring/rules/forums-scoring`
+   * Geben Sie `/libs/settings/community/scoring/rules/forums-scoring` ein
    * Wählen Sie nun eine der folgenden Optionen aus **+**
-   * Geben Sie Folgendes ein `/libs/settings/community/scoring/rules/comments-scoring`
+   * Geben Sie `/libs/settings/community/scoring/rules/comments-scoring` ein
    * Wählen Sie **OK** aus
 
 * Wählen Sie **Alle speichern** aus.
