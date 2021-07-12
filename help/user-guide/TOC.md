@@ -5,8 +5,8 @@ audience: end-user
 user-guide-title: AEM 6.5-Benutzerhandbuch
 user-guide-description: Eine Übersicht über alle wichtigen Ressourcen zum Verständnis, Installieren, Verwalten und Verwenden von AEM 6.5
 feature: Versionshinweise
-role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '62'
 ht-degree: 9%
@@ -14,7 +14,7 @@ ht-degree: 9%
 ---
 
 
-# AEM 6.5 Benutzerhandbuch {#user-guide}
+# AEM 6.5-Benutzerhandbuch {#user-guide}
 
 + [AEM 6.5 Benutzerhandbuch-Hub](home.md)
 + Benutzerhandbücher und Ressourcen{#user-guides}
