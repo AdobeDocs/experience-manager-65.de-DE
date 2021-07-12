@@ -4,20 +4,20 @@ seo-title: Installieren von Workbench
 description: Installieren Sie Workbench.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-role: Administrator
+role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '2246'
 ht-degree: 60%
 
 ---
 
-# Installation von Workbench {#install-workbench}
+# Installieren von Workbench {#install-workbench}
 
 Dieses Dokument enthält Anweisungen zum Installieren und Konfigurieren von AEM Forms Workbench. Das Installationsprogramm installiert auch Forms Designer.
 
-## Wer sollte dieses Dokument lesen? {#who-should-read-this-doc}
+## Zielgruppe dieses Dokuments {#who-should-read-this-doc}
 
 Die Informationen in diesem Dokument richten sich an Administratoren und Entwickler, die für die Installation, Konfiguration, Verwaltung oder Bereitstellung von Workbench zuständig sind. Dazu gehören auch Informationen, die erforderlich sind, um Ihr System zur Unterstützung aktualisierter AEM Forms-Prozesse zu konfigurieren. Die Informationen basieren auf der Annahme, dass jeder, der dieses Dokument liest, mit dem Microsoft® Windows®-Betriebssystem vertraut ist.
 
@@ -113,14 +113,14 @@ Die folgende Tabelle enthält eine vollständige Liste der möglicherweise auftr
   </tr>
   <tr>
    <td><p>Acrobat Pro oder Acrobat Pro Extended (mit Designer)</p> </td>
-   <td><p>Kein.<br /> 
+   <td><p>Ohne.<br /> 
 Die Workbench-Installation erkennt auf Ihrem Computer eine Instanz von Designer, die entweder mit Acrobat Pro oder Acrobat Pro Extended installiert wurde.<br />
 Verschiedene Versionen von Designer können auf demselben System nebeneinander bestehen, z. B. Designer 6.4.x für Workbench 6.4 und Designer 6.5.0.x für Workbench 6.5. Es ist nicht erforderlich, die mit Acrobat 10 Pro oder Acrobat 10 Pro Extended installierte Version von Designer zu deinstallieren.
 <br /></p> </td>
   </tr>
   <tr>
    <td><p>Designer (eigenständig)</p> </td>
-   <td><p>Kein. <br />Die Version von Designer in Workbench ist nur in englischer Sprache verfügbar. <br />Das Workbench-Installationsprogramm installiert keine neue Version von Designer. Stattdessen wird eine aktualisierte Version, zusammen mit dem Installationsprogramm von Workbench, gepatcht. Dies ermöglicht es Ihnen auch, Ihre lokalisierte Version von Designer in Workbench zu verwenden.<br /> </p> </td>
+   <td><p>Ohne. <br />Die Version von Designer in Workbench ist nur in englischer Sprache verfügbar. <br />Das Workbench-Installationsprogramm installiert keine neue Version von Designer. Stattdessen wird eine aktualisierte Version, zusammen mit dem Installationsprogramm von Workbench, gepatcht. Dies ermöglicht es Ihnen auch, Ihre lokalisierte Version von Designer in Workbench zu verwenden.<br /> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -172,7 +172,7 @@ Bevor Sie Workbench installieren, müssen Sie sicherstellen, dass Ihre Umgebung 
 1. Lesen Sie die Versionshinweise und klicken Sie auf Fertig.
 1. Jetzt sind die folgenden Elemente auf Ihrem Computer installiert:
    * **Workbench**: Um Workbench über das Menü &quot;Start&quot;auszuführen, wählen Sie Alle Programme > AEM Forms > Workbench, wenn Sie den Ordner mit der Verknüpfung dort speichern möchten. Für Informationen:   Weitere Informationen finden Sie in der Dokumentation <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Verwenden von Workbench</a> .
-   * **Designer**: Sie können von Workbench aus auf Designer zugreifen. Weitere Informationen finden Sie unter Erste Schritte in der <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Designer-Hilfe</a>.
+   * **Designer**: Sie können von Workbench aus auf Designer zugreifen. Weitere Informationen finden Sie unter Erste Schritte in der <a href="https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/using-designer.pdf">Designer-Hilfe</a>.
    * **AEM Forms SDK**: Weitere Informationen zur Verwendung des SDK finden Sie unter  <a href="http://www.adobe.com/go/learn_aemforms_programming_65">Programmieren mit AEM Forms</a>.
 
 ## Aktualisieren von Prozessen {#upgrading-processes}
@@ -212,7 +212,7 @@ Stellen Sie sicher, dass Sie die Verbindung mit HTTPS herstellen, indem Sie den 
 
 1. Öffnen Sie ein Eingabeaufforderungsfenster, navigieren Sie zu [Workbench_HOME]/workbench/jre/bin und geben Sie dann den folgenden Befehl ein:
    `keytool -import -storepass changeit -file [Workbench_HOME]\workbench\jre\lib\security\ssl_cert_for_certname.cer -keystore [Workbench_HOME]\workbench\jre\lib\security\cacerts -alias example`
-Hierbei gilt:
+Dabei gilt:
    * changeit ist das Standardkennwort zum Keystore „cacerts“.
    * certname ist das Zertifikat, das Sie in Schritt 1 ausgewählt haben.
    * example ist der Aliasname, den Sie für das Zertifikat auswählen. Dieser Wert kann geändert werden
@@ -256,11 +256,11 @@ Die folgenden bewährten Methoden stellen sicher, dass der Cache nicht endlos w�
    * Entfernen Sie die UUID oder übergeben Sie dieselbe UUID in allen dynamisch generierten Vorlagen.
    * Generieren Sie das Dokument entweder aus Vorlage-Bytes oder aus demselben Dateinamen auf der Festplatte.
 
-### Deinstallieren von Workbench  {#uninstalling-workbench}
+### Deinstallieren von Workbench {#uninstalling-workbench}
 
 Verwenden Sie die Funktion &quot;Software&quot;im Control Panel, um das Deinstallationsprogramm zu starten. Die Workbench- und Designer-Anwendungen haben unterschiedliche Deinstallationsprogramme.
 
-## Konfigurieren des AEM Forms XDC-Editors {#configuring-aem-forms-xdc-editor}
+## Konfigurieren von AEM Forms XDC Editor {#configuring-aem-forms-xdc-editor}
 
 Mit dem XDC Editor können Administratoren von Netzwerkdruckern XML Forms Architecture Device Configuration-(XDC-)Dateien erstellen und ändern. XDC-Dateien beschreiben die Eigenschaften von Druckern, wie die Druckersprache oder die Korrelation zwischen Papierformat und Position des Druckschachts.
 
