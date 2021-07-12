@@ -9,18 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
-role: Administrator
+role: Admin
 exl-id: d00a8eb2-47ce-425a-a312-f043f82912be
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 2%
 
 ---
 
-# Mitgliederbeitragsbeschränkungen {#member-contribution-limits}
+# Beitragsgrenzen der Mitgliedstaaten {#member-contribution-limits}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Die Beitragsbegrenzungsfunktion bietet die Möglichkeit, die Beiträge von Community-Mitgliedern zu beschränken, um sie vor Spam zu schützen.
 
@@ -30,7 +30,7 @@ Beitragsbeschränkungen können einzeln über die [Mitgliederkonsole](members.md
 
 Mithilfe der Mitgliederkonsole können Beitragsbeschränkungen für ein Mitglied jederzeit von einem Community-Manager proaktiv entfernt oder reaktiv entfernt werden, wenn ein Mitglied eine Nachricht an einen Community-Manager sendet, der eine solche Anfrage sendet.
 
-## AEM Communities Benutzergenerierte Inhaltsbeiträge - Konfiguration {#aem-communities-user-generated-content-contribution-limits-configuration}
+## Konfiguration benutzergenerierter Inhaltsbeiträge in AEM Communities - Einschränkungen {#aem-communities-user-generated-content-contribution-limits-configuration}
 
 Diese OSGi-Konfiguration:
 
