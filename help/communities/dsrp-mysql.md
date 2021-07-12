@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
-role: Administrator
+role: Admin
 exl-id: eafb60be-2963-4ac9-8618-50fd9bc6fe6c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 4%
@@ -36,11 +36,11 @@ In diesen Anweisungen wird beschrieben, wie Sie eine Verbindung zum MySQL-Server
    * [MySQL Workbench](https://dev.mysql.com/downloads/tools/workbench/)
 
 
-## Installieren von MySQL {#installing-mysql}
+## MySQL installieren {#installing-mysql}
 
 [](https://dev.mysql.com/downloads/mysql/) MySQL sollte heruntergeladen und entsprechend den Anweisungen für das Zielbetriebssystem installiert werden.
 
-### Tabellennamen in Kleinbuchstaben {#lower-case-table-names}
+### Tabellennamen mit Kleinbuchstaben {#lower-case-table-names}
 
 Da bei SQL nicht zwischen Groß- und Kleinschreibung unterschieden wird, müssen bei Betriebssystemen, bei denen zwischen Groß- und Kleinschreibung unterschieden wird, alle Tabellennamen in Kleinbuchstaben geschrieben werden.
 
@@ -98,7 +98,7 @@ Wenn die MySQL Workbench zum ersten Mal gestartet wird, sofern sie nicht bereits
 
 1. Wählen Sie `Test Connection` aus, um die Verbindung zum ausgeführten MySQL-Dienst zu überprüfen.
 
-**Hinweise**:
+**Anmerkungen**:
 
 * Der Standardanschluss ist `3306`
 * Der ausgewählte Verbindungsname wird als Datenquellenname in [JDBC OSGi-Konfiguration](#configurejdbcconnections) angegeben.
@@ -133,13 +133,13 @@ Eine Methode zum Herunterladen des Schemas ist:
 
 * Klicken Sie auf den Ansichtslink, um die Daten in einer lokalen Datei zu speichern.
 
-### Erstellen der DSRP-Datenbank {#create-the-dsrp-database}
+### DSRP-Datenbank erstellen {#create-the-dsrp-database}
 
 Gehen Sie wie folgt vor, um die Datenbank zu installieren. Der Standardname der Datenbank ist `communities`.
 
 Wenn der Datenbankname im Skript geändert wird, müssen Sie ihn auch in der [JDBC-Konfiguration](#configurejdbcconnections) ändern.
 
-#### Schritt 1: Öffnen Sie die SQL-Datei {#step-open-sql-file}
+#### Schritt 1: SQL-Datei öffnen {#step-open-sql-file}
 
 In der MySQL Workbench
 
@@ -148,7 +148,7 @@ In der MySQL Workbench
 
 ![select-sql-script](assets/select-sql-script.png)
 
-#### Schritt 2: SQL Script ausführen {#step-execute-sql-script}
+#### Schritt 2: SQL-Skript ausführen {#step-execute-sql-script}
 
 Wählen Sie im Workbench-Fenster für die in Schritt 1 geöffnete Datei `lightening (flash) icon` aus, um das Skript auszuführen.
 
