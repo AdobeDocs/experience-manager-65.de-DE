@@ -10,9 +10,9 @@ topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 73e8ccc6-f857-493e-b6e3-878f93e2a356
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: bb16017c-a1bf-40d8-a78d-827c05b7ee2e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 64%
@@ -21,9 +21,9 @@ ht-degree: 64%
 
 # Kompatibilitätspaket{#compatibility-package}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
-Interaktive Kommunikation ist der standardmäßige und empfohlene Ansatz zur Erstellung von Kundenkommunikation in AEM Forms 6.5. Um weiterhin Briefe in AEM Forms 6.5 zu verwenden, müssen Sie das neueste [AEMFD-Kompatibilitätspaket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) installieren.
+Interaktive Kommunikation ist der standardmäßige und empfohlene Ansatz zur Erstellung von Kundenkommunikation in AEM Forms 6.5. Um weiterhin Briefe in AEM Forms 6.5 zu verwenden, müssen Sie das neueste [AEMFD-Kompatibilitätspaket](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) installieren.
 
 Mit dem AEMFD-Kompatibilitätspaket können Sie auch [die folgenden Assets aus AEM Forms 6.4, 6.3 und 6.2 auf AEM Forms 6.5 verwenden:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
 
@@ -34,7 +34,7 @@ Mit dem AEMFD-Kompatibilitätspaket können Sie auch [die folgenden Assets aus A
 
 Weitere Informationen finden Sie unter [Assets, die mit AEM Forms 6.5 kompatibel sind, indem Sie das Kompatibilitätspaket](../../forms/using/compatibility-package.md#assetsmadecompatible) installieren.
 
-## Unterstützung für AEM Forms 6.4, 6.3 und 6.2 Assets in AEM Forms 6.5 {#add-support-for-aem-forms-and-assets-in-aem-forms} hinzufügen
+## Unterstützung für AEM Forms 6.4, 6.3 und 6.2 Assets in AEM Forms 6.5 hinzugefügt {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
 Gehen Sie nach der Aktualisierung wie folgt vor, um das AEM-Kompatibilitätspaket zu installieren und Ihre Assets mit Version 6.5 kompatibel zu machen:
 
