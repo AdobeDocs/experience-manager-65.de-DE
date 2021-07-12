@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
-role: Administrator
+role: Admin
 exl-id: 562f8a22-cbab-4915-bc0d-da9bea7d18fa
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 94%
@@ -44,7 +44,7 @@ Obwohl die Eigenschaften selbsterklärend sind, werden im Folgenden die wichtigs
 * **Kennwort** – gibt das Kennwort an.
 * **Dienstname** – gibt die Dienste an, die mit den Benutzeranmeldedaten aus den Feldern für Benutzernamen und Kennwort gestartet werden. Standardmäßig werden beim Starten von LiveCycle-Diensten keine Benutzerinformationen weitergegeben.
 
-## Starten von Document Services  {#starting-document-services}
+## Starten von Document Services {#starting-document-services}
 
 Clientanwendungen können LiveCycle-Dienste programmgesteuert über eine Java API, Webdienste, Remoting und REST starten. Bei Java-Clients kann die Anwendung LiveCycle SDK verwenden. Das LiveCycle SDK stellt eine Java-API für den ferngesteuerten Start dieser Dienste zur Verfügung. Um beispielsweise ein Microsoft Word-Dokument in ein PDF-Dokument zu konvertieren, startet der Client GeneratePDFService. Der Aufruf wird mittels folgender Schritte ausgeführt:
 
@@ -58,7 +58,7 @@ AEM LiveCycle Connector vereinfacht den Ablauf, indem diese Client-Instanzen als
 * Weitergabe von Benutzerinformationen: Die erforderlichen Verbindungsdetails für die Verbindung mit dem LiveCycle-Server werden an einem zentralen Speicherort verwaltet.
 * ServiceClientFactory-Dienst: Zum Starten der Prozesse kann die Client-Anwendung auf die ServiceClientFactory-Instanz zugreifen.
 
-### Starten über Service References aus der OSGi Service Registry  {#starting-via-service-references-from-osgi-service-registry}
+### Starten über Service References aus der OSGi Service Registry {#starting-via-service-references-from-osgi-service-registry}
 
 Um einen angezeigten Dienst aus AEM zu starten, führen Sie folgende Schritte aus:
 
@@ -192,7 +192,7 @@ List<Component> components = runAsManager.doPrivileged(new PrivilegedAction<List
 },credential);
 ```
 
-### InvocationRequest-Eigenschaft  {#invocationrequest-property}
+### InvocationRequest-Eigenschaft {#invocationrequest-property}
 
 Wenn Sie einen Prozess aufrufen oder die ServiceClientFactory-Klasse direkt verwenden und eine InvocationRequest erstellen, können Sie eine Eigenschaft festlegen, um anzugeben, dass die Aufrufebene konfigurierte Benutzerdaten verwenden soll.
 
