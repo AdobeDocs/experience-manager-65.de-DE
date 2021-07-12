@@ -10,12 +10,12 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 feature: Brand Portal
-role: Administrator
+role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '2086'
-ht-degree: 64%
+ht-degree: 65%
 
 ---
 
@@ -80,7 +80,7 @@ Detaillierte Anweisungen finden Sie unter
 
 **Wenden Sie sich an** Support , wenn Sie das neueste AEM oder Service Pack nicht finden können.
 
-## Erstellen der Konfiguration {#configure-new-integration-65}
+## Konfiguration erstellen {#configure-new-integration-65}
 
 Für die Konfiguration von AEM Assets mit Brand Portal sind Konfigurationen sowohl in der AEM Assets-Autoreninstanz als auch in der Adobe Developer Console erforderlich.
 
@@ -148,7 +148,7 @@ In der Adobe Developer Console werden Projekte und APIs auf Brand Portal-Mandant
 
 Führen Sie die folgenden Schritte aus, um die Anmeldedaten für das Service-Konto und die JWT-Payload zu generieren:
 
-1. Melden Sie sich bei der Adobe Developer Console mit Systemadministratorrechten für die IMS-Organisation (den Brand Portal-Mandanten) an. Die Standardeinstellung ist  [https://www.adobe.com/go/devs_console_ui_de](https://www.adobe.com/go/devs_console_ui_de).
+1. Melden Sie sich bei der Adobe Developer Console mit Systemadministratorrechten für die IMS-Organisation (den Brand Portal-Mandanten) an. Die Standardeinstellung ist   [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    >[!NOTE]
@@ -342,7 +342,7 @@ Führen Sie zur Validierung der Konfiguration folgende Schritte aus:
 Sie haben nun die folgenden Möglichkeiten:
 
 * [Veröffentlichen von Assets aus AEM Assets in Brand Portal](../assets/brand-portal-publish-assets.md)
-* [Veröffentlichen von Assets aus Brand Portal in AEM Assets](https://docs.adobe.com/content/help/de-DE/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)  - Asset-Beschaffung in Brand Portal
+* [Veröffentlichen von Assets von Brand Portal in AEM Assets](https://docs.adobe.com/content/help/de-DE/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) – Abruf von Assets in Brand Portal
 * [Veröffentlichen von Ordnern aus AEM Assets in Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Veröffentlichen von Sammlungen aus AEM Assets in Brand Portal](../assets/brand-portal-publish-collection.md)
 * [Veröffentlichen von Vorgaben, Schemata und Facetten in Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
@@ -358,7 +358,7 @@ Führen Sie die folgenden Schritte in der angegebenen Reihenfolge aus, um Ihre b
 1. [Vorhandene Konfigurationen löschen](#delete-existing-configuration)
 1. [Konfiguration erstellen](#configure-new-integration-65)
 
-### Überprüfen laufender Aufträge {#verify-jobs}
+### Ausführungsaufträge überprüfen {#verify-jobs}
 
 Stellen Sie sicher, dass in Ihrer AEM Assets-Autoreninstanz kein Veröffentlichungsauftrag ausgeführt wird, bevor Sie Änderungen vornehmen. Dazu können Sie den Status aktiver Aufträge für alle vier Replikationsagenten überprüfen und sicherstellen, dass die Warteschlangen inaktiv sind.
 
@@ -376,7 +376,7 @@ Stellen Sie sicher, dass in Ihrer AEM Assets-Autoreninstanz kein Veröffentlichu
 
    ![](assets/test-integration3.png)
 
-### Löschen vorhandener Konfigurationen {#delete-existing-configuration}
+### Vorhandene Konfigurationen löschen {#delete-existing-configuration}
 
 Sie müssen beim Löschen der vorhandenen Konfigurationen die folgende Checkliste ausführen:
 * Alle vier Replikationsagenten löschen
