@@ -2,13 +2,13 @@
 title: Wie erstelle ich Adaptive Forms mit dem JSON-Schema?
 description: Erfahren Sie, wie Sie adaptive Formulare mithilfe des JSON-Schemas als Formularmodell erstellen. Sie können vorhandene JSON-Schemata verwenden, um adaptive Formulare zu erstellen. Machen Sie sich mit einem Beispiel eines JSON-Schemas genauer vertraut, konfigurieren Sie Felder in der JSON-Schemadefinition vorab, beschränken Sie die akzeptablen Werte für eine adaptive Formularkomponente und lernen Sie nicht unterstützte Konstrukte kennen.
 feature: Adaptive Formulare
-role: Business Practitioner, Developer
+role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1450'
-ht-degree: 64%
+ht-degree: 76%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 64%
 Das Authoring eines adaptiven Formulars mit einem JSON-Schema als Formularmodell erfordert grundlegende Kenntnisse des JSON-Schemas. Es wird empfohlen, den folgenden Inhalt vor diesem Artikel durchzulesen.
 
 * [Erstellen eines adaptiven Formulars](creating-adaptive-form.md)
-* [JSON-Schema](https://json-schema.org/) 
+* [JSON-Schema](https://json-schema.org/)
 
 ## Verwenden eines JSON-Schemas als Formularmodell  {#using-a-json-schema-as-form-model}
 
-[!DNL Adobe Experience Manager Forms] unterstützt die Erstellung eines adaptiven Formulars mit einem vorhandenen JSON-Schema als Formularmodell. Dieses JSON-Schema stellt die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden. Das JSON-Schema, das Sie verwenden, sollte [v4-Spezifikationen](https://json-schema.org/draft-04/schema) entsprechen.
+[!DNL Adobe Experience Manager Forms] unterstützt die Erstellung eines adaptiven Formulars mit einem vorhandenen JSON-Schema als Formularmodell. Dieses JSON-Schema stellt die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden. Das JSON-Schema, das Sie verwenden, sollte mit den [Spezifikationen der Version 4](https://json-schema.org/draft-04/schema) konform sein.
 
-Die wichtigsten Funktionen bei der Verwendung eines JSON-Schemas sind:
+Die wichtigsten Funktionen bei Verwendung eines JSON-Schemas sind wie folgt:
 
 * Die Struktur der JSON wird als Baumstruktur in der Registerkarte für die Inhaltssuche im Authoring-Modus für ein adaptives Formular angezeigt. Sie können Elemente aus der JSON-Hierarchie in das adaptive Formular ziehen.
 * Sie können das Formular mit JSON, das mit dem zugehörigen Schema konform ist, vorausfüllen.
@@ -61,7 +61,7 @@ Diese Zuordnung von JSON-Elementen zu Komponenten adaptiver Formulare ist wie fo
    <th><strong>Komponente des adaptiven Formulars</strong></th>
   </tr>
   <tr>
-   <td><p>Zeichenfolgeneigenschaften mit Enum- und enumNames-Beschränkung.</p> <p>Syntax,</p> <p> <code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"enum" : ["M", "F"]</code></p> <p><code>"enumNames" : ["Male", "Female"]</code></p> <p><code>}</code></p> <p> </p> </td>
+   <td><p>Zeichenfolgen-Eigenschaften mit enum- und enumNames-Beschränkung.</p> <p>Syntax,</p> <p> <code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"enum" : ["M", "F"]</code></p> <p><code>"enumNames" : ["Male", "Female"]</code></p> <p><code>}</code></p> <p> </p> </td>
    <td><p>Dropdown-Komponente:</p>
     <ul>
      <li>Die in enumNames aufgeführten Werte werden im Dropdown-Feld angezeigt.</li>
@@ -85,16 +85,16 @@ Diese Zuordnung von JSON-Elementen zu Komponenten adaptiver Formulare ist wie fo
    <td>Numerisches Feld, Untertyp auf „nicht verankert“ eingestellt<br /> </td>
   </tr>
   <tr>
-   <td>Ganzzahl-Eigenschaft <br /> </td>
+   <td>Ganzzahl-Eigenschaft<br /> </td>
    <td>Numerisches Feld, Untertyp auf „Ganzzahl“ eingestellt<br /> </td>
   </tr>
   <tr>
-   <td>Boolean-Eigenschaft<br /> </td>
+   <td>Boolesche Eigenschaft<br /> </td>
    <td>Schalter<br /> </td>
   </tr>
   <tr>
    <td>Objekt-Eigenschaft<br /> </td>
-   <td>Fenster<br /> </td>
+   <td>Bedienfeld<br /> </td>
   </tr>
   <tr>
    <td>Array-Eigenschaft</td>
@@ -110,18 +110,18 @@ Bei einem adaptiven Formular werden jedem generierten Feld im JSON-Schema verfü
 * Die Eigenschaft `title` dient als Beschriftung für die Komponenten des adaptiven Formulars.
 * Die Eigenschaft `description` wird als lange Beschreibung für eine Komponente eines adaptiven Formulars festgelegt.
 * Die Eigenschaft `default` dient als Anfangswert eines adaptiven Formularfelds.
-* Die Eigenschaft `maxLength` wird als Attribut `maxlength` der Textfeldkomponente festgelegt.
-* Die Eigenschaften `minimum`, `maximum`, `exclusiveMinimum` und `exclusiveMaximum` werden für die Komponente &quot;Numerisches Feld&quot;verwendet.
-* Zur Unterstützung des Bereichs für `DatePicker component` werden zusätzliche JSON-Schema-Eigenschaften `minDate` und `maxDate` bereitgestellt.
-* Die Eigenschaften `minItems` und `maxItems` werden verwendet, um die Anzahl der Elemente/Felder zu beschränken, die einer Bedienfeldkomponente hinzugefügt oder daraus entfernt werden können.
+* Die `maxLength`-Eigenschaft wird dem `maxlength`-Attribut einer Textfeldkomponente zugewiesen.
+* Die Eigenschaften `minimum`, `maximum`, `exclusiveMinimum` und `exclusiveMaximum` werden für Komponenten vom Typ „numerisches Feld“ verwendet.
+* Um Bereiche für eine `DatePicker component`-Komponente zu unterstützen, werden die zusätzlichen JSON-Schemaeigenschaften `minDate` und `maxDate` bereitgestellt.
+* Mithilfe der Eigenschaften `minItems` und `maxItems` wird die Anzahl der Elemente/Felder eingeschränkt, die einer Bedienfeldkomponente hinzugefügt oder daraus entfernt werden können.
 * Die Eigenschaft `readOnly` legt das Attribut `readonly` einer Komponente eines adaptiven Formulars fest.
 * Die `required`-Eigenschaft markiert das Feld des adaptiven Formulars als obligatorisch, während in Bereich (wo der Typ &quot;Objekt&quot;ist) die endgültigen gesendeten JSON-Daten Felder mit leerem Wert aufweisen, die diesem Objekt entsprechen.
 * Die Eigenschaft `pattern` wird als Überprüfungsmuster (regulärer Ausdruck) im adaptiven Formular festgelegt.
-* Die Erweiterung der JSON-Schemadatei muss .schema.json beibehalten werden. Beispiel: &lt;filename>.schema.json.
+* Die Erweiterung der JSON-Schema-Datei „.schema.json“ muss beibehalten werden. Beispiel: &lt;filename>.schema.json.
 
-## JSON-Beispielschema {#sample-json-schema}
+## Beispiel für ein JSON-Schema {#sample-json-schema}
 
-Hier ist ein Beispiel für ein JSON-Schema.
+Im Folgenden finden Sie ein Beispiel für ein JSON-Schema.
 
 ```json
 {
@@ -303,7 +303,7 @@ Hier ist ein Beispiel für ein JSON-Schema.
 
 ### Wiederverwendbare Schemadefinitionen {#reusable-schema-definitions}
 
-Definitionsschlüssel kennzeichnen wiederverwendbare Schemas. Die wiederverwendbaren Schemadefinitionen werden zum Erstellen von Fragmenten verwendet. Dies geschieht ähnlich wie beim Identifizieren komplexer Typen in XSD. Ein JSON-Beispielschema mit Definitionen wird unten angezeigt:
+Definitionsschlüssel kennzeichnen wiederverwendbare Schemas. Die wiederverwendbaren Schemadefinitionen werden verwendet, um Fragmente zu erstellen. Dies geschieht ähnlich wie beim Identifizieren komplexer Typen in XSD. Ein JSON-Beispielschema mit Definitionen wird unten angezeigt:
 
 ```json
 {
@@ -354,7 +354,7 @@ Sie können die Eigenschaft **aem:afProperties** verwenden, um das JSON-Schema-F
 }
 ```
 
-## Skripten oder Ausdrücke für Formularobjekte konfigurieren {#configure-scripts-or-expressions-for-form-objects}
+## Skripten oder Ausdrücke für Formularobjekte konfigurieren  {#configure-scripts-or-expressions-for-form-objects}
 
 JavaScript ist die Ausdruckssprache für adaptive Formulare. Alle Ausdrücke sind gültige JavaScript-Ausdrücke und verwenden Skriptmodell-APIs für adaptive Formulare. Sie können Formularobjekte vorkonfigurieren, um [einen Ausdruck](adaptive-form-expressions.md) für ein Formularereignis auszuwerten.
 
@@ -568,7 +568,7 @@ Sie sollten Mitglied der [forms-power-user group](forms-groups-privileges-tasks.
    <td> </td>
   </tr>
   <tr>
-   <td>Fenster</td>
+   <td>Bereich</td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
@@ -598,7 +598,7 @@ Hier finden Sie den JSON-Beispielcode für die zuvor erwähnten Beispiele.
 }
 ```
 
-#### Wert eines anderen Felds für Wert-Commit-Ereignis {#configure-value-of-another-field-on-value-commit-event} konfigurieren
+#### Wert eines anderen Felds beim Ereignis zum Bestätigen von Werten konfigurieren {#configure-value-of-another-field-on-value-commit-event}
 
 ```json
 "Income": {
@@ -681,7 +681,7 @@ Sie können die folgenden Einschränkungen zu JSON-Schemaelementen hinzufügen, 
   <tr>
    <td><p><code>minLength</code></p> </td>
    <td><p>Zeichenfolge</p> </td>
-   <td><p>Legt die zulässige Mindestanzahl von Zeichen in einer Komponente fest. Die minimale Länge muss größer oder gleich Null sein.</p> </td>
+   <td><p>Legt die zulässige Mindestanzahl von Zeichen in einer Komponente fest. Die minimale Länge muss größer oder gleich null sein.</p> </td>
    <td>
     <ul>
      <li>Textfeld</li>
@@ -690,7 +690,7 @@ Sie können die folgenden Einschränkungen zu JSON-Schemaelementen hinzufügen, 
   <tr>
    <td><code>maxLength</code></td>
    <td>Zeichenfolge</td>
-   <td>Legt die zulässige Höchstzahl von Zeichen in einer Komponente fest. Die maximale Länge muss größer oder gleich Null sein.</td>
+   <td>Legt die zulässige Höchstzahl von Zeichen in einer Komponente fest. Die maximale Länge muss größer oder gleich null sein.</td>
    <td>
     <ul>
      <li>Textfeld</li>
@@ -708,19 +708,19 @@ Sie können die folgenden Einschränkungen zu JSON-Schemaelementen hinzufügen, 
   <tr>
    <td><code>maxItems</code></td>
    <td>Zeichenfolge</td>
-   <td>Gibt die maximale Anzahl von Elementen in einem Array an. Die maximale Anzahl von Elementen muss größer oder gleich Null sein.</td>
+   <td>Gibt die maximale Anzahl von Elementen in einem Array an. Die maximale Anzahl von Elementen muss größer oder gleich null sein.</td>
    <td> </td>
   </tr>
   <tr>
    <td><code>minItems</code></td>
    <td>Zeichenfolge</td>
-   <td>Gibt die Mindestanzahl von Elementen in einem Array an. Die Mindestanzahl von Elementen muss größer oder gleich Null sein.</td>
+   <td>Gibt die Mindestanzahl von Elementen in einem Array an. Die Mindestanzahl von Elementen muss größer oder gleich null sein.</td>
    <td> </td>
   </tr>
  </tbody>
 </table>
 
-## Nicht unterstützte Konstrukte  {#non-supported-constructs}
+## Nicht unterstützte Konstrukte   {#non-supported-constructs}
 
 Adaptive Formulare unterstützen die folgenden JSON-Schema-Konstrukte nicht:
 
@@ -731,17 +731,17 @@ Adaptive Formulare unterstützen die folgenden JSON-Schema-Konstrukte nicht:
 
 ## Häufig gestellte Fragen {#frequently-asked-questions}
 
-**Warum kann ich nicht einzelne Elemente eines Teilformulars (Struktur aus einem komplexen Typ generiert) für wiederholbare Teilformulare ziehen (Wert von minOccours oder maxOccurs ist größer als 1)?**
+**Warum kann ich nicht einzelne Elemente eines Teilformulars (Struktur aus einem komplexen Typ generiert) für wiederholbare Teilformulare ziehen (Wert von „minOccurs“ oder „maxOccurs“ ist größer als 1)?**
 
-In einem wiederholbaren Teilformular müssen Sie das gesamte Teilformular verwenden. Wenn Sie nur einzelne Felder möchten, verwenden Sie die gesamte Struktur und löschen Sie unerwünschte Felder.
+In einem wiederholbaren Teilformular müssen Sie das gesamte Teilformular verwenden. Wenn Sie nur einzelne Felder nutzen möchten, verwenden Sie die gesamte Struktur und löschen Sie unerwünschte Felder.
 
 **Ich habe eine lange komplexe Struktur in der Inhaltssuche. Wie kann ich ein bestimmtes Element suchen?**
 
 Es gibt zwei Optionen:
 
-* Blättern Sie durch die Baumstruktur
+* Scrollen Sie durch die Baumstruktur
 * Verwenden Sie das Suchfeld, um ein Element zu finden
 
-**Was sollte die Erweiterung der JSON-Schemadatei sein?**
+**Welche Erweiterung sollte die JSON-Schema-Datei aufweisen?**
 
-Die Erweiterung der JSON-Schemadatei muss .schema.json lauten. Beispiel: &lt;filename>.schema.json.
+Für eine JSON-Schema-Datei muss immer die Erweiterung .schema.json verwendet werden. Beispiel: &lt;filename>.schema.json.
