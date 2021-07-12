@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
-role: Administrator
+role: Admin
 exl-id: ac54f06e-1545-44bb-9f8f-970f161ebb72
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1117'
 ht-degree: 2%
@@ -32,7 +32,7 @@ Beispiel:
 * Das Mitglied aus Frankreich verwendet die Übersetzungsfunktion, um den japanischen Kommentar ins Französische zu übersetzen.
 * Globale Kommunikation.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 In diesem Abschnitt der Dokumentation wird insbesondere erläutert, wie der Übersetzungsdienst mit UGC arbeitet, während er eine Vorstellung davon erhält, wie er AEM mit einem [Übersetzungsdienstleister](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider) verbindet und diesen Dienst in eine Website integriert, indem ein [Framework für die Übersetzungsintegration](../../help/sites-administering/tc-tic.md) konfiguriert wird.
 
@@ -90,7 +90,7 @@ So erstellen Sie eine neue Übersetzungsintegration, die einen Connector für Ü
 
 * Klicken Sie auf das Symbol `[+]` neben **[!UICONTROL Verfügbare Konfigurationen]**, um eine neue Konfiguration zu erstellen.
 
-#### Dialogfeld &quot;Konfiguration erstellen&quot;{#create-configuration-dialog}
+#### Dialogfeld &quot;Konfiguration erstellen&quot; {#create-configuration-dialog}
 
 ![create-configuration](assets/translation-integration2.png)
 
@@ -149,7 +149,7 @@ Der neue Cloud-Service für die Übersetzungsintegration muss für die Veröffen
 
 ### Benutzerpräferenz {#user-preference}
 
-#### Anwenderprofil {#user-profile}
+#### Benutzerprofil {#user-profile}
 
 Alle Communities-Sites bieten ein Benutzerprofil, das angemeldete Mitglieder bearbeiten können, um sich für die Community zu identifizieren und ihre Voreinstellungen festzulegen.
 
