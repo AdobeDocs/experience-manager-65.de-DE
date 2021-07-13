@@ -10,12 +10,12 @@ topic-tags: designer
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f3a5b5ce-2262-4d5d-a8ae-d59a3a4229e7
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '213'
-ht-degree: 83%
+ht-degree: 84%
 
 ---
 
@@ -37,7 +37,7 @@ Designer ist als eigenständiges Installationsprogramm sowie als Teil von WorkBe
 
 1. Starten Sie das Designer-Installationsprogramm, indem Sie auf setup.exe doppelklicken.
 1. Fahren Sie fort und geben Sie Ihre Details und die Seriennummer im Bildschirm „Anpassung“ ein.
-1. Wenn Sie die Lizenzvereinbarung akzeptieren, klicken Sie auf „Weiter“, um fortzufahren.
+1. Wenn Sie die Lizenzvereinbarung akzeptieren, klicken Sie auf Weiter, um fortzufahren.
 1. (Optional) Ändern Sie den Standardinstallationspfad, wenn Sie Designer an einem anderen Speicherort installieren möchten. Klicken Sie auf Weiter.
-1. Klicken Sie auf „Zurück“, um gegebenenfalls die Voreinstellungen zu ändern. Um Designer zu installieren, klicken Sie auf „Installieren“.
-1. Klicken Sie auf „Fertig stellen“, wenn die Installation abgeschlossen ist.
+1. Klicken Sie auf Zurück, um gegebenenfalls die Voreinstellungen zu ändern. Um Designer zu installieren, klicken Sie auf Installieren.
+1. Klicken Sie auf Fertig stellen, wenn die Installation abgeschlossen ist.
