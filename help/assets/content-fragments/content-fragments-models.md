@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 9da10294-2dc8-4e82-8d32-f034e6a5aeeb
 docset: aem65
 feature: Inhaltsfragmente
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 76f3a684-027d-4822-9eb4-220fc96956e3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 98%
@@ -34,7 +34,7 @@ Gehen Sie wie folgt vor, um Inhaltsfragmentmodelle zu aktivieren:
 * Aktivieren Sie die Verwendung von Inhaltsfragmentmodellen im [Konfigurationsbrowser](/help/sites-administering/configurations.md)
 * Wenden Sie die Konfiguration auf Ihren Assets-Ordner an.
 
-### Aktivieren Sie Inhaltsfragmentmodelle in Configuration Manager    {#enable-content-fragment-models-in-configuration-manager}
+### Aktivieren Sie Inhaltsfragmentmodelle in Configuration Manager   {#enable-content-fragment-models-in-configuration-manager}
 
 Um [ein neues Inhaltsfragmentmodell zu erstellen](#creating-a-content-fragment-model), **müssen** Sie Inhaltsfragmentmodelle zunächst über Configuration Manager aktivieren:
 
@@ -77,7 +77,7 @@ Um eine andere Konfiguration (d. h. nicht „Global“) mit einem vergleichbare
 
 1. Speichern Sie das leere Modell über **Erstellen**. Eine Benachrichtigung zeigt an, dass der Vorgang erfolgreich abgeschlossen wurde. Daraufhin können Sie das Modell über die Option **Öffnen** direkt bearbeiten oder über **Fertig** zur Konsole zurückkehren.
 
-## Definieren des Inhaltsfragmentmodells   {#defining-your-content-fragment-model}
+## Definieren des Inhaltsfragmentmodells  {#defining-your-content-fragment-model}
 
 Das Inhaltsfragmentmodell definiert effektiv die Struktur des daraus entstehenden Inhaltsmodells. Mit dem Modell-Editor können Sie die erforderlichen Felder hinzufügen und konfigurieren:
 
@@ -147,7 +147,7 @@ So löschen Sie ein Inhaltsfragmentmodell:
    >[!NOTE]
    Wenn es Verweise auf das Modell gibt, wird Ihnen ein Warnhinweis angezeigt. Ergreifen Sie die entsprechenden Maßnahmen.
 
-## Veröffentlichen eines Inhaltsfragmentmodells   {#publishing-a-content-fragment-model}
+## Veröffentlichen eines Inhaltsfragmentmodells  {#publishing-a-content-fragment-model}
 
 Inhaltsfragmentmodelle müssen zeitgleich mit oder im Vorfeld der Veröffentlichung abhängiger Inhaltsfragmente veröffentlicht werden.
 
