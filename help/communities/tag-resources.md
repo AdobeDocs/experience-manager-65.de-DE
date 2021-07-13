@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
-role: Administrator
+role: Admin
 exl-id: ce58c8e9-8b4a-43fb-a108-ed2ac40268c7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Tagging von Aktivierungsressourcen {#tagging-enablement-resources}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Das Tagging von Aktivierungsressourcen ermöglicht das Filtern von Ressourcen und Lernpfaden beim Durchsuchen von [Katalogen](functions.md#catalog-function) durch Mitglieder.
 
@@ -64,7 +64,7 @@ Im Folgenden sehen Sie, wie es in CRXDE angezeigt wird, wenn ein Administrator L
 
 ![site-tags](assets/site-tags.png)
 
-## Namensräume für Catalog-Tags {#catalog-tag-namespaces}
+## Namensräume für Katalog-Tags {#catalog-tag-namespaces}
 
 Die Katalogfunktion verwendet Tags, um sich selbst zu definieren. Beim Konfigurieren der Katalogfunktion auf einer Community-Site werden die Tag-Namespaces, aus denen Sie auswählen können, durch den Umfang der Tag-Namespaces definiert, die für die Community-Site festgelegt sind.
 
@@ -93,7 +93,7 @@ wird in `Ski Catalog` angezeigt, nachdem die Aktivierungsressource veröffentlic
 
 ![basic-info](assets/applytags-basicinfo.png)
 
-## Anzeigen des Katalogs auf der Veröffentlichungsinstanz {#viewing-catalog-on-publish}
+## Anzeigen des Katalogs in der Veröffentlichungsinstanz {#viewing-catalog-on-publish}
 
 Sobald alles in der Autorenumgebung eingerichtet und veröffentlicht wurde, kann die Erfahrung mit der Verwendung des Katalogs zur Suche nach Aktivierungsressourcen in der Veröffentlichungsumgebung auftreten.
 
