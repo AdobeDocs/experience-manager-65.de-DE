@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: fde053ff-b671-456b-869c-81f16ea1f1be
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 8%
@@ -21,7 +21,7 @@ ht-degree: 8%
 
 # Berichte-Konsole {#reports-console}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Für AEM Communities gibt es verschiedene Berichte, auf die über die Autorenumgebung auf verschiedene Weise zugegriffen werden kann.
 
@@ -178,11 +178,11 @@ Wählen Sie **[!UICONTROL Generate]** aus, um den Bericht zu erstellen.
 
 ## Fehlerbehebung {#troubleshooting}
 
-### Keine Community-Sites aufgelistet {#no-community-sites-listed}
+### Keine Community-Sites aufgeführt {#no-community-sites-listed}
 
 Wenn keine Community-Sites aufgelistet sind, stellen Sie sicher, dass Adobe Analytics für eine Site aktiviert wurde. Stellen Sie bei der Auswahl von Berichten zu Zuweisungen sicher, dass sich die Zuweisungsfunktion in der Struktur der Community-Site befindet.
 
-### Berichte werden in der AEM-Autoreninstanz nicht angezeigt {#reports-do-not-show-in-aem-author-instance}
+### Berichte werden nicht in der AEM-Autoreninstanz angezeigt {#reports-do-not-show-in-aem-author-instance}
 
 Wenn Berichte nicht in der AEM-Autoreninstanz angezeigt werden, suchen Sie nach den Anpassungen, z. B. nach der URL-Zuordnung in der Veröffentlichungsinstanz. Wenn die URL-Zuordnung nur auf der AEM-Veröffentlichungsinstanz der Communities-Site erfolgt, stellen Sie sicher, dass dasselbe in der AEM-Autoreninstanz in der Konfiguration **Site Trend Report Social Component Factory** konfiguriert wurde.
 
