@@ -6,9 +6,9 @@ uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
-role: Administrator
+role: Admin
 exl-id: a0c6a02c-47a3-4e70-a14c-953ee016b8e4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 89%
@@ -36,7 +36,7 @@ Abhängig von der für Ihre AEM-Bereitstellung konfigurierten Datenspeicherpersi
   <tr>
    <td><p><strong>Persistenztyp</strong></p> </td>
    <td><p><strong>Datenspeicher</strong></p> </td>
-   <td><p><strong>Standort</strong></p> </td>
+   <td><p><strong>Speicherort</strong></p> </td>
   </tr>
   <tr>
    <td><p>Default</p> </td>
@@ -59,7 +59,7 @@ Im oben angegebenen AEM-Repository-Speicherort:
 
 Unter dem Knoten [letter-instance-name] wird die folgende Knotenstruktur erstellt und die Daten für jede Briefinstanz werden im AEM Repository gespeichert:
 
-| Node | Beschreibung |
+| Knoten | Beschreibung |
 |---|---|
 | `extendedProperties` | Speichert Metadateneigenschaften der Briefinstanz. |
 | `dataXML` | Speichert eine herunterladbare dataXML-Datei, die die Korrespondenzdaten im Binärformat enthält. |
@@ -76,7 +76,7 @@ Die Korrespondenzverwaltung stellt APIs bereit, mit denen Sie Entwürfe und übe
 
 Alternativ können Sie mithilfe von CRX DELite zur Briefinstanz im AEM-Repository navigieren. Weitere Informationen über gespeicherte Daten und den Repository-Speicherort finden Sie unter [Benutzerdaten und Datenspeicher](/help/forms/using/correspondence-management-handling-user-data.md#data).
 
-### Benutzerdaten löschen  {#delete-user-data}
+### Benutzerdaten löschen {#delete-user-data}
 
 Um eine Briefinstanz zu finden, die die Daten eines bestimmten Benutzers enthält, können Sie Folgendes tun:
 
