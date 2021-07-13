@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 7ecc1bcf-38a9-4a59-8dd3-79cb90dec33d
 docset: aem65
 feature: Inhaltsfragmente
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: b204df18-2aef-4905-82f8-c777928ba828
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 99%
 
 ---
 
-# Arbeiten mit Inhaltsfragmenten {#working-with-content-fragments}
+# Arbeiten mit Inhaltsfragmenten{#working-with-content-fragments}
 
 Inhaltsfragmente in Adobe Experience Manager (AEM) ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und [Verwenden von seitenunabhängigen Inhalten](/help/sites-authoring/content-fragments.md). Außerdem können Sie Inhalte zur Verwendung an mehreren Orten/über mehrere Kanäle hinweg vorbereiten.
 
@@ -65,7 +65,7 @@ Mit den AEM Content Services können die Beschreibung und Bereitstellung von I
 
 Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditionellen AEM-Web-Seiten sind, und nutzen standardisierte Methoden, die von allen Clients genutzt werden können. Diese Kanäle können Folgendes sein:
 
-* Single Page Applications
+* Einzelseiten-Web-Anwendungen (SPA)
 * native Mobile Apps
 * weitere AEM-externe Kanäle und Touchpoints
 
@@ -286,11 +286,11 @@ Zum Erstellen, Bearbeiten und Verwenden von Inhaltsfragmenten ist zudem Folgende
    * Fragmente benötigen eine oder mehrere dedizierte Komponenten zur Definition des Layouts sowie zur Bereitstellung einiger oder aller Elemente/Varianten und zugehörigen Inhalte.
    * Durch Ziehen eines Fragments auf eine Seite während der Bearbeitung wird die erforderliche Komponente automatisch zugewiesen.
 
-## Anwendungsbeispiel   {#example-usage}
+## Anwendungsbeispiel    {#example-usage}
 
 Ein Fragment samt seinen Elementen und Varianten kann zur Erstellung von kohärentem Inhalt für verschiedene Kanäle verwendet werden. Beim Entwurf eines Fragments muss berücksichtigt werden, welche Elemente wo verwendet werden.
 
-### We.Retail-Beispiel {#we-retail-sample}
+### We.Retail-Beispiel  {#we-retail-sample}
 
 Ein Beispielfragment ist hier zu sehen: 
 
