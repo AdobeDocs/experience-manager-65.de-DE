@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: 6430ed96-5d96-41b6-866f-90b34ff84f7a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 1%
@@ -42,7 +42,7 @@ Der Verbraucher- und der geheime Schlüssel werden für alle Report Suites eines
 
 ## Konfiguration {#configuration}
 
-### Wählen Sie ASRP {#select-asrp}
+### ASRP auswählen {#select-asrp}
 
 Die [Speicherkonfigurationskonsole](/help/communities/srp-config.md) ermöglicht die Auswahl der standardmäßigen Speicherkonfiguration, die angibt, welche SRP-Implementierung verwendet werden soll.
 
@@ -73,7 +73,7 @@ Testen Sie nach dem Senden der Konfiguration die Verbindung:
 
 * Stellen Sie sicher, dass die Site-URLs für Profildaten vom Data Center routbar sind, indem Sie [Links externalisieren](#externalize-links).
 
-### Replizieren Sie den Crypto-Schlüssel {#replicate-the-crypto-key}
+### Replizieren des Crypto-Schlüssels {#replicate-the-crypto-key}
 
 Der Consumer Key und der Secret Key sind verschlüsselt. Damit die Schlüssel ordnungsgemäß verschlüsselt/entschlüsselt werden können, muss der primäre Granite-Crypto-Schlüssel auf allen AEM Instanzen gleich sein.
 
@@ -132,7 +132,7 @@ Wenn Authentifizierungsfehler für die Data Center-URL empfangen und die AEM err
 
 Verwenden Sie ein Tool wie das [Network Time Protocol (NTP)](https://www.ntp.org/), um alle AEM Autoren- und Veröffentlichungsserver zeitlich zu synchronisieren.
 
-### Neue Inhalte werden nicht in Suchvorgängen {#new-content-does-not-appear-in-searches} angezeigt
+### Neue Inhalte werden nicht in Suchvorgängen angezeigt {#new-content-does-not-appear-in-searches}
 
 Die Adobe Cloud-Speicherinfrastruktur verwendet *letztendlich Konsistenz*, um Skalierungs- und Leistungsziele zu erreichen. Aus diesem Grund sind neue Inhalte nicht sofort verfügbar und es dauert mehrere Sekunden, bis sie in den Suchergebnissen angezeigt werden.
 
