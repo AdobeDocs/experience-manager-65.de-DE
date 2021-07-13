@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '2110'
 ht-degree: 4%
@@ -40,7 +40,7 @@ Die Moderationskonsole unterstützt:
 
 Moderationsaufgaben können nur ausgeführt werden, wenn sie als Administrator oder Mitglied mit ` [moderator permissions](/help/communities/in-context.md#identifyingtrustedmembers)` angemeldet sind.
 
-## Zugriff auf die Veröffentlichungsumgebung {#publish-environment-access}
+## Zugriff auf Veröffentlichungsumgebung {#publish-environment-access}
 
 Der Zugriff auf die Moderationskonsole von einer veröffentlichten Community-Site aus erfolgt über einen Link &quot;Administration&quot;, der angezeigt wird, wenn ein Community-Moderator angemeldet ist.
 
@@ -174,7 +174,7 @@ Der Content-Typ beschränkt die angezeigte referenzierte benutzergenerierte Inha
 
 ![content-types](assets/content-types.png)
 
-#### Zusätzliche Content-Typen {#additional-content-types}
+#### Weitere Content-Typen {#additional-content-types}
 
 So fügen Sie zusätzliche Ressourcen zum Filtern hinzu:
 
