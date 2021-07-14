@@ -10,10 +10,10 @@ topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 feature: Mobile Forms
 exl-id: 68912260-179a-4d1b-b944-0a1777c021ac
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6e2a0f053a1f6989524e9ae2b1dcb001b0397ac6
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 63%
+source-wordcount: '353'
+ht-degree: 58%
 
 ---
 
@@ -21,15 +21,20 @@ ht-degree: 63%
 
 Sie können Anlagen mit HTML5-Formularen hochladen, anzeigen und senden. Standardmäßig ist die Unterstützung der Anlage deaktiviert. Gehen Sie wie folgt vor, um die Unterstützung der Anlage zu aktivieren:
 
-1. Erstellen Sie ein [benutzerdefiniertes Profil](/help/forms/using/custom-profile.md) mit der Eigenschaft Mehrfachauswahlzeichenfolge`mfAttachmentOptions` .
-1. Geben Sie im benutzerdefinierten Profil die Eigenschaften `fileSizeLimit`, `multiSelect` und `buttonTex`t an, um die Optionen des Dateianlagen-Widgets zu konfigurieren. Bei Bedarf können Sie auch weitere benutzerdefinierte Eigenschaften angeben.
+1. Erstellen Sie ein [benutzerdefiniertes Profil](/help/forms/using/custom-profile.md) mit der Eigenschaft `mfAttachmentOptions` multiselect string . Jede Zeichenfolge in der `mfAttachmentOptions`-Eigenschaft muss ein `property=value`-Format aufweisen, um die Optionen des Dateianlagen-Widgets zu konfigurieren. Die `property` und `value` können einen der folgenden Werte aufweisen:
 
-1. Verwenden Sie im benutzerdefinierten Profil die folgenden Konfigurationen:
+   | Eigenschaft | Wert |
+   |--- |---|
+   | multiSelect | true oder false (standardmäßig wahr) |
+   | fileSizeLimit | Anzahl in MB (standardmäßig 2 MB). Beispiel: 5. |
+   | buttonText | Schaltflächentext für Popup-Fenster (standardmäßig &quot;Anhängen&quot;) |
+   | Akzeptieren der Bedingungen | Kommagetrennte Liste der Dateitypen, die akzeptiert werden sollen (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; standardmäßig) |
 
-   * **multiSelect** -> „true“ oder „false“ (true standardmäßig ausgewählt)
-   * **fileSizeLimit**  -> value_in_mb (z. B. 5) (standardmäßig 2 MB)
-   * **buttonText**  -> Schaltflächentext für Popup-Fenster (standardmäßig &quot;Anhängen&quot;)
-   * **accept**  -> Dateitypen, die akzeptiert werden sollen (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; standardmäßig)
+   Beispiel:
+
+   ![Optionen konfigurieren](assets/mfAttachmentOptions.png)
+
+   Bei Bedarf können Sie auch weitere benutzerdefinierte Optionen für die Eigenschaft `mfAttachmentOptions` angeben.
 
    >[!NOTE]
    >
