@@ -5,14 +5,14 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: ecac6269b5e12b847136f4af534016bc7b88bb2b
+source-git-commit: e54d8633aa3b8c1554df90d1b9650713246b95e8
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '484'
 ht-degree: 51%
 
 ---
 
-# AEM Forms JEE Patch Installer {#aem-forms-jee-patch-installer}
+# AEM Forms JEE Patch Installationsprogramm {#aem-forms-jee-patch-installer}
 
 >[!NOTE]
 >
@@ -58,6 +58,7 @@ LinuxNavigieren Sie zum entsprechenden Ordner und geben Sie an einer Eingabeauff
    * `serializer-2.7.1.jar` in `serializer-2.7.2.jar`
    * `xalan-2.7.1.jar` in `xalan-2.7.2.jar`
    * `xercesImpl-2.9.1.jar` in `xercesImpl-2.12.0.jar`
+   * `xml-apis-2.7.1.jar` in `xml-apis-2.7.2.jar`
 
 1. Das Kontrollkästchen Configuration Manager starten ist standardmäßig aktiviert. Klicken Sie auf **[!UICONTROL Fertig]**, um Configuration Manager auszuführen.
 
