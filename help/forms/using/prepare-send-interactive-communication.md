@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 feature: Interaktive Kommunikation
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b6774acc4ec32c87a5ad5f5b2ea885e1e1aa867e
 workflow-type: tm+mt
-source-wordcount: '2062'
+source-wordcount: '2041'
 ht-degree: 37%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 37%
 
 Über die Benutzeroberfläche der Agenten können die Agenten die interaktive Kommunikation vorbereiten und an den Nachbearbeitungsprozess senden. Der Agent nimmt die erforderlichen Änderungen vor und übergibt die interaktive Kommunikation an einen Nachbearbeitungsprozess, z. B. E-Mail oder Druck.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Nachdem eine interaktive Kommunikation erstellt wurde, kann der Agent die interaktive Kommunikation in der Benutzeroberfläche für Agenten öffnen und eine empfängerspezifische Kopie vorbereiten, indem er Daten eingibt und Inhalte und Anlagen verwaltet. Schließlich kann der Agent die interaktive Kommunikation an einen Nachbearbeitungsprozess senden.
 
@@ -30,7 +30,7 @@ Beim Vorbereiten der interaktiven Kommunikation mithilfe der Benutzeroberfläche
 * **Inhalt**: Auf der Registerkarte „Inhalt“ verwalten Sie den Inhalt, z. B. Dokumentfragmente und die Inhaltsvariablen in der interaktiven Kommunikation. Der Agent kann die Änderungen im Dokumentfragment so vornehmen, wie es beim Erstellen der interaktiven Kommunikation in den Eigenschaften dieser Dokumentfragmente zulässig ist. Der Agent kann auch ein Dokumentfragment neu anordnen, hinzufügen/entfernen und Seitenumbrüche hinzufügen, sofern dies zulässig ist.
 * **Anhänge**: Die Registerkarte &quot;Anlagen&quot;wird nur dann in der Benutzeroberfläche für Agenten angezeigt, wenn die interaktive Kommunikation über Anlagen verfügt oder der Agent über Bibliothekszugriff verfügt. Der Agent darf die Anlagen ändern oder bearbeiten.
 
-## Vorbereiten der interaktiven Kommunikation mithilfe der Benutzeroberfläche für Agenten {#prepare-interactive-communication-using-the-agent-ui}
+## Vorbereiten der interaktiven Kommunikation über die Benutzeroberfläche für Agenten {#prepare-interactive-communication-using-the-agent-ui}
 
 1. Wählen Sie **[!UICONTROL Formulare]** > **[!UICONTROL Formulare &amp; Dokumente]**.
 1. Wählen Sie die entsprechende interaktive Kommunikation aus und tippen Sie auf **[!UICONTROL Benutzeroberfläche für Agenten öffnen]**.
@@ -162,7 +162,7 @@ Die Benutzeroberfläche für Agenten enthält integrierte Unterstützung für 21
 * Auswahl (Augensymbol): Schließt Dokumentfragmente in die interaktive Kommunikation ein/schließt sie daraus aus.
 * Nicht ausgefüllte Werte (Info): Gibt die Anzahl der nicht ausgefüllten Variablen im Dokumentfragment an.
 
-### Listendokumentfragmente  {#list-document-fragments}
+### Listendokumentfragmente {#list-document-fragments}
 
 ![listoptions](assets/listoptions.png)
 
@@ -177,7 +177,7 @@ Sie können die Benutzeroberfläche für Agenten verwenden, um einen oder mehrer
 
 Adobe empfiehlt, diese Anweisungen nacheinander auszuführen, um eine interaktive Kommunikation erfolgreich als Entwurf zu speichern.
 
-### Aktivieren Sie die Funktion &quot;Als Entwurf speichern&quot;{#before-save-as-draft}
+### Aktivieren Sie die Funktion &quot;Als Entwurf speichern&quot; {#before-save-as-draft}
 
 Die Funktion &quot;Als Entwurf speichern&quot;ist standardmäßig nicht aktiviert. Führen Sie zum Aktivieren der Funktion folgende Schritte durch:
 
@@ -203,17 +203,13 @@ Führen Sie die folgenden Schritte aus, um eine interaktive Kommunikation als En
 
 Nachdem Sie die interaktive Kommunikation als Entwurf gespeichert haben, tippen Sie auf **[!UICONTROL Änderungen speichern]**, um weitere Änderungen am Entwurf zu speichern.
 
-### Abrufen des Entwurfs einer interaktiven Kommunikation {#retrieve-draft}
+### Entwurf einer interaktiven Kommunikation abrufen {#retrieve-draft}
 
 Nachdem Sie eine interaktive Kommunikation als Entwurf gespeichert haben, können Sie sie abrufen, um sie weiter zu bearbeiten. Rufen Sie die interaktive Kommunikation ab mit:
 
 `https://server:port/aem/forms/createcorrespondence.hmtl?draftid=[draftid]`
 
 [] draftidbezeichnet die eindeutige Kennung für die Entwurfsversion, die nach dem Speichern einer interaktiven Kommunikation als Entwurf generiert wird.
-
->[!NOTE]
->
->Wenn Sie Änderungen an der interaktiven Kommunikation vornehmen, nachdem Sie sie als Entwurf gespeichert haben, kann die Entwurfsversion nicht geöffnet werden.
 
 ### Beispielhafte ccrDocumentInstance-SPI-Implementierung {#sample-ccrDocumentInstance-spi}
 
