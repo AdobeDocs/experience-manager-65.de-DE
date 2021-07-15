@@ -8,10 +8,10 @@ discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 role: User, Admin
 exl-id: 85fa0414-354e-4530-81f9-a5659bb7f2fd
 feature: Konfiguration
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 57%
+source-wordcount: '261'
+ht-degree: 50%
 
 ---
 
@@ -27,11 +27,11 @@ Mithilfe von [Dynamic Media](https://business.adobe.com/de/products/experience-m
 
 Wenn Sie Dynamic Media verwalten, sind für Sie die folgenden Themen interessant:
 
-* [Konfigurieren des Dynamic Media-Scene7-Modus](config-dms7.md)  - Verwenden Sie diese Konfiguration, wenn Sie ein neuer Dynamic Media-Kunde sind.
-* [Konfigurieren des Dynamic Media-Hybrid-Modus](config-dynamic.md)  - Verwenden Sie diese Konfiguration, wenn Sie bereits Dynamic Media-Kunde sind und Experience Manager beim Upgrade sind.
+* [Konfigurieren Sie den Dynamic Media-Scene7-Modus](config-dms7.md) : Verwenden Sie diese Konfiguration, wenn Sie ein neuer Dynamic Media-Kunde sind.
+* [Dynamic Media - Hybridmodus konfigurieren](config-dynamic.md)  - Verwenden Sie diese Konfiguration, wenn Sie bereits ein Dynamic Media-Experience Manager sind, der ein Upgrade durchführt.
 * [Verwalten von Bildvorgaben](managing-image-presets.md)
 * [Verwalten von Viewer-Vorgaben](managing-viewer-presets.md)
-* [Fehlerbehebung in Dynamic Media – Scene7-Modus](troubleshoot-dms7.md)
+* [Fehlerbehebung bei Dynamic Media - Scene7-Modus](troubleshoot-dms7.md)
 
 Weitere Informationen finden Sie in den folgenden Themen:
 
