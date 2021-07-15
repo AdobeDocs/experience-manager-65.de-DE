@@ -7,10 +7,10 @@ content-type: reference
 feature: Barrierefreiheit
 role: User, Admin
 exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 71%
+source-wordcount: '568'
+ht-degree: 69%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 71%
 
 Da [!DNL Dynamic Media] ein Plug-in für [!DNL Adobe Experience Manager Assets] ist, ist der Großteil des Tastatursteuerungsverhaltens mit dem in [!DNL Experience Manager Assets] identisch. Beispielsweise weist die Schaltfläche `Cancel` in [!DNL Dynamic Media] dieselbe Fokushervorhebung auf wie in [!DNL Experience Manager Assets] und reagiert auf die Taste `Spacebar` wie in [!DNL Experience Manager Assets]. Weitere Informationen finden Sie in [Tastaturbefehle in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
-Keystrokes, die von einzelnen Benutzeroberflächenelementen in [!DNL Dynamic Media] unterstützt werden, sind in den meisten Fällen offensichtlich und leicht zu entdecken. Die Tastatursteuerung in [!DNL Dynamic Media] lautet ungefähr:
+Tastenanschläge, die von einzelnen Benutzeroberflächenelementen in [!DNL Dynamic Media] unterstützt werden, sind klar und leicht zu erkennen. Die Tastatursteuerung in [!DNL Dynamic Media] lautet ungefähr:
 
 * Möglichkeit zur Verwendung von `Tab`- und `Shift+Tab`-Tastenkombinationen zum Navigieren zwischen interaktiven Elementen auf der Seite.
 Mithilfe von `Tab` wird der Eingabefokus auf das nächste Element der Benutzeroberfläche in der Tabulatorreihenfolge weitergeschaltet. Durch die Verwendung von `Shift+Tab` wird der Eingabefokus wieder auf das vorherige Element der Benutzeroberfläche zurückgesetzt.
@@ -35,7 +35,7 @@ Die Fokusverschiebung folgt der natürlichen Position der Elemente der Benutzero
    * Mit den Pfeiltasten können Sie die Bildgröße zuschneiden oder das Bild neu positionieren oder beides.
    * Der erste `Tab`-Stopp markiert den gesamten Bildrahmen. Mit den Pfeiltasten auf der Tastatur können Sie den Rahmen dann neu positionieren.
    * Die folgenden vier `Tab`-Stopps sind die vier Ecken des Rahmens. Wenn der Fokus auf eine Rahmenecke gelegt wird, wird die Ecke hervorgehoben. Auch hier können Sie die fokussierte Ecke mit den Pfeiltasten auf der Tastatur verschieben.
-Weitere Informationen finden Sie unter [Bearbeiten von smarten Zuschnitten oder smarten Farb-/Bildmustern eines einzelnen Bildes](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image).
+Siehe [Bearbeiten des smarten Zuschnitts oder smarten Farb-/Bildmusters eines einzelnen Bildes](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 
 <!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (AEM 6.5) or Coral Spectrum (in Skyline)) as entire AEM Assets.  -->
 
