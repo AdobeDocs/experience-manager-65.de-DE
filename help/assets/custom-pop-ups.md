@@ -12,26 +12,26 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: Viewer
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
 workflow-type: tm+mt
-source-wordcount: '1090'
-ht-degree: 68%
+source-wordcount: '1088'
+ht-degree: 67%
 
 ---
 
-# Verwenden der Schnellansicht zum Erstellen benutzerdefinierter Popups {#using-quickviews-to-create-custom-pop-ups}
+# Erstellen benutzerdefinierter Popups mithilfe der Schnellansicht {#using-quickviews-to-create-custom-pop-ups}
 
-Die standardmäßige Schnellansicht wird in E-Commerce-Erlebnissen eingesetzt, in denen ein Popup-Fenster mit Produktinformationen angezeigt wird, um eine Kaufentscheidung zu fördern. Sie können jedoch benutzerdefinierte Inhalte auslösen, die in Popups angezeigt werden. Je nach Viewer können Benutzer mit dieser Funktion auf einen Hotspot, eine Miniaturansicht oder eine Imagemap tippen, um Informationen oder verwandte Inhalte anzuzeigen.
+Die standardmäßige Schnellansicht wird in E-Commerce-Erlebnissen eingesetzt, in denen ein Popup-Fenster mit Produktinformationen angezeigt wird, um eine Kaufentscheidung zu fördern. Sie können jedoch benutzerdefinierte Inhalte auslösen, die in Popups angezeigt werden. Je nach Viewer können Benutzer mit dieser Funktion einen Hotspot, eine Miniaturansicht oder eine Imagemap auswählen, um Informationen oder verwandte Inhalte anzuzeigen.
 
 Die Schnellansicht wird von den folgenden Viewern in Dynamic Media unterstützt:
 
-* Interaktive Bilder (klickbare Hotspots)
-* Interaktives Video (klickbare Miniaturbilder während der Videowiedergabe)
+* Interaktives Bild (klickbare Hotspots)
+* Interaktives Video (klickbare Miniaturansichten während der Videowiedergabe)
 * Karussellbanner (klickbare Hotspots oder Imagemaps)
 
 Auch wenn die Funktionalität der Viewer unterschiedlich ist, ist der Prozess zum Erstellen einer Schnellansicht für alle drei unterstützten Viewer identisch.
 
-**So erstellen Sie mithilfe der Schnellansicht benutzerdefinierte Popups:**
+**So erstellen Sie benutzerdefinierte Popups mithilfe der Schnellansicht:**
 
 1. Erstellen Sie eine Schnellansicht für ein hochgeladenes Asset.
 
