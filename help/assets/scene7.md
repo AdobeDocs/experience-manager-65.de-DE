@@ -10,10 +10,10 @@ discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 feature: Dynamic Media Classic
 role: User, Admin
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
 workflow-type: tm+mt
 source-wordcount: '2849'
-ht-degree: 24%
+ht-degree: 22%
 
 ---
 
@@ -51,7 +51,7 @@ Sie können digitale Assets wie folgt in Dynamic Media Classic veröffentlichen:
 
 >[!NOTE]
 >
->Experience Manager wird asynchron in Dynamic Media Classic veröffentlicht. Nachdem Sie auf **[!UICONTROL Publish]** geklickt haben, dauert es mehrere Sekunden, bis Ihr Asset in Dynamic Media Classic veröffentlicht wird.
+>Experience Manager wird asynchron in Dynamic Media Classic veröffentlicht. Nachdem Sie **[!UICONTROL Publish]** ausgewählt haben, dauert es mehrere Sekunden, bis Ihr Asset in Dynamic Media Classic veröffentlicht wird.
 
 
 ## Dynamic Media Classic-Komponenten {#scene-components}
@@ -78,8 +78,6 @@ Nachdem sie im Modus **[!UICONTROL Design]** verfügbar gemacht wurden, können 
 
 Mit Wirkung vom 31. Januar 2017 hat Adobe Dynamic Media Classic die Unterstützung für die Flash-Viewer-Plattform eingestellt.
 
-<!-- For more information about this important change, see [Flash Viewer End-of-Life FAQs](https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html). -->
-
 ### Hinzufügen einer Dynamic Media Classic (Scene7)-Komponente zu einer Seite {#adding-a-scene-component-to-a-page}
 
 Das Hinzufügen einer Dynamic Media Classic (Scene7)-Komponente zu einer Seite entspricht dem Hinzufügen einer Komponente zu einer beliebigen Seite. Dynamic Media Classic-Komponenten werden in den folgenden Abschnitten ausführlich beschrieben.
@@ -88,17 +86,17 @@ Das Hinzufügen einer Dynamic Media Classic (Scene7)-Komponente zu einer Seite e
 
 1. Öffnen Sie in Experience Manager die Seite, auf der Sie die Komponente **[!UICONTROL Dynamic Media Classic (Scene7)]** hinzufügen möchten.
 
-1. Wenn keine Dynamic Media Classic-Komponenten verfügbar sind, klicken Sie auf den Modus **[!UICONTROL Design]**, tippen Sie auf eine beliebige Komponente mit blauem Rahmen, tippen Sie auf das Symbol **[!UICONTROL Übergeordnetes Element]** und dann auf das Symbol **[!UICONTROL Konfiguration]**. Wählen Sie unter **[!UICONTROL Parsys (Design)]** alle Dynamic Media Classic-Komponenten aus, um sie verfügbar zu machen, und klicken Sie auf **[!UICONTROL OK]**.
+1. Wenn keine Dynamic Media Classic-Komponenten verfügbar sind, wählen Sie den Modus **[!UICONTROL Design]**, wählen Sie eine beliebige Komponente mit blauem Rand aus, wählen Sie das Symbol **[!UICONTROL Übergeordnetes Element]** und dann das Symbol **[!UICONTROL Konfiguration]**. Wählen Sie unter **[!UICONTROL Parsys (Design)]** alle Dynamic Media Classic-Komponenten aus, um sie verfügbar zu machen, und wählen Sie **[!UICONTROL OK]**.
 
    ![chlimage_1-224](assets/chlimage_1-224.png)
 
-1. Klicken Sie auf **[!UICONTROL Bearbeiten]**, damit Sie zum Modus **[!UICONTROL Bearbeiten]** zurückkehren können.
+1. Wählen Sie **[!UICONTROL Bearbeiten]** aus, damit Sie zum Modus **[!UICONTROL Bearbeiten]** zurückkehren können.
 
 1. Ziehen Sie eine Komponente aus der Gruppe Dynamic Media Classic im Sidekick auf die Seite an der gewünschten Position.
 
-1. Klicken Sie auf das Symbol **[!UICONTROL Konfiguration]** , damit Sie die Komponente öffnen können.
+1. Wählen Sie das Symbol **[!UICONTROL Konfiguration]** aus, damit Sie die Komponente öffnen können.
 
-1. Bearbeiten Sie die Komponente bei Bedarf und klicken Sie auf **[!UICONTROL OK]**, um die Änderungen zu speichern.
+1. Bearbeiten Sie die Komponente nach Bedarf und wählen Sie **[!UICONTROL OK]** aus, um Änderungen zu speichern.
 1. Ziehen Sie Ihr Bild oder Video aus dem Inhaltsbrowser auf die Dynamic Media Classic-Komponente, die Sie der Seite hinzugefügt haben.
 
    >[!NOTE]
@@ -120,7 +118,7 @@ Informationen hierzu finden Sie auch unter [Dynamisches Design für Webseiten](/
    >Wenn Dynamic Media Classic-Komponenten nicht verfügbar sind, stellen Sie sicher, dass Sie [diese über den Designmodus](/help/sites-authoring/default-components-designmode.md) aktivieren können.
 
 1. Ziehen Sie auf einer Website mit aktivierten Komponenten **[!UICONTROL Dynamic Media Classic]** eine Komponente **[!UICONTROL Bild]** auf die Seite.
-1. Wählen Sie die Komponente aus und tippen Sie auf das Konfigurationssymbol.
+1. Wählen Sie die Komponente aus und wählen Sie das Konfigurationssymbol aus.
 1. Passen Sie auf der Registerkarte **[!UICONTROL Dynamic Media Classic Settings]** die Haltepunkte an.
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
@@ -143,13 +141,13 @@ Sie legen diese Konfigurationsoptionen fest, indem Sie eine Dynamic Media Classi
 
 Die HTML5-Zoom-Komponente zeigt ein größeres Bild an, wenn Sie die Schaltfläche **[!UICONTROL +]** betätigen.
 
-Das Asset verfügt unten über Zoomwerkzeuge. Tippen Sie auf **[!UICONTROL +]**, wenn Sie die Erweiterung vornehmen möchten. Tippen Sie auf **[!UICONTROL -]** , wenn Sie reduzieren möchten. Durch Tippen auf **[!UICONTROL x]** oder auf den Pfeil zum Zurücksetzen des Zooms wird das Bild wieder in die Originalgröße verschoben, als es importiert wurde. Tippen Sie auf die diagonalen Pfeile, damit der Bildschirm voll ist. Tippen Sie auf **[!UICONTROL Bearbeiten]**, damit Sie die Komponente konfigurieren können. Mit dieser Komponente können Sie [Einstellungen konfigurieren, die für alle [!UICONTROL Dynamic Media Classic]-Komponenten](#settings-common-to-all-scene-components) gelten.
+Das Asset verfügt unten über Zoomwerkzeuge. Wählen Sie **[!UICONTROL +]** aus, wenn Sie eine Erweiterung vornehmen möchten. Wählen Sie **[!UICONTROL -]** aus, wenn Sie reduzieren möchten. Durch Tippen auf **[!UICONTROL x]** oder auf den Pfeil zum Zurücksetzen des Zooms wird das Bild wieder in die Originalgröße verschoben, als es importiert wurde. Wählen Sie die diagonalen Pfeile aus, damit sie im Vollbildmodus angezeigt werden. Wählen Sie **[!UICONTROL Bearbeiten]** aus, damit Sie die Komponente konfigurieren können. Mit dieser Komponente können Sie [Einstellungen konfigurieren, die für alle [!UICONTROL Dynamic Media Classic]-Komponenten](#settings-common-to-all-scene-components) gelten.
 
 ![chlimage_1-227](/help/assets/assets/do-not-localize/chlimage_1-227.png)
 
 ### Flyout {#flyout}
 
-In der Komponente HTML5 **[!UICONTROL Flyout]** wird das Asset als Splitscreen angezeigt. das Asset in der angegebenen Größe belassen; rechts wird der Zoombereich angezeigt. Tippen Sie auf **[!UICONTROL Bearbeiten]**, damit Sie die Komponente konfigurieren können. Mit dieser Komponente können Sie [Einstellungen konfigurieren, die für alle Dynamic Media Classic-Komponenten](#settings-common-to-all-scene-components) gelten.
+In der Komponente HTML5 **[!UICONTROL Flyout]** wird das Asset als Splitscreen angezeigt. das Asset in der angegebenen Größe belassen; rechts wird der Zoombereich angezeigt. Wählen Sie **[!UICONTROL Bearbeiten]** aus, damit Sie die Komponente konfigurieren können. Mit dieser Komponente können Sie [Einstellungen konfigurieren, die für alle Dynamic Media Classic-Komponenten](#settings-common-to-all-scene-components) gelten.
 
 >[!NOTE]
 >
@@ -189,7 +187,7 @@ Mit der Komponente Dynamic Media Classic **[!UICONTROL Bild]** können Sie Ihren
 
 [Dynamic Media Classic-](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html) Bildvorlagen sind Photoshop-Inhalte mit Ebenen, die in Dynamic Media Classic importiert wurden und in denen Inhalte und Eigenschaften für Variabilität parametrisiert wurden. Mit der Komponente **[!UICONTROL Bildvorlage]** können Sie Bilder importieren und den Text dynamisch in Experience Manager ändern. Zusätzlich können Sie die Komponente **[!UICONTROL Bildvorlage]** dahingehend konfigurieren, dass sie Werte aus dem Clientkontext übernimmt, damit das Bild jedem Benutzer personalisiert angezeigt wird.
 
-Tippen Sie auf **[!UICONTROL Bearbeiten]** , wenn Sie die Komponente konfigurieren möchten. Sie können [Einstellungen konfigurieren, die für alle Dynamic Media Classic-Komponenten](#settings-common-to-all-scene-components) und andere in diesem Abschnitt beschriebene Einstellungen gelten.
+Wählen Sie **[!UICONTROL Bearbeiten]** aus, wenn Sie die Komponente konfigurieren möchten. Sie können [Einstellungen konfigurieren, die für alle Dynamic Media Classic-Komponenten](#settings-common-to-all-scene-components) und andere in diesem Abschnitt beschriebene Einstellungen gelten.
 
 ![chlimage_1-231](assets/chlimage_1-231.png)
 
@@ -209,9 +207,9 @@ Tippen Sie auf **[!UICONTROL Bearbeiten]** , wenn Sie die Komponente konfigurier
 
 ![chlimage_1-233](assets/chlimage_1-233.png)
 
-#### Dynamisches Ändern von Text {#changing-text-dynamically}
+#### Dynamische Textänderung {#changing-text-dynamically}
 
-Geben Sie zum dynamischen Ändern des Texts neuen Text in die Felder ein und klicken Sie auf **[!UICONTROL OK]**. In diesem Beispiel lautet der **[!UICONTROL Preis]** 50 $ und der Versand kostet 0,99 $.
+Um den Text dynamisch zu ändern, geben Sie neuen Text in die Felder ein und wählen Sie **[!UICONTROL OK]** aus. In diesem Beispiel lautet der **[!UICONTROL Preis]** 50 $ und der Versand kostet 0,99 $.
 
 ![chlimage_1-234](assets/chlimage_1-234.png)
 
@@ -219,9 +217,9 @@ Der Text im Bild ändert sich. Sie können den Text wieder auf den ursprünglich
 
 ![chlimage_1-235](assets/chlimage_1-235.png)
 
-#### Ändern von Text zum Berücksichtigen des Werts eines Clientkontextwerts {#changing-text-to-reflect-the-value-of-a-client-context-value}
+#### Ändern Sie den Text, um den Wert eines Client-Kontextwerts widerzuspiegeln. {#changing-text-to-reflect-the-value-of-a-client-context-value}
 
-Um ein Feld mit einem Client-Kontextwert zu verknüpfen, tippen Sie auf **[!UICONTROL Auswählen]**, um das Client-Kontextmenü zu öffnen, wählen Sie den Client-Kontext aus und tippen Sie auf **[!UICONTROL OK]**. In diesem Beispiel ändert sich der Name auf Grundlage der Verknüpfung des Namens mit dem formatierten Namen im Profil.
+Um ein Feld mit einem Client-Kontextwert zu verknüpfen, wählen Sie **[!UICONTROL Wählen Sie]** aus, um das Client-Kontextmenü zu öffnen, wählen Sie den Client-Kontext aus und klicken Sie auf **[!UICONTROL OK]**. In diesem Beispiel ändert sich der Name auf Grundlage der Verknüpfung des Namens mit dem formatierten Namen im Profil.
 
 ![chlimage_1-236](assets/chlimage_1-236.png)
 
@@ -231,12 +229,12 @@ Der Text berücksichtigt den Namen des aktuell angemeldeten Benutzers. Sie könn
 
 #### Verknüpfen der Dynamic Media Classic-Bildvorlage {#making-the-scene-image-template-a-link}
 
-1. Tippen Sie auf der Seite mit der Komponente Dynamic Media Classic **[!UICONTROL Bildvorlage]** auf **[!UICONTROL Bearbeiten]**.
+1. Wählen Sie auf der Seite mit der Komponente Dynamic Media Classic **[!UICONTROL Bildvorlage]** **[!UICONTROL Bearbeiten]** aus.
 1. Geben Sie im Feld **[!UICONTROL URL]** die URL ein, zu der Benutzer navigieren, wenn auf das Bild getippt wird. Wählen Sie im Feld **[!UICONTROL Öffnen in]** aus, ob das Ziel (in einem neuen oder im selben Fenster) geöffnet werden soll.
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
-1. Tippen Sie auf **[!UICONTROL OK]**.
+1. Wählen Sie **[!UICONTROL OK]** aus.
 
 ### Komponente „Video“ {#video-component}
 
@@ -248,7 +246,7 @@ Weitere Informationen zur Verwendung von Videos mit der Dynamic Media Classic-In
 
 ![chlimage_1-239](assets/chlimage_1-239.png)
 
-### Bekannte Einschränkungen für die Videokomponente {#known-limitations-for-the-video-component}
+### Bekannte Einschränkungen der Videokomponente {#known-limitations-for-the-video-component}
 
 Adobe DAM und WCM zeigen an, ob ein Primärvideo hochgeladen wurde. Sie zeigen diese Proxy-Assets nicht an:
 
@@ -303,7 +301,7 @@ Zusätzlich können Sie Informationen über Auflösung, Größe, Tage seit der �
 * Bei adaptiven Videosets und -vorlagen werden für Miniaturansichten keine Größeninformationen generiert.
 * Bei adaptiven Videosets wird für Miniaturansichten keine Auflösung generiert.
 
-### Suchen nach Dynamic Media Classic-Assets mit dem Inhaltsbrowser {#searching-for-scene-assets-with-the-content-browser}
+### Suchen Sie mit dem Inhaltsbrowser nach Dynamic Media Classic-Assets. {#searching-for-scene-assets-with-the-content-browser}
 
 Die Suche nach Assets in Dynamic Media Classic ähnelt der Suche nach Assets in Experience Manager Assets. Wenn Sie jedoch suchen, wird Ihnen tatsächlich eine Remote-Ansicht der Assets im Dynamic Media Classic-System angezeigt, anstatt sie direkt in Experience Manager zu importieren.
 
@@ -311,7 +309,7 @@ Sie können die klassische oder Touch-optimierte Benutzeroberfläche verwenden, 
 
 Wenn Sie auf einer der Benutzeroberflächen suchen, können Sie nach den folgenden Kriterien filtern (wird hier in der Touch-optimierten Benutzeroberfläche gezeigt):
 
-**[!UICONTROL Keywords]**  - Sie können Assets nach Namen suchen. Bei der Suche beginnen die eingegebenen Schlüsselwörter mit dem Dateinamen. Zum Beispiel führt die Eingabe des Worts „schwimmen“ dazu, dass nach Asset-Dateinamen gesucht wird, die mit diesen Buchstaben in dieser Reihenfolge beginnen. Tippen Sie unbedingt auf Eingabe , nachdem Sie den Begriff eingegeben haben, um das Asset zu finden.
+**[!UICONTROL Keywords]**  - Sie können Assets nach Namen suchen. Bei der Suche beginnen die eingegebenen Schlüsselwörter mit dem Dateinamen. Zum Beispiel führt die Eingabe des Worts „schwimmen“ dazu, dass nach Asset-Dateinamen gesucht wird, die mit diesen Buchstaben in dieser Reihenfolge beginnen. Drücken Sie unbedingt die Eingabetaste, nachdem Sie den Begriff eingegeben haben, um das Asset zu finden.
 
 ![chlimage_1-242](assets/chlimage_1-242.png)
 
