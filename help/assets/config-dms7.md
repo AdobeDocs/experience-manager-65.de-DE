@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren von Dynamic Media – Scene7-Modus
+title: Konfigurieren des Dynamic Media-/Scene7-Modus
 description: Erfahren Sie, wie Sie den Dynamic Media-Scene7-Modus konfigurieren.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,14 +9,14 @@ docset: aem65
 role: User, Admin
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Konfiguration,Scene7-Modus
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
 workflow-type: tm+mt
-source-wordcount: '6153'
-ht-degree: 59%
+source-wordcount: '6160'
+ht-degree: 53%
 
 ---
 
-# Konfigurieren von Dynamic Media – Scene7-Modus{#configuring-dynamic-media-scene-mode}
+# Konfigurieren des Dynamic Media-/Scene7-Modus{#configuring-dynamic-media-scene-mode}
 
 Wenn Sie Adobe Experience Manager für verschiedene Umgebungen wie Entwicklung, Staging und Produktion verwenden, konfigurieren Sie Dynamic Media-Cloud Services für jede dieser Umgebungen.
 
@@ -44,7 +44,7 @@ Mit der neuen Architektur ist Experience Manager für Primärquellen-Assets und 
 * Akamai ChinaCDN (für optimalen Versand in China)
 
 
-## Aktivieren von Dynamic Media im Scene7-Modus {#enabling-dynamic-media-in-scene-mode}
+## Aktivieren von Dynamic Media im Scene7-Modus {#enabling-dynamic-media-in-scene-mode}
 
 [Dynamic Media ist standardmäßig deaktiviert. ](https://business.adobe.com/de/products/experience-manager/assets/dynamic-media.html) Um die Funktionen von Dynamic Media nutzen zu können, müssen Sie sie aktivieren.
 
@@ -57,7 +57,7 @@ Um Dynamic Media zu aktivieren, müssen Sie den Experience Manager im Ausführun
 java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar -gui -r author,dynamicmedia_scene7 -p 4502
 ```
 
-## (Optional) Migration von Dynamic Media-Vorgaben und -Konfigurationen von 6.3 zu 6.5 ohne Ausfallzeit {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
+## (Optional) Migrieren von Dynamic Media-Vorgaben und -Konfigurationen von 6.3 auf 6.5 ohne Ausfallzeit {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
 Die Aktualisierung von Experience Manager Dynamic Media von 6.3 auf 6.4 oder 6.5 bietet jetzt die Möglichkeit, Bereitstellungen ohne Ausfallzeiten zu ermöglichen. Um alle Vorgaben und Konfigurationen in CRXDE Lite von `/etc` zu `/conf` zu migrieren, führen Sie folgenden curl-Befehl aus.
 
@@ -72,13 +72,13 @@ Um benutzerdefinierte Viewer-Vorgaben und Konfigurationen zu migrieren, die Sie 
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets.migratedmcontent.json`
 
-## Installieren von Feature Pack 18912 für die Massenmigration von Assets {#installing-feature-pack-for-bulk-asset-migration}
+## Feature Pack 18912 für Massenmigration von Assets installieren {#installing-feature-pack-for-bulk-asset-migration}
 
 Die Installation von Feature Pack 18912 ist *optional*.
 
 Mit Feature Pack 18912 können Sie Assets entweder per FTP stapelweise erfassen oder Assets im Experience Manager aus dem Dynamic Media - Hybridmodus oder Dynamic Media Classic in den Dynamic Media - Scene7 -Modus migrieren. Sie ist verfügbar unter [Adobe Professional Services](https://business.adobe.com/de/customers/consulting-services/main.html).
 
-Weitere Informationen finden Sie unter [Installieren von Feature Pack 18912 für die Massenmigration von Assets](/help/assets/bulk-ingest-migrate.md) .
+Weitere Informationen finden Sie unter [Feature Pack 18912 für Massenmigration von Assets](/help/assets/bulk-ingest-migrate.md) installieren .
 
 ## Erstellen einer Dynamic Media-Konfiguration in Cloud Services {#configuring-dynamic-media-cloud-services}
 
@@ -88,14 +88,14 @@ Weitere Informationen finden Sie unter [Installieren von Feature Pack 18912 für
 
 **So erstellen Sie eine Dynamic Media-Konfiguration in Cloud Services:**
 
-1. Tippen Sie im Experience Manager-Autorenmodus auf das Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen, und tippen Sie dann auf das Werkzeugsymbol und dann auf **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media Configuration]**.
-1. Tippen Sie auf der Seite „Browser zur Konfiguration von Dynamic Media“ im linken Bereich auf **[!UICONTROL global]** (tippen Sie nicht auf bzw. wählen Sie nicht das Ordnersymbol links neben **[!UICONTROL global]** aus) und tippen Sie dann auf **[!UICONTROL Erstellen]**.
+1. Wählen Sie im Experience Manager-Autorenmodus das Experience Manager-Logo aus, um auf die globale Navigationskonsole zuzugreifen, wählen Sie das Symbol &quot;Tools&quot;aus und navigieren Sie zu **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media Configuration]**.
+1. Wählen Sie auf der Seite &quot;Dynamic Media Configuration Browser&quot;im linken Bereich **[!UICONTROL global]** aus (wählen Sie nicht das Ordnersymbol links neben **[!UICONTROL global]** aus) und klicken Sie dann auf **[!UICONTROL Erstellen]**.
 1. Geben Sie auf der Seite **[!UICONTROL Konfiguration für dynamische Medien erstellen]** einen Titel, die E-Mail-Adresse des Dynamic Media-Kontos und ein Kennwort ein und wählen Sie Ihre Region aus. Diese Informationen erhalten Sie in der Bereitstellungs-E-Mail von Adobe. Wenden Sie sich an die Kundenunterstützung von Adobe , wenn Sie die E-Mail nicht erhalten haben.
 
-   Tippen Sie auf **[!UICONTROL Verbindung zu Dynamic Media]**.
+   Wählen Sie **[!UICONTROL Mit Dynamic Media verbinden]** aus.
 
    >[!NOTE]
-   Nachdem Sie Ihre Bereitstellungs-E-Mail mit Dynamic Media-Anmeldeinformationen erhalten haben, öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) und melden Sie sich dann bei Ihrem Konto an, um Ihr Kennwort zu ändern. Das Kennwort aus der Bereitstellungs-E-Mail wird systemseitig erstellt und ist nur als temporäres Kennwort vorgesehen. Sie müssen das Kennwort aktualisieren, damit der Dynamic Media-Cloud Service mit den richtigen Anmeldeinformationen eingerichtet wird.
+   Nachdem Sie Ihre Bereitstellungs-E-Mail mit Dynamic Media-Anmeldeinformationen erhalten haben, öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) und melden Sie sich dann bei Ihrem Konto an, um Ihr Kennwort zu ändern. Das Kennwort aus der Bereitstellungs-E-Mail wird systemseitig erstellt und ist nur als temporäres Kennwort vorgesehen. Sie müssen das Kennwort aktualisieren, damit Dynamic Media Cloud Service mit den richtigen Anmeldedaten eingerichtet wird.
 
 1. Nachdem die Verbindung erfolgreich hergestellt wurde, richten Sie Folgendes ein. Überschriften mit einem Sternchen (*) sind erforderlich:
 
@@ -105,11 +105,11 @@ Weitere Informationen finden Sie unter [Installieren von Feature Pack 18912 für
 
    * **[!UICONTROL Assets veröffentlichen]** – Sie können zwischen den folgenden drei Optionen wählen:
       * **[!UICONTROL Sofort]** bedeutet, dass das System hochgeladene Assets aufnimmt und umgehend die URL/den Link zur Einbettung bereitstellt. Zum Veröffentlichen von Assets ist kein Benutzereingriff erforderlich.
-      * **[!UICONTROL Bei]** Aktivierung bedeutet, dass Sie das Asset zuerst explizit veröffentlichen müssen, bevor eine URL/ein Link zur Einbettung bereitgestellt wird.<br><!-- CQDOC-17478, Added March 9, 2021-->Ab Experience Manager 6.5.8 spiegelt die Experience Manager-Veröffentlichungsinstanz genaue Dynamic Media-Metadatenwerte wider, z. B.  `dam:scene7Domain` und  `dam:scene7FileStatus` im Modus &quot; **[!UICONTROL Bei]** Aktivierung veröffentlichen&quot;. Um diese Funktion zu aktivieren, installieren Sie Service Pack 8 und starten Sie dann Experience Manager neu. Wechseln Sie zum Sling Config Manager. Suchen Sie die Konfiguration für `Scene7ActivationJobConsumer Component` oder erstellen Sie eine neue). Aktivieren Sie das Kontrollkästchen **[!UICONTROL Metadaten nach Dynamic Media-Veröffentlichung replizieren]** und tippen Sie dann auf **[!UICONTROL Speichern]**.
+      * **[!UICONTROL Bei]** Aktivierung bedeutet, dass Sie das Asset zuerst explizit veröffentlichen müssen, bevor eine URL/ein Link zur Einbettung bereitgestellt wird.<br><!-- CQDOC-17478, Added March 9, 2021-->Ab Experience Manager 6.5.8 spiegelt die Experience Manager-Veröffentlichungsinstanz genaue Dynamic Media-Metadatenwerte wider, z. B.  `dam:scene7Domain` und  `dam:scene7FileStatus` im Modus &quot; **[!UICONTROL Bei]** Aktivierung veröffentlichen&quot;. Um diese Funktion zu aktivieren, installieren Sie Service Pack 8 und starten Sie dann Experience Manager neu. Wechseln Sie zum Sling Config Manager. Suchen Sie die Konfiguration für `Scene7ActivationJobConsumer Component` oder erstellen Sie eine neue). Aktivieren Sie das Kontrollkästchen **[!UICONTROL Metadaten nach Dynamic Media-Veröffentlichung replizieren]** und wählen Sie dann **[!UICONTROL Speichern]** aus.
 
          ![Replizieren von Metadaten nach dem Kontrollkästchen Dynamic Media-Veröffentlichung](assets-dm/replicate-metadata-setting.png)
 
-      * **[!UICONTROL Selektive]** Veröffentlichung Mit dieser Option können Sie steuern, welche Ordner in Dynamic Media veröffentlicht werden. Damit können Sie Funktionen wie smartes Zuschneiden oder dynamische Ausgabedarstellungen verwenden oder bestimmen, welche Ordner ausschließlich in Experience Manager zur Vorschau veröffentlicht werden. Dieselben Assets sind *nicht*, die in Dynamic Media zur Bereitstellung im öffentlichen Bereich veröffentlicht werden.<br>Sie können diese Option hier in der  **[!UICONTROL Dynamic Media Cloud-]** Konfiguration festlegen oder, falls gewünscht, Sie können diese Option auf Ordnerebene in den  **[!UICONTROL Eigenschaften]** eines Ordners festlegen.<br>Siehe [Arbeiten mit selektiver Veröffentlichung in Dynamic Media](/help/assets/selective-publishing.md).<br>Wenn Sie diese Konfiguration später ändern oder später auf Ordnerebene ändern, wirken sich diese Änderungen nur auf neue Assets aus, die Sie von diesem Zeitpunkt an hochladen. Der Veröffentlichungsstatus vorhandener Assets im Ordner bleibt unverändert, bis Sie ihn im Dialogfeld **[!UICONTROL Quick Publish]** oder **[!UICONTROL Veröffentlichung verwalten]** manuell ändern.
+      * **[!UICONTROL Selektive]** Veröffentlichung Mit dieser Option können Sie steuern, welche Ordner in Dynamic Media veröffentlicht werden. Damit können Sie Funktionen wie smartes Zuschneiden oder dynamische Ausgabedarstellungen verwenden oder bestimmen, welche Ordner ausschließlich in Experience Manager zur Vorschau veröffentlicht werden. Dieselben Assets sind *nicht*, die in Dynamic Media zur Bereitstellung im öffentlichen Bereich veröffentlicht werden.<br>Sie können diese Option hier in der  **[!UICONTROL Dynamic Media Cloud-]** Konfiguration festlegen oder, falls gewünscht, Sie können diese Option auf Ordnerebene in den  **[!UICONTROL Eigenschaften]** eines Ordners festlegen.<br>Siehe  [Arbeiten mit selektiver Veröffentlichung in Dynamic Media](/help/assets/selective-publishing.md).<br>Wenn Sie diese Konfiguration später ändern oder später auf Ordnerebene ändern, wirken sich diese Änderungen nur auf neue Assets aus, die Sie von diesem Zeitpunkt an hochladen. Der Veröffentlichungsstatus vorhandener Assets im Ordner bleibt unverändert, bis Sie ihn im Dialogfeld **[!UICONTROL Quick Publish]** oder **[!UICONTROL Veröffentlichung verwalten]** manuell ändern.
    * **[!UICONTROL Sicherer Vorschau-Server]** – bietet Ihnen die Möglichkeit, den URL-Pfad zu Ihrem Vorschau-Server für sichere Ausgaben anzugeben. Das heißt, dass Experience Manager nach der Generierung von Ausgabedarstellungen sicher auf die Dynamic Media-Remote-Ausgabedarstellungen zugreifen und eine Vorschau davon anzeigen können (es werden keine Binärdateien an die Experience Manager-Instanz zurückgesendet).
 Sofern Sie keine gesonderte Vereinbarung zum Verwenden Ihrer eigenen Unternehmens-Server oder eines speziellen Servers getroffen haben, empfiehlt Adobe, diese Einstellung nicht zu verändern.
 
@@ -118,7 +118,7 @@ Sofern Sie keine gesonderte Vereinbarung zum Verwenden Ihrer eigenen Unternehmen
    * **[!UICONTROL Synchronisierungsmodus für Dynamic Media]**
       * **[!UICONTROL Standardmäßig aktiviert]** – Die Konfiguration wird auf alle Ordner angewendet, es sei denn, Sie markieren einen Ordner speziell zum Ausschließen. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Standardmäßig deaktiviert]** – Die Konfiguration wird auf einen Ordner erst dann angewendet, wenn Sie einen ausgewählten Ordner explizit zur Synchronisierung mit Dynamic Media markieren.
-Um einen ausgewählten Ordner zur Synchronisierung mit Dynamic Media zu markieren, wählen Sie einen Asset-Ordner aus und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Eigenschaften]**. Wählen Sie auf der Registerkarte **[!UICONTROL Details]** in der Dropdown-Liste **[!UICONTROL Synchronisierungsmodus für Dynamic Media]** eine der folgenden drei Optionen aus. Wenn Sie fertig sind, tippen Sie auf **[!UICONTROL Speichern]**. *Denken Sie daran: Diese drei Optionen stehen nicht zur Verfügung, wenn Sie zuvor **[!UICONTROL Alle Inhalte synchronisieren]**ausgewählt haben.* Weitere Informationen finden Sie unter [Arbeiten mit selektiver Veröffentlichung auf Ordnerebene in Dynamic Media](/help/assets/selective-publishing.md).
+Um einen ausgewählten Ordner zur Synchronisierung mit Dynamic Media zu markieren, wählen Sie einen Asset-Ordner aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Eigenschaften]**. Wählen Sie auf der Registerkarte **[!UICONTROL Details]** in der Dropdown-Liste **[!UICONTROL Synchronisierungsmodus für Dynamic Media]** eine der folgenden drei Optionen aus. Wenn Sie fertig sind, wählen Sie **[!UICONTROL Save]** aus. *Denken Sie daran: Diese drei Optionen stehen nicht zur Verfügung, wenn Sie zuvor **[!UICONTROL Alle Inhalte synchronisieren]**ausgewählt haben.* Siehe auch  [Arbeiten mit selektiver Veröffentlichung auf Ordnerebene in Dynamic Media](/help/assets/selective-publishing.md).
          * **[!UICONTROL Vererbt]**  - Kein expliziter Synchronisierungswert für den Ordner; Stattdessen übernimmt der Ordner den Synchronisierungswert von einem seiner Vorgängerordner oder den Standardmodus in der Cloud-Konfiguration. Der detaillierte Status für geerbte Daten wird als Tooltip angezeigt.
          * **[!UICONTROL Aktivieren für Unterordner]**  - Schließen Sie alle Elemente in dieser Unterstruktur zur Synchronisierung mit Dynamic Media ein. Die ordnerspezifischen Einstellungen setzen den Standardmodus in der Cloud-Konfiguration außer Kraft.
          * **[!UICONTROL Deaktiviert für Unterordner]**  - Schließen Sie alle Elemente in dieser Unterstruktur von der Synchronisierung mit Dynamic Media aus.
@@ -127,31 +127,31 @@ Um einen ausgewählten Ordner zur Synchronisierung mit Dynamic Media zu markiere
    Die Versionierung wird in DMS7 nicht unterstützt. Eine verzögerte Aktivierung gilt nur, wenn auf der Seite „Konfiguration von Dynamic Media bearbeiten“ die Option **[!UICONTROL Assets veröffentlichen]** auf **[!UICONTROL Bei Aktivierung]** eingestellt ist, und erst dann, wenn das Asset zum ersten Mal aktiviert wird.
    Wenn ein Asset aktiviert wurde, werden alle Aktualisierungen automatisch live in der S7-Bereitstellung übernommen.
 
-1. Tippen Sie auf **[!UICONTROL Speichern]**.
+1. Wählen Sie **[!UICONTROL Speichern]** aus.
 1. Um eine sichere Vorschau von Dynamic Media-Inhalten zu erhalten, bevor sie veröffentlicht werden, müssen Sie die Experience Manager-Autoreninstanz &quot;auf die Zulassungsliste gesetzt&quot;haben, um eine Verbindung mit Dynamic Media herzustellen:
 
    * Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) und melden Sie sich bei Ihrem Konto an. Ihre Benutzer- und Anmeldedaten haben Sie zum Zeitpunkt der Bereitstellung von Adobe erhalten. Wenn Ihnen die Informationen nicht vorliegen, wenden Sie sich an den technischen Support.
 
-   * Tippen Sie in der Navigationsleiste oben rechts auf der Seite auf **[!UICONTROL Setup]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Veröffentlichungseinrichtung]** > **[!UICONTROL Image-Server]**.
+   * Navigieren Sie in der Navigationsleiste oben rechts auf der Seite zu **[!UICONTROL Setup]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Veröffentlichungseinrichtung]** > **[!UICONTROL Image-Server]**.
 
    * Wählen Sie auf der Seite „Veröffentlichung zum Image-Server“ in der Dropdown-Liste „Veröffentlichungskontext“ die Option **[!UICONTROL Image-Serving testen]**.
-   * Tippen Sie für den Client-Adressfilter auf **[!UICONTROL Hinzufügen]**.
+   * Wählen Sie für den Client-Adressfilter **[!UICONTROL Hinzufügen]** aus.
    * Aktivieren Sie das Kontrollkästchen, um die Adresse zu aktivieren. Geben Sie die IP-Adresse der Experience Manager-Autoreninstanz (nicht die Dispatcher-IP) ein.
-   * Tippen Sie auf **[!UICONTROL Speichern]**.
+   * Wählen Sie **[!UICONTROL Speichern]** aus.
 
 Sie haben nun die Grundkonfiguration abgeschlossen und können Dynamic Media im Scene7-Modus verwenden.
 
 Wenn Sie Ihre Konfiguration weiter anpassen möchten, können Sie auch eine der Aufgaben unter [(Optional) Konfigurieren der erweiterten Einstellungen in Dynamic Media – Scene7-Modus](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode) abschließen.
 
-## (Optional) Konfigurieren der erweiterten Einstellungen in Dynamic Media – Scene7-Modus {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
+## (Optional) Konfigurieren Sie die erweiterten Einstellungen im Modus Dynamic Media - Scene7 . {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
 Wenn Sie die Konfiguration weiter anpassen und Dynamic Media – Scene7-Modus einrichten oder die Leistung optimieren möchten, können Sie eine oder mehrere der folgenden *optionalen* Aufgaben durchführen:
 
 * [(Optional) Einrichtung und Konfiguration der Einstellungen von Dynamic Media – Scene7-Modus](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
 
-* [(Optional) Steigern der Leistung von Dynamic Media – Scene7-Modus](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
+* [(Optional) Steigern Sie die Leistung des Modus Dynamic Media - Scene7 .](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
-* [(Optional) Filtern von Assets für die Replizierung](#optional-filtering-assets-for-replication)
+* [(Optional) Filtern von Assets für die Replikation](#optional-filtering-assets-for-replication)
 
 ### (Optional) Einrichtung und Konfiguration der Einstellungen von Dynamic Media – Scene7-Modus {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
@@ -162,8 +162,8 @@ Bei einigen der oben genannten Aufgaben müssen Sie das [Dynamic Media Classic-D
 Die Einrichtungs- und Konfigurationsaufgaben umfassen Folgendes:
 
 * [Veröffentlichungseinstellungen für Image-Server](#publishing-setup-for-image-server)
-* [Konfigurieren der allgemeinen Programmeinstellungen](#configuring-application-general-settings)
-* [Konfigurieren des Farb-Managements](#configuring-color-management)
+* [Allgemeine Anwendungseinstellungen konfigurieren](#configuring-application-general-settings)
+* [Farbmanagement konfigurieren](#configuring-color-management)
 * [Bearbeiten von MIME-Typen für unterstützte Formate](#editing-mime-types-for-supported-formats)
 * [Hinzufügen von MIME-Typen für nicht unterstützte Formate](#adding-mime-types-for-unsupported-formats)
 * [Erstellen von Stapelsatzvorgaben zum automatischen Erzeugen von Bild- und Rotationssets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
@@ -172,7 +172,7 @@ Die Einrichtungs- und Konfigurationsaufgaben umfassen Folgendes:
 
 Mit den Veröffentlichungseinstellungen wird festgelegt, wie Assets standardmäßig von Dynamic Media bereitgestellt werden. Wenn keine Einstellung festgelegt wird, stellt Dynamic Media ein Asset gemäß den Standardeinstellungen unter „Veröffentlichungseinstellungen“ bereit. Beispiel: Bei der Anfrage, ein Bild bereitzustellen, das kein Auflösungsattribut enthält, wird ein Bild mit der Einstellung „Standardobjektauflösung“ bereitgestellt.
 
-So konfigurieren Sie die Veröffentlichungseinstellungen: Tippen Sie in Dynamic Media Classic auf **[!UICONTROL Setup]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Veröffentlichungseinrichtung]** > **[!UICONTROL Image-Server]**.
+So konfigurieren Sie die Veröffentlichungseinstellungen: Navigieren Sie in Dynamic Media Classic zu **[!UICONTROL Setup]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Veröffentlichungseinstellungen]** > **[!UICONTROL Image-Server]**.
 
 Auf dem Bildschirm „Image-Server“ werden Standardeinstellungen für das Bereitstellen von Bildern festgelegt. Auf dem Bildschirm der Benutzeroberfläche finden Sie die Beschreibungen der einzelnen Einstellungen.
 
@@ -184,9 +184,9 @@ Auf dem Bildschirm „Image-Server“ werden Standardeinstellungen für das Bere
 * **[!UICONTROL Kompatibilitätsattribute]**: Diese Einstellung ermöglicht die Behandlung von Anfangs- und Endabsätzen in Textebenen wie in Version 3.6, um die Abwärtskompatibilität zu gewährleisten.
 * **[!UICONTROL Lokalisierungsunterstützung]**: Mit diesen Einstellungen können mehrere Gebietsschemaattribute verwaltet werden. Außerdem kann damit eine Zeichenfolge der Gebietsschemakarte angegeben werden, damit Sie festlegen können, welche Sprachen für die verschiedenen QuickInfos in Viewern unterstützt werden sollen. Weitere Informationen zur Einrichtung der **[Lokalisierungsunterstützung]** finden Sie unter [Überlegungen beim Einrichten der Lokalisierung von Assets](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html?lang=en#considerations-when-setting-up-localization-of-assets).
 
-#### Konfigurieren der allgemeinen Programmeinstellungen {#configuring-application-general-settings}
+#### Allgemeine Anwendungseinstellungen konfigurieren {#configuring-application-general-settings}
 
-Tippen Sie zum Öffnen der Seite &quot;Allgemeine Programmeinstellungen&quot;in der globalen Navigationsleiste von Dynamic Media Classic auf **[!UICONTROL Einrichtung]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Allgemeine Einstellungen]**.
+Um die Seite &quot;Allgemeine Programmeinstellungen&quot;zu öffnen, navigieren Sie in der globalen Navigationsleiste von Dynamic Media Classic zu **[!UICONTROL Einrichtung]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Allgemeine Einstellungen]**.
 
 **[!UICONTROL Server]**: Bei der Kontobereitstellung stellt Dynamic Media automatisch die zugeordneten Server für Ihr Unternehmen bereit. Diese Server werden verwendet, um URL-Zeichenfolgen für Ihre Website und Programme zu erstellen. Diese URL-Aufrufe gelten spezifisch für Ihr Konto. Ändern Sie keinen der Servernamen, es sei denn, dies wird von der Kundenunterstützung von Adobe ausdrücklich angewiesen.
 
@@ -200,20 +200,20 @@ Wählen Sie immer diese Einstellung, um die Konsistenz mit Experience Manager si
 * **[!UICONTROL In belieb. Ordner Assets mit ident. Namen und ident. Erweit. überschreiben]**: Das Ersatzbild muss dieselbe Dateierweiterung haben wie das Originalbild (beispielsweise würde „chair.jpg“ die Datei „chair.jpg“ ersetzen, nicht jedoch die Datei „chair.tif“). Sie können das Ersatzbild jedoch in einen anderen Ordner hochladen als den, in dem sich das Original befindet. Das hochgeladene Bild bleibt dann im neuen Ordner; die Datei befindet sich also nicht mehr am ursprünglichen Speicherort.
 * **[!UICONTROL In belieb. Ordner Assets mit ident. Namen unabh. von Erweit. überschreiben]**: Diese Option stellt die am wenigsten einschränkende Ersetzungsregel dar. Sie können ein Ersatzbild in einen anderen Ordner hochladen als den, in dem sich das Originalbild befindet, und eine Datei mit einer anderen Dateierweiterung verwenden, um die Originaldatei zu ersetzen. Wenn sich die Originaldatei in einem anderen Ordner befindet, bleibt das Ersatzbild in dem neuen Ordner, in den es hochgeladen wurde.
 
-**[!UICONTROL Standardfarbprofile]**: Zusätzliche Informationen finden Sie unter [Konfigurieren des Farb-Managements](#configuring-color-management).
+**[!UICONTROL Standardfarbprofile]**  - Weitere Informationen finden Sie unter  [Konfigurieren der ](#configuring-color-management) Farbverwaltung .
 
 >[!NOTE]
-Standardmäßig zeigt das System 15 Ausgabedarstellungen an, wenn Sie **[!UICONTROL Ausgabedarstellungen]** auswählen, und 15 Viewer-Voreinstellungen, wenn Sie in der Detailansicht des Assets **[!UICONTROL Viewer]** auswählen. Sie können diese Grenze erhöhen. Siehe [Erhöhen der Anzahl angezeigter Bildvorgaben](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) oder [Erhöhen der Anzahl angezeigter Viewer-Vorgaben](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+Standardmäßig zeigt das System 15 Ausgabedarstellungen an, wenn Sie **[!UICONTROL Ausgabedarstellungen]** auswählen, und 15 Viewer-Voreinstellungen, wenn Sie in der Detailansicht des Assets **[!UICONTROL Viewer]** auswählen. Sie können diese Grenze erhöhen. Siehe [Erhöhen Sie die Anzahl der angezeigten Bildvorgaben](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) oder [Erhöhen Sie die Anzahl der angezeigten Viewer-Vorgaben](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 
-#### Konfigurieren des Farb-Managements {#configuring-color-management}
+#### Farbmanagement konfigurieren {#configuring-color-management}
 
 Beim Farb-Management für Dynamic Media können Sie die Farben von Assets korrigieren. Bei der Farbkorrektur behalten übernommene Assets ihren Farbraum (RGB, CMYK, Grau) und das eingebettete Farbprofil bei. Wenn Sie eine dynamische Ausgabedarstellung anfordern, wird die Bildfarbe gemäß dem Zielfarbraum korrigiert, indem eine CMYK-, RGB- oder Grau-Ausgabe verwendet wird. Siehe [Konfigurieren von Bildvorgaben](/help/assets/managing-image-presets.md).
 
 So konfigurieren Sie die Standardfarbeigenschaften so, dass die Farbkorrektur aktiviert ist, wenn Bilder angefordert werden:
 
 1. Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) und melden Sie sich mit den Anmeldedaten, die Sie zum Zeitpunkt der Bereitstellung erhalten haben, bei Ihrem Konto an.
-1. Navigieren Sie zu **[!UICONTROL Einrichtung > Anwendungseinstellungen]**.
+1. Navigieren Sie zu **[!UICONTROL Setup]** > **[!UICONTROL Anwendungseinstellungen]**.
 1. Erweitern Sie den Bereich **[!UICONTROL Veröffentlichungseinstellungen]** und wählen Sie **[!UICONTROL Image-Server]**. Legen Sie **[!UICONTROL Veröffentlichungskontext]** beim Festlegen von Standardwerten für Veröffentlichungsinstanzen auf **[!UICONTROL Image Serving]** fest.
 1. Scrollen Sie zu der Eigenschaft, die Sie ändern möchten. Beispielsweise eine Eigenschaft im Bereich **[!UICONTROL Farbverwaltungsattribute]** .
 
@@ -224,7 +224,7 @@ So konfigurieren Sie die Standardfarbeigenschaften so, dass die Farbkorrektur ak
    * **[!UICONTROL RGB-Standardfarbraum]**: Name des standardmäßigen RGB-Farbprofils
    * **[!UICONTROL Rendering Intent für Farbumwandlung]**: Gibt die Render-Priorität an. Zulässige Werte sind: **[!UICONTROL wahrnehmungsorientiert]**, **[!UICONTROL relativ farbmetrisch]**, **[!UICONTROL Sättigung]**, **[!UICONTROL absolut farbmetrisch]**. Adobe empfiehlt **[!UICONTROL relativ]** als Standard.
 
-1. Tippen Sie auf **[!UICONTROL Speichern]**.
+1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
 So können Sie beispielsweise den **[!UICONTROL RGB-Standardfarbraum]** auf *sRGB* und den **[!UICONTROL CMYK-Standardfarbraum]** auf *WebCoated* festlegen.
 
@@ -243,13 +243,13 @@ Sie können festlegen, welche Asset-Typen von Dynamic Media verarbeitet werden,
 * Konvertieren eines Adobe PDF-Dokuments in ein E-Katalog-Asset
 * Konvertieren eines Adobe Photoshop-Dokuments (.PSD) in ein Bannervorlagen-Asset für Personalisierung
 * Rastern einer Adobe Illustrator- (.AI) oder Adobe Photoshop Encapsulated PostScript®-Datei (.EPS)
-* [Videoprofile](/help/assets/video-profiles.md) und [Bilddarstellungsprofile](/help/assets/image-profiles.md) können jeweils zum Definieren der Verarbeitung von Videos und Bildern verwendet werden.
+* [Video-](/help/assets/video-profiles.md) Profile und  [Imaging-](/help/assets/image-profiles.md) Profile können zur Definition der Verarbeitung von Videos bzw. Bildern verwendet werden.
 
 Informationen hierzu finden Sie unter [Hochladen von Assets](/help/assets/manage-assets.md#uploading-assets).
 
 **So bearbeiten Sie MIME-Typen für unterstützte Formate:**
 
-1. Tippen Sie in Experience Manager auf das Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen. Tippen Sie dann auf **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
+1. Wählen Sie in Experience Manager das Experience Manager-Logo aus, um auf die globale Navigationskonsole zuzugreifen, und navigieren Sie dann zu **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
 1. Navigieren Sie in der linken Leiste zu:
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -261,14 +261,14 @@ Informationen hierzu finden Sie unter [Hochladen von Assets](/help/assets/manage
 
    * Doppelklicken Sie auf das Feld **[!UICONTROL Aktiviert]**. Standardmäßig sind alle Asset-MIME-Typen aktiviert (auf **[!UICONTROL true]** festgelegt). Das bedeutet, dass die Assets zur Verarbeitung mit Dynamic Media synchronisiert werden. Wenn Sie diesen Asset-MIME-Typ von der Verarbeitung ausschließen möchten, ändern Sie diese Einstellung in **[!UICONTROL false]**.
 
-   * Doppeltippen Sie auf **[!UICONTROL jobParam]** , um das zugehörige Textfeld zu öffnen. Unter [Unterstützte MIME-Typen](/help/assets/assets-formats.md#supported-mime-types) finden Sie eine Liste mit zulässigen Werten für Verarbeitungsparameter, die Sie für einen bestimmten MIME-Typ verwenden können.
+   * Doppeltippen Sie auf **[!UICONTROL jobParam]**, um das zugehörige Textfeld zu öffnen. Unter [Unterstützte MIME-Typen](/help/assets/assets-formats.md#supported-mime-types) finden Sie eine Liste mit zulässigen Werten für Verarbeitungsparameter, die Sie für einen bestimmten MIME-Typ verwenden können.
 
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Wiederholen Sie die Schritte 3–4, um weitere MIME-Typen zu bearbeiten.
-   * Tippen Sie in der Menüleiste der CRXDE Lite-Seite auf **[!UICONTROL Alle speichern]**.
+   * Wählen Sie in der Menüleiste der CRXDE Lite-Seite **[!UICONTROL Alle speichern]** aus.
 
-1. Tippen Sie oben links auf der Seite auf **[!UICONTROL CRXDE Lite]** , um zum Experience Manager zurückzukehren.
+1. Wählen Sie links oben auf der Seite **[!UICONTROL CRXDE Lite]** aus, um zum Experience Manager zurückzukehren.
 
 #### Hinzufügen von MIME-Typen für nicht unterstützte Formate {#adding-mime-types-for-unsupported-formats}
 
@@ -276,7 +276,7 @@ Sie können in Experience Manager Assets benutzerdefinierte MIME-Typen für nich
 
 **So fügen Sie MIME-Typen für nicht unterstützte Formate hinzu:**
 
-1. Tippen Sie in Experience Manager auf **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web Console]**.
+1. Navigieren Sie vom Experience Manager zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
@@ -284,11 +284,11 @@ Sie können in Experience Manager Assets benutzerdefinierte MIME-Typen für nich
 
    ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
-1. Scrollen Sie auf der Seite nach unten zum Namen *Adobe CQ Scene7 Asset MIME type Service*, wie im folgenden Screenshot gezeigt. Tippen Sie rechts neben dem Namen auf die Option **[!UICONTROL Konfigurationswerte bearbeiten]** (Stiftsymbol).
+1. Scrollen Sie auf der Seite nach unten zum Namen *Adobe CQ Scene7 Asset MIME type Service*, wie im folgenden Screenshot gezeigt. Wählen Sie rechts neben dem Namen die Option **[!UICONTROL Konfigurationswerte bearbeiten]** (Stiftsymbol).
 
    ![2019-08-02_16-44-56](assets/2019-08-02_16-44-56.png)
 
-1. Tippen Sie auf der Seite **Adobe CQ Scene7 Asset MIME type Service** auf ein beliebiges Pluszeichen &lt;+>. Die Position in der Tabelle, an der Sie auf das Pluszeichen tippen, um den neuen MIME-Typ hinzuzufügen, ist unerheblich.
+1. Wählen Sie auf der Seite **Adobe CQ Scene7 Asset MIME type Service** ein beliebiges Pluszeichen &lt;+> aus. Die Position in der Tabelle, an der Sie das Pluszeichen zum Hinzufügen des neuen MIME-Typs auswählen, ist trivial.
 
    ![2019-08-02_16-27-27](assets/2019-08-02_16-27-27.png)
 
@@ -298,12 +298,12 @@ Sie können in Experience Manager Assets benutzerdefinierte MIME-Typen für nich
 
    ![2019-08-02_16-36-36](assets/2019-08-02_16-36-36.png)
 
-1. Tippen Sie unten rechts auf der Seite auf **[!UICONTROL Speichern]**.
+1. Wählen Sie in der rechten unteren Ecke der Seite **[!UICONTROL Speichern]** aus.
 
    An dieser Stelle können Sie die Registerkarte des Browsers schließen, auf der die Seite „Adobe Experience Manager-Web-Konsolen-Konfiguration“ geöffnet ist.
 
 1. Kehren Sie zur Browser-Registerkarte zurück, auf der sich Ihre geöffnete Experience Manager-Konsole befindet.
-1. Tippen Sie in Experience Manager auf **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
+1. Navigieren Sie vom Experience Manager zu **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
 
    ![2019-08-02_16-55-41](assets/2019-08-02_16-55-41.png)
 
@@ -320,7 +320,7 @@ Sie können in Experience Manager Assets benutzerdefinierte MIME-Typen für nich
 
    ![2019-08-02_16-60-30](assets/2019-08-02_16-60-30.png)
 
-1. Tippen Sie oben links auf der CRXDE Lite auf **[!UICONTROL Alle speichern]**.
+1. Wählen Sie links oben auf der Seite &quot;CRXDE Lite&quot;die Option **[!UICONTROL Alle speichern]**.
 
 #### Erstellen von Stapelsatzvorgaben zum automatischen Erzeugen von Bild- und Rotationssets {#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets}
 
@@ -330,7 +330,7 @@ Definieren Sie zunächst die Benennungskonvention für die Gruppierung von Asset
 
 Wenn Sie Dateien hochladen, erstellt Dynamic Media automatisch einen Satz mit allen Dateien, die den definierten Benennungsregeln in den aktiven Vorgaben entsprechen.
 
-##### Konfigurieren der Standardbenennung
+##### Standardbenennung konfigurieren
 
 Erstellen Sie eine Standardbenennungskonvention zur Verwendung in einem beliebigen Stapelsatzvorgaben-Rezept. Die in der Definition der Stapelsatzvorgabe ausgewählte Standardbenennungskonvention ist wahrscheinlich alles, was Ihr Unternehmen zum Generieren von Stapelsätzen benötigt. Eine Stapelsatzvorgabe wird erstellt, damit die von Ihnen definierte Standardbenennungskonvention verwendet wird. Sie können so viele Stapelsatzvorgaben mit alternativen, benutzerdefinierten Benennungskonventionen erstellen, wie für einen bestimmten Satz von Inhalten notwendig sind, sofern eine Ausnahme für die unternehmensspezifische Standardbenennung vorhanden ist.
 
@@ -346,7 +346,7 @@ Zwei Elemente sind zur Definition verfügbar: Übereinstimmung und Basisname. Mi
 
    Ihre Benutzer- und Anmeldedaten haben Sie zum Zeitpunkt der Bereitstellung von Adobe erhalten. Wenn Ihnen die Informationen nicht vorliegen, wenden Sie sich an den technischen Support.
 
-1. Tippen Sie in der Navigationsleiste oben auf der Seite auf **[!UICONTROL Einrichtung]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Stapelsatzvorgaben]** > **[!UICONTROL Standardbenennung]**.
+1. Navigieren Sie in der Navigationsleiste oben auf der Seite zu **[!UICONTROL Einstellungen]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Stapelsatzvorgaben]** > **[!UICONTROL Standardbenennung]**.
 1. Wählen Sie **[!UICONTROL Formular anzeigen]** oder **[!UICONTROL Code anzeigen]**, um die gewünschte Ansicht festzulegen, und geben Sie Informationen zu den einzelnen Elementen ein.
 
    Sie können das Kontrollkästchen **[!UICONTROL Code anzeigen]** aktivieren, um die Erstellung des regelmäßigen Ausdruckswerts neben Ihren Formularauswahlen anzuzeigen. Sie können diese Werte nach Bedarf eingeben oder ändern. Dies hilft Ihnen bei der Definition der Elemente der Benennungsdefinition, falls Sie aus irgendeinem Grund durch die Formularansicht eingeschränkt werden. Falls Ihre Werte in der Formularansicht nicht analysiert werden können, werden die Formularfelder inaktiv.
@@ -357,13 +357,13 @@ Zwei Elemente sind zur Definition verfügbar: Übereinstimmung und Basisname. Mi
 1. Erweitern Sie die Elemente bei Bedarf und geben Sie die zu verwendenden Benennungsregeln ein.
 1. Führen Sie ggf. einen der folgenden Schritte aus:
 
-   * Tippen Sie auf **[!UICONTROL Hinzufügen]**, um eine weitere Benennungsregel für ein Element hinzuzufügen.
-   * Tippen Sie auf **[!UICONTROL Entfernen]**, um eine Benennungsregel für ein Element zu löschen.
+   * Wählen Sie **[!UICONTROL Hinzufügen]** aus, um eine weitere Benennungsregel für ein Element hinzuzufügen.
+   * Wählen Sie **[!UICONTROL Entfernen]** aus, um eine Benennungsregel für ein Element zu löschen.
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Tippen Sie auf **[!UICONTROL Speichern unter]** und geben Sie einen Namen für die Vorgabe ein.
-   * Wenn Sie eine vorhandene Vorgabe bearbeiten, tippen Sie auf **[!UICONTROL Speichern]**.
+   * Wählen Sie **[!UICONTROL Speichern unter]** aus und geben Sie einen Namen für die Vorgabe ein.
+   * Wählen Sie **[!UICONTROL Speichern]** aus, wenn Sie eine vorhandene Vorgabe bearbeiten.
 
 ##### Erstellen einer Stapelsatzvorgabe
 
@@ -379,18 +379,18 @@ Sie können zum Definieren einer Stapelsatzvorgabe entweder die Formularfeldmeth
 
    Ihre Benutzer- und Anmeldedaten haben Sie zum Zeitpunkt der Bereitstellung von Adobe erhalten. Wenn Ihnen die Informationen nicht vorliegen, wenden Sie sich an den technischen Support.
 
-1. Tippen Sie in der Navigationsleiste im oberen Seitenbereich auf **[!UICONTROL Einrichtung]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Stapelsatzvorgaben]** > **[!UICONTROL Stapelsatzvorgabe]**.
+1. Navigieren Sie in der Navigationsleiste oben auf der Seite zu **[!UICONTROL Einstellungen]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Stapelsatzvorgaben]** > **[!UICONTROL Stapelsatzvorgabe]**.
 
    **[!UICONTROL Formular]** anzeigen, wie oben rechts auf der Detailseite festgelegt, ist die Standardansicht.
 
-1. Tippen Sie im Bereich &quot;Vorgabenliste&quot;auf **[!UICONTROL Hinzufügen]** , um die Definitionsfelder im Detailbereich auf der rechten Seite des Bildschirms zu aktivieren.
+1. Wählen Sie im Bereich &quot;Vorgabenliste&quot;die Option **[!UICONTROL Hinzufügen]** aus, um die Definitionsfelder im Detailbereich auf der rechten Seite des Bildschirms zu aktivieren.
 1. Geben Sie im Bereich „Details“ im Feld „Vorgabenname“ einen Namen für die Vorgabe ein.
 1. Wählen Sie im Dropdownmenü „Stapelsatztyp“ einen Vorgabentyp aus.
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Wenn Sie eine standardmäßige Benennungskonvention verwenden, die Sie zuvor unter **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Stapelsatzvorgaben]** > **[!UICONTROL Standardbenennung]** eingerichtet haben, erweitern Sie **[!UICONTROL Asset-Benennungskonventionen]** und tippen Sie dann in der Dropdownliste &quot;Dateibenennung&quot;auf **[!UICONTROL Standard]**.
+   * Wenn Sie eine standardmäßige Benennungskonvention verwenden, die Sie zuvor unter **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Stapelsatzvorgaben]** > **[!UICONTROL Standardbenennung]** eingerichtet haben, erweitern Sie **[!UICONTROL Asset-Benennungskonventionen]** und wählen Sie dann in der Dropdownliste &quot;Dateibenennung&quot;die Option **[!UICONTROL Standard]** aus.
 
-   * Um beim Einrichten der Vorgabe eine neue Benennungskonvention zu definieren, erweitern Sie **[!UICONTROL Asset-Benennungskonventionen]** und tippen Sie dann in der Dropdownliste &quot;Dateibenennung&quot;auf **[!UICONTROL Benutzerdefiniert]**.
+   * Um beim Einrichten der Vorgabe eine neue Benennungskonvention zu definieren, erweitern Sie **[!UICONTROL Asset-Benennungsregeln]** und wählen Sie dann in der Dropdown-Liste &quot;Dateibenennung&quot;die Option **[!UICONTROL Benutzerdefiniert]** aus.
 
 1. Definieren Sie für die Reihenfolge der Sequenz die Reihenfolge, in der Bilder angezeigt werden, nachdem das Set in Dynamic Media gruppiert wurde.
 
@@ -400,8 +400,8 @@ Sie können zum Definieren einer Stapelsatzvorgabe entweder die Formularfeldmeth
 
    Wenn Sie eine große Anzahl von Sets definieren, trennen Sie die Sets von den Ordnern, die die Assets selbst enthalten. Erstellen Sie beispielsweise einen Ordner &quot;Bildsets&quot;und legen Sie hier die generierten Sets ab.
 
-1. Tippen Sie im Bereich „Details“ auf **[!UICONTROL Speichern]**.
-1. Tippen Sie neben dem neuen Vorgabenamen auf **[!UICONTROL Aktiv]**.
+1. Wählen Sie im Bereich &quot;Details&quot;die Option **[!UICONTROL Save]**.
+1. Wählen Sie **[!UICONTROL Active]** neben dem neuen Vorgabennamen aus.
 
    Durch das Aktivieren dieser Vorgabe wird sichergestellt, dass beim Hochladen von Assets in Dynamic Media die Stapelsatzvorgabe zur Erstellung des Satzes angewendet wird.
 
@@ -435,15 +435,15 @@ Wenn das Rotationsset hochgeladen und veröffentlicht wird, aktivieren Sie den N
 
    Ihre Benutzer- und Anmeldedaten haben Sie zum Zeitpunkt der Bereitstellung von Adobe erhalten. Wenn Ihnen die Informationen nicht vorliegen, wenden Sie sich an den technischen Support.
 
-1. Tippen Sie in der Navigationsleiste im oberen Seitenbereich auf **[!UICONTROL Einrichtung]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Stapelsatzvorgaben]** > **[!UICONTROL Stapelsatzvorgabe]**.
+1. Navigieren Sie in der Navigationsleiste oben auf der Seite zu **[!UICONTROL Einstellungen]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Stapelsatzvorgaben]** > **[!UICONTROL Stapelsatzvorgabe]**.
 
    **[!UICONTROL Formular]** anzeigen, wie oben rechts auf der Detailseite festgelegt, ist die Standardansicht.
 
-1. Tippen Sie im Bereich &quot;Vorgabenliste&quot;auf **[!UICONTROL Hinzufügen]** , um die Definitionsfelder im Detailbereich auf der rechten Seite des Bildschirms zu aktivieren.
+1. Wählen Sie im Bereich &quot;Vorgabenliste&quot;die Option **[!UICONTROL Hinzufügen]** aus, um die Definitionsfelder im Detailbereich auf der rechten Seite des Bildschirms zu aktivieren.
 1. Geben Sie im Bereich „Details“ im Feld „Vorgabenname“ einen Namen für die Vorgabe ein.
 1. Wählen Sie im Dropdown-Menü „Batch-Settyp“ die Option **[!UICONTROL Assetset]**.
 1. Wählen Sie in der Dropdown-Liste „Untertyp“ die Option **[!UICONTROL Multiachsen-Rotationsset]** aus.
-1. Erweitern Sie **[!UICONTROL Asset-Benennungskonventionen]** und tippen Sie dann in der Dropdownliste &quot;Dateibenennung&quot;auf **[!UICONTROL Benutzerdefiniert]**.
+1. Erweitern Sie **[!UICONTROL Asset-Benennungskonventionen]** und wählen Sie dann in der Dropdown-Liste &quot;Dateibenennung&quot;die Option **[!UICONTROL Benutzerdefiniert]** aus.
 1. Verwenden Sie die Attribute **[!UICONTROL Übereinstimmung]** und optional **[!UICONTROL Basisname]**, um einen regulären Ausdruck für die Benennung von Bild-Assets zu definieren, aus denen die Gruppierung besteht.
 
    Der reguläre Ausdruck &quot;Übereinstimmung mit Literal&quot;kann beispielsweise wie folgt aussehen:
@@ -481,12 +481,12 @@ Wenn das Rotationsset hochgeladen und veröffentlicht wird, aktivieren Sie den N
 
    Wenn Sie eine große Anzahl von Sets definieren, trennen Sie die Sets von den Ordnern, die die Assets selbst enthalten. Erstellen Sie beispielsweise einen Ordner mit Rotationssets , um die generierten Sets hier abzulegen.
 
-1. Tippen Sie im Bereich „Details“ auf **[!UICONTROL Speichern]**.
-1. Tippen Sie neben dem neuen Vorgabenamen auf **[!UICONTROL Aktiv]**.
+1. Wählen Sie im Bereich &quot;Details&quot;die Option **[!UICONTROL Save]**.
+1. Wählen Sie **[!UICONTROL Active]** neben dem neuen Vorgabennamen aus.
 
    Durch das Aktivieren dieser Vorgabe wird sichergestellt, dass beim Hochladen von Assets in Dynamic Media die Stapelsatzvorgabe zur Erstellung des Satzes angewendet wird.
 
-### (Optional) Steigern der Leistung von Dynamic Media – Scene7-Modus {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
+### (Optional) Steigern Sie die Leistung des Modus Dynamic Media - Scene7 . {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
 Damit der Dynamic Media-Scene7-Modus reibungslos ausgeführt werden kann, empfiehlt Adobe die folgenden Tipps zur Optimierung der Synchronisierungsleistung/-skalierbarkeit:
 
@@ -495,7 +495,7 @@ Damit der Dynamic Media-Scene7-Modus reibungslos ausgeführt werden kann, empfie
 * Aktualisieren der vordefinierten Warteschlangen-Workerthreads des Granite-Verlaufs-Workflows (Bilder und Nicht-Video-Assets).
 * Aktualisieren der maximalen Upload-Verbindungen mit dem Dynamic Media Classic-Server.
 
-#### Aktualisieren der vordefinierten Auftragsparameter zur Verarbeitung verschiedener Dateiformate.
+#### Aktualisieren der vordefinierten Auftragsparameter für die Verarbeitung verschiedener Dateiformate
 
 Beim Hochladen von Dateien können Sie die Auftragsparameter für eine schnellere Verarbeitung anpassen. Wenn Sie beispielsweise PSD-Dateien hochladen, diese jedoch nicht als Vorlagen verarbeiten möchten, können Sie die Ebenenextraktion auf &quot;false&quot;(Aus) setzen. In diesem Fall wird der angepasste Auftragsparameter wie folgt angezeigt: `process=None&createTemplate=false`.
 
@@ -540,7 +540,7 @@ Die Transit-Workflow-Warteschlange von Granite wird für den Workflow **[!UICON
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
-1. Tippen Sie auf **[!UICONTROL Speichern]**.
+1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
 #### Aktualisieren der Granite-Workflow-Warteschlange {#updating-the-granite-workflow-queue}
 
@@ -559,7 +559,7 @@ Die Granite-Workflow-Warteschlange wird für Workflows ohne Verlauf verwendet. I
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
-1. Tippen Sie auf **[!UICONTROL Speichern]**.
+1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
 #### Aktualisieren der Dynamic Media Classic-Upload-Verbindung {#updating-the-scene-upload-connection}
 
@@ -578,9 +578,9 @@ Die Einstellung der Upload-Verbindung (Scene7) synchronisiert Experience Manager
 
    ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-1. Tippen Sie auf **[!UICONTROL Speichern]**.
+1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-### (Optional) Filtern von Assets für die Replizierung {#optional-filtering-assets-for-replication}
+### (Optional) Filtern von Assets für die Replikation {#optional-filtering-assets-for-replication}
 
 In Nicht-Dynamic Media-Bereitstellungen replizieren Sie *alle*-Assets (sowohl Bilder als auch Videos) aus Ihrer Experience Manager-Autorenumgebung in den Experience Manager-Veröffentlichungsknoten. Dieser Workflow ist erforderlich, da die Experience Manager-Veröffentlichungsserver auch die Assets bereitstellen.
 
@@ -588,11 +588,11 @@ Da Assets jedoch in Dynamic Media-Bereitstellungen über den Cloud Service berei
 
 Die Filter bieten Ihnen die Möglichkeit, *Assets vom Veröffentlichen des Experience Managers auszuschließen.*
 
-#### Verwenden von Asset-Standardfiltern für die Replikation {#using-default-asset-filters-for-replication}
+#### Verwenden Sie Asset-Standardfilter für die Replikation {#using-default-asset-filters-for-replication}
 
 Wenn Sie Dynamic Media für Bildbearbeitung, Videos oder beides verwenden, können Sie die von Adobe bereitgestellten Standardfilter unverändert verwenden. Folgende Filter sind standardmäßig aktiviert:
 
-|  | Filter | Mime-Typ | Ausgabeformate |
+|  | Filter | Mime-Typ | Ausgabedarstellungen |
 | --- | --- | --- | --- |
 | Dynamic Media-Bildbereitstellung | filter-image<br>filter-sets | Beginnt mit **image/**<br> Enthält **Applications/** und endet mit **set**. | Die standardmäßigen &quot;filter-images&quot;(für einzelne Bild-Assets, einschließlich interaktiver Bilder) und &quot;filter-sets&quot;(für Rotationssets, Bildsets, gemischte Mediensets und Karussellsets) werden wie folgt ausgeführt:<br> ・ Das Originalbild und statische Bilddarstellungen werden von der Replikation ausgeschlossen. |
 | Dynamic Media-Videobereitstellung | filter-video | Beginnt mit **video/** | Das vordefinierte &quot;Filtervideo&quot;wird:<br> ・ Das Originalvideo und statische Miniaturwiedergaben von der Replikation ausschließen. |
@@ -602,7 +602,7 @@ Filter gelten für MIME-Typen und können nicht pfadspezifisch sein.
 
 #### Anpassen von Asset-Filtern für die Replikation {#customizing-asset-filters-for-replication}
 
-1. Tippen Sie in Experience Manager auf das Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen, und tippen Sie dann auf **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
+1. Wählen Sie in Experience Manager das Experience Manager-Logo aus, um auf die globale Navigationskonsole zuzugreifen, und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
 1. Navigieren Sie in der linken Ordnerstruktur zu `/etc/replication/agents.author/publish/jcr:content/damRenditionFilters` , um die Filter zu überprüfen.
 
    ![chlimage_1-17](assets/chlimage_1-2.png)
