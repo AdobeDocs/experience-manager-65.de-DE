@@ -4,14 +4,14 @@ description: Funktionsliste für fließende Erlebnisse
 index: n
 feature: 'Authoring – '
 exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
-# AEM Fluid Experiments Feature List{#aem-fluid-experiences-feature-list}
+# Funktionsliste für AEM Erlebnisse{#aem-fluid-experiences-feature-list}
 
 Adobe Experience Manager Fluid Experiences nutzt die leistungsstarken Funktionen von AEM Sites, AEM Dynamic Media und AEM Assets, um eine robuste Lösung für die Headless Content-Bereitstellung zu bieten.
 
@@ -54,13 +54,13 @@ In den folgenden Tabellen werden die Funktionen AEM Fluid Experiences definiert 
 | HTTP-API für strukturierte Inhalte (lesen) |
 | HTTP-API für strukturierte Inhalte (CRUD) |
 | [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html) |
-| [Dynamische Medien](/help/assets/dynamic-media.md) |
+| [Dynamic Media](/help/assets/dynamic-media.md) |
 
 ## Admin- und Integrationsfunktionen {#admin-and-integration-features}
 
 |  |
 |---|
-| [Benutzerverwaltung](/help/sites-administering/user-group-ac-admin.md) |
+| [User Management](/help/sites-administering/user-group-ac-admin.md) |
 | [Mehrsprachiges Asset-Management](/help/assets/multilingual-assets.md) |
 | [Internationalisierung ](/help/sites-developing/i18n.md) |
 | [Übersetzung von Inhalten](/help/sites-administering/translation.md) |
