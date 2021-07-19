@@ -10,10 +10,10 @@ discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 role: User, Admin
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
 feature: Zusammenarbeit, Asset-Management
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 89%
+source-wordcount: '422'
+ht-degree: 80%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 89%
 
 Mit [Dynamic Media](https://business.adobe.com/de/products/experience-manager/assets/dynamic-media.html) können Sie visuell ansprechende Merchandising- und Marketing-Assets nach Bedarf bereitstellen, die automatisch für die Anzeige auf Web- sowie Mobile- und Social-Media-Sites skaliert werden. Anhand eines Sets von Assets aus Primärquellen können Sie mit Dynamic Media mehrere Varianten ansprechender Inhalte in Echtzeit über das globale, skalierbare und leistungsoptimierte Netzwerk generieren und bereitstellen.
 
-Dynamische Medien ermöglichen interaktive Anzeigeerlebnisse, wie Zoom, Drehen um 360 Grad und Videos. Die Funktion für dynamische Medien bindet die Workflows der Adobe Experience Manager-Lösung für die Verwaltung digitaler Assets (Assets) auf einzigartige Weise ein, um das Management digitaler Kampagnen zu vereinfachen und zu optimieren.
+Dynamic Media ermöglicht interaktive Anzeigeerlebnisse, wie Zoom, Drehen um 360 Grad und Videos. Dynamic Media bindet die Workflows der Adobe Experience Manager-Lösung für die Verwaltung digitaler Assets (Assets) auf einzigartige Weise ein, um die Verwaltung digitaler Kampagnen zu vereinfachen und zu optimieren.
 
 <!-- >ARTICLE IS MISSING. GIVES 404 [!NOTE]
 >
@@ -29,7 +29,7 @@ Dynamische Medien ermöglichen interaktive Anzeigeerlebnisse, wie Zoom, Drehen u
 
 ## Einsatzmöglichkeiten für Dynamic Media   {#what-you-can-do-with-dynamic-media}
 
-Mit Dynamic Media können Sie Assets vor ihrer Veröffentlichung verwalten. Eine ausführliche Beschreibung der allgemeinen Arbeit mit digitalen Assets finden Sie in [Arbeiten mit digitalen Assets](manage-assets.md). Die allgemeinen Themen umfassen das Hochladen, Herunterladen, Bearbeiten und Veröffentlichen von Assets, das Anzeigen und Bearbeiten von Eigenschaften und die Suche nach Assets.
+Mit Dynamic Media können Sie Assets vor ihrer Veröffentlichung verwalten. Die allgemeine Funktionsweise mit Assets wird unter [Arbeiten mit digitalen Assets](manage-assets.md) ausführlich beschrieben. Die allgemeinen Themen umfassen das Hochladen, Herunterladen, Bearbeiten und Veröffentlichen von Assets, das Anzeigen und Bearbeiten von Eigenschaften und die Suche nach Assets.
 
 Funktionen, die nur für Dynamic Media vorgesehen sind:
 
@@ -44,7 +44,7 @@ Funktionen, die nur für Dynamic Media vorgesehen sind:
 * [Video](video.md)
 * [Bereitstellen von Dynamic Media-Assets](delivering-dynamic-media-assets.md)
 * [Verwalten von Assets](managing-assets.md)
-* [Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups](custom-pop-ups.md)
+* [Erstellen benutzerdefinierter Popups mithilfe der Schnellansicht](custom-pop-ups.md)
 
 Siehe auch [Einrichten von Dynamic Media](administering-dynamic-media.md).
 
@@ -60,7 +60,7 @@ Anhand der folgenden Merkmale können Sie erkennen, ob Dynamic Media aktiviert i
 * Bildsets, Rotationssets und Sets für gemischte Medien sind verfügbar.
 * PTIFF-Ausgabedarstellungen werden erstellt.
 
-Wenn Sie auf ein Bild-Asset klicken, unterscheidet sich die Ansicht des Assets von der von Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). Dynamic Media nutzt die On-Demand-HTML5-Viewer.
+Wenn Sie ein Bild-Asset auswählen, unterscheidet sich die Ansicht des Assets von der von Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). Dynamic Media nutzt die On-Demand-HTML5-Viewer.
 
 ### Dynamische Ausgabedarstellungen {#dynamic-renditions}
 
@@ -76,7 +76,7 @@ Bildsets, Rotationssets und Sets für gemischte Medien sind verfügbar, wenn Dyn
 
 ### PTIFF-Ausgabedarstellungen {#ptiff-renditions}
 
-Assets mit aktivierter Dynamic Media-Funktion umfassen `pyramid.tiffs`.
+Zu den für Dynamic Media aktivierten Assets gehören `pyramid.tiffs`.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
