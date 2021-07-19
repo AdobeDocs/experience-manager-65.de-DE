@@ -1,6 +1,6 @@
 ---
-title: Einbetten des Dynamic Media-Video- oder Bild-Viewers auf einer Web-Seite
-description: Erfahren Sie, wie Sie Dynamic Media-Videos oder -Bilder auf einer Web-Seite einbetten.
+title: Einbetten des Dynamic Media-Video-, Bild- oder Dimensional-Viewers auf einer Web-Seite
+description: Erfahren Sie, wie Sie Dynamic Media-Videos, -Bilder oder -3D-Bilder auf einer Web-Seite einbetten.
 uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,10 +10,10 @@ discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 feature: Viewer
 role: User, Admin
 exl-id: 203ea349-ef4c-421c-b4b6-76ee9d46ec34
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 100%
+source-wordcount: '381'
+ht-degree: 64%
 
 ---
 
@@ -23,7 +23,7 @@ Verwenden Sie die Funktion **[!UICONTROL Einbettungs-Code]**, wenn Sie ein Video
 
 Betten Sie URLs nur dann ein, wenn Sie Adobe Experience Manager *nicht* als Ihr WCM verwenden. Wenn Sie Experience Manager als Ihr WCM verwenden, [fügen Sie die Assets direkt zu Ihrer Seite hinzu](adding-dynamic-media-assets-to-pages.md).
 
-Siehe [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwebapplication.md).
+Siehe [Verknüpfen von URLs mit einer Webanwendung](linking-urls-to-yourwebapplication.md).
 
 Siehe [Bereitstellen von optimierten Bildern für eine responsive Site](responsive-site.md).
 
@@ -37,7 +37,7 @@ Siehe [Bereitstellen von optimierten Bildern für eine responsive Site](responsi
 >
 >Siehe [Veröffentlichen von Bildvorgaben](managing-image-presets.md#publishing-image-presets).
 
-**So betten Sie den Dynamic Media-Video- oder Bild-Viewer auf einer Web-Seite ein:**
+**So betten Sie den Dynamic Media-Video-, Bild- oder Dimensional-Viewer auf einer Web-Seite ein:**
 
 1. Navigieren Sie zum *veröffentlichten* Video- oder Bild-Asset, dessen Einbettungs-Code Sie kopieren möchten.
 
@@ -49,10 +49,10 @@ Siehe [Bereitstellen von optimierten Bildern für eine responsive Site](responsi
 
    Siehe [Veröffentlichen von Bildvorgaben](managing-image-presets.md#publishing-image-presets).
 
-1. Wählen Sie in der linken Leiste das Dropdown-Menü aus und tippen Sie auf **[!UICONTROL Viewer]**.
-1. Tippen Sie auf der linken Schiene auf den Namen einer Viewer-Vorgabe. Die Viewer-Vorgabe wird auf das Asset angewendet.
-1. Tippen Sie auf **[!UICONTROL Einbetten]**.
-1. Kopieren Sie im Dialogfeld **[!UICONTROL Einbettungs-Code]** den gesamten Code in die Zwischenablage und tippen Sie dann auf **[!UICONTROL Schließen]**.
+1. Wählen Sie in der linken Leiste das Dropdown-Menü aus und wählen Sie **[!UICONTROL Viewer]** aus.
+1. Wählen Sie in der linken Leiste einen Viewer-Vorgabennamen aus. Die Viewer-Vorgabe wird auf das Asset angewendet.
+1. Wählen Sie **[!UICONTROL Einbetten]** aus.
+1. Kopieren Sie im Dialogfeld **[!UICONTROL Einbettungscode]** den gesamten Code in die Zwischenablage und wählen Sie **[!UICONTROL Schließen]** aus.
 1. Fügen Sie den Integrations-Code in die Web-Seiten ein.
 
 ## Verwenden von HTTP/2 zur Bereitstellung von Dynamic Media-Assets   {#using-http-to-deliver-your-dynamic-media-assets}
