@@ -1,5 +1,5 @@
 ---
-title: 'Bereitstellung von Inhalt über HTTP/2 '
+title: Bereitstellung von Inhalten per HTTP/2
 description: HTTP/2 verbessert die Kommunikation zwischen Browsern und Servern, ermöglicht eine schnellere Übertragung von Informationen und verringert den Verarbeitungsaufwand.
 uuid: d9deb945-bdf5-4d6b-95c8-8bae4442e618
 contentOwner: Rick Brough
@@ -10,14 +10,14 @@ discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 role: User, Admin
 exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
 feature: Publishing,Configuration
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '732'
-ht-degree: 60%
+ht-degree: 61%
 
 ---
 
-# Bereitstellung von Inhalten über HTTP/2 {#http-delivery-of-content}
+# Bereitstellung von Inhalten per HTTP/2 {#http-delivery-of-content}
 
 Adobe freut sich, die Bereitstellung von Inhalt über HTTP/2 zu präsentieren, die eine Verbesserung der Leistung mit sich bringt.
 
