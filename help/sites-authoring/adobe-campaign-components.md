@@ -11,9 +11,9 @@ topic-tags: personalization
 discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '2854'
+source-wordcount: '2847'
 ht-degree: 83%
 
 ---
@@ -69,7 +69,7 @@ Im folgenden Beispiel sehen Sie, wie die Komponente „Überschrift (Kampagne)�
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
-### Image (Campaign) {#image-campaign}
+### Bild (Kampagne) {#image-campaign}
 
 Die Komponente „Bild (Kampagne)“ zeigt ein Bild und begleitenden Text gemäß den festgelegten Parametern an.
 
@@ -166,9 +166,9 @@ Im folgenden Beispiel sehen Sie, wie die Komponente „Link (Kampagne)“ darges
 
 ![chlimage_1-48](assets/chlimage_1-48.png)
 
-### Scene7-Bildvorlage (Kampagne) {#scene-image-template-campaign}
+### Dynamic Media Classic (Scene7)-Bildvorlage (Kampagne) {#scene-image-template-campaign}
 
-[Scene7-](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) Bildvorlagen sind mehrschichtige Bilddateien, in denen Inhalt und Eigenschaften für Variabilität parametrisiert werden können. Mithilfe der Komponente **Bildvorlage** können Sie Scene7-Vorlagen in Newslettern verwenden und die Werte der Vorlagenparameter bearbeiten. Darüber hinaus können Sie in den Parametern Adobe Campaign-Metadatenvariablen verwenden, sodass jeder Benutzer das Bild personalisiert erfährt.
+Dynamic Media Classic (Scene7)-Bildvorlagen sind Bilddateien mit Ebenen, in denen Inhalte und Eigenschaften für Variabilität parametrisiert werden können. Mithilfe der Komponente **[!UICONTROL Bildvorlage]** können Sie Scene7-Vorlagen in Newslettern verwenden und die Werte der Vorlagenparameter bearbeiten. Darüber hinaus können Sie in den Parametern Adobe Campaign-Metadatenvariablen verwenden, sodass jeder Benutzer das Bild personalisiert erfährt.
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
@@ -186,7 +186,7 @@ Navigieren Sie in der Komponente zum gewünschten zielgerichteten Abschnitt, um 
 
 Klicken Sie auf das Ordnersymbol, um zu dem Abschnitt zu navigieren, auf den Sie verweisen möchten. Klicken Sie nach Abschluss auf das Häkchen.
 
-### Text und Bild (Kampagne)  {#text-image-campaign}
+### Text und Bild (Kampagne) {#text-image-campaign}
 
 Mit der Komponente „Text und Bild (Kampagne)“ werden ein Textblock und ein Bild hinzugefügt.
 
@@ -290,7 +290,7 @@ Die Komponenten werden wie folgt angezeigt:
 
 In diesem Abschnitt werden die Komponenten im Detail beschrieben.
 
-### Komponenten und Datentyp  {#components-and-data-type}
+### Komponenten und Datentyp {#components-and-data-type}
 
 In der folgenden Tabelle werden die Komponenten beschrieben, die verfügbar sind und mit denen Adobe Campaign-Profildaten angezeigt und bearbeitet werden können. Jede Komponente kann einem Adobe Campaign-Profil zugeordnet werden, um dessen Feldwerte anzuzeigen und beim Absenden des Formulars das entsprechende Feld zu aktualisieren. Die unterschiedlichen Komponenten können nur Feldern mit entsprechendem Datentyp zugewiesen werden.
 
@@ -303,7 +303,7 @@ In der folgenden Tabelle werden die Komponenten beschrieben, die verfügbar sind
   </tr>
   <tr>
    <td><p>Kontrollkästchen (Kampagne)</p> </td>
-   <td><p>Boolesch</p> </td>
+   <td><p>Boolean (Boolesch)</p> </td>
    <td><p>Nicht mehr kontaktieren (auf beliebigem Kanal)</p> </td>
   </tr>
   <tr>
@@ -323,19 +323,19 @@ In der folgenden Tabelle werden die Komponenten beschrieben, die verfügbar sind
   </tr>
   <tr>
    <td><p>Textfeld (Kampagne)</p> </td>
-   <td><p>Zeichenfolge</p> </td>
+   <td><p>String (Zeichenfolge)</p> </td>
    <td><p>E-Mail</p> </td>
   </tr>
  </tbody>
 </table>
 
-### Von den meisten Komponenten genutzte Einstellungen  {#settings-common-to-most-components}
+### Von den meisten Komponenten genutzte Einstellungen {#settings-common-to-most-components}
 
 Die Adobe Campaign-Komponenten verfügen über Einstellungen, die von allen Komponenten genutzt werden (mit Ausnahme des verschlüsselten Primärschlüssels und des ausgeblendeten Abstimmschlüssels).
 
 Für die meisten Komponenten können Sie Folgendes konfigurieren:
 
-#### Titel und Text  {#title-and-text}
+#### Titel und Text {#title-and-text}
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -358,7 +358,7 @@ Sie können Folgendes konfigurieren:
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
-#### Beschränkungen {#constraints}
+#### Begrenzungen {#constraints}
 
 * **Erforderlich** Aktivieren Sie diese Option, wenn die Komponente als Pflichtangabe eingestellt werden soll und Benutzer einen Wert eingeben müssen.
 * **Erforderliche Meldung** Sie können optional eine Meldung eingeben, mit der darauf hingewiesen wird, dass das Feld eine Pflichtangabe ist.
@@ -381,7 +381,7 @@ Im folgenden Beispiel sehen Sie, wie die Komponente „Kontrollkästchen (Kampag
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
-### Datumsfeld (Kampagne) und Datumsfeld/HTML 5 (Kampagne) {#date-field-campaign-and-date-field-html-campaign}
+### „Datumsfeld (Kampagne)“ und „Datumsfeld/HTML 5 (Kampagne)“ {#date-field-campaign-and-date-field-html-campaign}
 
 Verwenden Sie das Datumsfeld, damit Empfänger ein Datum (beispielsweise das Geburtsdatum) angeben können. Das Datumsformat entspricht dem Format, das in Ihrer Adobe Campaign-Instanz verwendet wird.
 
