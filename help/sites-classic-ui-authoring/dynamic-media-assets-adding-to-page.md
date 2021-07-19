@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 exl-id: d2ebfca5-19f9-4fa5-b142-b978f46a912f
-source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '1668'
-ht-degree: 44%
+ht-degree: 41%
 
 ---
 
@@ -30,7 +30,9 @@ Das Hinzufügen der Komponente [!UICONTROL Dynamic Media] oder [!UICONTROL Inter
 So fügen Sie einer Seite eine Komponente bzw. einen Viewer vom Typ „Dynamische Medien“ hinzu:
 
 1. Öffnen Sie in Experience Manager die Seite, auf der Sie die Dynamic Media-Komponente hinzufügen möchten.
-1. Wenn keine Dynamic Media-Komponente verfügbar ist, klicken Sie auf das Lineal im [!UICONTROL Sidekick], um den Modus **[!UICONTROL Design]** zu öffnen, klicken Sie auf **[!UICONTROL Bearbeiten]** parsys und wählen Sie **[!UICONTROL Dynamic Media]** aus, um die Dynamic Media-Komponenten verfügbar zu machen.
+1. Wenn keine Dynamic Media-Komponente verfügbar ist, wählen Sie das Lineal im [!UICONTROL Sidekick] aus, um in den Modus **[!UICONTROL Design]** zu wechseln.
+1. Wählen Sie **[!UICONTROL Bearbeiten]** parsys.
+1. Wählen Sie **[!UICONTROL Dynamic Media]** aus, damit Sie die Dynamic Media-Komponenten verfügbar machen können.
 
    >[!NOTE]
    >
@@ -38,10 +40,11 @@ So fügen Sie einer Seite eine Komponente bzw. einen Viewer vom Typ „Dynamisch
 
 1. Kehren Sie zum Modus **[!UICONTROL Bearbeiten]** zurück, indem Sie auf das Stiftsymbol im [!UICONTROL Sidekick] klicken.
 1. Ziehen Sie die Komponente **[!UICONTROL Dynamic Media]** oder **[!UICONTROL Interaktive Medien]** aus der Gruppe **[!UICONTROL Andere]** im Sidekick auf die Seite an der gewünschten Position.
-1. Klicken Sie auf **[!UICONTROL Bearbeiten]** , damit die Komponente geöffnet wird.
-1. [](#dynamic-media-component)Bearbeiten Sie die Komponente bei Bedarf und klicken Sie auf **[!UICONTROL OK]**, um die Änderungen zu speichern.
+1. Wählen Sie **[!UICONTROL Bearbeiten]** aus, damit die Komponente geöffnet wird.
+1. [Bearbeiten Sie die ](#dynamic-media-component) Komponente nach Bedarf.
+1. Wählen Sie **[!UICONTROL OK]** aus, damit Ihre Änderungen gespeichert werden.
 
-## Komponenten vom Typ „Dynamische Medien“{#dynamic-media-components}
+## Komponenten vom Typ „Dynamische Medien“ {#dynamic-media-components}
 
 [!UICONTROL Dynamic ] Media und  [!UICONTROL interaktive ] Medien sind im   Sidekickunder  **[!UICONTROL Dynamic Media]** verfügbar. Verwenden Sie die Komponente **[!UICONTROL Interaktive Medien]** für beliebige interaktive Assets wie interaktive Videos, interaktive Bilder oder Karussell-Sets. Verwenden Sie für alle anderen Dynamic Media-Komponenten die Komponente **[!UICONTROL Dynamic Media]** .
 
@@ -51,7 +54,7 @@ So fügen Sie einer Seite eine Komponente bzw. einen Viewer vom Typ „Dynamisch
 >
 >Diese Komponenten sind standardmäßig nicht verfügbar und müssen vor der Verwendung im Designmodus ausgewählt werden. [Nachdem sie im Designmodus](/help/sites-authoring/default-components-designmode.md) verfügbar gemacht wurden, können Sie die Komponenten wie jede andere Experience Manager-Komponente zu Ihrer Seite hinzufügen.
 
-### Komponente „Dynamische Medien“{#dynamic-media-component}
+### Komponente „Dynamische Medien“ {#dynamic-media-component}
 
 Die Dynamic Media-Komponente ist intelligent. Je nachdem, ob Sie ein Bild oder Video hinzufügen, haben Sie verschiedene Optionen. Die Komponente unterstützt Bildvorgaben, bildbasierte Viewer wie Bildsets sowie Rotationssets, Sets für gemischte Medien und Videos. Darüber hinaus ist der Viewer responsiv. Das heißt, die Größe des Bildschirms ändert sich automatisch entsprechend der Bildschirmgröße. Alle Viewer sind HTML5-basierte Viewer.
 
@@ -66,7 +69,7 @@ Die Dynamic Media-Komponente ist intelligent. Je nachdem, ob Sie ein Bild oder V
 
 
 
-#### Arbeiten mit Bildern  {#when-working-with-images}
+#### Arbeiten mit Bildern {#when-working-with-images}
 
 Mit der Komponente [!UICONTROL Dynamic Media] können Sie dynamische Bilder hinzufügen, einschließlich Bildsets, Rotationssets und Sets für gemischte Medien. Sie können Vergrößerungen sowie Verkleinerungen vornehmen und (sofern zutreffend) ein Bild in einem Rotationsset drehen oder ein Bild aus einem anderen Set auswählen.
 
@@ -112,7 +115,7 @@ Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemisc
 
 **[!UICONTROL Breite und Höhe]**  - Geben Sie einen Wert in Pixel an, wenn das Bild eine feste Größe aufweisen soll. Wenn die Werte leer gelassen werden, ist das Asset adaptiv.
 
-#### Arbeiten mit Video {#when-working-with-video}
+#### Arbeiten mit Videos {#when-working-with-video}
 
 Verwenden Sie die Komponente **[!UICONTROL Dynamic Media]** , um Ihren Webseiten dynamische Videos hinzuzufügen. Beim Bearbeiten der Komponente können Sie eine vordefinierte Video-Viewer-Vorgabe für das Wiedergeben des Videos auf der Seite verwenden.
 
@@ -132,13 +135,13 @@ Sie können die folgenden [!UICONTROL Erweitert]-Einstellungen bearbeiten, indem
 
 **[!UICONTROL Breite und Höhe]**  - Geben Sie einen Wert in Pixel an, wenn das Video eine feste Größe aufweisen soll. Wenn die Werte leer gelassen werden, wird es adaptiv.
 
-#### Sichere Videowiedergabe {#how-to-delivery-secure-video}
+#### Sicheres Video bereitstellen {#how-to-delivery-secure-video}
 
-In Experience Manager 6.2 können Sie bei der Installation von [FP-13480](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480) steuern, ob ein Video über eine sichere SSL-Verbindung (HTTPS) oder eine unsichere Verbindung (HTTP) bereitgestellt wird. Standardmäßig wird automatisch das Videowiedergabeprotokoll der Webseite übernommen, in die das Video eingebettet wird. Wenn die Webseite über HTTPS geladen wird, wird das Video ebenfalls über HTTPS wiedergegeben. Umgekehrt wird das Video über HTTP bereitgestellt, wenn sich die Webseite auf HTTP befindet. Normalerweise ist dieses Standardverhalten in Ordnung und es müssen keine Konfigurationsänderungen vorgenommen werden. Sie können dieses Standardverhalten jedoch überschreiben. Hängen Sie `VideoPlayer.ssl=on` entweder an das Ende eines URL-Pfads oder an die Liste anderer Viewer-Konfigurationsparameter in einem Einbettungscode-Snippet an. Beide Aktionen erzwingen die sichere Videobereitstellung.
+In Experience Manager 6.2 können Sie bei der Installation von [FP-13480](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480) steuern, ob ein Video über eine sichere SSL-Verbindung (HTTPS) oder eine unsichere Verbindung (HTTP) bereitgestellt wird. Standardmäßig wird automatisch das Videowiedergabeprotokoll der Webseite übernommen, in die das Video eingebettet wird. Wenn die Webseite über HTTPS geladen wird, wird das Video ebenfalls über HTTPS wiedergegeben. Umgekehrt wird das Video über HTTP bereitgestellt, wenn sich die Webseite auf HTTP befindet. Normalerweise ist dieses Standardverhalten in Ordnung und es müssen keine Konfigurationsänderungen vorgenommen werden. Sie können dieses Standardverhalten jedoch außer Kraft setzen. Hängen Sie `VideoPlayer.ssl=on` entweder an das Ende eines URL-Pfads oder an die Liste anderer Viewer-Konfigurationsparameter in einem Einbettungscode-Snippet an. Beide Aktionen erzwingen die sichere Videobereitstellung.
 
 Weitere Informationen zur sicheren Videowiedergabe sowie zur Verwendung des Konfigurationsattributs `VideoPlayer.ssl` in Ihrem URL-Pfad finden Sie im Referenzhandbuch zu den Viewern unter [Sichere Videowiedergabe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html). Neben dem Video-Viewer ist die sichere Videobereitstellung für den Viewer für gemischte Medien und den Viewer für interaktive Videos verfügbar.
 
-### Komponente für interaktive Medien {#interactive-media-component}
+### Interaktive Medienkomponente {#interactive-media-component}
 
 Die Komponente „Interaktive Medien“ ist für Assets mit interaktiven Elementen wie Hotspots oder Imagemaps vorgesehen. Verwenden Sie bei interaktiven Bildern, interaktiven Videos oder Karussellbannern die Komponente **[!UICONTROL Interaktive Medien]**.
 
