@@ -11,18 +11,18 @@ docset: aem65
 feature: Interaktive Bilder
 role: User, Admin
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 4b8369de9e6a10b73115d53358ce98729d92ed44
 workflow-type: tm+mt
-source-wordcount: '4286'
-ht-degree: 62%
+source-wordcount: '4277'
+ht-degree: 53%
 
 ---
 
 # Interaktive Bilder{#interactive-images}
 
-Sie können statische Bilder einfach für ansprechende, ansprechende Erlebnisse für Kunden gestalten, indem Sie Hotspots mit Shopping-Funktion per Drag-and-Drop auf ein Bild ziehen. Hotspots mit Shopping-Funktion kombinieren zusätzliche Informationen über ein Produkt oder einen Service mit einer direkten Point-of-Sale-Funktion &quot;Zum Warenkorb hinzufügen&quot;oder &quot;Kaufen&quot;. Kunden können auf diese Hotspots tippen oder klicken und direkt mit dem Produkt oder Service verknüpft werden, sie zu einem Warenkorb hinzufügen oder mit einer Webseite verknüpft werden. Direkte Erlebnisse wie diese erhöhen die Kundeninteraktionen und Konversionen auf Ihrer Website.
+Sie können aus statischen Bildern ganz einfach ansprechende Erlebnisse für Kunden machen, indem Sie Hotspots mit Shopping-Funktion auf ein Bild ziehen und dort ablegen. Hotspots mit Shopping-Funktion kombinieren zusätzliche Informationen über ein Produkt oder eine Dienstleistung mit einer direkten POS-Funktion, wie „In den Einkaufswagen legen“ oder „Kaufen“. Kunden können diese Hotspots auswählen und direkt mit dem Produkt oder Service verknüpft, zum Warenkorb hinzugefügt oder mit einer Webseite verknüpft werden. Direkte Erlebnisse wie diese erhöhen die Kundeninteraktionen und Konversionen auf Ihrer Website.
 
-Die folgende Abbildung zeigt ein Banner mit Shopping-Funktion mit einem Schnellansichts-Popup. Benutzer können die Schnellansicht aktivieren, indem sie auf den Kreis oder „Hotspot“ des Modells tippen.
+Die folgende Abbildung zeigt ein Banner mit Shopping-Funktion mit einem Schnellansichts-Popup. Ein Benutzer aktiviert die Schnellansicht, indem er den Kreis oder den Hotspot im Modell auswählt.
 
 ![chlimage_1-152](assets/chlimage_1-368.png)
 
@@ -93,7 +93,7 @@ Manchmal ist es ausreichend, IT-Experten zu konsultieren, die für die vorhanden
 
 Die meisten Schnellansichtsimplementierungen verwenden das folgende Paradigma:
 
-* Benutzer aktiviert ein Benutzeroberflächenelement auf der Website. Dazu kann er beispielsweise auf die Schaltfläche „Schnellansicht“ klicken.
+* Benutzer aktiviert ein Benutzeroberflächenelement auf der Website. Beispielsweise durch Auswahl einer &quot;Schnellansichtsschaltfläche&quot;.
 * Die Website sendet eine Ajax-Anfrage an das Backend, um bei Bedarf die Schnellansichtsdaten oder -inhalte zu laden.
 * Die Schnellansichtsdaten werden in den Inhalt übersetzt, um für das Rendern auf der Web-Seite vorbereitet zu werden.
 * Schließlich zeigt der Frontend-Code diesen Inhalt visuell auf dem Bildschirm an.
@@ -102,11 +102,11 @@ Dann werden verschiedene Bereiche der vorhandenen Website besucht, auf denen die
 
 Normalerweise müssen Sie keine speziellen Debugging-Tools verwenden. Moderne Webbrowser verfügen über Web-Inspektoren, die dafür ausreichend sind. Die folgenden Webbrowser beispielsweise umfassen Web-Inspektoren:
 
-* Um alle ausgehenden HTTP-Anfragen in Google Chrome anzuzeigen, drücken Sie F12, um den Bereich für Entwickler-Tools zu öffnen; klicken Sie dann auf die Registerkarte „Netzwerk“.
-Drücken Sie bei einem Mac Befehlstaste+Wahltaste+I, um den Bereich für Entwickler-Tools zu öffnen, und klicken Sie dann auf die Registerkarte „Netzwerk“.
+* Um alle ausgehenden HTTP-Anforderungen in Google Chrome anzuzeigen, drücken Sie F12, um den Bereich für Entwicklertools zu öffnen, und wählen Sie dann die Registerkarte &quot;Netzwerk&quot;aus.
+Drücken Sie auf einem Mac Befehlstaste+Wahltaste+I, um den Bereich für Entwicklertools zu öffnen, und wählen Sie dann die Registerkarte &quot;Netzwerk&quot;aus.
 
 * In Firefox können Sie entweder durch Drücken von F12 das Firebug-Plug-in aktivieren und dessen Registerkarte „Netzwerk“ verwenden oder das integrierte Inspektor-Tool und dessen Registerkarte „Netzwerk“ einsetzen.
-Drücken Sie bei einem Mac Befehlstaste+Wahltaste+I, um den Bereich für Entwickler-Tools zu öffnen, und klicken Sie dann auf die Registerkarte „Inspektor“.
+Drücken Sie auf einem Mac Befehlstaste+Wahltaste+I, um den Bereich für Entwicklertools zu öffnen, und wählen Sie dann die Registerkarte &quot;Inspektor&quot;aus.
 
 Wenn die Netzwerküberwachung im Browser aktiviert ist, lösen Sie die Schnellansicht auf der Seite aus.
 
@@ -164,7 +164,7 @@ Sie können den in den drei oben genannten Beispielen verwendeten Ansatz auch au
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
-Die Demo-Web-Seite enthält mehrere Produkt-Miniaturansichten. Jede davon verfügt über eine Schnellansichts-Schaltfläche mit der Bezeichnung „Mehr anzeigen“. Klicken Sie bei aktiviertem Debugging-Tool des Webbrowsers auf jede Schaltfläche und notieren Sie sich die aufgezeichneten Schnellansichts-URLs. Nachdem Sie alle vier Produktschnellansichtsanforderungen aktiviert haben, die auf der Seite verfügbar sind, erhalten Sie die folgende Liste mit den an das Backend gesendeten Schnellansichtsanforderungen:
+Die Demo-Web-Seite enthält mehrere Produkt-Miniaturansichten. Jede davon verfügt über eine Schnellansichts-Schaltfläche mit der Bezeichnung „Mehr anzeigen“. Wenn das Debugging-Tool Ihres Webbrowsers noch aktiviert ist, wählen Sie jede Schaltfläche aus und notieren Sie sich die aufgezeichneten Schnellansichts-URLs. Nachdem Sie alle vier Produktschnellansichtsanforderungen aktiviert haben, die auf der Seite verfügbar sind, erhalten Sie die folgende Liste mit den an das Backend gesendeten Schnellansichtsanforderungen:
 
 * `/datafeed/Male-Windbreaker.json`
 * `/datafeed/Male-SimpleHenley.json`
@@ -194,21 +194,21 @@ Nachdem Sie die Viewer-Vorgabe gespeichert haben, wird sie automatisch auf der L
 
 **So erstellen Sie eine Viewer-Vorgabe für interaktive Bilder:**
 
-1. Tippen Sie links in der Leiste auf **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Viewer-Vorgaben]**.
-1. Tippen Sie in der Nähe der rechten oberen Ecke der Seite auf **[!UICONTROL Erstellen]**.
+1. Navigieren Sie in der linken Leiste zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Viewer-Vorgaben]**.
+1. Wählen Sie in der rechten oberen Ecke der Seite **[!UICONTROL Erstellen]** aus.
 1. Geben Sie im Dialogfeld „Neue Viewer-Vorgabe“ einen Namen ein, um die Viewer-Vorgabe für interaktive Banner zu beschreiben.
 
    Der Titel wird nach dem Speichern auf der Listenseite &quot;Viewer-Vorgabe&quot;angezeigt.
 
 1. Wählen Sie im Pulldown-Menü „Rich-Media-Typ“ die Option **[!UICONTROL Interaktives Bild]** aus.
-1. Tippen Sie auf **[!UICONTROL Erstellen]**.
-1. Tippen Sie auf der Seite „Viewer-Vorgabe bearbeiten“ auf die Registerkarte **[!UICONTROL Erscheinungsbild]**.
+1. Wählen Sie **[!UICONTROL Erstellen]**.
+1. Wählen Sie auf der Seite Viewer-Vorgabe bearbeiten die Registerkarte **[!UICONTROL Erscheinungsbild]** aus.
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Um ein eigenes Hotspot-Bild hochzuladen, das Sie für Bilder verwenden möchten, tippen Sie auf das Symbol für die Asset-Auswahl. Navigieren Sie auf der Seite „Inhalt auswählen“ zum gewünschten Hotspot-Bild, wählen Sie es aus und tippen Sie oben rechts auf das Häkchen.
-   * Um ein vordefiniertes Hotspot-Bild auszuwählen, tippen Sie auf das Symbol für die Hotspot-Galerie. Tippen Sie in der Palette der Hotspot-Galerie auf das gewünschte Hotspot-Bild.
+   * Um ein eigenes Hotspot-Bild hochzuladen, das Sie für Bilder verwenden möchten, wählen Sie das Symbol Asset-Auswahl aus. Navigieren Sie auf der Seite &quot;Inhalt auswählen&quot;zum gewünschten Hotspot-Bild, wählen Sie es aus und klicken Sie dann oben rechts auf das Häkchen-Symbol.
+   * Um ein vordefiniertes Hotspot-Bild auszuwählen, wählen Sie das Symbol Hotspot-Galerie aus. Wählen Sie in der Palette &quot;Hotspot-Galerie&quot;das gewünschte Hotspot-Bild aus.
 
-1. Tippen Sie oben rechts auf **[!UICONTROL Speichern]**.
+1. Wählen Sie in der rechten oberen Ecke der Seite **[!UICONTROL Speichern]** aus.
 
    Stellen Sie sicher, die neue Viewer-Vorgabe zu veröffentlichen.
 
@@ -260,43 +260,43 @@ Wenn Sie interaktive Bilder mit Hotspots bearbeiten, um das Bild zu beschneiden,
 1. Navigieren Sie in der Ansicht „Assets“ zu dem Bildbanner, das interaktiv sein soll.
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Bewegen Sie den Mauszeiger über das Bild und tippen Sie auf **[!UICONTROL Auswählen]** (Häkchensymbol). Tippen Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**.
+   * Bewegen Sie den Mauszeiger über das Bild und wählen Sie **[!UICONTROL Auswählen]** (Häkchensymbol). Wählen Sie in der Symbolleiste **[!UICONTROL Bearbeiten]** aus.
 
-   * Bewegen Sie den Mauszeiger über das Bild und tippen Sie dann auf **[!UICONTROL Weitere Aktionen]** (Drei-Punkte-Symbol) **[!UICONTROL Bearbeiten]**.
+   * Bewegen Sie den Mauszeiger über das Bild und wählen Sie **[!UICONTROL Weitere Aktionen]** (Symbol mit drei Punkten) **[!UICONTROL Bearbeiten]**.
 
-   * Tippen Sie auf das Bild, damit Sie es auf der Seite &quot;Detailansicht&quot;öffnen können. Tippen Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**.
+   * Wählen Sie das Bild aus, damit Sie es auf der Seite Detailansicht öffnen können. Wählen Sie in der Symbolleiste **[!UICONTROL Bearbeiten]** aus.
 
-1. Tippen Sie oben links auf der Seite auf **[!UICONTROL Hotspot hinzufügen]** (Fingertipp-Symbol), um die Hotspot-Verwaltungsseite zu öffnen.
-1. Tippen Sie in der Nähe der rechten oberen Ecke der Seite auf **[!UICONTROL Hotspot]**.
+1. Wählen Sie links oben auf der Seite **[!UICONTROL Hotspot hinzufügen]** (Fingertipp-Symbol) aus, um die Hotspot-Verwaltungsseite zu öffnen.
+1. Wählen Sie links oben auf der Seite **[!UICONTROL Hotspot]** aus.
 
-   1. Tippen Sie in der rechten oberen Ecke der Seite „Hotspot-Verwaltung“ auf **[!UICONTROL Hotspot]**.
-   1. Tippen Sie im Bild auf eine Stelle, an der der Hotspot angezeigt werden soll. Ziehen Sie bei Bedarf den Hotspot, um seine Position anzupassen.
+   1. Wählen Sie links oben auf der Seite &quot;Hotspot-Verwaltung&quot;die Option **[!UICONTROL Hotspot]**.
+   1. Wählen Sie im Bild einen Ort aus, an dem der Hotspot angezeigt werden soll. Ziehen Sie bei Bedarf den Hotspot, um seine Position anzupassen.
    1. Fügen Sie bei Bedarf weitere Hotspots hinzu, indem Sie die Schritte a und b wiederholen.
-   1. (Optional) Um einen Hotspot zu löschen, wählen Sie ihn im Bild aus und tippen Sie dann unter der Überschrift **[!UICONTROL Hotspots]** auf **[!UICONTROL Löschen]** (Papierkorbsymbol).
+   1. (Optional) Um einen Hotspot zu löschen, wählen Sie ihn im Bild aus und klicken Sie dann auf **[!UICONTROL Löschen]** (Papierkorbsymbol) unter der Überschrift **[!UICONTROL Hotspots]** .
 
 1. Geben Sie im Textfeld „Name“ den Namen des Hotspots ein. Dieser Name wird auch in der Dropdownliste „Ausgewählter Hotspot“ angezeigt.
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Tippen Sie auf **[!UICONTROL Schnellansicht]**.
+   * Wählen Sie **[!UICONTROL Schnellansicht]** aus.
 
-      * Wenn Sie Experience Manager Sites oder eCommerce-Kunde sind, tippen oder klicken Sie auf das Produktauswahlsymbol (Lupe), um die Seite &quot; auswählen&quot;zu öffnen. Tippen oder klicken Sie auf das Produkt, das Sie verwenden möchten, und tippen Sie oben rechts auf **[!UICONTROL Wählen Sie]** aus, damit Sie zur Seite &quot;Hotspot-Verwaltung&quot;zurückkehren können.
+      * Wenn Sie Experience Manager Sites oder eCommerce-Kunde sind, wählen Sie das Produktauswahlsymbol (Lupe) aus, um die Seite &quot; auswählen&quot;zu öffnen. Wählen Sie das Produkt aus, das Sie verwenden möchten, und klicken Sie dann oben rechts auf der Seite auf **[!UICONTROL Wählen Sie]**, damit Sie zur Seite &quot;Hotspot-Verwaltung&quot;zurückkehren können.
       * Wenn Sie *kein* Experience Manager Sites- oder E-Commerce-Kunde sind, gehen Sie wie folgt vor:
 
          * Siehe [Ermitteln von Hotspot-Variablen](#optional-identifying-hotspot-variables); müssen Sie diese Variablen definieren.
-         * Geben Sie anschließend manuell den SKU-Wert ein. Geben Sie im Textfeld „SKU-Wert“ die Bestandseinheit (Stock Keeping Unit, SKU) des Produkts ein. Hierbei handelt es sich um eine eindeutige Kennung für die jeweiligen von Ihnen angebotenen Produkte oder Services. Der variable Teil der Schnellansichtsvorlage wird automatisch mit dem eingegebenen SKU-Wert ausgefüllt, sodass das System den Hotspot, auf den getippt wird, mit der Schnellansicht einer bestimmten SKU verbinden kann.
-         * (Optional) Wenn andere Variablen in der Schnellansicht vorhanden sind, die Sie zur weiteren Identifizierung eines Produkts verwenden müssen, tippen Sie auf **[!UICONTROL Generische Variable hinzufügen]**. Geben Sie im Textfeld eine zusätzliche Variable an. Beispielsweise ist `category=Males` eine hinzugefügte Variable.
-   * Tippen Sie auf **[!UICONTROL Hyperlink]**.
+         * Geben Sie anschließend manuell den SKU-Wert ein. Geben Sie im Textfeld „SKU-Wert“ die Bestandseinheit (Stock Keeping Unit, SKU) des Produkts ein. Hierbei handelt es sich um eine eindeutige Kennung für die jeweiligen von Ihnen angebotenen Produkte oder Services. Der variable Teil der Schnellansichtsvorlage wird automatisch mit dem eingegebenen SKU-Wert ausgefüllt, sodass das System den ausgewählten Hotspot mit der Schnellansicht einer bestimmten SKU verknüpfen kann.
+         * (Optional) Wenn es in der Schnellansicht andere Variablen gibt, die Sie zur weiteren Identifizierung eines Produkts verwenden müssen, wählen Sie **[!UICONTROL Generische Variable hinzufügen]**. Geben Sie im Textfeld eine zusätzliche Variable an. Beispielsweise ist `category=Males` eine hinzugefügte Variable.
+   * Wählen Sie **[!UICONTROL Hyperlink]** aus.
 
-      * Wenn Sie Experience Manager-Sites-Kunde sind, tippen oder klicken Sie auf das Symbol &quot;Site-Selektor&quot;(Ordner), um zu einer URL zu navigieren. Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
+      * Wenn Sie Experience Manager-Sites-Kunde sind, wählen Sie das Symbol &quot;Site-Selektor&quot;(Ordner) aus, um zu einer URL zu navigieren. Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
       * Wenn Sie Einzelkunde sind, geben Sie im Textfeld „HREF“ den vollständigen URL-Pfad zu einer verknüpften Web-Seite an.
 
    Vergessen Sie nicht anzugeben, ob der Link auf einer neuen Browser-Registerkarte (empfohlener Standard) oder auf derselben Registerkarte geöffnet werden soll.
 
    Weitere Informationen finden Sie unter [Arbeiten mit Selektoren](/help/assets/working-with-selectors.md) .
 
-   * Tippen Sie auf **[!UICONTROL Experience Fragment]**.
+   * Wählen Sie **[!UICONTROL Experience Fragment]** aus.
 
-      * Wenn Sie Experience Manager Sites-Kunde sind, tippen oder klicken Sie auf das Suchsymbol (Lupe), um die Seite &quot;Experience Fragment&quot;zu öffnen. Tippen Sie auf das Experience Fragment, das Sie verwenden möchten, und tippen Sie oben rechts auf der Seite auf **[!UICONTROL Auswählen]** , damit Sie zur Seite &quot;Hotspot-Verwaltung&quot;zurückkehren können.
+      * Wenn Sie Experience Manager Sites-Kunde sind, wählen Sie das Suchsymbol (Lupe) aus, um die Seite &quot;Experience Fragment&quot;zu öffnen. Wählen Sie das Experience Fragment aus, das Sie verwenden möchten, und klicken Sie dann oben rechts auf der Seite auf **[!UICONTROL Wählen Sie]** , um zur Seite &quot;Hotspot-Verwaltung&quot;zurückzukehren.
 Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-authoring/experience-fragments.md).
 
       * Legen Sie die Breite und Höhe des Experience Fragment fest, so wie es im Banner angezeigt werden soll.
@@ -306,7 +306,7 @@ Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-author
 
 
 
-1. Tippen Sie auf **[!UICONTROL Speichern]**, um Ihre Änderungen zu speichern, und kehren Sie zur Seite „Durchsuchen“ zurück.
+1. Wählen Sie **[!UICONTROL Save]** aus, um Ihre Arbeit zu speichern und zur Seite &quot;Durchsuchen&quot;zurückzukehren.
 1. Veröffentlichen Sie das interaktive Bild. Durch die Veröffentlichung kann das Banner über die Cloud bereitgestellt werden. Außerdem wird Einbettungscode generiert, wenn Sie die Integration mit einer Drittanbieter-Website benötigen.
 
    Siehe [Veröffentlichen von Assets](/help/assets/manage-assets.md#publishing-assets).
@@ -329,10 +329,10 @@ Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/adding-dynam
 
 **So zeigen Sie eine Vorschau für interaktive Bilder an:**
 
-1. Navigieren Sie in der Ansicht „Assets“ zu einem vorhandenen interaktiven Bild, das Sie erstellt haben, um es in der Vorschau zu öffnen.
-1. Tippen Sie in der Nähe der linken oberen Ecke der Seite „Vorschau“ in der Dropdown-Liste „Inhalt“ auf **[!UICONTROL Viewer]**.
-1. Tippen Sie in der Liste „Viewer“ auf **[!UICONTROL Shoppable_Banner]** oder auf den Namen der von Ihnen erstellten Viewer-Vorgabe für interaktive Bilder.
-1. Tippen Sie auf Hotspots auf dem Bild, wenn Sie die zugehörigen Aktionen testen möchten.
+1. Navigieren Sie in der Ansicht &quot;Assets&quot;zu einem vorhandenen interaktiven Bild, das Sie erstellt haben, und wählen Sie es aus, um es in der Vorschau zu öffnen.
+1. Wählen Sie links oben auf der Seite &quot;Vorschau&quot;in der Dropdown-Liste &quot;Inhalt&quot;die Option **[!UICONTROL Viewer]** aus.
+1. Wählen Sie in der Liste &quot;Viewer&quot;die Option **[!UICONTROL Shoppable_Banner]** oder den Namen der von Ihnen erstellten Viewer-Vorgabe für interaktive Bilder aus.
+1. Wählen Sie Hotspots auf dem Bild aus, wenn Sie die zugehörigen Aktionen testen möchten.
 
 ## Veröffentlichen interaktiver Bild-Assets {#publishing-interactive-image-assets}
 
@@ -398,7 +398,7 @@ Die vorhandene Schnellansichtsimplementierung stellt normalerweise eine Kette vo
 
 Diese Aufrufe stellen keine unabhängigen öffentlichen API-Aufrufe dar, die durch die Web-Seitenlogik in einem beliebigen Schritt aufgerufen werden können. Vielmehr handelt es sich um einen verketteten Aufruf, in dem der jeweils nächste Schritte in der letzten Phase (Callback) des vorherigen Schritts ausgeblendet ist.
 
-Gleichzeitig, wenn das interaktive Bild mit Shopping-Funktion Schritt 1 und teilweise Schritt 2 ersetzt, sofern ein Benutzer auf einen Hotspot auf dem Bild mit Shopping-Funktion klickt, wird eine derartige Benutzerinteraktion durch den Viewer verarbeitet. Der Viewer gibt ein Ereignis an die Webseite zurück, das alle Hotspot-Daten enthält, die zuvor zu Experience Manager Assets hinzugefügt wurden.
+Während das interaktive Bild mit Shopping-Funktion Schritt 1 und teilweise Schritt 2 ersetzt, wenn ein Benutzer einen Hotspot innerhalb des Shop-fähigen Bildes auswählt, wird diese Benutzerinteraktion vom Viewer verarbeitet. Der Viewer gibt ein Ereignis an die Webseite zurück, das alle Hotspot-Daten enthält, die zuvor zu Experience Manager Assets hinzugefügt wurden.
 
 In einem solchen Ereignis-Handler nimmt der Frontend-Code Folgendes vor:
 
