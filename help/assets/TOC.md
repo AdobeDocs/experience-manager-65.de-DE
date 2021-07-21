@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, verarbeiten und verteilen Sie digitale Assets.
-source-git-commit: ed213692bc72ab727a5fa105796fb68aef33904e
+source-git-commit: a8fef5d797efb3a6ce25760df6f710b8b99c2dc0
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 59%
+source-wordcount: '584'
+ht-degree: 57%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 59%
    + [Interaktive Bilder](interactive-images.md)
    + [Interaktive Videos](interactive-videos.md)
    + [360-Grad-VR-Video](/help/assets/360-video.md)
-   + [Integrieren von Dynamic Media-Viewern mit Adobe Analytics und Adobe Launch](/help/assets/launch.md)
+   + [Integrieren von Dynamic Media-Viewern mit Adobe Analytics und Adobe Experience Platform-Tags](/help/assets/tags.md)
    + [Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups](custom-pop-ups.md)
    + [Bereitstellen von optimierten Bildern für eine responsive Site](responsive-site.md)
    + [Anzeigen von Dynamic Media-Assets in der Vorschau](previewing-assets.md)
