@@ -6,7 +6,7 @@ contentOwner: AG
 role: User
 feature: Workflow,Ausgabedarstellungen
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 4851d61d9897ac71c6512829fdccf1895ad58bcd
 workflow-type: tm+mt
 source-wordcount: '2166'
 ht-degree: 49%
@@ -37,7 +37,7 @@ Die folgenden Medien-Handler sind in [!DNL Assets] verfügbar und behandeln die 
 | [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
 | [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>application/illustrator</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Wichtig</b>  - Wenn Sie eine MP3-Datei hochladen, wird sie mithilfe einer Bibliothek [ eines Drittanbieters ](http://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html)verarbeitet. Die Bibliothek berechnet eine ungenaue ungefähre ungefähre Länge, wenn das MP3 über eine variable Bitrate (VBR) verfügt. |
+| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Wichtig</b>  - Wenn Sie eine MP3-Datei hochladen, wird sie mithilfe einer Bibliothek [ eines Drittanbieters ](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html)verarbeitet. Die Bibliothek berechnet eine ungenaue ungefähre ungefähre Länge, wenn das MP3 über eine variable Bitrate (VBR) verfügt. |
 | [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
 | [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | image/pict |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>application/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
@@ -56,7 +56,7 @@ Alle Handler führen folgende Aufgaben aus:
 
 So zeigen Sie die aktiven Medien-Handler an:
 
-1. Navigieren Sie im Browser zu `http://localhost:4502/system/console/components`.
+1. Navigieren Sie im Browser zu `https://localhost:4502/system/console/components`.
 1. Klicken Sie auf `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
 1. Eine Liste mit allen aktiven Medien-Handlern wird angezeigt. Beispiel:
 
@@ -494,7 +494,7 @@ Installieren Sie [!DNL ImageMagick] auf dem Datenträger, der den [!DNL Experien
 Fügen Sie zum Testen des geänderten Workflows ein Asset zu `/content/dam` hinzu.
 
 1. Rufen Sie im Dateisystem ein TIFF-Bild Ihrer Wahl ab. Benennen Sie es in `myImage.tiff` um und kopieren Sie es in `/content/dam`, z. B. mithilfe von WebDAV.
-1. Rufen Sie die Konsole **[!UICONTROL CQ5 DAM]** auf, z. B. `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
+1. Rufen Sie die Konsole **[!UICONTROL CQ5 DAM]** auf, z. B. `https://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Öffnen Sie das Asset **[!UICONTROL myImage.tiff]** und prüfen Sie, ob das gespiegelte Bilder und die drei Miniaturbilder erstellt wurden.
 
 #### Prozessschritt &quot;CommandLineProcess&quot;konfigurieren {#configuring-the-commandlineprocess-process-step}
