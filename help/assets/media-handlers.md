@@ -6,7 +6,7 @@ contentOwner: AG
 role: User
 feature: Workflow,Ausgabedarstellungen
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: 4851d61d9897ac71c6512829fdccf1895ad58bcd
+source-git-commit: acc4b78f551e0e0694f41149fff7e24d855f504f
 workflow-type: tm+mt
 source-wordcount: '2166'
 ht-degree: 49%
@@ -451,7 +451,7 @@ Die folgenden Konvertierungen können automatisch ausgeführt und in [!DNL Asset
 * EPS- und AI-Umwandlung mithilfe von [ImageMagick](https://www.imagemagick.org/script/index.php) und [Ghostscript](https://www.ghostscript.com/).
 * FLV-Videotranskodierung mithilfe von [FFmpeg](https://ffmpeg.org/).
 * MP3-Kodierung mithilfe von [LAME](https://lame.sourceforge.io/).
-* Verarbeitung von Audiodaten mithilfe von [SOX](https://sox.sourceforge.net/).
+* Verarbeitung von Audiodaten mithilfe von [SOX](https://sox.sourceforge.io/).
 
 >[!NOTE]
 >
