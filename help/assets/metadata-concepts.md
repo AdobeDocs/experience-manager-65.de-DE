@@ -3,12 +3,12 @@ title: Grundlagen zu Metadatenkonzepten
 description: Erfahren Sie mehr über die Notwendigkeit und die Typen von Metadaten, die eine einfachere Kategorisierung und Organisation von Assets ermöglichen.
 contentOwner: AG
 role: User, Admin
-feature: 'Metadaten  '
+feature: Metadaten
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: acc4b78f551e0e0694f41149fff7e24d855f504f
 workflow-type: tm+mt
-source-wordcount: '2730'
-ht-degree: 89%
+source-wordcount: '2721'
+ht-degree: 88%
 
 ---
 
@@ -121,7 +121,7 @@ Die programmspezifischen Metadaten umfassen technische und beschreibende Metadat
 * Album – [!DNL Adobe Photoshop Album].
 * CQ – Von [!DNL Experience Manager Assets] verwendet.
 * DAM – Von [!DNL Experience Manager Assets] verwendet.
-* DEX – [Optima SC Description Explorer](http://www.optimasc.com/products/dex/index.html) ist eine Sammlung von Tools zur Metadaten- und Dateiverwaltung für Windows-Betriebssysteme.
+* DEX - [!DNL Optima SC Description explorer] ist eine Sammlung von Tools für die Metadaten- und Dateiverwaltung für Windows-Betriebssysteme.
 * CRS – [Adobe Photoshop Camera Raw](https://helpx.adobe.com/de/camera-raw/using/introduction-camera-raw.html).
 * LR – [!DNL Adobe Lightroom].
 * MediaPro – [iView MediaPro](https://de.wikipedia.org/wiki/Phase_One_Media_Pro).
