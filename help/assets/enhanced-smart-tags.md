@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Smart-Tags, Suche
 role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 20442918270b484e0b3c3ce8e68df90e0f305a52
 workflow-type: tm+mt
-source-wordcount: '1600'
-ht-degree: 51%
+source-wordcount: '1632'
+ht-degree: 50%
 
 ---
 
@@ -188,6 +188,7 @@ Sie können einem Tag auch einen höheren Rang zuweisen, um seine Relevanz für 
 
 ## Tipps und Einschränkungen {#tips-best-practices-limitations}
 
+* Verwenden Sie zum Trainieren des Modells die am besten geeigneten Bilder. Das Training kann nicht rückgängig gemacht werden oder das Trainings-Modell kann nicht entfernt werden. Ihre Tagging-Genauigkeit hängt von der aktuellen Schulung ab. Gehen Sie daher sorgfältig vor.
 * Die Nutzung von Smart Content Services ist auf bis zu 2 Millionen getaggte Bilder pro Jahr beschränkt. Alle doppelten Bilder, die verarbeitet und mit Tags versehen werden, werden als getaggtes Bild gezählt.
 * Wenn Sie den Tagging-Workflow über die Timeline ausführen, können Sie Tags gleichzeitig auf maximal 15 Assets anwenden.
 * Smart-Tags funktionieren nur für PNG- und JPG-Bildformate. Daher werden unterstützte Assets, deren Ausgabedarstellungen in diesen beiden Formaten erstellt wurden, mit Smart-Tags getaggt.
