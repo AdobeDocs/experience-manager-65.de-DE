@@ -2,10 +2,10 @@
 title: AEM Content and Commerce - Versionshinweise 2021
 description: AEM Content and Commerce - Versionshinweise 2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: 71782a3caae3f74a4886c52cf9b29f9e998913fa
+source-git-commit: d1e2a2b11bd4eaece80a2538ddc34ada59e63578
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 16%
+source-wordcount: '867'
+ht-degree: 21%
 
 ---
 
@@ -15,19 +15,36 @@ ht-degree: 16%
 
 Überprüfen Sie die Mindestanforderungen in der folgenden Tabelle für die CIF-Version, die Sie derzeit verwenden oder in Zukunft verwenden möchten.
 
-**Mit der Version vom April haben wir den CIF Connector von GitHub durch das CIF-Add-on ersetzt, das auf der Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) verfügbar ist. Der Wechsel zum Add-on bringt große Vorteile für Projekte mit sich:
+**Mit der Version vom April haben wir den CIF Connector von GitHub durch das CIF-Add-** on ersetzt, das auf der  [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) verfügbar ist. Der Wechsel zum Add-on bringt große Vorteile für Projekte mit sich:
 
 * Die meisten neuen Funktionen stehen ab AEM 6.5 sofort zur Verfügung (keine Wartezeiten mehr auf Feature Side Port).
 * Einfache Aktualisierung auf neue Add-on-Versionen
 * Bereit für Cloud Service
 
-Der alte AEM CIF Connector befindet sich im Wartungsmodus und sollte nicht mehr verwendet werden. Ersetzen Sie den CIF-Connector durch das neue CIF-Add-on. Für die meisten Projekte sollte einfach ein Package-Ersatz möglich sein. **
+Der alte AEM CIF Connector befindet sich im Wartungsmodus und sollte nicht mehr verwendet werden. Ersetzen Sie den CIF-Connector durch das neue CIF-Add-on. Für die meisten Projekte sollte einfach ein Package-Ersatz möglich sein.
 
 | Komponente | Systemanforderungen |
 |:-------|:-----:|
 | CIF-Add-on | Minimum: AEM 6.5.7, Magento 2.3.5 GraphQL-Schemata |
 | CIF-Kernkomponenten | [Systemanforderungen](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM-Projektarchetyp | [Systemanforderungen](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Releasedatum: Juli 2021
+
+| Komponente | Version | Details |
+|:-------|:-----:|---------------------:|
+| CIF-Add-on | 2021.07.21 | [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.07.21.zip) |
+| CIF-Kernkomponenten | 1,13,0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.13.0) |
+| CIF Venia-Referenz-Site | 2021.07.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.07.22) |
+
+### Neue Funktionen {#what-is-new-july}
+
+* CIF-Kernkomponenten v2
+   * Vereinfachte und verbesserte Konfigurationen für PDP/PLP-URL und SEO
+   * Visueller Indikator für gestaffelte Produktdaten im Authoring-Modus für bessere Sichtbarkeit bevorstehender Änderungen
+   * Neue Sitemap-Komponente für Inhalte und Commerce-Seiten
+
+* Unterstützung für [Adobe Commerce Sensei Product Recommendation, powered by Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront mit vordefinierten oder direkt erstellten Empfehlungen
 
 ## Releasedatum: Juni 2021
 
@@ -76,15 +93,13 @@ Der alte AEM CIF Connector befindet sich im Wartungsmodus und sollte nicht mehr 
 
 * Unterstützung für Kategorie-UID - Dadurch werden Commerce-Integrationen von Drittanbietern für Systeme freigeschaltet, die Zeichenfolgen für Kategorie-IDs verwenden
 
-* AEM Erweiterung für PWA Studio inkl. Beispielintegration
+* AEM-Erweiterung für PWA Studio inkl. Beispielintegration
 
 * Neue CIF-Navigationskernkomponente, die die WCM-Navigationskernkomponente erweitert
 
-* Visueller Indikator für gestaffelte Katalogdaten in AEM Storefront
-
 ### Fehlerbehebungen {#bug-fixes-april}
 
-* Das Feld der Stammkategorie wurde nicht auf der Registerkarte &quot;Commerce&quot;in den Seiteneigenschaften von Kategorieseiten angezeigt
+* Das Feld „Stammkategorie“ wurde auf der Registerkarte „Commerce“ in den Seiteneigenschaften von Kategorieseiten nicht angezeigt
 
 ## Releasedatum: März 2021 {#what-is-new-march}
 
