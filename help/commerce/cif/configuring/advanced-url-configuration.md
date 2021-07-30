@@ -8,10 +8,11 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 0125021a-1c00-4ea3-b7fb-1533b7b9f4f2
+source-git-commit: dbd38aa75caa7c3c2feee79702ab85ab397eb583
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 91%
+source-wordcount: '745'
+ht-degree: 45%
 
 ---
 
@@ -23,36 +24,61 @@ ht-degree: 91%
 
 ## Konfiguration {#configuration}
 
-Um den Dienst `UrlProvider` gemäß den SEO-Anforderungen zu konfigurieren, muss ein Projekt eine OSGi-Konfiguration für die Konfiguration &quot;CIF URL Provider&quot;bereitstellen und den Dienst wie unten beschrieben konfigurieren.
+Um den Dienst `UrlProvider` gemäß den SEO-Anforderungen zu konfigurieren, muss ein Projekt eine OSGi-Konfiguration für die &quot;CIF URL Provider-Konfiguration&quot;bereitstellen.
 
 >[!NOTE]
 >
-> Das Projekt [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia) (siehe unten) enthält Beispielkonfigurationen, um die Verwendung benutzerdefinierter URLs für Produkt- und Kategorienseiten zu demonstrieren.
+> Seit Version 2.0.0 der AEM CIF-Kernkomponenten bietet die URL-Provider-Konfiguration nur vordefinierte URL-Formate anstelle der von 1.x-Versionen bekannten Freitext-konfigurierbaren Formate. Darüber hinaus wurde die Verwendung von Selektoren zur Übergabe von Daten in URLs durch Suffixe ersetzt.
 
-### URL-Vorlage für Produktseiten {#product}
+### URL-Format der Produktseite {#product}
 
-Damit werden die URLs der Produktseiten mit den folgenden Eigenschaften konfiguriert:
+Dadurch werden die URLs der Produktseiten konfiguriert und die folgenden Optionen unterstützt:
 
-* **Produkt-URL-Vorlage**: definiert das Format von URLs mit einer Reihe von Platzhaltern. Der Standardwert ist `{{page}}.{{url_key}}.html#{{variant_sku}}`, wodurch letztendlich URLs generiert werden, z. B. `/content/venia/us/en/products/product-page.chaz-kangeroo-hoodie.html#MH01-M-Orange`, wobei
-   * `{{page}}` durch `/content/venia/us/en/products/product-page` ersetzt wurde,
-   * `{{url_key}}` durch die `url_key`-Eigenschaft von Magento des Produkts ersetzt wurde, hier `chaz-kangeroo-hoodie`
-   * `{{variant_sku}}` durch die aktuell ausgewählte Variante ersetzt wurde, hier `MH01-M-Orange`
-* **Speicherort der Produktkennung**: definiert den Speicherort der Kennung, die zum Abrufen der Produktdaten verwendet wird. Der Standardwert lautet `SELECTOR`, der andere mögliche Wert `SUFFIX`. In Bezug auf die vorherige Beispiel-URL bedeutet dies, dass die Kennung `chaz-kangeroo-hoodie` zum Abrufen der Produktdaten verwendet wird.
-* **Produktkennungstyp**: definiert den Speicherort der Kennung, die zum Abrufen der Produktdaten verwendet wird. Der Standardwert lautet `URL_KEY`, der andere mögliche Wert `SKU`. In Bezug auf die vorherige Beispiel-URL bedeutet dies, dass die Produktdaten mit einem Magento-GraphQL-Filter wie `filter:{url_key:{eq:"chaz-kangeroo-hoodie"}}` abgerufen werden.
+* `{{page}}.html/{{sku}}.html#{{variant_sku}}` (default)
+* `{{page}}.html/{{url_key}}.html#{{variant_sku}}`
+* `{{page}}.html/{{sku}}/{{url_key}}.html#{{variant_sku}}`
+* `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
+* `{{page}}.html/{{sku}}/{{url_path}}.html#{{variant_sku}}`
 
-### URL-Vorlage für Produktlisten-Seite {#product-list}
+Im Fall von [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia):
 
-Damit werden die URLs der Kategorie- oder Produktlistenseiten mit den folgenden Eigenschaften konfiguriert:
+* `{{page}}` ersetzt durch  `/content/venia/us/en/products/product-page`
+* `{{sku}}` wird durch die SKU des Erzeugnisses ersetzt, z. B.  `VP09`
+* `{{url_key}}` durch die  `url_key` Eigenschaft des Produkts ersetzt werden, z. B.  `lenora-crochet-shorts`
+* `{{url_path}}` durch die des Produkts ersetzt werden,  `url_path`z. B.  `venia-bottoms/venia-pants/lenora-crochet-shorts`
+* `{{variant_sku}}` wird durch die aktuell ausgewählte Variante ersetzt, z. B.  `VP09-KH-S`
 
-* **Kategorie-URL-Vorlage**: definiert das Format von URLs mit einer Reihe von Platzhaltern. Der Standardwert ist `{{page}}.{{id}}.html`, wodurch letztendlich URLs generiert werden, z. B. `/content/venia/us/en/products/category-page.3.html`, wobei
-   * `{{page}}` durch `/content/venia/us/en/products/category-page` ersetzt wurde,
-   * `{{id}}` durch die `id`-Eigenschaft von Magento der Kategorie ersetzt wurde, hier `3`
-* **Speicherort der Kategoriekennung**: definiert den Speicherort der Kennung, die zum Abrufen der Produktdaten verwendet wird. Der Standardwert lautet `SELECTOR`, der andere mögliche Wert `SUFFIX`. In Bezug auf die vorherige Beispiel-URL bedeutet dies, dass die Kennung `3` zum Abrufen der Produktdaten verwendet wird.
-* **Kategoriekennungstyp**: definiert den Speicherort der Kennung, die zum Abrufen der Produktdaten verwendet wird. Der Standardwert und derzeit einzige unterstützte Wert ist `ID`. In Bezug auf die vorherige Beispiel-URL bedeutet dies, dass die Kategoriedaten mit einem Magento-GraphQL-Filter wie `category(id:3)` abgerufen werden.
+Bei den obigen Beispieldaten sieht eine mit dem Standard-URL-Format formatierte Produktvarianten-URL wie `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S` aus.
 
-Es ist möglich, benutzerdefinierte Eigenschaften für jede Vorlage hinzuzufügen, sofern die entsprechenden Daten von den Komponenten, die die Vorlage verwenden, mithilfe des `UrlProvider` festgelegt werden. Überprüfen Sie beispielsweise den Code der Klasse `ProductListItemImpl`, um herauszufinden, wie dieser implementiert wird.
+### URL-Format der Kategorieseite {#product-list}
 
-Es ist auch möglich, den `UrlProvider`-Service durch einen vollständig benutzerdefinierten OSGi-Service zu ersetzen. In diesem Fall muss die `UrlProvider`-Oberfläche implementiert und mit einem höheren Service-Rang registriert werden, um die Standardimplementierung zu ersetzen.
+Dadurch werden die URLs der Kategorie- oder Produktlistenseiten konfiguriert und die folgenden Optionen unterstützt:
+
+* `{{page}}.html/{{url_path}}.html` (Standard)
+* `{{page}}.html/{{url_key}}.html`
+
+Im Fall von [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia):
+
+* `{{page}}` ersetzt durch  `/content/venia/us/en/products/category-page`
+* `{{url_key}}` wird durch die  `url_key` Eigenschaft der Kategorie ersetzt
+* `{{url_path}}` wird durch die Kategorie  `url_path`
+
+Bei den obigen Beispieldaten sieht eine Kategorieseiten-URL, die mit dem Standard-URL-Format formatiert ist, wie `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html` aus.
+
+>[!NOTE]
+> 
+> Der `url_path` ist eine Verkettung aus dem `url_keys` der Vorgänger eines Produkts oder einer Kategorie und dem `url_key`-Schrägstrich des Produkts oder der Kategorie, getrennt durch `/`.
+
+## Benutzerdefinierte URL-Formate {#custom-url-format}
+
+Um ein benutzerdefiniertes URL-Format bereitzustellen, kann ein Projekt die [`UrlFormat`-Schnittstelle](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) implementieren und die Implementierung als OSGi-Dienst registrieren, wobei es entweder als Kategorie- oder Produktseiten-URL-Format verwendet wird. Die Diensteigenschaft `UrlFormat#PROP_USE_AS` gibt an, welche der konfigurierten vordefinierten Formate ersetzt werden sollen:
+
+* `useAs=productPageUrlFormat`ersetzt das konfigurierte URL-Format der Produktseite
+* `useAs=categoryPageUrlFormat`ersetzt das konfigurierte Kategorieseiten-URL-Format
+
+Wenn es mehrere Implementierungen von `UrlFormat` gibt, die als OSGi-Dienste registriert sind, ersetzt die Implementierung mit dem höheren Service-Rang die Implementierung mit dem (den) niedrigeren Service-Rang.
+
+Der `UrlFormat` muss ein Paar von Methoden implementieren, um eine URL aus einer gegebenen Parameterzuordnung zu erstellen und eine URL zu analysieren, um dieselbe Parameterzuordnung zurückzugeben. Die Parameter sind dieselben wie oben beschrieben. Nur für Kategorien wird ein zusätzlicher Parameter `{{uid}}` für `UrlFormat` bereitgestellt.
 
 ## Kombinieren mit Sling-Zuordnungen {#sling-mapping}
 
