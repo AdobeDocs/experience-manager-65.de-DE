@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Ausgabedarstellungen
 exl-id: null
-source-git-commit: 865370e38368072c39ad337eb52259c586403efb
+source-git-commit: 771bccf12f79648afd59573dad0b7fdf95c6e1e2
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 4%
@@ -24,10 +24,10 @@ Experience Manager ermöglicht eine Vielzahl von Methoden zur Verarbeitung von B
 
 Sie können ImageMagick verwenden, um Bilder zu verarbeiten, einschließlich zum Generieren von FPO-Ausgabedarstellungen. Solche Ausgabedarstellungen werden heruntergesampelt, d. h. die Pixelabmessungen der Ausgabedarstellung werden proportional reduziert, wenn das Originalbild PPI größer als 72 hat. Siehe [Installieren und Konfigurieren von ImageMagick für die Verwendung mit Experience Manager Assets](best-practices-for-imagemagick.md).
 
-|  | Verwenden des integrierten Workflows des Experience Managers | Workflow &quot;ImageMagick&quot;verwenden | Bemerkungen |
-|— |— |—|— |
-| Für neue Vermögenswerte | FPO-Ausgabedarstellung aktivieren ([help](#generate-renditions-of-new-assets-using-aem-workflow)) | Hinzufügen der ImageMagick-Befehlszeile im Experience Manager-Workflow ([help](#generate-renditions-of-new-assets-using-imagemagick)) | Experience Manager führt den Workflow DAM-Update-Assets für jeden Upload aus. |
-| Für bestehende Vermögenswerte | Aktivieren Sie die FPO-Ausgabedarstellung in einem neuen, dedizierten Experience Manager-Workflow ([help](#generate-renditions-of-existing-assets-using-aem-workflow)) | Hinzufügen der ImageMagick-Befehlszeile in einem neuen, dedizierten Experience Manager-Workflow ([help](#generate-renditions-of-existing-assets-using-imagemagick)) | FPO-Ausgabedarstellungen der vorhandenen Assets können bei Bedarf oder stapelweise erstellt werden. |
+|  | Verwenden des integrierten Workflows von Experience Manager | Workflow &quot;ImageMagick&quot;verwenden | Bemerkungen |
+|--- |--- |---|--- |
+| Für neue Assets | FPO-Ausgabedarstellung aktivieren ([help](#generate-renditions-of-new-assets-using-aem-workflow)) | Hinzufügen der ImageMagick-Befehlszeile im Experience Manager-Workflow ([help](#generate-renditions-of-new-assets-using-imagemagick)) | Experience Manager führt den Workflow DAM-Update-Assets für jeden Upload aus. |
+| Für vorhandene Assets | Aktivieren Sie die FPO-Ausgabedarstellung in einem neuen, dedizierten Experience Manager-Workflow ([help](#generate-renditions-of-existing-assets-using-aem-workflow)) | Fügen Sie die ImageMagick-Befehlszeile in einen neuen, dedizierten Experience Manager-Workflow ein ([help](#generate-renditions-of-existing-assets-using-imagemagick)). | FPO-Ausgabedarstellungen der vorhandenen Assets können bei Bedarf oder stapelweise erstellt werden. |
 
 >[!CAUTION]
 >
