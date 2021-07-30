@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6bc228866aca785ec768daefb73970fc24568ef0
 workflow-type: tm+mt
 source-wordcount: '2601'
 ht-degree: 68%
@@ -41,7 +41,7 @@ Auf dieser Seite erfahren Sie, wie Sie die Funktionen des Multi-Site-Managers er
 >
 >Multi Site Manager und die dazugehörige API werden beim Erstellen einer Website verwendet und sind daher ausschließlich für die Nutzung in einer Autorenumgebung gedacht.
 
-## Überblick über die Java-API  {#overview-of-the-java-api}
+## Überblick über die Java-API {#overview-of-the-java-api}
 
 Multi Site Manager umfasst die folgenden Pakete:
 
@@ -64,14 +64,18 @@ Die wichtigsten MSM-API-Objekte interagieren wie folgt (siehe auch: [Verwendete 
       * ermöglicht es dem Autor, **Site erstellen** zu nutzen, wodurch der Benutzer einfach Sprachen auswählen und die Struktur der Live Copy konfigurieren kann
       * definiert die standardmäßige Rollout-Konfiguration für alle entstehenden Live Copies.
 
-* **`LiveRelationship`** Die `LiveRelationship` legt die Verbindung (Beziehung) zwischen einer Ressource im Live Copy-Zweig und der entsprechenden Quelle/Blueprint-Ressource fest.
+* **`LiveRelationship`**
+
+   Die `LiveRelationship` legt die Verbindung (Beziehung) zwischen einer Ressource im Live Copy-Zweig und der entsprechenden Quelle/Blueprint-Ressource fest.
 
    * Die Beziehungen werden bei der Umsetzung der Vererbung und des Rollouts genutzt.
    * `LiveRelationship` -Objekte bieten Zugriff (Verweise) auf die Rollout-Konfigurationen (  `RolloutConfig`),  `LiveCopy`und  `LiveStatus` Objekte, die sich auf die Beziehung beziehen.
 
    * Beispiel: Eine Live Copy wird in `/content/copy/us` aus der Quelle/dem Blueprint unter `/content/we-retail/language-masters` erstellt. Die Ressourcen `/content/we.retail/language-masters/en/jcr:content` und `/content/copy/us/en/jcr:content` bilden eine Beziehung.
 
-* **`LiveCopy`** `LiveCopy` enthält die Konfigurationsdetails für die Beziehungen (  `LiveRelationship`) zwischen den Live Copy-Ressourcen und ihren Quell-/Blueprint-Ressourcen.
+* **`LiveCopy`**
+
+   `LiveCopy` enthält die Konfigurationsdetails für die Beziehungen (  `LiveRelationship`) zwischen den Live Copy-Ressourcen und ihren Quell-/Blueprint-Ressourcen.
 
    * Verwenden Sie die Klasse `LiveCopy` , um auf den Pfad der Seite, den Pfad der Quell-/Blueprint-Seite, die Rollout-Konfigurationen und darauf zuzugreifen, ob auch untergeordnete Seiten in `LiveCopy` enthalten sind.
 
@@ -91,11 +95,13 @@ Die wichtigsten MSM-API-Objekte interagieren wie folgt (siehe auch: [Verwendete 
 
    Erstellt `LiveAction` Objekte mit einer `LiveAction`-Konfiguration. Konfigurationen werden als Ressourcen im Repository gespeichert.
 
-* **`RolloutConfig`** Der  `RolloutConfig` enthält eine Liste von  `LiveActions`, die beim Auslösen verwendet werden soll. `LiveCopy` übernimmt `RolloutConfig` und das Ergebnis ist im `LiveRelationship` vorhanden.
+* **`RolloutConfig`**
+
+   `RolloutConfig` enthält eine Liste von `LiveActions`, die bei Auslösung verwendet werden soll. `LiveCopy` übernimmt `RolloutConfig` und das Ergebnis ist im `LiveRelationship` vorhanden.
 
    * Beim erstmaligen Einrichten einer Live Copy wird ebenfalls eine RolloutConfig genutzt (die die LiveActions auslöst).
 
-## Erstellen einer neuen Synchronisierungsaktion  {#creating-a-new-synchronization-action}
+## Erstellen einer neuen Synchronisierungsaktion {#creating-a-new-synchronization-action}
 
 Erstellen Sie benutzerdefinierte Synchronisierungsaktionen für die Nutzung mit Ihren Rollout-Konfigurationen. Wenn die [installierten Aktionen](/help/sites-administering/msm-sync.md#installed-synchronization-actions) Ihre spezifischen Anwendungsanforderungen nicht erfüllen, können Sie eine Synchronisierungsaktion erstellen. Hierfür erstellen Sie zwei Klassen:
 
@@ -175,14 +181,14 @@ Die neue Rollout-Konfiguration steht dann zur Verfügung, wenn Sie die Rollout-K
 >
 >Informationen hierzu finden Sie auch unter [Best Practices zum Anpassen von Rollouts](/help/sites-administering/msm-best-practices.md#customizing-rollouts).
 
-### Erstellen der Rollout-Konfiguration  {#create-the-rollout-configuration}
+### Erstellen der Rollout-Konfiguration {#create-the-rollout-configuration}
 
 So erstellen Sie eine neue Rollout-Konfiguration:
 
 1. Offene CRXDE Lite; Beispiel:
    [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
-1. Navigieren Sie zu :
+1. Gehen Sie zu :
    `/apps/msm/<your-project>/rolloutconfigs`
 
    >[!NOTE]
@@ -288,7 +294,7 @@ Das folgende Verfahren setzt voraus, dass Sie das adobe-public-Profil zu Ihrer M
 
 1. Starten Sie Eclipse und [importieren Sie das Maven-Projekt](/help/sites-developing/howto-projects-eclipse.md#import-the-maven-project-into-eclipse).
 
-### Hinzufügen von Abhängigkeiten zur POM-Datei  {#add-dependencies-to-the-pom-file}
+### Hinzufügen von Abhängigkeiten zur POM-Datei {#add-dependencies-to-the-pom-file}
 
 Fügen Sie Abhängigkeiten hinzu, damit der Eclipse-Compiler auf die Klassen verweisen kann, die im `LiveActionFactory`-Code verwendet werden.
 
@@ -378,7 +384,7 @@ Fügen Sie Abhängigkeiten hinzu, damit der Eclipse-Compiler auf die Klassen ver
     </dependency>
    ```
 
-### Implementieren von LiveActionFactory  {#implement-liveactionfactory}
+### Implementieren von LiveActionFactory {#implement-liveactionfactory}
 
 Die folgende `LiveActionFactory`-Klasse implementiert eine `LiveAction`, die Nachrichten zu Quell- und Zielseiten protokolliert und die Eigenschaft `cq:lastModifiedBy` vom Quell- zum Zielknoten kopiert. Der Name der Live-Aktion ist `exampleLiveAction`.
 
@@ -575,7 +581,7 @@ Konfigurieren Sie die beim vorhergehenden Verfahren erstellte Rollout-Konfigurat
 
 1. Klicken Sie auf **Alle speichern**.
 
-### Erstellen der Live Copy  {#create-the-live-copy}
+### Erstellen der Live Copy {#create-the-live-copy}
 
 [Erstellen Sie eine Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) des English/Products-Zweigs der We.Retail-Referenzwebsite mit Ihrer Rollout-Konfiguration:
 
