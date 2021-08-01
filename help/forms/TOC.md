@@ -8,10 +8,10 @@ user-guide-title: Adobe Experience Manager 6.5, Forms-Anleitung
 breadcrumb-title: Forms-Anleitung
 user-guide-description: Digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren.
 role: User
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 730ae7cd6cd04eb6377b37eafe29db597e93cce3
 workflow-type: tm+mt
-source-wordcount: '3718'
-ht-degree: 72%
+source-wordcount: '3771'
+ht-degree: 71%
 
 ---
 
@@ -117,7 +117,7 @@ ht-degree: 72%
       + [Formularportal](using/forms-portal-handling-user-data.md)
       + [Korrespondenzverwaltung](using/correspondence-management-handling-user-data.md)
       + [Integration mit Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
-      + [Dokumentensicherheit](/help/forms/using/document-security-handling-user-data.md)
+      + [Document Security](/help/forms/using/document-security-handling-user-data.md)
    + Härtung der AEM Forms-Umgebung {#hardening-aem-forms-environment}
       + [Härten (Absichern) und Schutz von AEM Forms in OSGi-Umgebungen](using/hardening-securing-aem-forms-environment.md)
       + [Allgemeine Sicherheitsaspekte für AEM Forms on JEE](using/general-security-considerations.md)
@@ -168,7 +168,7 @@ ht-degree: 72%
    + [Adaptive Formularvorlagen](using/template-editor.md)
    + [Adaptive Formularausdrücke](using/adaptive-form-expressions.md)
    + [Generierung eines Datensatzdokuments für adaptive Formulare](using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-   + [Verbessern der Performance umfangreicher Formulare durch verzögertes Laden](using/lazy-loading-adaptive-forms.md)
+   + [Verbessern der Performance umfangreicher Formulare durch verzögertes Laden ](using/lazy-loading-adaptive-forms.md)
    + [Vorbefüllen von Feldern in adaptiven Formularen](using/prepopulate-adaptive-form-fields.md)
    + [Verwenden von SOM-Ausdrücken in adaptiven Formularen](using/using-som-expressions-adaptive-forms.md)
    + [Hinzufügen von Informationen aus Benutzerdaten zu Formularübermittlungsmetadaten](using/form-submission-metadata.md)
@@ -679,3 +679,10 @@ ht-degree: 72%
          + [Programmgesteuerte Verwaltung der Voreinstellungsknoten](developing/programmatically-preferences-nodes.md)
          + [Schützen von Dokumenten mit Richtlinien](developing/protecting-documents-policies.md)
          + [Validieren eines DDX-Dokuments mithilfe der Webdienst-API](developing/validate-ddx-document-using-web.md)
+      + Alte Dokumentation {#legacy-documentation}
+         + [Verwenden des Execute-Script-Dienstes in AEM Forms on JEE Workbench zum Erstellen von XML-Daten](developing/building-xml.md)
+         + [Komprimieren und Dekomprimieren von Dateien mit einem benutzerdefinierten AEM Forms on JEE-DSC](developing/compressing-decompressing-custom-dsc.md)
+         + [Konfigurieren und Fehlerbehebung für einen AEM Forms on JEE-Servercluster](developing/configure-server-cluster.md)
+         + [Erstellen und Verwenden von Hashes in dynamischen PDF forms](developing/hashing-forms.md)
+         + [Übergeben von Anmeldeinformationen mithilfe von WS-Security-Headern](developing/passing-credentials.md)
+
