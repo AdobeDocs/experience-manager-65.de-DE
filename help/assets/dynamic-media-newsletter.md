@@ -1,30 +1,34 @@
 ---
-title: Dynamic Media Newsletter
-description: 'Der Dynamic Media Newsletter von Experience League ist ein monatlicher Newsletter. Er soll Ihnen helfen, sich mit Dynamic Media und Dynamic Media Classic vertraut zu machen, damit Sie sofort Wert realisieren können. Dieser Newsletter enthält wertvolle Ressourcen zum Wissensaufbau. Es enthält Videos, Lösungsübersichten und Einführungen zu einigen der wichtigsten Funktionen und Funktionen wie Bildvorgaben, Viewer-Vorgaben, Videoprofile und mehr. '
+title: Dynamic Media-Newsletter-Archiv
+description: 'Der archivierte Dynamic Media Newsletter nach Experience League war ein monatlicher Newsletter. Es wurde entwickelt, um Ihnen dabei zu helfen, sich mit Dynamic Media und Dynamic Media Classic vertraut zu machen, damit Sie sofort Nutzen ziehen können. Die archivierten Newsletter enthalten wertvolle Ressourcen zur Wissensbildung, die in diesem inzwischen ausgesetzten One-Stopp-Shop-Newsletter verfügbar waren. Archivierte Newsletter enthalten Anleitungsvideos und Lösungsübersichten. Außerdem werden wichtige Funktionen wie Bildvorgaben, Viewer-Vorgaben und Videoprofile vorgestellt. '
 keywords: Dynamic Media; Newsletter; Produktupdates; Tipps und Tricks; Ereignisse; Kundenerfolg; Blog; Blogs; Bilder; Videos; Funktionen; Funktionen
 contentOwner: Rick Brough
 solution: Experience Manager, Dynamic Media Classic
 role: User, Admin
 exl-id: 8aa779e0-cf76-45a7-a474-556fdfded31b
 feature: Zusammenarbeit, Dynamic Media Classic
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 3dd49715c7c3078f2ef9495c99c98d4dd566db9b
 workflow-type: tm+mt
-source-wordcount: '1170'
-ht-degree: 75%
+source-wordcount: '1074'
+ht-degree: 64%
 
 ---
 
 # ![Logo des Dynamic Media Newsletters](/help/assets/assets/dynamic-media-newsletter-logo.png)
 
-Der monatliche Dynamic Media Newsletter von Experience League soll Ihnen helfen, sich mit Dynamic Media und Dynamic Media Classic vertraut zu machen, damit Sie sofort Wert realisieren können.
+>[!NOTE]
+>
+>Der monatliche Newsletter wird nun eingestellt. Sie können jedoch weiterhin auf die Newsletter-Archive unten zugreifen.
 
-Dieser Newsletter enthält wertvolle Ressourcen zum Wissensaufbau. Es enthält Videos, Lösungsübersichten und Einführungen zu einigen der wichtigsten Funktionen und Funktionen wie Bildvorgaben, Viewer-Vorgaben, Videoprofile und mehr.
+Der Dynamic Media-Newsletter von Experience League soll Ihnen helfen, sich mit Dynamic Media und Dynamic Media Classic vertraut zu machen, damit Sie sofort Nutzen ziehen können.
 
-## Informieren Sie sich - bleiben Sie auf dem Laufenden
+In diesem archivierten One-Stopp-Shop-Newsletter finden Sie wertvolle Ressourcen zur Wissensbildung, wie Videos und Lösungsübersichten. Außerdem werden wichtige Funktionen wie Bildvorgaben, Viewer-Vorgaben und Videoprofile vorgestellt.
 
-[Melden Sie sich an](https://www.adobe.com/subscription/dynamic-media-newsletter.html), um den Dynamic Media Newsletter monatlich in Ihrem Posteingang zu erhalten.
+<!-- ## Get inspired - Stay informed
 
-## Sie haben eine Ausgabe des Dynamic Media Newsletters verpasst?
+[Sign up](https://www.adobe.com/subscription/dynamic-media-newsletter.html) to receive the Dynamic Media Newsletter on a monthly basis in your inbox. -->
+
+## Dynamic Media-Newsletter-Archiv
 
 <!-- * **[May 2020, Issue 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
 
@@ -52,9 +56,9 @@ Dieser Newsletter enthält wertvolle Ressourcen zum Wissensaufbau. Es enthält V
    * Erfahren Sie mehr über die kostenlosen Dynamic Media Classic-Audits von Adobe.
    * Lernen Sie John Monroe kennen, Senior Programm Manager für Customer Success Services.
 
-      >[!IMPORTANT]
-      >
-      >Adobe möchte sicherstellen, dass sie den Dynamic Media-Newsletter nur an Personen senden, die ihn erhalten möchten. Um den Newsletter nach dieser Ausgabe weiter zu erhalten, melden Sie sich [hier](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0) an.
+<!--     >[!IMPORTANT]
+    >
+    >Adobe wants to make sure they are only sending the Dynamic Media newsletter to people who want to receive it. To continue receiving the newsletter after this issue, please sign up for it [here](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&reserved=0). -->
 
 * **[Februar 2020, Ausgabe 2](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
@@ -153,7 +157,7 @@ Dieser Newsletter enthält wertvolle Ressourcen zum Wissensaufbau. Es enthält V
 
 * **[April 2019, Ausgabe 04](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_04_2019_April.html)**
 
-   Willkommen zur Eröffnungsausgabe des Dynamic Media-Newsletters, dem neuen monatlichen Newsletter der Adobe, der mit Neuigkeiten, Veranstaltungen und Ressourcen für Dynamic Media-Benutzer in Adobe Experience Manager Assets und Adobe Dynamic Media Classic gefüllt ist.
+   Willkommen zur Eröffnungsausgabe des Dynamic Media Newsletters, dem Newsletter der Adobe, der mit Neuigkeiten, Veranstaltungen und Ressourcen für Dynamic Media-Benutzer in Adobe Experience Manager Assets und Adobe Dynamic Media Classic gefüllt ist.
 
    In dieser Ausgabe:
    * Registrieren Sie sich für das Adobe-Webinar zu den verborgenen Funktionen von Dynamic Media Classic.
