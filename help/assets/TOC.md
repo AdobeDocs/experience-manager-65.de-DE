@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, verarbeiten und verteilen Sie digitale Assets.
-source-git-commit: a8fef5d797efb3a6ce25760df6f710b8b99c2dc0
+source-git-commit: 3dd49715c7c3078f2ef9495c99c98d4dd566db9b
 workflow-type: tm+mt
 source-wordcount: '584'
-ht-degree: 57%
+ht-degree: 35%
 
 ---
 
@@ -36,19 +36,19 @@ ht-degree: 57%
    + [Wiederverwenden von Assets mit MSM](reuse-assets-using-msm.md)
    + [Connected Assets with [!DNL Sites]](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
-   + [Dynamic Media Newsletter von Experience League](dynamic-media-newsletter.md)
+   + [Dynamic Media-Newsletter-Archiv nach Experience League](dynamic-media-newsletter.md)
    + [Einrichten von Dynamic Media](administering-dynamic-media.md)
    + [Arbeiten mit Dynamic Media](dynamic-media.md)
-   + [Konfigurieren von Dynamic Media – Scene7-Modus](config-dms7.md)
-   + [Konfigurieren von Dynamic Media – Hybridmodus](config-dynamic.md)
-   + [Fehlerbehebung in Dynamic Media – Scene7-Modus](troubleshoot-dms7.md)
+   + [Konfigurieren des Dynamic Media-/Scene7-Modus](config-dms7.md)
+   + [Konfigurieren von Dynamic Media - Hybridmodus](config-dynamic.md)
+   + [Fehlerbehebung bei Dynamic Media - Scene7-Modus](troubleshoot-dms7.md)
    + [Barrierefreiheit in Dynamic Media](accessibility-dm.md)
-   + [Migration von Dynamic Media - Hybridmodus zu Dynamic Media - S7-Modus](migrate-from-hybrid-to-dms7.md)
-   + [Verwalten von Assets mit Dynamic Media](managing-assets.md)
+   + [Migration vom Dynamic Media-Hybridmodus zum Dynamic Media-S7-Modus](migrate-from-hybrid-to-dms7.md)
+   + [Verwalten von Dynamic Media-Assets](managing-assets.md)
    + [Best Practices für die Optimierung der Bildqualität](best-practices-for-optimizing-the-quality-of-your-images.md)
-   + [Verwalten von Viewer-Vorgaben für Dynamic Media](managing-viewer-presets.md)
-   + [Anwenden von Viewer-Vorgaben für Dynamic Media](viewer-presets.md)
-   + [Verwalten von Bildvorgaben für Dynamic Media](managing-image-presets.md)
+   + [Verwalten von Dynamic Media-Viewer-Vorgaben](managing-viewer-presets.md)
+   + [Anwenden von Dynamic Media-Viewer-Vorgaben](viewer-presets.md)
+   + [Verwalten von Dynamic Media-Bildvorgaben](managing-image-presets.md)
    + [Anwenden von Dynamic Media-Bildvorgaben](image-presets.md)
    + [Dynamic Media-Videoprofile](video-profiles.md)
    + [Dynamic Media-Bildprofile](image-profiles.md)
@@ -68,19 +68,19 @@ ht-degree: 57%
    + [Interaktive Bilder](interactive-images.md)
    + [Interaktive Videos](interactive-videos.md)
    + [360-Grad-VR-Video](/help/assets/360-video.md)
-   + [Integrieren von Dynamic Media-Viewern mit Adobe Analytics und Adobe Experience Platform-Tags](/help/assets/tags.md)
-   + [Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups](custom-pop-ups.md)
+   + [Integrieren von Dynamic Media-Viewern mit Adobe Analytics- und Adobe Experience Platform-Tags](/help/assets/tags.md)
+   + [Erstellen benutzerdefinierter Popups mithilfe der Schnellansicht](custom-pop-ups.md)
    + [Bereitstellen von optimierten Bildern für eine responsive Site](responsive-site.md)
-   + [Anzeigen von Dynamic Media-Assets in der Vorschau](previewing-assets.md)
+   + [Vorschau von Dynamic Media-Assets anzeigen](previewing-assets.md)
    + [Hinzufügen von Dynamic Media-Assets zu Seiten](adding-dynamic-media-assets-to-pages.md)
-   + [Einbetten des dynamischen Video- oder Bild-Viewers auf einer Web-Seite](embed-code.md)
-   + [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwebapplication.md)
+   + [Einbetten des Dynamic Video- oder Bild-Viewers auf einer Web-Seite](embed-code.md)
+   + [URLs mit Ihrer Webanwendung verknüpfen](linking-urls-to-yourwebapplication.md)
    + [Verwenden von Regelsätzen zum Konvertieren von URLs](using-rulesets-to-transform-urls.md)
    + [Veröffentlichen von Dynamic Media-Assets](publishing-dynamicmedia-assets.md)
    + [Arbeiten mit selektiver Veröffentlichung in Dynamic Media](selective-publishing.md)
    + [Invalidierung des CDN-Cache über Dynamic Media](invalidate-cdn-cache-dynamic-media.md)
    + [Invalidierung des CDN-Cache mithilfe von Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
-   + [Installieren von Feature Pack 18912 für die Massenmigration von Assets](bulk-ingest-migrate.md)
+   + [Installieren Sie Feature Pack 18912 für die Massenmigration von Assets](bulk-ingest-migrate.md)
    + [Arbeiten mit Selektoren](working-with-selectors.md)
 + Erweitern von Assets {#extending}
    + [Anpassen und Erweitern von  [!DNL Assets]](extending-assets.md)
