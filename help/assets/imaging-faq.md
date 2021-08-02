@@ -9,10 +9,10 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: Asset-Management,Ausgabeformate
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: 4b8369de9e6a10b73115d53358ce98729d92ed44
+source-git-commit: a166ea9e56ba6b69793e9949a920a7a24b5b9b25
 workflow-type: tm+mt
-source-wordcount: '2633'
-ht-degree: 45%
+source-wordcount: '2607'
+ht-degree: 46%
 
 ---
 
@@ -190,13 +190,13 @@ Die intelligente Bildbearbeitung wird nicht automatisch aktiviert. Sie müssen e
 
 Standardmäßig sind die DSGVO für die intelligente Bildbearbeitung und die Netzwerkoptimierung für ein Dynamic Media-Unternehmenskonto deaktiviert (deaktiviert). Wenn Sie eine oder beide dieser vordefinierten Verbesserungen aktivieren möchten, erstellen Sie einen Support-Fall wie unten beschrieben.
 
-Der Veröffentlichungszeitplan für die intelligente Bildbearbeitung (DPR) und Netzwerkoptimierung lautet wie folgt:
+<!-- NOW AVAILABLE IN ALL THREE REGIONS AS OF AUGUST 2. 2021. SEE CQDOC- 17915 The release schedule for Smart Imaging DPR and network optimization is as follows:
 
-| Region | Zieldatum |
+| Region | Target date |
 |---|---|
-| Nordamerika | Live |
-| Europa, Naher Osten, Afrika | 13. August 2021 |
-| Asien-Pazifik | 22. Juli 2021 |
+| North America | Live |
+| Europe, Middle East, Africa | 13 Aug 2021 |
+| Asia-Pacific | 22 Jul 2021 | -->
 
 1. [Verwenden Sie die Admin Console, um einen Support-Fall zu erstellen](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 1. Geben Sie in Ihrem Support-Fall die folgenden Informationen an:
