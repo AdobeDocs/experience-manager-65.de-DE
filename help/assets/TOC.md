@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, verarbeiten und verteilen Sie digitale Assets.
-source-git-commit: 3dd49715c7c3078f2ef9495c99c98d4dd566db9b
+source-git-commit: 1e8b5ab66668215e0eeed676b42f533d4e210e1c
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '590'
 ht-degree: 35%
 
 ---
@@ -116,6 +116,7 @@ ht-degree: 35%
    + [Integration von  mit  [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management in Assets](drm.md)
    + [Demopaket für Asset-Einblicke verwenden](use-demo-package-for-asset-insights.md)
+   + [Generieren von FPO-Ausgabeformaten für Adobe InDesign](configure-fpo-renditions.md)
    + [Best Practices für Dateiformate in Assets](assets-file-format-best-practices.md)
    + [Best Practices zur Überwachung von Assets](assets-monitoring-best-practices.md)
    + [Unterstützung von Camera Raw](camera-raw.md)
