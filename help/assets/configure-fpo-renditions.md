@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Ausgabedarstellungen
 exl-id: null
-source-git-commit: 771bccf12f79648afd59573dad0b7fdf95c6e1e2
+source-git-commit: 1e8b5ab66668215e0eeed676b42f533d4e210e1c
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1051'
 ht-degree: 4%
 
 ---
@@ -61,9 +61,11 @@ Im Folgenden werden die Schritte zum Konfigurieren des Workflow-Modells DAM Upda
 
 In Experience Manager wird der Workflow DAM-Update-Asset ausgeführt, wenn ein neues Asset hochgeladen wird. Um ImageMagick zur Verarbeitung von Ausgabedarstellungen neu hochgeladener Assets zu verwenden, fügen Sie dem Workflow-Modell einen neuen Befehl hinzu.
 
-1. Klicken Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**. Wählen Sie das Modell **[!UICONTROL DAM Update Asset]** und klicken Sie auf **[!UICONTROL Bearbeiten]**.
+1. Klicken Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**.
 
-1. Klicken Sie in der oberen linken Ecke auf **[!UICONTROL Seitliches Bedienfeld ein/aus]** . Suchen Sie nach Befehlszeilenschritt.
+1. Wählen Sie das Modell **[!UICONTROL DAM Update Asset]** und klicken Sie auf **[!UICONTROL Bearbeiten]**.
+
+1. Klicken Sie in der oberen linken Ecke auf **[!UICONTROL Seitliches Bedienfeld ein/aus]** und suchen Sie nach einem Befehlszeilenschritt.
 
 1. Ziehen Sie den Schritt **[!UICONTROL Befehlszeile]** und fügen Sie ihn vor dem Schritt **[!UICONTROL Prozessminiaturansichten]** hinzu.
 
@@ -89,13 +91,21 @@ Detaillierte Informationen zu den ImageMagick-Befehlszeilenfunktionen finden Sie
 
 Um mithilfe des Experience Manager-Workflows die FPO-Ausgabe der vorhandenen Assets zu generieren, erstellen Sie ein dediziertes Workflow-Modell, das die integrierte FPO-Ausgabedarstellungsoption verwendet.
 
-1. Klicken Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**. Um ein Modell zu erstellen, klicken Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Modell erstellen]**. Fügen Sie einen aussagekräftigen **[!UICONTROL Titel]** und einen **[!UICONTROL Namen]** hinzu.
+1. Klicken Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**.
 
-1. Wählen Sie das Modell aus und klicken Sie auf **[!UICONTROL Bearbeiten]**. Klicken Sie auf **[!UICONTROL Seiteninformationen]** > **[!UICONTROL Eigenschaften öffnen]**. Wählen Sie **[!UICONTROL Verlaufs-Workflow]** aus. Dies verbessert die Skalierbarkeit und Leistung. Klicken Sie auf ******[!UICONTROL Speichern und schließen]**.
+1. Um ein Modell zu erstellen, klicken Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Modell erstellen]**.
 
-1. Klicken Sie in der oberen linken Ecke auf **[!UICONTROL Seitliches Bedienfeld ein/aus]** . Suchen Sie nach Schritt &quot;Miniaturansichten verarbeiten&quot;. Ziehen Sie den Schritt **[!UICONTROL Miniaturansichten verarbeiten]** .
+1. Fügen Sie einen aussagekräftigen **[!UICONTROL Titel]** und **[!UICONTROL Name]** hinzu.
 
-1. Wählen Sie **[!UICONTROL Miniaturansichten verarbeiten]** und klicken Sie auf **[!UICONTROL Konfigurieren]**. Folgen Sie der Konfiguration [, um mithilfe des Experience Manager-Workflows](#generate-renditions-of-new-assets-using-aem-workflow) die Ausgabe neuer Assets zu generieren. Um die Änderungen zu aktivieren, klicken Sie auf **[!UICONTROL Sync]**.
+1. Wählen Sie das Modell aus und klicken Sie auf **[!UICONTROL Bearbeiten]**. Klicken Sie auf **[!UICONTROL Seiteninformationen]** > **[!UICONTROL Eigenschaften öffnen]** und wählen Sie dann **[!UICONTROL Übergangs-Workflow]** aus. Dies verbessert die Skalierbarkeit und Leistung.
+
+1. Klicken Sie auf ******[!UICONTROL Speichern und schließen]**.
+
+1. Klicken Sie in der oberen linken Ecke auf **[!UICONTROL Seitliches Bedienfeld ein/aus]** und suchen Sie nach Schritt &quot;Prozessminiaturansicht&quot;.
+
+1. Wählen Sie **[!UICONTROL Miniaturansichten verarbeiten]** und klicken Sie auf **[!UICONTROL Konfigurieren]**. Folgen Sie der Konfiguration [, um mithilfe des Experience Manager-Workflows](#generate-renditions-of-new-assets-using-aem-workflow) die Ausgabe neuer Assets zu generieren.
+
+1. Um die Änderungen zu aktivieren, klicken Sie auf **[!UICONTROL Sync]**.
 
 
 ## Generieren von Ausgabeformaten vorhandener Assets mit ImageMagick {#generate-renditions-of-existing-assets-using-imagemagick}
