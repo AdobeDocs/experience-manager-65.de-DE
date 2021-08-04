@@ -10,10 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 6678e3c3-fb0f-4300-8838-38f23f14db07
 exl-id: 50e608d5-951f-4a3f-bed4-9e92ff5d7bd4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: de5eb53f6160991ca0718d61afaeed2078a4fa88
 workflow-type: tm+mt
-source-wordcount: '2487'
-ht-degree: 65%
+source-wordcount: '2509'
+ht-degree: 64%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 65%
 
 Die Tag-Bibliotheken von Granite, CQ und Sling verleihen Ihnen Zugriff auf spezifische Funktionen für die Verwendung im JSP-Skript der Vorlagen und Komponenten.
 
-## Die Tag-Bibliothek von Granite  {#granite-tag-library}
+## Die Tag-Bibliothek von Granite {#granite-tag-library}
 
 Die Tag-Bibliothek von Granite enthält hilfreiche Funktionen.
 
@@ -37,7 +37,7 @@ Das globale Objekt deklariert zudem die [Sling-Bibliothek](/help/sites-developin
 <%@taglib prefix="sling" uri="https://sling.apache.org/taglibs/sling" %>
 ```
 
-### <ui:includeClientLib> {#ui-includeclientlib}
+### &lt;ui:includeclientlib> {#ui-includeclientlib}
 
 Das Tag `<ui:includeClientLib>` enthält eine AEM HTML-Client-Bibliothek, bei der es sich um eine JS-, CSS- oder Design-Bibliothek handeln kann. Für mehrere Einschlüsse verschiedener Typen, z. B. js und css, muss dieses Tag mehrmals in der JSP verwendet werden. Dieses Tag ist ein praktischer Wrapper für die Dienstschnittstelle ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`.
 
@@ -99,7 +99,7 @@ Wenn Sie das JSP-Skript einer AEM-Komponente entwickeln, sollten Sie folgenden C
 
 Sie deklariert die Sling-, CQ- und JSTL-Taglibs und stellt die regelmäßig verwendeten Skriptobjekte bereit, die durch das Tag [ `<cq:defineObjects />`](#amp-lt-cq-defineobjects) definiert werden. Dies verkürzt und vereinfacht den JSP-Code der Komponente.
 
-### <cq:text> {#cq-text}
+### &lt;cq:text> {#cq-text}
 
 Das Tag `<cq:text>` ist ein Komforttag, das Komponententext in einer JSP ausgibt.
 
@@ -157,7 +157,7 @@ Einige Beispiele dafür, wie das Tag `<cq:text>` in einer JSP verwendet werden k
 <cq:text property="text" tagClass="text"/>
 ```
 
-### <cq:setContentBundle> {#cq-setcontentbundle}
+### &lt;cq:setcontentbundle> {#cq-setcontentbundle}
 
 Das Tag `<cq:setContentBundle>` erstellt einen i18n-Lokalisierungskontext und speichert ihn in der Konfigurationsvariablen `javax.servlet.jsp.jstl.fmt.localizationContext`.
 
@@ -204,7 +204,7 @@ Für von Benutzern personalisierte Seiten:
 </div> ...
 ```
 
-### <cq:include> {#cq-include}
+### &lt;cq:include> {#cq-include}
 
 Das Tag `<cq:include>` enthält eine Ressource auf der aktuellen Seite.
 
@@ -254,7 +254,7 @@ Sollten Sie `<cq:include>` oder `<sling:include>` verwenden?
 * Bei der Entwicklung von AEM-Komponenten empfiehlt Adobe die Verwendung von `<cq:include>`.
 * `<cq:include>` ermöglicht das direkte Einfügen von Skriptdateien anhand ihres Namens, wenn Sie das script-Attribut verwenden. Dabei werden Komponenten- und Ressourcentypvererbung berücksichtigt. Diese ist häufig einfacher als die strikte Einhaltung der Skriptauflösung von Sling mithilfe von Selektoren und Erweiterungen.
 
-### <cq:includeClientLib> {#cq-includeclientlib}
+### &lt;cq:includeclientlib> {#cq-includeclientlib}
 
 >[!CAUTION]
 >
@@ -298,7 +298,7 @@ Das Tag `<cq:includeClientLib>` kann wie folgt in einer JSP verwendet werden:
 <cq:includeClientLib css="cq.collab.calendar, cq.security" />
 ```
 
-### <cq:defineObjects> {#cq-defineobjects}
+### &lt;cq:defineObjects> {#cq-defineobjects}
 
 Das Tag `<cq:defineObjects>` legt die folgenden, regelmäßig verwendeten Skriptobjekte offen, auf die der Entwickler verweisen kann. Außerdem werden die vom Tag [ `<sling:defineObjects>`](#amp-lt-sling-defineobjects) definierten Objekte bereitgestellt.
 
@@ -440,7 +440,7 @@ Das Tag `<cq:defineObjects>` legt die folgenden, regelmäßig verwendeten Skript
 >
 >Wenn die Datei `/libs/foundation/global.jsp` im Skript enthalten ist, wird das Tag `<cq:defineObjects />` automatisch eingefügt.
 
-### <cq:requestURL> {#cq-requesturl}
+### &lt;cq:requesturl> {#cq-requesturl}
 
 Das Tag `<cq:requestURL>` schreibt die aktuelle Anforderungs-URL in den JspWriter. Die beiden Tags [ `<cq:addParam>`](#amp-lt-cq-addparam) und [ `<cq:removeParam>`](#amp-lt-cq-removeparam) können innerhalb des Hauptteils dieses Tags verwendet werden, um die aktuelle Anforderungs-URL zu ändern, bevor sie geschrieben wird.
 
@@ -462,7 +462,7 @@ Beispiele:
 <a title="filter results" href="<cq:requestURL><cq:addParam name="language" value="${bucket.value}"/></cq:requestURL>">${label} (${bucket.count})</a>
 ```
 
-### <cq:addParam> {#cq-addparam}
+### &lt;cq:addparam> {#cq-addparam}
 
 Das Tag `<cq:addParam>` fügt einen Anforderungsparameter mit dem angegebenen Namen und Wert zum umschließenden Tag [ `<cq:requestURL>`](#amp-lt-cq-requesturl) hinzu.
 
@@ -482,7 +482,7 @@ Es weist folgende Attribute auf:
 <a title="filter results" href="<cq:requestURL><cq:addParam name="language" value="${bucket.value}"/></cq:requestURL>">${label} (${bucket.count})</a>
 ```
 
-### <cq:removeParam> {#cq-removeparam}
+### &lt;cq:removeparam> {#cq-removeparam}
 
 Das Tag `<cq:removeParam>` entfernt einen Anforderungsparameter mit dem angegebenen Namen und Wert aus dem umschließenden Tag [ `<cq:requestURL>`](#amp-lt-cq-requesturl) . Wenn kein Wert angegeben wird, werden alle Parameter mit dem jeweiligen Namen entfernt.
 
@@ -498,7 +498,7 @@ Beispiel:
 <a href="<cq:requestURL><cq:removeParam name="language"/></cq:requestURL>">remove filter</a>
 ```
 
-## Tag-Bibliothek von Sling  {#sling-tag-library}
+## Tag-Bibliothek von Sling {#sling-tag-library}
 
 Die Tag-Bibliothek von Sling enthält hilfreiche Sling-Funktionen.
 
@@ -512,7 +512,7 @@ Wenn Sie die Tag-Bibliothek von Sling in Ihrem Skript verwenden, muss das Skript
 >
 >Wenn die Datei `/libs/foundation/global.jsp` im Skript enthalten ist, wird die Sling-Tag-Bibliothek automatisch deklariert.
 
-### <sling:include> {#sling-include}
+### &lt;sling:include> {#sling-include}
 
 Das Tag `<sling:include>` enthält eine Ressource auf der aktuellen Seite.
 
@@ -577,7 +577,7 @@ Beispiele:
 <sling:include replaceSelectors="content" />
 ```
 
-### <sling:defineObjects> {#sling-defineobjects}
+### &lt;sling:defineobjects> {#sling-defineobjects}
 
 Das Tag `<sling:defineObjects>` legt die folgenden, regelmäßig verwendeten Skriptobjekte offen, auf die der Entwickler verweisen kann:
 
@@ -632,7 +632,7 @@ l **ogName resourceResolverName**
 %><sling:defineObjects/>
 ```
 
-## Tag-Bibliothek von JSTL  {#jstl-tag-library}
+## Tag-Bibliothek von JSTL {#jstl-tag-library}
 
 Die [JavaServer Pages Standard Tag Library](https://www.oracle.com/technetwork/java/index-jsp-135995.html) enthält viele nützliche und standardmäßige Tags. Die Kern-, Formatierungs- und Funktionen-Taglibs werden durch `/libs/foundation/global.jsp` definiert, wie im folgenden Snippet dargestellt.
 
