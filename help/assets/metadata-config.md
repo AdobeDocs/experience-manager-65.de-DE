@@ -3,12 +3,12 @@ title: Konfiguration und Verwaltung von Metadatenfunktionen.
 description: Konfiguration und Verwaltung von [!DNL Experience Manager Assets] Funktionen im Zusammenhang mit dem Hinzufügen und Verwalten von Metadaten.
 contentOwner: AG
 role: User, Admin
-feature: 'Metadaten  '
+feature: Metadaten
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b36448449830aa8e19f6dc29ab7fb62608bb39dd
 workflow-type: tm+mt
-source-wordcount: '1952'
-ht-degree: 55%
+source-wordcount: '1982'
+ht-degree: 54%
 
 ---
 
@@ -66,7 +66,7 @@ Mit einem Metadatenprofil können Sie Standardmetadaten auf Assets in einem Ordn
 
    ![Zu Eigenschaftseinstellung zuordnen in Metadatenprofil](assets/metadata-profile-setting-map-property.png)
 
-   Der Wert, den Sie für **[!UICONTROL Zu Eigenschaft zuordnen]** angeben, wird als Eigenschaft unter dem Metadatenknoten des Assets gespeichert. Wenn Sie beispielsweise `./jcr:content/metadata/dc:desc` als Namen von **[!UICONTROL Zu Eigenschaft zuordnen]** angeben, speichert [!DNL Assets] den Wert `dc:desc` im Metadatenknoten des Assets.
+   Der Wert, den Sie für **[!UICONTROL Zu Eigenschaft zuordnen]** angeben, wird als Eigenschaft unter dem Metadatenknoten des Assets gespeichert. Wenn Sie beispielsweise `./jcr:content/metadata/dc:desc` als Namen von **[!UICONTROL Zu Eigenschaft zuordnen]** angeben, speichert [!DNL Assets] den Wert `dc:desc` im Metadatenknoten des Assets. Es wird empfohlen, nur ein Feld einer bestimmten Eigenschaft im Metadatenschema zuzuordnen. Andernfalls wird das der Eigenschaft zuletzt hinzugefügte Feld vom System ausgewählt.
 
    * **[!UICONTROL Standardwert]**: Mit dieser Eigenschaft können Sie einen Standardwert für die Metadatenkomponente hinzufügen. Wenn Sie beispielsweise „Meine Beschreibung“ angeben, wird dieser Wert der Eigenschaft `dc:desc` im Metadatenknoten des Assets zugewiesen.
 
