@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User,Admin
 feature: Metadaten
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
-source-git-commit: 771bccf12f79648afd59573dad0b7fdf95c6e1e2
+source-git-commit: d3fcf3e55af1c57bed1db9191aa76576d3bedb29
 workflow-type: tm+mt
-source-wordcount: '3547'
-ht-degree: 86%
+source-wordcount: '3597'
+ht-degree: 85%
 
 ---
 
@@ -28,6 +28,8 @@ Gehen Sie wie folgt vor, um die Eigenschaftenseite für ein Asset anzuzeigen und
    ![Registerkarte „Standard“ der Asset-Eigenschaften, auf der der Asset-Typ nicht geändert werden kann](assets/asset-properties-basic-tab.png)
 
    *Abbildung: Registerkarte „Standard“ in den Asset-[!UICONTROL Eigenschaften].*
+
+   Stellen Sie sicher, dass nur eine Eigenschaft einem Feld zugeordnet ist, während Sie das Metadatenschema erstellen oder bearbeiten.
 
    Verwenden Sie zum Ändern des MIME-Typs für ein Asset ein benutzerdefiniertes Metadatenschema-Formular oder ändern Sie ein vorhandenes Formular. Weitere Informationen finden Sie unter [Bearbeiten von Metadatenschema-Formularen](#edit-metadata-schema-forms). Wenn Sie das Metadatenschema eines MIME-Typs ändern, wird das Seiten-Layout der Eigenschaften für die Assets und alle Untertypen geändert. Durch die Bearbeitung des jpeg-Schemas unter `default/image` wird nur das Metadaten-Layout (Asset-Eigenschaften) für Assets mit dem MIME-Typ `image/jpeg` bearbeitet. Wenn Sie allerdings das „default“-Schema ändern, wird dadurch das Metadaten-Layout für alle Asset-Typen geändert.
 
@@ -99,13 +101,13 @@ Die Registerkarte **[!UICONTROL Formular erstellen]** enthält Formularelemente,
 
 #### Bearbeiten von Metadatenkomponenten {#edit-the-metadata-component}
 
-Um die Eigenschaften einer Metadaten-Komponente im Formular zu bearbeiten, klicken Sie auf die Komponente und bearbeiten Sie alle Eigenschaften oder einen Teil der folgenden Eigenschaften auf der Registerkarte **[!UICONTROL Einstellungen]**.
+Um die Eigenschaften einer Metadaten-Komponente im Formular zu bearbeiten, klicken Sie auf die Komponente und bearbeiten Sie alle Eigenschaften oder einen Teil der folgenden Eigenschaften auf der Registerkarte **[!UICONTROL Einstellungen.]** Es wird empfohlen, nur ein Feld einer bestimmten Eigenschaft im Metadatenschema zuzuordnen. Andernfalls wird das der Eigenschaft zuletzt hinzugefügte Feld vom System ausgewählt.
 
 **Feldbezeichnung**: Der Name der Metadateneigenschaft, der auf der Eigenschaftenseite des Assets angezeigt wird.
 
 **Zu Eigenschaft zuordnen**: Diese Eigenschaft gibt den relativen Pfad/Namen zum Asset-Knoten an, unter dem die Eigenschaft im CRX-Repository gespeichert ist. Sie beginnt mit `./`, um anzugeben, dass der Pfad sich unter dem Knoten des Assets befindet.
 
-Im Folgenden finden Sie die gültigen Werte für diese Eigenschaft:
+Im Folgenden finden Sie Beispiele für gültige Werte für eine Eigenschaft:
 
 * `./jcr:content/metadata/dc:title`: Speichert den Wert im Metadatenknoten des Assets als die Eigenschaft `dc:title`.
 
