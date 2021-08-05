@@ -7,12 +7,13 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 role: User, Admin
+mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Konfiguration,Scene7-Modus
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 9cca48f13f2e6f26961cff86d71f342cab422a78
 workflow-type: tm+mt
-source-wordcount: '6160'
-ht-degree: 54%
+source-wordcount: '6856'
+ht-degree: 48%
 
 ---
 
@@ -26,7 +27,8 @@ Die folgende Architekturgrafik beschreibt die Funktionsweise von Dynamic Media 
 
 Mit der neuen Architektur ist Experience Manager für Primärquellen-Assets und Synchronisierungen mit Dynamic Media für die Verarbeitung und Veröffentlichung von Assets verantwortlich:
 
-1. Wenn das Asset aus der Primärquelle in Experience Manager hochgeladen wird, wird es in Dynamic Media repliziert. Ab diesem Punkt übernimmt Dynamic Media die gesamte Asset-Verarbeitung und Ausgabenerstellung, z. B. Videokodierung und dynamische Varianten eines Bilds. <!-- (In Dynamic Media - Scene7 mode, be aware that you can only upload assets whose file sizes are 2 GB or less.) Jira ticket CQ-4286561 fixed this issue. DM-S7 NOW SUPPORTS THE UPLOAD OF ASSETS LARGER THAN 2 GB. -->
+1. Wenn das Asset aus der Primärquelle in Experience Manager hochgeladen wird, wird es in Dynamic Media repliziert. Ab diesem Punkt übernimmt Dynamic Media die gesamte Asset-Verarbeitung und Ausgabenerstellung, z. B. Videokodierung und dynamische Varianten eines Bilds.
+(Im Modus Dynamic Media - Scene7 beträgt die standardmäßige Upload-Dateigröße 2 GB oder weniger. Informationen zum Hochladen von Dateigrößen von 2 GB bis 15 GB finden Sie unter [(Optional) Konfigurieren des Dynamic Media - Scene7-Modus für das Hochladen von Assets, die größer als 2 GB sind](#optional-config-dms7-assets-larger-than-2gb).)
 1. Nachdem die Ausgabedarstellungen generiert wurden, kann der Experience Manager sicher auf die Dynamic Media-Remote-Ausgabedarstellungen zugreifen und eine Vorschau davon anzeigen (es werden keine Binärdateien an die Experience Manager-Instanz zurückgesendet).
 1. Nachdem der Inhalt veröffentlicht und genehmigt werden kann, wird der Dynamic Media-Dienst Trigger, Inhalte an Bereitstellungsserver zu senden und im CDN (Content Delivery Network) Inhalte zwischenzuspeichern.
 
@@ -147,11 +149,95 @@ Wenn Sie Ihre Konfiguration weiter anpassen möchten, können Sie auch eine der 
 
 Wenn Sie die Konfiguration weiter anpassen und Dynamic Media – Scene7-Modus einrichten oder die Leistung optimieren möchten, können Sie eine oder mehrere der folgenden *optionalen* Aufgaben durchführen:
 
+* [(Optional) Konfigurieren Sie den Dynamic Media-Scene7-Modus für das Hochladen von Assets mit mehr als 2 GB](#optional-config-dms7-assets-larger-than-2gb)
+
 * [(Optional) Einrichtung und Konfiguration der Einstellungen von Dynamic Media – Scene7-Modus](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
 
 * [(Optional) Steigern Sie die Leistung des Modus Dynamic Media - Scene7 .](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
 * [(Optional) Filtern von Assets für die Replikation](#optional-filtering-assets-for-replication)
+
+### (Optional) Konfigurieren Sie den Dynamic Media-Scene7-Modus für das Hochladen von Assets mit mehr als 2 GB {#optional-config-dms7-assets-larger-than-2gb}
+
+Im Modus Dynamic Media - Scene7 beträgt die standardmäßige Größe der Asset-Upload-Datei 2 GB oder weniger. Sie können jedoch optional das Hochladen von Assets konfigurieren, die größer als 2 GB und bis zu 15 GB sind.
+
+Beachten Sie die folgenden Voraussetzungen und Punkte, wenn Sie diese Funktion verwenden möchten:
+
+* Sie müssen Experience Manager 6.5 mit Service Pack 6.5.4.0 oder höher ausführen.
+* [Die ](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) Downloads für den direkten Binärzugriff von Oak sind aktiviert.
+
+   Legen Sie zum Aktivieren die Eigenschaft `presignedHttpDownloadURIExpirySeconds > 0` in der Datenspeicherkonfiguration fest. Der Wert sollte lang genug sein, um größere Binärdateien herunterzuladen und möglicherweise erneut zu versuchen.
+
+* Assets mit mehr als 15 GB werden nicht hochgeladen. (Die Größenbeschränkung wird in Schritt 8 unten festgelegt.)
+* Wenn der Workflow Scene7-Assets erneut verarbeiten für einen Ordner ausgelöst wird, werden die bereits hochgeladenen großen Assets erneut verarbeitet, die sich im Ordner befinden. Es werden jedoch große Assets hochgeladen, die im Unternehmen Scene7 nicht vorhanden sind.
+* Große Uploads funktionieren nur für einzelne Asset-Payloads, nicht in dem Fall, dass der Workflow für einen Ordner ausgelöst wird.
+
+**So konfigurieren Sie den Dynamic Media-Scene7-Modus für das Hochladen von Assets mit mehr als 2 GB:**
+
+1. Wählen Sie in Experience Manager das Experience Manager-Logo aus, um auf die globale Navigationskonsole zuzugreifen, und navigieren Sie dann zu **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
+
+1. Führen Sie im Fenster CRXDE Lite einen der folgenden Schritte aus:
+
+   * Navigieren Sie in der linken Leiste zum folgenden Pfad:
+
+      `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
+
+   * Kopieren Sie den obigen Pfad und fügen Sie ihn in das Feld Pfad der CRXDE Lite unter der Symbolleiste ein. Drücken Sie dann `Enter`.
+
+1. Klicken Sie in der linken Leiste mit der rechten Maustaste auf `fileupload` und wählen Sie dann im Popup-Menü **[!UICONTROL Überlagerungsknoten]** aus.
+
+   ![Überlagerungsknotenoption](/help/assets/assets-dm/uploadassets15gb_a.png)
+
+1. Aktivieren Sie im Dialogfeld Überlagerungsknoten das Kontrollkästchen **[!UICONTROL Knotentypen abgleichen]** , um die Option zu aktivieren, und wählen Sie dann **[!UICONTROL OK]** aus.
+
+   ![Überlagerungsknoten, Dialogfeld](/help/assets/assets-dm/uploadassets15gb_b.png)
+
+1. Führen Sie im Fenster CRXDE Lite eine der folgenden Aktionen aus:
+
+   * Navigieren Sie in der linken Leiste zum folgenden Überlagerungsknotenpfad:
+
+      `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
+
+   * Kopieren Sie den obigen Pfad und fügen Sie ihn in das Feld Pfad der CRXDE Lite unter der Symbolleiste ein. Drücken Sie dann `Enter`.
+
+1. Suchen Sie auf der Registerkarte **[!UICONTROL Properties]** unter der Spalte **[!UICONTROL Name]** nach `sizeLimit`.
+1. Doppelklicken Sie rechts neben dem Namen `sizeLimit` unter der Spalte **[!UICONTROL Wert]** auf das Wertefeld.
+1. Geben Sie den entsprechenden Wert in Byte ein, damit Sie die maximale Upload-Größe festlegen können. Um beispielsweise die maximale Asset-Größe für den Upload auf 10 GB zu erhöhen, geben Sie `10737418240` in das Wertefeld ein.
+Sie können einen Wert von bis zu 15 GB (`2013265920` Byte) eingeben. In diesem Fall werden hochgeladene Assets, die größer als 15 GB sind, nicht hochgeladen.
+
+
+   ![Größenbeschränkungswert](/help/assets/assets-dm/uploadassets15gb_c.png)
+
+1. Wählen Sie links oben im Fenster &quot;CRXDE Lite&quot;die Option **[!UICONTROL Alle speichern]**.
+
+   *Legen Sie jetzt den Timeout für den Adobe Granite Workflow External Process Job Handler fest, indem Sie Folgendes durchführen:*
+
+1. Wählen Sie in Experience Manager das Experience Manager-Logo aus, um auf die globale Navigationskonsole zuzugreifen.
+1. Nehmen Sie eine der folgenden Aktionen vor:
+
+   * Navigieren Sie zum folgenden URL-Pfad:
+
+      `localhost:4502/system/console/configMgr/com.adobe.granite.workflow.core.job.ExternalProcessJobHandler`
+
+   * Kopieren Sie den obigen Pfad und fügen Sie ihn in das URL-Feld Ihres Browsers ein. Stellen Sie sicher, dass Sie `localhost:4502` durch Ihre eigene Experience Manager-Instanz ersetzen.
+
+1. Legen Sie im Dialogfeld **[!UICONTROL Adobe Granite Workflow External Process Job Handler]** im Feld **[!UICONTROL Max Timeout]** den Wert auf `18000` Minuten (fünf Stunden) fest. Der Standardwert ist 10800 Minuten (drei Stunden).
+
+   ![Max. Zeitüberschreitungswert](/help/assets/assets-dm/uploadassets15gb_d.png)
+
+1. Wählen Sie in der rechten unteren Ecke des Dialogfelds **[!UICONTROL Speichern]** aus.
+
+   *Legen Sie jetzt den Timeout für den Prozessschritt &quot;Scene7 Direct Binary Upload&quot;fest, indem Sie Folgendes durchführen:*
+
+1. Wählen Sie in Experience Manager das Experience Manager-Logo aus, um auf die globale Navigationskonsole zuzugreifen.
+1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**.
+1. Wählen Sie auf der Seite &quot;Workflow-Modelle&quot;die Option **[!UICONTROL Dynamic Media-Videokodierung]**.
+1. Wählen Sie in der Symbolleiste **[!UICONTROL Bearbeiten]** aus.
+1. Doppelklicken Sie auf der Workflow-Seite auf den Prozessschritt **[!UICONTROL Scene7 Direct Binary Upload]**.
+1. Geben Sie im Dialogfeld **[!UICONTROL Schritt-Eigenschaften]** unter der Überschrift **[!UICONTROL Allgemein]** unter der Überschrift **[!UICONTROL Erweiterte Einstellungen]** im Feld **[!UICONTROL Zeitüberschreitung]** den Wert `18000` Minuten (fünf Stunden) ein. Der Standardwert ist `3600` Minuten (eine Stunde).
+1. Wählen Sie **[!UICONTROL OK]** aus.
+1. Wählen Sie **[!UICONTROL Sync]** aus.
+1. Wiederholen Sie die Schritte 14 bis 21 für das Workflow-Modell **[!UICONTROL DAM Update Asset]** und das Workflow-Modell **[!UICONTROL Scene7 Reprocess Workflow]** .
 
 ### (Optional) Einrichtung und Konfiguration der Einstellungen von Dynamic Media – Scene7-Modus {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
@@ -525,7 +611,7 @@ Die Transit-Workflow-Warteschlange von Granite wird für den Workflow **[!UICON
 
 **So aktualisieren Sie die Verlaufs-Workflow-Warteschlange von Granite:**
 
-1. Navigieren Sie zu [https://&lt;Server>/system/console/configMgr](https://localhost:4502/system/console/configMgr) und suchen Sie nach **Warteschlange: Warteschlange für die Granite-Übergangs-Workflows**.
+1. Navigieren Sie zu [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) und suchen Sie nach **Warteschlange: Granite-Verlaufs-Workflow-Warteschlange**.
 
    >[!NOTE]
    Anstelle einer direkten URL ist eine Textsuche erforderlich, da die OSGi-PID dynamisch generiert wird.
