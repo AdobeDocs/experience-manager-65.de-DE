@@ -10,10 +10,10 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Konfiguration,Scene7-Modus
-source-git-commit: 9cca48f13f2e6f26961cff86d71f342cab422a78
+source-git-commit: 5769ddeefe2d01d32bb9a0611dc06af68a848936
 workflow-type: tm+mt
-source-wordcount: '6856'
-ht-degree: 48%
+source-wordcount: '6941'
+ht-degree: 47%
 
 ---
 
@@ -161,16 +161,21 @@ Wenn Sie die Konfiguration weiter anpassen und Dynamic Media – Scene7-Modus e
 
 Im Modus Dynamic Media - Scene7 beträgt die standardmäßige Größe der Asset-Upload-Datei 2 GB oder weniger. Sie können jedoch optional das Hochladen von Assets konfigurieren, die größer als 2 GB und bis zu 15 GB sind.
 
-Beachten Sie die folgenden Voraussetzungen und Punkte, wenn Sie diese Funktion verwenden möchten:
+Wenn Sie diese Funktion verwenden möchten, beachten Sie die folgenden Voraussetzungen und Punkte:
 
-* Sie müssen Experience Manager 6.5 mit Service Pack 6.5.4.0 oder höher ausführen.
-* [Die ](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) Downloads für den direkten Binärzugriff von Oak sind aktiviert.
+* Sie müssen Experience Manager 6.5 mit Service Pack 6.5.4.0 oder höher im Modus Dynamic Media - Scene7 ausführen.
+* Diese Funktion zum Hochladen großer Dateien wird nur für [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html)-Kunden unterstützt.
+* Stellen Sie sicher, dass Ihre Experience Manager-Instanz mit Amazon S3 oder Microsoft® Azure Blob Storage konfiguriert ist.
 
-   Legen Sie zum Aktivieren die Eigenschaft `presignedHttpDownloadURIExpirySeconds > 0` in der Datenspeicherkonfiguration fest. Der Wert sollte lang genug sein, um größere Binärdateien herunterzuladen und möglicherweise erneut zu versuchen.
+   >[!NOTE]
+   Konfigurieren Sie den Azure Blob-Speicher mit beiden Zugriffsschlüsseln (Schlüssel1 und Schlüssel2), da diese große Upload-Funktion von AzureSas in der Blob-Speicherkonfiguration nicht unterstützt wird.
+
+* Das Oak-Tool [Direct Binary Access Download](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) ist aktiviert (Oak *Direct Binary Access Upload* ist nicht erforderlich).
+
+   Um den direkten Binärzugriff-Download zu aktivieren, legen Sie die Eigenschaft `presignedHttpDownloadURIExpirySeconds > 0` in der Datenspeicherkonfiguration fest. Der Wert sollte lang genug sein, um größere Binärdateien herunterzuladen und möglicherweise erneut zu versuchen.
 
 * Assets mit mehr als 15 GB werden nicht hochgeladen. (Die Größenbeschränkung wird in Schritt 8 unten festgelegt.)
-* Wenn der Workflow Scene7-Assets erneut verarbeiten für einen Ordner ausgelöst wird, werden die bereits hochgeladenen großen Assets erneut verarbeitet, die sich im Ordner befinden. Es werden jedoch große Assets hochgeladen, die im Unternehmen Scene7 nicht vorhanden sind.
-* Große Uploads funktionieren nur für einzelne Asset-Payloads, nicht in dem Fall, dass der Workflow für einen Ordner ausgelöst wird.
+* Wenn der Workflow **[!UICONTROL Dynamic Media Reprocess]** Assets für einen Ordner ausgelöst wird, werden alle großen Assets erneut verarbeitet, die bereits mit dem Dynamic Media-Unternehmen synchronisiert sind. Wenn jedoch noch keine großen Assets im Ordner synchronisiert sind, wird das Asset nicht hochgeladen. Um vorhandene große Assets in Dynamic Media zu synchronisieren, können Sie daher den Workflow **[!UICONTROL Dynamic Media Reprocess]** Assets für einzelne Assets ausführen.
 
 **So konfigurieren Sie den Dynamic Media-Scene7-Modus für das Hochladen von Assets mit mehr als 2 GB:**
 
@@ -237,7 +242,7 @@ Sie können einen Wert von bis zu 15 GB (`2013265920` Byte) eingeben. In diesem 
 1. Geben Sie im Dialogfeld **[!UICONTROL Schritt-Eigenschaften]** unter der Überschrift **[!UICONTROL Allgemein]** unter der Überschrift **[!UICONTROL Erweiterte Einstellungen]** im Feld **[!UICONTROL Zeitüberschreitung]** den Wert `18000` Minuten (fünf Stunden) ein. Der Standardwert ist `3600` Minuten (eine Stunde).
 1. Wählen Sie **[!UICONTROL OK]** aus.
 1. Wählen Sie **[!UICONTROL Sync]** aus.
-1. Wiederholen Sie die Schritte 14 bis 21 für das Workflow-Modell **[!UICONTROL DAM Update Asset]** und das Workflow-Modell **[!UICONTROL Scene7 Reprocess Workflow]** .
+1. Wiederholen Sie die Schritte 14 bis 21 für das Workflow-Modell **[!UICONTROL DAM Update Asset]** und das Workflow-Modell **[!UICONTROL Dynamic Media Reprocess]** .
 
 ### (Optional) Einrichtung und Konfiguration der Einstellungen von Dynamic Media – Scene7-Modus {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
