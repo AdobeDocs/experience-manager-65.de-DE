@@ -1,19 +1,19 @@
 ---
 title: Vorschau von 3D-Assets
-description: 'Erfahren Sie, wie Sie eine Vorschau von 3D-Assets anzeigen können   '
+description: Erfahren Sie, wie Sie eine Vorschau von 3D-Assets anzeigen können
 contentOwner: Rick Brough
 docset: aem65
 feature: 3D-Assets
 role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 98%
+source-wordcount: '555'
+ht-degree: 77%
 
 ---
 
-# Vorschau von 3D-Assets in Adobe Experience Manager{#previewing-3d-assets-aem}
+# Vorschau von 3D-Assets in Adobe Experience Manager {#previewing-3d-assets-aem}
 
 Experience Manager unterstützt das Hochladen, Bereitstellen und interaktive Anzeigen einer Vorschau von 3D-Assets als Teil des Authoring-Prozesses.
 
@@ -49,22 +49,22 @@ Die interaktive 3D-Vorschau unterstützt die folgenden Dateiformate:
 
 Die Zeit, die zum Öffnen eines 3D-Assets auf der Seite mit den Asset-Details benötigt wird, hängt von verschiedenen Faktoren ab, z. B. Bandbreite, Bildkomplexität und Latenzen zum Server.
 
-Wenn Sie die Kamera interaktiv bearbeiten, muss darüber hinaus die Kapazität des Client-Computers – etwa Workstation, Notebook oder Mobilgerät mit Touch-Funktion – berücksichtigt werden. Ein relativ leistungsfähiges System mit guten Grafikfähigkeiten unterstützt eine weichere, angenehmere interaktive 3D-Anzeige.
+Wenn Sie die Kamera interaktiv handhaben, muss darüber hinaus die Kapazität des Client-Computers – etwa Workstation, Notebook oder Mobilgerät mit Touch-Funktion – berücksichtigt werden. Ein relativ leistungsfähiges System mit guten Grafikfähigkeiten unterstützt eine weichere, angenehmere interaktive 3D-Anzeige.
 
 **So erstellen Sie eine Vorschau von 3D-Assets in Experience Manager:**
 
 1. Stellen Sie sicher, dass Sie 3D-Assets in Adobe Experience Manager hochgeladen haben.
 Siehe [Unterstützte Formate für die 3D-Vorschau](#supported-3d-previewing-assets) und [Hochladen von Assets](/help/assets/manage-assets.md#uploading-assets).
-1. Tippen Sie in Adobe Experience Manager auf der Seite **[!UICONTROL Navigation]** auf **[!UICONTROL Assets > Dateien]**.
+1. Wählen Sie im Experience Manager auf der Seite **[!UICONTROL Navigation]** **[!UICONTROL Assets]** > **[!UICONTROL Dateien]** aus.
 
    ![Navigationsseite](/help/assets/assets-dm/navigation-assets.png)
 
-1. Tippen Sie rechts oben auf der Seite in der Dropdown-Liste „Ansicht“ auf **[!UICONTROL Kartenansicht]** und navigieren Sie dann zu einem 3D-Asset, das Sie in der Vorschau anzeigen möchten.
+1. Wählen Sie in der rechten oberen Ecke der Seite aus der Dropdownliste Ansicht die Option **[!UICONTROL Kartenansicht]** und navigieren Sie dann zu einem 3D-Asset, das Sie in der Vorschau anzeigen möchten.
 
    ![3D-Kartenauswahl](/help/assets/assets-dm/3d-card-select.png)
-   _Tippen Sie in der Kartenansicht auf die Karte des 3D-Assets, das Sie in der Vorschau anzeigen möchten._
+   _Wählen Sie in der Kartenansicht die Karte des 3D-Assets aus, das Sie in der Vorschau anzeigen möchten._
 
-1. Tippen Sie auf die Karte des 3D-Assets.
+1. Wählen Sie die Karte des 3D-Assets aus.
 
    ![Interaktive 3D-Vorschau](/help/assets/assets-dm/3d-preview.png)
    _Interaktive Vorschau eines 3D-Assets auf der Seite mit der Detailansicht des Assets._
@@ -73,10 +73,10 @@ Siehe [Unterstützte Formate für die 3D-Vorschau](#supported-3d-previewing-asse
    | Anzeigen | Beschreibung | Mausaktion | Touchscreen-Aktion |
    | --- | --- | --- | --- |
    | **Kamera drehen** | Drehen Sie die Ansicht um die 3D-Szene und Objekte. | Klicken und ziehen Sie mit der linken Maustaste. | Drücken und ziehen Sie mit einem Finger. |
-   | **Kamera schwenken** | Schwenken Sie nach links, rechts, oben und unten. | Klicken und ziehen Sie mit der rechten Maustaste. | Drücken und ziehen Sie mit zwei Fingern. |
-   | **Kamera zoomen** | Verschieben Sie Bereiche in die 3D-Szene ein- und aus ihnen. | Scrollen Sie mit dem Mausrad. | Bewegen Sie zwei Finger auseinander- bzw. zusammen. |
+   | **Kamera schwenken** | Schwenken Sie nach links, rechts, oben oder unten. | Klicken und ziehen Sie mit der rechten Maustaste. | Drücken und ziehen Sie mit zwei Fingern. |
+   | **Kamera zoomen** | Zoomen Sie mit der Kamera in Bereiche der 3D-Szene bzw. aus diesen Bereichen heraus. | Scrollen Sie mit dem Mausrad. | Ziehen Sie per Pinch mit zwei Fingern. |
    | **Kamera neu zentrieren** | Zentrieren Sie die Kamera neu auf einen Punkt an einem Objekt in der 3D-Szene. | Doppelklicken. | Doppeltippen. |
-   | **Zurücksetzen** | Tippen Sie unten rechts auf der Seite auf das Symbol „Zurücksetzen“, um den Zielpunkt der Ansicht wieder in die Mitte des 3D-Assets zu setzen. Durch das Zurücksetzen wird die Kamera auch näher heran oder weiter weg bewegt, um das Asset in seiner Gesamtheit und in einer angemessenen Betrachtungsgröße zu zeigen. |  |  |
-   | **Vollbildmodus** | Um in den Vollbildmodus zu wechseln, tippen Sie unten rechts auf Seite auf das Symbol „Vollbild“. |  |  |
+   | **Zurücksetzen** | Wählen Sie unten rechts auf der Seite das Symbol Zurücksetzen aus, um den Zielpunkt der Ansicht wieder in die Mitte des 3D-Assets zu setzen. Durch das Zurücksetzen wird die Kamera auch näher heran oder weiter weg bewegt, um das Asset in seiner Gesamtheit und in einer angemessenen Betrachtungsgröße zu zeigen. |  |  |
+   | **Vollbildmodus** | Um in den Vollbildmodus zu wechseln, wählen Sie unten rechts auf der Seite das Symbol &quot;Vollbild&quot;aus. |  |  |
 
-1. Tippen Sie zum Abschluss unten rechts auf der Seite auf **[!UICONTROL Schließen]**.
+1. Wenn Sie fertig sind, wählen Sie rechts oben auf der Seite **[!UICONTROL Close]** aus.
