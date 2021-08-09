@@ -11,10 +11,10 @@ docset: aem65
 feature: Gemischte Mediensets,Asset-Verwaltung
 role: User, Admin
 exl-id: 70a72fb9-a289-4eda-abcc-300edf9f1961
-source-git-commit: f5eccfc1b81d8e24cafe917f3ad74b472c0676bd
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '1458'
-ht-degree: 84%
+source-wordcount: '1464'
+ht-degree: 53%
 
 ---
 
@@ -40,7 +40,7 @@ Führen Sie die folgenden Schritte aus, um den schnellen Einstieg in die Arbeit 
 
 1. [Erstellen Sie gemischte Mediensets](#creating-mixed-media-sets).
 
-   Um ein gemischtes Medienset zu erstellen, tippen Sie auf der Seite &quot;Assets&quot;auf **[!UICONTROL Erstellen]** > **[!UICONTROL Gemischtes Medienset]** und benennen Sie dann das Set, wählen Sie die Assets und wählen Sie die Reihenfolge der Bilder aus.
+   Um ein gemischtes Medienset zu erstellen, wählen Sie auf der Seite &quot;Assets&quot;die Option **[!UICONTROL Erstellen]** > **[!UICONTROL Gemischtes Medienset]** aus und benennen Sie dann das Set, wählen Sie die Assets und wählen Sie die Reihenfolge der Bilder aus.
 
    Siehe [Arbeiten mit Selektoren](/help/assets/working-with-selectors.md).
 
@@ -48,13 +48,13 @@ Führen Sie die folgenden Schritte aus, um den schnellen Einstieg in die Arbeit 
 
    Administratoren können Viewer-Vorgaben für gemischte Mediensets erstellen oder ändern. Um die gemischten Medien mit einer Viewer-Vorgabe anzuzeigen, wählen Sie das gemischte Medienset aus und wählen Sie im Dropdown-Menü in der linken Seitenleiste die Option **[!UICONTROL Viewer]** aus.
 
-   Informationen zum Erstellen oder Bearbeiten von Viewer-Vorgaben finden Sie unter **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Viewer-Vorgaben]**.
+   Informationen zum Erstellen oder Bearbeiten von Viewer-Vorgaben finden Sie unter **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Viewer-Vorgaben]**.
 
    Siehe [Hinzufügen und Bearbeiten von Viewer-Vorgaben](/help/assets/managing-viewer-presets.md).
 
 1. [Zeigen Sie eine Vorschau der gemischten Mediensets an](#previewing-mixed-media-sets).
 
-   Wenn Sie das gemischte Medienset auswählen, können Sie eine Vorschau davon anzeigen. Klicken Sie auf die Miniaturansichtssymbole, um das gemischte Medienset im gewählten Viewer zu untersuchen. Sie können verschiedene Viewer aus dem Menü **[!UICONTROL Viewer]** wählen, das Sie links in der Leiste über die Dropdown-Liste aufrufen können.
+   Wenn Sie das gemischte Medienset auswählen, können Sie eine Vorschau davon anzeigen. Wählen Sie die Miniaturansichtssymbole aus, damit Sie das gemischte Medienset im ausgewählten Viewer untersuchen können. Sie können verschiedene Viewer aus dem Menü **[!UICONTROL Viewer]** wählen, das Sie links in der Leiste über die Dropdown-Liste aufrufen können.
 
 1. [Veröffentlichen Sie gemischte Mediensets](#publishing-mixed-media-sets).
 
@@ -66,21 +66,21 @@ Führen Sie die folgenden Schritte aus, um den schnellen Einstieg in die Arbeit 
 
    Markieren Sie dazu das gemischte Medienset und klicken Sie dann im Dropdown-Menü in der linken Seitenleiste auf **[!UICONTROL Viewer]**.
 
-   Siehe [Verknüpfen von gemischten Mediensets mit Web-Seiten](/help/assets/linking-urls-to-yourwebapplication.md) und [Einbetten des Video- oder Bild-Viewers](/help/assets/embed-code.md).
+   Siehe [Verknüpfen eines gemischten Mediensets mit einer Web-Seite](/help/assets/linking-urls-to-yourwebapplication.md) und [Einbetten des Video- oder Bild-Viewers](/help/assets/embed-code.md).
 
 Bei Bedarf können Sie die [gemischten Mediensets](#editing-mixed-media-sets) bearbeiten. Darüber hinaus können Sie [Eigenschaften von gemischten Mediensets](/help/assets/manage-assets.md#editing-properties) anzeigen und ändern.
 
 >[!NOTE]
 >
->Wenn Sie beim Erstellen von Sets Probleme haben, lesen Sie [Fehlerbehebung für Dynamic Media - Scene7-Modus](/help/assets/troubleshoot-dms7.md).
+>Wenn Sie beim Erstellen von Sets Probleme haben, lesen Sie [Fehlerbehebung für Dynamic Media - Scene7 mode](/help/assets/troubleshoot-dms7.md).
 
-## Hochladen von Assets {#uploading-assets}
+## Assets hochladen {#uploading-assets}
 
 Laden Sie zunächst die Bilder und Videos für Ihre gemischten Mediensets hoch. Da Benutzer Bilder im Viewer für gemischte Mediensets einzoomen können, sollten Sie die Bilder sorgfältig auswählen. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2.000 Pixel hat.
 
 Wenn Sie außerdem Rotationssets oder Bildsets zum gemischten Medienset hinzufügen möchten, erstellen Sie auch diese Sets.
 
-## Erstellen von gemischten Mediensets {#creating-mixed-media-sets}
+## Erstellen eines gemischten Mediensets {#creating-mixed-media-sets}
 
 Sie können Ihrem gemischten Medienset Bilder, Bildsets, Rotationssets und Videos hinzufügen. Achten Sie darauf, dass die Dateien, Bildsets und Rotationssets veröffentlicht werden können, bevor Sie diese dem gemischten Medienset hinzufügen.
 
@@ -88,7 +88,7 @@ Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Re
 
 **So erstellen Sie ein gemischtes Medienset:**
 
-1. Navigieren Sie in Assets an die Stelle, an der Sie ein gemischtes Medienset erstellen möchten, und klicken Sie auf **[!UICONTROL Erstellen]**. Wählen Sie dann **[!UICONTROL Gemischtes Medienset]** aus. Sie können das Set auch in einem Ordner erstellen, der die gewünschten Assets enthält. Der Editor für gemischte Mediensets wird angezeigt.
+1. Navigieren Sie in Assets an die Stelle, an der Sie ein gemischtes Medienset erstellen möchten, wählen Sie **[!UICONTROL Erstellen]** und klicken Sie auf **[!UICONTROL Gemischtes Medienset]**. Sie können das Set auch in einem Ordner erstellen, der die gewünschten Assets enthält. Der Editor für gemischte Mediensets wird angezeigt.
 
    ![chlimage_1-138](assets/chlimage_1-349.png)
 
@@ -98,11 +98,11 @@ Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Re
 
    >[!NOTE]
    >
-   >Beim Erstellen des gemischten Mediensets können Sie die entsprechende Miniaturansicht ändern oder zulassen, dass Experience Manager die Miniaturansicht automatisch basierend auf den Assets im gemischten Medienset auswählt. Um eine Miniaturansicht auszuwählen, klicken Sie auf **[!UICONTROL Miniatur ändern]** und wählen Sie ein beliebiges Bild aus. (Sie können auch in anderen Ordnern nach Bildern suchen.) Wenn Sie eine Miniaturansicht ausgewählt haben und möchten, dass der Experience Manager eine Miniaturansicht aus dem gemischten Medienset generiert, wählen Sie **[!UICONTROL Wechseln Sie zu Automatische Miniatur]**.
+   >Beim Erstellen des gemischten Mediensets können Sie die entsprechende Miniaturansicht ändern oder zulassen, dass Experience Manager die Miniaturansicht automatisch basierend auf den Assets im gemischten Medienset auswählt. Um eine Miniaturansicht auszuwählen, wählen Sie **[!UICONTROL Miniaturansicht ändern]** und wählen Sie ein beliebiges Bild aus (Sie können auch zu anderen Ordnern navigieren, um Bilder zu suchen). Wenn Sie eine Miniaturansicht ausgewählt haben und möchten, dass der Experience Manager eine Miniaturansicht aus dem gemischten Medienset generiert, wählen Sie **[!UICONTROL Wechseln Sie zu Automatische Miniatur]**.
 
-1. Tippen Sie auf die Asset-Auswahl, damit Sie Assets auswählen können, die Sie in Ihr gemischtes Medienset aufnehmen möchten. Wählen Sie sie aus und klicken Sie auf **[!UICONTROL Auswählen]**.
+1. Wählen Sie die Asset-Auswahl aus, damit Sie Assets auswählen können, die Sie in das gemischte Medienset aufnehmen möchten. Wählen Sie sie aus und klicken Sie dann auf **[!UICONTROL Wählen Sie]**.
 
-   Mit dem Asset-Selektor können Sie nach Assets suchen, indem Sie ein Keyword eingeben und auf **[!UICONTROL Eingabe]** tippen. Sie können auch Filter anwenden, um Ihre Suchergebnisse genauer abzustimmen. Sie können nach Pfad, Sammlung, Dateityp und Tag filtern. Wählen Sie den Filter aus und tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Filter]**. Ändern Sie die Ansicht, indem Sie das Symbol **[!UICONTROL Ansicht]** und dann die **[!UICONTROL Listenansicht]**, **[!UICONTROL Spaltenansicht]** oder **[!UICONTROL Kartenansicht]** auswählen.
+   Mit dem Asset-Selektor können Sie nach Assets suchen, indem Sie ein Keyword eingeben und auf **[!UICONTROL Eingabe]** tippen. Sie können auch Filter anwenden, um Ihre Suchergebnisse genauer abzustimmen. Sie können nach Pfad, Sammlung, Dateityp und Tag filtern. Wählen Sie den Filter aus und wählen Sie dann in der Symbolleiste das Symbol **[!UICONTROL Filter]** aus. Ändern Sie die Ansicht, indem Sie das Symbol **[!UICONTROL Ansicht]** und dann die **[!UICONTROL Listenansicht]**, **[!UICONTROL Spaltenansicht]** oder **[!UICONTROL Kartenansicht]** auswählen.
 
    Siehe [Arbeiten mit Selektoren](/help/assets/working-with-selectors.md).
 
@@ -112,17 +112,17 @@ Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Re
 
    ![chlimage_1-141](assets/chlimage_1-352.png)
 
-   Wenn Sie Miniaturansichten hinzufügen möchten, klicken Sie auf das **Plussymbol** zum **[!UICONTROL Hinzufügen von Miniaturansichten]** neben dem Bild und navigieren Sie zur gewünschten Miniaturansicht. Wenn Sie alle Miniaturansichten ausgewählt haben, klicken Sie auf **[!UICONTROL Speichern]**.
+   Wenn Sie Miniaturansichten hinzufügen möchten, wählen Sie das Symbol **+** **[!UICONTROL Miniaturansicht]** neben dem Bild und navigieren Sie zur gewünschten Miniaturansicht. Wenn Sie alle Miniaturansichten ausgewählt haben, wählen Sie **[!UICONTROL Speichern]**.
 
    >[!NOTE]
    >
-   >Wenn Sie Assets hinzufügen möchten, tippen Sie auf **[!UICONTROL Asset hinzufügen]**.
+   >Wenn Sie Assets hinzufügen möchten, wählen Sie **[!UICONTROL Asset hinzufügen]** aus.
 
-1. Um ein Asset zu löschen, aktivieren Sie das entsprechende Kontrollkästchen und tippen Sie auf **[!UICONTROL Asset löschen]**.
-1. Um eine Vorgabe anzuwenden, tippen Sie in der rechten oberen Ecke auf **[!UICONTROL Vorgabe]** und wählen Sie eine Vorgabe aus, die auf die Assets angewendet werden soll.
-1. Klicken Sie auf **[!UICONTROL Speichern]**. Das neu erstellte Set für gemischte Medien wird in dem Ordner angezeigt, in dem es erstellt wurde.
+1. Um ein Asset zu löschen, aktivieren Sie das entsprechende Kontrollkästchen und wählen Sie **[!UICONTROL Asset löschen]** aus.
+1. Um eine Vorgabe anzuwenden, wählen Sie **[!UICONTROL Vorgabe]** in der oberen rechten Ecke aus und wählen Sie eine Vorgabe aus, die auf die Assets angewendet werden soll.
+1. Wählen Sie **[!UICONTROL Speichern]** aus. Das neu erstellte Set für gemischte Medien wird in dem Ordner angezeigt, in dem es erstellt wurde.
 
-## Bearbeiten von gemischten Mediensets {#editing-mixed-media-sets}
+## Bearbeiten eines gemischten Mediensets {#editing-mixed-media-sets}
 
 Sie können direkt auf der Benutzeroberfläche verschiedene Bearbeitungsaufgaben für Assets in gemischten Mediensets ausführen, [genauso wie bei allen anderen Assets in Assets](/help/assets/manage-assets.md). Sie können außerdem die folgenden Aktionen in gemischten Mediensets ausführen:
 
@@ -136,45 +136,45 @@ Sie können direkt auf der Benutzeroberfläche verschiedene Bearbeitungsaufgaben
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Bewegen Sie den Mauszeiger über ein Asset in einem gemischten Medienset und tippen Sie auf **[!UICONTROL Bearbeiten]** (Stiftsymbol).
-   * Bewegen Sie den Mauszeiger über ein Asset in einem gemischten Medienset und tippen Sie auf **[!UICONTROL Auswählen]** (Häkchensymbol) und dann auf **[!UICONTROL Bearbeiten]** in der Symbolleiste.
+   * Bewegen Sie den Mauszeiger über ein Asset in einem gemischten Medienset und wählen Sie **[!UICONTROL Bearbeiten]** (Stiftsymbol).
+   * Bewegen Sie den Mauszeiger über ein Asset in einem gemischten Medienset, wählen Sie **[!UICONTROL Wählen Sie]** (Häkchensymbol) und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Bearbeiten]**.
 
-   * Tippen Sie auf ein Asset in einem gemischten Medienset und dann auf **[!UICONTROL Bearbeiten]** (Bleistiftsymbol) in der Symbolleiste.
+   * Wählen Sie ein Asset für gemischte Mediensets aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Bearbeiten]** (Stiftsymbol).
 
 1. Führen Sie im Editor für gemischte Mediensets einen der folgenden Schritte aus:
 
-   * Um Assets neu anzuordnen, tippen Sie im linken Bereich auf **[!UICONTROL Assets]** (Bildsymbol) und ziehen Sie das Asset an eine neue Position.
-   * Um Assets hinzuzufügen, tippen Sie in der Symbolleiste auf **[!UICONTROL Asset hinzufügen]**. Navigieren Sie zu den Assets. Bewegen Sie bei jedem Asset, das Sie hinzufügen möchten, den Mauszeiger über dem Bild des Assets (nicht über dem Namen des Assets) und tippen Sie auf das Häkchensymbol. Tippen Sie oben rechts auf **[!UICONTROL Auswählen]**.
+   * Um Assets neu anzuordnen: Wählen Sie im linken Bereich **[!UICONTROL Assets]** (Bildsymbol) aus und ziehen Sie ein Asset an eine neue Position.
+   * Um Assets hinzuzufügen: Wählen Sie in der Symbolleiste **[!UICONTROL Asset hinzufügen]** aus. Navigieren Sie zu den Assets. Bewegen Sie für jedes Asset, das Sie hinzufügen möchten, den Mauszeiger über das Bild des Assets (nicht den Namen des Assets) und wählen Sie dann das Häkchen-Symbol aus. Wählen Sie in der oberen rechten Ecke **[!UICONTROL Select]** aus.
 
-   * Um ein Asset zu löschen, tippen Sie im linken Bereich auf **[!UICONTROL Assets]** (Bildsymbol) und wählen Sie das Asset aus. Tippen Sie in der Symbolleiste auf **[!UICONTROL Asset löschen]**.
+   * Um ein Asset zu löschen, wählen Sie im linken Bereich **[!UICONTROL Assets]** (Bildsymbol) aus und wählen Sie dann das Asset aus. Wählen Sie in der Symbolleiste **[!UICONTROL Asset löschen]** aus.
 
-   * Um Assets anhand des Namens in aufsteigender oder absteigender Reihenfolge zu sortieren, tippen Sie im linken Bereich auf **[!UICONTROL Assets]** (Bildsymbol). Klicken Sie rechts neben der Überschrift **[!UICONTROL Assets]** auf das Caret-Zeichen nach oben oder unten.
+   * Um Assets nach ihrem Namen in auf- oder absteigender Reihenfolge zu sortieren, wählen Sie im linken Bereich **[!UICONTROL Assets]** (Bildsymbol) aus. Wählen Sie rechts neben der Überschrift **[!UICONTROL Assets]** die Caret-Symbole nach oben oder unten aus.
 
       >[!NOTE]
       >
-      >* Um ein komplettes gemischtes Medienset aus einem Anzeigemodus zu löschen (z. B. **[!UICONTROL Kartenansicht]** oder **[!UICONTROL Spaltenansicht]**), navigieren Sie zum gemischten Medienset. Bewegen Sie den Mauszeiger über das Asset und tippen Sie auf das Häkchen-Symbol, damit Sie es auswählen. Drücken Sie die **[!UICONTROL Rücktaste]** oder klicken Sie in der Symbolleiste auf **[!UICONTROL Mehr]** (Ellipse) und dann auf **[!UICONTROL Löschen]**.
+      >* Um ein komplettes gemischtes Medienset aus einem Anzeigemodus zu löschen (z. B. **[!UICONTROL Kartenansicht]** oder **[!UICONTROL Spaltenansicht]**), navigieren Sie zum gemischten Medienset. Bewegen Sie den Mauszeiger über das Asset und wählen Sie das Häkchensymbol aus, um es auszuwählen. Drücken Sie die Taste **[!UICONTROL Rücktaste]** auf der Tastatur oder wählen Sie **[!UICONTROL Mehr]** (drei Punkte) in der Symbolleiste und klicken Sie dann auf **[!UICONTROL Löschen]**.
          >
          >
-      * Sie können Assets in einem gemischten Medienset bearbeiten, indem Sie zu diesem Set navigieren und in der linken Leiste auf **[!UICONTROL Mitglieder des Sets]** klicken. Tippen Sie auf das Symbol **[!UICONTROL Bleistift]** für ein einzelnes Asset, damit Sie es im Bearbeitungsfenster öffnen.
+      * Sie können Assets in einem gemischten Medienset bearbeiten, indem Sie zu diesem Set navigieren und in der linken Leiste auf **[!UICONTROL Mitglieder des Sets]** klicken. Wählen Sie das Symbol **[!UICONTROL Bleistift]** für ein einzelnes Asset aus, damit Sie es im Bearbeitungsfenster öffnen.
 
 
-1. Tippen Sie auf **[!UICONTROL Speichern]**, wenn Sie die Bearbeitung abgeschlossen haben.
+1. Wählen Sie **[!UICONTROL Save]** aus, wenn Sie die Bearbeitung abgeschlossen haben.
 
    >[!NOTE]
    >
-   >* Um die Assets in einem gemischten Medienset zu bearbeiten, navigieren Sie zum gemischten Medienset. Tippen Sie auf das Set (wählen Sie es nicht aus), damit es auf der Seite &quot;Experience Manager-Set-Vorschau&quot;geöffnet wird. Klicken Sie in der linken Leiste auf das Caret-Symbol nach unten, um die Dropdown-Liste zu öffnen, und tippen Sie auf **[!UICONTROL Mitglieder des Sets]**. Bewegen Sie auf der Seite „Mitglieder des Sets“ den Mauszeiger auf ein Asset und tippen Sie auf **[!UICONTROL Bearbeiten]** (Stiftsymbol), um die Bearbeitungsseite zu öffnen.
+   >* Um die Assets in einem gemischten Medienset zu bearbeiten, navigieren Sie zum gemischten Medienset. Tippen Sie auf das Set (wählen Sie es nicht aus), damit es auf der Seite &quot;Experience Manager-Set-Vorschau&quot;geöffnet wird. Wählen Sie in der linken Leiste das Dropdownmenü aus, um die Dropdownliste zu öffnen, und wählen Sie dann **[!UICONTROL Mitglieder festlegen]** aus. Bewegen Sie auf der Seite Mitglieder des Sets den Mauszeiger über ein Asset und wählen Sie dann **[!UICONTROL Bearbeiten]** (Stiftsymbol) aus, um die Bearbeitungsseite zu öffnen.
       >
       >
-   * Um ein komplettes gemischtes Medienset aus einem Anzeigemodus zu löschen (z. B. Karten- oder Spaltenansicht), navigieren Sie zum gemischten Medienset. Bewegen Sie den Mauszeiger über das Set und tippen Sie auf **Auswählen** (Häkchensymbol). Drücken Sie die **[!UICONTROL Rücktaste]** oder tippen Sie auf **[!UICONTROL Mehr]** und dann auf **[!UICONTROL Löschen]**.
+   * Um ein komplettes gemischtes Medienset aus einem Anzeigemodus zu löschen (z. B. Karten- oder Spaltenansicht), navigieren Sie zum gemischten Medienset. Bewegen Sie den Mauszeiger über das Set und wählen Sie **Auswählen** (Häkchensymbol). Drücken Sie **[!UICONTROL Rücktaste]** auf Ihrer Tastatur oder wählen Sie **[!UICONTROL Mehr]** (Zeile mit drei Punkten) und dann **[!UICONTROL Löschen]**.
 
 
-## Vorschau von gemischten Mediensets {#previewing-mixed-media-sets}
+## Vorschau eines gemischten Mediensets {#previewing-mixed-media-sets}
 
-Weitere Informationen zum Aufrufen einer Vorschau von Sets für gemischte Medien finden Sie in [Asset-Vorschau](/help/assets/previewing-assets.md).
+Weitere Informationen zur Vorschau von gemischten Mediensets finden Sie unter [Asset-Vorschau](/help/assets/previewing-assets.md) .
 
-## Veröffentlichen von gemischten Mediensets {#publishing-mixed-media-sets}
+## Veröffentlichen eines gemischten Mediensets {#publishing-mixed-media-sets}
 
-Weitere Informationen zum Veröffentlichen von Sets für gemischte Medien finden Sie in [Veröffentlichen von Assets](/help/assets/publishing-dynamicmedia-assets.md).
+Weitere Informationen zum Veröffentlichen von gemischten Mediensets finden Sie unter [Veröffentlichen von Assets](/help/assets/publishing-dynamicmedia-assets.md) .
 
 >[!NOTE]
 >
