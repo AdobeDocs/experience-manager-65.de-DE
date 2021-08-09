@@ -10,10 +10,10 @@ discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
 feature: Asset-Management
 role: User, Admin
 exl-id: 753d806f-5f44-4d73-a3a3-a2a0fc3e154b
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 94%
+source-wordcount: '336'
+ht-degree: 75%
 
 ---
 
@@ -21,15 +21,15 @@ ht-degree: 94%
 
 Verwenden Sie die Funktion für responsiven Code, wenn Sie den Code für responsive Verarbeitung für Ihren Web-Entwickler freigeben möchten. Kopieren Sie den responsiven Code (**[!UICONTROL RESS]**) in die Zwischenablage, damit Sie ihn für Ihren Web-Entwickler freigeben können.
 
-Verwenden Sie diese Funktion, wenn sich Ihre Website auf einem Drittanbieter-WCM befindet. Wenn sich Ihre Website jedoch auf AEM befindet, rendert ein Offsite-Image-Server das Bild und stellt es der Webseite bereit.
+Verwenden Sie diese Funktion, wenn sich Ihre Website auf einem Drittanbieter-WCM befindet. Wenn sich Ihre Website jedoch in Adobe Experience Manager befindet, rendert ein Offsite-Image-Server das Bild und stellt es der Web-Seite bereit.
 
-Informationen hierzu finden Sie unter [Einbetten des Video-Viewers auf einer Web-Seite](embed-code.md).
+Siehe auch [Einbetten des Video-Viewers auf einer Web-Seite](embed-code.md).
 
-Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwebapplication.md).
+Siehe auch [Verknüpfen von URLs mit einer Webanwendung](linking-urls-to-yourwebapplication.md).
 
-**So stellen Sie optimierte Bilder für eine responsive Site bereit:**
+**So stellen Sie optimierte Bilder für eine responsive Website bereit:**
 
-1. Wechseln Sie zu dem Bild, für das Sie responsiven Code bereitstellen möchten, und tippen Sie im Dropdown-Menü auf **[!UICONTROL Ausgabeformate]**.
+1. Navigieren Sie zu dem Bild, für das Sie responsiven Code bereitstellen möchten, und wählen Sie im Dropdown-Menü **[!UICONTROL Ausgabeformate]** aus.
 
    ![chlimage_1-408](assets/chlimage_1-408.png)
 
@@ -43,12 +43,12 @@ Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwe
    >
    >Für den Hybridmodus von Dynamic Media müssen Sie Bildvorgaben veröffentlichen. Im Modus Dynamic Media - Scene7 werden Bildvorgaben automatisch veröffentlicht.
 
-1. Tippen Sie auf **[!UICONTROL RESS]**.
+1. Wählen Sie **[!UICONTROL RESS]** aus.
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
 1. Wählen Sie im Dialogfeld **[!UICONTROL Responsive Bilder einbetten]** den responsiven Code-Text aus und fügen Sie ihn in Ihre Website ein, um auf das responsive Asset zuzugreifen.
-1. Bearbeiten Sie die Standard-Breakpoints im Integrationscode, damit sie denen der responsiven Website direkt im Code entsprechen. Testen Sie außerdem die verschiedenen Bildauflösungen bei verschiedenen Seiten-Breakpoints.
+1. Bearbeiten Sie die Standard-Haltepunkte im Einbettungscode so, dass sie mit den Haltepunkten der responsiven Website direkt im Code übereinstimmen. Testen Sie außerdem die verschiedenen Bildauflösungen bei verschiedenen Seiten-Breakpoints.
 
 ## Bereitstellen von Dynamic Media-Assets mit HTTP/2 {#using-http-to-delivery-your-dynamic-media-assets}
 
