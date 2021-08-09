@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, verarbeiten und verteilen Sie digitale Assets.
-source-git-commit: 1e8b5ab66668215e0eeed676b42f533d4e210e1c
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 35%
+ht-degree: 34%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 35%
 + [[!DNL Experience Manager] 6.5 Assets - Versionshinweise](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html)
 + [Über DAM](assets.md)
 + [Best Practices für Assets](best-practices-for-assets.md)
-+ [Barrierefreiheit in [!DNL Assets]](accessibility.md)
++ [Barrierefreiheit in  [!DNL Assets]](accessibility.md)
 + Verwenden von Experience Manager Assets {#using}
    + [[!DNL Assets] Startseiten-Erlebnis](assets-home-page.md)
    + [Suchen nach digitalen Assets](search-assets.md)
@@ -52,7 +52,7 @@ ht-degree: 35%
    + [Anwenden von Dynamic Media-Bildvorgaben](image-presets.md)
    + [Dynamic Media-Videoprofile](video-profiles.md)
    + [Dynamic Media-Bildprofile](image-profiles.md)
-   + [Smart Imaging](imaging-faq.md)
+   + [Intelligente Bildbearbeitung](imaging-faq.md)
    + [Video](s7-video.md)
    + [Hinzufügen von Dynamic Media-Funktionen zu Ihrer Seite](scene7.md)
    + [Bereitstellung von Inhalten per HTTP/2](http2.md)
@@ -97,7 +97,7 @@ ht-degree: 35%
    + [Suchfacetten](search-facets.md)
    + [Grundlagen zu Metadatenkonzepten](metadata-concepts.md)
    + [Konfigurieren von Metadatenfunktionen](metadata-config.md)
-   + [Metadatenschemata](metadata-schemas.md)
+   + [Metadatenschemas](metadata-schemas.md)
    + [XMP-Writeback in Ausgabedarstellungen](xmp-writeback.md)
    + [Asset-Linkfreigabe](link-sharing.md)
    + [Asset-Berichte](asset-reports.md)
@@ -113,7 +113,7 @@ ht-degree: 35%
    + [PDF Rasterizer verwenden](aem-pdf-rasterizer.md)
    + [Konfigurieren von Upload-Beschränkungen](configuring-asset-upload-restrictions.md)
    + [[!DNL Experience Manager] and [!DNL Creative Cloud] Integration](aem-cc-integration-best-practices.md)
-   + [Integration von  mit  [!DNL InDesign Server]](indesign.md)
+   + [Integrieren mit  [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management in Assets](drm.md)
    + [Demopaket für Asset-Einblicke verwenden](use-demo-package-for-asset-insights.md)
    + [Generieren von FPO-Ausgabeformaten für Adobe InDesign](configure-fpo-renditions.md)
@@ -126,8 +126,8 @@ ht-degree: 35%
    + [Versehen Sie Assets mit Wasserzeichen](watermarking.md)
    + [Asset-Vorlagen](asset-templates.md)
 + Brand Portal {#brandportal}
-   + [Konfigurieren von  [!DNL Assets]  mit [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
-   + [Veröffentlichen von Assets in [!DNL Brand Portal]](brand-portal-publish-assets.md)
+   + [Konfigurieren von [!DNL Assets] mit [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Veröffentlichen von Assets in  [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [Veröffentlichen von Ordnern in  [!DNL Brand Portal]](brand-portal-publish-folder.md)
    + [Veröffentlichen von Sammlungen in  [!DNL Brand Portal]](brand-portal-publish-collection.md)
 + Inhaltsfragmente {#fragments}
@@ -145,7 +145,7 @@ ht-degree: 35%
    + [Verwalten von Sammlungen](manage-collections.md)
    + [Aktivieren der Duplikatserkennung](duplicate-detection.md)
    + [Organisieren von digitalen Assets](organize-assets.md)
-   + [Verwalten von Video-Assets ](managing-video-assets.md)
+   + [Verwalten von Video-Assets](managing-video-assets.md)
    + [Erstellen von Übersetzungsprojekten](translation-projects.md)
    + [Vorbereiten von Assets für die Übersetzung](preparing-assets-for-translation.md)
    + [Herunterladen von Assets von Experience Manager](download-assets-from-aem.md)
