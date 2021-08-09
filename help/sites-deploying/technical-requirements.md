@@ -6,9 +6,9 @@ seo-description: Eine Liste der unterstützten Client- und Serverplattformen fü
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 5ce72a51d69e97d7e07e9f734bfd7547fccd51f1
+source-git-commit: 0f0dfe8af5feed5227a091b89d65ef58d71eb299
 workflow-type: tm+mt
-source-wordcount: '3273'
+source-wordcount: '3266'
 ht-degree: 83%
 
 ---
@@ -132,7 +132,7 @@ Adobe Experience Manager funktioniert mit den folgenden Versionen von Java Virtu
  </tbody>
 </table>
 
-1. Die Unterstützung und Verteilung von Azul Zulu Builds von OpenJDK, einschließlich aller Wartungsupdates von LTS-Releases, wird von Adobe direkt für alle AEM Kunden unterstützt, die die Azul Zulu Builds von OpenJDK verwenden, beginnend mit AEM 6.5 SP9 bzw. AEM 6.5 SP10 für AEM Forms Java EE. Weitere Informationen finden Sie unter [Azul Java-Unterstützung für Adobe Experience Manager Q&amp;A](assets/adobe-azul-openjdk-license-agreement.pdf) .
+1. Die Unterstützung und Verteilung von Azul Zulu Builds von OpenJDK, einschließlich aller Wartungsupdates von LTS-Releases, wird von Adobe direkt für alle AEM Kunden unterstützt, die die Azul Zulu Builds von OpenJDK verwenden, beginnend mit AEM 6.5 SP9 bzw. Weitere Informationen finden Sie unter [Azul Java-Unterstützung für Adobe Experience Manager Q&amp;A](assets/adobe-azul-openjdk-license-agreement.pdf) .
 
 1. Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle Java SE-Produkte umgestiegen. Java 9, Java 10 und Java 12 sind Non-LTS-Versionen von Oracle (siehe [Oracle Java SE-Support-Roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Um AEM in Produktionsumgebungen bereitzustellen, unterstützt Adobe ausschließlich LTS-Versionen von Java. Der Support und die Verteilung des Oracle Java SE JDK, einschließlich aller Wartungsupdates der LTS-Versionen, die über das Ende der öffentlichen Updates hinausgehen, werden von Adobe direkt für alle AEM Kunden unterstützt, die die Oracle Java SE-Technologie **bis Dezember 2022** nutzen. Weitere Informationen finden Sie unter [Oracle Java-Unterstützung für Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf) .
 
@@ -190,7 +190,7 @@ Es gibt verschiedene Optionen, um das Repository von Adobe Experience Manager be
 >
 >**Die meisten relationalen Datenbanken werden derzeit mit Level-R in AEM 6.5 unterstützt, d. h. im Rahmen von Supportkriterien und einem Supportprogramm, wie oben in der Beschreibung zu Level-R angegeben.**
 
-### Servlet-Engines/Anwendungsserver  {#servlet-engines-application-servers}
+### Servlet-Engines/Anwendungsserver {#servlet-engines-application-servers}
 
 Adobe Experience Manager kann als eigenständiger Server (die quickstart-JAR-Datei) oder als Web-Applikation auf einem Drittanbieter-Anwendungsserver (die WAR-Datei) ausgeführt werden.
 
@@ -241,7 +241,7 @@ In allen anderen Fällen, in denen AEM auf Azure, AWS oder in einer anderen Clou
 
 Für die Bereitstellung von AEM auf Azure oder AWS ohne Adobe Managed Services wird von Adobe dringend empfohlen, direkt mit dem Cloud-Anbieter oder einem Adobe-Partner, der die Bereitstellung von AEM in der gewünschten Cloud-Umgebung unterstützt, zusammenzuarbeiten. Der ausgewählte Cloud-Anbieter oder Partner ist für die Größenspezifikation, das Design und die Implementierung der von ihm unterstützten Architektur verantwortlich, um Ihre spezifischen Anforderungen an Leistung, Last, Skalierbarkeit und Sicherheit zu erfüllen.
 
-### Dispatcher-Plattformen (Webserver)  {#dispatcher-platforms-web-servers}
+### Dispatcher-Plattformen (Webserver) {#dispatcher-platforms-web-servers}
 
 Beim Dispatcher handelt es sich um eine Zwischenspeicherungs- und Lastenausgleichskomponente. [Laden Sie die neueste Dispatcher-Version herunter](https://helpx.adobe.com/de/experience-manager/dispatcher/release-notes.html). Für Experience Manager 6.5 ist die Dispatcher-Version 4.3.2 oder höher erforderlich.
 
@@ -332,11 +332,11 @@ Die AEM-Benutzeroberfläche ist für die Verwendung auf größeren Bildschirmen 
 1. Erweiterte Supportversion von Firefox: [Weitere Informationen darüber finden Sie auf mozilla.org](https://www.mozilla.org/en-US/firefox/organizations/faq/)
 1. Unterstützung für Apple iPad 
 
-### Unterstützte Browser für Websites  {#supported-browsers-for-websites}
+### Unterstützte Browser für Websites {#supported-browsers-for-websites}
 
 Im Allgemeinen hängt die Browserunterstützung für mit AEM Sites gerenderte Websites von der Implementierung der AEM-Seitenvorlagen, dem Design und der Komponentenausgabe ab und wird daher von der Partei kontrolliert, die diese Teile implementiert.
 
-### WebDAV-Clients  {#webdav-clients}
+### WebDAV-Clients {#webdav-clients}
 
 **Microsoft Windows 7+**
 
@@ -350,11 +350,11 @@ Um Microsoft Windows 7+ erfolgreich mit einer nicht über SSL gesicherten AEM-In
 
 Informationen über das Verbessern der Reaktionsfähigkeit des WebDav-Clients unter Windows finden Sie im [Microsoft Support KB 2445570](https://support.microsoft.com/kb/2445570).
 
-## Zusätzliche Hinweise zu Plattformen  {#additional-platform-notes}
+## Zusätzliche Hinweise zu Plattformen {#additional-platform-notes}
 
 Dieser Abschnitt enthält besondere Hinweise und weitere detaillierte Informationen über das Ausführen von Adobe Experience Manager und der zugehörigen Add-ons.
 
-### IPv4 und IPv6  {#ipv-and-ipv}
+### IPv4 und IPv6 {#ipv-and-ipv}
 
 Alle Elemente von Adobe Experience Manager (Instanz, Dispatcher) können in IPv4- und IPv6-Netzwerken installiert werden.
 
@@ -449,7 +449,7 @@ Windows x86:
 * 10.9.x und höher
 * Wird nur für Testversions- und Demozwecke unterstützt
 
-### Anforderungen für AEM Forms PDF Generator  {#requirements-for-aem-forms-pdf-generator}
+### Anforderungen für AEM Forms PDF Generator {#requirements-for-aem-forms-pdf-generator}
 
 <table>
  <tbody>
