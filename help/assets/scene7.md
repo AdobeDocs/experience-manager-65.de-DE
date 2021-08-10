@@ -9,11 +9,12 @@ topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 feature: Dynamic Media Classic
 role: User, Admin
+mini-toc-levels: 3
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '2849'
-ht-degree: 22%
+source-wordcount: '2850'
+ht-degree: 21%
 
 ---
 
@@ -103,11 +104,11 @@ Das Hinzufügen einer Dynamic Media Classic (Scene7)-Komponente zu einer Seite e
    >
    >Nur in der Touch-Benutzeroberfläche müssen Sie das Bild oder Video auf die Dynamic Media Classic-Komponente ziehen, die Sie auf der Seite platziert haben. Die Auswahl und Bearbeitung der Dynamic Media Classic-Komponente und die anschließende Auswahl des Assets werden nicht unterstützt.
 
-### Hinzufügen interaktiver Anzeigeerlebnisse zu einer responsiven Site {#adding-interactive-viewing-experiences-to-a-responsive-website}
+### Hinzufügen eines interaktiven Anzeigeerlebnisses zu einer responsiven Site {#adding-interactive-viewing-experiences-to-a-responsive-website}
 
 Responsives Design für Ihre Assets bedeutet, dass sich Ihr Asset an die Stelle anpasst, an der es angezeigt wird. Mithilfe des dynamischen Designs können dieselben Assets auf mehreren Geräten effektiv dargestellt werden.
 
-Informationen hierzu finden Sie auch unter [Dynamisches Design für Webseiten](/help/sites-developing/responsive.md).
+Siehe auch [Responsives Design für Webseiten](/help/sites-developing/responsive.md).
 
 **So fügen Sie einer responsiven Site ein interaktives Anzeigeerlebnis hinzu:**
 
@@ -169,7 +170,7 @@ Mit der Komponente Dynamic Media Classic **[!UICONTROL Bild]** können Sie Ihren
 
 ![chlimage_1-230](assets/chlimage_1-230.png)
 
-**[!UICONTROL Viewer-Vorgabe]** : Wählen Sie eine vorhandene Viewer-Vorgabe aus dem Dropdown-Menü aus. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe [Verwalten von Viewer-Vorgaben](/help/assets/managing-viewer-presets.md). Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
+**[!UICONTROL Viewer-Vorgabe]** : Wählen Sie eine vorhandene Viewer-Vorgabe aus dem Dropdown-Menü aus. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe [Viewer-Vorgaben verwalten](/help/assets/managing-viewer-presets.md). Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
 
 **[!UICONTROL Dynamic Media Classic-Konfiguration]**  - Wählen Sie die Dynamic Media Classic-Konfiguration aus, die Sie zum Abrufen aktiver Bildvorgaben aus SPS verwenden möchten.
 
