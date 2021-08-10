@@ -10,10 +10,10 @@ docset: aem65
 feature: Viewer
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: 997eeafa03d3148fb0754eaa27a5a99217e0d1bc
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
 source-wordcount: '6636'
-ht-degree: 51%
+ht-degree: 50%
 
 ---
 
@@ -409,7 +409,7 @@ In der folgenden Tabelle sind die Dynamic Media-Viewer-Ereignisse sowie die unte
 
 ## Alle Integrationselemente konfigurieren {#configuring-all-the-integration-pieces}
 
-**Voraussetzungen**
+**VORAUSSETZUNGEN**
 
 Adobe empfiehlt, dass Sie die gesamte Dokumentation vor diesem Abschnitt gründlich durchlesen, damit Sie die vollständige Integration verstehen.
 
@@ -811,7 +811,7 @@ Beispiel: `https://ims-na1.adobelogin.com/`
 
    * **[!UICONTROL Titel]** – Geben Sie einen beschreibenden Konfigurationsnamen ein. Beispiel: `We.Retail Tags cloud configuration`.
 
-   * **[!UICONTROL Zugewiesene Adobe IMS-Konfiguration]** – Wählen Sie die IMS-Konfiguration aus, die Sie zuvor unter [Konfigurieren von Experience Manager IMS](#configuring-aem-ims) erstellt haben.
+   * **[!UICONTROL Zugehörige Adobe IMS-Konfiguration]**  - Wählen Sie die IMS-Konfiguration aus, die Sie zuvor unter  [Experience Manager-IMS konfigurieren](#configuring-aem-ims) erstellt haben.
 
    * **[!UICONTROL Firma]** – Wählen Sie aus der Dropdown-Liste **[!UICONTROL Firma]** Ihre Experience Cloud-Firma aus. Die Liste wird automatisch ausgefüllt.
 
