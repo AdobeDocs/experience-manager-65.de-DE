@@ -12,9 +12,9 @@ docset: aem65
 feature: Asset-Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 3dd49715c7c3078f2ef9495c99c98d4dd566db9b
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '11702'
+source-wordcount: '11699'
 ht-degree: 74%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 74%
 
 In diesem Abschnitt wird die Arbeit mit Videos in Dynamic Media beschrieben.
 
-## Schnellstartanleitungen: Videos   {#quick-start-videos}
+## Schnellstartanleitungen: Videos {#quick-start-videos}
 
 Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstieg in adaptive Videosets in Dynamic Media erleichtern. Nach jedem Schritt gibt es Querverweise zu Themenüberschriften, in denen Sie weitere Informationen finden können.
 
@@ -97,7 +97,7 @@ AssetsWeitere Informationen zu  [Best Practices für die Organisation Ihrer digi
          [Bearbeiten von Videoeigenschaften](manage-assets.md#editing-properties)
 
       * [Metadaten für digitale Assets verwalten](metadata.md)
-      * [Metadatenschemata](metadata-schemas.md)
+      * [Metadatenschemas](metadata-schemas.md)
    * Videos prüfen, genehmigen und mit Anmerkungen versehen und die vollständige Versionskontrolle behalten
 
       * [Anmerken von ](managing-video-assets.md#annotate-video-assets) Video-Assets oder  [Anmerkungen zu Assets](manage-assets.md#annotating)
@@ -195,7 +195,7 @@ Sie erweitern die Reichweite Ihrer Rich-Media-Inhalte auf Desktop- und Mobilbenu
 
 Siehe auch [Über HTML5-Viewer](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only).
 
-### Wiedergabe von Videos auf Desktops und mobilen Geräten mit dem HTML5-Video-Viewer   {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
+### Wiedergabe von Videos auf Desktops und mobilen Geräten mit dem HTML5-Video-Viewer {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 Beim adaptiven Video-Streaming auf Desktop und Mobilgeräten basieren die für den Bit-Ratenwechsel verwendeten Videos auf allen MP4-Videos im adaptiven Videoset.
 
@@ -282,7 +282,7 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
  </tbody>
 </table>
 
-## Architektur der Dynamic Media-Videolösung   {#architecture-of-dynamic-media-video-solution}
+## Architektur der Dynamic Media-Videolösung {#architecture-of-dynamic-media-video-solution}
 
 Die folgende Grafik zeigt den allgemeinen Bearbeitungs-Workflow für Videos, die über DMGateway (im Hybridmodus von Dynamic Media) hochgeladen und kodiert sowie für die öffentliche Anzeige verfügbar gemacht werden.
 
@@ -306,7 +306,7 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 
 Verwenden Sie zum Kodieren einer Videodatei eine Quellvideodatei mit der höchstmöglichen Qualität. Verwenden Sie keine zuvor kodierten Videodateien, da diese Dateien bereits komprimiert wurden und die weitere Kodierung zu mangelhafter Videoqualität führen würde.
 
-* Dynamic Media unterstützt hauptsächlich Kurzvideos mit einer maximalen Länge von 30 Minuten.
+* Dynamic Media unterstützt Kurzformvideos mit einer maximalen Länge von 30 Minuten.
 * Sie können Primärquellen-Videodateien mit bis zu 15 GB hochladen.
 
 Die folgende Tabelle beschreibt die empfohlenen Werte für Größe, Seitenverhältnis und Mindest-Bitrate, die Quellvideos vor der Kodierung aufweisen sollten:
@@ -572,7 +572,7 @@ Für das Veröffentlichen von Videos auf YouTube benötigen Sie mindestens einen
 
 1. Rufen Sie [https://www.youtube.com](https://www.youtube.com/) auf und melden Sie sich mithilfe Ihrer Google-Kontoanmeldeinformationen an.
 1. Klicken Sie in der rechten oberen Ecke der YouTube-Seite auf Ihr Profilbild (kann auch als Buchstabe in einem farbigen Kreis angezeigt werden) und klicken Sie dann auf **[!UICONTROL YouTube settings]** (Zahnradsymbol).
-1. Klicken Sie auf der Seite „Überblick“ unter der Überschrift „Zusätzliche Funktionen“ auf **[!UICONTROL „Alle meine Kanäle anzeigen“ oder „Neuen Kanal erstellen“]**.
+1. Klicken Sie auf der Seite Übersicht unter der Überschrift Zusätzliche Funktionen auf **[!UICONTROL Alle meine Kanäle anzeigen oder einen Kanal erstellen]**.
 1. Klicken Sie auf der Seite „Kanal“ auf **[!UICONTROL Neuen Kanal erstellen]**.
 1. Geben Sie auf der Seite „Markenkonto“ im Feld „Name Markenkonto“ einen Unternehmensnamen oder den Namen eines anderen beliebigen Kanals ein, in dem Ihre Video-Assets veröffentlicht werden sollen. Klicken Sie dann auf **[!UICONTROL Erstellen]**.
 
@@ -1010,7 +1010,7 @@ Damit Videoberichte ordnungsgemäß funktionieren, wird automatisch eine Report 
 1. Tippen Sie in der linken oberen Ecke von Experience Manager auf das Experience Manager-Logo und tippen Sie dann in der linken Leiste auf **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Assets]** > **[!UICONTROL Videoberichte]**.
 1. Führen Sie auf der Seite „Videoberichte“ eine der folgenden Aktionen aus:
 
-   * Tippen Sie in der Nähe der oberen rechten Ecke auf das Symbol **Videobericht aktualisieren.**
+   * Tippen Sie in der Nähe der oberen rechten Ecke auf das Symbol **Videobericht aktualisieren**.
 Verwenden Sie die Option Aktualisieren nur, wenn das Enddatum des Berichts der aktuelle Tag ist. Dadurch wird sichergestellt, dass Sie das Video-Tracking sehen, das seit der letzten Ausführung des Berichts erfolgt ist.
 
    * Tippen Sie oben rechts auf das Symbol **Datumsauswahl**.
@@ -1182,7 +1182,7 @@ Da Sie einen HTML5-Video-Viewer verwenden, stellen Sie sicher, dass die erstellt
 
 Siehe [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/)
 
-**So fügen Sie Kapitelmarken zu Videos hinzu:**
+**So fügen Sie die Videokapitelnavigation hinzu:**
 
 1. Speichern Sie die Datei `.vtt` in der UTF8-Kodierung, um Probleme mit der Zeichendarstellung im Text des Kapiteltitels zu vermeiden.
 
@@ -1245,7 +1245,7 @@ Die folgenden Schritte gelten nur, wenn Dynamic Media im Scene7-Modus ausgeführ
 1. Stellen Sie sicher, dass Sie bereits …
 
    * einen Ordner für Ihre Video-Assets erstellt,
-   * [ein Videoprofil auf den Ordner angewendet](/help/assets/video-profiles.md#applying-a-video-profile-to-folders) und
+   * [Anwenden eines Videoprofils auf den Ordner](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 
    * [Ihre Videos in den Ordner hochgeladen haben](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
