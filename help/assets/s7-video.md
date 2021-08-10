@@ -8,12 +8,13 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 role: User, Admin
+mini-toc-levels: 3
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Video
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '1568'
-ht-degree: 38%
+source-wordcount: '1564'
+ht-degree: 36%
 
 ---
 
@@ -45,7 +46,7 @@ Die folgenden Formate werden für die Scene7-Videokomponente unterstützt:
 * F4V H.264
 * H.264 (.mp4)
 
-## Festlegen eines Speicherorts für hochgeladene Videos {#deciding-where-to-upload-your-video}
+## Festlegen, wo das Video hochgeladen werden soll {#deciding-where-to-upload-your-video}
 
 Der Speicherort für hochgeladene Videos hängt von folgenden Faktoren ab:
 
@@ -70,11 +71,9 @@ Wenn Sie keinen Workflow oder keine Versionierung für Ihre Assets benötigen, l
 1. Greifen Sie in Experience Manager auf die Video-Assets in WCM auf der Registerkarte **[!UICONTROL Scene7]** in der Inhaltssuche zu.
 1. Erstellen Sie mit der Komponente **[!UICONTROL Scene7 Video]** .
 
-## Konfigurieren der Integration mit Scene7-Videos {#configuring-integration-with-scene-video}
+## Integration mit Scene7 konfigurieren - Video {#configuring-integration-with-scene-video}
 
-So konfigurieren Sie universelle Vorlagen:
-
-1. Navigieren Sie in **[!UICONTROL Cloud-Services]** zu Ihrer **[!UICONTROL Scene7]**-Konfiguration und klicken Sie auf **[!UICONTROL Bearbeiten]**.
+1. Navigieren Sie in **[!UICONTROL Cloud Services]** zu Ihrer **[!UICONTROL Scene7]**-Konfiguration und wählen Sie **[!UICONTROL Bearbeiten]** aus.
 1. Wählen Sie die Registerkarte **[!UICONTROL Video]** aus.
 
    ![chlimage_1-363](assets/chlimage_1-363.png)
@@ -93,16 +92,16 @@ So konfigurieren Sie universelle Vorlagen:
 
 1. Die ausgewählten Kodierungsprofile werden automatisch auf alle Videos angewendet, die in den CQ DAM-Zielordner, den Sie für diese Scene7-Cloud-Konfiguration einrichten, hochgeladen werden. Sie können mehrere Scene7-Cloud-Konfigurationen mit verschiedenen Zielordnern einrichten, um nach Bedarf verschiedene Kodierungsprofile anzuwenden.
 
-## Aktualisieren von Viewer- und Kodierungsvorlagen {#updating-viewer-and-encoding-presets}
+## Viewer- und Kodierungsvorgaben aktualisieren {#updating-viewer-and-encoding-presets}
 
-Um die Viewer- und Kodierungsvorgaben für Videos zu aktualisieren, da die Vorgaben in Scene7 aktualisiert wurden, navigieren Sie zur Scene7-Konfiguration in der Cloud-Konfiguration und tippen Sie auf **[!UICONTROL Viewer- und Kodierungsvorgaben aktualisieren]**.
+Um die Viewer- und Kodierungsvorgaben für Videos zu aktualisieren, da die Vorgaben in Scene7 aktualisiert wurden, navigieren Sie zur Scene7-Konfiguration in der Cloud-Konfiguration und wählen Sie **[!UICONTROL Viewer- und Kodierungsvorgaben aktualisieren]** aus.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
 ## Hochladen des Primärvideos von Adobe DAM zu Scene7 {#uploading-your-master-video}
 
 1. Navigieren Sie zum CQ DAM-Zielordner, in dem Sie Ihre Cloud-Konfiguration mit Scene7-Kodierungsprofilen eingerichtet haben.
-1. Klicken Sie auf **[!UICONTROL Upload]** , um das Primärvideo hochzuladen. Das Hochladen und die Kodierung von Videos sind abgeschlossen, nachdem der Workflow [!UICONTROL DAM-Update-Asset] abgeschlossen ist und **[!UICONTROL In Scene7 veröffentlichen]** ein Häkchen aufweist.
+1. Wählen Sie **[!UICONTROL Upload]** aus, um das Primärvideo hochzuladen. Das Hochladen und die Kodierung von Videos sind abgeschlossen, nachdem der Workflow [!UICONTROL DAM-Update-Asset] abgeschlossen ist und **[!UICONTROL In Scene7 veröffentlichen]** ein Häkchen aufweist.
 
    >[!NOTE]
    >
@@ -140,7 +139,7 @@ Die folgende Tabelle bietet einen allgemeinen Vergleich der unterstützten Funkt
 | Erweiterbarkeit | Ja | Nein |
 | Mobile Videos | Ja | Ja |
 
-### Einrichtung {#setting-up}
+### Setup {#setting-up}
 
 #### Erstellen von Videoprofilen {#creating-video-profiles}
 
@@ -150,9 +149,9 @@ Die verschiedenen Videokodierungsmethoden werden anhand der S7-Kodierungsvorlage
 >
 >Neue Videoprofile und Änderungen daran müssen für eine Veröffentlichung aktiviert werden.
 
-1. Tippen Sie in Experience Manager auf **[!UICONTROL Tools]** > **[!UICONTROL Konfigurationskonsole]**.
+1. Wählen Sie in Experience Manager **[!UICONTROL Tools]** > **[!UICONTROL Konfigurationskonsole]** aus.
 1. Navigieren Sie in der **[!UICONTROL Konfigurationskonsole]** zu **[!UICONTROL Tools]** > **[!UICONTROL DAM]** > **[!UICONTROL Videoprofile]** in der Navigationsstruktur.
-1. Erstellen Sie ein S7-Videoprofil. Wählen Sie im Menü **[!UICONTROL Neu]**. die Option **[!UICONTROL Seite erstellen]** und wählen Sie dann die Vorlage Scene7-Videoprofil aus. Geben Sie der neuen Videoprofilseite einen Namen und klicken Sie auf **[!UICONTROL Erstellen]**.
+1. Erstellen Sie ein S7-Videoprofil. Wählen Sie im Menü **[!UICONTROL Neu]**. die Option **[!UICONTROL Seite erstellen]** und wählen Sie dann die Vorlage Scene7-Videoprofil aus. Geben Sie der neuen Videoprofilseite einen Namen und wählen Sie **[!UICONTROL Erstellen]** aus.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
