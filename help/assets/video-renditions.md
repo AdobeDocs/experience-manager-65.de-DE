@@ -6,30 +6,30 @@ contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 1601b473-7227-4a56-bb7c-289de2987e4b
 exl-id: a644558e-5be9-4ba2-b560-fc300497fbdf
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 79%
+source-wordcount: '221'
+ht-degree: 45%
 
 ---
 
 # Videoausgabeformate {#video-renditions}
 
-Adobe Experience Manager (AEM) Assets erstellt Videoausgabeformate für Video-Assets verschiedener Formate, einschließlich OGG, FLV usw.
+Adobe Experience Manager Assets generiert Videoausgabeformate für Video-Assets verschiedener Formate wie OGG, FLV usw.
 
-AEM Assets unterstützt statische und dynamische Ausgabeformate (DM-kodierte Ausgabeformate) für Medien-Assets.
+Experience Manager Assets unterstützt statische und dynamische Ausgabeformate (DM-kodierte Ausgabeformate) für Medien-Assets.
 
 Statische Ausgabeformate werden nativ mit FFMPEG (im Systempfad installiert und verfügbar) generiert und im Inhalts-Repository gespeichert.
 
 Die DM-kodierten Ausgabeformate werden im Proxyserver gespeichert und zur Laufzeit bereitgestellt.
 
-AEM Assets bietet Wiedergabeunterstützung für diese Ausgabeformate auf Client-Seite.
+Experience Manager Assets bietet Client-seitige Wiedergabefunktion für diese Ausgabedarstellungen.
 
-Um die Ausgabeformate eines bestimmten Video-Assets anzuzeigen, öffnen Sie die entsprechende Asset-Seite und klicken oder tippen Sie auf das GlobalNav-Symbol. Wählen Sie dann **[!UICONTROL Ausgabeformate]** aus der Liste aus.
+Um die Ausgabeformate eines bestimmten Video-Assets anzuzeigen, öffnen Sie die Asset-Seite und wählen Sie das Symbol Globale Navigation aus. Wählen Sie dann **[!UICONTROL Ausgabeformate]** aus der Liste aus.
 
 ![chlimage_1-478](assets/chlimage_1-478.png)
 
-Die Liste mit Videoausgabeformate wird im Bereich **[!UICONTROL Wiedergaben]** angezeigt.
+Die Liste der Videoausgabeformate wird im Bedienfeld **[!UICONTROL Ausgabeformate]** angezeigt.
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
@@ -41,6 +41,6 @@ Nachdem Sie den Proxyserver konfiguriert und Videoprofile erstellt haben, könne
 
 >[!NOTE]
 >
->Die Audiowiedergabe funktioniert nicht für OGG- und WAV-Dateien in Microsoft Internet Explorer 11. Auf der Asset-Detailseite wird für Assets mit der Erweiterung OGG oder WAV ein Fehler `Invalid Source` angezeigt.
+>Die Audiowiedergabe funktioniert nicht für OGG- und WAV-Dateien in Microsoft® Internet Explorer 11. Auf der Asset-Detailseite wird für Assets mit der Erweiterung OGG oder WAV ein Fehler `Invalid Source` angezeigt.
 >
->Auf MS Edge und iPad werden OGG-Dateien nicht abgespielt und es wird ein nicht unterstützter Formatfehler ausgegeben.
+>Auf MS® Edge und iPad werden OGG-Dateien nicht abgespielt und es wird ein nicht unterstützter Formatfehler ausgegeben.
