@@ -10,10 +10,10 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Konfiguration,Scene7-Modus
-source-git-commit: 5769ddeefe2d01d32bb9a0611dc06af68a848936
+source-git-commit: 6c042d2c95f18ae4a0d5fd57a048aa12761495b6
 workflow-type: tm+mt
 source-wordcount: '6941'
-ht-degree: 47%
+ht-degree: 49%
 
 ---
 
@@ -27,7 +27,7 @@ Die folgende Architekturgrafik beschreibt die Funktionsweise von Dynamic Media 
 
 Mit der neuen Architektur ist Experience Manager für Primärquellen-Assets und Synchronisierungen mit Dynamic Media für die Verarbeitung und Veröffentlichung von Assets verantwortlich:
 
-1. Wenn das Asset aus der Primärquelle in Experience Manager hochgeladen wird, wird es in Dynamic Media repliziert. Ab diesem Punkt übernimmt Dynamic Media die gesamte Asset-Verarbeitung und Ausgabenerstellung, z. B. Videokodierung und dynamische Varianten eines Bilds.
+1. Wenn das Asset aus der Primärquelle in Experience Manager hochgeladen wird, wird es in Dynamic Media repliziert. Ab diesem Punkt übernimmt Dynamic Media die gesamte Asset-Verarbeitung und die Erstellung von Ausgabedarstellungen, z. B. Videokodierung und dynamische Varianten eines Bilds.
 (Im Modus Dynamic Media - Scene7 beträgt die standardmäßige Upload-Dateigröße 2 GB oder weniger. Informationen zum Hochladen von Dateigrößen von 2 GB bis 15 GB finden Sie unter [(Optional) Konfigurieren des Dynamic Media - Scene7-Modus für das Hochladen von Assets, die größer als 2 GB sind](#optional-config-dms7-assets-larger-than-2gb).)
 1. Nachdem die Ausgabedarstellungen generiert wurden, kann der Experience Manager sicher auf die Dynamic Media-Remote-Ausgabedarstellungen zugreifen und eine Vorschau davon anzeigen (es werden keine Binärdateien an die Experience Manager-Instanz zurückgesendet).
 1. Nachdem der Inhalt veröffentlicht und genehmigt werden kann, wird der Dynamic Media-Dienst Trigger, Inhalte an Bereitstellungsserver zu senden und im CDN (Content Delivery Network) Inhalte zwischenzuspeichern.
@@ -38,7 +38,7 @@ Mit der neuen Architektur ist Experience Manager für Primärquellen-Assets und 
 >
 >Für die folgende Funktionsliste müssen Sie das vordefinierte CDN verwenden, das im Lieferumfang von Adobe Experience Manager - Dynamic Media enthalten ist. Andere benutzerdefinierte CDN werden von diesen Funktionen nicht unterstützt.
 >
->* [Smart Imaging](/help/assets/imaging-faq.md)
+>* [Intelligente Bildbearbeitung](/help/assets/imaging-faq.md)
 * [Cache-Invalidierung](/help/assets/invalidate-cdn-cache-dynamic-media.md)
 * [Hotlink-Schutz](/help/assets/hotlink-protection.md)
 * [Bereitstellung von Inhalten per HTTP/2](/help/assets/http2.md)
@@ -121,9 +121,9 @@ Sofern Sie keine gesonderte Vereinbarung zum Verwenden Ihrer eigenen Unternehmen
       * **[!UICONTROL Standardmäßig aktiviert]** – Die Konfiguration wird auf alle Ordner angewendet, es sei denn, Sie markieren einen Ordner speziell zum Ausschließen. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Standardmäßig deaktiviert]** – Die Konfiguration wird auf einen Ordner erst dann angewendet, wenn Sie einen ausgewählten Ordner explizit zur Synchronisierung mit Dynamic Media markieren.
 Um einen ausgewählten Ordner zur Synchronisierung mit Dynamic Media zu markieren, wählen Sie einen Asset-Ordner aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Eigenschaften]**. Wählen Sie auf der Registerkarte **[!UICONTROL Details]** in der Dropdown-Liste **[!UICONTROL Synchronisierungsmodus für Dynamic Media]** eine der folgenden drei Optionen aus. Wenn Sie fertig sind, wählen Sie **[!UICONTROL Save]** aus. *Denken Sie daran: Diese drei Optionen stehen nicht zur Verfügung, wenn Sie zuvor **[!UICONTROL Alle Inhalte synchronisieren]**ausgewählt haben.* Siehe auch  [Arbeiten mit selektiver Veröffentlichung auf Ordnerebene in Dynamic Media](/help/assets/selective-publishing.md).
-         * **[!UICONTROL Vererbt]**  - Kein expliziter Synchronisierungswert für den Ordner; Stattdessen übernimmt der Ordner den Synchronisierungswert von einem seiner Vorgängerordner oder den Standardmodus in der Cloud-Konfiguration. Der detaillierte Status für geerbte Daten wird als Tooltip angezeigt.
-         * **[!UICONTROL Aktivieren für Unterordner]**  - Schließen Sie alle Elemente in dieser Unterstruktur zur Synchronisierung mit Dynamic Media ein. Die ordnerspezifischen Einstellungen setzen den Standardmodus in der Cloud-Konfiguration außer Kraft.
-         * **[!UICONTROL Deaktiviert für Unterordner]**  - Schließen Sie alle Elemente in dieser Unterstruktur von der Synchronisierung mit Dynamic Media aus.
+         * **[!UICONTROL Vererbt]**  - Kein expliziter Synchronisierungswert für den Ordner; Stattdessen übernimmt der Ordner den Synchronisierungswert von einem seiner Vorgängerordner oder den Standardmodus in der Cloud-Konfiguration. Der detaillierte Status für geerbte Daten wird als QuickInfo angezeigt.
+         * **[!UICONTROL Aktivieren für Unterordner]**: Schließt alle Elemente in dieser Unterstruktur zur Synchronisierung mit Dynamic Media ein. Die ordnerspezifischen Einstellungen setzen den Standardmodus in der Cloud-Konfiguration außer Kraft.
+         * **[!UICONTROL Deaktiviert für Unterordner]**: Schließt alle Elemente in dieser Unterstruktur von der Synchronisierung mit Dynamic Media aus.
 
    >[!NOTE]
    Die Versionierung wird in DMS7 nicht unterstützt. Eine verzögerte Aktivierung gilt nur, wenn auf der Seite „Konfiguration von Dynamic Media bearbeiten“ die Option **[!UICONTROL Assets veröffentlichen]** auf **[!UICONTROL Bei Aktivierung]** eingestellt ist, und erst dann, wenn das Asset zum ersten Mal aktiviert wird.
@@ -168,7 +168,7 @@ Wenn Sie diese Funktion verwenden möchten, beachten Sie die folgenden Vorausset
 * Stellen Sie sicher, dass Ihre Experience Manager-Instanz mit Amazon S3 oder Microsoft® Azure Blob Storage konfiguriert ist.
 
    >[!NOTE]
-   Konfigurieren Sie den Azure Blob-Speicher mit beiden Zugriffsschlüsseln (Schlüssel1 und Schlüssel2), da diese große Upload-Funktion von AzureSas in der Blob-Speicherkonfiguration nicht unterstützt wird.
+   Konfigurieren Sie den Azure Blob-Speicher mit einem Zugriffsschlüssel und einem geheimen Schlüssel, da diese große Upload-Funktion von AzureSas in der Blob-Speicherkonfiguration nicht unterstützt wird.
 
 * Das Oak-Tool [Direct Binary Access Download](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) ist aktiviert (Oak *Direct Binary Access Upload* ist nicht erforderlich).
 
@@ -588,7 +588,7 @@ Damit der Dynamic Media-Scene7-Modus reibungslos ausgeführt werden kann, empfie
 
 #### Aktualisieren der vordefinierten Auftragsparameter für die Verarbeitung verschiedener Dateiformate
 
-Beim Hochladen von Dateien können Sie die Auftragsparameter für eine schnellere Verarbeitung anpassen. Wenn Sie beispielsweise PSD-Dateien hochladen, diese jedoch nicht als Vorlagen verarbeiten möchten, können Sie die Ebenenextraktion auf &quot;false&quot;(Aus) setzen. In diesem Fall wird der angepasste Auftragsparameter wie folgt angezeigt: `process=None&createTemplate=false`.
+Beim Hochladen von Dateien können Sie die Auftragsparameter für eine schnellere Verarbeitung anpassen. Wenn Sie beispielsweise PSD-Dateien hochladen, diese jedoch nicht als Vorlagen verarbeiten möchten, können Sie die Ebenenextraktion auf „false“ (falsch/aus) setzen. In diesem Fall wird der angepasste Vorgangsparameter wie folgt angezeigt: `process=None&createTemplate=false`.
 
 Wenn Sie die Vorlagenerstellung aktivieren möchten, verwenden Sie die folgenden Parameter: `process=MaintainLayers&layerNaming=AppendName&createTemplate=true`.
 
