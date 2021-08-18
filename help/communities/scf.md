@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 exl-id: 5ca58bc3-8505-4d91-9cd1-6b2e2671f1be
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1d5cfff10735ea31dc0289b6909851b8717936eb
 workflow-type: tm+mt
-source-wordcount: '1505'
+source-wordcount: '1501'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Vorteile des Frameworks:
 
 Erkunden Sie eine Autoren- oder Veröffentlichungsinstanz mithilfe des interaktiven Leitfadens [Community-Komponenten](components-guide.md).
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 In SCF besteht eine Komponente aus einem SocialComponent POJO, einer Handlebars-JS-Vorlage (zum Rendern der Komponente) und CSS (zum Formatieren der Komponente).
 
@@ -63,7 +63,7 @@ Um die Komponenten anzupassen oder zu erweitern, schreiben Sie nur die Überlage
 * So fügen Sie einen neuen benutzerdefinierten Vorgang hinzu:
    * Erstellen Sie einen neuen [Sling Post Operation](server-customize.md#postoperation-class).
    * Verwenden Sie bei Bedarf vorhandene [OperationServices](server-customize.md#operationservice-class).
-   * Fügen Sie nach Bedarf JavaScript-Code hinzu, um den Vorgang von der Clientseite aus aufzurufen.
+   * Fügen Sie nach Bedarf JavaScript-Code hinzu, um Ihren Vorgang vom Client aus aufzurufen.
 
 ## Server-seitiges Framework {#server-side-framework}
 
@@ -81,7 +81,7 @@ Besuchen Sie [Übersicht über den Speicheranbieter](srp.md), um mehr über die 
 
 Die HTTP-API unterstützt die einfache Anpassung und Auswahl von Client-Plattformen für PhoneGap-Apps, native Apps und andere Integrationen und Mashups. Darüber hinaus ermöglicht die HTTP-API es einer Community-Site, als Dienst ohne Client ausgeführt zu werden, sodass Framework-Komponenten in jede auf einer beliebigen Technologie aufbauende Webseite integriert werden können.
 
-### HTTP-API - GET Requests {#http-api-get-requests}
+### HTTP-API - GET-Anfragen {#http-api-get-requests}
 
 Für jede SocialComponent stellt das Framework einen HTTP-basierten API-Endpunkt bereit. Der Zugriff auf den Endpunkt erfolgt durch Senden einer GET-Anfrage an die Ressource mit der Selektor + Erweiterung &quot;.social.json&quot;. Mit Sling wird die Anfrage an `DefaultSocialGetServlet` übergeben.
 
@@ -99,7 +99,7 @@ Ein standardmäßiges GET-Servlet überwacht .social.json -Anfragen, auf die die
 
 ![scf-framework](assets/scf-framework.png)
 
-### HTTP-API - POST Requests {#http-api-post-requests}
+### HTTP-API - POST-Anfragen {#http-api-post-requests}
 
 Zusätzlich zu den GET (Lesen)-Vorgängen definiert das Framework ein Endpunktmuster, um andere Vorgänge für eine Komponente zu aktivieren, darunter Erstellen, Aktualisieren und Löschen. Diese Endpunkte sind HTTP-APIs, die Eingaben akzeptieren und entweder mit HTTP-Statuscodes oder mit einem JSON-Antwortobjekt antworten.
 
@@ -125,7 +125,7 @@ Unter [Serverseitige Anpassungen](server-customize.md) finden Sie Informationen 
 
 ## Handlebars JS-Vorlagensprache {#handlebars-js-templating-language}
 
-Eine der auffälligeren Änderungen im neuen Framework ist die Verwendung der [Handlebars JS-Vorlagensprache (HBS)](https://www.handlebarsjs.com/), einer beliebten Open-Source-Technologie für Server-Client-Rendering.
+Eine der auffälligsten Änderungen im neuen Framework ist die Verwendung der Vorlagensprache `Handlebars JS` (HBS), einer beliebten Open-Source-Technologie für Server-Client-Rendering.
 
 HBS-Skripte sind einfach, logiklos, auf dem Server und Client kompiliert, einfach zu überlagern und anzupassen und sind natürlich mit der Client-UX verbunden, da HBS das Client-seitige Rendering unterstützt.
 
@@ -214,7 +214,7 @@ Um das Erscheinungsbild und Verhalten einer Communities-Komponente Client-seitig
 * [JavaScript erweitern](client-customize.md#extending-javascript)
 * [Clientlibs für SCF](client-customize.md#clientlibs-for-scf)
 
-## Funktionen und Komponenten {#feature-and-component-essentials}
+## Funktionen und Komponentengrundlagen {#feature-and-component-essentials}
 
 Grundlegende Informationen für Entwickler werden im Abschnitt [Funktionen und Komponenten-Grundlagen](essentials.md) beschrieben.
 
