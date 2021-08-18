@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6bac681e-59e1-4786-9c50-6679c936cfd1
 docset: aem65
 exl-id: 75cef5da-4f93-4721-99c0-ad44c8ab76d4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 14%
+source-wordcount: '222'
+ht-degree: 13%
 
 ---
 
@@ -24,7 +24,7 @@ Lesen Sie weiter, um mehr über die wesentlichen Informationen für die Arbeit m
 
 Die Zuweisungsfunktion ist die Möglichkeit, Aktivierungsressourcen und Lernpfade Mitgliedern von Aktivierungsgemeinschaften zuzuweisen.
 
-## Grundlagen für Client-seitige {#essentials-for-client-side}
+## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -81,7 +81,7 @@ Die einzigen möglichen Kombinationen aus Abschluss und Erfolgsstatus sind:
 | Fertig stellen | Bestanden |
 | Fertig stellen | Fehler |
 
-## Grundlagen für serverseitige {#essentials-for-server-side}
+## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
 
 ### Zuweisungsfunktion {#assignments-function}
 
@@ -93,4 +93,4 @@ Eine Community-Site-Struktur, die die [Zuweisungsfunktion](/help/communities/fun
 
 * [Reporting-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [Reporting-Analytics-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
+* [Reporting-Analytics-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/model/api/package-summary.html)
