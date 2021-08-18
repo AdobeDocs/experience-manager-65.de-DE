@@ -11,10 +11,10 @@ topic-tags: deploying
 discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
 exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
-source-git-commit: 1d5cfff10735ea31dc0289b6909851b8717936eb
+source-git-commit: 07f8a9f629122102d30676926b225d57e542147d
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 4%
+source-wordcount: '677'
+ht-degree: 5%
 
 ---
 
@@ -88,7 +88,7 @@ Siehe auch [Verwenden von Maven für Communities](/help/communities/maven.md).
 
 ### Keine JSP-Komponentenvorlagen {#no-jsp-component-templates}
 
-Das [Social Component Framework](/help/communities/scf.md) (SCF) verwendet die `HandlebarsJS` (HBS)-Vorlagensprache anstelle von Java Server Pages (JSP), die vor AEM 6.0 verwendet wurden.
+Das [Social Component Framework](/help/communities/scf.md) (SCF) verwendet die Vorlagensprache [HandlebarsJS](https://handlebarsjs.com/) (HBS) anstelle von Java Server Pages (JSP), die vor AEM 6.0 verwendet wurden.
 
 In AEM 6.0 blieben die JSP-Komponenten neben den neuen HBS-Framework-Komponenten am selben Speicherort, wobei sich die HBS-Komponenten in der Regel in Unterordnern namens &quot;hbs&quot;befanden.
 
