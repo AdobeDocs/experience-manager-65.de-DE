@@ -12,9 +12,9 @@ discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: f4f4be3d9885723953b1306ff25a52d27799aa93
+source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '2508'
+source-wordcount: '2490'
 ht-degree: 12%
 
 ---
@@ -119,7 +119,7 @@ Die Autoreninstanz pingt den Exporter-Endpunkt von Herausgebern. Wenn ein Benutz
 Konfigurieren der Konfiguration von Apache Sling Sync Agents :
 
 1. Melden Sie sich mit Administratorrechten für Ihre AEM-Autoreninstanz an.
-1. Rufen Sie die [Web-Konsole](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html) auf. Beispiel: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+1. Rufen Sie die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) auf. Beispiel: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 1. Suchen Sie **Apache Sling Distribution Agent - Sync Agents Factory**.
 
    * Wählen Sie die vorhandene Konfiguration aus, um sie zur Bearbeitung zu öffnen (Bleistiftsymbol).
@@ -165,7 +165,7 @@ Diese Konfiguration wird verwendet, um die Daten zu konfigurieren, die Sie über
 So konfigurieren Sie die zu synchronisierenden Daten (Knotenpfade):
 
 1. Melden Sie sich mit Administratorrechten für Ihre Veröffentlichungsinstanz an.
-1. Rufen Sie die [Web-Konsole](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html) auf.
+1. Rufen Sie die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) auf.
 
    Beispiel: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
 
@@ -188,7 +188,7 @@ Wenn die Mitgliedschaft in einer Gruppe in einem Herausgeber nicht von anderen H
 So stellen Sie die Mitgliedersynchronisierung sicher:
 
 1. Melden Sie sich mit Administratorrechten für Ihre Veröffentlichungsinstanz an.
-1. Rufen Sie die [Web-Konsole](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html) auf.
+1. Rufen Sie die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) auf.
 
    Beispiel: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
 
