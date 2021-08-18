@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
 exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1d5cfff10735ea31dc0289b6909851b8717936eb
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '674'
 ht-degree: 4%
 
 ---
@@ -45,7 +45,7 @@ Wenden Sie sich an [Kundenunterstützung](https://helpx.adobe.com/de/marketing-c
 
 Wenn bereits vorhandene benutzergenerierte Inhalte beibehalten werden müssen, hängt die Vorgehensweise davon ab, ob die bereitgestellte Bereitstellung UGC [On-Premise](#on-premise-storage) oder in der [Adobe Cloud](#adobe-cloud-storage) speichert.
 
-### Adobe Cloud-Speicher {#adobe-cloud-storage}
+### Adobe Cloud Storage {#adobe-cloud-storage}
 
 Wenn die aktualisierte Site für die Verwendung von Adobe Cloud Storage konfiguriert wurde, kann es (falsch) so aussehen, als wäre alles UGC verloren gegangen, da die SRP-Methoden die bereits vorhandene UGC nicht am alten Speicherort finden können.
 
@@ -88,7 +88,7 @@ Siehe auch [Verwenden von Maven für Communities](/help/communities/maven.md).
 
 ### Keine JSP-Komponentenvorlagen {#no-jsp-component-templates}
 
-Das [Social Component Framework](/help/communities/scf.md) (SCF) verwendet die Vorlagensprache [HandlebarsJS](https://www.handlebarsjs.com/) (HBS) anstelle von Java Server Pages (JSP), die vor AEM 6.0 verwendet wurden.
+Das [Social Component Framework](/help/communities/scf.md) (SCF) verwendet die `HandlebarsJS` (HBS)-Vorlagensprache anstelle von Java Server Pages (JSP), die vor AEM 6.0 verwendet wurden.
 
 In AEM 6.0 blieben die JSP-Komponenten neben den neuen HBS-Framework-Komponenten am selben Speicherort, wobei sich die HBS-Komponenten in der Regel in Unterordnern namens &quot;hbs&quot;befanden.
 
