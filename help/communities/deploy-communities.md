@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: d42057a2f8ce50332f404388fd1cfc9b6a154765
+source-git-commit: 626ffab5cd1b5ba9c0bd6928911aa09e9450e5fc
 workflow-type: tm+mt
 source-wordcount: '1905'
 ht-degree: 4%
@@ -167,8 +167,9 @@ Damit die SRP-Sammlung (MSRP oder DSRP) erweiterte mehrsprachige Suche (MLS) unt
 
 Der erweiterte MLS-Download (auch als &quot;Phasetwo&quot;bezeichnet) ist im Adobe-Repository verfügbar:
 
-* AEM-SOLR-MLS-phasetwo(
-Informationen zum Abrufen des erweiterten MLS-Pakets finden Sie unter [AEM Erweiterte MLS](deploy-communities.md#aem-advanced-mls) im Abschnitt &quot;Bereitstellung&quot;der Dokumentation.
+* AEM-SOLR-MLS-phasetwo
+
+   Informationen zum Abrufen des erweiterten MLS-Pakets finden Sie unter [AEM Erweiterte MLS](deploy-communities.md#aem-advanced-mls) im Abschnitt &quot;Bereitstellung&quot;der Dokumentation.
 
    * Version 1.2.40, 6. April 2016
    * AEM-SOLR-MLS-phasetwo-1.2.40.zip herunterladen
