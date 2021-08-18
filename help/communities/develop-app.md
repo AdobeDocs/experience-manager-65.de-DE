@@ -10,14 +10,14 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 6%
+source-wordcount: '578'
+ht-degree: 7%
 
 ---
 
-# Entwickeln von Sandbox-Anwendungen {#develop-sandbox-application}
+# Entwickeln von Sandbox-Anwendungen  {#develop-sandbox-application}
 
 In diesem Abschnitt kann die Anwendung jetzt, da die Vorlage im Abschnitt [Initial Application](initial-app.md) eingerichtet wurde und die ersten Seiten im Abschnitt [Initialinhalt](initial-content.md) erstellt wurden, mithilfe von Foundation-Skripten entwickelt werden, einschließlich der Möglichkeit, das Authoring mit Communities-Komponenten zu aktivieren. Am Ende dieses Abschnitts wird die Website funktionieren.
 
@@ -25,7 +25,7 @@ In diesem Abschnitt kann die Anwendung jetzt, da die Vorlage im Abschnitt [Initi
 
 Das Standardskript, das erstellt wird, wenn die Komponente, die die PayPage-Vorlage rendert, hinzugefügt wurde, wird geändert, um die head.jsp der Foundation-Seite und eine lokale body.jsp einzuschließen.
 
-### Super Resource Type {#super-resource-type}
+### Superressourcentyp {#super-resource-type}
 
 Der erste Schritt besteht darin, dem Knoten `/apps/an-scf-sandbox/components/playpage` eine Eigenschaft vom Typ resource super hinzuzufügen, damit er die Skripte und Eigenschaften des Supertyps übernimmt.
 
@@ -121,7 +121,7 @@ Verwenden von CRXDE Lite:
 
 **Zeigen Sie die Seite in einem Browser im Bearbeitungsmodus an:**
 
-* Standardbenutzeroberfläche: [http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html](http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.md)
+* Standard-Benutzeroberfläche: `http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html`
 
 Sie sollten nicht nur die Überschrift **Community Play** sehen, sondern auch die Benutzeroberfläche zum Bearbeiten von Seiteninhalten.
 
@@ -129,7 +129,7 @@ Das seitliche Bedienfeld &quot;Assets/Komponente&quot;wird angezeigt, wenn das s
 
 ![view-page](assets/view-page.png)
 
-* Klassische Benutzeroberfläche: [http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html](http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html)
+* Klassische Benutzeroberfläche: `http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html`
 
 Im Folgenden wird gezeigt, wie die Wiedergabeseite in der klassischen Benutzeroberfläche einschließlich des Content Finders (cf) angezeigt wird:
 
@@ -169,7 +169,7 @@ In einer mehrsprachigen Umgebung würde die Stammseite ein Skript enthalten, das
 
 In diesem einfachen Beispiel wird die Stammseite statisch so eingestellt, dass sie zur englischen Seite weitergeleitet wird, die in Zukunft als Haupt-Landingpage mit einem Link zur Wiedergabeseite entwickelt werden kann.
 
-Ändern Sie die Browser-URL in die Stammseite: [http://localhost:4502/editor.html/content/an-scf-sandbox.html](https://locahost:4502/editor.html/content/an-scf-sandbox.html)
+Ändern Sie die Browser-URL in die Stammseite: `http://localhost:4502/editor.html/content/an-scf-sandbox.html`
 
 * Symbol Seiteninformationen auswählen
 * Wählen Sie **[!UICONTROL Eigenschaften öffnen]**
