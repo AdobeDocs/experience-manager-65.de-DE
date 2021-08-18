@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 68ce47c8-a03f-40d6-a7f3-2cc64aee0594
 docset: aem65
 exl-id: 94415926-a273-4f03-b7b6-57fdac12c741
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '390'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Grundlegende Informationen finden Sie unter :
 
 * [Verwendung clientseitiger ](/help/sites-developing/clientlibs.md) Bibliotheken, die Nutzungsdetails sowie Debugging-Tools bereitstellt
 * [Clientlibs für ](/help/communities/client-customize.md#clientlibs) SCF, die nützliche Informationen beim Anpassen von SCF-Komponenten bereitstellen
-* [Blog : AEM Client-Bibliotheken, erklärt durch Beispiel](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
+
 
 ## Warum Clientlibs erforderlich sind {#why-clientlibs-are-required}
 
@@ -42,7 +42,7 @@ Wenn die erforderlichen clientlibs fehlen, kann das Hinzufügen einer Communitie
 
 ![platzierte Rezensionen](assets/placed-reviews.png)
 
-### Beispiel : Placed Reviews with clientlibs {#example-placed-reviews-with-clientlibs}
+### Beispiel : Platzierte Prüfungen mit Clientlibs {#example-placed-reviews-with-clientlibs}
 
 ![review-clientlibs](assets/reviews-clientlibs.png)
 
