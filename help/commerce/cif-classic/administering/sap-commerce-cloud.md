@@ -7,7 +7,8 @@ uuid: cee1a781-fcba-461e-a0a4-c561a1dbcbf3
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
+source-git-commit: 61691c300322edcdee33b121ca400e4c89256e45
 workflow-type: tm+mt
 source-wordcount: '1726'
 ht-degree: 89%
@@ -115,7 +116,7 @@ Sie können die importierte **Katalogversion** (`hybris.catalog.version`) für d
 
 Die Protokollausgabe bietet Feedback zu den erstellten Seiten und Komponenten und zeigt potenzielle Fehler auf.
 
-## Konfigurieren der Importstruktur  {#configure-the-import-structure}
+## Konfigurieren der Importstruktur {#configure-the-import-structure}
 
 Die folgende Auflistung zeigt eine Beispielstruktur (von Assets, Seiten und Komponenten), die standardmäßig erstellt wird:
 
@@ -165,7 +166,7 @@ Die beim Importieren zu erstellende Struktur können Sie konfigurieren für:
 
 In AEM können Sie die Konfigurationseinstellungen für solche Dienste auf unterschiedliche Weise vornehmen. Umfassende Informationen finden Sie unter [Konfigurieren von OSGi. ](/help/sites-deploying/configuring-osgi.md) Darüber hinaus enthält die Konsole eine vollständige Liste mit den konfigurierbaren Parametern und den dazugehörigen Standardwerten.
 
-## Konfigurieren der zu ladenden Produktattribute  {#configure-the-product-attributes-to-load}
+## Konfigurieren der zu ladenden Produktattribute {#configure-the-product-attributes-to-load}
 
 Sie können den Reaktionsparser so konfigurieren, dass er die Eigenschaften und Attribute definiert, die für (verschiedene) Produkte geladen werden sollen:
 
@@ -204,7 +205,7 @@ Die folgenden Eigenschaften geben die Verknüpfung mit hybris an:
 >
 >Immer, wenn Daten zu einem Produkt angefordert werden, wird auf den hybris-Server verwiesen.
 
-### Vollständiger Import  {#full-import}
+### Vollständiger Import {#full-import}
 
 1. Löschen Sie bei Bedarf alle vorhandenen Produktdaten mit CRXDE Lite.
 
@@ -308,8 +309,6 @@ Der Importvorgang kann lange dauern. Als Erweiterung der Produktsynchronisierung
        /etc/commerce/products
    ```
 
-   ` [](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)`
-
 ## Konfigurieren des Katalog-Importtools {#configure-the-catalog-importer}
 
 Sie können den hybris-Katalog in AEM importieren. Nutzen Sie dazu das Stapel-Importtool für hybris-Kataloge, -Kategorien und -Produkte.
@@ -403,7 +402,7 @@ So entfernen Sie mindestens ein Produkt aus dem Katalog:
       1. Führen Sie erneut den Rollout des entsprechenden Katalogs durch.
       1. Aktualisieren Sie die entsprechende Produktseite.
 
-## Hinzufügen der Auftragsverlaufs-Eigenschaft zum Client Context  {#add-order-history-trait-to-the-client-context}
+## Hinzufügen der Auftragsverlaufs-Eigenschaft zum Client Context {#add-order-history-trait-to-the-client-context}
 
 So fügen Sie einen Auftragsverlauf zum [Client Context](/help/sites-developing/client-context.md) hinzu:
 
