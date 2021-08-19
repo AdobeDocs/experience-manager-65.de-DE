@@ -12,9 +12,9 @@ discoiquuid: 3cae081e-93e3-4317-b307-1316283c307a
 docset: aem65
 feature: Konfiguration
 exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '3444'
+source-wordcount: '3437'
 ht-degree: 79%
 
 ---
@@ -35,7 +35,7 @@ Anforderungen werden zur Verarbeitung durch den entsprechenden Agenten in eine [
 >
 >Bei mehreren Veröffentlichungsinstanzen werden Benutzerdaten mithilfe von Sling verteilt, wenn die [Benutzersynchronisierung](/help/sites-administering/sync.md) aktiviert ist.
 
-## Replizieren von der Autoren- auf der Veröffentlichungsinstanz  {#replicating-from-author-to-publish}
+## Replizieren von der Autoren- auf der Veröffentlichungsinstanz {#replicating-from-author-to-publish}
 
 Die Replikation auf einer Veröffentlichungsinstanz oder einem Dispatcher verläuft in mehreren Schritten:
 
@@ -348,17 +348,17 @@ Diese Einstellungen werden verwendet, um Auslöser für die automatisierte Repli
 
    Ist diese Option aktiviert, erzwingt der Agent keine Versionierung aktivierter Seiten.
 
-## Konfigurieren der Replikationsagenten  {#configuring-your-replication-agents}
+## Konfigurieren der Replikationsagenten {#configuring-your-replication-agents}
 
 Weitere Informationen zum Verbinden von Replikationsagenten mit der Veröffentlichungsinstanz mithilfe von MSSL finden Sie unter [Replizieren mit MSSL](/help/sites-deploying/mssl-replication.md).
 
-### Konfigurieren der Replikationsagenten aus der Autorenumgebung  {#configuring-your-replication-agents-from-the-author-environment}
+### Konfigurieren der Replikationsagenten aus der Autorenumgebung {#configuring-your-replication-agents-from-the-author-environment}
 
 Auf der Registerkarte „Tools“ der Autorenumgebung können Sie Replikationsagenten konfigurieren, die sich in der Autorenumgebung (**Agenten für Autor**) oder der Veröffentlichungsumgebung (**Agenten bei Veröffentlichung**) befinden. Das nachfolgende Verfahren zeigt das Konfigurieren eines Agenten für die Autorenumgebung. Es kann jedoch für beide Umgebungen verwendet werden.
 
 >[!NOTE]
 >
->Wenn ein Dispatcher HTTP-Anforderungen für Autoren- oder Veröffentlichungsinstanzen verarbeitet, muss die HTTP-Anforderung vom Replikationsagenten den Header „PATH“ enthalten. Zusätzlich zur nachfolgenden Vorgehensweise müssen Sie den Header „PATH“ zur Dispatcher-Liste der Client-Header hinzufügen. (Weitere Informationen finden Sie unter [/clientheaders (Client-Header)](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders). [](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)
+>Wenn ein Dispatcher HTTP-Anforderungen für Autoren- oder Veröffentlichungsinstanzen verarbeitet, muss die HTTP-Anforderung vom Replikationsagenten den Header „PATH“ enthalten. Zusätzlich zur nachfolgenden Vorgehensweise müssen Sie den Header „PATH“ zur Dispatcher-Liste der Client-Header hinzufügen. (Weitere Informationen finden Sie unter [/clientheaders (Client-Header)](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
 
 
 1. Wechseln Sie in AEM zur Registerkarte **Tools**.
@@ -377,7 +377,7 @@ Auf der Registerkarte „Tools“ der Autorenumgebung können Sie Replikationsag
 >
 >Diese Angabe muss in ein Site-spezifisches Benutzerkonto für die Replikation geändert werden, das über Berechtigung zum Replizieren der erforderlichen Pfade verfügt.
 
-### Konfigurieren der Rückwärtsreplikation  {#configuring-reverse-replication}
+### Konfigurieren der Rückwärtsreplikation {#configuring-reverse-replication}
 
 Die Rückwärtsreplikation dient dazu, Benutzerinhalte abzurufen, die auf einer Veröffentlichungsinstanz generiert wurden, und sie an die Autoreninstanz zurückzuleiten. Diese Art der Replikation wird im Allgemeinen für Funktionen wie Umfrage- und Registrierungsformulare verwendet.
 
@@ -460,7 +460,7 @@ Falls Probleme auftreten, können Sie die Protokolle der Autoreninstanz überpr�
 
 
 
-### Konfigurieren eines Dispatcher Flush-Agenten  {#configuring-a-dispatcher-flush-agent}
+### Konfigurieren eines Dispatcher Flush-Agenten {#configuring-a-dispatcher-flush-agent}
 
 Die Installation umfasst Standardagenten. Es müssen jedoch trotzdem gewisse Konfigurationen vorgenommen werden. Dies gilt auch, wenn Sie einen neuen Agenten definieren:
 
