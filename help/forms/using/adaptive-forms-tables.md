@@ -10,10 +10,10 @@ discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 feature: Adaptive Formulare
 exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '2430'
-ht-degree: 75%
+ht-degree: 92%
 
 ---
 
@@ -35,33 +35,33 @@ AEM Forms bietet eine Tabellenkomponente im Komponenten-Browser in der Seitenlei
 
 ## Erstellen einer Tabelle {#create-a-table}
 
-Um eine Tabelle zu erstellen, ziehen Sie per Drag &amp; Drop die Tabellenkomponente vom Komponenten-Browser im Sidekick in das adaptive Formular. Standardmäßig enthält die Tabelle zwei Spalten und drei Zeilen, einschließlich der Kopfzeile.
+Um eine Tabelle zu erstellen, ziehen Sie per Drag &amp; Drop die Tabellenkomponente vom Komponenten-Browser im Sidekick in das adaptive Formular. Standardmäßig enthält die Tabelle zwei Spalten und drei Zeilen, einschließlich der Zeile mit der Kopfzeile.
 
 ![Komponente „Tabelle“ in AEM-Seitenleiste](assets/sidebar-tables.png)
 
-### Info zu Überschriften- und Textzellen {#about-header-and-body-cells}
+### Info zu Kopfzeilen- und Textzellen {#about-header-and-body-cells}
 
-Die Überschriftenzellen sind Textfelder. Zum Ändern der Beschriftung einer Überschriftenzelle klicken Sie mit der rechten Maustaste auf die Überschriftenzelle und wählen Sie im Kontextmenü die Option **Bearbeiten**. Aktualisieren Sie im Dialogfeld „Statischen Text bearbeiten“ die Beschriftung im Feld **Wert** und klicken Sie auf **OK**.
+Die Kopfzeilenzellen sind Textfelder. Zum Ändern der Beschriftung einer Überschriftenzelle klicken Sie mit der rechten Maustaste auf die Überschriftenzelle und wählen Sie im Kontextmenü die Option **Bearbeiten**. Aktualisieren Sie im Dialogfeld „Statischen Text bearbeiten“ die Beschriftung im Feld **Wert** und klicken Sie auf **OK**.
 
 Die Textzellen sind standardmäßig Textfelder. Sie können eine Textzelle durch eine beliebige andere, in Sidekick verfügbare adaptive Formularkomponente ersetzen (z. B. Ziffernfeld, Datumsauswahl oder Dropdownliste).
 
-Beispiel: Die erste Textzeile in der folgenden Tabelle enthält ein Textfeld, eine Datumsauswahl und eine Dropdownliste.
+Beispiel: Die erste Textzeile in der folgenden Tabelle enthält ein Textfeld, eine Datumsauswahl und eine Dropdown-Liste.
 
 ![row-cell-types](assets/row-cell-types.png)
 
 Sie können zwei oder mehr Textzellen zusammenführen, indem Sie die gewünschten Zellen auswählen, mit der rechten Maustaste klicken, und im Kontextmenü die Option **Zusammenführen** wählen. Außerdem können Sie eine zusammengeführte Zelle teilen, indem Sie mit der rechten Maustaste darauf klicken und im Kontextmenü die Option **Zellen teilen** wählen.
 
-### Hinzufügen, Löschen und Verschieben von Zeilen und Spalten  {#add-delete-move-rows-and-columns}
+### Hinzufügen, Löschen und Verschieben von Zeilen und Spalten {#add-delete-move-rows-and-columns}
 
 Sie können eine Zeile oder Spalte hinzufügen bzw. löschen sowie eine Zeile in einer Tabelle nach oben bzw. nach unten verschieben.
 
-Um eine Zeile bzw. Spalte hinzuzufügen oder zu löschen oder eine Zeile zu verschieben, klicken Sie auf eine beliebige Zelle in der Zeile bzw. Spalte. Eine Dropdownliste wird jeweils am oberen Rand der Spalte und links neben der Zeile angezeigt. Die obere Liste enthält Optionen zum Hinzufügen bzw. Löschen der Spalte, die Liste links Optionen zum Hinzufügen, Löschen und Verschieben der Zeile.
+Um eine Zeile bzw. Spalte hinzuzufügen oder zu löschen oder eine Zeile zu verschieben, klicken Sie auf eine beliebige Zelle in der Zeile bzw. Spalte. Eine Dropdown-Liste wird jeweils am oberen Rand der Spalte und links neben der Zeile angezeigt. Die obere Liste enthält Optionen zum Hinzufügen bzw. Löschen der Spalte, die Liste links Optionen zum Hinzufügen, Löschen und Verschieben der Zeile.
 
 * Der Vorgang „Hinzufügen“ fügt eine Zeile unterhalb bzw. eine Spalte rechts von der ausgewählten Zeile bzw. Spalte hinzu.
 * Der Vorgang „Löschen“ löscht die ausgewählte Zeile bzw. Spalte.
 * Der Vorgang „Nach oben“ bzw. „Nach unten“ verschiebt die ausgewählte Zeile nach oben bzw. nach unten.
 
-Die Dropdownliste für die Zeile enthält auch die Option „Bearbeiten“ zum Bearbeiten von Zeileneigenschaften, Einstellungen und Stiloptionen.
+Die Dropdown-Liste für die Zeile enthält auch die Option „Bearbeiten“ zum Bearbeiten von Zeileneigenschaften, Einstellungen und Stiloptionen.
 
 ![add-delete-move-row-column](assets/add-delete-move-row-column.png)
 
@@ -69,11 +69,11 @@ Die Dropdownliste für die Zeile enthält auch die Option „Bearbeiten“ zum B
 >
 >Sie können zwar eine beliebige Anzahl von Zeilen einer Tabelle hinzufügen, aber nur maximal sechs Spalten. Die Überschriftzeile der Tabelle kann nicht gelöscht werden.
 
-### Fügen Sie die Tabellenbeschreibung hinzu  {#add-table-description}
+### Hinzufügen einer Tabellenbeschreibung {#add-table-description}
 
-Sie können eine Beschreibung der Tabelle eingeben, die erklärt, wie die Daten aufgebaut sind, die von Bildschirmlesehilfen interpretiert und gelesen werden können. Hinzufügen der Beschreibung:
+Sie können der Tabelle eine Beschreibung hinzufügen, die erklärt, wie die Daten aufgebaut sind, damit sie von Bildschirmlesehilfen interpretiert und ausgelesen werden können. Hinzufügen der Beschreibung:
 
-1. Wählen Sie die Tabelle aus und tippen Sie auf ![cmppr](assets/cmppr.png) , um die Eigenschaften in der Seitenleiste anzuzeigen.
+1. Wählen Sie die Tabelle aus und tippen Sie auf ![cmppr](assets/cmppr.png), damit ihre Eigenschaften in der Seitenleiste angezeigt werden.
 1. Geben Sie auf der Registerkarte „Ein-/Ausgabehilfe“ die Zusammenfassung ein.
 1. Klicken Sie auf **Fertig**.
 
@@ -81,32 +81,32 @@ Sie können eine Beschreibung der Tabelle eingeben, die erklärt, wie die Daten 
 
 Sie können Daten basierend auf einer beliebigen Spalte in einer Tabelle im adaptiven Formular sortieren. Die Werte in der Spalte können in auf- oder absteigender Reihenfolge sortiert werden.
 
-Die Sortierung kann auf Tabellenspalten mit folgenden Elementen angewendet werden:
+Die Sortierung kann auf Tabellenspalten angewendet werden, die Folgendes enthalten:
 
 * Statischer Text
-* Eigenschaften von Datenmodellobjekten
-* Kombination von statischen Text- und Datenmodellobjekteigenschaften
+* Datenmodell-Objekteigenschaften
+* Kombination von statischem Text und Datenmodell-Objekteigenschaften
 
 Um eine Sortierung auf Tabellenspalten anzuwenden, müssen die Zellen der Tabellenspalten eine der folgenden Komponenten enthalten: Numerisches Feld, numerische Schritte, Datumseingabefeld, Datumsauswahl, Text oder Textfeld.
 
 So aktivieren Sie die Sortierung:
 
-1. Wählen Sie die Tabelle aus und tippen Sie auf ![configure_icon](assets/configure_icon.png) (Konfigurieren). Sie können die Tabelle auch mithilfe des Browsers **Content** im Sidekick der interaktiven Kommunikation auswählen.
-1. Wählen Sie **Sortierung aktivieren**.
-1. Tippen Sie auf ![done_icon](assets/done_icon.png) , um die Tabelleneigenschaften zu speichern. Die Sortierungssymbole (Pfeile nach oben und unten) in Spaltenüberschriften zeigen, dass die Sortierung aktiviert wurde.
+1. Wählen Sie die Tabelle aus und tippen Sie auf ![configure_icon](assets/configure_icon.png) (Konfigurieren). Sie können die Tabelle auch mithilfe des **Inhalt**-Browsers in der Seitenleiste der interaktiven Kommunikation auswählen.
+1. Wählen Sie **Sortierung aktivieren** aus.
+1. Tippen Sie auf ![done_icon](assets/done_icon.png), um die Tabelleneigenschaften zu speichern. Die Sortiersymbole (Auf- und Ab-Pfeile) in Spaltenüberschriften zeigen an, dass die Sortierung aktiviert wurde.
 
-   ![Sortierung aktivieren](assets/enable_sorting_new.png)
+   ![Sortieren aktivieren](assets/enable_sorting_new.png)
 
-1. Wechseln Sie zum Modus **Vorschau** , um die Ausgabe anzuzeigen. Die Tabelle wird automatisch nach der ersten Spalte der Tabelle sortiert.
-1. Klicken Sie auf die Spaltenüberschrift, um die Werte anhand der Spalte zu sortieren.
+1. Wechseln Sie in den **Vorschau**-Modus, um die Ausgabe anzuzeigen. Die Tabelle wird automatisch nach der ersten Spalte der Tabelle sortiert.
+1. Klicken Sie auf die Spaltenüberschrift, um die Werte anhand dieser Spalte zu sortieren.
 
-   Eine Spaltenüberschrift mit einem Pfeil nach oben zeigt an, dass die Tabelle anhand dieser Spalte sortiert wird. Darüber hinaus werden die Werte in der Spalte in aufsteigender Reihenfolge angezeigt.
+   Eine Spaltenüberschrift mit einem Pfeil nach oben zeigt an, dass die Tabelle anhand dieser Spalte sortiert ist. Außerdem werden die Werte in der Spalte in aufsteigender Reihenfolge angezeigt.
 
-   ![Aufsteigende Sortierung](assets/sorting_ascending_new.png)
+   ![Sortieren in aufsteigender Reihenfolge](assets/sorting_ascending_new.png)
 
-   Gleichermaßen bedeutet eine Spaltenüberschrift mit einem Abwärtspfeil, dass die Werte in der Spalte in absteigender Reihenfolge angezeigt werden.
+   Entsprechend bedeutet eine mit einem Abwärtspfeil versehene Spaltenüberschrift, dass die Werte in der Spalte in absteigender Reihenfolge angezeigt werden.
 
-   Sie können auch Änderungen an der Tabelle im Modus **Vorschau** vornehmen und erneut auf die Spaltenüberschrift klicken, um die Spaltenwerte zu sortieren.
+   Sie können im **Vorschau**-Modus auch Änderungen in der Tabelle vornehmen und dann erneut auf die Spaltenüberschrift klicken, um die Spaltenwerte zu sortieren.
 
 ## Spaltenbreite für eine Tabelle festlegen {#set-column-width}
 
@@ -120,16 +120,16 @@ Führen Sie die folgenden Schritte aus, um die Spaltenbreite für eine Tabelle f
 
 Sie können den Stil für eine Tabelle definieren, indem Sie den Stilmodus in der Seitensymbolleiste verwenden. Führen Sie die folgenden Schritte aus, um zum Stilmodus zu wechseln und den Stil der Tabelle zu bearbeiten:
 
-1. Tippen Sie in der Seitensymbolleiste vor der Vorschau auf ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
+1. Tippen Sie in der Symbolleiste „Seite“ vor „Vorschau“ auf ![canvas-drop-down](assets/canvas-drop-down.png) > **Stil**.
 
-1. Wählen Sie in der Seitenleiste die Tabelle aus und tippen Sie auf die Bearbeitungsschaltfläche ![edit-button](assets/edit-button.png).
-Sie können die Stileigenschaften in der Seitenleiste sehen.
+1. Wählen Sie in der Seitenleiste die Tabelle aus und tippen Sie auf die Schaltfläche zum Bearbeiten ![edit_button](assets/edit-button.png).
+Die Stileigenschaften werden in der Seitenleiste angezeigt.
 
 ![Anpassen der Stileigenschaften einer Tabelle](assets/style-table.png)
 
 >[!NOTE]
 >
->Sie können das Farbschema für Kopf- und Textzeilen ändern, indem Sie die Werte der LESS-Variablen ändern. Weitere Informationen finden Sie unter [Designs in AEM Forms](/help/forms/using/themes.md) [](/help/forms/using/creating-custom-adaptive-form-themes.md).
+>Sie können das Farbschema für Kopf- und Textzeilen ändern, indem Sie die Werte der LESS-Variablen ändern. Weitere Informationen finden Sie unter [Designs in AEM Forms](/help/forms/using/themes.md)..
 
 ## Dynamisches Hinzufügen oder Löschen einer Zeile {#add-or-delete-a-row-dynamically}
 
@@ -139,22 +139,22 @@ Tabellen unterstützen standardmäßig das dynamische Hinzufügen oder Löschen 
 1. Geben Sie auf der Registerkarte „Wiederholungseinstellungen“ die Mindest- und Höchstanzahl der Zeilen in der Tabelle an.
 1. Klicken Sie auf **Fertig**.
 
-Zur Laufzeit werden die Schaltflächen **+** und *-* zum Hinzufügen bzw. Löschen einer Zeile angezeigt.
+Zur Laufzeit werden die Schaltflächen **+** und *-* für das Hinzufügen bzw. Löschen einer Zeile angezeigt.
 
-![add-delete-rows-dynamisch](assets/add-delete-rows-dynamically.png)
+![add-delete-rows-dynamic](assets/add-delete-rows-dynamically.png)
 
 >[!NOTE]
 >
->Das dynamische Hinzufügen und Löschen einer Zeile wird nicht unterstützt, wenn das Mobil-Layout „Kopfzeilen links“ aktiviert ist.
+>Das dynamische Hinzufügen und Löschen einer Zeile wird im Mobile-Layout „Kopfzeilen links“ nicht unterstützt.
 
-## Ausdrücke in einer Tabelle  {#expressions-in-a-table}
+## Ausdrücke in einer Tabelle {#expressions-in-a-table}
 
 Mit Tabellen in adaptiven Formularen können Sie Ausdrücke in JavaScript schreiben, um Funktionen (z. B. das Ein- bzw. Ausblenden einer Tabelle oder Zeile, das Addieren aller Zahlen und das Anzeigen der Summe in einer Zelle, das Aktivieren bzw. Deaktivieren einer Zelle, das Überprüfen der Benutzereingabe usw.) bereitzustellen. Diese Ausdrücke nutzen Skriptmodell-APIs für adaptive Formulare.
 
 Während Tabellen und Zeilen nur Ausdrücke zum Steuern ihrer Sichtbarkeit unterstützen, unterstützen Zellen folgende Ausdrücke:
 
 * **Initialisierungsskript**: Zum Ausführen einer Aktion nach der Initialsierung eines Felds.
-* **Skript zum Bestätigen von Werten:**  Zum Ändern der Komponenten eines Formulars, nachdem der Wert eines Felds geändert wurde.
+* **Skript zum Bestätigen von Werten**: Zum Ändern der Komponenten eines Formulars, nachdem der Wert eines Felds geändert wurde.
 
 >[!NOTE]
 >
@@ -169,43 +169,43 @@ Der Sichtbarkeitsausdruck für eine Tabelle oder Zeile kann im entsprechenden Di
 
 Eine vollständige Liste der Klassen, Ereignisse, Objekte und öffentlichen APIs für adaptive Formulare finden Sie unter [JavaScript Library API-Referenz für adaptive Formulare](https://helpx.adobe.com/de/experience-manager/6-5/forms/javascript-api/index.html).
 
-## Layout für Mobilgeräte {#mobile-layouts}
+## Layouts für Mobilgeräte {#mobile-layouts}
 
-Tabellen in adaptiven Formularen eignen sich hervorragend für Mobilgeräte aufgrund ihres formbaren und responsiven Layouts. AEM Forms bietet zwei Tabellenlayouts für Mobilgeräte: &quot;Kopfzeilen links&quot;und &quot;Reduzierbare Spalten&quot;.
+Tabellen in adaptiven Formularen eignen sich hervorragend für Mobilgeräte aufgrund ihres formbaren und responsiven Layouts. AEM Forms stellt zwei Tabellenlayouts für Mobilgeräte zur Verfügung: „Kopfzeilen links“ und „Reduzierbare Spalten“.
 
-Sie können ein Tabellenlayout für Mobilgeräte im Dialogfeld „Komponente bearbeiten“ einer Tabelle auf der Registerkarte „Stile“ konfigurieren.
+Sie können ein Tabellenlayout für Mobilgeräte auf der Registerkarte „Stil“ im Dialogfeld „Komponente bearbeiten“ einer Tabelle konfigurieren.
 
-### Kopfzeilen links  {#headers-on-left}
+### Kopfzeilen links {#headers-on-left}
 
 Im Layout „Kopfzeilen links“ werden die Spaltenüberschriften der Tabelle auf der linken Seite angeordnet und nur eine Zelle steht neben der Kopfzeile. Jede Zeile in diesem Layout ist ein eigenständiger Abschnitt. In den folgenden Abbildungen wird eine Tabelle auf einem Desktop mit derselben auf einem Mobilgerät verglichen.
 
-![Desktop-Ansicht](assets/desktopview_new.png)
+![Desktopansicht](assets/desktopview_new.png)
 
-Desktopansicht einer Tabelle mit Layout „Kopfzeilen links“
+Desktopansicht einer Tabelle mit dem Layout „Kopfzeilen links“
 
 ![Kopfzeilen links](assets/headersontheleft_new.png)
 
-Mobilgeräteansicht einer Tabelle Layout „Kopfzeilen links“
+Mobilgeräteansicht einer Tabelle mit dem Layout „Kopfzeilen links“
 
-### Layout „Reduzierbare Spalten“{#collapsible-columns-layout}
+### Layout „Reduzierbare Spalten“  {#collapsible-columns-layout}
 
 Im Layout „Reduzierbare Spalten“ werden die Spalten der Tabelle so reduziert, dass je nach Gerätegröße eine oder zwei Spalten angezeigt wird, während andere Spalten reduziert werden. Klicken Sie zum Anzeigen der anderen Spalten in der Tabelle auf das Symbol „Reduzieren/Erweitern“.
 
 >[!NOTE]
 >
->Das Layout &quot;Reduzierbare Spalten&quot;ist zwar für Mobilgeräte optimiert, funktioniert aber auch auf dem Desktop, wenn die verfügbare Breite nicht ausreicht, um alle Spalten einer Tabelle anzuzeigen.
+>Das Layout „Reduzierbare Spalten“ ist zwar für Mobilgeräte optimiert, funktioniert aber auch auf Desktops, wenn die Breite nicht ausreicht, um alle Spalten in einer Tabelle anzuzeigen.
 
-In den folgenden Abbildungen werden Tabellen mit reduzierten und erweiterten Spalten verglichen.
+In den folgenden Abbildungen wird gezeigt, wie eine Tabelle mit reduzierten und erweiterten Spalten auf einem Mobilgerät aussieht.
 
-![reduzierte Spalte](assets/collapsed-column.png)
+![collapsed-column](assets/collapsed-column.png)
 
-Reduzierte Spalten einer Tabelle mit nur zwei Spalten auf einem Mobilgerät
+Reduzierte Spalten einer Tabelle, wobei auf einem Mobilgerät nur zwei Spalten angezeigt werden
 
-![collapse_column](assets/collapsible_column.png)
+![collapsible_column](assets/collapsible_column.png)
 
 Erweiterte Spalte einer Tabelle auf einem Mobilgerät
 
-## Zusammenführen von Daten in einer Tabelle  {#merge-data-in-a-table}
+## Zusammenführen von Daten in einer Tabelle {#merge-data-in-a-table}
 
 Sie können Tabellen in adaptiven Formularen zur Laufzeit mithilfe von Daten aus einer XML-Datei füllen. Die XML-Datendatei kann sich im lokalen Dateisystem des Computers, auf dem der AEM Forms-Server ausgeführt wird, oder im CRX-Repository befinden.
 
@@ -279,13 +279,13 @@ Die XML-Datei, die Daten im folgenden Format enthält:
 </afData>
 ```
 
-In der XML-Beispieldatei werden die Daten für eine Zeile durch die `<Row1>`-Tags definiert, die den Elementnamen für die Zeile in der Tabelle darstellen. Innerhalb des Tags `<Row1>` werden die Daten für jede Zelle im Tag für den Elementnamen definiert, z. B. `<tableItem1>`, `<tableItem2>`, `<tableItem3>` und `<type>`.
+In der XML-Beispieldatei werden die Daten für eine Zeile durch die `<Row1>`-Tags definiert, die den Elementnamen für die Zeile in der Tabelle festlegen. Innerhalb des `<Row1>`-Tags werden die Daten für die einzelnen Zellen innerhalb des Tags für dessen Elementnamen definiert (z. B. `<tableItem1>`, `<tableItem2>`, `<tableItem3>` und `<type>`).
 
 Um diese Daten mit der Tabelle zur Laufzeit zusammenzuführen, muss das adaptive Formular, das die Tabelle enthält, auf den absoluten Pfad der XML-Datei zeigen. Dabei muss „wcmmode“ aktiviert sein. Wenn sich das adaptive Formular beispielsweise unter *https://localhost:4502/myForms/bankTransaction.html* befindet und die XML-Datendatei unter *C:/myTransactions/bankSummary.xml* gespeichert ist, können Sie die Tabelle mit Daten unter folgender URL anzeigen:
 
 *https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
-![data-merge-table](assets/data-merged-table.png)
+![data-merged-table](assets/data-merged-table.png)
 
 ## Verwenden von XDP-Komponenten und komplexen XSD-Typen {#use-xdp-components-and-xsd-complex-types}
 
@@ -307,9 +307,9 @@ Darüber hinaus können Sie eine Gruppe von komplexen XSD-Typelementen ablegen, 
 >
 >Wenn die Anzahl der Elemente kleiner als die Anzahl der Zellen in einer Zeile ist, fügt die neue Zeile zunächst die Elementzellen zu. Anschließend werden die verbleibenden Zellen in der Zeile mit Standardzellen ausgefüllt. Beispiel: Wenn Sie eine Gruppe von drei Elementen in einer Zeile ablegen, die aus vier Zellen besteht, dann basieren die ersten drei Zellen auf den abgelegten Elementen und die verbleibende Zelle ist eine Standardtabellenzelle.
 
-## Wichtige Aspekte{#key-considerations} 
+## Wichtige Aspekte {#key-considerations}
 
 * Wenn Sie beim Erstellen einer XSD-Tabelle Zeilen nach oben bzw. unten verschieben, gehen Daten aus der XML-Datei verloren, die beim Versenden des Formulars erstellt wurden.
 * Jeder Textzelle in einer Standardtabelle ist ein vordefinierter Elementnamen zugeordnet. Wenn Sie eine andere Tabelle im adaptiven Formular hinzufügen, haben die Standardtextzellen in der neuen Tabelle denselben Elementnamen wie in der ersten Tabelle. In solch einem Fall beinhalten die Daten, die beim Senden des Formulars generiert wurden, die Daten in den Standardtextzellen einer der Tabellen. Stellen Sie daher sicher, dass Sie die Elementnamen für Standardtextzellen umbenennen, damit sie in den Tabellen eindeutig sind und Datenverluste vermieden werden.
 
-   Beachten Sie, dass dies lediglich für die Standardtextzellen gilt. Wenn Sie weitere Zeilen oder Spalten zur Tabelle hinzufügen, werden automatisch eindeutige Elementnamen für Nichtstandard-Textzellen generiert. 
+   Beachten Sie, dass dies lediglich für die standardmäßigen Textzellen gilt. Wenn Sie einer Tabelle weitere Zeilen oder Spalten hinzufügen, werden automatisch eindeutige Elementnamen für nicht standardmäßige Textzellen generiert.
