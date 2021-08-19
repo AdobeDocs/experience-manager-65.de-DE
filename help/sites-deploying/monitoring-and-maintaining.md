@@ -12,9 +12,9 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Konfiguration
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 83383d46a4200eb3d21deee15c71032314694860
 workflow-type: tm+mt
-source-wordcount: '5892'
+source-wordcount: '5878'
 ht-degree: 82%
 
 ---
@@ -25,7 +25,7 @@ Nach der Bereitstellung der AEM-Instanzen sind bestimmte Aufgaben erforderlich, 
 
 Um potenzielle Probleme erkennen zu können, müssen Sie unbedingt wissen, wie Ihre Systeme unter normalen Bedingungen aussehen und sich verhalten. Dazu sollten Sie das System überwachen und über einen Zeitraum hinweg Daten erfassen.
 
-| Überprüfen Sie Folgendes | Besonderheiten | Kommentar/Aktionen |
+| Überprüfen Sie Folgendes | Aspekte | Kommentar/Aktionen |
 |---|---|---|
 | Backup-Plan. |  | Gehen Sie wie folgt vor, um [ein Backup für Ihre Instanz zu erstellen](/help/sites-deploying/monitoring-and-maintaining.md#backups). |
 | Plan für die Notfallwiederherstellung | Richtlinien Ihres Unternehmens für die Notfallwiederherstellung. |  |
@@ -65,7 +65,7 @@ Oft werden in regelmäßigen Abständen (z. B. täglich, wöchentlich oder monat
 >
 >Weitere Informationen zur Backup-Leistung finden Sie im Abschnitt [Backup-Leistung](/help/sites-deploying/configuring-performance.md#backup-performance).
 
-### Erstellen Sie ein Backup Ihrer installierten Software  {#backing-up-your-software-installation}
+### Erstellen Sie ein Backup Ihrer installierten Software {#backing-up-your-software-installation}
 
 Nach der Installation oder nach größeren Konfigurationsänderungen sollten Sie ein Backup der installierten Software erstellen.
 
@@ -76,7 +76,7 @@ Dazu müssen Sie erst[ein Backup des gesamten Repositorys erstellen](#backing-up
 
 >[!CAUTION]
 >
->Falls Sie einen Anwendungsserver eines Drittanbieters verwenden, gibt es möglicherweise zusätzliche Ordner an anderen Speicherorten, die Sie ebenfalls sichern müssen. Informationen dazu, wie Sie Anwendungsserver installieren, finden Sie unter [Installieren von AEM mit einem Anwendungsserver. ](/help/sites-deploying/application-server-install.md) [](/content/docs/en/aem/6-3/deploy/installing.md#installing adobe experience manager with an application server)
+>Falls Sie einen Anwendungsserver eines Drittanbieters verwenden, gibt es möglicherweise zusätzliche Ordner an anderen Speicherorten, die Sie ebenfalls sichern müssen. Informationen dazu, wie Sie Anwendungsserver installieren, finden Sie unter [Installieren von AEM mit einem Anwendungsserver](/help/sites-deploying/application-server-install.md).
 
 >[!CAUTION]
 >
@@ -86,7 +86,7 @@ Dazu müssen Sie erst[ein Backup des gesamten Repositorys erstellen](#backing-up
 >
 >Die Festplattenspiegelung kann als Sicherungsmethode eingesetzt werden.
 
-### Erstellen Sie ein Backup Ihres Repositorys  {#backing-up-your-repository}
+### Erstellen Sie ein Backup Ihres Repositorys {#backing-up-your-repository}
 
 Im Abschnitt [Sicherung und Wiederherstellung](/help/sites-administering/backup-and-restore.md) der CRX-Dokumentation sind alle Aspekte der Sicherung des CRX-Repositorys abgedeckt.
 
@@ -98,7 +98,7 @@ Das Tool **Versionen bereinigen** dient zum Bereinigen der Versionen eines Knote
 
 In diesem Abschnitt werden die Wartungsaufgaben im Zusammenhang mit der Versionsfunktion von AEM behandelt. Mit dem Tool **Versionsbereinigung** können Sie Versionen eines Knotens oder eine Knotenhierarchie Ihres Repository bereinigen. Der Hauptzweck ist die Verkleinerung des Repositorys durch Löschen alter Knotenversionen.
 
-### Überblick {#overview}
+### Übersicht {#overview}
 
 Das Tool **Versionsbereinigung** ist in der **[Tools](/help/sites-administering/tools-consoles.md)-Konsole** unter **„Versionsverwaltung“** oder direkt unter folgender URL verfügbar:
 
@@ -168,7 +168,7 @@ Im folgenden ein Beispiel:
 
 Auditdatensätze und Protokolldateien für Adobe Experience Manager (AEM) finden sich an diversen Speicherorten. Im Folgenden erhalten Sie einen Überblick, welche Dateien wo zu finden sind.
 
-### Arbeiten mit Protokollen  {#working-with-logs}
+### Arbeiten mit Protokollen {#working-with-logs}
 
 AEM WCM-System zeichnet detaillierte Protokolle auf. Wenn Sie Quickstart entpackt und gestartet haben, finden Sie Protokolle unter folgenden Pfaden:
 
@@ -440,7 +440,7 @@ Die Felix-Konsole enthält auch Informationen zum Sling Log-Support unter `../sy
 
 Auditdatensätze werden als Nachweis darüber aufbewahrt, wer wann welche Aktion vorgenommen hat. Verschiedene Auditdatensätze werden für das AEM WCM-System und OSGi-Ereignisse generiert.
 
-#### Bei der Seitenbearbeitung angezeigte AEM WCM-Auditdatensätze  {#aem-wcm-audit-records-shown-when-page-authoring}
+#### Bei der Seitenbearbeitung angezeigte AEM WCM-Auditdatensätze {#aem-wcm-audit-records-shown-when-page-authoring}
 
 1. Öffnen Sie eine Seite.
 1. Wählen Sie im Seitenmenü die Registerkarte mit dem Sperrsymbol aus und doppelklicken Sie auf **Auditprotokoll...**
@@ -450,13 +450,13 @@ Auditdatensätze werden als Nachweis darüber aufbewahrt, wer wann welche Aktion
 
 1. Klicken Sie auf **OK**, wenn Sie das Fenster schließen möchten.
 
-#### AEM WCM-Auditdatensätze im Repository  {#aem-wcm-auditing-records-within-the-repository}
+#### AEM WCM-Auditdatensätze im Repository {#aem-wcm-auditing-records-within-the-repository}
 
 Im Ordner `/var/audit` werden Auditdatensätze entsprechend der Ressource gespeichert. Sie können ein Drilldown durchführen, bis einzelne Datensätze und die darin enthaltenen Informationen angezeigt werden.
 
 Diese Einträge enthalten die gleichen Informationen wie sie beim Bearbeiten einer Seite angezeigt werden.
 
-#### OSGi-Auditdatensätze aus der Web-Konsole  {#osgi-audit-records-from-the-web-console}
+#### OSGi-Auditdatensätze aus der Web-Konsole {#osgi-audit-records-from-the-web-console}
 
 OSGi-Ereignisse generieren ebenfalls Auditdatensätze, die Sie in der AEM-Web-Konsole auf der Registerkarte **Konfigurationsstatus** unter **Protokolldateien** anzeigen können:
 
@@ -558,7 +558,7 @@ All diese Informationen müssen erfasst, sortiert und analysiert werden, bevor S
    * Sammeln Sie so viele Informationen wie möglich, um diese mit den Information zu vergleichen, die Sie zum System unter normalen Bedingungen haben:
 
 
-### Tools für die Leistungsüberwachung und -analyse  {#tools-for-monitoring-and-analyzing-performance}
+### Tools für die Leistungsüberwachung und -analyse {#tools-for-monitoring-and-analyzing-performance}
 
 Im Folgenden finden Sie einen kurzen Überblick über Tools, mit denen Sie die Leistung überwachen und analysieren können.
 
@@ -649,7 +649,7 @@ Einige von diesen sind von Ihrem Betriebssystem abhängig.
  </tbody>
 </table>
 
-### Interpretieren von request.log  {#interpreting-the-request-log}
+### Interpretieren von request.log {#interpreting-the-request-log}
 
 In dieser Datei werden grundlegende Informationen zu allen Anforderungen an AEM registriert. Sie können daraus wertvolle Schlüsse ziehen.
 
@@ -668,7 +668,7 @@ Im Anforderungsprotokoll werden alle Anfragen zusammen mit der jeweiligen Antwor
 
 Durch Addieren aller GET-Einträge über einen bestimmten Zeitraum (z. B. über mehrere 24-Stunden-Zeiträume) erhalten Sie aussagekräftige Informationen zum durchschnittlichen Traffic auf Ihrer Website.
 
-#### Überwachung der Antwortzeiten mit request.log  {#monitoring-response-times-with-the-request-log}
+#### Überwachung der Antwortzeiten mit request.log {#monitoring-response-times-with-the-request-log}
 
 Ein guter Ausgangspunkt für Leistungsanalysen ist das Anforderungsprotokoll:
 
@@ -702,7 +702,7 @@ Dieses Protokoll enthält eine Zeile pro Anforderung oder Antwort mit:
 
 Anhand von kleinen Skripts können Sie die erforderlichen Informationen aus der Protokolldatei extrahieren und die gewünschten Statistiken erstellen. Daraus können Sie ersehen, welche Seiten oder Seitentypen langsam reagieren und ob die Gesamtleistung zufriedenstellend ist.
 
-#### Überwachung der Suchantwortzeiten mit request.log  {#monitoring-search-response-times-with-the-request-log}
+#### Überwachung der Suchantwortzeiten mit request.log {#monitoring-search-response-times-with-the-request-log}
 
 Suchanforderungen werden ebenfalls in der Protokolldatei registriert:
 
@@ -737,7 +737,7 @@ Sie sollten testen, wie viele gleichzeitige Benutzer das System unterstützt, be
 31/Mar/2009:11:45:44 +0200 [337] <- 304 text/html 0ms
 ```
 
-### Verwenden von rlog.jar bei der Suche nach Anforderungen mit langer Dauer  {#using-rlog-jar-to-find-requests-with-long-duration-times}
+### Verwenden von rlog.jar bei der Suche nach Anforderungen mit langer Dauer {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
 AEM umfasst verschiedene Hilfstools unter:
 `<cq-installation-dir>/crx-quickstart/opt/helpers`
@@ -880,7 +880,7 @@ Es wird empfohlen, dass jedes Projekt `html comments` für die Serverleistung en
          -->
 ```
 
-### Leistungsüberwachung mit JConsole  {#monitoring-performance-using-jconsole}
+### Leistungsüberwachung mit JConsole {#monitoring-performance-using-jconsole}
 
 Der Tool-Befehl `jconsole` ist bei JDK verfügbar.
 
@@ -952,7 +952,7 @@ Um die Anzahl der Autoren anzuzeigen, die an einem bestimmten Tag mit dem System
 grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 ```
 
-#### Wie viele Seiten werden im Durchschnitt pro Tag aktiviert?  {#what-is-the-average-number-of-page-activations-per-day}
+#### Wie viele Seiten werden im Durchschnitt pro Tag aktiviert? {#what-is-the-average-number-of-page-activations-per-day}
 
 Um die Gesamtzahl der Seitenaktivierungen ab der Serverinstallation anzuzeigen, führen Sie eine Repository-Abfrage aus; via CRXDE – Tools – Abfrage:
 
@@ -1057,7 +1057,7 @@ Bestimmen Sie die Anforderungen pro Stunde auf dem Autorensystem zu Spitzenzeite
 
    Verwenden Sie diese Werte, um die Anzahl der Stunden seit der Installation und dann die durchschnittliche Anzahl der Anforderungen pro Stunde zu berechnen.
 
-#### Wie viele Anforderungen pro Stunde erfolgen zu Spitzenzeiten auf dem Veröffentlichungssystem?  {#how-many-requests-per-hour-do-you-have-on-the-publish-system-at-peak-time}
+#### Wie viele Anforderungen pro Stunde erfolgen zu Spitzenzeiten auf dem Veröffentlichungssystem? {#how-many-requests-per-hour-do-you-have-on-the-publish-system-at-peak-time}
 
 Wiederholen Sie die obigen Schritte auf der Veröffentlichungsinstanz.
 
@@ -1078,7 +1078,7 @@ Im Folgenden finden Sie eine Liste mit Vorschlägen, was Sie überprüfen sollte
 
 
 
-### CPU bei 100 %  {#cpu-at}
+### CPU bei 100 % {#cpu-at}
 
 Wenn die CPU-Auslastung des Systems ständig bei 100 % liegt, sehen Sie in folgender Dokumentation nach:
 
@@ -1101,7 +1101,7 @@ In diesen Fällen müssen Sie Folgendes überprüfen:
 
    * [Analysieren von Speicherproblemen](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html) 
 
-### Festplatten-I/O  {#disk-i-o}
+### Festplatten-I/O {#disk-i-o}
 
 Falls das System keine Festplattenkapazität mehr hat oder Sie Festplatten-Trashing bemerken, überprüfen Sie Folgendes:
 
@@ -1112,7 +1112,7 @@ Falls das System keine Festplattenkapazität mehr hat oder Sie Festplatten-Trash
    * [Apache Sling Logging-Konfiguration](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
    * [CQ HTML-Bibliotheksmanager](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
    * [CQ WCM Debug-Filter](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
-   * [Protokollierungen](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)[](/help/sites-deploying/configuring.md#loggersandwritersforindividualservices) 
+   * [Loggers](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
 * Haben Sie die [Versionsbereinigung](/help/sites-deploying/version-purging.md) deaktiviert?
 * Wissensdatenbank:
@@ -1120,7 +1120,7 @@ Falls das System keine Festplattenkapazität mehr hat oder Sie Festplatten-Trash
    * [Zu viele geöffnete Dateien](https://helpx.adobe.com/experience-manager/kb/TooManyOpenFiles.html) 
    * [Journalling verbraucht zu viel Festplattenspeicher](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
-### Normale Leistungsbeeinträchtigung  {#regular-performance-degradation}
+### Normale Leistungsbeeinträchtigung {#regular-performance-degradation}
 
 Falls Sie nach jedem Neustart (ggf. eine Woche oder mehr nach dem Neustart) eine Leistungsverschlechterung der Instanz bemerken, können Sie Folgendes überprüfen:
 
@@ -1129,7 +1129,7 @@ Falls Sie nach jedem Neustart (ggf. eine Woche oder mehr nach dem Neustart) eine
 
    * [Nicht beendete Sitzungen](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html) 
 
-### JVM-Optimierung  {#jvm-tuning}
+### JVM-Optimierung {#jvm-tuning}
 
 Java Virtual Machine (JVM) ist im Hinblick auf die Optimierung sehr verbessert worden (insbesondere seit Java 7). Daher sind eine vernünftige feste JVM-Größe und die Verwendung der Standardeinstellungen oft ausreichend.
 
