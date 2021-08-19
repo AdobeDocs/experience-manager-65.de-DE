@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '2485'
 ht-degree: 78%
@@ -24,11 +24,11 @@ ht-degree: 78%
 >
 >Informationen zur Verwendung der klassischen Benutzeroberfläche finden Sie in der [Dokumentation zu AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/workflows-models.html).
 
-Sie erstellen ein [Workflow-Modell](/help/sites-developing/workflows.md#model), um die Schritte zu definieren, die ausgeführt werden, wenn ein Benutzer den Workflow startet. Sie können auch Modelleigenschaften definieren, um beispielsweise festzulegen, ob es sich um einen Übergangs-Workflow handelt oder der Workflow mehrere Ressourcen verwendet.
+Sie erstellen ein [Workflow-Modell](/help/sites-developing/workflows.md#model), um die Schritte zu definieren, die ausgeführt werden, wenn ein Benutzer den Workflow startet. Sie können auch Modelleigenschaften definieren, um beispielsweise festzulegen, ob es sich um einen Übergangs-Workflow oder einen Workflow mit mehreren Ressourcen handelt.
 
 Wenn ein Benutzer einen Workflow startet, wird eine Instanz gestartet. Dabei handelt es sich um das entsprechende Laufzeitmodell, das erstellt wird, wenn Sie Ihre Änderungen durch Klicken auf [Sync](#sync-your-workflow-generate-a-runtime-model) synchronisieren.
 
-## Erstellen neuer Workflows  {#creating-a-new-workflow}
+## Erstellen neuer Workflows {#creating-a-new-workflow}
 
 Wenn Sie zum ersten Mal ein neues Workflow-Modell erstellen, umfasst es Folgendes:
 
@@ -40,7 +40,7 @@ Dieser Schritt ist so konfiguriert, dass er dem Workflow-Initiator ein Arbeitsel
 Gehen Sie folgendermaßen vor, um einen neuen Workflow mit dem Editor zu erstellen:
 
 1. Öffnen Sie die Konsole **Workflow-Modelle** . über **Tools**, **Workflow**, **Modelle** oder beispielsweise: [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow)
-1. Wählen Sie dann **Erstellen** und dann **Modell erstellen** aus.
+1. Wählen Sie **Erstellen** und dann **Modell erstellen** aus.
 1. Das Dialogfeld **Arbeitsablaufmodell hinzufügen** wird angezeigt. Geben Sie den **Titel** und den **Namen** (optional) ein. Wählen Sie anschließend **Fertig** aus.
 1. Das neue Modell wird in der Konsole **Workflow-Modelle** aufgeführt.
 1. Wählen Sie Ihren neuen Workflow aus und öffnen Sie ihn dann, indem Sie auf [**Bearbeiten** klicken, um ihn zu konfigurieren](#editinganexistingworkflow):
@@ -56,7 +56,7 @@ Gehen Sie folgendermaßen vor, um einen neuen Workflow mit dem Editor zu erstell
 >
 >Dieser Ordner kann anschließend zum [Verwalten des Zugriffs auf die Modelle in diesem Ordner](/help/sites-administering/workflows-managing.md#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that) verwendet werden.
 
-## Bearbeiten von Workflows  {#editing-a-workflow}
+## Bearbeiten von Workflows {#editing-a-workflow}
 
 Sie können jedes vorhandene Workflow-Modell zu folgenden Zwecken bearbeiten:
 
@@ -67,7 +67,7 @@ Das Bearbeiten eines (vordefinierten) [**Standard- bzw. Legacy**-Workflows](#edi
 
 Wenn Sie mit den Änderungen an Ihrem Workflow fertig sind, müssen Sie zum **Generieren eines Laufzeitmodells** auf **Sync** klicken. Weitere Informationen finden Sie unter [Synchronisieren von Workflows](#sync-your-workflow-generate-a-runtime-model).
 
-### Synchronisieren von Workflows – Generieren von Laufzeitmodellen  {#sync-your-workflow-generate-a-runtime-model}
+### Synchronisieren von Workflows – Generieren von Laufzeitmodellen {#sync-your-workflow-generate-a-runtime-model}
 
 Wenn Sie rechts in der Editor-Symbolleiste auf **Sync** klicken, wird ein [Laufzeitmodell](/help/sites-developing/workflows.md#runtime-model) generiert. Das Laufzeitmodell ist das Modell, das tatsächlich verwendet wird, wenn ein Benutzer einen Workflow startet. Wenn Sie Ihre Änderungen nicht durch Klicken auf **Sync** synchronisieren, stehen diese nicht zur Laufzeit zur Verfügung.
 
@@ -143,7 +143,7 @@ Gehen Sie folgendermaßen vor, um Schritte zu Ihrem Workflow-Modell hinzuzufüge
 
    Weitere Informationen finden Sie unter [Synchronisieren von Workflows](#sync-your-workflow-generate-a-runtime-model).
 
-### Konfigurieren von Workflow-Schritten  {#configuring-a-workflow-step}
+### Konfigurieren von Workflow-Schritten {#configuring-a-workflow-step}
 
 Sie können das Verhalten von Workflow-Schritten über das Dialogfeld **Schritt-Eigenschaften** **** konfigurieren und anpassen.
 
@@ -165,7 +165,7 @@ Sie können das Verhalten von Workflow-Schritten über das Dialogfeld **Schritt-
 
    Weitere Informationen finden Sie unter [Synchronisieren von Workflows](#sync-your-workflow-generate-a-runtime-model).
 
-### Erstellen von Übergangs-Workflows  {#creating-a-transient-workflow}
+### Erstellen von Übergangs-Workflows {#creating-a-transient-workflow}
 
 Sie können ein [Übergangs-](/help/sites-developing/workflows.md#transient-workflows)Workflow-Modell erstellen, wenn Sie ein neues Modell erstellen oder ein vorhandenes Modell bearbeiten:
 
@@ -181,7 +181,7 @@ Sie können ein [Übergangs-](/help/sites-developing/workflows.md#transient-work
 
 >[!NOTE]
 >
->Beim Ausführen eines Workflows im [Übergangsmodus](/help/sites-developing/workflows.md#transient-workflows) speichert AEM keinen Workflow-Verlauf. Aus diesem Grund werden in der [Timeline](/help/sites-authoring/basic-handling.md#timeline) keine Informationen zu diesem Workflow angezeigt. [](/help/sites-authoring/basic-handling.md#timeline)
+>Beim Ausführen eines Workflows im [Übergangsmodus](/help/sites-developing/workflows.md#transient-workflows) speichert AEM keinen Workflow-Verlauf. Aus diesem Grund werden in der [Timeline](/help/sites-authoring/basic-handling.md#timeline) keine Informationen zu diesem Workflow angezeigt.
 
 ## Workflow-Modelle in der Touch-Benutzeroberfläche verfügbar machen {#classic2touchui}
 
@@ -220,7 +220,7 @@ Sie konfigurieren ein Workflow-Modell für die [Unterstützung für mehrere Ress
 
    Weitere Informationen finden Sie unter [Synchronisieren von Workflows](#sync-your-workflow-generate-a-runtime-model).
 
-### Konfigurieren von Workflow-Phasen (die den Workflow-Fortschritt anzeigen)  {#configuring-workflow-stages-that-show-workflow-progress}
+### Konfigurieren von Workflow-Phasen (die den Workflow-Fortschritt anzeigen) {#configuring-workflow-stages-that-show-workflow-progress}
 
 Die [Workflow-Phasen](/help/sites-developing/workflows.md#workflow-stages) helfen Ihnen bei der Visualisierung des Fortschritts bei der Verarbeitung von Aufgaben.
 
@@ -260,7 +260,7 @@ Gehen Sie folgendermaßen vor, um **Phasen** zu definieren:
 
    Weitere Informationen finden Sie unter [Synchronisieren von Workflows](#sync-your-workflow-generate-a-runtime-model).
 
-## Exportieren von Workflow-Modellen in Pakete  {#exporting-a-workflow-model-in-a-package}
+## Exportieren von Workflow-Modellen in Pakete {#exporting-a-workflow-model-in-a-package}
 
 Gehen Sie folgendermaßen vor, um ein Workflow-Modell in ein Paket zu exportieren:
 
@@ -293,7 +293,7 @@ Gehen Sie folgendermaßen vor, um ein Workflow-Modell in ein Paket zu exportiere
 1. Wählen Sie in der Symbolleiste Ihrer Paketdefinition die Option **Build** aus.
 1. Wählen Sie in der Symbolleiste Ihres Pakets die Option **Herunterladen** aus.
 
-## Verwenden von Workflows zum Verarbeiten von Formularübermittlungen  {#using-workflows-to-process-form-submissions}
+## Verwenden von Workflows zum Verarbeiten von Formularübermittlungen {#using-workflows-to-process-form-submissions}
 
 Sie können ein Formular so konfigurieren, dass es durch den ausgewählten Workflow verarbeitet wird. Wenn Benutzer das Formular übermitteln, wird eine neue Workflow-Instanz mit den Daten der Formularübermittlung als Nutzlast erstellt.
 
@@ -324,7 +324,7 @@ Sie können AEM auch so konfigurieren, dass die **DEBUG**-Meldungen in den Proto
 
 ## Beispiele {#examples}
 
-### Beispiel: Erstellen eines (einfachen) Workflows zum Annehmen oder Ablehnen einer Anfrage zur Veröffentlichung  {#example-creating-a-simple-workflow-to-accept-or-reject-a-request-for-publication}
+### Beispiel: Erstellen eines (einfachen) Workflows zum Annehmen oder Ablehnen einer Anfrage zur Veröffentlichung {#example-creating-a-simple-workflow-to-accept-or-reject-a-request-for-publication}
 
 Um einige der Möglichkeiten zur Erstellung eines Workflows zu veranschaulichen, wird im folgenden Beispiel eine Variante des Workflows `Publish Example` erstellt.
 
@@ -431,7 +431,7 @@ Gehen Sie folgendermaßen vor, um eine Regel für eine ODER-Teilung zu definiere
 
    Weitere Informationen finden Sie unter [Synchronisieren von Workflows](#sync-your-workflow-generate-a-runtime-model).
 
-#### Funktion Check() {#function-check}
+#### Funktion „Check()“ {#function-check}
 
 >[!NOTE]
 >
