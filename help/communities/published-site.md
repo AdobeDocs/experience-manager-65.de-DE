@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 2%
 
 ---
 
-# Erleben Sie die veröffentlichte Site {#experience-the-published-site}
+# Erlebnis der veröffentlichten Site {#experience-the-published-site}
 
-## Navigieren Sie zur neuen Site auf der Veröffentlichungsinstanz {#browse-to-new-site-on-publish}
+## Navigieren zur neuen Site bei der Veröffentlichung {#browse-to-new-site-on-publish}
 
 Nachdem die neu erstellte Communities-Site veröffentlicht wurde, navigieren Sie zur URL, die beim Erstellen der Site angezeigt wird, aber auf dem Veröffentlichungsserver, z. B.:
 
@@ -75,7 +75,7 @@ Gehen Sie wie folgt vor, um den Inhalt Ihrer Community-Site vor dem Zugriff anon
 1. Fügen Sie den Pfad der Anmeldeseite hinzu. Zum Beispiel **/content/....../GetStarted**.
 1. Veröffentlichen Sie die Seite.
 
-## Vertrauenswürdige Community-Mitglieder {#trusted-community-member}
+## Vertrauenswürdiger Community-Mitglied {#trusted-community-member}
 
 Dieses Erlebnis setzt voraus, dass [Aaron McDonald](/help/communities/tutorials.md#demo-users) die Rollen von [Community Manager und Moderator](/help/communities/create-site.md#roles) zugewiesen wurde. Wenn nicht, kehren Sie zur Autorenumgebung zurück zu [ändern Sie die Site-Einstellungen](/help/communities/sites-console.md#modifying-site-properties) und wählen Sie Aaron McDonald als Community-Manager und Moderator aus.
 
@@ -108,7 +108,7 @@ Beachten Sie, dass die Kalenderseite die Startseite ist, da die ausgewählte Ref
 >* [Komponenten-, Funktionen- und Funktionsgrundlagen](/help/communities/essentials.md)  (für Entwickler)
 
 
-### Forum link {#forum-link}
+### Forum-Link {#forum-link}
 
 Klicken Sie auf den Link Forum , um die grundlegende Forumsfunktion anzuzeigen.
 
@@ -193,7 +193,7 @@ Melden Sie sich als Weston McCall (weston.mccall@dodgit.com / Kennwort) an und n
 
 ![grouplink3](assets/grouplink3.png)
 
-### Web Page link {#web-page-link}
+### Link zur Webseite {#web-page-link}
 
 Zeigen Sie die grundlegende Webseite der Site an, indem Sie den Link Webseite auswählen. Die standardmäßigen AEM-Authoring-Tools können verwendet werden, um Inhalte zu dieser Seite in der Autorenumgebung hinzuzufügen.
 
@@ -205,7 +205,7 @@ Wechseln Sie beispielsweise zur Instanz **author**, öffnen Sie den Ordner `enga
 
 Wenn das Community-Mitglied über Moderationsberechtigungen verfügt, wird der Moderations-Link angezeigt und durch seine Auswahl wird der veröffentlichte Community-Inhalt angezeigt und kann [moderiert](/help/communities/moderate-ugc.md) auf eine Weise sein, die der [Moderationskonsole](/help/communities/moderation.md) in der Autorenumgebung ähnelt.
 
-Verwenden Sie die Zurück-Schaltfläche des Browsers, um zur veröffentlichten Site zurückzukehren. Die meisten Konsolen können nicht über die globale Navigation in der Veröffentlichungsumgebung aufgerufen werden. [](/help/communities/moderate-ugc.md)
+Verwenden Sie die Zurück-Schaltfläche des Browsers, um zur veröffentlichten Site zurückzukehren. Die meisten Konsolen können nicht über die globale Navigation in der Veröffentlichungsumgebung aufgerufen werden.
 
 ![moderationlink](assets/moderationlink.png)
 
