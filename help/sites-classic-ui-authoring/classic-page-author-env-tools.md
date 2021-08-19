@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 89%
@@ -22,7 +22,7 @@ ht-degree: 89%
 
 Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten. Die verfügbaren Tools können über verschiedene Konsolen und Seiteneditoren aufgerufen werden.
 
-## Site-Administration {#site-administration}
+## Website-Administration {#site-administration}
 
 Die **Websites-Konsole** ermöglicht es Ihnen, Ihre Website zu verwalten und darin zu navigieren. Sie besteht aus zwei Bereichen, durch die Sie die Struktur der Website erweitern und das gewünschte Element bearbeiten können.
 
@@ -36,7 +36,7 @@ Es gibt einen separaten Seiteneditor in der klassischen Benutzeroberfläche, der
 
 ![chlimage_1-109](assets/chlimage_1-109.png)
 
-## Aufrufen der Hilfe {#accessing-help}
+## Aufrufen der Hilfe   {#accessing-help}
 
 Verschiedene **Hilfequellen** können direkt aus AEM aufgerufen werden:
 
@@ -62,15 +62,15 @@ Sie können die Inhaltssuche verwenden, um eine Reihe von Ressourcen zu ermittel
 * [Dokumente](#finding-documents)
 * [Filme](#finding-movies)
 * [Dynamic Media-Browser](/help/sites-administering/scene7.md#scene7contentbrowser)
-* [](#products) [Seiten](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#finding-pages)
+* [Seiten](#finding-pages)
 
 * [Absätze](#referencing-paragraphs-from-other-pages)
-* [Produkte](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#products)
+* [Produkte](#products)
 * Oder um [die Website gemäß der Repository-Struktur zu durchsuchen](#the-content-finder)
 
 Mit allen Optionen können Sie [nach bestimmten Elementen suchen](#the-content-finder).
 
-### Finding Images {#finding-images}
+### Suchen nach Bildern {#finding-images}
 
 Auf dieser Registerkarte sind alle Bilder aufgelistet, die im Repository gespeichert sind.
 
@@ -78,7 +78,7 @@ Nachdem Sie einen Absatz des Typs „Bild“ auf einer Seite erstellt haben, kö
 
 ![chlimage_1-111](assets/chlimage_1-111.png)
 
-### Finding Documents {#finding-documents}
+### Suchen nach Dokumenten {#finding-documents}
 
 Auf dieser Registerkarte sind alle Dokumente aufgelistet, die im Repository gespeichert sind.
 
@@ -86,7 +86,7 @@ Nachdem Sie einen Absatz des Typs „Download“ auf einer Seite erstellt haben,
 
 ![chlimage_1-112](assets/chlimage_1-112.png)
 
-### Finding Movies {#finding-movies}
+### Suchen nach Filmen {#finding-movies}
 
 In dieser Registerkarte werden sämtliche Filme im Repository aufgeführt (z. B. Flash-Elemente).
 
@@ -106,7 +106,7 @@ Auf dieser Registerkarte werden alle Seiten angezeigt. Doppelklicken Sie auf ein
 
 ![chlimage_1-115](assets/chlimage_1-115.png)
 
-### Referencing Paragraphs from other Pages {#referencing-paragraphs-from-other-pages}
+### Verweisen auf Absätze von anderen Seiten aus {#referencing-paragraphs-from-other-pages}
 
 Auf dieser Registerkarte können Sie nach anderen Seiten suchen. Alle Absätze der betreffenden Seite werden aufgelistet. Anschließend können Sie einen Absatz auf die aktuelle Seite ziehen. Dadurch wird ein Verweis auf den ursprünglichen Absatz erstellt.
 
@@ -176,7 +176,7 @@ In bestimmten Situationen sind weitere Aktionen im Sidekick verfügbar:
 
 Auf der Websites-Konsole sind weitere [Seitenbeziehungen](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) zu sehen.
 
-## Auditprotokoll  {#audit-log}
+## Auditprotokoll {#audit-log}
 
 Das **Auditprotokoll** kann über die Registerkarte **Informationen** im Sidekick aufgerufen werden. Dort werden die kürzlich durchgeführten Aktionen für die aktuelle Seite aufgeführt. Beispiel:
 
@@ -186,7 +186,7 @@ Das **Auditprotokoll** kann über die Registerkarte **Informationen** im Sidekic
 
 Die Website-Konsole [enthält auch Informationen zum aktuellen Status der Seite](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), z. B. Veröffentlichung, Änderung, gesperrt, Live Copy usw.
 
-## Seitenmodi  {#page-modes}
+## Seitenmodi {#page-modes}
 
 Beim Bearbeiten einer Seite in der klassischen Benutzeroberfläche können Sie verschiedene Modi über die Symbole unten im Sidekick aufrufen:
 
