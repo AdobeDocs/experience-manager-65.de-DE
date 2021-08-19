@@ -13,7 +13,7 @@ discoiquuid: 39dfef85-d047-4b6d-a0f5-92bd77df103b
 docset: aem65
 role: Admin
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '1809'
 ht-degree: 70%
@@ -191,7 +191,7 @@ Wenn Sie das Migrationsdienstprogramm zum ersten Mal ausführen, wird ein Protok
 
 ### Systemverwaltungsaufgaben nach Ausführung des Migrationsdienstprogramms  {#housekeepingtasks}
 
-Nachdem Sie das Migrationsdienstprogramm ausgeführt haben, führen Sie folgende Systemverwaltungsaufgaben durch:[](../../forms/using/import-export-forms-templates.md) 
+Nachdem Sie das Migrationsdienstprogramm ausgeführt haben, führen Sie folgende Systemverwaltungsaufgaben durch: 
 
 1. Stellen Sie sicher, dass die XFA-Version der Layouts und Fragmentlayouts 3.3 oder höher ist. Wenn Sie Layouts und Fragment-Layouts einer älteren Version verwenden, kann es zu Problemen beim Rendern des Briefs kommen. Um ein älteres XFA auf die neueste Version zu aktualisieren, führen Sie folgende Schritte aus:
 
