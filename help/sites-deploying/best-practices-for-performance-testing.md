@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1920'
 ht-degree: 94%
 
 ---
@@ -25,7 +25,7 @@ Leistungstests stellen einen wichtigen Teil von AEM-Bereitstellungen dar. Je nac
 
 In diesem Dokument werden Gesamtstrategien und Methoden zum Durchführen von Leistungstests sowie verschiedene Tools beschrieben, die von Adobe zur Unterstützung dieses Vorgangs bereitgestellt werden. Schließlich analysieren wir einige der Tools, die in AEM 6 zur Leistungsoptimierung verfügbar sind, und zwar sowohl im Hinblick auf eine Codeanalyse als auch in Bezug auf die Systemkonfiguration.
 
-### Simulieren der Realität  {#simulating-reality}
+### Simulieren der Realität {#simulating-reality}
 
 Am wichtigsten bei Leistungstests: Sie müssen darauf achten, Ihre Produktionsumgebung so genau wie möglich nachzuahmen. Auch wenn dies häufig schwierig ist, ist dies unumgänglich, um die Genauigkeit dieser Tests sicherzustellen. Beim Konzipieren von Leistungstests müssen die folgenden Punkte berücksichtig werden:
 
@@ -45,7 +45,7 @@ Die Tests sind ohne eine Umgebung, die möglichst genau den Produktionsbedingung
 
 Viele Leistungsprobleme treten erst dann zum Vorschein, wenn das System eine hohe Auslastung aufweist. Gute Leistungstests sollten die Auslastung der Produktionssysteme zu Stoßzeiten simulieren.
 
-### Festlegen von Zielen  {#setting-goals}
+### Festlegen von Zielen {#setting-goals}
 
 Vor Leistungstests müssen nicht funktionsbezogene Anforderungen zur Angabe der Last und Antwortzeiten festgelegt werden. Achten Sie beim Migrieren von einem vorhandenen System darauf, dass Antwortzeiten mit denen Ihrer aktuellen Produktionswerte vergleichbar sind. Was die Auslastung angeht, sollte am besten die Spitzenlast verdoppelt werden. Auf diese Weise wird sichergestellt, dass die Website auch bei Wachstum weiterhin leistungsfähig ist.
 
@@ -65,8 +65,8 @@ Auf dem Markt ist eine Vielzahl von Tools für Leistungstests erhältlich. Stell
 * Cloudbasierte Tools für Auslastungstests wie [Neustar](https://www.neustar.biz/services/web-performance/load-testing) können ebenfalls verwendet werden.
 * Zum Testen von mobilen Websites oder responsiven Webdesigns sind andere Tools erforderlich. Diese drosseln die Netzwerkbrandbreite, um langsamere mobile Verbindungen wie 3G oder EDGE zu simulieren. Zu den gängigsten Tools gehören:
 
-   * **[Network Link Conditioner](https://nshipster.com/network-link-conditioner/)** mit einer benutzerfreundlichen Oberfläche und einer relativ niedrigen Ebene im Netzwerk-Stack. Es sind OS X- und iOS-Versionen verfügbar.[](https://nshipster.com/network-link-conditioner/)
-   * [**Charles**](https://www.charlesproxy.com/), eine Webdebugging-Proxyanwendung, die u. a. eine Netzwerkdrosselung ermöglicht. Es sind Windows-, OS X- und Linux-Versionen verfügbar. [](https://www.charlesproxy.com/)
+   * **[Network Link Conditioner](https://nshipster.com/network-link-conditioner/)** mit einer benutzerfreundlichen Oberfläche und einer relativ niedrigen Ebene im Netzwerk-Stack. Es sind OS X- und iOS-Versionen verfügbar.
+   * [**Charles**](https://www.charlesproxy.com/), eine Webdebugging-Proxyanwendung, die u. a. eine Netzwerkdrosselung ermöglicht. Es sind Windows-, OS X- und Linux-Versionen verfügbar.
 
 #### Optimierungstools {#optimization-tools}
 
@@ -130,7 +130,7 @@ Auf einem System ohne hohen Personalisierungsbedarf sollte der Dispatcher die me
 
 Für grundlegende Tests können mit Apache Bench die Antwortzeit der Webserver gemessen und Lasten für Messungen, etwa von Speicherverlusten, generiert werden. Weitere Informationen liefert Ihnen das Beispiel in der [Dokumentation zur Überwachung](/help/sites-deploying/monitoring-and-maintaining.md#apache-bench).
 
-## Fehlerbehebung von Leistungsproblemen  {#troubleshooting-performance-issues}
+## Fehlerbehebung von Leistungsproblemen {#troubleshooting-performance-issues}
 
 Im Anschluss an die Leistungstests der Autoreninstanz müssen alle festgestellten Probleme untersucht, diagnostiziert und behoben werden. Zur Analyse und Behandlung dieser Probleme können Sie verschiedene Tools und Verfahren anwenden:
 
