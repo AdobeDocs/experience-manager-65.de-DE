@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 9584392a-d8a3-45a4-9cdf-fd211c8e6091
 docset: aem65
 exl-id: c1429889-e2ed-4e2f-a45f-33f8a6a52745
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '2122'
 ht-degree: 87%
@@ -55,7 +55,7 @@ Das bedeutet, dass der Frontend-Entwickler Kundeninhalte vor oder nach dem Einst
 
 ### Dynamisches Rendering {#dynamic-rendering}
 
-Die SPA sollte sich nur auf dynamisches Rendering von Inhalten stützen. Dies ist die Standarderwartung, bei der AEM alle untergeordneten Elemente der Inhaltsstruktur abruft und rendert.  [](/help/sites-developing/spa-architecture.md#portability)
+Die SPA sollte sich nur auf dynamisches Rendering von Inhalten stützen. Dies ist die Standarderwartung, bei der AEM alle untergeordneten Elemente der Inhaltsstruktur abruft und rendert.
 
 Jedes explizite Rendering, das auf bestimmte Inhalte verweist, gilt als statisches Rendering und wird zwar unterstützt, ist jedoch nicht mit den Inhaltserstellungsfunktionen von AEM kompatibel. Es widerspricht auch dem Grundsatz der [Portabilität](/help/sites-developing/spa-architecture.md#portability).
 
@@ -71,7 +71,7 @@ Für jedes AEM-Projekt sollte der [AEM-Projektarchetyp](https://docs.adobe.com/c
 
 ## SPA-Design-Modelle {#spa-design-models}
 
-Wenn die [Prinzipien der Entwicklung von SPAs in AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem) befolgt werden, wird Ihre SPA mit allen unterstützten Inhaltserstellungsfunktionen von AEM zusammenarbeiten.  [](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)
+Wenn die [Prinzipien der Entwicklung von SPAs in AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem) befolgt werden, wird Ihre SPA mit allen unterstützten Inhaltserstellungsfunktionen von AEM zusammenarbeiten.
 
 Es kann jedoch Fälle geben, in denen dies nicht wirklich erforderlich ist. Die folgende Tabelle bietet einen Überblick über die verschiedenen Design-Modelle sowie ihre Vor- und Nachteile.
 
@@ -103,7 +103,6 @@ Es kann jedoch Fälle geben, in denen dies nicht wirklich erforderlich ist. Die 
 >[!NOTE]
 >
 >Zwar werden in AEM alle Modelle unterstützt, doch können Inhaltsautoren nur durch Implementierung des dritten Modells (und damit nach den empfohlenen [SPA-Entwicklungsprinzipien in AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)) wie gewohnt mit dem Inhalt der SPA in AEM interagieren bzw. diesen bearbeiten.
->[](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)
 
 ## Migrieren vorhandener SPAs zu AEM {#migrating-existing-spas-to-aem}
 
