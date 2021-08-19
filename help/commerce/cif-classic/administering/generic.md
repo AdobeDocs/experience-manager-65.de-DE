@@ -8,9 +8,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+source-git-commit: 812d1a43176a75ff22e3a0bc07bc658cb5070a62
 workflow-type: tm+mt
-source-wordcount: '3009'
+source-wordcount: '3002'
 ht-degree: 86%
 
 ---
@@ -33,7 +33,7 @@ Die generische AEM-Lösung verfügt über Methoden zum Verwalten der Commerce-In
 >
 >Sie dient derzeit zur Veranschaulichung bzw. als Grundlage für eine benutzerdefinierte Implementierung nach Ihren jeweiligen Anforderungen.
 
-## Produkte und Produktvarianten  {#products-and-product-variations}
+## Produkte und Produktvarianten {#products-and-product-variations}
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Für jeden Produkttyp ist eine separate Strukturvorlage erforderlich. Die Strukt
 >
 >Sie können unter diesem Pfad eine neue Produktdefinition erstellen, ohne dass ein zusätzliches Setup erforderlich ist.
 
-### Importieren von Produkten  {#importing-products}
+### Importieren von Produkten {#importing-products}
 
 #### Importieren von Produkten – Touch-optimierte Benutzeroberfläche {#importing-products-touch-optimized-ui}
 
@@ -99,7 +99,7 @@ Für jeden Produkttyp ist eine separate Strukturvorlage erforderlich. Die Strukt
 
 1. Wählen Sie **Fertig**, um den Assistenten zu schließen.
 
-#### Importieren von Produkten – klassische Benutzeroberfläche  {#importing-products-classic-ui}
+#### Importieren von Produkten – klassische Benutzeroberfläche {#importing-products-classic-ui}
 
 1. Verwenden Sie die **Tools-Konsole**, um den Ordner **Commerce** zu öffnen.
 1. Doppelklicken Sie, um das **Produkt-Importtool** zu öffnen:
@@ -128,7 +128,7 @@ Für jeden Produkttyp ist eine separate Strukturvorlage erforderlich. Die Strukt
 
 1. Klicken Sie auf **Produkte importieren**.
 
-### Erstellen von Produktinformationen  {#creating-product-information}
+### Erstellen von Produktinformationen {#creating-product-information}
 
 >[!NOTE]
 >
@@ -158,7 +158,7 @@ Für jeden Produkttyp ist eine separate Strukturvorlage erforderlich. Die Strukt
 >
 >Produkte und ihre Varianten werden in einer Baumstruktur gespeichert, bei der die Produktinformationen oben und die Varianten darunter angeordnet sind (diese Struktur wird von der Benutzeroberfläche vorgegeben).
 
-### Bearbeiten von Produktinformationen  {#editing-product-information}
+### Bearbeiten von Produktinformationen {#editing-product-information}
 
 >[!NOTE]
 >
@@ -168,7 +168,7 @@ Für jeden Produkttyp ist eine separate Strukturvorlage erforderlich. Die Strukt
 >
 >Dies bedeutet, dass sie standardmäßig vom [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de) blockiert werden. Konfigurieren Sie dies also je nach Bedarf.
 
-#### Bearbeiten von Produktinformationen – Touch-optimierte Benutzeroberfläche  {#editing-product-information-touch-optimized-ui}
+#### Bearbeiten von Produktinformationen – Touch-optimierte Benutzeroberfläche {#editing-product-information-touch-optimized-ui}
 
 1. Navigieren Sie in der **Produktekonsole** (über **Commerce**) zu Ihren Produktinformationen.
 1. Verwenden Sie eine der folgenden Optionen:
@@ -216,11 +216,11 @@ Für jeden Produkttyp ist eine separate Strukturvorlage erforderlich. Die Strukt
 
 1. Wenn Sie auf ein Produkt klicken oder tippen, wird es geöffnet. Sie können es auch veröffentlichen oder die Produktdaten anzeigen.
 
-#### Erweitern der Suche  {#extending-search}
+#### Erweitern der Suche {#extending-search}
 
 Sie können eine vorhandene Facette ändern oder neue hinzufügen, indem Sie CRXDE Lite verwenden:
 
-1. Navigieren Sie zu:
+1. Gehen Sie zu:
 
    `http://localhost:4502/crx/de/index.jsp#/libs/commerce/gui/content/products/aside/items/search/items/searchpanel/facets`
 
@@ -229,7 +229,7 @@ Sie können eine vorhandene Facette ändern oder neue hinzufügen, indem Sie CRX
 1. Sie können den `propertyValues` ändern. Beispielsweise können Sie XS oder XXL hinzufügen oder eine Größe entfernen.
 1. Klicken Sie auf **Alle speichern** und navigieren Sie zur Seite &quot;Produktsuche&quot;. Ihre Änderungen sollten angezeigt werden.
 
-### Mehrere Assets  {#multiple-assets}
+### Mehrere Assets {#multiple-assets}
 
 Sie können in der Produktkomponente mehrere Assets hinzufügen und dann das Asset angeben, das auf der Produktseite angezeigt wird.
 
@@ -237,7 +237,7 @@ Sie können in der Produktkomponente mehrere Assets hinzufügen und dann das Ass
 >
 >Alle Schritte in Bezug auf mehrere Assets werden über die Touch-optimierte Benutzeroberfläche ausgeführt.
 
-#### Hinzufügen mehrerer Assets  {#adding-multiple-assets}
+#### Hinzufügen mehrerer Assets {#adding-multiple-assets}
 
 1. Navigieren Sie zur **Produktekonsole**; nutzen Sie dazu die Option **Commerce**.
 1. Navigieren Sie mit der Konsole **Products** zum gewünschten Produkt.
@@ -319,7 +319,7 @@ Der Ablauf zum Auswählen des angezeigten Bilds ist wie folgt:
 1. Klicken oder tippen Sie auf **Fertig**.
 1. Führen Sie für Ihre Änderungen den [Rollout](#rolling-out-a-catalog) durch.
 
-### Veröffentlichen und Rückgängigmachen der Veröffentlichung von Produktinformationen  {#publishing-unpublishing-product-information}
+### Veröffentlichen und Rückgängigmachen der Veröffentlichung von Produktinformationen {#publishing-unpublishing-product-information}
 
 #### Veröffentlichen und Rückgängigmachen der Veröffentlichung von Produktinformationen – Touch-optimierte Benutzeroberfläche {#publishing-unpublishing-product-information-touch-optimized-ui}
 
@@ -352,7 +352,7 @@ Die Search&amp;Promote-Integration ermöglicht Ihnen Folgendes:
 
 Weitere Informationen finden Sie unter [Produkt-Feed](/help/sites-administering/product-feed.md).
 
-### Ereignis-Handler für Produktaktualisierungen  {#event-handler-for-product-updates}
+### Ereignis-Handler für Produktaktualisierungen {#event-handler-for-product-updates}
 
 Es ist ein Ereignis-Handler vorhanden, der ein Ereignis protokolliert, wenn ein Produkt oder eine Produktseite hinzugefügt, geändert oder gelöscht wird. Es gibt die folgenden OSGi-Ereignisse:
 
@@ -371,7 +371,7 @@ Sie können sie in der Web-Konsole in OSGi-Ereignissen anzeigen ( `/system/conso
 
 >[!NOTE]
 >
->Lesen Sie auch [Ereignisbehandlung in AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/). [](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)
+>Lesen Sie auch [Ereignisbehandlung in AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/).
 
 ### Bild mit Links für Hinzufügen zum Warenkorb {#image-with-add-to-cart-links}
 
@@ -423,7 +423,7 @@ Beim Klicken auf den Hotspot wird ein Dialogfeld geöffnet, in dem Sie die Grö�
 1. Klicken Sie auf die Schaltfläche „In den Warenkorb“. Das Dialogfeld wird geschlossen.
 1. Navigieren Sie zu Ihrem Warenkorb. Das Produkt sollte darin enthalten sein.
 
-#### Konfigurationsoptionen  {#configuration-options}
+#### Konfigurationsoptionen {#configuration-options}
 
 Sie können konfigurieren, wie das Dialogfeld aussieht, wenn Sie auf den Hotspot klicken:
 
@@ -443,7 +443,7 @@ Sie können konfigurieren, wie das Dialogfeld aussieht, wenn Sie auf den Hotspot
 
 ## Kataloge {#catalogs}
 
-### Generieren eines Katalogs  {#generating-a-catalog}
+### Generieren eines Katalogs {#generating-a-catalog}
 
 #### Generieren eines Katalogs – Touch-optimierte Benutzeroberfläche {#generating-a-catalog-touch-optimized-ui}
 
@@ -508,7 +508,7 @@ Generieren Sie wie folgt einen Katalog:
 1. Klicken Sie auf **OK**, um Ihre Eigenschaften zu speichern. Banner-Informationen werden auf der Blueprint-Seite unter **Produktauswahlkriterien** angezeigt.
 1. Führen Sie den Rollout für diese neuen Änderungen durch.
 
-### Durchführen des Rollouts für einen Katalog  {#rolling-out-a-catalog}
+### Durchführen des Rollouts für einen Katalog {#rolling-out-a-catalog}
 
 #### Durchführen des Rollouts für einen Katalog – Touch-optimierte Benutzeroberfläche {#rolling-out-a-catalog-touch-optimized-ui}
 
@@ -556,7 +556,7 @@ Führen Sie den Rollout für einen Katalog wie folgt durch:
 
 1. Klicken oder tippen Sie auf **Fertig**, nachdem der Importvorgang abgeschlossen ist.
 
-#### Blueprint-Importtool – klassische Benutzeroberfläche  {#blueprint-importer-classic-ui}
+#### Blueprint-Importtool – klassische Benutzeroberfläche {#blueprint-importer-classic-ui}
 
 1. Navigieren Sie mit der Konsole **Tools** zu **Commerce**.
 
@@ -570,7 +570,7 @@ Führen Sie den Rollout für einen Katalog wie folgt durch:
 
 ## Promotions {#promotions}
 
-### Erstellen einer Promotion  {#creating-a-promotion}
+### Erstellen einer Promotion {#creating-a-promotion}
 
 #### Erstellen einer Promotion – klassische Benutzeroberfläche {#creating-a-promotion-classic-ui}
 
@@ -600,7 +600,7 @@ Führen Sie den Rollout für einen Katalog wie folgt durch:
 
 ## Gutscheine {#vouchers}
 
-### Erstellen eines Gutscheins  {#creating-a-voucher}
+### Erstellen eines Gutscheins {#creating-a-voucher}
 
 #### Erstellen eines Gutscheins – klassische Benutzeroberfläche {#creating-a-voucher-classic-ui}
 
@@ -614,7 +614,7 @@ Führen Sie den Rollout für einen Katalog wie folgt durch:
 
 1. Sie können Ihren Gutschein jetzt aktivieren, damit er von Käufern auf der Veröffentlichungsinstanz im Warenkorb verwendet werden kann.
 
-### Entfernen von Gutscheinen  {#removing-vouchers}
+### Entfernen von Gutscheinen {#removing-vouchers}
 
 #### Entfernen von Gutscheinen – klassische Benutzeroberfläche {#removing-vouchers-classic-ui}
 
@@ -625,13 +625,13 @@ Sie haben folgende Möglichkeiten, wenn Sie einen Gutschein für Kunden entferne
 
 Sie können beide Aktionen über die **Websites-Konsole** durchführen.
 
-### Ändern von Gutscheinen  {#modifying-vouchers}
+### Ändern von Gutscheinen {#modifying-vouchers}
 
 #### Ändern von Gutscheinen – klassische Benutzeroberfläche {#modifying-vouchers-classic-ui}
 
 Zum Ändern der Eigenschaften eines Gutscheins oder einer Promotion können Sie in der **Websites-Konsole** darauf doppelklicken und dann auf **Bearbeiten** klicken. Nach dem Speichern sollten Sie die Aktivierung durchführen, damit die Änderungen auf die Veröffentlichungsinstanz(en) übertragen werden.
 
-### Hinzufügen von Gutscheinen zu einem Warenkorb  {#adding-vouchers-to-a-cart}
+### Hinzufügen von Gutscheinen zu einem Warenkorb {#adding-vouchers-to-a-cart}
 
 Sie können die integrierte Komponente **Gutscheine** (Kategorie „Commerce“) verwenden, um für Benutzer das Hinzufügen von Gutscheinen zu ermöglichen. Sie müssen sie derselben Seite hinzufügen, auf der auch der Warenkorb angezeigt wird (die Nutzung ist aber nicht obligatorisch). Die Komponente „Gutscheine“ umfasst lediglich ein Formular, in das Benutzer einen Gutscheincode eingeben können. Es ist die Warenkorb-Komponente, in der die Liste mit den angewendeten Gutscheinen und den dazugehörigen Rabatten angezeigt wird.
 
@@ -654,7 +654,7 @@ Auf der Demo-Website (Geometrixx Outdoors – Englisch) ist das Gutscheinformula
 >
 >Die Bestellinformationen der Kunden werden jeweils in ihren Home-Verzeichnissen vorgehalten und über den „Auftragsverlauf“ für ihr Konto verfügbar gemacht. Diese Informationen werden zusammen mit den restlichen Daten des Home-Verzeichnisses veröffentlicht.
 
-### Erstellen von Bestellinformationen  {#creating-order-information}
+### Erstellen von Bestellinformationen {#creating-order-information}
 
 #### Erstellen von Bestellinformationen – Touch-optimierte Benutzeroberfläche {#creating-order-information-touch-optimized-ui}
 
@@ -667,7 +667,7 @@ Auf der Demo-Website (Geometrixx Outdoors – Englisch) ist das Gutscheinformula
 
 1. Wählen Sie **Erstellen** aus, um die Informationen zu speichern.
 
-### Bearbeiten von Bestellinformationen  {#editing-order-information}
+### Bearbeiten von Bestellinformationen {#editing-order-information}
 
 #### Bearbeiten von Bestellinformationen – Touch-optimierte Benutzeroberfläche {#editing-order-information-touch-optimized-ui}
 
