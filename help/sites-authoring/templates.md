@@ -11,14 +11,14 @@ topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '4901'
 ht-degree: 97%
 
 ---
 
-# Erstellen von Seitenvorlagen {#creating-page-templates}
+# Erstellen von Seitenvorlagen{#creating-page-templates}
 
 Wenn Sie eine Seite erstellen, müssen Sie eine Vorlage auswählen. Diese wird als Grundlage für die Erstellung der neuen Seite verwendet. Die Vorlage definiert die Struktur der Seite, anfängliche Inhalte und die Komponenten, die verwendet werden können.
 
@@ -93,7 +93,7 @@ Aufgrund der Natur einiger Aufgaben (etwa dem Erstellen eines Ordners) ist eine 
 
 Die im vorliegenden Dokument beschriebenen Aufgaben sind zusammen mit der Rolle der Person aufgeführt, die für die Ausführung der Aufgaben verantwortlich ist.
 
-### Bearbeitbare und statische Vorlagen  {#editable-and-static-templates}
+### Bearbeitbare und statische Vorlagen {#editable-and-static-templates}
 
 AEM bietet jetzt zwei grundlegende Arten von Vorlagen:
 
@@ -114,7 +114,7 @@ AEM bietet jetzt zwei grundlegende Arten von Vorlagen:
 
 Laut Definition ermöglichen die Vorlagenkonsole und der Vorlagen-Editor nur das Erstellen und Bearbeiten von bearbeitbaren Vorlagen. Das vorliegende Dokument beschäftigt sich daher nur mit bearbeitbaren Vorlagen.
 
-### Verwenden einer Vorlage, um eine Seite zu erstellen  {#using-a-template-to-create-a-page}
+### Verwenden einer Vorlage, um eine Seite zu erstellen {#using-a-template-to-create-a-page}
 
 Wenn Sie eine Vorlage zum [Erstellen einer neuen Seite](/help/sites-authoring/managing-pages.md#creating-a-new-page) verwenden, ist kein Unterschied zwischen den statischen und bearbeitbaren Vorlagen ersichtlich. Für die Seitenautoren ist der Prozess transparent.
 
@@ -122,12 +122,12 @@ Wenn Sie eine Vorlage zum [Erstellen einer neuen Seite](/help/sites-authoring/ma
 
 Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 
-* Verwenden Sie die **Vorlagenkonsole**, die im Bereich **Allgemein** der Konsole **Werkzeuge** verfügbar ist.
+* Verwenden Sie die **Vorlagenkonsole**, die im Bereich **Allgemein** der Konsole **Tools** verfügbar ist.
 
    * Oder direkt unter: [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * Erstellen Sie bei Bedarf [einen Ordner für die Vorlagen](#creating-a-template-folder-admin).
-* [Erstellen Sie eine neue Vorlage](#creatinganewtemplateauthor), die anfangs leer ist.  [](#templatedefinitions)
+* [Erstellen Sie eine neue Vorlage](#creatinganewtemplateauthor), die anfangs leer ist.
 
 * [Definieren Sie bei Bedarf weitere Eigenschaften](#definingtemplatepropertiesauthor) für die Vorlage.
 * [Bearbeiten Sie die Vorlage](#editingtemplates), um Folgendes zu definieren:
@@ -183,7 +183,7 @@ Für Ihr Projekt sollte ein Vorlagenordner für Ihre projektspezifischen Vorlage
    >
    >Wenn eine neue Vorlage erstellt wird, wird sie in der Konsole als **Entwurf** markiert, was bedeutet, dass sie noch nicht für Seitenautoren zur Verfügung steht.
 
-### Definieren von Vorlageneigenschaften – Vorlagenautor   {#defining-template-properties-template-author}
+### Definieren von Vorlageneigenschaften – Vorlagenautor  {#defining-template-properties-template-author}
 
 Eine Vorlage kann die folgenden Eigenschaften haben:
 
@@ -234,7 +234,7 @@ So definieren Sie eine Vorlagenminiatur:
 
 1. Wenn Sie mit der Miniatur zufrieden sind, klicken oder tippen Sie auf **Speichern und schließen**.
 
-### Aktivieren und Zulassen einer Vorlage – Vorlagenautor   {#enabling-and-allowing-a-template-template-author}
+### Aktivieren und Zulassen einer Vorlage – Vorlagenautor {#enabling-and-allowing-a-template-template-author}
 
 Um beim Erstellen einer Seite eine Vorlage zu verwenden, gehen Sie wie folgt vor:
 
@@ -288,7 +288,7 @@ Eine Vorlage kann für bestimmte Seitenverzweigungen verfügbar oder nicht verf�
 
 ### Veröffentlichen einer Vorlage – Vorlagenautor {#publishing-a-template-template-author}
 
-Da auf die Vorlage verwiesen wird, wenn eine Seite dargestellt wird, muss die voll konfigurierte Vorlage veröffentlicht werden, damit sie in der Publishing-Umgebung verfügbar ist.
+Da auf die Vorlage verwiesen wird, wenn eine Seite dargestellt wird, muss die voll konfigurierte Vorlage veröffentlicht werden, damit sie in der Veröffentlichungsumgebung verfügbar ist.
 
 1. Wählen Sie in der **Vorlagenkonsole** eine Vorlage aus.
 1. Wählen Sie **Veröffentlichen** in der Symbolleiste, um den Assistenten zu öffnen.
@@ -296,7 +296,7 @@ Da auf die Vorlage verwiesen wird, wenn eine Seite dargestellt wird, muss die vo
 
 1. Wählen Sie **Veröffentlichen** in der Symbolleiste, um den Vorgang abzuschließen.
 
-## Bearbeiten von Vorlagen  – Vorlagenautoren   {#editing-templates-template-authors}
+## Bearbeiten von Vorlagen – Vorlagenautoren {#editing-templates-template-authors}
 
 Beim Erstellen oder Bearbeiten einer Vorlage können Sie diverse Aspekte definieren. Das Bearbeiten von Vorlagen ähnelt dem Erstellen von Seiten.
 
@@ -334,7 +334,7 @@ Die folgenden Aspekte einer Vorlage können bearbeitet werden:
 
    Weitere Informationen finden Sie in der [Dokumentation für das Stilsystem](/help/sites-authoring/style-system.md).
 
-Mit der Auswahl **Modus** in der Symbolleiste können Sie die jeweiligen Aspekte der Vorlage auswählen und bearbeiten:
+Mit der **Modus**-Auswahl in der Symbolleiste können Sie die jeweiligen Aspekte der Vorlage auswählen und bearbeiten:
 
 * [Struktur](#editingatemplatestructure)
 * [Anfänglicher Inhalt](#editingatemplateinitialcontent)
