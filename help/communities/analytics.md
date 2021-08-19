@@ -12,7 +12,7 @@ discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: fcdadcf691ed5a569a5a40ca070f8ec266ec3eb9
 workflow-type: tm+mt
 source-wordcount: '2756'
 ht-degree: 5%
@@ -154,7 +154,7 @@ So aktivieren Sie die Video Heartbeat-Berichterstellung nach der Konfiguration d
 * [Analytics für eine Community-Site](#enable-analytics-for-a-community-site) aktivieren
 * Verknüpfen Sie `Marketing Cloud Org Id` mit der Community-Site.
 
-Der `Marketing Cloud Org Id` kann zum Zeitpunkt der [Erstellung der Community-Site](/help/communities/sites-console.md#enablement) oder neuer durch [Ändern der Eigenschaften der Community-Site](/help/communities/sites-console.md#modifying-site-properties) eingegeben werden. [](#aem-analytics-cloud-service-configuration)
+Der `Marketing Cloud Org Id` kann zum Zeitpunkt der [Erstellung der Community-Site](/help/communities/sites-console.md#enablement) oder neuer durch [Ändern der Eigenschaften der Community-Site](/help/communities/sites-console.md#modifying-site-properties) eingegeben werden.
 
 ![marketing-org-id](assets/marketing-org-id.png)
 
