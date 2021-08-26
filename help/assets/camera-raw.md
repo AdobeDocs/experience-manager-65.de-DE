@@ -5,10 +5,10 @@ contentOwner: AG
 role: Admin
 feature: Developer Tools
 exl-id: 7159a908-4c36-42b4-bbb4-d7fb1be4ee1b
-source-git-commit: 73e53f516d8e10b548f913db079c7e9812deb907
+source-git-commit: 9e1eea90945bb77e83e15d25708e47f2f3009fd8
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 35%
+source-wordcount: '374'
+ht-degree: 29%
 
 ---
 
@@ -22,7 +22,7 @@ Sie können die [!DNL Adobe Camera Raw]-Unterstützung aktivieren, um Rohdateifo
 
 Gehen Sie wie folgt vor, um die [!DNL Camera Raw]-Unterstützung in [!DNL Experience Manager Assets] zu aktivieren:
 
-1. Laden Sie das [Camera Raw Paket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) von [!DNL Software Distribution] herunter.
+1. Laden Sie das [[!DNL Camera Raw] Paket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-cameraraw-pkg-1.4.8.zip) von [!DNL Software Distribution] herunter.
 1. Greife Sie auf `https://[aem_server]:[port]/workflow` zu. Öffnen Sie den Workflow **[!UICONTROL DAM Update Asset]** .
 1. Bearbeiten Sie den Schritt **[!UICONTROL Miniaturansichten verarbeiten]** .
 1. Geben Sie die folgende Konfiguration auf der Registerkarte **[!UICONTROL Miniaturansichten]** an:
