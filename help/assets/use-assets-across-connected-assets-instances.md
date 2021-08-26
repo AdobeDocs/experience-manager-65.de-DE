@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 37073594b45995ade7f0e73c519feb21adf48482
+source-git-commit: 3e4e9ab8b3940f539228bccf759dcade03a8b015
 workflow-type: tm+mt
-source-wordcount: '2732'
-ht-degree: 94%
+source-wordcount: '2967'
+ht-degree: 91%
 
 ---
 
@@ -20,7 +20,7 @@ Die Funktion &quot;Connected Assets&quot;unterstützt den oben genannten Anwendu
 
 ## Überblick über Connected Assets {#overview-of-connected-assets}
 
-Beim Bearbeiten von Seiten als Ziel im [!UICONTROL Seiteneditor] können die Autoren nahtlos Assets aus einer anderen [!DNL Assets]-Bereitstellung, die als Asset-Quelle dient, suchen, durchsuchen und einbetten. Die Administratoren erstellen eine einmalige Integration einer Bereitstellung von [!DNL Experience Manager] mit [!DNL Sites]-Funktion mit einer anderen Bereitstellung von [!DNL Experience Manager] mit [!DNL Assets]-Funktion.
+Beim Bearbeiten von Seiten als Ziel im [!UICONTROL Seiteneditor] können die Autoren nahtlos Assets aus einer anderen [!DNL Assets]-Bereitstellung, die als Asset-Quelle dient, suchen, durchsuchen und einbetten. Die Administratoren erstellen eine einmalige Integration einer Bereitstellung von [!DNL Experience Manager] mit [!DNL Sites]-Funktion mit einer anderen Bereitstellung von [!DNL Experience Manager] mit [!DNL Assets]-Funktion. Site-Autoren können über Connected Assets auch Dynamic Media-Bilder auf den Webseiten ihrer Website verwenden und die Dynamic Media-Funktionen wie smartes Zuschneiden und Bildvorgaben nutzen.
 
 Für [!DNL Sites]-Autoren stehen die Remote-Assets als schreibgeschützte lokale Assets zur Verfügung. Die Funktion unterstützt die nahtlose Suche und die gleichzeitige Verwendung einiger weniger Remote-Assets. Wenn Sie viele Remote-Assets auf einmal für die [!DNL Sites]-Implementierung verfügbar machen möchten, sollten Sie die Assets als Stapel migrieren. Siehe [Experience Manager Assets-Migrationshandbuch](/help/assets/assets-migration-guide.md).
 
@@ -115,6 +115,25 @@ Sie können die Verbindung zwischen konfigurierten [!DNL Sites]-Bereitstellungen
 
 ![Verbindungstest für konfigurierte Connected Assets [!DNL Sites]](assets/connected-assets-multiple-config.png) 
 *Abbildung: Verbindungstest für konfigurierte Connected Assets  [!DNL Sites].*
+
+### Konfigurieren einer Verbindung für Dynamic Media-Assets{#sites-dynamic-media-connected-assets}
+
+Sie können eine Verbindung zwischen der [!DNL Sites]-Bereitstellung und der [!DNL Dynamic Media]-Bereitstellung konfigurieren, die es Web-Seiten-Autoren ermöglicht, [!DNL Dynamic Media]-Bilder auf ihren Web-Seiten zu verwenden. Beim Erstellen von Web-Seiten bleibt das Erlebnis bei der Verwendung von Remote-Assets und Remote-[!DNL Dynamic Media]-Bereitstellungen gleich.
+
+Gehen Sie wie folgt vor, um die Funktion &quot;Connected Assets&quot;für Dynamic Media-Bereitstellungen zu konfigurieren:
+
+1. Aktivieren und konfigurieren Sie [!DNL Dynamic Media] als globale Konfiguration in der Remote-Autorenbereitstellung [!DNL Assets]. Informationen zum Konfigurieren von Dynamic Media finden Sie unter [Konfigurieren von Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).<br/>
+Wählen Sie in der Remote-Bereitstellung von [!DNL Assets] im [!UICONTROL Modus Dynamic Media-Synchronisation] die Option **[!UICONTROL Standardmäßig aktiviert]** aus.
+
+1. Erstellen Sie die Konfiguration &quot;Connected Assets&quot;, wie unter [Konfigurieren der Verbindung zwischen Sites und Asset-Bereitstellungen](#configure-a-connection-between-sites-and-assets-deployments) beschrieben. Wählen Sie außerdem die Option **[!UICONTROL Original-Ausgabeformat für Dynamic Media Connected Assets abrufen]** aus.
+
+1. Konfigurieren Sie [!DNL Dynamic Media] in lokalen [!DNL Sites]- und Remote-[!DNL Assets]-Bereitstellungen. Befolgen Sie die Anweisungen zum [Konfigurieren [!DNL Dynamic Media]](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).
+
+   * Verwenden Sie in allen Konfigurationen denselben Unternehmensnamen.
+   * Wählen Sie im lokalen [!DNL Sites] im [!UICONTROL Modus Dynamic Media-Synchronisation] **[!UICONTROL Standardmäßig deaktiviert]** aus. Die [!DNL Sites]-Implementierung benötigt nur schreibgeschützten Zugriff auf das [!DNL Dynamic Media]-Konto.
+   * Wählen Sie im lokalen [!DNL Sites] in der Option **[!UICONTROL Assets veröffentlichen]** die Option **[!UICONTROL Selektive Veröffentlichung]** aus. Wählen Sie nicht **[!UICONTROL Alle Inhalte synchronisieren]** aus.
+
+1. Aktivieren Sie [[!DNL Dynamic Media] Unterstützung in der Bild-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media?lang=de). Diese Funktion ermöglicht es der standardmäßigen [Bildkomponente](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html), [!DNL Dynamic Media]-Bilder anzuzeigen, wenn [!DNL Dynamic Media]-Bilder von Autoren auf Web-Seiten in einer lokalen [!DNL Sites]-Bereitstellung verwendet werden.
 
 ## Verwenden von Remote-Assets {#use-remote-assets}
 
@@ -226,3 +245,6 @@ Führen Sie die folgenden Schritte aus, um häufig auftretende Fehler zu beheben
 * Wenn keine Remote-Referenzen abgerufen werden und eine Fehlermeldung angezeigt wird, überprüfen Sie, ob die [!DNL Sites]-Bereitstellung verfügbar ist und ob es Probleme mit der Netzwerkverbindung gibt. Versuchen Sie es später erneut. Bei der [!DNL Assets]-Bereitstellung wird zweimal versucht, eine Verbindung zur [!DNL Sites]-Bereitstellung herzustellen. Anschließend wird ein Fehler ausgegeben.
 
    ![Fehler beim Abrufen von Asset-Remote-Referenzen](assets/reference-report-failure.png)
+
+
+
