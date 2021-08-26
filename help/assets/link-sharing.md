@@ -3,12 +3,12 @@ title: Freigeben von Assets über einen Link
 description: Freigeben von Assets, Ordnern und Sammlungen als URL.
 contentOwner: AG
 role: User
-feature: Linkfreigabe, Asset-Verwaltung
+feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 38%
+source-wordcount: '998'
+ht-degree: 37%
 
 ---
 
@@ -24,20 +24,17 @@ ht-degree: 38%
 
 ## Freigeben von Assets {#share-assets}
 
-Um die URL für Assets zu generieren, die Sie für Benutzer freigeben möchten, verwenden Sie das Dialogfeld Linkfreigabe . Benutzer mit Administratorrechten oder mit Leserechten für den Speicherort `/var/dam/share` können dann die Links sehen, die für sie freigegeben sind.
+Um die URL für Assets zu generieren, die Sie für Benutzer freigeben möchten, verwenden Sie das Dialogfeld [!UICONTROL Linkfreigabe] . Benutzer mit Administratorrechten oder mit Leserechten für den Speicherort `/var/dam/share` können dann die Links sehen, die für sie freigegeben sind.
 
 1. Wählen Sie in der [!DNL Assets]-Benutzeroberfläche das Asset aus, das als Link freigegeben werden soll.
-1. Klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Link freigeben]** ![Assets freigeben](assets/do-not-localize/assets_share.png). Der Link, der nach dem Klicken auf **[!UICONTROL Share]** erstellt wird, wird im Feld [!UICONTROL Link freigeben] im Voraus angezeigt. Der Link wird erst erstellt, wenn Sie auf **[!UICONTROL Submit]** klicken.
 
-   ![Dialogfeld zur Linkfreigabe](assets/Link-sharing-dialog-box.png)
+1. Klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Link freigeben]** ![Assets freigeben](assets/do-not-localize/assets_share.png). Der Link, der nach dem Klicken auf **[!UICONTROL Share]** erstellt wird, wird im Feld [!UICONTROL Link freigeben] im Voraus angezeigt. Der Link wird erst erstellt, wenn Sie **[!UICONTROL Submit]** auswählen.
+
+   ![Dialogfeld zur Linkfreigabe](/help/assets/assets/share-assets-as-link.png)
 
    *Abbildung: Das Dialogfeld zum Freigeben von Assets als Link.*
 
 1. Geben Sie im Dialogfeld **[!UICONTROL Linkfreigabe]** in das Feld „E-Mail-Adresse“ die E-Mail-ID des Benutzers ein, für den Sie den Link freigeben möchten. Sie können einen oder mehrere Benutzer hinzufügen.
-
-   ![Freigeben von Links zu Assets direkt über das Dialogfeld „Linkfreigabe“](assets/Asset-Sharing-LinkShareDialog.png)
-
-   *Abbildung: Geben Sie Links zu Assets direkt über das Dialogfeld  [!UICONTROL Linkfreigabe ] frei.*
 
    >[!NOTE]
    >
@@ -51,7 +48,7 @@ Um die URL für Assets zu generieren, die Sie für Benutzer freigeben möchten, 
 
    ![Ablaufdatum des freigegebenen Links festlegen](assets/Set-shared-link-expiration.png)
 
-1. Damit Benutzer das Original-Asset zusammen mit den Ausgabeformaten herunterladen können, wählen Sie **[!UICONTROL Download der Originaldatei zulassen]** aus. Standardmäßig können Benutzer nur die Ausgabeformate des Assets herunterladen, das Sie als Link freigegeben haben.
+1. Damit Benutzer das Original-Asset herunterladen können, wählen Sie **[!UICONTROL Download der Originaldatei zulassen]** aus. Damit Benutzer nur die Ausgabeformate der freigegebenen Assets herunterladen können, wählen Sie **[!UICONTROL Download der Ausgabeformate der Datei zulassen]** aus.
 
 1. Klicken Sie auf **[!UICONTROL Freigeben]**. Eine Meldung bestätigt, dass der Link per E-Mail für die Benutzer freigegeben wurde.
 

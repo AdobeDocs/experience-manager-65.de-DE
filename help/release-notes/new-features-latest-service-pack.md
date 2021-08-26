@@ -4,9 +4,9 @@ description: Neue Funktionen in [!DNL Experience Manager] 6.5 Service Pack 10
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: d83f8d6e4b99ac7f287c0f091b84bbbf9d82fc75
+source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
 workflow-type: tm+mt
-source-wordcount: '3974'
+source-wordcount: '3983'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,6 @@ ht-degree: 4%
 [!DNL Adobe Experience Manager] 6.5 Service Packs bieten in vierteljährlichen Abständen neue Funktionen, kundenspezifische Verbesserungen sowie Verbesserungen hinsichtlich Leistung, Stabilität und Sicherheit. Die vierteljährliche Verfügbarkeit erleichtert den Zugriff auf und die Übernahme neuer Funktionen und Innovationen.
 
 In diesem Artikel werden die Funktionen des neuesten Service Packs, die [Schlüsselfunktionen der vorherigen 6.5 Service Packs](#key-features-previous-service-packs) und die [Schlüsselversionen seit der letzten Version des Service Packs](#key-releases-since-last-sp) beschrieben.
-
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
@@ -41,13 +40,13 @@ In diesem Artikel werden die Funktionen des neuesten Service Packs, die [Schlüs
 
 * [!DNL Experience Manager] erweitert die Funktionalität &quot;Connected Assets&quot;auf die Verwendung von  [!DNL Dynamic Media] Bildern in den entsprechenden Kernkomponenten. Siehe [Verwenden von Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md).
 
-* Beim Freigeben einzelner Assets und Sammlungen als Link (über das Dialogfeld [!UICONTROL Linkfreigabe]) können Benutzer auswählen, ob der Empfänger Original-Assets oder deren Ausgabeformate oder beides herunterladen darf.
+* Beim Freigeben einzelner Assets und Sammlungen als Link (über das Dialogfeld [!UICONTROL Linkfreigabe]) können Benutzer auswählen, ob der Empfänger Original-Assets oder deren Ausgabeformate oder beides herunterladen darf. Siehe [Freigeben von Assets über Link](/help/assets/link-sharing.md).
 
-   ![Option zum Herunterladen nur der Original-Assets, nur der Ausgabeformate oder beides](/help/assets/assets/share-renditions.png)
+   ![Option, um nur Original-Assets, nur die Ausgabeformate oder beides herunterzuladen](/help/release-notes/assets/share-assets-as-link.png)
 
 * Wenn Benutzer Assets herunterladen, die für sie als Link freigegeben wurden, können sie die Original-Assets, die Ausgabeformate oder beide herunterladen.
 
-* Administratoren können die Anzahl der Teil-Assets einschränken, die [!DNL Experience Manager] für ebenenübergreifende Assets wie PDF-, PowerPoint-, InDesign- und Keynote-Dateien generiert.
+* **Beschränken der erzeugten** Unter-Assets: Administratoren können die Anzahl der Teil-Assets einschränken, die für ebenenübergreifende Assets wie PDF-, PowerPoint-, InDesign- und Keynote-Dateien  [!DNL Experience Manager] generiert werden.
 
    ![die Generierung von Unter-Assets begrenzen](/help/assets/assets/sub-asset-limit.png)
 

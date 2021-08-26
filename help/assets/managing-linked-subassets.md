@@ -3,12 +3,12 @@ title: Verwalten von ebenenübergreifenden Assets mit Verweisen und mehreren Sei
 description: Erfahren Sie, wie Sie Verweise auf digitale Assets aus  [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop] erstellen. Verwenden Sie die Funktion "Seiten-Viewer", um einzelne Asset-Seiten mit mehrseitigen Dateien wie PDF-, INDD-, PPT-, PPTX- und AI-Dateien anzuzeigen.
 contentOwner: AG
 role: User, Admin
-feature: Asset-Management
+feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
 workflow-type: tm+mt
-source-wordcount: '1379'
-ht-degree: 18%
+source-wordcount: '1423'
+ht-degree: 17%
 
 ---
 
@@ -103,6 +103,10 @@ Führen Sie einen der folgenden Schritte aus, um die Unter-Assets zu generieren:
    * Wählen Sie ein Asset aus und klicken Sie in der Symbolleiste auf [!UICONTROL Erstellen] > [!UICONTROL Workflow] . Wählen Sie im Popup-Dialogfeld den Workflow [!UICONTROL DAM Update Asset] aus, klicken Sie auf [!UICONTROL Start] und klicken Sie auf [!UICONTROL Weiter].
 
 Führen Sie insbesondere für Microsoft Word-Dokumente den Workflow **[!UICONTROL DAM Parse Word Documents]** aus. Es wird eine `cq:Page`-Komponente aus dem Inhalt des Microsoft Word-Dokuments generiert. Die `cq:Page`-Komponente verweist auf die aus dem Dokument extrahierten Bilder. Diese Bilder werden auch dann extrahiert, wenn die Erstellung von Unter-Assets deaktiviert ist.
+
+>[!NOTE]
+>
+>Unter [!UICONTROL Prozess für untergeordnete Assets erstellen - Schritteigenschaften] in [!UICONTROL Prozess-Argumente] können Sie die Anzahl der Unter-Assets angeben, die [!DNL Experience Manager] generiert. Der Standardwert ist 5. Um alle Unter-Assets zu generieren, lassen Sie das Feld leer. Wenn das Feld negativ ist, werden keine Unter-Assets generiert.
 
 ## Anzeigen von Unter-Assets {#viewing-subassets}
 
