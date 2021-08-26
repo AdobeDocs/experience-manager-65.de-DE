@@ -4,7 +4,7 @@ description: Neue Funktionen in [!DNL Experience Manager] 6.5 Service Pack 10
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 738972f73ff3af070eb6b48bff67496ab451a6a7
+source-git-commit: d83f8d6e4b99ac7f287c0f091b84bbbf9d82fc75
 workflow-type: tm+mt
 source-wordcount: '3974'
 ht-degree: 4%
@@ -449,9 +449,9 @@ Sie können die Batch-API verwenden, um mehrere interaktive Kommunikationen aus 
 <!-- TBD: Check if the wider team released anything in FY21.
 -->
 
-## Wichtige Versionen seit [!DNL Adobe Experience Manager] 6.5 SP8 {#key-releases-since-last-sp}
+## Wichtige Versionen seit [!DNL Adobe Experience Manager] 6.5 SP9 {#key-releases-since-last-sp}
 
-Zwischen dem 25. Februar 2021 und dem 27. Mai 2021 veröffentlichte Adobe zusätzlich zu den Service Packs Folgendes:
+Zwischen dem 27. Mai 2021 und dem 26. August 2021 veröffentlichte Adobe zusätzlich zu den Service Packs Folgendes:
 
 * [!DNL Adobe Experience Manager] als Cloud Service  [2021.6.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-6-0.html),  [2021.7.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-7-0.html) und  [2021.8.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=en).
 
