@@ -2,12 +2,12 @@
 title: Assets-Anleitung
 description: In diesem Handbuch werden alle Experience Manager Assets-Aufgaben behandelt, z. B. das Erstellen, Verwalten, Bereitstellen und Optimieren digitaler Assets.
 user-guide-title: Assets-Anleitung
-feature: Asset-Management
+feature: Asset Management
 role: User, Architect, Admin
 exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
-source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
+source-git-commit: 883c279330b199d4e3a301e240cae02a6e04fd20
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '333'
 ht-degree: 27%
 
 ---
@@ -17,9 +17,6 @@ ht-degree: 27%
 In diesem Handbuch werden alle [!DNL Experience Manager Assets]-Aufgaben behandelt, z. B. das Erstellen, Verwalten, Bereitstellen und Optimieren digitaler Assets.
 
 ## Wichtige [!DNL Experience Manager]-Artikel
-
-<!-- TBD: Some of these links will soon be updated. Change these when new articles go live on docs.adobe.com.
--->
 
 * [Experience Manager 6.5 - Versionshinweise](/help/release-notes/home.md)
 * [Aktuelle Aktualisierungen der Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=de)
