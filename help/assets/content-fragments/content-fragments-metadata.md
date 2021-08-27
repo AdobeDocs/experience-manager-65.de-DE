@@ -1,44 +1,39 @@
 ---
 title: Metadaten – Fragmenteigenschaften
-seo-title: Metadaten – Fragmenteigenschaften
-description: Sie können die Metadaten (Eigenschaften) für das Inhaltsfragment anzeigen und bearbeiten.
-seo-description: Sie können die Metadaten (Eigenschaften) für das Inhaltsfragment anzeigen und bearbeiten.
-uuid: 5cd4fe03-4a24-44f2-aad7-079d7c421353
-contentOwner: Alison Heimoz
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: content-fragments
-content-type: reference
-discoiquuid: 148803f3-1e7b-4d35-99c5-e0d82f3adf24
-docset: aem65
-feature: Inhaltsfragmente
-role: User, Admin
-exl-id: 319cd6b0-c866-4838-96a5-eceb7edae9af
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+description: Erfahren Sie, wie Sie die Metadateneigenschaften für Inhaltsfragmente in AEM anzeigen und bearbeiten können, um Ihren Headless-Content anzupassen.
+feature: Content Fragments
+role: User
+source-git-commit: 251bf0ac672d516dd6b2018fc9cc804822f48e4c
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 100%
+source-wordcount: '206'
+ht-degree: 67%
 
 ---
 
-# Metadaten – Fragmenteigenschaften{#metadata-fragment-properties}
+# Metadaten – Fragmenteigenschaften {#metadata-fragment-properties}
+
+Erfahren Sie, wie Sie die Metadateneigenschaften für Inhaltsfragmente in AEM anzeigen und bearbeiten können, um Ihren Headless-Content anzupassen.
 
 ## Bearbeiten von Eigenschaften/Metadaten {#editing-properties-meta-data}
 
 Sie können die Metadaten (Eigenschaften) für das Inhaltsfragment anzeigen und bearbeiten:
 
 1. Navigieren Sie in der Konsole **Assets** zum Speicherort des Inhaltsfragments.
-1. Führen Sie einen der folgenden Schritte durch:
+2. Führen Sie einen der folgenden Schritte durch:
 
    * Wählen Sie [**Eigenschaften anzeigen** aus, um das Dialogfeld zu öffnen](/help/assets/manage-assets.md#editing-properties). Sobald es zur Anzeige geöffnet wurde, können Sie auch Bearbeitungen vornehmen.
-   * Öffnen Sie das [Inhaltsfragment zum Bearbeiten](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) und wählen Sie anschließend im seitlichen Bedienfeld **Metadaten** aus.
+   * Öffnen Sie das Inhaltsfragment zum Bearbeiten und wählen Sie anschließend im seitlichen Bedienfeld **Metadaten** aus.
 
-   ![cfm-6420-06](assets/cfm-6420-06.png)
+   ![Metadaten](assets/cfm-metadata-01.png)
 
-1. Auf der Registerkarte **Allgemein** können Sie die folgenden Optionen anzeigen oder bearbeiten:
+3. Auf der Registerkarte **Allgemein** können Sie die folgenden Optionen anzeigen oder bearbeiten:
 
    * Miniaturansicht, für die Sie ein **Bild hochladen** können
+   * **Inhaltsfragmentmodell**, womit das zum Erstellen des aktuellen Fragments verwendete Modell angegeben wird
    * **Titel**
    * **Beschreibung**
    * **Tags**
+      * [](/help/sites-authoring/tags.md) Tags sind besonders leistungsstark bei der Organisation Ihrer Fragmente, da sie für die Inhaltsklassifizierung und Taxonomie verwendet werden können. Tags können zum Suchen von Inhalten (nach Tags) und zum Anwenden von Massenvorgängen verwendet werden.
+Beispielsweise können Sie relevante Fragmente als &quot;Weihnachtsstart&quot;taggen, um nur diese als Teilmenge durchsuchen zu können oder sie für einen anderen zukünftigen Launch in einen neuen Ordner zu kopieren.
    * Erstellt (nur Anzeige)
-   ![cfm-6420-07](assets/cfm-6420-07.png)
+   ![Metadaten](assets/cfm-metadata-02.png)

@@ -1,8 +1,8 @@
 ---
 title: Inhaltsfragmentvorlagen
-seo-title: Inhaltsfragmentvorlagen
+seo-title: Content Fragment Templates
 description: Vorlagen werden ausgewählt, wenn ein Inhaltsfragment erstellt und das neue Fragment mit der grundlegenden Struktur, dem Element und der Variante versehen wird
-seo-description: Vorlagen werden ausgewählt, wenn ein Inhaltsfragment erstellt und das neue Fragment mit der grundlegenden Struktur, dem Element und der Variante versehen wird
+seo-description: Templates are selected when creating a content fragmen and provide the new fragment with the basic structure, element, and variation
 uuid: d147bac8-b710-40ed-9664-decb5ffcf8e7
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: a975ea2e-5e24-4a96-bd62-63bb98836ff2
 docset: aem65
 exl-id: 1b75721c-b223-41f0-88d9-bd855b529f31
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2ec9625d480eb8cae23f44aa247fce2a519dec31
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 41%
+source-wordcount: '656'
+ht-degree: 36%
 
 ---
 
@@ -25,6 +25,10 @@ ht-degree: 41%
 >Es werden derzeit [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md) zum Erstellen aller Fragmente empfohlen.
 >
 >Inhaltsfragmentmodelle werden für alle Beispiele in We.Retail verwendet.
+
+>[!NOTE]
+>
+>Vor AEM 6.3 wurden Inhaltsfragmente mit Vorlagen anstelle von Modellen erstellt. Vorlagen sind nicht mehr zum Erstellen neuer Fragmente verfügbar, aber alle mit einer solchen Vorlage erstellten Fragmente werden weiterhin unterstützt.
 
 Vorlagen werden beim Erstellen eines Inhaltsfragments ausgewählt. Sie verleihen dem neuen Fragment Grundstruktur, Element(e) und Variante. Die Vorlagen, die für Inhaltsfragmente verwendet werden, unterliegen dem Granite Configuration Manager.
 
@@ -51,12 +55,10 @@ Die Rangfolge lautet (in absteigender Reihenfolge) `/conf`, `/apps`, `/libs`.
 >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
 >
 >1. Erstellen Sie das erforderliche Element (d. h. wie es in `/libs` vorhanden ist) unter `/apps` neu.
-   >
-   >
-1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
+>
+>1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 
 >
-
 
 
 Die grundlegende Struktur einer Vorlage befindet sich unter:
@@ -134,7 +136,7 @@ Weitere Details zu den Knoten und ihren Eigenschaften sind:
     </tr>
     <tr>
      <td><code>precreateElements</code></td>
-     <td><p><code>Boolean</code></p> <p>erforderlich</p> </td>
+     <td><p><code>Boolean</code></p> <p>required</p> </td>
      <td><p><code>true</code>, wenn die Teil-Assets, die die Elemente des Inhaltsfragments darstellen (mit Ausnahme des Übergeordneten Elements), bei der Erstellung des Inhaltsfragments erstellt werden sollen; <em>false</em>, wenn sie "on the fly"erstellt werden sollen.</p> <p><strong>Hinweis</strong>: Dieser Parameter muss derzeit auf  <code>true</code>gesetzt werden.</p> </td>
     </tr>
     <tr>

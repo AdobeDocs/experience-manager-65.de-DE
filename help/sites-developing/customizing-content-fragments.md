@@ -1,8 +1,8 @@
 ---
 title: Anpassen und Erweitern von Inhaltsfragmenten
-seo-title: Anpassen und Erweitern von Inhaltsfragmenten
+seo-title: Customizing and Extending Content Fragments
 description: Ein Inhaltsfragment erweitert ein Standard-Asset.
-seo-description: Ein Inhaltsfragment erweitert ein Standard-Asset.
+seo-description: A content fragment extends a standard asset.
 uuid: f72c3a23-9b0d-4fab-a960-bb1350f01175
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: d0770bee-4be5-4a6a-8415-70fdfd75015c
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2ec9625d480eb8cae23f44aa247fce2a519dec31
 workflow-type: tm+mt
-source-wordcount: '2749'
-ht-degree: 84%
+source-wordcount: '2772'
+ht-degree: 83%
 
 ---
 
-# Anpassen und Erweitern von Inhaltsfragmenten {#customizing-and-extending-content-fragments}
+# Anpassen und Erweitern von Inhaltsfragmenten{#customizing-and-extending-content-fragments}
 
 Ein Inhaltsfragment erweitert ein Standard-Asset. Weitere Informationen zu Inhaltsfragmenten finden Sie unter:
 
@@ -42,6 +42,10 @@ Je nach Fragmenttyp werden außerdem Modelle oder Vorlagen verwendet:
 >
 >Inhaltsfragmentmodelle werden für alle Beispiele in We.Retail verwendet.
 
+>[!NOTE]
+>
+>Vor AEM 6.3 wurden Inhaltsfragmente mit Vorlagen anstelle von Modellen erstellt. Vorlagen sind nicht mehr zum Erstellen neuer Fragmente verfügbar, aber alle mit einer solchen Vorlage erstellten Fragmente werden weiterhin unterstützt.
+
 * Inhaltsfragmentmodelle:
 
    * werden zum Definieren von Inhaltsfragmenten verwendet, die strukturierte Inhalte enthalten.
@@ -63,7 +67,7 @@ Je nach Fragmenttyp werden außerdem Modelle oder Vorlagen verwendet:
    * [Inhaltsfragmentvorlagen ](/help/sites-developing/content-fragment-templates.md) funktionieren anders als andere Vorlagenmechanismen innerhalb des AEM Ökosystems (z. B. Seitenvorlagen usw.). Daher sollten sie separat berücksichtigt werden.
    * Wenn der MIME-Typ eines Inhalts auf einer Vorlage basiert, wird er für den jeweiligen Inhalt verwaltet. Folglich kann jedes Element und jede Variante einen anderen MIME-Typ aufweisen.
 
-### Integration mit Assets  {#integration-with-assets}
+### Integration mit Assets {#integration-with-assets}
 
 Die Inhaltsfragmentverwaltung (Content Fragment Management, CFM) ist Teil von AEM Assets:
 
@@ -106,7 +110,7 @@ Einfache Inhaltsfragmente (basierend auf Vorlagen) werden einem Composite aus Ha
    * Der Hauptinhalt dieser zusätzlichen Elemente wird dem ursprünglichen Ausgabeformat des jeweiligen Unter-Assets zugeordnet.
    * Andere Varianten (falls zutreffend) zusätzlicher Elemente werden anderen Ausgabeformaten der jeweiligen Unter-Assets zugeordnet.
 
-#### Asset-Speicherort      {#asset-location}
+#### Asset-Speicherort     {#asset-location}
 
 Wie bei Standard-Assets wird das Inhaltsfragment gespeichert in:
 
@@ -220,9 +224,8 @@ Inhaltsfragmente können mit folgenden Frameworks integriert werden:
    >Der AEM-Übersetzungs-Workflow arbeitet mit `/content`:
    >
    >    * Da sich die Inhaltsfragmentmodelle in `/conf` befinden, sind sie nicht in diesen Übersetzungen beinhaltet. Sie können [die Strings der Benutzeroberfläche internationalisieren](/help/sites-developing/i18n-dev.md).
-      >
-      >    
-   * Vorlagen werden kopiert, um Fragmente zu erstellen, sodass dies impliziert ist.
+   >
+   >    * Vorlagen werden kopiert, um Fragmente zu erstellen, sodass dies impliziert ist.
 
 
 * **Metadatenschemata**
@@ -236,7 +239,7 @@ Inhaltsfragmente können mit folgenden Frameworks integriert werden:
 
    * Das entsprechende Schemaformular ist mit dem Fragmenteditor integriert.
 
-## Server-seitige API für die Inhaltsfragmentverwaltung   {#the-content-fragment-management-api-server-side}
+## Server-seitige API für die Inhaltsfragmentverwaltung {#the-content-fragment-management-api-server-side}
 
 Sie können die Server-seitige API für den Zugriff auf Inhaltsfragmente verwenden, siehe:
 
@@ -246,7 +249,7 @@ Sie können die Server-seitige API für den Zugriff auf Inhaltsfragmente verwend
 >
 >Es wird dringend empfohlen, die Server-seitige API zu verwenden, anstatt direkt auf die Inhaltsstruktur zuzugreifen.
 
-### Hauptschnittstellen   {#key-interfaces}
+### Hauptschnittstellen {#key-interfaces}
 
 Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
@@ -355,7 +358,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
 
 
-### Anpassen mit adaptTo()   {#adapting-using-adaptto}
+### Anpassen mit adaptTo() {#adapting-using-adaptto}
 
 Folgendes kann angepasst werden:
 
@@ -393,7 +396,7 @@ Beachten Sie Folgendes:
 
    * Beim Entfernen vorhandener Varianten wird die Datenstruktur nicht aktualisiert.
 
-## Client-seitige API für die Inhaltsfragmentverwaltung    {#the-content-fragment-management-api-client-side}
+## Client-seitige API für die Inhaltsfragmentverwaltung   {#the-content-fragment-management-api-client-side}
 
 >[!CAUTION]
 >
@@ -449,7 +452,7 @@ Folgende Prozesse sind involviert:
    * Alle Änderungen (die automatische Speicherung eingeschlossen) werden am aktiven Inhaltsfragment vorgenommen, nicht in einem separaten, geschützten Bereich.
    * Daher werden diese Änderungen sofort auf den AEM-Seiten übernommen, die auf das entsprechende Inhaltsfragment verweisen.
 
-#### Aktionen  {#actions}
+#### Aktionen {#actions}
 
 Folgende Aktionen sind möglich:
 
@@ -494,7 +497,7 @@ if (fragmentResource != null) {
 }
 ```
 
-### Beispiel: Erstellen eines neuen Inhaltsfragments   {#example-creating-a-new-content-fragment}
+### Beispiel: Erstellen eines neuen Inhaltsfragments {#example-creating-a-new-content-fragment}
 
 Um ein neues Inhaltsfragment zu programmieren, verwenden Sie:
 
@@ -508,7 +511,7 @@ FragmentTemplate tpl = templateOrModelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
-### Beispiel: Angeben des Intervalls für das automatische Speichern   {#example-specifying-the-auto-save-interval}
+### Beispiel: Angeben des Intervalls für das automatische Speichern {#example-specifying-the-auto-save-interval}
 
 Das Intervall für das automatische Speichern (gemessen in Sekunden) kann mit dem Konfigurations-Manager (ConfMgr) definiert werden:
 

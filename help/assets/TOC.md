@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, verarbeiten und verteilen Sie digitale Assets.
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+source-git-commit: 85736791b7a8f518b57180b0139d6a76ebf1c6dc
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 34%
+source-wordcount: '629'
+ht-degree: 38%
 
 ---
 
@@ -91,6 +91,9 @@ ht-degree: 34%
    + [Erweitern des Asset-Editors](asseteditorx.md)
    + [[!DNL Assets]-HTTP-API](mac-api-assets.md)
    + [Unterstützung von Inhaltsfragmenten in der  [!DNL Assets] HTTP-API](assets-api-content-fragments.md)
+   + [GraphQL-API für Inhaltsfragmente](content-fragments/graphql-api-content-fragments.md)
+   + [Authentifizierung für GraphQL-Remote-Abfragen in Inhaltsfragmenten](content-fragments/graphql-authentication-content-fragments.md)
+   + [GraphQL-API mit Inhaltsfragmenten – Beispielinhalt und Abfragen](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [[!DNL Assets] Proxy-Entwicklung](proxy.md)
 + Verwalten von Assets {#administer}
    + [Unterstützte Dateiformate](assets-formats.md)
@@ -130,15 +133,19 @@ ht-degree: 34%
    + [Veröffentlichen von Assets in  [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [Veröffentlichen von Ordnern in  [!DNL Brand Portal]](brand-portal-publish-folder.md)
    + [Veröffentlichen von Sammlungen in  [!DNL Brand Portal]](brand-portal-publish-collection.md)
-+ Inhaltsfragmente {#fragments}
++ Inhaltsfragmente {#content-fragments}
    + [Arbeiten mit Inhaltsfragmenten](content-fragments/content-fragments.md)
-   + [Verwalten von Inhaltsfragmenten](content-fragments/content-fragments-managing.md)
+   + [Headless-Bereitstellung mit Inhaltsfragmenten und GraphQL](content-fragments/content-fragments-graphql.md)
+   + [Aktivieren der Funktionen für Inhaltsfragmente für Ihre Instanz](content-fragments/content-fragments-configuration-browser.md)
    + [Inhaltsfragmentmodelle](content-fragments/content-fragments-models.md)
+   + [Verwalten von Inhaltsfragmenten](content-fragments/content-fragments-managing.md)
    + [Varianten – Erstellen von Fragmentinhalten](content-fragments/content-fragments-variations.md)
    + [Zugehörige Inhalte von Inhaltsfragmenten](content-fragments/content-fragments-assoc-content.md)
    + [Metadaten – Fragmenteigenschaften](content-fragments/content-fragments-metadata.md)
    + [Inhaltsfragmente – Überlegungen zum Löschen](content-fragments/content-fragments-delete.md)
-   + [Inhaltsfragmente – Markdown](content-fragments/content-fragments-markdown.md)
+   + [Markdown](content-fragments/content-fragments-markdown.md)
+   + [Strukturbaum](/help/assets/content-fragments/content-fragments-structure-tree.md)
+   + [Anzeigen in der Vorschau – JSON-Repräsentation](/help/assets/content-fragments/content-fragments-json-preview.md)
    + [Erstellen von Übersetzungsprojekten für Inhaltsfragmente](creating-translation-projects-for-content-fragments.md)
 + Verwalten von Assets {#managing}
    + [Verwalten digitaler Assets](manage-assets.md)
