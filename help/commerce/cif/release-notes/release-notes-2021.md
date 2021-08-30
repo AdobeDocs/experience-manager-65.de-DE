@@ -2,10 +2,10 @@
 title: AEM Content and Commerce - Versionshinweise 2021
 description: AEM Content and Commerce - Versionshinweise 2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: d1e2a2b11bd4eaece80a2538ddc34ada59e63578
+source-git-commit: b6703f519295eef728d5504360d99de69438064c
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 21%
+source-wordcount: '989'
+ht-degree: 22%
 
 ---
 
@@ -29,12 +29,38 @@ Der alte AEM CIF Connector befindet sich im Wartungsmodus und sollte nicht mehr 
 | CIF-Kernkomponenten | [Systemanforderungen](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM-Projektarchetyp | [Systemanforderungen](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
+## Releasedatum: August 2021
+
+| Komponente | Version | Details |
+|:-------|:-----:|---------------------:|
+| CIF-Add-on | 2021.08.20 | [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.08.20.zip) |
+| CIF-Kernkomponenten | 2.1.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.1.0) |
+| CIF Venia-Referenz-Site | 2021.08.27 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.08.27) |
+
+### Neue Funktionen {#what-is-new-august}
+
+* Neue Kategorieauswahl-Benutzeroberfläche für verbesserte Benutzererfahrung, höhere Effizienz und bessere Unterstützung komplexer Produktkataloge
+
+   ![Neue Kategorieauswahl](/help/assets/CIF/category-picker.png)
+
+* Bessere A11Y-Unterstützung für CIF-Kernkomponenten
+
+### Fehlerbehebungen {#bug-fixes-august}
+
+* Das Akkordeon des Kategoriefilters kann nicht geschlossen werden, nachdem es geöffnet ist
+
+* Eigenschaft &quot;Aktionsaufruf-Text&quot;im Produkt-Teaser unterbrochen
+
+* CIF-JS-Fehler während AEM CS-Bereitstellungsschritts
+
+* Fehlerbehebung für den Produktzugriff für zugeordnete Produktlistenelemente
+
 ## Releasedatum: Juli 2021
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
 | CIF-Add-on | 2021.07.21 | [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.07.21.zip) |
-| CIF-Kernkomponenten | 1,13,0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.13.0) |
+| CIF-Kernkomponenten | 2,0,0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.0.0) |
 | CIF Venia-Referenz-Site | 2021.07.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.07.22) |
 
 ### Neue Funktionen {#what-is-new-july}
