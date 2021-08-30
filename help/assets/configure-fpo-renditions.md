@@ -3,11 +3,10 @@ title: Nur für Platzierung generieren für Adobe InDesign
 description: Generieren Sie mithilfe des Experience Manager Assets-Workflows und von ImageMagick FPO-Ausgabedarstellungen neuer und vorhandener Assets.
 contentOwner: Vishabh Gupta
 role: Admin
-feature: Ausgabedarstellungen
-exl-id: null
-source-git-commit: 1e8b5ab66668215e0eeed676b42f533d4e210e1c
+feature: Renditions
+source-git-commit: 08de462ead66cfc8f0cadbd1070bfa12f7c0d3d6
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1050'
 ht-degree: 4%
 
 ---
