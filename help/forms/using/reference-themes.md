@@ -1,24 +1,24 @@
 ---
 title: Referenzthemen
-seo-title: Referenzthemen
+seo-title: Reference Themes
 description: AEM Forms bietet Designs für adaptive Formulare, die Sie aus Softwareverteilung beziehen und zum Gestalten eines Formulars verwenden können.
-seo-description: AEM Forms bietet Designs für adaptive Formulare, die Sie aus Softwareverteilung beziehen und zum Gestalten eines Formulars verwenden können.
+seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 uuid: 3c6bd309-aa5a-4953-91ed-25ed5ba5671a
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: a69d3787-8149-4bca-835d-aeecfb11702b
 docset: aem65
 exl-id: f6c24894-c322-4c44-b001-8978954d6e53
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '533'
 ht-degree: 79%
 
 ---
 
 # Referenzthemen{#reference-themes}
 
-[Designs](../../forms/using/themes.md) ermöglichen Ihnen, Ihre Formulare ohne fundierte Kenntnisse im Umgang mit CSS zu formatieren. Zusätzlich zum Standarddesign können Sie die folgenden Designs abrufen, indem Sie das Paket [AEM-FORMS-REFERENCE-THEMES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) installieren:
+[Designs](../../forms/using/themes.md) ermöglichen Ihnen, Ihre Formulare ohne fundierte Kenntnisse im Umgang mit CSS zu formatieren. Zusätzlich zum Standarddesign können Sie die folgenden Designs abrufen, indem Sie das [AEM Forms Add-On-Paket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) installieren:
 
 * Beryl
 * Exec
