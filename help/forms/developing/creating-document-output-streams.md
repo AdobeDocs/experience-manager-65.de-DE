@@ -1,8 +1,8 @@
 ---
 title: Erstellen von Document Output Streams
-seo-title: Erstellen von Document Output Streams
+seo-title: Creating Document Output Streams
 description: Verwenden Sie den Output-Dienst zum Konvertieren von Dokumenten in die Beschriftungsformate PDF (einschließlich PDF/A-Dokumente), PostScript, Printer Control Language (PCL) und Zebra - ZPL, Intermec - IPL, Datamax - DPL und TecToshiba - TPCL .
-seo-description: Verwenden Sie den Output-Dienst zum Konvertieren von Dokumenten in die Beschriftungsformate PDF (einschließlich PDF/A-Dokumente), PostScript, Printer Control Language (PCL) und Zebra - ZPL, Intermec - IPL, Datamax - DPL und TecToshiba - TPCL .
+seo-description: Use the Output service to convert documents as PDF (including PDF/A documents), PostScript, Printer Control Language (PCL), and Zebra - ZPL, Intermec - IPL, Datamax - DPL, and TecToshiba - TPCL label formats.
 uuid: 80c28efa-35ce-4073-9ca6-2d93bcd67fdd
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ topic-tags: operations
 discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 74882ccf78a62d543f1598f12ee009f9922c18a4
 workflow-type: tm+mt
-source-wordcount: '19044'
-ht-degree: 4%
+source-wordcount: '19016'
+ht-degree: 5%
 
 ---
 
-# Erstellen von Document Output Streams {#creating-document-output-streams}
+# Erstellen von Document Output Streams  {#creating-document-output-streams}
 
 **Beispiele und Beispiele in diesem Dokument gelten nur für die AEM Forms on JEE-Umgebung.**
 
@@ -55,7 +55,7 @@ Wenn Sie den Formularentwurf von einem festen Speicherort wie dem Dateisystem er
 
 Um einen URI-Wert zu übergeben, der den Speicherort des Formularentwurfs beim Erstellen eines PDF-Dokuments angibt, verwenden Sie die Methode `generatePDFOutput` . Um beim Erstellen eines PDF-Dokuments eine `com.adobe.idp.Document`-Instanz an den Output-Dienst zu übergeben, verwenden Sie die `generatePDFOutput2`-Methode.
 
-Wenn Sie einen Ausgabestream an einen Netzwerkdrucker senden, können Sie auch eine der beiden Methoden verwenden. Um einen Ausgabestream an einen Drucker zu senden, indem eine `com.adobe.idp.Document`-Instanz übergeben wird, die einen Formularentwurf enthält, verwenden Sie die `sendToPrinter2`Methode. Um einen Ausgabestream an einen Drucker zu senden, indem ein URI-Wert übergeben wird, verwenden Sie die Methode `sendToPrinter`. Der Abschnitt *Senden von Druckströmen an Drucker* verwendet die `sendToPrinter`-Methode.
+Wenn Sie einen Ausgabestream an einen Netzwerkdrucker senden, können Sie auch eine der beiden Methoden verwenden. Um einen Ausgabestream an einen Drucker zu senden, indem eine `com.adobe.idp.Document`-Instanz übergeben wird, die einen Formularentwurf enthält, verwenden Sie die `sendToPrinter2`Methode. Um einen Ausgabestream an einen Drucker zu senden, indem ein URI-Wert übergeben wird, verwenden Sie die `sendToPrinter`Methode. Der Abschnitt *Senden von Druckströmen an Drucker* verwendet die `sendToPrinter`-Methode.
 
 Sie können diese Aufgaben mithilfe des Output-Dienstes ausführen:
 
@@ -119,7 +119,7 @@ Bevor Sie einen Output-Dienstvorgang programmgesteuert ausführen können, müss
 
 Um Daten mit dem Formularentwurf zusammenzuführen, müssen Sie eine XML-Datenquelle referenzieren, die Daten enthält. Für jedes Formularfeld, das mit Daten gefüllt werden soll, muss ein XML-Element vorhanden sein. Der Name des XML-Elements muss mit dem Feldnamen übereinstimmen. Ein XML-Element wird ignoriert, wenn es keinem Formularfeld entspricht oder wenn der XML-Elementname nicht mit dem Feldnamen übereinstimmt. Wenn alle XML-Elemente angegeben sind, muss die Reihenfolge, in der die XML-Elemente angezeigt werden, nicht eingehalten werden.
 
-Betrachten Sie das folgende Beispielformular für einen Kreditantrag.
+Beachten Sie das folgende Beispielformular für einen Kreditantrag.
 
 ![cp_cp_loanformdata](assets/cp_cp_loanformdata.png)
 
@@ -291,7 +291,7 @@ Erstellen Sie ein PDF-Dokument mithilfe der Ausgabe-API (Java):
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Erstellen Sie ein PDF-Dokument mithilfe der Webdienst-API {#create-a-pdf-document-using-the-web-service-api}
+### Erstellen eines PDF-Dokuments mit der Webdienst-API {#create-a-pdf-document-using-the-web-service-api}
 
 Erstellen Sie ein PDF-Dokument mithilfe der Output API (Webdienst):
 
@@ -401,11 +401,11 @@ Wenn ein PDF/A-Dokument in Acrobat geöffnet wird, wird eine Meldung angezeigt, 
 
 >[!NOTE]
 >
->Die AIIM-Website verfügt über einen Abschnitt mit häufig gestellten Fragen zu PDF/A, auf den Sie unter [https://www.aiim.org/documents/standards/19005-1_FAQ.pdf](https://www.aiim.org/documents/standards/19005-1_FAQ.pdf) zugreifen können.
+>Die AIIM-Website verfügt über einen Abschnitt mit häufig gestellten Fragen zu PDF/A, auf den Sie unter [https://www.loc.gov/preservation/digital/formats/fdd/fdd000125.shtml](https://www.loc.gov/preservation/digital/formats/fdd/fdd000125.shtml) zugreifen können.
 
 >[!NOTE]
 >
->Weitere Informationen zum Output-Dienst finden Sie unter [Dienstreferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Output-Dienst finden Sie unter [Dienstreferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_65).
 
 ### Zusammenfassung der Schritte {#summary_of_steps-1}
 
@@ -549,7 +549,7 @@ Erstellen Sie ein PDF/A-Dokument mithilfe der Ausgabe-API (Java):
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-### Erstellen Sie ein PDF/A-Dokument mithilfe der Webdienst-API {#create-a-pdf-a-document-using-the-web-service-api}
+### Erstellen eines PDF/A-Dokuments mithilfe der Webdienst-API {#create-a-pdf-a-document-using-the-web-service-api}
 
 Erstellen Sie ein PDF/A-Dokument mithilfe der Output API (Webdienst):
 
@@ -1001,7 +1001,7 @@ Nachdem der Output-Dienst ein PDF-Dokument generiert hat, können Sie es als PDF
 
 [Erstellen von PDF-Dokumenten](creating-document-output-streams.md#creating-pdf-documents)
 
-### Erstellen eines auf Fragmenten basierenden PDF-Dokuments mithilfe der Java-API {#create-a-pdf-document-based-on-fragments-using-the-java-api}
+### Erstellen eines PDF-Dokuments basierend auf Fragmenten mithilfe der Java-API {#create-a-pdf-document-based-on-fragments-using-the-java-api}
 
 Erstellen Sie ein PDF-Dokument basierend auf Fragmenten mithilfe der Output Service-API und der Assembler-Dienst-API (Java):
 
@@ -1224,7 +1224,7 @@ Nachdem der Output-Dienst einen Vorgang ausgeführt hat, werden verschiedene Dat
 
 [Schnellstarts zur API für Output Service](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap)
 
-### Drucken in Dateien mit der Java-API {#print-to-files-using-the-java-api}
+### Drucken in Dateien mithilfe der Java-API {#print-to-files-using-the-java-api}
 
 Drucken Sie mit der Output API (Java) in eine Datei:
 
@@ -1349,7 +1349,7 @@ Drucken Sie mit der Output API (Webdienst) in eine Datei:
 
 [Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Senden von Druckströmen an Drucker {#sending-print-streams-to-printers}
+## Senden von Druck-Streams an Drucker {#sending-print-streams-to-printers}
 
 Sie können den Output-Dienst verwenden, um Druckstreams wie PostScript, Printer Control Language (PCL) oder die folgenden Beschriftungsformate an Netzwerkdrucker zu senden:
 
@@ -1568,7 +1568,7 @@ Senden Sie mithilfe der Output API (Java) einen Druckstream an einen Netzwerkdru
    >
    >Die `sendToPrinter`-Methode wurde der AEM Forms-API in Version 8.2.1 hinzugefügt.
 
-### Druckdatenstrom über die Webdienst-API {#send-a-print-stream-to-a-printer-using-the-web-service-api} an einen Drucker senden
+### Druckdatenstream mithilfe der Webdienst-API an einen Drucker senden {#send-a-print-stream-to-a-printer-using-the-web-service-api}
 
 Senden Sie mithilfe der Output-API (Webdienst) einen Druckdatenstrom an einen Netzwerkdrucker:
 
@@ -2021,7 +2021,7 @@ Nachdem der Output-Dienst einen Vorgang ausgeführt hat, werden XML-Daten zurüc
 
 [Schnellstarts zur API für Output Service](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap)
 
-### Erstellen Sie Suchregeln mit der Java-API {#create-search-rules-using-the-java-api}
+### Erstellen von Suchregeln mit der Java-API {#create-search-rules-using-the-java-api}
 
 Erstellen Sie Suchregeln mithilfe der Ausgabe-API (Java):
 
@@ -2096,7 +2096,7 @@ Erstellen Sie Suchregeln mithilfe der Ausgabe-API (Java):
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Erstellen Sie Suchregeln mithilfe der Webdienst-API {#create-search-rules-using-the-web-service-api}.
+### Erstellen von Suchregeln mithilfe der Webdienst-API {#create-search-rules-using-the-web-service-api}
 
 Erstellen Sie Suchregeln mithilfe der Output-API (Webdienst):
 
