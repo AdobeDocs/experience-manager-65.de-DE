@@ -4,10 +4,10 @@ description: Spezifische Versionshinweise für [!DNL Adobe Experience Manager] 6
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: f9b53df7d235fa6be2cee8c05071790114a91da1
+source-git-commit: d107a31ff109be6ae848eef5d3102f63983fd120
 workflow-type: tm+mt
-source-wordcount: '4376'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -458,6 +458,9 @@ Nachstehend finden Sie eine Liste der Funktionen, die mit [!DNL Experience Manag
 | Connectoren | Die Adobe JCR Connector für Microsoft® SharePoint 2010 und Microsoft® SharePoint 2013 wird für Experience Manager 6.5 nicht mehr unterstützt. | Nicht zutreffend |
 
 ## Bekannte Probleme {#known-issues}
+
+* (Nur für JBoss unter Microsoft Windows) Um den Dienst &quot;PDF erstellen&quot;unter [!DNL AEM Forms on JEE] weiterhin zu verwenden, laden Sie [omniORB_4.1.1_x86_win32_vc10.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/omniORB_4.1.1_x86_win32_vc10.zip) aus Softwareverteilung herunter, extrahieren Sie den Ordner in der ZIP-Datei und kopieren Sie ihn an den folgenden Speicherort:
+   `[AEM Forms Installation]\Adobe\Adobe_Experience_Manager_Forms\jboss\standalone\svcnative\CommonNatives\lib`
 
 * Da [!DNL Microsoft Windows Server 2019] [!DNL MySQL 5.7] und [!DNL JBoss EAP 7.1] nicht unterstützt, unterstützt [!DNL Microsoft Windows Server 2019] keine Turnkey-Installationen für [!DNL AEM Forms 6.5.10.0].
 
