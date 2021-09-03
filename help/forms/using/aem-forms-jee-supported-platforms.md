@@ -11,10 +11,10 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 0b5b545f796a5a36f7e7f160c11ebd64e5a3c2ce
+source-git-commit: 54ace42972b2d6c7b807dbb2c7a40c2542c0b7c0
 workflow-type: tm+mt
 source-wordcount: '3250'
-ht-degree: 78%
+ht-degree: 77%
 
 ---
 
@@ -524,10 +524,10 @@ Die folgenden Untersysteme von AEM Forms sind nicht mit [508](https://www.sectio
  </tbody>
 </table>
 
-Für zusätzliche Anforderungen siehe:
+Weitere Anforderungen finden Sie unter:
 
-* [Systemanforderungen für eine AEM Forms on JEE-Bereitstellung auf einem Einzelserver](https://www.adobe.com/go/learn_aemforms_sysreq_single_63)
-* [Systemanforderungen für eine Clusterbereitstellung von AEM Forms on JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_63)
+* [Systemanforderungen für eine AEM Forms on JEE-Bereitstellung auf einem Einzelserver](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
+* [Systemanforderungen für eine Clusterbereitstellung von AEM Forms on JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
 
 ## Unterstützte Clients für AEM Forms on JEE {#supported-clients-for-aem-forms-on-jee}
 
