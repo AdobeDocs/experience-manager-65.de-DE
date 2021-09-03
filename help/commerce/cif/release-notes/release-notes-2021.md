@@ -2,7 +2,7 @@
 title: AEM Content and Commerce - Versionshinweise 2021
 description: AEM Content and Commerce - Versionshinweise 2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: b6703f519295eef728d5504360d99de69438064c
+source-git-commit: fd973cb3693872e4850f860a625cab70553d2754
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 22%
@@ -33,7 +33,7 @@ Der alte AEM CIF Connector befindet sich im Wartungsmodus und sollte nicht mehr 
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
-| CIF-Add-on | 2021.08.20 | [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.08.20.zip) |
+| CIF-Add-on | 2021,09,02 | [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.02.zip) |
 | CIF-Kernkomponenten | 2.1.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.1.0) |
 | CIF Venia-Referenz-Site | 2021.08.27 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.08.27) |
 
