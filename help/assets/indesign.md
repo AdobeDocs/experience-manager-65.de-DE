@@ -5,7 +5,7 @@ contentOwner: AG
 role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: f74190692d718da6074affa87d283f326eca7faa
+source-git-commit: 610f294c314489032ec71b863542d269d302ee01
 workflow-type: tm+mt
 source-wordcount: '1577'
 ht-degree: 37%
@@ -173,7 +173,7 @@ Wenn sich die [!DNL InDesign Server] und [!DNL Experience Manager] auf unterschi
 1. Suchen Sie die Konfiguration **[!UICONTROL Day CQ Link Externalizer]**. Klicken Sie auf **[!UICONTROL Bearbeiten]** , um zu öffnen.
 1. Die Einstellungen von Link Externalizer helfen beim Erstellen absoluter URLs für die [!DNL Experience Manager] -Implementierung und für [!DNL InDesign Server]. Verwenden Sie das Feld **[!UICONTROL Domains]** , um den Hostnamen für [!DNL Adobe InDesign Server] anzugeben. Klicken Sie auf **Speichern**.
 
-   Beim Erstellen absoluter URLs müssen Sie den Hostnamen `localhost` für Ihre lokalen Instanzen, Autoren- und Veröffentlichungsinstanzen verwenden.
+   In absoluten URLs müssen Sie `localhost` als Hostnamen für Ihre lokalen, Autoren- und Veröffentlichungsinstanzen verwenden.
 
    ![Externalizer-Einstellung für Link](assets/link-externalizer-config.png)
 
