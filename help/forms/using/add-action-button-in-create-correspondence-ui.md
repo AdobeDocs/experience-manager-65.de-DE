@@ -1,26 +1,26 @@
 ---
 title: Fügen Sie benutzerdefinierte Aktionen/Schaltflächen der Benutzeroberfläche „Korrespondenz erstellen“ hinzu
-seo-title: Fügen Sie benutzerdefinierte Aktionen/Schaltflächen der Benutzeroberfläche „Korrespondenz erstellen“ hinzu
+seo-title: Add custom action/button in Create Correspondence UI
 description: Erfahren Sie, wie Sie benutzerdefinierte Aktionen/Schaltflächen in der Benutzeroberfläche „Korrespondenz erstellen“ hinzufügen
-seo-description: Erfahren Sie, wie Sie benutzerdefinierte Aktionen/Schaltflächen in der Benutzeroberfläche „Korrespondenz erstellen“ hinzufügen
+seo-description: Learn how to add custom action/button in Create Correspondence UI
 uuid: 1b2b00bb-93ef-4bfe-9fc5-25c45e4cb4b1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
-feature: Korrespondenzverwaltung
+feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9f3ca2da0828ce5170622852220a1926df0d5150
 workflow-type: tm+mt
-source-wordcount: '1912'
-ht-degree: 56%
+source-wordcount: '1868'
+ht-degree: 55%
 
 ---
 
 # Fügen Sie benutzerdefinierte Aktionen/Schaltflächen der Benutzeroberfläche „Korrespondenz erstellen“ hinzu {#add-custom-action-button-in-create-correspondence-ui}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Correspondence Management Solution ermöglicht es Ihnen, benutzerdefinierte Aktionen der Benutzeroberfläche „Korrespondenz erstellen“ hinzufügen.
 
@@ -41,7 +41,7 @@ Hinzufügen einer Schaltfläche mit einer Aktion (hier Buchstaben zum Review sen
 1. Hinzufügen der Aktionsbearbeitung zur Schaltfläche
 1. Hinzufügen eines LiveCycle-Prozesses, um die Aktionsbearbeitung zu aktivieren
 
-### Hinzufügen der Schaltfläche „Korrespondenz erstellen“ zur Benutzeroberfläche {#add-the-button-to-the-create-correspondence-user-interface}
+### Hinzufügen der Schaltfläche „Korrespondenz erstellen“ zur Benutzeroberfläche  {#add-the-button-to-the-create-correspondence-user-interface}
 
 1. Gehen Sie zu `https://'[server]:[port]'/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
 1. Erstellen Sie im Apps-Ordner einen Ordner mit dem Namen `defaultApp` mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Ordner defaultApp (der sich im config -Ordner befindet). Mit den folgenden Schritten können Sie den Ordner erstellen:
@@ -124,7 +124,7 @@ Hinzufügen einer Schaltfläche mit einer Aktion (hier Buchstaben zum Review sen
 
 1. Klicken Sie auf **Alle speichern**.
 
-#### Erstellen Sie einen lokalen Ordner mit der Eigenschaftendatei in der /apps-Verzweigung  {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
+#### Erstellen Sie einen lokalen Ordner mit der Eigenschaftendatei in der /apps-Verzweigung {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
 
 Die Datei ACMExtensionsMessages.properties enthält Beschriftungen und QuickInfo-Meldungen verschiedener Felder in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;. Damit die benutzerdefinierten Aktionen/Schaltflächen funktionieren, müssen Sie eine Kopie dieser Datei in der /apps-Verzweigung erstellen.
 
@@ -162,7 +162,7 @@ Die Datei ACMExtensionsMessages.properties enthält Beschriftungen und QuickInfo
 
 1. Klicken Sie auf **Alle speichern**.
 
-#### Starten Sie das Asset Composer-Baustein-Bundle von Adobe neu  {#restart-the-adobe-asset-composer-building-block-bundle}
+#### Starten Sie das Asset Composer-Baustein-Bundle von Adobe neu {#restart-the-adobe-asset-composer-building-block-bundle}
 
 Nachdem Sie serverseitige Änderungen vorgenommen haben, starten Sie das Asset Composer-Baustein-Bundle von Adobe neu. In diesem Szenario werden die Dateien acmExtensionsConfig.xml und ACMExtensionsMessages.properties auf der Serverseite bearbeitet. Daher erfordert das Adobe Asset Composer-Baustein-Bundle einen Neustart.
 
@@ -178,7 +178,7 @@ Nachdem Sie serverseitige Änderungen vorgenommen haben, starten Sie das Asset C
 
 Nachdem das Asset Composer-Baustein-Bundle von Adobe neu gestartet wurde, wird die benutzerdefinierte Schaltfläche in der Benutzeroberfläche „Korrespondenz erstellen“ angezeigt. Sie können ein Schreiben in der Benutzeroberfläche „Korrespondenz erstellen“ öffnen, um eine benutzerdefinierte Schaltfläche in der Vorschau anzuzeigen.
 
-### Hinzufügen der Aktionsbearbeitung zur Schaltfläche  {#add-action-handling-to-the-button}
+### Hinzufügen der Aktionsbearbeitung zur Schaltfläche {#add-action-handling-to-the-button}
 
 Die Benutzeroberfläche „Korrespondenz erstellen“ ist standardmäßig in der Implementierung der ActionHandler cm.domain.js-Datei am folgenden Speicherort:
 
@@ -323,7 +323,7 @@ Das Bearbeiten der Aktion/der Schaltfläche beim Klicken auf die Aktion/Schaltfl
       '</div>';
       ```
 
-### Fügen Sie den LiveCycle-Prozess hinzu, um die Aktions<span class="acrolinxCursorMarker"></code>bearbeitung zu aktivieren  {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### Fügen Sie den LiveCycle-Prozess hinzu, um die Aktions<span class="acrolinxCursorMarker"></code>bearbeitung zu aktivieren {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 Aktivieren Sie in diesem Szenario die folgenden Komponenten, die Teil der angehängten Datei components.zip sind:
 
@@ -331,9 +331,9 @@ Aktivieren Sie in diesem Szenario die folgenden Komponenten, die Teil der angeh�
 * Brief zum Review-Prozess LCA senden(SendLetterForReview.lca)
 
 Laden Sie die Datei components.zip herunter und entpacken Sie sie, um die Dateien DSCSample.jar und SendLetterForReview.lca zu erhalten. Verwenden Sie diese Dateien, wie in den folgenden Verfahren angegeben.
-components.zip
+[Datei laden](assets/components.zip)
 
-#### Konfigurieren Sie den LiveCycle-Server, um den LCA-Vorgang auszuführen  {#configure-the-livecycle-server-to-run-the-lca-process}
+#### Konfigurieren Sie den LiveCycle-Server, um den LCA-Vorgang auszuführen {#configure-the-livecycle-server-to-run-the-lca-process}
 
 >[!NOTE]
 >
@@ -380,7 +380,7 @@ Der erforderliche LiveCycle-Prozess, der den E-Mail-Dienstprozess aktiviert.
 
 1. Wählen Sie **Importieren**.
 
-#### Hinzufügen von ServiceName zur Zulassungsliste Service-Liste {#adding-servicename-to-the-allowlist-service-list}
+#### Hinzufügen von ServiceName zur Liste des Zulassungsliste Service {#adding-servicename-to-the-allowlist-service-list}
 
 Erwähnen Sie im AEM-Server der LiveCycle-Dienste, dass Sie auf den AEM-Server zugreifen möchten.
 
@@ -391,7 +391,7 @@ Erwähnen Sie im AEM-Server der LiveCycle-Dienste, dass Sie auf den AEM-Server z
 
 1. Klicken Sie auf **Speichern**.
 
-#### E-Mail-Dienst konfigurieren  {#configure-the-email-service}
+#### E-Mail-Dienst konfigurieren {#configure-the-email-service}
 
 In diesem Szenario müssen Sie den E-Mail-Dienst im LifeCycle-Server konfigurieren, damit Correspondence Management eine E-Mail senden kann.
 
@@ -424,7 +424,7 @@ Weitere Informationen finden Sie unter [Verbinden von AEM Forms mit der Adobe Li
 
    >[!NOTE]
    >
-   >Jedes Mal, wenn Sie Änderungen auf Serverseite vornehmen, müssen Sie den LiveCycle-Server neu starten. Informationen über das Erstellen Ihrer eigenen Livecycle-Komponente finden Sie unter [ Erweiterung der LiveCycle ES-Software durch kundenspezifische DSC-Entwicklung](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html).
+   >Jedes Mal, wenn Sie Änderungen auf Serverseite vornehmen, müssen Sie den LiveCycle-Server neu starten.
 
    Die DSCSample.jar-Datei verwendet die renderLetter-API. Weitere Informationen zur renderLetter-API finden Sie unter [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-1/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
@@ -448,7 +448,7 @@ Nachdem Sie die Aktion und Schaltfläche zum Versenden des Schreibens an den Rev
 
 1. Klicken Sie in der Benutzeroberfläche „Korrespondenz erstellen“ auf **Brief-Review** und geben Sie die E-Mail-ID des Überprüfers an.
 
-1. Klicken Sie auf **Übermitteln**.
+1. Klicken Sie auf **Senden**.
 
 ![sendreview](assets/sendreview.png)
 
