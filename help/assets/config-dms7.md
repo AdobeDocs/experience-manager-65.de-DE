@@ -9,10 +9,10 @@ docset: aem65
 role: User, Admin
 mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
-feature: Konfiguration,Scene7-Modus
-source-git-commit: 6c042d2c95f18ae4a0d5fd57a048aa12761495b6
+feature: Configuration,Scene7 Mode
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '6941'
+source-wordcount: '6936'
 ht-degree: 49%
 
 ---
@@ -39,11 +39,11 @@ Mit der neuen Architektur ist Experience Manager für Primärquellen-Assets und 
 >Für die folgende Funktionsliste müssen Sie das vordefinierte CDN verwenden, das im Lieferumfang von Adobe Experience Manager - Dynamic Media enthalten ist. Andere benutzerdefinierte CDN werden von diesen Funktionen nicht unterstützt.
 >
 >* [Intelligente Bildbearbeitung](/help/assets/imaging-faq.md)
-* [Cache-Invalidierung](/help/assets/invalidate-cdn-cache-dynamic-media.md)
-* [Hotlink-Schutz](/help/assets/hotlink-protection.md)
-* [Bereitstellung von Inhalten per HTTP/2](/help/assets/http2.md)
-* URL-Umleitung auf CDN-Ebene
-* Akamai ChinaCDN (für optimalen Versand in China)
+>* [Cache-Invalidierung](/help/assets/invalidate-cdn-cache-dynamic-media.md)
+>* [Hotlink-Schutz](/help/assets/hotlink-protection.md)
+>* [Bereitstellung von Inhalten per HTTP/2](/help/assets/http2.md)
+>* URL-Umleitung auf CDN-Ebene
+>* Akamai ChinaCDN (für optimalen Versand in China)
 
 
 ## Aktivieren von Dynamic Media im Scene7-Modus {#enabling-dynamic-media-in-scene-mode}
@@ -51,7 +51,8 @@ Mit der neuen Architektur ist Experience Manager für Primärquellen-Assets und 
 [Dynamic Media ist standardmäßig deaktiviert. ](https://business.adobe.com/de/products/experience-manager/assets/dynamic-media.html) Um die Funktionen von Dynamic Media nutzen zu können, müssen Sie sie aktivieren.
 
 >[!WARNING]
-Dynamic Media - Scene7-Modus ist nur für die *Experience Manager-Autoreninstanz* vorgesehen. Daher müssen Sie `runmode=dynamicmedia_scene7` in der Experience Manager-Autoreninstanz konfigurieren, *nicht* in der Experience Manager-Veröffentlichungsinstanz.
+>
+>Dynamic Media - Scene7-Modus ist nur für die *Experience Manager-Autoreninstanz* vorgesehen. Daher müssen Sie `runmode=dynamicmedia_scene7` in der Experience Manager-Autoreninstanz konfigurieren, *nicht* in der Experience Manager-Veröffentlichungsinstanz.
 
 Um Dynamic Media zu aktivieren, müssen Sie den Experience Manager im Ausführungsmodus `dynamicmedia_scene7` über die Befehlszeile starten, indem Sie Folgendes in ein Terminal-Fenster eingeben (Beispielanschluss: 4502):
 
@@ -64,7 +65,8 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 Die Aktualisierung von Experience Manager Dynamic Media von 6.3 auf 6.4 oder 6.5 bietet jetzt die Möglichkeit, Bereitstellungen ohne Ausfallzeiten zu ermöglichen. Um alle Vorgaben und Konfigurationen in CRXDE Lite von `/etc` zu `/conf` zu migrieren, führen Sie folgenden curl-Befehl aus.
 
 >[!NOTE]
-Wenn Sie Ihre Experience Manager-Instanz im Kompatibilitätsmodus ausführen - d. h., Sie haben das Kompatibilitätspaket installiert - müssen Sie diese Befehle nicht ausführen.
+>
+>Wenn Sie Ihre Experience Manager-Instanz im Kompatibilitätsmodus ausführen - d. h., Sie haben das Kompatibilitätspaket installiert - müssen Sie diese Befehle nicht ausführen.
 
 Bei allen Upgrades, mit oder ohne Kompatibilitätspaket, können Sie die standardmäßigen Viewer-Vorgaben kopieren, die ursprünglich mit Dynamic Media geliefert wurden, indem Sie den folgenden Linux® curl-Befehl ausführen:
 
@@ -273,7 +275,7 @@ Auf dem Bildschirm „Image-Server“ werden Standardeinstellungen für das Bere
 * **[!UICONTROL Standardeinstellungen für Katalogfelder]**: Diese Einstellungen beziehen sich auf die Auflösung und den Standardtyp für Miniaturansichten von Bildern.
 * **[!UICONTROL Farbverwaltungsattribute]**: Mit diesen Einstellungen wird festgelegt, welche ICC-Farbprofile verwendet werden.
 * **[!UICONTROL Kompatibilitätsattribute]**: Diese Einstellung ermöglicht die Behandlung von Anfangs- und Endabsätzen in Textebenen wie in Version 3.6, um die Abwärtskompatibilität zu gewährleisten.
-* **[!UICONTROL Lokalisierungsunterstützung]**: Mit diesen Einstellungen können mehrere Gebietsschemaattribute verwaltet werden. Außerdem kann damit eine Zeichenfolge der Gebietsschemakarte angegeben werden, damit Sie festlegen können, welche Sprachen für die verschiedenen QuickInfos in Viewern unterstützt werden sollen. Weitere Informationen zur Einrichtung der **[Lokalisierungsunterstützung]** finden Sie unter [Überlegungen beim Einrichten der Lokalisierung von Assets](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html?lang=en#considerations-when-setting-up-localization-of-assets).
+* **[!UICONTROL Lokalisierungsunterstützung]**: Mit diesen Einstellungen können mehrere Gebietsschemaattribute verwaltet werden. Außerdem kann damit eine Zeichenfolge der Gebietsschemakarte angegeben werden, damit Sie festlegen können, welche Sprachen für die verschiedenen QuickInfos in Viewern unterstützt werden sollen. Weitere Informationen zur Einrichtung der **[Lokalisierungsunterstützung]** finden Sie unter [Überlegungen beim Einrichten der Lokalisierung von Assets](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html?lang=de#considerations-when-setting-up-localization-of-assets).
 
 #### Allgemeine Anwendungseinstellungen konfigurieren {#configuring-application-general-settings}
 
@@ -295,7 +297,6 @@ Wählen Sie immer diese Einstellung, um die Konsistenz mit Experience Manager si
 
 >[!NOTE]
 Standardmäßig zeigt das System 15 Ausgabedarstellungen an, wenn Sie **[!UICONTROL Ausgabedarstellungen]** auswählen, und 15 Viewer-Voreinstellungen, wenn Sie in der Detailansicht des Assets **[!UICONTROL Viewer]** auswählen. Sie können diese Grenze erhöhen. Siehe [Erhöhen Sie die Anzahl der angezeigten Bildvorgaben](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) oder [Erhöhen Sie die Anzahl der angezeigten Viewer-Vorgaben](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
-
 
 #### Farbmanagement konfigurieren {#configuring-color-management}
 

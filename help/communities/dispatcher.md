@@ -1,8 +1,8 @@
 ---
 title: Konfigurieren des Dispatchers für Communities
-seo-title: Konfigurieren des Dispatchers für Communities
+seo-title: Configuring Dispatcher for Communities
 description: Konfigurieren des Dispatchers für AEM Communities
-seo-description: Konfigurieren des Dispatchers für AEM Communities
+seo-description: Configure the dispatcher for AEM Communities
 uuid: c17daca9-3244-4b10-9d4e-2e95df633dd9
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
 exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '668'
 ht-degree: 11%
 
 ---
@@ -31,7 +31,7 @@ Siehe auch die Hauptdokumentation [Dispatcher](https://helpx.adobe.com/experienc
 
 ## Dispatcher-Caching {#dispatcher-caching}
 
-### Überblick {#overview}
+### Übersicht {#overview}
 
 Das Dispatcher-Caching für AEM Communities ermöglicht es dem Dispatcher, vollständig zwischengespeicherte Versionen der Seiten einer Community-Site bereitzustellen.
 
@@ -70,7 +70,7 @@ Die OSGi-Konfiguration **ACS AEM Commons - Dispatcher Cache Control Header - Max
 
    *(erforderlich)* Das maximale Alter (in Sekunden), das zum Cache Control-Header hinzugefügt werden soll. Der Wert muss größer als null (0) sein.
 
-## Dispatcher-Client-Header {#dispatcher-client-headers}
+## Dispatcher Client-Kopfzeilen {#dispatcher-client-headers}
 
 Wenn Sie im Abschnitt /clientheaders von `dispatcher.any` einen bestimmten Satz von Kopfzeilen auflisten, müssen Sie `"CSRF-Token"` einbeziehen, damit die [Aktivierungsfunktion](enablement.md) ordnungsgemäß funktioniert.
 
@@ -93,11 +93,9 @@ Siehe auch:
 >**Beispiele für Eigenschaftsnamen**
 >Alle angezeigten Eigenschaftsnamen wie **/0050** und **/0170** sollten so angepasst werden, dass sie in eine vorhandene Konfigurationsdatei dispatcher.any passen.
 
-
 >[!CAUTION]
 >
->In der [Dispatcher-Sicherheits-Checkliste](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en) finden Sie weitere Aspekte, wenn der Zugriff unter Verwendung des Dispatchers eingeschränkt ist. Lesen Sie auch [AEM Sicherheitscheckliste](https://helpx.adobe.com/experience-manager/6-3/sites/administring/using/security-checklist.html), um weitere Sicherheitsdetails zu Ihrer AEM Installation zu erhalten.
-
+>In der [Dispatcher-Sicherheits-Checkliste](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html) finden Sie weitere Aspekte, wenn der Zugriff unter Verwendung des Dispatchers eingeschränkt ist. Lesen Sie auch [AEM Sicherheitscheckliste](https://helpx.adobe.com/experience-manager/6-3/sites/administring/using/security-checklist.html), um weitere Sicherheitsdetails zu Ihrer AEM Installation zu erhalten.
 
 Die folgenden Einträge sollten am Ende des /filter -Abschnitts hinzugefügt werden, insbesondere nach allen Einträgen, die verweigert werden.
 
@@ -249,7 +247,7 @@ Die folgenden Einträge sollten am Ende des /filter -Abschnitts hinzugefügt wer
 ```
 -->
 
-## Dispatcher Rules {#dispatcher-rules}
+## Dispatcher-Regeln {#dispatcher-rules}
 
 Im Regelabschnitt von `dispatcher.any` wird definiert, welche Antworten basierend auf der angeforderten URL zwischengespeichert werden sollen. Für Communities wird der Regelabschnitt verwendet, um zu definieren, was nie zwischengespeichert werden soll.
 

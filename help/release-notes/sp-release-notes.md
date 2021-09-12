@@ -4,9 +4,9 @@ description: Spezifische Versionshinweise für [!DNL Adobe Experience Manager] 6
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 59cc855e937c7be71cfc7a28fccd1db0b91e9f97
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '4394'
+source-wordcount: '4392'
 ht-degree: 5%
 
 ---
@@ -58,7 +58,7 @@ Die wichtigsten Funktionen und Verbesserungen, die in [!DNL Adobe Experience Man
 
 * Unterstützung für `GuideBridge#getGuidePath` API in [!DNL AEM Forms] hinzugefügt.
 
-* Sie können jetzt den Automated forms conversion-Dienst verwenden, um [PDF forms in französischer, deutscher, spanischer, italienischer und portugiesischer Sprache](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#language-specific-meta-model) in adaptive Formulare zu konvertieren.
+* Sie können jetzt den Automated forms conversion-Dienst verwenden, um [PDF forms in französischer, deutscher, spanischer, italienischer und portugiesischer Sprache](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html#language-specific-meta-model) in adaptive Formulare zu konvertieren.
 
 * **Fehlermeldungen im Eigenschaften-Browser**: Es wurden Fehlermeldungen für jede Eigenschaft im Eigenschaften-Browser für adaptive Formulare hinzugefügt. Diese Meldungen helfen beim Verständnis der zulässigen Werte für ein Feld.
 

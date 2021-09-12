@@ -3,10 +3,11 @@ title: Arbeiten mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können, die sich ideal für die Headless-Bereitstellung eignen.
 feature: Content Fragments
 role: User
-source-git-commit: 819df6d6123575b378676dda200064725de47b84
+exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 95%
+source-wordcount: '1989'
+ht-degree: 94%
 
 ---
 
@@ -82,7 +83,7 @@ Diese Inhaltsfragmente können dann zusammengestellt werden, um Erlebnisse über
 >
 >Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
 >
->Weitere Details finden Sie in den [Informationen zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
+>Weitere Details finden Sie in den [Informationen zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
 
 >[!NOTE]
 >

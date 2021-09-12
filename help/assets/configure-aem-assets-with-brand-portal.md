@@ -1,8 +1,8 @@
 ---
 title: Konfigurieren von AEM Assets mit Brand Portal
-seo-title: Konfigurieren von AEM Assets mit Brand Portal
+seo-title: Configure AEM Assets with Brand Portal
 description: Erfahren Sie, wie Sie AEM Assets mit Brand Portal konfigurieren, um Assets und Sammlungen in Brand Portal zu veröffentlichen.
-seo-description: Erfahren Sie, wie Sie AEM Assets mit Brand Portal konfigurieren, um Assets und Sammlungen in Brand Portal zu veröffentlichen.
+seo-description: Learn how to configure AEM Assets with Brand Portal for publishing assets and Collections to Brand Portal.
 uuid: b95c046e-9988-444c-b50e-ff5ec8cafe14
 topic-tags: brand-portal
 content-type: reference
@@ -12,9 +12,9 @@ docset: aem65
 feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
-source-git-commit: aed6e28d7ff228ecbaeaf0d468d1d9bcb4373f90
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '2076'
+source-wordcount: '2047'
 ht-degree: 64%
 
 ---
@@ -70,7 +70,7 @@ Es wird empfohlen, AEM 6.5 zu verwenden, um eine AEM Autoreninstanz einzurichten
 
 * Wenn Sie Adobe Partner sind, fordern Sie über [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) AEM 6.5 an.
 
-Anweisungen zum Einrichten einer AEM- Autoreninstanz finden Sie nach dem Herunterladen von AEM unter [Bereitstellen und Verwalten](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=en#default-local-install).
+Anweisungen zum Einrichten einer AEM- Autoreninstanz finden Sie nach dem Herunterladen von AEM unter [Bereitstellen und Verwalten](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html#default-local-install).
 
 ### Herunterladen und Installieren des neuesten AEM Service Packs {#servicepack}
 
@@ -148,7 +148,7 @@ In der Adobe Developer Console werden Projekte und APIs auf Brand Portal-Mandant
 
 Führen Sie die folgenden Schritte aus, um die Anmeldedaten für das Service-Konto und die JWT-Payload zu generieren:
 
-1. Melden Sie sich bei der Adobe Developer Console mit Systemadministratorrechten für die IMS-Organisation (den Brand Portal-Mandanten) an. Die Standardeinstellung ist   [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. Melden Sie sich bei der Adobe Developer Console mit Systemadministratorrechten für die IMS-Organisation (den Brand Portal-Mandanten) an. Die Standardeinstellung ist [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    >[!NOTE]
@@ -337,7 +337,7 @@ Führen Sie zur Validierung der Konfiguration folgende Schritte aus:
    >
    >Vermeiden Sie das Deaktivieren von Replikationsagenten, da dies dazu führen kann, dass die Replikation der Assets (die in der Warteschlange ausgeführt werden) fehlschlägt.
    >
-   >Stellen Sie sicher, dass alle vier Replikationsagenten konfiguriert sind, um Timeout-Fehler zu vermeiden. Siehe [Fehlerbehebung bei Problemen beim parallelen Veröffentlichen in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html?lang=en#connection-timeout).
+   >Stellen Sie sicher, dass alle vier Replikationsagenten konfiguriert sind, um Timeout-Fehler zu vermeiden. Siehe [Fehlerbehebung bei Problemen beim parallelen Veröffentlichen in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
 
 Sie haben nun die folgenden Möglichkeiten:
 

@@ -8,9 +8,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 exl-id: c540aa49-9981-4e8c-97df-972085b26490
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1678'
 ht-degree: 29%
 
 ---
@@ -63,7 +63,7 @@ Wenn Sie einen Workflow oder eine Versionierung für Ihre Assets benötigen, sol
 
 Wenn Sie keinen Workflow oder keine Versionierung für Ihre Assets benötigen, sollten Sie Ihre Assets in Dynamic Media Classic hochladen. Der folgende Workflow wird empfohlen:
 
-1. Richten Sie im Dynamic Media Classic-Desktop-Programm [ein geplantes FTP-Upload- und -Kodierungsprogramm für Dynamic Media Classic (systemautomatisiert)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=en#upload-options) ein.
+1. Richten Sie im Dynamic Media Classic-Desktop-Programm [ein geplantes FTP-Upload- und -Kodierungsprogramm für Dynamic Media Classic (systemautomatisiert)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options) ein.
 1. Greifen Sie in Experience Manager auf die Video-Assets in WCM auf der Registerkarte **[!UICONTROL Dynamic Media Classic]** in der Inhaltssuche zu.
 1. Erstellen Sie mit der Dynamic Media Classic-Videokomponente.
 
@@ -80,7 +80,7 @@ Wenn Sie keinen Workflow oder keine Versionierung für Ihre Assets benötigen, s
 
    >[!NOTE]
    >
-   >Weitere Informationen dazu, was die Videovorgaben bedeuten, finden Sie unter [Videovorgaben für die Kodierung von Videodateien](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=en#video-presets-for-encoding-video-files).
+   >Weitere Informationen dazu, was die Videovorgaben bedeuten, finden Sie unter [Videovorgaben für die Kodierung von Videodateien](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
    >
    >Adobe empfiehlt, entweder beide adaptive Videosets bei der Konfiguration der universellen Vorlagen oder die Option **[!UICONTROL Adaptive Videokodierung]** auszuwählen.
 
@@ -118,7 +118,6 @@ Die folgende Matrix verdeutlicht, wann Sie welche Komponente nutzen sollten:
 >[!NOTE]
 >
 >Standardmäßig verwendet die Dynamic Media Classic-Videokomponente das universelle Videoprofil. Sie können jedoch den HTML5-basierten Videoplayer für die Verwendung durch Experience Manager abrufen. Kopieren Sie in Dynamic Media Classic den Einbettungscode des vordefinierten HTML5-Videoplayers und fügen Sie ihn in Ihre Experience Manager-Seite ein.
-
 
 ## Experience Manager-Videokomponente {#aem-video-component}
 
