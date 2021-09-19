@@ -2,13 +2,13 @@
 title: Optimierte Smart-Tags
 description: Optimierte Smart-Tags
 contentOwner: AG
-feature: Smart-Tags, Suche
+feature: Smart Tags, Search
 role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
-source-git-commit: 20442918270b484e0b3c3ce8e68df90e0f305a52
+source-git-commit: fbb27348df0b9d5f93d186acbce45fcf88197c5e
 workflow-type: tm+mt
-source-wordcount: '1632'
-ht-degree: 50%
+source-wordcount: '1544'
+ht-degree: 51%
 
 ---
 
@@ -30,7 +30,7 @@ Smart Content Service ist ein Cloud-Service, der auf [!DNL Adobe Developer Conso
 
 Die wichtigsten Schritte beim Verwenden des Smart Content Service sind:
 
-* Einstieg
+* Einstieg 
 * Überprüfung von Assets und Tags (Taxonomiedefinition)
 * Training des Smart Content Service
 * Automatisches Tagging
@@ -47,42 +47,38 @@ Bevor Sie den Smart Content Service verwenden können, stellen Sie Folgendes sic
 
 Der Dienst wendet Smart-Tags auf Assets der folgenden MIME-Typen an:
 
-* image/jpeg
-* image/tiff
-* image/png
-* image/bmp
-* image/gif
-* image/pjpeg
-* image/x-portable-anymap
-* image/x-portable-bitmap
-* image/x-portable-graymap
-* image/x-portable-pixmap
-* image/x-rgb
-* image/x-xbitmap
-* image/x-xpixmap
-* image/x-icon
-* image/photoshop
-* image/x-photoshop
-* image/psd
-* image/vnd.adobe.photoshop
+* `image/jpeg`
+* `image/tiff`
+* `image/png`
+* `image/bmp`
+* `image/gif`
+* `image/pjpeg`
+* `image/x-portable-anymap`
+* `image/x-portable-bitmap`
+* `image/x-portable-graymap`
+* `image/x-portable-pixmap`
+* `image/x-rgb`
+* `image/x-xbitmap`
+* `image/x-xpixmap`
+* `image/x-icon`
+* `image/photoshop`
+* `image/x-photoshop`
+* `image/psd`
+* `image/vnd.adobe.photoshop`
 
 Der Dienst wendet Smart-Tags auf Asset-Ausgabedarstellungen der folgenden MIME-Typen an:
 
-* image/jpeg
-* image/pjpeg
-* image/png
+* `image/jpeg`
+* `image/pjpeg`
+* `image/png`
 
-## Einstieg {#onboarding}
+## Einstieg  {#onboarding}
 
 Der Smart Content Service kann als Add-on zu [!DNL Experience Manager] erworben werden. Nach dem Kauf wird eine E-Mail an den Administrator Ihres Unternehmens mit einem Link zu [!DNL Adobe I/O] gesendet.
 
 Der Administrator kann dem Link folgen, um den Smart Content Service mit [!DNL Experience Manager] zu integrieren. Informationen zur Integration des Dienstes mit [!DNL Experience Manager Assets] finden Sie unter [Konfigurieren von Smart-Tags](config-smart-tagging.md).
 
 Der Onboarding-Prozess ist abgeschlossen, wenn der Administrator den Dienst konfiguriert und Benutzer in [!DNL Experience Manager] hinzufügt.
-
->[!NOTE]
->
->Wenn Sie [!DNL Experience Manager] 6.3 oder eine frühere Version verwenden und einen Tagging-Dienst für Ihre Assets benötigen, finden Sie weitere Informationen unter [Smart-Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). Smart-Tags verwenden nicht die neuesten KI-Funktionen und sind daher weniger präzise als der erweiterte Smart-Tagging-Dienst.
 
 ## Überprüfen von Assets und Tags {#reviewing-assets-and-tags}
 
@@ -99,9 +95,9 @@ Fügen Sie die Assets einem Ordner hinzu und wenden Sie die Tags über die Eigen
 >1. Adobe empfiehlt Ihnen, mindestens zwei unterschiedliche Tags zu verwenden, wenn Sie den Smart Content Service zum ersten Mal trainieren.
 
 
-## [!DNL Experience Manager] Suchergebnisse mit Smart-Tags verstehen {#understandsearch}
+## Grundlegendes zu [!DNL Experience Manager]-Suchergebnissen mit Smart-Tags {#understandsearch}
 
-Standardmäßig kombiniert die [!DNL Experience Manager]-Suche die Suchbegriffe mit einer `AND`-Klausel. Dieses Standardverhalten ändert sich durch die Verwendung von Smart-Tags nicht. Durch die Verwendung von Smart-Tags wird eine zusätzliche `OR`-Klausel hinzugefügt, mit der Suchbegriffe gefunden werden können, die mit den Smart-Tags in Verbindung stehen. Suchen Sie beispielsweise nach `woman running`. Assets, die in den Metadaten nur das Keyword `woman`oder `running` aufweisen, werden standardmäßig nicht in den Suchergebnissen angezeigt. Ein Asset, das über Smart-Tags mit `woman` oder `running` getaggt wurde, wird bei dieser Suchanfrage jedoch angezeigt. Die Suchergebnisse sind also eine Kombination aus
+Die [!DNL Experience Manager]-Suche kombiniert die Suchbegriffe standardmäßig mit einer `AND`-Klausel. Dieses Standardverhalten ändert sich durch die Verwendung von Smart-Tags nicht. Durch die Verwendung von Smart-Tags wird eine zusätzliche `OR`-Klausel hinzugefügt, mit der Suchbegriffe gefunden werden können, die mit den Smart-Tags in Verbindung stehen. Suchen Sie beispielsweise nach `woman running`. Assets, die in den Metadaten nur das Keyword `woman`oder `running` aufweisen, werden standardmäßig nicht in den Suchergebnissen angezeigt. Ein Asset, das über Smart-Tags mit `woman` oder `running` getaggt wurde, wird bei dieser Suchanfrage jedoch angezeigt. Die Suchergebnisse sind also eine Kombination aus
 
 * Assets mit `woman`- und `running`-Schlüsselwörtern in den Metadaten.
 
