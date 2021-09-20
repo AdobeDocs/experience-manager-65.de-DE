@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 role: User, Admin
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
-feature: Veröffentlichung
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+feature: Publishing
+source-git-commit: a5164c0c2ef175f1bf63ef911bf92df36e413a6f
 workflow-type: tm+mt
-source-wordcount: '2945'
+source-wordcount: '2960'
 ht-degree: 67%
 
 ---
@@ -70,6 +70,8 @@ Nachdem Sie selektive Veröffentlichung in einem Ordner konfiguriert haben, habe
    >[!IMPORTANT]
    >
    >Beachten Sie, dass unabhängig von der ausgewählten Option für den Veröffentlichungsmodus für Dynamic Media alle Aktualisierungen, die Sie später an einem *bereits* veröffentlichten Asset vornehmen, sofort ohne weitere Benutzeraktion veröffentlicht werden.
+   >
+   >Wenn ein veröffentlichtes Video aktualisiert wird, muss es erneut veröffentlicht werden, um Änderungen beim Versand widerzuspiegeln.
 
    | Option für Veröffentlichungsmodus für Dynamic Media | Beschreibung |
    | --- | --- |
