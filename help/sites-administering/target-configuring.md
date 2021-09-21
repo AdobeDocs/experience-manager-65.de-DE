@@ -1,8 +1,8 @@
 ---
 title: Manuelles Konfigurieren der Integration mit Adobe Target
-seo-title: Manuelles Konfigurieren der Integration mit Adobe Target
+seo-title: Manually Configuring the Integration with Adobe Target
 description: Es wird beschrieben, wie Sie die Integration mit Adobe Target manuell konfigurieren.
-seo-description: Es wird beschrieben, wie Sie die Integration mit Adobe Target manuell konfigurieren.
+seo-description: Learn how to manually configure the integration with Adobe Target.
 uuid: 0bb76a65-f981-4cc5-bee8-5feb3297137c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,14 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6850fc2e4251ad408936ee71600ab8923f54e9a3
 workflow-type: tm+mt
-source-wordcount: '2202'
-ht-degree: 75%
+source-wordcount: '2210'
+ht-degree: 74%
 
 ---
 
-# Manuelles Konfigurieren der Integration mit Adobe Target  {#manually-configuring-the-integration-with-adobe-target}
+# Manuelles Konfigurieren der Integration mit Adobe Target {#manually-configuring-the-integration-with-adobe-target}
 
 Sie können entweder die Konfigurationen für den Opt-in-Assistenten ändern, die Sie während der Nutzung des Assistenten vorgenommen haben, oder Sie können die Integration mit Adobe Target manuell durchführen, ohne den Assistenten zu nutzen.
 
@@ -57,7 +57,7 @@ Die folgenden Eigenschaftswerte werden in der Cloud-Konfiguration „Bereitgeste
 >* „AT.js“ enthält die Komponenten, die in „target.js“ enthalten waren, sodass „target.js“ nicht mehr aufgerufen wird.
 
 
-### Eigenschaften von „Bereitgestelltes Target-Framework“{#provisioned-target-framework-properties}
+### Eigenschaften von „Bereitgestelltes Target-Framework“ {#provisioned-target-framework-properties}
 
 Das bereitgestellte Target-Framework, das vom Opt-in-Assistenten erstellt wird, ist für das Senden von Kontextdaten aus dem Profildatenspeicher konfiguriert. Die Datenelemente zu Alter und Geschlecht aus dem Speicher werden standardmäßig an Target gesendet. Es kann sein, dass für Ihre Lösung zusätzliche Parameter gesendet werden müssen.
 
@@ -65,9 +65,13 @@ Das bereitgestellte Target-Framework, das vom Opt-in-Assistenten erstellt wird, 
 
 Sie können das Framework so konfigurieren, dass zusätzliche Kontextinformationen an Target gesendet werden, wie unter [Hinzufügen eines Target-Frameworks](/help/sites-administering/target-configuring.md#adding-a-target-framework) beschrieben.
 
-### Konfigurieren der A4T-Analyse-Cloud-Konfiguration  {#configuring-a-t-analytics-cloud-configuration}
+### Konfigurieren der A4T-Analyse-Cloud-Konfiguration {#configuring-a-t-analytics-cloud-configuration}
 
 Sie können Adobe Target so konfigurieren, dass Adobe Analytics als Quelle für die Berichterstellung zu bestimmten Inhalten verwendet wird.
+
+>[!NOTE]
+>
+>User-Credential Authentication (Legacy) funktioniert nicht mit A4T (sowohl für Target als auch Analytics). Daher sollten Kunden [IMS-Authentifizierung](/help/sites-administering/integration-ims-adobe-io.md) anstelle der Authentifizierung mit Benutzerberechtigungen verwenden.
 
 Hierfür müssen Sie angeben, mit welcher A4T-Cloud-Konfiguration Ihre Adobe Target-Cloud-Konfiguration verbunden werden soll:
 
@@ -92,7 +96,7 @@ Hierfür müssen Sie angeben, mit welcher A4T-Cloud-Konfiguration Ihre Adobe Tar
 
    Klicken Sie auf **OK**. Beim Verwenden von Adobe Target für Inhalte können Sie die [Quelle für die Berichterstellung auswählen](/help/sites-authoring/content-targeting-touch.md).
 
-## Manuelles Integrieren mit Adobe Target  {#manually-integrating-with-adobe-target}
+## Manuelles Integrieren mit Adobe Target {#manually-integrating-with-adobe-target}
 
 Sie können das Integrieren mit Adobe Target auch manuell durchführen, anstatt den Opt-in-Assistenten zu verwenden.
 
@@ -103,10 +107,9 @@ Die Target-Bibliotheksdatei [AT.JS](https://docs.adobe.com/content/help/en/targe
 * Verbesserte Sicherheit
 * Bessere Implementierungsoptionen für Einzelseitenanwendungen
 * „AT.js“ enthält die Komponenten, die in „target.js“ enthalten waren, sodass „target.js“ nicht mehr aufgerufen wird.
-
 Sie können im Dropdown-Menü **Client-Bibliothek** die Datei „AT.js“ oder „mbox.js“ auswählen.
 
-### Erstellen einer Target-Cloud-Konfiguration  {#creating-a-target-cloud-configuration}
+### Erstellen einer Target-Cloud-Konfiguration {#creating-a-target-cloud-configuration}
 
 Erstellen Sie eine Target-Cloud-Konfiguration, um für AEM die Interaktion mit Adobe Target zu ermöglichen. Zum Erstellen der Konfiguration geben Sie den Adobe Target-Client-Code und die Benutzeranmeldeinformationen an.
 
@@ -164,7 +167,7 @@ Verwenden Sie das folgende Verfahren, um eine Target-Cloud-Konfiguration in AEM 
 
    Falls Sie keine Verbindung mit Target herstellen können, helfen Ihnen die Informationen im Abschnitt zur [Fehlerbehebung](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems) weiter.
 
-### Hinzufügen eines Target-Frameworks  {#adding-a-target-framework}
+### Hinzufügen eines Target-Frameworks {#adding-a-target-framework}
 
 Nachdem Sie die Target-Cloud-Konfiguration konfiguriert haben, können Sie ein Target-Framework hinzufügen. Das Framework identifiziert die Standardparameter, die von den verfügbaren [ClientContext](/help/sites-administering/client-context.md)- oder [ContextHub](/help/sites-developing/ch-configuring.md)-Komponenten an Adobe Target gesendet werden. Target nutzt die Parameter, um die Segmente zu ermitteln, die für den aktuellen Kontext gelten.
 
@@ -197,19 +200,17 @@ Sie können für eine Target-Konfiguration mehrere Frameworks erstellen. Mehrere
 
 Ihr Framework wird erstellt. Verwenden Sie die Sidekick-Option **Framework aktivieren**, um das Framework auf der Veröffentlichungsinstanz zu replizieren.
 
-### Zuordnen von Aktivitäten zur Target-Cloud-Konfiguration   {#associating-activities-with-the-target-cloud-configuration}
+### Zuordnen von Aktivitäten zur Target-Cloud-Konfiguration  {#associating-activities-with-the-target-cloud-configuration}
 
 Verknüpfen Sie Ihre [AEM Aktivitäten](/help/sites-authoring/activitylib.md) mit Ihrer Target-Cloud-Konfiguration, damit Sie die Aktivitäten in [Adobe Target](https://docs.adobe.com/content/help/en/target/using/experiences/offers/manage-content.html) spiegeln können.
 
 >[!NOTE]
 Welche Aktivitätstypen zur Verfügung stehen, hängt von folgenden Faktoren ab:
 * Bei Aktivierung der Option **xt_only** im Adobe Target-Mandanten (Client-Code), der auf AEM-Seite für die Verbindung zu Adobe Target verwendet wird, können Sie in AEM ausschließlich **XT-Aktivitäten** erstellen.
-
 * Ist die Option **xt_only** **nicht** im Adobe Target-Mandanten (Client-Code) aktiviert, können Sie in AEM **sowohl** XT- als auch A/B-Aktivitäten erstellen.
+**Zusätzlicher Hinweis:** Bei der Option **xt_only** handelt es sich um eine Einstellung, die auf einen bestimmten Target-Mandanten (Clientcode) angewendet wird und nur in Adobe Target bearbeitet werden kann. Die Option kann in AEM nicht aktiviert oder deaktiviert werden.
 
-**Zusätzlicher Hinweis:** Bei der Option **xt_only** handelt es sich um eine Einstellung, die auf einen bestimmten Target-Mandanten (Clientcode) angewendet wird und nur in Adobe Target bearbeitet werden kann. Die Option kann nicht in AEM aktiviert oder deaktiviert werden.
-
-### Zuordnen des Target-Frameworks zu Ihrer Website  {#associating-the-target-framework-with-your-site}
+### Zuordnen des Target-Frameworks zu Ihrer Website {#associating-the-target-framework-with-your-site}
 
 Nachdem Sie in AEM ein Target-Framework erstellt haben, können Sie dem Framework Ihre Webseiten zuordnen. Die als Ziel angegebenen Komponenten auf den Seiten senden die per Framework definierten Daten zu Tracking-Zwecken an Adobe Target. (Siehe [Content-Targeting](/help/sites-authoring/content-targeting-touch.md).)
 
@@ -234,7 +235,7 @@ Wenn Sie dem Framework eine Seite zuordnen, erben die untergeordneten Seiten die
    >[!NOTE]
    Falls das Framework, das Sie an die Seite angefügt haben, noch nicht aktiviert war, wird ein Assistent geöffnet, mit dem Sie hierfür die Veröffentlichung durchführen können.
 
-## Durchführen der Fehlerbehebung für Target-Verbindungsprobleme  {#troubleshooting-target-connection-problems}
+## Durchführen der Fehlerbehebung für Target-Verbindungsprobleme {#troubleshooting-target-connection-problems}
 
 Führen Sie die folgenden Aufgaben aus, um Probleme zu behandeln, die bei der Verbindungsherstellung mit Target auftreten:
 
