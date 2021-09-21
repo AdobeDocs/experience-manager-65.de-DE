@@ -2,9 +2,9 @@
 title: Veraltete und entfernte Funktionen in Adobe Experience Manager 6.5.
 description: Spezifische Versionshinweise zu veralteten und entfernten Funktionen von Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
+source-git-commit: becdfee534e4464147811302ed67de74b8044a24
 workflow-type: tm+mt
-source-wordcount: '1736'
+source-wordcount: '1745'
 ht-degree: 42%
 
 ---
@@ -28,6 +28,7 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 
 | Bereich | Funktion | Ersatz |
 |---|---|---|
+| [!DNL Sites] | Vorlagenbasierte einfache Inhaltsfragmente. | [Modellbasierte strukturierte ](/help/assets/content-fragments/content-fragments-models.md) Inhaltsfragmente jetzt. |
 | Creative Cloud-Integration | Die AEM zur Ordnerfreigabe in Creative Cloud wurde in AEM 6.2 eingeführt, um kreativen Benutzern den Zugriff auf Assets aus AEM zu ermöglichen, sodass sie diese in CC-Anwendungen öffnen und neue Dateien hochladen oder Änderungen an AEM speichern können. Eine neue Funktion des Creative Cloud-Programms, Adobe Asset Link, bietet ein wesentlich besseres Benutzererlebnis und einen leistungsfähigeren Zugriff auf Assets aus AEM direkt aus Photoshop, InDesign und Illustrator heraus. Adobe plant keine weiteren Verbesserungen an der Integration der Ordnerfreigabe aus AEM in Creative Cloud. Obwohl die Funktion in AEM enthalten ist, wird Kunden ausdrücklich der Einsatz von Ersatzlösungen empfohlen. | Kunden wird empfohlen, zu neuen Creative Cloud-Integrationsfunktionen wie Adobe Asset Link oder AEM Desktop-Programm zu wechseln. |
 | Assets | `AssetDownloadServlet` ist bei den Veröffentlichungsinstanzen standardmäßig deaktiviert. Weitere Informationen finden Sie unter [Checkliste für die AEM-Sicherheit](/help/sites-administering/security-checklist.md). | Konfiguration, wie unter [Checkliste für die AEM-Sicherheit](/help/sites-administering/security-checklist.md) beschrieben. |
 | Assets | Wenn ein Benutzer nicht über ausreichende (Lese- und Schreibberechtigungen) für `/content/dam/collections` verfügt, kann der Benutzer keine Sammlung erstellen. | Einhaltung der Zugangssteuerungseinrichtung für den Benutzer und Sicherstellung entsprechender Berechtigungen.  |
