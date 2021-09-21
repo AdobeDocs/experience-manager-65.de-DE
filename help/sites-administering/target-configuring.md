@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: 6850fc2e4251ad408936ee71600ab8923f54e9a3
+source-git-commit: baacb6623757c4a7a67ae2be4232a36c4a509b69
 workflow-type: tm+mt
-source-wordcount: '2210'
-ht-degree: 74%
+source-wordcount: '2196'
+ht-degree: 75%
 
 ---
 
@@ -71,7 +71,7 @@ Sie können Adobe Target so konfigurieren, dass Adobe Analytics als Quelle für 
 
 >[!NOTE]
 >
->User-Credential Authentication (Legacy) funktioniert nicht mit A4T (sowohl für Target als auch Analytics). Daher sollten Kunden [IMS-Authentifizierung](/help/sites-administering/integration-ims-adobe-io.md) anstelle der Authentifizierung mit Benutzerberechtigungen verwenden.
+>User-Credential Authentication (Legacy) funktioniert nicht mit A4T (sowohl für Target als auch Analytics). Daher sollten Kunden die IMS-Authentifizierung anstelle der Authentifizierung mit Benutzerberechtigungen verwenden.
 
 Hierfür müssen Sie angeben, mit welcher A4T-Cloud-Konfiguration Ihre Adobe Target-Cloud-Konfiguration verbunden werden soll:
 
@@ -87,7 +87,7 @@ Hierfür müssen Sie angeben, mit welcher A4T-Cloud-Konfiguration Ihre Adobe Tar
    >Beim Konfigurieren von A4T mit AEM kann es vorkommen, dass der Eintrag „Konfigurationsverweis fehlt“ angezeigt wird. Gehen Sie wie folgt vor, um das Analyse-Framework auszuwählen:
    >
    >1. Navigieren Sie zu **Tools** > **Allgemein** > **CRXDE Lite**.
-   1. Navigieren Sie zu **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
+   1. Navigieren Sie zu `/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig`
    1. Legen Sie die Eigenschaft **disable** auf **false** fest.
    1. Tippen oder klicken Sie auf **Alle speichern**.
 

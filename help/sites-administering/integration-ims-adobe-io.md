@@ -11,9 +11,9 @@ topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
 exl-id: ba7abc53-7db8-41b1-a0fa-4e4dbbeca402
-source-git-commit: baf68f43decec6631516442c3f9e319ce879696f
+source-git-commit: baacb6623757c4a7a67ae2be4232a36c4a509b69
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1538'
 ht-degree: 18%
 
 ---
@@ -196,7 +196,7 @@ So überprüfen Sie, ob die Konfiguration erwartungsgemäß funktioniert:
 
    * `https://localhost<port>/libs/cq/adobeims-configuration/content/configurations.html`
 
-   Beispiel:
+   Zum Beispiel:
 
    * `https://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html`
 
@@ -245,9 +245,6 @@ Auf die Konfiguration kann nun verwiesen werden, damit ein Cloud Service die Tar
    * **IMS-Konfiguration**: den Namen der IMS-Konfiguration auswählen
    * **API-Typ**: REST
    * **A4T-Analyse-Cloud-Konfiguration**: Wählen Sie die Analyse-Cloud-Konfiguration aus, die für Target-Aktivitätsziele und -metriken verwendet wird. Sie benötigen sie, wenn Sie Adobe Analytics als Quelle für die Berichterstellung für bestimmte Inhalte verwenden. Wenn Ihre Cloud-Konfiguration nicht angezeigt wird, finden Sie weitere Informationen unter [Konfigurieren der A4T-Analytics Cloud-Konfiguration](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
-
-   >[!NOTE]
-   >User-Credential Authentication (Legacy) funktioniert nicht mit A4T (sowohl für Target als auch Analytics). Daher sollten Kunden     IMS-Authentifizierung anstelle der Authentifizierung mit Benutzerberechtigungen.
    * **Verwenden Sie genaues Targeting**: Standardmäßig ist dieses Kontrollkästchen aktiviert. Bei Aktivierung dieser Option wird für die Cloud Service-Konfiguration gewartet, bis das Laden des Kontexts erfolgt ist, bevor der Inhalt geladen wird. Siehe Hinweis unten.
    * **Segmente aus Adobe Target synchronisieren**: Wählen Sie diese Option aus, um in Target definierte Segmente herunterzuladen und in AEM zu verwenden. Sie müssen diese Option auswählen, wenn die Eigenschaft „API-Typ“ auf „REST“ festgelegt ist, da Inline-Segmente nicht unterstützt werden und Sie immer Segmente aus Target verwenden müssen. (Beachten Sie, dass der AEM-Begriff „Segment“ hier dem Target-Begriff „Zielgruppe“ entspricht.)
    * **Client-Bibliothek**: Wählen Sie aus, ob die AT.js-Client-Bibliothek oder mbox.js (veraltet) verwendet werden soll.
