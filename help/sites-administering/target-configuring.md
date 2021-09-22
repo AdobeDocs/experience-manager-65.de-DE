@@ -87,8 +87,7 @@ Hierfür müssen Sie angeben, mit welcher A4T-Cloud-Konfiguration Ihre Adobe Tar
    >Beim Konfigurieren von A4T mit AEM kann es vorkommen, dass der Eintrag „Konfigurationsverweis fehlt“ angezeigt wird. Gehen Sie wie folgt vor, um das Analyse-Framework auszuwählen:
    >
    >1. Navigieren Sie zu **Tools** > **Allgemein** > **CRXDE Lite**.
-   >1. Gehen Sie zu:
-      `/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig`
+   >1. Gehen Sie zu: `/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig`
    1. Legen Sie die Eigenschaft **disable** auf **false** fest.
    1. Tippen oder klicken Sie auf **Alle speichern**.
 
