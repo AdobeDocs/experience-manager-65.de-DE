@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: 7da4a482e709a8b6bcc5537905ce811b5363e19b
+source-git-commit: b0ccbf9e63cd9db00004ae96b2556df43f4b1478
 workflow-type: tm+mt
-source-wordcount: '2196'
-ht-degree: 75%
+source-wordcount: '2199'
+ht-degree: 74%
 
 ---
 
@@ -87,28 +87,33 @@ Hierfür müssen Sie angeben, mit welcher A4T-Cloud-Konfiguration Ihre Adobe Tar
    >Beim Konfigurieren von A4T mit AEM kann es vorkommen, dass der Eintrag „Konfigurationsverweis fehlt“ angezeigt wird. Gehen Sie wie folgt vor, um das Analyse-Framework auszuwählen:
    >
    >1. Navigieren Sie zu **Tools** > **Allgemein** > **CRXDE Lite**.
-   >1. Gehen Sie zu: `/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig`
+   1. Navigieren Sie zu [1] (siehe unten).
    1. Legen Sie die Eigenschaft **disable** auf **false** fest.
    1. Tippen oder klicken Sie auf **Alle speichern**.
 
 
-   ![chlimage_1-159](assets/chlimage_1-159.png)
+[1]
 
-   Klicken Sie auf **OK**. Beim Verwenden von Adobe Target für Inhalte können Sie die [Quelle für die Berichterstellung auswählen](/help/sites-authoring/content-targeting-touch.md).
+```
+   >/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig
+```
+
+![chlimage_1-159](assets/chlimage_1-159.png)
+
+Klicken Sie auf **OK**. Beim Verwenden von Adobe Target für Inhalte können Sie die [Quelle für die Berichterstellung auswählen](/help/sites-authoring/content-targeting-touch.md).
 
 ## Manuelles Integrieren mit Adobe Target {#manually-integrating-with-adobe-target}
 
 Sie können das Integrieren mit Adobe Target auch manuell durchführen, anstatt den Opt-in-Assistenten zu verwenden.
 
 >[!NOTE]
->
->Die Target-Bibliotheksdatei [AT.JS](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-download.html) ist eine neue Implementierungsbibliothek für Adobe Target, die sowohl für typische Webimplementierungen als auch für Einzelseitenanwendungen entwickelt wurde. Adobe empfiehlt, anstelle von „mbox.js“ die Datei „AT.js“ als Client-Bibliothek zu verwenden.
->„AT.js“ bietet im Vergleich zur Bibliothek „mbox.js“ viele Verbesserungen, z. B.:
->* Verbesserte Seitenladezeiten für Web-Implementierungen
->* Verbesserte Sicherheit
->* Bessere Implementierungsoptionen für Einzelseitenanwendungen
->* „AT.js“ enthält die Komponenten, die in „target.js“ enthalten waren, sodass „target.js“ nicht mehr aufgerufen wird.
->Sie können im Dropdown-Menü **Client-Bibliothek** die Datei „AT.js“ oder „mbox.js“ auswählen.
+Die Target-Bibliotheksdatei [AT.JS](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-download.html) ist eine neue Implementierungsbibliothek für Adobe Target, die sowohl für typische Webimplementierungen als auch für Einzelseitenanwendungen entwickelt wurde. Adobe empfiehlt, anstelle von „mbox.js“ die Datei „AT.js“ als Client-Bibliothek zu verwenden.
+„AT.js“ bietet im Vergleich zur Bibliothek „mbox.js“ viele Verbesserungen, z. B.:
+* Verbesserte Seitenladezeiten für Web-Implementierungen
+* Verbesserte Sicherheit
+* Bessere Implementierungsoptionen für Einzelseitenanwendungen
+* „AT.js“ enthält die Komponenten, die in „target.js“ enthalten waren, sodass „target.js“ nicht mehr aufgerufen wird.
+Sie können im Dropdown-Menü **Client-Bibliothek** die Datei „AT.js“ oder „mbox.js“ auswählen.
 
 ### Erstellen einer Target-Cloud-Konfiguration {#creating-a-target-cloud-configuration}
 
@@ -136,12 +141,11 @@ Verwenden Sie das folgende Verfahren, um eine Target-Cloud-Konfiguration in AEM 
    ![chlimage_1-160](assets/chlimage_1-160.png)
 
    >[!NOTE]
-   >
-   >Beim Konfigurieren von A4T mit AEM kann es vorkommen, dass der Eintrag „Konfigurationsverweis fehlt“ angezeigt wird. Gehen Sie wie folgt vor, um das Analyse-Framework auszuwählen:
-   >1. Navigieren Sie zu **Tools** > **Allgemein** > **CRXDE Lite**.
-   >1. Navigieren Sie zu **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
-   >1. Legen Sie die Eigenschaft **disable** auf **false** fest.
-   >1. Tippen oder klicken Sie auf **Alle speichern**.
+   Beim Konfigurieren von A4T mit AEM kann es vorkommen, dass der Eintrag „Konfigurationsverweis fehlt“ angezeigt wird. Gehen Sie wie folgt vor, um das Analyse-Framework auszuwählen:
+   1. Navigieren Sie zu **Tools** > **Allgemein** > **CRXDE Lite**.
+   1. Navigieren Sie zu **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
+   1. Legen Sie die Eigenschaft **disable** auf **false** fest.
+   1. Tippen oder klicken Sie auf **Alle speichern**.
 
 
 1. Geben Sie im Dialogfeld Werte für diese Eigenschaften an.
@@ -160,11 +164,10 @@ Verwenden Sie das folgende Verfahren, um eine Target-Cloud-Konfiguration in AEM 
    * **Benutzerdefiniertes AT.js**: Lassen Sie dieses Feld leer, wenn Sie das Feld „DTM“ aktiviert haben oder die standardmäßige Datei „AT.js“ verwenden möchten. Alternativ hierzu können Sie Ihre benutzerdefinierte Datei „AT.js“ hochladen. Sie wird nur angezeigt, wenn Sie „AT.js“ ausgewählt haben.
 
    >[!NOTE]
-   >
-   >Wenn Sie den Opt-in für den Adobe Target-Konfigurationsassistenten durchführen, wird die „präzise Zielgruppenerfassung“ aktiviert.
-   >Präzise Zielgruppenerfassung bedeutet, dass für die Cloud Service-Konfiguration gewartet wird, bis das Laden des Kontexts erfolgt ist, bevor der Inhalt geladen wird. Daher kann es in Bezug auf die Leistung bei der präzisen Zielgruppenerfassung zu einer Verzögerung von einigen Millisekunden kommen, bevor das Laden des Inhalts erfolgt.
-   >Die präzise Zielgruppenerfassung ist auf der Autoreninstanz immer aktiviert. Auf der Veröffentlichungsinstanz können Sie die präzise Zielgruppenerfassung aber global deaktivieren, indem Sie in der Cloud Service-Konfiguration das Häkchen neben „Präzise Zielgruppenerfassung“ entfernen (**http://localhost:4502/etc/cloudservices.html**). Außerdem können Sie die präzise Zielgruppenerfassung unabhängig von Ihrer Einstellung in der Cloud Service-Konfiguration auch für einzelne Komponenten ein- oder ausschalten.
-   >Wenn Sie Komponenten als Ziel ***bereits*** angegeben haben und diese Einstellung dann ändern, wirken sich Ihre Änderungen nicht auf diese Komponenten aus. Sie müssen alle Änderungen an dieser Komponente direkt vornehmen.
+   Wenn Sie den Opt-in für den Adobe Target-Konfigurationsassistenten durchführen, wird die „präzise Zielgruppenerfassung“ aktiviert.
+   Präzise Zielgruppenerfassung bedeutet, dass für die Cloud Service-Konfiguration gewartet wird, bis das Laden des Kontexts erfolgt ist, bevor der Inhalt geladen wird. Daher kann es in Bezug auf die Leistung bei der präzisen Zielgruppenerfassung zu einer Verzögerung von einigen Millisekunden kommen, bevor das Laden des Inhalts erfolgt.
+   Die präzise Zielgruppenerfassung ist auf der Autoreninstanz immer aktiviert. Auf der Veröffentlichungsinstanz können Sie die präzise Zielgruppenerfassung aber global deaktivieren, indem Sie in der Cloud Service-Konfiguration das Häkchen neben „Präzise Zielgruppenerfassung“ entfernen (**http://localhost:4502/etc/cloudservices.html**). Außerdem können Sie die präzise Zielgruppenerfassung unabhängig von Ihrer Einstellung in der Cloud Service-Konfiguration auch für einzelne Komponenten ein- oder ausschalten.
+   Wenn Sie Komponenten als Ziel ***bereits*** angegeben haben und diese Einstellung dann ändern, wirken sich Ihre Änderungen nicht auf diese Komponenten aus. Sie müssen alle Änderungen an dieser Komponente direkt vornehmen.
 
 1. Klicken Sie auf **Mit Target verbinden**, um die Verbindung mit Target zu initialisieren. Wenn die Verbindung erfolgreich hergestellt wurde, wird die Meldung **Verbindung erfolgreich** angezeigt. Klicken Sie auf **OK** und dann auf **OK.**
 
@@ -188,8 +191,7 @@ Sie können für eine Target-Konfiguration mehrere Frameworks erstellen. Mehrere
 1. Ziehen Sie die ClientContext-Komponente mit den Daten, die Sie für die Zuordnung nutzen möchten, auf das Ablageziel. Alternativ hierzu können Sie die **ContextHub-Store**-Komponente auf das Framework ziehen.
 
    >[!NOTE]
-   >
-   >Bei der Zuordnung werden Parameter über einfache Zeichenfolgen an mbox übergeben. Es ist nicht möglich, Arrays aus ContextHub zuzuordnen.
+   Bei der Zuordnung werden Parameter über einfache Zeichenfolgen an mbox übergeben. Es ist nicht möglich, Arrays aus ContextHub zuzuordnen.
 
    Wenn Sie beispielsweise **Profildaten** für Ihre Site-Besucher verwenden möchten, um Ihre Target-Kampagne zu steuern, ziehen Sie die Komponente **Profildaten** auf die Seite. Es werden die Profildatenvariablen angezeigt, die für die Zuordnung zu Target-Parametern verfügbar sind.
 
@@ -200,8 +202,7 @@ Sie können für eine Target-Konfiguration mehrere Frameworks erstellen. Mehrere
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
    >[!NOTE]
-   >
-   >Parameter können nur in einer Richtung synchronisiert werden: von AEM nach Adobe Target.
+   Parameter können nur in einer Richtung synchronisiert werden: von AEM nach Adobe Target.
 
 Ihr Framework wird erstellt. Verwenden Sie die Sidekick-Option **Framework aktivieren**, um das Framework auf der Veröffentlichungsinstanz zu replizieren.
 
@@ -210,11 +211,10 @@ Ihr Framework wird erstellt. Verwenden Sie die Sidekick-Option **Framework aktiv
 Verknüpfen Sie Ihre [AEM Aktivitäten](/help/sites-authoring/activitylib.md) mit Ihrer Target-Cloud-Konfiguration, damit Sie die Aktivitäten in [Adobe Target](https://docs.adobe.com/content/help/en/target/using/experiences/offers/manage-content.html) spiegeln können.
 
 >[!NOTE]
->
->Welche Aktivitätstypen zur Verfügung stehen, hängt von folgenden Faktoren ab:
->* Bei Aktivierung der Option **xt_only** im Adobe Target-Mandanten (Client-Code), der auf AEM-Seite für die Verbindung zu Adobe Target verwendet wird, können Sie in AEM ausschließlich **XT-Aktivitäten** erstellen.
->* Ist die Option **xt_only** **nicht** im Adobe Target-Mandanten (Client-Code) aktiviert, können Sie in AEM **sowohl** XT- als auch A/B-Aktivitäten erstellen.
->**Zusätzlicher Hinweis:** Bei der Option **xt_only** handelt es sich um eine Einstellung, die auf einen bestimmten Target-Mandanten (Clientcode) angewendet wird und nur in Adobe Target bearbeitet werden kann. Die Option kann in AEM nicht aktiviert oder deaktiviert werden.
+Welche Aktivitätstypen zur Verfügung stehen, hängt von folgenden Faktoren ab:
+* Bei Aktivierung der Option **xt_only** im Adobe Target-Mandanten (Client-Code), der auf AEM-Seite für die Verbindung zu Adobe Target verwendet wird, können Sie in AEM ausschließlich **XT-Aktivitäten** erstellen.
+* Ist die Option **xt_only** **nicht** im Adobe Target-Mandanten (Client-Code) aktiviert, können Sie in AEM **sowohl** XT- als auch A/B-Aktivitäten erstellen.
+**Zusätzlicher Hinweis:** Bei der Option **xt_only** handelt es sich um eine Einstellung, die auf einen bestimmten Target-Mandanten (Clientcode) angewendet wird und nur in Adobe Target bearbeitet werden kann. Die Option kann in AEM nicht aktiviert oder deaktiviert werden.
 
 ### Zuordnen des Target-Frameworks zu Ihrer Website {#associating-the-target-framework-with-your-site}
 
@@ -233,15 +233,13 @@ Wenn Sie dem Framework eine Seite zuordnen, erben die untergeordneten Seiten die
 1. Wählen Sie das gewünschten Framework unter **Konfigurationsverweis** aus.
 
    >[!NOTE]
-   >
-   >Achten Sie darauf, dass Sie das von Ihnen erstellte **Framework** und nicht die Target-Cloud-Konfiguration auswählen, unter der die Erstellung durchgeführt wurde.
+   Achten Sie darauf, dass Sie das von Ihnen erstellte **Framework** und nicht die Target-Cloud-Konfiguration auswählen, unter der die Erstellung durchgeführt wurde.
 
 1. Klicken oder tippen Sie auf **Fertig**.
 1. Aktivieren Sie die Stammseite der Website, um sie auf dem Veröffentlichungsserver zu replizieren. (Siehe [Veröffentlichen von Seiten](/help/sites-authoring/publishing-pages.md).)
 
    >[!NOTE]
-   >
-   >Falls das Framework, das Sie an die Seite angefügt haben, noch nicht aktiviert war, wird ein Assistent geöffnet, mit dem Sie hierfür die Veröffentlichung durchführen können.
+   Falls das Framework, das Sie an die Seite angefügt haben, noch nicht aktiviert war, wird ein Assistent geöffnet, mit dem Sie hierfür die Veröffentlichung durchführen können.
 
 ## Durchführen der Fehlerbehebung für Target-Verbindungsprobleme {#troubleshooting-target-connection-problems}
 
