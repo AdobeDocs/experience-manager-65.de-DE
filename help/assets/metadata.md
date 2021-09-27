@@ -3,13 +3,13 @@ title: Verwalten von Metadaten für digitale Assets
 description: Erfahren Sie mehr über die Metadatentypen und die Verwaltung von Metadaten für Assets, um Assets einfach zu organisieren und zu verarbeiten.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Tagging, Metadaten
+feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
-source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
+source-git-commit: afc72fb6b324cf2e0ad8168f783d9c1a6f96c614
 workflow-type: tm+mt
-source-wordcount: '2339'
-ht-degree: 53%
+source-wordcount: '2336'
+ht-degree: 55%
 
 ---
 
@@ -82,7 +82,7 @@ Verwenden Sie zum Anpassen der Seite mit den Metadateneigenschaften, einschließ
 1. Ändern Sie die Metadateneigenschaften für ausgewählte Assets auf den verschiedenen Registerkarten.
 1. Um die Metadaten eines bestimmten Assets anzuzeigen, brechen Sie die Auswahl der verbleibenden Assets in der Liste ab. Wenn Sie die Auswahl einiger Assets auf der Seite [!UICONTROL Eigenschaften] abbrechen, werden die Metadaten solcher Assets nicht aktualisiert.
 1. Um ein anderes Metadatenschema für die Assets auszuwählen, klicken Sie in der Symbolleiste auf **[!UICONTROL Einstellungen]** und wählen Sie ein Schema aus. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
-1. Um die neuen Metadaten mit den vorhandenen Metadatenfeldern, die mehrere Werte enthalten, anzuhängen, wählen Sie den **[!UICONTROL Anlagenmodus]**. Wenn Sie diese Option nicht auswählen, ersetzen die neuen Metadaten die vorhandenen Metadaten in den entsprechenden Feldern. Klicken Sie auf **[!UICONTROL Übermitteln]**.
+1. Um die neuen Metadaten mit den vorhandenen Metadatenfeldern, die mehrere Werte enthalten, anzuhängen, wählen Sie den **[!UICONTROL Anlagenmodus]**. Wenn Sie diese Option nicht auswählen, ersetzen die neuen Metadaten die vorhandenen Metadaten in den entsprechenden Feldern. Klicken Sie auf **[!UICONTROL Senden]**.
 
 ![Metadatenschema-Bulk wird auf mehrere Assets angewendet](assets/metadata-schema-bulk-edit.gif)
 
@@ -90,7 +90,7 @@ Verwenden Sie zum Anpassen der Seite mit den Metadateneigenschaften, einschließ
 >
 >Bei Feldern, die nur einen einzigen Wert enthalten, werden die neuen Metadaten nicht an den vorhandenen Wert im Feld angehängt, selbst wenn Sie **[!UICONTROL Anlagenmodus]** auswählen.
 
-## Importieren von Metadaten  {#import-metadata}
+## Importieren von Metadaten {#import-metadata}
 
 [!DNL Assets]Mit können Sie Asset-Metadaten mithilfe einer CSV-Datei in Massen importieren. Sie können für die kürzlich hochgeladenen Assets oder die vorhandenen Assets eine Massenaktualisierung durchführen, indem Sie eine CSV-Datei importieren. Außerdem können Sie Asset-Metadaten von Drittanbietersystemen mithilfe des CSV-Formats in Batches erfassen.
 
@@ -110,7 +110,7 @@ Der Metadatenimport ist asynchron und beeinträchtigt nicht die Systemleistung. 
    | [!UICONTROL Batch-Größe] | Anzahl der Assets in einem Batch, für die Metadaten importiert werden sollen. Der Standardwert ist 50. Der Wert darf maximal 100 betragen. |
    | [!UICONTROL Feldtrennzeichen] | Der Standardwert ist `,` (ein Komma). Sie können jedoch ein beliebiges anderes Zeichen eingeben. |
    | [!UICONTROL Mehrfachtrennzeichen] | Trennzeichen für Metadatenwerte. Der Standardwert ist `|`. |
-   | [!UICONTROL Workflows starten] | Lautet standardmäßig „False“. Wenn auf `true` gesetzt und die standardmäßigen Launcher-Einstellungen für den Workflow [!UICONTROL DAM Metadata WriteBack] aktiv sind (der Metadaten in die binären XMP schreibt). Die Aktivierung von Start-Workflows verlangsamt das System. |
+   | [!UICONTROL Workflows starten] | Lautet standardmäßig „False“. Wenn auf `true` gesetzt, sind Standardeinstellungen für den Workflow [!UICONTROL DAM Metadata WriteBack] aktiv (der Metadaten in die binären XMP schreibt). Durch die Aktivierung der Workflows wird das System langsamer. |
    | [!UICONTROL Asset-Pfad-Spaltenname] | Definiert den Namen der Spalte in der CSV-Datei, die die Assets enthält. |
 
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Importieren]**. Nachdem die Metadaten importiert wurden, wird im Posteingang [!UICONTROL Benachrichtigung] eine Benachrichtigung angezeigt.
@@ -173,7 +173,7 @@ Sie können Metadatenprofile auf bestimmte Ordner oder global auf alle Assets an
 
 Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vorhandenes Metadatenprofil verfügt, das Sie nachträglich geändert haben. Informationen hierzu finden Sie unter [Erneutes Verarbeiten von Assets in einem Ordner nach Bearbeitung des zugehörigen Verarbeitungsprofils](processing-profiles.md#reprocessing-assets).
 
-Sie können ein Metadatenprofil über das Menü **[!UICONTROL Werkzeuge]** oder, falls Sie sich im Ordner befinden, über **[!UICONTROL Eigenschaften]** auf einen Ordner anwenden. In diesem Abschnitt wird beschrieben, wie Sie Metadatenprofile auf beide Arten auf Ordner anwenden.
+Sie können ein Metadatenprofil über das Menü **[!UICONTROL Tools]** oder, falls Sie sich im Ordner befinden, über **[!UICONTROL Eigenschaften]** auf einen Ordner anwenden. In diesem Abschnitt wird beschrieben, wie Sie Metadatenprofile auf beide Arten auf Ordner anwenden.
 
 Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
@@ -190,7 +190,7 @@ Gehen Sie wie folgt vor, um das Metadatenprofil anzuwenden:
 ### Anwenden von Metadatenprofilen auf Ordner von [!UICONTROL Eigenschaften] {#applying-metadata-profiles-to-folders-from-properties}
 
 1. Klicken Sie in der linken Leiste auf **[!UICONTROL Assets]** und navigieren Sie dann zu dem Ordner, auf den Sie ein Metadatenprofil anwenden möchten.
-1. Klicken Sie im Ordner auf das Häkchen, um ihn auszuwählen, und klicken Sie dann auf **[!UICONTROL Eigenschaften]**.
+1. Klicken Sie im Ordner auf das Kontrollkästchen, um es zu aktivieren, und klicken Sie anschließend auf **[!UICONTROL Eigenschaften]**.
 
 1. Wählen Sie die Registerkarte **[!UICONTROL Metadatenprofile]** aus, wählen Sie das Profil aus dem Popup-Menü aus und klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -212,14 +212,14 @@ Sie können ein Metadatenprofil aus einem Ordner im Menü **[!UICONTROL Tools]**
 
 1. Klicken Sie auf das [!DNL Experience Manager] -Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadatenprofile]**.
 1. Wählen Sie ein Metadatenprofil aus, das Sie aus einem oder mehreren Ordnern entfernen möchten.
-1. Klicken Sie auf **[!UICONTROL Metadatenprofil aus Ordner(n)]** entfernen, wählen Sie den Ordner oder mehrere Ordner aus, aus dem/denen Sie ein Profil entfernen möchten, und klicken Sie auf **[!UICONTROL Fertig]**.
+1. Klicken Sie auf **[!UICONTROL Metadatenprofil aus Ordner(n) entfernen]** und wählen Sie einen oder mehrere Ordner aus, aus dem bzw. denen ein Profil entfernt werden soll, und klicken Sie dann auf **[!UICONTROL Fertig]**.
 
    Sie können bestätigen, dass das Metadatenprofil nicht länger auf einen Ordner angewendet wird, da der Name in diesem Fall nicht mehr unter dem Ordner angezeigt wird.
 
 #### Entfernen von Metadatenprofilen aus Ordnern über &quot;Eigenschaften&quot; {#removing-metadata-profiles-from-folders-via-properties}
 
 1. Klicken Sie auf das [!DNL Experience Manager]-Logo und navigieren Sie zu **[!UICONTROL Assets]** und dann zu dem Ordner, aus dem Sie ein Metadatenprofil entfernen möchten.
-1. Klicken Sie im Ordner auf das Häkchen, um ihn auszuwählen, und klicken Sie dann auf **[!UICONTROL Eigenschaften]**.
+1. Klicken Sie im Ordner auf das Kontrollkästchen, um es zu aktivieren, und klicken Sie anschließend auf **[!UICONTROL Eigenschaften]**.
 1. Wählen Sie die Registerkarte **[!UICONTROL Metadatenprofile]** aus. Wählen Sie anschließend **[!UICONTROL Keine]** aus dem Dropdown-Menü aus und klicken Sie auf **[!UICONTROL Speichern]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
 ## Tipps und Einschränkungen {#best-practices-limitations}
@@ -234,7 +234,7 @@ Sie können ein Metadatenprofil aus einem Ordner im Menü **[!UICONTROL Tools]**
 >
 >* [Metadatenkonzepte und -verständnisse](metadata-concepts.md).
 >* [Bearbeiten von Metadateneigenschaften von mehreren Sammlungen](manage-collections.md#editing-collection-metadata-in-bulk)
-* [Import und Export von Metadaten in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+>* [Import und Export von Metadaten in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
