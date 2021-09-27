@@ -1,19 +1,19 @@
 ---
 title: Leistungsoptimierung
-seo-title: Leistungsoptimierung
+seo-title: Performance Optimization
 description: Hier erfahren Sie, wie Sie bestimmte Aspekte von AEM konfigurieren können, um die Leistung zu optimieren.
-seo-description: Hier erfahren Sie, wie Sie bestimmte Aspekte von AEM konfigurieren können, um die Leistung zu optimieren.
+seo-description: Learn how to configure certain aspects of AEM to optimize performance.
 uuid: a4d9fde4-a4c7-4ee5-99b6-29b0ee7dc35b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
-feature: Konfiguration
+feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fc42469e4b97f2f2c5d7489837012d31c63f86d
 workflow-type: tm+mt
-source-wordcount: '6659'
+source-wordcount: '6645'
 ht-degree: 73%
 
 ---
@@ -70,7 +70,7 @@ Doch auch nach dem Launch muss die Projektoptimierung fortgesetzt werden. Der La
 
 Da die Systembelastung variiert und sich die Leistungsprofile Ihres Systems im Laufe der Zeit verändern, sollte alle sechs bis zwölf Monate eine Leistungsanpassung oder eine Systemüberprüfung vorgenommen werden.
 
-### Reale Situationen simulieren  {#simulate-reality}
+### Reale Situationen simulieren {#simulate-reality}
 
 ![chlimage_1-4](assets/chlimage_1-4.jpeg)
 
@@ -78,7 +78,7 @@ Wenn Sie nach dem Launch einer Website feststellen, dass Leistungsprobleme auftr
 
 Die Simulation der Realität ist schwierig, und wie viel Aufwand Sie vernünftigerweise in &quot;real&quot; investieren wollen, hängt von der Art Ihres Projekts ab. „Real“ bedeutet nicht nur „realer Code“ und „realer Traffic“, sondern auch „realer Inhalt“, insbesondere was die Inhaltsgröße und Struktur anbelangt. Ihre Vorlagen können sich nämlich je nach Größe und Struktur des Repositorys völlig anders verhalten.
 
-### Konkrete Ziele festlegen  {#establish-solid-goals}
+### Konkrete Ziele festlegen {#establish-solid-goals}
 
 ![chlimage_1-5](assets/chlimage_1-5.jpeg)
 
@@ -86,13 +86,13 @@ Die Bedeutung der ordnungsgemäßen Festlegung von Leistungszielen ist nicht zu 
 
 Das Festlegen guter, konkreter Leistungsziele ist eine der schwierigsten Aufgaben. Oft empfiehlt es sich, echte Protokolle und Benchmarks von einer vergleichbaren Website heranzuziehen (z. B. vom Vorgänger der neuen Website).
 
-### Relevante Maßnahmen treffen  {#stay-relevant}
+### Relevante Maßnahmen treffen {#stay-relevant}
 
 ![chlimage_1-6](assets/chlimage_1-6.jpeg)
 
 Es ist wichtig, immer jeweils einen Engpass nach dem anderen zu optimieren. Wenn Sie mehrere Maßnahmen gleichzeitig treffen, ohne die Auswirkungen der einzelnen Optimierungen zu überprüfen, wissen Sie nicht, welche Optimierungsmaßnahme tatsächlich erfolgreich war.
 
-### Agile Iterationszyklen  {#agile-iteration-cycles}
+### Agile Iterationszyklen {#agile-iteration-cycles}
 
 ![chlimage_1-7](assets/chlimage_1-7.jpeg)
 
@@ -100,7 +100,7 @@ Im Zuge der Leistungsanpassung werden Werte immer wieder gemessen, analysiert, o
 
 Der Entwickler, der die Optimierung durchführt, sollte rasch erkennen können, ob mit einer Optimierung der Zielwert erreicht wurde. Dies ist eine wertvolle Information, denn sobald der Zielwert erreicht ist, ist die Optimierung abgeschlossen.
 
-## Allgemeine Leistungsrichtlinien  {#basic-performance-guidelines}
+## Allgemeine Leistungsrichtlinien {#basic-performance-guidelines}
 
 Im Allgemeinen sollten nicht gecachte HTML-Anforderungen weniger als 100 ms benötigen. Konkret wird Folgendes empfohlen:
 
@@ -156,7 +156,7 @@ Stellen Sie zur Leistungssteigerung die folgenden Überlegungen an:
 
 * 80 % aller Bearbeitungen werden in 20 % der Zeit durchgeführt, weshalb zu Spitzenzeiten viermal die durchschnittliche Datenrate anfällt. Dies ist Ihr Leistungsziel.
 
-## Leistungsüberwachung {#performance-monitoring}
+## Performance-Überwachung {#performance-monitoring}
 
 Leistung (oder fehlende Leistung) ist das Erste, was Ihre Benutzer bemerken. Deshalb ist die Leistung wie bei jeder Anwendung mit einer Benutzeroberfläche von größter Bedeutung. Um die Leistung Ihrer AEM zu optimieren, müssen Sie verschiedene Attribute der Instanz und deren Verhalten überwachen.
 
@@ -185,7 +185,7 @@ Es gibt einige Funktionsbereiche, die häufig für eine Leistungsminderung veran
 * Code der Anwendung (Ihres Projekts)
 * Suchfunktion
 
-### Grundregeln für die Leistung  {#basic-rules-regarding-performance}
+### Grundregeln für die Leistung {#basic-rules-regarding-performance}
 
 Gewisse Regeln sollten bei der Leistungsoptimierung beachtet werden:
 
@@ -200,7 +200,7 @@ Gewisse Regeln sollten bei der Leistungsoptimierung beachtet werden:
 >
 >Bedenken Sie, dass der zur Leistungsmessung verwendete Mechanismus häufig genau das beeinflusst, was Sie messen möchten. Sie sollten diese Aspekte stets berücksichtigen und dafür sorgen, dass ihre Auswirkungen möglichst gering gehalten werden. Insbesondere sollten Browser-Plug-ins deaktiviert werden.
 
-## Konfiguration zur Leistungsoptimierung  {#configuring-for-performance}
+## Konfiguration zur Leistungsoptimierung {#configuring-for-performance}
 
 Bestimmte Aspekte von AEM (bzw. des zugrunde liegenden Repositorys) können so konfiguriert werden, dass die Leistung optimiert wird. Im Folgenden werden Möglichkeiten und Vorschläge beschrieben. Überprüfen Sie zuerst, ob und wie Sie die beschriebene Funktionalität verwenden können, bevor Sie Änderungen vornehmen. 
 
@@ -217,7 +217,7 @@ Hier finden Sie die aktuellen Indizierungsinformationen:
 * [Best Practices für Abfragen und Indizierung](/help/sites-deploying/best-practices-for-queries-and-indexing.md)
 * [Anforderungen und Indizierung](/help/sites-deploying/queries-and-indexing.md) 
 
-### Gleichzeitige Verarbeitung von Workflows  {#concurrent-workflow-processing}
+### Gleichzeitige Verarbeitung von Workflows {#concurrent-workflow-processing}
 
 Begrenzen Sie die Anzahl der parallel ausgeführten Workflow-Prozesse, um die Leistung zu verbessern. Standardmäßig entspricht die Anzahl der gleichzeitig von der Workflow-Engine verarbeiteten Workflows der Anzahl der für die Java VM verfügbaren Prozessoren. Wenn Workflow-Schritte große Mengen an Verarbeitungsressourcen (RAM oder CPU) erfordern, kann die parallele Ausführung mehrerer dieser Workflows hohe Anforderungen an verfügbare Serverressourcen stellen.
 
@@ -240,7 +240,7 @@ Wenn Sie die Dienste [mit einem sling:OsgiConfig -Knoten](/help/sites-deploying/
 
 Sie müssen die Eigenschaft `queue.maxparallel` konfigurieren.
 
-#### Konfiguration in der Web-Konsole{#configuration-in-the-web-console} 
+#### Konfiguration in der Web-Konsole  {#configuration-in-the-web-console}
 
 Suchen Sie zum Konfigurieren dieser Dienste [mithilfe der Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) die vorhandenen Konfigurationselemente unter der Apache Sling Job Queue Configuration Service-Factory.
 
@@ -259,7 +259,7 @@ Zu den Themen, die Workflow-Modelle tatsächlich erstellen, gehören modellspezi
 
 `com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model`
 
-Daher können Sie eine Auftragswarteschlange für das Thema erstellen, das dem Auftragsthema Ihres Workflow-Modells entspricht. Die Konfiguration der Leistungseigenschaften der Warteschlange wirkt sich nur auf das Workflow-Modell aus, das die Aufträge generiert, die dem Warteschlangenthema entsprechen.
+Daher können Sie eine Auftragswarteschlange für das Thema erstellen, das dem Auftragsthema Ihres Workflow-Modells entspricht. Das Konfigurieren der leistungsbezogenen Eigenschaften der Warteschlange wirkt sich nur auf das Workflow-Modell aus, das die Aufträge generiert, die mit dem Warteschlangenthema übereinstimmen.
 
 Im folgenden Verfahren wird eine Auftragswarteschlange für einen Workflow erstellt, wobei als Beispiel der Workflow **DAM Update Asset** verwendet wird.
 
@@ -275,7 +275,7 @@ Im folgenden Verfahren wird eine Auftragswarteschlange für einen Workflow erste
 
    Die Werkskonfigurationen ähneln der Granite-Workflow-Warteschlange, die unter [Gleichzeitige Workflow-Verarbeitung](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing) beschrieben wird. Die Themeneigenschaft stimmt jedoch mit dem Thema Ihrer Workflow-Aufträge überein.
 
-### AEM DAM Asset Synchronization Service {#cq-dam-asset-synchronization-service}
+### AEM DAM-Asset-Synchronisierungsdienst {#cq-dam-asset-synchronization-service}
 
 `AssetSynchronizationService` dient zur Synchronisation von Assets von gemounteten Repositorys (z. B. LiveLink, Documentum). Standardmäßig wird hierbei alle 300 Sekunden (5 Minuten) eine Prüfung durchgeführt. Wenn Sie keine installierten Repositorys verwenden, können Sie diesen Dienst deaktivieren.
 
@@ -309,7 +309,7 @@ Im Folgenden wird ein standardisierter Ansatz für Leistungstests für eine AEM 
 
 Die Kontrolle ist ein zusätzlicher, alles umfassender Prozess, der nötig ist, sich aber nicht auf Tests beschränkt.
 
-### Überprüfung des Wissens  {#verification-of-knowledge}
+### Überprüfung des Wissens {#verification-of-knowledge}
 
 Der erste Schritt besteht darin, die grundlegenden für Tests erforderlichen Informationen zu dokumentieren:
 
@@ -322,7 +322,7 @@ Sie sollten die Architektur der für die Leistungstests verwendeten Testumgebung
 
 Sie benötigen eine Reproduktion Ihrer geplanten Produktions-Veröffentlichungsumgebung gemeinsam mit dem Dispatcher und Load Balancer.
 
-#### Anwendungsdiagramm  {#application-map}
+#### Anwendungsdiagramm {#application-map}
 
 Um einen Überblick zu erhalten, können Sie ein Diagramm von der Anwendung erstellen (möglicherweise können Sie ein Diagramm von Tests in der Autorenumgebung verwenden).
 
@@ -349,7 +349,7 @@ Nach der Auswahl der wichtigsten Anwendungsfälle können die KPIs (Key Performa
 * Anzahl der freien Verbindungen
 * Systemressourcen wie CPU und I/O-Zugriff
 
-### Testmethoden  {#test-methodologies}
+### Testmethoden {#test-methodologies}
 
 Im Folgenden werden vier Szenarien für das Definieren und Testen der Leistungsziele beschrieben:
 
@@ -360,7 +360,7 @@ Im Folgenden werden vier Szenarien für das Definieren und Testen der Leistungsz
 
 Es gelten die folgenden Prinzipien:
 
-#### Belastungsgrenze der Komponente{#component-breakpoints} 
+#### Belastungsgrenze der Komponente  {#component-breakpoints}
 
 * Jede Komponente hat eine bestimmte Belastungsgrenze in Bezug auf die Leistung. Dies bedeutet, dass eine Komponente bis zu einem gewissen Punkt eine gute Leistung erbringt, diese ab diesem Punkt aber rapide nachlässt.
 * Um einen vollständigen Überblick über die Anwendung zu erhalten, müssen Sie zunächst feststellen, wann bei Ihren Komponenten diese Belastungsgrenze erreicht ist.
@@ -380,7 +380,7 @@ Die Leistung muss bei durchschnittlicher Belastung und unter Spitzenlast geteste
 
 Beim Festlegen künftiger Ziele können alle Erfahrungen und Statistiken von einer vorhandenen Website hilfreich sein, z. B. der maximale Datenverkehr auf Ihrer Live-Website.
 
-#### Tests einzelner Komponenten  {#single-component-tests}
+#### Tests einzelner Komponenten {#single-component-tests}
 
 Schlüsselkomponenten müssen bei durchschnittlicher Belastung und unter Spitzenlast getestet werden.
 
@@ -410,7 +410,7 @@ Durch das Testen der kombinierten Komponenten erhalten Sie eine genauere Darstel
 |  | Ereignisse | 100 | 10 |  |  |
 |  | Aktivierungen | 20 | 20 |  | Simulation des Autorenverhaltens. |
 
-#### „Going Live“-Tests{#going-live-tests}
+#### „Going Live“-Tests {#going-live-tests}
 
 In den ersten Tagen nach dem Launch Ihrer Website ist mit erhöhtem Interesse zu rechnen. Dieses übersteigt wahrscheinlich die von Ihnen getesteten Spitzenwerte. Es wird dringend empfohlen, „Going Live“-Szenarien zu testen, um sicherzustellen, dass Ihr System einer solchen Situation gewachsen ist.
 
@@ -424,7 +424,7 @@ In den ersten Tagen nach dem Launch Ihrer Website ist mit erhöhtem Interesse zu
 
 #### Tests von Fehlerszenarien {#error-scenario-tests}
 
-Fehlerszenarien müssen auch getestet werden, um sicherzustellen, dass das System ordnungsgemäß reagiert. Dies umfasst nicht nur die Handhabung eines Fehlers selbst, sondern auch die möglichen Auswirkungen eines Fehlers auf die Leistung. Beispiel:
+Fehlerszenarien müssen auch getestet werden, um sicherzustellen, dass das System ordnungsgemäß reagiert. Dies umfasst nicht nur die Handhabung eines Fehlers selbst, sondern auch die möglichen Auswirkungen eines Fehlers auf die Leistung. Zum Beispiel:
 
 * Was passiert, wenn der Benutzer versucht, einen ungültigen Suchbegriff in das Suchfeld einzugeben?
 * Was passiert, wenn der Suchbegriff so allgemein ist, dass er eine übermäßige Anzahl von Ergebnissen zurückgibt?
@@ -501,11 +501,9 @@ Der Dispatcher bietet verschiedene integrierte Mechanismen zur Optimierung der L
 >* Andere Elemente, wie Cookies, Sitzungsdaten und Formulardaten, können nicht gespeichert werden.
 
 >
->
-Allgemein müssen für viele Caching-Strategien geeignete URLs ausgewählt werden, damit diese zusätzlichen Daten nicht benötigt werden.
+>Allgemein müssen für viele Caching-Strategien geeignete URLs ausgewählt werden, damit diese zusätzlichen Daten nicht benötigt werden.
 >
 >Mit der Dispatcher-Version 4.1.11 können Sie auch Antwortheader zwischenspeichern, siehe [Zwischenspeichern von HTTP-Antwortheadern](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache).
-
 
 ### Dispatcher-Cache-Verhältnis berechnen {#calculating-the-dispatcher-cache-ratio}
 
@@ -527,7 +525,7 @@ Wenn es keine direkte Entsprechung zwischen Publisher und Dispatcher gibt, müss
 >
 >Für eine optimale Leistung empfiehlt Adobe ein Cache-Verhältnis von 90 % bis 95 %.
 
-#### Verwenden einer einheitlichen Seitencodierung   {#using-consistent-page-encoding}
+#### Verwenden einer einheitlichen Seitencodierung  {#using-consistent-page-encoding}
 
 Mit der Dispatcher-Version 4.1.11 können Sie Antwort-Header cachen. Wenn Sie keine Antwort-Header im Dispatcher cachen, können Probleme auftreten, wenn Sie in der Kopfzeile Seitenkodierungsinformationen speichern. Wenn der Dispatcher in diesem Fall eine Seite aus dem Cache bereitstellt, wird die Standardkodierung des Webservers für die Seite verwendet. Es gibt zwei Möglichkeiten, um dieses Problem zu vermeiden:
 
@@ -556,7 +554,7 @@ www.myCompany.com/pictures/gallery.christmas.1.html
 >
 >Diese URL ruft dieselbe Seite und dieselbe Vorlage wie `gallery.html` auf. In der Vorlagendefinition können Sie angeben, welches Skript die Seite rendern soll, oder Sie können ein Skript für alle Seiten verwenden.
 
-#### Anpassen nach URL   {#customize-by-url}
+#### Anpassen nach URL  {#customize-by-url}
 
 Wenn Sie Benutzern die Möglichkeit geben, die Schriftgröße zu ändern (oder andere Layoutanpassungen vorzunehmen), stellen Sie sicher, dass die verschiedenen Anpassungen in der URL repräsentiert werden.
 
@@ -578,7 +576,7 @@ www.myCompany.com/news/main.large.html
 >
 >Unter Verwendung des Skript-Globbings der Vorlagendefinition können Sie ein anderes Skript festlegen, das die Seiten für das Drucken anzeigt.
 
-#### Invalidierung von als Titel verwendeten Bilddateien   {#invalidating-image-files-used-as-titles}
+#### Invalidierung von als Titel verwendeten Bilddateien  {#invalidating-image-files-used-as-titles}
 
 Wenn Sie Seitentitel oder anderen Text als Grafik rendern, sollten Sie die Dateien speichern, damit sie nach einer Inhaltsaktualisierung auf der Seite gelöscht werden:
 
@@ -593,7 +591,7 @@ Sie können beispielsweise den Titel der Seite `myPage.html` im `file myPage.tit
 >
 >Die Bilddatei ist nicht unbedingt tatsächlich in der AEM-Instanz vorhanden. Sie können ein Skript verwenden, das die Bilddatei dynamisch erstellt. Der Dispatcher speichert die Datei dann auf dem Webserver.
 
-#### Invalidierung von Bilddateien für die Navigation   {#invalidating-image-files-used-for-navigation}
+#### Invalidierung von Bilddateien für die Navigation  {#invalidating-image-files-used-for-navigation}
 
 Wenn Sie Bilder als Navigationseinträge verwenden, gehen Sie im Prinzip wie bei Titeln vor, das Verfahren ist nur etwas komplexer. Speichern Sie alle Navigationsgrafiken mit den Zielseiten. Wenn Sie zwei Bilder für den normalen und aktiven Status verwenden, können Sie die folgenden Skripts verwenden:
 
@@ -618,7 +616,7 @@ Es wird empfohlen, die Personalisierung auf den erforderlichen Bereich zu beschr
 Wenn Sie die einzelnen Seiten personalisieren (z. B. durch Einfügen des Namens des Benutzers in die Titelleiste), kann dies Auswirkungen auf die Leistung haben.
 
 >[!TIP]
->Informationen zum Zwischenspeichern gesicherter Inhalte finden Sie unter [Zwischenspeichern von geschützten Inhalten](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html) im Dispatcher-Handbuch.
+>Informationen zum Zwischenspeichern gesicherter Inhalte finden Sie unter [Zwischenspeichern von geschützten Inhalten](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=de) im Dispatcher-Handbuch.
 
 In Bezug auf das Mischen von beschränktem und öffentlichem Inhalt auf einer Seite sollten Sie eine Strategie in Betracht ziehen, die serverseitige Einfügungen im Dispatcher nutzt, oder clientseitige Einfügungen über Ajax im Browser.
 
@@ -626,11 +624,11 @@ In Bezug auf das Mischen von beschränktem und öffentlichem Inhalt auf einer Se
 >
 >Informationen zum Umgang mit gemischten öffentlichen und eingeschränkten Inhalten finden Sie unter [Einrichten von Sling Dynamic Include.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html)
 
-#### Sticky-Verbindungen   {#sticky-connections}
+#### Sticky-Verbindungen  {#sticky-connections}
 
 [Sticky-Verbindungen](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) stellen sicher, dass alle Dokumente für einen Benutzer auf demselben Server erstellt werden. Wenn ein Benutzer dieses Verzeichnis verlässt und später zurückkehrt, bleibt die Verbindung erhalten. Definieren Sie einen Ordner für alle Dokumente, die Sticky-Verbindungen für die Website benötigen. Speichern Sie möglichst keine anderen Dokumente in diesem Ordner. Dies wirkt sich auf den Lastenausgleich aus, wenn Sie personalisierte Seiten und Sitzungsdaten verwenden.
 
-#### MIME-Typen   {#mime-types}
+#### MIME-Typen  {#mime-types}
 
 Es gibt zwei Möglichkeiten, wie ein Browser den Typ einer Datei bestimmen kann:
 
@@ -672,7 +670,7 @@ Das Plattensubsystem auf diesem Server ist relativ schnell und entspricht einer 
 
 Die AEM-Konfiguration legt das Repository und den Datenspeicher auf demselben logischen Volume zusammen mit dem gesamten Betriebssystem und AEM Software ab. Auch das Zielverzeichnis für Sicherungen befindet sich in diesem logischen Dateisystem.
 
-#### Datenmengen  {#data-volumes}
+#### Datenmengen {#data-volumes}
 
 In der folgenden Tabelle werden die für die Sicherungs-Benchmarks verwendeten Datenmengen dargestellt. Zunächst wird der ursprüngliche Inhalt installiert, danach werden weitere bekannte Datenmengen hinzugefügt, um die Größe des gesicherten Inhalts zu steigern. Sicherungen werden in Inkrementen erstellt, um einen starken Inhaltszuwachs und die produzierte Tagesmenge nachzubilden. Die Verteilung der Inhalte (Seiten, Bilder, Tags) entspricht in etwa einer realistischen Asset-Zusammensetzung. Seiten, Bilder und Tags sind auf maximal 800 untergeordnete Seiten beschränkt. Jede Seite enthält Titel-, Flash-, Text/Bild-, Video-, Diashow-, Formular-, Tabellen-, Cloud- und Karussellkomponenten. Bilder werden aus einem Pool von 400 Dateien hochgeladen, deren Größe von 37 KB bis 594 KB reicht.
 

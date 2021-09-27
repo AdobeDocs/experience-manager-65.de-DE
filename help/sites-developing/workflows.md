@@ -1,8 +1,8 @@
 ---
 title: Entwickeln und Erweitern von Workflows
-seo-title: Entwickeln und Erweitern von Workflows
-description: AEM stellt mehrere Tools und Ressourcen zum Erstellen von Workflow-Modellen, Entwickeln von Workflow-Schritten und programmgesteuerten Interagieren mit Workflows bereit.
-seo-description: AEM stellt mehrere Tools und Ressourcen zum Erstellen von Workflow-Modellen, Entwickeln von Workflow-Schritten und programmgesteuerten Interagieren mit Workflows bereit.
+seo-title: Developing and Extending Workflows
+description: AEM bietet verschiedene Tools und Ressourcen für die Erstellung von Workflow-Modellen, die Entwicklung von Workflow-Schritten und für die programmgesteuerte Interaktion mit Workflows.
+seo-description: AEM provides several tools and resources for creating workflow models, developing workflow steps, and for programmatically interacting with workflows
 uuid: 5a857589-3b13-4519-bda2-b1dab6005550
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +10,17 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 8954e3df-3afa-4d53-a7e1-255f3b8f499f
 exl-id: 041b1767-8b6c-4887-a70d-abc96a116976
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 82b9b852fa3134f140f8de0bad229282979c8a30
 workflow-type: tm+mt
-source-wordcount: '1535'
-ht-degree: 76%
+source-wordcount: '1512'
+ht-degree: 73%
 
 ---
 
+
 # Entwickeln und Erweitern von Workflows{#developing-and-extending-workflows}
 
-AEM stellt mehrere Tools und Ressourcen zum Erstellen von Workflow-Modellen, Entwickeln von Workflow-Schritten und programmgesteuerten Interagieren mit Workflows bereit.
+AEM bietet verschiedene Tools und Ressourcen für die Erstellung von Workflow-Modellen, die Entwicklung von Workflow-Schritten und für die programmgesteuerte Interaktion mit Workflows.
 
 Mit Workflows können Sie Prozesse zum Verwalten von Ressourcen und Veröffentlichen von Inhalten in der AEM-Umgebung automatisieren. Workflows beinhalten eine Reihe von Schritten, wobei bei jedem Schritt eine diskrete Aufgabe ausgeführt wird. Sie können Logik und Laufzeitdaten verwenden, um zu entscheiden, wann ein Prozess fortgesetzt wird, und den nächsten Schritt unter mehreren möglichen Schritten auswählen.
 
@@ -46,7 +47,6 @@ Die Hauptaspekte sind unten beschrieben; die folgenden Seiten enthalten weitere 
 >* Informationen zu Änderungen der Datenspeicherorte finden Sie unter [Neustrukturierung von Repositorys in AEM 6.5](/help/sites-deploying/repository-restructuring.md) und [Best Practices für Workflows – Speicherorte](/help/sites-developing/workflows-best-practices.md#locations).
 
 >
-
 
 
 ## Modell {#model}
@@ -164,7 +164,6 @@ Standard-Workflows speichern bei der Ausführung Laufzeit- bzw. Verlaufsdaten. S
 >
 
 
-
 >[!CAUTION]
 >
 >In einem Übergangs-Workflow sollten Sie nicht **Zum Schritt wechseln** verwenden.
@@ -177,7 +176,7 @@ Standard-Workflows speichern bei der Ausführung Laufzeit- bzw. Verlaufsdaten. S
 >
 >Weitere Informationen, wie sich Übergangs-Workflows auf die Asset-Leistung auswirken, finden Sie unter [Best Practices für Assets](/help/assets/performance-tuning-guidelines.md#transient-workflows).
 
-### Unterstützung für mehrere Ressourcen  {#multi-resource-support}
+### Unterstützung für mehrere Ressourcen {#multi-resource-support}
 
 Die Aktivierung von **Multi Resource Support** für Ihr Workflow-Modell bedeutet, dass eine einzelne Workflow-Instanz gestartet wird, selbst wenn Sie mehrere Ressourcen auswählen. Diese werden als Paket angehängt.
 
@@ -217,6 +216,6 @@ In der Regel werden Workflows dazu benutzt, die Übermittlung von Formularen in 
 
 Wenn Sie ein neues Formular erstellen, kann die Übermittlung des Formulars problemlos einem Workflow-Modell zugewiesen werden, um beispielsweise Inhalte an einem bestimmten Ort im Repository zu speichern oder einen Benutzer über die Übermittlung des Formulars und der Inhalte zu benachrichtigen.
 
-### Workflows und Übersetzung  {#workflows-and-translation}
+### Workflows und Übersetzung {#workflows-and-translation}
 
 Workflows sind auch ein fester Bestandteil des [Übersetzungs](/help/sites-administering/translation.md)-Prozesses.
