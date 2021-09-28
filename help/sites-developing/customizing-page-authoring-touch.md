@@ -1,8 +1,8 @@
 ---
 title: Anpassung des Seiten-Authorings
-seo-title: Anpassung des Seiten-Authorings
+seo-title: Customizing Page Authoring
 description: AEM bietet verschiedene Möglichkeiten zum Anpassen der Funktionsweise des Seiten-Authorings.
-seo-description: AEM bietet verschiedene Möglichkeiten zum Anpassen der Funktionsweise des Seiten-Authorings.
+seo-description: AEM provides various mechanisms to enable you to customize page authoring functionality
 uuid: 9dc72d98-c5ff-4a00-b367-688ccf896526
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 273836ad0afd6466eac437bf7711e7dbabc1d5e9
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 80%
+source-wordcount: '1383'
+ht-degree: 77%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 80%
 
 AEM bietet verschiedene Möglichkeiten zum Anpassen der Funktionsweise des Seiten-Authorings (und der [Konsolen](/help/sites-developing/customizing-consoles-touch.md)) Ihrer Authoring-Instanz.
 
-* Clientlibs 
+* Clientlibs
 
    Clientlibs ermöglichen es Ihnen, die Standardimplementierung zu erweitern, um neue Funktionen zu realisieren und gleichzeitig die Standardfunktionen, -objekte und -methoden wiederzuverwenden. Bei der Anpassung können Sie Ihre eigene clientlib unter `/apps.` erstellen. Die neue clientlib muss:
 
@@ -52,8 +52,7 @@ Diese Funktionen können auf verschiedene Arten verwendet werden, um die Seiten-
 >* [Struktur der Touch-optimierten Benutzeroberfläche von AEM](/help/sites-developing/touch-ui-structure.md) für Details zu den strukturellen Bereichen, die beim Seiten-Authoring verwendet werden.
 
 >
->
-Dieses Thema wird auch in der [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html)-Sitzung [Anpassung der Benutzeroberfläche für AEM 6.0](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-user-interface-customization-for-aem6.html) behandelt.
+>Dieses Thema wird auch in der [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html)-Sitzung [Anpassung der Benutzeroberfläche für AEM 6.0](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-user-interface-customization-for-aem6.html) behandelt.
 
 >[!CAUTION]
 >
@@ -71,7 +70,7 @@ Dieses Thema wird auch in der [AEM Gems](https://docs.adobe.com/content/ddc/en/g
 
 Wenn Sie eine Seite bearbeiten, gibt es verschiedene verfügbare [Modi](/help/sites-authoring/author-environment-tools.md#page-modes). Diese Modi werden mithilfe von [Ebenen](/help/sites-developing/touch-ui-structure.md#layer) implementiert. Sie ermöglichen Zugriff auf verschiedene Funktionen für denselben Seiteninhalt. Die Standardebenen sind: Bearbeiten, Vorschau, Anmerken, Entwickler und Targeting.
 
-### Ebenenbeispiel: Live Copy-Status  {#layer-example-live-copy-status}
+### Ebenenbeispiel: Live Copy-Status {#layer-example-live-copy-status}
 
 Eine Standard-AEM-Instanz stellt die MSM-Ebene bereit. Diese Ebene greift auf Daten für [Multi-Site-Management](/help/sites-administering/msm.md) zu und hebt sie in der Ebene hervor.
 
@@ -124,11 +123,11 @@ Weitere Details zum Erstellen einer benutzerdefinierten Eigenschaft finden Sie i
 >
 >In diesem [Knowledge Base-Artikel](https://helpx.adobe.com/experience-manager/using/creating-custom-cq-tree.html) finden Sie ein Beispiel für die Implementierung einer benutzerdefinierten Eigenschaft in der klassischen Benutzeroberfläche.
 
-## Hinzufügen neuer Aktionen zu Komponenten-Symbolleisten  {#add-new-action-to-a-component-toolbar}
+## Hinzufügen neuer Aktionen zu Komponenten-Symbolleisten {#add-new-action-to-a-component-toolbar}
 
 Jede Komponente hat (in der Regel) eine Symbolleiste, die Zugriff auf eine Reihe von Aktionen bietet, die mit dieser Komponente durchgeführt werden können.
 
-### Codebeispiel  {#code-sample-2}
+### Codebeispiel {#code-sample-2}
 
 `aem-authoring-extension-toolbar-screenshot` ist ein Beispielpaket, das die Erstellung einer benutzerdefinierten Symbolleistenaktion zum Rendern von Komponenten demonstriert.
 
@@ -210,7 +209,7 @@ So erstellen Sie einen neuen integrierten Editor (innerhalb Ihrer clientlib):
 
 1. Geben Sie die Verknüpfung zwischen dem Editor und jedem Ressourcentyp an (wie in der Komponente), der ihn verwenden kann.
 
-#### Codebeispiel zum Erstellen eines neuen integrierten Editors  {#code-sample-for-creating-a-new-in-place-editor}
+#### Codebeispiel zum Erstellen eines neuen integrierten Editors {#code-sample-for-creating-a-new-in-place-editor}
 
 `aem-authoring-extension-inplace-editor` ist ein Beispielpaket, das zeigt, wie ein neuer Editor für die Bearbeitung im Kontext in AEM erstellt wird.
 
@@ -229,7 +228,7 @@ Es ist möglich, eine Komponente so zu konfigurieren, dass sie über mehrere int
 
 So fügen Sie eine neue Aktion zur Seitensymbolleiste hinzu, z. B. eine Aktion **Zurück zu Sites** (Konsole).
 
-### Codebeispiel  {#code-sample-3}
+### Codebeispiel {#code-sample-3}
 
 `aem-authoring-extension-header-backtosites` ist ein Beispielpaket, das die Erstellung einer benutzerdefinierten Kopfzeilenleistenaktion demonstriert, mit der der Benutzer zurück zur Sites-Konsole springt.
 
@@ -242,7 +241,11 @@ Den Code dieser Seite finden Sie auf GitHub.
 
 ## Anpassen des Aktivierungsanfrage-Workflows {#customizing-the-request-for-activation-workflow}
 
-Der standardmäßige Workflow **Aktivierungsanfrage** wird automatisch ausgelöst, wenn ein Inhaltsautor nicht über die erforderlichen Replikationsrechte verfügt.
+Der vordefinierte Workflow **Aktivierungsanfrage**:
+
+* Wird automatisch im entsprechenden Menü angezeigt, wenn ein Inhaltsautor **nicht über die entsprechenden Replikationsrechte** verfügt, **jedoch über die Mitgliedschaft** von DAM-Benutzern und -Autoren verfügt.
+
+* Andernfalls wird nichts angezeigt, da die Replikationsrechte entfernt wurden.
 
 Um bei dieser Aktivierung ein benutzerdefiniertes Verhalten zu erzielen, können Sie den Workflow **Aktivierungsanfrage** überlagern:
 
