@@ -1,8 +1,8 @@
 ---
 title: Oak-Abfragen und Indizierung
-seo-title: Oak-Abfragen und Indizierung
+seo-title: Oak Queries and Indexing
 description: Erfahren Sie, wie Sie Indizes in AEM konfigurieren.
-seo-description: Erfahren Sie, wie Sie Indizes in AEM konfigurieren.
+seo-description: Learn how to configure indexes in AEM.
 uuid: a1233d2e-1320-43e0-9b18-cd6d1eeaad59
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,12 +10,12 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
-feature: Konfiguration
+feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 7cd4b6918a8b0de68f9f5c6a79ab3b49e8ef6fc1
 workflow-type: tm+mt
-source-wordcount: '2881'
-ht-degree: 91%
+source-wordcount: '2868'
+ht-degree: 85%
 
 ---
 
@@ -35,7 +35,7 @@ Falls Oak eine nicht indizierte Abfrage findet, wird eine Protokollmeldung der S
 *WARN* Traversed 1000 nodes with filter Filter(query=select ...) consider creating an index or changing the query
 ```
 
-## Unterstützte Abfragesprachen  {#supported-query-languages}
+## Unterstützte Abfragesprachen {#supported-query-languages}
 
 Die Abfrage-Engine von Oak unterstützt folgende Sprachen:
 
@@ -44,7 +44,7 @@ Die Abfrage-Engine von Oak unterstützt folgende Sprachen:
 * SQL (veraltet)
 * JQOM
 
-## Indexer-Typen und Kostenberechnung  {#indexer-types-and-cost-calculation}
+## Indexer-Typen und Kostenberechnung {#indexer-types-and-cost-calculation}
 
 Beim auf Apache Oak basierenden Backend können mehrere Indexer als Plug-in für das Repository verwendet werden.
 
@@ -64,19 +64,19 @@ Zuerst wird die Abfrage in eine abstrakte Syntaxstruktur analysiert. Dann wird d
 
 Im nächsten Schritt werden von jedem Index die voraussichtlichen Kosten für die Abfrage berechnet. Anschließend werden die Ergebnisse des billigsten Index abgerufen. Diese Ergebnisse werden gefiltert, um sicherzustellen, dass der aktuelle Benutzer Schreibzugriff auf diese hat und sie mit der abgeschlossenen Abfrage übereinstimmen.
 
-## Konfigurieren der Indizes  {#configuring-the-indexes}
+## Konfigurieren der Indizes {#configuring-the-indexes}
 
 >[!NOTE]
 >
->Für ein großes Repository ist das Erstellen eines Index ein zeitaufwendiger Vorgang. Dies gilt sowohl für das erstmalige Erstellen des Index als auch für eine Neuindizierung (Neuerstellung des Index nach einer Änderung der Definition). Siehe auch [Fehlerbehebung bei Oak-Indizes](/help/sites-deploying/troubleshooting-oak-indexes.md) und [Langsame Neuindizierung verhindern](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
+>Für ein großes Repository ist das Erstellen eines Index ein zeitaufwendiger Vorgang. Dies gilt sowohl für die Ersterstellung eines Index als auch für die Neuindizierung (Neuerstellung eines Index nach Änderung der Definition). Siehe auch [Fehlerbehebung bei Oak-Indizes](/help/sites-deploying/troubleshooting-oak-indexes.md) und [Langsame Neuindizierung verhindern](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
 
-Wenn sehr große Repositorys neu indiziert werden müssen, insbesondere wenn MongoDB verwendet wird und eine Volltextindizierung erforderlich ist, empfiehlt es sich gegebenenfalls, eine Textvorextraktion durchzuführen und den Ausgangsindex mit Oak-run zu erstellen und anschließend eine Neuindizierung durchzuführen. 
+Wenn eine Neuindizierung in sehr großen Repositorys erforderlich ist, insbesondere bei der Verwendung von MongoDB und für Volltext-Indizes, sollten Sie die Textvorextraktion erwägen und oak-run verwenden, um den anfänglichen Index zu erstellen und die Neuindizierung durchzuführen.
 
 Indizes sind im Repository als Knoten unter dem Knoten **oak:index** konfiguriert.
 
 Der Typ des Indexknotens muss **oak:QueryIndexDefinition lauten.** Für jeden Indexer sind diverse Konfigurationsoptionen als Knoteneigenschaften verfügbar. Weitere Informationen finden Sie in den Konfigurationsdetails für jeden Indexer-Typ unten.
 
-### Der Eigenschaften-Index  {#the-property-index}
+### Der Eigenschaften-Index {#the-property-index}
 
 Der Eigenschaften-Index ist für Abfragen mit Eigenschaftenbeschränkungen und ohne Volltext geeignet. Der Index kann wie folgt konfiguriert werden:
 
@@ -101,9 +101,9 @@ Beim Eigenschaften-Index sind folgende Konfigurationsoptionen verfügbar:
 * Falls für die Kennzeichnung **unique** der Wert **true** festgelegt ist, wird dadurch eine Eindeutigkeitsbeschränkung auf den Eigenschaften-Index angewendet.
 
 * Mit der Eigenschaft **declaringNodeTypes** können Sie einen bestimmten Knotentyp angeben, der für den Index gilt.
-* Falls für die Kennzeichnung **reindex** der Wert **true** festgelegt ist, wird eine vollständige Neuindizierung des Inhalts ausgelöst.
+* Das Flag **reindex**, das bei Festlegung auf **true** eine vollständige Neuindizierung des Inhalts Trigger.
 
-### Der geordnete Index  {#the-ordered-index}
+### Der geordnete Index {#the-ordered-index}
 
 Der geordnete Index ist eine Erweiterung des Eigenschaften-Index. Er ist allerdings veraltet. Indizes dieses Typs müssen durch den [Lucene-Eigenschaftsindex](#the-lucene-property-index) ersetzt werden.
 
@@ -115,7 +115,7 @@ Falls ein Volltext-Index konfiguriert ist, wird dieser für alle Abfragen mit Vo
 
 Falls kein Volltext-Index konfiguriert ist, werden Abfragen mit Volltext-Bedingungen nicht wie erwartet verarbeitet.
 
-Da der Index über einen asynchronen Hintergrund-Thread aktualisiert wird, sind bestimmte Volltext-Suchen für einen kurzen Zeitraum nicht verfügbar, bis die Prozesse im Hintergrund beendet sind.
+Da der Index über einen asynchronen Hintergrund-Thread aktualisiert wird, sind einige Volltextsuchen für einen kurzen Zeitraum nicht verfügbar, bis die Hintergrundprozesse abgeschlossen sind.
 
 Sie können einen Lucene-Volltext-Index wie folgt konfigurieren:
 
@@ -136,7 +136,7 @@ Für den Lucene-Index sind folgende Konfigurationsoptionen verfügbar:
 * Die Eigenschaft **excludePropertyNames** , die eine Liste von Eigenschaftsnamen definiert - Eigenschaften, die aus dem Index ausgeschlossen werden sollen.
 * Die Kennzeichnung **reindex**, die eine vollständige Neuindizierung von Inhalt auslöst, wenn für sie **true** festgelegt ist.
 
-### Der Lucene-Eigenschaften-Index  {#the-lucene-property-index}
+### Der Lucene-Eigenschaften-Index {#the-lucene-property-index}
 
 Ab **Oak 1.0.8** kann Lucene zum Erstellen von Indizes mit Eigenschaftenbeschränkungen ohne Volltext verwendet werden.
 
@@ -148,28 +148,28 @@ Sehen wir uns folgende Beispielabfrage an:
 select * from [nt:base] where [alias] = '/admin'
 ```
 
-Um einen Lucene-Eigenschaften-Index für die obige Abfrage zu definieren, können Sie folgende Definition hinzufügen, indem Sie unter **oak:index:** einen neuen Knoten erstellen.
+Um einen Lucene-Eigenschaftsindex für die obige Abfrage zu definieren, können Sie die folgende Definition hinzufügen, indem Sie einen neuen Knoten unter **oak:index:** erstellen.
 
 * **Name:** `LucenePropertyIndex`
 * **Typ:** `oak:QueryIndexDefinition`
 
 Sobald der Knoten erstellt wurde, fügen Sie die folgenden Eigenschaften hinzu:
 
-* **type:**
+* **Typ:**
 
-   ```
+   ```xml
    lucene (of type String)
    ```
 
 * **asynchron:**
 
-   ```
+   ```xml
    async (of type String)
    ```
 
 * **fulltextEnabled:**
 
-   ```
+   ```xml
    false (of type Boolean)
    ```
 
@@ -199,7 +199,7 @@ Der Standard-Analyzer für einen Index wird im untergeordneten Knoten `default` 
 >
 >Eine Liste der verfügbaren Analyzer finden Sie in der API-Dokumentation der Lucene-Version, die Sie verwenden.
 
-#### Direktes Festlegen der Analyzer-Klasse  {#specifying-the-analyzer-class-directly}
+#### Direktes Festlegen der Analyzer-Klasse {#specifying-the-analyzer-class-directly}
 
 Falls Sie einen vorkonfigurierten Analyzer verwenden möchten, können Sie diesen wie folgt konfigurieren:
 
@@ -290,7 +290,7 @@ Die Integration in AEM erfolgt auf Repository-Ebene, damit Solr als möglicher I
 
 Die Konfiguration als in die AEM-Instanz eingebetteter Server oder als Remote-Server ist möglich.
 
-### Konfigurieren von AEM mit einem eingebetteten Solr-Server  {#configuring-aem-with-an-embedded-solr-server}
+### Konfigurieren von AEM mit einem eingebetteten Solr-Server {#configuring-aem-with-an-embedded-solr-server}
 
 >[!CAUTION]
 >
@@ -319,12 +319,12 @@ Sie können den eingebetteten Solr-Server wie folgt konfigurieren:
 
 1. Speichern Sie die Änderungen.
 
-### Konfigurieren von AEM mit einem einzelnen Remote-Solr-Server  {#configuring-aem-with-a-single-remote-solr-server}
+### Konfigurieren von AEM mit einem einzelnen Remote-Solr-Server {#configuring-aem-with-a-single-remote-solr-server}
 
-AEM kann auch mit einer remoten Solr-Server-Instanz konfiguriert werden:
+AEM kann auch für die Verwendung mit einer Remote-Solr-Serverinstanz konfiguriert werden:
 
 1. Laden Sie die neueste Version von Solr herunter und extrahieren Sie diese. Weitere Informationen zur Vorgehensweise finden Sie in der Dokumentation zur [Apache Solr-Installation](https://cwiki.apache.org/confluence/display/solr/Installing+Solr).
-1. Erstellen Sie zwei Solr-Shards. Erstellen Sie dazu Ordner für jedes Shard in dem Ordner, in den Solr entpackt wurde:
+1. Erstellen Sie zwei Solr-Shards. Erstellen Sie dazu Ordner für jede Schattierung im Ordner, in dem Solr entpackt wurde:
 
    * Erstellen Sie für das erste Shard folgenden Ordner:
 
@@ -382,9 +382,9 @@ AEM kann auch mit einer remoten Solr-Server-Instanz konfiguriert werden:
 
 1. Speichern Sie die Änderungen.
 
-#### Empfohlene Konfiguration für Solr  {#recommended-configuration-for-solr}
+#### Empfohlene Konfiguration für Solr {#recommended-configuration-for-solr}
 
-Unten sehen Sie ein Beispiel für eine Grundkonfiguration, die mit allen drei Solr-Bereitstellungen verwendet werden kann, die in diesem Artikel beschrieben sind. Diese Konfiguration basiert auf den dedizierten Eigenschaften-Indizes, die bereits in AEM vorhanden sind, und sollte nicht mit anderen Anwendungen verwendet werden.
+Unten sehen Sie ein Beispiel für eine Grundkonfiguration, die mit allen drei Solr-Bereitstellungen verwendet werden kann, die in diesem Artikel beschrieben sind. Es unterstützt die dedizierten Eigenschaftenindizes, die bereits in AEM vorhanden sind und nicht mit anderen Anwendungen verwendet werden sollten.
 
 Für die richtige Verwendung müssen Sie die Inhalte im Archiv direkt im Solr-Basisverzeichnis speichern. Bei Bereitstellungen mit mehreren Knoten muss der Inhalt direkt in den Stammorder der einzelnen Knoten gespeichert werden.
 
@@ -403,7 +403,7 @@ Sie können diese Tools aufrufen, indem Sie vom AEM-Begrüßungsbildschirm zu **
 
 Weitere Informationen zur Verwendung der Tools finden Sie in der Dokumentation zum [Vorgangs-Dashboard](/help/sites-administering/operations-dashboard.md).
 
-#### Erstellen von Eigenschaften-Indizes über OSGi  {#creating-property-indexes-via-osgi}
+#### Erstellen von Eigenschaften-Indizes über OSGi {#creating-property-indexes-via-osgi}
 
 Das ACS Commons-Paket enthält auch OSGi-Konfigurationen, die zum Erstellen von Eigenschaften-Indizes verwendet werden können.
 
@@ -423,7 +423,7 @@ Am einfachsten erhalten Sie die erforderlichen Informationen zu der ausgeführte
 
 Falls dies aus irgendeinem Grund nicht möglich ist, können Sie die Indizierungsprotokolle in einer Datei zusammenfassen und diese zum Beheben des spezifischen Problems verwenden.
 
-#### Aktivieren der Protokollierung  {#enable-logging}
+#### Aktivieren der Protokollierung {#enable-logging}
 
 Um die Protokollierung zu aktivieren, müssen Sie Protokolle auf **DEBUG**-Ebene für die Kategorien aktivieren, die für Oak-Indizierung und -Abfragen gelten. Diese Kategorien sind: 
 
@@ -457,7 +457,7 @@ Da die Indizierungskonfiguration in den meisten Fällen unter dem Knoten `/oak:i
 
 Falls sich die Indexkonfiguration an einem anderen Speicherort befindet, ändern Sie den Pfad entsprechend.
 
-#### MBean-Ausgabe  {#mbean-output}
+#### MBean-Ausgabe {#mbean-output}
 
 In einigen Fällen ist es hilfreich, die Ausgabe Index-spezifischer MBeans für das Debuggen bereitzustellen. Gehen Sie dazu wie folgt vor:
 
