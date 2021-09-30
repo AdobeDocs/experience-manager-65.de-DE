@@ -1,8 +1,8 @@
 ---
 title: SAML 2.0-Authentifizierungs-Handler
-seo-title: SAML 2.0-Authentifizierungs-Handler
+seo-title: SAML 2.0 Authentication Handler
 description: Hier finden Sie Informationen zum SAML 2.0-Authentifizierungs-Handler in AEM.
-seo-description: Hier finden Sie Informationen zum SAML 2.0-Authentifizierungs-Handler in AEM.
+seo-description: Learn about the SAML 2.0 Authentication Handler in AEM.
 uuid: 51f97315-350a-42a4-af2c-2de87307c6ad
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6bc60122d2512a6f58c0204cd240a1b99a37ed93
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 63%
+source-wordcount: '842'
+ht-degree: 59%
 
 ---
 
@@ -36,7 +36,7 @@ Dieser Handler speichert die verschlüsselte SAML-Antwortnachricht im Benutzerkn
 >
 >Einen End-to-End-Community-Artikel finden Sie [hier](https://helpx.adobe.com/de/experience-manager/using/aem63_saml.html): Integrieren von SAML mit „Adobe Experience Manager“.
 
-## Konfigurieren des SAML 2.0-Authentifizierungs-Handlers  {#configuring-the-saml-authentication-handler}
+## Konfigurieren des SAML 2.0-Authentifizierungs-Handlers {#configuring-the-saml-authentication-handler}
 
 Die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) bietet Zugriff auf die [SAML](http://saml.xml.org/saml-specifications) 2.0-Authentifizierungs-Handler-Konfiguration namens **Adobe Granite SAML 2.0 Authentication Handler**. Die folgenden Eigenschaften können festgelegt werden.
 
@@ -50,10 +50,9 @@ Die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) bietet Zugriff auf 
 >
 
 
-
 >[!NOTE]
 >
->SAML-Assertionen werden signiert und optional verschlüsselt. Damit dies funktioniert, müssen Sie zumindest das öffentliche Zertifikat des Identitätsanbieters im TrustStore angeben. Weitere Informationen finden Sie in [Hinzufügen des Identitätsanbieterzertifikats zum TrustStore](/help/sites-administering/saml-2-0-authenticationhandler.md#add-the-idp-certificate-to-the-aem-truststore).
+>SAML-Assertionen werden signiert und optional verschlüsselt. Damit dies funktioniert, müssen Sie mindestens das öffentliche Zertifikat des Identitätsanbieters im TrustStore bereitstellen. Weitere Informationen finden Sie in [Hinzufügen des Identitätsanbieterzertifikats zum TrustStore](/help/sites-administering/saml-2-0-authenticationhandler.md#add-the-idp-certificate-to-the-aem-truststore).
 
 **** PathRepository-Pfad, für den dieser Authentifizierungs-Handler von Sling verwendet werden soll. Wenn dieser leer ist, wird der Authentifizierungs-Handler deaktiviert.
 
