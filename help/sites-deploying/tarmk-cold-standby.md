@@ -1,8 +1,8 @@
 ---
 title: Ausführen von AEM mit der TarMK-Cold-Standby-Funktion
-seo-title: Ausführen von AEM mit der TarMK-Cold-Standby-Funktion
+seo-title: How to Run AEM with TarMK Cold Standby
 description: Erfahren Sie, wie Sie eine TarMK-Cold-Standby-Instanz erstellen, konfigurieren und verwalten.
-seo-description: Erfahren Sie, wie Sie eine TarMK-Cold-Standby-Instanz erstellen, konfigurieren und verwalten.
+seo-description: Learn how to create, configure and maintain a TarMK Cold Standby setup.
 uuid: 004fdf3e-517c-452b-8db1-a47d6b31d8ba
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,12 +10,12 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
-feature: Konfiguration
+feature: Configuring
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
-source-git-commit: d9565be9183bd4485036d99869585a79999be54b
+source-git-commit: 687203bf418962877a63b2fe77d8bdd3791cd4d9
 workflow-type: tm+mt
-source-wordcount: '2719'
-ht-degree: 82%
+source-wordcount: '2733'
+ht-degree: 81%
 
 ---
 
@@ -34,6 +34,16 @@ Inhalte werden linear zwischen der primären Instanz und den Standby-Instanzen s
 >Die Cold-Standby-Funktion ist für Szenarien bestimmt, in denen eine hohe Verfügbarkeit für **author**-Instanzen erforderlich ist. In Situationen, in den eine hohe Verfügbarkeit für **publish**-Instanzen unter Verwendung des Tar-Mikrokernels erforderlich ist, empfiehlt Adobe den Einsatz einer Veröffentlichungsfarm.
 >
 >Weitere Informationen zu verfügbaren Implementierungen finden Sie auf der Seite [Verfügbare Implementierungen](/help/sites-deploying/recommended-deploys.md). 
+
+>[!NOTE]
+>
+>Wenn die Standby-Instanz eingerichtet ist oder vom Primären Knoten abgeleitet wird, ermöglicht sie nur den Zugriff auf die folgenden beiden Konsolen (für administrative Aktivitäten):
+>
+>* CRXDE Lite
+>* OSGi-Webkonsole
+
+>
+>Andere Konsolen sind nicht verfügbar.
 
 ## Funktionsweise {#how-it-works}
 
@@ -74,7 +84,7 @@ Darüber hinaus können Sie festlegen, welche Standby-Instanzen eine Verbindung 
 >
 >Es wird empfohlen, einen Lastenausgleich zwischen dem Dispatcher und den Servern hinzuzufügen, die Teil der Cold-Standby-Konfiguration bilden. Der Lastenausgleich sollte so konfiguriert werden, dass Benutzer-Traffic nur an die **primäre** Instanz weitergeleitet wird. Dies soll die Konsistenz fördern und verhindern, dass Inhalte auf der Standby-Instanz mit anderen Mitteln als dem Cold-Standby-Mechanismus kopiert werden.
 
-## Erstellen einer TarMK-Cold-Standby-Konfiguration für AEM  {#creating-an-aem-tarmk-cold-standby-setup}
+## Erstellen einer TarMK-Cold-Standby-Konfiguration für AEM {#creating-an-aem-tarmk-cold-standby-setup}
 
 >[!CAUTION]
 >
@@ -84,8 +94,7 @@ Darüber hinaus können Sie festlegen, welche Standby-Instanzen eine Verbindung 
 >* von org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService zu org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
 
 >
->
-Stellen Sie sicher, dass Sie die erforderlichen Konfigurationsanpassungen vornehmen, um dieser Änderung Rechnung zu tragen.
+>Stellen Sie sicher, dass Sie die erforderlichen Konfigurationsanpassungen vornehmen, um dieser Änderung Rechnung zu tragen.
 
 Um eine TarMK-Cold-Standby-Konfiguration zu erstellen, müssen Sie zuerst die Standby-Instanzen erstellen. Erstellen Sie hierzu an einem neuen Speicherort eine Dateisystemkopie des gesamten Installationsordners der primären Instanz. Anschließend können Sie jede Instanz mit einem Ausführungsmodus starten, der die Rolle der Instanz angibt (`primary` oder `standby`).
 
@@ -291,7 +300,7 @@ Die folgenden OSGi-Einstellungen sind für den Cold-Standby-Dienst verfügbar:
 >
 >Am einfachsten geschieht dies durch Löschen der Datei *sling.id* auf der Standby-Instanz und Neustarten der Instanz.
 
-## Failover-Verfahren  {#failover-procedures}
+## Failover-Verfahren {#failover-procedures}
 
 Für den Fall, dass die primäre Instanz aus irgendeinem Grund ausfällt, können Sie festlegen, dass eine der Standby-Instanzen die Rolle der primären Instanz übernimmt. Hierzu müssen Sie den Ausführungsmodus für den Start wie nachfolgend beschrieben ändern:
 
@@ -396,7 +405,7 @@ Es kann länger als üblich dauern, bis die Synchronisierung der Standby-Instanz
 
 Alternativ dazu kann das Repository der primären Instanz nach Durchführung der Komprimierung auf der primären Instanz manuell auf die Standby-Instanz kopiert werden, wodurch die Standby-Instanz bei jeder Komprimierung neu erstellt wird.
 
-### Automatische Datenspeicherbereinigung  {#data-store-garbage-collection}
+### Automatische Datenspeicherbereinigung {#data-store-garbage-collection}
 
 Es ist wichtig, hin und wieder eine Speicherbereinigung (Garbage Collection) für die Dateidatenspeicher-Instanz durchzuführen, da andernfalls gelöschte Binärdateien im Dateisystem bleiben und mit der Zeit den Festplattenspeicherplatz belegen. Gehen Sie wie folgt vor, um eine Speicherbereinigung durchzuführen:
 
