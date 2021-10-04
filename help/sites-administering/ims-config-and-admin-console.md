@@ -1,8 +1,8 @@
 ---
 title: Adobe IMS-Authentifizierung und  [!DNL Admin Console] Unterstützung für AEM Managed Services
-seo-title: Adobe IMS-Authentifizierung und  [!DNL Admin Console] Unterstützung für AEM Managed Services
+seo-title: Adobe IMS Authentication and [!DNL Admin Console] Support for AEM Managed Services
 description: Erfahren Sie, wie Sie den  [!DNL Admin Console] in AEM verwenden.
-seo-description: Erfahren Sie, wie Sie den  [!DNL Admin Console] in AEM verwenden.
+seo-description: Learn how to use the [!DNL Admin Console] in AEM.
 uuid: 3f5b32c7-cf62-41a4-be34-3f71bbf224eb
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
-feature: Sicherheit
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+feature: Security
+source-git-commit: 3f55ebfe3b1603a573fcb77155227c449c6c0fbb
 workflow-type: tm+mt
-source-wordcount: '1692'
+source-wordcount: '1688'
 ht-degree: 65%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 65%
 >[!NOTE]
 >
 >Beachten Sie, dass diese Funktion nur für Kunden von Adobe Managed Services verfügbar ist.
+
+>[!NOTE]
+>
+>Die IMS-Anmeldung für AEM unterstützt keine verschachtelten Gruppen in der Admin Console.
 
 ## Einführung {#introduction}
 
@@ -84,7 +88,7 @@ Je nach der Größe des Kunden und den bevorzugten Einstellungen gibt es drei M�
 1. Hochladen einer CSV-Datei mit Benutzern
 1. Synchronisieren von Benutzern und Gruppen aus dem Active Directory des Kunden
 
-#### Manuelles Hinzufügen über [!DNL Admin Console] Benutzeroberfläche {#manual-addition-through-admin-console-ui}
+#### Manuelles Hinzufügen über die [!DNL Admin Console]-Benutzeroberfläche {#manual-addition-through-admin-console-ui}
 
 Benutzer und Gruppen können manuell in der [!DNL Admin Console] -Benutzeroberfläche erstellt werden. Diese Methode kann verwendet werden, wenn nur wenige Benutzer verwaltet werden müssen, z. B. weniger als 50 AEM-Benutzer.
 
@@ -198,7 +202,7 @@ Vorhandene Benutzer im AEM-Repository (lokal über LDAP oder SAML bezogen) könn
 
 Dieses Dienstprogramm wird von Ihrem AMS-Team im Rahmen der IMS-Bereitstellung ausgeführt.
 
-### Verwalten von Berechtigungen und ACLs in AEM  {#managing-permissions-and-acls-in-aem}
+### Verwalten von Berechtigungen und ACLs in AEM {#managing-permissions-and-acls-in-aem}
 
 Zugriffssteuerung und Zugriffsberechtigungen werden weiterhin in AEM verwaltet. Dies kann mithilfe separater Benutzergruppen aus IMS erreicht werden (z. B. AEM-GRP-008 im Beispiel unten), sowie durch lokale Gruppen, in denen die Berechtigungen und Zugriffsrechte definiert sind. Die von IMS synchronisierten Benutzergruppen können lokalen Gruppen zugewiesen werden und die Berechtigungen erben.
 
