@@ -1,8 +1,8 @@
 ---
 title: Veröffentlichen von Seiten
-seo-title: Veröffentlichen von Seiten
+seo-title: Publishing Pages
 description: Veröffentlichen von Seiten
-seo-description: 'null'
+seo-description: null
 uuid: 57795e4a-e528-4e74-ad9c-e13f868daebb
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 1f5eb646-acc7-49d5-b839-e451e68ada9e
 docset: aem65
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9946bfd3c2701a37d13e6eb6b4c19562ef77d24c
 workflow-type: tm+mt
-source-wordcount: '1612'
-ht-degree: 88%
+source-wordcount: '1661'
+ht-degree: 85%
 
 ---
 
@@ -31,17 +31,14 @@ Sie können eine Seite auch sofort oder zu einem vordefinierten künftigen Zeitp
 >Manche Begriffe im Zusammenhang mit dem Veröffentlichen können leicht verwechselt werden:
 >
 >* **Veröffentlichen/Veröffentlichung rückgängig machen**
-   >  Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Publishing-Umgebung verfügbar machen (oder dies rückgängig machen).
-   >
-   >
-* **Aktivieren/Deaktivieren**
+   >  Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Veröffentlichungsumgebung verfügbar machen (oder dies rückgängig machen).
+>
+>* **Aktivieren/Deaktivieren**
    >  Diese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung.
-   >
-   >
-* **Replizieren/Replikation**
+>
+>* **Replizieren/Replikation**
    >  Dies sind die technischen Begriffe, die die Verschiebung von Daten (z. B. Seiteninhalt, Dateien, Code, Benutzerkommentare) von einer Umgebung in eine andere beschreiben, z. B. bei der Veröffentlichung oder umgekehrten Replizierung von Benutzerkommentaren.
 >
-
 
 
 >[!NOTE]
@@ -55,12 +52,11 @@ Sie können eine Seite auch sofort oder zu einem vordefinierten künftigen Zeitp
 >
 
 
-
 ## Veröffentlichen von Seiten {#publishing-pages-1}
 
 Abhängig davon, wo Sie sich gerade befinden, können Sie Veröffentlichungen folgendermaßen vornehmen:
 
-* [Im Seiteneditor](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor)
+* [Im Seiten-Editor](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor)
 * [In der Sites-Konsole](/help/sites-authoring/publishing-pages.md#publishing-from-the-console)
 
 ### Veröffentlichungen im Editor {#publishing-from-the-editor}
@@ -82,7 +78,7 @@ Wenn Sie eine Seite bearbeiten, kann sie direkt im Editor veröffentlicht werden
 
    ![chlimage_1](assets/chlimage_1.png)
 
-1. Mit **Veröffentlichen** wird die Seite in der Publishing-Umgebung repliziert. Im Seiteneditor wird ein Hinweis angezeigt, in dem die Veröffentlichung bestätigt wird.
+1. Mit **Veröffentlichen** wird die Seite in der Veröffentlichungsumgebung repliziert. Im Seiteneditor wird ein Hinweis angezeigt, in dem die Veröffentlichung bestätigt wird.
 
    ![screen_shot_2018-03-21at152840](assets/screen_shot_2018-03-21at152840.png)
 
@@ -94,14 +90,18 @@ Wenn Sie eine Seite bearbeiten, kann sie direkt im Editor veröffentlicht werden
 >
 >Im Editor kann nur eine teilweise Veröffentlichung vorgenommen werden, d. h. nur die ausgewählten und keine untergeordneten Seiten werden veröffentlicht.
 
+>[!NOTE]
+>
+>Seiten, auf die im Editor [Aliase](/help/sites-authoring/editing-page-properties.md#advanced) zugegriffen wird, können nicht veröffentlicht werden. Veröffentlichungsoptionen im Editor sind nur für Seiten verfügbar, auf die über die tatsächlichen Pfade zugegriffen wird.
+
 ### Veröffentlichungen über die Konsole {#publishing-from-the-console}
 
 In der Sites-Konsole gibt es zwei Möglichkeiten zur Veröffentlichung:
 
-* [Quick Publish ](/help/sites-authoring/publishing-pages.md#quick-publish)
-* [Veröffentlichung verwalten ](/help/sites-authoring/publishing-pages.md#manage-publication)
+* [Quick Publish](/help/sites-authoring/publishing-pages.md#quick-publish)
+* [Veröffentlichung verwalten](/help/sites-authoring/publishing-pages.md#manage-publication)
 
-#### Quick Publish   {#quick-publish}
+#### Quick Publish {#quick-publish}
 
 **Quick Publish** wird für einfache Fälle verwendet. Die ausgewählten Seiten werden damit sofort ohne weitere Interaktion veröffentlicht. Aus diesem Grund werden auch alle nicht-veröffentlichten Verweise ebenfalls automatisch veröffentlicht.
 
@@ -121,7 +121,7 @@ So veröffentlichen Sie eine Seite mit der Funktion „Quick Publish“:
 >
 >Die Option „Quick Publish“ ermöglicht nur die teilweise Veröffentlichung, d. h. nur die ausgewählten und keine untergeordneten Seiten werden veröffentlicht.
 
-#### Veröffentlichung verwalten   {#manage-publication}
+#### Veröffentlichung verwalten {#manage-publication}
 
 **Veröffentlichung verwalten** bietet mehr Optionen als „Quick Publish“. Mit dieser Funktion können Sie auch untergeordnete Seiten einschließen, Verweise anpassen, alle nötigen Workflows starten und bei Bedarf zu einem späteren Zeitpunkt veröffentlichen.
 
@@ -210,21 +210,25 @@ So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgäng
 
 Wenn Sie die Veröffentlichung einer Seite rückgängig machen, wird sie aus der Veröffentlichungsumgebung gelöscht, sodass sie nicht mehr für Ihre Leser verfügbar ist.
 
-[Ähnlich wie beim Veröffentlichen](/help/sites-authoring/publishing-pages.md#publishing-pages) können Sie auch die Veröffentlichung einer oder mehrerer Seiten rückgängig machen:
+[Ähnlich wie beim Veröffentlichen](/help/sites-authoring/publishing-pages.md#publishing-pages) können Sie auch die Veröffentlichung einer oder mehrerer Seiten aufheben:
 
-* [Im Seiteneditor](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-editor)
+* [Im Seiten-Editor](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-editor)
 * [In der Sites-Konsole](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-console)
 
-### Rückgängigmachen der Veröffentlichung im Editor   {#unpublishing-from-the-editor}
+### Rückgängigmachen der Veröffentlichung im Editor {#unpublishing-from-the-editor}
 
 Wenn Sie die Veröffentlichung einer von Ihnen bearbeiteten Seite rückgängig machen möchten, wählen Sie analog zur [Veröffentlichung einer Seite](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor) im Menü **Seiteninformationen** die Option **Veröffentlichung der Seite rückgängig machen** aus.
 
-### Rückgängigmachen der Veröffentlichung in der Konsole   {#unpublishing-from-the-console}
+>[!NOTE]
+>
+>Seiten, auf die im Editor [Aliase](/help/sites-authoring/editing-page-properties.md#advanced) zugegriffen wird, können nicht depubliziert werden. Veröffentlichungsoptionen im Editor sind nur für Seiten verfügbar, auf die über die tatsächlichen Pfade zugegriffen wird.
 
-Ebenso wie Sie [die Option „Veröffentlichung verwalten“ zur Veröffentlichung verwenden](/help/sites-authoring/publishing-pages.md#manage-publication), können Sie damit auch eine Veröffentlichung rückgängig machen.
+### Rückgängigmachen der Veröffentlichung in der Konsole {#unpublishing-from-the-console}
+
+Ebenso wie Sie [die Option „Veröffentlichung verwalten“ zur Veröffentlichung verwenden](/help/sites-authoring/publishing-pages.md#manage-publication), können Sie damit auch eine Veröffentlichung aufheben.
 
 1. Wählen Sie in der Sites-Konsole die entsprechenden Seiten aus und klicken Sie auf die Schaltfläche **Veröffentlichung verwalten**.
-1. Der Assistent **Veröffentlichung verwalten** wird geöffnet. Wählen Sie im ersten Schritt **Optionen** die Option **Veröffentlichung rückgängig machen** anstelle der Standardoption **Veröffentlichen** aus.
+1. Der Assistent **Veröffentlichung verwalten** wird geöffnet. Wählen Sie im ersten Schritt **Optionen** die Option **Veröffentlichung aufheben** anstelle der Standardoption **Veröffentlichen** aus.
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
 
@@ -241,7 +245,7 @@ Wenn Sie allerdings eine große Zahl von Inhaltsseiten erstellt bzw. aktualisier
 Dazu können Sie in der Sites-Konsole die Option [Veröffentlichung verwalten](/help/sites-authoring/publishing-pages.md#manage-publication) verwenden.
 
 1. Wählen Sie in der Sites-Konsole die Stammseite des Baums aus, den Sie veröffentlichen möchten bzw. dessen Veröffentlichung Sie rückgängig machen möchten, und danach **Veröffentlichung verwalten**.
-1. Der Assistent **Veröffentlichung verwalten** wird geöffnet. Wählen Sie „Veröffentlichen“ oder „Veröffentlichung rückgängig machen“ sowie den Zeitpunkt aus und danach **Weiter**, um fortzufahren.
+1. Der Assistent **Veröffentlichung verwalten** wird geöffnet. Wählen Sie „Veröffentlichen“ oder „Veröffentlichung aufheben“ sowie den Zeitpunkt aus und danach **Weiter**, um fortzufahren.
 1. Wählen Sie im Schritt **Bereich** die Stammseite aus und danach **Untergeordnete Elemente einbeziehen**.
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
@@ -273,7 +277,7 @@ Sie können den Veröffentlichungsstatus einer Seite bestimmen:
 
    Der Veröffentlichungsstatus wird in der Sites-Konsole in der Ansicht [Karte](/help/sites-authoring/basic-handling.md#card-view), [Spalte](/help/sites-authoring/basic-handling.md#column-view) und [Liste](/help/sites-authoring/basic-handling.md#list-view) angezeigt.
 
-* in der [Zeitleistensegment](/help/sites-authoring/basic-handling.md#timeline)
+* in der [Zeitleisten](/help/sites-authoring/basic-handling.md#timeline)
 
    ![screen_shot_2018-03-21at154420](assets/screen_shot_2018-03-21at154420.png)
 
