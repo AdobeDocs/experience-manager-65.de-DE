@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
-source-git-commit: afc72fb6b324cf2e0ad8168f783d9c1a6f96c614
+source-git-commit: a76772b8761e35a828814ffe0ac3b019266ff008
 workflow-type: tm+mt
 source-wordcount: '2336'
 ht-degree: 55%
@@ -31,7 +31,7 @@ Die folgenden Methoden können zum Hinzufügen von Metadaten zu digitalen Assets
 
 * Zunächst fügen die nativen Programme, die Assets erstellen, einige Metadaten hinzu. Zum Beispiel fügt [Acrobat einige Metadaten](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) zu PDF-Dateien hinzu oder eine Kamera fügt einige grundlegende Metadaten zu den Fotos hinzu. Beim Generieren von Assets können Sie die Metadaten in nativen Programmen selbst hinzufügen. Sie können beispielsweise [IPTC-Metadaten in Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html) hinzufügen.
 
-* Bevor Sie ein Asset in [!DNL Experience Manager] hochladen, können Sie Metadaten bearbeiten und ändern, indem Sie entweder die native Anwendung zum Erstellen eines Assets oder eine andere Metadaten-Bearbeitungsanwendung verwenden. Wenn Sie ein Asset in Experience Manager hochladen, werden die Metadaten verarbeitet. Sehen Sie sich beispielsweise an, wie Sie [mit Metadaten in [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) arbeiten, und sehen Sie sich das Bedienfeld [Tags für [!DNL Bridge CC]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) in [!DNL Adobe Exchange] an.
+* Bevor Sie ein Asset in [!DNL Experience Manager] hochladen, können Sie Metadaten bearbeiten und ändern, indem Sie entweder die native Anwendung zum Erstellen eines Assets oder eine andere Metadaten-Bearbeitungsanwendung verwenden. Wenn Sie ein Asset in Experience Manager hochladen, werden die Metadaten verarbeitet. Sehen Sie sich beispielsweise an, wie Sie [mit Metadaten in [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) arbeiten, und sehen Sie sich das Bedienfeld [Tags für [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) in [!DNL Adobe Exchange] an.
 
 * In [!DNL Experience Manager Assets] können Sie auf der Seite [!UICONTROL Eigenschaften] Metadaten von Assets manuell hinzufügen oder bearbeiten.
 
