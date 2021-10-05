@@ -1,10 +1,10 @@
 ---
 title: Erweitern von [!DNL Adobe Experience Manager] 6.5 mithilfe von Adobe Developer App Builder.
 description: Erweitern von [!DNL Adobe Experience Manager] 6.5 mithilfe von Adobe Developer App Builder.
-source-git-commit: aab7d4aaf11b6aef3b729f906259a76c152fd6f0
+source-git-commit: e6153e1a816bb9169f96fa75827593485a6ddbd4
 workflow-type: tm+mt
 source-wordcount: '577'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -42,26 +42,26 @@ Die folgende Abbildung zeigt, wie eine auf App Builder aufbauende Standardanwend
 
 ![Architektur](assets/firefly-architecture.jpg)
 
-Weitere Informationen zur App Builder-Architektur finden Sie unter [Architekturübersicht](https://www.adobe.io/project-firefly/docs/guides/).
+Weitere Informationen zur App Builder-Architektur finden Sie unter [Architekturübersicht](https://www.adobe.io/app-builder/docs/guides/).
 
 ## Erste Schritte mit App Builder {#additional-resources}
 
 Um Ihnen die ersten Schritte mit App Builder zu erleichtern, haben wir eine Reihe von Dokumentationen erstellt, die Sie bei den ersten Schritten unterstützen:
 
-* [App Builder - Erste Schritte](https://www.adobe.io/project-firefly/docs/getting_started/)
+* [App Builder - Erste Schritte](https://www.adobe.io/app-builder/docs/getting_started/)
 
 ## Weiteres Lernen mit Dokumentation {#appbuilder-documentation}
 
 App Builder bietet Videos und Dokumentation für Entwickler, einschließlich Handbüchern, und Referenzdokumentation, die Sie bei der Entwicklung Ihrer eigenen benutzerdefinierten Anwendungen unterstützen:
 
-* [App Builder-Dokumentation](https://www.adobe.io/project-firefly/docs/overview/)
+* [App Builder-Dokumentation](https://www.adobe.io/app-builder/docs/overview/)
 * [App Builder-Videos](https://www.youtube.com/playlist?list=PLcVEYUqU7VRfDij-Jbjyw8S8EzW073F_o)
 
 ## Testen einer der Beispielanwendungen {#appbuilder-codesamples}
 
 Bereit zur Entwicklung? Wir haben viele Beispielanwendungen, mit denen Sie schnell loslegen können:
 
-* [App Builder-Code-Labs auf der Adobe Developer-Website](https://www.adobe.io/project-firefly/docs/resources/)
+* [App Builder-Code-Labs auf der Adobe Developer-Website](https://www.adobe.io/app-builder/docs/resources/)
 
 ## Support {#support}
 
