@@ -2,9 +2,9 @@
 title: AEM Content and Commerce - Versionshinweise 2021
 description: AEM Content and Commerce - Versionshinweise 2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: fd973cb3693872e4850f860a625cab70553d2754
+source-git-commit: a401955e4b163a8062a498ea897d4a3d95ae0208
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '1135'
 ht-degree: 22%
 
 ---
@@ -28,6 +28,34 @@ Der alte AEM CIF Connector befindet sich im Wartungsmodus und sollte nicht mehr 
 | CIF-Add-on | Minimum: AEM 6.5.7, Magento 2.3.5 GraphQL-Schemata |
 | CIF-Kernkomponenten | [Systemanforderungen](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM-Projektarchetyp | [Systemanforderungen](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Releasedatum: September 2021
+
+| Komponente | Version | Details |
+|:-------|:-----:|---------------------:|
+| CIF-Add-on | 2021.09.27 | [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.27.zip) |
+| CIF-Kernkomponenten | 2.2.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.2.0) |
+| CIF Venia-Referenz-Site | 2021,09,23 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.09.23) |
+
+### Neue Funktionen {#what-is-new-september}
+
+* Die neue Registerkarte &quot;Zugehörige Commerce-Inhalte&quot;im Sites-Editor erhöht die Autoreneffizienz, indem schnell auf relevante AEM Produktinhalte für den aktuellen Kontext zugegriffen wird.
+
+   ![Zugehörige Commerce-Inhalte](/help/assets/CIF/associated-commerce-content.png)
+
+* Verbesserte Benutzeroberfläche für die Produktauswahl für bessere Benutzererfahrung, höhere Effizienz und Unterstützung für komplexen Produktkatalog
+
+   ![Neue Produktauswahl](/help/assets/CIF/product-picker.png)
+
+* Die Eigenschaft &quot;include_in_menu&quot;in der Navigationskomponente respektieren
+
+### Fehlerbehebungen {#bug-fixes-september}
+
+* Das Leeren des Menücache funktioniert nicht erwartungsgemäß
+
+* JS-Fehler während AEM CS-Bereitstellungsschritts und bei Nichtverwendung clientseitiger Komponenten
+
+* CIF-Cloud-Konfiguration kann nicht in Ordnern erstellt werden, die einen sling:configs -Knoten haben
 
 ## Releasedatum: August 2021
 
@@ -70,7 +98,7 @@ Der alte AEM CIF Connector befindet sich im Wartungsmodus und sollte nicht mehr 
    * Visueller Indikator für gestaffelte Produktdaten im Authoring-Modus für bessere Sichtbarkeit bevorstehender Änderungen
    * Neue Sitemap-Komponente für Inhalte und Commerce-Seiten
 
-* Unterstützung für [Adobe Commerce Sensei Product Recommendation, powered by Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront mit vordefinierten oder direkt erstellten Empfehlungen
+* Unterstützung für [Adobe Commerce Sensei-Produktempfehlungen, unterstützt von Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront mit vordefinierten oder direkt erstellten Empfehlungen
 
 ## Releasedatum: Juni 2021
 
@@ -85,7 +113,7 @@ Der alte AEM CIF Connector befindet sich im Wartungsmodus und sollte nicht mehr 
 * Neue CIF-Produkt- und Kategoriereferenzdatentypen für Inhaltsfragmente (inkl. Benutzeroberflächenunterstützung für Produkt-/Kategorieauswahl
 * Neue Commerce-Inhaltsfragment-Kernkomponente
 * Im AEM Backend unterstützte Volltext-Commerce-Suche
-* Commerce-Kernkomponenten unterstützen die Adobe Commerce Sensei Recs-Datenerfassung
+* Commerce-Kernkomponenten unterstützen die Datenerfassung von Adobe Commerce Sensei Recs
 * Verbesserte SEO-freundliche URLs für Kategorieseiten
 * Unterstützung benutzerdefinierter HTTP-Header pro Site/Konfiguration
 
