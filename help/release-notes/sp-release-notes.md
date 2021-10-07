@@ -4,7 +4,7 @@ description: Spezifische Versionshinweise für [!DNL Adobe Experience Manager] 6
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
+source-git-commit: 99d38dddbcd06fecb82c744d446b9cef981e0781
 workflow-type: tm+mt
 source-wordcount: '4392'
 ht-degree: 5%
@@ -104,7 +104,7 @@ Im Folgenden finden Sie eine Liste der Fehlerbehebungen in [!DNL Experience Mana
 * Wenn ein Benutzer in ein On-Demand-Tag eingibt, das Leerzeichen enthält (das Tag, das nicht im System vorhanden ist), und die Eingabetaste drückt, wird das Tag unter dem Feld angezeigt. Wenn [!DNL Content Fragment] jedoch gespeichert und erneut geöffnet wird, wird das On-Demand-Tag nicht angezeigt (NPR-36441).
 * Die Vorlage kann nicht gelöscht werden, wenn auf die Instanz über den Dispatcher zugegriffen wird (NPR-36385).
 * Wenn eine Seite verschoben wird, ist eine manuelle Aktualisierung des Browsers erforderlich, um die Änderungen zu rendern (NPR-36381).
-* Wenn Sie eine Komponente auswählen, können Sie sie mit Strg+X oder Strg+C ausschneiden oder kopieren (und Befehl+X oder Befehl+C unter Mac). Wenn Sie auf eine andere Komponente klicken, können Sie sie mit der Symbolleiste einfügen, nicht jedoch mit der Tastatur (Strg+V oder Befehl+V) (NPR-36379).
+* Wenn Sie eine Komponente auswählen, können Sie sie mit Strg+X oder Strg+C (und Befehl+X oder Befehl+C in Mac) ausschneiden oder kopieren. Wenn Sie auf eine andere Komponente klicken, können Sie sie mit der Symbolleiste einfügen, nicht jedoch mit der Tastatur (Strg+V oder Befehl+V) (NPR-36379).
 * Wenn ein Benutzer versucht, Komponenten mithilfe des Schere-Symbols zu schneiden, um sie an eine andere Stelle zu verschieben, tritt ein Konsolenfehler auf. Außerdem wird beim Einfügen nur eine Komponente verschoben (NPR-36378).
 * [!DNL Experience Manager] über eine Abfrage ohne Index auf WCM oder Benachrichtigungen verfügt, verlangsamt sie die Leistung (NPR-36303).
 * Wenn ein Autor die Vererbung für die gelöschte geerbte Komponente wiederherstellt, besteht die verfügbare Option darin, den gesamten Seiteninhalt zu synchronisieren. Die Inhaltsautoren müssen die gesamte Seite synchronisieren, selbst wenn die Vererbung nur für eine Komponente wiederhergestellt wird. Eine vollständige Synchronisierung kann dazu führen, dass unerwünschte Inhalte synchronisiert werden (NPR-34456, CQ-4310183).
@@ -323,11 +323,11 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 **Designer**
 
-* Screen Reader kann keine unverankerten Felddaten lesen, die innerhalb einer Textbeschriftung auf der Übergeordneten Seite oder auf Teilformularseiten in einer dynamischen PDF-Datei platziert wurden (CQ-4321587).
+* Screen Reader kann keine unverankerten Felddaten lesen, die innerhalb einer Textbeschriftung auf der Übergeordneten Seite oder auf Teilformularseiten in einer dynamischen PDF platziert werden (CQ-4321587).
 
 **Document Services**
 
-* Wenn Sie XDP-Dateien in PDF-Dateien konvertieren und dann die resultierende PDF-Datei zusammenführen, schlägt die Generierung der PDF-Datei fehl und zeigt die folgende Fehlermeldung an:
+* Wenn Sie XDP-Dateien in PDF-Dateien konvertieren und dann die resultierende PDF assemblieren, schlägt die PDF-Generierung fehl und zeigt die folgende Fehlermeldung an:
 
    ```TXT
    Caused by: com.adobe.fd.assembler.client.AssemblerException$ClientException: Document is in a disposed state!
@@ -339,7 +339,7 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 **HTML5-Formulare**
 
-* Wenn Sie den Wert für die `mfAllowAttachments`-Eigenschaft auf `True` im CRX DE-Repository festlegen, wird `dataXml` beim Senden des HTML5-Formulars beschädigt (NPR-37035).
+* Wenn Sie den Wert für die `mfAllowAttachments`-Eigenschaft auf `True` im CRX DE-Repository festlegen, wird das `dataXml` beim Senden des HTML5-Formulars beschädigt (NPR-37035).
 
 * Wenn Sie eine XDP mit `dataXml` als HTML rendern, zeigt [!DNL AEM Forms] einen `Page Unresponsive`-Fehler an (NPR-36631).
 
@@ -411,7 +411,7 @@ Informationen zu den Plattformen, die für diese Version zertifiziert sind, find
 
 >[!NOTE]
 >
->Überspringen Sie diesen Schritt, wenn Sie Experience Manager Forms nicht verwenden. Fehlerbehebungen in Experience Manager Forms werden eine Woche nach der geplanten Veröffentlichung des Service Packs über ein separates Add-On-Paket bereitgestellt.[!DNL Experience Manager]
+>Überspringen Sie diese Option, wenn Sie Experience Manager Forms nicht verwenden. Fehlerbehebungen in Experience Manager Forms werden eine Woche nach der geplanten Veröffentlichung des Service Packs über ein separates Add-On-Paket bereitgestellt.[!DNL Experience Manager]
 
 1. Stellen Sie sicher, dass Sie das Adobe Experience Manager Service Pack installiert haben.
 1. Wählen Sie unter den aufgeführten [AEM Forms-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) das für Ihr Betriebssystem passende Forms-Add-on-Paket aus und laden Sie es herunter.
@@ -461,7 +461,7 @@ Nachstehend finden Sie eine Liste der Funktionen, die mit [!DNL Experience Manag
 
 | Bereich | Funktion | Ersatz |
 |---|---|---|
-| Integrationen | Der Bildschirm **[!UICONTROL AEM Cloud Services Opt-in]** wird nicht mehr unterstützt, da die Integration von [!DNL Experience Manager] und [!DNL Adobe Target] in Experience Manager 6.5 aktualisiert wurde. Die Integration unterstützt die Adobe Target Standard-API. Die API verwendet die Authentifizierung über die Adobe IMS und [!DNL Adobe I/O] und unterstützt die wachsende Rolle von Adobe Launch, um [!DNL Experience Manager]-Seiten für Analysen und Personalisierung zu instrumentieren. Der Opt-in-Assistent ist funktionell irrelevant. | Konfigurieren Sie Systemverbindungen, die Adobe IMS-Authentifizierung und die [!DNL Adobe I/O] Integrationen über die entsprechenden [!DNL Experience Manager]-Cloud-Services. |
+| Integrationen | Der Bildschirm **[!UICONTROL AEM Cloud Services Opt-in]** wird nicht mehr unterstützt, da die Integration von [!DNL Experience Manager] und [!DNL Adobe Target] in Experience Manager 6.5 aktualisiert wurde. Die Integration unterstützt die Adobe Target Standard-API. Die API verwendet die Authentifizierung über Adobe IMS und [!DNL Adobe I/O] und unterstützt die wachsende Rolle von Adobe Launch, um [!DNL Experience Manager]-Seiten für Analysen und Personalisierung zu instrumentieren. Der Opt-in-Assistent ist funktionell irrelevant. | Konfigurieren Sie Systemverbindungen, die Adobe IMS-Authentifizierung und die [!DNL Adobe I/O]-Integrationen über die entsprechenden [!DNL Experience Manager]-Cloud-Services. |
 | Connectoren | Die Adobe JCR Connector für Microsoft® SharePoint 2010 und Microsoft® SharePoint 2013 wird für Experience Manager 6.5 nicht mehr unterstützt. | Nicht zutreffend |
 
 ## Bekannte Probleme {#known-issues}
@@ -499,7 +499,7 @@ In den folgenden Textdokumenten werden die OSGi-Pakete und Inhaltspakete aufgeli
 Diese Websites stehen nur Kunden zur Verfügung. Wenn Sie Kunde sind und Zugriff benötigen, wenden Sie sich an Ihren Adobe Account Manager.
 
 * [Produktdownload unter licensing.adobe.com](https://licensing.adobe.com/)
-* Weitere Informationen finden Sie unter [Kontaktaufnahme mit der Adobe-Kundenunterstützung](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
+* Siehe [Kontaktieren des Adobe-Kundendienstes](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
 
 >[!MORELIKETHIS]
 >

@@ -3,11 +3,11 @@ title: Best Practices zur Überwachung der [!DNL Assets] Bereitstellung
 description: Best Practices zur Überwachung der Umgebung und Leistung Ihrer [!DNL Adobe Experience Manager] Bereitstellung nach deren Bereitstellung.
 contentOwner: AG
 role: Admin, Architect
-feature: Asset-Management
+feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1668'
 ht-degree: 69%
 
 ---
@@ -199,5 +199,5 @@ Im Rahmen der Überwachung finden Sie bei Problemen folgende Fehlerbehebungsaufg
 * Verwenden Sie die Workflow-Konsole, um sicherzustellen, dass Ihre Workflows erwartungsgemäß durchgeführt werden. Fassen Sie mehrere Workflows nach Möglichkeit zu einem einzelnen Workflow zusammen.
 * Suchen Sie über die Live-Überwachung nach weiteren Engpässen oder einem hohen Verbrauch bestimmter Ressourcen.
 * Untersuchen Sie die Ausspeisepunkte aus dem Client-Netzwerk und die Eingangspunkte auf das [!DNL Experience Manager]-Bereitstellungsnetzwerk, einschließlich des Dispatchers. Häufig sind dies Bereiche, in denen es zu Engpässen kommt. Weitere Informationen finden Sie unter [Überlegungen zum Assets-Netzwerk](/help/assets/assets-network-considerations.md).
-* Vergrößern Sie den [!DNL Experience Manager]-Server. Möglicherweise haben Sie eine unzureichende Größe Ihrer [!DNL Experience Manager]-Implementierung. Die Kundenunterstützung von Adobe kann Ihnen dabei helfen, festzustellen, ob Ihr Server zu groß ist.
+* Vergrößern Sie den [!DNL Experience Manager]-Server. Möglicherweise haben Sie eine unzureichende Größe Ihrer [!DNL Experience Manager]-Implementierung. Der Kundensupport von Adobe kann Ihnen dabei helfen, festzustellen, ob Ihr Server zu groß ist.
 * Untersuchen Sie die Dateien `access.log` und `error.log` auf Einträge, die zu Fehlerzeitpunkten erstellt wurden. Suchen Sie nach Mustern, die ggf. auf Anomalien im benutzerdefinierten Code hinweisen. Fügen Sie diese der Liste mit den zu überwachenden Ereignissen hinzu.

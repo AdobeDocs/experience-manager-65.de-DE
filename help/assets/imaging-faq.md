@@ -9,10 +9,10 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: cd0ff8f3f595e4c97668abc8c296b2f15f9d4810
+source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
 source-wordcount: '2618'
-ht-degree: 56%
+ht-degree: 55%
 
 ---
 
@@ -86,7 +86,7 @@ Falls gewünscht, kann Ihr Unternehmen die Optimierung der Netzwerkbandbreite au
 
 >[!NOTE]
 >
->Die Werte für die DPR- und Netzwerkbandbreite basieren auf den erkannten clientseitigen Werten des gebündelten CDN. Diese Werte sind manchmal ungenau. Beispielsweise wird für iPhone5 mit DPR=2 und iPhone12 mit DPR=3 DPR=2 angezeigt. Bei Geräten mit hoher Auflösung ist das Senden von DPR=2 jedoch besser als das Senden von DPR=1. In Kürze verfügbar: Adobe arbeitet mit clientseitigem Code, um die DSGVO eines Endbenutzers genau zu bestimmen.
+>Die Werte für die DPR- und Netzwerkbandbreite basieren auf den erkannten clientseitigen Werten des gebündelten CDN. Diese Werte sind manchmal ungenau. Beispielsweise wird in iPhone5 mit DPR=2 und iPhone12 mit DPR=3 DPR=2 angezeigt. Bei Geräten mit hoher Auflösung ist das Senden von DPR=2 jedoch besser als das Senden von DPR=1. In Kürze verfügbar: Adobe arbeitet mit clientseitigem Code, um die DSGVO eines Endbenutzers genau zu bestimmen.
 
 ## Was sind die Hauptvorteile der intelligenten Bildbearbeitung? {#what-are-the-key-benefits-of-smart-imaging}
 
@@ -219,10 +219,10 @@ Standardmäßig sind die DSGVO für die intelligente Bildbearbeitung und die Net
       Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungs-Server-Name]**. Wenn Sie derzeit eine generische Dynamic Media Classic-Domain verwenden, können Sie im Zuge dieser Umstellung einen Wechsel zu Ihrer eigenen benutzerdefinierten Domain beantragen.
    1. Geben Sie an, ob Sie auch die intelligente Bildbearbeitung über HTTP/2 benötigen.
 
-1. Die Kundenunterstützung von Adobe fügt Sie basierend auf der Reihenfolge, in der die Anfragen gesendet wurden, zur Warteliste für Kunden mit intelligenter Bildbearbeitung hinzu.
+1. Der Adobe-Support fügt Sie basierend auf der Reihenfolge, in der Anfragen gesendet wurden, zur Warteliste für Kunden mit intelligenter Bildbearbeitung hinzu.
 1. Wenn Adobe für die Bearbeitung Ihrer Anfrage bereit ist, unterstützen Sie Support-Mitarbeiter bei der Koordination und Festlegung eines Zieldatums.
 1. **Optional**  - Sie können die intelligente Bildbearbeitung optional im Staging testen, bevor die Adobe die neue Funktion in die Produktionsumgebung überträgt.
-1. Sie werden nach Abschluss durch den Kunden-Service benachrichtigt.
+1. Sie werden nach Abschluss durch den Support benachrichtigt.
 1. Zur maximalen Leistungsverbesserung der intelligenten Bildbearbeitung empfiehlt Adobe eine Time-to-Live (TTL)-Einstellung von mindestens 24 Stunden. Die TTL-Einstellung definiert, wie lange Assets vom CDN-Service im Cache gespeichert werden. So ändern Sie diese Einstellung:
 
    1. Wenn Sie Dynamic Media Classic verwenden, navigieren Sie zu **[!UICONTROL Setup]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Veröffentlichungseinrichtung]** > **[!UICONTROL Image-Server]**. Stellen Sie den Wert **[!UICONTROL Standardeinstellung für Time-To-Live des Client-Cache]** auf mindestens 24 ein.
@@ -230,7 +230,7 @@ Standardmäßig sind die DSGVO für die intelligente Bildbearbeitung und die Net
 
 ## Wann wird mein Konto voraussichtlich für die intelligente Bildbearbeitung aktiviert? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
-Die Anfragen werden in der Reihenfolge ihres Eingangs bei der Kundenbetreuung gemäß Warteliste bearbeitet.
+Anfragen werden in der Reihenfolge verarbeitet, in der sie vom Support empfangen werden, gemäß der Warteliste.
 
 >[!NOTE]
 >
@@ -238,7 +238,7 @@ Die Anfragen werden in der Reihenfolge ihres Eingangs bei der Kundenbetreuung ge
 
 ## Welche Risiken bestehen bei der Umstellung auf die intelligente Bildbearbeitung? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
-Es besteht kein Risiko für eine Kunden-Web-Seite. Durch die Umstellung auf intelligente Bildbearbeitung wird der Cache im CDN jedoch gelöscht, da auf eine neue Konfiguration von Dynamic Media Classic oder Dynamic Media on Experience Manager umgestellt werden muss.
+Es besteht kein Risiko für eine Kunden-Web-Seite. Durch die Umstellung auf intelligente Bildbearbeitung wird der Cache im CDN jedoch gelöscht, da auf eine neue Dynamic Media Classic- oder Dynamic Media-Konfiguration auf dem Experience Manager umgestellt werden muss.
 
 Zu Beginn der Übergangsphase werden die nicht im Cache gespeicherten Bilder direkt an die ursprünglichen Server von Adobe übertragen, bis der Cache neu aufgebaut wurde. Daher plant Adobe, einige Kundenübergänge gleichzeitig zu verarbeiten, damit beim Abrufen von Anforderungen aus der Quelle eine annehmbare Leistung erzielt wird. Für die meisten Kunden ist der Cache innerhalb von 1 bis 2 Tagen vollständig im CDN neu aufgebaut.
 
@@ -283,7 +283,7 @@ Die intelligente Bildbearbeitung entscheidet, ob die Konvertierung vorteilhaft i
 
 ## Wie funktioniert die DSGVO-Optimierung für die intelligente Bildbearbeitung mit Adobe Experience Manager Sites-Komponenten und Dynamic Media-Viewern?
 
-* Experience Manager Sites Kernkomponenten sind standardmäßig für die DSGVO-Optimierung konfiguriert. Um aufgrund der serverseitigen DSGVO-Optimierung der intelligenten Bildbearbeitung zu vermeiden, wird `dpr=off` immer den Experience Manager Sites-Kernkomponenten Dynamic Media-Bildern hinzugefügt.
+* Experience Manager Sites-Kernkomponenten sind standardmäßig für die DSGVO-Optimierung konfiguriert. Um zu vermeiden, dass Bilder aufgrund der DSGVO-Optimierung für die serverseitige intelligente Bildbearbeitung überdimensioniert werden, wird `dpr=off` immer den Dynamic Media-Bildern der Experience Manager Sites-Kernkomponenten hinzugefügt.
 * Wenn die Dynamic Media Foundation-Komponente standardmäßig für die DSGVO-Optimierung konfiguriert ist, um zu verhindern, dass Bilder aufgrund der DSGVO-Optimierung für die serverseitige intelligente Bildbearbeitung überdimensioniert werden, wird `dpr=off` immer den Dynamic Media Foundation-Komponentenbildern hinzugefügt. Selbst wenn der Kunde die DSGVO-Optimierung in der DM Foundation-Komponente deaktiviert, wird die DSGVO für die serverseitige intelligente Bildbearbeitung nicht aktiviert. Zusammenfassend ist festzustellen, dass in der DM Foundation-Komponente die DPR-Optimierung nur auf der Grundlage der Einstellungen auf DM Foundation-Komponentenebene wirksam wird.
 * Jede Viewer-seitige DSGVO-Optimierung arbeitet mit der serverseitigen DSGVO-Optimierung für die intelligente Bildbearbeitung zusammen und führt nicht zu übergroßen Bildern. Mit anderen Worten: Egal, wo die DSGVO vom Viewer verarbeitet wird, z. B. die Hauptansicht nur in einem zoomfähigen Viewer, die DSGVO-Werte für die serverseitige intelligente Bildbearbeitung werden nicht ausgelöst. Gleichermaßen wird der DSGVO-Wert für die serverseitige intelligente Bildbearbeitung ausgelöst, wenn Viewer-Elemente wie Farbfelder und Miniaturansichten nicht mit der DSGVO verarbeitet werden.
 

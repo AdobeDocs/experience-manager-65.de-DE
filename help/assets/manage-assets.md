@@ -4,11 +4,11 @@ description: Erfahren Sie mehr über die Asset-Management-Aufgaben wie das Hochl
 contentOwner: AG
 mini-toc-levels: 1
 role: User
-feature: Asset-Verwaltung, Suche
+feature: Asset Management,Search
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: 9dc61a66a79004013d8cff89c4607f7aafad08df
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
-source-wordcount: '9848'
+source-wordcount: '9846'
 ht-degree: 58%
 
 ---
@@ -40,7 +40,7 @@ Die folgenden Zeichen (in der Liste durch Leerzeichen getrennt) werden nicht unt
 
 Schließen Sie keine Sonderzeichen in die Erweiterungen der Asset-Dateinamen ein.
 
-## Hochladen von Assets {#uploading-assets}
+## Upload von Assets {#uploading-assets}
 
 <!-- TBD the following:
 Move this section into a new article. CQDOC-14874 ticket is created for this.
@@ -96,9 +96,8 @@ Um die Bereinigungsaufgabe für die nicht abgeschlossenen Chunk-Upload-Aufträge
 >Angesichts der Zeitüberschreitung bei Anmeldedaten, Latenz, Bandbreite und erwarteten gleichzeitigen Uploads ist der höchste Wert, mit dem Sie sicherstellen können, dass Folgendes ausgewählt wird:
 >
 >* Um sicherzustellen, dass der Chunk-Upload für Dateien aktiviert ist, deren Größe während des Uploads wahrscheinlich zum Ablauf der Anmeldedaten führt.
-   >
-   >
-* Um sicherzustellen, dass jeder Chunk abgeschlossen wird, bevor die Berechtigung abläuft.
+>
+>* Um sicherzustellen, dass jeder Chunk abgeschlossen wird, bevor die Berechtigung abläuft.
 
 
 Wenn Sie ein Asset mit demselben Namen wie ein Asset hochladen, das bereits an dem Speicherort verfügbar ist, an den Sie das Asset hochladen, wird ein Warndialogfeld angezeigt.
@@ -121,7 +120,7 @@ Wenn das hochgeladene Asset in [!DNL Assets] vorhanden ist, wird im Dialogfeld *
 
 ![Dialogfeld &quot;Dupliziertes Asset gefunden&quot;](assets/duplicate-asset-detected.png)
 
-Um das doppelte-Asset in [!DNL Assets] beizubehalten, klicken Sie auf **[!UICONTROL Behalten]**. Um das doppelte Asset zu löschen, das Sie hochgeladen haben, klicken Sie auf **[!UICONTROL Löschen]**.
+Um das doppelte Asset in [!DNL Assets] beizubehalten, klicken Sie auf **[!UICONTROL Behalten]**. Tippen oder klicken Sie auf **[!UICONTROL Löschen]**, um das doppelte Asset zu löschen, das Sie gerade hochgeladen haben.
 
 [!DNL Experience Manager Assets] verhindert, dass Sie Assets hochladen, deren Dateinamen unzulässige Zeichen enthalten. Wenn Sie versuchen, ein Asset mit einem Dateinamen mit einem oder mehreren nicht zulässigen Zeichen hochzuladen, zeigt [!DNL Assets] eine Warnmeldung an und stoppt den Upload, bis Sie diese Zeichen entfernen oder mit einem zulässigen Namen hochladen.
 
@@ -160,7 +159,7 @@ Dynamic Media ermöglicht das stapelweise Hochladen von Assets über FTP-Server.
 
 >[!NOTE]
 >
->Um Assets über FTP im Modus Dynamic Media - Scene7 hochzuladen, installieren Sie Feature Pack 18912 in den [!DNL Experience Manager] Autoreninstanzen. Wenden Sie sich an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General#support), um Zugriff auf FP-18912 zu erhalten und die Einrichtung Ihres FTP-Kontos abzuschließen. Weitere Informationen finden Sie unter [Feature Pack 18912 für Massenmigration von Assets installieren](/help/assets/bulk-ingest-migrate.md).
+>Um Assets über FTP im Modus Dynamic Media - Scene7 hochzuladen, installieren Sie Feature Pack 18912 in den [!DNL Experience Manager] Autoreninstanzen. Wenden Sie sich an den [Adobe-Support](https://experienceleague.adobe.com/?support-solution=General#support), um Zugriff auf FP-18912 zu erhalten und die Einrichtung Ihres FTP-Kontos abzuschließen. Weitere Informationen finden Sie unter [Feature Pack 18912 für Massenmigration von Assets installieren](/help/assets/bulk-ingest-migrate.md).
 >
 >Wenn Sie FTP zum Hochladen von Assets verwenden, werden die unter [!DNL Experience Manager] angegebenen Upload-Einstellungen ignoriert. Stattdessen werden Dateiverarbeitungsregeln, wie in Dynamic Media Classic definiert, verwendet.    
 
@@ -170,7 +169,7 @@ Dynamic Media ermöglicht das stapelweise Hochladen von Assets über FTP-Server.
 
 1. Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) und melden Sie sich bei Ihrem Konto an.
 
-   Ihre Anmeldedaten und Ihre Anmeldung wurden von Adobe zum Zeitpunkt der Bereitstellung bereitgestellt. Wenn Ihnen die Informationen nicht vorliegen, wenden Sie sich an den technischen Support.
+   Ihre Anmeldedaten und Ihre Anmeldung wurden von Adobe zum Zeitpunkt der Bereitstellung bereitgestellt. Wenn Sie diese Informationen nicht haben, wenden Sie sich an den Kundensupport von Adobe.
 
 1. Klicken Sie in der Leiste „Globale Navigation“ auf **[!UICONTROL Hochladen]**.
 1. Klicken Sie auf der Seite „Hochladen“ in der Nähe der linken oberen Ecke auf die Registerkarte **[!UICONTROL Über FTP]**.
@@ -186,7 +185,7 @@ Dynamic Media ermöglicht das stapelweise Hochladen von Assets über FTP-Server.
 1. Klicken Sie in der rechten unteren Ecke des Dialogfelds „Upload-Auftragsoptionen“ auf **[!UICONTROL Speichern]**.
 1. Klicken Sie in der rechten unteren Ecke der Seite „Hochladen“ auf **[!UICONTROL Upload starten]**.
 
-   Um den Uploadfortschritt anzuzeigen, klicken Sie in der Leiste „Globale Navigation“ auf **[!UICONTROL Aufträge]**. Auf der Seite „Aufträge“ wird der Uploadfortschritt angezeigt. Sie können weiterhin in [!DNL Experience Manager] arbeiten und jederzeit zur Seite &quot;Aufträge&quot;in Dynamic Media Classic zurückkehren, um einen laufenden Auftrag zu überprüfen.
+   Um den Uploadfortschritt anzuzeigen, klicken Sie in der Leiste „Globale Navigation“ auf **[!UICONTROL Aufträge]**. Auf der Seite „Aufträge“ wird der Uploadfortschritt angezeigt. Sie können die Arbeit in [!DNL Experience Manager] fortsetzen und jederzeit zur Seite &quot;Aufträge&quot;in Dynamic Media Classic zurückkehren, um einen laufenden Auftrag zu überprüfen.
 Um einen laufenden Upload-Auftrag abzubrechen, klicken Sie neben der Dauer auf **[!UICONTROL Abbrechen]** .
 
 #### Upload-Auftragsoptionen {#upload-job-options}
@@ -208,7 +207,7 @@ Um einen laufenden Upload-Auftrag abzubrechen, klicken Sie neben der Dauer auf *
 |  | PDF-Optionen | Sie können die Dateien rastern, Suchbegriffe und -links extrahieren, automatisch einen E-Katalog erstellen, die Auflösung einstellen und einen Farbraum auswählen.<br>E-Kataloge werden in nicht unterstützt  [!DNL Experience Manager]. <br> Siehe [Festlegen von PDF-Uploadoptionen](#setting-pdf-upload-options). |
 |  | Illustrator-Optionen | Sie können Adobe Illustrator®-Dateien rastern, transparente Hintergründe beibehalten sowie eine Auflösung und einen Farbraum auswählen.<br> Siehe [Festlegen von PostScript- und Illustrator-Uploadoptionen](#setting-postscript-and-illustrator-upload-options). |
 |  | eVideo-Optionen | Sie können eine Videodatei durch Auswahl einer Videovorgabe transkodieren.<br> Siehe [Festlegen von eVideo-Uploadoptionen](#setting-evideo-upload-options). |
-|  | Stapelsatzvorgaben | Um ein Bild- oder Rotationsset aus den hochgeladenen Dateien zu erstellen, klicken Sie auf die Spalte „Aktiv“ der Vorgabe, die Sie verwenden möchten. Sie können mehrere Vorgaben auswählen. Die Vorgaben erstellen Sie auf der Seite „Anwendungseinstellungen/Stapelsatzvorgaben“ von Dynamic Media Classic.<br> Weitere Informationen zur Erstellung von Stapelsatzvorgaben finden Sie unter [Konfigurieren von Stapelsatzvorgaben zum automatischen Erstellen von Bild- und Rotationssets](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).<br> Siehe [Festlegen von Stapelsatzvorgaben beim Hochladen](#setting-batch-set-presets-at-upload). |
+|  | Stapelsatz-Vorgaben | Um ein Bild- oder Rotationsset aus den hochgeladenen Dateien zu erstellen, klicken Sie auf die Spalte „Aktiv“ der Vorgabe, die Sie verwenden möchten. Sie können mehrere Vorgaben auswählen. Die Vorgaben erstellen Sie auf der Seite „Anwendungseinstellungen/Stapelsatzvorgaben“ von Dynamic Media Classic.<br> Weitere Informationen zur Erstellung von Stapelsatzvorgaben finden Sie unter [Konfigurieren von Stapelsatzvorgaben zum automatischen Erstellen von Bild- und Rotationssets](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).<br> Siehe [Festlegen von Stapelsatzvorgaben beim Hochladen](#setting-batch-set-presets-at-upload). |
 
 #### Festlegen von Optionen für Bildbearbeitungen beim Hochladen {#setting-image-editing-options-at-upload}
 
@@ -253,7 +252,7 @@ Wenn Sie PostScript (EPS)- oder Illustrator (AI)-Bilddateien hochladen, können 
 
 #### Festlegen von Photoshop-Uploadoptionen {#setting-photoshop-upload-options}
 
-Photoshop Document (PSD)-Dateien werden meist zum Erstellen von Bildvorlagen verwendet. Wenn Sie eine PSD-Datei hochladen, können Sie automatisch eine Bildvorlage aus der Datei erstellen (wählen Sie im Bildschirm &quot;Hochladen&quot;die Option [!UICONTROL Vorlage erstellen] aus).
+Photoshop-Dokumentdateien (PSD) werden meist zum Erstellen von Bildvorlagen verwendet. Wenn Sie eine PSD-Datei hochladen, können Sie automatisch eine Bildvorlage aus der erstellen (wählen Sie im Bildschirm &quot;Hochladen&quot;die Option [!UICONTROL Vorlage erstellen] aus).
 
 Dynamic Media erstellt mehrere Bilder aus einer PSD-Datei mit Ebenen, wenn Sie die Datei zum Erstellen einer Vorlage verwenden. Für jede Ebene wird ein Bild erstellt.
 
@@ -275,7 +274,7 @@ Verwenden Sie die oben beschriebenen [!UICONTROL Zuschnitt-Optionen] und [!UICON
 |  | Photoshop- und Ebenenname | Benennt die Bilder nach der PSD-Datei, gefolgt vom Ebenennamen oder der -nummer. Die Ebenennummer wird verwendet, wenn es sich bei den Ebenennamen in der PSD-Datei um standardmäßige Photoshop-Ebenennamen handelt. Zum Beispiel erhält eine Ebene mit dem Namen „Preisschild“ in einer PSD-Datei mit dem Namen „Frühjahrsannonce“ den Namen „Frühjahrsannonce_Preisschild“. Eine Ebene mit dem standardmäßigen Namen „Ebene 2“ erhält den Namen „Frühjahrsannonce_2“. |
 | Anker |  | Geben Sie an, wie Bilder in Vorlagen, die aus der Zusammenstellung der Ebenen aus der PSD-Datei erstellt werden, verankert werden. Der Anker ist standardmäßig zentriert. Ein zentrierter Anker eignet sich am besten zum Auffüllen desselben Raums mit Ersatzbildern, unabhängig vom Seitenverhältnis der Ersatzbilder. Bilder mit einem anderen Seitenverhältnis, die dieses Bild ersetzen, nehmen effektiv denselben Raum ein, wenn auf die Vorlage verwiesen und die Parameterersetzung durchgeführt wird. Wählen Sie eine andere Einstellung, wenn es für Ihre Anwendung erforderlich ist, dass die Ersatzbilder den zugeordneten Raum in der Vorlage ausfüllen. |
 
-#### PDF-Uploadoptionen festlegen {#setting-pdf-upload-options}
+#### Festlegen von PDF-Uploadoptionen {#setting-pdf-upload-options}
 
 Wenn Sie eine PDF-Datei hochladen, können Sie diese auf verschiedene Arten formatieren. Sie können ihre Seiten zuschneiden, Suchbegriffe extrahieren, eine ppi (Pixel pro Zoll)-Auflösung eingeben und einen Farbraum auswählen. PDF-Dateien enthalten oft einen Beschnittrand, Schnittmarken, Registrierungsmarken und andere Druckermarken. Sie können diese Marken von den Seitenrändern aus zuschneiden, wenn Sie eine PDF-Datei hochladen.
 
@@ -569,7 +568,7 @@ So löschen Sie ein Asset oder einen Ordner mit einem Asset:
    >[!NOTE]
    >
    >* Um die eingehenden Verweise von anderen Seiten aufzulösen oder zu entfernen, aktualisieren Sie die entsprechenden Verweise, bevor Sie ein Asset löschen. Deaktivieren Sie außerdem die Option Löschen erzwingen mit einer Überlagerung, um Benutzer daran zu hindern, referenzierte Assets zu löschen und fehlerhafte Links zu hinterlassen.
-   >* Es ist möglich, einen *Ordner* zu löschen, der ausgecheckte Asset-Dateien enthält. Stellen Sie vor dem Löschen eines Ordners sicher, dass keine digitalen Assets von Benutzern ausgecheckt werden.
+   >* Es ist möglich, einen *Ordner* zu löschen, der ausgecheckte Asset-Dateien enthält. Stellen Sie vor dem Löschen eines Ordners sicher, dass er keine von Benutzern ausgecheckte digitale Assets enthält.
 
 
 >[!NOTE]
@@ -601,12 +600,12 @@ Weitere Informationen zu [!DNL Dynamic Media] finden Sie unter [Publishing [!DNL
 
 1. Wenn ein Asset beim Veröffentlichen auf andere Assets verweist, werden seine Referenzen im Assistenten aufgelistet. Es werden nur die Verweise angezeigt, die seit der letzten Veröffentlichung entweder rückgängig gemacht oder geändert wurden. Wählen Sie die Referenzen aus, die Sie veröffentlichen möchten.
 
-1. Wenn beim Rückgängigmachen der Veröffentlichung ein Asset auf andere Assets verweist, wählen Sie die Referenzen, deren Veröffentlichung Sie rückgängig machen möchten. Klicken Sie auf **[!UICONTROL Veröffentlichung rückgängig machen]**. Klicken Sie im Bestätigungsdialog auf **[!UICONTROL Abbrechen]**, um die Aktion abzubrechen, oder klicken Sie auf **[!UICONTROL Veröffentlichung rückgängig machen]**, um zu bestätigen, dass die Veröffentlichung der Assets zum angegebenen Datum rückgängig gemacht werden soll.
+1. Wenn beim Rückgängigmachen der Veröffentlichung ein Asset auf andere Assets verweist, wählen Sie die Referenzen, deren Veröffentlichung Sie aufheben möchten. Klicken Sie auf **[!UICONTROL Veröffentlichung aufheben]**. Klicken Sie im Bestätigungsdialog auf **[!UICONTROL Abbrechen]**, um die Aktion abzubrechen, oder klicken Sie auf **[!UICONTROL Veröffentlichung rückgängig machen]**, um zu bestätigen, dass die Veröffentlichung der Assets zum angegebenen Datum aufgehoben werden soll.
 
 Machen Sie sich mit den folgenden Einschränkungen und Tipps im Zusammenhang mit dem Veröffentlichen oder Rückgängigmachen der Veröffentlichung von Assets oder Ordnern vertraut:
 
 * Die Option [!UICONTROL Veröffentlichung verwalten] ist nur für Benutzerkonten mit Berechtigungen zur Replikation verfügbar.
-* Wenn Sie die Veröffentlichung eines komplexen Assets rückgängig machen möchten, achten Sie darauf, nur die Veröffentlichung des Assets rückgängig zu machen. Machen Sie nicht die Veröffentlichung der Referenzen rückgängig, da diese möglicherweise auch von anderen veröffentlichten Assets referenziert werden.
+* Wenn Sie die Veröffentlichung eines komplexen Assets aufheben möchten, achten Sie darauf, nur die Veröffentlichung des Assets aufzuheben. Machen Sie nicht die Veröffentlichung der Referenzen rückgängig, da diese möglicherweise auch von anderen veröffentlichten Assets referenziert werden.
 * Leere Ordner werden nicht veröffentlicht.
 * Wenn Sie ein Asset veröffentlichen, das gerade verarbeitet wird, wird nur der ursprüngliche Inhalt veröffentlicht. Die Ausgabedarstellungen fehlen. Warten Sie entweder auf den Abschluss der Verarbeitung und veröffentlichen Sie das Asset dann oder veröffentlichen Sie es erneut, sobald die Verarbeitung abgeschlossen ist.
 
@@ -632,7 +631,7 @@ CUGs stellen eine zusätzliche Möglichkeit dar, den Zugang zu Ihren Assets zu b
 1. Veröffentlichen Sie den Ordner und versuchen Sie, über die Veröffentlichungsinstanz darauf zuzugreifen. Es wird ein Anmeldebildschirm angezeigt.
 1. Wenn Sie Mitglied der CUG sind, geben Sie Ihre Anmeldedaten ein. Nachdem Sie von [!DNL Experience Manager] authentifiziert wurden, wird der Ordner angezeigt.
 
-## Suchen von Assets   {#assetsearch}
+## Suchen von Assets {#assetsearch}
 
 Die Suche nach Assets ist von zentraler Bedeutung für die Verwendung eines Digital Asset Management-Systems. Diese Funktion ist für Kreative, für eine robuste Verwaltung von Assets durch Geschäftsbenutzer und Marketing-Experten oder für die Verwaltung durch DAM-Administratoren wichtig.
 
@@ -712,7 +711,7 @@ In der Zeitleiste können Sie diverse Ereignisse für ein ausgewähltes Objekt a
 >
 >Die Zeitleiste enthält mehrere [inhaltsfragmentspezifische Optionen](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
-## Anmerkungen zu Assets {#annotating}
+## Kommentieren von Assets {#annotating}
 
 Anmerkungen sind Kommentare oder erläuternde Hinweise, die Bildern oder Videos hinzugefügt werden. Anmerkungen bieten Marketern die Möglichkeit, zusammenzuarbeiten und Feedback zu Assets bereitzustellen.
 
@@ -726,7 +725,7 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 1. Klicken Sie in einer der folgenden Optionen auf die Option **[!UICONTROL Anmerken]** :
 
    * [Schnellaktionen](/help/assets/manage-assets.md#quick-actions)
-   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben   oder zur Asset-Seite navigiert sind.
+   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben oder zur Asset-Seite navigiert sind.
 
 1. Fügen Sie im Feld **[!UICONTROL Kommentar]** am unteren Rand der Zeitleiste einen Kommentar hinzu. Sie haben auch die Möglichkeit, einen Bereich im Bild zu markieren und im Dialogfeld **[!UICONTROL Anmerkung hinzufügen]** eine Anmerkung hinzuzufügen.
 
@@ -794,7 +793,7 @@ Sie können auch nur die Anmerkungen oder nur den Prüfungsstatus drucken.
 
 >[!NOTE]
 >
->Sie können beim Drucken des kommentierten Assets mehrere Anmerkungen als PDF auswählen.
+>Sie können mehrere Anmerkungen auswählen, während Sie das kommentierte Asset als PDF drucken.
 
 Um die Anmerkungen und den Prüfungsstatus zu drucken, klicken Sie auf **[!UICONTROL Drucken]** und befolgen Sie die Anweisungen im Assistenten. Die Option **[!UICONTROL Drucken]** wird nur dann in der Symbolleiste angezeigt, wenn dem Asset mindestens eine Anmerkung oder ein Prüfungsstatus zugewiesen ist.
 
@@ -818,17 +817,17 @@ Um die Anmerkungen und den Prüfungsstatus zu drucken, klicken Sie auf **[!UICON
 
 1. Klicken Sie auf **[!UICONTROL Drucken]**. Je nach der Option, die Sie in Schritt 2 wählen, zeigt die erstellte PDF-Datei die Anmerkungen/den Status an der angegebenen Position an. Beispiel: Wenn Sie beide Anmerkungen und den Prüfungsstatus mithilfe der Einstellung **Oben links** drucken, ähnelt die erstellte Ausgabe der hier dargestellten PDF-Datei.
 
-   ![Anmerkungs- und Prüfungsstatus in der generierten PDF](assets/annotation-status-pdf.png)
+   ![Anmerkungs- und Prüfungsstatus auf generierter PDF](assets/annotation-status-pdf.png)
 
-1. Laden Sie ![Download-Option für PDF](assets/do-not-localize/download.png) herunter oder drucken Sie ![Druckoptionen in PDF](assets/do-not-localize/print.png) die PDF-Datei mithilfe der Optionen oben rechts.
+1. Laden Sie ![Download-Option für PDF](assets/do-not-localize/download.png) herunter oder drucken Sie ![Druckoptionen auf PDF](assets/do-not-localize/print.png) der PDF unter Verwendung der Optionen oben rechts.
 
    >[!NOTE]
    >
    >Wenn das Asset Unter-Assets enthält, können Sie alle Unter-Assets zusammen mit ihren jeweiligen seitenweisen Anmerkungen drucken.
 
-   Um das Erscheinungsbild der gerenderten PDF-Datei zu bearbeiten, z. B. Schriftfarbe, -größe und -stil, öffnen Sie die **[!UICONTROL PDF-Konfiguration für Anmerkungen]** in Configuration Manager und ändern Sie die gewünschten Optionen. Um beispielsweise die Anzeigefarbe des Status „Bestätigt“ zu ändern, modifizieren Sie im entsprechenden Feld den Farb-Code. Informationen zum Ändern der Schriftfarbe von Anmerkungen finden Sie unter [Anmerken](/help/assets/manage-assets.md#annotating).
+   Um das Erscheinungsbild der gerenderten PDF-Datei zu bearbeiten, z. B. Schriftfarbe, -größe und -stil, öffnen Sie die **[!UICONTROL Konfiguration der Anmerkung]** in Configuration Manager und ändern Sie die gewünschten Optionen. Um beispielsweise die Anzeigefarbe des Status „Bestätigt“ zu ändern, modifizieren Sie im entsprechenden Feld den Farb-Code. Informationen zum Ändern der Schriftfarbe von Anmerkungen finden Sie unter [Anmerken](/help/assets/manage-assets.md#annotating).
 
-   ![Konfiguration zum Drucken von Asset-Anmerkungen in PDF-Dokumenten](assets/annotation-print-pdf-config.png)
+   ![Konfiguration zum Drucken der Asset-Anmerkung auf dem PDF-Dokument](assets/annotation-print-pdf-config.png)
 
    Kehren Sie zu der gerenderten PDF-Datei zurück und aktualisieren Sie sie. Der aktualisierte PDF-Datei spiegelt die von Ihnen vorgenommenen Änderungen wider.
 

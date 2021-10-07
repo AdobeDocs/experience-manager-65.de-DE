@@ -3,12 +3,12 @@ title: Best Practices zur Verarbeitung der unterstützten Dateiformate
 description: Best Practices zur Verarbeitung der verschiedenen unterstützten Dateitypen mithilfe von  [!DNL Experience Manager Assets].
 contentOwner: AG
 role: Admin
-feature: Asset Management,Entwicklertools
+feature: Asset Management,Developer Tools
 exl-id: da080f12-4cf7-4c26-901b-cd40d9c00bcb
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 46%
+source-wordcount: '465'
+ht-degree: 47%
 
 ---
 
@@ -20,7 +20,7 @@ Eine vollständige Liste der unterstützten Dateiformate finden Sie unter [Von A
 
 >[!TIP]
 >
->Wenn Sie [!DNL Experience Manager] in Adobe Managed Services (AMS) verwenden, wenden Sie sich an die Kundenunterstützung von Adobe, wenn Sie eine Vielzahl großer PSD- oder PSB-Dateien verarbeiten möchten. Wenden Sie sich an den Kundenbetreuer von Adobe, um diese Best Practices für Ihre AMS-Bereitstellung zu implementieren und die bestmöglichen Tools und Modelle für die proprietären Formate von Adobe auszuwählen. [!DNL Experience Manager] kann keine sehr hochauflösenden PSB-Dateien verarbeiten, die mehr als 30000 x 23000 Pixel sind.
+>Wenn Sie [!DNL Experience Manager] in Adobe Managed Services (AMS) verwenden, wenden Sie sich an den Support von Adobe, wenn Sie eine Vielzahl großer PSD- oder PSB-Dateien verarbeiten möchten. Wenden Sie sich an den Support-Mitarbeiter von Adobe, um diese Best Practices für Ihre AMS-Bereitstellung zu implementieren und die bestmöglichen Tools und Modelle für die proprietären Formate von Adobe auszuwählen. [!DNL Experience Manager] kann keine sehr hochauflösenden PSB-Dateien verarbeiten, die mehr als 30000 x 23000 Pixel sind.
 
 ## [!DNL Adobe Camera Raw] Bibliothek {#adobe-camera-raw-library}
 

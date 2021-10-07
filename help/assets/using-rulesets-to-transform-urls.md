@@ -7,11 +7,11 @@ topic-tags: dynamic-media
 content-type: reference
 role: User, Admin,Developer
 exl-id: b0ac587b-8592-4d37-9ce0-98a0859c367f
-feature: Configuration,ruleSets
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+feature: Configuration,Rulesets
+source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 72%
+source-wordcount: '760'
+ht-degree: 71%
 
 ---
 
@@ -50,7 +50,7 @@ Siehe auch [Fehlerbehebung bei Regelsätzen](https://helpx.adobe.com/de/experien
 Stellen Sie außerdem sicher, dass der Regelsatz zunächst in einer Staging-Umgebung getestet wurde, die sich nicht auf die Live-Produktionsumgebung auswirkt.
 Für Produktions- und Testumgebungen sind in der Regel unterschiedliche Anmeldungen erforderlich.
 
-Informationen zur Anmeldung finden Sie unter der [Adobe Dynamic Media Classic -Desktop-Applikation](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#sign-in-dmc-app).
+Informationen zur Anmeldung finden Sie im Adobe Dynamic Media Classic-Desktop-Programm [unter ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#sign-in-dmc-app).
 
 <!-- OBSOLETE INFORMATION * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
@@ -62,7 +62,7 @@ Siehe auch [Verwenden Sie in einem Regelsatz](https://helpx.adobe.com/de/experie
 
 1. Melden Sie sich bei Ihrem [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app) an.
 
-   Ihre Benutzer- und Anmeldedaten haben Sie zum Zeitpunkt der Bereitstellung von Adobe erhalten. Wenn Ihnen die Informationen nicht vorliegen, wenden Sie sich an den technischen Support.
+   Ihre Benutzer- und Anmeldedaten haben Sie zum Zeitpunkt der Bereitstellung von Adobe erhalten. Wenn Sie diese Informationen nicht haben, wenden Sie sich an den Kundensupport von Adobe.
 
 1. Laden Sie Ihre Regelsatzdatei wie folgt hoch:
 

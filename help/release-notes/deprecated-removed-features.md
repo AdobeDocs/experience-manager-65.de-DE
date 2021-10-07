@@ -2,7 +2,7 @@
 title: Veraltete und entfernte Funktionen in Adobe Experience Manager 6.5.
 description: Spezifische Versionshinweise zu veralteten und entfernten Funktionen von Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: a76772b8761e35a828814ffe0ac3b019266ff008
+source-git-commit: 99d38dddbcd06fecb82c744d446b9cef981e0781
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 42%
@@ -57,7 +57,7 @@ In diesem Abschnitt werden Funktionen aufgelistet, die aus AEM 6.5 entfernt wurd
 
 | Bereich | Funktion | Ersatz |
 |--- |--- |--- |
-| Integration mit [!DNL Experience Cloud] | Sie können Ihre Assets mit [!DNL Experience Cloud] mithilfe einer Konfiguration über [!DNL Adobe I/O] synchronisieren. [!DNL Adobe Experience Cloud] wurde früher  [!DNL Adobe Marketing Cloud]genannt. | Wenden Sie sich bei Fragen an die Kundenunterstützung von Adobe](https://www.adobe.com/account/sign-in.supportportal.html).[ |
+| Integration mit [!DNL Experience Cloud] | Sie können Ihre Assets mit [!DNL Experience Cloud] mithilfe einer Konfiguration über [!DNL Adobe I/O] synchronisieren. [!DNL Adobe Experience Cloud] wurde früher  [!DNL Adobe Marketing Cloud]genannt. | Wenn Sie Fragen haben, wenden Sie sich an den Kundendienst von Adobe](https://www.adobe.com/account/sign-in.supportportal.html).[ |
 | Analytics Activity Map | Die Version der Activity Map, die in AEM enthalten ist. | Aufgrund von Sicherheitsänderungen in der Adobe Analytics-API ist es nicht mehr möglich, die in AEM enthaltene Version von Activity Map zu verwenden. Verwenden Sie das [ActivityMap-Plugin, das von Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=de#activity-map) bereitgestellt wird. |
 | Integrationen | Die ExactTarget-Integration wurde aus der Standardverteilung (Quickstart) entfernt und ist nicht mehr verfügbar. | Kein Ersatz. |
 | Integrationen | Die Salesforce Force API-Integration wurde aus der Standardverteilung (Quickstart) entfernt und ist jetzt ein zusätzliches Paket, das von [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) installiert werden kann. | Die Funktion ist weiterhin verfügbar. |

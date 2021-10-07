@@ -13,10 +13,10 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
-source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
+source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
 source-wordcount: '7792'
-ht-degree: 34%
+ht-degree: 33%
 
 ---
 
@@ -263,11 +263,11 @@ Navigieren Sie zum Ändern der Speicherbegrenzung für die PTIFF-Erstellung zu *
 
 ### Authentifizierung einrichten {#setting-up-authentication}
 
-Richten Sie die Replikationsauthentifizierung auf der Autoreninstanz ein, damit Sie Bilder für den Dynamic Media-Bildbereitstellungsdienst replizieren können. Sie erhalten zunächst einen KeyStore, speichern ihn dann unter dem Benutzer **[!UICONTROL dynamic-media-replication]** und konfigurieren ihn. Ihr Unternehmensadministrator hat während des Bereitstellungsprozesses eine Begrüßungs-E-Mail mit der KeyStore-Datei und den erforderlichen Anmeldeinformationen erhalten. Wenn Sie diese Informationen nicht erhalten haben, wenden Sie sich an die Kundenunterstützung von Adobe.
+Richten Sie die Replikationsauthentifizierung auf der Autoreninstanz ein, damit Sie Bilder für den Dynamic Media-Bildbereitstellungsdienst replizieren können. Sie erhalten zunächst einen KeyStore, speichern ihn dann unter dem Benutzer **[!UICONTROL dynamic-media-replication]** und konfigurieren ihn. Ihr Unternehmensadministrator hat während des Bereitstellungsprozesses eine Begrüßungs-E-Mail mit der KeyStore-Datei und den erforderlichen Anmeldeinformationen erhalten. Wenn Sie diese Informationen nicht erhalten haben, wenden Sie sich an den Kundensupport von Adobe.
 
 **Gehen Sie wie folgt vor, um die Authentifizierung einzurichten:**
 
-1. Wenden Sie sich an die Kundenunterstützung von Adobe, wenn Sie noch nicht über die Datei und das Kennwort verfügen. Diese Informationen sind ein notwendiger Teil der Bereitstellung. Die Schlüssel werden Ihrem Konto zugeordnet.
+1. Wenden Sie sich an den Adobe-Support, wenn Sie noch nicht über die Datei und das Kennwort verfügen, um Ihre KeyStore-Datei und Ihr Kennwort zu erhalten. Diese Informationen sind ein notwendiger Teil der Bereitstellung. Die Schlüssel werden Ihrem Konto zugeordnet.
 
 1. Wählen Sie in Experience Manager das Experience Manager-Logo aus, um auf die globale Navigationskonsole zuzugreifen, und navigieren Sie dann zu **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Benutzer]**.
 
@@ -290,9 +290,9 @@ Richten Sie die Replikationsauthentifizierung auf der Autoreninstanz ein, damit 
 
    * Geben Sie im Feld **[!UICONTROL Neuer Alias]** den Namen eines Alias ein, den Sie später in der Replikationskonfiguration verwenden möchten. Sie können beispielsweise `replication` als Alias verwenden.
    * Wählen Sie **[!UICONTROL KeyStore-Datei]** aus. Navigieren Sie zur KeyStore-Datei, die Sie nach Adobe erhalten haben, wählen Sie sie aus und klicken Sie auf **[!UICONTROL Öffnen]**.
-   * Geben Sie im Feld **[!UICONTROL KeyStore File Password]** das Kennwort für die KeyStore-Datei ein. Dieses Kennwort ist **nicht** das KeyStore-Kennwort, das Sie in Schritt 5 erstellt haben. Es ist jedoch die KeyStore-Adobe für Dateikennwörter, die in der Begrüßungs-E-Mail enthalten ist, die Sie während der Bereitstellung erhalten haben. Wenden Sie sich an die Kundenunterstützung von Adobe, um Ihre KeyStore-Datei und das dazugehörige Kennwort zu erhalten (falls noch nicht vorhanden).
-   * Geben Sie im Feld **[!UICONTROL Passwort für privaten Schlüssel]** das Kennwort für den privaten Schlüssel ein (es kann sich um dasselbe Kennwort für den privaten Schlüssel handeln, das im vorherigen Schritt bereitgestellt wurde). Das Kennwort für den privaten Schlüssel ist in der Begrüßungs-E-Mail von Adobe enthalten, die während der Bereitstellung an Sie gesendet wird. Nehmen Sie Kontakt mit der Kundenunterstützung von Adobe auf, falls Sie kein Kennwort für den privaten Schlüssel erhalten haben.
-   * Geben Sie im Feld **[!UICONTROL Alias für privaten Schlüssel]** den Alias für den privaten Schlüssel ein. Beispiel: `*companyname*-alias`. Der Alias für den privaten Schlüssel ist in der Begrüßungs-E-Mail von Adobe enthalten, die während der Bereitstellung an Sie gesendet wird. Nehmen Sie Kontakt mit der Kundenunterstützung von Adobe auf, falls Sie keinen Alias für den privaten Schlüssel erhalten haben.
+   * Geben Sie im Feld **[!UICONTROL KeyStore File Password]** das Kennwort für die KeyStore-Datei ein. Dieses Kennwort ist **nicht** das KeyStore-Kennwort, das Sie in Schritt 5 erstellt haben. Es ist jedoch die KeyStore-Adobe für Dateikennwörter, die in der Begrüßungs-E-Mail enthalten ist, die Sie während der Bereitstellung erhalten haben. Wenden Sie sich an den Adobe-Support, wenn Sie kein Kennwort für die KeyStore-Datei erhalten haben.
+   * Geben Sie im Feld **[!UICONTROL Passwort für privaten Schlüssel]** das Kennwort für den privaten Schlüssel ein (es kann sich um dasselbe Kennwort für den privaten Schlüssel handeln, das im vorherigen Schritt bereitgestellt wurde). Das Kennwort für den privaten Schlüssel ist in der Begrüßungs-E-Mail von Adobe enthalten, die während der Bereitstellung an Sie gesendet wird. Wenden Sie sich an den Adobe-Support, wenn Sie kein Kennwort für einen privaten Schlüssel erhalten haben.
+   * Geben Sie im Feld **[!UICONTROL Alias für privaten Schlüssel]** den Alias für den privaten Schlüssel ein. Beispiel: `*companyname*-alias`. Der Alias für den privaten Schlüssel ist in der Begrüßungs-E-Mail von Adobe enthalten, die während der Bereitstellung an Sie gesendet wird. Wenden Sie sich an den Kundensupport von Adobe , wenn Sie keinen Alias für den privaten Schlüssel erhalten haben.
 
    ![edit_settings_fordynamic-media-replication2](assets/edit_settings_fordynamic-media-replication2.png)
 
@@ -309,7 +309,7 @@ Richten Sie die Replikationsauthentifizierung auf der Autoreninstanz ein, damit 
 
    * **[!UICONTROL Aktiviert]**: Aktivieren Sie dieses Kontrollkästchen, um den Replikationsagenten zu aktivieren.
    * **[!UICONTROL Region]**  - Auf die entsprechende Region eingestellt: Nordamerika, Europa oder Asien
-   * **[!UICONTROL Mandantenkennung]**  - Dieser Wert ist der Name Ihres Unternehmens/Mandanten, das/der im Replikationsdienst veröffentlicht wird. Dieser Wert ist die Mandantenkennung, die die Adobe in der Begrüßungs-E-Mail bereitstellt, die Ihnen während der Bereitstellung gesendet wird. Wenn Sie diese Informationen nicht erhalten haben, wenden Sie sich an die Kundenunterstützung von Adobe.
+   * **[!UICONTROL Mandantenkennung]**  - Dieser Wert ist der Name Ihres Unternehmens/Mandanten, das/der im Replikationsdienst veröffentlicht wird. Dieser Wert ist die Mandantenkennung, die die Adobe in der Begrüßungs-E-Mail bereitstellt, die Ihnen während der Bereitstellung gesendet wird. Wenn Sie diese Informationen nicht erhalten haben, wenden Sie sich an den Kundensupport von Adobe.
    * **[!UICONTROL Key Store Alias]**  - Dieser Wert entspricht dem  **neuen** Aliaswert, der beim Generieren des Schlüssels in  [Einrichten der Authentifizierung](#setting-up-authentication) festgelegt wurde. z. B.  `replication`. (Siehe Schritt 7 unter [Einrichten der Authentifizierung](#setting-up-authentication).)
    * **[!UICONTROL Key Store Password]**  - Das KeyStore-Kennwort, das erstellt wurde, als Sie auf KeyStore  **[!UICONTROL erstellen tippen]**. Dieses Kennwort wird nicht von Adobe bereitgestellt. Siehe Schritt 5 von [Einrichten der Authentifizierung](#setting-up-authentication).
 
@@ -501,7 +501,7 @@ Eine andere Möglichkeit zum Testen der Bereitstellung Ihrer Assets besteht dari
 
 Der Dynamic Media-Cloud Service unterstützt u. a. die hybride Veröffentlichung und Bereitstellung von Bildern und Videos, Videoanalysen und Videokodierung.
 
-Im Rahmen der Konfiguration müssen Sie eine Registrierungs-ID, eine Videodienst-URL, eine Bilddienst-URL, eine Replikationsdienst-URL eingeben und die Authentifizierung einrichten. Diese Informationen wurden Ihnen im Rahmen der Kontobereitstellung per E-Mail zugeschickt. Wenn Sie diese Informationen nicht erhalten haben, wenden Sie sich an Ihren Adobe Experience Manager-Administrator oder die Adobe-Kundenunterstützung, um die Informationen zu erhalten.
+Im Rahmen der Konfiguration müssen Sie eine Registrierungs-ID, eine Videodienst-URL, eine Bilddienst-URL, eine Replikationsdienst-URL eingeben und die Authentifizierung einrichten. Diese Informationen wurden Ihnen im Rahmen der Kontobereitstellung per E-Mail zugeschickt. Wenn Sie diese Informationen nicht erhalten haben, wenden Sie sich an Ihren Adobe Experience Manager-Administrator oder an den Adobe-Support, um die Informationen zu erhalten.
 
 >[!NOTE]
 Bevor Sie Dynamic Media-Cloud Services einrichten, stellen Sie sicher, dass Ihre Veröffentlichungsinstanz eingerichtet ist. Außerdem müssen Sie die Replikation eingerichtet haben, bevor Sie Dynamic Media-Cloud Services konfigurieren.
@@ -696,7 +696,7 @@ Wenn Sie Dynamic Media für (1) Bildbearbeitung in der Produktion *oder* (2) ver
    <td><p>Beginnt mit <strong>image/</strong></p> <p>Enthält <strong>application/</strong> und endet mit <strong>set</strong>.</p> <p>Beginnt mit <strong>video/</strong></p> </td>
    <td><p>Sie konfigurieren den Transport-URI so, dass er auf Ihren Experience Manager-Veröffentlichungsserver verweist, anstatt auf die Adobe Dynamic Media Cloud-Replikationsdienst-URL. Durch die Einrichtung dieses Filters kann Dynamic Media Classic Assets anstelle der Experience Manager-Veröffentlichungsinstanz bereitstellen.</p> <p>Die vordefinierten "filter-images", "filter-sets"und "filter-video"werden:</p>
     <ul>
-     <li>Fügen Sie PTIFF-Bilder, Proxy-Videoausgabeformate und Metadaten für die Replikation hinzu. Da sie jedoch nicht im JCR für diejenigen vorhanden sind, die Experience Manager - Dynamic Media Classic-Integration ausführen, hat es effektiv nichts.</li>
+     <li>Fügen Sie PTIFF-Bilder, Proxy-Videoausgabeformate und Metadaten für die Replikation hinzu. Da sie jedoch nicht im JCR für diejenigen vorhanden sind, die Experience Manager ausführen - Dynamic Media Classic-Integration - hat es effektiv keine Auswirkung.</li>
      <li>Das Originalbild, statische Bildwiedergaben, das Originalvideo und statische Miniaturwiedergaben werden aus der Replikation ausgeschlossen. Stattdessen stellt Dynamic Media Classic Bild- und Video-Assets bereit.</li>
     </ul> </td>
   </tr>
@@ -787,7 +787,7 @@ Verwenden Sie mehr als einen Filter auf einem Server? Beispielsweise einen Filte
 
    ![chlimage_1-513](assets/chlimage_1-4.png)
 
-   Wenn Sie anhand des obigen Beispiels nur das PTIFF (Pyramid TIFF) replizieren möchten, geben Sie `+cqdam,*` ein, das alle Ausgabedarstellungen enthält, die mit `cqdam` beginnen. Im Beispiel ist diese Ausgabedarstellung `cqdam.pyramid.tiff`.
+   Wenn Sie anhand des obigen Beispiels nur das PTIFF-Ausgabeformat (Pyramid-TIFF) replizieren möchten, geben Sie `+cqdam,*` ein, das alle Ausgabeformate enthält, die mit `cqdam` beginnen. Im Beispiel ist diese Ausgabedarstellung `cqdam.pyramid.tiff`.
 
    Wenn Sie nur das Original replizieren möchten, geben Sie `+original` ein.
 
@@ -864,8 +864,8 @@ Tabelle mit Manifesteinstellungen und deren Standardwerte:
 | `bkgcolor` | `FFFFFF` | Standard-Hintergrundfarbe. RGB-Wert, mit dem alle Bereiche des Antwortbildes gefüllt werden, die keine Bilddaten enthalten. Siehe auch [BkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html#image-serving-api) in der Image-Serving-API. |
 | `defaultpix` | `300,300` | Standard-Ansichtsgröße. Der Server beschränkt die Größe der Antwortbilder auf diese Breite und Höhe, wenn bei der Anfrage die Größe nicht explizit durch die Werte wid=, hei= oder scl= festgelegt wird.<br>Wird als zwei ganze Zahlen angegeben (0 oder höher), die durch ein Komma getrennt sind. Breite und Höhe in Pixel. Einer der beiden Werte kann auf 0 gesetzt werden, damit sie nicht eingeschränkt werden. Gilt nicht für verschachtelte oder eingebettete Anforderungen.<br>Siehe auch [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html#image-serving-api) in der Image-Serving-API.<br>Normalerweise verwenden Sie aber eine Viewer-Vorgabe oder Bildvorgabe, um das Asset bereitzustellen. „defaultpix“ gilt nur für ein Asset, für das keine Viewer-Vorgabe oder Bildvorgabe verwendet wird. |
 | `defaultthumbpix` | `100,100` | Standardgröße für Miniaturansichten. Wird anstelle von attribute::DefaultPix für Miniaturanfragen (`req=tmb`) verwendet.<br>Der Server beschränkt die Größe der Antwortbilder auf diese Breite und Höhe. Diese Aktion ist &quot;true&quot;, wenn in einer Miniaturanfrage (`req=tmb`) die Größe nicht explizit angegeben wird und die Anzeigegröße nicht explizit mit `wid=`, `hei=` oder `scl=` angegeben wird.<br>Wird als zwei ganze Zahlen angegeben (0 oder höher), die durch ein Komma getrennt sind. Breite und Höhe in Pixel. Einer der beiden Werte kann auf 0 gesetzt werden, damit sie nicht eingeschränkt werden.<br>Gilt nicht für verschachtelte oder eingebettete Anforderungen.<br>Siehe auch [DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api) in der Image-Serving-API. |
-| `expiration` | `36000000` | Standardeinstellung für Time-To-Live des Client-Caches. Bietet ein standardmäßiges Ablaufintervall für den Fall, dass ein bestimmter Katalogdatensatz keinen gültigen Wert für „catalog::Expiration“ (also den Ablauf des Katalogs) aufweist.<br>Reelle Zahl, 0 oder höher. Anzahl von Millisekunden bis zum Ablauf seit der Generierung der Daten. Geben Sie „0“ an, wenn das Antwortbild immer sofort ablaufen soll. Hiermit wird das Client-Caching praktisch deaktiviert. Dieser Wert ist standardmäßig auf 10 Stunden festgelegt. Dies bedeutet, dass es bei der Veröffentlichung eines neuen Bildes zehn Stunden dauert, bis das alte Bild aus dem Cache des Benutzers entfernt wird. Wenden Sie sich an die Kundenunterstützung, wenn der Cache früher geleert werden soll.<br>Siehe auch [Expiration](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) in der Image-Serving-API. |
-| `jpegquality` | `80` | Standardattribute für JPEG-Verschlüsselung. Legt die Standardattribute von JPEG-Antwortbildern fest.<br>Ganze Zahl und Flag, getrennt durch ein Komma. Der erste Wert liegt im Bereich 1 bis 100 und definiert die Qualität. Der zweite Wert kann 0 für normales Verhalten oder 1 zum Deaktivieren des RGB-Chromatizitäts-Downsampling sein, das von JPEG-Kodierern verwendet wird.<br>Siehe auch [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api) in der Image-Serving-API. |
+| `expiration` | `36000000` | Standardeinstellung für Time-To-Live des Client-Caches. Bietet ein standardmäßiges Ablaufintervall für den Fall, dass ein bestimmter Katalogdatensatz keinen gültigen Wert für „catalog::Expiration“ (also den Ablauf des Katalogs) aufweist.<br>Reelle Zahl, 0 oder höher. Anzahl von Millisekunden bis zum Ablauf seit der Generierung der Daten. Geben Sie „0“ an, wenn das Antwortbild immer sofort ablaufen soll. Hiermit wird das Client-Caching praktisch deaktiviert. Dieser Wert ist standardmäßig auf 10 Stunden festgelegt. Dies bedeutet, dass es bei der Veröffentlichung eines neuen Bildes zehn Stunden dauert, bis das alte Bild aus dem Cache des Benutzers entfernt wird. Wenden Sie sich an den Support , wenn Sie den Cache früher löschen müssen.<br>Siehe auch [Expiration](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) in der Image-Serving-API. |
+| `jpegquality` | `80` | Standardattribute für JPEG-Verschlüsselung. Legt die Standardattribute von JPEG-Antwortbildern fest.<br>Ganze Zahl und Flag, getrennt durch ein Komma. Der erste Wert liegt im Bereich 1 bis 100 und definiert die Qualität. Der zweite Wert kann 0 für normales Verhalten oder 1 für die Deaktivierung des RGB-Chromatizitäts-Downsampling sein, das von JPEG-Kodierern verwendet wird.<br>Siehe auch [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api) in der Image-Serving-API. |
 | `maxpix` | `2000,2000` | Maximale Größe des Antwortbildes. Maximale Breite und Höhe des Antwortbildes, das an den Client zurückgegeben wird.<br>Der Server gibt einen Fehler zurück, wenn eine Anfrage ein Antwortbild verursacht, dessen Breite oder Höhe größer als das Attribut::MaxPix ist.<br>Siehe auch [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html#image-serving-api) in der Image-Serving-API. |
 | `resmode` | `SHARP2` | Standard-Resamplingmodus. Gibt die standardmäßigen Resampling- und Interpolationsattribute an, die für die Skalierung von Bilddaten verwendet werden sollen.<br>Wird verwendet, wenn nicht in einer Anfrage angegeben  `resMode=` ist.<br>Zulässige Werte sind  `BILIN`,  `BICUB` oder  `SHARP2`.<br>Enum. Legen Sie für `bilin` den Wert 2, für `bicub` den Wert 3 oder für `sharp2` den Wert 4 für den Interpolationsmodus fest. Verwenden Sie `sharp2` für die besten Ergebnisse.<br>Siehe auch [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html#image-serving-api) in der Image-Serving-API. |
 | `resolution` | `72` | Standardobjektauflösung. Bietet eine standardmäßige Objektauflösung, falls ein bestimmter Katalogdatensatz keinen gültigen Wert für „catalog::Resolution“ aufweist.<br>Reelle Zahl, größer als 0. In der Regel als Pixel pro Zoll ausgedrückt, kann aber auch in anderen Einheiten, z. B. Pixel pro Meter, verwendet werden.<br>Siehe auch [Resolution](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html#image-serving-api) in der Image-Serving-API. |
@@ -905,7 +905,7 @@ Um die Dynamic Media-Farbverwaltungsfunktionen zu verwenden, installieren Sie Fe
 
 ### Konfigurieren der Standardfarbprofile {#configuring-the-default-color-profiles}
 
-Nachdem Sie das Feature Pack installiert haben, konfigurieren Sie die entsprechenden Standardfarbprofile, um die Farbkorrektur zu aktivieren, wenn RGB- oder CMYK-Bilddaten angefordert werden.
+Nachdem Sie das Feature Pack installiert haben, konfigurieren Sie die entsprechenden Standardfarbprofile, um die Farbkorrektur zu aktivieren, wenn Sie RGB- oder CMYK-Bilddaten anfordern.
 
 **Gehen Sie wie folgt vor, um die Standardfarbprofile zu konfigurieren:**
 
@@ -1015,7 +1015,7 @@ Die folgenden Farbprofile werden installiert:
   <tr>
    <td>CIERGB</td>
    <td>RGB</td>
-   <td>CIE RGB</td>
+   <td>CIE-RGB</td>
   </tr>
   <tr>
    <td>CoatedFogra27</td>
@@ -1035,7 +1035,7 @@ Die folgenden Farbprofile werden installiert:
   <tr>
    <td>ColorMatchRGB</td>
    <td>RGB</td>
-   <td>ColorMatch RGB</td>
+   <td>ColorMatch-RGB</td>
   </tr>
   <tr>
    <td>EuropeISOCoated</td>
@@ -1095,7 +1095,7 @@ Die folgenden Farbprofile werden installiert:
   <tr>
    <td>ProFoto</td>
    <td>RGB</td>
-   <td>ProFoto RGB</td>
+   <td>ProFoto-RGB</td>
   </tr>
   <tr>
    <td>PS4Default</td>
@@ -1160,7 +1160,7 @@ Die folgenden Farbprofile werden installiert:
   <tr>
    <td>WideGamutRGB</td>
    <td>RGB</td>
-   <td>Wide Gamut RGB</td>
+   <td>Wide Gamut-RGB</td>
   </tr>
  </tbody>
 </table>
@@ -1174,7 +1174,7 @@ Dies hat folgende Auswirkungen:
 * Die Farbkorrektur für RGB- und CMYK-Bilder wird aktiviert.
 * Für RGB-Bilder ohne Farbprofil wird angenommen, dass sie sich im Farbraum *sRGB* befinden.
 * Für CMYK-Bilder ohne Farbprofil wird angenommen, dass sie sich im Farbraum *WebCoated* befinden.
-* Dynamische Ausgabeformate, die die RGB-Ausgabe zurückgeben, geben sie im Farbraum *sRGB *zurück.
+* Dynamische Ausgabeformate, die eine RGB-Ausgabe zurückgeben, geben sie im Farbraum *sRGB *zurück.
 * Für dynamische Ausgabedarstellungen, bei denen eine CMYK-Ausgabe zurückgegeben wird, erfolgt dies im Farbraum *WebCoated*.
 
 ## Bereitstellen von Assets {#delivering-assets}

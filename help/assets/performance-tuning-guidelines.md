@@ -4,11 +4,11 @@ description: Empfehlungen und Anleitungen zur [!DNL Experience Manager] Konfigur
 contentOwner: AG
 mini-toc-levels: 1
 role: Architect, Admin
-feature: Asset-Management
+feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
-source-wordcount: '2743'
+source-wordcount: '2741'
 ht-degree: 52%
 
 ---
@@ -212,7 +212,7 @@ Stellen Sie darüber hinaus in der Datei `configure.xml` (alternativ in der Umge
 >
 >Die ImageMagick-Dateien `policy.xml` und `configure.xml` sind unter `/usr/lib64/ImageMagick-&#42;/config/` anstelle von `/etc/ImageMagick/` verfügbar. Informationen zum Speicherort der Konfigurationsdateien finden Sie in der [ImageMagick-Dokumentation](https://www.imagemagick.org/script/resources.php).
 
-Wenn Sie [!DNL Experience Manager] in Adobe Managed Services (AMS) verwenden, wenden Sie sich an die Kundenunterstützung von Adobe, wenn Sie eine Vielzahl großer PSD- oder PSB-Dateien verarbeiten möchten. Wenden Sie sich an den Kundenbetreuer von Adobe, um diese Best Practices für Ihre AMS-Bereitstellung zu implementieren und die bestmöglichen Tools und Modelle für die proprietären Formate von Adobe auszuwählen. [!DNL Experience Manager] kann keine sehr hochauflösenden PSB-Dateien verarbeiten, die mehr als 30000 x 23000 Pixel sind.
+Wenn Sie [!DNL Experience Manager] in Adobe Managed Services (AMS) verwenden, wenden Sie sich an den Support von Adobe, wenn Sie eine Vielzahl großer PSD- oder PSB-Dateien verarbeiten möchten. Wenden Sie sich an den Support-Mitarbeiter von Adobe, um diese Best Practices für Ihre AMS-Bereitstellung zu implementieren und die bestmöglichen Tools und Modelle für die proprietären Formate von Adobe auszuwählen. [!DNL Experience Manager] kann keine sehr hochauflösenden PSB-Dateien verarbeiten, die mehr als 30000 x 23000 Pixel sind.
 
 ### XMP-Writeback {#xmp-writeback}
 
@@ -255,7 +255,7 @@ Einige Optimierungen können an den Oak-Indexkonfigurationen vorgenommen werden,
 1. Fügen Sie eine `String[]`-Eigenschaft `excludedPaths` mit den Werten `/var`, `/etc/workflow/instances` und `/etc/replication` hinzu.
 1. Navigieren Sie zu `/oak:index/damAssetLucene`. Fügen Sie eine `String[]`-Eigenschaft `includedPaths` mit dem Wert `/content/dam` hinzu. Speichern Sie die Änderungen.
 
-Wenn Ihre Benutzer keine Volltextsuche nach Assets durchführen müssen, z. B. durch Text in PDF-Dokumenten suchen, deaktivieren Sie diese Option. Sie verbessern die Indexleistung, indem Sie die Volltextindizierung deaktivieren. Gehen Sie wie folgt vor, um die Textextraktion von [!DNL Apache Lucene] zu deaktivieren:
+Wenn Ihre Benutzer keine Volltextsuche nach Assets durchführen müssen, z. B. durch die Textsuche in PDF-Dokumenten, deaktivieren Sie sie. Sie verbessern die Indexleistung, indem Sie die Volltextindizierung deaktivieren. Gehen Sie wie folgt vor, um die Textextraktion von [!DNL Apache Lucene] zu deaktivieren:
 
 1. Rufen Sie in der [!DNL Experience Manager]-Benutzeroberfläche [!UICONTROL Package Manager] auf.
 1. Laden Sie das Paket hoch und installieren Sie es unter [disable_indexingbinarytextraktion-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
@@ -306,6 +306,6 @@ Um Latenzzeiten zu minimieren und durch effiziente CPU-Auslastung und Lastvertei
 * Konfigurieren Sie [!DNL ImageMagick], um den Ressourcenverbrauch zu begrenzen.
 * Entfernen Sie unnötige Schritte aus dem Workflow [!UICONTROL DAM Update Asset].
 * Konfigurieren Sie den Workflow und die Versionsbereinigung.
-* Optimieren Sie Indizes mit den neuesten Service Packs und Hotfixes. Wenden Sie sich an die Adobe-Kundenunterstützung, um weitere verfügbare Indexoptimierungen zu erhalten.
+* Optimieren Sie Indizes mit den neuesten Service Packs und Hotfixes. Wenden Sie sich an die Adobe-Kundenunterstützung , um weitere verfügbare Indexoptimierungen zu erhalten.
 * Optimieren Sie die Abfrageleistung mit guessTotal.
 * Wenn Sie [!DNL Experience Manager] so konfigurieren, dass Dateitypen aus dem Inhalt der Dateien erkannt werden (durch Aktivierung von **[!UICONTROL Day CQ DAM Mime Type Service]** in der **[!UICONTROL AEM Web Console]**), laden Sie viele Dateien außerhalb der Spitzenzeiten stapelweise hoch, da sie ressourcenintensiv sind.
