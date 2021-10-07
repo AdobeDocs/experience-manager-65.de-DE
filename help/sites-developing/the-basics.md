@@ -1,8 +1,8 @@
 ---
 title: Grundlegende AEM-Konzepte
-seo-title: Grundlagen
+seo-title: The Basics
 description: Ein Überblick über die grundlegenden Konzepte, wie AEM strukturiert ist und darüber hinaus entwickelt wird, einschließlich Informationen zu JCR, Sling, OSGi, Dispatcher, Workflows und MSM
-seo-description: Ein Überblick über die grundlegenden Konzepte, wie AEM strukturiert ist und darüber hinaus entwickelt wird, einschließlich Informationen zu JCR, Sling, OSGi, Dispatcher, Workflows und MSM
+seo-description: An overview of the core concepts of how AEM is structured and how to develop on top of it including understanding the JCR, Sling, OSGi, the dispatcher, workflows, and MSM
 uuid: e49f29db-a5d6-48a0-af32-f8785156746e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 78e28636eec331314c2f29c93d516215b1572f20
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '3367'
+source-wordcount: '3334'
 ht-degree: 85%
 
 ---
@@ -41,7 +41,7 @@ Es wird außerdem empfohlen, dass Sie die [Richtlinien und Best Practices](/help
 
 ## Java Content Repository {#java-content-repository}
 
-Der Java Content Repository-Standard [JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html) legt eine hersteller- und implementierungsunabhängige Methode für den bidirektionalen Zugriff auf Inhalte auf einer granularen Ebene in einem Content-Repository fest.
+Der Java Content Repository-Standard [JSR 283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html) legt eine hersteller- und implementierungsunabhängige Methode für den bidirektionalen Zugriff auf Inhalte auf einer granularen Ebene in einem Content-Repository fest.
 
 Maßgeblich für Spezifikationen ist Adobe Research (Switzerland) AG gehalten.
 
@@ -131,9 +131,9 @@ Die folgende Abbildung zeigt den verwendeten Mechanismus, auf den in den folgend
 
 ![chlimage_1-86](assets/chlimage_1-86a.png)
 
-Mit Sling geben Sie an, welches Skript eine bestimmte Entität rendert (indem Sie die Eigenschaft `sling:resourceType` im JCR-Knoten festlegen). Dieser Mechanismus bietet mehr Freiheit als einer, in dem das Skript auf die Datenentitäten zugreift (wie es eine SQL-Anweisung in einem PHP-Skript tun würde), da eine Ressource mehrere Darstellungen haben kann.
+Mit Sling geben Sie an, welches Skript eine bestimmte Entität rendert (indem Sie die Eigenschaft `sling:resourceType` im JCR-Knoten festlegen). Dieser Mechanismus bietet mehr Freiheit als einer, in dem das Skript auf die Datenentitäten zugreift (wie es eine SQL-Anweisung in einem PHP-Skript tun würde), da eine Ressource mehrere Ausgabedarstellungen haben kann.
 
-#### Anforderungen an Ressourcen zuordnen  {#mapping-requests-to-resources}
+#### Anforderungen an Ressourcen zuordnen {#mapping-requests-to-resources}
 
 Die Anfrage wird zerlegt und die notwendigen Informationen werden extrahiert. Das Repository wird nach der angeforderten Ressource (Inhaltsknoten) durchsucht:
 
@@ -141,9 +141,9 @@ Die Anfrage wird zerlegt und die notwendigen Informationen werden extrahiert. Da
 * Wenn kein Knoten gefunden wird, wird die Erweiterung verworfen und die Suche wiederholt. z. B. `../content/corporate/jobs/developer`
 * Wenn kein Knoten gefunden wird, gibt Sling den HTTP-Code 404 (Nicht gefunden) zurück.
 
-Sling erlaubt auch anderen Elementen als JCR-Knoten, als Ressourcen zu fungieren, dies ist jeodch eine erweiterte Funktion.
+Sling erlaubt auch anderen Elementen als JCR-Knoten, als Ressourcen zu fungieren, dies ist jedoch eine erweiterte Funktion.
 
-### Auffinden des Skripts  {#locating-the-script}
+### Auffinden des Skripts {#locating-the-script}
 
 Wenn die entsprechende Ressource (Inhaltsknoten) gefunden wird, wird der **Sling-Ressourcentyp** extrahiert. Dies ist ein Pfad, der das Skript findet, das zum Rendern des Inhalts verwendet wird.
 
@@ -161,7 +161,7 @@ Einige andere zu beachtende Punkte sind:
 * wenn die Methode (GET, POST) benötigt wird, wird sie gemäß der HTTP-Spezifikation, z. B. jobs.POST.esp (siehe unten) in Großbuchstaben angegeben
 * verschiedene Skript-Engines werden unterstützt:
 
-   * HTL (HTML-Vorlagensprache - bevorzugtes und empfohlenes serverseitiges Vorlagensystem von Adobe Experience Manager für HTML): `.html`
+   * HTL (HTML-Vorlagensprache - das bevorzugte und empfohlene serverseitige Vorlagensystem von Adobe Experience Manager für das HTML): `.html`
    * ECMAScript (JavaScript)-Seiten (serverseitige Ausführung): `.esp, .ecma`
    * Java Server Pages (serverseitige Ausführung): `.jsp`
    * Java Servlet Compiler (serverseitige Ausführung): `.java`
@@ -361,7 +361,7 @@ Dialogfelder werden durch die Kombination von Widgets erstellt.
 
 AEM wurde mit der Widgets-Bibliothek ExtJS entwickelt.
 
-**** DialogEin Dialogfeld ist ein spezieller Widget-Typ.
+**** DialogEin Dialogfeld ist ein spezieller Typ von Widget.
 
 Um Inhalte zu bearbeiten, verwendet AEM Dialogfelder, die vom Anwendungsentwickler definiert wurden. Diese kombinieren eine Reihe von Widgets, um dem Benutzer alle Felder und Aktionen zu präsentieren, die zum Bearbeiten des zugehörigen Inhalts erforderlich sind.
 
@@ -376,7 +376,7 @@ Die Definition einer Komponente umfasst:
 * den Code, der zum Rendern des Inhalts verwendet wird
 * ein Dialogfeld für die Benutzereingabe und die Konfiguration des resultierenden Inhalts.
 
-**** VorlageEine Vorlage ist die Grundlage für einen bestimmten Seitentyp. Beim Erstellen einer Seite auf der Registerkarte „Websites“ muss der Benutzer eine Vorlage auswählen. Die neue Seite wird dann durch Kopieren dieser Vorlage erstellt.
+**** TemplateEine Vorlage ist die Basis für einen bestimmten Seitentyp. Beim Erstellen einer Seite auf der Registerkarte „Websites“ muss der Benutzer eine Vorlage auswählen. Die neue Seite wird dann durch Kopieren dieser Vorlage erstellt.
 
 Eine Vorlage ist eine Hierarchie von Knoten, die dieselbe Struktur aufweist wie die zu erstellende Seite, aber keine Inhalte.
 
@@ -384,7 +384,7 @@ Sie definiert die Seitenkomponente, die zum Rendern der Seite verwendet wird, un
 
 **Seitenkomponente (Komponente der obersten Ebene)** Die Komponente, die zum Rendern der Seite verwendet werden soll.
 
-**** SeiteEine Seite ist eine &quot;Instanz&quot;einer Vorlage.
+**** Seite: Eine Seite ist eine &quot;Instanz&quot;einer Vorlage.
 
 Eine Seite hat einen Hierarchieknoten vom Typ cq:Page und einen Inhaltsknoten vom Typ cq:PageContent. Die Eigenschaft „sling:resourceType“ des Inhaltsknotens verweist auf die Seitenkomponente, die zum Rendern der Seite verwendet wird.
 
@@ -450,7 +450,7 @@ Bei AEM besteht eine Produktionsumgebung häufig aus zwei verschiedenen Arten vo
 
 Der Dispatcher ist das Tool von Adobe für Caching und/oder Lastenausgleich. Weitere Informationen finden Sie unter [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html).
 
-## FileVault (Quellversionssystem)  {#filevault-source-revision-system}
+## FileVault (Quellversionssystem) {#filevault-source-revision-system}
 
 FileVault stellt Ihrem JCR-Repository Dateisystemzuordnung und Versionskontrolle zur Verfügung. Es kann verwendet werden, um AEM-Entwicklungsprojekte mit voller Unterstützung für das Speichern und Versionieren von Projektcode, Inhalten, Konfigurationen usw. in Standardversionskontrollsystemen (z. B. Subversion) zu verwalten.
 
@@ -462,7 +462,7 @@ Ihre Inhalte unterliegen oft organisatorischen Prozessen, einschließlich Schrit
 
 Die Workflow-Engine wird verwendet, um die Implementierung Ihrer Workflows und deren anschließende Anwendung auf Ihre Inhalte zu verwalten.
 
-## Multi-Site-Management  {#multi-site-management}
+## Multi-Site-Management {#multi-site-management}
 
 Multi-Site-Manager (MSM) ermöglicht es Ihnen, mehrere Websites mit gemeinsamen Inhalten problemlos zu verwalten. Mit MSM können Sie Beziehungen zwischen den Websites definieren, sodass Inhaltsänderungen an einer Websites automatisch in anderen Websites repliziert werden.
 

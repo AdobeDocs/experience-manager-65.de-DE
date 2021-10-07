@@ -1,8 +1,8 @@
 ---
 title: Verwaltung von Benutzern, Gruppen und Zugriffsrechten
-seo-title: Verwaltung von Benutzern, Gruppen und Zugriffsrechten
+seo-title: User, Group and Access Rights Administration
 description: Erfahren Sie mehr über die Verwaltung von Benutzern, Gruppen und Zugriffsrechten in AEM.
-seo-description: Erfahren Sie mehr über die Verwaltung von Benutzern, Gruppen und Zugriffsrechten in AEM.
+seo-description: Learn about user, group and access rights administration in AEM.
 uuid: 26d7bb25-5a38-43c6-bd6a-9ddba582c60f
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -10,11 +10,11 @@ content-type: reference
 discoiquuid: 66674e47-d19f-418f-857f-d91cf8660b6d
 docset: aem65
 exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
-feature: Sicherheit
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+feature: Security
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '3138'
-ht-degree: 80%
+source-wordcount: '3120'
+ht-degree: 79%
 
 ---
 
@@ -62,11 +62,11 @@ CRX ermöglicht es Ihnen, die Zugriffsrechte für Benutzer- und Gruppenkonten zu
 
 >[!NOTE]
 >
->In CRX wird die [Zugriffssteuerung gemäß der Definition in JSR-283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html) implementiert.
+>In CRX wird die [Zugriffssteuerung gemäß der Definition in JSR-283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) implementiert.
 >
 >Die Standardinstallation eines CRX-Repositorys ist so konfiguriert, dass sie die ressourcenbasierten Zugriffssteuerungslisten verwendet. Dies ist eine mögliche Implementierung der JSR-283-Zugriffssteuerung und eine der Implementierungen in Jackrabbit.
 
-### Objekte und Prinzipale  {#subjects-and-principals}
+### Objekte und Prinzipale {#subjects-and-principals}
 
 CRX verwendet zwei Hauptkonzepte zur Bewertung der Zugriffsrechte:
 
@@ -90,7 +90,7 @@ CRX verwendet zwei Hauptkonzepte zur Bewertung der Zugriffsrechte:
       Alle Rechte, die einer der Gruppen zugewiesen sind, zu denen der Benutzer gehört.
    Das Ergebnis wird anschließend verwendet, um den Zugriff auf die angeforderte Ressource zuzulassen oder abzulehnen.
 
-#### Kompilieren der Liste der Zugriffsrechte für ein Objekt  {#compiling-the-list-of-access-rights-for-a-subject}
+#### Kompilieren der Liste der Zugriffsrechte für ein Objekt {#compiling-the-list-of-access-rights-for-a-subject}
 
 In CRX ist das Objekt abhängig von:
 
@@ -113,8 +113,7 @@ Die Liste der Zugriffsrechte, die für das Objekt relevant sind, wird erstellt a
 >
 
 
-
-### Auflösen von Anfragen und Zugriffsrechten  {#resolving-request-and-access-rights}
+### Auflösen von Anfragen und Zugriffsrechten {#resolving-request-and-access-rights}
 
 Wenn CRX die Anfrage verarbeitet, vergleicht es die Zugriffsanfrage des Objekts mit der Liste der Zugriffssteuerung im Repository-Knoten:
 
@@ -285,8 +284,7 @@ Wenn ein Konto stellvertretend für ein anderes agiert, ist dies sehr schwierig 
 >
 
 
-
-### Aktualisieren von Benutzerkonten  {#updating-a-user-account}
+### Aktualisieren von Benutzerkonten {#updating-a-user-account}
 
 1. Öffnen Sie mithilfe des Dialogfelds **Benutzerverwaltung** die Listenansicht aller Konten.
 1. Navigieren Sie in der hierarchischen Struktur nach oben.
@@ -294,7 +292,7 @@ Wenn ein Konto stellvertretend für ein anderes agiert, ist dies sehr schwierig 
 1. Nehmen Sie eine Änderung vor und klicken Sie anschließend auf „Speichern“ (grünes Häkchen-Symbol) für diesen Eintrag.
 1. Klicken Sie zum Fertigstellen auf **Schließen** oder auf **Liste…**, um zur Liste aller Benutzerkonten zurückzukehren.
 
-### Entfernen von Benutzerkonten  {#removing-a-user-account}
+### Entfernen von Benutzerkonten {#removing-a-user-account}
 
 1. Öffnen Sie mithilfe des Dialogfelds **Benutzerverwaltung** die Listenansicht aller Konten.
 1. Navigieren Sie in der hierarchischen Struktur nach oben.
@@ -320,13 +318,13 @@ Vorhandene Eigenschaften können mit dem Papierkorb-Symbol gelöscht werden.
 
 Mit Ausnahme des Kennworts können Eigenschaften nicht bearbeitet werden, sie müssen gelöscht und neu erstellt werden.
 
-#### Ändern von Kennwörtern  {#changing-the-password}
+#### Ändern von Kennwörtern {#changing-the-password}
 
 Das **Kennwort** ist eine spezielle Eigenschaft, die durch Klicken auf den Link **Kennwort ändern** geändert werden kann.
 
 Sie können über das Menü **Sicherheit** im CRX Explorer auch das Kennwort für Ihr eigenes Benutzerkonto ändern.
 
-### Definieren von Darstellern  {#defining-an-impersonator}
+### Definieren von Darstellern {#defining-an-impersonator}
 
 Sie können Darsteller für neue oder vorhandene Konten definieren:
 
@@ -396,7 +394,7 @@ Die Spalte **Übernommen** zeigt Mitgliedschaften an, die durch eine Mitgliedsch
    1. Zeigen Sie die **Gruppenmitgliedschaft** an.
    1. Verwalten Sie die **Mitglieder**.
 
-### Aktualisieren von Gruppenkonten  {#updating-a-group-account}
+### Aktualisieren von Gruppenkonten {#updating-a-group-account}
 
 1. Öffnen Sie mithilfe des Dialogfelds **Gruppenverwaltung** die Listenansicht aller Konten.
 1. Navigieren Sie in der hierarchischen Struktur nach oben.
@@ -404,7 +402,7 @@ Die Spalte **Übernommen** zeigt Mitgliedschaften an, die durch eine Mitgliedsch
 1. Nehmen Sie eine Änderung vor und klicken Sie anschließend auf „Speichern“ (grünes Häkchen-Symbol) für diesen Eintrag.
 1. Klicken Sie zum Fertigstellen auf **Schließen** oder auf **Liste…**, um zur Liste aller Gruppenkonten zurückzukehren.
 
-### Entfernen von Gruppenkonten  {#removing-a-group-account}
+### Entfernen von Gruppenkonten {#removing-a-group-account}
 
 1. Öffnen Sie mithilfe des Dialogfelds **Gruppenverwaltung** die Listenansicht aller Konten.
 1. Navigieren Sie in der hierarchischen Struktur nach oben.
@@ -442,7 +440,7 @@ Sie können der aktuellen Gruppe Mitglieder hinzufügen:
 
 Alternativ können Sie ein vorhandenes Mitglied über das Papierkorb-Symbol löschen.
 
-## Verwalten von Zugriffsrechten  {#access-right-management}
+## Verwalten von Zugriffsrechten {#access-right-management}
 
 Im Tab **Zugriffssteuerung** der CRXDE Lite können Sie die Zugriffskontrollrichtlinien definieren und die zugehörigen Berechtigungen zuweisen.
 
@@ -636,7 +634,7 @@ Sie können auch neue Berechtigungen registrieren:
 
 CRX überprüft Ihre Auswahl. Bei einem gegebenen Prinzipal ist (maximal) 1 Ablehnungs- und 1 Zulassungseintrag in einem gegebenen Knoten vorhanden. Die Implementierung löscht immer redundante Einträge und stellt sicher, dass dieselbe Berechtigung nicht sowohl in den Zulassungs- als auch in den Ablehnungseinträgen aufgeführt wird.
 
-### Sortieren von Richtlinien zur lokalen Zugriffssteuerung  {#ordering-local-access-control-policies}
+### Sortieren von Richtlinien zur lokalen Zugriffssteuerung {#ordering-local-access-control-policies}
 
 Die Reihenfolge in der Liste zeigt die Reihenfolge an, in der die Richtlinien angewendet werden.
 

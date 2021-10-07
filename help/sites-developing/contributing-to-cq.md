@@ -1,8 +1,8 @@
 ---
 title: Beitragen zu AEM
-seo-title: Beitragen zu AEM
+seo-title: Contributing to AEM
 description: AEM wird nach den bewährten Vorgehensweisen entwickelt, die häufig in großen Open-Source-Projekten praktiziert werden
-seo-description: AEM wird nach den bewährten Vorgehensweisen entwickelt, die häufig in großen Open-Source-Projekten praktiziert werden
+seo-description: AEM is developed following proven methodologies commonly practiced in large open source projects
 uuid: ffef60ae-8a9a-4c4b-8cbd-3cd72792a42e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f52402df-f6dc-4c62-82bc-cbce489b2b74
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '2726'
-ht-degree: 67%
+source-wordcount: '2709'
+ht-degree: 66%
 
 ---
 
@@ -45,7 +45,7 @@ Auf der höchsten Ebene sollten Sie über ein solides Verständnis folgender The
 * Browser-Cookies
 * und andere moderne Web-Entwicklungskonzepte
 
-Der Technologiestapel von Adobe Experience Manager basiert auf dem OSGi-Container [Apache Felix](https://felix.apache.org/) mit dem Web-Framework [Apache Sling](https://sling.apache.org/site/index.html) und bettet ein Java Content Repository ([JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)) basierend auf [Apache Jackrabbit](https://jackrabbit.apache.org/jcr-api.html) ein. Sie sollten sich mit diesen einzelnen Projekten sowie mit anderen Open Source-Komponenten (z. B. Apache Lucene) vertraut machen, die in dem Bereich verwendet werden, in dem Sie Beiträge leisten möchten.
+Der Technologiestapel von Adobe Experience Manager basiert auf dem OSGi-Container [Apache Felix](https://felix.apache.org/) mit dem Web-Framework [Apache Sling](https://sling.apache.org/site/index.html) und bettet ein Java Content Repository ([JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html)) basierend auf [Apache Jackrabbit](https://jackrabbit.apache.org/jcr-api.html) ein. Sie sollten sich mit diesen einzelnen Projekten sowie mit anderen Open Source-Komponenten (z. B. Apache Lucene) vertraut machen, die in dem Bereich verwendet werden, in dem Sie Beiträge leisten möchten.
 
 ## Tribal-Kenntnisse {#tribal-knowledge}
 
@@ -53,7 +53,7 @@ Bestimmte Konzepte und Leitprinzipien sind tief in der früheren Day-Kultur verw
 
 ### Alles ist Inhalt {#everything-is-content}
 
-Der Inhalt umfasst nicht nur alle Daten, die die Webanwendung speichert. Der Programmcode, die Bibliotheken, Skripte, Vorlagen, HTML, CSS, Bilder und Artefakte aller Art, alles und alles wird im Inhalts-Repository persistiert und über Package Manager und Package Share in Form von Paketen importiert/exportiert.
+Der Inhalt umfasst nicht nur alle Daten, die die Webanwendung speichert. Der Programmcode, die Bibliotheken, Skripte, Vorlagen, HTML, CSS, Bilder und Artefakte aller Art, alles und alles wird im Content Repository persistiert und über Package Manager und Package Share in Form von Paketen importiert/exportiert.
 
 ### Davids Modell {#david-s-model}
 
@@ -67,7 +67,7 @@ REST (REpresentational State Transfer) bezeichnet den Software-Architekturstil, 
 
 Da REST die Leitphilosophie ist, die hinter so viel von dem steckt, was wir tun, sollten Sie es für wichtig halten, sich in den Grundsätzen des RESTful Designs auskennen zu können. Ein guter Ausgangspunkt ist [Roy Fieldings Dissertation](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm).
 
-### Sling Anfrageauflösung  {#sling-request-resolution}
+### Sling Anfrageauflösung {#sling-request-resolution}
 
 Ein wesentlicher Aspekt zum Verständnis von AEM ist, wie eingehende Anforderungen sich auf das Inhalts- und Anwendungsverhalten beziehen, wie Inhalte im Content-Repository strukturiert sind und wo AEM nach der Anwendungslogik sucht, um die Anforderung zu bearbeiten. Erfahren Sie mehr über die Apache [Sling URL-Dekomposition](https://sling.apache.org/site/url-decomposition.html) und die Art und Weise, wie sie den REST-Architekturstil und seine statusfreien, cachefähigen und geschichteten Systemeinschränkungen erzwingt.
 
@@ -81,7 +81,7 @@ Kleine Schnellstart-Größe: halten Sie die Größe der Schnellstart-JAR-Datei a
 
 Schnellere Startzeit: wenn Sie eine Änderung vornehmen, die sich auf die Startzeit auswirken könnte, stellen Sie sicher, dass sie kürzer wird, nicht länger.
 
-### Rank und schlank  {#lean-and-mean}
+### Rank und schlank {#lean-and-mean}
 
 Wir bevorzugen Code und Projekte, die leicht, klein, schnell und elegant sind. „Gut genug“ ist nicht gut genug.
 
@@ -89,15 +89,15 @@ Wiederverwendung von Code: Unsere OSGi-basierte Produktarchitektur und die Philo
 
 Lose Kopplung: Wir bevorzugen lose gekoppelte Interaktionen gegenüber engen Abhängigkeiten und „unerwünschter Intimität“. Lose Kopplung ermöglicht auch mehr Code-Wiederverwendung.
 
-### Zerstören Sie die Demo nicht  {#don-t-break-the-demo}
+### Zerstören Sie die Demo nicht {#don-t-break-the-demo}
 
 Machen Sie sich mit Demoskripten und Produktfunktionen vertraut, die in Demos am häufigsten angezeigt werden. Verstehen Sie, dass nichts, was Sie tun, jemals eine „Demo-Skript“ -Funktion zerstören sollte. Das Kernprodukt sollte immer demofähig sein, auch während der Entwicklung.
 
-### Design für Zuverlässigkeit  {#design-for-reliability}
+### Design für Zuverlässigkeit {#design-for-reliability}
 
 Wir bemühen uns, Features in Fail-Soft-Art zu entwerfen und zu kodieren, sodass (zum Beispiel) ein Problem mit einem einzelnen DOM-Element nicht dazu führt, dass eine ganze Seite nicht gerendert wird. Mit anderen Worten: Machen Sie Dinge, die tödlich sein sollten, tödlich. Machen Sie alles andere überlebensfähig. Machen Sie das Produkt „nachsichtig“.
 
-### Abnormal ist das neue normal  {#abnormal-is-the-new-normal}
+### Abnormal ist das neue normal {#abnormal-is-the-new-normal}
 
 Verlassen Sie sich nicht auf Shutdown-Hooks, sorgen Sie für eine Bereinigung beim Start. Abnormale Beendigung ist normale Beendigung.
 

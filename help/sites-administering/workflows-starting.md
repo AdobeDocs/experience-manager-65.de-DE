@@ -1,8 +1,8 @@
 ---
 title: Starten von Workflows
-seo-title: Starten von Workflows
+seo-title: Starting Workflows
 description: Erfahren Sie, wie Sie Workflows in AEM starten.
-seo-description: Erfahren Sie, wie Sie Workflows in AEM starten.
+seo-description: Learn how to start Workflows in AEM.
 uuid: 0648d335-ecce-459d-95fd-3d4d76181b32
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
 exl-id: 84a1964c-4121-4763-b946-9eee6093747d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '794'
 ht-degree: 64%
 
 ---
@@ -35,10 +35,11 @@ Bei der Verwaltung von Workflows können Sie sie mit unterschiedlichen Methoden 
 >Autoren stehen noch weitere Methoden zur Verfügung. Weitere Informationen finden Sie unter:
 >
 >* [Anwenden von Workflows auf Seiten](/help/sites-authoring/workflows-applying.md)
-* [Anwenden von Workflows auf DAM-Assets](/help/assets/assets-workflow.md)
-* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
-* [Übersetzungsprojekte](/help/sites-administering/tc-manage.md)
+>* [Anwenden von Workflows auf DAM-Assets](/help/assets/assets-workflow.md)
+>* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
+>* [Übersetzungsprojekte](/help/sites-administering/tc-manage.md)
 
+>
 
 
 ## Workflow-Modelle {#workflow-models}
@@ -85,7 +86,7 @@ Ein Workflow-Paket:
 * kann mehrfach verwendet werden
 * kann vom Benutzer geändert werden (Ressourcen hinzufügen oder entfernen), während die Workflow-Instanz gerade ausgeführt wird
 
-## Starten eines Workflows über die Modelle-Konsole  {#starting-a-workflow-from-the-models-console}
+## Starten eines Workflows über die Modelle-Konsole {#starting-a-workflow-from-the-models-console}
 
 1. Navigieren Sie zur Konsole **Modelle** mit **Tools**, **Workflow** und dann **Modelle**.
 1. Wählen Sie den Workflow aus (entsprechend der Konsolenansicht). Bei Bedarf können Sie auch die Suche (links oben) verwenden:
@@ -93,7 +94,8 @@ Ein Workflow-Paket:
    ![wf-103](assets/wf-103.png)
 
    >[!NOTE]
-   Der Indikator **[Übergang](/help/sites-developing/workflows.md#transient-workflows)** zeigt Workflows an, für die der Workflow-Verlauf nicht beibehalten wird.
+   >
+   >Der Indikator **[Übergang](/help/sites-developing/workflows.md#transient-workflows)** zeigt Workflows an, für die der Workflow-Verlauf nicht beibehalten wird.
 
 1. Wählen Sie in der Symbolleiste **Workflow starten** aus.
 1. Das Dialogfeld „Workflow ausführen“ wird geöffnet. Darin können Sie Folgendes festlegen:
@@ -172,9 +174,9 @@ Ein Workflow-Paket:
       Bei dieser Startereigenschaft handelt es sich um eine Reihe von kommagetrennten Elementen: ``
 
       * `property-name` ignoriert alle `jcr`-Ereignisse, die beim festgelegten Eigenschaftsnamen ausgelöst werden. ``
-      * `event-user-data:<*someValue*>` ignoriert alle Ereignisse, die das  `*<someValue*`>- `user-data` Set über die  [ `ObservationManager` API] (https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String) enthalten.
+      * `event-user-data:<*someValue*>` ignoriert alle Ereignisse, die das  `*<someValue*`>- `user-data` Set über die  [ `ObservationManager` API] enthalten (https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
-      Beispiel:
+      Zum Beispiel:
 
       `jcr:lastModified,dc:modified,dc:format,jcr:lastModifiedBy,imageMap,event-user-data:changedByWorkflowProcess`
 
@@ -190,6 +192,6 @@ Ein Workflow-Paket:
 
    Sobald das entsprechende Ereignis auftritt, wird der Starter ausgelöst und der Workflow wird gestartet.
 
-## Verwalten einer Starter-Konfiguration  {#managing-a-launcher-configuration}
+## Verwalten einer Starter-Konfiguration {#managing-a-launcher-configuration}
 
 Nachdem Sie Ihre Starter-Konfiguration erstellt haben, können Sie dieselbe Konsole verwenden, um die Instanz auszuwählen, dann **Eigenschaften anzeigen** (und sie bearbeiten) oder **Löschen**.
