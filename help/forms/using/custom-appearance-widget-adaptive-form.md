@@ -1,8 +1,8 @@
 ---
 title: Erstellen von benutzerdefinierten Erscheinungsbildern für adaptive Formularfelder
-seo-title: Erstellen von benutzerdefinierten Erscheinungsbildern für adaptive Formularfelder
+seo-title: Create custom appearances for adaptive form fields
 description: Passen Sie das Erscheinungsbild einsatzbereiter Komponenten in adaptiven Formularen an.
-seo-description: Passen Sie das Erscheinungsbild einsatzbereiter Komponenten in adaptiven Formularen an.
+seo-description: Customize appearance of out-of-the-box components in Adaptive Forms.
 uuid: 1aa36443-774a-49fb-b3d1-d5a2d5ff849a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,10 +10,10 @@ topic-tags: customization
 discoiquuid: d388acef-7313-4e68-9395-270aef6ef2c6
 docset: aem65
 exl-id: 770e257a-9ffd-46a4-9703-ff017ce9caed
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8a24ca02762e7902b7d0033b36560629ee711de1
 workflow-type: tm+mt
-source-wordcount: '1728'
-ht-degree: 74%
+source-wordcount: '1713'
+ht-degree: 73%
 
 ---
 
@@ -31,7 +31,7 @@ Werfen wir einen Blick auf die in diesem Artikel verwendeten Schlüsselbegriffe 
 
 **jQuery** pluginStellt einen Standardmechanismus bereit, der auf dem jQuery-Widget-Framework basiert, um ein alternatives Erscheinungsbild zu implementieren.
 
-**** ClientLibEin Client-seitiges Bibliothekssystem in AEM clientseitigen Verarbeitung, das durch komplexen JavaScript- und CSS-Code gesteuert wird. Weitere Informationen finden Sie unter Verwenden clientseitiger Bibliotheken.
+**** ClientLibEin Client-seitiges Bibliothekssystem in AEM clientseitigen Verarbeitung, das durch komplexen JavaScript- und CSS-Code gesteuert wird. Weitere Informationen finden Sie unter Verwenden Client-seitiger Bibliotheken.
 
 **** ArchetypEin Maven-Projektvorlagen-Toolkit, das als Originalmuster oder -modell für Maven-Projekte definiert ist. Weitere Informationen finden Sie unter Einführung in Archetypen.
 
@@ -52,14 +52,14 @@ Die Schritte zum Erstellen eines benutzerdefinierten Erscheinungsbilds auf höhe
 
 Ein Maven-Archetyp bildet den Ausgangspunkt zum Erstellen eines benutzerdefinierten Erscheinungsbilds. Die Details des zu verwendenden Archetyps lauten folgendermaßen:
 
-* **Repository**: https://repo.adobe.com/nexus/content/groups/public/
+* **Repository**: https://repo1.maven.org/maven2/com/adobe/
 * **Artefakt-ID**: custom-appearance-archetype
 * **Gruppen-ID**: com.adobe.aemforms
 * **Version**: 1,0,4
 
 Führen Sie den folgenden Befehl aus, um ein lokales Projekt basierend auf dem Archetyp zu erstellen:
 
-`mvn archetype:generate -DarchetypeRepository=https://repo.adobe.com/nexus/content/groups/public/ -DarchetypeGroupId=com.adobe.aemforms -DarchetypeArtifactId=custom-appearance-archetype -DarchetypeVersion=1.0.4`
+`mvn archetype:generate -DarchetypeRepository=https://repo1.maven.org/maven2/com/adobe/ -DarchetypeGroupId=com.adobe.aemforms -DarchetypeArtifactId=custom-appearance-archetype -DarchetypeVersion=1.0.4`
 
 Mit dem Befehl werden die Maven-Plugins und Archetypinformationen aus dem Repository heruntergeladen und ein Projekt basierend auf den folgenden Informationen generiert:
 
@@ -190,13 +190,13 @@ So wenden Sie das benutzerdefinierte Erscheinungsbild auf ein adaptives Formular
 1. Öffnen Sie das Dialogfeld **Eigenschaft** für das Feld, auf das Sie das benutzerdefinierte Erscheinungsbild anwenden möchten.
 1. Aktualisieren Sie auf der Registerkarte **Styling** die Eigenschaft `CSS class` , um den Namen des Erscheinungsbilds im Format `widget_<widgetName>` hinzuzufügen. Beispiel: **widget_numericstepper**
 
-## Beispiel: Benutzerspezifische Berichte erstellen    {#sample-create-a-custom-appearance-nbsp}
+## Beispiel: Benutzerspezifische Berichte erstellen   {#sample-create-a-custom-appearance-nbsp}
 
 Werfen wir nun einen Blick auf ein Beispiel, um ein benutzerdefiniertes Erscheinungsbild für ein numerisches Feld zu erstellen, damit es als numerischer Schritt oder Schieberegler dargestellt wird. Führen Sie die folgenden Schritte durch:
 
 1. Führen Sie den folgenden Befehl aus, um ein lokales Projekt basierend auf dem Maven-Archetyp zu erstellen:
 
-   `mvn archetype:generate -DarchetypeRepository=https://repo.adobe.com/nexus/content/groups/public/ -DarchetypeGroupId=com.adobe.aemforms -DarchetypeArtifactId=custom-appearance-archetype -DarchetypeVersion=1.0.4`
+   `mvn archetype:generate -DarchetypeRepository=https://repo1.maven.org/maven2/com/adobe/ -DarchetypeGroupId=com.adobe.aemforms -DarchetypeArtifactId=custom-appearance-archetype -DarchetypeVersion=1.0.4`
 
    Es fordert Sie auf, Werte für die folgenden Parameter anzugeben.
    *Die in diesem Beispiel verwendeten Werte werden fett markiert*.

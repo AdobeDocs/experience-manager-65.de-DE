@@ -1,19 +1,14 @@
 ---
 title: Integrieren von Diensten mit der JMX-Konsole
-seo-title: Integrieren von Diensten mit der JMX-Konsole
+seo-title: Integrating Services with the JMX Console
 description: Mit der JMX-Konsole können Sie MBeans für die Verwaltung von Diensten erstellen und bereitstellen, um Dienstattribute und -vorgänge zu veröffentlichen, sodass Administrationsaufgaben durchgeführt werden können.
-seo-description: Mit der JMX-Konsole können Sie MBeans für die Verwaltung von Diensten erstellen und bereitstellen, um Dienstattribute und -vorgänge zu veröffentlichen, sodass Administrationsaufgaben durchgeführt werden können.
-uuid: 4a489a24-af10-4505-8333-aafc0c81dd3e
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+seo-description: Expose service attributes and operations to enable administration tasks to be performed by creating and deploying MBeans to manage services using the JMX Console
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 83c590e0-2e6c-4499-a6ea-216e4c7bc43c
-docset: aem65
 exl-id: fe727406-09cb-4516-8278-806fd78cfc12
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a2e5a5ae7585299de869dbf8744d7be4b86c5bf8
 workflow-type: tm+mt
-source-wordcount: '1689'
+source-wordcount: '1659'
 ht-degree: 92%
 
 ---
@@ -24,7 +19,7 @@ Erstellen Sie mit der JMX-Konsole MBeans für die Verwaltung von Diensten und st
 
 Weitere Informationen zur Nutzung der JMX-Konsole finden Sie unter [Überwachen von Serverressourcen mit der JMX-Konsole](/help/sites-administering/jmx-console.md).
 
-## Das JMX-Framework bei Felix und CQ5  {#the-jmx-framework-in-felix-and-cq}
+## Das JMX-Framework bei Felix und CQ5 {#the-jmx-framework-in-felix-and-cq}
 
 Auf der Apache Felix-Plattform stellen Sie MBeans als OSGi-Dienste bereit. Wenn ein MBean-Dienst in der OSGi Service Registry registriert ist, registriert das Aries JMX Whiteboard-Modul das MBean automatisch beim MBean-Server. Das MBean ist dann für die JMX-Konsole verfügbar, die die öffentlichen Attribute und Vorgänge veröffentlicht.
 
@@ -40,7 +35,7 @@ MBeans, die Sie für die Verwaltung von CQ5- oder CRX-Ressourcen erstellen, basi
 
 Neben der Verwaltungsschnittstelle definiert die Schnittstelle auch die Schnittstelle des OSGi-Dienstes. Die Implementierungsklasse implementiert den OSGi-Dienst.
 
-### Verwenden von Anmerkungen für die Angabe von MBean-Daten  {#using-annotations-to-provide-mbean-information}
+### Verwenden von Anmerkungen für die Angabe von MBean-Daten {#using-annotations-to-provide-mbean-information}
 
 Das Paket [com.adobe.granite.jmx.annotation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) bietet mehrere Anmerkungen und Klassen für die einfache Bereitstellung von MBean-Metadaten für die JMX-Konsole. Verwenden Sie diese Anmerkungen und Klassen, anstatt Daten direkt zum MBeanInfo-Objekt des MBean hinzuzufügen.
 
@@ -195,7 +190,7 @@ Mit BundleContext können Sie das MBean als OSGi-Dienst registrieren. Schließen
 
 Im folgenden Code-Beispiel wird der Dienst ExampleMBean programmatisch registriert. Das Objekt componentContext ist der ComponentContext, der Zugriff auf BundleContext bietet.
 
-#### Code-Ausschnitt: programmatische MBean-Dienstregistrierung  {#code-snippet-programmatic-mbean-service-registration}
+#### Code-Ausschnitt: programmatische MBean-Dienstregistrierung {#code-snippet-programmatic-mbean-service-registration}
 
 ```java
 Dictionary mbeanProps = new Hashtable();
@@ -209,7 +204,7 @@ Das Beispiel-MBean im nächsten Abschnitt bietet detailliertere Angaben.
 
 Ein MBean-Dienstmanager ist nützlich, wenn Dienstkonfigurationen im Repository gespeichert sind. Der Manager kann Dienstinformationen abrufen und zur Konfiguration und Erstellung des entsprechenden MBean nutzen. Die Managerklasse kann auch Repository-Änderungsereignisse abfragen und die MBean-Dienste entsprechend aktualisieren.
 
-## Beispiel: Überwachung von Workflow-Modellen mit JMX  {#example-monitoring-workflow-models-using-jmx}
+## Beispiel: Überwachung von Workflow-Modellen mit JMX {#example-monitoring-workflow-models-using-jmx}
 
 In diesem Beispiel stellt das MBean Daten zu den CQ5-Workflow-Modellen bereit, die im Repository gespeichert sind. Eine MBean-Managerklasse erstellt MBeans basierend auf Workflow-Modellen, die im Repository gespeichert sind, und registriert ihre OSGi-Dienste zur Laufzeit. Dieses Beispiel besteht aus einem einzelnen Bundle, das die folgenden Mitglieder enthält:
 
@@ -235,7 +230,7 @@ Die MBean-Metadaten werden in der JMX-Konsole mit der Domäne com.adobe.example 
 
 Dieses Beispiel setzt eine MBean-Schnittstelle und -Implementierung voraus, die ein Abbild der Schnittstelle `com.day.cq.workflow.model.WorkflowModel` ist. Das MBean ist sehr einfach, damit der Schwerpunkt des Beispiels auf der Konfiguration und Bereitstellung des Designs liegen kann. Das MBean veröffentlicht ein einziges Attribut, nämlich den Modellnamen.
 
-#### WorkflowMBean-Schnittstelle  {#workflowmbean-interface}
+#### WorkflowMBean-Schnittstelle {#workflowmbean-interface}
 
 ```java
 package com.adobe.example.myapp.api;
@@ -277,7 +272,7 @@ public class WorkflowMBeanImpl extends AnnotatedStandardMBean implements Workflo
 }
 ```
 
-### Der Beispiel-MBean-Manager  {#the-example-mbean-manager}
+### Der Beispiel-MBean-Manager {#the-example-mbean-manager}
 
 Der WorkflowMBeanManager-Dienst umfasst die Komponenten-Aktivierungsmethode, die WorkflowMBean-Dienste erstellt. Die Dienstimplementierung beinhaltet die folgenden Methoden:
 
@@ -289,8 +284,7 @@ Der WorkflowMBeanManager-Dienst umfasst die Komponenten-Aktivierungsmethode, die
 >
 >Die WorkflowMBeanManager-Implementierung erstellt nur MBean-Dienste für Modellkonfigurationen, die bei der Aktivierung der Komponente vorhanden sind. Eine zuverlässigere Implementierung fragt Repository-Ereignisse in Zusammenhang mit neuen Modellkonfigurationen und Änderungen oder Löschungen vorhandener Modellkonfigurationen ab. Wenn eine Änderung durchgeführt wird, kann der Manager den zugehörigen WorkflowMBean-Dienst erstellen, bearbeiten oder löschen.
 
-
-#### WorkflowMBeanManager-Schnittstelle  {#workflowmbeanmanager-interface}
+#### WorkflowMBeanManager-Schnittstelle {#workflowmbeanmanager-interface}
 
 ```java
 package com.adobe.example.myapp.api;
@@ -425,7 +419,7 @@ public class WorkflowMBeanManagerImpl implements WorkflowMBeanManager {
 }
 ```
 
-### Die POM-Datei für das Beispiel-MBean  {#the-pom-file-for-the-example-mbean}
+### Die POM-Datei für das Beispiel-MBean {#the-pom-file-for-the-example-mbean}
 
 Der Einfachheit halber können Sie den folgenden XML-Code in Ihre Projektdatei pom.xml kopieren, um das Komponenten-Bundle zu erstellen. Das POM verweist auf mehrere erforderliche Plug-ins und Abhängigkeiten.
 
@@ -437,7 +431,7 @@ Der Einfachheit halber können Sie den folgenden XML-Code in Ihre Projektdatei p
 
 **Hinweis:** Zum Zeitpunkt, als dieser Text verfasst wird, ist das Maven SCR-Plug-in nicht mit dem m2e-Plug-in für Eclipse kompatibel. (Siehe [Felix-Bug 3170](https://issues.apache.org/jira/browse/FELIX-3170).) Um die Eclipse IDE zu verwenden, installieren Sie Maven und nutzen Sie die Befehlszeile für die Entwicklung.
 
-#### POM-Beispieldatei  {#example-pom-file}
+#### POM-Beispieldatei {#example-pom-file}
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0"
@@ -561,13 +555,13 @@ Fügen Sie das folgende Profil zu Ihren Maven-Einstellungen hinzu, um das öffen
     <properties>
          <releaseRepository-Id>adobe-public-releases</releaseRepository-Id>
          <releaseRepository-Name>Adobe Public Releases</releaseRepository-Name>
-         <releaseRepository-URL>https://repo.adobe.com/nexus/content/groups/public</releaseRepository-URL>
+         <releaseRepository-URL>https://repo1.maven.org/maven2/com/adobe/</releaseRepository-URL>
     </properties>
     <repositories>
          <repository>
              <id>adobe-public-releases</id>
-             <name>Adobe Basel Public Repository</name>
-             <url>https://repo.adobe.com/nexus/content/groups/public</url>
+             <name>Adobe  Public Repository</name>
+             <url>https://repo1.maven.org/maven2/com/adobe/</url>
              <releases>
                  <enabled>true</enabled>
                  <updatePolicy>never</updatePolicy>
@@ -580,8 +574,8 @@ Fügen Sie das folgende Profil zu Ihren Maven-Einstellungen hinzu, um das öffen
      <pluginRepositories>
          <pluginRepository>
              <id>adobe-public-releases</id>
-             <name>Adobe Basel Public Repository</name>
-             <url>https://repo.adobe.com/nexus/content/groups/public</url>
+             <name>Adobe Public Repository</name>
+             <url>https://repo1.maven.org/maven2/com/adobe/</url>
              <releases>
                  <enabled>true</enabled>
                  <updatePolicy>never</updatePolicy>
