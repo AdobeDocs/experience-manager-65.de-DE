@@ -1,20 +1,21 @@
 ---
 title: Interaktive Kommunikation - Übersicht
-seo-title: Interaktive Kommunikation - Übersicht
+seo-title: Interactive Communications Overview
 description: Dieser Artikel enthält eine Übersicht, Beispiele für Anwendungsfälle, einen Erstellungs-Workflow und Unterschiede zwischen der interaktiven Kommunikation und dem Brief.
-seo-description: Interaktive Kommunikationsfunktionen, Beispiele für Anwendungsfälle, Workflow für die Erstellung und Unterschiede zwischen der interaktiven Kommunikation und Correspondence Management
+seo-description: Interactive Communication key capabilities, sample use cases, creation workflow, and differences between Interactive Communication and Correspondence Management
 uuid: a06b4ac7-ca20-4d6d-b2b7-87b21e2f5cf9
 contentOwner: gtalwar
 topic-tags: interactive-communications, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 exl-id: 6cfbeec0-0be3-48b2-a4bb-fd19c69c92c7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: dc8e3ed70ebaf064993ef5af910430b7fc2e521d
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 80%
+source-wordcount: '489'
+ht-degree: 78%
 
 ---
+
 
 # Interaktive Kommunikation - Übersicht {#interactive-communications-overview}
 
@@ -28,14 +29,14 @@ Interaktive Kommunikation zentralisiert und verwaltet die Erstellung, Zusammenst
 
 Im Folgenden sind die wichtigsten Funktionen von interaktiver Kommunikation aufgeführt:
 
-* OOTB-Integration mit dem Formulardatenmodell, um einen einfachen und rationalisierten Zugriff auf Backend-Datenbanken und andere CRM-Systeme wie MS® Dynamics zu ermöglichen
-* Eine integrierte Autorbenutzeroberfläche für Druck- und Webkanal mit der Möglichkeit zum automatischen Erstellen von Druck- und Webkanälen
-* Diagramme zur Darstellung von Informationen in leicht verständlichen visuellen Formaten in Druck und Web
-* Dokumentfragmente unterstützen den Regeleditor und das Formulardatenmodell
-* Benutzeroberfläche für Agenten zeigt Druck- und Webvorschau der interaktiven Kommunikation an
-* Drag-and-Drop-Komponenten zum schnellen Erstellen von Druck- und Webkanälen
+- OOTB-Integration mit dem Formulardatenmodell, um einen einfachen und rationalisierten Zugriff auf Backend-Datenbanken und andere CRM-Systeme wie MS® Dynamics zu ermöglichen
+- Eine integrierte Autorbenutzeroberfläche für Druck- und Webkanal mit der Möglichkeit zum automatischen Erstellen von Druck- und Webkanälen
+- Diagramme zur Darstellung von Informationen in leicht verständlichen visuellen Formaten in Druck und Web
+- Dokumentfragmente unterstützen den Regeleditor und das Formulardatenmodell
+- Benutzeroberfläche für Agenten zeigt Druck- und Webvorschau der interaktiven Kommunikation an
+- Drag-and-Drop-Komponenten zum schnellen Erstellen von Druck- und Webkanälen
 
-## Erstellung einer interaktiven Kommunikation  {#interactive-communication-creation}
+## Erstellung einer interaktiven Kommunikation {#interactive-communication-creation}
 
 ![interactive_communication-01](assets/interactive_communication-01.jpg)
 
@@ -62,11 +63,11 @@ Um eine interaktive Kommunikation zu erstellen, lassen Sie die [Bausteine](#buil
 
 Im Folgenden sind die Bausteine &#x200B;&#x200B;aufgeführt, die für die Erstellung einer interaktiven Kommunikation benötigt werden:
 
-* [Formulardatenmodell](/help/forms/using/data-integration.md)
-* [Druck- und Webkanal-Vorlagen](/help/forms/using/web-channel-print-channel.md)
-* [Dokumentfragmente](/help/forms/using/document-fragments.md)
-* Bilder
-* [](/help/forms/using/themes.md) Designs für den Webkanal
+- [Formulardatenmodell](/help/forms/using/data-integration.md)
+- [Druck- und Webkanal-Vorlagen](/help/forms/using/web-channel-print-channel.md)
+- [Dokumentfragmente](/help/forms/using/document-fragments.md)
+- Bilder
+- [](/help/forms/using/themes.md) Designs für den Webkanal
 
 ## Interaktive Kommunikation im Vergleich zu Correspondence Management {#interactive-communications-vs-correspondence-management}
 
@@ -104,7 +105,7 @@ Interaktive Kommunikation ist der standardmäßige und empfohlene Ansatz zur Ers
    <td>Keine Benutzeroberfläche für die Erstellung eines bedingten Ausdrucks</td>
   </tr>
   <tr>
-   <td>Authoring – </td>
+   <td>Authoring –</td>
    <td>Drag-and-Drop-Benutzeroberfläche für Erstellung von Druck- und Webkanal</td>
    <td>Kein Drag-and-Drop-Mechanismus </td>
   </tr>
@@ -118,13 +119,23 @@ Interaktive Kommunikation ist der standardmäßige und empfohlene Ansatz zur Ers
    <td>Verwendet Designs, um den Webkanal zu gestalten</td>
    <td>Unterstützt keine Designs</td>
   </tr>
-  <tr>
-   <td>Prüfung und Versionsverwaltung</td>
-   <td>Nicht unterstützt</td>
+   <tr>
+   <td>Entwürfe</td>
+   <td>Unterstützt</td>
    <td>Unterstützt</td>
   </tr>
   <tr>
-   <td>Entwürfe und Verwalten von Instanzen</td>
+   <td>Prüfung</td>
+   <td>Nicht unterstützt</td>
+   <td>Unterstützt</td>
+  </tr>
+   <tr>
+   <td>Versionierung</td>
+   <td>Nicht unterstützt</td>
+   <td>Unterstützt</td>
+  </tr>
+   <tr>
+   <td>Entwürfe Verwalten von Instanzen</td>
    <td>Nicht unterstützt</td>
    <td>Unterstützt</td>
   </tr>
