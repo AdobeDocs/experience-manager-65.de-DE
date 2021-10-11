@@ -1,8 +1,8 @@
 ---
 title: E-Mail-Endpunkte konfigurieren
-seo-title: E-Mail-Endpunkte konfigurieren
+seo-title: Configuring email endpoints
 description: Erfahren Sie, wie Sie E-Mail-Endpunkte konfigurieren.
-seo-description: Erfahren Sie, wie Sie E-Mail-Endpunkte konfigurieren.
+seo-description: Learn how to configure email endpoints.
 uuid: d47bb45b-0e0e-43ca-9e25-e347d0e60206
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
 exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
 workflow-type: tm+mt
-source-wordcount: '3766'
-ht-degree: 60%
+source-wordcount: '3757'
+ht-degree: 59%
 
 ---
 
@@ -58,19 +58,19 @@ Sie können POP3, IMAP bzw. SMTP zum Verwenden von Secure Sockets Layer (SSL) f�
 >
 >Tipp: Falls beim Einsatz von SSL Probleme auftreten, verwenden Sie einen E-Mail-Client wie Microsoft Outlook, um zu prüfen, ob dieser bei Verwendung von SSL auf den E-Mail-Server zugreifen kann. Wenn der E-Mail-Client nicht auf den E-Mail-Server zugreifen kann, liegt das Problem entweder bei der Konfiguration des Zertifikats oder des E-Mail-Servers vor.
 
-## Einstellungen für Standard-E-Mail-Endpunkte konfigurieren  {#configure-default-email-endpoint-settings}
+## Einstellungen für Standard-E-Mail-Endpunkte konfigurieren {#configure-default-email-endpoint-settings}
 
 Auf der Seite „Dienstverwaltung“ können Sie die Attribute konfigurieren, die für alle E-Mail-Endpunkte gültig sind, und Standardwerte für alle E-Mail-Endpunkte bereitstellen.
 
 Damit der Arbeitsablauf für Formulare eingehende E-Mail-Nachrichten von Benutzern empfängt und verarbeitet, müssen Sie einen E-Mail-Endpunkt für den CompleteTask-Dienst erstellen. Für diesen E-Mail-Endpunkt sind, wie unter [E-Mail-Endpunkte für den CompleteTask-Dienst erstellen](configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service) beschrieben, zusätzliche Einstellungen erforderlich.
 
-### Standardwerte für E-Mail-Endpunkte ändern  {#change-the-default-values-for-email-endpoints}
+### Standardwerte für E-Mail-Endpunkte ändern {#change-the-default-values-for-email-endpoints}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
 1. Klicken Sie auf der Seite „Dienstverwaltung“ auf „E-Mail: 1.0“ (die Komponenten-ID lautet „com.adobe.idp.dsc.provider.service.email.Email“).
 1. Geben Sie auf der Registerkarte „Konfiguration“ die Einstellungen für Standard-E-Mail-Endpunkte an und klicken Sie auf „Speichern“.
 
-### Einstellungen für Standard-E-Mail-Endpunkte  {#default-email-endpoint-settings}
+### Einstellungen für Standard-E-Mail-Endpunkte {#default-email-endpoint-settings}
 
 **Cron Expression:** Der Cron-Ausdruck, wie von Quarz verwendet, um die Abfrage des Eingabeordners zu planen.
 
@@ -80,7 +80,7 @@ Damit der Arbeitsablauf für Formulare eingehende E-Mail-Nachrichten von Benutze
 
 **Verzögerung beim Start des Auftrags:** Der Standardwert in Sekunden für die Verzögerung, bevor der Auftrag mit dem Überprüfen des Endpunkts beginnt. Der Standardwert ist 0.
 
-**Stapelgröße:** Die Anzahl der E-Mails, die der Empfänger pro Überprüfung verarbeitet, um eine optimale Leistung zu erzielen. Der Wert „-1“ bedeutet alle E-Mails. Der Standardwert ist 2. 
+**Stapelgröße:** Die Anzahl der E-Mails, die der Empfänger pro Überprüfung verarbeitet, um eine optimale Leistung zu erzielen. Der Wert „-1“ bedeutet alle E-Mails. Der Standardwert ist 2.
 
 **Asynchron:** Identifiziert den Aufruftyp als asynchron oder synchron. Transiente und synchrone Prozesse können nur synchron aufgerufen werden. Der Standardwert ist „asynchron“.
 
@@ -106,9 +106,9 @@ Damit der Arbeitsablauf für Formulare eingehende E-Mail-Nachrichten von Benutze
 
 **POP3/IMAP SSL aktiviert:** Wenn ausgewählt, aktiviert SSL.
 
-**SMTP Host:** Der Hostname des E-Mail-Servers, mit dem der E-Mail-Anbieter Ergebnisse und Fehlermeldungen sendet. Zum Beispiel mail.corp.example.com.
+**SMTP Host:** Der Hostname des E-Mail-Servers, mit dem der E-Mail-Anbieter Ergebnisse und Fehlermeldungen sendet. Beispiel: mail.example.com.
 
-**SMTP Port:** Der Anschluss, über den eine Verbindung zum E-Mail-Server hergestellt wird. Der Standardwert ist 25. 
+**SMTP Port:** Der Anschluss, über den eine Verbindung zum E-Mail-Server hergestellt wird. Der Standardwert ist 25.
 
 **SMTP User:** Das Benutzerkonto, das der E-Mail-Anbieter verwenden soll, wenn E-Mails mit Ergebnissen und Fehlern gesendet werden.
 
@@ -156,7 +156,7 @@ Mithilfe der folgenden Einstellungen können Sie einen E-Mail-Endpunkt konfiguri
 
 **Verzögerung beim Start des Auftrags:** Die Zeit, die nach dem Start der Planung auf die Überprüfung gewartet wird.
 
-**Stapelgröße:** Die Anzahl der E-Mails, die der Empfänger pro Überprüfung verarbeitet, um eine optimale Leistung zu erzielen. Der Wert „-1“ bedeutet alle E-Mails. Der Standardwert ist 2. 
+**Stapelgröße:** Die Anzahl der E-Mails, die der Empfänger pro Überprüfung verarbeitet, um eine optimale Leistung zu erzielen. Der Wert „-1“ bedeutet alle E-Mails. Der Standardwert ist 2.
 
 **Benutzername:** Eine obligatorische Einstellung, d. h. der Benutzername, der beim Aufrufen eines Zieldienstes über eine E-Mail verwendet wird. Der Standardwert ist „SuperAdmin“.
 

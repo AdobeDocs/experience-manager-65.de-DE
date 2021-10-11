@@ -1,8 +1,8 @@
 ---
 title: Authentifizierungsanbieter konfigurieren
-seo-title: Authentifizierungsanbieter konfigurieren
+seo-title: Configuring authentication providers
 description: Fügen Sie Authentifizierungsanbieter hinzu, bearbeiten oder löschen Sie diese, ändern Sie die Authentifizierungseinstellungen und informieren Sie sich über Just-in-time-Bereitstellung.
-seo-description: Fügen Sie Authentifizierungsanbieter hinzu, bearbeiten oder löschen Sie diese, ändern Sie die Authentifizierungseinstellungen und informieren Sie sich über Just-in-time-Bereitstellung.
+seo-description: Add, edit, or delete authentication providers, change authentication settings, and read about just-in-time provisioning of users.
 uuid: 90e7690b-1ce0-4604-b58f-6dca4f2372cf
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 31dd8db3-ddac-429e-82f8-8c5dc4ffc186
 exl-id: d72a3977-1423-49e0-899b-234bb76be378
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
 workflow-type: tm+mt
-source-wordcount: '1595'
-ht-degree: 83%
+source-wordcount: '1576'
+ht-degree: 80%
 
 ---
 
@@ -32,14 +32,14 @@ Wenn Sie die einmalige Anmeldung mithilfe von SPNEGO aktivieren, fügen Sie eine
 1. (Optional) Klicken Sie auf „Testen“ um die Konfiguration zu testen.
 1. Klicken Sie auf „OK“ und dann erneut auf „OK“.
 
-## Einen vorhandenen Authentifizierungsanbieter bearbeiten  {#edit-an-existing-authentication-provider}
+## Einen vorhandenen Authentifizierungsanbieter bearbeiten {#edit-an-existing-authentication-provider}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domänenverwaltung“.
 1. Wählen Sie die gewünschte Domäne in der Liste aus.
 1. Wählen Sie auf der angezeigten Seite in der Liste den geeigneten Authentifizierungsanbieter aus und nehmen Sie erforderliche Änderungen vor. (Siehe [Authentifizierungseinstellungen](configuring-authentication-providers.md#authentication-settings).)
 1. Klicken Sie auf OK.
 
-## Einen Authentifizierungsanbieter löschen  {#delete-an-authentication-provider}
+## Einen Authentifizierungsanbieter löschen {#delete-an-authentication-provider}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domänenverwaltung“.
 1. Wählen Sie die gewünschte Domäne in der Liste aus.
@@ -58,7 +58,7 @@ Um den in Ihrer Ordnerkonfiguration angegebenen LDAP-Server zu verwenden, wähle
 
 Wenn Sie einen anderen LDAP-Server für die Authentifizierung verwenden möchten, wählen Sie LDAP als Authentifizierungsanbieter aus und aktivieren Sie das Kontrollkästchen „Benutzerdefinierte LDAP-Authentifizierung“. Es werden die folgenden Konfigurationseinstellungen angezeigt.
 
-**Server:**  (Obligatorisch) Vollqualifizierter Domänenname (FQDN) des Ordnerservers. Beispiel: Der vollständig qualifizierte Domänenname eines Computers namens x im Netzwerk corp.example.com lautet x.corp.example.com. Anstelle des vollständig qualifizierten Servernamens kann auch eine IP-Adresse verwendet werden.
+**Server:**  (Obligatorisch) Vollqualifizierter Domänenname (FQDN) des Ordnerservers. Beispiel: Für einen Computer mit dem Namen x im Netzwerk example.com lautet der FQDN x.example.com. Anstelle des vollständig qualifizierten Servernamens kann auch eine IP-Adresse verwendet werden.
 
 **Port:**  (Obligatorisch) Der Port, den der Ordnerserver verwendet. Dies ist in der Regel Anschluss 389 bzw. 636, falls das SSL-Protokoll (Secure Sockets Layer) zum Senden der Authentifizierungsinformationen über das Netzwerk verwendet wird.
 
@@ -86,7 +86,7 @@ Wenn Sie die Authentifizierung für eine Unternehmens- oder Hybriddomäne konfig
 
 **KDC-Host:** Vollständig qualifizierter Hostname oder IP-Adresse des für die Authentifizierung verwendeten Active Directory-Servers.
 
-**Dienstbenutzer:** Wenn Sie Active Directory 2003 verwenden, ist dieser Wert die für den Dienstprinzipal im Formular erstellte Zuordnung  `HTTP/<server name>`. Wenn Sie Active Directory 2008 verwenden, ist dieser Wert die Anmelde-ID des Dienstprinzipals. Nehmen wir an, der Dienstprinzipal heißt um spnego die Benutzer-ID heißt spnegodemo und die Zuordnung lautet HTTP/example.corp.yourcompany.com. Bei Active Directory 2003 legen Sie Dienstbenutzer auf HTTP/example.corp.yourcompany.com fest. Bei Active Directory 2008 legen Sie Dienstbenutzer auf spnegodemo fest. (Siehe Einmalige Anmeldung über SPNEGO aktivieren.)
+**Dienstbenutzer:** Wenn Sie Active Directory 2003 verwenden, ist dieser Wert die für den Dienstprinzipal im Formular erstellte Zuordnung  `HTTP/<server name>`. Wenn Sie Active Directory 2008 verwenden, ist dieser Wert die Anmelde-ID des Dienstprinzipals. Angenommen, der Dienstprinzipal heißt um spnego, die Benutzer-ID lautet spnegodemo und die Zuordnung lautet HTTP/example.yourcompany.com. Bei Active Directory 2003 legen Sie Dienstbenutzer auf HTTP/example.yourcompany.com fest. Bei Active Directory 2008 legen Sie Dienstbenutzer auf spnegodemo fest. (Siehe Einmalige Anmeldung über SPNEGO aktivieren.)
 
 **Dienstbereich:** Der Domänenname für Active Directory
 
@@ -121,7 +121,7 @@ Die folgenden benutzerdefinierten Eigenschaften sind erforderlich, wenn Artefakt
 
 Wenn Sie die Authentifizierung für eine Unternehmens- oder Hybriddomäne konfigurieren und die benutzerdefinierte Authentifizierung wählen, müssen Sie den Namen des Authentifizierungsanbieters auswählen.
 
-## Just-in-time-Bereitstellung  {#just-in-time-provisioning-of-users}
+## Just-in-time-Bereitstellung {#just-in-time-provisioning-of-users}
 
 Just-in-time-Bereitstellung erstellt automatisch einen Benutzer in der User Management-Datenbank, nachdem der Benutzer über einen Authentifizierungsanbieter authentifiziert wurde. Relevante Rollen und Gruppen werden dem neuen Benutzer außerdem dynamisch zugewiesen. Sie können Just-in-time-Bereitstellung für Unternehmens- und Hybriddomänen aktivieren.
 
@@ -131,7 +131,7 @@ Im vorliegenden Verfahren wird beschrieben, wie herkömmliche Authentifizierung 
 1. Der Authentifizierungsanbieter überprüft die Anmeldeinformationen.
 1. Der Authentifizierungsanbieter prüft anschließend, ob der Benutzer in der User Management-Datenbank vorhanden ist. Die folgenden Status sind möglich:
 
-   **** Exists Wenn der Benutzer aktuell und entsperrt ist, gibt User Management den Authentifizierungserfolg zurück. Wenn der Benutzer nicht aktuell oder gesperrt ist, gibt User Management an, dass die Authentifizierung nicht erfolgreich war.
+   **** ExistsWenn der Benutzer aktuell und entsperrt ist, gibt User Management den Authentifizierungserfolg zurück. Wenn der Benutzer nicht aktuell oder gesperrt ist, gibt User Management an, dass die Authentifizierung nicht erfolgreich war.
 
    **Ist nicht** vorhandenUser Management gibt Authentifizierungsfehler zurück.
 
@@ -144,7 +144,7 @@ Wenn Just-in-time-Bereitstellung aktiviert ist, werden neue Benutzer dynamisch i
 
 Ohne Just-in-time-Bereitstellung ist die Authentifizierung nicht erfolgreich, wenn ein Benutzer authentifiziert wird, aber nicht in der User Management-Datenbank gefunden wird. Just-in-time-Bereitstellung fügt dem Authentifizierungsverfahren einen Schritt hinzu, um den Benutzer zu erstellen und ihm Rollen und Gruppen zuzuweisen.
 
-### Just-in-time-Bereitstellung für eine Domäne aktivieren  {#enable-just-in-time-provisioning-for-a-domain}
+### Just-in-time-Bereitstellung für eine Domäne aktivieren {#enable-just-in-time-provisioning-for-a-domain}
 
 1. Schreiben Sie einen Dienstcontainer, der IdentityCreator- und AssignmentProvider-Schnittstelle implementiert. (Weitere Informationen finden Sie unter [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).)
 1. Stellen Sie den Dienstcontainer auf dem Formularserver bereit.

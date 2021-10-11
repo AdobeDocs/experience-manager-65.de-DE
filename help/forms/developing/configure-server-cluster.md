@@ -1,7 +1,8 @@
 ---
 title: Konfigurieren und Fehlerbehebung für einen AEM Forms on JEE-Servercluster
 description: Erfahren Sie, wie Sie einen AEM Forms on JEE-Servercluster konfigurieren und Fehler beheben.
-source-git-commit: 8502e0227819372db4120d3995fba51c7401d944
+exl-id: 230fc2f1-e6e5-4622-9950-dae9449ed3f6
+source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
 workflow-type: tm+mt
 source-wordcount: '4033'
 ht-degree: 1%
@@ -180,7 +181,7 @@ Ein möglicher Fehlermodus für den Cluster ist, wenn diese Remote-Dateifreigabe
 
 **Was würde passieren, wenn eine NFS-Freigabe nicht bereitgestellt werden kann?**
 
-Unter UNIX kann die Art und Weise, wie NFS-Bereitstellungen der Verzeichnisstruktur zugeordnet sind, die Verfügbarkeit eines scheinbar nutzbaren GDS-Ordners ermöglichen, selbst wenn die Bereitstellung fehlschlägt. Überlegen Sie:
+Unter UNIX kann die Art und Weise, wie NFS-Bereitstellungen der Verzeichnisstruktur zugeordnet sind, die Verfügbarkeit eines scheinbar nutzbaren GDS-Ordners ermöglichen, selbst wenn die Bereitstellung fehlschlägt. Ziehen Sie dies in Betracht:
 
 * NAS-Server: Freigegebener Ordner NFS /u01/iapply/livecycle_gds
 * Knoten 1: einen Bereitstellungspunkt zum freigegebenen Ordner (auf dem DB-Server gehostet), der sich hier befindet: /u01/iapply/livecycle_gds
@@ -266,7 +267,7 @@ Um zu bestimmen, wie Quartz sich selbst konfiguriert hat, müssen Sie sich die v
 INFO `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad
 Es ist wichtig, diese erste Zeile in den Protokollen zu finden, da einige Anwendungsserver auch Quartz verwenden und ihre Quartz-Instanzen nicht mit der Instanz verwechselt werden sollten, die vom AEM Forms on JEE Scheduler-Dienst verwendet wird. Dies ist der Hinweis, dass der Scheduler-Dienst gestartet wird und die Zeilen, die darauf folgen, zeigen Ihnen, ob er ordnungsgemäß im Clustermodus gestartet wird oder nicht. In dieser Sequenz werden mehrere Nachrichten angezeigt. Die letzte &quot;gestartete&quot;Meldung zeigt die Konfiguration von Quartz an:
 
-Hier wird der Name der Quartz-Instanz angegeben: `IDPSchedulerService_$_ap-hp8.ottperflab.corp.adobe.com1312883903975`. Der Name der Quartz-Instanz des Schedulers beginnt immer mit der Zeichenfolge `IDPSchedulerService_$_`. Die Zeichenfolge, die am Ende dieses Abschnitts angehängt wird, teilt Ihnen mit, ob Quartz im Clustermodus ausgeführt wird. Die lange eindeutige Kennung, die aus dem Hostnamen des Knotens generiert wurde, und eine lange Zeichenfolge mit Ziffern, hier `ap-hp8.ottperflab.corp.adobe.com1312883903975`, zeigt an, dass sie in einem Cluster verwendet wird. Wenn es als einzelner Knoten verwendet wird, ist die Kennung eine zweistellige Zahl, &quot;20&quot;:
+Hier wird der Name der Quartz-Instanz angegeben: `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. Der Name der Quartz-Instanz des Schedulers beginnt immer mit der Zeichenfolge `IDPSchedulerService_$_`. Die Zeichenfolge, die am Ende dieses Abschnitts angehängt wird, teilt Ihnen mit, ob Quartz im Clustermodus ausgeführt wird. Die lange eindeutige Kennung, die aus dem Hostnamen des Knotens generiert wurde, und eine lange Zeichenfolge mit Ziffern, hier `ap-hp8.ottperflab.adobe.com1312883903975`, zeigt an, dass sie in einem Cluster verwendet wird. Wenn es als einzelner Knoten verwendet wird, ist die Kennung eine zweistellige Zahl, &quot;20&quot;:
 
 INFO `[org.quartz.core.QuartzScheduler]` Planung `IDPSchedulerService_$_20` gestartet.
 Diese Prüfung muss auf allen Clusterknoten separat durchgeführt werden, da die Planung jedes Knotens unabhängig voneinander bestimmt, ob der Clustermodus ausgeführt werden soll.
@@ -332,19 +333,3 @@ Obwohl diese Dateien und Pfade möglicherweise von den Knoten oder separat oder 
 Insbesondere der Pfad des temporären Ordners sollte nicht zwischen Knoten freigegeben werden. Es sollte ein Verfahren ähnlich dem zur Überprüfung des globalen Dokumentenspeichers beschriebenen verwendet werden, um zu überprüfen, ob der temporäre Ordner nicht freigegeben wird: Wechseln Sie zu jedem Knoten, erstellen Sie eine temporäre Datei im Pfad, der durch die Pfadeinstellung angegeben wird, und überprüfen Sie dann, ob die anderen Knoten die Datei nicht teilen. Der temporäre Ordnerpfad sollte, wenn möglich, auf den lokalen Festplattenspeicher auf jedem Knoten verweisen und sollte überprüft werden.
 
 Stellen Sie für jede der Pfadeinstellungen sicher, dass der Pfad tatsächlich vorhanden ist und von jedem Knoten im Cluster aus zugänglich ist. Verwenden Sie dabei die effektive Benutzeridentität, unter der AEM Forms on JEE ausgeführt wird. Der Schriftartenordnerinhalt muss lesbar sein. Der temporäre Ordner muss Lese-, Schreib- und Steuerelementwerte zulassen.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
