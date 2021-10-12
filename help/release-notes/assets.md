@@ -2,14 +2,14 @@
 title: Versionshinweise zu  [!DNL Adobe Experience Manager Assets] 6.5.
 description: Die neuen Funktionen und Verbesserungen von  [!DNL Adobe Experience Manager] 6.5 [!DNL Assets].
 exl-id: 6d9c9f09-ea42-43fb-98f7-12ce82d308bf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62544559020b0c0afd7bb31fb832b82ba3d47919
 workflow-type: tm+mt
 source-wordcount: '897'
-ht-degree: 43%
+ht-degree: 35%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] Versionshinweise  {#aem-assets-release-notes}
+# [!DNL Adobe Experience Manager Assets] Versionshinweise {#aem-assets-release-notes}
 
 Hier finden Sie die wichtigsten Funktionen und Highlights der [!DNL Adobe Experience Manager] 6.5 [!DNL Assets]-Version.
 
@@ -17,7 +17,7 @@ Hier finden Sie die wichtigsten Funktionen und Highlights der [!DNL Adobe Experi
 
 [!DNL Adobe Experience Manager] bietet verschiedene Möglichkeiten, um zu integrieren und Assets für die Verwendung in Workflows freizugeben, in denen Kreativ-, Marketing- oder Businessteams eng zusammenarbeiten. [!DNL Adobe Creative Cloud] [!DNL Experience Manager] 6.5 ermöglicht eine noch bessere Integration und stärkere Optimierung. Das Ergebnis: mehr Chancen und die Verbesserung vorhandener Methoden.
 
-Lesen Sie weiter, um die spezifischen Funktionen und Integrationen von [!DNL Experience Manager] 6.5 zu erfahren, die Sie nutzen können, um Ihre Anwendungsfälle mit hoher Inhaltsgeschwindigkeit optimal zu unterstützen.
+Lesen Sie weiter, um die spezifischen Funktionen und Integrationen von [!DNL Experience Manager] 6.5 kennenzulernen, die Sie verwenden können, um Anwendungsfälle mit hoher Inhaltsgeschwindigkeit zu unterstützen.
 
 ### Adobe Asset Link {#aal}
 
@@ -51,7 +51,7 @@ Weitere Informationen finden Sie unter [Verwenden von Adobe Stock-Assets in Expe
 
 [!DNL Experience Manager Assets Brand Portal]Mit können Sie problemlos genehmigte Assets abrufen, diese wirksam kontrollieren und sicher und geräteübergreifend an externe Anbieter/Agenturen und interne Geschäftsanwender verteilen. Brand Portal ermöglicht eine effizientere Asset-Freigabe sowie schnellere Time-to-Market für Assets und verringert das Risiko von Nicht-Compliance und unbefugtem Zugriff.
 
-Weitere Informationen finden Sie unter [Neue Funktionen in AEM Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=de#introduction).
+Weitere Informationen finden Sie unter [Neue Funktionen in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=de).
 
 ## Connected Assets {#connectedassets}
 
@@ -65,21 +65,21 @@ In großen Unternehmen kann die zur Erstellung von Websites erforderliche Infras
 
 ## Dynamic Media {#dynamic-media}
 
-[!DNL Dynamic Media] bietet ein verbessertes Rich-Media-Authoring und -Versand in ,  [!DNL Experience Manager Assets] um innovative und personalisierte Erlebnisse zu fördern. Durch das Hochladen eines einzelnen Übergeordneten Assets hoher Qualität und die Verwendung unseres erweiterten Cloud-Renderings und der Viewer können Sie jede Kombination von Ausgabeformaten sofort bereitstellen, um die Medienstrategie Ihres Unternehmens zu unterstützen.
+[!DNL Dynamic Media] bietet ein verbessertes Rich-Media-Authoring und -Versand in ,  [!DNL Experience Manager Assets] um innovative und personalisierte Erlebnisse zu fördern. Durch das Hochladen eines einzelnen hochwertigen primären Assets und die Verwendung des erweiterten Cloud-Renderings und Viewers von Adobe können Sie jede Kombination von Ausgabeformaten sofort bereitstellen, um die Medienstrategie Ihres Unternehmens zu unterstützen.
 
 Weitere Informationen zu neuen [!DNL Dynamic Media]-Funktionen finden Sie unter [Dynamic Media-Versionshinweise](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html).
 
 ### 360-Grad-Videounterstützung {#video-support}
 
-Verwalten Sie Ihre 360-Grad-Videodateien direkt in [!DNL Experience Manager], indem Sie die neuesten Viewer verwenden, um VR-Erlebnisse für Desktops, Mobilgeräte und VR-Headsets bereitzustellen. Weitere Informationen finden Sie unter [Verwenden von 360°-Videos](/help/assets/360-video.md).
+Verwalten Sie Ihre 360-Grad-Videodateien direkt in [!DNL Experience Manager], indem Sie die neuesten Viewer verwenden, um VR-Erlebnisse für Desktops, Mobilgeräte und VR-Headsets bereitzustellen. Weitere Informationen finden Sie unter [Verwenden von 360-Grad-Videos](/help/assets/360-video.md).
 
 ### Benutzerdefinierte Videominiaturen {#custom-video-thumbnails}
 
-Sie können nun die Miniaturen für Ihre Video-Assets mithilfe von Frames aus dem Video selbst oder aus anderen im DAM gespeicherten Inhalten anpassen. Weitere Anweisungen finden Sie unter [Informationen zu Videominiaturen](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
+Sie können nun die Miniaturen für Ihre Video-Assets mithilfe von Frames aus dem Video selbst oder aus anderen im DAM gespeicherten Inhalten anpassen. Weitere Anweisungen finden Sie unter [Über Videominiaturen](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
 ### Verbesserte Barrierefreiheit {#accessibility-enhancements}
 
-[!DNL Dynamic Media] Viewer unterstützen jetzt erweiterte Barrierefreiheitsfunktionen wie Aria-Unterstützung, Bildschirmlesehilfen und Alternativtext. Weitere Informationen finden Sie in den [Versionshinweisen zu Dynamic Media-Viewern](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=de).
+[!DNL Dynamic Media] Viewer unterstützen jetzt erweiterte Barrierefreiheitsfunktionen wie Aria-Unterstützung, Bildschirmlesehilfen und Alternativtext. Weitere Informationen finden Sie unter [Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
 
 ## Verbessertes Sucherlebnis {#experience-enhancement-for-searching}
 
@@ -91,7 +91,7 @@ Sie können nun die Miniaturen für Ihre Video-Assets mithilfe von Frames aus de
 
 ## Größere Anwenderfreundlichkeit {#usability-enhancement}
 
-Sie können jetzt alle geladenen Assets in einem Ordner oder aus einem Suchergebnis in einem Schritt auswählen. Dies ermöglicht eine schnelle Verwaltung aller Assets. Mit dem Kontrollkästchen werden alle Assets ausgewählt, die dem Szenario entsprechen, z. B. ein Suchergebnis und nicht nur die Assets, die in der [!DNL Experience Manager]-Benutzeroberfläche sichtbar sind.
+Sie können jetzt alle geladenen Assets in einem Ordner oder aus einem Suchergebnis in einem Schritt auswählen. Dies ermöglicht eine schnelle Verwaltung aller Assets. Mit dem Kontrollkästchen werden alle Assets ausgewählt, die zum Szenario passen, z. B. ein Suchergebnis, und nicht nur die Assets, die in der [!DNL Experience Manager]-Benutzeroberfläche sichtbar sind.
 
 ![Verwenden Sie die Option Alle auswählen , um alle geladenen Assets mit einem Klick auszuwählen.](assets/select-all-in-aem-assets.gif)
 
@@ -99,7 +99,7 @@ Sie können jetzt alle geladenen Assets in einem Ordner oder aus einem Suchergeb
 
 ## Verbesserte Metadaten {#metadata-enhancements}
 
-Mit [!DNL Assets] können Sie Metadatenschemata für Asset-Ordner erstellen, die die auf Seiten mit Ordnereigenschaften angezeigten Layouts und Metadaten definieren. Sie können einem vorhandenen Ordner ein Ordner-Metadatenschema zu diesem Zeitpunkt oder beim Erstellen eines neuen Ordners zuweisen. Weitere Informationen finden Sie unter [Ordner-Metadatenschema](/help/assets/metadata-config.md#folder-metadata-schema).
+[!DNL Assets] Sie können Metadatenschemata für Asset-Ordner erstellen, die das Layout und die Metadaten definieren, die auf den Seiten mit Ordnereigenschaften angezeigt werden. Sie können jetzt ein Ordner-Metadatenschema einem vorhandenen Ordner oder beim Erstellen eines Ordners zuweisen. Weitere Informationen finden Sie unter [Ordner-Metadatenschema](/help/assets/metadata-config.md#folder-metadata-schema).
 
 Beim Festlegen kaskadierender Metadaten können die Optionen zur Laufzeit aus einer JSON-Datei geladen werden, anstatt sie manuell in das Formular einzugeben. Weitere Informationen finden Sie unter [Kaskadierende Metadaten](/help/assets/metadata-schemas.md#cascading-metadata).
 
