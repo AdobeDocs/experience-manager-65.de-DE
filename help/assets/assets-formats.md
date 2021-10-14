@@ -4,11 +4,11 @@ description: Von [!DNL Assets] and [!DNL Dynamic Media] unterstützte Dateiforma
 contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin
-feature: Asset-Management,Ausgabedarstellungen
+feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: f0a0ea53675afa16463a3cf863257020ba5374d3
+source-git-commit: c8e83622070572d104f2cdc20c592ac2e9d0d31b
 workflow-type: tm+mt
-source-wordcount: '1555'
+source-wordcount: '1535'
 ht-degree: 60%
 
 ---
@@ -218,8 +218,6 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Funktionen Folgendes:
 | WebM | WebM | Google VP8 | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
 | MKV | Matroska | H264/AVC | - |
-| RAM, RM | RealVideo | Nicht unterstützt | Real G2 (RV20), Real 8 (RV30), Real 10 (RV40) |
-| MJ2 | Motion JPEG2000 | Motion JPEG 2000 Codec | - |
 
 ## Unterstützte Archivformate {#supported-archive-formats}
 
