@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für 
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
-source-git-commit: 924b30680b189ec5061eb0bd664165793a9dbd9c
+source-git-commit: 966398715af1d9083512c4f6d4f0f81c72c898ae
 workflow-type: tm+mt
-source-wordcount: '2334'
+source-wordcount: '2342'
 ht-degree: 96%
 
 ---
@@ -75,7 +75,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
       * Wenn Sie eine **Feldbeschriftung** eingeben, wird **Eigenschaftsname** automatisch gefüllt, wenn das Feld leer ist, und kann anschließend manuell aktualisiert werden.
 
          >[!CAUTION]
-         Beachten Sie beim manuellen Aktualisieren eines Datentyps **Eigenschaftsname**, dass Namen nur lateinische Zeichen, numerische Ziffern und den Unterstrich &quot;_&quot;als Sonderzeichen enthalten dürfen.
+         Beachten Sie beim manuellen Aktualisieren der Eigenschaft **Eigenschaftsname** für einen Datentyp, dass Namen nur lateinische Zeichen, numerische Ziffern und den Unterstrich &quot;_&quot;als Sonderzeichen enthalten dürfen.
          Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder aktualisieren Sie diese Zeichen.
       Beispiel:
 
@@ -137,9 +137,13 @@ Im Fragment-Editor wird jede Instanz als Registerkarte angezeigt.
 
 Viele Eigenschaften sind selbsterklärend. Im Folgenden finden Sie weitere Informationen zu bestimmten Eigenschaften:
 
->[!CAUTION]
-Beachten Sie beim manuellen Aktualisieren von **Eigenschaftsname**, dass Namen nur lateinische Zeichen, numerische Ziffern und den Unterstrich &quot;_&quot;als Sonderzeichen enthalten dürfen.
-Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder aktualisieren Sie diese Zeichen.
+
+* **Eigenschaftsname**
+
+   Beachten Sie beim manuellen Aktualisieren dieser Eigenschaft für einen Datentyp, dass die Namen **must** *nur* lateinische Zeichen, numerische Ziffern und Unterstriche &quot;_&quot;als Sonderzeichen enthalten.
+
+   >[!CAUTION]
+   Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder aktualisieren Sie diese Zeichen.
 
 * **Rendern als**
 Die verschiedenen Möglichkeiten, das Feld in einem Fragment zu erstellen/zu rendern. Oft können Sie damit festlegen, ob dem Autor nur eine einzige Instanz des Feldes angezeigt wird oder ob er mehrere Instanzen erstellen darf.
