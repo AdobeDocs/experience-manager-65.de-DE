@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 52c8d4c425213718678543e9e9e8e5a4c2af4f95
+source-git-commit: 9f7bd996d2ec77d29fbee3ee51ac6469f94e9bd7
 workflow-type: tm+mt
-source-wordcount: '4684'
+source-wordcount: '4679'
 ht-degree: 85%
 
 ---
@@ -121,7 +121,7 @@ Sie können die Indizes Ihres Systems auch im JSON-Format extrahieren. Dazu müs
 
 **Während der Entwicklung**
 
-Legen Sie niedrige Schwellenwerte für `oak.queryLimitInMemory` (z. B. 10000) und oak. `queryLimitReads` (z. B. 5000) fest und optimieren Sie die ressourcenintensive Abfrage, wenn die UnsupportedOperationException-Ausnahme „The query read more than x nodes...“ auftritt.
+Setzen Sie niedrige Schwellenwerte für `oak.queryLimitInMemory` (z. B. 10000) und oak. `queryLimitReads` (z. B. 5000) fest und optimieren Sie die ressourcenintensive Abfrage, wenn die UnsupportedOperationException-Ausnahme „The query read more than x nodes...“ auftritt.
 
 Dies trägt zur Vermeidung ressourcenintensiver Abfragen bei (d. h. keine Sicherung durch einen Index oder Sicherung durch einen weniger abdeckenden Index). Beispielsweise führt eine Abfrage, die 1 Million Knoten liest, zu einer I/O-Steigerung – mit negativen Folgen für die Gesamtleistung der Anwendung. Jede Abfrage, die aufgrund eines überschrittenen Limits fehlschlägt, sollte analysiert und optimiert werden.
 
@@ -215,19 +215,19 @@ Wenn ein Index in einer MongoDB-Instanz entfernt wird, verhält sich der Löscha
 
 ### JCR-Abfrage-Arbeitsblatt {#jcrquerycheatsheet}
 
-Um die Erstellung effizienter JCR-Abfragen und Indexdefinitionen zu unterstützen, muss die [JCR Query Cheat Sheet|assets/JCR_query_cheatsheet-v1.0.pdf] ist für den Download und die Verwendung als Referenz während der Entwicklung verfügbar. Es enthält Beispielabfragen für QueryBuilder, XPath und SQL-2, die mehrere Szenarien abdecken, die sich hinsichtlich der Abfrageleistung unterschiedlich verhalten. Es enthält auch Empfehlungen zum Erstellen oder Anpassen von Oak-Indizes. Der Inhalt dieses Spiegels gilt für AEM 6.5 und AEM as a Cloud Service.
+Um die Erstellung effizienter JCR-Abfragen und Indexdefinitionen zu unterstützen, muss die [JCR Query Cheat Sheet](assets/JCR_query_cheatsheet-v1.0.pdf) ist für den Download und die Verwendung als Referenz während der Entwicklung verfügbar. Es enthält Beispielabfragen für QueryBuilder, XPath und SQL-2, die mehrere Szenarien abdecken, die sich hinsichtlich der Abfrageleistung unterschiedlich verhalten. Es enthält auch Empfehlungen zum Erstellen oder Anpassen von Oak-Indizes. Der Inhalt dieses Spiegels gilt für AEM 6.5 und AEM as a Cloud Service.
 
 ## Neuindizieren {#re-indexing}
 
 In diesem Abschnitt werden die **only** akzeptable Gründe für die Neuindizierung von Oak-Indizes.
 
-Außerhalb der unten aufgeführten Gründe wird das Initiieren von Neuindizes von Oak-Indizes **not** Verhalten ändern oder Probleme lösen und die Last auf AEM unnötig erhöhen.
+Außerhalb der unten aufgeführten Gründe wird das Initiieren von Neuindizes von Oak-Indizes **not** das Verhalten ändern oder Probleme beheben und unnötigerweise die Belastung der AEM erhöhen.
 
 Eine Neuindizierung von Oak-Indizes muss vermieden werden, sofern nicht einer der in den folgenden Tabellen genannten Gründe vorliegt.
 
 >[!NOTE]
 >
->Bevor Sie die Tabellen unten durchsuchen, um festzustellen, ob eine Neuindizierung nützlich ist, sollten Sie** immer **überprüfen:
+>Bevor Sie die unten stehenden Tabellen konsultieren, um festzustellen, ob eine Neuindizierung nützlich ist, **always** verify:
 >
 >* die Abfrage korrekt ist
 >* Die Abfrage wird in den erwarteten Index aufgelöst (mit dem [Tool „Abfrage erläutern“](/help/sites-administering/operations-dashboard.md#diagnosis-tools)).
