@@ -1,27 +1,27 @@
 ---
 title: '[!DNL Assets] HTTP-API.'
-description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in  [!DNL Adobe Experience Manager Assets].
+description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Developer
-feature: APIs,Assets-HTTP-API,Entwicklertools
+feature: APIs,Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
-source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
+source-git-commit: b841eb8d1820c1e42d966547280ae9743e773812
 workflow-type: tm+mt
-source-wordcount: '1729'
-ht-degree: 79%
+source-wordcount: '1723'
+ht-degree: 84%
 
 ---
 
 # [!DNL Assets]-HTTP-API {#assets-http-api}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
-Die HTTP-API [!DNL Assets] ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen/Lesen/Aktualisieren/Löschen) für digitale Assets, einschließlich Metadaten, Ausgabedarstellungen und Kommentaren sowie strukturierten Inhalten mit [!DNL Experience Manager] Inhaltsfragmenten. Sie wird unter `/api/assets` bereitgestellt und als REST-API implementiert. Dazu gehört die [Unterstützung von Inhaltsfragmenten](/help/assets/assets-api-content-fragments.md).
+Die [!DNL Assets]-HTTP-API ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen/Lesen/Aktualisieren/Löschen) für digitale Asstes, einschließlich Metadaten, Ausgabedarstellungen und Kommentaren sowie strukturierter Inhalte mit [!DNL Experience Manager]-Inhaltsfragmenten. Sie wird unter `/api/assets` bereitgestellt und als REST-API implementiert. Dazu gehört die [Unterstützung von Inhaltsfragmenten](/help/assets/assets-api-content-fragments.md).
 
 So greifen Sie auf die API zu:
 
 1. Öffnen Sie das Dokument zum API-Service unter `https://[hostname]:[port]/api.json`.
-1. Folgen Sie dem Dienstlink [!DNL Assets], der zu `https://[hostname]:[server]/api/assets.json` führt.
+1. Folgen Sie dem Link zum [!DNL Assets]-Service, der zu `https://[hostname]:[server]/api/assets.json` führt.
 
 Die API antwortet mit einer JSON-Datei für einige MIME-Typen und einem Antwort-Code für alle MIME-Typen. Die JSON-Antwort ist optional und kann zum Beispiel nicht für PDF-Dateien verfügbar sein. Verwenden Sie den Antwort-Code für weitere Analysen oder Aktionen.
 
@@ -29,7 +29,7 @@ Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabedarstellunge
 
 >[!CAUTION]
 >
->[Die HTTP-API aktualisiert die Metadateneigenschaften ](#update-asset-metadata) im  `jcr` Namespace. Die Experience Manager-Benutzeroberfläche aktualisiert jedoch die Metadateneigenschaften im Namespace `dc` .
+>[Die HTTP-API aktualisiert die Metadateneigenschaften](#update-asset-metadata) im `jcr` Namespace. Die Experience Manager-Benutzeroberfläche aktualisiert jedoch die Metadateneigenschaften im `dc` Namespace.
 
 ## Inhaltsfragmente {#content-fragments}
 
@@ -39,7 +39,7 @@ Weitere Informationen finden Sie unter [Unterstützung von Inhaltsfragmenten in 
 
 ## Datenmodell {#data-model}
 
-Die HTTP-API [!DNL Assets] stellt zwei wichtige Elemente, Ordner und Assets bereit (für Standard-Assets).
+Die [!DNL Assets]-HTTP-API stellt zwei wichtige Elemente bereit: Ordner und Assets (für Standard-Assets).
 
 Außerdem stellt sie ausführlichere Elemente für die benutzerdefinierten Datenmodelle bereit, die strukturierte Inhalte in Inhaltsfragmenten beschreiben. Weitere Informationen finden Sie im Abschnitt [Datenmodelle für Inhaltsfragmente](/help/assets/assets-api-content-fragments.md#content-fragments).
 
@@ -69,7 +69,7 @@ Ordner verhalten sich wie Verzeichnisse in traditionellen Dateisystemen. Sie ste
 Experience Managers ein Asset die folgenden Elemente enthält:
 
 * Die Eigenschaften und Metadaten des Assets.
-* Mehrere Ausgabedarstellungen, z. B. die ursprüngliche Ausgabedarstellung (das ursprünglich hochgeladene Asset), eine Miniaturansicht und viele andere Ausgabedarstellungen. Zusätzliche Ausgabedarstellungen können Bilder unterschiedlicher Größe, unterschiedliche Videokodierungen oder extrahierte Seiten aus PDF- oder [!DNL Adobe InDesign]-Dateien sein.
+* Mehrere Ausgabedarstellungen, z. B. die ursprüngliche Ausgabedarstellung (das ursprünglich hochgeladene Asset), eine Miniaturansicht und viele andere Ausgabedarstellungen. Zusätzliche Ausgabedarstellungen können Bilder unterschiedlicher Größe, verschiedene Videokodierungen oder aus PDF extrahierte Seiten sein oder [!DNL Adobe InDesign] Dateien.
 * Optionale Kommentare.
 
 Weitere Informationen über Elemente in Inhaltsfragmenten finden Sie unter [Unterstützung von Inhaltsfragmenten in der Experience Manager Assets-HTTP-API](/help/assets/assets-api-content-fragments.md#content-fragments).
@@ -80,7 +80,7 @@ In [!DNL Experience Manager] enthält ein Ordner die folgenden Komponenten:
 * Eigenschaften.
 * Links.
 
-Die HTTP-API [!DNL Assets] umfasst die folgenden Funktionen:
+Die [!DNL Assets]-HTTP-API bietet die folgenden Funktionen:
 
 * [Abrufen von Ordnerauflistungen](#retrieve-a-folder-listing).
 * [Erstellen eines Ordners](#create-a-folder).
@@ -101,8 +101,8 @@ Die HTTP-API [!DNL Assets] umfasst die folgenden Funktionen:
 **Voraussetzungen**
 
 * Greife Sie auf `https://[aem_server]:[port]/system/console/configMgr` zu.
-* Navigieren Sie zu **[!UICONTROL Adobe Granite CSRF Filter]**.
-* Stellen Sie sicher, dass die Eigenschaft **[!UICONTROL Filtermethoden]** Folgendes enthält: `POST`, `PUT`, `DELETE`.
+* Navigieren Sie zu **[!UICONTROL Adobe Granite CSRF-Filter]**.
+* Stellen Sie sicher, dass die Eigenschaft **[!UICONTROL Filtermethoden]** umfasst: `POST`, `PUT`, `DELETE`.
 
 ## Abrufen von Ordnerauflistungen {#retrieve-a-folder-listing}
 
@@ -128,8 +128,8 @@ Wenn der übergeordnete Knoten des angegebenen Pfades nicht vorhanden ist, schl�
 
 **Anfrage**
 
-* `POST /api/assets/myFolder -H"Content-Type: application/json" -d '{"class":"assetFolder","properties":{"title":"My Folder"}}'`
-* `POST /api/assets/* -F"name=myfolder" -F"title=My Folder"`
+* `POST /api/assets/myFolder -H"Content-Type: application/json" -d '{"class":"assetFolder","properties":{"jcr:title":"My Folder"}}'`
+* `POST /api/assets/* -F"name=myfolder" -F"jcr:title=My Folder"`
 
 **Antwort-Codes**: Die Antwort-Codes sind:
 
@@ -138,11 +138,11 @@ Wenn der übergeordnete Knoten des angegebenen Pfades nicht vorhanden ist, schl�
 * 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
-## Erstellen von Assets {#create-an-asset}
+## Erstellen von Assets       {#create-an-asset}
 
-Platzieren Sie die bereitgestellte Datei im angegebenen Pfad, um ein Asset im DAM-Repository zu erstellen. Wenn anstelle eines Knotennamens `*` ein  angegeben wird, verwendet das Servlet den Parameternamen oder den Dateinamen als Knotennamen.
+Platzieren Sie die bereitgestellte Datei im angegebenen Pfad, um ein Asset im DAM-Repository zu erstellen. Wenn eine `*` anstelle eines Knotennamens angegeben wird, verwendet das Servlet den Parameternamen oder den Dateinamen als Knotennamen.
 
-**Parameter**: Die Parameter sind  `name` für den Asset-Namen und  `file` für die Dateireferenz.
+**Parameter**: Die Parameter sind `name` für den Asset-Namen und `file` für die Dateireferenz.
 
 **Anfrage**
 
@@ -182,9 +182,9 @@ Aktualisiert die Asset-Metadateneigenschaften. Wenn Sie eine Eigenschaft im `dc:
 * 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
-### Synchronisieren von Metadaten-Updates zwischen `dc` und `jcr` Namespace {#sync-metadata-between-namespaces}
+### Metadaten-Update synchronisieren zwischen `dc` und `jcr` namespace {#sync-metadata-between-namespaces}
 
-Die API-Methode aktualisiert die Metadateneigenschaften im Namespace `jcr` . Die mithilfe der Benutzeroberfläche vorgenommenen Aktualisierungen ändern die Metadateneigenschaften im Namespace `dc` . Um die Metadatenwerte zwischen `dc` und dem `jcr`-Namespace zu synchronisieren, können Sie einen Workflow erstellen und Experience Manager konfigurieren, um den Workflow bei der Asset-Bearbeitung auszuführen. Verwenden Sie ein ECMA-Skript zum Synchronisieren der erforderlichen Metadateneigenschaften. Das folgende Beispielskript synchronisiert die Titelzeichenfolge zwischen `dc:title` und `jcr:title`.
+Die API-Methode aktualisiert die Metadateneigenschaften im `jcr` Namespace. Die über die Benutzeroberfläche vorgenommenen Aktualisierungen ändern die Metadateneigenschaften im `dc` Namespace. So synchronisieren Sie die Metadatenwerte zwischen `dc` und `jcr` -Namespace erstellen, können Sie einen Workflow erstellen und Experience Manager konfigurieren, um den Workflow bei der Asset-Bearbeitung auszuführen. Verwenden Sie ein ECMA-Skript zum Synchronisieren der erforderlichen Metadateneigenschaften. Das folgende Beispielskript synchronisiert die Titelzeichenfolge zwischen `dc:title` und `jcr:title`.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();
@@ -203,7 +203,7 @@ if (jcrcontentNode.hasProperty("jcr:title"))
 }
 ```
 
-## Erstellen von Asset-Ausgabedarstellungen {#create-an-asset-rendition}
+## Erstellen von Asset-Ausgabeformaten {#create-an-asset-rendition}
 
 Erstellt eine neue Asset-Ausgabedarstellung für ein Asset. Wenn der Name nicht als Anfrageparameter angegeben wurde, wird der Dateiname als Ausgabedarstellungsname verwendet.
 
@@ -221,7 +221,7 @@ Erstellt eine neue Asset-Ausgabedarstellung für ein Asset. Wenn der Name nicht 
 * 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
-## Aktualisieren von Asset-Ausgabedarstellungen {#update-an-asset-rendition}
+## Aktualisieren von Asset-Ausgabeformaten {#update-an-asset-rendition}
 
 Aktualisiert bzw. ersetzt eine Asset-Ausgabedarstellung durch die neuen Binärdaten.
 
@@ -238,7 +238,7 @@ Aktualisiert bzw. ersetzt eine Asset-Ausgabedarstellung durch die neuen Binärda
 
 Erstellt einen neuen Asset-Kommentar.
 
-**Parameter**: Die Parameter sind `message` für den Nachrichtentext des Kommentars und `annotationData` für die Anmerkungsdaten im JSON-Format bestimmt.
+**Parameter**: Die Parameter sind `message` für den Nachrichtentext des Kommentars und `annotationData` für die Anmerkungsdaten im JSON-Format.
 
 **Anfrage**: `POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
 
@@ -280,7 +280,7 @@ Verschiebt einen Ordner oder ein Asset in dem angegebenen Pfad in ein neues Ziel
 
 **Anfrage**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
-Verwenden Sie nicht `/content/dam` in der URL. Ein Beispielbefehl zum Verschieben von Assets und zum Überschreiben vorhandener Assets:
+Nicht anwenden `/content/dam` in der URL. Ein Beispielbefehl zum Verschieben von Assets und zum Überschreiben vorhandener Assets:
 
 ```shell
 curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.png -H "X-Destination: http://[aem_server]:[port]/api/assets/destination/file.png" -H "X-Overwrite: T"
@@ -311,6 +311,6 @@ Löscht eine Ressource(nstruktur) im angegebenen Pfad.
 
 ## Tipps und Einschränkungen {#tips-best-practices-limitations}
 
-* [Die HTTP-API aktualisiert die Metadateneigenschaften ](#update-asset-metadata) im  `jcr` Namespace. Die Experience Manager-Benutzeroberfläche aktualisiert jedoch die Metadateneigenschaften im Namespace `dc` .
+* [Die HTTP-API aktualisiert die Metadateneigenschaften](#update-asset-metadata) im `jcr` Namespace. Die Experience Manager-Benutzeroberfläche aktualisiert jedoch die Metadateneigenschaften im `dc` Namespace.
 
-* Die Assets-HTTP-API gibt die vollständigen Metadaten nicht zurück. Die Namespaces sind fest codiert und nur diese Namespaces werden zurückgegeben. Vollständige Metadaten finden Sie im Asset-Pfad `/jcr_content/metadata.json`.
+* Die Assets-HTTP-API gibt nicht die vollständigen Metadaten zurück. Die Namespaces sind fest kodiert und nur diese Namespaces werden zurückgegeben. Vollständige Metadaten finden Sie im Asset-Pfad `/jcr_content/metadata.json`.
