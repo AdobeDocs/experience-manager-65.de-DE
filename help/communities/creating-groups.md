@@ -1,8 +1,8 @@
 ---
 title: Community-Gruppen
-seo-title: Community-Gruppen
+seo-title: Community Groups
 description: Erstellen von Community-Gruppen
-seo-description: Erstellen von Community-Gruppen
+seo-description: Creating community groups
 uuid: c677d23d-5edb-414c-9013-130c88c2ea52
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: d94708ee-ca6b-420c-9536-6889d752f9de
 docset: aem65
 exl-id: edcda6cb-df47-4afe-8a9a-82d8e386fe05
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1074843a0105df39382b64defe66fc262986b9c9
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 40%
+source-wordcount: '543'
+ht-degree: 39%
 
 ---
 
@@ -22,19 +22,19 @@ ht-degree: 40%
 
 Mit der Funktion &quot;Community-Gruppen&quot;kann eine Unter-Community von autorisierten Benutzern (Community-Mitgliedern und Autoren) aus der Veröffentlichungs- und Autorenumgebung dynamisch auf einer Community-Site erstellt werden.
 
-Diese Möglichkeit besteht, wenn die [Gruppenfunktion](/help/communities/functions.md#groups-function) in der [Community-Site](/help/communities/sites-console.md)-Struktur vorhanden ist.
+Diese Fähigkeit ist vorhanden, wenn die [Gruppenfunktion](/help/communities/functions.md#groups-function) ist im [Community-Site](/help/communities/sites-console.md) Struktur.
 
-Eine [Community-Gruppenvorlage](/help/communities/tools-groups.md) stellt das Design der Community-Gruppenseite bereit, wenn eine Community-Gruppe dynamisch erstellt wird.
+A [Community-Gruppenvorlage](/help/communities/tools-groups.md) stellt das Design der Community-Gruppenseite bereit, wenn eine Community-Gruppe dynamisch erstellt wird.
 
 Beim Hinzufügen der Gruppenfunktion zur Struktur oder Vorlage einer Community-Site werden eine oder mehrere Gruppenvorlagen ausgewählt. Die folgende Liste mit Gruppenvorlagen steht dem Mitglied oder Autor zur Verfügung, wenn auf der Community-Site dynamisch eine neue Gruppe erstellt wird.
 
 ## Neue Gruppe erstellen {#creating-a-new-group}
 
-Die Möglichkeit, eine neue Community-Gruppe zu erstellen, hängt von der Existenz einer Community-Site ab, die die Gruppenfunktion enthält, z. B. eine, die über die [Referenz-Site-Vorlage](/help/communities/sites.md) erstellt wurde.
+Die Möglichkeit, eine neue Community-Gruppe zu erstellen, hängt von der Existenz einer Community-Site ab, die die Gruppenfunktion enthält, z. B. eine aus dem [Referenz-Site-Vorlage](/help/communities/sites.md).
 
-Die folgenden Beispiele verwenden die Community-Site, die aus `Reference Site Template` erstellt wurde, wie im Tutorial [Erste Schritte mit AEM Communities](/help/communities/getting-started.md) beschrieben.
+Die folgenden Beispiele verwenden die Community-Site, die aus der `Reference Site Template` wie in [Erste Schritte mit AEM Communities](/help/communities/getting-started.md) Tutorial.
 
-Dies ist die Seite, die bei der Veröffentlichung geladen wird, wenn das Menüelement **Gruppen** ausgewählt wird:
+Dies ist die Seite, die beim Veröffentlichen geladen wird, wenn die **Gruppen** Menüelement ausgewählt ist:
 
 ![new-group](assets/new-group.png)
 
@@ -46,7 +46,7 @@ Geben Sie auf der Registerkarte **Einstellungen** die grundlegenden Eigenschafte
 
 * **Gruppenname**
 
-   Der Titel der Gruppe, die auf der Community-Site angezeigt werden soll.
+   Der Titel der Gruppe, die auf der Community-Site angezeigt werden soll. Vermeiden Sie Unterstrichzeichen (_) und Suchbegriffe wie Ressourcen und Konfiguration im Gruppennamen.
 
 * **Beschreibung**
 
@@ -62,14 +62,13 @@ Geben Sie auf der Registerkarte **Einstellungen** die grundlegenden Eigenschafte
 
 * **Gruppe öffnen**
 
-   Wenn Sie `Open Group` auswählen, bedeutet dies, dass ein anonymer Site-Besucher den Inhalt anzeigen kann und die Auswahl von `Member Only Group` aufgehoben wird.
+   Auswählen `Open Group` gibt an, dass ein anonymer Site-Besucher den Inhalt anzeigen kann, und hebt die Auswahl auf `Member Only Group`.
 
 * **Gruppe nur für Mitglieder**
 
-   Wenn Sie `Member Only Group` auswählen, wird angegeben, dass nur Mitglieder der Gruppe den Inhalt anzeigen können, und die Auswahl von `Open Group` wird aufgehoben.
+   Auswählen `Member Only Group` gibt an, dass nur Mitglieder der Gruppe den Inhalt anzeigen können, und hebt die Auswahl auf `Open Group`.
 
-Auf der Registerkarte **Vorlage** können Sie
-Wählen Sie aus der Liste der Community-Gruppenvorlagen aus, die festgelegt wurden, als die Gruppenfunktion in der Struktur der Community-Site oder in einer Community-Site-Vorlage enthalten war.
+Unter dem **Vorlage** tab bietet die Möglichkeit, aus der Liste von Community-Gruppenvorlagen auszuwählen, die angegeben wurden, als die Gruppenfunktion in der Struktur der Community-Site oder in einer Community-Site-Vorlage enthalten war.
 
 ![group-template](assets/group-template.png)
 
@@ -83,16 +82,16 @@ Die Seite „Gruppen“ mit einer neuen Unter-Community mit dem Namen „Focus G
 
 ![group-page](assets/group-page.png)
 
-Wenn Sie den Link `Focus Group` auswählen, wird die Seite &quot;Fokusgruppe&quot;im Browser geöffnet, die basierend auf der ausgewählten Vorlage ein anfängliches Erscheinungsbild aufweist und ein Untermenü unter dem Menü der Haupt-Community-Site enthält:
+Auswählen der `Focus Group` -Link öffnet die Seite &quot;Fokusgruppe&quot;im Browser, die basierend auf der ausgewählten Vorlage ein erstes Erscheinungsbild aufweist und ein Untermenü unter dem Menü der Haupt-Community-Site enthält:
 
 ![open-group-page](assets/open-group-page.png)
 
-### Komponente „Community-Gruppenmitgliederliste“{#community-group-member-list-component}
+### Komponente „Community-Gruppenmitgliederliste“ {#community-group-member-list-component}
 
-Die Komponente `Community Group Member List` ist für Entwickler von Gruppenvorlagen vorgesehen.
+Die `Community Group Member List` -Komponente ist für Entwickler von Gruppenvorlagen vorgesehen.
 
 ### Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie auf der Seite [Community-Gruppengrundlagen](/help/communities/essentials-groups.md) für Entwickler.
+Weitere Informationen finden Sie unter [Community-Gruppengrundlagen](/help/communities/essentials-groups.md) für Entwickler.
 
 Weitere Informationen zu Community-Gruppen finden Sie unter [Verwalten von Benutzern und Benutzergruppen](/help/communities/users.md).
