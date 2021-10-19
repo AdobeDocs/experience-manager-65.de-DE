@@ -1,8 +1,8 @@
 ---
-title: 'Verwenden des Sling Resource Merger in AEM    '
-seo-title: 'Verwenden des Sling Resource Merger in AEM    '
+title: Verwenden des Sling Resource Merger in AEM
+seo-title: Using the Sling Resource Merger in AEM
 description: Der Sling Resource Merger bietet Dienste für den Zugriff auf Ressourcen und für das Zusammenführen von Ressourcen.
-seo-description: Der Sling Resource Merger bietet Dienste für den Zugriff auf Ressourcen und für das Zusammenführen von Ressourcen.
+seo-description: The Sling Resource Merger provides services to access and merge resources
 uuid: 0a28fdc9-caea-490b-8f07-7c4a6b802e09
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,14 @@ topic-tags: platform
 content-type: reference
 discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
 exl-id: 1eed754e-9a7d-4b65-a929-757fc962614d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c07fa148054b69b0da7bb402ef96a50d0895abfa
 workflow-type: tm+mt
-source-wordcount: '1272'
-ht-degree: 99%
+source-wordcount: '1254'
+ht-degree: 96%
 
 ---
 
-# Verwenden des Sling Resource Merger in AEM    {#using-the-sling-resource-merger-in-aem}
+# Verwenden des Sling Resource Merger in AEM{#using-the-sling-resource-merger-in-aem}
 
 ## Zweck {#purpose}
 
@@ -35,7 +35,7 @@ Mit dem Sling Resource Merger werden die Überlagerungs-/Überschreibungsressour
 
 >[!CAUTION]
 >
->Der Sling Resource Merger und zugehörige Methoden können nur mit [Granite](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) verwendet werden. Das bedeutet auch, dass er nur für die standardmäßige, Touch-optimierte Benutzeroberfläche geeignet ist: Insbesondere auf diese Art und Weise definierte Überschreibungen sind nur für das Touch-fähigen Dialogfeld einer Komponente geeignet.
+>Der Sling Resource Merger und zugehörige Methoden können nur mit [Granite](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) verwendet werden. Dies bedeutet auch, dass sie nur für die standardmäßige Touch-optimierte Benutzeroberfläche geeignet ist. Insbesondere auf diese Weise definierte Überschreibungen gelten nur für das Touch-optimierte Dialogfeld einer Komponente.
 >
 >Überlagerungen/Überschreibungen für andere Bereiche (einschließlich anderer Aspekte einer Touch-fähigen Komponente oder der klassischen Benutzeroberfläche) umfassen das Kopieren des entsprechenden Knotens und der entsprechenden Struktur aus dem Original dahin, wo die Anpassung definiert wird.
 
@@ -62,13 +62,11 @@ Die Ziele der Verwendung des Sling Resource Merger in AEM lauten wie folgt:
 >
 >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
 >
->1. Erstellen Sie das erforderliche Element (d. h. wie es in `/libs` vorhanden ist) unter `/apps` neu.
-   >
-   >
-1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
+>1. Erstellen Sie das erforderliche Element (d. h. wie es in vorhanden ist) neu. `/libs`) unter `/apps`
+>
+>1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 
 >
-
 
 
 ### Eigenschaften {#properties}
@@ -91,7 +89,7 @@ Der Resource Merger stellt die folgenden Eigenschaften zur Verfügung:
 
    Der Platzhalter `*` blendet alles aus.
 
-* `sling:orderBefore` (  `String`)
+* `sling:orderBefore` ( `String`)
 
    Enthält den Namen des gleichrangigen Knotens, vor dem der aktuelle Knoten platziert werden soll.
 
@@ -140,7 +138,7 @@ Somit werden im obigen Überlagerungsbeispiel die folgenden Knoten benötigt:
 >
 >Bei Verwendung des Sling Resource Merger (d. h. bei Verwendung der standardmäßigen, Touch-optimierten Benutzeroberfläche) ist es nicht empfehlenswert, die gesamte Struktur aus `/libs` zu kopieren, da so zu viele Daten in `/apps` gespeichert würden. Dies führt u. U. zu Problemen, wenn für das System ein Upgrade jedweder Art durchgeführt wird.
 
-### Nutzungsszenarien {#use-cases}
+### Anwendungsfälle {#use-cases}
 
 Diese ermöglichen Ihnen zusammen mit den Standardfunktionen Folgendes:
 
