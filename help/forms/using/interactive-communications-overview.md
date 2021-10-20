@@ -9,10 +9,10 @@ topic-tags: interactive-communications, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 exl-id: 6cfbeec0-0be3-48b2-a4bb-fd19c69c92c7
-source-git-commit: dc8e3ed70ebaf064993ef5af910430b7fc2e521d
+source-git-commit: 415744ca5c46a1495fe90369c162158c7fc2f1d4
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 78%
+source-wordcount: '486'
+ht-degree: 79%
 
 ---
 
@@ -42,9 +42,9 @@ Im Folgenden sind die wichtigsten Funktionen von interaktiver Kommunikation aufg
 
 ### Workflow {#workflow}
 
-Um eine interaktive Kommunikation zu erstellen, lassen Sie die [Bausteine](#buildingblocks) für interaktive Kommunikation bereit und führen Sie dann die folgenden Schritte aus:
+Um eine interaktive Kommunikation zu erstellen, legen Sie die [Bausteine](#buildingblocks) für interaktive Kommunikation bereit sind und dann die folgenden Schritte ausführen:
 
-1. Wählen Sie [Erstellen Sie eine interaktive Kommunikation](/help/forms/using/create-interactive-communication.md).
+1. Wählen Sie [Erstellen einer interaktiven Kommunikation](/help/forms/using/create-interactive-communication.md).
 
 1. Geben Sie das [Formulardatenmodell](/help/forms/using/data-integration.md), den Vorbefüllungs-Dienst und die [Druck- und Webkanal-Vorlagen](/help/forms/using/web-channel-print-channel.md) an. Sie können den Webkanal über den Druckkanal generieren.
 
@@ -52,7 +52,7 @@ Um eine interaktive Kommunikation zu erstellen, lassen Sie die [Bausteine](#buil
 1. Konfigurieren Sie die Eigenschaften für die eingefügten Komponenten wie folgt:
 
    1. [Bilder](/help/forms/using/create-interactive-communication.md#step2)
-   1. [Tabellen](/help/forms/using/create-interactive-communication.md#tables)  (einschließlich Layout-Fragmente)
+   1. [Tabellen](/help/forms/using/create-interactive-communication.md#tables) (Einschließlich Layout-Fragmente)
    1. [Diagramme](/help/forms/using/chart-component-interactive-communications.md)
    1. [Dokumentfragmente](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
@@ -67,7 +67,7 @@ Im Folgenden sind die Bausteine &#x200B;&#x200B;aufgeführt, die für die Erstel
 - [Druck- und Webkanal-Vorlagen](/help/forms/using/web-channel-print-channel.md)
 - [Dokumentfragmente](/help/forms/using/document-fragments.md)
 - Bilder
-- [](/help/forms/using/themes.md) Designs für den Webkanal
+- [Designs](/help/forms/using/themes.md) für den Webkanal
 
 ## Interaktive Kommunikation im Vergleich zu Correspondence Management {#interactive-communications-vs-correspondence-management}
 
@@ -124,6 +124,12 @@ Interaktive Kommunikation ist der standardmäßige und empfohlene Ansatz zur Ers
    <td>Unterstützt</td>
    <td>Unterstützt</td>
   </tr>
+   <tr>
+   <td>Einsendungen</td>
+   <td>Unterstützt</td>
+   <td>Unterstützt</td>
+  </tr>
+  <tr>
   <tr>
    <td>Prüfung</td>
    <td>Nicht unterstützt</td>
@@ -134,12 +140,6 @@ Interaktive Kommunikation ist der standardmäßige und empfohlene Ansatz zur Ers
    <td>Nicht unterstützt</td>
    <td>Unterstützt</td>
   </tr>
-   <tr>
-   <td>Entwürfe Verwalten von Instanzen</td>
-   <td>Nicht unterstützt</td>
-   <td>Unterstützt</td>
-  </tr>
-  <tr>
    <td>Stapelverarbeitung</td>
    <td>Unterstützt </td>
    <td>Unterstützt</td>
