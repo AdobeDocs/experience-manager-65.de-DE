@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 676299c741684708d420ac208f44b0c7a285de0c
+source-git-commit: ea5abbbe8f928a63b7d3d6f96f3007a3c82706e0
 workflow-type: tm+mt
-source-wordcount: '2113'
+source-wordcount: '2116'
 ht-degree: 42%
 
 ---
@@ -319,7 +319,7 @@ Sie können OAuth für mehrere E-Mail-Anbieter konfigurieren, wie unten beschrie
 
 >[!NOTE]
 >
->Das unten beschriebene Verfahren ist ein Beispiel für eine Veröffentlichungsinstanz. Sie können dieses Verfahren auch für eine Autoreninstanz ausführen, falls Sie dies wünschen.
+>Dieses Verfahren ist ein Beispiel für eine Veröffentlichungsinstanz. Wenn Sie E-Mail-Benachrichtigungen in einer Autoreninstanz aktivieren möchten, müssen Sie dieselben Schritte für die Autoreninstanz ausführen.
 
 ### Gmail {#gmail}
 
