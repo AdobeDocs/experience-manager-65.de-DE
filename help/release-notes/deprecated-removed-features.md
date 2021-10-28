@@ -2,7 +2,7 @@
 title: Veraltete und entfernte Funktionen in Adobe Experience Manager 6.5.
 description: Spezifische Versionshinweise zu veralteten und entfernten Funktionen von Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: bfe5bb744223be1ff9a00c382734abd9bf4db59a
+source-git-commit: 1e02ad94459ff2893d96055c026d0873b1d69991
 workflow-type: tm+mt
 source-wordcount: '1752'
 ht-degree: 42%
@@ -63,7 +63,7 @@ In diesem Abschnitt werden Funktionen aufgelistet, die aus AEM 6.5 entfernt wurd
 | Integrationen | Die Salesforce Force API-Integration wurde aus der Standardverteilung (Quickstart) entfernt und ist jetzt ein zusätzliches Paket, aus dem installiert werden kann [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). | Die Funktion ist weiterhin verfügbar. |
 | Formulare | Die Unterstützung für den Adobe Central Migration Bridge-Service wurde eingestellt, da Adobe Central nicht länger unterstützt wird. | Kein Ersatz. |  |
 | Formulare | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Kein Ersatz. |  |
-| Formulare | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Kein Ersatz vorhanden. |
+| Formulare | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Kein Ersatz vorhanden. |  |
 | Formulare | Eine einmalige Aktualisierung von LiveCycle ES4 SP1 auf AEM 6.5 Forms on JEE ist nicht verfügbar. | Siehe [verfügbare Aktualisierungspfade](../forms/using/upgrade.md) in der AEM Forms-Upgrade-Dokumentation. |  |
 | Formulare | Unterstützung für UPD-basiertes Clustering von AEM Forms on JEE entfernt | Sie können nur TCP-basiertes Clustering in AEM Forms on JEE verwenden. Wenn Sie ein UDP-Multicast-Server von einer früheren Version auf AEM 5.5 Forms on JEE aktualisieren, führen Sie manuelle Konfigurationen durch, um zum TCP-basierten Gemfire-Clustering zu wechseln. Detaillierte Anweisungen finden Sie unter [Aktualisierung auf AEM 6.5 Forms on JEE](../forms/using/upgrade-forms-jee.md) |  |
 | Entwickler | Firebug Lite wurde aus der Standardverteilung (Quickstart) entfernt. | Verwenden Sie die im Browser integrierten Entwicklerkonsolen. |
