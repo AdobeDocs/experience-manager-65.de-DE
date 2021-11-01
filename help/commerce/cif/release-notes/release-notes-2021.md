@@ -2,10 +2,10 @@
 title: AEM Content and Commerce - Versionshinweise 2021
 description: AEM Content and Commerce - Versionshinweise 2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: a401955e4b163a8062a498ea897d4a3d95ae0208
+source-git-commit: 7261a71769dfb968c768e0cb4835d7d4cca97b1a
 workflow-type: tm+mt
-source-wordcount: '1135'
-ht-degree: 22%
+source-wordcount: '1327'
+ht-degree: 31%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 22%
 
 Überprüfen Sie die Mindestanforderungen in der folgenden Tabelle für die CIF-Version, die Sie derzeit verwenden oder in Zukunft verwenden möchten.
 
-**Mit der Version vom April haben wir den CIF Connector von GitHub durch das CIF-Add-** on ersetzt, das auf der  [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) verfügbar ist. Der Wechsel zum Add-on bringt große Vorteile für Projekte mit sich:
+**Mit der Version vom April haben wir den CIF Connector von GitHub durch das CIF-Add-on ersetzt** , die im [Softwareverteilung von Adoben](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Der Wechsel zum Add-on bringt große Vorteile für Projekte mit sich:
 
 * Die meisten neuen Funktionen stehen ab AEM 6.5 sofort zur Verfügung (keine Wartezeiten mehr auf Feature Side Port).
 * Einfache Aktualisierung auf neue Add-on-Versionen
@@ -28,6 +28,26 @@ Der alte AEM CIF Connector befindet sich im Wartungsmodus und sollte nicht mehr 
 | CIF-Add-on | Minimum: AEM 6.5.7, Magento 2.3.5 GraphQL-Schemata |
 | CIF-Kernkomponenten | [Systemanforderungen](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM-Projektarchetyp | [Systemanforderungen](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Releasedatum: Oktober 2021
+
+| Komponente | Version | Details |
+|:-------|:-----:|---------------------:|
+| CIF-Add-on | 2021.10.20.02 | [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.10.20.02.zip) |
+| CIF-Kernkomponenten | 2,4,0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.0) |
+| CIF Venia-Referenz-Site | 2021.11.01 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.11.01) |
+
+### Neue Funktionen {#what-is-new-october}
+
+* Das CIF-Add-on unterstützt die neueste Commerce-Version 2.4.3 mit neuen GraphQL-APIs und -Schemata
+
+* Autoren können mithilfe des Rich-Text-Editors (RTE) Links zu Produkt- und Katalogseiten in Textfeldern hinzufügen. Der RTE-Symbolleiste wurde ein CIF-Symbol hinzugefügt, über das die Auswahl geöffnet wird, um das Produkt oder die Kategorie schnell zu suchen und auszuwählen, ohne den Kontext zu verlassen.
+
+* Bestehende Popup-Warenkorb- und Kassenvorgänge wurden durch spezielle AEM Warenkorb- und Checkout-Seiten ersetzt. Die Komponenten auf diesen Seiten werden mithilfe der erweiterbaren Peregrine-Komponenten von Magento erstellt
+
+* Händler können bestimmte Produktkatalogkategorien in der Navigation mithilfe des Commerce-Backend ausblenden. Die CIF-Navigations-Kernkomponente respektiert die Commerce-Backend-Konfiguration &quot;Einbeziehen in Menü&quot;, um Kategorien in der Navigation ein-/auszublenden
+
+* AEM Storefront Venia gibt den HTTP 404-Fehler zurück, wenn keine Kategorie- oder Produktseite gefunden wird
 
 ## Releasedatum: September 2021
 
@@ -98,7 +118,7 @@ Der alte AEM CIF Connector befindet sich im Wartungsmodus und sollte nicht mehr 
    * Visueller Indikator für gestaffelte Produktdaten im Authoring-Modus für bessere Sichtbarkeit bevorstehender Änderungen
    * Neue Sitemap-Komponente für Inhalte und Commerce-Seiten
 
-* Unterstützung für [Adobe Commerce Sensei-Produktempfehlungen, unterstützt von Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront mit vordefinierten oder direkt erstellten Empfehlungen
+* Unterstützung für [Adobe Commerce Sensei Product Recommendation, powered by Adobe Sensei](https://business.adobe.com/de/products/magento/product-recommendations.html) in der AEM-Storefront mit vordefinierten oder direkt erstellten Empfehlungen
 
 ## Releasedatum: Juni 2021
 
@@ -110,12 +130,12 @@ Der alte AEM CIF Connector befindet sich im Wartungsmodus und sollte nicht mehr 
 
 ### Neue Funktionen {#what-is-new-june}
 
-* Neue CIF-Produkt- und Kategoriereferenzdatentypen für Inhaltsfragmente (inkl. Benutzeroberflächenunterstützung für Produkt-/Kategorieauswahl
+* Neue CIF-Produkt- und Kategoriereferenzdatentypen für Inhaltsfragmente (inkl. Benutzeroberflächenunterstützung für Produkt-/Kategorieauswahl)
 * Neue Commerce-Inhaltsfragment-Kernkomponente
-* Im AEM Backend unterstützte Volltext-Commerce-Suche
-* Commerce-Kernkomponenten unterstützen die Datenerfassung von Adobe Commerce Sensei Recs
+* Im AEM-Backend unterstützte E-Commerce-Volltext-Suche
+* Commerce-Kernkomponenten unterstützen die Adobe Commerce Sensei Recs-Datenerfassung
 * Verbesserte SEO-freundliche URLs für Kategorieseiten
-* Unterstützung benutzerdefinierter HTTP-Header pro Site/Konfiguration
+* Unterstützung benutzerdefinierter HTTP-Header pro Website/Konfiguration
 
 ## Releasedatum: Mai 2021
 
@@ -127,13 +147,13 @@ Der alte AEM CIF Connector befindet sich im Wartungsmodus und sollte nicht mehr 
 
 ### Neue Funktionen {#what-is-new-may}
 
-* Paginierungsunterstützung für verknüpften Inhalt in den Eigenschaften der Produktkonsole
+* Unterstützung der Seitenumbrüche für zugehörige Inhalte in den Eigenschaften der Produktkonsole
 
 ### Fehlerbehebungen {#bug-fixes-may}
 
-* Asset-Miniaturansichten werden nicht auf der Registerkarte &quot;Asset&quot;der Produkteigenschaften angezeigt
+* Asset-Miniaturen werden nicht auf der Registerkarte „Asset“ der Produkteigenschaften angezeigt.
 
-* Breadcrumb setzt Vorschaudaten in der Produktkonsole zurück
+* Breadcrumb setzt Vorschaudaten in der Produktkonsole zurück.
 
 ## Releasedatum: April 2021
 
