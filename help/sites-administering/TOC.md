@@ -6,11 +6,11 @@ audience: admin-user
 user-guide-title: AEM 6.5-Administratorenanleitung
 breadcrumb-title: Administratorenanleitung
 user-guide-description: Erfahren Sie mehr über die Verwaltung von AEM.
-feature: Verwalten
+feature: Administering
 role: Admin
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 48abd410e293a193abc34a1bd4f038a121e58490
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '623'
 ht-degree: 92%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 92%
    + [Erstellen und Synchronisieren von Live Copies](msm-livecopy.md)
    + [MSM-Rollout-Konflikte](msm-rollout-conflicts.md)
    + [Best Practices für MSM](msm-best-practices.md)
-   + [Übersetzen von Inhalten für mehrsprachige Websites](translation.md)
+   + [Übersetzen von Inhalten für mehrsprachige Sites](translation.md)
    + [Verwalten von Übersetzungsprojekten](tc-manage.md)
    + [Identifizieren zu übersetzender Inhalte](tc-rules.md)
    + [Vorbereiten von Inhalten für die Übersetzung](tc-prep.md)
@@ -51,7 +51,7 @@ ht-degree: 92%
    + [Konfigurieren des Rich-Text-Editors](rich-text-editor.md)
    + [Konfigurieren von RTE für die Erstellung zugriffsbereiter Sites](rte-accessible-content.md)
    + [Konfigurieren von Rückgängig-Vorgängen zur Seitenbearbeitung](config-undo.md)
-   + [Konfigurieren der Rich-Text-Editor-Plug-ins ](configure-rich-text-editor-plug-ins.md)
+   + [Konfigurieren der Rich-Text-Editor-Plug-ins](configure-rich-text-editor-plug-ins.md)
    + [Konfigurieren der Videokomponente](config-video.md)
    + [Der Bulk Editor](bulk-editor.md)
    + [Konfigurieren von E-Mail-Benachrichtigungen](notification.md)
@@ -60,12 +60,12 @@ ht-degree: 92%
    + [Verwalten des Zugriffs auf Workflows](workflows-managing.md)
    + [Starten von Workflows](workflows-starting.md)
    + [Verwalten von Workflows](workflows.md)
-   + [Verwalten von Workflow-Instanzen](workflows-administering.md)
+   + [Verwalten der Workflow-Instanzen](workflows-administering.md)
    + [Verwenden von cURL mit AEM](curl.md)
    + [Proxyserver-Tool (proxy.jar)](proxy-jar.md)
    + [Konfigurieren von AEM-Apps](config-apps.md)
    + [Konfigurieren von Suchformularen](search-forms.md)
-   + [Die Tools-Konsolen](tools-consoles.md)
+   + [Die Tools-Konsolen ](tools-consoles.md)
    + [Berichterstellung](reporting.md)
    + [Konfigurieren von Layout-Container und Layout-Modus](configuring-responsive-layout.md)
    + [Bearbeiter](enable-classic-ui-editor.md)
@@ -112,7 +112,7 @@ ht-degree: 92%
    + [Integrieren mit Services von Dritten](third-party-services.md)
    + [Integration mit Salesforce](salesforce.md)
    + [Integrieren mit Adobe Target](target.md)
-   + [Integration mit Adobe Analytics](adobeanalytics.md)
+   + [Integration mit Adobe Analytics](adobeanalytics.md)
    + [Herstellen einer Verbindung mit Adobe Analytics und Erstellen von Frameworks](adobeanalytics-connect.md)
    + [Konfigurieren des Linktrackings für Adobe Analytics](adobeanalytics-link.md)
    + [Zuordnen von Komponentendaten zu Adobe Analytics-Eigenschaften](adobeanalytics-mapping.md)
@@ -157,7 +157,7 @@ ht-degree: 92%
    + [Handhabung von DSGVO-bezogenen Anfragen in AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
    + [AEM Commerce – Einhaltung der Datenschutz-Grundverordnung](gdpr-compliance-commerce.md)
 + Content Management {#contentmanagement}
-   + [Arbeiten mit Paketen](package-manager.md)
+   + [Package Manager](package-manager.md)
    + [Verwalten von Tags](tags.md)
    + [Das Seiten-Exporttool](page-exporter.md)
    + [Tagging-Konsole der klassischen Benutzeroberfläche](classic-console.md)
