@@ -6,9 +6,9 @@ seo-description: The Tough Day test simulates the daily load of around 1000 auth
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 8b72715c15a65794bb6d1497961071aaea96c35e
+source-git-commit: 36c0728908e24a13d08c1eaed4e39542f5b61df5
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1885'
 ht-degree: 53%
 
 ---
@@ -19,9 +19,13 @@ ht-degree: 53%
 
 „Tough Day 2“ ist eine Anwendung, mit der Sie einen Stresstest Ihrer AEM-Instanz durchführen können. Sie können ihn direkt mit der standardmäßigen Test-Suite ausführen oder an Ihre Testanforderungen anpassen. In [dieser Aufnahme](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-toughday2-stress-testing-benchmarking-tool.html) sehen Sie eine Präsentation der Anwendung.
 
+>[!CAUTION]
+>
+>Tough Day 2 erfordert Java 8.
+
 ## Ausführen von Tough Day 2 {#how-to-run-tough-day}
 
-Laden Sie die aktuelle Version von Tough Day 2 aus dem [Adobe-Repository](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/) herunter. Nachdem Sie die Anwendung heruntergeladen haben, können Sie sie standardmäßig ausführen, indem Sie den Parameter `host` angeben. Im folgenden Beispiel wird die AEM-Instanz lokal ausgeführt, sodass der Wert `localhost` verwendet wird:
+Laden Sie die aktuelle Version von Tough Day 2 aus dem [Adobe-Repository](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/) herunter. Nachdem Sie die Anwendung heruntergeladen haben, können Sie sie standardmäßig ausführen, indem Sie die `host` Parameter. Im folgenden Beispiel wird die AEM-Instanz lokal ausgeführt, sodass die `localhost` verwendet wird:
 
 ```xml
 java -jar toughday2.jar --host=localhost
@@ -37,7 +41,7 @@ Die Standard-Suite, die nach dem Hinzufügen des Parameters ausgeführt wird, he
 
 Die Suite enthält 15 Prozent Schreibaktionen und 85 Prozent Leseaktionen.
 
-Um die Suite-Tests auszuführen, installiert Tough Day 2 das Standard-Inhaltspaket. Dies lässt sich vermeiden, indem Sie den Parameter `installsamplecontent`auf `false` setzen. Beachten Sie jedoch, dass Sie auch die Standardpfade für die Tests ändern sollten, die Sie ausführen möchten. Wenn die JAR-Datei ohne Parameter ausgeführt wird, zeigt Tough Day 2 die [Hilfeinformationen](/help/sites-developing/tough-day.md#getting-help) an.
+Um die Suite-Tests auszuführen, installiert Tough Day 2 das Standard-Inhaltspaket. Dies lässt sich vermeiden, indem Sie die `installsamplecontent`Parameter auf `false`, aber beachten Sie, dass Sie auch die Standardpfade für die Tests ändern sollten, die Sie ausführen möchten. Wenn die JAR ohne Parameter ausgeführt wird, zeigt Tough Day 2 die [Hilfeinformationen](/help/sites-developing/tough-day.md#getting-help).
 
 Als allgemeine Regel können Sie die Anwendung verwenden, indem Sie diesem Muster folgen:
 
@@ -51,7 +55,7 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 
 ### Hilfe {#getting-help}
 
-Tough Day 2 bietet zahlreiche Hilfeoptionen, auf die Sie über die Befehlszeile zugreifen können. Zum Beispiel:
+Tough Day 2 bietet zahlreiche Hilfeoptionen, auf die Sie über die Befehlszeile zugreifen können. Beispiel:
 
 ```xml
 java -jar toughday2.jar --help_full
@@ -92,17 +96,17 @@ In der nachfolgenden Tabelle finden Sie die relevanten Hilfeparameter.
    <td><p>java -jar toughday2.jar —help —runmode type=conantload</p> <p>java -jar toughday2.jar —help —publishmode type=interval</p> </td>
   </tr>
   <tr>
-   <td>—help —suite=&lt;SuiteName&gt;</td>
+   <td>—help —suite=&lt;suitename&gt;</td>
    <td>Listet alle Tests einer bestimmten Suite und ihre jeweiligen konfigurierbaren Eigenschaften auf.</td>
    <td><br /> java -jar toughday2.jar —help —suite=get_tests</td>
   </tr>
   <tr>
-   <td> —help —tag=&lt;Tag&gt;</td>
+   <td> —help —tag=&lt;tag&gt;</td>
    <td><br /> Listet alle Elemente mit dem angegebenen Tag auf.</td>
    <td>java -jar toughday2.jar —help —tag=publish</td>
   </tr>
   <tr>
-   <td>—help &lt;TestClass/PublisherClass&gt;</td>
+   <td>—help &lt;testclass publisherclass=""&gt;</td>
    <td><br /> Listet alle konfigurierbaren Eigenschaften für den jeweiligen Test oder Herausgeber auf.</td>
    <td><p>java -jar toughday2.jar —help UploadPDFTest</p> <p>java -jar toughday2.jar —help CSVPublisher</p> </td>
   </tr>
@@ -111,7 +115,7 @@ In der nachfolgenden Tabelle finden Sie die relevanten Hilfeparameter.
 
 ### Globale Parameter {#global-parameters}
 
-Tough Day 2 bietet globale Parameter, die die Testumgebung festlegen oder ändern. Dazu gehören der Ziel-Host, die Portnummer, das verwendete Protokoll, Benutzer und Kennwort für die Instanz usw. Zum Beispiel:
+Tough Day 2 bietet globale Parameter, die die Testumgebung festlegen oder ändern. Dazu gehören der Ziel-Host, die Portnummer, das verwendete Protokoll, Benutzer und Kennwort für die Instanz usw. Beispiel:
 
 ```xml
 java -jar toughday2.jar --host=host --protocol=https --port=4502 --duration=30m --dryrun=true
@@ -127,7 +131,7 @@ Nachfolgend finden Sie alle relevanten Parameter:
 | `--port=<Val>` | Der Anschluss des Hosts. | 4502 |  |
 | `--user=<Val>` | Der Benutzername für die Instanz. | admin |  |
 | `--password=<Val>` | Kennwort für den angegebenen Benutzer. | admin |  |
-| `--duration=<Val>` | Dauer der Tests. Kann in (**s**)Sekunden, (**m**)Minuten, (**h**)unseren und (**d**)Tagen ausgedrückt werden. | 1d |  |
+| `--duration=<Val>` | Dauer der Tests. Kann in (**s**)Sekunden, (**m**)Minuten, (**h**) unsere und (**d**)ays. | 1d |  |
 | `--timeout=<Val>` | Gibt an, wie lange ein Test ausgeführt wird, bevor er unterbrochen und als fehlgeschlagen markiert wird. In Sekunden angegeben. | 180 |  |
 | `--suite=<Val>` | Der Wert kann eine oder eine Liste (durch Kommas getrennt) vordefinierter Test-Suites sein. | touchday |  |
 | `--configfile=<Val>` | Die zielgerichtete YAML-Konfigurationsdatei. |  |  |
@@ -139,7 +143,7 @@ Nachfolgend finden Sie alle relevanten Parameter:
 
 Die Anpassung erfolgt wahlweise über Befehlszeilenparameter oder YAML-Konfigurationsdateien. **Konfigurationsdateien werden in der Regel für umfangreiche angepasste Suites verwendet. Sie überschreiben die Standardparameter von Tough Day 2. Befehlszeilenparameter überschreiben sowohl Konfigurationsdateien als auch Standardparameter.**
 
-Die einzige Möglichkeit, eine Testkonfiguration zu speichern, besteht darin, sie in das YAML-Format zu kopieren. Weitere Informationen finden Sie in dieser [toughday.yaml](https://repo.adobe.com/nexus/service/local/repositories/releases/content/com/adobe/qe/toughday2/0.2.1/toughday2-0.2.1.yaml) -Konfiguration und in den folgenden Abschnitten in den YAML-Konfigurationsbeispielen.
+Die einzige Möglichkeit, eine Testkonfiguration zu speichern, besteht darin, sie in das YAML-Format zu kopieren. Weitere Informationen finden Sie in diesem [toughday.yaml](https://repo.adobe.com/nexus/service/local/repositories/releases/content/com/adobe/qe/toughday2/0.2.1/toughday2-0.2.1.yaml) Konfiguration und Beispiele für die YAML-Konfiguration in den folgenden Abschnitten.
 
 ### Hinzufügen eines neuen Tests {#adding-a-new-test}
 
@@ -186,7 +190,7 @@ tests:
 
 ### Ändern der Testeigenschaften {#changing-the-test-properties}
 
-Wenn Sie eine Testeigenschaft (oder mehrere) ändern müssen, können Sie diese Eigenschaft(en) zur Befehlszeile oder zur YAML-Konfigurationsdatei hinzufügen. Um alle verfügbaren Testeigenschaften anzuzeigen, fügen Sie den Parameter `--help <TestClass/PublisherClass>` zur Befehlszeile hinzu, z. B.:
+Wenn Sie eine Testeigenschaft (oder mehrere) ändern müssen, können Sie diese Eigenschaft(en) zur Befehlszeile oder zur YAML-Konfigurationsdatei hinzufügen. Um alle verfügbaren Testeigenschaften anzuzeigen, fügen Sie die `--help <TestClass/PublisherClass>` Parameter an die Befehlszeile an, z. B.:
 
 ```xml
 java -jar toughday2.jar --help CreatePageTreeTest
@@ -194,7 +198,7 @@ java -jar toughday2.jar --help CreatePageTreeTest
 
 Beachten Sie, dass die YAML-Konfigurationsdateien die Standardparameter von Tough Day 2 überschreiben und Befehlszeilenparameter sowohl die Konfigurationsdateien als auch die Standardparameter überschreiben.
 
-Die folgenden Beispiele zeigen, wie Sie die `template`-Eigenschaft für den `CreatePageTreeTest`-Test ändern, indem Sie entweder Befehlszeilenparameter oder eine YAML-Konfigurationsdatei verwenden.
+Die folgenden Beispiele zeigen, wie Sie die `template` -Eigenschaft für `CreatePageTreeTest` Testen Sie entweder mithilfe von Befehlszeilenparametern oder einer YAML-Konfigurationsdatei.
 
 Mit Befehlszeilenparametern:
 
@@ -235,9 +239,9 @@ tests:
   - add : CreatePageTreeTest
 ```
 
-Bestehende Tests in einer bestimmten Suite können auch mit dem Parameter `config`* *neu konfiguriert werden. Beachten Sie, dass Sie auch den Suite-Namen und den tatsächlichen Namen des Tests angeben müssen (nicht den Namen der Testklasse). Den Testnamen finden Sie in der Eigenschaft `name` der Testklasse. Weitere Informationen zum Finden von Testeigenschaften finden Sie im Abschnitt [Ändern von Testeigenschaften](/help/sites-developing/tough-day.md#changing-the-test-properties).
+Bestehende Tests in einer bestimmten Suite können auch mit der `config`* *Parameter. Beachten Sie, dass Sie auch den Suite-Namen und den tatsächlichen Namen des Tests angeben müssen (nicht den Namen der Testklasse). Den Testnamen finden Sie in der Eigenschaft `name` der Testklasse. Weitere Informationen zum Finden von Testeigenschaften finden Sie im Abschnitt [Ändern von Testeigenschaften](/help/sites-developing/tough-day.md#changing-the-test-properties).
 
-Im folgenden Beispiel wird der standardmäßige Asset-Titel für `CreatePageTreeTest` (mit dem Namen `UploadAsset`) in &quot;NewAsset&quot;geändert.
+Im Beispiel unten der standardmäßige Asset-Titel für die `CreatePageTreeTest` (benannt `UploadAsset`) in &quot;NewAsset&quot;geändert.
 
 Mit Befehlszeilenparametern:
 
@@ -257,7 +261,7 @@ tests:
       title : NewAsset
 ```
 
-Außerdem können Sie auch Tests aus vordefinierten Suites oder Herausgebern von der Standardkonfiguration entfernen. Dazu dient der Parameter `exclude`. Bitte beachten Sie, dass Sie auch den Namen der Suite und den tatsächlichen Namen des Tests angeben müssen (nicht den Namen von Test C `lass` ). Sie finden den Testnamen in der Eigenschaft `name` der Testklasse. Im folgenden Beispiel wird der Test `CreatePageTreeTest` (mit dem Namen `UploadAsset`) aus der Touchday Suite entfernt.
+Außerdem können Sie auch Tests aus vordefinierten Suites oder Herausgebern von der Standardkonfiguration entfernen. Dazu dient der Parameter `exclude`. Bitte beachten Sie, dass Sie auch den Suite-Namen und den tatsächlichen Namen des Tests (nicht den Test C) angeben müssen. `lass` name). Sie finden den Testnamen im `name` -Eigenschaft der Testklasse. Im folgenden Beispiel wird die Variable `CreatePageTreeTest` (benannt `UploadAsset`) wird der Test aus der Toughday Suite entfernt.
 
 Mit Befehlszeilenparametern:
 
@@ -277,9 +281,9 @@ tests:
 
 ### Ausführungsmodi {#run-modes}
 
-Tough Day 2 kann in einem der folgenden Modi ausgeführt werden: **normal** und **Konstante Last**.
+Tough Day 2 kann in einem der folgenden Modi ausgeführt werden: **normal** und **konstante Belastung**.
 
-Der Ausführungsmodus **normal** hat zwei Parameter:
+Die **normal** Der Ausführungsmodus verfügt über zwei Parameter:
 
 * `concurrency` - &quot;concurrency&quot;stellt die Anzahl der Threads dar, die Tough Day 2 für die Testausführung erstellt. Auf diesen Threads werden die Tests ausgeführt, bis entweder die Dauer abgelaufen ist oder es keine weiteren Tests zur Durchführung mehr gibt.
 
@@ -300,13 +304,13 @@ runmode:
   concurrency : 200
 ```
 
-Der Ausführungsmodus **Konstante Last** unterscheidet sich vom normalen Ausführungsmodus, indem eine konstante Anzahl von gestarteten Testausführungen und nicht eine konstante Anzahl von Threads generiert wird. Sie können die Last mithilfe des Parameters Ausführungsmodus mit demselben Namen festlegen.
+Die **konstante Belastung** Der Ausführungsmodus unterscheidet sich vom normalen Ausführungsmodus, indem eine konstante Anzahl von gestarteten Testausführungen und nicht eine konstante Anzahl von Threads generiert wird. Sie können die Last mithilfe des Parameters Ausführungsmodus mit demselben Namen festlegen.
 
 ### Testauswahl {#test-selection}
 
-Der Testauswahlprozess ist für beide Ausführungsmodi identisch und läuft wie folgt ab: Alle Tests verfügen über eine `weight` -Eigenschaft, die die Wahrscheinlichkeit der Ausführung in einem Thread bestimmt. Wenn es z. B. zwei Tests gibt, einen mit dem „weight“-Wert 5 und einen mit dem „weight“-Wert 10, ist die Wahrscheinlichkeit der Ausführung bei dem Test mit dem Wert 10 doppelt so hoch wie bei dem anderen Test.
+Der Testauswahlprozess ist für beide Ausführungsmodi identisch und läuft wie folgt ab: alle Tests `weight` -Eigenschaft, die die Wahrscheinlichkeit der Ausführung in einem Thread bestimmt. Wenn es z. B. zwei Tests gibt, einen mit dem „weight“-Wert 5 und einen mit dem „weight“-Wert 10, ist die Wahrscheinlichkeit der Ausführung bei dem Test mit dem Wert 10 doppelt so hoch wie bei dem anderen Test.
 
-Darüber hinaus können Tests über eine `count` -Eigenschaft verfügen, die die Anzahl der Ausführungen auf eine bestimmte Zahl begrenzt. Wenn diese Anzahl erreicht ist, finden keine weiteren Testausführungen mehr statt. Alle Testinstanzen, die bereits ausgeführt werden, beenden die Ausführung wie konfiguriert. Das folgende Beispiel zeigt, wie Sie diese Parameter mit der Befehlszeile oder mit einer YAML-Konfigurationsdatei hinzufügen.
+Darüber hinaus können Tests eine `count` -Eigenschaft, die die Anzahl der Ausführungen auf eine bestimmte Zahl begrenzt. Wenn diese Anzahl erreicht ist, finden keine weiteren Testausführungen mehr statt. Alle Testinstanzen, die bereits ausgeführt werden, beenden die Ausführung wie konfiguriert. Das folgende Beispiel zeigt, wie Sie diese Parameter mit der Befehlszeile oder mit einer YAML-Konfigurationsdatei hinzufügen.
 
 ```xml
 java -jar toughday2.jar --host=localhost --add CreateAssetTreeTest weight=5 --add CreatePageTreeTest weight=10 count=100 --runmode=normal concurrency=20
@@ -327,7 +331,7 @@ oder
 
 >[!NOTE]
 >
->Aufgrund paralleler Ausführungen entspricht die tatsächliche Anzahl der Testläufe nicht genau dem im Parameter `count` konfigurierten Wert. Erwarten Sie eine Abweichung, die proportional zur Anzahl der laufenden Threads ist (gesteuert durch `concurrency parameter`).
+>Aufgrund paralleler Ausführungen entspricht die tatsächliche Anzahl der Testläufe nicht genau dem in der Variablen `count` Parameter. Erwarten Sie eine Abweichung, die proportional zur Anzahl der laufenden Threads ist (gesteuert durch die Variable `concurrency parameter`).
 
 ### Probelauf {#dry-run}
 
@@ -343,7 +347,7 @@ Tough Day 2 gibt Testmetriken und -protokolle aus. Weitere Informationen finden
 
 ### Testmetriken {#test-metrics}
 
-Tough Day 2 meldet derzeit neun Testmetriken, die Sie auswerten können. Metriken mit dem Symbol ***** werden erst nach erfolgreichen Ausführungen gemeldet:
+Tough Day 2 meldet derzeit neun Testmetriken, die Sie auswerten können. Metriken mit der ***** -Symbol wird erst nach erfolgreichen Ausführungen gemeldet:
 
 | **Name** | **Beschreibung** |
 |---|---|
@@ -360,17 +364,17 @@ Tough Day 2 meldet derzeit neun Testmetriken, die Sie auswerten können. Metrik
 | 99.9p* | 99,9 Perzentil. |
 | Tatsächlicher Durchsatz* | Anzahl der Ausführungen dividiert durch die verstrichene Ausführungszeit. |
 
-Diese Metriken werden mithilfe von Herausgebern geschrieben, die mit dem Parameter `add` hinzugefügt werden können (ähnlich wie beim Hinzufügen von Tests). Aktuell gibt es zwei Optionen:
+Diese Metriken werden mithilfe von Herausgebern geschrieben, die mit dem `add` -Parameter (ähnlich wie beim Hinzufügen von Tests). Aktuell gibt es zwei Optionen:
 
-* **CSVPublisher**  - die Ausgabe ist eine CSV-Datei.
-* **ConsolePublisher**  - die Ausgabe wird in der Konsole angezeigt.
+* **CSVPublisher** - die Ausgabe eine CSV-Datei ist.
+* **ConsolePublisher** - die Ausgabe wird in der Konsole angezeigt.
 
 Standardmäßig werden beide Herausgeber aktiviert.
 
 Zusätzlich gibt es zwei Modi, bei denen die Metriken gemeldet werden:
 
-* Der Veröffentlichungsmodus **simple** meldet die Ergebnisse vom Beginn der Ausführung bis zum Zeitpunkt der Veröffentlichung.
-* Der Veröffentlichungsmodus **intervalle** meldet die Ergebnisse in einem bestimmten Zeitraum. Sie können den Zeitrahmen mit dem Parameter **interval** Veröffentlichungsmodus festlegen.
+* Die **einfach** Veröffentlichungsmodus - meldet die Ergebnisse vom Beginn der Ausführung bis zum Zeitpunkt der Veröffentlichung.
+* Die **Intervalle** Veröffentlichungsmodus - meldet die Ergebnisse in einem bestimmten Zeitraum. Sie können den Zeitrahmen mit dem **interval** Veröffentlichungsmodus-Parameter.
 
 Das folgende Beispiel zeigt, wie Sie den Parameter `intervals` mit der Befehlszeile oder mit einer YAML-Konfigurationsdatei konfigurieren.
 
@@ -397,7 +401,7 @@ Tough Day 2 erstellt einen Protokollordner in demselben Ordner, in dem Sie Tough
 * **toughday.log**: enthält Meldungen zum Anwendungsstatus, Debugging-Informationen und globale Meldungen
 * **toughday_&lt;Testname>.log**: Meldungen zum genannten Test
 
-Die Protokolle werden nicht überschrieben. Bei nachfolgenden Testausführungen werden Meldungen an die vorhandenen Protokolle angehängt. Die Protokolle haben mehrere Ebenen, weitere Informationen finden Sie unter ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
+Die Protokolle werden nicht überschrieben. Bei nachfolgenden Testausführungen werden Meldungen an die vorhandenen Protokolle angehängt. Die Protokolle haben mehrere Ebenen. Weitere Informationen finden Sie unter ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
 
 #### Anwendungsbeispiel {#example-usage}
 
