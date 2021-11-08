@@ -1,9 +1,9 @@
 ---
 title: Aktualisieren abgelaufener Reader Extension-Dienstzertifikate
 description: 'Reader für erweiterte Dokumente funktioniert nicht, Zertifikate aktualisieren '
-source-git-commit: 5f2fc6a32f67cfed3bc4b09b63bcf9689659a99d
+source-git-commit: a26e4fb53458beae9b259e5ee5dc74a95264f9e1
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1581'
 ht-degree: 26%
 
 ---
@@ -15,10 +15,10 @@ Adobe Experience Manager Forms (AEM Forms)-Kunden mit Adobe Managed Services- od
 
 Adobe nutzt eine PKI (Public-Key-Infrastruktur), um digitale Zertifikate für die Lizenzierung und Aktivierung von Funktionen auszustellen. Adobe hat Zertifikate unter der Zertifizierungsstelle &quot;Adobe Root CA&quot; ausgestellt, die am 7. Januar 2023 ablaufen soll. Dies führt zur Gültigkeit aller Zertifikate, die im Rahmen dieser Zertifizierungsstelle ausgestellt werden. Nach Ablauf des Zertifikats funktionieren alle von den Zertifikaten abhängigen Funktionen nicht mehr. Beispielsweise funktioniert ein durch Leser erweitertes PDF-Dokument, das das Hinzufügen von Kommentaren mit Adobe Acrobat Reader ermöglicht, nach dem 7. Januar 2023 nicht mehr für Kunden. Um dieses Problem zu beheben, sollte der Administrator des Reader Extension-Dienstes unter Verwendung alter Zertifikate neue Zertifikate der neuen Adobe Root CA G2 auf ihre PDF-Dokumente abrufen und erneut anwenden (Leser erweitern die PDF-Dokumente mit neuen Zertifikaten).
 
-Der Ablauf von Zertifikaten wirkt sich sowohl auf AEM Forms on JEE als auch AEM Forms auf OSGi-Stacks aus. Beide Stapel verfügen über unterschiedliche Anweisungen. Wählen Sie je nach Stapel einen der folgenden Pfade aus:
+Der Ablauf von Zertifikaten wirkt sich sowohl auf AEM Forms on JEE als auch AEM Forms auf OSGi-Stacks aus. Beide Stapel verfügen über unterschiedliche Anweisungen. Nach dem Treffen [Voraussetzungen](#Pre-requisites) und [neue Zertifikate abrufen](#obtain-the-certificates)Wählen Sie je nach Stapel einen der folgenden Pfade aus:
 
-* Aktualisieren von Zertifikaten für eine AEM Forms on JEE-Umgebung
-* Aktualisieren von Zertifikaten für eine AEM Forms in einer OSGi-Umgebung
+* [Aktualisieren von Zertifikaten für eine AEM Forms on JEE-Umgebung](#Updating-and-Applying-certificates-for-an-AEM-Forms-on-JEE-environment)
+* [Aktualisieren von Zertifikaten für eine AEM Forms in einer OSGi-Umgebung](#Updating-and-applying-certificates-for-an-AEM-Forms-on-OSGi-environment)
 
 >[!NOTE]
 >
@@ -97,14 +97,14 @@ Für das Aktualisieren und Anwenden neuer Zertifikate auf AEM Forms auf dem OSGi
 In einer AEM Forms on OSGi-Umgebung ist eine Berechtigung für die Reader-Erweiterung mit dem fd-service -Benutzer verknüpft. Bevor Sie Anmeldeinformationen für den Fd-User-Schlüsselspeicher hinzufügen, führen Sie die folgenden Schritte aus, um einen Schlüssel-Store zu erstellen:
 
 1. Melden Sie sich bei Ihrer AEM-Autoreninstanz als Administrator an.
-1. Navigieren Sie zu Tools > Sicherheit > Benutzer.
+1. Navigieren Sie zu **[!UICONTROL Tools]**> **[!UICONTROL Sicherheit]**> **[!UICONTROL Benutzer]**.
 1. Scrollen Sie in der Liste der Benutzer nach unten, bis Sie das fd-service-Benutzerkonto finden.
-1. Klicken Sie auf den Benutzer fd-service .
+1. Klicken **[!UICONTROL fd-service]** Benutzer.
 1. Klicken Sie auf die Registerkarte Keystore .
-1. Klicken Sie auf KeyStore erstellen .
+1. Klicken Sie auf **[!UICONTROL KeyStore erstellen]**.
 1. Legen Sie das KeyStore Access Password fest und speichern Sie Ihre Einstellungen, um das KeyStore-Kennwort zu erstellen.
 
-Fügen Sie nach dem Erstellen des Key-Stores Anmeldeinformationen zum fd-service-Benutzer hinzu.
+Fügen Sie nach dem Erstellen des Key-Stores Anmeldeinformationen zum fd-service-Benutzer hinzu. Im folgenden Video werden die Schritte erläutert:
 
 >[!VIDEO](https://images-tv.adobe.com/mpcv3/5577/8db8e554-f04b-4fae-8108-b9b5e0eb03ad_1627925794.854x480at800_h264.mp4)
 
