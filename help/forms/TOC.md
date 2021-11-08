@@ -8,10 +8,10 @@ user-guide-title: Adobe Experience Manager 6.5, Forms-Anleitung
 breadcrumb-title: Forms-Anleitung
 user-guide-description: Digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren.
 role: User
-source-git-commit: 730ae7cd6cd04eb6377b37eafe29db597e93cce3
+source-git-commit: d010b2a20e40fabe40f67d60ef0b6fab245be60f
 workflow-type: tm+mt
-source-wordcount: '3771'
-ht-degree: 71%
+source-wordcount: '3777'
+ht-degree: 70%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 71%
    + [Einführung in interaktive Kommunikation](using/interactive-communications-overview.md)
    + [Einführung in das Verwalten von Formularen](using/introduction-managing-forms.md)
    + [Einführung in den Automated Forms Conversion Service (AFCS)](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/introduction.html)
-   + Tutorial: Erstellen Sie Ihr erstes adaptives Formular {#create-first-adaptive-form}
+   + Tutorial: Erstellen Ihres ersten adaptiven Formulars {#create-first-adaptive-form}
       + [Tutorial: Erstellen des ersten adaptiven Formulars](using/create-your-first-adaptive-form.md)
       + [Schulung: Erstellen eines adaptiven Formulars](using/create-adaptive-form.md)
       + [Schulung: Formulardatenmodell erstellen](using/create-form-data-model.md)
@@ -77,7 +77,7 @@ ht-degree: 71%
       + [Konfigurieren von Adobe Experience Manager Forms on JEE auf einem JBoss-Cluster](http://www.adobe.com/go/learn_aemforms_clusterJBoss_65)
       + [Konfigurieren von Adobe Experience Manager Forms on JEE auf einem WebSphere-Cluster](http://www.adobe.com/go/learn_aemforms_clusterWebSphere_65)
       + [Konfigurieren von Adobe Experience Manager Forms on JEE auf einem WebLogic-Cluster](http://www.adobe.com/go/learn_aemforms_clusterWebLogic_65)
-   + AEM Forms konfigurieren {#configure-aem-forms}
+   + Konfiguration von AEM Forms {#configure-aem-forms}
       + [Leistungsoptimierung für AEM Forms-Server](using/performance-tuning-aem-forms.md)
       + [Cache für adaptive Formulare konfigurieren](using/configure-adaptive-forms-cache.md)
       + [AEM DS-Einstellungen konfigurieren](using/configuring-the-processing-server-url-.md)
@@ -86,13 +86,13 @@ ht-degree: 71%
       + [Verbinden von AEM Forms mit Adobe LiveCycle](using/aem-livecycle-connector.md)
       + [Konfigurieren von AEM Forms zum Senden von Formulardaten an einen AEM Forms on JEE-Prozess](using/submit-form-data-livecycle-process.md)
       + [AEM Desktop-Programm für AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
-+ Upgrade von AEM Forms {#upgrade-aem-forms}
++ AEM Forms aktualisieren {#upgrade-aem-forms}
    + [Verfügbare Aktualisierungspfade](using/upgrade.md)
-   + Aktualisieren von AEM Forms auf OSGi {#aem-forms-osgi-upgrade}
+   + AEM Forms auf OSGi aktualisieren {#aem-forms-osgi-upgrade}
       + [Aktualisierung auf AEM 6.5 Forms auf OSGi](using/upgrade-forms-osgi.md)
       + [Installieren Sie das Kompatibilitäts-Paket](using/compatibility-package.md)
       + [Migration der Assets und Dokumente von AEM Forms](using/migration-utility.md)
-   + Aktualisieren von AEM Forms on JEE {#aem-forms-jee-upgrade}
+   + AEM Forms on JEE aktualisieren {#aem-forms-jee-upgrade}
       + [Vorbereiten der Aktualisierung von AEM Forms](http://www.adobe.com/go/learn_aemforms_prepareupgrade_65)
       + [Checkliste für die Aktualisierung und Planung von Adobe Experience Manager Forms on JEE](http://www.adobe.com/go/learn_aemforms_upgrade_checklist_65_de)
       + [Aktualisierung auf AEM 6.5 Forms on JEE](using/upgrade-forms-jee.md)
@@ -126,7 +126,7 @@ ht-degree: 71%
 + Formulardatenmodell {#form-data-model}
    + [Einführung in die AEM Forms-Datenintegration](using/data-integration.md)
    + [Konfigurieren von Datenquellen](using/configure-data-sources.md)
-   + [Microsoft Dynamics OData-Konfiguration](using/ms-dynamics-odata-configuration.md)
+   + [Microsoft Dynamics-Datenkonfiguration](using/ms-dynamics-odata-configuration.md)
    + [Erstellen des Formulardatenmodells](using/create-form-data-models.md)
    + [Arbeiten mit einem Formulardatenmodell](using/work-with-form-data-model.md)
    + [Verwenden eines Formulardatenmodells](using/using-form-data-model.md)
@@ -339,7 +339,7 @@ ht-degree: 71%
    + [Einführung in das Veröffentlichen von Formularen in einem Portal](using/introduction-publishing-forms.md)
    + [Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung in die Datenbank](using/integrate-draft-submission-database.md)
    + [Konfigurieren von Speicherdiensten für Entwürfe und Übermittlungen](using/configuring-draft-submission-storage.md)
-   + [Verwalten von Formularanwendungen und Aufgaben im AEM-Posteingang](using/manage-applications-inbox.md)
+   + [Verwalten von Formularanwendungen und Aufgaben im AEM-Posteingang ](using/manage-applications-inbox.md)
    + [Überwachter Ordner in AEM Forms](using/watched-folder-in-aem-forms.md)
    + [Komponente „Drafts and Submissions“](using/draft-submission-component.md)
    + [Einbetten einer Komponente „Link“ in eine Seite](using/embedding-link-component-page.md)
@@ -464,6 +464,7 @@ ht-degree: 71%
       + [Verwendungsrechte einer PDF-Datei überprüfen](/help/forms/using/admin-help/review-usage-rights-pdf-file.md)
       + [Onlinekommentierung für Adobe Reader-Webbrowser-Plug-In aktivieren](/help/forms/using/admin-help/enabling-online-commenting-reader-web.md)
       + [Zeitlimitwerte zur Verwendung mit Acrobat Reader DC Extensions festlegen](/help/forms/using/admin-help/setting-timeout-values-acrobat-reader.md)
+      + [Aktualisieren abgelaufener Reader Extension-Dienstzertifikate](/help/forms/using/admin-help/updating-expired-reader-extension-certificates.md)
    + Arbeiten mit PDF Generator {#work-with-pdf-generator}
       + [Einführung in das Arbeiten mit PDF Generator](/help/forms/using/admin-help/overview-5.md)
       + [Aktivieren mehrprozessgestützter Dateikonvertierungen](/help/forms/using/admin-help/enabling-multi-threaded-file-conversions.md)
@@ -597,11 +598,11 @@ ht-degree: 71%
          + [Application Manager Client JavaAPI-Schnellstart (SOAP)](developing/application-manager-client-java-api.md)
          + [JavaAPI-Schnellstart für den Application Manager-Dienst (SOAP)](developing/application-manager-service-java-api.md)
          + [Assembler Service Java API QuickStart(SOAP)](developing/assembler-service-java-api-quick.md)
-         + [Acrobat Reader DC Extensions ServiceJava API-Schnellstart (SOAP)](developing/acrobat-reader-dc-extensions-service.md)
+         + [Acrobat Reader DC Extensions Service Java API-Schnellstart (SOAP)](developing/acrobat-reader-dc-extensions-service.md)
          + [APIQuick-Starts für Backup und Restore-Dienst](developing/backup-restore-service-api-quick.md)
          + [Barcoded Forms Service Java APIQuick Start(SOAP)](developing/barcoded-forms-service-java-api.md)
          + [Java APIQuick Start (SOAP) für Komponenten und Dienste](developing/components-services-java-api-quick.md)
-         + [Convert PDF Service Java API QuickStart(SOAP)](developing/convert-pdf-service-java-api.md)
+         + [PDF Service Java API QuickStart(SOAP) konvertieren](developing/convert-pdf-service-java-api.md)
          + [Java-API für Credential Service QuickStart (SOAP)](developing/credential-service-java-api-quick.md)
          + [Distiller Service Java API QuickStart(SOAP)](developing/distiller-service-java-api-quick.md)
          + [DocConverter Service Java API QuickStart(SOAP)](developing/docconverter-service-java-api-quick.md)
@@ -628,11 +629,11 @@ ht-degree: 71%
          + [AEM Forms mit Web Services aufrufen](developing/invoking-human-centric-long-lived.md)
          + [AEM Forms mit der JavaAPI aufrufen](developing/invoking-aem-forms-using-java.md)
          + [Erstellen von Flash Builder-Anwendungen, die SSO-Authentifizierung mithilfe von HTTP-Token durchführen](developing/creating-flash-builder-applications-perform.md)
-      + Durchführen von Dienstvorgängen mit APIs {#performing-service-operations-using-apis}
+      + Ausführen von Dienstvorgängen mithilfe von APIs {#performing-service-operations-using-apis}
          + [Ausführen von Dienstvorgängen mithilfe von APIs](developing/performing-service-operations-using-apis.md)
          + [Rendern von Forms](developing/rendering-forms.md)
          + [Zusammenstellen von PDF-Dokumenten](developing/assembling-pdf-documents.md)
-         + [Programmgesteuertes Assemblieren von PDF-Dokumenten](developing/programmatically-assembling-pdf-documents.md)
+         + [Programmgesteuertes Zusammenstellen von PDF-Dokumenten](developing/programmatically-assembling-pdf-documents.md)
          + [Konvertieren zwischen Dateiformaten und PDF](developing/converting-file-formats-pdf.md)
          + [Programmgesteuerte Demontage von PDF-Dokumenten](developing/programmatically-disassembling-pdf-documents.md)
          + [Assemblieren verschlüsselter PDF-Dokumente](developing/assembling-encrypted-pdf-documents.md)
@@ -641,7 +642,7 @@ ht-degree: 71%
          + [Assemblieren nicht interaktiver PDF-Dokumente](developing/assembling-non-interactive-pdf-documents.md)
          + [Assemblieren von PDF-Dokumenten mit Lesezeichen](developing/assembling-pdf-documents-bookmarks.md)
          + [Verwendungsrechte zuweisen](developing/assigning-usage-rights.md)
-         + [Zusammenstellen von PDF-Portfolios](developing/assembling-pdf-portfolios.md)
+         + [Assemblieren von PDF-Portfolios](developing/assembling-pdf-portfolios.md)
          + [Formulardaten berechnen](developing/calculating-form-data.md)
          + [Erstellen von Webanwendungen, die Forms rendern](developing/creating-web-applications-renders-forms.md)
          + [Erstellen von PDF-Dokumenten mit SubmittedXML-Daten](developing/creating-pdf-documents-submitted-xml.md)
@@ -661,7 +662,7 @@ ht-degree: 71%
          + [Rendern interaktiver PDF forms](developing/rendering-interactive-pdf-forms.md)
          + [Rendern von Rights-aktiviertem Forms](developing/rendering-rights-enabled-forms.md)
          + [Validieren von DDX-Dokumenten](developing/validating-ddx-documents.md)
-         + [Konvertieren von PDF-Dateien in PostScript- und Bilddateien](developing/converting-pdf-postscript-image-files.md)
+         + [Konvertieren von PDF in PostScript- und Bilddateien](developing/converting-pdf-postscript-image-files.md)
          + [Konvertieren von Postscript in PDF-Dokumente](developing/converting-postscript-pdf-documents.md)
          + [Erstellen von Document Output Streams](developing/creating-document-output-streams.md)
          + [Digitales Signieren und Zertifizieren von Dokumenten](developing/digitally-signing-certifying-documents.md)
