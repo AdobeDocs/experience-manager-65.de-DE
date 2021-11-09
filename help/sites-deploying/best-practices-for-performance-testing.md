@@ -1,8 +1,8 @@
 ---
 title: Best Practices für Leistungstests
-seo-title: Best Practices für Leistungstests
+seo-title: Best Practices for Performance Testing
 description: In diesem Artikel werden Gesamtstrategien und Methoden für Leistungstests sowie verschiedene hierfür verfügbare Tools beschrieben.
-seo-description: In diesem Artikel werden Gesamtstrategien und Methoden für Leistungstests sowie verschiedene hierfür verfügbare Tools beschrieben.
+seo-description: This article outlines the overall strategies and methodologies used for performance testing as well as some of the tools that are available to assist in the process.
 uuid: ab8720d6-b864-4d00-9e07-2e1699cfe7db
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: b6de561422bc3533eef153b13d2c65b4cb7e0387
 workflow-type: tm+mt
-source-wordcount: '1920'
-ht-degree: 94%
+source-wordcount: '1897'
+ht-degree: 92%
 
 ---
 
@@ -60,7 +60,7 @@ Auf dem Markt ist eine Vielzahl von Tools für Leistungstests erhältlich. Stell
 * AEM stellt sofort einsatzfähige Tools bereit, um problematische Abfragen, Anforderungen und Fehlermeldungen schnell erkennen zu können. Weitere Informationen finden Sie im Abschnitt [Diagnose-Tools](/help/sites-administering/operations-dashboard.md#diagnosis-tools) des Dokuments zu Vorgangs-Dashboards.
 * Apache bietet ein Produkt namens **JMeter** an, das Leistungs- und Auslastungstests sowie eine Überprüfung des Funktionsverhaltens ermöglicht. Es handelt sich um kostenlose Open-Source-Software, die im Vergleich zu Enterprise-Produkten zwar einen geringeren Funktionsumfang hat, dafür aber eine steilere Lernkurve. JMeter finden Sie auf der Apache-Website unter [https://jmeter.apache.org/](https://jmeter.apache.org/)
 
-* **Load** Runner ist ein Produkt für Lasttests auf Unternehmensniveau. Eine kostenlose Testversion ist verfügbar. Weitere Informationen finden Sie unter [https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview)
+* **Load Runner** ist ein Produkt für Belastungstests auf Unternehmensniveau. Eine kostenlose Testversion ist verfügbar. Weitere Informationen finden Sie unter [https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview)
 
 * Cloudbasierte Tools für Auslastungstests wie [Neustar](https://www.neustar.biz/services/web-performance/load-testing) können ebenfalls verwendet werden.
 * Zum Testen von mobilen Websites oder responsiven Webdesigns sind andere Tools erforderlich. Diese drosseln die Netzwerkbrandbreite, um langsamere mobile Verbindungen wie 3G oder EDGE zu simulieren. Zu den gängigsten Tools gehören:
@@ -80,7 +80,7 @@ Eine der neuen Funktionen in der Touch-Benutzeroberfläche von AEM 6 ist der En
 
 **Lesen von Anforderungsprotokollen mit rlog.jar**
 
-Für eine eingehendere Analyse der Anforderungsprotokolle auf einem AEM-System können die von AEM erzeugten `rlog.jar`-Dateien mit `request.log` durchsucht und sortiert werden. Diese JAR-Datei ist mit einer AEM Installation im Ordner `/crx-quickstart/opt/helpers` enthalten. Weitere Informationen zum rlog-Tool und Anforderungsprotokoll im Allgemeinen finden Sie im Dokument [Überwachen und Verwalten](/help/sites-deploying/monitoring-and-maintaining.md).
+Für eine eingehendere Analyse der Anforderungsprotokolle auf einem AEM-System können die von AEM erzeugten `rlog.jar`-Dateien mit `request.log` durchsucht und sortiert werden. Diese JAR-Datei ist mit einer AEM Installation im `/crx-quickstart/opt/helpers` Ordner. Weitere Informationen zum rlog-Tool und Anforderungsprotokoll im Allgemeinen finden Sie im Dokument [Überwachen und Verwalten](/help/sites-deploying/monitoring-and-maintaining.md).
 
 **Tool „Abfrage erläutern“**
 
@@ -108,13 +108,21 @@ Auf Systemen mit MongoDB-Backends stellt AEM mehrere [JMX](/help/sites-administe
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D6%2Cname%3D%22Consolidated+Cache+statistics%22%2Ctype%3D%22ConsolidatedCacheStats%22`
 
-Für den Cache mit dem Namen **Document-Diff** sollte die Trefferrate über `.90` liegen. Wenn die Trefferrate unter 90 % fällt, müssen Sie wahrscheinlich die `DocumentNodeStoreService`-Konfiguration ändern. Der Produktsupport von Adobe kann Ihnen optimale Einstellungen für Ihre Umgebung empfehlen.
+Für den Cache mit dem Namen **Document-Diff**, sollte die Trefferrate vorüber sein. `.90`. Wenn die Trefferrate unter 90 % fällt, müssen Sie wahrscheinlich die `DocumentNodeStoreService`-Konfiguration ändern. Der Produktsupport von Adobe kann Ihnen optimale Einstellungen für Ihre Umgebung empfehlen.
 
 * MBean **Oak Repository Statistics**. Sie können wie folgt direkt darauf zugreifen:
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D16%2Cname%3D%22Oak+Repository+Statistics%22%2Ctype%3D%22RepositoryStats%22`
 
-Im Abschnitt **ObservationQueueMaxLength** wird die Anzahl der Ereignisse in der Oak-Überwachungswarteschlange während der letzten Stunden, Minuten, Sekunden und Wochen angezeigt. Suchen Sie im Abschnitt „per hour“ nach der größten Anzahl von Ereignissen. Dieser Wert muss mit der Einstellung `oak.observation.queue-length` der **SlingRepositoryManager**-Komponente in der [OSGi-Konsole](/help/sites-deploying/web-console.md) verglichen werden. Wenn die höchste für die Überwachungswarteschlange angezeigte Zahl die Einstellung `queue-length` überschreitet, setzen Sie sich mit dem Adobe-Support in Verbindung, um sich beim Erhöhen des Einstellungswerts unterstützen zu lassen. Die Standardeinstellung ist 1.000, aber für die meisten Bereitstellungen ist normalerweise eine Anhebung auf 20.000 oder 50.000 erforderlich.
+Im Abschnitt **ObservationQueueMaxLength** wird die Anzahl der Ereignisse in der Oak-Überwachungswarteschlange während der letzten Stunden, Minuten, Sekunden und Wochen angezeigt. Suchen Sie im Abschnitt „per hour“ nach der größten Anzahl von Ereignissen. Diese Zahl muss mit der `oak.observation.queue-length` -Einstellung. Wenn die höchste für die Beobachtungswarteschlange angezeigte Zahl die `queue-length` Einstellung:
+
+1. Erstellen Sie eine Datei mit dem Namen: `com.adobe.granite.repository.impl.SlingRepositoryManager.cfg` enthält den Parameter `oak.observation.queue‐length=50000`
+1. Platzieren Sie sie im Ordner /crx-quickstart/install .
+
+>[!NOTE]
+>Siehe auch den KB-Artikel unter [AEM 6.x | Tipps zur Leistungsoptimierung](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html)
+
+Die Standardeinstellung ist 10,000, aber für die meisten Bereitstellungen ist normalerweise eine Anhebung auf 20.000 oder 50.000 erforderlich.
 
 ## Veröffentlichungsumgebung {#publish-environment}
 
@@ -140,7 +148,7 @@ Im Anschluss an die Leistungstests der Autoreninstanz müssen alle festgestellte
 * Überprüfen Sie das Fehlerprotokoll auf Fehler oder Warnungen. Weitere Informationen finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md).
 * Überwachen Sie die Hardwareressourcen des Systems wie den Arbeitsspeicher und die CPU oder I/O-Vorgänge von Festplatte bzw. Netzwerk. Diese Ressourcen sind häufig die Ursache für Leistungsengpässe.
 * Optimieren Sie die Architektur der Seiten und ihre Adressierung, um die Nutzung von URL-Parametern zu minimieren, damit ein Höchstmaß an Caching ermöglicht wird.
-* Folgen Sie der Dokumentation zur [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) und den [Tipps zur Leistungsoptimierung](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html).
+* Folgen Sie der Dokumentation zur [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) und den [Tipps zur Leistungsoptimierung](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
 
 * Wenn es Probleme beim Bearbeiten bestimmter Seiten oder Komponenten in Autoreninstanzen gibt, sehen Sie sich die fragliche Seite mithilfe des Entwicklermodus der Touch-optimierten Benutzeroberfläche an. Dabei wird jeder Inhaltsbereich auf der Seite samt Ladezeit aufgeschlüsselt.
 * Führen Sie eine vollständige JS- und CSS-Minimierung auf der Website durch. Weitere Informationen dazu finden Sie in diesem [Blogpost](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).
