@@ -1,6 +1,6 @@
 ---
 title: Schnellstart für die Java-API des Document Management-Dienstes (veraltet) (SOAP)
-seo-title: Schnellstart für die Java-API des Document Management-Dienstes (veraltet) (SOAP)
+seo-title: Document Management Service (Deprecated)Java API Quick Start(SOAP)
 description: Schnellstart für die Java-API des Document Management-Dienstes (veraltet) (SOAP)
 uuid: 967c282a-ccde-4489-a4d5-53c6a1a0cac0
 contentOwner: admin
@@ -10,14 +10,14 @@ topic-tags: develop
 discoiquuid: 9cffdb77-c8a4-4a15-b64f-1d3aadaa60c7
 role: Developer
 exl-id: 38a90957-bdde-4f38-9edd-c59522e5f525
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5910b0e64a579998bc9cd79cf4e95f5e6f459c5a
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
 
-# Schnellstart für Java-API-Schnellstart für Document Management Service (veraltet) {#document-management-service-deprecated-java-api-quick-start-soap}
+# Schnellstart für Java-API für Document Management Service (nicht mehr unterstützt) (SOAP) {#document-management-service-deprecated-java-api-quick-start-soap}
 
 Die folgenden Schnellstarts sind für den Document Management-Dienst (nicht mehr unterstützt) verfügbar.
 
@@ -44,12 +44,12 @@ Die folgenden Schnellstarts sind für den Document Management-Dienst (nicht mehr
 AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden und der Verbindungsmodus sollte auf SOAP festgelegt werden.
 
 >[!NOTE]
-
-Schnellstarts, die unter Programmieren mit AEM Forms zu finden sind, basieren auf dem Forms-Server, der auf JBoss bereitgestellt wird, und dem Windows-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>
+>Schnellstarts, die unter Programmieren mit AEM Forms zu finden sind, basieren auf dem Forms-Server, der auf JBoss bereitgestellt wird, und dem Windows-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Schnellstart (SOAP-Modus): Erstellen von Inhaltsdienstbereichen mit der Java-API (nicht mehr unterstützt) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
-Im folgenden Java-Codebeispiel wird ein neuer Bereich mit dem Namen *Testverzeichnis* erstellt, der sich auf der Startseite des Unternehmens befindet. Der Identifikationswert des neuen Platzierens wird in die Konsole geschrieben.
+Im folgenden Java-Codebeispiel wird ein neues Leerzeichen mit dem Namen *Testverzeichnis* befindet sich auf der Startseite des Unternehmens. Der Identifikationswert des neuen Platzierens wird in die Konsole geschrieben.
 
 ```java
  /*
@@ -143,7 +143,7 @@ Im folgenden Java-Codebeispiel wird ein neuer Bereich mit dem Namen *Testverzeic
  
 ```
 
-## Schnellstart (SOAP-Modus): Löschen Sie Content Services-Inhalte mithilfe der Java-API (nicht mehr unterstützt) {#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated}
+## Schnellstart (SOAP-Modus): Löschen von Content Services-Inhalten mit der Java-API (nicht mehr unterstützt) {#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated}
 
 Im folgenden Java-Codebeispiel wird ein Leerzeichen mit dem Namen /Company Home/Test Directory gelöscht.
 
@@ -245,7 +245,7 @@ Im folgenden Java-Codebeispiel wird ein Leerzeichen mit dem Namen /Company Home/
 
 ## Schnellstart (SOAP-Modus): Hinzufügen von Inhalten zu Content Services mithilfe der Java-API (nicht mehr unterstützt) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
 
-Im folgenden Java-Codebeispiel wird eine PDF-Datei mit dem Namen *MortgageForm.pdf* zu einem Ordner mit dem Namen /Company Home/Test Directory hinzugefügt. Die Attribute Ersteller und Beschreibung werden festgelegt. Der Identifizierungswert des neuen Inhalts wird in die Konsole geschrieben.
+Im folgenden Java-Codebeispiel wird eine PDF-Datei mit dem Namen *MortgageForm.pdf* in einen Ordner mit dem Namen &quot;/Company Home/Test Directory&quot;. Die Attribute Ersteller und Beschreibung werden festgelegt. Der Identifizierungswert des neuen Inhalts wird in die Konsole geschrieben.
 
 ```java
  /*
@@ -366,9 +366,9 @@ Im folgenden Java-Codebeispiel wird eine PDF-Datei mit dem Namen *MortgageForm.p
  
 ```
 
-## Schnellstart (SOAP-Modus): Abrufen von Inhalten aus Content Services mithilfe der Java-API (veraltet) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
+## Schnellstart (SOAP-Modus): Abrufen von Inhalten aus Content Services mithilfe der Java-API (nicht mehr unterstützt) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
 
-Im folgenden Java-Codebeispiel wird eine PDF-Datei mit dem Namen *MortgageForm.pdf* von /Company Home abgerufen. Die PDF-Datei wird im lokalen Dateisystem gespeichert und erhält den Namen *UpdatedMortgageForm.pdf*.
+Im folgenden Java-Codebeispiel wird eine PDF-Datei mit dem Namen *MortgageForm.pdf* von /Company Home. Die PDF-Datei wird im lokalen Dateisystem gespeichert und erhält den Namen *UpdatedMortgageForm.pdf*.
 
 ```java
  /*
@@ -472,9 +472,9 @@ Im folgenden Java-Codebeispiel wird eine PDF-Datei mit dem Namen *MortgageForm.p
  
 ```
 
-## Schnellstart (SOAP-Modus): Verschieben Sie Content Services-Inhalte mithilfe der Java-API (nicht mehr unterstützt) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
+## Schnellstart (SOAP-Modus): Verschieben von Content Services-Inhalten mit der Java-API (nicht mehr unterstützt) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
 
-Im folgenden Java-Codebeispiel wird eine PDF-Datei mit dem Namen *MortgageForm.pdf* von /Company Home/Test Directory in /Company Home verschoben. Der Identifizierungswert des verschobenen Inhalts wird in die Konsole geschrieben.
+Im folgenden Java-Codebeispiel wird eine PDF-Datei mit dem Namen *MortgageForm.pdf* von /Company Home/Test Directory zu /company Home. Der Identifizierungswert des verschobenen Inhalts wird in die Konsole geschrieben.
 
 ```java
  /*
@@ -573,7 +573,7 @@ Im folgenden Java-Codebeispiel wird eine PDF-Datei mit dem Namen *MortgageForm.p
  
 ```
 
-## Schnellstart (SOAP-Modus): Content Services-Inhalte mit der Java-API auflisten (veraltet) {#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated}
+## Schnellstart (SOAP-Modus): Content Services-Inhalte mit der Java-API auflisten (nicht mehr unterstützt) {#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated}
 
 Im folgenden Java-Codebeispiel werden Inhalte aufgelistet, die sich unter /Company Home befinden. Jeder Knotentyp und jeder Knotenname werden angezeigt.
 
@@ -686,7 +686,7 @@ Im folgenden Java-Codebeispiel werden Inhalte aufgelistet, die sich unter /Compa
  
 ```
 
-## Schnellstart (SOAP-Modus): Durchsuchen Sie Content Services-Inhalte mithilfe der Java-API (nicht mehr unterstützt) {#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated}
+## Schnellstart (SOAP-Modus): Durchsuchen von Content Services-Inhalten mit der Java-API (nicht mehr unterstützt) {#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated}
 
 Der folgende Java-Code sucht /Company Home nach einem Dokument, das den Text MortgageForm enthält. Die Unterordner werden ebenfalls durchsucht.
 
@@ -796,9 +796,9 @@ Der folgende Java-Code sucht /Company Home nach einem Dokument, das den Text Mor
  
 ```
 
-## Schnellstart (SOAP-Modus): Festlegen von Berechtigungen für Content Services mithilfe der Java-API (veraltet) {#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated}
+## Schnellstart (SOAP-Modus): Festlegen von Berechtigungen für Content Services mithilfe der Java-API (nicht mehr unterstützt) {#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated}
 
-Im folgenden Java-Codebeispiel wird eine Berechtigung für einen Benutzer mit dem Namen tony blue festgelegt. Die angegebene Domäne ist die Standarddomäne. Die Berechtigung Consumer ist angegeben und der Knoten ist `/Company Home/Test Directory`.
+Im folgenden Java-Codebeispiel wird eine Berechtigung für einen Benutzer mit dem Namen tony blue festgelegt. Die angegebene Domäne ist die Standarddomäne. Die Berechtigung &quot;Consumer&quot;wird angegeben und der Knoten lautet `/Company Home/Test Directory`.
 
 ```java
  /*
@@ -906,9 +906,9 @@ Im folgenden Java-Codebeispiel wird eine Berechtigung für einen Benutzer mit de
  
 ```
 
-## Schnellstart (SOAP-Modus): Erstellen von Verknüpfungen mit der Java-API (veraltet) {#quick-start-soap-mode-creating-associations-using-the-java-api-deprecated}
+## Schnellstart (SOAP-Modus): Erstellen von Verknüpfungen mit der Java-API (nicht mehr unterstützt) {#quick-start-soap-mode-creating-associations-using-the-java-api-deprecated}
 
-Der folgende Java-Code erstellt eine Verknüpfung einer XML-Datendatei und eines PDF-Formulars. Dieser Zuordnungstyp heißt LinkedBy. Auf das PDF-Dokument muss der Seitenverweis angewendet werden können.
+Der folgende Java-Code erstellt eine Verknüpfung einer XML-Datendatei und eines PDF-Formulars. Dieser Verknüpfungstyp trägt den Namen LinkedBy. Auf das PDF-Dokument muss der Seitenverweis angewendet werden können.
 
 ```java
  /*
