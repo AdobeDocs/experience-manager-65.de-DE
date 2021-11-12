@@ -10,9 +10,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: bbced918e67c64c0bf2f5a3de8cbcb9063fff669
+source-git-commit: 1985058faa2a85a4544b35f2a6925670207df9e1
 workflow-type: tm+mt
-source-wordcount: '2200'
+source-wordcount: '2216'
 ht-degree: 38%
 
 ---
@@ -46,6 +46,9 @@ Siehe auch [Testen des sicheren Testdienstes](/help/assets/dm-publish-settings.m
    * [Photoshop](#photoshop-tab) tab
    * [PDF](#pdf-tab) tab
    * [Illustrator](#illustrator-tab) tab
+
+   ![Dynamic Media-Seite &quot;Allgemeine Einstellungen&quot;](/help/assets/assets-dm/dm-general-settings.png)
+   *Seite &quot;Allgemeine Dynamic Media-Einstellungen&quot;mit der **[!UICONTROL Bildbearbeitung]**ausgewählt ist.*<br><br>
 
 1. Wenn Sie fertig sind, wählen Sie rechts oben auf der Seite die Option **[!UICONTROL Speichern]**.
 

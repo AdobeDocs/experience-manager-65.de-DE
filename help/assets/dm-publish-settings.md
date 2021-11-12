@@ -10,9 +10,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: e3067a17153864babaf0243c4c3f6cf9cd8d30bc
+source-git-commit: 1985058faa2a85a4544b35f2a6925670207df9e1
 workflow-type: tm+mt
-source-wordcount: '3098'
+source-wordcount: '3114'
 ht-degree: 5%
 
 ---
@@ -27,7 +27,6 @@ ht-degree: 5%
 >* Sie führen Dynamic Media im Scene7-Modus aus.
 >* Sie haben eine *vorhandene* **[!UICONTROL Dynamic Media-Konfiguration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5 oder in Experience Manager as a Cloud Service.
 >* Sie sind ein Experience Manager-Systemadministrator mit Administratorrechten.
-
 
 
 Die Einstellungen der Dynamic Media-Veröffentlichungseinstellungen legen fest, wie Assets standardmäßig von Adobe Dynamic Media-Servern an Websites oder Anwendungen bereitgestellt werden. Wenn keine Einstellung festgelegt ist, stellt der Adobe Dynamic Media-Server ein Asset gemäß einer Standardeinstellung auf der Seite &quot;Veröffentlichungseinstellungen&quot;bereit. Beispielsweise liefert eine Anfrage zum Bereitstellen eines Bildes, das kein Auflösungsattribut enthält, ein Bild mit der Einstellung &quot;Standardobjektauflösung&quot;auf der Image-Server-Seite.
@@ -50,6 +49,9 @@ Administratoren können die Standardeinstellungen auf den Seiten Image-Server, I
    * [Anforderungsattribute](#request-attributes-tab) tab
    * [Allgemeine Attribute für Miniaturansichten](#common-thumbnail-attributes-tab) tab
    * [Farbverwaltungsattribute](#color-management-attributes-tab) tab
+
+   ![Dynamic Media-Veröffentlichungseinstellungen](/help/assets/assets-dm/dm-publish-setup.png)
+   *Dynamic Media-Veröffentlichungseinstellungen mit der **[!UICONTROL Anforderungsattribute]**ausgewählt ist.*<br><br>
 
 1. Wenn Sie fertig sind, wählen Sie rechts oben auf der Seite die Option **[!UICONTROL Speichern]**.
 
