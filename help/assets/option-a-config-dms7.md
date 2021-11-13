@@ -12,10 +12,10 @@ hide: true
 hidefromtoc: true
 feature: Configuration,Scene7 Mode
 exl-id: null
-source-git-commit: bfa41deb156ffd0adb8138c11548912bc954f084
+source-git-commit: b6000516b88342d6abf8072623cfece43e2ba19d
 workflow-type: tm+mt
-source-wordcount: '11558'
-ht-degree: 33%
+source-wordcount: '11571'
+ht-degree: 32%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 33%
 
 >[!NOTE]
 >
->OPTION A - DIE BEIDEN NEUEN THEMEN, DIE ICH GESCHRIEBEN HABE, WERDEN GELÖSCHT. BUT BEFORE DELETING THE TOPICS, ALL THEIR CONTENT WAS MOVED INTO THIS TOPIC, INTO THE RESPECTIVE AREAS WHERE I ALREADY TALK ABOUT GENERAL SETTINGS AND PUBLISH SETUP.
+>OPTION A - DIE BEIDEN NEUEN THEMEN, DIE ICH GESCHRIEBEN HABE, WERDEN GELÖSCHT. ABER VOR DEM LÖSCHEN DER THEMEN WURDE DER GESAMTE INHALT IN DIESES THEMA IN DIE JEWEILIGEN BEREICHE VERSCHOBEN, IN DENEN ICH BEREITS ÜBER ALLGEMEINE EINSTELLUNGEN UND DIE VERÖFFENTLICHUNGSEINRICHTUNG SPRICHTE.
 
 Wenn Sie Adobe Experience Manager für verschiedene Umgebungen wie Entwicklung, Staging und Produktion verwenden, konfigurieren Sie Dynamic Media-Cloud Services für jede dieser Umgebungen.
 
@@ -170,11 +170,11 @@ Wenn Sie Ihre Konfiguration weiter anpassen möchten, können Sie optional eine 
 Wenn Sie die Konfiguration weiter anpassen und Dynamic Media – Scene7-Modus einrichten oder die Leistung optimieren möchten, können Sie eine oder mehrere der folgenden *optionalen* Aufgaben durchführen:
 
 * [(Optional) Konfigurieren Sie den Dynamic Media-Scene7-Modus für das Hochladen von Assets mit mehr als 2 GB](#optional-config-dms7-assets-larger-than-2gb)
-
-* [(Optional) Einrichtung und Konfiguration der Einstellungen von Dynamic Media – Scene7-Modus](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
-
+* [(Optional) Konfigurieren der Veröffentlichungseinstellungen für Dynamic Media](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
+   * [(Optional) Testen Sie Assets, bevor Sie sie veröffentlichen](#test-assets-before-making-public)
+* [(Optional) Konfigurieren der allgemeinen Dynamic Media-Einstellungen](#configuring-application-general-settings)
+* [(Optional) Zusätzliche Konfigurationsaufgaben](#additional-configuration-tasks)
 * [(Optional) Steigern Sie die Leistung des Modus Dynamic Media - Scene7 .](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
-
 * [(Optional) Filtern von Assets für die Replikation](#optional-filtering-assets-for-replication)
 
 ### (Optional) Konfigurieren Sie den Dynamic Media-Scene7-Modus für das Hochladen von Assets mit mehr als 2 GB {#optional-config-dms7-assets-larger-than-2gb}
@@ -250,7 +250,7 @@ Sie können einen Wert von bis zu 15 GB (`2013265920` Byte). In diesem Fall werd
 
 1. Im **[!UICONTROL Adobe Granite Workflow External Process Job Handler]** im Dialogfeld **[!UICONTROL Max. Timeout]** -Feld, setzen Sie den Wert auf `18000` Minuten (fünf Stunden). Der Standardwert ist 10800 Minuten (drei Stunden).
 
-   ![Max timeout value](/help/assets/assets-dm/uploadassets15gb_d.png)
+   ![Max. Zeitüberschreitungswert](/help/assets/assets-dm/uploadassets15gb_d.png)
 
 1. Wählen Sie in der rechten unteren Ecke des Dialogfelds die Option **[!UICONTROL Speichern]**.
 
@@ -328,10 +328,10 @@ Diese Einstellungen beziehen sich auf das standardmäßige Erscheinungsbild von 
 | Einstellung | Beschreibung |
 | --- | --- |
 | **[!UICONTROL Maximale Größe des Antwortbildes]** | Erforderlich.<br>Gibt die maximale Breite und Höhe des Antwortbilds an, das an den Client zurückgegeben wird. Der Server gibt einen Fehler zurück, wenn eine Anfrage ein Antwortbild verursacht, dessen Breite, Höhe oder beides größer als diese Einstellung ist.<br>Siehe auch [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html) im Dynamic Media Viewer-Referenzhandbuch. |
-| **[!UICONTROL Verschleierungsmodus für Anfragen]** | Aktivieren Sie diese Option, wenn die base64-Kodierung auf gültige Anforderungen angewendet werden soll.<br>See also [RequestObfuscation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestobfuscation.html) parameter in the Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Verschleierungsmodus für Anfragen]** | Aktivieren Sie diese Option, wenn die base64-Kodierung auf gültige Anforderungen angewendet werden soll.<br>Siehe auch [RequestObfuscation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestobfuscation.html) im Dynamic Media Viewer-Referenzhandbuch. |
 | **[!UICONTROL Verschlüsselungsmodus für Anfragen]** | Aktivieren Sie diese Option, wenn in Anfragen eine einfache Hash-Sperre enthalten sein soll.<br>Siehe auch [RequestLock](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestlock.html) im Dynamic Media Viewer-Referenzhandbuch. |
 | **[!UICONTROL Standardattribute für Anfragen]** |  |
-| **[!UICONTROL Standarderweiterung für Bilddatei]** | Erforderlich.<br>Default data file extension that is appended to the catalog Path and MaskPath field values if the path does not include a file suffix.<br>See also [DefaultExt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultext.html) parameter in the Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Standarderweiterung für Bilddatei]** | Erforderlich.<br>Standardmäßige Datendateierweiterung, die an die Feldwerte &quot;Katalogpfad&quot;und &quot;MaskPath&quot;angehängt wird, wenn der Pfad kein Dateisuffix enthält.<br>Siehe auch [DefaultExt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultext.html) im Dynamic Media Viewer-Referenzhandbuch. |
 | **[!UICONTROL Name der Standardschriftart]** | Gibt an, welche Schrift verwendet wird, wenn von einer Texteditoranforderung keine Schrift bereitgestellt wird. Falls angegeben, muss es sich um einen gültigen Schriftnamenwert in der Schriftartzuordnung dieses Bildkatalogs oder in der Schriftzuordnung des Standardkatalogs handeln.<br>Siehe auch [DefaultFont](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultfont.html) im Dynamic Media Viewer-Referenzhandbuch. |
 | **[!UICONTROL Standardbild]** | Legt fest, welches Standardbild angezeigt werden soll, wenn ein angefordertes Bild nicht gefunden werden kann.<br>Siehe auch [DefaultImage](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-defaultimage.html) im Dynamic Media Viewer-Referenzhandbuch. |
 | **[!UICONTROL Standardbildmodus]** | Wenn das Regler-Feld aktiviert ist (Regler rechts), wird die **[!UICONTROL Standardbild]** ersetzt jede fehlende Ebene im Quellbild durch das Standardbild und gibt den Verbund wie gewohnt zurück. Wenn das Regler-Feld deaktiviert ist (Regler links), ersetzt das Standardbild das gesamte Composite-Bild, selbst wenn das fehlende Bild nur eine von mehreren Ebenen ist.<br>Siehe auch [DefaultImageMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultimagemode.html) im Dynamic Media Viewer-Referenzhandbuch. |
@@ -595,7 +595,7 @@ Wenn Sie PostScript (EPS)-Bilddateien hochladen, können Sie diese auf verschied
 | **[!UICONTROL Verarbeitung]** | Wählen Sie Rastern, um Vektorgrafiken in der Datei in das Bitmap-Format zu konvertieren. |
 | **[!UICONTROL Transparenten Hintergrund in gerenderten Bildern beibehalten]** | Behält die Hintergrundtransparenz der Datei bei. |
 | **[!UICONTROL Auflösung (Pixel/Zoll)]** | Zur Einstellung der Auflösung. Mit dieser Einstellung wird bestimmt, wie viele Pixel pro Zoll in der Datei angezeigt werden. |
-| **[!UICONTROL Farbraum]** | ・ **[!UICONTROL Automatisch erkennen]** - Behält den Farbraum der Datei bei.<br>• **[!UICONTROL Force as RGB]** - Converts to the RGB color space.<br>・ **[!UICONTROL Immer CMYK]** - Konvertiert in den CMYK-Farbraum.<br>・ **[!UICONTROL Immer Graustufen]** - Konvertiert in den Graustufen-Farbraum. |
+| **[!UICONTROL Farbraum]** | ・ **[!UICONTROL Automatisch erkennen]** - Behält den Farbraum der Datei bei.<br>・ **[!UICONTROL Immer RGB]** - Konvertiert in den RGB-Farbraum.<br>・ **[!UICONTROL Immer CMYK]** - Konvertiert in den CMYK-Farbraum.<br>・ **[!UICONTROL Immer Graustufen]** - Konvertiert in den Graustufen-Farbraum. |
 
 ##### Photoshop-Registerkarte {#photoshop-tab}
 
@@ -643,7 +643,7 @@ Beim Hochladen von Illustrator-Bilddateien (AI) können Sie diese auf verschiede
 >[!NOTE]
 Standardmäßig zeigt das System 15 Ausgabedarstellungen an, wenn Sie **[!UICONTROL Ausgabedarstellungen]** auswählen, und 15 Viewer-Voreinstellungen, wenn Sie in der Detailansicht des Assets **[!UICONTROL Viewer]** auswählen. Sie können diese Grenze erhöhen. Siehe [Erhöhung der Anzahl angezeigter Bildvorgaben](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) oder [Erhöhen Sie die Anzahl der angezeigten Viewer-Vorgaben.](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
-### (Optional) Zusätzliche Konfigurationsaufgaben
+### (Optional) Zusätzliche Konfigurationsaufgaben {#additional-configuration-tasks}
 
 Zu den optionalen Einrichtungs- und Konfigurationsaufgaben gehören die folgenden:
 
@@ -652,11 +652,11 @@ Zu den optionalen Einrichtungs- und Konfigurationsaufgaben gehören die folgende
 * [Erstellen von Stapelsatzvorgaben zum automatischen Erzeugen von Bild- und Rotationssets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) **RICK: HALTEN SIE?**
 
 * **[!UICONTROL Kompatibilitätsattribute]** - **RICK: NOCH BENÖTIGT? WAR IN KLASSISCHER SPRACHE** Diese Einstellung ermöglicht die Behandlung von Anfangs- und Endabsätzen in Textebenen wie in Version 3.6 aus Gründen der Abwärtskompatibilität.
-* **[!UICONTROL Lokalisierungsunterstützung]** - **RICK: NOCH BENÖTIGT? WAS IN CLASSIC** These settings let you manage multiple locale attributes. Außerdem kann damit eine Zeichenfolge der Gebietsschemakarte angegeben werden, damit Sie festlegen können, welche Sprachen für die verschiedenen QuickInfos in Viewern unterstützt werden sollen. Weitere Informationen zur Einrichtung der **[Lokalisierungsunterstützung]** finden Sie unter [Überlegungen beim Einrichten der Lokalisierung von Assets](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html?lang=de#considerations-when-setting-up-localization-of-assets).
+* **[!UICONTROL Lokalisierungsunterstützung]** - **RICK: NOCH BENÖTIGT? WAR IN KLASSISCHER SPRACHE** Mit diesen Einstellungen können Sie mehrere Gebietsschemaattribute verwalten. Außerdem kann damit eine Zeichenfolge der Gebietsschemakarte angegeben werden, damit Sie festlegen können, welche Sprachen für die verschiedenen QuickInfos in Viewern unterstützt werden sollen. Weitere Informationen zur Einrichtung der **[Lokalisierungsunterstützung]** finden Sie unter [Überlegungen beim Einrichten der Lokalisierung von Assets](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html?lang=de#considerations-when-setting-up-localization-of-assets).
 
 #### Bearbeiten von MIME-Typen für unterstützte Formate {#editing-mime-types-for-supported-formats}
 
-**RICK: KEEP AS IS??**
+**RICK: HALTEN SIE SO, WIE ES IST?**
 
 Sie können festlegen, welche Asset-Typen von Dynamic Media verarbeitet werden, und erweiterte Asset-Verarbeitungsparameter anpassen. Beispielsweise können Sie Asset-Verarbeitungsparameter für folgende Aktionen festlegen:
 
@@ -688,7 +688,7 @@ Informationen hierzu finden Sie unter [Hochladen von Assets](/help/assets/manage
    * Wiederholen Sie die Schritte 3–4, um weitere MIME-Typen zu bearbeiten.
    * Wählen Sie in der Menüleiste der Seite „CRXDE Lite“ die Option **[!UICONTROL Alle speichern]** aus.
 
-1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to Experience Manager.
+1. Wählen Sie in der linken oberen Ecke der Seite die Option **[!UICONTROL CRXDE Lite]** , um zum Experience Manager zurückzukehren.
 
 #### Hinzufügen von MIME-Typen für nicht unterstützte Formate {#adding-mime-types-for-unsupported-formats}
 
@@ -737,7 +737,7 @@ Sie können in Experience Manager Assets benutzerdefinierte MIME-Typen für nich
 
    ![crxdelite_cqdoc-14627](assets/crxdelite_cqdoc-14627.png)
 
-1. With the mime type `image_vnd.dwg` still selected, from the **[!UICONTROL Properties]** tab, in the **[!UICONTROL enabled]** row, under the **[!UICONTROL Value]** column header, double-tap the value to open the **[!UICONTROL Value]** drop-down list.
+1. Mit dem MIME-Typ `image_vnd.dwg` weiterhin ausgewählt ist, aus dem **[!UICONTROL Eigenschaften]** im **[!UICONTROL enabled]** Zeile, unter der **[!UICONTROL Wert]** Spaltenüberschrift, doppeltippen Sie auf den Wert, um die **[!UICONTROL Wert]** Dropdown-Liste.
 1. Geben Sie `false` in das Feld ein (oder wählen Sie **[!UICONTROL false]** aus der Dropdown-Liste).
 
    ![2019-08-02_16-60-30](assets/2019-08-02_16-60-30.png)
@@ -750,7 +750,7 @@ Sie können in Experience Manager Assets benutzerdefinierte MIME-Typen für nich
 
 Verwenden Sie Stapelsatzvorgaben, um die Erstellung von Bildsätzen oder Rotationssets während des Hochladens von Assets in Dynamic Media zu automatisieren.
 
-First, define the naming convention for how assets are grouped in a set. Then create a batch set preset that is a uniquely named, self-contained set of instructions. Es muss definiert werden, wie der Satz mit Bildern erstellt wird, die den definierten Benennungskonventionen im Vorgabenrezept entsprechen.
+Definieren Sie zunächst die Benennungskonvention für die Gruppierung von Assets in einem Satz. Erstellen Sie dann eine Stapelsatzvorgabe, die einen eindeutig benannten, in sich geschlossenen Satz von Anweisungen darstellt. Es muss definiert werden, wie der Satz mit Bildern erstellt wird, die den definierten Benennungskonventionen im Vorgabenrezept entsprechen.
 
 Wenn Sie Dateien hochladen, erstellt Dynamic Media automatisch einen Satz mit allen Dateien, die den definierten Benennungsregeln in den aktiven Vorgaben entsprechen.
 
@@ -760,7 +760,7 @@ Erstellen Sie eine Standardbenennungskonvention zur Verwendung in einem beliebig
 
 Die Einrichtung einer Standardbenennungskonvention ist zwar nicht erforderlich, um die Funktionen von Stapelsatzvorgaben zu verwenden, es empfiehlt sich jedoch, die Standardbenennungskonvention zu verwenden. Damit können Sie so viele Elemente Ihrer Benennungsregel definieren, die in einem Satz gruppiert werden sollen, sodass Sie die Erstellung von Stapelsätzen optimieren können.
 
-Alternativ können Sie **[!UICONTROL Code anzeigen]** ohne verfügbare Formularfelder. In this view, you create your naming convention definitions entirely using regular expressions.
+Alternativ können Sie **[!UICONTROL Code anzeigen]** ohne verfügbare Formularfelder. In dieser Ansicht erstellen Sie Ihre Definitionen von Benennungskonventionen vollständig mit regulären Ausdrücken.
 
 Zwei Elemente sind zur Definition verfügbar: Übereinstimmung und Basisname. Mit diesen Feldern können Sie alle Elemente einer Benennungskonvention definieren und den Teil der Konvention identifizieren, der zum Benennen des Satzes verwendet wird, der diese Elemente enthält. Die individuelle Namenskonvention eines Unternehmens verwendet oft eine oder mehrere Definitionszeilen für jedes dieser Elemente. Sie können für Ihre eindeutige Definition so viele Zeilen wie erforderlich verwenden und sie zu eindeutigen Elementen gruppieren, beispielsweise Elementen für Hauptbild, Farbe, alternative Ansicht und Muster.
 
@@ -795,13 +795,13 @@ Zwei Elemente sind zur Definition verfügbar: Übereinstimmung und Basisname. Mi
 
 Dynamic Media verwendet Stapelsatzvorgaben, um Assets für die Anzeige in Viewern in Bildsätzen (alternative Bilder, Farboptionen, 360°-Drehung) zu organisieren. Die Stapelsatzvorgaben werden automatisch parallel zu den Asset-Uploadprozessen in Dynamic Media ausgeführt.
 
-Sie können Ihre Stapelsatzvorgaben erstellen, bearbeiten und verwalten. There are two forms of batch set preset definitions: one for a default naming convention that you can set up, and one for custom naming conventions that you create on the fly.
+Sie können Ihre Stapelsatzvorgaben erstellen, bearbeiten und verwalten. Es gibt zwei Formen von Definitionen für Stapelsatzvorgaben: eine für eine standardmäßige Namenskonvention, die Sie einrichten können, und eine für benutzerdefinierte Namenskonventionen, die Sie spontan erstellen.
 
 Sie können zum Definieren einer Stapelsatzvorgabe entweder die Formularfeldmethode oder die Codemethode verwenden, die Ihnen die Verwendung regelmäßiger Ausdrücke ermöglicht. Ebenso wie bei der Standardbenennung können Sie gleichzeitig „Code anzeigen“ wählen und Definitionen in der Formularansicht vornehmen und mithilfe von regelmäßigen Ausdrücken Ihre Definitionen erstellen Als Alternative können Sie eine der Ansichten deaktivieren, um die andere ausschließlich zu verwenden.
 
 **So erstellen Sie eine Stapelsatzvorgabe:**
 
-**RICK: KEEP AS IS??**
+**RICK: HALTEN SIE SO, WIE ES IST?**
 
 1. Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) und melden Sie sich bei Ihrem Konto an.
 
@@ -828,7 +828,7 @@ Sie können zum Definieren einer Stapelsatzvorgabe entweder die Formularfeldmeth
 
    Wenn Sie eine große Anzahl von Sets definieren, trennen Sie die Sets von den Ordnern, die die Assets selbst enthalten. Erstellen Sie beispielsweise einen Ordner &quot;Bildsets&quot;und legen Sie hier die generierten Sets ab.
 
-1. In the Details panel, select **[!UICONTROL Save]**.
+1. Wählen Sie im Bereich &quot;Details&quot;die Option **[!UICONTROL Speichern]**.
 1. Auswählen **[!UICONTROL Aktiv]** neben dem neuen Vorgabenamen.
 
    Durch das Aktivieren dieser Vorgabe wird sichergestellt, dass beim Hochladen von Assets in Dynamic Media die Stapelsatzvorgabe zur Erstellung des Satzes angewendet wird.
@@ -903,7 +903,7 @@ Wenn das Rotationsset hochgeladen und veröffentlicht wird, aktivieren Sie den N
    Die oben genannten Beispiele dienen nur zu Demonstrationszwecken. Sie können reguläre Ausdrücke Ihren Bedürfnissen entsprechend erstellen.
 
    >[!NOTE]
-   If the combination of row and column regular expressions is unable to determine the position of the asset within the multi-dimensional spin set array, the asset is not added to the set. Außerdem wird ein Fehler protokolliert.
+   Wenn die Kombination aus regulären Ausdrücken für Zeile und Spalte die Position des Assets im multidimensionalen Rotationsset-Array nicht ermitteln kann, wird das Asset nicht zum Satz hinzugefügt. Außerdem wird ein Fehler protokolliert.
 
 1. Geben Sie für „Satzbenennungs- und -erstellungsregel“ das Suffix bzw. Präfix für den Basisnamen an, den Sie in der Asset-Benennungsregel definiert haben.
 
@@ -912,7 +912,7 @@ Wenn das Rotationsset hochgeladen und veröffentlicht wird, aktivieren Sie den N
    Wenn Sie eine große Anzahl von Sets definieren, trennen Sie die Sets von den Ordnern, die die Assets selbst enthalten. Erstellen Sie beispielsweise einen Ordner mit Rotationssets , um die generierten Sets hier abzulegen.
 
 1. Wählen Sie im Bereich &quot;Details&quot;die Option **[!UICONTROL Speichern]**.
-1. Select **[!UICONTROL Active]** next to the new preset name.
+1. Auswählen **[!UICONTROL Aktiv]** neben dem neuen Vorgabenamen.
 
    Durch das Aktivieren dieser Vorgabe wird sichergestellt, dass beim Hochladen von Assets in Dynamic Media die Stapelsatzvorgabe zur Erstellung des Satzes angewendet wird.
 
@@ -1024,15 +1024,15 @@ Die Einstellung der Upload-Verbindung (Scene7) synchronisiert Experience Manager
 
 **RICK: BEHALTEN WIE IST**
 
-In Nicht-Dynamic Media-Implementierungen replizieren Sie *all* Assets (sowohl Bilder als auch Videos) aus Ihrer Experience Manager-Autorenumgebung in den Experience Manager-Veröffentlichungsknoten. This workflow is necessary because the Experience Manager Publish servers also deliver the assets.
+In Nicht-Dynamic Media-Implementierungen replizieren Sie *all* Assets (sowohl Bilder als auch Videos) aus Ihrer Experience Manager-Autorenumgebung in den Experience Manager-Veröffentlichungsknoten. Dieser Workflow ist erforderlich, da die Experience Manager-Veröffentlichungsserver auch die Assets bereitstellen.
 
-However, in Dynamic Media deployments, because assets are delivered by way of the Cloud Service, there is no need to replicate those same assets to Experience Manager publish nodes. Ein solcher &quot;hybrider Publishing&quot;-Workflow vermeidet zusätzliche Speicherkosten und längere Verarbeitungszeiten für die Replikation von Assets. Other content, such as Site pages, continue to be served from the Experience Manager publish nodes.
+Da Assets jedoch in Dynamic Media-Bereitstellungen über den Cloud Service bereitgestellt werden, müssen diese Assets nicht auf Experience Manager-Veröffentlichungsknoten repliziert werden. Ein solcher &quot;hybrider Publishing&quot;-Workflow vermeidet zusätzliche Speicherkosten und längere Verarbeitungszeiten für die Replikation von Assets. Andere Inhalte, wie z. B. Seiten der Site, werden weiterhin von den Veröffentlichungsknoten des Experience Managers bereitgestellt.
 
 Die Filter bieten Ihnen die Möglichkeit, *exclude* Assets nicht auf den Veröffentlichungsknoten des Experience Managers repliziert werden.
 
 #### Verwenden Sie Asset-Standardfilter für die Replikation {#using-default-asset-filters-for-replication}
 
-**RICK: KEEP AS IS**
+**RICK: BEHALTEN WIE IST**
 
 Wenn Sie Dynamic Media für Bildbearbeitung, Videos oder beides verwenden, können Sie die von Adobe bereitgestellten Standardfilter unverändert verwenden. Folgende Filter sind standardmäßig aktiviert:
 
