@@ -4,10 +4,10 @@ description: Spezifische Versionshinweise für [!DNL Adobe Experience Manager] 6
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 14339f6a34952c00351c6dee8537b5df6f6fbcd3
+source-git-commit: 0a35b26c5f790d67db55421b8f3e98e5ddb30528
 workflow-type: tm+mt
-source-wordcount: '4436'
-ht-degree: 5%
+source-wordcount: '4430'
+ht-degree: 6%
 
 ---
 
@@ -92,7 +92,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in [!DNL Experience Manag
 * Beim Bewerben eines Launches werden die Änderungen im beworbenen Launch für die anderen Launches doppelt bereitgestellt. Wenn ein Benutzer den doppelten Rollout-Launch fördert, wird der doppelte Inhalt auf der Quellseite angezeigt (NPR-36893).
 * [!DNL Experience Manager] fügt einigen PNG-Bildern einen grauen Rahmen mit Transparenz hinzu, wenn Sie die Bilder mithilfe der Bild-Kernkomponente zu einer Seite hinzufügen oder wenn Sie die Größe mithilfe der Foundation-Bildkomponente ändern (NPR-36879).
 * [!DNL Experience Manager Sites] Die Administrator-Benutzeroberfläche mit einer hohen Anzahl von Vorlagen führt zu langsamer Navigation (NPR-36870).
-* Ein Upgrade auf Service Pack 9 verhindert das Authoring einiger Komponenten. Dieses Problem lässt [!DNL Sites] Benutzer , um neue Seiten zu erstellen (NPR-36857).
+* Webseiten werden nicht gerendert, wenn ihre Links von benutzerdefinierten Servlet-Filterbundles geändert werden (NPR-36857).
 * Die `ContextHubImpl` -Methode erstellt eine `ResourceResolver` nicht geschlossen ist. Dies führt zu Warnmeldungen über langwierige Vorgänge `ResourceResolver` und der Dienst gibt manchmal unerwartete Ergebnisse zurück (NPR-36853).
 * Beim Synchronisieren einer einzelnen Live Copy aus den Eigenschaften der Blueprint-Seite werden auch alle anderen Live Copies synchronisiert (NPR-36829, NPR-36522).
 * Wenn nur der XLS-MIME-Typ verwendet wird, funktioniert die Datei-Upload-Funktion nicht wie erwartet (NPR-36785).
@@ -163,7 +163,7 @@ Die folgenden Verbesserungen der Barrierefreiheit sind verfügbar in [!DNL Dynam
 
 * Der Tastaturfokus wechselt nun entsprechend zur Suchregisterkarte von [!UICONTROL Viewer-Vorgaben] Dialogfeld aus der Asset-Auswahl von [!UICONTROL Rich-Media-Typ] (CQ-4324736).
 
-* Beim Navigieren im Formularmodus mithilfe der Tastaturbefehle kommentieren die Bildschirmlesehilfen die Beschriftungen, die den Inkrement- und Deklarierungsoptionen unter [!UICONTROL Erstellen] Tab von [!UICONTROL Bildvorgaben] (CQ-4323900).
+* Beim Navigieren im Formularmodus mithilfe der Tastaturbefehle kommentieren die Bildschirmlesehilfen die Beschriftungen, die den Optionen zum Erhöhen und Verringern unter [!UICONTROL Erstellen] Tab von [!UICONTROL Bildvorgaben] (CQ-4323900).
 
 * Sprachausgaben kündigen jetzt die [!UICONTROL E-Mail-Adresse suchen und hinzufügen] Option zum Freigeben von Assets als Link-Dialogfeld (CQ-4323352).
 
