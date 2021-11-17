@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, verarbeiten und verteilen Sie digitale Assets.
-source-git-commit: 468a8d96153c67232524eea6f180c9ceb364d60a
+source-git-commit: 37d298378b7d33ec7c9803cbf9f4f7eb4d2193f9
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '651'
 ht-degree: 58%
 
 ---
@@ -173,5 +173,5 @@ ht-degree: 58%
    + [Videoausgabeformate](video-renditions.md)
 + Integration mit anderen Lösungen {#integrations}
    + [Integrationen mit [!DNL Adobe Workfront]](workfront-integrations.md)
-   + [Installieren [!DNL enhanced connector for [!DNL Workfront]]](workfront-connector-install.md)
-   + [Konfigurieren von [!DNL enhanced connector for [!DNL Workfront]]](workfront-connector-configure.md)
+   + [Installieren [!DNL enhanced connector] für [!DNL Workfront]](workfront-connector-install.md)
+   + [Konfigurieren [!DNL enhanced connector] für [!DNL Workfront]](workfront-connector-configure.md)

@@ -3,9 +3,9 @@ title: '[!DNL Experience Manager Assets] integration with [!DNL Adobe Workfront]
 description: Einführung in die Integration zwischen [!DNL Assets] und [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
-source-git-commit: 468a8d96153c67232524eea6f180c9ceb364d60a
+source-git-commit: 8d39e1c86e5185a181400f10b7822a57c9d3aeae
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '873'
 ht-degree: 4%
 
 ---
@@ -15,23 +15,23 @@ ht-degree: 4%
 
 [!DNL Adobe Workfront] ist ein Programm für das Arbeits-Management, mit dem Sie den gesamten Arbeitszyklus an einem Ort verwalten können. Die Integration zwischen [!DNL Workfront] und [!DNL Adobe Experience Manager Assets] ermöglicht es Unternehmen, die Geschwindigkeit von Inhalten und die Time-to-Market zu verbessern, indem sie Arbeit und Digital Asset Management intern miteinander verbinden. Im Rahmen der Verwaltung ihrer Arbeit in Workfront haben Benutzer Zugriff auf die erforderlichen Dokumente und Bilder.
 
-Adobe bietet zwei verschiedene Connectoren zur Integration der beiden Lösungen. Die Connectoren ermöglichen komplexe Automatisierung, Konfiguration und erweiterbare Workflows für Unternehmen zwischen [!DNL Assets] und [!DNL Workfront]. Darüber hinaus [!DNL Assets Essentials] ist als Add-on für diese neue [!DNL Workfront] -Kunden können separat kaufen. Weitere Informationen finden Sie unter [[!DNL Workfront] and [!DNL Assets Essentials] Integration](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/integration.html).
+Die [!DNL Workfront for Experience Manager enhanced connector] ermöglicht erweiterte Geschäftsprozesse mit durchgängigen Workflows und bietet personalisierte End-to-End-Kundenerlebnisse und zentralen Speicher. Weitere Informationen zu den Funktionen der [!DNL enhanced connector], siehe [Neue Funktionen in der [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
 [!DNL Workfront for Experience Manage enhanced connector] ermöglicht Ihrem Unternehmen Folgendes:
 
-* Zusammenarbeit erleichtern. Kreativ-Teams können sich um eine geringere Sache sorgen. Nach Abschluss der Arbeit können sie sie mit einem Klick an AEM Assets senden
-* Assets werden bei jedem Schritt angereichert. Erfassen Sie in jeder Phase des Asset-Lebenszyklus neue Daten. Von der Idee bis zur Bereitstellung kann Ihr Unternehmen Schlüsselmetriken erfassen, um fundiertere Geschäftsentscheidungen zur zukünftigen Asset-Entwicklung zu treffen.
-* Referenzieren vorhandener Assets Einfaches Auffinden und Wiederverwenden vorhandener Assets in der Produktion und Hinzufügen zu neuen Projekten als Referenzelemente.
-* Synchronisieren Sie alle Metadaten. Verbessern Sie Ihre Metadaten, indem Sie das Hinzufügen so einfach wie möglich machen. Mit dem Connector werden Metadaten bidirektional zwischen Workfront und AEM Assets synchronisiert
-* Nutzung [!DNL Experience Manager Assets] digitale Verwaltungsfunktionen. Zugriff auf alle digitalen Assets direkt in Ihrem bevorzugten [!DNL Creative Cloud] Anwendungen. KI-fähiges Smart-Tagging und Zuschneiden, Suchwerkzeuge, dynamische Bereitstellung durch [!DNL Dynamic Media]und vieles mehr.
+* Erstellen Sie automatisch verknüpfte Ordner in Workfront und organisieren Sie die Experience Manager anhand von Workfront-Portfolios, -Programmen und -Projekten.
+* Synchronisieren Sie Workfront-Projektmetadaten mit verknüpften Experience Manager-Ordnern.
+* Experience Manager-Metadaten werden mit neuen Versionen aktualisiert.
+* Legen Sie mithilfe von Experience Manager-Workflows den Workfront-Objektstatus anhand konfigurierbarer Bedingungen fest.
+* Veröffentlichen Sie Assets in der Experience Manager-Veröffentlichungsumgebung oder in Brand Portal.
 
-Siehe Plattformunterstützung und andere [Voraussetzungen für den erweiterten Connector](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
+Siehe Plattformunterstützung und [Voraussetzungen für den erweiterten Connector](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
 >[!IMPORTANT]
 >
 >Adobe erfordert Bereitstellung und Konfiguration der [!DNL Adobe Workfront for Experience Manager enhanced connector] nur über zertifizierte Partner oder [!DNL Adobe Professional Services]. Wird ohne zertifizierten Partner bereitgestellt und konfiguriert oder [!DNL Adobe Professional Services], wird sie von Adobe nicht unterstützt.
 >
->Adobe veröffentlicht möglicherweise Aktualisierungen für [!DNL Adobe Workfront] und [!DNL Adobe Experience Manager] die diesen Connector redundant macht; In diesem Fall kann es erforderlich sein, dass Kunden von der Verwendung dieses Connectors übergehen.
+>Adobe veröffentlicht möglicherweise Aktualisierungen für [!DNL Adobe Workfront] und [!DNL Adobe Experience Manager] die diesen Connector redundant machen; In diesem Fall kann es erforderlich sein, dass Kunden von der Verwendung dieses Connectors übergehen.
 
 ## Vergleichen verschiedener Integrationen zwischen [!DNL Assets] und [!DNL Workfront] {#feature-parity-matrix}
 
