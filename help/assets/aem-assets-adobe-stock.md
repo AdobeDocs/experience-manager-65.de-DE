@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Search, Adobe Stock
 role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
-source-git-commit: 231c153fadceb08b4110ba7a41ef29d1bc9c458f
+source-git-commit: bfc4aa92770b001bdf89d89fa149d8e4ceefa6c2
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 40%
@@ -310,7 +310,7 @@ In der folgenden Tabelle wird erläutert, wie die Benutzerberechtigungen beim Zu
 | admin | Nicht zutreffend | Alle | Nicht zutreffend | Ja | Ja |
 | test-doc1 | DAM-Benutzer | /conf/global/settings/stock/cloud-config | Ja | Ja | Ja |
 | test-doc1 | DAM-Benutzer | /conf/global/settings/stock/cloud-config | Nein | Fehler: Laden der Daten fehlgeschlagen | Nein |
-| test-doc1 | DAM-Benutzer | **allow**: /conf/global/settings/stock     **Ablehnen**: /cloud-config | Lagerkonfiguration ist nicht sichtbar | Ja | Nein |
+| test-doc1 | DAM-Benutzer | **allow**: /conf/global /settings/stock     **Ablehnen**: /cloud-config | Lagerkonfiguration ist nicht sichtbar | Ja | Nein |
 
 
 ## Verwenden und Verwalten von [!DNL Adobe Stock]-Assets in [!DNL Experience Manager] {#usemanage}
