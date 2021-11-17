@@ -3,9 +3,9 @@ title: '[!DNL Experience Manager Assets] integration with [!DNL Adobe Workfront]
 description: Einführung in die Integration zwischen [!DNL Assets] und [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
-source-git-commit: 8d39e1c86e5185a181400f10b7822a57c9d3aeae
+source-git-commit: c742e89a56c383e6dde8a6aee5bc3d124d73343d
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '886'
 ht-degree: 4%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 [!DNL Adobe Workfront] ist ein Programm für das Arbeits-Management, mit dem Sie den gesamten Arbeitszyklus an einem Ort verwalten können. Die Integration zwischen [!DNL Workfront] und [!DNL Adobe Experience Manager Assets] ermöglicht es Unternehmen, die Geschwindigkeit von Inhalten und die Time-to-Market zu verbessern, indem sie Arbeit und Digital Asset Management intern miteinander verbinden. Im Rahmen der Verwaltung ihrer Arbeit in Workfront haben Benutzer Zugriff auf die erforderlichen Dokumente und Bilder.
 
-Die [!DNL Workfront for Experience Manager enhanced connector] ermöglicht erweiterte Geschäftsprozesse mit durchgängigen Workflows und bietet personalisierte End-to-End-Kundenerlebnisse und zentralen Speicher. Weitere Informationen zu den Funktionen der [!DNL enhanced connector], siehe [Neue Funktionen in der [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
+Die [!DNL Workfront for Experience Manager enhanced connector] ermöglicht erweiterte Geschäftsprozesse mit durchgängigen Workflows und bietet personalisierte End-to-End-Kundenerlebnisse und zentralen Speicher. Adobe bietet einen Standard-Connector und einen erweiterten Connector zur Integration der beiden Lösungen. Nachfolgend finden Sie einen Vergleich der unterstützten Funktionen. Weitere Informationen finden Sie unter [Neue Funktionen in der [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
 [!DNL Workfront for Experience Manage enhanced connector] ermöglicht Ihrem Unternehmen Folgendes:
 
