@@ -7,37 +7,43 @@ topic-tags: administering
 content-type: reference
 feature: Image Profiles
 role: User, Admin
+mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: 1985058faa2a85a4544b35f2a6925670207df9e1
+source-git-commit: 26f521868d0b983a05579d0d4c1ef50684b721ee
 workflow-type: tm+mt
-source-wordcount: '2216'
-ht-degree: 38%
+source-wordcount: '2454'
+ht-degree: 34%
 
 ---
 
 
 # Allgemeine Dynamic Media-Einstellungen konfigurieren
 
->[!IMPORTANT]
->
->Dynamic Media-Allgemeine Einstellungen sind nur verfügbar, wenn:
->
->* Sie führen Dynamic Media im Scene7-Modus aus.
->* Sie haben eine *vorhandene* **[!UICONTROL Dynamic Media-Konfiguration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5 oder in Experience Manager as a Cloud Service.
->* Sie sind ein Experience Manager-Systemadministrator mit Administratorrechten.
+Konfiguration **[!UICONTROL Allgemeine Dynamic Media-Einstellungen]** ist nur verfügbar, wenn:
 
+* Sie führen Dynamic Media im Scene7-Modus aus. Siehe [Aktivieren von Dynamic Media im Scene7-Modus](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode)
+* Sie haben eine *vorhandene* **[!UICONTROL Dynamic Media-Konfiguration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5 oder in Experience Manager as a Cloud Service.
+* Sie sind ein Experience Manager-Systemadministrator mit Administratorrechten.
+
+Dynamic Media General Settings ist für erfahrene Website-Entwickler und -Programmierer vorgesehen. Adobe Dynamic Media empfiehlt, dass Benutzer, die diese Veröffentlichungseinstellungen ändern, mit Dynamic Media in Adobe Experience Manager und der grundlegenden Bildverarbeitungstechnologie vertraut sind.
 
 Bei der Kontoerstellung stellt Adobe Dynamic Media automatisch die zugewiesenen Server für Ihr Unternehmen bereit. Diese Server werden verwendet, um URL-Zeichenfolgen für Ihre Website und Programme zu erstellen. Diese URL-Aufrufe gelten spezifisch für Ihr Konto.
 
-Siehe auch [Testen des sicheren Testdienstes](/help/assets/dm-publish-settings.md#test-assets-before-making-public).
+Auf der Seite &quot;Veröffentlichungseinstellungen von Dynamic Media&quot;werden Standardeinstellungen festgelegt, die festlegen, wie Assets von Adobe Dynamic Media-Servern an Websites oder Anwendungen bereitgestellt werden. Wenn keine Einstellung festgelegt ist, stellt der Adobe Dynamic Media-Server ein Asset gemäß einer Standardeinstellung bereit, die auf der Seite &quot;Veröffentlichungseinstellungen&quot;von Dynamic Media konfiguriert wurde.
 
-**So konfigurieren Sie die allgemeine Dynamic Media-Einstellung:**
+Siehe auch [Einrichtung und Konfiguration von Einstellungen für den Modus Dynamic Media - Scene7](/help/assets/option-b-config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings).
+
+>[!NOTE]
+>
+>Upgrade von Dynamic Media Classic auf Dynamic Media auf Adobe Experience Manager? Auf den Seiten &quot;Allgemeine Einstellungen&quot;und &quot;Veröffentlichungseinstellungen&quot;in Dynamic Media werden die Werte aus Ihrem Dynamic Media Classic-Konto vorausgefüllt. Die Ausnahmen sind alle Werte, die unter dem **[!UICONTROL Standardmäßige Upload-Optionen]** auf der Seite &quot;Allgemeine Einstellungen&quot;angezeigt. Diese Werte befinden sich bereits im Experience Manager. Alle Änderungen, die Sie unter **[!UICONTROL Standardmäßige Upload-Optionen]** auf allen fünf Registerkarten über die Experience Manager-Benutzeroberfläche angezeigt werden, nicht in Dynamic Media Classic, sondern in Dynamic Media. Alle anderen Einstellungen und Werte auf der Seite &quot;Allgemeine Einstellungen&quot;und &quot;Veröffentlichungseinstellungen&quot;werden zwischen Dynamic Media Classic und Dynamic Media auf dem Experience Manager beibehalten.
+
+**So konfigurieren Sie die allgemeinen Dynamic Media-Einstellungen:**
 
 1. Wählen Sie im Experience Manager-Autorenmodus das Experience Manager-Logo aus, um auf die globale Navigationskonsole zuzugreifen.
-1. Wählen Sie in der linken Leiste das Symbol Tools und navigieren Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Allgemeine Dynamic Media-Einstellung]**.
-1. Legen Sie auf der Seite Server Ihre **[!UICONTROL Veröffentlichter Servername]** und **[!UICONTROL Name des ursprünglichen Servers]** und dann die fünf Registerkarten verwenden, um die standardmäßigen Veröffentlichungseinstellungen zu konfigurieren.
+1. Wählen Sie in der linken Leiste das Symbol Tools und navigieren Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Allgemeine Dynamic Media-Einstellungen]**.
+1. Legen Sie auf der Seite Server Ihre **[!UICONTROL Veröffentlichter Servername]** und **[!UICONTROL Name des ursprünglichen Servers]** und dann auf den fünf Registerkarten die standardmäßigen Upload-Optionen für die Bildbearbeitung und für PostScript-, Photoshop-, PDF- und Illustrator-Dateien konfigurieren.
 
    * [Server](#server-general-setting)
    * [In Programm hochladen](#upload-to-application)
@@ -58,7 +64,7 @@ Bei der Kontoerstellung stellt Adobe Dynamic Media automatisch die zugewiesenen 
 
 | Option | Beschreibung |
 | --- | --- |
-| **[!UICONTROL Veröffentlichungs-Server-Name]** | Erforderlich.<br>Dieser Server ist der Live-CDN (Content Deliver Network)-Server, der in allen systemgenerierten URL-Aufrufen verwendet wird, die für Ihr Konto spezifisch sind. Ändern Sie diesen Servernamen nur, wenn Sie vom technischen Support von Adobe dazu angewiesen werden. Der Name muss `https://` im Pfad. |
+| **[!UICONTROL Veröffentlichungs-Server-Name]** | Erforderlich.<br>Der Name muss `https://` im Pfad.<br>Dieser Server ist der Live-CDN (Content Deliver Network)-Server, der in allen systemgenerierten URL-Aufrufen verwendet wird, die für Ihr Konto spezifisch sind. Ändern Sie diesen Servernamen nur, wenn Sie vom technischen Support von Adobe dazu angewiesen werden. |
 | **[!UICONTROL Ursprungs-Server-Name]** | Erforderlich.<br>Dieser Server wird nur für Qualitätssicherungstests verwendet. Ändern Sie diesen Servernamen nur, wenn Sie vom technischen Support von Adobe dazu aufgefordert werden. |
 
 ## In Programm hochladen {#upload-to-application}
@@ -69,7 +75,7 @@ Bei der Kontoerstellung stellt Adobe Dynamic Media automatisch die zugewiesenen 
 
    | Option &quot;Bilder überschreiben&quot; | Beschreibung |
    | --- | --- |
-   | **[!UICONTROL Im akt. Ordner Assets mit ident. Namen und ident. Erweiterung überschreiben]** | Standard.<br>Diese Option ist die strengste Ersetzungsregel. Das Ersatzbild muss in den Ordner des Originalbilds hochgeladen werden und dieselbe Dateierweiterung haben wie das Originalbild. Wenn diese Voraussetzungen nicht erfüllt sind, wird ein Duplikat erstellt. |
+   | **[!UICONTROL Im akt. Ordner Assets mit ident. Namen und ident. Erweiterung überschreiben]** | Nur für neue Dynamic Media-Konten Standard.<br>Diese Option ist die strengste Ersetzungsregel. Das Ersatzbild muss in den Ordner des Originalbilds hochgeladen werden und dieselbe Dateierweiterung haben wie das Originalbild. Wenn diese Voraussetzungen nicht erfüllt sind, wird ein Duplikat erstellt. |
    | **[!UICONTROL Im akt. Ordner Assets mit ident. Namen unabh. von Erweiterung überschreiben]** | Erfordert das Hochladen des Ersatzbilds in denselben Ordner wie das Originalbild, die Dateinamenerweiterung kann jedoch vom Original abweichen. Beispielsweise ersetzt &quot;chair.tif&quot;die Datei &quot;chair.jpg&quot;. |
    | **[!UICONTROL In belieb. Ordner Assets mit ident. Namen und ident. Erweit. überschreiben]** | Setzt voraus, dass das Ersatzbild dieselbe Dateierweiterung wie das Originalbild hat (beispielsweise muss chair.jpg die Datei &quot;chair.jpg&quot;ersetzen, nicht jedoch die Datei &quot;chair.tif&quot;). Sie können das Ersatzbild jedoch in einen anderen Ordner hochladen als den, in dem sich das Original befindet. Das hochgeladene Bild bleibt dann im neuen Ordner; die Datei befindet sich also nicht mehr am ursprünglichen Speicherort.. |
    | **[!UICONTROL In belieb. Ordner Assets mit ident. Namen unabh. von Erweit. überschreiben]** | Diese Option ist die am wenigsten einschränkende Ersetzungsregel. Sie können ein Ersatzbild in einen anderen Ordner hochladen als den, in dem sich das Originalbild befindet, und eine Datei mit einer anderen Dateierweiterung verwenden, um die Originaldatei zu ersetzen. Wenn sich die Originaldatei in einem anderen Ordner befindet, bleibt das Ersatzbild in dem neuen Ordner, in den es hochgeladen wurde. |
