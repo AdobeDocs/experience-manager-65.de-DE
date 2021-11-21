@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 feature: Configuration,Scene7 Mode
 exl-id: null
-source-git-commit: b1f2a6b8fecd9ee98f345d1de8c26c6f42a44823
+source-git-commit: 3b5e65efc9aaedbc3385cc348ead80afecae2f06
 workflow-type: tm+mt
-source-wordcount: '6107'
+source-wordcount: '6063'
 ht-degree: 44%
 
 ---
@@ -101,7 +101,7 @@ Siehe [Feature Pack 18912 für Massenmigration von Assets installieren](/help/as
    Wählen Sie **[!UICONTROL Mit Dynamic Media verbinden]** aus.
 
    >[!NOTE]
-   **RICK: HALTEN SIE SO, WIE ES IST?** Nachdem Sie Ihre Bereitstellungs-E-Mail mit Dynamic Media-Anmeldeinformationen erhalten haben, öffnen Sie die [Dynamic Media Classic-Desktop-Applikation](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), dann melden Sie sich bei Ihrem Konto an, um Ihr Kennwort zu ändern. Das Kennwort aus der Bereitstellungs-E-Mail wird systemseitig erstellt und ist nur als temporäres Kennwort vorgesehen. Sie müssen das Kennwort aktualisieren, damit Dynamic Media Cloud Service mit den richtigen Anmeldedaten eingerichtet wird.
+   Nachdem Sie Ihre Bereitstellungs-E-Mail mit Dynamic Media-Anmeldeinformationen erhalten haben, öffnen Sie die [Dynamic Media Classic-Desktop-Applikation](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), dann melden Sie sich bei Ihrem Konto an, um Ihr Kennwort zu ändern. Das Kennwort aus der Bereitstellungs-E-Mail wird systemseitig erstellt und ist nur als temporäres Kennwort vorgesehen. Sie müssen das Kennwort aktualisieren, damit Dynamic Media Cloud Service mit den richtigen Anmeldedaten eingerichtet wird.
 
 1. Nachdem die Verbindung erfolgreich hergestellt wurde, richten Sie Folgendes ein. Überschriften mit einem Sternchen (*) sind erforderlich:
 
@@ -136,14 +136,13 @@ Um einen ausgewählten Ordner für die Synchronisierung mit Dynamic Media zu mar
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 1. Um eine sichere Vorschau von Dynamic Media-Inhalten anzuzeigen, bevor sie veröffentlicht werden, müssen Sie die Experience Manager-Autoreninstanz &quot;neu&quot;installieren, um eine Verbindung mit Dynamic Media herzustellen:
 
-   * **RICK: LINK ZU NEUEM THEMA ZUR VERÖFFENTLICHUNGSEINRICHTUNG** Öffnen Sie die [Dynamic Media Classic-Desktop-Applikation](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), und melden Sie sich dann bei Ihrem Konto an. Ihre Benutzer- und Anmeldedaten haben Sie zum Zeitpunkt der Bereitstellung von Adobe erhalten. Wenn Sie diese Informationen nicht haben, wenden Sie sich an den Kundensupport von Adobe.
-
-   * Navigieren Sie in der Navigationsleiste oben rechts auf der Seite zu **[!UICONTROL Einrichtung]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Veröffentlichungseinstellungen]** > **[!UICONTROL Image-Server]**.
-
-   * Wählen Sie auf der Seite „Veröffentlichung zum Image-Server“ in der Dropdown-Liste „Veröffentlichungskontext“ die Option **[!UICONTROL Image-Serving testen]**.
-   * Wählen Sie für den Client-Adressfilter die Option **[!UICONTROL Hinzufügen]** aus.
-   * Aktivieren Sie das Kontrollkästchen, um die Adresse zu aktivieren. Geben Sie die IP-Adresse der Experience Manager-Autoreninstanz (nicht die Dispatcher-IP) ein.
-   * Klicken Sie auf **[!UICONTROL Speichern]**.
+   * Wählen Sie im Experience Manager-Autorenmodus das Experience Manager-Logo aus, um auf die globale Navigationskonsole zuzugreifen.
+   * Wählen Sie in der linken Leiste die **[!UICONTROL Instrumente]** Symbol und navigieren Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Veröffentlichungseinstellungen für Dynamic Media]**.
+   * Auf der Dynamic Media Image Server-Seite finden Sie im **[!UICONTROL Veröffentlichungskontext]** Dropdown-Liste auswählen **[!UICONTROL Image-Serving testen]**.
+   * Wählen Sie die **[!UICONTROL Sicherheit]** Registerkarte.
+   * Für **[!UICONTROL Kundenadresse]** auswählen **[!UICONTROL Hinzufügen]**.
+   * Geben Sie die IP-Adresse der Experience Manager-Autoreninstanz (nicht die Dispatcher-IP) ein.
+   * Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Speichern]**.
 
 Sie haben nun die Grundkonfiguration abgeschlossen und können Dynamic Media im Scene7-Modus verwenden.
 
