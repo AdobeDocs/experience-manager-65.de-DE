@@ -2,45 +2,48 @@
 title: Authentifizierung für AEM-GraphQL-Remote-Abfragen in Inhaltsfragmenten
 description: Machen Sie sich mit der Authentifizierung vertraut, die für Remote-AEM-GraphQL-Abfragen erforderlich ist, um Ihre Headless-Content-Bereitstellung zu sichern.
 feature: Content Fragments,GraphQL API
-source-git-commit: 2f647fc640d3809dc684bce397831ab37fb94b07
+exl-id: 167f3318-7bc7-48fc-aaa9-73da43433f2f
+source-git-commit: 9278ba4fe85edca4ab5741f89c0fc0ef2cf2764d
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 87%
+source-wordcount: '111'
+ht-degree: 61%
 
 ---
 
 # Authentifizierung für AEM-GraphQL-Remote-Abfragen in Inhaltsfragmenten {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-Ein primäres Nutzungsszenario für die [Adobe Experience Manager (AEM) GraphQL-API für Inhaltsfragmentbereitstellung](/help/assets/content-fragments/graphql-api-content-fragments.md) besteht darin, Remote-Abfragen von Drittanbieteranwendungen oder -diensten zu akzeptieren. Diese Remote-Abfragen erfordern möglicherweise einen authentifizierten API-Zugriff, um die Bereitstellung von Headless-Content zu sichern.
+Ein primärer Anwendungsfall für die [Adobe Experience Manager (AEM) GraphQL-API für die Bereitstellung von Inhaltsfragmenten](/help/assets/content-fragments/graphql-api-content-fragments.md) bedeutet, Remote-Abfragen von Drittanbieteranwendungen oder -diensten zu akzeptieren. Diese Remote-Abfragen erfordern möglicherweise einen authentifizierten API-Zugriff, um die Bereitstellung von Headless-Content zu sichern.
 
 >[!NOTE]
 >
 >Für Tests und Entwicklung können Sie auch direkt über die [GraphiQL-Schnittstelle](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) auf die AEM-GraphQL-API zugreifen.
 
-Zur Authentifizierung muss der Drittanbieter-Service ein [Zugriffs-Token](#retrieving-access-token) abrufen, das dann [in der GraphQL-Anfrage](#use-access-token-in-graphql-request) verwendet werden kann.
+Für die Authentifizierung muss sich der Drittanbieterdienst mit dem Benutzernamen und Kennwort des AEM Kontos authentifizieren.
 
-## Abrufen eines Zugriffs-Tokens {#retrieving-access-token}
-
-<!-- 6.5.10.0 - does this page need to be migrated? -->
+<!-- 6.5.10.0 - does this content/page need to be migrated? -->
 
 <!--
+For authentication the third party service needs to [retrieve an Access Token](#retrieving-access-token), that can then be [used in the GraphQL Request](#use-access-token-in-graphql-request).
+
+## Retrieving an Access Token {#retrieving-access-token}
+
 See [Generating Access Tokens for Server Side APIs](/help/sites-developing/generating-access-tokens-for-server-side-apis.md) for full details.
--->
 
-## Verwenden des Zugriffs-Tokens in einer GraphQL-Anfrage {#use-access-token-in-graphql-request}
+## Using the Access Token in a GraphQL Request {#use-access-token-in-graphql-request}
 
-Damit ein Drittanbieter-Service eine Verbindung mit einer AEM-Instanz herstellen kann, benötigt er ein *Zugriffs-Token*. Der Service muss dieses Token dann der `Authorization`-Kopfzeile in der POST-Anfrage hinzufügen.
+For a third party service to connect with an AEM instance it needs to have an *Access Token*. The service must then add this token to the `Authorization` header on the POST request. 
 
-Ein Beispiel für eine GraphQL-Autorisierungskopfzeile:
+For example, a GraphQL Authorization Header:
 
 ```xml
 Authorization: Bearer <access_token>
 ```
 
-## Berechtigungsanforderungen {#permission-requirements}
+## Permission Requirements {#permission-requirements}
 
-Alle Anfragen, die mit dem Zugriffs-Token durchgeführt werden, werden tatsächlich *von dem Benutzerkonto ausgeführt, das das Token generiert hat*
+All requests made using the access token will actually be made *by the user account that generated the token*. 
 
-Dies bedeutet, dass Sie überprüfen müssen, ob das Konto über die erforderlichen Berechtigungen zum Ausführen von GraphQL-Abfragen verfügt.
+This means that you need to check that the account has the permissions required to run GraphQL queries. 
 
-Sie können dies überprüfen, indem Sie GraphiQL auf der lokalen Instanz verwenden.
+You can check this by using GraphiQL on the local instance.
+-->
