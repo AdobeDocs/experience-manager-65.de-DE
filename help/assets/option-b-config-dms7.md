@@ -12,10 +12,10 @@ hide: true
 hidefromtoc: true
 feature: Configuration,Scene7 Mode
 exl-id: null
-source-git-commit: 3b5e65efc9aaedbc3385cc348ead80afecae2f06
+source-git-commit: 343b48a4ec5e7124aaa48b7550465982d61fa5ab
 workflow-type: tm+mt
-source-wordcount: '6063'
-ht-degree: 44%
+source-wordcount: '6082'
+ht-degree: 43%
 
 ---
 
@@ -265,7 +265,7 @@ Siehe [Konfigurieren der Dynamic Media-Veröffentlichungseinstellungen für Imag
 
 #### Allgemeine Dynamic Media-Einstellungen konfigurieren {#configuring-application-general-settings}
 
-Konfigurieren Sie die Standardfarbeigenschaften so, dass die Farbkorrektur aktiviert ist, wenn Bilder angefordert werden.
+Konfigurieren der Dynamic Media **[!UICONTROL Veröffentlichungsservername]** URL und **[!UICONTROL Name des ursprünglichen Servers]** URL. Sie können auch **[!UICONTROL In Anwendung hochladen]** Einstellungen und **[!UICONTROL Standardmäßige Upload-Optionen]** alle basierend auf Ihrem jeweiligen Anwendungsfall.
 
 Siehe [Allgemeine Dynamic Media-Einstellungen konfigurieren](/help/assets/dm-general-settings.md).
 
