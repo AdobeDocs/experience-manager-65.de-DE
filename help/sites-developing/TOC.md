@@ -8,9 +8,9 @@ breadcrumb-title: Entwickleranleitung
 user-guide-description: In dieser Anleitung wird beschrieben, wie Sie Ihre AEM-Instanz erstellen.
 feature: Developing
 role: Developer
-source-git-commit: eda59d12d96ecc55bd58749985d2c15706344fe0
+source-git-commit: a95cf285be84f6aed194f3ae904556f5d017c7be
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '920'
 ht-degree: 80%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 80%
 
 + [Entwicklerhandbuch - Übersicht](home.md)
 + Einführung für Entwickler{#introduction}
-   + [Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial](getting-started.md)
+   + [Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial ](getting-started.md)
    + [Grundlegende AEM-Konzepte](the-basics.md)
    + [Struktur der Touch-optimierten Benutzeroberfläche von AEM](touch-ui-structure.md)
    + [Konzepte der Touch-optimierten Benutzeroberfläche von AEM](touch-ui-concepts.md)
@@ -97,6 +97,7 @@ ht-degree: 80%
       + [Verwenden von xtypes (klassische Benutzeroberfläche)](xtypes.md)
       + [Entwicklung von Formularen (klassische Benutzeroberfläche)](developing-forms.md)
 + Headless-Experience-Management{#headless}
+   + [Headless und AEM](headless/introduction.md)
    + [Headless und Hybrid mit AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html)
    + Single Page Applications{#spas}
@@ -106,7 +107,7 @@ ht-degree: 80%
       + [Erste Schritte mit SPA in AEM - Angular](spa-getting-started-angular.md)
       + [Implementieren einer Reaktionskomponente für SPA](spa-implementing-react-component.md)
       + [Einzelheiten zu SPAs](spa-deep-dives.md)
-      + [SPA-Editor – Überblick](spa-overview.md)
+      + [SPA-Editor – Übersicht](spa-overview.md)
       + [Entwickeln von SPAs für AEM](spa-architecture.md)
       + [SPA-Blueprint](spa-blueprint.md)
       + [SPA-Seitenkomponente](spa-page-component.md)
