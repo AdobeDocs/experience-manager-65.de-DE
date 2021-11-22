@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: 26f521868d0b983a05579d0d4c1ef50684b721ee
+source-git-commit: f76f02f97de477af80666ea76a499578c36fb09e
 workflow-type: tm+mt
-source-wordcount: '3443'
+source-wordcount: '3450'
 ht-degree: 5%
 
 ---
@@ -23,19 +23,19 @@ ht-degree: 5%
 
 Die Konfiguration der Veröffentlichungseinstellungen von Dynamic Media ist nur verfügbar, wenn:
 
-* Sie führen Dynamic Media im Scene7-Modus aus. Siehe [Aktivieren von Dynamic Media im Scene7-Modus](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode)
-* Sie haben eine *vorhandene* **[!UICONTROL Dynamic Media-Konfiguration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5 oder in Experience Manager as a Cloud Service.
+* Sie führen Dynamic Media im Scene7-Modus aus. Siehe [Aktivieren von Dynamic Media im Scene7-Modus](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode).
+* Sie haben eine *vorhandene* **[!UICONTROL Dynamic Media-Konfiguration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5 oder höher.
 * Sie sind ein Experience Manager-Systemadministrator mit Administratorrechten.
 
 Die Veröffentlichungseinstellungen von Dynamic Media sind für erfahrene Website-Entwickler und -Programmierer vorgesehen. Adobe Dynamic Media empfiehlt, dass Benutzer, die diese Veröffentlichungseinstellungen ändern, mit Adobe Dynamic Media, HTTP-Protokollstandards und -Konventionen und grundlegender Bildverarbeitungstechnologie vertraut sind.
 
 Auf der Seite &quot;Veröffentlichungseinstellungen von Dynamic Media&quot;werden Standardeinstellungen festgelegt, die festlegen, wie Assets von Adobe Dynamic Media-Servern an Websites oder Anwendungen bereitgestellt werden. Wenn keine Einstellung festgelegt ist, stellt der Adobe Dynamic Media-Server ein Asset gemäß einer Standardeinstellung bereit, die auf der Seite &quot;Veröffentlichungseinstellungen&quot;von Dynamic Media konfiguriert wurde.
 
+Siehe auch [Optional - Einrichtung und Konfiguration von Dynamic Media - Einstellungen für den Scene7-Modus](/help/assets/option-b-config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) für weitere optionale Konfigurationsaufgaben.
+
 >[!NOTE]
 >
->Upgrade von Dynamic Media Classic auf Dynamic Media auf Adobe Experience Manager? Auf den Seiten &quot;Allgemeine Einstellungen&quot;und &quot;Veröffentlichungseinstellungen&quot;in Dynamic Media werden die Werte aus Ihrem Dynamic Media Classic-Konto vorausgefüllt. Die Ausnahmen sind alle Werte, die unter dem **[!UICONTROL Standardmäßige Upload-Optionen]** auf der Seite &quot;Allgemeine Einstellungen&quot;angezeigt. Diese Werte befinden sich bereits im Experience Manager. Alle Änderungen, die Sie unter **[!UICONTROL Standardmäßige Upload-Optionen]** auf allen fünf Registerkarten über die Experience Manager-Benutzeroberfläche angezeigt werden, nicht in Dynamic Media Classic, sondern in Dynamic Media. Alle anderen Einstellungen und Werte auf der Seite &quot;Allgemeine Einstellungen&quot;und &quot;Veröffentlichungseinstellungen&quot;werden zwischen Dynamic Media Classic und Dynamic Media auf dem Experience Manager beibehalten.
-
-Siehe auch [Einrichtung und Konfiguration von Einstellungen für den Modus Dynamic Media - Scene7](/help/assets/option-b-config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings).
+>Upgrade von Dynamic Media Classic auf Dynamic Media auf Adobe Experience Manager? Die [Allgemeine Einstellungen](/help/assets/dm-general-settings.md) -Seite und -Seite zur Veröffentlichungseinstellungen in Dynamic Media werden vorab mit den Werten aus Ihrem Dynamic Media Classic-Konto gefüllt. Die Ausnahmen sind alle Werte, die unter dem **[!UICONTROL Standardmäßige Upload-Optionen]** auf der Seite &quot;Allgemeine Einstellungen&quot;angezeigt. Diese Werte befinden sich bereits im Experience Manager. Alle Änderungen, die Sie unter **[!UICONTROL Standardmäßige Upload-Optionen]** auf einer der fünf Registerkarten über die Experience Manager-Benutzeroberfläche angezeigt werden, spiegeln sich in Dynamic Media wider, nicht in Dynamic Media Classic. Alle anderen Einstellungen und Werte in [Allgemeine Einstellungen](/help/assets/dm-general-settings.md) und die Seite zur Veröffentlichungseinstellungen zwischen Dynamic Media Classic und Dynamic Media auf dem Experience Manager verwaltet.
 
 **So konfigurieren Sie den Dynamic Media Publish Setup Image Server:**
 
