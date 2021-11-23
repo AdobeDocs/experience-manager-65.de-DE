@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, verarbeiten und verteilen Sie digitale Assets.
-source-git-commit: 41ffd39d6815988b2b172d7dc1748570eb5ef584
+source-git-commit: bec1a7b7e2fca1e27a1dee274f7d7234a57ce8d8
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '655'
 ht-degree: 57%
 
 ---
@@ -39,10 +39,9 @@ ht-degree: 57%
    + [Newsletter-Archiv nach Experience League](dynamic-media-newsletter.md)
    + [Einrichten von Dynamic Media](administering-dynamic-media.md)
    + [Arbeiten mit Dynamic Media](dynamic-media.md)
-   + [Konfigurieren des Dynamic Media-/Scene7-Modus]{#config-scene7-mode}
-      + [Konfigurieren des Dynamic Media-/Scene7-Modus](config-dms7.md)
-      + [Optional - Konfigurieren der allgemeinen Dynamic Media-Einstellungen](dm-general-settings.md)
-      + [Optional - Dynamic Media Publish Setup Image Server](dm-publish-settings.md)
+   + [Konfigurieren von Dynamic Media - Scene7-Modus](config-dms7.md)
+   + [Optional - Konfigurieren von Dynamic Media - Scene7-Modus, Allgemeine Einstellungen](dm-general-settings.md)
+   + [Optional - Konfigurieren von Dynamic Media - Scene7-Modus, Veröffentlichungseinstellungen](dm-publish-settings.md)
    + [Konfigurieren von Dynamic Media - Hybridmodus](config-dynamic.md)
    + [Option B](option-b-config-dms7.md)
    + [Fehlerbehebung bei Dynamic Media - Scene7-Modus](troubleshoot-dms7.md)

@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: 343b48a4ec5e7124aaa48b7550465982d61fa5ab
+source-git-commit: f5989e182ee0d9075251b582fa618af5efcb9f8a
 workflow-type: tm+mt
 source-wordcount: '3450'
 ht-degree: 5%
@@ -31,7 +31,7 @@ Die Veröffentlichungseinstellungen von Dynamic Media sind für erfahrene Websit
 
 Auf der Seite &quot;Veröffentlichungseinstellungen von Dynamic Media&quot;werden Standardeinstellungen festgelegt, die festlegen, wie Assets von Adobe Dynamic Media-Servern an Websites oder Anwendungen bereitgestellt werden. Wenn keine Einstellung festgelegt ist, stellt der Adobe Dynamic Media-Server ein Asset gemäß einer Standardeinstellung bereit, die auf der Seite &quot;Veröffentlichungseinstellungen&quot;von Dynamic Media konfiguriert wurde.
 
-Siehe auch [Optional - Einrichtung und Konfiguration von Dynamic Media - Einstellungen für den Scene7-Modus](/help/assets/option-b-config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) für weitere optionale Konfigurationsaufgaben.
+Siehe auch [Optional - Einrichtung und Konfiguration von Dynamic Media - Einstellungen für den Scene7-Modus](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) für weitere optionale Konfigurationsaufgaben.
 
 >[!NOTE]
 >
