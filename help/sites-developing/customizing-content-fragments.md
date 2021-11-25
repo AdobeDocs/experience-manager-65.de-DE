@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: d0770bee-4be5-4a6a-8415-70fdfd75015c
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: a2b1bd5462ae1837470e31cfeb87a95af1c69be5
+source-git-commit: e68f6203d7629cab16e59778ce64908f943d5b3f
 workflow-type: tm+mt
 source-wordcount: '2789'
 ht-degree: 81%
 
 ---
+
 
 # Anpassen und Erweitern von Inhaltsfragmenten{#customizing-and-extending-content-fragments}
 
@@ -225,9 +226,9 @@ Inhaltsfragmente können mit folgenden Frameworks integriert werden:
    >
    >Der AEM-Übersetzungs-Workflow arbeitet mit `/content`:
    >
-   >    * Da sich die Inhaltsfragmentmodelle in `/conf` befinden, sind sie nicht in diesen Übersetzungen beinhaltet. Sie können [die Strings der Benutzeroberfläche internationalisieren](/help/sites-developing/i18n-dev.md).
+   >* Da sich die Inhaltsfragmentmodelle in `/conf` befinden, sind sie nicht in diesen Übersetzungen beinhaltet. Sie können [die Strings der Benutzeroberfläche internationalisieren](/help/sites-developing/i18n-dev.md).
    >
-   >    * Vorlagen werden kopiert, um Fragmente zu erstellen, sodass dies impliziert ist.
+   >* Vorlagen werden kopiert, um Fragmente zu erstellen, sodass dies impliziert ist.
 
 
 * **Metadatenschemas**
