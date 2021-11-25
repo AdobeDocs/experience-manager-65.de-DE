@@ -3,18 +3,14 @@ title: Anpassen und Erweitern von Inhaltsfragmenten
 seo-title: Customizing and Extending Content Fragments
 description: Ein Inhaltsfragment erweitert ein Standard-Asset.
 seo-description: A content fragment extends a standard asset.
-uuid: f72c3a23-9b0d-4fab-a960-bb1350f01175
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: d0770bee-4be5-4a6a-8415-70fdfd75015c
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: e68f6203d7629cab16e59778ce64908f943d5b3f
+source-git-commit: 9ad531738ac5e3c9d888f685b47c8b322712a89e
 workflow-type: tm+mt
-source-wordcount: '2789'
-ht-degree: 81%
+source-wordcount: '2778'
+ht-degree: 83%
 
 ---
 
@@ -133,9 +129,9 @@ Weitere Informationen finden Sie unter [Inhaltsfragmente – Überlegungen zum 
 
 >[!CAUTION]
 >
->Derzeit wird die [Kernkomponente für Inhaltsfragmente](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) dafür empfohlen. Weitere Informationen finden Sie unter [Entwickeln von Kernkomponenten](https://helpx.adobe.com/experience-manager/core-components/using/developing.html).
+>Derzeit wird die [Kernkomponente für Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=de) dafür empfohlen. Weitere Informationen finden Sie unter [Entwickeln von Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=de).
 
-AEM-Seiten können auf Inhaltsfragmente verweisen, ähnlich wie bei allen anderen Asset-Typen. AEM stellt die Kernkomponente für [**** Inhaltsfragmente](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) bereit, eine [Komponente, mit der Sie Inhaltsfragmente in Seiten einfügen können](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). Sie können auch erweitern: **Inhaltsfragment** Kernkomponente.
+AEM-Seiten können auf Inhaltsfragmente verweisen, ähnlich wie bei allen anderen Asset-Typen. AEM stellt die Kernkomponente für [**** Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) bereit, eine [Komponente, mit der Sie Inhaltsfragmente in Seiten einfügen können](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). Sie können auch erweitern: **Inhaltsfragment** Kernkomponente.
 
 * Die Komponente verwendet die `fragmentPath`-Eigenschaft für Verweise auf das tatsächliche Inhaltsfragment. Die `fragmentPath`-Eigenschaft wird wie ähnliche Eigenschaften anderer Asset-Typen gehandhabt, beispielsweise wenn das Inhaltsfragment zu einem anderen Speicherort verschoben wird.
 
@@ -246,7 +242,7 @@ Inhaltsfragmente können mit folgenden Frameworks integriert werden:
 
 Sie können die Server-seitige API für den Zugriff auf Inhaltsfragmente verwenden, siehe:
 
-[com.adobe.cq.dam.cfm](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
+[com.adobe.cq.dam.cfm](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
 
 >[!CAUTION]
 >
@@ -256,7 +252,7 @@ Sie können die Server-seitige API für den Zugriff auf Inhaltsfragmente verwend
 
 Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
-* **Fragmentvorlage** ([FragmentTemplate](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
+* **Fragmentvorlage** ([FragmentTemplate](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
    Verwendung `FragmentTemplate.createFragment()` zum Erstellen eines neuen Fragments.
 
@@ -301,7 +297,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
 
 
-* **Inhaltsfragment** ([ContentFragment](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **Inhaltsfragment** ([ContentFragment](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
    In dieser Schnittstelle können Sie abstrakt mit einem Inhaltsfragment arbeiten.
 
@@ -331,7 +327,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
    Folgende Schnittstellen stehen für die Hauptelemente eines Fragments:
 
-   * **Inhaltselement** ([ContentElement](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **Inhaltselement** ([ContentElement](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * Abrufen grundlegender Daten (Name, Titel, Beschreibung)
       * Abrufen/Festlegen von Inhalten
@@ -343,7 +339,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
          * Entfernen von Varianten (siehe [Einschränkungen](#caveats))
          * Zugriff auf Variantendaten (siehe `ContentVariation`)
       * Tastaturbefehl zum Auflösen von Varianten (Anwenden zusätzlicher implementierungsspezifischer Ausweich-Logik, falls die angegebene Variante für ein Element nicht verfügbar ist)
-   * **Inhaltsvariante** ([ContentVariation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+   * **Inhaltsvariante** ([ContentVariation](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * Abrufen grundlegender Daten (Name, Titel, Beschreibung)
       * Abrufen/Festlegen von Inhalten
@@ -541,5 +537,5 @@ Ausführliche Informationen finden Sie unter [Inhaltsfragmentvorlagen](/help/sit
 
 Weitere Informationen finden Sie unter
 
-* [Kernkomponenten – Inhaltsfragmentkomponente](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) (empfohlen)
+* [Kernkomponenten – Inhaltsfragmentkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) (empfohlen)
 * [Inhaltsfragmentkomponenten – Komponenten für die Seitenbearbeitung](/help/sites-developing/components-content-fragments.md#components-for-page-authoring)
