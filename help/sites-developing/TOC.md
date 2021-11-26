@@ -8,10 +8,10 @@ breadcrumb-title: Entwickleranleitung
 user-guide-description: In dieser Anleitung wird beschrieben, wie Sie Ihre AEM-Instanz erstellen.
 feature: Developing
 role: Developer
-source-git-commit: a95cf285be84f6aed194f3ae904556f5d017c7be
+source-git-commit: 879e69aa17c7142c2b1e86b72ce23226a7f09a88
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 80%
+source-wordcount: '1055'
+ht-degree: 76%
 
 ---
 
@@ -98,31 +98,45 @@ ht-degree: 80%
       + [Entwicklung von Formularen (klassische Benutzeroberfläche)](developing-forms.md)
 + Headless-Experience-Management{#headless}
    + [Headless und AEM](headless/introduction.md)
-   + [Headless und Hybrid mit AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+   + [Inhaltsfragmente]{#content-fragments}
+      + [Headless-Bereitstellung mit Inhaltsfragmenten und GraphQL](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-graphql.html)
+      + [Arbeiten mit Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments.html)
+      + [Aktivieren der Funktion für Inhaltsfragmente für Ihre Instanz](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-configuration-browser.html)
+      + [Inhaltsfragmentmodelle](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-models.html)
+      + [Verwalten von Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-managing.html)
+      + [Varianten – Erstellen von Fragmentinhalten](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html)
+      + [Markdown](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-markdown.html)
+      + [Verwenden von zugehörigen Inhalten](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-assoc-content.html)
+      + [Metadaten – Fragmenteigenschaften](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-metadata.html)
+      + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-structure-tree.html)
+      + [Vorschau – JSON-Darstellung](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-json-preview.html)
+   + [Bereitstellungs-API]{#delivery-api}
+      + [Assets-HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
+      + [Inhaltsfragment-REST-API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html)
+      + [Inhaltsfragment-GraphQL-API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-api-content-fragments.html)
+      + [AEM-GraphQL-API mit Inhaltsfragmenten – Beispielinhalt und -abfragen](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/content-fragments-graphql-samples.html)
+      + [Authentifizierung für AEM-GraphQL-Remote-Abfragen in Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-authentication-content-fragments.html)
++ Hybride und SPA-Entwicklung mit AEM{#spas}
+   + [Hybrid-Architektur und SPAs mit AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+   + [Einführung in SPAs und exemplarische Anleitung](spa-walkthrough.md)
+   + [SPA-WKND-Tutorial](spa-wknd.md)
+   + [Erste Schritte mit React](spa-getting-started-react.md)
+   + [Implementieren einer Reaktionskomponente für SPA](spa-implementing-react-component.md)
+   + [Erste Schritte mit Angular](spa-getting-started-angular.md)
+   + [Einzelheiten zu SPAs](spa-deep-dives.md)
+   + [Entwickeln von SPAs für AEM](spa-architecture.md)
+   + [SPA-Editor – Übersicht](spa-overview.md)
+   + [SPA-Blueprint](spa-blueprint.md)
+   + [SPA-Seitenkomponente](spa-page-component.md)
+   + [Dynamisches Modell für die Komponentenzuordnung für SPA](spa-dynamic-model-to-component-mapping.md)
+   + [SPA-Modell-Routing](spa-routing.md)
+   + [Die RemotePage-Komponente](spa-remote-page.md)
+   + [Bearbeiten einer externen SPA in AEM](spa-edit-external.md)
+   + [Zusammengesetzte Komponenten in SPA](spa-composite-component.md)
+   + [Single Page Applications (SPAs) und Server-seitiges Rendering](spa-ssr.md)
    + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html)
-   + Single Page Applications{#spas}
-      + [Einführung in SPAs und exemplarische Anleitung](spa-walkthrough.md)
-      + [SPA-WKND-Tutorial](spa-wknd.md)
-      + [Erste Schritte mit SPA in AEM - React](spa-getting-started-react.md)
-      + [Erste Schritte mit SPA in AEM - Angular](spa-getting-started-angular.md)
-      + [Implementieren einer Reaktionskomponente für SPA](spa-implementing-react-component.md)
-      + [Einzelheiten zu SPAs](spa-deep-dives.md)
-      + [SPA-Editor – Übersicht](spa-overview.md)
-      + [Entwickeln von SPAs für AEM](spa-architecture.md)
-      + [SPA-Blueprint](spa-blueprint.md)
-      + [SPA-Seitenkomponente](spa-page-component.md)
-      + [Dynamisches Modell für die Komponentenzuordnung für SPA](spa-dynamic-model-to-component-mapping.md)
-      + [SPA-Modell-Routing](spa-routing.md)
-      + [SPA- und Adobe Experience Platform Launch-Integration](spa-launch.md)
-      + [Single Page Applications (SPAs) und Server-seitiges Rendering](spa-ssr.md)
-      + [Die RemotePage-Komponente](spa-remote-page.md)
-      + [Bearbeiten einer externen SPA in AEM](spa-edit-external.md)
-      + [Zusammengesetzte Komponenten in SPA](spa-composite-component.md)
-      + [SPA-Referenzmaterial](spa-reference-materials.md)
-   + [HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
-   + [Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments.html)
-   + [Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html)
-   + [Grundlagen zu Inhaltsfragmenten und Content Services in AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
+   + [Launch-Integration](spa-launch.md)
+   + [SPA-Referenzmaterial](spa-reference-materials.md)
 + Entwicklungstools{#devtools}
    + [Entwicklungstools](dev-tools.md)
    + [AEM-Modernisierungs-Tools](modernization-tools.md)
