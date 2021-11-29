@@ -2,7 +2,7 @@
 title: 'Schnellstartanleitung für Headless: Abrufen und Bereitstellen von Inhaltsfragmenten'
 description: Erfahren Sie, wie Sie die AEM Assets-REST-API zum Verwalten von Inhaltsfragmenten und die GraphQL-API für die Headless-Bereitstellung von Inhalten der Inhaltsfragmente verwenden.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 8ab774b8d21dd16e4873cd39ef0175ead3f2da23
+source-git-commit: 6c75af3957c319c38177cd62c90e781a982ba91b
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 88%
@@ -18,7 +18,7 @@ Erfahren Sie, wie Sie die AEM Assets-REST-API zum Verwalten von Inhaltsfragmente
 [Nachdem Sie einige Inhaltsfragmente erstellt haben,](create-content-fragment.md) können Sie die APIs von AEM verwenden, um sie headless bereitzustellen.
 
 * Mit der [GraphQL-API](/help/assets/content-fragments/graphql-api-content-fragments.md) können Sie Anfragen für den Zugriff auf und die Bereitstellung von Inhaltsfragmenten erstellen.
-   * Um dies zu verwenden, müssen Endpunkte in AEM definiert und aktiviert werden. Falls erforderlich, muss die GraphiQL-Schnittstelle installiert sein.
+   * Um dies zu verwenden, [Endpunkte müssen in AEM definiert und aktiviert werden](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)und, falls erforderlich, die [Installierte GraphiQL-Oberfläche](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface).
 * Mit der [Assets-REST-API](/help/assets/assets-api-content-fragments.md) können Sie Inhaltsfragmente (und andere Assets) erstellen und ändern.
 
 Der Rest dieses Handbuchs konzentriert sich auf den GraphQL-Zugriff und die Bereitstellung von Inhaltsfragmenten.
