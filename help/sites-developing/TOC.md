@@ -8,9 +8,9 @@ breadcrumb-title: Entwickleranleitung
 user-guide-description: In dieser Anleitung wird beschrieben, wie Sie Ihre AEM-Instanz erstellen.
 feature: Developing
 role: Developer
-source-git-commit: ba6b910add6770753efeb576d9df1db42d5720b8
+source-git-commit: cf7e9061bac9004c7efd2f045b4900e4a92d67e9
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1085'
 ht-degree: 77%
 
 ---
@@ -96,6 +96,7 @@ ht-degree: 77%
       + [Verwenden und Erweitern von Widgets (klassische Benutzeroberfläche)](widgets.md)
       + [Verwenden von xtypes (klassische Benutzeroberfläche)](xtypes.md)
       + [Entwicklung von Formularen (klassische Benutzeroberfläche)](developing-forms.md)
++ [Headful und Headless in AEM](headful-headless.md)
 + Headless-Experience-Management{#headless}
    + [Headless und AEM](headless/introduction.md)
    + Anleitungen für den Einstieg {#getting-started}
