@@ -1,14 +1,14 @@
 ---
 title: Herunterladen von Assets
-description: Erfahren Sie, wie Sie Assets von  [!DNL Adobe Experience Manager] herunterladen und die Download-Funktion aktivieren oder deaktivieren können.
+description: Erfahren Sie, wie Sie Assets von herunterladen [!DNL Adobe Experience Manager] und aktivieren oder deaktivieren Sie die Download-Funktion.
 contentOwner: AG
 role: User
 feature: Asset Management,Asset Distribution
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
-source-git-commit: 66becef1f25d15c5451be6bc480ff7a4bccd4fcb
+source-git-commit: f9d82edbb7469fab96629fc6cf4f138a082691fd
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 75%
+source-wordcount: '861'
+ht-degree: 70%
 
 ---
 
@@ -18,14 +18,22 @@ Sie können Assets einschließlich der statischen und dynamischen Ausgabedarstel
 
 >[!NOTE]
 >
->Empfänger von E-Mails müssen Mitglieder der Gruppe `dam-users` sein, um auf den ZIP-Download-Link in der E-Mail zugreifen zu können. Um die Assets herunterladen zu können, müssen diese Mitglieder über die Berechtigung zum Starten von Workflows verfügen, die das Herunterladen von Assets auslösen.
+>Jeder Benutzer, der über Leseberechtigungen für `/var/dam/share` Der Speicherort kann auf den in der E-Mail-Nachricht freigegebenen Downloadlink zugreifen.
+>
+>Jeder Benutzer, der über Leserechte für `/var/dam/jobs/download` -Speicherort können Assets herunterladen.
+>
+>Die Asset-Typen - Bildsets, Rotationssets, gemischte Mediensets und Karussellsets können nicht heruntergeladen werden.
 
-Die Asset-Typen „Bildset“, „Rotationsset“ „Set für gemischte Medien“ und „Karussellset“ können nicht heruntergeladen werden.
+<!--
+OLD content of the above NOTE, changed wrt CQDOC-18661.
+>The email recipients must be members of the `dam-users` group to access the ZIP download link in the email message.
+>
+-->
 
 **Gehen Sie wie folgt vor, um Assets herunterzuladen:**
 
 1. Klicken Sie in der linken oberen Ecke auf das -Logo. Klicken Sie in der linken Leiste auf **[!UICONTROL Navigation]**.
-1. Klicken Sie auf der Seite [!UICONTROL Navigation] auf **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
+1. Im [!UICONTROL Navigation] Seite, klicken Sie auf **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
 1. Navigieren Sie zu einem Ordner mit den Assets, die Sie herunterladen möchten.
 1. Wählen Sie den Ordner oder ein oder mehrere Assets im Ordner aus.
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Herunterladen]**.
@@ -46,12 +54,12 @@ Wenn Sie einen Ordner zum Herunterladen auswählen, wird die komplette Asset-Hie
 
 ## Aktivieren des Asset-Download-Servlets {#enable-asset-download-servlet}
 
-Das Standard-Servlet in [!DNL Experience Manager] ermöglicht es authentifizierten Benutzern, beliebig große, gleichzeitige Download-Anfragen zum Erstellen von ZIP-Dateien mit für sie sichtbaren Assets zu stellen, die den Server und das Netzwerk überlasten können. Um potenzielle DoS-Risiken zu reduzieren, die durch diese Funktion verursacht werden, ist die `AssetDownloadServlet`-OSGi-Komponente für Veröffentlichungsinstanzen standardmäßig deaktiviert.
+Das standardmäßige Servlet in [!DNL Experience Manager] ermöglicht es authentifizierten Benutzern, beliebig große, gleichzeitige Download-Anfragen zum Erstellen von ZIP-Dateien mit für sie sichtbaren Assets zu stellen, die den Server und das Netzwerk überlasten können. Um potenzielle DoS-Risiken zu reduzieren, die durch diese Funktion verursacht werden, ist die `AssetDownloadServlet`-OSGi-Komponente für Veröffentlichungsinstanzen standardmäßig deaktiviert.
 
 Um das Herunterladen von Assets aus dem DAM zuzulassen, z. B. wenn Sie die Asset-Freigabe oder eine andere portalähnliche Implementierung verwenden, aktivieren Sie das Servlet manuell über eine OSGi-Konfiguration. Adobe empfiehlt, die zulässige Download-Größe so gering wie möglich zu halten, ohne dass dabei die täglichen Download-Anforderungen beeinträchtigt werden. Ein hoher Wert kann sich auf die Leistung auswirken.
 
-1. Erstellen Sie einen Ordner mit einer Benennungsregel, die auf den Veröffentlichungslaufmodus (`config.publish`) abzielt: `/apps/<your-app-name>/config.publish`. Informationen zum Definieren von Konfigurationseigenschaften für einen Ausführungsmodus finden Sie unter [Ausführungsmodi](/help/sites-deploying/configure-runmodes.md#defining-configuration-properties-for-a-run-mode).
-1. Erstellen Sie im Konfigurationsordner eine Datei des Typs `nt:file` mit dem Namen `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
+1. Erstellen Sie einen Ordner mit einer Benennungsregel, die auf den Veröffentlichungslaufmodus abzielt (`config.publish`): `/apps/<your-app-name>/config.publish`. Informationen zum Definieren von Konfigurationseigenschaften für einen Ausführungsmodus finden Sie unter [Ausführungsmodi](/help/sites-deploying/configure-runmodes.md#defining-configuration-properties-for-a-run-mode).
+1. Erstellen Sie im Konfigurationsordner eine Datei vom Typ `nt:file` benannt `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
 1. Füllen Sie `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` wie folgt. Legt eine maximale Größe (in Byte) für den Download als Wert von `asset.download.prezip.maxcontentsize` fest. Im folgenden Beispiel wird die maximale Größe des ZIP-Downloads auf maximal 100 KB konfiguriert.
 
    ```conf
@@ -59,15 +67,15 @@ Um das Herunterladen von Assets aus dem DAM zuzulassen, z. B. wenn Sie die Asset
    asset.download.prezip.maxcontentsize=I"102400"
    ```
 
-Bei `GET`-Anfragen zum Herunterladen von Dateien erzwingt [!DNL Experience Manager] standardmäßig eine Beschränkung von 50 MB auf die Download-Größe des ZIP-Archivs. Downloads, die über `POST` -Anfragen oder die Benutzeroberfläche initiiert werden, sind von dieser Beschränkung nicht betroffen.
+Standardmäßig gilt für `GET` Anforderungen zum Herunterladen von Dateien, [!DNL Experience Manager] erzwingt eine Beschränkung von 50 MB auf die Download-Größe des ZIP-Archivs. Über initiierte Downloads `POST` -Anfragen oder die -Benutzeroberfläche sind von dieser Beschränkung nicht betroffen.
 
 ## Deaktivieren des Asset-Download-Servlets {#disable-asset-download-servlet}
 
 Das `Asset Download Servlet` kann in einer [!DNL Experience Manager]-Veröffentlichungsinstanz deaktiviert werden, indem die Dispatcher-Konfiguration so aktualisiert wird, dass sie alle Asset-Download-Anfragen blockiert. Das Servlet kann auch manuell direkt über die OSGi-Konsole deaktiviert werden.
 
-1. Um Asset-Download-Anfragen über eine Dispatcher-Konfiguration zu blockieren, bearbeiten Sie die `dispatcher.any`-Konfiguration und fügen Sie eine Regel zum [Filterabschnitt](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter) hinzu. `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+1. Um Asset-Download-Anfragen über eine Dispatcher-Konfiguration zu blockieren, bearbeiten Sie die `dispatcher.any` Konfiguration und Hinzufügen einer Regel zum [Filterabschnitt](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter). `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
-1. Um die OSGi-Komponente auf einer Veröffentlichungsinstanz zu deaktivieren, rufen Sie die OSGi-Konsole unter `http://[aem_server]:[port]/system/console/components` auf. Suchen Sie `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` und klicken Sie auf **[!UICONTROL Deaktivieren]**.
+1. Um die OSGi-Komponente auf einer Veröffentlichungsinstanz zu deaktivieren, rufen Sie die OSGi-Konsole auf unter `http://[aem_server]:[port]/system/console/components`. Suchen Sie `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` und klicken Sie auf **[!UICONTROL Deaktivieren]**.
 
 >[!MORELIKETHIS]
 >
