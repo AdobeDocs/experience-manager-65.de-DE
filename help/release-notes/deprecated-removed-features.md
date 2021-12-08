@@ -2,9 +2,9 @@
 title: Veraltete und entfernte Funktionen in Adobe Experience Manager 6.5.
 description: Spezifische Versionshinweise zu veralteten und entfernten Funktionen von Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: c9db5a1764d98bb049c08a0e6962b7ed5e1bfe5c
+source-git-commit: 6ec25e3c59a841a6734f1d0e9d4347557d89e79a
 workflow-type: tm+mt
-source-wordcount: '1753'
+source-wordcount: '1761'
 ht-degree: 42%
 
 ---
@@ -28,7 +28,8 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 
 | Bereich | Funktion | Ersatz | Version (SP) |
 |---|---|---|---|
-| [!DNL Sites] | Inhaltsfragmentvorlagen zum Erstellen einfacher Inhaltsfragmente. | [Modellbasierte strukturierte Inhaltsfragmente](/help/assets/content-fragments/content-fragments-models.md) jetzt. | 6.5.11.0 |
+| [!DNL Sites] | Experience Fragments-Eigenschaften für **Social-Media-Status**. |  | 6.5.11.0 |
+| [!DNL Sites] | Inhaltsfragmentvorlagen zum Erstellen einfacher Inhaltsfragmente. | [Modellbasierte strukturierte Inhaltsfragmente](/help/assets/content-fragments/content-fragments-models.md) jetzt. | 6,5,11,0 |
 | Creative Cloud-Integration | Die AEM zur Ordnerfreigabe in Creative Cloud wurde in AEM 6.2 eingeführt, um kreativen Benutzern den Zugriff auf Assets aus AEM zu ermöglichen, damit sie sie in öffnen können. [!DNL Creative Cloud] und laden Sie neue Dateien hoch oder speichern Sie Änderungen in AEM. Eine neue Funktion des Creative Cloud-Programms, Adobe Asset Link, bietet ein wesentlich besseres Benutzererlebnis und einen leistungsfähigeren Zugriff auf Assets aus AEM direkt aus Photoshop, InDesign und Illustrator heraus. Adobe plant keine weiteren Verbesserungen an der Integration der Ordnerfreigabe aus AEM in Creative Cloud. Obwohl die Funktion in AEM enthalten ist, wird Kunden ausdrücklich der Einsatz von Ersatzlösungen empfohlen. | Kunden wird empfohlen, zu neuen Creative Cloud-Integrationsfunktionen wie Adobe Asset Link oder AEM Desktop-Programm zu wechseln. |  |
 | Assets | `AssetDownloadServlet` ist bei den Veröffentlichungsinstanzen standardmäßig deaktiviert. Weitere Informationen finden Sie unter [Checkliste für die AEM-Sicherheit](/help/sites-administering/security-checklist.md). | Konfiguration, wie unter [Checkliste für die AEM-Sicherheit](/help/sites-administering/security-checklist.md) beschrieben. |  |
 | Assets | Wenn ein Benutzer nicht über ausreichende (Lese- und Schreibberechtigungen) für `/content/dam/collections`, kann der Benutzer keine Sammlung erstellen. | Einhaltung der Zugangssteuerungseinrichtung für den Benutzer und Sicherstellung entsprechender Berechtigungen.  |  |
