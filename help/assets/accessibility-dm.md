@@ -1,16 +1,16 @@
 ---
 title: Barrierefreiheit in Dynamic Media
-description: Erfahren Sie mehr über die Unterstützung der Barrierefreiheit in Dynamic Media und Dynamic Media Viewern
+description: Erfahren Sie mehr über die Unterstützung der Barrierefreiheit in Dynamic Media- und Dynamic Media-Viewern.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
-feature: Barrierefreiheit
+feature: Accessibility
 role: User, Admin
 exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
-source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
+source-git-commit: 01de1d5064f5ebf00acd2fe9f138d852f41f7273
 workflow-type: tm+mt
-source-wordcount: '568'
-ht-degree: 69%
+source-wordcount: '610'
+ht-degree: 64%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 69%
 
 [!DNL Dynamic Media] unterstützt Tastatursteuerungs- und Hilfstechnologien wie JAWS- und NVDA-Bildschirmlesehilfen in der Authoring-Benutzeroberfläche.
 
-## Unterstützung der Barrierefreiheit von Keywords in [!DNL Dynamic Media]
+## Unterstützung für Barrierefreiheit über die Tastatur in [!DNL Dynamic Media]
 
-Da [!DNL Dynamic Media] ein Plug-in für [!DNL Adobe Experience Manager Assets] ist, ist der Großteil des Tastatursteuerungsverhaltens mit dem in [!DNL Experience Manager Assets] identisch. Beispielsweise weist die Schaltfläche `Cancel` in [!DNL Dynamic Media] dieselbe Fokushervorhebung auf wie in [!DNL Experience Manager Assets] und reagiert auf die Taste `Spacebar` wie in [!DNL Experience Manager Assets]. Weitere Informationen finden Sie in [Tastaturbefehle in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+weil [!DNL Dynamic Media] ist ein Plug-in für [!DNL Adobe Experience Manager Assets], ist das Verhalten des Tastatursteuerelements größtenteils mit dem in [!DNL Experience Manager Assets]. Beispiel: die `Cancel` Schaltfläche in [!DNL Dynamic Media] hat dieselbe Fokushervorhebung wie in [!DNL Experience Manager Assets]und reagiert auf die `Spacebar` Schlüssel wie in [!DNL Experience Manager Assets]. Weitere Informationen finden Sie in [Tastaturbefehle in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
-Tastenanschläge, die von einzelnen Benutzeroberflächenelementen in [!DNL Dynamic Media] unterstützt werden, sind klar und leicht zu erkennen. Die Tastatursteuerung in [!DNL Dynamic Media] lautet ungefähr:
+Keystrokes, die von einzelnen Benutzeroberflächenelementen in [!DNL Dynamic Media] sind klar und leicht zu entdecken. Tastatursteuerung in [!DNL Dynamic Media] umfasst ungefähr Folgendes:
 
 * Möglichkeit zur Verwendung von `Tab`- und `Shift+Tab`-Tastenkombinationen zum Navigieren zwischen interaktiven Elementen auf der Seite.
 Mithilfe von `Tab` wird der Eingabefokus auf das nächste Element der Benutzeroberfläche in der Tabulatorreihenfolge weitergeschaltet. Durch die Verwendung von `Shift+Tab` wird der Eingabefokus wieder auf das vorherige Element der Benutzeroberfläche zurückgesetzt.
@@ -45,20 +45,26 @@ Siehe [Bearbeiten des smarten Zuschnitts oder smarten Farb-/Bildmusters eines ei
 
 <!-- I would not get into much of details of specific keyboard support logic of these editors. One of the reasons - chances are that accessibility support will receive Phase2-like attention, with more holistic approach. -->
 
-## Unterstützung für unterstützende Technologien in [!DNL Dynamic Media] {#assistive-technology-support-for-dm}
+## Unterstützung der Technologie in [!DNL Dynamic Media] {#assistive-technology-support-for-dm}
 
 [!DNL Dynamic Media] Benutzeroberflächen-Elemente können mit Hilfstechnologien wie Bildschirmlesehilfen verwendet werden. Beispielsweise werden Orientierungspunkte auf einer Seite erkannt, wenn Sie mithilfe des Tastaturbefehls `D` durch Orientierungspunkte oder mithilfe des Tastaturbefehls `R` durch Regionen navigieren. Außerdem wird die Überschrift vorgelesen, wenn Sie mit dem Tastaturbefehl für Überschriften `H` navigieren.
 
-## Unterstützung der Barrierefreiheit von Keywords in [!DNL Dynamic Media] Viewern {#keyboard-accessibility-for-dm-viewers}
+## Unterstützung für Barrierefreiheit über die Tastatur in [!DNL Dynamic Media] Viewer {#keyboard-accessibility-for-dm-viewers}
 
-Alle nativen Viewer-Komponenten [!DNL Dynamic Media] unterstützen den Tastaturzugriff für Ihre Kunden.
+Alle nativen [!DNL Dynamic Media] Viewer-Komponenten unterstützen den Tastaturzugriff für Ihre Kunden.
 
 Weitere Informationen finden Sie unter [Tastaturbedienung und Navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=de) im Dynamic Media Viewers-Referenzhandbuch.
 
-## Unterstützung für unterstützende Technologie in [!DNL Dynamic Media] Viewern {#assistive-technology-support-for-dm-viewers}
+## Unterstützung der Technologie in [!DNL Dynamic Media] Viewer {#assistive-technology-support-for-dm-viewers}
 
 Alle [!DNL Dynamic Media] Viewer-Komponenten unterstützen ARIA (Accessible Rich Internet Applications)-Rollen und -Attribute, um die Integration mit Hilfstechnologien wie Bildschirmlesehilfen zu verbessern.
 Weitere Informationen finden Sie im Hilfethema **Unterstützung für Hilfstechnologien** im Dynamic Media Viewers-Referenzhandbuch. Sehen Sie beispielsweise [Unterstützung für Hilfstechnologien](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=de) für den Video-Viewer oder [Unterstützung für Hilfstechnologien](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) für den interaktiven Bild-Viewer.
+
+## Unterstützung für geschlossene Untertitel in Dynamic Media {#closed-caption-support}
+
+Dynamic Media unterstützt die Bereitstellung von Videos und adaptiven Videosets mit verdeckten Untertiteln. Die Untertitel müssen über dem Videoinhalt angezeigt werden.
+
+Siehe [Video in Dynamic Media - Hinzufügen von Untertiteln oder Untertiteln zu Videos](/help/assets/video.md#adding-captions-to-video).
 
 >[!MORELIKETHIS]
 >
