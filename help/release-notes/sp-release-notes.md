@@ -4,9 +4,9 @@ description: Spezifische Versionshinweise für [!DNL Adobe Experience Manager] 6
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: c7fdfeae785ad044437d065a8da6bdcbaf00d4c4
+source-git-commit: f2ccc77393e7fc1f53f9976076ec3c66c3f74189
 workflow-type: tm+mt
-source-wordcount: '3674'
+source-wordcount: '3728'
 ht-degree: 4%
 
 ---
@@ -279,7 +279,7 @@ Die folgenden Fehlerbehebungen sind in verfügbar: [!DNL Dynamic Media]:
 
 * Beim Erstellen eines Übersetzungsprojekts führt die zyklische Referenzierung der Seiten zu einem Start, was zu einem Trigger führt (CQ-4332982).
 
-* Der Link zum Experience Fragment im übersetzten Experience Fragment und auf der Seite enthält die Launch-Referenz (NPR-37649).
+* Der Experience Fragment-Link im übersetzten Experience Fragment und auf der Seite enthält die Launch-Referenz (NPR-37649).
 
 ### Sling {#sling-65110}
 
@@ -512,6 +512,16 @@ Um Ihre Laufzeitkopie abzurufen, empfiehlt Adobe, die Entwurfszeitkopie des benu
    * `com.adobe.granite.maintenance.impl.TaskScheduler` - Keine Wartungsfenster unter granite/operations/maintenance gefunden.
    * Hotspot in einem interaktiven Dynamic Media-Bild ist bei der Vorschau des Assets über den Viewer für Shop-fähige Banner nicht sichtbar.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Zeitüberschreitung, die darauf wartet, dass die Reg-Änderung abgeschlossen und die Registrierung aufgehoben wird.
+
+* Beim Versuch, Inhaltsfragmente oder Sites/Seiten zu verschieben/zu löschen/zu veröffentlichen, tritt ein Problem auf, wenn Inhaltsfragmentverweise abgerufen werden, da die Hintergrundabfrage fehlschlägt. d. h. die Funktionalität funktioniert nicht.
+Um den korrekten Vorgang sicherzustellen, müssen Sie die folgenden Eigenschaften zum Indexdefinitionsknoten hinzufügen `/oak:index/damAssetLucene` (Eine Neuindizierung ist nicht erforderlich) :
+
+   ```xml
+   "tags": [
+       "visualSimilaritySearch"
+     ]
+   "refresh": true
+   ```
 
 ## OSGi-Bundles und Inhaltspakete enthalten {#osgi-bundles-and-content-packages-included}
 
