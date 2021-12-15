@@ -2,10 +2,10 @@
 title: Erste Schritte mit Headless
 description: In dieser Kurzanleitung lernen Sie die Grundlagen der leistungsstarken Headless-Funktionen von AEM 6.5, wie Inhaltsmodelle, Inhaltsfragmente und die GraphQL-API, kennen.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
-source-git-commit: 03285545d8cc04d97513fb5fee3b3c616551ccdc
+source-git-commit: 2f400d209148278f0695f7b9523b58bba6845cfb
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 75%
+source-wordcount: '301'
+ht-degree: 68%
 
 ---
 
@@ -22,11 +22,8 @@ Die Leitfäden für Headless-Einstieg bieten einen einfachen Weg zum Erstellen, 
 >[!TIP]
 >
 >In diesem Erste-Schritte-Handbuch werden Kenntnisse über AEM und Headless-Technologien vorausgesetzt.
-
-<!-- HM-Links
 >
->If you are new to either AEM or headless, please refer to our [Headless Documentation Journeys](/help/journey-headless/home.md) for an end-to-end introduction to both headless and how AEM supports it.
--->
+>Wenn Sie neu AEM oder Headless sind, lesen Sie bitte unsere [Headless Documentation Journey](/help/journey-headless/home.md) für eine durchgängige Einführung in Headless und wie AEM sie unterstützt.
 
 ## Zielgruppe {#audience}
 
