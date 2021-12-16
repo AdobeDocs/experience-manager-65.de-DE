@@ -3,10 +3,11 @@ title: Verwalten von Inhaltsfragmenten
 description: Erfahren Sie, wie Sie mit der Assets-Konsole Ihre AEM-Inhaltsfragmente verwalten können, die die Grundlage für Ihren Headless-Content bilden.
 feature: Content Fragments
 role: User
-source-git-commit: 251bf0ac672d516dd6b2018fc9cc804822f48e4c
+exl-id: 25c91a85-06ff-4666-a809-46778a689e25
+source-git-commit: 20d46a7c37663dac36e6af9582d569a7f782eab7
 workflow-type: tm+mt
-source-wordcount: '1314'
-ht-degree: 99%
+source-wordcount: '1727'
+ht-degree: 100%
 
 ---
 
@@ -87,7 +88,7 @@ Die Methode zum Erstellen eines Inhaltsfragments ist folgende:
    >[!NOTE]
    >Im **Listenmodus** der Konsole können Sie die **Anzeigeeinstellungen** aktualisieren, um die Spalte **Inhaltsfragmentmodell** zu aktivieren.
 
-## Aktionen für ein Inhaltsfragment in der Asset-Konsole {#actions-for-a-content-fragment-assets-console}
+## Aktionen für ein Inhaltsfragment in der Assets-Konsole {#actions-for-a-content-fragment-assets-console}
 
 In der **Assets-Konsole** können Sie eine Reihe von Aktionen für Ihre Inhaltsfragmente vornehmen, die Sie wie folgt erreichen:
 
@@ -146,19 +147,15 @@ So öffnen Sie ein Fragment zur Bearbeitung:
 
    ![Fragment-Editor](assets/cfm-managing-03.png)
 
-1. Nachdem Sie Änderungen vorgenommen haben, verwenden Sie **Speichern und schließen**.
-
-<!-- 
-1. After making changes, use **Save**, **Save & close** or **Close** as required.
+1. Nachdem Sie Änderungen vorgenommen haben, verwenden Sie nach Bedarf die Optionen **Speichern**, **Speichern und schließen** oder **Schließen**.
 
    >[!NOTE]
    >
-   >**Save & close** is available via the **Save** dropdown.
+   >**Speichern und schließen** ist über das Dropdown-Menü **Speichern** verfügbar.
 
    >[!NOTE]
    >
-   >Both **Save & Close** and **Close** will exit the editor - see [Save, Close and Versions](#save-close-and-versions) for full information on how the various options operate for content fragments.
--->
+   >Sowohl **Speichern und schließen** als auch **Schließen** beenden den Editor – siehe [Speichern, Schließen und Versionen](#save-close-and-versions) für ausführliche Informationen zur Funktionsweise beider Optionen für Inhaltsfragmente.
 
 ## Modi und Aktionen im Inhaltsfragment-Editor {#modes-actions-content-fragment-editor}
 
@@ -182,9 +179,7 @@ Navigieren Sie mit den Symbolen im seitlichen Bedienfeld durch die vier Modi:
 
 Einige Funktionen in der oberen Symbolleiste stehen in mehreren Modi zur Verfügung:
 
-<!-- screenshot changed from original text see commented out below -->
-
-![Modi](assets/cfm-managing-03.png)
+![Modi](assets/cfm-managing-top-toolbar.png)
 
 * Es wird eine Benachrichtigung angezeigt, wenn das Fragment bereits auf einer Inhaltsseite referenziert wird. Sie können die Nachricht **schließen**
 
@@ -196,21 +191,15 @@ Einige Funktionen in der oberen Symbolleiste stehen in mehreren Modi zur Verfüg
 
 * Zeigen Sie den Status des Fragments an, zum Beispiel Informationen zum Zeitpunkt der Erstellung, Änderung oder Veröffentlichung.
 
-* **Speichern und schließen**
+* Über **Speichern** haben Sie Zugriff auf die Option **Speichern und schließen**.
+
+* Über die drei Punkte (**...**) können Sie auf weitere Aktionen zugreifen:
+   * **Seitenverweise aktualisieren**
+      * Damit werden alle Seitenverweise aktualisiert.
+   * **[Quick Publish](#publishing-and-referencing-a-fragment)**
+   * **[Veröffentlichung verwalten](#publishing-and-referencing-a-fragment)**
 
 <!--
-Some features in the top toolbar are available from multiple modes:
-
-![modes](assets/cfm-managing-top-toolbar.png)
-
-* A message will be shown when the fragment is already referenced on a content page. You can **Close** the message.
-
-* The side panel can be hidden/shown using the **Toggle Side Panel** icon.
-
-* Underneath the fragment name you can see the name of the [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md) used for creating the current fragment:
-
-  * The name is also a link that will open the model editor.
-
 * See the status of the fragment; for example, information about when it was created, modified or published. The status is also color-coded:
 
   * **New**: grey
@@ -218,70 +207,61 @@ Some features in the top toolbar are available from multiple modes:
   * **Published**: green
   * **Modified**: orange
   * **Deactivated**: red
-
-* **Save** provides access to the **Save & close** option.
-  
-* The three dots (**...**) drop-down provides access to additional actions:
-  * **Update page references**
-    * This updates any page references. 
-  * **[Quick publish](#publishing-and-referencing-a-fragment)**
-  * **[Manage Publication](#publishing-and-referencing-a-fragment)**
 -->
 
 <!--
-This updates any page references and ensures that the Dispatcher is flushed as required. -->
+This updates any page references and ensures that the Dispatcher is flushed as required. 
+-->
 
-<!--
-## Save, Close and Versions {#save-close-and-versions}
+## Speichern, Schließen und Versionen {#save-close-and-versions}
 
 >[!NOTE]
 >
->Versions can also be [created, compared and reverted from the Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
+>Versionen können [über die Zeitleiste auch erstellt, verglichen und zurückgesetzt werden](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
-The editor has various options:
+Der Editor bietet mehrere Optionen:
 
-* **Save** and **Save & close**
+* **Speichern** und **Speichern und schließen**
 
-  * **Save** will save the latest changes and remain in the editor.
-  * **Save & close** will save the latest changes and exit the editor.
+   * Mit **Speichern** werden die aktuellen Änderungen gespeichert und der Editor bleibt geöffnet.
+   * Mit **Speichern und schließen** werden die aktuellen Änderungen gespeichert und der Editor wird beendet.
 
-  >[!CAUTION]
-  >
-  >To edit a content fragment you need [the appropriate permissions](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Please contact your system administrator if you are experiencing issues. 
-
-  >[!NOTE]
-  >
-  >It is possible to remain in the editor, making a series of changes, before saving.
-
-  >[!CAUTION]
-  >
-  >In addition to simply saving your changes, the actions also update any references and ensures that the Dispatcher is flushed as required. These changes can take time to process. Due to this, there can be a performance impact on a large/complex/heavily-loaded system.
-  >
-  >Please bear this in mind when using **Save & close** and then quickly re-entering the fragment editor to make and save further changes.
-
-* **Close**
-
-  Will exit the editor without saving the latest changes (i.e made since the last **Save**).
-
-While editing your content fragment AEM automatically creates versions to ensure that prior content can be restored if you cancel your changes (using **Close** without saving):
-
-1. When a content fragment is opened for editing AEM checks for the existence of the cookie-based token that indicates whether an *editing session* exists:
-
-   1. If the token is found, the fragment is considered to be part of the existing editing session.
-   2. If the token is *not* available and the user starts editing content, a version is created and a token for this new editing session is sent to the client, where it is saved in a cookie.
-
-2. While there is an *active* editing session, the content being edited is automatically saved every 600 seconds (default).
+   >[!CAUTION]
+   >
+   >Um ein Inhaltsfragment zu bearbeiten, benötigen Sie [die entsprechenden Berechtigungen](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Wenden Sie sich an Ihren Systemadministrator, falls Probleme auftreten.
 
    >[!NOTE]
    >
-   >The auto save interval is configurable using the `/conf` mechanism.
-   >
-   >Default value, see:
-   >&nbsp;&nbsp;`/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
+   >Es ist möglich, im Fragment-Editor zu bleiben und vor dem Speichern Änderungen vorzunehmen.
 
-3. If the user cancels the edit, the version created at the start of the editing session is restored and the token is removed to end the editing session.
-4. If the user selects to **Save** the edits, the updated elements/variations are persisted and the token is removed to end the editing session.
--->
+   >[!CAUTION]
+   >
+   >Mit der Aktion werden nicht nur einfach Ihre Änderungen gespeichert, sondern auch alle Verweise aktualisiert und sichergestellt, dass der Dispatcher nach Bedarf geleert wird. Es kann einige Zeit dauern, bis diese Änderungen verarbeitet werden. Aus diesem Grund kann die Leistung eines umfassenden/komplexen/stark belasteten Systems beeinträchtigt werden.
+   >
+   >Beachten Sie dies, wenn Sie die Option **Speichern und schließen** auswählen und den Fragment-Editor danach schnell erneut aufrufen, um weitere Änderungen vorzunehmen und zu speichern.
+
+* **Schließen**
+
+   Damit wird der Editor beendet, ohne die neuesten Änderungen zu speichern (also die Änderungen seit dem letzten **Speichern**).
+
+Beim Bearbeiten Ihres Inhaltsfragments erstellt AEM automatisch Versionen, damit ältere Inhalte werden können, falls Sie Ihre Änderungen verwerfen möchten (verwenden Sie dazu die Option **Schließen** ohne zu Speichern):
+
+1. Wenn ein Inhaltsfragment zur Bearbeitung geöffnet ist, überprüft AEM, ob ein Cookie-basiertes Token vorliegt, das angibt, ob eine *Bearbeitungssitzung* vorhanden ist:
+
+   1. Wird das entsprechende Token gefunden, gilt das Fragment als Teil der vorhandenen Bearbeitungssitzung.
+   2. Wenn das Token *nicht* verfügbar ist und der Benutzer mit dem Bearbeiten von Inhalt beginnt, wird eine Version erstellt, und ein Token für diese neue Bearbeitungssitzung wird an den Client gesendet, wo er in einem Cookie gespeichert wird.
+
+2. Während einer *aktiven* Bearbeitungssitzung wird der bearbeitete Inhalt automatisch alle 600 Sekunden gespeichert (Standardeinstellung).
+
+   >[!NOTE]
+   >
+   >Das Intervall für das automatische Speichern kann mit dem Mechanismus `/conf` konfiguriert werden.
+   >
+   >Den Standardwert finden Sie unter:
+   >  `/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
+
+3. Wenn Anwender die Bearbeitung abbrechen, wird die am Anfang der Bearbeitungssitzung erstellte Version wiederhergestellt, und das Token wird zum Beenden der Bearbeitungssitzung entfernt.
+4. Werden die Bearbeitungen über die Option **Speichern** gespeichert, werden die aktualisierten Elemente/Varianten beibehalten und das Token wird zum Beenden der Bearbeitungssitzung entfernt.
 
 ## Bearbeiten des Inhalts Ihres Fragments {#editing-the-content-of-your-fragment}
 
@@ -319,20 +299,14 @@ Neben den Standardoptionen enthält die [Zeitleiste](/help/assets/manage-assets.
    * **Löschen**
 
 >[!NOTE]
->
->Kommentare sind:
->
->* Standardfunktionen für alle Assets
->* In der Zeitleiste erstellt worden
->* Mit dem Fragment-Asset verbunden
+Kommentare sind:
+* Standardfunktionen für alle Assets
+* In der Zeitleiste erstellt worden
+* Mit dem Fragment-Asset verbunden
 
->
->Anmerkungen (für Inhaltsfragmente) sind:
->
->* Im Fragmenteditor eingegeben worden
->* Spezifisch für ein ausgewähltes Textsegment innerhalb des Fragments
-
->
+Anmerkungen (für Inhaltsfragmente) sind:
+* Im Fragmenteditor eingegeben worden
+* Spezifisch für ein ausgewähltes Textsegment innerhalb des Fragments
 
 
 Beispiel:
@@ -362,12 +336,11 @@ Sie werden nebeneinander angezeigt, wobei:
 * Über **Fertig** kehren Sie zur Konsole zurück.
 
 >[!NOTE]
->
->Sie können den Fragmentinhalt nicht bearbeiten, während Sie Fragmente vergleichen.
+Sie können den Fragmentinhalt nicht bearbeiten, während Sie Fragmente vergleichen.
 
 ![Vergleich](assets/cfm-managing-06.png)
 
-## Wiederherstellen einer früheren Version   {#reverting-to-a-version}
+## Wiederherstellen einer früheren Version  {#reverting-to-a-version}
 
 Sie können eine frühere Version wiederherstellen.
 
@@ -380,10 +353,8 @@ Sie können eine frühere Version wiederherstellen.
 ## Veröffentlichen und Referenzieren von Fragmenten {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
->
->Wenn das Fragment auf einem Modell basiert, sollten Sie sicherstellen, dass das [Modell veröffentlicht wurde](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
->
->Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
+Wenn das Fragment auf einem Modell basiert, sollten Sie sicherstellen, dass das [Modell veröffentlicht wurde](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
 
 Inhaltsfragmente müssen veröffentlicht werden, um in der Veröffentlichungsumgebung genutzt werden zu können. Sie können folgendermaßen veröffentlicht werden:
 
@@ -392,8 +363,7 @@ Inhaltsfragmente müssen veröffentlicht werden, um in der Veröffentlichungsumg
 * Wenn Sie [eine Seite veröffentlichen, in der das Fragment verwendet wird](/help/sites-authoring/content-fragments.md#publishing), wird das Fragment in den Seitenverweisen aufgeführt.
 
 >[!CAUTION]
->
->Nachdem ein Fragment veröffentlicht und/oder referenziert wurde, zeigt AEM eine Warnmeldung an, wenn ein Autor das Fragment erneut zur Bearbeitung öffnet. Dies dient als Hinweis darauf, dass am Fragment vorgenommene Änderungen sich auch auf die referenzierten Seiten auswirken.
+Nachdem ein Fragment veröffentlicht und/oder referenziert wurde, zeigt AEM eine Warnmeldung an, wenn ein Autor das Fragment erneut zur Bearbeitung öffnet. Dies dient als Hinweis darauf, dass am Fragment vorgenommene Änderungen sich auch auf die referenzierten Seiten auswirken.
 
 ## Löschen von Fragmenten {#deleting-a-fragment}
 
@@ -403,12 +373,10 @@ So löschen Sie ein Fragment:
 2. Wählen Sie das Fragment aus.
 
    >[!NOTE]
-   >
-   >Die Aktion **Löschen** ist nicht als Schnellzugriff verfügbar.
+   Die Aktion **Löschen** ist nicht als Schnellzugriff verfügbar.
 
 3. Wählen Sie **Löschen** in der Symbolleiste aus.
 4. Bestätigen Sie die **Löschaktion**.
 
    >[!CAUTION]
-   >
-   >Wenn das Fragment bereits in einer Seite referenziert wird, werden Sie in einer Warnung zur Bestätigung des **erzwungenen Löschens** aufgefordert. Das Fragment wird zusammen mit seiner Inhaltsfragmentkomponente aus allen Inhaltsseiten gelöscht.
+   Wenn das Fragment bereits in einer Seite referenziert wird, werden Sie in einer Warnung zur Bestätigung des **erzwungenen Löschens** aufgefordert. Das Fragment wird zusammen mit seiner Inhaltsfragmentkomponente aus allen Inhaltsseiten gelöscht.
