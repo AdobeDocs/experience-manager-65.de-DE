@@ -4,9 +4,9 @@ description: Spezifische Versionshinweise für [!DNL Adobe Experience Manager] 6
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: f2ccc77393e7fc1f53f9976076ec3c66c3f74189
+source-git-commit: 5b62efe65be44416335c6dbbde23ee6a7e5a8fd7
 workflow-type: tm+mt
-source-wordcount: '3728'
+source-wordcount: '3822'
 ht-degree: 4%
 
 ---
@@ -279,7 +279,7 @@ Die folgenden Fehlerbehebungen sind in verfügbar: [!DNL Dynamic Media]:
 
 * Beim Erstellen eines Übersetzungsprojekts führt die zyklische Referenzierung der Seiten zu einem Start, was zu einem Trigger führt (CQ-4332982).
 
-* Der Experience Fragment-Link im übersetzten Experience Fragment und auf der Seite enthält die Launch-Referenz (NPR-37649).
+* Der Link zum Experience Fragment im übersetzten Experience Fragment und auf der Seite enthält die Launch-Referenz (NPR-37649).
 
 ### Sling {#sling-65110}
 
@@ -371,6 +371,17 @@ Need to verify with Engineering, the status is currently showing as Resolved
 **Foundation JEE**
 
 * Nach der Installation von AEM 6.5 Forms Service Pack 9 sind die CRX-Repository-URLs nicht mehr verfügbar (NPR-37592).
+
+**Behobene Probleme in AEM Forms 6.5.11.1**
+
+>[!NOTE]
+>
+>Wenn Sie noch kein Upgrade auf AEM 6.5.11.0 Forms durchgeführt haben, installieren Sie das Add-On-Paket für AEM Forms 6.5.11.1 direkt. Wenn Sie AEM 6.5.11.0 Forms installiert haben, empfiehlt Adobe, auf AEM 6.5.11.1 Forms zu aktualisieren.
+
+* Übermittlungsaktionen, E-Mail senden und Workflow aufrufen funktionieren nach der Installation des Add-On-Pakets Forms 6.5.11.0 nicht mehr.
+* Der Vorgang CreatePDF stoppt die Konvertierung von Microsoft Word-Dokumenten in PDF-Dokumente, nachdem das Add-On-Paket für Forms 6.5.11.0 installiert wurde.
+* (Nur JEE) Kritische Sicherheitslücken (CVE-2021-44228 und CVE-2021-45046), die für Apache Log4j2 gemeldet wurden.
+* (Nur JEE) Assembler DSC in Patch 6.5.11.0 enthält falsche Metainfo-ähnliche Spezifikations-Version und Impl-Version.
 
 
 Informationen zu Sicherheitsupdates finden Sie unter [[!DNL Experience Manager] Seite mit Sicherheitsbulletins](https://helpx.adobe.com/security/products/experience-manager.html).
