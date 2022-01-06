@@ -9,10 +9,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 0125021a-1c00-4ea3-b7fb-1533b7b9f4f2
-source-git-commit: fd973cb3693872e4850f860a625cab70553d2754
+source-git-commit: 014731aa9c5c4d7d419ff8b037142b47e7b7da01
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 46%
+source-wordcount: '910'
+ht-degree: 65%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 46%
 
 >[!NOTE]
 >
-> Suchmaschinenoptimierung (SEO) ist zu einem wichtigen Thema für viele Marketer geworden. Deshalb müssen SEO-Thematiken bei vielen AEM-Projekten berücksichtigt werden. Weitere Informationen finden Sie unter [Best Practices für SEO und URL-Verwaltung](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html) .
+> Suchmaschinenoptimierung (SEO) ist zu einem wichtigen Thema für viele Marketer geworden. Deshalb müssen SEO-Thematiken bei vielen AEM-Projekten berücksichtigt werden. Bitte lesen [Best Practices für SEO und URL-Verwaltung](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html) für weitere Informationen.
 
 [AEM-CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) stellen erweiterte Konfigurationen zum Anpassen der URLs für Produkt- und Kategorieseiten bereit. Viele Implementierungen passen diese URLs für die Suchmaschinen-Optimierung (SEO) an. Im folgenden Video wird beschrieben, wie Sie den `UrlProvider`-Service und die Funktionen der [Sling-Zuordnung](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) konfigurieren, um die URLs für Produkt- und Kategorieseiten anzupassen.
 
@@ -28,15 +28,15 @@ ht-degree: 46%
 
 ## Konfiguration {#configuration}
 
-Um den Dienst `UrlProvider` gemäß den SEO-Anforderungen zu konfigurieren, muss ein Projekt eine OSGi-Konfiguration für die &quot;CIF URL Provider-Konfiguration&quot;bereitstellen.
+Um den Service `UrlProvider` gemäß den SEO-Anforderungen zu konfigurieren, muss ein Projekt eine OSGi-Konfiguration für die „CIF URL-Provider-Konfiguration“ bereitstellen.
 
 >[!NOTE]
 >
 > Seit Version 2.0.0 der AEM CIF-Kernkomponenten bietet die URL-Provider-Konfiguration nur vordefinierte URL-Formate anstelle der von 1.x-Versionen bekannten Freitext-konfigurierbaren Formate. Darüber hinaus wurde die Verwendung von Selektoren zur Übergabe von Daten in URLs durch Suffixe ersetzt.
 
-### URL-Format der Produktseite {#product}
+### URL-Format von Produktseiten {#product}
 
-Dadurch werden die URLs der Produktseiten konfiguriert und die folgenden Optionen unterstützt:
+Dies konfiguriert die URLs der Produktseiten und unterstützt die folgenden Optionen:
 
 * `{{page}}.html/{{sku}}.html#{{variant_sku}}` (default)
 * `{{page}}.html/{{url_key}}.html#{{variant_sku}}`
@@ -44,45 +44,50 @@ Dadurch werden die URLs der Produktseiten konfiguriert und die folgenden Optione
 * `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
 * `{{page}}.html/{{sku}}/{{url_path}}.html#{{variant_sku}}`
 
-Im Fall von [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia):
+Im Fall des [Venia Referenz-Shops](https://github.com/adobe/aem-cif-guides-venia):
 
-* `{{page}}` ersetzt durch  `/content/venia/us/en/products/product-page`
-* `{{sku}}` wird durch die SKU des Erzeugnisses ersetzt, z. B.  `VP09`
-* `{{url_key}}` durch die  `url_key` Eigenschaft des Produkts ersetzt werden, z. B.  `lenora-crochet-shorts`
-* `{{url_path}}` durch die des Produkts ersetzt werden,  `url_path`z. B.  `venia-bottoms/venia-pants/lenora-crochet-shorts`
-* `{{variant_sku}}` wird durch die aktuell ausgewählte Variante ersetzt, z. B.  `VP09-KH-S`
+* `{{page}}` wird durch `/content/venia/us/en/products/product-page` ersetzt
+* `{{sku}}` wird durch die Produkt-SKU ersetzt, z. B. `VP09`
+* `{{url_key}}` durch die `url_key`-Eigenschaft des Produkts ersetzt werden, z. B. `lenora-crochet-shorts`
+* `{{url_path}}` wird durch den `url_path` des Produkts ersetzt, z. B. `venia-bottoms/venia-pants/lenora-crochet-shorts`
+* `{{variant_sku}}` wird durch die aktuell ausgewählte Variante ersetzt, z. B. `VP09-KH-S`
 
-Bei den obigen Beispieldaten sieht eine mit dem Standard-URL-Format formatierte Produktvarianten-URL wie `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S` aus.
+Seit `url_path` veraltet ist, verwenden die vordefinierten Produkt-URL-Formate die `url_rewrites` und wählen Sie das Segment mit den meisten Pfadsegmenten als Alternative aus, wenn die `url_path` ist nicht verfügbar.
 
-### URL-Format der Kategorieseite {#product-list}
+Mit den obigen Beispieldaten sieht eine mit dem Standard-URL-Format formatierte Produktvarianten-URL wie `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S` aus.
 
-Dadurch werden die URLs der Kategorie- oder Produktlistenseiten konfiguriert und die folgenden Optionen unterstützt:
+### URL-Format von Kategorieseiten {#product-list}
+
+Dies konfiguriert die URLs der Kategorieseiten und unterstützt die folgenden Optionen:
 
 * `{{page}}.html/{{url_path}}.html` (Standard)
 * `{{page}}.html/{{url_key}}.html`
 
-Im Fall von [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia):
+Im Fall des [Venia Referenz-Shops](https://github.com/adobe/aem-cif-guides-venia):
 
-* `{{page}}` ersetzt durch  `/content/venia/us/en/products/category-page`
-* `{{url_key}}` wird durch die  `url_key` Eigenschaft der Kategorie ersetzt
-* `{{url_path}}` wird durch die Kategorie  `url_path`
+* `{{page}}` wird durch `/content/venia/us/en/products/category-page` ersetzt
+* `{{url_key}}` wird durch die `url_key`-Eigenschaft der Kategorie ersetzt
+* `{{url_path}}` wird durch den `url_path` der Kategorie ersetzt
 
-Bei den obigen Beispieldaten sieht eine Kategorieseiten-URL, die mit dem Standard-URL-Format formatiert ist, wie `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html` aus.
+Mit den obigen Beispieldaten sieht eine Kategorieseiten-URL, die mit dem Standard-URL-Format formatiert ist, wie `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html` aus.
 
 >[!NOTE]
 > 
-> Der `url_path` ist eine Verkettung aus dem `url_keys` der Vorgänger eines Produkts oder einer Kategorie und dem `url_key`-Schrägstrich des Produkts oder der Kategorie, getrennt durch `/`.
+> Der `url_path` ist eine Verkettung aus dem `url_keys` der Vorgänger eines Produkts oder einer Kategorie und dem `url_key` des Produkts oder der Kategorie, getrennt durch `/`-Schrägstrich.
+
+### Spezifische Kategorie-/Produktseiten {#specific-pages}
+
+Es ist möglich, [mehrere Kategorie- und Produktseiten](multi-template-usage.md) nur für eine bestimmte Untergruppe von Kategorien oder Produkten eines Katalogs.
+
+Die `UrlProvider` ist vorkonfiguriert, um Deep-Links zu solchen Seiten in Autorenebeneninstanzen zu generieren. Dies ist für Bearbeiter nützlich, die eine Site im Vorschaumodus durchsuchen, zu einer bestimmten Produkt- oder Kategorieseite navigieren und zurück in den Bearbeitungsmodus wechseln, um die Seite zu bearbeiten.
+
+Auf Veröffentlichungsebeneninstanzen hingegen sollten Katalogseiten-URLs stabil gehalten werden, um beispielsweise Gewinne bei Suchmaschinenrankings nicht zu verlieren. Aufgrund dieser Veröffentlichungsstufe rendern Instanzen standardmäßig keine Deep-Links zu bestimmten Katalogseiten. Um dieses Verhalten zu ändern, muss die Variable _CIF-URL-Provider-spezifische Seitenstrategie_ kann so konfiguriert werden, dass immer bestimmte Seiten-URLs generiert werden.
 
 ## Benutzerdefinierte URL-Formate {#custom-url-format}
 
-Um ein benutzerdefiniertes URL-Format bereitzustellen, kann ein Projekt die [`UrlFormat`-Schnittstelle](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) implementieren und die Implementierung als OSGi-Dienst registrieren, wobei es entweder als Kategorie- oder Produktseiten-URL-Format verwendet wird. Die Diensteigenschaft `UrlFormat#PROP_USE_AS` gibt an, welche der konfigurierten vordefinierten Formate ersetzt werden sollen:
+Um ein benutzerdefiniertes URL-Format bereitzustellen, kann ein Projekt entweder die [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) oder [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) -Dienstschnittstelle verwenden und die Implementierung als OSGi-Dienst registrieren. Diese Implementierungen ersetzen, sofern verfügbar, das konfigurierte, vordefinierte Format. Wenn mehrere Implementierungen registriert sind, ersetzt die Implementierung mit dem höheren Service-Rang die Implementierung(en) durch das niedrigere Service-Rang.
 
-* `useAs=productPageUrlFormat`ersetzt das konfigurierte URL-Format der Produktseite
-* `useAs=categoryPageUrlFormat`ersetzt das konfigurierte Kategorieseiten-URL-Format
-
-Wenn es mehrere Implementierungen von `UrlFormat` gibt, die als OSGi-Dienste registriert sind, ersetzt die Implementierung mit dem höheren Service-Rang die Implementierung mit dem (den) niedrigeren Service-Rang.
-
-Der `UrlFormat` muss ein Paar von Methoden implementieren, um eine URL aus einer gegebenen Parameterzuordnung zu erstellen und eine URL zu analysieren, um dieselbe Parameterzuordnung zurückzugeben. Die Parameter sind dieselben wie oben beschrieben. Nur für Kategorien wird ein zusätzlicher Parameter `{{uid}}` für `UrlFormat` bereitgestellt.
+Die Implementierungen des benutzerdefinierten URL-Formats müssen zwei Methoden implementieren, um eine URL aus den angegebenen Parametern zu erstellen und eine URL zu analysieren, um dieselben Parameter zurückzugeben.
 
 ## Kombinieren mit Sling-Zuordnungen {#sling-mapping}
 
@@ -103,5 +108,5 @@ Das Projekt [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-
 ## Zusätzliche Ressourcen
 
 * [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia)
-* [AEM-Ressourcenzuordnung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
+* [AEM-Ressourcenzuordnung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html?lang=de)
 * [Sling-Zuordnungen](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
