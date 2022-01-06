@@ -4,9 +4,9 @@ description: Spezifische Versionshinweise für [!DNL Adobe Experience Manager] 6
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 5b62efe65be44416335c6dbbde23ee6a7e5a8fd7
+source-git-commit: 282f634e84b7c6c5e281d2b425953853790f225c
 workflow-type: tm+mt
-source-wordcount: '3822'
+source-wordcount: '3829'
 ht-degree: 4%
 
 ---
@@ -37,6 +37,8 @@ Die wichtigsten Funktionen und Verbesserungen, die in [!DNL Adobe Experience Man
 * Zur Verbesserung des Anwendererlebnisses wird nun die Anzahl der in einem Ordner vorhandenen Assets angezeigt. Für mehr als 1.000 Assets in einem Ordner zeigt [!DNL Assets] „1000+“ an.
 
 * Sie können die Sortieroption jetzt in der Karten- und Spaltenansicht rendern.
+
+* Unterstützung von Geschäftsprofilen für Adobe Asset Link.
 
 * Sie können jetzt [!DNL Dynamic Media] , um allgemeine Einstellungen zu konfigurieren, anstatt die [!DNL Dynamic Media Classic] Desktop-Applikation. Siehe [Allgemeine Dynamic Media-Einstellungen konfigurieren](/help/assets/dm-general-settings.md).
 
@@ -279,7 +281,7 @@ Die folgenden Fehlerbehebungen sind in verfügbar: [!DNL Dynamic Media]:
 
 * Beim Erstellen eines Übersetzungsprojekts führt die zyklische Referenzierung der Seiten zu einem Start, was zu einem Trigger führt (CQ-4332982).
 
-* Der Link zum Experience Fragment im übersetzten Experience Fragment und auf der Seite enthält die Launch-Referenz (NPR-37649).
+* Der Experience Fragment-Link im übersetzten Experience Fragment und auf der Seite enthält die Launch-Referenz (NPR-37649).
 
 ### Sling {#sling-65110}
 
