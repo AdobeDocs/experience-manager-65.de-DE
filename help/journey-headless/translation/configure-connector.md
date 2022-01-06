@@ -1,10 +1,7 @@
 ---
 title: Konfigurieren des Übersetzungs-Connectors
 description: Erfahren Sie, wie Sie AEM mit einem Übersetzungsdienst verbinden.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 7cf68868e0963930bde9fcda647822a03914b61d
+source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
 workflow-type: tm+mt
 source-wordcount: '1164'
 ht-degree: 12%
@@ -78,7 +75,7 @@ So erstellen Sie eine neue Übersetzungskonfiguration:
 
    ![Speicherort der Übersetzungskonfiguration](assets/translation-configuration-location.png)
 
-1. Provide the following information in the fields and then click or tap **Create**.
+1. Geben Sie die folgenden Informationen in die Felder ein und klicken oder tippen Sie auf **Erstellen**.
    1. Wählen Sie **Konfigurationstyp** in der Dropdown-Liste aus. Auswählen **Übersetzungsintegration** aus der Liste.
    1. Geben Sie einen **Titel** für Ihre Konfiguration ein. Mit dem **Titel** wird die Konfiguration auf der **Cloud Services**-Konsole und in Dropdown-Listen mit den Seiteneigenschaften identifiziert.
    1. Geben Sie optional einen **Namen** für den Repository-Knoten ein, auf dem die Konfiguration gespeichert wird.
@@ -132,7 +129,7 @@ Nachdem Sie nun diesen Teil der Headless-Übersetzungs-Journey abgeschlossen hab
 * Machen Sie sich mit den wichtigen Parametern des Translation Integration Framework in AEM vertraut.
 * Sie können Ihre eigene Verbindung zu Ihrem Übersetzungsdienst einrichten.
 
-Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Configure translation rules,](translation-rules.md) where you will learn how to define which content to translate.
+Auf diesen Erkenntnissen aufbauen und Ihre Journey-zur Headless-AEM-Übersetzung fortsetzen, indem Sie das Dokument erneut überprüfen. [Übersetzungsregeln konfigurieren,](translation-rules.md) wo Sie erfahren, wie Sie festlegen, welche Inhalte übersetzt werden sollen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

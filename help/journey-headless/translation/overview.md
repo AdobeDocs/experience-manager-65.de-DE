@@ -1,10 +1,7 @@
 ---
 title: AEM Headless Translation Journey
 description: Beginnen Sie hier für eine geführte Journey durch die Übersetzung Ihrer Headless Content mit AEM leistungsstarken Übersetzungstools.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 7cf68868e0963930bde9fcda647822a03914b61d
+source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 8%

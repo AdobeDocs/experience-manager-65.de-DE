@@ -1,10 +1,7 @@
 ---
 title: Erfahren Sie mehr über das Erstellen von Inhaltsfragmentmodellen in AEM
-description: Learn about the concepts and mechanics of modeling content for your Headless CMS using Content Fragments Models.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 99e7bb800da659fb8494eef2d9b9b87a6f263c21
+description: Erfahren Sie mehr über die Konzepte und Methoden der Modellierung von Inhalten für Ihr Headless-CMS mithilfe von Inhaltsfragmentmodellen.
+source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 16%
@@ -15,7 +12,7 @@ ht-degree: 16%
 
 ## Die Geschichte so weit {#story-so-far}
 
-At the beginning of the [AEM Headless Content Author Journey](overview.md) the [Content Modeling Basics for Headless with AEM](basics.md) covered the basic concepts and terminology relevant to authoring for headless.
+Am Anfang des [AEM Headless Content Author-Journey](overview.md) die [Grundlagen der Inhaltsmodellierung für Headless mit AEM](basics.md) die grundlegenden Konzepte und Terminologie für das Headless-Authoring behandelt.
 
 Dieser Artikel baut auf diesen auf, damit Sie verstehen, wie Sie Ihre eigenen Inhaltsfragmentmodelle für Ihr AEM Headless-Projekt erstellen.
 
@@ -45,11 +42,11 @@ Anschließend können die Inhaltsfragmentmodelle erstellt und die Struktur defin
 
 ![Inhaltsfragmentmodelle in Tools](assets/cfm-tools.png)
 
-Nachdem Sie diese Option ausgewählt haben, navigieren Sie zum Speicherort für Ihr Modell und wählen Sie **Erstellen**. Here you can enter various key details.
+Nachdem Sie diese Option ausgewählt haben, navigieren Sie zum Speicherort für Ihr Modell und wählen Sie **Erstellen**. Hier können Sie verschiedene Schlüsseldetails eingeben.
 
-Die Option **Modell aktivieren** ist standardmäßig aktiviert. This means that your model will be available for use (in creating Content Fragments) as soon as you have saved it. Sie können dies bei Bedarf deaktivieren - es gibt später Möglichkeiten, ein vorhandenes Modell zu aktivieren (oder zu deaktivieren).
+Die Option **Modell aktivieren** ist standardmäßig aktiviert. Das bedeutet, dass Ihr Modell zur Verwendung verfügbar ist (beim Erstellen von Inhaltsfragmenten), sobald Sie es gespeichert haben. Sie können dies bei Bedarf deaktivieren - es gibt später Möglichkeiten, ein vorhandenes Modell zu aktivieren (oder zu deaktivieren).
 
-![Create Content Fragment Model](/help/assets/content-fragments/assets/cfm-models-02.png)
+![Inhaltsfragmentmodell erstellen](/help/assets/content-fragments/assets/cfm-models-02.png)
 
 Bestätigen mit **Erstellen** und Sie können **Öffnen** Ihr Modell verwenden, um die Struktur zu definieren.
 
@@ -63,11 +60,11 @@ Was ist also zu tun?
 
 Sie können Instanzen der **Datentypen** auf den linken Bereich - Sie definieren bereits Ihr Modell!
 
-![Defining fields](/help/assets/content-fragments/assets/cfm-models-04.png)
+![Felder definieren](/help/assets/content-fragments/assets/cfm-models-04.png)
 
-Once you add a data type you&#39;ll be required to define the **Properties** for that field. Diese hängen vom verwendeten Typ ab. Beispiel:
+Nachdem Sie einen Datentyp hinzugefügt haben, müssen Sie die **Eigenschaften** für dieses Feld. Diese hängen vom verwendeten Typ ab. Beispiel:
 
-![Data Properties](/help/assets/content-fragments/assets/cfm-models-05.png)
+![Dateneigenschaften](/help/assets/content-fragments/assets/cfm-models-05.png)
 
 Sie können beliebig viele Felder hinzufügen. Beispiel:
 
@@ -75,7 +72,7 @@ Sie können beliebig viele Felder hinzufügen. Beispiel:
 
 ### Ihre Inhaltsautoren {#your-content-authors}
 
-Ihre Inhaltsautoren sehen nicht die tatsächlichen Datentypen und -eigenschaften, die Sie zum Erstellen Ihrer Modelle verwendet haben. This means that you might have to provide help and information on how they complete specific fields. Für grundlegende Informationen können Sie die Feldbeschriftung und den Standardwert verwenden. Komplexere Fälle können jedoch bedacht werden, um eine projektspezifische Dokumentation zu erhalten.
+Ihre Inhaltsautoren sehen nicht die tatsächlichen Datentypen und -eigenschaften, die Sie zum Erstellen Ihrer Modelle verwendet haben. Dies bedeutet, dass Sie möglicherweise Hilfe und Informationen dazu bereitstellen müssen, wie bestimmte Felder ausgefüllt werden. Für grundlegende Informationen können Sie die Feldbeschriftung und den Standardwert verwenden. Komplexere Fälle können jedoch bedacht werden, um eine projektspezifische Dokumentation zu erhalten.
 
 >[!NOTE]
 >
@@ -85,7 +82,7 @@ Ihre Inhaltsautoren sehen nicht die tatsächlichen Datentypen und -eigenschaften
 
 <!-- needs more details -->
 
-Managing your Content Fragment Models involves:
+Die Verwaltung Ihrer Inhaltsfragmentmodelle umfasst Folgendes:
 
 * Aktivieren (oder Deaktivieren) dieser Funktionen - Dadurch werden sie für Autoren beim Erstellen von Inhaltsfragmenten verfügbar.
 * Löschen - Das Löschen ist immer erforderlich, Sie müssen jedoch wissen, dass Sie ein Modell löschen, das bereits für Inhaltsfragmente verwendet wird, insbesondere für bereits veröffentlichte Fragmente.
@@ -100,7 +97,7 @@ Inhaltsfragmentmodelle müssen zeitgleich mit oder im Vorfeld der Veröffentlich
 >
 >Wenn ein Autor versucht, ein Inhaltsfragment zu veröffentlichen, für das das Modell noch nicht veröffentlicht wurde, wird dies in einer Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
 
-As soon as a model is published it is *locked* into a READ-ONLY mode on author. Dadurch soll verhindert werden, dass Änderungen zu Fehlern an vorhandenen GraphQL-Schemas und -Abfragen führen, insbesondere in der Veröffentlichungsumgebung. Sie wird in der Konsole durch **Gesperrt**.
+Sobald ein Modell veröffentlicht wird, wird es *locked* in einen SCHREIBGESCHÜTZTEN Modus auf der Autoreninstanz. Dadurch soll verhindert werden, dass Änderungen zu Fehlern an vorhandenen GraphQL-Schemas und -Abfragen führen, insbesondere in der Veröffentlichungsumgebung. Sie wird in der Konsole durch **Gesperrt**.
 
 Wenn das Modell **Gesperrt** (im schreibgeschützten Modus) Sie können den Inhalt und die Struktur der Modelle anzeigen, sie jedoch nicht direkt bearbeiten. Sie können **Gesperrt** Modelle aus der Konsole oder dem Modell-Editor.
 
@@ -112,7 +109,7 @@ Nachdem Sie die Grundlagen gelernt haben, besteht der nächste Schritt darin, Ih
 
 * [Authoring – Konzepte](/help/sites-authoring/author.md)
 
-* [Basic Handling](/help/sites-authoring/basic-handling.md) - this page is primarily based on the **Sites** console, but many/most features are also relevant for navigating to, and taking action on, **Content Fragment Models** under the **Assets** console.
+* [Grundlegende Handhabung](/help/sites-authoring/basic-handling.md) - Diese Seite basiert hauptsächlich auf der **Sites** -Konsole, aber viele/die meisten Funktionen sind auch für die Navigation zu und für die Durchführung von Aktionen relevant. **Inhaltsfragmentmodelle** unter **Assets** Konsole.
 
 * [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md)
 
