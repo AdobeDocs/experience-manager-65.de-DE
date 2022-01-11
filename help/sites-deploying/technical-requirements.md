@@ -6,10 +6,10 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 1aad655a141fd2137875ae829d1b698298dfe285
+source-git-commit: 7630a6c4d908144e384b705bfce72779803aea93
 workflow-type: tm+mt
-source-wordcount: '3253'
-ht-degree: 83%
+source-wordcount: '3340'
+ht-degree: 80%
 
 ---
 
@@ -95,18 +95,22 @@ Adobe Experience Manager funktioniert mit den folgenden Versionen von Java Virtu
   <tr>
    <td><strong>Plattform</strong></td>
    <td><strong>Unterstützungsebene</strong></td>
+   <td><strong>Verknüpfung</strong></td>
   </tr>
   <tr>
    <td>Azul Zulu OpenJDK 11 - 64 Bit</td>
    <td>A: Unterstützt (1)</td>
+   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24</td>
   </tr>
   <tr>
    <td>Azul Zulu OpenJDK 8 - 64 Bit</td>
    <td>A: Unterstützt (1)</td>
+   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=18</td>
   </tr>
   <tr>
    <td>Oracle Java SE 11 JDK – 64 Bit</td>
    <td>A: Unterstützt (2)</td>
+   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24<td>
   </tr>
   <tr>
    <td>Oracle Java SE 10 JDK</td>
@@ -119,6 +123,7 @@ Adobe Experience Manager funktioniert mit den folgenden Versionen von Java Virtu
   <tr>
    <td>Oracle Java SE 8 JDK – 64 Bit</td>
    <td>A: Unterstützt (2)</td>
+   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10<td>
   </tr>
   <tr>
    <td>IBM J9 VM - Build 2.9, JRE 1.8.0</td>
