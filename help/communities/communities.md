@@ -1,8 +1,8 @@
 ---
 title: Entwickeln von Communities
-seo-title: Entwickeln von Communities
+seo-title: Developing Communities
 description: Community-Funktionen wie Foren, Benutzergruppen und mehr erstellen und anpassen
-seo-description: Community-Funktionen wie Foren, Benutzergruppen und mehr erstellen und anpassen
+seo-description: Create and customize community features such as forums, user groups, and more
 uuid: 51dc54da-9090-4d36-adf9-72d5479062a5
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,20 +10,20 @@ topic-tags: developing
 content-type: reference
 discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
 exl-id: 3ed3768a-1b3c-45a1-a34c-61694cd407d9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '392'
 ht-degree: 10%
 
 ---
 
-# Entwicklung von Communities {#developing-communities}
+# Entwickeln von Communities  {#developing-communities}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 AEM Communities vereinfacht die Erstellung und Anpassung von Community-Funktionen wie Foren, Benutzergruppen, Blogs, Fragen und Antworten, Kalendern, Kommentaren, Rezensionen, Abstimmungen, Bewertungen und Zuweisungen. Diese Funktionen führen dazu, dass benutzergenerierte Inhalte (UGC) in die Veröffentlichungsumgebung eingegeben werden.
 
-Die Grundlage einer [Community-Site](overview.md#communitiessites) ist das [Social-Komponenten-Framework](scf.md) (SCF). Die Erstellung einer Community-Site beginnt mit der Auswahl einer [Community-Site-Vorlage](sites-console.md), die aus [Community-Funktionen](functions.md) besteht.
+Die Grundlage eines [Community-Site](overview.md#communitiessites) ist die [Social-Komponenten-Framework](scf.md) (SCF). Die Erstellung einer Community-Site beginnt mit der Auswahl eines [Community-Site-Vorlage](sites-console.md) , das aus [Community-Funktionen](functions.md).
 
 Einen Überblick und die ersten Schritte finden Sie unter:
 
@@ -33,7 +33,7 @@ Einen Überblick und die ersten Schritte finden Sie unter:
 
 >[!NOTE]
 > 
->Es wird dringend empfohlen, mit den [aktuellen Versionen](deploy-communities.md#latest-releases) auf dem Laufenden zu bleiben.
+>Es wird dringend empfohlen, mit dem [neueste Versionen](deploy-communities.md#latest-releases).
 
 ## Empfohlene Bereitstellungen {#recommended-deployments}
 
@@ -48,11 +48,11 @@ Einen Überblick und die ersten Schritte finden Sie unter:
 * [Serverseitige Anpassung](server-customize.md): Anpassen des Codes, der auf dem Server ausgeführt wird.
 * [Storage Resource Provider (SRP)](srp.md): Übersicht über die Speicherung von Community-Inhalten.
 * [Kodierungsrichtlinien](code-guide.md): Richtlinien, Tipps und Tricks.
-* [Handbuch](components-guide.md) zu Community-Komponenten: interaktives Entwicklungstool.
+* [Handbuch zu Community-Komponenten](components-guide.md): interaktives Entwicklungstool.
 
-## Komponenten-, Funktionen- und Funktionsgrundlagen {#component-function-and-feature-essentials}
+## Komponenten, Funktionen und Funktionsgrundlagen {#component-function-and-feature-essentials}
 
-AEM Communities-Komponenten, -Funktionen und -Funktionen stellen die Bausteine für [Community-Sites](sites-console.md) bereit.
+AEM Communities-Komponenten, -Funktionen und -Funktionen stellen die Bausteine für [Community-Sites](sites-console.md).
 
 * [Komponenten, Funktionen und Funktionsgrundlagen](essentials.md)
 * [Clientlibs für Communities-Komponenten](clientlibs.md)
@@ -67,7 +67,7 @@ AEM Communities-Komponenten, -Funktionen und -Funktionen stellen die Bausteine f
 
 ## Community-Gruppen {#community-groups}
 
-[Community-](overview.md#communitygroups) Gruppierungen ermöglichen es Community-Mitgliedern, Untergruppen innerhalb der Community-Site zu bilden. Die Erstellung einer Community-Gruppe kann in der Veröffentlichungs- oder Autorenumgebung erfolgen.
+[Community-Gruppen](overview.md#communitygroups) ist das Konzept, es Community-Mitgliedern zu ermöglichen, Untergruppen innerhalb der Community-Site zu bilden. Die Erstellung einer Community-Gruppe kann in der Veröffentlichungs- oder Autorenumgebung erfolgen.
 
 * [Community-Gruppengrundlagen](essentials-groups.md)
 * [Gruppenfunktion](functions.md#groups-function)
@@ -77,8 +77,8 @@ AEM Communities-Komponenten, -Funktionen und -Funktionen stellen die Bausteine f
 
 ## Verwalten von Daten {#managing-data}
 
-* [SRP und UGC Essentials](srp-and-ugc.md)  - SRP API-Dienstprogrammmethoden und Beispiele
-* [Tag-Grundlagen](tag.md)  - Möglichkeit für Community-Mitglieder, benutzergenerierte Inhalte und/oder katalogisierte Aktivierungsressourcen zu taggen
+* [Grundlagen zu SRP und UGC](srp-and-ugc.md) - Methoden und Beispiele für SRP-API-Dienstprogramme
+* [Tag-Grundlagen](tag.md) - Möglichkeit für Community-Mitglieder, UGC und/oder katalogisierte Aktivierungsressourcen zu taggen
 
 ## Tutorials {#tutorials}
 
@@ -89,12 +89,12 @@ AEM Communities-Komponenten, -Funktionen und -Funktionen stellen die Bausteine f
 ## Fehlerbehebung {#troubleshooting}
 
 * [Fehlerbehebung](troubleshooting.md)
-* [Bekannte Probleme](/help/release-notes/known-issues.md)
+* [Bekannte Probleme](/help/release-notes/release-notes.md)
 
 ## Communities-Dokumentation zu ähnlichen Themen {#related-communities-documentation}
 
-* Besuchen Sie [Communities bereitstellen](deploy-communities.md) , um mehr über die empfohlenen Bereitstellungen und die Dispatcher-Konfiguration zu erfahren.
+* Besuch [Bereitstellen von Communities](deploy-communities.md) , um mehr über empfohlene Bereitstellungen und die Dispatcher-Konfiguration zu erfahren.
 
-* Besuchen Sie [Verwalten von Communities-Sites](administer-landing.md) , um mehr über die Erstellung einer Community-Site, die Konfiguration von Community-Site-Vorlagen, die Moderation von Community-Inhalten, die Verwaltung von Mitgliedern und die Konfiguration von Messaging zu erfahren.
+* Besuch [Verwalten von Communities-Sites](administer-landing.md) , um mehr über die Erstellung einer Community-Site, die Konfiguration von Community-Site-Vorlagen, die Moderation von Community-Inhalten, die Verwaltung von Mitgliedern und die Konfiguration von Messaging zu erfahren.
 
-* Besuchen Sie [Erstellen von Communities-Komponenten](author-communities.md) , um zu erfahren, wie Sie Communities-Komponenten erstellen und konfigurieren.
+* Besuch [Erstellen von Communities-Komponenten](author-communities.md) , um zu erfahren, wie Sie Communities-Komponenten erstellen und konfigurieren.

@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: User
 feature: Asset Management,Search
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: eb7051582a51d983851c876025770668b258bff5
+source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
 source-wordcount: '9878'
 ht-degree: 59%
@@ -338,7 +338,7 @@ Die Funktion hat einige Einschränkungen:
 * Wenn sich ein gleichnamiger Ordner am Ziel befindet, werden die Assets aus der ZIP-Datei in diesen extrahiert.
 * Wenn Sie die Extrahierung abbrechen, werden die bereits extrahierten Assets nicht gelöscht.
 * Sie können nicht gleichzeitig zwei ZIP-Dateien auswählen und extrahieren. Sie können jeweils nur ein ZIP-Archiv extrahieren.
-* Wenn beim Hochladen eines ZIP-Archivs im Dialogfeld &quot;Hochladen&quot;ein 500-Server-Fehler angezeigt wird, versuchen Sie es nach der Installation erneut. [das neueste Service Pack](/help/release-notes/sp-release-notes.md).
+* Wenn beim Hochladen eines ZIP-Archivs im Dialogfeld &quot;Hochladen&quot;ein 500-Server-Fehler angezeigt wird, versuchen Sie es nach der Installation erneut. [das neueste Service Pack](/help/release-notes/release-notes.md).
 
 ## Anzeigen einer Vorschau für Assets {#previewing-assets}
 

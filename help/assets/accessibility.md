@@ -1,14 +1,14 @@
 ---
 title: Barrierefreie Funktionen und Schnittstellen von [!DNL Experience Manager Assets]
-description: Erfahren Sie, wie die Funktionen für die Barrierefreiheit in [!DNL Adobe Experience Manager] 6.5 [!DNL Assets]  Benutzern mit Behinderungen helfen.
+description: Erfahren Sie, wie Barrierefreiheitsfunktionen in [!DNL Adobe Experience Manager] 6,5 [!DNL Assets] -Hilfe für Benutzer mit Behinderungen.
 contentOwner: AG
-feature: Asset-Management
+feature: Asset Management
 role: User, Architect, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 399ae241593b5cc14ef1c2efd090f0d1fae7c2df
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 90%
+source-wordcount: '1924'
+ht-degree: 89%
 
 ---
 
@@ -43,7 +43,7 @@ Possible topics to cover in this article are below.
 
 Einen Bericht mit Details zum Grad der Konformität finden Sie auf der Seite [Konformitätsbericht zur Barrierefreiheit](https://www.adobe.com/accessibility/compliance.html) (ACR).
 
-Informationen zum Zugriff auf [!DNL Dynamic Media] finden Sie unter [Barrierefreiheit in [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
+So erfahren Sie [!DNL Dynamic Media] ist barrierefrei, siehe [Barrierefreiheit in [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 
 ## Hilfstechnologien {#at-support}
 
@@ -55,7 +55,7 @@ Benutzer mit Behinderungen verlassen sich häufig auf Hardware und Software, um 
 * Hilfs-Hardware, einschließlich Switch-Steuerungen, aktualisierbarer Braille-Displays und anderer Computer-Eingabegeräte.
 * Tools zum Vergrößern der Benutzeroberfläche.
 
-## [!DNL Experience Manager Assets]-Anwendungsfälle, die möglich sind  {#accessible-assets-use-cases}
+## [!DNL Experience Manager Assets]-Anwendungsfälle, die möglich sind {#accessible-assets-use-cases}
 
 In [!DNL Experience Manager] decken die Funktionen für Barrierefreiheit zwei wichtige Anforderungen von [!DNL Experience Manager]-Benutzern und ihren Kunden ab.
 
@@ -66,7 +66,7 @@ Die Kernfunktionen in [!DNL Assets] sind leichter zugänglich als zuvor und werd
 
 ## Unterstützung für die Verwendung der Tastatur {#keyboard-use}
 
-Viele Elemente der Benutzeroberfläche, die mit einem Zeiger angeklickt oder bearbeitet werden können, können auch mit der Tastatur genutzt werden. Mithilfe einer Tastatur können Benutzer auf Elemente der Benutzeroberfläche fokussieren und eine gewünschte Aktion ausführen. Benutzer können direkt Tastaturbefehle verwenden, um einen Befehl oder eine Aktion auszulösen, ohne sich auf UI-Elemente konzentrieren zu müssen. Beispielsweise können Benutzer die Timeline eines Assets auf der linken Seite der Benutzeroberfläche öffnen, indem sie mit der Tastatur zum Benutzeroberflächensteuerelement navigieren, `Return` auswählen und `Alt + 2` den Tastaturbefehl auswählen.
+Viele Elemente der Benutzeroberfläche, die mit einem Zeiger angeklickt oder bearbeitet werden können, können auch mit der Tastatur genutzt werden. Mithilfe einer Tastatur können Benutzer auf Elemente der Benutzeroberfläche fokussieren und eine gewünschte Aktion ausführen. Benutzer können direkt Tastaturbefehle verwenden, um einen Befehl oder eine Aktion auszulösen, ohne sich auf UI-Elemente konzentrieren zu müssen. Beispielsweise können Benutzer die Timeline eines Assets auf der linken Seite der Benutzeroberfläche öffnen, indem sie das Steuerelement der Benutzeroberfläche über eine Tastatur aufrufen und auswählen `Return`und wählen Sie `Alt + 2` Tastaturbefehl verwenden.
 
 <!-- TBD items:
 
@@ -143,7 +143,7 @@ Beim Durchsuchen des Asset-Repositorys wird Barrierefreiheit durch folgende Funk
 * Die Elemente in den einzelnen Zeilen der Listenansicht werden von Sprachausgaben als Elemente derselben Zeile vorgetragen.
 * Wenn Sie mit der `Tab`-Taste navigieren, kann der Fokus auf die Option zum Schließen in der Versionsvorschau verschoben werden.
 * Wenn Sie zum Durchsuchen die Tastatur verwenden, weisen die hervorgehobenen ausführbaren Optionen der Benutzeroberfläche einen auffälligeren visuellen Fokus mit erhöhtem Kontrast auf. Dadurch wird der fokussierte Bereich für den Benutzer leichter erkennbar.
-* Bei Verwendung der `Esc`-Taste zum Entfernen der Schnellzugriffssymbole aus der Miniaturansicht wird der Tastaturfokus nicht vom zuletzt fokussierten Element entfernt.
+* Bei Verwendung der `Esc`-Taste zum Entfernen der Schnellzugriffssymbole aus der Miniatur wird der Tastaturfokus nicht vom zuletzt fokussierten Element entfernt.
 * Wenn ein Asset ausgewählt ist, wird durch Auswahl des Tastaturbefehls `Alt + 4` die Liste [!UICONTROL Referenzen] in der linken Leiste geöffnet. Mithilfe der `Tab`-Taste können Benutzer durch die Referenzeinträge navigieren, die nicht gleich null sind. Wenn Sie nur die Referenzeinträge durchsuchen, die nicht gleich null sind, sparen Sie auch Arbeitsaufwand und Tastenanschläge.
 * Kommentare zu einem Asset sind in der Asset-Zeitleiste verfügbar. Sie ist verfügbar, wenn über eine Tastatur oder einen Tastaturbefehl auf die linke Leiste zugegriffen wird.
 * Die [!UICONTROL Anzeigeeinstellungen] in [!DNL Experience Manager] sind über eine Tastatur zugänglich. Benutzer können mithilfe der Pfeiltasten durch die verfügbaren Kartengrößen sowie durch die Registerkarten navigieren und in der Ansicht „Anzeigeeinstellungen“ andere Elemente auswählen.
@@ -225,7 +225,7 @@ Verwenden Sie die folgenden Methoden, um Feedback zu geben, Fragen zu stellen un
 >[!MORELIKETHIS]
 >
 >* [Barrierefreiheitsfunktionen in [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
->* [Versionshinweise zu Verbesserungen, die in den einzelnen Service Pack-Versionen](/help/release-notes/new-features-latest-service-pack.md) vorgenommen wurden.
+>* [Versionshinweise zu Verbesserungen in den einzelnen Service Pack-Versionen](/help/release-notes/release-notes.md).
 >* Hinweise zur Barrierefreiheit in [[!DNL Adobe Experience Manager] ](/help/managing/web-accessibility.md).
 >* [Konformitätsberichte (ACR) und VPAT-Liste für Adobe-Lösungen](https://www.adobe.com/accessibility/compliance.html).
 

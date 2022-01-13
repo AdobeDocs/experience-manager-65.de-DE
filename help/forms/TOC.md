@@ -8,10 +8,10 @@ user-guide-title: Adobe Experience Manager 6.5, Forms-Anleitung
 breadcrumb-title: Forms-Anleitung
 user-guide-description: Digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren.
 role: User
-source-git-commit: d010b2a20e40fabe40f67d60ef0b6fab245be60f
+source-git-commit: 7962d076135bcbac821ff85fd1831ee2c444ff00
 workflow-type: tm+mt
-source-wordcount: '3777'
-ht-degree: 70%
+source-wordcount: '3772'
+ht-degree: 71%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 70%
 
 + [Handbuch zu AEM 6.5 Forms](home.md)
 + Versionshinweise {#release-notes-new-features}
-   + [Versionshinweise](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html#experience-manager-forms)
+   + [Versionshinweise](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=de)
    + [Zusammenfassung der neuen Funktionen](using/whats-new.md)
-   + [Veraltete Funktionen](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/deprecated-removed-features.html)
+   + [Veraltete Funktionen](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html)
 + Erste Schritte {#getting-started}
    + [Einführung in AEM Forms](using/introduction-aem-forms.md)
    + [Einführung in das Authoring adaptiver Formulare](using/introduction-forms-authoring.md)
@@ -620,7 +620,7 @@ ht-degree: 70%
          + [Schnellstarts zur Repository Service-API](developing/repository-service-api-quick-starts.md)
          + [Signature Service Java API QuickStart(SOAP)](developing/signature-service-java-api-quick.md)
          + [Task Manager Service Java API QuickStart(SOAP)](developing/task-manager-service-java-api.md)
-         + [Schnellstart für Java-API in User Manager (SOAP)](developing/user-manager-java-api-quick.md)
+         + [Schnellstart für User Manager Java API (SOAP)](developing/user-manager-java-api-quick.md)
          + [XMP Utilities Service Java APIQuick Start(SOAP)](developing/xmp-utilities-service-java-api.md)
       + AEM Forms on JEE mithilfe von APIs aufrufen {#invoking-aem-forms-jee-apis}
          + [Aufrufen von AEM Forms mithilfe von REST-Anforderungen](developing/invoking-aem-forms-using-rest.md)
