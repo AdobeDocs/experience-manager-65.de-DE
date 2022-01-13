@@ -2,9 +2,9 @@
 title: Bekannte Probleme
 description: Spezifische Versionshinweise zu bekannten Problemen mit Adobe Experience Manager 6.5
 exl-id: 736037cf-af8c-4ce2-969e-c100a939a038
-source-git-commit: e0f024c2e1dc9fc7908382d406844575b4b38363
+source-git-commit: d87e48070329518117f84252ea0cab0471d74a29
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '661'
 ht-degree: 48%
 
 ---
@@ -46,6 +46,10 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 1. Speichern Sie die Datei und starten Sie die AEM-Instanz neu.
 
+## Sites {#sites}
+
+* **Arbeiten mit Seitenversionen**: Wenn eine Seite verschoben wurde, können Sie keine Vorschau mehr für Versionen anzeigen, die vor dem Verschieben vorgenommen wurden.
+
 ## Assets {#assets}
 
 * **Suchen:** Die Suche führt nicht zu Rückgaben, wenn die Suchzeichenfolge vorangestellte Leerzeichen enthält ([OAK-4786](https://issues.apache.org/jira/browse/OAK-4786))
@@ -69,7 +73,7 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 * Wenn ein adaptives Formular so konfiguriert ist, dass die Werte einer Komponente dynamisch aktualisiert werden, und auf die Veröffentlichungsinstanz, die das Formular hostet, über den Dispatcher zugegriffen wird, kann die Funktion zum dynamischen Aktualisieren von Feldwerten nicht mehr verwendet werden. Um das Problem zu beheben, öffnen Sie in der Veröffentlichungsinstanz CRXDE, navigieren Sie zu `/libs/fd/af/runtime/clientlibs/guideChartReducer`und erstellen Sie die unten aufgeführte Eigenschaft.
 
    * Name: allowProxy
-   * Typ: Boolesch
+   * Typ: Boolean
    * Value: True
    * Protected: False
    * Mandatory: False
@@ -80,4 +84,4 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 * Wenn AEM Forms gestartet wird, wird die `SAX Security Manager could not be setup` angezeigt.
 * Wenn Sie eine mit AEM Forms Document Security geschützte PDF auf einem Apple iOS oder iPadOS mit Adobe Acrobat Reader-Version 20.10.00 öffnen.
-* Wenn Sie ein Formular mit einem standardmäßigen HTML-Upload-Feld von einem Apple iOS-Gerät senden, wird jetzt der Inhalt der Datei zuverlässig gesendet und am anderen Ende wird keine Datei mit 0 Byte mehr empfangen. Apple iOS 15.1 bietet eine Fehlerbehebung.
+* Fehlerkorrektur – Wenn Sie ein Formular mit einem standardmäßigen HTML-Upload-Feld von einem Apple iOS-Gerät senden, wird der Inhalt der Datei jetzt zuverlässig gesendet. Apple iOS 15.1 bietet eine Korrektur für das Problem.
