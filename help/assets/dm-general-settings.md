@@ -8,13 +8,13 @@ content-type: reference
 feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
-source-git-commit: 1a410c7b71f0e329b327a7f7f05137fcd220fb6a
+exl-id: 55cc7c57-87a0-4bfb-b226-36d01d36849a
+source-git-commit: 9c548dbc0157607adda5ed76cab8ef970588e1e9
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2498'
 ht-degree: 34%
 
 ---
-
 
 # Allgemeine Dynamic Media-Einstellungen konfigurieren
 
@@ -70,9 +70,13 @@ Bei der Kontoerstellung stellt Adobe Dynamic Media automatisch die zugewiesenen 
 
    Adobe Dynamic Media lässt zwei Dateien mit demselben Namen nicht zu. Die Dynamic Media ID der Adobe jedes Elements (der Bildname abzüglich der Dateinamenerweiterung) muss eindeutig sein. Aufgrund dieser Regel **[!UICONTROL In Anwendung hochladen]** hat eine Überschreibungsmöglichkeit. Der genaue Effekt dieser Option hängt von der ausgewählten Option Bilder überschreiben ab. Diese Optionen geben an, wie Ersatzbilder hochgeladen werden: ob sie die Originalbilder ersetzen oder zu duplizierten Bildern werden. Doppelte Bilder werden mit einer `-1`. Beispiel: `chair.tif` wird umbenannt `chair-1.tif`. Diese Optionen wirken sich auf Bilder aus, die in einen anderen Ordner als das Original hochgeladen wurden, oder auf Bilder mit einer anderen Dateinamenerweiterung als das Original, z. B. JPG, TIF oder PNG.
 
+   >[!NOTE]
+   >
+   >Wählen Sie die Option Bilder überschreiben , um die Konsistenz mit dem Experience Manager sicherzustellen **[!UICONTROL Im aktuellen Ordner denselben Basisnamen/dieselbe Erweiterung überschreiben]**.
+
    | Option &quot;Bilder überschreiben&quot; | Beschreibung |
    | --- | --- |
-   | **[!UICONTROL Im akt. Ordner Assets mit ident. Namen und ident. Erweiterung überschreiben]** | Nur für neue Dynamic Media-Konten Standard.<br>Diese Option ist die strengste Ersetzungsregel. Das Ersatzbild muss in den Ordner des Originalbilds hochgeladen werden und dieselbe Dateierweiterung haben wie das Originalbild. Wenn diese Voraussetzungen nicht erfüllt sind, wird ein Duplikat erstellt. |
+   | **[!UICONTROL Im akt. Ordner Assets mit ident. Namen und ident. Erweiterung überschreiben]** | *Standard* nur für neue Dynamic Media-Konten.<br>Diese Option ist die strengste Ersetzungsregel. Das Ersatzbild muss in den Ordner des Originalbilds hochgeladen werden und dieselbe Dateierweiterung haben wie das Originalbild. Wenn diese Voraussetzungen nicht erfüllt sind, wird ein Duplikat erstellt.<br>*Wählen Sie diese Option aus, um die Konsistenz mit dem Experience Manager sicherzustellen*. |
    | **[!UICONTROL Im akt. Ordner Assets mit ident. Namen unabh. von Erweiterung überschreiben]** | Erfordert das Hochladen des Ersatzbilds in denselben Ordner wie das Originalbild, die Dateinamenerweiterung kann jedoch vom Original abweichen. Beispielsweise ersetzt &quot;chair.tif&quot;die Datei &quot;chair.jpg&quot;. |
    | **[!UICONTROL In belieb. Ordner Assets mit ident. Namen und ident. Erweit. überschreiben]** | Setzt voraus, dass das Ersatzbild dieselbe Dateierweiterung wie das Originalbild hat (beispielsweise muss chair.jpg die Datei &quot;chair.jpg&quot;ersetzen, nicht jedoch die Datei &quot;chair.tif&quot;). Sie können das Ersatzbild jedoch in einen anderen Ordner hochladen als den, in dem sich das Original befindet. Das hochgeladene Bild bleibt dann im neuen Ordner; die Datei befindet sich also nicht mehr am ursprünglichen Speicherort.. |
    | **[!UICONTROL In belieb. Ordner Assets mit ident. Namen unabh. von Erweit. überschreiben]** | Diese Option ist die am wenigsten einschränkende Ersetzungsregel. Sie können ein Ersatzbild in einen anderen Ordner hochladen als den, in dem sich das Originalbild befindet, und eine Datei mit einer anderen Dateierweiterung verwenden, um die Originaldatei zu ersetzen. Wenn sich die Originaldatei in einem anderen Ordner befindet, bleibt das Ersatzbild in dem neuen Ordner, in den es hochgeladen wurde. |
