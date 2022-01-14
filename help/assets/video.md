@@ -12,10 +12,10 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: c1eb9fb56cf9024ff58adec644a40e3def52e62a
+source-git-commit: e8270ad3f658236184467eda9f25c2ec0e6787ba
 workflow-type: tm+mt
-source-wordcount: '11747'
-ht-degree: 78%
+source-wordcount: '11766'
+ht-degree: 77%
 
 ---
 
@@ -56,7 +56,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
       * Weitere Informationen zum [Organisieren digitaler Assets](/help/assets/organize-assets.md)
    * Laden Sie die Primärvideos in die Ordner hoch. Wenn Sie dem Ordner Videos hinzufügen, werden diese gemäß dem diesem Ordner zugewiesenen Videoverarbeitungsprofil kodiert.
 
-      * Dynamic Media unterstützt hauptsächlich kurze Videos mit einer maximalen Länge von 30 Minuten.
+      * Dynamic Media unterstützt hauptsächlich Kurzformvideos mit einer maximalen Länge von 30 Minuten und einer Mindestauflösung von mehr als 50 x 50.
       * Sie können Videodateien mit bis zu 15 GB pro Datei hochladen.
       * [Videos hochladen](/help/assets/managing-video-assets.md#upload-and-preview-video-assets)
       * Weitere Informationen zu [Unterstützten Eingabedateiformaten](/help/assets/assets-formats.md#supported-multimedia-formats)
@@ -300,7 +300,7 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 
 Verwenden Sie zum Kodieren einer Videodatei eine Quellvideodatei mit der höchstmöglichen Qualität. Verwenden Sie keine zuvor kodierten Videodateien, da diese Dateien bereits komprimiert wurden und die weitere Kodierung zu mangelhafter Videoqualität führen würde.
 
-* Dynamic Media unterstützt Kurzformvideos mit einer maximalen Länge von 30 Minuten.
+* Dynamic Media unterstützt hauptsächlich Kurzformvideos mit einer maximalen Länge von 30 Minuten und einer Mindestauflösung von mehr als 50 x 50.
 * Sie können Videodateien mit einer Größe von bis zu 15 GB als Primärquelle hochladen.
 
 Die folgende Tabelle beschreibt die empfohlenen Werte für Größe, Seitenverhältnis und Mindest-Bitrate, die Quellvideos vor der Kodierung aufweisen sollten:
