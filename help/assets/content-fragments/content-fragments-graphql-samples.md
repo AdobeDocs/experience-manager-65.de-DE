@@ -2,10 +2,11 @@
 title: Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen
 description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
 feature: Content Fragments,GraphQL API
-source-git-commit: 94145c6428f61e31f6784a3d6ea67aa8d81cedd6
+exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
+source-git-commit: 1a3d5a6b3b4f7af67d6a62cdaab484daa536cb63
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 100%
+source-wordcount: '1416'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +38,7 @@ In diesen Beispielabfragen wird das Erstellen von Abfragen zusammen mit Beispiel
 
 >[!NOTE]
 >
->Abhängig von Ihrer Instanz können Sie direkt auf die in der [AEM-GraphQL-API enthaltene Graph *i* QL-Schnittstelle](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) zugreifen, um Abfragen zu senden und zu testen.
+>Je nach Instanz können Sie direkt auf die [Die mit AEM GraphQL-API enthaltene GraphQL-Oberfläche](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) zum Senden und Testen von Abfragen.
 >
 >Beispiel: `http://localhost:4502/content/graphiql.html`
 
@@ -1608,4 +1609,4 @@ Die folgenden Fragmente werden für das entsprechende Modell verwendet.
 | San Francisco |  USA |  883306 |  city:beach<br>city:na |
 | San José |  USA |  102635 |  city:na |
 | Stuttgart |  Deutschland |  634830 |  city:emea |
-|  Zürich |  Schweiz |  415367 |  city:chapter<br>city:emea |
+|  Zürich |  Schweiz |  415367 |  Stadt:Hauptstadt<br>city:emea |
