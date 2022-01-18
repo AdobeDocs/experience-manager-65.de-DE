@@ -2,9 +2,9 @@
 title: Versionshinweise für [!DNL Adobe Experience Manager] 6,5
 description: '[!DNL Adobe Experience Manager]Informationen zu  6.5 mit Versionshinweisen, Angaben zu neuen Funktionen und zur Installation sowie ausführlichen Änderungslisten.'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 13c76122a38e32783bca248597a16f0512dae44c
+source-git-commit: 1cfa01544ad8bf0adafd55e696a6844a8edf1007
 workflow-type: tm+mt
-source-wordcount: '3906'
+source-wordcount: '3894'
 ht-degree: 5%
 
 ---
@@ -35,8 +35,6 @@ Die wichtigsten Funktionen und Verbesserungen, die in [!DNL Adobe Experience Man
 * Zur Verbesserung des Anwendererlebnisses wird nun die Anzahl der in einem Ordner vorhandenen Assets angezeigt. Für mehr als 1.000 Assets in einem Ordner zeigt [!DNL Assets] „1000+“ an.
 
    ![Anzahl der Assets in einem Ordner](/help/assets/assets/browse-folder-number-of-assets.png)
-
-* Sie können die Sortieroption jetzt in der Karten- und Spaltenansicht rendern.
 
 * Unterstützung von Geschäftsprofilen für Adobe Asset Link.
 
@@ -561,7 +559,7 @@ Zwischen dem 26. August 2021 und dem 25. November 2021 veröffentlichte Adobe zu
 
 * [!DNL Adobe Experience Manager] as a Cloud Service [2021.9.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-9-0.html) und [2021.10.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de).
 
-* [[!DNL Experience Manager] Desktop-Programm 2.1 (2.1.3.4)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+* [[!DNL Experience Manager] Desktop-Programm 2.1 (2.1.3.4)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=de).
 
 * [Experience Manager Screens: Feature Pack 202109](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202109.html?lang=de)
 
