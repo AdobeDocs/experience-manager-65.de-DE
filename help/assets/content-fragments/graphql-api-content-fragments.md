@@ -3,9 +3,9 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) mit der AEM GraphQL-API für die Bereitstellung Headless Content verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 6c75af3957c319c38177cd62c90e781a982ba91b
+source-git-commit: e7a2a4ad89a58e5fad0acb521adb100cf0bcd1d8
 workflow-type: tm+mt
-source-wordcount: '3919'
+source-wordcount: '3942'
 ht-degree: 97%
 
 ---
@@ -587,6 +587,10 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
    * Verwenden Sie `... on`
       * Siehe [Beispielabfrage für ein Inhaltsfragment eines bestimmten Modells mit einer Inhaltsreferenz](#sample-wknd-fragment-specific-model-content-reference)
 
+* Fallback bei der Abfrage verschachtelter Fragmente:
+
+   * Wenn die angeforderte Variante nicht in einem verschachtelten Fragment vorhanden ist, wird die **Übergeordnet** -Variante zurückgegeben.
+
 ## Persistente Abfragen (Caching) {#persisted-queries-caching}
 
 Nachdem eine Abfrage mit einer POST-Anfrage vorbereitet wurde, kann sie mit einer GET-Anfrage ausgeführt werden, die von HTTP-Caches oder einem CDN zwischengespeichert werden kann.
@@ -815,7 +819,7 @@ Für den Zugriff auf den GraphQL-Endpunkt über eine externe Website müssen Sie
 
 >[!NOTE]
 >
->Einen detaillierten Überblick über die CORS-Richtlinie zur gemeinsamen Nutzung von Ressourcen in AEM finden Sie unter [Grundlegendes zur gemeinsamen Nutzung gemeinsamer Ressourcen (Cross-Origin Resource Sharing – CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors)).
+>Einen detaillierten Überblick über die CORS-Richtlinie zur gemeinsamen Nutzung von Ressourcen in AEM finden Sie unter [Grundlegendes zur gemeinsamen Nutzung gemeinsamer Ressourcen (Cross-Origin Resource Sharing – CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=de#understand-cross-origin-resource-sharing-(cors)).
 
 Um auf den GraphQL-Endpunkt zugreifen zu können, muss eine CORS-Richtlinie im Git-Repository des Kunden konfiguriert werden. Dazu wird eine entsprechende OSGi-CORS-Konfigurationsdatei für den/die gewünschten Endpunkt(e) hinzugefügt.
 
