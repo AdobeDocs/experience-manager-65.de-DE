@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: f1c8660d36a1e84b57d4d1a65a54d153bc373dc6
+source-git-commit: b4c3f4c393d9b34acaadc375d20738ead42e481d
 workflow-type: tm+mt
-source-wordcount: '2975'
+source-wordcount: '2979'
 ht-degree: 94%
 
 ---
@@ -29,7 +29,7 @@ Für [!DNL Sites]-Autoren stehen die Remote-Assets als schreibgeschützte lokale
 Bevor Sie diese Funktion verwenden oder konfigurieren, stellen Sie Folgendes sicher:
 
 * Die Benutzer sind Teil von entsprechenden Benutzergruppen für jede Implementierung.
-* Bei Implementierungstypen von [!DNL Adobe Experience Manager] ist eines der unterstützten Kriterien erfüllt. [!DNL Experience Manager] 6,5 [!DNL Assets] arbeitet mit [!DNL Experience Manager] as a Cloud Service. Weitere Informationen zur Funktionsweise dieser Funktion finden Sie unter [!DNL Experience Manager] as a [!DNL Cloud Service], siehe [Connected Assets in [!DNL Experience Manager] as a [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
+* Bei Implementierungstypen von [!DNL Adobe Experience Manager] ist eines der unterstützten Kriterien erfüllt. [!DNL Experience Manager] 6,5 [!DNL Assets] arbeitet mit [!DNL Experience Manager] as a Cloud Service. Weitere Informationen zur Funktionsweise dieser Funktion finden Sie unter [!DNL Experience Manager] as a [!DNL Cloud Service], siehe [Verbundene Assets in Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] auf AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] On-Premise |
    |---|---|---|---|
