@@ -1,8 +1,6 @@
 ---
 title: Arbeiten mit 3D-Assets in Dynamic Media
-seo-title: Working with 3D assets in Dynamic Media
 description: Erfahren Sie, wie Sie in Dynamic Media mit 3D-Assets arbeiten.
-seo-description: Learn how to work with 3D assets in Dynamic Media
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
@@ -10,10 +8,10 @@ content-type: reference
 feature: 3D Assets,Asset Management
 role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
-source-git-commit: 9f08d529af0ec37d2bd2a4f479a172c6c950c47d
+source-git-commit: a13d6d10dd10605d2cb83a8622fae3a7e2590c93
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 79%
+source-wordcount: '2317'
+ht-degree: 77%
 
 ---
 
@@ -27,7 +25,7 @@ Mit Dynamic Media können Sie 3D-Assets hochladen, verwalten, anzeigen und als e
 
 Für die Verwendung von 3D-Assets in Dynamic Media ist keine zusätzliche Konfiguration erforderlich.
 
-![Schuh in 3D](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png)
+![Schuhe in 3D](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png) *Detailseite eines dreidimensionalen Schuhs.*
 
 <!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
 
@@ -43,6 +41,10 @@ Siehe auch [Unterstützte 3D-Formate](/help/assets/assets-formats.md).
 | OBJ | WaveFront 3D-Objektdatei | application/x-tgif |  |
 | STL | Stereolithografie | application/vnd.ms-pki.stl |  |
 | USDZ | Universelles Scene Description-Zip-Archiv | model/vnd.usdz+zip | *Nur Erfassung unterstützt, keine Anzeige oder Interaktion möglich.* USDZ ist ein proprietäres 3D-Format, das von Safari- und iOS-Geräten nativ angezeigt werden kann. |
+
+<!-- >[!NOTE]
+>
+>The 3D Media WCM component and 3D preview on an asset's Details page is not compatible with the latest version of Chrome (97.x). Instead, to work with 3D assets, use Firefox or Safari, or use an earlier version of Chrome (96.x). -->
 
 ## Schnellstart: Arbeiten mit 3D-Assets in Dynamic Media {#quick-start-three-d}
 
@@ -86,7 +88,7 @@ Siehe [Dynamic Media Cloud Services konfigurieren](/help/assets/config-dms7.md#c
 
 ## Wissenswertes über das Anzeigen von und Interagieren mit 3D-Assets {#viewing-three-d-assets}
 
-In diesem Abschnitt wird beschrieben, wie Sie 3D-Assets auf zwei verschiedene Arten anzeigen und mit ihnen arbeiten können: auf der Seite „Asset-Details“ und in der 3D-Medien-Komponente in Sites.
+In diesem Abschnitt wird beschrieben, wie Sie 3D-Assets auf zwei verschiedene Arten anzeigen und damit interagieren: von der Asset-Detailseite und von der 3D-Medien-Komponente in Experience Manager Sites aus.
 
 Der interaktive 3D-Viewer bietet unter anderem eine Reihe interaktiver Kamera-Steuerelemente, mit denen Sie die Kamera um das 3D-Asset drehen sowie Zoom- und Schwenkvorgänge durchführen können.
 
