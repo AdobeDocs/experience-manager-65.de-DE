@@ -4,16 +4,17 @@ description: Mit AEM eCommerce können Marketingexperten personalisierte Marken-
 topic-tags: e-commerce
 content-type: reference
 docset: aem65
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '733'
-ht-degree: 88%
+ht-degree: 87%
 
 ---
 
 # E-Commerce{#ecommerce}
 
-* [Konzepte ](/help/commerce/cif-classic/administering/concepts.md)
+* [Konzepte](/help/commerce/cif-classic/administering/concepts.md)
 * [Verwaltung (generisch)](/help/commerce/cif-classic/administering/generic.md)
 
 Adobe bietet zwei Versionen des Commerce-Integrations-Frameworks:
@@ -40,7 +41,7 @@ Adobe bietet zwei Versionen des Commerce-Integrations-Frameworks:
     </ul> </td>
    <td>
     <ul>
-     <li>Magento</li>
+     <li>Adobe Commerce</li>
      <li>Java &amp; Javascript</li>
      <li>Keine Commerce-Daten im JCR-Repository gespeichert</li>
     </ul> </td>
@@ -80,12 +81,12 @@ Adobe bietet zwei Versionen des Commerce-Integrations-Frameworks:
   <tr>
    <td>Standardisiertes Datenmodell</td>
    <td>Nein</td>
-   <td>Ja, Magento GraphQL-Schema</td>
+   <td>Ja, Adobe Commerce GraphQL-Schema</td>
   </tr>
   <tr>
    <td>Verfügbarkeit</td>
    <td><p>Ja. SAP Commerce Cloud (Erweiterung aktualisiert, um AEM 6.4 und Hybris 5 (standardmäßig) zu unterstützen und Kompatibilität mit Hybris 4 zu gewährleisten)</p> <p>Salesforce Commerce Cloud (Open-Source-Connector zur Unterstützung von AEM 6.4)</p> </td>
-   <td>Ja, über Open Source von GitHub. Magento Commerce (unterstützt Magento 2.3.2 (standardmäßig) und ist mit Magento 2.3.1 kompatibel).</td>
+   <td>Ja, über Open Source von GitHub. Adobe Commerce (unterstützt 2.3.2 (Standard) und kompatibel mit 2.3.1).</td>
   </tr>
   <tr>
    <td>Wann ist sie einzusetzen?</td>
@@ -127,7 +128,7 @@ Die Implementierung ermöglicht den Echtzeitzugriff auf Produktdaten. Damit läs
 
 AEM eCommerce bietet Folgendes:
 
-* Eine Reihe von **vordefinierten AEM Komponenten**, um zu veranschaulichen, was für Ihr Projekt erreicht werden kann:
+* Einige **vordefinierte AEM** , um zu veranschaulichen, was für Ihr Projekt erreicht werden kann:
 
    * Produktanzeige
    * Warenkorb
@@ -151,7 +152,7 @@ AEM eCommerce bietet Folgendes:
 
    ![](/help/sites-administering/assets/chlimage_1-131.png)
 
-* Verwendet die AEM Möglichkeit, **Ihre Inhalte auf mehreren Kanälen** anzuzeigen, sei es in diesem vollständigen Browserfenster oder Mobilgerät. So stehen die Inhalte in dem Format bereit, das Ihre Besucher benötigen.
+* Verwendet die AEM Möglichkeit, **Inhalt auf mehreren Kanälen präsentieren**, sei es das vollständige Browserfenster oder Mobilgerät. So stehen die Inhalte in dem Format bereit, das Ihre Besucher benötigen.
 
    ![](/help/sites-administering/assets/chlimage_1-132.png)
 

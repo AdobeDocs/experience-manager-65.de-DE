@@ -6,9 +6,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
-source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '4524'
+source-wordcount: '4514'
 ht-degree: 81%
 
 ---
@@ -33,7 +33,7 @@ Das heißt:
 >
 >Das eCommerce-Framework kann mit Folgendem verwendet werden:
 >
->* [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
+>* [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
 >* [SAP Commerce Cloud](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
 >* [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
 
@@ -152,14 +152,14 @@ Dennoch müssen Sie für ein Projekt in der Regel einen eigenen, angepassten Com
 >
 >Die Geometrixx-Importtools nutzen CSV-Dateien. In den Kommentaren über ihre Implementierung finden Sie eine Beschreibung des akzeptierten Schemas (samt der zulässigen benutzerdefinierten Eigenschaften).
 
-Der [ProductServicesManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) verwaltet (über [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) eine Liste der Implementierungen der [ProductImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html)- und [CatalogBlueprintImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html)-Schnittstelle. Diese sind im Dropdown-Feld **Importer/Commerce Provider** des Importtool-Assistenten aufgeführt (unter Verwendung der `commerceProvider`-Eigenschaft als Name).
+Der [ProductServicesManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) verwaltet (über [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) eine Liste der Implementierungen der [ProductImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html)- und [CatalogBlueprintImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html)-Schnittstelle. Diese werden im **Importer/Commerce-Anbieter** Dropdown-Feld des Importtool-Assistenten (mit dem `commerceProvider` -Eigenschaft als Namen).
 
 Wenn ein bestimmtes Importtool/ein bestimmter Commerce-Anbieter im Dropdown-Feld verfügbar ist, müssen Sie alle weiteren benötigten Daten (je nach Art des Importtools) definieren, unter einem der folgenden Pfade:
 
 * `/apps/commerce/gui/content/catalogs/importblueprintswizard/importers`
 * `/apps/commerce/gui/content/products/importproductswizard/importers`
 
-Der Ordner unter dem entsprechenden Ordner `importers` muss mit dem Namen des Importtools übereinstimmen. Beispiel:
+Der Ordner unter dem entsprechenden `importers` -Ordner muss mit dem Importtool-Namen übereinstimmen; Beispiel:
 
 * `.../importproductswizard/importers/geometrixx/.content.xml`
 
@@ -204,13 +204,13 @@ Durch die Unterscheidung der folgenden beiden Kategorien können Sie deutliche U
 
 * *Struktur *Kategorien
 
-   Die Kategorienstruktur, die *Was ist ein Produkt* definiert; Beispiel:
+   Kategoriestruktur, die *Was ist ein Produkt*; Beispiel:
 
    `/products/mens/shoes/sneakers`
 
-* ** Marketing-Kategorien
+* *Marketing* categories
 
-   Alle anderen Kategorien, zu denen ein *Produkt gehören kann, können* sein. Beispiel:
+   Alle anderen Kategorien a *-Produkt kann*; Beispiel:
 
    `/special-offers/christmas/shoes`)
 
@@ -223,7 +223,7 @@ Produktdaten können:
 * direkt in AEM verwaltet werden (allgemein)
 * in der eCommerce-Engine verwaltet und in AEM bereitgestellt werden
 
-   Je nach Datentyp ist er bei Bedarf [synchronisiert](#catalog-maintenance-data-synchronization) oder wird direkt aufgerufen. Beispielsweise werden bei jeder Seitenanforderung hochgradig flüchtige und wichtige Daten wie Produktpreise von der eCommerce-Engine abgerufen, um sicherzustellen, dass sie immer auf dem neuesten Stand sind.
+   Je nach Datentyp ist es [synchronisiert](#catalog-maintenance-data-synchronization) gegebenenfalls oder direkt aufgerufen werden; Beispielsweise werden bei jeder Seitenanforderung hochgradig flüchtige und wichtige Daten wie Produktpreise von der eCommerce-Engine abgerufen, um sicherzustellen, dass sie immer auf dem neuesten Stand sind.
 
 In jedem Fall können Sie die Produktdaten nach der Eingabe bzw. dem Import in AEM über die **Produktekonsole** einsehen. Hier finden Sie in der Karten- und der Listenansicht eines Produkts u. a. folgende Informationen:
 
@@ -423,7 +423,7 @@ Beachten Sie bei allen Implementierungen die folgenden Punkte:
 * Vermeiden Sie Duplikate, so gut es geht (siehe Lokalisierung), und berücksichtigen Sie, wenn sich Duplikate nicht umgehen lassen, zu wie vielen Knoten die Duplizierung führen wird.
 * Versuchen Sie, Ihre Inhalte so oft wie möglich mit Tags zu kennzeichnen, um die Abfrage zu optimieren.
 
-   Zum Beispiel:
+   Beispiel:
 
    `/content/products/france/fr/shoe/reebok/pump/46 SKU`
 
@@ -563,11 +563,11 @@ Eine Promotion kann entweder in einem Erlebnis oder direkt in der Kampagne erfas
 
 * Wenn eine Promotion in einem Erlebnis erfasst ist, kann sie automatisch auf ein Zielgruppensegment angewendet werden.
 
-   Beispielsweise wird auf der Beispielsite geometrixx-outdoors die Promotion ausgeführt:
+   Beispielsweise die Promotion auf der Beispielsite geometrixx-outdoors:
 
    `/content/campaigns/geometrixx-outdoors/big-spender/ordervalueover100/free-shipping`
 
-   sich in einem Erlebnis befindet, wird also immer dann automatisch ausgelöst, wenn das Segment ( `ordervalueover100`) aufgelöst wird.
+   sich in einem Erlebnis befindet, wird also immer dann automatisch ausgelöst, wenn das Segment ( `ordervalueover100`) aufgelöst.
 
 * Wenn eine Promotion nicht in einem Erlebnis angezeigt wird (also nur in der Kampagne), kann sie nicht automatisch auf eine Zielgruppe angewendet werden. Es kann jedoch trotzdem ausgelöst werden, wenn der Käufer einen Gutschein in seinen Warenkorb eingibt und dieser Gutschein auf die Promotion verweist.
 
@@ -636,7 +636,7 @@ Single Sign-On wird bereitgestellt, damit Benutzer beim AEM- und beim eCommerce-
 
 Transaktionsdaten von der eCommerce-Engine werden mit personenbezogenen Daten zum Käufer kombiniert. AEM nutzt einige dieser Daten als Profildaten. Eine Formularaktion in AEM schreibt Daten zurück in die eCommerce-Engine.
 
-Es gibt eine Seite, auf der Sie Ihre Kontoinformationen einfach verwalten können. Sie können darauf zugreifen, indem Sie oben auf einer Geometrixx-Seite auf **Mein Konto** klicken oder zu `/content/geometrixx-outdoors/en/user/account.html` navigieren.
+Es gibt eine Seite, auf der Sie Ihre Kontoinformationen einfach verwalten können. Sie können darauf zugreifen, indem Sie auf **Mein Konto** oben auf einer Geometrixx-Seite oder durch Navigieren zu `/content/geometrixx-outdoors/en/user/account.html`.
 
 ![chlimage_1-13](/help/sites-administering/assets/chlimage_1-13.png)
 
@@ -652,7 +652,7 @@ Mit der Adressbuch-Komponente können Sie:
 
 Sie können auswählen, welche Adresse Sie als Standard festlegen möchten.
 
-Die Adressbuchkomponente kann über die Seite **Mein Konto** erreicht werden, indem Sie auf **Adressbuch** klicken oder zu `/content/geometrixx-outdoors/en/user/account/address-book.html` navigieren.
+Die Adressbuchkomponente ist über die **Mein Konto** Seite durch Klicken auf **Adressbuch** oder navigieren Sie zu `/content/geometrixx-outdoors/en/user/account/address-book.html`.
 
 ![chlimage_1-14](/help/sites-administering/assets/chlimage_1-14.png)
 
@@ -666,7 +666,7 @@ Das Adressbuch kommt zum Einsatz, wenn Sie den Warenkorb bezahlen:
 
 ![chlimage_1-15](/help/sites-administering/assets/chlimage_1-15.png)
 
-Adressen werden unter `user_home/profile/addresses` beibehalten.
+Adressen werden unten beibehalten `user_home/profile/addresses`.
 Für Alison Parker wäre dies beispielsweise unter /home/users/geometrixx/aparker@geometrixx.info/profile/addresses
 
 Sie können auswählen, welche Adresse Sie als Standard festlegen möchten. Diese Information wird im Käuferprofil gespeichert, nicht zusammen mit der Anschrift. Die Profileigenschaft `address.default` wird mit dem Pfad der ausgewählten Adresse für den Wert festgelegt.
@@ -719,14 +719,14 @@ Der Warenkorb wird je nach verwendeter Engine gespeichert:
 * Die generische AEM-Version speichert den Warenkorb in einem Cookie.
 * Bestimmte eCommerce-Engines können den Warenkorb in einer Sitzung speichern.
 
-In jedem Fall bleiben die Artikel im Warenkorb (und können wiederhergestellt werden), wenn sich der Käufer ab- und wieder anmeldet (allerdings nur auf demselben Rechner/im selben Browser). Zum Beispiel:
+In jedem Fall bleiben die Artikel im Warenkorb (und können wiederhergestellt werden), wenn sich der Käufer ab- und wieder anmeldet (allerdings nur auf demselben Rechner/im selben Browser). Beispiel:
 
-* Suchen Sie nach `anonymous` und fügen Sie Produkte zum Warenkorb hinzu.
-* anmelden als `Allison Parker` - ihr Warenkorb ist leer
+* Durchsuchen als `anonymous` und Produkte zum Warenkorb hinzufügen
+* anmelden als `Allison Parker` - ihr Warenkorb leer ist
 * Fügen Sie Produkte zu ihrem Warenkorb hinzu.
-* Abmelden - der Warenkorb zeigt die Produkte für `anonymous` an
+* Abmelden - der Warenkorb zeigt die Produkte für `anonymous`
 
-* Melden Sie sich erneut als `Allison Parker` an - Ihre Produkte werden wiederhergestellt
+* Melden Sie sich erneut an als `Allison Parker` - ihre Erzeugnisse wiederhergestellt werden
 
 >[!NOTE]
 >
@@ -734,7 +734,7 @@ In jedem Fall bleiben die Artikel im Warenkorb (und können wiederhergestellt we
 
 >[!NOTE]
 >
->Es wird nicht empfohlen, die Wiederherstellung des Warenkorbinhalts mit dem Konto `admin` zu testen, da dies mit dem Konto `admin` der eCommerce-Engine (z. B. hybris) in Konflikt geraten kann.
+>Es wird nicht empfohlen, die Wiederherstellung des Warenkorbinhalts mit dem `admin` -Konto, da dies mit dem `admin` Konto der eCommerce-Engine (z. B. hybris).
 
 >[!NOTE]
 >
@@ -836,7 +836,7 @@ Nachdem sie eine Bestellung aufgegeben haben, kehren Käufer häufig zurück, um
 
 Nach dem Erhalt der Lieferung möchten Käufer möglicherweise die Bestellungen einsehen, die sie in einem bestimmten Zeitraum aufgegeben haben.
 
-Die Erfüllung und die Nachverfolgung von Bestellungen werden in der Regel von der eCommerce-Engine verwaltet. Informationen können AEM über die Komponente Auftragsverlauf angezeigt werden, die alle relevanten Details einschließlich der angewendeten Gutscheine und Promotions anzeigt. Zum Beispiel:
+Die Erfüllung und die Nachverfolgung von Bestellungen werden in der Regel von der eCommerce-Engine verwaltet. Informationen können AEM über die Komponente Auftragsverlauf angezeigt werden, die alle relevanten Details einschließlich der angewendeten Gutscheine und Promotions anzeigt. Beispiel:
 
 ![chlimage_1-17](/help/sites-administering/assets/chlimage_1-17.png)
 

@@ -1,13 +1,13 @@
 ---
 title: AEM Content and Commerce - Versionshinweise 2021
 description: AEM Content and Commerce - Versionshinweise 2021
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1328'
 ht-degree: 10%
 
 ---
-
 
 # Übersicht über die Commerce Integration Framework GitHub-Version
 
@@ -45,9 +45,9 @@ ht-degree: 10%
 
 * Neue Karussellkomponente für Kategorie hinzugefügt, damit geschäftliche Benutzer diese Komponente per Drag-and-Drop auf AEM Inhaltsseiten verschieben können, um Inhaltsseiten mit Commerce-Daten anzureichern.
 
-* CIF-Kernkomponenten wurden erweitert, um die Adobe Client Data Layer durch Senden von Commerce-Daten zu hydrieren. Die Adobe Client-Datenschicht ist eine standardisierte Methode zur Erfassung von Daten und zur Kommunikation der Daten mit digitalen Analyse- und Reporting-Servern. Weitere Informationen finden Sie unter [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer/wiki).
+* CIF-Kernkomponenten wurden erweitert, um die Adobe Client Data Layer durch Senden von Commerce-Daten zu hydrieren. Die Adobe Client-Datenschicht ist eine standardisierte Methode zur Erfassung von Daten und zur Kommunikation der Daten mit digitalen Analyse- und Reporting-Servern. Weitere Informationen finden Sie unter [Adobe Client-Datenschicht](https://github.com/adobe/adobe-client-data-layer/wiki).
 
-* Produktdetailseiten und Produktlisten wurden erweitert, um SEO-Metadaten (z. B. Titel, Meta-Beschreibung, Meta-Keywords) automatisch zu füllen, die über die Magento Admin-Benutzeroberfläche konfiguriert wurden.
+* Produktdetailseiten und Produktlisten wurden erweitert, um SEO-Metadaten (wie Titel, Meta-Beschreibung, Meta-Keywords) automatisch zu füllen, die über die Administrator-Benutzeroberfläche von Adobe Commerce konfiguriert wurden.
 
 * Fehler der Commerce-Teaser-Komponente behoben.
 
@@ -61,7 +61,7 @@ ht-degree: 10%
 
 ### Neue Funktionen {#what-is-new-september}
 
-* Unterstützt Abfragen für das Schema Magento 2.4.0.
+* Unterstützt Abfragen für das Adobe Commerce 2.4.0-Schema.
 
 * Kontoinformationen wurden hinzugefügt, damit Käufer personenbezogene Daten aktualisieren können.
 
@@ -71,7 +71,7 @@ ht-degree: 10%
 
 * Unterstützung für gebündelte Produktarten verfügbar.
 
-* Entwickler können die HTML-Tags für Produktkarussell, verwandte Produkte und vorgestellte Kategorielisten-Komponenten konfigurieren, um die Best Practices für SEO einzuhalten.
+* Entwickler können die HTML-Tags für Produktkarussell, verwandte Produkte und vorgestellte Kategorielisten-Komponenten konfigurieren, um SEO-Best Practices zu befolgen.
 
 * Mein Konto hat Fehler behoben.
 
@@ -165,11 +165,11 @@ Dies ist die erste Version der CIF-Kernkomponenten, die von Adobe Experience Man
 
 ### Neue Funktionen {#what-is-new-may}
 
-* Unterstützt Abfragen für das Schema Magento 2.3.5.
+* Unterstützt Abfragen für das Adobe Commerce 2.3.5-Schema.
 
 * Die Unterstützung für die Facettensuche wurde der Suchseite und der Produktlistenseite hinzugefügt, damit Käufer Suchergebnisse anhand von Produktfacetten filtern können.
 
-* Neuer OSGi-Dienst wurde hinzugefügt, um PDP/PLP-URLs für SEO-Zwecke anzupassen. Weitere Informationen finden Sie in dieser [Dokumentation](https://github.com/adobe/aem-core-cif-components/wiki/configuration).
+* Neuer OSGi-Dienst wurde hinzugefügt, um PDP/PLP-URLs für SEO-Zwecke anzupassen. Weiterführende Informationen dazu finden Sie in diesem Abschnitt [Dokumentation](https://github.com/adobe/aem-core-cif-components/wiki/configuration).
 
 * Produktbindung wird automatisch erstellt, wenn eine Cloud-Konfiguration erstellt wird.
 
@@ -189,7 +189,7 @@ Dies ist die erste Version der CIF-Kernkomponenten, die von Adobe Experience Man
 
 ### Neue Funktionen {#what-is-new-april}
 
-* Konfigurationseinstellungen für CIF Connector vereinheitlicht und vereinfacht. Weitere Informationen finden Sie unter [Erste Schritte](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html) oder [Neue AEM CIF-Projekteinstellungen](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html#!AdobeDocs/commerce-cif-documentation/master/getting-started/02-new-cif-project.md)
+* Konfigurationseinstellungen für CIF Connector vereinheitlicht und vereinfacht. Weitere Details zum Checkout [Erste Schritte](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html) oder [Neue AEM CIF-Projekteinstellungen](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html#!AdobeDocs/commerce-cif-documentation/master/getting-started/02-new-cif-project.md)
 
 ### Verbesserte Funktionen {#what-is-improved-april}
 
@@ -213,7 +213,7 @@ Dies ist die erste Version der CIF-Kernkomponenten, die von Adobe Experience Man
 
 ### Neue Funktionen {#what-is-new-february}
 
-* Unterstützt Abfragen für das Schema Magento 2.3.4.
+* Unterstützt Abfragen für das Adobe Commerce 2.3.4-Schema.
 
 * Zusätzliche Suchunterstützung in der Kategorieauswahl.
 

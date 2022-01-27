@@ -2,10 +2,10 @@
 title: AEM Content and Commerce - Versionshinweise 2021
 description: AEM Content and Commerce - Versionshinweise 2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: 98ba3edb3b9e93fa13a0f0418f1b17323d5a7233
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 33%
+source-wordcount: '1314'
+ht-degree: 41%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 33%
 
 | Komponente | Systemanforderungen |
 |:-------|:-----:|
-| CIF-Add-on | Minimum: AEM 6.5.7, Magento 2.3.5 GraphQL-Schemata |
+| CIF-Add-on | Minimum: AEM 6.5.7, Adobe Commerce 2.3.5 GraphQL-Schemas |
 | CIF-Kernkomponenten | [Systemanforderungen](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM-Projektarchetyp | [Systemanforderungen](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
@@ -53,7 +53,7 @@ ht-degree: 33%
 
 * Autoren können mithilfe des Rich-Text-Editors (RTE) Links zu Produkt- und Katalogseiten in Textfeldern hinzufügen. Der RTE-Symbolleiste wurde ein CIF-Symbol hinzugefügt, über das die Auswahl geöffnet wird, um das Produkt oder die Kategorie schnell zu suchen und auszuwählen, ohne den Kontext zu verlassen.
 
-* Bestehende Popup-Warenkorb- und Kassenvorgänge wurden durch spezielle AEM Warenkorb- und Checkout-Seiten ersetzt. Die Komponenten auf diesen Seiten werden mithilfe der erweiterbaren Peregrine-Komponenten von Magento erstellt
+* Bestehende Popup-Warenkorb- und Kassenvorgänge wurden durch spezielle AEM Warenkorb- und Checkout-Seiten ersetzt. Die Komponenten auf diesen Seiten werden mithilfe der erweiterbaren Peregrenzen-Komponenten von Adobe Commerce erstellt
 
 * Händler können bestimmte Produktkatalogkategorien in der Navigation mithilfe des Commerce-Backend ausblenden. Die CIF-Navigations-Kernkomponente respektiert die Commerce-Backend-Konfiguration &quot;Einbeziehen in Menü&quot;, um Kategorien in der Navigation ein-/auszublenden
 
@@ -69,23 +69,23 @@ ht-degree: 33%
 
 ### Neue Funktionen {#what-is-new-september}
 
-* Die neue Registerkarte &quot;Zugehörige Commerce-Inhalte&quot;im Sites-Editor erhöht die Autoreneffizienz, indem schnell auf relevante AEM Produktinhalte für den aktuellen Kontext zugegriffen wird.
+* Die neue Registerkarte „Zugehörige Commerce-Inhalte“ im Sites-Editor erhöht die Autoreneffizienz, indem schnell auf relevante AEM-Produktinhalte für den aktuellen Kontext zugegriffen werden kann.
 
    ![Zugehörige Commerce-Inhalte](/help/assets/CIF/associated-commerce-content.png)
 
-* Verbesserte Benutzeroberfläche für die Produktauswahl für bessere Benutzererfahrung, höhere Effizienz und Unterstützung für komplexen Produktkatalog
+* Verbesserte Benutzeroberfläche für die Produktauswahl für ein besseres Benutzererlebnis, höhere Effizienz und Unterstützung für einen komplexen Produktkatalog
 
    ![Neue Produktauswahl](/help/assets/CIF/product-picker.png)
 
-* Die Eigenschaft &quot;include_in_menu&quot;in der Navigationskomponente respektieren
+* Berücksichtigung der Eigenschaft „include_in_menu“ in der Navigationskomponente
 
 ### Fehlerbehebungen {#bug-fixes-september}
 
-* Das Leeren des Menücache funktioniert nicht erwartungsgemäß
+* Das Leeren des Menücache funktioniert jetzt erwartungsgemäß
 
-* JS-Fehler während AEM CS-Bereitstellungsschritts und bei Nichtverwendung clientseitiger Komponenten
+* JS-Fehler während AEM CS-Bereitstellungsschritts und bei Nichtverwendung Client-seitiger Komponenten tritt nicht mehr auf
 
-* CIF-Cloud-Konfiguration kann nicht in Ordnern erstellt werden, die einen sling:configs -Knoten haben
+* CIF-Cloud-Konfiguration kann jetzt auch in Ordnern erstellt werden, die einen sling:configs-Knoten haben
 
 ## Releasedatum: August 2021
 
@@ -97,7 +97,7 @@ ht-degree: 33%
 
 ### Neue Funktionen {#what-is-new-august}
 
-* Neue Kategorieauswahl-Benutzeroberfläche für verbesserte Benutzererfahrung, höhere Effizienz und bessere Unterstützung komplexer Produktkataloge
+* Neue Kategorieauswahl-Benutzeroberfläche für ein verbessertes Benutzererlebnis, höhere Effizienz und bessere Unterstützung komplexer Produktkataloge
 
    ![Neue Kategorieauswahl](/help/assets/CIF/category-picker.png)
 
@@ -195,7 +195,7 @@ ht-degree: 33%
 
 ### Neuerungen
 
-* Unterstützung für Magento 2.4.2
+* Unterstützung für Adobe Commerce 2.4.2
 
 ### Verbesserte Funktionen
 

@@ -1,38 +1,38 @@
 ---
-title: Erste Schritte mit AEM Erweiterung für PWA Studio
+title: Erste Schritte mit der AEM-Erweiterung für PWA Studio
 description: Erfahren Sie, wie Sie mit PWA Studio ein AEM Headless Content and Commerce-Projekt bereitstellen.
 topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
-source-git-commit: 247c521e93990df2c8026da5edd84d163d5d424b
+exl-id: de7b8f05-b6b7-4105-84a5-940c16ebf2b4
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 1%
+source-wordcount: '770'
+ht-degree: 95%
 
 ---
 
+# Erste Schritte mit der AEM-Erweiterung für PWA Studio {#getting-started-pwa}
 
-# Erste Schritte mit AEM Erweiterung für PWA Studio {#getting-started-pwa}
+Standardmäßig lässt sich PWA Studio über GraphQL nahtlos mit Adobe Commerce integrieren und bietet unbegrenzte Möglichkeiten zur Erstellung innovativer und ansprechender Storefronts und anderer digitaler Erlebnisse.
 
-Standardmäßig lässt sich PWA Studio nahtlos mit Adobe Commerce über GraphQL integrieren und bietet unbegrenzte Möglichkeiten zur Erstellung innovativer und ansprechender Storefronts und anderer digitaler Erlebnisse.
+Inhaltsfragmente sind Teile von Inhalten mit einer vordefinierten Struktur, die es ermöglicht, sie mit GraphQL als API in verschiedenen Formaten (z. B. JSON, Markdown) headless zu nutzen und unabhängig zu rendern. Inhaltsfragmente enthalten alle für GraphQL erforderlichen Datentypen und -felder, um sicherzustellen, dass Ihre Anwendung nur das anfordert, was verfügbar ist, und das erhält, was erwartet wird. Die Flexibilität ihrer Struktur macht sie perfekt für die Verwendung an mehreren Stellen und über mehrere Kanäle.
 
-Inhaltsfragmente sind Inhaltsfragmente mit einer vordefinierten Struktur, mit der sie per Headless-Nutzung mit GraphQL als API in verschiedenen Formaten (z. B. JSON, Markdown) und unabhängig gerendert werden können. Inhaltsfragmente enthalten alle Datentypen und Felder, die für GraphQL erforderlich sind, um sicherzustellen, dass Ihre Anwendung nur anfordert, was verfügbar ist, und den erwarteten Empfang erhält. Die Flexibilität ihrer Struktur macht sie perfekt für die Verwendung an mehreren Orten und über mehrere Kanäle.
-
-Mit dem Inhaltsfragmentmodell-Editor in Adobe Experience Manager können Sie die benötigte Struktur einfach entwerfen. Die Hauptaufgabe bei der Integration von Adobe Experience Manager-Inhaltsfragmenten (oder anderen Daten) in Ihre PWA Studio-Anwendung besteht darin, Daten von mehreren GraphQL-Endpunkten abzurufen. Dies liegt daran, dass PWA Studio standardmäßig mit einem einzigen Commerce-GraphQL-Endpunkt der Adobe arbeitet.
+Mit dem Inhaltsfragmentmodell-Editor in Adobe Experience Manager können Sie die benötigte Struktur einfach entwerfen. Die Hauptaufgabe bei der Integration von Adobe Experience Manager-Inhaltsfragmenten (oder anderen Daten) in Ihre PWA Studio-Anwendung besteht darin, Daten von mehreren GraphQL-Endpunkten abzurufen. Dies liegt daran, dass PWA Studio standardmäßig mit einem einzigen Adobe Commerce-GraphQL-Endpunkt arbeitet.
 
 ## Architektur {#architecture}
 
 ![PWA-Headless-Architektur](/help/commerce/cif/assets/pwa-studio/PWA-Studio_Architecture.png)
 
-## Setup-PWA Studio {#setup-pwa}
+## Einrichten von PWA Studio {#setup-pwa}
 
-Folgen Sie der Adobe Commerce [PWA Studio-Dokumentation](https://magento.github.io/pwa-studio/tutorials/) , um Ihre PWA Studio-App einzurichten.
+Folgen Sie der [PWA Studio-Dokumentation](https://developer.adobe.com/commerce/pwa-studio/tutorials/) von Adobe Commerce, um Ihre PWA Studio-Anwendung einzurichten.
 
 Um PWA Studio mit dem GraphQL-Endpunkt von AEM zu verbinden, können Sie die [AEM-Erweiterung für PWA Studio](https://github.com/adobe/aem-pwa-studio-extensions) verwenden.
 
-1. Repository auschecken
+1. Überprüfen des Repositorys
 
-1. Fügen Sie in Ihrer PWA Studio-Anwendung die -Erweiterung als Entwicklungsabhängigkeit hinzu.
+1. Fügen Sie in Ihrer PWA Studio-Anwendung die Erweiterung als Entwicklungsabhängigkeit hinzu.
 
    ```javascript
    yarn add --dev file:{path-to-extension}/extension
@@ -60,10 +60,10 @@ Um PWA Studio mit dem GraphQL-Endpunkt von AEM zu verbinden, können Sie die [AE
    }    
    ```
 
-   Weitere Informationen zur Anpassung der Navigationskomponente finden Sie in [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) und in der [Erweiterbarkeits-Framework](https://magento.github.io/pwa-studio/pwa-buildpack/extensibility-framework/) -Dokumentation des PWA Studios.
+   Weitere Informationen zur Anpassung der Navigationskomponente finden Sie in [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) und in der Dokumentation zum [Erweiterbarkeits-Framework](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) von PWA Studio.
 
-1. Der Apollo-Client erwartet den AEM GraphQL-Endpunkt auf <https://pwa-studio/endpoint.js>. Um den Endpunkt diesem Speicherort zuzuordnen, müssen Sie die UPWARD-Konfiguration Ihrer PWA Studio-App anpassen:
-a. Fügen Sie die Variable AEM_CFM_GRAPHQL zu pwa-root/.env hinzu und passen Sie sie an, um auf Ihren GraphQL-Endpunkt für AEM Inhaltsfragmente zu verweisen.
+1. Der Apollo-Client erwartet den AEM GraphQL-Endpunkt auf <https://pwa-studio/endpoint.js>. Um den Endpunkt diesem Speicherort zuzuordnen, müssen Sie die UPWARD-Konfiguration Ihrer PWA Studio-Anwendung anpassen:
+a. Fügen Sie die Variable AEM_CFM_GRAPHQL zu pwa-root/.env hinzu und passen Sie sie an, sodass sie auf Ihren GraphQL-Endpunkt für AEM Inhaltsfragmente verweist.
 
    Beispiel: AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>
 
@@ -88,44 +88,44 @@ a. Fügen Sie die Variable AEM_CFM_GRAPHQL zu pwa-root/.env hinzu und passen Sie
    body: response.body
 ```
 
-## AEM einrichten {#setup-aem}
+## Einrichten von AEM {#setup-aem}
 
-Folgen Sie der AEM Dokumentation zu Inhaltsfragmenten , um einen GraphQL-Endpunkt für Ihr AEM Projekt einzurichten. Fügen Sie in Ihrem AEM außerdem die folgenden Konfigurationen hinzu, damit Ihre PWA Studio-Anwendung auf den GraphQL-Endpunkt zugreifen kann:
+Folgen Sie der Dokumention zu AEM-Inhaltsfragmenten, um einen GraphQL-Endpunkt für Ihr AEM-Projekt einzurichten. Fügen Sie in Ihrem AEM-Projekt außerdem die folgenden Konfigurationen hinzu, damit Ihre PWA Studio-Anwendung auf den GraphQL-Endpunkt zugreifen kann:
 
 * Adobe Granite Cross-Origin Resource Sharing Policy (com.adobe.granite.cors.impl.CORSPolicyImpl)
 
-   Legen Sie die Eigenschaft allowOrigin auf den vollständigen Hostnamen Ihrer PWA-Anwendung fest.
+   Legen Sie die Eigenschaft „allowedorigin“ auf den vollständigen Host-Namen Ihrer PWA-Anwendung fest.
 
-   Beispiel:  <https://pwa-studio-test-vflyn.local.pwadev:9366>
+   Beispiel: <https://pwa-studio-test-vflyn.local.pwadev:9366>
 
 * Apache Sling Referrer Filter (org.apache.sling.security.impl.ReferrerFilter.cfg.json)
 
-   Setzen Sie die Eigenschaft allow.hosts auf den Hostnamen Ihrer PWA-Anwendung.
+   Setzen Sie die Eigenschaft „allow.hosts“ auf den Hostnamen Ihrer PWA-Anwendung.
 
    Beispiel: pwa-studio-test-vflyn.local.pwadev
 
 Die vollständigen Beispiele für beide Konfigurationen finden Sie hier: <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 
-Um den GraphQL-Endpunkt zu präsentieren, haben wir einige Beispiel-Inhaltsfragmentmodelle und -daten über ein Inhaltspaket vorbereitet. Diese funktionieren zusammen mit den React-Komponenten, die mit der PWA Studio-Erweiterung bereitgestellt werden.
+Um den GraphQL-Endpunkt zu präsentieren, haben wir einige Beispiel-Inhaltsfragmentmodelle und -daten über ein Inhaltspaket vorbereitet. Diese funktionieren gut zusammen mit den React-Komponenten, die mit der PWA Studio-Erweiterung bereitgestellt werden.
 
 ## Verwendung {#how-to-use}
 
 Diese Erweiterung gilt als Beispielimplementierung der Verbindung einer PWA Studio-Anwendung mit AEM zum Abrufen und Rendern von Inhalten über GraphQL.
 
-Je nach Anwendungsfall möchten Sie eigene benutzerdefinierte Inhaltsfragmentmodelle erstellen, die zu einem benutzerdefinierten GraphQL-Schema führen, das dann von Ihren eigenen React-Komponenten genutzt werden kann.
+Je nach Anwendungsfall sollten Sie eigene benutzerdefinierte Inhaltsfragmentmodelle erstellen, die zu einem benutzerdefinierten GraphQL-Schema führen, das dann von Ihren eigenen React-Komponenten genutzt werden kann.
 
-Produktionskonfigurationen können verschiedene Aspekte aufweisen.
+Produktions-Setups können verschiedene Aspekte aufweisen.
 
-* Sie können über einen einzigen zusammengeführten GraphQL-Endpunkt verfügen, der AEM- und Magento-GraphQL-Daten kombiniert, anstatt den Apollo-Client anzupassen.
-* Ihre PWA Studio-Anwendung könnte die GraphQL-Endpunkt-URL AEM direkt verwenden, ohne dass ein Proxy mit UPWARD vorhanden ist. Der Proxy kann auch auf eine andere Ebene verschoben werden (z. B. CDN).
+* Sie können über einen einzigen zusammengeführten GraphQL-Endpunkt verfügen, der AEM und Adobe Commerce-GraphQL-Daten kombiniert, anstatt den Apollo-Client anzupassen.
+* Ihre PWA Studio-Anwendung könnte die AEM GraphQL-Endpunkt-URL direkt verwenden, ohne dass ein Proxy mit UPWARD vorhanden ist. Der Proxy kann auch auf eine andere Ebene verschoben werden (z. B. CDN).
 * Welcher Ansatz für Sie am besten geeignet ist, hängt auch stark davon ab, wie Sie die PWA Studio-Anwendung an den Endbenutzer bereitstellen.
 
 Diese Erweiterung enthält zwei Beispiele.
 
 ### Blog {#blog}
 
-Zeigt Blog-Beiträge basierend auf einigen Inhaltsfragmentmodellen an. Darüber hinaus enthält es Beispiele dazu, wie der Apollo-Client für die Verwendung mit dem AEM GraphQL-Endpunkt konfiguriert und wie die Navigationskomponente in PWA Studio erweitert wird. Weitere Informationen finden Sie unter [GitHub](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension) .
+Zeigt Blog-Beiträge basierend auf einigen Inhaltsfragmentmodellen an. Darüber hinaus enthält es Beispiele dazu, wie man den Apollo-Client so konfiguriert, dass er mit dem AEM GraphQL-Endpunkt zusammenarbeitet und wie die Navigationskomponente in PWA Studio erweitert wird. Weitere Informationen finden Sie unter [GitHub](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension).
 
 ### PDP-Anreicherung {#pdp-enrichment}
 
-Ermöglicht es Marketern, PDPs einfach mit zusätzlichen Inhalten anzureichern, die als Inhaltsfragmente verwaltet werden.  Weitere Informationen finden Sie unter [GitHub](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cif-product-page-extension) .
+Ermöglicht es Marketern, PDPs einfach mit zusätzlichen Inhalten anzureichern, die als Inhaltsfragmente verwaltet werden.  Weitere Informationen finden Sie unter [GitHub](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cif-product-page-extension).
