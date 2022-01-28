@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, verarbeiten und verteilen Sie digitale Assets.
-source-git-commit: 3cf3a05afd92f2992312ecfb931ef38278c5436c
+source-git-commit: d947bd98b3a0f6fd79cde5b5b2fca23487077da3
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '658'
 ht-degree: 57%
 
 ---
@@ -56,7 +56,6 @@ ht-degree: 57%
    + [Dynamic Media-Bildprofile](image-profiles.md)
    + [Intelligente Bildbearbeitung](imaging-faq.md)
    + [Video](s7-video.md)
-   + [Hinzufügen von Dynamic Media-Funktionen zu Ihrer Seite](scene7.md)
    + [Bereitstellung von Inhalten per HTTP/2](http2.md)
    + [Bereitstellen von Dynamic Media-Assets](delivering-dynamic-media-assets.md)
    + [Aktivieren des Hotlink-Schutzes in Dynamic Media](hotlink-protection.md)
@@ -65,7 +64,7 @@ ht-degree: 57%
    + [Panoramabilder](panoramic-images.md)
    + [Gemischte Mediensets](mixed-media-sets.md)
    + [Rotationssets](spin-sets.md)
-   + [Video in Dynamic Media](video.md)
+   + [Video   in Dynamic Media](video.md)
    + [Karussellbanner](carousel-banners.md)
    + [Interaktive Bilder](interactive-images.md)
    + [Interaktive Videos](interactive-videos.md)
@@ -75,13 +74,14 @@ ht-degree: 57%
    + [Bereitstellen optimierter Bilder für eine responsive Website](responsive-site.md)
    + [Anzeigen von Dynamic Media-Assets in der Vorschau](previewing-assets.md)
    + [Hinzufügen von Dynamic Media-Assets zu Seiten](adding-dynamic-media-assets-to-pages.md)
+   + [Hinzufügen von Dynamic Media Classic-Funktionen zu Seiten](scene7.md)
    + [Einbetten des dynamischen Video- oder Bild-Viewers auf einer Web-Seite](embed-code.md)
    + [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwebapplication.md)
    + [Verwenden von Regelsätzen zum Konvertieren von URLs](using-rulesets-to-transform-urls.md)
    + [Veröffentlichen von Dynamic Media-Assets](publishing-dynamicmedia-assets.md)
    + [Arbeiten mit selektiver Veröffentlichung in Dynamic Media](selective-publishing.md)
-   + [Ungültig machen des CDN-Cache mithilfe von Dynamic Media](invalidate-cdn-cache-dynamic-media.md)
-   + [Ungültig machen des CDN-Cache mithilfe von Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
+   + [Invalidierung des CDN-Cache mithilfe von Dynamic Media](invalidate-cdn-cache-dynamic-media.md)
+   + [Invalidierung des CDN-Cache mithilfe von Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
    + [Installieren Sie Feature Pack 18912 für die Massenmigration von Assets](bulk-ingest-migrate.md)
    + [Arbeiten mit Selektoren](working-with-selectors.md)
 + Erweitern von Assets {#extending}
@@ -117,7 +117,7 @@ ht-degree: 57%
    + [[!DNL Assets] und MediaLibrary](medialibrary.md)
    + [Verwenden von PDF Rasterizer](aem-pdf-rasterizer.md)
    + [Konfigurieren von Upload-Beschränkungen](configuring-asset-upload-restrictions.md)
-   + [[!DNL Experience Manager] and [!DNL Creative Cloud] Integration](aem-cc-integration-best-practices.md)
+   + [[!DNL Experience Manager] und [!DNL Creative Cloud] Integration](aem-cc-integration-best-practices.md)
    + [Integrieren mit  [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management in Assets](drm.md)
    + [Demopaket für Asset-Einblicke verwenden](use-demo-package-for-asset-insights.md)
