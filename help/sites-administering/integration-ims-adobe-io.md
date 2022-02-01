@@ -11,7 +11,7 @@ topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
 exl-id: ba7abc53-7db8-41b1-a0fa-4e4dbbeca402
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: 9fbf338b18e73fbd272af061381baf34b694239a
 workflow-type: tm+mt
 source-wordcount: '1538'
 ht-degree: 18%
@@ -175,7 +175,7 @@ Kehren Sie zu AEM zurück und Sie können die IMS-Konfiguration abschließen, in
 1. Hier können Sie die [Details von Adobe I/O](#details-stored-for-the-adobe-io-integration-project):
 
    * **Titel**: Ihr Text.
-   * **Autorisierungsserver**: Kopieren/Einfügen Sie dies aus dem `"aud"` der **Nutzlast** unten, z. B. `"https://ims-na1.adobelogin.com"` im Beispiel unten
+   * **Autorisierungsserver**: Kopieren/Einfügen Sie dies aus dem `aud` der **Nutzlast** unten, z. B. `https://ims-na1.adobelogin.com` im Beispiel unten
    * **API-Schlüssel**: Kopieren Sie dies aus dem [Übersicht](#details-stored-for-the-adobe-io-integration-project) Abschnitt der Adobe I/O-Integration für Target
    * **Client Secret**: Generieren Sie dies im [Übersicht](#details-stored-for-the-adobe-io-integration-project) Abschnitt der Adobe I/O-Integration für Target erstellen und kopieren
    * **Nutzlast**: Kopieren Sie dies aus dem [JWT generieren](#details-stored-for-the-adobe-io-integration-project) Abschnitt der Adobe I/O-Integration für Target
@@ -230,6 +230,7 @@ Auf die Konfiguration kann nun verwiesen werden, damit ein Cloud Service die Tar
 1. Geben Sie die Details im **Adobe Target-Einstellungen** tab:
 
    * **Authentifizierung**: IMS
+
    * **Mandanten-ID**: die Adobe IMS-Mandantenkennung. Siehe auch [Mandanten-ID und Client-Code](#tenant-client) Abschnitt.
 
       >[!NOTE]
@@ -241,24 +242,34 @@ Auf die Konfiguration kann nun verwiesen werden, damit ein Cloud Service die Tar
       >`https://experience.adobe.com/#/@yourtenantid/target/activities`
       >
       >Dann würden Sie `yourtenantid`.
-   * **Clientcode**: Siehe [Mandanten-ID und Client-Code](#tenant-client) Abschnitt.
-   * **IMS-Konfiguration**: den Namen der IMS-Konfiguration auswählen
-   * **API-Typ**: REST
-   * **A4T-Analyse-Cloud-Konfiguration**: Wählen Sie die Analyse-Cloud-Konfiguration aus, die für Target-Aktivitätsziele und -metriken verwendet wird. Sie benötigen sie, wenn Sie Adobe Analytics als Quelle für die Berichterstellung für bestimmte Inhalte verwenden. Wenn Ihre Cloud-Konfiguration nicht angezeigt wird, finden Sie weitere Informationen unter [Konfigurieren der A4T-Analytics Cloud-Konfiguration](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
-   * **Verwenden des präzisen Targetings**: Standardmäßig ist dieses Kontrollkästchen aktiviert. Bei Aktivierung dieser Option wird für die Cloud Service-Konfiguration gewartet, bis das Laden des Kontexts erfolgt ist, bevor der Inhalt geladen wird. Siehe Hinweis unten.
-   * **Segmente aus Adobe Target synchronisieren**: Wählen Sie diese Option aus, um in Target definierte Segmente herunterzuladen und in AEM zu verwenden. Sie müssen diese Option auswählen, wenn die Eigenschaft „API-Typ“ auf „REST“ festgelegt ist, da Inline-Segmente nicht unterstützt werden und Sie immer Segmente aus Target verwenden müssen. (Beachten Sie, dass der AEM-Begriff „Segment“ hier dem Target-Begriff „Zielgruppe“ entspricht.)
-   * **Client-Bibliothek**: Wählen Sie aus, ob die AT.js-Client-Bibliothek oder mbox.js (veraltet) verwendet werden soll.
-   * **Verwenden des Tag Management Systems zur Bereitstellung der Client-Bibliothek**: Verwenden Sie DTM (nicht mehr unterstützt), Adobe Launch oder ein anderes Tag-Management-System.
-   * **Benutzerdefinierte at.js**: Lassen Sie das Feld leer, wenn Sie das Kontrollkästchen Tag-Management aktiviert haben oder die standardmäßige at.js-Datei verwenden möchten. Alternativ hierzu können Sie Ihre benutzerdefinierte Datei „AT.js“ hochladen. Sie wird nur angezeigt, wenn Sie „AT.js“ ausgewählt haben.
 
+   * **Clientcode**: Siehe [Mandanten-ID und Client-Code](#tenant-client) Abschnitt.
+
+   * **IMS-Konfiguration**: den Namen der IMS-Konfiguration auswählen
+
+   * **API-Typ**: REST
+
+   * **A4T-Analyse-Cloud-Konfiguration**: Wählen Sie die Analyse-Cloud-Konfiguration aus, die für Target-Aktivitätsziele und -metriken verwendet wird. Sie benötigen sie, wenn Sie Adobe Analytics als Quelle für die Berichterstellung für bestimmte Inhalte verwenden. Wenn Ihre Cloud-Konfiguration nicht angezeigt wird, finden Sie weitere Informationen unter [Konfigurieren der A4T-Analytics Cloud-Konfiguration](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
+
+   * **Verwenden des präzisen Targetings**: Standardmäßig ist dieses Kontrollkästchen aktiviert. Bei Aktivierung dieser Option wird für die Cloud Service-Konfiguration gewartet, bis das Laden des Kontexts erfolgt ist, bevor der Inhalt geladen wird. Siehe Hinweis unten.
+
+   * **Segmente aus Adobe Target synchronisieren**: Wählen Sie diese Option aus, um in Target definierte Segmente herunterzuladen und in AEM zu verwenden. Sie müssen diese Option auswählen, wenn die Eigenschaft „API-Typ“ auf „REST“ festgelegt ist, da Inline-Segmente nicht unterstützt werden und Sie immer Segmente aus Target verwenden müssen. (Beachten Sie, dass der AEM-Begriff „Segment“ hier dem Target-Begriff „Zielgruppe“ entspricht.)
+
+   * **Client-Bibliothek**: Wählen Sie aus, ob die AT.js-Client-Bibliothek oder mbox.js (veraltet) verwendet werden soll.
+
+   * **Verwenden des Tag Management Systems zur Bereitstellung der Client-Bibliothek**: Verwenden Sie DTM (nicht mehr unterstützt), Adobe Launch oder ein anderes Tag-Management-System.
+
+   * **Benutzerdefinierte at.js**: Lassen Sie das Feld leer, wenn Sie das Kontrollkästchen Tag-Management aktiviert haben oder die standardmäßige at.js-Datei verwenden möchten. Alternativ hierzu können Sie Ihre benutzerdefinierte Datei „AT.js“ hochladen. Sie wird nur angezeigt, wenn Sie „AT.js“ ausgewählt haben.
    >[!NOTE]
    >
    >[Konfiguration eines Cloud Service zur Verwendung der Target Classic-API](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target) ist veraltet (verwendet die Registerkarte Adobe Recommendations-Einstellungen ).
+
 1. Klicken **Verbindung mit Target herstellen** , um die Verbindung mit Adobe Target zu initialisieren.
 
    Wenn die Verbindung erfolgreich hergestellt wurde, wird die Meldung **Verbindung erfolgreich** angezeigt.
 
 1. Auswählen **OK** auf die Nachricht, gefolgt von **OK** im Dialogfeld, um die Konfiguration zu bestätigen.
+
 1. Sie können jetzt fortfahren [Hinzufügen eines Target-Frameworks](/help/sites-administering/target-configuring.md#adding-a-target-framework) zum Konfigurieren von ContextHub- oder ClientContext-Parametern, die an Target gesendet werden. Beachten Sie, dass dies möglicherweise nicht für den Export AEM Experience Fragments in Target erforderlich ist.
 
 ### Mandanten-ID und Client-Code {#tenant-client}
