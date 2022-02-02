@@ -3,9 +3,9 @@ sub-product: AEM Content and Commerce
 user-guide-title: AEM Content and Commerce
 breadcrumb-title: Commerce-Anleitung
 user-guide-description: Erfahren Sie, wie Sie Adobe Experience Manager Content and Commerce verwenden und verwalten.
-source-git-commit: 9c4edf1d1482923856e56cdadfe1a2a903e782bc
+source-git-commit: 0ae78938641c383a65462096235e3b62d6b67e23
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '123'
 ht-degree: 78%
 
 ---
@@ -25,6 +25,7 @@ ht-degree: 78%
       + [Commerce-Erlebnisse](cif/authoring/authoring-commerce-experiences.md)
       + [Produkt-Cockpit](cif/authoring/product-cockpit.md)
       + [Anreicherung von Produktdaten mit zugehörigen Inhalten](cif/authoring/enrich-product-associated-content.md)
+      + [Produktempfehlungen](cif/authoring/product-recommendations.md)
    + Verwalten {#administering}
       + [Multi-Store-Setup](cif/configuring/multi-store-setup.md)
       + [Verwendung mehrerer Vorlagen](cif/configuring/multi-template-usage.md)
