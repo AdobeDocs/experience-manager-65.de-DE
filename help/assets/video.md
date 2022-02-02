@@ -12,7 +12,7 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: e8270ad3f658236184467eda9f25c2ec0e6787ba
+source-git-commit: 128358e17aa6166c81e0979825ee81d029418f22
 workflow-type: tm+mt
 source-wordcount: '11766'
 ht-degree: 77%
@@ -34,12 +34,10 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
 >* Siehe [Konfigurieren von Dynamic Media Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) unter Konfigurieren von Dynamic Media - Scene7 und [Fehlerbehebung bei Dynamic Media - Scene7-Modus](/help/assets/troubleshoot-dms7.md).
 >
 >* Siehe [Konfigurieren von Dynamic Media Cloud Services](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) unter Konfigurieren von Dynamic Media - Hybridmodus.
-
 >
 >Derzeit bekanntes Problem bei der Videowiedergabe in Dynamic Media *nur zu Experience Manager 6.5.9.0*:
 >
 >* Wenn ein veröffentlichtes Video aktualisiert wird, muss es erneut veröffentlicht werden, um Änderungen beim Versand widerzuspiegeln.
-
 >
 
 
@@ -56,7 +54,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
       * Weitere Informationen zum [Organisieren digitaler Assets](/help/assets/organize-assets.md)
    * Laden Sie die Primärvideos in die Ordner hoch. Wenn Sie dem Ordner Videos hinzufügen, werden diese gemäß dem diesem Ordner zugewiesenen Videoverarbeitungsprofil kodiert.
 
-      * Dynamic Media unterstützt hauptsächlich Kurzformvideos mit einer maximalen Länge von 30 Minuten und einer Mindestauflösung von mehr als 50 x 50.
+      * Dynamic Media unterstützt hauptsächlich Kurzformvideos mit einer maximalen Länge von 30 Minuten und einer Mindestauflösung von mehr als 25 x 25.
       * Sie können Videodateien mit bis zu 15 GB pro Datei hochladen.
       * [Videos hochladen](/help/assets/managing-video-assets.md#upload-and-preview-video-assets)
       * Weitere Informationen zu [Unterstützten Eingabedateiformaten](/help/assets/assets-formats.md#supported-multimedia-formats)
@@ -80,14 +78,14 @@ Weitere Informationen zu [Best Practices für die Organisation Ihrer digitalen A
          [Videoausgabeformate anzeigen](video-renditions.md)
          [Verwalten von Videoausgabedarstellungen](manage-assets.md#managing-renditions)
 
-      * [Viewer-Vorgaben verwalten](managing-viewer-presets.md)
+      * [Verwalten von Viewer-Vorgaben](managing-viewer-presets.md)
       * [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md)
-   * Mit Videometadaten arbeiten
+   * Arbeiten mit Videometadaten
 
       * Zeigen Sie die Eigenschaften einer kodierten Videoausgabedarstellung wie Framerate, Audio- und Video-Bitrate und Codec an:
          [Eigenschaften von Videoausgabeformaten anzeigen](video-renditions.md)
 
-      * Bearbeiten Sie die Eigenschaften des Videos, wie den Titel, die Beschreibung, die Tags und die benutzerdefinierten Metadatenfelder:
+      * Bearbeiten Sie die Eigenschaften von Videos, beispielsweise Titel, Beschreibung, Tags und benutzerdefinierte Metadatenfelder:
          [Bearbeiten von Videoeigenschaften](manage-assets.md#editing-properties)
 
       * [Verwalten von Metadaten für digitale Assets](metadata.md)
@@ -99,7 +97,7 @@ Weitere Informationen zu [Best Practices für die Organisation Ihrer digitalen A
       * [Version erstellen](manage-assets.md#asset-versioning)
       * [Anwenden von Workflows auf Assets](assets-workflow.md) oder [Starten eines Workflows für ein Asset](manage-assets.md#starting-a-workflow-on-an-asset)
 
-      * [Ordner-Assets prüfen](bulk-approval.md)
+      * [Prüfen von Ordner-Assets](bulk-approval.md)
       * [Projekte](../sites-authoring/projects.md)
 
 
@@ -300,7 +298,7 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 
 Verwenden Sie zum Kodieren einer Videodatei eine Quellvideodatei mit der höchstmöglichen Qualität. Verwenden Sie keine zuvor kodierten Videodateien, da diese Dateien bereits komprimiert wurden und die weitere Kodierung zu mangelhafter Videoqualität führen würde.
 
-* Dynamic Media unterstützt hauptsächlich Kurzformvideos mit einer maximalen Länge von 30 Minuten und einer Mindestauflösung von mehr als 50 x 50.
+* Dynamic Media unterstützt hauptsächlich Kurzformvideos mit einer maximalen Länge von 30 Minuten und einer Mindestauflösung von mehr als 25 x 25.
 * Sie können Videodateien mit einer Größe von bis zu 15 GB als Primärquelle hochladen.
 
 Die folgende Tabelle beschreibt die empfohlenen Werte für Größe, Seitenverhältnis und Mindest-Bitrate, die Quellvideos vor der Kodierung aufweisen sollten:
@@ -518,7 +516,7 @@ So konfigurieren Sie Google Cloud-Einstellungen:
 
    `https://<servername.domain>:<port_number>`
 
-   Zum Beispiel: `https://1a2b3c.mycompany.com:4321`
+   Beispiel: `https://1a2b3c.mycompany.com:4321`
 
    **Hinweis**: Das obige Pfadbeispiel dient nur zu Demonstrationszwecken.
 
