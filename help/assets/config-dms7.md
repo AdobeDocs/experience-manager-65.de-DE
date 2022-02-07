@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: 2706a069bea731da1f84c15e2da02b53a9db4d28
+source-git-commit: f2cfe62c561e772a10ede4f76314a5904d6d64ff
 workflow-type: tm+mt
-source-wordcount: '6035'
+source-wordcount: '6048'
 ht-degree: 44%
 
 ---
@@ -134,17 +134,17 @@ Um einen ausgewählten Ordner für die Synchronisierung mit Dynamic Media zu mar
    Wenn ein Asset aktiviert wurde, werden alle Aktualisierungen automatisch live in der S7-Bereitstellung übernommen.
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
-1. Um Dynamic Media-Inhalte vor der Veröffentlichung sicher in der Vorschau anzuzeigen, verwendet der Experience Manager eine Token-basierte Validierung und der Experience Manager-Autor sieht Dynamic Media-Inhalte standardmäßig in der Vorschau an. Sie können jedoch *Zulassungsliste* mehr IPs, um Benutzern Zugriff auf sichere Vorschau von Inhalten zu ermöglichen. Informationen zum Einrichten dieser Aktion in Experience Manager finden Sie unter [Dynamic Media-Veröffentlichungseinstellungen für Image-Server konfigurieren - Registerkarte &quot;Sicherheit&quot;](/help/assets/dm-publish-settings.md#security-tab).
-<!-- 1. By default Experience Manager Author cannot preview Dynamic Media content. Therefore, to securely preview Dynamic Media content before it gets published, you must *allowlist* the Experience Manager Author instance to connect to Dynamic Media. In addition, if you want to provide users access to securely preview content, you can *allowlist* additional IP addresses:
+1. Standardmäßig kann der Experience Manager-Autor keine Vorschau von Dynamic Media-Inhalten anzeigen. Um Dynamic Media-Inhalte vor der Veröffentlichung sicher in der Vorschau anzuzeigen, müssen Sie *Zulassungsliste* die Experience Manager-Autoreninstanz, die eine Verbindung zu Dynamic Media herstellen soll. Wenn Sie Benutzern außerdem Zugriff auf eine sichere Vorschau von Inhalten gewähren möchten, können Sie *Zulassungsliste* zusätzliche IP-Adressen.
+Informationen zum Einrichten dieser Aktion in Experience Manager finden Sie unter [Dynamic Media-Veröffentlichungseinstellungen für Image-Server konfigurieren - Registerkarte &quot;Sicherheit&quot;](/help/assets/dm-publish-settings.md#security-tab).
 
-    * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
+<!-- 1. To securely preview Dynamic Media content before it gets published, Experience Manager uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).     * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
     * In the left rail, select the **[!UICONTROL Tools]** icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
     * On the Dynamic Media Image Server page, in the **[!UICONTROL Publish Context]** drop-down list, select **[!UICONTROL Test Image Serving]**.
     * Select the **[!UICONTROL Security]** tab.
     * For the **[!UICONTROL Client address]**, select **[!UICONTROL Add]**.
     * Enter the IP address of the Experience Manager Author instance (not Dispatcher IP).
-    * In the upper-right corner of the page, select **[!UICONTROL Save]**.
- -->
+    * In the upper-right corner of the page, select **[!UICONTROL Save]**. -->
+
 Sie haben nun die Grundkonfiguration abgeschlossen und können Dynamic Media im Scene7-Modus verwenden.
 
 Wenn Sie Ihre Konfiguration weiter anpassen möchten, können Sie optional eine der Aufgaben unter [(Optional) Konfigurieren Sie die erweiterten Einstellungen im Modus Dynamic Media - Scene7 .](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
