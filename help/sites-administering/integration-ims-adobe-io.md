@@ -11,9 +11,9 @@ topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
 exl-id: ba7abc53-7db8-41b1-a0fa-4e4dbbeca402
-source-git-commit: 9fbf338b18e73fbd272af061381baf34b694239a
+source-git-commit: bf55553f48c1eddf5dec503fb105cf35ff26677d
 workflow-type: tm+mt
-source-wordcount: '1538'
+source-wordcount: '1539'
 ht-degree: 18%
 
 ---
@@ -143,7 +143,7 @@ Sie müssen der Integration jetzt die erforderlichen Berechtigungen zuweisen:
 
 1. Navigieren Sie zu **Produkte** (obere Symbolleiste) und wählen Sie **Adobe Target - &lt;*your-tenant-id*>** (im linken Bereich).
 1. Auswählen **Produktprofile**, dann den gewünschten Arbeitsbereich aus der angezeigten Liste. Beispiel: Standardarbeitsbereich.
-1. Auswählen **Integrationen**, dann die erforderliche Integrationskonfiguration.
+1. Auswählen **API-Anmeldeinformationen**, dann die erforderliche Integrationskonfiguration.
 1. Auswählen **Editor** als **Produktrolle**; anstelle von **Beobachter**.
 
 ## Für das Adobe I/O Integration Project gespeicherte Details {#details-stored-for-the-adobe-io-integration-project}
