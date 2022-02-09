@@ -8,13 +8,13 @@ content-type: reference
 feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
-source-git-commit: 1a410c7b71f0e329b327a7f7f05137fcd220fb6a
+exl-id: c86e79c4-e887-4ee3-bb54-eeffb34a33c2
+source-git-commit: 8561eb8b4b5164188ebf387c8f0344b462b830ec
 workflow-type: tm+mt
-source-wordcount: '3459'
+source-wordcount: '3467'
 ht-degree: 5%
 
 ---
-
 
 # Konfigurieren der Dynamic Media-Veröffentlichungseinstellungen für Image-Server
 
@@ -64,6 +64,8 @@ Auf der Image-Server-Seite werden Standardeinstellungen für die Bereitstellung 
 ### Registerkarte Sicherheit {#security-tab}
 
 **[!UICONTROL Kundenadresse]** - Hier können Sie eine oder mehrere IP-Adressen oder IP-Adressbereiche angeben. Wenn diese Option spezifiziert ist, werden Anfragen an diesen Bildkatalog, die von einem Client stammen, der eine nicht aufgeführte IP-Adresse hat, abgelehnt. Diese Regel gilt sowohl für die Bereitstellung von Bildern als auch für gerenderte Bilder.
+
+![Registerkarte Sicherheit ](/help/assets/assets-dm/dm-ipallowlist.png)<br>*Registerkarte &quot;Sicherheit&quot;mit IP-Feld &quot;allow&quot;*
 
 ### Registerkarte &quot;Katalogverwaltung&quot; {#catalog-management-tab}
 
