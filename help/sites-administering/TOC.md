@@ -8,9 +8,9 @@ breadcrumb-title: Administratorenanleitung
 user-guide-description: Erfahren Sie mehr über die Verwaltung von AEM.
 feature: Administering
 role: Admin
-source-git-commit: 48abd410e293a193abc34a1bd4f038a121e58490
+source-git-commit: 7af09e73f40c2d947c9ccce000174155ef67137f
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '631'
 ht-degree: 92%
 
 ---
@@ -112,7 +112,7 @@ ht-degree: 92%
    + [Integrieren mit Services von Dritten](third-party-services.md)
    + [Integration mit Salesforce](salesforce.md)
    + [Integrieren mit Adobe Target](target.md)
-   + [Integration mit Adobe Analytics](adobeanalytics.md)
+   + [Integration mit Adobe Analytics](adobeanalytics.md)
    + [Herstellen einer Verbindung mit Adobe Analytics und Erstellen von Frameworks](adobeanalytics-connect.md)
    + [Konfigurieren des Linktrackings für Adobe Analytics](adobeanalytics-link.md)
    + [Zuordnen von Komponentendaten zu Adobe Analytics-Eigenschaften](adobeanalytics-mapping.md)
@@ -143,6 +143,7 @@ ht-degree: 92%
    + [Manuelles Konfigurieren der Integration mit Adobe Target](target-configuring.md)
    + [Voraussetzungen für die Integration mit Adobe Target](target-requirements.md)
    + [Integration mit Adobe Target über Adobe I/O](integration-ims-adobe-io.md)
+   + [Integration mit Adobe Target über Adobe I/O](integration-target-ims-adobe-io.md)
    + [Adobe Classifications](adobeanalytics-classifications.md)
    + [Integrieren mit Adobe Search&amp;Promote](search-and-promote.md)
    + [Lösungsintegration](integration.md)
