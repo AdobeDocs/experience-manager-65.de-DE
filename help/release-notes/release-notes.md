@@ -2,9 +2,9 @@
 title: Versionshinweise für [!DNL Adobe Experience Manager] 6,5
 description: '[!DNL Adobe Experience Manager]Informationen zu  6.5 mit Versionshinweisen, Angaben zu neuen Funktionen und zur Installation sowie ausführlichen Änderungslisten.'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 1ca3032063a148293f67c69a941b83b6aa5d48f1
+source-git-commit: b36b7b0dafbce3aa75afff60fae3cc714b6ac902
 workflow-type: tm+mt
-source-wordcount: '3884'
+source-wordcount: '3887'
 ht-degree: 5%
 
 ---
@@ -54,7 +54,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in [!DNL Experience Manag
 
 >[!WARNING]
 >
->Eine neue Version dieses Pakets wird derzeit entwickelt. Der Link wird veröffentlicht, sobald er verfügbar ist.
+>Eine neue Version des Pakets &quot;Indexdefinition&quot; wird derzeit entwickelt. Der unten stehende Link wird veröffentlicht, sobald er verfügbar ist.
 
 Um auf die Bereitstellung von Headless-Inhalten mit Inhaltsfragmenten mit GraphQL zuzugreifen und die erweiterten Funktionen für Inhaltsfragmentmodelle und Editor zu verwenden, installieren Sie das Indexdefinitionspaket und indizieren Sie die folgenden asynchronen AEM Indexdefinitionen neu:
 
