@@ -2,9 +2,9 @@
 title: Versionshinweise für [!DNL Adobe Experience Manager] 6,5
 description: '[!DNL Adobe Experience Manager]Informationen zu  6.5 mit Versionshinweisen, Angaben zu neuen Funktionen und zur Installation sowie ausführlichen Änderungslisten.'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 1cfa01544ad8bf0adafd55e696a6844a8edf1007
+source-git-commit: 1ca3032063a148293f67c69a941b83b6aa5d48f1
 workflow-type: tm+mt
-source-wordcount: '3894'
+source-wordcount: '3884'
 ht-degree: 5%
 
 ---
@@ -52,14 +52,17 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in [!DNL Experience Manag
 
 ### [!DNL Sites] {#sites-65110}
 
-Um auf die Bereitstellung von Headless-Inhalten mit Inhaltsfragmenten mit GraphQL zuzugreifen und die erweiterten Funktionen für Inhaltsfragmentmodelle und Editor zu verwenden, installieren Sie die [Indexdefinitionspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.0.0.zip)und indizieren die folgenden asynchronen AEM-Indexdefinitionen neu:
+>[!WARNING]
+>
+>Eine neue Version dieses Pakets wird derzeit entwickelt. Der Link wird veröffentlicht, sobald er verfügbar ist.
 
-* /oak:index/assetPrefixNodename
+Um auf die Bereitstellung von Headless-Inhalten mit Inhaltsfragmenten mit GraphQL zuzugreifen und die erweiterten Funktionen für Inhaltsfragmentmodelle und Editor zu verwenden, installieren Sie das Indexdefinitionspaket und indizieren Sie die folgenden asynchronen AEM Indexdefinitionen neu:
 
-* /oak:index/fragments
+* `/oak:index/assetPrefixNodename`
 
-* /oak:index/graphqlConfig
+* `/oak:index/fragments`
 
+* `/oak:index/graphqlConfig`
 
 Die folgenden Probleme wurden in [!DNL Sites]:
 
@@ -283,7 +286,7 @@ Die folgenden Fehlerbehebungen sind in verfügbar: [!DNL Dynamic Media]:
 
 * Beim Erstellen eines Übersetzungsprojekts führt die zyklische Referenzierung der Seiten zu einem Start, was zu einem Trigger führt (CQ-4332982).
 
-* Der Experience Fragment-Link im übersetzten Experience Fragment und auf der Seite enthält die Launch-Referenz (NPR-37649).
+* Der Link zum Experience Fragment im übersetzten Experience Fragment und auf der Seite enthält die Launch-Referenz (NPR-37649).
 
 ### Sling {#sling-65110}
 
