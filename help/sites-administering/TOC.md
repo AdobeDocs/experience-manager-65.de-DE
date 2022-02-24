@@ -8,10 +8,10 @@ breadcrumb-title: Administratorenanleitung
 user-guide-description: Erfahren Sie mehr über die Verwaltung von AEM.
 feature: Administering
 role: Admin
-source-git-commit: d4f5cebc76ed9348a17efc07443cd82317f24368
+source-git-commit: 206df4237e0e6959389dd0128c79c8f64bc4a0e4
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 92%
+source-wordcount: '631'
+ht-degree: 91%
 
 ---
 
@@ -117,6 +117,7 @@ ht-degree: 92%
    + [Konfigurieren des Linktrackings für Adobe Analytics](adobeanalytics-link.md)
    + [Zuordnen von Komponentendaten zu Adobe Analytics-Eigenschaften](adobeanalytics-mapping.md)
    + [Konfigurieren von Videotracking für Adobe Analytics](adobeanalytics-video.md)
+   + [Integration mit Adobe Analytics mithilfe der Adobe I/O](integration-analytics-ims-adobe-io.md)
    + [Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ)](scene7-http2faq.md)
    + [Fehlerbehebung bei der Adobe Campaign-Integration](troubleshooting-campaignintegration.md)
    + [SharePoint Connector-Lizenzen, Urheberrechtsvermerke und Haftungsausschlüsse](sharepoint-connector-licenses.md)

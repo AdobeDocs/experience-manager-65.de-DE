@@ -2,7 +2,7 @@
 title: Experience Fragments
 seo-title: Experience Fragments
 description: Experience Fragments
-seo-description: 'null'
+seo-description: null
 uuid: 9a1d12ef-5690-4a2e-8635-a710775efa39
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 4c5b52c3-5e23-4125-9306-48bf2ded23cb
 docset: aem65
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab6fd8ca02d2a24e5973b5d78bc75288b5cc26c0
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 96%
+source-wordcount: '1440'
+ht-degree: 92%
 
 ---
 
@@ -27,10 +27,12 @@ Ein Experience Fragment:
 * ist Teil eines Erlebnisses (Seite).
 * kann übergreifend für mehrere Seiten verwendet werden.
 * basiert auf einer (bearbeitbaren) Vorlage, die seine Struktur und Komponenten definiert.
+* Diese Vorlage wird verwendet, um die *Stammseite* des Experience Fragments.
 * besteht aus einer oder mehreren Komponenten mit Layout innerhalb eines Absatzsystems.
 * kann Experience Fragments enthalten.
 * kann mit anderen Komponenten (einschließlich anderen Experience Fragments) zu einer vollständigen Seite (Erlebnis) kombiniert werden.
-* kann verschiedene Varianten aufweisen, die Inhalte und/oder Komponenten gemeinsam nutzen.
+* Je nach Stammseite können eine oder mehrere Varianten erstellt werden.
+* Diese Varianten können Inhalte und/oder Komponenten gemeinsam nutzen.
 * kann in Bausteine untergliedert werden, die sich übergreifend für mehrere Varianten des Fragments verwenden lassen.
 
 Experience Fragments können in folgenden Fällen verwendet werden:
@@ -45,7 +47,7 @@ Experience Fragments können in folgenden Fällen verwendet werden:
 >    `experience-fragments-editors`
 Wenden Sie sich an Ihren Systemadministrator, falls Probleme auftreten.
 
-## Wann ist die Verwendung von Experience Fragments sinnvoll?    {#when-should-you-use-experience-fragments}
+## Wann ist die Verwendung von Experience Fragments sinnvoll? {#when-should-you-use-experience-fragments}
 
 Experience Fragments sollten in folgenden Fällen verwendet werden:
 
@@ -159,13 +161,13 @@ Gehen Sie zum Erstellen eines Experience Fragment folgendermaßen vor:
 
    ![xf-01](assets/xf-01.png)
 
-1. Navigieren Sie zum gewünschten Ordner und wählen Sie **Erstellen** aus.
+1. Navigieren Sie zum gewünschten Ordner und wählen Sie **Erstellen**.
 
    ![xf-02](assets/xf-02.png)
 
 1. Wählen Sie **Experience Fragment** aus, um den Assistenten zum **Erstellen von Experience Fragments** zu öffnen.
 
-   Wählen Sie die gewünschte Vorlage **** aus und klicken Sie auf **Weiter**:
+   Wählen Sie die gewünschte **Vorlage** aus und klicken Sie auf **Weiter**:
 
    ![xf-03](assets/xf-03.png)
 
@@ -174,6 +176,10 @@ Gehen Sie zum Erstellen eines Experience Fragment folgendermaßen vor:
    Sie müssen einen **Titel** angeben. Wenn Sie das Feld **Name** leer lassen, wird der Name vom **Titel** abgeleitet.
 
    ![xf-04](assets/xf-04.png)
+
+   >[!NOTE]
+   Tags aus der Experience Fragment-Vorlage werden nicht mit Tags auf dieser Experience Fragment-Stammseite zusammengeführt.
+   Diese sind völlig voneinander getrennt.
 
 1. Klicken Sie auf **Erstellen**.
 
@@ -267,7 +273,7 @@ So erstellen Sie einen neuen Baustein:
 
    ![xf-authoring-13-icon](assets/xf-authoring-13-icon.png)
 
-1. Geben Sie den Namen des Bausteins **** ein und bestätigen Sie ihn mit der Option **Konvertieren**:
+1. Geben Sie den **Namen des Bausteins** ein und bestätigen Sie ihn mit der Option **Konvertieren**:
 
    ![xf-11](assets/xf-11.png)
 
@@ -279,7 +285,7 @@ So erstellen Sie einen neuen Baustein:
 
 Der Baustein wird auf der Registerkarte **Bausteine** angezeigt. Für jeden Baustein sind die folgenden Aktionen verfügbar:
 
-* Zum Master wechseln: zum Öffnen der Master-Variante in einer neuen Registerkarte
+* Gehen Sie zu Übergeordnet: die Stammseitenvariante in einer neuen Registerkarte öffnen
 * Umbenennen
 * Löschen
 
@@ -342,9 +348,9 @@ Details zu Ihrem Fragment können wie folgt angezeigt werden:
 Mit dem `.plain.`-Selektor in der URL können Sie auf die einfache HTML-Ausgabe des Browsers zugreifen.
 
 >[!NOTE]
-Diese ist zwar direkt über den Browser verfügbar, [aber ihr Hauptzweck ist es, anderen Applikationen (beispielsweise Web-Applikationen von Drittanbietern oder benutzerdefinierten mobilen Implementierungen) den direkten Zugriff auf den Inhalt des Experience Fragment zu ermöglichen, und zwar allein über die URL](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
+Diese ist zwar direkt über den Browser verfügbar, [aber ihr Hauptzweck ist es, anderen Programmen (beispielsweise Web-Programmen von Drittanbietern oder benutzerdefinierten mobilen Implementierungen) den direkten Zugriff auf den Inhalt des Experience Fragment zu ermöglichen, und zwar allein über die URL](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
 
-## Exportieren von Experience Fragments    {#exporting-experience-fragments}
+## Exportieren von Experience Fragments {#exporting-experience-fragments}
 
 Standardmäßig werden Experience Fragments im HTML-Format bereitgestellt. Dies kann von AEM und Drittkanalanbietern gleichermaßen verwendet werden.
 

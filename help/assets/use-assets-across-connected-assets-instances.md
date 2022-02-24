@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: b4c3f4c393d9b34acaadc375d20738ead42e481d
+source-git-commit: 72b39fd0263347c5bfe98fe2fdaf8999d7d40a96
 workflow-type: tm+mt
-source-wordcount: '2979'
-ht-degree: 94%
+source-wordcount: '3215'
+ht-degree: 87%
 
 ---
 
@@ -197,6 +197,22 @@ Gehen Sie wie folgt vor, um Referenzen auf die [!DNL Assets]-Bereitstellung anzu
 1. Benutzer können das Asset verschieben oder löschen. Beim Verschieben oder Löschen eines Assets wird die Gesamtzahl der Referenzen aller ausgewählten Assets/Ordner in einem Warndialogfeld angezeigt. Beim Löschen eines Assets, für das die Referenzen noch nicht angezeigt werden, wird ein Warndialogfeld angezeigt.
 
    ![Warnung „Löschen erzwingen“](assets/delete-referenced-asset.png)
+
+### Verwalten von Aktualisierungen von Assets im Remote-DAM {#manage-updates-in-remote-dam}
+
+Nachher [Verbindung konfigurieren](#configure-a-connection-between-sites-and-assets-deployments) zwischen Remote-DAM und [!DNL Sites] -Implementierungen werden die Assets auf Remote-DAM auf der [!DNL Sites] Implementierung. Anschließend können Sie Vorgänge zum Aktualisieren, Löschen, Umbenennen und Verschieben von Remote-DAM-Assets oder -Ordnern durchführen. Die Aktualisierungen sind mit einiger Verzögerung automatisch auf der [!DNL Sites] Implementierung. Darüber hinaus, wenn ein Asset auf Remote-DAM auf einem lokalen [!DNL Experience Manager Sites] Seite, werden die Aktualisierungen des Assets auf Remote-DAM auf der Seite [!DNL Sites] Seite.
+
+Stellen Sie beim Verschieben eines Assets von einem Speicherort an einen anderen sicher, dass Sie [Verweise anpassen](/help/assets/manage-assets.md) sodass das Asset auf der [!DNL Sites] Seite. Wenn Sie ein Asset an einen Speicherort verschieben, auf den nicht über die lokale [!DNL Sites] -Implementierung kann das Asset nicht in der Sites-Bereitstellung angezeigt werden.
+
+Sie können auch die Metadateneigenschaften für ein Asset auf Remote-DAM aktualisieren und die Änderungen sind auf lokaler Ebene verfügbar [!DNL Sites] Implementierung.
+
+[!DNL Sites] -Autoren können eine Vorschau der verfügbaren Updates auf der [!DNL Sites] -Implementierung bereitstellen und dann die Änderungen erneut veröffentlichen, um sie im [!DNL Experience Manager] Veröffentlichungsinstanz.
+
+[!DNL Experience Manager] zeigt eine abgelaufene Statusanzeige für Assets in an `Remote Assets Content Finder` , damit Website-Autoren das Asset nicht in einer [!DNL Sites] Seite. Wenn Sie ein Asset mit einem abgelaufenen Status auf einem [!DNL Sites] Seite, kann das Asset nicht auf der Seite [!DNL Experience Manager] Veröffentlichungsinstanz.
+
+>[!NOTE]
+>
+>Die Aktualisierungen an Assets im Remote-DAM werden für die [!DNL Sites] Bereitstellung nur bei Remote-DAM und [!DNL Sites] -Implementierungen befinden sich auf [!DNL Experience Manager].
 
 ## Einschränkungen und Best Practices {#tip-and-limitations}
 
