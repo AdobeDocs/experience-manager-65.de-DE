@@ -1,11 +1,11 @@
 ---
 title: Versionshinweise für [!DNL Adobe Experience Manager] 6,5
-description: '[!DNL Adobe Experience Manager]Informationen zu  6.5 mit Versionshinweisen, Angaben zu neuen Funktionen und zur Installation sowie ausführlichen Änderungslisten.'
+description: '"[!DNL Adobe Experience Manager] 6.5-Hinweise mit Versionsinformationen, Neuigkeiten, Installationsanleitungen und detaillierten Änderungslisten."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: b3a3ba8f990d91e003ff862239094ee330b7429a
+source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
 workflow-type: tm+mt
 source-wordcount: '2630'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 

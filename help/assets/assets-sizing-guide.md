@@ -1,41 +1,41 @@
 ---
-title: '[!DNL Assets] Größenleitfaden'
-description: Best Practices zur Bestimmung effizienter Metriken zur Schätzung der Infrastruktur und der Ressourcen, die für die Bereitstellung von  [!DNL Adobe Experience Manager Assets] erforderlich sind.
+title: '"[!DNL Assets] Größenleitfaden"'
+description: Best Practices zur Bestimmung effizienter Metriken zur Schätzung der für die Bereitstellung erforderlichen Infrastruktur und Ressourcen [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Architect, Admin
-feature: Asset-Management
+feature: Asset Management
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
 workflow-type: tm+mt
-source-wordcount: '1617'
+source-wordcount: '1615'
 ht-degree: 62%
 
 ---
 
 # [!DNL Assets] Größenleitfaden {#assets-sizing-guide}
 
-Bei der Dimensionierung der Umgebung für eine [!DNL Adobe Experience Manager Assets]-Implementierung muss sichergestellt werden, dass ausreichend Ressourcen zur Verfügung stehen, d. h. Festplatten-, CPU-, Speicher-, I/O- und Netzwerkdurchsatz. Zur Dimensionierung dieser Ressourcen muss bekannt sein, wie viele Assets in das System geladen werden. Wenn keine bessere Metrik verfügbar ist, können Sie die Größe der vorhandenen Bibliothek durch das Alter der Bibliothek dividieren, um die Rate zu ermitteln, mit der Assets erstellt werden.
+Bei der Dimensionierung der Umgebung für eine [!DNL Adobe Experience Manager Assets] -Implementierung müssen Sie sicherstellen, dass ausreichend Ressourcen zur Verfügung stehen, was den Durchsatz von Festplatte, CPU, Speicher, I/O und Netzwerk angeht. Zur Dimensionierung dieser Ressourcen muss bekannt sein, wie viele Assets in das System geladen werden. Wenn keine bessere Metrik verfügbar ist, können Sie die Größe der vorhandenen Bibliothek durch das Alter der Bibliothek dividieren, um die Rate zu ermitteln, mit der Assets erstellt werden.
 
 ## Festplatte {#disk}
 
 ### Datenspeicher {#datastore}
 
-Ein häufiger Fehler bei der Größe des für eine Implementierung von [!DNL Assets] erforderlichen Festplattenspeichers besteht darin, die Berechnungen auf der Größe der Rohbilder zu basieren, die in das System aufgenommen werden sollen. Standardmäßig erstellt [!DNL Experience Manager] drei Ausgabedarstellungen zusätzlich zum Originalbild für das Rendern der Elemente der Benutzeroberfläche [!DNL Experience Manager]. In vorherigen Implementierungen haben sich diese Wiedergaben als doppelt so groß wie die aufgenommenen Assets herausgestellt. 
+Ein häufiger Fehler wurde bei der Größe des erforderlichen Festplattenspeichers für eine [!DNL Assets] -Implementierung besteht darin, die Berechnungen auf der Größe der Rohbilder zu basieren, die in das System aufgenommen werden sollen. Standardmäßig [!DNL Experience Manager] erstellt drei Ausgabeformate zusätzlich zum Originalbild zur Verwendung beim Rendern der [!DNL Experience Manager] Elemente der Benutzeroberfläche. In vorherigen Implementierungen haben sich diese Wiedergaben als doppelt so groß wie die aufgenommenen Assets herausgestellt. 
 
-Die meisten Benutzer definieren benutzerdefinierte Wiedergaben neben den standardmäßig verfügbaren Wiedergaben. Zusätzlich zu den Ausgabeformaten können Sie mit [!DNL Assets] Unter-Assets aus gängigen Dateitypen wie [!DNL Adobe InDesign] und [!DNL Adobe Illustrator] extrahieren.
+Die meisten Benutzer definieren benutzerdefinierte Wiedergaben neben den standardmäßig verfügbaren Wiedergaben. Zusätzlich zu den Ausgabeformaten [!DNL Assets] Sie können Unter-Assets aus gängigen Dateitypen extrahieren, z. B. [!DNL Adobe InDesign] und [!DNL Adobe Illustrator].
 
-Schließlich speichern die Versionierungsfunktionen von [!DNL Experience Manager] Duplikate der Assets im Versionsverlauf. Sie können die Versionen so konfigurieren, dass Bereinigungen häufig durchgeführt werden. Jedoch entscheiden sich viele Benutzer für eine längere Aufbewahrung der Versionen im System, wodurch zusätzlicher Speicherplatz belegt wird.
+Und schließlich die Versionierungsfunktionen von [!DNL Experience Manager] speichert Duplikate der Assets im Versionsverlauf. Sie können die Versionen so konfigurieren, dass Bereinigungen häufig durchgeführt werden. Jedoch entscheiden sich viele Benutzer für eine längere Aufbewahrung der Versionen im System, wodurch zusätzlicher Speicherplatz belegt wird.
 
 Angesichts dieser Faktoren benötigen Sie eine Methodik für eine ausreichend genaue Berechnung des Speicherplatzes, um Benutzer-Assets aufbewahren zu können.
 
 1. Bestimmen Sie die Größe und die Anzahl der Assets, die in das System geladen werden.
-1. Rufen Sie ein repräsentatives Beispiel der Assets ab, die in [!DNL Experience Manager] hochgeladen werden sollen. Wenn Sie beispielsweise PSD-, JPG-, AI- und PDF-Dateien in das System laden möchten, benötigen Sie mehrere Beispielbilder für jedes Dateiformat. Außerdem sollten diese Stichproben repräsentativ für die verschiedenen Dateigrößen und die Komplexität der Bilder sein.
+1. Abrufen eines repräsentativen Beispiels der Assets, in die hochgeladen werden soll [!DNL Experience Manager]. Wenn Sie beispielsweise PSD-, JPG-, AI- und PDF-Dateien in das System laden möchten, benötigen Sie mehrere Beispielbilder für jedes Dateiformat. Außerdem sollten diese Stichproben repräsentativ für die verschiedenen Dateigrößen und die Komplexität der Bilder sein.
 1. Definieren Sie die zu verwendenden Wiedergaben.
-1. Erstellen Sie die Ausgabedarstellungen in [!DNL Experience Manager] mit [!DNL ImageMagick]- oder [!DNL Adobe Creative Cloud]-Anwendungen. Erstellen Sie neben den von den Benutzern angegebenen Wiedergaben sofort einsetzbare Standardwiedergaben. Für Benutzer, die Dynamic Media implementieren, können Sie die IC-Binärdatei verwenden, um die PTIFF-Ausgabeformate zu generieren, die in Experience Manager gespeichert werden sollen.
+1. Erstellen Sie die Ausgabedarstellungen in [!DNL Experience Manager] using [!DNL ImageMagick] oder [!DNL Adobe Creative Cloud] Anwendungen. Erstellen Sie neben den von den Benutzern angegebenen Wiedergaben sofort einsetzbare Standardwiedergaben. Für Benutzer, die Dynamic Media implementieren, können Sie die IC-Binärdatei verwenden, um die PTIFF-Ausgabeformate zu generieren, die in Experience Manager gespeichert werden sollen.
 1. Wenn Sie die Verwendung von Unter-Assets beabsichtigen, generieren Sie diese für die entsprechenden Dateitypen.
 1. Vergleichen Sie die Größe der Ausgabebilder, Wiedergaben und Unter-Assets mit den Originalbildern. So können Sie den erwarteten Wachstumsfaktor beim Laden des Systems generieren. Wenn Sie z. B. Wiedergaben und Unter-Assets mit einer kombinierten Größe von 3 GB nach der Verarbeitung von 1 GB an Assets erzeugen, lautet der Wiedergabe-Wachstumsfaktor 3.
 1. Ermitteln Sie, wie lange die einzelnen Asset-Versionen maximal im System aufbewahrt werden sollen.
-1. Ermitteln Sie, wie oft vorhandene Assets im System geändert werden. Wenn [!DNL Experience Manager] als Knotenpunkt für die Zusammenarbeit in kreativen Workflows verwendet wird, ist die Anzahl der Änderungen hoch. Wenn nur fertiggestellte Assets in das System hochgeladen werden, ist diese Zahl wesentlich niedriger.
+1. Ermitteln Sie, wie oft vorhandene Assets im System geändert werden. Wenn [!DNL Experience Manager] wird als Knotenpunkt für die Zusammenarbeit in kreativen Workflows verwendet. Die Anzahl der Änderungen ist hoch. Wenn nur fertiggestellte Assets in das System hochgeladen werden, ist diese Zahl wesentlich niedriger.
 1. Ermitteln Sie, wie viele Assets jeden Monat in das System geladen werden. Wenn Sie sich nicht sicher sind, bestimmen Sie die Anzahl der aktuell verfügbaren Assets und dividieren Sie diese Zahl durch das Alter des ältesten Assets, um einen ungefähren Wert zu berechnen. 
 
 Mithilfe der oben genannten Schritte können Sie Folgendes ermitteln:
@@ -48,7 +48,7 @@ Mithilfe der oben genannten Schritte können Sie Folgendes ermitteln:
 * Anzahl der neu geladenen Assets pro Monat.
 * Wachstumsjahre für die Speicherplatzzuweisung.
 
-Sie können diese Zahlen in der Tabelle zur Netzwerkdimensionierung angeben, um den Gesamtspeicherbedarf für den Datenspeicher zu ermitteln. Es ist auch ein nützliches Tool, um die Auswirkungen der Pflege von Asset-Versionen oder der Änderung von Assets in [!DNL Experience Manager] auf das Festplattenwachstum zu ermitteln.
+Sie können diese Zahlen in der Tabelle zur Netzwerkdimensionierung angeben, um den Gesamtspeicherbedarf für den Datenspeicher zu ermitteln. Es ist auch ein nützliches Tool, um die Auswirkungen der Wartung von Asset-Versionen oder der Änderung von Assets in zu ermitteln. [!DNL Experience Manager] auf Festplattenwachstum.
 
 Die in das Tool aufgefüllten Beispieldaten zeigen, wie wichtig die Ausführung der genannten Schritte ist. Wenn Sie den Datenspeicher allein basierend auf dem Ladevorgang der Rohbilder (1 TB) bemessen, ist eine Unterbewertung der Repositorygröße um dem Faktor 15 möglich.
 
@@ -76,7 +76,7 @@ Den AWS S3-Dienst für freigegebene Datenspeicher bereitzustellen, wird vorgezo
 
 Freigegebene Datenspeicher erhöhen ebenfalls die Komplexität solcher Vorgänge, etwa der automatischen Speicherbereinigung. Normalerweise kann die automatische Speicherbereinigung für einen Standalone-Datenspeicher mit einem einzigen Klick initiiert werden. Allerdings setzen freigegebene Datenspeicher zusätzlich zu der auf jedem Knoten tatsächlich durchgeführten Bereinigung Mark-Sweep-Vorgänge auf jedem Mitglied voraus, das den Datenspeicher nutzt.
 
-Bei AWS-Betriebsabläufen kann die Implementierung eines zentralen Standorts (über Amazon S3) anstatt eines RAID-Arrays mit EBS-Volumes, die Komplexität und die betrieblichen Risiken auf dem System erheblich ausgleichen.
+Bei AWS-Betriebssystemen kann die Implementierung eines einzigen zentralen Standorts (über Amazon S3), anstatt ein RAID-Array mit EBS-Volumes zu erstellen, die Komplexität und die betrieblichen Risiken auf dem System erheblich ausgleichen.
 
 #### Leistungsbedenken {#performance-concerns}
 
@@ -103,15 +103,15 @@ Verwenden Sie für das Repository SSDs oder Festplatten mit einem IOPS-Level gr�
 
 ## Netzwerk {#network}
 
-[!DNL Assets] verfügt über eine Reihe von Anwendungsfällen, die die Netzwerkleistung wichtiger machen als bei vielen unserer  [!DNL Experience Manager] Projekte. Ein Kunde kann über einen schnellen Server verfügen. Wenn die Netzwerkverbindung jedoch nicht groß genug ist, um die Last der Benutzer zu unterstützen, die Assets vom System hochladen und herunterladen, scheint sie dennoch langsam zu sein. Es gibt eine gute Methode zur Bestimmung des Schlupfpunkts in der Netzwerkverbindung eines Benutzers zu [!DNL Experience Manager] unter [Überlegungen zu Assets für das Benutzererlebnis, die Größe von Instanzen, die Workflow-Auswertung und die Netzwerktopologie](/help/assets/assets-network-considerations.md).
+[!DNL Assets] verfügt über eine Reihe von Anwendungsfällen, die die Netzwerkleistung wichtiger machen als bei vielen unserer [!DNL Experience Manager] Projekte. Ein Kunde kann über einen schnellen Server verfügen. Wenn die Netzwerkverbindung jedoch nicht groß genug ist, um die Last der Benutzer zu unterstützen, die Assets vom System hochladen und herunterladen, scheint sie dennoch langsam zu sein. Es gibt eine gute Methode, um den Schokoladpunkt in der Netzverbindung eines Benutzers zu [!DNL Experience Manager] at [Überlegungen zu Assets für das Benutzererlebnis, die Größe von Instanzen, die Auswertung von Workflows und die Netzwerktopologie](/help/assets/assets-network-considerations.md).
 
 ## Beschränkungen {#limitations}
 
-Beim Dimensionieren einer Implementierung ist es wichtig, Systembeschränkungen zu bedenken. Wenn die vorgeschlagene Implementierung diese Einschränkungen überschreitet, wenden Sie kreative Strategien an, z. B. das Partitionieren der Assets über mehrere [!DNL Assets] -Implementierungen hinweg.
+Beim Dimensionieren einer Implementierung ist es wichtig, Systembeschränkungen zu bedenken. Wenn die vorgeschlagene Implementierung diese Einschränkungen überschreitet, setzen Sie kreative Strategien ein, z. B. das Partitionieren der Assets über mehrere [!DNL Assets] -Implementierungen.
 
-Die Dateigröße ist nicht der einzige Faktor, der bei OOM-Problemen (Out of Memory, nicht genügend Arbeitsspeicher) eine Rolle spielt. Es kommt auch auf die Bildabmessungen an. Sie können OOM-Probleme vermeiden, indem Sie beim Starten von [!DNL Experience Manager] eine höhere Heap-Größe angeben.
+Die Dateigröße ist nicht der einzige Faktor, der bei OOM-Problemen (Out of Memory, nicht genügend Arbeitsspeicher) eine Rolle spielt. Es kommt auch auf die Bildabmessungen an. Sie können OOM-Probleme vermeiden, indem Sie beim Start eine höhere Heap-Größe festlegen [!DNL Experience Manager].
 
-Darüber hinaus können Sie die Eigenschaft für die Schwellengröße der Komponente `com.day.cq.dam.commons.handler.StandardImageHandler` in Configuration Manager bearbeiten, um eine temporäre Zwischendatei zu verwenden, die größer als null ist.
+Darüber hinaus können Sie die Eigenschaft für die Schwellengröße der Variablen `com.day.cq.dam.commons.handler.StandardImageHandler` -Komponente in Configuration Manager verwenden, um temporäre Zwischendatei größer als null zu verwenden.
 
 ## Maximale Anzahl von Assets {#maximum-number-of-assets}
 
@@ -119,8 +119,8 @@ Die maximale Anzahl von Dateien in einem Datenspeicher kann sich aufgrund von Da
 
 Wurden die Wiedergaben nicht korrekt generiert, verwenden Sie die Camera Raw-Bibliothek. In diesem Fall sollte jedoch die längste Bildseite nicht größer sein als 65.000 Pixel. Darüber hinaus sollte das Bild nicht mehr als 512 MP (512 x 1024 x 1024 Pixel) enthalten. Die Größe des Assets spielt keine Rolle.
 
-Es ist schwierig, die Größe der standardmäßig unterstützten TIFF-Datei mit einem bestimmten Heap für [!DNL Experience Manager] genau zu schätzen, da zusätzliche Faktoren wie die Pixelgröße die Verarbeitung beeinflussen. Es ist möglich, dass [!DNL Experience Manager] standardmäßig eine Datei mit einer Größe von 255 MB verarbeiten kann, jedoch keine Dateigröße von 18 MB verarbeiten kann, da letztere eine ungewöhnlich höhere Anzahl von Pixeln im Vergleich zu ersteren aufweist.
+Es ist schwierig, die Größe der standardmäßig unterstützten TIFF-Datei mit einem bestimmten Heap für [!DNL Experience Manager] weil zusätzliche Faktoren wie die Pixelgröße die Verarbeitung beeinflussen. Es ist möglich, dass [!DNL Experience Manager] kann standardmäßig eine Datei mit einer Größe von 255 MB verarbeiten, kann jedoch keine Dateigröße von 18 MB verarbeiten, da letztere eine ungewöhnlich höhere Anzahl von Pixel im Vergleich zu ersteren aufweist.
 
 ## Größe der Assets {#size-of-assets}
 
-Standardmäßig können Sie mit [!DNL Experience Manager] Assets mit einer Dateigröße von bis zu 2 GB hochladen. Informationen zum Hochladen sehr großer Assets in [!DNL Experience Manager] finden Sie unter [Konfiguration zum Hochladen sehr großer Assets](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb).
+Standardmäßig [!DNL Experience Manager] ermöglicht das Hochladen von Assets mit einer Dateigröße von bis zu 2 GB. Hochladen sehr großer Assets in [!DNL Experience Manager], siehe [Konfiguration zum Hochladen sehr großer Assets](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb).

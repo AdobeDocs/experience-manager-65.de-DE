@@ -1,19 +1,19 @@
 ---
 title: Media Library für grundlegende Verwaltung von digitalen Assets verwenden
-description: '[!DNL Experience Manager Assets] und Media Library für das Asset-Management.'
+description: '"[!DNL Experience Manager Assets] und Media Library für das Asset-Management."'
 contentOwner: AG
 role: Architect, Leader
 feature: Asset Management
 exl-id: e10d632d-1d90-4f28-8617-95ee41602997
-source-git-commit: 823f36bb7eab6c74a07f90883fa040428d8f8420
+source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
 workflow-type: tm+mt
 source-wordcount: '551'
-ht-degree: 80%
+ht-degree: 92%
 
 ---
 
 
-# Media Library für grundlegendes Asset-Management verwenden {#manage-assets-using-media-library}
+# Verwenden von Media Library für grundlegendes Asset-Management {#manage-assets-using-media-library}
 
 Die [!DNL Adobe Experience Manager]-Plattform bietet verschiedene Funktionen zum Verwalten von Assets. Mit Media Library können Benutzer eine kleine Anzahl von Assets in das Repository hochladen, diese auf den Web-Seiten suchen und verwenden und einfache Asset-Management-Aufgaben für die Assets ausführen.
 
@@ -33,11 +33,11 @@ Experience Manager Assets bietet DAM-Funktionen im Unternehmensmaßstab. Die Fun
 
 Wenn Sie eine unbeabsichtigte Verwendung von nicht lizenzierten [!DNL Assets]-Funktionen verhindern möchten, entfernen Sie alle [!DNL Assets]-spezifischen Workflows, Komponenten, Taxonomien, Optionen und den [!DNL Assets]-Administrator aus [!DNL Experience Manager]. Hierdurch verhindern Sie, dass Benutzer versehentlich [!DNL Assets]-Funktionen nutzen, für die Sie keine Lizenz haben.
 
-## Media Library verwenden {#use-media-library}
+## Verwenden von Media Library {#use-media-library}
 
 Media Library bietet grundlegende DAM-Funktionen für die folgenden Anwendungsfälle:
 
-* Mit [!DNL Adobe Experience Manager Sites] erstellte Webseiten.
+* Mit [!DNL Adobe Experience Manager Sites].
 * Adaptive Formulare und Kommunikationen, die mit [!DNL Adobe Experience Manager Forms] erstellt wurden.
 * Mit [!DNL Adobe Experience Manager Screens] erstellte digitale Bildschirmerlebnisse.
 * [!DNL Assets]-HTTP-REST-APIs für Headless-Vorgänge.
@@ -63,11 +63,11 @@ Um die Media Library-Funktionalität zu verwenden, können Sie die Standardbenut
 * Kommentieren von Assets.
 * Hinzufügen von Assets zu [!DNL Sites]-Seiten über die Content-Suche.
 * Verwenden von [!DNL Content Fragments].
-* Verwenden Sie HTTP REST- und GraphQL-APIs für [!DNL Content Fragments] und referenzierte Medien-Assets unter Sites-Lizenz.
+* Verwenden von HTTP REST- und GraphQL-APIs für [!DNL Content Fragments] und referenzierte Medien-Assets unter Sites-Lizenz.
 * Marketing Cloud-Integration.
-* Anpassen und Erweitern der Benutzeroberfläche für die Asset-Verwaltung.
-* Greifen Sie auf Query Builder (API) zu, um die Suchfunktion zu erweitern.
-* Erstellen Sie statische Tags.
+* Anpassen und Erweitern der Benutzeroberfläche für das Asset-Management.
+* Zugriff auf Query Builder (API), um die Suchfunktion zu erweitern.
+* Erstellen von statischen Tags.
 * Erstellen von Projekten und Aufgaben.
 * Aktivitäts-Stream (Zeitleiste).
 * Kommentare und Anmerkungen.
@@ -81,7 +81,7 @@ As per PM, we must avoid stating such a list, as we don't have a list that makes
 >
 >Viele erweiterte DAM-Anwendungsfälle werden von [!DNL Experience Manager Assets] erfüllt. Die Media Library-Lizenz berechtigt Sie nur dazu, die aufgelisteten Anwendungsfälle mit Media Library zu erfüllen. Wenn ein Anwendungsfall nicht aufgeführt ist, wenden Sie ihn nicht mit der Media Library-Lizenz an. Wenden Sie sich bei Fragen an den Support von Adobe.
 
-Beachten Sie, dass Sie keine Smart-Tags, [!DNL Asset]-Links, [!DNL Asset]-Selektoren, Massen-Tagging, Ändern von Asset-Workflows oder standardmäßigen [!DNL Adobe Experience Manager]-Benutzeroberflächen verwenden können, um ohne [!DNL Assets]-Lizenz auf Media Library zuzugreifen.
+Beachten Sie, dass Sie ohne [!DNL Assets]-Lizenz keine Smart Tags, [!DNL Asset]-Link, [!DNL Asset]-Auswahl, Bulk-Tagging, modifizierte Asset-Workflows oder die Standard-[!DNL Adobe Experience Manager]-Benutzeroberfläche verwenden können, um auf die Medienbibliothek zuzugreifen.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 

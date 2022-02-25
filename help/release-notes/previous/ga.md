@@ -1,7 +1,7 @@
 ---
 title: Allgemeine Versionshinweise für [!DNL Adobe Experience Manager] 6,5
-description: '[!DNL Adobe Experience Manager]Informationen zu  6.5 mit Versionshinweisen, Angaben zu neuen Funktionen und zur Installation sowie ausführlichen Änderungslisten.'
-source-git-commit: 37f1df9f9421ff18fff45723b6eb081f0192520a
+description: '"[!DNL Adobe Experience Manager] 6.5-Hinweise mit Versionsinformationen, Neuigkeiten, Installationsanleitungen und detaillierten Änderungslisten."'
+source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
 workflow-type: tm+mt
 source-wordcount: '4696'
 ht-degree: 57%
@@ -491,7 +491,7 @@ Die Benutzeroberfläche ist in den folgenden Sprachen verfügbar:
 * Französisch
 * Spanisch
 * Italienisch
-* Brasilianisches  Portugiesisch
+* Brasilianisches Portugiesisch
 * Japanisch
 * Vereinfachtes Chinesisch
 * Traditionelles Chinesisch (begrenzte Unterstützung)
