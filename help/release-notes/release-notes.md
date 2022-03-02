@@ -2,9 +2,9 @@
 title: Versionshinweise für [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5-Hinweise mit Versionsinformationen, Neuigkeiten, Installationsanleitungen und detaillierten Änderungslisten."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+source-git-commit: 498e00ab7838de675771224204726a51e68d4a57
 workflow-type: tm+mt
-source-wordcount: '2630'
+source-wordcount: '2642'
 ht-degree: 4%
 
 ---
@@ -323,7 +323,19 @@ Im Folgenden finden Sie eine Liste der Funktionen, die als veraltet gekennzeichn
 
 ## Bekannte Probleme {#known-issues}
 
-* Wenn Sie AEM 6.5 Service Pack 11 installieren und versuchen, die Status-ZIP-Datei herunterzuladen, lädt Experience Manager eine beschädigte Datei herunter. Herunterladen und installieren [AEM Sites SEO Index Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/sites-seo-index-content-1.0.0.zip) auf Ihrer AEM Instanz vor dem Herunterladen der ZIP-Datei, um das Problem zu beheben.
+* Wenn Sie AEM 6.5 Service Pack 12 installieren und versuchen, die Status-ZIP-Datei herunterzuladen, lädt Experience Manager eine beschädigte Datei herunter.
+
+   >[!CAUTION]
+   >
+   >Eine neue Version des Pakets &quot;Indexdefinition&quot; wird derzeit entwickelt. Der unten stehende Link wird veröffentlicht, sobald er verfügbar ist.
+   >
+   >Bis dahin wenden Sie sich an die Kundenunterstützung, um den Hotfix zu erhalten.
+
+   <!--
+  Download and install [AEM Sites SEO Index Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/sites-seo-index-content-1.0.0.zip) on your AEM instance before downloading the ZIP file to resolve the issue.
+  -->
+
+   Laden Sie das AEM Sites SEO Index Package auf Ihre AEM-Instanz herunter und installieren Sie es, bevor Sie die ZIP-Datei herunterladen, um das Problem zu beheben.
 
 * As [!DNL Microsoft Windows Server 2019] unterstützt nicht [!DNL MySQL 5.7] und [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] unterstützt keine Turnkey-Installationen für [!DNL AEM Forms 6.5.10.0].
 
