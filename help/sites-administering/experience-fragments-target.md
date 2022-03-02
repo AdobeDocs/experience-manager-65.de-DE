@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: 079b7b1e386ac2d02026ee2d8db411e517168b00
+source-git-commit: 72012fa441edb01deb7e557b707fb068d8e9892e
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1220'
 ht-degree: 46%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 46%
    >   * einen benannten Arbeitsbereich, der in der Cloud-Konfiguration angegeben ist.
    >   * **Hinweis:** Für den Export in bestimmte Arbeitsbereiche ist Adobe Target Premium erforderlich.
 >
->* AEM muss [mit Adobe Target mithilfe von Adobe I/O integriert](/help/sites-administering/integration-target-ims.md).
+>* AEM muss [mit Adobe Target über IMS integriert](/help/sites-administering/integration-target-ims.md).
 >
 >AEM 6.5.0.0 und 6.5.1.0:
 >
@@ -53,11 +53,11 @@ Es gibt drei Formatoptionen für den Export eines Experience Fragments in Adobe 
 * JSON: Unterstützung der Headless Content-Bereitstellung
 * HTML und JSON
 
-AEM Experience Fragments können in den Standardarbeitsbereich in Adobe Target oder in benutzerdefinierte Arbeitsbereiche für Adobe Target exportiert werden. Dies geschieht über Adobe I/O, für die AEM erforderlich sind [mit Adobe Target mithilfe von Adobe I/O integriert](/help/sites-administering/integration-target-ims.md).
+AEM Experience Fragments können in den Standardarbeitsbereich in Adobe Target oder in benutzerdefinierte Arbeitsbereiche für Adobe Target exportiert werden. Dies erfolgt über die Adobe Developer Console, für die AEM erforderlich sind [mit Adobe Target über IMS integriert](/help/sites-administering/integration-target-ims.md).
 
 >[!NOTE]
 >
->Die Adobe Target-Arbeitsbereiche sind nicht in Adobe Target selbst vorhanden. Sie werden in Adobe IMS (Identity Management System) definiert und verwaltet und dann zur lösungsübergreifenden Verwendung mithilfe von Adobe I/O-Integrationen ausgewählt.
+>Die Adobe Target-Arbeitsbereiche sind nicht in Adobe Target selbst vorhanden. Sie werden in Adobe IMS (Identity Management System) definiert und verwaltet und dann zur lösungsübergreifenden Verwendung mithilfe von Integrationen aus der Adobe Developer Console ausgewählt.
 
 >[!NOTE]
 >
@@ -80,7 +80,7 @@ AEM Experience Fragments können in den Standardarbeitsbereich in Adobe Target o
 
 Verschiedene Aktionen sind erforderlich:
 
-1. Sie müssen [AEM mit Adobe Target mithilfe von Adobe I/O integrieren](/help/sites-administering/integration-target-ims.md).
+1. Sie müssen [AEM mit Adobe Target mithilfe von IMS integrieren](/help/sites-administering/integration-target-ims.md).
 2. Experience Fragments werden aus der AEM-Autoreninstanz exportiert. Daher müssen Sie [Konfigurieren von AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) auf der Autoreninstanz, um sicherzustellen, dass alle Verweise im Experience Fragment für die Webbereitstellung externalisiert werden.
 
    >[!NOTE]
