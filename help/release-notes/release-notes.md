@@ -2,9 +2,9 @@
 title: Versionshinweise für [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5-Hinweise mit Versionsinformationen, Neuigkeiten, Installationsanleitungen und detaillierten Änderungslisten."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: b1e38323fbbb268de76067eb85596119b44221c2
+source-git-commit: 37e7f2552ae712bc23eb3ce1af1b41808f4d1810
 workflow-type: tm+mt
-source-wordcount: '2662'
+source-wordcount: '2644'
 ht-degree: 4%
 
 ---
@@ -323,13 +323,11 @@ Im Folgenden finden Sie eine Liste der Funktionen, die als veraltet gekennzeichn
 
 ## Bekannte Probleme {#known-issues}
 
-* Wenn Sie AEM 6.5 Service Pack 12 installieren und versuchen, die Status-ZIP-Datei herunterzuladen, lädt Experience Manager eine beschädigte Datei herunter.
+* Wenn Sie Inhaltsfragmente und GraphQL verwenden, wird empfohlen, die folgenden Pakete zusätzlich zu 6.5.12.0 zu installieren:
 
-   Um dies zu vermeiden, laden Sie die folgenden beiden Elemente herunter und installieren Sie sie auf Ihrer AEM-Instanz **before** Herunterladen der Status-ZIP-Datei:
+   * [AEM 6.5.12 Sites HotFix-NPR-38144](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Faem-service-pkg-6.5.12.0-NPR-38144-B0002.zip)
 
-   * die folgenden [Hotfix](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Faem-service-pkg-6.5.12.0-NPR-38144-B0002.zip)
-
-   * die [AEM Sites SEO Index Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.4.zip)
+   * [AEM Inhaltsfragment mit GraphQL-Indexpaket 1.0.4](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.4.zip)
 
 * As [!DNL Microsoft Windows Server 2019] unterstützt nicht [!DNL MySQL 5.7] und [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] unterstützt keine Turnkey-Installationen für [!DNL AEM Forms 6.5.10.0].
 
