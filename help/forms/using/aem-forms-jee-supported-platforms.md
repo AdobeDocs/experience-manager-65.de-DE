@@ -11,10 +11,10 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 41fb9099ef81b84bcf9fa7b6f153ab1a27953795
+source-git-commit: 4d7e6fa898989ef764804690410af4771430ca4b
 workflow-type: tm+mt
-source-wordcount: '3488'
-ht-degree: 74%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -111,12 +111,7 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
    <td>Nebenversionen und Updates</td>
   </tr>
   <tr>
-   <td>IBM® J9 Virtual Machine (Build 2.8, JRE 1.8.0)</td>
-   <td>A: Unterstützt</td>
-   <td>Nebenversionen und Updates</td>
-  </tr>
-  <tr>
-   <td>IBM® J9 Virtual Machine (Build 2.9, JRE 1.8.0)<br /> </td>
+   <td>IBM® J9 Virtual Machine (Build 2.9, JRE 1.8.0) IBM® JDK SR6-FP26<br /> </td>
    <td>A: Unterstützt</td>
    <td>Nebenversionen und Updates</td>
   </tr>
@@ -144,25 +139,20 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
    <td><p>Unterstützt</p> </td>
   </tr>
   <tr>
-   <td><p>MongoDB Enterprise 4.0 </p> </td>
+   <td><p> MongoDB Enterprise 4.0 (überholt) </p> </td>
    <td><p>Repository-Mikrokernel</p> </td>
    <td><p>Unterstützt</p> </td>
   </tr>
   <tr>
-   <td><p>Oracle Database 12c Release 1</p> </td>
-   <td><p>Repository-Mikrokernel</p> </td>
-   <td><p>Unterstützt</p> </td>
-  </tr>
-   <tr>
-   <td><p>Oracle Database 12c Release 2 (12.2.0.1.0)</p> </td>
+   <td><p>MongoDB Enterprise 4.2 </p> </td>
    <td><p>Repository-Mikrokernel</p> </td>
    <td><p>Unterstützt</p> </td>
   </tr>
   <tr>
-   <td>Oracle Database 18c </td>
-   <td>Repository-Mikrokernel</td>
-   <td>Unterstützt</td>
-  </tr> 
+   <td><p>Oracle Database 12c Release 2 (12.2.0.1.0) (veraltet)</p> </td>
+   <td><p>Repository-Mikrokernel</p> </td>
+   <td><p>Unterstützt</p> </td>
+  </tr>
    <tr>
    <td>Oracle Database 19c (Standard, Real Application Clusters (RAC) und Enterprise Editions) </td>
    <td>Repository Microkernal </td>
@@ -179,15 +169,20 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
    <td><p>Unterstützt</p> </td>
   </tr>
   <tr>
-   <td>IBM DB2 11.1</td>
+   <td>IBM DB2 11.1 (Veraltet)</td>
    <td>Repository-Mikrokernel</td>
    <td>R: Eingeschränkte Unterstützung</td>
   </tr>
   <tr>
-   <td>MySQL 5.7.35 </td>
+   <td>MySQL 5.7.35 (überholt) </td>
    <td>-</td>
    <td>R: Eingeschränkte Unterstützung </td>
-  </tr>  
+  </tr>
+  <tr>
+   <td>MySQL 8.0.27</td>
+   <td>-</td>
+   <td>R: Eingeschränkte Unterstützung </td>
+  </tr>
  </tbody>
 </table>
 
@@ -218,7 +213,7 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
   </tr>
   <tr>
    <td>Microsoft SQL Server<br /> </td>
-   <td><p>Microsoft® SQL Server JDBC-Treiber 6.2.1.0<br /> </p> <p>sqljdbc6.jar</p> </td>
+   <td><p>Microsoft® SQL Server JDBC-Treiber 6.2.1.0 (veraltet) <br /> </p> <p>sqljdbc6.jar</p> </td>
    <td><p>AEM Forms on JEE-Installation im Paket enthalten.</p> </td>
   </tr>
   <tr>
@@ -254,7 +249,12 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
    <td>Service Pack und wichtige Updates</td>
   </tr>
   <tr>
-   <td><p>JBoss® Enterprise Application-Plattform (EAP) 7.1.4 <sup>[2] [3] [7]</sup></p> </td>
+   <td><p>JBoss® Enterprise Application Platform (EAP) 7.1.4 <sup>[2] [3] [7]</sup> (Veraltet) </p> </td>
+   <td><p>A: Unterstützt</p> </td>
+   <td><p>Patches und kumulative Patches für die unterstützte EAP-Version</p> </td>
+  </tr>
+  <tr>
+   <td><p>JBoss® Enterprise Application-Plattform (EAP) 7.4 <sup>[2] [3] [7]</sup> </p> </td>
    <td><p>A: Unterstützt</p> </td>
    <td><p>Patches und kumulative Patches für die unterstützte EAP-Version</p> </td>
   </tr>
@@ -287,7 +287,7 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
    <td>Service Packs und wichtige Updates</td>
   </tr>
   <tr>
-   <td>Microsoft Windows Server 2016 (64 Bit) (veraltet)</td>
+   <td> Microsoft Windows Server 2016 (64 Bit) (veraltet)</td>
    <td>A: Unterstützt</td>
    <td>Service Packs und wichtige Updates</td>
   </tr>
@@ -350,7 +350,7 @@ Beachten Sie die folgenden Ausnahmen, wenn Sie eine Plattform auswählen, auf de
 1. AEM Forms on JEE unterstützt kein anderes JDK mit IBM® WebSphere® als IBM® JDK.
 1. CRX-Repository unterstützt Persistenz des Typs TarMK, MongoDB und relationale Datenbanken (RDBMK). Sie können zwischen dem Anwendungsserver und dem CRX-Repository nicht zwei verschiedene Datenbanksysteme haben. In einer AEM Forms on JEE-Umgebung können Sie MongoMK jedoch mit CRX-Repository und einer unterstützten relationalen Datenbank mit Anwendungsserver verwenden.
 1. AEM Forms on JEE unterstützt keinen WebSphere-Anwendungsserver unter CentOS.
-1. AEM Forms on JEE unterstützt keine rollenbasierte Zugriffssteuerung (RBAC) für JBoss.
+1. AEM Forms on JEE unterstützt keine rollenbasierte JBoss-Zugriffskontrolle (RBAC).
 
 Außerdem sollten Sie die folgenden Punkte beachten, wenn Sie die Software für Implementierungen von Adobe AEM Forms on JEE auswählen:
 
@@ -372,10 +372,6 @@ Außerdem sollten Sie die folgenden Punkte beachten, wenn Sie die Software für 
    <th><p><strong>Unterstützte Patch-Definitionen</strong></p> </th>
   </tr>
   <tr>
-   <td>Oracle Unified Directory (OUD) 11g Release 2</td>
-   <td>Service Packs</td>
-  </tr>
-  <tr>
    <td>Microsoft Active Directory 2016</td>
    <td>Maintenance-Release und Fix Packs</td>
   </tr>
@@ -390,7 +386,6 @@ Außerdem sollten Sie die folgenden Punkte beachten, wenn Sie die Software für 
 
 | Produkt |
 | ----------------------- |
-| IBM Lotus Domino 9.0 |
 | Microsoft Exchange 2013 |
 | Microsoft Office 365 |
 
@@ -408,18 +403,14 @@ Außerdem sollten Sie die folgenden Punkte beachten, wenn Sie die Software für 
   </tr>
   <tr>
    <td>IBM Filenet</td>
-   <td>5.2</td>
-  </tr>
-  <tr>
-   <td>IBM Filenet</td>
    <td>5,5,2</td>
   </tr>
   <tr>
-   <td>IBM Content Manager Server</td>
+   <td>IBM Content Manager Server (nicht mehr unterstützt) </td>
    <td>8.5 Fixpack 2</td>
   </tr>
   <tr>
-   <td>IBM Content Manager Client</td>
+   <td> IBM Content Manager Client (nicht mehr unterstützt)</td>
    <td>8,5 </td>
   </tr>
   <tr>
@@ -463,7 +454,7 @@ AEM Forms App unterstützt jetzt Apache Cordova. Die folgenden plattformspezifis
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF und TXT</td>
   </tr>
   <tr>
-   <td>WordPerfect X7</td>
+   <td>WordPerfect 2020<br /> </td>
    <td>WP, WPD</td>
   </tr>
   <tr>
@@ -735,25 +726,6 @@ Die AEM Forms-App ist für die folgenden Plattformen verfügbar:
 | Google Android | Android 5.1 und höher. Die AEM Forms-App ist für Samsung Galaxy-Tablets (7 und 10 Zoll) und beliebte Smartphones zertifiziert. |
 | Microsoft Windows | Microsoft Surface-Geräte, Tablets, Laptops und Desktops mit Microsoft Windows 10. |
 
-### Adobe Flash Player {#adobe-flash-player}
-
-<table>
- <tbody>
-  <tr>
-   <th><p><strong>Flash Player (Basisversion)</strong></p> </th>
-   <th><p><strong>Unterstützte Patch-Definitionen</strong></p> </th>
-  </tr>
-  <tr>
-   <td><p>Flash Player – neueste Version</p> </td>
-   <td><p>Nebenversionen und Updates</p> </td>
-  </tr>
- </tbody>
-</table>
-
->[!NOTE]
->
-> Adobe wird [Ende 2020 die Aktualisierung und Verteilung des Flash Players einstellen](https://theblog.adobe.com/adobe-flash-update/).
-
 ### Adobe Document Security Extension for Microsoft Office {#adobe-rights-management-extension-for-microsoft-office}
 
 Klicken Sie [hier](https://www.adobe.com/de/products/livecycle/rightsmanagement/extension/downloads.html), um die Systemanforderungen für Adobe Document Security Extension for Microsoft® Office anzuzeigen.
@@ -780,29 +752,45 @@ Weitere Informationen über Patches von Drittanbietern erhalten Sie auch auf der
 
 ## Plattformaktualisierungen {#platform-updates}
 
+Die folgenden Plattformen werden mit der AEM Forms-Version 6.5.12.0 vom 3. Februar 2022 als veraltet gekennzeichnet:
+
+- MongoDB Enterprise 4.0
+- IBM DB2 11.1
+- Oracle Database 12c Release 2
+- MySQL 5.7.35
+- Microsoft® SQL Server JDBC-Treiber 6.2.1.0
+- JBoss® Enterprise Application Platform (EAP) 7.1.4
+- IBM Content Manager Server 8.5 Fix Pack 2
+- IBM Content Manager Client 8.5
+
 Die folgenden Plattformen werden mit der AEM Forms-Version 6.5.10.0 vom 7. September 2021 als veraltet gekennzeichnet:
 
 - Adobe Acrobat 2017 - [Die Hauptunterstützung für Adobe Acrobat 2017 endet am 6. Juni 2022](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
-
 - Microsoft Windows Server 2016 (64 Bit)
-
 - Red Hat Enterprise Linux 7 (Kernel 3.x) (64 Bit)
-
 - Microsoft® Office 2016
-
 - OpenOffice 4.1.2
 
 >[!NOTE]
 >
-> Die Plattformen, die als [nicht mehr unterstützt, bis AEM Forms 6.5 Service Pack 15 (6.5.15.0) verfügbar ist](https://helpx.adobe.com/support/programs/eol-matrix.html).
+> Die Plattformen, die als [veraltet auf AEM Forms 6.5.12.0 und 6.5.10.0 bleibt bis AEM Forms 6.5 Service Pack 18 (6.5.18.0) verfügbar](https://helpx.adobe.com/support/programs/eol-matrix.html).
 
 ## Revisionsverlauf {#revision-history}
 
+- 03. Februar 2022
+
+   - Die Unterstützung für Folgendes wurde entfernt:
+      - IBM® J9 Virtual Machine (Build 2.8, JRE 1.8.0)
+      - Oracle Database 12c Release 2
+      - Oracle Database 18c
+      - Oracle Unified Directory (OUD) 11g Release 2
+      - IBM Lotus Domino 9.0
+      - IBM Filenet 5.2
+      - Adobe Flash Player
 
 - 10. Oktober 2021
 
    - Die unterstützte Version von iOS für AEM Forms App wurde in iOS 15.1 geändert. Die vorherige Version war iOS 12.
-
 
 - 7. September 2021
    - **Plattformaktualisierungen**: [!DNL Adobe Experience Manager Forms] on JEE unterstützt nun die folgenden Plattformen:
@@ -815,5 +803,3 @@ Die folgenden Plattformen werden mit der AEM Forms-Version 6.5.10.0 vom 7. Septe
    - 09. September 2020
 
       - Die unterstützte Version von iOS für AEM Forms App wurde in iOS 12 geändert. Die vorherige Version war iOS 11.
-
-

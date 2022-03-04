@@ -1,8 +1,8 @@
 ---
 title: Aktualisierung auf AEM 6.5 Forms
-seo-title: Aktualisierung auf AEM 6.5 Forms
+seo-title: Upgrade to AEM 6.5 Forms
 description: Sie können direkt von AEM 6.3 Forms und AEM 6.4 Forms auf AEM 6.5 Forms aktualisieren.
-seo-description: Sie können direkt von AEM 6.3 Forms und AEM 6.4 Forms auf AEM 6.5 Forms aktualisieren.
+seo-description: You can perform a direct upgrade from AEM 6.3 Forms and AEM 6.4 Forms to AEM 6.5 Forms.
 uuid: 7a38cd72-2d01-4af7-b6a3-00dc34c4f02b
 content-type: reference
 topic-tags: installing
@@ -11,10 +11,10 @@ discoiquuid: f89921ef-c638-4a07-88d5-3dd8614c5166
 docset: aem65
 role: Admin
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 96ba82e984d061d41bb55814d9e573326f9eaf67
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -56,6 +56,16 @@ Eine Multihop-Aktualisierung ist möglich von:
 * AEM 6.0 Forms on JEE
 * AEM 6.1 Forms on JEE
 * AEM 6.2 Forms on JEE
+
+AEM 6.5.12.0 Forms on JEE bietet zwei Arten von Installationsprogrammen: Vollständiges Installationsprogramm und Patch-Installationsprogramm.
+
+**Vollständiges Installationsprogramm**: Sie können das vollständige Installationsprogramm verwenden, um von AEM 6.3 Forms on JEE oder AEM 6.4 on JEE auf AEM 6.5.12.0 Forms on JEE zu aktualisieren. Dies ist auch für Kunden vorgesehen, die neue AEM Forms-Instanzen einrichten und nicht ersetzende Aktualisierungen durchführen.
+
+**Patch-Installationsprogramm**: Patch-Installationsprogramm ist für Kunden vorgesehen, die bereits AEM 6.5.x.x verwenden. Sie können das Patch-Installationsprogramm verwenden, um auf die neueste Version von AEM Forms zu aktualisieren.
+
+Die folgende Tabelle zeigt Szenarien für die Verwendung des Installers für vollständige Installationen und Patches.
+
+![](assets/full-and-patch-installer.png)
 
 <!--
 [Work in Progress]
