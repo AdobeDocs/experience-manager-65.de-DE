@@ -11,7 +11,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 role: Admin
 exl-id: 722e75a0-bcb3-465e-bb74-ea94a3b99fd3
-source-git-commit: 96ba82e984d061d41bb55814d9e573326f9eaf67
+source-git-commit: 2e6d688818e9cc337444bcda2a49485e9167a113
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 AEM 6.5.12.0 Forms on JEE bietet zwei Arten von Installationsprogrammen: Vollständiges Installationsprogramm und Patch-Installationsprogramm.
 
-**Vollständiges Installationsprogramm**: Sie können das vollständige Installationsprogramm verwenden, um von AEM 6.3 Forms on JEE oder AEM 6.4 on JEE auf AEM 6.5.12.0 Forms on JEE zu aktualisieren. Dies ist auch für Kunden vorgesehen, die neue AEM Forms-Instanzen einrichten und nicht ersetzende Aktualisierungen durchführen.
+**Vollständiges Installationsprogramm**: Sie können die [AEM 6.5.12.0 auf dem JEE-Vollinstallationsprogramm](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) , um neue AEM Forms-Instanzen einzurichten oder Aktualisierungen von AEM 6.3 Forms on JEE, AEM 6.4 on JEE und eine nicht ersetzende Aktualisierung von AEM 6.5.x.x Forms on JEE auf AEM 6.5.12.0 Forms on JEE durchzuführen.
 
-**Patch-Installationsprogramm**: Patch-Installationsprogramm ist für Kunden vorgesehen, die bereits AEM 6.5.x.x verwenden. Sie können das Patch-Installationsprogramm verwenden, um auf die neueste Version von AEM Forms zu aktualisieren.
+**Patch-Installationsprogramm**: [AEM 6.5.12.0 auf dem JEE-Patch-Installationsprogramm](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) ist für Kunden bestimmt, die bereits AEM 6.5.x.x verwenden. Sie können das Patch-Installationsprogramm verwenden, um auf die neueste Version von AEM Forms zu aktualisieren.
 
 Die folgende Tabelle zeigt Szenarien für die Verwendung des Installers für vollständige Installationen und Patches.
 

@@ -11,10 +11,10 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 4d7e6fa898989ef764804690410af4771430ca4b
+source-git-commit: 45a26c34ba879e1948ace785e861d38cce71e3a6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3502'
+ht-degree: 72%
 
 ---
 
@@ -674,7 +674,6 @@ Weitere Anforderungen finden Sie unter:
 >
 > Für Desktops gelten die folgenden Browser-bedingten Ausnahmen:
 >
-> - Die meisten modernen Browser unterstützen keine NPAPI-basierten Plug-Ins mehr. Informationen zu den Auswirkungen auf AEM Forms-Anwendungen und -Workflows finden Sie unter [Abbruch der NPAPI-Browser-Plug-ins und deren Auswirkung](https://helpx.adobe.com/de/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
 > - Safari wird nur unter Mac OS X unterstützt.
 > - Workspace unterstützt Safari 5.1 unter Macintosh OS X 10.6 und 10.7 mit Acrobat DC oder höheren Versionen. Weitere Informationen zur Kompatibilität von Safari 5.1 mit Adobe Reader und Acrobat finden Sie unter [https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
 > - Administration Console wird in Safari nicht unterstützt.
