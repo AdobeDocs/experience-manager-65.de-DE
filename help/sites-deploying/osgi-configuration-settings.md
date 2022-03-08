@@ -1,8 +1,8 @@
 ---
 title: OSGi-Konfigurationseinstellungen
-seo-title: OSGi-Konfigurationseinstellungen
+seo-title: OSGi Configuration Settings
 description: In diesem Artikel werden die OSGi-Konfigurationseinstellungen (nach Bundle aufgelistet) beschrieben, die für die Projektimplementierung relevant sind. Die Liste dient als Leitfaden und ist nicht vollständig.
-seo-description: In diesem Artikel werden die OSGi-Konfigurationseinstellungen (nach Bundle aufgelistet) beschrieben, die für die Projektimplementierung relevant sind. Die Liste dient als Leitfaden und ist nicht vollständig.
+seo-description: This article details the OSGi configuration settings (listed according to bundle) that are relevant to project implementation. The list acts as a guideline and it is not exhaustive.
 uuid: 192d3287-ec99-403b-bab0-45721e4e3abd
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,18 +10,18 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
-feature: Konfiguration
+feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: ca66c0655bcd878644e275fc8f7a41b38110beae
+source-git-commit: 9a3f26b6709461a911e833f7e340d11c759c7dae
 workflow-type: tm+mt
-source-wordcount: '3561'
-ht-degree: 64%
+source-wordcount: '3558'
+ht-degree: 63%
 
 ---
 
 # OSGi-Konfigurationseinstellungen{#osgi-configuration-settings}
 
-[](https://www.osgi.org/) OSGi ist ein grundlegendes Element im Technologie-Stack von AEM. OSGi wird zur Steuerung der AEM-Bundles und ihrer Konfiguration verwendet.
+[OSGi](https://www.osgi.org/) ist ein grundlegendes Element im Technologiestapel von AEM. OSGi wird zur Steuerung der AEM-Bundles und ihrer Konfiguration verwendet.
 
 OSGi *bietet standardisierte Grundbausteine – kleine, wiederverwendbare, gemeinsame genutzte Komponenten. Diese Komponenten können zu einem Programm zusammengefügt und bereitgestellt werden*&quot;.
 
@@ -39,30 +39,30 @@ Die folgenden OSGi-Konfigurationseinstellungen (nach Bundle aufgelistet) sind f�
 
 >[!NOTE]
 >
->Das OSGi Configuration Diff-Tool, Teil der [AEM Tools](https://helpx.adobe.com/experience-manager/kb/tools/aem-tools.html), kann verwendet werden, um die standardmäßigen OSGi-Konfigurationen aufzulisten.
+>Das OSGi Configuration Diff-Tool, Teil des [AEM Tools](https://helpx.adobe.com/experience-manager/kb/tools/aem-tools.html)kann verwendet werden, um die standardmäßigen OSGi-Konfigurationen aufzulisten.
 
 >[!NOTE]
 >
 >Für spezifische Funktionsbereiche in AEM sind möglicherweise weitere Bundles erforderlich. In solchen Fällen können Sie die Konfigurationsdetails der Seite entnehmen, die sich auf die entsprechende Funktion bezieht.
 
-**AEM Replication Event** ListenerConfigure:
+**AEM Replikations-Ereignis-Listener** Konfigurieren:
 
-* Die **Ausführungsmodi**, in denen Replikationsereignisse an Listener verteilt werden. Wenn beispielsweise als Autor definiert, ist dies das System, das die Replikation &quot;initiiert&quot;.
+* Die **Ausführungsmodi**, in dem Replikationsereignisse an Listener verteilt werden. Wenn beispielsweise als Autor definiert, ist dies das System, das die Replikation &quot;initiiert&quot;.
 
-* Der Ausführungsmodus **publish** muss hinzugefügt werden, wenn der Projektcode Replikationsereignisse (Rückwärtsreplikation) in einer Veröffentlichungsumgebung verarbeitet. Dies ist beispielsweise der Fall, wenn der Dispatcher zum Leeren aus der Veröffentlichungsumgebung verwendet wird oder wenn eine standardmäßige Replikation auf andere Veröffentlichungsinstanzen erfolgt.
+* Ausführungsmodus **publish** muss hinzugefügt werden, wenn der Projekt-Code Replikationsereignisse (Rückwärtsreplikation) in einer Veröffentlichungsumgebung verarbeitet. Dies ist beispielsweise der Fall, wenn der Dispatcher zum Leeren aus der Veröffentlichungsumgebung verwendet wird oder wenn eine standardmäßige Replikation auf andere Veröffentlichungsinstanzen erfolgt.
 
-**AEM Repository change** listenerConfigure:
+**AEM Repository Change Listener** Konfigurieren:
 
-* Die Speicherorte **Pfade**, an denen Repository-Ereignisse für die Verteilung überwacht werden können.
+* Die **Pfade**, Speicherorte, um auf Repository-Ereignisse zu warten, die für die Verteilung bereit sind.
 
-**CRX Sling Client** RepositoryKonfigurieren Sie den Zugriff auf das zugrunde liegende Inhalts-Repository.
+**CRX Sling Client Repository** Konfigurieren Sie den Zugriff auf das zugrunde liegende Inhalts-Repository.
 
-* Das **Admin Password** sollte nach der Installation geändert werden, um sicherzustellen, dass die [Sicherheit](/help/sites-administering/security-checklist.md) Ihrer Instanz lautet.
+* Die **Administratorkennwort** nach der Installation geändert werden, um sicherzustellen, dass die [security](/help/sites-administering/security-checklist.md) Ihrer Instanz.
 * Andere Änderungen sollten nicht erforderlich sein und müssen mit Vorsicht erfolgen, da sie den Zugriff auf das Repository beeinträchtigen können.
 
-**Wiki Mail** ServiceKonfigurieren Sie die E-Mail-Einstellungen für E-Mails, die von einem Wiki gesendet werden.
+**Wiki Mail Service** Konfigurieren Sie die E-Mail-Einstellungen für E-Mails, die von einem Wiki gesendet werden.
 
-**Apache Felix OSGi Management** ConsoleKonfigurieren:
+**Apache Felix OSGi Management Console** Konfigurieren:
 
 * **Plug-ins**: die Hauptnavigationselemente (Konsolen-Plug-ins), die als oberste Menüelemente in der **Apache Felix Web Management Console** verfügbar sein sollen. Deaktivieren Sie alle nicht benötigten Elemente, da sie sonst Platz und Ressourcen verbrauchen.
 
@@ -77,25 +77,25 @@ Die folgenden OSGi-Konfigurationseinstellungen (nach Bundle aufgelistet) sind f�
 >
 >Nehmen Sie diese Konfiguration in der Felix Console vor, die zum Starten erforderlich ist – bevor das Repository verfügbar ist.
 
-**Apache Sling Customizable Request Data** LoggerConfigure:
+**Apache Sling Customizable Request Data Logger** Konfigurieren:
 
 * **Name der Protokollfunktion** und **Protokollformat** für den Speicherort und das Format von Anforderungen und Zugriffsprotokollierung (Standard: `request.log`). Diese Protokolldatei ist sehr wichtig, wenn Sie die Leistung analysieren oder auf die Web-Kette bezogene Funktionen debuggen möchten.
 Dieser ist gepaart mit dem [Apache Sling Request Logger](#apacheslingrequestlogger).
 
 Weitere Informationen finden Sie unter [AEM-Protokollierung](/help/sites-deploying/configure-logging.md) und [Sling-Protokollierung](https://sling.apache.org/site/logging.html).
 
-**Apache Sling Eventing Thread** PoolConfigure:
+**Apache Sling Eventing Thread Pool** Konfigurieren:
 
-* **Min. Poolgröße** und  **Maximale Poolgröße**, die Größe des Pools, der zum Speichern von Ereignis-Threads verwendet wird.
+* **Minimale Poolgröße** und **Maximale Poolgröße**: die Größe des Pools, der zum Speichern von Ereignis-Threads verwendet wird.
 
-* **Warteschlangengröße**: die maximale Größe der Thread-Warteschlange, wenn der Pool erschöpft ist.
-Der empfohlene Wert ist `-1` , da dadurch die Warteschlange auf unbegrenzt gesetzt wird. Wenn ein Limit festgelegt ist, kann es bei Überschreitung zu Verlusten kommen.
+* **Warteschlangengröße**, die maximale Größe der Thread-Warteschlange, wenn der Pool erschöpft ist.
+Der empfohlene Wert lautet `-1` da dies die Warteschlange auf unbegrenzt festlegt; Wenn ein Limit festgelegt ist, kann es bei Überschreitung zu Verlusten kommen.
 
 * Eine Änderung dieser Einstellungen kann bei Szenarien mit einer hohen Anzahl von Ereignissen zur Leistung beitragen. z. B. starke AEM DAM- oder Workflow-Nutzung.
 * Für Ihr Szenario spezifische Werte sollten mithilfe von Tests festgelegt werden.
 * Diese Einstellungen können sich auf die Leistung Ihrer Instanz auswirken. Ändern Sie sie daher nicht ohne Grund und gebührende Berücksichtigung.
 
-**Apache Sling GET** ServletKonfigurieren Sie einige Aspekte des Renderings:
+**Apache Sling GET Servlet** Konfigurieren Sie einige Aspekte des Renderings:
 
 * **Auto Index** zum Aktivieren/Deaktivieren der Verzeichnisausgabe beim Browsen.
 * **Aktivieren** (oder deaktivieren) Sie Standardausgaben wie **HMTL**, **Nur Text**, **JSON** oder **XML**.
@@ -105,7 +105,7 @@ Sie sollten JSON nicht deaktivieren.
 >
 >Diese Einstellung wird für Produktionsinstanzen automatisch konfiguriert, wenn Sie AEM im [produktionsbereiten Modus](/help/sites-administering/production-ready.md) ausführen.
 
-**Apache Sling Java Script** HandlerEinstellungen für die Kompilierung von Java-Dateien als Skripten (Servlets) konfigurieren.
+**Apache Sling Java Script Handler** Konfigurieren Sie Einstellungen für die Kompilierung von Java-Dateien als Skripten (Servlets).
 
 Bestimmte Einstellungen können die Leistung beeinträchtigen. Deaktivieren Sie diese, falls möglich, insbesondere für Produktionsinstanzen.
 
@@ -115,21 +115,21 @@ Bestimmte Einstellungen können die Leistung beeinträchtigen. Deaktivieren Sie 
 
    * Deaktivieren Sie **Generate Debug Info**.
 
-**Apache Sling JCR** InstallerDiese Parameter benötigen wahrscheinlich keine Konfiguration, können aber bei der Entwicklung oder beim Debugging nützlich sein. Beispielsweise kann es nützlich sein, die Installationsordner ein- oder auszuchecken oder ein Paket zu erstellen.
+**Apache Sling JCR-Installationsprogramm** Diese Parameter benötigen wahrscheinlich keine Konfiguration, können aber bei der Entwicklung oder beim Debugging nützlich sein, um sie zu kennen. Beispielsweise kann es nützlich sein, die Installationsordner ein- oder auszuchecken oder ein Paket zu erstellen.
 
-* **Installation folders name regexp** und **Max hierarchy depth of install folders** geben an, wo und bis zu welcher Ebene Repository-Ordner nach zu installierenden Ressourcen durchsucht werden. Bei Verwendung eines Platzhalters (wie in*/install) werden alle passenden Übereinstimmungen durchsucht, z. B. `/libs/sling/install` und `/libs/cq/core/install`.
+* **Installation folders name regexp** und **Max hierarchy depth of install folders** geben an, wo und bis zu welcher Ebene Repository-Ordner nach zu installierenden Ressourcen durchsucht werden. Bei Verwendung eines Platzhalters (wie in*/install) werden alle passenden Treffer durchsucht, z. B. `/libs/sling/install` und `/libs/cq/core/install`.
 
 * **Search Path** listet die Pfade auf, in denen jcrinstall nach zu installierenden Ressourcen sucht, und eine Ziffer, die den Gewichtungsfaktor für den Pfad angibt.
 
-**Apache Sling Job Event** HandlerKonfigurieren von Parametern, die die Auftragsplanung verwalten:
+**Apache Sling Job Event Handler** Konfigurieren Sie Parameter, die die Auftragsplanung verwalten:
 
-* **Wiederholungsintervall**,  **Maximale Wiederholungen**,  **Maximale Anzahl paralleler Aufträge**,  **Anerkennungswartezeit** usw.
+* **Wiederholungsintervall**, **Maximale Wiederholungen**, **Maximale Anzahl paralleler Aufträge**, **Wartezeit für Bestätigung**, unter anderem.
 
 * Eine Änderung dieser Einstellungen kann die Leistung in Szenarien mit einer hohen Anzahl von Aufträgen verbessern. z. B. starke Nutzung von AEM DAM und Workflows.
 * Für Ihr Szenario spezifische Werte sollten mithilfe von Tests festgelegt werden.
 * Ändern Sie diese Einstellungen nicht ohne Grund, sondern nur nach gebührender Berücksichtigung.
 
-**Apache Sling JSP Script** HandlerLeistungsrelevante Einstellungen für den JSP-Skript-Handler konfigurieren. Um die Leistung zu verbessern, sollten Sie so viele Parameter wie möglich deaktivieren.
+**Apache Sling JSP Script Handler** Konfigurieren Sie leistungsrelevante Einstellungen für den JSP-Skript-Handler. Um die Leistung zu verbessern, sollten Sie so viele Parameter wie möglich deaktivieren.
 
 Insbesondere für Produktionsinstanzen:
 
@@ -142,9 +142,9 @@ Insbesondere für Produktionsinstanzen:
 >
 >Diese Einstellung wird für Produktionsinstanzen automatisch konfiguriert, wenn Sie AEM im [produktionsbereiten Modus](/help/sites-administering/production-ready.md) ausführen.
 
-**Apache Sling Logging** ConfigurationConfigure:
+**Apache Sling Logging Configuration** Konfigurieren:
 
-* **Log Level** und **Log File** definieren den Speicherort und die Protokollebene der zentralen Protokollierungskonfiguration (error.log). Die Ebene kann auf einen von `DEBUG`, `INFO`, `WARN`, `ERROR` und `FATAL` festgelegt werden.
+* **Log Level** und **Log File** definieren den Speicherort und die Protokollebene der zentralen Protokollierungskonfiguration (error.log). Die Ebene kann auf einen von `DEBUG`, `INFO`, `WARN`, `ERROR` und `FATAL`.
 
 * **Number of Log Files** und **Log File Threshold** geben die Größe und die Versionsrotation der Protokolldatei an.
 
@@ -152,7 +152,7 @@ Insbesondere für Produktionsinstanzen:
 
 Weitere Informationen finden Sie unter [AEM-Protokollierung](/help/sites-deploying/configure-logging.md#global-logging) und [Sling-Protokollierung](https://sling.apache.org/site/logging.html).
 
-**Apache Sling Logging Logger Configuration (Factory Configuration)** Konfigurieren Sie:
+**Apache Sling Logging Logger-Konfiguration (Werkskonfiguration)** Konfigurieren:
 
 * **Log Level**, **Log File** und **Message Format** definieren Details in den Protokolldateien und -meldungen.
 
@@ -164,7 +164,7 @@ Weitere Informationen finden Sie unter [AEM-Protokollierung](/help/sites-deployi
 
 Weitere Informationen finden Sie unter [AEM-Protokollierung](/help/sites-deploying/configure-logging.md) und [Sling-Protokollierung](https://sling.apache.org/site/logging.html).
 
-**Apache Sling Logging Writer Configuration (Factory Configuration)** Konfigurieren Sie:
+**Apache Sling Logging Writer Configuration (Factory Configuration)** Konfigurieren:
 
 * **Log File** gibt an, dass eine Protokolldatei vorhanden ist.
 * **Number of Log Files** gibt die Versionsrotation an.
@@ -176,15 +176,15 @@ Weitere Informationen finden Sie unter [AEM-Protokollierung](/help/sites-deployi
 
 Weitere Informationen finden Sie unter [AEM-Protokollierung](/help/sites-deploying/configure-logging.md) und [Sling-Protokollierung](https://sling.apache.org/site/logging.html).
 
-**Apache Sling Main** ServletConfigure:
+**Apache Sling Main Servlet** Konfigurieren:
 
 * **Number of Calls per Request** und **Recursion Depth**, um das System vor unendlichen Rekursionen und übermäßigen Skript-Aufrufen zu schützen.
 
-**Apache Sling MIME Type** ServiceConfigure:
+**Apache Sling MIME Type Service** Konfigurieren:
 
 * **MIME-Typen**, um die für Ihr Projekt erforderlichen Typen hinzuzufügen. Dadurch kann eine `GET`-Anforderung einer Datei die richtige Kopfzeile für den Inhaltstyp zum Verknüpfen von Dateityp und Anwendung festlegen.
 
-**Apache Sling Referrer** FilterUm bekannte Sicherheitsprobleme mit Cross-Site Request Forgery (CSRF) in CRX WebDAV und Apache Sling zu beheben, müssen Sie den Referrer-Filter konfigurieren.
+**Apache Sling Referrer Filter** Um bekannte Sicherheitsprobleme mit Cross-Site Request Forgery (CSRF) in CRX WebDAV und Apache Sling zu beheben, müssen Sie den Filter Referrer konfigurieren.
 
 Der Referrer-Filter-Dienst ist ein OSGi-Dienst, mit dem Sie Folgendes konfigurieren können:
 
@@ -198,7 +198,7 @@ Weitere Informationen finden Sie unter [Sicherheitsprüfliste – Probleme mit S
 >
 >Für den Apache Sling Referrer-Filter muss ein Quick Fix-Paket installiert werden.
 
-**Apache Sling Request** LoggerConfigure:
+**Apache Sling Request Logger** Konfigurieren:
 
 * unterschiedliche Parameter, die festlegen, wie Anforderungen zugeordnet werden.
 * **Enable Request Log** zum Aktivieren oder Deaktivieren.
@@ -209,15 +209,15 @@ Dies ist gepaart mit dem [Apache Sling Customizable Request Data Logger](#apache
 
 Weitere Informationen finden Sie unter [AEM-Protokollierung](/help/sites-deploying/configure-logging.md) und [Sling-Protokollierung](https://sling.apache.org/site/logging.html).
 
-**Apache Sling Resource Resolver** FactoryZentrale Aspekte der Sling-Ressourcenauflösung konfigurieren:
+**Apache Sling Resource Resolver Factory** Konfigurieren Sie zentrale Aspekte der Sling-Ressourcenauflösung:
 
-* **Resource Search Path**(s), fügen Sie projektspezifische Pfade hinzu (entfernen Sie  `/libs` oder  `/apps`).
+* **Ressourcensuchpfad**(s) Fügen Sie projektspezifische Pfade hinzu (entfernen Sie sie jedoch nicht `/libs` oder `/apps`).
 
 * **Virtual URLs** zum Definieren der Vanity-URL-Zuweisungen.
 
-* **URL-** Zuordnungen zum Definieren von Alias; z. B. von  `/content` bis  `/`.
+* **URL-Zuordnungen** Alias zu definieren; Beispiel aus `/content` nach `/`.
 
-* **Zuordnungsort**: Die Zuordnungskonfiguration wurde in  `/etc/map`externalisiert.
+* **Zuordnungsort**, die Zuordnungskonfiguration, die in `/etc/map`.
 
 * Verwenden Sie Ihre lokale Installation (z. B. `https://localhost:4502/system/console/jcrresolver`), um zu bestimmen, welcher Resource Resolver aktiv ist.
 
@@ -229,7 +229,7 @@ Weitere Informationen finden Sie unter [https://cwiki.apache.org/confluence/disp
 >
 >Andernfalls werden die mit der Felix-Konsole vorgenommenen Änderungen an **URL-Zuordnungen** beim nächsten Neustart möglicherweise von AEM überschrieben.
 
-**Apache Sling Servlet/Script Resolver und Error** HandlerDas Sling Servlet und der Skript Resolver haben mehrere Aufgaben:
+**Apache Sling Servlet/Script-Resolver und Fehler-Handler** Das Sling-Servlet und der Skript-Resolver haben mehrere Aufgaben:
 
 1. Sie werden als `ServletResolver` verwendet, die das Servlet oder Skript zum Abwickeln der Anforderung auswählen.
 
@@ -239,33 +239,33 @@ Weitere Informationen finden Sie unter [https://cwiki.apache.org/confluence/disp
 
 Verschiedene Parameter können festgelegt werden, z. B.:
 
-* **Execution Paths** gibt die Pfade an, die nach ausführbaren Skripts durchsucht werden sollen. Durch Konfigurieren bestimmter Pfade können Sie begrenzen, welche Skripts ausgeführt werden. Wenn kein Pfad konfiguriert ist, wird der Standard verwendet ( `/` = root), was die Ausführung aller Skripte ermöglicht.
+* **Execution Paths** gibt die Pfade an, die nach ausführbaren Skripts durchsucht werden sollen. Durch Konfigurieren bestimmter Pfade können Sie begrenzen, welche Skripts ausgeführt werden. Wenn kein Pfad konfiguriert ist, wird der Standard verwendet ( `/` = root), dies ermöglicht die Ausführung aller Skripte.
 Falls ein konfigurierter Pfadwert mit einem Schrägstrich endet, wird die gesamte Unterstruktur durchsucht. Ohne einen Schrägstrich am Ende wird das Skript nur ausgeführt, wenn es sich um eine genaue Übereinstimmung handelt.
 
 * **Script User**: Mit dieser optionalen Eigenschaft kann das Repository-Benutzerkonto angegeben werden, das zum Lesen der Skripts verwendet wird. Falls kein Konto angegeben ist, wird standardmäßig das `admin`-Benutzerkonto verwendet.
 
 * **Default Extensions**: Die Liste der Erweiterungen, für die das Standardverhalten verwendet wird. Dies bedeutet, dass das letzte Pfadsegment des Ressourcentyps als Skriptname verwendet werden kann.
 
-**Day Commons GFX Font** HelperBeim Rendern von Grafiken können Sie DrawText verwenden, um Text einzubetten. Dazu können Sie auch Ihre eigenen Schriftarten installieren:
+**Day Commons GFX Font Helper** Beim Rendern von Grafiken können Sie DrawText verwenden, um Text einzubetten. Dazu können Sie auch Ihre eigenen Schriftarten installieren:
 
-* Definieren Sie den **Schriftpfad**, der nach projektspezifischen Schriftarten durchsucht werden soll.
+* Definieren Sie die **Schriftpfad** , um nach projektspezifischen Schriftarten zu suchen.
 Beispiel: `/apps/myapp/fonts`.
 
-**Apache HTTP Components Proxy** ConfigurationProxy-Konfiguration für den gesamten Code, der den Apache-HTTP-Client verwendet, der verwendet wird, wenn ein HTTP erfolgt; z. B. bei der Replikation.
+**Apache HTTP Components Proxy Configuration** Proxy-Konfiguration für sämtlichen Code, der den Apache-HTTP-Client verwendet, der beim Erstellen eines HTTP verwendet wird; z. B. bei der Replikation.
 
-Nehmen Sie beim Erstellen einer neuen Konfiguration keine Änderungen an der Werkskonfiguration vor, sondern erstellen Sie stattdessen eine neue Werkskonfiguration für diese Komponente mithilfe des Konfigurationsmanagers, der hier verfügbar ist: **https://localhost:4502/system/console/configMgr/**. Die Proxy-Konfiguration ist in **org.apache.http.proxyconfigurator.** verfügbar.
+Nehmen Sie beim Erstellen einer neuen Konfiguration keine Änderungen an der Werkskonfiguration vor, sondern erstellen Sie stattdessen eine neue Werkskonfiguration für diese Komponente mithilfe des Konfigurationsmanagers, der hier verfügbar ist: **https://localhost:4502/system/console/configMgr/**. Die Proxy-Konfiguration ist verfügbar unter **org.apache.http.proxyconfigurator.**
 
 >[!NOTE]
 >
 >In AEM 6.0 und früheren Versionen wurde der Proxy im Day Commons-HTTP-Client konfiguriert. Ab AEM 6.1 erfolgt die Proxy-Konfiguration über die „Apache HTTP Components Proxy Configuration“ anstatt im „Day Commons HTTP Client“.
 
-**Day CQ** AntispamKonfigurieren Sie den verwendeten Anti-Spam-Dienst (Akismet). Dazu müssen Sie Folgendes registrieren:
+**Day CQ Antispam** Konfigurieren Sie den verwendeten Anti-Spam-Dienst (Akismet). Dazu müssen Sie Folgendes registrieren:
 
 * **Provider**
 * **API-Schlüssel**
 * **Registrierte URL**
 
-**Adobe Granite HTML Library** ManagerKonfigurieren Sie dies zur Steuerung der Verarbeitung von Client-Bibliotheken (css oder js). einschließlich beispielsweise der Darstellung der zugrunde liegenden Struktur.
+**Adobe Granite HTML Library Manager** Konfigurieren Sie dies, um die Verarbeitung von Client-Bibliotheken (css oder js) zu steuern. einschließlich beispielsweise der Darstellung der zugrunde liegenden Struktur.
 
 * Für Produktionsinstanzen:
 
@@ -283,39 +283,39 @@ Nehmen Sie beim Erstellen einer neuen Konfiguration keine Änderungen an der Wer
 
 >[!CAUTION]
 >
->Wenn Sie die Einstellung für **Minify** oder **Gzip** ändern, müssen Sie auch den Inhalt von `/var/clientlibs` löschen. Dies ist eine zwischengespeicherte Version der Client-Bibliotheken, die bei der nächsten Anforderung neu erstellt werden.
+>Wenn Sie die Einstellung für **Minimieren** oder **Gzip** Sie müssen auch den Inhalt von `/var/clientlibs`. Dies ist eine zwischengespeicherte Version der Client-Bibliotheken, die bei der nächsten Anforderung neu erstellt werden.
 
 >[!NOTE]
 >
 >Diese Einstellung wird für Produktionsinstanzen automatisch konfiguriert, wenn Sie AEM im [produktionsbereiten Modus](/help/sites-administering/production-ready.md) ausführen.
 
-**Day CQ HTTP Header Authentication** HandlerSystemweite Einstellungen für die einfache Authentifizierungsmethode der HTTP-Anforderung.
+**Day CQ HTTP Header Authentication Handler** Systemweite Einstellungen für die grundlegende Authentifizierungsmethode der HTTP-Anforderung.
 
 Wenn Sie [geschlossene Benutzergruppen](/help/sites-administering/cug.md) verwenden, können Sie u. a. Folgendes konfigurieren:
 
 * Den **HTTP-Bereich**
 * Die **Standard-Anmeldeseite**
 
-**Day CQ Link Checker** ServiceÜberprüfen und bei Bedarf konfigurieren Sie:
+**Day CQ Link Checker Service** Überprüfen und konfigurieren Sie bei Bedarf Folgendes:
 
 * **Scheduler Period**: definiert das Intervall, in dem externe Links automatisch überprüft werden.
 
 * Überprüfen Sie **Bad Link Tolerance Interval** für den Zeitraum, nach dem ein nicht erfolgreicher externer Link als nicht korrekt betrachtet wird.
 * **Link Check Override Patterns**: definiert alle Pfade, die von der Link-Überprüfung ausgenommen werden sollen.
 
-**Day CQ Link Checker** TaskEinstellungen für eine einzelne Link-Checker-Aufgabe konfigurieren (eine Aufgabe, die einen externen Link überprüft):
+**Day CQ Link Checker Task** Konfigurieren Sie die Einstellungen für eine Aufgabe mit einem einzelnen Link-Checker (eine Aufgabe, die einen externen Link überprüft):
 
 * Überprüfen Sie die unter **Good Link Test Interval** und **Bad Link Test Interval**  festgelegten Intervalle.
 
 * Die diversen Parameter, die sich auf Proxys für den Internetzugriff und NTLM beziehen und beim Überprüfen eines Links für den externen Zugriff benötigt werden.
 
-**Day CQ Mail** ServiceKonfigurieren Sie den Hostnamen und die Zugriffsdetails für den Mailserver. Einzelheiten finden Sie im Abschnitt Konfigurieren des E-Mail-Dienstes.
+**Day CQ Mail Service** Konfigurieren Sie den Hostnamen und die Zugriffsdetails für den E-Mail-Server. Einzelheiten finden Sie im Abschnitt Konfigurieren des E-Mail-Dienstes.
 
-**Day CQ MCM** NewsletterKonfigurieren Sie die verschiedenen Einstellungen, die mit dem Newsletter verwendet werden.
+**Day CQ MCM Newsletter** Konfigurieren Sie die verschiedenen Einstellungen, die für den Newsletter verwendet werden.
 
-**Day CQ Root** MappingConfigure:
+**Day CQ Root Mapping** Konfigurieren:
 
-* **Ziel-** Pfad , um festzulegen, wohin eine Anforderung an &quot;  `/`&quot;umgeleitet wird.
+* **Zielpfad** , um festzulegen, wo eine Anforderung an &quot; `/`&quot; umgeleitet werden.
 
 In AEM sind zwei Benutzeroberflächen verfügbar:
 
@@ -324,7 +324,7 @@ In AEM sind zwei Benutzeroberflächen verfügbar:
 
 Mit AEM Root Mapping können Sie die Benutzeroberfläche konfigurieren, die Sie als Standard für Ihre Instanz verwenden möchten:
 
-* Damit die Touch-optimierte Benutzeroberfläche als Standardbenutzeroberfläche verwendet wird, sollte der **Zielpfad** auf Folgendes verweisen:
+* So verwenden Sie die Touch-optimierte Benutzeroberfläche als Standardbenutzeroberfläche **Zielpfad** sollte auf Folgendes verweisen:
 
    ```
       /projects.html
@@ -340,7 +340,7 @@ Mit AEM Root Mapping können Sie die Benutzeroberfläche konfigurieren, die Sie 
 >
 >Nach einer Standardinstallation wird die Touch-optimierte Benutzeroberfläche zur Standardbenutzeroberfläche.
 
-**Adobe Granite SSO Authentication** HandlerSingle Sign-On (SSO)-Details konfigurieren Diese werden häufig in Unternehmensautorenkonfigurationen benötigt, häufig in Verbindung mit LDAP.
+**Adobe Granite SSO Authentication Handler** Konfigurieren von Single Sign-On (SSO)-Details; Diese werden häufig in Unternehmensautorenkonfigurationen benötigt, häufig in Verbindung mit LDAP.
 
 Verschiedene Eigenschaften können konfiguriert werden: 
 
@@ -364,15 +364,15 @@ Der Standardwert ist `0`.
    * `Basic`, falls die Benutzer-ID im HTTP-Standard-Authentifizierungsformat kodiert ist
    * `AsIs`, falls die Benutzer-ID im Nur-Text-Format bereitgestellt wird, oder jeder für reguläre Ausdrücke gültige Wert unverändert bzw. jeder reguläre Ausdruck verwendet werden soll
 
-**Day CQ WCM Debug** FilterDies ist nützlich bei der Entwicklung, da es die Verwendung von Suffixen wie ?debug=layout beim Zugriff auf eine Seite ermöglicht. Beispielsweise stellt https://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout Layoutinformationen bereit, die für den Entwickler von Interesse sein können.
+**Day CQ WCM Debug Filter** Dies ist bei der Entwicklung nützlich, da es die Verwendung von Suffixen wie ?debug=layout beim Zugriff auf eine Seite ermöglicht. Beispielsweise stellt https://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout Layoutinformationen bereit, die für den Entwickler von Interesse sein können.
 
 * Deaktivieren Sie diese Option bei Produktionsinstanzen, um die Leistung und Sicherheit zu gewährleisten.
 
-**Day CQ WCM** FilterKonfigurieren:
+**Day CQ WCM Filter** Konfigurieren:
 
 * **WCM-Modus **zum Definieren des Standardmodus.
-* Auf einer Autoreninstanz kann dies `edit`, `disable,preview` oder `analytics` sein.
-Die anderen Modi können über den Sidekick aufgerufen werden oder das Suffix `?wcmmode=disabled` kann verwendet werden, um eine Produktionsumgebung zu emulieren.
+* Auf einer Autoreninstanz kann dies `edit`, `disable,preview` oder `analytics`.
+Die anderen Modi können über den Sidekick oder das Suffix aufgerufen werden `?wcmmode=disabled` kann verwendet werden, um eine Produktionsumgebung zu emulieren.
 
 * Auf einer Veröffentlichungsinstanz muss für diesen Modus `disabled` festgelegt sein, um sicherzustellen, dass keine anderen Modi zugänglich sind.
 
@@ -380,17 +380,21 @@ Die anderen Modi können über den Sidekick aufgerufen werden oder das Suffix `?
 >
 >Diese Einstellung wird für Produktionsinstanzen automatisch konfiguriert, wenn Sie AEM im [produktionsbereiten Modus](/help/sites-administering/production-ready.md) ausführen.
 
-**Day CQ WCM Link Checker** ConfiguratorKonfigurieren:
+**Day CQ WCM Link Checker Configurator** Konfigurieren:
 
 * Die **Liste der Rewrite-Konfigurationen** enthält die Speicherorte für Inhalts-basierte Link-Prüfer-Konfigurationen. Die Konfigurationen können auf dem Ausführungsmodus basieren. Es muss zwischen Autoren- und Veröffentlichungsumgebungen unterschieden werden, da die Einstellungen des Link-Prüfers für diese unterschiedlich sein können.
 
-**Day CQ WCM Page** ProcessorConfigure:
+**Day CQ WCM Page Manager Factory** Konfigurieren:
+
+* **Prüfung der Unterbaumaktivierung der Seite** für einen Benutzer (ohne Replikationsberechtigungen), um Seiten zu löschen oder zu verschieben (auch wenn die Seiten nicht aktiviert sind).
+
+**Day CQ WCM Page Processor** Konfigurieren:
 
 * **Paths**: eine Liste der Speicherorte, die das System auf Seitenänderungen überwacht, bevor ein `jcr:Event` ausgelöst wird.
 
-**Adobe Page Impressions** TrackerFür eine Autoreninstanz konfigurieren Sie Folgendes:
+**Adobe Page Impressions Tracker** Konfigurieren Sie für eine Autoreninstanz Folgendes:
 
-* **sling.auth.requirements**: Legen Sie den Wert dieser Eigenschaft auf  `-/libs/wcm/stats/tracker`
+* **sling.auth.requirements**: Legen Sie den Wert dieser Eigenschaft auf `-/libs/wcm/stats/tracker`
 
 >[!CAUTION]
 >
@@ -400,7 +404,7 @@ Die anderen Modi können über den Sidekick aufgerufen werden oder das Suffix `?
 >
 >Weitere Informationen finden Sie unter [Seitenimpressionen](/help/sites-deploying/configuring.md#enabling-page-impressions).
 
-**Day CQ WCM Page** StatisticsFür eine Veröffentlichungsinstanz konfigurieren Sie:
+**Day CQ WCM Page Statistics** Konfigurieren Sie für eine Veröffentlichungsinstanz Folgendes:
 
 * **URL to send data**: konfiguriert die zum Nachverfolgen der Seitenstatistiken verwendete URL (wichtig, falls eine Nachverfolgungsanforderung über den Dispatcher geleitet wird); der Standardwert lautet beispielsweise `https://localhost:4502/libs/wcm/stats/tracker`.
 
@@ -410,7 +414,7 @@ Die anderen Modi können über den Sidekick aufgerufen werden oder das Suffix `?
 >
 >Weitere Informationen finden Sie unter [Seitenimpressionen](/help/sites-deploying/configuring.md#enabling-page-impressions).
 
-**Day CQ WCM Version** ManagerSteuern Sie, ob und wie Versionen in Ihrem System verwaltet werden:
+**Day CQ WCM Version Manager** Steuern Sie, ob und wie Versionen in Ihrem System verwaltet werden:
 
 * **Create Version on Activation** ist bei der Standardinstallation aktiviert.
 * **Enable Purging**
@@ -424,24 +428,24 @@ Die anderen Modi können über den Sidekick aufgerufen werden oder das Suffix `?
 
 Weitere Informationen finden Sie unter [Löschen von Versionen](/help/sites-deploying/version-purging.md).
 
-**Day CQ Workflow Email Notification** ServiceE-Mail-Einstellungen für durch einen Workflow gesendete Benachrichtigungen konfigurieren
+**Day CQ Workflow Email Notification Service** Konfigurieren Sie die E-Mail-Einstellungen für Benachrichtigungen, die von einem Workflow gesendet werden.
 
 **CQ-Rewriter – HTML-Parser-Factory**
 
 Steuert den HTML-Parser für den CQ-Rewriter.
 
 * **Additional Tags to Process**: Sie können HTML-Tags, die vom Parser verarbeitet werden sollen, hinzufügen oder entfernen. Standardmäßig werden die folgenden Tags verarbeitet: A, IMG, AREA, FORM, BASE, LINK, SCRIPT, BODY, HEAD.
-* **Camel Case beibehalten**  - Standardmäßig konvertiert der HTML-Parser Attribute in Binnenmajuskel-Schreibweise (z. B. eBay) in Kleinbuchstaben (z. B. ebay). Sie können dies jedoch deaktivieren, um die gemischte Groß-/Kleinschreibung von Attributen beizubehalten. Dies ist hilfreich, wenn Sie Frontend-Frameworks wie Angular 2 verwenden.
+* **Camel Case beibehalten** - Standardmäßig konvertiert der HTML-Parser Attribute in Binnenmajuskel-Schreibweise (z. B. eBay) in Kleinbuchstaben (z. B. ebay). Sie können dies jedoch deaktivieren, um die gemischte Groß-/Kleinschreibung von Attributen beizubehalten. Dies ist hilfreich, wenn Sie Frontend-Frameworks wie Angular 2 verwenden.
 
-**Day Commons JDBC Connections** PoolKonfigurieren Sie den Zugriff auf eine externe Datenbank, die als Quelle für Inhalte verwendet wird.
+**Day Commons JDBC Connections Pool** Konfigurieren Sie den Zugriff auf eine externe Datenbank, die als Quelle für Inhalte verwendet wird.
 
 Dies ist eine Factory-Konfiguration, sodass mehrere Instanzen konfiguriert werden. 
 
-**Adobe CQ Media DPS-Sitzungen** ServiceVerwalten von DPS-Sitzungen für die Verwendung mit Veröffentlichungen.
+**Adobe CQ Media DPS-Sitzungsdienst** Verwalten von DPS-Sitzungen zur Verwendung mit Veröffentlichungen.
 
 Insbesondere können Sie `dps.session.service.url.name` konfigurieren. Die Standardeinstellung ist [https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions](https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions)
 
-**CDN** RewriterCommunication zwischen AEM und einem CDN muss sichergestellt sein, damit Assets/Binärdateien auf sichere Weise an den Endbenutzer bereitgestellt werden. Dies beinhaltet zwei Aufgaben:
+**CDN Rewriter** Die Kommunikation zwischen AEM und einem CDN muss sichergestellt sein, damit Assets/Binärdateien auf sichere Weise an den Endbenutzer bereitgestellt werden. Dies beinhaltet zwei Aufgaben:
 
 * Den Zugriff auf die Ressource von AEM aus über das CDN beim ersten Versuch (oder wenn sich die Ressource nicht mehr im Zwischenspeicher befindet).
 * Den sicheren Zugriff auf die im CDN zwischengespeicherte Ressource, denn sobald die Ressource im CDN zwischengespeichert ist, wird die Anforderung nicht an AEM gerichtet, sondern alle Benutzer mit Zugriff auf die Ressource werden vom CDN bedient.
@@ -451,7 +455,7 @@ AEM stellt einen Rewriter für das Neuschreiben interner Asset-URLs als externe 
 Der Gesamtablauf sieht wie folgt aus:
 
 1. Der Benutzer authentifiziert sich bei AEM und fordert eine Seite mit Assets an.
-1. Die angeforderte Seite enthält ein Asset, das `/content/dam/geometrixx-media/articles/paladin_trailer.jpg/jcr:content/renditions/cq5dam.thumbnail.319.319.png` ähnelt.
+1. Die angeforderte Seite enthält ein Asset, das dem `/content/dam/geometrixx-media/articles/paladin_trailer.jpg/jcr:content/renditions/cq5dam.thumbnail.319.319.png`
 1. Rewriter wandelt den Link in eine CDN-URL um, die eine JWS-Signatur enthält:
    `CDN_domain/content/dam/geometrixx-media/articles/paladin_trailer.jpg/_jcr_content/renditions/cq5dam.thumbnail.319.319.png?cdn_sign=JWS_SIGNATURE`
 
@@ -467,12 +471,12 @@ Der Fluss zwischen dem Browser des Benutzers, dem CDN und AEM sieht wie folgt au
 >
 >Diese Funktion ist derzeit nur für AEM-Autoreninstanzen aktiviert.
 
-**** CDNConfigServiceImplStellt CDN-Konfigurationen bereit
+**CDNConfigServiceImpl** Bietet CDN-Konfigurationen
 
-Die CDN-Neuschreibungsfunktion kann aktiviert werden, indem Sie **CDN-Verteilungsdomänenname** in der Konfiguration für com.adobe.cq.cdn.rewriter.impl.CDNConfigServiceImpl angeben.
+Die CDN-Umschreibungsfunktion kann durch Bereitstellung von **Domain-Name der CDN-Verteilung** in der Konfiguration für com.adobe.cq.cdn.rewriter.impl.CDNConfigServiceImpl.
 
 Der Dienst enthält auch andere Konfigurationsoptionen wie das Aktivieren/Deaktivieren der CDN-Neuschreib-Funktion, Pfad-Präfixe für das Neuschreiben durch CDN, TTL-Werte und Protokolle (HTTP oder HTTPS).
 
-**** CDNRewriterEin Rewriter zum Neuschreiben interner Bild-URLs in CDN-URLs
+**CDNRewriter** Ein Rewriter zum Neuschreiben interner Bild-URLs in CDN-URLs
 
-Der Wert **Tag-Attribute** in com.adobe.cq.cdn.rewriter.impl.CDNRewriter kann so definiert werden, dass nur ausgewählte Bildlinks neu geschrieben werden.
+Die **Tag-Attribute** -Wert in com.adobe.cq.cdn.rewriter.impl.CDNRewriter definiert werden, sodass nur selektive Bildlinks umgeschrieben werden.
