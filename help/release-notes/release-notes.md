@@ -2,9 +2,9 @@
 title: Versionshinweise für [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5-Hinweise mit Versionsinformationen, Neuigkeiten, Installationsanleitungen und detaillierten Änderungslisten."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 9a3f26b6709461a911e833f7e340d11c759c7dae
+source-git-commit: 2a6b92ecd40ae108aee019bcba939a470b66d1b5
 workflow-type: tm+mt
-source-wordcount: '3180'
+source-wordcount: '3318'
 ht-degree: 5%
 
 ---
@@ -150,6 +150,12 @@ Die folgenden Probleme wurden in [!DNL Dynamic Media]:
 * Wenn Sie die Eigenschaft &quot;Rich-Text zulassen&quot;für ein Textfeld aktivieren, treten Probleme mit der maximal zulässigen Zeichenlänge auf (NPR-37825).
 
 * CSS-Probleme beim Kopieren einer beliebigen Komponente in einem adaptiven Formular (NPR-37812).
+
+* Beim Generieren der Übersetzung adaptiver Formulare enthält die generierte XLIFF-Datei nicht dieselbe Textsequenz wie im adaptiven Formular. In einigen Fällen ist es erforderlich, den Kontext der Texte zu sehen. Dies ist nicht möglich, wenn die Sequenz in XLIFF alphabetisch ist. (NPR-37435).
+
+* Wenn ein adaptives Formular übersetzt wird, sind die HTML-Tags Teil der Übersetzung. Wenn ein Benutzer einen Fehler macht und die Tags nicht gültig sind, wird der gesamte Text nicht im Datensatzdokument angezeigt. (NPR-37499)
+
+* Wenn ein adaptives Formular in Basissprache erstellt und fertig gestellt wird und die Übersetzung von einem externen Team durchgeführt und importiert wird. Wenn es sogar eine kleine Textänderung gibt, z. B. Addition oder fehlende Punkte (.) in der für die Basissprache ausgeführt wird, fehlt die vollständige Übersetzung für alle anderen Sprachen. (NPR-37189)
 
 **Formulardatenmodell**
 
