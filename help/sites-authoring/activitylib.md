@@ -11,10 +11,10 @@ topic-tags: personalization
 discoiquuid: ef2321a3-cd51-4298-8782-e1a2ca721868
 docset: aem65
 exl-id: f510ca08-977d-45d5-86af-c4b7634b01ba
-source-git-commit: 10e46fe60edcaa116978173b8c61542653f6a551
+source-git-commit: 084e5d561e25dcbaee4489b65f423fc9166832be
 workflow-type: tm+mt
-source-wordcount: '2001'
-ht-degree: 97%
+source-wordcount: '2000'
+ht-degree: 96%
 
 ---
 
@@ -97,7 +97,7 @@ Fügen Sie eine Aktivität hinzu oder bearbeiten Sie eine bestehende Aktivität,
 
 So fügen Sie eine Aktivität hinzu:
 
-1. Klicken oder tippen Sie auf die Marke, für die Sie eine Aktivität erstellen möchten, klicken oder tippen Sie auf **Erstellen** und anschließend auf **Aktivität erstellen**. Wenn Sie die Aktivität bearbeiten, wählen Sie sie aus und klicken oder tippen Sie auf **Bearbeiten**.
+1. Klicken oder tippen Sie auf die Marke, für die Sie die Aktivität erstellen, klicken oder tippen Sie auf **Erstellen** und dann **Aktivität erstellen**. Wenn Sie die Aktivität bearbeiten, wählen Sie sie aus und klicken oder tippen Sie auf **Bearbeiten**.
 1. Machen Sie folgende Angaben und klicken oder tippen Sie dann auf **Weiter**:
 
    * Der Name der Aktivität.
