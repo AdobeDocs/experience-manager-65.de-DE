@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5, Forms-Anleitung
 breadcrumb-title: Forms-Anleitung
 user-guide-description: Digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren.
 role: User
-source-git-commit: 7962d076135bcbac821ff85fd1831ee2c444ff00
+source-git-commit: 290ae422e1136ea28ab21c3031ab66fb5405f1d3
 workflow-type: tm+mt
-source-wordcount: '3772'
+source-wordcount: '3775'
 ht-degree: 71%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 71%
 + Versionshinweise {#release-notes-new-features}
    + [Versionshinweise](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=de)
    + [Zusammenfassung der neuen Funktionen](using/whats-new.md)
-   + [Veraltete Funktionen](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html)
+   + [Veraltete Funktionen](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html?lang=de)
 + Erste Schritte {#getting-started}
    + [Einführung in AEM Forms](using/introduction-aem-forms.md)
    + [Einführung in das Authoring adaptiver Formulare](using/introduction-forms-authoring.md)
@@ -173,7 +173,6 @@ ht-degree: 71%
    + [Verwenden von SOM-Ausdrücken in adaptiven Formularen](using/using-som-expressions-adaptive-forms.md)
    + [Hinzufügen von Informationen aus Benutzerdaten zu Formularübermittlungsmetadaten](using/form-submission-metadata.md)
    + [XFA-Unterstützung in XDP-basierten adaptiven Formularen](using/xfa-api-supported-in-adaptive-form.md)
-   + [Inhalt auf Seite Null in Designer ändern](using/changing-page-zero-content-designer.md)
    + [Ausgewählten Benutzergruppen Zugriff auf den Regel-Editor gewähren](using/rule-editor-access-user-groups.md)
    + [Verwenden von AEM-Übersetzungs-Workflow zum Lokalisieren von adaptiven Formularen und DoR](using/using-aem-translation-workflow-to-localize-adaptive-forms.md)
    + [Automatisieren von Tests von adaptiven Formularen](using/calvin.md)
@@ -373,6 +372,7 @@ ht-degree: 71%
    + [AEM aktivieren, um durch Document Security geschützte PDF-Dokumente zu durchsuchen](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [Schützen von Dokumenten im Auftrag eines anderen Benutzers](using/protect-document-on-behalf-of-another-user.md)
 + Forms Designer {#use-forms-designer}
+   + [Hilfe zu Forms Designer](using/forms-designer-help.md)
    + [Verwenden von Designer](http://www.adobe.com/go/learn_aemforms_designer_65)
    + [Quickstart-Lernprogramme für Designer](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65_de)
    + [Beispiele für Designer](http://www.adobe.com/go/learn_aemforms_designer_samples_65_de)
@@ -380,6 +380,7 @@ ht-degree: 71%
    + [Skriptreferenz für Designer](http://www.adobe.com/go/learn_aemforms_scriptingReference_65)
    + [FormCalc-Referenz für Designer](http://www.adobe.com/go/learn_aemforms_formCalc_65)
    + [Verwenden der Scribble-Signatur in HTML5-Formularen](using/scribble-signature.md)
+   + [Inhalt auf Seite Null in Designer ändern](using/changing-page-zero-content-designer.md)
 + Passen Sie AEM Forms an {#customize-aem-forms}
    + [Erscheinungsbild-Framework für adaptive und HTML5-Formulare](using/introduction-widgets.md)
    + [Erstellen einer benutzerdefinierten adaptiven Formularvorlage](using/custom-adaptive-forms-templates.md)
@@ -686,4 +687,3 @@ ht-degree: 71%
          + [Konfigurieren und Fehlerbehebung für einen AEM Forms on JEE-Servercluster](developing/configure-server-cluster.md)
          + [Erstellen und Verwenden von Hashes in dynamischen PDF forms](developing/hashing-forms.md)
          + [Übergeben von Anmeldeinformationen mithilfe von WS-Security-Headern](developing/passing-credentials.md)
-
