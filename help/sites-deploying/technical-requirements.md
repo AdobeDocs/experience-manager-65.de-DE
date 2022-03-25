@@ -6,10 +6,10 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: cffec7ce415d00ab483b31d763ff2cdaa1eb16de
+source-git-commit: 80298613370c7187288b33e5a665a074ccb5cd3e
 workflow-type: tm+mt
-source-wordcount: '3294'
-ht-degree: 82%
+source-wordcount: '3292'
+ht-degree: 83%
 
 ---
 
@@ -100,7 +100,7 @@ Adobe Experience Manager funktioniert mit den folgenden Versionen von Java Virtu
 | Azul Zulu OpenJDK 11 - 64 Bit | A: Unterstützt `[3]` |  |
 | Azul Zulu OpenJDK 8 - 64 Bit | A: Unterstützt `[3]` |  |
 
-1. Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle Java SE-Produkte umgestiegen. Java 9, Java 10 und Java 12 sind Nicht-LTS-Versionen von Oracle (siehe [Oracle Java SE-Support-Roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Um AEM in Produktionsumgebungen bereitzustellen, unterstützt Adobe ausschließlich LTS-Versionen von Java. Die Unterstützung und Verteilung des Oracle Java SE JDK, einschließlich aller Wartungsupdates der LTS-Versionen über das Ende der öffentlichen Updates hinaus, wird von Adobe direkt für alle AEM Kunden unterstützt, die die Oracle Java SE-Technologie nutzen **bis Dezember 2022**. Siehe [Java-Unterstützungsrichtlinie für Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf) für weitere Informationen.
+1. Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle Java SE-Produkte umgestiegen. Java 9, Java 10 und Java 12 sind Nicht-LTS-Versionen von Oracle (siehe [Oracle Java SE-Support-Roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Um AEM in Produktionsumgebungen bereitzustellen, unterstützt Adobe ausschließlich LTS-Versionen von Java. Der Support und die Bereitstellung von Oracle Java SE, einschließlich aller Wartungsupdates von LTS-Versionen, werden von Adobe direkt für alle AEM-Kunden unterstützt, die die Oracle Java SE-Technologie nutzen. Siehe [Java-Unterstützungsrichtlinie für Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf) für weitere Informationen.
 
 
 1. Die IBM JRE wird nur zusammen mit WebSphere Application Server unterstützt.
