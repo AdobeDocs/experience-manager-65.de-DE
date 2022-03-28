@@ -1,17 +1,17 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.5-Entwickleranleitung
 breadcrumb-title: Entwickleranleitung
 user-guide-description: In dieser Anleitung wird beschrieben, wie Sie Ihre AEM-Instanz erstellen.
 feature: Developing
 role: Developer
-source-git-commit: b924dc186497b6dfa4c2d2bb675f5029f8fc3617
+source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
 source-wordcount: '1299'
-ht-degree: 70%
+ht-degree: 75%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 70%
       + [Seitenvorlagen – statisch](page-templates-static.md)
       + [Inhaltsfragmentvorlagen](content-fragment-templates.md)
       + [Rendering von adaptiven Vorlagen](templates-adaptive-rendering.md)
-   + [Verwenden des Sling Resource Merger in AEM](sling-resource-merger.md)
+   + [Verwenden des Sling Resource Merger in AEM  ](sling-resource-merger.md)
    + [Überlagerungen](overlays.md)
    + [Benennungskonventionen](naming-conventions.md)
    + [Erstellen einer neuen Feld-Komponente in der Granite-Benutzeroberfläche](granite-ui-component.md)
@@ -99,7 +99,7 @@ ht-degree: 70%
 + [Headful und Headless in AEM](headful-headless.md)
 + Headless-Experience-Management{#headless}
    + [Headless und AEM](headless/introduction.md)
-   + Headless-Journey {#journeys}
+   + Headless-Touren {#journeys}
       + Headless-Entwickler-Tour {#developer}
          + [Grundlegendes zu Headless-Technologie in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/overview.html)
          + [Erfahren Sie mehr über die CMS-Headless-Entwicklung](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/learn-about.html)
@@ -107,13 +107,13 @@ ht-degree: 70%
          + [Gestalten Ihres ersten Erlebnisses mit AEM Headless ](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/path-to-first-experience.html)
          + [Modellieren Ihres Inhalts als AEM-Inhaltsmodelle](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/model-your-content.html)
          + [Zugreifen auf Ihre Inhalte über AEM-Bereitstellungs-APIs](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/access-your-content.html)
-         + [Aktualisieren Ihres Inhalts über AEM Assets-APIs](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/update-your-content.html)
+         + [So aktualisieren Sie Ihre Inhalte über AEM Assets-APIs:](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/update-your-content.html)
          + [So legen Sie alles zusammen](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/put-it-all-together.html)
          + [Live-Schalten Ihres Headless-Programms](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/go-live.html)
          + [Optional – Erstellen von Single Page Applications (SPAs) mit AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/create-spa.html)
-      + Headless Content Architect-Journey {#architect}
-         + [Überblick über die Journey der AEM Headless Content Architecture](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/overview.html)
-         + [Inhaltsmodellierung für Headless mit AEM - Einführung](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/introduction.html)
+      + Headless-Inhaltsarchitekten-Tour {#architect}
+         + [Überblick über die AEM Headless-Inhaltsarchitekten-Tour](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/overview.html)
+         + [Inhaltsmodellierung für Headless mit AEM – Einführung](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/introduction.html)
          + [Lernen Sie die Grundlagen der Inhaltsmodellierung für Headless mit AEM kennen.](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/basics.html)
          + [Erfahren Sie mehr über das Erstellen von Inhaltsfragmentmodellen in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/model-structure.html)
    + Anleitungen für den Einstieg {#getting-started}
@@ -191,7 +191,7 @@ ht-degree: 70%
       + [ClientContext im Detail](client-context.md)
       + [ClientContext-JavaScript-API](ccjsapi.md)
 + Erweitern von AEM{#extending-aem}
-   + [Erweitern von AEM mit Adobe Developer App Builder](app-builder.md)
+   + [Erweitern von AEM mit dem Adobe Developer App Builder](app-builder.md)
    + [Anpassung des Seiten-Authorings](customizing-page-authoring-touch.md)
    + [Anpassen der Konsolen](customizing-consoles-touch.md)
    + [Anpassen von Ansichten von Seiteneigenschaften](page-properties-views.md)
