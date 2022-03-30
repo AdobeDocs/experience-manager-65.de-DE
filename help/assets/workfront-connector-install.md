@@ -1,35 +1,39 @@
 ---
 title: Installieren [!DNL Workfront for Experience Manager enhanced connector]
-description: Installieren [!DNL Workfront for Experience Manager enhanced connector]
+description: Installieren des  [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
-source-git-commit: 8d39e1c86e5185a181400f10b7822a57c9d3aeae
+exl-id: 087bc811-e8f8-4db5-b066-627a9b082f57
+source-git-commit: a589836c77fd919838dce60a1eaf676683c165c0
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 0%
+source-wordcount: '411'
+ht-degree: 47%
 
 ---
 
+# Installieren des [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
-# Installieren [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
+Ein Benutzer mit Administratorzugriff in [!DNL Adobe Experience Manager]  installiert den erweiterten Connector. Überprüfen Sie vor der Installation die Plattformunterstützung und andere [Voraussetzungen für den Connector](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
-Ein Benutzer mit Administratorzugriff in [!DNL Adobe Experience Manager] installiert den erweiterten Connector. Überprüfen Sie vor der Installation den Plattformsupport und andere [Voraussetzungen für den Connector](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
+>[!TIP]
+>
+>Suchen Sie nach dem [!DNL Workfront for Experience Manager enhanced connector] Dokumentation für AEM as a Cloud Service? Klicken [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=en).
 
 >[!IMPORTANT]
 >
->Adobe erfordert Bereitstellung und Konfiguration der [!DNL Adobe Workfront for Experience Manager enhanced connector] nur über zertifizierte Partner oder [!DNL Adobe Professional Services]. Wird ohne zertifizierten Partner bereitgestellt und konfiguriert oder [!DNL Adobe Professional Services], wird sie von Adobe nicht unterstützt.
+>Adobe fordert, dass die Bereitstellung und Konfiguration des [!DNL Adobe Workfront for Experience Manager enhanced connector] nur über zertifizierte Partner oder [!DNL Adobe Professional Services] durchgeführt wird. Wird diese ohne zertifizierten Partner oder [!DNL Adobe Professional Services] bereitgestellt oder konfiguriert, wird sie von Adobe nicht unterstützt.
 >
->Adobe veröffentlicht möglicherweise Aktualisierungen für [!DNL Adobe Workfront] und [!DNL Adobe Experience Manager] die diesen Connector redundant machen; In diesem Fall kann es erforderlich sein, dass Kunden von der Verwendung dieses Connectors übergehen.
+>Adobe veröffentlicht möglicherweise Aktualisierungen für [!DNL Adobe Workfront] und [!DNL Adobe Experience Manager], die diesen Connector redundant machen. In diesem Fall kann es erforderlich sein, dass Kunden diesen Connector nicht mehr verwenden.
 
 Gehen Sie wie folgt vor, um den Connector zu installieren:
 
 1. Herunterladen des Connectors von [[!DNL Software Distribution] link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
 
-1. [Konfigurieren der Firewall](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html).
+1. [Konfigurieren der Firewall](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html?lang=de).
 
-1. Lassen Sie im Dispatcher HTTP-Header zu, die `authorization`, `username`und `apikey`. Zulassen `GET`, `POST`und `PUT` Anforderungen an `/bin/workfront-tools`.
+1. Lassen Sie im Dispatcher HTTP-Kopfzeilen zu, die `authorization`, `username` und `apikey` heißen. Lassen Sie `GET`-, `POST`- und `PUT`-Anfragen an `/bin/workfront-tools` zu.
 
-1. Stellen Sie sicher, dass die folgenden Pfade in [!DNL Experience Manager] repository:
+1. Stellen Sie sicher, dass die folgenden Pfade nicht im [!DNL Experience Manager]-Repository vorhanden sind:
 
    * `/apps/dam/gui/coral/components/admin/schemaforms/formbuilder`
    * `/apps/dam/gui/coral/components/admin/folderschemaforms/formbuilder`
@@ -41,18 +45,30 @@ Gehen Sie wie folgt vor, um den Connector zu installieren:
 
 1. Erstellen `wf-workfront-users` in [!DNL Experience Manager] Benutzergruppe und Berechtigung zuweisen `jcr:all` nach `/content/dam`.
 
-Ein Systembenutzer `workfront-tools` automatisch erstellt wird und die erforderlichen Berechtigungen automatisch verwaltet werden. Alle Benutzer von [!DNL Workfront] die den Connector verwenden, werden automatisch als Teil dieser Gruppe hinzugefügt.
+Ein `workfront-tools`-Systembenutzer wird automatisch erstellt und die erforderlichen Berechtigungen werden automatisch verwaltet. Alle Benutzer von [!DNL Workfront] die den Connector verwenden, werden automatisch als Teil dieser Gruppe hinzugefügt.
 
 ## Konfigurieren Sie die Verbindung zwischen [!DNL Experience Manager] und [!DNL Workfront] {#configure-connection}
 
 Gehen Sie wie folgt vor, um eine Verbindung mit Workfront herzustellen:
 
-1. In [!DNL Experience Manager]auswählen **[!UICONTROL Instrumente]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Konfiguration der Workfront Tools]**.
+1. Wählen Sie in [!DNL Experience Manager] die Option **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Konfiguration der Workfront-Tools]**.
 
-1. Auswählen `workfront-tools` im linken Bereich und wählen Sie **[!UICONTROL Erstellen]** im rechten oberen Bereich der Seite.
+1. Wählen Sie `workfront-tools` im linken Bedienfeld aus und wählen Sie **[!UICONTROL Erstellen]** oben rechts auf der Seite.
 
-1. Im **[!UICONTROL Workfront-Verbindung]** -Dialogfeld die erforderlichen Details für Ihre [!DNL Workfront] Bereitstellung und Auswahl **[!UICONTROL Verbindung zu Workfront herstellen]** -Option. Sobald die Verbindung erfolgreich hergestellt wurde, wird die [!DNL Workfront] Die benutzerdefinierte Dokumentenintegration wird automatisch im [!DNL Workfront] Umgebung.
+1. Tragen Sie im Dialogfeld **[!UICONTROL Workfront-Verbindung]** die erforderlichen Details für Ihre [!DNL Workfront]-Bereitstellung ein und wählen Sie die Option **[!UICONTROL Mit Workfront verbinden]**. Sobald die Verbindung erfolgreich hergestellt wurde, wird die benutzerdefinierte Dokumentenintegration von [!DNL Workfront] automatisch in der [!DNL Workfront]-Umgebung erstellt.
 
-   ![Verbinden [!DNL Experience Manager] und [!DNL Workfront]](/help/assets/assets/wf-connection-config.png)
+   ![Verbinden Sie [!DNL Experience Manager] und [!DNL Workfront]](/help/assets/assets/wf-connection-config.png)
 
 1. Um die Verbindung zu überprüfen, greifen Sie darauf zu unter [!DNL Workfront] und überprüfen Sie, ob der API-Schlüssel identisch ist und ob die Verbindung **[!UICONTROL Aktiviert]**. Wählen Sie dazu **[!UICONTROL Einrichtung]** > **[!UICONTROL Dokumente]** > **[!UICONTROL Benutzerdefinierte Integrationen]** in [!DNL Workfront].
+
+## Aktualisieren [!DNL Workfront for Experience Manager enhanced connector] {#update-enhanced-connector-for-workfront}
+
+Mit Experience Manager Assets können Sie die [!DNL Workfront for Experience Manager enhanced connector] von einer vorherigen Version zur neuesten Version.
+
+So aktualisieren Sie die [!DNL Workfront for Experience Manager enhanced connector] auf die neueste Version:
+
+1. Laden Sie die neueste Version des erweiterten Connectors von herunter. [[!DNL Software Distribution] link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
+
+1. Installieren Sie das Paket mit [!UICONTROL Package Manager]. Informationen zum Installieren von Paketen finden Sie unter [Package Manager-Dokumentation](/help/sites-administering/package-manager.md).
+
+
