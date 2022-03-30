@@ -4,7 +4,7 @@ description: Installieren des  [!DNL Workfront for Experience Manager enhanced c
 role: Admin
 feature: Integrations
 exl-id: 087bc811-e8f8-4db5-b066-627a9b082f57
-source-git-commit: a589836c77fd919838dce60a1eaf676683c165c0
+source-git-commit: 679ad8f1fec1abe97dfc90b6318c3f3c4ab85b7f
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 47%
@@ -28,11 +28,8 @@ Ein Benutzer mit Administratorzugriff in [!DNL Adobe Experience Manager]  instal
 Gehen Sie wie folgt vor, um den Connector zu installieren:
 
 1. Herunterladen des Connectors von [[!DNL Software Distribution] link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
-
 1. [Konfigurieren der Firewall](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html?lang=de).
-
 1. Lassen Sie im Dispatcher HTTP-Kopfzeilen zu, die `authorization`, `username` und `apikey` heißen. Lassen Sie `GET`-, `POST`- und `PUT`-Anfragen an `/bin/workfront-tools` zu.
-
 1. Stellen Sie sicher, dass die folgenden Pfade nicht im [!DNL Experience Manager]-Repository vorhanden sind:
 
    * `/apps/dam/gui/coral/components/admin/schemaforms/formbuilder`
@@ -42,7 +39,6 @@ Gehen Sie wie folgt vor, um den Connector zu installieren:
    * `/apps/settings/dam/cfm/models/formbuilderconfig`
 
 1. Installieren Sie das Paket mit [!UICONTROL Package Manager]. Informationen zum Installieren von Paketen finden Sie unter [Package Manager-Dokumentation](/help/sites-administering/package-manager.md).
-
 1. Erstellen `wf-workfront-users` in [!DNL Experience Manager] Benutzergruppe und Berechtigung zuweisen `jcr:all` nach `/content/dam`.
 
 Ein `workfront-tools`-Systembenutzer wird automatisch erstellt und die erforderlichen Berechtigungen werden automatisch verwaltet. Alle Benutzer von [!DNL Workfront] die den Connector verwenden, werden automatisch als Teil dieser Gruppe hinzugefügt.
@@ -68,7 +64,4 @@ Mit Experience Manager Assets können Sie die [!DNL Workfront for Experience Man
 So aktualisieren Sie die [!DNL Workfront for Experience Manager enhanced connector] auf die neueste Version:
 
 1. Laden Sie die neueste Version des erweiterten Connectors von herunter. [[!DNL Software Distribution] link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
-
 1. Installieren Sie das Paket mit [!UICONTROL Package Manager]. Informationen zum Installieren von Paketen finden Sie unter [Package Manager-Dokumentation](/help/sites-administering/package-manager.md).
-
-
