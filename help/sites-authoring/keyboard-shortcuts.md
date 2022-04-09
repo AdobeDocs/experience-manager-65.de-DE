@@ -1,8 +1,8 @@
 ---
-title: 'Tastaturbefehle für Konsolen  '
-seo-title: 'Tastaturbefehle für Konsolen  '
+title: Tastaturbefehle für Konsolen
+seo-title: Keyboard Shortcuts for Consoles
 description: Diese Tastaturbefehle verkürzen die Bearbeitungszeit.
-seo-description: Diese Tastaturbefehle verkürzen die Bearbeitungszeit.
+seo-description: Save time when authoring by using these keyboard shortcuts
 uuid: 3b90570f-e187-4f09-9ccf-838e5657de2f
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +10,16 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
 exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ad8f98d22c2f2095ee92741331170be996103d95
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '378'
 ht-degree: 98%
 
 ---
 
-# Tastaturbefehle für Konsolen  {#keyboard-shortcuts-for-consoles}
+# Tastaturbefehle für Konsolen{#keyboard-shortcuts-for-consoles}
 
-In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich einige auf die Verwendung von Konsolen und andere auf die [Seitenbearbeitung](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+In Adobe Experience Manager stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich einige auf die Verwendung von Konsolen und andere auf die [Seitenbearbeitung](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich e
 
 Die folgenden Tastaturbefehle stehen für die Konsolen „Sites“, „Commerce“, „Screens“, „Assets“, „Benutzer“, „Gruppen“, „Projekte“ und „Experience Fragments“ zur Verfügung.
 
-| Standort | Kürzel | Beschreibung |
+| Standort | Tastaturbefehl | Beschreibung |
 |---|---|---|
 | Allgemein | `Ctrl+Click` | Mehrfachauswahl auf einem Desktop-Gerät |
 | Konsole – Spaltenansicht und Inhaltsansicht | `Right Arrow` | Navigieren nach unten in die Struktur der Website/Erweitern des Strukturknotens |
@@ -41,7 +41,7 @@ Die folgenden Tastaturbefehle stehen für die Konsolen „Sites“, „Commerce�
 | Konsolen | `?` | Hilfe zu Tastaturbefehlen |
 |  | `/` | Aufrufen der [Suche](/help/sites-authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | Umschalten zwischen den anzuzeigenden [Schienenauswahloptionen](/help/sites-authoring/basic-handling.md#rail-selector) |
-|  | &grave; | Ausblenden der Schiene |
+|  | ``` ` ``` | Ausblenden der Schiene |
 |  | `e` | Bearbeiten |
 |  | `p` | Eigenschaften |
 |  | `m` | Verschieben |
@@ -67,7 +67,7 @@ Die für die Tastaturbefehle verwendeten Zusatztasten variieren je nach dem vom 
 
 AEM vermeidet gängige Tastaturbefehle von Standardbrowsern. Jedoch wird das standardmäßige Browserverhalten nicht durch AEM-Tastaturbefehle außer Kraft gesetzt.
 
-Außerdem sind die Tastaturbefehle für alle Gebietsschemata und Tastaturlayouts identisch.
+Außerdem sind die Tastaturbefehle für alle Gebietsschemas und Tastatur-Layouts identisch.
 
 >[!NOTE]
 >
