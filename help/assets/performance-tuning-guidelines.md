@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: 35639a818f58923ae9ad099752d359e7795be60b
 workflow-type: tm+mt
 source-wordcount: '2741'
 ht-degree: 52%
@@ -202,7 +202,7 @@ Wenn Sie die [!UICONTROL DAM-Update-Asset] Workflow zum Generieren von Ausgabefo
 </policymap>
 ```
 
-Stellen Sie darüber hinaus in der Datei `configure.xml` (alternativ in der Umgebungsvariable `MAGIC_TEMPORARY_PATH`) den Pfad zum temporären Ordner von ImageMagick auf eine Festplattenpartition ein, die über ausreichend Speicherplatz und IOPS verfügt.
+Stellen Sie darüber hinaus in der Datei `configure.xml` (alternativ in der Umgebungsvariable `MAGICK_TEMPORARY_PATH`) den Pfad zum temporären Ordner von ImageMagick auf eine Festplattenpartition ein, die über ausreichend Speicherplatz und IOPS verfügt.
 
 >[!CAUTION]
 >
