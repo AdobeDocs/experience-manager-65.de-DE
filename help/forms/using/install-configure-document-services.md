@@ -8,10 +8,10 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 81008366b7d5edaf1d2f83ccd2ba6237c2e96fad
+source-git-commit: 0f4207564645ef7ba7da9064e971248b59f5a9b3
 workflow-type: tm+mt
-source-wordcount: '5107'
-ht-degree: 53%
+source-wordcount: '5381'
+ht-degree: 50%
 
 ---
 
@@ -199,6 +199,7 @@ Wenn Sie den PDF Generator-Dienst verwenden möchten, um native Dateiformate wie
 
 >[!NOTE]
 >
+>* Wenn sich Ihr AEM Forms-Server in einer Offline- oder einer sicheren Umgebung befindet und das Internet nicht für die Aktivierung von Adobe Acrobat verfügbar ist, lesen Sie [Offline-Aktivierung](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en) Anweisungen zum Aktivieren solcher Instanzen von Adobe Acrobat.
 >* Adobe Acrobat, Microsoft® Word, Excel und Powerpoint sind nur für Microsoft® Windows verfügbar. Wenn Sie das UNIX-basierte Betriebssystem verwenden, installieren Sie OpenOffice, um Rich-Text-Dateien und unterstützte Microsoft® Office-Dateien in PDF-Dokumente zu konvertieren.
 >* Schließen Sie alle Dialogfelder, die nach der Installation von Adobe Acrobat und Software von Drittanbietern für alle Benutzer angezeigt werden, die für die Verwendung des PDF Generator-Dienstes konfiguriert wurden.
 >* Starten Sie die installierte Software mindestens einmal. Schließen Sie alle Dialogfelder für alle Benutzer, die für die Verwendung des PDF Generator-Dienstes konfiguriert wurden.
@@ -389,10 +390,10 @@ AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das 
    1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]**.
    2. Wählen Sie die Version und den Typ für das Paket aus. Sie können auch die **[!UICONTROL Suchdownloads]** Option zum Filtern der Ergebnisse.
 1. Tippen Sie auf den Paketnamen für Ihr Betriebssystem und wählen Sie **[!UICONTROL EULA-Bedingungen akzeptieren]** und tippen Sie auf **[!UICONTROL Download]**.
-1. Öffnen Sie [Package Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-65/administering/contentmanagement/package-manager.html) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
+1. Öffnen Sie [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
-   Sie können das Paket auch über den direkten Link herunterladen, der im Abschnitt [AEM Forms-Versionen](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) Artikel.
+   Sie können das Paket auch über den direkten Link herunterladen, der im Abschnitt [AEM Forms-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) Artikel.
 
 1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Halten Sie den Server nicht sofort an.** Warten Sie vor dem Beenden des AEM Forms-Servers, bis die Meldungen ServiceEvent REGISTERED und ServiceEvent UNREGISTERED nicht mehr in der `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log und das Protokoll ist stabil.
 
@@ -759,6 +760,34 @@ Konvertierungsprobleme beim +++ HTML in PDF
 * Führen Sie für Microsoft® Office und OpenOffice mindestens eine manuelle Konvertierung (für jeden Benutzer) durch, um sicherzustellen, dass während der Konvertierung kein Dialogfeld angezeigt wird. Wenn ein Dialogfeld angezeigt wird, wurde es verworfen. Während der automatisierten Konvertierung sollte kein solches Dialogfeld angezeigt werden.
 
 * Führen Sie eine Beispielkonvertierung durch.
+
++++
+
+++ + Lizenz für Adobe Acrobat, die auf dem AEM Forms-Server installiert ist, läuft ab
+
+* Wenn Sie bereits über eine Adobe Acrobat-Lizenz verfügen und diese abgelaufen ist, [Neueste Version von Adobe Application Manager herunterladen](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html), und migrieren Sie Ihre Seriennummer. Vorher [Seriennummer migrieren](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
+
+   * Verwenden Sie die folgenden Befehle, um prov.xml zu generieren und die vorhandene Installation mithilfe der Datei prov.xml neu zu serialisieren, anstatt die in [Seriennummer migrieren](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) Zahlenartikel.
+
+      * prov.xml generieren
+
+         ```
+         adobe_prtk --tool=VolumeSerialize --generate --serial=<serialnum> [--leid=<LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=limited list of locales in xx_XX format or ALL>] [--provfile=<Absolute path to prov.xml>]
+         ```
+
+      * Serialisieren Sie das Paket mit Volume (Serialisieren Sie die vorhandene Installation mit der Datei prov.xml und der neuen Seriennummer erneut): Führen Sie den folgenden Befehl aus dem Installationsordner von PRTK als Administrator aus, um die bereitgestellten Pakete auf Clientcomputern zu serialisieren und zu aktivieren:
+
+         ```
+         adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
+         ```
+
+* Verwenden Sie für Großinstallationen den [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) , um frühere Versionen von Reader und Acrobat zu entfernen. Passen Sie das Installationsprogramm an und stellen Sie es auf allen Computern in Ihrem Unternehmen bereit.
+
++++
+
++++ Der AEM Forms-Server befindet sich in einer Offline- oder einer sicheren Umgebung und es ist kein Internet verfügbar, um Acrobat zu aktivieren.
+
+* Sie können innerhalb von 7 Tagen nach dem ersten Start Ihres Adobe-Produkts online gehen, um eine Online-Aktivierung und -Registrierung abzuschließen, oder Sie verwenden ein internetfähiges Gerät und die Seriennummer Ihres Produkts, um diesen Vorgang abzuschließen. Detaillierte Anweisungen finden Sie unter [Offline-Aktivierung](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en).
 
 +++
 
