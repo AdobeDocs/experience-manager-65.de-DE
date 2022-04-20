@@ -1,8 +1,8 @@
 ---
 title: Verwalten von Projekten
-seo-title: Verwalten von Projekten
+seo-title: Managing Projects
 description: Mithilfe von Projekten können Sie Ihr Projekt organisieren, indem Sie Ressourcen in einer Entität gruppieren, auf die über die Projektekonsole zugegriffen und diese verwaltet werden kann
-seo-description: Mithilfe von Projekten können Sie Ihr Projekt organisieren, indem Sie Ressourcen in einer Entität gruppieren, auf die über die Projektekonsole zugegriffen und diese verwaltet werden kann
+seo-description: Projects lets you organize your project by grouping resources into one entity which can be acessed and managed intheProjects console
 uuid: ac937582-181f-429b-9404-3c71d1241495
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,91 +10,59 @@ topic-tags: projects
 content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
 workflow-type: tm+mt
-source-wordcount: '1057'
-ht-degree: 90%
+source-wordcount: '987'
+ht-degree: 23%
 
 ---
 
-# Verwalten von Projekten{#managing-projects}
 
-Mithilfe von Projekten können Sie Ressourcen zu einer Einheit gruppieren.
+# Verwalten von Projekten {#managing-projects}
 
-In der **Projektekonsole** können Sie Ihre Projekte aufrufen und bearbeiten:
+Im **Projekte** -Konsole verwenden, können Sie auf Ihre Projekte zugreifen und sie verwalten.
 
-![chlimage_1-255](assets/chlimage_1-255.png)
+![Die Projektekonsole](assets/projects-console.png)
 
-In „Projekte“ können Sie ein Projekt erstellen, Ressourcen mit Ihrem Projekt verknüpfen sowie Projekte oder Ressourcenlinks löschen. Sie können eine Kachel öffnen, um den Projektinhalt anzuzeigen oder Elemente hinzuzufügen. In diesem Thema werden diese Vorgehensweisen beschrieben.
+Mithilfe der Konsole können Sie ein Projekt erstellen, Ressourcen mit Ihrem Projekt verknüpfen sowie Projekt- oder Ressourcenlinks löschen.
 
->[!NOTE]
->
->In Version 6.2 besteht die Möglichkeit, Projekte in Ordnern zu organisieren. Auf der Seite „Projekte“ haben Sie die Möglichkeit, ein Projekt oder einen Ordner zu erstellen.
->
->Nach der Erstellung eines Ordners wird er geöffnet, sodass Benutzer dort weitere Ordner oder ein Projekt erstellen können. Es wird empfohlen, Projekte anhand von Kategorien wie Produktkampagnen, Ort, Sprache usw. in Ordnern zu organisieren.
->
->Die Projekte und Ordner können in einer Listenansicht angezeigt und durchsucht werden.
+## Zugriffsanforderungen {#access-requirements}
 
->[!CAUTION]
->
->Damit Benutzer in Projekten andere Benutzer/Gruppen sehen können, während sie die Projektfunktionen wie das Erstellen von Projekten, das Erstellen von Aufgaben/Workflows, das Anzeigen und Verwalten des Teams verwenden, müssen diese Benutzer Lesezugriff auf **/home/users** und **/home/groups** haben. Um dies umzusetzen, erteilen Sie am besten der Gruppe **projects-users** Lesezugriff auf **/home/users** und **/home/groups**.
+Erstellt eine standardmäßige AEM und erfordert keine zusätzliche Einrichtung.
+
+Damit Benutzer in Projekten andere Benutzer/Gruppen sehen können, während sie Projekte wie Projekte erstellen, Aufgaben/Workflows erstellen oder das Team anzeigen und verwalten, müssen diese Benutzer jedoch Lesezugriff auf `/home/users` und `/home/groups`.
+
+Am einfachsten ist es, die **projects-users** GruppenLesezugriff auf `/home/users` und `/home/groups`.
 
 ## Erstellen eines Projekts {#creating-a-project}
 
-Standardmäßig enthält AEM folgende Vorlagen für die Projekterstellung:
+Führen Sie diese Schritte aus, um ein neues Projekt zu erstellen.
 
-* Einfaches Projekt
-* Medienprojekt
-* Projekt für Produkt-Fotoshooting
-* Übersetzungsprojekt
+1. Im **Projekte** Konsole, tippen oder klicken Sie auf **Erstellen** , um **Projekt erstellen** Assistent.
+1. Wählen Sie eine Vorlage aus und klicken Sie auf **Weiter**. Weitere Informationen zu den standardmäßigen Projektvorlagen finden Sie [hier.](/help/sites-authoring/projects.md#project-templates)
 
-Die Vorgehensweise beim Erstellen eines Projekts ist für jedes Projekt identisch. Unterschiede zwischen den Projekttypen gibt es in Bezug auf verfügbare [Benutzerrollen](/help/sites-authoring/projects.md) und [Workflows](/help/sites-authoring/projects-with-workflows.md).  So erstellen Sie ein neues Projekt:
+   ![Assistent zum Erstellen eines Projekts](assets/create-project-wizard.png)
 
-1. Tippen Sie in **Projekte** auf **Erstellen**, um den Assistenten zur **Projekterstellung** zu öffnen:
-1. Wählen Sie eine Vorlage aus. Standardmäßig sind einfache Projekte, Medienprojekte, [Übersetzungsprojekte](/help/sites-administering/tc-manage.md) und [Produkt-Fotoshooting-Produkt](/help/sites-authoring/managing-product-information.md) verfügbar und klicken Sie auf **Weiter**.
+1. Definieren Sie den **Titel** und die **Beschreibung** und fügen Sie eine **Miniatur** hinzu, falls erforderlich. Hier können Sie auch Benutzer und deren Gruppenzugehörigkeit hinzufügen oder löschen.
 
-   ![chlimage_1-256](assets/chlimage_1-256.png)
-
-1. Definieren Sie den **Titel** und die **Beschreibung** und fügen Sie eine **Miniaturansicht** hinzu, falls erforderlich. Hier können Sie auch Benutzer und deren Gruppenzugehörigkeit hinzufügen oder löschen. Sie können darüber hinaus auf **Erweitert** klicken, um einen Namen anzugeben, der in der URL verwendet werden soll.
-
-   ![chlimage_1-257](assets/chlimage_1-257.png)
+   ![Eigenschaftenschritt des Assistenten](assets/create-project-wizard-properties.png)
 
 1. Tippen oder klicken Sie auf **Erstellen**. Daraufhin werden Sie gefragt, ob Sie ein neues Projekt öffnen oder zur Konsole zurückkehren möchten.
 
-### Zuordnen von Ressourcen zum Projekt    {#associating-resources-with-your-project}
+Die Vorgehensweise zum Erstellen eines Projekts ist für alle Projektvorlagen identisch. Der Unterschied zwischen den Projekttypen hängt von den verfügbaren [Benutzerrollen](/help/sites-authoring/projects.md) und [Workflows.](/help/sites-authoring/projects-with-workflows.md)
 
-Da Projekte es Ihnen ermöglichen, Ressourcen zu einer Einheit zu gruppieren, können Sie diese Ressourcen nun Ihrem Projekt hinzufügen. Die Ressourcen werden als **Kacheln** bezeichnet. Die Ressourcentypen, die Sie mit einem Projekt verknüpfen können, werden unter [Projektkacheln](/help/sites-authoring/projects.md#project-tiles) beschrieben.
+### Zuordnen von Ressourcen zu Ihrem Projekt {#associating-resources-with-your-project}
+
+Projekte ermöglichen es Ihnen, Ressourcen zu einer Einheit zu gruppieren, um sie insgesamt zu verwalten. Daher müssen Sie Ressourcen mit Ihrem Projekt verknüpfen. Diese Ressourcen werden innerhalb des Projekts als **Kacheln**. Die Ressourcentypen, die Sie mit einem Projekt verknüpfen können, werden unter [Projektkacheln](/help/sites-authoring/projects.md#project-tiles) beschrieben.
 
 So ordnen Sie Ihrem Projekt Ressourcen zu:
 
 1. Öffnen Sie das Projekt in der **Projektekonsole**.
 1. Tippen/klicken Sie auf **Bereich hinzufügen** und wählen Sie die gewünschte Kachel aus. Sie können mehrere Arten von Kacheln auswählen.
 
-   ![chlimage_1-258](assets/chlimage_1-258.png)
-
-   >[!NOTE]
-   >
-   >Die Projektkacheln, die mit einem Projekt verknüpft werden können, werden ausführlich unter [Projektkacheln](/help/sites-authoring/projects.md#project-tiles) beschrieben.
+   ![Kachel hinzufügen](assets/project-add-tile.png)
 
 1. Tippen oder klicken Sie auf **Erstellen**. Die Ressource wird mit Ihrem Projekt verknüpft und danach können Sie über Ihr Projekt auf sie zugreifen.
-
-### Löschen eines Projekts oder Ressourcen-Links {#deleting-a-project-or-resource-link}
-
-Dieselbe Methode wird zum Löschen eines Projekts aus der Konsole oder einer verknüpften Ressource aus Ihrem Projekt angewendet:
-
-1. Navigieren Sie zum entsprechenden Ort:
-
-   * Um ein Projekt zu löschen, gehen Sie zur obersten Ebene der **Projektekonsole**.
-   * Um einen Ressourcen-Link innerhalb eines Projekts zu löschen, öffnen Sie das Projekt in der **Projektekonsole**.
-
-1. Aktivieren Sie den Auswahlmodus, indem Sie auf **Auswahl** klicken und Ihr Projekt oder Ihren Ressourcen-Link auswählen.
-1. Tippen/klicken Sie auf **Löschen**.
-
-1. Sie müssen den Löschvorgang in einem Dialogfeld bestätigen. Nach der Bestätigung wird das Projekt oder der Ressourcenlink gelöscht. Tippen/klicken Sie auf **Auswahl aufheben**, um den Auswahlmodus zu verlassen.
-
->[!NOTE]
->
->Wenn Sie das Projekt erstellen und den verschiedenen Rollen Benutzer hinzufügen, werden mit dem Projekt verknüpfte Gruppen automatisch erstellt, um die zugehörigen Berechtigungen zu verwalten. Ein Projekt mit dem Namen Myproject könnte z. B. drei Gruppen **Myproject-Eigentümer**, **MyProject-Editor**, **MyProject-Beobachter** haben. Wird das Projekt jedoch gelöscht, werden diese Gruppen nicht automatisch gelöscht. Ein Administrator muss die Gruppen unter **Werkzeuge** > **Sicherheit** > **Gruppen** manuell löschen.
 
 ### Hinzufügen von Elementen zu einer Kachel {#adding-items-to-a-tile}
 
@@ -102,13 +70,17 @@ In einigen Kacheln benötigen Sie möglicherweise mehr als ein Element. Dies ist
 
 So fügen Sie einer Kachel Elemente hinzu:
 
-1. Navigieren Sie in **Projekte** zum Projekt und klicken Sie in der Kachel, der Sie ein Element hinzufügen möchten, auf das Plussymbol.
+1. In **Projekte**, navigieren Sie zum Projekt, klicken Sie oben rechts in der Kachel, der Sie ein Element hinzufügen möchten, auf das Symbol nach unten und wählen Sie die entsprechende Option aus.
 
-   ![chlimage_1-259](assets/chlimage_1-259.png)
+   * Die Option hängt vom Typ der Kachel ab. Zum Beispiel kann es **Aufgabe erstellen** für **Aufgaben** Baustein oder **Workflow starten** für **Workflows** Kachel.
 
-1. Fügen Sie der Kachel auf dieselbe Weise ein Element hinzu wie bei der Erstellung einer neuen Kachel. Projektkacheln werden [hier](/help/sites-authoring/projects.md#project-tiles) beschrieben. In diesem Beispiel wurde ein Workflow hinzugefügt.
+   ![Kachel-Chevron](assets/project-tile-create-task.png)
 
-   ![chlimage_1-260](assets/chlimage_1-260.png)
+1. Fügen Sie das Element wie beim Erstellen einer neuen Kachel zur Kachel hinzu. Projektkacheln werden [hier](/help/sites-authoring/projects.md#project-tiles) beschrieben.
+
+## Anzeigen von Projektinformationen {#viewing-project-info}
+
+Der Hauptzweck von Projekten besteht darin, verknüpfte Informationen an einem Ort zu gruppieren, um sie leichter zugänglich und umsetzbar zu machen. Sie haben verschiedene Möglichkeiten, auf diese Informationen zuzugreifen.
 
 ### Öffnen einer Kachel {#opening-a-tile}
 
@@ -116,50 +88,78 @@ Manchmal kann es nötig sein zu wissen, welche Elemente in einer aktuellen Kache
 
 Dazu öffnen Sie die Kachel, sodass Sie ihre Elemente anzeigen und ändern können:
 
-1. Tippen/klicken Sie in der Projektekonsole auf die Auslassungszeichen (...).
+1. Tippen oder klicken Sie unten rechts in der Kachel auf das Symbol mit den Auslassungspunkten.
 
-   ![chlimage_1-261](assets/chlimage_1-261.png)
+   ![Aufgabenkachel](assets/project-tile-tasks.png)
 
-1. In AEM wird eine Liste mit den Elementen in der Kachel angezeigt. Sie können den Auswahlmodus aktivieren, um die Elemente zu ändern oder zu löschen.
+1. AEM öffnet die Konsole für die Typen von Elementen, die mit der Kachel verknüpft sind, und Filtern, die auf dem ausgewählten Projekt basieren.
 
-   ![chlimage_1-262](assets/chlimage_1-262.png)
+   ![Projektaufgaben](assets/project-tasks.png)
 
-## Anzeigen von Projektstatistiken {#viewing-project-statistics}
+### Anzeigen einer Projekt-Zeitleiste {#viewing-a-project-timeline}
 
-Um Projektstatistiken anzuzeigen, klicken Sie in der **Projektekonsole** auf **Statistikansicht anzeigen**. Der Fortschrittsstatus für jedes Projekt wird angezeigt. Klicken Sie erneut auf **Statistikansicht anzeigen**, um zur **Projektekonsole** zurückzukehren.
+Die Projekt-Zeitleiste enthält Informationen dazu, wann Assets des Projekts zuletzt verwendet wurden. Gehen Sie wie folgt vor, um die Projekt-Timeline anzuzeigen.
 
-![chlimage_1-263](assets/chlimage_1-263.png)
+1. Im **Projekte** Konsole, klicken oder tippen Sie auf **Timeline** in der Schienenauswahl oben links in der Konsole.
+   ![Timeline-Modus auswählen](assets/projects-timeline-rail.png)
+2. Wählen Sie in der Konsole das Projekt aus, dessen Timeline Sie anzeigen möchten.
+   ![Projekt-Timeline-Ansicht](assets/project-timeline-view.png)
 
-### Anzeigen einer Projekt-Timeline {#viewing-a-project-timeline}
+Assets werden in der Leiste angezeigt. Verwenden Sie die Schienenauswahl, um nach Abschluss zur normalen Ansicht zurückzukehren.
 
-Die Projekt-Timeline enthält Informationen dazu, wann Assets des Projekts zuletzt verwendet wurden. Klicken/tippen Sie zum Anzeigen der Projekt-Timeline auf **Timeline**, aktivieren Sie dann den Auswahlmodus und wählen Sie das Projekt aus. Die Assets werden im linken Bereich angezeigt. Klicken/tippen Sie auf **Timeline**, um zur **Projektekonsole** zurückzukehren.
+### Anzeigen inaktiver Projekte {#viewing-active-inactive-projects}
 
-![chlimage_1-264](assets/chlimage_1-264.png)
+So wechseln Sie zwischen aktiven und [inaktive Projekte,](#making-projects-inactive-or-active) im **Projekte** klicken Sie auf die **Aktivieren aktiver Projekte** in der Symbolleiste.
 
-### Anzeigen aktiver/inaktiver Projekte {#viewing-active-inactive-projects}
+![Symbol Aktive Projekte ein/aus](assets/projects-toggle-active.png)
 
-Um zwischen aktiven und inaktiven Projekten zu wechseln, klicken Sie in der **Projektekonsole** auf **Aktive Projekte ein/aus**. Wenn neben dem Symbol ein Häkchen zu sehen ist, werden die aktiven Projekte angezeigt.
+Standardmäßig zeigt die Konsole aktive Projekte an. Klicken Sie auf **Aktivieren aktiver Projekte** -Symbol ein, um zur Ansicht inaktiver Projekte zu wechseln. Klicken Sie erneut darauf, um zu aktiven Projekten zurückzukehren.
 
-![chlimage_1-265](assets/chlimage_1-265.png)
+## Organisieren von Projekten {#organizing-projects}
 
-Wenn neben dem Symbol ein x zu sehen ist, werden die inaktiven Projekte angezeigt.
+Es stehen verschiedene Optionen zur Verfügung, mit denen Sie Ihre Projekte organisieren können, um die **Projekte** Konsolenverwaltung.
 
-![chlimage_1-266](assets/chlimage_1-266.png)
+### Projektordner {#project-folders}
 
-## Festlegen von Projekten als inaktiv oder aktiv {#making-projects-inactive-or-active}
+Sie können Ordner im **Projekte** -Konsole, um ähnliche Projekte zu gruppieren und zu organisieren.
 
-Sie können ein Projekt als inaktiv festlegen, wenn Sie es abgeschlossen haben, aber die Informationen beibehalten möchten.
+1. Im **Projekte** Klicken oder tippen in der Konsole **Erstellen** und dann **Ordner erstellen**.
 
-So legen Sie ein Projekt als inaktiv (oder aktiv) fest:
+   ![Ordner erstellen](assets/project-create-folder.png)
 
-1. Öffnen Sie das Projekt in der **Projektekonsole** und suchen Sie die Kachel **Projektinformationen**.
+1. Geben Sie dem Ordner einen Titel und klicken Sie auf **Erstellen**.
 
-   >[!NOTE]
-   Möglicherweise müssen Sie diese Kachel erst noch einfügen, wenn sie nicht bereits in Ihrem Projekt enthalten ist. Weitere Informationen finden Sie unter [Hinzufügen von Kacheln](#adding-items-to-a-tile).
+1. Der Ordner wird der Konsole hinzugefügt.
 
-1. Tippen/klicken Sie auf **Bearbeiten**.
-1. Ändern Sie die Auswahl von **Aktiv** in **Inaktiv** (oder umgekehrt).
+Sie können jetzt Projekte im Ordner erstellen. Sie können mehrere Ordner erstellen und auch Ordner verschachteln.
 
-   ![chlimage_1-267](assets/chlimage_1-267.png)
+### Inaktivieren von Projekten {#making-projects-inactive-or-active}
 
-1. Tippen/klicken Sie auf **Fertig**, um Ihre Änderungen zu speichern.
+Sie können ein Projekt nach Abschluss als inaktiv markieren, aber dennoch die Informationen zum Projekt beibehalten. [Inaktive Projekte werden jetzt angezeigt](#viewing-active-inactive-projects) standardmäßig im **Projekte** Konsole.
+
+Gehen Sie wie folgt vor, um ein Projekt inaktiv zu machen.
+
+1. Öffnen Sie die **Projekteigenschaften** des Projekts.
+   * Sie können dies über die Konsole tun, indem Sie das Projekt auswählen oder innerhalb des Projekts über die **Projektinformationen** Kachel.
+1. Im **Projekteigenschaften** ändern Sie die **Projektstatus** Regler aus **Aktiv** nach **Inaktiv**.
+
+   ![Projektstatusauswahl im Eigenschaftenfenster](assets/project-status.png)
+
+1. Tippen oder klicken Sie auf **Speichern und schließen** , um Ihre Änderungen zu speichern.
+
+### Löschen von Projekten {#deleting-a-project}
+
+Führen Sie die folgenden Schritte aus, um ein Projekt zu löschen.
+
+1. Navigieren Sie zur obersten Ebene der **Projekte** Konsole.
+1. Wählen Sie Ihr Projekt in der Konsole aus.
+1. Tippen oder klicken Sie auf **Löschen** in der Symbolleiste.
+1. AEM können beim Löschen des Projekts die zugehörigen Projektdaten entfernen/ändern. Wählen Sie die gewünschten Optionen in der **Projekt löschen** angezeigt.
+   * Projektgruppen und -rollen entfernen
+   * Ordner für Projekt-Assets löschen
+   * Projekt-Workflows beenden
+
+   ![Optionen zum Löschen von Projekten](assets/project-delete-options.png)
+1. Tippen oder klicken Sie auf **Löschen** , um das Projekt mit den ausgewählten Optionen zu löschen.
+
+Weitere Informationen zu automatisch von Projekten erstellten Gruppen finden Sie unter [Automatische Gruppenerstellung](/help/sites-authoring/projects.md#auto-group-creation) für Details.

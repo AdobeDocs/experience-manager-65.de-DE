@@ -1,246 +1,245 @@
 ---
 title: Projekte
-seo-title: Projekte
-description: Projekte ermöglichen es Ihnen, Ressourcen zu einer Einheit gruppieren, deren gemeinsame Umgebung die Projektverwaltung erleichtert.
-seo-description: Projekte ermöglichen es Ihnen, Ressourcen zu einer Einheit gruppieren, deren gemeinsame Umgebung die Projektverwaltung erleichtert.
+seo-title: Projects
+description: Projekte ermöglichen es Ihnen, Ressourcen zu einer Einheit gruppieren, deren gemeinsame Umgebung die Projektverwaltung erleichtert..
+seo-description: Projects let you group resources into one entity whose common, shared environment makes it easy to manage your projects
 uuid: 4b5b9d78-d515-46af-abe2-882da0a1c8ae
-contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
 docset: aem65
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85e993000c016240c0fbf398ec8192990e60eee6
 workflow-type: tm+mt
-source-wordcount: '1399'
-ht-degree: 93%
+source-wordcount: '1366'
+ht-degree: 37%
 
 ---
 
-# Projekte{#projects}
+
+# Projekte {#projects}
 
 Mithilfe von Projekten können Sie Ressourcen zu einer Einheit gruppieren. Eine gemeinsam genutzte Umgebung erleichtert die Projektverwaltung. Die Ressourcentypen, die Sie mit einem Projekt verknüpfen können, werden in AEM als Kacheln bezeichnet. Kacheln können Projekt- und Team-Informationen, Assets, Workflows und andere Arten von Informationen sein. Ausführliche Informationen finden Sie unter [Projektkacheln](#project-tiles).
 
->[!CAUTION]
->
->Damit Benutzer in Projekten andere Benutzer/Gruppen sehen können, während sie die Projektfunktionen wie das Erstellen von Projekten, das Erstellen von Aufgaben/Workflows, das Anzeigen und Verwalten des Teams verwenden, müssen diese Benutzer Lesezugriff auf **/home/users** und **/home/groups** haben. Die einfachste Möglichkeit, dies zu implementieren, besteht darin, der Gruppe **projects-users** Lesezugriff auf **/home/users** und**/home/groups** zu gewähren.
-
 Als Benutzer haben Sie folgende Möglichkeiten:
 
-* Erstellen von Projekten
+* Erstellen und Löschen von Projekten
 * Zuordnen von Inhalten und Asset-Ordnern zu einem Projekt
-* Löschen von Projekten
 * Entfernen von Inhaltsverknüpfungen aus einem Projekt
 
-Weitere Informationen finden Sie in folgenden Themen:
+## Zugriffsanforderungen {#access-requirements}
 
-* [Verwalten von Projekten](/help/sites-authoring/touch-ui-managing-projects.md)
-* [Arbeiten mit Aufgaben](/help/sites-authoring/task-content.md)
-* [Arbeiten mit Projekt-Workflows](/help/sites-authoring/projects-with-workflows.md)
-* [Creative Project und PIM-Integration](/help/sites-authoring/managing-product-information.md)
+Erstellt eine standardmäßige AEM und erfordert keine zusätzliche Einrichtung.
+
+Damit Benutzer in Projekten andere Benutzer/Gruppen sehen können, während sie Projekte wie Projekte erstellen, Aufgaben/Workflows erstellen oder das Team anzeigen und verwalten, müssen diese Benutzer jedoch Lesezugriff auf `/home/users` und `/home/groups`.
+
+Am einfachsten ist es, die **projects-users** GruppenLesezugriff auf `/home/users` und `/home/groups`.
 
 ## Projektekonsole {#projects-console}
 
 In der Projektekonsole können Sie innerhalb von AEM auf Ihre Projekte zugreifen und diese verwalten.
 
-![screen-shot_2019-03-05at125110](assets/screen-shot_2019-03-05at125110.png)
+![Die Projektekonsole](assets/screen-shot_2019-03-05at125110.png)
 
-* Wählen Sie **Zeitleiste** und dann ein Projekt, um seine Zeitleiste anzuzeigen.
-* Klicken/tippen Sie auf **Auswählen**, um den Auswahlmodus zu aktivieren.
-* Klicken Sie auf **Erstellen**, um Projekte hinzuzufügen.
-* Mit **Aktive Projekte ein/aus** können Sie zwischen allen Projekten und nur den aktiven wechseln.
-* Mit **Statistikansicht anzeigen** können Sie die Projektstatistiken zu Aufgabenabschlüssen anzeigen.
+Die Projektekonsole ähnelt anderen Konsolen in AEM, ermöglicht eine Reihe von Aktionen für einzelne Projekte und passt Ihre Ansicht der Projekte an.
 
-## Projektkacheln  {#project-tiles}
+### Modus umschalten {#modes}
 
-Sie können verschiedene Arten von Informationen mit Ihren Projekten verknüpfen. Diese werden als **Kacheln** bezeichnet. In diesem Abschnitt werden die einzelnen Kacheln und die enthaltenen Informationen beschrieben.
+Sie können die Schienenauswahl verwenden, um zwischen den Konsolenmodi zu wechseln.
 
-Sie können die folgenden Kacheln mit Ihrem Projekt verknüpfen. Sie werden in den folgenden Abschnitten beschrieben:
+![Schienenauswahl](assets/projects-rail.png)
 
-* Assets und Asset-Sammlungen
-* Erlebnisse
-* Links
-* Projektinformationen
-* Team
-* Landing Pages
-* E-Mails
-* Workflows
-* Launches
-* Aufgaben
+#### Nur Inhalt {#content-only}
 
-### Assets  {#assets}
+Nur Inhalt ist der Standardmodus beim Öffnen der Konsole. Es zeigt alle Ihre Projekte.
+
+#### Zeitleiste {#timeline}
+
+In der Timeline-Ansicht können Sie ein einzelnes Projekt auswählen und die Aktivität darauf anzeigen. Verwenden der Schienenauswahl oder des Hotkeys `alt+1` , um zu dieser Ansicht zu wechseln.
+
+![Timeline-Modus](assets/project-timeline.png)
+
+### Ansicht umschalten {#views}
+
+Mit der Ansichtsauswahl können Sie zwischen der Anzeige von Projekten als große Kacheln (Standard), der Anzeige als Liste oder in einem Kalender wechseln.
+
+![Ansichten](assets/projects-views.png)
+
+### Filtern Ihrer Ansicht {#filter}
+
+Mit dem Filter können Sie zwischen allen Projekten und nur den aktiven wechseln.
+
+![Filter](assets/projects-filter.png)
+
+### Auswählen und Anzeigen von Projekten {#selecting}
+
+Wählen Sie ein Projekt aus, indem Sie den Mauszeiger über die Projektkachel bewegen und auf das Häkchen klicken.
+
+Zeigen Sie die Details eines Projekts an, indem Sie darauf klicken, um eine detaillierte Ansicht zu erhalten.
+
+### Erstellen neuer Projekte {#creating}
+
+Klicken **Erstellen** , um ein neues Projekt hinzuzufügen.
+
+## Projektkacheln {#project-tiles}
+
+Projekte bestehen aus verschiedenen Arten von Informationen, die Sie gemeinsam verwalten möchten. Diese Informationen werden durch verschiedene **Kacheln**.
+
+Sie können die folgenden Kacheln mit Ihrem Projekt verknüpfen.
+
+* [Assets](#assets)
+* [Asset-Sammlungen](#asset-collections)
+* [Erlebnisse](#experiences)
+* [Links](#links)
+* [Projektinformationen](#project-info)
+* [Team](#team)
+* [Landing Pages](#landing-pages)
+* [E-Mails](#emails)
+* [Workflows](#workflows)
+* [Launches](#launches)
+* [Aufgaben](#tasks)
+
+Klicken Sie oben rechts in einer Kachel auf das Dropdown-Menü, um der Kachel weitere Daten hinzuzufügen.
+
+Klicken Sie auf die Schaltfläche mit den Auslassungspunkten unten rechts in einer beliebigen Kachel, um die Daten der Kachel in der zugehörigen Konsole zu öffnen.
+
+### Assets {#assets}
 
 In der Kachel **Assets** können Sie alle Assets zusammenstellen, die Sie für ein bestimmtes Projekt verwenden.
 
-![chlimage_1-70](assets/chlimage_1-70.png)
+![Assets-Kachel](assets/project-tile-assets.png)
 
-Laden Sie Assets direkt in die Kachel hoch. Darüber hinaus können Sie Bildsets, Rotationssets oder gemischte Mediensets erstellen, wenn Sie über das Zusatzmodul für Dynamic Media verfügen.
-
-![chlimage_1-71](assets/chlimage_1-71.png)
+Laden Sie Assets direkt in die Kachel hoch.
 
 ### Asset-Sammlungen {#asset-collections}
 
 [Asset-Sammlungen](/help/assets/manage-collections.md) können Ihrem Projekt ähnlich wie Assets direkt hinzugefügt werden. Sie definieren die Sammlungen unter „Assets“.
 
-![chlimage_1-72](assets/chlimage_1-72.png)
+![Asset-Sammlungs-Kachel](assets/project-tile-asset-collection.png)
 
 Fügen Sie eine Sammlung hinzu, indem Sie auf **Sammlung hinzufügen** klicken und die entsprechende Sammlung in der Liste auswählen.
 
-### Erlebnisse   {#experiences}
+### Erlebnisse {#experiences}
 
-Über die Kachel **Erlebnisse** können Sie eine Mobile App, eine Website oder eine Veröffentlichung zum Projekt hinzufügen.
+Die **Erlebnisse** Mit dieser Kachel können Sie eine mobile App, Website oder Veröffentlichung zum Projekt hinzufügen.
 
-![chlimage_1-73](assets/chlimage_1-73.png)
+![Erlebniskachel](assets/project-tile-experiences.png)
 
-Die Symbole geben an, welche Art von Erlebnis dargestellt wird: Website, Mobile App oder eine Veröffentlichung. Fügen Sie Erlebnisse hinzu, indem Sie auf das Pluszeichen (+) oder auf **Erlebnis hinzufügen** klicken und den Erlebnistyp auswählen.
+Die Symbole geben an, welche Art von Erlebnis dargestellt wird.
 
-![chlimage_1-74](assets/chlimage_1-74.png)
-
-Wählen Sie den Pfad für die Miniaturansichten aus und, falls zutreffend, ändern Sie die Miniaturansicht für das Erlebnis. Erlebnisse werden in der Kachel **Erlebnisse** gruppiert.
+* Internetseite
+* Mobile App
 
 ### Links {#links}
 
-Über die Kachel „Links“ können Sie externe Links mit Ihrem Projekt verknüpfen.
+Die **Links** Mit dieser Kachel können Sie externe Links mit Ihrem Projekt verknüpfen.
 
-![chlimage_1-75](assets/chlimage_1-75.png)
+![Link-Kachel](assets/project-tile-links.png)
 
-Sie können dem Link einen aussagekräftigen Namen geben und die Miniaturansicht ändern.
-
-![chlimage_1-76](assets/chlimage_1-76.png)
+Sie können dem Link einen aussagekräftigen Namen geben und die Miniatur ändern.
 
 ### Projektinformationen {#project-info}
 
-Die Kachel „Projektinformationen“ enthält allgemeine Informationen zum Projekt, einschließlich einer Beschreibung, des Projektstatus (inaktiv oder aktiv), eines Fälligkeitsdatums und der Mitglieder. Darüber hinaus können Sie eine Projektminiaturansicht hinzufügen, die auf der Hauptprojektseite angezeigt wird.
+Die **Projektinformationen** Die Kachel enthält allgemeine Informationen zum Projekt, einschließlich einer Beschreibung, des Projektstatus (inaktiv oder aktiv), eines Fälligkeitsdatums und der Mitglieder. Darüber hinaus können Sie eine ProjektMiniatur hinzufügen, die auf der Hauptprojektseite angezeigt wird.
 
-![chlimage_1-77](assets/chlimage_1-77.png)
-
-Die Team-Mitglieder können dieser Kachel hinzugefügt oder aus ihr entfernt werden (oder ihre Rollen können geändert werden). Das Gleiche gilt für die Kachel „Team“.
-
-![chlimage_1-78](assets/chlimage_1-78.png)
+![Bereich &quot;Projektinformationen&quot;](assets/project-tile-info.png)
 
 ### Übersetzungsauftrag {#translation-job}
 
-In der Kachel „Übersetzungsauftrag“ können Sie eine Übersetzung starten und sehen den jeweiligen Status Ihrer Übersetzungen. Informationen zum Einrichten Ihrer Übersetzung finden Sie unter [Erstellen von Übersetzungsprojekten](/help/assets/translation-projects.md).
+Die **Übersetzungsauftrag** ist der Bereich, in dem Sie eine Übersetzung starten und in dem Sie den Status Ihrer Übersetzungen sehen.
 
-![chlimage_1-79](assets/chlimage_1-79.png)
+![Kachel des Übersetzungsauftrags](assets/project-tile-translation.png)
 
-Klicken Sie auf die Auslassungszeichen unten auf der Karte **Übersetzungsauftrag**, um die Assets im Übersetzungs-Workflow anzuzeigen. In der Übersetzungsauftragsliste werden auch Einträge für Asset-Metadaten und -Tags aufgeführt. Diese Einträge geben an, dass die Metadaten und Tags für die Assets ebenfalls übersetzt werden.
-
-![chlimage_1-80](assets/chlimage_1-80.png)
+Informationen zum Einrichten der Übersetzung finden Sie im Dokument . [Erstellen von Übersetzungsprojekten.](/help/assets/translation-projects.md)
 
 ### Team {#team}
 
 In dieser Kachel können Sie die Mitglieder des Projekt-Teams angeben. Geben Sie die Namen der Team-Mitglieder ein und weisen Sie Benutzerrollen zu.
 
-![chlimage_1-81](assets/chlimage_1-81.png)
+![Kachel „Team“](assets/project-tile-team.png)
 
 Sie können Team-Mitglieder zum Team hinzufügen und aus ihm löschen. Darüber hinaus können Sie die [Benutzerrolle](#userroles) bearbeiten, die dem jeweiligen Team-Mitglied zugewiesen ist.
 
-![chlimage_1-82](assets/chlimage_1-82.png)
-
 ### Landing Pages {#landing-pages}
 
-Über die Kachel **Einstiegsseiten** können Sie eine neue Einstiegsseite anfordern.
+Über die Kachel **** Einstiegsseiten können Sie eine neue Einstiegsseite anfordern.
 
-![chlimage_1-83](assets/chlimage_1-83.png)
+![Kachel der Landingpage](assets/project-tile-landing.png)
 
-Dieser Workflow wird in [Erstellen eines Einstiegsseiten-Workflows](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow) beschrieben.
+Dieser Workflow wird im Dokument beschrieben.[Erstellen Sie einen Landingpage-Workflow.](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow)
 
 ### E-Mails {#emails}
 
-In der Kachel **E-Mails** können Sie E-Mail-Anforderungen verwalten. Hierüber lässt sich der auch der Workflow zum Anfordern einer E-Mail starten.
+In der Kachel **E-Mails** können Sie E-Mail-Anforderungen verwalten. Er startet **E-Mail-Anfrage** Arbeitsablauf.
 
-![chlimage_1-84](assets/chlimage_1-84.png)
+![Email-Kachel](assets/project-tile-email.png)
 
 Weitere Informationen finden Sie unter [Workflow „E-Mail anfordern“](/help/sites-authoring/projects-with-workflows.md#request-email-workflow).
 
 ### Workflows {#workflows}
 
-Sie können Ihr Projekt bestimmten Workflows zuweisen. Wenn Workflows ausgeführt werden, wird ihr Status in „Projekte“ in der Kachel **Workflows** angezeigt.
+Sie können Workflows für Ihr Projekt starten. Wenn Workflows ausgeführt werden, wird ihr Status im **Workflows** Kachel.
 
-![chlimage_1-85](assets/chlimage_1-85.png)
+![Kachel &quot;Workflows&quot;](assets/project-tile-workflows.png)
 
-Sie können Ihr Projekt bestimmten Workflows zuweisen. Je nach Projekt stehen verschiedene Workflows zur Verfügung.
+Je nachdem, welches Projekt Sie erstellen, sind unterschiedliche Workflows verfügbar.
 
 Diese werden unter [Arbeiten mit Projekt-Workflows](/help/sites-authoring/projects-with-workflows.md) beschrieben.
 
 ### Starts {#launches}
 
-Die Kachel „Launches“ enthält alle Launches, die mit einem [Workflow für die Launch-Anfrage](/help/sites-authoring/projects-with-workflows.md) angefordert wurden.
+Die **Starts** Die Kachel zeigt alle Launches an, die mit einer [Workflow &quot;Launch anfordern&quot;.](/help/sites-authoring/projects-with-workflows.md)
 
-![chlimage_1-86](assets/chlimage_1-86.png)
+![Kachel &quot;Launches&quot;](assets/project-tile-launches.png)
 
 ### Aufgaben {#tasks}
 
 Mithilfe von Aufgaben können Sie den Status aller projektbezogenen Aufgaben überwachen, einschließlich Workflows. Aufgaben werden im Detail unter [Arbeiten mit Aufgaben](/help/sites-authoring/task-content.md) beschrieben.
 
-![chlimage_1-87](assets/chlimage_1-87.png)
+![Aufgabenkachel](assets/project-tile-tasks.png)
 
 ## Projektvorlagen {#project-templates}
 
-Im Lieferumfang von AEM sind drei verschiedene Vorlagen enthalten:
+Vorlagen dienen als Grundlage für den Projektstart. AEM stellt diese Standardprojektvorlagen bereit.
 
-* Ein einfaches Projekt: ein Referenzbeispiel für alle Projekte, die nicht in andere Kategorien passen (ein Allrounder). Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter) und vier Workflows (Projektbestätigung, Launch anfordern, Landingpage anfordern und E-Mail anfordern).
-* Ein Medienprojekt: ein beispielhaftes Referenzprojekt für medienbezogene Aktivitäten. Es umfasst eine Reihe von medienbezogenen Projektrollen (Fotografen, Bearbeiter, Werbetexter, Designer, Inhaber und Beobachter). Es enthält außerdem zwei medienbezogene Workflows: Kopie anfordern (zum Anfordern und Prüfen von Text) und Produkt-Fotoshooting (für die Verwaltung von Produktfotografie).
-* [Produkt-Fotoshooting-Projekt](/help/sites-authoring/managing-product-information.md)  - Ein Referenzbeispiel für die Verwaltung von eCommerce-bezogenen Produktfotos. Es enthält Rollen für Fotografen, Bearbeiter, Fotoretoucheure, Inhaber, Creative Directors, Social-Media-Marketer, Marketing-Manager, Prüfer und Beobachter.
-* [Ein Übersetzungsprojekt](/help/sites-administering/translation.md): ein beispielhaftes Referenzprojekt für die Verwaltung von übersetzungsbezogenen Aktivitäten. Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter). Es enthält zwei Workflows, auf die in der Workflow-Benutzeroberfläche zugegriffen werden kann.
+* **Medienprojekt** - Dies ist ein Referenzbeispielprojekt für medienbezogene Aktivitäten. Es enthält mehrere medienbezogene Projektrollen und auch Workflows, die mit Medieninhalten in Verbindung stehen.
+* **[Projekt für Produkt-Fotoshooting](/help/sites-authoring/managing-product-information.md)** - Dies ist ein Referenzbeispiel für die Verwaltung der eCommerce-bezogenen Produktfotografie.
+* **[Übersetzungsprojekt](/help/sites-administering/translation.md)** - Dies ist ein Referenzbeispiel für die Verwaltung von übersetzungsbezogenen Aktivitäten. Es enthält grundlegende Rollen und Workflows für die Verwaltung von Übersetzungen.
+* **Einfaches Projekt** - Dies ist ein Referenzbeispiel für alle Projekte, die nicht in andere Kategorien passen. Es umfasst drei grundlegende Rollen und vier allgemeine AEM-Workflows.
 
-Je nach ausgewählter Vorlage stehen Ihnen verschiedene Optionen für Benutzerrollen und Workflows zur Verfügung.
+Je nach ausgewählter Vorlage stehen Ihnen im Projekt verschiedene Optionen zur Verfügung, z. B. die Benutzerrollen und Workflows.
 
-## Benutzerrollen in einem Projekt  {#user-roles-in-a-project}
+## Benutzerrollen in einem Projekt {#user-roles-in-a-project}
 
-Die verschiedenen Benutzerrollen werden in einer Projektvorlage festgelegt und sind vor allem für die folgenden beiden Bereiche wichtig:
+Die verschiedenen Benutzerrollen werden in der Projektvorlage definiert und aus zwei Hauptgründen verwendet:
 
-1. Berechtigungen. Die Benutzerrollen fallen in eine der drei genannten Kategorien: Beobachter, Bearbeiter, Inhaber. Ein Fotograf oder Werbetexter hat z. B. dieselben Berechtigungen wie ein Bearbeiter. Über die Berechtigungen wird festgelegt, inwiefern ein Benutzer Inhalte in einem Projekt ändern kann.
-1. Workflows. Mit Workflows wird festgelegt, wem welche Aufgaben in einem Projekt zugewiesen sind. Die Aufgaben können einer Projektrolle zugeordnet werden. Beispielsweise kann der Rolle „Fotografen“ eine Aufgabe zugewiesen werden, sodass alle Team-Mitglieder mit dieser Rolle die Aufgabe erhalten.
+1. Berechtigungen: Die Benutzerrollen lassen sich in eine der drei aufgeführten Kategorien einteilen: Beobachter, Bearbeiter, Inhaber. Beispielsweise hat ein Fotograf oder ein Texter dieselben Berechtigungen wie ein Redakteur. Über die Berechtigungen wird festgelegt, inwiefern ein Benutzer Inhalte in einem Projekt ändern kann.
+1. Workflows: Die Workflows bestimmen, wem Aufgaben in einem Projekt zugewiesen werden. Die Aufgaben können einer Projektrolle zugeordnet werden. Beispielsweise kann Fotografen eine Aufgabe zugewiesen werden, sodass alle Teammitglieder, die die Rolle des Fotografen haben, die Aufgabe erhalten.
 
-Alle Projekte unterstützen die folgenden Standardrollen, mit denen Sie Sicherheits- und Kontrollberechtigungen verwalten können:
+Alle Projekte unterstützen die folgenden Standardrollen, mit denen Sie Sicherheits- und Kontrollberechtigungen verwalten können.
 
-<table>
- <tbody>
-  <tr>
-   <td><p><strong>Rolle</strong></p> </td>
-   <td><p><strong>Beschreibung</strong></p> </td>
-   <td><p><strong>Berechtigungen</strong></p> </td>
-   <td><p><strong>Gruppenmitgliedschaft</strong></p> </td>
-  </tr>
-  <tr>
-   <td><p>Beobachter</p> </td>
-   <td><p>Ein Benutzer mit dieser Rolle kann Projektdetails, einschließlich des Projektstatus, anzeigen.</p> </td>
-   <td><p>Nur-Lese-Zugriff auf ein Projekt</p> </td>
-   <td><p>Gruppe „workflow-users“</p> </td>
-  </tr>
-  <tr>
-   <td><p>Bearbeiter</p> </td>
-   <td><p>Ein Benutzer mit dieser Rolle kann Inhalt in ein Projekt hochladen und Projektinhalte bearbeiten.</p> <p> </p> </td>
-   <td>
-    <ul>
-     <li>Lese- und Schreibzugriff auf ein Projekt, zugehörige Metadaten und zugehörige Assets</li>
-     <li>Berechtigungen zum Hochladen einer Aufnahmenliste oder eines Fotoshootings und Überprüfen und Genehmigen von Assets</li>
-     <li>Schreibberechtigung für „/etc/commerce“</li>
-     <li>Verändern-Berechtigungen für ein bestimmtes Projekt</li>
-    </ul> </td>
-   <td><p>Gruppe „workflow-users“</p> </td>
-  </tr>
-  <tr>
-   <td><p>Inhaber</p> </td>
-   <td><p>Ein Benutzer mit dieser Rolle kann ein Projekt starten. Ein Inhaber kann ein Projekt erstellen, Arbeitsschritte in einem Projekt initiieren und genehmigte Assets in den Produktionsordner verschieben. Aber auch alle anderen Aufgaben im Projekt können vom Inhaber angezeigt und ausgeführt werden.</p> </td>
-   <td>
-    <ul>
-     <li>Schreibberechtigung für „/etc/commerce“</li>
-    </ul> </td>
-   <td>
-    <ul>
-     <li>DAM-Benutzergruppe (um ein Projekt erstellen zu können)</li>
-     <li>Gruppe "project-administrators"(um ein Projekt erstellen und Assets verschieben zu können)</li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
+| Rolle | Beschreibung | Berechtigungen | Gruppenmitgliedschaft |
+|---|---|---|---|
+| Beobachter | Ein Benutzer mit dieser Rolle kann Projektdetails, einschließlich des Projektstatus, anzeigen. | Nur-Lese-Zugriff auf ein Projekt | `workflow-users`-Gruppe |
+| Bearbeiter | Ein Benutzer mit dieser Rolle kann Inhalt in ein Projekt hochladen und Projektinhalte bearbeiten. | Lese- und Schreibzugriff auf ein Projekt, zugehörige Metadaten und zugehörige Assets<br>Berechtigungen zum Hochladen einer Aufnahmenliste, Fotoshootings sowie zum Überprüfen und Genehmigen von Assets<br>Schreibberechtigung für `/etc/commerce`<br>Berechtigung für ein bestimmtes Projekt ändern | `workflow-users`-Gruppe |
+| Inhaber | Ein Benutzer mit dieser Rolle kann ein Projekt erstellen, die Arbeit an einem Projekt initiieren und genehmigte Assets in den Produktionsordner verschieben. Alle anderen Aufgaben im Projekt können auch vom Eigentümer angezeigt und ausgeführt werden. | Schreibberechtigung für `/etc/commerce` | `dam-users` -Gruppe, um ein Projekt erstellen zu können.<br>`project-administrators` -Gruppe, um ein Projekt erstellen und Assets verschieben zu können. |
 
-Für kreative Projekte stehen zusätzliche Rollen, z. B. Fotografen, zur Verfügung. Sie können diese Rollen verwenden, um auf deren Grundlage benutzerdefinierte Rollen für ein bestimmtes Projekt zu erstellen.
+Für kreative Projekte stehen zusätzliche Rollen wie Fotografen zur Verfügung. Sie können diese Rollen verwenden, um auf deren Grundlage benutzerdefinierte Rollen für ein bestimmtes Projekt zu erstellen.
 
->[!NOTE]
->
->Wenn Sie das Projekt erstellen und den verschiedenen Rollen Benutzer hinzufügen, werden mit dem Projekt verknüpfte Gruppen automatisch erstellt, um die zugehörigen Berechtigungen zu verwalten. Ein Projekt mit dem Namen Myproject könnte z. B. drei Gruppen **Myproject-Eigentümer**, **MyProject-Editor**, **MyProject-Beobachter** haben. Wird das Projekt jedoch gelöscht, werden diese Gruppen nicht automatisch gelöscht. Ein Administrator muss die Gruppen unter **Werkzeuge** > **Sicherheit** > **Gruppen** manuell löschen.
+### Automatische Gruppenerstellung {#auto-group-creation}
+
+Wenn Sie das Projekt erstellen und den verschiedenen Rollen Benutzer hinzufügen, werden mit dem Projekt verknüpfte Gruppen automatisch erstellt, um die zugehörigen Berechtigungen zu verwalten.
+
+Ein Projekt mit dem Namen Myproject könnte z. B. drei Gruppen **Myproject-Eigentümer**, **MyProject-Editor**, **MyProject-Beobachter** haben.
+
+Wenn das Projekt gelöscht wird, werden diese Gruppen nur gelöscht, wenn Sie die entsprechende Option auswählen [beim Löschen des Projekts.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Administratoren können die Gruppen in **Instrumente** > **Sicherheit** > **Gruppen**.
+
+## Zusätzliche Ressourcen {#additional-resources}
+
+Weitere Informationen zur Verwendung von Projekten finden Sie in den folgenden zusätzlichen Dokumenten:
+
+* [Verwalten von Projekten](/help/sites-authoring/touch-ui-managing-projects.md)
+* [Arbeiten mit Aufgaben](/help/sites-authoring/task-content.md)
+* [Arbeiten mit Projekt-Workflows](/help/sites-authoring/projects-with-workflows.md)
+* [Creative Project und PIM-Integration](/help/sites-authoring/managing-product-information.md)
