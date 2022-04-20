@@ -8,10 +8,10 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 0f4207564645ef7ba7da9064e971248b59f5a9b3
+source-git-commit: a23b3648b2687bcdbb46ea5e0bb42090822e1dd9
 workflow-type: tm+mt
-source-wordcount: '5381'
-ht-degree: 50%
+source-wordcount: '5420'
+ht-degree: 49%
 
 ---
 
@@ -203,7 +203,7 @@ Wenn Sie den PDF Generator-Dienst verwenden möchten, um native Dateiformate wie
 >* Adobe Acrobat, Microsoft® Word, Excel und Powerpoint sind nur für Microsoft® Windows verfügbar. Wenn Sie das UNIX-basierte Betriebssystem verwenden, installieren Sie OpenOffice, um Rich-Text-Dateien und unterstützte Microsoft® Office-Dateien in PDF-Dokumente zu konvertieren.
 >* Schließen Sie alle Dialogfelder, die nach der Installation von Adobe Acrobat und Software von Drittanbietern für alle Benutzer angezeigt werden, die für die Verwendung des PDF Generator-Dienstes konfiguriert wurden.
 >* Starten Sie die installierte Software mindestens einmal. Schließen Sie alle Dialogfelder für alle Benutzer, die für die Verwendung des PDF Generator-Dienstes konfiguriert wurden.
->
+>* [Überprüfen Sie das Ablaufdatum Ihrer Adobe Acrobat-Seriennummern.](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) und ein Datum für die Aktualisierung der Lizenz festlegen oder [Ihre Seriennummer migrieren](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) auf der Grundlage des Verfallsdatums.
 
 
 Öffnen Sie nach der Installation von Acrobat Microsoft® Word. Klicken Sie auf der Registerkarte **Acrobat** auf **PDF erstellen** und konvertieren Sie eine auf dem Computer verfügbare .doc- oder .docx-Datei in ein PDF-Dokument. Wenn die Konvertierung erfolgreich war, ist AEM Forms für die Verwendung von Acrobat mit PDF Generator-Dienst bereit.
