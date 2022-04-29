@@ -1,19 +1,12 @@
 ---
 title: Schritte zur Aktualisierung von Installationen auf Anwendungsservern
 description: Erfahren Sie, wie Sie Instanzen von AEM aktualisieren, die über Anwendungsserver bereitgestellt werden.
-uuid: e4020966-737c-40ea-bfaa-c63ab9a29cee
-contentOwner: sarchiz
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: upgrading
-content-type: reference
-discoiquuid: 1876d8d6-bffa-4a1c-99c0-f6001acea825
-docset: aem65
-feature: Aktualisieren
+feature: Upgrading
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
-source-git-commit: 69d960da90176058e8bb8b685325529e6cc10a31
+source-git-commit: 5e875e0420540ca209e7d677046e8d010ae4e145
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 70%
+source-wordcount: '452'
+ht-degree: 67%
 
 ---
 
@@ -23,7 +16,7 @@ In diesem Abschnitt wird die Vorgehensweise zum Aktualisieren von AEM für Anwen
 
 In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungsserver verwendet, was bedeutet, dass Sie bereits über eine funktionierende Version von AEM verfügen. In dieser Anleitung wird die Aktualisierung von Version **AEM 6.4 auf 6.5** beschrieben.
 
-1. Beginne zuerst TomCat. In den meisten Fällen können Sie dies tun, indem Sie das Startskript `./catalina.sh` ausführen, indem Sie diesen Befehl über das Terminal ausführen:
+1. Beginne zuerst TomCat. In den meisten Fällen können Sie dies tun, indem Sie die `./catalina.sh` Starten Sie das Startskript, indem Sie diesen Befehl über das Terminal ausführen:
 
    ```shell
    $CATALINA_HOME/bin/catalina.sh start
@@ -35,9 +28,9 @@ In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungsserver verwend
    https://<serveraddress:port>/cq/system/console/bundles
    ```
 
-1. Lösen Sie als Nächstes AEM 6.4 die Bereitstellung auf. Dies kann über den TomCat App Manager (`http://serveraddress:serverport/manager/html`) erfolgen.
+1. Lösen Sie als Nächstes AEM 6.4 die Bereitstellung auf. Dies kann über den TomCat App Manager (`http://serveraddress:serverport/manager/html`)
 
-1. Migrieren Sie das Repository nun mithilfe des crx2oak-Migrationstools. Laden Sie dazu die neueste Version von crx2oak von [diesem Speicherort](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak) herunter.
+1. Migrieren Sie das Repository nun mithilfe des crx2oak-Migrationstools. Laden Sie dazu die neueste Version von crx2oak herunter von [dieser Speicherort](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
 
    ```shell
    SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -XX:MaxPermSize=2048M -jar crx2oak.jar --load-profile segment-fds
@@ -45,7 +38,7 @@ In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungsserver verwend
 
 1. Löschen Sie die erforderlichen Eigenschaften in der Datei sling.properties folgendermaßen:
 
-   1. Öffnen Sie die Datei unter `crx-quickstart/launchpad/sling.properties` .
+   1. Öffnen Sie die Datei unter `crx-quickstart/launchpad/sling.properties`
    1. Entfernen Sie die folgenden Eigenschaften und speichern Sie die Datei:
 
       1. `sling.installer.dir`
@@ -72,7 +65,7 @@ In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungsserver verwend
 
    * Die Datei **BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
-   * Entfernen Sie **sling.options.file** durch Ausführen: `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`
+   * Entfernen **sling.options.file** durch Ausführen: `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`
 
 1. Erstellen Sie nun die Knotenspeicher und Datenspeicher, die mit AEM 6.5 verwendet werden. Sie können zu diesem Zweck zwei Dateien mit den folgenden Namen unter `crx-quickstart\install` erstellen:
 
@@ -83,11 +76,11 @@ In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungsserver verwend
 
 1. Bearbeiten Sie die Konfigurationsdateien, damit sie einsatzbereit sind. Gehen Sie dazu folgendermaßen vor:
 
-   * Fügen Sie `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` die folgende Zeile hinzu:
+   * Fügen Sie die folgende Zeile zu `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`:
 
       `customBlobStore=true`
 
-   * Fügen Sie dann `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config` die folgenden Zeilen hinzu:
+   * Fügen Sie dann die folgenden Zeilen zu `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`:
 
       ```
       path=./crx-quickstart/repository/datastore

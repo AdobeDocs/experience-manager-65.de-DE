@@ -2,10 +2,10 @@
 title: Versionshinweise für [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5-Hinweise mit Versionsinformationen, Neuigkeiten, Installationsanleitungen und detaillierten Änderungslisten."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 70280ec60e8bc4cc139a44c379adca7541856997
+source-git-commit: fe31483555cbecffe067f920b5ed6bbf82f1ae58
 workflow-type: tm+mt
-source-wordcount: '3329'
-ht-degree: 5%
+source-wordcount: '3330'
+ht-degree: 6%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 5%
 | Version | 6.5.12.0 |
 | Typ | Service Pack-Version |
 | Datum | 24. Februar 2022 |
-| Download-URL | [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.12.0.zip) |
+| Download-URL | [Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.12.0.zip) |
 
 ## Was ist enthalten in [!DNL Adobe Experience Manager] 6,5,12,0 {#what-is-included-in-aem}
 
@@ -26,7 +26,7 @@ ht-degree: 5%
 
 Die wichtigsten Funktionen und Verbesserungen, die in [!DNL Adobe Experience Manager] 6.5.12.0 sind:
 
-* Nach dem Konfigurieren einer Verbindung zwischen Remote-DAM- und Sites-Bereitstellungen werden die Assets auf Remote-DAM in der Sites-Bereitstellung verfügbar gemacht. Sie können jetzt Vorgänge zum Aktualisieren, Löschen, Umbenennen und Verschieben von Remote-DAM-Assets oder -Ordnern durchführen. Die Updates sind mit einiger Verzögerung automatisch in der Sites-Bereitstellung verfügbar (NPR-37816).
+* Nach dem Konfigurieren einer Verbindung zwischen Remote-DAM- und Sites-Bereitstellungen werden die Assets auf Remote-DAM in der Sites-Bereitstellung verfügbar gemacht. Sie können jetzt Remote-DAM-Assets oder -Ordner aktualisieren, löschen, umbenennen und verschieben. Die Updates sind mit einiger Verzögerung automatisch in der Sites-Bereitstellung verfügbar (NPR-37816).
 
 * Push-Rollouts von einer Live Copy-Quelle an mehrere Live Copies sind jetzt standardmäßig möglich, ohne dass eine Blueprint-Konfiguration erforderlich ist (CQ-4259951).
 * Der Status laufender asynchroner Vorgänge wird jetzt in der Benutzeroberfläche angezeigt, um zu verhindern, dass Benutzer versehentlich mehrere asynchrone Vorgänge auf demselben Pfad auslösen (NPR-37611).
@@ -284,7 +284,7 @@ Informationen zum Installieren des kumulativen Installationsprogramms für Exper
 
 ### UberJar {#uber-jar}
 
-Das UberJar für Experience Manager 6.5.12.0 ist im [Maven Central Repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.12/).
+Das UberJar für Experience Manager 6.5.12.0 ist im [Maven Central Repository](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.12/).
 
 Informationen zur Verwendung von UberJar in einem Maven-Projekt finden Sie unter [Verwendung von UberJar](/help/sites-developing/ht-projects-maven.md) und fügen Sie die folgende Abhängigkeit in Ihr Projekt-POM ein:
 

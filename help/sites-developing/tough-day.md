@@ -1,14 +1,12 @@
 ---
 title: Tough Day
-seo-title: Tough Day
 description: Der „Tough Day“-Test simuliert die tägliche Last von rund 1.000 Autoren in einem Worst-Case-Szenario, bei dem alle Vorgänge gleichzeitig ablaufen.
-seo-description: The Tough Day test simulates the daily load of around 1000 authors in a worst-case scenario with all the operations going on at the same time.
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 0b1f28963d9294c7aa9ae45c6b9fc9a9b8b4f6e6
+source-git-commit: ca6d41740dbb24dbba7cf7691c51435cc40d3ead
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '1849'
 ht-degree: 53%
 
 ---
@@ -143,7 +141,7 @@ Nachfolgend finden Sie alle relevanten Parameter:
 
 Die Anpassung erfolgt wahlweise über Befehlszeilenparameter oder YAML-Konfigurationsdateien. **Konfigurationsdateien werden in der Regel für umfangreiche angepasste Suites verwendet. Sie überschreiben die Standardparameter von Tough Day 2. Befehlszeilenparameter überschreiben sowohl Konfigurationsdateien als auch Standardparameter.**
 
-Die einzige Möglichkeit, eine Testkonfiguration zu speichern, besteht darin, sie in das YAML-Format zu kopieren. Weitere Informationen finden Sie in diesem [toughday.yaml](https://repo.adobe.com/nexus/service/local/repositories/releases/content/com/adobe/qe/toughday2/0.2.1/toughday2-0.2.1.yaml) Konfiguration und Beispiele für die YAML-Konfiguration in den folgenden Abschnitten.
+Die einzige Möglichkeit, eine Testkonfiguration zu speichern, besteht darin, sie in das YAML-Format zu kopieren.
 
 ### Hinzufügen eines neuen Tests {#adding-a-new-test}
 
@@ -347,22 +345,22 @@ Tough Day 2 gibt Testmetriken und -protokolle aus. Weitere Informationen finden
 
 ### Testmetriken {#test-metrics}
 
-Tough Day 2 meldet derzeit neun Testmetriken, die Sie auswerten können. Metriken mit der ***** -Symbol wird erst nach erfolgreichen Ausführungen gemeldet:
+Tough Day 2 meldet derzeit neun Testmetriken, die Sie auswerten können. Metriken mit der **&#42;** -Symbol wird erst nach erfolgreichen Ausführungen gemeldet:
 
 | **Name** | **Beschreibung** |
 |---|---|
 | Timestamp | Zeitstempel des letzten abgeschlossenen Testlaufs. |
 | Bestanden | Anzahl erfolgreicher Ausführungen. |
 | Fehlgeschlagen | Anzahl fehlgeschlagener Ausführungen. |
-| Min* | Niedrigste Dauer der Testausführung. |
-| Maximal* | Höchste Dauer der Testausführung. |
-| Median* | Berechnete mittlere Dauer aller Testausführungen. |
-| Durchschnitt* | Berechnete durchschnittliche Dauer aller Testausführungen. |
-| StdDev* | Die Standardabweichung. |
-| 90p* | 90. Perzentil. |
-| 99p* | 99. Perzentil. |
-| 99.9p* | 99,9 Perzentil. |
-| Tatsächlicher Durchsatz* | Anzahl der Ausführungen dividiert durch die verstrichene Ausführungszeit. |
+| Min&#42; | Niedrigste Dauer der Testausführung. |
+| Maximal&#42; | Höchste Dauer der Testausführung. |
+| Median&#42; | Berechnete mittlere Dauer aller Testausführungen. |
+| Durchschnitt&#42; | Berechnete durchschnittliche Dauer aller Testausführungen. |
+| StdDev&#42; | Die Standardabweichung. |
+| 90p&#42; | 90. Perzentil. |
+| 99 p&#42; | 99. Perzentil. |
+| 99,9 p&#42; | 99,9 Perzentil. |
+| Real Throughput&#42; | Anzahl der Ausführungen dividiert durch die verstrichene Ausführungszeit. |
 
 Diese Metriken werden mithilfe von Herausgebern geschrieben, die mit dem `add` -Parameter (ähnlich wie beim Hinzufügen von Tests). Aktuell gibt es zwei Optionen:
 
