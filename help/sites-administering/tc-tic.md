@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
 feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
-source-git-commit: cadf2e240327ef52ef57f8fb2e911f36fd003852
+source-git-commit: e5bdf1218d3b747e2317481a67ae74e7855cda0b
 workflow-type: tm+mt
-source-wordcount: '1550'
+source-wordcount: '1552'
 ht-degree: 78%
 
 ---
@@ -40,8 +40,8 @@ Die folgenden Übersetzungsdienstleister bieten eine Implementierung der neuen A
 * [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
 * [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
+* [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html)
 * [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
-* [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
 * [Altlang](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
 * Microsoft (Microsoft Translator ist in AEM vorinstalliert)
@@ -53,7 +53,6 @@ Die folgenden Übersetzungsdienstleister bieten eine Implementierung der neuen A
 >
 >* [AEM – Übersetzung durch Menschen](https://www.adobe.com/go/aem-human-translation-connectors)
 >* [AEM – maschinelle Übersetzung](https://www.adobe.com/go/aem-machine-translation-connectors)
-
 >
 
 
@@ -137,7 +136,7 @@ Die Communities-Eigenschaften steuern, wie die Übersetzung von benutzergenerier
 |---|---|
 | Übersetzungsanbieter | Wählen Sie den Übersetzungsanbieter aus, um die Übersetzung durchzuführen. Die Anbieter, für die Cloudkonfigurationen erstellt wurden, werden in der Liste angezeigt. |
 | Inhaltskategorie | Eine Kategorie, die den zu übersetzenden Inhalt beschreibt. Die Kategorie kann beeinflussen, welche Terminologie und welche Formulierungen bei der Übersetzung von Inhalten verwendet werden. |
-| Auswählen eines Gebietsschemas zur Verwendung als globaler Freigabespeicher | (Optional) Wenn Sie ein Gebietsschema zum Speichern von benutzergenerierten Inhalten auswählen, werden Beiträge aus allen Sprachkopien in einer globalen Konversation angezeigt. Standardmäßig wählen Sie das Gebietsschema für die [Basissprache](/help/communities/sites-console.md#translation) der Website. Wenn Sie Kein gemeinsamer Speicher auswählen, wird die globale Übersetzung deaktiviert. Standardmäßig ist die globale Übersetzung deaktiviert. |
+| Auswählen eines Gebietsschemas zur Verwendung als globaler Freigabespeicher | (Optional) Wenn Sie ein Gebietsschema zum Speichern von benutzergenerierten Inhalten auswählen, werden Beiträge aus allen Sprachkopien in einer globalen Konversation angezeigt. Standardmäßig wählen Sie das Gebietsschema für die [Basissprache](/help/communities/sites-console.md#translation) für die Website. Wenn Sie Kein gemeinsamer Speicher auswählen, wird die globale Übersetzung deaktiviert. Standardmäßig ist die globale Übersetzung deaktiviert. |
 
 ### Assets-Konfigurationseigenschaften {#assets-configuration-properties}
 
@@ -207,7 +206,7 @@ Wenn Sie eine Seite mit einer Cloud-Konfiguration verknüpfen, erben die unterge
 
 Bei Bedarf können Sie die Verknüpfung auf einer untergeordneten Seite überschreiben. Beispiel: Die Inhalte einer Website drehen sich größtenteils um das Thema Bekleidung. Ein Zweig an Seiten beschreibt dagegen das Unternehmen. Die Stammseite der Website ist mit einem Framework für die Übersetzungsintegration verknüpft, das vorgibt, dass maschinelle Übersetzung mit der Kategorie „Bekleidung“ angewendet werden soll. Der Zweig, der das Unternehmen beschreibt, nutzt dagegen ein Framework, bei dem maschinelle Übersetzung mit der Kategorie „Allgemein“ angewendet wird.
 
-Darüber hinaus bietet der benutzergenerierte Inhalt (UGC) für alle Communities [SCF-Komponenten](/help/communities/scf.md) auf den Seiten die Möglichkeit, dass Benutzer Inhalte übersetzen können. Weitere Informationen finden Sie unter [Übersetzung benutzergenerierter Inhalte](/help/communities/translate-ugc.md).
+Für alle Gemeinden [SCF-Komponenten](/help/communities/scf.md) Auf den Seiten bietet der benutzergenerierte Inhalt (UGC) Benutzern die Möglichkeit, Inhalte zu übersetzen. Weitere Informationen finden Sie unter [Übersetzung benutzergenerierter Inhalte](/help/communities/translate-ugc.md).
 
 ### Verknüpfen einer Seite mit einem Übersetzungsdienstleister {#associating-a-page-with-a-translation-provider}
 
