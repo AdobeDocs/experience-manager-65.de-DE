@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: e3743b7ecbd8266abfaee36dcee94bcd2b260cac
+source-git-commit: fcbfd8b378282d908b68c61ab235e9b80fd6644c
 workflow-type: tm+mt
-source-wordcount: '1741'
-ht-degree: 59%
+source-wordcount: '1751'
+ht-degree: 63%
 
 ---
 
@@ -22,7 +22,7 @@ Die Legende gibt den Grad der Unterstützung an.
 | Unterstützungsebene | Beschreibung |
 | :-----------: | ------------------------------ |
 | ✓ | Unterstützt |
-| * | Mit Funktionen von Zusatzmodulen unterstützt |
+| &#42; | Mit Funktionen von Zusatzmodulen unterstützt |
 | − | Nicht zutreffend |
 
 ## Unterstützte Rasterbildformate in [!DNL Experience Manager] {#supported-raster-image-formats}
@@ -31,19 +31,19 @@ Die unterstützten Rasterbildformate in [!DNL Assets] sind:
 
 | Format | Speicherung | Metadatenverwaltung | Metadatenextraktion | Generierung von Miniaturen | Bearbeiten | Metadaten-Writeback | Insights |
 | ------------ | :------: | :-----------------: | :-----------------: | :------------------: | :------: | :----------------: | :------: |
-| PNG | verwalten | verwalten | verwalten | verwalten | verwalten | verwalten | verwalten |
-| GIF | verwalten | verwalten | verwalten | verwalten | verwalten | - | verwalten |
-| TIFF | verwalten | verwalten | verwalten | verwalten | - | verwalten | verwalten |
-| JPEG | verwalten | verwalten | verwalten | verwalten | verwalten | verwalten | verwalten |
-| BMP | verwalten | verwalten | verwalten | verwalten | verwalten | - | verwalten |
-| PNM | verwalten | verwalten | - | - | - | - | verwalten |
-| PGM | verwalten | verwalten | - | - | - | - | verwalten |
-| PBM | verwalten | verwalten | - | - | - | - | verwalten |
-| PPM | verwalten | verwalten | - | - | - | - | verwalten |
-| PSD ‡ | verwalten | verwalten | verwalten | verwalten | - | - | verwalten |
-| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | verwalten | verwalten | verwalten | verwalten | - | verwalten | - |
-| PICT | - | - | - | - | - | - | verwalten |
-| PSB | verwalten | verwalten | verwalten | verwalten | - | - | - |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| TIFF | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| BMP | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| PNM | ✓ | ✓ | - | - | - | - | ✓ |
+| PGM | ✓ | ✓ | - | - | - | - | ✓ |
+| PBM | ✓ | ✓ | - | - | - | - | ✓ |
+| PPM | ✓ | ✓ | - | - | - | - | ✓ |
+| PSD ‡ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
+| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | - | ✓ | - |
+| PICT | - | - | - | - | - | - | ✓ |
+| PSB | ✓ | ✓ | ✓ | ✓ | - | - | - |
 
 ‡ Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
 
@@ -63,12 +63,12 @@ Siehe [Arbeiten mit 3D-Assets in Dynamic Media](/help/assets/assets-3d.md).
 
 | Format | Speicherung | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Miniatur, Vorschau | 3D-Vorschau | Bereitstellung von Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | verwalten | verwalten | verwalten |  | verwalten | verwalten | - | - |
-| gLB | verwalten | verwalten | verwalten | verwalten | verwalten | - | verwalten | verwalten |
-| gLTF | verwalten | verwalten | verwalten |  | verwalten | - | verwalten | - |
-| OBJ | verwalten | verwalten | verwalten | verwalten | verwalten | - | verwalten | verwalten |
-| STL | verwalten | verwalten | verwalten | verwalten | verwalten | - | verwalten | verwalten |
-| USDz | verwalten | verwalten | verwalten | verwalten | verwalten | - | - | verwalten |
+| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ | - | - |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| gLTF | ✓ | ✓ | ✓ |  | ✓ | - | ✓ | - |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
 
 ## Unterstützte PDF Rasterizer-Bibliothek {#supported-pdf-rasterizer-library}
 
@@ -98,47 +98,47 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt:
 
 | Format | Speicherung | [Metadatenverwaltung](metadata.md) | Volltext<br> Extraktion | [Metadatenextraktion](metadata.md) | Miniatur<br> generation | [Subasset-Extraktion](managing-linked-subassets.md) | [Metadaten-Writeback](xmp-writeback.md) | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|---|---|---|---|---|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | verwalten | verwalten | - | verwalten | verwalten | verwalten | verwalten | - |
-| DOC | verwalten | verwalten | verwalten | verwalten | - | - | - | verwalten |
-| DOCX | verwalten | verwalten | verwalten | verwalten | - | - | - | verwalten |
-| ODT | verwalten | verwalten | verwalten | - | - | - | - | verwalten |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | verwalten | verwalten | verwalten | verwalten | verwalten | verwalten | verwalten | verwalten |
-| HTML | verwalten | verwalten | verwalten | - | - | - | - | verwalten |
-| RTF | verwalten | verwalten | verwalten | - | - | - | - | verwalten |
-| TXT | verwalten | verwalten | verwalten | - | - | - | - | verwalten |
-| XLS | verwalten | verwalten | verwalten | - | - | - | - | verwalten |
-| XLSX | verwalten | verwalten | verwalten | verwalten | - | - | - | verwalten |
-| ODS | verwalten | verwalten | verwalten | - | - | - | - | - |
-| PPT | verwalten | verwalten | verwalten | verwalten | verwalten | verwalten | - | verwalten |
-| PPTX | verwalten | verwalten | verwalten | verwalten | verwalten | verwalten | - | verwalten |
-| ODP | verwalten | verwalten | verwalten | - | - | - | - | - |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | verwalten | verwalten | - | verwalten | verwalten | verwalten | verwalten | - |
-| PS | verwalten | verwalten | - | - | - | - | - | - |
-| QXP | verwalten | verwalten | - | - | - | - | - | - |
-| EPUB | verwalten | verwalten | - | verwalten | verwalten | - | - | - |
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ | - |
+| DOC | ✓ | ✓ | ✓ | ✓ | - | - | - | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ | - | - | - | ✓ |
+| ODT | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| HTML | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
+| RTF | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
+| TXT | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
+| XLS | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ | - | - | - | ✓ |
+| ODS | ✓ | ✓ | ✓ | - | - | - | - | - |
+| PPT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| ODP | ✓ | ✓ | ✓ | - | - | - | - | - |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ | - |
+| PS | ✓ | ✓ | - | - | - | - | - | - |
+| QXP | ✓ | ✓ | - | - | - | - | - | - |
+| EPUB | ✓ | ✓ | - | ✓ | ✓ | - | - | - |
 
 ## Unterstützte Multimediaformate {#supported-multimedia-formats}
 
 |  | Speicher | Metadatenverwaltung | Metadatenextraktion | Generierung von Miniaturen | FFmpeg-Transkodierung |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | verwalten | verwalten | - | - | * |
-| MIDI | verwalten | verwalten | - | - | * |
-| 3GP | verwalten | verwalten | - | - | * |
-| MP3 | verwalten | verwalten | verwalten | - | * |
-| MPG | verwalten | verwalten | - | - | * |
-| OGA | verwalten | verwalten | - | - | * |
-| OGG | verwalten | verwalten | - | - | * |
-| RA | verwalten | verwalten | - | - | * |
-| WAV | verwalten | verwalten | - | - | * |
-| WMA | verwalten | verwalten | - | - | * |
-| DVI | verwalten | verwalten | - | * | * |
-| FLV | verwalten | verwalten | - | * | * |
-| M4V | verwalten | verwalten | - | * | * |
-| MPEG | verwalten | verwalten | - | * | * |
-| OGV | verwalten | verwalten | - | * | * |
-| MOV | verwalten | verwalten | - | * | * |
-| WMV | verwalten | verwalten | - | * | * |
-| SWF | verwalten | verwalten | - | - | - |
+| AAC | ✓ | ✓ | - | - | &#42; |
+| MIDI | ✓ | ✓ | - | - | &#42; |
+| 3GP | ✓ | ✓ | - | - | &#42; |
+| MP3 | ✓ | ✓ | ✓ | - | &#42; |
+| MPG | ✓ | ✓ | - | - | &#42; |
+| OGA | ✓ | ✓ | - | - | &#42; |
+| OGG | ✓ | ✓ | - | - | &#42; |
+| RA | ✓ | ✓ | - | - | &#42; |
+| WAV | ✓ | ✓ | - | - | &#42; |
+| WMA | ✓ | ✓ | - | - | &#42; |
+| DVI | ✓ | ✓ | - | &#42; | &#42; |
+| FLV | ✓ | ✓ | - | &#42; | &#42; |
+| M4V | ✓ | ✓ | - | &#42; | &#42; |
+| MPEG | ✓ | ✓ | - | &#42; | &#42; |
+| OGV | ✓ | ✓ | - | &#42; | &#42; |
+| MOV | ✓ | ✓ | - | &#42; | &#42; |
+| WMV | ✓ | ✓ | - | &#42; | &#42; |
+| SWF | ✓ | ✓ | - | - | - |
 
 ## Unterstützte Archivformate {#supported-archive-formats}
 
@@ -146,11 +146,11 @@ Die unterstützten Archivformate und die Anwendbarkeit gemeinsamer DAM-Workflows
 
 | Formate | Speicherung | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Bereitstellung dynamischer Medien |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| TGZ | verwalten | verwalten | verwalten | verwalten | verwalten | - |
-| JAR | verwalten | verwalten | verwalten | verwalten | verwalten | - |
-| RAR | verwalten | verwalten | verwalten | verwalten | verwalten | - |
-| TAR | verwalten | verwalten | verwalten | verwalten | verwalten | - |
-| ZIP | verwalten | verwalten | verwalten | verwalten | verwalten | verwalten |
+| TGZ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| JAR | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| RAR | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| TAR | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| ZIP | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 ## Weitere unterstützte Formate {#other-supported-formats}
 
@@ -158,11 +158,11 @@ Die Anwendbarkeit der gängigen DAM-Funktionen für einige spezifische Dateiform
 
 | Formate | Speicherung | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Bereitstellung dynamischer Medien |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| SVG | verwalten | verwalten | verwalten | verwalten | verwalten | - |
-| CSS | verwalten | verwalten | verwalten | verwalten | verwalten | verwalten |
-| VTT | verwalten | verwalten | verwalten | verwalten | verwalten | verwalten |
-| XML | verwalten | verwalten | verwalten | verwalten | verwalten | verwalten |
-| Javascript (wenn mit eigener Bereitstellungsdomäne konfiguriert) | - | - | - | - | - | verwalten |
+| SVG | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Javascript (wenn mit eigener Bereitstellungsdomäne konfiguriert) | - | - | - | - | - | ✓ |
 
 >[!NOTE]
 >
@@ -232,7 +232,7 @@ Eine Liste der unterstützten MIME-Typen finden Sie in CRXDE Lite unter `/conf/g
 | XLS | application/vnd.ms-excel |  |  |
 | ZIP | application/zip |  |  |
 
-## Dynamic Media - Unterstützte Eingabevideoformate für die Transkodierung {#supported-input-video-formats-for-dynamic-media-transcoding}
+## Dynamic Media – Unterstützte Eingabevideoformate für die Transkodierung {#supported-input-video-formats-for-dynamic-media-transcoding}
 
 | Videodateierweiterung | Container | Empfohlene Video-Codecs | Nicht unterstützte Video-Codecs |
 |---|---|---|---|
@@ -248,15 +248,19 @@ Eine Liste der unterstützten MIME-Typen finden Sie in CRXDE Lite unter `/conf/g
 | WebM | WebM | Google VP8 | - |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Foto Story (WVP2) |
 
-‡ Dieses Videoformat wird noch nicht zur Verwendung mit interaktiven Videos in Dynamic Media oder zur Verwendung mit Anmerkungen in Experience Manager Assets unterstützt.
+‡ Dieses Videoformat kann nicht mit interaktiven Videos in Dynamic Media oder mit Anmerkungen in Experience Manager Assets verwendet werden, da es hierfür noch nicht unterstützt wird.
 
-## Dynamic Media - Unterstützte Dokumentformate {#supported-document-formats-dynamic-media}
+## Dynamic Media – Unterstützte Dokumentformate {#supported-document-formats-dynamic-media}
 
 | Format | Hochladen<br> (Eingabeformat) | Erstellen<br> image<br> preset<br> (Ausgabeformat) | Vorschau<br> dynamisch<br> Ausgabedarstellung | Versand<br> dynamisch<br> Ausgabedarstellung | Download<br> dynamisch<br> Ausgabedarstellung |
 |---|:---:|:---:|:---:|:---:|:---:|
-| [KI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | verwalten | - | - | - | - |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | verwalten | - | - | - | - |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | verwalten | verwalten | verwalten | verwalten | verwalten |
+| [KI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | - | - | - | - |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | - | - | - | - |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) (Siehe Hinweis unten) | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+>[!NOTE]
+>
+>Bei sicheren PDF wird nur das Hochladen unterstützt.
 
 Berücksichtigen Sie zusätzlich zu den oben genannten Funktionen Folgendes:
 
@@ -266,18 +270,18 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Funktionen Folgendes:
 
 * Informationen zum Generieren dynamischer Ausgabeformate für INDD-Dateien mit Dynamic Media finden Sie unter [Dateiformat InDesign (INDD)](../assets/managing-image-presets.md#indesign-indd-file-format).
 
-## Dynamic Media - Unterstützte Rasterbildformate {#supported-raster-image-formats-dynamic-media}
+## Dynamic Media – Unterstützte Rasterbildformate {#supported-raster-image-formats-dynamic-media}
 
 | Format | Hochladen<br> (Eingabeformat) | Erstellen<br> image<br> preset<br> (Ausgabeformat) | Vorschau<br> dynamisch<br> Ausgabedarstellung | Versand<br> dynamisch<br> Ausgabedarstellung | Download<br> dynamisch<br> Ausgabedarstellung | Festlegen von Typen, die dieses Format unterstützen |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
-| PNG | verwalten | verwalten | verwalten | verwalten | verwalten | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md)und [Rotation](/help/assets/spin-sets.md) |
-| GIF | verwalten | verwalten | verwalten | verwalten | verwalten | - |
-| TIFF | verwalten | verwalten | verwalten | verwalten | verwalten | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md)und [Rotation](/help/assets/spin-sets.md) |
-| JPEG | verwalten | verwalten | verwalten | verwalten | verwalten | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md)und [Rotation](/help/assets/spin-sets.md) |
-| BMP | verwalten | - | - | - | - | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md)und [Rotation](/help/assets/spin-sets.md) |
-| PSD ‡ | verwalten | - | - | - | - | - |
-| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | verwalten | verwalten | verwalten | verwalten | verwalten | - |
-| PICT | verwalten | - | - | - | - | - |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md) und [Drehung](/help/assets/spin-sets.md) |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md) und [Drehung](/help/assets/spin-sets.md) |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md) und [Drehung](/help/assets/spin-sets.md) |
+| BMP | ✓ | - | - | - | - | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md) und [Drehung](/help/assets/spin-sets.md) |
+| PSD ‡ | ✓ | - | - | - | - | - |
+| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| PICT | ✓ | - | - | - | - | - |
 
 ‡ Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
 
@@ -287,7 +291,7 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Funktionen Folgendes:
 
 * Metadaten-Writeback für EPS-Dateien wird ab Version 3.0 von PostScript Document Structuring Convention (PS-Adobe) unterstützt.
 
-## Dynamic Media - Nicht unterstützte Rasterbildformate {#unsupported-image-formats-dynamic-media}
+## Dynamic Media – Nicht unterstützte Rasterbildformate {#unsupported-image-formats-dynamic-media}
 
 In der folgenden Liste werden die Untertypen von Rasterbilddateiformaten beschrieben, die *not* unterstützt in Dynamic Media.
 
