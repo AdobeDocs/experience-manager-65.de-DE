@@ -10,10 +10,10 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: f2cfe62c561e772a10ede4f76314a5904d6d64ff
+source-git-commit: 5c29ac6b87b818e168a746827624b65c6ba3b2f7
 workflow-type: tm+mt
-source-wordcount: '6048'
-ht-degree: 44%
+source-wordcount: '6049'
+ht-degree: 45%
 
 ---
 
@@ -134,7 +134,7 @@ Um einen ausgewählten Ordner für die Synchronisierung mit Dynamic Media zu mar
    Wenn ein Asset aktiviert wurde, werden alle Aktualisierungen automatisch live in der S7-Bereitstellung übernommen.
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
-1. Standardmäßig kann der Experience Manager-Autor keine Vorschau von Dynamic Media-Inhalten anzeigen. Um Dynamic Media-Inhalte vor der Veröffentlichung sicher in der Vorschau anzuzeigen, müssen Sie *Zulassungsliste* die Experience Manager-Autoreninstanz, die eine Verbindung zu Dynamic Media herstellen soll. Wenn Sie Benutzern außerdem Zugriff auf eine sichere Vorschau von Inhalten gewähren möchten, können Sie *Zulassungsliste* zusätzliche IP-Adressen.
+1. Standardmäßig kann der Experience Manager-Autor keine Vorschau von Dynamic Media-Inhalten anzeigen. Daher müssen Sie die Experience Manager-Autoreninstanz zur sicheren Vorschau von Dynamic Media-Inhalten vor der Veröffentlichung für eine Zulassungsliste der-Autoreninstanz mit Dynamic Media verknüpfen. Wenn Sie Benutzern außerdem Zugriff auf eine sichere Vorschau von Inhalten gewähren möchten, können Sie in Zulassungsliste zusätzliche IP-Adressen hinzufügen. <!-- CQDOC-19254 UNHIDE ON MAY 26, 2022 To securely preview Dynamic Media content before it gets published, Experience Manager Author uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can allowlist more IPs to provide users access to securely preview content. -->
 Informationen zum Einrichten dieser Aktion in Experience Manager finden Sie unter [Dynamic Media-Veröffentlichungseinstellungen für Image-Server konfigurieren - Registerkarte &quot;Sicherheit&quot;](/help/assets/dm-publish-settings.md#security-tab).
 
 <!-- 1. To securely preview Dynamic Media content before it gets published, Experience Manager uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).     * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
@@ -251,24 +251,24 @@ Sie können einen Wert von bis zu 15 GB (`2013265920` Byte). In diesem Fall werd
 
 <!-- When you are in run mode `dynamicmedia_scene7`, use the Dynamic Media Classic user interface to change your Dynamic Media settings. -->
 
-* [Konfigurieren der Dynamic Media-Veröffentlichungseinstellungen für Image-Server](/help/assets/dm-publish-settings.md)
-* [Allgemeine Dynamic Media-Einstellungen konfigurieren](/help/assets/dm-general-settings.md)
+* [Konfigurieren der Dynamic Media-Veröffentlichungseinstellungen für Imageserver](/help/assets/dm-publish-settings.md)
+* [Konfigurieren allgemeiner Einstellungen für Dynamic Media](/help/assets/dm-general-settings.md)
 * [Konfigurieren des Farb-Managements](#configuring-color-management)
 * [Bearbeiten von MIME-Typen für unterstützte Formate](#editing-mime-types-for-supported-formats)
 * [Hinzufügen von MIME-Typen für nicht unterstützte Formate](#adding-mime-types-for-unsupported-formats)
 * [Erstellen von Stapelsatzvorgaben zum automatischen Erzeugen von Bild- und Rotationssets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) (getan in der Dynamic Media Classic-Benutzeroberfläche)
 
-#### Konfigurieren der Dynamic Media-Veröffentlichungseinstellungen für Image-Server {#publishing-setup-for-image-server}
+#### Konfigurieren der Dynamic Media-Veröffentlichungseinstellungen für Imageserver {#publishing-setup-for-image-server}
 
-Auf der Seite &quot;Veröffentlichungseinstellungen von Dynamic Media&quot;werden Standardeinstellungen festgelegt, die festlegen, wie Assets von Adobe Dynamic Media-Servern an Websites oder Anwendungen bereitgestellt werden.
+Auf der Seite „Veröffentlichungseinstellungen von Dynamic Media“ werden Standardeinstellungen festgelegt, die festlegen, wie Assets von Adobe Dynamic Media-Servern für Websites oder Programme bereitgestellt werden.
 
-Siehe [Konfigurieren der Dynamic Media-Veröffentlichungseinstellungen für Image-Server](/help/assets/dm-publish-settings.md).
+Siehe [Konfigurieren der Dynamic Media-Veröffentlichungseinstellungen für Imageserver](/help/assets/dm-publish-settings.md).
 
-#### Allgemeine Dynamic Media-Einstellungen konfigurieren {#configuring-application-general-settings}
+#### Konfigurieren allgemeiner Einstellungen für Dynamic Media {#configuring-application-general-settings}
 
-Konfigurieren der Dynamic Media **[!UICONTROL Veröffentlichungsservername]** URL und **[!UICONTROL Name des ursprünglichen Servers]** URL. Sie können auch **[!UICONTROL In Anwendung hochladen]** Einstellungen und **[!UICONTROL Standardmäßige Upload-Optionen]** alle basierend auf Ihrem jeweiligen Anwendungsfall.
+Konfigurieren der URL **[!UICONTROL Veröffentlichungsservername]** und der URL **[!UICONTROL Name des ursprünglichen Servers]** für Dynamic Media. Sie können auch Einstellungen unter **[!UICONTROL In Programm hochladen]** und **[!UICONTROL Standardmäßige Upload-Optionen]** basierend auf Ihrem jeweiligen Anwendungsfall angeben.
 
-Siehe [Allgemeine Dynamic Media-Einstellungen konfigurieren](/help/assets/dm-general-settings.md).
+Siehe [Konfigurieren allgemeiner Dynamic Media-Einstellungen](/help/assets/dm-general-settings.md).
 
 #### Konfigurieren des Farb-Managements {#configuring-color-management}
 
@@ -304,7 +304,7 @@ Informationen hierzu finden Sie unter [Hochladen von Assets](/help/assets/manage
 
    * Doppelklicken Sie auf das Feld **[!UICONTROL Aktiviert]**. Standardmäßig sind alle Asset-MIME-Typen aktiviert (auf **[!UICONTROL true]**), was bedeutet, dass die Assets zur Verarbeitung mit Dynamic Media synchronisiert werden. Wenn Sie diesen Asset-MIME-Typ von der Verarbeitung ausschließen möchten, ändern Sie diese Einstellung in **[!UICONTROL false]**.
 
-   * Doppeltippen Sie auf **[!UICONTROL jobParam]**, um das zugehörige Textfeld zu öffnen. Unter [Unterstützte MIME-Typen](/help/assets/assets-formats.md#supported-mime-types) finden Sie eine Liste mit zulässigen Werten für Verarbeitungsparameter, die Sie für einen bestimmten MIME-Typ verwenden können.
+   * Doppeltippen Sie auf **[!UICONTROL jobParam]**, um das zugehörige Textfeld zu öffnen. Siehe [Unterstützte MIME-Typen](/help/assets/assets-formats.md#supported-mime-types) für eine Liste der zulässigen Verarbeitungsparameter, die Sie für einen bestimmten MIME-Typ verwenden können.
 
 1. Führen Sie einen der folgenden Schritte aus:
 
@@ -395,7 +395,7 @@ Zwei Elemente sind zur Definition verfügbar: Übereinstimmung und Basisname. Mi
    Sie können das Kontrollkästchen **[!UICONTROL Code anzeigen]** aktivieren, um die Erstellung des regelmäßigen Ausdruckswerts neben Ihren Formularauswahlen anzuzeigen. Sie können diese Werte nach Bedarf eingeben oder ändern. Dies hilft Ihnen bei der Definition der Elemente der Benennungsdefinition, falls Sie aus irgendeinem Grund durch die Formularansicht eingeschränkt werden. Falls Ihre Werte in der Formularansicht nicht analysiert werden können, werden die Formularfelder inaktiv.
 
    >[!NOTE]
-   Bei deaktivierten Formularfeldern erfolgt keine Überprüfung, ob Ihre regelmäßigen Ausdrücke korrekt sind. Ergebnisse des regelmäßigen Ausdrucks, den Sie für jedes Element erstellen, werden nach der Zeile „Ergebnis“ angezeigt. Der vollständige regelmäßige Ausdruck wird am unteren Seitenrand angezeigt.
+   Bei deaktivierten Formularfeldern erfolgt keine Überprüfung, ob Ihre regelmäßigen Ausdrücke korrekt sind. Sie sehen die Ergebnisse des regulären Ausdrucks, den Sie für jedes Element nach der Zeile &quot;Ergebnis&quot;erstellen. Der vollständige regelmäßige Ausdruck wird am unteren Seitenrand angezeigt.
 
 1. Erweitern Sie die Elemente bei Bedarf und geben Sie die zu verwendenden Benennungsregeln ein.
 1. Führen Sie ggf. einen der folgenden Schritte aus:
@@ -410,11 +410,9 @@ Zwei Elemente sind zur Definition verfügbar: Übereinstimmung und Basisname. Mi
 
 ##### Erstellen einer Stapelsatzvorgabe
 
-
-
 Dynamic Media verwendet Stapelsatzvorgaben, um Assets für die Anzeige in Viewern in Bildsätzen (alternative Bilder, Farboptionen, 360°-Drehung) zu organisieren. Die Stapelsatzvorgaben werden automatisch parallel zu den Asset-Uploadprozessen in Dynamic Media ausgeführt.
 
-Sie können Ihre Stapelsatzvorgaben erstellen, bearbeiten und verwalten. Es gibt zwei Formen von Definitionen für Stapelsatzvorgaben: eine für eine standardmäßige Namenskonvention, die Sie einrichten können, und eine für benutzerdefinierte Namenskonventionen, die Sie spontan erstellen.
+Sie können Ihre Stapelsatzvorgaben erstellen, bearbeiten und verwalten. Es gibt zwei Formen von Definitionen für Stapelsatzvorgaben: eine für eine standardmäßige Namenskonvention, die Sie einrichten können, und eine für benutzerspezifische Namenskonventionen, die Sie spontan erstellen.
 
 Sie können zum Definieren einer Stapelsatzvorgabe entweder die Formularfeldmethode oder die Codemethode verwenden, die Ihnen die Verwendung regelmäßiger Ausdrücke ermöglicht. Ebenso wie bei der Standardbenennung können Sie gleichzeitig „Code anzeigen“ wählen und Definitionen in der Formularansicht vornehmen und mithilfe von regelmäßigen Ausdrücken Ihre Definitionen erstellen Als Alternative können Sie eine der Ansichten deaktivieren, um die andere ausschließlich zu verwenden.
 
