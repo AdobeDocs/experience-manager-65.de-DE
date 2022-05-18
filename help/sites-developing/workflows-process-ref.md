@@ -1,8 +1,8 @@
 ---
 title: Prozessreferenz für Workflows
-seo-title: Prozessreferenz für Workflows
+seo-title: Workflow Process Reference
 description: Prozessreferenz für Workflows
-seo-description: 'null'
+seo-description: null
 uuid: de367aa8-4580-4810-b665-2a7b521e36ca
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: dbdf981f-791b-4ff7-8ca8-039d0bdc9c92
 exl-id: a9de8ec6-6948-4643-89c3-62d9b1f6293a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: cf3b739fd774bc860d9906b9884d22fd532fd5dd
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 84%
+source-wordcount: '1075'
+ht-degree: 83%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 84%
 
 AEM bietet verschiedene Prozessschritte für die Erstellung von Workflow-Modellen. Darüber hinaus können auch benutzerdefinierte Prozessschritte für Aufgaben hinzugefügt werden, die nicht von den integrierten Schritten abgedeckt werden (vergleiche [Erstellen von Workflow-Modellen](/help/sites-developing/workflows-models.md)).
 
-## Prozessmerkmale  {#process-characteristics}
+## Prozessmerkmale {#process-characteristics}
 
 Die folgenden Merkmale werden für jeden Prozessschritt beschrieben.
 
-### Java-Klasse oder ECMA-Pfad  {#java-class-or-ecma-path}
+### Java-Klasse oder ECMA-Pfad {#java-class-or-ecma-path}
 
 Prozessschritte werden entweder durch eine Java-Klasse oder ein ECMAScript definiert.
 
@@ -59,7 +59,7 @@ Nach einer gewissen Zeitüberschreitung funktioniert der Workflow-Schritt nicht 
 
 ### Berechtigungen {#permissions}
 
-Die an `WorkflowProcess` übergebene Sitzung wird vom Dienstbenutzer für den Workflow-Prozessdienst unterstützt, der über die folgenden Berechtigungen im Stammverzeichnis des Repositorys verfügt:
+Die Sitzung wurde an die `WorkflowProcess` wird vom Dienstbenutzer für den Workflow-Prozessdienst unterstützt, der über die folgenden Berechtigungen im Stammverzeichnis des Repositorys verfügt:
 
 * `jcr:read`
 * `rep:write`
@@ -67,7 +67,7 @@ Die an `WorkflowProcess` übergebene Sitzung wird vom Dienstbenutzer für den Wo
 * `jcr:lockManagement`
 * `crx:replicate`
 
-Wenn dieser Berechtigungssatz nicht für Ihre `WorkflowProcess`-Implementierung ausreicht, muss eine Sitzung mit den erforderlichen Berechtigungen verwendet werden.
+Wenn dieser Berechtigungssatz für Ihre `WorkflowProcess` implementieren, muss eine Sitzung mit den erforderlichen Berechtigungen verwendet werden.
 
 Hierfür wird empfohlen, einen Dienstbenutzer mit einer minimalen Untergruppe der erforderlichen Berechtigungen zu verwenden.
 
@@ -81,13 +81,11 @@ Hierfür wird empfohlen, einen Dienstbenutzer mit einer minimalen Untergruppe de
 >
 >Eine kurzfristige Lösung ist auch für Abwärtskompatibilitätszwecke verfügbar, wenn Codeänderungen nicht möglich sind:
 >
->* Suchen Sie mithilfe der Web-Konsole ( `/system/console/configMgr`) den **Adobe Granite Workflow Configuration Service** .
-   >
-   >
-* Aktivieren Sie den **Legacymodus des Workflow-Prozesses**.
+>* Verwenden der Web-Konsole ( `/system/console/configMgr` suchen Sie die **Adobe Granite-Workflow-Konfigurationsdienst**
 >
+>* Aktivieren Sie den **Legacymodus des Workflow-Prozesses**.
 >
-Dadurch wird das bisherige Verhalten wieder aktiviert, nach dem eine Adminsitzung an die `WorkflowProcess`-Implementierung übergeben und uneingeschränkter Zugriff auf das gesamte Repository eingeräumt wird.
+>Dadurch wird das bisherige Verhalten wieder aktiviert, nach dem eine Adminsitzung an die `WorkflowProcess`-Implementierung übergeben und uneingeschränkter Zugriff auf das gesamte Repository eingeräumt wird.
 
 ## Workflow-Steuerungsprozesse {#workflow-control-processes}
 
@@ -97,7 +95,7 @@ Die folgenden Prozesse wirken sich nicht auf Inhalte aus. Sie dienen der Steueru
 
 Der Prozess `AbsoluteTimeAutoAdvancer` (automatisches Voranschreiten für absolute Uhrzeit) verhält sich wie **AutoAdvancer**. Ausnahme ist, dass die Zeitüberschreitung nach einer bestimmten Zeit und einem gewissen Datum anstelle einer entsprechenden Dauer eintritt.
 
-* **Java-Klasse**:  `com.adobe.granite.workflow.console.timeout.autoadvance.AbsoluteTimeAutoAdvancer`
+* **Java-Klasse**: `com.adobe.granite.workflow.console.timeout.autoadvance.AbsoluteTimeAutoAdvancer`
 * **Nutzlast**: Keine.
 * **Argumente**: Keine.
 * **Zeitüberschreitung**: Zeitüberschreitung nach festgelegter Zeit und festgelegtem Datum.
@@ -106,7 +104,7 @@ Der Prozess `AbsoluteTimeAutoAdvancer` (automatisches Voranschreiten für absolu
 
 Der `AutoAdvancer`-Prozess bringt den Workflow automatisch zum nächsten Schritt. Falls mehr als nur ein nächster Schritt möglich ist (beispielsweise bei einer ODER-Teilung), bringt der Prozess den Workflow auf der *Standardroute* voran. Wurde keine Standardroute festgelegt, wird der Workflow nicht vorangebracht.
 
-* **Java-Klasse**:  `com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer`
+* **Java-Klasse**: `com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer`
 
 * **Nutzlast**: Keine.
 * **Argumente**: Keine.
@@ -116,7 +114,7 @@ Der `AutoAdvancer`-Prozess bringt den Workflow automatisch zum nächsten Schritt
 
 Der `ProcessAssembler`-Prozess führt mehrere Teilprozesse nacheinander in einem einzigen Workflow-Schritt aus. Erstellen Sie für die Nutzung des `ProcessAssembler`-Prozesses einen einzelnen entsprechenden Schritt im Workflow und legen Sie die Argumente so fest, dass sie die Namen und Argumente der auszuführenden Teilprozesse angeben.
 
-* **Java-Klasse**:  `com.day.cq.workflow.impl.process.ProcessAssembler`
+* **Java-Klasse**: `com.day.cq.workflow.impl.process.ProcessAssembler`
 
 * **Nutzlast**: DAM-Asset, AEM-Seite oder keine Nutzlast (je nach Anforderungen der Teilprozesse).
 * **Argumente**:
@@ -156,13 +154,13 @@ Die folgenden Prozesse führen einfache Aufgaben durch oder dienen als Beispiel.
 >
 >Sie dürfen ***keinerlei*** Änderungen im Pfad `/libs` vornehmen.
 >
->Dies liegt daran, dass der Inhalt von `/libs` beim nächsten Upgrade Ihrer Instanz überschrieben wird (und möglicherweise überschrieben wird, wenn Sie einen Hotfix oder ein Feature Pack anwenden).
+>Dies liegt daran, dass der Inhalt von `/libs` wird beim nächsten Upgrade Ihrer Instanz überschrieben (und kann überschrieben werden, wenn Sie einen Hotfix oder ein Feature Pack anwenden).
 
 ### Löschen Sie {#delete}
 
 Das Element unter dem angegebenen Pfad wird gelöscht.
 
-* **ECMAScript-Pfad**:  `/libs/workflow/scripts/delete.ecma`
+* **ECMAScript-Pfad**: `/libs/workflow/scripts/delete.ecma`
 
 * **Nutzlast**: JCR-Pfad
 * **Argumente**: Keine
@@ -172,7 +170,7 @@ Das Element unter dem angegebenen Pfad wird gelöscht.
 
 Dies ist der Null-Prozess. Es wird kein Vorgang ausgeführt, jedoch eine Debugmeldung protokolliert.
 
-* **ECMAScript-Pfad**:  `/libs/workflow/scripts/noop.ecma`
+* **ECMAScript-Pfad**: `/libs/workflow/scripts/noop.ecma`
 
 * **Nutzlast**: Keine
 * **Argumente**: Keine
@@ -180,9 +178,9 @@ Dies ist der Null-Prozess. Es wird kein Vorgang ausgeführt, jedoch eine Debugme
 
 ### rule-false {#rule-false}
 
-Dies ist ein Null-Prozess, der `false` für die `check()`-Methode zurückgibt.
+Dies ist ein Nullprozess, der `false` auf `check()` -Methode.
 
-* **ECMAScript-Pfad**:  `/libs/workflow/scripts/rule-false.ecma`
+* **ECMAScript-Pfad**: `/libs/workflow/scripts/rule-false.ecma`
 
 * **Nutzlast**: Keine
 * **Argumente**: Keine
@@ -192,30 +190,10 @@ Dies ist ein Null-Prozess, der `false` für die `check()`-Methode zurückgibt.
 
 Ein Muster-ECMAScript-Prozess.
 
-* **ECMAScript-Pfad**:  `/libs/workflow/scripts/sample.ecma`
+* **ECMAScript-Pfad**: `/libs/workflow/scripts/sample.ecma`
 
 * **Nutzlast**: Keine
 * **Argumente**: Keine
-* **Zeitüberschreitung**: Ignoriert
-
-### urlcaller {#urlcaller}
-
-Einfacher Workflow-Prozess, der die angegebene URL aufruft. Für gewöhnlich ist die URL ein Verweis auf ein JSP (oder ein anderes entsprechendes Servlet), das eine einfache Aufgabe ausführt. Dieser Prozess sollte nur während der Entwicklung und für Demonstrationen verwendet werden, nicht in einer Produktionsumgebung. Die Argumente legen die URL, die Anmeldedaten und das Kennwort fest.
-
-* **ECMAScript-Pfad**:  `/libs/workflow/scripts/urlcaller.ecma`
-
-* **Nutzlast**: Keine
-* **Argumente**:
-
-```
-        args := url [',' login ',' password]
-        url := /* The URL to be called */
-        login := /* The login to access the URL */
-        password := /* The password to access the URL */
-```
-
-Beispiel: `http://localhost:4502/my.jsp, mylogin, mypassword`
-
 * **Zeitüberschreitung**: Ignoriert
 
 ### LockProcess {#lockprocess}
