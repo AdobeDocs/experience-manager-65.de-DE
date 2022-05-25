@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 9f7bd996d2ec77d29fbee3ee51ac6469f94e9bd7
+source-git-commit: c9df4b43083376f0110368afe642ec74290a52f8
 workflow-type: tm+mt
 source-wordcount: '4679'
 ht-degree: 85%
@@ -215,7 +215,7 @@ Wenn ein Index in einer MongoDB-Instanz entfernt wird, verhält sich der Löscha
 
 ### JCR-Abfrage-Arbeitsblatt {#jcrquerycheatsheet}
 
-Um die Erstellung effizienter JCR-Abfragen und Indexdefinitionen zu unterstützen, muss die [JCR Query Cheat Sheet](assets/JCR_query_cheatsheet-v1.0.pdf) ist für den Download und die Verwendung als Referenz während der Entwicklung verfügbar. Es enthält Beispielabfragen für QueryBuilder, XPath und SQL-2, die mehrere Szenarien abdecken, die sich hinsichtlich der Abfrageleistung unterschiedlich verhalten. Es enthält auch Empfehlungen zum Erstellen oder Anpassen von Oak-Indizes. Der Inhalt dieses Spiegels gilt für AEM 6.5 und AEM as a Cloud Service.
+Um die Erstellung effizienter JCR-Abfragen und Indexdefinitionen zu unterstützen, muss die [JCR Query Cheat Sheet](assets/JCR_query_cheatsheet-v1.1.pdf) ist für den Download und die Verwendung als Referenz während der Entwicklung verfügbar. Es enthält Beispielabfragen für QueryBuilder, XPath und SQL-2, die mehrere Szenarien abdecken, die sich hinsichtlich der Abfrageleistung unterschiedlich verhalten. Es enthält auch Empfehlungen zum Erstellen oder Anpassen von Oak-Indizes. Der Inhalt dieses Spiegels gilt für AEM 6.5 und AEM as a Cloud Service.
 
 ## Neuindizieren {#re-indexing}
 
@@ -232,7 +232,6 @@ Eine Neuindizierung von Oak-Indizes muss vermieden werden, sofern nicht einer de
 >* die Abfrage korrekt ist
 >* Die Abfrage wird in den erwarteten Index aufgelöst (mit dem [Tool „Abfrage erläutern“](/help/sites-administering/operations-dashboard.md#diagnosis-tools)).
 >* Der Indizierungsvorgang wurde abgeschlossen.
-
 >
 
 
