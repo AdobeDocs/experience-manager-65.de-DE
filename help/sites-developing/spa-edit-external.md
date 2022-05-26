@@ -1,11 +1,11 @@
 ---
 title: Bearbeiten einer externen SPA in AEM
-description: In diesem Dokument werden die empfohlenen Schritte zum Hochladen eines eigenständigen SPA zu einer AEM Instanz, zum Hinzufügen bearbeitbarer Inhaltsabschnitte und zum Aktivieren des Authoring beschrieben.
+description: In diesem Dokument werden die empfohlenen Schritte zum Hochladen einer eigenständigen SPA in eine AEM-Instanz, zum Hinzufügen bearbeitbarer Inhaltsabschnitte und zum Aktivieren des Authoring beschrieben.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 237de641ba02705f8171b1526946a4dc1b60b6a3
 workflow-type: tm+mt
-source-wordcount: '2118'
-ht-degree: 99%
+source-wordcount: '2392'
+ht-degree: 88%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 99%
 
 Wenn Sie entscheiden, welchen Grad der Integration Sie zwischen Ihrer externen SPA und AEM haben möchten, müssen Sie die SPA oft in AEM anzeigen und bearbeiten können.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
-In diesem Dokument werden die empfohlenen Schritte zum Hochladen eines eigenständigen SPA zu einer AEM Instanz, zum Hinzufügen bearbeitbarer Inhaltsabschnitte und zum Aktivieren des Authoring beschrieben.
+In diesem Dokument werden die empfohlenen Schritte zum Hochladen einer eigenständigen SPA in eine AEM-Instanz, zum Hinzufügen bearbeitbarer Inhaltsabschnitte und zum Aktivieren des Authoring beschrieben.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -217,7 +217,7 @@ Die Seite ist nun in AEM mit einem Layout-Container und einer untergeordneten Te
 
 ### Virtuelle Blattkomponenten {#virtual-leaf-components}
 
-In den vorherigen Beispielen haben wir der SPA Komponenten mit vorhandenen AEM-Inhalten hinzugefügt. Es gibt jedoch Fälle, in denen der Inhalt noch nicht in AEM erstellt wurde, der jedoch später vom Inhaltsautor hinzugefügt werden muss. Um dies zu ermöglichen, kann der Front-End-Entwickler Komponenten an den entsprechenden Stellen in der SPA hinzufügen. Diese Komponenten zeigen Platzhalter an, wenn sie im Editor in AEM geöffnet werden. Sobald der Inhalt innerhalb dieser Platzhalter vom Inhaltsautor hinzugefügt wurde, werden Knoten in der JCR-Struktur erstellt und der Inhalt bleibt erhalten. Die erstellte Komponente ermöglicht dieselben Vorgänge wie die eigenständigen Blattkomponenten.
+In den vorherigen Beispielen haben wir der SPA Komponenten mit vorhandenen AEM-Inhalten hinzugefügt. Es gibt jedoch Fälle, in denen der Inhalt noch nicht in AEM erstellt wurde, der jedoch später vom Inhaltsautor hinzugefügt werden muss. Um dies zu ermöglichen, kann der Frontend-Entwickler Komponenten an den entsprechenden Stellen in der SPA hinzufügen. Diese Komponenten zeigen Platzhalter an, wenn sie im Editor in AEM geöffnet werden. Sobald der Inhalt innerhalb dieser Platzhalter vom Inhaltsautor hinzugefügt wurde, werden Knoten in der JCR-Struktur erstellt und der Inhalt bleibt erhalten. Die erstellte Komponente ermöglicht dieselben Vorgänge wie die eigenständigen Blattkomponenten.
 
 In diesem Beispiel verwenden wir die zuvor erstellte `AEMText`-Komponente erneut. Wir möchten auf der WKND-Startseite einen neuen Text unterhalb der bestehenden Textkomponente hinzufügen. Das Hinzufügen von Komponenten ist dasselbe wie bei normalen Blattkomponenten. `itemPath` kann jedoch auf den Pfad aktualisiert werden, in dem die neue Komponente hinzugefügt werden muss.
 
@@ -257,6 +257,42 @@ Es gibt eine Reihe von Anforderungen beim Hinzufügen von Komponenten für virtu
 * Der Pfad zum Knoten, in dem ein neuer Knoten erstellt wird, muss gültig sein, wenn er über `itemPath` bereitgestellt wird.
    * In diesem Beispiel muss `root/responsivegrid` vorhanden sein, damit der neue Knoten `text_20` dort erstellt werden kann.
 * Es wird nur die Erstellung von Blattkomponenten unterstützt. Virtuelle Container und Seiten werden in zukünftigen Versionen unterstützt.
+
+### Virtuelle Container {#virtual-containers}
+
+Die Möglichkeit zum Hinzufügen von Containern wird unterstützt, auch wenn der entsprechende Container noch nicht in AEM erstellt wurde. Konzept und Ansatz ähneln dem [virtuelle Blattkomponenten.](#virtual-leaf-components)
+
+Der Frontend-Entwickler kann die Container-Komponenten an geeigneten Stellen innerhalb des SPA hinzufügen. Diese Komponenten zeigen Platzhalter an, wenn sie im Editor in AEM geöffnet werden. Der Autor kann dann Komponenten und deren Inhalt zum Container hinzufügen, wodurch die erforderlichen Knoten in der JCR-Struktur erstellt werden.
+
+Wenn beispielsweise ein Container bereits unter `/root/responsivegrid` und der Entwickler einen neuen untergeordneten Container hinzufügen möchte:
+
+![Container-Speicherort](assets/container-location.png)
+
+`newContainer` existiert noch nicht in der AEM.
+
+Wenn Sie die Seite bearbeiten, die diese Komponente in AEM enthält, wird ein leerer Platzhalter für einen Container angezeigt, dem der Autor Inhalte hinzufügen kann.
+
+![Container-Platzhalter](assets/container-placeholder.png)
+
+![Container-Speicherort in JCR](assets/container-jcr-structure.png)
+
+Nachdem der Autor eine untergeordnete Komponente zum Container hinzugefügt hat, wird der neue Container-Knoten mit dem entsprechenden Namen in der JCR-Struktur erstellt.
+
+![Container mit Inhalt](assets/container-with-content.png)
+
+![Container mit Inhalt in JCR](assets/container-with-content-jcr.png)
+
+Dem Container können jetzt mehr Komponenten und Inhalte hinzugefügt werden, da der Autor dies benötigt und die Änderungen beibehalten werden.
+
+#### Anforderungen und Einschränkungen {#container-limitations}
+
+Es gibt eine Reihe von Anforderungen zum Hinzufügen virtueller Container sowie einige Einschränkungen.
+
+* Die Richtlinie, die bestimmt, welche Komponenten hinzugefügt werden können, wird vom übergeordneten Container übernommen.
+* Das unmittelbare übergeordnete Element des zu erstellenden Containers muss bereits in AEM vorhanden sein.
+   * Wenn der Container `root/responsivegrid` bereits im AEM-Container vorhanden ist, kann ein neuer Container durch Angabe des Pfads erstellt werden `root/responsivegrid/newContainer`.
+   * Jedoch `root/responsivegrid/newContainer/secondNewContainer` ist nicht möglich.
+* Nur eine neue Komponentenebene kann virtuell erstellt werden.
 
 ## Zusätzliche Anpassungen {#additional-customizations}
 
@@ -298,7 +334,7 @@ Um die Bearbeitung in AEM für diese Beispiel-SPA zu aktivieren, sind die folgen
 
 1. Identifizieren Sie die Ebene, die als Stamm in AEM fungieren würde.
 
-   * Für unser Beispiel betrachten wir `wknd-spa-react/us/en` als die Wurzel der SPA. Das bedeutet, dass alles vor diesem Pfad nur AEM-Seiten/-Inhalte sind.
+   * Für unser Beispiel betrachten wir Folgendes: `wknd-spa-react/us/en` als Stamm des SPA. Das bedeutet, dass alles vor diesem Pfad nur AEM-Seiten/-Inhalte sind.
 
 1. Erstellen Sie eine neue Seite auf der erforderlichen Ebene.
 
