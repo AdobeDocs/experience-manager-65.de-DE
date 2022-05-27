@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: 684f73722834f1764e8f37ad790d7da4ef57a369
+source-git-commit: b14cbc4cad15b06754db8b8c992a596d4d64c096
 workflow-type: tm+mt
-source-wordcount: '6090'
+source-wordcount: '6037'
 ht-degree: 45%
 
 ---
@@ -134,8 +134,7 @@ Um einen ausgewählten Ordner für die Synchronisierung mit Dynamic Media zu mar
    Wenn ein Asset aktiviert wurde, werden alle Aktualisierungen automatisch live in der S7-Bereitstellung übernommen.
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
-1. Standardmäßig kann der Experience Manager-Autor keine Vorschau von Dynamic Media-Inhalten anzeigen. Daher müssen Sie die Experience Manager-Autoreninstanz zur sicheren Vorschau von Dynamic Media-Inhalten vor der Veröffentlichung für eine Zulassungsliste der-Autoreninstanz mit Dynamic Media verknüpfen. Wenn Sie Benutzern außerdem Zugriff auf eine sichere Vorschau von Inhalten gewähren möchten, können Sie in Zulassungsliste zusätzliche IP-Adressen hinzufügen.
-Um Dynamic Media-Inhalte sicher in der Vorschau anzuzeigen, bevor sie veröffentlicht werden, verwendet der Experience Manager-Autor eine Token-basierte Validierung und daher sieht der Experience Manager-Autor Dynamic Media-Inhalte standardmäßig in der Vorschau an. Sie können jedoch weitere IP-Adressen in Zulassungslisten einfügen, um Benutzern den Zugriff auf eine sichere Vorschau von Inhalten zu ermöglichen. Informationen zum Einrichten dieser Aktion in Experience Manager finden Sie unter [Dynamic Media-Veröffentlichungseinstellungen für Image-Server konfigurieren - Registerkarte &quot;Sicherheit&quot;](/help/assets/dm-publish-settings.md#security-tab).
+1. Um Dynamic Media-Inhalte sicher in der Vorschau anzuzeigen, bevor sie veröffentlicht werden, verwendet der Experience Manager-Autor eine Token-basierte Validierung und daher sieht der Experience Manager-Autor Dynamic Media-Inhalte standardmäßig in der Vorschau an. Sie können jedoch weitere IP-Adressen in Zulassungslisten einfügen, um Benutzern den Zugriff auf eine sichere Vorschau von Inhalten zu ermöglichen. Informationen zum Einrichten dieser Aktion in Experience Manager finden Sie unter [Dynamic Media-Veröffentlichungseinstellungen für Image-Server konfigurieren - Registerkarte &quot;Sicherheit&quot;](/help/assets/dm-publish-settings.md#security-tab).
 
 <!-- 1. To securely preview Dynamic Media content before it gets published, Experience Manager uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).     * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
     * In the left rail, select the **[!UICONTROL Tools]** icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
