@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, verarbeiten und verteilen Sie digitale Assets.
-source-git-commit: ee6e408668a523464632e53a01ba11eddec103f6
+source-git-commit: 66958dc5328177d27dbdddf0c8983096e38f76b6
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 57%
+source-wordcount: '672'
+ht-degree: 59%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 57%
    + [Optional - Konfigurieren von Dynamic Media - Scene7-Modus, Allgemeine Einstellungen](dm-general-settings.md)
    + [Optional - Konfigurieren von Dynamic Media - Scene7-Modus, Veröffentlichungseinstellungen](dm-publish-settings.md)
    + [Fehlerbehebung bei Dynamic Media - Scene7-Modus](troubleshoot-dms7.md)
-   + [Dynamic Media-Unternehmensalias-Konto konfigurieren](dm-alias-account.md)
+   + [Konfigurieren eines Firmen-Alias-Kontos für Dynamic Media](dm-alias-account.md)
    + [Konfigurieren von Dynamic Media - Hybridmodus](config-dynamic.md)
    + [Migration vom Dynamic Media-Hybridmodus zum Dynamic Media-S7-Modus](migrate-from-hybrid-to-dms7.md)
    + [Barrierefreiheit in Dynamic Media](accessibility-dm.md)
@@ -56,7 +56,8 @@ ht-degree: 57%
    + [Dynamic Media-Videoprofile](video-profiles.md)
    + [Dynamic Media-Bildprofile](image-profiles.md)
    + [Intelligente Bildbearbeitung](imaging-faq.md)
-   + [Video](s7-video.md)
+   + [Intelligente Bildbearbeitung mit clientseitigem Gerätepixelverhältnis](client-side-dpr.md)
+   + [Video ](s7-video.md)
    + [Bereitstellung von Inhalten per HTTP/2](http2.md)
    + [Bereitstellen von Dynamic Media-Assets](delivering-dynamic-media-assets.md)
    + [Aktivieren des Hotlink-Schutzes in Dynamic Media](hotlink-protection.md)
@@ -65,7 +66,7 @@ ht-degree: 57%
    + [Panoramabilder](panoramic-images.md)
    + [Gemischte Mediensets](mixed-media-sets.md)
    + [Rotationssets](spin-sets.md)
-   + [Video   in Dynamic Media](video.md)
+   + [Video  in Dynamic Media](video.md)
    + [Karussellbanner](carousel-banners.md)
    + [Interaktive Bilder](interactive-images.md)
    + [Interaktive Videos](interactive-videos.md)
@@ -173,5 +174,5 @@ ht-degree: 57%
    + [Videoausgabeformate](video-renditions.md)
 + Integration mit anderen Lösungen {#integrations}
    + [Integrationen mit [!DNL Adobe Workfront]](workfront-integrations.md)
-   + [Installieren [!DNL enhanced connector] für [!DNL Workfront]](workfront-connector-install.md)
-   + [Konfigurieren [!DNL enhanced connector] für [!DNL Workfront]](workfront-connector-configure.md)
+   + [Installieren von [!DNL enhanced connector] für [!DNL Workfront]](workfront-connector-install.md)
+   + [Konfigurieren von [!DNL enhanced connector] für [!DNL Workfront]](workfront-connector-configure.md)
