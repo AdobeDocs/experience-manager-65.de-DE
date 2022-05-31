@@ -10,11 +10,12 @@ discoiquuid: 0d48c031-d3ee-4143-b739-a79ba28fd63a
 docset: aem65
 role: User, Admin
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
-feature: Fehlerbehebung
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+feature: Troubleshooting
+mini-toc-levels: 3
+source-git-commit: d5824078ca3e1ff2b48874446aaebe3fdd60cfdc
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 81%
+source-wordcount: '1386'
+ht-degree: 75%
 
 ---
 
@@ -26,14 +27,14 @@ Das folgende Dokument beschreibt das Beheben von Fehlern mit Dynamic Media im Au
 
 Stellen Sie sicher, dass Dynamic Media korrekt eingerichtet wurde, indem Sie folgende Schritte ausführen:
 
-* Der Befehl &quot;Start&quot;enthält das Argument `-r dynamicmedia_scene7` für den Ausführungsmodus.
-* Alle Adobe Experience Manager 6.4 Cumulative Fix Packs (CFPs) wurden zuerst *vor* allen verfügbaren Dynamic Media Feature Packs installiert.
+* Der Befehl &quot;Start&quot;enthält `-r dynamicmedia_scene7` Ausführungsmodus-Argument.
+* Alle Cumulative Fix Packs (CFPs) von Adobe Experience Manager 6.4 wurden zuerst installiert *before* alle verfügbaren Dynamic Media Feature Packs.
 * Das optionale Feature Pack 18912 wurde installiert.
 
    Dieses optionale Feature Pack ist für die FTP-Unterstützung oder für die Migration von Assets von Dynamic Media Classic zu Dynamic Media vorgesehen.
 
 * Navigieren Sie zur Cloud Services-Benutzeroberfläche und vergewissern Sie sich, dass das angegebene Konto unter **[!UICONTROL Verfügbare Konfigurationen]** aufgeführt wird.
-* Stellen Sie sicher, dass der Replikationsagent `Dynamic Media Asset Activation (scene7)` aktiviert ist.
+* Stellen Sie sicher, dass `Dynamic Media Asset Activation (scene7)` Replikationsagent ist aktiviert.
 
    Diesen Replizierungsagent finden Sie unter „Agenten für Autor“.
 
@@ -43,7 +44,7 @@ Die folgenden allgemeinen Tipps und Tricks gelten für alle Assets.
 
 ### Asset-Synchronisierungsstatuseigenschaften {#asset-synchronization-status-properties}
 
-Die folgenden Asset-Eigenschaften können in CRXDE Lite überprüft werden, um die erfolgreiche Synchronisierung des Assets vom Experience Manager mit Dynamic Media zu bestätigen:
+Anhand der folgenden Asset-Eigenschaften können Sie in CRXDE Lite prüfen, ob Assets erfolgreich zwischen Experience Manager und Dynamic Media synchronisiert wurden:
 
 | **Eigenschaft** | **Beispiel** | **Beschreibung** |
 |---|---|---|
@@ -161,7 +162,7 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
      <li>Weisen Sie dem Ordner ein Videoprofil zu.</li>
      <li>Bearbeiten Sie das Videoprofil, damit es mehr als eine Kodierungsvorgabe enthält.</li>
      <li>Warten Sie, bis die Verarbeitung des Videos abgeschlossen ist.</li>
-     <li>Stellen Sie sicher, dass der Workflow Dynamic Media-Videokodierung nicht ausgeführt wird, unabhängig davon, ob Sie das Video neu laden.<br /> </li>
+     <li>Stellen Sie sicher, dass der Workflow Dynamic Media-Videokodierung nicht ausgeführt wird, bevor Sie das Video erneut laden.<br /> </li>
      <li>Laden Sie das Video erneut hoch.</li>
     </ol> </td>
   </tr>
@@ -169,14 +170,14 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
    <td>Video ist nicht kodiert</td>
    <td>
     <ul>
-     <li>Überprüfen Sie, ob der Ausführungsmodus <code>dynamicmedia_scene7</code> ist.</li>
+     <li>Überprüfen, ob der Ausführungsmodus <code>dynamicmedia_scene7</code>.</li>
      <li>Prüfen Sie, ob der Dynamic Media-Cloud-Service konfiguriert ist.</li>
      <li>Prüfen Sie, ob dem Upload-Ordner ein Videoprofil zugeordnet ist.</li>
     </ul> </td>
    <td>
     <ol>
      <li>Überprüfen Sie Ihre Experience Manager-Instanz mit <code>-r dynamicmedia_scene7</code></li>
-     <li>Überprüfen Sie, ob die Dynamic Media-Konfiguration unter "Cloud Services"ordnungsgemäß eingerichtet ist.</li>
+     <li>Prüfen Sie, ob die Dynamic Media-Konfiguration unter Cloud Services ordnungsgemäß eingerichtet ist.</li>
      <li>Überprüfen Sie, ob der Ordner ein Videoprofil hat. Überprüfen Sie außerdem das Videoprofil.</li>
     </ol> </td>
   </tr>
@@ -209,56 +210,71 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
 
 Falls Sie Probleme mit einem Viewer haben, sehen Sie sich die folgende Anleitung zur Fehlerbehebung an.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Problem</strong></td>
-   <td><strong>Debugging</strong></td>
-   <td><strong>Lösung</strong></td>
-  </tr>
-  <tr>
-   <td>Viewer-Vorgaben werden nicht veröffentlicht</td>
-   <td><p>Wechseln Sie zur Diagnoseseite des Beispiel-Managers: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Überwachen Sie die berechneten Werte. Wenn Sie ordnungsgemäß arbeiten, sehen Sie Folgendes:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Hinweis</strong>: Nach der Konfiguration der Dynamic Media-Cloud-Einstellungen kann es bis zu 10 Minuten dauern, bis die Assets im Viewer synchronisiert werden.</p> <p>Wenn nicht aktivierte Assets weiterhin vorhanden sind, wählen Sie eine der Schaltflächen <strong>Alle nicht aktivierten Assets auflisten</strong> aus, um Details anzuzeigen.</p> </td>
-   <td>
-    <ol>
-     <li>Navigieren Sie in den Admin Tools zur Viewer-Vorgabeliste: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
-     <li>Wählen Sie alle Viewer-Vorgaben und dann <strong>Publish</strong> aus.</li>
-     <li>Navigieren Sie zurück zum Beispiel-Manager und prüfen Sie, ob die Anzahl der nicht aktivierten Assets jetzt mit null angegeben wird.</li>
-    </ol> </td>
-  </tr>
-  <tr>
-   <td>Für das Bildmaterial der Viewer-Vorgabe wird für eine Vorschau in den Asset-Details oder für „URL kopieren“/„Code einbetten“ der Code 404 zurückgegeben</td>
-   <td><p>Gehen Sie in CRXDE Lite wie folgt vor:</p>
-    <ol>
-     <li>Navigieren Sie zum <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>-Ordner im Synchronisierungsordner für Dynamic Media (z. B. <code>/content/dam/_CSS/_OOTB</code>).</li>
-     <li>Suchen Sie den Metadaten-Knoten des problematischen Assets (z. B. <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>).</li>
-     <li>Prüfen Sie, ob die Eigenschaften <code>dam:scene7*</code> vorhanden sind. Wenn das Asset erfolgreich synchronisiert und veröffentlicht wurde, sehen Sie, dass für <code>dam:scene7FileStatus</code> der Wert <strong>PublishComplete</strong> festgelegt ist.</li>
-     <li>Versuchen Sie, das Bildmaterial direkt aus Dynamic Media anzufordern, indem Sie die Werte der folgenden Eigenschaften und Zeichenketten verketten.
-      <ul>
-       <li><code>dam:scene7Domain</code></li>
-       <li><code>"is/content"</code></li>
-       <li><code>dam:scene7Folder</code></li>
-       <li><code>&lt;asset-name&gt;</code></li>
-       <li>Beispiel: <code>https://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li>
-      </ul> </li>
-    </ol> </td>
-   <td><p>Wenn die Beispiel-Assets oder das Bildmaterial der Viewer-Vorgabe nicht synchronisiert oder veröffentlicht wurden, starten Sie den gesamten Kopier-/Synchronisierungsvorgang neu:</p>
-    <ol>
-     <li>Navigieren Sie zu CRXDE Lite.
-      <ul>
-       <li>Löschen Sie <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>.</li>
-      </ul> </li>
-     <li>Navigieren Sie zum CRX Package Manager: <code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a>
-      <ol>
-       <li>Suchen Sie das Viewer-Paket in der Liste (es beginnt mit <code>cq-dam-scene7-viewers-content</code>)</li>
-       <li>Wählen Sie <strong>Neu installieren</strong>.</li>
-      </ol> </li>
-     <li>Navigieren Sie zur Seite für die Dynamic Media-Konfiguration und klicken Sie auf „Bearbeiten“, um das Konfigurationsdialogfeld für Ihre Dynamic Media S7-Konfiguration zu öffnen.
-      <ul>
-       <li>Nehmen Sie keine Änderungen vor und wählen Sie <strong>Speichern</strong> aus. Diese Aktion Trigger die Logik zum Erstellen und Synchronisieren der Beispiel-Assets, Viewer-Vorgabe-CSS und Bildmaterial erneut.<br />  </li>
-      </ul> </li>
-    </ol> </td>
-  </tr>
- </tbody>
-</table>
+### Problem: Viewer-Vorgaben werden nicht veröffentlicht {#viewers-not-published}
+
+**Vorgehensweise beim Debugging**
+
+1. Wechseln Sie zur Diagnoseseite des Beispiel-Managers: `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`.
+1. Überwachen Sie die berechneten Werte. Wenn Sie ordnungsgemäß arbeiten, sehen Sie Folgendes: `_DMSAMPLE status: 0 unsyced assets - activation not necessary _OOTB status: 0 unsyced assets - 0 unactivated assets`.
+
+   >[!NOTE]
+   >
+   >Nach der Konfiguration der Dynamic Media-Cloud-Einstellungen kann es etwa 10 Minuten dauern, bis die Viewer-Assets synchronisiert werden.
+
+1. Falls weiterhin nicht aktivierte Assets vorhanden sind, klicken Sie auf eine der Schaltflächen **Alle nicht aktivierten Assets auflisten**, um die Details anzuzeigen.
+
+**Lösung**
+
+1. Navigieren Sie in den Admin Tools zur Viewer-Vorgabeliste: `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`
+1. Wählen Sie alle Viewer-Vorgaben aus und klicken Sie auf **Veröffentlichen**.
+1. Navigieren Sie zurück zum Beispiel-Manager und prüfen Sie, ob die Anzahl der nicht aktivierten Assets jetzt mit null angegeben wird.
+
+### Problem: Viewer-Vorgabengrafiken geben 404 aus der Vorschau in Asset-Details oder &quot;URL kopieren/Einbettungscode&quot;zurück {#viewer-preset-404}
+
+**Vorgehensweise beim Debugging**
+
+Gehen Sie in CRXDE Lite wie folgt vor:
+
+1. Navigieren Sie zu `<sync-folder>/_CSS/_OOTB` Ordner in Ihrem Dynamic Media-Synchronisierungsordner (z. B. `/content/dam/_CSS/_OOTB`).
+1. Suchen Sie den Metadaten-Knoten des problematischen Assets (z. B. `<sync-folder>/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/`).
+1. Prüfen Sie, ob die Eigenschaften `dam:scene7*` vorhanden sind. Wenn das Asset erfolgreich synchronisiert und veröffentlicht wurde, sehen Sie, dass für `dam:scene7FileStatus` der Wert **PublishComplete** festgelegt ist.
+1. Versuchen Sie, das Bildmaterial direkt aus Dynamic Media anzufordern, indem Sie die Werte der folgenden Eigenschaften und Zeichenfolgenliterale verketten:
+
+   * `dam:scene7Domain`
+   * `"is/content"`
+   * `dam:scene7Folder`
+   * `<asset-name>`
+Beispiel: 
+`https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+
+**Lösung**
+
+Wenn die Beispiel-Assets oder das Bildmaterial der Viewer-Vorgabe nicht synchronisiert oder veröffentlicht wurden, starten Sie den gesamten Kopier-/Synchronisierungsvorgang neu:
+
+1. Gehen Sie zu CRXDE Lite.
+1. Löschen Sie `<sync-folder>/_CSS/_OOTB`.
+1. Navigieren Sie zum CRX Package Manager: `https://localhost:4502/crx/packmgr/`.
+1. Suchen Sie in der Liste nach Viewer-Paket . beginnt mit `cq-dam-scene7-viewers-content`.
+1. Auswählen **Neu installieren**.
+1. Navigieren Sie zur Seite für die Dynamic Media-Konfiguration und klicken Sie auf „Bearbeiten“, um das Konfigurationsdialogfeld für Ihre Dynamic Media S7-Konfiguration zu öffnen.
+1. Nehmen Sie keine Änderungen vor, wählen Sie **Speichern**.
+Diese Speicheraktion Trigger die Logik zum Erstellen und Synchronisieren der Beispiel-Assets, Viewer-Vorgabe-CSS und Bildmaterial erneut.
+
+### Problem: Bildvorschau wird beim Authoring von Viewer-Vorgaben nicht geladen {#image-preview-not-loading}
+
+**Lösung**
+
+1. Wählen Sie in Experience Manager das Experience Manager-Logo aus, um auf die globale Navigationskonsole zuzugreifen, und navigieren Sie dann zu **[!UICONTROL Instrumente]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
+1. Navigieren Sie in der linken Leiste zum Ordner mit Beispielinhalten am folgenden Speicherort:
+
+   `/content/dam/_DMSAMPLE`
+
+1. Löschen Sie die `_DMSAMPLE` Ordner.
+1. Navigieren Sie in der linken Leiste zum Ordner &quot;Vorgaben&quot;am folgenden Speicherort:
+
+   `/conf/global/settings/dam/dm/presets/viewer`
+
+1. Löschen Sie die `viewer` Ordner.
+1. Wählen Sie in der oberen linken Ecke der Seite „CRXDE Lite“ die Option **[!UICONTROL Alle speichern]** aus.
+1. Wählen Sie links oben auf der Seite &quot;CRXDE Lite&quot;die Option **Zurück zur Startseite** Symbol.
+1. Erstellen Sie eine [Dynamic Media-Konfiguration in Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
