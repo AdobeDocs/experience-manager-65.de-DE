@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5, Forms-Anleitung
 breadcrumb-title: Forms-Anleitung
 user-guide-description: Digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren.
 role: User
-source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
+source-git-commit: 91b012f8024350effc19613bcecfc42dee4130d9
 workflow-type: tm+mt
-source-wordcount: '3775'
+source-wordcount: '3788'
 ht-degree: 71%
 
 ---
@@ -151,10 +151,10 @@ ht-degree: 71%
    + [Formularvorschau](using/previewing-forms.md)
    + [Wiederverwenden adaptiver Formulare](using/reusing-adaptive-forms.md)
    + [Trennzeichenkomponenten in adaptiven Formularen](using/separator-component-in-adaptive-forms.md)
-   + [Anwenden elektronischer Signaturen auf ein Formular mithilfe der Freihandsignatur](using/signing-forms-using-scribble.md)
+   + [Anwenden elektronischer Signaturen auf ein Formular mithilfe der Freihandsignatur ](using/signing-forms-using-scribble.md)
    + [Tastaturbefehle für AEM Forms](using/keyboard-shortcuts.md)
-   + [Verknüpfen von Übermittlungs-Reviewern mit einem Formular](using/adding-reviewers-form.md)
-   + [Verfassen von kontextsensitiver Hilfe für Formularfelder](using/authoring-in-field-help.md)
+   + [Zuweisen von Übermittlungsprüfern mit einem Formular](using/adding-reviewers-form.md)
+   + [Verfassen von kontextsensitiver Hilfe für Formularfelder ](using/authoring-in-field-help.md)
    + [Verwenden des Layout-Modus zum Ändern der Größe von Komponenten](/help/forms/using/resize-using-layout-mode.md)
 + Adaptive Formulare - Erweitertes Authoring {#adaptive-forms-advanced-authoring}
    + [Erstellen adaptiver Formulare mithilfe des JSON-Schemas](using/adaptive-form-json-schema-form-model.md)
@@ -179,7 +179,7 @@ ht-degree: 71%
    + [Stilkonstrukte für adaptive Formulare](using/styling-constructs-adaptive-forms.md)
    + [Synchronisieren von adaptiven Formularen mit XFA-Formularvorlagen](using/synchronizing-adaptive-forms-xfa.md)
    + [Integrieren von Adobe Sign mit AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
-   + [Erstellen und Verwalten von Assetüberprüfungen in Formularen](using/create-reviews-forms.md)
+   + [Erstellen und Verwalten von Assetüberprüfungen in Formularen ](using/create-reviews-forms.md)
    + [Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation in eine AEM Sites-Einzelseitenanwendung](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
    + [Standardmäßige Validierungsfehlermeldungen Adaptive Forms](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
 + Interaktive Kommunikation {#interactive-communications}
@@ -196,7 +196,7 @@ ht-degree: 71%
 + Workflows {#workflows}
    + [Formularzentrierte Workflows in OSGi](using/aem-forms-workflow.md)
    + [Formularzentrierte Workflows in OSGi - Schritt-Referenz](using/aem-forms-workflow-step-reference.md)
-   + [Dynamische Auswahl eines Benutzers order einer Gruppe für AEM Forms-zentrierte Workflow-Schritte](using/dynamically-select-a-user-or-group-for-aem-workflow.md)
+   + [Dynamische Auswahl eines Benutzers oder einer Gruppe für AEM Forms-zentrierte Workflow-Schritte](using/dynamically-select-a-user-or-group-for-aem-workflow.md)
    + [Aktionen und Funktionen formularorientierter AEM-Workflows in OSGi- und AEM Forms JEE-Workflows](using/capabilities-osgi-jee-workflows.md)
    + [Starten Sie Document Services-APIs aus dem AEM-Arbeitsablauf](using/initiating-document-services-apis-aem.md)
    + [Protokollierung in AEM Forms-Workflows](/help/forms/using/forms-workflow-logs.md)
@@ -342,7 +342,7 @@ ht-degree: 71%
    + [Überwachter Ordner in AEM Forms](using/watched-folder-in-aem-forms.md)
    + [Komponente „Drafts and Submissions“](using/draft-submission-component.md)
    + [Einbetten einer Komponente „Link“ in eine Seite](using/embedding-link-component-page.md)
-   + [Veröffentlichung von Formularen und Dokumenten und Rückgängigmachen von Veröffentlichungen](using/publishing-unpublishing-forms.md)
+   + [Veröffentlichen von Formularen und Dokumenten und Rückgängigmachen von Veröffentlichungen](using/publishing-unpublishing-forms.md)
    + [Auflisten von Formularen auf einer Webseite mithilfe von APIs](using/listing-forms-webpage-using-apis.md)
    + [Öffnen und Ausfüllen veröffentlichter Formulare](using/accessing-filling-published-forms.md)
    + [Senden einer Formularsendebestätigung per E-Mail](using/form-submission-receipt-via-email.md)
@@ -380,7 +380,7 @@ ht-degree: 71%
    + [Skriptreferenz für Designer](http://www.adobe.com/go/learn_aemforms_scriptingReference_65)
    + [FormCalc-Referenz für Designer](http://www.adobe.com/go/learn_aemforms_formCalc_65)
    + [Verwenden der Scribble-Signatur in HTML5-Formularen](using/scribble-signature.md)
-   + [Inhalt auf Seite Null in Designer ändern](using/changing-page-zero-content-designer.md)
+   + [Ändern des Inhalts auf Seite Null im Designer](using/changing-page-zero-content-designer.md)
 + Passen Sie AEM Forms an {#customize-aem-forms}
    + [Erscheinungsbild-Framework für adaptive und HTML5-Formulare](using/introduction-widgets.md)
    + [Erstellen einer benutzerdefinierten adaptiven Formularvorlage](using/custom-adaptive-forms-templates.md)
@@ -681,9 +681,12 @@ ht-degree: 71%
          + [Programmgesteuerte Verwaltung der Voreinstellungsknoten](developing/programmatically-preferences-nodes.md)
          + [Schützen von Dokumenten mit Richtlinien](developing/protecting-documents-policies.md)
          + [Validieren eines DDX-Dokuments mithilfe der Webdienst-API](developing/validate-ddx-document-using-web.md)
-      + Alte Dokumentation {#legacy-documentation}
-         + [Verwenden des Execute-Script-Dienstes in AEM Forms on JEE Workbench zum Erstellen von XML-Daten](developing/building-xml.md)
-         + [Komprimieren und Dekomprimieren von Dateien mit einem benutzerdefinierten AEM Forms on JEE-DSC](developing/compressing-decompressing-custom-dsc.md)
-         + [Konfigurieren und Fehlerbehebung für einen AEM Forms on JEE-Servercluster](developing/configure-server-cluster.md)
-         + [Erstellen und Verwenden von Hashes in dynamischen PDF forms](developing/hashing-forms.md)
-         + [Übergeben von Anmeldeinformationen mithilfe von WS-Security-Headern](developing/passing-credentials.md)
++ Fehlerbehebung {#troubleshooting}
+   + [Einige Formularfunktionen können nicht mit bestimmten Versionen von Oracle JDK verwendet werden](using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
++ Alte Dokumentation {#legacy-documentation}
+   + [Verwenden des Execute-Script-Dienstes in AEM Forms on JEE Workbench zum Erstellen von XML-Daten](developing/building-xml.md)
+   + [Komprimieren und Dekomprimieren von Dateien mit einem benutzerdefinierten AEM Forms on JEE-DSC](developing/compressing-decompressing-custom-dsc.md)
+   + [Konfigurieren und Fehlerbehebung für einen AEM Forms on JEE-Servercluster](developing/configure-server-cluster.md)
+   + [Erstellen und Verwenden von Hashes in dynamischen PDF forms](developing/hashing-forms.md)
+   + [Übergeben von Anmeldeinformationen mithilfe von WS-Security-Headern](developing/passing-credentials.md)
+

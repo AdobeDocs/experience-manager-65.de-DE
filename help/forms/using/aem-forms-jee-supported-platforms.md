@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 73d5b894dfa1bbb3ae3f2973cc4f9db1ace90ef8
+source-git-commit: dab643ffd64217018bf2f5544ae3c417963cea82
 workflow-type: tm+mt
-source-wordcount: '3515'
+source-wordcount: '3533'
 ht-degree: 72%
 
 ---
@@ -419,8 +419,12 @@ Außerdem sollten Sie die folgenden Punkte beachten, wenn Sie die Software für 
    <td>8,5 </td>
   </tr>
   <tr>
-   <td>Microsoft Sharepoint</td>
-   <td>2016<br /> </td>
+   <td>Microsoft Sharepoint </td>
+   <td>2016 (überholt)<br /> </td>
+  </tr>
+  <tr>
+   <td>Microsoft Sharepoint </td>
+   <td>2019<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -755,6 +759,10 @@ Adobe behält sich das Recht vor, die von einer Version von AEM Forms on JEE unt
 Weitere Informationen über Patches von Drittanbietern erhalten Sie auch auf der Adobe Enterprise-Supportseite, indem Sie nach Knowledgebase-Artikeln für Ihr jeweiliges Produkt suchen.
 
 ## Plattformaktualisierungen {#platform-updates}
+
+Die folgenden Plattformen werden mit der AEM Forms-Version 6.5.13.0 vom 2. Juni 2022 als veraltet gekennzeichnet:
+
+- Microsoft SharePoint 2016
 
 Die folgenden Plattformen sind mit der AEM Forms-Version 6.5.12.0 vom 3. März 2022 als veraltet gekennzeichnet:
 
