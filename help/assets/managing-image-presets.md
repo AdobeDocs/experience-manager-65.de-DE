@@ -13,10 +13,10 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Image Presets
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
+source-git-commit: 0d3bcdaa10d16c292aa0dd60254302d30fd700d6
 workflow-type: tm+mt
 source-wordcount: '3839'
-ht-degree: 83%
+ht-degree: 84%
 
 ---
 
@@ -42,7 +42,7 @@ Wie ein Makro ist eine Bildvorgabe eine vordefinierte Sammlung aus Größenangab
 >
 >Im Modus Dynamic Media - Scene7 werden Bildvorgaben nur für Bild-Assets unterstützt.
 
-Sie können zwei Bildvorgaben erstellen: eine mit 500 x 500 Pixel für die Desktopcomputerversion und die andere mit 150 x 150 Pixel für die Mobilgeräteversion. Sie können zwei Bildvorgaben erstellen: `Enlarge` (Vergrößern) dient der Anzeige von Bildern mit einer Auflösung von 500 x 500 Pixel, `Thumbnail` (Miniaturansicht) der Anzeige von Bildern mit einer Auflösung von 150 x 150 Pixel. Zum Übermitteln von Bildern mit der Größe `Enlarge` und `Thumbnail` sucht Experience Manager nach der Definition der Bildvorgabe „Vergrößern“ und nach der Bildvorgabe „Miniaturansicht“. Experience Manager generiert anschließend dynamisch ein Bild anhand der Größen- und Formatierungsspezifikationen der jeweiligen Bildvorgabe.
+Sie können zwei Bildvorgaben erstellen: eine mit 500 x 500 Pixel für die Desktopcomputerversion und die andere mit 150 x 150 Pixel für die Mobilgeräteversion. Sie können zwei Bildvorgaben erstellen: `Enlarge` (Vergrößern) dient der Anzeige von Bildern mit einer Auflösung von 500 x 500 Pixel, `Thumbnail` (Miniatur) der Anzeige von Bildern mit einer Auflösung von 150 x 150 Pixel. Zum Übermitteln von Bildern mit der Größe `Enlarge` und `Thumbnail` sucht Experience Manager nach der Definition der Bildvorgabe „Vergrößern“ und nach der Bildvorgabe „Miniaturansicht“. Experience Manager generiert anschließend dynamisch ein Bild anhand der Größen- und Formatierungsspezifikationen der jeweiligen Bildvorgabe.
 
 Bilder, die bei der dynamischen Bereitstellung verkleinert werden, können an Schärfe und Detailgenauigkeit verlieren. Aus diesem Grund umfasst jede Bildvorgabe Formatierungssteuerelemente für die Optimierung eines Bildes, wenn es mit einer bestimmten Größe bereitgestellt wird. Dadurch wird sichergestellt, dass die Bilder scharf und deutlich auf der Website oder im Programm angezeigt werden.
 
@@ -60,7 +60,7 @@ Bildvorgaben verwalten Sie in Experience Manager, indem Sie auf das Experience M
 >
 >Im *Modus „Dynamic Media – Scene7“* müssen Sie Bildvorgaben *nicht* veröffentlichen, da die Veröffentlichung von Bildvorgaben automatisch erfolgt.
 >
->In *Dynamic Media - Hybridmodus* müssen Sie Bildvorgaben manuell veröffentlichen.
+>In *Dynamic Media - Hybridmodus*, müssen Sie Bildvorgaben manuell veröffentlichen.
 >
 >Siehe [Veröffentlichen von Bildvorgaben](#publishing-image-presets).
 
@@ -95,7 +95,7 @@ Um Dynamic Media zu verwenden und dynamische Ausgabedarstellungen für AI-, EPS-
 
 >[!NOTE]
 >
->Im Workflow [!UICONTROL DAM Update Asset] generiert der Schritt **[!UICONTROL EPS-Miniaturansichten]** Miniaturansichten für EPS-Dateien.
+>Im [!UICONTROL DAM-Update-Asset] Workflow, der **[!UICONTROL EPS-Miniaturansichten]** -Schritt generiert Miniaturansichten für EPS-Dateien.
 
 #### Metadateneigenschaften von PDF-/AI-/EPS-Assets {#pdf-ai-eps-asset-metadata-properties}
 
@@ -106,7 +106,7 @@ Um Dynamic Media zu verwenden und dynamische Ausgabedarstellungen für AI-, EPS-
 
 Sie können `Rasterize PDF/AI Image Preview Rendition`-Prozesskomponentenoptionen über den Workflow `DAM Update Asset` aufrufen.
 
-Tippen Sie links oben auf Adobe Experience Manager, navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**. Wählen Sie auf der Seite „Workflow-Modelle“ **[!UICONTROL DAM-Update-Asset]** aus und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Bearbeiten]**. Doppeltippen Sie auf der Workflow-Seite [!UICONTROL DAM-Update-Asset] auf die Prozesskomponente `Rasterize PDF/AI Image Preview Rendition` , um das Dialogfeld &quot;Schritteigenschaften&quot;zu öffnen.
+Tippen Sie links oben auf Adobe Experience Manager, navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**. Wählen Sie auf der Seite „Workflow-Modelle“ **[!UICONTROL DAM-Update-Asset]** aus und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Bearbeiten]**. Im [!UICONTROL DAM-Update-Asset] Workflow-Seite, doppeltippen Sie auf die `Rasterize PDF/AI Image Preview Rendition` Prozesskomponente , um das Dialogfeld &quot;Schritteigenschaften&quot;zu öffnen.
 
 #### PDF-/AI-Bildvorschau-Ausgabedarstellung rastern – Optionen {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -156,13 +156,13 @@ Wenn Sie die Aufnahme von INDD-Dateien unterstützen möchten, um aus diesem Dat
 
 Für InDesign-Dateien werden nur dann Teil-Assets extrahiert, wenn der Adobe InDesign Server in Experience Manager integriert ist. Referenzierte Assets werden auf der Grundlage ihrer Metadaten verknüpft. Für die Verknüpfung ist InDesign Server nicht erforderlich. Die referenzierten Assets müssen jedoch in Experience Manager vorhanden sein, bevor die InDesign-Dateien verarbeitet werden, damit die Verknüpfungen zwischen den InDesign-Dateien und den referenzierten Assets erstellt werden können.
 
-Siehe [Integrieren von Experience Manager-Assets mit InDesign Server](/help/assets/indesign.md).
+Siehe [Integrieren von Experience Manager Assets mit InDesign Server](/help/assets/indesign.md).
 
-Die Prozesskomponente &quot;Medienextrahierung&quot;im Workflow `DAM Update Asset` führt mehrere vorkonfigurierte ExtendScript-Skripte aus, um InDesign-Dateien zu verarbeiten.
+Die Prozesskomponente &quot;Medienextrahierung&quot;im `DAM Update Asset` Workflow führt mehrere vorkonfigurierte ExtendScript-Skripte aus, um InDesign-Dateien zu verarbeiten.
 
 ![Die ExtendScript-Pfade in den Argumenten des Prozesses zum Extrahieren von Medien](assets/6_5_mediaextractionprocess.png)
 
-Die ExtendScript-Pfade in den Argumenten der Prozesskomponente &quot;Medienextrahierung&quot;im Workflow [!UICONTROL DAM-Update-Asset].
+Die ExtendScript-Pfade in den Argumenten der Prozesskomponente &quot;Medienextrahierung&quot;im [!UICONTROL DAM-Update-Asset] Arbeitsablauf.
 
 Die folgenden Skripte werden von der Dynamic Media-Integration verwendet:
 
@@ -170,18 +170,18 @@ Die folgenden Skripte werden von der Dynamic Media-Integration verwendet:
  <tbody>
   <tr>
    <td><strong>ExtendScript-Name</strong></td>
-   <td><strong>Default</strong></td>
+   <td><strong>Standard</strong></td>
    <td><strong>Beschreibung</strong></td>
   </tr>
   <tr>
    <td>ThumbnailExport.jsx</td>
    <td>Ja</td>
-   <td>Generiert eine 300 ppi lange <code>thumbnail.jpg</code>-Ausgabedarstellung, die von der Prozesskomponente <code>Dynamic Media Process Image Assets</code> optimiert und in eine PTIFF-Ausgabedarstellung umgewandelt wird.<br /> </td>
+   <td>Erstellt 300 ppi <code>thumbnail.jpg</code> Ausgabedarstellung, die von optimiert und in eine PTIFF-Ausgabedarstellung umgewandelt wird <code>Dynamic Media Process Image Assets</code> Prozesskomponente.<br /> </td>
   </tr>
   <tr>
    <td>JPEGPagesExport.jsx</td>
    <td>Ja</td>
-   <td>Generiert für jede Seite ein 300 PPI-JPEG-Unter-Asset. Das JPEG-Teil-Asset ist ein echtes Asset, das unter dem InDesign-Asset gespeichert wird. Es wird auch vom Workflow <code>DAM Update Asset</code> optimiert und in eine PTIFF-Darstellung umgewandelt.<br /> </td>
+   <td>Generiert für jede Seite ein 300 ppi großes JPEG-Teil-Asset. Das JPEG-Teil-Asset ist ein echtes Asset, das unter dem InDesign-Asset gespeichert wird. Es wird auch vom Workflow <code>DAM Update Asset</code> optimiert und in eine PTIFF-Darstellung umgewandelt.<br /> </td>
   </tr>
   <tr>
    <td>PDFPagesExport.jsx</td>
@@ -193,22 +193,21 @@ Die folgenden Skripte werden von der Dynamic Media-Integration verwendet:
 
 ## Konfigurieren der Größe der Miniaturansicht {#configuring-image-thumbnail-size}
 
-Sie können die Größe von Miniaturansichten über die Einstellungen im Workflow **[!UICONTROL DAM-Update-Asset]** konfigurieren. Im Workflow sind zwei Schritte enthalten, in denen Sie die Größe der Miniaturansichten von Bild-Assets konfigurieren können. Obwohl (**[!UICONTROL Dynamic Media Process Image Assets]**) für dynamische Bild-Assets verwendet wird und (**[!UICONTROL Miniaturansichten verarbeiten]**) für die Erstellung statischer Miniaturansichten verwendet wird oder wenn alle anderen Prozesse keine Miniaturansichten generieren, müssen *beide* dieselben Einstellungen aufweisen.
+Sie können die Größe von Miniaturen über die Einstellungen im Workflow **[!UICONTROL DAM-Update-Asset]** konfigurieren. Im Workflow sind zwei Schritte enthalten, in denen Sie die Größe der Miniaturen von Bild-Assets konfigurieren können. Obwohl (**[!UICONTROL Dynamic Media Process Image Assets]**) für dynamische Bild-Assets verwendet wird und (**[!UICONTROL Prozessminiaturansichten]**) für die Erstellung statischer Miniaturansichten verwendet wird oder wenn alle anderen Prozesse keine Miniaturansichten generieren können, *both* muss dieselben Einstellungen aufweisen.
 
-Im Schritt **[!UICONTROL Bild-Assets-Prozess für Dynamic Media]** werden vom Bild-Server Miniaturansichten generiert. Diese Konfiguration ist unabhängig von der Konfiguration, die auf den Schritt **[!UICONTROL Prozessminiaturansichten]** angewendet wird. Das Generieren von Miniaturansichten mit dem Schritt **[!UICONTROL Miniaturansichten verarbeiten]** ist das langsamste und speicherintensivste Verfahren zum Erstellen von Miniaturansichten.
+Im Schritt **[!UICONTROL Bild-Assets-Prozess für Dynamic Media]** werden vom Bild-Server Miniaturen generiert. Diese Konfiguration ist unabhängig von der Konfiguration, die auf den Schritt **[!UICONTROL Prozessminiaturen]** angewendet wird. Das Generieren von Miniaturen mit dem Schritt **[!UICONTROL Miniaturen verarbeiten]** ist das langsamste und speicherintensivste Verfahren zum Erstellen von Miniaturen.
 
-Die Größe der Miniaturansichten wird im folgenden Format definiert: **[!UICONTROL width:height:center]**, z. B. `80:80:false`. Die Breite und Höhe bestimmen die Größe der Miniaturansicht in Pixel. Der Mittelwert ist entweder &quot;false&quot;oder &quot;true&quot;und zeigt bei der Festlegung auf &quot;true&quot;an, dass das Miniaturbild genau die in der Konfiguration angegebene Größe aufweist. Wenn das in der Größe angepasste Bild kleiner ist, wird es im Miniaturbildfenster zentriert.
+Die Größe der Miniaturen wird im folgenden Format definiert: **[!UICONTROL Breite:height:center]**, z. B. `80:80:false`. Die Breite und Höhe bestimmen die Größe der Miniaturansicht in Pixel. Der Mittelwert ist entweder &quot;false&quot;oder &quot;true&quot;und zeigt bei der Festlegung auf &quot;true&quot;an, dass das Miniaturbild genau die in der Konfiguration angegebene Größe aufweist. Wenn das in der Größe angepasste Bild kleiner ist, wird es im Miniaturbildfenster zentriert.
 
 >[!NOTE]
 >
->* Die Größe der Miniaturansichten für EPS-Dateien wird im Schritt **[!UICONTROL EPS-Miniaturen]** auf der Registerkarte **[!UICONTROL Argumente]** unter „Miniaturansichten“ konfiguriert.
+>* Die Größe der Miniaturen für EPS-Dateien wird im Schritt **[!UICONTROL EPS-Miniaturen]** auf der Registerkarte **[!UICONTROL Argumente]** unter „Miniaturen“ konfiguriert.
 >
->* Die Größe der Miniaturansichten für Videos wird im Schritt **[!UICONTROL FFmpeg-Miniaturen]** auf der Registerkarte **[!UICONTROL Prozess]** unter **[!UICONTROL Argumente]** konfiguriert.
-
+>* Die Größe der Miniaturen für Videos wird im Schritt **[!UICONTROL FFmpeg-Miniaturen]** auf der Registerkarte **[!UICONTROL Prozess]** unter **[!UICONTROL Argumente]** konfiguriert.
 >
 
 
-**So konfigurieren Sie die Größe der Miniaturansichten:**
+**So konfigurieren Sie die Größe von Miniaturen:**
 
 1. Tippen Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]** > **[!UICONTROL DAM-Update-Asset]** > **[!UICONTROL Bearbeiten]**.
 1. Tippen Sie auf den Schritt **[!UICONTROL Dynamic Media Process Image-Assets]** und dann auf die Registerkarte **[!UICONTROL Miniaturansichten]**. Ändern Sie bei Bedarf die Größe der Miniaturansichten und tippen Sie auf **[!UICONTROL OK]**.
@@ -303,9 +302,9 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
 
 * **[!UICONTROL Einfaches Scharfzeichnen aktivieren]**: Aktivieren Sie nicht die Option **[!UICONTROL Einfaches Scharfzeichnen aktivieren]** (dieser Scharfzeichnungsfilter bietet weniger Kontrolle als die Einstellungen für „Unschärfemaske“).
 
-* **[!UICONTROL Scharfzeichnen: Resampling-Modus]**: Wählen Sie **[!UICONTROL Bikubisch]**.
+* **[!UICONTROL Scharfzeichnen: Resamplingmodus]** - Auswählen **[!UICONTROL Scharf2]**.
 
-#### Optionen auf der Registerkarte „Basis“  {#basic-tab-options}
+#### Optionen auf der Registerkarte „Standard“ {#basic-tab-options}
 
 <table>
  <tbody>
@@ -335,7 +334,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
      <li><strong>Typ</strong>: Wählen Sie <strong>Adaptiv</strong> (Standard), <strong>Web</strong> oder <strong>Macintosh</strong>. Wenn Sie <strong>GIF mit Alpha</strong> auswählen, ist die Option „Macintosh“ nicht verfügbar.</li>
      <li><strong>Dithering</strong>: Wählen Sie <strong>Diffus</strong> oder <strong>Aus</strong>.</li>
      <li><strong>Anzahl Farben</strong>: Geben Sie eine Zahl von 2 bis 256 ein.</li>
-     <li><strong>Farbliste</strong>: Geben Sie eine durch Komma getrennte Liste ein. Geben Sie beispielsweise für Weiß, Grau und Schwarz <code>000000,888888,ffffff</code> ein.</li>
+     <li><strong>Farbliste</strong>: Geben Sie eine durch Komma getrennte Liste ein. Geben Sie beispielsweise für Weiß, Grau und Schwarz „<code>000000,888888,ffffff</code>“ ein.</li>
     </ul>
     <div>
       Bei Auswahl von
@@ -344,7 +343,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
      <strong>TIFF mit Alpha</strong> erhalten Sie die folgende zusätzliche Option:
     </div>
     <ul>
-     <li><strong>Komprimierung</strong>: Wählen Sie einen Komprimierungsalgorithmus. Die Algorithmusoptionen für PDF sind <strong>None</strong>, <strong>Zip</strong> und <strong>Jpeg</strong>. Für TIFF sind die Optionen <strong>None</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> und <strong>Zip</strong>. und für TIFF mit Alpha sind <strong>None</strong>, <strong>LZW</strong> und <strong>Zip</strong>.</li>
+     <li><strong>Komprimierung</strong>: Wählen Sie einen Komprimierungsalgorithmus. Algorithmusoptionen für PDF sind <strong>Keines</strong>, <strong>Zip</strong>und <strong>Jpeg</strong>; für die TIFF sind die Optionen <strong>Keines</strong>, <strong>LZW</strong>, <strong>Jpeg</strong>und <strong>Zip</strong>; und für TIFF mit Alpha <strong>Keines</strong>, <strong>LZW</strong>und <strong>Zip</strong>.</li>
     </ul> <p>Die Auswahl <strong>PNG</strong>, <strong>PNG mit Alpha</strong> oder <strong>EPS</strong> ergibt keine zusätzlichen Optionen.</p> </td>
   </tr>
   <tr>
@@ -354,7 +353,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
  </tbody>
 </table>
 
-#### Optionen auf der Registerkarte „Erweitert“  {#advanced-tab-options}
+#### Optionen auf der Registerkarte „Erweitert“ {#advanced-tab-options}
 
 <table>
  <tbody>
@@ -393,7 +392,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
    <td><p>Wählen Sie <strong>Kein</strong>, <strong>Scharfzeichnen</strong> oder <strong>Unschärfemaske</strong> aus. </p>
     <ul>
      <li>Wählen Sie <strong>Kein</strong> aus, wenn Sie das Scharfzeichnen deaktivieren möchten.</li>
-     <li>Wählen Sie <strong>Scharfzeichnen</strong> aus, wenn Sie einen einfachen Scharfzeichnungsfilter auf das Bild anwenden möchten, nachdem die Skalierung abgeschlossen ist. Mit der Scharfzeichnung können Sie unter Umständen Weichzeichnung kaschieren, die durch die Anzeige eines Bildes in einer anderen Größe entsteht. </li>
+     <li>Auswählen <strong>Scharfzeichnen</strong> , wenn Sie einen einfachen Scharfzeichnungsfilter auf das Bild anwenden möchten, nachdem die Skalierung abgeschlossen ist. Mit der Scharfzeichnung können Sie unter Umständen Weichzeichnung kaschieren, die durch die Anzeige eines Bildes in einer anderen Größe entsteht. </li>
      <li>Wählen Sie<strong> Unschärfemaske</strong>, um einen Scharfzeichnungsfiltereffekt für das endgültige Bild nach dem Downsampling zu optimieren. Sie können die Intensität des Effekts, den Radius des Effekts (gemessen in Pixel) und einen Schwellenwert für den Kontrast festlegen, der ignoriert werden soll. Dieser Effekt verwendet dieselben Optionen wie der Photoshop-Filter „Unscharf maskieren“.</li>
     </ul> <p>In <strong>Unschärfemaske</strong> sind die folgenden Optionen verfügbar:</p>
     <ul>
@@ -441,7 +440,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
 
 ## Definieren von Bildvorgabenoptionen mit Bildmodifikatoren {#defining-image-preset-options-with-image-modifiers}
 
-Zusätzlich zu den auf den Registerkarten „Allgemein“ und „Erweitert“ verfügbaren Optionen können Sie Bildmodifikatoren definieren, damit Sie beim Definieren von Bildvorgaben über mehr Optionen verfügen. Das Rendern von Bildern beruht auf der Image Rendering-API, die detailliert in der [HTTP-Protokollreferenz](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html#image-serving-api) definiert ist.
+Zusätzlich zu den auf den Registerkarten „Allgemein“ und „Erweitert“ verfügbaren Optionen können Sie Bildmodifikatoren definieren, damit Sie beim Definieren von Bildvorgaben über mehr Optionen verfügen. Das Bild-Rendering basiert auf der Bild-Rendering-API, die detailliert im Abschnitt [HTTP-Protokollreferenz](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html#image-serving-api).
 
 Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modifikatoren.
 
@@ -515,5 +514,5 @@ Wenn Sie den Modus „Dynamic Media –Hybrid“ ausführen, müssen Sie Bildvo
 ## Löschen von Dynamic Media-Bildvorgaben {#deleting-image-presets}
 
 1. Tippen oder klicken Sie in Experience Manager auf das Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen.
-1. Tippen Sie auf das Symbol **[!UICONTROL Tools]** und navigieren Sie dann zu **[!UICONTROL Assets]** > **[!UICONTROL Bildvorgaben]**.
+1. Tippen Sie auf **[!UICONTROL Instrumente]** Symbol und navigieren Sie dann zu **[!UICONTROL Assets]** > **[!UICONTROL Bildvorgaben]**.
 1. Wählen Sie eine Vorgabe aus und klicken Sie dann auf **[!UICONTROL Löschen]**. Dynamic Media bestätigt Ihre Löschabsicht. Tippen Sie auf **[!UICONTROL Löschen]**, um den Löschvorgang vorzunehmen, oder auf **[!UICONTROL Abbrechen]**, um den Vorgang abzubrechen.
