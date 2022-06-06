@@ -12,10 +12,10 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 9a3f26b6709461a911e833f7e340d11c759c7dae
+source-git-commit: e8320b1dac681fd2c9e749344e8c126487d840ba
 workflow-type: tm+mt
-source-wordcount: '3558'
-ht-degree: 63%
+source-wordcount: '3557'
+ht-degree: 62%
 
 ---
 
@@ -98,7 +98,7 @@ Der empfohlene Wert lautet `-1` da dies die Warteschlange auf unbegrenzt festleg
 **Apache Sling GET Servlet** Konfigurieren Sie einige Aspekte des Renderings:
 
 * **Auto Index** zum Aktivieren/Deaktivieren der Verzeichnisausgabe beim Browsen.
-* **Aktivieren** (oder deaktivieren) Sie Standardausgaben wie **HMTL**, **Nur Text**, **JSON** oder **XML**.
+* **Aktivieren** (oder deaktivieren) Standardausgabeformate wie **HTML**, **Nur Text**, **JSON** oder **XML**.
 Sie sollten JSON nicht deaktivieren.
 
 >[!NOTE]
@@ -109,7 +109,7 @@ Sie sollten JSON nicht deaktivieren.
 
 Bestimmte Einstellungen können die Leistung beeinträchtigen. Deaktivieren Sie diese, falls möglich, insbesondere für Produktionsinstanzen.
 
-* S **ource VM** und **Target VM** definieren die JDK-Version als die für Runtime JVM verwendete Version.
+* **Quell-VM** und **Target VM**, definieren Sie die JDK-Version als die als LaufzeitjVM verwendete.
 
 * Für Produktionsinstanzen:
 
@@ -117,7 +117,7 @@ Bestimmte Einstellungen können die Leistung beeinträchtigen. Deaktivieren Sie 
 
 **Apache Sling JCR-Installationsprogramm** Diese Parameter benötigen wahrscheinlich keine Konfiguration, können aber bei der Entwicklung oder beim Debugging nützlich sein, um sie zu kennen. Beispielsweise kann es nützlich sein, die Installationsordner ein- oder auszuchecken oder ein Paket zu erstellen.
 
-* **Installation folders name regexp** und **Max hierarchy depth of install folders** geben an, wo und bis zu welcher Ebene Repository-Ordner nach zu installierenden Ressourcen durchsucht werden. Bei Verwendung eines Platzhalters (wie in*/install) werden alle passenden Treffer durchsucht, z. B. `/libs/sling/install` und `/libs/cq/core/install`.
+* **Installation folders name regexp** und **Max hierarchy depth of install folders** geben an, wo und bis zu welcher Ebene Repository-Ordner nach zu installierenden Ressourcen durchsucht werden. Bei Verwendung eines Platzhalters (wie in&#42;/install) werden alle passenden Treffer durchsucht, z. B. `/libs/sling/install` und `/libs/cq/core/install`.
 
 * **Search Path** listet die Pfade auf, in denen jcrinstall nach zu installierenden Ressourcen sucht, und eine Ziffer, die den Gewichtungsfaktor für den Pfad angibt.
 
@@ -320,19 +320,19 @@ Wenn Sie [geschlossene Benutzergruppen](/help/sites-administering/cug.md) verwen
 In AEM sind zwei Benutzeroberflächen verfügbar:
 
 * Die Touch-optimierte Benutzeroberfläche ist die standardmäßige Benutzeroberfläche von AEM
-* und die veraltete klassische Benutzeroberfläche ist weiterhin voll funktionsfähig
+* und die veraltete klassische Benutzeroberfläche weiterhin voll funktionsfähig ist
 
 Mit AEM Root Mapping können Sie die Benutzeroberfläche konfigurieren, die Sie als Standard für Ihre Instanz verwenden möchten:
 
 * So verwenden Sie die Touch-optimierte Benutzeroberfläche als Standardbenutzeroberfläche **Zielpfad** sollte auf Folgendes verweisen:
 
-   ```
+   ```shell
       /projects.html
    ```
 
 * Wenn Sie die klassische Benutzeroberfläche als Standard verwenden möchten, muss der **Zielpfad** auf Folgendes verweisen:
 
-   ```
+   ```shell
       /welcome.html
    ```
 

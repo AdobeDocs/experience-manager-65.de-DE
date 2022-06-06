@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: b6de561422bc3533eef153b13d2c65b4cb7e0387
+source-git-commit: e8320b1dac681fd2c9e749344e8c126487d840ba
 workflow-type: tm+mt
 source-wordcount: '1897'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -94,7 +94,7 @@ Die PageSpeed-Tools von Google bieten Website-Analysen zur Einhaltung der Best P
 
 ### Durchführen von Tests {#performing-tests}
 
-Um Leistungstests für die Autorenumgebung durchzuführen, müssen Sie das Erlebnis der Produktionsautoren simulieren. Die Autorinstallationen müssen also sämtliche Komponenten, OSGi-Bundles, UI-Anpassungen, benutzerdefinierten Indizes und sonstigen Ergänzungen für die produktionsbezogenen Autoreninstanzen umfassen.
+Um Leistungstests in der Autorenumgebung durchzuführen, müssen Sie das Erlebnis von Produktionsautoren simulieren. Die Autorinstallationen müssen also sämtliche Komponenten, OSGi-Bundles, UI-Anpassungen, benutzerdefinierten Indizes und sonstigen Ergänzungen für die produktionsbezogenen Autoreninstanzen umfassen.
 
 Es gibt eine Vielzahl von Automatisierungsframeworks, die auf Leistungs- und Auslastungstests ausgelegt sind. Benutzerdefinierte Skripts können in diesen Tools aufgezeichnet und dann wiedergegeben werden, um eine Höchstanzahl von Autoren zu simulieren, die gleichzeitig ähnlichen Inhalt erstellen und Aktivierungen durchführen. Sie sollten auf das Tough Day-Tool zum Simulieren von Aktivitäten wie Hochladen Tausender von Assets oder Aktivieren einer großen Anzahl von Seiten zurückgreifen.
 
