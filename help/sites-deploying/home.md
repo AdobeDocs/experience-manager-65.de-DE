@@ -3,9 +3,9 @@ title: AEM 6.5 Bereitstellen des Benutzerhandbuchs
 seo-title: AEM 6.5 Deploying User Guide
 description: Erfahren Sie mehr über die Installation und Bereitstellung von Adobe Experience Manager 6.5 und über die zugehörige Architektur, einschließlich der Adobe Managed Services-Cloud-Implementierung.
 exl-id: 4a82008c-af69-414e-bd98-c7f683a74905
-source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
+source-git-commit: eb00c8004558b8809fb21d6d6e435d8837319b51
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '392'
 ht-degree: 35%
 
 ---
@@ -16,7 +16,7 @@ Dieses Handbuch behandelt alle AEM Bereitstellungsaufgaben, z. B. die Installati
 
 ## Wichtige AEM
 
-* [Erste Schritte mit AEM](https://helpx.adobe.com/de/experience-manager/get-started.html)
+* [Erste Schritte mit AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=de)
 * [Versionshinweise zu AEM 6.5](/help/release-notes/home.md)
 * [Aktuelle Aktualisierungen der Dokumentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Checkliste für die AEM-Sicherheit](/help/sites-administering/security-checklist.md)

@@ -4,9 +4,9 @@ seo-title: AEM 6.5 Mobile User Guide
 description: Profitieren Sie von AEM Unterstützung zum Erstellen und Verwalten von Inhalten für mobile Apps. Hier erhalten Sie eine Einführung in und erfahren, wie Sie die On-Demand Services App und Adobe PhoneGap Enterprise erstellen, entwickeln und verwalten.
 seo-description: Describes how to create and manage content for mobile applications.
 exl-id: 3531d8ea-614d-465a-8b4a-e3e3f3461e94
-source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
+source-git-commit: eb00c8004558b8809fb21d6d6e435d8837319b51
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '392'
 ht-degree: 36%
 
 ---
@@ -17,7 +17,7 @@ Profitieren Sie von AEM Unterstützung zum Erstellen und Verwalten von Inhalten 
 
 ## Wichtige AEM
 
-* [Erste Schritte mit AEM](https://helpx.adobe.com/de/experience-manager/get-started.html)
+* [Erste Schritte mit AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=de)
 * [Versionshinweise zu AEM 6.5](/help/release-notes/home.md)
 * [Aktuelle Aktualisierungen der Dokumentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Checkliste für die AEM-Sicherheit](/help/sites-administering/security-checklist.md)

@@ -4,9 +4,9 @@ seo-title: AEM 6.5 Developing User Guide
 description: Erfahren Sie, wie Sie Ihre AEM-Instanz erstellen. Erfahren Sie mehr über die Plattform und die Komponenten und finden Sie Informationen zu Entwicklungs-Tools und Personalisierung.
 seo-description: Covers how to build out your AEM instance.
 exl-id: 4413f5e8-7e52-4ea7-8be3-5717b780a6e2
-source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
+source-git-commit: eb00c8004558b8809fb21d6d6e435d8837319b51
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '372'
 ht-degree: 38%
 
 ---
@@ -17,7 +17,7 @@ Erfahren Sie, wie Sie Ihre AEM-Instanz erstellen. Erfahren Sie mehr über die Pl
 
 ## Wichtige AEM
 
-* [Erste Schritte mit AEM](https://helpx.adobe.com/de/experience-manager/get-started.html)
+* [Erste Schritte mit AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=de)
 * [Versionshinweise zu AEM 6.5](/help/release-notes/home.md)
 * [Aktuelle Aktualisierungen der Dokumentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Checkliste für die AEM-Sicherheit](/help/sites-administering/security-checklist.md)

@@ -2,10 +2,10 @@
 title: AEM 6.5-Administratorenanleitung
 description: Erfahren Sie mehr über die Verwaltung von AEM 6.5. Diese Handbücher decken Site-Funktionen, Bereitstellungsvorgänge, Sicherheitsfunktionen, Personalisierung, Integration und mehr ab.
 exl-id: 299c783a-1495-4c0d-8431-cd7de142a163
-source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
+source-git-commit: eb00c8004558b8809fb21d6d6e435d8837319b51
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 39%
+source-wordcount: '359'
+ht-degree: 40%
 
 ---
 
@@ -15,7 +15,7 @@ Erfahren Sie mehr über die Verwaltung von AEM 6.5. Diese Handbücher decken Sit
 
 ## Wichtige -Artikel
 
-* [Erste Schritte mit AEM](https://helpx.adobe.com/de/experience-manager/get-started.html)
+* [Erste Schritte mit AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=de)
 * [Versionshinweise zu AEM 6.5](/help/release-notes/home.md)
 * [Aktuelle Aktualisierungen der Dokumentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Checkliste für die AEM-Sicherheit](/help/sites-administering/security-checklist.md)
