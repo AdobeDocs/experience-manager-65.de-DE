@@ -3,9 +3,9 @@ title: Versionshinweise für [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5-Hinweise mit Versionsinformationen, Neuigkeiten, Installationsanleitungen und detaillierten Änderungslisten."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: f78d12d6fa1daa1c1b3afdfe22ecb8c183e8e1d0
+source-git-commit: 6b75c41cf796b28409c263175cf3f3a2044422ff
 workflow-type: tm+mt
-source-wordcount: '3737'
+source-wordcount: '3733'
 ht-degree: 7%
 
 ---
@@ -80,7 +80,7 @@ Die folgenden Fehlerbehebungen, Schlüsselfunktionen und Verbesserungen wurden i
 * Barrierefreiheit - Benutzer, die auf Bildschirmlesehilfen angewiesen sind, werden beim Navigieren durch die Formulare beeinträchtigt. Sie haben Schwierigkeiten, die Informationen zu den Formularsteuerelementen zu verstehen, wenn NVDA die Beschriftungsinformationen für die Steuerelemente &quot;Breite und Höhe&quot;nicht liest. Diese Steuerelemente sind unter der Kopfzeile des responsiven Bild-Zuschnitts während der Navigation im NVDA-Formularmodus &quot;F&quot;vorhanden. (ASSETS-5393)
 * Nachdem Sie eine Dynamic Media-Komponente auf einer Site hinzugefügt haben und nachdem Sie die Seite veröffentlicht haben, ist das neu hinzugefügte Dynamic Media-Asset nicht auf der veröffentlichten Seite sichtbar und auch nicht auf der Vorschauseite sichtbar. Dieses Problem trat sowohl bei Bild- als auch bei Video-Asset-Typen auf. (ASSETS-9467)
 
-## Commerce {#commerce-6513}
+## Commerce  {#commerce-6513}
 
 * &quot;everyone&quot;hat jcr:write für `/content/usergenerated/etc/commerce/smartlists`. (NPR-35230)
 * Die lokale Sortierung von Commerce-Produkten funktioniert nicht mehr. (CQ-4343750)
@@ -232,7 +232,7 @@ Die folgenden Fehlerbehebungen, Schlüsselfunktionen und Verbesserungen wurden i
 
 <!-- version 2 of description above * Allow new email templated under campaign and ambit. (NPR-38445) * The "Approve for Adobe Campaign" workflow was only running for pages which are of type or extending the resource types: "mcm/neolane/components/newsletter", "mcm/campaign/components/newsletter" and "mcm/campaign/components/campaign_newsletterpage". (NPR-38204) -->
 
-### Experience Fragments {#sites-experiencefragments-6513}
+### Experience Fragments  {#sites-experiencefragments-6513}
 
 * Wenn Sie die Aktion &quot;Zur Seite navigieren&quot;in den Verweisen für ein Experience Fragment verwenden, wird die falsche Seite geöffnet. (NPR-38062)
 * Layout-Eigenschaften, die von einer XF-Vorlage stammen, werden nicht innerhalb einer Seite angezeigt. (NPR-38214)
@@ -281,8 +281,9 @@ Die folgenden Fehlerbehebungen, Schlüsselfunktionen und Verbesserungen wurden i
 
 ## Sling {#sling-6513}
 
-* Speicherleck in `DiscoveryLiteDescriptor`. (NPR-38288)
+<!-- OBSOLETE BASED ON CQDOC-19400 * Memory leak in `DiscoveryLiteDescriptor`. (NPR-38288) -->
 * Aktualisieren `sling-javax.activation` Bundle mit Fehlerbehebung von SLING-8777. (NPR-38077)
+
 <!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * Security issues reported under `org.apache.sling.scripting.jst`. (NPR-38067) -->
 
 ## Übersetzungsprojekte {#translation-6513}
