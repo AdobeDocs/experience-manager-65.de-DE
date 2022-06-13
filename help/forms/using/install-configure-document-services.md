@@ -8,10 +8,10 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 4b3327ed46024662813bb538f8338c59e508e10e
+source-git-commit: 57bccab9b95d328591e6cbb1070fd9e59712c016
 workflow-type: tm+mt
-source-wordcount: '5330'
-ht-degree: 50%
+source-wordcount: '5364'
+ht-degree: 49%
 
 ---
 
@@ -765,18 +765,19 @@ Konvertierungsprobleme beim +++ HTML in PDF
 
    * Verwenden Sie die folgenden Befehle, um prov.xml zu generieren und die vorhandene Installation mithilfe der Datei prov.xml neu zu serialisieren, anstatt die in [Seriennummer migrieren](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) Zahlenartikel.
 
-      * prov.xml generieren
+          &quot;
+          
+          adobe_prtk —tool=VolumeSerialize —generate —serial=&lt;serialnum> [—leid=&lt;leid>] [—regsuppress=ss] [—eulasuppress] [—locales=limited list von locales in xx_XX format oder ALL>] [—provfile=&lt;absolute path=&quot;&quot; to=&quot;&quot; prov.xml=&quot;&quot;>]
+          
+          &quot;
+      
+   * Serialisieren Sie das Paket mit Volume (Serialisieren Sie die vorhandene Installation mit der Datei prov.xml und der neuen Seriennummer erneut): Führen Sie den folgenden Befehl aus dem Installationsordner von PRTK als Administrator aus, um die bereitgestellten Pakete auf Clientcomputern zu serialisieren und zu aktivieren:
 
-         ```
-         adobe_prtk --tool=VolumeSerialize --generate --serial=<serialnum> [--leid=<LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=limited list of locales in xx_XX format or ALL>] [--provfile=<Absolute path to prov.xml>]
-         ```
-
-      * Serialisieren Sie das Paket mit Volume (Serialisieren Sie die vorhandene Installation mit der Datei prov.xml und der neuen Seriennummer erneut): Führen Sie den folgenden Befehl aus dem Installationsordner von PRTK als Administrator aus, um die bereitgestellten Pakete auf Clientcomputern zu serialisieren und zu aktivieren:
-
-         ```
-         adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
-         ```
-
+          &quot;
+          adobe_prtk —tool=VolumeSerialize —provfile=C:\prov.xml -stream
+          
+          &quot;
+      
 * Verwenden Sie für Großinstallationen den [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) , um frühere Versionen von Reader und Acrobat zu entfernen. Passen Sie das Installationsprogramm an und stellen Sie es auf allen Computern in Ihrem Unternehmen bereit.
 
 +++
