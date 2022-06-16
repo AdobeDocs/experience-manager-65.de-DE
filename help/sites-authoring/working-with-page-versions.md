@@ -1,8 +1,8 @@
 ---
 title: Arbeiten mit Seitenversionen
-seo-title: Arbeiten mit Seitenversionen
+seo-title: Working with Page Versions
 description: Sie können verschiedene Versionen einer Seite erstellen, vergleichen und wiederherstellen.
-seo-description: Sie können verschiedene Versionen einer Seite erstellen, vergleichen und wiederherstellen.
+seo-description: Create, compare, and restore versions of a page
 uuid: 29e049f0-532c-4e3b-b64f-5be88ee6b08c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 1368347a-9b65-4cfc-87e1-62993dc627fd
 docset: aem65
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: 4d5f7057178ea0a1f00ea363b76dacdfb714b5e3
+source-git-commit: b11a97b9b00e6f80fb0243e234ed1dc2c004ed3a
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 98%
+source-wordcount: '1491'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,7 @@ Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem besti
 * Wiederherstellen einer früheren Seitenversion, um z. B. eine Änderung rückgängig zu machen
 * Vergleichen der aktuellen Version einer Seite mit einer früheren Version, wobei die Unterschiede in Text und Bildern hervorgehoben sind
 
-## Erstellen einer neuen Version    {#creating-a-new-version}
+## Erstellen einer neuen Version   {#creating-a-new-version}
 
 Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 
@@ -164,7 +164,7 @@ Diese Methode kann verwendet werden, um eine Version eines Baums, wie er zu eine
 
 1. Wählen Sie **Wiederherstellen** für die ausgewählte Version des Baums, die als *aktuelle* Version wiederhergestellt werden soll.
 
-## Vorschau einer Version   {#previewing-a-version}
+## Vorschau einer Version {#previewing-a-version}
 
 Sie können eine Vorschau einer bestimmten Version anzeigen:
 
@@ -197,11 +197,15 @@ So vergleichen Sie eine frühere Version mit der aktuellen Seite:
 
 1. Wählen Sie **Mit akt. Version vergleichen** aus. Die Seite [Differenz](/help/sites-authoring/page-diff.md) wird geöffnet. Sie enthält alle vorhandenen Unterschiede.
 
-## Timewarp  {#timewarp}
+## Timewarp {#timewarp}
 
 Timewarp ist eine Funktion, die den *Veröffentlichungsstatus* einer Seite zu einer bestimmten Zeit in der Vergangenheit simuliert.
 
-Da die Erstellung von Inhalten ein fortlaufender und kollaborativer Prozess ist, besteht der Zweck von Timewarp darin, den Autoren zu ermöglichen, die veröffentlichte Website im Laufe der Zeit zu verfolgen, um zu verstehen, wie sich der Inhalt verändert hat. Diese Funktion verwendet die Seitenversionen, um den Zustand der Publishing-Umgebung zu bestimmen.
+>[!TIP]
+>
+>[Timewarp kann auch mit Launches verwendet werden, um eine Vorschau der Zukunft anzuzeigen](/help/sites-authoring/launches.md) bei Ausführung von AEM 6.5.10.0 oder höher.
+
+Da die Erstellung von Inhalten ein fortlaufender und kollaborativer Prozess ist, besteht der Zweck von Timewarp darin, den Autoren zu ermöglichen, die veröffentlichte Website im Laufe der Zeit zu verfolgen, um zu verstehen, wie sich der Inhalt verändert hat. Diese Funktion verwendet die Seitenversionen, um den Zustand der Veröffentlichungsumgebung zu bestimmen.
 
 Gehen Sie hierfür wie folgt vor:
 
