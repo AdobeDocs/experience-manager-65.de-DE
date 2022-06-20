@@ -2,14 +2,21 @@
 title: Unterstützung von Adobe Experience Manager-Inhaltsfragmenten in der Assets-HTTP-API
 description: Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Assets-HTTP-API, einem wichtigen Teil der Headless-Bereitstellungs-Funktion in AEM.
 feature: Content Fragments,Assets HTTP API
-source-git-commit: 2f647fc640d3809dc684bce397831ab37fb94b07
+exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
+source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
 workflow-type: tm+mt
-source-wordcount: '1934'
-ht-degree: 97%
+source-wordcount: '1957'
+ht-degree: 96%
 
 ---
 
 # Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API {#content-fragments-support-in-aem-assets-http-api}
+
+| Version | Artikellink |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html?lang=en) |
+| AEM 6.5 | Dieser Artikel |
+
 
 ## Übersicht {#overview}
 
@@ -21,7 +28,6 @@ Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Assets-H
 >
 >* Assets-REST-API
 >* einschließlich Unterstützung für Inhaltsfragmente
-
 >
 >Die aktuelle Implementierung der Assets-HTTP API basiert auf dem [REST](https://de.wikipedia.org/wiki/Representational_State_Transfer)-Architekturstil.
 
@@ -51,7 +57,7 @@ Die Assets-REST-API:
 
 Die Assets-REST-API ist in jeder standardmäßigen Installation einer aktuellen AEM-Version verfügbar.
 
-## Schlüsselkonzepte {#key-concepts}
+## Wichtige Konzepte {#key-concepts}
 
 Die Assets-REST-API bietet [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)-ähnlichen Zugriff auf Assets, die in einer AEM-Instanz gespeichert sind.
 
@@ -147,7 +153,6 @@ Wenn die Assets-REST-API in einer Umgebung ohne spezifische Authentifizierungsan
 >
 >* [Erklärung: CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=de)
 >* [Video: Entwicklung für CORS mit AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
-
 >
 
 
@@ -211,7 +216,7 @@ Wenn ein Asset angefordert wird, gibt die Antwort die Metadaten (z. B. Titel, N
 
 Die Binärdaten eines Assets werden als SIREN-Link vom Typ `content` dargestellt.
 
-Assets können mehrere Ausgabedarstellungen aufweisen. Diese werden in der Regel als untergeordnete Entitäten bereitgestellt. Eine Ausnahme stellt die Ausgabedarstellung der Miniaturansichten dar, die als Link vom Typ `thumbnail` (`rel="thumbnail"`) bereitgestellt wird.
+Assets können mehrere Ausgabedarstellungen aufweisen. Diese werden in der Regel als untergeordnete Entitäten bereitgestellt. Eine Ausnahme stellt die Ausgabedarstellung der Miniaturen dar, die als Link vom Typ `thumbnail` (`rel="thumbnail"`) bereitgestellt wird.
 
 ### Inhaltsfragmente {#content-fragments}
 
@@ -236,7 +241,7 @@ Zum Erstellen eines neuen Inhaltsfragments muss der Pfad (des internen Repositor
 
 #### Zugehörige Inhalte {#associated-content}
 
-Zugehöriger Inhalt wird derzeit nicht bereitgestellt.
+Zugehörige Inhalte werden derzeit nicht bereitgestellt.
 
 ## Verwenden {#using}
 

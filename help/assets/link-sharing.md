@@ -5,14 +5,20 @@ contentOwner: AG
 role: User
 feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
-source-git-commit: fb9de8a0303edd7e54639f7bb9c8a4f8e9227fa8
+source-git-commit: aa45839c53cb2c0715c9163847351aa2391309e0
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: '1043'
 ht-degree: 32%
 
 ---
 
 # Asset als Link freigeben {#asset-link-sharing}
+
+| Version | Artikellink |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=en) |
+| AEM 6.5 | Dieser Artikel |
+| AEM 6.4 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/link-sharing.html?lang=en) |
 
 [!DNL Adobe Experience Manager Assets]Mit können Sie Assets, Ordner und Sammlungen als URL für Mitglieder Ihres Unternehmens und externe Einheiten (z. B. Partner und Anbieter) freigeben. Die Freigabe von Assets über einen Link ist eine praktische Methode, um Ressourcen für externe Parteien verfügbar zu machen, ohne dass diese sich zuerst bei anmelden müssen. [!DNL Assets].
 
@@ -22,7 +28,7 @@ ht-degree: 32%
 >* Um E-Mails an die Benutzer zu senden, konfigurieren Sie die SMTP-Serverdetails unter [Day CQ Mail Service](#configmailservice).
 
 
-## Freigeben von Assets {#share-assets}
+## Freigeben von Medienelementen {#share-assets}
 
 Um die URL für Assets zu generieren, die Sie für Benutzer freigeben möchten, verwenden Sie die [!UICONTROL Linkfreigabe] angezeigt.
 

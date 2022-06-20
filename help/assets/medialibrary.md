@@ -5,15 +5,21 @@ contentOwner: AG
 role: Architect, Leader
 feature: Asset Management
 exl-id: e10d632d-1d90-4f28-8617-95ee41602997
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 92%
+source-wordcount: '586'
+ht-degree: 90%
 
 ---
 
 
 # Verwenden von Media Library für grundlegendes Asset-Management {#manage-assets-using-media-library}
+
+| Version | Artikellink |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=en) |
+| AEM 6.5 | Dieser Artikel |
+| AEM 6.4 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/medialibrary.html?lang=de) |
 
 Die [!DNL Adobe Experience Manager]-Plattform bietet verschiedene Funktionen zum Verwalten von Assets. Mit Media Library können Benutzer eine kleine Anzahl von Assets in das Repository hochladen, diese auf den Web-Seiten suchen und verwenden und einfache Asset-Management-Aufgaben für die Assets ausführen.
 
@@ -64,7 +70,7 @@ Um die Media Library-Funktionalität zu verwenden, können Sie die Standardbenut
 * Hinzufügen von Assets zu [!DNL Sites]-Seiten über die Content-Suche.
 * Verwenden von [!DNL Content Fragments].
 * Verwenden von HTTP REST- und GraphQL-APIs für [!DNL Content Fragments] und referenzierte Medien-Assets unter Sites-Lizenz.
-* Marketing Cloud-Integration.
+* Experience Cloud-Integration.
 * Anpassen und Erweitern der Benutzeroberfläche für das Asset-Management.
 * Zugriff auf Query Builder (API), um die Suchfunktion zu erweitern.
 * Erstellen von statischen Tags.

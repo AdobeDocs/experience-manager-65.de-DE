@@ -5,14 +5,20 @@ contentOwner: AG
 feature: Smart Tags, Search
 role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
-source-git-commit: fbb27348df0b9d5f93d186acbce45fcf88197c5e
+source-git-commit: dd1e08bee03a6c7b07b32b0fb929d02dad467744
 workflow-type: tm+mt
-source-wordcount: '1544'
-ht-degree: 51%
+source-wordcount: '1579'
+ht-degree: 53%
 
 ---
 
 # Smart-Tags verstehen, anwenden und kuratieren {#enhanced-smart-tags}
+
+| Version | Artikellink |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=en) |
+| AEM 6.5 | Dieser Artikel |
+| AEM 6.4 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/enhanced-smart-tags.html?lang=en) |
 
 Organisationen, die mit digitalen Assets arbeiten, verwenden zunehmend taxonomiegesteuertes Vokabular in Asset-Metadaten. Im Grunde umfasst dieses eine Liste von Schlüsselbegriffen, die Mitarbeiter, Partner und Kunden häufig verwenden, um sich auf digitale Assets einer bestimmten Klasse zu beziehen und nach diesen zu suchen. Das Tagging von Assets mit einem taxonomiegesteuerten Vokabular stellt sicher, dass Assets leicht identifiziert und abgerufen werden können.
 
@@ -26,7 +32,7 @@ Sobald ein Tag trainiert wurde und bereit ist, kann der Dienst dieses Tag über 
 
 Im Hintergrund verwendet der Smart Content Service das Adobe Sensei AI-Framework, um seinen Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden.
 
-Smart Content Service ist ein Cloud-Service, der auf [!DNL Adobe Developer Console] gehostet wird. Um sie in [!DNL Adobe Experience Manager] zu verwenden, muss der Systemadministrator Ihre [!DNL Experience Manager] -Implementierung mit [!DNL Adobe Developer Console] integrieren.
+Smart Content Service ist ein Cloud-Service, der auf gehostet wird. [!DNL Adobe Developer Console]. So verwenden Sie es in [!DNL Adobe Experience Manager]muss der Systemadministrator Ihre [!DNL Experience Manager] Implementierung mit [!DNL Adobe Developer Console].
 
 Die wichtigsten Schritte beim Verwenden des Smart Content Service sind:
 
@@ -39,11 +45,11 @@ Die wichtigsten Schritte beim Verwenden des Smart Content Service sind:
 
 ## Voraussetzungen und unterstützte Formate {#prerequisites}
 
-Bevor Sie den Smart Content Service verwenden können, stellen Sie Folgendes sicher, um eine Integration in [!DNL Adobe Developer Console] zu erstellen:
+Bevor Sie den Smart Content Service verwenden können, stellen Sie Folgendes sicher, um eine Integration in [!DNL Adobe Developer Console]:
 
 * Ein Adobe ID-Konto mit Administratorrechten für das Unternehmen.
 * Aktivieren Sie den Smart Content Service-Dienst für Ihre Organisation.
-* Um das Smart Content Services-Basispaket zu einer Bereitstellung hinzuzufügen, lizenzieren Sie [!DNL Adobe Experience Manager Sites] Basispaket und [!DNL Assets] Add-on.
+* Lizenzieren Sie das Smart Content Services-Basispaket, um es einer Bereitstellung hinzuzufügen. [!DNL Adobe Experience Manager Sites] Basispaket und [!DNL Assets] -Add-on.
 
 Der Dienst wendet Smart-Tags auf Assets der folgenden MIME-Typen an:
 
@@ -74,11 +80,11 @@ Der Dienst wendet Smart-Tags auf Asset-Ausgabedarstellungen der folgenden MIME-T
 
 ## Einstieg  {#onboarding}
 
-Der Smart Content Service kann als Add-on zu [!DNL Experience Manager] erworben werden. Nach dem Kauf wird eine E-Mail an den Administrator Ihres Unternehmens mit einem Link zu [!DNL Adobe I/O] gesendet.
+Der Smart Content Service kann als Add-on zu [!DNL Experience Manager]. Nach dem Kauf wird eine E-Mail an den Administrator Ihres Unternehmens mit einem Link zu [!DNL Adobe I/O].
 
-Der Administrator kann dem Link folgen, um den Smart Content Service mit [!DNL Experience Manager] zu integrieren. Informationen zur Integration des Dienstes mit [!DNL Experience Manager Assets] finden Sie unter [Konfigurieren von Smart-Tags](config-smart-tagging.md).
+Der Administrator kann den Link zur Integration des Smart Content Service in [!DNL Experience Manager]. So integrieren Sie den Dienst in [!DNL Experience Manager Assets], siehe [Konfigurieren von Smart-Tags](config-smart-tagging.md).
 
-Der Onboarding-Prozess ist abgeschlossen, wenn der Administrator den Dienst konfiguriert und Benutzer in [!DNL Experience Manager] hinzufügt.
+Der Onboarding-Prozess ist abgeschlossen, wenn der Administrator den Dienst konfiguriert und Benutzer in [!DNL Experience Manager].
 
 ## Überprüfen von Assets und Tags {#reviewing-assets-and-tags}
 
@@ -97,11 +103,11 @@ Fügen Sie die Assets einem Ordner hinzu und wenden Sie die Tags über die Eigen
 
 ## Grundlegendes zu [!DNL Experience Manager]-Suchergebnissen mit Smart-Tags {#understandsearch}
 
-Die [!DNL Experience Manager]-Suche kombiniert die Suchbegriffe standardmäßig mit einer `AND`-Klausel. Dieses Standardverhalten ändert sich durch die Verwendung von Smart-Tags nicht. Durch die Verwendung von Smart-Tags wird eine zusätzliche `OR`-Klausel hinzugefügt, mit der Suchbegriffe gefunden werden können, die mit den Smart-Tags in Verbindung stehen. Suchen Sie beispielsweise nach `woman running`. Assets, die in den Metadaten nur das Keyword `woman`oder `running` aufweisen, werden standardmäßig nicht in den Suchergebnissen angezeigt. Ein Asset, das über Smart-Tags mit `woman` oder `running` getaggt wurde, wird bei dieser Suchanfrage jedoch angezeigt. Die Suchergebnisse sind also eine Kombination aus
+Die [!DNL Experience Manager]-Suche kombiniert die Suchbegriffe standardmäßig mit einer `AND`-Klausel. Dieses Standardverhalten ändert sich durch die Verwendung von Smart-Tags nicht. Durch die Verwendung von Smart-Tags werden zusätzliche `OR` -Klausel, um einen der Suchbegriffe zu finden, die mit den Smart-Tags in Verbindung stehen. Suchen Sie beispielsweise nach `woman running`. Assets, die in den Metadaten nur das Keyword `woman`oder `running` aufweisen, werden standardmäßig nicht in den Suchergebnissen angezeigt. Ein Asset, das über Smart-Tags mit `woman` oder `running` getaggt wurde, wird bei dieser Suchanfrage jedoch angezeigt. Die Suchergebnisse sind also eine Kombination aus
 
-* Assets mit `woman`- und `running`-Schlüsselwörtern in den Metadaten.
+* Assets mit den Keywords `woman` und `running` in den Metadaten.
 
-* Assets, die mit einem der Keywords getaggt wurden.
+* Assets, die über Smart-Tags mit einem der Keywords getaggt wurden.
 
 Die Suchergebnisse, die in Metadatenfeldern alle Suchbegriffe aufweisen, werden zuerst angezeigt. Danach folgen die Suchergebnisse, die einem oder mehr Suchbegriffen in den Smart-Tags entsprechen. Im obigen Beispiel werden die Suchergebnisse ungefähr in dieser Reihenfolge angezeigt:
 
@@ -111,7 +117,7 @@ Die Suchergebnisse, die in Metadatenfeldern alle Suchbegriffe aufweisen, werden 
 
 >[!CAUTION]
 >
->Wenn die Lucene-Indizierung von [!DNL Adobe Experience Manager] ausgeführt wird, funktioniert die Suche, die auf Smart-Tags basiert, nicht erwartungsgemäß.
+>Wenn die Lucene-Indizierung aus [!DNL Adobe Experience Manager], dann funktioniert die Suche, die auf Smart-Tags basiert, nicht wie erwartet.
 
 ## Assets automatisch taggen {#tagging-assets-automatically}
 
@@ -125,7 +131,7 @@ Sie können den Tagging-Workflow periodisch oder nur bei Bedarf ausführen.
 
 ### Periodisches Tagging {#periodic-tagging}
 
-Sie können bestimmen, dass der Smart Content Service Assets in einem Ordner regelmäßig mit Tags versehen soll. Öffnen Sie die Eigenschaftenseite Ihres Asset-Ordners, wählen Sie **[!UICONTROL Smart-Tags aktivieren]** auf der Registerkarte **[!UICONTROL Details]** aus und speichern Sie die Änderungen.
+Sie können bestimmen, dass der Smart Content Service Assets in einem Ordner regelmäßig mit Tags versehen soll. Öffnen Sie die Eigenschaftenseite Ihres Asset-Ordners und wählen Sie **[!UICONTROL Aktivieren von Smart-Tags]** unter **[!UICONTROL Details]** und speichern Sie die Änderungen.
 
 Sobald diese Option für einen Ordner ausgewählt ist, markiert der Smart Content Service die Assets automatisch im Ordner. Standardmäßig wird der Tagging-Workflow täglich um 12:00 Uhr ausgeführt.
 
@@ -176,15 +182,15 @@ Sie können einem Tag auch einen höheren Rang zuweisen, um seine Relevanz für 
 
 1. Suchen Sie im Suchfeld mithilfe eines Tags als Keyword nach Assets basierend.
 1. Um ein Bild zu identifizieren, das Sie für Ihre Suche nicht für relevant halten, überprüfen Sie die Suchergebnisse.
-1. Wählen Sie das Bild aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Tags verwalten]** .
-1. Überprüfen Sie auf der Seite **[!UICONTROL Tags verwalten]** die Tags. Wenn das Bild nicht anhand eines bestimmten Tags durchsucht werden soll, wählen Sie das Tag aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Löschen]** . Klicken Sie alternativ auf das Symbol `x` , das neben einem Tag angezeigt wird.
-1. Um einem Tag optional einen höheren Rang zuzuweisen, wählen Sie das Tag aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Bewerben]** . Das höhergestufte Tag wird in den Abschnitt **[!UICONTROL Tags]** verschoben.
-1. Klicken Sie auf **[!UICONTROL Save]** und dann auf **[!UICONTROL OK]**
-1. Navigieren Sie zur Seite **[!UICONTROL Eigenschaften]** für das Bild. Beachten Sie, dass das von Ihnen beworbene Tag relevanter ist und früher in den Suchergebnissen angezeigt wird.
+1. Wählen Sie das Bild aus und klicken Sie auf **[!UICONTROL Verwalten von Tags]** aus der Symbolleiste.
+1. Aus dem **[!UICONTROL Verwalten von Tags]** Seite, überprüfen Sie die Tags. Wenn Sie nicht möchten, dass das Bild basierend auf einem bestimmten Tag durchsucht wird, wählen Sie das Tag aus und klicken Sie auf **[!UICONTROL Löschen]** aus der Symbolleiste. Klicken Sie alternativ auf `x` -Symbol, das neben einem -Tag angezeigt wird.
+1. Um einem Tag optional einen höheren Rang zuzuweisen, wählen Sie das Tag aus und klicken Sie auf **[!UICONTROL Bewerben]** aus der Symbolleiste. Das höhergestufte Tag wird in den Abschnitt **[!UICONTROL Tags]** verschoben.
+1. Klicken **[!UICONTROL Speichern]** und klicken Sie anschließend auf **[!UICONTROL OK]**
+1. Navigieren Sie zum **[!UICONTROL Eigenschaften]** Seite für das Bild. Beachten Sie, dass das von Ihnen beworbene Tag relevanter ist und früher in den Suchergebnissen angezeigt wird.
 
 ## Tipps und Einschränkungen {#tips-best-practices-limitations}
 
-* Verwenden Sie zum Trainieren des Modells die am besten geeigneten Bilder. Das Training kann nicht rückgängig gemacht werden oder das Trainings-Modell kann nicht entfernt werden. Ihre Tagging-Genauigkeit hängt von der aktuellen Schulung ab. Gehen Sie daher sorgfältig vor.
+* Verwenden Sie zum Trainieren des Modells die am besten geeigneten Bilder. Das Training kann nicht rückgängig gemacht werden, das Trainings-Modell kann nicht entfernt werden. Ihre Tagging-Genauigkeit hängt von der aktuellen Schulung ab. Gehen Sie daher sorgfältig vor.
 * Die Nutzung von Smart Content Services ist auf bis zu 2 Millionen getaggte Bilder pro Jahr beschränkt. Alle doppelten Bilder, die verarbeitet und mit Tags versehen werden, werden als getaggtes Bild gezählt.
 * Wenn Sie den Tagging-Workflow über die Timeline ausführen, können Sie Tags gleichzeitig auf maximal 15 Assets anwenden.
 * Smart-Tags funktionieren nur für PNG- und JPG-Bildformate. Daher werden unterstützte Assets, deren Ausgabedarstellungen in diesen beiden Formaten erstellt wurden, mit Smart-Tags getaggt.

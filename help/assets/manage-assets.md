@@ -6,14 +6,20 @@ mini-toc-levels: 1
 role: User
 feature: Asset Management,Search
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: dd1e08bee03a6c7b07b32b0fb929d02dad467744
 workflow-type: tm+mt
-source-wordcount: '9878'
-ht-degree: 59%
+source-wordcount: '9913'
+ht-degree: 60%
 
 ---
 
 # Verwalten digitaler Assets {#manage-digital-assets}
+
+| Version | Artikellink |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en) |
+| AEM 6.5 | Dieser Artikel |
+| AEM 6.4 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/managing-assets-touch-ui.html?lang=en) |
 
 In [!DNL Adobe Experience Manager Assets], können Sie mehr tun, als Assets zu speichern und zu steuern. [!DNL Experience Manager] bietet Asset-Management-Funktionen auf Unternehmensniveau. Sie können Assets bearbeiten und freigeben, erweiterte Suchen durchführen und mehrere Ausgabedarstellungen von Dutzenden von unterstützten Dateiformaten erstellen. Sie können auch Versionen und digitale Rechte verwalten, die Verarbeitung von Assets automatisieren, Metadaten verwalten und steuern, mit Anmerkungen zusammenarbeiten und vieles mehr.
 
@@ -91,7 +97,7 @@ Um die Bereinigungsaufgabe für die nicht abgeschlossenen Chunk-Upload-Aufträge
 
 >[!CAUTION]
 >
->Der Chunk-Upload wird ausgelöst, wenn der Standardwert 500 MB und die Chunk-Größe 50 MB beträgt. Wenn Sie [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html) und legen Sie die `timeout configuration` auf eine kürzere Zeit als für das Hochladen eines Assets erforderlich ist, tritt während des Hochladens des Assets eine Sitzungs-Timeout-Situation auf. Ändern Sie daher die `chunkUploadMinFileSize` und `chunksize` sodass jede Chunk-Anfrage die Sitzung aktualisiert.
+>Der Chunk-Upload wird ausgelöst, wenn der Standardwert 500 MB und die Chunk-Größe 50 MB beträgt. Wenn Sie [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html?lang=de) und legen Sie die `timeout configuration` auf eine kürzere Zeit als für das Hochladen eines Assets erforderlich ist, tritt während des Hochladens des Assets eine Sitzungs-Timeout-Situation auf. Ändern Sie daher die `chunkUploadMinFileSize` und `chunksize` sodass jede Chunk-Anfrage die Sitzung aktualisiert.
 >
 >Angesichts der Zeitüberschreitung bei Anmeldedaten, Latenz, Bandbreite und erwarteten gleichzeitigen Uploads ist der höchste Wert, mit dem Sie sicherstellen können, dass Folgendes ausgewählt wird:
 >
@@ -169,7 +175,7 @@ Dynamic Media ermöglicht das stapelweise Hochladen von Assets über FTP-Server.
 
 1. Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) und melden Sie sich bei Ihrem Konto an.
 
-   Ihre Anmeldedaten und Ihre Anmeldung wurden von Adobe zum Zeitpunkt der Bereitstellung bereitgestellt. Wenn Sie diese Informationen nicht haben, wenden Sie sich an den Kundensupport von Adobe.
+   Ihre Anmeldedaten und Ihre Anmeldung wurden von Adobe zum Zeitpunkt der Bereitstellung bereitgestellt. Wenn Sie nicht über diese Informationen verfügen, wenden Sie sich an den Support von Adobe.
 
 1. Klicken Sie in der Leiste „Globale Navigation“ auf **[!UICONTROL Hochladen]**.
 1. Klicken Sie auf der Seite „Hochladen“ in der Nähe der linken oberen Ecke auf die Registerkarte **[!UICONTROL Über FTP]**.
@@ -203,7 +209,7 @@ Um einen laufenden Upload-Auftrag abzubrechen, klicken Sie auf **[!UICONTROL Abb
 |  | Farbprofiloptionen | Wählen Sie beim Erstellen optimierter Dateien eine Farbkonversion aus, die für die Bereitstellung verwendet wird:<ul><li>Beibehaltung der Standardfarbe: Behält die Farben des Quellbildes bei, wenn die Bilder Farbrauminformationen enthalten. Es findet keine Farbkonversion statt. Heutzutage ist in fast allen Bildern das entsprechende Farbprofil eingebettet. Wenn jedoch ein CMYK-Quellbild kein eingebettetes Farbprofil enthält, werden die Farben in den Farbraum sRGB (standardmäßiges Rot Grün Blau) konvertiert. sRGB ist der empfohlene Farbraum zum Anzeigen von Bildern auf Webseiten.</li><li>Ursprünglichen Farbraum beibehalten: Behält die ursprünglichen Farben bei, ohne dass an der betreffenden Stelle eine Farbkonversion stattfindet. Bei Bildern ohne eingebettetes Farbprofil wird jede Farbkonversion mit den in den Veröffentlichungseinstellungen konfigurierten Standardfarbprofilen durchgeführt. Die Farbprofile stimmen möglicherweise nicht mit der Farbe in den Dateien überein, die mit dieser Option erstellt wurden. Deshalb empfiehlt es sich, die Option „Beibehaltung der Standardfarbe“ zu verwenden.</li><li>Benutzerdefinierte Einstellung von > in:<br> Öffnet Menüs, damit Sie einen „Konvertieren von“- und einen „Konvertieren in“-Farbraum auswählen können. Diese erweiterte Option überschreibt alle Farbinformationen, die in die Quelldatei eingebettet sind. Wählen Sie diese Option aus, wenn alle Bilder, die Sie senden, falsche oder fehlende Farbprofildaten enthalten.</li></ul> |
 |  | Bildbearbeitungsoptionen | Sie können die Beschneidungsmasken in Bildern beibehalten und ein Farbprofil auswählen.<br> Siehe [Festlegen von Optionen für Bildbearbeitungen beim Hochladen](#setting-image-editing-options-at-upload). |
 |  | PostScript-Optionen | Sie können PostScript®-Dateien rastern, Dateien beschneiden, transparente Hintergründe beibehalten sowie eine Auflösung und einen Farbraum auswählen.<br> Siehe [Festlegen von PostScript- und Illustrator-Uploadoptionen](#setting-postscript-and-illustrator-upload-options). |
-|  | Photoshop-Optionen | Sie können Vorlagen aus Adobe® Photoshop®-Dateien erstellen, Ebenen beibehalten, Ebenennamen angeben, Text extrahieren und angeben, wie Bilder in Vorlagen verankert sind.<br> Vorlagen werden in [!DNL Experience Manager].<br> Siehe [Festlegen von Photoshop-Uploadoptionen](#setting-photoshop-upload-options). |
+|  | Photoshop-Optionen | Sie können Vorlagen aus Adobe® Photoshop®-Dateien erstellen, Ebenen beibehalten, Ebenennamen angeben, Text extrahieren und angeben, wie Bilder in Vorlagen verankert werden.<br> Vorlagen werden in [!DNL Experience Manager].<br> Siehe [Festlegen von Photoshop-Uploadoptionen](#setting-photoshop-upload-options). |
 |  | PDF-Optionen | Sie können die Dateien rastern, Suchbegriffe und -links extrahieren, automatisch einen E-Katalog erstellen, die Auflösung einstellen und einen Farbraum auswählen.<br>eKataloge werden in [!DNL Experience Manager]. <br> Siehe [Festlegen von PDF-Uploadoptionen](#setting-pdf-upload-options). |
 |  | Illustrator-Optionen | Sie können Adobe Illustrator®-Dateien rastern, transparente Hintergründe beibehalten sowie eine Auflösung und einen Farbraum auswählen.<br> Siehe [Festlegen von PostScript- und Illustrator-Uploadoptionen](#setting-postscript-and-illustrator-upload-options). |
 |  | eVideo-Optionen | Sie können eine Videodatei durch Auswahl einer Videovorgabe transkodieren.<br> Siehe [Festlegen von eVideo-Uploadoptionen](#setting-evideo-upload-options). |
@@ -266,10 +272,10 @@ Verwenden Sie die [!UICONTROL Optionen zum Zuschneiden] und [!UICONTROL Farbprof
 |---|---|---|
 | Ebenen beibehalten |  | Teilt die Ebenen in der PSD-Datei ggf. in einzelne Assets auf. Die Asset-Ebenen bleiben der PSD-Datei zugeordnet. Sie können sie anzeigen, indem Sie die PSD-Datei in der Detailansicht öffnen und das Ebenenfenster auswählen. |
 | Vorlage erstellen |  | Erstellt eine Vorlage aus den Ebenen der PSD-Datei. |
-| Text extrahieren |  | Extrahiert den Text, damit Benutzer im Viewer den Text durchsuchen können. |
+| Text extrahieren |  | Extrahiert den Text, damit Benutzer den Text in einem Viewer suchen können. |
 | Ebenen auf Hintergrundgröße ausdehnen |  | Erweitert die Größe aufgeteilter Bildebenen auf die Größe der Hintergrundebene. |
 | Ebenenbenennung |  | Ebenen in der PSD-Datei werden als separate Bilder hochgeladen. |
-|  | Ebenenname | Benennt die Bilder nach ihren Ebenennamen in der PSD-Datei. Wenn eine Ebene in der Original-PSD-Datei beispielsweise „Preisschild“ heißt, wird auch das zugehörige Bild „Preisschild“ genannt. Wenn es sich bei den Ebenennamen in der PSD-Datei jedoch um standardmäßige Photoshop-Ebenennamen handelt (Hintergrund, Ebene 1, Ebene 2 usw.), werden die Bilder nach ihren Ebenennummern in der PSD-Datei benannt. Sie werden nicht nach ihren standardmäßigen Ebenennamen benannt. |
+|  | Ebenenname | Benennt die Bilder nach ihren Ebenennamen in der PSD-Datei. Wenn eine Ebene in der Original-PSD-Datei beispielsweise „Preisschild“ heißt, wird auch das zugehörige Bild „Preisschild“ genannt. Wenn es sich bei den Ebenennamen in der PSD-Datei jedoch um standardmäßige Photoshop-Ebenennamen handelt (Hintergrund, Ebene 1, Ebene 2 usw.), werden die Bilder nach den zugehörigen Ebenennummern in der PSD-Datei benannt. Sie werden nicht nach ihren standardmäßigen Ebenennamen benannt. |
 |  | Photoshop- und Ebenennummer | Benennt die Bilder nach ihren Ebenennummern in der PSD-Datei und ignoriert die ursprünglichen Ebenennamen. Bilder werden mit dem Photoshop-Dateinamen und einer angefügten Ebenennummer benannt. Zum Beispiel erhält die zweite Ebene der Datei Frühjahrsannonce.psd den Namen Frühjahrsannonce_2, auch wenn sie in Photoshop einen nicht standardmäßigen Namen hatte. |
 |  | Photoshop- und Ebenenname | Benennt die Bilder nach der PSD-Datei, gefolgt vom Ebenennamen oder der -nummer. Die Ebenennummer wird verwendet, wenn es sich bei den Ebenennamen in der PSD-Datei um standardmäßige Photoshop-Ebenennamen handelt. Zum Beispiel erhält eine Ebene mit dem Namen „Preisschild“ in einer PSD-Datei mit dem Namen „Frühjahrsannonce“ den Namen „Frühjahrsannonce_Preisschild“. Eine Ebene mit dem standardmäßigen Namen „Ebene 2“ erhält den Namen „Frühjahrsannonce_2“. |
 | Anker |  | Geben Sie an, wie Bilder in Vorlagen, die aus der Zusammenstellung der Ebenen aus der PSD-Datei erstellt werden, verankert werden. Der Anker ist standardmäßig zentriert. Ein zentrierter Anker eignet sich am besten zum Auffüllen desselben Raums mit Ersatzbildern, unabhängig vom Seitenverhältnis der Ersatzbilder. Bilder mit einem anderen Seitenverhältnis, die dieses Bild ersetzen, nehmen effektiv denselben Raum ein, wenn auf die Vorlage verwiesen und die Parameterersetzung durchgeführt wird. Wählen Sie eine andere Einstellung, wenn es für Ihre Anwendung erforderlich ist, dass die Ersatzbilder den zugeordneten Raum in der Vorlage ausfüllen. |
@@ -290,7 +296,7 @@ Wählen Sie unter folgenden Optionen:
 | Extrahieren | Suchbegriffe | Zum Extrahieren von Wörtern aus der PDF-Datei, damit die Datei in einem E-Katalog-Viewer mit einem Schlüsselwort durchsucht werden kann. |
 |  | Links | Zum Extrahieren von Links aus den PDF-Dateien und zum Konvertieren der PDF-Dateien in Imagemaps, die in einem E-Katalog-Viewer verwendet werden. |
 | E-Katalog aus mehrseitiger PDF automatisch erstellen |  | Zum automatischen Erstellen eines E-Katalogs aus der PDF-Datei. Der E-Katalog wird nach der von Ihnen hochgeladenen PDF-Datei benannt. (Diese Option ist nur dann verfügbar, wenn Sie die PDF-Datei beim Hochladen rastern.) |
-| Auflösung |  | Zum Festlegen der Auflösung: Mit dieser Einstellung wird bestimmt, wie viele Pixel pro Zoll in der PDF-Datei angezeigt werden. Standard: 150. |
+| Auflösung |  | Zum Festlegen der Auflösung: Mit dieser Einstellung wird bestimmt, wie viele Pixel pro Zoll in der PDF-Datei angezeigt werden. Der Standardwert ist 150. |
 | Farbraum |  | Wählen Sie das Farbraummenü und einen Farbraum für die PDF-Datei aus. Die meisten PDF-Dateien enthalten sowohl RGB- als auch CMYK-Farbbilder. Der RGB-Farbraum eignet sich besonders gut, um Dateien online anzuzeigen. |
 |  | Automatisch erkennen | Der Farbraum der PDF-Datei wird beibehalten. |
 |  | Immer RGB | Zur Konvertierung in den RGB-Farbraum. |
@@ -577,7 +583,7 @@ So löschen Sie ein Asset oder einen Ordner mit einem Asset:
 >
 >Vorhandene redundante, nicht verwendete und automatisch generierte Benutzergruppen können jedoch mithilfe von aus dem Repository bereinigt werden `clean` -Methode in JMX in Ihrer Autoreninstanz (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
 
-## Herunterladen von Assets {#downloading-assets}
+## Herunterladen von Medienelementen {#downloading-assets}
 
 Siehe [Herunterladen von Assets von Experience Manager](/help/assets/download-assets-from-aem.md).
 
@@ -725,7 +731,7 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 1. Klicken Sie auf **[!UICONTROL Anmerken]** aus einer der folgenden Optionen:
 
    * [Schnellaktionen](/help/assets/manage-assets.md#quick-actions)
-   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben oder zur Asset-Seite navigiert sind.
+   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben  oder zur Asset-Seite navigiert sind.
 
 1. Fügen Sie im Feld **[!UICONTROL Kommentar]** am unteren Rand der Zeitleiste einen Kommentar hinzu. Sie haben auch die Möglichkeit, einen Bereich im Bild zu markieren und im Dialogfeld **[!UICONTROL Anmerkung hinzufügen]** eine Anmerkung hinzuzufügen.
 

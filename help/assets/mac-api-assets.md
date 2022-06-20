@@ -5,14 +5,20 @@ contentOwner: AG
 role: Developer
 feature: APIs,Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
 workflow-type: tm+mt
-source-wordcount: '1723'
-ht-degree: 84%
+source-wordcount: '1758'
+ht-degree: 83%
 
 ---
 
 # [!DNL Assets]-HTTP-API {#assets-http-api}
+
+| Version | Artikellink |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=en) |
+| AEM 6.5 | Dieser Artikel |
+| AEM 6.4 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-64/assets/extending/mac-api-assets.html?lang=en) |
 
 ## Übersicht {#overview}
 
@@ -29,7 +35,7 @@ Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabedarstellunge
 
 >[!CAUTION]
 >
->[HTTP API updates the metadata properties](#update-asset-metadata) in the `jcr` namespace. Die Experience Manager-Benutzeroberfläche aktualisiert jedoch die Metadateneigenschaften im `dc` Namespace.
+>[Die HTTP-API aktualisiert die Metadateneigenschaften](#update-asset-metadata) im `jcr` Namespace. Die Experience Manager-Benutzeroberfläche aktualisiert jedoch die Metadateneigenschaften im `dc` Namespace.
 
 ## Inhaltsfragmente {#content-fragments}
 
@@ -69,7 +75,7 @@ Ordner verhalten sich wie Verzeichnisse in traditionellen Dateisystemen. Sie ste
 Experience Managers ein Asset die folgenden Elemente enthält:
 
 * Die Eigenschaften und Metadaten des Assets.
-* Mehrere Ausgabedarstellungen, z. B. die ursprüngliche Ausgabedarstellung (das ursprünglich hochgeladene Asset), eine Miniaturansicht und viele andere Ausgabedarstellungen. Additional renditions may be images of different sizes, different video encodings, or extracted pages from PDF or [!DNL Adobe InDesign] files.
+* Mehrere Ausgabedarstellungen, z. B. die ursprüngliche Ausgabedarstellung (das ursprünglich hochgeladene Asset), eine Miniaturansicht und viele andere Ausgabedarstellungen. Zusätzliche Ausgabedarstellungen können Bilder unterschiedlicher Größe, verschiedene Videokodierungen oder aus PDF extrahierte Seiten sein oder [!DNL Adobe InDesign] Dateien.
 * Optionale Kommentare.
 
 Weitere Informationen über Elemente in Inhaltsfragmenten finden Sie unter [Unterstützung von Inhaltsfragmenten in der Experience Manager Assets-HTTP-API](/help/assets/assets-api-content-fragments.md#content-fragments).
@@ -140,9 +146,9 @@ Wenn der übergeordnete Knoten des angegebenen Pfades nicht vorhanden ist, schl�
 
 ## Erstellen von Assets {#create-an-asset}
 
-Place the provided file at the provided path to create an asset in the DAM repository. Wenn eine `*` anstelle eines Knotennamens angegeben wird, verwendet das Servlet den Parameternamen oder den Dateinamen als Knotennamen.
+Platzieren Sie die bereitgestellte Datei im angegebenen Pfad, um ein Asset im DAM-Repository zu erstellen. Wenn eine `*` anstelle eines Knotennamens angegeben wird, verwendet das Servlet den Parameternamen oder den Dateinamen als Knotennamen.
 
-**Parameters**: The parameters are `name` for the asset name and `file` for the file reference.
+**Parameter**: Die Parameter sind `name` für den Asset-Namen und `file` für die Dateireferenz.
 
 **Anfrage**
 
@@ -158,7 +164,7 @@ Place the provided file at the provided path to create an asset in the DAM repos
 
 ## Aktualisieren von Asset-Binärdateien {#update-asset-binary}
 
-Updates an asset&#39;s binary (rendition with name original). Bei einer Aktualisierung wird der standardmäßige Asset-Verarbeitungs-Workflow ausgeführt, sofern er konfiguriert ist.
+Aktualisiert die Binärdatei eines Assets (Ausgabedarstellung mit dem ursprünglichen Namen). Bei einer Aktualisierung wird der standardmäßige Asset-Verarbeitungs-Workflow ausgeführt, sofern er konfiguriert ist.
 
 **Anfrage**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png`
 
@@ -171,7 +177,7 @@ Updates an asset&#39;s binary (rendition with name original). Bei einer Aktualis
 
 ## Aktualisieren der Asset-Metadaten {#update-asset-metadata}
 
-Updates the asset metadata properties. Wenn Sie eine Eigenschaft im `dc:`-Namespace aktualisieren, aktualisiert die API dieselbe Eigenschaft im `jcr`-Namespace. Die API synchronisiert die Eigenschaften unter den beiden Namespaces nicht.
+Aktualisiert die Asset-Metadateneigenschaften. Wenn Sie eine Eigenschaft im `dc:`-Namespace aktualisieren, aktualisiert die API dieselbe Eigenschaft im `jcr`-Namespace. Die API synchronisiert die Eigenschaften unter den beiden Namespaces nicht.
 
 **Anfrage**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 
@@ -182,9 +188,9 @@ Updates the asset metadata properties. Wenn Sie eine Eigenschaft im `dc:`-Namesp
 * 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
-### Sync metadata update between `dc` and `jcr` namespace {#sync-metadata-between-namespaces}
+### Metadaten-Update synchronisieren zwischen `dc` und `jcr` namespace {#sync-metadata-between-namespaces}
 
-Die API-Methode aktualisiert die Metadateneigenschaften im `jcr` Namespace. The updates made using the user interface change the metadata properties in the `dc` namespace. To sync the metadata values between `dc` and `jcr` namespace, you can create a workflow and configure Experience Manager to execute the workflow upon asset edit. Verwenden Sie ein ECMA-Skript zum Synchronisieren der erforderlichen Metadateneigenschaften. The following sample script synchronizes the title string between `dc:title` and `jcr:title`.
+Die API-Methode aktualisiert die Metadateneigenschaften im `jcr` Namespace. Die über die Benutzeroberfläche vorgenommenen Aktualisierungen ändern die Metadateneigenschaften im `dc` Namespace. So synchronisieren Sie die Metadatenwerte zwischen `dc` und `jcr` -Namespace erstellen, können Sie einen Workflow erstellen und Experience Manager konfigurieren, um den Workflow bei der Asset-Bearbeitung auszuführen. Verwenden Sie ein ECMA-Skript zum Synchronisieren der erforderlichen Metadateneigenschaften. Das folgende Beispielskript synchronisiert die Titelzeichenfolge zwischen `dc:title` und `jcr:title`.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();
@@ -311,6 +317,6 @@ Löscht eine Ressource(nstruktur) im angegebenen Pfad.
 
 ## Tipps und Einschränkungen {#tips-best-practices-limitations}
 
-* [Die HTTP-API aktualisiert die Metadateneigenschaften](#update-asset-metadata) im `jcr` Namespace. However, the Experience Manager user interface updates the metadata properties in the `dc` namespace.
+* [Die HTTP-API aktualisiert die Metadateneigenschaften](#update-asset-metadata) im `jcr` Namespace. Die Experience Manager-Benutzeroberfläche aktualisiert jedoch die Metadateneigenschaften im `dc` Namespace.
 
 * Die Assets-HTTP-API gibt nicht die vollständigen Metadaten zurück. Die Namespaces sind fest kodiert und nur diese Namespaces werden zurückgegeben. Vollständige Metadaten finden Sie im Asset-Pfad `/jcr_content/metadata.json`.

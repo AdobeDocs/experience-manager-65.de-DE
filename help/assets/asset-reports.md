@@ -1,18 +1,24 @@
 ---
 title: Berichte zur Verwendung und Freigabe von Assets
-description: Berichte zu Ihren Assets in  [!DNL Adobe Experience Manager Assets] , die Ihnen dabei helfen, Nutzung, Aktivität und Freigabe Ihrer digitalen Assets zu verstehen.
+description: Berichte zu Ihren Assets in [!DNL Adobe Experience Manager Assets] , die Ihnen dabei helfen, Nutzung, Aktivität und Freigabe Ihrer digitalen Assets zu verstehen.
 contentOwner: AG
 role: User, Admin
-feature: Asset-Berichte,Asset-Management
+feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 89%
+source-wordcount: '1174'
+ht-degree: 87%
 
 ---
 
 # Asset-Berichte {#asset-reports}
+
+| Version | Artikellink |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=en) |
+| AEM 6.5 | Dieser Artikel |
+| AEM 6.4 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/asset-reports.html?lang=en) |
 
 Mit Asset-Berichten können Sie die Nützlichkeit Ihrer [!DNL Adobe Experience Manager Assets]-Implementierung bewerten. Mit [!DNL Assets] können Sie verschiedene Berichte für Ihre digitalen Assets erstellen. Die Berichte bieten hilfreiche Informationen über die Nutzung Ihres Systems, über die Art und Weise, wie Benutzer mit Assets interagieren, und die Frage, welche Assets heruntergeladen und freigegeben werden.
 
@@ -28,12 +34,12 @@ Wenn ein Bericht generiert wird, werden Sie mit einer E-Mail (optional) und eine
 
 Gehen Sie wie folgt vor, um Berichte zu erstellen:
 
-* Aktivieren Sie den Dienst [!UICONTROL Day CQ DAM Event Recorder] unter **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web Console]**.
-* Wählen Sie die Aktivitäten oder Ereignisse aus, für die Sie Berichte erstellen möchten. Um beispielsweise einen Bericht zu heruntergeladenen Assets zu generieren, wählen Sie [!UICONTROL Asset heruntergeladen (HERUNTERGELADEN)] aus.
+* Aktivieren [!UICONTROL Day CQ DAM Event Recorder] Dienst von **[!UICONTROL Instrumente]** > **[!UICONTROL Aktivitäten]** > **[!UICONTROL Web-Konsole]**.
+* Wählen Sie die Aktivitäten oder Ereignisse aus, für die Sie Berichte erstellen möchten. Um beispielsweise einen Bericht zu heruntergeladenen Assets zu generieren, wählen Sie [!UICONTROL Asset heruntergeladen (HERUNTERGELADEN)].
 
 ![Aktivieren der Asset-Berichterstellung in der Web-Konsole](assets/reports-config-day-cq-dam-event-recorder.png)
 
-## Erstellen von Berichten {#generate-reports}
+## Erzeugen von Berichten {#generate-reports}
 
 [!DNL Experience Manager Assets] generiert die folgenden standardmäßigen Berichte für Sie:
 
@@ -113,7 +119,7 @@ Gehen Sie wie folgt vor, um Berichte zu erstellen:
 
    Klicken Sie in der Symbolleiste auf **[!UICONTROL Download]**, um den Bericht im CSV-Format herunterzuladen.
 
-## Hinzufügen benutzerdefinierter Spalten   {#add-custom-columns}
+## Hinzufügen benutzerdefinierter Spalten {#add-custom-columns}
 
 Sie können folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weitere Daten für Ihre speziellen Anforderungen anzuzeigen:
 
@@ -156,7 +162,7 @@ Um nicht mehr benötigte Berichte zu entfernen, konfigurieren Sie den Bereinigun
 
 ## Informationen zur Fehlerbehebung, Tipps und Einschränkungen {#best-practices-and-limitations}
 
-* Wenn einige Berichte oder Zahlen in den Berichten nicht verfügbar oder wie erwartet sind, stellen Sie sicher, dass der Dienst [!UICONTROL Day CQ DAM Event Recorder] aktiviert ist.
+* Wenn einige Berichte oder Zahlen in den Berichten nicht verfügbar oder wie erwartet sind, stellen Sie sicher, dass [!UICONTROL Day CQ DAM Event Recorder] -Dienst aktiviert ist.
 
 * Entfernen Sie nicht mehr benötigte Berichte. Verwenden Sie die Konfigurationsoptionen im DAM Report Purge-Dienst, um die Kriterien zum Bereinigen von Berichten zu konfigurieren.
 

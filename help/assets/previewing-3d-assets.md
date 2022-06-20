@@ -1,19 +1,24 @@
 ---
 title: Vorschau von 3D-Assets
-description: Erfahren Sie, wie Sie eine Vorschau von 3D-Assets in Experience Manager anzeigen.
+description: Erfahren Sie, wie Sie eine Vorschau von 3D-Elementen in Experience Manager erstellen.
 contentOwner: Rick Brough
 docset: aem65
 feature: 3D Assets
 role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
-source-git-commit: 32e637463a2f68a48b39c5dea9cc3cc4d1596d9b
+source-git-commit: aa45839c53cb2c0715c9163847351aa2391309e0
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '580'
 ht-degree: 94%
 
 ---
 
-# Vorschau von 3D-Assets in Adobe Experience Manager {#previewing-3d-assets-aem}
+# Vorschau von 3D-Assets in Adobe Experience Manager  {#previewing-3d-assets-aem}
+
+| Version | Artikellink |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=en) |
+| AEM 6.5 | Dieser Artikel |
 
 Experience Manager unterstützt das Hochladen, Bereitstellen und interaktive Anzeigen einer Vorschau von 3D-Assets als Teil des Authoring-Prozesses.
 
@@ -21,7 +26,7 @@ Der interaktive 3D-Viewer ist auf der Seite „Asset-Details“ in Experience Ma
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/assets-3d.md). -->
 
-## Unterstützte Formate für die 3D-Vorschau in Experience Manager {#supported-3d-previewing-assets}
+## Unterstützte Formate für die 3D-Vorschau in Experience Manager  {#supported-3d-previewing-assets}
 
 Die interaktive 3D-Vorschau unterstützt die folgenden Dateiformate:
 
@@ -45,7 +50,7 @@ Die interaktive 3D-Vorschau unterstützt die folgenden Dateiformate:
     material_0_baseColor.jpeg
     material_0_normal.jpeg
 
-## Leistungsaspekte bei der Vorschau von 3D-Assets in Experience Manager{#performance-3d-previewing-assets}
+## Leistungsaspekte bei der Vorschau von 3D-Assets in Experience Manager {#performance-3d-previewing-assets}
 
 Die Zeit, die zum Öffnen eines 3D-Assets auf der Seite mit den Asset-Details benötigt wird, hängt von verschiedenen Faktoren ab, z. B. Bandbreite, Bildkomplexität und Latenzen zum Server.
 
