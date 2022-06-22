@@ -11,10 +11,10 @@ docset: aem65
 feature: Image Sets,Asset Management
 role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: 7b29fc96768dc2238ebf9596b136ec10fa71aca9
+source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
 workflow-type: tm+mt
-source-wordcount: '2080'
-ht-degree: 66%
+source-wordcount: '2194'
+ht-degree: 64%
 
 ---
 
@@ -36,6 +36,15 @@ Beispiel: Sie möchten Bilder von Kappen darstellen, deren Schirme unterschiedli
 >
 >Informationen zur Assets-Benutzeroberfläche finden Sie unter [Verwalten von Assets](/help/assets/manage-assets.md).
 
+Beim Erstellen eines Bildsets empfiehlt Adobe die folgenden Best Practices und setzt die folgenden Einschränkungen um:
+
+| Asset - Limit-Typ | Best Practice | Implementierte Beschränkung | Änderungen an der Beschränkung vom 31. Dezember 2022 |
+| --- | --- | --- | --- |
+| **Bildset** - Anzahl doppelter Assets pro Satz | Keine Duplikate | 100 | 20 |
+| **Bildset** - Maximale Anzahl von Bildern pro Set | 5 - 10 Bilder pro Set | 1000 |
+
+Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
+
 ## Schnellstart: Bildsets {#quick-start-image-sets}
 
 **So schaffen Sie einen schnellen Einstieg:**
@@ -44,7 +53,7 @@ Beispiel: Sie möchten Bilder von Kappen darstellen, deren Schirme unterschiedli
 
    Laden Sie zunächst die Bilder für die Bildsets hoch. Beachten Sie bei der Auswahl von Bildern, dass Ihre Kunden Bilder im Bildset-Viewer einzoomen können. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2.000 Pixel hat, um optimale Zoom-Details zu erzielen. Dynamic Media kann Bilder mit einer Auflösung von jeweils bis zu 25 MP (Megapixel) rendern. Sie können beispielsweise ein Bild mit 5000 x 5000 MP oder eine beliebige andere Größenkombination mit bis zu 25 MP verwenden.
 
-   Siehe [Dynamic Media - Unterstützte Rasterbildformate](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) für eine Liste der Formate, die von Bildsets unterstützt werden.
+   Siehe [Dynamic Media - Unterstützte Rasterbildformate](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) für eine Liste der von Bildsets unterstützten Formate.
 
 <!--    Adobe Experience Manager Assets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended. -->
 
@@ -96,7 +105,7 @@ Laden Sie zunächst die Bilder für die Bildsets hoch. Beachten Sie bei der Ausw
 
 Sie laden Bilder für Bild­Sets genauso wie [alle anderen Assets in Assets](/help/assets/manage-assets.md#uploading-assets) hoch.
 
-Siehe [Dynamic Media - Unterstützte Rasterbildformate](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) für eine Liste der Formate, die von Bildsets unterstützt werden.
+Siehe [Dynamic Media - Unterstützte Rasterbildformate](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) für eine Liste der von Bildsets unterstützten Formate.
 
 ### Vorbereiten von Bildset-Assets auf das Hochladen {#preparing-image-set-assets-for-upload}
 
@@ -130,6 +139,15 @@ Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Re
 >[!NOTE]
 >
 >Bildsätze werden nicht für Assets unterstützt, deren Dateinamen ein „,“ (Komma) enthält.
+
+Beim Erstellen eines Bildsets empfiehlt Adobe die folgenden Best Practices und setzt die folgenden Einschränkungen um:
+
+| Asset - Limit-Typ | Best Practice | Implementierte Beschränkung | Änderungen an der Beschränkung vom 31. Dezember 2022 |
+| --- | --- | --- | --- |
+| **Bildset** - Anzahl doppelter Assets pro Satz | Keine Duplikate | 100 | 20 |
+| **Bildset** - Maximale Anzahl von Bildern pro Set | 5 - 10 Bilder pro Set | 1000 |
+
+Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
 
 **So erstellen Sie Bildsets:**
 

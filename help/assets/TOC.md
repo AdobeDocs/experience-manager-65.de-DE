@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, verarbeiten und verteilen Sie digitale Assets.
-source-git-commit: 66958dc5328177d27dbdddf0c8983096e38f76b6
+source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
 workflow-type: tm+mt
-source-wordcount: '672'
-ht-degree: 59%
+source-wordcount: '675'
+ht-degree: 58%
 
 ---
 
@@ -62,6 +62,7 @@ ht-degree: 59%
    + [Bereitstellen von Dynamic Media-Assets](delivering-dynamic-media-assets.md)
    + [Aktivieren des Hotlink-Schutzes in Dynamic Media](hotlink-protection.md)
    + [3D-Unterstützung](/help/assets/assets-3d.md)
+   + [Einschränkungen bei Dynamic Media](limitations.md)
    + [Bildsets](image-sets.md)
    + [Panoramabilder](panoramic-images.md)
    + [Gemischte Mediensets](mixed-media-sets.md)

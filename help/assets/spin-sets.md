@@ -11,10 +11,10 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: 7b29fc96768dc2238ebf9596b136ec10fa71aca9
+source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
 workflow-type: tm+mt
-source-wordcount: '1866'
-ht-degree: 90%
+source-wordcount: '1946'
+ht-degree: 88%
 
 ---
 
@@ -32,6 +32,14 @@ Rotationssets werden durch ein Banner mit dem Wort **[!UICONTROL SPINSET]** geke
 >
 >Informationen zur Assets-Benutzeroberfläche finden Sie unter [Verwalten von Assets](/help/assets/manage-assets.md).
 
+Beim Erstellen eines Rotationssets empfiehlt Adobe die folgenden Best Practices und erzwingt die folgende Beschränkung:
+
+| Begrenzungstyp | Best Practice | Implementierte Beschränkung |
+| --- | --- | --- |
+| Maximale Anzahl von Zeilen/Spalten pro 2D-Satz | 12-18 Bilder pro Set | 1000 |
+
+Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
+
 ## Schnellstart: Rotationssets {#quick-start-spin-sets}
 
 Führen Sie die folgenden Schritte aus, um sich schnell mit der Arbeit mit Rotationssets vertraut zu machen:
@@ -40,7 +48,7 @@ Führen Sie die folgenden Schritte aus, um sich schnell mit der Arbeit mit Rotat
 
    Sie benötigen mindestens 8 bis 12 Aufnahmen eines Artikels für ein eindimensionales Rotationsset und 16 bis 24 Aufnahmen für ein zweidimensionales Rotationsset. Die Aufnahmen müssen in regelmäßigen Abständen gemacht werden, um den Eindruck zu erwecken, dass der Artikel gedreht wird. Beispiel: Wenn ein eindimensionales Rotationsset 12 Aufnahmen umfasst, drehen Sie den Artikel für jede Aufnahme um 30 Grad (360/12).
 
-   Siehe [Dynamic Media - Unterstützte Rasterbildformate](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) für eine Liste der Formate, die von Rotationssets unterstützt werden.
+   Unter [Dynamic Media – Unterstützte Rasterbildformate](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) finden Sie eine Liste der Formate, die von Rotationssets unterstützt werden.
 
 1. [Erstellen Sie Rotationssets](#creating-spin-sets).
 
@@ -88,7 +96,7 @@ Sie benötigen mindestens 8 bis 12 Aufnahmen eines Artikels für ein eindimensio
 
 Bilder für Rotationssets können Sie [genauso wie alle anderen Assets in AEM Assets hochladen](/help/assets/manage-assets.md).
 
-Siehe [Dynamic Media - Unterstützte Rasterbildformate](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) für eine Liste der Formate, die von Rotationssets unterstützt werden.
+Unter [Dynamic Media – Unterstützte Rasterbildformate](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) finden Sie eine Liste der Formate, die von Rotationssets unterstützt werden.
 
 ### Richtlinien zum Erfassen von Bildern für ein Rotationsset {#guidelines-for-shooting-spin-set-images}
 
@@ -112,7 +120,15 @@ In diesem Abschnitt wird beschrieben, wie Sie ein Rotationsset in Experience Man
 
 >[!NOTE]
 >
->Die Reihenfolge der Bilder in einem Rotationsset ist wichtig. Sortieren Sie sie so, dass die Rotation eine glatte 360°-Ansicht ergibt.
+>Die Reihenfolge der Bilder in einem Rotationsset ist wichtig. Achten Sie darauf, sie so anzuordnen, dass die Rotation eine gleichmäßige 360-Grad-Ansicht ergibt.
+
+Beim Erstellen eines Rotationssets empfiehlt Adobe die folgenden Best Practices und erzwingt die folgende Beschränkung:
+
+| Begrenzungstyp | Best Practice | Implementierte Beschränkung |
+| --- | --- | --- |
+| Maximale Anzahl von Zeilen/Spalten pro 2D-Satz | 12-18 Bilder pro Set | 1000 |
+
+Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
 
 **So erstellen Sie ein Rotationsset:**
 
