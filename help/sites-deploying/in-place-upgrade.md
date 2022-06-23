@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie ein Upgrade durchführen.
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: 64c9296554c55b539145dd59a14b2255b1750e47
+source-git-commit: 6d2b7e341dcdedf3c000b9fb0ecd21722bdf2a27
 workflow-type: tm+mt
 source-wordcount: '1256'
 ht-degree: 79%
@@ -187,7 +187,7 @@ Beachten Sie, dass beim Starten von AEM mit dem Start-Skript das Upgrade nicht g
 1. Passen Sie den Befehl an, indem Sie den Pfad zur vorhandenen JAR-Datei (in diesem Fall `crx-quickstart/app/aem-quickstart*.jar`) mit der neuen JAR ersetzen, welche dem Ordner `crx-quickstart` gleichgeordnet ist. Wenn wir unseren vorherigen Befehl als Beispiel heranziehen, würde unser Befehl folgendermaßen lauten:
 
    ```shell
-   /usr/bin/java -server -Xmx1024m -XX:MaxPermSize=256M -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.5.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
+   /usr/bin/java -server -Xmx1024m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.5.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
    Dadurch wird sichergestellt, dass alle nötigen Speichereinstellungen, benutzerdefinierten Ausführungsmodi und andere Umgebungsparameter auf das Upgrade angewendet werden. Nach Abschluss des Upgrades kann die Instanz in Zukunft mit dem Start-Skript gestartet werden.
