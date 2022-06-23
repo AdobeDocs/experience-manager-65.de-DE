@@ -10,10 +10,10 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
+source-git-commit: d83a647d8ac5466ba09230c584d5d501aab55274
 workflow-type: tm+mt
-source-wordcount: '2825'
-ht-degree: 75%
+source-wordcount: '2831'
+ht-degree: 74%
 
 ---
 
@@ -33,9 +33,9 @@ Wenn Sie Bilder hochladen, können Sie das Bild nach dem Hochladen automatisch z
 
 Wenn Sie smartes Zuschneiden für Bilder implementieren, empfiehlt Adobe die folgende Best Practice und erzwingt die folgende Beschränkung:
 
-| Begrenzungstyp | Best Practice | Implementierte Beschränkung |
-| --- | --- | --- |
-| Anzahl der smarten Zuschnitte pro Bild | 5 | 100 |
+| Begrenzungstyp | Best Practice | Begrenzung auferlegt | Änderung der Beschränkung am 31. Dezember 2022 |
+| --- | --- | --- | --- |
+| Anzahl der smarten Zuschnitte pro Bild | 5 | 100 | 20 |
 
 Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
 

@@ -1,16 +1,17 @@
 ---
 title: Einschränkungen bei Dynamic Media
-description: 'Erfahren Sie mehr über die Best Practices und erzwungenen Einschränkungen beim Erstellen eines Bildsets oder eines Rotationssets oder beim Hochladen einer PDF. Erfahren Sie auch mehr über nicht unterstützte Webbrowser- und Betriebssystemkombinationen für Dynamic Media-Viewer. '
+description: Erfahren Sie mehr über die Best Practices und erzwungenen Einschränkungen beim Erstellen eines Bildsets oder eines Rotationssets oder beim Hochladen einer PDF. Erfahren Sie auch mehr über nicht unterstützte Webbrowser- und Betriebssystemkombinationen für Dynamic Media-Viewer.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Viewers,Image Sets,Spin Sets,eCatalog
 role: User
-source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
+exl-id: e4d4059e-ac0b-42e7-910c-001310796574
+source-git-commit: 7a800199b0d3a9dce0a8a31d14f07326b56050ba
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 3%
+source-wordcount: '189'
+ht-degree: 6%
 
 ---
 
@@ -28,13 +29,13 @@ Dieses Thema enthält die folgenden Abschnitte:
 
 Wenn Sie ein Rotationsset oder Bildset erstellen oder PDF zur Seitenextrahierung hochladen, empfiehlt Adobe die folgenden Best Practices und setzt die folgenden Einschränkungen um:
 
-| Asset - Limit-Typ | Best Practice | Implementierte Beschränkung | Änderungen an der Beschränkung vom 31. Dezember 2022 |
+| Asset - Limit-Typ | Best Practice | Begrenzung auferlegt | Änderung der Beschränkung am 31. Dezember 2022 |
 | --- | --- | --- | --- |
-| **Bild** - Anzahl der smarten Zuschnitte pro Bild | 5 | 100 |  |
-| **Bildset** - Anzahl doppelter Assets pro Satz | Keine Duplikate | 100 | 20 |
-| **Bildset** - Maximale Anzahl von Bildern pro Set | 5 - 10 Bilder pro Set | 1000 |
-| **Rotationsset** - Maximale Anzahl von Zeilen/Spalten pro 2D-Satz | 12-18 Bilder pro Set | 1000 |
-| **PDF** - Maximale Seitenzahl für eine PDF, die für die Extraktion berücksichtigt werden soll |  | 5000 (für neue Uploads) | 100 |
+| **Bild** - Anzahl der smarten Zuschnitte pro Bild | 5 | 100 | 20 |
+| **Alle Sets** - Anzahl doppelter Assets pro Satz | Keine Duplikate | 20 | Nicht zutreffend |
+| **Alle Sets** - Maximale Anzahl von Assets pro Satz | 5 - 10 Bilder pro Set | 1000 | Nicht zutreffend |
+| **Rotationsset** - Maximale Anzahl von Zeilen/Spalten pro 2D-Satz | 12-18 Bilder pro Set | 1000 | Nicht zutreffend |
+| **PDF** - Maximale Seitenzahl für eine PDF, die für die Extraktion berücksichtigt werden soll |  | 5000 (für neue Uploads) | 100 (für alle PDF) |
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 

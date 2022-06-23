@@ -11,10 +11,10 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
+source-git-commit: d83a647d8ac5466ba09230c584d5d501aab55274
 workflow-type: tm+mt
-source-wordcount: '1946'
-ht-degree: 88%
+source-wordcount: '1952'
+ht-degree: 87%
 
 ---
 
@@ -34,7 +34,7 @@ Rotationssets werden durch ein Banner mit dem Wort **[!UICONTROL SPINSET]** geke
 
 Beim Erstellen eines Rotationssets empfiehlt Adobe die folgenden Best Practices und erzwingt die folgende Beschränkung:
 
-| Begrenzungstyp | Best Practice | Implementierte Beschränkung |
+| Begrenzungstyp | Best Practice | Begrenzung auferlegt |
 | --- | --- | --- |
 | Maximale Anzahl von Zeilen/Spalten pro 2D-Satz | 12-18 Bilder pro Set | 1000 |
 
@@ -50,7 +50,7 @@ Führen Sie die folgenden Schritte aus, um sich schnell mit der Arbeit mit Rotat
 
    Unter [Dynamic Media – Unterstützte Rasterbildformate](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) finden Sie eine Liste der Formate, die von Rotationssets unterstützt werden.
 
-1. [Erstellen Sie Rotationssets](#creating-spin-sets).
+1. [Erstellen eines Rotationssets](#creating-spin-sets).
 
    Zum Erstellen eines Rotationssets wählen Sie **[!UICONTROL Erstellen > Rotationsset]** und benennen Sie das Set, wählen Sie die Assets und wählen Sie die Reihenfolge der Bilder.
 
@@ -68,15 +68,15 @@ Führen Sie die folgenden Schritte aus, um sich schnell mit der Arbeit mit Rotat
 
    Siehe [Hinzufügen und Bearbeiten von Viewer-Vorgaben](/help/assets/managing-viewer-presets.md).
 
-1. [Anzeigen von Rotationssets](#viewing-spin-sets).
+1. [Anzeigen eines Rotationssets](#viewing-spin-sets).
 
    Es gibt drei verschiedene Arten, über Stapelsatzvorgaben erstellte Sätze anzuzeigen und darauf zuzugreifen. (In der Benutzeroberfläche werden *keine* mit Stapelsatzvorgaben erstellten Sets angezeigt.)
 
-1. [Zeigen Sie eine Vorschau der Rotationssets an](/help/assets/previewing-assets.md).
+1. [Vorschau eines Rotationssets](/help/assets/previewing-assets.md).
 
    Wählen Sie das Rotationsset aus, um dessen Vorschau anzuzeigen. Drehen Sie das Rotationsset. Sie können verschiedene Viewer aus dem Menü **[!UICONTROL Viewer]** wählen, das Sie links in der Leiste über die Dropdown-Liste aufrufen können.
 
-1. [Veröffentlichen Sie Rotationssets](/help/assets/publishing-dynamicmedia-assets.md).
+1. [Veröffentlichen eines Rotationssets](/help/assets/publishing-dynamicmedia-assets.md).
 
    Beim Veröffentlichen eines Rotationssets wird die URL- und Integrationszeichenfolge aktiviert. Außerdem müssen Sie [die Viewer-Vorgabe veröffentlichen](/help/assets/managing-viewer-presets.md).
 
@@ -88,9 +88,9 @@ Führen Sie die folgenden Schritte aus, um sich schnell mit der Arbeit mit Rotat
 
    Siehe [Verknüpfen von Rotationssets mit Web-Seiten](/help/assets/linking-urls-to-yourwebapplication.md) und [Einbetten des Video- oder Bild-Viewers](/help/assets/embed-code.md).
 
-Bei Bedarf können Sie die [Rotationssets bearbeiten](#editing-spin-sets). Darüber hinaus können Sie die [Eigenschaften von Rotationssets](/help/assets/manage-assets.md#editing-properties) anzeigen und ändern.
+Bei Bedarf können Sie [Bearbeiten eines Rotationssets](#editing-spin-sets). Darüber hinaus können Sie die [Eigenschaften von Rotationssets](/help/assets/manage-assets.md#editing-properties) anzeigen und ändern.
 
-## Hochladen von Assets für Rotationssets {#uploading-assets-for-spin-sets}
+## Hochladen von Assets für ein Rotationsset {#uploading-assets-for-spin-sets}
 
 Sie benötigen mindestens 8 bis 12 Aufnahmen eines Artikels für ein eindimensionales Rotationsset und 16 bis 24 Aufnahmen für ein zweidimensionales Rotationsset. Die Aufnahmen müssen in regelmäßigen Abständen gemacht werden, um den Eindruck zu erwecken, dass der Artikel gedreht wird. Beispiel: Wenn ein eindimensionales Rotationsset 12 Aufnahmen umfasst, drehen Sie den Artikel für jede Aufnahme um 30 Grad (360/12).
 
@@ -124,7 +124,7 @@ In diesem Abschnitt wird beschrieben, wie Sie ein Rotationsset in Experience Man
 
 Beim Erstellen eines Rotationssets empfiehlt Adobe die folgenden Best Practices und erzwingt die folgende Beschränkung:
 
-| Begrenzungstyp | Best Practice | Implementierte Beschränkung |
+| Begrenzungstyp | Best Practice | Eingerichtet |
 | --- | --- | --- |
 | Maximale Anzahl von Zeilen/Spalten pro 2D-Satz | 12-18 Bilder pro Set | 1000 |
 

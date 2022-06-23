@@ -11,10 +11,10 @@ docset: aem65
 feature: Image Sets,Asset Management
 role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
+source-git-commit: d83a647d8ac5466ba09230c584d5d501aab55274
 workflow-type: tm+mt
-source-wordcount: '2194'
-ht-degree: 64%
+source-wordcount: '2184'
+ht-degree: 63%
 
 ---
 
@@ -38,10 +38,10 @@ Beispiel: Sie möchten Bilder von Kappen darstellen, deren Schirme unterschiedli
 
 Beim Erstellen eines Bildsets empfiehlt Adobe die folgenden Best Practices und setzt die folgenden Einschränkungen um:
 
-| Asset - Limit-Typ | Best Practice | Implementierte Beschränkung | Änderungen an der Beschränkung vom 31. Dezember 2022 |
-| --- | --- | --- | --- |
-| **Bildset** - Anzahl doppelter Assets pro Satz | Keine Duplikate | 100 | 20 |
-| **Bildset** - Maximale Anzahl von Bildern pro Set | 5 - 10 Bilder pro Set | 1000 |
+| Begrenzungstyp | Best Practice | Begrenzung auferlegt |
+| --- | --- | --- |
+| Anzahl der doppelten Assets pro Satz | Keine Duplikate | 20 |
+| Maximale Anzahl an Bildern pro Set | 5 - 10 Bilder pro Set | 1000 |
 
 Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
 
@@ -57,7 +57,7 @@ Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
 
 <!--    Adobe Experience Manager Assets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended. -->
 
-1. [Erstellen Sie Bildsets](#creating-image-sets).
+1. [Erstellen eines Bildsets](#creating-image-sets).
 
    In Bildsets wählen Benutzer Miniaturansichten im Bildset-Viewer aus.
 
@@ -78,12 +78,12 @@ Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
 
    Navigieren Sie zu **[!UICONTROL Instrumente]** > **[!UICONTROL Assets]** > **[!UICONTROL Viewer-Vorgaben]** , wenn Sie Viewer-Vorgaben erstellen oder bearbeiten möchten.
 
-1. (Optional) [Anzeigen von Bildsets](/help/assets/image-sets.md#viewing-image-sets), die mit Stapelsatzvorgaben erstellt wurden.
+1. (Optional) [Anzeigen eines Bildsets](/help/assets/image-sets.md#viewing-image-sets) die mit Stapelsatzvorgaben erstellt wurden.
 1. [Zeigen Sie Bildsets in einer Vorschau an](/help/assets/previewing-assets.md).
 
    Wählen Sie das Bildset aus, um dessen Vorschau anzuzeigen. Wählen Sie die Miniaturansichtssymbole aus, damit Sie das Bildset im ausgewählten Viewer untersuchen können. Sie können verschiedene Viewer aus dem Menü **[!UICONTROL Viewer]** wählen, das Sie links in der Leiste über die Dropdown-Liste aufrufen können.
 
-1. [Veröffentlichen Sie Bildsets](/help/assets/publishing-dynamicmedia-assets.md).
+1. [Veröffentlichen eines Bildsets](/help/assets/publishing-dynamicmedia-assets.md).
 
    Beim Veröffentlichen eines Bildsets werden die URL und der Einbettungscode aktiviert. Darüber hinaus müssen Sie alle [benutzerdefinierten Viewer-Vorgaben veröffentlichen](/help/assets/managing-viewer-presets.md), die Sie erstellt haben. Standardmäßig vorhandene Viewer-Vorgaben sind bereits veröffentlicht.
 
@@ -125,7 +125,7 @@ Stellen Sie sicher, dass die Bilder in Bildsets mindestens 2.000 Pixel in der gr
 >* eine schwarze, braune und grüne Miniatur
 
 
-## Erstellen Sie Bildsets {#creating-image-sets}
+## Erstellen eines Bildsets {#creating-image-sets}
 
 Sie können Bildsets über die Benutzeroberfläche oder die API erstellen. In diesem Abschnitt wird beschrieben, wie Sie Bildsets in der Benutzeroberfläche erstellen.
 
@@ -142,14 +142,14 @@ Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Re
 
 Beim Erstellen eines Bildsets empfiehlt Adobe die folgenden Best Practices und setzt die folgenden Einschränkungen um:
 
-| Asset - Limit-Typ | Best Practice | Implementierte Beschränkung | Änderungen an der Beschränkung vom 31. Dezember 2022 |
-| --- | --- | --- | --- |
-| **Bildset** - Anzahl doppelter Assets pro Satz | Keine Duplikate | 100 | 20 |
-| **Bildset** - Maximale Anzahl von Bildern pro Set | 5 - 10 Bilder pro Set | 1000 |
+| Begrenzungstyp | Best Practice | Begrenzung auferlegt |
+| --- | --- | --- |
+| Anzahl der doppelten Assets pro Satz | Keine Duplikate | 20 |
+| Maximale Anzahl an Bildern pro Set | 5 - 10 Bilder pro Set | 1000 |
 
 Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
 
-**So erstellen Sie Bildsets:**
+**So erstellen Sie ein Bildset:**
 
 1. Wählen Sie in Experience Manager das Experience Manager-Logo aus, um auf die globale Navigationskonsole zuzugreifen, und navigieren Sie dann zu **[!UICONTROL Navigation]** > **[!UICONTROL Assets]**. Navigieren Sie zu der Stelle, an der Sie ein Bildset erstellen möchten, und navigieren Sie dann zu **[!UICONTROL Erstellen]** > **[!UICONTROL Bildset]** , um die Seite &quot;Bildset-Editor&quot;zu öffnen.
 
@@ -193,7 +193,7 @@ Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus. Das neu erstellte Bildset wird in dem Ordner angezeigt, in dem es erstellt wurde.
 
-## Anzeigen von Bildsets {#viewing-image-sets}
+## Anzeigen eines Bildsets {#viewing-image-sets}
 
 Sie können Bildsets entweder in der Benutzeroberfläche oder automatisch über [Stapelsatzvorgaben](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) erstellen.
 
@@ -231,7 +231,7 @@ Sie können mehrere Bearbeitungsaufgaben für Bildsets ausführen, z. B. die fo
 * Wenden Sie Viewer-Vorgaben an.
 * Löschen Sie das Bildset.
 
-**So bearbeiten Sie Bildsets:**
+**So bearbeiten Sie ein Bildset:**
 
 1. Führen Sie einen der folgenden Schritte aus:
 
@@ -259,10 +259,10 @@ Sie können mehrere Bearbeitungsaufgaben für Bildsets ausführen, z. B. die fo
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, wenn Sie mit der Bearbeitung fertig sind.
 
-## Zeigen Sie Bildsets in einer Vorschau an {#previewing-image-sets}
+## Vorschau eines Bildsets anzeigen {#previewing-image-sets}
 
 Weitere Informationen finden Sie im Abschnitt [Asset-Vorschau](/help/assets/previewing-assets.md).
 
-## Veröffentlichen Sie Bildsets {#publishing-image-sets}
+## Veröffentlichen eines Bildsets {#publishing-image-sets}
 
 Siehe [Veröffentlichen von Assets](/help/assets/publishing-dynamicmedia-assets.md).
