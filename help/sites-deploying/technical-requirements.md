@@ -6,10 +6,10 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 80298613370c7187288b33e5a665a074ccb5cd3e
+source-git-commit: 3643534fa0f24a1c2ea00c35853a2671b156bf9a
 workflow-type: tm+mt
-source-wordcount: '3292'
-ht-degree: 83%
+source-wordcount: '3329'
+ht-degree: 82%
 
 ---
 
@@ -207,7 +207,9 @@ Adobe Experience Manager funktioniert mit den folgenden Serverplattformen in Pro
 
 Die Ausführung von Adobe Experience Manager in einer virtuellen Maschine in Cloud-Computing-Umgebungen wie Microsoft Azure und Amazon Web Services (AWS) wird im Einklang mit den auf dieser Seite genannten technischen Anforderungen und den Standard-Supportbedingungen von Adobe unterstützt.
 
-Adobe empfiehlt, Adobe Managed Services hinzuzuziehen, um AEM auf Azure oder AWS bereitzustellen. Adobe Managed Services liefert die Erfahrung und Kenntnisse, die Experten zur Bereitstellung und Ausführung von AEM in diesen Cloud-Computing-Umgebungen benötigen. Siehe [Zusätzliche Dokumentation zu Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
+Überprüfen Sie für eine Cloud-native Umgebung das neueste Angebot aus der AEM Produktlinie: Adobe Experience Manager as a Cloud Service. Siehe [Dokumentation zu Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=en) für Details.
+
+Adobe bietet außerdem Adobe Managed Services zur Bereitstellung von AEM auf Azure oder AWS. Adobe Managed Services liefert die Erfahrung und Kenntnisse, die Experten zur Bereitstellung und Ausführung von AEM in diesen Cloud-Computing-Umgebungen benötigen. Siehe [Zusätzliche Dokumentation zu Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
 
 In allen anderen Fällen, in denen AEM auf Azure, AWS oder in einer anderen Cloud-Computing-Umgebung bereitgestellt wird, beschränkt sich die Unterstützung von Adobe auf die virtuelle Computing-Umgebung im Einklang mit den auf dieser Seite genannten technischen Anforderungen. Für die Ausführung von AEM in einer dieser Cloud-Umgebungen gemeldete Probleme müssen unabhängig von einem für diese Cloud-Computing-Umgebung spezifischen Cloud-Service reproduzierbar sein, es sei denn, der Cloud-Service wird explizit als Teil der auf dieser Seite genannten technischen Anforderungen unterstützt, beispielsweise Azure Blob Storage oder AWS S3.
 
