@@ -1,8 +1,8 @@
 ---
 title: Die in Workspace angezeigten Kategorien verwalten
-seo-title: Die in Workspace angezeigten Kategorien verwalten
+seo-title: Managing the categories displayed in Workspace
 description: In Workspace werden die Prozesse, die ein Benutzer starten kann, in Kategorien im linken Navigationsbereich angezeigt. Erfahren Sie, wie Sie diese Kategorien verwalten können, die im Arbeitsbereich angezeigt werden.
-seo-description: In Workspace werden die Prozesse, die ein Benutzer starten kann, in Kategorien im linken Navigationsbereich angezeigt. Erfahren Sie, wie Sie diese Kategorien verwalten können, die im Arbeitsbereich angezeigt werden.
+seo-description: In Workspace, the processes that a user can start are displayed in categories in the left navigation pane. Learn how you can manage these categories displayed in Workspace.
 uuid: c2a275f5-872e-467f-9f07-4b130631e8a8
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d1536a2-10ac-4031-bd7f-264b02d0d75f
 exl-id: 62621fe9-f69f-4bc0-aecc-d7bcc3064516
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 97%
+workflow-type: ht
+source-wordcount: '481'
+ht-degree: 100%
 
 ---
 
@@ -23,9 +23,9 @@ In Workspace werden die Prozesse, die ein Benutzer starten kann, in Kategorien i
 
 Beim Angeben von Kategorienamen müssen diese so erstellt werden, dass sie im Navigationsbereich von Workspace ordnungsgemäß angezeigt werden. Der linke Navigationsbereich hat standardmäßig eine feste Breite von 210 Pixel, was ca. 24 Zeichen entspricht. Wenn der von Ihnen angegebene Wert nicht in das Feld mit fester Länge im linken Navigationsbereich passt, wird er abgeschnitten. Der vollständige Name wird nur angezeigt, wenn Sie den Mauszeiger darüber positionieren. Versuchen Sie nach Möglichkeit, das Abschneiden von Kategorienamen zu vermeiden. Die folgenden Beispiele zeigen passende und abgeschnittene Kategorienamen:
 
-**Passender Kategoriename:** Besuch und Urlaub
+**Passender Kategoriename für:** An- und Abwesenheit
 
-**Kategoriename, der abgeschnitten ist:** Besuch &amp; Urlaub (USA)
+**Abgeschnittener Kategoriename für:** An- und Abwesenheit (Vereinigte Staaten)
 
 In Workspace werden Prozesse in einer Kategorie zumeist als Karten auf der Seite „Prozess starten“ angezeigt. Im Allgemeinen können auf dem Bildschirm für eine Kategorie sechs Karten angezeigt werden, bevor der Benutzer einen Bildlauf zum Anzeigen der restlichen Karten ausführen muss. Da das Auffinden eines Prozesses durch einen Bildlauf erschwert wird, begrenzen Sie ggf. jede Kategorie auf sechs Prozesse bzw. (abhängig von Ihrer Auflösung) auf die Anzahl von Prozessen, die ohne Bildlauf auf dem Bildschirm angezeigt werden kann.
 
@@ -46,7 +46,7 @@ Bei Verwendung von MySQL als AEM Forms-Datenbank kann Administration Console nic
 1. Wählen Sie die zu bearbeitende Kategorie aus und klicken Sie auf „Bearbeiten“. Als Alternative können Sie auf eine Kategorie doppelklicken.
 1. Bearbeiten Sie den Namen der Kategorie im Feld „Name“.
 
-## Eine Kategorie entfernen  {#remove-a-category}
+## Eine Kategorie entfernen {#remove-a-category}
 
 Sie können nur nicht verwendete Kategorien entfernen.
 
