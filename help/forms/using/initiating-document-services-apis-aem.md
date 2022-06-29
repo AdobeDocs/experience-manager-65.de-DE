@@ -1,8 +1,8 @@
 ---
 title: Starten Sie Document Services-APIs aus dem AEM-Arbeitsablauf
-seo-title: Starten Sie Document Services-APIs aus dem AEM-Arbeitsablauf
+seo-title: Initiate Document Services APIs from AEM Workflow
 description: Erfahren Sie, wie Sie AEM Document Services auf DDX aufrufen. Siehe auch „Konvertieren von PDF in PDF/A“
-seo-description: Erfahren Sie, wie Sie AEM Document Services auf DDX aufrufen. Siehe auch „Konvertieren von PDF in PDF/A“
+seo-description: Learn how to invoke AEM Document services on DDX or supplied inputs. Also see hwo to convert PDF to PDF/A
 uuid: aacec2df-1ad6-4ff2-a99d-ef206efcdc09
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ topic-tags: document_services
 discoiquuid: 8b85bdc7-3864-49c9-81b0-cf15b8e986d9
 exl-id: 123087a2-9d09-4579-9185-2ccd7d25bf8d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1199'
-ht-degree: 92%
+workflow-type: ht
+source-wordcount: '1171'
+ht-degree: 100%
 
 ---
 
@@ -20,20 +20,20 @@ ht-degree: 92%
 
 ## Assembler {#assembler}
 
-AEM Forms bietet benutzerdefinierte Workflows zum Aufrufen der folgenden Assembler-Dienst-APIs:
+AEM Forms bietet benutzerdefinierte Workflows, um die folgenden Assembler Service-APIs aufzurufen:
 
 * **invoke**: Ruft die Prozesse auf, die in der Eingabe-DDX bei gelieferten Eingaben angegeben wurden.
 * **toPDFA**: Konvertiert Eingabe-PDF-Dokumente in PDF/A-Dokumente.
 
 ### Rufen Sie den DDX-Arbeitsablauf auf {#invoke-ddx-workflow}
 
-Der Workflow **DDX aufrufen** ruft die `Invoke` Assembler-Dienst-API auf, die Sie zum Zusammenführen oder Aufteilen von Dokumenten, zum Hinzufügen von Wasserzeichen zu einer PDF-Datei usw. verwenden können.
+Der Workflow **DDX aufrufen** ruft die Assembler Service-API `Invoke` auf, mit der Sie Dokumente zusammenstellen oder aufteilen, ein Wasserzeichen zu einem PDF hinzufügen können usw.
 
 1. Ziehen Sie **[!UICONTROL Invoke DDX]** auf der Registerkarte „Forms Workflow“ in den Sidekick.
 1. Doppelklicken Sie auf „Hinzugefügt“, um die Komponente zu bearbeiten.
 1. Konfigurieren Sie im Dialogfeld „Bearbeiten“ Input Documents, Environment Options und Output Documents und klicken Sie auf **[!UICONTROL OK]**.
 
-#### Input Documents  {#input-documents}
+#### Input Documents {#input-documents}
 
 Der Arbeitsablauf „Invoke DDX“ erfordert folgende Eingabedokumente:
 
@@ -45,7 +45,7 @@ Der Arbeitsablauf „Invoke DDX“ erfordert folgende Eingabedokumente:
 
 * **Create Map from PayLoad**: Ist diese Option ausgewählt, werden alle Dokumente im Payload-Ordner zur Zuordnung des Eingabedokuments für die `invoke`-API im Assembler hinzugefügt. Der Knotenname für jedes Dokument wird als Schlüssel in der Zuordnung verwendet.
 
-* **Input Document&#39;s Map**: Gibt die Zuordnung des Eingabedokuments an. Sie können beliebig viele Einträge hinzufügen, wobei jeder Eintrag den Schlüssel des Dokuments in der Zuordnung und die Quelle des Dokuments angibt.
+* **Zuordnung des Eingabedokuments**: Legt die Zuordnung des Eingabedokuments fest. Sie können beliebig viele Einträge hinzufügen, wobei jeder Eintrag den Schlüssel des Dokuments in der Zuordnung und die Quelle des Dokuments angibt.
 
 #### Environment Options {#environment-options}
 
@@ -60,12 +60,12 @@ Auf der Registerkarte „Environment Options“ können Sie die verschiedenen Ve
 
 Je nach Eingabe-DDX kann das invoke-API mehrere Ausgabe-Dokumente erstellen. Auf der Registerkarte „Output Documents“ können Sie festlegen, wo Output Documents gespeichert werden.
 
-1. *Save Output in Payload*: Speichert Ausgabedokumente im Payload-Ordner oder überschreibt die Payload, wenn es sich bei der Payload um eine Datei handelt.
+1. *Ausgabe in Payload speichern*: Speichert Ausgabedokumente unter dem Payload-Ordner oder überschreibt die Payload, wenn die Payload eine Datei ist.
 1. *Output Document&#39;s Map*: Hiermit können Sie explizit angeben, wo jedes output document gespeichert werden soll, indem ein Eintrag pro output document hinzugefügt wird. Jeder Eintrag gibt das Dokument und den entsprechenden Speicherort an. Ein Output Document kann die Payload überschreiben oder im Payload-Ordner speichern. Dies ist nützlich, wenn es mehrere Output Documents gibt.
 
 1. *Job Log*: Gibt an, wo das Auftragsprotokolldokument gespeichert werden soll, was bei Fehlerbehebungsfehlern hilfreich sein kann.
 
-### Arbeitsablauf „Nach PDF/A konvertieren“  {#convert-to-pdf-a-workflow}
+### Arbeitsablauf „Nach PDF/A konvertieren“ {#convert-to-pdf-a-workflow}
 
 Die Option „Nach PDF/A konvertieren“ ruft die `toPDFA`-Assembler-Dienst-API auf. Sie wird zum Konvertieren von PDF-Dokumenten in PDF/A-kompatible Dokumente verwendet.
 
@@ -74,7 +74,7 @@ Die Option „Nach PDF/A konvertieren“ ruft die `toPDFA`-Assembler-Dienst-API 
 1. Doppelklicken Sie auf „Hinzugefügt“, um die Komponente zu bearbeiten.
 1. Konfigurieren Sie im Dialogfeld „Bearbeiten“ Input Documents, Conversion Options und Output Documents und klicken Sie auf **[!UICONTROL OK]**.
 
-#### Input Documents  {#input-documents-1}
+#### Input Documents {#input-documents-1}
 
 Geben Sie die Quelle des Dokuments, das in ein PDF/A-kompatibles Dokument konvertiert werden soll, auf folgende Art an.
 
@@ -90,7 +90,7 @@ Mithilfe der Konvertierungsoptionen können Sie Optionen festlegen, die den Vorg
 * *Result Level*: Gibt die Protokollebene, die für die PDF/A-Konvertierungsprotokolle verwendet werden soll, an.
 * *Signatures*: Gibt an, wie die Signaturen im Eingabedokument während der Konvertierung verarbeitet werden müssen.
 * *Color Space*: Gibt den vordefinierten Farbraum, der für das PDF/A-Dokument verwendet werden soll, an.
-* ** VerifyConversion: Gibt an, ob das konvertierte PDF/A-Dokument nach der Konvertierung auf PDF/A-Konformität überprüft werden soll.
+* *Konvertierung überprüfen*: Gibt an, ob das konvertierte PDF/A-Dokument nach der Konvertierung auf PDF/A-Konformität geprüft werden soll.
 * *Job Log Level*: Gibt die Protokollebene, die für die Verarbeitung von Protokollen verwendet werden soll, an.
 
 * *Metadata Extension Schema*: Gibt den Pfad zum Metadaten-Erweiterungsschema, der für XMP-Eigenschaften in den Metadaten des PDF-Dokuments verwendet werden soll, an.
@@ -112,7 +112,7 @@ Der Arbeitsablauf zum Rendern von PDF-Formularen ist ein Wrapper um die Formular
 1. Doppelklicken Sie auf „Hinzugefügt“, um die Komponente zu bearbeiten.
 1. Konfigurieren Sie im Dialogfeld „Bearbeiten“ Input Documents, Output Documents und zusätzlichen Parameter und klicken Sie auf **[!UICONTROL OK]**.
 
-#### Input Documents  {#input-documents-2}
+#### Input Documents {#input-documents-2}
 
 * *Template File*: Gibt den Speicherort der XDP-Vorlage an. Dies ist ein Pflichtfeld.
 
@@ -122,7 +122,7 @@ Der Arbeitsablauf zum Rendern von PDF-Formularen ist ein Wrapper um die Formular
 
 * *Output Document*: Gibt den Namen des erstellten PDF-Formulars an.
 
-#### Additional Parameters  {#additional-parameters}
+#### Additional Parameters {#additional-parameters}
 
 * *Content Root*: Gibt den Pfad zum Ordner im Repository an, in dem die Fragmente oder Bilder, die in der Eingabe-XDP-Vorlage verwendet wurden, gespeichert werden.
 * *Submit Url*: Gibt die Standard-URL zum Übermitteln für das erstellte PDF-Formular an.
@@ -135,13 +135,13 @@ Der Arbeitsablauf zum Rendern von PDF-Formularen ist ein Wrapper um die Formular
 
 Der Arbeitsablauf „Nicht-interaktive PDF generieren“ ist ein Wrapper um die Ausgabe-Dienst-API `generatePDFOutput`. Er wird verwendet, um nicht-interaktive PDF-Dokumente aus der XDP-Vorlage und der Daten-XML zu generieren.
 
-### Arbeitsablauf „Nicht-interaktive PDF-Ausgabe generieren“  {#generate-non-interactive-pdf-output-workflow-nbsp}
+### Arbeitsablauf „Nicht-interaktive PDF-Ausgabe generieren“   {#generate-non-interactive-pdf-output-workflow-nbsp}
 
 1. Ziehen Sie den Arbeitsablauf „Nicht-interaktive PDF-Ausgabe generieren“ auf der Registerkarte „Forms Workflow“ in den Sidekick.
 1. Doppelklicken Sie auf „Hinzugefügt“, um die Komponente zu bearbeiten.
 1. Konfigurieren Sie im Dialogfeld „Bearbeiten“ Input Documents, Output Documents und zusätzlichen Parameter und klicken Sie auf **[!UICONTROL OK]**.
 
-#### Input Documents  {#input-documents-3}
+#### Input Documents {#input-documents-3}
 
 * *Template File*: Gibt den Speicherort der XDP-Vorlage an. Dies ist ein Pflichtfeld.
 
@@ -151,7 +151,7 @@ Der Arbeitsablauf „Nicht-interaktive PDF generieren“ ist ein Wrapper um die 
 
 *Output Document*: Gibt den Namen des erstellten PDF-Formulars an.
 
-#### Additional Parameters  {#additional-parameters-1}
+#### Additional Parameters {#additional-parameters-1}
 
 * *Content Root*: Gibt den Pfad zum Ordner im Repository an, in dem die Fragmente oder Bilder, die in der Eingabe-XDP-Vorlage verwendet wurden, gespeichert werden.
 * *Locale*: Gibt das Standard-Gebietsschema für das erstellte PDF-Formular an.
