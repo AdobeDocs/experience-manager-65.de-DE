@@ -1,18 +1,18 @@
 ---
 title: Verfassen von kontextsensitiver Hilfe für Formularfelder
-seo-title: Verfassen von kontextsensitiver Hilfe für Formularfelder
+seo-title: Authoring in-context help for form fields
 description: Mit AEM Forms können Sie kontextbezogene Hilfe zu Feldern und Bereichen in adaptiven Formularen als Text oder Rich-Media, einschließlich Videos, hinzufügen.
-seo-description: Mit AEM Forms können Sie kontextbezogene Hilfe zu Feldern und Bereichen in adaptiven Formularen als Text oder Rich-Media, einschließlich Videos, hinzufügen.
+seo-description: AEM Forms allows you to add in-context help to adaptive form fields and panels, as text or rich media, including videos.
 uuid: 1865bf7b-66fc-4f89-bd98-904daa409320
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 78000342-a6a7-4c2e-acab-a88851b82c2a
 docset: aem65
-feature: Adaptive Formulare
+feature: Adaptive Forms
 exl-id: 6569bfba-9af5-4060-8640-e51d7af46614
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '395'
+workflow-type: ht
+source-wordcount: '366'
 ht-degree: 100%
 
 ---
@@ -38,7 +38,7 @@ Sie können kontextbezogene Hilfe mit den folgenden Optionen im Abschnitt „Hil
 >
 >Die lange Beschreibung überschreibt die Kurzbeschreibung. Wenn Sie beide Optionen angegeben haben, wird nur die lange Beschreibung angezeigt.
 
-### Kurzbeschreibung  {#short-description}
+### Kurzbeschreibung {#short-description}
 
 Das Feld „Kurzbeschreibung“ dient zum Angeben schneller und kurzer Hinweise zum Ausfüllen eines Formularfelds. Der eingegebene Text im Feld „Kurzbeschreibung“ wird als QuickInfo beim Bewegen der Maus über das Feld angezeigt.
 
@@ -46,13 +46,13 @@ Das Feld „Kurzbeschreibung“ dient zum Angeben schneller und kurzer Hinweise 
 
 >[!NOTE]
 >
->Wählen Sie **Kurzbeschreibung immer anzeigen**, um den Hilfetext immer unterhalb des Feldes anzuzeigen.
+>Wählen Sie **Kurzbeschreibung immer anzeigen** aus, um den Hilfetext unterhalb des Felds immer anzuzeigen.
 
 ![Dauerhafte kontextbezogene kurze Hilfe unter dem Feld](assets/short1.png)
 
 ### Lange Beschreibung {#long-description}
 
-Sie können das Feld „Lange Beschreibung“ verwenden, um langen Text anzugeben oder Rich-Media-Inhalte, einschließlich Videos, als kontextbezogene Hilfe einzubetten. Beispiel: Das folgende Bild stellt dar, wie Sie ein Video als kontextbezogene Hilfe einbetten können.
+Sie können das Feld „Lange Beschreibung“ verwenden, um langen Text anzugeben oder Rich-Media-Inhalte (einschließlich Videos) als kontextbezogene Hilfe einzubetten. Beispiel: Das folgende Bild zeigt, wie Sie ein Video als kontextbezogene Hilfe einbetten können.
 
 ![Hinzufügen von Rich-Media als kontextbezogene Hilfe für Formularfelder](assets/long-descriptions.png)
 
@@ -62,7 +62,7 @@ Wenn Sie eine lange Beschreibung hinzufügen, wird das Symbol **„?“** neben 
 
 ### Hilfe auf Bereichsebene {#panel-level-help}
 
-Zusätzlich zur kontextbezogenen Hilfe für Formularfelder können Sie Hilfe auf Bereichsebene in der Registerkarte „Hilfe-Inhalt“ des Dialogfelds zum Bearbeiten des Bereichs angeben.
+Zusätzlich zur kontextbezogenen Hilfe für Formularfelder können Sie auf der Registerkarte „Hilfeinhalt“ des Dialogfelds zum Bearbeiten von Bereichen auch Hilfe auf Bereichsebene angeben.
 
 ![Hinzufügen von kontextbezogener Hilfe für einen Formularbereich](assets/panel-level-help.png)
 
