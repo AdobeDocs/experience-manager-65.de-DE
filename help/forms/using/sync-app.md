@@ -1,8 +1,8 @@
 ---
 title: Synchronisieren der App
-seo-title: Synchronisieren der App
+seo-title: Synchronizing the app
 description: Synchronisieren Sie die AEM Forms-App auf Ihrem mobilen Gerät mit dem AEM Forms-Server.
-seo-description: Synchronisieren Sie die AEM Forms-App auf Ihrem mobilen Gerät mit dem AEM Forms-Server.
+seo-description: Synchronize the AEM Forms app on your mobile device with the AEM Forms server.
 uuid: 3a6fb2d5-2ec4-4f78-a42a-fc921b66238e
 contentOwner: robhagat
 content-type: reference
@@ -12,9 +12,9 @@ discoiquuid: 393e4332-a2cc-42c8-a18f-3035addbcfaa
 docset: aem65
 exl-id: 6bb1d6df-b322-4112-bc25-6300877ee146
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 96%
+workflow-type: ht
+source-wordcount: '369'
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Wenn Sie mit dem AEM Forms-Server online sind, wird Ihre App standardmäßig all
 
 **Manuelles Synchronisieren der App**
 
-Tippen Sie auf die Schaltfläche Synchronisieren ![sync-app](assets/sync-app.png) in der rechten unteren Ecke des Startbildschirms.
+Tippen Sie in der rechten unteren Ecke des Startbildschirms auf das Synchronisierungsschaltfläche ![Mobile App synchronisieren](assets/sync-app.png).
 
 **Ändern der Synchronisierungsfrequenz**
 
