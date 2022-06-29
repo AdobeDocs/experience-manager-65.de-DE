@@ -1,8 +1,8 @@
 ---
 title: AEM Forms für OSGi-Gruppen und -Berechtigungen
-seo-title: AEM Forms für OSGi-Gruppen und -Berechtigungen
+seo-title: AEM Forms on OSGi Groups and Privileges
 description: Weisen Sie den Gruppen Benutzer zu, um AEM Forms auf OSGi zu verwalten
-seo-description: Weisen Sie den Gruppen Benutzer zu, um AEM Forms auf OSGi zu verwalten
+seo-description: Assign users to the groups to manage AEM Forms on OSGi
 uuid: f269a206-356d-4cee-b449-05c5da87121a
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -13,9 +13,9 @@ docset: aem65
 role: Admin
 exl-id: d802ac53-e3db-45ca-afcb-7e99d0bb7877
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 79%
+workflow-type: ht
+source-wordcount: '261'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 79%
 
 Sie können [Gruppen erstellen](/help/sites-administering/user-group-ac-admin.md#group-administration) und Richtlinien zuweisen und [Benutzer](/help/sites-administering/user-group-ac-admin.md#user-administration) zu den Gruppen in AEM zuweisen. Diese Richtlinien steuern die Berechtigungen der Benutzer, die Teil der Gruppe sind.
 
-Nachdem Sie [AEM Forms Add-On-Paket](../../forms/using/installing-configuring-aem-forms-osgi.md) installiert haben, stehen die in diesem Artikel genannten Gruppen, wie z. B. Formularbenutzer und Formular-Power-User, automatisch für die Zuweisung zur Verfügung. In der folgenden Tabelle sind die Aufgaben aufgeführt, die ein Benutzer für AEM Forms auf OSGi basierend auf den Gruppenzuweisungen ausführen kann:
+Sobald Sie das [AEM Forms-Add-On-Paket](../../forms/using/installing-configuring-aem-forms-osgi.md) installiert haben, werden die in diesem Artikel genannten Gruppen, wie „forms-users“ und „forms-power-user“ automatisch für die Zuweisung zur Verfügung gestellt. In der folgenden Tabelle sind die Aufgaben aufgeführt, die ein Benutzer für AEM Forms auf OSGi basierend auf den Gruppenzuweisungen ausführen kann:
 
 <table>
  <tbody>
@@ -87,14 +87,14 @@ Nachdem Sie [AEM Forms Add-On-Paket](../../forms/using/installing-configuring-ae
    <td>
     <ul> 
      <li>Erstellen einer Posteingangs-Anwendung</li> 
-     <li>Erstellen eines Workflow-Modells</li> 
+     <li>Erstellen Sie ein Workflow-Modell</li> 
     </ul> </td> 
   </tr>
   <tr>
    <td>workflow-users</td> 
    <td>
     <ul> 
-     <li>Verwenden Sie AEM Posteingangsanwendungen<br /> <strong>Hinweis: </strong>Sie müssen über cm-agent-users und workflow-users-Gruppenzuweisungen verfügen, um auf die Benutzeroberfläche von Interactive Communications Agent im Posteingang zuzugreifen.</li> 
+     <li>Verwenden Sie AEM-Posteingangs-Anwendungen<br /> <strong>Hinweis: </strong>Sie müssen über Gruppenzuweisungen für „cm-agent-users“ und „workflow-users“ verfügen, um in dem AEM-Posteingang auf die Benutzeroberfläche vom Interactive Communications Agent zuzugreifen.</li> 
      <li>Workflow-Instanzen verwalten</li> 
     </ul> </td> 
   </tr>
@@ -110,5 +110,5 @@ Nachdem Sie [AEM Forms Add-On-Paket](../../forms/using/installing-configuring-ae
  </tbody>
 </table>
 
-1. Benutzer mit Gruppenberechtigungen für Formularbenutzer können keine Skripte für adaptive Formulare schreiben.
+1. Der Benutzer mit „forms-users group“-Berechtigungen kann keine Skripte für adaptive Formulare schreiben.
 1. Der Benutzer mit Gruppenberechtigungen für Vorlagenautoren kann keine Skripte für Vorlagen schreiben.
