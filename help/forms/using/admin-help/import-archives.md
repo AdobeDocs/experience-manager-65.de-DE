@@ -1,8 +1,8 @@
 ---
 title: Archive importieren und verwalten
-seo-title: Archive importieren und verwalten
+seo-title: Import and manage archives
 description: Erfahren Sie, wie Sie Archive importieren und verwalten.
-seo-description: Erfahren Sie, wie Sie Archive importieren und verwalten.
+seo-description: Learn how to import and manage archives.
 uuid: aa1613dd-6350-49a7-9643-44365e2acdcc
 contentOwner: admin
 content-type: reference
@@ -11,8 +11,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b6f6463a-2ae4-43d2-8d16-cc20a954e50e
 exl-id: 0c15677a-ee17-425e-a261-fb3ae8688eb2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1465'
+workflow-type: ht
+source-wordcount: '1454'
 ht-degree: 100%
 
 ---
@@ -41,7 +41,7 @@ Verwenden Sie die Registerkarte „Archive“, um LCAs, die in Workbench erstell
 
    * Zum Umbenennen eines Endpunktes oder zum Bearbeiten seiner Beschreibung klicken Sie darauf.
    * Zum Hinzufügen eines Task Manager-Endpunktes klicken Sie auf „Task Manager hinzufügen“. Einzelheiten zu den Task Manager-Einstellungen finden Sie unter „[Task Manager-Endpunkte konfigurieren](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)“.
-   * Zum Hinzufügen eines Endpunkts vom Typ „Überwachter Ordner“ klicken Sie auf „WatchedFolder hinzufügen“. Einzelheiten zu den Einstellungen für überwachte Ordner finden Sie im Kapitel zu den [ Einstellungen für Endpunkte des Typs „Überwachter Ordner](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)“.
+   * Zum Hinzufügen eines Endpunkts vom Typ „Überwachter Ordner“ klicken Sie auf „WatchedFolder hinzufügen“. Einzelheiten zu den Einstellungen für überwachte Ordner finden Sie im Kapitel zu den [Einstellungen für Endpunkte des Typs „Überwachter Ordner](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)“.
    * Zum Hinzufügen eines E-Mail-Endpunktes klicken Sie auf „E-Mail hinzufügen“. Weitere Informationen zu E-Mail-Einstellungen finden Sie unter [E-Mail-Endpunkteinstellungen](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * Zum Hinzufügen eines EJB-Endpunktes klicken Sie auf „EJB hinzufügen“ und geben einen Namen und eine Beschreibung für den Endpunkt ein.
    * Zum Hinzufügen eines SOAP-Endpunktes klicken Sie auf „SOAP hinzufügen“ und geben einen Namen und eine Beschreibung für den Endpunkt ein.
@@ -93,14 +93,14 @@ Verwenden Sie die Registerkarte „Archive“, um LCAs, die in Workbench erstell
 
 1. Klicken Sie auf „Fertig stellen“, um die Konfiguration abzuschließen.
 
-## Konfigurieren Sie die AEM Forms, die Teil von Archivdateien sind.  {#configure-the-aem-forms-that-are-part-of-an-archive-file}
+## Konfigurieren Sie die AEM Forms, die Teil von Archivdateien sind. {#configure-the-aem-forms-that-are-part-of-an-archive-file}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Anwendungsverwaltung“ und klicken Sie dann auf die Registerkarte „Archive“.
 1. Wählen Sie auf der Seite „Archivverwaltung“ die zu konfigurierende Archivdatei aus.
 1. Wählen Sie auf der Seite „Archiv anzeigen“ die hervorgehobene Archivressource aus.
 1. Konfigurieren Sie die importierte Prozessarchivdatei.
 
-## Den Konfigurationsassistenten zum Konfigurieren die AEM Forms, die Teil von Archivdateien sind, verwenden  {#use-the-configuration-wizard-to-configure-the-aem-forms-that-are-part-of-an-archive-file}
+## Den Konfigurationsassistenten zum Konfigurieren die AEM Forms, die Teil von Archivdateien sind, verwenden {#use-the-configuration-wizard-to-configure-the-aem-forms-that-are-part-of-an-archive-file}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Anwendungsverwaltung“ und klicken Sie dann auf die Registerkarte „Archive“.
 1. Klicken Sie zum Konfigurieren neben der Archivdatei auf „Konfigurieren“.
@@ -108,7 +108,7 @@ Verwenden Sie die Registerkarte „Archive“, um LCAs, die in Workbench erstell
 
    * Zum Umbenennen eines Endpunktes oder zum Bearbeiten seiner Beschreibung klicken Sie darauf.
    * Zum Hinzufügen eines Task Manager-Endpunktes klicken Sie auf „Task Manager hinzufügen“. Einzelheiten zu den Task Manager-Einstellungen finden Sie unter „[Task Manager-Endpunkte konfigurieren](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)“.
-   * Zum Hinzufügen eines Endpunkts vom Typ „Überwachter Ordner“ klicken Sie auf „WatchedFolder hinzufügen“. Einzelheiten zu den Einstellungen für überwachte Ordner finden Sie im Kapitel zu den [ Einstellungen für Endpunkte des Typs „Überwachter Ordner](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)“.
+   * Zum Hinzufügen eines Endpunkts vom Typ „Überwachter Ordner“ klicken Sie auf „WatchedFolder hinzufügen“. Einzelheiten zu den Einstellungen für überwachte Ordner finden Sie im Kapitel zu den [Einstellungen für Endpunkte des Typs „Überwachter Ordner](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)“.
    * Zum Hinzufügen eines E-Mail-Endpunktes klicken Sie auf „E-Mail hinzufügen“. Weitere Informationen zu E-Mail-Einstellungen finden Sie unter [E-Mail-Endpunkteinstellungen](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * Zum Hinzufügen eines EJB-Endpunktes klicken Sie auf „EJB hinzufügen“ und geben einen Namen und eine Beschreibung für den Endpunkt ein.
    * Zum Hinzufügen eines SOAP-Endpunktes klicken Sie auf „SOAP hinzufügen“ und geben einen Namen und eine Beschreibung für den Endpunkt ein.
@@ -158,7 +158,7 @@ Verwenden Sie die Registerkarte „Archive“, um LCAs, die in Workbench erstell
 
       Klicken Sie auf „Fertig gestellt“, um den Prinzipal dem Sicherheitsprofil hinzuzufügen.
 
-## Ein Archiv entfernen  {#remove-an-archive}
+## Ein Archiv entfernen {#remove-an-archive}
 
 >[!NOTE]
 >
