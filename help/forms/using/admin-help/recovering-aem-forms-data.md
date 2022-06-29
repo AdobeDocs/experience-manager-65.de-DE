@@ -1,8 +1,8 @@
 ---
 title: Wiederherstellen der AEM Forms-Daten
-seo-title: Wiederherstellen der AEM Forms-Daten
+seo-title: Recovering the AEM forms data
 description: In diesem Dokument werden die zum Wiederherstellen der AEM Forms-Daten erforderlichen Schritte beschrieben.
-seo-description: In diesem Dokument werden die zum Wiederherstellen der AEM Forms-Daten erforderlichen Schritte beschrieben.
+seo-description: This document describes the steps required to recover the AEM forms data.
 uuid: b5735196-5a8d-4358-884f-e9b8d8f4f682
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
 exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 95%
+workflow-type: ht
+source-wordcount: '1157'
+ht-degree: 100%
 
 ---
 
@@ -99,7 +99,7 @@ Wenn ein einzelner Knoten eines Clusters mit mehreren Knoten ausgefallen ist, di
 
    * **Eigenständig**
 
-      *Autor- und Veröffentlichungsinstanzen wiederherstellen*: Bei einem Systemausfall können Sie das Repository im letzten gesicherten Zustand wiederherstellen, indem Sie die hier beschrieben Schritte ausführen: [Backup and Restore.](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html)
+      *Autor- und Veröffentlichungsinstanzen wiederherstellen*: Bei einem Systemausfall können Sie das Repository im letzten gesicherten Zustand wiederherstellen, indem Sie die hier beschrieben Schritte ausführen: [Backup and Restore.](https://docs.adobe.com/docs/de/crx/current/administering/backup_and_restore.html)
 
       Bei der vollständigen Wiederherstellung des Autorknotens werden auch die Daten von Forms Manager und AEM Forms Workspace wiederhergestellt.
 
@@ -108,11 +108,11 @@ Wenn ein einzelner Knoten eines Clusters mit mehreren Knoten ausgefallen ist, di
       Für die Wiederherstellung in einer Clusterumgebung finden Sie weitere Informationen unter [Strategie für Sicherung und Wiederherstellung in einer Clusterumgebung](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md#strategy-for-backup-and-restore-in-a-clustered-environment).
 
 1. Löschen Sie alle temporären AEM Forms-Dateien, die im Ordner „java.io.temp“ oder im temporären Adobe-Ordner erstellt wurden.
-1. Starten Sie AEM Formulare (siehe [Starten und Beenden von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/help/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
+1. Starten Sie AEM Forms (siehe [Starten und Stoppen von Services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/help/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
 
 ## Speicherort des globalen Dokumentenspeichers während der Wiederherstellung ändern {#changing-the-gds-location-during-recovery}
 
-Falls der globale Dokumentenspeicher an anderen als dem ursprünglichen Speicherort wiederhergestellt wird, führen Sie das Skript „LCSetGDS“ aus, um den globalen Dokumentenspeicher auf den neuen Speicherort festzulegen. Das Skript befindet sich im Ordner `[aem-forms root]\sdk\misc\Foundation\SetGDSCommandline` . Das Skript akzeptiert zwei Parameter: `defaultGDS` und `newGDS`. Lesen Sie die Datei `ReadMe.txt` im selben Ordner für Anweisungen zum Ausführen des Skripts.
+Falls der globale Dokumentenspeicher an anderen als dem ursprünglichen Speicherort wiederhergestellt wird, führen Sie das Skript „LCSetGDS“ aus, um den globalen Dokumentenspeicher auf den neuen Speicherort festzulegen. Das Skript befindet sich im Ordner `[aem-forms root]\sdk\misc\Foundation\SetGDSCommandline`. Das Skript benötigt die zwei Parameter `defaultGDS` und `newGDS`. Lesen Sie die Datei `ReadMe.txt` im selben Ordner für Anweisungen zum Ausführen des Skripts.
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Falls der globale Dokumentenspeicher an anderen als dem ursprünglichen Speicher
 >
 >Die Komponentenbereitstellung schlägt unter Windows fehl, wenn sich der Ordner des globalen Dokumentenspeichers im Stammordner des Laufwerks befindet (z. B. D:\) Beim globalen Dokumentenspeicher müssen Sie sicherstellen, dass sich der Ordner nicht im Stammordner des Laufwerks befindet, sondern in einem Unterordner. Der Ordner sollte beispielsweise „D:\GDS“ und nicht einfach „D:\“ lauten.
 
-## Globalen Dokumentenspeicher in einer Clusterumgebung wiederherstellen  {#recovering-the-gds-to-a-clustered-environment}
+## Globalen Dokumentenspeicher in einer Clusterumgebung wiederherstellen {#recovering-the-gds-to-a-clustered-environment}
 
 Fahren Sie zum Ändern des Speicherortes des globalen Dokumentenspeichers den gesamten Cluster herunter und führen Sie das Skript LCSetGDS auf einem einzelnen Knoten des Clusters aus. (Siehe [Speicherort des globalen Dokumentenspeichers während der Wiederherstellung ändern](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).) Starten Sie nur diesen Knoten. Sobald dieser Knoten vollständig gestartet ist, können andere Knoten im Cluster sicher gestartet werden. Die Knoten verweisen dann korrekt auf den neuen Speicherort des globalen Dokumentenspeichers.
 
