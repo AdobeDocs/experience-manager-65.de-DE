@@ -1,8 +1,8 @@
 ---
 title: Verwenden von HSM, um Dokumente digital zu signieren oder zertifizieren
-seo-title: Verwenden von HSM zum Zertifizieren von eSigned-Dokumenten
+seo-title: Use HSM to certify eSigned documents
 description: Verwenden von HSM oder eToken-Geräten zum Zertifizieren von eSigned-Dokumenten
-seo-description: Verwenden von HSM oder eToken-Geräten zum Zertifizieren von eSigned-Dokumenten
+seo-description: Use HSM or etoken devices to certify eSigned documents
 uuid: bbe057c1-6150-41f9-9c82-4979d31d305d
 contentOwner: vishgupt
 content-type: reference
@@ -11,9 +11,9 @@ topic-tags: document_services
 discoiquuid: 536bcba4-b754-4799-b0d2-88960cc4c44a
 exl-id: 4d423881-18e0-430a-849d-e1762366a849
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 85%
+workflow-type: ht
+source-wordcount: '995'
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Adobe Experience Manager Forms kann auf einem HSM oder eToken gespeicherte Berec
 
 ## Bevor Sie die HSM oder eToken-Geräte mit AEM Forms konfigurieren {#configurehsmetoken}
 
-* Installieren Sie das [Add-On-Paket für AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+* Installieren Sie das [Add-On-Paket für AEM Forms](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html).
 * Installieren und konfigurieren Sie HSM- oder eToken-Clientsoftware auf demselben Computer wie AEM Die Clientsoftware ist für die Kommunikation mit dem HSM und eToken-Geräten erforderlich.
 * (Nur Microsoft Windows) Legen Sie die Umgebungsvariable JAVA_HOME_32 so fest, dass sie auf den Ordner verweist, in dem die 32-Bit-Version von Java 8 Development Kit (JDK 8) installiert ist. Der Standardpfad des Ordners ist C:\Programme(x86)\Java\jdk&lt;Version>
 * (Nur AEM Forms auf OSGi) Installieren Sie das Stammzertifikat im Trust Store. Angabe ist erforderlich zur Verifizierung des signierten PDF.
@@ -41,15 +41,15 @@ Adobe Experience Manager Forms kann auf einem HSM oder eToken gespeicherte Berec
 
 ## Aktivieren des DocAssurance-Dienstes {#configuredocassurance}
 
-Standardmäßig ist der DocAssurance-Dienst nicht aktiviert. Führen Sie die folgenden Schritte aus, um den Dienst zu aktivieren:
+Standardmäßig ist der DocAssurance-Dienst nicht aktiviert. Führen Sie zum Aktivieren des Dienstes folgende Schritte durch:
 
 1. Beenden Sie die Autoreninstanz Ihrer AEM Forms-Umgebung.
 
-1. Öffnen Sie die Datei [AEM_root]\crx-quickstart\conf\sling.properties zur Bearbeitung.
+1. Öffnen Sie die Datei „[AEM_root]\crx-quickstart\conf\sling.properties“ zur Bearbeitung.
 
    >[!NOTE]
    >
-   >Wenn Sie die Datei [AEM_root]\crx-quickstart\bin\start.bat zum Starten der AEM-Instanz verwendet haben, öffnen Sie die Datei [AEM_root]\crx-quickstart\sling.properties zur Bearbeitung.
+   >Wenn Sie die Datei „[AEM_root]\crx-quickstart\bin\start.bat“ zum Starten der AEM-Instanz verwendet haben, öffnen Sie die Datei „[AEM_root]\crx-quickstart\sling.properties“ zur Bearbeitung.
 
 1. Fügen Sie der Datei „sling.properties“ die folgenden Eigenschaften hinzu oder ersetzen Sie sie:
 
@@ -68,19 +68,19 @@ Führen Sie die folgenden Schritte aus, um Zertifikate einzurichten:
 
 1. Melden Sie sich bei der AEM-Autoreninstanz als Administrator an.
 
-1. Klicken Sie auf **Adobe Experience Manager** in der Symbolleiste für globale Navigation. Navigieren Sie zu **Tools**> **Sicherheit**> **Benutzer**.
+1. Klicken Sie auf **Adobe Experience Manager** in der Symbolleiste für globale Navigation. Navigieren Sie zu **Tools** > **Sicherheit** > **Benutzer**.
 1. Klicken Sie auf das **Namensfeld** des Benutzerkontos. Die Seite **Edit User Settings** (Benutzereinstellungen bearbeiten) wird geöffnet.
 1. Auf der AEM-Authoring-Instanz residieren Zertifikate in einem KeyStore. Wenn Sie noch keinen KeyStore erstellt haben, klicken Sie auf **KeyStore erstellen** und legen Sie ein neues Kennwort für den KeyStore fest. Wenn der Server bereits einen KeyStore enthält, überspringen Sie diesen Schritt.
 
 1. Klicken Sie auf der Seite **Edit User Settings** (Benutzereinstellungen bearbeiten) auf **KeyStore verwalten**.
 
-1. Erweitern Sie im Dialogfeld &quot;KeyStore-Verwaltung&quot;die Option **Privaten Schlüssel aus Key Store-Datei hinzufügen** und geben Sie einen Alias an. Der Aliasname wird verwendet, um den Reader Extensions-Vorgang durchzuführen.
-1. Um die Zertifikatdatei hochzuladen, klicken Sie auf **Wählen Sie Key Store File** und laden Sie eine `.pfx`-Datei hoch.
-1. Fügen Sie die Werte für **Key Store Password** (KeyStore-Kennwort),**Private Key Password** (Kennwort für privaten Schlüssel)  und **Private Key Alias**(Alias des privaten Schlüssels) für das Zertifikat in den jeweiligen Feldern hinzu. Klicken Sie auf **Übermitteln**.
+1. Blenden Sie im Dialogfeld „KeyStore-Verwaltung“ die Option **Privaten Schlüssel aus KeyStore-Datei hinzufügen** ein und geben Sie einen Aliasnamen an. Der Aliasname wird verwendet, um den Reader Extensions-Vorgang durchzuführen.
+1. Um die Zertifikatdatei hochzuladen, klicken Sie auf **KeyStore-Datei auswählen** und laden Sie eine `.pfx`-Datei hoch.
+1. Fügen Sie die Werte für **Key Store Password** (KeyStore-Kennwort),**Private Key Password** (Kennwort für privaten Schlüssel) und **Private Key Alias**(Alias des privaten Schlüssels) für das Zertifikat in den jeweiligen Feldern hinzu. Klicken Sie auf **Senden**.
 
    >[!NOTE]
    >
-   >Um den P **Private Key Alias** eines Zertifikats zu bestimmen, können Sie den Java-Keytool-Befehl verwenden: `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
+   >Um den **Alias für den privaten Schlüssel** eines Zertifikats festzulegen, können Sie den keytool-Befehl von Java verwenden: `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
 
    >[!NOTE]
    >
@@ -92,13 +92,13 @@ Führen Sie die folgenden Schritte aus, um Zertifikate einzurichten:
 
 >[!NOTE]
 >
->Ersetzen Sie beim Wechsel in die Produktionsumgebung die Testzugangsdaten durch Produktionszugangsdaten. Stellen Sie sicher, dass Sie Ihre alten Reader Extensions-Anmeldedaten löschen, bevor Sie abgelaufene oder Testberechtigungen aktualisieren.
+>Ersetzen Sie beim Wechsel in die Produktionsumgebung die Testzugangsdaten durch Produktionszugangsdaten. Achten Sie darauf, dass Sie Ihre alten Reader Extensions-Anmeldedaten löschen, bevor Sie abgelaufene oder Testanmeldedaten aktualisieren.
 
 ## Erstellen eines Aliasnamens für das Gerät {#configuredeviceinaemconsole}
 
 Der Aliasname enthält alle Parameter, die ein HSM oder eToken erfordert. Befolgen Sie die nachfolgenden Anweisungen, um einen Aliasnamen für jede HSM- oder eToken-Berechtigung zu erstellen, die eSign oder Digital Signatures verwendet:
 
-1. Öffnen Sie die AEM-Konsole. Die Standard-URL der AEM Console lautet https://&lt;Host>:&lt;Port>/system/console/configMgr
+1. Öffnen Sie die AEM-Konsole. Die Standard-URL der AEM-Konsole lautet https://&lt;host>:&lt;port>/system/console/configMgr
 1. Öffnen Sie den **HSM Credentials Configuration Service** und geben Sie Werte in die folgenden Felder ein:
 
    * **Berechtigungsalias**: Geben Sie eine Zeichenfolge ein, die verwendet wird, um den Aliasnamen zu identifizieren. Dieser Wert wird als Eigenschaft für einige Digital Signatures-Vorgänge wie etwa das Signieren eines Signaturfelds verwendet.
@@ -108,10 +108,10 @@ Der Aliasname enthält alle Parameter, die ein HSM oder eToken erfordert. Befolg
 
    >[!NOTE]
    >
-   >Geben Sie beim Konfigurieren von Etoken einen numerischen Wert für das Feld HSM-Steckplatz-ID an. Ein numerischer Wert ist erforderlich, um Signaturen-Vorgänge zu ermöglichen.
+   >Geben Sie beim Konfigurieren von eToken einen numerischen Wert für das HSM-Steckplatz-ID-Feld an. Ein numerischer Wert ist erforderlich, um Signaturen-Vorgänge zu ermöglichen.
 
    * **Zertifikat SHA1**: Geben Sie den SHA1-Wert (Thumbprint) der öffentlichen Schlüsseldatei (.cer) für die verwendete Berechtigung an. Stellen Sie sicher, dass in dem SHA1-Wert keine Leerzeichen verwendet werden. Wenn Sie ein physisches Zertifikat verwenden, ist dies nicht erforderlich.
-   * **HSM-Gerätetyp**: Wählen Sie den Hersteller des HSM- (Luna- oder anderer) oder eToken-Geräts aus.
+   * **HSM-Gerätetyp**: Wählen Sie den HSM- oder eToken-Gerätehersteller aus (Luna oder anderer). 
 
    Klicken Sie auf **Speichern**. Das Hardware-Sicherheitsmodul ist für AEM Forms konfiguriert. Jetzt können Sie das Hardware-Sicherheitsmodul mit AEM Forms verwenden, um Dokumente zu signieren oder zu zertifizieren.
 
