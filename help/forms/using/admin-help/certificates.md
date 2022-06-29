@@ -1,8 +1,8 @@
 ---
 title: Zertifikate verwalten
-seo-title: Zertifikate verwalten
+seo-title: Managing certificates
 description: Erfahren Sie, wie Sie ein Zertifikat exportieren und importieren und seine Vertrauenseinstellungen bearbeiten.
-seo-description: Erfahren Sie, wie Sie ein Zertifikat exportieren und importieren und seine Vertrauenseinstellungen bearbeiten.
+seo-description: Learn how to import and export a certificate and edit its trust settings.
 uuid: 46b1dbe5-517c-4294-bb52-cc6700a768e8
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9fd531c0-5206-4be0-a450-13e0dc806068
 exl-id: 1fe0e7b4-6109-4f7a-8858-8237a1c5c93b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 83%
+workflow-type: ht
+source-wordcount: '641'
+ht-degree: 100%
 
 ---
 
@@ -30,12 +30,12 @@ Nur X509v3-Zertifikate werden unterstützt. Dieser Zertifikattyp kann in einer b
 
 Bei Zertifikaten, die zum Abschließen der Signaturüberprüfung erforderlich sind, müssen sich diese Dateien im selben Speicher (HSM oder Datenbank) befinden.
 
-Sie können Zertifikate mit der Trust Manager-API auch importieren und löschen. Weitere Informationen finden Sie in den Kapiteln zum Importieren von Zertifikaten mit der Trust Manager-API und Löschen von Zertifikaten mit der Trust Manager-API unter [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).
+Sie können Zertifikate mit der Trust Manager-API auch importieren und löschen. Weitere Informationen finden Sie in den Kapiteln zum Importieren von Zertifikaten mit der Trust Manager-API und Löschen von Zertifikaten mit der Trust Manager-API unter [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_de).
 
 ## Zertifikat importieren {#import-a-certificate}
 
 1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > Trust Store-Verwaltung > Zertifikate]**.
-1. Klicken Sie auf „Importieren“ und wählen Sie unter „TrustStore-Typ“ eine der folgenden Optionen:
+1. Klicken Sie auf „Importieren“ und wählen Sie unter „Trust Store-Typ“ eine der folgenden Optionen:
 
    * **Trust für SSL-Verbindungen:** Gibt an, dass AEM Forms Zertifikate verwenden kann, um über SSL Verbindungen zu externen Systemen herzustellen.
    * **Trust für Signaturzertifizierung:** Gibt an, dass Zertifikaten bei Dokumentsignierungsvorgängen für die Zertifizierung autorbezogener digitaler Signaturen vertraut wird.
@@ -49,13 +49,13 @@ Sie können Zertifikate mit der Trust Manager-API auch importieren und löschen.
    >Der Trust Store vertraut implizit einen Adobe-Stammzertifikat bei der Zertifikatauthentifizierung, der Signatur, dem Prüfen der Signatur und der Identität.
 
 1. Geben Sie in das Feld „Alias“ den Bezeichner für das Zertifikat ein.
-1. Klicken Sie auf **[!UICONTROL Browse]**, um das Zertifikat zu suchen, und klicken Sie dann auf **[!UICONTROL OK]**.
+1. Klicken Sie auf **[!UICONTROL Durchsuchen]**, um das Zertifikat zu finden, und anschließend auf **[!UICONTROL OK]**.
 
 ## Zertifikat exportieren {#export-a-certificate}
 
 1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > Trust Store-Verwaltung > Zertifikate]**.
 1. Klicken Sie auf den Aliasnamen des Zertifikats, das exportiert werden soll. Die Seite **[!UICONTROL Zertifikatdetails]** wird angezeigt.
-1. Klicken Sie auf **[!UICONTROL Export]**, befolgen Sie die Anweisungen zum Exportieren des Zertifikats und klicken Sie dann auf **[!UICONTROL OK]**.
+1. Klicken Sie auf **[!UICONTROL Exportieren]**, befolgen Sie die Anweisungen zum Exportieren des Zertifikats und klicken Sie anschließend auf **[!UICONTROL OK]**.
 
 ## Trust-Einstellungen und Trust Store-Typ eines Zertifikats bearbeiten {#edit-a-certificate-s-trust-settings-and-trust-store-type}
 
@@ -64,9 +64,9 @@ Sie können Zertifikate mit der Trust Manager-API auch importieren und löschen.
 1. Klicken Sie auf **[!UICONTROL Zertifikat aktualisieren]**.
 1. Geben Sie einen neuen Namen in das Feld „Alias“ ein, um den Aliasnamen des Zertifikats zu ändern.
 1. Um den Trust Store-Typ für das Zertifikat zu aktualisieren, wählen Sie den geeigneten Trust Store-Typ aus.
-1. Um die Richtlinienbeschränkungen zu aktualisieren, geben Sie im Feld &quot;Certificate Policies&quot;die Richtlinieninformationen ein und klicken Sie auf **[!UICONTROL OK]**.
+1. Um die Richtlinienbeschränkungen zu aktualisieren, geben Sie die Richtlinieninformationen in das Feld „Zertifikatrichtlinien“ ein und klicken Sie auf **[!UICONTROL OK]**.
 
 ## Zertifikat löschen {#delete-a-certificate}
 
-1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > Trust Store-Verwaltung > Zertifikate]**.
-1. Aktivieren Sie die Kontrollkästchen der zu löschenden Zertifikate, klicken Sie auf **[!UICONTROL Löschen]** und dann auf **[!UICONTROL OK]**.
+1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > Trust Store-Verwaltung > Berechtigungen]**.
+1. Aktivieren Sie die Kontrollkästchen der zu löschenden Zertifikate und klicken Sie erst auf **[!UICONTROL Löschen]** und anschließend auf **[!UICONTROL OK]**.
