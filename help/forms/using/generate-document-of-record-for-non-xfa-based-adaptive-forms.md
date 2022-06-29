@@ -1,20 +1,20 @@
 ---
 title: Generierung eines Datensatzdokuments für adaptive Formulare
-seo-title: Generierung eines Datensatzdokuments für adaptive Formulare
+seo-title: Generate Document of Record for adaptive forms
 description: Sie erfahren in diesem Artikel, wie Sie eine Vorlage für ein Datensatzdokument (DoR, Document of Record) für adaptive Formulare erstellen können.
-seo-description: Sie erfahren in diesem Artikel, wie Sie eine Vorlage für ein Datensatzdokument (DoR, Document of Record) für adaptive Formulare erstellen können.
+seo-description: Explains how you can generate a template for a document of record (DoR) for adaptive forms.
 uuid: 2dc7e0de-fff9-43fa-9426-e9b047eb2595
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
-feature: Adaptive Formulare
+feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 source-git-commit: a81367c2a07031d8c6cf549050a1445ff0c1a8dc
-workflow-type: tm+mt
-source-wordcount: '3508'
-ht-degree: 55%
+workflow-type: ht
+source-wordcount: '3483'
+ht-degree: 100%
 
 ---
 
@@ -28,54 +28,54 @@ Sie erfahren in diesem Artikel, wie Sie ein Datensatzdokument für adaptive Form
 
 >[!NOTE]
 >
->Die automatische Generierung des Datensatzdokuments wird für XFA-basierte adaptive Formulare nicht unterstützt. Sie können jedoch XDP verwenden, um das adaptive Formular als Datensatzdokument zu erstellen.
+>Die automatische Generierung von Datensatzdokumenten wird für XFA-basierte adaptive Formulare nicht unterstützt. Sie können jedoch XDP verwenden, um das adaptive Formular als Datensatzdokument zu erstellen.
 
 ## Typen adaptiver Formulare und ihre Datensatzdokumente {#adaptive-form-types-and-their-documents-of-record}
 
 Beim Erstellen eines adaptiven Formulars können Sie ein Formularmodell auswählen. Ihre Optionen sind:
 
-* [Formularvorlagen](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template) Sie können eine XFA-Vorlage für Ihr adaptives Formular auswählen. Wenn Sie eine XFA-Vorlage auswählen, können Sie die zugehörige XDP-Datei für das Datensatzdokument wie oben beschrieben verwenden.
+* [Formularvorlagen](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template) Sie können eine XFA-Vorlage für Ihr adaptives Formular auswählen. Wenn Sie eine XFA-Vorlage auswählen, können Sie die dazugehörige XDP-Datei als Datensatzdokument verwenden (siehe oben). 
 
 * [XML-Schema](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema) Sie können eine XML-Schemadefinition für Ihr adaptives Formular auswählen. Wenn Sie ein XML-Schema für Ihr adaptives Formular auswählen, können Sie Folgendes tun:
 
    * XFA-Vorlage für Datensatzdokument verknüpfen. Vergewissern Sie sich, dass die verknüpfte XFA-Vorlage dasselbe XML-Schema verwendet wie Ihr adaptives Formular.
    * Datensatzdokument automatisch generieren
 
-* Mit der Option „Ohne“ können Sie ein adaptives Formular ohne Formularmodell erstellen. Das Datensatzdokument wird automatisch für Ihr adaptives Formular generiert.
+* Mit der Option „Ohne“ können Sie ein adaptives Formular ohne Formularmodell erstellen. Das Datensatzdokument für Ihr adaptives Formular wird automatisch generiert.
 
-Wenn Sie ein Formularmodell auswählen, konfigurieren Sie das Datensatzdokument mit den Optionen, die unter Konfiguration der Datensatzdokumentvorlage verfügbar sind. Weitere Informationen dazu finden Sie unter [Konfiguration der Datensatzdokument-Vorlage](#document-of-record-template-configuration).
+Wenn Sie ein Formularmodell auswählen, konfigurieren Sie das Datensatzdokument mithilfe der Optionen, die unter „Konfiguration von Dokument aus Datensatzvorlage“ verfügbar sind. Weitere Informationen dazu finden Sie unter [Konfiguration der Datensatzdokument-Vorlage](#document-of-record-template-configuration).
 
 ## Automatisch generiertes Datensatzdokument {#automatically-generated-document-of-record}
 
-Dank Datensatzdokument erhalten Ihre Kunden eine Kopie des übermittelten Formulars zum Ausdrucken. Wenn Sie automatisch ein Datensatzdokument generieren, wird jedes Mal, wenn Sie Ihr Formular ändern, sein Datensatzdokument sofort aktualisiert. Beispiel: Sie entfernen für Kunden, die als ihr Land die USA angeben, das Feld „Alter“. Wenn diese Kunden ein Datensatzdokument erstellen, ist das Altersfeld im Datensatzdokument nicht sichtbar.
+Dank Datensatzdokument erhalten Ihre Kunden eine Kopie des übermittelten Formulars zum Ausdrucken. Wenn Sie automatisch ein Datensatzdokument generieren, wird jedes Mal das Datensatzdokument sofort aktualisiert, wenn Sie das Formular ändern. Beispiel: Sie entfernen für Kunden, die als ihr Land die USA angeben, das Feld „Alter“. Wenn diese Kunden ein Datensatzdokument erstellen, ist das Altersfeld im Datensatzdokument nicht sichtbar.
 
-Das automatisch generierte Datensatzdokument bietet die folgenden Vorteile:
+ Ein automatisch generiertes Datensatzdokument bietet folgende Vorteile:
 
 * Es kümmert sich um die Datenbindung.
-* Dadurch werden automatisch Felder ausgeblendet, die zum Zeitpunkt der Übermittlung aus dem Datensatzdokument ausgeschlossen sind. Zusätzlicher Aufwand ist nicht erforderlich.
-* Dies spart Zeit für die Erstellung der Datensatzdokumentvorlage.
+* Dadurch werden automatisch Felder ausgeblendet, die im Datensatzdokument zum Zeitpunkt des Sendens entsprechend markiert sind. Zusätzlicher Aufwand ist nicht erforderlich.
+* Dies spart Zeit für die Entwicklung der Datensatzdokument-Vorlage.
 * Außerdem können Sie auch verschiedene Formatierungsstile und Erscheinungsbilder ausprobieren, indem Sie unterschiedliche Basisvorlagen verwenden und dann das beste Design für Ihr Datensatzdokument auswählen. Stil und Erscheinungsbild sind optional. Wenn Sie sich auf keinen Stil festlegen, werden Systemstile als Standard festgelegt.
 * Es stellt sicher, dass eine Änderung im Formular sofort im Datensatzdokument umgesetzt wird.
 
 ## Komponenten für die automatische Generierung eines Datensatzdokuments {#components-to-automatically-generate-a-document-of-record}
 
-Um ein Datensatzdokument für adaptive Formulare zu generieren, benötigen Sie die folgenden Komponenten:
+Sie benötigen die folgenden Komponenten, um ein Datensatzdokument für adaptive Formulare zu generieren:
 
-**Adaptives** Formular Adaptives Formular, für das Sie ein Datensatzdokument generieren möchten.
+**Adaptives Formular** Das adaptive Formular, für das Sie ein Datensatzdokument generieren möchten.
 
-**Basisvorlage (empfohlen)** Das ist eine in AEM Designer erstellte XFA-Vorlage (XDP-Datei). Die Basisvorlage wird verwendet, um Stile und Branding-Informationen für die Datensatzdokumentvorlage anzugeben.
+**Basisvorlage (empfohlen)** Das ist eine in AEM Designer erstellte XFA-Vorlage (XDP-Datei). Eine Basisvorlage wird verwendet, um die Stile und Branding-Informationen für die Datensatzdokument-Vorlage festzulegen.
 
 Siehe [Basisvorlage eines Datensatzdokuments](#base-template-of-a-document-of-record)
 
 >[!NOTE]
 >
->Die Basisvorlage eines Datensatzdokuments wird auch als Metavorlage eines Datensatzdokuments bezeichnet.
+>Die Basisvorlage eines Datensatzdokuments wird auch als Metavorlage des Datensatzdokuments bezeichnet.
 
-**Datensatzdokument** templateXFA-Vorlage (XDP-Datei), das aus einem adaptiven Formular generiert wurde.
+**Datensatzdokument-Vorlage** Eine aus einem adaptiven Formular generierte XFA-Vorlage (XDP-Datei).
 
 Weitere Informationen dazu finden Sie unter [Konfiguration der Datensatzdokument-Vorlage](#document-of-record-template-configuration).
 
-**Formulardaten:** Informationen, die von einem Benutzer im adaptiven Formular ausgefüllt werden. Es wird mit der Datensatzdokument-Vorlage zusammengeführt, um das Datensatzdokument zu generieren.
+**Formulardaten** Informationen, die von einem Benutzer in das adaptive Formular eingetragen werden. Sie werden mit der Datensatzdokument-Vorlage zusammengeführt, um das Datensatzdokument zu generieren.
 
 ## Zuordnen von adaptiven Formularelementen {#mapping-of-adaptive-form-elements}
 
@@ -88,7 +88,7 @@ Die folgenden Abschnitte beschreiben, wie adaptive Formularelemente im Datensatz
   <tr>
    <th>Komponente des adaptiven Formulars</th>
    <th>Zugehörige XFA-Komponente</th>
-   <th>Standardmäßig in Datensatzdokument-Vorlage eingeschlossen?</th>
+   <th>Standardmäßig in der Datensatzdokument-Vorlage enthalten?</th>
    <th>Anmerkungen</th>
   </tr>
   <tr>
@@ -167,7 +167,7 @@ Die folgenden Abschnitte beschreiben, wie adaptive Formularelemente im Datensatz
    <td>Dateianhang</td>
    <td> </td>
    <td>Nein</td>
-   <td>Nicht verfügbar in Datensatzdokument-Vorlage. Nur im Datensatzdokument über Anlagen verfügbar.</td>
+   <td>In Datensatzdokument-Vorlage nicht verfügbar. In Datensatzdokument-Vorlage nur über Anlagen verfügbar.</td>
   </tr>
  </tbody>
 </table>
@@ -193,7 +193,7 @@ Die folgenden Abschnitte beschreiben, wie adaptive Formularelemente im Datensatz
 
 | Komponente des adaptiven Formulars | Zugehörige XFA-Komponente | Anmerkungen |
 |---|---|---|
-| Bild | Bild | Die Komponenten TextDraw und Bild, ob gebunden oder ungebunden, werden immer im Datensatzdokument für ein XSD-basiertes adaptives Formular angezeigt, es sei denn, sie werden mithilfe der Datensatzdokument-Einstellungen ausgeschlossen. |
+| Bild | Bild | Die Komponenten TextDraw und Image (egal ob gebunden oder nicht) werden immer im Datensatzdokument eines XSD-basierten adaptiven Formulars angezeigt, es sei denn, sie werden mithilfe der Datensatzdokument-Einstellungen ausgeschlossen. |
 | Text | Text |
 
 >[!NOTE]
@@ -206,13 +206,13 @@ Die Tabellenkomponenten adaptiver Formulare, wie Kopf- und Fußzeile sowie Zeile
 
 ## Basisvorlage eines Datensatzdokuments {#base-template-of-a-document-of-record}
 
-Die Basisvorlage beinhaltet Informationen zu Stil und Erscheinungsbild des Datensatzdokuments. Es bietet Ihnen die Möglichkeit, das Standarderscheinungsbild des automatisch generierten Datensatzdokuments anzupassen. Beispiel: Sie möchten das Logo Ihres Unternehmens in der Kopfzeile und die Copyright-Informationen in der Fußzeile des Datensatzdokuments einfügen. Die Masterseite der Basisvorlage wird als Masterseite für die Datensatzdokument-Vorlage verwendet. Die Masterseite kann Informationen wie Kopfzeile, Fußzeile und Seitenzahl enthalten, die Sie auf das Datensatzdokument anwenden können. Sie können diese Informationen mithilfe der Basisvorlage für die automatische Erstellung des Datensatzdokuments auf das Datensatzdokument anwenden. Die Verwendung der Basisvorlage ermöglicht es Ihnen, die Standardeinstellungen von Feldern zu ändern.
+Die Basisvorlage beinhaltet Informationen zu Stil und Erscheinungsbild des Datensatzdokuments. Es bietet Ihnen die Möglichkeit, das Standarderscheinungsbild des automatisch generierten Datensatzdokuments anzupassen. Beispiel: Sie möchten das Logo Ihres Unternehmens in der Kopfzeile und die Copyright-Informationen in der Fußzeile des Datensatzdokuments einfügen. Die Masterseite der Basisvorlage wird als Masterseite für die Datensatzdokument-Vorlage verwendet. Die Masterseite kann Informationen wie Kopfzeile, Fußzeile und Seitenzahl enthalten, die Sie auf das Datensatzdokument anwenden können. Sie können solche Informationen mithilfe der Basisvorlage für die automatische Erstellung des Datensatzdokuments auf das Datensatzdokument anwenden. Die Verwendung der Basisvorlage ermöglicht es Ihnen, die Standardeinstellungen von Feldern zu ändern.
 
 Bitte folgen Sie bei der Entwicklung Ihrer Basisvorlage den [Konventionen für Basisvorlagen](#base-template-conventions).
 
 ## Konventionen für Basisvorlagen {#base-template-conventions}
 
-Eine Basisvorlage wird verwendet, um Kopf- und Fußzeile, Stil und Erscheinungsbild eines Datensatzdokuments zu definieren. Die Kopf- und die Fußzeile können Informationen wie Firmenlogo und Copyright-Vermerk enthalten. Die erste Übergeordnete Seite in der Basisvorlage wird kopiert und als Übergeordnete Seite für das Datensatzdokument verwendet, die Kopf- und Fußzeilen sowie Seitenzahlen und andere Informationen enthält, die im Datensatzdokument auf allen Seiten angezeigt werden sollen. Wenn Sie eine Basisvorlage verwenden, die nicht den Konventionen für Basisvorlagen entspricht, wird die erste Übergeordnete Seite aus der Basisvorlage weiterhin in der Datensatzdokumentvorlage verwendet. Es wird dringend empfohlen, dass Sie Ihre Basisvorlage gemäß den Konventionen entwerfen und sie für die automatische Erstellung von Datensatzdokumenten verwenden.
+Eine Basisvorlage wird verwendet, um Kopf- und Fußzeile, Stil und Erscheinungsbild eines Datensatzdokuments zu definieren. Die Kopf- und die Fußzeile können Informationen wie Firmenlogo und Copyright-Vermerk enthalten. Die erste Masterseite in der Basisvorlage wird als Masterseite für das Datensatzdokument kopiert und verwendet. Sie enthält Kopfzeile, Fußzeile und Seitenanzahl oder auch andere Informationen, die im Datensatzdokument auf allen Seiten angezeigt werden sollen. Wenn Sie eine Basisvorlage verwenden, die nicht den Konventionen für Basisvorlagen entspricht, wird die erste Masterseite aus der Basisvorlage dennoch in der Datensatzdokument-Vorlage verwendet. Es wird dringend empfohlen, dass Sie Ihre Basisvorlage gemäß den Konventionen entwerfen und sie für die automatische Erstellung von Datensatzdokumenten verwenden.
 
 **Konventionen für Musterseiten**
 
@@ -228,9 +228,9 @@ Eine Basisvorlage wird verwendet, um Kopf- und Fußzeile, Stil und Erscheinungsb
 
 * Die Eigenschaften dieser Felder werden auf die Felder im Datensatzdokument angewendet. Benennungen für diese Felder sollten der Form `AF_<name of field in all caps>_XFO` folgen. So sollte beispielsweise der Feldname für ein Kontrollkästchen `AF_CHECKBOX_XFO` lauten.
 
-Zum Erstellen einer Basisvorlage führen Sie in AEM-Designer folgende Schritte durch.
+Gehen Sie wie folgt vor, um eine Basisvorlage in AEM Designer zu erstellen:
 
-1. Wählen Sie „**Datei“ > „Neu**“.
+1. Klicken Sie auf **Datei > Neu**.
 1. Wählen Sie die Option **Auf Basis einer Vorlage** aus.
 
 1. Wählen Sie die Kategorie **Formulare – Aufzuzeichnendes Dokument**.
@@ -254,7 +254,7 @@ Sie können das gespeicherte Formular jetzt als Basisvorlage für das Datensatzd
 
 ## Konfiguration von Vorlagen für Datensatzdokumente {#document-of-record-template-configuration}
 
-Konfigurieren Sie die Datensatzdokumentvorlage Ihres Formulars, damit Ihre Kunden eine benutzerfreundliche Kopie des gesendeten Formulars zum Drucken herunterladen können. Eine XDP-Datei dient als Datensatzdokument-Vorlage. Das Dokument aus Datensätzen, das Kunden herunterladen, ist gemäß dem in der XDP-Datei angegebenen Layout formatiert.
+Konfigurieren Sie die Datensatzdokument-Vorlage Ihres Formulars, damit Ihre Kunden eine benutzerfreundliche Kopie des gesendeten Formulars zum Drucken herunterladen können. Als Datensatzdokument-Vorlage dient eine XDP-Datei. Das vom Kunden heruntergeladene Datensatzdokument ist entsprechend dem Layout formatiert, das in der XDP-Datei festgelegt ist.
 
 Führen Sie die folgenden Schritte aus, um ein Datensatzdokument für adaptive Formulare zu konfigurieren:
 
@@ -265,17 +265,17 @@ Sie können ein Formularmodell auch bei der Erstellung eines Formulars auswähle
 
    >[!NOTE]
    >
-   >Achten Sie auf der Registerkarte „Formularmodell“ darauf, dass Sie **Schema** oder **Ohne** aus dem Dropdown-Menü **Auswählen** auswählen. **[!UICONTROL Das Datensatzdokument wird für XFA-basierte oder adaptive Formulare mit Formularvorlage als Formularmodell nicht unterstützt.]**
+   >Achten Sie auf der Registerkarte „Formularmodell“ darauf, dass Sie **Schema** oder **Ohne** aus dem Dropdown-Menü **Auswählen** auswählen. **[!UICONTROL Das Datensatzdokument wird nicht für XFA-basierte oder adaptive Formulare mit einer Formularvorlage als Formularmodell unterstützt.]**
 
 1. Wählen Sie auf der Registerkarte „Formularmodell“ im Abschnitt „Konfiguration der Datensatzdokument-Vorlage“ eine der folgenden Optionen aus.
 
-   **** NoneWählen Sie diese Option, wenn Sie das Datensatzdokument für das Formular nicht konfigurieren möchten.
+   **Keine** Wählen Sie diese Option aus, wenn Sie kein Datensatzdokument für das Formular konfigurieren möchten.
 
-   **Formularvorlage als Datensatzdokumentvorlage verknüpfen Wählen Sie diese** Option, wenn Sie eine XDP-Datei haben, die Sie als Vorlage für das Datensatzdokument verwenden möchten. Wenn Sie diese Option wählen, werden alle im AEM Forms-Repository verfügbaren XDP-Dateien angezeigt. Wählen Sie die entsprechende Datei aus.
+   **Formularvorlage als Dokument einer Datensatzvorlage verknüpfen** Wählen Sie diese Option, wenn Sie eine XDP-Datei haben, die Sie als Vorlage für das Datensatzdokument verwenden möchten. Wenn Sie diese Option wählen, werden alle im AEM Forms-Repository verfügbaren XDP-Dateien angezeigt. Wählen Sie die entsprechende Datei aus.
 
    Die ausgewählte XDP-Datei wird mit dem adaptiven Formular verknüpft.
 
-   **Generate Document of** RecordWählen Sie diese Option, um eine XDP-Datei als Basisvorlage zum Definieren des Stils und Erscheinungsbilds für das Datensatzdokument zu verwenden. Wenn Sie diese Option wählen, werden alle im AEM Forms-Repository verfügbaren XDP-Dateien angezeigt. Wählen Sie die entsprechende Datei aus.
+   **Datensatzdokument generieren** Wählen Sie diese Option aus, um eine XDP-Datei als Basisvorlage zum Definieren von Stil und Erscheinungsbild des Datensatzdokuments zu verwenden. Wenn Sie diese Option wählen, werden alle im AEM Forms-Repository verfügbaren XDP-Dateien angezeigt. Wählen Sie die entsprechende Datei aus.
 
    >[!NOTE]
    >
@@ -284,10 +284,10 @@ Sie können ein Formularmodell auch bei der Erstellung eines Formulars auswähle
    >
    >
    >    * Ihr adaptives Formular ist Schema-basiert
-   >    * Sie verwenden die Option **Formularvorlage als Datensatzdokumentvorlage zuordnen** für Datensatzdokument
+   >    * Sie verwenden die Datensatzdokument-Option „**Formularvorlage als Dokument aus Datensatzvorlage zuordnen**“.
 
 
-1. Klicken Sie auf **Fertig.**
+1. Klicken Sie auf **Fertig**.
 
 ## Anpassen der Branding-Informationen im Datensatzdokument {#customize-the-branding-information-in-document-of-record}
 
@@ -295,8 +295,8 @@ Beim Generieren eines Datensatzdokuments können Sie auf der Registerkarte „Da
 
 Für die Lokalisierung der Branding-Informationen, die Sie auf der Registerkarte für das Datensatzdokument eingeben, müssen Sie sicherstellen, dass das Gebietsschema des Browsers richtig eingestellt ist. Um die Branding-Informationen im Datensatzdokument anzupassen, gehen Sie wie folgt vor:
 
-1. Wählen Sie ein Bedienfeld (Stammbedienfeld) im Datensatzdokument aus und tippen Sie dann auf ![configure](assets/configure.png).
-1. Tippen Sie auf ![dortab](assets/dortab.png). Die Registerkarte „Datensatzdokument“ wird angezeigt.
+1. Wählen Sie einen Bereich (Stammbereich) im Datensatzdokument aus und tippen Sie dann auf ![Konfigurieren](assets/configure.png).
+1. Tippen Sie auf ![dortab](assets/dortab.png). Die Registerkarte „Aufzuzeichnendes Dokument“ wird angezeigt.
 1. Wählen Sie entweder die Standardvorlage oder eine benutzerdefinierte Vorlage für das Rendern von Datensatzdokumenten aus. Wenn Sie die Standardvorlage auswählen, wird eine Miniaturvorschau des Datensatzdokuments in der Dropdown-Liste für Vorlagen angezeigt.
 
    ![brandingtemplate](assets/brandingtemplate.png)
@@ -312,22 +312,22 @@ Für die Lokalisierung der Branding-Informationen, die Sie auf der Registerkarte
    * **Haftungsausschluss**
    * **Text des Haftungsausschlusses**
    * **Akzentfarbe:** Die Farbe, in der Kopfzeilentext und Trennlinien im Datensatzdokument-PDF dargestellt werden.
-   * **Schriftfamilie**: Schriftfamilie des Textes im Datensatzdokument-PDF
+   * **Schriftfamilie:** Schriftfamilie des Textes im Datensatzdokument-PDF. 
    * **Für Kontrollkästchen und Optionsschaltflächenkomponenten nur ausgewählte Werte einblenden**
    * **Trennzeichen für mehrere ausgewählte Werte**
    * **Formularobjekte, die nicht mit dem Datenmodell verbunden sind, einschließen**
    * **Ausgeblendete Felder vom Datensatzdokument ausschließen**
    * **Beschreibung von Bereichen ausblenden**
 
-   Wenn die von Ihnen ausgewählte benutzerdefinierte XDP-Vorlage mehrere Übergeordnete Seiten enthält, werden die Eigenschaften für diese Seiten im Abschnitt **[!UICONTROL content]** der Registerkarte **[!UICONTROL Datensatzdokument]** angezeigt.
+   Wenn die von Ihnen ausgewählte benutzerdefinierte XDP-Vorlage mehrere Masterseiten enthält, werden die Eigenschaften für diese Seiten im Abschnitt **[!UICONTROL Inhalt]** auf der Registerkarte **[!UICONTROL Datensatzdokument]** angezeigt.
 
-   ![Übergeordnete Seiteneigenschaften](assets/master-page-properties.png)
+   ![Eigenschaften primäre seite ](assets/master-page-properties.png)
 
-   Die Übergeordneten Seiteneigenschaften umfassen Logobild, Kopfzeilentext, Formulartitel, Haftungsausschluss-Bezeichnung und Haftungsausschlusstext. Sie können Eigenschaften für adaptive Formulare oder XDP-Vorlagen auf das Datensatzdokument anwenden. AEM Forms wendet die Vorlageneigenschaften standardmäßig auf das Datensatzdokument an. Sie können auch benutzerdefinierte Werte für die Übergeordneten Seiteneigenschaften definieren. Informationen zum Anwenden mehrerer Übergeordneter Seiten in einem Datensatzdokument finden Sie unter [Anwenden mehrerer Übergeordneter Seiten auf ein Datensatzdokument](#apply-multiple-master-pages-dor).
+   Die Eigenschaften der Masterseiten umfassen Logobild, Kopfzeilentext, Formulartitel, Haftungsausschlussüberschrift und Haftungsausschlusstext. Sie können Eigenschaften für adaptive Formulare oder XDP-Vorlagen auf das Datensatzdokument anwenden. AEM Forms wendet standardmäßig die Vorlageneigenschaften auf das Datensatzdokument an. Sie können auch benutzerdefinierte Werte für die Eigenschaften der Masterseiten definieren. Informationen zum Anwenden mehrerer Masterseiten in einem Datensatzdokument finden Sie unter [Anwenden mehrerer Masterseiten in einem Datensatzdokument](#apply-multiple-master-pages-dor).
 
    >[!NOTE]
    >
-   >Wenn Sie eine adaptive Formularvorlage verwenden, die mit einer Designer-Version vor 6.3 erstellt wurde, müssen Sie sicherstellen, dass in Ihrer adaptiven Formularvorlage unter dem Stammteilformular Folgendes vorhanden ist, damit die Eigenschaften für Accent Color und Font Family funktionieren:
+   >Wenn Sie eine Vorlage für ein adaptives Formular verwenden, die mit einer Version von Designer vor 6.3 erstellt wurde, müssen Sie sicherstellen, dass im Root-Unterformular der Vorlage für das adaptive Formular folgendes vorhanden ist, damit Akzentfarbe und Schriftfamilie funktionieren:
 
    ```xml
    <proto>
@@ -345,7 +345,7 @@ Für die Lokalisierung der Branding-Informationen, die Sie auf der Registerkarte
 
 ## Tabellen- und Spalten-Layouts für Bereiche im Datensatzdokument {#table-and-column-layouts-for-panels-in-document-of-record}
 
-Ihr adaptives Formular kann lang sein und mehrere Formularfelder enthalten. Sie möchten eventuell das Datensatzdokument nicht als exakte Kopie des adaptiven Formulars speichern. Im Editor für adaptive Formulare können Sie jetzt das Tabellen- oder Spaltenlayout zum Speichern eines oder mehrerer Bereiche des adaptiven Formulars im Datensatzdokument auswählen.
+Ihr adaptives Formular ist möglicherweise sehr lange und umfasst mehrere Formularfelder. Sie möchten eventuell das Datensatzdokument nicht als exakte Kopie des adaptiven Formulars speichern. Im Editor für adaptive Formulare können Sie jetzt das Tabellen- oder Spaltenlayout zum Speichern eines oder mehrerer Bereiche des adaptiven Formulars im Datensatzdokument auswählen.
 
 Bevor Sie ein Datensatzdokument generieren, wählen Sie in den Einstellungen für den betreffenden Bereich unter „Layout für Dokument aus Datensatz“ entweder „Tabelle“ oder „Spalte“ aus. Die Felder im Bereich werden im Datensatzdokument entsprechend angeordnet.
 
@@ -359,85 +359,85 @@ Felder in einem Bedienfeld, im Datensatzdokument im Spaltenlayout angeordnet
 
 ## Einstellungen für Datensatzdokumente {#document-of-record-settings}
 
-Mit den Datensatzdokument-Einstellungen können Sie Optionen auswählen, die Sie in das Datensatzdokument aufnehmen möchten. Beispiel: Eine Bank akzeptiert in einem Formular Name, Alter, Sozialversicherungsnummer und Telefonnummer. Das Formular generiert eine Bankkontonummer und Details zur Filiale. Sie können festlegen, dass nur Name, Sozialversicherungsnummer, Bankkonto und Filialendetails im Datensatzdokument angezeigt werden.
+Über die Datensatzdokument-Einstellungen können Sie Optionen festlegen, die Sie in das Datensatzdokument aufnehmen möchten. Beispiel: Eine Bank akzeptiert in einem Formular Name, Alter, Sozialversicherungsnummer und Telefonnummer. Das Formular generiert eine Bankkontonummer und Details zur Filiale. Sie können festlegen, dass nur Name, Sozialversicherungsnummer, Bankkonto und Filialendetails im Datensatzdokument angezeigt werden.
 
-Die Datensatzdokument-Einstellungen einer Komponente sind unter ihren Eigenschaften verfügbar. Um auf die Eigenschaften einer Komponente zuzugreifen, wählen Sie die Komponente aus und klicken Sie auf ![cmppr](assets/cmppr.png) in der Überlagerung. Die Eigenschaften werden in der Seitenleiste mit den folgenden Einstellungen angezeigt.
+Die Datensatzdokument-Einstellungen einer Komponente sind unter den Eigenschaften verfügbar. Um auf die Eigenschaften einer Komponente zuzugreifen, wählen Sie die Komponente aus und klicken Sie auf ![cmppr](assets/cmppr.png) in der Überlagerung. Die Eigenschaften werden in der Seitenleiste mit den folgenden Einstellungen angezeigt.
 
 **Einstellungen auf Feldebene**
 
 * **Aus Datensatzdokument ausschließen**: Wird diese Eigenschaft aktiviert, erscheint das Feld im Datensatzdokument nicht. Dies ist eine skriptfähige Eigenschaft namens `excludeFromDoR`. Ihr Verhalten ist von der auf Formularebene befindlichen Eigenschaft **Felder aus DoR ausschließen, wenn sie ausgeblendet sind** abhängig.
 
-* **Bedienfeld als Tabelle anzeigen:** Durch Festlegen der Eigenschaft wird der Bereich als Tabelle im Datensatzdokument angezeigt, wenn der Bereich weniger als 6 Felder enthält. Gilt nur für den Bereich.
+* **Bereich als Tabelle anzeigen:** Durch die Aktivierung dieser Eigenschaft wird der Bereich im Datensatzdokument als Tabelle angezeigt, wenn er weniger als 6 Felder enthält. Gilt nur für den Bereich.
 * **Titel aus Datensatzdokument ausschließen:** Wird diese Eigenschaft aktiviert, erscheint der Titel des Bereichs bzw. der Tabelle im Datensatzdokument nicht. Gilt nur für Bereiche und Tabellen.
 * **Beschreibung aus Datensatzdokument ausschließen:** Wird diese Eigenschaft aktiviert, erscheint die Beschreibung des Bereichs bzw. der Tabelle im Datensatzdokument nicht. Gilt nur für Bereiche und Tabellen.
-* **[!UICONTROL Paginierung]**  >  **[!UICONTROL Platzieren]**: Legt fest, wo Sie das Bedienfeld platzieren möchten.
-   * **[!UICONTROL Ort]**  >  **[!UICONTROL Vorherige]**: Platziert den Bereich nach dem vorherigen Objekt im übergeordneten Bereich.
-   * **[!UICONTROL Platzieren]**  >  **[!UICONTROL Im Inhaltsbereich]**  > Name des Inhaltsbereichs: Platziert den Bereich im angegebenen Inhaltsbereich.
-   * **[!UICONTROL Ort]**  >  **[!UICONTROL Anfang des nächsten Inhaltsbereichs]**: Platziert das Bedienfeld am Anfang des nächsten Inhaltsbereichs.
-   * **[!UICONTROL Ort]**  >  **[!UICONTROL Anfang des Inhaltsbereichs]**  > Name des Inhaltsbereichs: Platziert das Bedienfeld am Anfang des angegebenen Inhaltsbereichs.
-   * **[!UICONTROL Ort]**  >  **[!UICONTROL Auf Seite]**  > Name der Übergeordneten Seite: Platziert den Bereich auf der angegebenen Seite. Wenn ein Seitenumbruch nicht automatisch eingefügt wird, fügt [!DNL AEM Forms] einen Seitenumbruch hinzu.
-   * **[!UICONTROL Ort]**  >  **[!UICONTROL Anfang der nächsten Seite]**: Platziert das Bedienfeld am Anfang der nächsten Seite. Wenn ein Seitenumbruch nicht automatisch eingefügt wird, fügt [!DNL AEM Forms] einen Seitenumbruch hinzu.
-   * **[!UICONTROL Ort]**  >  **[!UICONTROL Seitenanfang]**  > Name der Übergeordneten Seite: Platziert das Bedienfeld am Anfang der Seite, wenn die angegebene Seite gerendert wird. Wenn ein Seitenumbruch nicht automatisch eingefügt wird, fügt [!DNL AEM Forms] einen Seitenumbruch hinzu.
-* **[!UICONTROL Paginierung]**  >  **[!UICONTROL Nach]**: Legt fest, welcher Bereich gefüllt werden soll, nachdem ein Bedienfeld platziert wurde. Die folgenden Felder sind im Abschnitt  **** Anschluss verfügbar:
-   * **[!UICONTROL Nach]**  >  **[!UICONTROL Übergeordnetes Ausfüllen fortsetzen]**: Setzt das Zusammenführen von Daten für alle Objekte fort, die im übergeordneten Bereich noch ausgefüllt werden sollen.
-   * **[!UICONTROL Nach]**  >  **[!UICONTROL Navigieren Sie zum nächsten Inhaltsbereich]**: Startet das Füllen des nächsten Inhaltsbereichs nach dem Platzieren des Bedienfelds.
-   * **[!UICONTROL Nach]**  >  **[!UICONTROL Navigieren Sie zum Inhaltsbereich]**  > Name des Inhaltsbereichs: Startet das Füllen des angegebenen Inhaltsbereichs nach dem Platzieren des Bedienfelds.
-   * **[!UICONTROL Nach]**  >  **[!UICONTROL Gehe zur nächsten Seite]**: Startet das Füllen der nächsten Seite, nachdem der Bereich platziert wurde.
-   * **[!UICONTROL Nach]**  >  **[!UICONTROL Gehe zu Seite]**  > Name der Seite: Startet das Füllen der angegebenen Seite nach dem Platzieren des Bedienfelds.
-* **[!UICONTROL Paginierung]**  >  **[!UICONTROL Überlauf]**: Legt einen Überlauf für einen Bereich oder eine Tabelle fest, der/die Seiten umfasst. Die folgenden Felder sind im Abschnitt **[!UICONTROL Überlauf]** verfügbar:
-   * **[!UICONTROL Überlauf]**  >  **[!UICONTROL Keine]**: Startet das Füllen der nächsten Seite. Wenn ein Seitenumbruch nicht automatisch eingefügt wird, fügt [!DNL AEM Forms] einen Seitenumbruch hinzu.
-   * **[!UICONTROL Überlauf]**  >  **[!UICONTROL Gehe zum Inhaltsbereich]**  > Name des Inhaltsbereichs: Startet das Füllen des angegebenen Inhaltsbereichs.
-   * **[!UICONTROL Überlauf]**  >  **[!UICONTROL Gehe zu Seite]**  > Name der Seite: Startet das Füllen der angegebenen Seite.
+* **[!UICONTROL Seitenumbruch]** > **[!UICONTROL Ort]**: Legt fest, wo Sie das Bedienfeld platzieren möchten.
+   * **[!UICONTROL Platzieren nach]** > **[!UICONTROL Vorherigem]**: Platziert den Bereich nach dem vorherigen Objekt im übergeordneten Bereich.
+   * **[!UICONTROL Platzieren im]** > **[!UICONTROL Inhaltsbereich]** > Name des Inhaltsbereichs: Platziert den Bereich im angegebenen Inhaltsbereich.
+   * **[!UICONTROL Ort]** > **[!UICONTROL Anfang des nächsten Inhaltsbereichs]**: Platziert das Bedienfeld am Anfang des nächsten Inhaltsbereichs.
+   * **[!UICONTROL Ort]** > **[!UICONTROL Anfang des Inhaltsbereichs]** > Name des Inhaltsbereichs: Platziert das Bedienfeld am Anfang des angegebenen Inhaltsbereichs.
+   * **[!UICONTROL Ort]** > **[!UICONTROL Auf Seite]** > Name der Master-Seite: Platziert den Bereich auf der angegebenen Seite. Wenn ein Seitenumbruch nicht automatisch eingefügt wird, fügt [!DNL AEM Forms] einen Seitenumbruch hinzu.
+   * **[!UICONTROL Ort]** > **[!UICONTROL Anfang der nächsten Seite]**: Platziert das Bedienfeld am Anfang der nächsten Seite. Wenn ein Seitenumbruch nicht automatisch eingefügt wird, fügt [!DNL AEM Forms] einen Seitenumbruch hinzu.
+   * **[!UICONTROL Ort]** > **[!UICONTROL Seitenanfang]** > Name der Master-Seite: Platziert das Bedienfeld am Anfang der Seite, wenn die angegebene Seite gerendert wird. Wenn ein Seitenumbruch nicht automatisch eingefügt wird, fügt [!DNL AEM Forms] einen Seitenumbruch hinzu.
+* **[!UICONTROL Paginierung]** > **[!UICONTROL Nachher]**: Legt fest, welcher Bereich ausgefüllt werden soll, nachdem ein Bedienfeld platziert wurde. Die folgenden Felder sind im Abschnitt **[!UICONTROL Nachher]** vorhanden:
+   * **[!UICONTROL Nachher]** > **[!UICONTROL Fortsetzen von übergeordnetem Ausfüllen]**: Setzt das Zusammenführen von Daten für alle Objekte fort, die im übergeordneten Bereich noch ausgefüllt werden sollen.
+   * **[!UICONTROL Nachher]** > **[!UICONTROL Wechseln zum nächsten Inhaltsbereich]**: Startet das Füllen des nächsten Inhaltsbereichs nach dem Platzieren des Bedienfelds.
+   * **[!UICONTROL Nachher]** > **[!UICONTROL Wechseln zum Inhaltsbereich]** > Name des Inhaltsbereichs: Startet das Füllen des angegebenen Inhaltsbereichs nach dem Platzieren des Bedienfelds.
+   * **[!UICONTROL Nachher]** > **[!UICONTROL Wechseln zur nächsten Seite]**: Startet das Füllen der nächsten Seite, nachdem der Bereich platziert wurde.
+   * **[!UICONTROL Nachher]** > **[!UICONTROL Wechseln zur Seite]** > Name der Seite: Startet das Füllen der angegebenen Seite nach dem Platzieren des Bedienfelds.
+* **[!UICONTROL Paginierung]** > **[!UICONTROL Überlauf]**: Legt einen Überlauf für einen Bereich oder eine Tabelle fest, der/die sich über Seiten spannt. Die folgenden Felder sind im Abschnitt **[!UICONTROL Überlauf]** verfügbar:
+   * **[!UICONTROL Überlauf]** > **[!UICONTROL Keines]**: Startet das Füllen der nächsten Seite. Wenn ein Seitenumbruch nicht automatisch eingefügt wird, fügt [!DNL AEM Forms] einen Seitenumbruch hinzu.
+   * **[!UICONTROL Überlauf]** > **[!UICONTROL Wechseln zum Inhaltsbereich]** > Name des Inhaltsbereichs: Startet das Füllen des angegebenen Inhaltsbereichs.
+   * **[!UICONTROL Überlauf]** > **[!UICONTROL Wechseln zu Seite]** > Name der Seite: Startet das Füllen der angegebenen Seite.
 
-Informationen zum Anwenden von Seitenumbrüchen und zum Anwenden mehrerer Übergeordneter Seiten in einem Datensatzdokument finden Sie unter [Anwenden von Seitenumbrüchen in einem Datensatzdokument](#apply-page-breaks-in-dor) und [Anwenden mehrerer Übergeordneter Seiten auf ein Datensatzdokument](#apply-multiple-master-pages-dor).
+Informationen zum Anwenden von Seitenumbrüchen und zum Anwenden mehrerer Master-Seiten in einem Datensatzdokument finden Sie unter [Anwenden eines Seitenumbruchs in einem Datensatzdokument](#apply-page-breaks-in-dor) und [Anwenden mehrerer Master-Seiten auf ein Datensatzdokument](#apply-multiple-master-pages-dor).
 
 **Einstellungen auf Formularebene**
 
 * **Ungebundene Felder in DoR einbeziehen:** Durch Festlegen dieser Eigenschaft werden ungebundenen Felder aus dem Schema-basierten adaptiven Formular im Datensatzdokument berücksichtigt. Diese Option ist standardmäßig aktiviert.
-* **Felder aus DoR ausschließen, wenn sie ausgeblendet sind**: Wenn aktiviert, wird das Verhalten der auf Feldebene befindlichen Eigenschaft „Aus Datensatzdokument ausschließen“ überschrieben, wenn sie nicht den Wert „true“ hat. Wenn Felder zum Zeitpunkt der Formularübermittlung ausgeblendet sind, werden sie aus dem Datensatzdokument ausgeschlossen, wenn die Eigenschaft auf &quot;true&quot;festgelegt ist, vorausgesetzt, die Eigenschaft &quot;Aus Datensatzdokument ausschließen&quot;ist nicht festgelegt.
+* **Felder aus Datensatzdokument ausschließen, wenn sie ausgeblendet sind**: Wenn aktiviert, wird das Verhalten der auf Feldebene befindlichen Eigenschaft „Aus Datensatzdokument ausschließen“ überschrieben, wenn sie nicht den Wert „true“ hat. Wenn Felder zum Zeitpunkt der Formularübermittlung ausgeblendet sind, werden sie vom Datensatzdokument ausgeschlossen, wenn die Eigenschaft den Wert „true“ hat, vorausgesetzt, die Eigenschaft „Aus Datensatzdokument ausschließen“ ist nicht festgelegt.
 
 ## Anwenden eines Seitenumbruchs in einem Datensatzdokument {#apply-page-breaks-in-dor}
 
-Sie können Seitenumbrüche in einem Datensatzdokument mit mehreren Methoden anwenden.
+Sie können Seitenumbrüche in einem Datensatzdokument mithilfe mehrerer Methoden anwenden.
 
 So wenden Sie einen Seitenumbruch auf ein Datensatzdokument an:
 
-1. Tippen Sie auf das Bedienfeld und wählen Sie ![Konfigurieren](assets/configure-icon.svg) aus.
+1. Tippen Sie auf das Bedienfeld und wählen Sie ![Konfigurieren](assets/configure-icon.svg).
 
-1. Erweitern Sie **[!UICONTROL Datensatzdokument]** , um die Eigenschaften anzuzeigen.
+1. Erweitern Sie das **[!UICONTROL Datensatzdokument]**, um die Eigenschaften anzuzeigen.
 
-1. Tippen Sie im Abschnitt **[!UICONTROL Paginierung]** im Feld ![Ordner](assets/folder-icon.svg) auf **[!UICONTROL Platzieren]** .
-1. Tippen Sie auf **[!UICONTROL Anfang der nächsten Seite]** und tippen Sie auf **[!UICONTROL Auswählen]**. Sie können auch auf **[!UICONTROL Seitenanfang]** tippen, die Übergeordnete Seite auswählen und auf **[!UICONTROL Auswählen]** tippen, um den Seitenumbruch anzuwenden.
+1. Im Bereich **[!UICONTROL Paginierung]** tippen Sie auf ![Ordner](assets/folder-icon.svg) im Feld **[!UICONTROL Ort]**.
+1. Tippen Sie auf **[!UICONTROL Anfang der nächsten Seite]** und dann auf **[!UICONTROL Auswählen]**. Sie können auch auf **[!UICONTROL Seitenanfang]** tippen, dann die Master-Seite auswählen und schließlich auf **[!UICONTROL Auswählen]** tippen, um den Seitenumbruch anzuwenden.
 1. Tippen Sie auf ![Speichern](assets/save_icon.svg), um die Eigenschaften zu speichern.
 
 Das ausgewählte Bedienfeld wechselt zur nächsten Seite.
 
-## Anwenden mehrerer Übergeordneter Seiten auf ein Datensatzdokument {#apply-multiple-master-pages-dor}
+## Anwenden mehrerer Master-Seiten auf ein Datensatzdokument {#apply-multiple-master-pages-dor}
 
-Wenn die von Ihnen ausgewählte benutzerdefinierte XDP-Vorlage mehrere Übergeordnete Seiten enthält, werden die Eigenschaften für diese Seiten im Abschnitt [!UICONTROL content] der Registerkarte [!UICONTROL Datensatzdokument] angezeigt. Weitere Informationen finden Sie unter [Anpassen der Branding-Informationen im Datensatzdokument](#customize-the-branding-information-in-document-of-record).
+Wenn die von Ihnen ausgewählte benutzerdefinierte XDP-Vorlage mehrere Master-Seiten enthält, werden die Eigenschaften für diese Seiten im Abschnitt [!UICONTROL Inhalt] der Registerkarte [!UICONTROL Datensatzdokument] angezeigt. Weitere Informationen finden Sie unter [Anpassen der Branding-Informationen im Datensatzdokument](#customize-the-branding-information-in-document-of-record).
 
-Sie können mehrere Übergeordnete Seiten auf ein Datensatzdokument anwenden, indem Sie verschiedene Übergeordnete Seiten auf die Komponenten eines adaptiven Formulars anwenden. Verwenden Sie den Abschnitt [Paginierung](#document-of-record-settings) der Eigenschaften des Datensatzdokuments, um mehrere Übergeordnete Seiten anzuwenden.
+Sie können mehrere übergeordnete Seiten auf ein Datensatzdokument anwenden, indem Sie verschiedene Master-Seiten auf die Komponenten eines adaptiven Formulars anwenden. Verwenden Sie den Abschnitt [Paginierung](#document-of-record-settings) der Datensatzeigenschaften, um mehrere Master-Seiten anzuwenden.
 
-Im Folgenden finden Sie ein Beispiel dafür, wie Sie mehrere Übergeordnete Seiten auf ein Datensatzdokument anwenden:
-Sie laden eine XDP-Vorlage mit vier Übergeordneten Seiten auf den [!DNL AEM Forms]-Server hoch. [!DNL AEM Forms] wendet die Vorlageneigenschaften standardmäßig auf das Datensatzdokument an. [!DNL AEM Forms] wendet auch die ersten Übergeordneten Seiteneigenschaften in der Vorlage auf das Datensatzdokument an.
+Im Folgenden finden Sie ein Beispiel dafür, wie Sie mehrere Master-Seiten auf ein Datensatzdokument anwenden: 
+Sie laden eine XDP-Vorlage, die vier Master-Seiten enthält, auf den [!DNL AEM Forms]-Server hoch. [!DNL AEM Forms] wendet die Vorlageneigenschaften standardmäßig auf das Datensatzdokument an. [!DNL AEM Forms] wendet auch die ersten Master-Seiteneigenschaften in der Vorlage auf das Datensatzdokument an.
 
-Führen Sie die folgenden Schritte aus, um die zweiten Übergeordneten Seiteneigenschaften auf ein Bedienfeld und die dritten Übergeordneten Seiteneigenschaften auf die Bedienfelder anzuwenden:
+Führen Sie die folgenden Schritte aus, um die zweiten Master-Seiteneigenschaften auf ein Bedienfeld und die dritten Master- Seiteneigenschaften auf die nachfolgenden Bedienfelder anzuwenden:
 
-1. Tippen Sie auf das Bedienfeld, um die zweite Übergeordnete Seite anzuwenden, und wählen Sie ![Konfigurieren](assets/configure-icon.svg) aus.
-1. Tippen Sie im Abschnitt **[!UICONTROL Paginierung]** im Feld ![Ordner](assets/folder-icon.svg) auf **[!UICONTROL Platzieren]** .
-1. Tippen Sie auf **[!UICONTROL Wählen Sie auf Seite]** die zweite Übergeordnete Seite aus und tippen Sie auf **[!UICONTROL Auswählen]**.
-AEM Forms wendet die zweite Übergeordnete Seite auf das Bedienfeld und alle nachfolgenden Bedienfelder im adaptiven Formular an.
-1. Tippen Sie im Abschnitt **[!UICONTROL Paginierung]** im Feld ![Ordner](assets/folder-icon.svg) auf **[!UICONTROL Nach]** .
-1. Tippen Sie auf **[!UICONTROL Gehe zu Seite]**, wählen Sie die dritte Übergeordnete Seite aus und tippen Sie auf **[!UICONTROL Auswählen]**.
+1. Tippen Sie auf das Bedienfeld, um die zweite Master-Seite anzuwenden, und wählen Sie ![Konfigurieren](assets/configure-icon.svg).
+1. Im Bereich **[!UICONTROL Paginierung]**, tippen Sie auf ![Ordner](assets/folder-icon.svg) im Feld **[!UICONTROL Ort]**.
+1. Tippen Sie auf **[!UICONTROL Auf Seite]**, wählen Sie dann die zweite Master-Seite aus und tippen Sie auf **[!UICONTROL Auswählen]**.
+AEM Forms wendet die zweite Master-Seite auf das Bedienfeld und alle nachfolgenden Bedienfelder im adaptiven Formular an.
+1. Tippen Sie im Bereich **[!UICONTROL Paginierung]** auf ![Ordner](assets/folder-icon.svg) im Feld **[!UICONTROL Nachher]**.
+1. Tippen Sie auf **[!UICONTROL Wechseln zu Seite]**, wählen Sie dann die dritte Master-Seite aus und tippen Sie auf **[!UICONTROL Auswählen]**.
 1. Tippen Sie auf ![Speichern](assets/save_icon.svg), um die Eigenschaften zu speichern.
-AEM Forms wendet die dritte Übergeordnete Seite auf das Bedienfeld und alle nachfolgenden Bedienfelder im adaptiven Formular an.
+AEM Forms wendet die dritte Master-Seite auf das Bedienfeld und alle nachfolgenden Bedienfelder im adaptiven Formular an.
 
 
 ## Wichtige Aspekte beim Arbeiten mit einem Datensatzdokument {#key-considerations-when-working-with-document-of-record}
 
-Beachten Sie die folgenden Überlegungen und Einschränkungen bei der Arbeit an einem Datensatzdokument für adaptive Formulare.
+Beachten Sie die folgenden Hinweise und Einschränkungen beim Arbeiten mit einem Datensatzdokument für adaptive Formulare.
 
-* Datensatzdokumentvorlagen unterstützen keinen Rich-Text. Rich-Text im statischen adaptiven Formular oder bei den vom Endbenutzer ausgefüllten Informationen wird daher im Datensatzdokument als Nur-Text angezeigt.
+* Datensatzdokument-Vorlagen unterstützen keinen Rich-Text. Rich-Text im statischen adaptiven Formular oder bei den vom Endbenutzer ausgefüllten Informationen wird daher im Datensatzdokument als Nur-Text angezeigt.
 * Dokumentfragmente in einem adaptiven Formular werden im Datensatzdokument nicht angezeigt. Adaptive Formularfragmente werden jedoch nicht unterstützt.
 * Die Inhaltsbindung in Datensatzdokumenten, die für XML-Schema-Basierte adaptive Formulare generiert werden, wird nicht unterstützt.
 * Lokalisierte Versionen des DoR werden nach Wunsch für ein Gebietsschema erstellt, wenn der Benutzer das Rendern des DoR anfordert. Die Lokalisierung von DoR tritt zusammen mit der Lokalisierung des adaptiven Formulars auf. Siehe [Verwenden von AEM-Übersetzungs-Arbeitsablauf zum Lokalisieren von adaptiven Formularen und Datensatzdokumenten](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
