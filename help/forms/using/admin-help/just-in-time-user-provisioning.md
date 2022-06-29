@@ -1,8 +1,8 @@
 ---
 title: Just-in-time-Benutzerbereitstellung
-seo-title: Just-in-time-Benutzerbereitstellung
+seo-title: Just-in-time user provisioning
 description: Verwenden Sie die Just-in-time-Bereitstellung, um Benutzer dem User Management nach erfolgreicher Authentifizierung hinzuzufügen und um relevante Rollen und Gruppen dynamisch dem neuen Benutzer zuzuweisen.
-seo-description: Verwenden Sie die Just-in-time-Bereitstellung, um Benutzer dem User Management nach erfolgreicher Authentifizierung hinzuzufügen und um relevante Rollen und Gruppen dynamisch dem neuen Benutzer zuzuweisen.
+seo-description: Use just-in-time provisioning to add users to User Management after successfull authentication and dynamically assign relevant roles and groups to the new user.
 uuid: a5ad4698-70bb-487b-a069-7133e2f420c2
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e80c3f98-baa1-45bc-b713-51a2eb5ec165
 exl-id: 7bde0a09-192a-44a8-83d0-c18e335e9afa
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 95%
+workflow-type: ht
+source-wordcount: '573'
+ht-degree: 100%
 
 ---
 
@@ -29,18 +29,18 @@ So funktioniert die herkömmliche Authentifizierung:
 1. Der Authentifizierungsanbieter überprüft die Anmeldeinformationen.
 1. Der Authentifizierungsanbieter prüft anschließend, ob der Benutzer in der User Management-Datenbank vorhanden ist. Die folgenden Ergebnisse sind möglich:
 
-   **Vorhanden:** Wenn der Benutzer aktuell und entsperrt ist, gibt User Management den Authentifizierungserfolg zurück. Wenn der Benutzer nicht aktuell oder gesperrt ist, gibt User Management an, dass die Authentifizierung nicht erfolgreich war.
+   **Existiert:** Wenn der Benutzer aktuell und freigeschaltet ist, gibt die Benutzerverwaltung einen Authentifizierungserfolg zurück. Wenn der Benutzer nicht aktuell oder gesperrt ist, gibt User Management an, dass die Authentifizierung nicht erfolgreich war.
 
-   **Nicht vorhanden:** User Management gibt Authentifizierungsfehler zurück.
+   **Nicht vorhanden:** Die Benutzerverwaltung meldet einen Authentifizierungsfehler.
 
-   **Ungültig:** User Management gibt Authentifizierungsfehler zurück.
+   **Ungültig:** Das User Management meldet einen Authentifizierungsfehler.
 
 1. Das vom Authentifizierungsanbieter zurückgegebene Ergebnis wird ausgewertet. Wenn der Authentifizierungsanbieter angibt, dass die Authentifizierung erfolgreich war, kann sich der Benutzer anmelden. Andernfalls nimmt User Management mit dem nächsten Authentifizierungsanbieter eine Überprüfung vor (Schritte 2 bis 3).
 1. Die Authentifizierung war nicht erfolgreich, wenn kein verfügbarer Authentifizierungsanbieter die Anmeldeinformationen des Benutzers überprüft.
 
 Wenn Just-in-time-Bereitstellung implementiert ist, werden neue Benutzer dynamisch in User Management erstellt, wenn einer der Authentifizierungsanbieter deren Anmeldedaten überprüft. (Nach Schritt 3 im obigen herkömmlichen Authentifizierungsverfahren.)
 
-## Just-in-time-Benutzerbereitstellung implementieren  {#implement-just-in-time-user-provisioning}
+## Just-in-time-Benutzerbereitstellung implementieren {#implement-just-in-time-user-provisioning}
 
 ### API für Just-in-time-Bereitstellung {#apis-for-just-in-time-provisioning}
 
@@ -81,33 +81,33 @@ public Boolean assign(User user);
 }
 ```
 
-### Überlegungen beim Erstellen einer Just-in-time-Domäne  {#considerations-while-creating-a-just-in-time-enabled-domain}
+### Überlegungen beim Erstellen einer Just-in-time-Domain {#considerations-while-creating-a-just-in-time-enabled-domain}
 
-* Beim Erstellen eines benutzerdefinierten`IdentityCreator`   für eine Hybrid-Domäne stellen Sie sicher, dass für den lokalen Benutzer ein Platzhalter-Kennwort angegeben wird. Lassen Sie das Kennwortfeld nicht leer.
-* Empfehlung: Verwenden Sie`DomainSpecificAuthentication` , , um die Benutzerinformationen für eine bestimmte Domäne zu überprüfen.
+* Beim Erstellen eines benutzerdefinierten `IdentityCreator` für eine Hybrid-Domain stellen Sie sicher, dass für den lokalen Benutzer ein Platzhalter-Kennwort angegeben wird. Lassen Sie das Kennwortfeld nicht leer.
+* Empfehlung: Verwenden Sie `DomainSpecificAuthentication`, um die Benutzerinformationen für eine bestimmte Domain zu überprüfen.
 
-### Erstellen Sie ein Just-in-time-Domäne {#create-a-just-in-time-enabled-domain}
+### Erstellen einer Just-in-time-Domain {#create-a-just-in-time-enabled-domain}
 
 1. Schreiben Sie ein DSC, das die API im Abschnitt „API für Just-in-time-Bereitstellung“ implementiert.
 1. Stellen Sie das DSC auf dem Formularserver bereit.
-1. Erstellen Sie ein Just-in-time-Domäne:
+1. Erstellen Sie eine Just-in-time-Domain:
 
-   * Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domänenverwaltung“ > „Neue Unternehmensdomäne“.
-   * Konfigurieren Sie die Domäne und aktivieren Sie „Just-in-time-Bereitstellung aktivieren“. <!--Fix broken link (See Setting up and managing domains).-->
+   * Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Namensverwaltung“ > „Neue Unternehmens-Domain“.
+   * Konfigurieren Sie die Domain und aktivieren Sie „Just-in-time-Bereitstellung aktivieren“. <!--Fix broken link (See Setting up and managing domains).-->
    * Authentifizierungsanbieter hinzufügen. Wählen Sie beim Hinzufügen von Authentifizierungsanbietern im Bildschirm „Neue Authentifizierung“ einen registrierten ID-Ersteller und einen Zuweisungsanbieter.
 
-1. Speichern Sie die neue Domäne.
+1. Speichern Sie die neue Domain.
 
-## Hinter den Kulissen  {#behind-the-scenes}
+## Hinter den Kulissen {#behind-the-scenes}
 
 Angenommen, ein Benutzer versucht, sich bei AEM Forms anzumelden und ein Authentifizierungsanbieter akzeptiert seine Benutzerdaten. Wenn der Benutzer noch nicht in der User Management-Datenbank vorhanden ist, schlägt die Identitätsprüfung für den Benutzer fehl. AEM Forms führt jetzt folgende Aktionen durch:
 
-1. `UserProvisioningBO` --Objekt mit den Authentifizierungsdaten erstellen und in einer Benutzerdatenzuordnung ablegen.
-1. Basierend auf den von `UserProvisioningBO` zurückgegebenen Domänendaten `IdentityCreator` und `AssignmentProvider` für die Domäne laden und aufrufen.
-1. Rufen Sie `IdentityCreator` auf. Wenn ein erfolgreiches`AuthResponse`   zurückgegeben wird, `UserInfo` aus der Benutzerdatenzuordnung extrahieren. An `AssignmentProvider`   für Gruppen-/Rollenzuweisung und andere Nachbearbeitungsvorgänge übergeben, nachdem der Benutzer erstellt wurde.
+1. `UserProvisioningBO`-Objekt mit den Authentifizierungsdaten erstellen und in einer Benutzerdatenzuordnung ablegen.
+1. Basierend auf den von `UserProvisioningBO` zurückgegebenen Domain-Namensdaten `IdentityCreator` und `AssignmentProvider` für die Domain laden und aufrufen.
+1. Rufen Sie `IdentityCreator` auf. Wenn ein erfolgreiches`AuthResponse` zurückgegeben wird, `UserInfo` aus der Benutzerdatenzuordnung extrahieren. An `AssignmentProvider` für Gruppen-/Rollenzuweisung und andere Nachbearbeitungsvorgänge übergeben, nachdem der Benutzer erstellt wurde.
 1. Wenn der Benutzer erfolgreich erstellt wurde, den Anmeldeversuch des Benutzers als erfolgreich zurückgeben.
-1. Bei Hybrid-Domänen Benutzerdaten aus den Authentifizierungsdaten extrahieren, die vom Authentifizierungsanbieter bereitgestellt wurden. Wenn diese Daten erfolgreich geladen werden, Benutzer spontan erstellen.
+1. Bei Hybrid-Domains Benutzerdaten aus den Authentifizierungsdaten extrahieren, die vom Authentifizierungsanbieter bereitgestellt wurden. Wenn diese Daten erfolgreich geladen werden, Benutzer spontan erstellen.
 
 >[!NOTE]
 >
->Bei der Just-in-time-Bereitstellung ist `IdentityCreator` standardmäßig implementiert. Damit können Sie Benutzer dynamisch erstellen. Benutzer werden mit den Daten erstellt, die mit den Ordnern in der Domäne verknüpft sind.
+>Bei der Just-in-time-Bereitstellung ist `IdentityCreator` standardmäßig implementiert. Damit können Sie Benutzer dynamisch erstellen. Benutzer werden mit den Daten erstellt, die mit den Ordnern in der Domain verknüpft sind.
