@@ -1,7 +1,7 @@
 ---
-title: Java-API für Credential Service QuickStart (SOAP)
-seo-title: Java-API für Credential Service QuickStart (SOAP)
-description: Java-API für Credential Service QuickStart (SOAP)
+title: Java API-Schnellstart (SOAP) für den Bereichtigungsdienst
+seo-title: Credential Service Java API QuickStart(SOAP)
+description: Java API-Schnellstart (SOAP) für den Bereichtigungsdienst
 uuid: a00eabfa-3a52-41dd-bcba-c60d00394384
 contentOwner: admin
 content-type: reference
@@ -11,33 +11,33 @@ discoiquuid: b624e255-ae71-4d9c-8554-d48f3e77b799
 role: Developer
 exl-id: 0ea00ef5-9923-4c03-a724-32f9ebdc650f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 1%
+workflow-type: ht
+source-wordcount: '219'
+ht-degree: 100%
 
 ---
 
-# Schnellstart für Java-API für Credential Service (SOAP) {#credential-service-java-api-quickstart-soap}
+# Credential-Dienst Java-API-Schnellstart (SOAP) {#credential-service-java-api-quickstart-soap}
 
-Java API Quick Start (SOAP) ist für den Credential-Dienst verfügbar.
+Java API-Schnellstart (SOAP) ist für den Credential-Dienst verfügbar.
 
-[Schnellstart (SOAP-Modus): Importieren von Anmeldeinformationen mit der Java-API](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
+[Kurzanleitung (SOAP-Modus): Importieren von Berechtigungen mit der Java-API](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Löschen von Anmeldeinformationen mithilfe der Java-API](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
+[Schnellstart (SOAP-Modus): Löschen von Berechtigungen mithilfe der Java-API](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden und der Verbindungsmodus sollte auf SOAP festgelegt werden.
-
->[!NOTE]
->
->Schnellstarts, die unter Programmieren mit AEM Forms zu finden sind, basieren auf dem FormsServer, der auf JBoss bereitgestellt wird, und dem Windows-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie Unix verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API durchgeführt werden und der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
 >[!NOTE]
 >
->Sie können keine Vorgänge des Berechtigungsdienstes mit Webdiensten durchführen.
+>Die Schnellstarts, die unter „Programmieren mit AEM Forms“ zu finden sind, basieren auf dem FormsServer, der auf JBoss bereitgestellt wird, und dem Windows-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie beispielweise Unix verwenden, ersetzen Sie die Windows-spezifischen Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Schnellstart (SOAP-Modus): Importieren von Anmeldeinformationen mit der Java-API {#quick-start-soap-mode-importing-credentials-using-the-java-api}
+>[!NOTE]
+>
+>Sie können keine Credential-DIenst-Vorgänge über Webdienste durchführen.
 
-Im folgenden Codebeispiel wird eine Berechtigung basierend auf einer Datei namens *cred.p12* importiert. Der Aliaswert, der zum Importieren der Berechtigung verwendet wird, ist `Secure`. (Siehe [Importing Credentials by using the Trust Manager API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
+## Kurzanleitung (SOAP-Modus): Importieren von Berechtigungen mit der Java-API {#quick-start-soap-mode-importing-credentials-using-the-java-api}
+
+Das folgende Codebeispiel importiert eine Berechtigung basierend auf einer Datei mit dem Namen *cred.p12*. Der Aliaswert, der zum Importieren der Berechtigung verwendet wird, lautet `Secure`. (Siehe [Importieren von Anmeldeinformationen mithilfe der Trust Manager-API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
 ```java
  /*
@@ -136,9 +136,9 @@ Im folgenden Codebeispiel wird eine Berechtigung basierend auf einer Datei namen
  
 ```
 
-## Schnellstart (SOAP-Modus): Löschen von Anmeldeinformationen mithilfe der Java-API {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
+## Schnellstart (SOAP-Modus): Löschen von Berechtigungen mithilfe der Java-API {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
 
-Im folgenden Codebeispiel wird eine Berechtigung basierend auf einem Aliaswert *secure* gelöscht. (Siehe [Löschen von Berechtigungen mithilfe der Trust Manager-API](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
+Das folgende Codebeispiel löscht eine Berechtigung basierend auf einem Alias-Wert *secure*. (Siehe [Löschen von Anmeldeinformationen mithilfe der Trust Manager-API](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
 
 ```java
  /*
