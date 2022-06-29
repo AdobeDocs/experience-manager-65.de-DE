@@ -1,8 +1,8 @@
 ---
 title: Herunterladen von XFA- oder PDF-Formularvorlagen
-seo-title: Herunterladen von XFA- oder PDF-Formularvorlagen
+seo-title: Download an XFA or a PDF form template
 description: Sie können aus dem Repository Formulare in das lokale System exportieren und die heruntergeladenen Formulare in ein neues Repository migrieren.
-seo-description: Sie können aus dem Repository Formulare in das lokale System exportieren und die heruntergeladenen Formulare in ein neues Repository migrieren.
+seo-description: You can export forms from the repository to the local system and migrate the downloaded forms to new repository.
 uuid: 5f7fbd14-cb9d-4749-8708-7efe49df89d7
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ discoiquuid: 6699e0e7-fd42-41ae-86a2-3b940d905111
 role: Admin
 exl-id: 5b7b9816-38c1-4780-b1fc-8184971f3772
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 91%
+workflow-type: ht
+source-wordcount: '313'
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ In AEM Forms wird der Download-Vorgang für die folgenden Assettypen unterstütz
 
 AEM Forms unterstützt den Download dieser Formulartypen – einzeln oder in einem Ordner mit mindestens einem unterstützten Formular.
 
-Neben diesen Assets können Sie den Typ `Resource` des Assets herunterladen, wenn es in einem Ordner vorhanden ist. Diese Funktion wird bereitgestellt, damit Sie neben dem Formular die Ressource herunterladen können, auf die ein XFA-Formular verweist.
+Abgesehen von diesen Elementen können Sie den `Resource`-Elementtyp herunterladen, wenn er in einem Ordner vorhanden ist. Diese Funktion wird bereitgestellt, damit Sie neben dem Formular die Ressource herunterladen können, auf die ein XFA-Formular verweist.
 
 ## Herunterladen von einem oder mehreren Formularen {#download-one-or-more-forms}
 
@@ -37,7 +37,7 @@ Neben diesen Assets können Sie den Typ `Resource` des Assets herunterladen, wen
 
 1. Navigieren Sie zum Speicherort des Assets, das Sie herunterladen möchten.
 
-1. Wählen Sie das Asset aus. Klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Download]** ![aem6forms_download](assets/aem6forms_download.png) .
+1. Wählen Sie das Asset aus. Klicken Sie auf der Symbolleiste auf **[!UICONTROL Herunterladen]** ![aem6forms_download](assets/aem6forms_download.png).
 
    >[!NOTE]
    >
