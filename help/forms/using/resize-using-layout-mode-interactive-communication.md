@@ -1,104 +1,104 @@
 ---
-title: Verwenden Sie den Layout-Modus, um die Größe von Komponenten für die interaktive Kommunikation zu ändern
-description: 'Definieren Sie die Position der Komponenten mithilfe des im Layout -Modus verfügbaren responsiven Rasters. '
-feature: Interaktive Kommunikation
+title: Verwenden des Layout-Modus, um die Größe von Komponenten für die interaktive Kommunikation zu ändern
+description: 'Definieren Sie die Position von Komponenten mithilfe des responsiven Rasters, das im Layout-Modus verfügbar ist '
+feature: Interactive Communication
 exl-id: 9534fcb2-4260-4dd0-9f7e-779b10fd3a22
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 3%
+workflow-type: ht
+source-wordcount: '867'
+ht-degree: 100%
 
 ---
 
-# Verwenden Sie den Layout-Modus, um die Größe von Komponenten {#use-layout-mode-to-resize-components} zu ändern.
+# Verwenden des Layout-Modus zum Ändern der Größe von Komponenten {#use-layout-mode-to-resize-components}
 
-Die Benutzeroberfläche zum Erstellen von Webkanälen für die interaktive Kommunikation ermöglicht es Ihnen, die Größe von Komponenten mithilfe des Layout -Modus zu ändern. Ziehen Sie blaue Punkte in die Spalten, um die Start- und Endpunkte zum Positionieren von Komponenten zu definieren. Die blauen Punkte werden angezeigt, nachdem auf die Komponente im responsiven Raster getippt wurde. Das responsive Raster besteht aus 12 gleichen Spalten. Die weiße und blaue Farbschattierung in alternativen Spalten unterscheidet eine Spalte von der anderen.
+Mit der Authoring-Oberfläche des Web-Kanals für interaktive Kommunikation können Sie mithilfe des Layout-Modus die Größe von Komponenten ändern. Indem Sie blaue Punkte per Drag-und-Drop in Spalten ziehen, können Sie den Start- und Endpunkt zur Positionierung der Komponenten definieren. Die blauen Punkte werden nach dem Tippen auf die Komponente im responsiven Raster angezeigt. Das responsive Raster besteht aus 12 gleichen Spalten. Die weiße und blaue Farbschattierung in alternativen Spalten setzt die Spalten voneinander ab.
 
-Sie können den Layout -Modus verwenden, um die Größe von Komponenten für alle Gerätetypen wie Desktop, Tablet, Telefon und andere kleinere Geräte zu ändern. Das Tablet leitet die Layoutkonfiguration automatisch von der Desktop-Version ab und die kleineren Geräte leiten die Layoutkonfiguration vom Telefon ab. Sie können jedoch die automatisch abgeleiteten Konfigurationen überschreiben, um für jeden Gerätetyp eine andere Konfiguration zu definieren.
+Sie können den Layout-Modus verwenden, um die Größe von Komponenten für alle Gerätetypen wie Desktopcomputer, Tablet, Smartphone und andere kleinere Geräte zu ändern. Das Tablet leitet die Layout-Konfiguration automatisch von der Desktopversion ab und die kleineren Geräte leiten die Layout-Konfiguration vom Smartphone ab. Sie können die automatisch abgeleiteten Konfigurationen jedoch überschreiben, um für jeden Gerätetyp eine andere Konfiguration zu definieren.
 
 >[!NOTE]
 >
->Wenn Sie den Webkanal mit [Druckkanal als Übergeordnet](../../forms/using/create-interactive-communication.md) für eine interaktive Kommunikation erstellen, enthalten die für die Größenanpassung verfügbaren Komponenten auch die Teilformulare und Felder, die automatisch im Webkanal mithilfe des Druckkanals generiert werden. Der Webkanal behält das Layout für die Elemente des Druckkanals im Layout -Modus bei.
+>Wenn Sie den Web-Kanal mit [Druckkanal als Master](../../forms/using/create-interactive-communication.md) für eine interaktive Kommunikation erstellen, umfassen die für die Größenanpassung verfügbaren Komponenten auch die Teilformulare und Felder, die automatisch im Web-Kanal mithilfe des Druckkanals generiert werden. Der Web-Kanal behält im Layout-Modus das Layout für die Elemente des Druckkanals bei.
 
 ## Zugriff auf Layout-Modus {#access-layout-mode}
 
-Wählen Sie **Layout** aus der Dropdown-Liste, die oben in der Authoring-Benutzeroberfläche für interaktive Kommunikation neben der Option **Vorschau** angezeigt wird. Das Formular wird im Layout -Modus angezeigt.
+Wählen Sie **Layout** aus der Dropdown-Liste, die oben in der Authoring-Oberfläche für die interaktive Kommunikation neben der Option **Vorschau** angezeigt wird. Das Formular wird im Layout-Modus angezeigt.
 
 1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **Adobe Experience Manager** > **Formulare** > **Formulare und Dokumente**.
-1. Erstellen Sie eine neue oder öffnen Sie eine vorhandene [Interaktive Kommunikation](../../forms/using/create-interactive-communication.md).
-1. Wählen Sie **Layout** aus der Dropdownliste, die oben neben der Option **Vorschau** angezeigt wird. Das Formular wird im Layout -Modus angezeigt.
+1. Erstellen Sie eine neue oder öffnen Sie eine bestehende [Interaktive Kommunikation](../../forms/using/create-interactive-communication.md).
+1. Wählen Sie **Layout** aus der Dropdownliste, die oben neben der Option **Vorschau** angezeigt wird. Das Formular wird im Layout-Modus angezeigt.
 
-   ![Layout-Modus für interaktive Kommunikation](assets/layout_mode_ic_new.png)
+   ![Layout-Modus für interaktive Kommunikationen](assets/layout_mode_ic_new.png)
 
-## Größe von Komponenten anpassen {#resize-components}
+## Anpassen der Größe von Komponenten {#resize-components}
 
-1. Tippen Sie im Layout -Modus auf die Komponente, um die Größe zu ändern. Die blauen Punkte werden am Anfang und Ende des responsiven Rasters angezeigt.
-1. Ziehen Sie die blauen Punkte per Drag-and-Drop in das responsive Raster, um die Position der Komponente zu definieren.
+1. Tippen Sie im Layout-Modus auf die Komponente, deren Größe geändert werden soll. Die blauen Punkte werden am Beginn und am Ende des responsiven Rasters angezeigt.
+1. Ziehen Sie die blauen Punkte mit der Maus, um die Position der Komponente im responsiven Raster zu definieren.
 
-   ![Größenanpassung mithilfe des Layout-Modus](assets/layout_mode_resize_new_updated.png)
+   ![Ändern der Größe mit dem Layout-Modus](assets/layout_mode_resize_new_updated.png)
 
-   Die Symbolleiste, die nach dem Tippen auf Komponenten angezeigt wird, besteht aus den folgenden Optionen:
+   Die Symbolleiste, die nach dem Tippen auf Komponenten angezeigt wird, besteht aus folgenden Optionen:
 
-   * **Übergeordnetes Element:** Wählen Sie das übergeordnete Element einer Komponente aus.
-   * **In neue Zeile verschieben:** Verschiebt die Komponente in die nächste Zeile, wenn mehrere Komponenten in derselben Zeile vorhanden sind.
+   * **Übergeordnet**: Wählen Sie das übergeordnete Element einer Komponente aus.
+   * **In neue Zeile verschieben**: Versetzt die Komponente in die nächste Zeile, wenn sich mehrere Komponenten in derselben Zeile befinden.
 
-   Sie können alle Größenänderungen rückgängig machen und das Standardlayout auf das Bedienfeld mit den angepassten Komponenten anwenden, indem Sie die Option **[!UICONTROL Breakpoint-Layout zurücksetzen]** ( ![Breakpoint zurücksetzen](assets/reverttopreviouslypublishedversion.png)) verwenden. Tippen Sie auf das übergeordnete Element der angepassten Komponente, um die Option anzuzeigen.
+   Sie können alle Größenänderungen rückgängig machen und das Standard-Layout auf den Bereich anwenden, der skalierte Komponenten enthält, indem Sie die Option **[!UICONTROL Breakpoint-Layout zurücksetzen]** (![Breakpoint zurücksetzen](assets/reverttopreviouslypublishedversion.png) verwenden). Tippen Sie auf das übergeordnete Element der skalierten Komponente, um die Option anzuzeigen.
 
    >[!NOTE]
    >
-   >Sie können die Größe von Tabellenspalten, Symbolleiste, Symbolleisten-Schaltfläche und Zielbereichskomponenten nicht im Layout -Modus ändern. Verwenden Sie den Stilmodus, um die Größe dieser Komponenten zu ändern.
+   >Sie können die Größe von Tabellenspalten, Symbolleisten, Symbolleistenschaltflächen und Zielbereichskomponenten mit dem Layout-Modus nicht ändern. Verwenden Sie den Stilmodus, um die Größe dieser Komponenten zu ändern.
 
 ### Beispiel {#example}
 
-**Zielsetzung:** Sie möchten eine Tabellenkomponente und eine Bildkomponente einfügen und sie in einer interaktiven Kommunikation parallel zueinander positionieren.
+**Ziel**: Sie möchten in einer interaktiven Kommunikation eine Tabellenkomponente und eine Bildkomponente einfügen und sie parallel zueinander positionieren.
 
-1. Fügen Sie die Tabellen- und Bildkomponenten im Bearbeitungsmodus im Webkanal einer interaktiven Kommunikation ein. Die Bildkomponente wird nach der Tabellenkomponente angezeigt.
-1. Wechseln Sie in den Layout -Modus und tippen Sie auf die Komponente Tabelle . Die blauen Punkte zur Größenanpassung der Komponente werden in den Spalten 1 und 12 angezeigt.
-1. Ziehen Sie den blauen Punkt in Spalte 12 in Spalte 6 des responsiven Rasters.
+1. Fügen Sie die Tabellen- und Bildkomponenten mithilfe des Bearbeitungsmodus im Web-Kanal einer interaktiven Kommunikation ein. Die Bildkomponente wird nach der Tabellenkomponente angezeigt.
+1. Wechseln Sie in den Layout-Modus und tippen Sie auf die Komponente Tabelle. Die blauen Punkte zur Größenanpassung der Komponente werden in den Spalten 1 und 12 angezeigt.
+1. Ziehen Sie per Drag-und-Drop den blauen Punkt von Spalte 12 in Spalte 6 des responsiven Rasters.
 
-   ![Endpunkt der Tabelle definieren](assets/layout_mode_end_point_table_new.png)
+   ![Definieren des Endpunkts der Tabelle](assets/layout_mode_end_point_table_new.png)
 
-1. Wählen Sie auf ähnliche Weise die Bildkomponente aus und ziehen Sie den blauen Punkt in Spalte 1 in Spalte 7 des responsiven Rasters. Die Tabellen- und Bildkomponenten werden parallel zueinander angezeigt.
+1. Wählen Sie analog dazu die Bildkomponente und ziehen Sie per Drag-und-Drop den blauen Punkt von Spalte 1 in Spalte 7 des responsiven Rasters. Die Tabellen- und Bildkomponenten werden parallel zueinander angezeigt.
 
-   ![Tabelle und Bild im Layout-Modus parallel](assets/table_image_parallel_new.png)
+   ![Tabelle und Bild parallel im Layout-Modus](assets/table_image_parallel_new.png)
 
-   Sie können die Bildkomponente auswählen und auf die Option **In neue Zeile verschieben** tippen, die in der Symbolleiste verfügbar ist, um die Bildkomponente in die nächste Zeile zu verschieben.
+   Sie können die Bildkomponente auswählen und auf die Option **In neue Zeile gleiten lassen** tippen, die in der Symbolleiste verfügbar ist, um die Bildkomponente zur nächsten Zeile zu verschieben.
 
-## Größe von Bereichen ändern {#resize-panels-layout-mode}
+## Ändern der Größe von Bereichen {#resize-panels-layout-mode}
 
-Führen Sie die folgenden Schritte aus, wenn Sie die Größe des gesamten Bedienfelds anstelle einzelner Komponenten ändern möchten:
+Führen Sie folgende Schritte aus, wenn Sie die Größe des gesamten Bereichs statt der Größe einzelner Komponenten ändern möchten:
 
-1. Tippen Sie auf eine der Komponenten im Bedienfeld, deren Größe Sie ändern möchten, wählen Sie ![Übergeordnetes Element auswählen](assets/select_parent_icon.svg) und wählen Sie die erste Option in der Dropdown-Liste aus, wenn das Bedienfeld das unmittelbare übergeordnete Element der Komponente ist.
+1. Tippen Sie auf eine der Komponenten im Bereich, dessen Größe Sie ändern möchten, wählen Sie ![Übergeordnetes Element auswählen](assets/select_parent_icon.svg) aus und dann die erste Option in der Dropdownliste, wenn der Bereich der Komponente direkt übergeordnet ist.
 
-   Die blauen Punkte werden am Anfang und Ende des responsiven Rasters angezeigt.
+   Die blauen Punkte werden am Beginn und am Ende des responsiven Rasters angezeigt.
 
-1. Ziehen Sie die blauen Punkte per Drag-and-Drop in das responsive Raster, um die Position des Bedienfelds zu definieren.
-Sie können die Schritte 1 und 2 wiederholen und ![Übergeordnetes Element auswählen](assets/float_to_new_line_icon.svg) auswählen, um das Bedienfeld mit der Größenänderung zur nächsten Zeile zu verschieben.
+1. Ziehen Sie die blauen Punkte mit der Maus, um die Position des Bereichs im responsiven Raster zu definieren.
+Sie können die Schritte 1 und 2 wiederholen und mit ![Übergeordnetes Element auswählen](assets/float_to_new_line_icon.svg) den Bereich mit der Größenanpassung zur nächsten Zeile verschieben.
 
-## Mehrspaltiges Layout für einen Bereich definieren
+## Definieren eines mehrspaltigen Layouts für einen Bereich
 
-Führen Sie die folgenden Schritte aus, um die Anzahl der Spalten für einen Bereich zu definieren:
+Führen Sie folgende Schritte aus, um die Anzahl der Spalten für einen Bereich zu definieren:
 
-1. Tippen Sie im Modus **[!UICONTROL Bearbeiten]** auf das Bedienfeld, wählen Sie ![Konfigurieren](assets/configure_icon.png) und wählen Sie **[!UICONTROL Responsiv - alles auf der Seite ohne Navigation]** aus der Dropdownliste **[!UICONTROL Bedienfeldlayout]** aus.
+1. Tippen Sie im Modus **[!UICONTROL Bearbeiten]** auf den Bereich, wählen Sie ![Konfigurieren](assets/configure_icon.png) aus und dann **[!UICONTROL Responsiv – alles auf der Seite ohne Navigation]** aus der Dropdownliste **[!UICONTROL Bereichs-Layout]**.
 
 1. Tippen Sie auf ![Speichern](assets/save_icon.svg), um die Eigenschaften zu speichern.
 
-1. Tippen Sie im Modus **[!UICONTROL Layout]** auf eine der Komponenten im Bereich, wählen Sie ![Übergeordnetes Element](assets/select_parent_icon.svg) aus und wählen Sie das Bedienfeld aus.
+1. Tippen Sie im Modus **[!UICONTROL Layout]** auf eine der Komponenten im Bereich, wählen Sie ![Übergeordnetes Element auswählen](assets/select_parent_icon.svg) aus und dann den Bereich.
 
-1. Tippen Sie auf ![mehrspaltige](assets/multi-column.svg) und wählen Sie die Anzahl der Spalten aus der Dropdownliste aus. Die Anzahl der Spalten kann zwischen 1 und 12 liegen. Das Bedienfeld wird in ein mehrspaltiges Layout unterteilt.
+1. Tippen Sie auf ![mit mehreren Spalten](assets/multi-column.svg) und wählen Sie die Spaltenanzahl aus der Dropdownliste aus. Die Anzahl der Spalten kann zwischen 1 und 12 liegen. Der Bereich wird in ein mehrspaltiges Layout unterteilt.
 
-![Mehrspalten im Layout-Modus](assets/multi-column-layout.png)
+![mehrere Spalten im Layout-Modus](assets/multi-column-layout.png)
 
-## Layout-Modus für Formulare mit altem responsiven Layout deaktivieren {#disable-layout-mode-for-forms-with-old-responsive-layout}
+## Deaktivieren des Layout-Modus für Formulare mit altem responsivem Layout {#disable-layout-mode-for-forms-with-old-responsive-layout}
 
-Sie können den Layout -Modus für Formulare mit dem alten responsiven Layout deaktivieren, indem Sie Eigenschaften für die im Formular verwendete Vorlage bearbeiten.
+Sie können den Layout-Modus für Formulare mit altem responsivem Layout deaktivieren, indem Sie die Eigenschaften der im Formular verwendeten Vorlage bearbeiten.
 
-Führen Sie die folgenden Schritte aus, um den Layout -Modus zu deaktivieren:
+Gehen Sie wie folgt vor, um den Layout-Modus zu deaktivieren:
 
-1. Wählen Sie **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Vorlagen]** und öffnen Sie die im Formular verwendete Vorlage im Modus **[!UICONTROL Bearbeiten]** .
-1. Wählen Sie den Dokumentcontainer im linken Bereich aus und tippen Sie auf **[!UICONTROL Richtlinie.]**
+1. Wählen Sie **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Vorlagen]** und öffnen Sie die Vorlage, die im Formular im Modus **[!UICONTROL Bearbeiten]** verwendet wird.
+1. Wählen Sie den Dokumentcontainer im linken Fenster aus und tippen Sie auf **[!UICONTROL Richtlinie.]**
 
-   ![Layout-Modus deaktivieren](assets/policy_disable_layout_mode.png)
+   ![Deaktivieren des Layout-Modus](assets/policy_disable_layout_mode.png)
 
 1. Tippen Sie auf die Registerkarte **[!UICONTROL Layout-Einstellungen]** und wählen Sie **[!UICONTROL Layout-Modus deaktivieren]** aus.
 1. Tippen Sie auf ![Änderungen speichern](assets/save_icon.png), um die Vorlageneigenschaften zu speichern.
