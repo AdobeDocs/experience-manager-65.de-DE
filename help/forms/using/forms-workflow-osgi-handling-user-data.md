@@ -1,6 +1,6 @@
 ---
 title: Formularzentrierte Workflows unter OSGi | Umgang mit Benutzerdaten
-seo-title: Formularzentrierte Workflows unter OSGi | Umgang mit Benutzerdaten
+seo-title: Forms-centric workflows on OSGi | Handling user data
 description: Formularzentrierte Workflows unter OSGi | Umgang mit Benutzerdaten
 uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
@@ -9,8 +9,8 @@ discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 role: Admin
 exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
-source-wordcount: '1016'
+workflow-type: ht
+source-wordcount: '1005'
 ht-degree: 100%
 
 ---
@@ -124,11 +124,11 @@ Führen Sie die folgenden Schritte aus, um Benutzerdaten für eine Workflow-Inst
    >
    >Die AEM [!DNL Forms] Mobile App speichert auch im Offline-Modus Daten. Es ist möglich, dass Daten für eine Workflow-Instanz lokal auf einzelnen Geräten gespeichert und an den [!DNL Forms]-Server gesendet werden, wenn die Mobile App mit dem Server synchronisiert wird.
 
-### Benutzerdaten löschen {#delete-user-data}
+### Löschen von Benutzerdaten {#delete-user-data}
 
 Sie müssen ein AEM-Administrator sein, um Benutzerdaten aus Workflow-Instanzen zu löschen, indem Sie die folgenden Schritte ausführen:
 
-1. Folgen Sie den Anweisungen in [ Auf Benutzerdaten zugreifen](/help/forms/using/forms-workflow-osgi-handling-user-data.md#access) und beachten Sie Folgendes:
+1. Folgen Sie den Anweisungen in [Auf Benutzerdaten zugreifen](/help/forms/using/forms-workflow-osgi-handling-user-data.md#access) und beachten Sie Folgendes:
 
    * Pfade zu Workflow-Instanzen, die dem Benutzer zugeordnet sind
    * Status der Workflow-Instanzen
@@ -159,4 +159,4 @@ Sie können auch APIs verwenden, um auf Knoten und Eigenschaften zuzugreifen und
 
 * [Anleitung für den programmgesteuerten Zugriff auf das AEM-JCR](/help/sites-developing/access-jcr.md)
 * [Entfernen von Knoten und Eigenschaften](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
-* [API-Referenz](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
+* [API-Referenz](https://helpx.adobe.com/de/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
