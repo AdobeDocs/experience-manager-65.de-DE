@@ -1,8 +1,8 @@
 ---
 title: Skriptunterstützung für HTML5-Formulare
-seo-title: Skriptunterstützung für HTML5-Formulare
-description: JavaScript, FormCalc-Eigenschaften und andere Methoden, die in HTML5-Formularen unterstützt werden.
-seo-description: JavaScript, FormCalc-Eigenschaften und andere Methoden, die in HTML5-Formularen unterstützt werden.
+seo-title: Scripting support for HTML5 forms
+description: JavaScript, FormCalc-Eigenschaften und andere Methoden, die in HTML-Formularen unterstützt werden.
+seo-description: JavaScript, FormCalc properties, and other methods that are supported in HTML5 Forms.
 uuid: 697d5ec4-c818-41e4-b813-883c01b7ff3a
 contentOwner: robhagat
 content-type: reference
@@ -12,9 +12,9 @@ discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '3911'
-ht-degree: 98%
+workflow-type: ht
+source-wordcount: '3892'
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
 <table>
  <tbody>
   <tr>
-   <th>Property </th>
+   <th>Eigenschaft </th>
    <th>Beschreibung<br /> </th>
    <th>Ausnahme</th>
   </tr>
@@ -63,7 +63,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   <tr>
    <td>change</td>
    <td>Gibt den Wert an, den ein Benutzer unmittelbar nach der Durchführung der Aktion in ein Feld eingibt oder einfügt. </td>
-   <td><p>Die Eigenschaft "change"funktioniert in folgenden Fällen nicht ordnungsgemäß:</p>
+   <td><p>Die Eigenschaft „Ändern“ funktioniert in folgenden Fällen nicht ordnungsgemäß:</p>
     <ul>
      <li>Beim Markieren und Ersetzen von Texten</li>
      <li>Beim Löschen, Kopieren und Einfügen von Texten</li>
@@ -75,12 +75,12 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   <tr>
    <td>keyDown</td>
    <td>Stellt fest, ob ein Benutzer die Auswahl durch Drücken einer Pfeiltaste trifft. Diese Eigenschaft ist nur für Listenfelder und Dropdown-Listen verfügbar.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>modifier</td>
    <td>Legt fest, ob bei Ausführung eines bestimmten Ereignisses die Zusatztaste (beispielsweise Strg unter Microsoft® Windows®) gedrückt wird.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
  </tbody>
 </table>
@@ -102,7 +102,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   <tr>
    <td><code>name</code></td>
    <td>Gibt den Namen der aktuellen Anwendung zurück.</td>
-   <td>Gibt den Browsernamen und die Version zurück. Im Chrome-Browser lautet der zurückgegebene Wert beispielsweise <code>Chrome &lt;version&gt;.</code></td>
+   <td>Gibt den Browsernamen und die Version zurück. Beim Browser Chrome wird beispielsweise folgender Wert zurückgegeben: <code>Chrome &lt;version&gt;.</code></td>
   </tr>
   <tr>
    <td><code>numPages</code></td>
@@ -112,7 +112,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   <tr>
    <td><code>platform</code></td>
    <td>Gibt eine Zeichenfolge zurück, die die Plattform des Computers repräsentiert, auf dem das Skript ausgeführt wird.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td><code>title</code></td>
@@ -127,12 +127,12 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   <tr>
    <td><code>calculationsEnabled</code></td>
    <td>Gibt an, ob Berechnungsskripten ausgeführt werden.<br /> </td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td><code>validationsEnabled</code></td>
    <td>Gibt an, ob die Überprüfungsskripte ausgeführt werden.<br /> </td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td><code>pageUp</code></td>
@@ -162,7 +162,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   <tr>
    <td>currentPage</td>
    <td><p>Legt die zurzeit aktive Seite eines Dokumentes zur Laufzeit fest.</p> <p>Seitenzahlen sind 0-basiert, das heißt, die erste Seite eines Dokuments gibt den Wert 0 zurück.</p> <p>Die currentPage-Eigenschaft ist verfügbar, wenn layout:ready auf einem Client ausgeführt wird. Sie ist jedoch nicht verfügbar, wenn layout:ready auf dem Server ausgeführt wird, da die Eigenschaft nur in Verbindung mit dem Formularlayout ausgeführt wird.</p> </td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
  </tbody>
 </table>
@@ -179,7 +179,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   <tr>
    <td><code>presence</code></td>
    <td>Steuert die Teilnahme des zugehörigen Objekts in den verschiedenen Phasen der Verarbeitung. Wenn das Objekt ein Container ist, werden alle Einschränkungen dieses Steuerelements für den Inhalt des Containers übernommen.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td><code>access</code></td>
@@ -194,12 +194,12 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   <tr>
    <td><code>value</code></td>
    <td>Ein Content-Element, das eine Dateninhaltseinheit umfasst.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td><code>rawValue</code></td>
    <td>Gibt den nicht formatierten Wert für dieses Feld an.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td><code>formattedValue</code></td>
@@ -244,97 +244,97 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   <tr>
    <td><code>length</code></td>
    <td>Die Anzahl der Elemente in der Liste.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td><code>addItem</code></td>
    <td>Fügt dem aktuellen Feld neue Elemente hinzu.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td><code>clearItem</code></td>
    <td>Entfernt alle Elemente aus dem Feld.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td><code>boundItem</code></td>
    <td>Ruft den Bindewert eines bestimmten Anzeigeelements aus einer Dropdown-Liste oder aus einem Listenfeld ab.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td><code>execCalculate</code></td>
    <td>Führt das Berechnungsskript des Feldes aus.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td><code>execValidate</code></td>
    <td>Führt das Überprüfungsskript des Feldes aus.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td><code>execEvent</code></td>
    <td>Führt das Ereignisskript des Objekts aus.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td><code>getItemState</code></td>
    <td>Gibt den Auswahlstatus des angegebenen Elements zurück.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td><code>setItemState</code></td>
    <td>Legt den Auswahlstatus des angegebenen Elements fest.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td><code>getDisplayItem</code></td>
    <td>Ruft den Elementanzeigetext für den angegebenen Elementindex ab.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td><code>getSaveItem</code></td>
    <td>Ruft den Datenwert für den angegebenen Elementindex ab.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td><code>deleteItem</code></td>
    <td>Entfernt das Element an der angegebenen Indexposition.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td><code>setItems</code></td>
    <td>Legt die angegebenen Elemente im aktuellen Feld fest. Ersetzt die bereits vorhandenen Elemente.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>h</td>
    <td>Eine Maßeinheit für die Höhe des Layouts.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>w</td>
    <td>Eine Maßeinheit für die Breite des Layouts.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>x</td>
    <td>Gibt die X-Koordinate für den Ankerpunkt des Containers in Bezug auf die linke obere Ecke des übergeordneten Containers bei Platzierung anhand eines positionierten Layouts an.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>y</td>
    <td>Gibt die Y-Koordinate für den Ankerpunkt eines Containers in Bezug auf die linke obere Ecke des übergeordneten Containers bei Platzierung anhand eines positionierten Layouts an.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>caption</td>
    <td>Das caption-Objekt beschreibt eine beschreibende Bezeichnung, die mit einem Formularentwurfsobjekt verknüpft ist.<br /> </td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>validate</td>
    <td>Das validate-Objekt steuert die Überprüfung von Daten, die von Benutzern in einem Formular eingegeben werden. Das validate-Objekt kann während der Lebensdauer eines Formulars mehrmals aktiviert werden.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>parentSubform</td>
@@ -344,12 +344,12 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   <tr>
    <td>selectedIndex</td>
    <td>Die Indexposition des ersten ausgewählten Elements.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
  </tbody>
 </table>
 
-## Formular-  {#form}
+## Formular {#form}
 
 | **Eigenschaft** | **Beschreibung** | **Ausnahme** |
 |---|---|---|
@@ -384,15 +384,15 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
 
 | Eigenschaft | Beschreibung | Ausnahme |
 |---|---|---|
-| createNode | Erstellt einen neuen Knoten auf der Grundlage eines gültigen Klassennamens. | Kein |
-| `isContainer` | Gibt an, ob dieses Objekt ein container-Objekt ist. | Kein |
-| `isNull` | Gibt an, ob der aktuelle Datenwert ein Nullwert ist. | Kein |
-| `resolveNode` | Wertet den angegebenen SOM-Ausdruck aus, angefangen mit dem aktuellen Objekt des XML-Formularobjektmodells, und gibt den Wert des im SOM-Ausdruck angegebenen Objekts zurück. | Kein |
-| `resolveNodes` | Wertet den angegebenen SOM-Ausdruck aus, angefangen mit dem aktuellen Objekt des XML-Formularobjektmodells, und gibt den Wert des im SOM-Ausdruck angegebenen Objekts zurück. | Kein |
-| oneOfChild | Erstellt einen neuen Knoten auf der Grundlage eines gültigen Klassennamens. | Kein |
-| getElement | Gibt ein bestimmtes untergeordnetes Objekt zurück. | Kein |
-| getAttribute | Ruft den Wert einer angegebenen Eigenschaft ab. | Kein |
-| setAttribute | Legt den Wert einer angegebenen Eigenschaft fest. | Kein |
+| createNode | Erstellt einen neuen Knoten auf der Grundlage eines gültigen Klassennamens. | Ohne |
+| `isContainer` | Gibt an, ob dieses Objekt ein container-Objekt ist. | Ohne |
+| `isNull` | Gibt an, ob der aktuelle Datenwert ein Nullwert ist. | Ohne |
+| `resolveNode` | Wertet den angegebenen SOM-Ausdruck aus, angefangen mit dem aktuellen Objekt des XML-Formularobjektmodells, und gibt den Wert des im SOM-Ausdruck angegebenen Objekts zurück. | Ohne |
+| `resolveNodes` | Wertet den angegebenen SOM-Ausdruck aus, angefangen mit dem aktuellen Objekt des XML-Formularobjektmodells, und gibt den Wert des im SOM-Ausdruck angegebenen Objekts zurück. | Ohne |
+| oneOfChild | Erstellt einen neuen Knoten auf der Grundlage eines gültigen Klassennamens. | Ohne |
+| getElement | Gibt ein bestimmtes untergeordnetes Objekt zurück. | Ohne |
+| getAttribute | Ruft den Wert einer angegebenen Eigenschaft ab. | Ohne |
+| setAttribute | Legt den Wert einer angegebenen Eigenschaft fest. | Ohne |
 
 ## model {#model}
 
@@ -412,77 +412,77 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   <tr>
    <td>instanceIndex</td>
    <td>Gibt die Indexposition des Objekts relativ zu den anderen instanziierten Instanzen an.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>execEvent</td>
    <td>Führt das Ereignisskript des Objekts aus.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>getInvalidObjects</td>
    <td>Gibt eine Liste von Knoten in dem Teilformular (einschließlich) zurück, bei denen der Test zur Überprüfung fehlgeschlagen ist.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>border</td>
    <td>Das border-Objekt beschreibt den Rahmen, der ein Objekt umgibt.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>borderColor</td>
    <td>Gibt den Rahmenfarbwert für dieses Feld an. Sie müssen die Eigenschaft border.edge.presence separat als sichtbar einstellen.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>h</td>
    <td>Eine Maßeinheit für die Höhe des Layouts.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>w</td>
    <td>Eine Maßeinheit für die Breite des Layouts.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>x</td>
    <td>Gibt die X-Koordinate für den Ankerpunkt des Containers in Bezug auf die linke obere Ecke des übergeordneten Containers bei Platzierung anhand eines positionierten Layouts an.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>y</td>
    <td>Gibt die Y-Koordinate für den Ankerpunkt eines Containers in Bezug auf die linke obere Ecke des übergeordneten Containers bei Platzierung anhand eines positionierten Layouts an.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>validate</td>
    <td>Das validate-Objekt steuert die Überprüfung von Daten, die von Benutzern in einem Formular eingegeben werden. Das validate-Objekt kann während der Lebensdauer eines Formulars mehrmals aktiviert werden.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>name</td>
    <td>Ein Bezeichner, der verwendet wird, um dieses Element in Skriptausdrücken eindeutig zu kennzeichnen.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>presence</td>
    <td>Gibt an, ob ein Objekt sichtbar ist.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>access</td>
    <td>Steuert den Benutzerzugriff auf den Inhalt eines Containers, beispielsweise ein Teilformular.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>execValidate</td>
    <td>Berechnet den Index eines Teilformulars oder Teilformularsatzes anhand dessen Position im Verhältnis zu anderen Instanzen des gleichen Formularobjekts.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>instanceManager</td>
    <td>Das instanceManager-Objekt verwaltet das Erstellen, Entfernen und Verschieben einer Instanz von Formularmodellobjekten.<br /> </td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
  </tbody>
 </table>
@@ -519,27 +519,27 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   <tr>
    <td>parent</td>
    <td>Ruft den übergeordneten Knoten dieses Knotens ab.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>index</td>
    <td>Gibt die Position dieses Knotens in der zugehörigen Sammlung von untergeordneten Knoten mit gleichen Namen im Bereich zurück.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>somExpression</td>
    <td>Ruft den SOM-Ausdruck für diesen Knoten ab.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>resolveNode</td>
    <td>Wertet den angegebenen SOM-Ausdruck aus, angefangen mit dem aktuellen Objekt des XML-Formularobjektmodells, und gibt den Wert des im SOM-Ausdruck angegebenen Objekts zurück.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>resolveNodes</td>
    <td>Wertet den angegebenen SOM-Ausdruck aus, angefangen mit dem aktuellen Objekt des XML-Formularobjektmodells, und gibt den Wert des im SOM-Ausdruck angegebenen Objekts zurück.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
  </tbody>
 </table>
@@ -548,7 +548,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
 
 | Eigenschaft | Beschreibung | Ausnahme |
 |---|---|---|
-| instanceManager | Das instanceManager-Objekt verwaltet das Erstellen, Entfernen und Verschieben einer Instanz von Formularmodellobjekten. | Kein |
+| instanceManager | Das instanceManager-Objekt verwaltet das Erstellen, Entfernen und Verschieben einer Instanz von Formularmodellobjekten. | Ohne |
 
 ## content {#content}
 
@@ -815,12 +815,12 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   <tr>
    <td>contentType</td>
    <td>Gibt den Inhaltstyp im referenzierten Dokument an, ausgedrückt als MIME-Typ.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>name<br /> </td>
    <td>Ein Bezeichner, der verwendet wird, um dieses Element in Skriptausdrücken eindeutig zu kennzeichnen.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
  </tbody>
 </table>
@@ -883,7 +883,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   <tr>
    <td>Rahmen</td>
    <td>Das border-Objekt beschreibt den Rahmen, der ein Objekt umgibt.<br /> </td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
  </tbody>
 </table>
@@ -900,67 +900,67 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   <tr>
    <td>layout</td>
    <td>Gibt die von diesem Objekt zu verwendende Layoutstrategie an.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>border</td>
    <td>Gibt den Rahmen für dieses Feld an.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>mandatory</td>
    <td>Gibt den nullTest-Wert für das Feld an.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>borderColor</td>
    <td>Gibt den Rahmenfarbwert für dieses Feld an. Bevor die Farbe mit Hilfe eines Skripts geändert werden kann, muss eine Begrenzung definiert werden.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>borderWidth</td>
    <td>Gibt die Rahmenbreite für dieses Feld an.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>h</td>
    <td>Eine Maßeinheit für die Höhe des Layouts.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>transient</td>
    <td>Gibt an, ob die verarbeitende Anwendung den Wert der Ausschlussgruppe im Rahmen eines Formularsende- oder -speichervorgangs speichern muss.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>w</td>
    <td>Eine Maßeinheit für die Breite des Layouts.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>x</td>
    <td>Gibt die X-Koordinate für den Ankerpunkt des Containers in Bezug auf die linke obere Ecke des übergeordneten Containers bei Platzierung anhand eines positionierten Layouts an.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>y</td>
    <td>Gibt die Y-Koordinate für den Ankerpunkt eines Containers in Bezug auf die linke obere Ecke des übergeordneten Containers bei Platzierung anhand eines positionierten Layouts an.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>caption</td>
    <td>Das caption-Objekt beschreibt eine beschreibende Bezeichnung, die mit einem Formularentwurfsobjekt verknüpft ist.<br /> </td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>validate</td>
    <td>Das validate-Objekt steuert die Überprüfung von Daten, die von Benutzern in einem Formular eingegeben werden. Das validate-Objekt kann während der Lebensdauer eines Formulars mehrmals aktiviert werden.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>dataNode</td>
    <td>Ruft die Daten-Node ab, an die eine Formular-Node nach dem Zusammenführen gebunden ist.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>presence</td>
@@ -975,27 +975,27 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   <tr>
    <td>name</td>
    <td>Gibt einen Bezeichner an, mit dem dieses Objekt oder Ereignis in Skriptausdrücken angegeben werden kann.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>members</td>
    <td>Gibt die Elemente einer Ausschlussgruppe an. </td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>selectedMember</td>
    <td>Gibt das ausgewählte Element einer Ausschlussgruppe zurück.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>execCalculate</td>
    <td>Führt Skripten für das calculate-Ereignis des angegebenen Objekts und etwaiger untergeordneter Objekte aus.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>calculate</td>
    <td>Das calculate-Objekt steuert die Berechnung des Werts eines Felds.<br /> </td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
  </tbody>
 </table>
@@ -1091,7 +1091,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   <tr>
    <td>pageContent</td>
    <td>Ruft Formularentwurfsobjekttypen von einer angegebenen Seite eines Formulars ab.</td>
-   <td>Kein</td>
+   <td>Ohne</td>
   </tr>
   <tr>
    <td>absPageCount</td>
@@ -1109,7 +1109,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
 
 | **Eigenschaft** | **Beschreibung** | **Ausnahme** |
 |---|---|---|
-| presence | Gibt an, ob ein Objekt sichtbar ist. | Kein |
+| presence | Gibt an, ob ein Objekt sichtbar ist. | Ohne |
 
 ## FormCalc {#formcalc}
 
@@ -1156,14 +1156,14 @@ FormCalc ist eine XFA-spezifische Sprache zum Erstellen von E-Formular-orientier
    <td>while (i lt 5) do i = i + 1 endwhile</td>
   </tr>
   <tr>
-   <td>für</td>
+   <td> für </td>
    <td><br type="_moz" /> </td>
-   <td>für i = 100 downto 1 <br /> do s = s + i endfor</td>
+   <td>for i = 100 downto 1 <br /> do s = s + i endfor</td>
   </tr>
   <tr>
    <td>for each</td>
    <td><br type="_moz" /> </td>
-   <td>für jede i in (1, 2, 3) <br /> do s = s + i endfor</td>
+   <td>for each i in (1, 2, 3) <br /> do s = s + i endfor</td>
   </tr>
   <tr>
    <td>Funktionsdeklaration</td>
@@ -1173,7 +1173,7 @@ FormCalc ist eine XFA-spezifische Sprache zum Erstellen von E-Formular-orientier
  </tbody>
 </table>
 
-### Acrobat-API-Unterstützung  {#acrobat-api-support}
+### Acrobat-API-Unterstützung {#acrobat-api-support}
 
 1. **Arithmetik-Funktionen**
 
@@ -1262,7 +1262,7 @@ FormCalc ist eine XFA-spezifische Sprache zum Erstellen von E-Formular-orientier
   </tr>
   <tr>
    <td>app.alert()</td>
-   <td>Diese Acrobat-API sendet eine Warnmeldung über das JavaScript-Popup.</td>
+   <td>Diese Acrobat-API sendet eine Warnmeldung als JavaScript-Popup.</td>
    <td> </td>
   </tr>
   <tr>
@@ -1338,7 +1338,7 @@ FormCalc ist eine XFA-spezifische Sprache zum Erstellen von E-Formular-orientier
  </tbody>
 </table>
 
-## Unterstützte XFA-Ereignisse  {#supported-xfa-events}
+## Unterstützte XFA-Ereignisse {#supported-xfa-events}
 
 Folgende clientseitige XFA-Ereignisse werden unterstützt:
 
@@ -1346,7 +1346,7 @@ Folgende clientseitige XFA-Ereignisse werden unterstützt:
 * Validieren
 * Berechnen
 * Klicken Sie auf
-* Geben Sie Folgendes ein
+* Geben Sie ein
 * Beenden
 * Änderung
 * ValidationState
