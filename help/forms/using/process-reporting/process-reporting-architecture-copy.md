@@ -1,77 +1,77 @@
 ---
-title: Funktionsweise von Prozessberichten
-seo-title: Funktionsweise von Prozessberichten
-description: Beschreibung der Dienste, aus denen die AEM Forms on JEE-Prozessberichterstellung besteht, und Einführung in die Prozessberichterstellungs-Benutzeroberfläche
-seo-description: Beschreibung der Dienste, aus denen die AEM Forms on JEE-Prozessberichterstellung besteht, und Einführung in die Prozessberichterstellungs-Benutzeroberfläche
+title: Funktionsweise von Prozess-Reporting
+seo-title: How Process Reporting Works
+description: Beschreibung der Services von AEM Forms in der Prozessberichterstellung unter JEE und Einführung in die Bedienelemente der Prozessberichterstellung
+seo-description: Description of the services that make up the AEM Forms on JEE Process Reporting and an introduction to the Process Reporting UI
 uuid: 4631b734-a679-495c-a708-2348bf22c1f7
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: process-reporting
 discoiquuid: a1af9920-5d2a-462f-bdee-ccec4c047c5b
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
-workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 1%
+workflow-type: ht
+source-wordcount: '345'
+ht-degree: 100%
 
 ---
 
 
-# Funktionsweise von Prozessberichten {#how-process-reporting-works}
+# Funktionsweise von Prozess-Reporting {#how-process-reporting-works}
 
-Prozessberichte sind das Berichtsmodul von AEM Forms on JEE.
+Die Prozessberichterstellung ist das Modul für die Berichterstellung von AEM Forms unter JEE.
 
 Mit der Prozessberichterstellung können Sie Berichte zu AEM Forms-Prozessen und -Aufgaben ausführen.
 
-Process Reporting verwendet das eingebettete Process Reporting-Repository, um Forms-Daten zu veröffentlichen. Anschließend werden diese Daten zum Ausführen von Berichten verwendet.
+Die Prozessberichterstellung verwendet das eingebettete Repository für die Prozessberichterstellung, um Forms-Daten zu veröffentlichen. Anschließend werden diese Daten zum Erstellen von Berichten verwendet.
 
-Process Reporting besteht aus den folgenden Modulen:
+Die Prozessberichterstellung besteht aus den folgenden Modulen:
 
-* [ProcessDataPublisher-Dienst](/help/forms/using/process-reporting/process-reporting-architecture.md#p-processdatapublisher-service-br-p)
-* [ProcessDataStorage-Dienst](/help/forms/using/process-reporting/process-reporting-architecture.md#p-processdatastorageprovider-service-br-p)
+* [ProcessDataPublisher-Service](/help/forms/using/process-reporting/process-reporting-architecture.md#p-processdatapublisher-service-br-p)
+* [ProcessDataStorage-Service](/help/forms/using/process-reporting/process-reporting-architecture.md#p-processdatastorageprovider-service-br-p)
 * [OSGi-Dienst](/help/forms/using/process-reporting/process-reporting-architecture.md#p-osgi-service-br-p)
 * [Query Data-Servlet](/help/forms/using/process-reporting/process-reporting-architecture.md#p-querydataservlet-service-br-p)
-* [Benutzeroberfläche für Prozessberichte](/help/forms/using/process-reporting/process-reporting-architecture.md#p-process-reporting-user-interface-br-p)
+* [Benutzeroberfläche für die Prozessberichterstellung](/help/forms/using/process-reporting/process-reporting-architecture.md#p-process-reporting-user-interface-br-p)
 
 ## Architektur der Prozessberichterstellung {#process-reporting-architecture-br}
 
 ![processreportingarchitecture](assets/processreportingarchitecture.png)
 
-## Process Reporting-Module {#process-reporting-modules}
+## Module der Prozessberichterstellung {#process-reporting-modules}
 
-### ProcessDataPublisher-Dienst {#processdatapublisher-service-br}
+### ProcessDataPublisher-Service {#processdatapublisher-service-br}
 
-Der ProcessDataPublisher-Server wird regelmäßig in der AEM Forms-Datenbank ausgeführt und extrahiert die Daten, die seit der letzten Ausführung des Dienstes geändert wurden. Anschließend werden die Daten im Process Data Storage-Dienst veröffentlicht.
+Der ProcessDataPublisher-Server wird regelmäßig ausgeführt, um aus der AEM Forms-Datenbank die Daten zu extrahieren, die seit der letzten Ausführung des Services geändert wurden. Anschließend übergibt der Service diese Daten an den Process Data Storage-Service.
 
-Weitere Informationen zum Konfigurieren des Dienstes finden Sie unter [Konfigurieren des ProcessDataPublisher-Dienstes](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p).
+Weitere Informationen zum Konfigurieren des Services finden Sie unter [ProcessDataPublisher-Service konfigurieren](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p).
 
-### ProcessDataStorageProvider-Dienst {#processdatastorageprovider-service-br}
+### ProcessDataStorageProvider-Service {#processdatastorageprovider-service-br}
 
-Der ProcessDataStorageProvider-Dienst empfängt Prozessdaten vom ProcessDataPublisher-Dienst und speichert die Daten im Process Reporting-Repository.
+Der ProcessDataStorageProvider-Service empfängt Prozessdaten vom ProcessDataPublisher-Service und speichert diese Daten im Repository für die Prozessberichterstellung.
 
-Weitere Informationen zum Konfigurieren des Dienstes finden Sie unter [Konfigurieren des ProcessDataStorageProvider-Diensts](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p).
+Weitere Informationen zum Konfigurieren des Services finden Sie unter [ProcessDataStorageProvider-Dienst konfigurieren](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p).
 
 ### OSGi-Dienst {#osgi-service-br}
 
-Das QueryDataServlet verwendet diesen Dienst zum Abrufen der Berichtsdaten aus dem Process Reporting-Repository.
+Das QueryDataServlet verwendet diesen Service, um Berichtsdaten aus dem Repository der Prozessberichterstellung abzurufen.
 
-### QueryDataServlet-Dienst {#querydataservlet-service-br}
+### QueryDataServlet-Service {#querydataservlet-service-br}
 
-Der QueryDataServlet-Dienst akzeptiert Abfragen aus der Benutzeroberfläche &quot;Process Reporting&quot;.
+Der QueryDataServlet-Service nimmt Abfragen aus der Benutzeroberfläche für die Prozessberichterstellung entgegen.
 
-Der Dienst verwendet dann OSGi-Dienste, um die relevanten Berichtsdaten abzurufen, die Daten zu verarbeiten und die Daten an die Benutzeroberfläche zurückzugeben.
+Der Service verwendet dann OSGi-Services, um die relevanten Berichtsdaten abzurufen, sie zu verarbeiten und anschließend an die Benutzeroberfläche zurückzugeben.
 
-### Benutzeroberfläche für Prozessberichte {#process-reporting-user-interface-br}
+### Benutzeroberfläche für die Prozessberichterstellung {#process-reporting-user-interface-br}
 
-Die Benutzeroberfläche &quot;Process Reporting&quot;ist eine webbrowserbasierte Oberfläche. Sie verwenden diese Schnittstelle, um Prozess- und Aufgabeninformationen anzuzeigen, die aus der AEM Forms-Datenbank veröffentlicht werden.
+Die Benutzeroberfläche für die Prozessberichterstellung ist webbrowserbasiert. Diese Schnittstelle dient dem Anzeigen von Prozess- und Aufgabendaten, die aus der AEM Forms-Datenbank veröffentlicht werden.
 
-### QueryDataServlet-Dienst {#querydataservlet-service-br-1}
+### QueryDataServlet-Service {#querydataservlet-service-br-1}
 
-Der QueryDataServlet-Dienst akzeptiert Abfragen aus der Benutzeroberfläche &quot;Process Reporting&quot;.
+Der QueryDataServlet-Service nimmt Abfragen aus der Benutzeroberfläche für die Prozessberichterstellung entgegen.
 
-Der Dienst verwendet dann OSGi-Dienste, um die relevanten Berichtsdaten abzurufen, die Daten zu verarbeiten und die Daten an die Benutzeroberfläche zurückzugeben.
+Der Service verwendet dann OSGi-Services, um die relevanten Berichtsdaten abzurufen, sie zu verarbeiten und anschließend an die Benutzeroberfläche zurückzugeben.
 
-### Benutzerspezifische Berichte {#custom-reports-br}
+### Benutzerdefinierte Berichte {#custom-reports-br}
 
-Sie können Ihre eigenen benutzerspezifischen Berichte erstellen und diese Berichte auf der Registerkarte Benutzerspezifische Berichte der Benutzeroberfläche &quot;Process Reporting&quot;anzeigen.
+Sie können Ihre eigenen benutzerdefinierten Berichte erstellen und diese auf der Registerkarte Benutzerdefinierte Berichte in der Benutzeroberfläche für die Prozessberichterstellung anzeigen.
 
-Die Schritte zum Erstellen eines benutzerspezifischen Berichts finden Sie unter So erstellen Sie einen benutzerspezifischen Bericht im Artikel [Benutzerspezifische Berichte in Prozessberichten](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
+Die Schritte zum Erstellen eines benutzerspezifischen Berichts finden Sie unter „So erstellen Sie einen benutzerspezifischen Bericht“ im Artikel [Benutzerdefinierte Berichte in Process Reporting](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
