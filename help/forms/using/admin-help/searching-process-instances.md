@@ -1,8 +1,8 @@
 ---
 title: Nach Prozessinstanzen suchen
-seo-title: Nach Prozessinstanzen suchen
+seo-title: Searching for process instances
 description: Verwenden Sie die Seite „Prozesssuche“, um Suchkriterien zum Auffinden einer Prozessinstanz einzugeben.
-seo-description: Verwenden Sie die Seite „Prozesssuche“, um Suchkriterien zum Auffinden einer Prozessinstanz einzugeben.
+seo-description: Use the Process Search page to enter search criteria for finding a process instance.
 uuid: 4a9c5b05-add5-4278-9c6f-d1928b6860d2
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 88b634bb-8f6c-4830-ad01-821668609615
 exl-id: 35f9acbf-7a82-43b1-9e17-9be4de666212
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 98%
+workflow-type: ht
+source-wordcount: '449'
+ht-degree: 100%
 
 ---
 
@@ -32,14 +32,14 @@ Geben Sie zum Durchführen einer allgemeinen Suche grundlegende Kriterien ein. W
 1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Prozesssuche“.
 1. Geben Sie auf der Seite „Prozesssuche“ unter „Allgemeine Suche“ die folgenden Kriterien ein:
 
-   * **Prozess-ID:** Die positive ganze Zahl, die jede eindeutige Prozessinstanz identifiziert.
+   * **Prozess-ID:** Die positive Ganzzahl, die jede eindeutige Prozessinstanz identifiziert.
    * **Prozessstatus:** Wählen Sie den gewünschten Status in der Liste.
-   * **Anwendung:** Wählen Sie die gewünschte Anwendung in der Liste. Nur bereitgestellte Anwendungen werden angezeigt.
+   * **Programm:** Wählen Sie das gewünschte Programm in der Liste. Nur bereitgestellte Programme werden angezeigt.
    * **Prozessname/-version:** Wählen Sie einen Prozessnamen im Menü. Nur bereitgestellte Prozesse werden angezeigt.
 
-1. Klicken Sie auf Suchen. Die Seite „Prozessinstanz“ wird mit einer Liste der gefundenen Instanzen angezeigt.
+1. Klicken Sie auf „Suchen“. Die Seite „Prozessinstanz“ wird mit einer Liste der gefundenen Instanzen angezeigt.
 
-## Eine Detailsuche nach einem Prozess durchführen  {#perform-a-detailed-search-for-a-process}
+## Eine Detailsuche nach einem Prozess durchführen {#perform-a-detailed-search-for-a-process}
 
 Zum Durchführen einer Detailsuche geben Sie spezifische Attribute ein. Eine Detailsuche eignet sich optimal, wenn zahlreiche Prozessinstanzen ausgeführt werden und Sie die möglichen Suchergebnisse durch bestimmte Kriterien einschränken müssen.
 
@@ -53,7 +53,7 @@ Zum Durchführen einer Detailsuche geben Sie spezifische Attribute ein. Eine Det
 1. Klicken Sie zum Hinzufügen einer weiteren Zeile auf „Mehr Filter“. Ein weiterer Satz von „Attribut“-, „Filter“- und „Wert“-Listen sowie die Liste „Bedingung“ werden angezeigt.
 1. Wählen Sie unter „Bedingung“ UND oder ODER. Wiederholen Sie die Schritte 1 bis 3 nach Bedarf, um die Suche weiter einzuschränken.
 1. Klicken Sie zum Hinzufügen oder Löschen von Zeilen auf „Mehr Filter“ oder „Weniger Filter“. Es können eine bis vier Zeilen verwendet werden.
-1. Klicken Sie auf Suchen. Die Seite „Prozessinstanz“ wird mit einer Liste der gefundenen Instanzen angezeigt.
+1. Klicken Sie auf „Suchen“. Die Seite „Prozessinstanz“ wird mit einer Liste der gefundenen Instanzen angezeigt.
 
 [Informationen zum Status von Prozessinstanzen](/help/forms/using/admin-help/processes.md#about-process-instance-statuses)
 
