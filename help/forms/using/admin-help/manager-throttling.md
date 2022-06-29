@@ -1,8 +1,8 @@
 ---
 title: Work Manager und Einschränkungen
-seo-title: Work Manager und Einschränkungen
+seo-title: Work Manager and throttling
 description: Dieses Dokument stellt Hintergrundinformationen über Work Manager und Anweisungen zum Konfigurieren von Einschränkungsoptionen für Work Manager bereit.
-seo-description: Dieses Dokument stellt Hintergrundinformationen über Work Manager und Anweisungen zum Konfigurieren von Einschränkungsoptionen für Work Manager bereit.
+seo-description: This document provides background information on Work Manager, and provides instructions on configuring Work Manager throttling options.
 uuid: b90998bc-e3d4-493a-9371-55ccb44da20d
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9a8b4e3a-f416-4dc6-a90a-9018df5c844e
 exl-id: 1f765de2-1362-4318-9302-c5036e6fa7d6
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1044'
-ht-degree: 96%
+workflow-type: ht
+source-wordcount: '1023'
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Die Vorgänge, die von Diensten in AEM Forms ausgeführt werden, können entwede
 
 Vorgänge mit langer Lebensdauer umfassen möglicherweise Systeme oder gehen über das Unternehmen hinaus, beispielsweise wenn ein Kunde ein Antragsformular für eine Hypothek ausfüllen und einreichen muss und dies Teil einer umfangreicheren Lösung ist, die mehrere automatisierte und von Menschen durchgeführte Aufgaben umfasst. Solche Vorgänge müssen fortgesetzt werden, während auf eine Antwort gewartet wird. Vorgänge mit langer Lebensdauer führen die ihnen zugrunde liegenden Aufgaben asynchron aus, dadurch können Ressourcen anderweitig genutzt werden, während sie darauf warten, beendet zu werden. Im Gegensatz zu einem Vorgang mit kurzer Lebensdauer wird ein Vorgang mit langer Lebensdauer von Work Manager nicht als abgeschlossen betrachtet, sobald er aufgerufen wird. Es muss ein externer Auslöser, z. B. ein System, das einen anderen Vorgang bei demselben Dienst anfordert oder ein Benutzer, der ein Formular sendet, eintreten, um den Vorgang zu beenden.
 
-## Informationen zu Work Manager  {#about-work-manager}
+## Informationen zu Work Manager {#about-work-manager}
 
 AEM Forms (und frühere Versionen) verwendeten JMS-Warteschlangen, um Vorgänge asynchron auszuführen. AEM Forms verwendet Work Manager, um asynchrone Vorgänge über verwaltete Threads zu planen und auszuführen.
 
@@ -39,9 +39,9 @@ Asynchrone Vorgänge werden wie folgt verarbeitet:
 
 AEM Forms-Administratoren können außerdem Work Manager-Statistiken, z. B. die Anzahl der Arbeitselemente in der Warteschlange und ihren jeweiligen Status, mithilfe von Health Monitor anzeigen. Sie können Health Monitor außerdem verwenden, um Arbeitselemente anzuhalten, fortzusetzen, es erneut zu versuchen oder sie zu löschen. (Siehe [Statistiken mit Bezug auf Work Manager anzeigen](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
 
-## Einschränkungsoptionen für Work Manager konfigurieren  {#configuring-work-manager-throttling-options}
+## Einschränkungsoptionen für Work Manager konfigurieren {#configuring-work-manager-throttling-options}
 
-Sie können die Einschränkungen für Work Manager so konfigurieren, dass Arbeitselemente nur geplant werden, wenn ausreichend Arbeitsspeicherressourcen vorhanden sind. Sie können Einschränkungen konfigurieren, indem Sie die folgenden JVM-Optionen für Ihren Anwendungsserver festlegen.
+Sie können die Einschränkungen für Work Manager so konfigurieren, dass Arbeitselemente nur geplant werden, wenn ausreichend Arbeitsspeicherressourcen vorhanden sind. Sie können Einschränkungen konfigurieren, indem Sie die folgenden JVM-Optionen für Ihren Anwendungs-Server festlegen.
 
 <table>
  <thead>
@@ -81,18 +81,18 @@ Sie können die Einschränkungen für Work Manager so konfigurieren, dass Arbeit
 **Java-Optionen zu JBoss hinzufügen**
 
 1. JBoss-Anwendungsserver beenden.
-1. Öffnen Sie den *[Anwendungsserver-Stammordner]*/bin/run.bat (Windows) oder run.sh (Linux oder UNIX) in einem Editor und fügen Sie die Java-Optionen nach Bedarf im Format `-Dproperty=value` hinzu.
+1. Öffnen Sie den Ordner „*[Anwendungs-Server-Stammordner]*/bin/run.bat“ (Windows) oder „run.sh“ (Linux oder UNIX) in einem Texteditor und fügen Sie die erforderlichen Java-Optionen im Format `-Dproperty=value` hinzu.
 1. Starten Sie den Server neu.
 
 **Java-Optionen zu WebLogic hinzufügen**
 
-1. Starten Sie WebLogic Administration Console, indem Sie in einen Webbrowser `https://[host name]:[port]/console` eingeben.
-1. Geben Sie den von Ihnen erstellten Benutzernamen und das Kennwort für die WebLogic-Serverdomäne ein und klicken Sie unter „Change Center“ auf „Log“ und dann auf „Lock &amp; Edit“.
-1. Klicken Sie unter „Domain Structure“ auf Environment> Servers und anschließend im rechten Bereich auf den Namen des verwalteten Servers.
+1. Starten Sie WebLogic-Administrationskonsole, indem Sie `https://[host name]:[port]/console` in einen Webbrowser eingeben.
+1. Geben Sie den von Ihnen erstellten Benutzernamen und das Kennwort für die WebLogic-Server-Domain ein und klicken Sie unter „Change Center“ auf „Log“ und dann auf „Lock &amp; Edit“.
+1. Klicken Sie unter „Domain Structure“ auf Environment > Servers und anschließend im rechten Bereich auf den Namen des verwalteten Servers.
 1. Klicken Sie im nächsten Bildschirm auf die Registerkarten Configuration > Server Start.
 1. Fügen Sie im Feld „Arguments“ die erforderlichen Informationen am Ende des aktuellen Inhalts hinzu. Zum Deaktivieren von Health Monitor fügen Sie beispielsweise Folgendes hinzu:
 
-   `-Dadobe.healthmonitor.enabled=false` Deaktiviert Health Monitor.
+   `-Dadobe.healthmonitor.enabled=false` deaktiviert den Health Monitor.
 
 1. Klicken Sie auf Save und dann auf Activate Changes.
 1. Starten Sie WebLogic Managed Server neu.
