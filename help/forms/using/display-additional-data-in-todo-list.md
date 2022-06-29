@@ -1,8 +1,8 @@
 ---
 title: Anzeigen zusätzlicher Daten in der ToDo-Liste
-seo-title: Anzeigen zusätzlicher Daten in der ToDo-Liste
+seo-title: Displaying additional data in ToDo list
 description: Gehen Sie wie folgt vor, um durch Anpassen der Anzeige der ToDo-Liste von LiveCycle AEM Forms Workspace weitere Informationen außer den standardmäßig angezeigten Informationen darzustellen.
-seo-description: Gehen Sie wie folgt vor, um durch Anpassen der Anzeige der ToDo-Liste von LiveCycle AEM Forms Workspace weitere Informationen außer den standardmäßig angezeigten Informationen darzustellen.
+seo-description: How-to customize the display of the To-do list of LiveCycle AEM Forms workspace to show more information besides the default.
 uuid: 9467c655-dce2-43ce-8e8f-54542fe81279
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ discoiquuid: fed3b562-bcc2-4fb7-8fd2-35b1ac621e16
 docset: aem65
 exl-id: f8b84f13-02d3-4787-95e1-25fd684e6d3b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 90%
+workflow-type: ht
+source-wordcount: '282'
+ht-degree: 100%
 
 ---
 
@@ -31,12 +31,12 @@ Sie können die verfügbaren Informationen der Datei in `task.json` hinzufügen,
 
 Weitere Informationen über die JSON-Objektbeschreibung finden Sie in [diesem](/help/forms/using/html-workspace-json-object-description.md) Artikel.
 
-## Anzeigen von Informationen über eine Aufgabe  {#displaying-information-on-a-task}
+## Anzeigen von Informationen über eine Aufgabe {#displaying-information-on-a-task}
 
-1. Befolgen Sie die [generischen Schritte zur Anpassung von AEM Forms Workspace](../../forms/using/generic-steps-html-workspace-customization.md).
+1. Befolgen Sie die [generischen Schritte für die Anpassung von AEM Forms Workspace](../../forms/using/generic-steps-html-workspace-customization.md).
 1. Um zusätzliche Information für eine Aufgabe anzuzeigen, müssen die entsprechenden Schlüssel-Wert-Paare innerhalb des Aufgabenblocks von `translation.json` hinzugefügt werden.
 
-   Ändern Sie beispielsweise `/apps/ws/locales/en-US/translation.json` für Englisch:
+   Ändern Sie zum Beispiel `/apps/ws/locales/en-US/translation.json` für Englisch:
 
    ```json
    "task" : {
@@ -121,9 +121,9 @@ Weitere Informationen über die JSON-Objektbeschreibung finden Sie in [diesem](/
    }
    ```
 
-## Definieren von CSS für die neue Eigenschaft  {#defining-css-for-the-new-property}
+## Definieren von CSS für die neue Eigenschaft {#defining-css-for-the-new-property}
 
-1. Sie können einen Stil auf die einer Aufgabe hinzugefügten Informationen (Eigenschaft) anwenden. Dazu müssen Sie Stilinformationen für die neue Eigenschaft hinzufügen, die zu `/apps/ws/css/newStyle.css` hinzugefügt wird.
+1. Sie können einen Stil auf die einer Aufgabe hinzugefügten Informationen (Eigenschaft) anwenden. Dazu müssen Sie Stilinformationen für die neue Eigenschaft hinzufügen, die `/apps/ws/css/newStyle.css` hinzugefügt wurde.
 
    Fügen Sie beispielsweise ein:
 
@@ -135,7 +135,7 @@ Weitere Informationen über die JSON-Objektbeschreibung finden Sie in [diesem](/
    }
    ```
 
-## Hinzufügen eines Eintrags in der HTML-Vorlage  {#adding-entry-in-the-html-template}
+## Hinzufügen eines Eintrags in der HTML-Vorlage {#adding-entry-in-the-html-template}
 
 Schließlich müssen Sie für jede Eigenschaft, die Sie der Aufgabe hinzufügen möchten, einen Eintrag ins Entwicklerpaket aufnehmen. Informationen zum Erstellen eines Eintrags finden Sie unter „Erstellen von AEM Forms Workspace-Code“.
 
@@ -144,9 +144,9 @@ Schließlich müssen Sie für jede Eigenschaft, die Sie der Aufgabe hinzufügen 
    * von: `/libs/ws/js/runtime/templates/`
    * in: `/apps/ws/js/runtime/templates/`
 
-1. Fügen Sie die neuen Informationen zu `/apps/ws/js/runtime/templates/task.html` hinzu.
+1. Fügen Sie `/apps/ws/js/runtime/templates/task.html` die neuen Informationen hinzu.
 
-   Fügen Sie beispielsweise unter `div class="taskProperties"` hinzu:
+   Fügen Sie beispielsweise Folgendes unter `div class="taskProperties"` hinzu:
 
    ```jsp
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>
