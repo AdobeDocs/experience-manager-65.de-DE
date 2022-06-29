@@ -1,8 +1,8 @@
 ---
 title: Strategie für Sicherung und Wiederherstellung in einer Clusterumgebung
-seo-title: Strategie für Sicherung und Wiederherstellung in einer Clusterumgebung
+seo-title: Strategy for backup and restore in a clustered environment
 description: Wenn in Ihrer AEM Forms-Implementierung zusätzliche benutzerdefinierte Daten in einer anderen Datenbank gespeichert werden, müssen Sie eine Strategie zum Sichern dieser Daten implementieren und sicherstellen, dass diese mit den AEM Forms-Daten synchronisiert bleiben.
-seo-description: Wenn in Ihrer AEM Forms-Implementierung zusätzliche benutzerdefinierte Daten in einer anderen Datenbank gespeichert werden, müssen Sie eine Strategie zum Sichern dieser Daten implementieren und sicherstellen, dass diese mit den AEM Forms-Daten synchronisiert bleiben.
+seo-description: If your AEM forms implementation stores additional custom data in a different database, you must implement a strategy to back up this data ensuring that it remains in sync with the AEM forms data.
 uuid: c29b989c-30ed-4a8e-bab8-9b7746291a33
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c332985b-4556-4056-961a-fce2356da88d
 exl-id: 98c96349-f253-475f-b646-352269814a38
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1519'
-ht-degree: 73%
+workflow-type: ht
+source-wordcount: '1476'
+ht-degree: 100%
 
 ---
 
@@ -38,70 +38,70 @@ Sie müssen die folgenden Teile des AEM Forms-Systems sichern, um es bei einem F
 Dieses Thema behandelte die folgenden Vorgehensweisen, um eine AEM Forms-Clusterumgebung zu sichern:
 
 * Offlinesicherung mit Ausfallzeiten
-* Offlinesicherung ohne Ausfallzeiten (Sicherung eines sekundären Knotens, der heruntergefahren wird)
+* Offline-Sicherung ohne Ausfallzeiten (Sichern eines sekundären Knotens, der heruntergefahren wurde)
 * Onlinesicherung ohne Ausfallzeiten aber mit verzögerter Antwort
 * Sichern der Bootstrap-Eigenschaftendatei
 
-### Offlinesicherung mit Ausfallzeiten  {#offline-backup-with-downtime}
+### Offlinesicherung mit Ausfallzeiten {#offline-backup-with-downtime}
 
 1. Deaktivieren Sie den gesamten Cluster und damit zusammenhängende Dienste. (siehe [Starten und Beenden von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. Sichern Sie von jedem Knoten Datenbank, GDS und Connectors. (siehe [Zu sichernde und wiederherzustellende Dateien](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. Führen Sie die folgenden Schritte aus, um das AEM-Repository offline zu sichern:
 
    1. Sichern Sie für jeden Clusterknoten die Datei, die die Clusterknoten-ID enthält.
-   1. Sichern Sie alle Dateien eines jeden sekundären Clusterknotens, einschließlich Unterverzeichnissen.
+   1. Sichern Sie alle Dateien eines beliebigen sekundären Cluster-Knotens, einschließlich der Unterordner.
    1. Sichern Sie Repository/System-ID jedes Clusterknotens separat.
 
-   Ausführliche Anweisungen finden Sie unter[ Sicherung und Wiederherstellung](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
+   Ausführliche Anweisungen finden Sie unter[ Sicherung und Wiederherstellung](https://docs.adobe.com/docs/de/crx/current/administering/backup_and_restore.html).
 
 1. Sichern Sie alle weiteren Daten, z. B. Kundenschriftarten.
 1. Starten Sie den Cluster neu.
 
-### Offlinesicherung ohne Ausfallzeiten  {#offline-backup-with-no-downtime}
+### Offlinesicherung ohne Ausfallzeiten {#offline-backup-with-no-downtime}
 
 1. Starten Sie den kontinuierlichen Sicherungsmodus. (siehe [In den Sicherungsmodus wechseln](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes))
 
    Beachten Sie, dass der kontinuierliche Sicherungsmodus nach einer Wiederherstellung beendet werden muss.
 
-1. Beenden Sie jeden der sekundären Knoten des Clusters in Bezug auf AEM. (siehe [Starten und Beenden von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
+1. Fahren Sie alle sekundären Knoten des Clusters in Bezug auf AEM herunter. (siehe [Starten und Beenden von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. Sichern Sie von jedem Knoten Datenbank, GDS und Connectors. (siehe [Zu sichernde und wiederherzustellende Dateien](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. Führen Sie die folgenden Schritte aus, um das AEM-Repository offline zu sichern:
 
    1. Sichern Sie für jeden Clusterknoten die Datei, die die Clusterknoten-ID enthält.
-   1. Sichern Sie alle Dateien eines jeden sekundären Clusterknotens, einschließlich Unterverzeichnissen.
+   1. Sichern Sie alle Dateien eines beliebigen sekundären Cluster-Knotens, einschließlich der Unterordner.
    1. Sichern Sie Repository/System.id jedes Clusterknotens separat.
 
-   Ausführliche Anweisungen finden Sie unter[ Sicherung und Wiederherstellung](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
+   Ausführliche Anweisungen finden Sie unter[ Sicherung und Wiederherstellung](https://docs.adobe.com/docs/de/crx/current/administering/backup_and_restore.html).
 
 1. Sichern Sie alle weiteren Daten, z. B. Kundenschriftarten.
 1. Starten Sie den Cluster neu.
 
-### Onlinesicherung ohne Ausfallzeiten aber mit verzögerter Antwort  {#online-backup-with-no-downtime-but-delay-in-response}
+### Onlinesicherung ohne Ausfallzeiten aber mit verzögerter Antwort {#online-backup-with-no-downtime-but-delay-in-response}
 
 1. Starten Sie den kontinuierlichen Sicherungsmodus. (siehe [In den Sicherungsmodus wechseln](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes))
 
    Beachten Sie, dass der kontinuierliche Sicherungsmodus nach einer Wiederherstellung beendet werden muss.
 
-1. Beenden Sie jeden der sekundären Knoten des Clusters in Bezug auf AEM. (siehe [Starten und Beenden von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
+1. Fahren Sie alle sekundären Knoten des Clusters in Bezug auf AEM herunter. (siehe [Starten und Beenden von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. Sichern Sie von jedem Knoten Datenbank, GDS und Connectors. (siehe [Zu sichernde und wiederherzustellende Dateien](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. Führen Sie die folgenden Schritte aus, um das AEM-Repository online zu sichern:
 
    1. Sichern Sie für jeden Clusterknoten die Datei, die cluster_node.id enthält.
    1. Sichern Sie Repository/System.id jedes Clusterknotens separat.
-   1. Führen Sie auf einem sekundären Knoten eine Online-Sicherung des Repositorys durch, um detaillierte Schritte zu erhalten. Siehe Online-Sicherung.
+   1. Führen Sie auf einem beliebigen Sekundärknoten ein Online-Backup des Repositorys durch. Detaillierte Schritte siehe „Online-Backup“.
 
 1. Sichern Sie alle weiteren Daten, z. B. Kundenschriftarten.
 1. Starten Sie den Cluster neu.
 
-### Sichern der Bootstrap-Eigenschaftendatei  {#back-up-the-bootstrap-properties-file}
+### Sichern der Bootstrap-Eigenschaftendatei {#back-up-the-bootstrap-properties-file}
 
-Wenn wir einen AEM-Cluster erstellen, wird eine Eigenschaftendatei für alle sekundären Knoten auf dem Anwendungsserver erstellt. Es wird empfohlen, die Bootstrap-Eigenschaftendatei zu sichern. Sie finden die Datei im folgenden Verzeichnis auf Ihrem Anwendungsserver:
+Wenn Sie einen AEM-Cluster erstellen, wird auf dem Anwendungsserver eine Eigenschaftsdatei für alle Sekundärknoten erstellt. Es wird empfohlen, die Bootstrap-Eigenschaftendatei zu sichern. Sie finden die Datei im folgenden Verzeichnis auf Ihrem Anwendungsserver:
 
 * JBoss: im BIN-Ordner
-* WebLogic: im Domänenordner
+* WebLogic: im Domain-Ordner
 * WebSphere: im Profilordner
 
-Sie müssen die Datei für das Disaster Recovery-Szenario AEM sekundären Knotens sichern und sie an dem angegebenen Speicherort auf dem Anwendungsserver ersetzen, wenn sie wiederhergestellt wird.
+Sie müssen die Datei für das Notfallwiederherstellungsszenario des AEM-Sekundärknotens sichern und sie an dem angegebenen Speicherort auf dem Anwendungsserver ersetzen, wenn sie wiederhergestellt wird.
 
 ## Wiederherstellung in einer Clusterumgebung {#recovery-in-a-clustered-environment}
 
@@ -111,13 +111,13 @@ Für die Wiederherstellung eines einzelnen Knotens, müssen Sie nur den Knoten a
 
 Falls der gesamte Cluster aufgrund eines Fehler, wie dem Ausfall der Datenbank, ausfällt, müssen Sie die folgenden Schritte ausführen. Die Wiederherstellung hängt von der verwendeten Sicherungsmethode ab.
 
-### Wiederherstellung eines einzelnen Knotens  {#restoring-a-single-node}
+### Wiederherstellung eines einzelnen Knotens {#restoring-a-single-node}
 
 1. Schalten Sie den beschädigten Knoten ab.
 
    >[!NOTE]
    >
-   >Wenn der beschädigte Knoten ein AEM primären Knoten ist, fahren Sie den gesamten Clusterknoten herunter.
+   >Wenn der beschädigte Knoten ein AEM-Primärknoten ist, fahren Sie den gesamten Clusterknoten herunter.
 
 1. Erstellen Sie bei Bedarf das physische System von einem Systemabbild neu.
 1. Wenden Sie Patches oder Aktualisierungen für AEM Forms an, die seit der Erstellung des Abbilds angewendet wurden. Diese Informationen wurden im Sicherungsverfahren erfasst. AEM Forms muss entsprechend dem Patchlevel zum Zeitpunkt der Systemsicherung wiederhergestellt werden.
@@ -141,9 +141,9 @@ Falls der gesamte Cluster aufgrund eines Fehler, wie dem Ausfall der Datenbank, 
 >
 >Beachten Sie folgende Punkte:
 
-* Wenn der fehlerhafte Knoten ein AEM primären Knoten war, kopieren Sie den gesamten Inhalt aus dem sekundären Repository-Ordner (crx-repository\crx.0000, wobei 0000 beliebige Ziffern sein können) in den Ordner crx-repository\ repository und löschen Sie den sekundären Repository-Ordner.
-* Bevor Sie einen Clusterknoten neu starten, stellen Sie sicher, dass Sie das Repository /clustered.txt vom primären Knoten löschen.
-* Stellen Sie sicher, dass der primäre Knoten zuerst gestartet wird, und starten Sie nach dem vollständigen Start andere Knoten.
+* Wenn der fehlgeschlagene Knoten ein AEM-Primärknoten war, kopieren Sie den gesamten Inhalt des sekundären Repository-Ordners („crx-repository\crx.0000“, wobei „0000“ eine beliebige Zahl sein kann) in den Repository-Ordner „crx-repository\“ und löschen Sie den sekundären Repository-Ordner.
+* Bevor Sie einen Clusterknoten neu starten, stellen Sie sicher, dass Sie das Repository „/clustered.txt“ auf dem Primärknoten löschen.
+* Stellen Sie sicher, dass der Primärknoten zuerst gestartet wird, und starten Sie die anderen Knoten, sobald er vollständig hochgefahren ist.
 
 ### Wiederherstellen des gesamten Clusters {#restoring-the-entire-cluster}
 
@@ -164,28 +164,28 @@ Falls der gesamte Cluster aufgrund eines Fehler, wie dem Ausfall der Datenbank, 
    1. Löschen Sie die Datei „clusterNode/revision.log“ auf allen Clusterknoten.
    1. Entfernen Sie das „.lock“ auf allen Clusterknoten, wenn vorhanden.
    1. Löschen Sie „repository/system.id“ auf allen Clusterknoten, wenn vorhanden.
-   1. Löschen Sie die Dateien &amp;ast;&amp;ast;/listener.properties auf allen Clusterknoten, falls vorhanden.
+   1. Löschen Sie die Dateien „*/listener.properties“ auf allen Cluster-Knoten, falls vorhanden.
    1. Stellen Sie „repository/cluster_node.id“ für einzelne Clusterknoten wieder her.
 
 >[!NOTE]
 >
 >Beachten Sie folgende Punkte:
 
-* Wenn der fehlerhafte Knoten ein AEM primären Knoten war, kopieren Sie den gesamten Inhalt aus dem sekundären Repository-Ordner (es sieht aus wie crx-repository\crx.0000, wobei 0000 beliebige Ziffern sein kann) in den Ordner crx-repository\ repository .
-* Bevor Sie einen Clusterknoten neu starten, stellen Sie sicher, dass Sie das Repository /clustered.txt vom primären Knoten löschen.
-* Stellen Sie sicher, dass der primäre Knoten zuerst gestartet wird, und starten Sie nach dem vollständigen Start andere Knoten.
+* Wenn der ausgefallene Knoten ein AEM-Primärknoten war, kopieren Sie den gesamten Inhalt aus dem sekundären Repository-Ordner (er hat die Form „crx-repository\crx.0000“, wobei „0000“ beliebigen Ziffern entsprechen kann) in den Repository-Ordner „crx-repository\“.
+* Bevor Sie einen Cluster-Knoten neu starten, achten Sie darauf, dass Sie das Repository „/clustered.txt“ vom primären Knoten löschen.
+* Stellen Sie sicher, dass der primäre Knoten zuerst gestartet wird, und starten Sie die anderen Knoten erst, wenn er vollständig hochgefahren ist.
 
 ## Sichern und Wiederherstellen des Veröffentlichungsknotens der Correspondence Management Solution {#back-up-and-restore-correspondence-management-solution-publish-node}
 
-Der Veröffentlichungsknoten weist in einer Clusterumgebung keine primäre sekundäre Beziehung auf. Sie können einen beliebigen Veröffentlichungsknoten sichern, indem Sie diese Anweisungen befolgen: [Sicherung und Wiederherstellung](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
+Der Veröffentlichungsknoten hat in einer Cluster-Umgebung keine Primär-/Sekundärbeziehung.. Sie können einen beliebigen Veröffentlichungsknoten sichern, indem Sie diese Anweisungen befolgen: [Sicherung und Wiederherstellung](https://docs.adobe.com/docs/de/crx/current/administering/backup_and_restore.html).
 
-### Wiederherstellen eines einzelnen Veröffentlichungsknotens  {#recover-a-single-publisher-node}
+### Wiederherstellen eines einzelnen Veröffentlichungsknotens {#recover-a-single-publisher-node}
 
 1. Beenden Sie den Knoten, der wiederhergestellt werden muss, und vermeiden Sie jede Veröffentlichungsaktivität, bis der Knoten wieder bereit ist.
-1. Stellen Sie den Veröffentlichungsknoten mit [Wiederherstellen des Backups] (https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring the Backup) wieder her.
+1. Stellen Sie den Veröffentlichungsknoten mithilfe von [Wiederherstellen des Backups](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring the Backup) wieder her.
 
 ### Wiederherstellen eines Clusters {#recover-a-cluster}
 
 1. Beenden Sie den Cluster.
-1. Stellen Sie den Veröffentlichungsknoten mit [Wiederherstellen des Backups] (https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring the Backup) wieder her.
-1. Starten Sie den primären Knoten, gefolgt vom sekundären Knoten des Autoren-Clusters.
+1. Stellen Sie den Veröffentlichungsknoten mithilfe von [Wiederherstellen des Backups](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring the Backup) wieder her.
+1. Starten Sie den primären Knoten und anschließend den sekundären Knoten des Autoren-Clusters.
