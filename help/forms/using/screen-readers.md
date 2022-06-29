@@ -1,8 +1,8 @@
 ---
 title: Bildschirmlesehilfen für HTML5-Formulare
-seo-title: Bildschirmlesehilfen für HTML5-Formulare
+seo-title: Screen readers for HTML5 forms
 description: Listet die in Verbindung mit HTML5-Formularen unterstützten Bildschirmlesehilfen auf.
-seo-description: Listet die in Verbindung mit HTML5-Formularen unterstützten Bildschirmlesehilfen auf.
+seo-description: Lists the screen readers supported with HTML5 forms.
 uuid: 035354e2-957f-4eb6-bc16-4ca96ec7ac74
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,10 +10,10 @@ topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 feature: Mobile Forms
 exl-id: 07d20c2f-7d13-48ac-8d58-b367eb194558
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 84%
+source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+workflow-type: ht
+source-wordcount: '335'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ HTML5-Formulare verwenden standardmäßige HTML-Konstrukte, sodass für diese Fo
 
 ## Barrierefreiheitsstandards {#accessibility-standards}
 
-HTML5-Formulare erfüllen Abschnitt 508 für Barrierefreiheit mit bekannten Ausnahmen. Ausführliche Informationen finden Sie in [VPAT für HTML5-Forms](https://www.adobe.com/mena_en/accessibility/compliance/livecycle-mobile-forms-es4-section-508-vpat.html).
+HTML5-Formulare erfüllen Abschnitt 508 für Barrierefreiheit mit bekannten Ausnahmen. Ausführliche Informationen finden Sie in [VPAT für HTML5-Forms](http://wwwimages.adobe.com/content/dam/acom/en/accessibility/compliance/pdfs/livecycle-mobile-forms-es4-section-508-vpat.pdf).
 
 ## Zertifizierte Bildschirmlesehilfen für HTML5-Formulare {#certified-screen-readers-for-html-forms}
 
@@ -38,11 +38,11 @@ In HTML5-Formularen funktionieren alle standardmäßigen Tasteneingaben und Tast
 
 ### VoiceOver {#voiceover}
 
-HTML5-Formulare unterstützen alle Standard-Tasteneingaben und Gesten für VoiceOver. Weitere Informationen zum Einrichten und Verwenden von VoiceOver finden Sie unter [https://www.apple.com/accessibility/voiceover/](https://www.apple.com/accessibility/voiceover/).
+HTML5-Formulare unterstützen alle Standard-Tasteneingaben und Gesten für VoiceOver. Weitere Informationen zum Einrichten und Verwenden von VoiceOver finden Sie unter [https://www.apple.com/accessibility/voiceover/](https://www.apple.com/accessibility/voiceover/).
 
 ## Bekannte Probleme {#known-issues}
 
-* **(Nur Internet Explorer 9)** In HTML5-Formularen werden die Seiten bei Bedarf geladen (dynamisch). Das Laden von Seiten bei Bedarf verursacht Probleme mit Bildschirmlesehilfen. Wenn der Fokus der Bildschirmlesehilfe am letzten Seitenfeld angelangt ist und der Benutzer die Tabulator-Taste drückt, statt den Fokus auf das erste Feld der nächsten Seite zu legen, kehrt die Bildschirmlesehilfe auf das erste Feld der ersten Seite des Formulars zurück.
+* **(Ausschließlich Internet Explorer 9)** In HTML5-Formularen werden die Seiten bei Bedarf geladen (dynamisch). Das Laden von Seiten bei Bedarf verursacht Probleme mit Bildschirmlesehilfen. Wenn der Fokus der Bildschirmlesehilfe am letzten Seitenfeld angelangt ist und der Benutzer die Tabulator-Taste drückt, statt den Fokus auf das erste Feld der nächsten Seite zu legen, kehrt die Bildschirmlesehilfe auf das erste Feld der ersten Seite des Formulars zurück.
 * **(Ausschließlich Internet Explorer 9)** Das Datumsauswahl-Steuerelement in HTML5-Formularen lässt sich nicht vollständig über die Tastatur steuern. Wenn Sie im Datumsauswahl -Steuerelement die Bild-Auf/Bild-Ab-Tasten mehrmals hintereinander drücken, wird das Datumsauswahl-Steuerelement geschlossen und der Fokus wird auf das nächste/letzte Feld gerichtet.
 
 * VoiceOver kann Pfeiltasten auf dem Datumswidget auf iPad Safari nicht erkennen.
