@@ -1,8 +1,8 @@
 ---
-title: Schnellstart für Java-API in User Manager (SOAP)
-seo-title: Schnellstart für Java-API in User Manager (SOAP)
-description: Verwenden Sie User Manager API, um Benutzer hinzuzufügen, Benutzer zu löschen, Gruppen zu erstellen, Benutzer und Gruppen zu verwalten, Rollen und Berechtigungen zu verwalten, Benutzer programmgesteuert zu synchronisieren und die Voreinstellungsknoten programmgesteuert zu verwalten.
-seo-description: Verwenden Sie User Manager API, um Benutzer hinzuzufügen, Benutzer zu löschen, Gruppen zu erstellen, Benutzer und Gruppen zu verwalten, Rollen und Berechtigungen zu verwalten, Benutzer programmgesteuert zu synchronisieren und die Voreinstellungsknoten programmgesteuert zu verwalten.
+title: Java API-Schnellstart (SOAP) für User Manager
+seo-title: User Manager Java API Quick Start(SOAP)
+description: Verwenden Sie User Manager-API, um Benutzer hinzuzufügen, Benutzer zu löschen, Gruppen zu erstellen, Benutzer und Gruppen zu verwalten, Rollen und Berechtigungen zu verwalten, Benutzer programmgesteuert zu synchronisieren und die Voreinstellungsknoten programmgesteuert zu verwalten.
+seo-description: Use User Manager API to add users, delete users, create groups, manage users and groups, manage roles and permissions, synchronize users programmatically, and manage the Preferences Nodes programmatically.
 uuid: 0a2aa4ab-9329-485f-a30e-47bb471ce1b5
 contentOwner: admin
 content-type: reference
@@ -12,39 +12,39 @@ discoiquuid: e0c20fd2-b084-4f61-936c-5282826a8d3d
 role: Developer
 exl-id: 7f622371-0f0f-4789-b2e7-e4b536a21c4d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '494'
+ht-degree: 100%
 
 ---
 
-# User Manager Java API-Schnellstart (SOAP) {#user-manager-java-api-quick-start-soap}
+# Schnellstart für User Manager Java-API (SOAP) {#user-manager-java-api-quick-start-soap}
 
-Java API Quick Start (SOAP) ist für die User Manager-API verfügbar.
+Java API-Schnellstart (SOAP) ist für die User Manager-API verfügbar.
 
-[Schnellstart (SOAP-Modus): Benutzer mithilfe der Java-API hinzufügen](user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
+[Schnellstart (SOAP-Modus): Hinzufügen von Benutzern mithilfe der Java-API](user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
 
 [Schnellstart (SOAP-Modus): Löschen von Benutzern mit der Java-API](user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Erstellen von Gruppen mithilfe der Java-API](user-manager-java-api-quick.md#quick-start-soap-mode-creating-groups-using-the-java-api)
+[Schnellstart (SOAP-Modus): Erstellen von Gruppen mit der Java-API](user-manager-java-api-quick.md#quick-start-soap-mode-creating-groups-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Verwalten von Benutzern und Gruppen mithilfe der Java-API](user-manager-java-api-quick.md#quick-start-soap-mode-managing-users-and-groups-using-the-java-api)
+[Schnellstart (SOAP-Modus): Verwalten von Benutzern und Gruppen mit der Java-API](user-manager-java-api-quick.md#quick-start-soap-mode-managing-users-and-groups-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Verwalten von Rollen und Berechtigungen mithilfe der Java-API](user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api)
+[Schnellstart (SOAP-Modus): Verwalten von Rollen und Berechtigungen mit der Java-API](user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api)
 
 [Schnellstart (SOAP-Modus): Programmgesteuerte Synchronisation von Benutzern mit der Java-API](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Programmgesteuerte Verwaltung der Voreinstellungsknoten mithilfe der Java-API](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api)
+[Schnellstart (SOAP-Modus): Programmgesteuerte Verwaltung der Voreinstellungsknoten mit der Java-API](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden und der Verbindungsmodus sollte auf SOAP festgelegt werden.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API durchgeführt werden und der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
 >[!NOTE]
 >
->Schnellstart unter Programmieren mit AEM Formularen basiert auf dem Dokument, wenn Sie ein anderes Betriebssystem wie Unix verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Der Schnellstart unter „Programmieren mit AEM Forms“ basiert auf diesem Dokument. Wenn Sie ein anderes Betriebssystem wie beispielsweise UNIX verwenden, ersetzen Sie die Windows-spezifischen Pfade durch Pfade, die von dem jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Schnellstart (SOAP-Modus): Hinzufügen von Benutzern mit der Java-API {#quick-start-soap-mode-adding-users-using-the-java-api}
+## Schnellstart (SOAP-Modus): Hinzufügen von Benutzern mithilfe der Java-API {#quick-start-soap-mode-adding-users-using-the-java-api}
 
-Im folgenden Codebeispiel wird ein Benutzer mit dem Namen Wendy Blue zu AEM Forms hinzugefügt. (Siehe [Benutzer hinzufügen](/help/forms/developing/users.md#adding-users).)
+Das folgende Codebeispiel fügt einen Benutzer namens „Wendy Blue“ zu AEM Forms hinzu. (Siehe [Benutzer hinzufügen](/help/forms/developing/users.md#adding-users).)
 
 ```java
  /*
@@ -162,7 +162,7 @@ Im folgenden Codebeispiel wird ein Benutzer mit dem Namen Wendy Blue zu AEM Form
 
 ## Schnellstart (SOAP-Modus): Löschen von Benutzern mit der Java-API {#quick-start-soap-mode-deleting-users-using-the-java-api}
 
-Im folgenden Codebeispiel wird ein Benutzer mit dem Namen Wendy Blue aus AEM Forms gelöscht. (Siehe [Löschen von Benutzern](/help/forms/developing/users.md#deleting-users).)
+Das folgende Codebeispiel löscht einen Benutzer namens „Wendy Blue“ aus AEM Forms. (Siehe [Löschen von Benutzern](/help/forms/developing/users.md#deleting-users).)
 
 ```java
  /*
@@ -256,9 +256,9 @@ Im folgenden Codebeispiel wird ein Benutzer mit dem Namen Wendy Blue aus AEM For
  
 ```
 
-## Schnellstart (SOAP-Modus): Verwalten von Benutzern und Gruppen mithilfe der Java-API {#quick-start-soap-mode-managing-users-and-groups-using-the-java-api}
+## Schnellstart (SOAP-Modus): Verwalten von Benutzern und Gruppen mit der Java-API {#quick-start-soap-mode-managing-users-and-groups-using-the-java-api}
 
-Im folgenden Codebeispiel wird ein lokaler Benutzer und die lokale Gruppe gesucht, zu der der Benutzer gehört. (Siehe [Verwalten von Benutzern und Gruppen](/help/forms/developing/users.md#managing-users-and-groups).)
+Das folgende Codebeispiel sucht einen lokalen Benutzer und die lokale Gruppe, zu der der Benutzer gehört. (Siehe [Verwalten von Benutzern und Gruppen](/help/forms/developing/users.md#managing-users-and-groups).)
 
 ```java
  /*
@@ -380,9 +380,9 @@ Im folgenden Codebeispiel wird ein lokaler Benutzer und die lokale Gruppe gesuch
  
 ```
 
-## Schnellstart (SOAP-Modus): Verwalten von Rollen und Berechtigungen mithilfe der Java-API {#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api}
+## Schnellstart (SOAP-Modus): Verwalten von Rollen und Berechtigungen mit der Java-API {#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api}
 
-Im folgenden Codebeispiel wird die Rolle &quot;Dienstbenutzer&quot;einem Prinzipal zugewiesen, die Rollen des Prinzipals gedruckt und anschließend aus dem Prinzipal entfernt. Für diesen Schnellstart werden zwei Dienste aufgerufen: den DirectoryManager-Dienst und den AuthorizationManager-Dienst.(Siehe [Verwalten von Rollen und Berechtigungen](/help/forms/developing/users.md#managing-roles-and-permissions).)
+Das folgende Codebeispiel weist einem Prinzipal die Rolle „Services User“ zu, gibt die Rollen aus, die der Prinzipal besitzt, und entfernt anschließend die Rolle aus dem Prinzipal. Für diesen Schnellstart werden zwei Dienste aufgerufen: den DirectoryManager-Dienst und den AuthorizationManager-Dienst.(Siehe [Verwalten von Rollen und Berechtigungen](/help/forms/developing/users.md#managing-roles-and-permissions).)
 
 ```java
  /*
@@ -525,7 +525,7 @@ Im folgenden Codebeispiel wird die Rolle &quot;Dienstbenutzer&quot;einem Prinzip
 
 ## Schnellstart (SOAP-Modus): Programmgesteuerte Synchronisation von Benutzern mit der Java-API {#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api}
 
-Im folgenden Java-Codebeispiel werden Benutzer mithilfe der User Management-APIs synchronisiert. (Siehe [Programmiertes Synchronisieren von Benutzern](/help/forms/developing/users.md#programmatically-synchronizing-users).)
+Das folgende Java-Codebeispiel synchronisiert Benutzer mithilfe der User Management-APIs. (Siehe [Programmgesteuerte Synchronisierung von Benutzern](/help/forms/developing/users.md#programmatically-synchronizing-users).)
 
 ```java
  /*
@@ -632,9 +632,9 @@ Im folgenden Java-Codebeispiel werden Benutzer mithilfe der User Management-APIs
  
 ```
 
-## Schnellstart (SOAP-Modus): Hinzufügen von Benutzern mit der Java-API {#quick_start_soap_mode_adding_users_using_the_java_api-1}
+## Schnellstart (SOAP-Modus): Hinzufügen von Benutzern mithilfe der Java-API {#quick_start_soap_mode_adding_users_using_the_java_api-1}
 
-Im folgenden Codebeispiel wird ein Benutzer mit dem Namen Wendy Blue zu AEM Forms hinzugefügt. (Siehe [Benutzer hinzufügen](/help/forms/developing/users.md#adding-users).)
+Das folgende Codebeispiel fügt einen Benutzer namens „Wendy Blue“ zu AEM Forms hinzu. (Siehe [Benutzer hinzufügen](/help/forms/developing/users.md#adding-users).)
 
 ```java
  /*
@@ -750,9 +750,9 @@ Im folgenden Codebeispiel wird ein Benutzer mit dem Namen Wendy Blue zu AEM Form
  
 ```
 
-## Schnellstart (SOAP-Modus): Erstellen von Gruppen mithilfe der Java-API {#quick-start-soap-mode-creating-groups-using-the-java-api}
+## Schnellstart (SOAP-Modus): Erstellen von Gruppen mit der Java-API {#quick-start-soap-mode-creating-groups-using-the-java-api}
 
-Im folgenden Codebeispiel wird eine Gruppe mit dem Namen AdobeGroup zu AEM Forms erstellt. (Siehe [Gruppen erstellen](/help/forms/developing/users.md#creating-groups).)
+Das folgende Codebeispiel erstellt eine Gruppe namens „AdobeGroup“ für AEM Forms. (Siehe [Gruppen erstellen](/help/forms/developing/users.md#creating-groups).)
 
 ```java
  /*
@@ -904,7 +904,7 @@ Im folgenden Codebeispiel wird eine Gruppe mit dem Namen AdobeGroup zu AEM Forms
 
 ## Schnellstart (SOAP-Modus) Verwalten von Voreinstellungsknoten {#quick-start-soap-mode-managing-preferences-nodes}
 
-Die folgenden Java-Codemodelle verwalten Voreinstellungsknoten mithilfe der User Management-APIs. ( Siehe [Programmgesteuerte Verwaltung der Voreinstellungsknoten](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
+Der folgende Java-Code modelliert die Verwaltung von Voreinstellungsknoten mithilfe der User Management-APIs. (Siehe [Programmgesteuertes Verwalten der Voreinstellungsknoten](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
 
 ```java
 /*
@@ -1005,9 +1005,9 @@ public class ManagePreferences {
 }
 ```
 
-## Schnellstart (SOAP-Modus): Programmgesteuerte Verwaltung der Voreinstellungsknoten mithilfe der Java-API {#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api}
+## Schnellstart (SOAP-Modus): Programmgesteuerte Verwaltung der Voreinstellungsknoten mit der Java-API {#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api}
 
-Die folgenden Java-Codemodelle, die Voreinstellungsknoten mithilfe der User Management-APIs verwalten ( Siehe [Programmgesteuerte Verwaltung der Voreinstellungsknoten](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
+Der folgende Java-Code modelliert die Verwaltung von Voreinstellungsknoten mithilfe der User Management-APIs. (Siehe [Programmgesteuertes Verwalten der Voreinstellungsknoten](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
 
 ```java
 /*
