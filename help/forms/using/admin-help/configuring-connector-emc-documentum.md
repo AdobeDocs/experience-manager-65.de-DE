@@ -1,8 +1,8 @@
 ---
 title: Connector für EMC Documentum konfigurieren
-seo-title: Connector für EMC Documentum konfigurieren
+seo-title: Configuring Connector for EMC Documentum
 description: Erfahren Sie, wie Sie den Connector für EMC Documentum, um die Kommunikation zwischen AEM Forms und EMC Documentum zu aktivieren.
-seo-description: Erfahren Sie, wie Sie den Connector für EMC Documentum, um die Kommunikation zwischen AEM Forms und EMC Documentum zu aktivieren.
+seo-description: Learn how to configure the Connector for EMC Documentum to enable communication between AEM forms and EMC Documentum.
 uuid: fc96900a-ec8a-4efd-ad8e-25e9967e649b
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e62370a7-9d9e-43a3-8014-8e53800c870d
 exl-id: a31a496f-87b9-43c0-a98c-5f6ca5d11690
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 93%
+workflow-type: ht
+source-wordcount: '1024'
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ In diesem Abschnitt werden die Aufgaben für Connector für EMC Documentum, den 
 >
 >Wenn Sie alle Einstellungen gleichzeitig konfigurieren, müssen Sie nur einmal auf „Speichern“ klicken.
 
-### Anwendungsserver konfigurieren  {#configure-the-server}
+### Anwendungsserver konfigurieren {#configure-the-server}
 
 Sie müssen die Serverinformationen des Verbindungsbrokers konfigurieren. Diese Informationen werden zum Verbinden mit den Documentum-Inhalts-Repositorys und zum Starten von Connector für EMC Documentum benötigt.
 
@@ -43,7 +43,7 @@ Sie müssen die Serverinformationen des Verbindungsbrokers konfigurieren. Diese 
 1. Geben Sie im Bereich mit den Documentum-Konfigurationsinformationen den Hostnamen bzw. die IP-Adresse und die Anschlussnummer des Verbindungsbrokers ein. Die Anschlussnummer muss eine positive Ganzzahl sein (beispielsweise 1489).
 1. Klicken Sie auf Speichern.
 
-### Prinzipalanmeldeinformationen konfigurieren  {#configure-principal-credentials}
+### Prinzipalanmeldeinformationen konfigurieren {#configure-principal-credentials}
 
 Beim Konfigurieren der Prinzipalanmeldeinformationen hängt der anzugebende Repository-Name davon ab, ob Sie bei der Anmeldung einen expliziten Repository-Namen angegeben haben.
 
@@ -57,29 +57,29 @@ Wenn Sie einen falschen Benutzernamen oder ein falsches Kennwort eingeben, erhal
 1. Wurde bei der Anmeldung kein expliziter Repository-Name angegeben, geben Sie den Repository-Namen ein, dem die Anmeldeinformationen zugeordnet sind.
 1. Klicken Sie auf Speichern.
 
-### Repository Service Provider ändern  {#change-the-repository-service-provider}
+### Repository Service Provider ändern {#change-the-repository-service-provider}
 
 Sie können festlegen, welcher Repository Service Provider mit Documentum verwendet werden soll. Aufrufe des Repository-Dienstes werden an den konfigurierten Provider delegiert. Die folgenden Optionen sind verfügbar:
 
-**Aktueller Repository Service Provider-Name:** Der Name des aktuellen Repository Service Providers
+**Name des aktuellen Repository Service Providers:** Der Name des aktuellen Repository Service Providers
 
-**ECM Documentum Repository Provider:** Legt den Documentum Repository Provider als Provider für das Repository fest. Diese Option ist veraltet.
+**ECM Documentum Repository Provider:** Legt den Documentum Repository Provider als Provider des Repositorys fest. Diese Option ist veraltet.
 
-**Repository-Anbieter:** Legt den nativen Repository-Provider als Provider für das Repository fest.
+**Repository Provider:** Legt den nativen Repository-Provider als Provider des Repositorys fest.
 
 >[!NOTE]
 >
->Um einen Repository Service Provider auszuwählen, der nicht aufgeführt ist, konfigurieren Sie RepositoryService unter &quot;Anwendungen und Dienste&quot;> &quot;Dienstverwaltung&quot;. <!-- Fix broken link (See Managing Services) -->.
+>Um einen Repository Service Provider auszuwählen, der nicht aufgeführt ist, konfigurieren Sie „RepositoryService“ in „Anwendungen und Dienste“ > „Service-Management“. <!-- Fix broken link (See Managing Services) -->
 
 1. Wählen Sie in Administration Console „Dienste“ > „Connector für EMC Documentum“ > „Konfigurationseinstellungen“.
 1. Wählen Sie im Bereich „Repository Service Provider-Informationen“ einen anderen Repository Service Provider aus.
 1. Klicken Sie auf Speichern.
 
-## Repository-Anmeldeinformationen konfigurieren  {#configuring-repository-credentials}
+## Repository-Anmeldeinformationen konfigurieren {#configuring-repository-credentials}
 
 Die Documentum-Anmeldeinformationen werden im AEM Forms-Systemkontext verwendet. Repository-Anmeldeinformationen gelten für bestimmte Repositorys in Documentum. Sie können Anmeldeinformationen für beliebig viele Repositorys angeben. Sie dürfen jedoch nur einen Satz Anmeldeinformationen pro Repository angeben.
 
-### Repository-Anmeldeinformationen hinzufügen  {#add-a-repository-credential}
+### Repository-Anmeldeinformationen hinzufügen {#add-a-repository-credential}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Connector für EMC Documentum“ > „Einstellungen für Repository-Anmeldeinformationen“.
 1. Klicken Sie auf Hinzufügen. Die Seite „Documentum-Systemanmeldeinformationen“ wird eingeblendet.
@@ -89,12 +89,12 @@ Die Documentum-Anmeldeinformationen werden im AEM Forms-Systemkontext verwendet.
 
 Wenn der Content Repository Connector für EMC Documentum-Dienst und/oder der Repository-Dienst für EMC Documentum ausgeführt werden, werden die Anmeldeinformationen im Abgleich mit dem angegebenen Repository überprüft, bevor sie in der Datenbank gespeichert werden. Sind die Anmeldeinformationen ungültig oder vorhanden, wird eine Fehlermeldung angezeigt.
 
-### Repository-Berechtigung entfernen  {#remove-a-repository-credential}
+### Repository-Berechtigung entfernen {#remove-a-repository-credential}
 
 1. Wählen Sie in Administration Console „Dienste“ > „Connector für EMC Documentum“ > „Konfigurationseinstellungen“.
 1. Aktivieren Sie das Kontrollkästchen neben dem Repository, von dem Berechtigung entfernt werden sollen, und klicken Sie auf „Entfernen“. Die Anmeldeinformationen für das ausgewählte Repository werden aus der Datenbank entfernt.
 
-### Benutzernamen und Kennwort für die Repository-Anmeldeinformationen ändern  {#change-the-user-name-and-password-for-a-repository-credential}
+### Benutzernamen und Kennwort für die Repository-Anmeldeinformationen ändern {#change-the-user-name-and-password-for-a-repository-credential}
 
 1. Wählen Sie in Administration Console „Dienste“ > „Connector für EMC Documentum“ > „Konfigurationseinstellungen“.
 1. Klicken Sie auf den Namen des Repositorys, für das Anmeldeinformationen bearbeitet werden sollen.
@@ -103,7 +103,7 @@ Wenn der Content Repository Connector für EMC Documentum-Dienst und/oder der 
 
 Wenn der Content Repository Connector für EMC Documentum-Dienst und/oder der Repository-Dienst für EMC Documentum ausgeführt werden, werden die Anmeldeinformationen im Abgleich mit dem angegebenen Repository überprüft, bevor sie in der Datenbank gespeichert werden. Sind die Anmeldeinformationen ungültig oder vorhanden, wird eine Fehlermeldung angezeigt.
 
-## Anforderung für die Freigabe von Workspace-Aufgabenwarteschlangen aktivieren  {#enable-the-request-for-sharing-of-workspace-task-queues}
+## Anforderung für die Freigabe von Workspace-Aufgabenwarteschlangen aktivieren {#enable-the-request-for-sharing-of-workspace-task-queues}
 
 In Workspace sind einige manuelle Schritte erforderlich, um sicherzustellen, dass die Funktion für die Anforderung zur Freigabe von Aufgabenwarteschlangen in EMC Documentum ordnungsgemäß funktioniert.
 
