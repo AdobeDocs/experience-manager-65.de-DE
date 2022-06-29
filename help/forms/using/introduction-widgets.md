@@ -1,8 +1,8 @@
 ---
 title: Erscheinungsbild-Framework für adaptive und HTML5-Formulare
-seo-title: Erscheinungsbild-Framework für adaptive und HTML5-Formulare
+seo-title: Appearance framework for adaptive and HTML5 forms
 description: Mobile Forms rendert Formularvorlagen als HTML5-Formulare. Diese Formulare verwenden jQuery, Backbone.js- und Underscore.js-Dateien für das Erscheinungsbild und um Skripten zu aktivieren.
-seo-description: Mobile Forms rendert Formularvorlagen als HTML5-Formulare. Diese Formulare verwenden jQuery, Backbone.js- und Underscore.js-Dateien für das Erscheinungsbild und um Skripten zu aktivieren.
+seo-description: Mobile Forms render Form Templates as HTML5 forms. These forms use jQuery, Backbone.js and Underscore.js files for the appearance and to enable scripting.
 uuid: 183b8d71-44fc-47bf-8cb2-1cf920ffd23a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 exl-id: 3458471a-9815-463e-8044-68631073863c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1200'
-ht-degree: 93%
+workflow-type: ht
+source-wordcount: '1170'
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Das Erscheinungsbild-Framework stützt sich bei der Erfassung von Benutzerintera
 * Das Erscheinungsbild löst als Teil des Kontrakts eine Reihe von Ereignissen wie „enter“, „exit“ und so weiter aus.
 * Das Erscheinungsbild muss einen Funktionssatz implementieren. Einige der Funktionen sind allgemein, während andere spezifisch für die Feldtypfunktion sind.
 
-## Allgemeine Optionen  {#common-options}
+## Allgemeine Optionen {#common-options}
 
 Im Folgenden die globalen Optionen. Diese Optionen sind für jedes Feld verfügbar.
 
@@ -52,7 +52,7 @@ Im Folgenden die globalen Optionen. Diese Optionen sind für jedes Feld verfügb
   </tr>
   <tr>
    <td>screenReaderText</td>
-   <td>Bildschirmlesehilfen verwenden diesen Wert, um Informationen über das Feld vorzulesen. Das Formular stellt den Wert bereit und Sie können den Wert überschreiben.<br /> </td>
+   <td>Bildschirmlesehilfen verwenden diesen Wert, um Informationen über das Feld vorzulesen. Das Formular gibt den Wert an. Sie können diesen Wert überschreiben.<br /> </td>
   </tr>
   <tr>
    <td>tabIndex</td>
@@ -67,7 +67,7 @@ Im Folgenden die globalen Optionen. Diese Optionen sind für jedes Feld verfügb
    <td>Die Höhe des Widgets. Sie wird in Pixeln angegeben. </td>
   </tr>
   <tr>
-   <td>Breite</td>
+   <td>width</td>
    <td>Die Breite des Widgets. Sie wird in Pixeln angegeben.</td>
   </tr>
   <tr>
@@ -87,11 +87,11 @@ Im Folgenden die globalen Optionen. Diese Optionen sind für jedes Feld verfügb
 
 Zusätzlich zu diesen Optionen stellt das Framework einige andere Optionen bereit, die je nach Typ des Felds variieren. Die Details zu den feldspezifischen Optionen sind unten aufgeführt.
 
-### Interaktion mit Formularframework  {#interaction-with-forms-framework}
+### Interaktion mit Formularframework {#interaction-with-forms-framework}
 
 Um mit dem Formularframework zu interagieren, löst ein Widget einige Ereignisse aus, die das Formularskript aktivieren. Wenn das Widget diese Ereignisse nicht erzeugt, funktionieren einige der Skripte nicht, die im Formular für dieses Feld eingegeben wurden.
 
-#### Vom Widget ausgelöste Ereignisse  {#events-triggered-by-widget}
+#### Vom Widget ausgelöste Ereignisse {#events-triggered-by-widget}
 
 <table>
  <tbody>
@@ -129,15 +129,15 @@ Die Erscheinungsbild-Framework ruft einige Funktionen des Widgets auf, die in de
    <th>Beschreibung</th>
   </tr>
   <tr>
-   <td>focus : function()</td>
+   <td>focus: function()</td>
    <td>Fokus wird auf das gelegt.</td>
   </tr>
   <tr>
-   <td>click : function()</td>
-   <td>Fokus wird auf das Feld gelegt und XFA_CLICK_EVENT wird aufgerufen.</td>
+   <td>click: function()</td>
+   <td>Setzt den Fokus auf das Feld und ruft XFA_CLICK_EVENT auf.</td>
   </tr>
   <tr>
-   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>erorrMessage: string </em>der den Fehler<br /> <em>errorType darstellt: string ("warning"/"error")</em></p> <p><strong>Hinweis</strong>: Gilt nur für HTML5-Formulare.</p> </td>
+   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>errorMessage: string </em>steht für den Fehler<br /> <em>errorType: string (“warning”/”error”)</em></p> <p><strong>Hinweis</strong>: Gilt nur für HTML5-Formulare.</p> </td>
    <td>Sendet Fehlermeldung und Fehlertyp an das Widget. Das Widget zeigt den Fehler an.</td>
   </tr>
   <tr>
@@ -147,7 +147,7 @@ Die Erscheinungsbild-Framework ruft einige Funktionen des Widgets auf, die in de
  </tbody>
 </table>
 
-## Optionen je nach Feldtyp  {#options-specific-to-type-of-field}
+## Optionen je nach Feldtyp {#options-specific-to-type-of-field}
 
 Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen übereinstimmen. Um die Funktionen von verschiedenen Feldern zu nutzen, muss das Widget den Richtlinien des jeweiligen Felds entsprechen.
 
@@ -174,7 +174,7 @@ Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen 
  </tbody>
 </table>
 
-### ChoiceList: DropDownList, ListBox  {#choicelist-dropdownlist-listbox}
+### ChoiceList: DropDownList, ListBox {#choicelist-dropdownlist-listbox}
 
 <table>
  <tbody>
@@ -188,7 +188,7 @@ Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen 
   </tr>
   <tr>
    <td>items<br /> </td>
-   <td>Array von Objekten, die als Optionen angezeigt werden sollen. Jedes Objekt enthält zwei Eigenschaften:<br />„save“ (zu speichernder Wert), „display“ (anzuzeigender Wert).<br /> <br />  </td>
+   <td>Array von Objekten, die als Optionen angezeigt werden sollen. Jedes Objekt enthält zwei Eigenschaften:<br /> „save“ (zu speichernder Wert), „display“ (anzuzeigender Wert).<br /> <br />  </td>
   </tr>
   <tr>
    <td><p>standardmäßig als bearbeitbar</p> <p><strong>Hinweis</strong>: Gilt nur für HTML5-Formulare.<br /> </p> </td>
@@ -228,7 +228,7 @@ Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen 
  </tbody>
 </table>
 
-### NumericEdit: NumericField, DecimalField  {#numericedit-numericfield-decimalfield}
+### NumericEdit: NumericField, DecimalField {#numericedit-numericfield-decimalfield}
 
 | Optionen | Beschreibung |
 |---|---|
@@ -238,7 +238,7 @@ Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen 
 | zero | Die Zeichenfolgendarstellung von Null im Gebietsschema des Felds. |
 | decimal | Die Zeichenfolgendarstellung von Dezimalzahlen im Gebietsschema des Felds. |
 
-### CheckButton: RadioButton, CheckBox  {#checkbutton-radiobutton-checkbox}
+### CheckButton: RadioButton, CheckBox {#checkbutton-radiobutton-checkbox}
 
 <table>
  <tbody>
@@ -252,11 +252,11 @@ Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen 
   </tr>
   <tr>
    <td>states</td>
-   <td><p>Zahl der zulässigen Zustände. </p> <p>Zwei für adaptive Formulare (Ein, Aus) und drei für HTML5-Formulare (Ein, Aus, Neutral).</p> </td>
+   <td><p>Zahl der zulässigen Zustände. </p> <p>Zwei für adaptive Formulare (Ein, Aus) und drei für HTML5-Formulare (Ein, Aus, Neutral).</p> </td>
   </tr>
   <tr>
    <td>state</td>
-   <td><p>Aktueller Status des Elements.</p> <p>Zwei für adaptive Formulare (Ein, Aus) und drei für HTML5-Formulare (Ein, Aus, Neutral).</p> </td>
+   <td><p>Aktueller Status des Elements.</p> <p>Zwei für adaptive Formulare (Ein, Aus) und drei für HTML5-Formulare (Ein, Aus, Neutral).</p> </td>
   </tr>
  </tbody>
 </table>
