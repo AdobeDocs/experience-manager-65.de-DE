@@ -1,8 +1,8 @@
 ---
 title: Barcoded Forms-Dienst
-seo-title: Verwendung des Barcoded Forms-Dienst von AEM Forms
+seo-title: Using AEM Forms Barcoded Forms Service
 description: 'Mit dem Barcoded Forms-Dienst von AEM Forms extrahieren Sie Daten aus elektronischen Abbildungen von Strichcodes. '
-seo-description: 'Mit dem Barcoded Forms-Dienst von AEM Forms extrahieren Sie Daten aus elektronischen Abbildungen von Strichcodes. '
+seo-description: Use AEM Forms Barcoded Forms service to extract data from electronic images of barcodes.
 uuid: b044a788-0e4a-4718-b71a-bd846933d51b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,25 +11,25 @@ discoiquuid: d431c4cb-e4be-41a5-8085-42393d4d468c
 docset: aem65
 exl-id: edaf12be-473f-4175-b4e0-549b41159a55
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 93%
+workflow-type: ht
+source-wordcount: '1022'
+ht-degree: 100%
 
 ---
 
-# Barcoded Forms-Dienst{#barcoded-forms-service}
+# Barcoded Forms-Service{#barcoded-forms-service}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Der Barcoded Forms-Dienst extrahiert Daten aus elektronischen Abbildungen von Strichcodes. Der Dienst akzeptiert TIFF- und PDF-Dateien mit einem oder mehreren Strichcodes als Eingabe und extrahiert die Strichcodedaten. Strichcodedaten können verschiedene Formate haben, so z. B. XML, durch ein Zeichen getrennte Zeichenfolgen oder mit JavaScript erstellte benutzerdefinierte Formate.
 
-Der Barcoded Forms-Dienst unterstützt die folgenden **zweidimensionalen (2D)** Symbologien, die als gescannte TIFF- oder PDF-Dokumente bereitgestellt werden:
+Der Barcoded Forms-Service unterstützt die folgenden **zweidimensionalen (2D)** Symbologien, die als gescannte TIFF- oder PDF-Dokumente bereitgestellt werden:
 
 * PDF417
 * Datenmatrix
 * QR-Code
 
-Der Dienst unterstützt außerdem die folgenden **eindimensionalen** Symbologien, die als gescannte TIFF- oder PDF-Dokumente bereitgestellt werden:
+Der Service unterstützt außerdem die folgenden **eindimensionalen** Symbologien, die als gescannte TIFF- oder PDF-Dokumente bereitgestellt werden:
 
 * Codabar
 * Code128
@@ -44,7 +44,7 @@ Mit dem Barcoded Forms-Dienst können Sie die folgenden Aufgaben ausführen:
 
 Der Barcoded Forms-Dienst sucht in einer Grafik den Strichcode, dekodiert diesen und extrahiert die Daten. Der Dienst gibt die Strichcodedaten (bei Bedarf mithilfe der Entitätenkodierung) in einem Element vom Typ content eines XML-Dokuments zurück. Die folgende gescannte TIFF-Grafik eines Formulars enthält beispielsweise zwei Strichcodes:
 
-![example](assets/example.png)
+![Beispiel](assets/example.png)
 
 Der Barcoded Forms-Dienst gibt nach Dekodierung der Strichcodes das folgende XML-Dokument zurück:
 
@@ -95,19 +95,19 @@ Der Barcoded Forms-Dienst gibt nach Dekodierung der Strichcodes das folgende XML
 
 ### Workflows, die mit Strichcode versehene Formulare verwenden {#workflows-that-use-barcoded-forms}
 
-Formularentwickler erstellen mithilfe von Designer interaktive mit Strichcodes versehene Formulare. (Weitere Informationen finden Sie in der [Designer-Hilfe](https://www.adobe.com/go/learn_aemforms_designer_63).) Wenn ein Benutzer ein mit Strichcode versehenes Formular mit Adobe Reader oder Acrobat ausfüllt, wird der Strichcode automatisch aktualisiert, um die Formulardaten zu verschlüsseln.
+Formularentwickler erstellen mithilfe von Designer interaktive mit Strichcodes versehene Formulare. (Weitere Informationen finden Sie in der [Designer-Hilfe](https://www.adobe.com/go/learn_aemforms_designer_63_de).) Wenn ein Benutzer ein mit Strichcode versehenes Formular mit Adobe Reader oder Acrobat ausfüllt, wird der Strichcode automatisch aktualisiert, um die Formulardaten zu verschlüsseln.
 
 Der Barcoded Forms-Dienst dient zum Konvertieren von Daten, die in Papierform vorliegen, in ein vom Computer lesbares Format. Beispiel: Wenn ein mit Strichcode versehenes Formular ausgefüllt und gedruckt wird, kann die gedruckte Kopie gescannt werden und als Eingabe für den Barcoded Forms-Dienst dienen.
 
 Überwachter Ordner-Endpunkte dienen zumeist zum Starten von Anwendungen, die den Barcoded Forms-Dienst nutzen. Dokumentscanfunktionen legen beispielsweise TIFF- oder PDF-Grafiken gescannter mit Strichcodes versehener Formulare in einem überwachten Ordner ab. Der Überwachter Ordner-Endpunkt übergibt die Grafiken zur Dekodierung an den Dienst.
 
-### Empfohlene Kodierungs- und Dekodierungsformate  {#recommended-encoding-and-decoding-formats}
+### Empfohlene Kodierungs- und Dekodierungsformate {#recommended-encoding-and-decoding-formats}
 
 Ersteller von Strichcodeformularen sollten bei der Kodierung von Daten in Strichcodes ein einfaches Format mit Trennzeichen (z.B. Tabulatoren) verwenden. Außerdem sollten Zeilenumbrüche als Feldtrennzeichen vermieden verwenden. Designer bietet eine Auswahl von Kodierungen mit Trennzeichen, die automatisch ein JavaScript-Skript für die Kodierung von Strichcodes generieren. Die dekodierten Daten haben den Feldnamen in der ersten Zeile und ihre Werte in der zweiten Zeile, mit Tabulatoren zwischen jedem Feld.
 
 Geben Sie beim Dekodieren von Strichcodes das Zeichen an, das zum Trennen von Feldern dient. Das für die Dekodierung angegebene Zeichen muss dem für die Kodierung des Strichcodes verwendeten Zeichen entsprechen. Wenn Formularersteller beispielsweise das empfohlene Format mit Tabulatoren als Trennzeichen nutzen, müssen sie den Standardwert Tabulator für das Feldtrennzeichen im Vorgang „Als XML extrahieren“ verwenden.
 
-### Vom Benutzer angegebene Zeichensätze  {#user-specified-character-sets}
+### Vom Benutzer angegebene Zeichensätze {#user-specified-character-sets}
 
 Wenn Formularentwickler in Designer ihren Formularen Strichcodeobjekte hinzufügen, kann eine Zeichenkodierung angegeben werden. Die erkannten Kodierungen sind: UTF-8, ISO-8859-1, ISO-8859-2, ISO-8859-7, Shift-JIS, KSC-5601, Big-Five, GB-2312, UTF-16. Standardmäßig werden alle Daten in Strichcodes als UTF-8 kodiert.
 
@@ -123,28 +123,28 @@ Beim Einsatz der BCF-API sollten Sie die folgenden Einschränkungen berücksicht
 
 ### Weitere Einschränkungen {#other-limitations}
 
-Beachten Sie auch die folgenden Einschränkungen bei der Verwendung des Barcoded Forms-Dienstes:
+Beachten Sie auch die folgenden Einschränkungen bei der Verwendung des Barcoded Forms-Service:
 
 * Der Dienst unterstützt AcroForms und statische Formulare mit 2D-Strichcodes, die mit Adobe Reader oder Acrobat gespeichert wurden, in vollem Umfang. Für 1D-Strichcodes müssen Sie das Formular jedoch reduzieren oder es als gescanntes PDF- oder TIFF-Dokument zur Verfügung stellen.
 * Dynamische XFA-Formulare werden nicht in vollem Umfang unterstützt. Für die ordnungsgemäße Dekodierung eines 1D- und 2D-Strichcodes in einem dynamischen Formular müssen Sie das Formular entweder reduzieren oder es als gescanntes PDF- oder TIFF-Dokument bereitstellen.
 
-Der Dienst kann zusätzlich sämtliche Strichcodes dekodieren, die unterstützte Symbologien nutzen, sofern die oben genannten Beschränkungen eingehalten werden. Weitere Informationen zum Erstellen interaktiver Barcoded Forms finden Sie unter [Designer-Hilfe](https://www.adobe.com/go/learn_aemforms_designer_63).
+Der Service kann zusätzlich sämtliche Strichcodes dekodieren, die unterstützte Symbologien nutzen, sofern die oben genannten Beschränkungen berücksichtigt werden. Weitere Informationen dazu, wie Sie interaktive Formulare mit Strichcode erstellen, finden Sie unter [Designer-Hilfe](https://www.adobe.com/go/learn_aemforms_designer_63_de).
 
 ## Konfigurieren Sie die Eigenschaften des Dienstes   {#configureproperties}
 
-Sie können den Dienst **AEMFD Barcoded Forms-Dienst** in AEM-Konsole verwenden, um Eigenschaften für diesen Dienst zu konfigurieren. Die Standard-URL AEM Konsole lautet `https://[host]:'port'/system/console/configMgr`.
+Sie können den Dienst **AEMFD Barcoded Forms-Dienst** in AEM-Konsole verwenden, um Eigenschaften für diesen Dienst zu konfigurieren. Die Standard-URL der AEM-Konsole lautet `https://[host]:'port'/system/console/configMgr`.
 
 ## Verwendung des Dienstes {#using}
 
 Der Barcoded Forms-Dienst stellt die folgenden zwei APIs zur Verfügung:
 
-* **[decode](https://helpx.adobe.com/de/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Dekodiert alle Barcodes, die in einem PDF-Eingabedokument oder in einem TIFF-Bild verfügbar sind. Es wird ein XML-Dokument mit den Daten zurückgegeben, die von allen Barcodes abgerufen wurden, welche im Eingabedokument oder im Bild verfügbar sind.
+* **[decode](https://helpx.adobe.com/de/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Dekodiert alle Barcodes, die in einem PDF-Eingabedokument oder in einem TIFF-Bild verfügbar sind. Es wird ein XML-Dokument mit den Daten zurückgegeben, die von allen Strichcodes abgerufen wurden, welche im Eingabedokument oder im Bild verfügbar sind.
 
-* **[extractToXML](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Konvertiert Daten, die mit der Dekodier-API für XML-Daten dekodiert wurden. Diese XML-Daten können mit einem XFA-Formular zusammengeführt werden. Es wird eine Liste von XML-Dokumenten, eines je Barcode, zurückgegeben.
+* **[extractToXML](https://helpx.adobe.com/de/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Konvertiert Daten, die mit der Dekodier-API für XML-Daten dekodiert wurden. Diese XML-Daten können mit einem XFA-Formular zusammengeführt werden. Es wird eine Liste von XML-Dokumenten, eines je Barcode, zurückgegeben.
 
-### Verwenden des BCF-Dienstes mit JSPs oder Servlets  {#using-bcf-service-with-a-jsp-or-servlets}
+### Verwenden des BCF-Dienstes mit JSPs oder Servlets {#using-bcf-service-with-a-jsp-or-servlets}
 
-Der folgende Beispielcode dekodiert einen Barcode in einem Dokument und speichert die Ausgabe-XML auf der Festplatte.
+Der folgende Beispielcode dekodiert einen Strichcode in einem Dokument und speichert die Ausgabe-XML auf der Festplatte.
 
 ```jsp
 <%@ page import="java.util.List,
@@ -235,7 +235,7 @@ Der folgende Beispielcode dekodiert einen Barcode in einem Dokument und speicher
 
 Die Ausführung des Barcoded Forms-Dienstes über einen Workflow ist ähnlich wie die Ausführung über JSP/Servlet. Der einzige Unterschied beim Ausführen des Dienstes über JSP/Servlet liegt darin, dass das Dokumentobjekt automatisch eine Instanz des ResourceResolver-Objekts vom ResourceResolverHelper-Objekt abruft. Dieser automatische Mechanismus funktioniert nicht, wenn der Code in einem Workflow aufgerufen wird.
 
-Bei einem Workflow müssen Sie ausdrücklich eine Instanz des ResourceResolver-Objekts an die Dokument-Klassen-Constructor übermitteln. Anschließend verwendet das Dokumentobjekt das bereitgestellte ResourceResolver-Objekt, um Inhalte aus dem Repository zu lesen.
+Bei einem Workflow müssen Sie ausdrücklich eine Instanz des ResourceResolver-Objekts an die Dokument-Klassen-Constructor übermitteln. Dann benutzt das Document-Objekt das bereitgestellte ResourceResolver-Objekt, um Inhalte aus dem Repository zu lesen.
 
 Der folgende Workflowprozess dekodiert einen Barcode in einem Dokument und speichert das Ergebnis auf der Festplatte. Der Code ist in ECMAScript geschrieben und das Dokument wird als Workflow-Nutzlast übergeben:
 
