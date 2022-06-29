@@ -1,19 +1,19 @@
 ---
-title: Tutorial - Erstellen Ihrer ersten interaktiven Kommunikation
-seo-title: Erstellen Sie Ihre erste interaktive Kommunikation
+title: 'Tutorial: Erstellen Sie Ihre erste interaktive Kommunikation'
+seo-title: Create your first Interactive Communication
 description: Erfahren Sie, wie Sie Ihre erste interaktive Kommunikation erstellen.
-seo-description: Erfahren Sie, wie Sie Ihre erste interaktive Kommunikation erstellen.
+seo-description: Learn to create your first Interactive Communication.
 uuid: ed5003c6-ba3a-4fcb-8645-c7b607b22fb5
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communications, introduction
 discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
-feature: Interaktive Kommunikation
+feature: Interactive Communication
 exl-id: b20bb719-5686-466e-8dde-279b8471bfe3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1057'
-ht-degree: 91%
+workflow-type: ht
+source-wordcount: '1043'
+ht-degree: 100%
 
 ---
 
@@ -37,14 +37,14 @@ Am Ende dieser Schulung können Sie Folgendes:
 * Erstellen einer interaktiven Kommunikation
 * Testen und veröffentlichen Sie eine interaktive Kommunikation
 
-## Anwendungsfall {#use-case}
+## Nutzungsszenario {#use-case}
 
 Die Reise beginnt mit dem Erlernen des Anwendungsfalls:
 
 Ein Telekommunikationsbetreiber sendet monatliche Rechnungen über die E-Mail an die Kunden. Die Rechnung ist eine interaktive Kommunikation. Die E-Mail enthält Folgendes:
 
 * Eine kennwortgeschützte PDF-Datei, in diesem Tutorial als Druckkanal bezeichnet. Sie enthält Kundendaten, Rechnungsdetails, eine Zusammenfassung der Gebühren, praktische Zahlungsmodi und Verwendungsdetails.
-* Ein Link zur Webversion der Rechnung, in diesem Tutorial als Webkanal bezeichnet. Die Webversion der Rechnung bietet zusätzlich zu den Details in der PDF-Version eine grafische Darstellung der Nutzungsdetails und personalisierter Angebote auf Basis von Adobe Target. Die Webversion enthält auch ein Online-Zahlungsformular. Online-Zahlungen werden dadurch erleichtert, ohne die IK zu verlassen.
+* Ein Link zur Webversion der Rechnung, in diesem Tutorial als Webkanal bezeichnet. Die Webversion der Rechnung bietet zusätzlich zu den Details in der PDF-Version eine grafische Darstellung der Nutzungsdetails und personalisierter Angebote auf Basis von Adobe Target. Die Web-Version enthält auch ein Online-Zahlungsformular. Online-Zahlungen werden dadurch erleichtert, ohne die IK zu verlassen.
 * Ein Link zu Mehrwert-Services wie Online-Speicher, Musikabonnements und Videoabonnements auf Abruf.
 
 ## Voraussetzungen {#prerequisites}
@@ -52,7 +52,7 @@ Ein Telekommunikationsbetreiber sendet monatliche Rechnungen über die E-Mail an
 * Richten Sie eine AEM-Author-Instanz ein.
 * Installieren Sie das [AEM Forms-Add-On](/help/forms/using/installing-configuring-aem-forms-osgi.md) auf der Author-Instanz
 * Richten Sie die MYSQL-Datenbank ein
-* Beziehen Sie den JDBC-Datenbanktreiber (JAR-Datei) vom Datenbankanbieter. Beispiele im Tutorial basieren auf der SQL-Datenbank und verwenden den Oracle [MySQL JDBC-Datenbanktreiber](https://dev.mysql.com/downloads/connector/j/5.1.html).
+* Beziehen Sie den JDBC-Datenbanktreiber (JAR-Datei) vom Datenbankanbieter. Die Beispiele in diesem Tutorial basieren auf der MySQL-Datenbank und verwenden den [MySQL JDBC-Datenbanktreiber von Oracle](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
 ## Schritt 1: Planen Sie die interaktive Kommunikation {#step-plan-the-interactive-communication}
 
@@ -62,7 +62,7 @@ Der erste Schritt bei der Planung einer interaktiven Kommunikation besteht darin
 
 **Ziele:**
 
-So erstellen Sie eine Anatomie für die interaktive Kommunikation mit den folgenden Eingabemodi:
+So erstellen Sie eine Anatomie für die interaktive Kommunikation mit den folgenden Arten der Dateneingabe:
 
 * Statischer Text
 * Formulardatenmodell
@@ -76,7 +76,7 @@ So erstellen Sie eine Anatomie für die interaktive Kommunikation mit den folgen
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-Ein Formulardatenmodell ermöglicht es, eine interaktive Kommunikation mit unterschiedlichen Datenquellen zu verbinden. Zum Beispiel AEM-Benutzerprofil, RESTful-Webdienste, SOAP-basierte Webdienste, OData-Dienste und relationale Datenbanken. Ein Formulardatenmodell ist ein einheitliches Datenrepräsentationsschema von Geschäftseinheiten und Diensten, die in verbundenen Datenquellen verfügbar sind. Sie können das Formulardatenmodell mit einer interaktiven Kommunikation verwenden, um Daten aus verbundenen Datenquellen abzurufen. Weitere Informationen zum Formulardatenmodell finden Sie unter [AEM Forms Data Integration](/help/forms/using/data-integration.md).
+Ein Formulardatenmodell ermöglicht es, eine interaktive Kommunikation mit unterschiedlichen Datenquellen zu verbinden. Zum Beispiel AEM-Benutzerprofil, RESTful-Webdienste, SOAP-basierte Webdienste, OData-Dienste und relationale Datenbanken. Ein Formulardatenmodell ist ein einheitliches Datenrepräsentationsschema von Geschäftseinheiten und Diensten, die in verbundenen Datenquellen verfügbar sind. Sie können das Formulardatenmodell mit einer interaktiven Kommunikation verwenden, um Daten aus verbundenen Datenquellen abzurufen. Weitere Informationen zum Formulardatenmodell finden Sie unter [AEM Forms-Datenintegration](/help/forms/using/data-integration.md).
 
 **Ziele:**
 
@@ -138,7 +138,7 @@ Interaktive Kommunikation kann über zwei Kanäle erfolgen: Druck und Web. Sie k
 * Erstellen Sie interaktive Kommunikation für den Druck- und Webkanal mit Druck als Master
 * Erstellen Sie eine dynamische Tabelle in der Webversion der interaktiven Kommunikation
 * Erstellen Sie ein Diagramm in der Webversion der interaktiven Kommunikation
-* Erstellen von Hyperlinks in der Webversion der interaktiven Kommunikation
+* Erstellen von Hyperlinks in der Web-Version von interaktiver Kommunikation
 
 [ ](/help/forms/using/create-interactive-communication0.md)
 
@@ -146,7 +146,7 @@ Interaktive Kommunikation kann über zwei Kanäle erfolgen: Druck und Web. Sie k
 
 ![11-test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
 
-Nachdem Sie eine interaktive Kommunikation erstellt haben, ist es wichtig, dass Sie jede Änderung testen, die Sie daran vornehmen. Das Testen aller Felder einer interaktiven Kommunikation ist mühsam. AEM Forms bietet ein SDK (Calvin SDK) zum automatischen Testen von adaptiven Formularen.
+Nachdem Sie eine interaktive Kommunikation erstellt haben, ist es wichtig, dass Sie jede Änderung testen, die Sie daran vornehmen. Es ist langwierig, jedes Feld einer interaktiven Kommunikation zu testen. AEM Forms bietet ein SDK (Calvin SDK) zum automatischen Testen von adaptiven Formularen.
 
 **Ziele:**
 
