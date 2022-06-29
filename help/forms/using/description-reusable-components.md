@@ -1,8 +1,8 @@
 ---
 title: Beschreibung wiederverwendbarer Komponenten
-seo-title: Beschreibung wiederverwendbarer Komponenten
+seo-title: Description of reusable components
 description: Eine vollständige Liste von wiederverwendbaren Komponenten mit Dateinamen und Abhängigkeiten, die Sie bei der Integration von AEM Forms Workspace-Komponenten in Ihre Webanwendungen unterstützen.
-seo-description: Eine vollständige Liste von wiederverwendbaren Komponenten mit Dateinamen und Abhängigkeiten, die Sie bei der Integration von AEM Forms Workspace-Komponenten in Ihre Webanwendungen unterstützen.
+seo-description: A complete list of reusable components with filenames and dependencies, to help you integrate AEM Forms workspace component in your web applications.
 uuid: 8e6accc7-0935-4d7b-b838-d23676df5cda
 contentOwner: robhagat
 content-type: reference
@@ -11,15 +11,15 @@ topic-tags: forms-workspace
 discoiquuid: d3facd17-ceb0-4799-8cd9-ff9e81e09793
 exl-id: b8cb7233-3d9e-41d4-85c5-8e8c2481f89c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1257'
-ht-degree: 88%
+workflow-type: ht
+source-wordcount: '1231'
+ht-degree: 100%
 
 ---
 
 # Beschreibung wiederverwendbarer Komponenten {#description-of-reusable-components}
 
-AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrating-html-ws-components-web.md)-Komponenten, die in einer bestimmten [Ordnerstruktur](/help/forms/using/folder-structure.md) in CRX™ organisiert sind. Für jede Komponente sind Modell-, Ansichts- und Vorlagendateien in der Ordnerstruktur angegeben, außerdem sind JavaScript™-Abhängigkeiten von anderen Komponentendateien, Listener-Ereignisse der Komponente und JavaScript-Objekte, die diese Ereignisse in HTML Workspace auslösen. Die vollständige Liste der wiederverwendbaren Komponenten mit den einzelnen Dateinamen und Abhängigkeiten ist im Folgenden aufgeführt.
+AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrating-html-ws-components-web.md) Komponenten, die in einer bestimmten [Ordnerstruktur](/help/forms/using/folder-structure.md) in CRX™ organisiert sind. Für jede Komponente sind Modell-, Ansichts- und Vorlagendateien in der Ordnerstruktur angegeben, außerdem sind JavaScript™-Abhängigkeiten von anderen Komponentendateien, Listener-Ereignisse der Komponente und JavaScript-Objekte, die diese Ereignisse in AEM Forms Workspace auslösen. Die vollständige Liste der wiederverwendbaren Komponenten mit den einzelnen Dateinamen und Abhängigkeiten ist im Folgenden aufgeführt.
 
 ## TaskList {#tasklist}
 
@@ -55,7 +55,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
     </ul></td>
   </tr>
   <tr>
-   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
    <td>
     <ul>
      <li><p>filterSelected – TaskList-Modell</p></li>
@@ -99,7 +99,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
     </ul></td>
   </tr>
   <tr>
-   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
    <td>
     <ul>
      <li><p>submitComplete – Task-Modell</p></li>
@@ -138,7 +138,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>nicht vorhanden</p></td>
   </tr>
   <tr>
-   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
    <td>
     <ul>
      <li><p>fetched – TaskList-Modell </p></li>
@@ -210,7 +210,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>nicht vorhanden</p></td>
   </tr>
   <tr>
-   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
    <td>
     <ul>
      <li><p>fetched – TaskList-Modell </p></li>
@@ -298,7 +298,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p> </td>
+   <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p> </td>
    <td>
     <ul>
      <li><p>forwarded – Task-Modell</p> </li>
@@ -352,7 +352,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
     </ul></td>
   </tr>
   <tr>
-   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
    <td>
     <ul>
      <li><p>allStartpointsFetched – CategoryList-Modell </p></li>
@@ -395,7 +395,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
     </ul></td>
   </tr>
   <tr>
-   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
    <td>
     <ul>
      <li><p>changed – CategoryList-Modell </p></li>
@@ -443,7 +443,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
     </ul></td>
   </tr>
   <tr>
-   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
    <td>
     <ul>
      <li><p>category:selected – CategoryList-Modell </p></li>
@@ -482,7 +482,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>Task-Modell</p></td>
   </tr>
   <tr>
-   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
    <td><p>change – StartPoint-Modell </p></td>
   </tr>
  </tbody>
@@ -526,7 +526,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p> </td>
+   <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p> </td>
    <td>
     <ul>
      <li><p>category:selected – CategoryList-Modell</p> </li>
@@ -576,7 +576,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>ProcessName-Modell</p></td>
   </tr>
   <tr>
-   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
    <td>
     <ul>
      <li><p>add – ProcessNameList-Modell </p></li>
@@ -616,7 +616,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>ProcessInstanceList-Modell</p></td>
   </tr>
   <tr>
-   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
    <td><p>change – ProcessName-Modell </p></td>
   </tr>
  </tbody>
@@ -647,7 +647,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>ProcessName-Modell</p></td>
   </tr>
   <tr>
-   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
    <td>
     <ul>
      <li><p>processname:selected – ProcessNameList-Modell </p></li>
@@ -686,7 +686,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>TaskList-Modell</p></td>
   </tr>
   <tr>
-   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
    <td><p>change – ProcessInstance-Modell </p></td>
   </tr>
  </tbody>
@@ -721,7 +721,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
     </ul></td>
   </tr>
   <tr>
-   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
    <td>
     <ul>
      <li><p>processname:selected – ProcessNameList-Modell </p></li>
@@ -761,7 +761,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>UserSearch-Ansicht</p> </td>
   </tr>
   <tr>
-   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p> </td>
+   <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p> </td>
    <td>
     <ul>
      <li><p>outOfOfficeSettingsFetched – OutofOffice-Modell</p> </li>
@@ -802,7 +802,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>UserSearch-Ansicht</p> </td>
   </tr>
   <tr>
-   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p> </td>
+   <td><p>Vom Listener gefundene Ereignisse (Name des Ereignisses – Auslöser)</p> </td>
    <td>
     <ul>
      <li><p>queueAccessGranted – sharequeue-Modell</p> </li>
@@ -846,7 +846,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>nicht vorhanden</p></td>
   </tr>
   <tr>
-   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
    <td>
     <ul>
      <li><p>preferencesFetched – UISettings-Modell </p></li>
@@ -920,7 +920,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>nicht vorhanden</p> </td>
   </tr>
   <tr>
-   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p> </td>
+   <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p> </td>
    <td>
     <ul>
      <li>userImageUrlFetched – UserInfo-Modell</li>
@@ -960,7 +960,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>nicht vorhanden</p></td>
   </tr>
   <tr>
-   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p></td>
+   <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p></td>
    <td><p>newWsError – WSError-Modell </p></td>
   </tr>
  </tbody>
@@ -991,7 +991,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>nicht vorhanden</p> </td>
   </tr>
   <tr>
-   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p> </td>
+   <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p> </td>
    <td>
     <ul>
      <li>principalSearched – principalsearch-Modell</li>
@@ -1026,7 +1026,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>nicht vorhanden</p> </td>
   </tr>
   <tr>
-   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p> </td>
+   <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p> </td>
    <td><p>templateFetched – searchtemplate-Modell</p> </td>
   </tr>
  </tbody>
@@ -1057,7 +1057,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td><p>searchtemplate-Modell</p> </td>
   </tr>
   <tr>
-   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p> </td>
+   <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p> </td>
    <td><p>change – searchtemplatelist-Modell</p> </td>
   </tr>
  </tbody>
@@ -1085,11 +1085,11 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
   </tr>
   <tr>
    <td><p>JS-Abhängigkeiten</p> </td>
-   <td>nicht vorhanden<br /> </td>
+   <td>Nicht vorhanden<br /> </td>
   </tr>
   <tr>
-   <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p> </td>
-   <td><p>searchTemplate:selected - searchtemplate-Modell</p> </td>
+   <td><p>Listener-Ereignisse (Name des Ereignisses – Auslöser)</p> </td>
+   <td><p>searchTemplate:selected – searchtemplate-Modell</p> </td>
   </tr>
  </tbody>
 </table>
