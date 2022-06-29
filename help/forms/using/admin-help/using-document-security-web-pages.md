@@ -1,20 +1,20 @@
 ---
 title: Verwenden der Document Security-Webseiten
-seo-title: Verwenden der Document Security-Webseiten
+seo-title: Using the document security webpages
 description: Erfahren Sie, wie Sie zu Document Security-Webseiten navigieren und sie verwenden und sich bei ihnen anmelden.
-seo-description: Erfahren Sie, wie Sie zu Document Security-Webseiten navigieren und sie verwenden und sich bei ihnen anmelden.
+seo-description: Learn how you can login, navigate and use the document security web pages.
 uuid: b4863343-cda5-474a-a101-a20e39b1f8c7
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
-feature: Dokumentensicherheit
+feature: Document Security
 exl-id: caa31752-a02d-4d20-b7d9-c4aad5d0fae6
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 97%
+workflow-type: ht
+source-wordcount: '923'
+ht-degree: 100%
 
 ---
 
@@ -36,9 +36,9 @@ Um sich als Administrator anmelden zu können, muss Ihnen die Rolle „Administr
 
 Zum Anmelden bei den Webseiten über einen Browser benötigen Sie die Document Security-URL sowie ein Konto. Die URL für Benutzer unterscheidet sich von der für Administratoren. Administratoren können sich auch an den Benutzerseiten anmelden, um Richtlinien zu erstellen.
 
-Wenn Sie Zugriff auf mehrere Document Security-Installationen haben, benötigen Sie die URL der Instanz von Document Security, auf die Sie zugreifen möchten. Befragen Sie den Administrator, sollten Sie diese Informationen nicht haben. Die Standard-URL für die Benutzerseiten ist `https://[host]:[port]/edc`. In einigen Fällen ist die Anschlussnummer möglicherweise nicht erforderlich. Fragen Sie Ihren Administrator nach Details.
+Wenn Sie Zugriff auf mehrere Document Security-Installationen haben, benötigen Sie die URL der Instanz von Document Security, auf die Sie zugreifen möchten. Befragen Sie den Administrator, sollten Sie diese Informationen nicht haben. Die Standard-URL für Benutzerseiten ist `https://[host]:[port]/edc`. In einigen Fällen ist die Anschlussnummer möglicherweise nicht erforderlich. Fragen Sie Ihren Administrator nach Details.
 
-Die Standard-URL für Administratoren ist `https://[host]:[port]/adminui`.
+Die Standard-URL für Administratoren lautet `https://[host]:[port]/adminui`.
 
 Für Administratoren wird ein standardmäßiges Superadministratorkonto während der Installation angelegt. Sie können sich mit diesem Konto anmelden, nachdem Document Security erstmals installiert wurde.
 
@@ -59,7 +59,7 @@ Für Administratoren wird ein standardmäßiges Superadministratorkonto während
 >
 >Verwenden Sie beim Arbeiten mit Webseiten nicht die Schaltflächen im Browser (z. B. die Schaltfläche „Zurück“, die Schaltfläche „Aktualisieren“ oder die Pfeilschaltflächen „Zurück“ und „Vorwärts“), da dies zu unerwünschten Problemen bei der Erfassung und Anzeige von Daten führen kann.
 
-## Auf den Webseiten navigieren  {#navigating-the-web-pages}
+## Auf den Webseiten navigieren {#navigating-the-web-pages}
 
 Wenn Sie sich an den Benutzerwebseiten anmelden, werden Hyperlinks zu den Benutzerseiten „Richtlinien“, „Dokumente“ und „Ereignisse“ angezeigt.
 
@@ -83,7 +83,7 @@ Wenn Sie sich bei Administration Console anmelden und zur Document Security-Haup
 >
 >Verwenden Sie beim Arbeiten mit Webseiten nicht die Schaltflächen im Browser (z. B. die Schaltfläche „Zurück“, die Schaltfläche „Aktualisieren“ oder die Pfeilschaltflächen „Zurück“ und „Vorwärts“), da dies zu unerwünschten Problemen bei der Erfassung und Anzeige von Daten führen kann.
 
-## Zugriff auf Document Security in Clientanwendungen einrichten  {#setting-up-access-to-document-security-from-client-applications}
+## Zugriff auf Document Security in Clientanwendungen einrichten {#setting-up-access-to-document-security-from-client-applications}
 
 Clientanwendungen müssen so eingerichtet werden, dass sie eine Verbindung mit Document Security herstellen, um Dokumente zu schützen, richtliniengeschützte Dokumente öffnen und die Verbindung mit den Document Security-Webseiten herzustellen. Einzelheiten zum Konfigurieren der Verbindung in der Client-Anwendung finden Sie in der *Acrobat-Hilfe* oder der entsprechenden *RightsManagementExtension-Hilfe*.
 
@@ -100,7 +100,7 @@ Diese Anweisungen gelten für Internet Explorer. Sie können das Zertifikat jedo
 1. Schließen Sie die Browsersitzung.
 1. Öffnen Sie ein weiteres Browser-Fenster und geben Sie die Basis-URL in das Feld „Adresse“ ein. Ein Dialogfeld mit einer Sicherheitswarnung sollte nicht angezeigt werden. Dieser Test bestätigt, dass das Zertifikat ordnungsgemäß installiert wurde.
 
-## Von den Webseiten abmelden  {#log-out-of-the-web-pages}
+## Von den Webseiten abmelden {#log-out-of-the-web-pages}
 
 Melden Sie sich ab, wenn Sie die Aufgaben auf den Webseiten erledigt haben, damit Sie den Browser sicher für andere Zwecke verwenden können. Je nach Konfiguration von Document Security müssen Sie den Browser schließen, um sich vollständig abzumelden.
 
