@@ -1,37 +1,37 @@
 ---
 title: Inhalt auf Seite Null in Designer ändern
-seo-title: Inhalt auf Seite Null in Designer ändern
+seo-title: Changing Page Zero content in Designer
 description: Wissen Sie, wie Sie die Meldung ändern können, die auf der Seite Null einer XFA-PDF-Datei angezeigt wird, wenn diese in einem PDF-Viewer angezeigt wird, der nicht von Adobe stammt?
-seo-description: Wissen Sie, wie Sie die Meldung ändern können, die auf der Seite Null einer XFA-PDF-Datei angezeigt wird, wenn diese in einem PDF-Viewer angezeigt wird, der nicht von Adobe stammt?
+seo-description: Do you know how you can change the message displayed on Page Zero of an XFA PDF when viewing it in a non-Adobe PDF viewer?
 uuid: ac23fb21-3f15-48ea-aeeb-4ecc12b771ac
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-feature: Adaptive Formulare
+feature: Adaptive Forms
 exl-id: 466b7e85-a2f8-4e1e-8afc-1566b0ccb84c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 72%
+workflow-type: ht
+source-wordcount: '233'
+ht-degree: 100%
 
 ---
 
 # Inhalt auf Seite Null in Designer ändern {#changing-page-zero-content-in-designer}
 
-Der Inhalt von Seite Null wird standardmäßig angezeigt, wenn ein Nicht-Adobe PDF-Viewer, z. B. der standardmäßige PDF-Viewer in [!DNL Chrome] oder [!DNL Firefox], den Inhalt des PDF/XFA-Formulars nicht lesen kann. Nachfolgend finden Sie die standardmäßige Meldung auf Seite Null.
+Der Inhalt auf Seite Null wird standardmäßig angezeigt, wenn ein PDF-Viewer, der nicht von Adobe stammt (z. B. der standardmäßige PDF-Viewer in [!DNL Chrome] oder [!DNL Firefox]), den Inhalt des PDF-/XFA-Formulars nicht lesen kann. Nachfolgend finden Sie die standardmäßige Meldung auf Seite Null.
 
 ![defaultpage0message](assets/defaultpage0message.png)
 
-[!DNL AEM Forms] Mit der Designer-Version können Sie die Meldung ändern, die auf Seite Null angezeigt wird. Zum Ändern der auf Seite Null angezeigten Meldung müssen Sie folgende Schritte ausführen:
+Mit der Version [!DNL AEM Forms] von Designer können Sie die auf Seite Null angezeigte Meldung ändern. Zum Ändern der auf Seite Null angezeigten Meldung müssen Sie folgende Schritte ausführen:
 
-1. Stellen Sie sicher, dass die [!DNL AEM Forms]-Version von Designer installiert ist. Sie können die Version im Bildschirm „Info“ des Designers überprüfen.
+1. Stellen Sie sicher, dass die Version [!DNL AEM Forms] von Designer auf Ihrem Computer installiert ist. Sie können die Version im Bildschirm „Info“ des Designers überprüfen.
 
-1. Öffnen Sie das Formular, in dem der Inhalt der Seite Null geändert werden soll.
+1. Öffnen Sie das Formular, in dem der Inhalt auf Seite Null geändert werden soll.
 
 1. Klicken Sie auf **[!UICONTROL Datei]** > **[!UICONTROL Formulareigenschaften]**.
 
-1. Klicken Sie im Dialogfeld [!UICONTROL Formulareigenschaften] auf ![plus](assets/plus.png) (Plus-Symbol), um eine benutzerdefinierte Eigenschaft hinzuzufügen.
+1. Klicken Sie im Dialog [!UICONTROL Formulareigenschaften] auf ![plus](assets/plus.png) (Plussymbol), um eine benutzerdefinierte Eigenschaft hinzuzufügen.
 
 1. Legen Sie **_pagezerocontent** als den Namen der Eigenschaft fest.
 1. Fügen Sie die Meldung auf Seite Null als Wert im Rich Text-Format hinzu. Beispiel:
@@ -43,7 +43,7 @@ Der Inhalt von Seite Null wird standardmäßig angezeigt, wenn ein Nicht-Adobe P
 
 1. Zeigen Sie das PDF-Formular im Browser an, um sicherzustellen, dass die Meldung aktualisiert wurde. Der obige Beispielwert wird wie folgt angezeigt:
 
-   ![changeMessage](assets/changedmessage.png)
+   ![changedmessage](assets/changedmessage.png)
 
 >[!NOTE]
 >
