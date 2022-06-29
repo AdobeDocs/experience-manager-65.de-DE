@@ -1,8 +1,8 @@
 ---
 title: Anpassen von Fehlerdialogen
-seo-title: Anpassen von Fehlerdialogen
+seo-title: Customizing error dialogs
 description: Gehen Sie wie folgt vor, um durch Anpassen der Fehlerdialoge von LiveCycle AEM Forms verschiedene Fehlerbeschreibungen hinzuzufügen.
-seo-description: Gehen Sie wie folgt vor, um durch Anpassen der Fehlerdialoge von LiveCycle AEM Forms verschiedene Fehlerbeschreibungen hinzuzufügen.
+seo-description: How-to customize the error dialogs of LiveCycle AEM Forms workspace to add different fault descriptions.
 uuid: 5ed1da68-bd5b-4a36-9a14-9d61733237e6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,19 +10,19 @@ topic-tags: forms-workspace
 discoiquuid: f547c0c1-3917-4092-9d63-c1b3aaefcef0
 exl-id: 8d2b07f5-5c4e-4111-8f78-eb1b156221bc
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 53%
+workflow-type: ht
+source-wordcount: '152'
+ht-degree: 100%
 
 ---
 
 # Anpassen von Fehlerdialogen {#customizing-error-dialogs}
 
-AEM Forms Workspace ermöglicht Ihnen, Fehlerdialoge anzupassen. Führen Sie die [Generischen Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md) aus, gefolgt von den folgenden Schritten, um Fehlerdialogfelder anzupassen.
+AEM Forms Workspace ermöglicht Ihnen, Fehlerdialoge anzupassen. Führen Sie [Generische Schritte zur Anpassung von AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md) durch und anschließend die unten aufgeführten Schritte zum Anpassen von Fehlerdialogen.
 
 ## Text anpassen {#customizing-text}
 
-1. Ändern Sie in der Datei `/apps/ws/locales/en-US/translation.json` die Werte von `wserror` in die benutzerdefinierten Werte. Beispiel:
+1. Ändern Sie in der Datei `/apps/ws/locales/en-US/translation.json` die Werte von `wserror` auf die benutzerdefinierten Werte. Beispiel:
 
    ```json
    "wserror" : {
@@ -52,7 +52,7 @@ AEM Forms Workspace ermöglicht Ihnen, Fehlerdialoge anzupassen. Führen Sie die
 
 ## CSS anpassen {#customizing-css}
 
-1. Sie können Dialogfeld, Kopfzeile, Inhaltsbereich, Fußleiste, Fußleisten-Schaltflächen und andere Besicherungen aktualisieren, indem Sie das folgende Fragment in die Datei `/apps/ws/css/newStyle.css` einfügen:
+1. Sie können Dialogfeld, Kopfzeile, Inhaltsbereich, Fußleiste, Fußleisten-Buttons und andere Zusätze ändern, indem Sie das folgende Snippet in der Datei `/apps/ws/css/newStyle.css` hinzufügen:
 
    ```css
    /*-------- Error Dialog -------------------------------------------------------------------------------------------------------------------*/
@@ -187,7 +187,7 @@ AEM Forms Workspace ermöglicht Ihnen, Fehlerdialoge anzupassen. Führen Sie die
    }
    ```
 
-1. Trennen Sie die Schaltflächenbereiche `.error-dialog` und `.foot-bar` für die Fußleistenschaltfläche von der zusammengesetzten Liste. Um diese Änderung vorzunehmen, fügen Sie der Datei „newStyle.css“ Folgendes hinzu:
+1. Für den Bereich mit den Fußleisten-Buttons trennen Sie die Button-Bereiche `.error-dialog` und `.foot-bar` von der Composite-Liste. Um diese Änderung vorzunehmen, fügen Sie der Datei „newStyle.css“ Folgendes hinzu:
 
    ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
@@ -200,7 +200,7 @@ AEM Forms Workspace ermöglicht Ihnen, Fehlerdialoge anzupassen. Führen Sie die
    }
    ```
 
-   nach
+   To
 
    ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
@@ -224,7 +224,7 @@ AEM Forms Workspace ermöglicht Ihnen, Fehlerdialoge anzupassen. Führen Sie die
 
 >[!NOTE]
 >
->Wenn Sie auf zusätzliche Bilder verweisen, fügen Sie sie in der gewünschten Hierarchie unter `/apps/ws/images` hinzu.
+>Wenn Sie auf weitere Bilder verweisen, fügen Sie sie in der gewünschten Hierarchie unter `/apps/ws/images` hinzu.
 
 ## Beispiele {#examples}
 
@@ -245,7 +245,7 @@ AEM Forms Workspace ermöglicht Ihnen, Fehlerdialoge anzupassen. Führen Sie die
 }
 ```
 
-nach
+To
 
 ```css
 .error-dialog{
@@ -278,7 +278,7 @@ nach
 }
 ```
 
-nach
+To
 
 ```css
 .error-dialog .head-bar{
