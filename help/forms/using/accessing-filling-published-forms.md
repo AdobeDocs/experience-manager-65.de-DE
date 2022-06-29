@@ -1,8 +1,8 @@
 ---
 title: Öffnen und Ausfüllen veröffentlichter Formulare
-seo-title: Öffnen und Ausfüllen veröffentlichter Formulare
+seo-title: Accessing and filling published forms
 description: Forms Portal bietet Webentwicklern Komponenten zum Erstellen und Anpassen von Formularportalen auf mit Adobe Experience Manager (AEM) erstellten Websites.
-seo-description: Forms Portal bietet Webentwicklern Komponenten zum Erstellen und Anpassen von Formularportalen auf mit Adobe Experience Manager (AEM) erstellten Websites.
+seo-description: Forms Portal equips Web Developers with components to create and customize a forms portal on websites authored using Adobe Experience Manager (AEM).
 uuid: 44731604-5d97-46fa-baa9-0c020c634fa7
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ discoiquuid: 88dc8ef2-95ce-4906-ac28-eecc3a32a64e
 docset: aem65
 exl-id: aedf890c-a2f1-412f-8897-2492ffab335a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 95%
+workflow-type: ht
+source-wordcount: '935'
+ht-degree: 100%
 
 ---
 
@@ -74,17 +74,17 @@ Der Zugriff auf die Formulare ist über den Link möglich, der in der Komponente
 
 Jedes Formular enthält Hilfeinformationen, mit denen Benutzer das Formular ausfüllen können.
 
-#### Formular und übermittelte Formulare  {#drafts-and-submission}
+#### Formular und übermittelte Formulare {#drafts-and-submission}
 
 Benutzer haben die Möglichkeit, den Entwurf eines Formulars zu speichern, indem sie auf die Schaltfläche „Speichern“ klicken. Dadurch können sie über einen längeren Zeitraum an einem Formular arbeiten, bevor sie es übermitteln.
 
 Die im Formular eingetragenen Daten (einschließlich Anlagen) werden als Entwurf auf dem Server gespeichert. Der Entwurf eines Formulars kann beliebig oft gespeichert werden. Das gespeicherte Formular wird auf der Registerkarte „Formular“ der Komponente „Drafts and Submissions“ der Seite angezeigt.
 
-Nach dem Ausfüllen des Formulars versenden Benutzer die Formulare, indem sie auf dem Formular auf die Schaltfläche „Übermitteln“·klicken. Die übermittelten Formulare werden auf der Registerkarte „Übermittelte Formulare“ der Komponente „Drafts and Submissions“ der Seite angezeigt.
+Nach dem Ausfüllen des Formulars versenden Benutzer die Formulare, indem sie auf dem Formular auf die Schaltfläche „Übermitteln“ klicken. Die übermittelten Formulare werden auf der Registerkarte „Übermittelte Formulare“ der Komponente „Drafts and Submissions“ der Seite angezeigt.
 
 >[!NOTE]
 >
->Gesendete Formulare werden auf der Registerkarte &quot;Gesendete Forms&quot;nur angezeigt, wenn die Sendeaktion für das adaptive Formular als Forms Portal-Sendeaktion konfiguriert ist. Weitere Informationen zu Sendeaktionen finden Sie unter [Konfigurieren der Sendeaktion](../../forms/using/configuring-submit-actions.md).
+>Übermittelte Formulare werden nur dann auf der Registerkarte „Übermittelte Formulare“ angezeigt, wenn die Übermittlungsaktion für das adaptive Formular als Forms Portal-Übermittlungsaktion konfiguriert ist. Weitere Informationen zu Sendeaktionen finden Sie unter [Konfigurieren der Sendeaktion](../../forms/using/configuring-submit-actions.md).
 
 ![Komponente „Drafts and Submissions“](assets/draft-submission.png)
 
