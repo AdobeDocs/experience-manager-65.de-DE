@@ -1,8 +1,8 @@
 ---
 title: Layout und Positionierung von Fehlermeldungen eines adaptiven Formulars anpassen
-seo-title: Layout und Positionierung von Fehlermeldungen eines adaptiven Formulars anpassen
+seo-title: Customize layout and positioning of error messages of an adaptive form
 description: 'Sie können Layout und Positionierung von Fehlermeldungen eines adaptiven Formulars anpassen. '
-seo-description: 'Sie können Layout und Positionierung von Fehlermeldungen eines adaptiven Formulars anpassen. '
+seo-description: You can customize layout and positioning of the error messages of an adaptive for.
 uuid: 6d3490f6-c867-44c9-a527-55f6d7221f99
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ discoiquuid: 136ac7e3-9d1f-4d58-bd4f-9dbe09eeafee
 docset: aem65
 exl-id: 5cb3ee55-f411-4692-84f7-89bf6ade729d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 87%
+workflow-type: ht
+source-wordcount: '529'
+ht-degree: 100%
 
 ---
 
@@ -30,12 +30,12 @@ Sie können Layout und Positionierung von Fehlermeldungen eines adaptiven Formul
 
 Sie können das Layout eines einzelnen Felds oder aller Felder anpassen, um die Position von Beschriftungen und Fehlermeldungen anzupassen. Führen Sie die folgenden Schritte aus, um ein benutzerdefiniertes Layout auf ein Feld anzuwenden:
 
-### Layout eines einzelnen Felds anpassen  {#customize-layout-of-a-single-field}
+### Layout eines einzelnen Felds anpassen {#customize-layout-of-a-single-field}
 
 Führen Sie die folgenden Schritte aus, um ein benutzerdefiniertes Layout auf ein einzelnes Feld anzuwenden:
 
-1. Öffnen Sie das Formular im **Stilmodus**. Um das Formular im Stilmodus zu öffnen, tippen Sie in der Seitensymbolleiste auf ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
-1. Wählen Sie in der Seitenleiste unter **Formularobjekte** das Feld aus und tippen Sie auf die Bearbeitungsschaltfläche ![edit-button](assets/edit-button.png).
+1. Öffnen Sie das Formular im **Stilmodus**. Um das Formular im Stilmodus zu öffnen, tippen Sie in der Seitensymbolleiste auf ![canvas-drop-down](assets/canvas-drop-down.png) > **Stil**.
+1. Wählen Sie in der Randleiste unter **Formularobjekte** das Feld aus und tippen Sie auf die Bearbeiten-Schaltfläche ![edit-button](assets/edit-button.png).
 1. Wählen Sie den Status des Feldes, das Sie anpassen möchten, und geben Sie den Stil für diesen Status an.
 
    ![Festlegen des Inline-Stils für ein Feld](assets/edit-error-state.png)
@@ -47,16 +47,16 @@ Mit AEM Forms können Sie jetzt ein Design erstellen und auf Ihr Formular anwend
 Indem Sie Designs im Design-Editor erstellen, könen Sie das Layout aller Felder im Formular anpassen. Nachdem Sie ein Design erstellt haben, führen Sie die folgenden Schritte aus, um es auf ein Formular anzuwenden:
 
 1. Öffnen Sie das Formular im Bearbeitungsmodus.
-1. Wählen Sie im Bearbeitungsmodus eine Komponente aus, tippen Sie auf ![Feldebene](assets/field-level.png) > **Container für adaptive Formulare** und tippen Sie dann auf ![cmppr](assets/cmppr.png).
+1. Wählen Sie im Bearbeitungsmodus eine Komponente aus und tippen Sie anschließend auf ![field-level](assets/field-level.png) > **Container für ein adaptives Formular** und dann auf ![cmppr](assets/cmppr.png).
 1. Wählen Sie in der Seitenleiste unter „Adaptives Formulardesign“ das Design, das Sie im Design-Editor erstellt haben.
 
-## Benutzerdefiniertes Feldlayout definieren  {#create-a-custom-field-layout}
+## Benutzerdefiniertes Feldlayout definieren {#create-a-custom-field-layout}
 
 1. Öffnen Sie CRXDE Lite. Die Standard-URL lautet https://&#39;[server]:[port]&#39;/crx/de.
 1. Kopieren Sie ein Feldlayout vom Knoten „/libs/fd/af/layouts/field“ (z. B. defaultFieldLayout) in den Knoten „/apps“ (z. B. „/apps/af-field-layout“).
 1. Benennen Sie den kopierten Knoten und die Datei „defaultFieldLayout.jsp“ um. Beispielsweise in „errorOnRight.jsp“. 
 
-1. Ändern Sie den Wert der Eigenschaften &quot;qtip&quot;und &quot;jcr:description&quot;des kopierten Knotens. Ändern Sie z. B. den Wert der Eigenschaften in „Error On Right“ 
+1. Ändern Sie die Werte der Eigenschaften „qtip“ und „jcr:description“ des kopierten Knotens. Ändern Sie z. B. den Wert der Eigenschaften in „Error On Right“ 
 
 1. Um neue Stile und Verhaltensweisen hinzuzufügen, erstellen Sie eine Clientbibliothek unter dem Knoten „/etc“.
 
