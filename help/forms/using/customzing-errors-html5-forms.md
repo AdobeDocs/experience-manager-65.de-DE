@@ -1,8 +1,8 @@
 ---
 title: Anpassen von Fehlermeldungen für HTML5-Formulare
-seo-title: Anpassen von Fehlermeldungen für HTML5-Formulare
+seo-title: Customizing error messages for HTML5 forms
 description: Erfahren Sie, wie Sie die Anzeige von Fehlermeldungen für HTML5-Formulare anpassen, einschließlich wie Sie deren Position und Aussehen ändern.
-seo-description: Erfahren Sie, wie Sie die Anzeige von Fehlermeldungen für HTML5-Formulare anpassen, einschließlich wie Sie deren Position und Aussehen ändern.
+seo-description: Learn how to customize the display of error messages for HTML5 forms including how to change their position and appearance.
 uuid: 6f48b64e-858f-4323-ad50-88e25f3c2e3d
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
@@ -10,9 +10,9 @@ discoiquuid: 44e49789-9075-41b3-bce8-03e8efce2d5a
 feature: Mobile Forms
 exl-id: c4ae53a3-8de1-4985-a73e-829749de9814
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 84%
+workflow-type: ht
+source-wordcount: '515'
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ Der Artikel stellt die Schritte bereit, um HTML5-Fehlermeldung anzupassen um,
 
 * dass das Erscheinungsbild und die Position der Fehlermeldungen geändert werden. Die Fehlermeldung können oberhalb, unterhalb oder an der rechten Seite eines Felds angezeigt werden.
 * Anzeigen von Fehlermeldungen für mehrere Felder jederzeit.
-* den Fehler unabhängig davon anzeigen, ob ein Feld ausgewählt ist oder nicht.
+* Anzeigen der Fehlermeldung unabhängig davon, ob ein Feld ausgewählt ist oder nicht.
 
-## Anpassen von Fehlermeldungen{#customizing-error-messages-nbsp}
+## Anpassen von Fehlermeldungen  {#customizing-error-messages-nbsp}
 
 Laden Sie vor dem Anpassen der Fehlermeldungen das angehängte Paket herunter und extrahieren Sie es (CustomErrorManager-1.0-SNAPSHOT.zip).
 
@@ -34,18 +34,18 @@ Nachdem Sie das Paket entpackt haben, öffnen Sie den Ordner CustomErrorManager-
 
 [Datei laden](assets/customerrormanager-1.0-snapshot.zip)
 
-### Anpassen der Position der Fehlermeldungen{#customizing-the-position-of-error-messages-nbsp}
+### Anpassen der Position der Fehlermeldungen  {#customizing-the-position-of-error-messages-nbsp}
 
 Fügen Sie zum Anpassen der Fehlermeldungsposition für jedes Fehler- und Warnfeld den Tag &lt;div> hinzu. Positionieren Sie den Tag &lt;div> auf der linken oder rechten Seite und wenden Sie auf den Tag &lt;div> CSS-Stile an. Ausführliche Anweisungen finden Sie in unten aufgeführtem Verfahren:
 
-1. Navigieren Sie zum Ordner `CustomErrorManager-1.0-SNAPSHOT`und öffnen Sie den Ordner `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` .
-1. Öffnen Sie die Datei `customErrorManager.js` zur Bearbeitung. Die Funktion `markError` in der Datei akzeptiert die folgenden Parameter:
+1. Navigieren Sie zum Ordner `CustomErrorManager-1.0-SNAPSHOT` und öffnen Sie den Ordner `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript`.
+1. Öffnen Sie die Datei `customErrorManager.js` zum Bearbeiten. Die `markError`-Funktion in der Datei akzeptiert folgende Parameter:
 
    |  |  |
    |---|---|
    | jqWidget | jqWidget ist der Griff für das Widget. |
    | msg | enthält die Fehlermeldung |
-   | type | gibt an, ob es sich um einen Fehler oder eine Warnung handelt |
+   | Typ | gibt an, ob es sich um einen Fehler oder eine Warnung handelt |
 
 1. Bei der standardmäßigen Implementierung werden Fehlermeldungen auf der rechten Seite des Felds angezeigt. Verwenden Sie folgenden Code, um Fehlermeldungen oben anzuzeigen.
 
@@ -80,11 +80,11 @@ Fügen Sie zum Anpassen der Fehlermeldungsposition für jedes Fehler- und Warnfe
 1. Navigieren Sie zum Ordner `CustomErrorManager-1.0-SNAPSHOT` und erstellen Sie ein Archiv der Ordner jcr_root und META-INF. Benennen Sie das Archiv in CustomErrorManager-1.0-SNAPSHOT.zip um.
 1. Verwenden Sie den Package Manager, um das Paket herunterzuladen und zu installieren.
 
-## Anzeigen von Fehlermeldungen für mehrere Felder{#display-error-messages-for-multiple-fields-nbsp}
+## Anzeigen von Fehlermeldungen für mehrere Felder  {#display-error-messages-for-multiple-fields-nbsp}
 
 Verwenden Sie das angehängte Paket, um die Fehlermeldungen für alle Felder gleichzeitig anzuzeigen. Verwenden Sie zum Anzeigen einer einzelnen Fehlermeldung das Standardprofil.
 
-### Anpassen des Erscheinungsbilds der Fehlermeldungen.{#customizing-the-appearance-of-error-messages-nbsp}
+### Anpassen des Erscheinungsbilds der Fehlermeldungen.  {#customizing-the-appearance-of-error-messages-nbsp}
 
 1. Navigieren Sie zum Ordner etc\clientlibs\mf-custom-error-manager\CustomErrorManager\css.
 
@@ -122,7 +122,7 @@ Verwenden Sie das angehängte Paket, um die Fehlermeldungen für alle Felder gle
 
 Standardmäßig verwenden HTML5-Formulare ein Standardprofil: https://&lt;server>/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location>&amp;template=&lt;name of the xdp>
 
-Um ein Formular mit den benutzerdefinierten Fehlermeldungen anzuzeigen, rendern Sie das Formular mit dem Fehlerprofil: https://&lt;server>/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location>&amp;template=&lt;name of the xdp>
+Rendern Sie zum Anzeigen eines Formulars mit den angepassten Fehlermeldungen das Formular mit dem Fehlerprofil: http://&lt;server>/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location>&amp;template=&lt;name of the xdp>
 
 >[!NOTE]
 >
