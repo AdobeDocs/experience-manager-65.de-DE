@@ -1,8 +1,8 @@
 ---
 title: ConvertPDF-Dienst
-seo-title: ConvertPDF-Dienst
+seo-title: ConvertPDF Service
 description: Mithilfe des ConvertPDF-Dienstes von AEM Forms werden PDF-Dokumente in PostScript- oder Bilddateien konvertiert.
-seo-description: Mithilfe des ConvertPDF-Dienstes von AEM Forms werden PDF-Dokumente in PostScript- oder Bilddateien konvertiert.
+seo-description: Use AEM Forms ConvertPDF service to convert PDF documents to PostScript or image files.
 uuid: 7fa94c8c-485b-4a77-bcd3-ed716e3cf316
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,15 +10,15 @@ topic-tags: document_services
 discoiquuid: 5ec4f0ec-a9fd-4571-9b9a-278f4622c028
 exl-id: 575bab27-d973-47fa-a0da-fa889cec6f27
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 94%
+workflow-type: ht
+source-wordcount: '398'
+ht-degree: 100%
 
 ---
 
 # ConvertPDF-Dienst {#convertpdf-service}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Der Convert PDF-Dienst konvertiert PDF-Dokumente in PostScript oder Bilddateien (JPEG, JPEG 2000, PNG und TIFF). Das Konvertieren eines PDF-Dokuments in PostScript ist nützlich für die unbeaufsichtigte serverbasierte Druckausgabe auf PostScript-Druckern. Das Konvertieren eines PDF-Dokuments in eine mehrseitige TIFF-Datei ist beim Archivieren von Dokumenten in Content Management-Systemen praktisch, die PDF-Dokumente nicht unterstützen.
 
@@ -29,7 +29,7 @@ Mit dem Convert PDF-Dienst können Sie Folgendes ausführen:
 
 ## Konfigurieren der Eigenschaften des Dienstes   {#properties}
 
-Sie können den Dienst **AEMFD ConvertPDF** in AEM-Konsole verwenden, um Eigenschaften für diesen Dienst zu konfigurieren. Die Standard-URL AEM Konsole lautet `https://[host]:'port'/system/console/configMgr`.
+Sie können den Dienst **AEMFD ConvertPDF** in AEM-Konsole verwenden, um Eigenschaften für diesen Dienst zu konfigurieren. Die Standard-URL der AEM-Konsole lautet `https://[host]:'port'/system/console/configMgr`.
 
 ## Verwendung des Dienstes {#using-the-service}
 
@@ -134,8 +134,7 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 
 Die Ausführung des ConvertPDF-Dienstes über einen Workflow ist ähnlich wie die Ausführung über JSP/Servlet.
 
-Der einzige Unterschied beim Ausführen des Dienstes über JSP/Servlet liegt darin, dass das Dokumentobjekt automatisch eine Instanz des ResourceResolver-Objekts vom ResourceResolverHelper-Objekt abruft. Dieser automatische Mechanismus funktioniert nicht, wenn der Code in einem Workflow aufgerufen wird. Bei einem Workflow müssen Sie ausdrücklich eine Instanz des ResourceResolver-Objekts an die Dokument-Klassen-Constructor übermitteln. Anschließend verwendet das Dokumentobjekt
-bereitgestelltes ResourceResolver -Objekt zum Lesen von Inhalten aus dem Repository.
+Der einzige Unterschied beim Ausführen des Dienstes über JSP/Servlet liegt darin, dass das Dokumentobjekt automatisch eine Instanz des ResourceResolver-Objekts vom ResourceResolverHelper-Objekt abruft. Dieser automatische Mechanismus funktioniert nicht, wenn der Code in einem Workflow aufgerufen wird. Bei einem Workflow müssen Sie ausdrücklich eine Instanz des ResourceResolver-Objekts an die Dokument-Klassen-Constructor übermitteln. Dann benutzt das Document-Objekt das bereitgestellte ResourceResolver-Objekt, um Inhalt aus dem Repository zu lesen.
 
 Der folgende Beispielworkflow-Prozess konvertiert das Eingabedokument in ein PostScript-Dokument. Der Code ist in ECMAScript geschrieben und das Dokument wird als Workflow-Nutzlast übergeben:
 
