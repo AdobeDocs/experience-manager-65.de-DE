@@ -1,20 +1,20 @@
 ---
 title: Layout-Design
-seo-title: Layout-Design
+seo-title: Layout Design
 description: Layout-Designdetails erklären, wie Sie Layouts für Ihre Briefe oder interaktive Kommunikation in Correspondence Management erstellen können.
-seo-description: Layout-Design In Details wird erläutert, wie Sie Layouts erstellen können, die für Ihre Briefe oder interaktive Kommunikation verwendet werden.
+seo-description: Layout Design Details explains how you can create layouts to be used for your letters or Interactive Communications.
 uuid: 469a8a71-88f7-4102-bb02-38ed05390f6c
 content-type: reference
 topic-tags: correspondence-management, interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 683809ac-089b-49bf-a72c-67d32439081f
 docset: aem65
-feature: Korrespondenzverwaltung
+feature: Correspondence Management
 exl-id: 9e1b0067-c7dc-4bbb-a209-d674592be858
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '2192'
-ht-degree: 66%
+workflow-type: ht
+source-wordcount: '2170'
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ XFA-Formularvorlagen oder XDPs sind die Vorlagen für:
 
 * Layout-Fragmente
 
-Eine XDP wird mit Adobe Forms Designer entwickelt. In diesem Artikel finden Sie Details zum Entwerfen Ihrer XDPs für die Erstellung effektiver Korrespondenzen/interaktiver Kommunikation, z. B. wo Formularfelder oder Zielbereiche verwendet werden und wann Layout-Fragmente verwendet werden.
+Eine XDP wird mit Adobe Forms Designer entwickelt. In diesem Artikel finden Sie Informationen zum Erstellen von XDPs und zum Erstellen einer effektiven Korrespondenz/interaktiven Kommunikation, z. B. wo Formularfelder oder Zielbereiche verwendet werden und wann Layout-Fragmente verwendet werden sollten.
 
 ## Erstellen eines Layouts für Briefe oder für den Druckkanal von interaktiver Kommunikation {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
 
@@ -50,17 +50,17 @@ Befolgen Sie diese Schritte, um Layouts für Briefe/Druckkanal einer interaktive
    1. Fügen Sie für den primären Standortabschnitt einen Platzhalter-Zielbereich hinzu. Der Platzhalter ist an den primären Fragmentstandort gebunden, wenn der Brief/die interaktive Kommunikation entwickelt wird.
    1. Laden Sie das Layout (und ggf. das Fragment, das das Layout verwendet) in den AEM Forms-Server hoch.
 
-### Teilformular in einer XDP-Vorlage verwenden {#usesubformxdp}
+### Verwenden eines Teilformulars in einer XDP-Vorlage {#usesubformxdp}
 
-Nachdem Sie das für die Erstellung der interaktiven Kommunikation erforderliche Layout analysiert haben, können Sie Teilformulare in der XDP-Vorlage mit Forms Designer erstellen. Leere Teilformularkomponenten, die in der XDP-Vorlage verwendet werden, führen zur Anzeige von Zielbereichen im Druckkanal der interaktiven Kommunikation.
+Nachdem Sie das für die Erstellung der interaktiven Kommunikation erforderliche Layout analysiert haben, können Sie mithilfe von Forms Designer Teilformulare in der XDP-Vorlage erstellen. Leere Teilformularkomponenten, die in der XDP-Vorlage verwendet werden, führen zur Anzeige von Zielbereichen im Druckkanal der interaktiven Kommunikation.
 
 >[!NOTE]
 >
->Fügen Sie Inhalt zum Druckkanal der interaktiven Kommunikation hinzu, anstatt Inhalt zur Teilformularkomponente in der XDP-Vorlage hinzuzufügen. Fügen Sie den Zielbereichen im Druckkanal mithilfe von [Dokumentfragmenten, Diagrammen, Bildern](create-interactive-communication.md#step2) und Layout-Fragmenten Inhalt hinzu.
+>Fügen Sie Inhalte zum Druckkanal der interaktiven Kommunikation hinzu, anstatt Inhalte zur Teilformularkomponente in der XDP-Vorlage hinzuzufügen. Fügen Sie den Zielbereichen im Druckkanal mithilfe von [Dokumentfragmenten, Diagrammen, Bildern](create-interactive-communication.md#step2) und Layout-Fragmenten Inhalte hinzu.
 
-Führen Sie die folgenden Schritte aus, um das Teilformular in einer XDP-Vorlage zu verwenden:
+Führen Sie die folgenden Schritte durch, um das Teilformular in einer XDP-Vorlage zu verwenden:
 
-1. Öffnen Sie den Forms Designer, wählen Sie **Datei** > **Neu** > **Leeres Formular verwenden**, tippen Sie auf **Weiter** und tippen Sie dann auf **Fertig stellen**, um das Formular zur Vorlagenerstellung zu öffnen.
+1. Öffnen Sie den Forms Designer, wählen Sie **Datei** > **Neu** > **Leeres Formular verwenden**, tippen Sie auf **Weiter** und dann auf **Beenden**, um das Formular für die Vorlagenerstellung zu öffnen.
 
    Stellen Sie sicher, dass die **Objektbibliothek** und die Option **Objekt** im Menü **Fenster** ausgewählt werden.
 
@@ -69,25 +69,25 @@ Führen Sie die folgenden Schritte aus, um das Teilformular in einer XDP-Vorlage
    ![Komponenten-Designer](assets/subform_component_designer_new.png)
 
 1. Wählen Sie das Teilformular aus, um die Optionen für das Teilformular im Fenster **Objekt** im rechten Bereich anzuzeigen.
-1. Wählen Sie die Registerkarte **Teilformular** und wählen Sie **Textfluss** aus der Dropdownliste **Inhalt** aus. Ziehen Sie den linken Endpunkt des Teilformulars, um die Länge anzupassen.
+1. Wählen Sie die Registerkarte **Teilformular** und wählen Sie **Textfluss** aus der Dropdown-Liste **Inhalt** aus. Ziehen Sie den linken Endpunkt des Teilformulars, um die Länge anzupassen.
 
-   ![Textfluss-Teilformular](assets/object_subform_flowed_new.png)
+   ![Teilformular mit Textfluss](assets/object_subform_flowed_new.png)
 
-1. Auf der Registerkarte **Bindung** :
+1. Auf der Registerkarte **Bindung**:
 
-   1. Geben Sie im Feld **Name** einen Namen für das Teilformular an.
+   1. Geben Sie einen Namen für das Teilformular im Feld **Name** an.
    1. Wählen Sie **Keine Datenbindung** aus der Dropdown-Liste **Datenbindung**.
 
 1. Wählen Sie auf ähnliche Weise das Stammteilformular aus dem linken Bereich aus.
 
    ![Stammteilformular](assets/root_subform_designer_new.png)
 
-1. Wählen Sie die Registerkarte **Teilformular** und wählen Sie **Textfluss** aus der Dropdownliste **Inhalt** aus. Führen Sie auf der Registerkarte **Bindungen** folgende Schritte aus:
+1. Wählen Sie die Registerkarte **Teilformular**, und wählen Sie **Textfluss** aus der Dropdown-Liste **Inhalt**. Führen Sie auf der Registerkarte **Bindungen** folgende Schritte aus:
 
-   1. Geben Sie im Feld **Name** einen Namen für das Teilformular an.
+   1. Geben Sie einen Namen für das Teilformular im Feld **Name** an.
    1. Wählen Sie **Keine Datenbindung** aus der Dropdown-Liste **Datenbindung**.
 
-   Wiederholen Sie die Schritte 2 bis 5, um der XDP-Vorlage weitere Teilformulare hinzuzufügen. Fügen Sie den Zielbereichen [Text, Dokumentfragmente, Bilder und Diagramme](create-interactive-communication.md#step2) nur während der Erstellung der interaktiven Kommunikation hinzu.
+   Wiederholen Sie die Schritte 2 bis 5, um weitere Teilformulare zur XDP-Vorlage hinzuzufügen. Fügen Sie [Text, Dokumentfragmente, Bilder und Diagramme](create-interactive-communication.md#step2) nur während des Verfassens der interaktiven Kommunikation zu den Zielbereichen hinzu.
 
 1. Wählen Sie **Datei** > **Speichern unter**, um die Datei im lokalen Dateisystem zu speichern:
 
@@ -96,49 +96,49 @@ Führen Sie die folgenden Schritte aus, um das Teilformular in einer XDP-Vorlage
 
    1. Tippen Sie auf **Speichern**.
 
-### Bildfeldkomponente in XDP-Vorlage verwenden {#use-image-field-component-in-an-xdp-template}
+### Verwenden der Bildfeldkomponente in einer XDP-Vorlage {#use-image-field-component-in-an-xdp-template}
 
-Verwenden Sie die Komponente Bildfeld oder Teilformular in der XDP-Vorlage und fügen Sie beim Erstellen der interaktiven Kommunikation ein Bild hinzu.
+Verwenden Sie die Bildfeld- oder Teilformularkomponente in der XDP-Vorlage, um während des Erstellens der interaktiven Kommunikation ein Bild hinzuzufügen.
 
 >[!NOTE]
 >
->Fügen Sie dem Druckkanal der interaktiven Kommunikation ein Bild hinzu, anstatt in der XDP-Vorlage ein Bild zur Komponente Bildfeld oder Teilformular hinzuzufügen. Weitere Informationen finden Sie unter [Hinzufügen von Inhalten zur interaktiven Kommunikation](../../forms/using/create-interactive-communication.md#step2).
+>Fügen Sie ein Bild zum Druckkanal der interaktiven Kommunikation hinzu, anstatt ein Bild zur Bildfeld- oder Teilformularkomponente in der XDP-Vorlage hinzuzufügen. Weitere Informationen finden Sie unter [Hinzufügen von Inhalten zur interaktiven Kommunikation](../../forms/using/create-interactive-communication.md#step2).
 
 Führen Sie die folgenden Schritte aus, um die Bildfeldkomponente in einer XDP-Vorlage zu verwenden:
 
-1. Ziehen Sie die Komponente **Bildfeld** aus der **Objektbibliothek** in das Formular.
+1. Ziehen Sie die **Bildfeldkomponente** per Drag-and-Drop aus der **Objektbibliothek** in das Formular.
 1. Wählen Sie das Teilformular aus, um die Optionen für das Teilformular im Fenster **Objekt** im rechten Bereich anzuzeigen.
-1. Auf der Registerkarte **Bindung** :
+1. Auf der Registerkarte **Bindung**:
 
-   1. Geben Sie im Feld **Name** einen Namen für das Bildfeld an.
+   1. Geben Sie einen Namen für das Bildfeld im Feld **Name** an.
    1. Wählen Sie **Keine Datenbindung** aus der Dropdown-Liste **Datenbindung**.
 
 ### XDP-Vorlage für Layoutfragmente erstellen {#xdplayoutfragments}
 
-Verwenden Sie die Komponente &quot;Tabelle&quot;in Forms Designer, um Layout-Fragmente zu erstellen, und verwenden Sie sie dann zum Erstellen von Tabellen beim Erstellen des Druckkanals der interaktiven Kommunikation. Durch die Verwendung von Layout-Fragmenten zur Erstellung von Tabellen wird sichergestellt, dass der Tabelleninhalt die Struktur behält, wenn der Webkanal automatisch über den Druckkanal generiert wird.
+Verwenden Sie die Tabellenkomponente in Forms Designer, um Layout-Fragmente zu erstellen, und verwenden Sie diese dann, um Tabellen zu erstellen, während Sie den Druckkanal der interaktiven Kommunikation verfassen. Durch die Verwendung von Layout-Fragmenten zur Erstellung von Tabellen wird sichergestellt, dass der Tabelleninhalt seine Struktur behält, wenn der Web-Kanal automatisch mithilfe des Druckkanals generiert wird.
 
 >[!NOTE]
 >
->Geben Sie Text in die Tabellenzellen ein oder erstellen Sie [nur beim Authoring der interaktiven Kommunikation eine Bindung mit den Formulardatenmodellobjekten](create-interactive-communication.md#step2).
+>Geben Sie Text in die Tabellenzellen ein oder [erstellen Sie Bindungen mit Formulardatenmodellobjekten](create-interactive-communication.md#step2) nur während des Verfassens der interaktiven Kommunikation.
 
-Führen Sie die folgenden Schritte aus, um die Komponente Tabelle in der XDP-Vorlage mit Forms Designer zu verwenden:
+Führen Sie die folgenden Schritte aus, um in der XDP-Vorlage die Tabellenkomponente mithilfe von Forms Designer zu verwenden:
 
-1. Ziehen Sie die Komponente **Tabelle** aus der **Objektbibliothek** in das Formular.
-1. Fügen Sie im Dialogfeld **Tabelle** ein:
+1. Ziehen Sie die **Tabellenkomponente** per Drag-and-Drop aus der **Objektbibliothek** auf das Formular.
+1. Im Dialogfeld **Tabelle einfügen**:
 
    1. Geben Sie die Anzahl der Zeilen und Spalten für die Tabelle an.
-   1. Aktivieren Sie das Kontrollkästchen **Kopfzeile in Tabelle** einschließen , um eine Zeile für die Tabellenüberschrift einzuschließen.
+   1. Aktivieren Sie das Kontrollkästchen **Kopfzeile in Tabelle einschließen**, um eine Zeile für die Tabellenkopfzeile einzufügen.
    1. Tippen Sie auf **OK**.
 
-1. Tippen Sie im linken Bereich neben dem Namen der Tabelle auf **+**, klicken Sie mit der rechten Maustaste auf die Zellennamen in der Kopfzeile und anderen Zeilen und wählen Sie **Objekt umbenennen** aus, um die Tabellenzellen umzubenennen.
-1. Klicken Sie auf die Textfelder für die Tabellenüberschrift in der **Designansicht** und benennen Sie sie um.
-1. Ziehen Sie die Komponente **Textfeld** aus der **Objektbibliothek** in jede Tabellenzelle in der **Designansicht**. Führen Sie diesen Schritt aus, um Tabellenzellen bei der Erstellung der interaktiven Kommunikation mit den Formulardatenmodellobjekten zu binden.
+1. Tippen Sie auf **+** im linken Bereich neben dem Namen der Tabelle, klicken Sie mit der rechten Maustaste auf die Zellennamen in der Kopfzeile und in anderen Zeilen und wählen Sie **Objekt umbenennen**, um die Tabellenzellen umzubenennen.
+1. Klicken Sie auf die Textfelder für die Tabellenkopfzeilen in der **Design-Ansicht** und benennen Sie sie um.
+1. Ziehen Sie in der **Design-Ansicht** die **Textfeldkomponente** per Drag-and-Drop aus der **Objektbibliothek** auf jede Tabellenzelle. Führen Sie diesen Schritt aus, um Tabellenzellen bei der Erstellung der interaktiven Kommunikation an die Formulardatenmodellobjekte zu binden.
 
    ![Textfelder in einer Tabelle](assets/text_fields_table_new.png)
 
-1. Wählen Sie den Namen der Zeile im linken Bereich aus und wählen Sie **Objekt** > **Bindung** > **Zeile für jedes Datenelement wiederholen**. Führen Sie diesen Schritt aus, um sicherzustellen, dass die Tabellenzeile für jedes in der Datenbank verfügbare Datenelement automatisch wiederholt wird, wenn eine Bindung zwischen den Tabellenzellen dieser Zeile mit Formulardatenmodellobjekten des Erfassungstyps erstellt wird.
+1. Klicken Sie auf den Namen der Zeile im linken Bereich und wählen Sie **Objekt** > **Bindung** > **Zeile für jedes Datenelement wiederholen**. Führen Sie diesen Schritt aus, um sicherzustellen, dass die Tabellenzeile für jedes in der Datenbank verfügbare Datenelement automatisch wiederholt wird, wenn eine Bindung zwischen den Tabellenzellen dieser Zeile mit Formulardatenmodellobjekten des Sammlungstyps erstellt wird.
 
-   Geben Sie Text in die Tabellenzellen ein oder erstellen Sie [nur beim Authoring der interaktiven Kommunikation eine Bindung mit den Formulardatenmodellobjekten](create-interactive-communication.md#step2).
+   Geben Sie Text in die Tabellenzellen ein oder [erstellen Sie Bindungen mit Formulardatenmodellobjekten](create-interactive-communication.md#step2) nur während des Verfassens der interaktiven Kommunikation.
 
 1. Wählen Sie **Datei** > **Speichern unter**, um die Datei im lokalen Dateisystem zu speichern:
 
@@ -153,7 +153,7 @@ Nachdem Sie eine XDP-Vorlage mit dem Forms-Designer erstellt haben, müssen Sie 
 
 1. Wählen Sie **Formulare** > **Formulare &amp; Dokumente**.
 1. Tippen Sie auf **Erstellen** > **Datei hochladen**.
-1. Navigieren Sie zum Speicherort der XDP-Vorlage im lokalen Dateisystem und tippen Sie auf **Öffnen** , um die XDP-Vorlage auf den AEM Forms-Server zu importieren.
+1. Navigieren Sie zum Speicherort der XDP-Vorlage im lokalen Dateisystem und tippen Sie auf **Öffnen**, um die XDP-Vorlage auf den AEM Forms-Server zu importieren.
 
 ## Schema verwenden {#using-schema}
 
@@ -168,7 +168,7 @@ Standardmäßig werden alle Felder als verknüpfungsfähig mit vielen anderen Da
 
 Ein verknüpfungsfähiges Feld muss folgende Voraussetzungen erfüllen:
 
-* ein XFA &lt;field> oder &lt;exclGroup> sein.
+* es muss ein XFA &lt;field> oder &lt;exclGroup> sein
 * Es muss einen XFA-Bindungsverweis haben.
 * Wenn es sich um &lt;exclGroup> handelt, muss es über mindestens ein untergeordnetes Feld für ein Optionsfeld verfügen, andernfalls kann die Art des Wertes nicht ermittelt werden.
 
@@ -180,13 +180,13 @@ Auf ein verknüpfungsfähiges Feld darf Folgendes NICHT zutreffen:
 
 * An den Namen ist das Suffix „_int“ angehängt.
 * Das Feld „binding“ ist auf „none“ eingestellt.
-* ein untergeordnetes Element eines &lt;exclGroup> -Elements sein.
+* es muss ein untergeordnetes Element eines &lt;exclGroup>-Elements sein
 
 Solange ein verknüpfungsfähiges Feld die oben genannten Kriterien erfüllt, kann es sich im Layout an jeder beliebigen Position und in jeder Verschachtelungstiefe befinden. Verknüpfungsfähige Felder lassen sich auf Masterseiten verwenden.
 
 Felder sind in Bezug auf ihre Layoutkonfiguration flexibler als Unterformulare, die als Zielfelder verwendet werden, allerdings sind Felder an eine einzige Wertart gebunden. Sie können ein Feld in die Breite ziehen oder es mit einer festen Breite oder Höhe einrichten usw. Das aufgelöste Modul- oder Regelergebnis wird in das Feld übernommen.
 
-## Wann sollten Unterformulare, wann Felder verwendet werden  {#deciding-when-to-use-subforms-and-text-nbsp-fields}
+## Wann sollten Unterformulare, wann Felder verwendet werden {#deciding-when-to-use-subforms-and-text-nbsp-fields}
 
 Verwenden Sie ein Unterformular für Inhalte aus mehreren Modulen in einem von oben nach unten angeordneten Layout mit vertikalem Fluss (mehrere Absätze oder Bilder). Die Höhe eines Unterformulars nimmt zu, damit es den vorgesehenen Inhalt fassen kann: Achten Sie darauf, dass Ihr Layout diesen Umstand bewältigen kann. Wenn Sie nicht sicher sein können, dass der mit dem Unterformular/dem Zielbereich verknüpfte Inhalt niemals mehr Raum einnimmt als für das Unterformular vorgesehen ist, richten Sie das Unterformular als untergeordnetes Element eines fließenden Unterformular-Containers ein. Damit stellen Sie sicher, dass Layout-Objekte unterhalb des Unterformulars nach unten rücken, wenn die Höhe des Unterformulars zunimmt.
 
@@ -225,11 +225,11 @@ Verwenden Sie ein Feld, wenn Sie Moduldaten oder Daten aus einem Datenlexikonele
  </tbody>
 </table>
 
-## Sich wiederholende Elemente einrichten  {#setting-up-repetitive-elements}
+## Sich wiederholende Elemente einrichten {#setting-up-repetitive-elements}
 
 Wenn Elemente wie das Logo und die Adresse Ihres Unternehmens auf allen Seiten eines Briefs/einer interaktiven Kommunikation angezeigt werden, erstellen Sie für diese Elemente Formularfelder und platzieren Sie diese auf der Masterseite. Nehmen Sie die Bindung für diese Felder über den Feldnamen vor.
 
-## Geben Sie das Server-Renderformat {#specify-the-server-nbsp-render-format} an
+## Festlegen des Server-Render-Formats {#specify-the-server-nbsp-render-format}
 
 Verwenden Sie das Server-Renderformat des Layouts für das dynamische XML-Formular, andernfalls können Briefe/interaktive Kommunikation, die auf diesem Layout basieren, nicht korrekt gerendert werden. Das Server-Renderformat ist in Forms Designer standardmäßig auf das dynamische XML-Formular eingestellt. Sicherstellen, dass Sie das richtige Format verwenden:
 
