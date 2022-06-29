@@ -1,8 +1,8 @@
 ---
 title: Programmgesteuerte Verwaltung der PreferencesNodes
-seo-title: Programmgesteuerte Verwaltung der PreferencesNodes
-description: Verwenden Sie die Voreinstellungs-Manager-Dienst-API (Java), um die Voreinstellungsknoten programmgesteuert zu verwalten.
-seo-description: Verwenden Sie die Voreinstellungs-Manager-Dienst-API (Java), um die Voreinstellungsknoten programmgesteuert zu verwalten.
+seo-title: Programmatically managing the PreferencesNodes
+description: Verwenden Sie die Preferences Manager Service-API (Java), um die Voreinstellungsknoten programmgesteuert zu verwalten.
+seo-description: Use the Preferences Manager Service API (Java) to programmatically manage the Preferences Nodes.
 uuid: f0cb117a-a6cc-4ca5-8511-b3bc9f6738e9
 contentOwner: admin
 content-type: reference
@@ -12,34 +12,34 @@ discoiquuid: 9d4dba7f-49d8-4112-bc8a-04dafc99a936
 role: Developer
 exl-id: 108eb249-879b-4e4f-b431-8118b8656e62
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '245'
+ht-degree: 100%
 
 ---
 
 # Programmgesteuerte Verwaltung der Voreinstellungsknoten {#programmatically-managing-the-preferencesnodes}
 
-**Beispiele und Beispiele in diesem Dokument gelten nur für die AEM Forms on JEE-Umgebung.**
+**Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
 
-In diesem Thema wird beschrieben, wie Sie die Voreinstellungs-Manager-Dienst-API (Java) verwenden können, um die Voreinstellungsknoten programmgesteuert zu verwalten.
+In diesem Artikel wird beschrieben, wie Sie die Preferences Manager Service-API (Java) verwenden können, um die Voreinstellungsknoten programmgesteuert zu verwalten.
 
-Sie können die Konfigurationseinstellungen über die Administrator-Benutzeroberfläche manuell ändern. Um die Optionen zu ändern, navigieren Sie zu `Home>Settings>User Management> Configuration>Manual Configuration`. Importieren Sie `config.xml`, nachdem Sie die Änderungen vorgenommen haben. Sie werden feststellen, dass alle Änderungen außer den Änderungen am Knoten `/Adobe/Adobe Experience Manager Forms/Config/UM persist` verloren gehen. Die Vorschau von User Management Import und Export unterstützt keine Änderung der Konfigurationseinstellungen für andere Komponenten. Jetzt können diese Änderungen mit `PreferencesManagerServiceClient` APIs vorgenommen werden.
+Sie können die Konfigurationseinstellungen über die Administrator-Benutzeroberfläche manuell ändern. Um die Optionen zu ändern, navigieren Sie zu `Home>Settings>User Management> Configuration>Manual Configuration`. Wenn Sie `config.xml` importieren, nachdem Sie die Änderungen vorgenommen haben, werden Sie feststellen, dass alle Änderungen mit Ausnahme der Änderungen am Knoten `/Adobe/Adobe Experience Manager Forms/Config/UM persist` verloren gegangen sind. Die Vorschau von Import und Export für User Management unterstützt nicht das Ändern von Konfigurationseinstellungen für andere Komponenten. Diese Änderungen können jetzt mithilfe der `PreferencesManagerServiceClient`-APIs vorgenommen werden.
 
-**Zusammenfassung der** SchritteFühren Sie die folgenden Schritte aus, um die Voreinstellungsknoten programmgesteuert zu verwalten:
+**Zusammenfassung der Schritte** Um die Voreinstellungsknoten programmgesteuert zu verwalten, führen Sie die folgenden Schritte aus:
 
-1. Projektdateien einschließen.
+1. Schließen Sie Projektdateien ein.
 1. Erstellen eines PreferencesManagerService-Clients
 1. Aufrufen der entsprechenden Rollen- oder Berechtigungsvorgänge
 
-**Projektdateien einschließen**
+**Einschließen von Projektdateien**
 
-Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie eine Clientanwendung mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Webdienste verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
+Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
 **Erstellen eines PreferencesManagerService-Clients**
 
-Bevor Sie einen User Management PreferencesManagerService-Vorgang programmgesteuert ausführen können, müssen Sie einen PreferencesManagerService-Client erstellen. Mit der Java-API wird dies erreicht, indem ein PreferencesManagerServiceClient -Objekt erstellt wird.
+Bevor Sie einen PreferencesManagerService-Vorgang für das User Management programmgesteuert durchführen können, müssen Sie einen PreferencesManagerService-Client erstellen. Mit der Java-API wird dies erreicht, indem ein PreferencesManagerServiceClient-Objekt erstellt wird.
 
 **Aufrufen der entsprechenden Rollen- oder Berechtigungsvorgänge**
 
-Nachdem Sie den Service-Client erstellt haben, können Sie dann die Voreinstellungs-Manager-Vorgänge aufrufen. Mit dem Dienst-Client können Sie Berechtigungen lesen und festlegen.
+Nachdem Sie den Service-Client erstellt haben, können Sie dann die Voreinstellungs-Manager-Vorgänge aufrufen. Mit dem Service-Client können Sie Berechtigungen lesen und festlegen.
