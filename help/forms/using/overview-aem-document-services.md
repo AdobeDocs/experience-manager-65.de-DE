@@ -1,8 +1,8 @@
 ---
 title: Übersicht über AEM Document Services
-seo-title: Übersicht über AEM Document Services
+seo-title: Overview of AEM Document Services
 description: Bei AEM Document Services handelt es sich um einen Satz an OSGi-Diensten zum Erstellen, Zusammenstellen und Sichern von PDF-Dokumenten.
-seo-description: Bei AEM Document Services handelt es sich um einen Satz an OSGi-Diensten zum Erstellen, Zusammenstellen und Sichern von PDF-Dokumenten.
+seo-description: AEM Document Services are a set of OSGi Services for creating, assembling, and securing PDF Documents.
 uuid: 439144b7-f805-4819-9ed9-a6e9e374b5ed
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ discoiquuid: 10d406db-ac10-479b-b08b-d0735116a12b
 docset: aem65
 exl-id: 4c8a3877-1a3c-410d-ad1f-69c73ba4fcc1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1423'
-ht-degree: 96%
+workflow-type: ht
+source-wordcount: '1402'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Bei AEM Document Services handelt es sich um einen Satz an OSGi-Diensten zum Ers
 
 ## Ausgabe-Service {#output-service}
 
-Der Output-Dienst ermöglicht das Erstellen von Dokumenten in verschiedenen Formaten, einschließlich PDF, Laserdruckerformate und Beschriftungsdruckerformate. Laserdruckerformate sind PostScript und Printer Control Language (PCL). In der nachfolgenden Liste sind die Beschriftungsdruckerformate aufgeführt:
+Der Output-Dienst ermöglicht das Erstellen von Dokumenten in verschiedenen Formaten, einschließlich PDF, Laserdruckerformate und Beschriftungsdruckerformate. Laser-Druckerformate sind PostScript und Printer Control Language (PCL). In der nachfolgenden Liste sind die Beschriftungsdruckerformate aufgeführt:
 
 * Zebra (ZPL)
 * Intermec (IPL)
@@ -36,7 +36,7 @@ Ein Dokument kann zu einem Netzwerkdrucker, einem lokalen Drucker oder in eine D
 >
 >Ein Formularentwurf wird in der Regel mithilfe von Designer erstellt. Informationen zum Erstellen von Formularn für den Output-Dienst finden Sie in der Designer-Hilfe.
 
-Wenn Sie den Output-Dienst zum Zusammenführen von XML-Daten mit einem Formularentwurf verwenden, ist das Ergebnis ein nicht interaktives PDF-Dokument. Mit einem nicht interaktiven PDF-Dokument können Benutzer keine Daten in die Felder eingeben. Dagegen können Sie den Forms-Dienst verwenden, um ein interaktives PDF-Formular zu erstellen, mit dem Benutzer Daten in die Felder eingeben können.
+Wenn Sie den Output-Dienst zum Zusammenführen von XML-Daten mit einem Formularentwurf verwenden, ist das Ergebnis ein nicht interaktives PDF-Dokument. Bei einem nicht interaktiven PDF-Dokument können Benutzer keine Daten in die Felder eingeben. Dagegen können Sie den Forms-Dienst verwenden, um ein interaktives PDF-Formular zu erstellen, mit dem Benutzer Daten in die Felder eingeben können.
 
 Die folgenden vier Output-Dienstvorgänge stehen zur Verwendung zur Verfügung:
 
@@ -44,7 +44,7 @@ Die folgenden vier Output-Dienstvorgänge stehen zur Verwendung zur Verfügung:
 * **generatePrintedOutput**: Führt einen Formularentwurf mit Formulardaten zusammen, um ein Dokument zu erstellen, das entweder an einer Laserdrucker oder einen Beschriftungsnetzwerkdrucker gesendet werden soll.
 
 * **generatePDFOutputBatch**: Führt mehrere Vorlagen mit mehreren Datensätzen in einem einzigen Aufruf zusammen, um einen Stapel von PDF-Dateien zu generieren. Es gibt auch eine Option zum Generieren einer einzigen PDF durch Kombinieren aller PDFs
-* **generatePrintedOutputBatch**: Führt mehrere Vorlagen mit mehreren Datensätzen in einem einzigen Aufruf zusammen, um einen Stapel von Druckdokumenten zu generieren (PS, PCL, ZPL, DPL, IPL, TPCL). Es gibt auch eine Option zum Generieren eines einzigen Druckdokuments.
+* **generatePrintedOutputBatch**: Führt mehrere Vorlagen mit mehreren Dateneinträgen in einem einzigen Aufruf zusammen, um einen Stapel gedruckter Dokumente (PS, PCL, ZPL, DPL, IPL, TPCL) zu erzeugen. Es gibt auch eine Option zum Generieren eines einzigen Druckdokuments.
 
 ## Assembler-Service {#assembler-service}
 
@@ -91,9 +91,9 @@ Sie können eine einfache Eingabezuordnung zum Angeben der Speicherorte für Que
 * FTP
 * HTTP/HTTPS
 
-## Doc Assurance-Dienst {#doc-assurance-service}
+## DocAssurance-Dienst {#doc-assurance-service}
 
-Der Doc Assurance-Dienst unterstützt Sie beim Verschlüsseln und Entschlüsseln von Dokumenten, beim Erweitern der Funktionen von Adobe Reader mit zusätzlichen Nutzungsrechten sowie beim Hinzufügen digitaler Signaturen zu Ihren Dokumenten. Ihre Benutzer können mit PDF-Formularen und -Dokumenten mühelos interagieren, während in Ihrer Organisation Sicherheit, Archivierung und Compliance verbessert werden.
+Der DocAssurance-Dienst unterstützt Sie beim Verschlüsseln und Entschlüsseln von Dokumenten, beim Erweitern der Funktionen von Adobe Reader mit zusätzlichen Nutzungsrechten sowie beim Hinzufügen digitaler Signaturen zu Ihren Dokumenten. Ihre Benutzer können mit PDF-Formularen und -Dokumenten mühelos interagieren, während in Ihrer Organisation Sicherheit, Archivierung und Compliance verbessert werden.
 
 Der DocAssurance-Dienst umfasst drei Dienste: Signature, Encryption und Reader Extension.
 
@@ -111,7 +111,7 @@ Der Signature-Dienst greift auf Zertifikate und Berechtigungen zu, die im Trust 
 
 Der Encryption-Dienst ermöglicht das Ver- und Entschlüsseln von Dokumenten. Wird ein Dokument verschlüsselt, ist sein Inhalt nicht mehr lesbar. Beim Verschlüsseln eines PDF-Dokuments können Sie das gesamte PDF-Dokument (einschließlich Inhalt, Metadaten und Anlagen), alle Daten außer den Metadaten oder nur die Anlagen verschlüsseln. Ein autorisierter Benutzer kann das Dokument entschlüsseln, um Zugriff auf den Inhalt zu erhalten. Wenn ein PDF-Dokument mit einem Kennwort verschlüsselt wird, muss der Benutzer das Kennwort zum Öffnen angeben, damit das Dokument in Adobe Reader oder Acrobat angezeigt werden kann. Wenn ein PDF-Dokument mit einem Zertifikat verschlüsselt ist, muss der Benutzer das PDF-Dokument mithilfe eines privaten Schlüssels (Zertifikat) entschlüsseln. Der private Schlüssel, der zum Entschlüsseln des PDF-Dokuments verwendet wird, muss dem öffentlichen Schlüssel entsprechen, der zum Verschlüsseln verwendet wurde.
 
-### Reader Extension-Dienst  {#reader-extension-service}
+### Reader Extension-Dienst {#reader-extension-service}
 
 Der Reader Extensions-Dienst ermöglicht Unternehmen die einfache Freigabe interaktiver PDF-Dokumente durch Erweitern der Funktionalität von Adobe Reader durch zusätzliche Verwendungsrechte. Der Reader Extensions-Dienst funktioniert mit Adobe Reader 7.0 und höher. Der Dienst fügt dem PDF-Dokument Verwendungsrechte hinzu. Diese Aktion aktiviert Funktionen, die normalerweise nicht verfügbar sind, wenn ein PDF-Dokument in Adobe Reader geöffnet wird, z. B. das Hinzufügen von Kommentaren zu einem Dokument, das Ausfüllen von Formularen und das Speichern des Dokuments. Externe Benutzer benötigen keine zusätzliche Software oder Plug-Ins für das Verwenden von Dokumenten mit aktivierten Benutzerrechten.
 
@@ -128,8 +128,8 @@ PDF-Dokumente, denen entsprechende Verwendungsrechte hinzugefügt wurden, ermög
 
 Diese speziellen Benutzerfunktionen werden automatisch aktiviert, wenn ein PDF-Dokument mit aktivierten Benutzerrechten in Adobe Reader geöffnet wird. Wenn der Benutzer die Arbeit mit einem Dokument mit aktivierten Benutzerrechten beendet hat, sind diese Funktionen in Adobe Reader wieder deaktiviert. Sie bleiben deaktiviert, bis der Benutzer ein weiteres PDF-Dokument mit aktivierten Benutzerrechten erhält.
 
-Standardmäßig ist der DocAssurance-Dienst nicht verfügbar. Informationen zum Konfigurieren des DocAssurance-Dienstes finden Sie unter [Installieren und Konfigurieren von Document Services](../../forms/using/install-configure-document-services.md).
+Standardmäßig ist der DocAssurance-Dienst nicht verfügbar. Informationen zum Konfigurieren des DocAssurance-Services finden Sie unter [Installation und Konfiguration von Dokumenten-Services](../../forms/using/install-configure-document-services.md).
 
 ## An Drucker senden {#send-to-printer-service}
 
-&quot;An Drucker senden&quot;bietet API zum Senden von Dokumenten zum Drucken an den angegebenen Drucker.
+Der Service „An Drucker senden“ stellt eine API zum Senden von Dokumenten zum Drucken an den angegebenen Drucker zur Verfügung.
