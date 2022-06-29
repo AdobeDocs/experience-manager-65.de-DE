@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 exl-id: 6cfbeec0-0be3-48b2-a4bb-fd19c69c92c7
 source-git-commit: 415744ca5c46a1495fe90369c162158c7fc2f1d4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '486'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Dieser Artikel enthält eine Übersicht, Beispiele für Anwendungsfälle, einen 
 
 ![](do-not-localize/correspondence-management.png)
 
-Interaktive Kommunikation zentralisiert und verwaltet die Erstellung, Zusammenstellung und Bereitstellung sicherer, personalisierter und interaktiver Schriftstücke, wie z. B. Geschäftskorrespondenz, Dokumente, Kontoauszüge, Hinweise zu Vorteilen, Marketing-E-Mails, Rechnungen und Willkommenskits.
+Interaktive Kommunikation zentralisiert und verwaltet die Erstellung, Anordnung und Bereitstellung von sicheren, personalisierten und interaktiven Korrespondenzen wie Geschäftskorrespondenz, Dokumente, Kontoauszüge, Mitteilungen über finanzielle Leistungen, Marketing-Mails, Rechnungen und Begrüßungssets.
 
 ## Schlüsselfunktionen {#key-capabilities}
 
@@ -33,7 +33,7 @@ Im Folgenden sind die wichtigsten Funktionen von interaktiver Kommunikation aufg
 - Eine integrierte Autorbenutzeroberfläche für Druck- und Webkanal mit der Möglichkeit zum automatischen Erstellen von Druck- und Webkanälen
 - Diagramme zur Darstellung von Informationen in leicht verständlichen visuellen Formaten in Druck und Web
 - Dokumentfragmente unterstützen den Regeleditor und das Formulardatenmodell
-- Benutzeroberfläche für Agenten zeigt Druck- und Webvorschau der interaktiven Kommunikation an
+- Die Benutzeroberfläche für Agenten zeigt die Druck- und Web-Vorschau der interaktiven Kommunikation.
 - Drag-and-Drop-Komponenten zum schnellen Erstellen von Druck- und Webkanälen
 
 ## Erstellung einer interaktiven Kommunikation {#interactive-communication-creation}
@@ -42,9 +42,9 @@ Im Folgenden sind die wichtigsten Funktionen von interaktiver Kommunikation aufg
 
 ### Workflow {#workflow}
 
-Um eine interaktive Kommunikation zu erstellen, legen Sie die [Bausteine](#buildingblocks) für interaktive Kommunikation bereit sind und dann die folgenden Schritte ausführen:
+Um eine Interaktive Kommunikation zu erstellen, sollten Sie die [Bausteine](#buildingblocks) für interaktive Kommunikation vorbereitet haben und dann die folgenden Schritte ausführen:
 
-1. Wählen Sie [Erstellen einer interaktiven Kommunikation](/help/forms/using/create-interactive-communication.md).
+1. Entscheiden Sie sich zum [Erstellen einer interaktiven Kommunikation](/help/forms/using/create-interactive-communication.md).
 
 1. Geben Sie das [Formulardatenmodell](/help/forms/using/data-integration.md), den Vorbefüllungs-Dienst und die [Druck- und Webkanal-Vorlagen](/help/forms/using/web-channel-print-channel.md) an. Sie können den Webkanal über den Druckkanal generieren.
 
@@ -52,7 +52,7 @@ Um eine interaktive Kommunikation zu erstellen, legen Sie die [Bausteine](#build
 1. Konfigurieren Sie die Eigenschaften für die eingefügten Komponenten wie folgt:
 
    1. [Bilder](/help/forms/using/create-interactive-communication.md#step2)
-   1. [Tabellen](/help/forms/using/create-interactive-communication.md#tables) (Einschließlich Layout-Fragmente)
+   1. [Tabellen](/help/forms/using/create-interactive-communication.md#tables) (inklusive Layout-Fragmente)
    1. [Diagramme](/help/forms/using/chart-component-interactive-communications.md)
    1. [Dokumentfragmente](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
@@ -67,11 +67,11 @@ Im Folgenden sind die Bausteine &#x200B;&#x200B;aufgeführt, die für die Erstel
 - [Druck- und Webkanal-Vorlagen](/help/forms/using/web-channel-print-channel.md)
 - [Dokumentfragmente](/help/forms/using/document-fragments.md)
 - Bilder
-- [Designs](/help/forms/using/themes.md) für den Webkanal
+- [Designs](/help/forms/using/themes.md) für den Web-Kanal
 
 ## Interaktive Kommunikation im Vergleich zu Correspondence Management {#interactive-communications-vs-correspondence-management}
 
-Interaktive Kommunikation ist der standardmäßige und empfohlene Ansatz zur Erstellung von Kundenkommunikation. Um die Briefe, die in AEM 6.3 Forms und AEM 6.2 Forms erstellt wurden, weiterhin zu verwenden, müssen Sie ein [Kompatibilitätspaket installieren](/help/forms/using/compatibility-package.md). Im Folgenden finden Sie einen Vergleich zwischen den Funktionen der interaktiven Kommunikation und des Briefs.
+Interaktive Kommunikation ist der standardmäßige und empfohlene Ansatz, um Kundenkommunikation zu erstellen. Um die Briefe, die in AEM 6.3 Forms und AEM 6.2 Forms erstellt wurden, weiterhin zu verwenden, müssen Sie ein [Kompatibilitätspaket installieren](/help/forms/using/compatibility-package.md). Es folgt ein Vergleich zwischen den Funktionen von interaktiver Kommunikation und Briefen.
 
 <table>
  <tbody>
@@ -125,7 +125,7 @@ Interaktive Kommunikation ist der standardmäßige und empfohlene Ansatz zur Ers
    <td>Unterstützt</td>
   </tr>
    <tr>
-   <td>Einsendungen</td>
+   <td>Übermittlungen</td>
    <td>Unterstützt</td>
    <td>Unterstützt</td>
   </tr>
