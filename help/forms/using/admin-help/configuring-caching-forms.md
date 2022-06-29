@@ -1,8 +1,8 @@
 ---
 title: Zwischenspeicherung für Forms konfigurieren
-seo-title: Zwischenspeicherung für Forms konfigurieren
+seo-title: Configuring caching for Forms
 description: Erfahren Sie, wie Sie Cacheeinstellungen konfigurieren und wie Sie Überlegungen zum Cache gruppieren.
-seo-description: Erfahren Sie, wie Sie Cacheeinstellungen konfigurieren und wie Sie Überlegungen zum Cache gruppieren.
+seo-description: Learn how to configure cache settings and how to cluster considerations for caches.
 uuid: 70f36191-4163-410b-991a-e1481488aea0
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8a07dddf-1281-45ac-a55e-4333b860a261
 exl-id: 6b57d00e-5ba0-41ee-8497-49ecfec5b9ed
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1625'
-ht-degree: 88%
+workflow-type: ht
+source-wordcount: '1608'
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Wenn Sie zwischen den Cachemodi wechseln, starten Sie den Forms-Dienst neu, dami
 
 Die Cacheprüfpunkt-Zeit wird beim Wechsel zwischen den Modi automatisch zurückgesetzt.
 
-### Nicht konditionale Zwischenspeicherung verwenden  {#using-unconditional-caching}
+### Nicht konditionale Zwischenspeicherung verwenden {#using-unconditional-caching}
 
 In diesem Modus überprüft der Forms-Dienst die erforderlichen Ressourcen (Formularentwurf und andere zugehörige Elemente wie Fragmente und Bilder), wenn er eine Anforderung erhält. Der Forms-Dienst vergleicht den Zeitstempel der Ressourcen im Repository mit dem Zeitstempel der Ressourcen im Cache. Ist die Ressource im Cache älter, wird dieser vom Forms-Dienst aktualisiert.
 
@@ -56,7 +56,7 @@ Dieser Cache-Modus gewährleistet, dass die neuesten Ressourcen verwendet werden
 1. Klicken Sie in Administration Console auf „Dienste“ > „Forms“.
 1. Wählen Sie unter „Einstellungen für die Forms-Cache-Steuerung“ die Option „Bedingungslos“ aus und klicken Sie auf „Speichern“.
 
-### Den Cacheprüfpunkt verwenden  {#use-the-cache-check-point}
+### Den Cacheprüfpunkt verwenden {#use-the-cache-check-point}
 
 In diesem Modus überprüft der Forms-Dienst das Repository nur dann auf eine neuere Version der Ressourcen, wenn der Zeitstempel der zwischengespeicherten Ressourcen vor der Cacheprüfpunkt-Zeit liegt. Die letzte Cacheprüfpunkt-Zeit wird auf der Forms-Seite in Administration Console angezeigt.
 
@@ -79,7 +79,7 @@ Sie können den Inhalt des Zwischenspeichers jederzeit löschen. Nach dem Zurüc
 1. Klicken Sie in Administration Console auf „Dienste“ > „Forms“.
 1. Klicken Sie unter „Einstellungen für die Formularcache-Steuerung“ auf die Option „Cache zurücksetzen“.
 
-## Cache-Einstellungen konfigurieren  {#configuring-cache-settings}
+## Cache-Einstellungen konfigurieren {#configuring-cache-settings}
 
 Sie können Eigenschaften festlegen, die von Forms für die Zwischenspeicherung verwendet werden und die die Leistung der AEM Forms-Umgebung optimieren können.
 
@@ -89,13 +89,13 @@ Klicken Sie zum Zugreifen auf diese Einstellungen in Administration Console auf 
 >
 >Die Datenträgeranforderungen für den Cache müssen denen für das Repository entsprechen.
 
-### Globale Cache-Einstellungen angeben  {#specifying-global-cache-settings}
+### Globale Cache-Einstellungen angeben {#specifying-global-cache-settings}
 
 Die Einstellungen im Bereich **Globale Cache-Einstellungen** wirken sich auf alle Cache-Typen aus. Wenn Sie eine dieser Einstellungen ändern, starten Sie den Forms-Dienst neu, damit die Änderung wirksam wird. Verwenden Sie zum Neustart dieses Dienstes entweder Workbench, oder folgen Sie den Anweisungen unter [Dienste starten oder beenden, die AEM Forms-Modulen zugeordnet sind](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules).
 
-**Maximale Größe des Cache-Dokuments (KB):**  Die maximale Größe (in Kilobytes) eines Formularentwurfs oder einer anderen Ressource, die in einem beliebigen Arbeitsspeichercache gespeichert werden kann. Dies ist eine globale Einstellung, die für alle Arbeitsspeichercaches gilt. Wenn eine Ressource größer als dieser Wert ist, wird sie nicht im Arbeitsspeicher zwischengespeichert. Der Standardwert ist 1024 KB. Diese Einstellung hat keine Auswirkungen auf den Datenträgercache.
+**Max. Größe des Dokuments im Cache (KB):** Die maximale Größe (in Kilobyte) eines Formularentwurfs oder einer anderen Ressource, die in einem Arbeitsspeicher-Cache gespeichert werden kann. Dies ist eine globale Einstellung, die für alle Arbeitsspeichercaches gilt. Wenn eine Ressource größer als dieser Wert ist, wird sie nicht im Arbeitsspeicher zwischengespeichert. Der Standardwert ist 1024 KB. Diese Einstellung hat keine Auswirkungen auf den Datenträgercache.
 
-**Formular-Rendering-Cache aktiviert:** Standardmäßig ist diese Option aktiviert. Das bedeutet, dass die wiedergegebenen Formulare für den nachfolgenden Abruf zwischengespeichert werden. Diese Einstellung verbessert die Leistung, da der Forms-Dienst nur einmal ein bestimmtes Formular wiedergeben muss und danach wird die zwischengespeicherte Version verwendet. Diese Option nutzt die Cache-Eigenschaft des Formularentwurfs. Informationen zum Konfigurieren dieses Wertes im Formularentwurf finden Sie in der Designer-Hilfe.
+**Formularwiedergabe mit aktiviertem Zwischenspeicher:** Diese Option ist standardmäßig aktiviert. Das bedeutet, dass die wiedergegebenen Formulare für spätere Abrufe zwischengespeichert werden. Diese Einstellung verbessert die Leistung, da der Forms-Dienst nur einmal ein bestimmtes Formular wiedergeben muss und danach wird die zwischengespeicherte Version verwendet. Diese Option nutzt die Cache-Eigenschaft des Formularentwurfs. Informationen zum Konfigurieren dieses Wertes im Formularentwurf finden Sie in der Designer-Hilfe.
 
 ### Formularentwürfe zwischenspeichern {#caching-form-designs}
 
@@ -103,37 +103,37 @@ Wenn der Forms-Dienst eine Wiedergabeanforderung erhält, werden die Formularent
 
 Der Forms-Dienst speichert Formularentwürfe immer auf dem Datenträger zwischen. Wenn Formularentwürfe auf dem Server gespeichert werden, werden diese Dateien als Datenträgercache bezeichnet. Der Forms-Dienst speichert außerdem Formularentwürfe im Arbeitsspeicher zwischen, gemäß der Einstellung im Bereich **Arbeitsspeichercache für Vorlagenkonfiguration**. Wenn Sie eine dieser Einstellungen ändern, starten Sie den Forms-Dienst neu, damit die Änderung wirksam wird. Verwenden Sie zum Neustart dieses Dienstes entweder Workbench, oder folgen Sie den Anweisungen unter [Dienste starten oder beenden, die AEM Forms-Modulen zugeordnet sind](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules).
 
-**Cachegröße für Vorlagenkonfiguration:** Die maximale Anzahl von Vorlagenkonfigurationsobjekten, die im Speicher beibehalten werden sollen. Der Standardwert ist 100. Es wird empfohlen, diesen Wert größer gleich dem Wert für die Vorlagencache-Größe festzulegen. Diese Einstellung hat keine Auswirkungen auf den Datenträgercache.
+**Vorlagenkonfigurations-Cache-Größe:** Die maximale Anzahl von Vorlagenkonfigurationsobjekten, die im Arbeitsspeicher beibehalten werden sollen. Der Standardwert ist 100. Es wird empfohlen, diesen Wert größer gleich dem Wert für die Vorlagencache-Größe festzulegen. Diese Einstellung hat keine Auswirkungen auf den Datenträgercache.
 
-**Vorlagencache-Größe:** Die maximale Anzahl von Vorlageninhaltsobjekten, die im Speicher beibehalten werden sollen. Der Standardwert ist 100. Diese Einstellung hat keine Auswirkungen auf den Datenträgercache.
+**Vorlagen-Cache-Größe:** Die maximale Anzahl von Vorlageninhaltobjekten, die im Arbeitsspeicher behalten werden sollen. Der Standardwert ist 100. Diese Einstellung hat keine Auswirkungen auf den Datenträgercache.
 
-**Aktiviert:** Standardmäßig ist dieses Kontrollkästchen aktiviert, d. h. Formularvorlagen werden im Arbeitsspeicher zwischengespeichert. Wenn diese Option nicht ausgewählt ist, werden die Formularvorlagen nur auf dem Datenträger zwischengespeichert.
+**Aktiviert:** Standardmäßig ist dieses Kontrollkästchen aktiviert. Das bedeutet, dass die Formularvorlagen im Arbeitsspeicher zwischengespeichert werden. Wenn diese Option nicht ausgewählt ist, werden die Formularvorlagen nur auf dem Datenträger zwischengespeichert.
 
-### Wiedergegebene Formulare zwischenspeichern  {#caching-rendered-forms}
+### Wiedergegebene Formulare zwischenspeichern {#caching-rendered-forms}
 
 Der Forms-Dienst speichert wiedergegebene Formulare zwischen, damit dasselbe Formular in nachfolgenden Anforderungen nicht aufgelöst und wiedergegeben werden muss. Wiedergegebene Formulare werden auf dem Datenträger und im Arbeitsspeicher zwischengespeichert.
 
 Diese Einstellungen befinden sich im Bereich **Arbeitsspeichercache für Formularwiedergabe**. Wenn Sie eine dieser Einstellungen ändern, starten Sie den Forms-Dienst neu, damit die Änderung wirksam wird. Verwenden Sie zum Neustart dieses Dienstes entweder Workbench, oder folgen Sie den Anweisungen unter [Dienste starten oder beenden, die AEM Forms-Modulen zugeordnet sind](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules).
 
-**Cachegröße:** Gibt die maximale Anzahl der wiedergegebenen Formulare an, die sich im Arbeitsspeichercache befinden können. Der Standardwert ist 100. Diese Einstellung hat keine Auswirkungen auf den Datenträgercache.
+**Cache-Größe:** Gibt die maximale Anzahl wiedergegebener Formulare an, die sich im Arbeitsspeicher-Cache befinden können. Der Standardwert ist 100. Diese Einstellung hat keine Auswirkungen auf den Datenträgercache.
 
-**Aktiviert:** Standardmäßig ist diese Option ausgewählt, d. h. die wiedergegebenen Formulare werden im Arbeitsspeicher zwischengespeichert. Wenn diese Option nicht ausgewählt ist, werden die wiedergegebenen Formulare nur auf dem Datenträger zwischengespeichert.
+**Aktiviert:** Standardmäßig ist diese Option aktiviert. Das bedeutet, dass die wiedergegebenen Formulare im Arbeitsspeicher zwischengespeichert werden. Wenn diese Option nicht ausgewählt ist, werden die wiedergegebenen Formulare nur auf dem Datenträger zwischengespeichert.
 
-### Fragmente und Bilder zwischenspeichern  {#caching-fragments-and-images}
+### Fragmente und Bilder zwischenspeichern {#caching-fragments-and-images}
 
 Der Forms-Dienst speichert Fragmente und Bilder zwischen, die in Formularentwürfen auf dem Datenträger verwendet werden. Dies verbessert die Leistung, da die Fragmente und Bilder nur bei der ersten Anforderung vom Repository gelesen werden. Bei nachfolgenden Anforderungen liest der Forms-Dienst anschließend die Fragmente und Bilder vom Datenträgercache. Fragmente und Bilder werden nur auf dem Datenträger zwischengespeichert und nicht im Arbeitsspeicher.
 
 Sie können die folgenden Einstellungen verwenden, um die Zwischenspeicherung von Fragmenten und Bildern auf dem Datenträger zu steuern. Diese Einstellungen befinden sich im Bereich **Cacheeinstellungen für Vorlagenressourcen**:
 
-**Resource** CachingWählen Sie eine der folgenden Optionen aus der Liste aus:
+**Ressourcenzwischenspeicherung** Wählen Sie eine der folgenden Optionen aus der Liste aus:
 
-**Aktiviert für Fragmente und Bilder:** Der Forms-Dienst speichert Fragmente und Bilder zwischen. Dies ist die Standardoption.
+**Aktiviert für Fragmente und Bilder:** Der Forms-Service speichert Fragmente und Bilder zwischen. Dies ist die Standardoption.
 
-**Aktiviert für Fragmente:**  Der Forms-Dienst speichert Fragmente, jedoch keine Bilder zwischen.
+**Aktiviert für Fragmente:** Der Forms-Service speichert Fragmente, jedoch keine Bilder zwischen.
 
-**Deaktiviert:** Der Forms-Dienst speichert keine Fragmente oder Bilder zwischen.
+**Deaktiviert:** Der Forms-Service speichert weder Fragmente noch Bilder zwischen.
 
-**Bereinigungsintervall (Sekunden):** Gibt an, wie oft der Forms-Dienst alte ungültige Cachedateien entfernt. Der Forms-Dienst entfernt keine gültigen Cachedateien. Wenn Sie das Bereinigungsintervall ändern, starten Sie den Forms-Dienst neu, damit die Änderung wirksam wird. Verwenden Sie zum Neustart dieses Dienstes entweder Workbench, oder folgen Sie den Anweisungen unter Dienste starten oder beenden, die AEM Forms-Modulen zugeordnet sind. Der Standardwert ist 600 Sekunden.
+**Bereinigungsintervall (Sekunden):** Gibt an, wie oft der Forms-Service alte ungültige Cache-Dateien entfernen soll. Der Forms-Dienst entfernt keine gültigen Cachedateien. Wenn Sie das Bereinigungsintervall ändern, starten Sie den Forms-Dienst neu, damit die Änderung wirksam wird. Verwenden Sie zum Neustart dieses Dienstes entweder Workbench, oder folgen Sie den Anweisungen unter Dienste starten oder beenden, die AEM Forms-Modulen zugeordnet sind. Der Standardwert ist 600 Sekunden.
 
 ## Clustering-Überlegungen zum Zwischenspeicher {#clustering-considerations-for-caches}
 
