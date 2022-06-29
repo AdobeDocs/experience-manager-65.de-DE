@@ -1,8 +1,8 @@
 ---
 title: Job Manager-Datenbank um Aufzeichnungen bereinigen
-seo-title: Job Manager-Datenbank um Aufzeichnungen bereinigen
-description: Große Prozessdaten können zu niedrigerer AEM-Forms-Leistung führen. Es empfiehlt sich, Prozessdaten zu bereinigen, wenn die Aufzeichnungen nicht mehr gebraucht werden.
-seo-description: Große Prozessdaten können zu niedrigerer AEM-Forms-Leistung führen. Es empfiehlt sich, Prozessdaten zu bereinigen, wenn die Aufzeichnungen nicht mehr gebraucht werden.
+seo-title: Purge records from the Job Manager database
+description: Große Prozessdaten können zu niedrigerer AEM Forms-Leistung führen. Es empfiehlt sich, Prozessdaten zu bereinigen, wenn die Aufzeichnungen nicht mehr gebraucht werden.
+seo-description: Large process data can result in lower AEM forms performance. It is good practice to purge process data when records are no longer necessary.
 uuid: cf214498-36e9-4dcc-b4d4-e7c46f80dbab
 contentOwner: admin
 content-type: reference
@@ -11,8 +11,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 69a406f2-4fa8-40bb-b671-7b0f5b6a2c4c
 exl-id: 5279f6c3-5954-472c-9ea0-18e8a7ec860e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '499'
+workflow-type: ht
+source-wordcount: '468'
 ht-degree: 100%
 
 ---
@@ -54,7 +54,7 @@ Weitere Informationen zu aktuell geplanten Bereinigungen werden im Informationsf
 **Einen automatischen Bereinigungszeitplan konfigurieren**
 
 1. Wählen Sie die Option „Wiederholen alle“ aus und geben Sie die Anzahl der Tage oder Wochen an, die zwischen den Bereinigungsvorgängen liegen sollen.
-1. Geben Sie im Bereich „Abgeschlossene Aufzeichnungen bereinigen“ die Anzahl der Tage oder Wochen an, nach denen ein Datensatz als veraltet gelten soll und bereinigt werden kann. Sie können den Wert nicht auf `0`   einstellen.
+1. Geben Sie im Bereich „Abgeschlossene Aufzeichnungen bereinigen“ die Anzahl der Tage oder Wochen an, nach denen ein Datensatz als veraltet gelten soll und bereinigt werden kann. Sie können den Wert nicht auf `0` einstellen.
 
    >[!NOTE]
    >
