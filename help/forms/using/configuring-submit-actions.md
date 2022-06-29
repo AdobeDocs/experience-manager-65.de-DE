@@ -12,15 +12,15 @@ exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
 source-git-commit: d9608d584e822accc0c198fcf1d1b706d065938e
 workflow-type: tm+mt
 source-wordcount: '1870'
-ht-degree: 72%
+ht-degree: 94%
 
 ---
 
 # Konfigurieren der Sendeaktion{#configuring-the-submit-action}
 
-## Einführung in Übermittlungsaktionen {#introduction-to-submit-actions}
+## Einführung in die Übermittlungsaktionen {#introduction-to-submit-actions}
 
-Eine Übermittlungsaktion wird ausgelöst, wenn ein Benutzer in einem adaptiven Formular auf die Schaltfläche „Senden“ klickt. Sie können die Übermittlungsaktion in einem adaptiven Formular konfigurieren. Adaptive Formulare umfassen auch einige Übermittlungsaktionen für den sofortigen Einsatz. Sie können die standardmäßigen Sendeaktionen kopieren und erweitern, um eine eigene Sendeaktion zu erstellen. Basierend auf Ihre Anforderungen können Sie eine eigene Übermittlungsaktion schreiben und registrieren, um Daten im gesendeten Formular zu verarbeiten. Die Übermittlungsaktion kann [synchrone oder asynchrone Übermittlung](../../forms/using/asynchronous-submissions-adaptive-forms.md).
+Eine Übermittlungsaktion wird ausgelöst, wenn ein Benutzer in einem adaptiven Formular auf die Schaltfläche „Senden“ klickt. Sie können die Übermittlungsaktion in einem adaptiven Formular konfigurieren. Adaptive Formulare umfassen auch einige Übermittlungsaktionen für den sofortigen Einsatz. Sie können die standardmäßigen Übermittlungsaktionen kopieren und erweitern und so eine eigene Übermittlungsaktion erstellen. Basierend auf Ihre Anforderungen können Sie eine eigene Übermittlungsaktion schreiben und registrieren, um Daten im gesendeten Formular zu verarbeiten. Die Übermittlungsaktion kann [synchrone oder asynchrone Übermittlung](../../forms/using/asynchronous-submissions-adaptive-forms.md) verwenden.
 
 Sie können eine Sendeaktion in der Seitenleiste im Bereich **Senden** des „Container für adaptive Formulare“ konfigurieren.
 
@@ -36,7 +36,7 @@ Die folgenden Übermittlungsaktionen stehen in adaptiven Formularen standardmä�
 * Workflow für Formulare aufrufen
 * Senden mit Formulardatenmodell
 * Übermittlungsaktion für Forms Portal
-* AEM Workflow aufrufen
+* Aufrufen eines AEM-Workflows
 
 >[!NOTE]
 >
@@ -44,14 +44,14 @@ Die folgenden Übermittlungsaktionen stehen in adaptiven Formularen standardmä�
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass [AEM_Installationsverzeichnis]\crx-quickstart\temp\datamanager\ASM folder
->vorhanden. Das Verzeichnis wird benötigt, um Anhänge vorübergehend zu speichern. Wenn der Ordner nicht vorhanden ist, erstellen Sie ihn.
+>Stellen Sie sicher, dass der Ordner „[AEM-Installationsverzeichnis]\crx-quickstart\temp\datamanager\ASM“ vorhanden ist.
+>vorhanden. Das Verzeichnis wird benötigt, um Anhänge vorübergehend zu speichern. Wenn das Verzeichnis nicht vorhanden ist, erstellen Sie es.
 
 >[!CAUTION]
 >
->Wenn Sie [prefill](../../forms/using/prepopulate-adaptive-form-fields.md) eine Formularvorlage, ein Formulardatenmodell oder ein schemabasiertes adaptives Formular mit XML- oder JSON-Daten, die sich auf ein Schema (XML-Schema, JSON-Schema, Formularvorlage oder Formulardatenmodell) beziehen, das keine Daten enthält &lt;afdata>, &lt;afbounddata>und &lt;/afunbounddata> Tags, dann sind die Daten von nicht gebundenen Feldern (ungebundene Felder sind adaptive Formularfelder ohne [bindref](../../forms/using/prepopulate-adaptive-form-fields.md) -Eigenschaft) des adaptiven Formulars verloren.
+>Wenn Sie eine Formularvorlage, ein Formulardatenmodell oder ein schemabasiertes adaptives Formular mit XML- oder JSON-Daten [vorbefüllen](../../forms/using/prepopulate-adaptive-form-fields.md), die einem Schema (XML-Schema, JSON-Schema, Formularvorlage oder Formulardatenmodell) entsprechen, d.h. die Daten enthalten keine &lt;afData>-, &lt;afBoundData>- und &lt;/afUnboundData>-Tags, dann gehen die Daten von nicht gebundenen Feldern (nicht gebundene Felder sind adaptive Formularfelder ohne die Eigenschaft [bindref](../../forms/using/prepopulate-adaptive-form-fields.md)) des adaptiven Formulars verloren.
 
-Sie können eine benutzerdefinierte Sendeaktion für adaptive Formulare schreiben, um Ihren Anwendungsfall zu erfüllen. Weitere Informationen finden Sie unter[ Schreiben von benutzerdefinierten Übermittlungsaktionen für ein adaptives Formular](../../forms/using/custom-submit-action-form.md).
+Sie können eine benutzerdefinierte Übermittlungsaktion für adaptive Formulare entsprechend Ihres Anwendungsfalls schreiben. Weitere Informationen finden Sie unter[ Schreiben von benutzerdefinierten Übermittlungsaktionen für ein adaptives Formular](../../forms/using/custom-submit-action-form.md).
 
 ## An REST-Endpunkt übermitteln {#submit-to-rest-endpoint}
 
@@ -59,9 +59,9 @@ Die Übermittlungsoption **An REST-Endpunkt übermitteln** wird verwendet, wenn 
 
 `{fieldName}={request parameter name}`
 
-Wie in der Abbildung unten gezeigt, `param1` und `param2` werden als Parameter mit Werten übergeben, die aus dem **Textfeld** und **numerisches Feld** Felder für die nächste Aktion.
+Wie in der Abbildung unten gezeigt, werden `param1` und `param2` als Parameter mit Werten übergeben, die aus den Feldern **textbox** und **numeric box** für die nächste Aktion kopiert werden.
 
-Sie können auch **POST-Anforderungen aktivieren** und eine URL eingeben, um die Anforderung zu veröffentlichen. Um Daten an den Experience Manager-Server zu senden, auf dem das Formular gehostet wird, verwenden Sie einen relativen Pfad, der dem Stammpfad des Experience Manager-Servers entspricht. Beispiel: /content/Forms/af/SampleForm.html. Wenn Sie Daten an irgendeinen anderen Server senden, verwenden Sie den absoluten Pfad.
+Sie können auch **POST-Anforderungen aktivieren** und eine URL eingeben, um die Anforderung zu veröffentlichen. Um Daten an den Experience Manager-Server zu übermitteln, der das Formular hostet, verwenden Sie einen relativen Pfad, der dem Stammpfad des Experience Manager-Servers entspricht. Beispiel: /content/Forms/af/SampleForm.html. Wenn Sie Daten an irgendeinen anderen Server senden, verwenden Sie den absoluten Pfad.
 
 ![Konfigurieren der Übermittlungsaktion „An REST-Endpunkt übermitteln“](assets/action-config.png)
 
@@ -76,7 +76,7 @@ Verwenden Sie die Aktion **An REST-Endpunkt übermitteln**, um die übertragenen
 
 Stellen Sie den Pfad der Ressource bereit, um Daten an einen internen Server zu veröffentlichen. Die Daten werden an den Pfad der Ressource veröffentlicht. Beispiel: /content/restEndPoint. Für diese POST-Anforderungen werden die Authentifizierungsinformationen der Versandanfrage verwendet.
 
-Stellen Sie die URL bereit, um Daten an einen externen Server zu veröffentlichen. Das Format der URL lautet https://host:port/path_to_rest_end_point. Stellen Sie sicher, dass Sie den Pfad zum Handhaben der POST-Anforderung anonym konfigurieren.
+Stellen Sie die URL bereit, um Daten an einen externen Server zu veröffentlichen. Das Format der URL ist https://host:port/path_to_rest_end_point. Stellen Sie sicher, dass Sie den Pfad zum Handhaben der POST-Anforderung anonym konfigurieren.
 
 ![Zuordnung zur Weitergabe von Feldwerten als Anforderungsparameter für die Dankeseite](assets/post-enabled-actionconfig.png)
 
@@ -95,7 +95,7 @@ In diesem Beispiel speichert `data` die XML-Daten, und `att` speichert Anlagenda
 
 ## E-Mail senden {#send-email}
 
-Die **E-Mail senden** bei erfolgreicher Übermittlung des Formulars eine E-Mail an einen oder mehrere Empfänger gesendet wird. Die generierte E-Mail kann Formulardaten in einem vordefinierten Format enthalten.
+Bei der Übermittlungsaktion **E-Mail senden** wird nach erfolgreicher Übermittlung des Formulars eine E-Mail an einen oder mehrere Empfänger gesendet. Die generierte E-Mail kann Formulardaten in einem vordefinierten Format enthalten.
 
 >[!NOTE]
 Alle Formularfelder müssen über verschiedene Elementnamen verfügen, auch wenn sie in verschiedene Fenster platziert werden, um in eine E-Mail Formulardaten einzubinden.
@@ -105,17 +105,17 @@ Alle Formularfelder müssen über verschiedene Elementnamen verfügen, auch wenn
 Bei der Übermittlungsaktion **PDF mittels E-Mail senden** wird bei erfolgreicher Übermittlung des Formulars an einen oder mehrere Empfänger eine mit einer PDF-Datei gesendet, die Formulardaten enthält.
 
 >[!NOTE]
-Diese Übermittlungsaktion ist für XFA-basierte adaptive Formulare und XSD-basierte adaptive Formulare verfügbar, die über die Vorlage &quot;Datensatzdokument&quot;verfügen.
+Diese Übermittlungsaktion ist für XFA-basierte adaptive Formulare und XSD-basierte adaptive Formulare verfügbar, die die Datensatzdokument-Vorlage haben.
 
 ## Workflow für Formulare aufrufen {#invoke-a-forms-workflow}
 
-Die **An Forms Workflow übermitteln** Die Sendeoption sendet eine Daten-XML und Dateianlagen (falls vorhanden) an einen vorhandenen Adobe LiveCycle- oder AEM Forms on JEE-Prozess.
+Bei der Übermittlungsoption **An Forms Workflow übermitteln** werden eine Daten-XML und Dateianlagen (falls vorhanden) an einen vorhandenen Prozess von Adobe LiveCycle oder AEM Forms auf JEE gesendet.
 
-Informationen zum Konfigurieren der Sendeaktion &quot;An Forms Workflow übermitteln&quot;finden Sie unter [Senden und Verarbeiten Ihrer Formulardaten mithilfe von Formular-Workflows](../../forms/using/submit-form-data-livecycle-process.md).
+Weitere Informationen zum Konfigurieren der Übermittlungsaktion „An Forms Workflow übermitteln“ finden Sie unter [Senden und Verarbeiten Ihrer Formulardaten mit Formular-Workflows](../../forms/using/submit-form-data-livecycle-process.md).
 
 ## Senden mit Formulardatenmodell {#submit-using-form-data-model}
 
-Die **Senden mit Formulardatenmodell** Aktion &quot;submit&quot;schreibt gesendete adaptive Formulardaten für das angegebene Datenmodellobjekt in einem Formulardatenmodell in seine Datenquelle. Beim Konfigurieren der Übermittlungsaktion können Sie ein Datenmodellobjekt auswählen, dessen übermittelte Daten in die Datenquelle zurückgeschrieben werden sollen.
+Die Übermittlungsaktion **Senden mit Formulardatenmodell** schreibt gesendete Daten eines adaptiven Formulars für das angegebene Datenmodellobjekt in einem Formulardatenmodell in seine Datenquelle. Beim Konfigurieren der Übermittlungsaktion können Sie ein Datenmodellobjekt auswählen, dessen übermittelte Daten in die Datenquelle zurückgeschrieben werden sollen.
 
 Darüber hinaus können Sie einen Formularanhang mit einem Formulardatenmodell und einem Datensatzdokument (Document of Record) an die Datenquelle senden.
 
@@ -123,7 +123,7 @@ Weitere Informationen zum Formulardatenmodell finden Sie unter [Datenintegration
 
 ## Übermittlungsaktion für Forms Portal {#forms-portal-submit-action}
 
-Die **Übermittlungsaktion für Forms Portal** ermöglicht die Bereitstellung von Formulardaten über ein AEM Forms-Portal.
+Mit der Option **Übermittlungsaktion für Forms Portal** werden über das AEM Forms-Portal Formulardaten zur Verfügung gestellt.
 
 Weitere Informationen zur Übermittlungsaktion für Forms Portal finden Sie unter [Komponente für Formular und übermittelte Formulare](../../forms/using/draft-submission-component.md).
 
@@ -131,7 +131,7 @@ Weitere Informationen zur Übermittlungsaktion für Forms Portal finden Sie unte
 
 Die Übermittlungsaktion **[!UICONTROL AEM-Workflow aufrufen]** verknüpft ein adaptives Formular mit einem [AEM-Workflow](/help/sites-developing/workflows-models.md). Wenn ein Formular gesendet wird, startet der verknüpfte Workflow automatisch auf der Autoreninstanz. Sie können die Datendatei, die Anhänge und das Datensatzdokument in dem Ordner relativ oder unter der Payload des Workflows oder in einer Variablen speichern. Wenn der Workflow für die externe Datenspeicherung markiert ist, ist die Variablenoption verfügbar und nicht die Nutzlastoption. Sie können aus der Liste der für das Workflow-Modell verfügbaren Variablen auswählen. Wenn der Workflow für die externe Datenspeicherung zu einem späteren Zeitpunkt und nicht zum Zeitpunkt der Workflow-Erstellung markiert ist, stellen Sie sicher, dass die erforderlichen Variablenkonfigurationen vorhanden sind.
 
-Vor der Verwendung von **Aufrufen eines AEM-Workflows** Sendeaktion, [Konfigurieren der Experience Manager DS-Einstellungen](../../forms/using/configuring-the-processing-server-url-.md). Weitere Informationen zum Erstellen eines AEM-Workflow finden Sie unter [Formularorientierte Workflows auf OSGi](../../forms/using/aem-forms-workflow.md).
+Bevor Sie die Übermittlungsaktion **AEM-Workflow aufrufen** verwenden, [konfigurieren Sie die DS-Einstellungen von Experience Manager](../../forms/using/configuring-the-processing-server-url-.md). Weitere Informationen zum Erstellen eines AEM-Workflow finden Sie unter [Formularorientierte Workflows auf OSGi](../../forms/using/aem-forms-workflow.md).
 
 Die Übermittlungsaktion platziert Folgendes am Payload-Speicherort des Workflows. Beachten Sie jedoch, dass nur die Option Variable angezeigt wird, wenn das Workflow-Modell für die externe Datenspeicherung markiert ist, und nicht die Payload-Option.
 
@@ -146,13 +146,13 @@ Variablen können unabhängig davon verwendet werden, ob das Workflow-Modell fü
 
 ## Server-seitige Überprüfung im adaptiven Formular {#server-side-revalidation-in-adaptive-form}
 
-Normalerweise platzieren Entwickler in jedem Online-Datenerfassungssystem einige Javascript-Validierungen auf Client-Seite, um Geschäftsregeln durchzusetzen. Moderne Browser bieten Endbenutzern jedoch Möglichkeiten, diese Validierungen zu umgehen und Übermittlungen mithilfe verschiedener Techniken wie beispielsweise die Web Browser DevTools-Konsole manuell durchzuführen. Solche Techniken sind auch für adaptive Formulare gültig. Ein Formularentwickler kann verschiedene Validierungslogiken erstellen, aber Endbenutzer können diese Validierungslogiken technisch umgehen und ungültige Daten an den Server leiten. Ungültige Daten verstoßen gegen die Geschäftsregeln, die der Formularautor durchgesetzt hat.
+Normalerweise platzieren Entwickler in jedem Online-Datenerfassungssystem einige Javascript-Validierungen auf Client-Seite, um Geschäftsregeln durchzusetzen. Moderne Browser bieten Endbenutzern jedoch Möglichkeiten, diese Validierungen zu umgehen und Übermittlungen mithilfe verschiedener Techniken wie beispielsweise die Web Browser DevTools-Konsole manuell durchzuführen. Diese Techniken sind auch für adaptive Formulare gültig. Ein Formularentwickler kann verschiedene Validierungslogiken erstellen, aber Endbenutzer können diese Validierungslogiken technisch umgehen und ungültige Daten an den Server leiten. Ungültige Daten verstoßen gegen die Geschäftsregeln, die der Formularautor durchgesetzt hat.
 
 Die Funktion für erneute serverseitige Überprüfung enthält die Möglichkeit, auch Validierungen durchzuführen, die von einem Autor für adaptive Formulare beim Entwerfen eines adaptiven Formulars auf dem Server bereitgestellt wurden. Sie verhindert jede mögliche Beeinträchtigung von Datenübertragungen und Verstöße gegen Geschäftsregeln, die hinsichtlich Formularvalidierungen auftreten können.
 
 ### Was soll auf dem Server validiert werden? {#what-to-validate-on-server-br}
 
-Alle vordefinierten Feldvalidierungen (OOTB) eines adaptiven Formulars, die erneut auf dem Server ausgeführt werden, sind:
+Alle standardmäßig einsetzbaren Feldvalidierungen eines adaptiven Formulars, die erneut auf dem Server ausgeführt werden, sind:
 
 * Erforderlich
 * Validierung-Picture-Klausel
@@ -179,10 +179,10 @@ Bisweilen befindet sich bei komplexen Validierungsregeln das exakte Validierungs
 
 Unterstützende benutzerdefinierte Funktionen in Validierungsausdrücken
 
-Der Autor kann die benutzerdefinierte JavaScript-Bibliothek für jedes adaptive Formular konfigurieren. Legen Sie in der Bibliothek nur die wiederverwendbaren Funktionen ab, die von den Drittanbieter-Bibliotheken „jquery“ und „underscore“ abhängen.
+Der Autor kann für jedes adaptive Formular eine benutzerdefinierte JavaScript-Bibliothek konfigurieren. Legen Sie in der Bibliothek nur die wiederverwendbaren Funktionen ab, die von den Drittanbieter-Bibliotheken „jquery“ und „underscore“ abhängen.
 
 ## Verhalten bei fehlerhaften Übermittlungsaktionen {#error-handling-on-submit-action}
 
-Konfigurieren Sie als Teil der Experience Manager-Richtlinien für Sicherheit und Härtung benutzerdefinierte Fehlerseiten wie 404.jsp und 500.jsp. Diese Handler werden aufgerufen, wenn beim Übermitteln des Formulars 404 oder 500 Fehler auftreten. Die Handler werden auch aufgerufen, wenn diese Fehler-Codes auf einem Veröffentlichungsknoten ausgelöst werden.
+Konfigurieren Sie im Rahmen der Experience Manager-Richtlinien für Sicherheit und Beschränkungen benutzerdefinierte Seiten für Fehler wie 404.jsp und 500.jsp. Diese Handler werden aufgerufen, wenn beim Übermitteln des Formulars 404 oder 500 Fehler auftreten. Die Handler werden auch aufgerufen, wenn diese Fehler-Codes auf einem Veröffentlichungsknoten ausgelöst werden.
 
-Weitere Informationen finden Sie unter [Anpassen der vom Fehler-Handler angezeigten Seiten](/help/sites-developing/customizing-errorhandler-pages.md).
+Weitere Informationen finden Sie unter [Anpassen der vom Fehler-Handler angezeigten Seiten](/help/sites-developing/customizing-errorhandler-pages.md).

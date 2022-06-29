@@ -15,7 +15,7 @@ exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
 source-git-commit: 1e301f3991a18a594ac10a6548a0a645327dd4dd
 workflow-type: tm+mt
 source-wordcount: '1995'
-ht-degree: 80%
+ht-degree: 95%
 
 ---
 
@@ -27,7 +27,7 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
 1. Warum werden Barcodes und das Unterschriftsfeld in meinem Formular nicht angezeigt?
 
-   Antwort: Barcodes und Unterschriftsfelder sind in HTML- oder Mobilgerät-Szenarien nicht wichtig. Diese Felder werden als nicht interaktiver Bereich angezeigt. AEM Forms Designer bietet allerdings ein neues Scribble-Unterschriftsfeld, das anstelle des Unterschriftsfeldes verwendet werden kann. Sie können auch ein [benutzerdefiniertes Widget](../../forms/using/custom-widgets.md) für Barcodes hinzufügen und integrieren.
+   Antwort: Barcodes und Unterschriftsfelder sind in HTML- oder Mobilgerät-Szenarien nicht wichtig. Diese Felder erscheinen als nicht interaktiver Bereich. AEM Forms Designer bietet allerdings ein neues Scribble-Unterschriftsfeld, das anstelle des Unterschriftsfeldes verwendet werden kann. Sie können auch ein [benutzerdefiniertes Widget](../../forms/using/custom-widgets.md) für Barcodes hinzufügen und integrieren.
 
 1. Wird im XFA-Textfeld Rich Text unterstützt?
 
@@ -89,13 +89,13 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
    Antwort: Ein ausgeblendetes Teilformular mit einer komplexen Hierarchie, die auf mehrere Seiten aufgeteilt ist, führt zu Problemen mit dem Layout. Eine Option besteht darin, das Teilformular am Anfang als sichtbar zu markieren und es anschließend in einem auf Logik oder Daten basierenden Initialisierungsskript auszublenden.
 
-1. Warum sind Textteile abgeschnitten oder werden in HTML5 falsch angezeigt?
+1. Warum sind einige Textteile abgeschnitten oder werden in HTML5 nicht korrekt angezeigt?
 
-   Antwort: Wenn nicht genügend Platz zum Anzeigen des Inhalts eines Zeichnungs- oder Beschriftungs-Textelements vorhanden ist, werden manche Texte im Rendering von Mobile Forms abgeschnitten angezeigt. Diese Kürzung ist auch in der Designansicht von AEM Forms Designer sichtbar. Zwar kann eine solche Kürzung im PDF-Format bearbeitet werden, in HTML5-Formularen ist dies jedoch nicht möglich. Wenn Sie dieses Problem vermeiden möchten, stellen Sie genügend Platz zum Zeichnen oder für Beschriftungen zur Verfügung, damit der Text im Designmodus von AEM Forms Designer nicht abgeschnitten wird.
+   Antwort: Wenn nicht genügend Platz zum Anzeigen des Inhalts eines Zeichnungs- oder Beschriftungs-Textelements vorhanden ist, werden manche Texte im Rendering von Mobile Forms abgeschnitten angezeigt. Diese Kürzung ist dann auch in der Designansicht von AEM Forms Designer sichtbar. Zwar kann eine solche Kürzung im PDF-Format bearbeitet werden, in HTML5-Formularen ist dies jedoch nicht möglich. Wenn Sie dieses Problem vermeiden möchten, stellen Sie genügend Platz zum Zeichnen oder für Beschriftungen zur Verfügung, damit der Text im Designmodus von AEM Forms Designer nicht abgeschnitten wird.
 
 1. Ich habe beim Layout Probleme mit fehlenden oder überlagerten Inhalten. Was ist der Grund dafür?
 
-   Antwort: Wenn sich an derselben Position ein Element vom Typ &quot;Text zeichnen&quot;oder &quot;Bild zeichnen&quot;befindet und sich ein Element mit einer Überlappung befindet (z. B. ein Rechteck), ist der Inhalt vom Typ &quot;Text zeichnen&quot;nicht sichtbar, wenn er später in der Dokumentreihenfolge (in der AEM Forms Designer-Hierarchieansicht) erscheint. PDF unterstützt eine transparente Überlagerung, HTML/Browser unterstützen jedoch keine transparente Überlagerung.
+   Antwort: Wenn sich ein Text- oder Bildzeichnungselement an derselben Position befindet wie ein überlagertes Element (z. B. ein Rechteck), ist der Inhalt des Textzeichnungselements nicht sichtbar, wenn dieses in der Dokumentreihenfolge später kommt (in der Hierarchieansicht des AEM Forms Designer). PDF unterstützt eine transparente Überlagerung, HTML/Browser unterstützen jedoch keine transparente Überlagerung.
 
 1. Warum werden einige Schriften im HTML-Formular in anderer Form angezeigt als beim Entwerfen des Formulars?
 
@@ -103,7 +103,7 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
 1. Werden die Attribute „vAlign“ und „hAlign“ in HTML-Formularen unterstützt?
 
-   Ja, die Attribute „vAlign“ und „hAlign“ werden in HTML-Formularen unterstützt. Das Attribut vAlign wird in Internet Explorer und im mehrzeiligen Feld nicht unterstützt.
+   Ja, die Attribute „vAlign“ und „hAlign“ werden in HTML-Formularen unterstützt. Das Attribut „vAlign“ wird in Internet Explorer und mehrzeiligen Feldern nicht unterstützt.
 
 1. Unterstützen HTML5-Formulare hebräische Zeichen?
 
@@ -111,7 +111,7 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
 1. Gibt es in HTML5-Formularen Beschränkungen für numerische Felder?
 
-   Antwort: Ja, HTML5-Formulare haben einige Einschränkungen. Wenn die Anzahl der Ziffern die in der Picture-Klausel festgelegte Anzahl überschreitet, werden die Zahlen nicht lokalisiert, sondern im englischen Gebietsschema angezeigt.
+   Antwort: Ja, HTML5-Formulare weisen einige Einschränkungen auf. Wenn die Anzahl der Ziffern die in der Picture-Klausel festgelegte Anzahl überschreitet, werden die Zahlen nicht lokalisiert, sondern im englischen Gebietsschema angezeigt.
 
 1. Warum sind HTML-Formulare größer als PDF-Formulare?
 
@@ -119,13 +119,13 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
    Für PDF-Formulare verfügt Adobe Acrobat über eine integrierte XTG-Engine zum Erstellen von Daten-Zwischenstrukturen und Objekten. Acrobat übernimmt auch Layout und Skripte.
 
-   Für HTML5-Formulare verfügen Browser nicht über eine integrierte XTG-Engine zum Erstellen von Daten-Zwischenstrukturen und Objekten aus rohen XDP-Byte. D. h. für HTML5-Formulare werden Zwischenstrukturen auf dem Server generiert und an den Client gesendet. Auf dem Client verwenden JavaScript-basierte Skripte und Layout-Engine diese Zwischenstrukturen.
+   Für HTML5-Formulare verfügen Browser nicht über eine integrierte XTG-Engine zum Erstellen von Daten-Zwischenstrukturen und Objekten aus rohen XDP-Byte. D. h. für HTML5-Formulare werden Zwischenstrukturen auf dem Server generiert und an den Client gesendet. Auf dem Client verwenden ein JavaScript-basiertes Skript und die Layout-Engine diese Zwischenstrukturen.
 
    Die Größe der Zwischenstruktur hängt von der Größe der Original-XDP und der mit der XDP zusammengeführten Daten ab.
 
 1. Gibt es Einschränkungen bei der Verwendung von Tabellen in meinem XDP?
 
-   Antwort: Komplexe Tabellen verursachen Probleme beim Rendering.
+   Antwort: Beim Rendering komplexer Tabellen treten Probleme auf.
 
    * Abschnitte (Teilformularsätze) innerhalb einer Tabelle werden nicht unterstützt.
    * Die Kopf- oder Fußzeilen in einigen Tabellen sind für eine Wiederholung markiert. Die Aufteilung von Tabellen über mehrere Seiten kann zu Problemen führen.
@@ -136,13 +136,13 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
    * Verschachtelte Tabellen und Teilformulare innerhalb einer Tabelle werden nicht unterstützt.
    * Kopfzeilen werden nur für die erste Zeile bzw. die linken Spalten der Tabelle unterstützt. Kopfzeilen werden nicht für die Tabellenelemente unterstützt. Sie können Kopfzeilen auf mehrere Zeilen anwenden und Spaltenüberschriften und Spaltenüberschriften werden unterstützt, wenn alle derartigen Zeilen und Spalten auf der obersten Zeile oder in der ganz linken Spalte der Tabelle sind. 
-   * `Rowspan`   und`colspan`   von einer beliebigen Stelle in der Tabelle wird nicht unterstützt. 
+   * `Rowspan` und`colspan` von einer beliebigen Stelle in der Tabelle wird nicht unterstützt. 
 
    * Sie können Instanzen von Zeilen, die Elemente mit rowspan-Werten größer als 1 enthalten, nicht dynamisch hinzufügen oder entfernen.
 
 1. Was ist die Lesereihenfolge der QuickInfo und Beschriftung für Bildschirmleseprogramme?
 
-   * Wird  QuickInfo und Beschriftung vorhanden sind, wird nur die Beschriftung gelesen. Wenn die Beschriftung nicht verfügbar ist, wird die QuickInfo gelesen. Sie können den Vorrang für das Lesen in einem XDP auch mit Hilfe des Formulardesigners festlegen.
+   * Wird QuickInfo und Beschriftung vorhanden sind, wird nur die Beschriftung gelesen. Wenn die Beschriftung nicht verfügbar ist, wird die QuickInfo gelesen. Sie können den Vorrang für das Lesen in einem XDP auch mit Hilfe des Formulardesigners festlegen.
    * Wenn Sie den Mauszeiger über einem Element bewegen, wird die QuickInfo angezeigt. Wenn die QuickInfo nicht verfügbar ist, wird Sprachtext angezeigt. Wenn Sprachtext nicht verfügbar ist, dann wird der Feldname angezeigt.
 
 1. Wenn Sie den Mauszeiger über ein Feld bewegen, wird eine QuickInfo angezeigt. Wie deaktiviert man sie?
@@ -166,7 +166,7 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
 1. Warum funktionieren Bildschirmlesehilfen nicht ordnungsgemäß mit dem Datums-/Uhrzeitfeldobjekt?
 
-   Bildschirmlesehilfen unterstützen keine Datums-/Uhrzeitfelder. Sie können jedoch manuell Datum/Uhrzeit in das Feld eingeben, damit die Bildschirmlesehilfe es liest. Verwenden Sie QuickInfo oder Text der Bildschirmlesehilfe, um den Benutzer anzuweisen, Datum/Uhrzeit für das Feld manuell auszuwählen.
+   Bildschirmlesehilfen unterstützen keine Datums-/Uhrzeitfelder. Sie können jedoch manuell Datum/Uhrzeit in das Feld eingeben, damit die Bildschirmlesehilfe dies liest. Verwenden Sie eine QuickInfo oder Text der Bildschirmlesehilfe, um den Benutzer anzuweisen, Datum/Uhrzeit für das Feld manuell auszuwählen.
 
 1. Unterstützen HTML5-Formulare Anzeigemuster für schwebende Felder?
 
@@ -182,8 +182,8 @@ Antwort: Das Datumsfeld akzeptiert das ISO-Format JJJJ-MM-TT. Wenn Sie ein Datum
 
    Antwort:
 
-   * Das Skript xfa.connectionSet wird nur eingeschränkt unterstützt. Für connectionSet wird nur der serverseitige Aufruf des Webdiensts unterstützt. Detaillierte Informationen finden Sie unter [Skriptunterstützung](/help/forms/using/scripting-support.md).
-   * In clientseitigen Skripten werden $record und $data nicht unterstützt. Wenn die Skripte jedoch in einen Block formReady, layoutReady geschrieben werden, funktionieren die Skripten weiterhin, da diese Ereignisse serverseitig ausgeführt werden.
+   * Das Skript xfa.connectionSet wird nur eingeschränkt unterstützt. Für „connectionSet“ werden nur Server-seitige Webservice-Aufrufe unterstützt. Detaillierte Informationen finden Sie unter [Skriptunterstützung](/help/forms/using/scripting-support.md).
+   * In clientseitigen Skripten werden $record und $data nicht unterstützt. Wenn die Skripte jedoch in einen „formReady“-, „layoutReady“-Block geschrieben werden, funktionieren diese Skripte weiterhin, da die Ereignisse auf der Server-Seite ausgelöst werden.
    * XFA-Zeichnungselement-spezifische Skripte wie eine Änderung des Zeichnungstextes (oder im Falle von Feldern des Beschriftungstextes) werden nicht unterstützt.
 
 1. Gibt es Einschränkungen bei der Verwendung von formCalc?
@@ -203,8 +203,8 @@ Antwort: Das Datumsfeld akzeptiert das ISO-Format JJJJ-MM-TT. Wenn Sie ein Datum
    >
    >Standardmäßig werden die Felder nicht als schwebende Felder aktiviert. Sie können den Forms Designer verwenden, um die schwebenden Eigenschaften der Felder festzulegen.
 
-   1. Öffnen Sie CRXde Lite und navigieren Sie zum `/content/xfaforms/profiles/default` Knoten.
-   1. Hinzufügen einer Eigenschaft `mfDataDependentFloatingField`vom Typ String und legen Sie den Wert der Eigenschaft auf `true`.
+   1. Öffnen Sie CRXDE Lite und navigieren Sie zum Knoten `/content/xfaforms/profiles/default`.
+   1. Fügen Sie eine `mfDataDependentFloatingField`-Eigenschaft mit dem Typ „Zeichenfolge“ hinzu und legen Sie den Wert der Eigenschaft auf `true` fest.
    1. Klicken Sie auf **Alle speichern**. Jetzt sind die schwebenden Felder für die HTML-Formulare mit dem aktualisierten Renderprofil aktiviert.
 
       >[!NOTE]
@@ -213,7 +213,7 @@ Antwort: Das Datumsfeld akzeptiert das ISO-Format JJJJ-MM-TT. Wenn Sie ein Datum
 
 1. Führt HTML5-Formulare das Initialisierungsskript und das Ereignis „Form Ready“ mehrmals aus?
 
-   Ja, die Initialisierungsskripts und formularbereiten Ereignisse werden mehrmals ausgeführt, mindestens einmal auf dem Server und einmal auf der Clientseite. Es wird empfohlen, Skripte wie initialize- oder form:ready-Ereignisse basierend auf einer Geschäftslogik (Formular- oder Felddaten) zu schreiben, damit die Aktion basierend auf dem Status der Daten und idempotent ausgeführt wird (wenn die Daten identisch sind).
+   Ja, die Initialisierungsskripts und formularbereiten Ereignisse werden mehrmals ausgeführt, mindestens einmal auf dem Server und einmal auf der Clientseite. Es wird empfohlen, Skripte wie „initialize“ oder „form:ready“-Ereignisse basierend auf einer Geschäftslogik (Formular- oder Felddaten) zu schreiben, sodass die Aktion basierend auf dem Status der Daten und „idempotent“ (wenn die Daten gleich sind) ausgeführt wird.
 
 ### XDP entwerfen {#designing-xdp}
 

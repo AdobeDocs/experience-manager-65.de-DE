@@ -1,7 +1,7 @@
 ---
 title: Variablen in AEM Forms-Workflows
 seo-title: Variables in AEM Forms Workflows
-description: Erstellen Sie eine Variable, legen Sie einen Wert für die Variable fest und verwenden Sie sie in den AEM Forms-Workflow-Schritten.
+description: Erstellen Sie eine Variable, legen Sie einen Wert für die Variable fest und verwenden Sie sie in Workflow-Schritten von AEM Forms.
 seo-description: Create a variable, set a value for the variable, and use it in AEM Forms workflow steps.
 uuid: 634a75c4-4899-478f-9e5d-a870f5efa583
 contentOwner: khsingh
@@ -13,21 +13,21 @@ exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
 source-git-commit: 3d0eb55eb35fcf5da1212b8be7c0aeee11307bb6
 workflow-type: tm+mt
 source-wordcount: '2208'
-ht-degree: 81%
+ht-degree: 94%
 
 ---
 
 # Variablen in AEM Forms-Workflows{#variables-in-aem-forms-workflows}
 
-Eine Variable in einem Workflow-Modell bietet die Möglichkeit, einen Wert basierend auf seinem Datentyp zu speichern. Anschließend können Sie den Namen der Variablen in einem beliebigen Workflow-Schritt verwenden, um den in der Variablen gespeicherten Wert abzurufen. Sie können auch Variablennamen verwenden, um Ausdrücke für Routing-Entscheidungen zu definieren.
+Eine Variable in einem Workflow-Modell bietet die Möglichkeit, einen Wert basierend auf seinem Datentyp zu speichern. Sie können den Namen der Variablen in jedem Workflow-Schritt verwenden, um den in der Variablen gespeicherten Wert abzurufen. Sie können auch Variablennamen verwenden, um Ausdrücke für Routing-Entscheidungen zu definieren.
 
-In AEM Workflow-Modellen haben Sie folgende Möglichkeiten:
+In AEM-Workflow-Modellen haben Sie folgende Möglichkeiten:
 
 * [Erstellen Sie eine Variable](../../forms/using/variable-in-aem-workflows.md#create-a-variable) eines Datentyps basierend auf dem Typ von Information, die Sie darin speichern möchten.
 * [Legen Sie einen Wert für die Variable fest](../../forms/using/variable-in-aem-workflows.md#set-a-variable), indem Sie den Workflow-Schritt „Variable festlegen“ verwenden.
-* [Variable verwenden](../../forms/using/variable-in-aem-workflows.md#use-a-variable) in allen AEM Forms-Workflow-Schritten zum Abrufen des gespeicherten Werts sowie in ODER-Teilung und zum Definieren eines Routing-Ausdrucks.
+* [Verwenden Sie die Variable](../../forms/using/variable-in-aem-workflows.md#use-a-variable) in allen Workflow-Schritten von AEM Forms, um den gespeicherten Wert abzurufen, sowie in ODER-Teilungs- und GOTO-Schritten, um einen Routing-Ausdruck zu definieren.
 
-Das folgende Video zeigt, wie Sie Variablen in AEM Workflow-Modellen erstellen, festlegen und verwenden können:
+Das folgende Video zeigt, wie Sie Variablen in AEM-Workflow-Modellen erstellen, festlegen und verwenden können:
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_introduction_1_1.mp4)
 
@@ -35,7 +35,7 @@ Variablen sind eine Erweiterung der vorhandenen [MetaDataMap](https://helpx.adob
 
 ## Erstellen einer Variablen {#create-a-variable}
 
-Variablen erstellen Sie mithilfe des Abschnitts „Variablen“ im Sidekick des Workflow-Modells. AEM Workflow-Variablen unterstützen die folgenden Datentypen:
+Variablen erstellen Sie mithilfe des Abschnitts „Variablen“ im Sidekick des Workflow-Modells. AEM-Workflow-Variablen unterstützen die folgenden Datentypen:
 
 * **Primitive Datentypen**: Long, Double, Boolesch, Datum und Zeichenfolge
 * **Komplexe Datentypen**: [Dokument](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html)-, [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html)-, [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html)- und Formulardatenmodell-Instanz.
@@ -44,7 +44,7 @@ Variablen erstellen Sie mithilfe des Abschnitts „Variablen“ im Sidekick des 
 >
 >Workflows unterstützen für Datumsvariablen nur das ISO8601-Format.
 
-Sie benötigen [AEM Forms Add-On-Paket](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) für die Datentypen &quot;Dokument&quot;und &quot;Formulardatenmodell&quot;.  Verwenden Sie den Datentyp „ArrayList“, um Variablenauflistungen zu erstellen. Sie können eine ArrayList-Variable für alle primitiven und komplexen Datentypen erstellen. Erstellen Sie beispielsweise eine ArrayList-Variable und wählen Sie String als Untertyp aus, um mehrere Zeichenfolgenwerte mit der -Variablen zu speichern.
+Sie benötigen das [AEM Forms Add-On-Paket](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) für die Datentypen „Dokument“ und „Formulardatenmodell“. Verwenden Sie den Datentyp „ArrayList“, um Variablenauflistungen zu erstellen. Sie können eine ArrayList-Variable für alle primitiven und komplexen Datentypen erstellen. Beispiel: Erstellen Sie eine ArrayList-Variable und wählen Sie als Untertyp „String“ aus, um mehrere Zeichenfolgenwerte in der Variablen zu speichern.
 
 Führen Sie die folgenden Schritte aus, um eine Variable zu erstellen:
 
@@ -60,7 +60,7 @@ Führen Sie die folgenden Schritte aus, um eine Variable zu erstellen:
    * Primitiver Datentyp: Geben Sie einen optionalen Standardwert für die Variable an.
    * JSON oder XML – Geben Sie einen optionalen JSON- oder XML-Schema-Pfad an. Das System überprüft den Schemapfad, während es die in diesem Schema verfügbaren Eigenschaften einer anderen Variablen zuordnet und speichert.
    * Formulardatenmodell – Geben Sie einen Pfad für ein Formulardatenmodell an.
-   * ArrayList - Geben Sie einen Untertyp für die Sammlung an.
+   * ArrayList – Geben Sie einen Untertyp für die Sammlung an.
 
 1. Geben Sie eine optionale Beschreibung für die Variable ein und tippen Sie auf ![done_icon](assets/done_icon.png), um die Änderungen zu speichern. Die Variable wird in der im linken Bereich verfügbaren Liste angezeigt.
 
@@ -74,7 +74,7 @@ Berücksichtigen Sie beim Erstellen von Variablen die folgenden Punkte:
 
 Mit dem Schritt „Variable festlegen“ können Sie den Wert einer Variablen festlegen und die Reihenfolge definieren, in der die Werte festgelegt werden. Die Variable wird in der Reihenfolge festgelegt, in der die Variablenzuordnungen im Schritt „Variable festlegen“ aufgeführt sind.
 
-Änderungen an Variablenwerten betreffen nur die Instanz des Prozesses, in dem die Änderung erfolgt. Wenn beispielsweise ein Prozess initiiert wird und Variablendaten geändert werden, betreffen die Änderungen nur diese Instanz des Prozesses. Die Änderungen wirken sich nicht auf andere Instanzen des Workflows aus, die zuvor initiiert wurden oder später initiiert werden.
+Änderungen an Variablenwerten betreffen nur die Instanz des Prozesses, in dem die Änderung erfolgt. Wenn beispielsweise ein Prozess initiiert wird und Variablendaten geändert werden, betreffen die Änderungen nur diese Instanz des Prozesses. Die Änderungen wirken sich nicht auf andere Instanzen des Workflows aus, die vorher initiiert wurden oder danach initiiert werden.
 
 Je nach Datentyp der Variablen können Sie die folgenden Optionen verwenden, um den Wert einer Variablen festzulegen:
 
@@ -130,7 +130,7 @@ Den Ausdruckseditor verwenden Sie, um:
 
 ![Ausdruckseditor](assets/variables_expression_editor_new.png)
 
-Sie basiert auf dem Regeleditor für adaptive Formulare mit folgenden Änderungen. Regeleditor in Variablen:
+Sie basiert auf dem Regeleditor für adaptive Formulare, mit den folgenden Änderungen. Regeleditor in Variablen:
 
 * Unterstützt Funktionen nicht.
 * Stellt keine Benutzeroberfläche zum Anzeigen einer Regelzusammenfassung bereit.
@@ -150,7 +150,7 @@ Sie können Variablen verwenden, um Eingaben und Ausgaben abzurufen oder um das 
 
 ### Workflow-Schritte mit Unterstützung für Variablen {#workflow-steps-with-support-for-variables}
 
-Der Schritt Gehe zu oder Aufspaltung und alle AEM Forms-Workflow-Schritte unterstützen Variablen.
+Die Schritte „Wechseln zu Schritt“ und „ODER-Aufteilung“ sowie alle AEM Forms Workflow-Schritte unterstützen Variablen.
 
 #### ODER-Teilungs-Schritt {#or-split-step}
 
@@ -168,7 +168,7 @@ Wählen Sie auf ähnliche Weise einen externen Skriptpfad aus oder geben Sie das
 
 Weitere Beispiele finden Sie unter [Erstellen eines Workflow-Modells](../../forms/using/aem-forms-workflow.md#create-a-workflow-model).
 
-#### Go-To-Schritt {#go-to-step}
+#### GOTO-Schritt (Wechseln zu Schritt)  {#go-to-step}
 
 Mit **GOTO** (Wechseln zu Schritt) können Sie den nächsten Schritt im Workflow-Modell angeben, der je nach dem Ergebnis eines Routing-Ausdrucks ausgeführt werden soll.
 
@@ -182,7 +182,7 @@ In diesem Beispiel gibt der GOTO-Schritt (Wechseln zu Schritt) als nächsten Sch
 
 Weitere Beispiele zur Verwendung der Regeldefinition im GOTO-Schritt (Wechseln zu Schritt) finden Sie unter [Simulieren einer For-Schleife](/help/sites-developing/workflows-step-ref.md#simulateforloop).
 
-#### Workflow-Schritte mit Forms {#forms-workflow-centric-workflow-steps}
+#### Forms-Workflow-zentrierte Arbeitsschritte {#forms-workflow-centric-workflow-steps}
 
 Alle AEM Forms-Workflow-Schritte unterstützen Variablen. Weitere Informationen finden Sie unter [Formularzentrierte Workflows in OSGi](../../forms/using/aem-forms-workflow-step-reference.md).
 
@@ -202,7 +202,7 @@ Verwenden Sie die folgenden APIs im ECMA-Skript, um Werte für vorhandene Variab
 | Formulardatenmodell | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
-Sie benötigen [AEM Forms Add-On-Paket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) für die Variablentypen &quot;Dokument&quot;und &quot;Formulardatenmodell&quot;.
+Sie benötigen das [AEM Forms Add-On-Paket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) für die Variablentypen „Dokument“ und „Formulardatenmodell“.
 
 **Beispiel**
 
@@ -226,7 +226,7 @@ workItem.getWorkflowData().getMetaDataMap().put(variableName, value)
 workItem.getWorkflowData().getMetaDataMap().put(salary, 50000)
 ```
 
-aktualisiert den Wert für **Gehalt** auf 50000.
+Aktualisiert den Wert der Variablen **salary** (Gehalt) auf 50000.
 
 ### Festlegen von Variablen zum Aufrufen von Workflows {#apiinvokeworkflow}
 
@@ -292,4 +292,4 @@ Führen Sie die folgenden Schritte aus, um eine Variable zu löschen:
 
 ## Verweise {#references}
 
-Weitere Beispiele zur Verwendung von Variablen in AEM Forms-Workflow-Schritten finden Sie unter [Variablen in AEM Workflows](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=de).
+Weitere Beispiele zur Verwendung von Variablen in AEM Forms-Workflow-Schritten finden Sie unter [Variablen in AEM-Workflows](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=de).
