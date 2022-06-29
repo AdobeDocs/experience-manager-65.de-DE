@@ -1,36 +1,36 @@
 ---
 title: Siehe Reader Extending richtliniengeschützter PDF-Dokumente mit Portable Protection Library
-seo-title: Siehe Reader Extending richtliniengeschützter PDF-Dokumente mit Portable Protection Library
+seo-title: Reader extending policy-protected PDF documents using Portable Protection Library
 description: Reader Extensions aktivieren interaktive Funktionen in Adobe PDF-Dokumenten über Acrobat Reader. Sie können die Portable Protection Library (PPL) zum Reader Extending von durch DRM geschützten PDF-Dokumenten verwenden.
-seo-description: Reader Extensions aktivieren interaktive Funktionen in Adobe PDF-Dokumenten über Acrobat Reader. Sie können die Portable Protection Library (PPL) zum Reader Extending von durch DRM geschützten PDF-Dokumenten verwenden.
+seo-description: Reader extensions enable interactive features in Adobe PDF documents through Acrobat Reader. You can use the Portable Protection Library (PPL) to reader extend the DRM protected PDF documents.
 uuid: 0da17641-d24c-43c2-b918-8b5abe1e5473
 contentOwner: khsingh
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 83ca522e-d16e-4196-9aa7-84f85de8dee2
-feature: Dokumentensicherheit
+feature: Document Security
 exl-id: fe5d83e8-5e36-4146-a20a-dab2213055e2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 94%
+workflow-type: ht
+source-wordcount: '796'
+ht-degree: 100%
 
 ---
 
-# Siehe Reader Extending richtliniengeschützter PDF-Dokumente mit Portable Protection Library {#reader-extending-policy-protected-pdf-documents-using-portable-protection-library}
+# Reader-erweiternde richtliniengeschützte PDF-Dokumente mit der Portable Protection Library {#reader-extending-policy-protected-pdf-documents-using-portable-protection-library}
 
-Sie müssen mit den Konzepten von Document Security, der Reader Extension und der Programmiersprache Java vertraut sein, um ein Reader Extending für die die durch Document Security richtliniengeschützten PDF-Dokumente durchzuführen.
+Sie müssen mit den Konzepten von Dokumentensicherheit, der Readererweiterung und der Programmiersprache Java vertraut sein, um eine Reader-Erweiterung für die die durch Dokumentensicherheit richtliniengeschützten PDF-Dokumente durchzuführen.
 
 Sie können Document Security verwenden, um den Zugriff auf bestimmte PDF-Dokumenten nur auf autorisierte Benutzer zu beschränken. Sie können auch bestimmen, wie ein Empfänger ein geschütztes Dokument nutzen darf. Sie können beispielsweise angeben, ob Empfänger Text eines durch Document Security richtliniengeschützte Dokuments drucken, kopieren oder bearbeiten können. Weitere Informationen zu Document Security finden Sie unter [Informationen zu Document Security](/help/forms/using/admin-help/document-security.md).
 
-Verwenden Sie Reader Extensions, um interaktive Funktionen in Adobe PDF-Dokumenten über Acrobat Reader zu aktivieren. Diese interaktiven Funktionen sind normalerweise nur über Adobe Acrobat Professional und Acrobat Standard verfügbar. Weitere Informationen zu den interaktiven Funktionen, die Reader Extension aktivieren kann, finden Sie unter [DocAssurance-Dienst für Adobe Experience Manager Forms ](/help/forms/using/overview-aem-document-services.md)**.**
+Verwenden Sie Reader Extensions, um interaktive Funktionen in Adobe PDF-Dokumenten über Acrobat Reader zu aktivieren. Diese interaktiven Funktionen sind normalerweise nur über Adobe Acrobat Professional und Acrobat Standard verfügbar. Weitere Informationen zu den interaktiven Funktionen, die Readererweiterung aktivieren kann, finden Sie unter [DocAssurance-Dienst für Adobe Experience Manager Forms ](/help/forms/using/overview-aem-document-services.md)**.**
 
-Sie können die Portable Protection Library verwenden, um Richtlinien auf das Dokument anzuwenden, ohne dass das Dokument über das Netzwerk gesendet werden muss. Über das Netzwerk werden nur Sicherheitsberechtigungen und Details zu Schutzrichtlinien übertragen. Das Originaldokument verlässt den Client nicht und und die Schutzrichtlinien werden lokal auf dem Client angewendet.
+Sie können die Portable Protection Library verwenden, um Richtlinien auf das Dokument anzuwenden, ohne dass das Dokument über das Netzwerk gesendet werden muss.  Nur die Sicherheitsberechtigungen und Details der Schutzrichtlinie werden über das Netzwerk gesendet. Das Originaldokument verlässt den Client nicht und und die Schutzrichtlinien werden lokal auf dem Client angewendet.
 
 ## Reader Extending von durch Document Security richtliniengeschützten Dokumenten {#reader-extending-document-security-policy-protected-pdf-documents}
 
-Die richtliniengeschützten Dokumente sind verschlüsselte Dokumente. Sie können keine standardmäßigen Reader Extension-APIs verwenden, um Verwendungsrechte für richtliniengeschützte PDF-Dokumente anzuwenden, zu entfernen und abzurufen. Nur der Reader Extensions-Dienst von Portable Protection Library bietet APIs, um Verwendungsrechte für durch Document Security richtliniengeschützte PDF-Dokumente anzuwenden, zu entfernen und abzurufen.
+Die richtliniengeschützten Dokumente sind verschlüsselte Dokumente. Sie können keine standardmäßigen Reader Extension-APIs verwenden, um Verwendungsrechte für richtliniengeschützte PDF-Dokumente anzuwenden, zu entfernen und abzurufen. Nur der Readererweiterungs-Dienst von Portable Protection Library bietet APIs, um Verwendungsrechte für durch Dokumentensicherheit richtliniengeschützte PDF-Dokumente anzuwenden, zu entfernen und abzurufen.
 
 ### Reader Extensions-Dienst {#reader-extensions-service}
 
@@ -42,11 +42,11 @@ Sie können die folgenden Aufgaben mit dem Reader Extensions-Dienst ausführen:
 
 * Anwenden von Verwendungsrechten auf ein richtliniengeschütztes PDF-Dokument
 * Entfernen von Verwendungsrechten für ein richtliniengeschütztes PDF-Dokument
-* Abrufen von angewendeten Verwendungsrechten für ein richtliniengeschütztes PDF-Dokument 
+* Abrufen von angewendeten Verwendungsrechten für ein richtliniengeschütztes PDF-Dokument
 
-### Anwenden von Verwendungsrechten auf ein durch Document Security richtliniengeschütztes PDF-Dokument {#apply-usage-rights-to-a-document-security-policy-protected-pdf-document}
+### Anwenden von Verwendungsrechten auf ein durch Dokumentensicherheit richtliniengeschütztes PDF-Dokument {#apply-usage-rights-to-a-document-security-policy-protected-pdf-document}
 
-Mit der Java-API `applyUsageRights` können Sie Verwendungsrechte für PDF-Dokumente aktivieren. Verwendungsrechte gelten für Funktionen, die standardmäßig in Acrobat, nicht jedoch in Adobe Reader zur Verfügung stehen, wie etwa die Möglichkeit, Kommentare zu einem Formular hinzuzufügen oder Formularfelder auszufüllen und das Formular zu speichern. PDF-Dokumente, auf die Verwendungsrechte angewandt wurden, werden als Dokumente mit aktivierten Verwendungsrechten bezeichnet. Benutzer, die ein Dokument mit aktivierten Verwendungsrechten in Adobe Reader öffnen, können Vorgänge durchführen, die für dieses spezifische Dokument aktiviert sind.
+Mit der Java-API `applyUsageRights` können Sie Verwendungsrechte für richtliniengeschützte PDF-Dokumente aktivieren. Verwendungsrechte gelten für Funktionen, die standardmäßig in Acrobat, nicht jedoch in Adobe Reader zur Verfügung stehen, wie etwa die Möglichkeit, Kommentare zu einem Formular hinzuzufügen oder Formularfelder auszufüllen und das Formular zu speichern. PDF-Dokumente, auf die Verwendungsrechte angewandt wurden, werden als Dokumente mit aktivierten Verwendungsrechten bezeichnet. Benutzer, die ein Dokument mit aktivierten Verwendungsrechten in Adobe Reader öffnen, können Vorgänge durchführen, die für dieses spezifische Dokument aktiviert sind.
 
 **Syntax:** `InputStream applyUsageRights(InputStream inputFile, File certFile, String credentialPassword, UsageRights usageRights)`
 
@@ -70,14 +70,14 @@ Mit der Java-API `applyUsageRights` können Sie Verwendungsrechte für PDF-Dokum
   </tr>
   <tr>
    <td><p>usageRights</p> </td>
-   <td><p>Gibt ein Objekt vom Typ <a href="https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/javadoc/com/adobe/livecycle/readerextensions/client/UsageRights.html" target="_blank">UsageRights</a> an. Das Objekt „UsageRights“ stellt individuelle Zugriffsrechte dar, die auf ein richtliniengeschütztes PDF-Dokument angewendet werden können.</p> </td>
+   <td><p>Gibt ein Objekt vom Typ <a href="https://help.adobe.com/de_DE/livecycle/11.0/ProgramLC/javadoc/com/adobe/livecycle/readerextensions/client/UsageRights.html" target="_blank">UsageRights</a> an. Das Objekt „UsageRights“ stellt individuelle Zugriffsrechte dar, die auf ein richtliniengeschütztes PDF-Dokument angewendet werden können.</p> </td>
   </tr>
  </tbody>
 </table>
 
 ### Abrufen von angewendeten Verwendungsrechten für ein richtliniengeschütztes PDF-Dokument   {#retrieve-usage-rights-applied-to-a-policy-protected-pdf-document-nbsp}
 
-Sie können die Java-API `getDocumentUsageRights`verwenden, um die auf ein richtliniengeschütztes PDF-Dokument angewendeten Verwendungsrechte für die Reader-Erweiterung abzurufen. Durch Abrufen von Informationen zu Verwendungsrechten erfahren Sie, welche Funktionen Reader Extension für das richtliniengeschützte PDF-Dokument aktiviert hat.
+Mit der Java-API `getDocumentUsageRights` können Sie die Readererweiterungs-Verwendungsrechte abrufen, die auf ein richtliniengeschütztes PDF-Dokument angewendet wurden. Durch Abrufen von Informationen zu Verwendungsrechten erfahren Sie, welche Funktionen die Readererweiterung für das richtliniengeschützte PDF-Dokument aktiviert hat.
 
 **Syntax:** `public GetUsageRightsResult getDocumentUsageRights(InputStream inDoc)`
 
