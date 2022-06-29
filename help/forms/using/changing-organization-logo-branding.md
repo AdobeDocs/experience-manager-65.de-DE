@@ -1,8 +1,8 @@
 ---
 title: Ändern des Organisationslogos für das Branding
-seo-title: Ändern des Organisationslogos für das Branding
+seo-title: Changing the organization logo for branding
 description: Um AEM Forms Workspace mit Markenzeichen zu versehen, stellen Sie das Logo Ihres Unternehmens durch Anpassen des Standardlogos bereit.
-seo-description: Um AEM Forms Workspace mit Markenzeichen zu versehen, stellen Sie das Logo Ihres Unternehmens durch Anpassen des Standardlogos bereit.
+seo-description: To brand AEM Forms workspace provide the logo of your organization by customizing the default logo.
 uuid: f0c340ee-2e54-4bb0-9c30-383cc1bbadb8
 contentOwner: robhagat
 content-type: reference
@@ -11,9 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 2c651302-f4ef-4211-b897-f5942ed0ffb1
 exl-id: 49572f2a-f3ec-4ee6-98b8-2563de1cf96c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 82%
+workflow-type: ht
+source-wordcount: '134'
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Das Unternehmenslogo wird in der linken oberen Ecke des AEM Forms Workspace-Fens
 
    >[!NOTE]
    >
-   >Weitere Informationen zum WebDAV-Zugriff finden Sie unter [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+   >Weitere Informationen zum WebDAV-Zugriff finden Sie unter [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/de/crx/current/how_to/webdav_access.html).
 
 1. Erstellen Sie einen Verweis auf das neue Logo im Stylesheet bei „/apps/ws/css/newStyle.css“, indem Sie folgenden Stil hinzufügen.
 
