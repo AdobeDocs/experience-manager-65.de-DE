@@ -1,38 +1,39 @@
 ---
-title: Wie übergebe ich Anmeldeinformationen mit WS-Security-Headern?
-description: Erfahren Sie, wie Sie Anmeldeinformationen mithilfe von WS-Sicherheitskopfzeilen übergeben.
-source-git-commit: 730ae7cd6cd04eb6377b37eafe29db597e93cce3
-workflow-type: tm+mt
+title: Wie übergebe ich Informationen zu Berechtigungen mithilfe von WS-Security-Headern?
+description: Erfahren Sie, wie Sie Berechtigungen mithilfe von WS-Security-Headern übergeben.
+exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
+source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
+workflow-type: ht
 source-wordcount: '473'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Komprimieren und Dekomprimieren von Dateien mit einem benutzerdefinierten AEM Forms on JEE-DSC {#compressing-decompressing-files}
+# Komprimieren und Dekomprimieren von Dateien mithilfe eines benutzerdefinierten DSC von AEM Forms auf JEE {#compressing-decompressing-files}
 
 ## Vorausgesetztes Wissen {#prerequisites}
 
-Erfahren Sie mehr über AEM Forms on JEE Process Management, grundlegende Java-Programmierung und Erstellen benutzerdefinierter Komponenten.
+Erfahrung mit dem Prozess-Management in AEM Forms auf JEE, grundlegender Java-Programmierung und dem Erstellen benutzerdefinierter Komponenten.
 
-**Weitere erforderliche andere Produkte**
+**Weitere erforderliche Produkte**
 
-Java-Editor wie [Eclipse](https://www.eclipse.org/) oder [Netbeans IDE](https://netbeans.apache.org/)
+Java-Editor, z. B. [Eclipse](https://www.eclipse.org/) oder [Netbeans IDE](https://netbeans.apache.org/)
 
 ## Benutzerebene {#user-level}
 
 Fortgeschrittene Einsteiger
 
-Mit AEM Forms on JEE können Entwickler benutzerdefinierten DSC (Document Service Container) erstellen, um native, angereicherte Funktionen zu erstellen. Das Erstellen solcher Komponenten kann mit der AEM Forms on JEE-Laufzeitumgebung verbunden werden und erfüllt den vorgesehenen Zweck. In diesem Artikel wird erläutert, wie Sie einen benutzerdefinierten ZIP-Dienst erstellen, der verwendet werden kann, um eine Liste von Dateien in eine ZIP-Datei zu komprimieren und eine ZIP-Datei in eine Liste von Dokumenten zu entpacken.
+Mit AEM Forms auf JEE können Entwickler benutzerdefinierte DSC (Document Service Container) erstellen, um umfangreiche, sofort einsatzbereite Funktionen zu entwickeln. Die Erstellung solcher Komponenten kann mit der Laufzeitumgebung von AEM Forms auf JEE verbunden werden und erfüllt den vorgesehenen Zweck. In diesem Artikel wird erläutert, wie Sie einen benutzerdefinierten ZIP-Service erstellen, mit dem Sie eine Liste von Dateien in eine ZIP-Datei komprimieren und eine ZIP-Datei in eine Liste von Dokumenten entpacken können.
 
 ## Erstellen einer benutzerdefinierten DSC-Komponente {#create-custom-dsc-component}
 
-Erstellen Sie eine benutzerdefinierte DSC-Komponente mit zwei Dienstvorgängen, um die Liste der Dokumente zu komprimieren und zu dekomprimieren. Diese Komponente verwendet das Paket java.util.zip für Komprimierung und Dekomprimierung. Gehen Sie wie folgt vor, um eine benutzerdefinierte Komponente zu erstellen:
+Erstellen Sie eine benutzerdefinierte DSC-Komponente mit zwei Service-Vorgängen, um die Liste der Dokumente zu komprimieren und zu dekomprimieren. Diese Komponente verwendet das Paket java.util.zip für die Komprimierung und Dekomprimierung. Gehen Sie wie folgt vor, um eine benutzerdefinierte Komponente zu erstellen:
 
-1. Fügen Sie die Datei &quot;adobe-livecycle-client.jar&quot;zur Bibliothek hinzu.
-1. Hinzufügen der erforderlichen Symbole
-1. Erstellen einer öffentlichen Klasse
-1. Erstellen Sie zwei öffentliche Methoden mit dem Namen UnzipDocument &amp; ZipDocuments
-1. Schreiben der Logik für Komprimierung und Dekomprimierung
+1. Fügen Sie die Datei adobe-livecycle-client.jar zur Bibliothek hinzu
+1. Fügen Sie die erforderlichen Symbole hinzu
+1. Erstellen Sie eine öffentliche Klasse
+1. Erstellen Sie zwei öffentliche Methoden mit den Namen UnzipDocument &amp; ZipDocuments
+1. Erstellen Sie die Logik für Komprimierung &amp; Dekomprimierung
 
 Den Code finden Sie hier:
 
@@ -119,9 +120,9 @@ public class ZIPService {
 }
 ```
 
-## Erstellen einer Datei &quot;Component.XML&quot; {#create-component-xml-file}
+## Erstellen der Datei Component.XML {#create-component-xml-file}
 
-Eine component.xml -Datei muss im Stammordner des Pakets erstellt werden, das die Dienstvorgänge und ihre Parameter definiert hat.
+Die Datei component.xml muss im Stammordner des Pakets erstellt werden, das die Service-Vorgänge und deren Parameter definiert hat.
 
 Die Datei component.xml wird hier gezeigt:
 
@@ -184,41 +185,38 @@ Die Datei component.xml wird hier gezeigt:
 </component>
 ```
 
-## Verpacken und Bereitstellen der Komponente {#packaging-deploying-component}
+## Kompilieren und Bereitstellen der Komponente {#packaging-deploying-component}
 
 1. Kompilieren Sie das Java-Projekt und erstellen Sie eine JAR-Datei.
-1. Stellen Sie die Komponente (.JAR-Datei) über Workbench zur AEM Forms on JEE-Laufzeit bereit.
-1. Starten Sie den Dienst von Workbench aus (siehe Abbildung unten).
+1. Stellen Sie die Komponente (.JAR-Datei) über Workbench für die Laufzeit von AEM Forms auf JEE bereit.
+1. Starten Sie den Service von Workbench aus (siehe Abbildung unten).
 
 ![Process Design](assets/process-design.jpg)
 
-## Verwenden des ZIP-Dienstes in Workflows {#using-zip-service-in-workflows}
+## Verwenden des ZIP-Service in Workflows {#using-zip-service-in-workflows}
 
-Der Vorgang &quot;UnzipDocument&quot;des benutzerdefinierten Dienstes kann jetzt eine document -Variable als Eingabe akzeptieren und eine Liste von document -Variablen als Ausgabe zurückgeben.
+Der Vorgang UnzipDocument des benutzerdefinierten Service kann jetzt eine Dokumentvariable als Eingabe akzeptieren und eine Liste von Dokumentvariablen als Ausgabe zurückgeben.
 
-![Dokument entpacken](assets/unzip-doc.jpg)
+![Dokument dekomprimieren](assets/unzip-doc.jpg)
 
-Ebenso kann der ZipDocuments-Vorgang der benutzerdefinierten Komponente eine Liste von Dokumenten als Eingabe akzeptieren, sie als ZIP-Datei komprimieren und das komprimierte Dokument zurückgeben.
+Ebenso kann der Vorgang ZipDocuments der benutzerdefinierten Komponente eine Liste von Dokumenten als Eingabe akzeptieren, sie als ZIP-Datei komprimieren und das komprimierte Dokument zurückgeben.
 
-![Zip-Dokument](assets/zip-doc.jpg)
+![Dokument komprimieren](assets/zip-doc.jpg)
 
 Die folgende Workflow-Orchestrierung zeigt, wie Sie die angegebene ZIP-Datei entkomprimieren, sie wieder in eine andere ZIP-Datei komprimieren und die Ausgabe zurückgeben können (siehe Abbildung unten).
 
-![Zip-Arbeitsablauf entpacken](assets/unzip-zip-process.jpg)
+![Workflow für Dekomprimiereng/Komprimierung](assets/unzip-zip-process.jpg)
 
-## Einige geschäftliche Anwendungsfälle {#business-use-cases}
+## Einige Anwendungsfälle für Unternehmen {#business-use-cases}
 
-Sie können diesen ZIP-Dienst für die folgenden Anwendungsfälle verwenden:
+Sie können diesen ZIP-Service für die folgenden Anwendungsfälle verwenden:
 
 * Suchen Sie alle Dateien in einem bestimmten Ordner und geben Sie die Dateien als komprimiertes Dokument zurück.
 
-* Geben Sie eine ZIP-Datei an, die eine Reihe von PDF-Dokumenten enthält, die nach der Dekomprimierung der Dokumente durch einen Leser erweitert werden können. Dies erfordert das AEM Forms on JEE Reader Extensions-Modul.
+* Stellen Sie eine ZIP-Datei mit einer Reihe von PDF-Dokumenten bereit, die nach der Dekomprimierung der Dokumente durch einen Leser erweitert werden können. Dies erfordert das Modul Reader Extensions für AEM Forms auf JEE.
 
-* Geben Sie eine ZIP-Datei mit einem heterogenen Dokumenttyp an, der mithilfe des Generate PDF-Dienstes dekomprimiert und als PDF-Dokument konvertiert werden kann.
+* Geben Sie eine ZIP-Datei mit heterogenem Dokumenttyp an, die mithilfe des Generate-PDF-Service dekomprimiert und zu einem PDF-Dokument konvertiert werden kann.
 
 * Richtlinien schützen eine Liste von Dokumenten und geben sie als ZIP-Datei zurück.
 
-* Erlauben Sie Benutzern, alle Anlagen einer Prozessinstanz als einzelne ZIP-Datei herunterzuladen.
-
-
-
+* Erlauben Sie Benutzern, alle Anlagen einer Prozessinstanz in einer einzigen ZIP-Datei herunterzuladen.
