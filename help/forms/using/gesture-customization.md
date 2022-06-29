@@ -1,8 +1,8 @@
 ---
 title: Gestenanpassung
-seo-title: Gestenanpassung
+seo-title: Gesture customization
 description: Anpassen der Gesten in Ihrer AEM Forms-App
-seo-description: Anpassen der Gesten in Ihrer AEM Forms-App
+seo-description: Customize the gestures on your AEM Forms app
 uuid: 117e0e21-66bd-42f1-879c-6c1443991974
 contentOwner: robhagat
 content-type: reference
@@ -11,31 +11,31 @@ topic-tags: forms-app
 discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 exl-id: 6debb1a7-7889-4fdd-87c7-ecb87cc0b1f5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 46%
+workflow-type: ht
+source-wordcount: '296'
+ht-degree: 100%
 
 ---
 
 # Gestenanpassung {#gesture-customization}
 
-Sie können die Gesten der AEM Forms-App anpassen, um eine unterschiedliche Methode zur Interaktion mit der App bereitzustellen. Beispielsweise können Sie neue Gesten zum Öffnen oder Schließen einer Aufgabe bzw. eines Startpunkts hinzufügen.
+Sie können die Gesten der AEM Forms-App anpassen, um eine individuelle Methode der Interaktion mit der App bereitzustellen. Beispielsweise können Sie neue Gesten zum Öffnen oder Schließen einer Aufgabe bzw. eines Startpunkts hinzufügen.
 
 ## So passen Sie Gesten in der AEM Forms-App an {#to-customize-gestures-in-aem-forms-app}
 
-In der AEM Forms-App wird durch das Wischen nach links eine neue Aufgabe bzw. ein neuer Startpunkt geöffnet, während beim Wischen nach rechts nichts passiert. Im folgenden Beispiel werden Schritte zum Öffnen einer neuen Aufgabe oder eines neuen Startpunkts zum Ausführen der Wischgesten nach rechts in der AEM Forms-App beschrieben.
+In der AEM Forms-App wird durch das Wischen nach links eine neue Aufgabe bzw. ein neuer Startpunkt geöffnet, während beim Wischen nach rechts nichts passiert. Das folgende Beispiel zeigt Schritte zum Öffnen einer neuen Aufgabe oder eines neuen Startpunkts mittels Wischen nach rechts in der AEM Forms-App.
 
-1. Öffnen Sie Ihr Projekt.
+1. Öffnen Sie Ihr Projekt.
 
-   * Öffnen Sie für iOS `Capture.xcodeproj` in Xcode.
+   * In iOS öffnen Sie `Capture.xcodeproj` in Xcode
    * In Android öffnen Sie das Android-Projekt in Eclipse.
-   * Öffnen Sie für Windows `MWSWindows.sln` in Visual Studio.
+   * In Windows öffnen Sie `MWSWindows.sln` in Visual Studio.
 
-1. Navigieren Sie zum Ordner &quot;views&quot;und öffnen Sie die Datei `task.js` zur Bearbeitung.
+1. Navigieren Sie zum Ansichtsordner und öffnen Sie die Datei `task.js` zur Bearbeitung.
 
-   * Navigieren Sie in Xcode zum Ordner **Capture > www > wsmobile > js > runtime > views** .
-   * Navigieren Sie in Eclipse zum Ordner **assets > www > wsmobile > js > runtime > views** .
-   * Navigieren Sie in Visual Studio zum Ordner **MWSWindows > www > wsmobile > js > runtime > views** .
+   * In Xcode navigieren Sie zum Ordner **Capture > www > wsmobile > js > runtime > views**.
+   * In Eclipse navigieren Sie zum Ordner **assets > www > wsmobile > js > runtime > views**.
+   * In Visual Studio navigieren Sie zum Ordner **MWSWindows > www > wsmobile > js > runtime > views**.
 
    >[!NOTE]
    >
@@ -47,26 +47,26 @@ In der AEM Forms-App wird durch das Wischen nach links eine neue Aufgabe bzw. ei
 
    `"EventName Selector": "Function"`
 
-   Wenn Sie ein JavaScript-Ereignis mit dem Namen `EventName`für ein von `Selector` angegebenes HTML-Element Trigger haben, wird `Function`aufgerufen.
+   Wenn Sie ein Javascript-Ereignis mit dem Namen `EventName` für ein von `Selector` festgelegtes HTML-Element auslösen, wird `Function` aufgerufen.
 
 1. Suchen
 
-   * &quot;Tippen Sie auf .taskContentArea&quot;: &quot;onTaskClick&quot;,
+   * „tap .taskContentArea“ : „onTaskClick“,
 
-      &quot;Tippen Sie auf .taskOpenArea&quot;: &quot;onTaskClick&quot;,
+      „tap .taskOpenArea“ : „onTaskClick“,
 
-      &quot;Tippen Sie auf .task-content&quot;: &quot;onTaskClick&quot;,
+      „tap .task-content“ : „onTaskClick“,
 
-      &quot;Tippen Sie auf .last_empty_div : &quot;onTaskClick&quot;,
+      „tap .last_empty_div“ : „onTaskClick“,
    und ersetzen Sie diese durch
 
-   * &quot;swipe .taskContentArea&quot; : &quot;onTaskClick&quot;,
+   * „swipe .taskContentArea“ : „onTaskClick“,
 
-      &quot;swipe .taskOpenArea&quot; : &quot;onTaskClick&quot;,
+      „swipe .taskOpenArea“ : „onTaskClick“,
 
-      &quot;swipe .task-content&quot;: &quot;onTaskClick&quot;,
+      „swipe .task-content“ : „onTaskClick“,
 
-      &quot;swipe .last_empty_div&quot;: &quot;onTaskClick&quot;,
+      „swipe .last_empty_div“ : „onTaskClick“,
 
 
 1. Speichern und schließen Sie die Datei `task.js`.
