@@ -1,8 +1,8 @@
 ---
-title: LiveCycleProcess Java API(SOAP)Quick Start
+title: Java API-Schnellstart (SOAP) für LiveCycleProcess
 seo-title: LiveCycleProcess Java API(SOAP)Quick Start
-description: 'Verwenden Sie den Schnellstart der LiveCycleProcess Java API (SOAP), um nach Prozessinstanzen zu suchen, Prozessinstanzen auszusetzen, ausgesetzte Prozessinstanzen zu starten, Prozessinstanzen zu beenden, Prozessdaten zu bereinigen und den Status eines Auftrags abzurufen. '
-seo-description: Verwenden Sie den Schnellstart der LiveCycleProcess Java API (SOAP), um nach Prozessinstanzen zu suchen, Prozessinstanzen auszusetzen, ausgesetzte Prozessinstanzen zu starten, Prozessinstanzen zu beenden, Prozessdaten zu bereinigen und den Status eines Auftrags abzurufen.
+description: 'Verwenden Sie den Schnellstart der LiveCycleProcess-Java-API (SOAP), um nach Prozessinstanzen zu suchen, Prozessinstanzen auszusetzen, ausgesetzte Prozessinstanzen zu starten, Prozessinstanzen zu beenden, Prozessdaten zu bereinigen und den Status eines Vorgangs abzurufen. '
+seo-description: Use the LiveCycleProcess Java API (SOAP) Quick Start to search for process instances, suspend process instances, start suspended process instances, terminate process instances, purge process data, and retrieve the status of a job.
 uuid: ad14fb50-8dd5-44e0-9e48-f0f0334e04d6
 contentOwner: admin
 content-type: reference
@@ -12,37 +12,37 @@ discoiquuid: 9c17fa2d-0337-4204-822e-dcdafebf0e4d
 role: Developer
 exl-id: 7b309743-10ea-4d10-adb6-be5ce9f03ce2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '428'
+ht-degree: 100%
 
 ---
 
-# Schnellstart für LiveCycleProcess Java API (SOAP) {#livecycleprocess-java-api-soap-quick-start}
+# Schnellstart für die LiveCycleProcess-Java-API (SOAP) {#livecycleprocess-java-api-soap-quick-start}
 
-Der Schnellstart für Java-API (SOAP) ist für Prozesse verfügbar. Eine *Prozessinstanz* ist ein Vorkommen eines bestimmten Prozesses, der von einer Aufrufmethode wie der Aufruf-API oder aus Workspace heraus gestartet wurde.
+Der Schnellstart für die Java-API (SOAP) ist für Prozesse verfügbar. Eine *Prozessinstanz* ist ein Auftreten eines bestimmten Prozesses, der von einer Aufrufmethode wie der Aufruf-API oder aus dem Arbeitsbereich heraus gestartet wurde.
 
-[Schnellstart (SOAP-Modus): Suchen nach Prozessinstanzen mithilfe der Java-API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
+[Schnellstart (SOAP-Modus): Suchen nach Prozessinstanzen unter Verwendung der Java-API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Aussetzen von Prozessinstanzen mit der Java-API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-suspending-process-instances-using-the-java-api)
+[Schnellstart (SOAP-Modus): Aussetzen von Prozessinstanzen unter Verwendung der Java-API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-suspending-process-instances-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Starten von ausgesetzten Prozessinstanzen mit der Java-API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api)
+[Schnellstart (SOAP-Modus): Starten von ausgesetzten Prozessinstanzen unter Verwendung der Java-API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Prozessinstanzen mit der Java-API beenden](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-terminating-process-instances-using-the-java-api)
+[Schnellstart (SOAP-Modus): Beenden von Prozessinstanzen unter Verwendung der Java-API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-terminating-process-instances-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Prozessdaten mithilfe der Java-API bereinigen](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-purging-process-data-using-the-java-api)
+[Schnellstart (SOAP-Modus): Bereinigen von Prozessdaten unter Verwendung der Java-API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-purging-process-data-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Abrufen des Status eines Auftrags mithilfe der Java-API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
+[Schnellstart (SOAP-Modus): Abrufen des Status eines Auftrags unter Verwendung der Java-API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden und der Verbindungsmodus sollte auf SOAP festgelegt werden.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API durchgeführt werden und der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
 >[!NOTE]
 >
->Schnellstarts, die unter Programmieren mit AEM Forms zu finden sind, basieren auf der Forms, wenn Sie ein anderes Betriebssystem wie Unix verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. (Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+>Schnellstarts, die unter „Programmieren mit AEM Forms“ zu finden sind, basieren auf Forms. Wenn Sie ein anderes Betriebssystem wie Unix verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. (Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
-## Schnellstart (SOAP-Modus): Suchen nach Prozessinstanzen mithilfe der Java-API {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
+## Schnellstart (SOAP-Modus): Suchen nach Prozessinstanzen unter Verwendung der Java-API {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird nach Prozessinstanzen gesucht, die auf dem Prozess *MortgageLoan - Prebuilt* basieren.
+Im folgenden Java-Code-Beispiel wird nach Prozessinstanzen gesucht, die auf dem Prozess *Hypothekendarlehen – vorkonfiguriert* beruhen.
 
 ```java
  /*
@@ -158,9 +158,9 @@ Im folgenden Java-Codebeispiel wird nach Prozessinstanzen gesucht, die auf dem P
  
 ```
 
-## Schnellstart (SOAP-Modus): Aussetzen von Prozessinstanzen mit der Java-API {#quick-start-soap-mode-suspending-process-instances-using-the-java-api}
+## Schnellstart (SOAP-Modus): Aussetzen von Prozessinstanzen unter Verwendung der Java-API {#quick-start-soap-mode-suspending-process-instances-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird eine Prozessinstanz ausgesetzt. Um eine Prozessinstanz erfolgreich aussetzen zu können, benötigen Sie die Prozessaufruf-ID, die beim Aufrufen eines langlebigen Prozesses mithilfe der Aufruf-API abgerufen werden kann.
+Im folgenden Java-Code-Beispiel wird eine Prozessinstanz ausgesetzt. Um eine Prozessinstanz erfolgreich aussetzen zu können, benötigen Sie die Prozessaufruf-Kennung, die beim Aufrufen eines langlaufenden Prozesses mithilfe der Aufruf-API abgerufen werden kann.
 
 ```java
  /*
@@ -250,9 +250,9 @@ Im folgenden Java-Codebeispiel wird eine Prozessinstanz ausgesetzt. Um eine Proz
  
 ```
 
-## Schnellstart (SOAP-Modus): Starten von ausgesetzten Prozessinstanzen mit der Java-API {#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api}
+## Schnellstart (SOAP-Modus): Starten von ausgesetzten Prozessinstanzen unter Verwendung der Java-API {#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird eine ausgesetzte Prozessinstanz gestartet.
+Im folgenden Java-Code-Beispiel wird eine ausgesetzte Prozessinstanz gestartet.
 
 ```java
  /*
@@ -338,9 +338,9 @@ Im folgenden Java-Codebeispiel wird eine ausgesetzte Prozessinstanz gestartet.
  
 ```
 
-## Schnellstart (SOAP-Modus): Beenden von Prozessinstanzen mit der Java-API {#quick-start-soap-mode-terminating-process-instances-using-the-java-api}
+## Schnellstart (SOAP-Modus): Beenden von Prozessinstanzen unter Verwendung der Java-API {#quick-start-soap-mode-terminating-process-instances-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird eine Prozessinstanz mit dem Kennungswert 756c22860a242fb101ec7a5bc0977fd6 beendet.
+Im folgenden Java-Code-Beispiel wird eine Prozessinstanz mit dem Kennungswert 756c22860a242fb101ec7a5bc0977fd6 beendet.
 
 ```java
  /*
@@ -429,9 +429,9 @@ Im folgenden Java-Codebeispiel wird eine Prozessinstanz mit dem Kennungswert 756
  
 ```
 
-## Schnellstart (SOAP-Modus): Bereinigen von Prozessdaten mithilfe der Java-API {#quick-start-soap-mode-purging-process-data-using-the-java-api}
+## Schnellstart (SOAP-Modus): Bereinigen von Prozessdaten unter Verwendung der Java-API {#quick-start-soap-mode-purging-process-data-using-the-java-api}
 
-Der folgende Java-Code löscht Daten aus einem Prozess namens *SecureDocument*. Es wird ein Filter verwendet, der angibt, Daten für jene Prozessinstanzen zu bereinigen, bei denen die Prozessvariable *inValue* größer als 200 ist.
+Der folgende Java-Code löscht Daten aus einem Prozess mit dem Namen *SecureDocument*. Es wird ein Filter verwendet, der angibt, Daten für die Prozessinstanzen zu bereinigen, in denen die Prozessvariable namens *inValue* größer als 200 ist.
 
 ```java
  /*
@@ -536,9 +536,9 @@ Der folgende Java-Code löscht Daten aus einem Prozess namens *SecureDocument*. 
  
 ```
 
-## Schnellstart (SOAP-Modus): Abrufen des Status eines Auftrags mithilfe der Java-API {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}
+## Schnellstart (SOAP-Modus): Abrufen des Status eines Auftrags unter Verwendung der Java-API {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}
 
-Im folgenden Codebeispiel wird der Status von 10 AEM Forms-Aufträgen abgerufen.
+Im folgenden Codebeispiel wird der Status von 10 AEM Forms-Vorgängen abgerufen.
 
 ```java
  /*
