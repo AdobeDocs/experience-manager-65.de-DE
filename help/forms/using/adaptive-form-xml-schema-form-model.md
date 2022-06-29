@@ -1,14 +1,14 @@
 ---
-title: Wie erstelle ich Adaptive Forms mithilfe des XML-Schemas?
-description: Erfahren Sie, wie Sie das XML-Schema als Formularmodell in einem adaptiven Formular verwenden. Sie können vorhandene XSD-Vorlagen anwenden, um adaptive Formulare zu erstellen und Schemaelemente aus XSD auf Ihr adaptives Formular zu ziehen und abzulegen. Nehmen Sie ein Beispiel eines XML-Schemas genauer vor, fügen Sie mithilfe des XML-Schemas spezielle Eigenschaften zu Feldern hinzu und beschränken Sie die zulässigen Werte für eine adaptive Formularkomponente.
-feature: Adaptive Formulare
+title: Wie erstelle ich adaptive Formulare mithilfe des XML-Schemas?
+description: Erfahren Sie, wie Sie ein XML-Schema als Formularmodell in einem adaptiven Formular verwenden. Sie können bestehende XSD-Vorlagen anwenden, um adaptive Formulare zu erstellen und Schemaelemente per Drag-und-Drop aus XSD auf Ihr adaptives Formular zu ziehen. Finden Sie anhand eines Beispiels für ein XML-Schema mehr heraus, fügen Sie Feldern mithilfe des XML-Schemas spezielle Eigenschaften hinzu und beschränken Sie die gültigen Werte für eine Komponente eines adaptiven Formulars.
+feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 87%
+workflow-type: ht
+source-wordcount: '1073'
+ht-degree: 100%
 
 ---
 
@@ -165,10 +165,8 @@ Sie können die folgenden Attribute zu XML-Schemaelementen hinzufügen, um spezi
 >
 >* Großschreibung des ersten Zeichens des Elementnamens
 >* Einfügen eines Leerzeichens bei Binnenmajuskeln.
-
 >
->
-Wenn Sie beispielsweise das Schemaelement `userFirstName` hinzufügen, lautet die im adaptiven Formular generierte Beschriftung `User First Name`.
+>Wenn Sie beispielsweise das Schemaelement `userFirstName` hinzufügen, wird `User First Name` als Beschriftung im adaptiven Formular erstellt.
 
 ## Einschränken der gültigen Werte für eine Komponente eines adaptiven Formulars {#limit-acceptable-values-for-an-adaptive-form-component}
 
@@ -284,19 +282,19 @@ Sie können die folgenden Einschränkungen zu XML-Schemaelementen hinzufügen, u
  </tbody>
 </table>
 
-## Häufig gestellte Fragen {#frequently-asked-questions}
+## Häufig gestellte Fragen  {#frequently-asked-questions}
 
 **Woher weiß ich, welches Element in der Baumstruktur mit welchem XML-Element verknüpft ist?**
 
-Wenn Sie in der Inhaltssuche auf ein Element doppelklicken, wird in einem Popup-Fenster der Feldname und die Eigenschaft `bindRef` angezeigt. Diese Eigenschaft ordnet das Baumstrukturelement dem Element oder Attribut im Schema zu.
+Wenn Sie auf ein Element in der Inhaltssuche doppelklicken, wird ein Popup-Menü mit einem Feldnamen und einer Eigenschaft namens `bindRef` angezeigt. Diese Eigenschaft ordnet das Baumstrukturelement dem Element oder Attribut im Schema zu.
 
 ![Ein bindref-Feld eines XML-Schemaelements](assets/dblclick.png)
 
-Das Feld bindRef</code> zeigt die Verknüpfung zwischen einem Baumstrukturelement und einem Element oder Attribut in einem Schema an.
+Das Feld bindRef</code> zeigt die Verknüpfung zwischen einem Element der Baumstruktur und einem Element oder Attribut in einem Schema an.
 
 >[!NOTE]
 >
->Attribute haben ein `@` -Symbol in ihrem `bindRef`Wert, um sie von Elementen zu unterscheiden. Beispiel: `/config/projectDetails/@duration`.
+>Attribute weisen ein `@`-Symbol in ihrem `bindRef`-Wert auf, wodurch sie von Elementen unterschieden werden können. Beispiel: `/config/projectDetails/@duration`.
 
 **Warum kann ich nicht einzelne Elemente eines Teilformulars (Struktur aus einem komplexen Typ generiert) für wiederholbare Teilformulare ziehen (Wert von „minOccurs“ oder „maxOccurs“ ist größer als 1)?**
 
