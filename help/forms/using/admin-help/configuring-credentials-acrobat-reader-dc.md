@@ -1,8 +1,8 @@
 ---
 title: Konfigurieren von Berechtigungen für die Verwendung mit Acrobat Reader DC Extensions
-seo-title: Konfigurieren von Berechtigungen für die Verwendung mit Acrobat Reader DC Extensions
+seo-title: Configuring credentials for use with Acrobat Reader DC extensions
 description: Erfahren Sie, wie Sie Berechtigungen für die Verwendung mit Acrobat Reader DC-Erweiterungen konfigurieren.
-seo-description: Erfahren Sie, wie Sie Berechtigungen für die Verwendung mit Acrobat Reader DC-Erweiterungen konfigurieren.
+seo-description: Learn how to configure credentials for use with Acrobat Reader DC extensions.
 uuid: 9210e6c9-6f5c-402d-b355-b104cdffd5eb
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5bb32fb1-4b6e-412f-aa16-f60db9dcaba1
 exl-id: e8015d59-7587-46dc-a672-e0f1108102ad
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 97%
+workflow-type: ht
+source-wordcount: '555'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Um Verwendungsrechte in PDF-Dokumenten anzuwenden, konfigurieren Sie AEM Forms m
 
 Wenn Sie eine Testberechtigung verwenden, müssen Sie diese nach dem Wechsel in die Produktionsumgebung durch eine Produktionsberechtigung ersetzen. Um eine abgelaufene oder Testberechtigung zu aktualisieren, müssen Sie zunächst die alte Acrobat Reader DC Extensions-Berechtigung löschen.
 
-Weitere Informationen zum Abrufen einer Berechtigung finden Sie unter [Vorbereiten der Installation von AEM Forms (Einzelserver)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
+Weitere Informationen zum Abrufen einer Berechtigung finden Sie unter [Vorbereiten der Installation von AEM Forms (Einzelserver)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63_de).
 
 Der Trust Store enthält möglicherweise mehr als eine Acrobat Reader DCExtensions-Berechtigung. Sie müssen eine dieser Berechtigungen als Standardberechtigung für Reader Extensions festlegen. Die Standardberechtigung wird verwendet, wenn ein Workbench-Benutzer nicht entscheiden kann, welche Berechtigung bei der Prozesserstellung verwendet werden soll. Diese Regeln gelten für Standardberechtigungen:
 
@@ -34,7 +34,7 @@ Der Trust Store enthält möglicherweise mehr als eine Acrobat Reader DCExtensio
 
 >[!NOTE]
 >
->Sie können Berechtigungen auch importieren und programmgesteuert löschen. (Weitere Informationen finden Sie unter [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).)
+>Sie können Berechtigungen auch importieren und programmgesteuert löschen. (Weitere Informationen finden Sie unter [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_de).)
 
 ## Acrobat Reader DC Extensions-Berechtigungen importieren {#import-a-acrobat-reader-dc-extensions-credential}
 
@@ -51,12 +51,12 @@ Der Trust Store enthält möglicherweise mehr als eine Acrobat Reader DCExtensio
 
    Wenn die Fehlermeldung „Fehler beim Importieren einer Berechtigung aufgrund eines fehlerhaften Dateiformats oder eines falschen Kennworts“ angezeigt wird, müssen Sie sicherstellen, dass das Kennwort gültig ist.
 
-## Acrobat Reader DC Extensions-Berechtigungen entfernen  {#remove-a-acrobat-reader-dc-extensions-credential}
+## Acrobat Reader DC Extensions-Berechtigungen entfernen {#remove-a-acrobat-reader-dc-extensions-credential}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
 1. Wählen Sie die Berechtigung und klicken Sie auf „Löschen“.
 
-## Acrobat Reader DC Extensions-Berechtigungen ersetzen  {#replace-a-acrobat-reader-dc-extensions-credential}
+## Acrobat Reader DC Extensions-Berechtigungen ersetzen {#replace-a-acrobat-reader-dc-extensions-credential}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
 1. Notieren Sie sich den Alias der vorhandenen Berechtigung, wählen Sie ihn aus und klicken Sie auf „Löschen“.
