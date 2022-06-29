@@ -1,8 +1,8 @@
 ---
 title: Ordner des globalen Dokumentenspeichers
-seo-title: Ordner des globalen Dokumentenspeichers
+seo-title: Global document storage directory
 description: Der Ordner des globalen Dokumentenspeichers (GDS) ist ein Ordner zum Speichern dauerhaft genutzter Dateien in einem Prozess.
-seo-description: Der Ordner des globalen Dokumentenspeichers (GDS) ist ein Ordner zum Speichern dauerhaft genutzter Dateien in einem Prozess.
+seo-description: The global document storage (GDS) directory is a directory used to store long-lived files that are used within a process.
 uuid: 7681672c-a0dc-4445-8004-1b1e2ed3d301
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a33b8834-6e39-47eb-a53b-0982d32e80ad
 exl-id: 7a64a643-808b-4644-8fd3-0dafe83e8dd9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 97%
+workflow-type: ht
+source-wordcount: '676'
+ht-degree: 100%
 
 ---
 
@@ -91,14 +91,14 @@ Sie können nach Abschluss der Installation von AEM Forms den Speicherort des gl
 1. Verschieben Sie alle Dateien aus dem alten Ordner des globalen Dokumentenspeichers unter Beibehaltung der internen Ordnerstruktur an den neuen Speicherort.
 1. Starten Sie den Anwendungsserver neu.
 
-## Informationen zu Bereitstellungsdateien  {#about-deployment-files}
+## Informationen zu Bereitstellungsdateien {#about-deployment-files}
 
 AEM Forms besteht aus zwei Arten von Bereitstellungsdateien: den Dienstcontainern und den EAR-Dateien für Java 2 Platform, Enterprise Edition (J2EE). Die EAR-Dateien bestehen aus Paketen mit J2EE-Standardanwendungen, die die Hauptfunktionalität von AEM Forms enthalten. Die für den jeweiligen Anwendungsserver spezifischen EAR-Dateien tragen folgende Bezeichnungen:
 
-* adobe-core-*[appserver]*.ear
-* adobe-core-*[appserver]*-*[OS]*.ear
+* adobe-core-*[Anwendungsserver]*.ear
+* adobe-core-*[Anwendungsserver]*-*[Betriebssystem]*.ear
 
-Das Implementieren von AEM Forms besteht aus der Bereitstellung der assemblierten EAR-Dateien und unterstützender Dateien auf dem Anwendungsserver, auf dem Sie die AEM Forms-Lösung ausführen möchten. Wenn Sie mehrere Module konfiguriert und assembliert haben, werden die bereitstellbaren Module in den bereitstellbaren EAR-Dateien zusammengefasst. Um diese Dateien bereitzustellen, kopieren Sie sie in den Ordner *[appserver home]*\server\all\deploy directory.
+Das Implementieren von AEM Forms besteht aus der Bereitstellung der assemblierten EAR-Dateien und unterstützender Dateien auf dem Anwendungsserver, auf dem Sie die AEM Forms-Lösung ausführen möchten. Wenn Sie mehrere Module konfiguriert und assembliert haben, werden die bereitstellbaren Module in den bereitstellbaren EAR-Dateien zusammengefasst. Um diese Dateien bereitzustellen, kopieren Sie sie in den Ordner „*[Anwendungsserver-Startordner]*\server\all\deploy“.
 
 Module und AEM Forms-Archivdateien werden als JAR-Dateien zusammengefasst. Da sie keine Dateien vom Typ J2EE sind, werden sie nicht auf dem Anwendungsserver bereitgestellt. Sie werden stattdessen in den Ordner des globalen Dokumentenspeichers kopiert und in der AEM Forms-Datenbank wird ein Verweis auf ihren Speicherort gespeichert. Daher muss der Ordner des globalen Dokumentenspeichers für alle Knoten des Clusters freigegeben werden. Alle Knoten müssen Zugriff auf den zentralen Speicherordner für die DSC haben.
 
