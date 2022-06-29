@@ -1,8 +1,8 @@
 ---
 title: Aktivieren der Protokollierung für HTML5-Formulare
-seo-title: Aktivieren der Protokollierung für HTML5-Formulare
+seo-title: Enable logging for HTML5 forms
 description: Das Dienstprogramm der Protokollfunktion aktiviert die Protokollierung von Formularen und hilft beim Debugging von Problemen mit Formularen.
-seo-description: Das Dienstprogramm der Protokollfunktion aktiviert die Protokollierung von Formularen und hilft beim Debugging von Problemen mit Formularen.
+seo-description: The logger utility enables logging for a form and helps you debug form-related issues.
 uuid: 322306ba-8ad7-463d-8a9d-4cea5a0c4b55
 contentOwner: robhagat
 content-type: reference
@@ -13,9 +13,9 @@ docset: aem65
 feature: Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
-workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 70%
+workflow-type: ht
+source-wordcount: '626'
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Sie können das Dienstprogramm der Protokollfunktion konfigurieren, um mit der E
 
 Führen Sie die folgenden Schritte aus, um serverseitige Protokolle zu konfigurieren:
 
-1. Rufen Sie `https://'[server]:[port]'/system/console/configMgr` auf. Suchen und öffnen Sie die Option *Apache Sling Logging Logger configuration* . Folgendes Dialogfeld wird angezeigt:
+1. Rufen Sie `https://'[server]:[port]'/system/console/configMgr` auf. Suchen Sie die Option *Apache Sling Logging Logger-Konfiguration* und öffnen Sie sie. Folgendes Dialogfeld wird angezeigt:
 
    ![ Dialogfeld mit Apache Sling Logging Logger-Konfigurations-Optionen](assets/logconfig.png)
 
@@ -35,7 +35,7 @@ Führen Sie die folgenden Schritte aus, um serverseitige Protokolle zu konfiguri
 
 1. Ändern Sie die **Protokollierungsstufe** in **Debug**.
 
-1. Geben Sie den Namen und Pfad der **Protokolldatei** an.
+1. Geben Sie den Namen und den Pfad der **Protokolldatei** an.
 
    >[!NOTE]
    >
@@ -52,7 +52,7 @@ Um die clientseitige Protokollierung in HTML5-Formularen zu aktivieren, können 
 
 ### Aktivieren der Protokollierung mithilfe des Anforderungsparameters {#enabling-logging-using-request-parameter}
 
-Mit dieser Methode können Sie Protokolle für eine bestimmte Anforderung generieren. Der Name des Anforderungsparameters ist `log`. Die Protokoll-URL lautet wie folgt:
+Mit dieser Methode können Sie Protokolle für eine bestimmte Anforderung generieren. Der Name des Anforderungsparameters lautet `log`. Die Protokoll-URL lautet wie folgt:
 
 `https://<server>:<port>/content/xfaforms/profiles/test.html?contentRoot=<path of the folder containing form xdp>&template=<name of the xdp>&log=<log configuration>.`
 
@@ -72,7 +72,7 @@ Die Protokollkonfiguration besteht aus der Protokollebene und der Protokollfunkt
   </tr>
   <tr>
    <td>2</td>
-   <td>Protokolle werden in einem JavaScript-Objekt auf Clientseite erfasst und können unter <strong>Server</strong> veröffentlicht werden </td>
+   <td>Die Protokolle werden in einem JavaScript-Objekt auf Client-Seite erfasst und können an den <strong>Server</strong> gesendet werden. </td>
   </tr>
   <tr>
    <td>3</td>
@@ -81,7 +81,7 @@ Die Protokollkonfiguration besteht aus der Protokollebene und der Protokollfunkt
  </tbody>
 </table>
 
-#### Protokollebenen  {#log-levels}
+#### Protokollebenen {#log-levels}
 
 <table>
  <tbody>
@@ -102,7 +102,7 @@ Die Protokollkonfiguration besteht aus der Protokollebene und der Protokollfunkt
    <td>ERROR<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>1</td>
+   <td>3</td>
    <td>WARN<br type="_moz" /> </td>
   </tr>
   <tr>
@@ -147,7 +147,7 @@ Die Protokollkonfiguration besteht aus der Protokollebene und der Protokollfunkt
  </tbody>
 </table>
 
-#### Protokollkonfiguration  {#log-configuration}
+#### Protokollkonfiguration {#log-configuration}
 
 In der Protokoll-URL wird der Abfragezeichenfolgen-Parameter zur Protokollkonfiguration wie folgt definiert:
 
@@ -171,17 +171,17 @@ Beispiel:
 >[!NOTE]
 >
 >Die Standardprotokollebene für jede Protokollkategorie – a (xfa), b (xfaView) und c (xfaPerf) – ist 2 (ERROR). Entsprechend lauten bei der Protokollkonfiguration 2-b6 die Protokollebenen für die verschiedenen Kategorien:
->a (xfa): 2 (FEHLER DER Standardebene)
+>a (xfa): 2 (FEHLER der Standardebene)
 >b (xfaView): 6 (vom Benutzer angegebenes TRACE)
->a (xfaPerf): 2 (FEHLER DER Standardebene)
+>a (xfaPerf): 2 (FEHLER der Standardebene)
 
 ### Aktivieren der Protokollierung über den Configuration Manager {#enabling-logging-using-configuration-manager}
 
-Wenn Sie Configuration Manager zum Aktivieren der Protokollierung verwenden, werden Protokolle für jede Rendering-Anforderung generiert, bis die Protokollierung erneut deaktiviert wird.
+Wenn Sie Configuration Manager zur Aktivierung der Protokollierung verwenden, werden für jede Render-Anforderung so lange Protokolle generiert, bis die Protokollierung wieder deaktiviert wird.
 
 1. Melden Sie sich bei CQ Configuration Manager unter `https://'[server]:[port]'/system/console/configMgr` an und melden Sie sich mit Administratorberechtigungen an.
 1. Suchen Sie nach **Mobile Forms Configurations** und klicken Sie darauf.
-1. Geben Sie im Textfeld &quot;Debug Options&quot; die Protokollkonfigurationen ein, wie sie im letzten Abschnitt beschrieben sind, z. B. **2a4-b5-c6**
+1. Geben Sie im Textfeld „Debug Options“ die Protokollkonfigurationen ein, wie sie im letzten Abschnitt beschrieben sind, z. B. **2a4-b5-c6**
 
    ![Formularkonfiguration](assets/forms_configuration.png)
 
@@ -189,7 +189,7 @@ Wenn Sie Configuration Manager zum Aktivieren der Protokollierung verwenden, wer
 
 ## Hochladen von Protokollen {#uploading-logs}
 
-Wenn als Ziel 1 eingestellt ist, werden alle clientseitigen Skriptprotokollmeldungen an die Konsole geleitet. Wenn ein Administrator diese Protokolle zusammen mit Serverprotokollen benötigt, setzen Sie die Zielebene auf 2. Auf dieser Ebene werden alle Protokolle in einem JS-Objekt auf Clientseite erfasst. Wenn das Formular mit dem Standardprofil wiedergegeben wird, wird links neben der Schaltfläche **Vorhandene Felder markieren** die Schaltfläche **Protokolle senden** angezeigt. Wenn der Benutzer auf den Link klickt, werden alle erfassten Protokolle an den Server gesendet und in der konfigurierten Fehlerprotokolldatei auf dem Server protokolliert.
+Wenn als Ziel 1 eingestellt ist, werden alle clientseitigen Skriptprotokollmeldungen an die Konsole geleitet. Wenn ein Administrator diese Protokolle zusammen mit dem Server-Protokollen benötigt, setzen Sie die Zielebene auf 2. Auf dieser Ebene werden alle Protokolle in einem JS-Objekt auf Client-Seite erfasst. Wenn ein Formular mit einem Standardprofil gerendert wird, wird in der Symbolleiste links neben der Schaltfläche **Vorhandene Felder hervorheben** eine Schaltfläche **Protokolle senden** angezeigt. Wenn der Benutzer auf den Link klickt, werden alle erfassten Protokolle an den Server geleitet und in der konfigurierten Fehlerprotokolldatei auf dem Server protokolliert.
 
 Standardmäßig werden alle Daten der Datei „error.log“ im Ordner „/crx-repository/logs/“ hinzugefügt.
 
@@ -202,10 +202,10 @@ Speicherort und Namen der Protokolldatei ändern:
 
 1. Ändern Sie die **Protokollierungsstufe** in Debug.
 
-1. Geben Sie den Pfad und den Namen der **Protokolldatei** an.
+1. Geben Sie Pfad und Namen der **Protokolldatei** an.
 
    >[!NOTE]
    >
    >Um Protokolle im selben Ordner zu erstellen, in dem bereits andere Protokolldateien enthalten sind, geben Sie in den Eigenschaften der Protokolldateien ../logs/&lt;filename> an.
 
-1. Ändern Sie **Logger** in **HTMLFormsPerfLogger** und klicken Sie auf **Save**.
+1. Ändern Sie den **Logger** in **HTMLFormsPerfLogger** und klicken Sie auf **Speichern**.
