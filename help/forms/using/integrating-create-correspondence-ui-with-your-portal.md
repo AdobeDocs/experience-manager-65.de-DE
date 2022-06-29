@@ -1,26 +1,26 @@
 ---
 title: Integrieren der Benutzeroberfläche „Korrespondenz erstellen“ in Ihr benutzerdefiniertes Portal
-seo-title: Integrieren der Benutzeroberfläche „Korrespondenz erstellen“ in Ihr benutzerdefiniertes Portal
+seo-title: Integrating Create Correspondence UI with your custom portal
 description: Erfahren Sie, wie Sie die Benutzeroberfläche „Korrespondenz erstellen“ in Ihr benutzerdefiniertes Portal integrieren.
-seo-description: Erfahren Sie, wie Sie die Benutzeroberfläche „Korrespondenz erstellen“ in Ihr benutzerdefiniertes Portal integrieren.
+seo-description: Learn how to integrate create correspondence UI with your custom portal
 uuid: 68ef5bf2-b271-4c44-8840-6c495069164d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 0d3bb98e-7139-4d8e-b110-6ebd11debda1
 docset: aem65
-feature: Korrespondenzverwaltung
+feature: Correspondence Management
 exl-id: c3b6ee31-ccbb-4446-86c8-f618226fefc4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 76%
+workflow-type: ht
+source-wordcount: '413'
+ht-degree: 100%
 
 ---
 
 # Integrieren der Benutzeroberfläche „Korrespondenz erstellen“ in Ihr benutzerdefiniertes Portal{#integrating-create-correspondence-ui-with-your-custom-portal}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 In diesem Artikel wird erläutert, wie Sie die Lösung „Korrespondenz erstellen“ in Ihre Umgebung integrieren können.
 
@@ -33,7 +33,7 @@ Eine Möglichkeit, die Anwendung „Korrespondenz erstellen“ von einem Cluster
 * die URL für die XML-Datei, die aus der gewünschten Datenquelle (unter Verwendung des cmDataUrl-Parameters) erfasst wurde
 
 Beispielsweise würde das benutzerdefinierte Portal die URL als\
-`https://'[server]:[port]'/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, das die href eines Links im Portal sein könnte.
+`https://'[server]:[port]'/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]` vorbereiten, wobei es sich um die href eines Links auf dem Portal handeln könnte.
 
 >[!NOTE]
 >
@@ -43,20 +43,20 @@ Beispielsweise würde das benutzerdefinierte Portal die URL als\
 >
 >Bevor Sie die Anwendung „Korrespondenz erstellen“ aufrufen, speichern und laden Sie die Daten, um die Benutzeroberfläche „Korrespondenz erstellen“ unter der angegebenen URL aufzurufen. Dies kann entweder vom benutzerdefinierten Portal aus oder über einen anderen Vorgang im Back-End ausgeführt werden.
 
-## Auf Daten basierter Inline-Aufruf  {#inline-data-based-invocation}
+## Auf Daten basierter Inline-Aufruf {#inline-data-based-invocation}
 
-Eine weitere (und sicherere) Möglichkeit, die Anwendung &quot;Korrespondenz erstellen&quot;aufzurufen, besteht darin, einfach die URL unter https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html zu drücken, während die Parameter und Daten gesendet werden, um die Anwendung &quot;Korrespondenz erstellen&quot;als POST-Anfrage aufzurufen (sie vom Endbenutzer auszublenden). Dies bedeutet auch, dass Sie jetzt die XML-Datei für die Anwendung „Korrespondenz erstellen“ „inline“ (als Teil der gleichen Anforderung, unter Verwendung des cmData-Parameters) übergeben können, was bei der vorigen Herangehensweise nicht möglich/ideal war.
+Eine weitere (und sicherere) Möglichkeit, die Anwendung „Korrespondenz erstellen“ aufzurufen, besteht darin, die URL https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html aufzurufen, während die Parameter und Daten zum Aufrufen der Anwendung „Korrespondenz erstellen“ als POST-Anforderung gesendet werden (wodurch sie vor dem Endbenutzer versteckt werden). Dies bedeutet auch, dass Sie jetzt die XML-Datei für die Anwendung „Korrespondenz erstellen“ „inline“ (als Teil der gleichen Anforderung, unter Verwendung des cmData-Parameters) übergeben können, was bei der vorigen Herangehensweise nicht möglich/ideal war.
 
-### Parameter für das Festlegen des Briefs  {#parameters-for-specifying-letter}
+### Parameter für das Festlegen des Briefs {#parameters-for-specifying-letter}
 
 | **Name** | **Typ** | **Beschreibung** |
 |---|---|---|
-| cmLetterInstanceId | Zeichenfolge | Die Kennung für die Briefinstanz. |
+| cmLetterInstanceId | Zeichenfolge | Der Bezeichner für die Briefinstanz. |
 | cmLetterId | Zeichenfolge | Der Name der Briefvorlage. |
 
 Die Reihenfolge der Parameter in der Tabelle gibt die Voreinstellungen von Parametern an, die zum Laden des Briefs verwendet werden.
 
-### Parameter für die Angabe der XML-Datenquelle  {#parameters-for-specifying-the-xml-data-source}
+### Parameter für die Angabe der XML-Datenquelle {#parameters-for-specifying-the-xml-data-source}
 
 <table>
  <tbody>
@@ -85,7 +85,7 @@ Die Reihenfolge der Parameter in der Tabelle gibt die Voreinstellungen von Param
 
 Die Reihenfolge der Parameter in der Tabelle gibt die Voreinstellungen von Parametern an, die zum Laden der XML-Daten verwendet werden.
 
-### Andere Parameter  {#other-parameters}
+### Andere Parameter {#other-parameters}
 
 <table>
  <tbody>
@@ -107,4 +107,4 @@ Die Reihenfolge der Parameter in der Tabelle gibt die Voreinstellungen von Param
  </tbody>
 </table>
 
-Wenn Sie das HTTP- oder CQ-Protokoll für cmDataURL verwenden, sollte die URL von http/cq anonym zugänglich sein.
+Wenn Sie ein HTTP- oder CQ-Protokoll für cmDataURL verwenden, muss die HTTP/CQ-URL anonym zugänglich sein.
