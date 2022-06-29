@@ -1,8 +1,8 @@
 ---
 title: Fehlerbehebung der AEM Forms-App
-seo-title: Fehlerbehebung der AEM Forms-App
+seo-title: Troubleshoot AEM Forms app
 description: Erfahren Sie mehr über die häufigsten Probleme mit AEM Forms-App und wie die Fehlerbehebung für diese Probleme durchgeführt wird.
-seo-description: Erfahren Sie mehr über die häufigsten Probleme mit AEM Forms-App und wie die Fehlerbehebung für diese Probleme durchgeführt wird.
+seo-description: Learn about common issues with AEM Forms app and how to troubleshoot them.
 uuid: a5cc3065-0ebf-48c0-a8fe-f1061632ca90
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ topic-tags: forms-app
 discoiquuid: 2f45a965-590b-43b1-95c6-df4b74ad15b9
 exl-id: caec5fc3-db52-4bf5-8eb2-17e5189ab819
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '697'
-ht-degree: 62%
+workflow-type: ht
+source-wordcount: '680'
+ht-degree: 100%
 
 ---
 
@@ -33,17 +33,17 @@ Die Abschnitte in diesem Artikel behandeln Folgendes:
 
 AEM Forms-App für iOS, die zur Synchronisierung mit AEM Forms unter OSGi konfiguriert ist, unterstützt nur Anlagen auf Feldebene. Alle Anlagen müssen eindeutige Namen haben. Wenn mehrere Anlagen denselben Namen haben, wird nur eine Anlage beibehalten und alle anderen mit identischem Namen gehen verloren. Führen Sie die folgenden Schritte aus, um Benutzer auf iOS-Geräten vor Datenverlust zu bewahren:
 
-1. Navigieren Sie auf dem verbundenen Server zu **Adobe Experience Manager > Tools > Vorgänge > Web Console**.
-1. Klicken Sie auf **[!UICONTROL Webkanalkonfiguration für adaptive Formulare und interaktive Kommunikation]**.
-1. Aktivieren Sie im Dialogfeld [!UICONTROL Webkanalkonfiguration für adaptive Formulare und interaktive Kommunikation] die Option **Dateinamen individualisieren**.
+1. Auf dem verbundenen Server navigieren Sie zu: **Adobe Experience Manager > Werkzeuge > Vorgänge > Webkonsole**.
+1. Suchen Sie nach **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** und klicken Sie darauf.
+1. Aktivieren Sie im Dialog [!UICONTROL Adaptives Formular und interaktive Kommunikation Webkanal-Konfiguration] die Option **Dateinamen individualisieren**.
 
-   Wenn die Einstellung **Dateinamen individualisieren** deaktiviert ist, gehen die Daten der Benutzer verloren, wenn sie versuchen, adaptive Formulare mit mehreren Anhängen zu senden.
+   Wenn die Einstellung **Dateinamen individualisieren** deaktiviert ist, können die Benutzer Daten verlieren, wenn sie versuchen, adaptive Formulare mit mehreren Anlagen zu versenden.
 
 1. Klicken Sie auf **Speichern**.
 
 ## Entwürfe von HTML5 -Formularen, die von Workspace-Benutzern eingesendet wurden, werden nicht auf dem Portal angezeigt {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
 
-Bei HTML5-Formularen, die in der AEM Forms-App mit **Als Entwurf speichern** HTML-Renderprofil aktiviert sind, sind die gespeicherten Entwürfe für Workspace-Benutzer nicht sichtbar. Um gespeicherte Entwürfe von HTML5-Formularen anzuzeigen, die von Workspace-Benutzern im Portal gesendet wurden, führen Sie die folgenden Schritte aus:
+Bei HTML5-Formularen, die in der AEM Forms-Anwendung mit dem HTML-Renderprofil **Als Entwurf speichern** aktiviert sind, sind die gespeicherten Entwürfe für Arbeitsbereichsbenutzer nicht sichtbar. Führen Sie die folgenden Schritte aus, um gespeicherte Entwürfe von HTML5-Formularen anzuzeigen, die von Arbeitsbereichsbenutzern im Portal übermittelt wurden:
 
 1. Öffnen Sie CRXDE und melden Sie sich als Administrator an.
 
@@ -51,11 +51,11 @@ Bei HTML5-Formularen, die in der AEM Forms-App mit **Als Entwurf speichern** HTM
 
 1. Im Stammpfad von CRXDE, in der Zugriffssteuerungsliste unter Zugriffssteuerung klicken Sie auf **+**.
 1. Klicken Sie im Dialogfeld **Neuen Eintrag hinzufügen** auf die Gruppensuche-Schaltfläche im Feld „Prinzipal“.
-1. Geben Sie im Feld &quot;Name&quot;des Dialogfelds &quot;Prinzipal auswählen&quot;`PERM_WORKSPACE_USER` ein und klicken Sie auf **Suche**.
-1. Wählen Sie die Gruppe `PERM_WORKSPACE_USER` im Dialogfeld &quot;Prinzipal auswählen&quot;und klicken Sie auf **OK**.
+1. Geben Sie im Feld „Name“ des Dialogfelds „Prinzipal auswählen“ `PERM_WORKSPACE_USER` ein und klicken Sie auf **„Suchen“**. 
+1. Wählen Sie `PERM_WORKSPACE_USER`-Gruppe im Dialogfeld „Prinzipal wählen“ und klicken Sie auf **OK**.
 1. Im Dialogfeld „Neuen Eintrag hinzufügen“ wird `PERM_WORKSPACE_USER`-Gruppe im Feld „Prinzipal“ ausgewählt.
 
-   Aktivieren Sie die `jcr:read`-Berechtigungen für die Benutzergruppe.
+    Aktivieren Sie `jcr:read`-Berechtigungen für die Benutzergruppe.
 
 1. Klicken Sie auf **OK**.
 
@@ -71,37 +71,37 @@ Führen Sie zur Behebung dieses Problems folgende Schritte durch:
    URL: https://&lt;server>:&lt;port>/libs/fd/workspace-offline/content/config.html
 
 1. Im **manuellen Ressourcen-Cache** klicken Sie auf die Schaltfläche **+**, um einen CRX-Pfad hinzuzufügen.
-1. Geben Sie im Feld **Neue Ressource** Folgendes ein: /etc.clientlibs/fd/xfaforms/I18N/en_US.js und klicken Sie auf **Hinzufügen**.
+1. Geben Sie in das Feld **Neue Ressourcen hinzufügen** ein: /etc.clientlibs/fd/xfaforms/I18N/en_US.js und klicken Sie auf **Hinzufügen**.
 1. Klicken Sie auf **Speichern**.
 
-## AEM Forms werden unter Windows nicht synchronisiert  {#aem-forms-do-not-sync-on-windows}
+## AEM Forms werden unter Windows nicht synchronisiert {#aem-forms-do-not-sync-on-windows}
 
 Ein Formular wird unter Windows nicht in der AEM Forms-App mit dem verbundenen Server synchronisiert, wenn der Pfad des Formulars oder seine Ressourcen länger als 256 Zeichen lang sind.
 
 Modifizieren Sie den Pfad des Formulars und seine Ressourcen, um die Anzahl der Zeichen im Pfad auf 256 zu reduzieren.
 
-## Nicht unterstützte Version von Gradle  {#unsupported-version-of-gradle}
+## Nicht unterstützte Version von Gradle {#unsupported-version-of-gradle}
 
 **Fehlermeldung:** Das Projekt verwendet eine nicht unterstützte Version von Gradle.
 
 Die Fehlermeldung wird angezeigt, wenn Sie die AEM Forms-App in Android Studio erstellen. Das Problem tritt aufgrund einer nicht unterstützten Version von Gradle auf, die vom System unterstützt wird.
 
-**Lösung:** Klicken Sie auf Gradle Wrapper  **reparieren und** importieren Sie das Projekt erneut, um das Problem zu beheben.
+**Lösung:** Klicken Sie auf **Gradle-Wrapper reparieren und Projekt erneut importieren**, um das Problem zu lösen.
 
 ![gradle_unsupported_version](assets/gradle_unsupported_version.png)
 
 ## Kompatibilitätsprobleme mit Gradle und Android Gradle Plug-In {#gradle-and-android-gradle-plug-in-compatibility-issues}
 
-**Fehlermeldung:** Die Versionen des Android Gradle-Plug-ins und Gradle sind nicht kompatibel.
+**Fehlermeldung:** Die Versionen des Android Gradle Plug-Ins und Gradle sind nicht kompatibel.
 
-Die Fehlermeldung wird angezeigt, wenn Sie die Option **Build APK** aus dem Menü **Build** auf der Benutzeroberfläche von Android Studio auswählen.
+Die Fehlermeldung wird angezeigt, wenn Sie die Option **APK erstellen** aus dem Menü **Erstellen** auf der Android Studio-Benutzeroberfläche wählen.
 
 ![gradle_plugin_compatibility](assets/gradle_plugin_compatibility.png)
 
-**Lösung:** Öffnen Sie die Datei  **Gradle Scripts**  >  **gradle-wrapper.** properties und bearbeiten Sie die Eigenschaft  **** distributionUrlproperty.
+**Lösung:** Öffnen Sie die Datei **Gradle Scripts** > **gradle-wrapper.properties** und bearbeiten Sie die Eigenschaft **distributionUrl**.
 
-Beispielsweise empfiehlt die Android Studio-Konsole, die Gradle-Version auf 3.5 herabzustufen. Bearbeiten Sie die Version in der Datei **distributionUrl** von **gradle-wrapper.properties** .
+Beispielsweise empfiehlt die Android Studio-Konsole ein Downgrade der Gradle-Version auf 3.5. Bearbeiten Sie die Version in **distributionUrl** der **gradle-wrapper.properties**-Datei.
 
-Wählen Sie erneut **Build** > **Build APK** aus, um den Fehler zu beheben und die .apk-Datei zu generieren.
+Wählen Sie erneut **Erstellen** > **APK erstellen**, um den Fehler zu beheben und die .apk-Datei zu generieren.
 
 ![gradle_wrapper_properties](assets/gradle_wrapper_properties.png)
