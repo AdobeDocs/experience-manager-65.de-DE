@@ -1,36 +1,36 @@
 ---
 title: Benutzerdefinierter Speicher für Komponenten „Drafts and Submissions (Entwurf und Übermittlung)“
-seo-title: Benutzerdefinierter Speicher für Komponenten „Drafts and Submissions (Entwurf und Übermittlung)“
+seo-title: Custom storage for drafts and submissions component
 description: Erfahren Sie, wie Sie die Speicherung von Benutzerdaten für Entwürfe und Übermittlungen anpassen können.
-seo-description: Erfahren Sie, wie Sie die Speicherung von Benutzerdaten für Entwürfe und Übermittlungen anpassen können.
+seo-description: See how to customize the storage of user data for drafts and submissions.
 uuid: ac2e80ee-a9c7-44e6-801e-fe5a840cb7f8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
-feature: Formularportal
+feature: Forms Portal
 exl-id: b1300eeb-2653-4bb5-b2fd-88048c9c43b9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 70%
+workflow-type: ht
+source-wordcount: '335'
+ht-degree: 100%
 
 ---
 
-# Benutzerdefinierter Speicher für Komponenten „Drafts and Submissions (Entwurf und Übermittlung)“{#custom-storage-for-drafts-and-submissions-component}
+# Benutzerdefinierter Speicher für Komponenten „Drafts and Submissions (Entwurf und Übermittlung)“ {#custom-storage-for-drafts-and-submissions-component}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Mit AEM Forms können Sie ein Formular als Entwurf speichern. Mit der Entwurfsfunktion können Sie ein aktuelles Formular beibehalten, welches Sie zu einem späteren Zeitpunkt auf einem anderen Gerät abschließen und senden können.
 
-Standardmäßig speichert AEM Forms die Benutzerdaten, die mit dem Entwurf und der Übermittlung eines Formulars im Knoten `/content/forms/fp` in der Veröffentlichungsinstanz verknüpft sind. Darüber hinaus stellen die AEM Forms-Portalkomponenten Datendienste bereit, die Sie zum Anpassen des Speicherns der Benutzerdaten für Entwürfe und Übermittlungen verwenden können. Beispielsweise können Sie Benutzerdaten in einem Datenspeicher speichern.
+Standardmäßig speichert AEM Forms die Benutzerdaten, die mit dem Entwurf und der Übermittlung eines Formulars verknüpft sind, im `/content/forms/fp`-Knoten in der Publish-Instanz. Darüber hinaus stellen die AEM Forms-Portalkomponenten Datendienste bereit, die Sie zum Anpassen des Speicherns der Benutzerdaten für Entwürfe und Übermittlungen verwenden können. Beispielsweise können Sie Benutzerdaten in einem Datenspeicher speichern.
 
 ## Voraussetzungen  {#prerequisites}
 
-* Aktivieren Sie [Forms Portal-Komponenten](/help/forms/using/enabling-forms-portal-components.md)
-* Erstellen Sie eine [Forms Portal-Seite](/help/forms/using/creating-form-portal-page.md)
-* Aktivieren Sie [adaptive Formulare für das Formularportal](/help/forms/using/draft-submission-component.md)
-* Erfahren Sie mehr über [Implementierungsdetails des benutzerdefinierten Speichers](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Aktivieren von [Formularportalkomponenten](/help/forms/using/enabling-forms-portal-components.md)
+* Erstellen einer [Formularportalseite](/help/forms/using/creating-form-portal-page.md)
+* Aktivieren von [adaptiven Formularen für das Formularportal](/help/forms/using/draft-submission-component.md)
+* Erfahren Sie mehr über [Implementierungsdetails für benutzerdefiniertes Speichern](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Entwurfsdatendienst {#draft-data-service}
 
@@ -99,7 +99,7 @@ public interface DraftDataService {
 
 >[!NOTE]
 >
->Der Mindestwert für die Länge des Entwurfs-ID-Felds beträgt 26 Zeichen. Adobe empfiehlt, die Länge des Entwurfs der ID auf 26 oder mehr Zeichen festzulegen.
+>Der Mindestwert für die Länge des Entwurfs-ID-Felds beträgt 26 Zeichen. Adobe empfiehlt, die Länge der Entwurfs-ID auf 26 oder mehr Zeichen festzulegen.
 
 ## Übermittlungsdatendienst {#submission-data-service}
 
@@ -188,7 +188,7 @@ public interface SubmitDataService {
 }
 ```
 
-Forms Portal verwendet das Konzept eines UUID (Universally Unique Identifier), um eine eindeutige ID für die einzelnen Entwürfe und übermittelten Formulare zu generieren. Sie können auch selbst eine eindeutige ID generieren. Sie können die Schnittstelle FPKeyGeneratorService implementieren, ihre Methoden überschreiben und eine benutzerdefinierte Logik entwickeln, um eine benutzerdefinierte eindeutige ID für jeden Entwurf und jedes gesendete Formular zu generieren. Legen Sie außerdem den Dienstrang der benutzerdefinierten ID-Generierungsimplementierung auf einen Wert über 0. Dies stellt sicher, dass die benutzerdefinierte Implementierung anstelle der Standardimplementierung verwendet wird.
+Forms Portal verwendet das Konzept eines UUID (Universally Unique Identifier), um eine eindeutige ID für die einzelnen Entwürfe und übermittelten Formulare zu generieren. Sie können auch selbst eine eindeutige ID generieren. Sie können die FPKeyGeneratorService-Schnittstelle implementieren, ihre Methoden überschreiben und eine benutzerdefinierte Logik entwickeln, um eine benutzerdefinierte eindeutige ID für jeden Entwurf und jedes übermittelte Formular zu generieren. Legen Sie außerdem den Dienstrang der benutzerdefinierten ID-Generierungsimplementierung auf einen Wert über 0. Dies stellt sicher, dass die benutzerdefinierte Implementierung anstelle der Standardimplementierung verwendet wird.
 
 ```java
 public interface FPKeyGeneratorService {
@@ -207,7 +207,7 @@ Mit der folgenden Anmerkung können Sie die Servicebewertung für die mit dem ob
 
 `@Properties(value = { @Property(name = "service.ranking", intValue = 15) } )`
 
-Um die obige Anmerkung zu verwenden, importiert Folgendes in Ihr Projekt:
+Um die obige Anmerkung zu verwenden, importieren Sie das Folgende in Ihr Projekt: 
 
 ```java
 import org.apache.felix.scr.annotations.Properties;
