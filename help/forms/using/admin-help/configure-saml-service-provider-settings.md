@@ -1,8 +1,8 @@
 ---
 title: SAML-Dienstanbietereinstellungen konfigurieren
-seo-title: SAML-Dienstanbietereinstellungen konfigurieren
+seo-title: Configure SAML service provider settings
 description: Wenn SAML-Service als Ihr Authentifizierungsanbieter konfiguriert ist, melden sich die Benutzer bei AEM Forms an und authentifizieren sich über einen angegebenen Identitätsanbieter (IDP) von Drittanbietern.
-seo-description: Wenn SAML-Service als Ihr Authentifizierungsanbieter konfiguriert ist, melden sich die Benutzer bei AEM Forms an und authentifizieren sich über einen angegebenen Identitätsanbieter (IDP) von Drittanbietern.
+seo-description: You can configure SAML service provider settings to allow users to login and authenticate to AEM forms via a specified third-party identity provider (IDP).
 uuid: 14c706ad-8b1c-4c03-9cd4-97424f2162bc
 contentOwner: admin
 content-type: reference
@@ -11,15 +11,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1169d0d1-cbfb-486b-acca-9b9de3d410dc
 exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 98%
+workflow-type: ht
+source-wordcount: '599'
+ht-degree: 100%
 
 ---
 
 # SAML-Dienstanbietereinstellungen konfigurieren{#configure-saml-service-provider-settings}
 
-Security Assertion Markup Language (SAML) ist eine der Optionen, die Sie beim Konfigurieren der Autorisierung für eine Unternehmens- oder Hybriddomäne auswählen können. SAML wird hauptsächlich zum Unterstützen der einmaligen Anmeldung in mehreren Domänen verwendet. Wenn SAML als Ihr Authentifizierungsanbieter konfiguriert ist, melden sich die Benutzer bei AEM Forms an und authentifizieren sich über einen angegebenen Identitätsanbieter (IDP) von Drittanbietern.
+Security Assertion Markup Language (SAML) ist eine der Optionen, die Sie beim Konfigurieren der Autorisierung für eine Unternehmens- oder Hybrid-Domain auswählen können. SAML wird hauptsächlich zum Unterstützen der einmaligen Anmeldung in mehreren Domains verwendet. Wenn SAML als Ihr Authentifizierungsanbieter konfiguriert ist, melden sich die Benutzer bei AEM Forms an und authentifizieren sich über einen angegebenen Identitätsanbieter (IDP) von Drittanbietern.
 
 Eine Erläuterung von SAML finden Sie unter [Security Assertion Markup Language (SAML) V2.0 Technische Übersicht](https://www.oasis-open.org/committees/download.php/20645/sstc-saml-tech-overview-2%200-draft-10.pdf).
 
@@ -40,10 +40,10 @@ Eine Erläuterung von SAML finden Sie unter [Security Assertion Markup Language 
 
 1. (Optional) Aktivieren Sie die Option „Authentifizierungs-Eingabeaufforderung für lokale Benutzer aktivieren“. Wenn diese Option ausgewählt ist, werden den Benutzern zwei Verknüpfungen angezeigt:
 
-   * eine Verknüpfung zur Anmeldeseite eines dritten SAML-Identitätsanbieters, wo sich Benutzer authentifizieren können, die zu einer Unternehmensdomäne gehören.
-   * eine Verknüpfung zur AEM Forms-Anmeldeseite, wo sich Benutzer identifizieren können, die zu einer lokalen Domäne gehören.
+   * eine Verknüpfung zur Anmeldeseite eines dritten SAML-Identitätsanbieters, wo sich Benutzer authentifizieren können, die zu einer Unternehmens-Domain gehören.
+   * eine Verknüpfung zur AEM Forms-Anmeldeseite, wo sich Benutzer identifizieren können, die zu einer lokalen Domain gehören.
 
-   Wenn diese Option nicht ausgewählt ist, werden die Benutzer direkt zur Anmeldeseite des dritten SAML-Identitätsanbieters geführt, wo sich Benutzer authentifizieren können, die zu einer Unternehmensdomäne gehören.
+   Wenn diese Option nicht ausgewählt ist, werden die Benutzer direkt zur Anmeldeseite des dritten SAML-Identitätsanbieters geführt, wo sich Benutzer authentifizieren können, die zu einer Unternehmens-Domain gehören.
 
 1. (Optional) Wählen Sie „Artefakt-Bindung“, um die Unterstützung für die Artefakt-Bindung zu aktivieren. Standardmäßig wird POST-Bindung mit SAML verwendet. Wenn Sie jedoch Artefakt-Bindung konfiguriert haben, wählen Sie diese Option aus. Wenn diese Option ausgewählt ist, wird die tatsächliche Benutzerassertion nicht durch die Browseranforderung weitergeleitet. Stattdessen wird ein Verweis zu der Assertion weitergeleitet und die Assertion wird mithilfe eines Backend-Webdienstaufrufs abgerufen.
 1. (Optional) Wählen Sie „Bindung umleiten“ aus, um SAML-Bindungen, die Umleitungen verwenden, zu unterstützen.
