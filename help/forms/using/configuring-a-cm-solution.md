@@ -1,18 +1,18 @@
 ---
 title: Konfigurieren einer Correspondence Management-Lösung
-seo-title: Konfigurieren einer Correspondence Management-Lösung
+seo-title: Configuring a Correspondence Management solution
 description: Konfigurieren einer Correspondence Management-Lösung
 uuid: 76b25004-fe47-44d7-9bed-7c0fd963306b
 topic-tags: correspondence-management
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 186ca75c-638b-4057-826e-cd5d56aa0397
-feature: Korrespondenzverwaltung
+feature: Correspondence Management
 exl-id: f7f5eb0d-a283-45ea-84d3-d6375d2bb95b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 78%
+workflow-type: ht
+source-wordcount: '291'
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 78%
 
 Führen Sie die folgenden Schritte aus, um eine URL der Autorinstanz zur Wiederherstellung der Autorinstanzversion:
 
-1. Gehen Sie zu *https://:&lt;PublishHost>:&lt;PublishPort>/lc/system/console/configMgr*. Melden Sie sich mit den Anmeldedaten der OSGi Management Console an. Standardmäßig lauten die Anmeldedaten: admin/admin.
+1. Navigieren Sie zu *https://:&lt;PublishHost>:&lt;PublishPort>/lc/system/console/configMgr*. Melden Sie sich mit den Anmeldedaten der OSGi Management Console an. Standardmäßig lauten die Anmeldedaten: admin/admin.
 1. Klicken Sie auf **[!UICONTROL Bearbeiten]** neben der Einstellung **[!UICONTROL com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name]**.
-1. Geben Sie im Feld **[!UICONTROL VersionRestoreManager Author URL]** die URL der Autoreninstanz von VersionRestoreManager an.
+1. Geben Sie im Feld **[!UICONTROL VersionRestoreManager Author-URL]** die URL der Autoreninstanz von VersionRestoreManager an.
 
    **URL-Zeichenfolge**:
 
@@ -32,7 +32,7 @@ Führen Sie die folgenden Schritte aus, um eine URL der Autorinstanz zur Wiederh
 
    >[!NOTE]
    >
-   >Wenn mehrere Autoreninstanzen (geclustert) von einem Lastenausgleich vorgestellt werden, geben Sie die URL zum Lastenausgleich im Feld **[!UICONTROL VersionRestoreManager-Autoren-URL]** an.
+   >Wenn mehrere Instanzen im Autorenmodus (in Cluster) mit einem vorgeschalteten Lastenausgleich vorhanden sind, geben Sie die URL für den Lastenausgleich im Feld **[!UICONTROL Autor-URL von VersionRestoreManager]** an.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -40,9 +40,9 @@ Führen Sie die folgenden Schritte aus, um eine URL der Autorinstanz zur Wiederh
 
 Folgen Sie diesen Schritten, um die „URL-Instanz veröffentlichen“ für den Aktivierungsmanager der Veröffentlichungsinstanz zu definieren:
 
-1. Gehen Sie zu *https://:&lt;authorHost>:&lt;authorPort>/lc/system/console/configMgr*. Melden Sie sich mit den Anmeldedaten der OSGi Management Console an. Standardmäßig lauten die Anmeldedaten: admin/admin.
+1. Navigieren Sie zu *https://:&lt;authorHost>:&lt;authorPort>/lc/system/console/configMgr*. Melden Sie sich mit den Anmeldedaten der OSGi Management Console an. Standardmäßig lauten die Anmeldedaten: admin/admin.
 1. Klicken Sie auf das **[!UICONTROL Bearbeitungs]** symbol neben der Einstellung **[!UICONTROL com.adobe.livecycle.content.activate.impl.ActivationManagerImpl.name]**.
-1. Geben Sie im Feld für die **[!UICONTROL Veröffentlichungs-URL von ActivationManage]** r die URL für den Zugriff auf die Instanz im Veröffentlichungsmodus in ActivationManager an. Sie können die folgenden URLs angeben.
+1. Geben Sie im Feld für die **[!UICONTROL Veröffentlichungs-URL von ActivationManager]** die URL für den Zugriff auf die Instanz im Veröffentlichungsmodus in ActivationManager an. Sie können die folgenden URLs angeben.
 
    * **Lastenausgleichs-URL (empfohlen)**: Geben Sie die Lastenausgleichs-URL an, wenn Sie einen Webserver haben, der gegenüber der Veröffentlichungsfarm (mehrere nicht geclusterte Instanzen im Veröffentlichungsmodus) als Lastenausgleich fungiert.
    * **URL der Instanz im Veröffentlichungsmodus**: Geben Sie die URL einer beliebigen Instanz im Veröffentlichungsmodus an, wenn Sie nur eine Instanz im Veröffentlichungsmodus haben oder ein Zugriff auf den der Veröffentlichungsfarm vorgeschalteten Webserver von der Autorumgebung aus aufgrund von gegebenen falls vorhandenen Beschränkungen nicht möglich ist. Wenn die angegebene Instanz im Veröffentlichungsmodus nicht bereit ist, gibt es einen Fallback-Mechanismus, damit autorseitig etwas zur Behebung unternommen werden kann.
@@ -52,4 +52,4 @@ Folgen Sie diesen Schritten, um die „URL-Instanz veröffentlichen“ für den 
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-Weitere Informationen zum Konfigurieren von Correspondence Management finden Sie unter [Correspondence Management Configuration-Eigenschaften](https://helpx.adobe.com/aem-forms/6-2/cm-configuration-properties.html).
+Weitere Informationen zum Konfigurieren von Correspondence Management finden Sie unter [Correspondence Management Configuration-Eigenschaften](https://helpx.adobe.com/de/aem-forms/6-2/aem-forms-architecture-deployment.html).
