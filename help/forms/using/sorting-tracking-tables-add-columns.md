@@ -1,8 +1,8 @@
 ---
 title: Anpassen von Verfolgungstabellen
-seo-title: Anpassen von Verfolgungstabellen
+seo-title: Customize tracking tables
 description: Gehen Sie wie folgt vor, um die Anzeige der Details von Benutzerprozessen in der Aufgabentabelle zu speichern, die auf der Registerkarte „Verfolgung“ in AEM Forms Workspace angezeigt wird.
-seo-description: Gehen Sie wie folgt vor, um die Anzeige der Details von Benutzerprozessen in der Aufgabentabelle zu speichern, die auf der Registerkarte „Verfolgung“ in AEM Forms Workspace angezeigt wird.
+seo-description: How-to customize the display of the details of user processes in the task table displayed in the tracking tab of AEM Forms workspace.
 uuid: 13d6ebf2-99d5-434f-85f9-b0cba5f5751a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,22 +10,22 @@ topic-tags: forms-workspace
 discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
 exl-id: 9ab657cc-fa8e-4168-8a68-e38ac5c51b29
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 79%
+workflow-type: ht
+source-wordcount: '330'
+ht-degree: 100%
 
 ---
 
 # Anpassen von Verfolgungstabellen{#customize-tracking-tables}
 
-Die Registerkarte &quot;Tracking&quot;in AEM Forms Workspace wird verwendet, um die Details der Prozessinstanzen anzuzeigen, an denen der angemeldete Benutzer beteiligt ist. Um die Verfolgungstabellen anzuzeigen, wählen Sie zunächst einen Prozessnamen im linken Fensterbereich aus, um die zugehörige Instanzenliste im mittleren Bereich anzuzeigen. Wählen Sie eine Prozessinstanz aus, um im rechten Fensterbereich eine Tabelle von Aufgaben anzuzeigen, die von dieser Instanz generiert werden. Standardmäßig enthalten die Tabellenspalten die folgenden Aufgabenattribute (das entsprechende Attribut im Aufgabenmodell wird in Klammern angegeben):
+Die Registerkarte „Tracking“ in AEM Forms Workspace wird verwendet, um die Details von Prozessinstanzen anzuzeigen, an denen der angemeldete Benutzer beteiligt ist. Um die Verfolgungstabellen anzuzeigen, wählen Sie zunächst einen Prozessnamen im linken Fensterbereich aus, um die zugehörige Instanzenliste im mittleren Bereich anzuzeigen. Wählen Sie eine Prozessinstanz aus, um im rechten Fensterbereich eine Tabelle von Aufgaben anzuzeigen, die von dieser Instanz generiert werden. Standardmäßig enthalten die Tabellenspalten die folgenden Aufgabenattribute (das entsprechende Attribut im Aufgabenmodell wird in Klammern angegeben):
 
 * ID ( `taskId`)
 * Name ( `stepName`)
 * Anweisungen ( `instructions`)
 * Ausgewählte Aktion ( `selectedRoute`)
-* Erstellungszeit ( `createTime`)
-* Abschlusszeit ( `completeTime`)
+* Erstellungszeit (`createTime`)
+* Abschlusszeit (`completeTime`)
 * Inhaber ( `currentAssignment.queueOwner`)
 
 Die übrigen Attribute im Aufgabenmodell, die für die Anzeige in der Aufgabentabelle verfügbar sind, lauten:
@@ -115,7 +115,7 @@ Die übrigen Attribute im Aufgabenmodell, die für die Anzeige in der Aufgabenta
  </tbody>
 </table>
 
-Für die folgenden Anpassungen in der Aufgabentabelle müssen Sie semantische Änderungen im Quellcode vornehmen. Siehe [Einführung in das Anpassen von AEM Forms Workspace](/help/forms/using/introduction-customizing-html-workspace.md), wie Sie semantische Änderungen mit dem Workspace-SDK vornehmen und ein minimiertes Paket aus der geänderten Quelle erstellen können.
+Für die folgenden Anpassungen in der Aufgabentabelle müssen Sie semantische Änderungen im Quellcode vornehmen. In der [Einführung zum Anpassen von AEM Forms Workspace](/help/forms/using/introduction-customizing-html-workspace.md) finden Sie Anweisungen, wie Sie semantische Änderungen mithilfe von Workspace SDK vornehmen und ein minimiertes Paket aus der geänderten Quelle erstellen können.
 
 ## Ändern von Tabellenspalten und ihrer Reihenfolge {#changing-table-columns-and-their-order}
 
@@ -167,7 +167,7 @@ So sortieren Sie die Aufgabenlistentabelle durch Klicken auf die Spaltenübersch
    }
    ```
 
-   Rufen Sie im -Handler die Funktion `onTaskTableHeaderClick` von `js/runtime/util/history.js` auf.
+   Rufen Sie in dem Handler die Funktion `onTaskTableHeaderClick` von `js/runtime/util/history.js` auf.
 
    ```javascript
    onTaskTableHeaderClick: function (event) {
@@ -175,7 +175,7 @@ So sortieren Sie die Aufgabenlistentabelle durch Klicken auf die Spaltenübersch
    }
    ```
 
-1. Zeigen Sie die `TaskTableHeaderClick`-Methode in `js/runtime/util/history.js` an.
+1. Legen Sie die Methode `TaskTableHeaderClick` in `js/runtime/util/history.js` offen.
 
    Die Methode sucht nach dem task-Attribut im Klick-Ereignis, sortiert die tasklist nach diesem Attribut und gibt die Aufgabentabelle mit der sortierten tasklist aus.
 
