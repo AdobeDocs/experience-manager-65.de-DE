@@ -10,9 +10,9 @@ discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 docset: aem65
 exl-id: 933c164e-7c39-4d2e-834b-53a3c2b4ec90
 source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '389'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 91%
 
 [Adaptives Formularfragment](../../forms/using/adaptive-form-fragments.md) ist eine Gruppe von Feldern oder ein Fenster, das eine Gruppe von Feldern beinhaltet, die Sie verwenden können, wenn Sie ein Formular erstellen. Damit lassen sich Formulare mühelos und schnell erstellen. Sie können ein adaptives Formularfragment per Drag &amp; Drop in ein Formular mit dem Asset-Browser in der Seitenleiste einfügen und Sie können es im Formulareditor bearbeiten.
 
-Für Autoren adaptiver Formulare werden Referenzfragmente im Add-On-Paket [AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) bereitgestellt. Es beinhaltet folgende Fragmente:
+Für Autoren von adaptiven Formularen werden Referenzfragmente im [Add-on-Paket für AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) bereitgestellt. Es beinhaltet folgende Fragmente:
 
 * Adresse
 * Kontaktangaben
@@ -33,7 +33,7 @@ Für Autoren adaptiver Formulare werden Referenzfragmente im Add-On-Paket [AEM F
 * Nutzungsbedingungen
 * Nutzungsbedingungen mit Scribble
 
-Wenn Sie das Paket installieren, wird ein Referenzfragmentordner mit Referenzfragmenten unter „Formulare und Dokumente“ erstellt. Informationen zum Installieren eines Pakets finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md).
+Wenn Sie das Paket installieren, wird ein Referenzfragmentordner mit Referenzfragmenten unter „Formulare und Dokumente“ erstellt. Weitere Informationen zur Installation eines Pakets finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md).
 
 ![Alle aufgeführten Fragmente](assets/ootb-frags.png)
 
