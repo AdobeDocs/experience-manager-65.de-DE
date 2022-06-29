@@ -1,8 +1,8 @@
 ---
 title: Anwendungen importieren und verwalten
-seo-title: Anwendungen importieren und verwalten
+seo-title: Import and manage applications
 description: Anleitung zum Importieren und Verwalten von Anwendungen.
-seo-description: Anleitung zum Importieren und Verwalten von Anwendungen.
+seo-description: Learn how to import and manage applications.
 uuid: 7fba6c4e-1a3e-4a4b-9201-acf2ff66a9df
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dc53a6d0-317a-4abd-990c-455e13f8b824
 exl-id: f17726c0-3591-4d25-a8b5-3a7024249a56
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 98%
+workflow-type: ht
+source-wordcount: '820'
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ Verwenden Sie die Registerkarte „Anwendungen“, um Anwendungen, die in Workbe
 
    Die Eigenschaft **syncState** zeigt den Status der Synchronisierung der Daten zwischen dem AEM Forms-Server und dem CRX-Repository an. Sobald der Importvorgang beginnt, wird dieser Status auf 0 (null) gesetzt. Dieser Status gibt an, dass die Daten derzeit nicht synchronisiert werden. Wenn die Daten synchronisiert werden, wird der Status auf 1 festgelegt.
 
-## Eine Anwendung bereitstellen  {#deploy-an-application}
+## Eine Anwendung bereitstellen {#deploy-an-application}
 
 Sie können Anwendungen bereitstellen, die Sie importiert haben oder die Workbench-Benutzer aus Workbench importiert haben.
 
@@ -65,7 +65,7 @@ Sie können Anwendungen bereitstellen, die Sie importiert haben oder die Workben
 1. Aktivieren Sie das Kontrollkästchen neben der Anwendung, die Sie bereitstellen möchten, und klicken Sie auf „Bereitstellen“.
 1. Klicken Sie im Bestätigungsdialogfeld auf „OK“.
 
-## Bereitstellung einer Anwendung aufheben  {#undeploy-an-application}
+## Bereitstellung einer Anwendung aufheben {#undeploy-an-application}
 
 Sie können die Bereitstellung von Anwendungen aus der Laufzeit aufheben.
 
@@ -73,7 +73,7 @@ Sie können die Bereitstellung von Anwendungen aus der Laufzeit aufheben.
 1. Aktivieren Sie das Kontrollkästchen neben der Anwendung, für die Sie die Bereitstellung aufheben möchten, und klicken Sie auf „Bereitstellung aufheben“.
 1. Klicken Sie im Bestätigungsdialogfeld auf „OK“.
 
-## Eine Anwendung vom Server entfernen  {#remove-an-application-from-the-server}
+## Eine Anwendung vom Server entfernen {#remove-an-application-from-the-server}
 
 Heben Sie die Bereitstellung der Anwendung auf, bevor Sie sie vom Server entfernen.
 
@@ -81,7 +81,7 @@ Heben Sie die Bereitstellung der Anwendung auf, bevor Sie sie vom Server entfern
 1. Aktivieren Sie das Kontrollkästchen neben der Anwendung, die Sie entfernen möchten, und klicken Sie auf „Entfernen“.
 1. Klicken Sie im Bestätigungsdialogfeld auf „OK“.
 
-## Die Laufzeitkonfiguration einer Anwendung importieren  {#import-an-application-s-runtime-configuration}
+## Die Laufzeitkonfiguration einer Anwendung importieren {#import-an-application-s-runtime-configuration}
 
 Wenn der Anwendungsadministrator die Laufzeitkonfiguration für eine Anwendung exportiert hat, können Sie diese Datei in die bereitgestellte Anwendung importieren. Sie können sie entweder mithilfe von Administration Console oder über eine skriptgesteuerte LCA-Bereitstellung importieren.
 
@@ -89,9 +89,9 @@ Wenn der Anwendungsadministrator die Laufzeitkonfiguration für eine Anwendung e
 1. Klicken Sie auf den Namen der Anwendung.
 1. Klicken Sie auf „Laufzeitkonfiguration importieren“.
 1. Klicken Sie auf „Durchsuchen“ und wählen Sie die XML-Datei aus, die die Laufzeitkonfiguration enthält.
-1. Klicken Sie auf „Importieren“.
+1. Wählen Sie Importieren.
 
-## Die Laufzeitkonfiguration einer Anwendung exportieren  {#export-an-application-s-runtime-configuration}
+## Die Laufzeitkonfiguration einer Anwendung exportieren {#export-an-application-s-runtime-configuration}
 
 Sie können die Informationen zur Laufzeitkonfiguration für bereitgestellte Anwendungen exportieren.
 
@@ -99,7 +99,7 @@ Sie können die Informationen zur Laufzeitkonfiguration für bereitgestellte Anw
 1. Klicken Sie auf den Namen der Anwendung.
 1. Klicken Sie auf „Laufzeitkonfiguration exportieren“ und speichern Sie die erstellte Konfigurationsdatei (XML).
 
-## Skriptgesteuerte Bereitstellung von AEM Forms-Anwendungen  {#scripted-deployment-of-aem-forms-applications}
+## Skriptgesteuerte Bereitstellung von AEM Forms-Anwendungen {#scripted-deployment-of-aem-forms-applications}
 
 Sie können außerdem ein skriptgesteuertes Bereitstellungswerkzeug zum Bereitstellen von Anwendungsdateien verwenden, einschließlich einer Datei „settings.xml“, die die folgenden Einstellungen angibt:
 
@@ -110,7 +110,7 @@ Sie können außerdem ein skriptgesteuertes Bereitstellungswerkzeug zum Bereitst
 
 Durch die skriptgesteuerte Bereitstellung entfällt die Notwendigkeit zur manuellen Neukonfiguration von Einstellungen in der Produktionsumgebung vor dem Starten bereitgestellter Anwendungen.
 
-1. Wechseln Sie an einer Eingabeaufforderung zum Ordner *[aem-forms root]*/sdk/misc/Foundation/ArchiveManagement.
+1. Wechseln Sie an einer Eingabeaufforderung zu „*[aem-forms root]*/sdk/misc/Foundation/ArchiveManagement“.
 1. Detailliertere Anweisungen finden Sie in der Datei „ReadMe.txt“.
 1. Ändern Sie die Dateien „scriptedDeploy.bat“ und „sample-files/sample.xml“ manuell wie in der Datei „ReadMe.txt“ beschrieben.
 1. Führen Sie die Datei „scriptedDeploy.bat“ aus. Durch diesen Vorgang wird die AEM Forms-Archivdatei mit den neuen Einstellungen bereitgestellt.
