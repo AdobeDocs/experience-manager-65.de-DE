@@ -1,8 +1,8 @@
 ---
 title: SSL für WebSphere Application Server konfigurieren
-seo-title: SSL für WebSphere Application Server konfigurieren
+seo-title: Configuring SSL for WebSphere Application Server
 description: Erfahren Sie, wie Sie SSL für WebSphere Application Server konfigurieren.
-seo-description: Erfahren Sie, wie Sie SSL für WebSphere Application Server konfigurieren.
+seo-description: Learn how to configure SSL for WebSphere Application Server.
 uuid: f939a806-346e-41e0-b2c0-6d0ba83f8f6f
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7c0efcb3-5b07-4090-9119-b7318c8b7980
 exl-id: b0786b52-879e-4a24-9cc9-bd9dcb2473cc
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1240'
-ht-degree: 96%
+workflow-type: ht
+source-wordcount: '1225'
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Zum Aktivieren von SSL muss WebSphere in der Benutzerregistrierung des lokalen B
 * (Windows) Erstellen Sie einen neuen Benutzer in Administratorgruppe, der berechtigt ist, als Teil des Betriebssystems zu agieren. (Siehe [Windows-Benutzers für WebSphere erstellen](configuring-ssl-websphere-application-server.md#create-a-windows-user-for-websphere).)
 * (Linux, UNIX) Der Benutzer kann ein Root-Benutzer oder ein anderer Benutzer mit Root-Berechtigungen sein. Wenn Sie SSL unter WebSphere aktivieren, verwenden Sie die Serverkennung und das Kennwort dieses Benutzers.
 
-### Linux- oder UNIX-Benutzer für WebSphere erstellen  {#create-a-linux-or-unix-user-for-websphere}
+### Linux- oder UNIX-Benutzer für WebSphere erstellen {#create-a-linux-or-unix-user-for-websphere}
 
 1. Melden Sie sich als Root-Benutzer an.
 1. Erstellen Sie einen Benutzer, indem Sie an einer Eingabeaufforderung den folgenden Befehl eingeben:
@@ -48,7 +48,7 @@ Zum Aktivieren von SSL muss WebSphere in der Benutzerregistrierung des lokalen B
 1. Speichern und schließen Sie die Datei.
 1. (UNIX mit aktiviertem SSL) Starten und beenden Sie WebSphere als Root-Benutzer.
 
-### Windows-Benutzer für WebSphere erstellen  {#create-a-windows-user-for-websphere}
+### Windows-Benutzer für WebSphere erstellen {#create-a-windows-user-for-websphere}
 
 1. Melden Sie sich über ein Administrator-Benutzerkonto bei Windows an.
 1. Wählen Sie **Start > Systemsteuerung > Verwaltung > Computerverwaltung > Lokale Benutzer und Gruppen** aus.
@@ -65,21 +65,21 @@ Zum Aktivieren von SSL muss WebSphere in der Benutzerregistrierung des lokalen B
 1. Geben Sie in das Feld „Geben Sie die zu verwendenden Objektnamen ein“ den Namen des von Ihnen in Schritt 4 erstellten Benutzers ein und klicken Sie auf **Namen überprüfen**, um sicherzustellen, dass der Name richtig ist. Klicken Sie dann auf **OK**.
 1. Klicken Sie auf **OK**, um das Dialogfeld „Eigenschaften von Einsetzen als Teil des Betriebssystems“ zu schließen.
 
-### Konfigurieren Sie WebSphere, um den neu erstellten Benutzer als Administrator festzulegen.  {#configure-websphere-to-use-the-newly-created-user-as-administrator}
+### Konfigurieren Sie WebSphere, um den neu erstellten Benutzer als Administrator festzulegen. {#configure-websphere-to-use-the-newly-created-user-as-administrator}
 
 1. Vergewissern Sie sich, dass WebSphere ausgeführt wird.
 1. Wählen Sie in der WebSphere Administrative Console **Security > Global Security**.
 1. Wählen Sie unter „Administrative security“ **Administrative user roles**.
 1. Klicken Sie auf „Add“ und führen Sie folgende Schritte aus:
 
-   1. Geben Sie **&amp;ast;** in das Suchfeld ein und klicken Sie auf &quot;Suchen&quot;.
+   1. Geben Sie im Suchfeld ***** ein und klicken Sie auf „Suchen“.
    1. Klicken Sie unter „Roles“ auf **Administrator**.
    1. Fügen Sie den neu erstellten Benutzer zu „Mapped to role“ hinzu und ordnen Sie ihn zu „Administrator“ zu.
 
 1. Klicken Sie auf **OK** und speichern Sie die Änderungen.
 1. Starten Sie das WebSphere-Profil erneut.
 
-## Administrative Sicherheit aktivieren  {#enable-administrative-security}
+## Administrative Sicherheit aktivieren {#enable-administrative-security}
 
 1. Wählen Sie in der WebSphere Administrative Console **Security > Global Security**.
 1. Klicken Sie auf **Security Configuration Wizard**.
@@ -91,7 +91,7 @@ Zum Aktivieren von SSL muss WebSphere in der Benutzerregistrierung des lokalen B
 
    WebSphere startet unter Verwendung des standardmäßigen Keystore und Truststore.
 
-## Aktivieren Sie SSL (Custom Key und Truststore)  {#enable-ssl-custom-key-and-truststore}
+## Aktivieren Sie SSL (Custom Key und Truststore) {#enable-ssl-custom-key-and-truststore}
 
 Truststores und Keystores können mithilfe ides Dienstprogramms „ikeyman“ oder über die Admin Console erstellt werden. Vergewissern Sie sich, dass der WebSphere-Installationspfad keine Klammern enthält, damit „ikeyman“ ordnungsgemäß funtkioniert.
 
@@ -107,12 +107,12 @@ Truststores und Keystores können mithilfe ides Dienstprogramms „ikeyman“ od
 1. Wenn Sie bereits einen mithilfe von „ikeyman“ erstellten Keystore hinzugefügt haben, wird Ihr Zertifikat angezeigt. Andernfalls müssen Sie ein neues selbst-unterzeichnetes Zertifikat hinzufügen, indem Sie die folgenden Schritte ausführen:
 
    1. Wählen Sie **Create > Self-signed Certificate**.
-   1. Geben Sie entsprechende Werte im Zertifikatsformular an. Behalten Sie den Alias und den allgemeinen Namen als vollständig qualifizierten Domänennamen des Computers bei.
+   1. Geben Sie entsprechende Werte im Zertifikatsformular an. Behalten Sie den Alias und den allgemeinen Namen als vollständig qualifizierten Domain-Namen des Computers bei.
    1. Klicken Sie auf **Übernehmen**.
 
 1. Wiederholen Sie die Schritte 2 bis 10 zum Erstellen eines Truststore.
 
-## Verwenden benutzerdefinierter Keystore und Truststore auf dem Server  {#apply-custom-keystore-and-truststore-to-the-server}
+## Verwenden benutzerdefinierter Keystore und Truststore auf dem Server {#apply-custom-keystore-and-truststore-to-the-server}
 
 1. Wählen Sie in der WebSphere Administrative Console **Security > SSL certificate and key management**.
 1. Klicken Sie auf **Manage endpoint security configuration**. Die lokale Topologiezuordnung wird geöffnet.
@@ -126,14 +126,14 @@ Truststores und Keystores können mithilfe ides Dienstprogramms „ikeyman“ od
 
    Ihr Profil wird jetzt mit benutzerdefinierten SSL-Einstellungen und Ihrem Zertifikat ausgeführt.
 
-## Aktivieren der Unterstützung für native AEM Forms-Anwendungen  {#enabling-support-for-aem-forms-natives}
+## Aktivieren der Unterstützung für native AEM Forms-Anwendungen {#enabling-support-for-aem-forms-natives}
 
 1. Wählen Sie in der WebSphere Administrative Console **Security > Global Security**.
 1. Erweitern Sie im Abschnitt „Authentication“ **RMI/IIOP Security** und klicken Sie auf **CSIv2 Inbound Communications**.
 1. Vergewissern Sie sich, dass **SSL-supported** in der Dropdown-Liste „Transport“ ausgewählt ist.
 1. Starten Sie das WebSphere-Profil erneut.
 
-## WebSphere für die Konvertierung von mit HTTPS beginnenden URLs konfigurieren  {#configuring-websphere-to-convert-urls-that-begins-with-https}
+## WebSphere für die Konvertierung von mit HTTPS beginnenden URLs konfigurieren {#configuring-websphere-to-convert-urls-that-begins-with-https}
 
 Um mit HTTPS beginnende URLs zu konvertieren, fügen Sie ein Signiererzertifikat für die URL zum WebSphere-Server hinzu.
 
@@ -156,9 +156,9 @@ Die Konvertierung von HTML in PDF von der Site, deren Zertifikat hinzugefügt wu
 >
 >Es ist ein Signiererzertifikat erforderlich, damit eine Anwendung von WebSphere aus eine Verbindung zu SSL-Sites herstellen kann. Dieses wird von Java Secure Socket Extensions (JSSE) dazu verwendet, die Zertifikate zu prüfen, die die Remote-Seite der Verbindung bei einem SSL-Handshake sendet.
 
-## Konfigurieren von dynamischen Ports  {#configuring-dynamic-ports}
+## Konfigurieren von dynamischen Ports {#configuring-dynamic-ports}
 
-IBM WebSphere erlaubt nicht mehrere Aufrufe von ORB.init (), wenn die globale Sicherheit aktiviert wurde. Sie können über die permanente Einschränkung unter https://www-01.ibm.com/support/docview.wss?uid=swg1PK58704 nachlesen.
+IBM WebSphere erlaubt nicht mehrere Aufrufe von ORB.init (), wenn die globale Sicherheit aktiviert wurde. Informationen über die dauerhafte Einschränkung finden Sie unter https://www-01.ibm.com/support/docview.wss?uid=swg1PK58704.
 
 Führen Sie die folgenden Schritte aus, um den Port als dynamisch festzulegen und das Problem zu lösen:
 
@@ -174,8 +174,8 @@ Führen Sie die folgenden Schritte aus, um den Port als dynamisch festzulegen un
 
 ## Konfigurieren der sling.properties-Datei {#configure-the-sling-properties-file}
 
-1. Öffnen Sie die Datei `[aem-forms_root]`\crx-repository\launchpad\sling.properties zur Bearbeitung.
-1. Suchen Sie die Eigenschaft `sling.bootdelegation.ibm` und fügen Sie dem Wertefeld `com.ibm.websphere.ssl.*`hinzu. Das aktualisierte Feld sieht wie folgt aus:
+1. Öffnen Sie die Datei „`[aem-forms_root]`\crx-repository\launchpad\sling.properties“ zur Bearbeitung.
+1. Suchen Sie die Eigenschaft `sling.bootdelegation.ibm` und fügen Sie `com.ibm.websphere.ssl.*` zu ihrem Wertfeld hinzu. Das aktualisierte Feld sieht wie folgt aus:
 
    ```shell
    sling.bootdelegation.ibm=com.ibm.xml.*, com.ibm.websphere.ssl.*
