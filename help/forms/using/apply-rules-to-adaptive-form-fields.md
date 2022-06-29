@@ -1,17 +1,17 @@
 ---
 title: Anwenden von Regeln in adaptiven Formularfelder
-seo-title: Anwenden von Regeln in adaptiven Formularfelder
+seo-title: Apply rules to adaptive form fields
 description: Erstellen Sie Regeln, um einem adaptiven Formular Interaktivität, Geschäftslogik und intelligente Validierungen hinzuzufügen.
-seo-description: Erstellen Sie Regeln, um einem adaptiven Formular Interaktivität, Geschäftslogik und intelligente Validierungen hinzuzufügen.
+seo-description: Create rules to add interactivity, business logic, and smart validations to an adaptive form.
 page-status-flag: de-activated
 uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
 exl-id: 0202ca65-21ef-4477-b704-7b52314a7d7b
 source-git-commit: 63bc43bba88a42d62fb574bc8ce42470ac61d693
-workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 66%
+workflow-type: ht
+source-wordcount: '1124'
+ht-degree: 100%
 
 ---
 
@@ -48,19 +48,19 @@ Jedem Kunden ist eine eindeutige Kunden-ID-Nummer zugeordnet, anhand derer er re
 1. Tippen Sie auf das Feld **[!UICONTROL Kunden-ID]** und tippen Sie auf das Symbol **[!UICONTROL Regeln bearbeiten]**. Das Fenster „Regeleditor“ wird geöffnet.
 1. Tippen Sie auf das Symbol **[!UICONTROL + Erstellen]**, um eine Regel hinzuzufügen. Es öffnet den visuellen Editor.
 
-   Im Visual Editor ist die Anweisung **[!UICONTROL WHEN]** standardmäßig ausgewählt. Außerdem wird das Formularobjekt (in diesem Fall **[!UICONTROL Kunden-ID]**), von dem aus Sie den Regeleditor gestartet haben, in der Anweisung **[!UICONTROL WHEN]** angegeben.
+   Im visuellen Editor ist die Anweisung **[!UICONTROL WHEN]** standardmäßig ausgewählt. Darüber hinaus wird das Formularobjekt (in diesem Fall **[!UICONTROL Kunden-ID]**), von dem aus Sie den Regeleditor gestartet haben, in der **[!UICONTROL WHEN]**-Anweisung angegeben.
 
-1. Tippen Sie auf die Dropdown-Liste **[!UICONTROL Status]** auswählen und wählen Sie **[!UICONTROL Ist geändert]** aus.
+1. Tippen Sie auf die Dropdown-Liste **[!UICONTROL Status auswählen]** und wählen Sie **[!UICONTROL wurde geändert]**.
 
    ![whencustomeridischanged](assets/whencustomeridischanged.png)
 
 1. In der Anweisung **[!UICONTROL THEN]** wählen Sie **[!UICONTROL Dienst aufrufen]** aus der Dropdown-Liste **[!UICONTROL Aktion auswählen.]**
 1. Wählen Sie den Dienst **[!UICONTROL Versandadresse abrufen]** aus der Dropdown-Liste **[!UICONTROL Auswählen]**.
-1. Ziehen Sie das Feld **[!UICONTROL Kunden-ID]** aus der Registerkarte &quot;Formularobjekte&quot;in das Feld **[!UICONTROL Legen Sie das Objekt ab oder wählen Sie hier]** im Feld **[!UICONTROL INPUT]** aus.
+1. Ziehen Sie das Feld **[!UICONTROL Kunden-ID]** per Drag-and-Drop von der Registerkarte „Formularobjekte“ in das Feld **[!UICONTROL Objekt hier einfügen oder auswählen]** im **[!UICONTROL INPUT]**-Bereich.
 
    ![dropobjectstoinputfield-retrieveData](assets/dropobjectstoinputfield-retrievedata.png)
 
-1. Ziehen Sie das Feld **[!UICONTROL Kunden-ID, Name, Lieferadresse, Bundesland und Postleitzahl]** aus der Registerkarte &quot;Formularobjekte&quot;in das Feld **[!UICONTROL Legen Sie das Objekt ab oder wählen Sie hier]** im Feld **[!UICONTROL AUSGABE]** aus.
+1. Ziehen Sie das Feld **[!UICONTROL Kunden-ID, Name, Versandadresse, Bundesland und Postleitzahl]** per Drag-and-Drop von der Registerkarte „Formularobjekte“ in das Feld **[!UICONTROL Objekt hier einfügen oder auswählen]** im Bereich **[!UICONTROL OUTPUT]**.
 
    ![dropobjectstooutputfield-retrieveData](assets/dropobjectstooutputfield-retrievedata.png)
 
@@ -75,11 +75,11 @@ Jedem Kunden ist eine eindeutige Kunden-ID-Nummer zugeordnet, anhand derer er re
 Nachdem die Kundendaten aus der Datenbank abgerufen wurden, können Sie die Lieferadresse, das Bundesland und die Postleitzahl aktualisieren. Das folgende Verfahren ruft einen Formulardatenmodelldienst auf, um Kundeninformationen in der Datenbank zu aktualisieren:
 
 1. Wählen Sie das Feld **[!UICONTROL Senden]** und tippen Sie auf das Symbol **[!UICONTROL Regeln bearbeiten]**. Das Fenster „Regeleditor“ wird geöffnet.
-1. Wählen Sie die Regel **[!UICONTROL Senden - Klicken Sie auf]** und tippen Sie auf das Symbol **[!UICONTROL Bearbeiten]** . Die Optionen zum Bearbeiten der Senderegel werden angezeigt.
+1. Wählen Sie die Regel **[!UICONTROL Senden - Klicken]** und tippen Sie auf das Symbol **[!UICONTROL Bearbeiten]**. Die Optionen zum Bearbeiten der Senden-Regel werden angezeigt.
 
    ![submit-rule](assets/submit-rule.png)
 
-   In der WHEN-Option sind die Optionen **[!UICONTROL Submit]** und **[!UICONTROL bereits angeklickt]**.
+   In der WHEN-Option sind die Optionen **[!UICONTROL Senden]** und **[!UICONTROL wurde angeklickt]** bereits ausgewählt.
 
    ![submit-is-clicked](assets/submit-is-clicked.png)
 
@@ -90,13 +90,13 @@ Nachdem die Kundendaten aus der Datenbank abgerufen wurden, können Sie die Lief
 
    ![dropobjectstoinputfield-updatedata](assets/dropobjectstoinputfield-updatedata.png)
 
-1. Ziehen Sie das Feld **[!UICONTROL Versandadresse, Bundesland und Postleitzahl]** aus der Registerkarte [!UICONTROL Formularobjekte] in die entsprechende Tabelleneigenschaft (.property, z. B. customerdetails.shippingAddress) des Felds **[!UICONTROL Legen Sie das Objekt ab oder wählen Sie hier]** im Feld **[!UICONTROL INPUT]** aus. Alle Felder mit dem Präfix tablename (in diesem Anwendungsbeispiel &quot;customerdetails&quot;) dienen als Eingabedaten für den Aktualisierungsdienst. Der gesamte Inhalt in diesen Feldern wird in der Datenquelle aktualisiert.
+1. Ziehen Sie das Feld **[!UICONTROL Versandadresse, Bundesland und Postleitzahl]** aus der Registerkarte [!UICONTROL Formularobjekte] auf die entsprechende Tabellennameneigenschaft (z. B. customerdetails.shippingAddress) des Feldes **[!UICONTROL Objekt hier einfügen oder auswählen]** im Bereich **[!UICONTROL INPUT]**. Alle Felder mit dem Präfix „tablename“ (in diesem Anwendungsbeispiel das Feld „customerdetails“) dienen als Eingabedaten für den Aktualisierungsservice. Der gesamte Inhalt in diesen Feldern wird in der Datenquelle aktualisiert.
 
    >[!NOTE]
    >
-   >Ziehen Sie die Felder **[!UICONTROL Name]** und **[!UICONTROL Kunden-ID]** nicht in die entsprechende tablename.property (z. B. customerdetails.name). Der Name und die ID des Kunden sollten nicht versehentlich aktualisiert werden.
+   >Ziehen Sie die Felder **[!UICONTROL Name]** und **[!UICONTROL Kunden-ID]** nicht auf die entsprechende tablename.property (z. B. customerdetails.name). Der Name und die ID des Kunden sollten nicht versehentlich aktualisiert werden.
 
-1. Ziehen Sie das Feld **[!UICONTROL Kunden-ID]** per Drag-and-Drop von der Registerkarte „Formularobjekte“ in das Feld „ID“ im Feld **[!UICONTROL INPUT]**. Felder ohne vorangestellten Tabellennamen (in diesem Anwendungsbeispiel beispielsweise Kundendetails) dienen als Suchparameter für den Aktualisierungsdienst. Das Feld **[!UICONTROL id]** in diesem Anwendungsbeispiel identifiziert einen Datensatz in der Tabelle **customerdetails** eindeutig.
+1. Ziehen Sie das Feld **[!UICONTROL Kunden-ID]** per Drag-and-Drop von der Registerkarte [!UICONTROL Formularobjekte] in das Feld „ID“ im Feld **[!UICONTROL INPUT]**. Felder ohne vorangestellten Tabellennamen (in diesem Anwendungsbeispiel das Feld „customerdetails“) dienen als Suchparameter für den Aktualisierungsservice. Das Feld **[!UICONTROL ID]** in diesem Anwendungsfall identifiziert einen Datensatz in der Tabelle **customerdetails**.
 1. Tippen Sie auf **[!UICONTROL Fertig]**, um die Regel zu speichern. Tippen Sie im Fenster des Regeleditors auf **[!UICONTROL Schließen]**.
 1. Zeigen Sie das adaptive Formular in der Vorschau an. Rufen Sie Details eines Kunden ab, aktualisieren Sie die Lieferadresse und senden Sie das Formular ab. Wenn Sie Details des gleichen Kunden erneut abrufen, wird die aktualisierte Lieferadresse angezeigt.
 
@@ -106,14 +106,14 @@ Sie sollten die Validierung des Formulars durchführen, um sicherzustellen, dass
 
 Adaptive Formulare bieten mehrere Komponenten mit integrierten Validierungen, z. B. E-Mail, und numerische Felder, die Sie für häufige Anwendungsfälle verwenden können. Verwenden Sie den Regeleditor für erweiterte Anwendungsfälle, um z. B. eine Fehlermeldung anzuzeigen, wenn die Datenbank null (0) Datensätze (keine Datensätze) zurückgibt. 
 
-Das folgende Verfahren zeigt, wie Sie eine Regel erstellen, die eine Fehlermeldung anzeigt, wenn die im Formular eingegebene Kunden-ID nicht in der Datenbank vorhanden ist. Die Regel stellt den Fokus außerdem auf das Feld **[!UICONTROL Kunden-ID]** und setzt es zurück. Die Regel verwendet [die dataIntegrationUtils-API des Formulardatenmodelldienstes](/help/forms/using/invoke-form-data-model-services.md), um zu überprüfen, ob die Kunden-ID in der Datenbank vorhanden ist.
+Das folgende Verfahren zeigt, wie eine Regel erstellt wird, um eine Fehlermeldung anzuzeigen, wenn die im Formular eingegebene Kunden-ID nicht in der Datenbank vorhanden ist. Die Regel bringt auch den Fokus auf das Feld **[!UICONTROL Kunden-ID]** und setzt es zurück. Die Regel verwendet [die dataIntegrationUtils-API des Formulardatenmodell-Services](/help/forms/using/invoke-form-data-model-services.md), um zu überprüfen, ob die Kunden-ID in der Datenbank vorhanden ist.
 
-1. Tippen Sie auf das Feld **[!UICONTROL Kunden-ID]** und dann auf das Symbol `Edit Rules` . Das Fenster [!UICONTROL Regeleditor] wird geöffnet.
+1. Tippen Sie auf das Feld **[!UICONTROL Kunden-ID]** und dann auf das Symbol `Edit Rules`. Das Fenster [!UICONTROL Regeleditor] wird geöffnet.
 1. Tippen Sie auf das Symbol **[!UICONTROL + Erstellen]**, um eine Regel hinzuzufügen. Es öffnet den visuellen Editor.
 
-   Im Visual Editor ist die Anweisung **[!UICONTROL WHEN]** standardmäßig ausgewählt. Außerdem wird das Formularobjekt (in diesem Fall **[!UICONTROL Kunden-ID]**), von dem aus Sie den Regeleditor gestartet haben, in der Anweisung **[!UICONTROL WHEN]** angegeben.
+   Im visuellen Editor ist die Anweisung **[!UICONTROL WHEN]** standardmäßig ausgewählt. Darüber hinaus wird das Formularobjekt (in diesem Fall **[!UICONTROL Kunden-ID]**), von dem aus Sie den Regeleditor gestartet haben, in der **[!UICONTROL WHEN]**-Anweisung angegeben.
 
-1. Tippen Sie auf die Dropdown-Liste **[!UICONTROL Status]** auswählen und wählen Sie **[!UICONTROL Ist geändert]** aus.
+1. Tippen Sie auf die Dropdown-Liste **[!UICONTROL Status auswählen]** und wählen Sie **[!UICONTROL wurde geändert]**.
 
    ![whencustomeridischanged](assets/whencustomeridischanged.png)
 
