@@ -1,6 +1,6 @@
 ---
 title: Correspondence Management | Umgang mit Benutzerdaten
-seo-title: Correspondence Management | Umgang mit Benutzerdaten
+seo-title: Correspondence Management | Handling user data
 description: Correspondence Management | Umgang mit Benutzerdaten
 uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
@@ -9,15 +9,15 @@ discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 role: Admin
 exl-id: a0c6a02c-47a3-4e70-a14c-953ee016b8e4
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 89%
+workflow-type: ht
+source-wordcount: '540'
+ht-degree: 100%
 
 ---
 
 # Correspondence Management | Umgang mit Benutzerdaten {#correspondence-management-handling-user-data}
 
-Mit Correspondence Management von AEM Forms können Sie sichere und personalisierte Kundenkorrespondenzen erstellen, verwalten und optimieren. Es bietet eine intuitive Benutzerschnittstelle für Geschäftsbenutzer, um Mitteilungen unter Verwendung vorab genehmigter Inhaltsblöcke und Medienelemente zu erstellen. Weitere Informationen zum Erstellen von Schriftstücken finden Sie unter [Korrespondenz erstellen](/help/forms/using/create-correspondence.md).
+Mit Correspondence Management von AEM Forms können Sie sichere und personalisierte Kundenkorrespondenzen erstellen, verwalten und optimieren. Es bietet eine intuitive Benutzerschnittstelle für Geschäftsbenutzer, um Mitteilungen unter Verwendung vorab genehmigter Inhaltsblöcke und Medienelemente zu erstellen. Weitere Informationen zum Erstellen von Briefen finden Sie unter [Korrespondenz erstellen](/help/forms/using/create-correspondence.md).
 
 Wenn ein Geschäftsbenutzer oder ein Agent eine Korrespondenz als Entwurf speichert oder übermittelt, wird eine Briefinstanz im AEM-Repository gespeichert. Die Briefinstanz enthält Korrespondenzdaten und Metadaten.
 
@@ -39,7 +39,7 @@ Abhängig von der für Ihre AEM-Bereitstellung konfigurierten Datenspeicherpersi
    <td><p><strong>Speicherort</strong></p> </td>
   </tr>
   <tr>
-   <td><p>Default</p> </td>
+   <td><p>Standard</p> </td>
    <td><p>AEM-Repository der Veröffentlichungsinstanz und der Author-Instanzen, die in der umgekehrten Replikationskonfiguration angegeben wurden</p> </td>
    <td><p><code>/content/apps/cm/letterInstances/[yyyy]/[mm]/[dd]/[node-id]/[letter-instance-name]/</code> </p> </td>
   </tr>
@@ -53,11 +53,11 @@ Abhängig von der für Ihre AEM-Bereitstellung konfigurierten Datenspeicherpersi
 
 Im oben angegebenen AEM-Repository-Speicherort:
 
-* `[yyyy]/[mm]/[dd]` ist die Knotenstruktur basierend auf dem Datum, an dem die Briefinstanz erstellt wurde
+* `[yyyy]/[mm]/[dd]` ist die Knotenstruktur, basierend auf dem Datum, an dem die Briefinstanz erstellt wurde.
 * `[node-id]` ist die ID, die dem Ordner mit dem Brief zugewiesen wurde
 * `[letter-instance-name]` ist der Name, der beim Speichern oder Senden eines Briefes angegeben wurde
 
-Unter dem Knoten [letter-instance-name] wird die folgende Knotenstruktur erstellt und die Daten für jede Briefinstanz werden im AEM Repository gespeichert:
+Unter dem Knoten [letter-instance-name] wird die folgende Knotenstruktur erstellt, und die Daten für jede Briefinstanz werden im AEM-Repository gespeichert:
 
 | Knoten | Beschreibung |
 |---|---|
@@ -72,7 +72,7 @@ Sie können in den konfigurierten Datenspeichern auf Entwürfe und übermittelte
 
 ### Zugreifen auf Benutzerdaten {#access-user-data}
 
-Die Korrespondenzverwaltung stellt APIs bereit, mit denen Sie Entwürfe und übermittelte Briefinstanzen finden und darauf zugreifen können. Mit den APIs können Sie Briefinstanzen mit der Briefinstanz-ID oder dem Benutzer, der die Korrespondenz gespeichert oder übermittelt hat, finden und öffnen. Weitere Informationen finden Sie unter [APIs für den Zugriff auf Briefinstanzen](/help/forms/using/cm-apis-to-access-letter-instances.md).
+Die Korrespondenzverwaltung stellt APIs bereit, mit denen Sie Entwürfe und übermittelte Briefinstanzen finden und darauf zugreifen können. Mit den APIs können Sie Briefinstanzen mit der Briefinstanz-ID oder dem Benutzer, der die Korrespondenz gespeichert oder übermittelt hat, finden und öffnen. Weitere Informationen finden Sie unter [APIs zum Zugreifen auf Briefinstanzen](/help/forms/using/cm-apis-to-access-letter-instances.md).
 
 Alternativ können Sie mithilfe von CRX DELite zur Briefinstanz im AEM-Repository navigieren. Weitere Informationen über gespeicherte Daten und den Repository-Speicherort finden Sie unter [Benutzerdaten und Datenspeicher](/help/forms/using/correspondence-management-handling-user-data.md#data).
 
