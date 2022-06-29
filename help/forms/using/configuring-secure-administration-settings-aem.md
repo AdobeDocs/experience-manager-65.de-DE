@@ -1,8 +1,8 @@
 ---
 title: Konfigurieren sicherer Verwaltungseinstellungen für AEM Forms on JEE
-seo-title: Konfigurieren sicherer Verwaltungseinstellungen für AEM Forms on JEE
-description: Erfahren Sie, wie Sie Benutzerkonten und Dienste verwalten, die zwar in einer privaten Entwicklungsumgebung erforderlich sind, aber in einer Produktionsumgebung von AEM Forms on JEE nicht erforderlich sind.
-seo-description: Erfahren Sie, wie Sie Benutzerkonten und Dienste verwalten, die zwar in einer privaten Entwicklungsumgebung erforderlich sind, aber in einer Produktionsumgebung von AEM Forms on JEE nicht erforderlich sind.
+seo-title: Configuring Secure Administration Settings for AEM Forms on JEE
+description: Erfahren Sie, wie Sie Benutzerkonten und Services verwalten, die zwar in einer privaten Entwicklungsumgebung erforderlich sind, aber in einer Produktionsumgebung von AEM Forms on JEE nicht benötigt werden.
+seo-description: Learn how to administer user accounts and services that, although required in a private development environment, are not required in a production environment of AEM Forms on JEE.
 uuid: 04e45d06-f57d-406c-8228-15f483199430
 content-type: reference
 topic-tags: Security
@@ -11,15 +11,15 @@ discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
 role: Admin
 exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 80%
+workflow-type: ht
+source-wordcount: '847'
+ht-degree: 100%
 
 ---
 
 # Konfigurieren sicherer Verwaltungseinstellungen für AEM Forms on JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
-Erfahren Sie, wie Sie Benutzerkonten und Dienste verwalten, die zwar in einer privaten Entwicklungsumgebung erforderlich sind, aber in einer Produktionsumgebung von AEM Forms on JEE nicht erforderlich sind.
+Erfahren Sie, wie Sie Benutzerkonten und Services verwalten, die zwar in einer privaten Entwicklungsumgebung erforderlich sind, aber in einer Produktionsumgebung von AEM Forms on JEE nicht benötigt werden.
 
 Im Allgemeinen verwenden Entwickler nicht die -Produktionsumgebung zum Erstellen und Testen ihrer Anwendungen. Sie müssen daher Benutzerkonten und -dienste verwalten, die, obwohl sie in einer privaten Entwicklungsumgebung benötigt werden, in einer Produktionsumgebung nicht erforderlich sind.
 
@@ -33,9 +33,9 @@ AEM Forms on JEE-Dienste erfordern zwar, dass gültige Berechtigungen für einen
 
 AEM Forms on JEE-Dienste benötigen zumindest SOAP-Zugriff. Diese Dienste sind meist für die Verwendung durch Workbench erforderlich; es sind jedoch auch Dienste darunter, die von der Workspace-Webanwendung aufgerufen werden.
 
-Führen Sie dieses Verfahren über die Web-Seite &quot;Anwendungen und Dienste&quot;in Administration Console aus:
+Führen Sie dieses Verfahren mithilfe der Web-Seite „Programme und Services“ in Administration-Console durch:
 
-1. Melden Sie sich bei Administration Console an, indem Sie die folgende URL in einen Webbrowser eingeben:
+1. Melden Sie sich bei Administration-Console an, indem Sie die folgende URL in einen Webbrowser eingeben:
 
    ```java
             https://[host name]:'port'/adminui
@@ -78,7 +78,7 @@ Einige Formularserverdienste lassen den nicht authentifizierten (anonymen) Aufru
 
 1. Klicken Sie auf **Dienste > Anwendungen und Dienste > Dienstverwaltung**.
 1. Klicken Sie auf den Namen des zu deaktivierenden Dienstes (z. B. AuthenticationManagerService).
-1. Klicken Sie auf die Registerkarte **Sicherheit**, deaktivieren Sie die Option **Anonymer Zugriff erlaubt** und klicken Sie auf **Speichern**.
+1. Klicken Sie auf die **Registerkarte Sicherheit**, deaktivieren Sie **Anonymen Zugriff zulassen**, und klicken Sie dann auf **Speichern**.
 1. Wiederholen Sie die Schritte 3 und 4 für die folgenden Dienste:
 
    * AuthenticationManagerService
@@ -109,7 +109,7 @@ Einige Formularserverdienste lassen den nicht authentifizierten (anonymen) Aufru
 
 ## Standardmäßiges globales Zeitlimit ändern  {#changing-the-default-global-time-out}
 
-Endbenutzer können sich über Workbench, AEM Forms-Webanwendungen oder benutzerdefinierte Anwendungen, die AEM Forms-Serverdienste aufrufen, bei AEM Forms authentifizieren. Mithilfe einer globalen Zeitlimiteinstellung wird festgelegt, wie lange solche Benutzer AEM Forms nutzen können (mittels einer auf SAML basierenden Bestätigung), bevor sie sich erneut authentifizieren müssen. Der Standardwert ist zwei Stunden. In einer Produktionsumgebung muss die Zeitdauer auf den zulässigen Mindestwert in Minuten verringert werden.
+Endbenutzer von AEM Forms können sich über Workbench, Web-Anwendungen für AEM Forms oder über benutzerdefinierte Anwendungen, die Server-Services für AEM Forms aufrufen, authentifizieren. Mithilfe einer globalen Zeitlimiteinstellung wird festgelegt, wie lange solche Benutzer AEM Forms nutzen können (mittels einer auf SAML basierenden Bestätigung), bevor sie sich erneut authentifizieren müssen. Der Standardwert ist zwei Stunden. In einer Produktionsumgebung muss die Zeitdauer auf den zulässigen Mindestwert in Minuten verringert werden.
 
 ### Zeitlimit für die erneute Authentifizierung auf das Minimum einstellen {#minimize-reauthentication-time-limit}
 
