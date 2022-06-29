@@ -1,8 +1,8 @@
 ---
 title: HSM-Berechtigungen verwalten
-seo-title: HSM-Berechtigungen verwalten
+seo-title: Managing HSM credentials
 description: Erfahren Sie, wie Sie HSM-Berechtigungen verwalten
-seo-description: Erfahren Sie, wie Sie HSM-Berechtigungen verwalten
+seo-description: Learn how to manage HSM credentials.
 uuid: 30ddcd4a-f771-44d5-bdef-4826adcd0c44
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e5f17ba8-8aab-4449-811a-20ad33de1c6f
 exl-id: facbeab2-de95-4778-894c-faa771d3391e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1313'
-ht-degree: 99%
+workflow-type: ht
+source-wordcount: '1304'
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ AEM Forms Digital Signatures kann Berechtigungen verwenden, die in einem HSM ges
 1. Geben Sie in das Feld „Token-PIN“das für den Zugriff auf den HSM-Schlüssel benötigte Kennwort ein und klicken Sie auf „Weiter“.
 1. Wählen Sie im Feld „Berechtigungen“ eine Berechtigung aus. Klicken Sie auf Speichern.
 
-## Alias für eine HSM-Berechtigung erstellen, wenn das HSM-Gerät offline ist  {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-offline}
+## Alias für eine HSM-Berechtigung erstellen, wenn das HSM-Gerät offline ist {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-offline}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „HSM-Berechtigungen“ und dann auf „Hinzufügen“.
 1. Geben Sie in das Feld „Profilname“ eine Zeichenfolge zur Identifizierung des Alias ein. Dieser Wert wird als Eigenschaft für einige Digital Signatures-Vorgänge wie etwa das Signieren eines Signaturfelds verwendet.
@@ -67,37 +67,37 @@ AEM Forms Digital Signatures kann Berechtigungen verwenden, die in einem HSM ges
 
 1. Geben Sie in das Feld „Kennwort“ das benötigte Kennwort für den Zugriff auf den HSM-Schlüssel für die angegebenen Steckplatzinformationen ein und klicken Sie dann auf „Speichern“.
 
-## Eigenschaften von HSM-Berechtigungsaliassen anzeigen  {#view-hsm-credential-alias-properties}
+## Eigenschaften von HSM-Berechtigungsaliassen anzeigen {#view-hsm-credential-alias-properties}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „HSM-Berechtigungen“.
 1. Klicken Sie zuerst auf den Aliasnamen des Berechtigungsalias, dessen Eigenschaften angezeigt werden sollen, und anschließend auf „OK“.
 
-## Status einer HSM-Berechtigung überprüfen  {#check-the-status-of-an-hsm-credential}
+## Status einer HSM-Berechtigung überprüfen {#check-the-status-of-an-hsm-credential}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „HSM-Berechtigungen“.
 1. Aktivieren Sie das Kontrollkästchen neben der Berechtigung, die Sie überprüfen möchten, und klicken Sie auf „Status überprüfen“.
 
 Die Spalte „Status“ gibt den aktuellen Status der Berechtigung an. Wenn es zu einem Fehler kommt, wird in der Spalte „Status“ in rotes X angezeigt. Bewegen Sie Ihre Maus über das X, um Quickinfos mit den Fehlerursachen anzuzeigen.
 
-## Eigenschaften von HSM-Berechtigungsaliassen aktualisieren  {#update-hsm-credential-alias-properties}
+## Eigenschaften von HSM-Berechtigungsaliassen aktualisieren {#update-hsm-credential-alias-properties}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „HSM-Berechtigungen“.
 1. Klicken Sie auf den Aliasnamen des Berechtigungsalias.
 1. Klicken Sie auf „Berechtigung aktualisieren“ und aktualisieren Sie die Einstellungen den Anforderungen entsprechend.
 
-## Alle HSM-Verbindungen zurücksetzen  {#reset-all-hsm-connections}
+## Alle HSM-Verbindungen zurücksetzen {#reset-all-hsm-connections}
 
 Setzen Sie die offenen Verbindungen mit einem HSM-Gerät nach jeder Unterbrechung der Netzwerksitzung zwischen dem Formularserver und dem HSM-Gerät zurück. Unterbrechungen können beispielsweise aufgrund eines Netzwerkausfalls auftreten oder weil das HSM-Gerät für eine Softwareaktualisierung offline geschaltet wurde. Nach einer Unterbrechung sind die bestehenden Verbindungen nicht aktuell und alle Signierungsanfragen gegen diese Verbindungen schlagen fehl. Durch Verwenden der Option „Alle HSM-Verbindungen zurücksetzen“ werden die alten Verbindungen gelöscht.
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „HSM-Berechtigungen“.
 1. Klicken Sie auf „Alle HSM-Verbindungen zurücksetzen“.
 
-## HSM-Berechtigungsalias löschen  {#delete-an-hsm-credential-alias}
+## HSM-Berechtigungsalias löschen {#delete-an-hsm-credential-alias}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „HSM-Berechtigungen“.
 1. Aktivieren Sie die Kontrollkästchen der zu löschenden HSM-Berechtigungen und klicken Sie erst auf „Löschen“ und anschließend auf „OK“.
 
-## HSM-Remoteunterstützung konfigurieren  {#configure-remote-hsm-support}
+## HSM-Remoteunterstützung konfigurieren {#configure-remote-hsm-support}
 
 AEM Forms verwendet einen webdienstbasierten IPC/RPC-Mechanismus. Über diesen Mechanismus kann AEM Forms ein auf einem Remotecomputer installiertes HSM verwenden. Um diese Funktion zu verwenden, installieren Sie den Webdienst auf dem Remotecomputer, auf dem das HSM installiert ist. Weitere Informationen finden Sie unter [Konfigurieren von HSM-Support für AEM Forms ES mit Sun JDK auf Windows 64-Bit-Plattform](https://kb2.adobe.com/cps/808/cpsid_80835.html).
 
