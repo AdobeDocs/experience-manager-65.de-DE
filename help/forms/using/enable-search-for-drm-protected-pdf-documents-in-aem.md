@@ -1,8 +1,8 @@
 ---
 title: AEM zum Durchsuchen von durch Document Security geschützten PDF-Dokumenten aktivieren
-seo-title: AEM zum Durchsuchen von durch Document Security geschützten PDF-Dokumenten aktivieren
+seo-title: Enable AEM to search document security protected PDF documents
 description: 'Erfahren Sie, wie Sie die native AEM-Suche aktivieren, um eine Volltextsuche in DRM-geschützten PDF-Dokumenten durchzuführen.  '
-seo-description: 'Erfahren Sie, wie Sie die native AEM-Suche aktivieren, um eine Volltextsuche in DRM-geschützten PDF-Dokumenten durchzuführen.  '
+seo-description: Learn how to enable native AEM search to perform full-text search on DRM protected PDF documents.
 uuid: ec6e5d53-a74c-4958-a389-7937d073c083
 contentOwner: khsingh
 content-type: reference
@@ -10,12 +10,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: b79c147c-f846-4e48-bec0-8b658502bb6f
 docset: aem65
-feature: Dokumentensicherheit
+feature: Document Security
 exl-id: 7cf17fb6-021a-473e-bc3b-27c317953002
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 86%
+workflow-type: ht
+source-wordcount: '697'
+ht-degree: 100%
 
 ---
 
@@ -30,24 +30,24 @@ Mithilfe der AEM-Suche kann nach AEM-Assets gesucht werden und es kann eine Text
 
 * Wenn Sie AEM Forms on OSGi verwenden: 
 
-   * Installieren Sie[ AEM Forms-Dokumentensicherheit ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)auf dem AEM Forms-Server.
+   * Installieren Sie[ AEM Forms-Dokumentensicherheit ](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html)auf dem AEM Forms-Server.
 
-   * Stellen Sie sicher, dass ein AEM-Formular auf dem JEE-Server läuft und die Dokumentensicherheit auf den entsprechenden AEM-Formularen auf dem JEE-Server installiert ist. Der AEM Forms on JEE-Server ist erforderlich, um das geschützte Dokument mit einem Index zu versehen. 
+   * Stellen Sie sicher, dass ein AEM Forms auf dem JEE-Server läuft und die Dokumentensicherheit auf den entsprechenden AEM Forms auf dem JEE-Server installiert ist. Der AEM Forms on JEE-Server ist erforderlich, um das geschützte Dokument mit einem Index zu versehen. 
 
 * Wenn Sie nur den AEM Forms on JEE-Server verwenden, ist das Indexpaket bereits installiert. 
 * Stellen Sie sicher, dass alle Pakete aktiv sind. Wenn nicht alle Pakete aktiv sind, warten Sie, bis alle Pakete aktiv sind. 
 
-   * Bei AEM Forms unter OSGi sind die Bundles unter https://&#39;[server]:[port]&#39;/system/console/bundles aufgeführt.
-   * Bei AEM Forms on JEE sind die Bundles unter https://&#39;[server]:[port]&#39;/[context-path]/system/console/bundles aufgeführt. Beispiel: https://localhost:8080/lc/system/console/bundles.
+   * Für AEM Forms unter OSGi werden die Bundles unter https://&#39;[server]:[port]&#39;/system/console/bundles aufgelistet.
+   * Für AEM Forms auf JEE werden die Bundles unter https://&#39;[server]:[port]&#39;/[context-path]/system/console/bundles aufgelistet. Zum Beispiel https://localhost:8080/lc/system/console/bundles.
 
-* Fügen Sie das Paket *sun.util.calendar* zur Zulassungsliste hinzu. So fügen Sie das Paket zur Zulassungsliste hinzu:
+* Fügen Sie das Paket *sun.util.calendar* zur Zulassungsliste hinzu. Um das Paket zur Zulassungsliste hinzuzufügen, führen Sie die folgenden Schritte aus:
 
    1. Öffnen Sie die AEM Web-Konsole. Die URL lautet https://&#39;[server]:[port]&#39;/system/console/configMgr.
    1. Suchen und öffnen Sie **Deserialisierungs-Firewallkonfiguration**. 
 
-   1. Fügen Sie das Paket sun.util.calendar zum Feld Auf die Zulassungsliste gesetzt Klassen oder Paketpräfixe hinzu und klicken Sie auf **Speichern**.
+   1. Fügen Sie das Paket sun.util.calendar zum Feld der auf die Zulassungsliste gesetzten Klassen oder Paketpräfixe hinzu und klicken Sie auf **Speichern**.
 
-### Erstellen Sie eine sichere Verknüpfung zwischen AEM Forms JEE- und OSGi-Stapeln.{#establish-a-secure-connection-between-aem-forms-jee-and-osgi-stacks}
+### Erstellen Sie eine sichere Verknüpfung zwischen AEM Forms JEE- und OSGi-Stapeln. {#establish-a-secure-connection-between-aem-forms-jee-and-osgi-stacks}
 
 Sie können eine der folgenden Methoden verwenden, um die sichere Verbindung herzustellen:
 
@@ -59,7 +59,7 @@ Sie können eine der folgenden Methoden verwenden, um die sichere Verbindung her
 1. Öffnen Sie die AEM Web-Konsole. Die URL lautet https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Öffnen Sie das **Adobe LiveCycle Client SDK-Paket**. Geben Sie den Wert für die folgenden Felder an:
 
-   * **Server-URL:** Geben Sie die HTTPS-URL des AEM Forms on JEE-Servers an. Um die Kommunikation über HTTPS zu aktivieren, starten Sie den AEM-Server mit dem Parameter -Djavax.net.ssl.trustStore=&lt;Pfad der Forms on JEE-Keystore-Datei> neu.
+   * **Server-URL:** Geben Sie die HTTPS-URL des AEM Forms on JEE-Servers an. Um die Kommunikation über HTTPS zu aktivieren, starten Sie den AEM-Server mit dem Parameter -Djavax.net.ssl.trustStore=&lt;Pfad der AEM Forms on JEE-Keystore-Datei> neu.
    * **Dienstname**: Fügen Sie den RightsManagementService zur Liste der angegebenen Dienste hinzu.
    * **Benutzername:** Geben Sie den Benutzernamen des AEM Forms on JEE-Konto an, der verwendet werden soll, um Aufrufe von AEM-Server zu initiieren. Das angegebene Konto benötigt Berechtigungen zum Starten der Document Services auf dem AEM Forms on JEE-Server.
    * **Kennwort:** Geben Sie das Kennwort für das AEM Forms on JEE-Konto an, das im Feld „Benutzername“ erwähnt ist.
@@ -82,7 +82,7 @@ Sie können eine der folgenden Methoden verwenden, um die sichere Verbindung her
 
    Klicken Sie auf **Speichern**. AEM kann durch Document Security geschützte PDF-Dokumente durchsuchen.
 
-### Indizieren eines richtliniengeschützten Beispiel-PDF-Dokuments  {#index-a-sample-policy-protected-pdf-document}
+### Indizieren eines richtliniengeschützten Beispiel-PDF-Dokuments {#index-a-sample-policy-protected-pdf-document}
 
 1. Melden Sie sich bei AEM Assets als Administrator an.
 1. Erstellen Sie einen Ordner in AEM Digital Asset Manager und laden Sie die durch Richtlinien geschützten PDF-Dokumente in den neu erstellten Ordner hoch.
