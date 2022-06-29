@@ -1,8 +1,8 @@
 ---
 title: Einstellungen für die PDF-Exportkonvertierung ändern
-seo-title: Einstellungen für die PDF-Exportkonvertierung ändern
+seo-title: Modifying the PDF Export conversion settings
 description: Erfahren Sie, wie Sie die PDF-Export-Konvertierungseinstellungen ändern.
-seo-description: Erfahren Sie, wie Sie die PDF-Export-Konvertierungseinstellungen ändern.
+seo-description: Learn how to modify the PDF Export conversion settings.
 uuid: 7bade010-f422-4a76-a876-705e3cf346e6
 contentOwner: admin
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: 982f7b7e-9ba9-437f-a337-76c355b328ac
 feature: PDF Generator
 exl-id: 48a5d992-4681-41a8-8d1d-4da6767134c2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '183'
+workflow-type: ht
+source-wordcount: '166'
 ht-degree: 100%
 
 ---
