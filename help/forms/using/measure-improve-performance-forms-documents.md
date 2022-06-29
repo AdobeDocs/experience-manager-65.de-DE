@@ -1,8 +1,8 @@
 ---
 title: Messen und Verbessern der Effektivität und Konvertierung von Formularen
-seo-title: Messen und Verbessern der Effektivität und Konvertierung von Formularen
+seo-title: Measure and improve effectiveness and conversion of forms
 description: AEM Forms ermöglicht die Integration in Adobe Target und Adobe Analytics, sodass Sie die Leistung und Konvertierungsrate Ihrer Formulare messen und verbessern können.
-seo-description: AEM Forms ermöglicht die Integration in Adobe Target und Adobe Analytics, sodass Sie die Leistung und Konvertierungsrate Ihrer Formulare messen und verbessern können.
+seo-description: AEM Forms integrates with Adobe Target and Adobe Analytics solutions that allows you to measure and improve the performance and conversion rate of your forms.
 uuid: fd2f087c-39f5-457d-8b44-c3ec4400b3fc
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ discoiquuid: a128877d-239c-4272-99c2-72d6486d5703
 docset: aem65
 exl-id: 4f45ad22-611b-4b4f-8e89-cb64a122b70a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 93%
+workflow-type: ht
+source-wordcount: '1278'
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Um die ROI zu maximieren, müssen Unternehmen überwachen, wie ihre Kunden mit D
 
 ## Die Lösung {#the-solution}
 
-AEM Forms ist mit [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html)-Lösungen - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) und [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) integriert, die Ihnen dabei helfen können, die Leistung Ihrer Formulare zu überwachen und zu analysieren und Ihnen das Experiment und die Identifizierung des Erlebnisses zu ermöglichen, das zu einer besseren Konversionsrate führt.
+AEM Forms ermöglicht die Integration in [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html)-Lösungen – [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) und [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) – die Ihnen helfen, die Leistung Ihrer Formulare zu überwachen und zu analysieren und ein Vorgehen zu ermitteln, das zu einer besseren Konversionsrate führt.
 
 ## Der Arbeitsablauf {#the-workflow}
 
@@ -69,11 +69,11 @@ Um detaillierte Einblicke in die Interaktionen Ihrer Kunden mit Ihren Formularen
 1. AEM Forms-Analytics-Konfigurationsdienst konfigurieren
 1. Analytics im Formular in AEM aktivieren
 
-Ausführliche Anweisungen finden Sie unter [Konfigurieren von Analyse und Berichten für adaptive Formulare](../../forms/using/configure-analytics-forms-documents.md).
+Ausführliche Anweisungen finden Sie unter [Konfigurieren von Analysen und Berichten für adaptive Formulare](../../forms/using/configure-analytics-forms-documents.md).
 
 **Target konfigurieren**
 
-Um A/B-Tests für Ihre adaptiven Formulare zu erstellen und auszuführen, konfigurieren Sie Target in AEM Forms, wie unter [Einrichten und Integrieren von Target in AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p) beschrieben.
+Um A/B-Tests für Ihre adaptiven Formulare zu erstellen und durchzuführen, konfigurieren Sie Target in AEM Forms, wie unter [Einrichten und Integrieren von Target in AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p) beschrieben. 
 
 #### Schritt 2: Anzeigen des Analyseberichts {#step-view-analytics-report-br}
 
@@ -127,7 +127,7 @@ In diesem Schritt analysieren Sie Datenpunkte im Analysebericht und schließen a
 
 Nachdem Sie diese Datenpunkte analysiert und eine Hypothese ermittelt haben, nehmen Sie die erforderlichen Änderungen im Formular vor.
 
-#### Schritt 4: Validieren Ihrer Analyse und Korrekturen  {#step-validate-your-analysis-and-fixes}
+#### Schritt 4: Validieren Ihrer Analyse und Korrekturen {#step-validate-your-analysis-and-fixes}
 
 In diesem Schritt validieren Sie die Änderungen, die Sie im Formular vorgenommen haben, und überprüfen, ob sie Auswirkungen auf die Konversionsrate haben.
 
