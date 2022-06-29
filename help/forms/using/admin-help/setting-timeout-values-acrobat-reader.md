@@ -1,8 +1,8 @@
 ---
 title: Zeitlimitwerte zur Verwendung mit Acrobat Reader DC Extensions festlegen
-seo-title: Zeitlimitwerte zur Verwendung mit Acrobat Reader DC Extensions festlegen
+seo-title: Setting timeout values for use with Acrobat Reader DC extensions
 description: Erfahren Sie, wie Sie Timeout-Werte für die Verwendung mit Acrobat Reader DC-Erweiterungen festlegen.
-seo-description: Erfahren Sie, wie Sie Timeout-Werte für die Verwendung mit Acrobat Reader DC-Erweiterungen festlegen.
+seo-description: Learn how to set timeout values for use with Acrobat Reader DC extensions.
 uuid: d6d072a0-0a30-417a-98b1-df8b4ff8f911
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a9aeeb89-45e9-4d5d-aa25-8145c89b64f2
 exl-id: 0a55aab3-14a3-41ad-8533-dc2cd116a848
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 85%
+workflow-type: ht
+source-wordcount: '172'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Beim Arbeiten mit einer großen Anzahl von PDF-Dateien in Acrobat Reader DC Exte
 
 Dieser Wert kann in Administration Console festgelegt werden. Wählen Sie „Einstellungen“ > „Core-Systemeinstellungen“ > „Konfigurationen“ und geben Sie einen Wert für „Standard-Zeitsperre für Entsorgung“ an.
 
-**User Manager AEM Forms Timeout:** Dieser Wert kann durch Bearbeiten der Datei &quot;config.xml&quot;festgelegt werden. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Konfiguration“ > „Konfigurationsdateien im- und exportieren“ und klicken Sie dann auf „Exportieren“. Öffnen Sie die exportierte Datei „config.xml“ und bearbeiten Sie die folgenden Zeilen:
+**Maximale Wartezeit des User Managers von AEM Forms:** Dieser Wert kann durch Bearbeiten der Datei config.xml festgelegt werden. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Konfiguration“ > „Konfigurationsdateien im- und exportieren“ und klicken Sie dann auf „Exportieren“. Öffnen Sie die exportierte Datei „config.xml“ und bearbeiten Sie die folgenden Zeilen:
 
 &lt;entry key=&quot;assertionValidityInMinutes&quot; value=&quot;600&quot;/>
 
@@ -33,4 +33,4 @@ Dieser Wert kann in Administration Console festgelegt werden. Wählen Sie „Ein
 
 Speichern Sie die Datei „config.xml“ und importieren Sie sie wieder zurück in Administration Console.
 
-**Sitzungs-Timeout des Anwendungsservers:** Dieser Wert kann auf dem Anwendungsserver festgelegt werden. Weitere Informationen finden Sie in der Dokumentation des entsprechenden Anwendungsservers.
+**Maximale Wartezeit bei einer Anwendungsserversitzung:** Dieser Wert kann auf dem Anwendungsserver festgelegt werden. Weitere Informationen finden Sie in der Dokumentation des entsprechenden Anwendungsservers.
