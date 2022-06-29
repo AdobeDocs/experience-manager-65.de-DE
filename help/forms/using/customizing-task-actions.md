@@ -1,8 +1,8 @@
 ---
 title: Anpassen von Aufgabenaktionen
-seo-title: Anpassen von Aufgabenaktionen
+seo-title: Customizing Task Actions
 description: Sie können das Erscheinungsbild der Aufgabenaktionen anpassen, nur Bilder für Aktionen verwenden und die Bilder anpassen, die in Route-Aktionen verwendet werden.
-seo-description: Sie können das Erscheinungsbild der Aufgabenaktionen anpassen, nur Bilder für Aktionen verwenden und die Bilder anpassen, die in Route-Aktionen verwendet werden.
+seo-description: You can customize appearance of the task actions, use only images for actions, and customize the images used in route actions.
 uuid: f6aebcd5-beac-41bf-95bf-2c07d36afa8b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,15 +10,15 @@ topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 exl-id: d17863fb-7950-493d-b378-16861c4af176
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 59%
+workflow-type: ht
+source-wordcount: '287'
+ht-degree: 100%
 
 ---
 
 # Anpassen von Aufgabenaktionen {#customizing-task-actions}
 
-AEM Forms Workspace ermöglicht dem Benutzer, die Aufgabenaktionen anzupassen. Bevor Sie die Aufgabenaktionen anpassen, stellen Sie sicher, dass Sie die unter [Generische Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md) aufgeführten Schritte ausführen.
+AEM Forms Workspace ermöglicht dem Benutzer, die Aufgabenaktionen anzupassen. Bevor Sie die Aufgabenaktionen anpassen, stellen Sie sicher, dass Sie die Schritte unter [Generische Schritte zur Anpassung des Arbeitsbereichs von AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md) befolgt haben.
 
 ## Anpassen des Textstils {#customizing-text-style}
 
@@ -110,7 +110,7 @@ Um den Textstil anzupassen, fügen Sie das folgende Codefragment in der Datei `/
 
 ## Anpassen von Bildern {#customizing-images}
 
-Um die Bilder anzupassen, fügen Sie das folgende Codefragment in der Datei `/apps/ws/css/newStyle.css` hinzu. Das folgende Codefragment passt das Bild für die Aktion *Sperren* an:
+Um die Bilder anzupassen, fügen Sie folgendes Codefragment in der Datei `/apps/ws/css/newStyle.css` hinzu. Das folgende Codefragment passt das Bild für die Aktion *Sperren* an:
 
 ```css
 #taskarea .taskActionsPopUp .lock, .task .taskActionsPopUp .lock{
@@ -131,15 +131,15 @@ Um die Bilder anzupassen, fügen Sie das folgende Codefragment in der Datei `/ap
 }
 ```
 
-## Ausschließliches Anzeigen von Bildern für Aktionen  {#showing-only-images-for-actions}
+## Ausschließliches Anzeigen von Bildern für Aktionen {#showing-only-images-for-actions}
 
 Um nur Bilder für Aktionen anzuzeigen, passen Sie die Bilder an, die in Route-Aktionen verwendet werden. Detaillierte Informationen finden Sie unter [Bilder für Route-Aktionen](/help/forms/using/images-route-actions.md).
 
-### Aufgabenaktionen-Popupmenü „Aufgabenliste“{#task-list-task-action-nbsp-pop-up-menu}
+### Aufgabenaktionen-Popupmenü „Aufgabenliste“ {#task-list-task-action-nbsp-pop-up-menu}
 
-1. Sie benötigen ein Entwicklungspaket, um Elemente des Aufgabenaktionen-Popupmenüs „Aufgabenliste“ von AEM Forms Workspace anzupassen. Detaillierte Informationen zum Erstellen eines Entwicklungspakets finden Sie unter [Erstellen von AEM Forms Workspace-Code.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
+1. Sie benötigen ein Entwicklungspaket, um Elemente des Aufgabenaktionen-Popupmenüs „Aufgabenliste“ von AEM Forms Workspace anzupassen. Ausführliche Informationen zum Erstellen des Entwicklungspakets finden Sie unter [Code für AEM Forms-Arbeitsbereich erstellen.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
-1. Kopieren Sie /libs/ws/js/runtime/templates/task.html nach `/apps/ws/js/runtime/templates/task.html`Ersetzen Sie das folgende Codefragment:
+1. Kopieren Sie /libs/ws/js/runtime/templates/task.html nach `/apps/ws/js/runtime/templates/task.html`, und ersetzen Sie das folgende Codefragment:
 
    ```html
    // Orignal code
@@ -212,7 +212,7 @@ Um nur Bilder für Aktionen anzuzeigen, passen Sie die Bilder an, die in Route-A
        </div>
    ```
 
-1. Entfernen Sie die feste Breite, die einem Anker-Tag zugewiesen ist, aus der Datei `/apps/ws/css/newStyle.css` :
+1. Löschen Sie die feste Breite, die einem Anker-Tag zugewiesen ist, aus der Datei `/apps/ws/css/newStyle.css`:
 
    ```css
    .task .taskActionsPopUp ul{
@@ -262,11 +262,11 @@ Um nur Bilder für Aktionen anzuzeigen, passen Sie die Bilder an, die in Route-A
    }
    ```
 
-### Aufgabenaktionen-Popupmenü „Aufgabendetails“{#task-details-task-action-pop-up-menu}
+### Aufgabenaktionen-Popupmenü „Aufgabendetails“ {#task-details-task-action-pop-up-menu}
 
 Führen Sie die folgenden Schritte aus, um das Aufgabenaktionen-Popupmenü „Aufgabendetails“ anzupassen:
 
-* Kopieren Sie die Datei /libs/ws/js/runtime/templates/taskdetails.html in den Ordner `/apps/ws/js/runtime/templates/` :
+* Kopieren Sie die Datei /libs/ws/js/runtime/templates/taskdetails.html in den Ordner `/apps/ws/js/runtime/templates/`:
 * Kapseln Sie das Symbol-Tag innerhalb des Anker-Tags anstelle von Text. Beispielsweise kapselt der unten aufgeführte *neue Code* das Symbol-Tag innerhalb des Anker-Tags:
 
 ```html
@@ -360,4 +360,4 @@ Führen Sie die folgenden Schritte aus, um das Aufgabenaktionen-Popupmenü „Au
 
 * Öffnen Sie die Datei /apps/ws/js/registry.js für die Bearbeitung.
 * Suchen Sie folgenden Text:  `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
-* Ersetzen Sie den lokalisierten Text durch den folgenden Text: `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`
+* Ersetzen Sie den gefundenden durch den folgenden Text: `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`
