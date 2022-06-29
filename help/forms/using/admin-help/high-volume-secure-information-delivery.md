@@ -1,20 +1,20 @@
 ---
 title: Bereitstellung von großen Mengen geschützter Informationen
-seo-title: Bereitstellung von großen Mengen geschützter Informationen
+seo-title: High-volume secure information delivery
 description: In solchen Fällen unterstützt Document Security die Zuordnung von Lizenzen zu Benutzern anstatt zu Dokumenten.
-seo-description: In solchen Fällen unterstützt Document Security die Zuordnung von Lizenzen zu Benutzern anstatt zu Dokumenten.
+seo-description: Document security supports the association of licenses to users, rather than to the documents in mass production environments.
 uuid: 9747d283-506c-434e-9850-e50b95290cc8
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b76d7d93-23a5-4c08-81f5-a56267b1556a
-feature: Dokumentensicherheit
+feature: Document Security
 exl-id: 616e8821-ca96-4471-9120-0e1076a06178
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 98%
+workflow-type: ht
+source-wordcount: '324'
+ht-degree: 100%
 
 ---
 
@@ -30,4 +30,4 @@ In dem Beispiel der monatlichen Rechnungserstellung für ein Telecom-Unternehmen
 
 Das Erstellen einer abstrakten Richtlinie wird nur von Document Security Java SDK unterstützt. Sie können die Richtlinien, die Sie aus der abstrakten Richtlinie erstellt haben, allerdings auf den Document Security-Webseiten verwalten. Richtlinien, die mit dieser Methode erstellt werden, sind im Verhalten mit denen identisch, die über die Document Security-Webseiten erstellt werden.
 
-Weitere Informationen finden Sie unter [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).
+Weitere Informationen finden Sie unter [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_de).
