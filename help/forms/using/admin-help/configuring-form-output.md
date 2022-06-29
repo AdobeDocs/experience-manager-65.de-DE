@@ -1,8 +1,8 @@
 ---
 title: Formularausgabe konfigurieren
-seo-title: Formularausgabe konfigurieren
+seo-title: Configuring form output
 description: Erfahren Sie, wie Sie die Formularausgabe konfigurieren.
-seo-description: Erfahren Sie, wie Sie die Formularausgabe konfigurieren.
+seo-description: Learn how to configure form output.
 uuid: 70aad14e-c845-4ef3-a751-ad8860d5d505
 contentOwner: admin
 content-type: reference
@@ -11,22 +11,22 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 17c9b69a-3c6f-47e3-a828-841bb90eba8b
 exl-id: d739806c-ce72-40fd-b304-3262a0988d96
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 94%
+workflow-type: ht
+source-wordcount: '228'
+ht-degree: 100%
 
 ---
 
 # Formularausgabe konfigurieren{#configuring-form-output}
 
-## Den Typ der HTML-Ausgabe angeben, der an den Webbrowser zurückgegeben wird.{#specify-the-type-of-html-output-returned-to-the-web-browser}
+## Den Typ der HTML-Ausgabe angeben, der an den Webbrowser zurückgegeben wird. {#specify-the-type-of-html-output-returned-to-the-web-browser}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Forms“.
 1. Wählen Sie unter „Formularausgabe“ in der Liste „Ausgabetyp“ eine der folgenden Optionen aus:
 
    **Voll-HTML**, um das Formular mit vollständigen HTML-Tags wiederzugeben (eine vollständige HTML-Seite). Dies ist der Standardwert.
 
-   **Formulartext:** Zum Rendern des Formulars innerhalb von  `<BODY>` Tags (keine vollständige HTML-Seite).
+   **Formularhauptteil:** Um das Formular zwischen `<BODY>`-Tags wiederzugeben (keine vollständige HTML-Seite).
 
 1. Klicken Sie auf Speichern.
 
@@ -42,7 +42,7 @@ ht-degree: 94%
 
 1. Klicken Sie auf Speichern.
 
-## Aufrufe von benutzerdefinierten Skripten konfigurieren, bevor das Formular eingereicht wird  {#configuring-invocation-of-custom-scripts-before-form-submit}
+## Aufrufe von benutzerdefinierten Skripten konfigurieren, bevor das Formular eingereicht wird {#configuring-invocation-of-custom-scripts-before-form-submit}
 
 Führen Sie zum Aktivieren der Funktion folgende Schritte durch:
 
