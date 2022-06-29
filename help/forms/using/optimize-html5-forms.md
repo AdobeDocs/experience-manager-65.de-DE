@@ -1,8 +1,8 @@
 ---
 title: Optimieren von HTML5-Formularen
-seo-title: Optimieren von HTML5-Formularen
+seo-title: Optimizing HTML5 forms
 description: Sie können die Ausgabegröße von HTML5-Formularen optimieren.
-seo-description: Sie können die Ausgabegröße von HTML5-Formularen optimieren.
+seo-description: You can optimize the output size of the HTML5 forms.
 uuid: 959f0b6a-9e4d-478a-afa8-4c39011fdf7a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 feature: Mobile Forms
 exl-id: 14309ebd-8d00-4ca5-b4ab-44d80d97d066
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 89%
+workflow-type: ht
+source-wordcount: '283'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ In diesem Artikel werden die Schritte beschrieben, die erforderlich sind, um die
 
 >[!NOTE]
 >
->Die folgenden Anweisungen gelten nicht für andere Server als Apache Web Server 2.0 32 Bit.
+>Die folgenden Anweisungen gelten für keine anderen Server als Apache Web Server 2.0 32 Bit.
 
 Installieren Sie die Apache-Webserver-Software für Ihr Betriebssystem:
 
