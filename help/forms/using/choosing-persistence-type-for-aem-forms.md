@@ -1,8 +1,8 @@
 ---
 title: Wählen eines Persistenztyps für eine AEM Forms-Installation
-seo-title: Wählen eines Persistenztyps für eine AEM Forms-Installation
+seo-title: Choosing a persistence type for an AEM Forms installation
 description: Wählen Sie einen Persistenztyp mit Bedacht aus. Diese Funktion ermöglicht Ihnen, eine leistungsstarke und skalierbare AEM Forms-Umgebung zu erstellen.
-seo-description: Wählen Sie einen Persistenztyp mit Bedacht aus. Diese Funktion ermöglicht Ihnen, eine leistungsstarke und skalierbare AEM Forms-Umgebung zu erstellen.
+seo-description: Choose a persistence type wisely. It helps you build an efficient and scale able AEM Forms environment.
 uuid: 1c692502-5039-4757-9358-1772772b3904
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,8 +12,8 @@ discoiquuid: a972fb35-38a7-4b83-99bd-6a6dddf8043b
 role: Admin
 exl-id: 621fe107-f4ac-42b1-8c7b-8abbcaac7380
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
-source-wordcount: '398'
+workflow-type: ht
+source-wordcount: '372'
 ht-degree: 100%
 
 ---
@@ -28,12 +28,12 @@ Persistenz bezeichnet die Methode, Inhalte physisch zu speichern. Es definiert d
 >
 >LiveCycle ES4 SP1 verwendet TarPM-Persistenz zum Speichern von Inhalten.
 
-In der folgenden Tabelle werden alle unterstützten Persistenztypen zusammen mit verschiedenen Parametern aufgeführt, um einen Persistenztyp für Ihre Umgebung auszuwählen:
+In der folgenden Tabelle werden alle unterstützten Persistenztypen zusammen mit verschiedenen Parametern aufgeführt, um Ihnen die Auswahl eines Persistenztyps für Ihre Umgebung zu erleichtern:
 
 <table>
  <tbody>
   <tr>
-   <th><strong>Installations/Kosten</strong></th>
+   <th><strong>Installationstyp/Kosten</strong></th>
    <th><strong>TarMK</strong></th>
    <th><strong>MongoMk</strong></th>
    <th><strong>RDBMK</strong></th>
@@ -59,7 +59,7 @@ In der folgenden Tabelle werden alle unterstützten Persistenztypen zusammen mit
  </tbody>
 </table>
 
-TarMK ist auf Leistung ausgerichtet, während bei MongoMK und RDBMK die Skalierbarkeit im Vordergrund steht. Adobe empfiehlt TarMK als Standardpersistenztechnologie für alle AEM Forms-Bereitstellungsszenarien für die Autoren- und Veröffentlichungsinstanz, außer in Fällen, die im Abschnitt [ Mongo auswählt oder ein relationale Datenbank-Microkernel über TarMK](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p) erläutert werden.
+TarMK ist auf Leistung ausgerichtet, während bei MongoMK und RDBMK die Skalierbarkeit im Vordergrund steht. Adobe empfiehlt TarMK als Standardpersistenztechnologie für alle AEM Forms-Bereitstellungsszenarien für die Autoren- und Veröffentlichungsinstanz, außer in Fällen, die im Abschnitt [Mongo auswählt oder ein relationale Datenbank-Microkernel über TarMK](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p) erläutert werden.
 
 Die Liste der unterstützten Microkernel finden Sie in den Artikeln [Technische Anforderungen für AEM Forms on OSGi](/help/sites-deploying/technical-requirements.md) oder [Unterstützte Plattformkombinationen für AEM Forms on JEE](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
