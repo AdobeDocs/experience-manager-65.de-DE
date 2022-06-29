@@ -1,19 +1,19 @@
 ---
 title: Layout-Möglichkeiten für adaptive Formulare
-seo-title: Layout-Möglichkeiten für adaptive Formulare
+seo-title: Layout capabilities of adaptive forms
 description: Layout und Darstellung adaptiver Formulare auf verschiedenen Geräten unterliegen den Layouteinstellungen. Machen Sie sich mit den verschiedenen Layouts und ihrer Anwendung vertraut.
-seo-description: Layout und Darstellung adaptiver Formulare auf verschiedenen Geräten unterliegen den Layouteinstellungen. Machen Sie sich mit den verschiedenen Layouts und ihrer Anwendung vertraut.
+seo-description: Layout and appearances of adaptive forms on various devices are governed by the layout settings. Understand the various layouts and how to apply them.
 uuid: 79022ac2-1aa3-47c5-b094-cbe83334ea62
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 9459c414-eac9-4bd9-a773-cceaeb736c56
 docset: aem65
-feature: Adaptive Formulare
+feature: Adaptive Forms
 exl-id: 3db623a4-f1ad-4b7f-97e8-0be138aa8b26
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 82%
+workflow-type: ht
+source-wordcount: '1129'
+ht-degree: 100%
 
 ---
 
@@ -29,15 +29,15 @@ Bevor Sie die verschiedenen Layoutfunktionen adaptiver Formulare kennenlernen, l
 
 [Einführung in die Erstellung von Formularen](../../forms/using/introduction-forms-authoring.md)
 
-## Layouttypen {#types-of-layouts}
+## Typen von Layouts {#types-of-layouts}
 
 In adaptiven Formularen stehen Ihnen die folgenden Layouttypen zur Verfügung:
 
-**Bedienfeldlayout** Steuert, wie Elemente oder Komponenten in einem Bedienfeld auf einem Gerät angezeigt werden.
+**Bereichslayout** Steuert, wie in einem Bereich befindliche Elemente oder Komponenten auf einem Gerät angezeigt werden.
 
-**Mobile** LayoutSteuert die Navigation eines Formulars auf einem Mobilgerät. Wenn das Gerät eine Breite von mindestens 768 Pixel aufweist, wird das Layout als Layout für Mobilgeräte betrachtet und für Mobilgeräte optimiert.
+**Layout für Mobilgeräte** Steuert die Navigation eines Formulars auf einem mobilen Gerät. Wenn das Gerät eine Breite von mindestens 768 Pixel aufweist, wird das Layout als Layout für Mobilgeräte betrachtet und für Mobilgeräte optimiert.
 
-**Symbolleiste** LayoutSteuert die Platzierung von Aktionsschaltflächen in der Symbolleiste oder Symbolleiste des Bedienfelds in einem Formular.
+**Symbolleisten-Layout** Steuert die Platzierung von Aktionsschaltflächen in der Symbolleiste bzw. in der Bereichssymbolleiste in einem Formular.
 
 Alle diese Bedienfeldlayouts werden in den folgenden Verzeichnissen definiert:
 
@@ -53,21 +53,21 @@ Alle diese Bedienfeldlayouts werden in den folgenden Verzeichnissen definiert:
 
 Formularersteller können jedem Bedienfeld eines adaptiven Formulars ein Layout zuordnen, einschließlich des Stammbedienfelds.
 
-Die Bedienfeldlayouts sind unter `/libs/fd/af/layouts/panel` verfügbar.
+Die Bereichslayouts stehen unter `/libs/fd/af/layouts/panel` zur Verfügung.
 
 ![Liste der Bedienfeldlayouts für das Stammbedienfeld eines adaptiven Formulars](assets/layouts.png)
 
 Liste der Bedienfeldlayouts in den adaptiven Formularen
 
-### Reaktionsschnell – alles auf einer Seite ohne Navigation {#responsive-everything-on-one-page-without-navigation-br}
+### Responsiv – alles auf einer Seite ohne Navigation {#responsive-everything-on-one-page-without-navigation-br}
 
-Verwenden Sie dieses Bedienfeldlayout, um ein reaktionsfähiges Layout zu erstellen, das sich ohne spezielle Navigation an die Bildschirmgröße Ihres Geräts anpasst.
+Verwenden Sie dieses Bereichslayout, um ein responsives Layout zu erstellen, das sich ohne spezielle Navigation an die Bildschirmgröße Ihres Geräts anpasst.
 
-Mithilfe dieses Layouts können Sie mehrere Komponenten des Typs **[!UICONTROL Adaptives Bedienfeldformular]** nacheinander im Bedienfeld platzieren.
+Mithilfe dieses Layouts können Sie in das Bedienfeld nacheinander mehrere Komponenten für **[!UICONTROL Bedienfelder für adaptive Formulare]** einfügen.
 
-![Formular mit einem reaktionsfähigem Layout auf einem kleinen Bildschirm](assets/responsive_layout_seen_on_small_screen.png)
+![So sieht ein Formular mit einem responsiven Layout auf einem kleinen Bildschirm aus](assets/responsive_layout_seen_on_small_screen.png)
 
-Formular mit einem reaktionsfähigem Layout auf einem kleinen Bildschirm
+So sieht ein Formular mit einem responsiven Layout auf einem kleinen Bildschirm aus
 
 ![Formular mit einem reaktionsfähigem Layout auf einem großen Bildschirm](assets/responsive_layout_seen_on_large_screen.png)
 
@@ -75,9 +75,9 @@ Formular mit einem reaktionsfähigem Layout auf einem großen Bildschirm
 
 ### Assistent – ein Mehrstufenformular, bei dem jeder einzelne Schritt genau angezeigt wird {#wizard-a-multi-step-form-showing-one-step-at-a-time}
 
-Verwenden Sie dieses Bedienfeldlayout, um in einem Formular eine geführte Navigation anzubieten. Beispielsweise können Sie dieses Layout verwenden, wenn Sie in einem Formular obligatorische Informationen erfassen und dabei die Benutzer Schritt für Schritt anleiten möchten.
+Verwenden Sie dieses Bereichslayout, um innerhalb eines Formulars eine geführte Navigation anzubieten. Beispielsweise können Sie dieses Layout verwenden, wenn Sie in einem Formular obligatorische Informationen erfassen und dabei die Benutzer Schritt für Schritt anleiten möchten.
 
-Verwenden Sie die Komponente `Panel adaptive form`, um eine schrittweise Navigation innerhalb eines Bedienfelds bereitzustellen. Wenn Sie dieses Layout verwenden, gehen Benutzer erst dann zum nächsten Schritt über, wenn der aktuelle Schritt abgeschlossen ist.
+Verwenden Sie die `Panel adaptive form`-Komponente, um in einem Bedienfeld eine schrittweise Navigation zur Verfügung zu stellen. Wenn Sie dieses Layout verwenden, gehen Benutzer erst dann zum nächsten Schritt über, wenn der aktuelle Schritt abgeschlossen ist.
 
 ```javascript
 window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpression)
@@ -87,75 +87,75 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 Ausdruck für das Abschließen von Schritten im Assistentenlayout für ein Mehrstufenformular
 
-![Ein Formular, das den Assistentenlayout verwendet](assets/wizard-layout.png)
+![Ein Formular mit dem Assistentenlayout](assets/wizard-layout.png)
 
 Ein Formular, das den Assistenten verwendet
 
 ### Layout für Akkordeon-Design {#layout-for-accordion-design}
 
-Mit diesem Layout können Sie die Komponente `Panel adaptive form` in einem Bedienfeld mit Akkordeonnavigation platzieren. Mit diesem Layout können Sie außerdem wiederholbare Bedienfelder erstellen. Mit wiederholbaren Bedienfeldern können Sie Bedienfelder nach Bedarf hinzuzufügen oder entfernen. Sie können dabei die minimale und maximale Anzahl der Wiederholungen eines Bedienfelds festlegen. Außerdem kann auf Basis der in den Bedienfeldelementen bereitgestellten Informationen der Titel des Bedienfelds dynamisch festgelegt werden.
+Mit diesem Layout können Sie die `Panel adaptive form`-Komponente in ein Bedienfeld mit Navigation im Akkordeonstil einfügen. Mit diesem Layout können Sie außerdem wiederholbare Bereiche erstellen. Wiederholbare Bereiche ermöglichen es Ihnen, Bereiche nach Bedarf hinzuzufügen oder zu entfernen. Sie können dabei festlegen, wie oft sich ein Bereich mindestens oder maximal wiederholen darf. Außerdem kann anhand der in den Bereichselementen angegebenen Informationen der Titel des Bereichs dynamisch festgelegt werden.
 
-Der Zusammenfassungsausdruck kann verwendet werden, um im Titel des minimierten Bedienfelds die vom Endbenutzer eingegebenen Werte anzuzeigen.
+Ein Zusammenfassungsausdruck kann verwendet werden, um im Titel des minimierten Bereichs die vom Endbenutzer eingegebenen Werte anzuzeigen.
 
 ![Wiederholbare Bedienfelder mit Akkordeonlayout in adaptiven Formularen](assets/repeatable_panels_using_accordion_layout.png)
 
 Mit dem Akkordeonlayout erstellte wiederholbare Bedienfelder
 
-### Layout mit Registerkarten – Registerkarten werden auf der linken Seite angezeigt  {#tabbed-layout-tabs-appear-on-the-left}
+### Layout mit Registerkarten – Registerkarten werden auf der linken Seite angezeigt {#tabbed-layout-tabs-appear-on-the-left}
 
-Mit diesem Layout können Sie die Komponente `Panel adaptive form` in einem Bedienfeld mit Registerkartennavigation platzieren. Die Registerkarten befinden sich auf der linken Seite der Bedienfeldinhalte.
+Mithilfe dieses Layouts können Sie die `Panel adaptive form`-Komponente in ein Bedienfeld mit Registerkartennavigation einfügen. Die Registerkarten befinden sich auf der linken Seite der Bereichsinhalte.
 
 ![Im Layout mit Registerkarten werden die Registerkarten links angezeigt](assets/tabbed_layout_left.png)
 
-Registerkarten auf der linken Seite des Bedienfelds
+Registerkarten auf der linken Seite eines Bereichs
 
-### Layout mit Registerkarten – Registerkarten werden oben angezeigt  {#tabbed-layout-tabs-appear-on-the-top}
+### Layout mit Registerkarten – Registerkarten werden oben angezeigt {#tabbed-layout-tabs-appear-on-the-top}
 
-Mithilfe dieses Layouts können Sie die Komponente `Panel adaptive form` in einem Bedienfeld mit Registerkartennavigation platzieren. Die Registerkarten befinden sich oberhalb der Bedienfeldinhalte.
+Mithilfe dieses Layouts können Sie die `Panel adaptive form`-Komponente in ein Bedienfeld mit Registerkartennavigation einfügen. Die Registerkarten befinden sich oberhalb der Bereichsinhalte.
 
 ![Layout mit Registerkarten in adaptiven Formen mit Registerkarten am oberen Rand](assets/tabbed_layout_top.png)
 
 Registerkarten oberhalb des Bedienfelds
 
-## Layout für Mobilgeräte {#mobile-layouts}
+## Layouts für Mobilgeräte {#mobile-layouts}
 
 Layouts für Mobilgeräte ermöglichen eine benutzerfreundliche Navigation auf mobilen Geräten mit relativ kleinen Bildschirmen. Bei Layouts für Mobilgeräte werden für die Formularnavigation entweder Registerkarten oder Assistenten verwendet. Durch die Anwendung eines Layouts für Mobilgeräte wird für das gesamte Formular ein einziges Layout zur Verfügung gestellt.
 
-Dieses Layout steuert die Navigation mit einer Navigationsleiste und einem Hauptnavigationsmenü. Die Navigationsleiste zeigt das Symbol **&lt;** und das Symbol ****, um die Navigationsschritte **next** und **previous** im Formular anzuzeigen.
+Dieses Layout steuert die Navigation mit einer Navigationsleiste und einem Hauptnavigationsmenü. In der Navigationsleiste befinden sich die Symbole **&lt;** und **>**, um den **nächsten** und den **vorigen** Navigationsschritt im Formular anzuzeigen.
 
-Die Layouts für Mobilgeräte sind unter `/libs/fd/af/layouts/mobile/` verfügbar. Die folgenden Layouts für Mobilgeräte sind in adaptiven Formularen standardmäßig verfügbar.
+Die Layouts für Mobilgeräte sind unter `/libs/fd/af/layouts/mobile/` verfügbar. Die folgenden Layouts für Mobilgeräte stehen für adaptive Formulare standardmäßig zur Verfügung.
 
 ![Liste der Layouts für Mobilgeräte in adaptiven Formularen](assets/mobile-navigation.png)
 
 Liste der Layouts für Mobilgeräte in adaptiven Formularen
 
-Wenn Sie ein Layout für Mobilgeräte verwenden, ist das Formularmenü für den Zugriff auf verschiedene Formularbedienfelder verfügbar, indem Sie auf das Symbol ![aem6forms_form_menu](assets/aem6forms_form_menu.png) tippen.
+Bei einem Layout für Mobilgeräte ist das Formularmenü (über das auf verschiedene Formularbereiche zugegriffen werden kann) per Klick auf das Symbol ![aem6forms_form_menu](assets/aem6forms_form_menu.png) verfügbar.
 
-### Layout mit Bedienfeldtiteln in der Formularkopfzeile {#layout-with-panel-titles-in-the-form-header}
+### Layout mit Bereichstiteln in der Formularkopfzeile {#layout-with-panel-titles-in-the-form-header}
 
 Wie der Name schon sagt, werden bei diesem Layout neben dem Navigationsmenü und der Navigationsleiste Bedienfeldtitel angezeigt. Außerdem enthält dieses Layout Symbole für „Nächste“ und „Vorherige“ zur Navigation.
 
-![Layouts für Mobilgeräte mit Bedienfeldtiteln in den Formularkopfzeilen](assets/mobile_layout_with.png)
+![Layouts für Mobilgeräte mit Bereichstiteln in den Formularkopfzeilen](assets/mobile_layout_with.png)
 
-Layouts für Mobilgeräte mit Bedienfeldtiteln in den Formularkopfzeilen
+Layouts für Mobilgeräte mit Bereichstiteln in den Formularkopfzeilen
 
-### Layout ohne Bedienfeldtitel in der Formularkopfzeile {#layout-without-panel-titles-in-the-form-header}
+### Layout ohne Bereichstitel in der Formularkopfzeile {#layout-without-panel-titles-in-the-form-header}
 
 Wie der Name schon sagt, werden bei diesem Layout nur das Navigationsmenü und die Navigationsleiste ohne Bedienfeldtitel angezeigt. Außerdem enthält dieses Layout Symbole für „Nächste“ und „Vorherige“ zur Navigation.
 
-![Layouts für Mobilgeräte ohne Bedienfeldtitel in den Formularkopfzeilen](assets/mobile_layout_without.png)
+![Layouts für Mobilgeräte ohne Bereichstitel in den Formularkopfzeilen](assets/mobile_layout_without.png)
 
-Layouts für Mobilgeräte ohne Bedienfeldtitel in den Formularkopfzeilen
+Layouts für Mobilgeräte ohne Bereichstitel in den Formularkopfzeilen
 
 ## Symbolleistenlayouts {#toolbar-layouts}
 
-Ein Symbolleistenlayout steuert die Positionierung und Anzeige aller Aktionsschaltflächen, die Sie zu Ihren adaptiven Formularen hinzufügen. Das Layout kann auf Formular- oder Bedienfeldebene hinzugefügt werden.
+Mit einem Symbolleistenlayout werden Positionierung und Anzeige aller Aktionsschaltflächen gesteuert, die Sie Ihren adaptiven Formularen hinzufügen. Das Layout kann auf Formular- oder Bedienfeldebene hinzugefügt werden.
 
 ![Liste der Symbolleistenlayouts in adaptiven Formularen zur Steuerung des Schaltflächenlayouts](assets/toolbar-layouts.png)
 
 Liste der Symbolleistenlayouts in adaptiven Formularen
 
-Symbolleistenlayouts sind unter `/libs/fd/af/layouts/toolbar` verfügbar. Adaptive Formulare stehen in den folgenden Symbolleistenlayouts standardmäßig zur Verfügung.
+Die Symbolleistenlayouts befinden sich unter `/libs/fd/af/layouts/toolbar`. Adaptive Formulare stehen in den folgenden Symbolleistenlayouts standardmäßig zur Verfügung.
 
 ### Standardlayout für Symbolleiste {#default-layout-for-toolbar}
 
@@ -167,7 +167,7 @@ Außerdem können Sie mehrere Symbolleisten mit Aktionsschaltflächen hinzufüge
 
 Standardansicht für Symbolleiste
 
-### Mobiles festes Layout für Symbolleiste {#mobile-fixed-layout-for-toolbar}
+### Festes Layout für Mobilgeräte für Symbolleiste {#mobile-fixed-layout-for-toolbar}
 
 Wählen Sie dieses Layout aus, um für Desktop- und Mobilgeräte alternative Layouts zur Verfügung zu stellen.
 
