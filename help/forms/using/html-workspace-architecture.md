@@ -1,8 +1,8 @@
 ---
 title: AEM Forms Workspace-Architektur
-seo-title: AEM Forms Workspace-Architektur
+seo-title: AEM Forms Workspace Architecture
 description: Grundlegende Informationen und Überblick über die Architektur von LiveCycle AEM Forms workspace.
-seo-description: Grundlegende Informationen und Überblick über die Architektur von LiveCycle AEM Forms workspace.
+seo-description: Conceptual information and overview of the architecture of LiveCycle AEM Forms workspace.
 uuid: e1a48452-ed44-4ea7-ba38-d961c8faafa5
 contentOwner: robhagat
 content-type: reference
@@ -11,9 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: c3a312fb-f684-477d-916d-2d3c99aa7607
 exl-id: c6f216d4-781c-4356-b9f0-3324903a28e7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 81%
+workflow-type: ht
+source-wordcount: '219'
+ht-degree: 100%
 
 ---
 
@@ -30,9 +30,9 @@ Die Anwendung greift auf den AEM Forms-Server an den REST-Endpunkten zu, um folg
 
 Der AEM Forms Server greift auf die AEM Forms-Datenbank über JDBC zu. Die Datenbank erfasst Aufgaben, Prozesse und deren Instanzen, Benutzer und zugehörige Informationen.
 
-Der AEM Forms-Arbeitsbereich ist aus modularen JavaScript™-Komponenten aufgebaut, die einzeln angepasst und in anderen Webanwendungen wiederverwendet werden können. Die Komponenten basieren auf Backbone, einer JavaScript-Bibliothek, die eine Struktur für Webanwendungen zur Verfügung stellt. Einen ausführlicher Artikel, der die Interaktion von Komponenten mit Backbone beschreibt, finden Sie [hier](/help/forms/using/backbone-interaction.md). Die Organisation der Komponenten in der CRX-Ordnerstruktur wird in [diesem](/help/forms/using/folder-structure.md) Artikel behandelt.
+AEM Forms Workspace ist aus modularen JavaScript™-Komponenten aufgebaut, die in anderen Web-Anwendungen individuell angepasst und wiederverwendet werden können. Die Komponenten basieren auf Backbone, einer JavaScript-Bibliothek, die eine Struktur für Webanwendungen zur Verfügung stellt. Einen ausführlicher Artikel, der die Interaktion von Komponenten mit Backbone beschreibt, finden Sie [hier](/help/forms/using/backbone-interaction.md). Die Organisation der Komponenten in der CRX-Ordnerstruktur wird in [diesem](/help/forms/using/folder-structure.md) Artikel behandelt.
 
 Pakete, die für AEM Forms Workspace gesendet werden:
 
 * `adobe-lc-workspace-pkg-<version>.zip`: Dies ist ein CRX-Paket, das heißt, es kann mithilfe des Package Manager in CRX bereitgestellt werden.
-* `adobe-lc-workspace-<version>-src.zip`: Es ist ein Archiv, das den vollständigen Code von AEM Forms Workspace und Skripten zum Erstellen der Bereitstellungspakete (Lieferpakete, Debug- und Entwicklungspakete) enthält.
+* `adobe-lc-workspace-<version>-src.zip`: Dies ist ein Archiv, das den vollständigen Code von AEM Forms Workspace und Skripte enthält, um die Bereitstellungspakete (Lieferpaket, Debugging-Paket und Entwicklungspaket) zu erstellen.
