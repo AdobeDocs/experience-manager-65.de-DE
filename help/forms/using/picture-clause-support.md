@@ -1,8 +1,8 @@
 ---
 title: Unterstützung der Picture-Klausel für HTML5-Formulare
-seo-title: Unterstützung der Picture-Klausel für HTML5-Formulare
+seo-title: Picture clause support for HTML5 forms
 description: HTML5-Formulare unterstützen die XFA-Picture-Klausel für Anzeigewerte und formatierte Werte für Datumsangaben, Text und numerische Symbole.
-seo-description: HTML5-Formulare unterstützen die XFA-Picture-Klausel für Anzeigewerte und formatierte Werte für Datumsangaben, Text und numerische Symbole.
+seo-description: HTML5 forms supports XFA Picture clause for display value and formatted value for date, text, and numeric symbols.
 uuid: ca5074ce-8219-4f27-a37c-b1f0dca4ce03
 contentOwner: robhagat
 content-type: reference
@@ -12,9 +12,9 @@ discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 feature: Mobile Forms
 exl-id: 7f9c77c6-447a-407f-ae58-6735176dc99c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 96%
+workflow-type: ht
+source-wordcount: '612'
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ HTML5-Formulare unterstützen die XFA-Picture-Klausel für Anzeigewerte und form
 
 >[!NOTE]
 >
->Mobile Forms unterstützt derzeit keine Edit-Picture-Klausel. Außerdem werden die Symbole der Datums- und Uhrzeit-Picture-Klausel nicht unterstützt.
+>Mobile Forms unterstützt derzeit keine Edit-Picture-Klausel. Außerdem werden die Klauselsymbole DateTime und Time Picture nicht unterstützt.
 
 ## Unterstützte Datumsfeldsymbole {#supported-date-field-symbols}
 
@@ -107,7 +107,7 @@ Die Zahl **10000** wird sowohl in HTML- als auch in PDF-Formularen als **10.000*
 
 Die Zahl 1000000 wird in PDF-Formularen als 1.000.000 formatiert. In HTML-Formularen bleibt diese Zahl jedoch unformatiert im Format 1000000.
 
-Unterstützte Ausdrücke für die numerische Picture-Klausel in **HTML Forms** sind:
+Unterstützte Ausdrücke für die numerische Picture-Klausel in **HTML-Formularen** sind:
 
 * num.integer{}
 * num.decimal{}
@@ -200,11 +200,11 @@ Unterstützte Ausdrücke für die numerische Picture-Klausel in **HTML Forms** s
  </tbody>
 </table>
 
-## Text-Picture-Klausel  {#text-picture-clause}
+## Text-Picture-Klausel {#text-picture-clause}
 
 HTML5-Formulare unterstützen die folgenden Text-Picture-Klausel-Ausdrücke:
 
-* text{text Picture clause symbols}
+* text{text Picture clause symbols}
 
 | **Symbol** | **Interpretation** |
 |---|---|
