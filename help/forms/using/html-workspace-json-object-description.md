@@ -1,8 +1,8 @@
 ---
 title: AEM Forms Workspace JSON-Objektbeschreibung
-seo-title: AEM Forms Workspace JSON-Objektbeschreibung
+seo-title: AEM Forms workspace JSON object description
 description: Grundlegende Informationen zu JSON JavaScript-Objekten, die in LiveCycle AEM Forms Workspace zur Anpassung, Erweiterung, Änderung und erneuten Verwendung dienen.
-seo-description: Grundlegende Informationen zu JSON JavaScript-Objekten, die in LiveCycle AEM Forms Workspace zur Anpassung, Erweiterung, Änderung und erneuten Verwendung dienen.
+seo-description: Conceptual information about the JSON JavaScript objects used in LiveCycle AEM Forms workspace for customization, extension, modification, and reuse.
 uuid: 91c923c8-144a-4453-ba91-6a5193f1c4c4
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: 61b7246d-ed28-4470-a0a2-a4aaf1a061a4
 exl-id: f837a2b3-4650-4261-84c6-291bb2a46dc7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '2134'
-ht-degree: 93%
+workflow-type: ht
+source-wordcount: '2109'
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
 <table>
  <tbody>
   <tr>
-   <td><strong>Property</strong></td>
+   <td><strong>Eigenschaft</strong></td>
    <td><strong>Nur Client</strong></td>
    <td><strong>Kommentare</strong></td>
   </tr>
@@ -194,7 +194,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td>priority<br /> </td>
    <td>F</td>
-   <td>Es enthält die Priorität der Aufgabe.<br />1 = höchste Priorität<br /> 2 = Hohe Priorität<br /> 3 = Mittlere Priorität<br /> 4 = Niedrige Priorität<br /> 5 = Niedrigste Priorität<br />  </td>
+   <td>Es enthält die Priorität der Aufgabe.<br /> 1 = höchste Priorität<br /> 2 = Hohe Priorität<br /> 3 = Mittlere Priorität<br /> 4 = Niedrige Priorität<br /> 5 = Niedrigste Priorität<br />  </td>
   </tr>
   <tr>
    <td>processInstanceId</td>
@@ -411,7 +411,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
    <td>ID der Warteschlange.<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>type</td>
+   <td>Typ</td>
    <td>F</td>
    <td>Dieser enthält den Typ der Warteschlange.<br /> 0 – Benutzerwarteschlange.<br /> 1. Freigegebene Warteschlange.<br /> 2. Gruppenwarteschlange.<br type="_moz" /> </td>
   </tr>
@@ -442,7 +442,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td>dateRanges<br type="_moz" /> </td>
    <td>F</td>
-   <td>Es enthält Array-Objekte aus Abwesenheitszeitplänen eines Benutzers. In jedem Zeitplanobjekt enthält das Feld startDate das Startdatum des Zeitplans und endDate das Enddatum des Zeitplans. Wenn endDate im Zeitplan null ist, bedeutet dies, dass der Benutzer das Enddatum des Abwesenheitszeitplans nicht geplant hat.<br type="_moz" /> </td>
+   <td>Es enthält Array-Objekte aus Abwesenheitszeitplänen eines Benutzers. In jedem Zeitplanobjekt enthält das Feld startDate das Startdatum des Zeitplans und endDate das Enddatum des Zeitplans. Wenn im Zeitplan das Feld endDate den Wert Null enthält, bedeutet dies, dass der Benutzer das Enddatum des Abwesenheitszeitplans nicht geplant hat.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>isNoPrimaryDesignate<br type="_moz" /> </td>
@@ -462,7 +462,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td>processSpecificDesignates<br type="_moz" /> </td>
    <td>F</td>
-   <td>Es enthält ein Array von Objekten für prozessspezifische Vertreter für den Abwesenheitszeitraum. In jedem prozessspezifischen designierten Objekt enthält processName den Namen des Prozesses, isNotDesignated ist "true", wenn kein Benutzer für den entsprechenden Prozess zugewiesen ist, und userDesignated ist "null", wenn kein Benutzer weitere Details des für den entsprechenden Prozess zugewiesenen Benutzers zugewiesen hat.<br type="_moz" /> </td>
+   <td>Es enthält ein Array von Objekten für prozessspezifische Vertreter für den Abwesenheitszeitraum. In jedem prozessspezifischen designierten Objekt enthält processName den Namen des Prozesses; isNotDesignated hat den Wert „true“, wenn dem entsprechenden Prozess kein Benutzer zugeordnet ist; userDesignated hat den Wert Null, wenn kein Benutzer Details dem Benutzer zugeordnet hat, der für den entsprechenden Vorgang vorgesehen war.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>Prozesse<br type="_moz" /> </td>
@@ -541,7 +541,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td>processVariables<br type="_moz" /> </td>
    <td>F</td>
-   <td>Array von Objekten aus Prozessvariablen Jedes Objekt einer Prozessvariable enthält name, den Namen der Prozessvariable, value, den Wert der Prozessvariable und type, den Typ der Prozessvariable.<br type="_moz" /> </td>
+   <td>Array von Objekten aus Prozessvariablen Jedes Objekt einer Prozessvariable enthält name, den Namen der Prozessvariable, value, den Wert der Prozessvariable und type, den Typ der Prozessvariable.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>tasklist<br type="_moz" /> </td>
@@ -730,7 +730,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td>Berechtigungen<br type="_moz" /> </td>
    <td>F</td>
-   <td>Berechtigungen, die mit einer Anlage verknüpft sind allowRead -Feld dient als Leseberechtigung, allowWrite ist für Schreibberechtigung, allowDelete steht für Löschberechtigung.<br type="_moz" /> </td>
+   <td>Berechtigungen, die mit einer Anlage verknüpft sind. Das Feld allowRead steht für die Leseberechtigung; allowWrite steht für die Schreibberechtigung, allowDelete steht für die Berechtigung zum Löschen.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>size<br type="_moz" /> </td>
@@ -743,9 +743,9 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
    <td>ID der Aufgabe, der die Anlage hinzugefügt wird.<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>type<br type="_moz" /> </td>
+   <td>Typ<br type="_moz" /> </td>
    <td>F</td>
-   <td>Typ ist Anhang für Dateien und Typ ist Notiz für Notizen.<br type="_moz" /> </td>
+   <td>Der Typ ist „attachment“ für Dateien und „note“ für Anmerkungen.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>formattedCreationDate<br type="_moz" /> </td>
