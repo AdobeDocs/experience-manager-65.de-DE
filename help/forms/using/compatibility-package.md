@@ -1,8 +1,8 @@
 ---
 title: Kompatibilitätspaket
-seo-title: Kompatibilitätspaket
-description: Durch die Installation des Kompatibilitätspakets auf AEM Forms 6.5 können Sie die Correspondence Management-Assets aus AEM Forms 6.4 und früheren Versionen sowie veraltete Vorlagen und Seiten für adaptive Formulare verwenden
-seo-description: Die Installation des Kompatibilitätspakets auf AEM Forms 6.4 ermöglicht es Ihnen, die Correspondence Management-Assets aus AEM Forms 6.4 sowie veraltete Vorlagen und Seiten für adaptive Formulare zu verwenden.
+seo-title: Compatibility Package
+description: Die Installation des Kompatibilitätspakets auf AEM Forms 6.5 ermöglicht es Ihnen, die Correspondence Management-Assets aus AEM Forms 6.4 und früheren Versionen sowie veraltete Vorlagen und Seiten für adaptive Formulare zu verwenden.
+seo-description: Installing the Compatibility package on AEM Forms 6.4 allows you to use the Correspondence Management assets from AEM Forms 6.4 and deprecated adaptive forms templates and pages
 uuid: b49633d6-2cb3-422c-a314-25f3b8a37b7f
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -13,9 +13,9 @@ docset: aem65
 role: Admin
 exl-id: bb16017c-a1bf-40d8-a78d-827c05b7ee2e
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 64%
+workflow-type: ht
+source-wordcount: '316'
+ht-degree: 100%
 
 ---
 
@@ -23,24 +23,24 @@ ht-degree: 64%
 
 ## Übersicht {#overview}
 
-Interaktive Kommunikation ist der standardmäßige und empfohlene Ansatz zur Erstellung von Kundenkommunikation in AEM Forms 6.5. Um weiterhin Briefe in AEM Forms 6.5 zu verwenden, müssen Sie das neueste [AEMFD-Kompatibilitätspaket](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) installieren.
+Interaktive Kommunikation ist der standardmäßige und empfohlene Ansatz zum Erstellen von Kundenkommunikation in AEM Forms 6.5. Um Briefe in AEM Forms 6.5 weiterhin verwenden zu können, müssen Sie das neueste [AEMFD-Kompatibilitätspaket](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) installieren.
 
-Mit dem AEMFD-Kompatibilitätspaket können Sie auch [die folgenden Assets aus AEM Forms 6.4, 6.3 und 6.2 auf AEM Forms 6.5 verwenden:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
+Das AEMFD-Kompatibilitätspaket ermöglicht Ihnen auch die [Verwendung der folgenden Assets aus AEM Forms 6.4, 6.3 und 6.2 in AEM Forms 6.5:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
 
 * Dokumentfragmente
 * Briefe
 * Datenwörterbücher
 * Veraltete Vorlagen und Seiten für adaptive Formulare
 
-Weitere Informationen finden Sie unter [Assets, die mit AEM Forms 6.5 kompatibel sind, indem Sie das Kompatibilitätspaket](../../forms/using/compatibility-package.md#assetsmadecompatible) installieren.
+Weitere Informationen finden Sie unter [Durch Installation des Kompatibilitätspakets mit AEM Forms 6.5 kompatible Assets](../../forms/using/compatibility-package.md#assetsmadecompatible).
 
-## Unterstützung für AEM Forms 6.4, 6.3 und 6.2 Assets in AEM Forms 6.5 hinzugefügt {#add-support-for-aem-forms-and-assets-in-aem-forms}
+## Hinzufügen von Unterstützung für Assets von AEM Forms 6.4, 6.3 und 6.2 in AEM Forms 6.5 {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
 Gehen Sie nach der Aktualisierung wie folgt vor, um das AEM-Kompatibilitätspaket zu installieren und Ihre Assets mit Version 6.5 kompatibel zu machen:
 
-Stellen Sie sicher, dass das [AEM Kompatibilitätspaket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) vorinstalliert ist.
+Stellen Sie sicher, dass das [AEM-Kompatibilitätspaket](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) vorinstalliert ist.
 
-1. Installieren Sie das neueste 6.5 [Kompatibilitätspaket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+1. Installieren Sie das neueste 6.5-[Kompatibilitätspaket](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html).
 
    Weitere Informationen zum Hochladen und Installieren des Pakets finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md).
 
