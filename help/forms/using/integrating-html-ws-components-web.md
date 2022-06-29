@@ -1,8 +1,8 @@
 ---
 title: Integrieren von AEM Forms Workspace-Komponenten in Webanwendungen
-seo-title: Integrieren von AEM Forms Workspace-Komponenten in Webanwendungen
+seo-title: Integrating AEM Forms workspace components in web applications
 description: Wiederverwenden von AEM Forms Workspace-Komponenten in eigenen Webapps, um Funktion zu nutzen und Integration bereitzustellen.
-seo-description: Wiederverwenden von AEM Forms Workspace-Komponenten in eigenen Webapps, um Funktion zu nutzen und Integration bereitzustellen.
+seo-description: How to reuse AEM Forms workspace components in your own webapps to leverage functionality and provide tight integration.
 uuid: bb9b8aa0-3f41-4f44-8eb7-944e778ee8a6
 contentOwner: robhagat
 content-type: reference
@@ -11,17 +11,17 @@ topic-tags: forms-workspace
 discoiquuid: 6be87939-007e-42c7-8a41-e34ac2b8bed4
 exl-id: bb4a500d-c34f-4586-83f0-ad7ef69b4fb1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 74%
+workflow-type: ht
+source-wordcount: '344'
+ht-degree: 100%
 
 ---
 
 # Integrieren von AEM Forms Workspace-Komponenten in Webanwendungen {#integrating-aem-forms-workspace-components-in-web-applications}
 
-Sie können die AEM Forms Workspace [Komponenten](/help/forms/using/description-reusable-components.md) in Ihrer eigenen Webanwendung verwenden. In der folgenden Beispielimplementierung werden Komponenten aus einem AEM Forms Workspace-Dev-Paket verwendet, das auf einer CRX™-Instanz installiert ist, um eine Webanwendung zu erstellen. Passen Sie die unten gezeigte Lösung an Ihre spezifischen Anforderungen an. Die Beispielimplementierung verwendet die Komponenten `UserInfo`, `FilterList` und `TaskList`innerhalb eines Webportals erneut.
+Sie können die AEM Forms Workspace [Komponenten](/help/forms/using/description-reusable-components.md) in Ihrer eigenen Webanwendung verwenden. In der folgenden Beispielimplementierung werden Komponenten aus einem AEM Forms Workspace-Dev-Paket verwendet, das auf einer CRX™-Instanz installiert ist, um eine Webanwendung zu erstellen. Passen Sie die unten gezeigte Lösung an Ihre spezifischen Anforderungen an. In der Beispielimplementierung werden die Komponenten `UserInfo`, `FilterList` und `TaskList` innerhalb eines Webportals wiederverwendet.
 
-1. Melden Sie sich bei der CRXDE Lite-Umgebung unter `https://'[server]:[port]'/lc/crx/de/` an. Stellen Sie sicher, dass AEM Forms Workpace Dev-Paket installiert ist.
+1. Melden Sie sich in der CRXDE Lite-Umgebung unter `https://'[server]:[port]'/lc/crx/de/` an. Stellen Sie sicher, dass AEM Forms Workpace Dev-Paket installiert ist.
 1. Erstellen Sie einen Pfad `/apps/sampleApplication/wscomponents`.
 1. Kopieren Sie CSS, Bilder, js/libs, js/runtime und js/registry.js
 
@@ -42,9 +42,9 @@ Sie können die AEM Forms Workspace [Komponenten](/help/forms/using/description-
        });
    ```
 
-1. Erstellen Sie einen Knoten unter /content mit dem Namen `sampleApplication` und geben Sie `nt:unstructured` ein. Fügen Sie in den Eigenschaften dieses Knotens `sling:resourceType` des Typs String und des Werts `sampleApplication` hinzu. Fügen Sie der Zugriffsteuerungsliste dieses Knotens den Eintrag `PERM_WORKSPACE_USER` hinzu, um jcr:read-Zugriff zuzulassen. Fügen Sie außerdem in der Zugriffssteuerungsliste von `/apps/sampleApplication` einen Eintrag für `PERM_WORKSPACE_USER` hinzu, um jcr:read-Berechtigungen zuzulassen.
-1. Aktualisieren Sie in `/apps/sampleApplication/wscomponents/js/registry.js` Pfade für Vorlagenwerte von `/lc/libs/ws/` auf `/lc/apps/sampleApplication/wscomponents/` .
-1. Fügen Sie in der JSP-Datei Ihrer Portalstartseite unter `/apps/sampleApplication/GET.jsp` den folgenden Code hinzu, um die erforderlichen Komponenten in das Portal einzuschließen.
+1. Erstellen Sie einen Knoten unter „/content“ mit dem Namen `sampleApplication` und dem Typ `nt:unstructured`. Fügen Sie in den Eigenschaften dieses Knotens `sling:resourceType` vom Typ String und dem Wert `sampleApplication` hinzu. Fügen Sie der Zugriffsteuerungsliste dieses Knotens den Eintrag `PERM_WORKSPACE_USER` hinzu, um jcr:read-Zugriff zuzulassen. Fügen Sie außerdem in der Zugriffssteuerungsliste von `/apps/sampleApplication` einen Eintrag für `PERM_WORKSPACE_USER` hinzu, der „jcr:read privileges“ erlaubt.
+1. Aktualisieren Sie in `/apps/sampleApplication/wscomponents/js/registry.js` die Pfade `/lc/libs/ws/` zu `/lc/apps/sampleApplication/wscomponents/` für die Vorlagenwerte.
+1. Fügen Sie in die JSP-Datei Ihrer Portal-Startseite unter `/apps/sampleApplication/GET.jsp` den folgenden Code ein, um die erforderlichen Komponenten innerhalb des Portals aufzunehmen.
 
    ```jsp
    <script data-main="/lc/apps/sampleApplication/wscomponents/js/demomain" src="/lc/apps/sampleApplication/wscomponents/js/libs/require/require.js"></script>
