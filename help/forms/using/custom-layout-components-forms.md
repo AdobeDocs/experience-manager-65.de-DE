@@ -1,8 +1,8 @@
 ---
 title: Erstellen benutzerdefinierter Layoutkomponenten für adaptive Formulare
-seo-title: Erstellen benutzerdefinierter Layoutkomponenten für adaptive Formulare
+seo-title: Creating custom layout components for adaptive forms
 description: Verfahren zum Erstellen benutzerdefinierter Layoutkomponenten für adaptive Formulare.
-seo-description: Verfahren zum Erstellen benutzerdefinierter Layoutkomponenten für adaptive Formulare.
+seo-description: Procedure to create custom layout components for adaptive forms.
 uuid: f0bb5fcd-3938-4804-ad0c-d96d3083fd01
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ discoiquuid: d4ae432d-557d-4e89-92b8-dca5f37cb6f8
 docset: aem65
 exl-id: 544b06f9-2456-4c05-88c2-b5349947742d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 63%
+workflow-type: ht
+source-wordcount: '270'
+ht-degree: 100%
 
 ---
 
@@ -27,10 +27,10 @@ Wissen bezüglich Layouts, das für das Erstellen/Verwenden benutzerdefinierter 
 
 Mit der Komponente für das Bedienfeldlayout für adaptive Formulare wird gesteuert, wie die Komponenten des adaptiven Formulars in einem Bedienfeld im Verhältnis zur Benutzeroberfläche angelegt werden.
 
-## Erstellen eines benutzerdefinierten Bedienfeldlayouts  {#creating-a-custom-panel-layout}
+## Erstellen eines benutzerdefinierten Bedienfeldlayouts {#creating-a-custom-panel-layout}
 
 1. Navigieren Sie zum Speicherort `/crx/de`.
-1. Kopieren Sie ein Bedienfeldlayout von der Position `/libs/fd/af/layouts/panel` (z. B. `tabbedPanelLayout`) nach `/apps` (z. B. `/apps/af-custom-layout`).
+1. Kopieren Sie ein Bedienfeld-Layout vom Speicherort `/libs/fd/af/layouts/panel` (zum Beispiel `tabbedPanelLayout`) nach `/apps` (zum Beispiel `/apps/af-custom-layout`).
 1. Benennen Sie das kopierte Layout in `customPanelLayout` um. Ändern Sie die Eigenschaften der Knoten `qtip` und `jcr:description`. Ändern Sie sie beispielsweise in `Custom layout - Toggle tabs`.
 
 qtip
@@ -39,9 +39,9 @@ qtip
 
 >[!NOTE]
 >
->Durch Festlegen der Eigenschaft `guideComponentType`auf den Wert `fd/af/layouts/panel` wird bestimmt, dass das Layout ein Bedienfeldlayout ist.
+>Wenn Sie die Eigenschaft `guideComponentType` auf den Wert `fd/af/layouts/panel` setzen, wird festgelegt, dass es sich bei dem Layout um ein Bedienfeld-Layout handelt.
 
-1. Benennen Sie die Datei `tabbedPanelLayout.jsp` unter dem neuen Layout in customPanelLayout.jsp um.
+1. Benennen Sie die Datei `tabbedPanelLayout.jsp` unter dem neuen Layout in „customPanelLayout.jsp“ um.
 1. Um neue Stile und Verhaltensweisen einzuführen, erstellen Sie eine Client-Bibliothek unter dem Knoten `etc`. Erstellen Sie z. B. im Verzeichnis /etc/af-custom-layout-clientlib den Knoten client-library. Weisen Sie dem Knoten die Kategorieneigenschaft af.panel.custom zu. Sie verfügt über folgende .css- und .js-Dateien:
 
    ```css
@@ -114,9 +114,9 @@ qtip
    });
    ```
 
-1. Um das Erscheinungsbild und das Verhalten zu verbessern, können Sie einen `client library` einfügen.
+1. Zur Verbesserung von Erscheinungsbild und Verhalten können Sie eine `client library` einfügen.
 
-   Aktualisieren Sie außerdem die Pfade der in .jsp-Dateien eingeschlossenen Skripts. Aktualisieren Sie beispielsweise die Datei `customPanelLayout.jsp` wie folgt:
+   Aktualisieren Sie außerdem die Pfade der in .jsp-Dateien eingeschlossenen Skripts. Aktualisieren Sie z. B. die Datei `customPanelLayout.jsp` wie folgt:
 
    ```html
    <%-- jsp encapsulating navigator container and panel container divs --%>
@@ -145,7 +145,7 @@ qtip
    </div>
    ```
 
-   Die Datei `/apps/af-custom-layout/customPanelLayout/defaultNavigatorLayout.jsp` :
+   Die Datei `/apps/af-custom-layout/customPanelLayout/defaultNavigatorLayout.jsp`:
 
    ```html
    <%-- jsp governing the navigation part --%>
@@ -203,7 +203,7 @@ qtip
 
 1. Öffnen Sie ein adaptives Formular im Bearbeitungsmodus. Das Bedienfeldlayout, das Sie definiert haben, wird der Liste zur Konfiguration der Bereichslayouts hinzugefügt.
 
-   ![Das benutzerdefinierte Bedienfeldlayout wird im Bedienfeldlayout ](assets/auth-layt.png) ![listScreenshot des adaptiven Formulars angezeigt. Dabei wird das benutzerdefinierte Bedienfeldlayout verwendet. Screenshot zeigt den Umschalter ](assets/s1.png) ![des benutzerdefinierten Layouts](assets/s2.png)
+   ![Benutzerdefiniertes Bedienfeld-Layout wird in der Liste der Bedienfeld-Layouts angezeigt](assets/auth-layt.png) ![Screenshot des adaptiven Formulars mit benutzerdefiniertem Bedienfeld-Layout](assets/s1.png) ![Screenshot zur Demonstration der Umschaltfunktion des benutzerdefinierten Layouts](assets/s2.png)
 
 Beispiel-ZIP-Datei für ein benutzerdefiniertes Bedienfeldlayout und ein adaptives Formular, das dieses verwendet.
 
