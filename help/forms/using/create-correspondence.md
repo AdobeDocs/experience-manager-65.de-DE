@@ -1,65 +1,65 @@
 ---
 title: Korrespondenz erstellen
-seo-title: Korrespondenz erstellen
+seo-title: Create Correspondence
 description: Nachdem Sie eine Briefvorlage erstellt haben, können Sie diese verwenden, um Korrespondenz in AEM Forms zu erstellen, indem Sie Daten, Inhalte und Anhänge verwalten.
-seo-description: Nachdem Sie eine Briefvorlage erstellt haben, können Sie diese verwenden, um Korrespondenz in AEM Forms zu erstellen, indem Sie Daten, Inhalte und Anhänge verwalten.
+seo-description: After you have created a letter template, you can use it to create correspondence in AEM Forms by managing data, content, and attachments.
 uuid: 48cf2b26-c9b4-4127-9ea0-1b36addbff60
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
-feature: Korrespondenzverwaltung
+feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '3722'
-ht-degree: 67%
+workflow-type: ht
+source-wordcount: '3695'
+ht-degree: 100%
 
 ---
 
 # Korrespondenz erstellen{#create-correspondence}
 
-## Verwenden Sie zum Erstellen von Korrespondenz die Benutzeroberfläche „Korrespondenz erstellen“.{#create-correspondence-in-the-create-correspondence-user-interface}
+## Verwenden Sie zum Erstellen von Korrespondenz die Benutzeroberfläche „Korrespondenz erstellen“. {#create-correspondence-in-the-create-correspondence-user-interface}
 
-Nachdem eine [Briefvorlage in Correspondence Management](../../forms/using/create-letter.md) erstellt wurde, kann der Endbenutzer/Agent/Schadensregulierer den Brief in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;öffnen und durch Eingabe von Daten, Einrichten von Inhalten und Verwalten von Anlagen eine Korrespondenz erstellen. Schließlich kann der Schadensregulierer oder Agent den Inhalt im Vorschaumodus verwalten und den Brief senden.
+Nachdem [in Correspondence Management eine Briefvorlage erstellt wurde](../../forms/using/create-letter.md), kann der Endbenutzer/Agent/Schadensregulierer den Brief in der Benutzeroberfläche „Korrespondenz erstellen“ öffnen und durch Eingabe von Daten, Einrichten von Inhalten und Verwalten von Anlagen eine Korrespondenz erstellen. Schließlich kann der Schadensregulierer oder Agent den Inhalt im Vorschaumodus verwalten und den Brief senden.
 
 ### Vorschau von Korrespondenz {#preview-a-correspondence}
 
 Wählen Sie den Brief für die Vorschau wie folgt aus:
 
-1. Tippen Sie auf der Seite &quot;Briefe&quot;auf **Auswählen**.
+1. Tippen Sie auf der Seite „Briefe“ auf **Auswählen**.
 1. Wählen Sie den entsprechenden Brief aus, indem Sie darauf tippen.
 
    ![Brief auswählen](assets/1_selectletter.png)
 
    Brief auswählen
 
-1. Wählen Sie für einen auf einem Datenwörterbuch basierenden Brief **Vorschau** > **Vorschau** aus. Oder wählen Sie für einen auf ein Nicht-Daten-Wörterbuch basierenden Brief **Vorschau**. Sie können auch die Maus über einen Brief bewegen (ohne ihn auszuwählen) und auf das Symbol „Briefvorschau“ tippen, um davon eine Vorschau anzuzeigen.
+1. Wählen Sie für einen auf einem Datenwörterbuch basierenden Brief **Vorschau** > **Vorschau**. Oder wählen Sie für einen auf ein Nicht-Daten-Wörterbuch basierenden Brief **Vorschau**. Sie können auch die Maus über einen Brief bewegen (ohne ihn auszuwählen) und auf das Symbol „Briefvorschau“ tippen, um davon eine Vorschau anzuzeigen.
 
    >[!NOTE]
    >
-   >Wenn kein Datenwörterbuch mit den Brief verknüpft ist, wird die Briefvorschau geöffnet. Wenn der Brief andernfalls auf einem Datenwörterbuch basiert, zeigt Correspondence Management im Menü &quot;Vorschau&quot;die Optionen &quot;Vorschau&quot;und &quot;Benutzerdefiniert&quot;an und Sie können eine der beiden Optionen auswählen. Sie können auch Testdaten mit einem Datenwörterbuch verknüpfen. Wenn das [Datenwörterbuch Testdaten](../../forms/using/data-dictionary.md#p-working-with-test-data-p) zugeordnet hat, wird bei Auswahl der Vorschauoption die normale Vorschau mit den ausgefüllten Testdaten geöffnet.
+   >Wenn kein Datenwörterbuch mit den Brief verknüpft ist, wird die Briefvorschau geöffnet. Wenn der Brief jedoch auf einem Datenwörterbuch basiert, zeigt Correspondence Management im Menü „Vorschau“ die Optionen „Vorschau“ und „Benutzerdefiniert“ an, zwischen denen Sie wählen können. Sie können auch Testdaten mit einem Datenwörterbuch verknüpfen. Wenn [Testdaten mit dem Datenwörterbuch verbunden sind](../../forms/using/data-dictionary.md#p-working-with-test-data-p), wird bei Auswahl der Option „Vorschau“ die normale Vorschau, ausgefüllt mit den Testdaten, angezeigt.
 
-1. Um eine Korrespondenz während der Vorschau rendern zu können, sollten Sie entweder Administrator oder Teil einer der folgenden Gruppen sein:
+1. Damit Sie eine Korrespondenz während der Vorschau rendern können, sollten Sie entweder ein Administrator oder Teil einer der folgenden Gruppen sein:
 
    * forms-users (zur Vorschau auf der Autoreninstanz)
    * cm-agent-users (für Rendering auf Veröffentlichungsinstanz)
 
-   Wenn Sie nicht über die erforderlichen Berechtigungen verfügen, bitten Sie den Administrator um den entsprechenden Zugriff. Weitere Informationen zum Erstellen und Hinzufügen von Benutzern zu Gruppen finden Sie unter [Hinzufügen von Benutzern oder Gruppen zu einer Gruppe](/help/sites-administering/security.md). Wenn Sie versuchen, eine Korrespondenz zu rendern, ohne über die entsprechenden Berechtigungen zu verfügen, wird die Fehlerseite 404 angezeigt.
+   Wenn Sie nicht über die erforderlichen Berechtigungen verfügen, bitten Sie den Administrator um den entsprechenden Zugriff. Weitere Informationen zum Erstellen und Hinzufügen von Benutzern zu Gruppen finden Sie unter [Hinzufügen von Benutzern oder Gruppen zu einer Gruppe](/help/sites-administering/security.md). Wenn Sie versuchen, ohne die entsprechende Berechtigung eine Korrespondenz zu rendern, wird die Fehlerseite 404 angezeigt.
 
-1. Wenn Sie **Vorschau**> **Benutzerdefiniert** wählen, wird ein Dialogfeld geöffnet. Wählen Sie im Dialogfeld eine dem Datenwörterbuch entsprechende Datendatei aus, mit der der Brief in der Vorschau angezeigt werden soll, und wählen Sie dann **Vorschau** aus. Eine Datendatei wird basierend auf einem Datenwörterbuch für einen bestimmten Brief erstellt: Weitere Informationen zur Datendatei finden Sie unter [Datenwörterbuch](../../forms/using/data-dictionary.md#p-working-with-test-data-p).
+1. Wenn Sie **Vorschau** > **Benutzerdefiniert** wählen, wird ein Dialogfeld geöffnet. Wählen Sie in diesem Dialogfeld eine dem Datenwörterbuch entsprechende Dateidatei für die Vorschau des Briefs und dann **Vorschau**. Eine Datendatei wird basierend auf einem Datenwörterbuch für einen bestimmten Brief erstellt: Weitere Informationen zur Datendatei finden Sie unter [Datenwörterbuch](../../forms/using/data-dictionary.md#p-working-with-test-data-p).
 
    ![Brief in der Vorschau anzeigen](assets/8_previewcustomdatafile.png)
 
 1. Die HTML-Vorschau des Briefs (Vorschau für Formulare auf Mobilgeräten) wird geöffnet, wobei die Registerkarte „Daten“ standardmäßig aktiv ist.
 
-   Weitere Informationen zu Mobile Forms und den unterstützten Funktionen finden Sie unter [Funktionsunterschiede zwischen Mobile Forms und PDF forms](https://helpx.adobe.com/de/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html).
+   Weitere Informationen zu Formularen auf Mobilgeräten und den hierfür unterstützen Funktionen finden Sie unter[ Funktionsunterschiede zwischen Mobile Forms und PDF-Formularen](https://helpx.adobe.com/de/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html).
 
    Es gibt drei Registerkarten: Daten, Inhalt und Anlagen. Wenn keine Datenelemente (Platzhaltervariablen und Layout-Felder) vorhanden sind, wird der Brief direkt in der Inhaltsansicht geöffnet. Die Registerkarte „Anlagen“ ist nur verfügbar, wenn Anlagen vorhanden sind oder der Bibliothekszugriff aktiviert ist.
 
    >[!NOTE]
    >
-   >Weitere Informationen zum Wechseln zwischen HTML- oder PDF-Ausgabedarstellungsmodus der Briefvorschau finden Sie unter [Ändern des Ausgabedarstellungsmodus des Briefs](#changerenditionmode). Weitere Informationen zur PDF-Unterstützung in Correspondence Management und AEM finden Sie unter [Abbruch der NPAPI-Browser-Plug-ins und deren Auswirkungen](https://helpx.adobe.com/de/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) und [PDF forms in HTML5 Forms](https://helpx.adobe.com/de/aem-forms/kb/pdf-forms-to-html5-forms.html).
+   >Weitere Informationen zum Umschalten der Briefvorschau zwischen HTML- und PDF-Darstellungsmodus finden Sie unter [Ändern des Darstellungsmodus des Briefs](#changerenditionmode). Weitere Informationen zur PDF-Unterstützung in Correspondence Management und AEM finden Sie unter [Auslauf der Unterstützung für das NPAPI-Browser-Plug-in und seine Auswirkungen](https://helpx.adobe.com/de/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) und [PDF-Formulare in HTML5-Formulare](https://helpx.adobe.com/de/aem-forms/kb/pdf-forms-to-html5-forms.html).
 
 ### Daten eingeben {#enterdata}
 
@@ -69,13 +69,13 @@ Füllen Sie auf der Registerkarte „Daten“ die verfügbaren Layout-Felder und
 
    Tippen Sie auf einen Datenfeldwert in der HTML-Briefvorschau, um das entsprechende Datenfeld in der Registerkarte „Daten“ zu markieren.
 
-   ![Geben Sie Daten in den Buchstaben ](assets/2_enterdata.png) ![2_1_enterdata ein.](assets/2_1_enterdata.png)
+   ![Eingabe von Daten in den Brief](assets/2_enterdata.png) ![2_1_enterdata](assets/2_1_enterdata.png)
 
 ### Inhalt verwalten {#managecontent}
 
 In der Registerkarte verwalten Sie den Inhalt, z. B. Dokumentfragmente und die Inhaltsvariablen im Brief.
 
-1. Wählen Sie **Inhalt**. Correspondence Management zeigt die Registerkarte &quot;Inhalt&quot;des Briefs an.
+1. Wählen Sie **Inhalt**. Correspondence Management zeigt die Registerkarte „Inhalt“ des Briefes an.
 
    ![Registerkarte „Inhalt“ - Modul im Inhalt markieren](assets/3_content.png)
 
@@ -85,19 +85,19 @@ In der Registerkarte verwalten Sie den Inhalt, z. B. Dokumentfragmente und die 
 
    ![4_highlightmoduleincontent](assets/4_highlightmoduleincontent.png)
 
-   Auf der Registerkarte &quot;Inhalt&quot;oder &quot;Daten&quot;können Sie durch Tippen auf &quot;Markieren Sie ausgewählte Module im Inhalt&quot;( ![marklightsselectedModulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) oben links in der HTML-Briefvorschau eine Funktion aktivieren oder deaktivieren, die bewirkt, dass beim Auswählen des relevanten Textes, Absatzes oder Datenfelds in der Briefvorschau das Inhalts-/Datenmodul aufgerufen wird.
+   Auf der Registerkarte „Inhalt“ oder „Daten“ können Sie durch Tippen auf „Ausgewählte Module hervorheben“ (![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) oben links in der HTML-Briefvorschau die Funktionalität deaktivieren oder aktivieren, zum Inhalts-/Datenmodul zu wechseln, wenn der entsprechende Text, Absatz oder das Datenfeld in der Briefvorschau ausgewählt wird.
 
-   Weitere Informationen zu den Aktionen, die für verschiedene Module in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;verfügbar sind, finden Sie unter [Aktionen und Informationen, die in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;verfügbar sind](#actions-and-info-available-in-the-create-correspondence-content-tab).
+   Weitere Informationen zu Aktionen, die für verschiedene Module in der Benutzeroberfläche „Korrespondenz erstellen“ verfügbar sind, finden Sie unter [In der Benutzeroberfläche „Korrespondenz erstellen“ verfügbare Vorgehensweisen und Informationen](#actions-and-info-available-in-the-create-correspondence-content-tab).
 
 1. Verwenden Sie zum Suchen nach Inhaltsmodulen das Suchfeld. Geben den Namen oder Titel des Inhaltsmoduls ganz oder teilweise ein, um in der Korrespondenz nach diesem zu suchen.
-1. Tippen Sie auf das Symbol Anzeigen ( ![display](assets/display.png)) vor einer Liste, einem Text, einer Bedingung oder einem Zielbereich, um sie im Brief ein- oder auszublenden.
-1. Um ein Inline- oder bearbeitbares Textmodul zu bearbeiten, tippen Sie auf das relevante Symbol **Bearbeiten** ( ![edittextmodule](assets/edittextmodule.png)) oder doppelklicken Sie auf das relevante Textmodul in der Briefvorschau.
+1. Tippen Sie auf das Symbol „Anzeigen“ (![display](assets/display.png)) vor einer Liste, einem Text, einer Bedingung oder einem Zielbereich, um diese(n) in einem Brief zu zeigen oder auszublenden.
+1. Um ein Inline- oder editierbares Textmodul zu bearbeiten, tippen Sie auf das entsprechende Symbol zum **Bearbeiten** (![edittextmodule](assets/edittextmodule.png)) oder doppelklicken Sie auf das entsprechende Textmodul in der Briefvorschau.
 
    Das System zeigt einen Texteditor zum Bearbeiten und Formatieren des Textes an.
 
    Die normale Rechtschreibprüfung Ihres Browsers überprüft die Rechtschreibung im Texteditor. Um die Rechtschreib- und Grammatikprüfung zu verwalten, können Sie die Einstellungen für die Rechtschreibprüfung in Ihrem Browser bearbeiten oder Browser-Plugins/-Addons für die Prüfung von Rechtschreibung und Grammatik installieren.
 
-   Sie können auch die verschiedenen Tastaturbefehle im Texteditor verwenden, um Text zu verwalten, zu bearbeiten und zu formatieren. Weitere Informationen zu [Texteditor](/help/forms/using/keyboard-shortcuts.md#correspondence-management) Tastaturbefehlen in Correspondence Management-Tastaturbefehlen.
+   Sie können die verschiedenen Tastaturbefehle im Texteditor verwenden, um Text zu verwalten, zu bearbeiten und zu formatieren. Weitere Informationen zu den Tastaturbefehlen für den [Texteditor](/help/forms/using/keyboard-shortcuts.md#correspondence-management) finden Sie unter „Correspondence Management-Tastaturbefehle“.
 
    ![5_edittextmodule](assets/5_edittextmodule.png)
 
@@ -113,7 +113,7 @@ In der Registerkarte verwalten Sie den Inhalt, z. B. Dokumentfragmente und die 
 
    >[!NOTE]
    >
-   >Die Formatierung des eingefügten Textes hat jedoch einige[ Einschränkungen](https://helpx.adobe.com/aem-forms/kb/cm-copy-paste-text-limitations.html).
+   >Die Formatierung des eingefügten Textes hat jedoch einige[ Einschränkungen](https://helpx.adobe.com/de/aem-forms/kb/cm-copy-paste-text-limitations.html).
 
    Sie können den Text und die Zahlen im Brief mithilfe der Tabulatortaste einziehen. Beispielsweise können Sie die Tabulatortaste verwenden, um mehrere Textspalten in einer Liste in einem tabellarischen Format auszurichten.
 
@@ -123,34 +123,34 @@ In der Registerkarte verwalten Sie den Inhalt, z. B. Dokumentfragmente und die 
 
    >[!NOTE]
    >
-   >Weitere Informationen zum Einrichten von Tabulatorabständen für Textmodule und Buchstaben finden Sie unter [Weitere Informationen zur Verwendung von Tabulatorabständen zum Anordnen von Text](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html).
+   >Weitere Informationen zum Einrichten von Tabulatorabständen für Ihre Textmodule und Briefe finden Sie unter [Weitere Informationen zur Verwendung von Tabulatorabständen zum Anordnen von Text](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html).
 
 1. Falls erforderlich, fügen Sie Sonderzeichen in die Korrespondenz ein. Beispielsweise können Sie über die Sonderzeichenpalette die folgenden Zeichen einfügen:
 
-   * Währungssymbole wie €,¥ und £
-   * Mathematische Symbole wie, Ö, % und ^
-   * Satzzeichen wie ‟ und&quot;
+   * Währungssymbole wie €,￥ und £
+   * Mathematische Symbole wie ∑, √, ∂ und ^
+   * Satzzeichen wie „ und “
 
-   ![Sonderzeichen](assets/specialcharacters.png)
+   ![specialcharacters](assets/specialcharacters.png)
 
-   Correspondence Management enthält integrierte Unterstützung für 210 Sonderzeichen. Der Administrator kann [Unterstützung für mehr/benutzerdefinierte Sonderzeichen durch Anpassung](../../forms/using/custom-special-characters.md) hinzufügen.
+   Correspondence Management enthält integrierte Unterstützung für 210 Sonderzeichen. Der Administrator kann [Unterstützung für mehr/benutzerdefinierte Sonderzeichen durch Anpassung hinzufügen](../../forms/using/custom-special-characters.md).
 
 1. Um Teile eines Textes in einem bearbeitbaren Inline-Modul hervorzuheben, wählen Sie den Text aus und tippen Sie auf „Hervorhebungsfarbe“.
 
    ![letterbackgroundcolor](assets/letterbackgroundcolor.png)
 
-   Sie können entweder direkt auf eine Grundfarbe `**[A]**` tippen, die in der Palette &quot;Grundfarben&quot;vorhanden ist, oder auf **Auswählen** tippen, nachdem Sie den Schieberegler `**[B]**` verwendet haben, um die gewünschte Farbschattierung auszuwählen.
+   Sie können entweder direkt auf eine Grundfarbe `**[A]**` in der Grundfarbenpalette tippen oder auf **Auswählen**, nachdem Sie mithilfe des Schiebereglers `**[B]**` den gewünschten Farbton ausgewählt haben.
 
-   Optional können Sie auch auf der Registerkarte &quot;Erweitert&quot;die gewünschte Farbe für Farbton, Helligkeit und Sättigung `**[C]**` auswählen, um die genaue Farbe zu erstellen. Tippen Sie dann auf Auswählen `**[D]**` , um die Farbe anzuwenden und den Text hervorzuheben.
+   Optional können Sie auch auf der Registerkarte „Erweitert“ die gewünschten Werte für Farbton, Helligkeit und Sättigung `**[C]**` wählen, um die Farbe präzise festzulegen, und dann auf „Auswählen“ `**[D]**` tippen, um diese Farbe zum Hervorheben des Textes anzuwenden.
 
    ![textbackgroundcolor](assets/textbackgroundcolor.png)
 
-1. Nehmen Sie die entsprechenden Änderungen an Inhalt und Format vor und tippen Sie auf **Speichern**. Tippen Sie auf ( ![editnextmoduleccr](assets/editnextmoduleccr.png)), um zwischen bearbeitbaren Textmodulen zu wechseln, oder tippen Sie auf **Speichern und Weiter**, um die Änderungen zu speichern und zum nächsten bearbeitbaren Textmodul zu wechseln.
-1. Das System zeigt auch die nicht ausgefüllten Variablen für jeden der Zweige an. Wenn es keine nicht ausgefüllten Variablen gibt, werden nicht ausgefüllte Variablen als „0“ angegeben. Wenn eine nicht ausgefüllte Variable vorhanden ist, können Sie auf einen Zweig tippen, um ihn zu erweitern und die nicht ausgefüllte Variable zu finden. Verwenden Sie die Inhaltssymbolleiste, um Inhalte zu löschen, den Einzug des Inhalts zu erhöhen/zu verringern und Seitenumbrüche vor/nach dem Inhalt einzufügen.
+1. Nehmen Sie die benötigten Änderungen an Inhalt und Format vor und tippen Sie auf **Speichern**. Durch Tippen auf ![editnextmoduleccr](assets/editnextmoduleccr.png) wechseln Sie zwischen den bearbeitbaren Textmodulen, durch Tippen auf **Speichern und weiter** speichern Sie die Änderungen und wechseln zum nächsten bearbeitbaren Textmodul.
+1. Das System zeigt auch die nicht ausgefüllten Variablen für jeden der Zweige an. Wenn es keine nicht ausgefüllten Variablen gibt, werden nicht ausgefüllte Variablen als „0“ angegeben. Wenn eine nicht ausgefüllte Variable vorhanden ist, können Sie auf einen Zweig tippen, um ihn zu erweitern und die nicht ausgefüllte Variable zu finden. Verwenden Sie die Symbolleiste „Inhalt“, um Inhalte zu löschen, den Einzug eines Inhalts zu vergrößern oder zu verringern und Seitenumbrüche vor oder nach einem Inhalt einzufügen.
 
    Sie können Seitenumbrüche sowohl vor als auch nach den Datenmodulen einfügen, selbst wenn sie Teil von Listen und Bedingungen sind.
 
-1. Tippen Sie auf Inhaltsvariable öffnen/schließen ( ![opencontentvariables](assets/opencontentvariables.png)) , um die Inhaltsvariablen zu öffnen und sie entsprechend zu füllen.
+1. Tippen Sie auf „Inhaltsvariable öffnen/schließen“ (![opencontentvariables](assets/opencontentvariables.png)), um die Inhaltsvariablen zu öffnen und sie entsprechend zu füllen.
 1. Nachdem Sie die nicht ausgefüllte Variable korrekt ausgefüllt haben, wird die Anzahl der nicht ausgefüllten Variablen auf „0“ eingestellt.
 
    In der Benutzeroberfläche „Korrespondenz erstellen“ wird die Anzahl nicht ausgefüllter Variablen auf jeder Ebene der Hierarchie der Module angezeigt, die mindestens eine Variable enthalten. Wenn ein Modul nicht ausgefüllte Variablen enthält, wird deren Anzahl auf Variablen-, Modul-, Zielbereichs- und Briefvorlagenebene angezeigt.
@@ -164,24 +164,24 @@ In der Registerkarte verwalten Sie den Inhalt, z. B. Dokumentfragmente und die 
 
    Die Anzahl der nicht ausgefüllten Variablen umfasst keine deaktivierten Module. Wenn ein Modul in einer Briefvorlage aber nicht im Brief enthalten ist, wird die Anzahl der nicht ausgefüllten Variablen in diesem Modul nicht angezeigt.
 
-   Für Zielbereich, Modul und Variable wird die Anzahl auf der rechten Seite jedes Objekts in der Briefvorlage angezeigt. Für die gesamte Vorlage wird die Anzahl jedoch in der Statusleiste &quot;Korrespondenz erstellen&quot;angezeigt.
+   Für Zielbereich, Modul und Variable wird die Anzahl auf der rechten Seite jedes Objekts in der Briefvorlage angezeigt. Für die gesamte Vorlage wird die Anzahl jedoch in der Statusleiste von „Korrespondenz erstellen“ angezeigt.
 
    Die Module in einer Briefvorlage zeigen die Anzahl nicht ausgefüllter Variable an wie folgt:
 
-   * **** TextZeigt die Summe der eindeutigen nicht ausgefüllten Platzhaltervariablen und Datenwörterbuchelemente an, die im Textmodul enthalten sind.
-   * **** BedingungZeigt die Summe der eindeutigen nicht ausgefüllten Bedingungsvariablen an, die in der Bedingung enthalten sind, sowie die Variablen, die in den resultierenden Modulen enthalten sind.
-   * **** ListZeigt die Summe aller eindeutigen nicht ausgefüllten Variablen an, die in den der Liste zugewiesenen Modulen enthalten sind.
-   * **Zielbereich** Zeigt die Summe aller eindeutigen nicht ausgefüllten Variablen an, die in den Modulen enthalten sind, die dem Zielbereich zugewiesen sind.
+   * **Text**: Zeigt die Anzahl der eindeutigen nicht ausgefüllten Platzhaltervariablen und Datenwörterbuchelemente an, die im Textmodul enthalten sind.
+   * **Bedingung**: Zeigt die Anzahl der eindeutigen nicht ausgefüllten Bedingungsvariablen an, die in der Bedingung enthalten sind, und der Variablen, die in den resultierenden Modulen enthalten sind.
+   * **Liste**: Zeigt die Anzahl aller eindeutigen nicht ausgefüllten Variablen an, die in den Modulen enthalten sind, die der Liste zugewiesen wurden.
+   * **Zielbereich**: Gibt die Anzahl aller eindeutigen nicht ausgefüllten Variablen an, die in den Modulen enthalten sind, die dem Zielbereich zugewiesen wurden.
 
    Beachten Sie Folgendes zu Variablen mit Standardwerten:
 
-   * Ein boolesches Variablenfeld ergibt standardmäßig *false*. Die Variable wird jedoch als nicht ausgefüllt erfasst. Dies bedeutet, dass die Variablenanzahl alle booleschen Variablenfelder mit dem Wert *false* enthält.
+   * Ein boolesches Variablenfeld ergibt standardmäßig *false*. Die Variable wird jedoch als nicht ausgefüllt erfasst. Dies bedeutet, dass die Variablenanzahl alle booleschen Variablenfelder mit dem Wert *false* umfasst.
 
    * Ein numerisches Variablenfeld ergibt standardmäßig *0 (Null)*. Die Variable wird jedoch als nicht ausgefüllt erfasst. Dies bedeutet, dass die Variablenanzahl alle numerischen Variablenfelder mit dem Wert *0 (Null)* umfasst.
 
 
 
-#### Aktionen und Informationen auf der Registerkarte „Inhalt“ in „Korrespondenz erstellen“{#actions-and-info-available-in-the-create-correspondence-content-tab}
+#### Aktionen und Informationen auf der Registerkarte „Inhalt“ in „Korrespondenz erstellen“ {#actions-and-info-available-in-the-create-correspondence-content-tab}
 
 **Zielbereich**
 
@@ -195,7 +195,7 @@ In der Registerkarte verwalten Sie den Inhalt, z. B. Dokumentfragmente und die 
 * Auswahl (Augenauswahl): Schließt Modul aus dem Brief ein oder aus.
 * Aufzählungszeichen überspringen (gilt für Listenmodule und ihre untergeordneten Module): Überspringt Aufzählungszeichen in einem bestimmten Modul.
 * Seitenumbruch bevor (anwendbar für untergeordnete Module des Zielbereichs): Fügt Seitenumbruch vor dem Modul ein.
-* Seitenumbruch nach (gilt für untergeordnete Module des Zielbereichs): Fügt Seitenumbruch vor dem -Modul ein.
+* Seitenumbruch nach (anwendbar für untergeordnete Module des Zielbereichs): Fügt nach dem Modul einen Seitenumbruch ein.
 * Nicht ausgefüllte Werte (Info): Gibt die Anzahl der nicht ausgefüllten Variablen im Zielbereich an.
 * Bearbeiten (nur Textmodule): Öffnen Sie den Rich-Text-Editor zum Bearbeiten des Textmoduls.
 * Datenformat (Text- und Bedingungsmodule): Öffnen Sie alle Variablen des Moduls.
@@ -209,9 +209,9 @@ In der Registerkarte verwalten Sie den Inhalt, z. B. Dokumentfragmente und die 
 
 ### Anlagen verwalten {#manage-attachments}
 
-1. Wählen Sie **Anlagen**. Correspondence Management zeigt die verfügbaren Anlagen an, wie sie beim Erstellen der Briefvorlage eingerichtet wurden.
+1. Wählen Sie **Anlagen**. Correspondence Management zeigt die verfügbaren Anhänge an, wie sie beim Erstellen der Briefvorlage eingerichtet wurden.
 1. Sie können festlegen, dass keine Anhänge mit dem Brief versendet werden sollen, indem Sie auf das Symbol für Anzeige tippen, und Sie können auf das Kreuz im Anhang tippen, um ihn aus dem Brief zu entfernen. Für Anhänge, die beim Erstellen der Briefvorlage als Obligatorisch definiert wurden, sind die Symbole „Anzeigen“ und „Löschen“ deaktiviert.
-1. Tippen Sie auf das Symbol Bibliothekszugriff ( ![Bibliothekszugriff](assets/libraryaccess.png)), um auf die Inhaltsbibliothek zuzugreifen und DAM-Assets als Anhänge einzufügen.
+1. Tippen Sie auf das Symbol „Bibliothekszugriff“ (![libraryaccess](assets/libraryaccess.png)), um auf die Inhaltsbibliothek zuzugreifen und DAM-Assets als Anhänge einzufügen.
 
    >[!NOTE]
    >
@@ -221,11 +221,11 @@ In der Registerkarte verwalten Sie den Inhalt, z. B. Dokumentfragmente und die 
 
    Weitere Informationen finden Sie unter[ Anlagenübermittlung](#attachmentdelivery).
 
-### Inhalte in der Vorschau verwalten und Brief übermitteln  {#manage-content-in-preview-and-submit-the-letter}
+### Inhalte in der Vorschau verwalten und Brief übermitteln {#manage-content-in-preview-and-submit-the-letter}
 
 Sie können Ihren Zwecken entsprechende Änderungen an Layout und Inhalt des Briefs vornehmen und diesen an verschiedene nachfolgende Prozesse übermitteln.
 
-1. Um den gesamten bearbeitbaren Inhalt im Brief hervorzuheben, tippen Sie auf **Bearbeitbare Abschnitte markieren**.
+1. Um den gesamten bearbeitbaren Inhalt des Brief zu markieren, tippen Sie auf **Bearbeitbare Bereiche markieren**.
 
    Die bearbeitbaren Inhalte des Briefs werden mit grauem Hintergrund markiert.
 
@@ -235,11 +235,11 @@ Sie können Ihren Zwecken entsprechende Änderungen an Layout und Inhalt des Bri
 
    Beispielsweise wurde in der unten gezeigten Abbildung auf die Zeile „Um uns Zugriff zu gewähren...“ ausgewählt und das dazugehörige Inhaltsmodul auf der Registerkarte „Inhalt“ ausgewählt.
 
-   Durch Tippen auf &quot;Markieren Sie ausgewählte Module im Inhalt&quot;( ![marklightsselectedModulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) können Sie Funktionen deaktivieren oder aktivieren, um das Inhaltsmodul auf der Registerkarte &quot;Inhalt&quot;zu markieren, wenn in der Briefvorschau auf den relevanten Text, Absatz oder Datenfeld getippt wird.
+   Durch Tippen auf „Ausgewählte Module im Inhalt hervorheben“ (![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) können Sie eine Funktion aktivieren oder deaktivieren, die bewirkt, dass beim Tippen auf den relevanten Text oder Absatz bzw. das Datenfeld in der Briefvorschau das dazugehörige Inhaltsmodul auf der Registerkarte „Inhalt“ markiert wird.
 
-   Weitere Informationen zu den Aktionen, die für verschiedene Module in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;verfügbar sind, finden Sie unter [Aktionen und Informationen, die in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;verfügbar sind](#actions-and-info-available-in-the-create-correspondence-content-tab).
+   Weitere Informationen zu Aktionen, die für verschiedene Module in der Benutzeroberfläche „Korrespondenz erstellen“ verfügbar sind, finden Sie unter [In der Benutzeroberfläche „Korrespondenz erstellen“ verfügbare Vorgehensweisen und Informationen](#actions-and-info-available-in-the-create-correspondence-content-tab).
 
-1. Um dem Brief einen Seitenumbruch hinzuzufügen, tippen Sie auf die Stelle, an der Sie einen Seitenumbruch einfügen möchten, und wählen Sie &quot;Seitenumbruch vor&quot;oder &quot;Seitenumbruch nach&quot;( ![Seitenumbruch im Vorfeld](assets/pagebreakbeforeafter.png)).
+1. Um dem Brief einen Seitenumbruch hinzuzufügen, tippen Sie auf die Stelle, an der Sie den Seitenumbruch einfügen möchten, und wählen Sie „Seitenumbruch vor“ oder „Seitenumbruch nach“ (![pagebreakbeforeafter](assets/pagebreakbeforeafter.png)).
 
    Ein Platzhalter für einen expliziten Seitenumbruch wird in den Brief eingefügt. Sie können die Wirkung eines expliziten Seitenumbruchs anzeigen, indem Sie die reduzierte PDF-Vorschau aufrufen.
 
@@ -255,7 +255,7 @@ Sie können Ihren Zwecken entsprechende Änderungen an Layout und Inhalt des Bri
 
    Das Dialogfeld „Entwurfsbriefname“ wird mit der Briefinstanz-ID angezeigt. Sie können optional diese ID bearbeiten. Notieren Sie sich die Brief-ID und tippen Sie anschließend auf **Fertig**. Sie können diese ID später verwenden, um den [Briefentwurf neu zu laden](submit-letter-topostprocess.md#reloaddraft).
 
-1. Um den Brief als reduzierte PDF-Datei mit exaktem Layout und Seitenumbrüchen anzuzeigen, wie er gesendet werden soll, tippen Sie auf ( ![preview](assets/preview.png)) Vorschau.
+1. Um den Brief als reduzierte PDF-Datei mit Layout und Seitenumbrüchen exakt so anzuzeigen, wie er gesendet werden wird, tippen Sie auf „Vorschau“ (![preview](assets/preview.png)).
 
    Der Brief wird als reduzierte PDF-Datei angezeigt. Das reduzierte PDF ist die genaue Darstellung des Briefs mit den richtigen Schriftarten, Umbrüchen und dem Layout in der Form, in der er gesendet wird.  
 
@@ -263,7 +263,7 @@ Sie können Ihren Zwecken entsprechende Änderungen an Layout und Inhalt des Bri
    >
    >Wenn Sie Mozilla Firefox und den HTML-Darstellungstyp verwenden, achten Sie für die Vorschau des Briefs als reduzierte PDF-Datei darauf, nicht das Acrobat-Plugin, sondern das native Browser-Plugin zu verwenden. Um das native Browser-Plugin auszuwählen, wählen Sie in den Einstellungen von Mozilla Firefox die Option „Vorschau in Firefox“ für den PDF-Inhaltstyp.
 
-1. Wenn die reduzierte PDF-Vorschau Ihren Vorstellungen entspricht, tippen Sie auf **Senden**, um den Brief zu senden. Um Änderungen am Brief vorzunehmen, tippen Sie auf **Vorschau beenden**, um zur Vorschau des Briefs in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;zurückzukehren und dort Änderungen vorzunehmen. Wenn Sie auf &quot;Senden&quot;tippen und die Konfiguration &quot;Briefinstanz verwalten&quot;in der Veröffentlichungsinstanz aktiviert ist, wird die Briefinstanz &quot;Senden&quot;generiert.
+1. Wenn die reduzierte PDF-Vorschau Ihren Vorstellungen entspricht, tippen Sie auf **Senden**, um den Brief zu senden. Wenn Sie Änderungen am Brief vornehmen möchten, tippen Sie stattdessen auf **Vorschau beenden**, um zur Vorschau des Briefs in der Benutzeroberfläche „Korrespondenz erstellen“ zurückzukehren und dort die Änderungen vorzunehmen. Wenn Sie auf „Senden“ tippen, wird die Instanz „Brief senden“ erstellt, falls die Konfiguration „Briefinstanz verwalten“ in der Instanz „Veröffentlichen“ aktiviert ist.
 
    Weitere Informationen finden Sie unter Speichern von Entwürfen und Einreichen von Entwurfsinstanzen.
 
@@ -271,22 +271,22 @@ Sie können Ihren Zwecken entsprechende Änderungen an Layout und Inhalt des Bri
 
    Nachdem Sie die erforderlichen Änderungen vorgenommen haben, können Sie den Brief von der HTML5-Vorschau aus senden oder erneut auf „Vorschau“ klicken, um die reduzierte PDF-Ausgabe zu prüfen.
 
-   Informationen zu Unterschieden zwischen HTML5-Formularen und PDF forms finden Sie unter [Funktionsunterschiede zwischen HTML5-Formularen und PDF forms](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md).
+   Weitere Informationen zu den Unterschieden zwischen HTML5-Formularen und PDF-Formularen finden Sie unter [Funktionsunterschiede zwischen HTML5-Formularen und PDF-Formularen](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
 ## Speichern von Entwürfen und Senden von Briefinstanzen {#savingdrafts}
 
-Wenn ein Brief in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;gerendert wird, können Sie den Brief als Ansicht speichern.
+Wenn ein Brief in der Benutzeroberfläche „Korrespondenz erstellen“ gerendert wird, können Sie den Brief so speichern, wie er angezeigt wird.
 
 Es gibt zwei Arten von Briefinstanzen, die gespeichert werden können: Entwurfsinstanz und Sendeinstanz.
 
 * **Entwurfsinstanz**: Entwurfsinstanz erfasst den aktuellen Status des Briefs, den Sie in der Vorschau anzeigen. Um eine Entwurfsinstanz zu speichern, muss zuerst sichergestellt werden, dass der Brief und alle Assets, die der Brief referenziert im Status „Veröffentlicht“ sind. Weitere Informationen zum Veröffentlichen eines Briefs finden Sie unter[ Veröffentlichen von Assets](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Sie müssen einen Brief veröffentlichen, bevor Sie ihn als Entwurf speichern können, da Sie, wenn Sie einen Brief veröffentlichen, eine Version des Briefs, der abhängige Assets und Daten erstellen. Die veröffentlichte Version eines Briefs kann nicht von Ihnen oder einem anderen Benutzer bearbeitet werden und kann ohne unerwartete Diskrepanzen von der veröffentlichten Version zu einem späteren Zeitpunkt wiederhergestellt werden. Sie können zu einem späteren Zeitpunkt zu dieser Instanz zurückkehren und von Ihrem Schritt aus fortfahren.
 
-* **Sendeinstanz**: Sendeinstanzen erfassen den Status des Briefes zum Sendezeitpunkt. Die Sendeinstanz speichert den PDF-Status der Briefinstanz, nachdem sie zusammen mit den vom Benutzer in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;eingegebenen Daten nachbearbeitet wurde.
+* **Sendeinstanz**: Sendeinstanzen erfassen den Status des Briefes zum Sendezeitpunkt. Die Sendeinstanz speichert den PDF-Status der Briefinstanz, nachdem sie zusammen mit den vom Benutzer in der Benutzeroberfläche „Korrespondenz erstellen“ eingegebenen Daten nachbearbeitet wurde.
 
 Solche Instanzen können nur gespeichert werden, wenn der Brief in der öffentlichen Instanz angezeigt wird. Das Speichern von Instanzen ist standardmäßig deaktiviert. Führen Sie die folgenden Schritte durch, um das Speichern von Briefinstanzen zu aktivieren.
 
-1. Öffnen Sie AEM die Adobe Experience Manager Web Console Configuration für Ihren Server mithilfe der folgenden URL: https://&lt;Server>:&lt;Port>/&lt;Kontextpfad>/system/console/configMgr
-1. Suchen Sie **[!UICONTROL Correspondence Management-Konfigurationen]** und klicken Sie darauf.
+1. Öffnen Sie in AEM die Adobe Experience Manager Web Console-Konfiguration für Ihren Server mit der folgenden URL: https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
+1. Suchen Sie nach **[!UICONTROL Correspondence Management-Konfigurationen]** und klicken Sie darauf.
 1. Überprüfen Sie die Konfiguration **[!UICONTROL Briefinstanzen im Veröffentlichungsmodus verwalten]** und klicken Sie dann auf **[!UICONTROL Speichern]**.
 
 Wenn das Speichern von Briefinstanzen gespeichert ist, können Sie wählen, wo Sie die Briefinstanzen speichern möchten. Zum Speichern der Briefinstanzen gibt es zwei Optionen: „Lokal speichern“ oder „Remote speichern“.
@@ -299,21 +299,21 @@ Briefinstanzen werden in der Veröffentlichungsinstanz gespeichert und in der Au
 
 Diese Option ist für Personen vorgesehen, die bezüglich des Speicherns von Daten in Veröffentlichungsinstanzen haben, die sich normalerweise außerhalb der Firewall des Unternehmens befinden. Wenn die Option „Remote Speichern“ aktiviert ist, werden die Instanzen nicht in der Veröffentlichungsoptionen gespeichert. Sie werden remote vom verarbeitenden Autor gespeichert, der über die LiveCycle Client SDK-Konfigurationen angegeben wird.
 
-#### Aktivieren von „Remote Speichern“  {#enable-remote-save}
+#### Aktivieren von „Remote Speichern“ {#enable-remote-save}
 
-1. Öffnen Sie AEM die Adobe Experience Manager Web Console Configuration für Ihren Server mithilfe der folgenden URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
-1. Suchen Sie nach **[!UICONTROL Correspondence Management-Konfigurationen]** und klicken Sie darauf.
+1. Öffnen Sie in AEM die Adobe Experience Manager Web Console-Konfiguration für Ihren Server mit der folgenden URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. Suchen Sie nach **[!UICONTROL Correspondence Management-Konfigurationen]** und klicken Sie darauf.
 1. Suchen Sie die Konfiguration **[!UICONTROL Remote Speichern]**, überprüfen Sie sie und klicken Sie auf **[!UICONTROL Speichern]**.
 
 #### Angeben der Einstellungen für Prozessautor {#specify-processing-author-settings}
 
-1. Öffnen Sie AEM die Adobe Experience Manager Web Console Configuration für Ihren Server mithilfe der folgenden URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. Öffnen Sie in AEM die Adobe Experience Manager Web Console-Konfiguration für Ihren Server mit der folgenden URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
 
    ![Konfiguration der Adobe Experience Manager-Web-Konsole](assets/2configmanager.png)
 
 1. Suchen Sie auf dieser Seite Adobe LiveCycle Client SDK-Konfiguration und erweitern Sie sie durch Klicken auf.
 
-1. Geben Sie in die URL für den Verarbeitungsserver den Namen Ihres LiveCycle-Servers ein, geben Sie die Anmeldeinformationen ein und klicken Sie auf **Speichern**.
+1. Geben Sie in im Feld für die Verarbeitung der Server-URL den Namen Ihres LiveCycle-Servers sowie die Anmeldeinformationen ein und klicken Sie dann auf **Speichern**.
 
    ![Namen und Anmeldeinformationen Ihres LiveCycle-Servers eingeben](assets/3configmanager.png)
 
@@ -326,7 +326,7 @@ Diese Option ist für Personen vorgesehen, die bezüglich des Speicherns von Dat
 * Wenn ein mit einer Briefvorlage verknüpfter Nachbearbeitungsprozess beim Senden oder Abschließen der Korrespondenz in der Benutzeroberfläche „Korrespondenz erstellen“ aufgerufen wird, werden die Anlagen als Parameter List&lt;com.adobe.idp.Document> in AttachmentDocs übergeben.
 * Vordefinierte Übermittlungsmechanismen, wie z. B. E-Mail und Drucken, übermitteln Anhänge zusammen mit einer PDF der generierten Korrespondenz.
 
-## Darstellungsmodi der Briefvorschau: Mobile Forms- und PDF-Vorschau  {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
+## Darstellungsmodi der Briefvorschau: Mobile Forms- und PDF-Vorschau {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
 
 AEM Forms Correspondence Management zeigt Briefe in der Benutzeroberfläche „Korrespondenz erstellen“ im HTML-Format an. Correspondence Management unterstützt jedoch weiterhin die Wiederherstellung der PDF-Vorschau anstelle der HTML-Vorschau. Weitere Informationen zum Wechseln zwischen HTML- und PDF-Modus für die Vorschau finden Sie unter [Ändern des Darstellungsmodus des Briefs](#changerenditionmode).
 
@@ -345,7 +345,7 @@ Die folgenden Vorteile und Funktionen stehen jeweils bei der HTML- und PDF-Vorsc
 * **Seitenumbruch**: In der PDF-Vorschau eine Vorschau können Sie genau erkennen, wie die Seitenumbrüche im Brief sich auf dessen Ausgabe auswirken.
 * **Abschließende Vorschau**: In der PDF-Vorschau können die genaue Formatierung und das Erscheinungsbild des Briefs für die Ausgabe angezeigt werden.
 
-Weitere Informationen zur Skriptunterstützung in PDF-Formularen finden Sie unter [Skriptunterstützung](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html).
+Weitere Informationen zur Skriptunterstützung in PDF-Formularen finden Sie unter [Skriptunterstützung](https://help.adobe.com/de_DE/livecycle/11.0/ScriptingSupport/index.html).
 
 Weitere Informationen zur Skriptunterstützung in HTML5-Formularen finden Sie unter [Skriptunterstützung für HTML5-Formulare](/help/forms/using/scripting-support.md).
 
@@ -353,10 +353,10 @@ Weitere Informationen zur Skriptunterstützung in HTML5-Formularen finden Sie un
 
 In der Benutzeroberfläche „Korrespondenz erstellen“ wird standardmäßig HTML oder Mobile Forms zum Rendern der Briefvorschau verwendet. Die Mobile Forms-Vorschau kann in beliebigen Browsern problemlos gerendert werden, da sie das native Plugin des Browsers verwendet und daher keine zusätzlichen Plugins benötigt werden. Sie können zum Briefvorschaumodus PDF wechseln. Allerdings können aufgrund von Browserbeschränkungen Probleme bei verschiedenen Funktionen der interaktiven PDF-Vorschau des Briefs auftreten.
 
-Weitere Informationen zur Browserkompatibilität mit der Briefvorschau finden Sie unter [Abbruch der NPAPI-Browser-Plug-ins und deren Auswirkungen](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
+Weitere Informationen zur Browserkompatibilität bei der Briefvorschau finden Sie unter [Auslauf der Unterstützung für das NPAPI-Browser-Plugin und Auswirkungen](https://helpx.adobe.com/de/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
 
 Um den Vorschaumodus des Briefs zu ändern, führen Sie die folgenden Schritte aus:
 
-1. Gehen Sie zu `https://[system]:'port'/system/console/configMgr` und melden Sie sich bei Bedarf als Administrator an.
-1. Gehen Sie zu **[!UICONTROL Correspondence Management-Konfigurationen]** > **[!UICONTROL Ausgabedarstellungstyp]** und wählen Sie **HTML-Ausgabe** (Standard) oder **PDF-Ausgabe** aus.
+1. Navigieren Sie zu `https://[system]:'port'/system/console/configMgr` und melden Sie sich nötigenfalls als Administrator an.
+1. Navigieren Sie zu **[!UICONTROL Correspondence Management-Konfigurationen]** > **[!UICONTROL Wiedergabe-Typ]** und wählen Sie **HTML-Wiedergabe** (Standard) oder **PDF-Wiedergabe**.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
