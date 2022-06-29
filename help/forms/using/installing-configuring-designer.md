@@ -13,9 +13,9 @@ docset: aem65
 role: Admin
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 source-git-commit: a3cf926bde4a4b3a0810058e84ac01012a4a3a57
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '280'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 47%
 
 ## Voraussetzungen {#pre-requisites}
 
-Das Installationsprogramm für AEM Forms Designer erfordert die 32-Bit-Version von [Visual C++ Redistributable Runtime Package 2012](https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0) und [Visual C++ Redistributable Runtime Package 2013](https://support.microsoft.com/de-de/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Stellen Sie sicher, dass die oben genannten Redistributable Runtime Packages installiert sind, bevor Sie mit der Installation beginnen.
+Für das AEM Forms Designer-Installationsprogramm ist die 32-Bit-Version von [Visual C++ Redistributable Runtime Package 2012](https://support.microsoft.com/de-de/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0) und [Visual C++ Redistributable Runtime Package 2013](https://support.microsoft.com/de-de/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package) erforderlich. Stellen Sie sicher, dass die oben genannten Redistributable Runtime Packages vor Installationsbeginn installiert sind. 
 
 Sie benötigen Administratorrechte, um Designer zu installieren oder zu deinstallieren.
 
@@ -31,7 +31,7 @@ Sie benötigen Administratorrechte, um Designer zu installieren oder zu deinstal
 
 Designer ist als eigenständiges Installationsprogramm sowie als Teil von WorkBench erhältlich. Wenn Sie ein eigenständiges Installationsprogramm für Designer verwenden, führen Sie die folgenden Schritte aus:
 
-1. Designer von Adobe herunterladen [Lizenzierungs-Website](https://licensing.adobe.com/).
+1. Laden Sie Designer von der Adobe [Lizenzierungs-Webseite](https://licensing.adobe.com/) herunter.
 
    >[!NOTE]
    >
@@ -52,7 +52,7 @@ Alternativ können Sie Designer über die Befehlszeile im passiven oder stillen 
 msiexec /i "<absolute path>\Designer.msi" /passive SERIALNUMBER=****-****-****-****-****-****
 ```
 
-* Unbeaufsichtigte Befehlszeileninstallation: Das Installationsprogramm führt die Installation aus, ohne dass eine Benutzeroberfläche angezeigt wird. Es werden keine Eingabeaufforderungen, Meldungen oder Dialogfelder angezeigt. Nach dem Start kann die Installation nicht mehr abgebrochen werden.
+* Stille Befehlszeilen-Installation: Das Installationsprogramm führt die Installation aus, ohne eine Benutzeroberfläche anzuzeigen. Es werden keine Eingabeaufforderungen, Meldungen oder Dialogfelder angezeigt. Nach dem Start kann die Installation nicht mehr abgebrochen werden.
 
 ```shell
 msiexec /i "<absolute path>\Designer.msi" /quiet SERIALNUMBER=****-****-****-****-****-****
