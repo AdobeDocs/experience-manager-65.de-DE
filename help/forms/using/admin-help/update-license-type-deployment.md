@@ -1,8 +1,8 @@
 ---
 title: Lizenztyp für die Bereitstellung aktualisieren
-seo-title: Lizenztyp für die Bereitstellung aktualisieren
+seo-title: Update the license type for the deployment
 description: Aktualisieren Sie den Lizenztyp für die Bereitstellung, indem Sie die Seite „Lizenz ändern“ in der Administration Console verwenden.
-seo-description: Aktualisieren Sie den Lizenztyp für die Bereitstellung, indem Sie die Seite „Lizenz ändern“ in der Administration Console verwenden.
+seo-description: Update the license type for the deployment by using the Change License page in administration console.
 uuid: 0152635e-2c00-4944-b9b6-64b368589a91
 contentOwner: admin
 content-type: reference
@@ -11,8 +11,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e4f31377-ccc9-4986-a3bf-ef2e83d12448
 exl-id: 6b975aa1-9270-4098-9af5-c5cc67cb7b5d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '293'
+workflow-type: ht
+source-wordcount: '270'
 ht-degree: 100%
 
 ---
