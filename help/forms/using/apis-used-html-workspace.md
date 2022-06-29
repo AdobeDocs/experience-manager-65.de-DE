@@ -1,8 +1,8 @@
 ---
-title: APIs in AEM Forms Workspace
-seo-title: APIs im AEM-Formulararbeitsbereich
+title: APIs im AEM Forms-arbeitsbereich
+seo-title: APIs used in AEM Forms workspace
 description: Öffentliche Java- und JavaScript-APIs und Methoden von LiveCycle AEM Forms Workspace zur Anpassung und Automatisierung.
-seo-description: Öffentliche Java- und JavaScript-APIs und Methoden von LiveCycle AEM Forms Workspace zur Anpassung und Automatisierung.
+seo-description: Public Java and JavaScript APIs and methods of LiveCycle AEM Forms workspace, exposed for customization and automation.
 uuid: 9602990e-8ac7-42eb-b507-50b3594055ba
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,13 +10,13 @@ topic-tags: forms-workspace
 discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
 exl-id: 9034f73a-83f3-498e-b6a6-ad6577aa1a3a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1020'
+workflow-type: ht
+source-wordcount: '997'
 ht-degree: 100%
 
 ---
 
-# APIs im AEM-Formulararbeitsbereich {#apis-used-in-aem-forms-workspace}
+# APIs im AEM Forms-arbeitsbereich {#apis-used-in-aem-forms-workspace}
 
 Die folgenden APIs werden in AEM FormsWorkspace verwendet.
 
@@ -24,7 +24,7 @@ Die folgenden APIs werden in AEM FormsWorkspace verwendet.
  <tbody>
   <tr>
    <td><strong>JavaScript-Methode</strong></td>
-   <td><strong>Dienstname</strong></td>
+   <td><strong>Service-Name</strong></td>
    <td><strong>API-Name</strong></td>
    <td><strong>Kommentare</strong></td>
   </tr>
@@ -145,7 +145,7 @@ Die folgenden APIs werden in AEM FormsWorkspace verwendet.
   <tr>
    <td>consult</td>
    <td>ProcessManagementTaskService</td>
-   <td>konsultieren</td>
+   <td>consult</td>
    <td>Bespricht eine Aufgabe mit einem anderen Benutzer.</td>
   </tr>
   <tr>
@@ -175,7 +175,7 @@ Die folgenden APIs werden in AEM FormsWorkspace verwendet.
   <tr>
    <td>abandon</td>
    <td>ProcessManagementTaskService</td>
-   <td>Abbruch</td>
+   <td>abandon</td>
    <td>Löscht eine Aufgabe.</td>
   </tr>
   <tr>
@@ -223,7 +223,7 @@ Die folgenden APIs werden in AEM FormsWorkspace verwendet.
   <tr>
    <td>revokeQueueAccess</td>
    <td>ProcessManagementQueueService</td>
-   <td>cancelQueueAccess</td>
+   <td>revokeQueueAccess</td>
    <td>Entfernt einen Benutzer aus der Liste der Benutzer, die Zugriff auf die Warteschlange des angemeldeten Benutzers haben.</td>
   </tr>
   <tr>
