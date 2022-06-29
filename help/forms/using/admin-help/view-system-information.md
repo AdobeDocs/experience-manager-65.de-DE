@@ -1,8 +1,8 @@
 ---
 title: Systeminformationen anzeigen
-seo-title: Systeminformationen anzeigen
+seo-title: View system information
 description: Erfahren Sie, wie Sie Diagramme zur Ressourcenüberwachung und Informationen über den Server anzeigen, der AEM Forms ausführt.
-seo-description: Erfahren Sie, wie Sie Diagramme zur Ressourcenüberwachung und Informationen über den Server anzeigen, der AEM Forms ausführt.
+seo-description: Learn how you can view resource monitoring charts and information about the server that is running AEM forms.
 uuid: 983c1cc7-a8b3-48b2-a4c8-7b28a2e32537
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d51460d9-c96c-4661-b93e-e015427878ab
 exl-id: 27a2e81c-47b0-4de8-95bd-7cb34b9450da
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 37%
+workflow-type: ht
+source-wordcount: '540'
+ht-degree: 100%
 
 ---
 
@@ -37,66 +37,66 @@ Sie können Ihren Zeiger auf der Zeitachse verschieben, um Werte für einen best
 
 Im linken Bereich der Registerkarte „System“ werden die folgenden Informationen zum Server oder Knoten angezeigt:
 
-**Virtual Machine:** Java Virtual Machine (JVM)-Version auf dem Server.
+**Virtual Machine:** Version von Java Virtual Machine (JVM) auf dem Server.
 
-**Hersteller der virtuellen Maschine:**  Hersteller der JVM.
+**Anbieter der virtuellen Maschine:** Hersteller von JVM.
 
-**Virtual Machine Version:** JVM-Versionsnummer
+**Version der virtuellen Maschine:** JVM-Versionsnummer
 
-**Maschinenname:** Hostname des Servers, auf dem AEM Formulare installiert sind.
+**Maschinenname:** Hostname des Servers, auf dem AEM Forms installiert ist.
 
-**Betriebszeit:** Die Zeit in Stunden und Minuten, zu der der Server ausgeführt wurde.
+**Betriebszeit:** Die Zeit in Stunden und Minuten, die der Server schon ausgeführt wird.
 
-**Just-in-Time-Compiler:** Der Name des verwendeten Compilers.
+**Just-In-Time Compiler:** Der Name des Compilers, der verwendet wird.
 
-**Kompilierungszeit:** Die Zeit, die zum Kompilieren verbracht wurde.
+**Kompilierungsdauer:** Die zum Kompilieren aufgewendete Zeit.
 
-**Anzahl der Live Threads:** Die Gesamtzahl der Threads, die derzeit im AEM Forms-System vorhanden sind.
+**Anzahl der Live-Threads:** Die Gesamtzahl der Threads, die derzeit im AEM Forms-System vorhanden sind.
 
-**Anzahl der Threads-Spitzen:** Die größte Anzahl von Live-Threads, die je im System aufgezeichnet wurde.
+**Spitzenwert der Anzahl von Threads:** Größte Anzahl Live-Threads, die je im System erfasst wurde.
 
-**Anzahl der geladenen Klassen:** Anzahl der Klassen, die in die JVM geladen wurden.
+**Anzahl geladener Klassen:** Anzahl der Klassen, die in JVM geladen wurden.
 
-**Anzahl der nicht geladenen Klassen:** Anzahl der Klassen, die von der JVM entladen wurden.
+**Anzahl entfernter Klassen:** Anzahl der Klassen, die aus JVM entfernt wurden.
 
-**Mindest-Heap:** Die Mindestmenge an Heap, die verwendet wurde.
+**Mindest-Heap-Größe:** Die Mindestgröße des verwendeten Heap.
 
-**Maximale Heap-Größe:** Die maximal verwendete Heap-Menge.
+**Maximale Heap-Größe:** Die maximale Größe des verwendeten Heap.
 
-**Betriebssystemname:** Der Name des Betriebssystems, das auf dem AEM forms-Server ausgeführt wird.
+**Betriebssystemname:** Der Name des Betriebssystems, das auf dem AEM Forms-Server ausgeführt wird.
 
-**Betriebssystemversion:** Versionsnummer des Betriebssystems, das auf dem AEM forms-Server ausgeführt wird.
+**Betriebssystemversion:** Versionsnummer des Betriebssystems, das auf dem AEM Forms-Server ausgeführt wird.
 
-**Betriebssystemarchitektur:** Die Betriebssystemarchitektur, auf der die JVM ausgeführt wird.
+**Betriebssystem-Arch:** Die Betriebssystemarchitektur, auf der JVM ausgeführt wird.
 
 **Anzahl der Prozessoren:** Die Anzahl der Prozessoren im System.
 
-**Argumente virtueller Maschinen:** Das von der JVM verwendete Argument.
+**Argumente der virtuellen Maschine:** Das von JVM verwendete Argument.
 
-**Klassenpfad:** Der von der JVM verwendete Klassenpfad.
+**Klassenpfad:** Der von JVM verwendete Klassenpfad.
 
-**Bibliothekspfad:** Der von der JVM verwendete Bibliothekspfad.
+**Bibliothekspfad:** Der von JVM verwendete Bibliothekspfad.
 
-**Boot Class Path:** Der von der JVM verwendete Bootklassenpfad.
+**Pfad der Boot-Klasse:** Der Pfad für die von der JVM verwendete Boot-Klasse.
 
-**Anwendungsservertyp:** Typ des Anwendungsservers, der zum Ausführen AEM Formularen verwendet wird.
+**Anwendungsservertyp:** Typ des Anwendungsservers, der zum Ausführen AEM Forms verwendet wird.
 
-**Anwendungsserverversion:** Versionsnummer des Anwendungsservers, der zum Ausführen AEM Formulare verwendet wird.
+**Anwendungsserverversion:** Versionsnummer des Anwendungsservers, der zum Ausführen von AEM Forms verwendet wird.
 
-**Application Server-Anbieter:** Hersteller des Anwendungsservers, der zum Ausführen AEM Formulare verwendet wird.
+**Anwendungsserveranbieter:** Hersteller des Anwendungsservers, der zum Ausführen von AEM Forms verwendet wird.
 
-**Installationsdatum:** Datum (im Format JJJ-MM-TT), an dem AEM Formulare installiert wurden.
+**Installationsdatum:** Datum (im Format jjjj-mm-tt), an dem AEM Forms installiert wurde.
 
-**AEM Forms-Version:** Version der AEM Formulare, die installiert ist.
+**AEM Forms-Version:** Installierte Version von AEM Forms.
 
-**Patch-Version:** AEM Patch-Nummer für Formulare.
+**Patch-Version:** Patch-Nummer von AEM Forms.
 
-**Datenbankname:** Von AEM Formularen verwendeter Datenbanktyp.
+**Datenbankname:** Von AEM Forms verwendeter Datenbanktyp.
 
-**Datenbankversion:** Versionsnummer der Datenbank, die von AEM Formularen verwendet wird.
+**Datenbankversion:** Versionsnummer der von AEM Forms verwendeten Datenbank.
 
-**Database Drive Name:** Der Name des Treibers, mit dem die JVM eine Verbindung zur Datenbank herstellt.
+**Datenbanktreibername:** Der Name des Treibers, der von JVM verwendet wird, um eine Verbindung zur Datenbank herzustellen.
 
-**Datenbanktreiberversion:** Die Version des Treibers, mit dem die JVM eine Verbindung zur Datenbank herstellt.
+**Datenbanktreiberversion**: Die Version des Treibers, der von JVM verwendet wird, um eine Verbindung zur Datenbank herzustellen.
 
 Mit der Schaltfläche **Speichern** können Sie diese Systeminformationen in einer Eigenschaftendatei speichern.
