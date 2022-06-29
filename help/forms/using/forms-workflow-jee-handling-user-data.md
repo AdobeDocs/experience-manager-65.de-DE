@@ -1,7 +1,7 @@
 ---
-title: Forms JEE-Workflows| Verarbeiten von Benutzerdaten
-seo-title: Forms JEE-Workflows| Verarbeiten von Benutzerdaten
-description: Forms JEE-Workflows| Verarbeiten von Benutzerdaten
+title: Forms JEE-Workflows   Verarbeiten von Benutzerdaten
+seo-title: Forms JEE workflows | Handling user data
+description: Forms JEE-Workflows   Verarbeiten von Benutzerdaten
 uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,15 +9,15 @@ discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
 role: Admin
 exl-id: 847fa303-8d1e-4a17-b90d-5f9da5ca2d77
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 70%
+workflow-type: ht
+source-wordcount: '1365'
+ht-degree: 100%
 
 ---
 
-# Forms JEE-Workflows| Verarbeiten von Benutzerdaten {#forms-jee-workflows-handling-user-data}
+# Forms JEE-Workflows   Verarbeiten von Benutzerdaten {#forms-jee-workflows-handling-user-data}
 
-AEM Forms JEE-Workflows bieten Tools zum Entwerfen, Erstellen und Verwalten von Geschäftsprozessen. Ein Workflow-Prozess besteht aus einer Reihe von Schritten, die in einer bestimmten Reihenfolge ausgeführt werden. Bei jedem Schritt wird eine bestimmte Aktivität ausgeführt, z. B. einem Benutzer eine Aufgabe zuweisen oder eine E-Mail verschicken. Ein Prozess kann mit Assets, Benutzerkonten und Diensten interagieren und mit einer der folgenden Methoden ausgelöst werden:
+JEE-Workflows in AEM Forms bieten Tools zum Entwerfen, Erstellen und Verwalten von Geschäftsprozessen. Ein Workflow-Prozess besteht aus einer Reihe von Schritten, die in einer bestimmten Reihenfolge ausgeführt werden. Bei jedem Schritt wird eine bestimmte Aktivität ausgeführt, z. B. einem Benutzer eine Aufgabe zuweisen oder eine E-Mail verschicken. Ein Prozess kann mit Assets, Benutzerkonten und Diensten interagieren und mit einer der folgenden Methoden ausgelöst werden:
 
 * Starten eines Prozesses von AEM Forms Workspace aus
 * Verwenden des SOAP- oder RESTful-Service
@@ -25,7 +25,7 @@ AEM Forms JEE-Workflows bieten Tools zum Entwerfen, Erstellen und Verwalten von 
 * Verwenden eines überwachten Ordners
 * E-Mail verwenden
 
-Weitere Informationen zum Erstellen des AEM Forms JEE-Workflow-Prozesses finden Sie unter [Workbench-Hilfe](http://www.adobe.com/go/learn_aemforms_workbench_65).
+Weitere Informationen zum Erstellen von JEE-Workflow-Prozessen in AEM Forms finden Sie in der [Workbench-Hilfe](http://www.adobe.com/go/learn_aemforms_workbench_65_de).
 
 ## Benutzerdaten und Datenspeicher {#user-data-and-data-stores}
 
@@ -33,19 +33,19 @@ Wenn ein Prozess ausgelöst wird und fortschreitet, erfasst er Daten zu den Proz
 
 ## Zugreifen auf und Löschen von Benutzerdaten {#access-and-delete-user-data}
 
-Wenn ein Prozess ausgelöst wird, werden eine eindeutige Prozessinstanz-ID und eine langlebige Aufruf-ID generiert und der Prozessinstanz zugeordnet. Sie können auf Daten für eine Prozessinstanz basierend auf der Aufruf-ID mit langer Lebensdauer zugreifen und diese löschen. Sie können die langlebige Aufruf-ID einer Prozessinstanz mit dem Benutzernamen des Prozessinitiators oder der Prozessteilnehmer, die ihre Aufgaben gesendet haben, bestimmen.
+Wenn ein Prozess ausgelöst wird, werden eine eindeutige Prozessinstanz-ID und eine Aufruf-ID mit langer Lebensdauer generiert und der Prozessinstanz zugeordnet. Sie können auf Daten für eine Prozessinstanz basierend auf der Aufruf-ID mit langer Lebensdauer zugreifen und diese löschen. Sie können die Aufruf-ID mit langer Lebensdauer einer Prozessinstanz vom Benutzernamen des Prozessinitiators oder der Prozessteilnehmer, die ihre Aufgaben eingereicht haben, ableiten.
 
 Sie können die Prozessinstanz-ID für einen Initiator in den folgenden Szenarien jedoch nicht identifizieren:
 
 * **Prozess, die durch einen überwachten Ordner ausgelöst wurden**: Eine Prozessinstanz kann nicht über ihren Initiator identifiziert werden, wenn der Prozess von einem überwachten Ordner ausgelöst wird. In diesem Fall werden die Benutzerinformationen in den gespeicherten Daten codiert.
 * **Von der AEM-Instanz veröffentlichter Prozess**: Alle Prozessinstanzen, die von der AEM-Veröffentlichungsinstanz ausgelöst wurden, erfassen keine Informationen zum Initiator. Benutzerdaten können jedoch in dem Formular, das mit dem Prozess verknüpft ist, der in den Workflow-Variablen gespeichert ist, erfasst werden.
-* **Durch E-Mail initiierter Prozess**: Die E-Mail-ID des Absenders wird als Eigenschaft in einer undurchsichtigen Blob-Spalte der  `tb_job_instance` Datenbanktabelle erfasst, die nicht direkt abgefragt werden kann.
+* **Prozess, der über E-Mails initiiert wird**: Die E-Mail-ID des Absenders wird als Eigenschaft in einer opaken BLOB-Spalte der Datenbanktabelle `tb_job_instance` erfasst, die nicht direkt abgefragt werden kann.
 
 ### Identifizieren Sie Prozessinstanz-IDs, wenn der Workflow-Initiator oder -Teilnehmer bekannt ist {#initiator-participant}
 
 Führen Sie die folgenden Schritte durch, um Prozessinstanz-IDs für einen Workflow-Initiator oder einen Teilnehmer zu identifizieren:
 
-1. Führen Sie den folgenden Befehl in der AEM Forms-Serverdatenbank aus, um die Prinzipal-ID für den Workflow-Initiator oder -Teilnehmer aus der Datenbanktabelle `edcprincipalentity` abzurufen.
+1. Führen Sie den folgenden Befehl in der AEM Forms-Server-Datenbank aus, um die Prinzipal-ID für den Workflow-Initiator oder -Teilnehmer aus der Datenbanktabelle `edcprincipalentity` abzurufen.
 
    ```sql
    select id from edcprincipalentity where canonicalname='user_ID'
@@ -59,10 +59,10 @@ Führen Sie die folgenden Schritte durch, um Prozessinstanz-IDs für einen Workf
    select * from tb_task where start_task = 1 and create_user_id= 'initiator_principal_id'
    ```
 
-   Die Abfrage gibt Aufgaben zurück, die von dem angegebenen `initiator`_ `principal_id` initiiert wurden. Die Aufgaben sind von zwei Arten:
+   Die Abfrage gibt die Aufgaben zurück, die für die angegebene `initiator`_ `principal_id` initiiert werden. Die Aufgaben sind von zwei Arten:
 
-   * **Abgeschlossene Aufgaben**: Diese Aufgaben wurden gesendet und zeigen einen alphanumerischen Wert im  `process_instance_id` Feld an. Notieren Sie alle Prozessinstanz-IDs für übermittelte Aufgaben und fahren Sie mit den Schritten fort.
-   * **Aufgaben eingeleitet, aber nicht abgeschlossen**: Diese Aufgaben sind eingeleitet, aber noch nicht abgeschickt. Der Wert im Feld `process_instance_id` für diese Aufgaben ist **0** (null). Beachten Sie in diesem Fall die entsprechenden Aufgaben-IDs und siehe [Arbeiten mit verwaisten Aufgaben](#orphan).
+   * **Erledigte Aufgaben**: Diese Aufgaben wurden übergeben, und für sie wird im Feld `process_instance_id` ein alphanumerischer Wert angezeigt. Notieren Sie alle Prozessinstanz-IDs für übermittelte Aufgaben und fahren Sie mit den Schritten fort.
+   * **Aufgaben eingeleitet, aber nicht abgeschlossen**: Diese Aufgaben sind eingeleitet, aber noch nicht abgeschickt. Der Wert im Feld `process_instance_id` für diese Aufgaben ist **0** (Null). Beachten Sie in diesem Fall die entsprechenden Aufgaben-IDs und siehe [Arbeiten mit verwaisten Aufgaben](#orphan).
 
 1. (**Für Workflow-Teilnehmer**) Führen Sie den folgenden Befehl aus, um Prozessinstanz-IDs abzurufen, die mit der Prinzipal-ID des Prozessteilnehmers für den Initiator aus der Datenbanktabelle `tb_assignment` verknüpft sind.
 
@@ -74,9 +74,9 @@ Führen Sie die folgenden Schritte durch, um Prozessinstanz-IDs für einen Workf
 
    Notieren Sie alle Prozessinstanz-IDs für übermittelte Aufgaben und fahren Sie mit den Schritten fort.
 
-   Für verwaiste Aufgaben oder Aufgaben, bei denen `process_instance_id` 0 (null) ist, notieren Sie sich die entsprechenden Aufgaben-IDs und lesen Sie [Arbeiten mit verwaisten Aufgaben](#orphan).
+   Für verwaiste Aufgaben oder Aufgaben, bei denen `process_instance_id` 0 (Null) ist, notieren Sie sich die entsprechenden Aufgaben-IDs und lesen Sie [Arbeiten mit verwaisten Aufgaben](#orphan).
 
-1. Befolgen Sie die Anweisungen im Abschnitt [Benutzerdaten aus Workflow-Instanzen basierend auf Prozessinstanz-IDs](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) bereinigen , um Benutzerdaten für identifizierte Prozessinstanz-IDs zu löschen.
+1. Befolgen Sie die Anweisungen im Abschnitt [Bereinigen von Benutzerdaten aus Workflow-Instanzen basierend auf Prozessinstanz-IDs](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge), um Benutzerdaten für identifizierte Prozessinstanz-IDs zu löschen.
 
 ### Identifizieren Sie Prozessinstanz-IDs, wenn Benutzerdaten in primitiven Variablen gespeichert werden {#primitive}
 
@@ -94,7 +94,7 @@ Führen Sie die folgenden Schritte durch, um festzustellen, ob ein Workflow, der
    select database_table from omd_object_type where name='pt_<app_name>/<workflow_name>'
    ```
 
-   Die Abfrage gibt einen Tabellennamen im Format `tb_<number>` für die angegebene Anwendung ( `app_name`) und den Workflow ( `workflow_name`) zurück.
+   Die Abfrage gibt einen Tabellennamen im `tb_<number>`-Format für das angegebene Programm (`app_name`) und den Workflow (`workflow_name`) zurück.
 
    >[!NOTE]
    >
@@ -110,23 +110,23 @@ Führen Sie die folgenden Schritte durch, um festzustellen, ob ein Workflow, der
    select process_instance_id from <tb_name> where <user_var>=<user_ID>
    ```
 
-   Die Abfrage gibt alle Prozessinstanz-IDs zurück, die mit dem angegebenen `user_ID` verknüpft sind.
+   Die Abfrage gibt alle Prozessinstanz-IDs zurück, die der angegebenen `user_ID` zugeordnet sind.
 
-1. Befolgen Sie die Anweisungen im Abschnitt [Benutzerdaten aus Workflow-Instanzen basierend auf Prozessinstanz-IDs](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) bereinigen , um Benutzerdaten für identifizierte Prozessinstanz-IDs zu löschen.
+1. Folgen Sie den Anweisungen im Abschnitt [Purge user data from workflow instances based on process instance IDs (Bereinigen von Benutzerdaten von Workflow-Instanzen, basierend auf Prozessinstanz-IDs)](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge), um Benutzerdaten für identifizierte Prozessinstanz-IDs zu löschen.
 
 ### Purge user data from workflow instances based on process instance IDs (Bereinigen von Benutzerdaten von Workflow-Instanzen, basierend auf Prozessinstanz-IDs) {#purge}
 
 Nachdem Sie die Prozessinstanz-IDs identifiziert haben, die einem Benutzer zugeordnet sind, führen Sie folgende Schritte aus, um Benutzerdaten aus den jeweiligen Prozessinstanzen zu löschen.
 
-1. Führen Sie den folgenden Befehl aus, um die langlebige Aufruf-ID und den Status für eine Prozessinstanz aus der `tb_process_instance` -Tabelle abzurufen.
+1. Führen Sie den folgenden Befehl aus, um die langlebige Aufruf-ID und den Status für eine Prozessinstanz aus der Tabelle `tb_process_instance` abzurufen.
 
    ```sql
    select long_lived_invocation_id, status from tb_process_instance where id='process_instance_id'
    ```
 
-   Die Abfrage gibt die langlebige Aufruf-ID und den Status für das angegebene `process_instance_id` zurück.
+   Die Abfrage gibt die langlebige Aufruf-ID und den Status für die angegebene `process_instance_id` zurück.
 
-1. Erstellen Sie eine Instanz des öffentlichen Clients `ProcessManager` ( `com.adobe.idp.workflow.client.ProcessManager`) mit einer `ServiceClientFactory`-Instanz mit den richtigen Verbindungsparametern.
+1. Erstellen Sie eine Instanz des öffentlichen `ProcessManager`-Clients (`com.adobe.idp.workflow.client.ProcessManager`) unter Verwendung einer `ServiceClientFactory`-Instanz mit den richtigen Verbindungseinstellungen.
 
    Weitere Informationen finden Sie in der Java API-Referenz unter [Class ProcessManager](https://helpx.adobe.com/de/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
 
@@ -142,7 +142,7 @@ Nachdem Sie die Prozessinstanz-IDs identifiziert haben, die einem Benutzer zugeo
 
 ### Arbeiten mit verwaisten Aufgaben {#orphan}
 
-Verwaiste Aufgaben sind Aufgaben, deren Containing-Prozess initiiert, aber noch nicht übergeben wurde. in diesem Fall ist `process_instance_id` **0** (null). Daher können Sie Benutzerdaten, die für verwaiste Aufgaben gespeichert wurden, nicht mithilfe von Prozessinstanz-IDs verfolgen. Sie können sie jedoch mithilfe der Aufgaben-ID für eine verwaiste Aufgabe verfolgen. Sie können die Aufgaben-IDs für einen Benutzer aus der `tb_task` ermitteln, wie in [Prozessinstanz-IDs identifizieren, wenn der Workflow-Initiator oder -Teilnehmer bekannt ist](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant).
+Verwaiste Aufgaben sind Aufgaben, deren Containing-Prozess initiiert, aber noch nicht übergeben wurde. In diesem Fall ist die `process_instance_id` **0** (Null). Daher können Sie Benutzerdaten, die für verwaiste Aufgaben gespeichert wurden, nicht mithilfe von Prozessinstanz-IDs verfolgen. Sie können sie jedoch mithilfe der Aufgaben-ID für eine verwaiste Aufgabe verfolgen. Sie können die Aufgaben-IDs für einen Benutzer aus der `tb_task` ermitteln, wie in [Prozessinstanz-IDs identifizieren, wenn der Workflow-Initiator oder -Teilnehmer bekannt ist](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant).
 
 Sobald Sie die Aufgaben-IDs haben, führen Sie die folgenden Schritte aus, um die verknüpften Dateien und Daten mit einer verwaisten Aufgabe aus dem GDS und der Datenbank zu löschen.
 
@@ -173,7 +173,7 @@ Sobald Sie die Aufgaben-IDs haben, führen Sie die folgenden Schritte aus, um di
 
       `<file_name_guid>.session<session_id_string>`
 
-      1. Löschen Sie alle Marker-Dateien und andere Dateien mit dem exakten Dateinamen `<file_name_guid>` aus dem Dateisystem.
+      1. Löschen Sie alle Markierungsdateien und andere Dateien mit dem genauen Dateinamen wie `<file_name_guid>` aus dem Dateisystem.
    1. **GDS in der Datenbank**
 
       Führen Sie den folgenden Befehle für jede Sitzungs-ID aus:
