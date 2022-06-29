@@ -1,8 +1,8 @@
 ---
 title: Anpassen der Auflistung von Prozessinstanzen
-seo-title: Anpassen der Auflistung von Prozessinstanzen
+seo-title: Customizing the listing of process instances
 description: Gehen Sie wie folgt vor, um die Eigenschaften anzupassen, die in der Prozessinstanz in AEM Forms Workspace angezeigt werden.
-seo-description: Gehen Sie wie folgt vor, um die Eigenschaften anzupassen, die in der Prozessinstanz in AEM Forms Workspace angezeigt werden.
+seo-description: How-to customize the properties displayed in process instance in AEM Forms workspace.
 uuid: 3b55d9b9-7f73-46dd-9eb6-42be218440a1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: 40d7d43f-ee0a-4e34-ae93-20c9c940f76b
 exl-id: b27ffe92-8491-43a0-bf42-613eb39a606e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 88%
+workflow-type: ht
+source-wordcount: '284'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ In der Prozessinstanzliste zeigt AEM Forms Workspace für jede Prozessinstanz ei
 <table>
  <tbody>
   <tr>
-   <td><strong>Property</strong></td>
+   <td><strong>Eigenschaft</strong></td>
    <td><strong>Kommentare</strong></td>
   </tr>
   <tr>
@@ -75,7 +75,7 @@ Um die Eigenschaft `description` der Prozessinstanz auf der Prozessinstanzkarte 
 1. Gehen Sie folgendermaßen vor:
 
    1. Kopieren Sie /libs/ws/js/runtime/templates/processinstance.html nach /apps/ws/js/runtime/templates/, wenn es nicht existiert. Klicken Sie auf **Alle speichern**.
-   1. Fügen Sie Prozessbeschreibung div mit class = &#39;processDescription&#39; in processinstance.html hinzu.
+   1. Fügen Sie die Prozessbeschreibung div mit class = „processDescription“ in processinstance.html hinzu.
 
    ```jsp
    <div class="processDescription" title="<%= description%>"><%= description%></div>
@@ -84,7 +84,7 @@ Um die Eigenschaft `description` der Prozessinstanz auf der Prozessinstanzkarte 
 1. Gehen Sie folgendermaßen vor:
 
    1. Öffnen Sie /apps/ws/js/registry.js zur Bearbeitung.
-   1. Suchen und ersetzen Sie `text!/lc/libs/ws/js/runtime/templates/processinstance.html`durch `text!/lc/`**apps**/ws/js/runtime/templates/processinstance.html.
+   1. Suchen und Ersetzen `text!/lc/libs/ws/js/runtime/templates/processinstance.html`mit `text!/lc/`**apps**/ws/js/runtime/templates/processinstance.html
 
 1. Die oben genannten Änderungen erfordern möglicherweise ein Update der CSS-Datei, indem Sie wie folgt einen Eintrag im Stylesheet /apps/ws/css/newStyle.css hinzufügen:
 
