@@ -1,17 +1,17 @@
 ---
 title: Härten (Absichern) und Schutz von AEM Forms in OSGi-Umgebungen
-seo-title: Härten (Absichern) und Schutz von AEM Forms in OSGi-Umgebungen
+seo-title: Hardening and Securing AEM forms on OSGi environment
 description: Hier finden Sie Empfehlungen und Best Practices zum Schutz von AEM Forms auf einem OSGi-Server.
-seo-description: Hier finden Sie Empfehlungen und Best Practices zum Schutz von AEM Forms auf einem OSGi-Server.
+seo-description: Learn recommendations and best practices for securing AEM Forms on OSGi server.
 uuid: abca7e7c-38c3-44f5-8d8a-4615cfce26c6
 topic-tags: Security
 discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
 role: Admin
 exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
-source-wordcount: '1463'
-ht-degree: 99%
+workflow-type: ht
+source-wordcount: '1443'
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Die Zielgruppe dieses Artikels sind IT-Berater, Sicherheitsexperten, Systemarchi
 
 Die folgende Abbildung zeigt Komponenten und Protokolle, die in einer typischen AEM Forms-Bereitstellung verwendet werden, einschließlich der entsprechenden Firewall-Topologie:
 
-![typische Architektur](assets/typical-architecture.png)
+![typical-architecture](assets/typical-architecture.png)
 
 AEM Forms kann in hohem Maß angepasst und in vielen verschiedenen Umgebungen eingesetzt werden. Einige der Empfehlungen sind möglicherweise für Ihr Unternehmen nicht relevant.
 
@@ -176,7 +176,7 @@ Für die Authoring-, Veröffentlichungs- und Verarbeitungsinstanz sind jeweils u
       * können keine XDP-basierten adaptiven Formulare erstellen
       * haben keine Berechtigung zum Schreiben von Skripten für adaptive Formulare
       * können weder XDP noch Pakete importieren, die XDP enthalten
-   * Benutzer der Gruppe „forms-power-user“ können alle Typen von Formularen erstellen, ausfüllen, veröffentlichen und senden, Skripte für adaptive Formulare schreiben und Pakete importieren, die XSP enthalten.
+   * Benutzer der Gruppe „forms-power-user“ können alle Typen von Formularen erstellen, ausfüllen, veröffentlichen und senden, Skripte für adaptive Formulare schreiben und Pakete importieren, die XDP enthalten.
    * Benutzer der Gruppen „template-authors“ und „template-power-user“ können Vorlagen in der Vorschau anzeigen und erstellen.
    * Benutzer der Gruppe „fdm-authors“ können Formulardatenmodelle erstellen und ändern.
    * Benutzer der Gruppe „cm-user-agent“ können Correspondence Management-Briefe erstellen, in der Vorschau anzeigen und veröffentlichen.
