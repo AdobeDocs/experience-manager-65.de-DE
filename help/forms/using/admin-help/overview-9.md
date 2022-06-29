@@ -1,8 +1,8 @@
 ---
 title: Überblick über den Arbeitsablauf für Formulare
-seo-title: Überblick über den Arbeitsablauf für Formulare
+seo-title: Overview of Forms workflow
 description: Mit dem Arbeitsablauf für Formulare können Benutzer am Menschen orientierte Prozesse entwerfen, verwalten und optimieren. Mithilfe des Arbeitsablaufs für Formulare können Benutzer außerdem automatisierte Geschäftsprozessanwendungen verwalten, die Systeme und Personen miteinander verbinden.
-seo-description: Mit dem Arbeitsablauf für Formulare können Benutzer am Menschen orientierte Prozesse entwerfen, verwalten und optimieren. Mithilfe des Arbeitsablaufs für Formulare können Benutzer außerdem automatisierte Geschäftsprozessanwendungen verwalten, die Systeme und Personen miteinander verbinden.
+seo-description: Forms workflow lets users design, manage, and optimize human-centric processes. Using forms workflow, users can also manage automated business-process applications that connect systems and people.
 uuid: b28ada7c-de75-416a-b2c8-f6494be5330c
 contentOwner: admin
 content-type: reference
@@ -11,8 +11,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7d2a9de8-13d1-4981-9ba2-9654127556b8
 exl-id: 68a9d95a-d51c-4a97-ae36-d4cb16c6fac0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '283'
+workflow-type: ht
+source-wordcount: '254'
 ht-degree: 100%
 
 ---
@@ -26,7 +26,7 @@ Auf jeder Seite des Arbeitsablaufs für Formulare in Administration Console kön
 <table>
  <thead>
   <tr>
-   <th><p>Seite </p></th>
+   <th><p>Seite</p></th>
    <th><p>Aufgaben</p></th>
    <th><p>Siehe</p></th>
   </tr>
