@@ -1,8 +1,8 @@
 ---
-title: Generate PDF Service Java API QuickStart(SOAP)
+title: Generate PDF Service Java API QuickStart (SOAP)
 seo-title: Generate PDF Service Java API QuickStart(SOAP)
-description: Verwenden Sie den Generate PDF-Dienst, um ein Microsoft Word-Dokument in ein PDF-Dokument zu konvertieren, HTML-Inhalt in ein PDF-Dokument zu konvertieren und mithilfe der Java-API ein PDF-Dokument in eine RTF-Datei zu konvertieren.
-seo-description: Verwenden Sie den Generate PDF-Dienst, um ein Microsoft Word-Dokument in ein PDF-Dokument zu konvertieren, HTML-Inhalt in ein PDF-Dokument zu konvertieren und mithilfe der Java-API ein PDF-Dokument in eine RTF-Datei zu konvertieren.
+description: Verwenden Sie den Generate PDF-Dienst, um ein Microsoft Word-Dokument in ein PDF-Dokument zu konvertieren, HTML-Inhalte in ein PDF-Dokument zu konvertieren und mithilfe der Java-API ein PDF-Dokument in eine RTF-Datei zu konvertieren.
+seo-description: Use the Generate PDF service to convert a Microsoft Word document to a PDF document, convert HTML content to a PDF document, convert a PDF document to an RTF file using the Java API.
 uuid: f8c4a476-de5e-440a-b419-0bd1d7fde5ca
 contentOwner: admin
 content-type: reference
@@ -12,15 +12,15 @@ discoiquuid: a7c0c4cf-7476-41e7-8d4e-564e6a21458d
 role: Developer
 exl-id: b856a93b-91fa-47a5-9e46-6a537218fd4e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 1%
+workflow-type: ht
+source-wordcount: '324'
+ht-degree: 100%
 
 ---
 
-# Generate PDF Service Java API Quick Start (SOAP) {#generate-pdf-service-java-api-quickstart-soap}
+# Schnellstart (SOAP) für die Generate PDF Service Java API {#generate-pdf-service-java-api-quickstart-soap}
 
-Java API Quick Start (SOAP) ist für den Generate PDF-Dienst verfügbar.
+Java API Schnellstart (SOAP) ist für den Generate PDF-Dienst verfügbar.
 
 [Schnellstart (SOAP-Modus): Konvertieren eines Microsoft Word-Dokuments in ein PDF-Dokument mithilfe der Java-API](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api)
 
@@ -28,11 +28,11 @@ Java API Quick Start (SOAP) ist für den Generate PDF-Dienst verfügbar.
 
 [Schnellstart (SOAP-Modus): Konvertieren eines PDF-Dokuments in eine RTF-Datei mithilfe der Java-API (SOAP-Modus)](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden und der Verbindungsmodus sollte auf SOAP festgelegt werden.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API durchgeführt werden und der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
 >[!NOTE]
 >
->Schnellstart, der unter Programmieren mit AEM Forms zu finden ist, basiert auf dem Forms-Server, der auf JBoss Application Server und dem Microsoft Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Die Schnellstartanleitung, die unter „Programmieren mit AEM Forms“ zu finden ist, basiert auf dem Forms-Server, der auf JBoss Application Server und dem Betriebssystem Microsoft Windows bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem, z. B. UNIX, verwenden, ersetzen Sie die Windows-spezifischen Pfade durch Pfade, die von dem jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungs-Server verwenden, müssen Sie ebenfalls sicherstellen, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Schnellstart (SOAP-Modus): Konvertieren eines Microsoft Word-Dokuments in ein PDF-Dokument mithilfe der Java-API {#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api}
 
@@ -256,7 +256,7 @@ Im folgenden Java-Codebeispiel wird HTML-Inhalt unter https://www.adobe.com in e
 
 ## Schnellstart (SOAP-Modus): Konvertieren eines PDF-Dokuments in eine RTF-Datei mithilfe der Java-API (SOAP-Modus) {#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode}
 
-Im folgenden Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* in ein RTF-Dokument mit dem Namen *Loan.rtf* konvertiert. (Siehe [Konvertieren von PDF-Dokumenten in Nicht-Bildformate](/help/forms/developing/converting-file-formats-pdf.md#converting-pdf-documents-to-non-image-formats).)
+Im folgenden Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* in ein RTF-Dokument mit dem Namen *Loan.rtf* kovertiert. (Siehe [Konvertieren von PDF-Dokumenten in Nicht-Bildformate](/help/forms/developing/converting-file-formats-pdf.md#converting-pdf-documents-to-non-image-formats).)
 
 ```java
  /*
