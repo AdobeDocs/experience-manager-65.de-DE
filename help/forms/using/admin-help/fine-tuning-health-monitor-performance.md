@@ -1,8 +1,8 @@
 ---
-title: Leistung von Health Monitor optimieren
-seo-title: Leistung von Systemüberwachung optimieren
+title: Leistung von Systemüberwachung optimieren
+seo-title: Fine-tuning Health Monitor performance
 description: Erfahren Sie, wie Sie die Leistung der Systemüberwachung optimieren.
-seo-description: Erfahren Sie, wie Sie die Leistung der Systemüberwachung optimieren.
+seo-description: Learn how to fine-tune Health Monitor performance
 uuid: 770b10cb-065f-41b5-9594-a291e4311151
 contentOwner: admin
 content-type: reference
@@ -11,20 +11,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
 exl-id: 41042e08-5e14-4809-89b7-16d98a72d1b4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 88%
+workflow-type: ht
+source-wordcount: '407'
+ht-degree: 100%
 
 ---
 
-# Leistung von Systemüberwachung optimieren{#fine-tuning-health-monitor-performance}
+# Leistung von Health Monitor optimieren{#fine-tuning-health-monitor-performance}
 
-Das Sammeln der Systemstatistiken, die in der Systemüberwachung angegeben werden, hat Auswirkungen auf die Leistung Ihrer AEM Forms-Umgebung. Diese Auswirkungen können durch Festlegen der unten aufgeführten Java-Optionen in Ihrem Anwendungsserver kontrolliert werden.
+Das Sammeln der Systemstatistiken, die in Health Monitor angegeben werden, hat Auswirkungen auf die Leistung Ihrer AEM Forms-Umgebung. Diese Auswirkungen können durch Festlegen der unten aufgeführten Java-Optionen in Ihrem Anwendungsserver kontrolliert werden.
 
 <table>
  <thead>
   <tr>
-   <th><p>Property</p></th>
+   <th><p>Eigenschaft</p></th>
    <th><p>Zweck</p></th>
    <th><p>Standardwert</p></th>
   </tr>
@@ -33,12 +33,12 @@ Das Sammeln der Systemstatistiken, die in der Systemüberwachung angegeben werde
   <tr>
    <td><p>adobe.healthmonitor.enabled</p></td>
    <td><p>Systemüberwachung-Thread aktivieren oder deaktivieren</p></td>
-   <td><p>true</p></td>
+   <td><p>Ja</p></td>
   </tr>
   <tr>
    <td><p>adobe.cache.statistics-enabled</p></td>
    <td><p>Gemfire-Zwischenspeicherung aktivieren oder deaktivieren</p></td>
-   <td><p>true</p></td>
+   <td><p>Ja</p></td>
   </tr>
   <tr>
    <td><p>adobe.healthmonitor.refresh-interval</p></td>
@@ -58,7 +58,7 @@ Das Sammeln der Systemstatistiken, die in der Systemüberwachung angegeben werde
   <tr>
    <td><p>adobe.workmanager.healthmonitor.enabled</p></td>
    <td><p>Diese Eigenschaft aktiviert oder deaktiviert die Work Manager-Statistiksammlung, z. B. die Anzahl der Aufträge oder Arbeitselemente.</p></td>
-   <td><p>true</p></td>
+   <td><p>Ja</p></td>
   </tr>
  </tbody>
 </table>
@@ -66,20 +66,20 @@ Das Sammeln der Systemstatistiken, die in der Systemüberwachung angegeben werde
 ## Java-Optionen zu JBoss hinzufügen {#add-java-options-to-jboss}
 
 1. JBoss-Anwendungsserver beenden.
-1. Öffnen Sie den *[Anwendungsserver-Stammordner]*/bin/run.bat (Windows) oder run.sh (Linux oder UNIX) in einem Editor und fügen Sie die Java-Optionen nach Bedarf hinzu.
+1. Öffnen Sie „*[Programm-Server-Stammordner]*/bin/run.bat“ (Windows) oder „run.sh“ (Linux oder UNIX) in einem Texteditor und fügen Sie die Java-Optionen Ihren Anforderungen entsprechend hinzu.
 1. Starten Sie den Server neu.
 
-## Java-Optionen zu WebLogic hinzufügen  {#add-java-options-to-weblogic}
+## Java-Optionen zu WebLogic hinzufügen {#add-java-options-to-weblogic}
 
-1. Starten Sie WebLogic Administration Console, indem Sie in die Adresszeile eines Browsers https://[Hostname]:&#39;port&#39;/console eingeben.
-1. Geben Sie den von Ihnen erstellten Benutzernamen und das Kennwort für die WebLogic-Serverdomäne ein und klicken Sie unter „Change Center“ auf „Log“ und dann auf „Lock &amp; Edit“.
-1. Klicken Sie unter „Domain Structure“ auf Environment> Servers und anschließend im rechten Bereich auf den Namen des verwalteten Servers.
+1. Starten Sie die WebLogic-Administration-Console, indem Sie „https://[Hostname]:&#39;port&#39;/console“ in die Adresszeile eines Webbrowsers eingeben.
+1. Geben Sie den von Ihnen erstellten Benutzernamen und das Kennwort für die WebLogic-Server-Domain ein und klicken Sie unter „Change Center“ auf „Log“ und dann auf „Lock &amp; Edit“.
+1. Klicken Sie unter „Domain Structure“ auf Environment > Servers und anschließend im rechten Bereich auf den Namen des verwalteten Servers.
 1. Klicken Sie im nächsten Bildschirm auf die Registerkarten Configuration > Server Start.
-1. Fügen Sie im Feld „Arguments“ die erforderlichen Informationen am Ende des aktuellen Inhalts hinzu. Wenn Sie beispielsweise - `Dadobe.healthmonitor.enabled=false` hinzufügen, wird Health Monitor deaktiviert.
+1. Fügen Sie im Feld „Arguments“ die erforderlichen Informationen am Ende des aktuellen Inhalts hinzu. Wenn Sie beispielsweise „‑ `Dadobe.healthmonitor.enabled=false`“ hinzufügen, wird Health Monitor deaktiviert.
 1. Klicken Sie auf Save und dann auf Activate Changes.
 1. Starten Sie WebLogic Managed Server neu.
 
-## Java-Optionen zu WebSphere hinzufügen  {#add-java-options-to-websphere}
+## Java-Optionen zu WebSphere hinzufügen {#add-java-options-to-websphere}
 
 1. Führen Sie in der Navigationsstruktur von WebSphere Administrative Console die folgenden Schritte für Ihren Anwendungsserver aus:
 
