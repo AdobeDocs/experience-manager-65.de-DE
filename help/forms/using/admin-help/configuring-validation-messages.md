@@ -1,8 +1,8 @@
 ---
 title: Überprüfungsmeldungen konfigurieren
-seo-title: Überprüfungsmeldungen konfigurieren
+seo-title: Configuring validation messages
 description: Erfahren Sie, wie Sie angeben, wie die Validierungsnachrichten und deren Position relativ zum im Webbrowser zurückgegebenen Formular angezeigt werden.
-seo-description: Erfahren Sie, wie Sie angeben, wie die Validierungsnachrichten und deren Position relativ zum im Webbrowser zurückgegebenen Formular angezeigt werden.
+seo-description: Learn how to specify how validation messages are displayed and their location relative to the form returned in the web browser.
 uuid: f6bff4fa-f90f-4135-ae40-7ab3d3613122
 contentOwner: admin
 content-type: reference
@@ -11,8 +11,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5f2f8129-e45e-4f3f-ae30-c09330d0e152
 exl-id: 14314383-5228-4904-98c1-586f48a1142c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '374'
+workflow-type: ht
+source-wordcount: '350'
 ht-degree: 100%
 
 ---
@@ -40,7 +40,7 @@ Für Formulare, die als HTML wiedergegeben werden, werden Formular-Überprüfung
 
 1. Klicken Sie auf Speichern.
 
-## Die Position der Überprüfungsmeldungen relativ zum im Webbrowser zurückgegebenen Formular angeben  {#specify-the-location-of-validation-messages-relative-to-the-form-returned-in-the-web-browser}
+## Die Position der Überprüfungsmeldungen relativ zum im Webbrowser zurückgegebenen Formular angeben {#specify-the-location-of-validation-messages-relative-to-the-form-returned-in-the-web-browser}
 
 Wenn „Berichte“ auf „Frame“ oder „Kein Frame“ festgelegt ist, können Sie die Position der Überprüfungsmeldungen angeben.
 
@@ -56,7 +56,7 @@ Wenn „Berichte“ auf „Frame“ oder „Kein Frame“ festgelegt ist, könne
 
 1. Klicken Sie auf Speichern.
 
-## Die Rahmenstärke angeben  {#specify-the-frame-border-size}
+## Die Rahmenstärke angeben {#specify-the-frame-border-size}
 
 Wenn „Berichte“ auf „Frame“ festgelegt ist, können Sie die Rahmenstärke angeben.
 
