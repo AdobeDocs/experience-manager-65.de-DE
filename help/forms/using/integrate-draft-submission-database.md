@@ -81,6 +81,7 @@ unter https://[*host*]:[*port*]/system/console/configMgr.
    Angeben eines anderen Namens für die Datentabelle:
 
    * Auf der Seite zur Web-Konsolenkonfiguration klicken Sie auf die Beispielimplementierung des Forms Portal-Datenservice. Sie können die Werte der Datenquelle und Datentabellennamen ändern.
+
    >[!NOTE]
    >
    >Wenn Sie die Tabellennamen ändern, geben Sie sie in der Formularportal-Konfiguration an.
@@ -163,7 +164,7 @@ unter https://[*host*]:[*port*]/system/console/configMgr.
 >
 > * Der JDBC-Treiber für MySQL wird nicht mit dem Beispiel geliefert. Stellen Sie sicher, dass Sie ihn bereitgestellt haben, und geben Sie die erforderlichen Informationen ein, um den JDBC-Verbindungspool zu konfigurieren.
 > * Zeigen Sie mit Ihren Autor- und Veröffentlichungsinstanzen, um dieselbe Datenbank zu verwenden. Der Wert des URI-Feldes für die JDBC-Verbindung muss für alle Autoren- und Veröffentlichungsinstanzen gleich sein.
-   >
+>
 
 
 1. Belassen Sie die anderen Konfigurationen und klicken Sie auf **[!UICONTROL Speichern]**.
