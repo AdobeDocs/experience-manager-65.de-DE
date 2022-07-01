@@ -9,10 +9,10 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: ht
-source-wordcount: '4260'
-ht-degree: 100%
+source-git-commit: 64ba9b1082e39552cd27e5616de2a35f7870270b
+workflow-type: tm+mt
+source-wordcount: '4398'
+ht-degree: 96%
 
 ---
 
@@ -172,6 +172,7 @@ Beachten Sie die folgenden bewährten Verfahren, um, Leistungsprobleme mit groß
    * In verzögert geladenen Fragmenten werden keine Komponenten für Dateianhänge und Geschäftsbedingungen unterstützt.
    * Markieren Sie einen Wert in einem verzögerten geladenen Bereich als „Wert global verwenden“, wenn dieser Wert in einem anderen Teil des Formulars verwendet wird, sodass der Wert für die Verwendung verfügbar ist, wenn der enthaltene Bereich entladen wird.
    * Erwägen Sie, Sichtbarkeitsregeln für Fragmente zu erstellen, die basierend auf einer Bedingung ein- bzw. ausgeblendet werden sollen.
+* Legen Sie den Wert der **Anzahl der Aufrufe pro Anfrage** im **Apache Sling Main Servlet** auf eine ziemlich große Zahl. Dadurch kann der Forms-Server zusätzliche Aufrufe zulassen. Die Konfiguration zeigt den Standardwert 1500 an. Der Wert (1500-Aufrufe) ist für andere Experience Manager-Komponenten wie Sites und Assets bestimmt. Der Standardwert für adaptive Formulare ist 20000. Wenn Sie auf `too many calls` -Fehler in den Protokollen angezeigt wird oder das Formular nicht gerendert werden kann, versuchen Sie, den Wert auf eine große Zahl zu erhöhen, um das Problem zu beheben. Wenn die Anzahl der Aufrufe 20000 überschreitet, bedeutet das, dass das Formular komplex ist und es einige Zeit dauern kann, das Formular im Browser wiederzugeben. Dies geschieht nur zum ersten Mal, wenn das Formular geladen wird, nachdem das Formular zwischengespeichert wurde und sobald das Formular zwischengespeichert wurde, hat dies keine wesentlichen Auswirkungen auf die Leistung.
 
 ### Vorbefüllen von adaptiven Formularen {#prefilling-adaptive-forms}
 
