@@ -9,10 +9,10 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: d9608d584e822accc0c198fcf1d1b706d065938e
+source-git-commit: e3bc820dd9bfce95cdc0c8c58c075893a1f0a625
 workflow-type: tm+mt
-source-wordcount: '7466'
-ht-degree: 99%
+source-wordcount: '7575'
+ht-degree: 98%
 
 ---
 
@@ -283,6 +283,13 @@ Mit dem Schritt „Dokument signieren“ können Sie Adobe Sign zum Signieren vo
 * **Cloud-Konfiguration für Adobe Sign**: Wählen Sie eine Adobe Sign Cloud-Konfiguration. Wenn Sie Adobe Sign für AEM Forms nicht konfiguriert haben, lesen Sie den Abschnitt [Adobe Sign in AEM Forms integrieren](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 
 * **Zu signierendes Dokument auswählen mit**: Sie können ein Dokument an einem Speicherort relativ zur Payload auswählen, Payload als das Dokument verwenden, einen absoluten Pfad für das Dokument angeben oder das Dokument abrufen, das in einer Variablen des Datentyps „Document“ gespeichert ist.
+
+
+* **Wählen Sie den Pfad für die Eingabeanlage mit:** Pfad der Anlagen. Diese Anlagen sind im Signaturdokument enthalten. Sie können die Anhänge an einem Speicherort relativ zur Payload speichern, einen absoluten Pfad der Anhänge angeben oder Anhänge abrufen, die in einer Variablen des Datentyps „Dokument“ gespeichert sind.
+
+
+Wenn Sie den Pfad eines Ordners angeben, z. B. Anlagen, werden alle direkt im Ordner verfügbaren Dateien an das Signaturdokument angehängt. Wenn Dateien in den Ordnern verfügbar sind, die direkt im angegebenen Anlagenpfad verfügbar sind, werden die Dateien in &quot;Signing Document&quot;als Anhänge aufgenommen. Wenn sich Ordner in direkt verfügbaren Ordnern befinden, werden diese übersprungen.
+
 * **Tage bis Abgabetermin:** Ein Dokument wird als „fällig“ (Abgabetermin überschritten) gekennzeichnet, nachdem für die im Feld **Tage bis Abgabetermin** angegebene Anzahl von Tagen keine Aktivität für die Aufgabe ermittelt wurde. Die Anzahl der Tage wird gezählt, nachdem das Dokument einem Benutzer zur Unterzeichnung zugewiesen wurde.
 * **Häufigkeit der E-Mail-Erinnerung:** Sie können eine Erinnerungs-E-Mail im täglichen oder wöchentlichen Intervall senden. Die Woche wird ab dem Tag gezählt, an dem das Dokument einem Benutzer zum Signieren zugewiesen wurde.
 * **Signaturvorgang:** Sie können ein Dokument in einer sequenziellen oder parallelen Reihenfolge signieren. Bei sequenzieller Reihenfolge erhält jeweils nur ein Unterzeichner das Formular zur Unterzeichnung. Nachdem der erste Unterzeichner das Dokument signiert hat, wird das Formular an den nächsten Unterzeichner gesendet und so weiter. Bei paralleler Reihenfolge können mehrere Unterzeichner ein Formular gleichzeitig signieren.
