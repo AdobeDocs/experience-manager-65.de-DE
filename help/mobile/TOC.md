@@ -5,12 +5,12 @@ audience: end-user
 user-guide-title: AEM 6.5-Mobilbenutzeranleitung
 breadcrumb-title: Mobilanleitung
 user-guide-description: Erstellen und verwalten Sie Inhalte für Mobile Apps.
-feature: Mobilgerät
+feature: Mobile
 role: User
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 30%
+source-wordcount: '331'
+ht-degree: 29%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 30%
    + [AEM Adobe PhoneGap](getting-started-aem-mobile-phonegap.md)
    + [AEM Mobile – Einhaltung der Datenschutz-Grundverordnung](aem-mobile-gdpr-compliance.md)
    + [Entwickeln von mobilen Apps](develop-mobile-apps.md)
-+ Authoring On-Demand Services App {#authoring}
++ Authoring der On-Demand Services-App {#authoring}
    + [Mobile On-Demand](mobile-apps-ondemand.md)
    + [Verwalten von Inhalten](mobile-apps-ondemand-manage-content-ondemand.md)
    + [Veröffentlichung von Inhalt rückgängig machen](mobile-on-demand-publishing-unpublishing.md)
@@ -35,7 +35,7 @@ ht-degree: 30%
    + [Hochladen freigegebener Ressourcen](mobile-on-demand-shared-resources.md)
    + [Cloud-Konfiguration](mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
    + [Verwalten von Bannern](mobile-on-demand-managing-banners.md)
-+ Entwickeln der On-Demand Services App {#developing}
++ Entwickeln der On-Demand Services-App {#developing}
    + [AEM Mobile On-Demand](aem-mobile-on-demand.md)
    + [App-Vorlagen und -Komponenten](app-templates-and-components1.md)
    + [Inhaltseigenschaften und Knoten](content-properties.md)
@@ -58,7 +58,7 @@ ht-degree: 30%
    + [Modellübersicht](model-management.md)
    + [Platzierungen und Entitäten](spaces-and-entities.md)
    + [Verwalten von Sammlungen](mobile-on-demand-managing-collections.md)
-+ Authoring Adobe PhoneGap Enterprise {#author-phonegap}
++ Authoring in Adobe PhoneGap Enterprise {#author-phonegap}
    + [PhoneGap](phonegap.md)
    + [Bearbeiten von App-Metadaten](phonegap-editmetadata.md)
    + [App-Definitionen](phonegap-app-definitions.md)
@@ -82,7 +82,7 @@ ht-degree: 30%
    + [Hinzufügen von Adobe Analytics zu einer Mobile App](phonegap-add-analytics-to-apps.md)
    + [Seitenvorlagen für mobile Apps](phonegap-apps-arch-page-templates.md)
    + [Konfigurieren von Adobe Target Cloud Service](aem-mobile-configuring-cloud-service.md)
-   + [Einzelseiten-Web-Anwendungen (SPA)](phonegap-single-page-applications.md)
+   + [Single Page Applications (SPA)](phonegap-single-page-applications.md)
    + [Modelle im Repository](https://experienceleague.adobe.com/docs/experience-manager-65/mobile/administering/administer-mobile-apps.html)
    + [Starten AEM PhoneGap](starting-aem-phonegap-app.md)
    + [Testen von mobilen Apps](develop-mobile-apps-testing.md)

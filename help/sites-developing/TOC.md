@@ -177,7 +177,7 @@ ht-degree: 75%
    + [AEM Brackets-Erweiterung](aem-brackets.md)
    + [AEM Developer Tools for Eclipse](aem-eclipse.md)
    + [AEM Repo Tool](aem-repo-tool.md)
-+ Personalisierung{#personlization}
++ Personalisierung {#personlization}
    + [ContextHub](contexthub.md)
    + [Konfigurieren von ContextHub](ch-configuring.md)
    + [Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher](ch-adding.md)
@@ -191,14 +191,14 @@ ht-degree: 75%
       + [ClientContext im Detail](client-context.md)
       + [ClientContext-JavaScript-API](ccjsapi.md)
 + Erweitern von AEM{#extending-aem}
-   + [Erweitern von AEM mit dem Adobe Developer App Builder](app-builder.md)
+   + [Erweitern von Adobe Experience Manager mit Adobe Developer App Builder](app-builder.md)
    + [Anpassung des Seiten-Authorings](customizing-page-authoring-touch.md)
    + [Anpassen der Konsolen](customizing-consoles-touch.md)
    + [Anpassen von Ansichten von Seiteneigenschaften](page-properties-views.md)
    + [Konfigurieren Sie Ihre Seite für die Massenbearbeitung von Seiteneigenschaften](bulk-editing.md)
    + [Anpassen und Erweitern von Inhaltsfragmenten](customizing-content-fragments.md)
    + [Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren](content-fragments-config-components-rendering.md)
-   + [Experience Fragments](experience-fragments.md)
+   + [Experience Fragments ](experience-fragments.md)
    + Erweitern von Workflows{#extending-workflows}
       + [Entwickeln und Erweitern von Workflows](workflows.md)
       + [Erstellen von Workflow-Modellen](workflows-models.md)
@@ -207,7 +207,7 @@ ht-degree: 75%
       + [Referenz für Workflow-Schritte](workflows-step-ref.md)
       + [Best Practices für Workflows](workflows-best-practices.md)
       + [Prozessreferenz für Workflows](workflows-process-ref.md)
-      + [Variablen in AEM Workflows](/help/sites-developing/using-variables-in-aem-workflows.md)
+      + [Variablen in AEM-Workflows](/help/sites-developing/using-variables-in-aem-workflows.md)
    + [Erweitern des Multi-Site-Managers](extending-msm.md)
    + Tracking und Analytics{#extending-analytics}
       + [Erweitern der Ereignisverfolgung](extending-analytics.md)
@@ -218,7 +218,7 @@ ht-degree: 75%
       + [Cloud Service-Konfigurationen](extending-cloud-config.md)
       + [Erstellen eines individuellen Cloud-Service](extending-cloud-config-custom-cloud.md)
    + [Erstellen benutzerspezifischer Erweiterungen](extending-campaign-extensions.md)
-   + Forms{#extending-forms}
+   + Formulare{#extending-forms}
       + [Erstellen benutzerdefinierter Formularzuordnungen](extending-campaign-form-mapping.md)
       + [Erstellen benutzerdefinierter AEM-Seitenvorlagen mit Adobe Campaign-Formularkomponenten](extending-campaign-custom-template.md)
       + [Anfragenanalyse-Skript](analyze-request.md)

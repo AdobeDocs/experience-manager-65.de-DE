@@ -11,7 +11,7 @@ role: Admin
 source-git-commit: a1821ab210b3735ca5b59b075659ff30d5872b8e
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -67,7 +67,7 @@ ht-degree: 90%
    + [Konfigurieren von AEM-Apps](config-apps.md)
    + [Konfigurieren von Suchformularen](search-forms.md)
    + [Die Tools-Konsolen ](tools-consoles.md)
-   + [Berichterstellung](reporting.md)
+   + [Reporting](reporting.md)
    + [Konfigurieren von Layout-Container und Layout-Modus](configuring-responsive-layout.md)
    + [Bearbeiter](enable-classic-ui-editor.md)
    + [Aktivierung des Zugriffs auf die klassische Benutzeroberfläche](enable-classic-ui.md)
@@ -100,8 +100,8 @@ ht-degree: 90%
    + [Content-Disposition-Filter](content-disposition-filter.md)
    + [Zuordnung benutzerdefinierter Benutzergruppen in AEM 6.5](/help/sites-administering/cug-mapping.md)
    + [Unterstützung von Same Site-Cookies](same-site-cookie-support.md)
-+ Personalisierung {#personalization}
-   + [Personalisierung](personalization.md)
++ Personalisierung  {#personalization}
+   + [Personalisierung ](personalization.md)
    + [Konfigurieren von ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-configuring.html)
    + [ClientContext](client-context.md)
    + [Kampagnen](campaigns.md)
@@ -148,7 +148,7 @@ ht-degree: 90%
    + [Adobe Classifications](adobeanalytics-classifications.md)
    + [Integrieren mit Adobe Search&amp;Promote](search-and-promote.md)
    + [Lösungsintegration](integration.md)
-   + [Exportieren von Experience Fragments in Adobe Target](experience-fragments-target.md)
+   + [Exportieren von Experience Fragments nach Adobe Target](experience-fragments-target.md)
    + [Best Practices für E-Mail-Vorlagen](best-practices-for-email-templates.md)
    + [Integrieren mit Livefyre](livefyre.md)
 + Best Practices {#bestpractices}

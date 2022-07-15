@@ -6,12 +6,12 @@ user-guide-description: Erfahren Sie, wie Sie Adobe Experience Manager Content a
 source-git-commit: 0ae78938641c383a65462096235e3b62d6b67e23
 workflow-type: tm+mt
 source-wordcount: '123'
-ht-degree: 78%
+ht-degree: 86%
 
 ---
 
 
-# Commerce {#commerce}
+# Commerce  {#commerce}
 
 + [AEM Content und Commerce](/help/commerce/home.md)
 + [Wesentliche Änderungen an AEM Content und Commerce](cif/changes.md)
