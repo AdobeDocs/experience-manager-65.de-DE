@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 64ba9b1082e39552cd27e5616de2a35f7870270b
+source-git-commit: 0f1724cbb7ef4fec366fb8b63511a981b47b5429
 workflow-type: tm+mt
-source-wordcount: '4398'
+source-wordcount: '4322'
 ht-degree: 96%
 
 ---
@@ -134,7 +134,7 @@ Der Regeleditor bietet einen visuellen Editor und einen Code-Editor für Schreib
    * Darüber hinaus können Sie die folgenden Feldeigenschaften verwenden:
 
       * `field.value`, um den Wert eines Felds zu ändern.
-      * f`ield.enabled`, um ein Feld zu aktivieren.
+      * `field.enabled`, um ein Feld zu aktivieren.
       * `field.visible`, um die Sichtbarkeit eines Felds zu ändern. 
 
 * Autoren für adaptive Formulare müssen möglicherweise JavaSript-Code schreiben, um Businesslogik in ein Formular zu integrieren. JavaScript ist zwar leistungsstark und effektiv, aber kann die Sicherheit beeinflussen. Daher müssen Sie sicherstellen, dass der Formularautor eine vertrauenswürdige Person ist und Prozesse zum Review und zur Genehmigung von JavaScript-Code bereitgestellt werden, bevor Sie ein Formular verwenden. Der Administrator kann den Zugriff auf den Regeleditor auf Benutzergruppen entsprechend ihrer Rolle oder Funktion beschränken. Siehe [Ausgewählten Benutzern Zugriff auf den Regel-Editor gewähren](/help/forms/using/rule-editor-access-user-groups.md).
@@ -228,17 +228,6 @@ Das [AEM Chrome Plugin](https://adobe-consulting-services.github.io/acs-aem-tool
 * Durchsuchen und erfahren Sie mehr über guideBridge APIs
 
 Weitere Informationen finden Sie unter [AEM-Plug-In für Chrome – Adaptive Formulare](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/).
-
-Calvin SDK ist eine Dienstprogramm-API für Entwickler von adaptiven Formularen zum Testen von adaptiven Formularen. Calvin SDK wird auf dem [Hobbes.js Testrahmen](https://docs.adobe.com/docs/de/aem/6-3/develop/ref/test-api/index.html) erstellt. Sie können den Rahmen verwenden, um Folgendes zu testen:
-
-* Wiedergabefunktionen eines adaptiven Formulars
-* Befüllen eines adaptiven Formulars
-* Übertragen eines adaptiven Formulars
-* Ausdrucksregeln
-* Validierungen
-* Verzögertes Laden
-
-Weitere Informationen finden Sie unter[ Automatisieren von Tests für adaptive Formulare](/help/forms/using/calvin.md).
 
 ### Validieren von adaptiven Formularen auf dem AEM-Server {#validating-adaptive-forms-on-aem-server}
 

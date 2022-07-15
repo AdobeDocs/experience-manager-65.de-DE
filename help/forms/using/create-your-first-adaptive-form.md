@@ -9,9 +9,9 @@ discoiquuid: 1142bcd4-e3a7-41ce-a710-132ae6c21dbe
 docset: aem65
 feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1056'
+source-git-commit: 471d7f48dc4653000b4852dbbeb886b05e28e644
+workflow-type: tm+mt
+source-wordcount: '957'
 ht-degree: 100%
 
 ---
@@ -78,7 +78,7 @@ Ziele:
 * Konfigurieren der Lese- und Schreibdienste für Datenmodellobjekte
 * Testen des Formulardatenmodells und der konfigurierten Dienste mit Testdaten
 
-[![See the Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-form-data-model.md)
+[![Siehe Handbuch](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-form-data-model.md)
 
 ## Schritt 3: Wenden Sie Regeln auf adaptive Formularfelder an {#step-apply-rules-to-adaptive-form-fields}
 
@@ -91,7 +91,7 @@ Ziele:
 * Erstellen und Anwenden von Regeln in adaptiven Formularfeldern
 * Verwenden Sie Regeln zum Auslösen von Formulardatenmodelldiensten, um Daten in der Datenbank zu aktualisieren 
 
-[![See the Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
+[![Siehe Handbuch](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
 
 ## Schritt 4: Gestalten Sie Ihr adaptives Formular {#step-style-your-adaptive-form}
 
@@ -105,23 +105,9 @@ Ziele:
 * Erstellen Sie mithilfe des Designeditors ein Design für das adaptive Formular
 * Verwenden von Webfonts in einem benutzerdefinierten Design
 
-[![See the Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](style-your-adaptive-form.md)
+[![Siehe Handbuch](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
-## Schritt 5: Testen Sie Ihr adaptives Formular {#step-test-your-adaptive-form}
-
-![11-test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
-
-Adaptive Formulare sind für die Interaktion mit Ihren Kunden von wesentlicher Bedeutung. Es ist wichtig, Ihre adaptiven Formulare bei jeder Änderung, die Sie daran vornehmen, zu testen. Das Testen jedes Felds eines Formulars ist mühsam. AEM [!DNL Forms] bietet ein SDK (Calvin SDK) zum automatischen Testen von adaptiven Formularen. Calvin ermöglicht es Ihnen das automatische Testen der adaptiven Formulare im Webbrowser.
-
-Ziele:
-
-* Erstellen einer Testsuite für das adaptive Formular
-* Erstellen von Testfällen für die adaptiven Formulare
-* Führen Sie die Testfälle aus
-
-[![See the Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](testing-your-adaptive-form.md)
-
-## Schritt 6: Veröffentlichen Sie Ihr adaptives Formular {#step-publish-your-adaptive-form}
+## Schritt 5: Veröffentlichen Sie Ihr adaptives Formular {#step-publish-your-adaptive-form}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
@@ -133,4 +119,4 @@ Ziele:
 * Einbetten des adaptiven Formulars in eine AEM [!DNL Sites]-Seite
 * Einbetten des adaptiven Formulars in eine externe Web-Seite (eine außerhalb von AEM gehostete, nicht zu AEM gehörende Web-Seite)
 
-[![See the Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](publish-your-adaptive-form.md)
+[![Siehe Handbuch](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](publish-your-adaptive-form.md)
