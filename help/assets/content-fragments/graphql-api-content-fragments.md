@@ -3,10 +3,10 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) mit der AEM GraphQL-API für die Bereitstellung Headless Content verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: e7a2a4ad89a58e5fad0acb521adb100cf0bcd1d8
+source-git-commit: 6f3f88ea0f07c97fa8d7ff3bdd1c89114d12a8a1
 workflow-type: tm+mt
-source-wordcount: '3942'
-ht-degree: 97%
+source-wordcount: '3986'
+ht-degree: 96%
 
 ---
 
@@ -433,6 +433,10 @@ Das Feld `_variations` wurde implementiert, um die Abfrage der Varianten eines I
 
 Weitere Informationen finden Sie unter [Beispielabfrage – Alle Städte mit einer gegebenen Variante.](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)
 
+>[!NOTE]
+>
+>Wenn die angegebene Variante für ein Inhaltsfragment nicht vorhanden ist, wird die Übergeordnete Variante als (Fallback-)Standard zurückgegeben.
+
 <!--
 ## Security Considerations {#security-considerations}
 -->
@@ -541,38 +545,43 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
 
 * Wenn Sie ein logisches ODER verwenden möchten:
    * Verwenden Sie ` _logOp: OR`
-   * [Beispielabfrage – Alle Personen mit dem Namen „Jobs“ oder „Smith“](#sample-all-persons-jobs-smith)
+   * [Beispielabfrage – Alle Personen mit dem Namen „Jobs“ oder „Smith“](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-all-persons-jobs-smith)
 
 * Es gibt ebenfalls ein logisches UND, es ist aber (oft) implizit.
 
 * Sie können Feldnamen abfragen, die den Feldern im Inhaltsfragmentmodell entsprechen.
-   * [Beispielabfrage – Vollständige Details über den CEO und die Mitarbeiter eines Unternehmens](#sample-full-details-company-ceos-employees)
+   * [Beispielabfrage – Vollständige Details über den CEO und die Mitarbeiter eines Unternehmens](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-full-details-company-ceos-employees)
 
 * Zusätzlich zu den Feldern aus Ihrem Modell gibt es einige vom System generierte Felder (denen ein Unterstrich vorangestellt ist):
 
    * Für Inhalte:
 
       * `_locale`: Anzeigen der Sprache; basierend auf Language Manager
-         * Siehe [Beispielabfrage für mehrere Inhaltsfragmente eines bestimmten Gebietsschemas](#sample-wknd-multiple-fragments-given-locale)
+         * Siehe [Beispielabfrage für mehrere Inhaltsfragmente eines bestimmten Gebietsschemas](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-multiple-fragments-given-locale)
       * `_metadata`: Anzeigen von Metadaten für Ihr Fragment
-         * Siehe [Beispielabfrage für Metadaten – Liste der Metadaten für Auszeichnungen mit dem Titel „GB“](#sample-metadata-awards-gb)
+         * Siehe [Beispielabfrage für Metadaten – Liste der Metadaten für Auszeichnungen mit dem Titel „GB“](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
       * `_model`: Zulassen von Abfragen nach einem Inhaltsfragmentmodell (Pfad und Titel)
-         * Siehe [Beispielabfrage für ein Inhaltsfragmentmodell anhand eines Modells](#sample-wknd-content-fragment-model-from-model)
+         * Siehe [Beispielabfrage für ein Inhaltsfragmentmodell anhand eines Modells](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-content-fragment-model-from-model)
       * `_path`: Der Pfad zu Ihrem Inhaltsfragment im Repository
-         * Siehe [Beispielabfrage – ein Einzelstadtfragment](#sample-single-specific-city-fragment)
+         * Siehe [Beispielabfrage – ein Einzelstadtfragment](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
       * `_reference`: Anzeigen von Verweisen; einschließlich Inline-Verweisen im Rich-Text-Editor
-         * Siehe [Beispielabfrage für mehrere Inhaltsfragmente mit vorab abgerufenen Verweisen](#sample-wknd-multiple-fragments-prefetched-references)
+         * Siehe [Beispielabfrage für mehrere Inhaltsfragmente mit vorab abgerufenen Verweisen](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-multiple-fragments-prefetched-references)
       * `_variation`: Anzeige bestimmter Varianten in Ihrem Inhaltsfragment
-         * Weitere Informationen finden Sie unter [Beispielabfrage – Alle Städte mit einer gegebenen Variante](#sample-cities-named-variation)
+
+         >[!NOTE]
+         >
+         >Wenn die angegebene Variante für ein Inhaltsfragment nicht vorhanden ist, wird die Übergeordnete Variante als (Fallback-)Standard zurückgegeben.
+
+         * Weitere Informationen finden Sie unter [Beispielabfrage – Alle Städte mit einer gegebenen Variante](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)
    * Und Operationen:
 
       * `_operator`: bestimmte Operatoren anwenden; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
-         * Siehe [Beispielabfrage – Alle Personen, die nicht den Namen „Jobs“ haben](#sample-all-persons-not-jobs)
-         * Siehe [Beispielabfrage – Alle Abenteuer, bei denen `_path` mit einem bestimmten Präfix beginnt](#sample-wknd-all-adventures-cycling-path-filter)
+         * Siehe [Beispielabfrage – Alle Personen, die nicht den Namen „Jobs“ haben](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-all-persons-not-jobs)
+         * Siehe [Beispielabfrage – Alle Abenteuer, bei denen `_path` mit einem bestimmten Präfix beginnt](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-all-adventures-cycling-path-filter)
       * `_apply`: bestimmte Bedingungen anwenden; zum Beispiel `AT_LEAST_ONCE`
-         * Siehe [Beispielabfrage – Filtern eines Arrays nach einem Element, das mindestens einmal vorkommen muss](#sample-array-item-occur-at-least-once)
+         * Siehe [Beispielabfrage – Filtern eines Arrays nach einem Element, das mindestens einmal vorkommen muss](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-array-item-occur-at-least-once)
       * `_ignoreCase`: Groß-/Kleinschreibung bei der Abfrage ignorieren
-         * Siehe [Beispielabfrage – Alle Städte mit SAN im Namen, unabhängig von der Groß-/Kleinschreibung](#sample-all-cities-san-ignore-case)
+         * Siehe [Beispielabfrage – Alle Städte mit SAN im Namen, unabhängig von der Groß-/Kleinschreibung](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-all-cities-san-ignore-case)
 
 
 
@@ -585,11 +594,11 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
 * GraphQL-Vereinigungstypen werden unterstützt:
 
    * Verwenden Sie `... on`
-      * Siehe [Beispielabfrage für ein Inhaltsfragment eines bestimmten Modells mit einer Inhaltsreferenz](#sample-wknd-fragment-specific-model-content-reference)
+      * Siehe [Beispielabfrage für ein Inhaltsfragment eines bestimmten Modells mit einer Inhaltsreferenz](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-fragment-specific-model-content-reference)
 
 * Fallback bei der Abfrage verschachtelter Fragmente:
 
-   * Wenn die angeforderte Variante nicht in einem verschachtelten Fragment vorhanden ist, wird die **Übergeordnet** -Variante zurückgegeben.
+   * Wenn die angeforderte Variante nicht in einem verschachtelten Fragment vorhanden ist, wird die **primäre Variante** ausgegeben.
 
 ## Persistente Abfragen (Caching) {#persisted-queries-caching}
 
