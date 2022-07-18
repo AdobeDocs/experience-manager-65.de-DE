@@ -6,10 +6,10 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 3643534fa0f24a1c2ea00c35853a2671b156bf9a
+source-git-commit: a1e620103290f8c704f2b8782be495ab7aec5fe2
 workflow-type: tm+mt
 source-wordcount: '3329'
-ht-degree: 82%
+ht-degree: 85%
 
 ---
 
@@ -114,7 +114,7 @@ Es gibt verschiedene Optionen, um das Repository von Adobe Experience Manager be
 
 | **Plattform** | **Beschreibung** | **Unterstützungsebene** |
 |---|---|---|
-| **Dateisystem mit TAR-Dateien** `[1]` | Repository | A: Unterstützt  |
+| **Dateisystem mit TAR-Dateien** `[1]` | Repository | A: Unterstützt |
 | **Dateisystem mit Datenspeicher** `[1]` | Binärdateien | A: Unterstützt |
 | Speichern von Binärdateien in TAR-Dateien im Dateisystem `[1]` | Binärdateien | Z: Nicht für die Produktion unterstützt |
 | Amazon S3 | Binärdateien | A: Unterstützt |
@@ -123,7 +123,7 @@ Es gibt verschiedene Optionen, um das Repository von Adobe Experience Manager be
 | MongoDB Enterprise 4.0 | Repository | Z: Nicht unterstützt |
 | MongoDB Enterprise 3.6 | Repository | Z: Nicht unterstützt |
 | MongoDB Enterprise 3.4 | Repository | Z: Nicht unterstützt |
-| IBM DB2 10.5 | Repository und Forms-Datenbank | R: Eingeschränkte Unterstützung  `[5]` |
+| IBM DB2 10.5 | Repository und Forms-Datenbank | R: Eingeschränkte Unterstützung `[5]` |
 | Oracle Database 12c (12.1.x) | Repository und Forms-Datenbank | R: Eingeschränkte Unterstützung  |
 | Microsoft SQL Server 2016 | Forms-Datenbank | A: Unterstützt |
 | **Apache Lucene (Schnellstart integriert)**  | Suchservice | A: Unterstützt |
@@ -190,7 +190,7 @@ Adobe Experience Manager funktioniert mit den folgenden Serverplattformen in Pro
 | **Linux, auf Basis der Red Hat-Distribution** | A: Unterstützt `[1]` `[3]` |
 | Linux, auf Basis der Debian-Distribution einschl. Ubuntu | A: Unterstützt `[2]` |
 | Linux, auf Basis der SUSE-Distribution | A: Unterstützt |
-| Microsoft Windows Server 2019 `[4]` | R: Eingeschränkte Unterstützung für neue Verträge |
+| Microsoft Windows Server 2019 `[4]` | R: Eingeschränkte Unterstützung für neue Verträge `[5]` |
 | Microsoft Windows Server 2016 `[4]` | R: Eingeschränkte Unterstützung für neue Verträge `[5]` |
 | Microsoft Windows Server 2012 R2 | Z: Nicht unterstützt |
 | Oracle Solaris 11 | Z: Nicht unterstützt |
@@ -261,7 +261,7 @@ Die AEM-Benutzeroberfläche ist für die Verwendung auf größeren Bildschirmen 
    <td>A: Unterstützt</td>
   </tr>
   <tr>
-   <td>Microsoft Edge (Evergreen)</td>
+   <td>Microsoft Edge (Evergreen)</td>
    <td>A: Unterstützt</td>
    <td>A: Unterstützt</td>
   </tr>
@@ -429,7 +429,7 @@ Windows x86:
    <th><p><strong>Unterstützte Formate für die Konvertierung ins PDF-Format </strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 Classic Track</a> neueste Version</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Klassischer Modus von Acrobat 2017</a> neueste Version</td>
    <td>XPS, Bildformate (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF und DWF</td>
   </tr>
   <tr>
@@ -454,7 +454,7 @@ Windows x86:
   </tr>
   <tr>
    <td>OpenOffice 4.1.2</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, Bildformate (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF und TXT</td>
+   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, Bildformate (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF und TXT</td>
   </tr>
  </tbody>
 </table>
@@ -465,12 +465,12 @@ Windows x86:
 >
 >Zusätzlich gilt Folgendes:
 >
->* Für PDF Generator ist eine 32-Bit-Version von erforderlich. [Acrobat 2017 Klassische Track-Version 17.011.30078 oder höher](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) , um die Konvertierung durchzuführen.
+>* Für PDF Generator ist eine 32-Bit-Version von erforderlich. [Acrobat 2017 Klassische Track-Version 17.011.30078 oder höher](https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html) , um die Konvertierung durchzuführen.
 >* PDF Generator unterstützt nur die 32-Bit-Einzelhandelsversion von Microsoft Office Professional Plus und andere für die Konvertierung erforderliche Software.
 >* PDF Generator unterstützt nicht Microsoft Office 365.
 >* PDF Generator-Konvertierungen für OpenOffice werden nur unter Windows und Linux unterstützt.
->* Die Funktionen von OCR PDF, Optimize PDF und Export PDF werden nur unter Windows unterstützt.
->* Eine Version von Acrobat wird im Paket mit AEM Forms bereitgestellt, um die PDF Generator-Funktionen zu aktivieren. Auf diese Version sollte während der während der Geltungsdauer der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur vom Programm aus mit AEM Forms zugegriffen werden. Weitere Informationen finden Sie in der AEM Forms-Produktbeschreibung entsprechend Ihrer Implementierung ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) oder [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
+>* Die Funktionen von OCR PDF, PDF optimieren und PDF erstellen werden nur unter Windows unterstützt.
+>* Eine Version von Acrobat wird im Paket mit AEM Forms bereitgestellt, um die PDF Generator-Funktionen zu aktivieren. Auf diese Version sollte während der während der Geltungsdauer der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur vom Programm aus mit AEM Forms zugegriffen werden. Weitere Informationen finden Sie in der AEM Forms-Produktbeschreibung für Ihre Bereitstellung ([On-Premise](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-on-premise.html) oder [Managed Services](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html))”
 >
 >* Der PDF Generator-Dienst unterstützt nicht Microsoft Windows 10.
 >
