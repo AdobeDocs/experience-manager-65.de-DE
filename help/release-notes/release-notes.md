@@ -3,9 +3,9 @@ title: Versionshinweise für [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5-Hinweise mit Versionsinformationen, Neuigkeiten, Installationsanleitungen und detaillierten Änderungslisten."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 6b75c41cf796b28409c263175cf3f3a2044422ff
+source-git-commit: 9f957175573eeb2b40d79a5087dc3034c56819cc
 workflow-type: tm+mt
-source-wordcount: '3733'
+source-wordcount: '3742'
 ht-degree: 7%
 
 ---
@@ -298,10 +298,10 @@ Die folgenden Fehlerbehebungen, Schlüsselfunktionen und Verbesserungen wurden i
 
 ## Benutzeroberfläche {#ui-6513}
 
+* Aktualisieren auf `favicon.ico` wird in Experience Manager verwendet. (CQ-4315324)
 * Wenn Sie sich auf der Startseite befinden > Abschnitt &quot;Tools&quot;und klicken Sie auf [!DNL Experience Manager] das Symbol [!DNL Experience Manager] Der Navigationsbildschirm sollte angezeigt werden. (NPR-38417)
 * Aktivieren Sie ES6 für `/libs/granite/ui/references/clientlibs/coral/references`. (NPR-38303)
 * Aktivieren Sie ES6 für `/libs/granite/datavisualization/clientlibs/d3-3.x`. (NPR-38302)
-
 <!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * AEM‑OP‑09 ‑ Persistent cross‑site scripting selecting paths in templates. (NPR-38301) -->
 * Die Datumsauswahl in der Touch-Benutzeroberfläche wird auf Koreanisch angezeigt. (NPR-38079)
 * Bearbeitungsdialogfeld mit mehreren Feldern bei der Neuanordnung der Felder, die den Auswahlwert für die Optionsfelder verlieren. (NPR-38063)
