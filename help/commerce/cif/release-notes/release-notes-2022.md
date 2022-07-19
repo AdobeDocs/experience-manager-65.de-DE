@@ -2,9 +2,9 @@
 title: AEM Content and Commerce - Versionshinweise 2022
 description: AEM Content and Commerce - Versionshinweise 2022
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: f6a16e5744222600b3a1760efe3c61619160b6cd
+source-git-commit: 600a836ff7ae0be9fde107ff2828bb41e8eed98f
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '660'
 ht-degree: 29%
 
 ---
@@ -20,6 +20,26 @@ ht-degree: 29%
 | CIF-Add-on | Minimum: AEM 6.5.7, Magento 2.3.5 GraphQL-Schemata |
 | CIF-Kernkomponenten | [Systemanforderungen](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM-Projektarchetyp | [Systemanforderungen](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Releasedatum: Juni 2022
+
+| Komponente | Version | Details |
+|:-------|:-----:|---------------------:|
+| CIF-Add-on | 2022.06.xx.00 | [Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.07.05.00.zip) |
+| CIF-Kernkomponenten | 2,10,0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) |
+| CIF Venia-Referenz-Site | 2022.07.04 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.07.04) |
+
+### Neue Funktionen {#what-is-new-june}
+
+* Der Vorlagenname ist jetzt beim Erstellen der Produktkatalogvorlage im Sites-Editor sichtbar
+
+* Verschiedene Verbesserungen der CIF-Kernkomponenten
+
+### Fehlerbehebungen {#bug-fixes-june}
+
+* Anmeldetoken zum clientseitigen Preisabruf hinzufügen
+
+* Falsche Seitenkomponente in der Datenschicht
 
 ## Releasedatum: Mai 2022
 
@@ -63,7 +83,7 @@ ht-degree: 29%
 
    ![Verknüpfung zum Produkt-Cockpit im Sites-Editor](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
-## Releasedatum: März 2022
+## Releasedatum: Februar 2022
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|

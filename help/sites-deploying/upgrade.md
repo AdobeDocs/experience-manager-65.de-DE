@@ -1,26 +1,23 @@
 ---
 title: Aktualisieren auf AEM 6.5
-seo-title: Aktualisieren auf AEM 6.5
+seo-title: Upgrading to AEM 6.5
 description: Erfahren Sie mehr über die Grundlagen der Aktualisierung einer älteren AEM-Installation auf AEM 6.5.
-seo-description: Erfahren Sie mehr über die Grundlagen der Aktualisierung einer älteren AEM-Installation auf AEM 6.5.
-uuid: 45368056-273c-4f1a-9da6-e7ba5c2bbc0d
+seo-description: Learn about the basics of upgrading an older AEM installation to AEM 6.5.
 contentOwner: sarchiz
 topic-tags: upgrading
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
-discoiquuid: ebd99cc4-8762-4c28-a177-d62dac276afe
 docset: aem65
 targetaudience: target-audience upgrader
-feature: Aktualisieren
+feature: Upgrading
 exl-id: 722d544c-c342-4c1c-80e5-d0a1244f4d36
-source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
+source-git-commit: 02fc145d5ec1458d1f71a2f353b56b944a267f3e
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 77%
+source-wordcount: '694'
+ht-degree: 75%
 
 ---
 
-# Aktualisieren auf AEM 6.5  {#upgrading-to-aem}
+# Aktualisieren auf AEM 6.5 {#upgrading-to-aem}
 
 In diesem Abschnitt wird das Aktualisieren einer AEM-Installation auf AEM 6.5 beschrieben:
 
@@ -73,10 +70,8 @@ Neu in AEM ist der [Musterdetektor](/help/sites-deploying/pattern-detector.md), 
 
 Einzelheiten zu weiteren Änderungen in den neuen AEM-Versionen finden Sie in den vollständigen Versionshinweisen:
 
-* [https://helpx.adobe.com/experience-manager/6-2/release-notes.html](https://helpx.adobe.com/de/experience-manager/6-2/release-notes.html)
-* [https://helpx.adobe.com/experience-manager/6-3/release-notes.html](https://helpx.adobe.com/experience-manager/6-3/release-notes.html)
-* [https://helpx.adobe.com/experience-manager/6-4/release-notes.html](https://helpx.adobe.com/de/experience-manager/6-4/release-notes.html)
-* [https://helpx.adobe.com/de/experience-manager/6-5/release-notes.html](https://helpx.adobe.com/de/experience-manager/6-5/release-notes.html)
+* [Allgemeine Versionshinweise zu Adobe Experience Manager 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/release-notes.html?lang=de)
+* [Versionshinweise zum Adobe Experience Manager 6.5 neuesten Service Pack](/help/release-notes/release-notes.md)
 
 ## Überblick über die Aktualisierung {#upgrade-overview}
 
@@ -86,10 +81,10 @@ Die Aktualisierung von AEM ist ein mehrstufiger Prozess, der in manchen Fällen 
 
 ## Aktualisierungsablauf {#upgrade-overview-1}
 
-Das folgende Diagramm zeigt den für die Aktualisierung empfohlenen Ablauf. Beachten Sie den Verweis auf die neu eingeführten Funktionen. Das Upgrade sollte mit dem Musterdetektor beginnen (siehe [Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor](/help/sites-deploying/pattern-detector.md)), mit dem Sie anhand der Muster im erstellten Bericht festlegen können, welchen Pfad Sie für die Kompatibilität mit AEM 6.4 verwenden möchten.
+Das folgende Diagramm zeigt den für die Aktualisierung empfohlenen Ablauf. Beachten Sie den Verweis auf die neu eingeführten Funktionen. Das Upgrade sollte mit der Mustererkennung beginnen (siehe [Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor](/help/sites-deploying/pattern-detector.md)), die es Ihnen ermöglichen soll, den Pfad zu bestimmen, den Sie für die Kompatibilität mit AEM 6.4 verwenden möchten, basierend auf den Mustern im generierten Bericht.
 
-In Version 6.5 wurde der Fokus darauf gelegt, alle neuen Funktionen abwärtskompatibel zu halten. In Fällen, in denen jedoch noch einige Abwärtskompatibilitätsprobleme auftreten, können Sie mit dem Kompatibilitätsmodus die Entwicklung zeitweise verschieben, um Ihren benutzerdefinierten Code mit 6.5 kompatibel zu halten. Dieser Ansatz hilft Ihnen, Entwicklungsaufwand unmittelbar nach der Aktualisierung zu vermeiden (siehe [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md)).
+In Version 6.5 stand der Fokus darauf, alle neuen Funktionen abwärtskompatibel zu halten. In Fällen, in denen jedoch noch einige Abwärtskompatibilitätsprobleme auftreten, können Sie mit dem Kompatibilitätsmodus die Entwicklung zeitweise verschieben, um Ihren benutzerdefinierten Code mit 6.5 kompatibel zu halten. Dieser Ansatz hilft Ihnen, Entwicklungsaufwand unmittelbar nach der Aktualisierung zu vermeiden (siehe [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md)).
 
-Schließlich helfen Ihnen in Ihrem 6.5-Entwicklungszyklus Funktionen, die unter &quot;Nachhaltige Aktualisierungen&quot;eingeführt wurden (siehe [Nachhaltige Aktualisierungen](/help/sites-deploying/sustainable-upgrades.md)), Best Practices zu befolgen, um zukünftige Upgrades noch effizienter und nahtloser zu gestalten.
+Schließlich wurden in Ihrem 6.5-Entwicklungszyklus Funktionen eingeführt, die unter &quot;Nachhaltige Aktualisierungen&quot;eingeführt wurden (siehe [Nachhaltige Aktualisierungen](/help/sites-deploying/sustainable-upgrades.md)) helfen Ihnen, Best Practices zu befolgen, um zukünftige Upgrades noch effizienter und nahtloser zu gestalten.
 
 ![6_4_upgrade_overviewFlussdiagramm-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)
