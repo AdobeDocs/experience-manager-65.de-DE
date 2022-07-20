@@ -1,8 +1,8 @@
 ---
 title: Seitenvorlagen - Kann bearbeitet werden
-seo-title: Bearbeitbare Seitenvorlagen
+seo-title: Page Templates - Editable
 description: Bearbeitbare Vorlagen wurden eingeführt, um es Benutzern, die keine Entwickler sind, zu ermöglichen, Vorlagen zu erstellen und zu bearbeiten, Vorlagen bereitzustellen, die eine dynamische Verbindung zu allen mit ihnen erstellten Seiten beibehalten, und die Seitenkomponente allgemeiner zu gestalten.
-seo-description: Bearbeitbare Vorlagen wurden eingeführt, um es Benutzern, die keine Entwickler sind, zu ermöglichen, Vorlagen zu erstellen und zu bearbeiten, Vorlagen bereitzustellen, die eine dynamische Verbindung zu allen mit ihnen erstellten Seiten beibehalten, und die Seitenkomponente allgemeiner zu gestalten.
+seo-description: Editable templates have been introduced to, allow non-developers to create and edit templates, provide templates that retain a dynamic connection to any pages created from them, and make the page component more generic
 uuid: 61791960-fdef-4e49-878a-11fdf1d4f0ab
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2801ef5ec5ed7b01f4eb046baa439f6d5de56b75
 workflow-type: tm+mt
-source-wordcount: '3285'
+source-wordcount: '3249'
 ht-degree: 90%
 
 ---
@@ -131,7 +131,7 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 
 >[!TIP]
 >
->Geben Sie in eine Vorlage nie Informationen ein, die internationalisiert werden müssen. Zu Internalisierungszwecken wird die Lokalisierungsfunktion [der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=de) empfohlen.
+>Geben Sie in eine Vorlage nie Informationen ein, die internationalisiert werden müssen. Für die Zwecke der Internalisierung [Lokalisierungsfunktion der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=de) werden empfohlen.
 
 >[!NOTE]
 >
@@ -183,7 +183,7 @@ Zum Erstellen eines neuen Ordners stehen Ihnen die folgenden Optionen zur Auswah
 * Die programmgesteuerte Erstellung oder die Erstellung mit CRXDE Lite
 * Verwenden des Konfigurations-Browsers
 
-## Verwenden von CRXDE Lite   {#using-crxde-lite}
+## Verwenden von CRXDE Lite  {#using-crxde-lite}
 
 1. Ein neuer Ordner (unter „/conf“) kann für Ihre Instanz entweder programmgesteuert oder mit CRXDE Lite erstellt werden.
 
@@ -212,13 +212,13 @@ Zum Erstellen eines neuen Ordners stehen Ihnen die folgenden Optionen zur Auswah
 
    Die Gruppe `template-authors` ist die Standardgruppe, die zugewiesen werden muss. Weitere Informationen finden Sie im folgenden Abschnitt [ACLs und Gruppen](/help/sites-developing/page-templates-editable.md#acls-and-groups).
 
-   Ausführliche Informationen zur Verwaltung und Zuweisung von Zugriffsrechten finden Sie unter [Verwaltung von Zugriffsrechten](/help/sites-administering/user-group-ac-admin.md#access-right-management) .
+   Siehe [Zugriffsberechtigungsverwaltung](/help/sites-administering/user-group-ac-admin.md#access-right-management) für ausführliche Informationen zur Verwaltung und Zuweisung von Zugriffsrechten.
 
 ### Verwenden des Konfigurations-Browsers {#using-the-configuration-browser}
 
 1. Wechseln Sie zu **Globale Navigation** > **Tools** > **Konfigurations-Browser**.
 
-   Die vorhandenen Ordner werden links aufgelistet, einschließlich des Ordners **global** .
+   Die vorhandenen Ordner werden links aufgelistet, einschließlich der **global** Ordner.
 
 1. Klicken Sie auf **Erstellen**.
 1. Im Dialogfeld **Konfiguration erstellen** müssen die folgenden Felder konfiguriert werden:
@@ -232,15 +232,15 @@ Zum Erstellen eines neuen Ordners stehen Ihnen die folgenden Optionen zur Auswah
 >
 >Im Konfigurations-Browser können Sie den Ordner „global“ bearbeiten und die Option **Bearbeitbare Vorlagen** aktivieren, wenn Sie in diesem Ordner Vorlagen erstellen möchten. Davon ist jedoch abzuraten.
 >
->Weitere Informationen finden Sie in der Dokumentation zum [Konfigurations-Browser](/help/sites-administering/configurations.md) .
+>Weitere Informationen finden Sie in der Dokumentation zum [Konfigurationsbrowser](/help/sites-administering/configurations.md).
 
-### ACLs und Gruppen   {#acls-and-groups}
+### ACLs und Gruppen {#acls-and-groups}
 
 Sobald Ihre Vorlagenordner erstellt sind (entweder über CRXDE oder den Konfigurations-Browser), müssen ACLs für die entsprechenden Gruppen für die Vorlagenordner definiert werden, um ein angemessenes Maß an Sicherheit zu gewährleisten.
 
 Die Vorlagenordner für die [We.Retail-Referenzimplementierung ](/help/sites-developing/we-retail.md) können als Beispiel herangezogen werden.
 
-#### Die Gruppe „template-authors“ {#the-template-authors-group}
+#### Die Gruppe „template-authors“  {#the-template-authors-group}
 
 Die Gruppe `template-authors` ist die Gruppe zum Verwalten des Zugriffs auf Vorlagen und standardmäßig in AEM integriert. Sie ist aber leer. Benutzer müssen der Gruppe für das Projekt bzw. die Site hinzugefügt werden.
 
@@ -308,9 +308,9 @@ In der folgenden Tabelle sind die erforderlichen Berechtigungen für die Bearbei
 
 Diese standardmäßige `template-authors`-Gruppe umfasst nur die Projekteinstellungen, bei denen alle Mitglieder von `template-authors` auf alle Vorlagen zugreifen und diese erstellen dürfen. Für komplexere Setups, bei denen mehrere Vorlagenautorengruppen benötigt werden, um einen getrennten Zugriff auf Vorlagen zu ermöglichen, müssen weitere benutzerdefinierte Vorlagenautorengruppen erstellt werden. Die Berechtigungen für die Vorlagenautorengruppen bleiben dabei jedoch dieselben.
 
-#### Alte Vorlagen unter /conf/global  {#legacy-templates-under-conf-global}
+#### Alte Vorlagen unter /conf/global {#legacy-templates-under-conf-global}
 
-Vorlagen sollten nicht mehr in `/conf/global` gespeichert werden. Für einige ältere Installationen gibt es jedoch möglicherweise noch Vorlagen an diesem Speicherort. NUR in solchen Legacy-Situationen sollten die folgenden `/conf/global`-Pfade explizit konfiguriert werden.
+Vorlagen sollten nicht mehr in `/conf/global`, aber für einige ältere Installationen gibt es möglicherweise noch Vorlagen an diesem Ort. NUR in solchen alten Situationen sollte Folgendes `/conf/global` Pfade explizit konfiguriert werden.
 
 <table>
  <tbody>
@@ -322,7 +322,7 @@ Vorlagen sollten nicht mehr in `/conf/global` gespeichert werden. Für einige ä
   </tr>
   <tr>
    <td rowspan="3"><code>/conf/global/settings/wcm/templates</code></td>
-   <td>Vorlagenautoren</td>
+   <td>Vorlage Autoren</td>
    <td>lesen, schreiben, replizieren</td>
    <td>Vorlagenautoren, die Vorlagen erstellen, lesen, aktualisieren, löschen und replizieren in <code>/conf/global</code></td>
   </tr>
@@ -393,7 +393,7 @@ Die vordefinierten Vorlagentypen werden unter dem folgenden Pfad gespeichert:
 
 >[!CAUTION]
 >
->Sie dürfen keinerlei Änderungen im Pfad `/libs` vornehmen. Dies liegt daran, dass der Inhalt von `/libs` beim nächsten Upgrade Ihrer Instanz überschrieben wird (und möglicherweise überschrieben wird, wenn Sie einen Hotfix oder ein Feature Pack anwenden).
+>Sie dürfen keinerlei Änderungen im Pfad `/libs` vornehmen. Dies liegt daran, dass der Inhalt von `/libs` wird beim nächsten Upgrade Ihrer Instanz überschrieben (und kann überschrieben werden, wenn Sie einen Hotfix oder ein Feature Pack anwenden).
 
 Ihre Site-spezifischen Vorlagentypen sollten an einer mit dem folgenden Pfad vergleichbaren Stelle gespeichert werden:
 
@@ -420,7 +420,7 @@ Beim Erstellen einer neuen bearbeitbaren Vorlage wird der Wert aus dem Vorlagent
 
 >[!CAUTION]
 >
->Der Wert von `cq:deviceGroups` muss als relativer Pfad wie `mobile/groups/responsive` und nicht als absoluter Pfad wie `/etc/mobile/groups/responsive` festgelegt werden.
+>Der Wert von `cq:deviceGroups` muss als relativer Pfad festgelegt werden, z. B. `mobile/groups/responsive` und nicht als absoluter Pfad wie `/etc/mobile/groups/responsive`.
 
 >[!NOTE]
 >
@@ -432,7 +432,7 @@ Beim Erstellen einer neuen bearbeitbaren Vorlage wird der Wert aus dem Vorlagent
 
 Wenn Sie eine Vorlage erstellt haben, die als Grundlage für andere Vorlagen dienen kann, können Sie diese Vorlage als Vorlagentyp kopieren.
 
-1. Erstellen Sie eine Vorlage wie jede andere bearbeitbare Vorlage [wie hier dokumentiert](/help/sites-authoring/templates.md#creating-a-new-template-template-author), die als Grundlage für Ihren Vorlagentyp dient.
+1. Erstellen Sie eine Vorlage wie jede andere bearbeitbare Vorlage [wie hier beschrieben](/help/sites-authoring/templates.md#creating-a-new-template-template-author), der als Grundlage für Ihren Vorlagentyp dient.
 1. Kopieren Sie mit CRXDE Lite die neu erstellte Vorlage aus dem Knoten `templates` in den Knoten `template-types` unter dem [Vorlagenordner](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Löschen Sie die Vorlage aus dem Knoten `templates` unter dem [Vorlagenordner](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Löschen Sie in der Kopie der Vorlage, die sich unter dem Knoten `template-types` befindet, alle `cq:template`-, `cq:templateType`- und `jcr:content`-Eigenschaften.
@@ -502,7 +502,7 @@ Dieser Knoten enthält Eigenschaften für die Vorlage:
 
 * **Name**: `jcr:title`
 
-* **Name**:  `status`
+* **Name**: `status`
 
    * **Typ**: `String`
 
@@ -535,7 +535,7 @@ Definiert den anfänglichen Inhalt, den eine neue Seite bei Erstellung enthält:
 
 ### Layout {#layout}
 
-Beim Bearbeiten einer Vorlage [können Sie das Layout](/help/sites-authoring/templates.md) definieren. Dabei wird [responsives Standardlayout](/help/sites-authoring/responsive-layout.md) verwendet, das auch [konfiguriert](/help/sites-administering/configuring-responsive-layout.md) sein kann.
+Wann [Vorlagen bearbeiten, können Sie das Layout definieren](/help/sites-authoring/templates.md), verwendet diese [Standard-responsives Layout](/help/sites-authoring/responsive-layout.md) das auch [konfiguriert](/help/sites-administering/configuring-responsive-layout.md).
 
 ### Inhaltsrichtlinien {#content-policies}
 
@@ -558,7 +558,7 @@ Stellt einen relativen Verweis auf die Inhaltsrichtlinie für das Absatzsystem d
 >
 >Für Seiten, die anhand bearbeitbarer Vorlagen erstellt wurden, steht der Designmodus im Seiten-Editor nicht zur Verfügung.
 >
->Die Baumstruktur `policies` einer bearbeitbaren Vorlage weist dieselbe Hierarchie auf wie die Designmoduskonfiguration einer statischen Vorlage unter:
+>Die `policies` Die Baumstruktur einer bearbeitbaren Vorlage weist dieselbe Hierarchie auf wie die Designmoduskonfiguration einer statischen Vorlage unter:
 >
 >`/etc/designs/<my-site>/jcr:content/<component-name>`
 >
@@ -568,7 +568,7 @@ Stellt einen relativen Verweis auf die Inhaltsrichtlinie für das Absatzsystem d
 
 Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) für die Seite (Hauptabsatzsystem) entweder in der Vorlage oder den resultierenden Seiten zu definieren.
 
-### Aktivieren und Zulassen einer Vorlage   {#enabling-and-allowing-a-template-for-use}
+### Aktivieren und Zulassen einer Vorlage {#enabling-and-allowing-a-template-for-use}
 
 1. **Aktivieren Sie die Vorlage.**
 
@@ -620,12 +620,12 @@ Das obige Diagramm veranschaulicht, wie Vorlagen, Inhalte und Komponenten zusamm
 Die resultierende Seite, die auf die Vorlage verweist. Der Inhalt steuert den gesamten Prozess. Gemäß den Definitionen greift er auf die entsprechenden Vorlagen und Komponenten zu.
 
 * Konfiguration - `/conf/<my-folder>/settings/wcm/templates/<my-template>`
-Die [Vorlage und zugehörige Inhaltsrichtlinien](#template-definitions) definieren die Seitenkonfiguration.
+Die [Vorlagen und zugehörige Inhaltsrichtlinien](#template-definitions) definieren die Seitenkonfiguration.
 
 * Modell – OSGi-Bundles Die [OSGi-Bundles](/help/sites-deploying/osgi-configuration-settings.md) implementieren die Funktionalität.
 
 * Anzeigen - `/apps/<my-site>/components`
-Sowohl in der Autoren- als auch in der Veröffentlichungsumgebung wird der Inhalt durch [Komponenten](/help/sites-developing/components.md) gerendert.
+Sowohl in der Autoren- als auch in der Veröffentlichungsumgebung wird der Inhalt von [Komponenten](/help/sites-developing/components.md).
 
 Beim Rendern einer Seite:
 
