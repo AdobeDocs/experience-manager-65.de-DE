@@ -2,9 +2,9 @@
 title: AEM Content and Commerce - Versionshinweise 2022
 description: AEM Content and Commerce - Versionshinweise 2022
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: 600a836ff7ae0be9fde107ff2828bb41e8eed98f
+source-git-commit: b493e7bd73d679aa46bf41fad105f13215226dd4
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '663'
 ht-degree: 29%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 29%
 
 ### Neue Funktionen {#what-is-new-june}
 
-* Der Vorlagenname ist jetzt beim Erstellen der Produktkatalogvorlage im Sites-Editor sichtbar
+* Die Anreicherung von Produktkatalogen unterstützt jetzt AEM Seiten. Dadurch können Autoren die Zuordnung von Seite und Produkt verwalten.
 
 * Verschiedene Verbesserungen der CIF-Kernkomponenten
 
