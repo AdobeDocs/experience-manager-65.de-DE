@@ -1,8 +1,8 @@
 ---
 title: Query Builder-API
-seo-title: Query Builder-API
+seo-title: Query Builder API
 description: Die Funktionalität der Query Builder-Komponente für die Asset-Freigabe wird über eine Java-API und eine REST-API verfügbar gemacht.
-seo-description: Die Funktionalität der Query Builder-Komponente für die Asset-Freigabe wird über eine Java-API und eine REST-API verfügbar gemacht.
+seo-description: The functionality of the Asset Share Query Builder is exposed through a Java API and a REST API.
 uuid: 6928c3e9-96a1-44ad-9785-350d95f1869a
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,14 +12,14 @@ discoiquuid: 7965b7ef-dec4-441a-a012-daf1d60df0fb
 pagetitle: Query Builder API
 tagskeywords: querybuilder
 exl-id: b2288442-d055-4966-8057-8b7b7b6bff28
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: bfb02e79d6895be498e6e40888c6d8d4e3a8fcd4
 workflow-type: tm+mt
-source-wordcount: '2334'
+source-wordcount: '2313'
 ht-degree: 91%
 
 ---
 
-# Query Builder-API {#query-builder-api}
+# Query Builder-API{#query-builder-api}
 
 Die Funktionalität der [Query-Builder-Komponente für die Asset-Freigabe](/help/assets/assets-finder-editor.md) wird über eine Java-API und eine REST-API verfügbar gemacht. In diesem Abschnitt werden diese APIs beschrieben.
 
@@ -35,13 +35,13 @@ Die REST-API ermöglicht den Zugriff auf genau die gleichen Funktionen per HTTP,
 >
 >Die QueryBuilder-API wird mit der JCR-API erstellt. Sie können Adobe Experience Manager-JCR auch abfragen, indem Sie die JCR-API innerhalb eines OSGi-Bundles verwenden. Weitere Informationen erhalten Sie unter [Abfragen von Adobe Experience Manager-Daten mit der JCR-API](https://helpx.adobe.com/de/experience-manager/using/querying-experience-manager-data-using1.html).
 
-## Gem-Sitzung  {#gem-session}
+## Gem-Sitzung {#gem-session}
 
 [AEM Gems](https://helpx.adobe.com/de/experience-manager/kt/eseminars/gems/aem-index.html) ist eine Serie mit ausführlichen technischen Erläuterungen zu Adobe Experience Manager von Adobe-Experten. Diese Sitzung zum Query Builder ist sehr nützlich, um einen allgemeinen Überblick und Informationen zum Tool zu erhalten.
 
 >[!NOTE]
 >
->Eine detaillierte Übersicht über den Query Builder finden Sie in der AEM Gem-Sitzung [Suchformulare, die mit dem AEM Querybuilder](https://helpx.adobe.com/de/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html) einfach gemacht wurden.
+>Siehe AEM Gem-Sitzung [Suchformulare, die mit QueryBuilder AEM wurden](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html) für einen detaillierten Überblick über den Query Builder.
 
 ## Beispielabfragen {#sample-queries}
 
@@ -61,7 +61,7 @@ Für das `QueryBuilder`-JSON-Servlet enthält jedes Beispiel einen Link zu Ihrer
 >
 >Zum Anzeigen der zurückgegebenen JSON-Daten in Ihrem Browser kann die Verwendung eines Plug-ins nützlich sein, z. B. JSONView für Firefox.
 
-### Zurückgeben aller Ergebnisse  {#returning-all-results}
+### Zurückgeben aller Ergebnisse {#returning-all-results}
 
 Mit der folgenden Abfrage werden **zehn Ergebnisse zurückgegeben** (bzw. genauer gesagt maximal zehn), aber es wird die **Anzahl von Treffern** angegeben, die tatsächlich verfügbar sind:
 
@@ -137,7 +137,7 @@ Standardmäßig würde der Query Builder auch die Anzahl von Treffern angeben. J
 
 Beispielsweise kann für die Benutzeroberfläche der folgende Ansatz genutzt werden:
 
-* Die genaue Anzahl der Treffer insgesamt ([SearchResult.getTotalMatches()](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/SearchResult.html#gettotalmatches) oder die Gesamtzahl in der querybuilder.json-Antwort) wird abgerufen und angezeigt und ist kleiner oder gleich 100.
+* Rufen Sie die genaue Anzahl der Gesamt-Treffer ab und zeigen Sie sie an ([SearchResult.getTotalMatches()](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/SearchResult.html#gettotalmatches) oder der Gesamtwert in der querybuilder.json-Antwort) kleiner als oder gleich 100 ist;
 * Legen Sie `guessTotal` auf 100 fest, während Sie den Query Builder-Aufruf durchführen.
 
 * Die Antwort kann das folgende Ergebnis enthalten:
@@ -147,7 +147,7 @@ Beispielsweise kann für die Benutzeroberfläche der folgende Ansatz genutzt wer
 
 `guessTotal` sollte auch in Fällen verwendet werden, in denen die Benutzeroberfläche das unendliche Scrollen nutzen muss, um zu vermeiden, dass der Query Builder die genaue Trefferanzahl ermittelt.
 
-### Suchen nach und Sortieren von JAR-Dateien (neueste zuerst){#find-jar-files-and-order-them-newest-first}
+### Suchen nach und Sortieren von JAR-Dateien (neueste zuerst) {#find-jar-files-and-order-them-newest-first}
 
 `http://localhost:4502/bin/querybuilder.json?type=nt:file&nodename=*.jar&orderby=@jcr:content/jcr:lastModified&orderby.sort=desc`
 
@@ -167,7 +167,7 @@ type=cq:Page
 orderby=@jcr:content/cq:lastModified
 ```
 
-### Suchen nach allen Seiten und Sortieren nach der letzten Änderung (absteigend){#find-all-pages-and-order-them-by-last-modified-but-descending}
+### Suchen nach allen Seiten und Sortieren nach der letzten Änderung (absteigend) {#find-all-pages-and-order-them-by-last-modified-but-descending}
 
 `http://localhost:4502/bin/querybuilder.json?type=cq:Page&orderby=@jcr:content/cq:lastModified&orderby.sort=desc]`
 
@@ -218,7 +218,7 @@ Für diese Abfrage wird eine *Gruppe* (mit dem Namen „`group`“) verwendet. D
 
 `"Management" and ("/content/geometrixx/en/company/management" or "/content/geometrixx/en/company/bod")`
 
-Im Beispiel wird in der Gruppe die Eigenschaft `path` mehrere Male genutzt. Um die beiden Instanzen des Prädikats zu unterscheiden und anzuordnen (für einige Prädikate ist eine Sortierung erforderlich), müssen Sie den Prädikaten *N* `_ where`*N* den Anordnungs-Index voranstellen. Im obigen Beispiel lauten die sich ergebenden Eigenschaften `1_path` und `2_path`.
+Im Beispiel wird in der Gruppe die Eigenschaft `path` mehrere Male genutzt. Um die beiden Instanzen des Prädikats zu unterscheiden und anzuordnen (für einige Prädikate ist eine Sortierung erforderlich), müssen Sie den Prädikaten *N* `_ where`*N* ist der Bestellindex. Im obigen Beispiel lauten die sich ergebenden Eigenschaften `1_path` und `2_path`.
 
 Das `p` in `p.or` ist ein spezielles Trennzeichen, mit dem angezeigt wird, dass ein `or`Parameter *der Gruppe folgt (in diesem Fall ein*) und keine Untereigenschaft der Gruppe, z. B. `1_path`.
 
@@ -228,7 +228,7 @@ Wenn `p.or` nicht angegeben wird, werden alle Eigenschaften per UND verbunden, 
 >
 >Sie können dasselbe numerische Präfix nicht in einer einzelnen Abfrage verwenden – auch nicht für verschiedene Eigenschaften.
 
-### Suchen nach Eigenschaften  {#search-for-properties}
+### Suchen nach Eigenschaften {#search-for-properties}
 
 Hier suchen Sie nach allen Seiten einer bestimmten Vorlage, indem Sie die Eigenschaft `cq:template` verwenden:
 
@@ -363,11 +363,11 @@ Weitere Eigenschaften (Prädikate) finden Sie auf der [Seite mit der Referenz zu
 
 Sie können auch das [Javadoc für die `PredicateEvaluator`-Klassen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html) überprüfen. Das Javadoc für diese Klassen enthält die Liste mit den Eigenschaften, die Sie verwenden können.
 
-Das Präfix des Klassennamens (z. B. &quot; `similar`&quot;in [`SimilarityPredicateEvaluator`](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) ist die *Haupteigenschaft* der Klasse. Diese Eigenschaft ist auch der Name der Eigenschaft, die in der Abfrage verwendet wird (in Kleinbuchstaben).
+Das Präfix des Klassennamens (z. B. &quot; `similar`&quot; [`SimilarityPredicateEvaluator`](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) ist *Prinzipal-Eigenschaft* der Klasse. Diese Eigenschaft ist auch der Name der Eigenschaft, die in der Abfrage verwendet wird (in Kleinbuchstaben).
 
-Für diese Haupteigenschaften können Sie die Abfrage verkürzen und &quot; `similar=/content/en`&quot;anstelle der vollständig qualifizierten Variante &quot; `similar.similar=/content/en`&quot;verwenden. Die vollqualifizierte Form muss für alle Eigenschaften einer Klasse genutzt werden, bei denen es sich nicht um die Haupteigenschaften handelt.
+Für diese Haupteigenschaften können Sie die Abfrage verkürzen und &quot; `similar=/content/en`&quot; anstelle der vollständig qualifizierten Variante &quot; `similar.similar=/content/en`&quot;. Die vollqualifizierte Form muss für alle Eigenschaften einer Klasse genutzt werden, bei denen es sich nicht um die Haupteigenschaften handelt.
 
-## Beispiel für die Nutzung der Query Builder-API   {#example-query-builder-api-usage}
+## Beispiel für die Nutzung der Query Builder-API {#example-query-builder-api-usage}
 
 ```java
    String fulltextSearchTerm = "Geometrixx";
@@ -427,13 +427,13 @@ Für diese Haupteigenschaften können Sie die Abfrage verkürzen und &quot; `sim
 >
 >Weitere Informationen zur Erstellung eines OSGi-Bundles mit Nutzung der QueryBuilder-API und Verwendung dieses OSGi-Bundles in einer Adobe Experience Manager-Anwendung erhalten Sie unter [Creating Adobe CQ OSGi bundles that use the Query Builder API](https://helpx.adobe.com/experience-manager/using/using-query-builder-api.html) (Erstellen von Adobe CQ-OSGi-Bundles mit Nutzung der Query-Builder-API).
 
-Ausführung der gleichen Abfrage per HTTP mit dem Query-Builder-Servlet (JSON):
+Ausführung der gleichen Abfrage per HTTP mit dem Query Builder-Servlet (JSON):
 
 `http://localhost:4502/bin/querybuilder.json?path=/content&type=cq:Page&group.p.or=true&group.1_fulltext=Geometrixx&group.1_fulltext.relPath=jcr:content&group.2_fulltext=Geometrixx&group.2_fulltext.relPath=jcr:content/@cq:tags&p.offset=0&p.limit=20`
 
 ## Speichern und Laden von Abfragen {#storing-and-loading-queries}
 
-Abfragen können zur späteren Verwendung im Repository gespeichert werden. `QueryBuilder` stellt die Methode &quot;`storeQuery`&quot;mit der folgenden Signatur bereit:
+Abfragen können zur späteren Verwendung im Repository gespeichert werden. Die `QueryBuilder` stellt die `storeQuery` -Methode mit der folgenden Signatur:
 
 ```java
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
@@ -484,7 +484,7 @@ Erläutern Sie **alle** Abfragen während des Entwicklungszyklus für den festge
 
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
-* Fügen Sie die XPath-Abfrage in [Abfrage](/help/sites-administering/operations-dashboard.md#explain-query) als XPath ein, um den Abfrageplan abzurufen.
+* Fügen Sie die XPath-Abfrage in [Abfrage erläutern](/help/sites-administering/operations-dashboard.md#explain-query) als XPath zum Abrufen des Abfrageplans
 
 ### Abrufen von erläuterbarem XPath über den Query-Builder-Debugger {#obtain-explain-able-xpath-via-the-query-builder-debugger}
 
@@ -503,7 +503,7 @@ Erläutern Sie **alle** Abfragen während des Entwicklungszyklus für den festge
 
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
-* Fügen Sie die XPath-Abfrage in [Abfrage](/help/sites-administering/operations-dashboard.md#explain-query) als XPath ein, um den Abfrageplan zu erhalten.
+* Fügen Sie die XPath-Abfrage in [Abfrage erläutern](/help/sites-administering/operations-dashboard.md#explain-query) als XPath zum Abrufen des Abfrageplans
 
 **Abrufen von erläuterbarem XPath über den Query-Builder-Debugger**
 
@@ -530,7 +530,7 @@ Eine Beschreibung der Vorgehensweise zum Debuggen von Abfragen mit QueryBuilder 
 
 >[!NOTE]
 >
->Die Konfiguration der Logger wird im Abschnitt [Erstellen eigener Logger und Writer](/help/sites-deploying/configure-logging.md#creating-your-own-loggers-and-writers) beschrieben.
+>Die Konfiguration der Logger wird im Abschnitt beschrieben. [Erstellen eigener Logger und Writer](/help/sites-deploying/configure-logging.md#creating-your-own-loggers-and-writers).
 
 Die Protokollausgabe (INFO-Ebene) der Query-Builder-Implementierung beim Ausführen der Abfrage, die unter „Testen und Debuggen“ beschrieben wurde:
 
@@ -549,7 +549,7 @@ com.day.cq.search.impl.builder.QueryImpl no filtering predicates
 com.day.cq.search.impl.builder.QueryImpl query execution took 69 ms
 ```
 
-Wenn Sie eine Abfrage mit Auswertungen von Eigenschaften verwenden, bei denen eine Filterung durchgeführt oder ein benutzerdefinierter Order-By-Vergleich verwendet wird, wird dies auch in der Abfrage angegeben:
+Wenn Sie eine Abfrage mit Auswertungen von Eigenschaften verwenden, bei denen eine Filterung durchgeführt oder ein anwenderdefinierter Order-By-Vergleich verwendet wird, wird dies auch in der Abfrage angegeben:
 
 ```xml
 com.day.cq.search.impl.builder.QueryImpl executing query (predicate tree):
@@ -564,7 +564,7 @@ com.day.cq.search.impl.builder.QueryImpl filtering predicates: {nodename=nodenam
 com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 ```
 
-## Javadoc-Links   {#javadoc-links}
+## Javadoc-Links {#javadoc-links}
 
 | **Javadoc** | **Beschreibung** |
 |---|---|
