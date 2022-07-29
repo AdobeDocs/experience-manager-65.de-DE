@@ -5,7 +5,7 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: d28d78e426f1e89caa8bd28b067765d40b95cb8a
+source-git-commit: 3af8a2425596ff6c15fb49fed66e9fbd0e9d391e
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 50%
@@ -72,7 +72,7 @@ Navigieren Sie zum entsprechenden Ordner und geben Sie an einer Eingabeaufforder
 1. (Nur JBoss) Löschen Sie nach der Installation des Patches und der Konfiguration des Servers die Ordner tmp und work des JBoss-Anwendungsservers.
 
 >**Hinweis:** Vor dem Start **Configuration Manager**, herunterladen und ersetzen [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) -Datei.
-
+>
 ## Konfigurationen nach der Bereitstellung {#post-deployment-configurations}
 
 ### SAML-Konfigurationen {#saml-configurations}
