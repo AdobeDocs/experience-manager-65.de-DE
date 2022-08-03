@@ -8,8 +8,8 @@ breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, verarbeiten und verteilen Sie digitale Assets.
 source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 58%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
