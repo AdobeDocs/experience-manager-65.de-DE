@@ -259,7 +259,7 @@ ht-degree: 75%
    + [Fallstricke beim Programmieren](code-pitfalls.md)
    + [OSGi-Bundles](osgi-bundles.md)
    + [JCR-Integration](jcr-integration.md)
-   + [Codebeispiele](code-samples.md)
+   + [Code-Beispiele](code-samples.md)
    + [Fehlerbehebung bei langsamen Abfragen](troubleshooting-slow-queries.md)
 + Mobiles Web{#mobileweb}
    + [Mobiles Web](mobile-web.md)
