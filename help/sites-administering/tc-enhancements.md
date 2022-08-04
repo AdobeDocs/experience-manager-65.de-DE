@@ -10,10 +10,10 @@ content-type: reference
 discoiquuid: 42df2db3-4d3c-4954-a03e-221e2f548305
 feature: Language Copy
 exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
-source-git-commit: 3de9f3c97b99644297a2f07344f6aebae1c5ae83
+source-git-commit: 1be3d394283493f7c282ea4c3d794458d88e1ac3
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 77%
+source-wordcount: '681'
+ht-degree: 64%
 
 ---
 
@@ -63,7 +63,7 @@ Es ist möglich, mehrere Zielsprachen in einem Übersetzungsprojekt zu konfiguri
 
 ## Translation-Memory-Aktualisierungen {#translation-memory-updates}
 
-Für manuelle Bearbeitungen von übersetzten Inhalten kann wieder eine Synchronisierung mit dem System für die Übersetzungsverwaltung (Translation Management System, TMS) durchgeführt werden, um das Translation Memory zu trainieren.
+Manuelle Bearbeitungen übersetzter Inhalte können wieder mit dem Translation Management System (TMS) synchronisiert werden, um das Translation Memory zu trainieren.
 
 1. Wählen Sie in der Sites-Konsole nach der Aktualisierung des Textinhalts auf einer übersetzten Seite die Option **Translation Memory aktualisieren**.
 
@@ -73,12 +73,20 @@ Für manuelle Bearbeitungen von übersetzten Inhalten kann wieder eine Synchroni
 
    ![screen_shot_2018-04-22at235024](assets/screen_shot_2018-04-22at235024.jpg)
 
-AEM sendet eine XML-Darstellung der ausgewählten Zeichenfolgen zurück an das Translation Management System.
+AEM aktualisiert die Übersetzung der vorhandenen Zeichenfolgen im Translation Memory des konfigurierten TMS.
 
-* Die Aktion aktualisiert die Übersetzung vorhandener Zeichenfolgen im Translation Memory von konfigurierten Übersetzungsmanagementsystemen (TMS).
+* Die Aktion aktualisiert die Übersetzung vorhandener Zeichenfolgen im Translation Memory des konfigurierten TMS.
 * Es werden keine neuen Übersetzungsaufträge erstellt.
-* Es sendet die Wertpaare von Zeichenfolgen und deren Übersetzungen über AEM Übersetzungs-API zurück an das TMS.
-* Für diese Funktion muss ein Übersetzungsmanagementsystem für die Verwendung mit AEM konfiguriert sein.
+* Die Übersetzungen werden über AEM Übersetzungs-API an das TMS zurückgesendet (siehe unten).
+
+So verwenden Sie diese Funktion:
+
+* Ein TMS muss für die Verwendung mit AEM konfiguriert werden.
+* Der Connector muss die -Methode implementieren [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
+   * Der Code innerhalb dieser Methode bestimmt, was mit der Aktualisierungsanforderung für das Translation Memory geschieht.
+   * Das AEM Übersetzungs-Framework sendet die Zeichenfolgenwertpaare (ursprüngliche und aktualisierte Übersetzung) über diese Methodenimplementierung zurück an das TMS.
+
+Die Translation Memory-Aktualisierungen können abgefangen und an ein benutzerdefiniertes Ziel gesendet werden, wenn ein proprietäres Translation Memory verwendet wird.
 
 ## Sprachkopien auf mehreren Ebenen {#language-copies-on-multiple-levels}
 
