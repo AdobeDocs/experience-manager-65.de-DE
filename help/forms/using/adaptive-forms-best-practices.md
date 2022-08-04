@@ -9,10 +9,10 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 0f1724cbb7ef4fec366fb8b63511a981b47b5429
+source-git-commit: f05ddd2fb72258b7de5d361eb87f5e68e7ddd7ff
 workflow-type: tm+mt
-source-wordcount: '4322'
-ht-degree: 96%
+source-wordcount: '4529'
+ht-degree: 92%
 
 ---
 
@@ -95,6 +95,19 @@ Weitere Informationen finden Sie unter[ Erstellen eines adaptiven Formulars](/he
    * Führen Sie benutzerdefinierte Interaktivitäten ein, indem Sie benutzerdefinierte Widgets oder Erscheinungsbilder erstellen. Es wird nicht empfohlen, die Standardkomponenten zu ändern. Weitere Informationen finden Sie unter[ Framework für Erscheinungsbild](/help/forms/using/introduction-widgets.md).
 
 * Weitere Informationen finden Sie unter[ Bearbeiten von persönlichen identifizierbaren Informationen](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p) für Vorschläge zum Umgang mit PII-Daten.
+
+### Erstellen von Formularvorlagen
+
+Sie können ein adaptives Formular mithilfe der in aktivierten Formularvorlagen erstellen **Konfigurationsbrowser**. Informationen zum Aktivieren der Formularvorlagen finden Sie unter [Erstellen einer adaptiven Formularvorlage](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template.html?lang=en).
+
+Die Formularvorlagen können auch aus Paketen mit adaptiven Formularen hochgeladen werden, die auf einem anderen Authoring-Computer erstellt werden. Formularvorlagen werden durch die Installation von [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de). Einige der empfohlenen Best Practices sind:
+* Die **nosamplecontent** Der Ausführungsmodus wird nur für Autoren und nicht für Veröffentlichungsknoten empfohlen.
+* Die Bearbeitung von Assets wie adaptiven Formularen, Designs, Vorlagen oder Cloud-Konfigurationen erfolgt nur über Autorknoten, die auf den konfigurierten Veröffentlichungsknoten veröffentlicht werden können.
+Weitere Informationen finden Sie unter [Veröffentlichen und Rückgängigmachen der Veröffentlichung von Formularen und Dokumenten](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
+* Das Forms-Add-On-Paket ist für die Bearbeitung sowie für die Veröffentlichung erforderlich, um die Document Service-Vorgänge zu unterstützen. Daher kann es als Abhängigkeit betrachtet werden.
+Wenn Sie nur Forms-bezogene Beispielvorlagen, Designs und DOR-Pakete wünschen, können Sie sie von herunterladen [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en).
+
+Weitere Informationen finden Sie in den Best Practices unter [Einführung in das Authoring adaptiver Formulare](/help/forms/using/introduction-forms-authoring.md).
 
 ## Adaptive Verfasserformulare {#author-adaptive-forms}
 
@@ -309,3 +322,5 @@ Eine der Hauptherausforderungen für Unternehmen ist es, wie persönliche identi
 
 * Verwenden Sie einen sicheren externen Speicherort wie eine Datenbank, um Daten aus dem Entwurf und dem übermittelten Formular zu speichern. Siehe [Konfigurieren von externem Speicher für Entwürfe und eingereichte Formulardaten](/help/forms/using/adaptive-forms-best-practices.md#external-storage).
 * Verwenden Sie die Formularkomponente „Bedingungen“, um die ausdrückliche Zustimmung des Benutzers zu erhalten, bevor die automatische Speicherung aktiviert wird. In diesem Fall können Sie die automatische Speicherung nur aktivieren, wenn der Benutzer den Bedingungen in der Komponente zustimmt.
+
+
