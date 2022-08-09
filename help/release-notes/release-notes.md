@@ -3,9 +3,9 @@ title: Versionshinweise für [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5-Hinweise mit Versionsinformationen, Neuigkeiten, Installationsanleitungen und detaillierten Änderungslisten."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 9f957175573eeb2b40d79a5087dc3034c56819cc
+source-git-commit: e51cf7a5b7d14bc4aed053496c7fe6685dd2b0b8
 workflow-type: tm+mt
-source-wordcount: '3742'
+source-wordcount: '3653'
 ht-degree: 7%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 7%
 | -------- | ---------------------------- |
 | Version | 6.5.13.0 |
 | Typ | Service Pack-Version |
-| Datum | 26. Mai 2022 |
+| Datum   | 26. Mai 2022 |
 | Download-URL | [Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.13.0.zip) |
 
 ## Was ist enthalten in [!DNL Experience Manager] 6,5,13,0 {#what-is-included-in-aem}
@@ -27,7 +27,7 @@ ht-degree: 7%
 
 Die wichtigsten Funktionen und Verbesserungen, die in [!DNL Adobe Experience Manager] 6.5.13.0 sind:
 
-* Unsichtbares CAPTCHA in einem adaptiven Formular verwenden: Sie können jetzt ein unsichtbares CAPTCHA verwenden, um die CAPTCHA-Herausforderung nur im Falle einer verdächtigen Aktivität anzuzeigen. Wenn keine verdächtige Aktivität gefunden wird, wird die CAPTCHA-Herausforderung nicht angezeigt. Sie hilft bei der Bewertung der Fertigstellung menschlicher Formulare ohne Checkbox-Anforderungen, reduziert Anpassungsbemühungen und verbessert das Benutzererlebnis für Endbenutzer. (NPR-38500)
+* Unsichtbares CAPTCHA in einem adaptiven Formular verwenden: Sie können jetzt ein unsichtbares CAPTCHA verwenden, um die CAPTCHA-Herausforderung nur im Falle einer verdächtigen Aktivität anzuzeigen. Wenn keine verdächtige Aktivität gefunden wird, wird die CAPTCHA-Herausforderung nicht angezeigt. Sie hilft bei der Bewertung des Ausfüllens von Formularen durch Menschen ohne Kontrollkästchenanforderungen, reduziert den Anpassungsaufwand und verbessert das Erlebnis für Endbenutzerinnen und -benutzer. (NPR-38500)
 
 * Unterstützung zum Abrufen von Antwortheadern im Nachbearbeitungsprogramm des Formulardatenmodells für REST-Endpunkte hinzugefügt. (NPR-38275)
 
@@ -39,7 +39,12 @@ Die wichtigsten Funktionen und Verbesserungen, die in [!DNL Adobe Experience Man
 
    * Neue Unterstützung für Bildschirmlesehilfen zur Erkennung von Kopf- und Textkörper einer Tabelle als Fortsetzung und verbundene Entitäten. Dadurch wird Bildschirmlesehilfen die korrekte Navigation in den Tabellen erleichtert. (NPR-37139)
    * Bildschirmlesehilfen können jetzt die Navigation in HTML Workspace beenden, bis ein Dialogfeld geöffnet ist. (NPR-37134)
-   * Es wurde die Möglichkeit hinzugefügt, in Forms Designer &quot;Reader für Hyperlinks&quot;festzulegen.(NPR-36221)
+
+   <!-- 
+
+    * Added ability to specify Screen Reader Text for Hyperlinks in Forms Designer.(NPR-36221)
+  
+  -->
 
 Die folgenden Fehlerbehebungen, Schlüsselfunktionen und Verbesserungen wurden in [!DNL Experience Manager] 6.5.13.0:
 
@@ -123,11 +128,19 @@ Die folgenden Fehlerbehebungen, Schlüsselfunktionen und Verbesserungen wurden i
 * Wenn ein Benutzer beim Ausführen eines Workflows dem Kommentarabschnitt HTML-Tags hinzufügt, werden die HTML-Tags gerendert. (NPR-37591)
 * Beim Importieren und Veröffentlichen eines Briefs, der eine neue XDP-Datei enthält, schlagen die Briefe in der Veröffentlichungsinstanz fehl. Wenn die Briefe jedoch ein zweites Mal mit derselben CMP-Datei importiert und veröffentlicht werden, werden die Briefe erfolgreich in der Vorschau angezeigt. (CQ-4343599)
 * Ein Formular mit der Eigenschaft &quot;Prepare data process&quot;kann in HTML Workspace nicht gerendert werden. (CQ-4343294)
-* Bei statischen PDF forms, die mit Forms 6.5 Designer erstellt wurden, schlägt die PDF-Barrierefreiheit mit einem Fehler fehl `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
+<!--
+For static PDF forms that are created with Forms 6.5 Designer, PDF accessibility fails with error `Tab order entry in page with annotations not set to "S"`. (CQ-4343117) 
+ -->
 * Es ist nicht möglich, ein Bild mithilfe des PDFG-Dienstes mit OCR in eine PDF zu konvertieren, nachdem der AEMForms-6.5.0-0038-Patch (log4jv2.16) angewendet wurde. (CQ-4342450)
-* Für den Barcode SSCC-18 wird ein falscher Wert angezeigt. Auf Forms-Servern wird der Wert im rechten Teil des Barcodes weggelassen. (CQ-4342400)
+
+<!-- 
+* Incorrect value is displayed for barcode SSCC-18. Forms servers omit the value on the right part of the barcode. (CQ-4342400)
+-->
 * Eine Microsoft® Word-Datei kann nicht in Forms Designer importiert werden. Benutzer stößt auf Fehler `Word (version XP or onwards) could not be found on the machine`. (CQ-4342146)
-* Wenn Sie in Forms 6.5 Designer ein mit Forms 6.1 Designer erstelltes Formular öffnen und ein Textfeld bearbeiten, überschreitet der Absatzabstand den angegebenen Platz. Alle vorherigen Einstellungen des Bereichs werden entfernt und eine manuelle Neuformatierung des Textfelds ist erforderlich. (CQ-4341899)
+
+<!-- 
+* In Forms 6.5 Designer, when you open a form created with Forms 6.1 Designer and edit a textbox, paragraph spacing exceeds the specified space. All previous settings to the space are removed and manual reformatting of the text box is required. (CQ-4341899) 
+-->
 * Der Benutzer kann die benutzerdefinierte Zeit in der Zeitplanung für die Auftragsbereinigung nicht festlegen. (CQ-4339192)
 * Der Benutzer kann keine Konfiguration in der Benutzeroberfläche für die Endpunktverwaltung aktualisieren und tritt auf einen Fehler ` Uncaught ReferenceError: updateEndpoint_required is not defined`. (CQ-4331523)
 * Bei ungültigen Tags funktioniert die ordnungsgemäße Verarbeitung der Fehlermeldung nicht erwartungsgemäß. (NPR-38106 und CQ-4337173)
