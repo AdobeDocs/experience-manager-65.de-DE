@@ -6,16 +6,16 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 6257b56c61ae14889d9ecefed5030e123a415fd7
+source-git-commit: 4e68a8a8d84d0ffa1d28ab13c196731e58b4cf9a
 workflow-type: tm+mt
-source-wordcount: '3455'
+source-wordcount: '3447'
 ht-degree: 69%
 
 ---
 
 # Konfigurieren von Knotenspeichern und Datenspeichern in AEM 6{#configuring-node-stores-and-data-stores-in-aem}
 
-## Einführung {#introduction}
+## Einführung    {#introduction}
 
 In Adobe Experience Manager (AEM) können Binärdaten unabhängig von den Inhaltsknoten gespeichert werden. Die Binärdaten werden in einem Datenspeicher abgelegt, Inhaltsknoten in einem Knotenspeicher.
 
@@ -90,7 +90,7 @@ Der Knotenspeicher „Dokument“ ist die Basis der AEM-MongoMK-Implementierung.
 
 * `changesSize`: Größe (in MB) der begrenzten Sammlung, die in Mongo zum Zwischenspeichern unterschiedlicher Ausgaben verwendet wird. Standard: `256`
 
-* `customBlobStore`: Boolescher Wert, der angibt, dass ein benutzerdefinierter Datenspeicher verwendet wird. Der Standardwert ist `false`.
+* `customBlobStore`: Boolescher Wert, der angibt, dass ein benutzerdefinierter Datenspeicher verwendet wird. Der Standardwert lautet `false`.
 
 Im Folgenden finden Sie ein Beispiel `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config` Datei:
 
@@ -207,8 +207,7 @@ Wenn Sie auf eine neue Version des 1.10.x S3-Connectors aktualisieren müssen (z
 Sie können die Konfigurationsdatei mit den folgenden Optionen verwenden:
 
 * accessKey: Der AWS-Zugriffsschlüssel.
-* secretKey: Der geheime AWS-Zugriffsschlüssel. **Hinweis:** Alternativ: [IAM-Rollen](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) kann für die Authentifizierung verwendet werden. Wenn Sie IAM-Rollen verwenden, müssen Sie nicht mehr die `accessKey` und `secretKey`.
-
+* secretKey: Der geheime AWS-Zugriffsschlüssel. **Hinweis:** Wenn die `accessKey` oder `secretKey` nicht angegeben ist, wird die [IAM-Rolle](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) wird für die Authentifizierung verwendet.
 * s3Bucket: Der Eimername.
 * s3Region: Die Eimerregion.
 * path: Der Pfad des Datenspeichers. Der Standardwert ist **&lt;aem install=&quot;&quot; folder=&quot;&quot;>/repository/datastore**
@@ -414,7 +413,7 @@ Sie können die Konfigurationsdatei mit den folgenden Optionen verwenden:
 * secretKey=&quot;&quot;: Der Speicherzugriffsschlüssel. Stellen Sie sicher, dass das Zeichen &#39;=&#39; wie &#39;\=&#39; mit Escape-Zeichen versehen ist.
 * container=&quot;&quot;: Der Name des Blob-Speichercontainers von Microsoft Azure. Der Container stellt eine Gruppierung mehrerer Blobs dar. Zusätzliche Details finden Sie in der [offiziellen Dokumentation](https://msdn.microsoft.com/en-us/library/dd135715.aspx).
 * maxConnections=&quot;&quot;: Die gleichzeitige Anzahl gleichzeitiger Anforderungen pro Vorgang. Der Standardwert ist 1.
-* maxErrorRetry=&quot;&quot;: Anzahl weiterer Versuche pro Anfrage. Der Standardwert ist 3.
+* maxErrorRetry=&quot;&quot;: Anzahl weiterer Versuche pro Anfrage. Der Standardwert ist 3.
 * socketTimeout=&quot;&quot;: Das Zeitüberschreitungsintervall (in Millisekunden), das für die Anfrage verwendet wird. Der Standardwert ist 5 Minuten.
 
 Neben den oben aufgeführten Einstellungen können auch die folgenden Einstellungen konfiguriert werden:
