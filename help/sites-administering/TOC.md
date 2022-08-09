@@ -8,13 +8,12 @@ breadcrumb-title: Administratorenanleitung
 user-guide-description: Erfahren Sie mehr über die Verwaltung von AEM.
 feature: Administering
 role: Admin
-source-git-commit: 9a164f92b6d5a927d1cb4ead2f119cc094180713
+source-git-commit: 8e8c829779e172441605a8abd2ef73623b95462d
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 91%
 
 ---
-
 
 # AEM 6.5-Administratorenanleitung {#administering}
 
@@ -78,7 +77,7 @@ ht-degree: 91%
    + [Sicherheitscheckliste](security-checklist.md)
    + [OWASP – Top 10](owasp-top10.md)
    + [Ausführung von AEM im produktionsbereiten Modus](production-ready.md)
-   + [Identitäts-Management](identity-management.md)
+   + [Identity Management](identity-management.md)
    + [Unterstützung der Adobe IMS-Authentifizierung und der Admin Console für AEM Managed Services](ims-config-and-admin-console.md)
    + [Erstellen von geschlossenen Benutzergruppen](cug.md)
    + [Beheben von Serialisierungsproblemen in AEM](mitigating-serialization-issues.md)
@@ -100,8 +99,8 @@ ht-degree: 91%
    + [Content-Disposition-Filter](content-disposition-filter.md)
    + [Zuordnung benutzerdefinierter Benutzergruppen in AEM 6.5](/help/sites-administering/cug-mapping.md)
    + [Unterstützung von Same Site-Cookies](same-site-cookie-support.md)
-+ Personalisierung  {#personalization}
-   + [Personalisierung ](personalization.md)
++ Personalisierung    {#personalization}
+   + [Personalisierung   ](personalization.md)
    + [Konfigurieren von ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-configuring.html)
    + [ClientContext](client-context.md)
    + [Kampagnen](campaigns.md)
