@@ -1,8 +1,8 @@
 ---
 title: Ressourcenzuordnung
-seo-title: Ressourcenzuordnung
+seo-title: Resource Mapping
 description: Erfahren Sie, wie Sie mit der Ressourcenzuordnung Umleitungen, Vanity-URLs und virtuelle Hosts für AEM definieren.
-seo-description: Erfahren Sie, wie Sie mit der Ressourcenzuordnung Umleitungen, Vanity-URLs und virtuelle Hosts für AEM definieren.
+seo-description: Learn how to define redirects, vanity URLs and virtual hosts for AEM by using resource mapping.
 uuid: 2ca2d0e4-6f90-4ecc-82db-26991f08c66f
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,12 +10,12 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 3582a4d8-a47b-467a-9e25-cb45f969ec93
 docset: aem65
-feature: Konfiguration
+feature: Configuring
 exl-id: 3eebdd38-da5b-4c38-868a-22c3c7a97b66
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 7c24379c01f247f5ad45e3ecd40f3edef4ac3cfb
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 66%
+source-wordcount: '519'
+ht-degree: 100%
 
 ---
 
@@ -23,12 +23,12 @@ ht-degree: 66%
 
 Die Ressourcenzuordnung wird zur Definition von Umleitungen, Vanity-URLs und virtuellen Hosts für AEM verwendet.
 
-Diese Zuordnungen können Sie beispielsweise folgendermaßen verwenden:
+Diese Zuordnungen können Sie beispielsweise verwenden, um:
 
-* Setzen Sie allen Anforderungen das Präfix `/content` voran, damit die interne Struktur für die Besucher Ihrer Website ausgeblendet wird.
-* Definieren Sie eine Umleitung, damit alle Anforderungen an die `/content/en/gateway`-Seite Ihrer Website an `https://gbiv.com/` umgeleitet werden.
+* Allen Anfragen das Präfix `/content` voranzustellen, sodass die interne Struktur für Besucher Ihrer Website ausgeblendet wird.
+* Eine Umleitung zu definieren, sodass alle Anfragen an die Seite `/content/en/gateway` Ihrer Website zu `https://gbiv.com/` umgeleitet werden.
 
-Eine mögliche HTTP-Zuordnung präfixiert alle Anforderungen an `localhost:4503` mit `/content`. Eine solche Zuordnung kann zum Ausblenden der internen Struktur für die Besucher der Website verwendet werden, da sie den Zugriff auf:
+Bei einer möglichen HTTP-Zuordnung wird allen Anfragen an `localhost:4503` das Präfix `/content` vorangestellt. Eine solche Zuordnung kann zum Ausblenden der internen Struktur für die Besucher der Website verwendet werden, da sie den Zugriff auf:
 
 `localhost:4503/content/we-retail/en/products.html`
 
@@ -36,7 +36,7 @@ mithilfe von:
 
 `localhost:4503/we-retail/en/products.html`
 
-da durch die Zuordnung automatisch das Präfix `/content` zu `/we-retail/en/products.html` hinzugefügt wird.
+da die Zuordnung automatisch das Präfix `/content` zu `/we-retail/en/products.html` hinzufügt.
 
 >[!CAUTION]
 >
@@ -52,13 +52,17 @@ Die Zuordnungen bilden zwei Listen, die der JCR-Ressourcen-Resolver auswertet (v
 
 Diese Listen können (zusammen mit Konfigurationsinformationen) unter der Option **JCR ResourceResolver** der Felix-Konsole angezeigt werden. Beispiel: `https://<*host*>:<*port*>/system/console/jcrresolver`:
 
-* Configuration Zeigt die aktuelle Konfiguration (wie für den [Apache Sling-Ressourcen-Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) definiert) an.
+* Configuration
+Zeigt die aktuelle Konfiguration (wie für den [Apache Sling-Ressourcen-Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) definiert) an.
 
-* Configuration Test Hiermit können Sie eine URL oder einen Ressourcenpfad eingeben. Klicken Sie auf **Resolve** oder **Map**, um festzulegen, wie das System den Eintrag transformiert.
+* Configuration Test
+Hiermit können Sie eine URL oder einen Ressourcenpfad eingeben. Klicken Sie auf **Resolve** oder **Map**, um festzulegen, wie das System den Eintrag transformiert.
 
-* **Resolver Map Entries** Die Liste der Einträge, die von den ResourceResolver.resolve-Methoden für die Zuordnung von URLs zu Ressourcen verwendet wird.
+* **Resolver Map Entries**
+Die Liste der Einträge, die von den ResourceResolver.resolve-Methoden für die Zuordnung von URLs zu Ressourcen verwendet wird.
 
-* **Mapping Map Entries** Die Liste der Einträge, die von den ResourceResolver.map-Methoden für die Zuordnung von Ressourcenpfaden zu URLs verwendet wird.
+* **Mapping Map Entries**
+Die Liste der Einträge, die von den ResourceResolver.map-Methoden für die Zuordnung von Ressourcenpfaden zu URLs verwendet wird.
 
 Die beiden Listen enthalten verschiedene Einträge, darunter die von der/den Anwendung/en als Standardwerte definierten. Sie dienen häufig dazu, URLs für die Benutzer zu vereinfachen.
 
@@ -74,7 +78,7 @@ das
 
 aus, um die Anforderung
 
-`https://localhost:4503/welcome` &quot;
+`https://localhost:4503/welcome` ``
 
 in:
 
@@ -84,7 +88,7 @@ Neue Zuordnungsdefinitionen werden im Repository erstellt.
 
 >[!NOTE]
 >
->Es stehen viele Ressourcen zur Verfügung, mit denen erläutert wird, wie reguläre Ausdrücke definiert werden. zum Beispiel [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
+>Es stehen eine Vielzahl von Ressourcen zur Verfügung, die das Definieren regulärer Ausdrücke erläutern, z. B. [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
 ### Erstellen von Zuordnungsdefinitionen in AEM {#creating-mapping-definitions-in-aem}
 
@@ -92,17 +96,18 @@ Eine Standardinstallation von AEM umfasst folgenden Ordner:
 
 `/etc/map/http`
 
-Dies ist die Struktur, die beim Definieren von Zuordnungen für das HTPP-Protokoll verwendet wird. Andere Ordner ( `sling:Folder`) können unter `/etc/map` für alle anderen Protokolle erstellt werden, die Sie zuordnen möchten.
+Dies ist die Struktur, die beim Definieren von Zuordnungen für das HTTP-Protokoll verwendet wird. Wenn Sie Zuordnungen für weitere Protokolle erstellen möchten, können unter `/etc/map` weitere Ordner (`sling:Folder`) erstellt werden.
 
-#### Konfigurieren einer internen Umleitung an „/content“{#configuring-an-internal-redirect-to-content}
+#### Konfigurieren einer internen Umleitung an /content {#configuring-an-internal-redirect-to-content}
 
-So erstellen Sie die Zuordnung, die einer Anforderung an https://localhost:4503/ mit `/content` vorangestellt ist:
+So erstellen Sie eine Zuordnung, die allen Anfragen an https://localhost:4503/ das Präfix `/content` voranstellt:
 
-1. Navigieren Sie mit CRXDE zu `/etc/map/http`.
+1. Navigieren Sie mithilfe von CRXDE zu `/etc/map/http`.
 
 1. Erstellen Sie einen neuen Knoten:
 
-   * **Typ** `sling:Mapping` Der Knotentyp ist für diese Zuordnungen bestimmt, seine Verwendung ist jedoch nicht obligatorisch.
+   * **Typ** `sling:Mapping`
+Der Knotentyp ist für diese Zuordnungen bestimmt, seine Verwendung ist jedoch nicht obligatorisch.
 
    * **Name** `localhost_any`
 
@@ -116,18 +121,18 @@ So erstellen Sie die Zuordnung, die einer Anforderung an https://localhost:4503/
       * **Wert** `localhost.4503/`
    * **Name** `sling:internalRedirect`
 
-      * **Typ** `String`
+      * **Typ** `String[]`
 
       * **Wert** `/content/`
 
 
 1. Klicken Sie auf **Alle speichern**.
 
-Dadurch wird eine Anfrage verarbeitet, z. B.:
+Damit wird eine Anfrage wie die folgende behandelt:
 `localhost:4503/geometrixx/en/products.html`
-wie wenn:
+als ob:
 `localhost:4503/content/geometrixx/en/products.html`
-wurden beantragt.
+angefragt worden wäre.
 
 >[!NOTE]
 >
@@ -135,4 +140,4 @@ wurden beantragt.
 
 >[!NOTE]
 >
->Sie können `/etc/map.publish` verwenden, um die Konfigurationen für die Veröffentlichungsumgebung zu speichern. Diese müssen dann repliziert werden und der neue Speicherort ( `/etc/map.publish`) muss für den **Zuordnungs-Speicherort** des [Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) der Veröffentlichungsumgebung konfiguriert sein.
+>Die Konfigurationen für die Veröffentlichungsumgebung können unter `/etc/map.publish` gespeichert werden. Diese müssen dann repliziert und der neue Speicherort (`/etc/map.publish`) muss für den **Zuordnungs-Speicherort** des [Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) der Veröffentlichungsumgebung konfiguriert werden.
