@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3c017f9a-aa7f-4d12-ba8b-9fd92c029157
 exl-id: 1f544485-5a01-4a4a-ab0f-dcee67e1a38b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 100%
 
@@ -23,6 +23,6 @@ Mit Output können Sie steuern, ob externe Entitäten in XML-Eingaben aufgelöst
 
 **Die Verarbeitung von XML-Datendateien mit Verweisen auf externe Entitäten verhindern**
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Output“.
+1. Klicken Sie in der Administration-Console auf Services > Ausgabe.
 1. Deaktivieren Sie das Kontrollkästchen „Externe Entitäten auflösen“.
 1. Klicken Sie auf Speichern.

@@ -11,7 +11,7 @@ discoiquuid: 9f1beb89-8eb1-4e37-a5e8-19752b21374a
 docset: aem65
 exl-id: 240ed4d8-b21b-46eb-80a9-9e8093b77235
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 100%
 
@@ -33,7 +33,7 @@ Die Formularportalkomponenten ermöglichen es Ihnen, die folgende Funktion hinzu
 
 * Auflisten von Formularen in benutzerdefinierten Layouts. Standardmäßig werden Layouts für Listenansicht, Kartenansicht und Bereichsansicht bereitgestellt. Sie können auch eigene benutzerdefinierte Layouts erstellen.
 * Sie können benutzerdefinierte Metadaten sowie benutzerdefinierte Aktionen beim Auflisten anzeigen.
-* Auflisten von Formularen, die von der AEM Forms-Benutzeroberfläche auf der Veröffentlichungsinstanz veröffentlicht wurden, in der Forms Portal-Komponenten verwendet werden.
+* Auflisten von Formularen, die von der AEM Forms-Benutzeroberfläche auf der Veröffentlichungsinstanz veröffentlicht wurden, in der Formularportal-Komponenten verwendet werden.
 * Endbenutzern ermöglichen, Formulare in HTML- und im PDF-Format anzuzeigen.
 * Verwenden benutzerdefinierter HTML-Profile, um Formulare anzuzeigen.
 * Aktivieren der Suche nach Formularen anhand einer Reihe von Kriterien, wie zum Beispiel Formulareigenschaften, Metadaten und Tags.

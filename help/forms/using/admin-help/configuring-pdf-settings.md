@@ -12,7 +12,7 @@ discoiquuid: ab018b6d-0233-4439-bb75-58c5421d769a
 feature: PDF Generator
 exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '7265'
 ht-degree: 100%
 
@@ -359,7 +359,7 @@ Unabhängig von der ausgewählten Kompatibilitätsoption bleiben Graustufenbilde
 
 ### Arbeitsfarbräume {#working-spaces}
 
-Wählen Sie für alle Werte in der Liste unter „Farbmanagement“ außer „Farbe unverändert lassen“ Optionen in den Listen im Bereich „Arbeitsfarbraum“ aus, um anzugeben, welche ICC-Profile für die Definition und Kalibrierung der Graustufen-, RGB- und CMYK-Farbräume in untersuchten PDF-Dateien verwendet werden. Die folgenden Optionen stehen zur Auswahl:
+Wählen Sie für alle Werte in der Liste unter „Farbmanagement“ außer „Farbe unverändert lassen“ Optionen in den Listen im Bereich „Arbeitsfarbraum“ aus, um anzugeben, welche ICC-Profile für die Definition und Kalibrierung der Graustufen-, RGB- und CMYK-Farbräume in untersuchten PDF-Dateien verwendet werden. Die folgenden Optionen stehen zur Auswahl:  
 
 **Grau**: Definiert den Farbraum aller Graustufenbilder in Dateien. Diese Option ist nur verfügbar, wenn Sie „Alles für Farbmanagement kennzeichnen“ oder „Nur Bilder für Farbmanagement kennzeichnen“ auswählen. Das standardmäßige ICC-Profil für Graustufenbilder ist Gray Gamma 2.2. Sie können auch „Ohne“ wählen, um die Konvertierung von Graustufenbildern zu verhindern.
 

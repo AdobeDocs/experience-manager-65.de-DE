@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: process-reporting
 discoiquuid: a1af9920-5d2a-462f-bdee-ccec4c047c5b
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 100%
 
@@ -74,4 +74,4 @@ Der Service verwendet dann OSGi-Services, um die relevanten Berichtsdaten abzuru
 
 Sie können Ihre eigenen benutzerdefinierten Berichte erstellen und diese auf der Registerkarte Benutzerdefinierte Berichte in der Benutzeroberfläche für die Prozessberichterstellung anzeigen.
 
-Die Schritte zum Erstellen eines benutzerspezifischen Berichts finden Sie unter „So erstellen Sie einen benutzerspezifischen Bericht“ im Artikel [Benutzerdefinierte Berichte in Process Reporting](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
+Die Schritte zum Erstellen eines benutzerdefinierten Berichts finden Sie im Abschnitt zur Erstellung benutzerdefinierter Berichte im Artikel [Benutzerdefinierte Berichte in der Prozessberichterstellung](/help/forms/using/process-reporting/process-reporting-custom-reports.md).

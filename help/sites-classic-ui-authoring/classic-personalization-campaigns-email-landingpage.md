@@ -1,8 +1,8 @@
 ---
 title: Erstellen einer effektiven Einstiegsseite für Newsletter
-seo-title: Erstellen einer effektiven Einstiegsseite für Newsletter
+seo-title: Creating an Effective Newsletter Landing Page
 description: Eine effektive Startseite für Ihren Newsletter hilft Ihnen dabei, so viele Personen wie möglich dazu zu animieren, sich für Ihren Newsletter (oder eine andere E-Mail-Marketing-Kampagne) zu registrieren. Sie können die Informationen, die Sie anhand der Registrierungen für Ihren Newsletter erfassen, verwenden, um Leads zu erhalten.
-seo-description: Eine effektive Startseite für Ihren Newsletter hilft Ihnen dabei, so viele Personen wie möglich dazu zu animieren, sich für Ihren Newsletter (oder eine andere E-Mail-Marketing-Kampagne) zu registrieren. Sie können die Informationen, die Sie anhand der Registrierungen für Ihren Newsletter erfassen, verwenden, um Leads zu erhalten.
+seo-description: An effective newsletter landing page helps you get as many people as possible to sign up for your newsletter (or other email marketing campaign). You can use the information you gather from your newsletter sign ups to get leads.
 uuid: 0799b954-076b-4e95-8724-3661ae8fddb6
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: c2fbf858-8815-426e-a2e5-f92bcf909ad0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 95%
+source-wordcount: '613'
+ht-degree: 94%
 
 ---
 
@@ -64,7 +64,7 @@ Das folgende Beispiel ist ein Formular, das unter https://localhost:4502/cf#/con
 
    ![dc_formstart_thankyouadvanced](assets/dc_formstart_thankyouadvanced.png)
 
-### Creating a Thank You Page {#creating-a-thank-you-page}
+### Erstellen einer Dankeseite {#creating-a-thank-you-page}
 
 Wenn Benutzer auf **Jetzt abonnieren** klicken, soll automatisch eine Dankeseite geöffnet werden. Erstellen Sie die Dankeseite auf der Seite des Geometrixx-Newsletters. Nach dem Erstellen des Newsletter-Formulars bearbeiten Sie die Formular-Komponente und fügen den Pfad zu der Dankeseite hinzu.
 
@@ -88,7 +88,7 @@ Gehen Sie folgendermaßen vor, um Teaser für eine effektive Newsletter-Startsei
 
 1. Erstellen Sie eine Kampagne mit zwei Teasern; kennzeichnen Sie einen Teaser als &quot;geschäftlich&quot; und belassen Sie den anderen ohne Kennzeichnung.
 
-### Push-Übertragung von Inhalt an Abonnenten  {#pushing-content-to-subscribers}
+### Push-Übertragung von Inhalt an Abonnenten {#pushing-content-to-subscribers}
 
 Übernehmen Sie alle Änderungen an Seiten über die Newsletter-Funktion in MCM. Sie können dann aktualisierte Inhalte an Abonnenten weitergeben.
 

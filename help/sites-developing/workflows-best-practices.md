@@ -1,8 +1,8 @@
 ---
 title: Best Practices für Workflows
-seo-title: Best Practices für Workflows
+seo-title: Workflow Best Practices
 description: Best Practices für Workflows
-seo-description: 'null'
+seo-description: null
 uuid: 79be4055-c2ef-428e-9054-103c6cfde1d2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1924'
+source-wordcount: '1920'
 ht-degree: 94%
 
 ---
@@ -50,7 +50,7 @@ Mögliche Vorteile:
 
 Richtlinien für die Optimierung der Leistung von DAM-Workflows finden Sie im [Leistungsoptimierungshandbuch für AEM Assets](/help/assets/performance-tuning-guidelines.md).
 
-### Konfigurieren der maximalen Anzahl paralleler Workflows  {#configure-the-maximum-number-of-concurrent-workflows}
+### Konfigurieren der maximalen Anzahl paralleler Workflows {#configure-the-maximum-number-of-concurrent-workflows}
 
 AEM ermöglicht die gleichzeitige Ausführung mehrerer Workflow-Threads. Standardmäßig ist die Anzahl der Threads auf die Hälfte der Prozessorkerne des Systems festgelegt.
 
@@ -58,17 +58,17 @@ Wenn die Systemressourcen durch die ausgeführten Workflows stark beansprucht we
 
 Zur Behandlung dieses Problems empfiehlt Adobe, die **** maximale Anzahl paralleler Aufträge auf einen Wert festzulegen, der zwischen der Hälfte und drei Vierteln der Anzahl der Prozessorkerne des Systems liegt. Dadurch sollte dem System genügend Kapazität zur Verfügung stehen, damit solche Workflows ohne Beeinträchtigung der Reaktionsfähigkeit verarbeitet werden können.
 
-Zum Konfigurieren von **Maximale Anzahl paralleler Aufträge** haben Sie folgende Möglichkeiten:
+So konfigurieren Sie **Maximale Anzahl paralleler Aufträge** können Sie Folgendes tun:
 
-* Konfigurieren Sie die **[OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md)** über die AEM Web-Konsole. für **Warteschlange: Granite-Workflow-Warteschlange** (eine **Apache Sling-Auftragswarteschlangenkonfiguration**).
+* Konfigurieren Sie die **[OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md)** über die AEM Web-Konsole; für **Warteschlange: Granite-Workflow-Warteschlange** (ein **Apache Sling Job Queue-Konfiguration**).
 
-* Konfigurieren Sie die Warteschlange über die Option **Sling Jobs** der AEM Web Console. für **Auftragswarteschlangenkonfiguration: Granite-Workflow-Warteschlange**, unter `http://localhost:4502/system/console/slingevent`.
+* Die Warteschlange kann über die **Sling-Aufträge** Option der AEM Web-Konsole; für **Auftragswarteschlangenkonfiguration: Granite-Workflow-Warteschlange**, um `http://localhost:4502/system/console/slingevent`.
 
-Darüber hinaus gibt es eine separate Konfiguration für die **Granite Workflow External Process Job Queue**. Diese Konfiguration wird für Workflow-Prozesse verwendet, die externe Binärdateien starten (beispielsweise **InDesign Server** oder **Image Magick**).
+Darüber hinaus gibt es eine separate Konfiguration für die **Warteschlange für externe Prozessaufträge im Granite-Workflow**. Diese Konfiguration wird für Workflow-Prozesse verwendet, die externe Binärdateien starten (beispielsweise **InDesign Server** oder **Image Magick**).
 
-### Konfigurieren individueller Auftragswarteschlangen  {#configure-individual-job-queues}
+### Konfigurieren individueller Auftragswarteschlangen {#configure-individual-job-queues}
 
-Manchmal ist es hilfreich, individuelle Auftragswarteschlangen zur Steuerung paralleler Threads oder andere Warteschlangenoptionen für individuelle Aufträge zu konfigurieren. Über die Web-Konsole können Sie eine individuelle Warteschlange über die Factory **Warteschlangenkonfiguration für Apache Sling-Aufträge** hinzufügen und konfigurieren. Um das entsprechende Thema aufzulisten, führen Sie das Modell Ihres Workflows aus und suchen Sie in der Konsole **Sling Jobs** nach diesem. z. B. bei `http://localhost:4502/system/console/slingevent`.
+Manchmal ist es hilfreich, individuelle Auftragswarteschlangen zur Steuerung paralleler Threads oder andere Warteschlangenoptionen für individuelle Aufträge zu konfigurieren. Über die Web-Konsole können Sie eine individuelle Warteschlange über die Factory **Warteschlangenkonfiguration für Apache Sling-Aufträge** hinzufügen und konfigurieren. Um das entsprechende Thema aufzulisten, führen Sie das Modell Ihres Workflows aus und suchen Sie im **Sling-Aufträge** Konsole; z. B. bei `http://localhost:4502/system/console/slingevent`.
 
 Individuelle Auftragswarteschlangen können auch für Verlaufs-Workflows hinzugefügt werden.
 
@@ -107,7 +107,7 @@ Workflow-Modelle werden im Repository auf der Grundlage ihres Typs gespeichert:
    >Beachten Sie Folgendes:
    >
    >* Platzieren Sie in diesem Ordner keine benutzerdefinierten Workflow-Modelle.
-   >* Alles bearbeiten in `/libs`
+   >* Bearbeiten von Elementen in `/libs`
 
    >
    >Vorgenommene Änderungen werden unter Umständen bei einem Upgrade oder beim Installieren von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben.
@@ -130,7 +130,7 @@ Workflow-Modelle werden im Repository auf der Grundlage ihres Typs gespeichert:
    >
    >Wenn diese Designs *mithilfe der AEM-Benutzeroberfläche* bearbeitet werden, werden die Details an die neuen Speicherorte kopiert.
 
-#### Speicherorte: Workflow-Starter  {#locations-workflow-launchers}
+#### Speicherorte: Workflow-Starter {#locations-workflow-launchers}
 
 Definitionen für Workflow-Starter werden im Repository ebenfalls auf der Grundlage ihres Typs gespeichert:
 
@@ -143,7 +143,7 @@ Definitionen für Workflow-Starter werden im Repository ebenfalls auf der Grundl
    >Beachten Sie Folgendes:
    >
    >* Platzieren Sie in diesem Ordner keine benutzerdefinierten Workflow-Starter.
-   >* Alles bearbeiten in `/libs`
+   >* Bearbeiten von Elementen in `/libs`
 
    >
    >Vorgenommene Änderungen werden unter Umständen bei einem Upgrade oder beim Installieren von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben.
@@ -162,7 +162,7 @@ Definitionen für Workflow-Starter werden im Repository ebenfalls auf der Grundl
    >
    >Wenn diese Definitionen *mithilfe der AEM-Benutzeroberfläche* bearbeitet werden, werden die Details an die neuen Speicherorte kopiert.
 
-#### Speicherorte: Workflow-Skripte  {#locations-workflow-scripts}
+#### Speicherorte: Workflow-Skripte {#locations-workflow-scripts}
 
 Workflow-Skripte werden im Repository ebenfalls auf der Grundlage ihres Typs gespeichert:
 
@@ -175,7 +175,7 @@ Workflow-Skripte werden im Repository ebenfalls auf der Grundlage ihres Typs ges
    >Beachten Sie Folgendes:
    >
    >* Platzieren Sie in diesem Ordner keine benutzerdefinierten Workflow-Skripte.
-   >* Alles bearbeiten in `/libs`
+   >* Bearbeiten von Elementen in `/libs`
 
    >
    >Vorgenommene Änderungen werden unter Umständen bei einem Upgrade oder beim Installieren von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben.
@@ -203,7 +203,7 @@ Workflow-Benachrichtigungen werden im Repository ebenfalls auf der Grundlage ihr
    >Beachten Sie Folgendes:
    >
    >* Platzieren Sie in diesem Ordner keine benutzerdefinierten Workflow-Benachrichtigungsdefinitionen.
-   >* Alles bearbeiten in `/libs`
+   >* Bearbeiten von Elementen in `/libs`
 
    >
    >Vorgenommene Änderungen werden unter Umständen bei einem Upgrade oder beim Installieren von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben.
@@ -303,7 +303,7 @@ Sie können [Workflow-Statuswerte](/help/sites-developing/workflows.md#workflow-
 
 Diese Information wird zum Anzeigen des Fortschritts eines Workflows verwendet, wenn Sie auf die Registerkarte [**Workflow-Informationen** eines Arbeitselements aus dem **Posteingang**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions) klicken. Vorhandene Workflow-Modelle können bearbeitet werden, um Statuswerte hinzuzufügen.
 
-### Prozessschritt „Seite aktivieren“{#activate-page-process-step}
+### Prozessschritt „Seite aktivieren“ {#activate-page-process-step}
 
 Der Prozessschritt **Seite aktivieren** aktiviert zwar Seiten für Sie, referenzierte DAM-Assets werden durch diesen Schritt aber nicht automatisch gesucht und aktiviert.
 
@@ -324,7 +324,7 @@ Wichtige Punkte bei Upgrades für Ihre Instanz:
 
 ## Systemtools {#system-tools}
 
-Für die Workflow-Überwachung, -Verwaltung und -Problembehandlung stehen zahlreiche Systemtools zur Verfügung. Alle Beispiel-URLs unten verwenden `localhost:4502`, sollten jedoch in jeder Autoreninstanz ( `<hostname>:<port>`) verfügbar sein.
+Für die Workflow-Überwachung, -Verwaltung und -Problembehandlung stehen zahlreiche Systemtools zur Verfügung. Alle Beispiel-URLs unten verwenden `localhost:4502`, sollte jedoch in jeder Autoreninstanz verfügbar sein ( `<hostname>:<port>`).
 
 ### Konsole zur Behandlung von Sling-Aufträgen {#sling-job-handling-console}
 

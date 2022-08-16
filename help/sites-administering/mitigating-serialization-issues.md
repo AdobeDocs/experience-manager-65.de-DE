@@ -1,8 +1,8 @@
 ---
 title: Beheben von Serialisierungsproblemen in AEM
-seo-title: Beheben von Serialisierungsproblemen in AEM
+seo-title: Mitigating serialization issues in AEM
 description: Hier erfahren Sie, wie Sie Serialisierungsprobleme in AEM beheben.
-seo-description: Hier erfahren Sie, wie Sie Serialisierungsprobleme in AEM beheben.
+seo-description: Learn how to mitigate serialization issues in AEM.
 uuid: c3989dc6-c728-40fd-bc47-f8427ed71a49
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,14 +12,14 @@ discoiquuid: f3781d9a-421a-446e-8b49-40744b9ef58e
 exl-id: 01e9ab67-15e2-4bc4-9b8f-0c84bcd56862
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '956'
 ht-degree: 66%
 
 ---
 
 # Beheben von Serialisierungsproblemen in AEM{#mitigating-serialization-issues-in-aem}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
  Das AEM-Team von Adobe arbeitet eng mit dem Open-Source-Projekt [NotSoSerial](https://github.com/kantega/notsoserial) zusammen, um Sie bei der Behandlung der in **CVE-2015-7501** beschriebenen Sicherheitsrisiken zu unterstützen. NotSoSerial ist unter der [Apache 2-Lizenz](https://www.apache.org/licenses/LICENSE-2.0) lizenziert und beinhaltet ASM-Code, der unter der eigenen [BSD-ähnlichen Lizenz](https://asm.ow2.org/license.html) lizenziert ist.
 
@@ -29,7 +29,7 @@ NotSoSerial ist eine Lösung auf Java-Ebene für ein Problem auf Java-Ebene und 
 
 Standardmäßig führt der Agent eine Blockierungsliste-Prüfung für aktuelle bekannte anfällige Klassen durch. Diese Blockierungsliste soll Sie vor der aktuellen Liste der Exploits schützen, die diese Art von Verwundbarkeit nutzen.
 
-Die Blockierungsliste und Zulassungsliste können konfiguriert werden, indem Sie die Anweisungen im Abschnitt [Konfigurieren des Agenten](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) dieses Artikels befolgen.
+Die Blockierungsliste und Zulassungsliste können entsprechend den Anweisungen im Abschnitt [Konfigurieren des Agenten](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) Abschnitt dieses Artikels.
 
 Der Agent unterstützt Sie bei der Behandlung der neuesten bekannten Klassen mit Sicherheitsrisiko. Wenn Ihr Projekt nicht vertrauenswürdige Daten deserialisiert, ist es unter Umständen weiterhin anfällig für Denial-of-Service-Angriffe, Out-of-Memory-Angriffe und bislang noch unbekannte Deserialisierungs-Exploits.
 
@@ -46,7 +46,7 @@ Adobe unterstützt offiziell Java 6, 7 und 8. Nach unserem Kenntnisstand unter
 1. Wechseln Sie zur Bundle-Web-Konsole unter `https://server:port/system/console/bundles`
 1. Suchen Sie nach dem Serialisierungsbundle und starten Sie es. Daraufhin wird der NotSoSerial-Agent automatisch dynamisch geladen.
 
-## Installieren des Agents auf Anwendungsservern  {#installing-the-agent-on-application-servers}
+## Installieren des Agents auf Anwendungsservern {#installing-the-agent-on-application-servers}
 
 Der NotSoSerial-Agent ist nicht in der Standardverteilung von AEM für Anwendungsserver enthalten. Sie können ihn jedoch aus der AEM-JAR-Distribution extrahieren und mit Ihrer Anwendungsservereinrichtung verwenden:
 
@@ -56,9 +56,9 @@ Der NotSoSerial-Agent ist nicht in der Standardverteilung von AEM für Anwendung
    java -jar aem-quickstart-6.2.0.jar -unpack
    ```
 
-1. Wechseln Sie zum Speicherort des neu entpackten AEM Schnellstarts und kopieren Sie den Ordner `crx-quickstart/opt/notsoserial/` in den Ordner `crx-quickstart` der Installation des AEM-Anwendungsservers.
+1. Wechseln Sie zum Speicherort des neu entpackten AEM Schnellstarts und kopieren Sie die `crx-quickstart/opt/notsoserial/` Ordner in `crx-quickstart` Ordner der AEM-Anwendungsserverinstallation.
 
-1. Ändern Sie das Eigentum von `/opt` in den Benutzer, der den Server ausführt:
+1. Ändern des Eigentums an `/opt` an den Benutzer, der den Server ausführt:
 
    ```shell
    chown -R opt <user running the server>
@@ -66,13 +66,13 @@ Der NotSoSerial-Agent ist nicht in der Standardverteilung von AEM für Anwendung
 
 1. Konfigurieren Sie den Agent und vergewissern Sie sich, dass er ordnungsgemäß aktiviert wurde, wie in den folgenden Abschnitten dieses Artikels gezeigt.
 
-## Konfigurieren des Agents  {#configuring-the-agent}
+## Konfigurieren des Agents {#configuring-the-agent}
 
 Die Standardkonfiguration ist für die meisten Installationen ausreichend. Dies umfasst eine Blockierungsliste bekannter anfälliger Klassen für die Remote-Ausführung und eine Zulassungsliste von Paketen, bei denen die Deserialisierung vertrauenswürdiger Daten relativ sicher sein sollte.
 
 Die Firewallkonfiguration ist dynamisch und kann jederzeit wie folgt geändert werden:
 
-1. Wechseln Sie zur Web-Konsole unter `https://server:port/system/console/configMgr` .
+1. Wechseln Sie zur Web-Konsole unter `https://server:port/system/console/configMgr`
 1. Suchen Sie nach **Deserialization Firewall Configuration** und klicken Sie darauf.
 
    >[!NOTE]
@@ -112,7 +112,7 @@ Weitere Informationen zum Behandeln von Problemen mit dem Agent finden Sie weite
 
 >[!NOTE]
 >
->Wenn Sie der Zulassungsliste `org.apache.commons.collections.functors` hinzufügen, schlägt die Konsistenzprüfung immer fehl.
+>Wenn Sie `org.apache.commons.collections.functors` zur Zulassungsliste hinzu, schlägt die Konsistenzprüfung immer fehl.
 
 ## Behandeln von Fehlern beim dynamischen Laden des Agents {#handling-errors-with-dynamic-agent-loading}
 
@@ -132,12 +132,12 @@ Gehen Sie zum manuellen Laden des Agents wie folgt vor:
 
    >[!NOTE]
    >
-   >Die Adobe-Distribution der NotSoSerial Agent-JAR finden Sie im Ordner `crx-quickstart/opt/notsoserial/` Ihrer AEM.
+   >Die Adobe-Verteilung der NotSoSerial Agent-JAR-Datei finden Sie im `crx-quickstart/opt/notsoserial/` Ordner Ihrer AEM Installation.
 
 1. Beenden Sie die JVM-Instanz und starten Sie sie neu.
 
 1. Überprüfen Sie mithilfe der unter [Überprüfen der Agent-Aktivierung](/help/sites-administering/mitigating-serialization-issues.md#verifying-the-agent-s-activation) beschriebenen Schritte erneut die Aktivierung des Agents.
 
-## Weitere Überlegungen  {#other-considerations}
+## Weitere Überlegungen {#other-considerations}
 
 Lesen Sie bei Verwendung einer JVM von IBM die Dokumentation zur Unterstützung der Java Attach-API. Diese finden Sie [hier](https://www.ibm.com/support/knowledgecenter/SSSTCZ_2.0.0/com.ibm.rt.doc.20/user/attachapi.html).

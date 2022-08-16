@@ -2,7 +2,7 @@
 title: Best Practices
 seo-title: Best Practices
 description: Best Practices für die Bearbeitung beschreiben, wie Sie AEM am effizientesten und effektivsten verwenden. Diese laufend erweiterte Liste von Themen enthält eine Vielzahl von Bereichen in AEM.
-seo-description: Best Practices für die Bearbeitung beschreiben, wie Sie AEM am effizientesten und effektivsten verwenden. Diese laufend erweiterte Liste von Themen enthält eine Vielzahl von Bereichen in AEM.
+seo-description: Authoring best practices describe how to use AEM in the most efficient and most effective way possible. This growing list of topics includes a variety of areas in AEM.
 uuid: d1f58335-0aa6-4b35-bdcd-cf6051bd1439
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
 source-git-commit: 22cdd6a7b343749b8ce85d8c1b230d094732f44a
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 65%
+source-wordcount: '282'
+ht-degree: 62%
 
 ---
 
@@ -25,7 +25,7 @@ Die folgenden Bereiche enthalten Hinweise zu bewährten Vorgehensweisen:
 
 * [Assets](#assets)
 * [Sites](#sites)
-* [Formulare](#forms)
+* [Forms](#forms)
 
 Best Practices für die Verwaltung, Bereitstellung, Pflege und Entwicklung finden Sie unter folgenden Themen:
 
@@ -37,7 +37,7 @@ Spezielle Dokumente werden in den folgenden Tabellen beschrieben und verknüpft.
 
 ## Assets {#assets}
 
-Best Practices für Assets, einschließlich der Dynamic Media-Funktion und der Dynamic Media Classic-Integration, werden in den folgenden Themen beschrieben:
+Best Practices rund um Assets, einschließlich der Dynamic Media-Funktion und der Dynamic Media Classic-Integration, werden in den folgenden Themen beschrieben:
 
 <table>
  <tbody>
@@ -70,8 +70,8 @@ Zur Verwaltung und Bearbeitung Ihrer Website-Inhalte wurden einige Best Practice
 
 Authoring: [Autorenumgebung und Tools](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - Bietet einen Überblick über das Erstellen von Seiten.
 
-## Formulare {#forms}
+## Forms {#forms}
 
-Adaptive Formulare: [Best Practices für die Arbeit mit adaptiven Formularen](/help/forms/using/adaptive-forms-best-practices.md) - Beschreibt Best Practices für die Einrichtung, Bearbeitung und Anpassung adaptiver Formulare.
+Adaptive Formulare: [Best Practices für die Arbeit mit adaptiven Formularen](/help/forms/using/adaptive-forms-best-practices.md) - Beschreibt Best Practices zum Einrichten, Bearbeiten und Anpassen adaptiver Formulare.
 
-HTML5-Formulare: [Best Practices zum Entwerfen von HTML5-Formularen](/help/forms/using/best-practices-for-html5-forms.md) - Beschreibt Best Practices für die Arbeit am Layout und Design von HTML5-Formularen.
+HTML5-Formulare: [Best Practices für die Erstellung von HTML5-Formularen](/help/forms/using/best-practices-for-html5-forms.md) - Beschreibt Best Practices für die Arbeit am Layout und Design von HTML5-Formularen.

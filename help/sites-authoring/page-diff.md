@@ -1,8 +1,8 @@
 ---
 title: Seitenvergleich
-seo-title: Seitenvergleich
+seo-title: Page Diff
 description: Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seiten, die nebeneinander angezeigt werden und deren Unterschiede hervorgehoben sind.
-seo-description: Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seiten, die nebeneinander angezeigt werden und deren Unterschiede hervorgehoben sind.
+seo-description: The page diff feature allows for the convenient side-by-side comparison of two pages with their differences highlighted.
 uuid: 5af8b466-5922-4fe6-9eae-7bad99be23e0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '560'
 ht-degree: 100%
 
 ---
@@ -41,7 +41,7 @@ Folgendes kann verglichen werden:
 
 Informieren Sie sich unter den entsprechenden Themen, wie der Seitenvergleich im gegebenen Zusammenhang verwendet wird.
 
-### Darstellung von Unterschieden  {#presentation-of-differences}
+### Darstellung von Unterschieden {#presentation-of-differences}
 
 Unabhängig vom verglichenen Inhalt bleibt die Darstellung der Unterschiede gleich.
 
@@ -70,7 +70,7 @@ Der Seitenvergleich erkennt Änderungen an der Komponente und der HTML-Ebene. Ge
 >
 >Beim Vergleich von Sprachkopien ist die Hervorhebung deaktiviert, da sich in einer Übersetzung alles ändert und Hervorhebung nutzlos wäre.
 
-### Vollbild und Beenden  {#fullscreen-and-exiting}
+### Vollbild und Beenden {#fullscreen-and-exiting}
 
 Damit Sie sich auf einen bestimmten Inhalt konzentrieren können, haben Sie die Möglichkeit, auf jeder Seite des Seitenvergleichs auf das Vollbildsymbol zu klicken, um die Ansicht auf das ganze Browser-Fenster zu vergrößern.
 

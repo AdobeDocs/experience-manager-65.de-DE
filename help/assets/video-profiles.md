@@ -8,14 +8,14 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
-feature: Videoprofile
+feature: Video Profiles
 role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
 source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '3691'
-ht-degree: 64%
+source-wordcount: '3689'
+ht-degree: 82%
 
 ---
 
@@ -33,19 +33,19 @@ Die folgenden weiteren Faktoren wirken sich auf die Qualität Ihrer Videos aus:
 
    Standardmäßig ist die „Breite“ im Profil „Adaptive Videoverschlüsselung“ auf „Automatisch“ gesetzt. Wie erwähnt, wird je nach Größe des Players bei der Wiedergabe die bestmögliche Qualität verwendet.
 
-Siehe [Best Practices für Videokodierung](/help/assets/video.md#best-practices-for-encoding-videos).
+Siehe [Best Practices zur Videokodierung](/help/assets/video.md#best-practices-for-encoding-videos).
 
 Informationen hierzu finden Sie auch im Thema über die [Best Practices für die Organisation Ihrer digitalen Assets zur Verwendung von Verarbeitungsprofilen](/help/assets/organize-assets.md).
 
 >[!NOTE]
 >
->Um die Metadaten eines Videos und die zugehörigen Videobild-Miniaturansichten zu generieren, muss das Video selbst den Kodierungsprozess in Dynamic Media durchlaufen. In Adobe Experience Manager kodiert der Workflow **[!UICONTROL Dynamic Media-Videokodierung]** Videos, wenn Sie Dynamic Media aktiviert und Video-Cloud Services eingerichtet haben. Dieser Workflow erfasst den Workflow-Prozess und Informationen zu Fehlern. Siehe [Überwachen der Videokodierung und des Veröffentlichungsfortschritts von YouTube](/help/assets/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Wenn Sie Dynamic Media aktiviert und Video-Cloud Services eingerichtet haben, wird der Workflow für die **[!UICONTROL Videokodierung mit Dynamic Media]** automatisch beim Hochladen eines Videos wirksam. (Wenn Sie Dynamic Media nicht verwenden, wird der Workflow **[!UICONTROL DAM Update Asset]** wirksam.)
+>Um die Metadaten eines Videos und die zugehörigen Videobild-Miniaturansichten zu generieren, muss das Video selbst den Kodierungsprozess in Dynamic Media durchlaufen. In Adobe Experience Manager wird die **[!UICONTROL Dynamic Media-Kodierungsvideo]** Workflow kodiert Videos, wenn Sie Dynamic Media aktiviert und Video-Cloud Services eingerichtet haben. Dieser Workflow erfasst den Verlauf der Workflow-Prozesse und Informationen zu Fehlern. Siehe [Überwachen der Videokodierung und des YouTube-Veröffentlichungs-Fortschritts](/help/assets/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Wenn Sie Dynamic Media aktiviert und Video-Cloud Services eingerichtet haben, wird der Workflow für die **[!UICONTROL Videokodierung mit Dynamic Media]** automatisch beim Hochladen eines Videos wirksam. (Wenn Sie Dynamic Media nicht verwenden, wird der Workflow **[!UICONTROL DAM Update Asset]** wirksam.)
 >
->Metadaten sind nützlich, wenn Sie nach Assets suchen. Die Miniaturansichten sind statische Videobilder, die bei der Kodierung generiert werden. Sie sind für das Adobe Experience Manager-System erforderlich und werden in der Benutzeroberfläche eingesetzt, damit Sie Videos in der Kartenansicht, der Suchergebnisansicht und der Asset-Listenansicht einfacher identifizieren können. Sie können die generierten Miniaturansichten anzeigen, wenn Sie das Ausgabedarstellungssymbol (Farbpalette) eines kodierten Videos auswählen.
+>Metadaten sind nützlich, wenn Sie nach Assets suchen. Die Miniaturen sind statische Videobilder, die bei der Kodierung generiert werden. Sie sind für das Adobe Experience Manager-System erforderlich und werden in der Benutzeroberfläche eingesetzt, damit Sie Videos in der Kartenansicht, der Suchergebnisansicht und der Asset-Listenansicht einfacher identifizieren können. Sie können die generierten Miniaturansichten anzeigen, wenn Sie das Ausgabedarstellungssymbol (Farbpalette) eines kodierten Videos auswählen.
 
 Wenn Sie die Erstellung des Videoprofils abgeschlossen haben, wenden Sie es auf einen oder mehrere Ordner an. Siehe [Anwenden eines Videoprofils auf Ordner](#applying-a-video-profile-to-folders).
 
-Informationen zum Definieren erweiterter Verarbeitungsparameter für andere Asset-Typen finden Sie unter [Konfigurieren der Asset-Verarbeitung](/help/assets/config-dms7.md#configuring-asset-processing).
+Informationen zur Definition von erweiterten Verarbeitungsparametern für andere Asset-Typen finden Sie unter [Konfigurieren der Asset-Verarbeitung](/help/assets/config-dms7.md#configuring-asset-processing).
 
 Siehe auch [Profile für die Verarbeitung von Metadaten, Bildern und Videos](processing-profiles.md).
 
@@ -120,9 +120,9 @@ Adobe Sensei ist auf 9000 Frames beschränkt. Das heißt: fünf Minuten bei 30 
 
 Wenn Sie smartes Zuschneiden für Videos verwenden möchten, erstellen Sie ein Profil für adaptive oder progressive Videoverschlüsselung. Verwenden Sie im Rahmen Ihres Profils das Tool **[!UICONTROL Smart Crop Ratio]**, um vordefinierte Seitenverhältnisse auszuwählen. Nachdem Sie Ihre Vorgaben für die Videokodierung definiert haben, können Sie beispielsweise eine Definition für „Mobiles Querformat“ mit einem Seitenverhältnis von 16x9 und eine Definition für „Mobiles Hochformat“ mit einem Seitenverhältnis von 9x16 hinzufügen. Andere Seiten- oder Zuschnittverhältnisse, unter denen Sie wählen können, sind 1x1, 4x3 und 4x5.
 
-![Bearbeiten eines Videokodierungsprofils mit smartem Zuschneiden](assets/edit-smart-crop-video2.png)
+![Bearbeiten von Videokodierungsprofilen mit smartem Zuschneiden](assets/edit-smart-crop-video2.png)
 
-Sie können das smarte Zuschneiden von Videos im Videoprofil über den Schieberegler rechts neben **[!UICONTROL Seitenverhältnis für intelligentes Zuschneiden]** in der Benutzeroberfläche ein- oder ausschalten.
+Sie können das smarte Zuschneiden von Videos im Videoprofil mit dem Schieberegler rechts daneben aktivieren oder deaktivieren **[!UICONTROL Smart Crop Ratio]** in der -Benutzeroberfläche.
 
 Nachdem Sie Ihr Videoprofil erstellt und gespeichert haben, können Sie es auf die gewünschten Ordner anwenden.
 
@@ -134,7 +134,7 @@ Siehe auch [Smartes Zuschneiden für Bilder](image-profiles.md).
 
 Dynamic Media umfasst standardmäßig das vordefinierte Profil „Adaptive Videoverschlüsselung“ (eine Gruppe mit Video-Upload-Einstellungen für MP4 H.264), das für das beste Anzeigeerlebnis optimiert ist. Sie können dieses Profil beim Hochladen von Videos verwenden.
 
-Wenn dieses vordefinierte Profil Ihre Anforderungen jedoch nicht erfüllt, können Sie ein eigenes Profil für die adaptive Videoverschlüsselung erstellen. Wenn Sie die Einstellung **[!UICONTROL Für adaptives Streaming kodieren]** - als Best Practice - verwenden, werden alle dem Profil hinzugefügten Kodierungsvorgaben validiert, um sicherzustellen, dass alle Videos dasselbe Seitenverhältnis aufweisen. Darüber hinaus werden die kodierten Videos als Multi-Bitrate-Set für das Streaming behandelt.
+Wenn dieses vordefinierte Profil Ihre Anforderungen jedoch nicht erfüllt, können Sie ein eigenes Profil für die adaptive Videoverschlüsselung erstellen. Wenn Sie die Einstellung **[!UICONTROL Kodieren für adaptives Streaming]** - als Best Practice - alle Kodierungsvorgaben, die Sie zum Profil hinzufügen, werden validiert, um sicherzustellen, dass alle Videos dasselbe Seitenverhältnis aufweisen. Darüber hinaus werden die kodierten Videos als Multi-Bitrate-Set für das Streaming behandelt.
 
 Beachten Sie beim Erstellen des Videokodierungsprofils, dass die meisten Kodierungsoptionen mit den empfohlenen Standardeinstellungen ausgefüllt sind, um Ihnen zu helfen. Wenn Sie allerdings einen anderen Wert als den empfohlenen Standardwert auswählen, kann dies zu schlechter Videoqualität bei der Wiedergabe und zu anderen Leistungsproblemen führen.
 
@@ -149,21 +149,21 @@ Für alle MP4 H.264-Videokodierungsvorgaben im Profil werden also die folgenden 
 * H264-Profil
 * Audio-Samplingrate
 
-Wenn die Werte nicht identisch sind, können Sie das Profil durchaus im Istzustand erstellen. Adaptives Streaming ist jedoch nicht möglich. Stattdessen wird das Einzel-Bitraten-Streaming durchgeführt. Es wird empfohlen, dass Sie die Kodierungseinstellungen so bearbeiten, dass dieselben Werte über individuelle Kodierungsvorgaben hinweg im Profil verwendet werden. (Der Videoprofil-/Vorgabeneditor erzwingt die Parität der adaptiven Videokodierungseinstellungen, wenn **[!UICONTROL Für adaptives Streaming kodieren]** aktiviert ist.)
+Wenn die Werte nicht identisch sind, können Sie das Profil durchaus im Istzustand erstellen. Adaptives Streaming ist jedoch nicht möglich. Stattdessen wird das Einzel-Bitraten-Streaming durchgeführt. Es wird empfohlen, dass Sie die Kodierungseinstellungen so bearbeiten, dass dieselben Werte über individuelle Kodierungsvorgaben hinweg im Profil verwendet werden. (Der Videoprofil-/Vorgabeneditor erzwingt die Parität der adaptiven Videokodierungseinstellungen, wenn **[!UICONTROL Kodieren für adaptives Streaming]** aktiviert ist.)
 
 Siehe auch [Erstellen eines Videokodierungsprofils für progressives Streaming](#creating-a-video-encoding-profile-for-progressive-streaming).
 
-Siehe auch [Best Practices für die Videokodierung](/help/assets/video.md#best-practices-for-encoding-videos).
+Siehe auch [Best Practices zur Videokodierung](/help/assets/video.md#best-practices-for-encoding-videos).
 
-Informationen zum Definieren erweiterter Verarbeitungsparameter für andere Asset-Typen finden Sie unter [Konfigurieren der Asset-Verarbeitung](/help/assets/config-dms7.md#configuring-asset-processing).
+Informationen zur Definition von erweiterten Verarbeitungsparametern für andere Asset-Typen finden Sie unter [Konfigurieren der Asset-Verarbeitung](/help/assets/config-dms7.md#configuring-asset-processing).
 
 **So erstellen Sie ein Videoprofil für adaptives Streaming**:
 
-1. Wählen Sie das Experience Manager-Logo aus und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Videoprofile]**.
-1. Wählen Sie **[!UICONTROL Erstellen]** aus, um ein Videoprofil hinzuzufügen.
+1. Klicken Sie auf das Adobe Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Videoprofile]**.
+1. Auswählen **[!UICONTROL Erstellen]** , um ein Videoprofil hinzuzufügen.
 
 1. Geben Sie einen Namen und eine Beschreibung für das Profil ein.
-1. Wählen Sie auf der Seite &quot;Videokodierungsvorgaben erstellen/bearbeiten&quot;die Option **[!UICONTROL Videokodierungsvorgabe hinzufügen]**.
+1. Klicken Sie auf der Seite „Videokodierungsvorgaben erstellen/bearbeiten“ auf **[!UICONTROL Videokodierungsvorgabe hinzufügen]**.
 1. Legen Sie auf der Registerkarte **[!UICONTROL Allgemein]** die Video- und Audiooptionen fest.
 Wählen Sie neben jeder Option das Informationssymbol aus, um zusätzliche Beschreibungen oder empfohlene Einstellungen basierend auf dem ausgewählten Videoformat-Codec anzuzeigen.
 1. Stellen Sie unter der Überschrift „Videogröße“ sicher, dass **[!UICONTROL Seitenverhältnis beibehalten]** aktiviert ist.
@@ -173,16 +173,16 @@ Wählen Sie neben jeder Option das Informationssymbol aus, um zusätzliche Besch
 
    * Geben Sie im Feld **[!UICONTROL Breite]** die Option **[!UICONTROL auto]** ein. Geben Sie im Feld **[!UICONTROL Höhe]** einen Wert in Pixel ein.
 
-   * Um die Größe des Videos visualisieren zu können, wählen Sie das Informationssymbol (i) rechts von **[!UICONTROL Höhe]** aus, um die Seite &quot;Größenberechnung&quot;zu öffnen. Legen Sie mit der **[!UICONTROL Größenberechnung]** die gewünschten Abmessungen des Videos fest (durch das blaue Feld dargestellt). Wählen Sie **[!UICONTROL X]** in der oberen rechten Ecke aus, wenn Sie fertig sind.
+   * Klicken Sie zum Visualisieren der Größe des Videos auf das Informationssymbol (i) rechts neben **[!UICONTROL Höhe]**, um die Seite mit der Größenberechnung zu öffnen. Legen Sie mit der **[!UICONTROL Größenberechnung]** die gewünschten Abmessungen des Videos fest (durch das blaue Feld dargestellt). Klicken Sie oben rechts auf **[!UICONTROL X]**, wenn Sie fertig sind.
 
-1. (Optional) Wählen Sie die Registerkarte **[!UICONTROL Erweitert]** aus und stellen Sie sicher, dass das Kontrollkästchen **[!UICONTROL Standardwerte verwenden]** aktiviert ist (empfohlen). Alternativ können Sie erweiterte Video- und Audioeinstellungen anpassen.
-1. Wählen Sie in der rechten oberen Ecke der Seite **[!UICONTROL Speichern]** aus, um die Vorgabe zu speichern.
+1. (Optional) Klicken Sie auf die Registerkarte **[!UICONTROL Erweitert]** und stellen Sie sicher, dass das Kontrollkästchen **[!UICONTROL Standardwerte verwenden]** ausgewählt ist (empfohlen). Alternativ können Sie erweiterte Video- und Audioeinstellungen anpassen.
+1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Speichern]**, um die Vorgabe zu speichern.
 1. Führen Sie einen der folgenden Schritte aus:
    * Wiederholen Sie Schritt 4 bis 10, um weitere Kodierungsvorgaben zu erstellen. (Das adaptive Video-Streaming erfordert mehrere Videovorgaben.)
    * Fahren Sie mit dem nächsten Schritt fort.
 
 1. (Optional) Gehen Sie wie folgt vor, um den Videos, auf die dieses Profil angewendet wird, smartes Zuschneiden hinzuzufügen:
-   * Wählen Sie auf der Seite &quot;Videoprofil bearbeiten&quot;rechts neben der Überschrift Smart Crop Ratio die Option **[!UICONTROL Neu hinzufügen]**.
+   * Klicken Sie auf der Seite „Videoprofil bearbeiten“ rechts neben der Überschrift „Seitenverhältnis für intelligentes Zuschneiden“ auf **[!UICONTROL Neu hinzufügen]**.
    * Geben Sie im Feld „Name“ einen Namen für das Zuschnittverhältnis ein, damit Sie es leicht erkennen können.
    * Wählen Sie aus der Dropdown-Liste **[!UICONTROL Zuschnittverhältnis]** das Verhältnis aus, das Sie verwenden möchten.
 
@@ -191,7 +191,7 @@ Wählen Sie neben jeder Option das Informationssymbol aus, um zusätzliche Besch
    * Fügen Sie bei Bedarf weitere Zuschnittverhältnisse hinzu.
    * Fahren Sie mit dem nächsten Schritt fort.
 
-1. Wählen Sie oben rechts auf der Seite **[!UICONTROL Speichern]** erneut aus, um das Profil zu speichern.
+1. Klicken Sie oben rechts auf der Seite erneut auf **[!UICONTROL Speichern]**, um das Profil zu speichern.
 
 Sie können das Profil jetzt auf Ordner anwenden, die Videos enthalten. Siehe [Anwenden eines Videoprofils auf Ordner](#applying-a-video-profile-to-folders) oder [Globales Anwenden eines Videoprofils](#applying-a-video-profile-globally).
 
@@ -206,31 +206,31 @@ Je nachdem, welchen Modus Sie ausführen, werden die folgenden Videoformat-Codec
 
 Siehe auch [Erstellen eines Videokodierungsprofils für adaptives Streaming](#creating-a-video-encoding-profile-for-adaptive-streaming).
 
-Siehe auch [Best Practices für die Videokodierung](/help/assets/video.md#best-practices-for-encoding-videos).
+Siehe auch [Best Practices zur Videokodierung](/help/assets/video.md#best-practices-for-encoding-videos).
 
-Informationen zum Definieren erweiterter Verarbeitungsparameter für andere Asset-Typen finden Sie unter [Konfigurieren der Asset-Verarbeitung](/help/assets/config-dms7.md#configuring-asset-processing).
+Informationen zur Definition von erweiterten Verarbeitungsparametern für andere Asset-Typen finden Sie unter [Konfigurieren der Asset-Verarbeitung](/help/assets/config-dms7.md#configuring-asset-processing).
 
 **So erstellen Sie ein Videoprofil für progressives Streaming**:
 
-1. Wählen Sie das Experience Manager-Logo aus und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Videoprofile]**.
-1. Wählen Sie **[!UICONTROL Erstellen]** aus, um ein Videoprofil hinzuzufügen.
+1. Klicken Sie auf das Adobe Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Videoprofile]**.
+1. Auswählen **[!UICONTROL Erstellen]** , um ein Videoprofil hinzuzufügen.
 1. Geben Sie einen Namen und eine Beschreibung für das Profil ein.
-1. Wählen Sie auf der Seite &quot;Videokodierungsvorgaben erstellen/bearbeiten&quot;die Option **[!UICONTROL Videokodierungsvorgabe hinzufügen]**.
+1. Klicken Sie auf der Seite „Videokodierungsvorgaben erstellen/bearbeiten“ auf **[!UICONTROL Videokodierungsvorgabe hinzufügen]**.
 1. Legen Sie auf der Registerkarte **[!UICONTROL Allgemein]** die Video- und Audiooptionen fest.
 Wählen Sie neben jeder Option das Informationssymbol aus, um zusätzliche Beschreibungen oder empfohlene Einstellungen basierend auf dem ausgewählten Videoformat-Codec anzuzeigen.
 1. (Optional) Deaktivieren Sie unter der Überschrift „Videogröße“ das Kontrollkästchen **[!UICONTROL Seitenverhältnis beibehalten]**.
 1. Gehen Sie folgendermaßen vor:
    * Geben Sie im Feld **[!UICONTROL Breite]** die Option **[!UICONTROL auto]** ein.
    * Geben Sie im Feld **[!UICONTROL Höhe]** einen Wert in Pixel ein.
-Um die Größe des Videos visualisieren zu können, wählen Sie das Informationssymbol für die Höhe aus, um die Seite **[!UICONTROL Größenberechnung]** zu öffnen. Passen Sie die Größe des Videos auf der Seite **[!UICONTROL Größenberechnung]** wunschgemäß weiter an. Wenn Sie fertig sind, wählen Sie in der oberen rechten Ecke des Dialogfelds **[!UICONTROL X]** aus.
+Klicken Sie zur Visualisierung der Größe des Videos auf das Informationssymbol „Höhe“, um die Seite **[!UICONTROL Größenberechnung]** zu öffnen. Passen Sie die Größe des Videos auf der Seite **[!UICONTROL Größenberechnung]** wunschgemäß weiter an. Wenn Sie damit fertig sind, klicken Sie oben rechts im Dialogfeld auf **[!UICONTROL X]**.
 1. (Optional) Führen Sie einen der folgenden Schritte aus:
 
-   * Wählen Sie die Registerkarte **[!UICONTROL Erweitert]** und stellen Sie sicher, dass das Kontrollkästchen **[!UICONTROL Standardwerte verwenden]** aktiviert ist (empfohlen).
+   * Klicken Sie auf die Registerkarte **[!UICONTROL Erweitert]** und stellen Sie sicher, dass das Kontrollkästchen **[!UICONTROL Standardwerte verwenden]** ausgewählt ist (empfohlen).
 
    * Deaktivieren Sie das Kontrollkästchen **[!UICONTROL Standardwerte verwenden]** und geben Sie die gewünschten Video- und Audioeinstellungen an.
 Wählen Sie neben jeder Option das Informationssymbol aus, um zusätzliche Beschreibungen oder empfohlene Einstellungen basierend auf dem ausgewählten Videoformat-Codec anzuzeigen.
 
-1. Wählen Sie in der rechten oberen Ecke der Seite **[!UICONTROL Speichern]** aus, um die Vorgabe zu speichern.
+1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Speichern]**, um die Vorgabe zu speichern.
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Wiederholen Sie die Schritte 4 bis 9, um weitere Codierungsvorgaben zu erstellen.
@@ -238,7 +238,7 @@ Wählen Sie neben jeder Option das Informationssymbol aus, um zusätzliche Besch
 
 1. (Optional) Gehen Sie wie folgt vor, um den Videos, auf die dieses Profil angewendet wird, smartes Zuschneiden hinzuzufügen:
 
-   * Wählen Sie auf der Seite &quot;Videoprofil bearbeiten&quot;rechts neben der Überschrift Smart Crop Ratio die Option **[!UICONTROL Neu hinzufügen]**.
+   * Klicken Sie auf der Seite „Videoprofil bearbeiten“ rechts neben der Überschrift „Seitenverhältnis für intelligentes Zuschneiden“ auf **[!UICONTROL Neu hinzufügen]**.
    * Geben Sie im Feld „Name“ einen Namen für das Zuschnittverhältnis ein, damit Sie es leicht erkennen können.
    * Wählen Sie aus der Dropdown-Liste **[!UICONTROL Zuschnittverhältnis]** das Verhältnis aus, das Sie verwenden möchten.
 
@@ -247,17 +247,17 @@ Wählen Sie neben jeder Option das Informationssymbol aus, um zusätzliche Besch
    * Fügen Sie bei Bedarf weitere Zuschnittverhältnisse hinzu.
    * Fahren Sie mit dem nächsten Schritt fort.
 
-1. Wählen Sie in der rechten oberen Ecke der Seite **[!UICONTROL Speichern]** aus, um das Profil zu speichern.
+1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Speichern]**, um das Profil zu speichern.
 
 Sie können das Profil jetzt auf Ordner anwenden, die Videos enthalten. Siehe [Anwenden eines Videoprofils auf Ordner](#applying-a-video-profile-to-folders) oder [Globales Anwenden eines Videoprofils](#applying-a-video-profile-globally).
 
-## Verwenden von benutzerdefinierten Videokodierungsparametern {#using-custom-added-video-encoding-parameters}
+## Verwenden von vom Benutzer hinzugefügten Videokodierungsparametern {#using-custom-added-video-encoding-parameters}
 
 Sie können nun vorhandene Videokodierungsprofile bearbeiten, um von erweiterten Parametern zur Videokodierung zu profitieren, die beim Erstellen oder Bearbeiten eines Videoprofils in Adobe Experience Manager nicht in der Benutzeroberfläche vorhanden sind. Fügen Sie Ihrem bestehenden Profil einen oder mehrere erweiterte Parameter hinzu - z. B. minBitrate und maxBitrate .
 
-**So verwenden Sie anwenderdefinierte Videokodierungsparameter:**
+**So verwenden Sie vom Benutzer hinzugefügte Videokodierungsparameter:**
 
-1. Wählen Sie das Experience Manager-Logo aus und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
+1. Klicken Sie auf das Adobe Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
 1. Navigieren Sie auf der Seite „CRXDE Lite“ im linken Bereich des Explorers in das folgende Verzeichnis:
 
    `/conf/global/settings/dam/dm/presets/video/*name_of_video_encoding_profile_to_edit`
@@ -309,13 +309,13 @@ Sie können nun vorhandene Videokodierungsprofile bearbeiten, um von erweiterten
 
 ![chlimage_1-516](assets/chlimage_1-516.png)
 
-1. Wählen Sie in der rechten unteren Ecke der Seite **[!UICONTROL Hinzufügen]** aus.
+1. Klicken Sie in der rechten unteren Ecke der Seite auf **[!UICONTROL Hinzufügen]**.
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Wiederholen Sie die Schritte 3 und 4, um Ihrem Videokodierungsprofil einen weiteren Parameter hinzuzufügen.
-   * Wählen Sie links oben auf der Seite **[!UICONTROL Alle speichern]** aus.
+   * Klicken Sie in der oberen linken Ecke der Seite auf **[!UICONTROL Alle speichern]**.
 
-1. Wählen Sie links oben auf der Seite &quot;CRXDE Lite&quot;das Symbol **[!UICONTROL Zurück Startseite]** aus, um zum Experience Manager zurückzukehren.
+1. Klicken Sie in der oberen linken Ecke der Seite „CRXDE Lite“ auf das Symbol **[!UICONTROL Zurück zur Startseite]**, um zu Adobe Experience Manager zurückzukehren.
 
 ### Bearbeiten von Videoprofilen {#editing-a-video-encoding-profile}
 
@@ -323,45 +323,45 @@ Sie können die Videoprofile bearbeiten, die Sie erstellt haben, um die in diese
 
 Die Bearbeitung des bereits in Dynamic Media integrierten Profils **[!UICONTROL Adaptive Videokodierung]** ist standardmäßig deaktiviert. Sie können das Profil einfach kopieren und dann unter einem neuen Namen speichern. Dann können Sie die gewünschten Vorgaben im kopierten Profil bearbeiten.
 
-Siehe auch [Best Practices für die Videokodierung](/help/assets/video.md#best-practices-for-encoding-videos).
+Siehe auch [Best Practices zur Videokodierung](/help/assets/video.md#best-practices-for-encoding-videos).
 
-Informationen zum Definieren erweiterter Verarbeitungsparameter für andere Asset-Typen finden Sie unter [Konfigurieren der Asset-Verarbeitung](/help/assets/config-dms7.md#configuring-asset-processing).
+Informationen zur Definition von erweiterten Verarbeitungsparametern für andere Asset-Typen finden Sie unter [Konfigurieren der Asset-Verarbeitung](/help/assets/config-dms7.md#configuring-asset-processing).
 
 **So bearbeiten Sie ein Videoprofil:**
 
-1. Wählen Sie das Experience Manager-Logo aus und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Videoprofile]**.
+1. Klicken Sie auf das Adobe Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Videoprofile]**.
 1. Aktivieren Sie auf der Seite „Videoprofile“ einen Videoprofilnamen.
-1. Wählen Sie in der Symbolleiste **[!UICONTROL Bearbeiten]** aus.
+1. Wählen Sie in der Symbolleiste die Option **[!UICONTROL Bearbeiten]** aus.
 1. Bearbeiten Sie den Namen und die Beschreibung nach Bedarf auf der Seite „Videokodierungsprofil“.
 1. Als Best Practice hat es sich bewährt, das Kontrollkästchen **[!UICONTROL Für adaptives Streaming kodieren]** zu aktivieren.
-Wählen Sie das Informationssymbol für eine Beschreibung des adaptiven Streaming aus. (Wenn Sie ein progressives Videoprofil nicht bearbeiten möchten, aktivieren Sie dieses Kontrollkästchen nicht.)
+Klicken Sie auf das Informationssymbol, um eine Beschreibung von adaptivem Streaming anzuzeigen. (Wenn Sie ein progressives Videoprofil nicht bearbeiten möchten, aktivieren Sie dieses Kontrollkästchen nicht.)
 1. Unter der Überschrift „Videokodierungsvorgaben“ können Sie die Videokodierungsvorgaben des Profils hinzufügen, bearbeiten oder löschen.
 
-   Wählen Sie neben jeder Option auf den Registerkarten **[!UICONTROL Einfach]** und **[!UICONTROL Erweitert]** das Informationssymbol aus, um zusätzliche Beschreibungen oder empfohlene Einstellungen basierend auf dem ausgewählten Videoformat-Codec anzuzeigen.
+   Wählen Sie neben den einzelnen Optionen auf der **[!UICONTROL Allgemein]** und **[!UICONTROL Erweitert]** Registerkarten für zusätzliche Beschreibungen oder empfohlene Einstellungen basierend auf dem ausgewählten Videoformat-Codec.
 
-1. Wählen Sie in der rechten oberen Ecke der Seite **[!UICONTROL Speichern]** aus.
+1. Klicken Sie in der rechten oberen Ecke der Seite auf **[!UICONTROL Speichern]**.
 
 ### Kopieren von Videoprofilen {#copying-a-video-encoding-profile}
 
-1. Wählen Sie das Experience Manager-Logo aus und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Videoprofile]**.
+1. Klicken Sie auf das Adobe Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Videoprofile]**.
 1. Aktivieren Sie auf der Seite „Videoprofile“ einen Videoprofilnamen.
-1. Wählen Sie in der Symbolleiste **[!UICONTROL Kopieren]** aus.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Kopieren]**.
 1. Geben Sie auf der Seite „Videokodierungsprofil“ einen neuen Namen für das Profil ein.
-1. Als Best Practice hat es sich bewährt, das Kontrollkästchen **[!UICONTROL Für adaptives Streaming kodieren]** zu aktivieren. Wählen Sie das Informationssymbol für eine Beschreibung des adaptiven Streaming aus. (Wenn Sie ein progressives Videoprofil kopieren, aktivieren Sie dieses Kontrollkästchen nicht.)
+1. Als Best Practice hat es sich bewährt, das Kontrollkästchen **[!UICONTROL Für adaptives Streaming kodieren]** zu aktivieren. Klicken Sie auf das Informationssymbol, um eine Beschreibung von adaptivem Streaming anzuzeigen. (Wenn Sie ein progressives Videoprofil kopieren, aktivieren Sie dieses Kontrollkästchen nicht.)
 
    Wenn im Hybridmodus von Dynamic Media eine WebM-Videovoreinstellung Teil des Videoprofils ist, ist die Option **[!UICONTROL Für adaptives Streaming kodieren]** nicht möglich, da alle Vorgaben das MP4-Format aufweisen müssen.
 1. Unter der Überschrift „Videokodierungsvorgaben“ können Sie die Videokodierungsvorgaben des Profils hinzufügen, bearbeiten oder löschen.
 
-   Wählen Sie auf den Registerkarten Allgemein und Erweitert neben den einzelnen Optionen das Informationssymbol aus, um die empfohlenen Einstellungen und Beschreibungen anzuzeigen.
+   Klicken Sie neben den einzelnen Optionen in den Registerkarten „Allgemein“ und „Erweitert“ auf das Informationssymbol, um die empfohlenen Einstellungen und die Beschreibung anzuzeigen.
 
-1. Wählen Sie in der rechten oberen Ecke der Seite **[!UICONTROL Speichern]** aus.
+1. Klicken Sie in der rechten oberen Ecke der Seite auf **[!UICONTROL Speichern]**.
 
 ### Löschen von Videoprofilen {#deleting-a-video-encoding-profile}
 
-1. Wählen Sie das Experience Manager-Logo aus und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Videoprofile]**.
+1. Klicken Sie auf das Adobe Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Videoprofile]**.
 1. Aktivieren Sie auf der Seite „Videoprofile“ mindestens einen Videoprofilnamen.
 1. Wählen Sie in der Symbolleiste **[!UICONTROL Löschen]** aus.
-1. Wählen Sie **[!UICONTROL OK]** aus.
+1. Klicken Sie auf **[!UICONTROL OK]**.
 
 ## Anwenden eines Videoprofils auf Ordner {#applying-a-video-profile-to-folders}
 
@@ -375,7 +375,7 @@ Ordner, denen ein Profil zugewiesen ist, werden in der Benutzeroberfläche durch
 
 Sie können Videoprofile auf bestimmte Ordner oder global auf alle Assets anwenden.
 
-Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vorhandenes Videoprofil verfügt, das Sie nachträglich geändert haben. Siehe [Assets in einem Ordner erneut verarbeiten, nachdem Sie das Verarbeitungsprofil ](processing-profiles.md#reprocessing-assets) bearbeitet haben.
+Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vorhandenes Videoprofil verfügt, das Sie nachträglich geändert haben. Informationen hierzu finden Sie unter [Erneutes Verarbeiten von Assets in einem Ordner nach Bearbeitung des zugehörigen Verarbeitungsprofils](processing-profiles.md#reprocessing-assets).
 
 ### Anwenden eines Videoprofils auf bestimmte Ordner {#applying-video-profiles-to-specific-folders}
 
@@ -383,33 +383,33 @@ Sie können ein Videoprofil über das Menü **[!UICONTROL Werkzeuge]** oder, fal
 
 Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
-Siehe auch [Assets in einem Ordner erneut verarbeiten, nachdem Sie das Verarbeitungsprofil](processing-profiles.md#reprocessing-assets) bearbeitet haben.
+Siehe auch [Erneutes Verarbeiten von Assets in einem Ordner nach Bearbeitung seines Verarbeitungsprofils](processing-profiles.md#reprocessing-assets).
 
 #### Anwenden eines Videoprofils auf Ordner über die Benutzeroberfläche &quot;Profile&quot; {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
-1. Wählen Sie das Experience Manager-Logo aus und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Videoprofile]**.
+1. Klicken Sie auf das Adobe Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Videoprofile]**.
 1. Wählen Sie ein Videoprofil aus, das Sie auf einen oder mehrere Ordner anwenden möchten.
-1. Wählen Sie **[!UICONTROL Profil auf Ordner anwenden]** und wählen Sie den Ordner oder mehrere Ordner aus, die Sie zum Empfangen der neu hochgeladenen Assets verwenden möchten. Wählen Sie dann **[!UICONTROL Anwenden]** aus. Ordner, denen bereits ein Profil zugewiesen wurde, sind dadurch gekennzeichnet, dass der Name des Profils direkt unterhalb des Ordnernamens angezeigt wird (solange Sie sich in der **[!UICONTROL Kartenansicht]** befinden).
+1. Klicken Sie auf **[!UICONTROL Profil auf Ordner anwenden]** und wählen Sie mindestens einen Ordner aus, den Sie verwenden möchten, um neu hochgeladene Assets zu empfangen. Klicken Sie dann auf **[!UICONTROL Anwenden]**. Ordner, denen bereits ein Profil zugewiesen wurde, sind dadurch gekennzeichnet, dass der Name des Profils direkt unterhalb des Ordnernamens angezeigt wird (solange Sie sich in der **[!UICONTROL Kartenansicht]** befinden).
 Sie können [den Fortschritt eines Videoprofil-Verarbeitungsauftrags überwachen](#monitoring-the-progress-of-an-encoding-job).
 
 #### Anwenden eines Videoprofils auf Ordner aus &quot;Eigenschaften&quot; {#applying-video-profiles-to-folders-from-properties}
 
-1. Wählen Sie das Experience Manager-Logo aus und navigieren Sie zu **[!UICONTROL Assets]** und dann zu dem Ordner, auf den Sie ein Videoprofil anwenden möchten.
-1. Wählen Sie im Ordner das Häkchen aus, um es auszuwählen, und wählen Sie dann **[!UICONTROL Eigenschaften]** aus.
-1. Wählen Sie die Registerkarte **[!UICONTROL Videoprofile]** aus, wählen Sie das Profil aus dem Dropdown-Menü aus und wählen Sie **[!UICONTROL Speichern und schließen]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
+1. Wählen Sie das Experience Manager-Logo aus und navigieren Sie zu **[!UICONTROL Assets]** und dann in den Ordner, auf den Sie ein Videoprofil anwenden möchten.
+1. Klicken Sie im Ordner auf das Kontrollkästchen, um es zu aktivieren, und klicken Sie anschließend auf **[!UICONTROL Eigenschaften]**.
+1. Wählen Sie auf der Registerkarte **[!UICONTROL Videoprofile]** das Profil aus dem Dropdown-Menü aus und klicken Sie auf **[!UICONTROL Speichern und schließen]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
 Sie können [den Fortschritt eines Videoprofil-Verarbeitungsauftrags überwachen](#monitoring-the-progress-of-an-encoding-job).
 
 ### Globales Anwenden eines Videoprofils {#applying-a-video-profile-globally}
 
-Sie können ein Experience Manager nicht nur auf einen Ordner anwenden, sondern auch global anwenden, sodass auf alle Inhalte, die in -Assets in einem beliebigen Ordner hochgeladen werden, das ausgewählte Profil angewendet wird.
+Sie können ein Profil nicht nur auf einen Ordner anwenden, sondern auch global anwenden, sodass auf alle Inhalte, die in einen beliebigen Ordner in Experience Manager Assets hochgeladen werden, das ausgewählte Profil angewendet wird.
 
-Siehe auch [Assets in einem Ordner erneut verarbeiten, nachdem Sie das Verarbeitungsprofil](processing-profiles.md#reprocessing-assets) bearbeitet haben.
+Siehe auch [Erneutes Verarbeiten von Assets in einem Ordner nach Bearbeitung seines Verarbeitungsprofils](processing-profiles.md#reprocessing-assets).
 
 **So wenden Sie ein Videoprofil global an:**
 
-* Navigieren Sie in CRXDE Lite zum folgenden Knoten: `/content/dam/jcr:content`. Fügen Sie die Eigenschaft `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` hinzu und wählen Sie **[!UICONTROL Alle speichern]** aus.
+* Navigieren Sie in CRXDE Lite zum folgenden Knoten: `/content/dam/jcr:content`. Fügen Sie die Eigenschaft `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` hinzu und wählen Sie **[!UICONTROL Alle speichern]**.
 
    ![chlimage_1-519](assets/chlimage_1-519.png)
 * Sie können [den Fortschritt eines Videoprofil-Verarbeitungsauftrags überwachen](#monitoring-the-progress-of-an-encoding-job).
@@ -428,14 +428,14 @@ Sie können ein Videoprofil aus einem Ordner im Menü **[!UICONTROL Tools]** ent
 
 ### Entfernen von Videoprofilen aus Ordnern über die Benutzeroberfläche &quot;Profile&quot; {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 
-1. Wählen Sie das Experience Manager-Logo aus und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Videoprofile]**.
+1. Klicken Sie auf das Adobe Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Videoprofile]**.
 1. Wählen Sie das Videoprofil, das Sie aus einem oder mehreren Ordnern entfernen möchten.
-1. Wählen Sie **[!UICONTROL Profil aus Ordnern entfernen]** aus, wählen Sie den Ordner oder mehrere Ordner aus, aus denen das Profil entfernt werden soll, und wählen Sie **[!UICONTROL Entfernen]** aus.
+1. Klicken Sie auf **[!UICONTROL Profil aus Ordner(n) entfernen]** und wählen Sie den Ordner oder mehrere Ordner aus, aus denen das Profil entfernt werden soll. Klicken Sie dann auf **[!UICONTROL Fertig]**.
 
    Sie können sich vergewissern, dass das Videoprofil nicht länger auf einen Ordner angewendet wird, da der Name in diesem Fall nicht mehr unter dem Ordner angezeigt wird.
 
 ### Entfernen von Videoprofilen aus Ordnern über &quot;Eigenschaften&quot; {#removing-video-profiles-from-folders-by-way-of-properties}
 
-1. Wählen Sie das Experience Manager-Logo aus und navigieren Sie zu **[!UICONTROL Assets]** und dann zu dem Ordner, aus dem Sie ein Videoprofil entfernen möchten.
-1. Markieren Sie im Ordner das Häkchen und wählen Sie **[!UICONTROL Eigenschaften]** aus.
-1. Wählen Sie die Registerkarte **[!UICONTROL Videoprofile]** aus, wählen Sie **[!UICONTROL Keine]** aus dem Dropdown-Menü und wählen Sie **[!UICONTROL Speichern und schließen]** aus. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
+1. Wählen Sie das Experience Manager-Logo aus und navigieren Sie zu **[!UICONTROL Assets]** und dann in den Ordner, aus dem Sie ein Videoprofil entfernen möchten.
+1. Markieren Sie im Ordner das Häkchen und wählen Sie **[!UICONTROL Eigenschaften]**.
+1. Wählen Sie auf der Registerkarte **[!UICONTROL Videoprofile]** die Option **[!UICONTROL Keine]** aus dem Dropdown-Menü aus und klicken Sie auf **[!UICONTROL Speichern und schließen]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.

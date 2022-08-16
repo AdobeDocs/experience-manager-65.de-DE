@@ -1,8 +1,8 @@
 ---
 title: Kurzanleitung zur Seitenbearbeitung (Authoring)
-seo-title: Kurzanleitung zur Seitenbearbeitung (Authoring)
+seo-title: Quick Guide to Authoring Pages
 description: Ein kurzer, allgemeiner Leitfaden für die wichtigsten Aktionen zur Seitenbearbeitung
-seo-description: Ein kurzer, allgemeiner Leitfaden für die wichtigsten Aktionen zur Seitenbearbeitung
+seo-description: A quick, high-level guide to the key actions of authoring page content
 uuid: ef7ab691-f80d-4eeb-9f4a-afbf1bc83669
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1573'
 ht-degree: 97%
 
 ---
@@ -62,8 +62,8 @@ Bevor wir eine Übersicht über die Details präsentieren, finden Sie hier eine 
 >Es gibt eine Reihe von Tastaturbefehlen, die die Bearbeitung vereinfachen.
 >
 >* [Tastaturbefehle bei der Seitenbearbeitung](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-* [Tastaturbefehle für Konsolen  ](/help/sites-authoring/keyboard-shortcuts.md)
-
+>* [Tastaturbefehle für Konsolen](/help/sites-authoring/keyboard-shortcuts.md)
+>
 
 
 ### Suchen nach Seiten {#finding-your-page}
@@ -95,7 +95,7 @@ Es gibt verschiedene Möglichkeiten, eine Seite zu finden: Sie können navigiere
 
 1. Dadurch wird der Assistent geöffnet, der Sie durch das Erfassen der erforderlichen Informationen beim [Erstellen der neuen Seite](/help/sites-authoring/managing-pages.md#creating-a-new-page) führt. Befolgen Sie die Anweisungen auf dem Bildschirm.
 
-### Auswählen Ihrer Seite für weitere Aktionen    {#selecting-your-page-for-further-action}
+### Auswählen Ihrer Seite für weitere Aktionen {#selecting-your-page-for-further-action}
 
 Sie können eine Seite auswählen, um Aktionen damit auszuführen. Wenn Sie eine Seite auswählen, wird die Symbolleiste automatisch aktualisiert, damit die für diese Ressource relevanten Aktionen angezeigt werden.
 
@@ -120,7 +120,8 @@ Wie Sie eine Seite auswählen, hängt von der in der Konsole verwendeten Ansicht
 
    * Auf der Karte wird die ausgewählte Seite durch ein Häkchen gekennzeichnet.
    >[!NOTE]
-   Wenn Sie sich im Auswahlmodus befinden, ändert sich das Symbol **Auswählen** (ein Häkchen) in das Symbol **Deaktivieren** (ein Kreuz).
+   >
+   >Wenn Sie sich im Auswahlmodus befinden, ändert sich das Symbol **Auswählen** (ein Häkchen) in das Symbol **Deaktivieren** (ein Kreuz).
 
 ### Schnellaktionen (nur Kartenansicht/Desktop) {#quick-actions-card-view-desktop-only}
 
@@ -175,7 +176,8 @@ So bearbeiten Sie Ihre Seite:
 
       * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Verwenden Sie die Symbole **Kopieren** und **Einfügen** nach Bedarf.
    >[!NOTE]
-   Sie können Komponenten auf derselben oder einer anderen Seite **einfügen**. Wenn Sie Komponenten auf einer anderen Seite einfügen, die bereits vor dem Ausschneiden und Kopieren geöffnet war, muss diese Seite aktualisiert werden.
+   >
+   >Sie können Komponenten auf derselben oder einer anderen Seite **einfügen**. Wenn Sie Komponenten auf einer anderen Seite einfügen, die bereits vor dem Ausschneiden und Kopieren geöffnet war, muss diese Seite aktualisiert werden.
 
    * Eine Komponente [löschen](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste):
 
@@ -192,9 +194,10 @@ So bearbeiten Sie Ihre Seite:
    * Mit der Dropdown-Auswahl **Bearbeiten** zum Bearbeitungsmodus zurückkehren (oder einen anderen Modus auswählen)
 
    >[!NOTE]
-   Verwenden Sie den [Vorschaumodus](/help/sites-authoring/editing-content.md#preview-mode), wenn Sie mithilfe von Links im Inhalt navigieren möchten.
+   >
+   >Verwenden Sie den [Vorschaumodus](/help/sites-authoring/editing-content.md#preview-mode), wenn Sie mithilfe von Links im Inhalt navigieren möchten.
 
-### Bearbeiten der Seiteneigenschaften    {#editing-the-page-properties}
+### Bearbeiten der Seiteneigenschaften {#editing-the-page-properties}
 
 Es gibt zwei (wesentliche) Möglichkeiten für die [Bearbeitung von Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md):
 
@@ -239,7 +242,7 @@ Es gibt zwei wesentliche Verfahren zum [Veröffentlichen Ihrer Seite](/help/site
 
    ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
 
-* Das Rückgängigmachen der Veröffentlichung einer Seite in der Konsole kann nur über die Option **Veröffentlichung verwalten** erfolgen, die nur auf der Symbolleiste verfügbar ist (nicht über Schnellaktionen).
+* Das Rückgängigmachen der Veröffentlichung einer Seite in der Konsole kann nur über die Option **Veröffentlichung verwalten** erfolgen, die nur in der Symbolleiste verfügbar ist (nicht über Schnellaktionen).
 
    Die Option **Veröffentlichung der Seite rückgängig machen** ist weiterhin über das Menü **Seiteninformationen** im Editor verfügbar.
 
@@ -247,7 +250,7 @@ Es gibt zwei wesentliche Verfahren zum [Veröffentlichen Ihrer Seite](/help/site
 
    Weitere Informationen finden Sie unter [Veröffentlichen von Seiten](/help/sites-authoring/publishing-pages.md#unpublishing-pages).
 
-### Verschieben, Kopieren und Einfügen oder Löschen Ihrer Seite    {#move-copy-and-paste-or-delete-your-page}
+### Verschieben, Kopieren und Einfügen oder Löschen Ihrer Seite {#move-copy-and-paste-or-delete-your-page}
 
 Diese Aktionen können alle wie folgt ausgelöst werden:
 
@@ -269,9 +272,10 @@ Diese Aktionen können alle wie folgt ausgelöst werden:
 
       * Sie werden aufgefordert, den Vorgang zu bestätigen.
    >[!NOTE]
-   Löschen ist nicht als Schnellaktion verfügbar.
+   >
+   >Löschen ist nicht als Schnellaktion verfügbar.
 
-### Sperren (und Entsperren) Ihrer Seite {#locking-your-page-then-unlocking}
+### Sperren (und Entsperren) Ihrer Seite  {#locking-your-page-then-unlocking}
 
 [Sperren einer Seite](/help/sites-authoring/editing-content.md#locking-a-page): Verhindert, dass andere Autoren daran arbeiten, während Sie dies tun. Das Symbol bzw. die Schaltfläche „Sperren“ (und „Entsperren“) ist verfügbar:
 
@@ -297,7 +301,7 @@ Beispielsweise sieht das Schloss-Symbol folgendermaßen aus:
 
 1. Tippen/klicken Sie auf den gewünschten Verweistyp, um weitere Details anzuzeigen und (bei Bedarf) weitere Aktionen auszuführen.
 
-### Erstellen einer Seitenversion    {#creating-a-version-of-your-page}
+### Erstellen einer Seitenversion {#creating-a-version-of-your-page}
 
 So erstellen Sie eine [Version](/help/sites-authoring/working-with-page-versions.md) Ihrer Seite:
 

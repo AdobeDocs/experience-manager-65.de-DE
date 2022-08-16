@@ -1,8 +1,8 @@
 ---
 title: Editor-Einschränkungen
-seo-title: Editor-Einschränkungen
+seo-title: Editor Limitations
 description: Der Editor in der Touch-optimierten Benutzeroberfläche nutzt Überlagerungen, um mit dem Inhalt eines iframe zu interagieren. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler.
-seo-description: Der Editor in der Touch-optimierten Benutzeroberfläche nutzt Überlagerungen, um mit dem Inhalt eines iframe zu interagieren. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler.
+seo-description: The editor in the touch-enabled UI makes use of overlays to interact with content confined in an iframe. This interaction creates some limitations in both usage of the editor and also for developers.
 uuid: ff524530-3f3a-4c5b-9f94-4aa9aeb9d461
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: d748decb-a614-4c9e-a502-d6176b720f1a
 exl-id: fd64f5dc-dfff-466b-8cdd-3c24ea1a15c8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '316'
 ht-degree: 94%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 94%
 
 Der Editor in der Touch-optimierten Benutzeroberfläche nutzt Überlagerungen, um mit dem Inhalt eines iframe zu interagieren. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler. Auf dieser Seite werden diese Einschränkungen zusammengefasst und, wo möglich, Lösungen bzw. Problemumgehungen zur Verfügung gestellt.
 
-## Funktionale Einschränkungen   {#functional-limitations}
+## Funktionale Einschränkungen {#functional-limitations}
 
 Autoren sehen sich bei der Arbeit mit dem Editor zur Bearbeitung von Seiten möglicherweise mit den folgenden funktionalen Einschränkungen konfrontiert.
 
-### Links nicht aktiv   {#links-not-active}
+### Links nicht aktiv {#links-not-active}
 
 Beim [Bearbeiten einer Seite](/help/sites-authoring/editing-content.md) sind Links nicht aktiv.
 
@@ -39,13 +39,13 @@ Seiten dürfen nicht `structure` genannt werden. Seiten mit dem Namen `structure
 
 Entwickler sehen sich hinsichtlich der Interaktionen des Editors mit CSS möglicherweise mit den folgenden Einschränkungen konfrontiert.
 
-### Absolut positionierte Elemente   {#absolutely-positioned-elements}
+### Absolut positionierte Elemente {#absolutely-positioned-elements}
 
 Absolut positionierte Elemente können Probleme bei der Positionierung ihrer Überlagerung verursachen.
 
 * Ist dies der Fall, müssen Sie darauf achten, dass die Abmessungen des absolut positionierten Elements korrekt sind, weil der Editor eine Überlagerung mit den gleichen Abmessungen erstellt.
 
-### vh-Einheiten   {#vh-units}
+### vh-Einheiten {#vh-units}
 
 `vh`-Einheiten werden nicht unterstützt, da die iframe-Höhe von AEM automatisch angepasst werden muss.
 

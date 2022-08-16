@@ -1,8 +1,8 @@
 ---
 title: Erstellen benutzerdefinierter AEM-Seitenvorlagen mit Adobe Campaign-Formularkomponenten
-seo-title: Erstellen benutzerdefinierter AEM-Seitenvorlagen mit Adobe Campaign-Formularkomponenten
+seo-title: Creating Custom AEM Page Template with Adobe Campaign Form Components
 description: Erstellen Sie eine benutzerdefinierte Seitenvorlage auf der Basis von Adobe Campaign-Formularkomponenten.
-seo-description: Erstellen Sie eine benutzerdefinierte Seitenvorlage auf der Basis von Adobe Campaign-Formularkomponenten.
+seo-description: Build a custom page template that uses Adobe Campaign Form components
 uuid: 8162ace2-b661-4c39-b0fb-288e1c035b9c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,14 +12,14 @@ discoiquuid: c3f6eed4-bbda-454a-88ce-c7f2041d4217
 exl-id: de5c634a-c0d7-4e69-b941-d2fbfe83117d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 59%
+source-wordcount: '238'
+ht-degree: 55%
 
 ---
 
 # Erstellen benutzerdefinierter AEM-Seitenvorlagen mit Adobe Campaign-Formularkomponenten{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-Auf dieser Seite wird erläutert, wie Sie eine benutzerdefinierte Seitenvorlage erstellen, die [Adobe Campaign Form](/help/sites-authoring/adobe-campaign-components.md)-Komponenten verwendet, indem Sie untersuchen, wie die Geometrixx-Outdoors-Vorlage ( `/apps/geometrixx-outdoors/components/page_campaign_profile`) implementiert ist, und Sie auf wichtige Informationen verweisen, die Sie beim Erstellen Ihrer eigenen benutzerdefinierten Vorlage benötigen.
+Auf dieser Seite wird beschrieben, wie Sie eine benutzerdefinierte Seitenvorlage erstellen, die [Adobe Campaign-Formular](/help/sites-authoring/adobe-campaign-components.md) Komponenten durch Prüfung der Vorlage &quot;Geometrixx Outdoors&quot;( `/apps/geometrixx-outdoors/components/page_campaign_profile`) implementiert ist und Sie auf wichtige Informationen verweist, die Sie beim Erstellen Ihrer eigenen benutzerdefinierten Vorlage benötigen.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Um eine benutzerdefinierte AEM-Seitenvorlage mit Adobe Campaign-Formularkompone
 
 1. **Die richtige resourceSuperType-Klasse**
 
-   Stellen Sie sicher, dass die Seitenkomponente von `mcm/campaign/components/profile` erbt.
+   Stellen Sie sicher, dass die Seitenkomponente von erbt. `mcm/campaign/components/profile`.
 
    Dies ist erforderlich, damit die Servlets Informationen abrufen und speichern können
 
@@ -40,7 +40,7 @@ Um eine benutzerdefinierte AEM-Seitenvorlage mit Adobe Campaign-Formularkompone
 
 1. **ClientContext-Einstellungen**
 
-   Wenn Sie sich die clientcontext-Einstellungen ( `/etc/designs/geometrixx-outdoors/jcr:content/page_campaign_profile`) ansehen, sehen Sie die folgenden Einstellungen:
+   Wenn Sie sich die ClientContext-Einstellungen ansehen ( `/etc/designs/geometrixx-outdoors/jcr:content/page_campaign_profile`) sehen Sie die folgenden Einstellungen:
 
    * ClientContext verweist auf `/etc/clientcontext/campaign`
    * Es ist außerdem ein zusätzlicher Knoten *config* vorhanden.
@@ -59,7 +59,7 @@ Um eine benutzerdefinierte AEM-Seitenvorlage mit Adobe Campaign-Formularkompone
 
 1. **body.jsp (/apps/geometrixx-outdoors/components/page_campaign_profile/body.jsp)**
 
-   Unter **body.jsp** werden die Cloud-Dienste unten auf der Seite geladen:
+   In **body.jsp**, werden die Cloud-Dienste unten auf der Seite geladen:
 
    ```
    <cq:include path="cloudservices" resourceType="cq/cloudserviceconfigs/components/servicecomponents"/>

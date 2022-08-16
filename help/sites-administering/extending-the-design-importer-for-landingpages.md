@@ -1,8 +1,8 @@
 ---
 title: Erweitern und Konfigurieren des Design-Importtools für Einstiegsseiten
-seo-title: Erweitern und Konfigurieren des Design-Importtools für Einstiegsseiten
+seo-title: Extending and Configuring the Design Importer for Landing Pages
 description: Erfahren Sie, wie Sie den Design Importer für Einstiegsseiten konfigurieren.
-seo-description: Erfahren Sie, wie Sie den Design Importer für Einstiegsseiten konfigurieren.
+seo-description: Learn how to configure the Design Importer for landing pages.
 uuid: a2dd0c30-03e4-4e52-ba01-6b0b306c90fc
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '3522'
+source-wordcount: '3503'
 ht-degree: 77%
 
 ---
@@ -35,7 +35,7 @@ Nutzen Sie die folgenden logischen Schritte, um Ihre benutzerdefinierte Komponen
 
    * Bei der TagHandlerFactory handelt es sich um eine OSGi-Komponente (Singleton), die dafür verantwortlich ist, Instanzen des Taghandlers zu erzeugen.
    * Ihre TagHandlerFactory muss eine OSGi-Eigenschaft mit dem Namen „tagpattern.name“ bereitstellen, deren Wert mit dem Eingabe-HTML-Tag abgeglichen wird.
-   * Wenn mehrere Taghandler mit dem Eingabe-HTML-Tag übereinstimmen, wird jener mit dem höheren Rang gewählt. Der Rang selbst wird als OSGi-Eigenschaft **service.ranking** bereitgestellt.
+   * Wenn mehrere Taghandler mit dem Eingabe-HTML-Tag übereinstimmen, wird jener mit dem höheren Rang gewählt. Der Rang selbst wird als OSGi-Eigenschaft bereitgestellt **service.ranking**.
    * Die TagHandlerFactory ist eine OSGi-Komponente. Sämtliche Verweise auf den Taghandler müssen über diese Factory erfolgen.
 
 1. Stellen Sie sicher, dass Ihre TagHandlerFactory einen höheren Rang hat, wenn Sie den Standard überschreiben möchten.
@@ -52,7 +52,7 @@ Der folgende Spickzettel enthält ein Beispiel dafür, wie Sie Ihr HTML für den
 
 Landingpage-Spickzettel
 
-[Datei laden](assets/cheatsheet.zip)
+[Datei herunterladen](assets/cheatsheet.zip)
 
 ### Zip-Datei-Layout und -Anforderungen {#zip-file-layout-and-requirements}
 
@@ -67,7 +67,7 @@ Unten sehen Sie ein Beispiellayout einer Zip-Datei:
 * /img -> alle Bilder und Assets
 * /js -> für das Hinzufügen zur JS-clientlib
 
-Das Layout basiert auf dem Boilerplate-Layout für HTML5. Weitere Informationen finden Sie unter [https://html5boilerplate.com/](https://html5boilerplate.com/)
+Das Layout basiert auf dem Boilerplate-Layout für HTML5. Mehr dazu unter [https://html5boilerplate.com/](https://html5boilerplate.com/)
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ Das Layout basiert auf dem Boilerplate-Layout für HTML5. Weitere Informationen 
 
 Um das HTML importieren zu können, benötigen Sie ein Leinwand-div zum Einstiegsseiten-HTML.
 
-Das Leinwand-div ist ein HTML **div** mit `id="cqcanvas"` , das in das HTML-Tag `<body>` eingefügt werden muss und den Inhalt für die Konvertierung umgeben muss.
+Das Leinwand-div ist ein HTML-Code **div** mit `id="cqcanvas"` die in die HTML eingefügt werden müssen `<body>` und muss den Inhalt für die Konvertierung umschließen.
 
 Ein Beispiel-Snippet des Einstiegsseiten-HTML nach dem Hinzufügen des Leinwand-div sieht wie folgt aus:
 
@@ -97,7 +97,7 @@ Ein Beispiel-Snippet des Einstiegsseiten-HTML nach dem Hinzufügen des Leinwand-
 </html>
 ```
 
-### Vorbereiten der HTML, sodass es bearbeitbare AEM-Komponenten enthält  {#preparing-the-html-to-include-editable-aem-components}
+### Vorbereiten der HTML, sodass es bearbeitbare AEM-Komponenten enthält {#preparing-the-html-to-include-editable-aem-components}
 
 Wenn Sie eine Einstiegsseite importieren, können Sie die Seite im aktuellen Zustand importieren, was bedeutet, dass Sie nach dem Import der Einstiegsseite in AEM keine Änderungen an den importierten Elementen vornehmen können (Sie können der Seite jedoch weitere AEM-Komponenten hinzufügen).
 
@@ -115,9 +115,9 @@ Im folgenden Abschnitt wird beschrieben, wie Sie Ihre HTML-Datei so bearbeiten, 
 
 Beachten Sie vor dem Import die folgenden Beschränkungen:
 
-### Sämtliche Attribute wie „class“ oder „id“, die auf das   &amp;lt;body>-Tag angewendet werden, werden nicht beibehalten.  {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
+### Sämtliche Attribute wie „class“ oder „id“, die auf das   &amp;lt;body>-Tag angewendet werden, werden nicht beibehalten. {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
-Wenn ein beliebiges Attribut wie ID oder Klasse auf das Body-Tag angewendet wird, z. B. `<body id="container">`, wird es nach dem Import nicht mehr beibehalten. Daher sollte das importierte Design keine Abhängigkeiten von den Attributen haben, die auf das Tag `<body>` angewendet werden.
+Wenn beispielsweise ein Attribut wie ID oder Klasse auf das Body-Tag angewendet wird `<body id="container">` nach dem Import nicht beibehalten. Daher sollte das importierte Design keine Abhängigkeiten von den Attributen haben, die auf die `<body>` -Tag.
 
 ### Drag-and-Drop-Zip {#drag-and-drop-zip}
 
@@ -133,7 +133,7 @@ Unterstützt wird der Drag-and-Drop-Upload der Design-Zip von folgenden Browsern
 
 Jede Seiteneigenschaft (z. B. „Benutzerdefinierte Domäne“, „HTTPS erzwingen“ usw.), die für eine (mit der Vorlage „Leere Startseite“ erstellte) Seite vor dem Import des Designpakets festgelegt wurde, geht verloren, nachdem das Design importiert wurde. Aus diesem Grund wird empfohlen, die Seiteneigenschaften nach dem Import des Designpakets festzulegen.
 
-### Nur HTML-Markup angenommen  {#html-only-markup-assumed}
+### Nur HTML-Markup angenommen {#html-only-markup-assumed}
 
 Nach dem Importieren wird das Markup aus Sicherheitsgründen bereinigt, um den Import und die Veröffentlichung von ungültigem Markup zu verhindern. Dabei wird davon ausgegangen, dass sämtliches reines HTML-Markup und alle anderen Elemente Wie Inline-SVG oder Webkomponenten herausgefiltert werden.
 
@@ -147,7 +147,7 @@ HTML-Markup zum Einfügen einer text-Komponente (`foundation/components/text`) i
 
 Durch die Integration des oben genannten Markups in das HTML passiert Folgendes:
 
-* Erstellt eine bearbeitbare AEM-Textkomponente ( `sling:resourceType=foundation/components/text`) in der Landingpage, die nach dem Import des Designpakets erstellt wurde.
+* Erstellt eine bearbeitbare AEM ( `sling:resourceType=foundation/components/text`) in der Landingpage, die nach dem Import des Designpakets erstellt wurde.
 * Die Eigenschaft `text` der erstellten Komponente „text“ wird auf das im `div` eingeschlossene HTML gesetzt.
 
 **Kurze Komponenten-Tag-Deklaration**:
@@ -179,7 +179,7 @@ So fügen Sie Text mit Farbe (pink) hinzu, der im RTE-Editor bearbeitet werden k
 
 ### Titel {#title}
 
-HTML-Markup zum Einfügen einer Titelkomponente ( `wcm/landingpage/components/title`) in den HTML-Code im Designpaket:
+HTML-Markup zum Einfügen einer Titelkomponente ( `wcm/landingpage/components/title`) in der HTML innerhalb des Designpakets:
 
 ```xml
 <div data-cq-component="title"> <h1>This is some editable title text</h1> </div>
@@ -213,10 +213,10 @@ Durch die Integration des oben genannten Markups in das HTML passiert Folgendes:
 
 * Erstellt eine bearbeitbare AEM Bildkomponente ( `sling:resourceType=foundation/components/image`) in der Landingpage, die nach dem Import des Designpakets erstellt wurde.
 * Stellt die Eigenschaft `fileReference` der erstellten image-Komponente auf den Pfad ein, in den das im src-Attribut angegebene Bild importiert wird.
-* Legt für die Eigenschaft `alt` den Wert des alt-Attributs im img-Tag fest.
-* Legt für die Eigenschaft `title` den Wert des title-Attributs im img-Tag fest.
-* Legt für die Eigenschaft `width` den Wert des width-Attributs im img-Tag fest.
-* Legt für die Eigenschaft `height` den Wert des Attributs height im img -Tag fest.
+* Legt die `alt` -Eigenschaft auf den Wert des alt -Attributs im img -Tag.
+* Legt die `title` -Eigenschaft auf den Wert des title-Attributs im img -Tag.
+* Legt die `width` -Eigenschaft auf den Wert des width-Attributs im img -Tag.
+* Legt die `height` -Eigenschaft auf den Wert des height -Attributs im img -Tag.
 
 **Kurze Komponenten-Tag-Deklaration**:
 
@@ -224,9 +224,9 @@ Durch die Integration des oben genannten Markups in das HTML passiert Folgendes:
 <img data-cq-component="image" src="test.png" alt="Image component shorthand"/>
 ```
 
-#### Absoluter URL „img src“ wird im div der image-Komponente nicht unterstützt  {#absolute-url-img-src-not-supported-within-image-component-div}
+#### Absoluter URL „img src“ wird im div der image-Komponente nicht unterstützt {#absolute-url-img-src-not-supported-within-image-component-div}
 
-Wenn ein `<img>` -Tag mit einer absoluten URL-src für die Komponentenkonvertierung versucht wird, wird eine geeignete **UnsupportedTagContentException** -Ausnahme ausgelöst. So wird das folgende Beispiel nicht unterstützt:
+Wenn eine `<img>` -Tag mit einer absoluten URL-src für die Komponentenkonvertierung versucht wird, wird eine geeignete **UnsupportedTagContentException** erhöht wird. So wird das folgende Beispiel nicht unterstützt:
 
 `<div data-cq-component="image">`
 
@@ -236,14 +236,14 @@ Wenn ein `<img>` -Tag mit einer absoluten URL-src für die Komponentenkonvertier
 
 Andernfalls werden absolute URL-Bilder für img-Tags unterstützt, die nicht Teil des Bildkomponenten-div sind.
 
-### Aktionsaufruf-Komponenten (CTA)  {#call-to-action-components}
+### Aktionsaufruf-Komponenten (CTA) {#call-to-action-components}
 
 Sie können einen Teil einer zu importierenden Einstiegsseite als „bearbeitbare Aktionsaufruf-Komponente“ markieren. Solche importierten Aktionsaufruf-Komponenten können nach dem Import der Einstiegsseite bearbeitet werden. AEM enthält die folgenden CTA-Komponenten:
 
 * Click Through-Link - Sie können einen Textlink hinzufügen. Wenn der Besucher auf diesen klickt, wird er zu einer Ziel-URL weitergeleitet.
 * Grafischer Link – Sie können ein Bild hinzufügen. Wenn der Besucher darauf klickt, wird er zu einer Ziel-URL weitergeleitet.
 
-#### Click Through-Link  {#click-through-link}
+#### Click Through-Link {#click-through-link}
 
 Diese CTA-Komponente kann dazu verwendet werden, der Einstiegsseite einen Textlink hinzuzufügen.
 
@@ -302,7 +302,7 @@ HTML-Tag mit in der importierten Zip enthaltenem grafischen Link: Hier verweist 
 
 >[!NOTE]
 >
->Um einen Clickthrough-grafischen Link zu erstellen, müssen Sie ein Anker-Tag und das Bild-Tag in ein div mit dem Attribut `data-cq-component="clickthroughgraphicallink"` einschließen.
+>Um einen Clickthrough-grafischen Link zu erstellen, müssen Sie ein Anker-Tag und das Bild-Tag in ein div mit `data-cq-component="clickthroughgraphicallink"` -Attribut.
 >
 >Beispiel:`<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`
 >
@@ -314,8 +314,7 @@ HTML-Tag mit in der importierten Zip enthaltenem grafischen Link: Hier verweist 
 >
 >`</div>`
 >
->mit zugewiesenem `css .hasbackground { background-image: pathtoimage }`
-
+>mit `css .hasbackground { background-image: pathtoimage }`
 
 ### Lead-Formular {#lead-form}
 
@@ -330,9 +329,9 @@ Ein Lead-Formular ist ein Formular, das dazu verwendet wird, die Informationen e
 * Benutzer können den Titel mit dem Tag „label“ und Stile mit dem Stilattribut „class“ angeben (nur für CTA-Lead-Formular-Komponenten verfügbar).
 * Die Dankeseite und die Abonnementliste können als ausgeblendeter Parameter des Formulars (in der index.htm) bereitgestellt oder über die Bearbeitungsleiste von &quot;Start des Lead-Formulars&quot;hinzugefügt/bearbeitet werden.
 
-   &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/en/user/register/thank_you&quot; />
+   &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/en/user/register/thank_you&quot;/>
 
-   &lt;input type=&quot;hidden&quot; name=&quot;groupName&quot; value=&quot;leadForm&quot; />
+   &lt;input type=&quot;hidden&quot; name=&quot;groupName&quot; value=&quot;leadForm&quot;/>
 
 * Einschränkungen wie - erforderlich können aus der Bearbeitungskonfiguration jeder Komponente bereitgestellt werden.
 
@@ -388,7 +387,7 @@ Durch die Integration des oben genannten Markups in das HTML passiert Folgendes:
 * Startet den Sidekick mit Standardkomponenten. Neue Komponenten können der Einstiegsseite hinzugefügt werden, indem sie aus dem Sidekick auf die parsys-Komponente gezogen werden.
 * Zwei title-Komponenten sind ebenfalls Teil des parsys.
 
-### Target {#target}
+### Ziel {#target}
 
 Die target-Komponente zeigt den Inhalt eines Erlebnisses auf der Seite an. In einer Kampagne können mehrere Erlebnisse erstellt werden und die Zielkomponente kann verschiedenen Besuchern der Seite dynamisch Inhalte aus verschiedenen Erlebnissen anzeigen.
 
@@ -418,7 +417,7 @@ Sie können nicht nur angeben, ob es sich bei importierten Komponenten um bearbe
 * Angeben der charset-Kodierung im HTML
 * Überlagern der Importer-Seitenvorlage
 
-### Einrichten von Seiteneigenschaften durch Extrahieren der im importierten HTML definierten Metadaten  {#setting-page-properties-by-extracting-metadata-defined-in-imported-html}
+### Einrichten von Seiteneigenschaften durch Extrahieren der im importierten HTML definierten Metadaten {#setting-page-properties-by-extracting-metadata-defined-in-imported-html}
 
 Die folgenden im Kopf des importierten HTML deklarierten Metadaten werden vom Design Importer als Eigenschaft „jcr:description“ extrahiert und beibehalten:
 
@@ -440,15 +439,15 @@ Der Design Importer liest die im importierten HTML festgelegte Kodierung. Die Ko
 
 Wenn im importierten HTML keine Kodierung festgelegt ist, wird vom Design Importer UTF-8 als Standardkodierung festgelegt.
 
-### Überlagern von Vorlagen  {#overlaying-template}
+### Überlagern von Vorlagen {#overlaying-template}
 
 Die Vorlage für leere Einstiegsseiten kann überlagert werden, indem Sie eine neue Vorlage erstellen unter: `/apps/<appName>/designimporter/templates/<templateName>`
 
-Die Schritte zum Erstellen einer neuen Vorlage in AEM werden [hier](/help/sites-developing/templates.md) erläutert.
+Die Schritte zum Erstellen einer neuen Vorlage in AEM werden erläutert. [here](/help/sites-developing/templates.md).
 
 ### Verweisen auf eine Komponente von der Einstiegsseite {#referring-a-component-from-landing-page}
 
-Angenommen, Sie verfügen über eine Komponente, auf die Sie in Ihrem HTML mit dem data-cq-component-Attribut verweisen möchten, sodass der Design Importer an dieser Stelle eine Komponente rendert. Sie möchten beispielsweise auf die Tabellenkomponente ( `resourceType = /libs/foundation/components/table`) verweisen. Sie müssen das HTML wie folgt ergänzen:
+Angenommen, Sie verfügen über eine Komponente, auf die Sie in Ihrem HTML mit dem data-cq-component-Attribut verweisen möchten, sodass der Design Importer an dieser Stelle eine Komponente rendert. Sie möchten beispielsweise auf die Tabellenkomponente verweisen ( `resourceType = /libs/foundation/components/table`). Sie müssen das HTML wie folgt ergänzen:
 
 `<div data-cq-component="/libs/foundation/components/table">foundation table</div>`
 
@@ -471,7 +470,7 @@ Die Verwendung von CSS-Auswahlen, die den folgenden ähneln, wird bei der Verwen
 Dies liegt daran, dass dem generierten HTML nach dem Import zusätzliche HTML-Elemente wie das &lt;div>-Tag hinzugefügt werden.
 
 * Skripts, die auf einer ähnlichen Struktur basieren, werden ebenfalls nicht für die Verwendung mit Elementen empfohlen, die für die Konvertierung in AEM-Komponenten vorgesehen sind.
-* Die Verwendung von Stilen auf den Markup-Tags für die Komponentenkonvertierung wie &lt;div data-cq-component=&quot;&amp;ast;&quot;> wird nicht empfohlen.
+* Verwendung von Stilen auf den Markup-Tags für die Komponentenkonvertierung wie &lt;div data-cq-component=&quot;”&amp;ast;”&quot;> wird nicht empfohlen.
 * Beim Designlayout sollten die Best Practices für das HTML5-Boilerplate befolgt werden. Mehr dazu unter: [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Konfigurieren von OSGi-Modulen {#configuring-osgi-modules}
@@ -500,12 +499,12 @@ In der folgenden Tabelle finden Sie eine Kurzbeschreibung der Eigenschaften:
   <tr>
    <td>Builder für die Einstiegsseite</td>
    <td>Dateimuster</td>
-   <td>Der Builder für die Einstiegsseite kann so konfiguriert werden, dass er HTML-Dateien verarbeitet, die einem regulären Ausdruck entsprechen, wie vom Dateimuster definiert.</td>
+   <td>Der Landingpage Builder kann so konfiguriert werden, dass HTML-Dateien, die einem regulären Ausdruck entsprechen, wie durch das Dateimuster definiert verarbeitet werden.</td>
   </tr>
   <tr>
    <td>Builder für mobile Einstiegsseiten</td>
    <td>Dateimuster</td>
-   <td>Der Builder für die Einstiegsseite kann so konfiguriert werden, dass er HTML-Dateien verarbeitet, die einem regulären Ausdruck entsprechen, wie vom Dateimuster definiert.</td>
+   <td>Der Landingpage Builder kann so konfiguriert werden, dass HTML-Dateien, die einem regulären Ausdruck entsprechen, wie durch das Dateimuster definiert verarbeitet werden.</td>
   </tr>
   <tr>
    <td> </td>
@@ -533,14 +532,14 @@ In der folgenden Tabelle finden Sie eine Kurzbeschreibung der Eigenschaften:
 >Beispiel: Wenn die Standardkonfiguration wie folgt ist:
 >`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
->Und Sie müssen >`CQ_DESIGN_PATH` mit `VIPURL` im Suchmuster verwenden, sollte Ihr Suchmuster wie folgt aussehen:
+>Und Sie müssen >`CQ_DESIGN_PATH` mit `VIPURL` im Suchmuster ein, sollte Ihr Suchmuster wie folgt aussehen:
 `/\* *VIPURL *\*/ *(['"])`
 
 ## Fehlerbehebung {#troubleshooting}
 
 Beim Import des Designpakets können verschiedene Fehler auftreten, die in diesem Abschnitt beschrieben werden.
 
-### Initialisierung des Sidekicks mit für Einstiegsseiten relevanten Komponenten  {#initialization-of-sidekick-with-landing-page-relevant-components}
+### Initialisierung des Sidekicks mit für Einstiegsseiten relevanten Komponenten {#initialization-of-sidekick-with-landing-page-relevant-components}
 
 Wenn das Designpaket ein parsys-Komponenten-Markup enthält, werden nach dem Import im Sidekick für Einstiegsseiten relevante Komponenten angezeigt. Sie können neue Komponenten per Drag-and-Drop auf die parsys-Komponente in der Einstiegsseite ziehen. Sie können auch den Designmodus aufrufen und dem Sidekick neue Komponenten hinzufügen.
 
@@ -553,11 +552,11 @@ Bei Fehlern (z. B. wenn das importierte Paket keine gültige ZIP-Datei ist) impo
 
 ### Nach dem Import werden Warnmeldungen angezeigt {#warnings-displayed-after-import}
 
-Im Falle von Warnungen (z. B. HTML bezieht sich auf Bilder, die nicht im Paket enthalten sind) importiert der Design Importer die ZIP-Datei, zeigt aber gleichzeitig eine Liste von Problemen/Warnungen im Ergebnisbereich an. Wenn Sie auf den Link Probleme klicken, wird eine Liste mit Warnungen angezeigt, die auf alle Probleme innerhalb des Designpakets hinweisen. Unter anderem werden in folgenden Fällen vom Design Importer Warnmeldungen erzeugt und angezeigt:
+Im Falle von Warnungen (z. B. HTML bezieht sich auf Bilder, die nicht im Paket enthalten sind) importiert der Design Importer die ZIP-Datei, zeigt aber gleichzeitig eine Liste von Problemen/Warnungen im Ergebnisfenster an. Wenn Sie auf den Problemlink klicken, wird eine Liste mit Warnungen angezeigt, die auf alle Probleme innerhalb des Designpakets hinweisen. Unter anderem werden in folgenden Fällen vom Design Importer Warnmeldungen erzeugt und angezeigt:
 
 * HTML bezieht sich auf Bilder, die nicht im Paket enthalten sind.
 * HTML bezieht sich auf Skripte, die im Paket nicht vorhanden sind.
-* HTML bezieht sich auf Stile, die nicht im Paket vorhanden sind.
+* HTML bezieht sich auf Stile, die nicht im Paket enthalten sind.
 
 ### Wo werden die Dateien aus der Zip-Datei in AEM gespeichert? {#where-are-the-files-of-the-zip-file-being-stored-in-aem}
 
@@ -599,4 +598,4 @@ wird `box img` im Design Importer verwendet. Die daraus resultierende Einstiegss
 ```
 
 >[!NOTE]
-Außerdem sollten Designer beachten, dass nur Code innerhalb des Tags **id=cqcanvas** vom Importer erkannt wird. Andernfalls wird Design nicht beibehalten.
+Außerdem sollten Designer beachten, dass nur Code innerhalb der **id=cqcanvas** -Tag vom Importtool erkannt wird, andernfalls wird das Design nicht beibehalten.

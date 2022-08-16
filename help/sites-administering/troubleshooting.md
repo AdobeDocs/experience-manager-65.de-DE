@@ -1,8 +1,8 @@
 ---
 title: Arbeiten mit Protokollen
-seo-title: Arbeiten mit Protokollen
+seo-title: Working with Logs
 description: Erfahren Sie, wie Sie anhand von Protokollen eine Fehlerbehebung für AEM durchführen können.
-seo-description: Erfahren Sie, wie Sie anhand von Protokollen eine Fehlerbehebung für AEM durchführen können.
+seo-description: Learn how to troubleshoot AEM by working with logs.
 uuid: af8b7f50-c8d4-4760-9f00-3feb0b79ee4c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: ab4fc41f-e0e9-4577-aab2-f0b4298f9a59
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 93%
+source-wordcount: '234'
+ht-degree: 92%
 
 ---
 

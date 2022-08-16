@@ -1,8 +1,8 @@
 ---
-title: 'Exportieren in CSV  '
-seo-title: 'Exportieren in CSV  '
+title: Exportieren in CSV
+seo-title: Export to CSV
 description: Exportieren von Informationen zu Ihren Seiten in eine CSV-Datei auf Ihrem lokalen System
-seo-description: Exportieren von Informationen zu Ihren Seiten in eine CSV-Datei auf Ihrem lokalen System
+seo-description: Export information about your pages to a CSV file on your local system
 uuid: 6eee607b-3510-4f6a-ba82-b27480a4fbe1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,12 +13,12 @@ docset: aem65
 exl-id: 18910143-f2f2-4cfe-88b9-651df90d9cb9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 86%
+source-wordcount: '191'
+ht-degree: 85%
 
 ---
 
-# Exportieren in CSV  {#export-to-csv}
+# Exportieren in CSV{#export-to-csv}
 
 Mit **CSV-Bericht erstellen** können Sie Informationen über Ihre Seiten in eine CSV-Datei auf Ihrem lokalen System exportieren.
 
@@ -30,10 +30,10 @@ Mit **CSV-Bericht erstellen** können Sie Informationen über Ihre Seiten in ein
 >
 >Die Download-Funktion (und der Standard-Zielordner) Ihres Browsers werden verwendet.
 
-**** Der Assistent zum Erstellen von CSV-Exporten bietet Ihnen folgende Auswahlmöglichkeiten:
+Der Assistent zum **Erstellen von CSV**-Exporten bietet Ihnen folgende Auswahlmöglichkeiten:
 
 * Zu exportierende Eigenschaften
-   * Metadaten  
+   * Metadaten
       * Name
       * Geändert
       * Veröffentlicht
@@ -41,25 +41,25 @@ Mit **CSV-Bericht erstellen** können Sie Informationen über Ihre Seiten in ein
       * Workflow
    * Übersetzung
       * Übersetzt
-   * Analytics
+   * Analyse
       * Seitenansichten
       * Individuelle Besucher
       * Zeit auf Seite
-* Depth
+* Tiefe
    * Übergeordneter Pfad
    * Nur direkte untergeordnete Elemente
    * Zusätzliche Ebenen von untergeordneten Elementen
-   * Levels
+   * Ebenen
 
 Die resultierende Datei `export.csv` kann in Excel (oder einer anderen kompatiblen Anwendung) geöffnet werden.
 
 ![etc-01](assets/etc-01.png)
 
-Die Option **CSV-Bericht** ist verfügbar, wenn Sie die Konsole **Sites** (in der Listenansicht) durchsuchen: Es handelt sich um eine Option des Dropdown-Menüs **Erstellen**:
+Die Erstellung **CSV-Bericht** ist beim Durchsuchen der **Sites** Konsole (in der Listenansicht): ist eine Option der **Erstellen** Dropdown-Menü:
 
 ![etc-02](assets/etc-02.png)
 
-So erstellen Sie einen CSV-Export: 
+So erstellen Sie einen CSV-Export:
 
 1. Öffnen Sie die **Sites-Konsole** und wechseln Sie zum gewünschten Verzeichnis, falls erforderlich.
 1. Wählen Sie in der Symbolleiste **Erstellen** und dann **CSV-Bericht** aus, um den Assistenten zu öffnen:

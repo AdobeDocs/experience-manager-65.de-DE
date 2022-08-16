@@ -1,8 +1,8 @@
 ---
 title: Verwalten des Zugriffs auf Workflows
-seo-title: Verwalten des Zugriffs auf Workflows
+seo-title: Managing Access to Workflows
 description: Erfahren Sie, wie Sie den Zugriff auf Workflows verwalten.
-seo-description: Erfahren Sie, wie Sie den Zugriff auf Workflows verwalten.
+seo-description: Learn how to manage access to Workflows.
 uuid: 58f79b89-fe56-4565-a869-8179c1ac68de
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 5150867a-02a9-45c9-b2fd-e536b60ffa8c
 exl-id: cc54d637-d66c-49d2-99ee-00d96f1a74e0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '562'
 ht-degree: 90%
 
 ---
@@ -40,7 +40,7 @@ Sie können Aktionen für Workflows ausführen, wenn:
 >
 >Dies sind die Mindestanforderungen. Das Konto muss zudem der zugewiesene Teilnehmer oder ein Mitglied der zugewiesenen Gruppe sein, um bestimmte Schritte ausführen zu können.
 
-## Konfigurieren des Zugriffs auf Workflows  {#configuring-access-to-workflows}
+## Konfigurieren des Zugriffs auf Workflows {#configuring-access-to-workflows}
 
 Workflow-Modelle übernehmen (erben) die Standard-Zugriffssteuerungsliste (ACL, Access Control List), um zu steuern, wie Benutzer mit Workflows interagieren können. Zum Anpassen des Benutzerzugriffs auf einen Workflow bearbeiten Sie die Zugriffssteuerungsliste (ACL) im Repository für den Ordner, der den Knoten des Workflow-Modells enthält:
 
@@ -51,9 +51,9 @@ Workflow-Modelle übernehmen (erben) die Standard-Zugriffssteuerungsliste (ACL, 
 >
 >Weitere Informationen zur Verwendung von CRXDE Lite, um ACLs zu konfigurieren, finden Sie in [Verwalten von Zugriffsrechten](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-### Anwenden einer ACL für das spezifische Workflow-Modell unter /var/workflow/models  {#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models}
+### Anwenden einer ACL für das spezifische Workflow-Modell unter /var/workflow/models {#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models}
 
-Wenn das Workflow-Modell in `/var/workflow/models` gespeichert ist, können Sie dem Ordner eine spezifische ACL zuweisen, die nur für diesen Workflow relevant ist:
+Wenn das Workflow-Modell in gespeichert wird `/var/workflow/models` können Sie dem Ordner eine spezifische ACL zuweisen, die nur für diesen Workflow relevant ist:
 
 1. Öffnen Sie CRXDE Lite im Webbrowser ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Wählen Sie in der Knotenstruktur den Knoten für den Ordner der Workflow-Modelle aus:
@@ -64,14 +64,14 @@ Wenn das Workflow-Modell in `/var/workflow/models` gespeichert ist, können Sie 
 1. Klicken Sie in der Tabelle **Richtlinien zur lokalen Zugriffssteuerung** (**Zugriffssteuerungsliste**) auf das Plussymbol, um einen Eintrag hinzuzufügen ****.
 1. Fügen Sie im Dialogfeld **Neuen Eintrag hinzufügen** einen neuen ACE mit folgenden Eigenschaften hinzu:
 
-   * **Prinzipal**:  `content-authors`
+   * **Principal**: `content-authors`
    * **Typ**: `Deny`
-   * **Berechtigungen**:  `jcr:read`
+   * **Berechtigungen**: `jcr:read`
    * **rep:glob**: Verweis auf den spezifischen Workflow
 
    ![wf-108](assets/wf-108.png)
 
-   Die Tabelle **Zugriffssteuerungsliste** enthält jetzt die Beschränkung für `content-authors` auf das Workflow-Modell `prototype-wfm-01` .
+   Die **Zugriffssteuerungsliste** -Tabelle enthält jetzt die Beschränkung für `content-authors` auf `prototype-wfm-01` Workflow-Modell.
 
    ![wf-109](assets/wf-109.png)
 
@@ -101,9 +101,9 @@ Sie können dann dem Ordner selbst eine ACL hinzufügen.
 1. Klicken Sie in der Tabelle **Richtlinien zur lokalen Zugriffssteuerung** (**Zugriffssteuerungsliste**) auf das Plussymbol, um einen Eintrag hinzuzufügen ****.
 1. Fügen Sie im Dialogfeld **Neuen Eintrag hinzufügen** einen neuen ACE mit folgenden Eigenschaften hinzu:
 
-   * **Prinzipal**:  `content-authors`
+   * **Principal**: `content-authors`
    * **Typ**: `Deny`
-   * **Berechtigungen**:  `jcr:read`
+   * **Berechtigungen**: `jcr:read`
 
    >[!NOTE]
    >
@@ -111,7 +111,7 @@ Sie können dann dem Ordner selbst eine ACL hinzufügen.
 
    ![wf-110](assets/wf-110.png)
 
-   Die Tabelle **Zugriffssteuerungsliste** enthält jetzt die Beschränkung für `content-authors` auf den Ordner `prototypes` .
+   Die **Zugriffssteuerungsliste** -Tabelle enthält jetzt die Beschränkung für `content-authors` auf `prototypes` Ordner.
 
    ![wf-111](assets/wf-111.png)
 

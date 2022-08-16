@@ -1,8 +1,8 @@
 ---
 title: Erstellen benutzerdefinierter Formularzuordnungen
-seo-title: Erstellen benutzerdefinierter Formularzuordnungen
+seo-title: Creating Custom Form Mappings
 description: Bei der Erstellung einer benutzerdefinierten Tabelle in Adobe Campaign ist es u. U. ratsam, in AEM ein Formular zu erstellen, das dieser benutzerdefinierten Tabelle zugeordnet wird.
-seo-description: Bei der Erstellung einer benutzerdefinierten Tabelle in Adobe Campaign ist es u. U. ratsam, in AEM ein Formular zu erstellen, das dieser benutzerdefinierten Tabelle zugeordnet wird.
+seo-description: When you create a custom table in Adobe Campaign, you may want to build a form in AEM that maps to that custom table
 uuid: f3bde513-6edb-4eb6-9048-40045ee08c4a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: d5dac1db-2dde-4b75-a31b-e057b447f6e2
 exl-id: bce6c586-9962-4217-82cb-c837e479abc0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '530'
 ht-degree: 93%
 
 ---
@@ -30,7 +30,7 @@ Sie müssen Folgendes installiert haben:
 * Adobe Experience Manager
 * Adobe Campaign Classic
 
-Weitere Informationen finden Sie unter [AEM mit Adobe Campaign Classic integrieren](/help/sites-administering/campaignonpremise.md) .
+Siehe [AEM in Adobe Campaign Classic integrieren](/help/sites-administering/campaignonpremise.md) für weitere Informationen.
 
 ## Erstellen benutzerdefinierter Formularzuordnungen {#creating-custom-form-mappings-2}
 
@@ -43,7 +43,7 @@ Zur Erstellung benutzerdefinierter Formularzuordnungen führen Sie die folgenden
 1. Das Formular, das die erstellte Bereitstellung verwendet, in AEM erstellen
 1. Das Formular zum Testen übermitteln
 
-### Erstellen der benutzerdefinierten Tabelle in Adobe Campaign  {#creating-the-custom-table-in-adobe-campaign}
+### Erstellen der benutzerdefinierten Tabelle in Adobe Campaign {#creating-the-custom-table-in-adobe-campaign}
 
 Beginner Sie mit der Erstellung einer benutzerdefinierten Tabelle in Adobe Campaign. In diesem Beispiel verwenden wir die folgende Definition, um eine Ereignistabelle zu erstellen:
 
@@ -58,13 +58,13 @@ Beginner Sie mit der Erstellung einer benutzerdefinierten Tabelle in Adobe Camp
 
 Führen Sie nach der Erstellung der Ereignistabelle den **Assistenten zur Aktualisierung der Datenbankstruktur** aus, um die Tabelle zu erstellen.
 
-### Erweitern der Seed-Tabelle  {#extending-the-seed-table}
+### Erweitern der Seed-Tabelle {#extending-the-seed-table}
 
 Klicken/tippen Sie in Adobe Campaign auf **Hinzufügen**, um eine neue Erweiterung für die Tabelle **Seed-Adressen (nms)** hinzuzufügen.
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
-Verwenden Sie nun die Felder aus der Tabelle **event** , um die Tabelle **seed** zu erweitern:
+Verwenden Sie nun die Felder aus dem **event** -Tabelle zum Erweitern der **Saatgut** table:
 
 ```xml
 <element label="Event" name="custom_cus_event">
@@ -77,7 +77,7 @@ Verwenden Sie nun die Felder aus der Tabelle **event** , um die Tabelle **seed**
 
 Führen Sie danach den **Assistenten zur Aktualisierung der Datenbank** aus, um die Änderungen zu übernehmen.
 
-### Erstellen einer benutzerdefinierten Zielzuordnung  {#creating-custom-target-mapping}
+### Erstellen einer benutzerdefinierten Zielzuordnung {#creating-custom-target-mapping}
 
 Wechseln Sie unter **Administration/Kampagnenverwaltung** zu **Zielzuordnungen** und fügen Sie eine neue **Zielzuordnung** hinzu.
 

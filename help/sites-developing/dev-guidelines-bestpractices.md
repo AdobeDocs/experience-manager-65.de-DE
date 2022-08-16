@@ -1,8 +1,8 @@
 ---
 title: AEM-Entwicklung – Richtlinien und Best Practices
-seo-title: AEM-Entwicklung – Richtlinien und Best Practices
+seo-title: AEM Development - Guidelines and Best Practices
 description: Richtlinien und Best Practices für das Entwickeln mit AEM
-seo-description: Richtlinien und Best Practices für das Entwickeln mit AEM
+seo-description: Guidelines and best practices for developing on AEM
 uuid: a67de085-4441-4a1d-bec3-2f27892a67ff
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: b4cf0ffc-973a-473b-80c8-7f530d111435
 exl-id: 8eef7e4d-a6f2-4b87-a995-0761447283c6
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1091'
 ht-degree: 87%
 
 ---
@@ -48,11 +48,11 @@ Die folgenden allgemeinen Regeln für Entwickler sind in der Mehrzahl gängiger 
 * Gestalten Sie die benutzerspezifischen Komponenten ausreichend flexibel und konfigurierbar.
 * Nutzen Sie die Leistung und Flexibilität des AEM-Absatzsystems (d. h. die parsys- und iparsys-Komponenten) so optimal wie möglich.
 
-### Anpassen von Komponenten und anderen Elementen  {#customizing-components-and-other-elements}
+### Anpassen von Komponenten und anderen Elementen {#customizing-components-and-other-elements}
 
 Wenn Sie eigene Komponenten erstellen oder eine vorhandene Komponente anpassen, ist es häufig am einfachsten (und sichersten), vorhandene Definitionen wiederzuverwenden. Dies gilt auch für andere Elemente in AEM, zum Beispiel für Fehler-Handler.
 
-Kopieren Sie dazu die vorhandene Definition und überlagern Sie sie, wie nachfolgend beschrieben: Anders ausgedrückt: Kopieren Sie die Definition von `/libs` in `/apps/<your-project>`. Diese neue Definition in `/apps` kann entsprechend Ihren Anforderungen aktualisiert werden.
+Kopieren Sie dazu die vorhandene Definition und überlagern Sie sie, wie nachfolgend beschrieben: Das heißt, das Kopieren der Definition aus `/libs` nach `/apps/<your-project>`. Diese neue Definition in `/apps`, kann entsprechend Ihren Anforderungen aktualisiert werden.
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ Beispiel:
 
    Dazu gehörte das Überlagern einer Komponentendefinition:
 
-   * Erstellen Sie einen neuen Komponentenordner in `/apps/<website-name>/components/<MyComponent>`, indem Sie eine vorhandene Komponente kopieren:
+   * Erstellen Sie einen neuen Komponentenordner in `/apps/<website-name>/components/<MyComponent>` durch Kopieren einer vorhandenen Komponente:
 
       * Um beispielsweise die Textkomponente anzupassen, kopieren Sie diese
 
@@ -88,8 +88,8 @@ Beispiel:
 >
 >Für die Konfiguration und andere Änderungen:
 >
->1. Kopieren Sie das Element in `/libs` in `/apps`
->1. nimmt beliebige Änderungen in `/apps` vor
+>1. Kopieren Sie das Element in `/libs` nach `/apps`
+>1. Änderungen vornehmen in `/apps`
 
 
 ## Verwenden von JCR-Abfragen {#when-to-use-jcr-queries-and-when-not-to-use-them}
@@ -113,12 +113,11 @@ Verwenden Sie für das Rendern von Inhalten anstelle einer JCR-Abfrage den Navig
 >
 >Beim Verwenden von [Query Builder](/help/sites-developing/querybuilder-api.md) verwenden Sie jedoch JCR-Abfragen, da Query Builder JCR-Abfragen im Hintergrund erzeugt.
 
-
 ## Sicherheitsüberlegungen {#security-considerations}
 
 >[!NOTE]
 >
->Es lohnt sich auch, auf die [Sicherheits-Checkliste](/help/sites-administering/security-checklist.md) zu verweisen.
+>Es lohnt sich auch, auf die [Sicherheitscheckliste](/help/sites-administering/security-checklist.md).
 
 ### JCR- bzw. Repository-Sitzungen {#jcr-repository-sessions}
 
@@ -128,13 +127,13 @@ Verwenden Sie die Benutzersitzung und nicht die Administratorsitzung. Sie sollte
 slingRequest.getResourceResolver().adaptTo(Session.class);
 ```
 
-### Schutz vor Cross-Site Scripting (XSS)  {#protect-against-cross-site-scripting-xss}
+### Schutz vor Cross-Site Scripting (XSS) {#protect-against-cross-site-scripting-xss}
 
 Mit Cross-Site Scripting (XSS) können Angreifer Code in Webseiten einfügen, die von anderen Benutzern aufgerufen werden. Diese Sicherheitslücke kann von böswilligen Nutzern ausgenutzt werden, um die Zugriffssteuerung zu umgehen.
 
 AEM filtert prinzipiell sämtliche vom Benutzer bereitgestellten Inhalte bei der Ausgabe. Bei Entwicklung und Tests hat das Vermeiden von XSS höchste Priorität.
 
-Darüber hinaus kann eine Webanwendungs-Firewall, z. B. [mod_security für Apache](https://modsecurity.org), eine zuverlässige, zentrale Kontrolle über die Sicherheit der Bereitstellungsumgebung bieten und vor zuvor nicht erkannten Cross-Site-Scripting-Angriffen schützen.
+Außerdem eine Webanwendungs-Firewall, z. B. [mod_security für Apache](https://modsecurity.org)kann eine zuverlässige, zentrale Kontrolle über die Sicherheit der Bereitstellungsumgebung bieten und vor zuvor nicht erkannten Cross-Site-Scripting-Angriffen schützen.
 
 >[!CAUTION]
 >
@@ -144,7 +143,7 @@ Der XSS-API-Spickzettel enthält Informationen, die Sie für das Verwenden der X
 
 Der XSSAPI-Spickzettel.
 
-[Datei laden](assets/xss_cheat_sheet_2016.pdf)
+[Datei herunterladen](assets/xss_cheat_sheet_2016.pdf)
 
 ### Sichere Kommunikation vertraulicher Informationen {#securing-communication-for-confidential-information}
 
@@ -155,7 +154,7 @@ Stellen Sie wie auch bei anderen Internetanwendungen sicher, dass bei der Übert
 
 Dies gilt für vertrauliche Systeminformationen (wie Konfiguration oder Administrationszugriff) und vertrauliche Benutzerinformationen (wie persönliche Daten).
 
-## Spezifische Entwicklungsaufgaben  {#distinct-development-tasks}
+## Spezifische Entwicklungsaufgaben {#distinct-development-tasks}
 
 ### Anpassen von Fehlerseiten {#customizing-error-pages}
 
@@ -163,7 +162,7 @@ Fehlerseiten können in AEM angepasst werden. Dies ist ratsam, um zu vermeiden, 
 
 Weitere Informationen finden Sie unter [Anpassen der vom Fehler-Handler angezeigten Seiten](/help/sites-developing/customizing-errorhandler-pages.md).
 
-### Geöffnete Dateien im Java-Prozess  {#open-files-in-the-java-process}
+### Geöffnete Dateien im Java-Prozess {#open-files-in-the-java-process}
 
 Da AEM auf eine große Anzahl von Dateien zugreifen kann, wird empfohlen, die Anzahl [geöffneter Dateien für einen Java-Prozess](/help/sites-deploying/configuring.md#open-files-in-the-java-process) ausdrücklich für AEM zu konfigurieren.
 

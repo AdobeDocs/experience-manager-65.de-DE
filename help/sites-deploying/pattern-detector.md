@@ -1,8 +1,8 @@
 ---
 title: 'Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor '
-seo-title: 'Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor '
+seo-title: Assessing the Upgrade Complexity with the Pattern Detector
 description: Erfahren Sie, wie Sie mit dem Musterdetektor die Komplexität der Aktualisierung bewerten können.
-seo-description: Erfahren Sie, wie Sie mit dem Musterdetektor die Komplexität der Aktualisierung bewerten können.
+seo-description: Learn how to use the Pattern Detector to assess the complexity of your upgrade.
 uuid: 84d0add9-3123-4188-9877-758911b1899f
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,18 +10,18 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
-feature: Aktualisieren
+feature: Upgrading
 exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 89%
+source-wordcount: '522'
+ht-degree: 88%
 
 ---
 
 # Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor 
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Mit dieser Funktion können Sie prüfen, ob vorhandene AEM-Instanzen aktualisiert werden können, indem Sie verwendete Muster ermitteln, die:
 
@@ -42,16 +42,14 @@ Der Musterdetektor wird als separates [Paket](https://experience.adobe.com/#/dow
 >
 >* Um die Erkennungsrate zu erhöhen,
 >* vermeiden Sie jede Verlangsamung bei geschäftskritischen Instanzen.
-
 >
->
-Gleichzeitig wird die Ausführung in **Staging-Umgebungen** empfohlen, die hinsichtlich Benutzerapplikationen, Inhalt und Konfigurationen den Produktionsumgebungen möglichst stark ähneln.
+>Gleichzeitig wird die Ausführung in **Staging-Umgebungen** empfohlen, die hinsichtlich Benutzerapplikationen, Inhalt und Konfigurationen den Produktionsumgebungen möglichst stark ähneln.
 
 Sie haben verschiedene Möglichkeiten, das Ergebnis des Musterdetektors zu prüfen: 
 
 * **Über die Felix Inventory-Konsole:** 
 
-1. Navigieren Sie zur AEM Web-Konsole, indem Sie zu *https://serveraddress:serverport/system/console/configMgr* navigieren.
+1. Navigieren Sie zur AEM Web-Konsole , indem Sie zu *https://serveraddress:serverport/system/console/configMgr*
 1. Wählen Sie **Status - Musterdetektor** aus, wie im Bild unten dargestellt:
 
    ![screen-shot-2018-2-5pattern-detektor](assets/screenshot-2018-2-5pattern-detector.png)
@@ -61,7 +59,7 @@ Sie haben verschiedene Möglichkeiten, das Ergebnis des Musterdetektors zu prüf
 
 Beide Methoden werden im Folgenden erläutert:
 
-## Reaktive Schnittstelle  {#reactive-interface}
+## Reaktive Schnittstelle {#reactive-interface}
 
 Mit einer reaktiven Schnittstelle kann der Bericht zu den Verstößen verarbeitet werden, sobald ein Problem erkannt wird.
 
@@ -70,7 +68,7 @@ Die Ausgabe ist zurzeit unter 2 URLs verfügbar:
 1. Nur-Text-Schnittstelle 
 1. JSON-Schnittstelle
 
-## Handhabung der Nur-Text-Schnittstelle  {#handling-the-plain-text-interface}
+## Handhabung der Nur-Text-Schnittstelle {#handling-the-plain-text-interface}
 
 Die in der Ausgabe enthaltenen Informationen sind als Serie von Ereigniseinträgen formatiert. Es gibt zwei Kanäle - einen für die Veröffentlichung von Verstößen und einen zweiten für die Veröffentlichung des aktuellen Fortschritts.
 
@@ -100,7 +98,7 @@ Dies führt zur folgenden Ausgabe:
 2018-02-13T14:19:35.685+01:00 [PROGRESS] Finished in period=PT13.782
 ```
 
-## Behandlung der JSON-Schnittstelle  {#handling-the-json-interface}
+## Behandlung der JSON-Schnittstelle {#handling-the-json-interface}
 
 JSON kann auf ähnliche Weise mit dem Tool [jq](https://stedolan.github.io/jq/) verarbeitet werden, sobald die Veröffentlichung erfolgt ist.
 

@@ -1,8 +1,8 @@
 ---
 title: Verwendung des Proxyservertools
-seo-title: Verwendung des Proxyservertools
+seo-title: How to use the Proxy Server Tool
 description: Ein Proxyserver fungiert als zwischengeschalteter Server, der Anfragen zwischen einem Client und einem Server weiterreicht.
-seo-description: Ein Proxyserver fungiert als zwischengeschalteter Server, der Anfragen zwischen einem Client und einem Server weiterreicht.
+seo-description: The proxy server acts as an intermediate server that relays requests between a client and a server
 uuid: 30f4f46d-839e-4d23-a511-12f29b3cc8aa
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: dfbc1d2f-80c1-4564-a01c-a5028b7257d7
 exl-id: 7222a0c3-cdb9-4c73-9d53-26f00792e439
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '943'
 ht-degree: 91%
 
 ---
@@ -74,7 +74,7 @@ Schreibt die Interaktionen zwischen Client und Server in eine Protokolldatei. Di
 
 **`-i <numIndentions>`**(Einzug hinzufügen)
 
-Die einzelnen Verbindungen werden für eine bessere Lesbarkeit eingezogen. Der Standardwert beträgt 16 Ebenen. Diese Funktion wurde mit `proxy.jar version 1.16` eingeführt.
+Die einzelnen Verbindungen werden für eine bessere Lesbarkeit eingezogen. Der Standardwert beträgt 16 Ebenen. Diese Funktion wurde mit `proxy.jar version 1.16`.
 
 ### Protokollformat {#log-format}
 
@@ -114,7 +114,7 @@ befindet, zusammen mit einer Bilddatei unter
 
 `/content/test.jpg`
 
-Der Inhalt von `test.html` lautet:
+Der Inhalt von `test.html` ist:
 
 ```xml
 <html>
@@ -128,11 +128,11 @@ Der Inhalt von `test.html` lautet:
 </html>
 ```
 
-Wenn die AEM-Instanz auf `localhost:4502` ausgeführt wird, starten wir den Proxy wie folgt:
+Angenommen, die AEM-Instanz läuft auf `localhost:4502` starten wir den Proxy wie folgt:
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-Die CQ-/CRX-Instanz kann jetzt über den Proxy unter `localhost:4444` aufgerufen werden und die gesamte Kommunikation über diesen Port wird unter `test.log` protokolliert.
+Die CQ-/CRX-Instanz kann jetzt über den Proxy unter `localhost:4444` und die gesamte Kommunikation über diesen Port bei `test.log`.
 
 Wenn Sie sich nun die Ausgabe des Proxys ansehen, können Sie die Interaktion zwischen dem Browser und der AEM-Instanz beobachten.
 
@@ -147,7 +147,7 @@ Wenn Sie anschließend einen Browser öffnen und auf die Testseite unter
 
 `http://localhost:4444/content/test.html`
 
-und wir sehen, dass der Browser eine `GET` -Anfrage für die Seite stellt:
+und wir sehen, dass der Browser eine `GET` -Anfrage für die Seite:
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]

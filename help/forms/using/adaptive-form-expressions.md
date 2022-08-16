@@ -11,7 +11,7 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2746'
 ht-degree: 100%
 
@@ -259,7 +259,7 @@ Um GuideBridge nach Initialisierung des Formulars zu verwenden (das `bridgeIniti
 
 #### GuideBridge-Ereignisse {#guidebridge-events}
 
-GuideBridge bietet auch bestimmte Ereignisse für externe Skripte auf der Seite, die als Host fungiert. Externe Skripte können diese Ereignisse überwachen und verschiedene Vorgänge durchführen. Beispiel: Sobald sich der Benutzername in einem Formular ändert, ändert sich der in der Kopfzeile der Seite angezeigte Name ebenfalls. Ausführliche Informationen zu solchen Ereignissen finden Sie in der [JavaScript-Bibliotheks-API-Referenz für adaptive Formulare](https://helpx.adobe.com/de/aem-forms/6/javascript-api/GuideBridge.html).
+GuideBridge bietet auch bestimmte Ereignisse für externe Skripte auf der Seite, die als Host fungiert. Externe Skripte können diese Ereignisse überwachen und verschiedene Vorgänge durchführen. Beispiel: Sobald sich der Benutzername in einem Formular ändert, ändert sich der in der Kopfzeile der Seite angezeigte Name ebenfalls. Ausführliche Informationen zu solchen Ereignissen finden Sie in der [JavaScript-Bibliotheks-API-Referenz für adaptive Formulare](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
 
 Verwenden Sie folgenden Code zum Registrieren von Handlern:
 

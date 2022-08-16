@@ -12,7 +12,7 @@ discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 role: Developer
 exl-id: ff087084-fb1c-43a4-ae54-cc77eb862493
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3505'
 ht-degree: 100%
 
@@ -269,7 +269,7 @@ So füllen Sie ein Formular mit einem flexiblen Layout mithilfe der Forms API (J
 
       ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
-   * Erstellen Sie ein untergeordnetes Element, das zum Detailelement gehört, indem Sie die Methode `createElement` des `Document`-Objekts aufrufen und ihr einen Zeichenfolgenwert, der den Namen des Elements darstellt, übergeben. Wandeln Sie den Rückgabewert in `Element` um. Legen Sie anschließend einen Wert für das untergeordnete Element fest, indem Sie dessen Methode `appendChild` aufrufen und ihr die Methode `createTextNode` des `Document`-Objekts als Argument übergeben. Geben Sie einen Zeichenfolgenwert an, der als Wert des untergeordneten Elements angezeigt werden soll. Hängen Sie abschließend das untergeordnete Element an das Detailelement an, indem Sie die Methode `appendChild` des Detailelements aufrufen und ihr das untergeordnete Element-Objekt als Argument übergeben. Die folgenden Code-Zeilen zeigen diese Programmlogik:
+   * Erstellen Sie ein untergeordnetes Element, das zum Detailelement gehört, indem Sie die Methode `createElement` des `Document`-Objekts aufrufen und ihr einen Zeichenfolgenwert, der den Namen des Elements darstellt, übergeben. Wandeln Sie den Rückgabewert in `Element` um. Legen Sie anschließend einen Wert für das untergeordnete Element fest, indem Sie dessen Methode `appendChild` aufrufen und ihr die Methode `createTextNode` des `Document`-Objekts als Argument verwenden. Geben Sie einen Zeichenfolgenwert an, der als Wert des untergeordneten Elements angezeigt werden soll. Hängen Sie abschließend das untergeordnete Element an das Detailelement an, indem Sie die Methode `appendChild` des Detailelements aufrufen und ihr das untergeordnete Element-Objekt als Argument übergeben. Die folgenden Code-Zeilen zeigen diese Programmlogik:
 
       ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
@@ -326,27 +326,27 @@ Führen Sie die folgenden Schritte aus, um ein Formular mit einem flexiblen Layo
 
 1. Erstellen einer arbeitsspeicherinternen XML-Datenquelle
 
-   * Erstellen Sie ein Java-`DocumentBuilderFactory`-Objekt, indem Sie die Methode `newInstance` der Klasse `DocumentBuilderFactory` aufrufen.
-   * Erstellen Sie ein Java-`DocumentBuilder`-Objekt, indem Sie die Methode `newDocumentBuilder` des `DocumentBuilderFactory`-Objekts aufrufen.
-   * Rufen Sie die Methode `newDocument` des `DocumentBuilder`-Objekts auf, um ein `org.w3c.dom.Document`-Objekt zu instantiieren.
+   * Erstellen Sie ein Java-Objekt vom Typ `DocumentBuilderFactory`, indem Sie die Methode `newInstance` der Klasse `DocumentBuilderFactory` aufrufen.
+   * Java erstellen `DocumentBuilder` -Objekt durch Aufruf der `DocumentBuilderFactory` -Objekt `newDocumentBuilder` -Methode.
+   * Rufen Sie die Methode `newDocument` des `DocumentBuilder`-Objekts auf, um ein `org.w3c.dom.Document`-Objekt zu instanziieren.
    * Erstellen Sie das Stammelement der XML-Datenquelle, indem Sie die Methode `createElement` des `org.w3c.dom.Document`-Objekts aufrufen. Dadurch wird ein `Element`-Objekt erstellt, das das Stammelement darstellt. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die Methode `createElement`. Wandeln Sie den Rückgabewert in `Element` um. Hängen Sie anschließend das Stammelement an das Dokument an, indem Sie die Methode `appendChild` des `Document`-Objekts aufrufen und das Stammelement-Objekt als Argument übergeben. Die folgenden Code-Zeilen zeigen diese Programmlogik:
 
       ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
 
-   * Erstellen Sie das Header-Element der XML-Datenquelle, indem Sie die Methode `createElement` des `Document`-Objekts aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die Methode `createElement`. Wandeln Sie den Rückgabewert in `Element` um. Hängen Sie anschließend das Header-Element an das Stammelement an, indem Sie die Methode `appendChild` des `root`-Objekts aufrufen, und übergeben Sie das Objekt des Header-Elements als Argument. Die XML-Elemente, die an das Kopfzeilenelement angehängt werden, entsprechen dem statischen Teil des Formulars. Die folgenden Code-Zeilen zeigen diese Programmlogik:
+   * Erstellen Sie das Header-Element der XML-Datenquelle, indem Sie die Methode `createElement` des `Document`-Objekts aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die Methode `createElement`. Wandeln Sie den Rückgabewert in `Element` um. Hängen Sie anschließend das Kopfzeilenelement an das Stammelement an, indem Sie die Methode `appendChild` des `root`-Objekts aufrufen und ihr das Überschriftenelementobjekt als Argument übergeben. Die XML-Elemente, die an das Kopfzeilenelement angehängt werden, entsprechen dem statischen Teil des Formulars. Die folgenden Code-Zeilen zeigen diese Programmlogik:
 
       ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
-   * Erstellen Sie ein untergeordnetes Element, das zum Header-Element gehört, indem Sie die Methode `createElement` des `Document`-Objekts aufrufen, und übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt. Wandeln Sie den Rückgabewert in `Element` um. Legen Sie anschließend einen Wert für das untergeordnete Element fest, indem Sie dessen Methode `appendChild` aufrufen, und übergeben Sie die Methode `createTextNode` des `Document`-Objekts als Argument. Geben Sie einen Zeichenfolgenwert an, der als Wert des untergeordneten Elements angezeigt werden soll. Hängen Sie abschließend das untergeordnete Element an das Header-Element an, indem Sie die Methode `appendChild` aufrufen, und übergeben Sie das Objekt des untergeordneten Elements als Argument. Die folgenden Code-Zeilen zeigen diese Anwendungslogik:
+   * Erstellen Sie ein untergeordnetes Element, das zum Kopfzeilenelement gehört, indem Sie die Methode `createElement` des `Document`Objekt aufrufen und ihr einen Zeichenfolgenwert übergeben, der den Namen des Elements darstellt. Wandeln Sie den Rückgabewert in `Element` um. Legen Sie anschließend einen Wert für das untergeordnete Element fest, indem Sie dessen Methode `appendChild` aufrufen und ihr die Methode `createTextNode` des `Document`-Objekts als Argument verwenden. Geben Sie einen Zeichenfolgenwert an, der als Wert des untergeordneten Elements angezeigt werden soll. Hängen Sie abschließend das untergeordnete Element an das Header-Element an, indem Sie die Methode `appendChild` aufrufen, und übergeben Sie das Objekt des untergeordneten Elements als Argument. Die folgenden Code-Zeilen zeigen diese Anwendungslogik:
 
       ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
    * Fügen Sie alle verbleibenden Elemente zum Header-Element hinzu, indem Sie den letzten Unterschritt für jedes Feld wiederholen, das im statischen Teil des Formulars erscheint (im Diagramm der XML-Datenquelle werden diese Felder in Abschnitt A angezeigt). (Siehe [Grundlagen zu Datenuntergruppen](#understanding-data-subgroups).)
-   * Erstellen Sie das Detailelement der XML-Datenquelle, indem Sie die Methode `createElement` des `Document`-Objekts aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die Methode `createElement`. Wandeln Sie den Rückgabewert in `Element` um. Hängen Sie anschließend das Detailelement an das Stammelement an, indem Sie die Methode `appendChild` des `root`-Objekts aufrufen, und übergeben Sie das Objekt des Detailelements als Argument. Die XML-Elemente, die an das Detailelement angehängt werden, entsprechen dem dynamischen Teil des Formulars. Die folgenden Code-Zeilen zeigen diese Anwendungslogik:
+   * Erstellen Sie das Detailelement der XML-Datenquelle, indem Sie die Methode `createElement` des `Document`-Objekts aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die Methode `createElement`. Wandeln Sie den Rückgabewert in `Element` um. Hängen Sie anschließend das Detailelement an das Stammelement an, indem Sie die Methode `appendChild` des `root`-Objekts aufrufen und ihr das Detailelement als Argument übergeben. Die XML-Elemente, die an das Detailelement angehängt werden, entsprechen dem dynamischen Teil des Formulars. Die folgenden Code-Zeilen zeigen diese Anwendungslogik:
 
       ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
-   * Erstellen Sie ein untergeordnetes Element, das zum Detailelement gehört, indem Sie die Methode `createElement` des `Document`-Objekts aufrufen, und übergeben einen Zeichenfolgenwert, der den Namen des Elements darstellt. Wandeln Sie den Rückgabewert in `Element` um. Legen Sie anschließend einen Wert für das untergeordnete Element fest, indem Sie dessen Methode `appendChild` aufrufen, und übergeben Sie die Methode `createTextNode` des `Document`-Objekts als Argument. Geben Sie einen Zeichenfolgenwert an, der als Wert des untergeordneten Elements angezeigt werden soll. Hängen Sie abschließend das untergeordnete Element an das Detailelement an, indem Sie die `appendChild`-Methode des Detailelements aufrufen und übergeben Sie das untergeordnete Element-Objekt als Argument. Die folgenden Code-Zeilen zeigen diese Anwendungslogik:
+   * Erstellen Sie ein untergeordnetes Element, das zum Detailelement gehört, indem Sie die Methode `createElement` des `Document`-Objekts aufrufen, und übergeben einen Zeichenfolgenwert, der den Namen des Elements darstellt. Wandeln Sie den Rückgabewert in `Element` um. Legen Sie anschließend einen Wert für das untergeordnete Element fest, indem Sie dessen Methode `appendChild` aufrufen und ihr die Methode `createTextNode` des `Document`-Objekts als Argument verwenden. Geben Sie einen Zeichenfolgenwert an, der als Wert des untergeordneten Elements angezeigt werden soll. Hängen Sie abschließend das untergeordnete Element an das Detailelement an, indem Sie die `appendChild`-Methode des Detailelements aufrufen und übergeben Sie das untergeordnete Element-Objekt als Argument. Die folgenden Code-Zeilen zeigen diese Anwendungslogik:
 
       ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
@@ -358,22 +358,22 @@ Führen Sie die folgenden Schritte aus, um ein Formular mit einem flexiblen Layo
    * Erstellen Sie ein `javax.xml.transform.Transformer`-Objekt, indem Sie die statische Methode `newInstance` des `javax.xml.transform.Transformer`-Objekts aufrufen.
    * Erstellen Sie ein `Transformer`-Objekt, indem Sie die Methode `newTransformer` des `TransformerFactory`-Objekts aufrufen.
    * Erstellen Sie ein Objekt `ByteArrayOutputStream`, indem Sie den Konstruktor verwenden.
-   * Erstellen Sie ein `javax.xml.transform.dom.DOMSource`-Objekt, indem Sie seinen Konstruktor verwenden und das `org.w3c.dom.Document`-Objekt übergeben, das in Schritt 1 erstellt wurde.
+   * Erstellen Sie ein `javax.xml.transform.dom.DOMSource`-Objekt, indem Sie seinen Konstruktor aufrufen und ihm das `org.w3c.dom.Document`-Objekt, das in Schritt 1 erstellt wurde, übergeben.
    * Erstellen Sie ein `javax.xml.transform.dom.DOMSource`-Objekt, indem Sie seinen Konstruktor verwenden und das `ByteArrayOutputStream`-Objekt übergeben.
-   * Füllen Sie das Java `ByteArrayOutputStream`-Objekt, indem Sie die Methode `transform` des `javax.xml.transform.Transformer`-Objekts aufrufen und die Objekte `javax.xml.transform.dom.DOMSource` und `javax.xml.transform.stream.StreamResult` übergeben.
-   * Erstellen Sie ein Byte-Array und weisen Sie diesem die Größe des `ByteArrayOutputStream`-Objekts zu.
+   * Füllen Sie das Java-Objekt vom Typ `ByteArrayOutputStream`, indem Sie die Methode `transform` des `javax.xml.transform.Transformer`-Objekts aufrufen und ihr die Objekte `javax.xml.transform.dom.DOMSource` und `javax.xml.transform.stream.StreamResult` übergeben.
+   * Erstellen Sie ein Byte-Array und weisen Sie ihm die Größe des `ByteArrayOutputStream`-Objekts zu.
    * Füllen Sie das Byte-Array, indem Sie die Methode `toByteArray` des `ByteArrayOutputStream`-Objekts aufrufen.
    * Erstellen Sie ein `BLOB`-Objekt mithilfe des Konstruktors, rufen Sie die zugehörige Methode `setBinaryData` auf und übergeben Sie das Byte-Array.
 
 1. Rendern von im Voraus ausgefüllten Formularen
 
-   Rufen Sie die Methode `renderPDFForm` des `FormsService`-Objekts auf und übergeben Sie die folgenden Werte:
+   Rufen Sie die Methode `renderPDFForm` des `FormsService`-Objekts auf und übergeben Sie ihr folgende Werte:
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs angibt, einschließlich der Dateinamenerweiterung.
    * Ein `BLOB`-Objekt mit Daten, die mit dem Formular zusammengeführt werden sollen. Stellen Sie sicher, dass Sie das `BLOB`-Objekt verwenden, das in den Schritten 1 und 2 erstellt wurde.
    * Ein `PDFFormRenderSpecc`-Objekt, das Laufzeitoptionen speichert. Weitere Informationen finden Sie unter [API-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Ein `URLSpec` -Objekt mit URI-Werten, die für den Forms-Service erforderlich sind.
-   * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter. Sie können `null` festlegen, wenn Sie keine Dateien an das Formular anhängen möchten.
+   * Ein `java.util.HashMap`-Objekt, in dem Dateianlagen gespeichert werden. Dies ist ein optionaler Parameter. Sie können `null` festlegen, wenn Sie keine Dateien an das Formular anhängen möchten.
    * Ein leeres `com.adobe.idp.services.holders.BLOBHolder`-Objekt, das von der Methode gefüllt wird. Damit wird das wiedergegebene PDF-Formular gespeichert.
    * Ein leeres `javax.xml.rpc.holders.LongHolder`-Objekt, das von der Methode gefüllt wird. (Dieses Argument speichert die Anzahl der Seiten im Formular).
    * Ein leeres `javax.xml.rpc.holders.StringHolder`-Objekt, das von der Methode gefüllt wird. (Dieses Argument speichert den Gebietsschemawert).
@@ -382,12 +382,12 @@ Führen Sie die folgenden Schritte aus, um ein Formular mit einem flexiblen Layo
    Die Methode `renderPDFForm` füllt das `com.adobe.idp.services.holders.FormsResultHolder`-Objekt, das als letzter Argumentwert mit einem Formulardaten-Stream übergeben wird, der in den Client-Webbrowser geschrieben werden muss.
 
    * Erstellen Sie ein `FormResult`-Objekt, indem Sie den Wert des Datenelements `value` des `com.adobe.idp.services.holders.FormsResultHolder`-Objekts abrufen.
-   * Erstellen Sie ein `BLOB`-Objekt mit Formulardaten durch Aufrufen der Methode `getOutputContent` des `FormsResult`-Objekts.
-   * Sie erhalten den Inhaltstyps des `BLOB`-Objekts, indem Sie seine `getContentType`-Methode aufrufen.
-   * Legen Sie den `javax.servlet.http.HttpServletResponse`-Inhaltstyp des Objekts durch Aufrufen seiner `setContentType`-Methode und die Übergabe des Inhaltstyps des `BLOB`-Objekts fest.
-   * Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Schreiben des Formulardaten-Streams in den Client-Webbrowser durch Aufrufen der `getOutputStream`-Methode des `javax.servlet.http.HttpServletResponse`-Objekts benutzt wird.
-   * Erstellen Sie ein Byte-Array und füllen Sie es durch Aufrufen der `getBinaryData`-Methode des `BLOB`-Objekts auf. Diese Aufgabe weist den Inhalt des `FormsResult`-Objekts zum Byte-Array zu.
-   * Rufen Sie die `write`-Methode des `javax.servlet.http.HttpServletResponse`-Objekts zum Senden des Formulardaten-Streams an den Client-Webbrowser auf. Übergeben Sie das Byte-Array an die `write`-Methode.
+   * Erstellen Sie ein `BLOB`-Objekt, das Formulardaten enthält, indem Sie die Methode `getOutputContent` des `FormsResult`-Objekts aufrufen.
+   * Ermitteln Sie den Inhaltstyp des `BLOB`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
+   * Legen Sie den Content-Typ des `javax.servlet.http.HttpServletResponse`-Objekts fest, indem Sie seine Methode `setContentType` aufrufen und den Content-Typ des `BLOB`-Objekts übergeben.
+   * Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Schreiben des Formulardaten-Stream in den Client-Webbrowser verwendet wird, indem Sie die Methode `getOutputStream` des `javax.servlet.http.HttpServletResponse`-Objekts aufrufen.
+   * Erstellen Sie ein Byte-Array und füllen Sie es auf, indem Sie die Methode `getBinaryData` des `BLOB`-Objekts aufrufen. Mit dieser Aufgabe wird dem Byte-Array der Inhalt des `FormsResult`-Objekts zugewiesen.
+   * Rufen Sie die Methode `write` des `javax.servlet.http.HttpServletResponse`-Objekts auf, um den Formulardaten-Stream an den Client-Webbrowser zu senden. Übergeben Sie das Byte-Array an die `write`-Methode.
 
    >[!NOTE]
    >

@@ -1,8 +1,8 @@
 ---
 title: Inhaltsbereitstellung
-seo-title: Inhaltsbereitstellung
+seo-title: Content Delivery
 description: Inhaltsbereitstellung
-seo-description: 'null'
+seo-description: null
 uuid: 1e7bea34-ca50-41ed-8295-fa182c27fa69
 contentOwner: User
 content-type: reference
@@ -11,8 +11,8 @@ discoiquuid: 3d65cc6b-5721-472f-a805-588d50f3571b
 exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 4%
+source-wordcount: '968'
+ht-degree: 3%
 
 ---
 
@@ -28,12 +28,12 @@ Dazu gehören die Verwendung von Assets, Site-Inhalten, CAAs-Inhalten (Over-the-
 
 >[!NOTE]
 >
->**Over-the-Air-** Inhalte können über ContentSync-Handler aus einem der oben genannten stammen. Sie kann zum Stapelgebungs- und Versand über Zips sowie zur Wartung von Updates oder Paketen verwendet werden.
+>**Over-the-Air-Inhalt** kann über ContentSync -Handler von einem der oben genannten stammen. Sie kann zum Stapelgebungs- und Versand über Zips sowie zur Wartung von Updates oder Paketen verwendet werden.
 
 Content Services bietet drei Hauptmaterialtypen:
 
 1. **Assets**
-1. **Verpackter HTML-Inhalt (HTML/CSS/JS)**
+1. **HTML-Inhalt verpackt (HTML/CSS/JS)**
 1. **Kanalunabhängiger Inhalt**
 
 ![chlimage_1-154](assets/chlimage_1-154.png)
@@ -64,7 +64,7 @@ Der Asset-Workflow sieht wie folgt aus:
    1. Asset oder Asset-Sammlung auswählen
    1. JSON-Rendering anpassen
 
-Das folgende Diagramm zeigt den **Asset-Referenz-Workflow**:
+Das folgende Diagramm zeigt die **Asset-Referenz-Workflow**:
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 
@@ -108,20 +108,20 @@ Die JSON stellt für jedes Bild eine URL bereit, die von Content Services für d
 
 Um die Binärdatei für das &quot;Warenkorb&quot;-Bild zu erhalten, wird die Client-Bibliothek erneut verwendet.
 
-## Verpackter HTML-Inhalt {#packaged-html-content}
+## Paketmäßiger HTML-Inhalt {#packaged-html-content}
 
-HTML-Inhalte werden für Kunden benötigt, die das Layout des Inhalts beibehalten müssen. Dies ist nützlich für native Anwendungen, die einen Webcontainer verwenden (z. B. eine Cordova-Webansicht), um den Inhalt anzuzeigen.
+HTML-Inhalte sind für Kunden erforderlich, die das Layout des Inhalts beibehalten müssen. Dies ist nützlich für native Anwendungen, die einen Webcontainer verwenden (z. B. eine Cordova-Webansicht), um den Inhalt anzuzeigen.
 
-AEM Content Services kann der Mobile App über die API HTML-Inhalte bereitstellen. Kunden, die AEM Inhalt als HTML verfügbar machen möchten, erstellen eine HTML-Seitentität, die auf die AEM Inhaltsquelle verweist.
+AEM Content Services kann der mobilen App über die API HTML-Inhalte bereitstellen. Kunden, die AEM Inhalt als HTML verfügbar machen möchten, erstellen eine HTML-Seitenentität, die auf die AEM Inhaltsquelle verweist.
 
 Die folgenden Optionen werden berücksichtigt:
 
-* **ZIP-Datei:** Damit die beste Möglichkeit besteht, das gesamte referenzierte Material der Seite ordnungsgemäß auf dem Gerät anzuzeigen - CSS, JavaScript, Assets usw. - wird in einer einzelnen komprimierten Datei mit der Antwort enthalten sein. Die Verweise auf der HTML-Seite werden angepasst, um einen relativen Pfad zu diesen Dateien zu verwenden.
+* **Zip-Datei:** Damit das gesamte referenzierte Material der Seite am besten auf dem Gerät angezeigt werden kann - CSS, JavaScript, Assets usw. - wird in einer einzelnen komprimierten Datei mit der Antwort enthalten sein. Die Verweise auf der HTML-Seite werden angepasst, um einen relativen Pfad zu diesen Dateien zu verwenden.
 * **Streaming:** Abrufen eines Manifests der erforderlichen Dateien von AEM. Verwenden Sie dann dieses Manifest, um alle Dateien (HTML, CSS, JS usw.) anzufordern. mit nachfolgenden Anfragen.
 
 ![chlimage_1-157](assets/chlimage_1-157.png)
 
-## Kanalunabhängiger Inhalt {#channel-independent-content}
+## Kanalunabhängige Inhalte {#channel-independent-content}
 
 Kanalunabhängiger Inhalt ist eine Möglichkeit, AEM Inhaltskonstrukte - wie z. B. Seiten - verfügbar zu machen, ohne sich um Layout, Komponenten oder andere kanalspezifische Informationen zu sorgen.
 

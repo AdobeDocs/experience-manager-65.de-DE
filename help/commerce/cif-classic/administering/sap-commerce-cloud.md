@@ -1,8 +1,8 @@
 ---
 title: SAP Commerce Cloud
-seo-title: SAP-Commerce Cloud
+seo-title: SAP Commerce Cloud
 description: Hier erfahren Sie, wie Sie AEM mit SAP Commerce Cloud nutzen.
-seo-description: Hier erfahren Sie, wie Sie AEM mit SAP Commerce Cloud nutzen.
+seo-description: Learn how to use AEM with SAP Commerce Cloud.
 uuid: cee1a781-fcba-461e-a0a4-c561a1dbcbf3
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
@@ -10,7 +10,7 @@ content-type: reference
 exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
 source-git-commit: 61691c300322edcdee33b121ca400e4c89256e45
 workflow-type: tm+mt
-source-wordcount: '1726'
+source-wordcount: '1714'
 ht-degree: 89%
 
 ---
@@ -52,9 +52,9 @@ Nach der Installation können Sie Ihre Instanz konfigurieren:
 
    >[!NOTE]
    >
-   >Verwenden Sie das Kontextmenü (in der Regel Rechtsklick), um `Create Solr sort` auszuwählen.
+   >Verwenden Sie das Kontextmenü (in der Regel Rechtsklick), um `Create Solr sort`.
    >
-   >Öffnen Sie für Hybris 5.0.0 die Registerkarte `Indexed Types`, doppelklicken Sie auf `ClothesVariantProduct` und dann auf die Registerkarte `SOLR Sort`.
+   >Öffnen Sie für Hybris 5.0.0 den `Indexed Types` Registerkarte, doppelklicken Sie auf `ClothesVariantProduct`, dann die Registerkarte `SOLR Sort`.
 
    ![chlimage_1-36](/help/sites-administering/assets/chlimage_1-36a.png)
 
@@ -98,8 +98,8 @@ Nach der Installation können Sie Ihre Instanz konfigurieren:
 1. **Speichern** Sie die Änderungen.
 1. Öffnen Sie **System**, **Facettensuche** und dann den **Indexervorgangsassistenten**. Starten Sie einen Cronjob:
 
-   * **Indexervorgang**:  `full`
-   * **Solr-Konfiguration**:  `Sample Solr Config for Clothes`
+   * **Indexvorgang**: `full`
+   * **Solr-Konfiguration**: `Sample Solr Config for Clothes`
 
 ## Konfigurieren der Katalogversion {#configure-the-catalog-version}
 
@@ -368,12 +368,12 @@ So entfernen Sie mindestens ein Produkt aus dem Katalog:
 
    [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
 
-1. Entfernen Sie das Produkt in der hybris-Konsole. Verwenden Sie die Option **Genehmigungsstatus ändern** , um den Status auf `unapproved` festzulegen. Das Produkt wird aus dem Live-Feed entfernt.
+1. Entfernen Sie das Produkt in der hybris-Konsole. Option verwenden **Genehmigungsstatus ändern** , um den Status auf `unapproved`. Das Produkt wird aus dem Live-Feed entfernt.
 
    Beispiel:
 
    * Öffnen Sie die Seite [http://localhost:9001/productcockpit](http://localhost:9001/productcockpit).
-   * Wählen Sie den Katalog `Outdoors Staged` aus.
+   * Katalog auswählen `Outdoors Staged`
    * Suchen Sie nach `Cajamara`
    * Wählen Sie dieses Produkt aus und ändern Sie den Genehmigungsstatus in `unapproved`
 
@@ -386,12 +386,12 @@ So entfernen Sie mindestens ein Produkt aus dem Katalog:
 
       [http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris](http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris)
 
-   * Rollout des Katalogs `Hybris Base`
+   * Rollout `Hybris Base` Katalog
    * Öffnen Sie:
 
       [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
 
-   * Das Produkt `Cajamara` wurde aus der Kategorie `Bike` entfernt
+   * Die `Cajamara` Das Produkt wurde aus dem `Bike` category
 
 1. So instanziieren Sie das Produkt:
 
@@ -408,7 +408,7 @@ So fügen Sie einen Auftragsverlauf zum [Client Context](/help/sites-developing/
 
 1. Öffnen Sie die [Client Context-Designseite](/help/sites-administering/client-context.md) auf eine der folgenden Arten:
 
-   * Öffnen Sie eine Seite zur Bearbeitung und öffnen Sie dann den Client-Kontext mit **Strg-Alt-c** (Windows) oder **control-option-c** (Mac). Klicken Sie in der linken oberen Ecke von Client Context auf das Stiftsymbol, um **die ClientContext-Designseite zu öffnen**.
+   * Öffnen Sie eine Seite zur Bearbeitung und öffnen Sie dann den Client-Kontext mit **Strg+Alt+C** (Fenster) oder **control-option-c** (Mac). Klicken Sie in der linken oberen Ecke von Client Context auf das Stiftsymbol, um **die ClientContext-Designseite zu öffnen**.
    * Navigieren Sie direkt zu [http://localhost:4502/etc/clientcontext/default/content.html](http://localhost:4502/etc/clientcontext/default/content.html).
 
 1. [Fügen Sie die Komponente **Auftragsverlauf** zur](/help/sites-administering/client-context.md#adding-a-property-component) Komponente **Warenkorb** von Client Context hinzu.
@@ -432,8 +432,7 @@ So fügen Sie einen Auftragsverlauf zum [Client Context](/help/sites-developing/
    >
    >  Die Kampagne besteht aus einem Erlebnis.
    >
-   >* Klicken Sie auf das Segment ([http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html](http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html)).
-      >
-      >
-   * Das Segment basiert auf der Eigenschaft **Order History Property**.
+   >* Klicken Sie auf das Segment ([http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html](http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html))
+   >
+   >* Das Segment basiert auf der Eigenschaft **Order History Property**.
 

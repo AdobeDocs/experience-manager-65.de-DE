@@ -1,8 +1,8 @@
 ---
 title: Verwalten von Sammlungen
-seo-title: Verwalten von Sammlungen
+seo-title: Managing Collections
 description: Sammlungen stellen einen klar definierten Behälter dar, der mit Inhalten wie Artikeln oder Bannern gefüllt ist, die dem Titelthema entsprechen. Auf dieser Seite erfahren Sie mehr.
-seo-description: Sammlungen stellen einen klar definierten Behälter dar, der mit Inhalten wie Artikeln oder Bannern gefüllt ist, die dem Titelthema entsprechen. Auf dieser Seite erfahren Sie mehr.
+seo-description: Collections represent a well defined bucket filled with content such as articles or banners that suits the cover's theme. Follow this page to learn more.
 uuid: 1d2e9769-d2cc-4d43-a428-e962a51eb5d0
 contentOwner: User
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: 64c6d198-983f-4a52-9c83-560206363868
 exl-id: 0b4aa1a4-449a-4882-8f7c-3ceea6ac7f83
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 7%
+source-wordcount: '797'
+ht-degree: 6%
 
 ---
 
@@ -25,33 +25,30 @@ ht-degree: 7%
 
 Inhaltsverwaltungsaktionen sind die Bausteine, mit denen Inhalte in einer Anwendung erstellt und verwaltet werden können. Die folgenden Aktionen werden für Inhalte in der Anwendung ausgeführt.
 
-## Überblick über Sammlungen {#collections-overview}
+## Sammlungen - Überblick {#collections-overview}
 
-Sammlungen stellen einen klar definierten *Bucket* dar, der mit Inhalten wie Artikeln oder Bannern gefüllt ist, die dem Titelthema entsprechen.
+Sammlungen stellen eine genau definierte *Behälter* mit Inhalten wie Artikeln oder Bannern gefüllt, die dem Titelthema entsprechen.
 
 >[!NOTE]
 >
 >Weitere Informationen zu den folgenden Themen in AEM Mobile-Apps finden Sie in den folgenden Ressourcen der Online-Hilfe:
 >
 >* [Betrachtungen zum Entwurf](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
-   >
-   >
-* [Verwalten von Sammlungen](https://helpx.adobe.com/digital-publishing-solution/help/creating-collections.html)
-
 >
-
+>* [Verwalten von Sammlungen](https://helpx.adobe.com/digital-publishing-solution/help/creating-collections.html)
+>
 
 
 ## Erstellen von Sammlungen {#creating-a-collection}
 
 Der allgemeine Workflow zum Erstellen einer Kollektion lautet wie folgt:
 
-1. Wählen Sie in der Seitenleiste **Mobile** aus.
+1. Auswählen **Mobile** über die Seitenleiste aus.
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog aus.
-1. Klicken Sie oben rechts in der Kachel **Sammlungen verwalten** auf den Abwärtspfeil.
+1. Klicken Sie oben rechts im **Verwalten von Sammlungen** Kachel.
 1. Führen Sie jeden Schritt des Assistenten durch, um mit der Erstellung des neuen Artikels fortzufahren.
 1. Wenn Sie bereit sind, klicken Sie auf **Erstellen**.
-1. Ihr neuer Artikel wird in der Kachel **Sammlungen verwalten** angezeigt.
+1. Ihr neuer Artikel wird im **Verwalten von Sammlungen** Kachel.
 
 ![chlimage_1-1](assets/chlimage_1-1.gif)
 
@@ -66,9 +63,9 @@ Vorhandene On-Demand-Inhalte für Mobilgeräte können von Mobile On-Demand heru
 Der Workflow zum Importieren einer neuen Sammlung
 
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog aus.
-1. Klicken Sie oben rechts in der Kachel **Sammlungen verwalten** auf den Abwärtspfeil und wählen Sie Sammlungen importieren aus.
-1. Klicken Sie im Dialogfeld auf **Sammlungen importieren** und dann auf Schließen.
-1. Ihre On-Demand-Sammlungen für Mobilgeräte werden jetzt in der Kachel **Sammlungen verwalten** angezeigt.
+1. Klicken Sie oben rechts im **Verwalten von Sammlungen** und wählen Sie Sammlungen importieren aus.
+1. Klicken **Sammlungen importieren** im Dialogfeld und dann Schließen.
+1. Ihre On-Demand-Sammlungen für Mobilgeräte werden jetzt im **Verwalten von Sammlungen** Kachel.
 
 >[!CAUTION]
 >
@@ -81,22 +78,22 @@ Verwenden Sie den integrierten AEM Drag &amp; Drop-Editor, um einen Artikel hinz
 Der Workflow zum Bearbeiten einer Sammlung:
 
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog aus.
-1. Wählen Sie in der Kachel **Sammlungen verwalten** einen AEM bezogenen Artikel aus.
+1. Wählen Sie einen AEM Artikel aus dem **Verwalten von Sammlungen** Kachel.
 1. Klicken Sie in der Listenansicht auf die markierte Sammlung, um sie im Inhaltseditor zu öffnen.
 1. Verwenden Sie den Inhaltseditor, um Sammlungsinhalte (Manuskripte, Bilder, Text usw.) zu ziehen.
 
-### Anzeigen und Bearbeiten der Metadaten in einer Sammlung {#viewing-and-editing-the-metadata-within-a-collection}
+### Anzeigen und Bearbeiten von Metadaten in einer Sammlung {#viewing-and-editing-the-metadata-within-a-collection}
 
 Sammlungen verfügen über zahlreiche Eigenschaften wie Titel, Beschreibungen und Bilder. Diese Aktion wird verwendet, um solche Eigenschaften anzuzeigen und zu ändern. Optional können diese Änderungen beim Speichern in Mobile On-Demand hochgeladen werden.
 
 Allgemeiner Workflow zum Anzeigen/Bearbeiten einer Sammlung:
 
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog aus.
-1. Wählen Sie eine Sammlung aus der Kachel **Sammlungen verwalten** aus.
+1. Wählen Sie eine Sammlung aus der **Verwalten von Sammlungen** Kachel.
 
 1. Wählen Sie in der Aktionsleiste **Eigenschaften** aus.
 1. Zeigen Sie alle verfügbaren Metadaten für diesen Artikel an.
-1. Bearbeiten Sie die Metadaten nach Bedarf und klicken Sie danach auf **Speichern** .
+1. Bearbeiten Sie die Metadaten nach Bedarf und klicken Sie auf **Speichern** wann geschehen.
 1. Optional können Sie die Änderungen sofort in Mobile On-Demand hochladen.
 
 ## Hochladen einer Sammlung {#uploading-a-collection}
@@ -105,10 +102,10 @@ Mit der Aktion &quot;Hochladen&quot;wird der ausgewählte Inhalt kopiert und zu 
 
 Allgemeiner Workflow zum Hochladen einer Sammlung:
 
-1. Wählen Sie unter **Mobile** Ihre Mobile On-Demand-App aus dem Katalog aus.
-1. Wählen Sie in der Kachel **Sammlungen verwalten** einen Artikel zum Hochladen auf Mobile On-Demand aus.
+1. Von **Mobile** wählen Sie Ihre Mobile On-Demand-App aus dem Katalog aus.
+1. Im **Verwalten von Sammlungen** -Kachel einen Artikel zum Hochladen auf Mobile On-Demand auswählen.
 1. Fügen Sie bei Bedarf in der Listenansicht weitere Sammlungen hinzu.
-1. Wählen Sie in der Aktionsleiste **Upload** aus und klicken Sie dann im Dialogfeld auf Hochladen .
+1. Auswählen **Hochladen** Klicken Sie in der Aktionsleiste auf Hochladen im Dialogfeld.
 1. Ihre Sammlung(en) wurde(n) jetzt in Mobile On-Demand hochgeladen.
 
 ## Löschen von Sammlungen {#deleting-a-collection}
@@ -118,9 +115,9 @@ Durch diesen Vorgang wird die ausgewählte Sammlung aus Mobile On-Demand und opt
 Der allgemeine Workflow zum Löschen einer Sammlung:
 
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog aus.
-1. Wählen Sie den zu löschenden Artikel in der Kachel **Sammlungen verwalten** aus.
+1. Wählen Sie den zu löschenden Artikel im **Verwalten von Sammlungen** Kachel.
 1. Stellen Sie sicher, dass es in der Liste ausgewählt ist (wählen Sie nach Bedarf andere aus, die gelöscht werden sollen).
-1. Klicken Sie in der Aktionsleiste auf **Löschen** .
+1. Klicken **Löschen** in der Aktionsleiste aus.
 1. Überprüfen Sie, ob Sie sowohl AEM als auch Mobile On-Demand löschen möchten.
 1. Klicken Sie auf **Löschen**.
 1. Ihre Sammlung wird jetzt aus der Liste entfernt.
@@ -139,7 +136,7 @@ Sammlungen sind im Wesentlichen eine Kategorie verwandter Inhalte: Sie sammeln I
 1. Wählen Sie einen zuvor hochgeladenen Artikel (oder Banner/Sammlung) aus.
 1. Wählen Sie in der Aktionsleiste Hinzufügen zu aus.
 1. Wählen Sie im Dialogfeld eine zuvor hochgeladene Sammlung aus.
-1. Klicken Sie auf **Update** , um der Sammlung Inhalte hinzuzufügen.
+1. Klicken **Aktualisieren** , um Inhalte zur Sammlung hinzuzufügen.
 
 ![chlimage_1-2](assets/chlimage_1-2.gif)
 

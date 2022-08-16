@@ -2,7 +2,7 @@
 title: PhoneGap
 seo-title: PhoneGap
 description: PhoneGap
-seo-description: Auf dieser Seite erhalten Sie Informationen zu den ersten Schritten mit dem Authoring für Adobe PhoneGap Enterprise in AEM.
+seo-description: Follow this page to get started with authoring for Adobe PhoneGap Enterprise in AEM.
 uuid: 256a9f66-4c66-434c-be79-01be3c02d688
 contentOwner: msm-service
 content-type: reference
@@ -11,8 +11,8 @@ discoiquuid: d9ab4d38-1c17-477d-9341-02bda80f3c23
 exl-id: 930a6950-150a-4670-ab48-250b655132fb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 17%
+source-wordcount: '201'
+ht-degree: 18%
 
 ---
 
@@ -32,7 +32,7 @@ Für den Start eines neuen AEM Mobile-App-Erlebnisses müssen mehrere Rollen kod
 
 ## Authoring von PhoneGap-Anwendungen {#authoring-phonegap-applications}
 
-Ein ***AEM-Autor* (oder *Marketer*)**kann die nativen Vorlagen und Komponenten verwenden, um Seiten hinzuzufügen und zu bearbeiten, Komponenten per Drag-and-Drop zu verschieben und Medien aller DAM-Typen hinzuzufügen, einschließlich Bildern, Videos und Textfragmenten (Inhaltsfragmente).
+Ein ***AEM-Autor* (oder *Marketer*)**ist in der Lage, die nativen Vorlagen und Komponenten zum Hinzufügen und Bearbeiten von Seiten, zum Ziehen und Ablegen von Komponenten und zum Hinzufügen von Medien aller Typen aus dem DAM, einschließlich Bildern, Videos und Textfragmenten (Inhaltsfragmente), zu verwenden.
 
 Erste Schritte finden Sie in den folgenden Ressourcen:
 
@@ -44,7 +44,7 @@ Erste Schritte finden Sie in den folgenden Ressourcen:
 * [Erstellen einer neuen AEM Mobile-App mit dem Assistenten zum Erstellen](/help/mobile/phonegap-create-new-app.md)
 * [Vorhandene Hybrid-App importieren](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
-Weitere Informationen zu **Content Services** finden Sie unter [Übersicht über Content Services](/help/mobile/develop-content-as-a-service.md) .
+Weitere Informationen **Content Services**, siehe [Übersicht über Content Services](/help/mobile/develop-content-as-a-service.md) um zu beginnen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

@@ -1,8 +1,8 @@
 ---
 title: Ihr Posteingang
-seo-title: Ihr Posteingang
+seo-title: Your Inbox
 description: Sie können Benachrichtigungen aus verschiedenen Bereichen von AEM erhalten, beispielsweise Benachrichtigungen zu Arbeitselementen oder Aufgaben bezüglich Aktionen, die Sie für Seiteninhalte durchführen müssen.
-seo-description: Sie können Benachrichtigungen aus verschiedenen Bereichen von AEM erhalten, beispielsweise Benachrichtigungen zu Arbeitselementen oder Aufgaben bezüglich Aktionen, die Sie für Seiteninhalte durchführen müssen.
+seo-description: You can receive notifications from various areas of AEM such as notification about work items or tasks that represent actions that you need to perform on page content.
 uuid: e7ba9150-957d-4f84-a570-2f3d83792472
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,21 +13,21 @@ docset: aem65
 exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 97%
+source-wordcount: '581'
+ht-degree: 96%
 
 ---
 
-# Ihr Posteingang {#your-inbox}
+# Ihr Posteingang{#your-inbox}
 
 Sie können Benachrichtigungen aus verschiedenen Bereichen von AEM erhalten, beispielsweise Benachrichtigungen zu Arbeitselementen oder Aufgaben bezüglich Aktionen, die Sie für Seiteninhalte durchführen müssen.
 
 Diese Benachrichtigungen werden je nach Benachrichtigungstyp in zwei verschiedene Posteingänge zugestellt:
 
 * Ein Posteingang, in dem die Benachrichtigungen empfangen werden, die Sie im Rahmen von Abonnements erhalten. Dieser wird im folgenden Abschnitt beschrieben.
-* Ein spezieller Posteingang für Workflow-Elemente wird im Dokument [An Workflows teilnehmen](/help/sites-classic-ui-authoring/classic-workflows-participating.md) beschrieben.
+* Ein spezieller Posteingang für Workflow-Elemente wird im Abschnitt [Teilnehmen an Workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md) Dokument.
 
-## Viewing Your Notifications {#viewing-your-notifications}
+## Anzeigen von Benachrichtigungen {#viewing-your-notifications}
 
 So zeigen Sie Ihre Benachrichtigungen an:
 
@@ -103,7 +103,7 @@ Um über nur über die angegebene Seite Benachrichtigungen zu erhalten, setzen S
 
 1. Klicken Sie auf **OK**, um die Konfiguration zu speichern.
 
-## Verarbeiten von Benachrichtigungen  {#processing-your-notifications}
+## Verarbeiten von Benachrichtigungen {#processing-your-notifications}
 
 Wenn Sie ausgewählt haben, dass Sie Benachrichtigungen in Ihrem AEM-Posteingang erhalten, werden die Benachrichtigungen an das Postfach versendet. Sie können [Ihre Benachrichtigungen anzeigen](#viewing-your-notifications) und anschließend die gewünschten Benachrichtigungen auswählen, um:
 

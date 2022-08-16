@@ -1,8 +1,8 @@
 ---
 title: Verbindung mit SQL-Datenbanken
-seo-title: Verbindung mit SQL-Datenbanken
+seo-title: Connecting to SQL Databases
 description: Greifen Sie auf eine externe SQL-Datenbank zu, damit Ihre AEM-Anwendungen mit den Daten interagieren können
-seo-description: Greifen Sie auf eine externe SQL-Datenbank zu, damit Ihre AEM-Anwendungen mit den Daten interagieren können
+seo-description: Access an external SQL database to so that your AEM applications can interact with the data
 uuid: 0af0ed08-9487-4c37-87ce-049c9b4c1ea2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
 exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '948'
 ht-degree: 83%
 
 ---
@@ -25,7 +25,7 @@ Greifen Sie auf eine externe SQL-Datenbank zu, damit Ihre CQ-Anwendungen mit den
 1. [Konfigurieren Sie einen JDBC-Datenquellen-Poolanbieter](#configuring-the-jdbc-connection-pool-service).
 1. [Rufen Sie ein Datenquellenobjekt ab und erstellen Sie die Verbindung in Ihrem Code](#connecting-to-the-database).
 
-## Bündelung des JDBC-Datenbanktreibers  {#bundling-the-jdbc-database-driver}
+## Bündelung des JDBC-Datenbanktreibers {#bundling-the-jdbc-database-driver}
 
 Einige Datenbankanbieter stellen JDBC-Treiber in einem OSGi-Paket bereit, z. B. [MySQL](https://www.mysql.com/downloads/connector/j/). Wenn der JDBC-Treiber für Ihre Datenbank nicht als OSGi-Bundle verfügbar ist, rufen Sie die Treiber-JAR-Datei ab und verpacken Sie sie in einem OSGi-Paket. Das Bundle muss die Pakete exportieren, die für die Interaktion mit dem Datenbankserver erforderlich sind. Das Bundle muss außerdem die Pakete importieren, die es referenziert.
 
@@ -40,7 +40,7 @@ Das Plug-in ermittelt automatisch, welche Pakete importiert werden sollen, und l
 
 Entscheiden Sie anhand Ihrer Kenntnis des Quellcodes, welche Lösung geeignet ist. Sie können auch beide Lösungen ausprobieren und Tests durchführen, um sie zu validieren.
 
-### POM, das hsqldb.jar verpackt  {#pom-that-bundles-hsqldb-jar}
+### POM, das hsqldb.jar verpackt {#pom-that-bundles-hsqldb-jar}
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0"
@@ -90,7 +90,7 @@ Die folgenden Links öffnen die Downloadseiten für einige gängige Datenbankpro
 * [Oracle](https://www.oracle.com/technetwork/database/features/jdbc/index-091264.html)
 * [IBM DB2](https://www-01.ibm.com/support/docview.wss?uid=swg27007053)
 
-### Konfiguration des JDBC Connections Pool-Dienstes  {#configuring-the-jdbc-connection-pool-service}
+### Konfiguration des JDBC Connections Pool-Dienstes {#configuring-the-jdbc-connection-pool-service}
 
 Fügen Sie eine Konfiguration für den JDBC Connections Pool-Dienst hinzu, der mithilfe des JDBC-Treibers Datenquellenobjekte erstellt. Ihr Anwendungscode verwendet diesen Dienst, um das Objekt abzurufen und eine Verbindung zur Datenbank herzustellen.
 
@@ -102,13 +102,13 @@ Die folgenden Eigenschaften sind bei der Konfiguration eines Pool-Verbindungsdie
 
 * JDBC Driver Class (`jdbc.driver.class`): Die zu verwendende Java-Klasse, die die java.sql.Driver-Schnittstelle implementiert. Beispiel: `org.hsqldb.jdbc.JDBCDriver`. Der Datentyp ist `String`.
 
-* JDBC Connection URI ( `jdbc.connection.uri`): Die URL der Datenbank, die zum Erstellen der Verbindung verwendet werden soll, z. B. `jdbc:hsqldb:hsql//10.36.79.223:9001/mydb`. Das Format der URL muss mit der getConnection-Methode der java.sql.DriverManager-Klasse verwendbar sein. Der Datentyp ist `String`.
+* JDBC-Verbindungs-URI ( `jdbc.connection.uri`): Die URL der Datenbank, die zum Erstellen der Verbindung verwendet werden soll, z. B. `jdbc:hsqldb:hsql//10.36.79.223:9001/mydb`. Das Format der URL muss mit der getConnection-Methode der java.sql.DriverManager-Klasse verwendbar sein. Der Datentyp ist `String`.
 
 * Username (`jdbc.username`): Der zur Authentifizierung beim Datenbankserver zu verwendende Benutzername. Der Datentyp ist `String`.
 
 * Password (`jdbc.password`): Das für die Authentifizierung des Benutzers zu verwendende Kennwort. Der Datentyp ist `String`.
 
-* Validierungsanfrage ( `jdbc.validation.query`): Die SQL-Anweisung, mit der überprüft werden soll, ob die Verbindung erfolgreich hergestellt wurde, z. B. `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`. Der Datentyp ist `String`.
+* Überprüfungsabfrage ( `jdbc.validation.query`): Die SQL-Anweisung, die zum Überprüfen der erfolgreichen Verbindung verwendet werden soll, z. B. `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`. Der Datentyp ist `String`.
 
 * Readonly By Default (default.readonly): Wählen Sie diese Option aus, wenn die Verbindung nur Lesezugriff gewähren soll. Der Datentyp ist `Boolean`.
 * Autocommit By Default (`default.autocommit`): Wählen Sie diese Option aus, um für jeden SQL-Befehl, der an die Datenbank gesendet wird, eine separate Transaktion zu erstellen. Jede Transaktion wird automatisch übergeben. Wählen Sie diese Option nicht aus, wenn Sie Transaktionen in Ihrem Code explizit übergeben. Der Datentyp ist `Boolean`.
@@ -121,7 +121,7 @@ Die folgenden Eigenschaften sind bei der Konfiguration eines Pool-Verbindungsdie
 
 * Additional Service Properties (`datasource.svc.properties`): Eine Gruppe von Name/Wert-Paaren, die Sie an die Verbindungs-URL anhängen möchten. Der Datentyp ist `String[]`.
 
-Der JDBC Connections Pool-Dienst ist eine Factory. Wenn Sie daher einen `sling:OsgiConfig` -Knoten verwenden, um den Verbindungsdienst zu konfigurieren, muss der Name des Knotens die Factory-Service-PID gefolgt von *`-alias`* enthalten. Der Alias, den Sie verwenden, muss unter allen Konfigurationsknoten für diese PID eindeutig sein. Ein Beispiel für einen Knotennamen ist `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool`.
+Der JDBC Connections Pool-Dienst ist eine Factory. Wenn Sie daher eine `sling:OsgiConfig` -Knoten, um den Verbindungsdienst zu konfigurieren, muss der Name des Knotens die Factory-Service-PID enthalten, gefolgt von *`-alias`*. Der Alias, den Sie verwenden, muss unter allen Konfigurationsknoten für diese PID eindeutig sein. Ein Beispiel für einen Knotennamen ist `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool`.
 
 ![chlimage_1-7](assets/chlimage_1-7a.png)
 
@@ -131,7 +131,7 @@ In Ihrem Java-Code verwenden Sie den DataSourcePool-Dienst, um ein `javax.sql.Da
 
 Das folgende JSP-Codebeispiel ruft eine Instanz der hsqldbds Datenquelle ab, führt eine einfache SQL-Abfrage durch und zeigt die Anzahl der Ergebnisse an, die zurückgegeben werden.
 
-#### JSP-Code, der eine Datenbankabfrage durchführt  {#jsp-that-performs-a-database-lookup}
+#### JSP-Code, der eine Datenbankabfrage durchführt {#jsp-that-performs-a-database-lookup}
 
 ```java
 <%@include file="/libs/foundation/global.jsp"%><%
@@ -170,7 +170,6 @@ Das folgende JSP-Codebeispiel ruft eine Instanz der hsqldbds Datenquelle ab, fü
 >[!NOTE]
 >
 >Wenn die getDataSource-Methode einen Ausnahmefehler meldet, da die Datenquelle nicht gefunden wird, stellen Sie sicher, dass die Connections Pool-Dienstkonfiguration korrekt ist. Überprüfen Sie die Eigenschaftsnamen, die Werte und die Datentypen.
-
 
 >[!NOTE]
 >

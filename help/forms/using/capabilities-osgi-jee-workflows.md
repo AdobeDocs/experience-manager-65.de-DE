@@ -4,7 +4,7 @@ description: Aktionen und Funktionen formularorientierter AEM-Workflows in OSGi-
 contentOwner: khsingh
 exl-id: 505b8988-b2b3-4222-b3cb-9b3c6259fdd2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 100%
 
@@ -56,7 +56,7 @@ Sie können den AEM-Posteingang verwenden, um formularzentrierte AEM-Workflows u
   <tr>
    <td>Neuzuweisen von Aufgaben</td>
    <td>Unterstützt</td>
-   <td>Unterstützt</td>
+   <td>Unterstützt </td>
   </tr>
   <tr>
    <td>Anlagen auf Feldebene für adaptive Formulare</td>
@@ -76,17 +76,17 @@ Sie können den AEM-Posteingang verwenden, um formularzentrierte AEM-Workflows u
   <tr>
    <td>Warteschlangen (freigegebene persönliche Warteschlange, Aufgaben aus der Warteschlange abrufen)</td>
    <td>Unterstützt</td>
-   <td>Unterstützt</td>
+   <td>Unterstützt </td>
   </tr>
   <tr>
    <td>Abwesenheitsbenachrichtigung</td>
    <td>Unterstützt</td>
-   <td>Unterstützt</td>
+   <td>Unterstützt </td>
   </tr>
     <tr>
    <td>Anpassen von Benutzeroberflächenelementen</td>
    <td>Unterstützt</td>
-   <td>Unterstützt</td>
+   <td>Unterstützt </td>
   </tr>
   <tr>
    <td>Zuweisung einer Aufgabe zu mehreren Benutzern</td>
@@ -115,7 +115,7 @@ Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Form
   <tr>
    <td>Integration mit anderen AEM-Lösungen</td>
    <td>Unterstützt</td>
-   <td>Unterstützt</td>
+   <td>Unterstützt </td>
   </tr>
   <tr>
    <td>Freihändige Unterschrift</td>
@@ -130,27 +130,27 @@ Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Form
   <tr>
    <td>Definieren der Aufgabenpriorität</td>
    <td>Unterstützt</td>
-   <td>Unterstützt</td>
+   <td>Unterstützt </td>
   </tr>
   <tr>
    <td>Zeitüberschreitung für eine Aufgabe nach Fälligkeitsdatum</td>
    <td>Unterstützt</td>
-   <td>Unterstützt</td>
+   <td>Unterstützt </td>
   </tr>
   <tr>
    <td>Schleifen innerhalb des Workflows</td>
    <td>Unterstützt</td>
-   <td>Unterstützt</td>
+   <td>Unterstützt </td>
   </tr>
   <tr>
    <td>Verantwortlichen dynamisch wählen </td>
    <td>Unterstützt</td>
-   <td>Unterstützt</td>
+   <td>Unterstützt </td>
   </tr>
   <tr>
    <td>Verwendung benutzerdefinierter Metadaten</td>
    <td>Unterstützt</td>
-   <td>Unterstützt</td>
+   <td>Unterstützt </td>
   </tr>
   <tr>
    <td>E-Signatur (Adobe Sign)</td>
@@ -175,27 +175,27 @@ Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Form
   <tr>
    <td>Integration mit Correspondence Management</td>
    <td>Unterstützt</td>
-   <td>Unterstützt</td>
+   <td>Unterstützt </td>
   </tr>
    <tr>
    <td>Gateways, NO WAIT </td>
    <td>Unterstützt</td>
-   <td>Unterstützt</td>
+   <td>Unterstützt </td>
   </tr>
    <tr>
    <td>Variablen zum Speichern von Daten </td>
    <td>Unterstützt</td>
-   <td>Unterstützt</td>
+   <td>Unterstützt </td>
   </tr>
   <tr>
    <td>ODER-Teilung und UND-Teilung</td>
    <td>Unterstützt</td>
-   <td>Unterstützt</td>
+   <td>Unterstützt </td>
   </tr>
   <tr>
    <td>Verwenden eines Avatars</td>
    <td>Unterstützt</td>
-   <td>Unterstützt</td>
+   <td>Unterstützt </td>
   </tr>
   <tr>
    <td>Senden einer E-Mail am Ende des Workflows</td>
@@ -205,7 +205,7 @@ Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Form
   <tr>
    <td>Abrufen eines Webdiensts aus einem Workflow</td>
    <td>Unterstützt</td>
-   <td>Unterstützt</td>
+   <td>Unterstützt </td>
   </tr>
   <tr>
    <td>Digitale Signatur</td>
@@ -245,32 +245,32 @@ Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Form
   <tr>
    <td>Mobile App für adaptive Formulare</td>
    <td>Unterstützt</td>
-   <td>Unterstützt</td>
+   <td>Unterstützt </td>
   </tr>
   <tr>
    <td>Assembler-Service</td>
    <td>Unterstützt</td>
-   <td>Unterstützt</td>
+   <td>Unterstützt </td>
   </tr>
   <tr>
    <td>PDF Generator-Dienst</td>
    <td>Unterstützt</td>
-   <td>Unterstützt</td>
+   <td>Unterstützt </td>
   </tr>
   <tr>
    <td>Formularservice</td>
    <td>Unterstützt</td>
-   <td>Unterstützt</td>
+   <td>Unterstützt </td>
   </tr>
   <tr>
    <td>Ausgabe-Service</td>
    <td>Unterstützt</td>
-   <td>Unterstützt</td>
+   <td>Unterstützt </td>
   </tr>
   <tr>
    <td>Document Assurance</td>
    <td>Unterstützt</td>
-   <td>Unterstützt </td>
+   <td>Unterstützt  </td>
   </tr>
   <tr>
    <td>Skript ausführen</td>
@@ -280,7 +280,7 @@ Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Form
   <tr>
    <td>Assembler</td>
    <td>Unterstützt</td>
-   <td>Unterstützt</td>
+   <td>Unterstützt </td>
   </tr>  
   <tr>
    <td>HTML5-Formulare, interaktive PDF-Formulare, Formularsatz</td>
@@ -295,7 +295,7 @@ Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Form
   <tr>
    <td>Digitale Signatur</td>
    <td>Unterstützt</td>
-   <td>Unterstützt</td>
+   <td>Unterstützt </td>
   </tr>
   <tr>
    <td>Startpoint-Kategorien</td>
@@ -396,7 +396,7 @@ Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Form
 
 ## Unterschiede zwischen den Funktionen von AEM Inbox und AEM Forms-App {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Zwei der bekanntesten Möglichkeiten, um einen formularzentrierten Workflow zu starten, sind die Verwendung des [AEM Posteingangs](../../forms/using/manage-applications-inbox.md) und der Mobile App von AEM Forms. Die Funktionen von AEM Inbox und AEM Forms-App sind jedoch unterschiedlich. Der AEM-Posteingang funktioniert nur mit [formularzentrierten Workflows](../../forms/using/aem-forms-workflow.md), während die Mobile App von AEM Forms sowohl mit formularzentrierten Workflows als auch mit der Prozessverwaltung funktioniert.
+Zwei der bekanntesten Möglichkeiten zum Starten eines formularbasierten Workflows sind der [AEM-Posteingang](../../forms/using/manage-applications-inbox.md) und die Mobile App von AEM Forms. Die Funktionen von AEM Inbox und AEM Forms-App sind jedoch unterschiedlich. Der AEM-Posteingang funktioniert nur mit [formularzentrierten Workflows](../../forms/using/aem-forms-workflow.md), während die Mobile App von AEM Forms sowohl mit formularzentrierten Workflows als auch mit der Prozessverwaltung funktioniert.
 
 Die folgende Tabelle zeigt die Funktionen von AEM Inbox und der AEM Forms App:
 
@@ -410,12 +410,12 @@ Die folgende Tabelle zeigt die Funktionen von AEM Inbox und der AEM Forms App:
   <tr>
    <td><p>Starten einer Formularanwendung</p> </td>
    <td><p>Unterstützt</p> </td>
-   <td><p>Unterstützt</p> </td>
+   <td><p>Unterstützt </p> </td>
   </tr>
   <tr>
    <td><p>Senden von Aufgaben</p> </td>
    <td><p>Unterstützt</p> </td>
-   <td><p>Unterstützt</p> </td>
+   <td><p>Unterstützt </p> </td>
   </tr>
   <tr>
    <td><p>Aufgaben delegieren</p> </td>
@@ -430,17 +430,17 @@ Die folgende Tabelle zeigt die Funktionen von AEM Inbox und der AEM Forms App:
   <tr>
    <td><p>Anlagen auf Aufgabenebene hinzufügen</p> </td>
    <td><p>Unterstützt</p> </td>
-   <td><p>Unterstützt</p> </td>
+   <td><p>Unterstützt </p> </td>
   </tr>
   <tr>
    <td><p>Anlagen auf Aufgabenebene anzeigen</p> </td>
    <td><p>Unterstützt</p> </td>
-   <td><p>Unterstützt</p> </td>
+   <td><p>Unterstützt </p> </td>
   </tr>
   <tr>
    <td><p>Anlagen auf Feldebene hinzufügen</p> </td>
    <td><p>Unterstützt</p> </td>
-   <td><p>Unterstützt</p> </td>
+   <td><p>Unterstützt </p> </td>
   </tr>
   <tr>
    <td><p>Kalenderansicht anzeigen</p> </td>
@@ -450,7 +450,7 @@ Die folgende Tabelle zeigt die Funktionen von AEM Inbox und der AEM Forms App:
   <tr>
    <td><p>Hinzufügen von Kommentaren</p> </td>
    <td><p>Unterstützt</p> </td>
-   <td><p>Unterstützt</p> </td>
+   <td><p>Unterstützt </p> </td>
   </tr>
  </tbody>
 </table>

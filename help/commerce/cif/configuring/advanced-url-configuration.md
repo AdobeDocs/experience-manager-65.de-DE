@@ -12,7 +12,7 @@ exl-id: 0125021a-1c00-4ea3-b7fb-1533b7b9f4f2
 source-git-commit: 014731aa9c5c4d7d419ff8b037142b47e7b7da01
 workflow-type: tm+mt
 source-wordcount: '910'
-ht-degree: 65%
+ht-degree: 92%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 65%
 
 >[!NOTE]
 >
-> Suchmaschinenoptimierung (SEO) ist zu einem wichtigen Thema für viele Marketer geworden. Deshalb müssen SEO-Thematiken bei vielen AEM-Projekten berücksichtigt werden. Bitte lesen [Best Practices für SEO und URL-Verwaltung](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html) für weitere Informationen.
+> Suchmaschinenoptimierung (SEO) ist zu einem wichtigen Thema für viele Marketer geworden. Deshalb müssen SEO-Thematiken bei vielen AEM-Projekten berücksichtigt werden. Weitere Informationen finden Sie unter [Best Practices für SEO und URL-Verwaltung](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html).
 
-[AEM-CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) stellen erweiterte Konfigurationen zum Anpassen der URLs für Produkt- und Kategorieseiten bereit. Viele Implementierungen passen diese URLs für die Suchmaschinen-Optimierung (SEO) an. Im folgenden Video wird beschrieben, wie Sie den `UrlProvider`-Service und die Funktionen der [Sling-Zuordnung](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) konfigurieren, um die URLs für Produkt- und Kategorieseiten anzupassen.
+Die [AEM-CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) ermöglichen erweiterte Konfigurationen zum Anpassen der URLs für Produkt- und Kategorieseiten. Viele Implementierungen passen diese URLs für die Suchmaschinenoptimierung (SEO) an. Im folgenden Video wird beschrieben, wie Sie den `UrlProvider`-Service und die Funktionen der [Sling-Zuordnung](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) konfigurieren können, um die URLs für Produkt- und Kategorieseiten anzupassen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
@@ -52,7 +52,7 @@ Im Fall des [Venia Referenz-Shops](https://github.com/adobe/aem-cif-guides-venia
 * `{{url_path}}` wird durch den `url_path` des Produkts ersetzt, z. B. `venia-bottoms/venia-pants/lenora-crochet-shorts`
 * `{{variant_sku}}` wird durch die aktuell ausgewählte Variante ersetzt, z. B. `VP09-KH-S`
 
-Seit `url_path` veraltet ist, verwenden die vordefinierten Produkt-URL-Formate die `url_rewrites` und wählen Sie das Segment mit den meisten Pfadsegmenten als Alternative aus, wenn die `url_path` ist nicht verfügbar.
+Da der `url_path` veraltet ist, verwenden die vordefinierten Formate für Produkt-URLs die `url_rewrites` eines Produkts und wählen unter ihnen das Format mit den meisten Pfadsegmenten als Alternative, wenn der `url_path` nicht verfügbar ist.
 
 Mit den obigen Beispieldaten sieht eine mit dem Standard-URL-Format formatierte Produktvarianten-URL wie `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S` aus.
 
@@ -77,17 +77,17 @@ Mit den obigen Beispieldaten sieht eine Kategorieseiten-URL, die mit dem Standar
 
 ### Spezifische Kategorie-/Produktseiten {#specific-pages}
 
-Es ist möglich, [mehrere Kategorie- und Produktseiten](multi-template-usage.md) nur für eine bestimmte Untergruppe von Kategorien oder Produkten eines Katalogs.
+Es ist möglich, [mehrere Kategorie- und Produktseiten](multi-template-usage.md) für nur eine bestimmte Untermenge von Kategorien oder Produkten eines Katalogs zu erstellen.
 
-Die `UrlProvider` ist vorkonfiguriert, um Deep-Links zu solchen Seiten in Autorenebeneninstanzen zu generieren. Dies ist für Bearbeiter nützlich, die eine Site im Vorschaumodus durchsuchen, zu einer bestimmten Produkt- oder Kategorieseite navigieren und zurück in den Bearbeitungsmodus wechseln, um die Seite zu bearbeiten.
+Die `UrlProvider` ist vorkonfiguriert, um Deep-Links zu solchen Seiten in Autorenebeneninstanzen zu generieren. Dies ist für Editoren nützlich, die eine Site im Vorschaumodus durchsuchen, zu einer bestimmten Produkt- oder Kategorieseite navigieren und zurück in den Bearbeitungsmodus wechseln, um die Seite zu bearbeiten.
 
-Auf Veröffentlichungsebeneninstanzen hingegen sollten Katalogseiten-URLs stabil gehalten werden, um beispielsweise Gewinne bei Suchmaschinenrankings nicht zu verlieren. Aufgrund dieser Veröffentlichungsstufe rendern Instanzen standardmäßig keine Deep-Links zu bestimmten Katalogseiten. Um dieses Verhalten zu ändern, muss die Variable _CIF-URL-Provider-spezifische Seitenstrategie_ kann so konfiguriert werden, dass immer bestimmte Seiten-URLs generiert werden.
+Auf Veröffentlichungsebeneninstanzen hingegen sollten Katalogseiten-URLs stabil gehalten werden, um beispielsweise Gewinne bei Suchmaschinenrankings nicht zu verlieren. Deshalb rendern Instanzen der Veröffentlichungsebene standardmäßig keine Deep-Links von bestimmten Katalogseiten. Um dieses Verhalten zu ändern, muss die Variable _CIF-URL-Provider-spezifische Seitenstrategie_ kann so konfiguriert werden, dass immer bestimmte Seiten-URLs generiert werden.
 
 ## Benutzerdefinierte URL-Formate {#custom-url-format}
 
-Um ein benutzerdefiniertes URL-Format bereitzustellen, kann ein Projekt entweder die [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) oder [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) -Dienstschnittstelle verwenden und die Implementierung als OSGi-Dienst registrieren. Diese Implementierungen ersetzen, sofern verfügbar, das konfigurierte, vordefinierte Format. Wenn mehrere Implementierungen registriert sind, ersetzt die Implementierung mit dem höheren Service-Rang die Implementierung(en) durch das niedrigere Service-Rang.
+Um ein benutzerdefiniertes URL-Format bereitzustellen, kann ein Projekt die Service-Schnittstelle [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) oder [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) implementieren und die Implementierung als OSGi-Service registrieren. Diese Implementierungen ersetzen das konfigurierte, vordefinierte Format, sofern verfügbar. Wenn mehrere Implementierungen registriert sind, ersetzt die Implementierung mit dem höheren Serviceranking die Implementierung(en) mit dem niedrigeren Serviceranking.
 
-Die Implementierungen des benutzerdefinierten URL-Formats müssen zwei Methoden implementieren, um eine URL aus den angegebenen Parametern zu erstellen und eine URL zu analysieren, um dieselben Parameter zurückzugeben.
+Die Implementierungen des benutzerdefinierten URL-Formats müssen ein Methodenpaar implementieren, um eine URL aus den angegebenen Parametern zu erstellen bzw. eine URL zu analysieren, um dieselben Parameter zurückzugeben.
 
 ## Kombinieren mit Sling-Zuordnungen {#sling-mapping}
 
@@ -99,7 +99,7 @@ URL-Neuschreibungen können auch mithilfe des AEM Dispatcher-HTTP-Servers mit de
 
 ## Beispiel
 
-Das Projekt [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia) enthält Beispielkonfigurationen, um die Verwendung benutzerdefinierter URLs für Produkt- und Kategorienseiten zu demonstrieren. Dadurch kann jedes Projekt individuelle URL-Muster für Produkt- und Kategorieseiten entsprechend ihren SEO-Anforderungen einrichten. Es wird eine Kombination aus CIF-`UrlProvider` und Sling-Zuordnungen verwendet, wie oben beschrieben.
+Das Projekt [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia) enthält Beispielkonfigurationen, um die Verwendung benutzerdefinierter URLs für Produkt- und Kategorienseiten zu demonstrieren. So können für jedes Projekt individuelle URL-Strukturen für Produkt- und Kategorieseiten entsprechend den SEO-Anforderungen eingerichtet werden. Es wird eine Kombination aus CIF-`UrlProvider` und Sling-Zuordnungen verwendet, wie oben beschrieben.
 
 >[!NOTE]
 >

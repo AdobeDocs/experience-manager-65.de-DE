@@ -1,8 +1,8 @@
 ---
-title: Inhaltseinblick
-seo-title: 'Inhaltseinblick '
+title: 'Inhaltseinblick '
+seo-title: Content Insight
 description: Content Insight bietet Informationen zur Seitenleistung mithilfe von Webanalysen und SEO-Empfehlungen.
-seo-description: Content Insight bietet Informationen zur Seitenleistung mithilfe von Webanalysen und SEO-Empfehlungen.
+seo-description: Content Insight provides information about page performance using web analytics and SEO recommendation
 uuid: 32f5b37c-2a82-462a-9f0a-c19bed46e198
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ discoiquuid: 60f980fd-049e-43c1-8b5d-60a8279b357a
 exl-id: 187f3cde-a0db-4c02-9e8b-08272987a67d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 89%
+source-wordcount: '521'
+ht-degree: 92%
 
 ---
 
-# Inhaltseinblick {#content-insight}
+# Inhaltseinblick{#content-insight}
 
 Inhaltseinblicke bieten Informationen über die Leistung der Seite mithilfe von Webanalyse und SEO-Empfehlungen. Verwenden Sie Inhaltseinblicke, um Entscheidungen darüber zu treffen, wie Sie Seiten ändern, oder um zu erfahren, wie frühere Entscheidungen die Leistung geändert haben. Für jede Seite, die Sie bearbeiten, können Sie Inhaltseinblicke öffnen, um die Seite zu analysieren.
 
@@ -50,7 +50,7 @@ Weitere Informationen finden Sie unter [Ändern des Berichtszeitraums](/help/sit
 
 >[!NOTE]
 >
->Für Inhaltseinblick-Berichte muss Ihr Administrator AEM mit SiteCatalyst, Target und BrightEdge integriert haben. Siehe [Integration in SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integration in Adobe Target](/help/sites-administering/target.md) und [Integration mit BrightEdge](/help/sites-administering/brightedge.md).
+>Für Inhaltseinblick-Berichte muss Ihr Administrator AEM mit SiteCatalyst, Target und BrightEdge integriert haben. Siehe [Integration mit SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integration mit Adobe Target](/help/sites-administering/target.md)und [Integration mit BrightEdge](/help/sites-administering/brightedge.md).
 
 ## Der Ansichtsbericht {#the-views-report}
 

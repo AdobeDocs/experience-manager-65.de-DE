@@ -1,8 +1,8 @@
 ---
-title: 'Verwenden von Bedingungen zum Ausblenden '
-seo-title: 'Verwenden von Bedingungen zum Ausblenden '
+title: Verwenden von Bedingungen zum Ausblenden
+seo-title: Using Hide Conditions
 description: Bedingungen zum Ausblenden können verwendet werden, um festzustellen, ob eine Komponentenressource gerendert wird.
-seo-description: Bedingungen zum Ausblenden können verwendet werden, um festzustellen, ob eine Komponentenressource gerendert wird.
+seo-description: Hide conditions can be used to determine if a component resource is rendered or not.
 uuid: 93b4f450-1d94-4222-9199-27b5f295f8e6
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,16 +12,16 @@ discoiquuid: 104d1c64-b9b3-40f5-8f9b-fe92d9daaa1f
 exl-id: 65f5d5e1-ac11-4a3c-8a51-ce06a741c264
 source-git-commit: baf2c6339a554743b6cc69486fb77b121048ba4b
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '628'
 ht-degree: 98%
 
 ---
 
-# Verwenden von Bedingungen zum Ausblenden   {#using-hide-conditions}
+# Verwenden von Bedingungen zum Ausblenden {#using-hide-conditions}
 
 Bedingungen zum Ausblenden können verwendet werden, um festzustellen, ob eine Komponentenressource gerendert wird. Etwa wenn ein Vorlagenautor die Kernkomponente [Listenkomponente](https://helpx.adobe.com/experience-manager/core-components/using/list.html) im [Vorlageneditor](/help/sites-authoring/templates.md) konfiguriert und beschließt, die Optionen zum Erstellen der Liste auf Basis untergeordneter Seiten zu deaktivieren. Durch das Deaktivieren dieser Option im Designdialogfeld wird eine Eigenschaft so festgelegt, dass beim Rendern der Listenkomponente die Bedingung zum Ausblenden ausgewertet und die Option zum Anzeigen untergeordneter Seiten nicht angezeigt wird.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Dialogfelder können aufgrund der zahlreichen Optionen sehr komplex für die Benutzer sein, die möglicherweise nur einen kleinen Teil der ihnen zur Verfügung stehenden Optionen nutzen. Dies kann dazu führen, dass die Benutzeroberfläche unübersichtlich wird.
 
@@ -31,7 +31,7 @@ Durch die Verwendung von Bedingungen zum Ausblenden haben Administratoren, Entwi
 >
 >Das Ausblenden einer Ressource auf Grundlage eines Ausdrucks ersetzt nicht die ACL-Berechtigungen. Der Inhalt bleibt bearbeitbar, wird aber einfach nicht angezeigt.
 
-## Implementierung und Nutzungsdetails   {#implementation-and-usage-details}
+## Implementierung und Nutzungsdetails {#implementation-and-usage-details}
 
 `com.adobe.granite.ui.components.FilteringResourceWrapper` ist verantwortlich für das Filtern der Ressourcen basierend auf dem Vorhandensein und dem Wert der Eigenschaft `granite:hide` für das zu filternde Feld. Die Implementierung `/libs/cq/gui/components/authoring/dialog/dialog.jsp` umfasst eine Instanz von `FilteringResourceWrapper.`
 
@@ -57,7 +57,7 @@ Beachten Sie beim Definieren Ihrer Bedingung zum Ausblenden Folgendes:
 
 ## Beispiel {#example}
 
-Beispiele für Bedingungen zum Ausblenden finden sich überall in AEM und insbesondere in den [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html). etwa der [Listenkernkomponente](https://helpx.adobe.com/experience-manager/core-components/using/list.html).
+Beispiele für Bedingungen zum Ausblenden finden sich überall in AEM und insbesondere in den [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). etwa der [Listenkernkomponente](https://helpx.adobe.com/experience-manager/core-components/using/list.html).
 
 [Mit dem Vorlageneditor](/help/sites-authoring/templates.md) kann der Vorlagenautor im Design-Dialogfeld festlegen, welche Optionen der Listenkomponente dem Seitenautor zur Verfügung stehen. Optionen wie die, ob die Liste eine statische Liste, eine Liste mit untergeordneten Seiten, eine Liste getaggter Seiten usw. sein darf, können aktiviert oder deaktiviert werden.
 

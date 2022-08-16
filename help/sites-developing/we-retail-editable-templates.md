@@ -1,8 +1,8 @@
 ---
 title: Testen bearbeitbarer Vorlagen in We.Retail
-seo-title: Testen bearbeitbarer Vorlagen in We.Retail
+seo-title: Trying out Editable Templates in We.Retail
 description: Testen bearbeitbarer Vorlagen in We.Retail
-seo-description: 'null'
+seo-description: null
 uuid: 0d4b97cb-efcc-4312-a783-eae3ecd6f889
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
 exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '483'
 ht-degree: 86%
 
 ---
@@ -23,14 +23,14 @@ Mit bearbeitbaren Vorlagen können nicht mehr nur Entwickler Vorlagen erstellen 
 
 Alle Seiten in We.Retail basieren auf bearbeitbaren Vorlagen, sodass auch Benutzer, die keine Entwickler sind, die Vorlagen anpassen können.
 
-## Testen  {#trying-it-out}
+## Testen {#trying-it-out}
 
 1. Bearbeiten Sie die Seite „Ausrüstung“ der Sprach-Master-Verzweigung.
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
 1. Beachten Sie, dass die Modusauswahl keinen Designmodus mehr aufweist. Alle Seiten für We.Retail basieren auf bearbeitbaren Vorlagen. Um das Design bearbeitbarer Vorlagen zu ändern, müssen diese im Vorlagen-Editor bearbeitet werden.
-1. Wählen Sie im Menü **Seiteninformationen** **Vorlage bearbeiten** aus.
+1. Aus dem **Seiteninformationen** Menüauswahl **Vorlage bearbeiten**.
 1. Sie bearbeiten nun die Vorlage der Hero-Seite.
 
    Der Strukturmodus der Seite ermöglicht es Ihnen, die Struktur der Vorlage zu ändern. Dazu gehören beispielsweise die Komponenten, die im Layout-Container zulässig sind.
@@ -71,8 +71,8 @@ Alle Seiten in We.Retail basieren auf bearbeitbaren Vorlagen, sodass auch Benutz
 
    Der **Layout-Modus** kann wie auf einer normalen Seite verwendet werden, um das Layout für die Vorlage zu definieren.
 
-## Weitere Informationen  {#more-information}
+## Weitere Informationen {#more-information}
 
-Weitere Informationen zu bearbeitbaren Vorlagen finden Sie im Authoring-Dokument [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) oder im Entwicklerdokument Seite [Vorlagen - Bearbeitbar](/help/sites-developing/page-templates-editable.md) .
+Weitere Informationen finden Sie im Authoring-Dokument . [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) oder der Seite mit dem Entwicklerdokument [Vorlagen - bearbeitbar](/help/sites-developing/page-templates-editable.md) für vollständige technische Details zu bearbeitbaren Vorlagen.
 
-Sie können sich darüber hinaus eingehender mit [Kernkomponenten](/help/sites-developing/we-retail-core-components.md) befassen. Eine Übersicht über die Funktionen der Kernkomponenten und das Entwicklerdokument [Entwickeln von Kernkomponenten](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) finden Sie im Dokument [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) für die Erstellung eines technischen Überblicks.
+Sie können sich darüber hinaus eingehender mit [Kernkomponenten](/help/sites-developing/we-retail-core-components.md) befassen. Siehe Authoring-Dokument [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) für einen Überblick über die Funktionen der Kernkomponenten und das Entwicklerdokument [Entwickeln von Kernkomponenten](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) für einen technischen Überblick.

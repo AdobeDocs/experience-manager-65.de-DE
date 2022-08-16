@@ -2,7 +2,7 @@
 title: AEM Adobe PhoneGap
 seo-title: AEM Adobe PhoneGap
 description: AEM kann mit PhoneGap integriert werden, damit Sie mithilfe der AEM-Seiten problemlos Apps erstellen können. Auf dieser Seite erhalten Sie Informationen zu den ersten Schritten mit Adobe PhoneGap Enterprise.
-seo-description: AEM kann mit PhoneGap integriert werden, damit Sie mithilfe der AEM-Seiten problemlos Apps erstellen können. Auf dieser Seite erhalten Sie Informationen zu den ersten Schritten mit Adobe PhoneGap Enterprise.
+seo-description: AEM integrates with PhoneGap so that you can easily create apps using AEM pages. Follow this page to get started with Adobe PhoneGap Enterprise.
 uuid: bdd90cda-2489-4763-a90a-9c409d6e68ae
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -12,8 +12,8 @@ discoiquuid: fbcdea8a-72e9-431b-9c32-dc02d4cdb9c8
 exl-id: d989e235-5993-4738-8523-5b9a5f6bf712
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 15%
+source-wordcount: '488'
+ht-degree: 13%
 
 ---
 
@@ -25,15 +25,15 @@ ht-degree: 15%
 
 AEM kann mit PhoneGap integriert werden, damit Sie mithilfe der AEM-Seiten problemlos Apps erstellen können. PhoneGap ermöglicht dem Benutzer das Erstellen von Dienstprogramm-Apps, mit denen der Benutzer mit dem Inhalt arbeiten kann. „Content Sync“ ermöglicht Ihnen, versionierte Archive der Seiten für das Bundling mit Apps zu erstellen. 
 
-In der Regel ist ein ***AEM Administrator*** für das Hinzufügen einer neuen Anwendung zum AEM Mobile-Katalog verantwortlich, entweder durch Erstellen einer neuen App mithilfe des Erstellungsassistenten oder durch Importieren einer bestehenden Anwendung.
+In der Regel wird ein ***AEM Administrator*** ist für das Hinzufügen einer neuen Anwendung zum AEM Mobile-Katalog verantwortlich, entweder durch Erstellen einer neuen App mithilfe des Erstellungsassistenten oder durch Importieren einer bestehenden Anwendung.
 
-Von hier aus kann ein ***AEM-Autor*** (oder *Marketer*) jetzt die nativen Vorlagen und Komponenten verwenden, um Seiten hinzuzufügen und zu bearbeiten, Komponenten per Drag-and-Drop zu verschieben und Medien aller Typen aus dem DAM hinzuzufügen, einschließlich Bildern, Videos und Textfragmenten (Inhaltsfragmente).
+Von hier aus können Sie ***AEM-Autor*** (oder *Marketer*) können jetzt die nativen Vorlagen und Komponenten verwenden, um Seiten hinzuzufügen und zu bearbeiten, Komponenten per Drag-and-Drop zu verschieben und Medien aller Typen aus dem DAM hinzuzufügen, einschließlich Bildern, Videos und Textfragmenten (Inhaltsfragmente).
 
-Die wahre Stärke von AEM Mobile besteht darin, dass ein *savvy* ***AEM-Entwickler*** benutzerdefinierte Webvorlagen und -komponenten erweitern und erstellen kann, damit der *AEM-Autor* attraktive mobile Erlebnisse erstellen kann. Diese Vorlagen und Komponenten sind nicht nur für die App-Welt optimiert. kommunizieren jedoch sowohl mit dem Gerät als auch mit dem AEM-Server (einem beliebigen Remote-Server) mit kanalübergreifenden Service-Endpunkten.
+Die wahre Macht AEM Mobile ist, dass ein *savvy* ***AEM Entwickler*** kann benutzerdefinierte Webvorlagen und -komponenten erweitern und erstellen, um die *AEM-Autor* um ein angenehmes und ansprechendes mobiles Erlebnis zu schaffen. Diese Vorlagen und Komponenten sind nicht nur für die App-Welt optimiert. kommunizieren jedoch sowohl mit dem Gerät als auch mit dem AEM-Server (einem beliebigen Remote-Server) mit kanalübergreifenden Service-Endpunkten.
 
 >[!NOTE]
 >
->Wenn die *AEM-Autoreninstanz* glaubt, dass die App bereit ist, können sie ihre Stakeholder zunächst dazu anhalten, die App mit **[Adobe Verify](/help/mobile/phonegap-mobile-quickstart.md)** (verfügbar im AppStore und im PlayStore) zur Überprüfung und Genehmigung herunterzuladen. Sobald der Benutzer die grüne Ampel erhalten hat, kann er diese neuen oder aktualisierten Inhalte direkt über das AEM Mobile ContentSync-Release-Management-Dashboard für Inhalte an seine Benutzer freigeben. Eine Person kann eine beliebige Anzahl von Rollen übernehmen, das liegt an Ihnen und Ihren Governance-Richtlinien.
+>Wenn die *AEM-Autor* glaubt, dass die App bereit ist, können sie zunächst von ihren Stakeholdern herunterladen lassen, mit **[Überprüfung der Adobe](/help/mobile/phonegap-mobile-quickstart.md)** (sowohl im AppStore als auch im PlayStore verfügbar) zur Überprüfung und Genehmigung. Sobald der Benutzer die grüne Ampel erhalten hat, kann er diese neuen oder aktualisierten Inhalte direkt über das AEM Mobile ContentSync-Release-Management-Dashboard für Inhalte an seine Benutzer freigeben. Eine Person kann eine beliebige Anzahl von Rollen übernehmen, das liegt an Ihnen und Ihren Governance-Richtlinien.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -47,7 +47,7 @@ Bevor Sie mit AEM Mobile arbeiten und die Schritte in diesem Erste-Schritte-Hand
 
 ## QuickLinks für Autoren {#quicklinks-for-authors}
 
-Weitere Informationen zu den Rollen und Zuständigkeiten eines Autors finden Sie unter [Authoring für Adobe PhoneGap Enterprise in AEM](/help/mobile/phonegap.md) .
+Siehe [Authoring für Adobe PhoneGap Enterprise in AEM](/help/mobile/phonegap.md) , um mehr über die Rollen und Zuständigkeiten eines Autors zu erfahren.
 
 ## QuickLinks für Entwickler {#quicklinks-for-developers}
 
@@ -57,8 +57,8 @@ In den folgenden Kapiteln erfahren Sie mehr über erweiterte Konzepte wie die Wh
 
 ## QuickLinks für Administratoren {#quicklinks-for-administrators}
 
-Informationen zum Einrichten und Verwalten Ihrer Mobile App finden Sie unter [Verwalten von Inhalten für Adobe PhoneGap Enterprise mit AEM](/help/mobile/administer-phonegap.md).
+Siehe [Verwalten von Inhalten für Adobe PhoneGap Enterprise mit AEM](/help/mobile/administer-phonegap.md) , um Ihre Mobile App einzurichten und zu verwalten.
 
 >[!NOTE]
 >
->Mithilfe hybrider mobiler Technologien können Sie Rich-Mobile-Apps erstellen, die mit AEM Mobile offline und online ausgeführt werden.*Tatsächlich entscheiden sich viele Kunden dafür, Apps zu erstellen, die überprüfen, wann sie online oder offline sind, und sich entsprechend zu verhalten.*
+>Mithilfe hybrider mobiler Technologien können Sie Rich-Mobile-Apps erstellen, die *offline und online ausführen* mit AEM Mobile verwenden, entscheiden sich viele Kunden dafür, Apps zu erstellen, die prüfen, wann sie online oder offline sind, und sich entsprechend verhalten.

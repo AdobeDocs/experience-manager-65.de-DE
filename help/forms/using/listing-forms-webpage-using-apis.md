@@ -8,13 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
-workflow-type: ht
+exl-id: cfca6656-d2db-476d-a734-7a1d1e44894e
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 100%
 
 ---
-
 
 # Auflisten von Formularen auf einer Webseite mithilfe von APIs {#listing-forms-on-a-web-page-using-apis}
 
@@ -175,6 +175,6 @@ orderings:[{"name" :“lastModifiedDate“:”order”:”ASC”}]
 * [Auflisten von Formularen auf einer Webseite mithilfe von APIs](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Verwenden der Komponente „Entwurf und Übermittlung“](/help/forms/using/draft-submission-component.md)
 * [Anpassen der Speicherung von Entwürfen und gesendeten Formularen](/help/forms/using/draft-submission-component.md)
-* [Beispiel zur Integration der Komponente „Entwurf und Übermittlung“ in die Datenbank](/help/forms/using/integrate-draft-submission-database.md)
-* [Anpassen von Vorlagen für Formularportalkomponenten](/help/forms/using/customizing-templates-forms-portal-components.md)
+* [Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung in die Datenbank](/help/forms/using/integrate-draft-submission-database.md)
+* [Anpassen von Vorlagen für Forms Portal-Komponenten](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Einführung in das Veröffentlichen von Formularen in einem Portal](/help/forms/using/introduction-publishing-forms.md)

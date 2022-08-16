@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8a07dddf-1281-45ac-a55e-4333b860a261
 exl-id: 6b57d00e-5ba0-41ee-8497-49ecfec5b9ed
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1608'
 ht-degree: 100%
 
@@ -53,7 +53,7 @@ Dieser Cache-Modus gewährleistet, dass die neuesten Ressourcen verwendet werden
 
 **Nicht konditionale Zwischenspeicherung angeben**
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Forms“.
+1. Klicken Sie in der Administration-Console auf Services > Forms.
 1. Wählen Sie unter „Einstellungen für die Forms-Cache-Steuerung“ die Option „Bedingungslos“ aus und klicken Sie auf „Speichern“.
 
 ### Den Cacheprüfpunkt verwenden {#use-the-cache-check-point}
@@ -69,14 +69,14 @@ Verwenden Sie diesen Cache-Modus in Produktionsumgebungen mit hoher Leistung, in
 
 **Die Cacheprüfpunkt-Zeit zurücksetzen**
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Forms“.
+1. Klicken Sie in der Administration-Console auf Services > Forms.
 1. Klicken Sie unter „Einstellungen für die Forms-Cache-Steuerung“ auf die Option „Cacheprüfpunkt“.
 
 **Den Inhalt des Zwischenspeichers zurücksetzen**
 
 Sie können den Inhalt des Zwischenspeichers jederzeit löschen. Nach dem Zurücksetzen des Zwischenspeichers ist die erste Anforderung für jedes Formular langsamer, da der Forms-Dienst eine vollständige Wiedergabe ausführt und neue Inhalte für den Zwischenspeicher erstellt.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Forms“.
+1. Klicken Sie in der Administration-Console auf Services > Forms.
 1. Klicken Sie unter „Einstellungen für die Formularcache-Steuerung“ auf die Option „Cache zurücksetzen“.
 
 ## Cache-Einstellungen konfigurieren {#configuring-cache-settings}

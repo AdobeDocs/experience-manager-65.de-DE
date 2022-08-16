@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 761e7909-43ba-4642-bcfc-8d76f139b9a3
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '7163'
 ht-degree: 100%
 
@@ -177,7 +177,7 @@ Sie können Dateimuster verwenden, um Folgendes einzuschließen:
 
    * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
    * &amp;ast;.[dD][Aa]&#39;port&#39;
-   * &amp;ast;.[Xx][Mm][Ll]
+   * &amp;ast;.[Xx][MM][Ll]
 
 Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](configuring-watched-folder-endpoints.md#about-file-patterns).
 
@@ -249,7 +249,7 @@ Administratoren können den Dateityp angeben, von dem ein Dienst aufgerufen werd
 
    * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
    * &amp;ast;.[dD][Aa]&#39;port&#39;
-   * &amp;ast;.[Xx][Mm][Ll]
+   * &amp;ast;.[Xx][MM][Ll]
 
 Der Administrator kann das Dateimuster für den Ausgabeordner definieren, in dem die Ergebnisse gespeichert werden sollen. Für die Ausgabeordner (Ergebnis, Beibehalten und Fehler; „result“, „preserve“ und „failure“) kann der Administrator jedes der folgenden Dateimuster angeben:
 

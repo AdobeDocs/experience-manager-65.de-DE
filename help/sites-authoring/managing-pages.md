@@ -34,7 +34,7 @@ Sie können Ihre Inhalte auch mithilfe von [Ordnern](#creating-a-new-folder) org
 
 Die Struktur einer Website kann als Baumstruktur gesehen werden, die die Inhaltsseiten enthält. Die Namen dieser Inhaltsseiten werden zur Bildung der URLs verwendet. Der Titel wird zusammen mit dem Seiteninhalt angezeigt.
 
-Im folgenden Beispiel sehen Sie ein Beispiel von der Site &quot;We.Retail&quot;, auf die eine Shortseite für Wanderungen ( `desert-sky-shorts`) aufgerufen wird:
+Im Folgenden sehen Sie ein Beispiel von der Site &quot;We.Retail&quot;, bei der eine Seite mit Kurzwürfen ( `desert-sky-shorts`) aufgerufen wird:
 
 * Autorenumgebung
    `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
@@ -42,7 +42,7 @@ Im folgenden Beispiel sehen Sie ein Beispiel von der Site &quot;We.Retail&quot;,
 * Veröffentlichungsumgebung
    `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-Je nach Konfiguration Ihrer Instanz kann die Verwendung von `/content` in der Veröffentlichungsumgebung optional sein.
+Je nach Konfiguration Ihrer Instanz verwenden Sie `/content` kann in der Veröffentlichungsumgebung optional sein.
 
 ```xml
  /content
@@ -90,7 +90,7 @@ Beim Erstellen einer neuen Seite gibt es zwei Schlüsselfelder:
    * Mit diesem Wert wird der URI generiert.
    * Benutzereingaben sind für dieses Feld optional. Wenn kein Name angegeben ist, wird er vom Titel abgeleitet. Weitere Informationen finden Sie unter [Seitennamen-Einschränkungen und Best Practices](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices).
 
-#### Seitennamen-Einschränkungen und Best Practices {#page-name-restrictions-and-best-practices}
+#### Einschränkungen und Best Practices bei der Seitenbenennung {#page-name-restrictions-and-best-practices}
 
 Der **Seitentitel** und der **Seitenname** können separat erstellt werden, sind aber verwandt:
 
@@ -127,7 +127,7 @@ Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den
 | Titel | Abgeleiteter Name |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;*ç+ | sc---c-.html |
+| SC%&amp;&#42;ç+ | sc---c-.html |
 
 #### Name {#name}
 
@@ -145,7 +145,7 @@ Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben
 
 In AEM sind bestimmte Seitentypen in Vorlagen gespeichert. Eine Vorlage wird als Basis für jede neue erstellte Seite verwendet.
 
-Die Vorlage definiert die Seitenstruktur, u. a. eine Miniaturansicht und andere Eigenschaften. Beispielsweise könnten Sie unterschiedliche Vorlagen für Produktseiten, Sitemaps und Kontaktangaben verwenden. Vorlagen bestehen aus [Komponenten](#components).
+Die Vorlage definiert die Seitenstruktur, u. a. eine Miniatur und andere Eigenschaften. Beispielsweise könnten Sie unterschiedliche Vorlagen für Produktseiten, Sitemaps und Kontaktangaben verwenden. Vorlagen bestehen aus [Komponenten](#components).
 
 Im Lieferumfang von AEM sind diverse Vorlagen enthalten. Welche Vorlagen verfügbar sind, hängt von der jeweiligen Website ab. Die wichtigsten Felder sind:
 
@@ -162,14 +162,14 @@ Eine Liste von Vorlagen, die für das Erstellen neuer Seiten verwendet werden k�
 >
 >Sofern auf Ihrer Instanz konfiguriert, [können Vorlagenautoren Vorlagen mit dem Vorlageneditor erstellen](/help/sites-authoring/templates.md).
 
-### Komponenten  {#components}
+### Komponenten {#components}
 
-Komponenten sind die von AEM bereitgestellten Elemente, sodass Sie bestimmte Inhaltstypen hinzufügen können. AEM enthält eine Reihe von [vordefinierten Komponenten](/help/sites-authoring/default-components-console.md), die umfassende Funktionen bieten. Dazu gehören:
+Komponenten sind die von AEM bereitgestellten Elemente, sodass Sie bestimmte Inhaltstypen hinzufügen können. AEM enthält eine Reihe von [vordefinierte Komponenten](/help/sites-authoring/default-components-console.md) , die eine umfassende Funktionalität bieten. Dazu gehören:
 
 * Text
 * Bild
 * Diashow
-* Video
+* Video   
 * Und viele weitere
 
 Nachdem Sie eine Seite erstellt und geöffnet haben, können Sie mithilfe der im [Komponenten-Browser](/help/sites-authoring/editing-content.md#insertinganewparagraph) verfügbaren Komponenten [Inhalte hinzufügen](/help/sites-authoring/author-environment-tools.md#componentbrowser).
@@ -260,7 +260,7 @@ Wenn Sie eine Seite erstellt haben bzw. in der Konsole zu einer bereits vorhande
 >
 >Das Navigieren zu anderen Seiten ist im Seiteneditor nur im Vorschaumodus möglich, da Links im Bearbeitungsmodus des Seiteneditors nicht aktiv sind.
 
-### Kopieren und Einfügen einer Seite  {#copying-and-pasting-a-page}
+### Kopieren und Einfügen einer Seite {#copying-and-pasting-a-page}
 
 Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicherort kopieren:
 
@@ -339,7 +339,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
    * Die [Spaltenansicht](/help/sites-authoring/basic-handling.md#column-view) verwenden, um zum neuen Speicherort der Seite zu navigieren:
 
-      * Wählen Sie das Ziel für die Seite aus, indem Sie auf die Miniaturansicht des Ziels klicken.
+      * Wählen Sie das Ziel für die Seite aus, indem Sie auf die Miniatur des Ziels klicken.
       * Klicken Sie auf **Weiter**, um fortzufahren.
    * Mit **Zurück** zur Angabe des Asset-Namens zurückkehren.
 
@@ -392,7 +392,7 @@ Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträ
 
 >[!NOTE]
 >
->Weitere Informationen zur asynchronen Auftragsverarbeitung und zum Konfigurieren der Begrenzung für Seitenverschiebungs-/Umbenennungsaktionen finden Sie im Dokument [Asynchrone Aufträge](/help/sites-administering/asynchronous-jobs.md) im Benutzerhandbuch zu Administration.
+>Weitere Informationen zur asynchronen Auftragsverarbeitung und zum Konfigurieren der Begrenzung für Seitenverschiebungs-/Umbenennungsaktionen finden Sie in der [Asynchrone Aufträge](/help/sites-administering/asynchronous-jobs.md) im Administrations-Benutzerhandbuch.
 
 >[!NOTE]
 >
@@ -440,9 +440,7 @@ Sie können Ordner erstellen, um Ihre Dateien und Seiten zu organisieren.
 >* Ordner können nur direkt unter **Sites** oder unter anderen Ordnern erstellt werden. Sie können jedoch nicht unter einer Seite erstellt werden.
 >* Für einen Ordner können folgende Standardaktionen ausgeführt werden: Verschieben, Kopieren, Einfügen, Löschen, Veröffentlichen, Rückgängigmachen der Veröffentlichung und Anzeigen/Bearbeiten von Eigenschaften.
 >* Ordner sind in einer Live Copy nicht als Auswahl verfügbar.
-
 >
-
 
 
 1. Öffnen Sie die **Sites-Konsole** und navigieren Sie zum gewünschten Ort.

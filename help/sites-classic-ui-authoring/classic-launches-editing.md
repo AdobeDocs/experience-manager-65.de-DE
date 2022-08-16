@@ -1,8 +1,8 @@
 ---
 title: Bearbeiten von Launches
-seo-title: Bearbeiten von Launches
+seo-title: Editing Launches
 description: Wenn ein Launch für eine Seite (oder eine Reihe von Seiten) erstellt wurde, können Sie den Inhalt in der Launch Copy der Seiten bearbeiten.
-seo-description: Wenn ein Launch für eine Seite (oder eine Reihe von Seiten) erstellt wurde, können Sie den Inhalt in der Launch Copy der Seiten bearbeiten.
+seo-description: When a launch has been created for a page (or set of pages) you can edit the content in the launch copy of the page(s).
 uuid: 3a310eeb-553d-4d2b-98b5-c5bc523b2aca
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 21776f42-cd81-459d-b4b9-1d92e0aec164
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '291'
 ht-degree: 100%
 
 ---
@@ -36,7 +36,7 @@ Wenn ein Launch für eine Seite (oder eine Reihe von Seiten) erstellt wurde, kö
    >
    >Sie können die Registerkarte **Seite** des Sidekicks verwenden, um Aktionen wie **Untergeordnete Seite erstellen** durchzuführen. 
 
-## Bearbeiten einer Launch-Konfiguration  {#editing-a-launch-configuration}
+## Bearbeiten einer Launch-Konfiguration {#editing-a-launch-configuration}
 
 Wenn Sie einen Launch erstellt haben, können Sie den Namen und das Datum des Launches ändern. Sie können auch ein Bild angeben, das Sie dem Launch zuweisen möchten.
 
@@ -57,7 +57,7 @@ Wenn Sie einen Launch erstellt haben, können Sie den Namen und das Datum des La
 
 1. Klicken Sie auf **Speichern**.
 
-## Ermitteln des Launch-Status einer Seite  {#discovering-the-launch-status-of-a-page}
+## Ermitteln des Launch-Status einer Seite {#discovering-the-launch-status-of-a-page}
 
 Wenn Sie den Launch einer Seite bearbeiten, werden unten auf der Registerkarte **Versionierung** des Sidekicks Informationen zum Launch angezeigt:
 

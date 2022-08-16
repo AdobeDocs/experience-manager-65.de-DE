@@ -1,8 +1,8 @@
 ---
 title: RDBMS-Unterstützung in AEM 6.4
-seo-title: RDBMS-Unterstützung in AEM 6.4
+seo-title: RDBMS Support in AEM 6.4
 description: Erfahren Sie mehr über die Unterstützung der RDBMS-Persistenz in AEM 6.4 sowie die verfügbaren Konfigurationsoptionen.
-seo-description: Erfahren Sie mehr über die Unterstützung der RDBMS-Persistenz in AEM 6.4 sowie die verfügbaren Konfigurationsoptionen.
+seo-description: Learn about the relational database persistence support in AEM 6.4 and the available configuration options.
 uuid: c8422b0d-c6df-488d-bb6a-af92c9afda50
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,18 +10,18 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6a754d42-da30-4c2f-8b9c-369e1f1f92b5
 docset: aem65
-feature: Konfiguration
+feature: Configuring
 exl-id: 1e34c5ca-9e08-4b2a-901c-ab28aeb4a807
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '621'
 ht-degree: 85%
 
 ---
 
 # RDBMS-Unterstützung in AEM 6.4{#rdbms-support-in-aem}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Die Unterstützung für RDBMS-Persistenz in AEM wird mithilfe des Document-Mikrokernels implementiert. Der Document-Mikrokernel bildet die Grundlage, die auch für die Implementierung der MongoDB-Persistenz verwendet wird.
 
@@ -49,7 +49,7 @@ Wenn die Bundles erstellt wurden, befolgen Sie die nachfolgenden Schritte zum Ko
 
 1. Stellen Sie sicher, dass der Datenbank-Daemon gestartet ist und eine aktive Datenbank für die Verwendung mit AEM vorhanden ist.
 1. Kopieren Sie die AEM 6.3-JAR-Datei in das Installationsverzeichnis.
-1. Erstellen Sie im Installationsverzeichnis einen Ordner mit dem Namen `crx-quickstart\install`.
+1. Erstellen Sie einen Ordner mit dem Namen `crx-quickstart\install` im Installationsverzeichnis.
 1. Konfigurieren Sie den Document-Knotenspeicher, indem Sie eine Konfigurationsdatei mit dem folgenden Namen im Verzeichnis `crx-quickstart\install` erstellen:
 
    * `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
@@ -63,11 +63,11 @@ Wenn die Bundles erstellt wurden, befolgen Sie die nachfolgenden Schritte zum Ko
 
 1. Bereiten Sie dann die JDBC-OSGi-Bundles für die Verwendung mit AEM vor:
 
-   1. Erstellen Sie im Ordner `crx-quickstart/install` einen Ordner mit dem Namen `9`.
+   1. Im `crx-quickstart/install` Ordner erstellen, Ordner mit dem Namen `9`.
 
    1. Platzieren Sie die JDBC-JAR-Datei im neuen Ordner.
 
-1. Beginnen Sie AEM mit den Ausführungsmodi `crx3` und `crx3rdb`:
+1. Beginnen Sie AEM schließlich mit der `crx3` und `crx3rdb` runmodes:
 
    ```java
    java -jar quickstart.jar -r crx3,crx3rdb

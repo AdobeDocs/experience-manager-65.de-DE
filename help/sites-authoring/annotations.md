@@ -1,8 +1,8 @@
 ---
 title: Anmerkungen beim Bearbeiten einer Seite
-seo-title: Anmerkungen beim Bearbeiten einer Seite
+seo-title: Annotations when Editing a Page
 description: Viele Komponenten, die direkt zur Handhabung von Inhalten verwendet werden, ermöglichen das Hinzufügen von Anmerkungen.
-seo-description: Viele Komponenten, die direkt zur Handhabung von Inhalten verwendet werden, ermöglichen das Hinzufügen von Anmerkungen.
+seo-description: Many components directly related to content allow you to add an annotation
 uuid: 157be55c-8ab8-472e-be32-0dcc02bfa41d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '634'
 ht-degree: 99%
 
 ---
@@ -52,8 +52,8 @@ Zum Erstellen und Ansehen von Anmerkungen wird ein spezieller [Modus](/help/site
 >Sie können Anmerkungen zu einer Vielzahl von Ressourcen anfügen: 
 >
 >* [Anmerkungen zu Assets](/help/assets/manage-assets.md#annotating)
-* [Kommentieren von Video-Assets](/help/assets/managing-video-assets.md#annotate-video-assets)
-
+>* [Kommentieren von Video-Assets](/help/assets/managing-video-assets.md#annotate-video-assets)
+>
 
 
 ### Hinzufügen von Anmerkungen zu Komponenten {#annotating-a-component}
@@ -67,12 +67,14 @@ Im Anmerkungsmodus können Sie Anmerkungen für Ihre Inhalte erstellen, bearbeit
    Sie können nun vorhandene Anmerkungen anzeigen.
 
    >[!NOTE]
-   Zum Beenden des Anmerkungsmodus tippen/klicken Sie auf das Anmerkungssymbol (x-Symbol) oben rechts in der Symbolleiste.
+   >
+   >Zum Beenden des Anmerkungsmodus tippen/klicken Sie auf das Anmerkungssymbol (x-Symbol) oben rechts in der Symbolleiste.
 
 1. Klicken/tippen Sie auf das Symbol „Anmerkung hinzufügen“ (Plussymbol links in der Symbolleiste), um mit dem Hinzufügen von Anmerkungen zu beginnen.
 
    >[!NOTE]
-   Wenn Sie keine weiteren Anmerkungen hinzufügen möchten (und zur Anzeige zurückkehren wollen), tippen/klicken Sie auf das Symbol „Abbrechen“ (x-Symbol in einem weißen Kreis) links in der Symbolleiste oben.
+   >
+   >Wenn Sie keine weiteren Anmerkungen hinzufügen möchten (und zur Anzeige zurückkehren wollen), tippen/klicken Sie auf das Symbol „Abbrechen“ (x-Symbol in einem weißen Kreis) links in der Symbolleiste oben.
 
 1. Tippen/klicken Sie auf die erforderliche Komponente (Komponenten, denen eine Anmerkung hinzugefügt werden kann, sind mit einem blauen Rand gekennzeichnet), um die Anmerkung hinzuzufügen und das Dialogfeld zu öffnen:
 
@@ -113,7 +115,8 @@ Im Anmerkungsmodus können Sie Anmerkungen für Ihre Inhalte erstellen, bearbeit
 1. Um den Anmerkungsmodus zu beenden und zum vorher verwendeten Modus zurückzukehren, tippen/klicken Sie auf das Anmerkungssymbol (x-Symbol) oben rechts in der Symbolleiste.
 
 >[!NOTE]
-Anmerkungen können nicht zu einer Seite hinzugefügt werden, die von einem anderen Benutzer gesperrt wurde.
+>
+>Anmerkungen können nicht zu einer Seite hinzugefügt werden, die von einem anderen Benutzer gesperrt wurde.
 
 ### Kennzeichnung von Anmerkungen {#annotation-indicator}
 

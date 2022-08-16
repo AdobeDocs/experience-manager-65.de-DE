@@ -11,7 +11,7 @@ discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 exl-id: 30720061-d0e5-453b-a334-6a3aa9ca4c87
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1010'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ Führen Sie vor dem Hinzufügen eines benutzerdefinierten Berichts das folgende 
 
 ## Verwenden der REST-Schnittstelle von QueryBuilder {#using-the-rest-interface-of-the-querybuilder}
 
-Die CRX QueryBuilder REST-Schnittstelle stellt die Funktionalität des Query Builders für Asset-Freigaben über eine Java API und eine REST API bereit. Erfahren Sie, wie die [CRX QueryBuilder REST-Schnittstelle](https://docs.adobe.com/docs/de_DE/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html) verwendet wird, bevor Sie die folgenden Schritte ausführen:
+Die CRX QueryBuilder REST-Schnittstelle stellt die Funktionalität des Query Builders für Asset-Freigaben über eine Java API und eine REST API bereit. Erfahren Sie, wie die [CRX QueryBuilder REST-Schnittstelle](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html) verwendet wird, bevor Sie die folgenden Schritte ausführen:
 
 1. Navigieren Sie zur URL `https://'[server]:[port]'/lc/bin/querybuilder.json`
 1. Erstellen Sie eine Abfrage basierend auf der Knotenstruktur und den Knoteneigenschaften des Speicherknotens Prozess-Reporting.
@@ -49,7 +49,7 @@ Die CRX QueryBuilder REST-Schnittstelle stellt die Funktionalität des Query Bui
 
 ## Erstellen eines Service mit der Query Builder API  {#creating-a-service-using-query-builder-api-nbsp}
 
-Voraussetzung für die Erstellung eines Service mit der Query Builder API sind die [Erstellung und Bereitstellung des CQ-OSGI-Pakets](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) sowie die [Verwendung der Query Builder API](https://docs.adobe.com/docs/de_DE/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html).
+Voraussetzung für die Erstellung eines Service mit der Query Builder API sind die [Erstellung und Bereitstellung des CQ-OSGI-Pakets](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) sowie die [Verwendung der Query Builder API](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html).
 
 1. Erstellen Sie einen OSGi-Service mit entsprechenden Anmerkungen. Verwenden Sie für den Zugriff auf QueryBuilder Folgendes:
 

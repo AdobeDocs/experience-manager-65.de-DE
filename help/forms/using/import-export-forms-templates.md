@@ -12,7 +12,7 @@ docset: aem65
 role: Admin
 exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2516'
 ht-degree: 100%
 
@@ -90,7 +90,7 @@ Herunterladen von Designs
 1. Tippen Sie auf das Symbol „Experience Manager“ ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > Symbol „Navigation“ ![compass](assets/compass.png) > Formulare > Designs.
 1. Wählen Sie das Design und tippen Sie auf **Herunterladen**. Das Design wird als ein Archiv (.zip-Datei) heruntergeladen.
 
-### Upload eines Designs {#uploading-a-theme}
+### Hochladen eines Designs {#uploading-a-theme}
 
 Sie können erstellte Designs mit Formatierungsvorgaben für Ihr Projekt verwenden. Sie können von Anderen erstellte Design-Pakete importieren, indem Sie diese in Ihr Projekt hochladen.
 

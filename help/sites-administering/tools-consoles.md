@@ -1,8 +1,8 @@
 ---
-title: Die Tools-Konsolen
-seo-title: Die Tools-Konsolen
+title: 'Die Tools-Konsolen '
+seo-title: Tools Consoles
 description: Informieren Sie sich über die unterschiedlichen Tools-Konsolen von AEM.
-seo-description: Informieren Sie sich über die unterschiedlichen Tools-Konsolen von AEM.
+seo-description: Learn about the different tools consoles throughout AEM.
 uuid: 44439f8e-7c47-4ea9-afe1-a9a23489a20e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,12 +13,12 @@ docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '609'
 ht-degree: 99%
 
 ---
 
-# Die Tools-Konsolen{#tools-consoles}
+# Die Tools-Konsolen {#tools-consoles}
 
 Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen Sie Ihre Websites, digitalen Assets und andere Bereiche Ihres Content-Repositorys verwalten können. Aktuell gibt es zwei Varianten der **Tools-Konsole** – abhängig von der verwendeten Benutzeroberfläche:
 
@@ -67,7 +67,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   </tr>
   <tr>
    <td> </td>
-   <td>Komponenten </td>
+   <td>Komponenten</td>
   </tr>
   <tr>
    <td> </td>
@@ -171,11 +171,11 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   </tr>
   <tr>
    <td> </td>
-   <td>Ordner-Metadatenschemata<br /> </td>
+   <td>Ordner-Metadatenschemas<br /> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Metadatenschemata</td>
+   <td>Metadatenschemas</td>
   </tr>
   <tr>
    <td> </td>
@@ -210,7 +210,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
    <td>Entwicklungsressourcen</td>
   </tr>
   <tr>
-   <td>Bereitstellung</td>
+   <td>Implementierung</td>
    <td> </td>
   </tr>
   <tr>
@@ -283,7 +283,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   </tr>
   <tr>
    <td> </td>
-   <td>Cloud-basierte Übersetzungsdienste</td>
+   <td>Übersetzungs-Cloud-Services</td>
   </tr>
   <tr>
    <td> </td>
@@ -327,7 +327,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   </tr>
   <tr>
    <td> </td>
-   <td>Speicher  Konfiguration</td>
+   <td>Speicherkonfiguration</td>
   </tr>
   <tr>
    <td> </td>
@@ -350,7 +350,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
    <td>Community-Abzeichen</td>
   </tr>
   <tr>
-   <td>Commerce</td>
+   <td>Commerce </td>
    <td> </td>
   </tr>
   <tr>
@@ -389,7 +389,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
    <td>Konfiguration der Manager-Einstellungen.</td>
   </tr>
   <tr>
-   <td>Handel</td>
+   <td>Commerce </td>
    <td>Bietet Zugriff auf Importtools und unterschiedliche Produktdaten</td>
   </tr>
   <tr>
@@ -445,7 +445,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
    <td>Ermöglicht Ihnen die Konfiguration der E-Mails, die Benutzer automatisch erhalten, wenn sie ein Konto erstellen oder ein Kennwort zurücksetzen und ein zurückgesetztes Kennwort bestätigen müssen</td>
   </tr>
   <tr>
-   <td>Segmentierung </td>
+   <td>Segmentierung</td>
    <td>Besucher von Websites haben unterschiedliche Interessen und Ziele, wenn sie eine Site besuchen. Das Verstehen dieser Ziele und das Erfüllen der Erwartungen sind wichtige Erfolgsfaktoren beim Onlinemarketing. Die Segmentierung unterstützt Sie durch die Analyse und Charakterisierung der Benutzerdetails dabei.<br /> </td>
   </tr>
   <tr>

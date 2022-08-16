@@ -10,8 +10,8 @@ feature: Developing
 role: Developer
 source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1299'
+ht-degree: 75%
 
 ---
 
@@ -177,7 +177,7 @@ ht-degree: 0%
    + [AEM Brackets-Erweiterung](aem-brackets.md)
    + [AEM Developer Tools for Eclipse](aem-eclipse.md)
    + [AEM Repo Tool](aem-repo-tool.md)
-+ Personalisierung {#personlization}
++ Personalisierung   {#personlization}
    + [ContextHub](contexthub.md)
    + [Konfigurieren von ContextHub](ch-configuring.md)
    + [Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher](ch-adding.md)

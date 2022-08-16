@@ -1,8 +1,8 @@
 ---
 title: Integration mit BrightEdge Content Optimizer
-seo-title: Integration mit BrightEdge Content Optimizer
+seo-title: Integrating with BrightEdge Content Optimizer
 description: Informieren Sie sich über die Integration von AEM mit BrightEdge Content Optimizer.
-seo-description: Informieren Sie sich über die Integration von AEM mit BrightEdge Content Optimizer.
+seo-description: Learn about integrating AEM with BrightEdge Content Optimizer.
 uuid: 7075dd3c-2fd6-4050-af1c-9b16ad4366ec
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: cf25c9a8-0555-4c67-8aa5-55984fd8d301
 exl-id: f14cc5fd-aeab-4619-b926-b6f1df7e50e5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '495'
 ht-degree: 100%
 
 ---
@@ -32,10 +32,10 @@ Wenn Sie die Konfiguration erstellen, geben Sie einen Titel ein. Der Titel sollt
    ![chlimage_1-4](assets/chlimage_1-4a.png)
 
 1. Wenn Sie auf „Konfigurationen anzeigen“ geklickt haben, klicken Sie auf den Link mit dem Pluszeichen (+) neben „Verfügbare Konfigurationen“.
-1. Geben Sie einen Titel für die Konfiguration ein. Optional können Sie einen Namen für den Knoten eingeben, mit dem die Konfiguration im Repository gespeichert wird. Klicken Sie auf Erstellen.
+1. Geben Sie einen Titel für die Konfiguration ein. Optional können Sie einen Namen für den Knoten eingeben, mit dem die Konfiguration im Repository gespeichert wird. Klicken Sie auf „Erstellen“.
 1. Geben Sie im Dialogfeld „BrightEdge Content Optimizer-Konfiguration“ den Benutzernamen und das Kennwort des BrightEdge-Kontos ein und klicken Sie dann auf „OK“.
 
-## Bearbeiten einer BrightEdge-Konfiguration  {#editing-a-brightedge-configuration}
+## Bearbeiten einer BrightEdge-Konfiguration {#editing-a-brightedge-configuration}
 
 Ändern Sie bei Bedarf den Benutzernamen und das Kennwort einer BrightEdge-Konfiguration. Die Änderungen wirken sich auf alle Seiten aus, die die Konfiguration verwenden.
 
@@ -47,7 +47,7 @@ Wenn Sie die Konfiguration erstellen, geben Sie einen Titel ein. Der Titel sollt
 1. Klicken Sie auf den Namen der Konfiguration, die Sie bearbeiten möchten.
 1. Klicken Sie auf „Bearbeiten“, bearbeiten Sie die Eigenschaftswerte und klicken Sie anschließend auf „OK“.
 
-## Verknüpfen von Seiten mit einer BrightEdge-Konfiguration  {#associating-pages-with-a-brightedge-configuration}
+## Verknüpfen von Seiten mit einer BrightEdge-Konfiguration {#associating-pages-with-a-brightedge-configuration}
 
 Verknüpfen Sie Seiten mit einer BrightEdge-Konfiguration, um Seitendaten zur Analyse an den BrightEdge-Service zu übermitteln. Wenn Sie eine Seite mit einer Konfiguration verknüpfen, erben die untergeordneten Seiten diese Verknüpfung. In der Regel wird die Startseite einer Website verknüpft, damit die Daten aller Seiten an BrightEdge übermittelt werden.
 

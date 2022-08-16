@@ -1,8 +1,8 @@
 ---
 title: 'Bearbeiten: Umgebung und Tools'
-seo-title: 'Bearbeiten: Umgebung und Tools'
+seo-title: Authoring - the Environment and Tools
 description: Die Websites-Konsole ermöglicht es Ihnen, Ihre Website zu verwalten und darin zu navigieren. Sie besteht aus zwei Bereichen, durch die Sie die Struktur der Website erweitern und die entsprechenden Elemente bearbeiten können.
-seo-description: Die Websites-Konsole ermöglicht es Ihnen, Ihre Website zu verwalten und darin zu navigieren. Sie besteht aus zwei Bereichen, durch die Sie die Struktur der Website erweitern und die entsprechenden Elemente bearbeiten können.
+seo-description: The Websites console allows you to manage and navigate your website. Using two panes, the structure of your website can be expanded and actions taken on the required elements.
 uuid: 0a9ce725-042a-4697-81fe-ac86cbab0398
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
 source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '899'
 ht-degree: 89%
 
 ---
@@ -151,7 +151,7 @@ können Sie eine beliebige Anzahl von Platzhaltern in einer Abfrage verwenden.
 
 >[!NOTE]
 >
->Sie können auch die Suche [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) verwenden.
+>Sie können auch [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) suchen.
 
 ## Anzeigen von Verweisen {#showing-references}
 
@@ -163,7 +163,7 @@ So zeigen Sie direkte Seitenverweise an:
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. Wählen Sie **Verweise anzeigen...** AEM öffnet das Fenster &quot;Verweise&quot;und zeigt an, welche Seiten auf die ausgewählte Seite verweisen, einschließlich der Pfade.
+1. Auswählen **Verweise anzeigen...** AEM öffnet das Fenster Verweise und zeigt an, welche Seiten auf die ausgewählte Seite verweisen, einschließlich der Pfade.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -184,7 +184,7 @@ Das **Auditprotokoll** kann über die Registerkarte **Informationen** im Sidekic
 
 ## Seiteninformationen {#page-information}
 
-Die Website-Konsole [enthält auch Informationen zum aktuellen Status der Seite](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), z. B. Veröffentlichung, Änderung, gesperrt, Live Copy usw.
+Die Website-Konsole [liefert Informationen zum aktuellen Status der Seite](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) wie Veröffentlichung, Änderung, gesperrt, Live Copy usw.
 
 ## Seitenmodi {#page-modes}
 
@@ -208,9 +208,9 @@ In diesem Modus können Sie das Design der Seite bearbeiten, indem Sie die verf�
 >Es sind weitere Optionen verfügbar:
 >
 >* [Strukturvorlage](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
-* [ClientContext](/help/sites-administering/client-context.md)
-* Websites - öffnet die Konsole „Websites“.
-* Neu laden - aktualisiert die Seite.
+>* [ClientContext](/help/sites-administering/client-context.md)
+>* Websites - öffnet die Konsole „Websites“.
+>* Neu laden - aktualisiert die Seite.
 
 
 ## Tastaturbefehle {#keyboard-shortcuts}

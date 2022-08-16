@@ -12,7 +12,7 @@ discoiquuid: 1e6cc554-aef1-463c-906b-634b80a27917
 role: Developer
 exl-id: 966c3554-25df-4467-866e-11c43cc15b58
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2358'
 ht-degree: 100%
 
@@ -66,11 +66,11 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
 * jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
 
-Weitere Informationen über den Speicherort dieser JAR-Dateien finden Sie unter [Einbeziehung von Java-Bibliotheksdateien für AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Weitere Informationen über den Speicherort dieser JAR-Dateien finden Sie unter [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Erstellen eines DocConvert-Clients**
 
-Bevor Sie einen DocConverter-Vorgang programmgesteuert ausführen können, müssen Sie einen DocConverter-Client erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `DocConverterServiceClient`-Objekt. Wenn Sie die DocConverter-Webservice-API verwenden, erstellen Sie ein `DocConverterServiceService`-Objekt.
+Bevor Sie einen DocConverter-Vorgang programmgesteuert ausführen können, müssen Sie einen DocConverter-Client erstellen. Erstellen Sie ein `DocConverterServiceClient`-Objekt, wenn Sie die Java-API verwenden. Wenn Sie die DocConverter-Webservice-API verwenden, erstellen Sie ein `DocConverterServiceService`-Objekt.
 
 **Referenzieren eines PDF-Dokuments zur Konvertierung in ein PDF/A-Dokument**
 
@@ -121,7 +121,7 @@ Konvertieren Sie ein PDF-Dokument mithilfe der Java-API in ein PDF/A-Dokument:
 1. Festlegen von Tracking-Informationen
 
    * Erstellen Sie ein Objekt `PDFAConversionOptionSpec`, indem Sie den Konstruktor verwenden.
-   * Legen Sie die Tracking-Ebene für Informationen fest, indem Sie die Methode `setLogLevel` des `PDFAConversionOptionSpec`-Objekt verwenden und einen Zeichenfolgenwert übergeben, der die Tracking-Ebene angibt. Übergeben Sie zum Beispiel den Wert `FINE`. Weitere Informationen zu den verschiedenen Werten finden Sie unter der Beschreibung der `setLogLevel`-Methode in der [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Legen Sie die Tracking-Ebene für Informationen fest, indem Sie die Methode `setLogLevel` des `PDFAConversionOptionSpec`-Objekt verwenden und einen Zeichenfolgenwert übergeben, der die Tracking-Ebene angibt. Beispielsweise können Sie den Wert `FINE` übergeben. Weitere Informationen zu den verschiedenen Werten finden Sie unter der Beschreibung der `setLogLevel`-Methode in der [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Dokument konvertieren
 
@@ -159,15 +159,15 @@ Konvertieren eines PDF-Dokuments in ein PDF/A-Dokument anhand der DocConverter-A
 
 1. Erstellen eines DocConvert-Clients
 
-   * Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `DocConverterServiceService`-Objekt, indem Sie seinen standardmäßigen Konstruktor aufrufen.
+   * Erstellen Sie mit Hilfe der Microsoft .NET-Client-Assembly ein `DocConverterServiceService`-Objekt, indem Sie dessen Standardkonstruktor aufrufen.
    * Setzen Sie das `Credentials`Datenelement des `DocConverterServiceService`-Elements auf einen `System.Net.NetworkCredential`-Wert, der den Benutzernamen und das Passwort enthät.
 
 1. Referenzieren eines PDF-Dokuments zur Konvertierung in ein PDF/A-Dokument
 
-   * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des PDF-Dokuments verwendet, das in ein PDF/A-Dokument konvertiert werden soll.
-   * Erstellen Sie ein `System.IO.FileStream`-Objekt durch Aufrufen des Konstruktors und Übergeben eines Zeichenfolgenwerts, der den Dateispeicherort des PDF-Dokuments und den Modus zum Öffnen der Datei darstellt.
-   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `Read`-Methode des `System.IO.FileStream`-Objekts anwenden und dabei das Byte-Array, die Startposition und die Länge des zu lesenden Streams übergeben.
+   * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des PDF-Dokuments verwendet, das in ein PDF/A-Dokument konvertiert wird.
+   * Erstellen Sie ein `System.IO.FileStream`-Objekt durch Aufrufen des Konstruktors und Übergeben eines Zeichenfolgenwerts, der den Dateispeicherort des PDF-Dokuments und den Modus zum Öffnen der Datei enthält.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
+   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `Read`-Methode des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
    * Füllen Sie das `BLOB`-Objekt, indem Sie die Inhalte des Byte-Arrays seiner `binaryData`-Eigenschaft zuweisen.
 
 1. Festlegen von Tracking-Informationen
@@ -177,10 +177,10 @@ Konvertieren eines PDF-Dokuments in ein PDF/A-Dokument anhand der DocConverter-A
 
 1. Dokument konvertieren
 
-   Konvertieren Sie das PDF-Dokument in ein PDF/A-Dokument, indem Sie die `toPDFA`-Methode des `DocConverterServiceService`-Objekts anwenden und die folgenden Werte übergeben:
+   Konvertieren Sie das PDF-Dokument in ein PDF/A-Dokument, indem Sie die `toPDFA`-Methode des `DocConverterServiceService`-Objekts aufrufen und die folgenden Werte übergeben:
 
    * Das `BLOB`-Objekt, in dem das zu konvertierende PDF-Dokument enthalten ist
-   * Das `PDFAConversionOptionSpec`-Objekt, in dem Daten zur Nachverfolgung angegeben sind
+   * Das `PDFAConversionOptionSpec`-Objekt, in dem Tracking-Daten enthalten sind
 
    Die `toPDFA`-Methode gibt ein `PDFAConversionResult`-Objekt zurück, in dem das PDF/A-Dokument enthalten ist.
 
@@ -190,7 +190,7 @@ Konvertieren eines PDF-Dokuments in ein PDF/A-Dokument anhand der DocConverter-A
    * Erstellen Sie ein Byte-Array, in dem der Inhalt des `BLOB`-Objekts gespeichert wird, das bei der Anwendung des `PDFAConversionResult`-Objekts zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des `binaryData`-Datenelements des `BLOB`-Objekts abrufen.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor verwenden und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF/A-Dokuments angibt.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor verwenden und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie die Inhalte des Byte-Arrays in eine PDF-Datei, indem Sie die `Write`-Methode des `System.IO.BinaryWriter`-Objekt aufrufen und das Byte-Array übergeben.
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 **Siehe auch**
 
@@ -319,8 +319,8 @@ Ermitteln der PDF/A-Konformität mithilfe der Web-Service-API:
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des PDF-Dokuments verwendet, das in ein PDF/A-Dokument konvertiert wird.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt durch Aufrufen des Konstruktors und Übergeben eines Zeichenfolgenwerts, der den Dateispeicherort des PDF-Dokuments und den Modus zum Öffnen der Datei enthält.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des `System.IO.FileStream`-Objekts abrufen.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
+   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `Read`-Methode des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
    * Füllen Sie das `BLOB`-Objekt, indem Sie dessen `binaryData`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
 
 1. Festlegen von Laufzeitoptionen

@@ -1,8 +1,8 @@
 ---
 title: Web-Konsole
-seo-title: Web-Konsole
+seo-title: Web Console
 description: Erfahren Sie, wie Sie die Web-Konsole in AEM verwenden.
-seo-description: Erfahren Sie, wie Sie die Web-Konsole in AEM verwenden.
+seo-description: Learn how to use the web console in AEM.
 uuid: 047274ff-4d7d-4c7d-95be-06f363beae2e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +11,7 @@ discoiquuid: f934eb02-1f84-44f2-9f14-3f17250c9a90
 exl-id: bdfeaf85-e832-40c1-8769-7d027cdb021e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '719'
 ht-degree: 71%
 
 ---
@@ -34,7 +34,7 @@ Die Web-Konsole umfasst eine Reihe von Registerkarten für die Verwaltung der OS
 
 Alle vorgenommenen Änderungen werden sofort auf das laufende System angewendet. Ein Neustart ist nicht erforderlich.
 
-Der Zugriff auf die Konsole ist über `../system/console` möglich. Beispiel:
+Der Zugriff auf die Konsole ist über `../system/console`; Beispiel:
 
 `http://localhost:4502/system/console/components`
 
@@ -105,7 +105,7 @@ Die Parameter können dann ggf. aktualisiert werden und Sie können unter folgen
 
 ## Bundles {#bundles}
 
-Die Registerkarte **Bundles** ist der Mechanismus zum Installieren der für AEM erforderlichen OSGi-Bundles. Sie können mit einer der beiden folgenden Methoden auf die Registerkarte zugreifen:
+Die **Bundles** tab ist der Mechanismus zum Installieren der für AEM erforderlichen OSGi-Pakete. Sie können mit einer der beiden folgenden Methoden auf die Registerkarte zugreifen:
 
 * Dropdown-Menü:
 
@@ -123,7 +123,7 @@ Auf dieser Registerkarte stehen folgende Optionen zur Verfügung:
 
 * **Installieren oder Aktualisieren**
 
-   Sie können **Durchsuchen** , um die Datei zu suchen, die Ihr Bundle enthält, und angeben, ob **Start** sofort und auf welcher **Startebene** ausgeführt werden soll.
+   Sie können **Durchsuchen** , um die Datei zu suchen, die Ihr Bundle enthält, und anzugeben, ob sie **Starten** unmittelbar und **Startstufe**.
 
 * **Neu laden**
 
@@ -135,7 +135,7 @@ Auf dieser Registerkarte stehen folgende Optionen zur Verfügung:
 
     So werden möglicherweise nach einer Aktualisierung die alte und die neue Version aufgrund vorheriger Verweise weiter ausgeführt, Diese Option prüft und transferiert alle Verweise auf die neue Version, sodass die alte Version beendet werden kann.
 
-* **Anfang**
+* **Starten**
 
    Startet ein Bundle entsprechend der angegebenen Startebene.
 
@@ -155,9 +155,9 @@ Auf dieser Registerkarte stehen folgende Optionen zur Verfügung:
 >
 >Nach einer **Aktualisierung** wird empfohlen, die **Pakete zu aktualisieren**.
 
-## Komponenten  {#components}
+## Komponenten {#components}
 
-Auf der Registerkarte **Komponenten** können Sie die verschiedenen Komponenten aktivieren und/oder deaktivieren. Sie können mit einer der beiden folgenden Methoden auf die Registerkarte zugreifen:
+Die **Komponenten** können Sie die verschiedenen Komponenten aktivieren bzw. deaktivieren. Sie können mit einer der beiden folgenden Methoden auf die Registerkarte zugreifen:
 
 * Dropdown-Menü:
 

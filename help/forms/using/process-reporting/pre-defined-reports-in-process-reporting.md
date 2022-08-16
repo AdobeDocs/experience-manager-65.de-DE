@@ -11,7 +11,7 @@ discoiquuid: 3d93375e-ec37-4445-96ea-d315676787b4
 docset: aem65
 exl-id: 34e55676-6332-4616-aecc-bcc8cc1e8a29
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 100%
 
@@ -104,7 +104,7 @@ Der Bericht „Workflow-Volumen“ zeigt die Anzahl der derzeit ausgeführten un
 
    Wenn Sie einen Bericht auswählen, wird das Bedienfeld **Berichtsparameter** rechts neben der Baumansicht angezeigt.
 
-   ![Berichtsparameter-Bedienfeld für lang laufende Prozesse](assets/workflow_volume_params.png)
+   ![Berichtsparameter für lange laufende Prozesse](assets/workflow_volume_params.png)
 
    Parameter:
 
@@ -122,6 +122,6 @@ Der Bericht „Workflow-Volumen“ zeigt die Anzahl der derzeit ausgeführten un
 
    Verwenden Sie die Optionen oben rechts im Bedienfeld **Bericht**, um die folgenden Vorgänge für den Bericht auszuführen.
 
-   * **Aktualisieren**: Aktualisiert den Bericht mit den neuesten Daten im Speicher
-   * **Farbe der Legende ändern**: Farbe der Berichtslegende auswählen und ändern
+   * **Aktualisieren**: Der Bericht wird mit den neuesten Daten im Speicher aktualisiert.
+   * **Farbe der Legende ändern**: Wählen Sie die Farbe der Berichtslegende aus bzw. ändern Sie diese.
    * **Exportieren in CSV**: Daten aus dem Bericht exportieren und als kommagetrennte Datei herunterladen

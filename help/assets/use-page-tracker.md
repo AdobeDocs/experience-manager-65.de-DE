@@ -3,18 +3,18 @@ title: Verwenden des Seitentrackers und des Einbettungscodes in Webseiten
 description: Erfahren Sie mehr über das Miteinbeziehen der Seitenverfolgung und das Einbetten von JavaScript-Codes in Ihren Website-Code, damit Adobe Analytics Nutzungsdaten zu Assets erfassen kann.
 contentOwner: AG
 role: Architect, Admin
-feature: Asset-Berichte
+feature: Asset Reports
 exl-id: 14d02015-df00-4566-a098-de76eaf42605
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '176'
 ht-degree: 70%
 
 ---
 
 # Verwenden des Seitentrackers und des Einbettungscodes in Webseiten {#using-page-tracker-and-embed-code-in-web-pages}
 
-Seitenverfolgung ist ein JavaScript-Code, den Sie in den Code von Drittanbieter-Websites einfügen, damit Adobe Analytics Nutzungsdaten rund um [!DNL Adobe Experience Manager Assets] auf diesen Websites erfassen kann.
+Seitenverfolgung ist ein JavaScript-Code, den Sie in den Code von Drittanbieter-Websites einfügen, damit Adobe Analytics Nutzungsdaten rund um die [!DNL Adobe Experience Manager Assets] auf diesen Websites.
 
 Um Ereignisse wie Klicks usw. zu erfassen, die Asset-spezifisch sind, beziehen Sie auch den Einbettungscode in den Code der Websites von Drittanbietern ein.
 

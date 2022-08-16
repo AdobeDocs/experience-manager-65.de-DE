@@ -1,8 +1,8 @@
 ---
 title: Rendering und Versand
-seo-title: Rendering und Versand
+seo-title: Rendering and Delivery
 description: Rendering und Versand
-seo-description: 'null'
+seo-description: null
 uuid: 1253b6a5-6bf3-42b1-be3a-efa23b6ddb51
 contentOwner: User
 content-type: reference
@@ -11,18 +11,18 @@ discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '573'
 ht-degree: 11%
 
 ---
 
-# Rendering and Delivery{#rendering-and-delivery}
+# Rendering und Versand{#rendering-and-delivery}
 
 >[!NOTE]
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-AEM Inhalt kann einfach über [Sling Default Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) gerendert werden, um [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) und andere Formate zu rendern.
+AEM Inhalte können einfach über gerendert werden. [Sling-Standard-Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) zum Rendern [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) und anderen Formaten.
 
 Diese vordefinierten Renderer führen normalerweise das Repository durch und geben Inhalt unverändert zurück.
 
@@ -36,21 +36,21 @@ Das folgende Diagramm zeigt die Darstellung von Inhaltsdiensten.
 
 ## Anfordern von JSON {#requesting-json}
 
-Verwenden Sie **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.** jsonto JSON anfordern.]
+Verwendung **&lt;resource.caas span=&quot;&quot; id=&quot;1&quot; translate=&quot;no&quot; />.[&lt;export-config span=&quot;&quot; id=&quot;0&quot; translate=&quot;no&quot; />.][&lt;export-config span=&quot;&quot; id=&quot;0&quot; translate=&quot;no&quot; />.json** , um JSON anzufordern.]
 
 <table>
  <tbody>
   <tr>
    <td>RESSOURCE</td>
-   <td>eine Entitätsressource unter /content/entils<br /> oder <br /> einer Inhaltsressource unter /content</td>
+   <td>eine Entitäts-Ressource unter /content/entity<br /> oder <br /> eine Inhaltsressource unter /content</td>
   </tr>
   <tr>
    <td>EXPORT-CONFIG</td>
-   <td><p><strong>OPTIONAL</strong><br /> </p> <p>eine Exportkonfiguration, die unter /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br /> gefunden wird. Wenn diese Option weggelassen wird, wird die standardmäßige Exportkonfiguration angewendet </p> </td>
+   <td><p><strong>OPTIONAL</strong><br /> </p> <p>eine Exportkonfiguration gefunden unter /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br /> Wenn diese Option weggelassen wird, wird die standardmäßige Exportkonfiguration angewendet </p> </td>
   </tr>
   <tr>
    <td>DEPTH-INT</td>
-   <td><strong></strong><br /> <br /> OPTIONALdepth-Rekursion für das Rendering von untergeordneten Elementen, wie beim Sling-Rendering verwendet</td>
+   <td><strong>OPTIONAL</strong><br /> <br /> Tiefenwiedergabe für das Rendering von untergeordneten Elementen, wie beim Sling-Rendering verwendet</td>
   </tr>
  </tbody>
 </table>
@@ -59,7 +59,7 @@ Verwenden Sie **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.** js
 
 Exportkonfigurationen können erstellt werden, um das JSON-Rendering anzupassen.
 
-Sie können einen Konfigurationsknoten unter */apps/mobileapps/caas/exportConfigs.* erstellen.
+Sie können einen Konfigurationsknoten unter */apps/mobileapps/caas/exportConfigs.*
 
 | Knotenname | Name der Konfiguration (für Rendering-Selektor) |
 |---|---|
@@ -109,7 +109,7 @@ Die folgende Tabelle zeigt die Eigenschaften von Exportkonfigurationen:
    <td>Zeichenfolge[]</td>
    <td>alles einschließen</td>
    <td>Eigenschaftsnamen</td>
-   <td><p>Wenn excludePropertyPrefixes set<br /> dies angegebene Eigenschaften enthält, obwohl das Präfix mit dem Präfix ausgeschlossen wird,</p> <p>else (Eigenschaften ausschließen ignoriert) schließen nur diese Eigenschaften ein</p> </td>
+   <td><p>if excludePropertyPrefixes set<br /> Dies umfasst angegebene Eigenschaften, obwohl das Präfix mit dem Präfix ausgeschlossen wurde.</p> <p>else (Eigenschaften ausschließen ignoriert) schließen nur diese Eigenschaften ein</p> </td>
   </tr>
   <tr>
    <td>includeChildren</td>
@@ -135,7 +135,7 @@ Die folgende Tabelle zeigt die Eigenschaften von Exportkonfigurationen:
  </tbody>
 </table>
 
-### Export von Ressourcentypen überschreibt {#resource-type-export-overrides}
+### Außerkraftsetzungen beim Export von Ressourcentypen {#resource-type-export-overrides}
 
 Erstellen Sie einen Konfigurationsknoten unter */apps/mobileapps/caas/exportConfigs.*
 
@@ -155,11 +155,11 @@ Die folgende Tabelle zeigt die Eigenschaften:
    <td><strong>Beschreibung</strong></td>
   </tr>
   <tr>
-   <td>&lt;selector_to_inc&gt;</td>
+   <td>&lt;SELECTOR_TO_INC&gt;</td>
    <td>Zeichenfolge[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>Für die folgenden Sling-Ressourcentypen sollten Sie nicht den standardmäßigen CaaS-JSON-Export zurückgeben.<br /> Geben Sie einen Customer JSON-Export zurück, indem Sie die Ressource als <br /> &lt;resource&gt; rendern.&lt;selector_to_inc&gt;.json </td>
+   <td>Für die folgenden Sling-Ressourcentypen sollten Sie nicht den standardmäßigen CaaS-JSON-Export zurückgeben.<br /> Geben Sie einen Customer JSON-Export zurück, indem Sie die Ressource als rendern.<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>
   </tr>
  </tbody>
 </table>
@@ -171,7 +171,7 @@ Content Services umfasst zwei Exportkonfigurationen:
 * default (keine Konfiguration angegeben)
 * Seite (zum Rendern von Site-Seiten)
 
-#### Standard-Exportkonfiguration {#default-export-configuration}
+#### Standardmäßige Exportkonfiguration {#default-export-configuration}
 
 Die standardmäßige Exportkonfiguration für Content Services wird angewendet, wenn im angeforderten URI eine Konfiguration angegeben ist.
 

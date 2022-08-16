@@ -1,8 +1,8 @@
 ---
 title: Datenspeicherbereinigung
-seo-title: Datenspeicherbereinigung
+seo-title: Data Store Garbage Collection
 description: Erfahren Sie, wie Sie die Datenspeicherbereinigung zur Freigabe von Festplattenspeicher konfigurieren können.
-seo-description: Erfahren Sie, wie Sie die Datenspeicherbereinigung zur Freigabe von Festplattenspeicher konfigurieren können.
+seo-description: Learn how to configure Data Store Garbage Collection to free up disk space.
 uuid: 49488a81-986a-4d1a-96c8-aeb6595fc094
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,12 +13,12 @@ docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1887'
 ht-degree: 79%
 
 ---
 
-# Datenspeicherbereinigung  {#data-store-garbage-collection}
+# Datenspeicherbereinigung {#data-store-garbage-collection}
 
 Wenn ein herkömmliches WCM-Asset entfernt wird, kann der Verweis zum zugrunde liegenden Datenspeichersatz aus der Knotenhierarchie entfernt werden. Der Datenspeichersatz selbst bleibt allerdings bestehen. Dieser nicht referenzierte Datenspeichersatz wird dadurch zu „Garbage“, der nicht aufbewahrt werden muss. In Instanzen mit einer Reihe von Garbage-Assets ist es von Vorteil, diese loszuwerden, um Speicherplatz zu behalten und um die Sicherung sowie die Leistung bei der Dateisystemwartung zu optimieren.
 
@@ -31,13 +31,13 @@ AEM verwendet das Repository als Speicher für eine Reihe von internen Aktivitä
 * Workflow-Payload
 * Während des DAM-Renderings temporär erstellte Assets
 
-Wenn eines dieser temporären Objekte groß genug ist, Speicherplatz im Datenspeicher zu beanspruchen, und wenn das Objekt schließlich nicht mehr genutzt wird, bleibt der Datenspeichersatz selbst als „Garbage“ vorhanden. In einer typischen WCM-Autoren-/Veröffentlichungsanwendung ist die größte Quelle von „Garbage“ dieser Art in der Regel der Prozess der Aktivierung der Veröffentlichung. Wenn Daten auf Publish repliziert werden, werden sie zunächst in Sammlungen in einem effizienten Datenformat namens &quot;Durbo&quot;erfasst und im Repository unter `/var/replication/data` gespeichert. Die Datenbundles übersteigen oft den kritischen Größenschwellenwert für den Datenspeicher und werden daher als Datenspeichersätze gespeichert. Wenn die Replikation abgeschlossen ist, wird der Knoten in `/var/replication/data` gelöscht, der Datenspeicherdatensatz bleibt jedoch als &quot;Garbage&quot;.
+Wenn eines dieser temporären Objekte groß genug ist, Speicherplatz im Datenspeicher zu beanspruchen, und wenn das Objekt schließlich nicht mehr genutzt wird, bleibt der Datenspeichersatz selbst als „Garbage“ vorhanden. In einer typischen WCM-Autoren-/Veröffentlichungsanwendung ist die größte Quelle von „Garbage“ dieser Art in der Regel der Prozess der Aktivierung der Veröffentlichung. Wenn Daten auf Publish repliziert werden, werden sie zunächst in Sammlungen in einem effizienten Datenformat namens &quot;Durbo&quot;erfasst und im Repository unter `/var/replication/data`. Die Datenbundles übersteigen oft den kritischen Größenschwellenwert für den Datenspeicher und werden daher als Datenspeichersätze gespeichert. Wenn die Replikation abgeschlossen ist, wird der Knoten in `/var/replication/data` wird gelöscht, aber der Datenspeichersatz bleibt als &quot;Müll&quot;.
 
 Eine weitere Quelle von wiederherstellbarem Garbage sind Pakete. Paketdaten werden – wie alles andere auch – im Repository und bei Paketen, die größer sind als 4 KB, im Datenspeicher gespeichert. Während eines Entwicklungsprojekts oder im Laufe der Zeit können Pakete bei der Wartung eines Systems viele Male zusammengestellt und neu erstellt werden, wobei jede Version zu einem neuen Datenspeichersatz führt, durch den der Datensatz der vorherigen Version verwaist.
 
-## Wie funktioniert die automatische Datenspeicherbereinigung?  {#how-does-data-store-garbage-collection-work}
+## Wie funktioniert die automatische Datenspeicherbereinigung? {#how-does-data-store-garbage-collection-work}
 
-Wenn das Repository mit einem externen Datenspeicher konfiguriert wurde, [wird die automatische Datenspeicherbereinigung im Rahmen des wöchentlichen Wartungsfensters automatisch ausgeführt](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection). Der Systemadministrator kann bei Bedarf auch [die Datenspeicherbereinigung manuell ausführen](#running-data-store-garbage-collection). Im Allgemeinen wird empfohlen, dass die Datenspeicherbereinigung regelmäßig durchgeführt wird, doch die folgenden Faktoren sollten bei der Planung von Datenspeicherbereinigungen berücksichtigt werden:
+Wenn das Repository mit einem externen Datenspeicher konfiguriert wurde, [wird die automatische Datenspeicherbereinigung im Rahmen des wöchentlichen Wartungsfensters automatisch ausgeführt](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection). Der Systemadministrator kann auch [Ausführen der automatischen Datenspeicherbereinigung](#running-data-store-garbage-collection) nach Bedarf. Im Allgemeinen wird empfohlen, dass die Datenspeicherbereinigung regelmäßig durchgeführt wird, doch die folgenden Faktoren sollten bei der Planung von Datenspeicherbereinigungen berücksichtigt werden:
 
 * Datenspeicherbereinigungen nehmen Zeit in Anspruch und können die Leistung beieinträchtigen, was entsprechend eingeplant werden sollte.
 * Das Entfernen der „Garbage“-Datensätze im Datenspeicher hat keinen Einfluss auf die normale Leistung. Es handelt sich also nicht um eine Leistungsoptimierung.
@@ -62,7 +62,7 @@ Dieser Ansatz funktioniert bei einem einzelnen Knoten mit einem privaten Datensp
 
 Die automatische Datenspeicherbereinigung kann je nach dem eingerichteten Datenspeicher, auf dem AEM ausgeführt wird, auf drei Arten erfolgen:
 
-1. Über [Revisionsbereinigung](/help/sites-deploying/revision-cleanup.md) - ein Speicherbereinigungsmechanismus, der normalerweise für die Bereinigung von Knotenspeichern verwendet wird.
+1. Via [Revisionsbereinigung](/help/sites-deploying/revision-cleanup.md) - ein Speicherbereinigungsmechanismus, der normalerweise für die Bereinigung von Knotenspeichern verwendet wird.
 
 1. Über die [Automatische Datenspeicherbereinigung](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-operations-dashboard) – ein Bereinigungsmechanismus speziell für externe Datenspeicher, der im Vorgangs-Dashboard verfügbar ist
 1. Über die [JMX-Konsole](/help/sites-administering/jmx-console.md)
@@ -124,7 +124,7 @@ Vor der Ausführung der automatischen Datenspeicherbereinigung sollten Sie prüf
 
 >[!NOTE]
 >
->Die Aufgabe zur Durchführung der automatischen Datenspeicherbereinigung wird nur angezeigt, wenn Sie einen externen Dateidatenspeicher konfiguriert haben. Informationen zum Einrichten eines Dateidatenspeichers finden Sie unter [Konfigurieren von Knotenspeichern und Datenspeichern in AEM 6](/help/sites-deploying/data-store-config.md#file-data-store).
+>Die Aufgabe zur Durchführung der automatischen Datenspeicherbereinigung wird nur angezeigt, wenn Sie einen externen Dateidatenspeicher konfiguriert haben. Siehe [Konfigurieren von Knotenspeichern und Datenspeichern in AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) für Informationen zum Einrichten eines Dateidatenspeichers.
 
 ### Ausführen der automatischen Datenspeicherbereinigung über die JMX-Konsole {#running-data-store-garbage-collection-via-the-jmx-console}
 
@@ -137,9 +137,9 @@ In diesem Abschnitt wird die manuelle Ausführung der automatischen Datenspeiche
 So führen Sie die Speicherbereinigung durch:
 
 1. Markieren Sie in der Apache Felix OSGi Management Console die Registerkarte **Main** und wählen Sie aus dem folgenden Menü **JMX** aus
-1. Suchen und klicken Sie anschließend auf das MBean **Repository Manager** (oder navigieren Sie zu `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`).
+1. Suchen Sie danach und klicken Sie auf die **Repository Manager** MBean (oder navigieren Sie zu `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`).
 1. Klicken Sie auf **startDataStoreGC(boolean markOnly)**.
-1. Geben Sie &quot;`true`&quot;für den Parameter `markOnly` ein, falls erforderlich:
+1. eingeben`true`&quot; für die `markOnly` Parameter, falls erforderlich:
 
    | **Option** | **Beschreibung** |
    |---|---|
@@ -153,7 +153,7 @@ So führen Sie die Speicherbereinigung durch:
 
 >[!NOTE]
 >
->Die Aufgabe zur automatischen Datenspeicherbereinigung wird nur gestartet, wenn Sie einen externen Dateidatenspeicher konfiguriert haben. Wenn kein externer Dateidatenspeicher konfiguriert wurde, gibt die Aufgabe nach dem Aufrufen die Meldung `Cannot perform operation: no service of type BlobGCMBean found` zurück. Informationen zum Einrichten eines Dateidatenspeichers finden Sie unter [Konfigurieren von Knotenspeichern und Datenspeichern in AEM 6](/help/sites-deploying/data-store-config.md#file-data-store).
+>Die Aufgabe zur automatischen Datenspeicherbereinigung wird nur gestartet, wenn Sie einen externen Dateidatenspeicher konfiguriert haben. Wenn kein externer Dateidatenspeicher konfiguriert wurde, gibt die Aufgabe die Nachricht zurück `Cannot perform operation: no service of type BlobGCMBean found` nach dem Aufrufen. Siehe [Konfigurieren von Knotenspeichern und Datenspeichern in AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) für Informationen zum Einrichten eines Dateidatenspeichers.
 
 ## Automatisieren der automatischen Datenspeicherbereinigung {#automating-data-store-garbage-collection}
 
@@ -183,9 +183,9 @@ Der curl-Befehl wird sofort zurückgegeben.
 
 Die Datenspeicherkonsistenzprüfung meldet sämtliche fehlenden Datenspeicherbinärdateien, die dennoch referenziert werden. Führen Sie die folgenden Schritte aus, um eine Konsistenzprüfung zu starten:
 
-1. Gehen Sie zur JMX-Konsole. Informationen zur Verwendung der JMX-Konsole finden Sie in [diesem Artikel](/help/sites-administering/jmx-console.md#using-the-jmx-console).
-1. Suchen Sie nach dem MBean **BlobGarbageCollection** und klicken Sie darauf.
-1. Klicken Sie auf den Link `checkConsistency()`.
+1. Gehen Sie zur JMX-Konsole. Informationen zur Verwendung der JMX-Konsole finden Sie unter [diesem Artikel](/help/sites-administering/jmx-console.md#using-the-jmx-console).
+1. Suchen Sie nach **BlobGarbageCollection** MBean und klicken Sie darauf.
+1. Klicken Sie auf `checkConsistency()` Link.
 
 Nach dem Abschluss der Konsistenzprüfung wird eine Meldung mit der Zahl der als fehlend gemeldeten Binärdateien angezeigt. Ist die Zahl größer als 0, prüfen Sie das `error.log`, um weitere Details zu fehlenden Binärdateien anzuzeigen.
 

@@ -1,8 +1,8 @@
 ---
 title: Erstellen und Organisieren von Seiten
-seo-title: Erstellen und Organisieren von Seiten
+seo-title: Creating and Organizing Pages
 description: In diesem Abschnitt wird das Erstellen und Verwalten von Seiten mit AEM beschrieben, auf denen Sie dann Inhalt erstellen können.
-seo-description: In diesem Abschnitt wird das Erstellen und Verwalten von Seiten mit AEM beschrieben, auf denen Sie dann Inhalt erstellen können.
+seo-description: This section describes how to create and manage pages with AEM so that you can then create content on those pages.
 uuid: 47ce137a-7a85-4b79-b4e0-fdf08a9e77bd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1935'
+source-wordcount: '1910'
 ht-degree: 91%
 
 ---
@@ -38,7 +38,7 @@ Sie können Ihre Inhalte auch mithilfe von [Ordnern](#creating-a-new-folder) org
 
 Die Struktur einer Website kann als *Baumstruktur* gesehen werden, die die Inhaltsseiten enthält. Die Namen dieser Inhaltsseiten werden zur Bildung der URLs verwendet. Der Titel wird zusammen mit dem Seiteninhalt angezeigt.
 
-Nachstehend finden Sie einen Auszug aus der Geometrixx. wo beispielsweise auf die Seite `Triangle` zugegriffen wird:
+Nachstehend finden Sie einen Auszug aus der Geometrixx. wobei beispielsweise die `Triangle` wird aufgerufen:
 
 * Autorenumgebung
 
@@ -48,7 +48,7 @@ Nachstehend finden Sie einen Auszug aus der Geometrixx. wo beispielsweise auf di
 
    `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
-   Je nach Konfiguration Ihrer Instanz kann die Verwendung von `/content` in der Veröffentlichungsumgebung optional sein.
+   Je nach Konfiguration Ihrer Instanz verwenden Sie `/content` kann in der Veröffentlichungsumgebung optional sein.
 
 ```xml
   /content
@@ -70,7 +70,7 @@ Nachstehend finden Sie einen Auszug aus der Geometrixx. wo beispielsweise auf di
     /...
 ```
 
-Diese Struktur kann über die Websites-Konsole angezeigt werden, die Sie verwenden können, um [durch die Baumstruktur](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15) zu navigieren.
+Diese Struktur kann über die Websites-Konsole angezeigt werden, mit der Sie [durch die Baumstruktur navigieren](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -88,7 +88,7 @@ Beim Erstellen einer neuen Seite gibt es zwei Schlüsselfelder:
    * Mit diesem Wert wird der URI generiert.
    * Benutzereingaben sind für dieses Feld optional. Wenn kein Name angegeben ist, wird er vom Titel abgeleitet.
 
-Beim Erstellen einer neuen Seite validiert AEM [den Seitennamen entsprechend den Konventionen](/help/sites-developing/naming-conventions.md), die von AEM und JCR vorgeschrieben sind.
+Beim Erstellen einer neuen Seite AEM [den Seitennamen gemäß den Konventionen validieren](/help/sites-developing/naming-conventions.md) von AEM und JCR auferlegt.
 
 Die Implementierung und die Liste der zulässigen Zeichen unterscheiden sich je nach Benutzeroberfläche geringfügig (sie ist für die Touch-optimierte Benutzeroberfläche umfassender). Es ist jedoch mindestens Folgendes zulässig:
 
@@ -113,10 +113,10 @@ Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den
 
 Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen entsprechend den Konventionen von AEM und JCR](/help/sites-developing/naming-conventions.md).
 
-In der klassischen Benutzeroberfläche können Sie **keine ungültigen Zeichen** im Feld **Name** eingeben.
+In der klassischen Benutzeroberfläche **kann keine ungültigen Zeichen eingeben** im **Name** -Feld.
 
 >[!NOTE]
->In der Touch-optimierten Benutzeroberfläche können Sie **keine ungültigen Zeichen** im Feld **Name** senden. Wenn AEM ungültige Zeichen erkennt, wird das Feld markiert und eine erklärende Meldung angezeigt, die auf zu entfernende/ersetzende Zeichen verweist.
+>In der Touch-optimierten Benutzeroberfläche **kann keine ungültigen Zeichen senden** im **Name** -Feld. Wenn AEM ungültige Zeichen erkennt, wird das Feld markiert und eine erklärende Meldung angezeigt, die auf zu entfernende/ersetzende Zeichen verweist.
 
 >[!NOTE]
 >
@@ -141,17 +141,17 @@ Wird beim Benennen der Seite verwendet.
 * **Vorlage**
 Eine Liste von Vorlagen, die für das Erstellen neuer Seiten verwendet werden können.
 
-### Komponenten  {#components}
+### Komponenten {#components}
 
 Komponenten sind die Elemente, die von AEM bereitgestellt werden, damit Sie bestimmte Inhaltstypen hinzufügen können. AEM ist mit einsatzbereiten Komponenten ausgestattet, die umfangreiche Funktionen bieten, wie:
 
 * Text
 * Bild
 * Diashow
-* Video
+* Video   
 * viele weitere
 
-Nachdem Sie eine Seite erstellt und geöffnet haben, können Sie [Inhalte mithilfe der Komponenten](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph) hinzufügen, die über den [Sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick) verfügbar sind.
+Nachdem Sie eine Seite erstellt und geöffnet haben, können Sie [Inhalt mithilfe der Komponenten hinzufügen](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), verfügbar über [Sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
 
 ## Verwalten von Seiten {#managing-pages}
 
@@ -197,7 +197,7 @@ Sofern nicht alle Seiten für Sie im Voraus erstellt wurden, müssen Sie vor dem
 
    >[!NOTE]
    >
-   >Sie können auch eine Seite erstellen, wenn Sie eine vorhandene Seite bearbeiten. Mit der Option &quot;Untergeordnete Seite erstellen&quot;auf der Registerkarte **Seite** des Sidekicks wird eine neue Seite direkt unter der bearbeiteten Seite erstellt.
+   >Sie können auch eine Seite erstellen, wenn Sie eine vorhandene Seite bearbeiten. Verwenden Sie die Option &quot;Untergeordnete Seite erstellen&quot;aus dem **Seite** im Sidekick eine neue Seite direkt unter der Seite erstellen, die bearbeitet wird.
 
 ### Öffnen einer Seite zur Bearbeitung {#opening-a-page-for-editing}
 
@@ -209,7 +209,7 @@ Sie haben verschiedene Möglichkeiten, um eine Seite zur [Bearbeitung](/help/sit
 
 * Nachdem Sie eine Seite geöffnet haben, können Sie zu anderen Seiten innerhalb der Website navigieren, um sie zu bearbeiten, indem Sie auf die zugehörigen Hyperlinks klicken.
 
-### Kopieren und Einfügen einer Seite  {#copying-and-pasting-a-page}
+### Kopieren und Einfügen einer Seite {#copying-and-pasting-a-page}
 
 Beim Kopieren können Sie entweder
 
@@ -269,7 +269,7 @@ So verschieben Sie eine Seite oder benennen sie um:
 
 1. Machen Sie je nach Bedarf Angaben in den folgenden Feldern:
 
-   * **Destination**
+   * **Ziel**
 
       Verwenden Sie die Sitemap (verfügbar über die Dropdownliste), um den Speicherort zu wählen, an den die Seite verschoben werden soll.
 

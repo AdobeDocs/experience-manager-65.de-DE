@@ -1,8 +1,8 @@
 ---
 title: Anpassen von Ansichten von Seiteneigenschaften
-seo-title: Anpassen von Ansichten von Seiteneigenschaften
+seo-title: Customizing Views of Page Properties
 description: Jede Seite verfügt über eine Reihe von Eigenschaften, die Sie nach Bedarf bearbeiten können.
-seo-description: Jede Seite verfügt über eine Reihe von Eigenschaften, die Sie nach Bedarf bearbeiten können.
+seo-description: Every page has a set of properties that you can edit as required
 uuid: cbfca6e6-cb9e-43b1-8889-09a7cc9f8a51
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 76%
+source-wordcount: '481'
+ht-degree: 75%
 
 ---
 
@@ -38,7 +38,7 @@ Felder müssen einzeln konfiguriert werden, wenn eine Änderung erforderlich ist
    * Name: `cq:showOnCreate`
    * Typ: `Boolean`
 
-* Seiteneigenschaft, die in der Bearbeitungsansicht verfügbar sein soll (z. B. **View**/**Edit**) **Properties** option):
+* Seiteneigenschaft, die in der Bearbeitungsansicht verfügbar sein soll (z. B. **Ansicht**/**Bearbeiten**) **Eigenschaften** -Option):
 
    * Name: `cq:hideOnEdit`
    * Typ: `Boolean`
@@ -51,7 +51,7 @@ Sehen Sie als Beispiel die Einstellungen für Felder, die unter **Weitere Titel 
 
 >[!TIP]
 >
->Eine Anleitung zum Anpassen von Seiteneigenschaften finden Sie im Tutorial [Erweitern der Seiteneigenschaften](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) .
+>Siehe [Tutorial zum Erweitern der Seiteneigenschaften](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) für eine Anleitung zum Anpassen der Seiteneigenschaften.
 
 ## Konfiguration von Seiteneigenschaften {#configuring-your-page-properties}
 
@@ -60,7 +60,7 @@ Sie können diese Felder auch konfigurieren, indem Sie das Dialogfeld Ihrer Seit
 Beispiel: Der [**Seitenerstellungsassistent**](/help/sites-authoring/managing-pages.md#creating-a-new-page) zeigt standardmäßig die Felder an, die unter **Weitere Titel und Beschreibungen** gruppiert sind. Um diese auszublenden, nehmen Sie folgende Konfiguration vor:
 
 1. Erstellen Sie Ihre Seitenkomponente unter `/apps`.
-1. Erstellen Sie eine Überschreibung (mithilfe von *dialog diff*, bereitgestellt vom [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md)) für den Abschnitt `basic` Ihrer Seitenkomponente. Beispiel:
+1. Erstellen Sie eine Überschreibung (mithilfe von *dialog diff* von [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md)) für die `basic` -Abschnitt Ihrer Seitenkomponente; Beispiel:
 
    ```xml
    <your-page-component>/cq:dialog/content/items/tabs/items/basic
@@ -71,20 +71,20 @@ Beispiel: Der [**Seitenerstellungsassistent**](/help/sites-authoring/managing-pa
    >Siehe als Referenz:
    >
    >    `/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog`
-   Sie ***dürfen jedoch*** keine Änderungen am Pfad `/libs` vornehmen.
+   Sie ***must*** ändert nichts in der `/libs` Pfad.
    da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
    Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
-   1. Erstellen Sie das erforderliche Element (d. h. wie es in `/libs` vorhanden ist) unter `/apps` neu.
+   1. Erstellen Sie das erforderliche Element (d. h. wie es in vorhanden ist) neu. `/libs`) unter `/apps`
    1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 
 
-1. Legen Sie die Eigenschaft `path` auf `basic` fest, um auf die Außerkraftsetzung der grundlegenden Registerkarte zu verweisen (siehe auch den nächsten Schritt). Beispiel:
+1. Legen Sie die `path` Eigenschaft auf `basic` , um auf die Außerkraftsetzung der Registerkarte &quot;Standard&quot;zu verweisen (siehe auch den nächsten Schritt). Beispiel:
 
    ```xml
    /apps/demos/components/page/tabs/basic
    ```
 
-1. Erstellen Sie eine Überschreibung des Abschnitts `basic` - `moretitles` im entsprechenden Pfad. Beispiel:
+1. Erstellen Sie eine Überschreibung der `basic` - `moretitles` Abschnitt am entsprechenden Pfad; Beispiel:
 
    ```xml
    /apps/demos/components/page/tabs/basic/items/column/items/moretitles
@@ -101,9 +101,9 @@ Beispiel: Der [**Seitenerstellungsassistent**](/help/sites-authoring/managing-pa
 >[!NOTE]
 Wenn Sie Seiteneigenschaften für die Verwendung mit Live Copies konfigurieren, finden Sie weitere Details unter [Konfiguration von MSM-Sperren für Seiteneigenschaften](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui).
 
-## Beispielkonfiguration von Seiteneigenschaften  {#sample-configuration-of-page-properties}
+## Beispielkonfiguration von Seiteneigenschaften {#sample-configuration-of-page-properties}
 
-Dieses Beispiel zeigt die „dialog diff“-Technik von [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md), einschließlich der Verwendung von [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). Außerdem wird die Verwendung von `cq:showOnCreate` und `cq:hideOnEdit` veranschaulicht.
+Dieses Beispiel zeigt die „dialog diff“-Technik von [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md), einschließlich der Verwendung von [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). Außerdem wird die Verwendung beider `cq:showOnCreate` und `cq:hideOnEdit`.
 
 CODE AUF GITHUB
 

@@ -1,8 +1,8 @@
 ---
 title: Anzeigen von Seitenanalysedaten
-seo-title: Anzeigen von Seitenanalysedaten
+seo-title: Seeing Page Analytics Data
 description: Verwenden Sie Seitenanalysedaten, um die Wirkung des Seiteninhalts zu messen.
-seo-description: Verwenden Sie Seitenanalysedaten, um die Wirkung des Seiteninhalts zu messen.
+seo-description: Use page analytics data to gauge the effectiveness of their page content.
 uuid: a3d1e4d6-56af-44a5-832f-63167ea8af52
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 28529cae-6fbd-4879-a5b8-3ec8e1bcd586
 docset: aem65
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 88%
+source-wordcount: '90'
+ht-degree: 86%
 
 ---
 
@@ -32,4 +32,4 @@ Seitenanalysedaten werden in der Sites-Konsole angezeigt. Wenn Websites im Liste
 
 >[!NOTE]
 >
->Die Anzeige der Site-Analysedaten direkt in der Konsole ist nur in der Touch-optimierten Benutzeroberfläche möglich. Weitere Informationen finden Sie unter [Anzeigen von Seitenanalysedaten](/help/sites-authoring/page-analytics-using.md) in der Standarddokumentation für die Bearbeitung.
+>Die Anzeige der Site-Analysedaten direkt in der Konsole ist nur in der Touch-optimierten Benutzeroberfläche möglich. Siehe [Anzeigen von Seitenanalysedaten](/help/sites-authoring/page-analytics-using.md) in der Standarddokumentation für die Bearbeitung .

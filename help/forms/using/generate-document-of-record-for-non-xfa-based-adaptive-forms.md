@@ -12,7 +12,7 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 source-git-commit: a81367c2a07031d8c6cf549050a1445ff0c1a8dc
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3483'
 ht-degree: 100%
 
@@ -117,7 +117,7 @@ Die folgenden Abschnitte beschreiben, wie adaptive Formularelemente im Datensatz
   </tr>
   <tr>
    <td>Freihändige Unterschrift</td>
-   <td>Unterschrift freihändig</td>
+   <td>Freihändige Unterschrift</td>
    <td>Ja</td>
    <td> </td>
   </tr>
@@ -296,7 +296,7 @@ Beim Generieren eines Datensatzdokuments können Sie auf der Registerkarte „Da
 Für die Lokalisierung der Branding-Informationen, die Sie auf der Registerkarte für das Datensatzdokument eingeben, müssen Sie sicherstellen, dass das Gebietsschema des Browsers richtig eingestellt ist. Um die Branding-Informationen im Datensatzdokument anzupassen, gehen Sie wie folgt vor:
 
 1. Wählen Sie einen Bereich (Stammbereich) im Datensatzdokument aus und tippen Sie dann auf ![Konfigurieren](assets/configure.png).
-1. Tippen Sie auf ![dortab](assets/dortab.png). Die Registerkarte „Aufzuzeichnendes Dokument“ wird angezeigt.
+1. Tippen Sie auf ![dortab](assets/dortab.png). Die Registerkarte „Datensatzdokument“ wird angezeigt.
 1. Wählen Sie entweder die Standardvorlage oder eine benutzerdefinierte Vorlage für das Rendern von Datensatzdokumenten aus. Wenn Sie die Standardvorlage auswählen, wird eine Miniaturvorschau des Datensatzdokuments in der Dropdown-Liste für Vorlagen angezeigt.
 
    ![brandingtemplate](assets/brandingtemplate.png)
@@ -311,7 +311,7 @@ Für die Lokalisierung der Branding-Informationen, die Sie auf der Registerkarte
    * **Haftungsausschluss-Bezeichnung**
    * **Haftungsausschluss**
    * **Text des Haftungsausschlusses**
-   * **Akzentfarbe:** Die Farbe, in der Kopfzeilentext und Trennlinien im Datensatzdokument-PDF dargestellt werden.
+   * **Akzentfarbe:** Die Farbe, in der Kopfzeilentext und Trennlinien im PDF des aufzuzeichnenden Dokuments dargestellt werden.
    * **Schriftfamilie:** Schriftfamilie des Textes im Datensatzdokument-PDF. 
    * **Für Kontrollkästchen und Optionsschaltflächenkomponenten nur ausgewählte Werte einblenden**
    * **Trennzeichen für mehrere ausgewählte Werte**

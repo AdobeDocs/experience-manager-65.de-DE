@@ -12,7 +12,7 @@ docset: aem65
 feature: Mobile Forms
 exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 100%
 
@@ -80,8 +80,8 @@ Eine vorhandene HTML-Anwendung kann die FormBridge-API nutzen, um mit einem Form
    >
    >
    >Das Tag &lt;div id=&quot;rightdiv&quot;> in **Zeile 18** bezeichnet das HTML-Fragment des XFA-Formulars.
-   >Die Seite wird in zwei Container unterteilt: **links** und **rechts**. Der rechte Container enthält das Formular. Der linke Container enthält zwei Eingabefelder und einen Teil der externen HTML-Seite.
-   >Der folgende Screenshot zeigt, wie das Formular in einem Browser erscheint.
+   Die Seite wird in zwei Container unterteilt: **links** und **rechts**. Der rechte Container enthält das Formular. Der linke Container enthält zwei Eingabefelder und einen Teil der externen HTML-Seite.
+   Der folgende Screenshot zeigt, wie das Formular in einem Browser erscheint.
 
    ![Portal](assets/portal.jpg)
 

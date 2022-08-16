@@ -1,19 +1,19 @@
 ---
 title: Identifizieren zu übersetzender Inhalte
-seo-title: Identifizieren zu übersetzender Inhalte
+seo-title: Identifying Content to Translate
 description: Erfahren Sie, wie sich zu übersetzende Inhalte identifizieren lassen.
-seo-description: Erfahren Sie, wie sich zu übersetzende Inhalte identifizieren lassen.
+seo-description: Learn how to identify content that needs translating.
 uuid: 81b9575c-1c7a-4955-b03f-3f26cbd4f956
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: eedff940-4a46-4c24-894e-a5aa1080d23d
-feature: Sprachkopie
+feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1150'
 ht-degree: 87%
 
 ---
@@ -34,7 +34,7 @@ Die Datei gilt für alle Übersetzungsprojekte.
 
 >[!NOTE]
 >
->Nach einer Aktualisierung auf 6.4 wird empfohlen, die Datei aus /etc zu verschieben. Weitere Informationen finden Sie unter [Allgemeine Repository-Neustrukturierung in AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules) .
+>Nach einer Aktualisierung auf 6.4 wird empfohlen, die Datei aus /etc zu verschieben. Siehe [Allgemeine Repository-Neustrukturierung in AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules) für weitere Details.
 
 Die Regeln umfassen die folgenden Informationen:
 
@@ -98,7 +98,7 @@ Das folgende Beispiel übersetzt den Inhalt aller `text`-Eigenschaften sowie and
 </node>
 ```
 
-## Regelsyntax für die Extrahierung von Assets von Seiten   {#rule-syntax-for-extracting-assets-from-pages}
+## Regelsyntax für die Extrahierung von Assets von Seiten  {#rule-syntax-for-extracting-assets-from-pages}
 
 Verwenden Sie die folgende Regelsyntax, um in andere Komponenten integrierte oder durch andere Komponenten referenzierte Assets einzubeziehen:
 
@@ -163,7 +163,7 @@ So können Sie darauf zugreifen:
 
    ![chlimage_1-56](assets/chlimage_1-56.jpeg)
 
-Von hier aus können Sie **Kontext** hinzufügen. Dies ermöglicht Ihnen das Hinzufügen eines Pfads.
+Von hier aus können Sie **Kontext hinzufügen**. Dies ermöglicht Ihnen das Hinzufügen eines Pfads.
 
 ![chlimage_1-57](assets/chlimage_1-57.jpeg)
 
@@ -173,11 +173,11 @@ Anschließend müssen Sie Ihren Kontext auswählen und dann auf **Bearbeiten** 
 
 Es gibt vier Attribute, die Sie über die Benutzeroberfläche ändern können: `isDeep`, `inherit`, `translate` und `updateDestinationLanguage`.
 
-**** isDeepDieses Attribut gilt für Knotenfilter und ist standardmäßig &quot;true&quot;. Es prüft, ob der Knoten oder seine Vorgängerelemente die Eigenschaft mit dem im Filter angegebenen Eigenschaftswert enthalten. Bei „false“ wird die Überprüfung nur für den aktuellen Knoten durchgeführt.
+**isDeep** Dieses Attribut gilt für Knotenfilter und ist standardmäßig &quot;true&quot;. Es prüft, ob der Knoten oder seine Vorgängerelemente die Eigenschaft mit dem im Filter angegebenen Eigenschaftswert enthalten. Bei „false“ wird die Überprüfung nur für den aktuellen Knoten durchgeführt.
 
-Beispielsweise werden untergeordnete Knoten zu einem Übersetzungsauftrag hinzugefügt, selbst wenn für den übergeordneten Knoten die Eigenschaft `draftOnly` auf &quot;true&quot;gesetzt ist, um Entwurfsinhalte zu kennzeichnen. Hier kommt `isDeep` ins Spiel, prüft, ob bei den übergeordneten Knoten die Eigenschaft `draftOnly` auf „true“ eingestellt ist, und schließt diese untergeordneten Knoten aus.
+Beispielsweise werden untergeordnete Knoten zu einem Übersetzungsauftrag hinzugefügt, selbst wenn der übergeordnete Knoten über eine Eigenschaft verfügt `draftOnly` auf &quot;true&quot;gesetzt, um Entwurfsinhalte zu kennzeichnen. Hier kommt `isDeep` ins Spiel, prüft, ob bei den übergeordneten Knoten die Eigenschaft `draftOnly` auf „true“ eingestellt ist, und schließt diese untergeordneten Knoten aus.
 
-Im Editor können Sie **Is Deep** auf der Registerkarte **Filter** aktivieren/deaktivieren.
+Im Editor können Sie **Is Deep** im **Filter** Registerkarte.
 
 ![chlimage_1-59](assets/chlimage_1-59.jpeg)
 
@@ -189,19 +189,19 @@ Im folgenden Beispiel ist die xml dargestellt, die generiert wird, wenn **Is Dee
 </filter>
 ```
 
-**** inheritDies gilt für Eigenschaften. Standardmäßig werden alle Eigenschaften übernommen. Sollten Sie jedoch wünschen, dass manche Eigenschaften nicht für das untergeordnete Element übernommen werden, können Sie diese Eigenschaft als „false“ markieren, sodass sie nur auf diesen spezifischen Knoten angewendet wird.
+**inherit** Dies gilt für Eigenschaften. Standardmäßig werden alle Eigenschaften übernommen. Sollten Sie jedoch wünschen, dass manche Eigenschaften nicht für das untergeordnete Element übernommen werden, können Sie diese Eigenschaft als „false“ markieren, sodass sie nur auf diesen spezifischen Knoten angewendet wird.
 
 In der Benutzeroberfläche können Sie **Übernehmen** auf der Registerkarte **Eigenschaften** aktivieren/deaktivieren.
 
 ![chlimage_1-60](assets/chlimage_1-60.jpeg)
 
-**** translateDas Attribut &quot;translate&quot;dient einfach dazu, anzugeben, ob eine Eigenschaft übersetzt werden soll oder nicht.
+**translate** Das Attribut translate wird einfach verwendet, um anzugeben, ob eine Eigenschaft übersetzt werden soll oder nicht.
 
 In der Benutzeroberfläche können Sie **Übersetzen** auf der Registerkarte **Eigenschaften** aktivieren/deaktivieren.
 
-**** updateDestinationLanguageDieses Attribut wird für Eigenschaften verwendet, die keinen Text, sondern Sprachcodes enthalten, z. B. jcr:language. Der Benutzer übersetzt keinen Text, sondern das Sprachschema von der Quelle ins Ziel. Solche Eigenschaften werden nicht zur Übersetzung versendet.
+**updateDestinationLanguage** Dieses Attribut wird für Eigenschaften verwendet, die keinen Text, sondern Sprachcodes enthalten, z. B. jcr:language. Der Benutzer übersetzt keinen Text, sondern das Sprachschema von der Quelle ins Ziel. Solche Eigenschaften werden nicht zur Übersetzung versendet.
 
-In der Benutzeroberfläche können Sie **Übersetzen** auf der Registerkarte **Eigenschaften** aktivieren/deaktivieren, jedoch für die spezifischen Eigenschaften, die Sprachcodes als Wert haben.
+In der Benutzeroberfläche können Sie **Übersetzen** im **Eigenschaften** für die spezifischen Eigenschaften, die Sprachcodes als Wert aufweisen.
 
 Der Unterschied zwischen `updateDestinationLanguage` und `translate` lässt sich hier anhand eines einfachen Beispiels für einen Kontext mit zwei Regeln veranschaulichen:
 
@@ -214,7 +214,7 @@ Das Ergebnis in der xml sieht wie folgt aus:
 <property inherit="true" name="jcr:language" translate="false" updateDestinationLanguage="true"/>
 ```
 
-## Manuelles Bearbeiten der Regeldatei  {#editing-the-rules-file-manually}
+## Manuelles Bearbeiten der Regeldatei {#editing-the-rules-file-manually}
 
 Die in AEM installierte Datei translation_rules.xml enthält einen Standardsatz an Übersetzungsregeln. Sie können die Datei bearbeiten, damit die Anforderungen Ihrer Übersetzungsprojekte erfüllt werden. Sie können zum Beispiel Regeln hinzufügen, sodass die Inhalte Ihrer benutzerdefinierten Komponenten übersetzt werden.
 
@@ -224,7 +224,7 @@ Wenn Sie die Datei translation_rules.xml bearbeiten, speichern Sie zuvor eine Si
 >
 >Erstellen Sie das Paket nach der Erstellung des Inhaltspakets bei jeder Bearbeitung der Datei neu.
 
-## Beispiel für eine Datei mit Übersetzungsregeln  {#example-translation-rules-file}
+## Beispiel für eine Datei mit Übersetzungsregeln {#example-translation-rules-file}
 
 ```xml
 <nodelist>

@@ -1,8 +1,8 @@
 ---
 title: Kalenderfunktion
-seo-title: Kalenderfunktion
+seo-title: Calendar Feature
 description: Stellt Community-Ereignisinformationen im Kalenderformat bereit
-seo-description: Stellt Community-Ereignisinformationen im Kalenderformat bereit
+seo-description: Provides community event information in a calendar format
 uuid: 262f6afa-d8aa-4815-8440-a8ed5668c76d
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,47 +13,47 @@ docset: aem65
 exl-id: c9b34b00-525d-4ca3-bd18-11bb7ce66787
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1160'
 ht-degree: 46%
 
 ---
 
 # Kalenderfunktion {#calendar-feature}
 
-## Einführung {#introduction}
+## Einführung    {#introduction}
 
 Mit der Kalenderfunktion können der Community Veranstaltungsdaten im Kalenderformat bereitgestellt werden. So lassen sich entweder alle Site-Besucher oder nur angemeldete Besucher (Community-Mitglieder) einladen, die Veranstaltungen können jedoch nur von eigens autorisierten Mitgliedern bearbeitet werden.
 
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
 * Hinzufügen der Kalenderfunktion zu einer AEM Site
-* Konfigurationseinstellungen für `Calendar`-Komponenten
+* Konfigurationseinstellungen für `Calendar` Komponenten
 
 ## Hinzufügen eines Kalenders zu einer Seite {#adding-a-calendar-to-a-page}
 
-Um eine Komponente `Calendar` im Autorenmodus zu einer Seite hinzuzufügen, suchen Sie mit dem Komponenten-Browser nach
+So fügen Sie eine `Calendar` -Komponente auf einer Seite im Autorenmodus verwenden Sie den Komponenten-Browser, um
 
 * `Communities / Calendar`
 
 und ziehen Sie die Komponente an die gewünschte Stelle auf der Seite, beispielsweise in die Nähe einer Eigenschaft, die Benutzer bewerten sollen.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](/help/communities/basics.md).
+Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die [erforderlichen clientseitigen Bibliotheken](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) eingeschlossen sind, wird die Komponente `Calendar` so angezeigt.
+Wenn die [erforderliche clientseitige Bibliotheken](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) eingeschlossen sind, wird die `Calendar` wird angezeigt.
 
 ![calendar-component](assets/calendar-component.png)
 
 ### Konfigurieren eines Kalenders {#configuring-calendar}
 
-Wählen Sie die platzierte Komponente `Calendar` aus, um auf das Symbol `Configure` zuzugreifen, mit dem das Bearbeitungsdialogfeld geöffnet wird.
+Wählen Sie die platzierte `Calendar` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
 ![konfigurieren](assets/configure-new.png)
 
 ![configure-calendar](assets/configure-calendar1.png)
 
-#### Registerkarte „Settings“{#settings-tab}
+#### Registerkarte „Settings“ {#settings-tab}
 
-Geben Sie auf der Registerkarte **Einstellungen** an, ob Tags auf Kalendereinträge angewendet werden sollen.
+Unter dem **Einstellungen** -Registerkarte angeben, ob Tags auf Kalendereinträge angewendet werden dürfen.
 
 * **Ereignisse pro Seite**
 
@@ -73,7 +73,7 @@ Geben Sie auf der Registerkarte **Einstellungen** an, ob Tags auf Kalendereintr�
 
 * **Tagging zulassen**
 
-   Wenn diese Option aktiviert ist, können Mitglieder den von ihnen geposteten Ereignissen Tag-Beschriftungen hinzufügen (siehe Registerkarte **Tag-Feld** ). Diese Option ist standardmäßig aktiviert.
+   Wenn diese Option aktiviert ist, können Mitglieder den von ihnen geposteten Ereignissen Tag-Beschriftungen hinzufügen (siehe **Tag-Feld** Registerkarte). Diese Option ist standardmäßig aktiviert.
 
 * **Datei-Uploads zulassen**
 
@@ -121,11 +121,11 @@ Geben Sie auf der Registerkarte **Einstellungen** an, ob Tags auf Kalendereintr�
 
 * **Feature-Inhalt zulassen**
 
-   Wenn diese Option aktiviert ist, kann die Idee als [Inhalt mit Funktionen](/help/communities/featured.md) identifiziert werden. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](/help/communities/featured.md). Diese Option ist standardmäßig deaktiviert.
 
-Geben Sie auf der Registerkarte **Benutzermoderation** an, wie die veröffentlichten Themen und Antworten (benutzergenerierte Inhalte) verwaltet werden. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
+Unter dem **Benutzermoderation** -Registerkarte angeben, wie die veröffentlichten Themen und Antworten (benutzergenerierte Inhalte) verwaltet werden. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
-#### Registerkarte Benutzermoderation {#user-moderation-tab}
+#### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
 * **Posts ablehnen**
 
@@ -155,13 +155,13 @@ Geben Sie auf der Registerkarte **Benutzermoderation** an, wie die veröffentlic
 
    Geben Sie an, wie oft ein Ereignis oder Kommentar gekennzeichnet werden muss, bevor er in der öffentlichen Ansicht ausgeblendet wird. Bei einem Wert von -1 wird das gekennzeichnete Thema oder der gekennzeichnete Kommentar nie ausgeblendet. In allen anderen Fällen muss der Wert größer als der oder gleich dem „Schwellenwert für Moderation“ sein. Der Standardwert ist 5.
 
-#### Registerkarte &quot;Tag-Feld&quot;{#tag-field-tab}
+#### Registerkarte &quot;Tag-Feld&quot; {#tag-field-tab}
 
 Auf der Registerkarte **Tag-Feld** wird eingeschränkt, welche Tags je nach ausgewähltem Namespace (falls auf der Registerkarte **Einstellungen** aktiviert) verwendet werden können.
 
 * **Zulässige Namespaces**
 
-   Relevant, wenn `Allow Tagging` auf der Registerkarte **Einstellungen** aktiviert ist. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
+   Relevant, wenn `Allow Tagging` wird unter dem **Einstellungen** Registerkarte. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
 
 * **Empfehlungsgrenze**
 
@@ -171,7 +171,7 @@ Auf der Registerkarte **Tag-Feld** wird eingeschränkt, welche Tags je nach ausg
 >
 >Unter [Verwalten von Tags](/help/sites-administering/tags.md) finden Sie Informationen darüber, wie Sie neue Tag-Namespaces (Taxonomie) hinzufügen können.
 
-#### Registerkarte &quot;Übersetzung&quot;{#translation-tab}
+#### Tab &quot;Übersetzung&quot; {#translation-tab}
 
 Auf der Registerkarte **Übersetzung** können Sie festlegen, ob bei für die Community-Site aktivierten Übersetzungsoption anstatt bestimmter Einträge der gesamte Thread (Veranstaltung und Kommentare) übersetzt werden soll.
 
@@ -195,7 +195,7 @@ Verfügt der angemeldete Benutzer über Moderator- oder Administratorrechte, kan
 
 #### Mitglieder {#members}
 
-Wenn der angemeldete Benutzer Community-Mitglied oder [privilegiertes Mitglied](/help/communities/users.md#privileged-members-group) ist (je nach Konfiguration), kann er `New Event` auswählen, um ein neues Kalenderereignis zu erstellen und zu posten.
+Wenn der angemeldete Benutzer Community-Mitglied ist oder [privilegiertes Mitglied](/help/communities/users.md#privileged-members-group) (je nach Konfiguration) können sie `New Event` , um ein neues Kalenderereignis zu erstellen und zu posten.
 
 Insbesondere können sie:
 
@@ -217,7 +217,7 @@ Nicht registrierte oder angemeldete Besucher können veröffentlichte Veranstalt
 
 ## Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie auf der Seite [Kalendergrundlagen](/help/communities/calendar-basics-for-developers.md) für Entwickler.
+Weitere Informationen finden Sie unter [Kalendergrundlagen](/help/communities/calendar-basics-for-developers.md) für Entwickler.
 
 Informationen zur Moderation von Kalenderereignissen und Kommentaren finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 

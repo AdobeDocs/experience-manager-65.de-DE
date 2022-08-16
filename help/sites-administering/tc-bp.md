@@ -1,19 +1,19 @@
 ---
 title: Best Practices für die Übersetzung
-seo-title: Best Practices für die Übersetzung
+seo-title: Translation Best Practices
 description: Hier finden Sie Best Practices für die Einrichtung und Ausführung von Übersetzungsprojekten – zusammengestellt von Technik- und Beratungsteams von Adobe.
-seo-description: Hier finden Sie Best Practices für die Einrichtung und Ausführung von Übersetzungsprojekten – zusammengestellt von Technik- und Beratungsteams von Adobe.
+seo-description: Find best practices compiled by Adobe engineering and consulting teams to help you get up and running with translation projects.
 uuid: 3bac1d73-9696-4c9b-8bdd-6f00fac40cf7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features, best-practices
 content-type: reference
 discoiquuid: 1554010e-a1d1-4edf-b28f-9eead8f83b4a
-feature: Sprachkopie
+feature: Language Copy
 exl-id: 01a81c4b-cb30-4f7e-b281-7194ebb5fc70
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '836'
 ht-degree: 100%
 
 ---
@@ -33,7 +33,7 @@ Das Erstellen bzw. Erweitern einer globalen Web-Präsenz kann ein komplexer Proz
 * Falls die Ressourcensituation es erlaubt, sollten Übersetzungsaktivitäten von einem zentralen Team verwaltet werden, das Fachwissen hinsichtlich der nötigen Tools, Prozesse und Lieferantenbeziehungen entwickeln kann.
 * **Planen** Sie Ihre globale Struktur und Ihre Prozesse, **erstellen Sie Prototypen** davon und **testen** Sie sie, um sicherzustellen, dass sie Ihr Unternehmen unterstützen und dass Sie über die notwendige Unterstützung der Stakeholder in den Regionen verfügen.
 
-## Site-Struktur  {#site-structure}
+## Site-Struktur {#site-structure}
 
 * Beginnen Sie den Entwurf der Site-Struktur mit der Untersuchung Ihrer Inhalte und stellen Sie fest, wo und in welcher Sprache Inhalte verfasst werden. Dieser Ort muss die höchste Ebene Ihrer Website darstellen.
 * Bewährt und empfohlen ist eine **sprachbasierte Struktur** mit höchstens drei Ebenen zwischen den Autorenaktivitäten auf höchster Ebene und den landesspezifischen Websites.
@@ -48,7 +48,7 @@ Das Erstellen bzw. Erweitern einer globalen Web-Präsenz kann ein komplexer Proz
 * Verwenden Sie MSM zur Erstellung von länderspezifischen Websites aus den übersetzten Sprachstämmen und für den Rollout von Inhalten an Websites mit derselben Sprache. Beispielsweise kann der französische Sprachstamm an die Websites von Frankreich, Belgien und die Schweiz bereitgestellt werden.
 * Planen Sie, erstellen Sie Prototypen und führen Sie Tests durch, bevor Sie die Implementierung beginnen.
 
-## Übersetzungsprozesse und -methoden  {#translation-processes-and-methods}
+## Übersetzungsprozesse und -methoden {#translation-processes-and-methods}
 
 * Engagieren Sie einen **Lokalisierungsdienstleister** mit Fachkenntnissen in Übersetzung und relevanten Lokalisierungstätigkeiten. Lokalisierungsdienstleister helfen bei der Skalierung Ihres globalen Unternehmens, indem sie ein Spektrum an Ressourcen und Technologien zur Verfügung stellen, welche die Effizienz verbessern und Übersetzungskosten sparen:
 

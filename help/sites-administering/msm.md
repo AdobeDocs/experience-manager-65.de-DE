@@ -1,8 +1,8 @@
 ---
 title: '"Wiederverwenden von Inhalten: Multi Site Manager und Live Copy"'
-seo-title: '"Wiederverwenden von Inhalten: Multi Site Manager und Live Copy"'
+seo-title: 'Reusing Content: Multi Site Manager and Live Copy'
 description: Erfahren Sie mehr über die Wiederverwendung von Inhalten mit Live Copies und dem Multi Site Manager.
-seo-description: Erfahren Sie mehr über die Wiederverwendung von Inhalten mit Live Copies und dem Multi Site Manager.
+seo-description: Learn about reusing content with Live Copies and the Multi Site Manager.
 uuid: 9f955226-8fc9-4357-b90c-c6896b0dc4b4
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ discoiquuid: c21debc3-ecf4-4aa9-ab5a-18ddd5cf2fff
 exl-id: 1e839845-fb5c-4200-8ec5-6ff744a96943
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2684'
+source-wordcount: '2664'
 ht-degree: 84%
 
 ---
 
-# Wiederverwenden von Inhalten: Multi-Site-Manager und Live Copy{#reusing-content-multi-site-manager-and-live-copy}
+# Wiederverwenden von Inhalten: Multi Site Manager und Live Copy{#reusing-content-multi-site-manager-and-live-copy}
 
 Multi Site Manager (MSM) ermöglicht Ihnen die Verwendung derselben Website-Inhalte an mehreren Standorten. MSM verwendet seine Live Copy-Funktion, um Folgendes zu erreichen:
 
@@ -39,7 +39,7 @@ Die entsprechenden Themen werden auf dieser Seite sowie auf den folgenden Seiten
 * [MSM-Rollout-Konflikte](/help/sites-administering/msm-rollout-conflicts.md)
 * [Best Practices für MSM](/help/sites-administering/msm-best-practices.md)
 
-## Mögliche Szenarien  {#possible-scenarios}
+## Mögliche Szenarien {#possible-scenarios}
 
 Es gibt viele Nutzungsszenarien für MSM und Live Copies. Einige der Szenarien umfassen Folgendes:
 
@@ -75,7 +75,7 @@ Es gibt viele Nutzungsszenarien für MSM und Live Copies. Einige der Szenarien u
    >MSM übersetzt die Inhalte nicht. Er wird zur Erstellung der erforderlichen Struktur und zur Bereitstellung von Inhalten verwendet.
    >
    >
-   >Informationen zum Erweitern eines solchen Beispiels finden Sie unter [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-administering/translation.md) .
+   >Siehe [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-administering/translation.md) , wenn Sie ein solches Beispiel erweitern möchten.
 
 * **National – Zentrale zu Zweigstellen**
 
@@ -140,7 +140,7 @@ Auf MSM kann mithilfe verschiedener Optionen der jeweiligen Konsole direkt über
 
 * **Eigenschaften anzeigen** (**Sites**)
 
-   * Gegebenenfalls hilft Ihnen diese Option [Ihre Live Copy](/help/sites-administering/msm-livecopy.md#monitoring-your-live-copy) zu überwachen, indem Sie Informationen zum zugehörigen **Live Copy** y oder **Blueprint** angeben.
+   * Gegebenenfalls hilft Ihnen diese Option [Live Copy überwachen](/help/sites-administering/msm-livecopy.md#monitoring-your-live-copy) durch Bereitstellung von Informationen über **Live Cop** y oder **Blueprint**.
 
 * **Verweise** (**Sites**)
 
@@ -186,7 +186,7 @@ Als Einführung stellt die folgende Tabelle einen Überblick über die wichtigst
   </tr>
   <tr>
    <td><strong>Live-Beziehung</strong><br /> </td>
-   <td>Effektive Definition der Vererbung für eine bestimmte Ressource; die Verbindung(en) zwischen Quelle und Live Copies.<br /> </td>
+   <td>Effektive Definition der Vererbung für eine bestimmte Ressource; die Verbindung(en) zwischen der Quelle und den Live Copies.<br /> </td>
    <td>Stellt sicher, dass Änderungen an der Quelle mit der Live Copy synchronisiert werden können.</td>
   </tr>
   <tr>
@@ -201,7 +201,7 @@ Als Einführung stellt die folgende Tabelle einen Überblick über die wichtigst
   </tr>
   <tr>
    <td><strong>Synchronisierung</strong></td>
-   <td>Der allgemeine Begriff für die Synchronisierung von Inhalten zwischen der Quelle und den Live Copies (sowohl <strong>Rollout</strong> als auch <strong>Synchronisieren</strong>).</td>
+   <td>Der generische Begriff für die Synchronisierung von Inhalten zwischen der Quelle und den Live Copies (durch beide <strong>Rollout</strong> und <strong>Synchronisieren</strong>).</td>
    <td> </td>
   </tr>
   <tr>
@@ -258,7 +258,7 @@ Als Einführung stellt die folgende Tabelle einen Überblick über die wichtigst
 
 >[!NOTE]
 >
->Die Objektnamen finden Sie unter [Übersicht über die Java-API](/help/sites-developing/extending-msm.md#overview-of-the-java-api) .
+>Siehe [Übersicht über die Java-API](/help/sites-developing/extending-msm.md#overview-of-the-java-api) für die Objektnamen.
 
 ## Live Copies {#live-copies}
 
@@ -273,11 +273,11 @@ Eine MSM-Live Copy ist eine Kopie von spezifischem Site-Inhalt, zu dem eine Liv
 
 * Synchronisierungsregeln, die als Rollout-Konfigurationen bezeichnet werden, bestimmen, welche Eigenschaften synchronisiert werden und wann die Synchronisierung durchgeführt wird.
 
-Im vorherigen Beispiel ist `/content/we-retail/language-masters/en` die globale Master-Site in englischer Sprache. Zur Wiederverwendung des Inhalts dieser Site werden MSM-Live Copies erstellt:
+Im vorherigen Beispiel ist `/content/we-retail/language-masters/en` die globale primäre Site in englischer Sprache. Zur Wiederverwendung des Inhalts dieser Site werden MSM-Live Copies erstellt:
 
 * Der Inhalt unter `/content/we-retail/language-masters/en` ist die Quelle.
 
-* Der Inhalt unter `/content/we-retail/language-masters/en` wird unter die Knoten `/content/we-retail/us/en/`, `/content/we-retail/gb/en`, `/content/we-retail/ca/en` und `/content/we-retail/au/en` kopiert. Dies sind die Live Copies.
+* Der unten stehende Inhalt `/content/we-retail/language-masters/en` wird unterhalb der `/content/we-retail/us/en/`, `/content/we-retail/gb/en`, `/content/we-retail/ca/en`und `/content/we-retail/au/en` Knoten. Dies sind die Live Copies.
 
 * Autoren nehmen an Seiten unter `/content/we-retail/language-masters/en` Änderungen vor.
 * Nach der Auslösung synchronisiert MSM diese Änderungen mit den Live Copies.
@@ -317,7 +317,7 @@ Wenn Sie in AEM eine Live Copy erstellen, können Sie den Live Copy-Zweig sehen 
 
 #### Verschachtelte Live Copies {#nested-live-copies}
 
-Wenn Sie (oder ein Prozess) eine [neue Seite in einer vorhandenen Live Copy](#live-copy-with-non-live-copy-pages) erstellen, kann diese neue Seite auch als Live Copy eines anderen Blueprints eingerichtet werden. Dies wird als verschachtelte Live Copy bezeichnet. Hier wird das Verhalten der zweiten (inneren) Live Copy durch die zweite (äußere) Live Copy auf folgende Weise beeinflusst:
+Wenn Sie (oder einen Prozess) eine [neue Seite in einer vorhandenen Live Copy](#live-copy-with-non-live-copy-pages) Diese neue Seite kann auch als Live Copy eines anderen Blueprints eingerichtet werden. Dies wird als verschachtelte Live Copy bezeichnet. Hier wird das Verhalten der zweiten (inneren) Live Copy durch die zweite (äußere) Live Copy auf folgende Weise beeinflusst:
 
 * Ein tiefes Rollout, das für die Live Copy der obersten Ebene ausgelöst wurde, kann in einer verschachtelten Live Copy fortgeführt werden (zum Beispiel bei übereinstimmendem Auslöser).
 * Alle Links zwischen den Quellen werden innerhalb der Live Copies neu geschrieben.
@@ -340,8 +340,8 @@ Jede Seite eines Zweigs von Seiten kann als Quelle einer Live Copy verwendet wer
 
 MSM ermöglicht Ihnen allerdings die Definition einer Blueprint-Konfiguration, die einen Quellpfad angibt. Eine Blueprint-Konfiguration hat die folgenden Vorteile:
 
-* Erlauben Sie dem Autor, die Option **Rollout** auf einem Blueprint zu verwenden, um (explizit) Änderungen an Live Copies zu pushen, die von diesem Blueprint erben.
-* Lassen Sie den Autor zu, **Site erstellen** zu verwenden. Dadurch kann der Benutzer einfach Sprachen auswählen und die Struktur der Live Copy konfigurieren.
+* Autor darf die **Rollout** -Option auf einem Blueprint - um (explizit) Änderungen an Live Copies zu pushen, die von diesem Blueprint übernehmen.
+* Autor darf **Site erstellen**; Dadurch kann der Benutzer einfach Sprachen auswählen und die Struktur der Live Copy konfigurieren.
 * Sie definiert eine standardmäßige Rollout-Konfiguration für Live Copies, die über eine Beziehung mit dem Blueprint verfügen.
 
 Bei der Quelle einer Live Copy kann es sich entweder um reguläre Seiten handeln oder um Seiten, die von einer Blueprint-Konfiguration abgedeckt sind. Beide Nutzungsszenarien sind möglich.
@@ -430,21 +430,21 @@ Die folgenden Schritte beschreiben die standardmäßige Vorgehensweise für die 
    1. Sie können bei Bedarf optional eine [Rollout-Konfiguration erstellen](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration).
 
 1. Legen Sie fest, wo Sie die [zu verwendenden Rollout-Konfigurationen angeben](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use) müssen und nehmen Sie bei Bedarf eine Konfiguration vor.
-1. Erstellen Sie bei Bedarf [eine Blueprint-Konfiguration](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration), die den Quellinhalt der Live Copy angibt.
+1. Falls erforderlich, [Erstellen einer Blueprint-Konfiguration](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration) , der den Quellinhalt der Live Copy angibt.
 1. [Erstellen Sie eine Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy).
 1. Nehmen Sie bei Bedarf Änderungen am Quellinhalt vor. Sie sollten den normalen, von Ihrer Organisation etablierten Inhaltsprüfungs- und Genehmigungsprozess anwenden.
-1. [Roll ](/help/sites-administering/msm-livecopy.md#rolling-out-a-blueprint) aus dem Blueprint oder  [synchronisiere die Live Copy ](/help/sites-administering/msm-livecopy.md#synchronizing-a-live-copy) mit den Änderungen.
+1. [Rollout](/help/sites-administering/msm-livecopy.md#rolling-out-a-blueprint) Blueprint oder [Synchronisieren der Live Copy](/help/sites-administering/msm-livecopy.md#synchronizing-a-live-copy) mit den Änderungen.
 
 ## Anpassen von MSM {#customizing-msm}
 
 MSM stellt Tools bereit, damit Ihre Implementierung sich an die außergewöhnlichen Komplexitäten anpasst, die bei der Freigabe von Inhalten auftreten können:
 
 * **Benutzerdefinierte Rollout-Konfigurationen**
-   [Erstellen Sie eine Rollout-](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) Konfiguration, wenn die installierten Rollout-Konfigurationen nicht Ihren Anforderungen entsprechen. Sie können jeden verfügbaren Rollout-Auslöser und jede verfügbare Synchronisierungsaktion verwenden.
+   [Erstellen einer Rollout-Konfiguration](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) wenn die installierten Rollout-Konfigurationen Ihre Anforderungen nicht erfüllen. Sie können jeden verfügbaren Rollout-Auslöser und jede verfügbare Synchronisierungsaktion verwenden.
 
 * **Benutzerdefinierte Synchronisierungsaktionen**
-   [Erstellen Sie eine benutzerdefinierte Synchronisierungsaktion, ](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) wenn die installierten Aktionen Ihre spezifischen Anwendungsanforderungen nicht erfüllen. MSM stellt eine Java-API für die Erstellung einer benutzerdefinierten Synchronisierungsaktion bereit.
+   [Erstellen einer benutzerdefinierten Synchronisierungsaktion](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) wenn die installierten Aktionen Ihre spezifischen Anwendungsanforderungen nicht erfüllen. MSM stellt eine Java-API für die Erstellung einer benutzerdefinierten Synchronisierungsaktion bereit.
 
 ## Best Practices {#best-practices}
 
-Die Seite [Best Practices für MSM](/help/sites-administering/msm-best-practices.md) enthält wichtige Informationen zur Implementierung.
+Die Seite [Best Practices für MSM](/help/sites-administering/msm-best-practices.md) enthält wichtige Informationen zur Implementierung.

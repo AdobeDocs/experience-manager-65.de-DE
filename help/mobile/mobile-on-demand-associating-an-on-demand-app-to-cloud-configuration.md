@@ -1,8 +1,8 @@
 ---
 title: Cloud-Konfiguration
-seo-title: Cloud-Konfiguration
+seo-title: Cloud Configuration
 description: Durch die Verknüpfung einer On-Demand-App mit einer Cloud-Konfiguration kann Adobe Experience Manager (AEM) direkt mit einem von Mobile On-Demand gehosteten Projekt kommunizieren, indem eine Zwei-Wege-Verknüpfung erstellt wird. Auf dieser Seite erfahren Sie mehr.
-seo-description: Durch die Verknüpfung einer On-Demand-App mit einer Cloud-Konfiguration kann Adobe Experience Manager (AEM) direkt mit einem von Mobile On-Demand gehosteten Projekt kommunizieren, indem eine Zwei-Wege-Verknüpfung erstellt wird. Auf dieser Seite erfahren Sie mehr.
+seo-description: Associating an On-Demand App to a Cloud Configuration allows Adobe Experience Manager (AEM) to communicate directly with a Mobile On-Demand hosted project by establishing a two way link. Follow this page to learn more.
 uuid: f377f2af-864b-43df-9d42-4a5fd6cd70d5
 contentOwner: User
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: d0d29b99-53d4-4b0d-947b-39d91b381de7
 exl-id: 37428543-c310-4712-a4ec-1f482579fb4b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 11%
+source-wordcount: '408'
+ht-degree: 10%
 
 ---
 
@@ -33,38 +33,38 @@ Von dort aus ist es möglich, Inhalte zu veröffentlichen, in der Vorschau anzuz
 >
 >Bevor Sie mit der Konfiguration der Cloud-Konfiguration für Ihre On-Demand-App beginnen, müssen Sie mit der Bereitstellung und Konfiguration des AEM Mobile On-demand Services-Clients für AEM Mobile vertraut sein.
 >
->Weitere Informationen finden Sie unter [Einrichten von AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) im Abschnitt &quot;Verwaltung&quot;.
+>Weitere Informationen finden Sie unter [Einrichten von AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) im Abschnitt &quot;Administration&quot;.
 
-Um Mobile On-Demand-Cloud Services zu konfigurieren, klicken Sie oben rechts auf der Kachel **Verbindung verwalten** in Ihrem App-Dashboard auf das obere Zahnrad.
+Um Mobile On-Demand-Cloud Services zu konfigurieren, klicken Sie oben rechts im **Verbindung verwalten** -Kachel aus Ihrem App-Dashboard aus.
 
-Sie sollten mit dem App-Dashboard und den verfügbaren Kacheln vertraut sein. Weitere Informationen finden Sie unter [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) .
+Sie sollten mit dem App-Dashboard und den verfügbaren Kacheln vertraut sein. Siehe [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) für weitere Details.
 
-### Link zur Cloud-Konfiguration einrichten {#setting-up-link-to-cloud-configuration}
+### Einrichten von Link zur Cloud-Konfiguration {#setting-up-link-to-cloud-configuration}
 
 >[!CAUTION]
 >
 >Stellen Sie sicher, dass Sie über einen On-Demand-Client und eine Cloud-Konfiguration verfügen.
 >
->Weitere Informationen finden Sie unter [Einrichten von AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) im Abschnitt &quot;Verwaltung&quot;.
+>Weitere Informationen finden Sie unter [Einrichten von AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) im Abschnitt &quot;Administration&quot;.
 
 Die folgenden Schritte beschreiben die Einrichtung eines Links zur Cloud-Konfiguration:
 
-1. Wählen Sie **Mobile** **Apps** und dann Ihre Mobile On-Demand-App aus dem Katalog.
-1. Klicken Sie auf das Zahnradsymbol auf der Kachel **Verbindung verwalten** .
+1. Von **Mobile** auswählen **Apps** und dann Ihre Mobile On-Demand-App aus dem Katalog.
+1. Klicken Sie auf das Zahnradsymbol auf **Verbindung verwalten** Kachel.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. Geben Sie die bereits vorhandene Konfiguration ein oder erstellen Sie eine neue, indem Sie **Konfigurationstitel**, **Geräte-ID** und **Geräte-Token** eingeben.
+1. Geben Sie die bereits vorhandene Konfiguration ein oder erstellen Sie eine neue, indem Sie die **Konfigurationstitel**, **Geräte-ID** und **Geräte-Token**.
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
-1. Nachdem Sie die **Geräte-ID** und das **Geräte-Token** überprüft haben, wählen Sie Ihr On-Demand-Projekt aus der Liste aus.
+1. Einmal **Geräte-ID** und **Geräte-Token** überprüft wurden, wählen Sie Ihr On-Demand-Projekt aus der Liste aus.
 
-   Klicken Sie auf **Übermitteln**.
+   Klicken Sie auf **Senden**.
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-   Die Kachel **Verbindung verwalten** zeigt Ihre Cloud-Konfiguration.
+   Die **Verbindung verwalten** -Kachel zeigt Ihre Cloud-Konfiguration an.
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 

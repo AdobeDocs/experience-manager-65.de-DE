@@ -1,8 +1,8 @@
 ---
 title: Moderationskonsole
-seo-title: Moderationskonsole
+seo-title: Moderation Console
 description: Zugriff auf die Moderationskonsole
-seo-description: Zugriff auf die Moderationskonsole
+seo-description: How to access the Moderation console
 uuid: d3b8a160-85b2-43f4-9891-5fafa8c48c5f
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -14,18 +14,18 @@ role: Admin
 exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
 source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '2050'
+source-wordcount: '2042'
 ht-degree: 4%
 
 ---
 
 # Moderationskonsole {#moderation-console}
 
-In AEM Communities ist die Massenmoderation von Community-Inhalten](/help/communities/moderate-ugc.md) sowohl in der Autoren- als auch in der Veröffentlichungsumgebung durch Administratoren und Community-Moderatoren möglich (vertrauenswürdige Community-Mitglieder, die als Moderatoren zugewiesen sind).[
+In AEM Communities Bulk [Moderation von Community-Inhalten](/help/communities/moderate-ugc.md) ist sowohl in der Autoren- als auch in der Veröffentlichungsumgebung durch Administratoren und Community-Moderatoren möglich (vertrauenswürdige Community-Mitglieder, die als Moderatoren zugewiesen sind).
 
-Administratoren und Community-Moderatoren können auch [kontextbezogene Moderation](/help/communities/in-context.md) in der Veröffentlichungsumgebung durchführen.
+Administratoren und Community-Moderatoren können auch [kontextbezogene Moderation](/help/communities/in-context.md) in der Veröffentlichungsumgebung.
 
-Eine Funktion aller [Community-Sites](/help/communities/sites-console.md) ist ein `Administration`-Menüelement, das Benutzern zur Verfügung steht, die sich mit Administratorrechten anmelden. Der Link `Administration` bietet Zugriff auf die Moderationskonsole.
+Eine Funktion von allen [Community-Sites](/help/communities/sites-console.md) ist `Administration` Menüelement, das Benutzern zur Verfügung steht, die sich mit Administratorrechten anmelden. Die `Administration` -Link bietet Zugriff auf die Moderationskonsole.
 
 In der Moderationskonsole haben Administratoren und Community-Moderatoren Zugriff auf alle benutzergenerierten Inhalte (UGC), deren Moderation sie zulassen können. Wenn es zulässig ist, mehrere Sites zu moderieren, können Sie Beiträge auf allen Sites anzeigen oder nach ausgewählten Communities-Sites filtern.
 
@@ -38,7 +38,7 @@ Die Moderationskonsole unterstützt:
 * Anzeigen von UGC-Details.
 * Anzeigen von UGC-Autorendetails.
 
-Moderationsaufgaben können nur ausgeführt werden, wenn sie als Administrator oder Mitglied mit ` [moderator permissions](/help/communities/in-context.md#identifyingtrustedmembers)` angemeldet sind.
+Nur bei Anmeldung als Administrator oder als Mitglied mit ` [moderator permissions](/help/communities/in-context.md#identifyingtrustedmembers)`, können Moderationsaufgaben ausgeführt werden.
 
 ## Zugriff auf Veröffentlichungsumgebung {#publish-environment-access}
 
@@ -54,9 +54,9 @@ Der Zugriff auf die Moderationskonsole von einer veröffentlichten Community-Sit
 
 In der Autorenumgebung, um die Moderationskonsole zu erreichen
 
-* Wählen Sie in der globalen Navigation **[!UICONTROL Communities]** > **[!UICONTROL Moderation]** aus.
+* Wählen Sie in der globalen Navigation die Option **[!UICONTROL Communities]** > **[!UICONTROL Moderation]**.
 
-Nur wenn Sie als Administrator oder Mitglied mit [Moderatorberechtigungen](/help/communities/in-context.md#identifyingtrustedmembers) angemeldet sind, können Moderationsaufgaben ausgeführt werden. Der einzige angezeigte Community-Inhalt ist derjenige, den das angemeldete Mitglied moderieren darf.
+Nur bei Anmeldung als Administrator oder als Mitglied mit [Moderatorberechtigungen](/help/communities/in-context.md#identifyingtrustedmembers), können Moderationsaufgaben ausgeführt werden. Der einzige angezeigte Community-Inhalt ist derjenige, den das angemeldete Mitglied moderieren darf.
 
 >[!NOTE]
 >
@@ -80,15 +80,15 @@ Die obere Navigationsleiste ist für alle Konsolen konstant. Weitere Information
 
 Die Symbolleiste, die sich unter der oberen Navigationsleiste befindet, stellt den folgenden Umschalter auf der linken Seite bereit:
 
-* [Filter ](/help/communities/moderation.md#filterrail)
-railoptiert eine Leiste, in der die Eigenschaften zum Filtern des Inhalts ausgewählt werden können.
+* [Filterleiste](/help/communities/moderation.md#filterrail)
+öffnet eine Leiste, in der die Eigenschaften zum Filtern des Inhalts ausgewählt werden können.
 
 Die Symbolleiste, die sich unter der oberen Navigationsleiste befindet, stellt den folgenden Umschalter auf der linken Seite bereit:
 
 ![toggleswitch](assets/toggleswitch.png)
 
-[Filter ](/help/communities/moderation.md#filterrail)
-optimiert eine Leiste bei Auswahl von Suche, wodurch Eigenschaften zum Filtern des Inhalts ausgewählt werden können.
+[Filterleiste](/help/communities/moderation.md#filterrail)
+öffnet bei Auswahl von Suche eine Leiste, in der die Eigenschaften zum Filtern des Inhalts ausgewählt werden können.
 
 ![Filterleiste](assets/filterrail.png)
 
@@ -102,13 +102,13 @@ Der Inhaltsbereich enthält Informationen für veröffentlichte UGC:
 * Speicherort des Beitrags.
 * Wann es gepostet wurde.
 * Anzahl der Antworten auf den Beitrag.
-* [](/help/communities/moderate-ugc.md#sentiment) Dem Beitrag zugeordnete Sentimentdaten
+* [Sentiment](/help/communities/moderate-ugc.md#sentiment) mit dem Beitrag verknüpft ist
 * Bei Genehmigung wird ein Häkchen angezeigt.
 * Wenn eine Anlage vorhanden ist, wird eine Papierklammer angezeigt.
 
 >[!NOTE]
 > 
->Der Inhaltsbereich verfügt über einen *unendlichen Bildlauf*, was bedeutet, dass Sie mit dem Bildlauf fortfahren können, bis Sie das Ende des Inhalts erreicht haben. Die Symbolleiste bleibt auch beim Scrollen an einer festen, sichtbaren Position über dem Inhaltsbereich.
+>Der Inhaltsbereich verfügt über eine *endlicher Bildlauf*, was bedeutet, dass Sie mit dem Scrollen fortfahren können, bis Sie das Ende des Inhalts erreicht haben. Die Symbolleiste bleibt auch beim Scrollen an einer festen, sichtbaren Position über dem Inhaltsbereich.
 
 ### Filterleiste {#ootbfilters}
 
@@ -116,11 +116,11 @@ Der Inhaltsbereich enthält Informationen für veröffentlichte UGC:
 
 Das Symbol für das seitliche Bedienfeld öffnet die Filterleiste. Die Filterleiste, die links neben dem Inhaltsbereich angezeigt wird, bietet verschiedene Filter, von denen jeder unmittelbare Auswirkungen auf die referenzierte benutzergenerierte Inhalte hat, die im Inhaltsbereich angezeigt werden.
 
-Die Filter in jeder Kategorie sind **OR**&#39;d zusammen, und die Filter in verschiedenen Kategorien sind **AND**&#39;d zusammen.
+Die Filter in jeder Kategorie sind **ODER**&quot;d zusammen&quot;und die Filter in verschiedenen Kategorien sind **UND** Ich würde zusammen gehen.
 
-Wenn Sie beispielsweise sowohl **Frage** als auch **Antwort** aktivieren, werden Inhalte angezeigt, die entweder eine **Frage** *oder* und eine **Antwort** sind.
+Wenn Sie beispielsweise beide **Frage** und **Antwort**, sehen Sie Inhalte, die entweder **Frage** *oder* ein **Antwort**.
 
-Wenn Sie jedoch **Frage** und **Ausstehend** aktivieren, wird nur Inhalt angezeigt, der eine **Frage** ist und **Ausstehend** lautet.
+Wenn Sie jedoch **Frage** und **Ausstehend**, sehen Sie nur Inhalt, der ein **Frage** und **Ausstehend**.
 
 >[!NOTE]
 >
@@ -142,7 +142,7 @@ Die Textsuche beschränkt die Anzeige des referenzierten benutzergenerierten Inh
 
 ![text-search](assets/text-search.png)
 
-#### Website {#site}
+#### Site {#site}
 
 Die Site beschränkt die Anzeige des referenzierten benutzergenerierten Inhalts auf Beiträge auf ausgewählten Community-Sites. Wenn keine Sites aktiviert sind, werden alle Verweise auf UGC angezeigt.
 
@@ -150,7 +150,7 @@ Die Site beschränkt die Anzeige des referenzierten benutzergenerierten Inhalts 
 
 >[!NOTE]
 >
->Wenn ein Administrator auf die Massen-Moderationskonsole zugreift, werden alle Verweise auf UGC angezeigt, einschließlich der Sites, die nicht mit dem [Website-Erstellungsassistenten](/help/communities/sites-console.md) erstellt wurden, wie z. B. die Geometrixx.
+>Wenn ein Administrator auf die Massenmoderationskonsole zugreift, werden alle Verweise auf UGC angezeigt, einschließlich der nicht mit der Variablen [Assistent zur Site-Erstellung](/help/communities/sites-console.md), z. B. die Geometrixx-Beispiele.
 >
 >Wenn ein Mitglied der vertrauenswürdigen Community auf die Massen-Moderationskonsole auf der Veröffentlichungsinstanz zugreift, werden nur Verweise auf UGC angezeigt, die für Community-Sites erstellt wurden, die das Mitglied moderieren darf, und können mit dem Site-Filter gefiltert werden.
 
@@ -179,8 +179,8 @@ Der Content-Typ beschränkt die angezeigte referenzierte benutzergenerierte Inha
 So fügen Sie zusätzliche Ressourcen zum Filtern hinzu:
 
 * Melden Sie sich bei Ihrer Autoreninstanz als Administrator an.
-* Öffnen Sie [Web Console](https://localhost:4502/system/console/configMgr).
-* Suchen Sie `AEM Communities Moderation Dashboard Filters`.
+* Öffnen [Web-Konsole](https://localhost:4502/system/console/configMgr).
+* Suchen `AEM Communities Moderation Dashboard Filters`.
 * Wählen Sie die Konfiguration aus, die im Bearbeitungsmodus geöffnet werden soll.
 * Geben Sie den Ressourcentyp einer Komponente ein, nach der gefiltert werden soll:
 
@@ -189,10 +189,10 @@ So fügen Sie zusätzliche Ressourcen zum Filtern hinzu:
       `Voting=social/tally/components/hbs/voting`
    ![additional-contenttype](assets/additional-contenttype.png)
 
-* Wählen Sie Speichern aus.
+* Klicken Sie auf Speichern.
 * Aktualisieren Sie die Konsole Communities - Moderation .
 
-Das Ergebnis ist ein neuer auswählbarer Filter für `Voting` unter der Filtergruppe `Content Type`.
+Das Ergebnis ist ein neuer, auswählbarer Filter für `Voting` unter `Content Type` Filtergruppe.
 
 Wenn dieser Filter ausgewählt ist, zeigt der Inhalt des Dashboards UGC an, der mit einem der eingegebenen Ressourcentypen übereinstimmt.
 
@@ -210,7 +210,7 @@ Der Status beschränkt die Anzeige des referenzierten benutzergenerierten Inhalt
 
 Durch die Kennzeichnung wird der referenzierte benutzergenerierte Inhalt auf Beiträge beschränkt, die als markiert oder ausgeblendet gekennzeichnet sind.
 
-Sobald ein Inhaltselement gekennzeichnet ist, bleibt es so lange gekennzeichnet, bis Sie dieses einzelne Inhaltselement aufheben, indem Sie die Schaltfläche **Flag** erneut auswählen. Beachten Sie, dass es keine Kennzeichnungsebenen gibt, z. B. &quot;Wichtig&quot;oder &quot;Follow-up&quot;.
+Sobald ein Inhaltselement gekennzeichnet ist, bleibt es so lange gekennzeichnet, bis Sie die Kennzeichnung für dieses Inhaltselement aufheben, indem Sie die Option **Markierung** erneut. Beachten Sie, dass es keine Kennzeichnungsebenen gibt, z. B. &quot;Wichtig&quot;oder &quot;Follow-up&quot;.
 
 ![Markierung](assets/flagging.png)
 
@@ -222,38 +222,38 @@ Mitglieder beschränken die referenzierte UGC, die für UGC angezeigt wird, die 
 
 #### Veröffentlichungszeitraum {#posted-in-the-last}
 
-Posted In Last limits the referenced UGC displayed to posts in the last hour, day, week, month, or year.
+Gepostet In der letzten Begrenzung beschränkt die referenzierte benutzergenerierte Anzeige auf Beiträge, die in der letzten Stunde, am letzten Tag, in der Woche, im Monat oder im letzten Jahr veröffentlicht wurden.
 
 ![postal-last](assets/posted-last.png)
 
 #### Empfindung {#sentiment}
 
-[](/help/communities/moderate-ugc.md#sentiment) Sentimenteinschränkt die referenzierte UGC, die für Beiträge mit einem Sentimentwert angezeigt wird, der entweder positiv, negativ oder neutral ist.
+[Sentiment](/help/communities/moderate-ugc.md#sentiment) begrenzt die angezeigte referenzierte benutzergenerierte Anzeige auf Beiträge mit einem Sentimentwert, der entweder positiv, negativ oder neutral ist.
 
 ![sentiment](assets/sentiment.png)
 
 ## Benutzerdefinierte Filter {#custom-filters}
 
-Neben den vordefinierten Filtern in [Filterleiste](/help/communities/moderation.md#ootbfilters) können der Moderations-Benutzeroberfläche weitere benutzerdefinierte Filter für Metadaten hinzugefügt werden. Entwickler können den Beispielcode in Github verwenden, um die vorhandenen Filter der Moderations-Benutzeroberfläche zu erweitern.
+Abgesehen von den vordefinierten Filtern in [Filterleiste](/help/communities/moderation.md#ootbfilters)können der Moderations-Benutzeroberfläche zusätzliche benutzerdefinierte Filter für Metadaten hinzugefügt werden. Entwickler können den Beispielcode in Github verwenden, um die vorhandenen Filter der Moderations-Benutzeroberfläche zu erweitern.
 
 ![custom-tag-filter](assets/custom-tag-filter.png)
 
-Das [Beispielprojekt](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/main/aem-communities-moderation-filter) auf Github implementiert den Tag-Filter, um die UGC-Liste basierend darauf zu filtern, ob die spezifischen Tags auf benutzergenerierte Inhalte angewendet werden. Sie können dem Beispielcode folgen und analoge Filter für andere ähnliche UGC-Metadatenfelder erstellen.
+Die [Beispielprojekt](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/main/aem-communities-moderation-filter) bei GitHub implementiert den Tag-Filter, um die UGC-Liste basierend darauf zu filtern, ob die spezifischen Tags auf benutzergenerierte Inhalte angewendet werden. Sie können dem Beispielcode folgen und analoge Filter für andere ähnliche UGC-Metadatenfelder erstellen.
 
 So installieren Sie das Beispiel für den Filter Tags :
 
-1. Öffnen Sie den Paketmanager in der AEM-Autoreninstanz (`https://[aem-author]:4502/crx/packmgr/index.jsp`) und in der AEM-Veröffentlichungsinstanz (`https://[aem-publish]:4503/crx/packmgr/index.jsp`).
-1. Erstellen Sie das Paket `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` aus dem Github-Code und installieren und aktivieren Sie es.
-1. Öffnen Sie die Bundles-Konsole in der AEM-Autoreninstanz ( `https://[aem-author]:4502/system/console/bundles`) und in der AEM-Veröffentlichungsinstanz ( `https://[aem-publish]:4503/system/console/bundles`).
-1. Erstellen Sie das Paket (`[com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`) von Github und installieren und aktivieren Sie es.
-1. Wechseln Sie zum Knoten **/apps/social/moderation/facets** in der AEM-Autoreninstanz (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) und der AEM-Veröffentlichungsinstanz (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`).
-1. Fügen Sie einen technischen Benutzer **communities-utility-reader** mit `jcr:read` -Berechtigungen hinzu.
+1. Öffnen Sie den Paketmanager in der AEM-Autoreninstanz (`https://[aem-author]:4502/crx/packmgr/index.jsp`) und AEM Publish (`https://[aem-publish]:4503/crx/packmgr/index.jsp`).
+1. Paket erstellen `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` von GitHub-Code aus und installieren und aktivieren Sie denselben.
+1. Öffnen Sie die Bundles-Konsole in der AEM-Autoreninstanz ( `https://[aem-author]:4502/system/console/bundles`) und AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`).
+1. Erstellen Sie das Paket (`[com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`) von Github aus und installieren und aktivieren Sie dasselbe.
+1. Navigieren Sie zu **/apps/social/moderation/facets** Knoten in der AEM-Autoreninstanz (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) und AEM Publish (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`).
+1. Technischen Benutzer hinzufügen **communities-utility-reader** mit `jcr:read` Berechtigungen.
 
 So stellen Sie die benutzerdefinierten Filter auf bestehenden Community-Sites bereit:
 
-1. Bearbeiten Sie `Clientlibs` der vorhandenen Moderationsseite `/content/we-retail/us/en/community/moderation/shell3/jcr:content/head/clientlibs.`
+1. Bearbeiten `Clientlibs` der vorhandenen Moderationsseite `/content/we-retail/us/en/community/moderation/shell3/jcr:content/head/clientlibs.`
 
-   * Neue Kategorie `cq.social.hbs.moderation.v2.` hinzufügen
+   * Neue Kategorie hinzufügen `cq.social.hbs.moderation.v2.`
 
 1. Wechseln zu `/content/we-retail/us/en/community/moderation/shell3/jcr:content/rails/searchWell/items/filters.`
 
@@ -265,15 +265,15 @@ So stellen Sie die benutzerdefinierten Filter auf bestehenden Community-Sites be
 
 ## Moderationsaktionen {#moderation-actions}
 
-[Moderationsaktionen ](/help/communities/moderate-ugc.md#moderation-actions) können für eine oder mehrere Auswahlen durchgeführt werden, die im Inhaltsbereich oder beim Anzeigen von Inhaltsdetails vorgenommen werden.
+[Moderationsaktionen](/help/communities/moderate-ugc.md#moderation-actions) kann für eine oder mehrere Auswahlen durchgeführt werden, die im Inhaltsbereich oder beim Anzeigen von Inhaltsdetails vorgenommen werden.
 
-Um die Beiträge stapelweise zu moderieren, klicken Sie im Inhaltsbereich auf das Symbol Auswählen (![Auswahl](assets/selecticon.png)) auf einem Beitrag, das angezeigt wird, wenn Sie mit der Maus (Desktop) darauf zeigen oder auf den Beitrag (Mobil) drücken und einen Finger gedrückt halten. Auf diese Weise können Sie den Mehrfachauswahlmodus aufrufen und jetzt die nachfolgenden Beiträge auswählen, die in der Massenmoderierung berücksichtigt werden sollen, indem Sie einfach darauf klicken. Verwenden Sie die in der Symbolleiste angezeigten Schaltflächen, um Moderationsaktionen für die ausgewählten Beiträge durchzuführen. Alle Aktionen werden zur Bestätigung aufgefordert.
+Um die Beiträge stapelweise zu moderieren, klicken Sie im Inhaltsbereich auf die Schaltfläche Auswählen (![selecticon](assets/selecticon.png)) auf einem Beitrag, der angezeigt wird, wenn Sie mit der Maus (Desktop) darauf zeigen oder mit dem Finger auf den Beitrag drücken (Mobil). Auf diese Weise können Sie den Mehrfachauswahlmodus aufrufen und jetzt die nachfolgenden Beiträge auswählen, die in der Massenmoderierung berücksichtigt werden sollen, indem Sie einfach darauf klicken. Verwenden Sie die in der Symbolleiste angezeigten Schaltflächen, um Moderationsaktionen für die ausgewählten Beiträge durchzuführen. Alle Aktionen werden zur Bestätigung aufgefordert.
 
 Um einen einzelnen Beitrag im Inhaltsbereich zu moderieren, bewegen Sie den Mauszeiger (Desktop) darauf oder drücken Sie die Eingabetaste und halten Sie den Finger auf den Beitrag (Mobil), sodass Schaltflächen auf dem Beitrag erscheinen. Bei der Verwendung einzelner Inhaltsdetails wird nur eine Löschaktion zur Bestätigung aufgefordert.
 
 ### Moderieren mehrerer Beiträge {#moderating-multiple-posts}
 
-Rufen Sie den Massenauswahlmodus auf, indem Sie auf das Symbol `Select` für einen Beitrag klicken:
+Rufen Sie den Massenauswahlmodus auf, indem Sie auf die `Select` Symbol in einem Beitrag:
 
 ![select-icon](assets/select-icon.png)
 
@@ -300,7 +300,7 @@ Im Einzelauswahlmodus ist es möglich:
 * [Ablehnen](#deny)
 * [Löschen](#delete)
 * [Schließen](#close)
-* Anzeigen von [Moderationsverlauf](#moderation-history)
+* Ansicht [Moderationsverlauf](#moderation-history)
 * [Details anzeigen](#viewdetails)
 
 In der Kartenansicht über den Symbolen für Moderationsaktionen ist der Text des Beitrags vorhanden und darunter sind die Daten, die angeben:
@@ -328,7 +328,7 @@ Wenn Sie mit einem einzelnen Beitrag arbeiten, wird das Symbol Zulassen angezeig
 
 ![ablehnen](assets/deny.png)
 
-Die Moderationsaktion **Ablehnen** ist nur für moderierte Inhalte verfügbar und wird nur im Mehrfachauswahlmodus auf nicht moderierten Inhalten angezeigt.
+Die **Ablehnen** Die Moderationsaktion ist nur für moderierte Inhalte verfügbar und wird nur im Mehrfachauswahlmodus bei nicht moderierten Inhalten angezeigt.
 
 Nicht moderierte Inhalte werden immer genehmigt.
 
@@ -340,7 +340,7 @@ Inhalt, der den Status &quot;Ausstehend&quot;verlässt, kann nie in den Status &
 
 ![Löschen Sie](assets/delete.png)
 
-Im Einzelauswahl- oder Massenmodus können Sie Elemente auswählen und löschen. Die Löschaktion führt zu einem Bestätigungsdialogfeld. Nach dem Löschen werden diese Elemente sofort aus dem Inhaltsbereich entfernt. **Sobald UGC gelöscht wurde, wird es dauerhaft aus dem Repository entfernt und kann später nicht mehr abgerufen** werden.
+Im Einzelauswahl- oder Massenmodus können Sie Elemente auswählen und löschen. Die Löschaktion führt zu einem Bestätigungsdialogfeld. Nach dem Löschen werden diese Elemente sofort aus dem Inhaltsbereich entfernt. **Sobald UGC gelöscht wurde, wird es dauerhaft aus dem Repository entfernt und kann später nicht mehr abgerufen werden**.
 
 #### Schließen {#close}
 
@@ -366,7 +366,7 @@ Beispiel:
 
 Wenn Sie mit einem einzelnen Beitrag arbeiten, können Sie weitere Details anzeigen, indem Sie die UGC im Detailmodus öffnen.
 
-Bewegen Sie dazu den Mauszeiger über den Beitrag, um das Symbol `View Detail` anzuzeigen, und wählen Sie ihn aus, um ein Bedienfeld mit weiteren Details zum Beitrag anzuzeigen.
+Bewegen Sie dazu den Mauszeiger über den Beitrag, um die `View Detail` und wählen Sie es aus, um ein Bedienfeld mit weiteren Details zum Beitrag anzuzeigen.
 
 Um zum Inhaltsbereich zurückzukehren und mehrere UGC-Beiträge anzuzeigen, wählen Sie das X in der oberen rechten Ecke des Detailbereichs der Ansicht aus.
 

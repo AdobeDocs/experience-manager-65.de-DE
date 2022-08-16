@@ -11,7 +11,7 @@ discoiquuid: f2955419-c680-44a7-9913-c594b4577551
 feature: Correspondence Management
 exl-id: c9c007d0-c545-4738-b11b-4c50986342ee
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '845'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ Correspondence Management verfügt über die folgenden Konfigurationseigenschaft
   <tr>
    <td><p>Mindestbreite von römischen Zahlen</p> </td>
    <td><p>Mindestbreite für das Aufzählungszeichenfeld bei Verwendung von römischen Zahlen</p> </td>
-   <td><p>12.7mm</p> </td>
+   <td><p>12.7 mm</p> </td>
    <td><p>Beliebige Zahl</p> </td>
   </tr>
   <tr>
@@ -64,7 +64,7 @@ Correspondence Management verfügt über die folgenden Konfigurationseigenschaft
   <tr>
    <td><p>Typ der Zielhervorhebung</p> </td>
    <td><p>Typ der Zielhervorhebung in der Anwendung „Korrespondenz erstellen“</p> </td>
-   <td><p>Rahmen</p> </td>
+   <td><p>border</p> </td>
    <td><p>Rahmen/Füllung/keine</p> </td>
   </tr>
   <tr>
@@ -155,13 +155,13 @@ Correspondence Management verfügt über die folgenden Konfigurationseigenschaft
    <td><p>Datenanzeigeformate</p> </td>
    <td><p>Legt bestimmtes Anzeigeformat des Gebietsschemas für Daten fest</p> </td>
    <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=truelocale=de_DE; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator=.; numberUseGroupSeparator=truelocale=fr_FR; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=ja_JP; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
-   <td><p>--</p> </td>
+   <td><p>—</p> </td>
   </tr>
   <tr>
    <td><p>Datenbearbeitungsformate</p> </td>
    <td><p>Bearbeitet das Format für Daten Wird verwendet, wenn Daten als Zeichenfolge geschrieben oder Daten aus der Zeichenfolge analysiert werden</p> </td>
    <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
-   <td>--<p> </p> </td>
+   <td>—<p> </p> </td>
   </tr>
   <tr>
    <td><p>Briefinstanzen in der Veröffentlichungsinstanz verwalten</p> </td>
@@ -244,7 +244,7 @@ Correspondence Management verfügt über die folgenden Konfigurationseigenschaft
   <tr>
    <td><p>URL für CM-Benutzerelemente</p> </td>
    <td><p>URL des Ordners mit allen Correspondence Management-Benutzerelementen</p> </td>
-   <td><p>--</p> </td>
+   <td><p>—</p> </td>
    <td><p>Zulässiger Ordnerpfad</p> </td>
   </tr>
   <tr>

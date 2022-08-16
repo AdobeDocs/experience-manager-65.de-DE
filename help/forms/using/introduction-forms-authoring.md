@@ -12,7 +12,7 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3138'
 ht-degree: 100%
 
@@ -147,7 +147,7 @@ Damit können Sie Formularmodellelemente per Drag &amp; Drop auf das adaptive Fo
    <td><p>Fügt ein Feld zum Erfassen der E-Mail-Adresse hinzu. Die E-Mail-Komponente überprüft standardmäßig E-Mail-Adressen mit dem folgenden regulären Ausdruck.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
-   <td>Dateianlage</td>
+   <td>Dateianhang</td>
    <td><p>Fügt eine Schaltfläche hinzu, mit der Benutzer ergänzende Dokumente suchen und an das Formular anhängen können. An eine Dateianhangskomponente lassen sich mehrere Dateien anhängen. Sie können auch die **[!UICONTROL Maximale Dateigröße]** und **[!UICONTROL Unterstützte Dateitypen]** für die Anhänge im Eigenschaftenbrowser der Komponente angeben. </p> <p><strong> Hinweis: </strong><ul> <li> Die Komponente unterstützt nicht das Anhängen von Dateien mit Dateinamen, die mit den Zeichen (.) beginnen bzw. die Zeichen \ / : * ? " &lt; &gt; | ; % $ enthalten oder spezielle Dateinamen enthalten, die für Windows-Betriebssysteme reserviert sind, wie z. B. nul, prn, con, lpt oder com. </li> <li> Um mehrere Dateien an eine Dateianhangskomponente anzuhängen, die im Apple Safari-Browser geöffnet ist, wählen Sie die Dateien einzeln aus und hängen Sie sie einzeln an. Es ist nicht möglich, mehrere Dateien gleichzeitig auszuwählen und anzuhängen.</li> <li>Die Dateianhangskomponente unterstützt eine vordefinierte Gruppe von Dateiformaten in adaptiven Formularen, die für Adobe Sign aktiviert sind. Weitere Informationen finden Sie unter <a href="https://helpx.adobe.com/de/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Unterstützte Dateiformate</a>. </li></ul></p> </td>
   </tr>
   <tr>
@@ -207,7 +207,7 @@ Damit können Sie Formularmodellelemente per Drag &amp; Drop auf das adaptive Fo
    <td>Fügt eine Schaltfläche zum Speichern der Formulardaten hinzu.</td>
   </tr>
   <tr>
-   <td>Scribble-Signatur</td>
+   <td>Freihändige Unterschrift</td>
    <td>Fügt ein Feld zum Erfassen von Freihandsignaturen hinzu.</td>
   </tr>
   <tr>
@@ -360,7 +360,7 @@ Wenn Sie beispielsweise für ein Textfeld auf **[!UICONTROL Übergeordnet]** tip
 * guideRootPanel
 * Adaptiver Formularcontainer
 
-J. **Sonstige**:  Bietet mehr Optionen, um mit den ausgewählten Komponenten zu arbeiten.
+J. **Sonstige**: Bietet mehr Optionen, um mit den ausgewählten Komponenten zu arbeiten.
 
 * SOM-Ausdruck anzeigen
 * Bereich als Fragment speichern (nur für Bereiche)

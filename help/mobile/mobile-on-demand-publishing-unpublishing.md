@@ -1,8 +1,8 @@
 ---
 title: Veröffentlichung von Inhalt rückgängig machen
-seo-title: Veröffentlichung von Inhalt rückgängig machen
+seo-title: Publish UnPublish Content
 description: Sobald Sie sich mit Inhaltsverwaltungsaktionen für Artikel, Banner und Sammlungen vertraut gemacht haben, erfahren Sie auf dieser Seite, wie Sie Inhalte veröffentlichen können. Außerdem können Sie die Veröffentlichung des Inhalts rückgängig machen.
-seo-description: Sobald Sie sich mit Inhaltsverwaltungsaktionen für Artikel, Banner und Sammlungen vertraut gemacht haben, erfahren Sie auf dieser Seite, wie Sie Inhalte veröffentlichen können. Außerdem können Sie die Veröffentlichung des Inhalts rückgängig machen.
+seo-description: Once you are familiar with content management actions on articles, banners, and collections, follow this page to learn about how you can publish your content. Also you can unpublish your content.
 uuid: 75179aa8-022c-4876-9664-6dd2b826174c
 contentOwner: User
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: 8c88a2ff-766f-481b-b6dc-0b3e2eed8596
 exl-id: 3924bb8f-27cb-4648-8be2-9444e9a58c66
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 7%
+source-wordcount: '268'
+ht-degree: 8%
 
 ---
 
-# Veröffentlichen Sie den Inhalt von &quot;Nicht veröffentlichen&quot;{#publish-unpublish-content}
+# Veröffentlichung von Inhalt rückgängig machen{#publish-unpublish-content}
 
 >[!NOTE]
 >

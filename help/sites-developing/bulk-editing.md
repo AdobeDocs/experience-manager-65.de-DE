@@ -1,8 +1,8 @@
 ---
 title: Konfigurieren Sie Ihre Seite für die Massenbearbeitung von Seiteneigenschaften
-seo-title: Konfigurieren Sie Ihre Seite für die Massenbearbeitung von Seiteneigenschaften
+seo-title: Configuring your Page for Bulk Editing of Page Properties
 description: Durch die Massenbearbeitung von Seiteneigenschaften können Sie die Eigenschaften mehrerer Seiten gleichzeitig bearbeiten
-seo-description: Durch die Massenbearbeitung von Seiteneigenschaften können Sie die Eigenschaften mehrerer Seiten gleichzeitig bearbeiten
+seo-description: Bulk editing of page properties allows you to edit the properties of multiple pages at once
 uuid: 1ad403d2-4b93-4943-ae45-74bf20705b81
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 88%
+source-wordcount: '416'
+ht-degree: 87%
 
 ---
 
-# Konfigurieren Sie Ihre Seite für die Massenbearbeitung von Seiteneigenschaften  {#configuring-your-page-for-bulk-editing-of-page-properties}
+# Konfigurieren Sie Ihre Seite für die Massenbearbeitung von Seiteneigenschaften {#configuring-your-page-for-bulk-editing-of-page-properties}
 
 Durch die [Massenbearbeitung von Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) können Sie die Eigenschaften mehrerer Seiten gleichzeitig bearbeiten.
 
@@ -35,14 +35,12 @@ Aufgrund der Möglichkeit unterschiedlicher Werte sind die Seiteneigenschaften f
 >* Nicht verfügbar in der klassischen Benutzeroberfläche.
 >* Nicht verfügbar für Seiten innerhalb einer Live Copy.
 >* Nur verfügbar für Seiten mit desselben Ressourcentyp.
-
 >
-
 
 
 >[!NOTE]
 >
->Massenbearbeitung ist auch für Assets verfügbar. Dieses Verfahren ist sehr ähnlich, weicht aber in einigen Punkten ab. Genauere Informationen dazu finden Sie unter [Bearbeiten von Eigenschaften für mehrere Assets. ](/help/assets/metadata.md) Sie können die Felder im Editor für Metadaten-Massenbearbeitung für Assets mit dem [Schema-Editor](/help/assets/metadata-schemas.md) anpassen.
+>Massenbearbeitung ist auch für Assets verfügbar. Dieses Verfahren ist sehr ähnlich, weicht aber in einigen Punkten ab. Genauere Informationen dazu finden Sie unter [Bearbeiten von Eigenschaften für mehrere Assets. ](/help/assets/metadata.md) Sie können die Felder im Editor für Metadaten-Massenbearbeitung für Assets mit der [Schema Editor](/help/assets/metadata-schemas.md).
 
 ## Aktivieren eines Felds {#enabling-a-field}
 
@@ -56,9 +54,7 @@ Aufgrund der Möglichkeit unterschiedlicher Werte sind die Seiteneigenschaften f
 >* `/libs/granite/ui/components/foundation/form/datepicker`
 >* `/libs/granite/ui/components/foundation/form/pathbrowser`
 >* `/libs/granite/ui/components/foundation/form/checkbox`
-
 >
-
 
 
 Felder werden in der Seitenkomponente aktiviert (*nicht* in der Vorlage):
@@ -71,7 +67,7 @@ Felder werden in der Seitenkomponente aktiviert (*nicht* in der Vorlage):
    >
    >Für das Beispiel wird angenommen, dass die Hauptkomponenten auf die Instanz installiert wurden, das der Fall ist, wenn die Instanz mit We.Retail-Beispielinhalt ausgeführt wird. Weitere Informationen finden Sie in der [Dokumentation zu Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
 
-1. Navigieren Sie zum gewünschten Feld in der `cq:dialog`-Definition.
+1. Navigieren Sie zum gewünschten Feld im `cq:dialog` Definition.
 1. Definieren Sie die folgende Eigenschaft auf dem Feldknoten:
 
    * **Name**: `allowBulkEdit`
@@ -94,7 +90,7 @@ Felder werden in der Seitenkomponente aktiviert (*nicht* in der Vorlage):
    >
    >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
    >
-   >    1. Erstellen Sie das erforderliche Element (d. h. wie es in `/libs` vorhanden ist) unter `/apps` neu.
+   >    1. Erstellen Sie das erforderliche Element (d. h. wie es in vorhanden ist) neu. `/libs`) unter `/apps`
    >    1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 
 

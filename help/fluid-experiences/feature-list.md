@@ -2,11 +2,11 @@
 title: Funktionsliste für AEM Erlebnisse
 description: Funktionsliste für fließende Erlebnisse
 index: n
-feature: 'Authoring – '
+feature: Authoring
 exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '350'
 ht-degree: 17%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 17%
 
 Adobe Experience Manager Fluid Experiences nutzt die leistungsstarken Funktionen von AEM Sites, AEM Dynamic Media und AEM Assets, um eine robuste Lösung für die Headless Content-Bereitstellung zu bieten.
 
-AEM Fluid Experiences unterscheidet sich von klassischen AEM insofern, als nur der Headless-delivery-Anwendungsfall behandelt wird. Umfassende Inhaltserstellung und -bereitstellung sowie AEM starke Unterstützung für hybride Anwendungsfälle sind mit den [vollständigen AEM Sites-, Assets- und Dynamic Media-Lösungen verfügbar.](https://docs.adobe.com/content/help/de-DE/experience-manager-65/user-guide/home.html)
+AEM Fluid Experiences unterscheidet sich von klassischen AEM insofern, als nur der Headless-delivery-Anwendungsfall behandelt wird. Umfassende Inhaltserstellung und -bereitstellung sowie AEM starke Unterstützung für hybride Anwendungsfälle sind mit dem [vollständige Lösungen für AEM Sites, Assets und Dynamic Media.](https://docs.adobe.com/content/help/de-DE/experience-manager-65/user-guide/home.html)
 
 In den folgenden Tabellen werden die Funktionen AEM Fluid Experiences definiert und ein Link zur entsprechenden Support-Dokumentation erstellt.
 
@@ -53,20 +53,20 @@ In den folgenden Tabellen werden die Funktionen AEM Fluid Experiences definiert 
 | [Experience Fragments](/help/sites-authoring/experience-fragments.md) |
 | HTTP-API für strukturierte Inhalte (lesen) |
 | HTTP-API für strukturierte Inhalte (CRUD) |
-| [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html) |
+| [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) |
 | [Dynamic Media](/help/assets/dynamic-media.md) |
 
 ## Admin- und Integrationsfunktionen {#admin-and-integration-features}
 
 |  |
 |---|
-| [User Management](/help/sites-administering/user-group-ac-admin.md) |
+| [Benutzerverwaltung](/help/sites-administering/user-group-ac-admin.md) |
 | [Mehrsprachiges Asset-Management](/help/assets/multilingual-assets.md) |
 | [Internationalisierung ](/help/sites-developing/i18n.md) |
 | [Übersetzung von Inhalten](/help/sites-administering/translation.md) |
 | [Überwachung](/help/sites-deploying/monitoring-and-maintaining.md) |
 | [Sicherung](/help/sites-administering/backup-and-restore.md) |
-| [Cloud Manager](https://docs.adobe.com/content/help/de/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) |
+| [Cloud Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) |
 | [PIM-Integration](/help/sites-authoring/managing-product-information.md) |
 | [Projekte und Aufgaben](/help/sites-authoring/projects.md) |
 | [Workflows](/help/sites-administering/workflows-starting.md) |

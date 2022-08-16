@@ -1,8 +1,8 @@
 ---
 title: Extrahieren von Zeichenfolgen zur Übersetzung
-seo-title: Extrahieren von Zeichenfolgen zur Übersetzung
+seo-title: Extracting Strings for Translating
 description: Verwenden Sie xgettext-maven-plugin, um Zeichenfolgen, die übersetzt werden müssen, aus Ihrem Quellcode zu extrahieren
-seo-description: Verwenden Sie xgettext-maven-plugin, um Zeichenfolgen, die übersetzt werden müssen, aus Ihrem Quellcode zu extrahieren
+seo-description: Use xgettext-maven-plugin to extract strings from your source code that need translating
 uuid: 2c586ecb-8494-4f8f-b31a-1ed73644d611
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
 exl-id: 4acc5f7f-0bcb-4b5a-8531-52e146cffeae
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '476'
 ht-degree: 71%
 
 ---
@@ -25,7 +25,7 @@ Verwenden Sie xgettext-maven-plugin, um Zeichenfolgen, die übersetzt werden mü
 * JavaScript-Quelldateien
 * XML-Darstellungen von SVN-Ressourcen (JCR-Knoten)
 
-## Konfiguration der Zeichenfolgen-Extraktion  {#configuring-string-extraction}
+## Konfiguration der Zeichenfolgen-Extraktion {#configuring-string-extraction}
 
 Konfigurieren Sie, wie xgettext-maven-plugin Zeichenfolgen für Ihr Projekt extrahiert.
 
@@ -67,10 +67,10 @@ Das Muster einer Regel wird verwendet, um die Namen der Dateien abzugleichen, di
 | Präfix | Ergebnis |
 |---|---|
 | / | Gibt einen JCR-Pfad an. Daher gleicht dieses Präfix Dateien unter dem Verzeichnis jcr_root ab. |
-| &amp;ast; | Gibt eine reguläre Datei im Dateisystem an. |
+| * | Gibt eine reguläre Datei im Dateisystem an. |
 | keine | Kein Präfix oder ein Muster, das mit einem Ordner oder Dateinamen beginnt, zeigt eine reguläre Datei im Dateisystem an. |
 
-Wenn es in einem Muster verwendet wird, zeigt das Zeichen / ein Unterverzeichnis und das Zeichen &amp;ast an. entspricht allen Zeichen. In der folgenden Tabelle sind einige Beispielregeln aufgeführt.
+Bei Verwendung in einem Muster zeigt das Zeichen / ein Unterverzeichnis und den &amp;ast an. entspricht allen Zeichen. In der folgenden Tabelle sind einige Beispielregeln aufgeführt.
 
 <table>
  <tbody>
@@ -136,7 +136,7 @@ mvn xgettext:extract
 ### Ausgabedateien {#output-files}
 
 * `raw.xliff`: extrahierte Zeichenfolgen
-* `warn.log`: (falls vorhanden), wenn die  `CQ.I18n.getMessage()` API falsch verwendet wird. In diesen Fällen ist immer eine Fehlerbehebung und anschließend eine Wiederholung erforderlich.
+* `warn.log`: Warnungen (falls vorhanden), wenn `CQ.I18n.getMessage()` API wird falsch verwendet. In diesen Fällen ist immer eine Fehlerbehebung und anschließend eine Wiederholung erforderlich.
 
 * `parserwarn.log`: Parser-Warnungen (falls vorhanden), z. B. js-Parserprobleme
 * `potentials.xliff`: „potenzielle“ Kandidaten, die nicht extrahiert werden, aber möglicherweise von Menschen lesbare Zeichenfolgen sind, die übersetzt werden müssen (kann ignoriert werden, da es noch eine große Menge an falsch positiven Ergebnissen findet)

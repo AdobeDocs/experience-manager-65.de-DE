@@ -1,8 +1,8 @@
 ---
 title: Grundlagen zu Messaging
-seo-title: Grundlagen zu Messaging
+seo-title: Messaging Essentials
 description: Übersicht über Messaging-Komponenten
-seo-description: Übersicht über Messaging-Komponenten
+seo-description: Messaging component overview
 uuid: e0dad45e-d84d-4b28-b357-aded1c5d2605
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,16 +13,16 @@ docset: aem65
 exl-id: b941b5e0-f768-4393-9a9d-ded2cd7d10c4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '389'
 ht-degree: 5%
 
 ---
 
-# Messaging Essentials {#messaging-essentials}
+# Grundlagen zu Messaging {#messaging-essentials}
 
 Auf dieser Seite werden die Details zum Arbeiten mit der Messaging-Komponente beschrieben, um eine Messaging-Funktion auf einer Website einzubinden.
 
-## Grundlagen für Client-seitige {#essentials-for-client-side}
+## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
 
 **Nachricht erstellen**
 
@@ -90,24 +90,22 @@ Auf dieser Seite werden die Details zum Arbeiten mit der Messaging-Komponente be
 
 Siehe auch [Clientseitige Anpassungen](/help/communities/client-customize.md)
 
-## Grundlagen für serverseitige {#essentials-for-server-side}
+## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
 
 * [Messaging konfigurieren](/help/communities/configure-messaging.md)
-* [Messaging-Client-](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) APIs für SCF-Komponenten
-* [Messaging-](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) APIs für den Dienst
+* [Messaging-Client-APIs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) für SCF-Komponenten
+* [Messaging-APIs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) für den Dienst
 * [Messaging-Endpunkte](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 * [Serverseitige Anpassungen](/help/communities/server-customize.md)
 
 >[!CAUTION]
 >
->Der String-Parameter muss *not* einen Schrägstrich &quot;/&quot;für die folgenden MessageBuilder-Methoden enthalten:
+>Der String-Parameter muss *not* einen Schrägstrich (/) für die folgenden MessageBuilder-Methoden enthalten:
 >
 >* `setInboxPath`()
 >* `setSentItemsPath`()
-
 >
->
-Beispiel:
+>Beispiel:
 >
 >
 ```
@@ -119,32 +117,32 @@ Beispiel:
 
 Eine Community-Site-Struktur, die mithilfe des Assistenten erstellt wurde, enthält die Messaging-Funktion, falls ausgewählt. Siehe `User Management` Einstellungen von [Community-Sites-Konsole](/help/communities/sites-console.md#user-management).
 
-### Beispielcode: Nachricht erhalten Benachrichtigung {#sample-code-message-received-notification}
+### Beispielcode: Benachrichtigung erhalten {#sample-code-message-received-notification}
 
 Die Funktion Social Messaging gibt Ereignisse für Vorgänge aus, z. B. `send`, `marking read`, `marking delete`. Diese Ereignisse können erfasst und Aktionen für die im Ereignis enthaltenen Daten durchgeführt werden.
 
-Das folgende Beispiel zeigt einen Ereignis-Handler, der auf das `message sent`-Ereignis wartet und mit `Day CQ Mail Service` eine E-Mail an alle Nachrichtenempfänger sendet.
+Das folgende Beispiel zeigt einen Ereignis-Handler, der auf die `message sent` -Ereignis ein und sendet eine E-Mail an alle Empfänger, die die `Day CQ Mail Service`.
 
 Zum Testen des serverseitigen Beispielskripts benötigen Sie eine Entwicklungsumgebung und die Möglichkeit, ein OSGi-Bundle zu erstellen:
 
-1. Melden Sie sich als Administrator bei ` [CRXDE|Lite](https://localhost:4502/crx/de)` an.
-1. Erstellen Sie eine `bundle node`in `/apps/engage/install` mit beliebigen Namen, z. B.:
+1. Melden Sie sich als Administrator bei ` [CRXDE|Lite](https://localhost:4502/crx/de)`.
+1. Erstellen Sie eine `bundle node`in `/apps/engage/install` mit beliebigen Namen wie:
 
    * Symbolischer Name: `com.engage.media.social.messaging.MessagingNotification`
    * Name: Erste Schritte - Benachrichtigung zu Tutorial-Nachrichten
    * Beschreibung: Ein Beispieldienst zum Senden einer E-Mail-Benachrichtigung an Benutzer, wenn diese eine Nachricht erhalten
    * Paket: `com.engage.media.social.messaging.notification`
 
-1. Navigieren Sie zu `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification` und dann:
+1. Navigieren Sie zu `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`und dann:
 
-   1. Löschen Sie die automatisch erstellte Klasse `Activator.java` .
-   1. Erstellen Sie die Klasse `MessageEventHandler.java`.
-   1. Kopieren Sie den unten stehenden Code und fügen Sie ihn in `MessageEventHandler.java` ein.
+   1. Löschen Sie die `Activator.java` automatisch erstellte Klasse.
+   1. Klasse erstellen `MessageEventHandler.java`.
+   1. Kopieren Sie den unten stehenden Code und fügen Sie ihn in `MessageEventHandler.java`.
 
 1. Klicken Sie auf **Alle speichern**.
-1. Navigieren Sie zu `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` und fügen Sie alle Importanweisungen hinzu, wie im Code `MessageEventHandler.java` geschrieben.
+1. Navigieren Sie zu `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd`und fügen Sie alle Importanweisungen hinzu, wie in der Datei `MessageEventHandler.java` Code.
 1. Erstellen Sie das Bundle.
-1. Stellen Sie sicher, dass der OSGi-Dienst `Day CQ Mail Service`konfiguriert ist.
+1. Sichern `Day CQ Mail Service`Der OSGi-Dienst ist konfiguriert.
 1. Melden Sie sich als Demobenutzer an und senden Sie eine E-Mail an einen anderen Benutzer.
 1. Der Empfänger erhält eine E-Mail bezüglich einer neuen Nachricht.
 

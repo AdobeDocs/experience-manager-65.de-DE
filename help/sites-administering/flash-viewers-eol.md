@@ -1,5 +1,5 @@
 ---
-title: Hinweis zur Einstellung von Flash-Viewer
+title: Hinweis zum End of Life von Flash-Viewern
 description: Mit Wirkung vom 31. Januar 2017 hat Adobe Dynamic Media Classic offiziell die Unterstützung für die Flash-Viewer-Plattform beendet.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ ht-degree: 21%
 
 ---
 
-# Hinweis zur Einstellung von Flash-Viewer{#flash-viewers-end-of-life-notice}
+# Hinweis zum End of Life von Flash-Viewern{#flash-viewers-end-of-life-notice}
 
 *Ab dem 31. Januar 2017 hat Adobe Dynamic Media Classic (früher Scene7) offiziell die Unterstützung für die Flash-Viewer-Plattform eingestellt.*
 

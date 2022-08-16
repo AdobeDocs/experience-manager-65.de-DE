@@ -1,8 +1,8 @@
 ---
 title: Erstellen und Bearbeiten von Apps mithilfe der Apps-Konsole
-seo-title: Erstellen und Bearbeiten von Apps mithilfe der Apps-Konsole
+seo-title: Creating and Editing Apps Using the Apps Console
 description: Auf dieser Seite erfahren Sie mehr über das Erstellen und Bearbeiten von Apps mithilfe der Apps-Konsole.
-seo-description: Auf dieser Seite erfahren Sie mehr über das Erstellen und Bearbeiten von Apps mithilfe der Apps-Konsole.
+seo-description: Follow this page to learn about creating and editing apps using apps console.
 uuid: 4f7db978-ae2b-4ca6-89f1-26e091d9140a
 contentOwner: User
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2638'
+source-wordcount: '2617'
 ht-degree: 2%
 
 ---
@@ -37,11 +37,11 @@ AEM Mobile bietet den Phonegap App-Blueprint zum Erstellen von Apps. Der Bluepri
 * Die Sprachvarianten der Anwendung.
 * Die Startseite der Sprachvariante.
 
-### Der Stamm einer Phonegap-App {#the-root-of-a-phonegap-app}
+### Der Stamm einer PhoneGap-App {#the-root-of-a-phonegap-app}
 
 Die Stammseite der Mobile Apps, die Sie in AEM erstellen, wird in der Apps-Konsole angezeigt.
 
-Die Stammseite wird unter der Eigenschaft &quot;Destination Path&quot;der Anwendung gespeichert, die beim Erstellen der Anwendung angegeben wurde (der Standardpfad lautet /content/phonegap/apps). Der Seitenname ist die Eigenschaft &quot;Name&quot;der Anwendung. Beispielsweise lautet die Standard-URL der Stammseite der Site `myphonegapapp` `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`.
+Die Stammseite wird unter der Eigenschaft &quot;Destination Path&quot;der Anwendung gespeichert, die beim Erstellen der Anwendung angegeben wurde (der Standardpfad lautet /content/phonegap/apps). Der Seitenname ist die Eigenschaft &quot;Name&quot;der Anwendung. Beispielsweise die Standard-URL der Stammseite der Site mit dem Namen `myphonegapapp` is `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`.
 
 ![chlimage_1-146](assets/chlimage_1-146.png)
 
@@ -73,14 +73,14 @@ Mobile Apps basieren auf einem Blueprint, der eine Seitenstruktur und Eigenschaf
 
 * **Name:** Der Standardwert ist der Wert der Eigenschaft &quot;Title&quot;, wobei Leerzeichen entfernt werden. Der Name wird in CQ verwendet, um auf die Anwendung zu verweisen, z. B. für den Repository-Knoten, der die Anwendung darstellt.
 * **Beschreibung:** Eine Beschreibung der Anwendung.
-* **Server-URL:** Die URL, die Over-the-Air (OTA)-Inhaltsaktualisierungen für die Anwendung bereitstellt. Der Standardwert ist die Veröffentlichungs-Server-URL der Instanz, die zum Erstellen einer Anwendung verwendet wird (vom Externalizer-Dienst abgerufen). Beachten Sie, dass es sich hierbei nicht um einen Autor, sondern um eine Veröffentlichungs-Server-Instanz handeln muss, für die eine Authentifizierung erforderlich ist.
+* **Server-URL:** Die URL, die Over-the-Air (OTA)-Inhalte bereitstellt, aktualisiert die Anwendung. Der Standardwert ist die Veröffentlichungs-Server-URL der Instanz, die zum Erstellen einer Anwendung verwendet wird (vom Externalizer-Dienst abgerufen). Beachten Sie, dass es sich hierbei nicht um einen Autor, sondern um eine Veröffentlichungs-Server-Instanz handeln muss, für die eine Authentifizierung erforderlich ist.
 
 Sie können auch eine Bilddatei bereitstellen, die als Anwendungsminiaturansicht verwendet werden soll, die zu verwendende PhoneGap Build auswählen und die zu verwendende Mobile App-Analysekonfiguration auswählen. Dieses Bild wird nur als Miniaturansicht für Ihre Mobile App in der Mobile Apps-Konsole in Experience Manager verwendet.
 
 Es gibt zusätzliche (und optionale) Registerkarten für den Build-Cloud-Service und die Integration des Adobe Mobile Services SDK-Plug-ins in Ihre App.
 
 * Build: Klicken Sie hier auf Konfigurationen verwalten und richten Sie Ihren Build-Dienst build.phonegap.com ein. Wählen Sie dann aus der Dropdown-Liste den neu erstellten PhoneGap Build-Cloud-Service aus.
-* Analytics: Klicken Sie auf Konfigurationen verwalten und richten Sie den Cloud-Dienst [Adobe Mobile Services SDK](https://docs.adobe.com/content/help/en/mobile-services/using/home.html) ein. Wählen Sie dann aus der Dropdown-Liste den neu erstellten Mobile Service aus, der in Ihre Mobile App integriert werden soll.
+* Analytics: Klicken Sie auf Konfigurationen verwalten und richten Sie [Adobe Mobile Services SDK](https://docs.adobe.com/content/help/en/mobile-services/using/home.html) Cloud Service. Wählen Sie dann aus der Dropdown-Liste den neu erstellten Mobile Service aus, der in Ihre Mobile App integriert werden soll.
 
 >[!NOTE]
 >
@@ -103,13 +103,13 @@ Im folgenden Verfahren wird die Touch-Benutzeroberfläche zum Erstellen einer Mo
    Klicken Sie zum Erstellen einer Mobile App-Konfiguration auf Konfigurationen verwalten .
 
 1. (Optional) Um ein Anwendungssymbol bereitzustellen, klicken Sie auf die Schaltfläche &quot;Durchsuchen&quot;, wählen Sie die Bilddatei aus Ihrem Dateisystem aus und klicken Sie auf &quot;Öffnen&quot;.
-1. Klicken Sie auf Erstellen.
+1. Klicken Sie auf „Erstellen“.
 
 ### Ändern der Eigenschaften einer Mobile App {#changing-the-properties-of-a-mobile-application}
 
 Nachdem Sie eine Mobile App erstellt haben, können Sie die Eigenschaften ändern.
 
-#### Ändern Sie den Titel, die Beschreibung und das Symbol {#change-the-title-description-and-icon}
+#### Titel, Beschreibung und Symbol ändern {#change-the-title-description-and-icon}
 
 1. Klicken oder tippen Sie in der Leiste auf Apps .
 1. Wählen Sie die zu konfigurierende Anwendung aus und klicken Sie auf das Symbol Seiteneigenschaften anzeigen .
@@ -211,7 +211,7 @@ Schritte zum Erstellen einer neuen App basierend auf einer App-Vorlage:
 >
 >Wenn Sie das Geometrixx Outdoors-Referenz-App-Paket aus AEM deinstallieren und eine App basierend auf ihrer Vorlage erstellt haben, ist diese App nicht mehr funktionsfähig. Die Geometrixx Outdoors App kann entfernt werden. Die App-Vorlage muss jedoch erhalten bleiben, wenn sie von anderen Mobile Apps verwendet wird.
 
-## Kennenlernen der Geometrixx Outdoors-Beispielanwendung {#exploring-the-sample-geometrixx-outdoors-app}
+## Geometrixx Outdoors-Beispielanwendung {#exploring-the-sample-geometrixx-outdoors-app}
 
 Geometrixx Outdoors App ist eine Beispielanwendung für PhoneGap, die die Funktionen des standardmäßigen PhoneGap-Anwendungsblueprints und der Beispielkomponenten für Mobilgeräte demonstriert.
 
@@ -255,7 +255,7 @@ Die Produktseite und ihre Hierarchie untergeordneter Seiten implementieren ein C
 
 Die Seite Produkte steht Anwendungsbenutzern nicht zur Verfügung. Die Zahnradseite bietet Zugriff auf die einzelnen Produktseiten.
 
-### Seite &quot;Bewertungen&quot;- Geometrixx Mobile App {#the-reviews-page-geometrixx-mobile-app}
+### Überprüfungsseite - Geometrixx Mobile App {#the-reviews-page-geometrixx-mobile-app}
 
 Enthält eine Schaltfläche &quot;Zurück&quot;. Mit dem Absatzsystem können Sie Komponenten hinzufügen.
 
@@ -279,7 +279,7 @@ Die Seite Standorte enthält eine Komponente Standorte .
 
 Bei Verwendung der Anwendung ist die Seite Standorte in der Menüliste auf der englischen Seite verfügbar.
 
-## Beispiel für mobile Komponenten {#sample-mobile-components}
+## Beispiele für mobile Komponenten {#sample-mobile-components}
 
 Beim Verfassen der Seiten einer Mobile App sind im Sidekick sofort mehrere Komponenten verfügbar. Die Komponenten gehören zur PhoneGap-Komponentengruppe.
 
@@ -334,7 +334,7 @@ Füllen Sie die Liste mithilfe der Suchergebnisse aus. Die Suche wird in den unt
 
 **Erweiterte Suche**
 
-Füllen Sie die Liste mit einer [QueryBuilder](/help/sites-developing/querybuilder-api.md)-Abfrage.
+Füllen Sie die Liste mithilfe einer [QueryBuilder](/help/sites-developing/querybuilder-api.md) Abfrage.
 
 ### Bild {#image}
 

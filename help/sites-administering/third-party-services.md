@@ -1,8 +1,8 @@
 ---
 title: Integrieren mit Services von Dritten
-seo-title: Integrieren mit Services von Dritten
+seo-title: Integrating with Third-Party Services
 description: Erfahren Sie, wie AEM in Drittanbieterdienste integriert wird.
-seo-description: Erfahren Sie, wie AEM in Drittanbieterdienste integriert wird.
+seo-description: Learn how to integrate AEM with third party services.
 uuid: bfafd00b-46bc-4af2-b3e8-874afb1ed697
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: e0d6478a-4420-46a6-96fe-082a30ee82f0
 exl-id: 50b70e47-a801-4f0a-be92-4427c4b2cad1
 source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '322'
 ht-degree: 94%
 
 ---
@@ -33,7 +33,7 @@ Mit AEM können Sie standardmäßig eine Integration in die folgenden Adobe-frem
 * Twitter – Social Networking
 * YouTube – Videofreigabe
 
-Darüber hinaus können Sie AEM mit der [Adobe Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) integrieren.
+Darüber hinaus können Sie AEM in die [Adobe Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 ## Integration mit Salesforce {#integrating-with-salesforce}
 
@@ -41,7 +41,7 @@ Salesforce.com ist das führende Cloud-Computing-Unternehmen beim Wechsel hin zu
 
 Informationen zur Integration Ihrer AEM-Site in Salesforce finden Sie unter [Integrieren in Salesforce](/help/sites-administering/salesforce.md).
 
-## Integrieren mit Silverpop Engage  {#integrating-with-silverpop-engage}
+## Integrieren mit Silverpop Engage {#integrating-with-silverpop-engage}
 
 >[!NOTE]
 >
@@ -51,17 +51,17 @@ Silverpop Engage stellt Marketingautomatisierung, E-Mail, Mobile und Social bere
 
 Informationen zur Integration Ihrer AEM-Site in Silverpop Engage finden Sie unter [Integrieren in Silverpop Engage](/help/sites-administering/silverpop.md).
 
-## Integration mit ExactTarget  {#integrating-with-exacttarget}
+## Integration mit ExactTarget {#integrating-with-exacttarget}
 
 Die E-Mail-Marketing-Lösungen von ExactTarget bieten Unternehmen aller Größen die Möglichkeit, zielgerichtete, missionskritische und vollintegrierte E-Mail-Kampagnen zu entwickeln und bereitzustellen.
 
 Informationen zur Integration Ihrer AEM-Site in ExactTarget finden Sie unter [Konfigurieren von ExactTarget](/help/sites-administering/exacttarget.md).
 
-## Integrieren in Facebook und Twitter  {#integrating-with-facebook-and-twitter}
+## Integrieren in Facebook und Twitter {#integrating-with-facebook-and-twitter}
 
 Facebook und Twitter sind beliebte Social-Networking-Dienste. Die Integration von AEM in Facebook und Twitter ermöglicht Unternehmen die Bereitstellung einer Facebook- oder Twitter-Anmeldeoption zu eigenen digitalen Präsenzen und die anschließende Personalisierung des Benutzererlebnisses auf Grundlage der Profilinformationen. Marketingexperten können Profilinformationen mit Daten aus zusätzlichen Quellen wie einem CRM-System oder Websiteprofil kombinieren, um eine einheitliche Sicht auf den Kunden zu ermöglichen.
 
-Weitere Informationen finden Sie unter [Social Login](/help/communities/social-login.md) .
+Siehe [Anmeldung über soziale Netzwerke](/help/communities/social-login.md) für weitere Informationen.
 
 ## Integrieren mit sonstigen Anbietern {#integrating-with-other-providers}
 

@@ -11,7 +11,7 @@ discoiquuid: d431c4cb-e4be-41a5-8085-42393d4d468c
 docset: aem65
 exl-id: edaf12be-473f-4175-b4e0-549b41159a55
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1022'
 ht-degree: 100%
 
@@ -128,7 +128,7 @@ Beachten Sie auch die folgenden Einschränkungen bei der Verwendung des Barcoded
 * Der Dienst unterstützt AcroForms und statische Formulare mit 2D-Strichcodes, die mit Adobe Reader oder Acrobat gespeichert wurden, in vollem Umfang. Für 1D-Strichcodes müssen Sie das Formular jedoch reduzieren oder es als gescanntes PDF- oder TIFF-Dokument zur Verfügung stellen.
 * Dynamische XFA-Formulare werden nicht in vollem Umfang unterstützt. Für die ordnungsgemäße Dekodierung eines 1D- und 2D-Strichcodes in einem dynamischen Formular müssen Sie das Formular entweder reduzieren oder es als gescanntes PDF- oder TIFF-Dokument bereitstellen.
 
-Der Service kann zusätzlich sämtliche Strichcodes dekodieren, die unterstützte Symbologien nutzen, sofern die oben genannten Beschränkungen berücksichtigt werden. Weitere Informationen dazu, wie Sie interaktive Formulare mit Strichcode erstellen, finden Sie unter [Designer-Hilfe](https://www.adobe.com/go/learn_aemforms_designer_63_de).
+Der Service kann zusätzlich sämtliche Strichcodes dekodieren, die unterstützte Symbologien nutzen, sofern die oben genannten Beschränkungen berücksichtigt werden. Weitere Informationen dazu, wie Sie interaktive Formulare mit Strichcode erstellen, finden Sie unter [Designer-Hilfe](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 ## Konfigurieren Sie die Eigenschaften des Dienstes   {#configureproperties}
 
@@ -140,7 +140,7 @@ Der Barcoded Forms-Dienst stellt die folgenden zwei APIs zur Verfügung:
 
 * **[decode](https://helpx.adobe.com/de/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Dekodiert alle Barcodes, die in einem PDF-Eingabedokument oder in einem TIFF-Bild verfügbar sind. Es wird ein XML-Dokument mit den Daten zurückgegeben, die von allen Strichcodes abgerufen wurden, welche im Eingabedokument oder im Bild verfügbar sind.
 
-* **[extractToXML](https://helpx.adobe.com/de/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Konvertiert Daten, die mit der Dekodier-API für XML-Daten dekodiert wurden. Diese XML-Daten können mit einem XFA-Formular zusammengeführt werden. Es wird eine Liste von XML-Dokumenten, eines je Barcode, zurückgegeben.
+* **[extractToXML](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Konvertiert Daten, die mit der Dekodier-API für XML-Daten dekodiert wurden. Diese XML-Daten können mit einem XFA-Formular zusammengeführt werden. Es wird eine Liste von XML-Dokumenten, eines je Barcode, zurückgegeben.
 
 ### Verwenden des BCF-Dienstes mit JSPs oder Servlets {#using-bcf-service-with-a-jsp-or-servlets}
 

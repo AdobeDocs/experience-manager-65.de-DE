@@ -1,20 +1,20 @@
 ---
 title: Grundlegende Konfigurationskonzepte
-seo-title: Grundlegende Konfigurationskonzepte
+seo-title: Basic Configuration Concepts
 description: Anleitung zur Konfiguration von AEM
-seo-description: Anleitung zur Konfiguration von AEM
+seo-description: Learn how to configure AEM.
 uuid: edcdd4bd-5917-417e-8913-40d488383ea9
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 2673ea92-1651-4b1b-9aac-f4ba8b36782e
-feature: Konfiguration
+feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2133'
-ht-degree: 87%
+source-wordcount: '2124'
+ht-degree: 90%
 
 ---
 
@@ -48,7 +48,7 @@ Abhängig von der jeweiligen Konfiguration können diese Änderungen mithilfe ei
 
 * **AEM-WCM**
 
-   Verschiedene Aspekte können in AEM WCM selbst konfiguriert werden, von denen viele die Konsole [Tools](/help/sites-administering/tools-consoles.md) verwenden. z. B. Replikationsagenten.
+   Verschiedene Aspekte können in AEM WCM selbst konfiguriert werden, wobei viele die [Instrumente](/help/sites-administering/tools-consoles.md) Konsole; z. B. Replikationsagenten.
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Abhängig von der jeweiligen Konfiguration können diese Änderungen mithilfe ei
 >
 >Manche Änderungen können erhebliche Auswirkungen auf die Anwendung(en) haben. Achten Sie deshalb darauf, dass Sie über die nötige Erfahrung und Expertise verfügen, bevor Sie mit der Konfiguration von AEM beginnen, und nehmen Sie nur notwendige Änderungen vor. Alle über die OSGi-Konsole durchgeführten Änderungen werden **sofort** auf das laufende System angewendet (kein Neustart erforderlich).
 
-## Primäre Überlegungen zur Konfiguration  {#primary-configuration-considerations}
+## Primäre Überlegungen zur Konfiguration {#primary-configuration-considerations}
 
 In dieser Liste finden Sie Informationen zu den primären Bereichen, die häufig für ein neues Projekt konfiguriert werden. Überprüfen Sie anhand dieser Liste, welche Bereiche auf Ihr Projekt zutreffen. Möglicherweise werden nicht alle benötigt.
 
@@ -95,17 +95,17 @@ Wenn eine IP-Adresse angegeben werden muss, können Sie (je nach Bedarf) aus den
 
 * eine IPv6-Adresse
 
-   zum Beispiel `https://[ab12::34c5:6d7:8e90:1234]:4502`
+   Beispiel `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
 * eine IPv4-Adresse
 
-   zum Beispiel `https://123.1.1.4:4502`
+   Beispiel `https://123.1.1.4:4502`
 
 * einen Servernamen
 
    Beispiel: `https://www.yourserver.com:4502`
 
-* Der Standardfall von `localhost` wird für IPv4- und IPv6-Netzwerkinstallationen interpretiert.
+* Standardfall von `localhost` wird sowohl für IPv4- als auch für IPv6-Netzwerkinstallationen interpretiert
 
    Beispiel: `http://localhost:4502`
 
@@ -137,7 +137,7 @@ Sämtliche Konfigurationseinstellungen werden im selben Repository gespeichert u
 
 Weitere Informationen finden Sie unter [Ausführungsmodi](/help/sites-deploying/configure-runmodes.md).
 
-### Single Sign-On  {#single-sign-on}
+### Single Sign-On {#single-sign-on}
 
 Mithilfe von Single Sign-On (SSO) können Sie durch die einmalige Eingabe Ihrer Zugangsdaten (z. B. Ihres Benutzernamens und Passworts) auf mehrere Systeme zugreifen. Ein separates System (der so genannte vertrauenswürdige Authentifikator) führt die Authentifizierung durch und liefert die Zugangsdaten an Experience Manager. Experience Manager überprüft diese und erzwingt die Zugriffsberechtigungen für den Benutzer (d. h. legt fest, auf welche Ressourcen der Benutzer zugreifen darf). 
 
@@ -147,14 +147,14 @@ Weitere Informationen finden Sie unter [Single Sign-On](/help/sites-deploying/si
 
 Die Ressourcenzuordnung wird zur Definition von Umleitungen, Vanity-URLs und virtuellen Hosts für AEM verwendet.
 
-Diese Zuordnungen können Sie beispielsweise folgendermaßen verwenden:
+Diese Zuordnungen können Sie beispielsweise verwenden, um:
 
-* Setzen Sie allen Anforderungen das Präfix `/content` voran, damit die interne Struktur für die Besucher Ihrer Website ausgeblendet wird.
-* Definieren Sie eine Umleitung, damit alle Anforderungen an die `/content/en/gateway`-Seite Ihrer Website an `https://gbiv.com/` umgeleitet werden.
+* Allen Anfragen das Präfix `/content` voranzustellen, sodass die interne Struktur für Besucher Ihrer Website ausgeblendet wird.
+* Eine Umleitung zu definieren, sodass alle Anfragen an die Seite `/content/en/gateway` Ihrer Website zu `https://gbiv.com/` umgeleitet werden.
 
 Weitere Informationen finden Sie unter [Ressourcen-Mapping](/help/sites-deploying/resource-mapping.md).
 
-### Replikation, Rückwärtsreplikation und Replikationsagenten  {#replication-reverse-replication-and-replication-agents}
+### Replikation, Rückwärtsreplikation und Replikationsagenten {#replication-reverse-replication-and-replication-agents}
 
 Replikationsagenten werden in AEM für folgende Aufgaben verwendet:
 
@@ -166,13 +166,13 @@ Weitere Informationen finden Sie unter [Replikation](/help/sites-deploying/repli
 
 ### OSGi-Konfigurationseinstellungen {#osgi-configuration-settings}
 
-[](https://www.osgi.org/) OSGi ist ein grundlegendes Element im Technologie-Stack von AEM. OSGi wird zur Steuerung der AEM-Bundles und ihrer Konfiguration verwendet.
+[OSGi](https://www.osgi.org/) ist ein grundlegendes Element im Technologiestapel von AEM. OSGi wird zur Steuerung der AEM-Bundles und ihrer Konfiguration verwendet.
 
 Eine Liste der verschiedenen Bundles, die für die Projektimplementierung relevant sind (nach Bundle aufgelistet), finden Sie unter [OSGi-Konfigurationseinstellungen](/help/sites-deploying/osgi-configuration-settings.md). Nicht alle aufgeführten Einstellungen müssen angepasst werden. Einige werden nur zum besseren Verständnis von AEM erwähnt.
 
 Bei der Verwendung von AEM gibt es mehrere Methoden zur Verwaltung der Konfigurationseinstellungen für solche Services. Weitere Informationen und empfohlene Praktiken finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
-### Konfigurieren von LDAP  {#configuring-ldap}
+### Konfigurieren von LDAP {#configuring-ldap}
 
 LDAP-Authentifizierung ist für Benutzer erforderlich, die in einem (zentralen) LDAP-Verzeichnis wie im Active Directory gespeichert sind. Dies verringert den Aufwand bei der Verwaltung von Benutzerkonten.
 
@@ -180,15 +180,15 @@ Die LDAP-Authentifizierung erfolgt auf Repository-Ebene, sie wird also direkt vo
 
 Weitere Informationen zur Benutzerverwaltung in AEM (einschließlich der Zuweisung von Zugriffsrechten) finden Sie unter [Benutzerverwaltung und Sicherheit](/help/sites-administering/security.md).
 
-### Konfigurieren des Dispatchers  {#configuring-the-dispatcher}
+### Konfigurieren des Dispatchers {#configuring-the-dispatcher}
 
-Der Dispatcher ist das Tool zum Zwischenspeichern und/oder Lastenausgleich von Adobe Experience Manager, das in Verbindung mit einem Webserver der Unternehmensklasse verwendet werden kann.
+Der Dispatcher ist das Werkzeug für das Caching und/oder den Lastenausgleich von Adobe Experience Manager, das in Verbindung mit einem Web-Server der Enterprise-Klasse verwendet werden kann.
 
-Weitere Informationen zur Konfiguration finden Sie unter [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html), insbesondere unter [Konfigurieren des Dispatchers](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html).
+Weitere Informationen zur Konfiguration finden Sie unter [Dispatcher](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher.html), insbesondere unter [Konfigurieren des Dispatchers](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html).
 
 ### Konfigurieren von AEM LiveCycle Connector {#configuring-aem-livecycle-connector}
 
-Mit der Veröffentlichung von AEM Doc Services und AEM Doc Security haben wir jetzt die Möglichkeit, mithilfe der LiveCycle Doc Services ein XFA-Formular zu erstellen, ein Dokument in das PDF-Format umzuwandeln und ein Dokument durch eine Richtlinie zu schützen. Weitere Informationen finden Sie unter [AEM LiveCycle Connector](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html) .
+Mit der Veröffentlichung von AEM Doc Services und AEM Doc Security haben wir jetzt die Möglichkeit, mithilfe der LiveCycle Doc Services ein XFA-Formular zu erstellen, ein Dokument in das PDF-Format umzuwandeln und ein Dokument durch eine Richtlinie zu schützen. Bitte lesen [AEM LiveCycle Connector](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html) für weitere Details.
 
 ### Auftragsabladung und Topologieverwaltung {#job-offloading-and-topology-administration}
 
@@ -198,13 +198,13 @@ Topologien sind lose verknüpfte Experience Manager-Cluster, die an der Abladung
 
 Weitere Informationen zur Ansicht oder Änderung der Topologie-Mitgliedschaft finden Sie unter [Verwalten von Topologien](/help/sites-deploying/offloading.md#administering-topologies).
 
-### Konfigurieren der Willkommens-Konsole  {#configuring-the-welcome-console}
+### Konfigurieren der Willkommens-Konsole {#configuring-the-welcome-console}
 
 Die Willkommens-Konsole der klassischen Benutzeroberfläche bietet eine Liste mit Links zu den unterschiedlichen Konsolen und Funktionen innerhalb von AEM.
 
 Die sichtbaren Links können konfiguriert werden. Weitere Informationen dazu finden Sie unter [Konfigurieren der Willkommens-Konsole](/help/sites-developing/customizing-the-welcome-console.md).
 
-### Konfiguration zur Leistungsoptimierung  {#configuring-for-performance}
+### Konfiguration zur Leistungsoptimierung {#configuring-for-performance}
 
 Die [Leistung](/help/sites-deploying/configuring-performance.md) ist für Ihr Projekt ausschlaggebend. Bestimmte Aspekte von AEM (bzw. des zugrunde liegenden Repositorys) können so konfiguriert werden, dass die Leistung optimiert wird.
 
@@ -224,7 +224,7 @@ Ein derartiger Datenspeicher kann folgendermaßen gemeinsam genutzt werden: übe
 
 Weitere Informationen finden Sie unter [Konfigurieren von Daten- und Knotenspeichern](/help/sites-deploying/data-store-config.md).
 
-## Weitere Überlegungen zur Konfiguration  {#further-configuration-considerations}
+## Weitere Überlegungen zur Konfiguration {#further-configuration-considerations}
 
 ### Aktivieren von HTTP über SSL {#enabling-http-over-ssl}
 
@@ -232,11 +232,11 @@ Sie können HTTP über SSL aktivieren, um die Verbindungssicherheit zu Ihren Ser
 
 Weitere Informationen finden Sie unter [Aktivieren von HTTP über SSL](/help/sites-administering/ssl-by-default.md).
 
-### AEM-Portale und Portlets  {#aem-portals-and-portlets}
+### AEM-Portale und Portlets {#aem-portals-and-portlets}
 
 Ein Portal ist eine Webanwendung, die Personalisierung, Single Sign-On und Inhaltsintegration aus verschiedenen Quellen ermöglicht und die Präsentationsebene von Informationssystemen hostet. Mit der Portlet-Komponente können Sie zudem ein Portlet auf der Seite einbetten. Um auf von CQ5 WCM bereitgestellten Inhalt zuzugreifen, kann der Portalserver mit dem CQ5 Portal Director Portlet ausgestattet werden. Installieren Sie zu diesem Zweck das Portlet, konfigurieren Sie es und fügen Sie es zur Portalseite hinzu.
 
-Weitere Informationen finden Sie unter [Portal und Portlets](/help/sites-administering/aem-as-portal.md) .
+Siehe [Portal und Portlets](/help/sites-administering/aem-as-portal.md) für weitere Informationen.
 
 ### Ablauf statischer Objekte {#expiration-of-static-objects}
 
@@ -244,11 +244,11 @@ Statische Objekte (wie Symbole) ändern sich nicht. Daher sollte das System so k
 
 Weitere Informationen finden Sie unter [Ablaufen von statischen Objekten](/help/sites-deploying/expiration-static-objects.md).
 
-### Öffnen von Dateien im Java-Prozess  {#open-files-in-the-java-process}
+### Öffnen von Dateien im Java-Prozess {#open-files-in-the-java-process}
 
 Bei jedem Java-Prozess kann auf Dateien zugegriffen werden. Dieser Vorgang verbraucht Systemressourcen. Aus diesem Grund wird ein oberes Limit definiert, das angibt, auf wie viele Dateien in jedem Prozess gleichzeitig zugegriffen werden darf. Wenn dieses Limit überschritten wird, kann ein Ausnahmefehler auftreten.
 
-Wenn der AEM-Prozess diesen Maximalwert überschreitet, wird die Meldung &quot;`too many open files`&quot;in `error.log` angezeigt.
+Wenn der AEM-Prozess diesen Maximalwert überschreitet, wird die Meldung &quot; `too many open files`&quot; wird in `error.log`.
 
 Um solche Ausnahmen zu vermeiden, gehen Sie folgendermaßen vor:
 
@@ -265,7 +265,7 @@ Um solche Ausnahmen zu vermeiden, gehen Sie folgendermaßen vor:
 
    Der neue Wert sollte sowohl für die aktuellen Anforderungen als auch für etwaige künftige Spitzen ausreichend sein. Deshalb ist es ratsam, den Wert für die aktuellen Anforderungen zu verdoppeln.
 
-   Standardmäßig konfiguriert `serverctl` `CQ_MAX_OPEN_FILES` `8192`; Dies sollte für die meisten Szenarien ausreichen.
+   Standardmäßig `serverctl` konfiguriert `CQ_MAX_OPEN_FILES` nach `8192`; Dies sollte für die meisten Szenarien ausreichen.
 
 ### Konfigurieren des Rich-Text-Editors {#configuring-the-rich-text-editor}
 
@@ -273,23 +273,23 @@ Der **Rich-Text-Editor** (**RTE**) bietet Autoren umfassende [Funktionen](/help/
 
 Weitere Informationen finden Sie unter [Konfigurieren des Rich-Text-Editors](/help/sites-administering/rich-text-editor.md).
 
-### Konfigurieren von „Rückgängig machen“ zur Bearbeitung von Seiten  {#configuring-undo-for-page-editing}
+### Konfigurieren von „Rückgängig machen“ zur Bearbeitung von Seiten {#configuring-undo-for-page-editing}
 
 Es gibt mehrere Eigenschaften, mit denen das Verhalten der Befehle „Rückgängig machen“ und „Wiederholen“ zur Bearbeitung von Seiten gesteuert werden kann. Diese können konfiguriert werden. Weitere Informationen finden Sie unter [Konfigurieren von „Rückgängig machen“ zur Bearbeitung von Seiten](/help/sites-administering/config-undo.md).
 
-### Konfigurieren der Videokomponente  {#configuring-the-video-component}
+### Konfigurieren der Videokomponente {#configuring-the-video-component}
 
 Mit der [Videokomponente](/help/sites-authoring/default-components-foundation.md#video) können Sie ein vordefiniertes Standard-Videoelement auf Ihrer Seite platzieren.
 
 Damit die Codeumsetzung korrekt erfolgt, muss der Administrator [FFmpeg](/help/sites-administering/config-video.md#install-ffmpeg) separat installieren. Darüber hinaus kann er auch Ihre [Videoprofile](/help/sites-administering/config-video.md#configure-video-profiles) für die Verwendung mit HTML5-Elementen konfigurieren.
 
-### Konfigurieren und Anpassen von Berichten  {#configuring-and-customizing-reports}
+### Konfigurieren und Anpassen von Berichten {#configuring-and-customizing-reports}
 
 Zur Überwachung und Analyse des Zustands Ihrer Instanz bietet CQ eine Auswahl von Standardberichten, die nach Ihren persönlichen Anforderungen konfiguriert werden können:
 
 Weitere Informationen finden Sie unter [Grundlagen zur Anpassung von Berichten](/help/sites-administering/reporting.md#the-basics-of-report-customization).
 
-### Konfigurieren von E-Mail-Benachrichtigungen  {#configuring-email-notification}
+### Konfigurieren von E-Mail-Benachrichtigungen {#configuring-email-notification}
 
 CQ sendet E-Mail-Benachrichtigungen an folgende Benutzer:
 
@@ -299,7 +299,7 @@ CQ sendet E-Mail-Benachrichtigungen an folgende Benutzer:
 
 Weitere Informationen finden Sie unter [Konfigurieren von E-Mail-Benachrichtigungen](/help/sites-administering/notification.md).
 
-### Aktivieren von Seitenimpressionen  {#enabling-page-impressions}
+### Aktivieren von Seitenimpressionen {#enabling-page-impressions}
 
 Seitenimpressionen werden in der klassischen Benutzeroberfläche der Siteadmin-Konsole in der Spalte **Impressionen** angezeigt. Um das Erfassen von Seitenimpressionen zu ermöglichen, müssen Sie Folgendes konfigurieren:
 

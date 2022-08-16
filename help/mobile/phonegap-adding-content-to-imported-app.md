@@ -1,8 +1,8 @@
 ---
 title: Ist Ihre Hybrid-App für AEM Mobile bereit?
-seo-title: Ist Ihre Hybrid-App für AEM Mobile bereit?
+seo-title: Is your hybrid app ready for AEM Mobile?
 description: Auf dieser Seite erfahren Sie mehr über Hrybrid-Apps. Eine App in AEM ist in der Regel in zwei Teile unterteilt. "Shell"und "Inhalt"sowie diese Seite bieten weitere Einblicke zu diesen Themen.
-seo-description: Auf dieser Seite erfahren Sie mehr über Hrybrid-Apps. Eine App in AEM ist in der Regel in zwei Teile unterteilt. "Shell"und "Inhalt"sowie diese Seite bieten weitere Einblicke zu diesen Themen.
+seo-description: Follow this page to learn about hrybrid apps. An app in AEM is commonly divided into two parts. The 'shell' and 'content' and this page provides more insight on these topics.
 uuid: cbcce3fa-9100-46ea-9f24-931b42666709
 contentOwner: User
 content-type: reference
@@ -13,7 +13,7 @@ pagetitle: Is your hybrid app ready for AEM Mobile?
 exl-id: 4625890c-2b76-4c78-88e8-23741bc09f5b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '780'
+source-wordcount: '741'
 ht-degree: 3%
 
 ---
@@ -34,7 +34,7 @@ Um das Befolgen der Erklärung zu vereinfachen, verwenden wir das AEM Marketing 
 
 ![chlimage_1-76](assets/chlimage_1-76.png)
 
-In diesem Beispiel erstellen wir die Begrüßungsseite der Anwendung. Sehen Sie sich die Quelle [https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75) an. Wir sehen, dass der App-Entwickler eine Begrüßungsseite definiert und eine Vorlage für die Seite bereitgestellt hat, die von der App gerendert wird. Hier müssen sich der App-Entwickler und AEM Entwickler koordinieren. Der Pfad zur Begrüßungsseitenvorlage in der Hybrid-Referenzanwendung ist als &quot;&#39;content/mobileapps/hybrid-reference-app/en/welcome.template.html&#39;&#39; definiert. Dieser Pfad ist äußerst wichtig, da der AEM-Entwickler seine Begrüßungsseite im AEM-Repository mit demselben Pfad erstellt.
+In diesem Beispiel erstellen wir die Begrüßungsseite der Anwendung. Betrachten der Quelle [https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75). Wir sehen, dass der App-Entwickler eine Begrüßungsseite definiert und eine Vorlage für die Seite bereitgestellt hat, die von der App gerendert wird. Hier müssen sich der App-Entwickler und AEM Entwickler koordinieren. Der Pfad zur Begrüßungsseitenvorlage in der Hybrid-Referenzanwendung ist als &quot;&#39;content/mobileapps/hybrid-reference-app/en/welcome.template.html&#39;&#39; definiert. Dieser Pfad ist äußerst wichtig, da der AEM-Entwickler seine Begrüßungsseite im AEM-Repository mit demselben Pfad erstellt.
 
 ![chlimage_1-77](assets/chlimage_1-77.png)
 

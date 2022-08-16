@@ -1,8 +1,8 @@
 ---
 title: Blogfunktion
-seo-title: Blogfunktion
+seo-title: Blog Feature
 description: Community-Informationen im Journalformat
-seo-description: Community-Informationen im Journalformat
+seo-description: Community information in a journaling format
 uuid: 7323063f-81e8-45c3-9035-bf7df6124830
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,14 +13,14 @@ docset: aem65
 exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1676'
-ht-degree: 47%
+source-wordcount: '1666'
+ht-degree: 48%
 
 ---
 
 # Blogfunktion {#blog-feature}
 
-## Einführung {#introduction}
+## Einführung    {#introduction}
 
 Die Blogfunktion für AEM Communities wurde von einer Erstellungsaktivität in eine richtige Community-Aktivität umgewandelt, die in der Veröffentlichungsumgebung stattfindet.
 
@@ -44,7 +44,7 @@ In diesem Abschnitt der Dokumentation wird Folgendes beschrieben::
 
 >[!NOTE]
 >
->Die Komponenten `Journal` und `Journal Sidebar` haben die Titel `Blog` und `Blog Sidebar`.
+>Die Komponenten `Journal` und `Journal Sidebar` werden `Blog` und `Blog Sidebar`.
 >
 >Die Blogfunktion in AEM 6.0 und älteren Versionen wurde eingestellt. Sie beruhte auf einer Vorlage und beschränkte das Verfassen von Inhalten ausschließlich auf die Autorenumgebung.
 
@@ -57,21 +57,21 @@ Wenn Sie im Autorenmodus einen Blog zu einer Seite hinzufügen möchten, suchen 
 
 und ziehen Sie die Elemente an die jeweilige Position auf der Seite, auf der das Blog angezeigt werden soll.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](/help/communities/basics.md).
+Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die [erforderlichen clientseitigen Bibliotheken](/help/communities/blog-developer-basics.md#essentials-for-client-side) eingeschlossen sind, wird die Komponente `Blog` so angezeigt:
+Wenn die [erforderliche clientseitige Bibliotheken](/help/communities/blog-developer-basics.md#essentials-for-client-side) eingeschlossen sind, wird die `Blog` wird angezeigt:
 
 ![add-blog-component](assets/add-blog-component.png)
 
 ### Konfigurieren eines Blogs {#configuring-blog}
 
-Wählen Sie die platzierte Komponente `Blog` aus, um auf das Symbol `Configure` zuzugreifen, mit dem das Bearbeitungsdialogfeld geöffnet wird.
+Wählen Sie die platzierte `Blog` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
 ![konfigurieren](assets/configure-new.png)
 
 ![Blog-Einstellungen](assets/blog-configure.png)
 
-#### Registerkarte „Settings“{#settings-tab}
+#### Registerkarte „Settings“ {#settings-tab}
 
 Geben Sie auf der Registerkarte **Einstellungen** die grundlegenden Eigenschaften des Blogs an:
 
@@ -119,7 +119,7 @@ Geben Sie auf der Registerkarte **Einstellungen** die grundlegenden Eigenschafte
 
 * **Themen pro Seite**
 
-   Definiert die Anzahl der Blogeinträge/Kommentare, die pro Seite angezeigt werden. Standard: 10.
+   Definiert die Anzahl der Blogeinträge/Kommentare, die pro Seite angezeigt werden. Der Standardwert lautet 10.
 
 * **Moderiert**
 
@@ -135,7 +135,7 @@ Geben Sie auf der Registerkarte **Einstellungen** die grundlegenden Eigenschafte
 
 * **Tagging zulassen**
 
-   Wenn diese Option aktiviert ist, können Mitglieder ihrem Beitrag Tag-Beschriftungen hinzufügen (siehe Registerkarte **Tag-Feld** ). Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Mitglieder ihrem Beitrag Tag-Beschriftungen hinzufügen (siehe **Tag-Feld** Registerkarte). Diese Option ist standardmäßig deaktiviert.
 
 * **Datei-Uploads zulassen**
 
@@ -167,21 +167,21 @@ Geben Sie auf der Registerkarte **Einstellungen** die grundlegenden Eigenschafte
 
 * **Folgende zulassen**
 
-   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Blog-Artikel hinzu, mit der Mitglieder [benachrichtigt](/help/communities/notifications.md) über neue Beiträge werden können. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Blog-Artikel hinzu, mit der Mitglieder [benachrichtigt](/help/communities/notifications.md) von neuen Stellen. Diese Option ist standardmäßig deaktiviert.
 
 * **E-Mail-Abonnements zulassen**
 
-   Wenn diese Option aktiviert ist, können Mitglieder per E-Mail über neue Beiträge benachrichtigt werden ([subscription](/help/communities/subscriptions.md)). Erfordert die Überprüfung von `Allow Following` und die Konfiguration von [E-Mail](/help/communities/email.md). Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Mitglieder per E-Mail über neue Beiträge informiert werden ([Abonnement](/help/communities/subscriptions.md)). Erfordert `Allow Following` zu überprüfen und [E-Mail konfiguriert](/help/communities/email.md). Diese Option ist standardmäßig deaktiviert.
 
 * **Abzeichen anzeigen**
 
-   Wenn diese Option aktiviert ist, zeigen Sie verdiente und zugewiesene [Badges](/help/communities/implementing-scoring.md) mit dem Blogeintrag eines Mitglieds an. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, zeigen Sie Earned und Assored [Badges](/help/communities/implementing-scoring.md) mit dem Blogeintrag eines Mitglieds. Diese Option ist standardmäßig deaktiviert.
 
 * **Keine Antworten auf der Listenseite erhalten**
 
 * **Feature-Inhalt zulassen**
 
-   Wenn diese Option aktiviert ist, kann die Idee als [Inhalt mit Funktionen](/help/communities/featured.md) identifiziert werden. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](/help/communities/featured.md). Diese Option ist standardmäßig deaktiviert.
 
 * **Erwähnung aktivieren**
 
@@ -193,9 +193,9 @@ Geben Sie auf der Registerkarte **Einstellungen** die grundlegenden Eigenschafte
 
 * **UI-Erwähnungsmuster**
 
-   Geben Sie die zulässige Musterzeichenfolge an, um den registrierten Benutzer in einem Beitrag mit Tags zu versehen (@mention). Beispiel: ~{{familyName}{{givenName}}.
+   Geben Sie die zulässige Musterzeichenfolge an, um den registrierten Benutzer in einem Beitrag mit Tags zu versehen (@mention). Beispiel ~{{familyName}}{{givenName}}.
 
-#### Registerkarte Benutzermoderation {#user-moderation-tab}
+#### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
 Geben Sie auf der Registerkarte **Benutzermoderation** die Moderationseinstellungen an:
 
@@ -227,13 +227,13 @@ Geben Sie auf der Registerkarte **Benutzermoderation** die Moderationseinstellun
 
    Geben Sie an, wie oft ein Thema oder Kommentar gekennzeichnet werden muss, bevor er in der öffentlichen Ansicht ausgeblendet wird. Bei einem Wert von -1 wird das gekennzeichnete Thema oder der gekennzeichnete Kommentar nie ausgeblendet. In allen anderen Fällen muss der Wert größer als der oder gleich dem „Schwellenwert für Moderation“ sein. Der Standardwert ist 5.
 
-#### Registerkarte &quot;Tag-Feld&quot;{#tag-field-tab}
+#### Registerkarte &quot;Tag-Feld&quot; {#tag-field-tab}
 
 Auf der Registerkarte **Tag-Feld** können Sie angeben, welche Tags verwendet werden dürfen, wenn die Option **Tagging zulassen** auf der Registerkarte **Einstellungen** aktiviert wurde:
 
 * **Zulässige Namespaces**
 
-   Relevant, wenn `Allow Tagging` auf der Registerkarte **Einstellungen** aktiviert ist. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
+   Relevant, wenn `Allow Tagging` wird unter dem **Einstellungen** Registerkarte. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
 
 * **Empfehlungsgrenze**
 
@@ -241,7 +241,7 @@ Auf der Registerkarte **Tag-Feld** können Sie angeben, welche Tags verwendet we
 
 ### Konfigurieren einer Blog-Seitenleiste {#configuring-blog-sidebar}
 
-Wenn Sie auf die Komponente `Blog Sidebar` doppelklicken, wird ein Dialogfeld zum Bearbeiten geöffnet.
+Wenn Sie auf die `Blog Sidebar` -Komponente ein Dialogfeld zum Bearbeiten geöffnet.
 
 Auf der Registerkarte **Journal-Sidebar-Einstellungen** können Sie das Datumsformat für Archive festlegen und angeben, welche Eintragstypen in der Seitenleiste aufgeführt werden sollen:
 
@@ -269,7 +269,7 @@ Auf der Registerkarte **Journal-Sidebar-Einstellungen** können Sie das Datumsfo
 
 * **Pfad der Blopg-Komponente**
 
-   *(Optional)* Der Speicherort der Blog-Ressource, von der aus Blog-Artikel aufgelistet werden sollen. Wenn Sie das Feld leer lassen, wird die Komponente von resourceType `social/journal/components/hbs/journal` verwendet, die auf derselben Seite angezeigt wird.
+   *(Optional)* Der Speicherort der Blog-Ressource, von der aus Blog-Artikel aufgelistet werden sollen. Wenn das Feld leer gelassen wird, wird die Komponente von resourceType verwendet. `social/journal/components/hbs/journal` wird auf derselben Seite angezeigt.
 
    * Beispiel: `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
@@ -287,9 +287,9 @@ Wurde ein Blogartikel ausgewählt, werden der Artikel sowie zugehörige Kommenta
 
 Die Verfügbarkeit weiterer Optionen hängt davon ab, ob der Site-Besucher Moderator, Administrator, Community-Mitglied, privilegiertes Mitglied oder anonymer Besucher ist.
 
-### Arbeiten mit Artikeln  {#working-with-articles}
+### Arbeiten mit Artikeln {#working-with-articles}
 
-Beim Erstellen eines neuen Blogartikels haben Sie folgende Möglichkeiten:
+Wenn Sie einen neuen Blogartikel erstellen, können Sie aus folgenden Optionen wählen::
 
 1. Sofort veröffentlichen
 1. Einen Entwurf veröffentlichen
@@ -297,7 +297,7 @@ Beim Erstellen eines neuen Blogartikels haben Sie folgende Möglichkeiten:
 
 Die Blogartikel erscheinen auf der entsprechenden Registerkarte („Veröffentlicht“, „Entwürfe“ oder „Geplant“) und können von Mitgliedern bei der Veröffentlichung bearbeitet werden.
 
-#### Moderatoren und Administratoren  {#moderators-and-administrators}
+#### Moderatoren und Administratoren {#moderators-and-administrators}
 
 Verfügt der angemeldete Benutzer über Moderator- oder Administratorrechte, kann er [Moderationsaufgaben](/help/communities/moderate-ugc.md) für alle Blogartikel und Komponenten des Blogs durchführen (je nach Berechtigungen durch die Konfiguration der Komponente).
 
@@ -305,7 +305,7 @@ Verfügt der angemeldete Benutzer über Moderator- oder Administratorrechte, kan
 
 #### Mitglieder {#members}
 
-Wenn der angemeldete Benutzer Community-Mitglied oder [privilegiertes Mitglied](/help/communities/users.md#privileged-members-group) ist (je nach Konfiguration), kann er `New Article` auswählen, um einen neuen Blog-Artikel zu erstellen und zu posten.
+Wenn der angemeldete Benutzer Community-Mitglied ist oder [privilegiertes Mitglied](/help/communities/users.md#privileged-members-group) (je nach Konfiguration) können sie `New Article` , um einen neuen Blogartikel zu erstellen und zu posten.
 
 Insbesondere können sie:
 

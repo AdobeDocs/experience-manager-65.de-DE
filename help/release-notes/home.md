@@ -4,8 +4,8 @@ description: Die AEM-Versionshinweise enthalten wichtige Informationen zur neues
 exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
 source-git-commit: a2b3cb81fb15a1f03004e42cafbf92c84c9d7b89
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '391'
+ht-degree: 86%
 
 ---
 
@@ -48,7 +48,7 @@ Die AEM-Versionshinweise enthalten wichtige Informationen zur neuesten Version v
 * [Cloud Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Einhaltung der DSGVO](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
-* [AEM-Community-Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=de)
+* [AEM-Community-Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?lang=de)
 
 ## Copyright, Lizenzen und Haftungsausschlüsse {#copyright-licenses-and-disclaimers}
 

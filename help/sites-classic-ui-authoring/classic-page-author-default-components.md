@@ -1,8 +1,8 @@
 ---
-title: 'Komponenten '
-seo-title: 'Komponenten '
+title: Komponenten
+seo-title: Components
 description: AEM ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website-Autoren umfangreiche Funktionen bieten.
-seo-description: AEM ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website-Autoren umfangreiche Funktionen bieten.
+seo-description: AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors.
 page-status-flag: de-activated
 uuid: 02720edd-853c-4893-bf28-0e7b018029ea
 contentOwner: Chris Bohnert
@@ -13,12 +13,12 @@ discoiquuid: 9ed820de-c108-416e-aaf7-b63a64ab4f80
 exl-id: 9e0a01da-7940-47aa-8604-788d74e5daa0
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '217'
 ht-degree: 92%
 
 ---
 
-# Komponenten {#components}
+# Komponenten{#components}
 
 Adobe Experience Manager (AEM) ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website-Autoren umfangreiche Funktionen bieten. Diese sind beim [Bearbeiten einer Seite](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) verfügbar und werden nach Hauptfunktionsbereich (d. h. Komponentengruppe) gruppiert, um die Filterung zu erleichtern.
 
@@ -34,7 +34,7 @@ Die folgenden Seiten bieten schnellen Zugriff auf die Hauptbereiche des Content 
 
 * [Komponenten für die Seitenbearbeitung](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
-   Komponenten, die zum Erstellen von Standardseiteninhalten verwendet werden, sind hauptsächlich in den Gruppen **Allgemein**, **Spalten** und **Forms** enthalten.
+   Komponenten, die zum Erstellen von Standardseiteninhalten verwendet werden, sind hauptsächlich in Gruppen enthalten **Allgemein**, **Spalten** und **Forms**.
 
 * [E-Commerce](/help/commerce/cif-classic/administering/ecommerce.md)
 

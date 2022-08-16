@@ -10,7 +10,7 @@ discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 feature: Interactive Communication
 exl-id: ea0c8971-56f4-4094-87e4-1b222b73951f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 100%
 
@@ -75,7 +75,7 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
      <li>Rechnungsdatum</li>
      <li>Rechnungszeitraum</li>
     </ul> <p> </p> </td>
-   <td>--</td>
+   <td>—</td>
   </tr>
   <tr>
    <td>Kundendetails</td>
@@ -94,7 +94,7 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
      <li>Status-Code</li>
      <li>Anzahl von Verbindungen</li>
     </ul> </td>
-   <td>--</td>
+   <td>—</td>
   </tr>
   <tr>
    <td>Rechnungszusammenfassung</td>
@@ -108,7 +108,7 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
      <li>Fälliger Betrag</li>
      <li>Fälligkeitsdatum</li>
     </ul> </td>
-   <td>--</td>
+   <td>—</td>
   </tr>
   <tr>
    <td>Zusammenfassung der Gebühren</td>
@@ -126,7 +126,7 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
      <li>GESAMT ZAHLBAR (Feld für berechnete Nutzungsgebühren)</li>
     </ul> <p>Tabelle - Rechnungen</p> </td>
    <td>Keine Felder</td>
-   <td>--</td>
+   <td>—</td>
   </tr>
   <tr>
    <td>Einzeln aufgeführte Anrufe - Ausgehend</td>
@@ -140,20 +140,20 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
     </ul> </td>
    <td><p>Alle Werte</p> <p>Tabelle - Anrufe</p> </td>
    <td>Keine Felder</td>
-   <td>--</td>
+   <td>—</td>
   </tr>
   <tr>
    <td>Jetzt zahlen</td>
-   <td>--</td>
-   <td>--</td>
-   <td>--</td>
+   <td>—</td>
+   <td>—</td>
+   <td>—</td>
    <td>PayNow</td>
   </tr>
   <tr>
    <td>Mehrwert - Service</td>
-   <td>--</td>
-   <td>--</td>
-   <td>--</td>
+   <td>—</td>
+   <td>—</td>
+   <td>—</td>
    <td>Mehrwert - Service</td>
   </tr>
  </tbody>

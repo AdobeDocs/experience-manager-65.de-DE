@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 737fb4d1-adef-47e1-9a0d-8cddd13132cb
 exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2526'
 ht-degree: 100%
 
@@ -113,7 +113,7 @@ Je nach den installierten AEM Forms-Komponenten können die folgenden zusätzlic
 1. Weisen Sie diese Rolle Benutzern und Gruppen zu:
 
    * Klicken Sie auf „Benutzer/Gruppen suchen“.
-   * Geben Sie im Feld „Suchen“ die gewünschten Suchkriterien ein.
+   * Geben Sie die gewünschten Suchkriterien in das Feld Suchen ein.
    * Wählen Sie „Name“, „E-Mail“ oder „Benutzer-ID“ sowie „Benutzer“, „Gruppen“ oder „Benutzer und Gruppen“ aus.
    * Wählen Sie die Domain und die Anzahl der anzuzeigenden Suchergebnisse aus und klicken Sie auf „Suchen“.
    * Aktivieren Sie die Kontrollkästchen für die Benutzer und Gruppen, die Sie dieser Rolle zuweisen möchten, und klicken Sie auf „OK“.
@@ -150,7 +150,7 @@ Sie können alle von Ihnen erstellten Rollen löschen, jedoch nicht die AEM Form
 
 ## Rollen Benutzern und Gruppen zuweisen {#assign-a-role-to-users-and-groups}
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Benutzer und Gruppen“.
+1. Klicken Sie in Administration Console auf Einstellungen > Benutzerverwaltung > Benutzer und Gruppen.
 1. Geben Sie Informationen zum Eingrenzen der Suche ein und klicken Sie auf „Suchen“. Die Suchergebnisse werden im unteren Seitenbereich angezeigt. Sie können die Liste durch Klicken auf die Spaltenüberschriften sortieren.
 1. Aktivieren Sie die Kontrollkästchen der Benutzer und Gruppen, die Sie mit dieser Rolle verknüpfen möchten, und klicken Sie auf „Rolle zuweisen“.
 1. Wählen Sie die Rolle aus, die Sie dem Benutzer bzw. der Gruppe zuweisen möchten, und klicken Sie auf „OK“.

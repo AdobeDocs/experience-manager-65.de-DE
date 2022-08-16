@@ -11,7 +11,7 @@ docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '6906'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Dokumentfragmente sind wiederverwendbare Teile/Komponenten einer Korrespondenz, 
 
 ## Text {#text}
 
-Ein Text-Asset ist eine Inhaltskomponente, die aus einem oder mehreren Textabsätzen besteht. Ein Absatz kann statisch oder dynamisch sein. Ein dynamischer Absatz enthält Verweise auf Datenelemente, deren Werte zur Laufzeit bereitgestellt werden. So könnte beispielsweise der Kundenname in einer Grußformel ein dynamisches Datenelement sein, dessen Wert zur Laufzeit bereitgestellt wird. Durch Änderung dieser Werte können Sie dieselbe Briefvorlage zur Erstellung von Briefen für unterschiedliche Kunden verwenden.
+Ein Textelement ist eine Inhaltskomponente, die aus einem oder mehreren Textabsätzen besteht. Ein Absatz kann statisch oder dynamisch sein. Ein dynamischer Absatz enthält Verweise auf Datenelemente, deren Werte zur Laufzeit bereitgestellt werden. So könnte beispielsweise der Kundenname in einer Grußformel ein dynamisches Datenelement sein, dessen Wert zur Laufzeit bereitgestellt wird. Durch Änderung dieser Werte können Sie dieselbe Briefvorlage zur Erstellung von Briefen für unterschiedliche Kunden verwenden.
 
 Die Correspondence Management Solution unterstützt zwei Arten dynamischer Datenelemente (variable Daten):
 
@@ -120,7 +120,7 @@ Die Correspondence Management Solution unterstützt zwei Arten dynamischer Daten
 
 1. Ziehen Sie im Datenbereich Datenwörterbuchelemente und Platzhalterelemente in den Text.
 
-   An:
+   To:
 
    * Um ein Datenwörterbuchelement im Text einzufügen, wählen Sie ein Datenelement in der Liste aus und klicken Sie auf „Einfügen“ (![insert](assets/insert.png)). Wenn Sie Geschützt auswählen, ist das Datenlexikonelement schreibgeschützt und wird im Briefeditor, aber nicht in der Benutzeroberfläche „Korrespondenz erstellen“ oder in der Korrespondenzerstellung angezeigt.
    * Um ein Platzhalterelement im Text einzufügen, klicken Sie im Bereich „Datenelemente“ auf „Neu erstellen“. geben Sie die Details des neuen Datenelements ein und klicken Sie auf „Erstellen“, um das neue Element der Liste hinzuzufügen. Der neue Platzhalter kann in den Text auf dieselbe Weise wie ein Datenlexikonelement eingefügt werden. Um einen Platzhalter zu bearbeiten, wählen Sie einen Platzhalter aus und tippen Sie auf „Bearbeiten“.
@@ -160,7 +160,7 @@ Mithilfe der Funktion „Suchen und Ersetzen“ können Sie nach jeder beliebige
 
 1. Öffnen Sie das Textmodul im Texteditor.
 
-1. Tippen Sie auf „Suchen und Ersetzen“.
+1. Tippen Sie auf Suchen und Ersetzen.
 1. Geben Sie den zu suchenden Text in das Textfeld „Suchen“ ein und klicken Sie auf „Suchen“. Der gesuchte Text wird im Textmodul hervorgehoben.
 1. Um nach der nächsten Instanz des Texts zu suchen, klicken Sie erneut auf „Suchen“.
 
@@ -187,7 +187,7 @@ Mithilfe der Funktion „Suchen und Ersetzen“ können Sie nach jeder beliebige
 #### Suchen und Ersetzen von Text in einem Textmodul {#to-search-and-replace-text-in-a-text-module}
 
 1. Öffnen Sie das Textmodul im Texteditor.
-1. Tippen Sie auf „Suchen und Ersetzen“.
+1. Tippen Sie auf Suchen und Ersetzen.
 1. Geben Sie den zu suchenden Text in das Textfeld „Suchen“ ein und geben Sie den Text ein, der den gefundenen Text ersetzen soll. Klicken Sie auf „Ersetzen“.
 1. Wenn der zu suchende Text gefunden wird, wird der Text durch den Ersetzungstext ersetzt.
 
@@ -243,7 +243,7 @@ Eine Liste ist eine Gruppe verwandter Inhalte, die in einer Briefvorlage als zus
    * **Name:** Der eindeutige Name der Liste. Es ist nicht möglich, dass zwei Elemente (Text, Bedingung oder Liste) mit demselben Namen vorhanden sind, ungeachtet ihres jeweiligen Status. Im Feld „Name“ können Sie nur englische Sprachzeichen, Zahlen und Bindestriche eingeben. Das Feld „Name“ wird automatisch mit dem Wert im Feld „Titel“ ausgefüllt. Die Sonderzeichen, Leerzeichen, Zahlen und die nichtenglischen Zeichen im Feld „Titel“ werden im Feld „Name“ durch Bindestriche ersetzt. Obwohl der Wert im Feld „Titel“ automatisch in das Feld „Name“ kopiert wird, können Sie den Wert bearbeiten.
    * **Beschreibung (Optional)**: Geben Sie eine Beschreibung des Assets ein.
    * **Datenelement (Optional)**: Wählen Sie optional das Datenelement aus, mit dem das Element verknüpft werden soll. Es können nur Elemente der Liste hinzugefügt werden, die das gleiche Datenwörterbuch verwenden wie die Liste oder denen kein Datenwörterbuch zugewiesen ist. Einer Liste ein Datenwörterbuch zuzuweisen, erleichtert es dem Ersteller einer Briefvorlage, die passende Liste zu finden.
-   * **Tags (Optional)**: Wählen Sie die Tags aus, die angewendet werden sollen. Sie können auch den Namen eines neuen Tags eingeben und ihn erstellen. (Der neue Tag wird erstellt, wenn Sie auf **Speichern** tippen.)
+   * **Tags (Optional)**: Wählen Sie die Tags aus, die angewendet werden sollen. Sie können auch den Namen eines neuen Tags eingeben und ihn erstellen. (Das neue Tag wird erstellt, wenn Sie auf **Speichern** tippen.)
 
 1. Tippen Sie auf **Weiter**.
 1. Tippen Sie auf **Asset hinzufügen**.

@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c332985b-4556-4056-961a-fce2356da88d
 exl-id: 98c96349-f253-475f-b646-352269814a38
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 100%
 
@@ -71,7 +71,7 @@ Dieses Thema behandelte die folgenden Vorgehensweisen, um eine AEM Forms-Cluster
    1. Sichern Sie alle Dateien eines beliebigen sekundären Cluster-Knotens, einschließlich der Unterordner.
    1. Sichern Sie Repository/System.id jedes Clusterknotens separat.
 
-   Ausführliche Anweisungen finden Sie unter[ Sicherung und Wiederherstellung](https://docs.adobe.com/docs/de/crx/current/administering/backup_and_restore.html).
+   Ausführliche Anweisungen finden Sie unter[ Sicherung und Wiederherstellung](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
 
 1. Sichern Sie alle weiteren Daten, z. B. Kundenschriftarten.
 1. Starten Sie den Cluster neu.
@@ -177,7 +177,7 @@ Falls der gesamte Cluster aufgrund eines Fehler, wie dem Ausfall der Datenbank, 
 
 ## Sichern und Wiederherstellen des Veröffentlichungsknotens der Correspondence Management Solution {#back-up-and-restore-correspondence-management-solution-publish-node}
 
-Der Veröffentlichungsknoten hat in einer Cluster-Umgebung keine Primär-/Sekundärbeziehung.. Sie können einen beliebigen Veröffentlichungsknoten sichern, indem Sie diese Anweisungen befolgen: [Sicherung und Wiederherstellung](https://docs.adobe.com/docs/de/crx/current/administering/backup_and_restore.html).
+Der Veröffentlichungsknoten hat in einer Cluster-Umgebung keine Primär-/Sekundärbeziehung.. Sie können einen beliebigen Veröffentlichungsknoten sichern, indem Sie diese Anweisungen befolgen: [Sicherung und Wiederherstellung](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
 
 ### Wiederherstellen eines einzelnen Veröffentlichungsknotens {#recover-a-single-publisher-node}
 

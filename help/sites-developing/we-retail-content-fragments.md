@@ -1,8 +1,8 @@
 ---
 title: Testen von Inhaltsfragmenten in We.Retail
-seo-title: Testen von Inhaltsfragmenten in We.Retail
+seo-title: Trying out Content Fragments in We.Retail
 description: Testen von Inhaltsfragmenten in We.Retail
-seo-description: 'null'
+seo-description: null
 uuid: 66daddfe-8e98-47b6-8499-db055887ac17
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,22 +12,22 @@ discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
 exl-id: 1e5d8184-7164-4984-b43e-421015e8bf52
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '452'
 ht-degree: 79%
 
 ---
 
 # Testen von Inhaltsfragmenten in We.Retail{#trying-out-content-fragments-in-we-retail}
 
-Inhaltsfragmente ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen. **We.Retail**  (wie in einer vordefinierten Instanz von AEM verfügbar) stellt das Fragment  **Arktisches Surfen in** Lofotenas als einfaches Beispiel bereit. Dies verdeutlicht:
+Inhaltsfragmente ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen. **We.Retail** (wie in einer vordefinierten Instanz von AEM verfügbar) stellt das Fragment bereit **Arktisches Surfen in Lofoten** als Grundmuster. Dies verdeutlicht:
 
 * Content Fragments für Adobe Experience Manager (AEM) werden [als seitenunabhängige Assets erstellt und verwaltet](/help/assets/content-fragments/content-fragments.md). Sie ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen.
 
-   * Siehe [Wo finden Sie Inhaltsfragment-Assets in We.Retail](#where-to-find-content-fragments-in-we-retail)
+   * Siehe [Suchen nach Inhaltsfragment-Assets in We.Retail](#where-to-find-content-fragments-in-we-retail)
 
 * Sie können [diese Fragmente und ihre Varianten bei der Erstellung Ihrer Inhaltsseiten](/help/sites-authoring/content-fragments.md) verwenden.
 
-   * Siehe [Wo Inhaltsfragmente in We.Retail](#where-content-fragments-are-used-in-we-retail) verwendet werden
+   * Siehe [wo Inhaltsfragmente in We.Retail verwendet werden](#where-content-fragments-are-used-in-we-retail)
 
 Die vollständige Dokumentation zum Erstellen, Verwalten, Nutzen und Entwickeln von Inhaltsfragmenten:
 
@@ -39,18 +39,16 @@ Die vollständige Dokumentation zum Erstellen, Verwalten, Nutzen und Entwickeln 
 >
 >* **Inhaltsfragmente** sind redaktionelle Inhalte, vor allem Text und zugehörige Bilder. Dabei handelt es sich um reinen Inhalt ohne Design und Layout.
 >* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Web-Seiten dar.
-
 >
->
-Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
+>Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
 
 ## Suche nach Inhaltsfragment-Assets in We.Retail {#where-to-find-content-fragments-in-we-retail}
 
-Es gibt mehrere Beispielinhaltsfragmente in We.Retail. Navigieren Sie über **Assets**, **Dateien**, **We.Retail**, **Englisch**, **Erlebnisse**.
+Es gibt mehrere Beispielinhaltsfragmente in We.Retail. über navigieren **Assets**, **Dateien**, **We.Retail**, **englisch**, **Erlebnisse**.
 
 Diese enthalten **Arktisches Surfen in Lofoten**, ein Fragment zusammen mit dazu gehörenden visuellen Assets:
 
-* Navigieren Sie zu **Assets**, **Dateien**, **We.Retail**, **Englisch**, **Erlebnisse**, **Artisches Surfen in Lofoten**:
+* Navigieren über **Assets**, **Dateien**, **We.Retail**, **englisch**, **Erlebnisse**, **Artisches Surfen in Lofoten**:
 
    * [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten ) 
 
@@ -76,9 +74,9 @@ Unter folgendem Link finden Sie mehrere Beispiele zum Veranschaulichen der [Seit
 
 * [http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience](http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience)
 
-Beispielsweise wird auf der Sites-Seite auf das Inhaltsfragment **Arktisches Surfen in Lofoten** verwiesen:
+Beispiel: die **Arktisches Surfen in Lofoten** Inhaltsfragment wird auf der Seite Sites referenziert:
 
-* Navigieren Sie zu **Sites**, **We.Retail**, **Sprachmaster**, **English**, **Erlebnis**. Öffnen Sie dann **Arktisches Surfen in Lofoten** zur Bearbeitung:
+* Navigieren über **Sites**, **We.Retail**, **Sprach-Master**, **englisch**, **Erlebnis**. Öffnen Sie dann **Arktisches Surfen in Lofoten** zur Bearbeitung:
 
    * [http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html](http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html)
 

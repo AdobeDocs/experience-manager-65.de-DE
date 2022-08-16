@@ -1,8 +1,8 @@
 ---
 title: Zuordnung dynamischer Modelle zu Komponenten für SPAs
-seo-title: Zuordnung dynamischer Modelle zu Komponenten für SPAs
+seo-title: Dynamic Model to Component Mapping for SPAs
 description: In diesem Artikel wird beschrieben, wie die Zuordnung des dynamischen Modells zu Komponenten im JavaScript SPA SDK für AEM erfolgt.
-seo-description: In diesem Artikel wird beschrieben, wie die Zuordnung des dynamischen Modells zu Komponenten im JavaScript SPA SDK für AEM erfolgt.
+seo-description: This article describes how the dynamic model to component mapping occurs in the Javascript SPA SDK for AEM.
 uuid: 337b8d90-efd7-442e-9fac-66c33cc26212
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 8b4b0afc-8534-4010-8f34-cb10475a8e79
 exl-id: 5b2ccac0-bf1d-4f06-8743-7fce6fb68378
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 85%
+source-wordcount: '345'
+ht-degree: 84%
 
 ---
 
@@ -27,9 +27,9 @@ In diesem Dokument wird beschrieben, wie die Zuordnung des dynamischen Modells z
 
 ## ComponentMapping-Modul {#componentmapping-module}
 
-Das `ComponentMapping`-Modul wird dem Frontend-Projekt als NPM-Paket bereitgestellt. Es speichert Frontend-Komponenten und bietet der Single Page Application die Möglichkeit, Frontend-Komponenten AEM-Ressourcentypen zuzuordnen. Dies ermöglicht eine dynamische Auflösung von Komponenten beim Parsen des JSON-Modells der Anwendung.
+Das `ComponentMapping`-Modul wird dem Frontend-Projekt als NPM-Paket bereitgestellt. Es speichert Frontend-Komponenten und bietet der Single Page Application die Möglichkeit, Frontend-Komponenten AEM-Ressourcentypen zuzuordnen. Dies ermöglicht beim Parsen des JSON-Modells des Programms eine dynamische Auflösung von Komponenten.
 
-Alle im Modell vorhandenen Elemente enthalten ein Feld `:type`, das einen AEM-Ressourcentyp verfügbar macht. Bei der Implementierung kann sich die Frontend-Komponente selbst unter Verwendung des Modellfragments rendern, das sie von den zugrunde liegenden Bibliotheken erhalten hat.
+Alle im Modell vorhandenen Elemente enthalten ein Feld `:type`, das einen AEM-Ressourcentyp verfügbar macht. Bei der Implementierung kann sich die Frontend-Komponente mit dem Fragment des Modells, das sie von den zugrunde liegenden Bibliotheken erhalten hat, selbst rendern.
 
 Weitere Informationen zum Parsen von Modellen und zum Zugriff der Frontend-Komponenten auf das Modell finden Sie im Dokument [SPA-Blueprint](/help/sites-developing/spa-blueprint.md).
 
@@ -46,10 +46,10 @@ Single Page Applications, die das JavaScript SPA SDK für AEM nutzen, sind model
 
 ## App-Initialisierung {#app-initialization}
 
-Jede Komponente wird mit den Funktionen von [ `ModelProvider`](/help/sites-developing/spa-blueprint.md#the-model-provider) erweitert. Die Initialisierung hat daher die folgende allgemeine Form:
+Jede Komponente wird mit den Funktionen der [ `ModelProvider`](/help/sites-developing/spa-blueprint.md#the-model-provider). Die Initialisierung hat daher die folgende allgemeine Form:
 
 1. Jeder Modellanbieter initialisiert sich selbst und wartet auf Änderungen, die an dem Modell vorgenommen wurden, das seiner inneren Komponente entspricht.
-1. Der [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) muss entsprechend dem [Initialisierungsfluss](/help/sites-developing/spa-blueprint.md) initialisiert werden.
+1. Die [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) muss initialisiert werden, wie durch die [Initialisierungsfluss](/help/sites-developing/spa-blueprint.md).
 
 1. Nach dem Speichern gibt der Seitenmodell-Manager das vollständige Modell der App zurück.
 1. Dieses Modell wird dann an die Frontend-Stamm-[Container](/help/sites-developing/spa-blueprint.md#container)-Komponente der App übergeben.

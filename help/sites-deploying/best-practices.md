@@ -1,8 +1,8 @@
 ---
 title: Best Practices für die Bereitstellung
-seo-title: Best Practices für die Bereitstellung
+seo-title: Deploying Best Practices
 description: Best Practices für die Bereitstellung und Wartung
-seo-description: Best Practices für die Bereitstellung und Wartung
+seo-description: Deploying and maintaining best practices.
 uuid: 4546ed2c-43d5-40f3-874f-567b324e78c2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 4b5c0677-c630-4fae-867e-4f4583ac8507
 exl-id: 4cbc0a30-d5f6-40ff-b7f6-8d64762e1970
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 60%
+source-wordcount: '430'
+ht-degree: 59%
 
 ---
 
@@ -74,9 +74,9 @@ Die folgenden Tabellen enthalten auch Beschreibungen und Links zu speziellen Dok
 
 AEM Communities vereinfacht die Erstellung und Verwaltung von On-Premise-Communities. Best Practices für AEM Communities werden hier beschrieben:
 
-[Community-Inhaltsspeicher](/help/communities/working-with-srp.md)  - Behandelt die neue Funktion des gemeinsamen Speichers für benutzergenerierte Inhalte (UGC) und Überlegungen zur Auswahl der zugrunde liegenden  [Topologie](/help/communities/topologies.md).
+[Community-Inhaltsspeicher](/help/communities/working-with-srp.md) - Erläutert die neue Funktion des gemeinsamen Speichers für benutzergenerierte Inhalte (UGC) und Überlegungen zur Auswahl der zugrunde liegenden [Topologie](/help/communities/topologies.md).
 
-[Empfohlene Bereitstellungen für Communities](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities)  - Beschreibt die empfohlenen Bereitstellungen für Communities. |
+[Empfohlene Bereitstellungen für Communities](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Beschreibt die empfohlenen Bereitstellungen für Communities. |
 
 ## Benutzeroberfläche {#ui}
 
@@ -95,7 +95,7 @@ Best Practices über die Leistung sind hier aufgeführt:
   <tr>
    <td>Best Practices zur Qualitätssicherung</td>
    <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">Best Practices zur Qualitätssicherung</a></td>
-   <td>Ein standardisierter Überblick über die Probleme bei der Definition eines Testkonzepts speziell für Leistungstests in Ihrer <em>publish</em>-Umgebung. Dies ist vor allem für QA-Beauftragte, Projektleiter und Systemadministratoren von Interesse.</td>
+   <td>Ein standardisierter Überblick über die Probleme bei der Definition eines Testkonzepts speziell für Leistungstests in Ihren <em>publish</em> Umgebung. Dies ist vor allem für QA-Beauftragte, Projektleiter und Systemadministratoren von Interesse.</td>
   </tr>
   <tr>
    <td>Verwenden des Dispatchers mit einem CDN </td>

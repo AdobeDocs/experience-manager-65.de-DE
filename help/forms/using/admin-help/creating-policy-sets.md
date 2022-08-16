@@ -12,7 +12,7 @@ discoiquuid: a4fb1a11-8fe3-4092-a036-1c079aea1250
 feature: Document Security
 exl-id: 736926af-ae41-4da3-b181-444de72407bd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1295'
 ht-degree: 100%
 
@@ -44,7 +44,7 @@ Beim Erstellen von Richtliniensätzen weisen Sie Benutzern die Rolle des Dokumen
 
 Bei der Installation von Document Security wird standardmäßig ein so genannter *globaler Richtliniensatz* erstellt. Dieser Richtliniensatz wird von dem Administrator, der die Software installiert hat, oder dem für diesen Richtliniensatz festgelegten Richtliniensatzkoordinator verwaltet.
 
-## Einen Richtliniensatz erstellen {#create-a-policy-set}
+## Erstellen Sie einen Richtliniensatz {#create-a-policy-set}
 
 Der Richtliniensatz „Global“ ist der einzige Standardrichtliniensatz, der bei der Installation erstellt wird. Sie können weitere Richtliniensätze erstellen und dabei Richtlinien, Benutzer, Richtliniensatzkoordinatoren und Dokumentherausgeber hinzufügen. Nach Erstellen eines Richtliniensatzes können Sie Richtlinien im Satz erstellen.
 

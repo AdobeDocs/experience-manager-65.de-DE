@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f38ebd69-8d1c-49b6-824f-4bf0ec8a8953
 exl-id: 8fbff12a-4923-4151-a758-c1e44dee9160
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 100%
 
@@ -28,6 +28,6 @@ Output ermöglicht Ihnen, eine benutzerdefinierte XCI-Datei anzugeben, die für 
 
 Sie können Optionen auswählen, die das Außerkraftsetzen der oben angegebenen Optionen verhindern. In diesem Fall verwendet Output die in der benutzerdefinierten XCI-Datei angegebenen Werte.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Output“.
+1. Klicken Sie in der Administration-Console auf Services > Ausgabe.
 1. Aktivieren bzw. deaktivieren Sie das Kontrollkästchen „XCI-Systemstandardoptionen verwenden“. Wenn diese Option ausgewählt ist, verwendet Output seine Standardwerte für die packets-, creator-, producer- und compressObjectStream-Einstellungen. Bei deaktivierter Option verwendet Output die in der benutzerdefinierten XCI-Datei angegebenen Werte.
 1. Klicken Sie auf Speichern.

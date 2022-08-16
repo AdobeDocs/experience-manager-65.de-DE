@@ -1,24 +1,24 @@
 ---
 title: Konsole „Live Copy-Übersicht“
-seo-title: Konsole „Live Copy-Übersicht“
+seo-title: Live Copy Overview Console
 description: Erfahren Sie mehr über die Grundlagen der Konsole „Live Copy-Übersicht“.
-seo-description: Erfahren Sie mehr über die Grundlagen der Konsole „Live Copy-Übersicht“.
+seo-description: Learn about the basics of the Live Copy Overview Console.
 uuid: 6b1841ec-950e-455b-9b30-b5f5050a67b8
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
-feature: Multi-Site-Manager
+feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '534'
 ht-degree: 100%
 
 ---
 
-# Konsole „Live Copy-Übersicht“ {#live-copy-overview-console}
+# Konsole „Live Copy-Übersicht“{#live-copy-overview-console}
 
 Über die **Live Copy-Übersicht** können Sie folgende Vorgänge durchführen:
 
@@ -53,7 +53,7 @@ Die **Live Copy-Übersicht** wird über das seitliche Bedienfeld **Verweise** d
 1. Wählen Sie **Live Copy-Übersicht** aus, um eine Übersicht aller Live Copies mit Bezug zur ausgewählten Blueprint-Seite anzuzeigen und zu verwenden.
 1. Verwenden Sie **Schließen**, um den Vorgang zu beenden, und kehren Sie zur **Sites-Konsole** zurück.
 
-### Öffnen der Live Copy-Übersicht – Eigenschaften einer Blueprint-Seite  {#opening-live-copy-overview-properties-of-a-blueprint-page}
+### Öffnen der Live Copy-Übersicht – Eigenschaften einer Blueprint-Seite {#opening-live-copy-overview-properties-of-a-blueprint-page}
 
 Die **Live Copy-Übersicht** kann beim Anzeigen der Eigenschaften einer Blueprint-Seite geöffnet werden:
 
@@ -70,7 +70,7 @@ Die **Live Copy-Übersicht** kann beim Anzeigen der Eigenschaften einer Bluepri
 
 1. Verwenden Sie **Schließen**, um den Vorgang zu beenden, und kehren Sie zur **Sites-Konsole** zurück.
 
-## Verwenden der Live Copy-Übersicht  {#using-the-live-copy-overview}
+## Verwenden der Live Copy-Übersicht {#using-the-live-copy-overview}
 
 Mit der **Live Copy-Übersicht** können auch Aktionen für die Live Copy durchgeführt werden:
 

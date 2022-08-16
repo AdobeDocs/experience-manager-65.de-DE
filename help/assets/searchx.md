@@ -1,42 +1,42 @@
 ---
 title: Suchfunktion erweitern
-description: Erweitern Sie die Suchfunktionen von [!DNL Adobe Experience Manager Assets] über die Standardeinstellungen hinaus.
+description: Erweiterung der Suchfunktionen von [!DNL Adobe Experience Manager Assets] über die Standardwerte hinaus.
 contentOwner: AG
 role: Developer
-feature: Suche
+feature: Search
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
 source-git-commit: 0db95c4e7fc1ca20ce4f2d352c1276aa546dc7c3
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 74%
+source-wordcount: '838'
+ht-degree: 75%
 
 ---
 
 # Erweitern der Asset-Suche {#extending-assets-search}
 
-Sie können die Suchfunktionen von [!DNL Adobe Experience Manager Assets] erweitern. Standardmäßig sucht [!DNL Experience Manager Assets] nach Assets anhand von Zeichenfolgen.
+Sie können [!DNL Adobe Experience Manager Assets] Suchfunktionen. Vorkonfiguriert, [!DNL Experience Manager Assets] sucht nach Assets anhand von Zeichenfolgen.
 
 Die Suchfunktion wird über die QueryBuilder-Schnittstelle durchgeführt und lässt sich mit mehreren Eigenschaften anpassen. Sie können den Standardsatz der Eigenschaften im folgenden Verzeichnis überlagern: `/apps/dam/content/search/searchpanel/facets`.
 
-Sie können dem Admin-Bedienfeld [!DNL Assets] auch weitere Registerkarten hinzufügen.
+Sie können dem [!DNL Assets] Admin-Bereich.
 
 >[!CAUTION]
 >
->Ab [!DNL Experience Manager] 6.4 wird die klassische Benutzeroberfläche nicht mehr unterstützt. Informationen zur Mitteilung finden Sie unter [veraltete und entfernte Funktionen](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe empfiehlt die Verwendung der Touch-optimierten Benutzeroberfläche. Informationen zur Anpassung finden Sie unter [Suchfacetten](/help/assets/search-facets.md).
+>Als [!DNL Experience Manager] 6.4 Die klassische Benutzeroberfläche wird nicht mehr unterstützt. Informationen zur Ankündigung finden Sie unter [veraltete und entfernte Funktionen](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=de). Adobe empfiehlt die Verwendung der Touch-optimierten Benutzeroberfläche. Informationen zur Anpassung finden Sie unter [Suchfacetten](/help/assets/search-facets.md).
 
 ## Überlagerung {#overlaying}
 
-Um die vorkonfigurierten Eigenschaften zu überlagern, kopieren Sie den Knoten `facets` von `/libs/dam/content/search/searchpanel` in `/apps/dam/content/search/searchpanel/` oder geben Sie eine weitere `facetURL`-Eigenschaft in die `searchpanel`-Konfiguration ein (der Standardwert ist `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
+Um die vorkonfigurierten Eigenschaften zu überlagern, kopieren Sie die `facets` Knoten von `/libs/dam/content/search/searchpanel` nach `/apps/dam/content/search/searchpanel/` oder eine andere `facetURL` -Eigenschaft in `searchpanel` Konfiguration (der Standardwert ist `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
 
 ![screen_shot_2012-06-05at113619am](assets/screen_shot_2012-06-05at113619am.png)
 
 >[!NOTE]
 >
->Standardmäßig ist die Verzeichnisstruktur unter `/apps` nicht vorhanden. Erstellen Sie sie daher. Stellen Sie sicher, dass die Knotentypen den Typen unter `/libs` entsprechen.
+>Standardmäßig ist die Verzeichnisstruktur unter `/apps` nicht vorhanden ist, erstellen Sie sie also. Stellen Sie sicher, dass die Knotentypen den Typen unter `/libs` entsprechen.
 
 ## Hinzufügen von Registerkarten {#adding-tabs}
 
-Sie können zusätzliche Suchregisterkarten hinzufügen, indem Sie sie in der [!DNL Assets] Admin-Oberfläche konfigurieren. So erstellen Sie weitere Registerkarten:
+Sie können zusätzliche Suchregisterkarten hinzufügen, indem Sie sie im [!DNL Assets] Administrationsoberfläche. So erstellen Sie weitere Registerkarten:
 
 1. Erstellen Sie die Ordnerstruktur `/apps/wcm/core/content/damadmin/tabs,`, falls noch nicht vorhanden, kopieren Sie den Knoten `tabs` aus `/libs/wcm/core/content/damadmin` und fügen Sie ihn ein.
 1. Erstellen und konfigurieren Sie die zweite Registerkarte wie gewünscht.
@@ -47,9 +47,9 @@ Sie können zusätzliche Suchregisterkarten hinzufügen, indem Sie sie in der [!
 
 ## Erstellen benutzerdefinierter Eigenschaften {#creating-custom-predicates}
 
-[!DNL Assets] umfasst einen Satz vordefinierter Eigenschaften, mit denen eine Asset-Freigaben-Seite angepasst werden kann. Das Anpassen einer Asset-Freigabe auf diese Weise wird unter [Erstellen und Konfigurieren einer Asset-Freigabe-Seite](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page) beschrieben.
+[!DNL Assets] umfasst einen Satz vordefinierter Eigenschaften, mit denen eine Asset-Freigaben-Seite angepasst werden kann. Das Anpassen einer Asset-Freigabe auf diese Weise wird unter [Erstellen und Konfigurieren einer Asset-Freigabe-Seite](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Neben der Verwendung bereits vorhandener Eigenschaften können [!DNL Experience Manager]-Entwickler auch eigene Prädikate mit der [Query Builder-API](/help/sites-developing/querybuilder-api.md) erstellen.
+Zusätzlich zur Verwendung bereits vorhandener Eigenschaften gilt Folgendes: [!DNL Experience Manager] -Entwickler können auch eigene Prädikate erstellen, indem sie die [Query Builder-API](/help/sites-developing/querybuilder-api.md).
 
 Um benutzerdefinierte Eigenschaften erstellen zu können, benötigen Sie Grundlagenkenntnisse über das [Widget-Framework](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
@@ -256,7 +256,7 @@ Die folgenden Eigenschaften sind als vorkonfigurierte ExtJS-Widgets verfügbar.
 | Eigenschaft | Typ | Beschreibung |
 |---|---|---|
 | predicateName | Zeichenfolge | Name der Eigenschaft. Standardwert ist `fulltext` |
-| searchCallback | Funktion | Callback zum Auslösen der Suche bei Ereignis `keyup`. Standardwert ist `CQ.wcm.SiteAdmin.doSearch` |
+| searchCallback | Funktion | Callback zum Auslösen der Suche beim Ereignis `keyup`. Standardwert ist `CQ.wcm.SiteAdmin.doSearch` |
 
 ### PropertyPredicate {#propertypredicate}
 
@@ -273,7 +273,7 @@ Die folgenden Eigenschaften sind als vorkonfigurierte ExtJS-Widgets verfügbar.
 | predicateName | Zeichenfolge | Name der Eigenschaft. Standardwert ist `path` |
 | rootPath | Zeichenfolge | Stammpfad der Eigenschaft. Standardwert ist `/content/dam` |
 | pathFieldPredicateName | Zeichenfolge | Standardwert ist `folder` |
-| showFlatOption | Boolesch | Markierung zum Anzeigen des Kontrollkästchens `search in subfolders`. Standardwert ist „true“. |
+| showFlatOption | Boolesch | Kontrollkästchen anzeigen `search in subfolders`. Standardwert ist „true“. |
 
 ### DatePredicate {#datepredicate}
 
@@ -299,4 +299,4 @@ Die folgenden Eigenschaften sind als vorkonfigurierte ExtJS-Widgets verfügbar.
 
 Die Darstellung von Suchergebnissen in einer Asset-Freigaben-Seite wird durch die ausgewählte Linse geregelt. [!DNL Experience Manager Assets] umfasst einen Satz vordefinierter Linsen, mit denen Sie eine Asset-Freigaben-Seite anpassen können. Diese Art der Anpassung einer Asset-Freigabe wird unter [Erstellen und Konfigurieren einer Asset-Freigaben-Seite](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page) beschrieben.
 
-Neben der Verwendung bereits vorhandener Linsen können [!DNL Experience Manager]-Entwickler auch eigene Linsen erstellen.
+Zusätzlich zur Verwendung von bereits vorhandenen Linsen [!DNL Experience Manager] -Entwickler können auch eigene Linsen erstellen.

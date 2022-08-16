@@ -1,8 +1,8 @@
 ---
 title: Erstellen eines Sprach-Stamms mithilfe der klassischen Benutzeroberfläche
-seo-title: Erstellen eines Sprach-Stamms mithilfe der klassischen Benutzeroberfläche
+seo-title: Creating a Language Root Using the Classic UI
 description: Erfahren Sie, wie Sie einen Sprach-Stamm mithilfe der klassischen Benutzeroberfläche erstellen.
-seo-description: Erfahren Sie, wie Sie einen Sprach-Stamm mithilfe der klassischen Benutzeroberfläche erstellen.
+seo-description: Learn how to create a language root using the Classic UI.
 uuid: 62e40d39-2868-4d3d-9af7-c60a1a658be0
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,12 +10,12 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: b88edad4-2a2e-429b-86a2-cc68ba69697e
 docset: aem65
-feature: Sprachkopie
+feature: Language Copy
 exl-id: 1ae21d80-0683-4ab9-afaa-4d733ff47720
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 80%
+source-wordcount: '316'
+ht-degree: 79%
 
 ---
 
@@ -27,7 +27,7 @@ Im folgenden Verfahren wird die klassische Benutzeroberfläche zum Erstellen ein
 1. Fügt eine neue untergeordnete Seite hinzu, welche die Sprachversion der Website darstellt:
 
    1. Klicken Sie auf „Neu“ > „Neue Seite“.
-   1. Geben Sie in das Dialogfeld den Titel und den Namen ein. Der Name muss im Format `<language-code>` oder `<language-code>_<country-code>` sein, z. B. en, en_US, en_us, en_GB, en_gb.
+   1. Geben Sie in das Dialogfeld den Titel und den Namen ein. Der Name muss im Format `<language-code>` oder `<language-code>_<country-code>`, z. B. en, en_US, en_us, en_GB, en_gb.
 
       * Der unterstützte Sprachcode ist ein aus zwei Buchstaben bestehender Code in Kleinbuchstaben gemäß ISO-639-1
       * Der unterstützte Ländercode ist ein aus zwei Buchstaben bestehender Code in Klein- oder Großbuchstaben gemäß ISO-3166

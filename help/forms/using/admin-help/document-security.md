@@ -13,7 +13,7 @@ docset: aem65
 feature: Document Security
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
 source-git-commit: de5eb53f6160991ca0718d61afaeed2078a4fa88
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3286'
 ht-degree: 100%
 
@@ -260,7 +260,7 @@ Fügen Sie zu Richtlinien Benutzergruppen anstelle einzelner Benutzer hinzu. Die
    * Den Zugriff auf richtliniengeschützte Dokumente kontrollieren, indem dynamisch bestimmt wird, ob ein Benutzer auf ein richtliniengeschütztes Dokument zugreifen kann. Zum Beispiel kann dynamisch entschieden werden, ob ein Benutzer ein richtliniengeschütztes Dokument drucken darf.
 
    * Verwenden Sie zusätzlich zum standardmäßigen Prozess zur Richtlinienbewertung einen Zugriffskontrollmechanismus, den Ihr Content-Management-System verwendet. Wenn der Service beispielsweise bestimmt, ob ein Benutzer ein richtliniengeschütztes Dokument drucken darf, kann er den standardmäßigen Richtlinienbewertungsprozess und den Zugriffskontrollmechanismus verwenden, den Ihr Content-Management-System verwendet.
-   Obwohl es möglich ist, den Richtlinienbewertungsprozess der Dokumentensicherheit vollständig durch einen externen Autorisierungs-Handler zu ersetzen, wird empfohlen, dass Sie einen externen Autorisierungs-Handler in Verbindung mit dem Richtlinienbewertungsprozess verwenden. Dann kann der Dokumentzugriff über denselben Kontrollmechanismus gesteuert werden, den Ihr Content Management-System verwendet. Wenn beispielsweise der Service für Dokumentensicherheit bestimmt, ob ein Benutzer ein richtliniengeschütztes Dokument drucken darf, verwendet er den standardmäßigen Richtlinienbewertungsprozess und den Zugriffskontrollmechanismus, den Ihr Content-Management-System verwendet. Weitere Informationen finden Sie unter [Erstellen externer Autorisierungs-Handler](https://help.adobe.com/de_DE/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
+   Obwohl es möglich ist, den Richtlinienbewertungsprozess der Dokumentensicherheit vollständig durch einen externen Autorisierungs-Handler zu ersetzen, wird empfohlen, dass Sie einen externen Autorisierungs-Handler in Verbindung mit dem Richtlinienbewertungsprozess verwenden. Dann kann der Dokumentzugriff über denselben Kontrollmechanismus gesteuert werden, den Ihr Content Management-System verwendet. Wenn beispielsweise der Service für Dokumentensicherheit bestimmt, ob ein Benutzer ein richtliniengeschütztes Dokument drucken darf, verwendet er den standardmäßigen Richtlinienbewertungsprozess und den Zugriffskontrollmechanismus, den Ihr Content-Management-System verwendet. Weitere Informationen finden Sie unter [Erstellen externer Autorisierungs-Handler](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
 
 * **Beschränken Sie die Anzahl der Richtliniensätze auf ein Minimum**: Es gibt mehrere Faktoren, die zu einer ständigen Zunahme von Richtlinien und Richtliniensätzen führen. Einige häufige Faktoren sind:
 

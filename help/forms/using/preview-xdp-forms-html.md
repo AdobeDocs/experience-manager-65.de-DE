@@ -11,7 +11,7 @@ docset: aem65
 feature: Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ Um Designer für die Erstellung einer HTML-Vorschau für XDP-Formulare zu aktivi
 
       * -/de/content/xfaforms
       * -/etc/clientlibs
-   * AEM Forms unter OSGi
+   * AEM Forms on OSGi
 
       * -/de/content/xfaforms
       * -/etc/clientlibs/fd/xfaforms
@@ -80,7 +80,7 @@ Der[ abgesicherte Modus](../../forms/using/get-xdp-pdf-documents-aem.md) ist sta
       * `/lc/content/xfaforms/profiles/default.html` (AEM Forms on JEE)
    * **Forms Manager Context:** Kontextpfad, an dem die Forms Manager-Benutzeroberfläche bereitgestellt wird. Die Standardwerte lauten:
 
-      * `/aem/forms` (AEM Forms on OSGi)
+      * `/aem/forms` (AEM Forms unter OSGi)
       * `/lc/forms` (AEM Forms on JEE)
 
    >[!NOTE]

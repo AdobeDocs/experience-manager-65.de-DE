@@ -1,8 +1,8 @@
 ---
 title: Erstellen und Verarbeiten von Aufträgen für die Abladung
-seo-title: Erstellen und Verarbeiten von Aufträgen für die Abladung
+seo-title: Creating and Consuming Jobs for Offloading
 description: Die Apache Sling Discovery-Funktion stellt eine Java-API bereit, die das Erstellen von JobManager-Aufträgen und JobConsumer-Diensten ermöglicht, die sie verarbeiten.
-seo-description: Die Apache Sling Discovery-Funktion stellt eine Java-API bereit, die das Erstellen von JobManager-Aufträgen und JobConsumer-Diensten ermöglicht, die sie verarbeiten.
+seo-description: The Apache Sling Discovery feature provides a Java API that enables you to create JobManager jobs and JobConsumer services that consume them
 uuid: d6a5beb0-0618-4b61-9b52-570862eac920
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: e7b6b9ee-d807-4eb0-8e96-75ca1e66a4e4
 exl-id: 4e6f452d-0251-46f3-ba29-1bd85cda73a6
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 89%
+source-wordcount: '392'
+ht-degree: 88%
 
 ---
 
@@ -23,7 +23,7 @@ Die Apache Sling Discovery-Funktion stellt eine Java-API bereit, die das Erstell
 
 Weitere Informationen zum Erstellen von Abladetopologien und zum Konfigurieren der Themenverarbeitung finden Sie unter [Abladen von Aufträgen](/help/sites-deploying/offloading.md).
 
-## Verarbeiten von Auftragsnutzlasten  {#handling-job-payloads}
+## Verarbeiten von Auftragsnutzlasten {#handling-job-payloads}
 
 Das Abladungs-Framework definiert zwei Auftragseigenschaften zum Identifizieren der Auftragsnutzlast. Die Replikationsagenten zur Abladung ziehen diese Eigenschaften heran, um die Ressourcen für die Replikation der Instanzen in der Topologie zu identifizieren:
 
@@ -37,13 +37,13 @@ Verwenden Sie die Aufzählung `OffloadingJobProperties`, um auf die Eigenschafts
 
 Für Aufträge sind keine Nutzlasten erforderlich. Eine Nutzlast ist jedoch dann notwendig, wenn der Auftrag die Bearbeitung einer Ressource erfordert und er auf einen Computer abgeladen wird, der den Auftrag nicht erstellt hat.
 
-## Erstellen von Aufträgen für die Abladung  {#creating-jobs-for-offloading}
+## Erstellen von Aufträgen für die Abladung {#creating-jobs-for-offloading}
 
 Erstellen Sie einen Client, der die Methode „JobManager.addJob“ aufruft, um einen Auftrag zu erstellen, den von einem automatisch ausgewählten JobConsumer-Dienst ausgeführt wird. Geben Sie die folgenden Informationen an, um den Auftrag zu erstellen:
 
 * Thema: Das Auftragsthema.
 * Name: (Optional)
-* Eigenschaftenzuordnung: Ein `Map<String, Object>` -Objekt, das eine beliebige Anzahl von Eigenschaften enthält, wie z. B. die Pfade der Eingabenutzlast und die Payload-Ausgabepfade. Dieses Zuordnungsobjekt ist für das JobConsumer-Objekt verfügbar, das den Auftrag ausführt.
+* Eigenschaftenzuordnung: A `Map<String, Object>` -Objekt, das eine beliebige Anzahl von Eigenschaften enthält, z. B. die Payload-Pfade für die Eingabe und die Payload-Ausgabepfade. Dieses Zuordnungsobjekt ist für das JobConsumer-Objekt verfügbar, das den Auftrag ausführt.
 
 Der Dienst im folgenden Beispiel erstellt einen Auftrag für ein bestimmtes Thema und einen bestimmten Nutzlastpfad.
 
@@ -93,7 +93,7 @@ public class JobGeneratorImpl implements JobGenerator  {
 }
 ```
 
-Das Protokoll enthält die folgende Meldung, wenn JobGeneratorImpl.createJob für das `com/adobe/example/offloading`-Thema und die `/content/geometrixx/de/services`-Payload aufgerufen wird:
+Das Protokoll enthält die folgende Meldung, wenn JobGeneratorImpl.createJob für die `com/adobe/example/offloading` und `/content/geometrixx/de/services` Nutzlast:
 
 ```shell
 10.06.2013 15:43:33.868 *INFO* [JobHandler: /etc/workflow/instances/2013-06-10/model_1554418768647484:/content/geometrixx/en/company] com.adobe.example.offloading.JobGeneratorImpl Received request to make job for topic com/adobe/example/offloading and payload /content/geometrixx/de/services
@@ -103,7 +103,7 @@ Das Protokoll enthält die folgende Meldung, wenn JobGeneratorImpl.createJob fü
 
 Um Aufträge zu verarbeiten, entwickeln Sie einen OSGi-Dienst, der die Schnittstelle `org.apache.sling.event.jobs.consumer.JobConsumer` implementiert. Identifizieren Sie das zu verarbeitende Thema mithilfe der Eigenschaft `JobConsumer.PROPERTY_TOPICS`.
 
-Die folgende Beispielimplementierung JobConsumer registriert sich beim `com/adobe/example/offloading` -Thema. Der JobConsumer-Dienst legt einfach den Wert für die Eigenschaft „Consumed“ des Nutzlast-Inhaltknotens auf „true“ fest.
+Im folgenden Beispiel wird die Implementierung von JobConsumer bei der `com/adobe/example/offloading` Thema. Der JobConsumer-Dienst legt einfach den Wert für die Eigenschaft „Consumed“ des Nutzlast-Inhaltknotens auf „true“ fest.
 
 ```java
 package com.adobe.example.offloading;

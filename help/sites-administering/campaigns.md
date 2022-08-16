@@ -1,8 +1,8 @@
 ---
 title: Kampagnen
-seo-title: Kampagnen
+seo-title: Campaigns
 description: Erlernen Sie die Grundlagen für die Verwendung von AEM-Kampagnen.
-seo-description: Erlernen Sie die Grundlagen für die Verwendung von AEM-Kampagnen.
+seo-description: Learn the basics of using AEM Campaigns.
 uuid: f4be814f-8b0f-4089-88bb-0141227bce02
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 4a3a2ad7-40b0-4f19-a012-167453f58bc2
 exl-id: c7a6ab46-111f-42f0-bf09-7a300486672a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '142'
 ht-degree: 100%
 
 ---

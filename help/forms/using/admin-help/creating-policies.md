@@ -12,7 +12,7 @@ discoiquuid: fa054d30-c7dc-4b64-acf1-cbcbe8827df5
 feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '4718'
 ht-degree: 100%
 
@@ -238,7 +238,7 @@ Sie können die Authentifizierungseinstellungen überschreiben, die Sie auf dem 
 
 **Benutzername/Kennwort-Authentifizierung zulassen:** Aktivieren Sie diese Option, um zu bestimmen, ob Client-Anwendungen beim Herstellen einer Server-Verbindung die Benutzername/Kennwort-Authentifizierung zulassen.
 
-**Kerberos-Authentifizierung zulassen:** Aktivieren Sie diese Option, um zu bestimmen, ob Client-Anwendungen beim Herstellen einer Server-Verbindung die Kerberos-Authentifizierung zulassen.
+**Kerberos-Authentifizierung gestatten:** Aktivieren Sie diese Option, um zu bestimmen, ob Clientanwendungen beim Herstellen einer Serververbindung die Kerberos-Authentifizierung zulassen.
 
 **Zertifikat-Authentifizierung zulassen:** Aktivieren Sie diese Option, um zu bestimmen, ob Client-Anwendungen beim Herstellen einer Server-Verbindung die Zertifikat-Authentifizierung zulassen.
 

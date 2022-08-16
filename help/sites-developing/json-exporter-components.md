@@ -1,8 +1,8 @@
 ---
 title: Aktivieren eines JSON-Exports für eine Komponente
-seo-title: Aktivieren eines JSON-Exports für eine Komponente
+seo-title: Enabling JSON Export for a Component
 description: Komponenten können angepasst werden, um einen JSON-Export ihrer Inhalte basierend auf einem Modeler-Framework zu generieren.
-seo-description: Komponenten können angepasst werden, um einen JSON-Export ihrer Inhalte basierend auf einem Modeler-Framework zu generieren.
+seo-description: Components can be adapted to generate JSON export of their content based on a modeler framework.
 uuid: d7cc3347-2adb-4ea5-94a4-a847a2e66d28
 contentOwner: User
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
 exl-id: 6d127e14-767e-46ad-aaeb-0ce9dd14d553
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '540'
 ht-degree: 98%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 98%
 
 Komponenten können angepasst werden, um einen JSON-Export ihrer Inhalte basierend auf einem Modeler-Framework zu generieren.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Der JSON-Export basiert auf [Sling-Modellen](https://sling.apache.org/documentation/bundles/models.html) und auf dem Framework des [Sling Model Exporter](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) (der sich wiederum auf [Jackson-Anmerkungen](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) stützt).
 
@@ -30,7 +30,7 @@ Das bedeutet, dass die Komponente über ein Sling-Modell verfügen muss, wenn JS
 * [Definieren eines Sling-Modells für die Komponente](/help/sites-developing/json-exporter-components.md#define-a-sling-model-for-the-component)
 * [Kommentieren der Sling-Modell-Oberfläche](#annotate-the-sling-model-interface)
 
-## Definieren eines Sling-Modells für die Komponente   {#define-a-sling-model-for-the-component}
+## Definieren eines Sling-Modells für die Komponente {#define-a-sling-model-for-the-component}
 
 Zunächst muss ein Sling-Modell für die Komponente definiert werden.
 
@@ -78,7 +78,7 @@ Es müssen die richtigen Anmerkungen für die Modell-Oberfläche angewendet werd
 
 ## Beispiel {#example}
 
-Die Kernkomponenten unterstützen den JSON-Export seit der Version [1.1.0 der Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html). Sie können als Referenz verwendet werden.
+Die Kernkomponenten unterstützen den JSON-Export seit der Version [1.1.0 der Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). Sie können als Referenz verwendet werden.
 
 Ein Beispiel ist die Sling-Modell-Implementierung der Bild-Kernkomponente und deren kommentierte Oberfläche.
 
@@ -97,5 +97,5 @@ Weitere Informationen finden Sie unter:
 
 * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
 * [Bearbeitung mit Inhaltsfragmenten](/help/sites-authoring/content-fragments.md)
-* [JSON-Exporter für Content Services ](/help/sites-developing/json-exporter.md)
+* [JSON-Exporter für Content Services](/help/sites-developing/json-exporter.md)
 * [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) und die [Inhaltsfragmentkomponente](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)

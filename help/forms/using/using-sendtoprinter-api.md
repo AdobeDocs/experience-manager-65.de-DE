@@ -10,7 +10,7 @@ topic-tags: document_services
 discoiquuid: c2d564ba-fa5a-4130-b7fe-7e2c64d92170
 exl-id: 5fb38afd-7517-494e-b084-1fdd4aef3ca4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 100%
 
@@ -49,15 +49,15 @@ In nachstehender Tabelle wird Folgendes aufgelistet:
 | LPD | Leer | Alle | ein Ausnahmefehler, der besagt, dass das erforderliche sPrintServerUri-Argument nicht leer sein darf. |
 | LPD | Ungültig | Leer | Ausnahmefehler, der besagt, dass das erforderliche sPrinterName-Argument nicht leer sein darf. |
 | LPD | Ungültig | Nicht leer | Ausnahmefehler, der besagt, dass sPrintServerUri nicht gefunden wurde. |
-| LPD | Valid | Ungültig | Ausnahmefehler, der besagt, dass der Drucker nicht gefunden wurde. |
-| LPD | Valid | Valid | Druckauftrag wird erfolgreich ausgeführt. |
+| LPD | Gültig | Ungültig | Ausnahmefehler, der besagt, dass der Drucker nicht gefunden wurde. |
+| LPD | Gültig | Gültig | Druckauftrag wird erfolgreich ausgeführt. |
 | CUPS | Leer | Alle | ein Ausnahmefehler, der besagt, dass das erforderliche sPrintServerUri-Argument nicht leer sein darf. |
 | CUPS | Ungültig | Alle | Ausnahmefehler, der besagt, dass der Drucker nicht gefunden wurde. |
-| CUPS | Valid | Alle | Druckauftrag wird erfolgreich ausgeführt. |
+| CUPS | Gültig | Alle | Druckauftrag wird erfolgreich ausgeführt. |
 | DirectIP | Leer | Alle | ein Ausnahmefehler, der besagt, dass das erforderliche sPrintServerUri-Argument nicht leer sein darf. |
 | DirectIP | Ungültig | Alle | Ausnahmefehler, der besagt, dass der Drucker nicht gefunden wurde. |
-| DirectIP | Valid | Alle | Druckauftrag wird erfolgreich ausgeführt. |
-| CIFS | Valid | Leer | Druckauftrag wird erfolgreich ausgeführt. |
+| DirectIP | Gültig | Alle | Druckauftrag wird erfolgreich ausgeführt. |
+| CIFS | Gültig | Leer | Druckauftrag wird erfolgreich ausgeführt. |
 | CIFS | Ungültig | Alle | Beim Drucken einen unbekannten Fehler bei Verwendung von CIFS aus. |
 | CIFS | Leer | Alle | ein Ausnahmefehler, der besagt, dass das erforderliche sPrintServerUri-Argument nicht leer sein darf. |
 

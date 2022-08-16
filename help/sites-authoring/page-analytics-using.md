@@ -1,8 +1,8 @@
 ---
 title: Anzeigen von Seitenanalysedaten
-seo-title: Anzeigen von Seitenanalysedaten
+seo-title: Seeing Page Analytics Data
 description: Verwenden Sie Seitenanalysedaten, um die Wirkung des Seiteninhalts zu messen.
-seo-description: Verwenden Sie Seitenanalysedaten, um die Wirkung des Seiteninhalts zu messen.
+seo-description: Use page analytics data to gauge the effectiveness of their page content
 uuid: 5398a5d5-0239-4194-a403-77f5e6fcd741
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -14,7 +14,7 @@ legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-usin
 exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '440'
 ht-degree: 86%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 86%
 
 Verwenden Sie Seitenanalysedaten, um die Wirkung des Seiteninhalts zu messen.
 
-## In der Konsole sichtbare Analysedaten  {#analytics-visible-from-the-console}
+## In der Konsole sichtbare Analysedaten {#analytics-visible-from-the-console}
 
 ![spad-01](assets/spad-01.png)
 
@@ -39,7 +39,7 @@ Jede Spalte zeigt einen Wert für den aktuellen Berichtszeitraum an und gibt au�
 >
 >Zum Ändern des Aktualisierungszeitraums [konfigurieren Sie das Importintervall](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
-1. Öffnen Sie die Konsole **Sites** . zum Beispiel [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
+1. Öffnen Sie die **Sites** Konsole; Beispiel [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
 1. Klicken oder tippen Sie ganz rechts oben in der Symbolleiste auf das Symbol, um **Listenansicht** auszuwählen. (Das angezeigte Symbol ist von der [aktuellen Ansicht](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) abhängig.)
 
 1. Klicken oder tippen Sie wieder ganz rechts oben in der Symbolleiste auf das Symbol und wählen Sie dann **Anzeigeeinstellungen** aus. Das Dialogfeld **Spalten konfigurieren** wird geöffnet. Nehmen Sie die erforderlichen Änderungen vor und bestätigen Sie den Vorgang mit **Aktualisieren**.
@@ -66,7 +66,7 @@ Mitglieder der Analyse-Administratorbenutzergruppe können die Konsole „Sites�
 >
 >Wenn eine Struktur von Seiten untergeordnete Elemente enthält, die mit verschiedenen Adobe Analytics-Cloudkonfigurationen verbunden sind, können Sie die verfügbaren Datenspalten für die Seiten nicht konfigurieren.
 
-1. Verwenden Sie in der Listenansicht die Ansichtsauswahl (rechts neben der Symbolleiste), wählen Sie **Ansichtseinstellungen** und dann **Benutzerdefinierte Analytics-Daten hinzufügen**.
+1. Verwenden Sie in der Listenansicht die Ansichtsauswahl (rechts neben der Symbolleiste) und wählen Sie **Anzeigeeinstellungen** und dann **Hinzufügen benutzerdefinierter Analytics-Daten**.
 
    ![spad-03](assets/spad-03.png)
 
@@ -78,17 +78,17 @@ Mitglieder der Analyse-Administratorbenutzergruppe können die Konsole „Sites�
 
 ### Öffnen von Inhaltseinblicken mithilfe von Sites {#opening-content-insights-from-sites}
 
-Öffnen Sie [Content Insight](/help/sites-authoring/content-insights.md) in der Sites-Konsole, um die Seiteneffektivität weiter zu untersuchen.
+Öffnen [Content Insight](/help/sites-authoring/content-insights.md) über die Sites-Konsole, um die Seiteneffektivität weiter zu untersuchen.
 
 1. Wählen Sie in der Konsole „Sites“ die Seite aus, für die Sie Inhaltseinblicke sehen möchten.
 1. Klicken Sie in der Symbolleiste auf das Symbol „Analyse und Empfehlungen“.
 
    ![](do-not-localize/chlimage_1-14.png)
 
-## Im Seiteneditor sichtbare Analysedaten (Activity Map)  {#analytics-visible-from-the-page-editor-activity-map}
+## Im Seiteneditor sichtbare Analysedaten (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!CAUTION]
 >
 >Aufgrund von Sicherheitsänderungen in der Adobe Analytics-API ist es nicht mehr möglich, die in AEM enthaltene Version von Activity Map zu verwenden.
 >
->Das [ActivityMap-Plugin, das von Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=de#activity-map) bereitgestellt wird, sollte jetzt verwendet werden.
+>Die [Von Adobe Analytics bereitgestelltes ActivityMap-Plugin](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=de#activity-map) verwendet werden.

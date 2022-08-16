@@ -1,8 +1,8 @@
 ---
 title: Start und Stopp über die Befehlszeile
-seo-title: Start und Stopp über die Befehlszeile
+seo-title: Command Line Start and Stop
 description: Hier erfahren Sie, wie Sie AEM über die Befehlszeile starten und anhalten können.
-seo-description: Hier erfahren Sie, wie Sie AEM über die Befehlszeile starten und anhalten können.
+seo-description: Learn how to start and stop AEM from the command line.
 uuid: 585f071c-2286-4a2c-af07-404bf298cba8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 9333ff84-f624-4cfa-a9e4-c5e3882171ff
 exl-id: 21041b55-240c-487d-9d79-c54c877f4e1e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 93%
+source-wordcount: '366'
+ht-degree: 92%
 
 ---
 
@@ -70,13 +70,13 @@ Diese beiden Versionen unterstützen eine Liste von Umgebungsvariablen, die zum 
 >
 >Beachten Sie, dass einige Ausführungsmodi, wie „author“ und „publish“, vor dem ersten Starten von AEM eingerichtet werden müssen und im Nachhinein nicht mehr geändert werden können. Lesen Sie vor dem Einrichten einer AEM-Instanz, die in der Produktion verwendet werden soll, die [Dokumentation für die Ausführungsmodi](/help/sites-deploying/configure-runmodes.md), um weitere Informationen zu erhalten.
 
-### „start.bat“-Skriptbeispiel für Windows-Plattform  {#windows-platform-start-bat-script-example}
+### „start.bat“-Skriptbeispiel für Windows-Plattform {#windows-platform-start-bat-script-example}
 
 ```shell
 SET CQ_PORT=1234 & ./start.bat
 ```
 
-### „start“-Skriptbeispiel für Unix-Plattform{#unix-platform-start-script-example}
+### „start“-Skriptbeispiel für Unix-Plattform {#unix-platform-start-script-example}
 
 ```shell
 CQ_PORT=1234 ./start
@@ -103,13 +103,13 @@ Führen Sie zum Anhalten von AEM eine der folgenden Aktionen aus:
 
 Das Skript `stop` befindet sich im Verzeichnis *&lt;cq-installation>/bin*. Sowohl die Unix- als auch die Windows-Version wird bereitgestellt. Das Skript hält die im Verzeichnis *&lt;cq-installation>* installierte aktive Instanz an.
 
-### „stop“-Skriptbeispiel für Unix-Plattform{#unix-platform-stop-script-example}
+### „stop“-Skriptbeispiel für Unix-Plattform {#unix-platform-stop-script-example}
 
 ```shell
 ./stop
 ```
 
-### „stop.bat“-Skriptbeispiel für Windows-Plattform{#windows-platform-stop-bat-script-example}
+### „stop.bat“-Skriptbeispiel für Windows-Plattform {#windows-platform-stop-bat-script-example}
 
 ```shell
 ./stop.bat
@@ -119,8 +119,8 @@ Wenn Sie das Repository einfach vorkonfigurieren möchten (ohne seine Position z
 
 * `repository.xml` am erforderlichen Speicherort extrahieren
 
-* Aktualisieren Sie `repository.xml` nach Bedarf
+* update `repository.xml` nach Bedarf
 
-* `bootstrap.properties` erstellen und `repository.config` definieren
+* erstellen `bootstrap.properties` und definieren `repository.config`
 
 Zur Erinnerung: Führen Sie diese Aktionen vor der tatsächlichen Installation aus.

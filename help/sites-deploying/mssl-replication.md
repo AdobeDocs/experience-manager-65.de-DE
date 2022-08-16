@@ -1,19 +1,19 @@
 ---
 title: Replizieren mit MSSL
-seo-title: Replizieren mit MSSL
+seo-title: Replicating Using Mutual SSL
 description: Erfahren Sie, wie Sie AEM so konfigurieren, dass ein Replikationsagent auf der Autoreninstanz gegenseitiges SSL (MSSL) für die Verbindung mit der Veröffentlichungsinstanz verwendet. Bei MSSL verwenden der Replikationsagent und der HTTP-Dienst auf der Veröffentlichungsinstanz Zertifikate für die gegenseitige Authentifizierung.
-seo-description: Erfahren Sie, wie Sie AEM so konfigurieren, dass ein Replikationsagent auf der Autoreninstanz gegenseitiges SSL (MSSL) für die Verbindung mit der Veröffentlichungsinstanz verwendet. Bei MSSL verwenden der Replikationsagent und der HTTP-Dienst auf der Veröffentlichungsinstanz Zertifikate für die gegenseitige Authentifizierung.
+seo-description: Learn how to configure AEM so that a replication agent on the author instance uses mutual SSL (MSSL) to connect with the publish instance. Using MSSL, the replication agent and the HTTP service on the publish instance use certificates to authenticate each other.
 uuid: f4bc5e61-a58c-4fd2-9a24-b31e0c032c15
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
-feature: Konfiguration
+feature: Configuring
 exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1409'
 ht-degree: 93%
 
 ---
@@ -45,7 +45,7 @@ Sie benötigen einen privaten Schlüssel und ein öffentliches Zertifikat für d
 * Zertifikate müssen im PKCS#12- oder JKS-Format enthalten sein. Zertifikate im CER-Format können ebenfalls zu Granite Truststore hinzugefügt werden.
 * Zertifikate können von einer anerkannten Zertifizierungsstelle (Certification Authority, CA) selbst signiert oder signiert werden.
 
-### JKS-Format  {#jks-format}
+### JKS-Format {#jks-format}
 
 Erstellen Sie einen privaten Schlüssel und ein Zertifikat im JKS-Format. Der private Schlüssel wird in einer KeyStore-Datei, das Zertifikat in einer TrustStore-Datei gespeichert. Verwenden Sie [Java `keytool`](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html), um beide zu erstellen.
 
@@ -134,7 +134,7 @@ Generieren Sie einen privaten Schlüssel und ein Zertifikat im PKCS#12-Format. V
    | -inkey | author.key | publish.key |
    | -out | author.pfx | publish.pfx |
    | -in | author.cer | publish.cer |
-   | -name | author | veröffentlichen |
+   | -name | author | publish |
 
 ## Installieren von privatem Schlüssel und TrustStore auf der Autoreninstanz {#install-the-private-key-and-truststore-on-author}
 
@@ -145,7 +145,7 @@ Installieren Sie Folgendes auf der Autoreninstanz:
 
 Um folgende Schritte ausführen, müssen Sie als Administrator der Autoreninstanz angemeldet sein.
 
-### Installieren des privaten Schlüssels der Autoreninstanz  {#install-the-author-private-key}
+### Installieren des privaten Schlüssels der Autoreninstanz {#install-the-author-private-key}
 
 1. Öffnen Sie die Seite „Benutzerverwaltung“ für die Autoreninstanz. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. Klicken oder tippen Sie auf Ihren Benutzernamen, um die Eigenschaften Ihres Benutzerkontos zu öffnen.
@@ -188,7 +188,7 @@ Installieren Sie Folgendes auf der Veröffentlichungsinstanz:
 
 Um die folgenden Schritte auszuführen, müssen Sie als Administrator der Veröffentlichungsinstanz angemeldet sein.
 
-### Installieren des privaten Schlüssels der Veröffentlichungsinstanz  {#install-the-publish-private-key}
+### Installieren des privaten Schlüssels der Veröffentlichungsinstanz {#install-the-publish-private-key}
 
 1. Öffnen Sie die Seite „Benutzerverwaltung“ für die Veröffentlichungsinstanz. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Klicken oder tippen Sie auf Ihren Benutzernamen, um die Eigenschaften Ihres Benutzerkontos zu öffnen.
@@ -199,7 +199,7 @@ Um die folgenden Schritte auszuführen, müssen Sie als Administrator der Veröf
 1. Geben Sie einen Alias und das Kennwort für den KeyStore ein. Geben Sie den Alias und das Kennwort für den privaten Schlüssel ein. Klicken Sie anschließend auf „Übermitteln“.
 1. Schließen Sie das Dialogfeld „KeyStore-Verwaltung“.
 
-### Installieren des Autorenzertifikats  {#install-the-author-certificate}
+### Installieren des Autorenzertifikats {#install-the-author-certificate}
 
 1. Öffnen Sie die Seite „Benutzerverwaltung“ für die Veröffentlichungsinstanz. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Suchen Sie nach dem Benutzerkonto, das zum Ausführen von Replikationsanforderungen verwendet wird, und klicken oder tippen Sie auf den Benutzernahmen.
@@ -209,7 +209,7 @@ Um die folgenden Schritte auszuführen, müssen Sie als Administrator der Veröf
 1. Stellen Sie sicher, dass die Option „Benutzer Zertifikat zuordnen“ ausgewählt ist. Klicken Sie auf „Zertifikatsdatei auswählen“ und wählen Sie „author.cer“ aus. Klicken Sie auf „Öffnen“.
 1. Klicken Sie auf „Übermitteln“ und schließen Sie dann das Dialogeld „TrustStore-Verwaltung“.
 
-## Konfigurieren des HTTP-Dienstes auf der Veröffentlichungsinstanz  {#configure-the-http-service-on-publish}
+## Konfigurieren des HTTP-Dienstes auf der Veröffentlichungsinstanz {#configure-the-http-service-on-publish}
 
 Konfigurieren Sie die Eigenschaften des Apache Felix Jetty-basierten HTTP-Dienstes auf der Veröffentlichungsinstanz so, dass beim Zugriff auf Granite KeyStore HTTPS verwendet wird. Die PID des Dienstes ist `org.apache.felix.http`.
 
@@ -217,8 +217,8 @@ In der folgenden Tabelle sind die OSGi-Eigenschaften aufgeführt, die Sie konfig
 
 | Eigenschaftsname in der Web-Konsole | OSGi-Eigenschaftsname | Wert |
 |---|---|---|
-| HTTPS aktivieren | org.apache.felix.https.enable | true |
-| Aktivieren Sie HTTPS zur Verwendung von Granite KeyStore. | org.apache.felix.https.use.granite.keystore | true |
+| HTTPS aktivieren | org.apache.felix.https.enable | Ja |
+| Aktivieren Sie HTTPS zur Verwendung von Granite KeyStore. | org.apache.felix.https.use.granite.keystore | Ja |
 | HTTPS-Port | org.osgi.service.http.port.secure | 8443 (oder anderer gewünschter Anschluss) |
 | Client-Zertifikat | org.apache.felix.https.clientcertificate | &quot;Client-Zertifikat gewünscht&quot; |
 

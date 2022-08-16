@@ -11,7 +11,7 @@ discoiquuid: 9d63152d-41ca-4c7c-bb20-af16c7bdec13
 docset: aem65
 exl-id: eb45adf2-d0f3-4de6-92ac-fb146953e989
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 100%
 
@@ -48,7 +48,7 @@ Gehen Sie wie folgt vor, um der Seite eine Komponente des Typs „Link“ hinzuz
    * **HTML Profile**: Profil für die Wiedergabe des Formulars im HTML-Format.
    * **PDF Profile**: Profil für die Wiedergabe des Formulars als PDF-Dokument.
 
-1. Öffnen Sie die Registerkarte **Erweitert**. Sie können zusätzliche Parameter in Form von Schlüssel-Wert-Paaren angeben. Wenn der Link angeklickt wird, werden diese zusätzlichen Parameter zusammen mit dem Formular übergeben.
+1. Öffnen Sie die Registerkarte **Erweitert**. Sie können zusätzliche Parameter in Form von Schlüssel-Wert-Paaren angeben. Wenn auf den Link geklickt wird, werden diese zusätzlichen Parameter zusammen mit dem Formular übergeben.
 
    Tippen Sie auf **Fertig**, um die Konfiguration zu speichern.
 

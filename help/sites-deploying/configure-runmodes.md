@@ -1,19 +1,19 @@
 ---
 title: Ausführungsmodi
-seo-title: Ausführungsmodi
+seo-title: Run Modes
 description: Hier erfahren Sie, wie Sie Ihre AEM-Instanz mithilfe von Ausführungsmodi an einen bestimmten Verwendungszweck anpassen.
-seo-description: Hier erfahren Sie, wie Sie Ihre AEM-Instanz mithilfe von Ausführungsmodi an einen bestimmten Verwendungszweck anpassen.
+seo-description: Learn how to tune your AEM instance for specific purposes by using run modes.
 uuid: 8a0c6e5c-4fae-43e2-b745-eee58f346ceb
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
-feature: Konfiguration
+feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '747'
 ht-degree: 83%
 
 ---
@@ -45,9 +45,9 @@ Installations-Ausführungsmodi sind vordefiniert:
 
 Jeweils zwei Paare von Ausführungsmodi schließen einander gegenseitig aus. Sie können beispielsweise:
 
-* Definieren Sie entweder `author` oder `publish`, nicht beides gleichzeitig.
+* definieren `author` oder `publish`nicht beides gleichzeitig
 
-* `author` entweder mit `samplecontent` oder `nosamplecontent` kombinieren (aber nicht mit beiden)
+* kombinieren `author` mit `samplecontent` oder `nosamplecontent` (aber nicht beides)
 
 >[!CAUTION]
 >
@@ -55,17 +55,17 @@ Jeweils zwei Paare von Ausführungsmodi schließen einander gegenseitig aus. Sie
 >
 >Sie können diesen Wert für diese Ausführungsmodi nach der Installation *nicht mehr* ändern.
 
-## Ausführungsmodi anpassen  {#customized-run-modes}
+## Ausführungsmodi anpassen {#customized-run-modes}
 
 Sie können auch Ihre eigenen, benutzerdefinierten Ausführungsmodi erstellen. Diese können beispielsweise folgendermaßen kombiniert werden:
 
 * `author` + `development`
 
-* `publish` +  `test`
+* `publish` + `test`
 
 * `publish` + `test` + `golive`
 
-* `publish` +  `intranet`
+* `publish` + `intranet`
 
 * nach Bedarf ...
 
@@ -81,7 +81,7 @@ Mit diesen Modi können Sie die Verwendung von Beispielinhalten steuern. Beispie
 
 Der nosamplecontent-Ausführungsmodus ist für Produktionsinstallationen bestimmt.
 
-## Definieren von Konfigurationseigenschaften für einen Ausführungsmodus  {#defining-configuration-properties-for-a-run-mode}
+## Definieren von Konfigurationseigenschaften für einen Ausführungsmodus {#defining-configuration-properties-for-a-run-mode}
 
 Die Werte der Konfigurationseigenschaften, die für einen bestimmten Ausführungsmodus verwendet werden, können im Repository gespeichert werden.
 
@@ -109,7 +109,7 @@ Siehe [OSGi-Konfiguration im Repository](/help/sites-deploying/configuring-osgi.
 >
 >Für [Installations-Ausführungsmodi](#installation-run-modes) (z. B. author) kann der Ausführungsmodus nach der Installation nicht mehr geändert werden. Doch Änderungen an einzelnen Konfigurationseigenschaften werden bei einem Neustart wirksam.
 
-## Definieren von zusätzlichen für einen Ausführungsmodus zu installierenden Bundles  {#defining-additional-bundles-to-be-installed-for-a-run-mode}
+## Definieren von zusätzlichen für einen Ausführungsmodus zu installierenden Bundles {#defining-additional-bundles-to-be-installed-for-a-run-mode}
 
 Zusätzliche Bundles, die für einen bestimmten Ausführungsmodus installiert werden sollen, können ebenfalls angegeben werden. Für diese Definitionen werden Installationsordner verwendet, um die Bundles zu speichern. Auch hier ist der Ausführungsmodus durch ein Präfix gekennzeichnet:
 
@@ -144,7 +144,7 @@ Mit der Datei `sling.properties` können Sie den erforderlichen Ausführungsmodu
 
 ### Verwenden der -r-Option {#using-the-r-option}
 
-Ein benutzerdefinierter Ausführungsmodus kann beim Starten des Schnellstarts über die Option `-r` aktiviert werden. Verwenden Sie beispielsweise den folgenden Befehl, um eine AEM Instanz mit dem Ausführungsmodus &quot;dev&quot;zu starten. &quot;
+Ein benutzerdefinierter Ausführungsmodus kann mithilfe der `-r` beim Start des Schnellstarts. Verwenden Sie beispielsweise den folgenden Befehl, um eine AEM Instanz mit dem Ausführungsmodus &quot;dev&quot;zu starten. &quot;
 
 ```shell
 java -jar cq-56-p4545.jar -r dev

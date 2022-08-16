@@ -1,8 +1,8 @@
 ---
 title: Communities-Abonnements
-seo-title: Communities-Abonnements
+seo-title: Communities Subscriptions
 description: Community-Mitglieder interagieren per E-Mail mit anderen Mitgliedern
-seo-description: Community-Mitglieder interagieren per E-Mail mit anderen Mitgliedern
+seo-description: Community members interact with other members through email
 uuid: a4b98769-c219-4e18-8e80-9a806ab979ff
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,8 +13,8 @@ role: Admin
 exl-id: 338be220-659a-459c-8e90-55e3a11ddeb0
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 2%
+source-wordcount: '351'
+ht-degree: 1%
 
 ---
 
@@ -22,14 +22,14 @@ ht-degree: 2%
 
 ## Übersicht {#overview}
 
-Ab Communities [FP1](deploy-communities.md#latestfeaturepack) können Community-Mitglieder per E-Mail mit der Community interagieren, indem sie eine Funktion verwenden, die als Abonnements bezeichnet wird.
+Als Communitys [FP1](deploy-communities.md#latestfeaturepack), können Community-Mitglieder mit der Community per E-Mail über eine Funktion interagieren, die als Abonnements bezeichnet wird.
 
-Abonnements ähneln [Benachrichtigungen](notifications.md), da Mitglieder sich abonnieren können, wenn sie Blog-Artikel, Forenthemen oder Fragen zur Frage stellen.
+Abonnements ähneln [Benachrichtigungen](notifications.md) wie Mitglieder abonnieren können, wenn sie Blog-Artikel, Foren-Themen oder Fragen zur Frage nach Fragen.
 
 Unterscheidet Anmeldungen von Benachrichtigungen:
 
 * Die Mitglieder dürfen sich nicht an anderen Mitgliedern beteiligen.
-* Die einzige Aktion, die Mitglieder ergreifen müssen, besteht darin, `Email Subscriptions` auszuwählen, wenn sie darauf folgen.
+* Die einzige Aktion, die Mitglieder ergreifen müssen, ist die Auswahl `Email Subscriptions` wenn sie folgt.
 * Wenn die E-Mail-Antwort konfiguriert ist, können Mitglieder Inhalte effektiv posten, indem sie einfach auf die erhaltene E-Mail antworten.
 
 ### Voraussetzungen {#requirements}
@@ -38,21 +38,21 @@ Unterscheidet Anmeldungen von Benachrichtigungen:
 
 E-Mail muss konfiguriert werden, damit Abonnements funktionieren und Mitglieder per E-Mail antworten können.
 
-Anweisungen zum Einrichten von E-Mails finden Sie unter [Konfigurieren von E-Mail](email.md).
+Anweisungen zum Einrichten von E-Mails finden Sie unter [E-Mail konfigurieren](email.md).
 
 **Aktivieren von Abonnements und Folgen**
 
-Komponenten müssen so konfiguriert sein, dass folgende Abonnements aktiviert werden: *und*. Funktionen, die Abonnements zulassen, sind [blog](blog-feature.md), [forum](forum.md) und [QnA](working-with-qna.md).
+Komponenten müssen zur Aktivierung von Abonnements konfiguriert werden *und* folgt. Funktionen, die Abonnements zulassen [blog](blog-feature.md), [Forum](forum.md) und [Fragen und Antworten](working-with-qna.md).
 
 ## Abonnements aus folgenden {#subscriptions-from-following}
 
 ![subscription-following](assets/subscription-following.png)
 
-Die Schaltfläche **Folgen** bietet die Möglichkeit, Einträgen als Aktivitäten, Abonnements und/oder Benachrichtigungen zu folgen. Jedes Mal, wenn die Schaltfläche **Folgen** ausgewählt wird, können Sie eine Auswahl ein- oder ausschalten.
+Die **Folgen** -Schaltfläche bietet die Möglichkeit, auf Einträge als Aktivitäten, Abonnements und/oder Benachrichtigungen zu folgen. Jedes Mal, wenn **Folgen** ausgewählt ist, können Sie die Auswahl ein- oder ausschalten.
 
-Wenn eine der folgenden Methoden ausgewählt ist, ändert sich der Text der Schaltfläche in **Nach**. Zur Vereinfachung können Sie `Unfollow All` auswählen, um alle Methoden zu deaktivieren.
+Wenn eine der folgenden Methoden ausgewählt ist, ändert sich der Text der Schaltfläche in **Folgende**. Zur Vereinfachung können Sie `Unfollow All` , um alle Methoden auszuschalten.
 
-Die Schaltfläche **Folgen** enthält nur dann die Option `Email Subscriptions`, wenn ein Forum, eine Frage oder ein Blog zur Aktivierung von E-Mail-Abonnements konfiguriert ist. Diese Schaltfläche wird angezeigt:
+Die **Folgen** -Schaltfläche enthält die `Email Subscriptions` nur dann, wenn ein Forum, eine Frage oder ein Blog zur Aktivierung von E-Mail-Abonnements konfiguriert ist. Diese Schaltfläche wird angezeigt:
 
 * Auf der Hauptseite mit den Funktionen für das aktivierte Forum, Fragen und Antworten oder Blog Wird eine E-Mail für alle Aktivitäten unter dieser Funktion senden.
 
@@ -60,12 +60,12 @@ Die Schaltfläche **Folgen** enthält nur dann die Option `Email Subscriptions`,
 
 ## Antwort per E-Mail {#reply-by-email}
 
-Wenn die E-Mail-Adresse [für die Antwort per E-Mail](email.md#configure-polling-importer) konfiguriert ist, erhält das Abonnent eine E-Mail mit dem veröffentlichten Inhalt und einen Link zum Online-Inhalt.
+Wenn E-Mail [konfiguriert für Antwort per E-Mail](email.md#configure-polling-importer), erhält der Abonnent eine E-Mail mit dem veröffentlichten Inhalt und einen Link zum Online-Inhalt.
 
 Wenn sie auf die E-Mail antworten, erscheint der von ihnen in der Antwort eingegebene Inhalt als Online-Inhalt.
 
 ![email-response](assets/email-reply.png)
 
-Die Zeitdauer, die für die Veröffentlichung einer Antwort benötigt wird, wird durch das Update-Intervall des [Abruf-Importtools](email.md#configure-polling-importer) gesteuert.
+Die Dauer, die für die Veröffentlichung einer Antwort benötigt wird, wird durch die Variable [Aktualisierungsintervall des Abruf-Importtools](email.md#configure-polling-importer).
 
 ![QA](assets/qa.png)

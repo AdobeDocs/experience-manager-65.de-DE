@@ -1,8 +1,8 @@
 ---
 title: Erstellen einer neuen Community-Site zur Aktivierung
-seo-title: Erstellen einer neuen Community-Site zur Aktivierung
+seo-title: Author a New Community Site for Enablement
 description: Erstellen einer Community-Site für die Aktivierung
-seo-description: Erstellen einer Community-Site für die Aktivierung
+seo-description: Create a community site for enablement
 uuid: a75fa566-a570-45fd-aabc-23651ef819cc
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,16 +13,16 @@ docset: aem65
 exl-id: 812bbf7b-c49f-4c34-a47d-636b0468e0ba
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1728'
+source-wordcount: '1715'
 ht-degree: 4%
 
 ---
 
-# Erstellen einer neuen Community-Site für Aktivierung {#author-a-new-community-site-for-enablement}
+# Erstellen einer neuen Community-Site zur Aktivierung {#author-a-new-community-site-for-enablement}
 
 ## Community-Site erstellen {#create-community-site}
 
-[Die ](/help/communities/sites-console.md) Erstellung von Community-Sites erfolgt mithilfe eines Assistenten, der Sie durch die Schritte zur Erstellung einer Community-Site führt. Sie können zum Schritt `Next` oder `Back` zum vorherigen Schritt übergehen, bevor Sie die Site im letzten Schritt übergeben.
+[Community-Site-Erstellung](/help/communities/sites-console.md) verwendet einen Assistenten, der Sie durch die Schritte zum Erstellen einer Community-Site führt. Es ist möglich, `Next` Schritt oder `Back` in den vorherigen Schritt, bevor die Site im letzten Schritt übergeben wird.
 
 Erste Schritte mit der Erstellung einer neuen Community-Site:
 
@@ -36,24 +36,24 @@ Verwenden der [Autoreninstanz](https://localhost:4502/)
 
 ![Aktivierungs-Site-Vorlage](assets/enablement-site-template.png)
 
-Geben Sie im Schritt **Site-Vorlage** einen Titel, eine Beschreibung und den Namen für die URL ein und wählen Sie eine Community-Site-Vorlage aus, z. B. :
+Im **Site-Vorlage** Schritt, geben Sie einen Titel, eine Beschreibung, den Namen für die URL ein und wählen Sie eine Community-Site-Vorlage aus, z. B. :
 
 * **Community-Site-Titel**: `Enablement Tutorial`.
 
 * **Community-Site-Beschreibung**: `A site for enabling the community to learn.`
 
-* **Community-Site-Stammordner**: (Leer lassen für Standardstamm  `/content/sites`)
+* **Community-Site-Stammordner**: (Leer lassen für Standardstamm `/content/sites`)
 
 * **Cloud-Konfigurationen**: (Lassen Sie das Feld leer, wenn keine Cloud-Konfigurationen angegeben sind) geben Sie den Pfad zu den angegebenen Cloud-Konfigurationen an.
-* **Community-Site-Basissprache**: (Für eine einzelne Sprache unberührt lassen: Englisch) verwenden Sie die Dropdown-Liste, um eine  *oder* mehr Sprachen aus den verfügbaren Sprachen auszuwählen: Deutsch, Italienisch, Französisch, Japanisch, Spanisch, Portugiesisch (Brasilien), Chinesisch (Traditionell) und Chinesisch (vereinfacht). Für jede hinzugefügte Sprache wird eine Community-Site erstellt, die im selben Site-Ordner vorhanden ist. Befolgen Sie dabei die Best Practices, die unter [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-administering/translation.md) beschrieben werden. Die Stammseite jeder Site enthält eine untergeordnete Seite mit dem Namen des Sprachcodes einer der ausgewählten Sprachen, z. B. &quot;en&quot;für Englisch oder &quot;fr&quot;für Französisch.
+* **Community-Site-Basissprache**: (Für eine einzelne Sprache unberührt lassen: Englisch) verwenden Sie die Dropdown-Liste, um eine Auswahl zu treffen. *oder mehr* Basissprachen aus den verfügbaren Sprachen: Deutsch, Italienisch, Französisch, Japanisch, Spanisch, Portugiesisch (Brasilien), Chinesisch (Traditionell) und Chinesisch (vereinfacht). Für jede hinzugefügte Sprache wird eine Community-Site erstellt, die gemäß den Best Practices unter [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-administering/translation.md). Die Stammseite jeder Site enthält eine untergeordnete Seite mit dem Namen des Sprachcodes einer der ausgewählten Sprachen, z. B. &quot;en&quot;für Englisch oder &quot;fr&quot;für Französisch.
 
 * **Community-Site-Name**: `enable`
 
    * Die ursprüngliche URL wird unter dem Community-Site-Namen angezeigt
-   * Hängen Sie für eine gültige URL einen Basissprachcode + &quot;.html&quot; an.
-      *Beispiel:* https://localhost:4502/content/sites/  `enable/en.html`
+   * Hängen Sie für eine gültige URL einen Basissprachcode an + &quot;.html&quot;.
+      *Beispiel*, https://localhost:4502/content/sites/ `enable/en.html`
 
-* **Referenz-Site-Vorlage**: nach unten ziehen, um  `Reference Structured Learning Site Template`
+* **Referenz-Site-Vorlage**: nach unten ziehen, um `Reference Structured Learning Site Template`
 
 Wählen Sie **Weiter** aus.
 
@@ -61,11 +61,11 @@ Wählen Sie **Weiter** aus.
 
 Der Schritt &quot;Design&quot;wird in zwei Abschnitten zur Auswahl des Designs und des Branding-Banners vorgestellt:
 
-#### COMMUNITY SITE-THEMA {#community-site-theme}
+#### SITE-THEMA DER GEMEINSCHAFT {#community-site-theme}
 
 Wählen Sie den gewünschten Stil aus, der auf die Vorlage angewendet werden soll. Wenn diese Option aktiviert ist, wird das Design mit einem Häkchen überlagert.
 
-#### COMMUNITY SITE BRANDING {#community-site-branding}
+#### GEMEINSCHAFTLICHE SITE-BRANCHE {#community-site-branding}
 
 (Optional) Laden Sie ein Bannerbild hoch, das auf den Seiten der Site angezeigt werden soll. Das Banner wird zwischen der Community-Site-Kopfzeile und dem Menü (Navigationslinks) am linken Rand des Browsers fixiert. Die Bannerhöhe wird auf 120 Pixel zugeschnitten. Die Größe des Banners kann nicht an die Breite des Browsers und die Höhe von 120 Pixel angepasst werden.
 
@@ -77,18 +77,18 @@ Wählen Sie **Weiter** aus.
 
 ### Schritt 3: Einstellungen {#step-settings}
 
-Beachten Sie, dass im Schritt Einstellungen vor der Auswahl von `Next` sieben Abschnitte für den Zugriff auf Konfigurationen mit Benutzerverwaltung, Tagging, Rollen, Moderation, Analyse, Übersetzung und Aktivierung verfügbar sind.
+Im Schritt Einstellungen vor Auswahl von `Next`Beachten Sie, dass es sieben Abschnitte gibt, die Zugriff auf Konfigurationen bieten, die Benutzerverwaltung, Tagging, Rollen, Moderation, Analyse, Übersetzung und Aktivierung umfassen.
 
 #### BENUTZERVERWALTUNG {#user-management}
 
-Es wird empfohlen, [Aktivierungscommunities](/help/communities/overview.md#enablement-community) privat zu sein.
+Es wird empfohlen, [Aktivierungsgemeinschaften](/help/communities/overview.md#enablement-community) privat sein.
 
 Eine Community-Site ist privat, wenn anonymen Site-Besuchern der Zugriff verweigert wird, sie sich möglicherweise nicht selbst registrieren und keine Anmeldung über soziale Netzwerke verwenden.
 
-Stellen Sie sicher, dass die meisten Kontrollkästchen für [Benutzerverwaltung](/help/communities/sites-console.md#user-management) deaktiviert sind:
+Stellen Sie sicher, dass die meisten Kontrollkästchen für [Benutzerverwaltung](/help/communities/sites-console.md#user-management) :
 
 * Lassen Sie die Selbstregistrierung der Site-Besucher NICHT zu.
-* Lassen Sie NICHT zu, dass anonyme Site-Besucher die Site anzeigen.
+* Lassen Sie es NICHT zu, dass anonyme Site-Besucher die Site anzeigen.
 * Optional, ob Nachrichten zwischen Community-Mitgliedern zugelassen werden sollen oder nicht.
 * Lassen Sie die Anmeldung mit Facebook NICHT zu.
 * Lassen Sie die Anmeldung mit Twitter NICHT zu.
@@ -97,9 +97,9 @@ Stellen Sie sicher, dass die meisten Kontrollkästchen für [Benutzerverwaltung]
 
 #### TAGGING {#tagging}
 
-Die Tags, die auf Community-Inhalte angewendet werden können, werden durch die Auswahl AEM Namespaces gesteuert, die zuvor über die [Tagging Console](/help/sites-administering/tags.md#tagging-console) definiert wurden (z. B. den [Tutorial-Namespace](/help/communities/enablement-setup.md#create-tutorial-tags)).
+Die Tags, die auf Community-Inhalte angewendet werden können, werden durch die Auswahl AEM Namespaces gesteuert, die zuvor durch die [Tagging-Konsole](/help/sites-administering/tags.md#tagging-console) (z. B. [Tutorial-Namespace](/help/communities/enablement-setup.md#create-tutorial-tags)).
 
-Durch die Auswahl von Tag-Namespaces für die Community-Site wird außerdem die Auswahl eingeschränkt, die beim Definieren von Katalogen und Aktivierungsressourcen angezeigt wird. Wichtige Informationen finden Sie unter [Tagging von Aktivierungsressourcen](/help/communities/tag-resources.md) .
+Durch die Auswahl von Tag-Namespaces für die Community-Site wird außerdem die Auswahl eingeschränkt, die beim Definieren von Katalogen und Aktivierungsressourcen angezeigt wird. Siehe [Tagging von Aktivierungsressourcen](/help/communities/tag-resources.md) für wichtige Informationen.
 
 Die Suche nach Namespaces ist mit der Typvorsuche einfach. Beispiel:
 
@@ -110,24 +110,24 @@ Die Suche nach Namespaces ist mit der Typvorsuche einfach. Beispiel:
 
 ### ROLLEN {#roles}
 
-[Die ](/help/communities/users.md) Rollen von Community-Mitgliedern werden über die Einstellungen im Abschnitt Rollen zugewiesen.
+[Community-Mitgliederrollen](/help/communities/users.md) werden über die Einstellungen im Abschnitt Rollen zugewiesen.
 
 Damit ein Community-Mitglied (oder eine Gruppe von Mitgliedern) die Site als Community-Manager erleben kann, verwenden Sie die Typvorsuche und wählen Sie den Mitglied- oder Gruppennamen aus den Optionen in der Dropdown-Liste aus.
 
 Beispiel:
 
 * Typ `q`
-* Wählen Sie [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
+* Auswählen [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
 
 >[!NOTE]
 >
->[Der Tunnel-](/help/communities/deploy-communities.md#tunnel-service-on-author) Service ermöglicht die Auswahl von Mitgliedern und Gruppen, die nur in der Veröffentlichungsumgebung existieren.
+>[Tunneldienst](/help/communities/deploy-communities.md#tunnel-service-on-author) ermöglicht die Auswahl von Mitgliedern und Gruppen, die nur in der Veröffentlichungsumgebung vorhanden sind.
 
 ![Aktivierungsrollen](assets/site-admin.png)
 
 #### MODERATION {#moderation}
 
-Akzeptieren Sie die globalen Standardeinstellungen für [Moderation](/help/communities/sites-console.md#moderation) benutzergenerierte Inhalte (UGC).
+Globale Standardeinstellungen akzeptieren für [moderieren](/help/communities/sites-console.md#moderation) benutzergenerierte Inhalte (UGC).
 
 ![moderation1](assets/moderation1.png)
 
@@ -135,15 +135,15 @@ Akzeptieren Sie die globalen Standardeinstellungen für [Moderation](/help/commu
 
 Wählen Sie aus der Dropdown-Liste das für diese Community-Site konfigurierte Analytics Cloud Service-Framework aus.
 
-Die im Screenshot angezeigte Auswahl `Communities` ist das Framework-Beispiel aus der [Konfigurationsdokumentation.](/help/communities/analytics.md#aem-analytics-framework-configuration)
+Die im Screenshot angezeigte Auswahl, `Communities`, ist ein Framework-Beispiel aus der [Konfigurationsdokumentation.](/help/communities/analytics.md#aem-analytics-framework-configuration)
 
 ![Analyse](assets/analytics.png)
 
 #### ÜBERSETZUNG {#translation}
 
-Die [Übersetzungsparameter](/help/communities/sites-console.md#translation) geben an, ob UGC übersetzt werden darf und in welche Sprache, falls dies der Fall ist.
+Die [Übersetzungsparameter](/help/communities/sites-console.md#translation) Geben Sie an, ob UGC übersetzt werden darf und in welche Sprache, falls ja.
 
-* Überprüfen Sie **Maschinelle Übersetzung zulassen**
+* Überprüfen **Maschinelle Übersetzung zulassen**
 * Standardeinstellungen verwenden
 
 ![Übersetzung](assets/translation.png)
@@ -153,14 +153,14 @@ Die [Übersetzungsparameter](/help/communities/sites-console.md#translation) geb
 Für eine Aktivierungs-Community ist es erforderlich, einen oder mehrere Community-Aktivierungsmanager zu identifizieren.
 
 * **Aktivierungsmanager**
- (erforderlich) Mitglieder der 
+(erforderlich) Mitglieder der 
 `Community Enablement Managers` zur Verwaltung dieser Community-Site ausgewählt werden.
 
    * Typ `s`
    * Wählen Sie nun eine der folgenden Optionen aus `Sirius Nilson`
 
 * **Marketing Cloud-Organisations-ID**
- (optional) Die ID für ein Adobe Analytics-Konto, die erforderlich ist, wenn die  [Video Heartbeat-](/help/communities/analytics.md#video-heartbeat-analytics) Analyse in die Aktivierungsberichte aufgenommen wird.
+(optional) Die Kennung für ein Adobe Analytics-Konto, die erforderlich ist, wenn [Video Heartbeat Analytics](/help/communities/analytics.md#video-heartbeat-analytics) in der Aktivierungsberichterstellung.
 
 ![Aktivierung](assets/enablement.png)
 
@@ -204,7 +204,7 @@ Von links nach rechts sind sie:
 
 * **Site exportieren**
 
-   Wählen Sie das Exportsymbol aus, um ein Paket der Community-Site zu erstellen, das sowohl im [Package Manager](/help/sites-administering/package-manager.md) gespeichert als auch heruntergeladen wurde.
+   Wählen Sie das Exportsymbol aus, um ein Paket der Community-Site zu erstellen, das beide in gespeichert ist. [Package Manager](/help/sites-administering/package-manager.md) und heruntergeladen.
 Beachten Sie, dass UGC nicht im Site-Paket enthalten ist.
 
 * **Site löschen**
@@ -225,30 +225,30 @@ Es wird ein Hinweis geben, dass die Website veröffentlicht wurde.
 
 ## Community-Benutzer und Benutzergruppen {#community-users-user-groups}
 
-### Beachten Sie die neuen Community-Benutzergruppen {#notice-new-community-user-groups}
+### Neue Community-Benutzergruppen {#notice-new-community-user-groups}
 
 Zusammen mit der neuen Community-Site werden neue Benutzergruppen erstellt, die über die entsprechenden Berechtigungen für verschiedene Verwaltungsfunktionen verfügen. Weitere Informationen finden Sie unter [Benutzergruppen für Community-Sites](/help/communities/users.md#usergroupsforcommunitysites).
 
-Für diese neue Community-Site können die neuen Benutzergruppen, die in der Veröffentlichungsumgebung vorhanden sind, unter dem Site-Namen &quot;enable&quot;in Schritt 1 in der [Communities-Mitglieder- und Gruppenkonsole](/help/communities/members.md#groups-console) angezeigt werden:
+Für diese neue Community-Site können die neuen Benutzergruppen, die in der Veröffentlichungsumgebung vorhanden sind, unter Berücksichtigung des Site-Namens &quot;Aktivieren&quot;in Schritt 1 aus dem [Communities Mitglieder &amp; Gruppen-Konsole](/help/communities/members.md#groups-console):
 
 ![community_usergroup](assets/community_usergroup.png)
 
-### Zuweisen von Mitgliedern zur Community Enable Members Group {#assign-members-to-community-enable-members-group}
+### Zuweisen von Mitgliedern zur Community Aktivieren-Gruppe {#assign-members-to-community-enable-members-group}
 
-Wenn der Tunnel-Dienst auf der Autoreninstanz aktiviert ist, können die [Benutzer, die während der Ersteinrichtung](/help/communities/enablement-setup.md#publishcreateenablementmembers) erstellt wurden, der Community-Mitgliedergruppe für die neu erstellte Community-Site zugewiesen werden.
+Wenn der Tunnel-Dienst für die Autoreninstanz aktiviert ist, kann die [bei der Ersteinrichtung erstellte Benutzer](/help/communities/enablement-setup.md#publishcreateenablementmembers) zur Community-Mitgliedergruppe für die neu erstellte Community-Site.
 
 Über die Community-Gruppenkonsole können Mitglieder einzeln hinzugefügt oder über die Mitgliedschaft in einer Gruppe hinzugefügt werden.
 
-In diesem Beispiel wird die Gruppe `Community Ski Class` als Mitglied der Gruppe `Community Enable Members` sowie als Mitglied `Quinn Harper` hinzugefügt.
+In diesem Beispiel wird die Gruppe `Community Ski Class` wird als Mitglied der Gruppe hinzugefügt `Community Enable Members` sowie Mitglied `Quinn Harper`.
 
-* Navigieren Sie zur Konsole **Communities, Gruppen** .
-* Gruppe *Community-Aktivierungsmitglieder* auswählen
-* Geben Sie &quot;ski&quot;in das Suchfeld **Mitglieder zur Gruppe hinzufügen** ein.
-* Wählen Sie *Community-Ski-Klasse* (Gruppe der Lernenden)
+* Navigieren Sie zu **Communities, Gruppen** console
+* Auswählen *Community-Aktivierte Mitglieder* Gruppe
+* Geben Sie &quot;ski&quot;in die **Mitglieder zu Gruppe hinzufügen** Suchfeld
+* Auswählen *Community-Ski-Klasse* (Gruppe der Lernenden)
 * Geben Sie &#39;quinn&#39; in das Suchfeld ein
-* Wählen Sie *Quinn Harper* (Kontakt für Aktivierungsressource) aus.
+* Auswählen *Quinn Harper* (Kontakt für Aktivierungsressource)
 
-* Wählen Sie **Speichern** aus
+* Klicken Sie auf **Speichern**
 
 ![edit-group-settings](assets/edit-group-settings.png)
 
@@ -258,43 +258,43 @@ In diesem Beispiel wird die Gruppe `Community Ski Class` als Mitglied der Gruppe
 
 ![enable-login](assets/enablement-login.png)
 
-### Konfigurieren für Authentifizierungsfehler {#configure-for-authentication-error}
+### Authentifizierungsfehler konfigurieren {#configure-for-authentication-error}
 
-Nachdem eine Site konfiguriert und zur Veröffentlichung gepusht wurde, [Konfigurieren Sie die Anmelde-Zuordnung](/help/communities/sites-console.md#configure-for-authentication-error) ( `Adobe Granite Login Selector Authentication Handler`) in der Veröffentlichungsinstanz. Der Vorteil besteht darin, dass bei nicht korrekter Eingabe der Anmeldedaten der Authentifizierungsfehler die Anmeldeseite der Community-Site mit einer Fehlermeldung erneut anzeigt.
+Sobald eine Site konfiguriert und zur Veröffentlichung gepusht wurde, [Anmeldezuordnung konfigurieren](/help/communities/sites-console.md#configure-for-authentication-error) ( `Adobe Granite Login Selector Authentication Handler`) in der Veröffentlichungsinstanz. Der Vorteil besteht darin, dass bei nicht korrekter Eingabe der Anmeldedaten der Authentifizierungsfehler die Anmeldeseite der Community-Site mit einer Fehlermeldung erneut anzeigt.
 
-Fügen Sie einen `Login Page Mapping` als hinzu:
+Hinzufügen einer `Login Page Mapping` as:
 
 * `/content/sites/enable/en/signin:/content/sites/enable/en`
 
-### (Optional) Ändern Sie die Standard-Startseite {#optional-change-the-default-home-page}
+### (Optional) Ändern der Standard-Startseite {#optional-change-the-default-home-page}
 
 Wenn Sie zur Veranschaulichung mit der Veröffentlichungs-Site arbeiten, kann es nützlich sein, die standardmäßige Startseite auf die neue Site zu ändern.
 
-Dazu müssen Sie [CRX|DE](https://localhost:4503/crx/de) Lite verwenden, um die [Ressourcenzuordnung](/help/sites-deploying/resource-mapping.md)-Tabelle in der Veröffentlichungsumgebung zu bearbeiten.
+Dazu müssen Sie Folgendes verwenden: [CRX|DE](https://localhost:4503/crx/de) Lite zum Bearbeiten [Ressourcenzuordnung](/help/sites-deploying/resource-mapping.md) -Tabelle auf der Veröffentlichungsinstanz.
 
 Erste Schritte:
 
 1. Greifen Sie beim Veröffentlichen auf CRXDE zu und melden Sie sich mit Administratorrechten an
 
-   * Navigieren Sie beispielsweise zu [https://localhost:4503/crx/de](https://localhost:4503/crx/de) und melden Sie sich mit `admin/admin` an.
+   * Navigieren Sie beispielsweise zu [https://localhost:4503/crx/de](https://localhost:4503/crx/de) und melden Sie sich mit `admin/admin`
 
-1. Erweitern Sie im Projektbrowser `/etc/map` .
-1. Wählen Sie den Knoten `http` aus.
+1. Erweitern Sie im Projektbrowser die `/etc/map`
+1. Wählen Sie die `http` Knoten
 
-   * Wählen Sie **Knoten erstellen**
+   * Auswählen **Knoten erstellen**
 
-      * **** Namelocalhost.4503
+      * **Name** localhost.4503
 
          (do *not* use &#39;:&#39;)
 
-      * **** [Typesling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+      * **Typ** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
-1. Neu erstellter `localhost.4503`-Knoten ausgewählt
+1. Mit neu erstellt `localhost.4503` Knoten ausgewählt
 
    * Eigenschaft hinzufügen
 
       * **Name** sling:match
-      * **** TypeString
+      * **Typ** Zeichenfolge
       * **Wert** localhost.4503/$
 
    (muss mit &#39;$&#39; char enden)
@@ -302,11 +302,11 @@ Erste Schritte:
    * Eigenschaft hinzufügen
 
       * **Name** sling:internalRedirect
-      * **** TypeString
+      * **Typ** Zeichenfolge
       * **Wert** /content/sites/enable/en.html
 
 
-1. Wählen Sie **Alle speichern**
+1. Wählen Sie **Alle speichern** aus
 1. (Optional) Löschen Sie den Browser-Verlauf.
 1. Navigieren Sie zu https://localhost:4503/
 
@@ -314,31 +314,31 @@ Erste Schritte:
 
 >[!NOTE]
 >
->Um zu deaktivieren, hängen Sie einfach den Wert der `sling:match`-Eigenschaft mit einem &quot;x&quot;- `xlocalhost.4503/$` - und **Alle speichern** voran.
+>Um zu deaktivieren, hängen Sie einfach die `sling:match` Eigenschaftswert mit einem &quot;x&quot;- `xlocalhost.4503/$` - und **Alle speichern**.
 
 ![change-default-homepage](assets/change-default-homepage.png)
 
 #### Fehlerbehebung: Fehler beim Speichern der Karte {#troubleshooting-error-saving-map}
 
-Wenn die Änderungen nicht gespeichert werden können, stellen Sie sicher, dass der Knotenname `localhost.4503` mit einem Punkt-Trennzeichen und nicht `localhost:4503` mit einem Doppelpunkt-Trennzeichen ist, da `localhost` kein gültiges Namespace-Präfix ist.
+Wenn Änderungen nicht gespeichert werden können, stellen Sie sicher, dass der Knotenname `localhost.4503`, mit einem &quot;Punkt&quot;-Trennzeichen und nicht `localhost:4503` mit einem &quot;Doppelpunkt&quot;-Trennzeichen `localhost` ist kein gültiges Namespace-Präfix.
 
 ![error-map](assets/error-map.png)
 
 #### Fehlerbehebung: Fehler bei Umleitung {#troubleshooting-fail-to-redirect}
 
-Die Zeichenfolge &quot;**$**&quot;am Ende des regulären Ausdrucks `sling:match` ist von entscheidender Bedeutung, sodass nur genau `https://localhost:4503/` zugeordnet wird. Andernfalls wird der Umleitungswert jedem Pfad vorangestellt, der möglicherweise nach der server:port in der URL existiert. Wenn AEM also versucht, zur Anmeldeseite umzuleiten, schlägt dies fehl.
+Der **$**&quot; am Ende des regulären Ausdrucks `sling:match` Zeichenfolge ist von entscheidender Bedeutung, sodass nur genau `https://localhost:4503/` zugeordnet ist, wird der Umleitungswert ansonsten jedem Pfad vorangestellt, der nach der Datei server:port in der URL vorhanden sein könnte. Wenn AEM also versucht, zur Anmeldeseite umzuleiten, schlägt dies fehl.
 
 ## Ändern der Community-Site {#modifying-the-community-site}
 
-Nachdem die Site zum ersten Mal erstellt wurde, können Autoren das [Symbol &quot;Site öffnen](/help/communities/sites-console.md#authoring-site-content) verwenden, um standardmäßige AEM zu erstellen.
+Nachdem die Site ursprünglich erstellt wurde, können Autoren die [Symbol &quot;Site öffnen&quot;](/help/communities/sites-console.md#authoring-site-content) , um standardmäßige AEM zu erstellen.
 
-Darüber hinaus können Administratoren das [Symbol &quot;Site bearbeiten](/help/communities/sites-console.md#modifying-site-properties)&quot;verwenden, um Eigenschaften der Site zu ändern, z. B. den Titel.
+Administratoren können außerdem die [Symbol &quot;Site bearbeiten&quot;](/help/communities/sites-console.md#modifying-site-properties) , um Eigenschaften der Site zu ändern, z. B. den Titel.
 
-Denken Sie nach jeder Änderung an **Save** und re-**Publish** die Site.
+Denken Sie nach jeder Änderung daran, **Speichern** und erneute **Veröffentlichen** die Site.
 
 >[!NOTE]
 >
->Wenn Sie nicht mit AEM vertraut sind, lesen Sie die Dokumentation zu [Grundlegender Umgang](/help/sites-authoring/basic-handling.md) und eine [Kurzanleitung zum Erstellen von Seiten](/help/sites-authoring/qg-page-authoring.md).
+>Wenn Sie nicht mit AEM vertraut sind, lesen Sie die Dokumentation unter [grundlegende Handhabung](/help/sites-authoring/basic-handling.md) und [Kurzanleitung zum Erstellen von Seiten](/help/sites-authoring/qg-page-authoring.md).
 
 ### Hinzufügen eines Katalogs {#add-a-catalog}
 
@@ -348,7 +348,7 @@ Ist dies nicht der Fall, kann die Katalogfunktion einfach hinzugefügt werden. D
 
 Wenn die Site-Struktur bereits die Katalogfunktion enthält, kann deren Titel geändert werden.
 
-Um die Struktur der Site zu ändern, navigieren Sie zur Konsole **[!UICONTROL Communities]** > **[!UICONTROL Sites]**, öffnen Sie den Ordner `enable` und wählen Sie das Symbol **Site bearbeiten** aus, um auf die Eigenschaften von `Enablement Tutorial` zuzugreifen.
+Um die Struktur der Site zu ändern, navigieren Sie zu **[!UICONTROL Communities]** > **[!UICONTROL Sites]** Konsole, öffnen Sie die `enable` und wählen Sie die **Site bearbeiten** -Symbol, um auf die Eigenschaften von `Enablement Tutorial`.
 
 Wählen Sie das Bedienfeld STRUKTUR aus, um einen Katalog hinzuzufügen oder einen vorhandenen Katalog zu ändern:
 
@@ -358,7 +358,7 @@ Wählen Sie das Bedienfeld STRUKTUR aus, um einen Katalog hinzuzufügen oder ein
 
 * **Alle Namespaces auswählen**: Behalten Sie die Standardeinstellung bei.
 
-* Wählen Sie **Speichern** aus.
+* Klicken Sie auf **Speichern**.
 
 ![modify-site-structure](assets/modify-site-structure.png)
 
@@ -366,6 +366,6 @@ Verwenden Sie das Symbol Position , um die Katalogfunktion nach den Zuweisungen 
 
 ![move-catalog-func](assets/move-catalog-func.png)
 
-Wählen Sie **Save** in der oberen rechten Ecke aus, um die Änderungen an der Community-Site zu speichern.
+Auswählen **Speichern** in der oberen rechten Ecke, um die Änderungen an der Community-Site zu speichern.
 
-Dann erneut-**Veröffentlichen Sie** die Site.
+Dann erneut **Veröffentlichen** die Site.

@@ -1,8 +1,8 @@
 ---
 title: Hardware-Skalierungsrichtlinien
-seo-title: Hardware-Skalierungsrichtlinien
+seo-title: Hardware Sizing Guidelines
 description: Diese Skalierungsrichtlinien bieten eine Annäherung an die Hardware-Erfordernisse, die für die Implementierung eines AEM-Projekts erforderlich sind.
-seo-description: Diese Skalierungsrichtlinien bieten eine Annäherung an die Hardware-Erfordernisse, die für die Implementierung eines AEM-Projekts erforderlich sind.
+seo-description: These sizing guidelines offer an approximation of the hardware resources required to deploy an AEM project.
 uuid: 395f9869-17c4-4b9b-99f8-d35a44dd6256
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2835'
+source-wordcount: '2816'
 ht-degree: 83%
 
 ---
@@ -52,14 +52,14 @@ Zu berücksichtigende Grundfaktoren sind (in dieser Reihenfolge):
 
 ## Architektur {#architecture}
 
-Ein typisches AEM-Setup besteht aus einer Autoren- und einer Veröffentlichungsumgebung. Diese Umgebungen haben unterschiedliche Anforderungen bezüglich der zugrunde liegenden Hardwaregröße und der Systemkonfiguration. Detaillierte Überlegungen zu beiden Umgebungen finden Sie in den Abschnitten [Autorenumgebung](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) und [Veröffentlichungsumgebung](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations) .
+Ein typisches AEM-Setup besteht aus einer Autoren- und einer Veröffentlichungsumgebung. Diese Umgebungen haben unterschiedliche Anforderungen bezüglich der zugrunde liegenden Hardwaregröße und der Systemkonfiguration. Detaillierte Überlegungen zu beiden Umgebungen finden Sie im Abschnitt [Autorenumgebung](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) und [Veröffentlichungsumgebung](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations) Abschnitte.
 
 In einem typischen Projekt-Setup stehen Ihnen mehrere Umgebungen zur Verfügung, in denen Sie Projektphasen inszenieren können:
 
 * **Entwicklungsumgebung** Um neue Funktionen zu entwickeln oder wesentliche Änderungen vorzunehmen. Best Practice ist, mit einer Entwicklungsumgebung pro Entwickler zu arbeiten (normalerweise lokale Installationen auf ihren persönlichen Systemen).
 
-* **Autorentest-**
-UmgebungÜberprüfen von Änderungen. Die Anzahl der Testumgebungen kann je nach Projektanforderungen variieren (z. B. getrennt für QA, Integrationstests oder Benutzerakzeptanztests).
+* **Autorentestumgebung**
+Um Änderungen zu überprüfen. Die Anzahl der Testumgebungen kann je nach Projektanforderungen variieren (z. B. getrennt für QA, Integrationstests oder Benutzerakzeptanztests).
 
 * **Veröffentlichungs-Testumgebung** Hauptsächlich zum Testen von Anwendungsfällen der Zusammenarbeit in sozialen Netzwerken und/oder der Interaktion zwischen Autor und mehreren Veröffentlichungsinstanzen.
 
@@ -81,7 +81,7 @@ Hardware-Skalierung für fortgeschrittene Anwendungsfälle sollte auf einer deta
 * umfangreicher Einsatz von kundenspezifischem Code, eigenen Workflows oder Softwarebibliotheken von Drittanbietern
 * Integration mit nicht unterstützten externen Systemen
 
-### Festplattenspeicher/Festplatte  {#disk-space-hard-drive}
+### Festplattenspeicher/Festplatte {#disk-space-hard-drive}
 
 Der benötigte Speicherplatz hängt stark vom Volumen und vom Typ Ihrer Web-Anwendung ab. Die Berechnungen sollten berücksichtigen:
 
@@ -102,7 +102,7 @@ Für die Datenredundanz sind redundante Arrays unabhängiger Festplatten (RAID, 
 
 AEM läuft gut in virtualisierten Umgebungen, aber es kann Faktoren wie CPU oder E/A geben, die nicht direkt mit physischer Hardware gleichgesetzt werden können. Allgemein empfehlenswert ist die Wahl einer höheren E/A-Geschwindigkeit, da dies in den meisten Fällen ein kritischer Faktor ist. Vergleichswerte für Ihre Umgebung sind erforderlich, um ein genaues Verständnis dafür zu erhalten, welche Ressourcen erforderlich sind.
 
-#### Parallelisierung von AEM-Instanzen  {#parallelization-of-aem-instances}
+#### Parallelisierung von AEM-Instanzen {#parallelization-of-aem-instances}
 
 **Ausfallsicherheit**
 
@@ -110,7 +110,7 @@ Eine ausfallsichere Website wird auf mindestens zwei getrennten Systemen eingese
 
 **Skalierbarkeit der Systemressourcen**
 
-Während alle Systeme laufen, steht eine erhöhte Rechenleistung zur Verfügung. Diese zusätzliche Leistung ist nicht unbedingt linear mit der Anzahl der Clusterknoten, da die Beziehung in hohem Maße von der technischen Umgebung abhängig ist. Weitere Informationen finden Sie in der [Cluster-Dokumentation](/help/sites-deploying/recommended-deploys.md) .
+Während alle Systeme laufen, steht eine erhöhte Rechenleistung zur Verfügung. Diese zusätzliche Leistung ist nicht unbedingt linear mit der Anzahl der Clusterknoten, da die Beziehung in hohem Maße von der technischen Umgebung abhängig ist. siehe [Clusterdokumentation](/help/sites-deploying/recommended-deploys.md) für weitere Informationen.
 
 Die Abschätzung, wie viele Cluster-Knoten notwendig sind, basiert auf den grundlegenden Anforderungen und spezifischen Anwendungsfällen des jeweiligen Webprojektes:
 
@@ -149,8 +149,8 @@ Für solche Szenarien führte Adobe Benchmarktests auf einem Shared-Nothing-Clus
 
    * **Ergebnis** Der maximale Durchsatz für eine einfache Seitenerstellung wie oben beschrieben (als eine Transaktion betrachtet) liegt bei 2016 Transaktionen/Stunde. Dies ist eine Steigerung von ca. 16 % im Vergleich zu einer eigenständigen Autoreninstanz für den gleichen Benchmarktest.
 
-* **Benchmarktest 2**
-bMit einem aktiv-aktiven Shared-Nothing-Cluster von 2 Autoreninstanzen berechnen Sie den maximalen Durchsatz, wenn das Lastprofil eine Mischung aus neuer Seitenerstellung (10 %), Änderung vorhandener Seiten (80 %) und Erstellung und Änderung einer Seite in Folge (10 %) aufweist. Die Komplexität der Seite bleibt gleich wie im Profil des Benchmarktests 1. Die grundlegende Änderung der Seite erfolgt durch Hinzufügen eines Bildes und Ändern des Textinhalts. Auch hier wurde die Übung auf einer Grundlast von 300 Seiten mit derselben Komplexität wie im Benchmarktest 1 durchgeführt.
+* **Benchmarktest 2b**
+Mit einem aktiv-aktiven Shared-Nothing-Cluster von 2 Autoreninstanzen berechnen Sie den maximalen Durchsatz, wenn das Lastprofil eine Mischung aus neuer Seitenerstellung (10 %), Änderung vorhandener Seiten (80 %) und Erstellung und Änderung einer Seite nacheinander (10 %) aufweist. Die Komplexität der Seite bleibt gleich wie im Profil des Benchmarktests 1. Die grundlegende Änderung der Seite erfolgt durch Hinzufügen eines Bildes und Ändern des Textinhalts. Auch hier wurde die Übung auf einer Grundlast von 300 Seiten mit derselben Komplexität wie im Benchmarktest 1 durchgeführt.
 
    * **Ergebnis** Der maximale Durchsatz für ein solches Mischbetriebsszenario lag bei 6288 Transaktionen/Stunde. Dies ist eine Steigerung von ca. 93 % im Vergleich zu einer eigenständigen Autoreninstanz für denselben Benchmarktest.
 
@@ -169,7 +169,7 @@ Sie können die Anzahl der Computer (oder CPUs), die für die Autorenumgebung er
 
 Diese Formel kann als allgemeine Richtlinie für die Skalierung von CPUs dienen, wenn Autoren grundlegende Operationen mit AEM durchführen. Es wird davon ausgegangen, dass das System und die Anwendung optimiert sind. Die Formel gilt jedoch nicht für erweiterte Funktionen wie MSM oder Assets (siehe unten).
 
-Weitere Informationen finden Sie in den zusätzlichen Kommentaren zu [Parallelisierung](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances) und [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md).
+Weitere Informationen finden Sie unter [Parallelisierung](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances) und [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md).
 
 ### Hardware-Empfehlungen {#hardware-recommendations}
 
@@ -186,7 +186,7 @@ Die Benchmarktests an Adobe wurden mit dem Betriebssystem RedHat 5.5 durchgefüh
 
 AEM-Instanzen liefen mit einer minimalen Heap-Größe von 256M und einer maximalen Heap-Größe von 1024M.
 
-## Veröffentlichung von umgebungsspezifischen Berechnungen  {#publish-environment-specific-calculations}
+## Veröffentlichung von umgebungsspezifischen Berechnungen {#publish-environment-specific-calculations}
 
 ### Effizienz der Zwischenspeicherung und Traffic {#caching-efficiency-and-traffic}
 
@@ -197,7 +197,7 @@ Die Effizienz der Zwischenspeicherung ist entscheidend für die Geschwindigkeit 
 | 100% | 1000-2000 | 35-70 |
 | 99% | 910 | 32 |
 | 95% | 690 | 25 |
-| 90% | 520 | 18 |
+| 90 % | 520 | 18 |
 | 60% | 220 | 8 |
 | 0% | 100 | 3.5 |
 
@@ -207,7 +207,7 @@ Die Effizienz der Zwischenspeicherung ist entscheidend für die Geschwindigkeit 
 
 Die Zwischenspeicher-Quote gibt den Prozentsatz an Seiten an, die der Dispatcher zurückgeben kann, ohne auf AEM zuzugreifen. 100 % bedeutet, dass der Dispatcher alle Anfragen beantwortet, 0 % bedeutet, dass AEM jede einzelne Seite berechnet.
 
-### Komplexität von Vorlagen und Anwendungen  {#complexity-of-templates-and-applications}
+### Komplexität von Vorlagen und Anwendungen {#complexity-of-templates-and-applications}
 
 Wenn Sie komplexe Vorlagen verwenden, benötigt AEM mehr Zeit, um eine Seite zu rendern. Seiten aus dem Zwischenspeicher sind davon nicht betroffen, aber die Seitengröße ist für die gesamte Antwortzeit relevant. Das Rendern einer komplexen Seite kann leicht zehnmal länger dauern als das Rendern einer einfachen Seite.
 
@@ -257,40 +257,40 @@ Die Variablen in der Gleichung lauten wie folgt:
 
 Wenn Sie eine komplexere Website haben, benötigen Sie auch leistungsfähigere Webserver, damit AEM eine Anfrage in akzeptabler Zeit beantworten kann.
 
-* Komplexität unter 4:
-・ 1024 MB JVM RAM*
+* Komplexität unter 4: ・ 1024 MB JVM RAM&#42;
 ・ Geringe bis mittlere CPU-Leistung
 
-* Komplexität zwischen 4 und 8:
-・ 2048 MB JVM RAM*
+* Komplexität zwischen 4 und 8: ・ 2048 MB JVM RAM&#42;
 ・ Mid to high-performance CPU
 
-* Komplexität über 8:
-・ 4096 MB JVM RAM*
+* Komplexität über 8: ・ 4096 MB JVM RAM&#42;
 ・ Hohe bis High-End-CPU-Leistung
 
 >[!NOTE]
 >
->* Reservieren Sie zusätzlich zum für Ihre JVM benötigten Speicher genügend RAM für Ihr Betriebssystem.
+>&#42; Reservieren Sie zusätzlich zum für Ihre JVM benötigten Speicher genügend RAM für Ihr Betriebssystem.
 
 ## Zusätzliche anwendungsspezifische Berechnungen {#additional-use-case-specific-calculations}
 
 Neben der Berechnung für eine Standard-Webanwendung müssen Sie ggf. spezifische Faktoren für die folgenden Anwendungsfälle berücksichtigen. Die berechneten Werte sind der Standardberechnung hinzuzufügen.
 
-### Asset-spezifische Hinweise  {#assets-specific-considerations}
+### Asset-spezifische Hinweise {#assets-specific-considerations}
 
 Zur umfangreichen Verarbeitung digitaler Assets sind optimierte Hardwareressourcen erforderlich; die wichtigsten Faktoren hierbei sind die Bildgröße und der Spitzendurchsatz verarbeiteter Bilder.
 
-Weisen Sie mindestens 16 GB Heap zu und konfigurieren Sie den Workflow [!UICONTROL DAM Update Asset] so, dass das [Camera Raw Package](/help/assets/camera-raw.md) für die Aufnahme von Rohbildern verwendet wird.
+Weisen Sie mindestens 16 GB Heap zu und konfigurieren Sie die [!UICONTROL DAM-Update-Asset] Workflow zur Verwendung der [Camera Raw Package](/help/assets/camera-raw.md) für die Aufnahme von Rohbildern.
 
 >[!NOTE]
-Ein höherer Datendurchsatz bedeutet, dass die Rechnerressourcen mit den System-E/As Schritt halten müssen und umgekehrt. Wenn beispielsweise Workflows durch den Import von Bildern gestartet werden, kann das Hochladen vieler Bilder über WebDAV zu einem Rückstau von Workflows führen.
-Die Verwendung von separaten Festplatten für TarPM, Datenspeicher und Suchindex kann helfen, das E/A-Verhalten des Systems zu optimieren (in der Regel ist es jedoch sinnvoll, den Suchindex lokal zu halten).
+>
+>Ein höherer Datendurchsatz bedeutet, dass die Rechnerressourcen mit den System-E/As Schritt halten müssen und umgekehrt. Wenn beispielsweise Workflows durch den Import von Bildern gestartet werden, kann das Hochladen vieler Bilder über WebDAV zu einem Rückstau von Workflows führen.
+>
+>Die Verwendung von separaten Festplatten für TarPM, Datenspeicher und Suchindex kann helfen, das E/A-Verhalten des Systems zu optimieren (in der Regel ist es jedoch sinnvoll, den Suchindex lokal zu halten).
 
 >[!NOTE]
-Siehe auch [Richtlinien zur Asset-Leistung](/help/sites-deploying/assets-performance-sizing.md).
+>
+>Siehe auch [Richtlinien zur Asset-Leistung](/help/sites-deploying/assets-performance-sizing.md).
 
-### Multi-Site-Manager  {#multi-site-manager}
+### Multi-Site-Manager {#multi-site-manager}
 
 Der Ressourcenverbrauch beim Einsatz von MSM in AEM in einer Autorenumgebung hängt stark von den spezifischen Anwendungsfällen ab. Grundlegende Faktoren sind:
 
@@ -303,7 +303,7 @@ Das Testen des geplanten Anwendungsfalles mit einem repräsentativen Inhaltsausz
 
 Bitte beachten Sie auch, dass parallel arbeitende Autoren Performance-Nebenwirkungen wahrnehmen, wenn MSM-Anwendungsfälle für AEM mehr Ressourcen verbrauchen, als geplant.
 
-### Überlegungen zur Dimensionierung von AEM Communities  {#aem-communities-sizing-considerations}
+### Überlegungen zur Dimensionierung von AEM Communities {#aem-communities-sizing-considerations}
 
 AEM Sites, die Funktionen von AEM Communities (Community-Sites) enthalten, erleben ein hohes Maß an Interaktion von Seitenbesuchern (Mitgliedern) in der Veröffentlichungsumgebung.
 

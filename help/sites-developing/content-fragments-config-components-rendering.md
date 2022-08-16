@@ -1,8 +1,8 @@
 ---
 title: Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren
-seo-title: Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren
+seo-title: Content Fragments Configuring Components for Rendering
 description: Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren
-seo-description: Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren
+seo-description: Content Fragments Configuring Components for Rendering
 uuid: 3f5aaf36-e6a7-4a3c-b305-e35ebcc98d0d
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -12,20 +12,20 @@ docset: aem65
 exl-id: 9ef9ae75-cd8c-4adb-9bcb-e951d200d492
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 82%
+source-wordcount: '455'
+ht-degree: 81%
 
 ---
 
 # Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren{#content-fragments-configuring-components-for-rendering}
 
-Es gibt mehrere [erweiterte Dienste](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) zum Rendern von Inhaltsfragmenten. Um diese Dienste zu verwenden, müssen sich die Ressourcentypen dieser Komponenten dem Inhaltsfragmente-Framework bekannt machen.
+Es gibt mehrere [erweiterte Services](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) zum Rendern von Inhaltsfragmenten. Um diese Services zu verwenden, müssen sich die Ressourcentypen dieser Komponenten dem Inhaltsfragmente-Framework bekannt machen.
 
-Dies erfolgt durch die Konfiguration von [OSGi-Dienst – Konfiguration der Inhaltsfragment-Komponente](#osgi-service-content-fragment-component-configuration).
+Dies erfolgt durch die Konfiguration von [OSGi-Service – Konfiguration der Inhaltsfragment-Komponente](#osgi-service-content-fragment-component-configuration).
 
 >[!CAUTION]
 >
->Wenn Sie die unten beschriebenen [erweiterten Dienste](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) nicht benötigen, können Sie diese Konfiguration ignorieren.
+>Wenn Sie die unten beschriebenen [erweiterten Services](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) nicht benötigen, können Sie diese Konfiguration ignorieren.
 
 >[!CAUTION]
 >
@@ -33,13 +33,13 @@ Dies erfolgt durch die Konfiguration von [OSGi-Dienst – Konfiguration der Inha
 
 >[!CAUTION]
 >
->Sie können eine Komponente von Grund auf neu schreiben, die nur die Inhaltsfragmente-API verwendet, ohne die erweiterten Dienste zu nutzen. In einem solchen Fall müssen Sie Ihre Komponente jedoch so entwickeln, dass sie die entsprechende Verarbeitung übernimmt.
+>Sie können eine Komponente von Grund auf neu schreiben, die nur die Inhaltsfragmente-API verwendet, ohne die erweiterten Services zu nutzen. In einem solchen Fall müssen Sie Ihre Komponente jedoch so entwickeln, dass sie die entsprechende Verarbeitung übernimmt.
 >
 >Daher wird die Verwendung der Kernkomponenten empfohlen.
 
-## Definition erweiterter Dienste, die konfiguriert werden müssen {#definition-of-advanced-services-that-need-configuration}
+## Definition erweiterter Services, die konfiguriert werden müssen {#definition-of-advanced-services-that-need-configuration}
 
-Die Dienste, die die Registrierung einer Komponente erfordern:
+Die Services, die die Registrierung einer Komponente erfordern:
 
 * bestimmen Abhängigkeiten während der Veröffentlichung korrekt (d. h. stellen sicher, dass Fragmente und Modelle automatisch mit einer Seite veröffentlicht werden können, wenn sie sich seit der letzten Veröffentlichung geändert haben),
 * unterstützen Inhaltsfragmente in der Volltextsuche,
@@ -50,15 +50,15 @@ Die Dienste, die die Registrierung einer Komponente erfordern:
 
 Wenn Sie eine oder mehrere dieser Funktionen benötigen, ist es (in der Regel) einfacher, die vordefinierte Funktion zu verwenden, anstatt sie von Grund auf neu zu entwickeln.
 
-## OSGi-Dienst – Konfiguration der Inhaltsfragment-Komponente {#osgi-service-content-fragment-component-configuration}
+## OSGi-Service – Konfiguration der Inhaltsfragment-Komponente {#osgi-service-content-fragment-component-configuration}
 
-Die Konfiguration muss an den OSGi-Dienst **Konfiguration der Inhaltsfragment-Komponente** gebunden sein:
+Die Konfiguration muss an den OSGi-Service **Konfiguration der Inhaltsfragment-Komponente** gebunden sein:
 
 `com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl`
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md) .
+>Siehe [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md) für weitere Informationen.
 
 Beispiel:
 
