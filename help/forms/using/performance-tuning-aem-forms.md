@@ -172,6 +172,6 @@ Um die Leistung zu verbessern, können Sie die Antivirensoftware anweisen, die f
 >[!NOTE]
 >
 >* Wenn Sie einen anderen Speicherort für den Ordner des globalen Dokumentenspeichers und den temporären Ordner verwenden, öffnen Sie AdminUI`https://'[server]:[port]'/adminui`, navigieren Sie zu **Startseite > Einstellungen > Core-System > Core-Konfigurationen**, um den verwendeten Speicherort zu bestätigen.
-* Wenn der AEM Forms-Server auch nach dem Ausschließen der vorgeschlagenen Ordner langsam arbeitet, schließen Sie die ausführbare Java-Datei (java.exe) ebenfalls aus. 
+>* Wenn der AEM Forms-Server auch nach dem Ausschließen der vorgeschlagenen Ordner langsam arbeitet, schließen Sie die ausführbare Java-Datei (java.exe) ebenfalls aus. 
 >
 
