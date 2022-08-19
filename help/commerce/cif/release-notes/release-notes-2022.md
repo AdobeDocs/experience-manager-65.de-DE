@@ -2,10 +2,10 @@
 title: AEM Content and Commerce - Versionshinweise 2022
 description: AEM Content and Commerce - Versionshinweise 2022
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: b493e7bd73d679aa46bf41fad105f13215226dd4
+source-git-commit: 6c5c37c1c365e1f03ea9b5c935adf63a33faba5d
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 29%
+source-wordcount: '715'
+ht-degree: 50%
 
 ---
 
@@ -21,11 +21,22 @@ ht-degree: 29%
 | CIF-Kernkomponenten | [Systemanforderungen](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM-Projektarchetyp | [Systemanforderungen](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
+## Releasedatum: Juli 2022
+
+| Komponente | Version | Details |
+|:-------|:-----:|---------------------:|
+| CIF-Add-on | 2022,08,02,00 | [Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.08.02.00.zip) |
+
+### Neue Funktionen {#what-is-new-july}
+
+* Zuordnung AEM Seiten zu Produkten und Kategorien über AEM Seiteneigenschaften plus Übersicht im Produkt-Cockpit
+   ![Produktcockpit-Seitenzuordnung](/help/assets/CIF/product_cockpit_page_association.png)
+
 ## Releasedatum: Juni 2022
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
-| CIF-Add-on | 2022.06.xx.00 | [Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.07.05.00.zip) |
+| CIF-Add-on | 2022,07,05,00 | [Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.07.05.00.zip) |
 | CIF-Kernkomponenten | 2,10,0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) |
 | CIF Venia-Referenz-Site | 2022.07.04 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.07.04) |
 
@@ -75,13 +86,13 @@ ht-degree: 29%
 
 ### Neue Funktionen {#what-is-new-april}
 
-* Schnellzugriff auf das Produkt-Cockpit: Einfacher Zugriff auf detaillierte Produktinformationen mit einem Klick im Sites Editor
+* Schnellzugriff auf das Produkt-Cockpit: Einfacher Zugriff auf detaillierte Produktinformationen mit einem Klick im Sites-Editor
 
    ![Wunschliste aktivieren](/help/assets/CIF/enable-wishlist.png)
 
-* Unterstützung für zusätzliche Marketing-Commerce-Komponenten: Komponenten können so konfiguriert werden, dass sie einen Aufruf zum Hinzufügen zum Warenkorb und zum Hinzufügen zur Wunschliste anzeigen
+* Unterstützung für zusätzliche Marketing-Commerce-Komponenten: Komponenten können so konfiguriert werden, dass sie einen Aufruf zum Hinzufügen zum Warenkorb und zum Hinzufügen zur Wunschliste anzeigen.
 
-   ![Verknüpfung zum Produkt-Cockpit im Sites-Editor](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+   ![Verknüpfung mit dem Produkt-Cockpit im Sites-Editor](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
 ## Releasedatum: Februar 2022
 
@@ -94,10 +105,10 @@ ht-degree: 29%
 ### Neue Funktionen {#what-is-new-march}
 
 * Beta: AEM CIF-Such-Kernkomponente unterstützt Commerce LiveSearch
-* Verbessertes SEO für Multi-Store-Szenarien: URL-Formate für PDP/PLP können jetzt auf Store-Ebene über die CIF Cloud-Konfigurationseigenschaften konfiguriert werden
-* Die Produktauswahl unterstützt gestaffelte Produkte über die neue Filteroption in der Benutzeroberfläche.  Dadurch können Content-Experten das Content-Management für bevorstehende Produktstarts vorbereiten.
-* Vereinfachte CIF-Konfigurationsverwaltung und Fehlerbehandlung durch Verwendung des CIF-Cloud-Konfigurationsnamens anstelle der config-Proxy-URL
-* Manuelle Kategorieauswahl für Produktliste und Karussellkomponenten. Dadurch können Content-Experten diese Komponenten auf Inhaltsseiten außerhalb des Katalogerlebnisses verwenden
+* Verbessertes SEO für Multi-Store-Szenarien: URL-Formate für PDP/PLP können jetzt auf Store-Ebene über die CIF-Cloud-Konfigurationseigenschaften konfiguriert werden.
+* Über die neue Filteroption in der Benutzeroberfläche unterstützt die Produktauswahl gestaffelte Produkte. Dadurch können Content-Experten das Content-Management für bevorstehende Produktstarts vorbereiten.
+* Vereinfachte CIF-Konfigurationsverwaltung und Fehlerbehandlung durch Verwendung des CIF-Cloud-Konfigurationsnamens anstelle der Config-Proxy-URL.
+* Manuelle Kategorieauswahl für Produktliste und Karussellkomponenten. Dadurch können Content-Experten diese Komponenten auf Inhaltsseiten außerhalb des Katalogerlebnisses verwenden.
 
 ## Releasedatum: Januar 2022
 
@@ -110,10 +121,10 @@ ht-degree: 29%
 ### Neue Funktionen {#what-is-new-january}
 
 * Verbesserte myAccount-Komponenten
-* Die Komponente &quot;Produktempfehlung&quot;unterstützt zusätzliche Seitentypen (Homepage, Warenkorb, Bestellbestätigung).
+* Die Komponente „Produktempfehlung“ unterstützt zusätzliche Seitentypen (Startseite, Warenkorb, Bestellbestätigung).
 * **Wunschliste**
    * Angemeldete Besucher können Produkte zu einer Wunschliste hinzufügen
-   * Die Verwaltung der Wunschliste und ihrer Produkte ist über myAccount möglich.
+   * Die Verwaltung der Wunschliste und ihrer Produkte ist über myAccount möglich
    * Die Schaltfläche „Zur Wunschliste hinzufügen“ kann auf Komponentenebene über eine Richtlinie (z. B. Produkt-Teaser, Produktdetails) aktiviert/deaktiviert werden
    * Verfügbar als Kernkomponente und in der Venia-Storefront von AEM
 
