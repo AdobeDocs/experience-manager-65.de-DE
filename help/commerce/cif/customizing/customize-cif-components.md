@@ -3,7 +3,7 @@ title: CIF-Kernkomponenten anpassen
 description: Erfahren Sie, wie Sie AEM CIF-Kernkomponenten anpassen. In diesem wird Tutorial beschrieben, wie Sie eine CIF-Kernkomponente sicher erweitern können, um geschäftsspezifische Anforderungen zu erfüllen. Erfahren Sie, wie Sie eine GraphQL-Abfrage erweitern, um ein benutzerdefiniertes Attribut zurückzugeben und das neue Attribut in einer CIF-Kernkomponente anzuzeigen.
 sub-product: Commerce
 topics: Development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
@@ -11,16 +11,16 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: dceb187ba28ad7c377e98d29d6c815fe37e23077
 workflow-type: tm+mt
 source-wordcount: '2604'
-ht-degree: 83%
+ht-degree: 95%
 
 ---
 
 # AEM CIF-Kernkomponenten anpassen {#customize-cif-components}
 
-Das [CIF-Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) ist eine Referenz-Code-Basis für die Verwendung von [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components). In diesem Tutorial erweitern Sie das [Produkt-Teaser](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) -Komponente, um ein benutzerdefiniertes Attribut aus Adobe Commerce anzuzeigen. Außerdem erfahren Sie mehr über die GraphQL-Integration zwischen AEM und Adobe Commerce und die Erweiterungs-Hooks, die von den CIF-Kernkomponenten bereitgestellt werden.
+Das [CIF-Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) ist eine Referenz-Code-Basis für die Verwendung von [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components). In diesem Tutorial erweitern Sie die Komponente [Produkt-Teaser](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) weiter, um ein benutzerdefiniertes Attribut von Adobe Commerce anzuzeigen. Außerdem erfahren Sie mehr über die GraphQL-Integration zwischen AEM und Adobe Commerce und die von den CIF-Kernkomponenten bereitgestellten Erweiterungs-Hooks.
 
 >[!TIP]
 >
@@ -28,13 +28,13 @@ Das [CIF-Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) ist eine 
 
 ## Was Sie erstellen werden
 
-Die Marke Venia hat vor kurzem begonnen, Produkte mit nachhaltigen Materialien zu produzieren, und das Unternehmen möchte als Teil des Produkt-Teasers ein Zeichen für **Umweltfreundlich** anzeigen. In Adobe Commerce wird ein neues benutzerdefiniertes Attribut erstellt, um anzugeben, ob ein Produkt die Variable **Umweltfreundlich** Material. Dieses benutzerspezifische Attribut wird dann als Teil der GraphQL-Abfrage hinzugefügt und im Produkt-Teaser bei bestimmten Produkten angezeigt.
+Die Marke Venia hat vor kurzem begonnen, Produkte mit nachhaltigen Materialien zu produzieren, und das Unternehmen möchte als Teil des Produkt-Teasers ein Zeichen für **Umweltfreundlich** anzeigen. In Adobe Commerce wird ein neues benutzerspezifisches Attribut erstellt, um anzugeben, ob ein Produkt das **umweltfreundliche** Material verwendet. Dieses benutzerspezifische Attribut wird dann als Teil der GraphQL-Abfrage hinzugefügt und im Produkt-Teaser bei bestimmten Produkten angezeigt.
 
 ![Abzeichen für „Umweltfreundlich“ – endgültige Implementierung](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
 ## Voraussetzungen {#prerequisites}
 
-Zum Absolvieren dieses Tutorials ist eine lokale Entwicklungsumgebung erforderlich. Dazu gehört eine laufende Instanz von AEM, die konfiguriert und mit einer Adobe Commerce-Instanz verbunden ist. Überprüfen Sie die Anforderungen und Schritte für [Einrichten einer lokalen Entwicklung mit AEM](../develop.md). Um dem Tutorial vollständig zu folgen, benötigen Sie Berechtigungen zum Hinzufügen von [Attribute zu einem Produkt](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Adobe Commerce.
+Zum Absolvieren dieses Tutorials ist eine lokale Entwicklungsumgebung erforderlich. Dazu gehört eine laufende Instanz von AEM, die konfiguriert und mit einer Adobe Commerce-Instanz verbunden ist. Überprüfen Sie die Anforderungen und Schritte für [Einrichten einer lokalen Entwicklung mit AEM](../develop.md). Zum Absolvieren des ganzen Tutorials benötigen Sie Berechtigungen, um in Adobe Commerce [Attribute einem Produkt](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) hinzufügen zu können.
 
 Außerdem benötigen Sie eine GraphQL-IDE wie [GraphiQL](https://github.com/graphql/graphiql) oder eine Browser-Erweiterung, um die Code-Beispiele und Tutorials ausführen zu können. Stellen Sie beim Installieren einer Browser-Erweiterung sicher, dass diese die Möglichkeit hat, Anfragekopfzeilen festzulegen. In Google Chrome ist der [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) eine Erweiterung, die dazu geeignet ist.
 
@@ -59,11 +59,11 @@ Wir werden das [Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) kl
    $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
-1. Fügen Sie die erforderlichen OSGi-Konfigurationen hinzu, um Ihre AEM-Instanz mit einer Adobe Commerce-Instanz zu verbinden, oder fügen Sie die Konfigurationen zum neu erstellten Projekt hinzu.
+1. Fügen Sie die erforderlichen OSGi-Konfigurationen hinzu, um Ihre AEM-Instanz mit einer Adobe Commerce-Instanz zu verbinden, oder fügen Sie die Konfigurationen dem neu erstellten Projekt hinzu.
 
 1. An dieser Stelle sollten Sie über eine funktionierende Version einer Storefront verfügen, die mit einer Adobe Commerce-Instanz verbunden ist. Navigieren Sie zur Seite `US` > `Home` unter: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
-   Sie sollten sehen, dass die Storefront derzeit im Venia-Design erscheint. Wenn Sie das Hauptmenü der Storefront erweitern, sollten verschiedene Kategorien angezeigt werden, die darauf hinweisen, dass die Verbindung zu Adobe Commerce funktioniert.
+   Sie sollten sehen, dass die Storefront derzeit im Venia-Design erscheint. Wenn Sie das Hauptmenü der Storefront erweitern, sollten verschiedene Kategorien angezeigt werden, was darauf hinweist, dass die Verbindung mit Adobe Commerce funktioniert.
 
    ![Storefront mit konfiguriertem Venia-Design](../assets/customize-cif-components/venia-store-configured.png)
 
@@ -77,7 +77,7 @@ Die Komponente Produkt-Teaser wird im Laufe dieses Tutorials erweitert. Als erst
 
    ![Produkt-Teaser einfügen](../assets/customize-cif-components/product-teaser-add-component.png)
 
-3. Erweitern Sie das seitliche Bedienfeld (falls noch nicht geschehen) und wechseln Sie im Dropdown-Menü der Asset-Suche zu **Produkte**. Dadurch sollte eine Liste der verfügbaren Produkte aus einer verbundenen Adobe Commerce-Instanz angezeigt werden. Wählen Sie ein Produkt aus und ziehen Sie es auf der Seite per **Drag-and-Drop** auf die Komponente **Produkt-Teaser**.
+3. Erweitern Sie das seitliche Bedienfeld (falls noch nicht geschehen) und wechseln Sie im Dropdown-Menü der Asset-Suche zu **Produkte**. Nun sollte eine Liste mit verfügbaren Produkten einer verbundenen Adobe Commerce-Instanz angezeigt werden. Wählen Sie ein Produkt aus und ziehen Sie es auf der Seite per **Drag-and-Drop** auf die Komponente **Produkt-Teaser**.
 
    ![Produkt-Teaser ziehen und ablegen ](../assets/customize-cif-components/drag-drop-product-teaser.png)
 
@@ -91,13 +91,13 @@ Die Komponente Produkt-Teaser wird im Laufe dieses Tutorials erweitert. Als erst
 
 ## Hinzufügen eines benutzerdefinierten Attributs in Adobe Commerce {#add-custom-attribute}
 
-Die in AEM angezeigten Produkte und Produktdaten werden in Adobe Commerce gespeichert. Fügen Sie als Nächstes ein neues Attribut hinzu für **Umweltfreundlich** als Teil des Produktattributs, das mithilfe der Adobe Commerce-Benutzeroberfläche festgelegt wurde.
+Die in AEM angezeigten Produkte und Produktdaten werden in Adobe Commerce gespeichert. Als Nächstes fügen Sie als Teil des Produktattributs, das mithilfe der Adobe Commerce-Benutzeroberfläche definiert wird, ein neues Attribut für **Umweltfreundlich** hinzu.
 
 >[!TIP]
 >
 > Sie verfügen bereits über ein benutzerdefiniertes **Ja/Nein**-Attribut als Teil Ihres Produktattributs? Dann können Sie es gerne nutzen und diesen Abschnitt überspringen.
 
-1. Melden Sie sich bei Ihrer Adobe Commerce-Instanz an.
+1. Melden Sie sich bei Ihrer Adobe Commerce-Instanz an.
 1. Navigieren Sie zu **Katalog** > **Produkte**.
 1. Aktualisieren Sie den Suchfilter, um das **konfigurierbare Produkt** zu finden, das zum Einsatz kam, als es in der vorherigen Übung der Teaser-Komponente hinzugefügt wurde. Öffnen Sie das Produkt im Bearbeitungsmodus.
 
@@ -124,20 +124,20 @@ Die in AEM angezeigten Produkte und Produktdaten werden in Adobe Commerce gespei
 
    >[!TIP]
    >
-   > Weitere Informationen zur Verwaltung [Produktattribute finden Sie im Adobe Commerce-Benutzerhandbuch.](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html).
+   > Weitere Informationen zur Verwaltung von [Produktattributen finden Sie im Adobe Commerce-Benutzerhandbuch](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html).
 
-1. Navigieren Sie zu **System** > **Tools** > **Cache-Verwaltung**. Da das Datenschema aktualisiert wurde, müssen wir einige der Cache-Typen in Adobe Commerce invalidieren.
+1. Navigieren Sie zu **System** > **Tools** > **Cache-Verwaltung**. Da das Datenschema aktualisiert wurde, müssen wir einige der Cache-Typen in Adobe Commerce ungültig machen.
 1. Aktivieren Sie das Kontrollkästchen neben **Konfiguration** und senden Sie den Cache-Typ zum **Aktualisieren**.
 
    ![Cache-Typ von Konfiguration aktualisieren](../assets/customize-cif-components/refresh-configuration-cache-type.png)
 
    >[!TIP]
    >
-   > Weitere Informationen [Die Cache-Verwaltung finden Sie im Adobe Commerce-Benutzerhandbuch.](https://docs.magento.com/user-guide/system/cache-management.html).
+   > Weitere Informationen zur [Cache-Verwaltung finden Sie im Adobe Commerce-Benutzerhandbuch](https://docs.magento.com/user-guide/system/cache-management.html).
 
 ## GraphQL-IDE zur Überprüfung von Attributen verwenden {#use-graphql-ide}
 
-Bevor Sie in AEM Code springen, sollten Sie die [Adobe Commerce GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) Verwendung einer GraphQL-IDE. Die Adobe Commerce-Integration mit AEM erfolgt in erster Linie über eine Reihe von GraphQL-Abfragen. Das Verstehen und Ändern der GraphQL-Abfragen ist eine der wichtigsten Methoden zum Erweitern der CIF-Kernkomponenten.
+Bevor Sie in AEM Code springen, sollten Sie die [Adobe Commerce GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) Verwendung einer GraphQL-IDE. Die Adobe Commerce-Integration mit AEM erfolgt hauptsächlich über eine Reihe von GraphQL-Abfragen. Das Verstehen und Ändern der GraphQL-Abfragen ist eine der wichtigsten Methoden zum Erweitern der CIF-Kernkomponenten.
 
 Verwenden Sie anschließend eine GraphQL-IDE, um zu prüfen, ob das `eco_friendly`-Attribut dem Produktattributsatz hinzugefügt wurde. Screenshots in diesem Tutorial stellen den [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) dar.
 
@@ -182,7 +182,7 @@ Verwenden Sie anschließend eine GraphQL-IDE, um zu prüfen, ob das `eco_friendl
 
    >[!TIP]
    >
-   > Detailliertere Dokumentation [Adobe Commerce GraphQL finden Sie hier .](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
+   > Eine detailliertere Dokumentation zu [Adobe Commerce GraphQL finden Sie hier](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
 ## Sling-Modell für den Produkt-Teaser aktualisieren {#updating-sling-model-product-teaser}
 
@@ -285,7 +285,7 @@ Verwenden Sie [eine IDE Ihrer Wahl](https://docs.adobe.com/content/help/de-DE/ex
 
    Das Hinzufügen zur `extendProductQueryWith`-Methode ist eine effektive Möglichkeit, um sicherzustellen, dass dem Rest des Modells zusätzliche Produktattribute zur Verfügung stehen. Außerdem wird die Anzahl der ausgeführten Abfragen minimiert.
 
-   Im obigen Code wird die`addCustomSimpleField` wird zum Abrufen der `eco_friendly` -Attribut. Dies zeigt, wie Sie nach benutzerdefinierten Attributen abfragen können, die Teil des Adobe Commerce-Schemas sind.
+   Im obigen Code wird die`addCustomSimpleField` wird zum Abrufen der `eco_friendly` -Attribut. Dadurch wird deutlich, wie Sie Abfragen für beliebige benutzerdefinierte Attribute durchführen können, die Teil des Adobe Commerce-Schemas sind.
 
    >[!NOTE]
    >

@@ -3,12 +3,12 @@ title: Verwenden der CIF-Produkt- und Kategorieauswahl
 description: Erfahren Sie, wie Sie mit der CIF-Produkt- und Kategorieauswahl in Ihren Commerce-Komponenten Autoren und Marketing-Experten unterstützen können, effizient mit Commerce-Produkten und -Katalogdaten zu arbeiten.
 sub-product: Commerce
 topics: Development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 feature: Commerce Integration Framework
 exl-id: 1e7c3748-92b5-45f1-8dd9-f1816e3e34aa
-source-git-commit: 2fadfa65242b208a750b0d5392fdd2c41e9ff20e
+source-git-commit: dceb187ba28ad7c377e98d29d6c815fe37e23077
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 100%
