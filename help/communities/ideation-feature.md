@@ -1,8 +1,8 @@
 ---
 title: Ideen-Funktion
-seo-title: Ideen-Funktion
+seo-title: Ideation Feature
 description: Hinzufügen und Konfigurieren der Funktion "Idee"
-seo-description: Hinzufügen und Konfigurieren der Funktion "Idee"
+seo-description: Adding and configuring the Ideation feature
 uuid: 38468290-6d00-4ee4-91d8-7c2e8ae32712
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,14 +13,14 @@ docset: aem65
 exl-id: e130bab4-524d-4413-ba8b-53d0ed9e8623
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1116'
 ht-degree: 32%
 
 ---
 
-# Ideenfunktion {#ideation-feature}
+# Ideen-Funktion {#ideation-feature}
 
-## Einführung {#introduction}
+## Einführung    {#introduction}
 
 Die Filterfunktion bietet einen Bereich für angemeldete Site-Besucher (Community-Mitglieder) in der Veröffentlichungsumgebung für:
 
@@ -36,29 +36,29 @@ In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
 ### Hinzufügen einer Idee zu einer Seite {#adding-a-ideation-to-a-page}
 
-Um eine Komponente `Ideation` im Autorenmodus zu einer Seite hinzuzufügen, suchen Sie mit dem Komponenten-Browser nach
+So fügen Sie eine `Ideation` -Komponente auf einer Seite im Autorenmodus verwenden Sie den Komponenten-Browser, um
 
 * `Communities / Ideation`
 
 und ziehen Sie sie an die gewünschte Stelle auf der Seite, auf der die Idee erscheinen soll.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](/help/communities/basics.md).
+Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die [erforderlichen clientseitigen Bibliotheken](/help/communities/ideation.md#essentials-for-client-side) eingeschlossen sind, wird die Komponente `Ideation` so angezeigt:
+Wenn die [erforderliche clientseitige Bibliotheken](/help/communities/ideation.md#essentials-for-client-side) eingeschlossen sind, wird die `Ideation` wird angezeigt:
 
 ![Idee](assets/ideation.png)
 
 ### Konfigurieren einer Idee {#configuring-an-ideation}
 
-Wählen Sie die platzierte Komponente `Ideation` aus, um auf das Symbol `Configure` zuzugreifen, mit dem das Bearbeitungsdialogfeld geöffnet wird.
+Wählen Sie die platzierte `Ideation` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
 ![configure-new](assets/configure-new.png)
 
 ![ideation-settings](assets/ideation-settings.png)
 
-#### Registerkarte „Settings“{#settings-tab}
+#### Registerkarte „Settings“ {#settings-tab}
 
-Legen Sie auf der Registerkarte **[!UICONTROL Einstellungen]** Einstellungen für Ideen und Kommentare fest:
+Unter dem **[!UICONTROL Einstellungen]** Registerkarte Einstellungen für Ideen und Kommentare festlegen:
 
 * **Anhangminiatur zulassen**
 * **Max. Anhangminiaturgröße**
@@ -92,7 +92,7 @@ Legen Sie auf der Registerkarte **[!UICONTROL Einstellungen]** Einstellungen fü
 
 * **Tagging zulassen**
 
-   Wenn diese Option aktiviert ist, können Mitglieder ihrem Beitrag Tag-Beschriftungen hinzufügen (siehe Registerkarte **[!UICONTROL Tag-Feld]** ). Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Mitglieder ihrem Beitrag Tag-Beschriftungen hinzufügen (siehe **[!UICONTROL Tag-Feld]** Registerkarte). Diese Option ist standardmäßig deaktiviert.
 
 * **Datei-Uploads zulassen**
 
@@ -124,11 +124,11 @@ Legen Sie auf der Registerkarte **[!UICONTROL Einstellungen]** Einstellungen fü
 
 * **Folgende zulassen**
 
-   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Ideen-Beiträge hinzu, mit der Mitglieder [benachrichtigt](/help/communities/notifications.md) über neue Beiträge werden können. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Ideenbeiträge hinzu, mit der Mitglieder [benachrichtigt](/help/communities/notifications.md) von neuen Stellen. Diese Option ist standardmäßig deaktiviert.
 
 * **E-Mail-Abonnements zulassen**
 
-   Wenn diese Option aktiviert ist, können Mitglieder per E-Mail über neue Beiträge benachrichtigt werden ([subscription](/help/communities/subscriptions.md)). Erfordert die Überprüfung von `Allow Following` und die Konfiguration von [E-Mail](/help/communities/email.md). Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Mitglieder per E-Mail über neue Beiträge informiert werden ([Abonnement](/help/communities/subscriptions.md)). Erfordert `Allow Following` zu überprüfen und [E-Mail konfiguriert](/help/communities/email.md). Diese Option ist standardmäßig deaktiviert.
 
 * **Abstimmung zulassen**
 
@@ -136,21 +136,21 @@ Legen Sie auf der Registerkarte **[!UICONTROL Einstellungen]** Einstellungen fü
 
 * **Abzeichen anzeigen**
 
-   Wenn diese Option aktiviert ist, zeigen Sie die verdiente und zugewiesene [Badges](/help/communities/implementing-scoring.md) mit der Idee eines Mitglieds an. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, zeigen Sie Earned und Assored [Badges](/help/communities/implementing-scoring.md) mit der Idee eines Mitglieds. Diese Option ist standardmäßig deaktiviert.
 
 * **Antworten auf Listenseite nicht abrufen**
 
 * **Feature-Inhalt zulassen**
 
-   Wenn diese Option aktiviert ist, kann die Idee als [Inhalt mit Funktionen](/help/communities/featured.md) identifiziert werden. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](/help/communities/featured.md). Diese Option ist standardmäßig deaktiviert.
 
 * **Erwähnung aktivieren**
 * **Max. Erwähnungen**
 * **UI-Erwähnungsmuster**
 
-#### Registerkarte Benutzermoderation {#user-moderation-tab}
+#### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
-Geben Sie auf der Registerkarte **[!UICONTROL Benutzermoderation]** an, wie die veröffentlichten Ideen und Kommentare (benutzergenerierte Inhalte) verwaltet werden. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
+Unter dem **[!UICONTROL Benutzermoderation]** -Registerkarte angeben, wie die veröffentlichten Ideen und Kommentare (benutzergenerierte Inhalte) verwaltet werden. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
 * **Posts ablehnen**
 
@@ -180,21 +180,21 @@ Geben Sie auf der Registerkarte **[!UICONTROL Benutzermoderation]** an, wie die 
 
    Geben Sie an, wie oft ein Thema oder Kommentar gekennzeichnet werden muss, bevor er in der öffentlichen Ansicht ausgeblendet wird. Bei einem Wert von -1 wird das gekennzeichnete Thema oder der gekennzeichnete Kommentar nie ausgeblendet. In allen anderen Fällen muss der Wert größer als der oder gleich dem „Schwellenwert für Moderation“ sein. Der Standardwert ist 5.
 
-#### Registerkarte &quot;Tag-Feld&quot;{#tag-field-tab}
+#### Registerkarte &quot;Tag-Feld&quot; {#tag-field-tab}
 
 Auf der Registerkarte **[!UICONTROL Tag-Feld]** wird eingeschränkt, welche Tags je nach ausgewähltem Namespace (falls auf der Registerkarte **[!UICONTROL Einstellungen]** aktiviert) verwendet werden können.
 
 * **Zulässige Namespaces**
 
-   Relevant, wenn `Allow Tagging` auf der Registerkarte **[!UICONTROL Einstellungen]** aktiviert ist. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
+   Relevant, wenn `Allow Tagging` wird unter dem **[!UICONTROL Einstellungen]** Registerkarte. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
 
 * **Empfehlungsgrenze**
 
-   Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht wird. Der Wert **-1** bedeutet keine Begrenzung. Der Standardwert ist 0.
+   Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht wird. Ein Wert von **-1** bedeutet keine Begrenzung. Der Standardwert ist 0.
 
-#### Registerkarte &quot;Sortiereinstellungen&quot;{#sort-settings-tab}
+#### Registerkarte &quot;Sortiereinstellungen&quot; {#sort-settings-tab}
 
-Geben Sie auf der Registerkarte **[!UICONTROL Sortiereinstellungen]** an, wie die veröffentlichten Kommentare sortiert werden sollen, wenn sie angezeigt werden.
+Unter dem **[!UICONTROL Sortiereinstellungen]** festlegen, wie die veröffentlichten Kommentare sortiert werden, wenn sie angezeigt werden.
 
 * **Sortierfolge**
 
@@ -206,7 +206,7 @@ Geben Sie auf der Registerkarte **[!UICONTROL Sortiereinstellungen]** an, wie di
 
 * **Zeitoptionen für Analytics-Sortierung auswählen**
 
-   Ziehen Sie nach unten, um einen von `All, Last 24 Hours, Last 7 Days, Last 30 Days` auszuwählen. Der Standardwert ist `All`.
+   Ziehen Sie nach unten, um eines von `All, Last 24 Hours, Last 7 Days, Last 30 Days`. Der Standardwert ist `All`.
 
 ## Site-Besuchererlebnis {#site-visitor-experience}
 
@@ -220,23 +220,23 @@ Nach der Anmeldung kann ein Mitglied eine neue Idee erstellen.
 
 Vor dem Senden der Idee kann das Mitglied einen Entwurf speichern.
 
-Durch Auswahl der Schaltfläche `Save as Draft` wird ein Entwurf gespeichert.
+Durch Auswahl der `Save as Draft` -Schaltfläche verwenden, wird ein Entwurf gespeichert.
 
 ![save-ideas](assets/save-idea.png)
 
-Wenn Sie gespeicherte Entwürfe auf der Registerkarte `My Drafts` anzeigen, wählen Sie `Read More` aus, um wieder in den Bearbeitungsmodus zu wechseln:
+Beim Anzeigen gespeicherter Entwürfe im `My Drafts` Registerkarte, wählen Sie `Read More` , um wieder in den Bearbeitungsmodus zu wechseln:
 
 ![edit-ideas](assets/edit-idea.png)
 
 #### Feedback geben {#providing-feedback}
 
-Sobald die Idee veröffentlicht wurde, können sich andere Mitglieder anmelden, die Idee ( `Read More`) öffnen und die Idee mögen, so zur Stimmenanzahl hinzufügen und Kommentare machen.
+Sobald die Idee veröffentlicht wurde, können sich andere Mitglieder anmelden und die Idee öffnen ( `Read More`) und wie die Idee, so zur Stimmenanzahl, und Kommentare.
 
 ![Feedback,](assets/feedback-idea.png)
 
 ### Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie auf der Seite [Ideen-Grundlagen](/help/communities/ideation.md) für Entwickler.
+Weitere Informationen finden Sie unter [Ideengrundlagen](/help/communities/ideation.md) für Entwickler.
 
 Informationen zur Moderation von veröffentlichten Themen und Kommentaren finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 

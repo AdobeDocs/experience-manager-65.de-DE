@@ -17,7 +17,7 @@ ht-degree: 90%
 
 | Version | Artikellink |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=en) |
+| AEM as a Cloud Service | [Klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=en) |
 | AEM 6.5 | Dieser Artikel |
 
 
@@ -314,7 +314,7 @@ Sie können der [!DNL Sites]-Implementierung Assets hinzufügen, diese Assets k�
 
 ## Einschränkungen und Best Practices {#tip-and-limitations}
 
-* Um Einblicke in die Asset-Nutzung zu erhalten, konfigurieren Sie die Funktion [Assets Insights](/help/assets/asset-insights.md) in der [!DNL Sites]-Instanz.
+* Um Erkenntnisse zur Asset-Nutzung zu erhalten, konfigurieren Sie die Funktion [Assets Insights](/help/assets/asset-insights.md) in der [!DNL Sites]-Instanz.
 
 ### Berechtigungen und Asset-Verwaltung {#permissions-and-managing-assets}
 

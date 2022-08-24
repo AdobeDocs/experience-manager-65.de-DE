@@ -1,8 +1,8 @@
 ---
 title: Datenmodellierung – Modell von David Nuescheler
-seo-title: Datenmodellierung – Modell von David Nuescheler
+seo-title: Data Modeling - David Nuescheler's Model
 description: Empfehlungen von David Nuescheler zur Content-Modellierung
-seo-description: Empfehlungen von David Nuescheler zur Content-Modellierung
+seo-description: David Nuescheler's content modelling recommendations
 uuid: acb27e81-9143-4e0d-a37a-ba26491a841f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 39546c0a-b72f-42df-859b-98428ee0d5fb
 exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1818'
 ht-degree: 89%
 
 ---
@@ -25,7 +25,7 @@ Bei den folgenden Informationen handelt es sich um Anregungen und Kommentare von
 
 David Nuescheler war Mitbegründer und CTO von Day Software AG, einem führenden Anbieter von Content-Management- und Content-Infrastruktur-Software, der im Jahr 2010 von Adobe übernommen wurde. Nuescheler ist nun Fellow und VP des Bereichs Enterprise Technology bei Adobe und leitet die Entwicklung von JSR-170, der Java Content Repository-API (JCR), die den Technologiestandard für Content-Management bildet.
 
-Weitere Aktualisierungen finden Sie auch unter [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
+Weitere Aktualisierungen finden Sie unter [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
 ## Einführung von David Nuescheler {#introduction-from-david}
 
@@ -99,11 +99,11 @@ Ich denke, dass eines der Dinge, die sichtbar werden, ist, dass wir alle die Str
 
 Mit dem obigen Content-Modell kann ich es einem anonymen Benutzer ohne Weiteres gestatten, Kommentare zu erstellen, ohne dabei den Schreibschutz für den Rest des Workspace für diesen Benutzer aufzuheben.
 
-### 3. Regel: Workspaces sind für „clone()“, „merge()“ und „update()“ vorgesehen.  {#rule-workspaces-are-for-clone-merge-and-update}
+### 3. Regel: Workspaces sind für „clone()“, „merge()“ und „update()“ vorgesehen. {#rule-workspaces-are-for-clone-merge-and-update}
 
 #### Erklärung {#explanation-3}
 
-Wenn Sie die Methoden `clone()`, `merge()` oder `update()` in Ihrer Anwendung nicht verwenden, ist wahrscheinlich ein einziger Arbeitsbereich der richtige Weg.
+Wenn Sie `clone()`, `merge()` oder `update()` -Methoden in Ihrer Anwendung ist wahrscheinlich ein einziger Arbeitsbereich der richtige Weg.
 
 „Korrespondierende Knoten“ sind ein in den JCR-Spezifikationen definiertes Konzept. Im Wesentlichen handelt es sich dabei um Knoten, die denselben Inhalt in verschiedenen sogenannten Workspaces repräsentieren.
 
@@ -130,7 +130,7 @@ Für Folgendes sollten Workspaces nicht verwendet werden:
 * zur Unterscheidung von Inhalten für verschiedene Zielgruppen (öffentliche, private, lokale usw.)
 * für Postfächer für verschiedene Benutzer
 
-### 4. Regel: Bei gleichgeordneten Elementen mit identischen Namen ist Vorsicht geboten.  {#rule-beware-of-same-name-siblings}
+### 4. Regel: Bei gleichgeordneten Elementen mit identischen Namen ist Vorsicht geboten. {#rule-beware-of-same-name-siblings}
 
 #### Erklärung {#explanation-4}
 
@@ -156,7 +156,7 @@ anstelle von:
 /content/blog[1]/post[2]
 ```
 
-### 5. Regel: Verweise richten mehr Schaden an, als sie nutzen.  {#rule-references-considered-harmful}
+### 5. Regel: Verweise richten mehr Schaden an, als sie nutzen. {#rule-references-considered-harmful}
 
 #### Erklärung {#explanation-5}
 
@@ -176,13 +176,13 @@ Möglicherweise gibt es Nutzungsszenarien, in denen ein System wirklich nicht fu
 
 #### Erklärung {#explanation-6}
 
-Wenn ein Inhaltsmodell etwas offenbart, das *sogar remote* wie eine Datei oder einen Ordner riecht, versuche ich `nt:file`, `nt:folder` und `nt:resource` zu verwenden (oder zu erweitern).
+Wenn ein Inhaltsmodell etwas offenlegt, das auch remote *Gerüche* Ich versuche, eine Datei oder einen Ordner zu verwenden (oder zu erweitern). `nt:file`, `nt:folder` und `nt:resource`.
 
 Meiner Erfahrung nach lassen viele generische Anwendungen implizit die Interaktion mit „nt:folder“ und „nt:files“ zu und wissen, wie sie diese Ereignisse verarbeiten und anzeigen müssen, wenn sie zusätzliche Meta-Informationen aufweisen. Beispielsweise wird eine direkte Interaktion mit Dateiserverimplementierungen wie CIFS oder WebDAV, die auf JCR aufsetzen, implizit.
 
-Als Faustregel kann man meines Erachtens Folgendes verwenden: Wenn Sie den Dateinamen und den MIME-Typ speichern müssen, ist `nt:file`/ `nt:resource` eine sehr gute Übereinstimmung. Wenn Sie möglicherweise mehrere „files“ haben, bietet sich „nt:folder“ für ihre Speicherung an.
+Als Faustregel kann man meines Erachtens Folgendes verwenden: Wenn Sie den Dateinamen und den MIME-Typ speichern müssen, dann `nt:file`/ `nt:resource` ist ein sehr gutes Spiel. Wenn Sie möglicherweise mehrere „files“ haben, bietet sich „nt:folder“ für ihre Speicherung an.
 
-Wenn Sie Meta-Informationen für Ihre Ressource hinzufügen müssen, beispielsweise die Eigenschaft „author“ oder „description“, erweitern Sie `nt:resource` und nicht `nt:file`. Ich erweitere selten nt:file und erweitere häufig `nt:resource`.
+Wenn Sie Meta-Informationen für Ihre Ressource hinzufügen müssen, beispielsweise die Eigenschaft „author“ oder „description“, erweitern Sie `nt:resource` und nicht `nt:file`. Ich erweitere nt:file selten und weiche häufig `nt:resource`.
 
 #### Beispiel {#example-6}
 
@@ -202,7 +202,7 @@ Es mag zwar Nutzungsszenarien geben, in denen es sich empfiehlt, nur eine Binär
 /content/myblog/posts/iphone_shipping/attachments/front.jpg/jcr:content [nt:resource]
 ```
 
-### 7. Regel: IDs sind schlecht.  {#rule-ids-are-evil}
+### 7. Regel: IDs sind schlecht. {#rule-ids-are-evil}
 
 #### Erklärung {#explanation-7}
 
@@ -214,7 +214,7 @@ Es ist zwar richtig, dass einige Knoten während ihres gesamten Lebenszyklus ein
 
 Beachten Sie außerdem, dass Elemente durch einen Pfad identifiziert werden können. Und auch wenn in einem Unix-Dateisystem Symlinks für die meisten Benutzer sinnvoller als Hardlinks sind, bietet sich für die meisten Anwendungen ein Pfad zum Verweisen auf einen Zielknoten an.
 
-Wichtiger noch: Es ist **mix**:referenceable, was bedeutet, dass es zu einem Zeitpunkt auf einen Knoten angewendet werden kann, zu dem Sie tatsächlich darauf verweisen müssen.
+Wichtiger noch: **mix**:referenceable bedeutet, dass sie zu einem Zeitpunkt auf einen Knoten angewendet werden kann, zu dem Sie ihn tatsächlich referenzieren müssen.
 
 Wenn Sie also beispielsweise auf einen Knoten vom Typ „Document“ verweisen können möchten, bedeutet das nicht, dass Ihr Knotentyp „Document“ statisch von „mix:referenceable“ erweitert werden muss, da er dynamisch zu jeder Instanz von „Document“ hinzugefügt werden kann.
 

@@ -13,7 +13,7 @@ discoiquuid: e23de3c3-f8a0-459f-801e-a0942fb1c6aa
 role: Developer
 exl-id: 29c7ebda-407a-464b-a9db-054163f5b737
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1684'
 ht-degree: 100%
 
@@ -93,7 +93,7 @@ Je nach Art des Client-Programms können Sie das Formular in einen Client-Webbro
 
    Rufen Sie die Methode `retrieveContent` des `DocumentManagementServiceClientImpl`-Objekts auf und übergeben Sie die folgenden Werte:
 
-   * Ein Zeichenfolgewert, der den Speicher angibt, dem der Inhalt hinzugefügt wird. Der Standardspeicher ist `SpacesStore`. Dieser Wert ist ein obligatorischer Parameter.
+   * Ein Zeichenfolgewert, der den Speicher angibt, dem der Inhalt hinzugefügt wird. Der Standardspeicherort ist `SpacesStore`. Dieser Wert ist ein obligatorischer Parameter.
    * Ein Zeichenfolgenwert, der den vollständig qualifizierten Pfad des abzurufenden Inhalts angibt (z. B. `/Company Home/Form Designs/Loan.xdp`). Dieser Wert ist ein obligatorischer Parameter.
    * Ein Zeichenfolgenwert, der die Version angibt. Dieser Wert ist ein optionaler Parameter, und Sie können auch eine leere Zeichenfolge übergeben. In diesem Fall wird die neueste Version abgerufen.
 
@@ -116,7 +116,7 @@ Je nach Art des Client-Programms können Sie das Formular in einen Client-Webbro
    * Sie können ein `com.adobe.idp.Document`-Objekt erstellen, indem Sie die Methode `getOutputContent` des `FormsResult`-Objekts aufrufen.
    * Ermitteln Sie den Content-Typ des `com.adobe.idp.Document`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
    * Legen Sie den Content-Typ des `javax.servlet.http.HttpServletResponse`-Objekts fest, indem Sie seine Methode `setContentType` aufrufen und den Content-Typ des `com.adobe.idp.Document`-Objekts übergeben.
-   * Sie können ein `javax.servlet.ServletOutputStream`-Objekt erstellen, das zum Schreiben des Formulardaten-Streams in den Client-Webbrowser verwendet wird, indem Sie die Methode `getOutputStream` des `javax.servlet.http.HttpServletResponse`-Objekts aufrufen.
+   * Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Schreiben des Formulardaten-Streams in den Client-Webbrowser verwendet wird, indem Sie die Methode `getOutputStream` des `javax.servlet.http.HttpServletResponse`-Objekts aufrufen.
    * Sie können ein `java.io.InputStream`-Objekt erstellen, indem Sie die Methode `getInputStream` des `com.adobe.idp.Document`-Objekts aufrufen.
    * Sie können ein Byte-Array erstellen und es mit dem Formulardaten-Stream füllen, indem Sie die Methode `read` des `InputStream`-Objekts aufrufen. Übergeben Sie das Byte-Array als Argument.
    * Rufen Sie die Methode `write` des `javax.servlet.ServletOutputStream`-Objekts auf, um den Formulardaten-Stream an den Client-Webbrowser zu senden. Übergeben Sie das Byte-Array an die Methode `write`.
@@ -139,7 +139,7 @@ Je nach Art des Client-Programms können Sie das Formular in einen Client-Webbro
 
    Verwenden Sie die folgende WSDL-Definition für den Service-Verweis, der mit dem Document Management-Service verknüpft ist: `http://localhost:8080/soap/services/DocumentManagementService?WSDL&lc_version=9.0.1`.
 
-   Da der Datentyp `BLOB` für beide Service-Verweise verwendet wird, müssen Sie den Datentyp `BLOB` vollständig qualifizieren, wenn Sie ihn verwenden. In der entsprechenden Kurzanleitung für den Webservice sind alle `BLOB`-Instanzen vollständig qualifiziert.
+   Da der `BLOB`-Datentyp für beide Service-Referenzen verwendet wird, müssen Sie den `BLOB`-Datentyp vollständig qualifizieren, wenn Sie ihn verwenden. In der entsprechenden Kurzanleitung für den Webservice sind alle `BLOB`-Instanzen vollständig qualifiziert.
 
    >[!NOTE]
    >
@@ -148,15 +148,15 @@ Je nach Art des Client-Programms können Sie das Formular in einen Client-Webbro
 1. Erstellen eines Forms- und eines Document Management Client-API-Objekts
 
    * Erstellen Sie ein `FormsServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
-   * Erstellen Sie ein `FormsServiceClient.Endpoint.Address`-Objekt, indem Sie den `System.ServiceModel.EndpointAddress`-Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der dem AEM Forms-Service die WSDL angibt (z. B. `http://localhost:8080/soap/services/FormsService?WSDL`). Sie brauchen das Attribut `lc_version` nicht zu verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
-   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des Feldes `FormsServiceClient.Endpoint.Binding` abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Setzen Sie das Feld `MessageEncoding` des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `FormsServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/FormsService?WSDL`). Das Attribut `lc_version` muss nicht verwendet werden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
+   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `FormsServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
+   * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `FormsServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
-      * Weisen Sie dem Feld `FormsServiceClient.ClientCredentials.UserName.Password` den entsprechenden Kennwortwert zu.
-      * Weisen Sie den Konstantenwert `HttpClientCredentialType.Basic` dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` zu.
-   * Weisen Sie den Konstantenwert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
+      * Weisen Sie dem Feld `FormsServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
+      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
+   * Weisen Sie den Konstantenwert `BasicHttpSecurityMode.TransportCredentialOnly` zum Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
    >[!NOTE]
    >
@@ -166,8 +166,8 @@ Je nach Art des Client-Programms können Sie das Formular in einen Client-Webbro
 
    Rufen Sie den Inhalt ab, indem Sie die `retrieveContent`-Methode des `DocumentManagementServiceClient`-Objekts aufrufen und die folgenden Werte übergeben:
 
-   * Ein Zeichenfolgewert, der den Speicher angibt, dem der Inhalt hinzugefügt wird. Der Standardspeicher ist `SpacesStore`. Dieser Wert ist ein obligatorischer Parameter.
-   * Ein Kennzeichenfolgewert, der den vollständig qualifizierten Pfad des abzurufenden Inhalts angibt (z. B. `/Company Home/Form Designs/Loan.xdp`). Dieser Wert ist ein obligatorischer Parameter.
+   * Ein Zeichenfolgewert, der den Speicher angibt, dem der Inhalt hinzugefügt wird. Der Standardspeicherort ist `SpacesStore`. Dieser Wert ist ein obligatorischer Parameter.
+   * Ein Zeichenfolgenwert, der den vollständig qualifizierten Pfad des abzurufenden Inhalts angibt (z. B. `/Company Home/Form Designs/Loan.xdp`). Dieser Wert ist ein obligatorischer Parameter.
    * Ein Zeichenfolgenwert, der die Version angibt. Dieser Wert ist ein optionaler Parameter, und Sie können auch eine leere Zeichenfolge übergeben. In diesem Fall wird die neueste Version abgerufen.
    * Der Ausgabeparameter einer Kennzeichenfolge, der den Wert des Browse-Links speichert.
    * Ein `BLOB`-Ausgabeparameter, der den Inhalt speichert. Sie können diesen Ausgabeparameter verwenden, um den Inhalt abzurufen.
@@ -176,13 +176,13 @@ Je nach Art des Client-Programms können Sie das Formular in einen Client-Webbro
 
 1. Wiedergeben eines interaktiven PDF-Formulars
 
-   Rufen Sie die `renderPDFForm2`-Methode des `FormsServiceClient`-Objekts ab und übergeben Sie die folgenden Werte:
+   Rufen Sie die Methode `renderPDFForm2` des `FormsServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
 
-   * Ein `BLOB`-Objekt, das den Formularentwurf enthält, der von Content Services abgerufen wurde (nicht mehr unterstützt).
-   * Ein `BLOB`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie eine leeres `BLOB`-Objekt.
-   * Ein `PDFFormRenderSpec`-Objekt, das Laufzeitoptionen speichert. Dieser Wert ist ein optionaler Parameter und Sie können `null` angeben, wenn Sie keine Laufzeitoptionen festlegen möchten.
-   * Ein `URLSpec`-Objekt, das URI-Werte enthält. Dieser Wert ist ein optionaler Parameter und Sie können `null` angeben.
-   * Ein `Map`-Objekt, das Dateianhänge speichert. Dieser Wert ist ein optionaler Parameter und Sie können `null` angeben, wenn Sie keine Dateien an das Formular anhängen möchten.
+   * Ein `BLOB`-Objekt, das den Formularentwurf enthält, der von Content Services (veraltet) abgerufen wurde.
+   * Ein `BLOB`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie ein leeres `BLOB`-Objekt.
+   * Ein `PDFFormRenderSpec`-Objekt, das Laufzeitoptionen speichert. Dieser Wert ist ein optionaler Parameter, für den Sie `null` angeben können, wenn Sie keine Laufzeitoptionen angeben möchten.
+   * Ein `URLSpec`-Objekt, das URI-Werte enthält. Dieser Wert ist ein optionaler Parameter, für den Sie auch `null` angeben können.
+   * Ein `Map`-Objekt, das Dateianlagen speichert. Dieser Wert ist ein optionaler Parameter und Sie können `null` angeben, wenn Sie keine Dateien an das Formular anhängen möchten.
    * Ein langer Ausgabeparameter, der zum Speichern der Seitenzahl verwendet wird.
    * Ein Ausgabeparameter der Kennzeichenfolge, der zum Speichern des Gebietsschemawerts verwendet wird.
    * Ein `FormsResult`-Ausgabeparameter, der zum Speichern des interaktiven PDF-Formulars verwendet wird `.`
@@ -194,8 +194,8 @@ Je nach Art des Client-Programms können Sie das Formular in einen Client-Webbro
    * Erstellen Sie ein `BLOB`-Objekt, das Formulardaten enthält, indem Sie den Wert des `outputContent`-Feldes des `FormsResult`-Objekts abrufen.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor verwenden. Übergeben Sie einen Kennzeichenfolgewert, der den Dateispeicherort des interaktiven PDF-Dokuments und den Modus angibt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Byte-Array, das den Inhalt des `BLOB`-Objekts speichert, das aus dem `FormsResult`-Objekt abgerufen wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `MTOM` des `BLOB`-Objekts abrufen.
-   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor verwenden und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `Write`-Methode des `System.IO.BinaryWriter`-Objekts verwenden und das Byte-Array übergeben.
+   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 **Siehe auch**
 

@@ -216,7 +216,7 @@ Die Eigenschaften einer vorhandenen Unter-Community-Site, die während des Erste
 
 ![edit-site](assets/edit-site.png)
 
-Details zu den folgenden Eigenschaften entsprechen den Beschreibungen im Abschnitt [Gruppenerstellung](#group-creation) Abschnitt. Jede verschachtelte Gruppe kann geändert werden, unabhängig davon, ob sie in der Veröffentlichungsumgebung oder in der Autorenumgebung erstellt wurde.
+Die Details der folgenden Eigenschaften stimmen mit den Beschreibungen überein, die im Abschnitt [Gruppenerstellung](#group-creation) Abschnitt. Jede verschachtelte Gruppe kann geändert werden, unabhängig davon, ob sie in der Veröffentlichungsumgebung oder in der Autorenumgebung erstellt wurde.
 
 ![community-group-basic](assets/community-group-basic.png)
 

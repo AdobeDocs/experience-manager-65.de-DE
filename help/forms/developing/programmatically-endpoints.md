@@ -12,7 +12,7 @@ discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
 source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '10805'
 ht-degree: 100%
 
@@ -290,7 +290,7 @@ Führen Sie die folgenden Aufgaben aus, um einem Service einen Endpunkt vom Typ 
 1. Erstellen Sie einen Endpunkt des Typs „Überwachter Ordner“.
 1. Aktivieren Sie den Endpunkt.
 
-**Einbinden von Projektdateien**
+**Einschließen von Projektdateien**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie eine Clientanwendung mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
@@ -301,7 +301,7 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
 * jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
 
-Weitere Informationen über den Speicherort dieser Dateien finden Sie unter [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Informationen zum Speicherort dieser JAR-Dateien finden Sie unter [Einbeziehen von AEM Forms-Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Erstellen eines EndpointRegistry-Client-Objekts**
 
@@ -523,7 +523,7 @@ Führen Sie die folgenden Aufgaben aus, um einem Service einen E-Mail-Endpunkt h
 1. Erstellen Sie den E-Mail-Endpunkt.
 1. Aktivieren Sie den Endpunkt.
 
-**Einbeziehen von Projektdateien**
+**Einschließen von Projektdateien**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie eine Clientanwendung mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
@@ -534,7 +534,7 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
 * jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
 
-Weitere Informationen zum Speicherort dieser Dateien finden Sie unter [Einbeziehen von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Informationen zum Speicherort dieser JAR-Dateien finden Sie unter [Einbeziehen von AEM Forms-Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Erstellen eines EndpointRegistry-Client-Objekts**
 
@@ -612,11 +612,11 @@ Um einen für einen E-Mail-Endpunkt erforderlichen Ausgabeparameterwert zu defin
 
 **Name des Ausgabeparameters**: Der Name des Ausgabeparameters. Der Name eines Prozessausgabewerts wird in Workbench angegeben. Wenn der Ausgabewert zu einem Service-Vorgang gehört (ein Service, der kein in Workbench erstellter Prozess ist), wird der Ausgabename in der Datei „component.xml“ angegeben. Beispielsweise lautet der Name des Ausgabeparameters für den in diesem Abschnitt eingeführten Prozess `SecuredDoc`.
 
-**Zuordnungstyp:** Wird zum Konfigurieren der Ausgabe des Service und Vorgangs verwendet. Die folgenden Optionen sind verfügbar:
+**Zuordnungstyp**: Wird zum Konfigurieren der Ausgabe des Service und Vorgangs verwendet. Die folgenden Optionen sind verfügbar:
 
-* Wenn der Service ein einzelnes Objekt (ein einzelnes Dokument) zurückgibt, lautet das Muster `%F.pdf` und das Quellziel „sourcefilename.pdf“. Beispielsweise gibt der in diesem Abschnitt eingeführte Prozess ein einzelnes Dokument zurück. Daher kann der Zuordnungstyp wie folgt definiert werden: `%F.pdf` ( `%F` bedeutet, dass der angegebene Dateiname verwendet werden soll). Das Muster `%E` gibt die Erweiterung des Eingabedokuments an.
+* Wenn der Service ein einzelnes Objekt (ein einzelnes Dokument) zurückgibt, lautet das Muster `%F.pdf`, und das Quellziel ist „sourcefilename.pdf“. Beispielsweise gibt der in diesem Abschnitt eingeführte Prozess ein einzelnes Dokument zurück. Daher kann der Zuordnungstyp wie folgt definiert werden: `%F.pdf` (`%F` bedeutet, dass der angegebene Dateiname verwendet wird). Das Muster `%E` gibt die Erweiterung des Eingabedokuments an.
 * Wenn der Service eine Liste zurückgibt, lautet das Muster `Result\%F\`, und das Quellziel ist „Result\sourcefilename\source1“ (Ausgabe 1) und „Result\sourcefilename\source2“ (Ausgabe 2).
-* Wenn der Service eine Zuordnung zurückgibt, lautet das Muster `Result\%F\` und das Quellziel „Result\sourcefilename\file1“ sowie „Result\sourcefilename\file2“ lautet. Wenn die Zuordnung mehr als ein Objekt enthält, lautet das Muster `Result\%F.pdf` und das Quellziel „Result\sourcefilename1.pdf“ (Ausgabe 1), „Result\sourcefilenam2.pdf“ (Ausgabe 2) usw.
+* Wenn der Service eine Zuordnung zurückgibt, lautet das Muster `Result\%F\`, und das Quellziel ist „Result\sourcefilename\file1“ und „Result\sourcefilename\file2“. Wenn die Zuordnung mehr als ein Objekt enthält, lautet das Muster `Result\%F.pdf`, und das Quellziel ist „Result\sourcefilename1.pdf“ (Ausgabe 1), „Result\sourcefilenam2.pdf“ (Ausgabe 2) usw.
 
 **Datentyp**: Gibt den Datentyp des Rückgabewerts an. Beispielsweise lautet der Datentyp des Rückgabewerts des in diesem Abschnitt vorgestellten Prozesses `com.adobe.idp.Document`.
 
@@ -652,17 +652,17 @@ Fügen Sie mithilfe der Java-API einen E-Mail-Endpunkt hinzu:
 1. Stellen Sie E-Mail-Endpunktattribute ein.
 
    * Erstellen Sie ein Objekt `CreateEndpointInfo`, indem Sie den Konstruktor verwenden.
-   * Geben Sie den Wert der Connector-Kennung an, indem Sie die `setConnectorId`-Methode des `CreateEndpointInfo`-Objekts aufrufen und den Zeichenfolgenwert `Email` übergeben.
-   * Geben Sie die Beschreibung des Endpunkts an, indem Sie die `setDescription`-Methode des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Endpunkt beschreibt.
-   * Geben Sie den Namen des Endpunkts an, indem Sie die `setName`-Methode des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen angibt.
-   * Geben Sie den Service an, zu dem der Endpunkt gehört, indem Sie die `setServiceId`-Methode des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Service-Namen angibt.
+   * Geben Sie den Wert der Connector-ID an, indem Sie die Methode `setConnectorId` des `CreateEndpointInfo`-Objekts aufrufen und den Zeichenfolgenwert `Email` übergeben.
+   * Geben Sie die Beschreibung des Endpunkts an, indem Sie die Methode `setDescription` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Endpunkt beschreibt.
+   * Geben Sie den Namen des Endpunkts an, indem Sie die Methode `setName` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen angibt.
+   * Geben Sie den Service an, zu dem der Endpunkt gehört, indem Sie die Methode `setServiceId` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen des Services angibt.
    * Geben Sie den Vorgang an, der aufgerufen werden soll, indem Sie die `setOperationName`-Methode des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Vorgangsnamen angibt. Beim Erstellen eines E-Mail-Endpunkts für einen Service, der aus einem in Workbench erstellten Prozess stammt, wird normalerweise der Name des Vorgangs aufgerufen.
 
 1. Geben Sie Konfigurationswerte an.
 
    Für jeden Konfigurationswert, der für den E-Mail-Endpunkt eingestellt werden soll, müssen Sie die `setConfigParameterAsText`-Methode des `CreateEndpointInfo`-Objekts aufrufen. Um beispielsweise den `smtpHost`-Konfigurationswert einzustellen, rufen Sie die `setConfigParameterAsText`-Methode des `CreateEndpointInfo`-Objekts auf und übergeben Sie die folgenden Werte:
 
-   * Ein Zeichenfolgenwert, der den Namen des Konfigurationswerts angibt. Wenn Sie den `smtpHost`-Konfigurationswert einstellen, geben Sie `smtpHost` an.
+   * Ein Zeichenfolgenwert, der den Namen des Konfigurationswerts angibt. Wenn Sie den `smtpHost`-Konfigurationswert festlegen, geben Sie `smtpHost` an.
    * Ein Zeichenfolgenwert, der den Wert des Konfigurationswerts angibt. Wenn Sie den `smtpHost`-Konfigurationswert einstellen, geben Sie einen Zeichenfolgenwert an, der den Namen des SMTP-Servers festlegt.
 
    >[!NOTE]
@@ -671,23 +671,23 @@ Fügen Sie mithilfe der Java-API einen E-Mail-Endpunkt hinzu:
 
 1. Definieren Sie Eingabeparameterwerte.
 
-   Definieren Sie einen Eingabeparameterwert durch Aufrufen der `setInputParameterMapping`-Methode des `CreateEndpointInfo`-Objekts aufrufen und die folgenden Werte übergeben:
+   Definieren Sie einen Eingabeparameterwert, indem Sie die Methode `setInputParameterMapping` des `CreateEndpointInfo`-Objekts aufrufen und die folgenden Werte übergeben:
 
    * Ein Zeichenfolgenwert, der den Namen des Eingabeparameters angibt. Beispielsweise lautet der Name des Eingabeparameters für den EncryptDocument-Service `InDoc`.
-   * Ein Zeichenfolgenwert, der den Datentyp des Eingabeparameters angibt. Beispielsweise ist der Datentyp des `InDoc`-Eingabeparameters `com.adobe.idp.Document`.
+   * Ein Zeichenfolgenwert, der den Datentyp des Eingabeparameters angibt. Der Datentyp des Eingabeparameters `InDoc` ist beispielsweise `com.adobe.idp.Document`.
    * Ein Zeichenfolgenwert, der den Zuordnungstyp angibt. Sie können beispielsweise `variable` angeben.
    * Ein Zeichenfolgenwert, der den Wert des Zuordnungstyps angibt. Beispielsweise können Sie &amp;ast;.pdf als Dateimuster angeben.
 
    >[!NOTE]
    >
-   >Rufen Sie die `setInputParameterMapping`-Methode für jeden zu definierenden Eingabeparameterwert auf. Da der EncryptDocument-Prozess nur einen Eingabeparameter hat, müssen Sie diese Methode einmal aufrufen.
+   >Rufen Sie für jeden zu definierenden Eingabeparameterwert die Methode `setInputParameterMapping` auf. Da der EncryptDocument-Prozess nur einen Eingabeparameter hat, müssen Sie diese Methode einmal aufrufen.
 
 1. Definieren Sie einen Ausgabeparameterwert.
 
    Definieren Sie einen Ausgabeparameterwert, indem Sie die `setOutputParameterMapping`-Methode des `CreateEndpointInfo`-Objekts aufrufen und die folgenden Werte übergeben:
 
    * Ein Zeichenfolgenwert, der den Namen des Ausgabeparameters angibt. Beispielsweise lautet der Name des Ausgabeparameters für den EncryptDocument-Service `SecuredDoc`.
-   * Ein Zeichenfolgenwert, der den Datentyp des Ausgabeparameters angibt. Beispielsweise ist der Datentyp des `SecuredDoc`-Ausgabeparameters `com.adobe.idp.Document`.
+   * Ein Zeichenfolgenwert, der den Datentyp des Ausgabeparameters angibt. Der Datentyp des `SecuredDoc`-Ausgabeparameters ist beispielsweise `com.adobe.idp.Document`.
    * Ein Zeichenfolgenwert, der den Zuordnungstyp angibt. Sie können beispielsweise `%F.pdf` angeben.
 
 1. Erstellen Sie den E-Mail-Endpunkt.
@@ -696,7 +696,7 @@ Fügen Sie mithilfe der Java-API einen E-Mail-Endpunkt hinzu:
 
 1. Aktivieren Sie den Endpunkt.
 
-   Aktivieren Sie den Endpunkt, indem Sie die `enable`-Methode des `EndpointRegistryClient`-Objekts aufrufen und das von der `createEndpoint`-Methode zurückgegebene `Endpoint`-Objekt übergeben.
+   Aktivieren Sie den Endpunkt, indem Sie die Methode `enable` des `EndpointRegistryClient`-Objekts aufrufen und das `Endpoint`-Objekt übergeben, das von der Methode `createEndpoint` zurückgegeben wurde.
 
 **Siehe auch**
 
@@ -789,7 +789,7 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
 * jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
 
-Weitere Informationen über den Speicherort dieser JAR-Dateien finden Sie unter [Einschließen von AEM Forms-Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Informationen zum Speicherort dieser JAR-Dateien finden Sie unter [Einbeziehen von AEM Forms-Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Erstellen eines EndpointRegistry-Client-Objekts**
 

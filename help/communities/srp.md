@@ -1,8 +1,8 @@
 ---
 title: Übersicht über den Speicheranbieter
-seo-title: Übersicht über den Speicheranbieter
+seo-title: Storage Resource Provider Overview
 description: Gemeinsame Speicherung für Communities
-seo-description: Gemeinsame Speicherung für Communities
+seo-description: Common storage for Communities
 uuid: abdf4e5a-767b-428f-9aa4-0dc06819a26e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,32 +12,32 @@ discoiquuid: 63abeda4-6ea1-4b45-b188-f9c6b44ca0cd
 exl-id: 5f313274-1a2a-4e83-9289-60a4729b99b4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1133'
 ht-degree: 2%
 
 ---
 
 # Übersicht über den Speicheranbieter {#storage-resource-provider-overview}
 
-## Einführung {#introduction}
+## Einführung    {#introduction}
 
-Ab AEM Communities 6.1 werden Community-Inhalte, häufig als benutzergenerierte Inhalte (UGC) bezeichnet, in einem einzigen, gemeinsamen Speicher gespeichert, der von einem [Speicherressourcenanbieter](working-with-srp.md) (SRP) bereitgestellt wird.
+Ab AEM Communities 6.1 werden Community-Inhalte, häufig als benutzergenerierte Inhalte bezeichnet, in einem einzigen, gemeinsamen Speicher gespeichert, der von einem [Speicherressourcenanbieter](working-with-srp.md) (SRP).
 
-Es gibt mehrere SRP-Optionen, die alle über eine neue AEM Communities-Schnittstelle auf UGC zugreifen, die [SocialResourceProvider-API](srp-and-ugc.md) (SRP-API), die alle Vorgänge zum Erstellen, Lesen, Aktualisieren und Löschen (CRUD) umfasst.
+Es gibt mehrere SRP-Optionen, die alle über eine neue AEM Communities-Oberfläche auf UGC zugreifen: [SocialResourceProvider-API](srp-and-ugc.md) (SRP-API), die alle CRUD-Vorgänge (Erstellen, Lesen, Aktualisieren und Löschen) umfasst.
 
-Alle SCF-Komponenten werden mithilfe der SRP-API implementiert, sodass Code ohne Kenntnis der [zugrunde liegenden Topologie](topologies.md) oder des Standorts der UGC entwickelt werden kann.
+Alle SCF-Komponenten werden mithilfe der SRP-API implementiert, sodass Code ohne Kenntnis der [zugrunde liegende Topologie](topologies.md) oder Standort der UGC.
 
 ***Die SocialResourceProvider-API steht nur lizenzierten Kunden von AEM Communities zur Verfügung.***
 
 >[!NOTE]
 >
->**Benutzerdefinierte Komponenten**: Für lizenzierte Kunden von AEM Communities ist die SRP-API für Entwickler von benutzerdefinierten Komponenten verfügbar, um ungeachtet der zugrunde liegenden Topologie auf UGC zugreifen zu können. Siehe [SRP und UGC Essentials](srp-and-ugc.md).
+>**Benutzerdefinierte Komponenten**: Für lizenzierte Kunden von AEM Communities ist die SRP-API für Entwickler von benutzerdefinierten Komponenten verfügbar, um ungeachtet der zugrunde liegenden Topologie auf UGC zugreifen zu können. Siehe [Grundlagen zu SRP und UGC](srp-and-ugc.md).
 
 Siehe auch:
 
-* [SRP und UGC Essentials](srp-and-ugc.md)  - SRP-Dienstprogrammmethoden und Beispiele.
-* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md)  - Coding Guidelines.
-* [SocialUtils-Refaktorierung](socialutils.md)  - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
+* [Grundlagen zu SRP und UGC](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und -beispiele.
+* [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Kodierungsrichtlinien.
+* [SocialUtils-Refaktorierung](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
 
 ## Über das Repository {#about-the-repository}
 
@@ -49,11 +49,11 @@ Dieser Standard definiert ein Datenmodell und eine Anwendungsprogrammierschnitts
 Eine Implementierung von JCR ist das AEM Repository, OAK.
 
 **Apache Jackrabbit Oak (OAK)**
-[](../../help/sites-deploying/platform.md)  OAK ist eine Implementierung von JCR 2.0, einem Datenspeichersystem, das speziell für inhaltsorientierte Anwendungen entwickelt wurde. Es handelt sich um eine hierarchische Datenbank, die für unstrukturierte und teilstrukturierte Daten entwickelt wurde. Das Repository speichert nicht nur die benutzerseitigen Inhalte, sondern auch alle durch die Anwendung verwendeten Codes, Vorlagen und internen Daten. Die Benutzeroberfläche für den Zugriff auf Inhalte ist [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
+[OAK](../../help/sites-deploying/platform.md) ist eine Implementierung von JCR 2.0, einem Datenspeichersystem, das speziell für inhaltsorientierte Anwendungen entwickelt wurde. Es handelt sich um eine hierarchische Datenbank, die für unstrukturierte und teilstrukturierte Daten entwickelt wurde. Das Repository speichert nicht nur die benutzerseitigen Inhalte, sondern auch alle durch die Anwendung verwendeten Codes, Vorlagen und internen Daten. Die Benutzeroberfläche für den Zugriff auf Inhalte lautet [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
 
 Sowohl JCR als auch OAK werden normalerweise verwendet, um auf das AEM Repository zu verweisen.
 
-Nachdem Sie Site-Inhalte in der privaten Autorenumgebung entwickelt haben, müssen Sie sie durch Kopieren in die öffentliche Veröffentlichungsumgebung kopieren. Dies geschieht oft durch einen Vorgang namens *[replication](deploy-communities.md#replication-agents-on-author)*. Dies geschieht unter der Kontrolle des Autors/Entwicklers/Administrators.
+Nachdem Sie Site-Inhalte in der privaten Autorenumgebung entwickelt haben, müssen Sie sie durch Kopieren in die öffentliche Veröffentlichungsumgebung kopieren. Dies geschieht oft durch einen Vorgang namens *[Replikation](deploy-communities.md#replication-agents-on-author)*. Dies geschieht unter der Kontrolle des Autors/Entwicklers/Administrators.
 
 Für UGC wird der Inhalt von registrierten Site-Besuchern (Community-Mitgliedern) in der öffentlichen Veröffentlichungsumgebung eingegeben. Dies geschieht zufällig.
 
@@ -65,9 +65,9 @@ Wenn UGC im freigegebenen Speicher gespeichert wird, gibt es eine einzelne Insta
 
 >[!NOTE]
 >
->Unter [SRP und UGC Essentials](srp-and-ugc.md) finden Sie Beispielcode und weitere Details.
+>Siehe [Grundlagen zu SRP und UGC](srp-and-ugc.md) für Beispielcode und zusätzliche Details.
 >
->Best Practices für die Kodierung finden Sie unter [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) .
+>Siehe [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) für Best Practices beim Programmieren.
 
 ### ASRP {#asrp}
 
@@ -97,7 +97,7 @@ Siehe [JSRP - JCR Storage Resource Provider](jsrp.md).
 
 Im Falle von JSRP wird während UGC in JCR gespeichert ist und sowohl über die CRXDE Lite- als auch die JCR-API zugänglich ist, dringend empfohlen, dafür niemals die JCR-API zu verwenden. Andernfalls können sich zukünftige Änderungen auf benutzerdefinierten Code auswirken.
 
-Außerdem wird das Repository für die Autoren- und Veröffentlichungsumgebungen nicht freigegeben. Während ein Cluster von Veröffentlichungsinstanzen zu einem freigegebenen Veröffentlichungs-Repository führt, ist in der Veröffentlichungsinstanz eingegebener UGC nicht in der Autoreninstanz sichtbar, sodass keine Möglichkeit besteht, benutzergenerierte Inhalte von der Autoreninstanz aus zu verwalten. UGC wird nur im AEM-Repository (JCR) der Instanz beibehalten, in der es eingegeben wurde.
+Außerdem wird das Repository für die Autoren- und Veröffentlichungsumgebungen nicht freigegeben. Während ein Cluster von Veröffentlichungsinstanzen zu einem freigegebenen Veröffentlichungs-Repository führt, ist in der Veröffentlichungsinstanz eingegebener UGC nicht in der Autoreninstanz sichtbar, sodass keine Möglichkeit besteht, benutzergenerierte Inhalte von der Autoreninstanz aus zu verwalten. UGC wird nur im AEM Repository (JCR) der Instanz beibehalten, in der es eingegeben wurde.
 
 JSRP verwendet die Oak-Indizes für Abfragen.
 
@@ -118,21 +118,21 @@ Mithilfe der SRP-API führen alle SRP-Optionen vor allen CRUD-Vorgängen dieselb
 
 Die ACL-Prüfung verwendet eine Dienstprogrammmethode, die einen Pfad zurückgibt, der zum Überprüfen der auf die UGC der Ressource angewendeten Berechtigungen geeignet ist.
 
-Beispielcode finden Sie unter [SRP und UGC Essentials](srp-and-ugc.md) .
+Siehe [Grundlagen zu SRP und UGC](srp-and-ugc.md) für Beispielcode.
 
 ### Für nicht vorhandene Ressourcen (NERs) {#for-non-existing-resources-ners}
 
-Einige Communities-Komponenten sind in einem Skript enthalten und erfordern daher einen adressierbaren Sling-Knoten, um Communities-Funktionen zu unterstützen. [Einbezogene ](scf.md#add-or-include-a-communities-component) Komponenten werden als nicht vorhandene Ressourcen (NERs) bezeichnet.
+Einige Communities-Komponenten sind in einem Skript enthalten und erfordern daher einen adressierbaren Sling-Knoten, um Communities-Funktionen zu unterstützen. [Enthaltene Komponenten](scf.md#add-or-include-a-communities-component) werden als nicht vorhandene Ressourcen (NER) bezeichnet.
 
 Shadow-Knoten bieten einen adressierbaren Sling-Speicherort im Repository.
 
 >[!CAUTION]
 >
->Da der Shadow-Knoten mehrere Verwendungen hat, impliziert das Vorhandensein eines Shadow-Knotens *nicht*, dass die Komponente ein NER ist.
+>Da der Shadow-Knoten mehrere Verwendungen hat, bewirkt das Vorhandensein eines Shadow-Knotens, dass *not* bedeutet, dass die Komponente ein NER ist.
 
 ### Speicherort {#storage-location}
 
-Im Folgenden finden Sie ein Beispiel für einen Shadow-Knoten, der die [Kommentarkomponente](http://localhost:4502/content/community-components/en/comments.html) im [Community Components Guide](components-guide.md) verwendet:
+Im Folgenden finden Sie ein Beispiel für einen Shadow-Knoten mit der [Kommentarkomponente](http://localhost:4502/content/community-components/en/comments.html) im [Handbuch zu Community-Komponenten](components-guide.md):
 
 * Die Komponente befindet sich im lokalen Repository unter:
 
@@ -146,9 +146,9 @@ Unter dem Shadow-Knoten wird kein UGC gefunden.
 
 Das Standardverhalten besteht darin, Shadow-Knoten in einer Veröffentlichungsinstanz einzurichten, wenn die relevante Unterstruktur für Lese- oder Schreibvorgänge referenziert wird.
 
-Angenommen, die Bereitstellung ist [MSRP](msrp.md) mit einer TarMK-Veröffentlichungsfarm.
+Angenommen, die Bereitstellung lautet [MSRP](msrp.md) mit einer TarMK-Veröffentlichungsfarm.
 
-Wenn ein [member](users.md) UGC auf pub1 post (gespeichert in MongoDB), werden Shadow-Knoten in JCR auf pub1 erstellt.
+Wenn eine [Mitglied](users.md) postet UGC auf pub1 (gespeichert in MongoDB), werden Shadow-Knoten in JCR auf pub1 erstellt.
 
 Wenn das UGC zum ersten Mal in pub2 gelesen wird und nichts eingerichtet ist, besteht das Standardverhalten darin, die Shadow-Knoten zu erstellen.
 

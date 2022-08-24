@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
 exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
 source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3757'
 ht-degree: 100%
 
@@ -212,17 +212,17 @@ Der Standardwert ist „asynchron“.
 
 **Ursprüngliche Betreffzeile für Ergebnis-E-Mails verwenden:** Standardmäßig verwendet der Formular-Server die Werte, die in den Einstellungen „Betreff für Erfolgs-E-Mails“ und „Betreff für Fehler-E-Mails“ als Betreffzeile angegeben wurden, wenn E-Mail-Nachrichten zu Ergebnissen gesendet werden. Wenn Sie stattdessen dieselbe Betreffzeile wie in der ursprünglichen E-Mail, die an den Server gesendet wurde, verwenden möchten, wählen Sie diese Option.
 
-**Betreff für Erfolgs-E-Mails:** Nachdem Sie eine E-Mail an einen E-Mail-Endpunkt gesendet haben, um einen Prozess zu beginnen oder fortzusetzen, erhalten Sie vom AEM Forms-Server eine E-Mail mit einer Antwort. Wenn Ihre E-Mail erfolgreich gesendet wird, erhalten Sie eine Erfolgs-E-Mail. Wenn das Senden Ihrer E-Mail fehlschlägt, erhalten Sie eine Fehler-E-Mail, die Sie über den Fehler informiert. Mit dieser Einstellung können Sie die Betreffzeile von Erfolgs-E-Mails, die an diesen Endpunkt gesendet werden, angeben.
+**Betreff für Erfolgs-E-Mails:** Nachdem Sie eine E-Mail an einen E-Mail-Endpunkt gesendet haben, um einen Prozess zu beginnen oder fortzusetzen, erhalten Sie vom AEM Forms-Server eine E-Mail-Nachricht mit einer Antwort. Wenn Ihre E-Mail erfolgreich gesendet wird, erhalten Sie eine Erfolgs-E-Mail. Wenn das Senden Ihrer E-Mail fehlschlägt, erhalten Sie eine Fehler-E-Mail, die Sie über den Fehler informiert. Mit dieser Einstellung können Sie die Betreffzeile von Erfolgs-E-Mails, die an diesen Endpunkt gesendet werden, angeben.
 
-**Text für Erfolgs-E-Mails:** Ermöglicht es Ihnen, den Text der Erfolgs-E-Mails anzugeben, die für diesen Endpunkt gesendet werden.
+**Nachricht für Erfolgs-E-Mails:** Mit dieser Option können Sie den Text der E-Mail-Nachrichten zu Erfolgen angeben, die an diesen Endpunkt gesendet werden.
 
-**Betreffpräfix für Fehler-E-Mails:** Ermöglicht es Ihnen, den Text festzulegen, der am Anfang der Betreffzeile von Fehler-E-Mails verwendet wird, die für diesen Endpunkt gesendet werden.
+**Betreffpräfix für Fehler-E-Mails:** Mit dieser Option können Sie den Text am Anfang der Betreffzeile von E-Mail-Nachrichten zu Fehlern angeben, die an diesen Endpunkt gesendet werden.
 
-**Betreff für Fehler-E-Mails:** Ermöglicht es Ihnen, die Betreffzeile der für diesen Endpunkt gesendeten Fehler-E-Mail-Nachrichten anzugeben. Dieser Text wird nach dem Betreffpräfix der Fehler-E-Mails angezeigt.
+**Betreff für Fehler-E-Mails:** Mit dieser Option können Sie die Betreffzeile von E-Mail-Nachrichten zu Fehlern angeben, die an diesen Endpunkt gesendet werden. Dieser Text wird nach dem Präfix des Fehler-E-Mail-Betreffs angezeigt.
 
-**Text für Fehler-E-Mails:** Ermöglicht es Ihnen, die erste Zeile des Textes von Fehler-E-Mails anzugeben, die für diesen Endpunkt gesendet werden.
+**Nachricht für Fehler-E-Mails:** Mit dieser Option können Sie die erste Zeile im Nachrichtentext von Fehler-E-Mails angeben, die an diesen Endpunkt gesendet werden.
 
-**E-Mail-Übersichtsinfo:** Jede Erfolgs- oder Fehlermeldung enthält einen Abschnitt mit dem ursprünglichen E-Mail-Text, den Sie an den Formular-Server gesendet haben. Diese Einstellung legt den Text fest, der oberhalb dieses Abschnitts angezeigt wird.
+**E-Mail-Zusammenfassungsinfo:** Jede Erfolgs- oder Fehlernachricht enthält einen Abschnitt mit dem ursprünglichen E-Mail-Text, den Sie an den Formular-Server gesendet haben. Diese Einstellung legt den Text fest, der oberhalb dieses Abschnitts angezeigt wird.
 
 **Posteingang prüfen, bevor dieser Endpunkt erstellt/aktualisiert wird:** Wenn diese Option ausgewählt ist, prüft der Formular-Server, ob Ihre SMTP/POP3-Einstellungen korrekt sind, bevor der Endpunkt erstellt wird. Wenn Sie auf „Hinzufügen“ klicken, wird angezeigt, ob das Posteingangskonto gültig ist. Wenn diese Option nicht ausgewählt ist, erstellt der AEM Forms-Server den Endpunkt, ohne den Posteingang zu überprüfen.
 

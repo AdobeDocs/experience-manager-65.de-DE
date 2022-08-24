@@ -111,7 +111,7 @@ Das Mitglied kann seine E-Mail-Adresse bei der Profilaktualisierung ändern. I W
 
    (*Optional*) Wählen Sie aus vorhandenen Mitgliedergruppen aus, um das Mitglied dieser Gruppe hinzuzufügen.
 
-* Klicken Sie auf **[!UICONTROL Speichern]**
+* Wählen Sie **[!UICONTROL Speichern]** aus
 
 ### ALLGEMEIN - Kontoeinstellungen {#general-account-settings}
 
@@ -201,7 +201,7 @@ Die erforderlichen Felder zum Erstellen einer neuen veröffentlichungsseitigen M
 
    (*Optional*) Wählen Sie veröffentlichungsseitige Mitglieder aus, die als anfängliche Mitglieder der Gruppe aufgenommen werden sollen.
 
-* Klicken Sie auf **[!UICONTROL Speichern]**
+* Wählen Sie **[!UICONTROL Speichern]** aus
 
 ## Autorisierte Administratoren {#authorized-administrators}
 

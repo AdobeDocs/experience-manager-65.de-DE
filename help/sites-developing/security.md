@@ -41,7 +41,7 @@ Es ist wichtig, dass Sie diese Konfiguration an Ihre eigenen Sicherheitsanforder
 >
 >Wir empfehlen Ihnen dringend, immer mit der [von AEM bereitgestellten XSSAPI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/xss/XSSAPI.html) auf die XSS-Schutz-API zuzugreifen.
 
-Außerdem eine Webanwendungs-Firewall, z. B. [mod_security für Apache](https://www.modsecurity.org), kann eine zuverlässige, zentrale Kontrolle über die Sicherheit der Bereitstellungsumgebung bieten und vor zuvor nicht erkannten Cross-Site-Scripting-Angriffen schützen.
+Außerdem eine Webanwendungs-Firewall, z. B. [mod_security für Apache](https://www.modsecurity.org)kann eine zuverlässige, zentrale Kontrolle über die Sicherheit der Bereitstellungsumgebung bieten und vor zuvor nicht erkannten Cross-Site-Scripting-Angriffen schützen.
 
 ## Zugriff auf Cloud-Service-Informationen {#access-to-cloud-service-information}
 

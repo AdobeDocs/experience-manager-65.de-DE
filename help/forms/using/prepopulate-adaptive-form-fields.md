@@ -11,7 +11,7 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 29cbc330-7b3d-457e-ba4a-7ce6091f3836
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2169'
 ht-degree: 100%
 
@@ -242,7 +242,7 @@ Um den Vorbefüllungs-Service zu aktivieren, müssen Sie die standardmäßige Vo
 
 1. Geben Sie den Datenspeicherort oder einen Regex (regulärer Ausdruck) für die **Datendateispeicherorte** ein. Beispiele für gültige Datendateispeicherorte:
 
-   * file:///C:/Users/public/Document/Prefill/.*
+   * file:///C:/Users/public/Document/Prefill/.&#42;
    * https://localhost:8000/somesamplexmlfile.xml
    >[!NOTE]
    >
@@ -388,4 +388,4 @@ Sie können den AEM Forms-Server so konfigurieren, dass die Datenzusammenführun
 
    * Zum Deaktivieren führen Sie folgenden cURL-Befehl aus:
       `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
-   Um die Option zum Vorbefüllen der Daten auf dem Client vollständig nutzen zu können, aktualisieren Sie den Vorbefüllungs-Service, um [FileAttachmentMap](https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) und [CustomContext](https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) zurückzugeben.
+   Um die Option zum Vorbefüllen der Daten auf dem Client vollständig nutzen zu können, aktualisieren Sie den Vorbefüllungs-Service, um [FileAttachmentMap](https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) und [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) zurückzugeben.

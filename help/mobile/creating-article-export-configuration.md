@@ -1,8 +1,8 @@
 ---
 title: Erstellen der Konfiguration von Artikelexporten
-seo-title: Erstellen der Konfiguration von Artikelexporten
+seo-title: Creating Article Export Configuration
 description: Auf dieser Seite erfahren Sie mehr über den Export von Inhalten aus Adobe Experience Manager (AEM) zum Hochladen in AEM Mobile.
-seo-description: Auf dieser Seite erfahren Sie mehr über den Export von Inhalten aus Adobe Experience Manager (AEM) zum Hochladen in AEM Mobile.
+seo-description: Follow this page to learn about exporting content from Adobe Experience Manager (AEM) for upload to AEM Mobile.
 uuid: 089bc15b-669e-4623-bdbb-fd9abf46e098
 contentOwner: User
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: bc681589-5d46-44cd-888d-b0722a2fd006
 exl-id: 5295f383-3b46-4456-9177-65de68e39a85
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 6%
+source-wordcount: '299'
+ht-degree: 7%
 
 ---
 
-# Erstellen der Artikelexportkonfiguration{#creating-article-export-configuration}
+# Erstellen der Konfiguration von Artikelexporten{#creating-article-export-configuration}
 
 >[!NOTE]
 >
@@ -27,19 +27,19 @@ ht-degree: 6%
 >
 >**Voraussetzung**:
 >
->Bevor Sie mehr über das Erstellen und Ändern freigegebener Ressourcen erfahren, finden Sie unter [Inhaltssynchronisierung](/help/mobile/mobile-ondemand-contentsync.md) grundlegende Konzepte.
+>Bevor Sie mehr über das Erstellen und Ändern freigegebener Ressourcen erfahren, lesen Sie [Inhaltssynchronisierung](/help/mobile/mobile-ondemand-contentsync.md) um die grundlegenden Konzepte zu verstehen.
 
 AEM Mobile-Benutzer verwenden die Inhaltssynchronisierung, um Live-Inhalte für die Verwendung in mobilen Apps in statische Inhalte zu exportieren. Dieser Export erfolgt beim Hochladen von Inhalten in Mobile On-Demand Services von AEM Mobile.
 
-Die in der obigen Tabelle erwähnte Eigenschaft ***dps-exportTemplate*** definiert den Pfad zu den Exportkonfigurationen der App. Legen Sie diese Eigenschaft fest, um freigegebene Ressourcen zu erstellen und zu ändern.
+Die Eigenschaft ***dps-exportTemplate*** definiert den Pfad zu den Exportkonfigurationen der App. Legen Sie diese Eigenschaft fest, um freigegebene Ressourcen zu erstellen und zu ändern.
 
 Die folgenden Ressourcen beschreiben den Export von Inhalten aus Adobe Experience Manager (AEM) zum Hochladen in AEM Mobile.
 
 Artikel enthalten Inhalte, die exportiert und hochgeladen werden müssen. Ein Teil dieses Inhalts kann zwischen Artikeln freigegeben werden.
 
-Verwenden Sie [ContentSync](/help/mobile/mobile-ondemand-contentsync.md), um den Inhalt zusammenzustellen und ein ***Shared Resources*** -Paket zu erstellen.
+Verwendung [ContentSync](/help/mobile/mobile-ondemand-contentsync.md) , um den Inhalt zu sammeln und eine ***Freigegebene Ressourcen*** Paket.
 
-Die Konfiguration ContentSync unter **&lt;dps-exportTemplate>/dps-article>** sollte so konfiguriert werden, dass alle Inhalte und Artikel exportiert werden, die für das statische Rendering der Eigenschaften auf dem Gerät erforderlich sind.
+Die Konfiguration von ContentSync unter **&lt;dps-exporttemplate>/dps-article>** sollte so konfiguriert werden, dass alle Inhalte und Artikel exportiert werden, die für das statische Rendering der Eigenschaften auf dem Gerät erforderlich sind.
 
 >[!CAUTION]
 >
@@ -48,9 +48,7 @@ Die Konfiguration ContentSync unter **&lt;dps-exportTemplate>/dps-article>** sol
 >* den Beispielinhalt installiert hat
 >* AEM
 >* kein konfigurierter benutzerdefinierter Kontext oder ein anderer Port
-
 >
-
 
 
 Informationen zum Anzeigen einer gemeinsam genutzten Beispielressource finden Sie in den folgenden Schritten:

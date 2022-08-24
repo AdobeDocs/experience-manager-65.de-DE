@@ -117,7 +117,7 @@ Dieser Ansatz kann verwendet werden, wenn die Auswirkungen auf die Dauer und die
 >
 >Weitere Informationen zu diesem Szenario finden Sie unter [Online-Neuindizierung - SegmentNodeStore - Die AEM-Instanz wird ausgeführt](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoretheaeminstanceisrunning).
 
-Die Online-Neuindizierung von TarMK mithilfe von oak-run.jar ist schneller als die oben beschriebene [Online-Neuindizierung für TarMK](#onlinere-indexingfortarmk). Sie erfordert jedoch auch die Ausführung während eines Wartungsfensters. wobei darauf hingewiesen wird, dass das Fenster kürzer wird und weitere Schritte erforderlich sind, um die Neuindizierung durchzuführen.
+Die Online-Neuindizierung von TarMK mithilfe von oak-run.jar ist schneller als die [Online-Neuindizierung für TarMK](#onlinere-indexingfortarmk) weiter oben beschrieben. Sie erfordert jedoch auch die Ausführung während eines Wartungsfensters. wobei darauf hingewiesen wird, dass das Fenster kürzer wird und weitere Schritte erforderlich sind, um die Neuindizierung durchzuführen.
 
 >[!NOTE]
 >
@@ -165,7 +165,7 @@ Die Out-of-Band-Neuindizierung minimiert die Auswirkung der Neuindizierung auf v
 >
 >ACS Ensure Index ist ein Community-Projekt, das nicht vom Adobe-Support unterstützt wird.
 
-Dadurch kann die Versandindexdefinition über das Inhaltspaket erfolgen, was später zu einer Neuindizierung führt, indem die Neuindizierungskennzeichnung auf `true` gesetzt wird. Dies funktioniert bei kleineren Setups, bei denen die Neuindizierung nicht lange dauert.
+Dadurch kann die Versandindexdefinition über das Inhaltspaket erfolgen, was später zu einer Neuindizierung führt, indem die Neuindizierungskennzeichnung auf `true`. Dies funktioniert bei kleineren Setups, bei denen die Neuindizierung nicht lange dauert.
 
 Weitere Informationen finden Sie in der [Dokumentation zu ACS Ensure Index](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html).
 

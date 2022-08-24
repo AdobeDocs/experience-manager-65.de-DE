@@ -2,7 +2,7 @@
 title: Tutorials
 seo-title: Tutorials
 description: Beispiele zur Unterstützung beim Lernen und Arbeiten mit dem Social Component Framework (SCF) von AEM Communities
-seo-description: Beispiele zur Unterstützung beim Lernen und Arbeiten mit dem Social Component Framework (SCF) von AEM Communities
+seo-description: Examples to help in learning and working with AEM Communities social component framework (SCF)
 uuid: c99a9d56-9630-4a79-bcd7-a15f01d6c13d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,14 +12,14 @@ discoiquuid: a420b0b1-65f4-4103-a7c9-263657c7870f
 exl-id: 061d3b1b-7ceb-4e57-8183-2062a76173f1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 5%
+source-wordcount: '253'
+ht-degree: 7%
 
 ---
 
 # Tutorials {#tutorials}
 
-Dies sind Beispiele, die Ihnen beim Lernen und Arbeiten mit AEM 6.1 Communities [Social Component Framework (SCF)](scf.md) helfen.
+Dies sind Beispiele für das Lernen und die Arbeit mit AEM 6.1 Communities [Social Component Framework (SCF)](scf.md).
 
 ## Clientseitige Anpassung {#client-side-customization}
 
@@ -35,9 +35,9 @@ Siehe auch:
 
 ## Serverseitige Anpassung {#server-side-customization}
 
-Siehe auch [SCF Server-seitige Anpassung](server-customize.md).
+Siehe auch [Serverseitige SCF-Anpassung](server-customize.md).
 
-Beispielcode ist im Repository [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) verfügbar:
+Beispielcode ist im Abschnitt [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) repository:
 
 * [Beispiel für SCF-Komponenten anpassen](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
 
@@ -61,13 +61,13 @@ Beispielcode ist im Repository [Adobe Marketing Cloud GitHub](https://github.com
 
 ## Demobenutzer {#demo-users}
 
-Das Geometrixx samples-Paket enthält Demobenutzer. Es gibt oft einen Erfahrungsunterschied zwischen einem Besucher (nicht angemeldet) oder einem Mitglied (angemeldet). Solange die Geometrixx samples-Pakete noch installiert sind, können Sie diese Benutzer verwenden, um einen angemeldeten Status zu simulieren, wenn Sie mit dem [Community Components Guide](components-guide.md) arbeiten.
+Das Geometrixx samples-Paket enthält Demobenutzer. Es gibt oft einen Unterschied im Erlebnis zwischen einem Besucher (nicht angemeldet) oder einem Mitglied (angemeldet). Solange die Geometrixx samples-Pakete installiert bleiben, können Sie diese Benutzer verwenden, um einen angemeldeten Status zu simulieren, wenn Sie mit der [Handbuch zu Community-Komponenten](components-guide.md).
 
-Eine vollständige Liste der Demobenutzer finden Sie in der Leiste unter **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Sicherheit > Benutzer]**. Oder verwenden Sie die klassische Benutzeroberfläche [Sicherheitskonsole](http://localhost:4502/useradmin) zum Verwalten von Benutzern und Gruppen.
+Eine vollständige Liste der Demobenutzer finden Sie unter Verwendung der Leiste zu **[!UICONTROL Instrumente]** > **[!UICONTROL Aktivitäten]** > **[!UICONTROL Sicherheit > Benutzer]**. Oder verwenden Sie die klassische Benutzeroberfläche [Sicherheitskonsole](http://localhost:4502/useradmin) für die Verwaltung von Benutzern und Gruppen.
 
-Wenn eine [Community-Site](getting-started.md) erstellt wurde, können Demobenutzer [Community-Benutzergruppen](users.md) zugewiesen werden.
+Wenn eine [Community-Site wurde erstellt](getting-started.md), ist es möglich, Demobenutzer [Community-Benutzergruppen](users.md).
 
-***Benutzer-ID* /  *Kennwort***:
+***Benutzer-ID* / *password***:
 
 * aaron.mcdonald@mailinator.com / password
 * emily.andrews@mailinator.com / password

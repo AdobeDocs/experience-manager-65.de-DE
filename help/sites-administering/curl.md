@@ -1,8 +1,8 @@
 ---
 title: Verwenden von cURL mit AEM
-seo-title: Verwenden von cURL mit AEM
+seo-title: Using cURL with AEM
 description: Erfahren Sie, wie Sie mit cURL mit AEM verwenden.
-seo-description: Erfahren Sie, wie Sie mit cURL mit AEM verwenden.
+seo-description: Learn how to use cURL with AEM.
 uuid: 771b9acc-ff3a-41c9-9fee-7e5d2183f311
 contentOwner: Silviu Raiman
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
 exl-id: e3f018e6-563e-456f-99d5-d232f1a4aa55
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '878'
 ht-degree: 78%
 
 ---
@@ -23,7 +23,7 @@ Administratoren müssen häufig auszuführende Aufgaben in einem System oft auto
 
 Aufgrund der RESTful-Eigenschaft des Sling-Frameworks, auf dem AEM erstellt wird, können die meisten Aufgaben mit einem URL-Aufruf ausgeführt werden. Solche URL-Aufrufe können mit cURL ausgeführt werden, was für Administratoren hilfreich ist.
 
-## Was ist cURL?  {#what-is-curl}
+## Was ist cURL? {#what-is-curl}
 
 Bei cURL handelt es sich um ein Open-Source-Befehlszeilentool für die URL-Manipulation. Es unterstützt eine breite Palette von Internetprotokollen, darunter HTTP, HTTPS, FTP, FTPS, SCP, SFTP, TFTP, LDAP, DAP, DICT, TELNET, FILE, IMAP, POP3, SMTP und RTSP.
 
@@ -35,7 +35,7 @@ Da das Sling-Framework, auf dem AEM aufsetzt, auf dem REST-Prinzip basiert, läs
 >
 >Jeder AEM-Befehl, der über cURL ausgeführt wird, muss in AEM genau wie jeder Benutzer autorisiert werden. Bei der Ausführung eines AEM-Befehls mit cURL werden alle ACLs und Zugriffsrechte eingehalten.
 
-## Herunterladen von cURL  {#downloading-curl}
+## Herunterladen von cURL {#downloading-curl}
 
 Bei MacOS und einigen Linux-Distributionen ist cURL standardmäßig enthalten. Das Tool ist jedoch für die meisten Betriebssysteme erhältlich. Die neuesten Downloads finden Sie unter [https://curl.haxx.se/download.html](https://curl.haxx.se/download.html).
 
@@ -49,7 +49,7 @@ Um zu ermitteln, welchen Befehl Sie für den gewünschten Vorgang benötigen, er
 
 Am Beispiel der Erstellung einer neuen Seite im Chrome-Browser werden die dafür nötigen Schritte nachfolgend beschrieben.
 
-1. Bereiten Sie die Aktion vor, die Sie in AEM auslösen möchten. In diesem Fall haben wir das Ende des Assistenten **Seite erstellen** erreicht, aber noch nicht auf **Erstellen** geklickt.
+1. Bereiten Sie die Aktion vor, die Sie in AEM auslösen möchten. In diesem Fall haben wir das Ende des **Seite erstellen** Assistent, aber noch nicht geklickt haben **Erstellen**.
 
    ![chlimage_1-66](assets/chlimage_1-66a.png)
 
@@ -62,7 +62,7 @@ Am Beispiel der Erstellung einer neuen Seite im Chrome-Browser werden die dafür
 
    ![chlimage_1-68](assets/chlimage_1-68a.png)
 
-1. Kopieren Sie den Befehl cURL in einen Texteditor, entfernen Sie alle Header aus dem Befehl, die mit `-H` beginnen (in der Abbildung unten blau markiert) und fügen Sie den richtigen Authentifizierungsparameter hinzu, z. B. `-u <user>:<password>`.
+1. Kopieren Sie den Befehl cURL in einen Texteditor und entfernen Sie alle Header aus dem Befehl, die mit `-H` (in der Abbildung unten blau hervorgehoben) und fügen Sie den entsprechenden Authentifizierungsparameter hinzu, z. B. `-u <user>:<password>`.
 
    ![chlimage_1-69](assets/chlimage_1-69a.png)
 
@@ -78,7 +78,7 @@ Hier finden Sie eine Liste an cURL-Befehlen für gängige administrative und bet
 >
 >Bei den folgenden Beispielen wird vorausgesetzt, dass AEM auf dem `localhost` an Port `4502` ausgeführt wird und den Benutzer `admin` mit dem Kennwort `admin` nutzt. Zusätzliche Befehlsplatzhalter sind in eckigen Klammern angefügt.
 
-### Paketverwaltung  {#package-management}
+### Paketverwaltung {#package-management}
 
 #### Alle installierten Pakete auflisten
 
@@ -216,11 +216,11 @@ curl -u <user>:<password> -FdeleteAuthorizable= http://localhost:4502/home/group
 
 ### Sicherung {#backup}
 
-Weitere Informationen finden Sie unter [Backup and Restore](/help/sites-administering/backup-and-restore.md#automating-aem-online-backup) .
+Siehe [Sicherung und Wiederherstellung](/help/sites-administering/backup-and-restore.md#automating-aem-online-backup) für Details.
 
 ### OSGi {#osgi}
 
-#### Starten eines Bundles  {#starting-a-bundle}
+#### Starten eines Bundles {#starting-a-bundle}
 
 ```shell
 curl -u <user>:<password> -Faction=start http://localhost:4502/system/console/bundles/<bundle-name>
@@ -234,7 +234,7 @@ curl -u <user>:<password> -Faction=stop http://localhost:4502/system/console/bun
 
 ### Dispatcher {#dispatcher}
 
-#### Annullieren des Caches  {#invalidate-the-cache}
+#### Annullieren des Caches {#invalidate-the-cache}
 
 ```shell
 curl -H "CQ-Action: Activate" -H "CQ-Handle: /content/test-site/" -H "CQ-Path: /content/test-site/" -H "Content-Length: 0" -H "Content-Type: application/octet-stream" http://localhost:4502/dispatcher/invalidate.cache
@@ -281,35 +281,35 @@ curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:450
 
 ### Communities {#communities}
 
-#### Zuteilen und Entziehen von Abzeichen  {#assign-and-revoke-badges}
+#### Zuteilen und Entziehen von Abzeichen {#assign-and-revoke-badges}
 
-Weitere Informationen finden Sie unter [Communities-Scoring und -Abzeichen](/help/communities/implementing-scoring.md#assign-and-revoke-badges) .
+Siehe [Communities-Scoring und -Abzeichen](/help/communities/implementing-scoring.md#assign-and-revoke-badges) für Details.
 
-Weitere Informationen finden Sie unter [Grundlagen zu Scoring und Abzeichen](/help/communities/configure-scoring.md#example-setup) .
+Siehe [Grundlagen zu Scoring und Abzeichen](/help/communities/configure-scoring.md#example-setup) für Details.
 
 #### Erneute MSRP-Indizierung {#msrp-reindexing}
 
-Weitere Informationen finden Sie unter [MSRP - MongoDB Storage Resource Provider](/help/communities/msrp.md#running-msrp-reindex-tool-using-curl-command) .
+Siehe [MSRP - MongoDB Storage Resource Provider](/help/communities/msrp.md#running-msrp-reindex-tool-using-curl-command) für Details.
 
 ### Sicherheit {#security}
 
-#### Aktivieren und Deaktivieren von CRXDE Lite  {#enabling-and-disabling-crx-de-lite}
+#### Aktivieren und Deaktivieren von CRXDE Lite {#enabling-and-disabling-crx-de-lite}
 
-Weitere Informationen finden Sie unter [Aktivieren der CRXDE Lite in AEM](/help/sites-administering/enabling-crxde-lite.md) .
+Siehe [Aktivieren der CRXDE Lite in AEM](/help/sites-administering/enabling-crxde-lite.md) für Details.
 
 ### Datenspeicherbereinigung {#data-store-garbage-collection}
 
-Weitere Informationen finden Sie unter [Datenspeicherbereinigung](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) .
+Siehe [Datenspeicherbereinigung](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) für Details.
 
 ### Integrieren von Analytics und Target {#analytics-and-target-integration}
 
-Weitere Informationen finden Sie unter [Anmelden für Adobe Analytics und Adobe Target](/help/sites-administering/opt-in.md#configuring-the-setup-and-provisioning-via-script) .
+Siehe [Anmelden für Adobe Analytics und Adobe Target](/help/sites-administering/opt-in.md#configuring-the-setup-and-provisioning-via-script) für Details.
 
 ### Single Sign-On {#single-sign-on}
 
 #### Senden eines Test-Headers {#send-test-header}
 
-Weitere Informationen finden Sie unter [Single Sign On](/help/sites-deploying/single-sign-on.md) .
+Siehe [Single Sign-On](/help/sites-deploying/single-sign-on.md) für Details.
 
 ## Gängige cURL-Befehle zur Inhaltsbearbeitung für AEM {#common-content-manipulation-aem-curl-commands}
 
@@ -359,7 +359,7 @@ curl -u <user>:<password> -F cmd=copyPage -F destParentPath=/path/to/destination
 
 ### Workflows {#workflows}
 
-Weitere Informationen finden Sie unter [Programmgesteuerte Interaktion mit Workflows](/help/sites-developing/workflows-program-interaction.md) .
+Siehe [Programmgesteuerte Interaktion mit Workflows](/help/sites-developing/workflows-program-interaction.md) für Details.
 
 ### Sling-Inhalte {#sling-content}
 
@@ -407,4 +407,4 @@ curl -u <user>:<password> -F "*=@test.properties;type=text/plain" http://localho
 
 ### Asset-Bearbeitung {#asset-manipulation}
 
-Weitere Informationen finden Sie unter [Assets-HTTP-API](/help/assets/mac-api-assets.md) .
+Siehe [Assets-HTTP-API](/help/assets/mac-api-assets.md) für Details.

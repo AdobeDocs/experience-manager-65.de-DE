@@ -1,8 +1,8 @@
 ---
 title: Veröffentlichen von Ordnern in Brand Portal
-seo-title: Veröffentlichen von Ordnern in Brand Portal
+seo-title: Publish folders to Brand Portal
 description: Es wird beschrieben, wie Sie Ordner in Brand Portal veröffentlichen und die Veröffentlichung aufheben.
-seo-description: Es wird beschrieben, wie Sie Ordner in Brand Portal veröffentlichen und die Veröffentlichung aufheben.
+seo-description: Learn how to publish and unpublish folders to Brand Portal.
 uuid: 350beb85-c0fb-4a1c-8597-c03592c02d3d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -15,8 +15,8 @@ role: User
 exl-id: 92a156f0-ce2a-4c83-bd57-0c29efbf784f
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 67%
+source-wordcount: '566'
+ht-degree: 66%
 
 ---
 
@@ -30,20 +30,20 @@ Wenn Sie nachfolgende Änderungen am ursprünglichen Asset oder Ordner in AEM As
 
 ## Veröffentlichen von Ordnern in Brand Portal {#publish-folders-to-brand-portal-1}
 
-1. Bewegen Sie in der AEM Assets-Benutzeroberfläche den Mauszeiger über den gewünschten Ordner und wählen Sie in den Schnellaktionen die Option **Publish** aus.
+1. Bewegen Sie in der AEM Assets-Benutzeroberfläche den Mauszeiger über den gewünschten Ordner und wählen Sie **Veröffentlichen** aus den Schnellaktionen.
 
    Alternativ können Sie den gewünschten Ordner auswählen und den weiteren Schritten folgen.
 
    ![publish2bp](assets/publish2bp.png)
 
-1. **Ordner jetzt veröffentlichen** 
+1. **Ordner jetzt veröffentlichen**
 
    Um die ausgewählten Ordner in Brand Portal zu veröffentlichen, führen Sie einen der folgenden Schritte aus:
 
-   * Wählen Sie in der Symbolleiste **Quick Publish** aus. Wählen Sie dann im Menü **In Brand Portal veröffentlichen** aus.
+   * Wählen Sie in der Symbolleiste **Quick Publish** aus. Wählen Sie dann im Menü die Option **In Brand Portal veröffentlichen**.
 
    * Wählen Sie in der Symbolleiste **Veröffentlichung verwalten** aus.
-   1. Wählen Sie **Aktion** **Auf Brand Portal veröffentlichen** aus, wählen Sie **Planung** **Jetzt** aus und klicken Sie auf **Weiter**.
+   1. Von **Aktion** select **In Brand Portal veröffentlichen**, von **Planung** select **Jetzt** und klicken Sie auf **Weiter.**
    1. Bestätigen Sie Ihre Auswahl in **Umfang** und klicken Sie auf **In Brand Portal veröffentlichen**.
 
    Eine Meldung erscheint, die besagt, dass der Ordner zur Veröffentlichung in Brand Portal in die Warteschlange gestellt wurde. Melden Sie sich bei der Brand Portal-Benutzeroberfläche an, um den veröffentlichten Ordner zu sehen.
@@ -52,8 +52,8 @@ Wenn Sie nachfolgende Änderungen am ursprünglichen Asset oder Ordner in AEM As
 
    So planen Sie die Veröffentlichung von Asset-Ordnern in Brand Portal auf einen späteren Zeitpunkt:
 
-   1. Nachdem Sie die zu veröffentlichenden Assets/Ordner ausgewählt haben, wählen Sie in der Symbolleiste oben **Veröffentlichung verwalten** aus.
-   1. Wählen Sie unter **Aktion** **Auf Brand Portal veröffentlichen** und unter **Planung** **Später** aus.
+   1. Nachdem Sie die Assets/Ordner zur Veröffentlichung ausgewählt haben, wählen Sie **Veröffentlichung verwalten** aus der Symbolleiste am oberen Rand.
+   1. Von **Aktion** select **In Brand Portal veröffentlichen**, von **Planung** select **Später**.
 
       ![publishlaterbp](assets/publishlaterbp.png)
 
@@ -82,7 +82,7 @@ Sie können die Veröffentlichung der Ordner in Brand Portal sofort rückgängig
    So können Sie die Veröffentlichung des gewünschten Ordners in Brand Portal schnell rückgängig machen:
 
    1. Wählen Sie in der Symbolleiste **Veröffentlichung verwalten** aus.
-   1. Wählen Sie unter **Aktion** **Veröffentlichung in Brand Portal rückgängig machen**, unter **Planung** **Jetzt** und klicken Sie auf **Weiter**.
+   1. Von **Aktion** select **Veröffentlichung in Brand Portal rückgängig machen**, von **Planung** select **Jetzt** und klicken Sie auf **Weiter.**
    1. Bestätigen Sie Ihre Auswahl in **Umfang** und klicken Sie auf **Veröffentlichung in Brand Portal rückgängig machen**.
 
    ![confirm-unpublish](assets/confirm-unpublish.png)
@@ -92,7 +92,7 @@ Sie können die Veröffentlichung der Ordner in Brand Portal sofort rückgängig
    So können Sie die Veröffentlichung eines Ordners in Brand Portal zu einem späteren Zeitpunkt rückgängig machen:
 
    1. Wählen Sie in der Symbolleiste **Veröffentlichung verwalten** aus.
-   1. Wählen Sie unter **Aktion** **Veröffentlichung in Brand Portal rückgängig machen** und unter **Planung** **Später** aus.
+   1. Von **Aktion** select **Veröffentlichung in Brand Portal rückgängig machen** und von **Planung** select **Später**.
    1. Wählen Sie ein **Aktivierungsdatum** aus und geben Sie die Zeit an. Klicken Sie auf **Weiter**.
    1. Bestätigen Sie Ihre Auswahl unter **Umfang** und klicken Sie auf **Weiter**.
    1. Geben Sie einen **Workflow-Titel** in **Workflows** an. Klicken Sie auf **Veröffentlichung später rückgängig machen.**

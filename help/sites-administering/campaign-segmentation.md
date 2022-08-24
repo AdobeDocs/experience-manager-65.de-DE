@@ -1,8 +1,8 @@
 ---
 title: Konfigurieren der Segmentierung
-seo-title: Konfigurieren der Segmentierung
+seo-title: Configuring Segmentation
 description: Erfahren Sie, wie Sie Segmentierungen für AEM-Kampagnen konfigurieren können.
-seo-description: Erfahren Sie, wie Sie Segmentierungen für AEM-Kampagnen konfigurieren können.
+seo-description: Learn how to configure segmentation for AEM Campaign.
 uuid: 604ca34d-cdb9-49ff-8f75-02a44b60a8a2
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,12 +13,12 @@ docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1070'
 ht-degree: 83%
 
 ---
 
-# Konfigurieren der Segmentierung  {#configuring-segmentation}
+# Konfigurieren der Segmentierung {#configuring-segmentation}
 
 >[!NOTE]
 >
@@ -32,15 +32,15 @@ Diese Segmente werden dann verwendet, um einem Besucher gezielt bestimmte Inhalt
 
 Mit AEM können Sie Segmente, Teaser und Kampagnen auf einfache Weise erstellen und aktualisieren. Außerdem können Sie damit die Ergebnisse Ihrer Definitionen überprüfen.
 
-Der **Segment-Editor** ermöglicht Ihnen die einfache Definition eines Segments:
+Die **Segment-Editor** ermöglicht Ihnen die einfache Definition eines Segments:
 
 ![](assets/segmenteditor.png)
 
 Sie können jedes Segment **bearbeiten**, um einen **Titel**, eine **Beschreibung** und einen Faktor **Verstärken** anzugeben. Mithilfe des Sidekicks können Sie **UND**- und **ODER**-Container zum Definieren der **Segmentlogik** hinzufügen und anschließend die erforderlichen **Segmenteigenschaften** zur Definition der Auswahlkriterien hinzufügen.
 
-## Faktor „Verstärken“  {#boost-factor}
+## Faktor „Verstärken“ {#boost-factor}
 
-Jedes Segment verfügt über einen Parameter **Boost** , der als Gewichtungsfaktor verwendet wird. Eine höhere Zahl zeigt an, dass das Segment gegenüber einem Segment mit einer niedrigeren Zahl bevorzugt wird.
+Jedes Segment verfügt über eine **Verstärken** Parameter, der als Gewichtungsfaktor verwendet wird; Eine höhere Zahl zeigt an, dass das Segment gegenüber einem Segment mit einer niedrigeren Zahl bevorzugt wird.
 
 * Mindestwert: `0`
 * Höchstwert: `1000000`
@@ -86,7 +86,7 @@ Die folgenden Segmenteigenschaften sind standardmäßig verfügbar und können v
   </tr>
   <tr>
    <td> Script</td>
-   <td>Zu bewertender JavaScript-Ausdruck.<br /> </td>
+   <td>JavaScript-Ausdruck, der ausgewertet werden soll.<br /> </td>
   </tr>
   <tr>
    <td> Segment-Referenz <br /> </td>
@@ -117,15 +117,15 @@ Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird dieses Segment au
 
 >[!NOTE]
 >
->Eigenschaften mit dem Suffix **_i18n** werden durch ein Skript festgelegt, das Teil der clientlib der Personalisierungsbenutzeroberfläche ist. Alle benutzeroberflächenbezogenen clientlibs werden nur dann in der Autoreninstanz geladen, wenn die Benutzeroberfläche in der Veröffentlichungsinstanz nicht benötigt wird.
+>Eigenschaften mit der **_i18n** -Suffix werden durch ein Skript festgelegt, das Teil der clientlib der Personalisierungsbenutzeroberfläche ist. Alle benutzeroberflächenbezogenen clientlibs werden nur dann in der Autoreninstanz geladen, wenn die Benutzeroberfläche in der Veröffentlichungsinstanz nicht benötigt wird.
 >
->Daher ist es beim Erstellen eines Segments mit solchen Eigenschaften normalerweise erforderlich, sich beispielsweise auf **browserFamily** anstatt auf **browserFamily_i18n** zu verlassen.
+>Daher ist es bei der Erstellung eines Segments mit solchen Eigenschaften normalerweise erforderlich, sich auf **browserFamily** für Instanz anstelle von **browserFamily_i18n**.
 
 ### Erstellen eines neuen Segments {#creating-a-new-segment}
 
 So legen Sie Ihr neues Segment fest:
 
-1. Wählen Sie in der Leiste **Tools > Vorgänge > Konfiguration** aus.
+1. Wählen Sie in der Leiste **Tools > Vorgänge > Konfiguration**.
 1. Klicken Sie auf die Seite **Segmentierung** im linken Bereich und navigieren Sie zum erforderlichen Ort.
 1. Erstellen Sie eine [neue Seite](/help/sites-authoring/editing-content.md#creatinganewpage) mithilfe der Vorlage **Segment**.
 1. Öffnen Sie die neue Seite, um den Segment-Editor anzuzeigen:
@@ -144,7 +144,7 @@ So legen Sie Ihr neues Segment fest:
 
 1. Fügen Sie bei Bedarf weitere Eigenschaften hinzu. Sie können boolesche Ausdrücke anhand der **UND-Container-** und **ODER-Containerkomponenten** hinzufügen, die unter **Segmentlogik** zu finden sind. Mit dem Segment-Editor können Sie nicht mehr benötigte Eigenschaften oder Container löschen oder diese an neue Positionen innerhalb der Anweisung ziehen.
 
-### Verwenden von UND- und ODER-Containern   {#using-and-and-or-containers}
+### Verwenden von UND- und ODER-Containern {#using-and-and-or-containers}
 
 Sie können in AEM komplexe Segmente erstellen. Es ist hilfreich, sich einige grundlegende Punkte bewusst zu machen:
 
@@ -163,12 +163,12 @@ Da der Hauptoperator „ODER“ lautet, müssen Sie mit einem **ODER-Container**
 
 ![](assets/screen_shot_2012-02-02at105145am.png)
 
-## Testen der Anwendung eines Segments   {#testing-the-application-of-a-segment}
+## Testen der Anwendung eines Segments {#testing-the-application-of-a-segment}
 
 Sobald das Segment definiert wurde, können die potenziellen Ergebnisse mithilfe des **[ClientContext](/help/sites-administering/client-context.md)** getestet werden:
 
 1. Wählen Sie das zu testende Segment aus.
-1. Drücken Sie **[Strg-Alt-C](/help/sites-authoring/page-authoring.md#keyboardshortcuts)**, um den **[ClientContext](/help/sites-administering/client-context.md)** zu öffnen, der die gesammelten Daten anzeigt. Zu Testzwecken können Sie **bestimmte Werte bearbeiten** oder **Laden** ein anderes Profil, um die Auswirkungen dort zu sehen.
+1. Drücken Sie **[Strg-Alt-C](/help/sites-authoring/page-authoring.md#keyboardshortcuts)**, um den **[ClientContext](/help/sites-administering/client-context.md)** zu öffnen, der die gesammelten Daten anzeigt. Zu Testzwecken können Sie **Bearbeiten** bestimmte Werte oder **Laden** ein weiteres Profil, um die Auswirkungen dort zu sehen.
 
 1. Je nach den definierten Eigenschaften können die zu der aktuellen Seite verfügbaren Daten mit der Segmentdefinition übereinstimmen oder nicht. Der Status der Übereinstimmung wird unter der Definition angezeigt.
 
@@ -190,6 +190,6 @@ In der QuickInfo zum Teaser-Absatz werden die angewendeten Segmente angezeigt so
 
 ![](assets/chlimage_1-47.png)
 
-### Verwenden Ihres Segments   {#using-your-segment}
+### Verwenden Ihres Segments {#using-your-segment}
 
 Die Segmente werden aktuell innerhalb von [Kampagnen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) verwendet. Sie werden zur Steuerung des tatsächlichen Inhalts verwendet, der spezifischen Zielgruppen angezeigt wird. Weitere Informationen finden Sie unter [Segmente](/help/sites-authoring/segmentation-overview.md).

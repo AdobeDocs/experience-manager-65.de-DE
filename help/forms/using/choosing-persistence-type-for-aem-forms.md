@@ -12,7 +12,7 @@ discoiquuid: a972fb35-38a7-4b83-99bd-6a6dddf8043b
 role: Admin
 exl-id: 621fe107-f4ac-42b1-8c7b-8abbcaac7380
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 100%
 
@@ -42,13 +42,13 @@ In der folgenden Tabelle werden alle unterstützten Persistenztypen zusammen mit
    <th><strong>Eigenständige Einrichtung</strong></th>
    <td>Unterstützt<br /> </td>
    <td>Unterstützt</td>
-   <td>Unterstützt</td>
+   <td>Unterstützt </td>
   </tr>
   <tr>
    <th><strong>Cluster-Einrichtung</strong></th>
    <td>Nicht unterstützt</td>
    <td>Unterstützt</td>
-   <td>Unterstützt</td>
+   <td>Unterstützt </td>
   </tr>
   <tr>
    <th><strong>Lizenzkosten</strong></th>

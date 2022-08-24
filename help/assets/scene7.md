@@ -26,7 +26,7 @@ Sie können Experience Manager-Assets anzeigen, die in Dynamic Media Classic in 
 
 * Zoom
 * Flyout
-* Video
+* Video   
 * Bildvorlage
 * Bild
 
@@ -62,7 +62,7 @@ Die folgenden Dynamic Media Classic-Komponenten sind in Experience Manager verf�
 * Flyout (Zoom)
 * Bildvorlage
 * Bild
-* Video
+* Video   
 
 >[!NOTE]
 >
@@ -179,7 +179,7 @@ Die Dynamic Media Classic **[!UICONTROL Bild]** Mit dieser Komponente können Si
 
 **[!UICONTROL Scharfzeichnen]** - Wählen Sie aus, wie Sie das Bild scharfzeichnen möchten. Das Scharfzeichnen wird unter [Best Practices für Bildvorgaben](/help/assets/managing-image-presets.md#image-preset-options) und in den [Best Practices für das Scharfzeichnen](/help/assets/assets/sharpening_images.pdf) detailliert beschrieben.
 
-**[!UICONTROL URL-Modifikatoren]** - Sie können Bildeffekte ändern, indem Sie zusätzliche Dynamic Media Classic-Bildbefehle bereitstellen. Diese Befehle werden unter [Bildvorgaben](/help/assets/managing-image-presets.md) und [Befehlsreferenz](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
+**[!UICONTROL URL-Modifikatoren]** - Sie können Bildeffekte ändern, indem Sie zusätzliche Dynamic Media Classic-Bildbefehle bereitstellen. Diese Befehle werden unter [Bildvorgaben](/help/assets/managing-image-presets.md) und [Befehlsreferenz](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=de).
 
 **[!UICONTROL Haltepunkte]** - Wenn Ihre Website responsiv ist, möchten Sie die Haltepunkte anpassen. Haltepunkte müssen durch Kommas (,) voneinander getrennt werden.
 
@@ -285,7 +285,6 @@ Durchsuchen von Dynamic Media Classic-Assets durch Auswählen **[!UICONTROL Dyna
 >
 >* Der Dynamic Media Classic-Inhaltsbrowser lädt etwa 100 Assets und sortiert sie nach Namen.
 >* Wenn Sie einen sicheren Vorschauserver eingerichtet haben, verwendet der Browser diesen Vorschauserver zum Rendern von Miniaturansichten und Assets.
-
 >
 
 
@@ -336,7 +335,6 @@ Standardmäßig durchsucht Experience Manager den ausgewählten Ordner und alle 
 >
 >* Beim Durchsuchen eines Videos suchen Sie nach einem einzelnen Ausgabeformat. Die Ergebnisse geben die ursprüngliche Ausgabedarstellung (nur &amp;ast;.mp4) und die kodierte Ausgabedarstellung zurück.
 >* Bei der Suche nach einem adaptiven Videoset durchsuchen Sie den Ordner und alle Unterordner, allerdings nur, wenn Sie der Suche ein Keyword hinzugefügt haben. Wenn Sie keinen Suchbegriff hinzugefügt haben, durchsucht Experience Manager die Unterordner nicht.
-
 >
 
 

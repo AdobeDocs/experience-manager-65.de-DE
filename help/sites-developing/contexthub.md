@@ -2,7 +2,7 @@
 title: ContextHub
 seo-title: ContextHub
 description: ContextHub ist ein Framework zum Speichern, Ändern und Darstellen von Kontextdaten
-seo-description: ContextHub ist ein Framework zum Speichern, Ändern und Darstellen von Kontextdaten
+seo-description: ContextHub is a framework for storing, manipulating, and presenting context data
 uuid: 14e6ff4f-ffbe-454a-b2ec-a35333526e27
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: acf5c17a-95b7-43ba-9734-241e20f4f374
 exl-id: 3fd50655-7461-4900-a3b8-c01b04c7ba7a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '286'
 ht-degree: 86%
 
 ---
@@ -27,7 +27,7 @@ ContextHub ist ein Framework zum Speichern, Ändern und Darstellen von Kontextda
 
 >[!CAUTION]
 >
->Der Pfad mit der ContextHub-Beispielkonfiguration, die von der [We.Retail-Referenzimplementierung](/help/sites-developing/we-retail.md) ( `/libs/settings/cloudsettings/legacy`) verwendet wird, sollte nur als Referenz zum Erstellen Ihrer eigenen Konfiguration verwendet werden.
+>Der Pfad, der die von der [We.Retail-Referenzimplementierung](/help/sites-developing/we-retail.md) ( `/libs/settings/cloudsettings/legacy`) sollte nur als Referenz zum Erstellen Ihrer eigenen Konfiguration verwendet werden.
 >
 >Sie sollte nicht in einem Projekt als eigene ContextHub-Konfiguration verwendet werden.
 
@@ -42,7 +42,7 @@ Jeder ContextHub-Speicher ist eine Instanz eines vordefinierten Speichertyps:
 * Entwickler können [anwenderdefinierte Speichertypen erstellen](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).
 * Entwickler können auf die [gespeicherten Daten](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) über JavaScript zugreifen.
 
-## Segmentierung  {#segmentation}
+## Segmentierung {#segmentation}
 
 ContextHub enthält eine Segmentations-Engine, die Segmente verwaltet und bestimmt, welche Segmente für den aktuellen Kontext aufgelöst werden. Mehrere Segmente sind definiert. Sie können die Javascript-API verwenden, um [aufgelöste Segmente zu ermitteln](/help/sites-developing/ch-adding.md#determining-resolved-contexthub-segments).
 

@@ -1,8 +1,8 @@
 ---
-title: Speicher  Konfiguration
-seo-title: Speicher  Konfiguration
+title: Speicherkonfiguration
+seo-title: Storage Configuration
 description: Zugriff auf die Speicherkonfigurationskonsole
-seo-description: Zugriff auf die Speicherkonfigurationskonsole
+seo-description: How to access the Storage Configuration Console
 uuid: 6a5a71d5-6aaa-4635-8852-4dae33c497a9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,12 +13,12 @@ role: Admin
 exl-id: 67de7e26-3f93-4034-9e3a-5c127f7447bc
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 5%
+source-wordcount: '199'
+ht-degree: 4%
 
 ---
 
-# Speicher  Konfiguration {#storage-configuration}
+# Speicherkonfiguration {#storage-configuration}
 
 Mit der Speicherkonfiguration wird der für Community-Inhalte ausgewählte Speicher identifiziert, der auch als benutzergenerierte Inhalte (UGC) bezeichnet wird.
 
@@ -35,16 +35,16 @@ Eine Diskussion der Speicheroptionen und Bereitstellungstopologien finden Sie un
 
 In der Autorenumgebung, um die Speicherkonfigurationskonsole zu erreichen.
 
-* Wählen Sie in der globalen Navigation **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Speicherkonfiguration]** aus.
+* Wählen Sie in der globalen Navigation die Option **[!UICONTROL Instrumente]** > **[!UICONTROL Communities]** > **[!UICONTROL Speicherkonfiguration]**
 
 So wählen Sie eine andere Speicheroption als das standardmäßige JCR aus:
 
 * Option auswählen
 * Geeignete Konfiguration
 
-   * Siehe Details zu [Auswählen von MSRP](msrp.md#select-msrp)
-   * Siehe Details zu [Auswahl von DSRP](dsrp.md#select-dsrp)
-   * Siehe Details zu [Auswählen von ASRP](asrp.md#select-asrp)
+   * Siehe Details für [Auswählen von MSRP](msrp.md#select-msrp)
+   * Siehe Details für [Auswahl von DSRP](dsrp.md#select-dsrp)
+   * Siehe Details für [Auswählen von ASRP](asrp.md#select-asrp)
 
 * Klicken Sie auf **[!UICONTROL Übermitteln]**.
 
@@ -52,10 +52,10 @@ So wählen Sie eine andere Speicheroption als das standardmäßige JCR aus:
 
 Beachten Sie, dass bei fehlender Auswahl das AEM-Repository JCR standardmäßig verwendet wird.
 
-JCR ist *nicht* ein gemeinsamer Speicher, der von der Autoren- und Veröffentlichungsumgebung gemeinsam genutzt wird. Community-Inhalte sind nur in der Autoren- oder Veröffentlichungsumgebung sichtbar, in der sie erstellt wurden.
+JCR ist *not* ein gemeinsamer Speicher, der von der Autoren- und Veröffentlichungsumgebung gemeinsam genutzt wird. Community-Inhalte sind nur in der Autoren- oder Veröffentlichungsumgebung sichtbar, in der sie erstellt wurden.
 
-Weitere Informationen finden Sie unter [JCR Store](jsrp.md) .
+Besuch [JCR-Store](jsrp.md) für weitere Informationen.
 
 >[!NOTE]
 >
->Das Fehlen des Knotens `srpc` unter `/etc/socialconfig` zeigt den standardmäßigen [JCR-Store](jsrp.md) an.
+>Das Fehlen des Knotens `srpc` under `/etc/socialconfig` gibt den Standardwert an [JCR-Store](jsrp.md).

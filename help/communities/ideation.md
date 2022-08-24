@@ -1,8 +1,8 @@
 ---
 title: Ideengrundlagen
-seo-title: Ideengrundlagen
+seo-title: Ideation Essentials
 description: Übersicht über die Ideen-Funktion
-seo-description: Übersicht über die Ideen-Funktion
+seo-description: Ideation feature overview
 uuid: abaf03ee-8bf4-4241-96c3-474c95a30a88
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,7 +12,7 @@ discoiquuid: a9e4f2f0-d1ff-40c0-abcf-645e40586a84
 exl-id: 7ad3592b-f8b5-45c0-97bc-15f781d7b811
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '106'
 ht-degree: 6%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 6%
 
 Auf dieser Seite finden Sie die wichtigsten Informationen für die Arbeit mit der Ideenfunktion, die einem Forum ähnlich ist, jedoch mit der Möglichkeit, als Entwurf zu speichern und ein kollaboratives Gefühl zu entwickeln.
 
-## Grundlagen für Client-seitige {#essentials-for-client-side}
+## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -47,7 +47,7 @@ Auf dieser Seite finden Sie die wichtigsten Informationen für die Arbeit mit de
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Siehe <a href="ideation-feature.md">Ideenfunktion</a></td>
+   <td>Siehe <a href="ideation-feature.md">Ideen-Funktion</a></td>
   </tr>
  </tbody>
 </table>
@@ -56,4 +56,4 @@ Auf dieser Seite finden Sie die wichtigsten Informationen für die Arbeit mit de
 
 ### Ideen-Funktion {#ideation-function}
 
-Eine Community-Site-Struktur, die die [Ideationsfunktion](functions.md#ideation-function) enthält, enthält eine konfigurierte `ideation`-Komponente.
+Eine Community-Site-Struktur mit [Ideenfunktion](functions.md#ideation-function)enthält eine konfigurierte `ideation` -Komponente.

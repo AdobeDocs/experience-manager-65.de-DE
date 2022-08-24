@@ -23,13 +23,13 @@ Statische Ausgabeformate werden nativ mit FFMPEG (im Systempfad installiert und 
 
 Die DM-kodierten Ausgabeformate werden im Proxyserver gespeichert und zur Laufzeit bereitgestellt.
 
-Experience Manager Assets bietet Client-seitige Wiedergabefunktion für diese Ausgabedarstellungen.
+Experience Manager Assets unterstützt die Wiedergabe dieser Ausgabedarstellungen clientseitig.
 
 Um die Ausgabeformate eines bestimmten Video-Assets anzuzeigen, öffnen Sie die Asset-Seite und wählen Sie das Symbol Globale Navigation aus. Wählen Sie dann **[!UICONTROL Ausgabeformate]** aus der Liste aus.
 
 ![chlimage_1-478](assets/chlimage_1-478.png)
 
-Die Liste der Videoausgabeformate wird im Bedienfeld **[!UICONTROL Ausgabeformate]** angezeigt.
+Die Liste der Videoausgabeformate wird im **[!UICONTROL Ausgabeformate]** Bereich.
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
@@ -41,6 +41,6 @@ Nachdem Sie den Proxyserver konfiguriert und Videoprofile erstellt haben, könne
 
 >[!NOTE]
 >
->Die Audiowiedergabe funktioniert nicht für OGG- und WAV-Dateien in Microsoft® Internet Explorer 11. Auf der Asset-Detailseite wird für Assets mit der Erweiterung OGG oder WAV ein Fehler `Invalid Source` angezeigt.
+>Die Audiowiedergabe funktioniert nicht für OGG- und WAV-Dateien in Microsoft® Internet Explorer 11. Fehler `Invalid Source` wird auf der Seite mit den Asset-Details für Assets mit der Erweiterung OGG oder WAV angezeigt.
 >
->Auf MS® Edge und iPad werden OGG-Dateien nicht abgespielt und es wird ein nicht unterstützter Formatfehler ausgegeben.
+>Unter MS® Edge und iPad werden OGG-Dateien nicht abgespielt und es wird ein nicht unterstützter Formatfehler ausgegeben.

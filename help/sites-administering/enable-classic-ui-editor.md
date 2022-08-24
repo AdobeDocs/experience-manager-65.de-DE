@@ -1,8 +1,8 @@
 ---
 title: Bearbeiter
-seo-title: Bearbeiter
+seo-title: Editor
 description: Erfahren Sie, wie Sie zurück zum klassischen Benutzeroberflächen-Editor wechseln.
-seo-description: Erfahren Sie, wie Sie zurück zum klassischen Benutzeroberflächen-Editor wechseln.
+seo-description: Learn how to switch back to the Classic UI Editor.
 uuid: ca8b07e7-014f-428e-82bd-87f3aae12f6e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 8540e1f0-22d7-4f48-85d9-7c44eb7185df
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '100'
 ht-degree: 90%
 
 ---
@@ -32,7 +32,7 @@ Gehen Sie wie folgt vor, um im Menü **Seiteninformationen** die Option **In kla
 
    ` [https://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui](https://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui)`
 
-1. Erstellen Sie eine Überlagerung mit der Option **Überlagerungsknoten** . Beispiel:
+1. Erstellen Sie eine Überlagerung mit der **Überlagerungsknoten** Option; Beispiel:
 
    * **Pfad**: `/apps/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
    * **Pfad für Überlagerung**: `/apps/`

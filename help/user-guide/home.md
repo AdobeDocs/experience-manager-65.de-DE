@@ -1,21 +1,21 @@
 ---
 title: AEM 6.5 Benutzerhandbuch-Hub
-seo-title: AEM 6.5 Benutzerhandbuch-Hub
+seo-title: AEM 6.5 User Guide Hub
 description: Eine Übersicht über alle wichtigen Ressourcen zum Verständnis, Installieren, Verwalten und Verwenden von AEM 6.5
-seo-description: Eine Übersicht über alle wichtigen Ressourcen zum Verständnis, Installieren, Verwalten und Verwenden von AEM 6.5
+seo-description: An overview of all of the essential resources for understanding, installing, managing, and using AEM 6.5
 exl-id: 51788662-6214-408e-98d9-692950c366be
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 31%
+source-wordcount: '214'
+ht-degree: 34%
 
 ---
 
 # AEM 6.5 Benutzerhandbuch-Hub {#aem-64-user-guide}
 
-## Einführung {#introduction}
+## Einführung    {#introduction}
 
-| [Erste Schritte](https://helpx.adobe.com/experience-manager/get-started.html) | [Funktionsvideos](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html) | [Versionshinweise](https://helpx.adobe.com/de/experience-manager/6-5/release-notes.html) |
+| [Erste Schritte](https://helpx.adobe.com/de/experience-manager/get-started.html) | [Funktionsvideos](https://helpx.adobe.com/de/experience-manager/kt/index/aem-6-5-videos.html) | [Versionshinweise](https://helpx.adobe.com/de/experience-manager/6-5/release-notes.html) |
 |:-:|:-:|:-:|
 | Entdecken Sie Tutorials und Artikel zu den ersten Schritten mit AEM | Auswahl an Videos mit 6.5 neuen Funktionen | Neue Funktionen in AEM 6.5 |
 
@@ -42,7 +42,7 @@ Support-Beauftragte erhalten Unterstützung über:
 
 >[!NOTE]
 >
->Sie sind nicht sicher, ob Sie ein **Support-Beauftragter** sind? Finden Sie heraus, ob dieser [Benutzertyp für Sie gilt](https://helpx.adobe.com/experience-cloud/supported-users.html), und erfahren Sie mehr über unsere [Enterprise-Supportbedingungen](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).
+>Nicht sicher, ob Sie ein **Support-Delegate**? Finden Sie heraus, ob dies [Der Benutzertyp gilt für Sie](https://helpx.adobe.com/experience-cloud/supported-users.html) und erfahren Sie mehr über unsere [Enterprise-Supportbedingungen](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).
 
 ## Community {#community}
 

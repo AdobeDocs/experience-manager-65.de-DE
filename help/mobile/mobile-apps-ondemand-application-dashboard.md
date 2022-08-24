@@ -2,7 +2,7 @@
 title: AEM Mobile Application Dashboard
 seo-title: AEM Mobile Application Dashboard
 description: Sie können Ihre App- und App-Inhalte über das AEM Mobile Application Dashboard oder das Control Center verwalten. Auf dieser Seite erfahren Sie mehr.
-seo-description: Sie können Ihre App- und App-Inhalte über das AEM Mobile Application Dashboard oder das Control Center verwalten. Auf dieser Seite erfahren Sie mehr.
+seo-description: You can manage your application and mobile app content from AEM Mobile Application Dashboard or the Control Center. Follow this page to learn more.
 uuid: 0d182989-eb83-4207-a8e0-050edbf98ff9
 contentOwner: User
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 42a38399-f5a7-4d2f-aa6a-d409a7ec60f7
 exl-id: daafc8b8-3c01-4c97-a14b-f1b706600249
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '597'
 ht-degree: 13%
 
 ---
@@ -37,21 +37,21 @@ Die Verwaltung von App-Inhalten erfordert kollektive Anstrengungen von Entwickle
 
 Schließlich veröffentlichen Administratoren strategisch den aktualisierten App-Inhalt.
 
-## Bereich „App verwalten“{#the-manage-app-tile}
+## Bereich „App verwalten“ {#the-manage-app-tile}
 
-Der Bereich **App verwalten** enthält verfügbare Anwendungsinformationen:
+Die **App verwalten** In der Kachel werden verfügbare Anwendungsinformationen angezeigt:
 
 * Titel
 * Beschreibung
 * Symbol
-* Letzte Änderung
+* Zuletzt geändert
 * Last Modified By
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
-## Bereich &quot;Verbindung verwalten&quot;{#the-manage-connection-tile}
+## Bereich &quot;Verbindung verwalten&quot; {#the-manage-connection-tile}
 
-Die Kachel **Verbindung verwalten** enthält die AEM Mobile On-demand Services-Verbindungsinformationen:
+Die **Verbindung verwalten** -Kachel zeigt die AEM Mobile On-demand Services-Verbindungsinformationen an:
 
 * Name der Cloud-Konfiguration
 * Projektname und ID
@@ -61,7 +61,7 @@ Die Kachel **Verbindung verwalten** enthält die AEM Mobile On-demand Services-V
 >
 >Klicken Sie oben rechts auf das Zahnrad, um eine Mobile On-Demand Cloud-Konfiguration einzurichten.
 >
->Weitere Informationen finden Sie unter [Mobile On-Demand Services konfigurieren](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) .
+>Siehe [Mobile On-Demand Services konfigurieren](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) für Details.
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -75,9 +75,9 @@ Diese drei Kacheln bieten einen Überblick über den Status des Inhalts einer Ap
 
 Jede Kachel kann erweitert werden, um eine detailliertere Listenansicht bereitzustellen, indem Sie auf die Auslassungspunkte (...) in der rechten unteren Ecke klicken. Diese Listenansichten bieten eine alternative Möglichkeit zum Zugriff auf allgemeine Mobile On Demand-Aktionen wie das Löschen, Hochladen und Bearbeiten von Eigenschaften.
 
-### Bereich &quot;Banner verwalten&quot;{#the-manage-banners-tile}
+### Die Kachel Banner verwalten {#the-manage-banners-tile}
 
-Die Kachel **Banner verwalten** ermöglicht die Verwaltung des Inhalts eines Banners. Die folgenden Informationen werden für ein Banner angezeigt:
+Die **Banner verwalten** -Kachel ermöglicht die Verwaltung des Inhalts eines Banners. Die folgenden Informationen werden für ein Banner angezeigt:
 
 * image
 * **TITEL**: Name des Banners
@@ -86,17 +86,17 @@ Die Kachel **Banner verwalten** ermöglicht die Verwaltung des Inhalts eines Ban
 * **VERÖFFENTLICHT**: AEM zuletzt veröffentlichten Anfrageformulars
 * **QUELLE**: Quelle (AEM lokal oder remote von Mobile On Demand)
 
-Die folgende Abbildung zeigt die Kachel **Banner verwalten** im AEM Mobile Application Dashboard:
+Die folgende Abbildung zeigt die **Banner verwalten** Kachel im AEM Mobile Application Dashboard:
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
 >[!NOTE]
 >
->Informationen zum Erstellen, Löschen oder Aktualisieren von Bannern finden Sie unter **[Verwalten von Bannern](/help/mobile/mobile-on-demand-managing-banners.md)** .
+>Siehe **[Verwalten von Bannern](/help/mobile/mobile-on-demand-managing-banners.md)** zum Erstellen, Löschen oder Aktualisieren der Banner.
 
-### Bereich &quot;Artikel verwalten&quot;{#the-manage-articles-tile}
+### Die Kachel &quot;Artikel verwalten&quot; {#the-manage-articles-tile}
 
-Mit der Kachel **Artikel verwalten** können Sie den Inhalt eines Artikels verwalten. Die folgenden Informationen werden für einen Artikel angezeigt:
+Die **Artikel verwalten** -Kachel ermöglicht Ihnen, den Inhalt eines Artikels zu verwalten. Die folgenden Informationen werden für einen Artikel angezeigt:
 
 * image
 * **TITEL**: Name des Artikels
@@ -105,7 +105,7 @@ Mit der Kachel **Artikel verwalten** können Sie den Inhalt eines Artikels verwa
 * **VERÖFFENTLICHT**: AEM zuletzt veröffentlichten Anfrageformulars
 * **QUELLE**: Quelle (AEM lokal oder remote von Mobile On-Demand)
 
-Die folgende Abbildung zeigt die Kachel **Artikel verwalten** im AEM Mobile Application Dashboard:
+Die folgende Abbildung zeigt die **Artikel verwalten** Kachel im AEM Mobile Application Dashboard:
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
@@ -113,9 +113,9 @@ Die folgende Abbildung zeigt die Kachel **Artikel verwalten** im AEM Mobile Appl
 >
 >Siehe [**Verwalten von Artikeln**](/help/mobile/mobile-on-demand-managing-articles.md) zum Erstellen, Löschen oder Aktualisieren der Artikel.
 
-### Bereich &quot;Sammlungen verwalten&quot;{#the-manage-collections-tile}
+### Die Kachel Sammlungen verwalten {#the-manage-collections-tile}
 
-Die Kachel **Sammlungen verwalten** ermöglicht die Verwaltung des Inhalts einer Sammlung. Die folgenden Informationen werden für eine Sammlung angezeigt:
+Die **Verwalten von Sammlungen** -Kachel ermöglicht die Verwaltung des Inhalts einer Sammlung. Die folgenden Informationen werden für eine Sammlung angezeigt:
 
 * image
 * **TITEL**: Name der Sammlung
@@ -124,13 +124,13 @@ Die Kachel **Sammlungen verwalten** ermöglicht die Verwaltung des Inhalts einer
 * **VERÖFFENTLICHT**: AEM zuletzt veröffentlichten Anfrageformulars
 * **QUELLE**: Quelle (AEM lokal oder remote von Mobile On-Demand)
 
-Die folgende Abbildung zeigt die Kachel **Sammlungen verwalten** im AEM Mobile Application Dashboard:
+Die folgende Abbildung zeigt die **Verwalten von Sammlungen** Kachel im AEM Mobile Application Dashboard:
 
 ![chlimage_1-59](assets/chlimage_1-59.png)
 
 >[!NOTE]
 >
->Informationen zum Erstellen, Löschen oder Aktualisieren von Sammlungen finden Sie unter **[Verwalten von Sammlungen](/help/mobile/mobile-on-demand-managing-collections.md)** .
+>Siehe **[Verwalten von Sammlungen](/help/mobile/mobile-on-demand-managing-collections.md)** zum Erstellen, Löschen oder Aktualisieren der Sammlungen.
 
 ### Die nächsten Schritte {#the-next-steps}
 

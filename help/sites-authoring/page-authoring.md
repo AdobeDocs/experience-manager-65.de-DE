@@ -1,8 +1,8 @@
 ---
 title: Bearbeiten von Seiten (Authoring)
-seo-title: Bearbeiten von Seiten (Authoring)
+seo-title: Authoring Pages
 description: Die Aufgaben, die in das Bearbeiten von Seiteninhalten involviert sind
-seo-description: Die Aufgaben, die in das Bearbeiten von Seiteninhalten involviert sind
+seo-description: The tasks involved when authoring a content page
 uuid: 454d94aa-da27-45cb-bbb2-7bfcef103806
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '312'
 ht-degree: 100%
 
 ---
@@ -30,7 +30,7 @@ Die folgenden Abschnitte enthalten jeweils einen Überblick über die Bearbeitun
 >
 >Dieser Abschnitt enthält die Aufgaben, die bei der Bearbeitung von Inhaltsseiten ausgeführt werden. Es gibt viele zusätzliche Funktionen, die eng mit der Erstellung von Seiten zusammenhängen. Weitere Informationen finden Sie in anderen Abschnitten des [Leitfadens für die Seitenbearbeitung](/help/sites-authoring/home.md).
 
-## Kurze Übersicht der Funktionen zur Seitenbearbeitung (Authoring){#quick-overview-of-features-used-for-authoring-pages}
+## Kurze Übersicht der Funktionen zur Seitenbearbeitung (Authoring) {#quick-overview-of-features-used-for-authoring-pages}
 
 Zur Unterstützung der Seitenbearbeitung enthält die Autorenumgebung unter anderem folgende Funktionen:
 

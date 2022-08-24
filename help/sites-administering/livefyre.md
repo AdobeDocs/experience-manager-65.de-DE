@@ -99,7 +99,7 @@ Die integrierte Standardauthentifizierung ist ggf. nicht für alle Sites ideal g
 
    Weitere Informationen zum Anpassen eines Authentifizierungsdelegats finden Sie unter [Identitätsintegration](https://answers.livefyre.com/developers/identity-integration/).
 
-   Weitere Informationen zu AEM Clientlibs finden Sie unter [Verwenden Client-seitiger Bibliotheken](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html).
+   Weitere Informationen zu AEM Clientlibs finden Sie unter [Verwenden Client-seitiger Bibliotheken](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=de).
 
 ## Verwenden von Livefyre mit AEM Sites {#use-livefyre-with-aem-sites}
 

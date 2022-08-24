@@ -12,7 +12,7 @@ docset: aem65
 feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
 source-git-commit: ba2c753cfd041ccfcd6ba7a45648234290b99d25
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1881'
 ht-degree: 100%
 
@@ -432,7 +432,7 @@ Weitere Informationen finden Sie unter [Verbinden von AEM Forms mit Adobe LiveCy
 
 Die Datei „DSCSample.jar“ verwendet die renderLetter-API, um ein Schreiben als PDF-Bytes aus XML-Daten zu generieren, die von DSC als Eingabe gegeben werden. Weitere Informationen zu renderLetter und andere APIs finden Sie unter[ Brief-Render-Dienst](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
-1. Anfang  Workbench und melden Sie sich an.
+1. Anfang Workbench und melden Sie sich an.
 1. Wählen Sie **Fenster > Ansicht anzeigen > Komponenten**. Die Komponentenansicht wird in Workbench ES2 hinzugefügt.
 
 1. Klicken Sie mit der rechten Maustaste auf **Komponenten** und wählen Sie **Komponente installieren**.

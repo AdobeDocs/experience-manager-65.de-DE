@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7a85e13d-4800-47c4-812a-5c6e2355298a
 exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 100%
 
 ---
 
-# Geschäftskalender konfigurieren {#configuring-business-calendars}
+# Konfigurieren von Geschäftskalendern {#configuring-business-calendars}
 
 *Geschäftskalender* definieren Geschäftstage und geschäftsfreie Tage (z. B. gesetzliche Feiertage, Wochenenden und Betriebsferien) für Ihre Organisation. Bei Verwendung von Geschäftskalendern lässt AEM Forms geschäftsfreie Tage aus, wenn bestimmte Datumsberechnungen angestellt werden. In Workbench können Sie festlegen, ob Geschäftskalender für Benutzern zugeordnete Ereignisse wie z. B. Aufgabenerinnerungen, Termine und Eskalationen oder für nicht Benutzern zugeordnete Aktionen wie Timer-Ereignisse oder den Wait-Dienst verwendet werden sollen.
 

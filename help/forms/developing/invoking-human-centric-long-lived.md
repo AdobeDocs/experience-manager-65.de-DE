@@ -12,7 +12,7 @@ discoiquuid: 18a320b4-dce6-4c50-8864-644b0b2d6644
 role: Developer
 exl-id: c9ebad8b-b631-492d-99a3-094e892b2ddb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3699'
 ht-degree: 100%
 
@@ -179,7 +179,7 @@ Um den `FirstAppSolution/PreLoanProcess`-Prozess mithilfe der Aufruf-API aufzuru
 
 1. Erstellen Sie ein `InvocationRequest`-Objekt, indem Sie die Methode `createInvocationRequest` des `ServiceClientFactory`-Objekts aufrufen und die folgenden Werte übergeben:
 
-   * Ein string-Wert, der den Namen des langlebigen aufzurufenden Prozesses angibt. Um den Prozess `FirstAppSolution/PreLoanProcess` aufzurufen, geben Sie `FirstAppSolution/PreLoanProcess` an.
+   * Ein string-Wert, der den Namen des langlebigen aufzurufenden Prozesses angibt. Geben Sie `FirstAppSolution/PreLoanProcess` an, um den `FirstAppSolution/PreLoanProcess`-Prozess aufzurufen.
    * Ein string-Wert, der den Prozessvorgangsnamen darstellt. Der Name des langlebigen Prozessvorgangs lautet `invoke`.
    * Das `java.util.HashMap`-Objekt, das die Parameterwerte enthält, die für den Dienstvorgang erforderlich sind.
    * Ein boolescher Wert, der `false` angibt, sodass eine asynchrone Anfrage erstellt wird (dieser Wert kann zum Aufrufen eines langlebigen Prozesses verwendet werden).
@@ -579,26 +579,26 @@ Beim Aufrufen eines Prozesses, der XML-Daten aus einem ASP.NET-Programm erforder
 Um eine ASP-Seite zu erstellen, die den Prozess `FirstAppSolution/PreLoanProcess` aufruft, führen Sie die folgenden Aufgaben in der Methode `Button1_Click` aus:
 
 1. Erstellen Sie ein `FirstAppSolution_PreLoanProcessClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
-1. Erstellen Sie ein `FirstAppSolution_PreLoanProcessClient.Endpoint.Address`-Objekt, indem Sie den `System.ServiceModel.EndpointAddress`-Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der dem AEM Forms-Service die WSDL und den Typ der Codierung angibt:
+1. Erstellen Sie ein `FirstAppSolution_PreLoanProcessClient.Endpoint.Address`-Objekt mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der dem AEM Forms-Service die WSDL und den Typ der Codierung angibt:
 
    ```java
     https://hiro-xp:8080/soap/services/FirstAppSolution/PreLoanProcess?blob=mtom
    ```
 
-   Sie brauchen das Attribut `lc_version` nicht zu verwenden. Dieses Attribut wird verwendet, wenn Sie eine Servicereferenz erstellen. Stellen Sie jedoch sicher, dass Sie `?blob=mtom` angeben.
+   Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Servicereferenz erstellen. Stellen Sie jedoch sicher, dass Sie `?blob=mtom` angeben.
 
    >[!NOTE]
    >
    >Ersetzen Sie `hiro-xp`* durch die IP-Adresse des J2EE-Programm-Servers, der als Host für AEM Forms dient. *
 
 1. Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des Datenelements `FirstAppSolution_PreLoanProcessClient.Endpoint.Binding` abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-1. Setzen Sie das Datenelement `MessageEncoding` des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+1. Setzen Sie das `MessageEncoding`-Datenelement des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
 1. Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
-   * Weisen Sie dem Datenelement `FirstAppSolution_PreLoanProcessClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+   * Weisen Sie den AEM Forms-Benutzernamen dem Datenelement `FirstAppSolution_PreLoanProcessClient.ClientCredentials.UserName.UserName` zu.
    * Weisen Sie dem Datenelement `FirstAppSolution_PreLoanProcessClient.ClientCredentials.UserName.Password` den entsprechenden Kennwortwert zu.
-   * Weisen Sie dem Datenelement `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-   * Weisen Sie dem Datenelement `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
+   * Weisen Sie den Konstantenwert `HttpClientCredentialType.Basic` zum Datenelement `BasicHttpBindingSecurity.Transport.ClientCredentialType` zu.
+   * Weisen Sie den Konstantenwert `BasicHttpSecurityMode.TransportCredentialOnly` zum Datenelement `BasicHttpBindingSecurity.Security.Mode` zu.
 
    Das folgende Code-Beispiel zeigt diese Aufgaben.
 

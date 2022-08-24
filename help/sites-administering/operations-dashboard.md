@@ -21,7 +21,7 @@ ht-degree: 78%
 
 # Vorgangs-Dashboard {#operations-dashboard}
 
-## Einführung {#introduction}
+## Einführung    {#introduction}
 
 Mit dem Vorgangs-Dashboard in AEM 6 können Systemoperatoren auf einen Blick die AEM-Systemkonsistenz berwachen. Es bietet außerdem automatisch generierte Diagnoseinformationen zu relevanten Aspekten der AEM und ermöglicht die Konfiguration und Ausführung der eigenständigen Wartungsautomatisierung, um Projektvorgänge und Supportfälle erheblich zu reduzieren. Sie können das Vorgangs-Dashboard durch benutzerdefinierte Konsistenzprüfungen und Wartungsaufgaben erweitern. Und über JMX können Sie von externen Überwachungstools auf die Daten des Vorgangs-Dashboards zugreifen.
 

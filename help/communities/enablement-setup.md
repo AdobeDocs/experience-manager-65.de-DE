@@ -166,7 +166,7 @@ Ein vierter Benutzer wird in der Autorenumgebung erstellt und die Rollen &quot;C
    * Riley
    * sidney
 
-* Klicken Sie auf **[!UICONTROL Speichern]**
+* Wählen Sie **[!UICONTROL Speichern]** aus
 
 ### Eigenschaften der Community-Ski-Klasse {#community-ski-class-properties}
 
@@ -213,6 +213,6 @@ Scrollen Sie nach unten zu `Add User to Groups`:
    * Wählen Sie nun eine der folgenden Optionen aus `Community Administrators`
    * Wählen Sie nun eine der folgenden Optionen aus `Community Enablement Managers`
 
-* Klicken Sie auf **[!UICONTROL Speichern]**
+* Wählen Sie **[!UICONTROL Speichern]** aus
 
 ![admin-role](assets/admin-role.png)

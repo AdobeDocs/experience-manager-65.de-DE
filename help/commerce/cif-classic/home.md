@@ -1,7 +1,8 @@
 ---
 title: AEM CIF Classic
 description: AEM CIF Classic-Selbsthilfe-Ressourcen und Links zur Dokumentation
-source-git-commit: 491b0398c90d84f38efaa7f0ccd4d4215064753d
+exl-id: ae0823b3-d847-42b6-ba92-e4e949da1799
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 7%
@@ -18,7 +19,6 @@ Auf dieser Seite finden Sie die Selbsthilfe-Ressourcen zu AEM CIF Classic.
 >
 >* Neue Projekte sollten [AEM CIF](/help/commerce/home.md).
 >* Vorhandene CIF Classic sollte [Migration zu AEM CIF](/help/commerce/cif/migration.md).
-
 >
 
 

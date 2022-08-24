@@ -12,7 +12,7 @@ discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3892'
 ht-degree: 100%
 
@@ -773,7 +773,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
    <td><strong>Ausnahme</strong></td>
   </tr>
   <tr>
-   <td>Rahmen</td>
+   <td>border</td>
    <td>Das border-Objekt beschreibt den Rahmen, der das checkButton-Objekt umgibt. </td>
    <td>Die Änderungen werden in Model angezeigt und sind zur Skripterstellung verfügbar, werden aber nicht mit HTML-Elementen synchronisiert. Daher werden die Änderungen nicht in der Benutzeroberfläche angezeigt.<br /> </td>
   </tr>
@@ -790,7 +790,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
    <td><strong>Ausnahme</strong></td>
   </tr>
   <tr>
-   <td>Rahmen</td>
+   <td>border</td>
    <td>Das border-Objekt beschreibt den Rahmen, der das choiceList-Objekt umgibt.</td>
    <td> </td>
   </tr>
@@ -801,7 +801,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
 
 | **Eigenschaft** | **Beschreibung** | **Ausnahme** |
 |---|---|---|
-| Rahmen | Das border-Objekt beschreibt den Rahmen, der das dateTimeEdit-Objekt umgibt. |  |
+| border | Das border-Objekt beschreibt den Rahmen, der das dateTimeEdit-Objekt umgibt. |  |
 
 ## Bild {#image}
 
@@ -829,13 +829,13 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
 
 | **Eigenschaft** | **Beschreibung** | **Ausnahme** |
 |---|---|---|
-| Rahmen | Das border-Objekt beschreibt den Rahmen, der das imageEdit-Objekt umgibt. |  |
+| border | Das border-Objekt beschreibt den Rahmen, der das imageEdit-Objekt umgibt. |  |
 
 ## numericEdit {#numericedit}
 
 | **Eigenschaft** | **Beschreibung** | **Ausnahme** |
 |---|---|---|
-| Rahmen | Das border-Objekt beschreibt den Rahmen, der ein Objekt umgibt. | keine |
+| border | Das border-Objekt beschreibt den Rahmen, der ein Objekt umgibt. | keine |
 
 ## Objekt {#object}
 
@@ -881,7 +881,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
    <td><strong>Ausnahme</strong></td>
   </tr>
   <tr>
-   <td>Rahmen</td>
+   <td>border</td>
    <td>Das border-Objekt beschreibt den Rahmen, der ein Objekt umgibt.<br /> </td>
    <td>Ohne</td>
   </tr>
@@ -1344,7 +1344,7 @@ Folgende clientseitige XFA-Ereignisse werden unterstützt:
 
 * Initialisieren
 * Validieren
-* Berechnen
+* Calculate
 * Klicken Sie auf
 * Geben Sie ein
 * Beenden

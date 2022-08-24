@@ -1,8 +1,8 @@
 ---
 title: Community-Gruppengrundlagen
-seo-title: Community-Gruppengrundlagen
+seo-title: Community Group Essentials
 description: Dynamisches Erstellen von Community-Sites
-seo-description: Dynamisches Erstellen von Community-Sites
+seo-description: Creating community sites dynamically
 uuid: 168e7aeb-6e9a-468d-8ac4-274007cea252
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,20 +12,20 @@ discoiquuid: 4f85cd3c-5158-4f23-abe2-7e375fd0c8d4
 exl-id: f45ae7be-a500-463a-ab3e-81f281651a9d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '418'
 ht-degree: 2%
 
 ---
 
-# Community-Gruppengrundlagen {#community-group-essentials}
+# Community-Gruppengrundlagen  {#community-group-essentials}
 
 Die Funktion &quot;Community-Gruppen&quot;ermöglicht es einer Unter-Community, von autorisierten Benutzern aus der Veröffentlichungs- und Autorenumgebung dynamisch auf einer Community-Site erstellt zu werden.
 
-Ab Communities [Feature Pack 1](deploy-communities.md#latestfeaturepack) können Gruppen in anderen Gruppen verschachtelt werden
+Als Communitys [Feature Pack 1](deploy-communities.md#latestfeaturepack)kann es sein, dass Gruppen in anderen Gruppen verschachtelt sind
 
-## Grundlagen für Client-seitige {#essentials-for-client-side}
+## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
 
-### Community-Gruppen Mitgliederliste {#community-groups-member-list}
+### Community-Gruppen-Mitgliederliste {#community-groups-member-list}
 
 <table>
  <tbody>
@@ -77,7 +77,7 @@ Ab Communities [Feature Pack 1](deploy-communities.md#latestfeaturepack) können
 
 * [Clientseitige Anpassungen](client-customize.md)
 
-## Grundlagen für serverseitige {#essentials-for-server-side}
+## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
 
 * [Community-Gruppen-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
 
@@ -87,15 +87,15 @@ Ab Communities [Feature Pack 1](deploy-communities.md#latestfeaturepack) können
 
 ### Gruppenfunktion {#groups-function}
 
-Eine Community-Site-Struktur mit der Funktion [Gruppen](functions.md#groups-function) unterstützt die Erstellung neuer `community groups` aus der Veröffentlichungs- und Autorenumgebung. Die erstellte Community-Gruppe enthält eine `community groups member list` -Komponente, die die Mitglieder der Gruppe auflistet.
+Eine Community-Site-Struktur mit [Gruppenfunktion](functions.md#groups-function) wird die Schaffung neuer `community groups` aus der Veröffentlichungs- und Autorenumgebung. Die erstellte Community-Gruppe umfasst eine `community groups member list` -Komponente, die die Mitglieder der Gruppe auflistet.
 
-Mindestens eine [Community-Gruppenvorlage](tools-groups.md), die das Design der Community-Gruppenseite(n) bereitstellt, kann für die Funktion Gruppen konfiguriert werden, wenn die Funktion zu einer [Community-Site-Vorlage](sites.md) hinzugefügt oder in einer Community-Gruppenvorlage verschachtelt wird.
+Ein oder mehrere [Community-Gruppenvorlagen](tools-groups.md), die das Design der Community-Gruppenseite(n) bereitstellen, kann für die Funktion Gruppen konfiguriert werden, wenn die Funktion zu einem [Community-Site-Vorlage](sites.md) oder in einer Community-Gruppenvorlage verschachtelt sind.
 
-Die Einbeziehung mehrerer Community-Gruppenvorlagen führt dazu, dass dem autorisierten Benutzer zum Zeitpunkt der Erstellung einer neuen Community-Gruppe für die Community-Site ein Design angezeigt wird, wie im Abschnitt [Community-Gruppen](creating-groups.md) für Autoren dargestellt.
+Durch die Einbeziehung mehrerer Community-Gruppenvorlagen wird dem autorisierten Benutzer zum Zeitpunkt der Erstellung einer neuen Community-Gruppe für die Community-Site ein Design angezeigt, wie im Abschnitt zu [Community-Gruppen](creating-groups.md) für Autoren.
 
 ### Verschachtelte Gruppen {#nested-groups}
 
-Ab Communities [FP1](deploy-communities.md#latestfeaturepack) ist es möglich, eine Gruppenfunktion in eine Gruppenvorlage aufzunehmen, um verschachtelte Gruppen (Untergruppen) zu ermöglichen.
+Als Communitys [FP1](deploy-communities.md#latestfeaturepack)kann eine Gruppenfunktion in eine Gruppenvorlage aufgenommen werden, sodass verschachtelte Gruppen (Untergruppen) möglich sind.
 
 Wenn eine Community-Site oder eine Gruppenvorlage die Funktion Gruppen enthält, können Sie Folgendes tun:
 

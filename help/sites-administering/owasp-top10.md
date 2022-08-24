@@ -48,7 +48,7 @@ Jeglicher Zugriff auf Datenobjekte wird durch ein Repository vermittelt und dahe
 
 Die Cross-Site Request Forgery (CSRF) wird durch das automatische Einfügen eines kryptografischen Tokens in alle Formulare und AJAX Anforderungen sowie die Überprüfung dieses Tokens auf dem Server für jede POST verhindert.
 
-Darüber hinaus enthält AEM einen auf Referrer-Header basierenden Filter, der so konfiguriert werden kann, dass *nur* POST-Anforderungen von bestimmten Hosts (in einer Liste definiert) zulassen.
+Darüber hinaus enthält AEM einen auf Referrer-Header basierenden Filter, der konfiguriert werden kann für *only* POST-Anfragen von bestimmten Hosts zulassen (in einer Liste definiert).
 
 ## 6. Sicherheitsrelevante Fehlkonfiguration {#security-misconfiguration}
 

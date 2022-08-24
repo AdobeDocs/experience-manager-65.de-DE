@@ -1,8 +1,8 @@
 ---
 title: App-Vorlagen und -Komponenten
-seo-title: App-Vorlagen und -Komponenten
+seo-title: App Templates and Components
 description: Auf dieser Seite erfahren Sie mehr über App-Vorlagen und -Komponenten. Es enthält detaillierte Informationen zur Struktur von Vorlagen.
-seo-description: Auf dieser Seite erfahren Sie mehr über App-Vorlagen und -Komponenten. Es enthält detaillierte Informationen zur Struktur von Vorlagen.
+seo-description: Follow this page to learn about App Templates and Components. It provides detailed information on the structure of templates.
 uuid: ba2fd91b-de5a-4f39-a976-5455f9983669
 contentOwner: User
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: 7f31c6a7-92d5-4a87-a9f0-68a82b834d5a
 exl-id: 58d95325-7cb1-4204-842d-17add70e1fbf
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 51%
+source-wordcount: '405'
+ht-degree: 54%
 
 ---
 
-# App-Vorlagen und Komponenten{#app-templates-and-components}
+# App-Vorlagen und -Komponenten{#app-templates-and-components}
 
 >[!NOTE]
 >
@@ -32,11 +32,11 @@ Jede Vorlage stellt Ihnen eine Auswahl an Komponenten bereit, die Sie verwenden 
 
 >[!NOTE]
 >
->Informationen zum Entwickeln Ihrer AEM-Anwendung mit CRXDE Lite finden Sie unter [Entwickeln mit CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Informationen zum Entwickeln Ihrer AEM-Anwendung mithilfe von CRXDE Lite finden Sie unter [Entwickeln mit CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 Eine Vorlage ist die Basis einer Seite.
 
-Um eine Seite zu erstellen, muss die Vorlage (Knotenbaum **/apps/&lt;myapp>/templates/&lt;mytemplate>**) an die entsprechende Position im Site-Baum kopiert werden: Dies geschieht, wenn eine Seite auf der Registerkarte **Websites** erstellt wird.
+Um eine Seite zu erstellen, muss die Vorlage kopiert werden (Knotenbaum **/apps/&lt;myapp>/templates/&lt;mytemplate>**) an die entsprechende Position im Site-Baum: Dies geschieht, wenn eine Seite mit dem **Websites** Registerkarte.
 
 Über diesen Kopiervorgang erhält die Seite auch ihren anfänglichen Inhalt (in der Regel nur den Inhalt der obersten Ebene) und die Eigenschaft sling:resourceType, den Pfad zur Seitenkomponente, die zum Rendern der Seite genutzt wird (alles im untergeordneten Knoten jcr:content).
 
@@ -54,15 +54,15 @@ Verschiedene Eigenschaften können festgelegt werden, insbesondere:
 * **jcr:title** – Titel für die Vorlage; wird beim Erstellen einer Seite im Dialogfeld angezeigt
 * **jcr:description** – Beschreibung für die Vorlage; wird beim Erstellen einer Seite im Dialogfeld angezeigt
 
-Dieser Knoten enthält den Knoten *a jcr:content (cq:PageContent)* , der als Grundlage für den Inhaltsknoten der resultierenden Seiten verwendet wird. Dadurch wird mithilfe von *sling:resourceType* die Komponente referenziert, die zum Rendern des tatsächlichen Inhalts einer neuen Seite verwendet werden soll.
+Dieser Knoten enthält *a jcr:content (cq:PageContent)* Knoten, der als Grundlage für den Inhaltsknoten der resultierenden Seiten verwendet wird; diese Referenz verwendet, *sling:resourceType*, die Komponente, die zum Rendern des tatsächlichen Inhalts einer neuen Seite verwendet werden soll.
 
 >[!NOTE]
 >
 >Informationen zu den Grundlagen für Vorlagen und Komponenten in AEM finden Sie in den folgenden Ressourcen:
 >
 >* [Vorlagen](/help/sites-developing/templates.md)
-* [Komponenten](/help/sites-developing/components.md)
-
+>* [Komponenten](/help/sites-developing/components.md)
+>
 
 
 Nachdem Sie über grundlegende Kenntnisse zu Vorlagen und Komponenten verfügen, lesen Sie die folgenden Ressourcen:

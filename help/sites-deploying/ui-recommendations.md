@@ -1,8 +1,8 @@
 ---
 title: Empfehlungen für Kunden zur Benutzeroberfläche
-seo-title: Empfehlungen für Kunden zur Benutzeroberfläche
+seo-title: User Interface Recommendations for Customers
 description: Eine Liste mit Empfehlungen zur klassischen und Touch-optimierten Benutzeroberfläche.
-seo-description: Eine Liste mit Empfehlungen zur klassischen und Touch-optimierten Benutzeroberfläche.
+seo-description: A list of recommendations related to the classic and touch-optimized user interfaces.
 uuid: 9ec2c9de-a79e-4f2c-a90f-b38ba9553e07
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '815'
-ht-degree: 93%
+source-wordcount: '798'
+ht-degree: 92%
 
 ---
 
@@ -71,7 +71,7 @@ Nachfolgend finden Sie eine Liste mit Empfehlungen der Produktmanagement-Abteilu
      <li>Aktion „Seite bearbeiten“ konfigurieren, um den Seiteneditor der klassischen Benutzeroberfläche zu öffnen. Siehe <a href="#selecting-your-ui">Festlegen der Benutzeroberfläche</a>.</li>
     </ol> <p>Anschließend:</p>
     <ol>
-     <li>Komponentendialoge aktualisieren, um das Coral 3-Dialogformat zu verwenden. Adobe empfiehlt die Verwendung der <a href="/help/sites-developing/modernization-tools.md">AEM Modernisierungs-Tools</a> zum Aktualisieren der Komponenten.</li>
+     <li>Komponentendialoge aktualisieren, um das Coral 3-Dialogformat zu verwenden. Adobe empfiehlt die Verwendung der <a href="/help/sites-developing/modernization-tools.md">AEM Modernisierungs-Tools</a> , um die Komponenten zu aktualisieren.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -83,7 +83,7 @@ Nachfolgend finden Sie eine Liste mit Empfehlungen der Produktmanagement-Abteilu
      <li>Aktion „Seite bearbeiten“ konfigurieren, um den Seiteneditor der klassischen Benutzeroberfläche zu öffnen. Siehe <a href="#selecting-your-ui">Festlegen der Benutzeroberfläche</a>.</li>
     </ol> <p>Anschließend:</p>
     <ol>
-     <li>Komponentendialoge aktualisieren, um das Coral 3-Dialogformat zu verwenden. Adobe empfiehlt die Verwendung der <a href="/help/sites-developing/modernization-tools.md">AEM Modernisierungs-Tools</a> zum Aktualisieren der Komponenten.</li>
+     <li>Komponentendialoge aktualisieren, um das Coral 3-Dialogformat zu verwenden. Adobe empfiehlt die Verwendung der <a href="/help/sites-developing/modernization-tools.md">AEM Modernisierungs-Tools</a> , um die Komponenten zu aktualisieren.</li>
      <li>Konfigurieren Sie ContextHub (ersetzt ClientContext) und aktualisieren Sie die Seitenvorlagen für die Anwendung von ContextHub. Hinweis: ContextHub verfügt über einen Kompatibilitätsmodus, mit dem benutzerdefinierter ClientContext-Speicher geladen werden kann.</li>
     </ol> </td>
   </tr>
@@ -94,11 +94,11 @@ Nachfolgend finden Sie eine Liste mit Empfehlungen der Produktmanagement-Abteilu
  </tbody>
 </table>
 
-### Häufig gestellte Fragen (FAQ)  {#faq}
+### Häufig gestellte Fragen (FAQ) {#faq}
 
 Weitere Einzelheiten finden Sie im Knowledge Base-Artikel [Seitenbearbeitung mit der Touch-optimierten Benutzeroberfläche – Häufig gestellte Fragen (FAQ)](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html), darunter Informationen zur geplanten Entfernung der klassischen Benutzeroberfläche.
 
-### Festlegen der Benutzeroberfläche  {#selecting-your-ui}
+### Festlegen der Benutzeroberfläche {#selecting-your-ui}
 
 Weitere Informationen zur erforderlichen Konfiguration Ihres Systems finden Sie unter [Festlegen der Benutzeroberfläche](/help/sites-authoring/select-ui.md).
 
@@ -117,7 +117,7 @@ Für Hintergrundinformationen über den grundsätzlichen Umgang:
 Für detaillierte Entwicklungsinformationen:
 
 * [Design der Touch-optimierten Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md).
-* Verwenden Sie die [AEM Modernisierungs-Tools](/help/sites-developing/modernization-tools.md), um Dialogfelder für die Komponentenbearbeitung von der klassischen Benutzeroberfläche in die Touch-optimierte Benutzeroberfläche zu konvertieren.
+* Verwenden Sie die [AEM Modernisierungs-Tools](/help/sites-developing/modernization-tools.md) zum Konvertieren von Dialogfeldern zur Komponentenbearbeitung von der klassischen Benutzeroberfläche in die Touch-optimierte Benutzeroberfläche.
 
 * [Struktur der Touch-optimierten Benutzeroberfläche](/help/sites-developing/touch-ui-structure.md).
 

@@ -59,7 +59,7 @@ Adobe empfiehlt die Bereitstellung [!DNL Experience Manager Assets] auf Java 8 f
 <!-- TBD: Link to the latest official word around Java.
 -->
 
-### JVM-Parameter   {#jvm-parameters}
+### JVM-Parameter  {#jvm-parameters}
 
 Legen Sie die folgenden JVM-Parameter fest:
 

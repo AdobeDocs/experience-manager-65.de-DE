@@ -1,8 +1,8 @@
 ---
 title: Leaderboard-Funktion
-seo-title: Leaderboard-Funktion
+seo-title: Leaderboard Feature
 description: Hinzufügen einer Leaderboard-Komponente zu einer Seite
-seo-description: Hinzufügen einer Leaderboard-Komponente zu einer Seite
+seo-description: Adding a Leaderboard component to a page
 uuid: c4633919-75d3-4bc7-830c-ef9c28cc1cba
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,33 +13,33 @@ docset: aem65
 exl-id: 8b4d56d9-ba73-4eda-9773-3daaa9237abe
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '400'
 ht-degree: 18%
 
 ---
 
 # Leaderboard-Funktion {#leaderboard-feature}
 
-## Einführung {#introduction}
+## Einführung    {#introduction}
 
-Die Komponente `Leaderboard` bietet die Möglichkeit, sich ein Gefühl dafür zu verschaffen, wie Mitglieder innerhalb der Community interagieren, indem sie Mitglieder anhand der erworbenen Punkte (Basis-Scoring) oder ihres Fachwissens (erweiterte Scoring) in eine Rangfolge einordnet.
+Die `Leaderboard` -Komponente bietet die Möglichkeit, ein Gefühl dafür zu erhalten, wie Mitglieder innerhalb der Community interagieren, indem sie Mitglieder nach erworbenen Punkten (Basis-Scoring) oder ihrem Fachwissen (fortgeschrittenes Scoring) einstuft.
 
-Bevor Sie die Leaderboard-Komponente auf einer Seite einfügen, müssen Sie [Communities-Scoring und -Badges](/help/communities/implementing-scoring.md) konfigurieren.
+Bevor Sie die Leaderboard-Komponente auf einer Seite einfügen, müssen Sie [Communities-Scoring und -Abzeichen](/help/communities/implementing-scoring.md).
 
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
-* Hinzufügen der Komponente `Leaderboard` zu einer [Community-Site](/help/communities/overview.md#community-sites).
-* Konfigurationseinstellungen für die Komponente `Leaderboard` .
+* Hinzufügen der `Leaderboard` -Komponente [Community-Site](/help/communities/overview.md#community-sites).
+* Konfigurationseinstellungen für `Leaderboard` -Komponente.
 
 ### Hinzufügen eines Leaderboards zu einer Seite {#adding-a-leaderboard-to-a-page}
 
-Um eine `Leaderboard`-Komponente zu einer Seite im Autorenmodus hinzuzufügen, suchen Sie die Komponente
+So fügen Sie eine `Leaderboard` Komponente auf einer Seite im Autorenmodus zu finden, die Komponente
 
 * `Communities / Leaderboard`
 
 und ziehen Sie die Komponente an die gewünschte Stelle auf der Seite.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](/help/communities/basics.md).
+Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
 Bei der ursprünglichen Platzierung auf einer Community-Site wird die Komponente wie folgt angezeigt:
 
@@ -47,15 +47,15 @@ Bei der ursprünglichen Platzierung auf einer Community-Site wird die Komponente
 
 ### Leaderboard konfigurieren {#configuring-leaderboard}
 
-Wählen Sie die platzierte Komponente `Leaderboard` aus, um auf das Symbol `Configure` zuzugreifen, mit dem das Bearbeitungsdialogfeld geöffnet wird.
+Wählen Sie die platzierte `Leaderboard` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
 ![configure-new](assets/configure-new.png)
 
 ![configure-lederboard](assets/configure-leaderboard.png)
 
-#### Registerkarte „Settings“{#settings-tab}
+#### Registerkarte „Settings“ {#settings-tab}
 
-Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** an, welche Informationen zum Mitglied angezeigt werden sollen:
+Unter dem **[!UICONTROL Einstellungen]** angeben, welche Informationen zum Mitglied angezeigt werden sollen:
 
 * **Anzeigename**
 
@@ -79,7 +79,7 @@ Diese Option ist standardmäßig deaktiviert.
 
 #### Registerkarte Regeln {#rules-tab}
 
-Auf der Registerkarte **Regeln** finden Sie die Community-Site und die zugehörigen Scoring- und Badging-Regeln.
+Unter dem **Regeln** Registerkarte, der Community-Site und den zugehörigen Scoring- und Badging-Regeln
 
 * **Speicherort für Regel**
 
@@ -146,6 +146,6 @@ Leaderboard-Komponentenkonfiguration:
 
 ### Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie auf der Seite [Leaderboard Essentials](/help/communities/leaderboard.md) für Entwickler.
+Weitere Informationen finden Sie unter [Leaderboard-Grundlagen](/help/communities/leaderboard.md) für Entwickler.
 
-Anweisungen zum Erstellen von Regeln finden Sie auf der Seite [Communities-Scoring und -Abzeichen](/help/communities/implementing-scoring.md) für Administratoren.
+Anweisungen zum Erstellen von Regeln finden Sie im Abschnitt [Communities-Scoring und -Abzeichen](/help/communities/implementing-scoring.md) für Administratoren.

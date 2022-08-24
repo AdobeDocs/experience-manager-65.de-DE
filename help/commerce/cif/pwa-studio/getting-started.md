@@ -8,7 +8,7 @@ exl-id: de7b8f05-b6b7-4105-84a5-940c16ebf2b4
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '770'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -116,7 +116,7 @@ Je nach Anwendungsfall sollten Sie eigene benutzerdefinierte Inhaltsfragmentmode
 
 Produktions-Setups können verschiedene Aspekte aufweisen.
 
-* Sie können über einen einzigen zusammengeführten GraphQL-Endpunkt verfügen, der AEM und Adobe Commerce-GraphQL-Daten kombiniert, anstatt den Apollo-Client anzupassen.
+* Sie können über einen einzigen zusammengeführten GraphQL-Endpunkt verfügen, der AEM- und Adobe Commerce-GraphQL-Daten kombiniert, anstatt den Apollo-Client anzupassen.
 * Ihre PWA Studio-Anwendung könnte die AEM GraphQL-Endpunkt-URL direkt verwenden, ohne dass ein Proxy mit UPWARD vorhanden ist. Der Proxy kann auch auf eine andere Ebene verschoben werden (z. B. CDN).
 * Welcher Ansatz für Sie am besten geeignet ist, hängt auch stark davon ab, wie Sie die PWA Studio-Anwendung an den Endbenutzer bereitstellen.
 

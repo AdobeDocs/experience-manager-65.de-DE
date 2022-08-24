@@ -52,7 +52,7 @@ ht-degree: 59%
 
 ### boolproperty {#boolproperty}
 
-Sucht nach JCR BOOLEAN-Eigenschaften. Akzeptiert nur die Werte &quot; `true`&quot;und &quot; `false`&quot;. Im Fall von „`false`“ besteht eine Übereinstimmung, falls die Eigenschaft über den Wert „`false`“ verfügt oder überhaupt nicht vorhanden ist. Dies kann für die Prüfung auf boolesche Flags nützlich sein, die nur festgelegt werden, wenn sie aktiviert sind.
+Sucht nach JCR BOOLEAN-Eigenschaften. Akzeptiert nur die Werte &quot; `true`&quot; und &quot; `false`&quot;. Im Fall von „`false`“ besteht eine Übereinstimmung, falls die Eigenschaft über den Wert „`false`“ verfügt oder überhaupt nicht vorhanden ist. Dies kann für die Prüfung auf boolesche Flags nützlich sein, die nur festgelegt werden, wenn sie aktiviert sind.
 
 Der übernommene Parameter „`operation`“ hat keine Bedeutung.
 
@@ -60,12 +60,12 @@ Unterstützt die Facettenextraktion. Erstellt für jeden Wert (`true` oder `fals
 
 #### Eigenschaften {#properties}
 
-* ****
-boolpropertyRelativer Pfad zur Eigenschaft, z. B. 
+* **boolproperty**
+relativer Pfad zur Eigenschaft, z. B. 
 `myFeatureEnabled` oder `jcr:content/myFeatureEnabled`
 
-* ****
-Wert, für den die Eigenschaft geprüft werden soll, &quot; 
+* **value**
+Wert, für den die Eigenschaft überprüft werden soll, &quot; 
 `true`&quot; oder &quot; `false`&quot;
 
 ### contentfragment {#contentfragment}
@@ -98,7 +98,7 @@ Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen.
 
 * **operation**
 
-   &quot; `equals`&quot;für exakte Übereinstimmung, &quot; `!=`&quot;für Ungleichheitsvergleich, &quot; `greater`&quot;für property1 größer als property2, &quot; `>=`&quot;für property1 größer oder gleich property2. Der Standardwert ist &quot; `equals`&quot;.
+   &quot; `equals`&quot; für exakte Übereinstimmung, &quot; `!=`&quot; für den Vergleich der Ungleichheit &quot; `greater`&quot; für property1 größer als property2, &quot; `>=`&quot; für property1, größer als oder gleich property2. Der Standardwert ist &quot; `equals`&quot;.
 
 ### daterange {#daterange}
 
@@ -114,7 +114,7 @@ Filtern wird nicht unterstützt.
 
 * **property**
 
-   relativer Pfad zu einer `DATE`-Eigenschaft, z. B. `jcr:lastModified`
+   relativer Pfad zu einem `DATE` -Eigenschaft, z. B. `jcr:lastModified`
 
 * **lowerBound**
 
@@ -122,15 +122,15 @@ Filtern wird nicht unterstützt.
 
 * **lowerOperation**
 
-   &quot; `>`&quot; (neuer) oder &quot; `>=`&quot; (ab oder neuer), gilt für `lowerBound`. Der Standardwert lautet &quot; `>`&quot;.
+   &quot; `>`&quot;(neuer) oder &quot; `>=`&quot;(at oder neuer), gilt für die `lowerBound`. Der Standardwert lautet &quot; `>`&quot;.
 
 * **upperBound**
 
-   Obergrenze, für die die Eigenschaft geprüft werden soll, z. B. `2014-10-01T12:15:00`
+   Obergrenze, für die die Eigenschaft geprüft werden soll, beispielsweise `2014-10-01T12:15:00`
 
 * **upperOperation**
 
-   &quot; `<`&quot; (älter) oder &quot; `<=`&quot; (älter oder älter), gilt für `upperBound`. Der Standardwert lautet &quot; `<`&quot;.
+   &quot; `<`&quot; (älter) oder &quot; `<=`&quot; (mindestens), gilt für die `upperBound`. Der Standardwert lautet &quot; `<`&quot;.
 
 * **timeZone**
 
@@ -195,7 +195,7 @@ group.2_group.path=/content/dam/geometrixx
 group.2_group.type=dam:Asset
 ```
 
-Hierbei wird nach dem Begriff &quot;**Management**&quot;auf Seiten in `/content/geometrixx/en` oder in Assets in `/content/dam/geometrixx` gesucht.
+Hierbei wird nach dem Begriff &quot;**Management**&quot;innerhalb von Seiten in `/content/geometrixx/en` oder in Assets `/content/dam/geometrixx`.
 
 Dies ist konzeptionell `fulltext AND ( (path AND type) OR (path AND type) )`. Beachten Sie, dass solche ODER-Verknüpfungen gute Indizes benötigen, um optimale Leistung zu bieten.
 
@@ -203,11 +203,11 @@ Dies ist konzeptionell `fulltext AND ( (path AND type) OR (path AND type) )`. Be
 
 * **p.or**
 
-   Wenn auf &quot;`true`&quot;gesetzt, muss nur ein Prädikat in der Gruppe übereinstimmen. Standardmäßig ist „`false`“ festgelegt, was bedeutet, dass alle übereinstimmen müssen.
+   wenn auf &quot; `true`&quot;, muss nur ein Prädikat in der Gruppe übereinstimmen. Standardmäßig ist „`false`“ festgelegt, was bedeutet, dass alle übereinstimmen müssen.
 
 * **p.not**
 
-   Wenn auf &quot; `true`&quot;gesetzt, wird die Gruppe umgekehrt (standardmäßig &quot;`false`&quot;)
+   wenn auf &quot; `true`&quot;, wird die Gruppe umgekehrt (standardmäßig &quot; `false`&quot;)
 
 * **&lt;predicate>**
 
@@ -227,7 +227,7 @@ Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen. Facettene
 
 * **hasPermission**
 
-   kommagetrennte JCR-Berechtigungen, die die aktuelle Benutzersitzung ALLE für den betreffenden Knoten haben muss; zum Beispiel `jcr:write`, `jcr:modifyAccessControl`
+   kommagetrennte JCR-Berechtigungen, die die aktuelle Benutzersitzung ALLE für den betreffenden Knoten haben muss; Beispiel `jcr:write`, `jcr:modifyAccessControl`
 
 ### language {#language}
 
@@ -245,7 +245,7 @@ Unterstützt die Facettenextraktion. Stellt Buckets für jeden eindeutigen Sprac
 
 ### mainasset {#mainasset}
 
-Prüft, ob ein Knoten ein DAM-Haupt-Asset und kein Unter-Asset ist. Dies ist im Allgemeinen jeder Knoten, der sich nicht in einem subassets-Knoten befindet. Hierbei wird nicht auf den Knotentyp `dam:Asset` geprüft. Um diese Eigenschaft zu verwenden, legen Sie einfach &quot; `mainasset=true`&quot;oder &quot; `mainasset=false`&quot;fest, es gibt keine weiteren Eigenschaften.
+Prüft, ob ein Knoten ein DAM-Haupt-Asset und kein Unter-Asset ist. Dies ist im Allgemeinen jeder Knoten, der sich nicht in einem subassets-Knoten befindet. Hierbei wird nicht auf den Knotentyp `dam:Asset` geprüft. Um dieses Prädikat zu verwenden, setzen Sie einfach &quot; `mainasset=true`&quot; oder &quot; `mainasset=false`&quot;, gibt es keine weiteren Eigenschaften.
 
 Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen.
 
@@ -255,7 +255,7 @@ Unterstützt die Facettenextraktion. Stellt zwei Buckets für Haupt- und Unter-A
 
 * **mainasset**
 
-   boolesch, &quot; `true`&quot;für Haupt-Assets, &quot; `false`&quot;für Unter-Assets
+   boolean, &quot; `true`&quot; für Haupt-Assets, &quot; `false`&quot; für Unter-Assets
 
 ### memberOf {#memberof}
 
@@ -279,7 +279,7 @@ Unterstützt die Facettenextraktion. Stellt Buckets für alle eindeutigen Knoten
 
 * **nodename**
 
-   Knotennamenmuster, das Platzhalterzeichen erlaubt: `*` = beliebiges oder kein Zeichen, `?` = beliebiges Zeichen, `[abc]` = nur Zeichen in Klammern
+   Knotennamenmuster, das Platzhalterzeichen erlaubt: `*` = beliebiges oder kein Zeichen, `?` = beliebige Zeichen, `[abc]` = nur Zeichen in Klammern
 
 ### notexpired {#notexpired}
 
@@ -297,7 +297,7 @@ Unterstützt die Facettenextraktion auf die gleiche Weise wie die Eigenschaft �
 
 * **property**
 
-   relativer Pfad zur zu prüfenden `DATE`-Eigenschaft (erforderlich)
+   relativen Pfad zum `DATE` zu prüfende Eigenschaft (erforderlich)
 
 ### orderby {#orderby}
 
@@ -307,11 +307,11 @@ Ermöglicht das Sortieren des Ergebnisses. Wenn nach mehreren Eigenschaften geor
 
 * **orderby**
 
-   entweder Name der JCR-Eigenschaft, angegeben durch ein vorangestelltes @, z. B. `@jcr:lastModified` oder `@jcr:content/jcr:title`, oder ein anderes Prädikat in der Abfrage, z. B. `2_property`, nach dem sortiert werden soll
+   entweder JCR-Eigenschaftsname, der durch ein vorangestelltes @ angegeben wird, z. B. `@jcr:lastModified` oder `@jcr:content/jcr:title`oder einer anderen Eigenschaft in der Abfrage, beispielsweise `2_property`, nach der sortiert werden soll
 
 * **sortieren**
 
-   Sortierrichtung, entweder &quot; `desc`&quot;für absteigende oder &quot; `asc`&quot;für aufsteigende (Standard)
+   Sortierrichtung, entweder &quot; `desc`&quot; für absteigende oder &quot; `asc`&quot; für aufsteigend (Standard)
 
 * **Case**
 
@@ -327,15 +327,15 @@ Facettenextraktion wird nicht unterstützt.
 
 * **path**
 
-   Pfadmuster; je nach genauem Ergebnis wird entweder die gesamte Unterstruktur übereinstimmen (z. B. `//*` in xpath anhängen, aber beachten Sie, dass dies nicht den Basispfad enthält) (exact=false, Standard) oder nur ein exakter Pfad stimmt überein, der Platzhalter ( `*`) enthalten kann. Wenn &quot;self&quot;festgelegt ist, wird die gesamte Unterstruktur einschließlich des Basisknotens durchsucht.
+   Pfadmuster; Je nach genauem Ergebnis stimmt entweder die gesamte Unterstruktur überein (z. B. anhängen `//*` in xpath, aber beachten Sie, dass dies nicht den Basispfad enthält (exact=false, Standard) oder nur einen exakten Pfad übereinstimmt, der Platzhalter ( `*`); Wenn &quot;self&quot;festgelegt ist, wird die gesamte Unterstruktur einschließlich des Basisknotens durchsucht.
 
 * **exact**
 
-   Wenn `exact` &quot;true/on&quot;ist, muss der genaue Pfad übereinstimmen, er kann jedoch einfache Platzhalter ( `*`) enthalten, die mit Namen übereinstimmen, jedoch nicht &quot; `/`&quot;; Wenn der Wert false ist (Standard), werden alle untergeordneten Elemente einbezogen (optional)
+   if `exact` auf &quot;true/on&quot;festgelegt ist, muss der genaue Pfad übereinstimmen, er kann jedoch einfache Platzhalterzeichen ( `*`), die mit Namen übereinstimmen, aber nicht &quot; `/`&quot;; Wenn der Wert false ist (Standard), werden alle untergeordneten Elemente einbezogen (optional)
 
 * **flach**
 
-   durchsucht nur die direkten untergeordneten Elemente (z. B. &quot; `/*`&quot;in xpath anhängen) (nur verwendet, wenn &quot;`exact`&quot;nicht wahr ist, optional)
+   durchsucht nur die direkten untergeordneten Elemente (z. B. angehängt &quot; `/*`&quot; in xpath (nur verwendet, wenn &quot;) `exact`&#39; is not true, optional)
 
 * **self**
 
@@ -351,7 +351,7 @@ Unterstützt die Facettenextraktion. Stellt für jeden eindeutigen Eigenschaftsw
 
 * **property**
 
-   relativer Pfad zu einer Eigenschaft, z. B. `jcr:title`
+   relativer Pfad zur Eigenschaft, z. B. `jcr:title`
 
 * **value**
 
@@ -359,19 +359,19 @@ Unterstützt die Facettenextraktion. Stellt für jeden eindeutigen Eigenschaftsw
 
 * **N_value**
 
-   Verwenden Sie `1_value`, `2_value`, ... , um nach mehreren Werten zu suchen (standardmäßig kombiniert mit `OR`, wobei `AND` if und=true) (seit 5.3)
+   use `1_value`, `2_value`, um zu überprüfen, ob mehrere Werte vorliegen (kombiniert mit `OR` standardmäßig mit `AND` if und=true) (seit 5.3)
 
 * **und**
 
-   auf &quot;true&quot;gesetzt, um mehrere Werte ( `N_value`) mit AND (seit 5.3) zu kombinieren
+   auf true gesetzt, um mehrere Werte zu kombinieren ( `N_value`) mit UND (seit 5.3)
 
 * **operation**
 
-   &quot;`equals`&quot;für exakte Übereinstimmung (Standard), &quot; `unequals`&quot;für Ungleichheitsvergleich, &quot; `like`&quot;für die Verwendung der `jcr:like` xpath-Funktion (optional), &quot; `not`&quot;für keine Übereinstimmung (z. B. &quot;`not(@prop)`&quot;in xpath, value param wird ignoriert) oder &quot; `exists`&quot;für die Prüfung der Existenz (Wert kann wahr sein - Eigenschaft muss vorhanden sein, der Standardwert - oder false - identisch mit &quot; `not`&quot;)
+   &quot;`equals`&quot; für exakte Übereinstimmung (Standard), &quot; `unequals`&quot; für den Vergleich der Ungleichheit &quot; `like`&quot; zur Verwendung der `jcr:like` xpath-Funktion (optional), &quot; `not`&quot;für keine Übereinstimmung (z. B. &quot;`not(@prop)`&quot; in xpath, value param wird ignoriert) oder &quot; `exists`&quot; für Prüfung der Existenz (Wert kann wahr sein - Eigenschaft muss vorhanden sein, der Standardwert - oder false - entspricht &quot; `not`&quot;)
 
 * **depth**
 
-   Anzahl der Platzhalterebenen, unter denen die Eigenschaft/der relative Pfad vorhanden sein kann (z. B. überprüft `property=size depth=2` Knoten/Größe, Knoten/&amp;ast;/Größe und Knoten/&amp;ast;/&amp;ast;/size)
+   Anzahl der Platzhalterebenen, unter denen die Eigenschaft/der relative Pfad vorhanden sein kann (z. B. `property=size depth=2` überprüft Knoten/Größe, Knoten/&amp;ast;/Größe und Knoten/&amp;ast;/&amp;ast;/size).
 
 ### rangeproperty {#rangeproperty}
 
@@ -393,7 +393,7 @@ Facettenextraktion wird nicht unterstützt.
 
 * **lowerOperation**
 
-   &quot; `>`&quot;(Standard) oder &quot;`>=`&quot;, gilt für `lowerValue`
+   &quot; `>`&quot;(Standard) oder &quot; `>=`&quot;, gilt für die `lowerValue`
 
 * **upperBound**
 
@@ -401,7 +401,7 @@ Facettenextraktion wird nicht unterstützt.
 
 * **upperOperation**
 
-   &quot; `<`&quot;(Standard) oder &quot;`<=`&quot;, gilt für `lowerValue`
+   &quot; `<`&quot;(Standard) oder &quot; `<=`&quot;, gilt für die `lowerValue`
 
 * **decimal**
 
@@ -409,15 +409,15 @@ Facettenextraktion wird nicht unterstützt.
 
 ### relativedaterange {#relativedaterange}
 
-Gleicht `JCR DATE`-Eigenschaften anhand von Zeit-Offsets, die relativ zur aktuellen Serverzeit sind, mit einem Datums-/Zeitintervall ab. Sie können `lowerBound` und `upperBound` entweder mithilfe eines Millisekundenwerts oder der Bugzilla-Syntax `1s 2m 3h 4d 5w 6M 7y` (eine Sekunde, zwei Minuten, drei Stunden, vier Tage, fünf Wochen, sechs Monate, sieben Jahre) angeben. Präfix mit &quot; `-`&quot;, um einen negativen Versatz vor der aktuellen Zeit anzugeben. Wenn Sie nur `lowerBound` oder `upperBound` angeben, wird für die jeweils andere Grenze standardmäßig „0“ festgelegt, was die aktuelle Zeit bedeutet.
+Gleicht `JCR DATE`-Eigenschaften anhand von Zeit-Offsets, die relativ zur aktuellen Serverzeit sind, mit einem Datums-/Zeitintervall ab. Sie können `lowerBound` und `upperBound` entweder mit einem Millisekundenwert oder der bugzilla-Syntax `1s 2m 3h 4d 5w 6M 7y` (eine Sekunde, zwei Minuten, drei Stunden, vier Tage, fünf Wochen, sechs Monate, sieben Jahre). Präfix mit &quot; `-`&quot;, um einen negativen Offset vor der aktuellen Zeit anzugeben. Wenn Sie nur `lowerBound` oder `upperBound` angeben, wird für die jeweils andere Grenze standardmäßig „0“ festgelegt, was die aktuelle Zeit bedeutet.
 
-Zum Beispiel:
+Beispiel:
 
-* `upperBound=1h` (und nein  `lowerBound`) würde etwas in der nächsten Stunde auswählen
-* `lowerBound=-1d` (und nein  `upperBound`) würde in den letzten 24 Stunden etwas auswählen
-* `lowerBound=-6M` und  `upperBound=-3M` wählen alle 6 Monate bis 3 Monate aus.
+* `upperBound=1h` (und nein `lowerBound`) würde alles in der nächsten Stunde auswählen
+* `lowerBound=-1d` (und nein `upperBound`) würde alles in den letzten 24 Stunden auswählen
+* `lowerBound=-6M` und `upperBound=-3M` Alles zwischen 6 Monaten und 3 Monaten wählen.
 * `lowerBound=-1500` und `upperBound=5500` wählt alles aus, was im Zeitraum zwischen einschließlich 1500 Millisekunden in der Vergangenheit und einschließlich 5500 Millisekunden in der Zukunft liegt. 
-* `lowerBound=1d` und  `upperBound=2d` wählt alles übermorgen aus.
+* `lowerBound=1d` und `upperBound=2d` würde alles am übernächsten Tag auswählen
 
 Hinweis: Schaltjahre werden nicht berücksichtigt und alle Monate haben 30 Tage.
 
@@ -429,11 +429,11 @@ Unterstützt die Facettenextraktion auf die gleiche Weise wie die Eigenschaft �
 
 * **upperBound**
 
-   oberes Datum in Millisekunden oder `1s 2m 3h 4d 5w 6M 7y` (eine Sekunde, zwei Minuten, drei Stunden, vier Tage, fünf Wochen, sechs Monate, sieben Jahre) relativ zur aktuellen Serverzeit, verwenden Sie &quot;-&quot;für einen negativen Versatz
+   oberes Datum in Millisekunden oder `1s 2m 3h 4d 5w 6M 7y` (eine Sekunde, zwei Minuten, drei Stunden, vier Tage, fünf Wochen, sechs Monate, sieben Jahre) Im Vergleich zur aktuellen Serverzeit verwenden Sie &quot;-&quot;für einen negativen Offset.
 
 * **lowerBound**
 
-   niedrigeres Datum in Millisekunden oder `1s 2m 3h 4d 5w 6M 7y` (eine Sekunde, zwei Minuten, drei Stunden, vier Tage, fünf Wochen, sechs Monate, sieben Jahre) in Bezug auf die aktuelle Serverzeit, verwenden Sie &quot;-&quot;für einen negativen Versatz
+   untere Datumsgrenze in Millisekunden oder `1s 2m 3h 4d 5w 6M 7y` (eine Sekunde, zwei Minuten, drei Stunden, vier Tage, fünf Wochen, sechs Monate, sieben Jahre) Im Vergleich zur aktuellen Serverzeit verwenden Sie &quot;-&quot;für einen negativen Offset.
 
 ### root {#root}
 
@@ -453,11 +453,11 @@ Der Name „root“ wird in Abfragen nie verwendet, er ist impliziert.
 
 * **p.guessTotal**
 
-   empfohlen: Vermeidung der Berechnung des Gesamtergebnisses, das kostspielig sein kann; entweder eine Zahl, die den maximal zu zählenden Gesamtwert angibt (z. B. 1000, eine Zahl, die Benutzern genügend Feedback zur groben Größe und exakten Zahlen für kleinere Ergebnisse gibt) oder &quot; `true`&quot;, um nur bis zum erforderlichen Minimum `p.offset` + `p.limit` zu zählen
+   empfohlen: Vermeidung der Berechnung des Gesamtergebnisses, das kostspielig sein kann; entweder eine Zahl, die die maximal zu zählende Gesamtzahl angibt (z. B. 1000, eine Zahl, die Benutzern genügend Feedback zur groben Größe und exakten Zahlen für kleinere Ergebnisse gibt) oder &quot; `true`&quot; nur bis zu dem erforderlichen Minimum zählen `p.offset` + `p.limit`
 
 * **p.excerpt**
 
-   Wenn auf &quot; `true`&quot;festgelegt, fügen Sie einen Volltextextextrakt in das Ergebnis ein.
+   wenn auf &quot; `true`&quot;, Volltextextextraktion in das Ergebnis einschließen
 
 * **p.hits**
 
@@ -465,15 +465,15 @@ Der Name „root“ wird in Abfragen nie verwendet, er ist impliziert.
 
    * **einfach**:
 
-      Minimale Elemente wie `path`, `title`, `lastmodified`, `excerpt` (falls festgelegt)
+      Minimalelemente wie `path`, `title`, `lastmodified`, `excerpt` (falls festgelegt)
 
    * **vollständig**:
 
-      Sling JSON-Rendering des Knotens, wobei `jcr:path` den Pfad des Treffers angibt: Standardmäßig werden nur die direkten Eigenschaften des Knotens aufgelistet. Schließen Sie einen tieferen Baum mit `p.nodedepth=N` ein, wobei 0 die gesamte, unendliche Unterstruktur bedeutet. Fügen Sie `p.acls=true` hinzu, um die JCR-Berechtigungen der aktuellen Sitzung für das angegebene Ergebniselement (Zuordnungen: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)
+      Sling JSON-Rendering des Knotens mit `jcr:path` gibt den Pfad des Treffers an: Standardmäßig werden nur die direkten Eigenschaften des Knotens aufgelistet, fügen Sie einen tieferen Baum mit `p.nodedepth=N`, wobei 0 die gesamte, unendliche Unterstruktur bedeutet; add `p.acls=true` , um die JCR-Berechtigungen der aktuellen Sitzung für das angegebene Ergebniselement (Zuordnungen: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)
 
    * **selektiv**:
 
-      nur Eigenschaften, die in `p.properties` angegeben sind. Hierbei handelt es sich um eine durch Leerzeichen getrennte Liste relativer Pfade (verwenden Sie &quot;+&quot;in URLs). Wenn der relative Pfad eine Tiefe von > 1 aufweist, werden diese als untergeordnete Objekte dargestellt. Die spezielle Eigenschaft jcr:path enthält den Pfad des Treffers
+      nur Eigenschaften angegeben in `p.properties`, wobei es sich um eine durch Leerzeichen getrennte Liste relativer Pfade handelt (verwenden Sie &quot;+&quot;in URLs); Wenn der relative Pfad eine Tiefe von > 1 aufweist, werden diese als untergeordnete Objekte dargestellt. Die spezielle Eigenschaft jcr:path enthält den Pfad des Treffers
 
 ### savedquery {#savedquery}
 
@@ -489,11 +489,11 @@ Die Facettenextraktion wird für die Eigenschaften der gespeicherten Abfrage nic
 
 * **savedquery**
 
-   Pfad zur gespeicherten Abfrage (String-Eigenschaft oder `nt:file`-Knoten)
+   Pfad zur gespeicherten Abfrage (String-Eigenschaft oder `nt:file` node)
 
 ### similar {#similar}
 
-Ähnlichkeitssuche mit `rep:similar()` von JCR XPath.
+Ähnlichkeitssuche mit JCR XPath `rep:similar()`.
 
 Filtern wird nicht unterstützt. Facettenextraktion wird nicht unterstützt.
 
@@ -501,9 +501,9 @@ Filtern wird nicht unterstützt. Facettenextraktion wird nicht unterstützt.
 
 * **similar** Absoluter Pfad zum Knoten, für den ähnliche Knoten gefunden werden sollen.
 
-* ****
-locala relativer Pfad zu einem untergeordneten Knoten oder 
-`.` für den aktuellen Knoten (optional, Standard ist &quot;  `.`&quot;)
+* **lokal**
+einen relativen Pfad zu einem untergeordneten Knoten oder 
+`.` für den aktuellen Knoten (optional, Standard ist &quot; `.`&quot;)
 
 ### Tag {#tag}
 
@@ -519,11 +519,11 @@ Unterstützt die Facettenextraktion. Stellt Buckets für jedes einzigartige Tag 
 
 * **N_value**
 
-   Verwenden Sie `1_value`, `2_value`, ... , um nach mehreren Tags zu suchen (standardmäßig kombiniert mit `OR`, wobei `AND` if und=true) (seit 5.6)
+   use `1_value`, `2_value`, ... , um nach mehreren Tags zu suchen (kombiniert mit `OR` standardmäßig mit `AND` if und=true) (seit 5.6)
 
 * **property**
 
-   Eigenschaft (oder relativer Pfad zur Eigenschaft), die angezeigt werden soll (Standard &quot; `cq:tags`&quot;)
+   Eigenschaft (oder relativer Pfad zur Eigenschaft), die angezeigt werden soll (Standardeinstellung ) `cq:tags`&quot;)
 
 ### tagid {#tagid}
 
@@ -539,11 +539,11 @@ Unterstützt die Facettenextraktion. Stellt Buckets für jedes einzigartige Tag 
 
 * **N_value**
 
-   Verwenden Sie `1_value`, `2_value`, ... , um nach mehreren Tagid zu suchen (standardmäßig kombiniert mit `OR`, wobei `AND` if und=true) (seit 5.6)
+   use `1_value`, `2_value`, ... , um nach mehreren Tags zu suchen (kombiniert mit `OR` standardmäßig mit `AND` if und=true) (seit 5.6)
 
 * **property**
 
-   Eigenschaft (oder relativer Pfad zur Eigenschaft), die angezeigt werden soll (Standard &quot; `cq:tags`&quot;)
+   Eigenschaft (oder relativer Pfad zur Eigenschaft), die angezeigt werden soll (Standardeinstellung ) `cq:tags`&quot;)
 
 ### tagsearch {#tagsearch}
 
@@ -559,13 +559,13 @@ Facettenextraktion wird nicht unterstützt.
 
 * **property**
 
-   Eigenschaft (oder relativer Pfad zur Eigenschaft), die angezeigt werden soll (Standard &quot; `cq:tags`&quot;)
+   Eigenschaft (oder relativer Pfad zur Eigenschaft), die angezeigt werden soll (Standardeinstellung ) `cq:tags`&quot;)
 
 * **lang**
 
    , um nur in einem bestimmten lokalisierten Tag-Titel zu suchen (z. B. &quot; `de`&quot;)
 
-* **all**
+* **alle**
 
    (bool) den gesamten Tag-Volltext durchsuchen, d. h. alle Titel, Beschreibungen usw. (hat Vorrang vor &quot;l `ang`&quot;)
 

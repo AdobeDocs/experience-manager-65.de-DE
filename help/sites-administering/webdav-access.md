@@ -1,8 +1,8 @@
 ---
 title: WebDAV-Zugriff
-seo-title: WebDAV-Zugriff
+seo-title: WebDAV Access
 description: Informieren Sie sich über den WebDAV-Zugriff in AEM.
-seo-description: Informieren Sie sich über den WebDAV-Zugriff in AEM.
+seo-description: Learn about WebDAV access in AEM.
 uuid: b0ecaa5d-5454-42df-8453-404ece734c32
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 1eaf7afe-a181-45df-8766-bd564b1ad22a
 exl-id: 891ee66c-e49c-4561-8fef-e6e448a8aa1c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 78%
+source-wordcount: '1144'
+ht-degree: 79%
 
 ---
 
@@ -47,7 +47,7 @@ Wenn Sie mit WebDAV Ordner und Dateien erstellen und bearbeiten, erstellt und be
 >
 >Lesen Sie sich vor der Einrichtung von WebDAV die [technischen Voraussetzungen](/help/sites-deploying/technical-requirements.md#webdav-clients) durch.
 
-## WebDAV-URLs  {#webdav-urls}
+## WebDAV-URLs {#webdav-urls}
 
 Die URL für den WebDAV-Server weist die folgende Struktur auf:
 
@@ -98,7 +98,7 @@ http://localhost:4502/crx/repository/staging
 
 ## Verbinden über WebDAV {#connecting-via-webdav}
 
-[Wie oben](/help/sites-administering/webdav-access.md#general) erwähnt, verweisen Sie zur Verbindung mit Ihrem Repository mithilfe des WebDAV-Protokolls Ihren WebDAV-Client auf Ihren Repository-Speicherort. Je nach Betriebssystem sind jedoch unterschiedliche Schritte zur Verbindung des Clients nötig; ggf. muss auch das Betriebssystem konfiguriert werden.
+[Wie oben erwähnt](/help/sites-administering/webdav-access.md#general)Um mithilfe des WebDAV-Protokolls eine Verbindung zu Ihrem Repository herzustellen, verweisen Sie Ihren WebDAV-Client auf Ihren Repository-Speicherort. Je nach Betriebssystem sind jedoch unterschiedliche Schritte zur Verbindung des Clients nötig; ggf. muss auch das Betriebssystem konfiguriert werden.
 
 In diesem Dokument finden Sie Anweisungen für die folgenden Betriebssysteme:
 
@@ -112,7 +112,7 @@ Um ein System mit Microsoft Windows 7 (oder höher) mit einer AEM-Instanz zu ve
 
 Nach Aktualisierung der Registrierung lässt sich die AEM-Instanz als Laufwerk einbinden.
 
-#### Konfiguration unter Windows 7 und höher  {#windows-and-greater-configuration}
+#### Konfiguration unter Windows 7 und höher {#windows-and-greater-configuration}
 
 So aktualisieren Sie die Registrierung, um die grundlegende Authentifizierung über ein ungesichertes Netzwerk zuzulassen:
 
@@ -122,15 +122,15 @@ So aktualisieren Sie die Registrierung, um die grundlegende Authentifizierung ü
    HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters
    ```
 
-1. Setzen Sie den Registrierungseintrag-Unterschlüssel `BasicAuthLevel` auf den Wert `2` oder höher.
+1. Legen Sie die `BasicAuthLevel` Registrierungseintrag-Unterschlüssel auf einen Wert von `2` oder höher.
 
    Wenn der Unterschlüssel nicht vorhanden ist, fügen Sie ihn hinzu.
 
 1. Sie müssen das System neu starten, damit die Änderung der Registrierung übernommen wird.
 
-Weitere Informationen zu dieser Registrierungsänderung finden Sie unter [Microsoft Support KB 841215](https://support.microsoft.com/default.aspx/kb/841215).
+Siehe [Microsoft-Support KB 841215](https://support.microsoft.com/default.aspx/kb/841215) für weitere Informationen zu dieser Registrierungsänderung.
 
-Informationen zur Verbesserung der Reaktionsfähigkeit des WebDav-Clients unter Windows finden Sie unter [Microsoft Support KB 2445570](https://support.microsoft.com/kb/2445570) .
+Siehe [Microsoft-Support KB 2445570](https://support.microsoft.com/kb/2445570) für Informationen zur Verbesserung der Reaktionsfähigkeit des WebDav-Clients unter Windows.
 
 >[!NOTE]
 >
@@ -140,15 +140,15 @@ Informationen zur Verbesserung der Reaktionsfähigkeit des WebDav-Clients unter 
 
 Auch bei Windows 8 müssen Sie den Registrierungs-Eintrag ändern, [wie für Windows 7 und höher beschrieben](/help/sites-administering/webdav-access.md#windows-and-greater-configuration). Zuvor müssen Sie jedoch die Desktop Experience aktivieren, um den Registrierungs-Eintrag sehen zu können.
 
-Um das Desktop-Erlebnis zu aktivieren, öffnen Sie **Server-Manager**, dann **Funktionen**, dann **Funktionen hinzufügen** und dann **Desktop-Erlebnis**.
+Um das Desktop-Erlebnis zu aktivieren, öffnen Sie **Server Manager**, dann **Funktionen**, dann **Funktionen hinzufügen**, dann **Desktop-Erlebnis**.
 
 Nach dem Neustart ist der Registrierungs-Eintrag (wie für Windows 7 beschrieben) verfügbar. Bearbeiten Sie ihn so, wie für Windows 7 oder höher beschrieben.
 
-#### Herstellen der Verbindung unter Windows  {#connecting-in-windows}
+#### Herstellen der Verbindung unter Windows {#connecting-in-windows}
 
 So stellen Sie unter Windows eine Verbindung über WebDAV zu AEM her:
 
-1. Öffnen Sie **Windows Explorer** oder **Datei-Explorer** und klicken Sie auf **Computer** oder **Dieser PC**.
+1. Öffnen **Windows Explorer** oder **Datei-Explorer** und klicken Sie auf **Computer** oder **Dieser PC**.
 
    ![chlimage_1-112](assets/chlimage_1-112a.png)
 
@@ -167,7 +167,7 @@ So stellen Sie unter Windows eine Verbindung über WebDAV zu AEM her:
    >
    >Wenn sich AEM an einem anderen Port befindet, verwenden Sie diese Portnummer anstelle von 4502. Wenn Sie das Inhalts-Repository nicht auf dem lokalen Rechner ausführen, ersetzen Sie `localhost` durch den entsprechen Servernamen bzw. die IP-Adresse.
 
-1. Geben Sie den Benutzernamen `admin` und das Kennwort `admin` ein. Adobe empfiehlt, das vorkonfigurierte Admin-Konto zum Testen zu nutzen.
+1. Benutzernamen eingeben `admin` und Kennwort `admin`. Adobe empfiehlt, das vorkonfigurierte Admin-Konto zum Testen zu nutzen.
 
    ![chlimage_1-114](assets/chlimage_1-114a.png)
 
@@ -204,14 +204,14 @@ So stellen Sie mit GNOME eine Verbindung zu AEM über WebDAV her:
 1. Wählen Sie in Nautilus (Dateimanager) **Orte** und dann **Mit Server verbinden** aus.
 1. Wählen Sie im Fenster **Mit Server verbinden** unter „Dienste-Typ“ die Option „WebDAV (HTTP)“ aus.
 
-1. Geben Sie unter **Server** `http://localhost:4502/crx/repository/crx.default` ein.
+1. In **Server**, eingeben `http://localhost:4502/crx/repository/crx.default`
 
    >[!NOTE]
    >
    >Wenn sich AEM an einem anderen Port befindet, verwenden Sie diese Portnummer anstelle von 4502. Wenn Sie das Inhalts-Repository nicht auf dem lokalen Rechner ausführen, ersetzen Sie `localhost` durch den entsprechen Servernamen bzw. die IP-Adresse.
 
-1. Geben Sie unter **Ordner** `/dav` ein.
-1. Geben Sie den Benutzernamen `admin` ein. Adobe empfiehlt, das vorkonfigurierte Admin-Konto zum Testen zu nutzen.
+1. In **Ordner**, eingeben `/dav`
+1. Benutzernamen eingeben `admin`. Adobe empfiehlt, das vorkonfigurierte Admin-Konto zum Testen zu nutzen.
 1. Lassen Sie den Port leer und geben Sie einen Beliebigen Namen für die Verbindung ein.
 1. Klicken Sie auf „Verknüpfen“.**** AEM fordert Sie auf, Ihr Kennwort einzugeben.
 1. Geben Sie das Kennwort `admin` ein und klicken Sie auf **Verbinden**.
@@ -223,14 +223,14 @@ GNOME hat jetzt AEM als Volume bereitgestellt und kann wie jedes andere Volume v
 1. Öffnen Sie den Assistenten „Netzwerkordner“.
 1. Wählen Sie **Webordner** aus und klicken Sie auf „Weiter“.
 1. Geben Sie unter **Name** den Verbindungsnamen ein.
-1. Geben Sie unter **Benutzer** die Adobe `admin.` ein und empfehlen Sie die Verwendung des vorkonfigurierten Administratorkontos.
-1. Geben Sie unter **Server** `http://localhost:4502/crx/repository/crx.default` ein.
+1. In **Benutzer**, eingeben `admin.` Adobe empfiehlt die Verwendung des vorkonfigurierten Administratorkontos.
+1. In **Server**, eingeben `http://localhost:4502/crx/repository/crx.default`
 
    >[!NOTE]
    >
    >Wenn sich AEM an einem anderen Port befindet, verwenden Sie diese Portnummer anstelle von 4502. Wenn Sie das Inhalts-Repository nicht auf dem lokalen Rechner ausführen, ersetzen Sie `localhost` durch den entsprechen Servernamen bzw. die IP-Adresse.
 
-1. Geben Sie unter **Ordner** `dav` ein.
+1. In **Ordner**, eingeben `dav`
 
 1. Klicken Sie auf **Speichern und Verbinden**.
 1. Wenn Sie nach dem Kennwort gefragt werden, geben Sie das Kennwort `admin` ein und klicken Sie auf **Verbinden**

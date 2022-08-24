@@ -1,8 +1,8 @@
 ---
 title: Aktivitätstrends
-seo-title: Aktivitätstrends
+seo-title: Activity Trends
 description: Hinzufügen einer Community-Aktivitätslisten-Komponente zu einer Seite
-seo-description: Hinzufügen einer Community-Aktivitätslisten-Komponente zu einer Seite
+seo-description: Adding a Community Activity List component to a page
 uuid: 316aabf7-01a5-46da-be59-70c206eb6a3d
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,46 +13,46 @@ docset: aem65
 exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 29%
+source-wordcount: '346'
+ht-degree: 30%
 
 ---
 
 # Aktivitätstrends {#activity-trends}
 
-## Einführung {#introduction}
+## Einführung    {#introduction}
 
-Die Komponente `Community Activity List` bietet die Möglichkeit, Trendinformationen zu Beiträgen und Ansichten von Mitgliedern sowie Beiträgen und Ansichten von Inhalten hinzuzufügen.
+Die `Community Activity List` -Komponente bietet die Möglichkeit, Trendinformationen zu Beiträgen und Ansichten von Mitgliedern sowie Beiträgen und Ansichten von Inhalten hinzuzufügen.
 
 Das Dokument beschreibt:
 
-* Hinzufügen der Komponente `Community Activity List` zu einer [Community-Site](/help/communities/overview.md#community-sites).
+* Hinzufügen der `Community Activity List` -Komponente [Community-Site](/help/communities/overview.md#community-sites).
 
-* Konfigurationseinstellungen für die Komponente `Community Activity List` .
+* Konfigurationseinstellungen für `Community Activity List` -Komponente.
 
 ### Anforderung {#requirement}
 
-Daten für `Community Activity List` sind nur verfügbar, wenn Adobe Analytics für die Community-Site lizenziert und konfiguriert ist.
+Daten für `Community Activity List` ist nur verfügbar, wenn Adobe Analytics für die Community-Site lizenziert und konfiguriert ist.
 
 Siehe [Analytics-Konfiguration für Communities-Funktionen](/help/communities/analytics.md).
 
 ### Hinzufügen einer Community-Aktivitätenliste zu einer Seite {#adding-a-community-activity-list-to-a-page}
 
-Um eine `Community Activity List`-Komponente zu einer Seite im Autorenmodus hinzuzufügen, suchen Sie die Komponente
+So fügen Sie eine `Community Activity List` Komponente auf einer Seite im Autorenmodus zu finden, die Komponente
 
 * `Communities / Community Activity List`
 
 und ziehen Sie die Komponente an die gewünschte Stelle auf der Seite.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](/help/communities/basics.md).
+Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
 Bei der ursprünglichen Platzierung auf einer Community-Site wird die Komponente wie folgt angezeigt:
 
 ![community-activity](assets/community-activity.png)
 
-### Konfigurieren der Community-Aktivitätenliste {#configuring-community-activity-list}
+### Konfigurieren der Community-Aktivitätenliste  {#configuring-community-activity-list}
 
-Wählen Sie die platzierte Komponente `Community Activity List` aus, um auf das Symbol `Configure` zuzugreifen, mit dem das Bearbeitungsdialogfeld geöffnet wird.
+Wählen Sie die platzierte `Community Activity List` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
 ![konfigurieren](assets/configure-new.png)
 
@@ -112,17 +112,17 @@ Standardmäßig ist die Community-Site ausgewählt.
 
 * **Gesammelte Mitgliederzahl**
 
-   Wenn diese Option deaktiviert (deaktiviert) ist, werden nur Beiträge der obersten Ebene gezählt. Wenn der Kontext beispielsweise die Stammseite ist (Standardeinstellung), zeigt ein `Activity Type` von `Posts` nie eine Aktivität an, da keine Möglichkeit besteht, Inhalte auf der Stammseite zu posten. Ist diese Option aktiviert, werden auch die Ergebnisse aller untergeordneten Seiten eingeschlossen.
+   Wenn diese Option deaktiviert (deaktiviert) ist, werden nur Beiträge der obersten Ebene gezählt. Wenn der Kontext beispielsweise die Stammseite ist (die Standardeinstellung), wird ein `Activity Type` von `Posts` werden nie Aktivitäten angezeigt, da keine Möglichkeit besteht, Inhalte auf der Stammseite zu posten. Ist diese Option aktiviert, werden auch die Ergebnisse aller untergeordneten Seiten eingeschlossen.
 Diese Option ist standardmäßig aktiviert.
 
 ### Beispielseite mit vier Komponenten {#example-page-with-components}
 
 Konfiguration **Wichtigste Besucher** (Top Visitors): Typ = Mitglieder, Aktivitätstyp = Ansichten
 
-**Top** Contributorsconfig: Typ = Mitglieder, Aktivitätstyp = Beiträge
+**Wichtigste Mitwirkende** config: Typ = Mitglieder, Aktivitätstyp = Beiträge
 
-**Top** ContentConfig: Typ = Inhalt, Aktivitätstyp = Ansichten,
+**Top-Inhalt** config: Typ = Inhalt, Aktivitätstyp = Ansichten,
 
-**Trending** ContentConfig: Typ = Inhalt, Aktivitätstyp = Beiträge
+**Trendinhalt** config: Typ = Inhalt, Aktivitätstyp = Beiträge
 
 ![Komponenten](assets/activity-list-components.png)

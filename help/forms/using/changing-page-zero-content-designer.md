@@ -11,13 +11,13 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 466b7e85-a2f8-4e1e-8afc-1566b0ccb84c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 100%
 
 ---
 
-# Inhalt auf Seite Null in Designer ändern {#changing-page-zero-content-in-designer}
+# Ändern des Inhalts auf Seite null im Designer {#changing-page-zero-content-in-designer}
 
 Der Inhalt auf Seite Null wird standardmäßig angezeigt, wenn ein PDF-Viewer, der nicht von Adobe stammt (z. B. der standardmäßige PDF-Viewer in [!DNL Chrome] oder [!DNL Firefox]), den Inhalt des PDF-/XFA-Formulars nicht lesen kann. Nachfolgend finden Sie die standardmäßige Meldung auf Seite Null.
 

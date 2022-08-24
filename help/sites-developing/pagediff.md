@@ -1,8 +1,8 @@
 ---
 title: Entwicklung und Seitenvergleich
-seo-title: Entwicklung und Seitenvergleich
+seo-title: Developing and Page Diff
 description: Entwicklung und Seitenvergleich
-seo-description: 'null'
+seo-description: null
 uuid: 06f27bc2-f42a-4176-ab94-255e721c6933
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: b07134b2-074a-4d52-8d0c-7e7abe51fc3a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '360'
 ht-degree: 92%
 
 ---
@@ -40,7 +40,7 @@ Es wird automatisch eine Bereinigungsaufgabe ausgeführt, um diesen temporären 
 
 ## Berechtigungen {#permissions}
 
-Zuvor musste in der klassischen Benutzeroberfläche bei der Entwicklung besonders berücksichtigt werden, um die AEM zu vereinfachen (z. B. die Verwendung der Tag-Bibliothek `cq:text` oder die benutzerdefinierte Integration des `DiffService`-OSGi-Dienstes in Komponenten). Für die neue Vergleichsfunktion ist dies nicht mehr notwendig, da sie clientseitig durch DOM-Vergleich ausgeführt wird.
+Zuvor musste in der klassischen Benutzeroberfläche bei der Entwicklung besondere Aufmerksamkeit geschenkt werden, um die AEM (z. B. `cq:text` Tag-Bibliothek oder benutzerdefinierte Integration der `DiffService` OSGi-Dienst in Komponenten). Für die neue Vergleichsfunktion ist dies nicht mehr notwendig, da sie clientseitig durch DOM-Vergleich ausgeführt wird.
 
 Es gibt jedoch einige Einschränkungen, die der Entwickler beachten muss.
 

@@ -19,7 +19,7 @@ ht-degree: 91%
 
 # Best Practices für Leistungstests{#best-practices-for-performance-testing}
 
-## Einführung {#introduction}
+## Einführung    {#introduction}
 
 Leistungstests stellen einen wichtigen Teil von AEM-Bereitstellungen dar. Je nach Kundenanforderungen können Leistungstests in Veröffentlichungsinstanzen und/oder Autoreninstanzen durchgeführt werden.
 

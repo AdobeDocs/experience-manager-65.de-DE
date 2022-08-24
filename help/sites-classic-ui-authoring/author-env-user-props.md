@@ -1,8 +1,8 @@
 ---
 title: Konfigurieren der Kontoumgebung
-seo-title: Konfigurieren der Kontoumgebung
+seo-title: Configuring your account environment
 description: AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren.
-seo-description: AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren.
+seo-description: AEM provides you with the capability to configure your account and certain aspects of the author environment.
 uuid: a4a408f4-e33e-4304-90ab-f564ae772b7d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: 9abdaa6d-79ee-448e-a23f-d216433591f8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 80%
+source-wordcount: '224'
+ht-degree: 78%
 
 ---
 
@@ -25,7 +25,7 @@ AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenum
 Über die [Kontoeinstellungen](#account-settings) und [Benutzereinstellungen](#user-preferences) können die folgenden Optionen und Einstellungen definiert werden:
 
 * **Bearbeitungssymbolleiste** Legen Sie fest, ob die globale Bearbeitungssymbolleiste angezeigt werden soll. Diese Symbolleiste, die oben im Browser-Fenster angezeigt wird, bietet Ihnen 
-**Kopieren**,  **Ausschneiden**,  **Einfügen**,  **** Löschen für die Verwendung mit den Absatzkomponenten auf dieser Seite:
+**Kopieren**, **Ausschneiden**, **Einfügen**, **Löschen** Schaltflächen zur Verwendung mit den Absatzkomponenten auf dieser Seite:
 
    * Bei Bedarf anzeigen (Standardeinstellung)
    * Immer anzeigen
@@ -34,8 +34,8 @@ AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenum
 * **Identität annehmen als**
 Mit der Funktion [Identität annehmen als](/help/sites-administering/security.md#impersonating-another-user) kann ein Benutzer im Namen eines anderen Benutzers arbeiten.
 
-* ****
-SpracheDie Sprache, die für die Benutzeroberfläche der Authoring-Umgebung verwendet werden soll. Wählen Sie in der Liste die gewünschte Sprache aus.
+* **Sprache**
+Die Sprache, die für die Benutzeroberfläche der Authoring-Umgebung verwendet werden soll. Wählen Sie in der Liste die gewünschte Sprache aus.
 
 * **Fensterverwaltung**
 Wählen Sie entweder:

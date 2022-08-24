@@ -11,9 +11,9 @@ discoiquuid: 6a99042f-79c7-494b-bca0-73f2b5725b58
 docset: aem65
 exl-id: 2acd6b19-0fe8-4994-b0f4-c9d5b9f3fdf1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2121'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -94,7 +94,7 @@ Ein PDF-Dokument, das einen eindeutigen Bezeichner enthält, der sich in der Kop
 
 ### Reduzieren und Zusammenführen von Dokumenten {#flatten-and-assemble-documents}
 
-Mit dem Assembler-Dienst können Sie interaktive PDF-Dokumente (z. B. Formulare) in nicht interaktive PDF-Dokumente umwandeln. Interaktive PDF-Dokumente ermöglichen dem Benutzer, Daten in die PDF-Dokumentfelder einzugeben bzw. darin zu ändern. Die Umwandlung eines interaktiven PDF-Dokuments in ein nicht interaktives PDF-Dokument bezeichnet man als Reduzieren. Beim Reduzieren eines PDF-Dokuments behalten Formularfelder ihr grafisches Aussehen, sind aber nicht mehr interaktiv. Dies kann ein Grund dafür sein, PDF-Dokumente zu reduzieren. Darüber hinaus funktionieren den Feldern zugeordnete Skripte nicht mehr.
+Mit dem Assembler-Dienst können Sie interaktive PDF-Dokumente (z. B. Formulare) in nicht interaktive PDF-Dokumente umwandeln. Interaktive PDF-Dokumente ermöglichen dem Benutzer, Daten in die PDF-Dokumentfelder einzugeben bzw. darin zu ändern. Der Prozess der Umwandlung eines interaktiven PDF-Dokuments in ein nicht interaktives PDF-Dokument wird als Reduzieren bezeichnet. Beim Reduzieren eines PDF-Dokuments behalten Formularfelder ihr grafisches Aussehen, sind aber nicht mehr interaktiv. Dies kann ein Grund dafür sein, PDF-Dokumente zu reduzieren. Darüber hinaus funktionieren den Feldern zugeordnete Skripte nicht mehr.
 
 Wenn Sie ein PDF-Dokument erstellen, das aus interaktiven PDF-Dokumenten zusammengeführt wurde, reduziert der Assembler-Dienst diese Formulare, bevor er sie in dem Zieldokument zusammenführt.
 
@@ -282,7 +282,7 @@ Das folgende Beispiel stellt ein DDX-Dokument dar, das zum Aufteilen des Dokumen
 
 ### Aufteilen eines Quelldokuments basierend auf Lesezeichen {#divide-a-source-document-based-on-bookmarks}
 
-In der folgenden Abbildung wird DocA in mehrere Zieldokumente aufgeteilt. Dabei gibt das erste Lesezeichen auf Ebene 1 auf einer Seite den Anfang eines neuen Zieldokuments an.
+In der folgenden Abbildung ist DocA in mehrere Zieldokumente unterteilt. Das Lesezeichen der ersten Ebene 1 auf einer Seite identifiziert den Beginn eines neuen Zieldokuments.
 
 ![Aufteilen eines Quelldokuments in mehrere Dokumente basierend auf Lesezeichen](assets/as_intro_pdfsfrombookmarks.png)
 

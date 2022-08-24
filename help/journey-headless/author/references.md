@@ -1,91 +1,92 @@
 ---
 title: Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten
-description: Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten für Inhalte, andere Fragmente und andere Assets (Medien). Einführung der Notwendigkeit und der Mechanik verschachtelter Fragmente für Headless CMS Authoring.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+description: Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten für Inhalte, andere Fragmente und andere Assets (Medien). Einführung in die Notwendigkeit und die Mechanik verschachtelter Fragmente für Headless-CMS-Seitenbearbeitung.
+exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 10%
+ht-degree: 100%
 
 ---
 
 # Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten {#author-headless-references}
 
-## Die Geschichte so weit {#story-so-far}
+## Die bisherige Entwicklung {#story-so-far}
 
-Am Anfang des [AEM Headless Content Author-Journey](overview.md) die [Einführung](introduction.md) die grundlegenden Konzepte und Terminologie für das Headless-Authoring behandelt.
+Zu Beginn der [AEM Headless-Inhaltsautoren-Tour](overview.md) wurden in der [Einführung](introduction.md) die grundlegenden Konzepte und die Terminologie für das Authoring für Headless behandelt.
 
-Sie haben die Grundlagen der Headless-CMS-Bearbeitung kennengelernt, mit einer Einführung in das Authoring mit AEMaaCS und insbesondere das Authoring von Inhaltsfragmenten.
+Sie haben die Grundlagen der Headless-CMS-Seitenbearbeitung kennengelernt, mit einer Einführung in die Seitenbearbeitung mit AEM as a Cloud Service und insbesondere die Bearbeitung von Inhaltsfragmenten.
 
-Dieser Artikel baut auf diesen auf, damit Sie verstehen, wie Sie Verweise verwenden können, um eigene Inhalte für Ihr AEM Headless-Projekt zu erstellen.
+Dieser Artikel baut auf diesen auf. Sie erfahren, wie Sie Verweise verwenden können, um eigene Inhalte für Ihr AEM Headless-Projekt zu erstellen.
 
 ## Ziel {#objective}
 
 * **Zielgruppe**: Fortgeschrittene
-* **Ziel**: Einführung der Verwendung von Referenzen für Headless CMS Authoring. Welche Arten von Verweisen sind verfügbar und zu welchen Zwecken dienen sie?
+* **Ziel**: Einführung der Verwendung von Verweisen für die Headless-CMS-Seitenbearbeitung. Welche Arten von Verweisen sind verfügbar und zu welchen Zwecken dienen sie?
 
    * Inhaltsreferenzen
-   * Asset-/Medienreferenzen
+   * Asset-/Medienverweise
    * Fragmentreferenzen
    * Ad-hoc-Verweise aus einem Textblock
 
-## Verweise {#what-are-references}
+## Was sind Verweise {#what-are-references}
 
-Referenzen sind lediglich ein Mechanismus zum Verbinden Ihrer Ressourcen, sei es mit anderen Inhalten, Assets (wie in Bildern) oder anderen Fragmenten. Obwohl sehr ähnlich, gibt es einige Unterschiede.
+Verweise sind lediglich ein Mechanismus zum Verbinden Ihrer Ressourcen, sei es mit anderen Inhalten, Assets (wie in Bildern) oder anderen Fragmenten. Obwohl sie sehr ähnlich sind, gibt es einige Unterschiede.
 
 Einige Verweise verfügen über dedizierte Datentypen (z. B. Inhaltsverweise und Fragmentverweise), während andere einfach als Verweis in einem Textblock hinzugefügt werden (Asset-Verweise und Ad-hoc-Verweise).
 
-![Inhaltsfragmente - Verweise](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
+![Inhaltsfragmente – Verweise](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
 
 ## Inhaltsreferenzen {#content-references}
 
-Inhaltsreferenzen tun genau das - sie ermöglichen es Ihnen, auf beliebige andere Inhalte zu verweisen. Dadurch wird ein Browser geöffnet, in dem Sie das Inhaltselement auswählen können.
+Inhaltsverweise tun genau das – sie ermöglichen es Ihnen, auf beliebige andere Inhalte zu verweisen. Dadurch wird ein Browser geöffnet, in dem Sie das Inhaltselement auswählen können.
 
-## Asset-/Medienreferenzen {#assets-media-references}
+## Asset-/Medienverweise {#assets-media-references}
 
-Assets (z. B. Bilder oder Medien) können in einem Textblock mithilfe der **Asset einfügen** -Option. Dadurch wird ein Browser geöffnet, in dem Sie das Asset auswählen können.
+Mithilfe der Option **Asset einfügen** können Sie innerhalb eines Textblocks auf Assets (z. B. Bilder oder Medien) verweisen. Dadurch wird ein Browser geöffnet, in dem Sie das Asset auswählen können.
 
-![Inhaltsfragmente - Asset einfügen](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
+![Inhaltsfragmente – Asset einfügen](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
 ## Fragmentreferenzen {#fragment-references}
 
-Fragmentverweise tun genau das - sie ermöglichen es Ihnen, auf ein anderes Fragment zu verweisen. Warum dies bedeutsam ist, bedarf es etwas mehr Erklärungen.
+Fragmentverweise tun genau das – sie ermöglichen es Ihnen, auf ein anderes Fragment zu verweisen. Warum dies von Bedeutung ist, bedarf einer näheren Erläuterung.
 
-Sie können beispielsweise die folgenden Inhaltsfragmentmodelle definieren:
+Bei Ihnen sind möglicherweise die folgenden Inhaltsfragmentmodelle definiert:
 
 * Stadt
 * Unternehmen
 * Person
 * Auszeichnungen
 
-Es scheint ziemlich einfach, aber natürlich hat ein Unternehmen sowohl einen CEO als auch Mitarbeiter....und dies sind alle Personen, die jeweils als Person definiert sind.
+Es scheint ziemlich einfach, aber natürlich hat eine Firma sowohl einen CEO als auch Mitarbeiter...und dies sind alles Leute, die jeweils als Person definiert sind.
 
-Und eine Person kann einen Preis bekommen (oder vielleicht zwei).
+Und eine Person kann eine Auszeichnung bekommen (oder vielleicht zwei).
 
-* My Company - Company
-   * CEO - Person
-   * Arbeitnehmer(innen) - Person
-      * Persönliche Auszeichnungen - Auszeichnung
+* Meine Firma – Firma
+   * CEO – Person
+   * Mitarbeiter – Person
+      * Persönliche Auszeichnungen – Auszeichnung
 
-Und das ist nur für Anfänger. Je nach Komplexität kann ein Preis unternehmensspezifisch sein oder eine Firma könnte ihre Hauptverwaltung in einer bestimmten Stadt haben.
+Und das ist nur für den Einstieg. Je nach Komplexität kann eine Auszeichnung firmenspezifisch sein oder eine Firma könnte ihre Hauptverwaltung in einer bestimmten Stadt haben.
 
-Die Repräsentation dieser Beziehungen kann mit Fragmentverweisen erreicht werden, da diese sowohl von Ihnen (dem Autor) als auch von den Headless-Anwendungen verstanden werden.
+Die Repräsentation dieser Beziehungen kann mit Fragmentverweisen erreicht werden, da diese sowohl von Ihnen (dem Autor) als auch von den Headless-Programmen verstanden werden.
 
 Als Autor sind Sie nicht für die Definition dieser Beziehungen verantwortlich (das wird vom Inhaltsarchitekten beim Erstellen des Inhaltsfragmentmodells vorgenommen), Sie müssen jedoch wissen, wie Sie die Verweise erkennen und bearbeiten können.
 
-### Erstellen verschachtelter Fragmente {#author-nested-fragment}
+### Bearbeiten verschachtelter Fragmente {#author-nested-fragment}
 
-Die Erstellung von Fragmentverweisen ist relativ einfach (obwohl das Feld normalerweise nicht als **Fragmentverweis**). Sie können die Referenz entweder direkt eingeben oder (wahrscheinlicher) das Ordnersymbol auswählen, um einen Browser zu öffnen, in dem Sie navigieren und das gewünschte Fragment auswählen können.
+Die Bearbeitung von Fragmentverweisen ist relativ einfach (obwohl das Feld normalerweise nicht als **Fragmentverweis** bezeichnet wird). Sie können den Verweis entweder direkt eingeben oder (wahrscheinlicher) auf das Ordnersymbol klicken, um einen Browser zu öffnen, in dem Sie navigieren und das gewünschte Fragment auswählen können.
 
-![Inhaltsfragmente - Verweise](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
+![Inhaltsfragmente – Verweise](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 
-Die Definition der Steuerelemente für das Inhaltsfragmentmodell:
+Die Definition des Inhaltsfragmentmodells steuert:
 
-* ob Sie mehrere Verweise hinzufügen können
-* die Modelltypen der Inhaltsfragmente, die Sie auswählen können; Das Inhaltsfragmentmodell definiert die Fragmentmodelle, die für die Referenz zulässig sind, sodass AEM nur Fragmente basierend auf diesen Modellen präsentiert.
+* ob Sie wählen können, mehrere Verweise hinzuzufügen
+* die Modelltypen der Inhaltsfragmente, die Sie auswählen können. Das Inhaltsfragmentmodell definiert die Fragmentmodelle, die für den Verweis zulässig sind, sodass AEM nur Fragmente basierend auf diesen Modellen anzeigt.
 
 ### Navigieren in verschachtelten Fragmenten {#navigate-nested-fragment}
 
-Verwenden der **Strukturbaum** im Inhaltsfragment-Editor können Sie durch die Fragmente navigieren, auf die von Ihrem Fragment verwiesen wird, und dann durch alle darin enthaltenen Verweise. Wenn Sie eine Referenz auswählen, wird dieses Fragment zur Bearbeitung geöffnet.
+Wenn Sie die Registerkarte **Baumstruktur** des Inhaltsfragment-Editors verwenden, können Sie durch die Fragmente navigieren, auf die Ihr Fragment verweist, und dann durch alle Verweise, die sie möglicherweise enthalten. Wenn Sie eine Referenz auswählen, wird dieses Fragment zur Bearbeitung geöffnet.
 
 >[!NOTE]
 >
@@ -97,11 +98,11 @@ Verwenden der **Strukturbaum** im Inhaltsfragment-Editor können Sie durch die F
 
 Ad-hoc-Verweise können als einfacher Link innerhalb eines Textblocks hinzugefügt werden:
 
-![Inhaltsfragmente - Ad-hoc-Verweise](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
+![Inhaltsfragmente – Ad-hoc-Verweise](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie sich mit Verweisen und Strukturen in Inhaltsfragmenten vertraut gemacht haben, müssen Sie als Nächstes [Erfahren Sie mehr über Metadaten und Tagging](metadata-tagging.md). In diesem Abschnitt wird erläutert, wie Sie Metadaten und Tags für Ihre Inhaltsfragmente definieren können.
+Nachdem Sie sich mit Verweisen und Strukturen in Inhaltsfragmenten vertraut gemacht haben, fahren Sie mit dem nächsten Schritt fort: [Erfahren Sie mehr über Metadaten und Tagging](metadata-tagging.md). In diesem Abschnitt wird erläutert, wie Sie Metadaten und Tags für Ihre Inhaltsfragmente definieren können.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
@@ -112,18 +113,18 @@ Nachdem Sie sich mit Verweisen und Strukturen in Inhaltsfragmenten vertraut gema
       * [Anwenden der Konfiguration auf Ihren Assets-Ordner](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
       * [Erstellen eines Inhaltsfragments](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
-   * [Varianten - Erstellen von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-variations.md)
+   * [Varianten – Authoring von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-variations.md)
 
    * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
 
-      * [Inhaltsfragmentmodelle - Datentypen](/help/assets/content-fragments/content-fragments-models.md#data-types)
+      * [Inhaltsfragmentmodelle – Datentypen](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
-      * [Inhaltsfragmentmodelle - Eigenschaften](/help/assets/content-fragments/content-fragments-models.md#properties)
+      * [Inhaltsfragmentmodelle – Eigenschaften](/help/assets/content-fragments/content-fragments-models.md#properties)
 
 
 * Anleitungen für den Einstieg
    * [Schnellstartanleitung zum Erstellen von Asset-Ordnern per Headless-Implementierung](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
-* [Journey AEM Headless Content Architect](/help/journey-headless/architect/overview.md)
+* [AEM Headless-Inhaltsarchitekten-Tour](/help/journey-headless/architect/overview.md)
 
-* [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md)
+* [AEM Headless-Übersetzungs-Tour](/help/journey-headless/translation/overview.md)

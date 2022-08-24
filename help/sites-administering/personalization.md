@@ -1,5 +1,5 @@
 ---
-title: Personalisierung
+title: 'Personalisierung   '
 seo-title: Personalization
 description: Erfahren Sie mehr über die Personalisierung in AEM.
 seo-description: Learn about personalization in AEM.
@@ -17,7 +17,7 @@ ht-degree: 72%
 
 ---
 
-# Personalisierung {#personalization}
+# Personalisierung    {#personalization}
 
 ## Was ist Personalisierung? {#what-is-personalization}
 
@@ -117,7 +117,7 @@ Berücksichtigen Sie beim Einsetzen von Personalisierung Folgendes:
 * Es gibt für Benutzer nichts Frustrierenderes, als nur aufgrund der ungenauen Logik einer Regel Inhalte aufgezwungen oder vorenthalten zu bekommen.
 * Daher müssen Regeln gut durchdacht sein - mit den Anforderungen des Benutzers im Vordergrund. Dies kann sehr mühsam sein und darf nicht unterschätzt werden. Die Festlegung der geschäftlichen Regeln ist häufig aufwendiger als die technischen Maßnahmen bei der Implementierung der Personalisierung.
 
-#### Verwendungsbereiche {#when-to-use}
+#### Wann ist sie einzusetzen? {#when-to-use}
 
 * Wie viele Funktionen im Internet ist auch Personalisierung mit Vorsicht einzusetzen. Ist Ihr Einsatz wirklich von Vorteil für den Benutzer? Dies sollte immer die erste Überlegung sein. Darüber hinaus sollte ergründet werden, ob das gewünschte Ziel mit einer anderen Methode mit geringerem Aufwand erreicht werden kann. Bei der Personalisierung besteht die Gefahr, dass sie nur einmal von Benutzern konfiguriert wird (um zu sehen, wie sie funktionieren) und nur einmal - da sie keine echten Vorteile bringt.
 * Personalisierung ist nur dann sinnvoll, wenn der Inhalt dynamisch ist - abhängig vom Benutzer in irgendeiner Weise. Werden allen Benutzern dieselben Inhalte angezeigt, ist die Personalisierung redundant.

@@ -10,8 +10,8 @@ feature: Authoring
 role: User
 source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '298'
+ht-degree: 87%
 
 ---
 
@@ -81,8 +81,8 @@ ht-degree: 0%
    + [Analysieren der Seitenleistung](ci-analyze.md)
    + [Anzeigen von Seitenanalysedaten](pa-using.md)
    + [Hinzufügen von Search&amp;Promote-Funktionen zu Ihrer Seite](search-and-promote.md)
-+ Personalisierung  {#personalization}
-   + [Personalisierung ](personalization.md)
++ Personalisierung    {#personalization}
+   + [Personalisierung   ](personalization.md)
    + [Vorschau von Seiten mit ContextHub-Daten](ch-previewing.md)
    + [Verfassen zielgerichteter Inhalte im Targeting-Modus](content-targeting-touch.md)
    + [Verwenden zielgerichteter Inhalte in Multisites](multisite-support-targeted-content.md)

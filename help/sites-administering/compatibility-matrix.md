@@ -1,15 +1,15 @@
 ---
 title: Kompatibilitätsmatrix für AEM Screens-Player
-seo-title: Kompatibilitätsmatrix für AEM Screens-Player
+seo-title: Compatibility Matrix for AEM Screens Player
 description: Auf dieser Seite werden die AEM Screens-Player mit der jeweiligen AEM Screens-Version aufgeführt.
-seo-description: Auf dieser Seite werden die AEM Screens-Player mit der jeweiligen AEM Screens-Version aufgeführt.
+seo-description: This page lists the AEM Screens Players with their respective AEM Screens version.
 page-status-flag: never-activated
 uuid: d5bf1eee-d22a-4962-8289-fd56a54d85ae
 contentOwner: jsyal
 discoiquuid: dbc16a51-74c4-43bb-9501-081de1eb2f7d
 source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '266'
 ht-degree: 100%
 
 ---
@@ -52,7 +52,7 @@ Klicken Sie auf den Download-Link für den iOS-Player:
 
 aem-screens-player-ios-3.3.0.ipa.zip
 
-[Datei laden](assets/aem-screens-player-ios-330ipa.zip)
+[Datei herunterladen](assets/aem-screens-player-ios-330ipa.zip)
 
 ## Windows10-Player {#windows-player}
 
@@ -83,7 +83,7 @@ Klicken Sie auf den Download-Link für den Windows10-Player:
 
 aem-screens-player-windows-1.0.48-signed.exe.zip
 
-[Datei laden](assets/aem-screens-player-windows-1048-signedexe.zip)
+[Datei herunterladen](assets/aem-screens-player-windows-1048-signedexe.zip)
 
 ## Android-Player {#android-player}
 
@@ -99,7 +99,7 @@ Klicken Sie auf den Download-Link für den Android-Player:
 
 aem-screens-player-android-3.3.0.apk.zip
 
-[Datei laden](assets/aem-screens-player-android-330apk.zip)
+[Datei herunterladen](assets/aem-screens-player-android-330apk.zip)
 
 <table> 
  <tbody>

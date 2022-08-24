@@ -36,7 +36,6 @@ Das heißt:
 >* [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
 >* [SAP Commerce Cloud](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
 >* [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
-
 >
 
 
@@ -581,7 +580,7 @@ Eine Promotion kann entweder in einem Erlebnis oder direkt in der Kampagne erfas
 >
 >[hybris promotions](https://www.hybris.com/modules/promotion) und [hybris vouchers](https://www.hybris.com/en/modules/voucher) decken alle Aspekte ab, die sich auf den Warenkorb auswirken und mit der Preisfestlegung in Verbindung stehen. Promotionspezifische Marketinginhalte (wie Banner) sind nicht Teil der hybris-Promotion.
 
-## Personalisierung {#personalization}
+## Personalisierung    {#personalization}
 
 ### Kundenregistrierung und -konten {#customer-registration-and-accounts}
 

@@ -1,8 +1,8 @@
 ---
 title: Erstellen der Exportkonfiguration für freigegebene Ressourcen
-seo-title: Erstellen der Exportkonfiguration für freigegebene Ressourcen
+seo-title: Creating Shared Resources Export Configuration
 description: Auf dieser Seite erfahren Sie, wie Sie freigegebene Ressourcen aus Adobe Experience Manager (AEM) zum Hochladen in AEM Mobile exportieren.
-seo-description: Auf dieser Seite erfahren Sie, wie Sie freigegebene Ressourcen aus Adobe Experience Manager (AEM) zum Hochladen in AEM Mobile exportieren.
+seo-description: Follow this page to learn about exporting shared resources from Adobe Experience Manager (AEM) for upload to AEM Mobile.
 uuid: 99b8ff94-8135-4643-a15b-aa6fb91f5401
 contentOwner: User
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: 1edf6c76-ccb1-40b6-bdf6-924f1461cd28
 exl-id: 576b4567-c7b6-4196-84e7-47e980637540
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 6%
+source-wordcount: '302'
+ht-degree: 7%
 
 ---
 
@@ -27,17 +27,17 @@ ht-degree: 6%
 >
 >**Voraussetzung**:
 >
->Bevor Sie mehr über das Erstellen und Ändern freigegebener Ressourcen erfahren, finden Sie unter [Inhaltssynchronisierung](/help/mobile/mobile-ondemand-contentsync.md) grundlegende Konzepte.
+>Bevor Sie mehr über das Erstellen und Ändern freigegebener Ressourcen erfahren, lesen Sie [Inhaltssynchronisierung](/help/mobile/mobile-ondemand-contentsync.md) um die grundlegenden Konzepte zu verstehen.
 
 AEM Mobile-Benutzer verwenden die Inhaltssynchronisierung, um Live-Inhalte für die Verwendung in mobilen Apps in statische Inhalte zu exportieren. Dieser Export erfolgt beim Hochladen von Inhalten in Mobile On-Demand Services von AEM Mobile.
 
-Die in der obigen Tabelle erwähnte Eigenschaft ***dps-exportTemplate*** definiert den Pfad zu den Exportkonfigurationen der App. Legen Sie diese Eigenschaft fest, um freigegebene Ressourcen zu erstellen und zu ändern.
+Die Eigenschaft ***dps-exportTemplate*** definiert den Pfad zu den Exportkonfigurationen der App. Legen Sie diese Eigenschaft fest, um freigegebene Ressourcen zu erstellen und zu ändern.
 
 In den folgenden Ressourcen wird der Export von freigegebenen Ressourcen aus Adobe Experience Manager (AEM) zum Hochladen in AEM Mobile beschrieben.
 
-Freigegebene HTML-Ressourcen ermöglichen es Artikeln, HTML-Ressourcen freizugeben, die andernfalls für alle Artikel dupliziert werden müssten, und können Symbole, Schriftarten, JavaScript und CSS enthalten.
+Freigegebene HTML-Ressourcen ermöglichen es Artikeln, HTML-Ressourcen freizugeben, die andernfalls für alle Artikel dupliziert werden müssen, und können Symbole, Schriftarten, JavaScript und CSS enthalten.
 
-Die Konfiguration der Inhaltssynchronisierung unter **&lt;dps-exportTemplate>/dps-HTMLResources>** sollte so konfiguriert werden, dass alle Inhalte und Artikel exportiert werden, die für das statische Rendering der Eigenschaften auf dem Gerät erforderlich sind.
+Die Konfiguration zur Inhaltssynchronisierung finden Sie unter **&lt;dps-exporttemplate>/dps-HTMLResources>** sollte so konfiguriert werden, dass alle Inhalte und Artikel exportiert werden, die für das statische Rendering der Eigenschaften auf dem Gerät erforderlich sind.
 
 >[!CAUTION]
 >
@@ -46,9 +46,7 @@ Die Konfiguration der Inhaltssynchronisierung unter **&lt;dps-exportTemplate>/dp
 >* den Beispielinhalt installiert hat
 >* AEM
 >* kein konfigurierter benutzerdefinierter Kontext oder ein anderer Port
-
 >
-
 
 
 Informationen zum Anzeigen einer gemeinsam genutzten Beispielressource finden Sie in den folgenden Schritten:

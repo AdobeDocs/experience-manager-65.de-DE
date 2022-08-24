@@ -9,7 +9,7 @@ exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
 source-git-commit: fcbfd8b378282d908b68c61ab235e9b80fd6644c
 workflow-type: tm+mt
 source-wordcount: '1751'
-ht-degree: 63%
+ht-degree: 64%
 
 ---
 
@@ -29,7 +29,7 @@ Die Legende gibt den Grad der Unterstützung an.
 
 Die unterstützten Rasterbildformate in [!DNL Assets] sind:
 
-| Format | Speicherung | Metadatenverwaltung | Metadatenextraktion | Generierung von Miniaturen | Bearbeiten | Metadaten-Writeback | Insights |
+| Format | Speicherung | Metadatenverwaltung | Metadatenextraktion | Generierung von Miniaturen | Bearbeiten | Metadaten-Writeback | Erkenntnisse |
 | ------------ | :------: | :-----------------: | :-----------------: | :------------------: | :------: | :----------------: | :------: |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |

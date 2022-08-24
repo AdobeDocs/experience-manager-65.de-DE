@@ -26,7 +26,7 @@ ht-degree: 73%
 >
 >Weitere Informationen zur Fehlerbehebung und zur Beseitigung von Leistungsproblemen finden Sie außerdem im [Leistungsbaum](/help/sites-deploying/performance-tree.md).
 >
->Darüber hinaus können Sie einen Knowledge Base-Artikel zu [Tipps zur Leistungsoptimierung.](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html) lesen.
+>Darüber hinaus können Sie einen Knowledge Base-Artikel zu [Tipps zur Leistungsoptimierung.](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html)
 
 Ein wichtiger Faktor ist die Zeit, die Ihre Website benötigt, um auf Anforderungen durch Besucher zu reagieren. Obwohl dieser Wert für jede Anforderung anders ist, kann ein durchschnittlicher Zielwert definiert werden. Sobald sich gezeigt hat, dass dieser Wert längerfristig erreichbar ist, kann er verwendet werden, um die Leistung der Website zu überwachen und auf potenzielle Probleme hinzuweisen.
 
@@ -160,7 +160,7 @@ Stellen Sie zur Leistungssteigerung die folgenden Überlegungen an:
 
 Leistung (oder fehlende Leistung) ist das Erste, was Ihre Benutzer bemerken. Deshalb ist die Leistung wie bei jeder Anwendung mit einer Benutzeroberfläche von größter Bedeutung. Um die Leistung Ihrer AEM zu optimieren, müssen Sie verschiedene Attribute der Instanz und deren Verhalten überwachen.
 
-Informationen zur Durchführung der Leistungsüberwachung finden Sie unter [Leistungsüberwachung](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance).
+Informationen zur Durchführung der Leistungsüberwachung finden Sie unter [Überwachung der Leistung](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance).
 
 Die Faktoren, die Leistungsprobleme verursachen, sind oft schwer zu erkennen, selbst wenn ihre Auswirkungen offenkundig sind.
 
@@ -172,8 +172,8 @@ Das folgende Diagramm zeigt den Pfad, den eine Anfrage für AEM Inhalt nehmen ka
 
 Leistung ist auch ein Gleichgewicht zwischen Volumen und Kapazität:
 
-* **Volumen**  - Die Menge der Ausgabe, die vom System verarbeitet und bereitgestellt wird.
-* **Kapazität**  - Die Fähigkeit des Systems, das Volumen bereitzustellen.
+* **Lautstärke** - Die Menge der Ausgabe, die vom System verarbeitet und bereitgestellt wird.
+* **Kapazität** - die Fähigkeit des Systems, das Volumen bereitzustellen.
 
 Dies kann an unterschiedlichen Stellen des Web-Pfads veranschaulicht werden.
 
@@ -226,7 +226,7 @@ Wenn beispielsweise Bilder (oder DAM-Assets im Allgemeinen) hochgeladen werden, 
 Die Workflow-Engine verwendet Apache Sling-Auftragswarteschlangen zur Handhabung und Planung der Verarbeitung der Arbeitselemente. Die folgenden Auftragswarteschlangendienste wurden standardmäßig in der Apache Sling Job Queue Configuration Service Factory für die Verarbeitung von Workflow-Aufträgen erstellt:
 
 * Granite-Workflow-Warteschlange: Die meisten Workflow-Schritte, z. B. die, die DAM-Assets verarbeiten, verwenden den Granite Workflow Queue-Dienst.
-* Warteschlange für externe Prozessaufträge im Granite-Workflow: Dieser Dienst wird für spezielle externe Workflow-Schritte verwendet, die normalerweise zum Kontaktieren eines externen Systems und zum Abruf von Ergebnissen verwendet werden. Beispielsweise wird der Schritt „InDesign Media Extraction Process“ als externer Prozess implementiert. Die Workflow-Engine verwendet die externe Warteschlange zur Verarbeitung der Abfrage. (Siehe [com.day.cq.workflow.exec.WorkflowExternalProcess](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
+* Warteschlange für externe Prozessaufträge im Granite-Workflow: Dieser Dienst wird für spezielle externe Workflow-Schritte verwendet, die normalerweise zum Kontaktieren eines externen Systems und zum Abruf von Ergebnissen verwendet werden. Beispielsweise wird der Schritt „InDesign Media Extraction Process“ als externer Prozess implementiert. Die Workflow-Engine verwendet die externe Warteschlange zur Verarbeitung der Abfrage. (Siehe [com.day.cq.workflow.exec.WorkflowExternalProcess](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).
 
 Konfigurieren Sie diese Dienste, um die maximale Anzahl der parallel ausgeführten Workflow-Prozesse zu beschränken.
 
@@ -236,13 +236,13 @@ Konfigurieren Sie diese Dienste, um die maximale Anzahl der parallel ausgeführt
 
 #### Konfiguration im Repository {#configuration-in-the-repo}
 
-Wenn Sie die Dienste [mit einem sling:OsgiConfig -Knoten](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository) konfigurieren, müssen Sie die PID der vorhandenen Dienste suchen, z. B.: org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. Sie können den PID mithilfe der Webkonsole ermitteln.
+Wenn Sie die Dienste konfigurieren [Verwenden eines sling:OsgiConfig -Knotens](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)müssen Sie die PID der vorhandenen Dienste ermitteln, z. B.: org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. Sie können den PID mithilfe der Webkonsole ermitteln.
 
-Sie müssen die Eigenschaft `queue.maxparallel` konfigurieren.
+Sie müssen die Eigenschaft mit dem Namen `queue.maxparallel`.
 
 #### Konfiguration in der Web-Konsole  {#configuration-in-the-web-console}
 
-Suchen Sie zum Konfigurieren dieser Dienste [mithilfe der Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) die vorhandenen Konfigurationselemente unter der Apache Sling Job Queue Configuration Service-Factory.
+So konfigurieren Sie diese Dienste [über die Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)Suchen Sie die vorhandenen Konfigurationselemente unter der Apache Sling Job Queue Configuration Service-Factory.
 
 Sie müssen die Eigenschaft &quot;Maximum Parallel Jobs&quot;konfigurieren.
 
@@ -255,15 +255,15 @@ Wenn Workflow-Modelle ausgeführt werden, erstellen sie Sling-Aufträge für ein
 * `com/adobe/granite/workflow/job*`
 * `com/adobe/granite/workflow/external/job*`
 
-Zu den Themen, die Workflow-Modelle tatsächlich erstellen, gehören modellspezifische Suffix. Beispielsweise generiert das Workflow-Modell **DAM Update Asset** Aufträge mit dem folgenden Thema:
+Zu den Themen, die Workflow-Modelle tatsächlich erstellen, gehören modellspezifische Suffix. Beispiel: die **DAM-Update-Asset** Workflow-Modell generiert Aufträge mit dem folgenden Thema:
 
 `com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model`
 
 Daher können Sie eine Auftragswarteschlange für das Thema erstellen, das dem Auftragsthema Ihres Workflow-Modells entspricht. Das Konfigurieren der leistungsbezogenen Eigenschaften der Warteschlange wirkt sich nur auf das Workflow-Modell aus, das die Aufträge generiert, die mit dem Warteschlangenthema übereinstimmen.
 
-Im folgenden Verfahren wird eine Auftragswarteschlange für einen Workflow erstellt, wobei als Beispiel der Workflow **DAM Update Asset** verwendet wird.
+Mit dem folgenden Verfahren wird eine Auftragswarteschlange für einen Workflow erstellt. Dabei wird die **DAM-Update-Asset** Workflow als Beispiel.
 
-1. Führen Sie das Workflow-Modell aus, für das Sie die Auftragswarteschlange erstellen möchten, sodass Themenstatistiken generiert werden. Fügen Sie beispielsweise ein Bild zu Assets hinzu, um den Workflow **DAM Update Asset** auszuführen.
+1. Führen Sie das Workflow-Modell aus, für das Sie die Auftragswarteschlange erstellen möchten, sodass Themenstatistiken generiert werden. Fügen Sie beispielsweise ein Bild zu Assets hinzu, um die **DAM-Update-Asset** Arbeitsablauf.
 1. Öffnen Sie die Sling Jobs-Konsole (`https://<host>:<port>/system/console/slingevent`).
 1. Suchen Sie die Workflow-Themen in der Konsole. Für „DAM-Update-Asset“ werden die folgenden Themen gefunden:
 
@@ -273,7 +273,7 @@ Im folgenden Verfahren wird eine Auftragswarteschlange für einen Workflow erste
 
 1. Erstellen Sie für jedes Thema eine Auftragswarteschlange. Erstellen Sie zu diesem Zweck eine Werkskonfiguration für den Apache Sling Job Queue Factory Service.
 
-   Die Werkskonfigurationen ähneln der Granite-Workflow-Warteschlange, die unter [Gleichzeitige Workflow-Verarbeitung](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing) beschrieben wird. Die Themeneigenschaft stimmt jedoch mit dem Thema Ihrer Workflow-Aufträge überein.
+   Die Werkskonfigurationen ähneln der Granite-Workflow-Warteschlange, die unter [Gleichzeitige Workflow-Verarbeitung](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing), mit der Ausnahme, dass die Eigenschaft Themen mit dem Thema Ihrer Workflow-Aufträge übereinstimmt.
 
 ### AEM DAM-Asset-Synchronisierungsdienst {#cq-dam-asset-synchronization-service}
 
@@ -297,9 +297,9 @@ Zusätzliche Erwägungen sind:
 
 Leistung ist von größter Bedeutung für Ihre Veröffentlichungsumgebung. Deshalb müssen Sie die Leistungstests für die Veröffentlichungsumgebung während der Implementierung Ihres Projekts sorgfältig planen und analysieren.
 
-In diesem Abschnitt erhalten Sie einen standardisierten Überblick über die Probleme bei der Definition eines Testkonzepts speziell für Leistungstests in Ihrer *publish*-Umgebung. Dies ist vor allem für QA-Beauftragte, Projektleiter und Systemadministratoren von Interesse.
+In diesem Abschnitt erhalten Sie einen standardisierten Überblick über die Probleme bei der Definition eines Testkonzepts speziell für Leistungstests für Ihre *publish* Umgebung. Dies ist vor allem für QA-Beauftragte, Projektleiter und Systemadministratoren von Interesse.
 
-Im Folgenden wird ein standardisierter Ansatz für Leistungstests für eine AEM Anwendung in der Umgebung *Publish* beschrieben. Diese umfasst die folgenden fünf Phasen:
+Im Folgenden wird ein standardisierter Ansatz für Leistungstests für eine AEM Anwendung in der *Veröffentlichen* Umgebung. Diese umfasst die folgenden fünf Phasen:
 
 * [Überprüfung des Wissens](#verification-of-knowledge)
 * [Definition des Umfangs ](#scope-definition)
@@ -390,8 +390,8 @@ In beiden Fällen können Sie die erwartete Anzahl von Transaktionen pro Sekunde
 |---|---|---|---|---|---|
 | Startseiten-Einzelbenutzer | Durchschnitt | 1 | 1 |  |  |
 |  | Spitze | 1 | 3 |  |  |
-| Homepage 100 Benutzer | Durchschnitt | 100 | 1 |  |  |
-|  | Spitze | 100 | 1 |  |
+| Homepage 100 Benutzer | Durchschnitt | 100 | 3 |  |  |
+|  | Spitze | 100 | 3 |  |
 
 #### Tests kombinierter Komponenten {#combined-component-tests}
 
@@ -403,7 +403,7 @@ Durch das Testen der kombinierten Komponenten erhalten Sie eine genauere Darstel
 |  | Suchen | 10 | 1 |  |  |
 |  | Nachrichten | 10 | 2 |  |  |
 |  | Ereignisse | 10 | 1 |  |  |
-|  | Aktivierungen | 10 | 1 |  | Simulation des Autorenverhaltens. |
+|  | Aktivierungen | 10 | 3 |  | Simulation des Autorenverhaltens. |
 | Mixed Spitzenwert | Homepage | 100 | 5 |  |  |
 |  | Suchen | 50 | 5 |  |  |
 |  | Nachrichten | 100 | 10 |  |  |
@@ -424,7 +424,7 @@ In den ersten Tagen nach dem Launch Ihrer Website ist mit erhöhtem Interesse zu
 
 #### Tests von Fehlerszenarien {#error-scenario-tests}
 
-Fehlerszenarien müssen auch getestet werden, um sicherzustellen, dass das System ordnungsgemäß reagiert. Dies umfasst nicht nur die Handhabung eines Fehlers selbst, sondern auch die möglichen Auswirkungen eines Fehlers auf die Leistung. Zum Beispiel:
+Fehlerszenarien müssen auch getestet werden, um sicherzustellen, dass das System ordnungsgemäß reagiert. Dies umfasst nicht nur die Handhabung eines Fehlers selbst, sondern auch die möglichen Auswirkungen eines Fehlers auf die Leistung. Beispiel:
 
 * Was passiert, wenn der Benutzer versucht, einen ungültigen Suchbegriff in das Suchfeld einzugeben?
 * Was passiert, wenn der Suchbegriff so allgemein ist, dass er eine übermäßige Anzahl von Ergebnissen zurückgibt?
@@ -448,7 +448,7 @@ Gewisse Probleme treten erst auf, wenn das System über einen längeren Zeitraum
 |  | Suchen | 10 | 1 |  |  |
 |  | Nachrichten | 20 | 2 |  |  |
 |  | Ereignisse | 10 | 1 |  |  |
-|  | Aktivierungen | 1 | 1 |  | Simulation des Autorenverhaltens. |
+|  | Aktivierungen | 1 | 3 |  | Simulation des Autorenverhaltens. |
 
 ### Optimierung {#optimization}
 
@@ -470,7 +470,7 @@ Für die Lastgenerierung, Leistungsüberwachung und/oder Ergebnisanalyse steht e
 
 Nach der Optimierung müssen Sie einen erneuten Test durchführen, um die Auswirkungen zu überprüfen.
 
-### Berichterstellung {#reporting}
+### Reporting {#reporting}
 
 Die laufende Berichterstellung ist erforderlich, um alle über den Status auf dem Laufenden zu halten, wie bereits erwähnt, mit Farbcodierung kann die Architekturkarte dafür verwendet werden.
 
@@ -483,7 +483,7 @@ Nachdem alle Tests abgeschlossen sind, können Sie Berichte über folgende Berei
 
 ## Optimieren der Leistung durch den Einsatz des Dispatchers {#optimizing-performance-when-using-the-dispatcher}
 
-Der [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) ist das Caching- und/oder Lastausgleichs-Tool von Adobe. Bei Verwendung des Dispatchers sollten Sie Ihre Website hinsichtlich der Cache-Leistung optimieren. 
+Der [Dispatcher](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher.html) ist das Caching- und/oder Lastausgleichs-Tool von Adobe. Bei Verwendung des Dispatchers sollten Sie Ihre Website hinsichtlich der Cache-Leistung optimieren. 
 
 >[!NOTE]
 >
@@ -499,7 +499,6 @@ Der Dispatcher bietet verschiedene integrierte Mechanismen zur Optimierung der L
 >
 >* Kann alles zwischenspeichern, das Sie als Seite speichern und mithilfe einer URL anfordern können
 >* Andere Elemente, wie Cookies, Sitzungsdaten und Formulardaten, können nicht gespeichert werden.
-
 >
 >Allgemein müssen für viele Caching-Strategien geeignete URLs ausgewählt werden, damit diese zusätzlichen Daten nicht benötigt werden.
 >
@@ -511,11 +510,11 @@ Mit der Cache-Verhältnis-Formel wird der ungefähre Prozentsatz der vom Cache g
 
 * Die Gesamtzahl der Anforderungen. Diese Information können Sie der Apache-Datei `access.log` entnehmen. Weitere Informationen finden Sie in der [offiziellen Apache-Dokumentation](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
-* Die Anzahl der von der Veröffentlichungsinstanz gehandhabten Anforderungen. Diese Informationen sind im `request.log` der Instanz verfügbar. Weitere Informationen finden Sie unter [Interpretieren der request.log](/help/sites-deploying/monitoring-and-maintaining.md#interpreting-the-request-log) und [Suchen der Protokolldateien](/help/sites-deploying/monitoring-and-maintaining.md#finding-the-log-files).
+* Die Anzahl der von der Veröffentlichungsinstanz gehandhabten Anforderungen. Diese Informationen sind im Abschnitt `request.log` der Instanz. Weitere Informationen finden Sie unter [Interpretieren von request.log](/help/sites-deploying/monitoring-and-maintaining.md#interpreting-the-request-log) und [Suchen der Protokolldateien](/help/sites-deploying/monitoring-and-maintaining.md#finding-the-log-files).
 
 Die Formel zur Berechnung des Cache-Verhältnisses lautet:
 
-* (Die Gesamtanzahl der Anforderungen **minus** die Anzahl der Anforderungen bei der Veröffentlichung) **dividiert durch** durch die Gesamtanzahl der Anforderungen.
+* (Die Gesamtzahl der Anforderungen **minus** die Anzahl der Anforderungen in der Veröffentlichungsinstanz) **split** durch die Gesamtzahl der Anfragen.
 
 Beispiel: Die Gesamtzahl der Anforderungen ist 129491 und die Anzahl der von der Veröffentlichungsinstanz gehandhabten Anforderungen ist 58959. Das Cache-Verhältnis beträgt daher: **(129491 - 58959) : 129491 = 54,5 %**.
 
@@ -552,7 +551,7 @@ www.myCompany.com/pictures/gallery.christmas.1.html
 
 >[!NOTE]
 >
->Diese URL ruft dieselbe Seite und dieselbe Vorlage wie `gallery.html` auf. In der Vorlagendefinition können Sie angeben, welches Skript die Seite rendern soll, oder Sie können ein Skript für alle Seiten verwenden.
+>Diese URL ruft dieselbe Seite und die gleiche Vorlage auf wie `gallery.html`. In der Vorlagendefinition können Sie angeben, welches Skript die Seite rendern soll, oder Sie können ein Skript für alle Seiten verwenden.
 
 #### Anpassen nach URL  {#customize-by-url}
 
@@ -585,7 +584,7 @@ Wenn Sie Seitentitel oder anderen Text als Grafik rendern, sollten Sie die Datei
 
    `<page file name>.<image file name>`
 
-Sie können beispielsweise den Titel der Seite `myPage.html` im `file myPage.title.gif` speichern. Diese Datei wird automatisch gelöscht, wenn die Seite aktualisiert wird. Alle Änderungen des Seitentitels werden daher automatisch im Cache übernommen.
+Sie können beispielsweise den Titel der Seite speichern `myPage.html` im `file myPage.title.gif`. Diese Datei wird automatisch gelöscht, wenn die Seite aktualisiert wird. Alle Änderungen des Seitentitels werden daher automatisch im Cache übernommen.
 
 >[!NOTE]
 >
@@ -611,18 +610,18 @@ Es wird empfohlen, die Personalisierung auf den erforderlichen Bereich zu beschr
 * Wenn Sie stattdessen eine Auswahl von 10 verschiedenen Startseiten anbieten, können Sie diese zwischenspeichern und so die Leistung verbessern.
 
 >[!TIP]
->Weitere Informationen zum Konfigurieren des Dispatcher-Caches finden Sie im [AEM Tutorial zum Dispatcher-Cache](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html) und im Abschnitt zum Zwischenspeichern geschützter Inhalte [Zwischenspeichern.](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html#dispatcher-tips-and-tricks)
+>Weitere Informationen zum Konfigurieren des Dispatcher-Caches finden Sie im Abschnitt [Tutorial zum AEM Dispatcher Cache](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html) und deren Abschnitt [Zwischenspeichern geschützter Inhalte](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html#dispatcher-tips-and-tricks)
 
 Wenn Sie die einzelnen Seiten personalisieren (z. B. durch Einfügen des Namens des Benutzers in die Titelleiste), kann dies Auswirkungen auf die Leistung haben.
 
 >[!TIP]
->Informationen zum Zwischenspeichern gesicherter Inhalte finden Sie unter [Zwischenspeichern von geschützten Inhalten](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=de) im Dispatcher-Handbuch.
+>Informationen zum Zwischenspeichern geschützter Inhalte finden Sie unter [Zwischenspeichern von geschützten Inhalten](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=de) im Dispatcher-Handbuch.
 
 In Bezug auf das Mischen von beschränktem und öffentlichem Inhalt auf einer Seite sollten Sie eine Strategie in Betracht ziehen, die serverseitige Einfügungen im Dispatcher nutzt, oder clientseitige Einfügungen über Ajax im Browser.
 
 >[!TIP]
 >
->Informationen zum Umgang mit gemischten öffentlichen und eingeschränkten Inhalten finden Sie unter [Einrichten von Sling Dynamic Include.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html)
+>Informationen zum Umgang mit gemischten öffentlichen und eingeschränkten Inhalten finden Sie unter [Einrichten von Sling Dynamic Include .](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html)
 
 #### Sticky-Verbindungen  {#sticky-connections}
 
@@ -632,12 +631,12 @@ In Bezug auf das Mischen von beschränktem und öffentlichem Inhalt auf einer Se
 
 Es gibt zwei Möglichkeiten, wie ein Browser den Typ einer Datei bestimmen kann:
 
-1. Durch seine Erweiterung (z. B. `.html`, `.gif`, `.jpg` usw.)
+1. Durch seine Erweiterung (z. B. `.html`, `.gif`, `.jpg`usw.)
 1. Durch den MIME-Typ, den der Server mit der Datei sendet.
 
 Für die meisten Dateien wird der MIME-Typ durch die Dateierweiterung angegeben :
 
-1. Durch seine Erweiterung (z. B. `.html`, `.gif`, `.jpg` usw.)
+1. Durch seine Erweiterung (z. B. `.html`, `.gif`, `.jpg`usw.)
 1. Durch den MIME-Typ, den der Server mit der Datei sendet.
 
 Wenn der Dateiname keine Erweiterung aufweist, wird er als einfacher Text dargestellt.
@@ -647,7 +646,7 @@ Mit der Dispatcher-Version 4.1.11 können Sie Antwort-Header cachen. Wenn Sie ke
 Um sicherzustellen, dass Dateien richtig zwischengespeichert werden, halten Sie sich an die folgenden Richtlinien.
 
 * Stellen Sie sicher, dass Dateien immer die richtige Erweiterung aufweisen.
-* Vermeiden Sie allgemeine Dateibereitstellungsskripte, die URLs wie `download.jsp?file=2214` enthalten. Schreiben Sie das Skript neu, um URLs zu verwenden, die die Dateispezifikation enthalten. Im vorherigen Beispiel wäre dies `download.2214.pdf`.
+* Vermeiden Sie allgemeine Dateibereitstellungsskripte, die URLs wie `download.jsp?file=2214`. Schreiben Sie das Skript neu, um URLs zu verwenden, die die Dateispezifikation enthalten. Im vorherigen Beispiel würde dies `download.2214.pdf`.
 
 ## Leistung bei der Sicherung {#backup-performance}
 
@@ -686,8 +685,8 @@ Der Sicherungs-Benchmark wird mit den zusätzlichen Inhaltssätzen wiederholt, d
 
 Die Sicherungs-Benchmarks beziehen sich auf zwei Hauptszenarien: Sicherungen bei hoher Anwendungslast und Sicherungen bei inaktivem System. Obwohl allgemein empfohlen wird, Sicherungen durchzuführen, wenn AEM so inaktiv wie möglich ist, gibt es Situationen, in denen es erforderlich ist, die Sicherung auszuführen, wenn das System unter Belastung ist.
 
-* **Idle State**  - Backups werden ohne andere Aktivität auf AEM durchgeführt.
-* **Unter Laden**  - Sicherungen werden durchgeführt, während das System zu 80 % von Online-Prozessen geladen wird. Die Sicherungsverzögerung variiert, um die Auswirkung auf die Last zu ermitteln.
+* **Idle State** - Sicherungen werden ohne andere Aktivität auf AEM durchgeführt.
+* **Unterladen** - Sicherungen werden durchgeführt, während das System zu 80 % von Online-Prozessen geladen wird. Die Sicherungsverzögerung variiert, um die Auswirkung auf die Last zu ermitteln.
 
 Die Sicherungszeiten und die Größe der resultierenden Sicherung werden aus den AEM-Serverprotokollen abgerufen. Es wird normalerweise empfohlen, Backups für außerhalb liegende Zeiten zu planen, wenn AEM inaktiv ist, z. B. mitten in der Nacht. Dieses Szenario entspricht der empfohlenen Vorgehensweise.
 
@@ -695,8 +694,8 @@ Die Last besteht aus Seitenerstellungen/-löschungen, Traversierungen und Anford
 
 Die Auswirkung von Last auf die Sicherungsleistung kann geschätzt werden, indem die Differenz zwischen der Leistung mit Anwendungslast und der Leistung ohne Anwendungslast errechnet wird. Die Auswirkung der Sicherung auf den Anwendungsdurchsatz können Sie ermitteln, indem Sie den Durchsatz des Szenarios in Transaktionen pro Stunde mit und ohne gleichzeitige Sicherung mit Sicherungen vergleichen, die mit unterschiedlichen Verzögerungseinstellungen ausgeführt werden.
 
-* **Verzögerungseinstellung**  - In verschiedenen Szenarien variierten wir auch die Sicherungsverzögerungseinstellung. Dabei wurden Werte von 10 ms (Standard), 1 ms und 0 ms verwendet, um zu untersuchen, wie sich diese Einstellung auf die Leistung von Backups auswirkte.
-* **Sicherungstyp**  - Alle Sicherungen waren externe Sicherungen des Repositorys, die in einem Backup-Verzeichnis durchgeführt wurden, ohne eine ZIP-Datei zu erstellen, außer in einem Fall zum Vergleich, in dem der tar-Befehl direkt verwendet wurde. Da inkrementelle Sicherungen nicht in eine ZIP-Datei geschrieben werden können oder wenn die vorherige vollständige Sicherung eine ZIP-Datei ist, wird in Produktionssituationen meist die Sicherungsverzeichnismethode verwendet.
+* **Verzögerungseinstellung** - In verschiedenen Szenarien haben wir auch die Einstellung für die Backup-Verzögerung geändert, wobei die Werte 10 ms (Standard), 1 ms und 0 ms verwendet wurden, um zu untersuchen, wie diese Einstellung die Leistung von Backups beeinflusst hat.
+* **Sicherungstyp** - Alle Sicherungen waren externe Sicherungen des Repositorys, die in einem Backup-Verzeichnis durchgeführt wurden, ohne eine ZIP-Datei zu erstellen, außer in einem Fall zum Vergleich, in dem der tar-Befehl direkt verwendet wurde. Da inkrementelle Sicherungen nicht in eine ZIP-Datei geschrieben werden können oder wenn die vorherige vollständige Sicherung eine ZIP-Datei ist, wird in Produktionssituationen meist die Sicherungsverzeichnismethode verwendet.
 
 ### Zusammenfassung der Ergebnisse {#summary-of-results}
 

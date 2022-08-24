@@ -26,7 +26,7 @@ In einer SPA stellt die Seitenkomponente die HTML-Elemente ihrer untergeordneten
 >
 >Der SPA Editor ist die empfohlene Lösung für Projekte, die SPA Framework-basiertes Client-seitiges Rendering erfordern (z. B. React oder Angular).
 
-## Einführung {#introduction}
+## Einführung    {#introduction}
 
 Die Seitenkomponente für eine SPA stellt die HTML-Elemente ihrer untergeordneten Komponenten nicht über die JSP- oder HTL-Datei und Ressourcenobjekte bereit. Dieser Vorgang wird an das SPA-Framework delegiert. Die Darstellung der untergeordneten Komponenten wird als JSON-Datenstruktur (d. h. das Modell) abgerufen. Die SPA-Komponenten werden dann gemäß dem angegebenen JSON-Modell zur Seite hinzugefügt. Somit unterscheidet sich die anfängliche Textzusammensetzung der Seitenkomponente von den im Vorab gerenderten HTML-Entsprechungen.
 
@@ -93,7 +93,7 @@ Die Meta-Ressourceneigenschaften, die den SPA-Inhalt beschreiben:
 >
 >In diesem Dokument wird die App &quot;We.Retail Journal&quot;nur zu Demonstrationszwecken verwendet. Sie sollte nicht für Projektaufgaben verwendet werden.
 >
->Jedes AEM Projekt sollte den [AEM Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) nutzen, der SPA Projekte mit React oder Angular unterstützt und das SPA SDK nutzt. Alle SPA Projekte auf AEM sollten auf dem Maven-Archetyp für SPA Starter Kit basieren.
+>Jedes AEM Projekt sollte [AEM Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de), SPA Projekte mit React oder Angular unterstützt und das SPA SDK nutzt. Alle SPA Projekte auf AEM sollten auf dem Maven-Archetyp für SPA Starter Kit basieren.
 
 ## Synchronisation von Seiteneditor-Überlagerungen {#page-editor-overlay-synchronization}
 
@@ -106,4 +106,4 @@ Wenn Routing-Funktionen aktiviert sind, wird angenommen, dass der JSON-Export de
 * `structureDepth`: Zahl, die die Tiefe der exportierten Baumstruktur angibt
 * `structurePatterns`: Regex oder Array aus Regexes, die der zu exportierenden Seite entsprechen
 
-Dies kann im SPA Beispielinhalt in `/conf/we-retail-journal/react/settings/wcm/policies/we-retail-journal/react/components/structure/page/root` angezeigt werden.
+Dies kann im SPA Beispielinhalt unter `/conf/we-retail-journal/react/settings/wcm/policies/we-retail-journal/react/components/structure/page/root`.

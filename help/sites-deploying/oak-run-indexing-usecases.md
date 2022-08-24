@@ -1,8 +1,8 @@
 ---
 title: Oak-run.jar – Indizierungsanwendungsfälle
-seo-title: Oak-run.jar – Indizierungsanwendungsfälle
+seo-title: Oak-run.jar Indexing Use Cases
 description: Erfahren Sie mehr über die verschiedenen Anwendungsfälle für die Durchführung der Indizierung mit dem Oak-run-Tool.
-seo-description: Erfahren Sie mehr über die verschiedenen Anwendungsfälle für die Durchführung der Indizierung mit dem Oak-run-Tool.
+seo-description: Learn about the various user cases for performing indexing with the Oak-run tool.
 uuid: 3c50080d-1e0d-4886-8d37-269f06881eb4
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -12,7 +12,7 @@ noindex: true
 exl-id: d25e3070-080a-4594-8fdb-9f09164135fc
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1375'
 ht-degree: 87%
 
 ---
@@ -38,13 +38,13 @@ Dies ist ein Anwendungsfall, in dem der Index beschädigt wurde. In einigen Fäl
 1. Das Tool kann auch verwendet werden, wenn kein Zugriff auf AEM möglich ist. 
 1. Die Verwendung ist einfach.
 
-Die Überprüfung auf beschädigte Indizes kann über den Vorgang `--index-consistency-check` durchgeführt werden:
+Die Überprüfung auf beschädigte Indizes kann über durchgeführt werden. `--index-consistency-check` -Vorgang:
 
 ```shell
 java -jar oak-run*.jar index --fds-path=/path/to/datastore  /path/to/segmentstore/ --index-consistency-check
 ```
 
-Dadurch wird ein Bericht in `indexing-result/index-consistency-check-report.txt` generiert. Unten sehen Sie ein Beispiel für diesen Bericht:
+Dadurch wird ein Bericht in `indexing-result/index-consistency-check-report.txt`. Unten sehen Sie ein Beispiel für diesen Bericht:
 
 ```
 Valid indexes :
@@ -98,7 +98,7 @@ Unten sehen Sie ein Beispiel dafür, wie der Befehl in der Praxis arbeitet:
 java -jar oak-run*.jar index --fds-path=/path/to/datastore  /path/to/segmentstore/ --index-info --index-definitions --index-dump
 ```
 
-Die Berichte werden in `indexing-result/index-info.txt` und `indexing-result/index-definitions.json` generiert
+Die Berichte werden in `indexing-result/index-info.txt` und `indexing-result/index-definitions.json`
 
 Außerdem werden einige Informationen über die Web-Konsole bereitgestellt und befinden sich in der vom Dump erzeugten ZIP-Datei. Der Zugriff ist über folgende URL möglich:
 
@@ -110,7 +110,7 @@ Dieses Werkzeug aktiviert die schnelle Sammlung aller erforderlichen Details, di
 
 ## Anwendungsfall 3 - Neuindizierung {#usecase3reindexing}
 
-Je nach [Szenario](https://jackrabbit.apache.org/oak/docs/query/indexing.html#reindexing) ist es in einigen Fällen notwendig, eine Neuindizierung durchzuführen. Zurzeit erfolgt die Neuindizierung durch Festlegen der `reindex`-Markierung auf `true` im Indexdefinitionsknoten über CRXDE oder über die Index Manager-Benutzeroberfläche. Nach dem Setzen des Flags wird die Neuindizierung asynchron ausgeführt.
+Je nach [Szenario](https://jackrabbit.apache.org/oak/docs/query/indexing.html#reindexing) ist es in einigen Fällen notwendig, eine Neuindizierung durchzuführen. Derzeit erfolgt die Neuindizierung durch Festlegen der `reindex` Markierung auf `true` im Indexdefinitionsknoten über CRXDE oder über die Index-Manager-Benutzeroberfläche. Nach dem Setzen des Flags wird die Neuindizierung asynchron ausgeführt.
 
 Einige wichtige Aspekte der Neuindizierung:
 
@@ -143,7 +143,7 @@ java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-wr
 Dies bietet die folgenden Vorteile
 
 * Minimale Auswirkung auf das Ausführen von AEM-Instanzen. Die meisten Lesevorgänge können von Sekundärservern ausgeführt werden und ausgeführte AEM-Caches sind nicht von all den für die Neuindizierung erforderlichen Durchläufen betroffen. 
-* Benutzer können über die Option `--index-definitions-file` auch eine JSON eines neuen oder aktualisierten Index bereitstellen.
+* Benutzer können auch eine JSON-Datei für einen neuen oder aktualisierten Index über die `--index-definitions-file` -Option.
 
 ### Neuindizierung – SegmentNodeStore {#reindexsegmentnodestore}
 
@@ -186,15 +186,15 @@ Der Unterschied zwischen diesem und dem oben erläuterten Ansatz besteht darin, 
 
 In diesem Szenario können Sie die Neuindizierung in einem geklonten Setup durchführen, um die Auswirkungen auf die laufende AEM-Instanz zu minimieren:
 
-1. Erstellen Sie den Checkpoint über einen JMX-Vorgang. Hierzu können Sie in der [JMX-Konsole](/help/sites-administering/jmx-console.md) nach `CheckpointManager` suchen. Klicken Sie dann auf den Vorgang **createCheckpoint(long p1)** und verwenden Sie einen hohen Wert für die Gültigkeit in Sekunden (z. B. **2592000**).
-1. Kopieren Sie den Ordner `crx-quickstart` auf einen neuen Computer.
+1. Erstellen Sie den Checkpoint über einen JMX-Vorgang. Hierzu können Sie in der [JMX-Konsole](/help/sites-administering/jmx-console.md) nach `CheckpointManager` suchen. Klicken Sie dann auf die **createCheckpoint(long p1)** Vorgang mit einem hohen Ablaufwert in Sekunden (z. B. **2592000**).
+1. Kopieren Sie die `crx-quickstart` Ordner auf einem neuen Computer
 1. Führen Sie die Neuindizierung über den Oak-run-Befehl „index“ durch. 
 
 1. Kopieren Sie die generierten Indexdateien auf den AEM-Server. 
 
 1. Importieren Sie die Indexdateien über JMX. 
 
-In diesem Szenario wird davon ausgegangen, dass der Zugriff auf den Datenspeicher in einer anderen Instanz möglich ist. Dies ist nicht möglich, wenn `FileDataStore` in einer Cloud-basierten Speicherlösung wie EBS platziert ist. Dies schließt das Szenario aus, in dem `FileDataStore` ebenfalls geklont wird. Wenn die Indexdefinition keine Volltextindizierung durchführt, ist kein Zugriff auf `DataStore` erforderlich.
+In diesem Szenario wird davon ausgegangen, dass der Zugriff auf den Datenspeicher in einer anderen Instanz möglich ist. Dies ist nicht möglich, wenn `FileDataStore` in einer Cloud-basierten Speicherlösung wie EBS platziert ist. Dies schließt das Szenario aus, in dem `FileDataStore` wird auch geklont. Wenn die Indexdefinition keine Volltext-Indizierung durchführt, können Sie auf `DataStore` ist nicht erforderlich.
 
 ## Anwendungsfall 4 – Aktualisieren der Indexdefinitionen {#usecase4updatingindexdefinitions}
 
@@ -206,7 +206,7 @@ Oak-run unterstützt jetzt die Bereitstellung von Indexdefinitionen im JSON-Form
 
 Für diesen Anwendungsfall kommt der folgende Prozess zum Tragen:
 
-1. Ein Entwickler aktualisiert die Indexdefinitionen auf einer lokalen Instanz und generiert dann eine JSON-Indexdefinitionsdatei über die Option `--index-definitions` .
+1. Ein Entwickler aktualisiert die Indexdefinitionen auf einer lokalen Instanz und generiert dann eine JSON-Indexdefinitionsdatei über die `--index-definitions` option
 
 1. Die aktualisierte JSON-Datei erhält der Systemadministrator. 
 1. Der Systemadministrator verfolgt den Out-of-Band-Ansatz und bereitet den Index in einer anderen Installation vor. 

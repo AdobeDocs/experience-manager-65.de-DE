@@ -1,19 +1,19 @@
 ---
 title: ClientContext-JavaScript-API
-seo-title: ClientContext-JavaScript-API
+seo-title: Client Context Javascript API
 description: Die JavaScript-API für ClientContext
-seo-description: Die JavaScript-API für ClientContext
+seo-description: The Javascript API for Client Context
 uuid: be58998c-f23e-4768-8394-1f1ad3994c4c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: a6e5810b-dac5-4137-93cf-5d8d53cacc49
-feature: Context-Hub
+feature: Context Hub
 exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '3165'
+source-wordcount: '3153'
 ht-degree: 91%
 
 ---
@@ -28,7 +28,7 @@ Es erweitert CQ_Analytics.PersistedSessionStore.
 
 ### Methoden {#methods}
 
-#### getRegisteredStore(name)  {#getregisteredstore-name}
+#### getRegisteredStore(name) {#getregisteredstore-name}
 
 Gibt einen Sitzungsspeicher eines festgelegten Namens zurück. Siehe auch [Zugreifen auf einen Sitzungsspeicher](/help/sites-developing/client-context.md#accessing-session-stores).
 
@@ -52,7 +52,7 @@ Registriert einen Sitzungsspeicher mit ClientContext. Löst die storeregister- u
 
 Kein zurückgegebener Wert
 
-## CQ_Analytics.ClientContextUtils  {#cq-analytics-clientcontextutils}
+## CQ_Analytics.ClientContextUtils {#cq-analytics-clientcontextutils}
 
 Stellt Methoden für die Überwachung bereit, um die Aktivierung und Registrierung von Sitzungsspeicher zu erkennen. Siehe auch [Überprüfen, ob ein Sitzungsspeicher definiert und initialisiert ist](/help/sites-developing/client-context.md#checking-that-a-session-store-is-defined-and-initialized).
 
@@ -72,21 +72,21 @@ Beispiel: Ein Sitzungsspeicher basiert auf einem JSON-Objekt und wird über eine
 * Der Speicher wird vorab mit Standardwerten (init-Eigenschaften) gefüllt, aber die Anforderung schlägt fehl (Zeitüberschreitung). Es erfolgt nur eine Initialisierung mit Standardwerten.
 * Der Speicher wird vorab gefüllt.
 
-Wenn die Verzögerung auf `true` oder eine Anzahl von Millisekunden festgelegt ist, wartet die Methode, bevor die Callback-Methode aufgerufen wird. Wenn ein anderes Initialisierungsereignis ausgelöst wird, bevor der Verzögerungszeitraum abgelaufen ist, wartet die Methode, bis der Verzögerungszeitraum ohne Initialisierungsereignis überschritten ist. So ist es möglich, zu warten, bis ein zweites Initialisierungsereignis ausgelöst wird, um die Callback-Funktion im Optimalfall aufzurufen.
+Wenn die Verzögerung auf `true` oder einer Anzahl von Millisekunden wartet die Methode, bevor sie die Callback-Methode aufruft. Wenn ein anderes Initialisierungsereignis ausgelöst wird, bevor der Verzögerungszeitraum abgelaufen ist, wartet die Methode, bis der Verzögerungszeitraum ohne Initialisierungsereignis überschritten ist. So ist es möglich, zu warten, bis ein zweites Initialisierungsereignis ausgelöst wird, um die Callback-Funktion im Optimalfall aufzurufen.
 
 **Parameter**
 
 * storeName: String. Der Name des Sitzungsspeichers, der zum Listener hinzugefügt werden soll.
 * callback: Funktion. Die Funktion, die bei der Speicherinitialisierung aufgerufen werden soll.
-* delay: boolescher Wert oder Zahl. Die Zeit, für deren Dauer der Aufruf der Callback-Funktion verzögert werden soll, in Millisekunden. Der boolesche Wert `true` verwendet die Standardverzögerung von `200 ms`. Beim booleschen Wert`false` oder einer negativen Zahl wird keine Verzögerung eingesetzt.
+* delay: boolescher Wert oder Zahl. Die Zeit, für deren Dauer der Aufruf der Callback-Funktion verzögert werden soll, in Millisekunden. Ein boolescher Wert von `true` verwendet die Standardverzögerung von `200 ms`. Beim booleschen Wert`false` oder einer negativen Zahl wird keine Verzögerung eingesetzt.
 
 **Rückgabe**
 
 Kein zurückgegebener Wert
 
-#### onStoreRegistered(storeName, callback)  {#onstoreregistered-storename-callback}
+#### onStoreRegistered(storeName, callback) {#onstoreregistered-storename-callback}
 
-Registriert eine Callback-Funktion, wenn ein Sitzungsspeicher registriert wird. Das Registrierungsereignis tritt auf, wenn ein Store unter [CQ_Analytics.ClientContextMgr](#cq-analytics-clientcontextmgr) registriert wird.
+Registriert eine Callback-Funktion, wenn ein Sitzungsspeicher registriert wird. Das Registrierungsereignis tritt auf, wenn ein Store bei [CQ_Analytics.ClientContextMgr](#cq-analytics-clientcontextmgr).
 
 **Parameter**
 
@@ -97,7 +97,7 @@ Registriert eine Callback-Funktion, wenn ein Sitzungsspeicher registriert wird. 
 
 Kein zurückgegebener Wert
 
-## CQ_Analytics.JSONPStore  {#cq-analytics-jsonpstore}
+## CQ_Analytics.JSONPStore {#cq-analytics-jsonpstore}
 
 Ein nicht beständiger Sitzungsspeicher, der JSON-Daten enthält. Die Daten werden von einem externen JSONP-Dienst abgerufen. Mit der Methode `getInstance` oder `getRegisteredInstance` können Sie eine Instanz dieser Klasse erstellen.
 
@@ -107,11 +107,11 @@ Erweitert CQ_Analytics.JSONStore.
 
 Informationen zu den geerbten Eigenschaften finden Sie unter CQ_Analytics.JSONStore und CQ_Analytics.SessionStore.
 
-### Methoden  {#methods-2}
+### Methoden {#methods-2}
 
 Informationen zu den geerbten Methoden finden Sie ebenfalls unter CQ_Analytics.JSONStore und CQ_Analytics.SessionStore.
 
-#### getInstance(storeName, serviceURL, dynamicData, deferLoading, loadingCallback)  {#getinstance-storename-serviceurl-dynamicdata-deferloading-loadingcallback}
+#### getInstance(storeName, serviceURL, dynamicData, deferLoading, loadingCallback) {#getinstance-storename-serviceurl-dynamicdata-deferloading-loadingcallback}
 
 Erstellt ein CQ_Analytics.JSONPStore-Objekt.
 
@@ -133,13 +133,13 @@ Ruft die URL des JSONP-Dienstes ab, mit dem dieses Objekt JSON-Daten abruft.
 
 **Parameter**
 
-Kein.
+Ohne.
 
 **Rückgabe**
 
 Ein String, der die Dienst-URL repräsentiert, oder „null“, wenn keine Dienst-URL konfiguriert wurde.
 
-#### load(serviceURL, dynamicData, callback)  {#load-serviceurl-dynamicdata-callback}
+#### load(serviceURL, dynamicData, callback) {#load-serviceurl-dynamicdata-callback}
 
 Ruft den JSONP-Dienst auf. Die JSONP-URL ist die Dienst-URL, der ein Callback-Funktionsname vorangestellt wird.
 
@@ -153,7 +153,7 @@ Ruft den JSONP-Dienst auf. Die JSONP-URL ist die Dienst-URL, der ein Callback-Fu
 
 Kein zurückgegebener Wert
 
-#### registerNewInstance(storeName, serviceURL, dynamicData, callback)  {#registernewinstance-storename-serviceurl-dynamicdata-callback}
+#### registerNewInstance(storeName, serviceURL, dynamicData, callback) {#registernewinstance-storename-serviceurl-dynamicdata-callback}
 
 Erstellt ein CQ_Analytics.JSONPStore-Objekt und registriert den Store bei ClientContext.
 
@@ -168,7 +168,7 @@ Erstellt ein CQ_Analytics.JSONPStore-Objekt und registriert den Store bei Client
 
 Das registrierte CQ_Analytics.JSONPStore-Objekt
 
-#### setServiceURL(serviceURL)  {#setserviceurl-serviceurl}
+#### setServiceURL(serviceURL) {#setserviceurl-serviceurl}
 
 Legt die URL des JSONP-Dienstes fest, der zum Abrufen der JSON-Daten genutzt werden soll.
 
@@ -180,7 +180,7 @@ Legt die URL des JSONP-Dienstes fest, der zum Abrufen der JSON-Daten genutzt wer
 
 Kein zurückgegebener Wert
 
-## CQ_Analytics.JSONStore  {#cq-analytics-jsonstore}
+## CQ_Analytics.JSONStore {#cq-analytics-jsonstore}
 
 Ein Container für ein JSON-Objekt. Erstellen Sie eine Instanz dieser Klasse, um einen nicht beständigen Sitzungsspeicher zu erstellen, der JSON-Daten enthält:
 
@@ -210,13 +210,13 @@ Löscht die Sitzungsspeicherdaten und alle Initialisierungseigenschaften.
 
 **Parameter**
 
-Kein.
+Ohne.
 
 **Rückgabe**
 
 Kein zurückgegebener Wert
 
-#### getInstance(storeName, jsonData)  {#getinstance-storename-jsondata}
+#### getInstance(storeName, jsonData) {#getinstance-storename-jsondata}
 
 Erstellt ein CQ_Analytics.JSONStore-Objekt mit einem angegebenen Namen, das mit den angegebenen JSON-Daten initialisiert wird (ruft die initJSON-Methode auf).
 
@@ -235,7 +235,7 @@ Ruft die Daten des Sitzungsspeichers im JSON-Format ab.
 
 **Parameter**
 
-Kein.
+Ohne.
 
 **Rückgabe**
 
@@ -243,17 +243,17 @@ Ein Objekt, das die Speicherdaten im JSON-Format repräsentiert.
 
 #### init() {#init}
 
-Löscht den Sitzungsspeicher und initialisiert ihn mit der Initialisierungseigenschaft. Legt das Initialisierungsflag auf `true` fest und löst dann die Ereignisse `initialize` und `update` aus.
+Löscht den Sitzungsspeicher und initialisiert ihn mit der Initialisierungseigenschaft. Setzt das Initialisierungsflag auf `true` und löst dann `initialize` und `update` -Ereignisse.
 
 **Parameter**
 
-Kein.
+Ohne.
 
 **Rückgabe**
 
 Keine zurückgegebenen Daten
 
-#### initJSON(jsonData, doNotClear)  {#initjson-jsondata-donotclear}
+#### initJSON(jsonData, doNotClear) {#initjson-jsondata-donotclear}
 
 Erstellt Initialisierungseigenschaften von den Daten in einem JSON-Objekt. Sie können optional alle vorhandenen Initialisierungseigenschaften entfernen.
 
@@ -284,7 +284,7 @@ B/B1: "valueBB1"
 
 Kein zurückgegebener Wert
 
-#### registerNewInstance(storeName, jsonData)  {#registernewinstance-storename-jsondata}
+#### registerNewInstance(storeName, jsonData) {#registernewinstance-storename-jsondata}
 
 Erstellt ein CQ_Analytics.JSONStore-Objekt mit einem angegebenen Namen, das mit den angegebenen JSON-Daten initialisiert wird (ruft die initJSON-Methode auf). Das neue Objekt wird automatisch mit dem Clickstream Cloud Manager registriert.
 
@@ -297,11 +297,11 @@ Erstellt ein CQ_Analytics.JSONStore-Objekt mit einem angegebenen Namen, das mit 
 
 Das CQ_Analytics.JSONStore-Objekt.
 
-## CQ_Analytics.Observable  {#cq-analytics-observable}
+## CQ_Analytics.Observable {#cq-analytics-observable}
 
 Löst Ereignisse aus und ermöglicht es, dass andere Objekte auf diese Ereignisse warten und auf sie reagieren. Klassen, die diese Klasse erweitern, können Ereignisse auslösen, die zum Aufrufen von Listenern führen.
 
-### Methoden  {#methods-4}
+### Methoden {#methods-4}
 
 #### addListener(event, fct, scope) {#addlistener-event-fct-scope}
 
@@ -317,7 +317,7 @@ Registriert einen Listener für ein Ereignis. Siehe auch [Erstellen eines Listen
 
 Kein zurückgegebener Wert
 
-#### removeListener(event, fct)  {#removelistener-event-fct}
+#### removeListener(event, fct) {#removelistener-event-fct}
 
 Entfernt den angegeben Ereignis-Handler für ein Ereignis.
 
@@ -330,17 +330,17 @@ Entfernt den angegeben Ereignis-Handler für ein Ereignis.
 
 Kein zurückgegebener Wert
 
-## CQ_Analyics.PersistedJSONPStore  {#cq-analyics-persistedjsonpstore}
+## CQ_Analyics.PersistedJSONPStore {#cq-analyics-persistedjsonpstore}
 
 Ein beständiger Container eines JSON-Objekts, der von einem Remote-JSONP-Dienst abgerufen wird.
 
 Erweitert CQ_Analytics.PersistedJSONStore.
 
-### Methoden  {#methods-5}
+### Methoden {#methods-5}
 
 Informationen zu geerbten Methoden finden Sie auch unter CQ_Analytics.PersistedJSONStore.
 
-#### getInstance(storeName, serviceURL, dynamicData, deferLoading, loadingCallback)  {#getinstance-storename-serviceurl-dynamicdata-deferloading-loadingcallback-1}
+#### getInstance(storeName, serviceURL, dynamicData, deferLoading, loadingCallback) {#getinstance-storename-serviceurl-dynamicdata-deferloading-loadingcallback-1}
 
 Erstellt ein CQ_Analytics.PersistedJSONPStore-Objekt.
 
@@ -362,13 +362,13 @@ Ruft die URL des JSONP-Dienstes ab, mit dem dieses Objekt JSON-Daten abruft.
 
 **Parameter**
 
-Kein.
+Ohne.
 
 **Rückgabe**
 
 Ein String, der die Dienst-URL repräsentiert, oder „null“, wenn keine Dienst-URL konfiguriert wurde.
 
-#### load(serviceURL, dynamicData, callback)  {#load-serviceurl-dynamicdata-callback-1}
+#### load(serviceURL, dynamicData, callback) {#load-serviceurl-dynamicdata-callback-1}
 
 Ruft den JSONP-Dienst auf. Die JSONP-URL ist die Dienst-URL, der ein Callback-Funktionsname vorangestellt wird.
 
@@ -382,7 +382,7 @@ Ruft den JSONP-Dienst auf. Die JSONP-URL ist die Dienst-URL, der ein Callback-Fu
 
 Kein zurückgegebener Wert
 
-#### registerNewInstance(storeName, serviceURL, dynamicData, callback)  {#registernewinstance-storename-serviceurl-dynamicdata-callback-1}
+#### registerNewInstance(storeName, serviceURL, dynamicData, callback) {#registernewinstance-storename-serviceurl-dynamicdata-callback-1}
 
 Erstellt ein CQ_Analytics.PersistedJSONPStore-Objekt und registriert den Store bei ClientContext.
 
@@ -397,7 +397,7 @@ Erstellt ein CQ_Analytics.PersistedJSONPStore-Objekt und registriert den Store b
 
 Das registrierte CQ_Analytics.PersistedJSONPStore-Objekt
 
-#### setServiceURL(serviceURL)  {#setserviceurl-serviceurl-1}
+#### setServiceURL(serviceURL) {#setserviceurl-serviceurl-1}
 
 Legt die URL des JSONP-Dienstes fest, der zum Abrufen der JSON-Daten genutzt werden soll.
 
@@ -409,11 +409,11 @@ Legt die URL des JSONP-Dienstes fest, der zum Abrufen der JSON-Daten genutzt wer
 
 Kein zurückgegebener Wert
 
-## CQ_Analytics.PersistedJSONStore  {#cq-analytics-persistedjsonstore}
+## CQ_Analytics.PersistedJSONStore {#cq-analytics-persistedjsonstore}
 
 Ein beständiger Container eines JSON-Objekts.
 
-Erweitert `CQ_Analytics.PersistedSessionStore`.
+Erweiterungen `CQ_Analytics.PersistedSessionStore`.
 
 ### Eigenschaften {#properties-2}
 
@@ -429,7 +429,7 @@ Der Name des Stores. Mit der Methode `getInstance` können Sie diesen Wert abruf
 
 Informationen zu geerbten Methoden finden Sie auch unter CQ_Analytics.PersistedSessionStore.
 
-#### getInstance(storeName, jsonData)  {#getinstance-storename-jsondata-1}
+#### getInstance(storeName, jsonData) {#getinstance-storename-jsondata-1}
 
 Erstellt ein CQ_Analytics.PersistedJSONStore-Objekt mit einem angegebenen Namen, das mit den angegebenen JSON-Daten initialisiert wird (ruft die initJSON-Methode auf).
 
@@ -442,19 +442,19 @@ Erstellt ein CQ_Analytics.PersistedJSONStore-Objekt mit einem angegebenen Namen,
 
 Das CQ_Analytics.PersistedJSONStore-Objekt.
 
-#### getJSON()  {#getjson-1}
+#### getJSON() {#getjson-1}
 
 Ruft die Daten des Sitzungsspeichers im JSON-Format ab.
 
 **Parameter**
 
-Kein.
+Ohne.
 
 **Rückgabe**
 
 Ein Objekt, das die Speicherdaten im JSON-Format repräsentiert.
 
-#### initJSON(jsonData, doNotClear)  {#initjson-jsondata-donotclear-1}
+#### initJSON(jsonData, doNotClear) {#initjson-jsondata-donotclear-1}
 
 Erstellt Initialisierungseigenschaften von den Daten in einem JSON-Objekt. Sie können optional alle vorhandenen Initialisierungseigenschaften entfernen.
 
@@ -485,7 +485,7 @@ B/B1: "valueBB1"
 
 Kein zurückgegebener Wert
 
-#### registerNewInstance(storeName, jsonData)  {#registernewinstance-storename-jsondata-1}
+#### registerNewInstance(storeName, jsonData) {#registernewinstance-storename-jsondata-1}
 
 Erstellt ein CQ_Analytics.PersistedJSONStore-Objekt mit einem angegebenen Namen, das mit den angegebenen JSON-Daten initialisiert wird (ruft die initJSON-Methode auf). Das neue Objekt wird automatisch mit dem ClientContext-Manager registriert.
 
@@ -498,7 +498,7 @@ Erstellt ein CQ_Analytics.PersistedJSONStore-Objekt mit einem angegebenen Namen,
 
 Das CQ_Analytics.PersistedJSONStore-Objekt.
 
-## CQ_Analytics.PersistedSessionStore  {#cq-analytics-persistedsessionstore}
+## CQ_Analytics.PersistedSessionStore {#cq-analytics-persistedsessionstore}
 
 Ein Container mit Eigenschaften und Werten. Die Daten werden mit CQ_Analytics.SessionPersistence gespeichert. Erstellen Sie eine Instanz dieser Klasse, um einen beständigen Sitzungsspeicher zu erstellen:
 
@@ -520,15 +520,15 @@ Wenn die geerbten Methoden `clear`, `setProperty`, `setProperties`, `removePrope
 
 #### getStoreKey() {#getstorekey}
 
-Ruft die Eigenschaft `STOREKEY` ab.
+Ruft die `STOREKEY` -Eigenschaft.
 
 **Parameter**
 
-Kein
+Ohne
 
 **Rückgabe**
 
-Der Wert der Eigenschaft `STOREKEY`.
+Der Wert der `STOREKEY` -Eigenschaft.
 
 #### isPersisted(name) {#ispersisted-name}
 
@@ -544,7 +544,7 @@ Der boolesche Wert `true`, wenn die Eigenschaft gespeichert wird, und der Wert `
 
 #### persist() {#persist}
 
-Behält den Sitzungsspeicher bei. Der standardmäßige Persistenzmodus verwendet den Browser `localStorage` mit `ClientSidePersistence` als Namen ( `window.localStorage.set("ClientSidePersistance", store);`).
+Behält den Sitzungsspeicher bei. Der standardmäßige Persistenzmodus verwendet den Browser `localStorage` using `ClientSidePersistence` als Namen ( `window.localStorage.set("ClientSidePersistance", store);`)
 
 Wenn localStorage nicht verfügbar oder nicht beschreibbar ist, wird der Speicher als Eigenschaft des Fensters gespeichert.
 
@@ -552,15 +552,15 @@ Löst nach Abschluss das Ereignis `persist` aus.
 
 **Parameter**
 
-Kein
+Ohne
 
 **Rückgabe**
 
 Kein zurückgegebener Wert
 
-#### reset(deferEvent)  {#reset-deferevent}
+#### reset(deferEvent) {#reset-deferevent}
 
-Entfernt alle Dateneigenschaften aus dem Speicher und behält den Speicher bei. Das `udpate`-Ereignis wird optional nicht nach Abschluss ausgelöst.
+Entfernt alle Dateneigenschaften aus dem Speicher und behält den Speicher bei. Optional wird die `udpate` -Ereignis nach Abschluss.
 
 **Parameter**
 
@@ -570,7 +570,7 @@ Entfernt alle Dateneigenschaften aus dem Speicher und behält den Speicher bei. 
 
 Kein zurückgegebener Wert
 
-#### setNonPersisted(name)  {#setnonpersisted-name}
+#### setNonPersisted(name) {#setnonpersisted-name}
 
 Markiert eine Dateneigenschaft als nicht beständig.
 
@@ -582,7 +582,7 @@ Markiert eine Dateneigenschaft als nicht beständig.
 
 Kein Rückgabewert
 
-## CQ_Analytics.SessionStore  {#cq-analytics-sessionstore}
+## CQ_Analytics.SessionStore {#cq-analytics-sessionstore}
 
 CQ_Analytics.SessionStore repräsentiert einen Sitzungsspeicher. Erstellen Sie eine Instanz dieser Klasse, um einen Sitzungsspeicher zu erstellen:
 
@@ -596,7 +596,7 @@ Erweitert CQ_Analytics.Observable.
 
 Der Name des Sitzungsspeichers. Mit getName können Sie den Wert dieser Eigenschaft abrufen.
 
-### Methoden  {#methods-8}
+### Methoden {#methods-8}
 
 #### addInitProperty(name, value) {#addinitproperty-name-value}
 
@@ -613,19 +613,19 @@ Mit loadInitProperties können Sie die Initialisierungswerte zu den Sitzungsspei
 
 Kein zurückgegebener Wert
 
-#### clear()  {#clear-1}
+#### clear() {#clear-1}
 
 Entfernt alle Dateneigenschaften aus dem Speicher.
 
 **Parameter**
 
-Kein.
+Ohne.
 
 **Rückgabe**
 
 Kein Rückgabewert
 
-#### getData(excluded)  {#getdata-excluded}
+#### getData(excluded) {#getdata-excluded}
 
 Gibt die Speicherdaten zurück. Schließt optional Namenseigenschaften aus den Daten aus. Ruft die `init`-Methode auf, wenn die Dateneigenschaft des Speichers nicht vorhanden ist.
 
@@ -637,7 +637,7 @@ excluded: (optional) ein Array von Eigenschaftsnamen, die aus den zurückgegeben
 
 Ein Objekt von Eigenschaften und deren Werten
 
-#### getInitProperty(name)  {#getinitproperty-name}
+#### getInitProperty(name) {#getinitproperty-name}
 
 Ruft den Wert einer Dateneigenschaft ab.
 
@@ -655,13 +655,13 @@ Gibt den Namen des Sitzungsspeichers zurück.
 
 **Parameter**
 
-Kein.
+Ohne.
 
 **Rückgabe**
 
 Ein Stringwert, der den Speichernamen repräsentiert
 
-#### getProperty(name, raw)  {#getproperty-name-raw}
+#### getProperty(name, raw) {#getproperty-name-raw}
 
 Gibt den Wert einer Eigenschaft zurück. Der Wert wird als Roheigenschaft oder XSS-gefilterter Wert zurückgegeben. Ruft die `init`-Methode auf, wenn die Dateneigenschaft des Speichers nicht vorhanden ist.
 
@@ -674,7 +674,7 @@ Gibt den Wert einer Eigenschaft zurück. Der Wert wird als Roheigenschaft oder X
 
 Der Wert der Dateneigenschaft.
 
-#### getPropertyNames(excluded)  {#getpropertynames-excluded}
+#### getPropertyNames(excluded) {#getpropertynames-excluded}
 
 Gibt die Namen der Eigenschaften zurück, die der Sitzungsspeicher enthält. Ruft die `init`-Methode auf, wenn die Dateneigenschaft des Speichers nicht vorhanden ist.
 
@@ -692,19 +692,19 @@ Gibt den Sitzungsspeicher zurück, der dem aktuellen Objekt angehängt ist.
 
 **Parameter**
 
-Kein.
+Ohne.
 
 **Rückgabe**
 
 this
 
-#### init()  {#init-1}
+#### init() {#init-1}
 
 Markiert den Speicher als initialisiert und löst das `initialize`-Ereignis aus.
 
 **Parameter**
 
-Kein.
+Ohne.
 
 **Rückgabe**
 
@@ -716,7 +716,7 @@ Gibt an, ob der Sitzungsspeicher initialisiert wurde.
 
 **Parameter**
 
-Kein.
+Ohne.
 
 **Rückgabe**
 
@@ -735,7 +735,7 @@ Fügt die Eigenschaften eines angegebenen Objekts zu den Initialisierungsdaten d
 
 Kein zurückgegebener Wert
 
-#### removeProperty(name)  {#removeproperty-name}
+#### removeProperty(name) {#removeproperty-name}
 
 Entfernt eine Eigenschaft vom Sitzungsspeicher. Löst nach Abschluss das Ereignis `update` aus. Ruft die `init`-Methode auf, wenn die Dateneigenschaft des Speichers nicht vorhanden ist.
 
@@ -753,13 +753,13 @@ Stellt die ursprünglichen Werte des Datenspeichers wieder her. Die Standardimpl
 
 **Parameter**
 
-Kein.
+Ohne.
 
 **Rückgabe**
 
 Kein zurückgegebener Wert
 
-#### setProperties(properties)  {#setproperties-properties}
+#### setProperties(properties) {#setproperties-properties}
 
 Legt die Werte mehrerer Eigenschaften fest. Löst nach Abschluss das Ereignis `update` aus. Ruft die `init`-Methode auf, wenn die Dateneigenschaft des Speichers nicht vorhanden ist.
 
@@ -771,7 +771,7 @@ Legt die Werte mehrerer Eigenschaften fest. Löst nach Abschluss das Ereignis `u
 
 Kein zurückgegebener Wert
 
-#### setProperty(name, value)  {#setproperty-name-value}
+#### setProperty(name, value) {#setproperty-name-value}
 
 Legt den Wert einer Eigenschaft fest. Löst nach Abschluss das Ereignis `update` aus. Ruft die `init`-Methode auf, wenn die Dateneigenschaft des Speichers nicht vorhanden ist.
 

@@ -1,8 +1,8 @@
 ---
 title: Tagging-Konsole der klassischen Benutzeroberfläche
-seo-title: Tagging-Konsole der klassischen Benutzeroberfläche
+seo-title: Classic UI Tagging Console
 description: Erfahren Sie mehr über die Tagging-Konsole der klassischen Benutzeroberfläche.
-seo-description: Erfahren Sie mehr über die Tagging-Konsole der klassischen Benutzeroberfläche.
+seo-description: Learn about the Classic UI Tagging Console.
 uuid: 51e29422-f967-424b-a7fd-4ca2ddc6b8a3
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '860'
 ht-degree: 68%
 
 ---
@@ -28,8 +28,7 @@ So greifen Sie auf die Tagging-Konsole der klassischen Benutzeroberfläche zu:
 
 * In der Autoreninstanz:
 * Melden Sie sich mit Administratorrechten an.
-* Zur Konsole navigieren
-Beispiel: [https://localhost:4502/tagging](https://localhost:4502/tagging)
+* Navigieren Sie beispielsweise zur Konsole . [https://localhost:4502/tagging](https://localhost:4502/tagging)
 
 ![](assets/managing_tags_usingthetagasministrationconsole.png)
 
@@ -49,7 +48,7 @@ Beispiel: [https://localhost:4502/tagging](https://localhost:4502/tagging)
 
    * **Titel**
 (
-*Erforderlich*) Der Anzeigetitel für das Tag. Auch wenn es bei der Eingabe keine verbotenen Zeichen gibt, wird empfohlen, keines dieser Sonderzeichen zu verwenden:
+*Erforderlich*) Der Anzeigentitel für das Tag. Auch wenn es bei der Eingabe keine verbotenen Zeichen gibt, wird empfohlen, keines dieser Sonderzeichen zu verwenden:
 
       * `colon (:)` - Namespace-Trennzeichen
       * `forward slash (/)` - Trennzeichen für untergeordnete Tags
@@ -67,7 +66,7 @@ Beispiel: [https://localhost:4502/tagging](https://localhost:4502/tagging)
    * Wählen Sie **Erstellen** aus.
 
 
-## Bearbeiten von Tags  {#editing-tags}
+## Bearbeiten von Tags {#editing-tags}
 
 1. Wählen Sie im rechten Fenster das zu bearbeitende Tag aus.
 1. Klicken Sie auf **Bearbeiten**.
@@ -87,13 +86,13 @@ Beispiel: [https://localhost:4502/tagging](https://localhost:4502/tagging)
 1. Wählen Sie im rechten Bedienfeld das Tag bzw. den Namespace aus, das/der aktiviert (veröffentlicht) bzw. deaktiviert (dessen Veröffentlichung rückgängig gemacht) werden soll.
 1. Klicken Sie je nach Bedarf auf **Aktivieren** oder **Deaktivieren**.
 
-## Liste – zeigt alle Seiten, die auf Tags verweisen  {#list-showing-where-tags-are-referenced}
+## Liste – zeigt alle Seiten, die auf Tags verweisen {#list-showing-where-tags-are-referenced}
 
 **Liste** öffnet ein neues Fenster, das die Pfade zu allen Seiten enthält, die das markierte Tag verwenden:
 
 ![](assets/list_showing_wheretagsarereferenced.png)
 
-## Verschieben von Tags  {#moving-tags}
+## Verschieben von Tags {#moving-tags}
 
 Um Tag-Administratoren und -Entwicklern die Organisation des Klassifikationsschemas oder die Umbenennung einer Tag-ID zu erleichtern, ist es möglich, ein Tag an einen neuen Ort zu verschieben:
 
@@ -112,7 +111,7 @@ Das Dialogfeld **Tag verschieben** hat folgende Gestalt:
 
 >[!NOTE]
 >
->Autoren sollten Tags nicht verschieben und auch keine Tag-ID ändern. Bei Bedarf sollten Autoren nur [die Tag-Titel](#editing-tags) ändern.
+>Autoren sollten Tags nicht verschieben und auch keine Tag-ID ändern. Bei Bedarf sollten Autoren nur [Tag-Titel ändern](#editing-tags).
 
 ## Zusammenführen von Tags {#merging-tags}
 
@@ -128,7 +127,7 @@ So führen Sie Tags zusammen:
 
 1. Klicken Sie auf **Zusammenführen**.
 
-Das Dialogfeld **Tag** zusammenführen sieht wie folgt aus:
+Die **Tag zusammenführen** -Dialogfeld wie folgt aussieht:
 
 ![](assets/mergetag.png)
 
@@ -139,16 +138,16 @@ So können Sie anzeigen, wie oft ein Tag verwendet wurde:
 1. Öffnen Sie die **Tagging**-Konsole.
 1. Klicken Sie in der oberen Werkzeugleiste auf **Verwendung zählen**. In der Spalte „Zählung“ wird das Ergebnis angezeigt.
 
-## Verwalten von Tags in verschiedenen Sprachen  {#managing-tags-in-different-languages}
+## Verwalten von Tags in verschiedenen Sprachen {#managing-tags-in-different-languages}
 
 Die optionale Eigenschaft `title` eines Tags kann in mehrere Sprachen übersetzt werden. Tag `titles` kann dann entsprechend der Benutzersprache oder der Seitensprache angezeigt werden.
 
 ### Festlegen von Tag-Titeln in verschiedenen Sprachen {#defining-tag-titles-in-multiple-languages}
 
-Das folgende Verfahren zeigt, wie die `title`des Tags **Animals** in Englisch, Deutsch und Französisch übersetzt werden:
+Das folgende Verfahren zeigt, wie die `title`des Tags **Tiere** in Englisch, Deutsch und Französisch:
 
-1. Wechseln Sie zur Konsole **Tagging** .
-1. Bearbeiten Sie das Tag **Animals** unter **Tags** > **Bildarchiv**.
+1. Navigieren Sie zu **Tagging** Konsole.
+1. Tag bearbeiten **Tiere** below **Tags** > **Bildarchiv**.
 1. Fügen Sie Übersetzungen in den folgenden Sprachen hinzu:
 
    * **Englisch**: Animals
@@ -167,21 +166,21 @@ Wie Sie dem Dialogfeld eine neue Sprache hinzufügen, erfahren Sie im Abschnitt 
 
 ### Anzeigen von Tag-Titeln in Seiteneigenschaften in der angegebenen Sprache {#displaying-tag-titles-in-page-properties-in-a-specified-language}
 
-Standardmäßig wird das Tag `titles`in den Seiteneigenschaften in der Seitensprache angezeigt. Das Tag-Dialogfeld in den Seiteneigenschaften verfügt über ein Sprachfeld, das die Anzeige des Tags `titles`in einer anderen Sprache ermöglicht. Im folgenden Verfahren wird beschrieben, wie Sie das Tag `titles`auf Französisch anzeigen:
+Standardmäßig wird das Tag `titles`in den Seiteneigenschaften angezeigt werden. Das Tag-Dialogfeld in den Seiteneigenschaften verfügt über ein Sprachfeld, das die Anzeige von Tags ermöglicht `titles`in einer anderen Sprache. Im folgenden Verfahren wird beschrieben, wie Sie das Tag anzeigen `titles`auf Französisch:
 
-1. Gehen Sie wie im vorherigen Abschnitt beschrieben vor, um die französische Übersetzung zu **Animals** unter **Tags** > **Stock Fotografy** hinzuzufügen.
+1. Siehe vorherigen Abschnitt , um die französische Übersetzung zum **Tiere** below **Tags** > **Bildarchiv**.
 1. Öffnen Sie die Seiteneigenschaften der Seite **Products** in der englischsprachigen Verzweigung der **Geometrixx**-Website.
-1. Öffnen Sie das Dialogfeld **Tags/Keywords** (indem Sie das Pulldown-Menü rechts neben dem Anzeigebereich Tags/Keywords auswählen) und wählen Sie die Sprache **Französisch** aus dem Pulldown-Menü in der unteren rechten Ecke aus.
-1. Scrollen Sie mit den Nach-links-Rechts-Pfeilen, bis Sie die Registerkarte **Stock Fotografy** auswählen können.
+1. Öffnen Sie die **Tags/Keywords** (durch Auswahl des Pulldown-Menüs rechts neben dem Anzeigebereich Tags/Keywords) und wählen Sie die **französisch** Sprache aus dem Pulldown-Menü in der unteren rechten Ecke.
+1. Scrollen Sie mit den Nach-links-Rechts-Pfeilen, bis Sie die **Bildarchiv** tab
 
-   Wählen Sie das Tag **Animals** (**Animaux**) und wählen Sie außerhalb des Dialogfelds aus, um es zu schließen und das Tag den Seiteneigenschaften hinzuzufügen.
+   Wählen Sie die **Tiere** (**Animaux**) und wählen Sie außerhalb des Dialogfelds aus, um es zu schließen und das Tag den Seiteneigenschaften hinzuzufügen.
 
    ![](assets/french_tag.png)
 
-Standardmäßig zeigt das Dialogfeld Seiteneigenschaften das Tag `titles`entsprechend der Seitensprache an.
+Standardmäßig wird im Dialogfeld Seiteneigenschaften das Tag angezeigt `titles`entsprechend der Seitensprache.
 
 Die Sprache für das Tag wird im Allgemeinen von der Seitensprache übernommen, falls diese eingestellt ist. Wird das Widget [`tag` in anderen Fällen verwendet (z. B. in Formularen oder Dialogfeldern), hängt die Tag-Sprache vom Kontext ab.](/help/sites-developing/building.md#tagging-on-the-client-side)
 
 >[!NOTE]
 >
->Die Tag-Cloud und die Meta-Schlüsselwörter in der Standardseitenkomponente verwenden das lokalisierte Tag `titles`basierend auf der Seitensprache, sofern verfügbar.
+>Die Tag-Cloud und die Meta-Schlüsselwörter in der Standardseitenkomponente verwenden das lokalisierte Tag `titles`basierend auf der Seitensprache, falls verfügbar.

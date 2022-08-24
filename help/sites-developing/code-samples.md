@@ -17,7 +17,7 @@ ht-degree: 67%
 
 ---
 
-# Codebeispiele{#code-samples}
+# Code-Beispiele{#code-samples}
 
 Das Adobe Consulting Services Team hat eine Reihe von AEM-Codebeispielen erstellt. Diese Beispiele sind ausführlich kommentierte Codeausschnitte, die AEM-Entwicklern helfen sollen, die zentralen Bestandteile von AEM zu verstehen. Die Beispiele sind hier verfügbar: [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/).
 

@@ -35,13 +35,13 @@ Weitere Informationen finden Sie unter [Entwicklung von Communities](/help/commu
 
 >[!NOTE]
 >
->Diese Seite ist eine Fortsetzung des Dokuments [AEM Komponenten - Die Grundlagen](/help/sites-developing/components-basics.md).
+>Diese Seite ist eine Fortsetzung des Dokuments [AEM Komponenten - Grundlagen](/help/sites-developing/components-basics.md).
 
 >[!CAUTION]
 >
->Komponenten unter `/libs/cq/gui/components/authoring/dialog` sind nur für die Verwendung im Editor vorgesehen (Komponentendialogfelder in der Bearbeitung). Wenn sie an anderer Stelle verwendet werden (z. B. in einem Assistentendialogfeld), verhalten sie sich möglicherweise nicht wie erwartet.
+>Komponenten unten `/libs/cq/gui/components/authoring/dialog` sind nur für die Verwendung im Editor vorgesehen (Komponentendialogfelder in der Bearbeitung). Wenn sie an anderer Stelle verwendet werden (z. B. in einem Assistentendialogfeld), verhalten sie sich möglicherweise nicht wie erwartet.
 
-## Codebeispiele {#code-samples}
+## Code-Beispiele {#code-samples}
 
 Diese Seite enthält die Referenzdokumentation (oder Links zur Referenzdokumentation) die für die Entwicklung neuer Komponenten für AEM erforderlich sind. Einige praktische Beispiele finden Sie unter [Entwickeln von AEM-Komponenten - Codebeispiele](/help/sites-developing/developing-components-samples.md).
 
@@ -71,7 +71,7 @@ Das Erweitern einer vorhandenen Komponente kann mit der [Ressourcentyphierarchie
 
 Es ist auch möglich, ein *Komponentendialogfeld* mithilfe des [Sling Resource Mergers](/help/sites-developing/sling-resource-merger.md) zu überschreiben und die Eigenschaft `sling:resourceSuperType` zu definieren.
 
-Dies bedeutet, dass Sie nur die erforderlichen Unterschiede neu definieren müssen, anstatt das gesamte Dialogfeld neu zu definieren (mit `sling:resourceSuperType`). Dies ist jetzt die empfohlene Methode für die Erweiterung eines Komponentendialogfelds
+Dies bedeutet, dass Sie nur die erforderlichen Unterschiede neu definieren müssen, anstatt das gesamte Dialogfeld neu zu definieren (mithilfe von `sling:resourceSuperType`). Dies ist jetzt die empfohlene Methode für die Erweiterung eines Komponentendialogfelds
 
 Siehe [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) für weitere Informationen.
 
@@ -97,7 +97,7 @@ Der Mechanismus zum Trennen der Logik von der Erscheinung hilft zu verdeutlichen
 
 [Mit der Java-Anwendungs-API von HTL kann eine HTL-Datei auf Hilfsmethoden in einer benutzerdefinierten Java-Klasse zugreifen.](https://helpx.adobe.com/de/experience-manager/htl/using/use-api-java.html) Dies ermöglicht es Ihnen, Java-Code zu verwenden, um die Logik zum Auswählen und Konfigurieren des Komponenteninhalts zu implementieren.
 
-### Verwenden von JavaScript {#using-javascript}
+### Verwenden von JavaScript   {#using-javascript}
 
 [Die HTL JavaScript Use-API ermöglicht es einer HTL-Datei, auf den in JavaScript geschriebenen Hilfscode zuzugreifen](https://helpx.adobe.com/experience-manager/htl/using/use-api-javascript.html). Dies ermöglicht es Ihnen, JavaScript-Code zu verwenden, um die Logik zum Auswählen und Konfigurieren des Komponenteninhalts zu implementieren.
 
@@ -105,7 +105,7 @@ Der Mechanismus zum Trennen der Logik von der Erscheinung hilft zu verdeutlichen
 
 Moderne Websites beruhen in hohem Maße auf der clientseitigen Verarbeitung durch einen komplexen JavaScript- und CSS-Code. Die Organisation und Optimierung der Bereitstellung dieses Codes kann äußerst kompliziert sein.
 
-Um dieses Problem zu beheben, stellt AEM **Client-seitige Bibliotheksordner** bereit, mit denen Sie Ihren clientseitigen Code im Repository speichern, in Kategorien organisieren und definieren können, wann und wie jede Codekategorie dem Client bereitgestellt werden soll. Das clientseitige Bibliotheksystem übernimmt dann das Herstellen der richtigen Links auf der endgültigen Webseite, um den korrekten Code zu laden.
+Um dieses Problem zu beheben, bietet AEM **Clientseitige Bibliotheksordner**, mit dem Sie Ihren clientseitigen Code im Repository speichern, in Kategorien organisieren und definieren können, wann und wie jede Codekategorie dem Client bereitgestellt werden soll. Das clientseitige Bibliotheksystem übernimmt dann das Herstellen der richtigen Links auf der endgültigen Webseite, um den korrekten Code zu laden.
 
 Lesen Sie [Verwendung clientseitiger HTML-Bibliotheken](/help/sites-developing/clientlibs.md) für weitere Informationen.
 
@@ -113,7 +113,7 @@ Lesen Sie [Verwendung clientseitiger HTML-Bibliotheken](/help/sites-developing/c
 
 Sie können das Bearbeitungsverhalten einer Komponente konfigurieren, einschließlich Attributen wie Aktionen, die für die Komponente verfügbar sind, Eigenschaften des Editors für die Bearbeitung im Kontext, die sich auf Ereignisse für die Komponente beziehen. Die Konfiguration gilt dabei für die Touch-optimierte wie die klassische Benutzeroberfläche, wenn auch mit gewissen Unterschieden.
 
-Das [Bearbeitungsverhalten einer Komponente wird](/help/sites-developing/components-basics.md#edit-behavior) konfiguriert, indem ein `cq:editConfig` -Knoten des Typs `cq:EditConfig` unter dem Komponentenknoten (vom Typ `cq:Component`) hinzugefügt und spezifische Eigenschaften und untergeordnete Knoten hinzugefügt werden.
+Die [Bearbeitungsverhalten einer Komponente konfiguriert ist](/help/sites-developing/components-basics.md#edit-behavior) durch Hinzufügen eines `cq:editConfig` Knoten des Typs `cq:EditConfig` unterhalb des Komponentenknotens (vom Typ `cq:Component`) und durch Hinzufügen bestimmter Eigenschaften und untergeordneter Knoten.
 
 ## Konfigurieren des Vorschauverhaltens {#configuring-the-preview-behavior}
 
@@ -123,11 +123,11 @@ Komponenten mit einem Rendering, die für den WCM-Modus empfindlich sind, müsse
 
 >[!NOTE]
 >
->In der Touch-optimierten Benutzeroberfläche werden nur die Werte `EDIT` und `PREVIEW` für das Cookie [WCM Mode](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) verwendet.
+>In der Touch-optimierten Benutzeroberfläche werden nur die Werte `EDIT` und `PREVIEW` werden für [WCM-Modus](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) Cookie.
 
 ## Erstellen und Konfigurieren eines Dialogfelds {#creating-and-configuring-a-dialog}
 
-Dialogfelder werden verwendet, um dem Autor die Interaktion mit der Komponente zu ermöglichen. Mithilfe eines Dialogfelds können Autoren und/oder Administratoren Inhalte bearbeiten, die Komponente konfigurieren oder Designparameter definieren (mithilfe eines [Designdialogfelds](#creating-and-configuring-a-design-dialog)).
+Dialogfelder werden verwendet, um dem Autor die Interaktion mit der Komponente zu ermöglichen. Mithilfe eines Dialogfelds können Autoren und/oder Administratoren Inhalte bearbeiten, die Komponente konfigurieren oder Designparameter definieren (mithilfe eines [Dialogfeld &quot;Design&quot;](#creating-and-configuring-a-design-dialog))
 
 ### Coral- und Granite-Benutzeroberfläche {#coral-ui-and-granite-ui}
 
@@ -157,15 +157,15 @@ Ausführliche Informationen finden Sie hier:
 
 Dialogfelder für die Touch-optimierte Benutzeroberfläche:
 
-* werden `cq:dialog` genannt.
-* werden als `nt:unstructured`-Knoten mit der Eigenschaft `sling:resourceType` definiert.
+* benannt sind `cq:dialog`.
+* werden als `nt:unstructured` Knoten mit dem `sling:resourceType` -Eigenschaft festgelegt.
 
 * befinden sich unter ihrem Knoten `cq:Component` und neben ihrer Komponentendefinition.
 * werden auf der Serverseite (als Sling-Komponenten) basierend auf ihrer Inhaltsstruktur und der Eigenschaft `sling:resourceType` gerendert.
 * verwenden das Framework der Granite-Benutzeroberfläche.
 * enthalten eine Knotenstruktur, die die Felder im Dialogfeld beschreibt.
 
-   * Diese Knoten sind `nt:unstructured` mit der erforderlichen `sling:resourceType` -Eigenschaft.
+   * diese Knoten sind `nt:unstructured` mit den erforderlichen `sling:resourceType` -Eigenschaft.
 
 Eine Beispielknotenstruktur könnte wie folgt aussehen:
 
@@ -200,7 +200,6 @@ Beispiele finden Sie hier:
 >
 >* AEM-Gems-Session zum [Anpassen von Dialogfeldern](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
 >* Der zugehörige Beispielcode wird unter [Codebeispiel – So passen Sie Dialogfelder an](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields) behandelt.
-
 >
 
 
@@ -230,7 +229,7 @@ Sobald Sie Ihren Ressourcentyp erstellt haben, können Sie Ihr Feld instanziiere
 
 Wenn Sie Stile und Verhalten für Ihre Komponente definieren möchten, können Sie eine dedizierte [Client-Bibliothek](/help/sites-developing/clientlibs.md) erstellen, die Ihre benutzerdefinierten CSS/LESS- und JS-Einstellungen definiert.
 
-Damit Ihre Client-Bibliothek ausschließlich für Ihr Komponentendialogfeld geladen wird (d. h., sie wird nicht für eine andere Komponente geladen), müssen Sie die Eigenschaft `extraClientlibs`*** Ihres Dialogfelds auf den Kategorienamen der soeben erstellten Client-Bibliothek festlegen. Dies empfiehlt sich, wenn die Client-Bibliothek recht groß ist und/oder das Feld für dieses Dialogfeld spezifisch ist und nicht in anderen Dialogfeldern benötigt wird.
+Damit Ihre Client-Bibliothek ausschließlich für Ihr Komponentendialogfeld geladen wird (d. h. sie wird nicht für eine andere Komponente geladen), müssen Sie die -Eigenschaft festlegen `extraClientlibs`** **Ihres Dialogfelds zum Kategorienamen der zuvor erstellten Client-Bibliothek. Dies empfiehlt sich, wenn die Client-Bibliothek recht groß ist und/oder das Feld für dieses Dialogfeld spezifisch ist und nicht in anderen Dialogfeldern benötigt wird.
 
 Um die Client-Bibliothek für alle Dialogfelder zu laden, legen Sie die Kategorieeigenschaft Ihrer Client-Bibliothek auf `cq.authoring.dialog` fest. Dies ist der Kategoriename der Client-Bibliothek, die beim Rendern aller Dialogfelder standardmäßig enthalten ist. Dies empfiehlt sich, wenn Ihre Client-Bibliothek klein und/oder Ihr Feld generisch ist und in anderen Dialogfeldern wiederverwendet werden kann.
 
@@ -348,7 +347,7 @@ Wenn Ihre neue Komponente auf Inhalte anderer Seiten verweist, können Sie sich 
 
 Die Standardinstallation von AEM überprüft nur die Referenzkomponente. Um Ihre Komponente hinzuzufügen, müssen Sie die Referenzkonfiguration für das OSGi-Bundle **WCM Authoring Content** konfigurieren.
 
-Erstellen Sie einen neuen Eintrag in der Definition und geben Sie Ihre Komponente zusammen mit der zu überprüfenden Eigenschaft an. Zum Beispiel:
+Erstellen Sie einen neuen Eintrag in der Definition und geben Sie Ihre Komponente zusammen mit der zu überprüfenden Eigenschaft an. Beispiel:
 
 `/apps/<*your-Project*>/components/reference@parentPath`
 
@@ -371,7 +370,7 @@ AEM bietet die Möglichkeit, ein Absatzsystem auf Ihrer Seite zu konfigurieren, 
 
 Dieses Verhalten und die erforderliche Beziehung zwischen Asset und Komponente können konfiguriert werden:
 
-1. Unter der Absatzdefinition Ihres Seitendesigns. Zum Beispiel:
+1. Unter der Absatzdefinition Ihres Seitendesigns. Beispiel:
 
    * `/etc/designs/<myApp>/page/par`
 
@@ -412,7 +411,7 @@ Dieses Verhalten und die erforderliche Beziehung zwischen Asset und Komponente k
    * `type`:
 
       * Typ: `String`
-      * Wert: den Typ, z. B. `Images`
+      * Wert: den Typ, beispielsweise `Images`
 
 
 
@@ -434,7 +433,7 @@ Den Code dieser Seite finden Sie auf GitHub.
 
 >[!NOTE]
 >
->Die automatische Erstellung von Komponenteninstanzen kann jetzt problemlos über die Benutzeroberfläche konfiguriert werden, wenn [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) und bearbeitbare Vorlagen verwendet werden. Weitere Informationen zum Definieren der Komponenten, die bestimmten Medientypen automatisch zugeordnet werden, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) .
+>Die automatische Erstellung von Komponenteninstanzen kann jetzt einfach über die Benutzeroberfläche konfiguriert werden, wenn Sie [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) und bearbeitbare Vorlagen. Siehe [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) für weitere Informationen zur Definition, welche Komponenten automatisch bestimmten Medientypen zugeordnet werden.
 
 ## Verwenden von AEM Brackets-Erweiterungen {#using-the-aem-brackets-extension}
 
@@ -443,7 +442,7 @@ Die [AEM Brackets-Erweiterung](/help/sites-developing/aem-brackets.md) bietet ei
 Die Erweiterung:
 
 * Erleichtert die Synchronisierung (kein Maven oder File Vault erforderlich), um die Effizienz der Entwickler zu erhöhen, und hilft Front-End-Entwicklern mit begrenztem AEM-Wissen, an Projekten teilzunehmen.
-* Unterstützt [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html), die Vorlagensprache, die die Komponentenentwicklung vereinfacht und die Sicherheit erhöht.
+* Enthält einige [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) -Unterstützung, die Vorlagensprache, die die Entwicklung von Komponenten vereinfacht und die Sicherheit erhöht.
 
 >[!NOTE]
 >
@@ -466,7 +465,7 @@ Wenn Sie eine Komponente, die für die Verwendung mit der klassischen Benutzerob
 * Dialogfelder
 
    * Sie müssen ein neues Dialogfeld zur Verwendung in der Touch-optimierten Benutzeroberfläche erstellen. Aus Kompatibilitätsgründen kann die Touch-optimierte Benutzeroberfläche jedoch die Definition eines Dialogfelds der klassischen Benutzeroberfläche verwenden, wenn für die Touch-optimierte Benutzeroberfläche kein Dialogfeld definiert wurde.
-   * Die [AEM Modernisierungs-Tools](/help/sites-developing/modernization-tools.md) werden bereitgestellt, um Sie beim Erweitern vorhandener Komponenten zu unterstützen.
+   * Die [AEM Modernisierungs-Tools](/help/sites-developing/modernization-tools.md) werden bereitgestellt, um Sie bei der Erweiterung vorhandener Komponenten zu unterstützen.
    * Das [Zuordnen von ExtJS zu Granite-UI-Komponenten](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) bietet einen praktischen Überblick über ExtJS-Xtypes und Knotentypen mit ihren entsprechenden Ressourcentypen in der Granite-Benutzeroberfläche.
    * Weitere Informationen finden Sie in der AEM Gems-Sitzung zum [Anpassen von Dialogfeldern](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
    * Migrieren von vtypes zur [Überprüfung in der Granite-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
@@ -474,7 +473,7 @@ Wenn Sie eine Komponente, die für die Verwendung mit der klassischen Benutzerob
 
 ### Migrieren von cq:listener-Code {#migrating-cq-listener-code}
 
-Wenn Sie ein Projekt migrieren, das für die klassische Benutzeroberfläche entwickelt wurde, verwendet der `cq:listener`-Code (und komponentenbezogene Clientlibs) möglicherweise Funktionen, die für die klassische Benutzeroberfläche spezifisch sind (z. B. `CQ.wcm.*`). Für die Migration müssen Sie diesen Code mithilfe der entsprechenden Objekte/Funktionen in der Touch-optimierten Benutzeroberfläche aktualisieren.
+Wenn Sie ein Projekt migrieren, das für die klassische Benutzeroberfläche entwickelt wurde, wird die `cq:listener` Code (und komponentenbezogene clientlibs) verwendet möglicherweise Funktionen, die für die klassische Benutzeroberfläche spezifisch sind (z. B. `CQ.wcm.*`). Für die Migration müssen Sie diesen Code mithilfe der entsprechenden Objekte/Funktionen in der Touch-optimierten Benutzeroberfläche aktualisieren.
 
 Wenn Ihr Projekt vollständig auf die Touch-optimierte Benutzeroberfläche migriert wird, müssen Sie diesen Code ersetzen, um die für die Touch-optimierte Benutzeroberfläche relevanten Objekte und Funktionen zu verwenden.
 

@@ -1,8 +1,8 @@
 ---
-title: 'Beispiele für ContextHub-Store-Kandidaten '
-seo-title: 'Beispiele für ContextHub-Store-Kandidaten '
-description: ContextHub bietet mehrere Beispiele für Store-Kandidaten, die Sie in Ihren Lösungen verwenden können
-seo-description: ContextHub bietet mehrere Beispiele für Store-Kandidaten, die Sie in Ihren Lösungen verwenden können
+title: Beispiele für ContextHub-Store-Kandidaten
+seo-title: Sample ContextHub Store Candidates
+description: ContextHub bietet mehrere Beispiele für Store-Kandidaten, die Sie in Ihren Lösungen verwenden können.
+seo-description: ContextHub provides several sample store candidates that you can use in your solutions
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -10,12 +10,12 @@ content-type: reference
 exl-id: d8d9a799-3e30-442a-843b-d4d7ba70c557
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '473'
 ht-degree: 100%
 
 ---
 
-# Beispiele für ContextHub-Store-Kandidaten {#sample-contexthub-store-candidates}
+# Beispiele für ContextHub-Store-Kandidaten{#sample-contexthub-store-candidates}
 
 ContextHub bietet mehrere Beispiele für Store-Kandidaten, die Sie in Ihren Lösungen verwenden können. Die folgenden Informationen werden für jedes Beispiel bereitgestellt:
 
@@ -27,7 +27,7 @@ ContextHub bietet mehrere Beispiele für Store-Kandidaten, die Sie in Ihren Lös
 >
 >Die Beispiele für Store-Kandidaten werden als Referenzkonfigurationen bereitgestellt, um Ihnen bei der Einrichtung einer eigenen dedizierten Konfiguration für Ihr Projekt zu helfen, und sollten daher nicht direkt verwendet werden.
 
-## Beispiel-Store-Kandidat „aem.segmentations“{#aem-segmentation-sample-store-candidate}
+## Beispiel-Store-Kandidat „aem.segmentations“ {#aem-segmentation-sample-store-candidate}
 
 Store für gelöste und ungelöste ContextHub-Segmente. Ruft automatisch Segmente aus dem ContextHub SegmentManager zurück.
 
@@ -53,7 +53,7 @@ Wenn Sie einen aem.segmentation-Store erstellen, ist es nicht erforderlich, eine
 }
 ```
 
-## Beispiel-Store-Kandidat „contexthub.geolocations“{#contexthub-geolocation-sample-store-candidate}
+## Beispiel-Store-Kandidat „contexthub.geolocations“ {#contexthub-geolocation-sample-store-candidate}
 
 Der Beispiel-Store-Kandidat „contexthub.geolocation“ verwendet Google Maps zum Abrufen und Speichern von Informationen zum Clientstandort.
 
@@ -67,7 +67,7 @@ Der Store-Kandidat „contexthub.geolocation“ erweitert [`ContextHub.Store.Per
 
 ### Konfiguration {#configuration-geolocation}
 
-Die Standardkonfiguration enthält Informationen zum Google-Dienst und die anfänglichen Längen- und Breitenkoordinaten.
+Die Standardkonfiguration enthält Informationen zum Google-Service und die anfänglichen Längen- und Breitenkoordinaten.
 
 ```xml
 {
@@ -111,7 +111,7 @@ Der Store verwendet einen Datenbaum, der dem folgenden Beispiel ähnelt:
 >
 >Eine in Chrome 50.x eingeführte Sicherheitsrichtlinie erfordert, dass alle Geolocation-bezogenen Anrufe über eine gesicherte Verbindung erfolgen. Daher erzwingt AEM die Verwendung von https für Geolocation-API-Aufrufe, wenn AEM auch über https ausgeführt wird. Andernfalls wird http verwendet, um der Richtlinie gleichen Ursprungs zu entsprechen. In [diesem Google-Blogpost](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) erhalten Sie weitere Informationen zu den Änderungen in Chrome.
 
-## Beispiel-Store-Kandidat „contexthub.surferinfo“   {#contexthub-surferinfo-sample-store-candidate}
+## Beispiel-Store-Kandidat „contexthub.surferinfo“ {#contexthub-surferinfo-sample-store-candidate}
 
 Speichert Informationen über die aktuelle Client-Umgebung wie Gerät, Fenster, Browser, Datum und Uhrzeit.
 
@@ -178,7 +178,7 @@ Stores, die diesen Store-Kandidaten verwenden, haben eine Datenstruktur, die dem
 }
 ```
 
-## Beispiel-Store-Kandidat „granite.emulators“ {#granite-emulators-sample-store-candidate}
+## Beispiel-Store-Kandidat „granite.emulators“  {#granite-emulators-sample-store-candidate}
 
 Der Beispiel-Store-Kandidat „granite.emulators“ speichert Informationen über Kundengeräte.
 
@@ -311,7 +311,7 @@ Der Store-Datenbaum ähnelt dem folgenden Beispiel:
 }
 ```
 
-## Beispiel-Store-Kandidat „granite.profile“   {#granite-profile-sample-store-candidate}
+## Beispiel-Store-Kandidat „granite.profile“ {#granite-profile-sample-store-candidate}
 
 Informationen über den aktuellen Benutzer.
 

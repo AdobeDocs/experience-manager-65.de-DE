@@ -1,8 +1,8 @@
 ---
 title: Erweitern von ContextHub
-seo-title: Erweitern von ContextHub
-description: Definieren Sie neue Typen von ContextHub-Stores und -Modulen, wenn die bereitgestellten Typen nicht Ihren Lösungsanforderungen entsprechen.
-seo-description: Definieren Sie neue Typen von ContextHub-Stores und -Modulen, wenn die bereitgestellten Typen nicht Ihren Lösungsanforderungen entsprechen.
+seo-title: Extending ContextHub
+description: Definieren Sie neue Typen von ContextHub-Stores und -Modulen, wenn die bereitgestellten Typen nicht Ihren Lösungsanforderungen entsprechen
+seo-description: Define new types of ContextHub stores and modules when the ones provided do not meet your solution requirements
 uuid: 1d80c01d-ec5d-4e76-849d-bec0e1c3941a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 13a908ae-6965-4438-96d0-93516b500884
 exl-id: 41898fa7-a369-4c63-8ccb-69eb3fa146a1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '650'
 ht-degree: 97%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 97%
 
 Definieren Sie neue Typen von ContextHub-Stores und -Modulen, wenn die bereitgestellten Typen nicht Ihren Lösungsanforderungen entsprechen.
 
-## Erstellen benutzerdefinierter Store-Kandidaten   {#creating-custom-store-candidates}
+## Erstellen benutzerdefinierter Store-Kandidaten {#creating-custom-store-candidates}
 
 ContextHub-Stores werden aus registrierten Store-Kandidaten erstellt. Um einen benutzerdefinierten Store zu erstellen, müssen Sie einen Store-Kandidaten erstellen und registrieren.
 

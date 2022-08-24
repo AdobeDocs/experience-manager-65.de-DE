@@ -55,7 +55,7 @@ ht-degree: 8%
 
 ### Verbesserte Funktionen {#what-is-improved-october}
 
-* Produktdetails und Produktlistenkomponenten wurden verbessert, um Platzhalterdaten anzuzeigen und Autoren eine Vorschau des Layouts zu ermöglichen, wenn diese Komponenten auf einer Vorlage/Seite platziert werden.
+* Produktdetails und Produktlistenkomponenten wurden verbessert, um Platzhalterdaten anzuzeigen und Autoren eine Vorschau des Layouts zu bieten, wenn diese Komponenten auf einer Vorlage/Seite platziert werden.
 
 * Minicart- und Checkout-Komponenten verwenden jetzt React-Hooks für eine verbesserte Erweiterbarkeit.
 

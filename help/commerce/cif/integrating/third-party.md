@@ -6,7 +6,7 @@ exl-id: e99899a4-df86-4108-991a-8b30d303a279
 source-git-commit: 885d0763fca9ad4eab499081adca9b83875b27e1
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 40%
+ht-degree: 60%
 
 ---
 
@@ -28,7 +28,7 @@ Da Experience Manager Daten bei Bedarf abruft, sind für den Produktkatalog Echt
 
 >[!TIP]
 >
->Wenn keine Echtzeit-APIs verfügbar sind, sollte für die Integration ein externer Produkt-Cache mit APIs verwendet werden. Beispiel: [Magento open-source](https://business.adobe.com/products/magento/open-source.html).
+>Wenn keine Echtzeit-APIs verfügbar sind, sollte für die Integration ein externer Produkt-Cache mit APIs verwendet werden. Beispiel: [Magento open-source](https://business.adobe.com/de/products/magento/open-source.html).
 
 Es ist nicht erforderlich, das vollständige GraphQL-Schema zu implementieren, sondern nur die Objekte des Schemas, um die gewünschten Anwendungsfälle zu ermöglichen.
 
@@ -52,13 +52,13 @@ Die [Referenzimplementierung](https://github.com/adobe/commerce-cif-graphql-inte
 
 Diese Integrationsschicht ist nicht erforderlich, wenn eine Drittanbieterschicht verfügbar ist (z. B. Mulesoft) oder die Integration auf der Drittanbieterlösung aufbaut.
 
-## Vordefinierte Connectoren {#connectors}
+## Vorkonfigurierte Connectoren {#connectors}
 
-Connectoren bieten einen guten Start für Projekte. Sie enthalten eine spezifische Verbindung für Commerce-Lösungen und eine standardmäßige API-Zuordnung. Diese Connectoren werden von Drittanbietern erstellt und nicht von Adobe gepflegt. Bitte wenden Sie sich zur Information an den jeweiligen Partner.
+Connectoren bieten einen guten Ausgangspunkt für Projekte. Sie enthalten eine spezifische Verbindung für Commerce-Lösungen und eine standardmäßige API-Zuordnung. Diese Connectoren werden von Drittanbietern erstellt und nicht von Adobe gepflegt. Wenden Sie sich an den jeweiligen Partner, wenn Sie Informationen dazu wünschen.
 
 * [SAP Commerce](https://github.com/diconium/commerce-cif-graphql-integration-hybris), erstellt von Diconium
 * [Commercetools](https://github.com/diconium/commerce-cif-graphql-integration-commercetool), erstellt von Diconium
 
 >[!TIP]
 >
->Obwohl Connectoren Projekten helfen, die Commerce-Integration zu beschleunigen, sind sie nicht Plug-in-Play. Enterprise Commerce-Lösungen sind in der Regel stark angepasst und erfordern eine benutzerdefinierte Integration. Es sind gute Kenntnisse der Commerce-Plattform, der Adobe Commerce GraphQL-Schemata und der Adobe I/O Runtime erforderlich.
+>Obwohl Connectoren in Projekten helfen, die Commerce-Integration zu beschleunigen, sind sie nicht Plug-and-Play. Enterprise Commerce-Lösungen sind in der Regel stark angepasst und erfordern eine benutzerdefinierte Integration. Es sind gute Kenntnisse der Commerce-Plattform, der Adobe Commerce GraphQL-Schemas und von Adobe I/O Runtime erforderlich.

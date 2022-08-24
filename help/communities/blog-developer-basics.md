@@ -1,8 +1,8 @@
 ---
 title: Blog-Grundlagen
-seo-title: Blog-Grundlagen
+seo-title: Blog Essentials
 description: Blog-Übersicht
-seo-description: Blog-Übersicht
+seo-description: Blog overview
 uuid: 714cf70c-76a0-4be6-9163-a31ac6bd1643
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 51f616e8-4aba-47f6-b948-d5147d84bbb6
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '442'
 ht-degree: 4%
 
 ---
@@ -30,9 +30,9 @@ Diese Seite enthält die wesentlichen Informationen für die Arbeit mit der Blog
 >
 >Die zugrunde liegende Infrastruktur der Blog-Funktion ist die Journalfunktion.
 
-## Grundlagen für Client-seitige {#essentials-for-client-side}
+## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
 
-Die Blog-Funktion besteht aus zwei Hauptkomponenten, die verfügbar sind, indem die [Blog-Funktion](/help/communities/functions.md#blog-function) hinzugefügt oder die Komponenten einer Seite im Bearbeitungsmodus für Autoren hinzugefügt werden.
+Die Blog-Funktion besteht aus zwei Hauptkomponenten, die durch Hinzufügen der [Blog-Funktion](/help/communities/functions.md#blog-function) oder indem Sie die Komponenten im Bearbeitungsmodus des Autors zu einer Seite hinzufügen.
 
 ### Blog {#blog}
 
@@ -60,7 +60,7 @@ Die Blog-Funktion besteht aus zwei Hauptkomponenten, die verfügbar sind, indem 
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Siehe <a href="/help/communities/blog-feature.md">Blog-Funktion</a></td>
+   <td>see <a href="/help/communities/blog-feature.md">Blog-Funktion</a></td>
   </tr>
  </tbody>
 </table>
@@ -73,11 +73,11 @@ Die Blog-Funktion besteht aus zwei Hauptkomponenten, die verfügbar sind, indem 
 | [**clientllibs**](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
 | **templates** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
-| **Eigenschaften** | Siehe [Blog-Funktion](/help/communities/blog-feature.md) |
+| **Eigenschaften** | see [Blog-Funktion](/help/communities/blog-feature.md) |
 
 * [Clientseitige Anpassungen](/help/communities/client-customize.md)
 
-## Grundlagen für serverseitige {#essentials-for-server-side}
+## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
 
 * [Blog-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
 
@@ -87,29 +87,29 @@ Die Blog-Funktion besteht aus zwei Hauptkomponenten, die verfügbar sind, indem 
 
 ### Blogfunktion {#blog-function}
 
-Eine Community-Site-Struktur, die die [Blog-Funktion](/help/communities/functions.md#blog-function) enthält, hat die Komponenten `Blog` und `Blog Sidebar` konfiguriert. Die Blog-Funktion unterstützt die Identifizierung einer [berechtigten Mitgliederbenutzergruppe](/help/communities/users.md#privileged-members-group).
+Eine Community-Site-Struktur mit [Blog-Funktion](/help/communities/functions.md#blog-function) wird konfiguriert `Blog` und `Blog Sidebar` Komponenten. Die Blog-Funktion unterstützt die Identifizierung einer [Berechtigte Mitgliederbenutzergruppe](/help/communities/users.md#privileged-members-group).
 
 ### Zugreifen auf Blogeinträge (UGC) {#accessing-blog-entries-ugc}
 
 UGC sollte mit einer der Standardmethoden für die Moderation moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Stores](/help/communities/working-with-srp.md) für UGC den programmatischen Zugriff auf UGC, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities: Verwendung einer [gemeinsamer Speicher](/help/communities/working-with-srp.md) für UGC umfasst den programmatischen Zugriff auf UGC, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
 
-**Speicherort und Format der UGC im Repository können sich ohne Warnung** ändern.
+**Speicherort und Format der UGC im Repository können ohne Warnung geändert werden**.
 
 Siehe :
 
-* [Übersicht über den Speicheranbieter](/help/communities/srp.md)  - Einführung und Übersicht über die Repository-Nutzung.
-* [SRP und UGC Essentials](/help/communities/srp-and-ugc.md)  - SRP-Dienstprogrammmethoden und Beispiele.
-* [Zugriff auf UGC mit SRP](/help/communities/accessing-ugc-with-srp.md)  - Codierungsrichtlinien.
-* [SocialUtils-Refaktorierung](/help/communities/socialutils.md)  - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
+* [Übersicht über den Speicheranbieter](/help/communities/srp.md) - Einführung und Übersicht über die Repository-Nutzung.
+* [Grundlagen zu SRP und UGC](/help/communities/srp-and-ugc.md) - SRP-Dienstprogrammmethoden und -beispiele.
+* [Zugreifen auf UGC mit SRP](/help/communities/accessing-ugc-with-srp.md) - Codierungsrichtlinien.
+* [SocialUtils-Refaktorierung](/help/communities/socialutils.md) - Zuordnung veralteter Methoden für Dienstprogramme zu aktuellen SRP-Dienstprogrammmethoden.
 
 ## Primärer Herausgeber {#primary-publisher}
 
 Wenn es sich bei der Bereitstellung um eine Veröffentlichungsfarm handelt, müssen Sie einen primären Herausgeber identifizieren, der nach Artikeln fragt, deren Veröffentlichung geplant ist.
 
-Weitere Informationen finden Sie unter [Primär Publisher](/help/communities/deploy-communities.md#primary-publisher) .
+Siehe [Primärer Herausgeber](/help/communities/deploy-communities.md#primary-publisher) für weitere Details.
 
 ## Zulassen von Rich Media {#allowing-rich-media}
 
@@ -119,6 +119,6 @@ Die AEM Plattform blockiert Links von anderen Websites, um XSS-Angriffe zu verhi
 
 Ab AEM 6.2 sind die zuvor manuell vorzunehmenden Änderungen in der standardmäßigen AntiSamy-Konfigurationsdatei enthalten.
 
-Rich-Media wird in einen Blog-Artikel eingebettet, indem Sie das Symbol `Embed Media from External Sites` auswählen:
+Rich-Media wird in einen Blogartikel eingebettet, indem Sie die `Embed Media from External Sites` icon :
 
 ![media](assets/media-icon.png)

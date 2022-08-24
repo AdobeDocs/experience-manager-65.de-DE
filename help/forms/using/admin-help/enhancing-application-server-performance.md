@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fad65765-d56d-4a9f-82d5-bcceb1758953
 exl-id: 6e2f3d4c-2ead-45b3-98e7-32cacc7e2985
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1863'
 ht-degree: 100%
 
@@ -54,8 +54,8 @@ Wenn der Administrator des Anwendungsservers die richtigen Einstellungen für de
 1. Klicken Sie unter „Domain Structure“ auf „Services“ > „JDBC“ > „Data Sources“ und klicken Sie dann im rechten Bereich auf „EDC_DS“.
 1. Klicken Sie im nächsten Bildschirm auf die Registerkarte „Configuration“ > „Connection Pool“ und geben Sie Werte in die folgenden Felder ein:
 
-   * Initial Capacity
-   * Maximum Capacity
+   * Anfangskapazität
+   * Maximale Kapazität
    * Capacity Increment
    * Statement Cache Size
 
@@ -102,7 +102,7 @@ Wenn der Dokumentinhalt kleiner als die Inline-Maximalgröße ist, wird er in de
 
 **Die Inline-Maximalgröße ändern**
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „Core-Systemeinstellungen“ > „Konfigurationen“.
+1. Klicken Sie in der Administrationskonsole auf „Einstellungen“ > „Core-Systemeinstellungen“ > „Konfigurationen“.
 1. Geben Sie einen Wert in das Feld „Standardmäßige Maximalgröße für Inline-Dokumente“ ein.
 
    >[!NOTE]

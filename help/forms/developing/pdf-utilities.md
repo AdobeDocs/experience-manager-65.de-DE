@@ -12,7 +12,7 @@ discoiquuid: d816bf2e-5236-4084-b7c4-c32b72cdff97
 role: Developer
 exl-id: e4b204ee-7261-42b8-8db8-a92aa9fd0a28
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2579'
 ht-degree: 100%
 
@@ -59,7 +59,7 @@ Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn S
 
 **Erstellen eines PDFUtilityService-Clients**
 
-Bevor Sie einen PDF Utilities-Vorgang programmgesteuert durchführen können, müssen Sie einen PDFUtilityService-Client erstellen. Mit der Java-API erreichen Sie dies, indem Sie ein `PDFUtilityServiceClient`-Objekt erstellen. Mit der Web-Service-API wird dies durch die Verwendung eines `PDFUtilityServiceService`-Objekts erreicht.
+Bevor Sie einen PDF Utilities-Vorgang programmgesteuert durchführen können, müssen Sie einen PDFUtilityService-Client erstellen. Sie können dies mit der Java-API erreichen, indem Sie ein `PDFUtilityServiceClient`-Objekt erstellen. Mit der Web-Service-API wird dies durch die Verwendung eines `PDFUtilityServiceService`-Objekts erreicht.
 
 **Aufrufen des Konvertierungsvorgangs von PDF nach XDP**
 
@@ -85,11 +85,11 @@ Konvertieren von PDF-Dokumenten in XDP-Dokumente anhand der PDF Utilities-API (J
 
 1. Erstellen eines PDFUtilityService-Clients
 
-   Erstellen Sie ein `PDFUtilityServiceClient`-Objekt, indem Sie seinen Konstruktor verwenden und ein `ServiceClientFactory`-Objekt übergeben, das Verbindungseigenschaften enthält.
+   Erstellen Sie ein `PDFUtilityServiceClient`-Objekt unter Verwendung seines Konstruktors und übergeben Sie ein `ServiceClientFactory`-Objekt, das Verbindungseigenschaften enthält.
 
 1. Aufrufen des Konvertierungsvorgangs PDF in XDP
 
-   Um die Konvertierung durchzuführen, rufen Sie die `convertPDFtoXDP`-Methode des `PDFUtilityServiceClient`-Objekts auf und übergeben Sie ein `com.adobe.idp.Document`-Objekt, das die PDF-Datei darstellt. Die Methode gibt ein `com.adobe.idp.Document`-Objekt zurück, das die soeben erstellte XDP-Datei darstellt.
+   Rufen Sie zum Ausführen der Konvertierung die `convertPDFtoXDP`-Methode des `PDFUtilityServiceClient`-Objekts auf und übergeben Sie in ein `com.adobe.idp.Document`-Objekt, das die PDF-Datei darstellt. Die Methode gibt ein `com.adobe.idp.Document`-Objekt zurück, das die neu erstellte XDP-Datei darstellt.
 
 **Siehe auch**
 
@@ -293,12 +293,12 @@ Abrufen von PDF-Dokumenteigenschaften mithilfe der PDF Utilities Web-Service-API
 
 1. Aufrufen des Vorgangs zum Abrufen von Eigenschaften
 
-   Rufen Sie zum Ausführen der Konversion die Methode `getPDFProperties` des `PDFUtilityServiceService`-Objekt auf und übergeben Sie Folgendes:
+   Um die Konversion durchzuführen, rufen Sie die Methode `PDFUtilityServiceService`-Methode des `getPDFProperties`-Objekts auf und übergeben Folgendes:
 
    * Ein `BLOB`-Objekt, das das PDF-Dokument darstellt.
    * Ein `PDFPropertiesOptionSpec`-Objekt mit den Eigenschaften, die ausgewertet werden sollen.
 
-   Die Methode gibt ein `PDFPropertiesResult`-Objekt mit dem Ergebnis der Abfrage zurück.
+   Die Methode gibt ein `PDFPropertiesResult`-Objekt mit dem Ergebnis der Authentifizierung zurück.
 
 **Siehe auch**
 
@@ -332,7 +332,7 @@ Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn S
 
 **Erstellen eines PDFUtilityService-Clients**
 
-Bevor Sie einen PDF Utilities-Vorgang programmgesteuert durchführen können, müssen Sie einen PDFUtilityService-Client erstellen. Mit der Java-API wird dies durch die Erstellung eines `PDFUtilityServiceClient`-Objekts erreicht. Bei der Webservice-API wird dies mithilfe eines `PDFUtilityServiceService`-Objekts erreicht.
+Bevor Sie einen PDF Utilities-Vorgang programmgesteuert durchführen können, müssen Sie einen PDFUtilityService-Client erstellen. Mit der Java API wird dies durch die Erstellung eines `PDFUtilityServiceClient`-Objekts erreicht. Bei der Webservice-API wird dies mithilfe eines `PDFUtilityServiceService`-Objekts erreicht.
 
 **Festlegen des Speichermodus**
 
@@ -385,7 +385,7 @@ So legen Sie die PDF-Dokumentspeicheroptionen mithilfe der PDF Utilities-API (Ja
 
 1. Aufrufen des Vorgangs für die Art der Speicherung
 
-   Rufen Sie die Methode `setSaveMode` des `PDFUtilityServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
+   Rufen Sie die `setSaveMode`-Methode des `PDFUtilityServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
 
    * Ein `com.adobe.idp.Document`-Objekt, das das PDF-Dokument darstellt.
    * Ein `PDFUtilitySaveMode`-Objekt, das den zu verwendenden Speicherstil enthält.

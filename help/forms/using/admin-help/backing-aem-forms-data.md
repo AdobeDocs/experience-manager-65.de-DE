@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 52187196-b091-4683-85ae-cc7c250dee54
 exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 100%
 
@@ -54,7 +54,7 @@ Zusätzlich dazu sollten Sie die folgenden Richtlinien für den Sicherungs-/Wied
 
    Berücksichtigen Sie folgende Punkte, wenn Sie Autor- und Veröffentlichungsinstanzen sichern:
 
-   * Stellen Sie sicher, dass die Sicherung für  Die Sicherung von Autor- und Veröffentlichungsinstanzen wird synchronisiert, um gleichzeitig zu starten. Obwohl Sie Autor- und Veröffentlichungsinstanzen während der Sicherung weiter verwenden können, wird empfohlen, währenddessen kein Element zu veröffentlichen, um nicht gespeicherte Änderungen zu vermeiden. Warten Sie bis die Sicherung der Autor- und Veröffentlichungsinstanzen beendet ist, bevor Sie neue Elemente veröffentlichen.
+   * Stellen Sie sicher, dass die Sicherung für Die Sicherung von Autor- und Veröffentlichungsinstanzen wird synchronisiert, um gleichzeitig zu starten. Obwohl Sie Autor- und Veröffentlichungsinstanzen während der Sicherung weiter verwenden können, wird empfohlen, währenddessen kein Element zu veröffentlichen, um nicht gespeicherte Änderungen zu vermeiden. Warten Sie bis die Sicherung der Autor- und Veröffentlichungsinstanzen beendet ist, bevor Sie neue Elemente veröffentlichen.
    * Die vollständige Sicherung des Autorknotens umfasst die Sicherung der Daten von Forms Manager und AEM Forms Workspace.
    * Workbench-Entwickler können an ihre Prozesse weiterhin lokal bearbeiten. Sie sollten während der Sicherung jedoch keine neuen Prozesse bereitstellen.
    * Die Entscheidung über die Dauer der einzelnen Sicherungssitzungen (für den kontinuierlichen Sicherungsmodus) sollte auf der Gesamtzeit basieren, die zum Sichern aller Daten in AEM Forms erforderlich ist (DB, GDS, AEM-Repository und alle anderen zusätzlichen benutzerdefinierten Daten).

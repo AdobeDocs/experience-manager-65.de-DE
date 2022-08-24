@@ -2,7 +2,7 @@
 title: Best Practices
 seo-title: Best Practices
 description: Auf dieser Seite erfahren Sie Best Practices und Richtlinien, die erfahrenen AEM-Entwicklern für Sites helfen, die Vorlagen und Komponenten für mobile Apps erstellen möchten.
-seo-description: Auf dieser Seite erfahren Sie Best Practices und Richtlinien, die erfahrenen AEM-Entwicklern für Sites helfen, die Vorlagen und Komponenten für mobile Apps erstellen möchten.
+seo-description: Follow this page to  learn best practices and guidelines that will help experienced AEM developers for sites, who want to build mobile app templates and components.
 uuid: 7733c8b1-a88c-455c-8080-f7add4205b92
 contentOwner: User
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: a0647696-72c3-409b-85ba-9275d8f99cff
 exl-id: 63ceaba6-b796-4c13-a86d-f0609ec679c9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '595'
 ht-degree: 4%
 
 ---
@@ -33,14 +33,12 @@ Das Erstellen einer AEM Mobile On-demand Services-App unterscheidet sich vom Ers
 >
 >* [Verwenden von Cordova-Plug-ins in AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
 >* [Verwenden von AEM Mobile-spezifischen Cordova-aktivierten Plug-ins](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
-
 >
-
 
 
 * Vorlagen, die Plug-in-Funktionen verwenden, sollten so geschrieben werden, dass sie im Browser noch autorierbar sind, ohne dass die Plug-in-Verbindung vorhanden ist.
 
-   * Warten Sie beispielsweise auf die Funktion *device* , bevor Sie versuchen, auf die API eines Plug-ins zuzugreifen.
+   * Achten Sie beispielsweise darauf, auf die *Abflussgetreide* -Funktion, bevor versucht wird, auf die API eines Plug-ins zuzugreifen.
 
 ## Richtlinien für AEM Entwickler {#guidelines-for-aem-developers}
 
@@ -50,8 +48,8 @@ Die folgenden Richtlinien helfen erfahrenen AEM-Entwicklern für Sites, die mobi
 
 * Mehrere Komponentenskriptdateien über eine einzige monolithische
 
-   * Es werden eine Reihe leerer Erweiterungspunkte bereitgestellt, z. B. *customheaderlibs.html* und *customfooterlibs.html*, die es dem Entwickler ermöglichen, die Seitenvorlage zu ändern und so wenig Kerncode wie möglich zu duplizieren
-   * Vorlagen können dann über den Sling-Mechanismus *sling:resourceSuperType* erweitert und angepasst werden
+   * Es werden eine Reihe leerer Erweiterungspunkte bereitgestellt, z. B. *customheaderlibs.html* und *customfooterlibs.html*, die es dem Entwickler ermöglichen, die Seitenvorlage zu ändern und dabei möglichst wenig Kerncode zu duplizieren
+   * Vorlagen können dann über die von Sling *sling:resourceSuperType* Mechanismus
 
 * Sightly/HTL über JSP als Vorlagensprache bevorzugen
 
@@ -65,7 +63,7 @@ Die folgenden Richtlinien helfen erfahrenen AEM-Entwicklern für Sites, die mobi
 
 >[!NOTE]
 >
->Ausführlichere Informationen zum Rendern von blockierenden externen Skripten finden Sie hier [hier](https://developers.google.com/speed/docs/insights/BlockingJS).
+>Ausführlichere Informationen zu Render-Blocking-externen Skripten [here](https://developers.google.com/speed/docs/insights/BlockingJS).
 
 **App-spezifische clientseitige JS- und CSS-Bibliotheken im Vergleich zu webspezifischen**
 
@@ -74,18 +72,18 @@ Die folgenden Richtlinien helfen erfahrenen AEM-Entwicklern für Sites, die mobi
 
 >[!NOTE]
 >
->Um mehr über jQuery Mobile zu erfahren, klicken Sie [hier](https://jquerymobile.com/browser-support/1.4/).
+>Um mehr über jQuery Mobile zu erfahren, klicken Sie auf [here](https://jquerymobile.com/browser-support/1.4/).
 
 **Mikrobibliotheken über Vollstapel bevorzugen**
 
 * Die Zeit, die benötigt wird, um Ihren Inhalt auf das Glas des Geräts zu bringen, wird durch jede Bibliothek, von der Ihre Artikel abhängen, verlangsamt. Diese Verlangsamung wird verstärkt, wenn eine neue Webansicht zum Rendern jedes Artikels verwendet wird. Daher muss jede Bibliothek von Grund auf neu initialisiert werden
 * Wenn Ihre Artikel nicht als SPA (Einzelseiten-Apps) erstellt wurden, müssen Sie wahrscheinlich keine vollständige Stapelbibliothek wie Angular einschließen.
-* Verwenden Sie kleinere eindimensionale Bibliotheken, um die für Ihre Seite erforderliche Interaktivität hinzuzufügen, z. B. [Fastclick](https://github.com/ftlabs/fastclick) oder [Velocity.js](https://velocityjs.org)
+* Verwenden Sie kleinere Bibliotheken mit einem Zweck, um die Interaktivität hinzuzufügen, die Ihre Seite benötigt, z. B. [Fastclick](https://github.com/ftlabs/fastclick) oder [Velocity.js](https://velocityjs.org)
 
 **Minimieren der Artikelnutzlast**
 
 * Verwenden Sie die kleinstmöglichen Assets, die den größten von Ihnen unterstützten Viewport effektiv abdecken können, und zwar bei einer angemessenen Auflösung.
-* Verwenden Sie ein Tool wie *ImageOptim* auf Ihren Bildern, um überschüssige Metadaten zu entfernen.
+* Verwenden Sie ein Tool wie *ImageOptim* auf Ihren Bildern, um überschüssige Metadaten zu entfernen
 
 ## Erste Schritte {#getting-ahead}
 

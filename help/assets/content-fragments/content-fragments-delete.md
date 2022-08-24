@@ -3,7 +3,8 @@ title: Inhaltsfragmente – Überlegungen zum Löschen
 description: Lesen Sie diese wichtigen Überlegungen, bevor Sie Ihre Richtlinien zum Löschen von Inhaltsfragmenten in AEM definieren. Inhaltsfragmente sind ein leistungsstarkes Tool für die Bereitstellung von Headless-Inhalten. Die Auswirkungen des Löschens müssen sorgfältig berücksichtigt werden.
 feature: Content Fragments
 role: User
-source-git-commit: 94145c6428f61e31f6784a3d6ea67aa8d81cedd6
+exl-id: 6212457e-a171-4c33-8d19-54c26516e981
+source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 92%
@@ -80,10 +81,10 @@ Damit einem bestimmten Benutzer und/oder einer bestimmten Benutzergruppe das Bea
 
    * `jcr:addChildNodes`, `jcr:modifyProperties` und `jcr:removeChildNodes`, `jcr:removeNode`
 
-Diese `remove` -Berechtigungen müssen [über Zugriffssteuerungslisten in CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management) verwaltet werden.
+Diese `remove` -Berechtigungen müssen [über Zugriffssteuerungslisten in CRXDE Lite verwaltet werden](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-Die Berechtigungen `add` und `modify` können auch in CRXDE Lite oder über die User Management Console verwaltet werden.
+Die `add` und `modify` -Berechtigungen können auch in CRXDE Lite oder über die User Management Console verwaltet werden.
 
-Beispielsweise die Definition der `remove`-Berechtigungen für eine Gruppe `content-authors-no-delete`:
+Beispielsweise die Definition der `remove` Berechtigungen für eine Gruppe `content-authors-no-delete`:
 
 ![cf-delete-03](assets/cf-delete-03.png)

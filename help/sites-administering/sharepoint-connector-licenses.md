@@ -1,8 +1,8 @@
 ---
 title: SharePoint Connector-Lizenzen, Urheberrechtsvermerke und Haftungsausschlüsse
-seo-title: SharePoint Connector-Lizenzen, Urheberrechtsvermerke und Haftungsausschlüsse
+seo-title: SharePoint Connector Licenses, Copyright Notices, and Disclaimers
 description: Erfahren Sie mehr über SharePoint Connector-Lizenzen, Urheberrechtsvermerke und Haftungsausschlüsse.
-seo-description: Erfahren Sie mehr über SharePoint Connector-Lizenzen, Urheberrechtsvermerke und Haftungsausschlüsse.
+seo-description: Learn about SharePoint Connector Licenses, Copyright Notices and Disclaimers.
 uuid: 182c8f0f-dcca-461a-9d8f-f05b376ad0cb
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: b9342330-31f6-49cb-965e-4bab61f98d4c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 74%
+source-wordcount: '362'
+ht-degree: 73%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 74%
 
 Dieser Abschnitt umfasst alle Lizenzen, Urheberrechtsvermerke und Haftungsausschlüsse, die in Zusammenhang mit dem Day JCR Connector für Microsoft SharePoint explizit aufgeführt sein müssen.
 
-## Überblick über die Bibliotheken von Connector-Drittanbietern  {#overview-of-connector-rd-party-libraries}
+## Überblick über die Bibliotheken von Connector-Drittanbietern {#overview-of-connector-rd-party-libraries}
 
 In der folgenden Tabelle sind die Drittanbieter-Bibliotheken, die in den SharePoint Connector-Core-Bibliotheken genutzt werden, zusammen mit den Lizenzen, Urheberrechtsvermerken oder Haftungsausschlüssen, denen sie unterliegen, aufgeführt:
 
@@ -41,7 +41,7 @@ In der folgenden Tabelle sind die Drittanbieter-Bibliotheken, die in den SharePo
 | commons-httpclient | [Apache](#apache) |
 | commons-io | [Apache](#apache) |
 | commons-lang | [Apache](#apache) |
-| parallel | [Gleichzeitig](#concurrent)  (öffentlich) |
+| parallel | [Gleichzeitig](#concurrent) (Öffentlicher Bereich) |
 | geronimo-activation_1.1_spec | [Apache](#apache) |
 | geronimo-stax-api_1.0_spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
@@ -60,7 +60,7 @@ In der folgenden Tabelle sind die Drittanbieter-Bibliotheken, die in den SharePo
 | wstx-asl | [Apache](#apache) |
 | xalan | [Apache](#apache) |
 | xbean | [Apache](#apache) |
-| xml-apis | [Apache](#apache)  (enthält Teile, die von Public Domain- und W3C-Softwarelizenzen abgedeckt werden) |
+| xml-apis | [Apache](#apache) (enthält Teile, die von Public Domain- und W3C-Softwarelizenzen abgedeckt werden) |
 | XmlSchema | [Apache](#apache) |
 
 ## Überblick über die Bibliotheken von CRX-Drittanbietern {#overview-of-crx-rd-party-libraries}
@@ -155,7 +155,7 @@ In der folgenden Tabelle sind die in CRX verwendeten Drittanbieter-Bibliotheken 
  </tbody>
 </table>
 
-## Überblick über die Drittanbieter-Bibliotheken von CQSE 3.{#overview-of-cqse-rd-party-libraries}
+## Überblick über die Drittanbieter-Bibliotheken von CQSE 3. {#overview-of-cqse-rd-party-libraries}
 
 In der folgenden Tabelle sind die in der Communiqué Servlet Engine verwendeten Drittanbieter-Bibliotheken, zusammen mit den Lizenzen, Urheberrechtsvermerken oder Haftungsausschlüssen, denen sie unterliegen, aufgeführt:
 
@@ -438,7 +438,7 @@ In der folgenden Tabelle sind die in der Communiqué Servlet Engine verwendeten 
      <a href="https://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/sun-u.c.license.pdf" TARGET="_blank" >https://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/sun-u.c.license.pdf</a>
 ```
 
-## Day JCR  {#day-jcr}
+## Day JCR {#day-jcr}
 
 ```xml
      Day Management AG ("Licensor") is willing to license this
@@ -744,7 +744,7 @@ In der folgenden Tabelle sind die in der Communiqué Servlet Engine verwendeten 
      2000-05-05
 ```
 
-## SLF4J.ORG  {#slf-j-org}
+## SLF4J.ORG {#slf-j-org}
 
 ```xml
      Copyright (c) 2004-2007 QOS.ch

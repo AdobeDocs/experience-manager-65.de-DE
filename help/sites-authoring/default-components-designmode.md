@@ -1,8 +1,8 @@
 ---
 title: Konfigurieren von Komponenten im Designmodus
-seo-title: Konfigurieren von Komponenten im Designmodus
+seo-title: Configuring Components in Design Mode
 description: Konfigurieren von Komponenten im Designmodus
-seo-description: 'null'
+seo-description: null
 uuid: b9c9792d-4398-446d-8767-44d4e7ce9a2e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '905'
 ht-degree: 86%
 
 ---
@@ -33,9 +33,9 @@ Darüber hinaus sind auch verschiedene weitere Komponenten verfügbar. Mithilfe 
 
 >[!NOTE]
 >
->Der Designmodus ist nur für Designkonfigurationen verfügbar, die als Inhalt unter ( `/etc`) gespeichert werden.
+>Der Designmodus ist nur für Designkonfigurationen verfügbar, die als Inhalt unter ( `/etc`).
 >
->Ab AEM 6.4 wird empfohlen, Designs als Konfigurationsdaten unter `/apps` zu speichern, um kontinuierliche Bereitstellungsszenarien zu unterstützen. Unter `/apps` gespeicherte Designs können zur Laufzeit nicht bearbeitet werden. Der Designmodus steht Benutzern ohne Administratorrechte für solche Vorlagen nicht zur Verfügung.
+>Ab AEM 6.4 wird empfohlen, Designs als Konfigurationsdaten unter `/apps` zur Unterstützung kontinuierlicher Bereitstellungsszenarien. Geschmacksmuster, gespeichert unter `/apps` zur Laufzeit nicht bearbeitbar sind und der Designmodus für solche Vorlagen für Benutzer ohne Administratorrechte nicht verfügbar ist.
 
 Dazu müssen die zulässigen Komponenten im Absatzsystem für die Seite hinzugefügt oder entfernt werden. Das Absatzsystem (`parsys`) ist eine zusammengesetzte Komponente, die alle anderen Absatzkomponenten enthält. Mit dem Absatzsystem können Autoren Komponenten unterschiedlicher Typen zu einer Seite hinzufügen, da es alle anderen Absatzkomponenten enthält. Jeder Absatztyp wird als eine Komponente dargestellt.
 
@@ -68,7 +68,7 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    ![screen_shot_2018-03-22at103204](assets/screen_shot_2018-03-22at103204.png)
 
-1. Klicken oder tippen Sie auf das Symbol **Übergeordnetes Element**.
+1. Klicken oder tippen Sie auf **Übergeordnet** Symbol.
 
    ![](do-not-localize/screen_shot_2018-03-22at103204.png)
 
@@ -91,7 +91,7 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    **Zugelassene Komponenten**
 
-   Auf der Registerkarte **Zulässige Komponenten** legen Sie fest, welche Komponenten für die ParSys verfügbar sind.
+   Im **Zugelassene Komponenten** definieren, legen Sie fest, welche Komponenten für die Parsys verfügbar sind.
 
    * Die Komponenten werden anhand ihrer Komponentengruppen gruppiert, die sich ein- und ausblenden lassen.
    * Eine gesamte Gruppe kann durch Aktivieren des Gruppennamens ausgewählt werden und die Auswahl kann durch Deaktivieren aufgehoben werden.

@@ -1,20 +1,20 @@
 ---
 title: Konfigurieren von OSGi
-seo-title: Konfigurieren von OSGi
+seo-title: Configuring OSGi
 description: OSGi ist ein wesentlicher Bestandteil der Technologien von Adobe Experience Manager (AEM). OSGi wird zur Steuerung der AEM-Bundles und ihrer Konfiguration verwendet. In diesem Artikel erfahren Sie, wie Sie die Konfigurationseinstellungen solcher Bundles verwalten können.
-seo-description: OSGi ist ein wesentlicher Bestandteil der Technologien von Adobe Experience Manager (AEM). OSGi wird zur Steuerung der AEM-Bundles und ihrer Konfiguration verwendet. In diesem Artikel erfahren Sie, wie Sie die Konfigurationseinstellungen solcher Bundles verwalten können.
+seo-description: OSGi is a fundamental element in the technology stack of Adobe Experience Manager (AEM). It is used to control the composite bundles of AEM and their configuration. This article details how you can manage the configuration settings for such bundles.
 uuid: b39059a5-dd61-486a-869a-0d7a732c3a47
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
-feature: Konfiguration
+feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2014'
-ht-degree: 72%
+source-wordcount: '1971'
+ht-degree: 71%
 
 ---
 
@@ -30,7 +30,7 @@ Für die Festlegung der Konfigurationseinstellungen derartiger Bundles haben Sie
 
 * mit der [Adobe CQ Web-Konsole](#osgi-configuration-with-the-web-console) 
 * mit [Konfigurationsdateien](#osgi-configuration-with-configuration-files) 
-* Konfigurieren von [content-nodes ( `sling:OsgiConfig`) im Repository](#osgi-configuration-in-the-repository)
+* configuring [content-nodes ( `sling:OsgiConfig`) im Repository](#osgi-configuration-in-the-repository)
 
 Jede dieser Methoden kann verwendet werden, es gibt aber leichte Unterschiede vor allem in Bezug auf [Ausführungsmodi](/help/sites-deploying/configure-runmodes.md):
 
@@ -72,7 +72,7 @@ Alle Änderungen werden unverzüglich auf die entsprechende OSGi-Konfiguration a
 
 >[!NOTE]
 >
->Änderungen, die in der Web-Konsole vorgenommen werden, werden im Repository als [Konfigurationsdateien](#osgi-configuration-with-configuration-files) gespeichert. Diese können in Inhaltspakete eingefügt und für weitere Installationen erneut verwendet werden.
+>In der Web-Konsole vorgenommene Änderungen werden im Repository als [Konfigurationsdateien](#osgi-configuration-with-configuration-files). Diese können in Inhaltspakete eingefügt und für weitere Installationen erneut verwendet werden.
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Um eine Konfiguration mit der Web-Konsole zu aktualisieren, gehen Sie folgenderm
 
    >[!NOTE]
    >
-   >Aktualisierungen werden im Repository als [Konfigurationsdateien](#osgi-configuration-with-configuration-files) gespeichert. Um diese anschließend zu finden (z. B. um sie in ein Inhaltspaket zur Verwendung in einer anderen Instanz einzuschließen), sollten Sie die beständige Identität ( `PID`) notieren.
+   >Aktualisierungen werden im Repository als [Konfigurationsdateien](#osgi-configuration-with-configuration-files) gespeichert. Um diese später zu finden (z. B. um sie in ein Inhaltspaket zur Verwendung in einer anderen Instanz einzuschließen), sollten Sie die beständige Identität ( `PID`).
 
 1. Klicken Sie auf **Speichern**.
 
@@ -112,11 +112,11 @@ Um eine Konfiguration mit der Web-Konsole zu aktualisieren, gehen Sie folgenderm
 
    >[!NOTE]
    >
-   >Sie können nun die zugehörigen Konfigurationsdateien [suchen. z. B. in ein Inhaltspaket zur Verwendung in einer anderen Instanz einschließen.](#osgi-configuration-with-configuration-files)
+   >Sie können jetzt die zugehörige [Konfigurationsdatei(en)](#osgi-configuration-with-configuration-files); z. B. in ein Inhaltspaket zur Verwendung in einer anderen Instanz einschließen.
 
 ## OSGi-Konfiguration mit Konfigurationsdateien {#osgi-configuration-with-configuration-files}
 
-Konfigurationsänderungen, die mithilfe der Web-Konsole vorgenommen werden, werden im Repository als Konfigurationsdateien ( `.config`) unter folgendem Pfad beibehalten:
+Konfigurationsänderungen, die mithilfe der Web-Konsole vorgenommen werden, werden im Repository als Konfigurationsdateien ( `.config`) unter:
 
 `/apps`
 
@@ -124,7 +124,7 @@ Diese können in Inhaltspaketen eingeschlossen und in anderen Instanzen wiederve
 
 >[!NOTE]
 >
->Das Format der Konfigurationsdateien ist sehr spezifisch - vollständige Details finden Sie in der [Sling Apache-Dokumentation](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format) .
+>Das Format der Konfigurationsdateien ist sehr spezifisch - siehe [Sling Apache-Dokumentation](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format) für ausführliche Informationen.
 >
 >Aus diesem Grund ist es empfehlenswert, die Erstellung und Wartung der Konfigurationsdatei in der Web-Konsole durchzuführen.
 
@@ -157,13 +157,13 @@ Die Web-Konsole zeigt nicht an, wo im Repository Ihre Änderungen gespeichert wu
 
 1. Sie können jetzt ein Inhaltspaket erstellen, das diesen Knoten enthält, und es nach Bedarf in Ihren anderen Instanzen verwenden.
 
-## OSGi-Konfiguration im Repository  {#osgi-configuration-in-the-repository}
+## OSGi-Konfiguration im Repository {#osgi-configuration-in-the-repository}
 
 Neben der Verwendung der Web-Konsole ist die Definition der Konfigurationsdetails auch im Repository möglich. Damit können Sie die unterschiedlichen Ausführungsmodi einfach konfigurieren.
 
 Diese Konfigurationen werden vorgenommen, indem `sling:OsgiConfig`-Knoten im Repository erstellt werden, auf die das System verweist. Diese Knoten bilden die OSGi-Konfigurationen ab und stellen für sie eine Benutzeroberfläche bereit. Um die Konfigurationsdaten zu aktualisieren, aktualisieren Sie die Knoteneigenschaften.
 
-Wenn Sie die Konfigurationsdaten im Repository ändern, werden die Änderungen sofort auf die entsprechende OSGi-Konfiguration angewendet, so als ob die Änderungen in der Web-Konsole vorgenommen worden wären, einschließlich der entsprechenden Validierungs- und Konsistenzprüfungen. Dies gilt auch für das Kopieren einer Konfiguration von `/libs/` in `/apps/`.
+Wenn Sie die Konfigurationsdaten im Repository ändern, werden die Änderungen sofort auf die entsprechende OSGi-Konfiguration angewendet, so als ob die Änderungen in der Web-Konsole vorgenommen worden wären, einschließlich der entsprechenden Validierungs- und Konsistenzprüfungen. Dies gilt auch für das Kopieren einer Konfiguration aus `/libs/` nach `/apps/`.
 
 Da derselbe Konfigurationsparameter an mehreren Orten gespeichert werden kann, geht das System folgendermaßen vor:
 
@@ -175,42 +175,42 @@ Da derselbe Konfigurationsparameter an mehreren Orten gespeichert werden kann, g
 >
 >Lesen Sie auch, [wie Sie eine Konfiguration im Repository nur für eine bestimmte Instanz definieren können](https://helpx.adobe.com/experience-manager/kb/RunModeDependentConfigAndInstall.html).
 
-### Hinzufügen einer neuen Konfiguration zum Repository  {#adding-a-new-configuration-to-the-repository}
+### Hinzufügen einer neuen Konfiguration zum Repository {#adding-a-new-configuration-to-the-repository}
 
 #### Informationen, die Sie dafür benötigen {#what-you-need-to-know}
 
 Um eine neue Konfiguration zum Repository hinzuzufügen, benötigen Sie folgende Informationen:
 
-1. Die **Persistent Identity** (PID) des Dienstes.
+1. Die **Persistente Identität** (PID) des Dienstes.
 
-   Verweisen Sie in der Web-Konsole auf das Feld **Konfigurationen** . Der Name wird in eckigen Klammern hinter dem Bundle-Namen (oder in den **Konfigurationsinformationen** am unteren Rand der Seite) angezeigt.
+   Verweisen Sie auf **Konfigurationen** in der Web-Konsole. Der Name wird in Klammern hinter dem Bundle-Namen (oder im **Konfigurationsinformationen** unten auf der Seite).
 
-   Erstellen Sie beispielsweise einen Knoten `com.day.cq.wcm.core.impl.VersionManagerImpl.`, um **AEM WCM-Versionsmanager** zu konfigurieren.
+   Erstellen Sie beispielsweise einen Knoten `com.day.cq.wcm.core.impl.VersionManagerImpl.` zum Konfigurieren **AEM WCM-Versionsmanager**.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. Gibt an, ob ein bestimmter [Ausführungsmodus](/help/sites-deploying/configure-runmodes.md) erforderlich ist. Erstellen Sie den Ordner:
+1. Ob ein bestimmter [Ausführungsmodus](/help/sites-deploying/configure-runmodes.md) ist erforderlich. Erstellen Sie den Ordner:
 
    * `config` - für alle Ausführungsmodi
    * `config.author` - für die Autorenumgebung
    * `config.publish` - für die Veröffentlichungsumgebung
    * `config.<run-mode>` - gegebenenfalls
 
-1. Ob eine **Konfiguration** oder **Werkskonfiguration** erforderlich ist.
+1. Ob **Konfiguration** oder **Factory-Konfiguration** erforderlich ist.
 1. Die einzelnen Parameter, die konfiguriert werden müssen, einschließlich etwaiger vorhandener Parameterdefinitionen, die neu erstellt werden müssen.
 
    Referenzieren Sie das einzelne Parameterfeld in der Web-Konsole. Der Name wird für jeden Parameter in Klammern angezeigt.
 
    Erstellen Sie beispielsweise eine Eigenschaft
-   `versionmanager.createVersionOnActivation` , um die Option  **Version bei Aktivierung erstellen** zu konfigurieren.
+   `versionmanager.createVersionOnActivation` zum Konfigurieren **Version bei Aktivierung erstellen**.
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
-1. Gibt es bereits eine Konfiguration in `/libs`? Um alle Konfigurationen in Ihrer Instanz aufzulisten, verwenden Sie das Tool **Abfrage** in CRXDE Lite, um die folgende SQL-Abfrage zu senden:
+1. Existiert bereits eine Konfiguration in `/libs`? Um alle Konfigurationen in Ihrer Instanz aufzulisten, verwenden Sie die **Abfrage** -Tool in CRXDE Lite verwenden, um die folgende SQL-Abfrage zu senden:
 
    `select * from sling:OsgiConfig`
 
-   Wenn ja, kann diese Konfiguration nach ` /apps/<yourProject>/` kopiert und dann am neuen Speicherort angepasst werden.
+   Wenn ja, kann diese Konfiguration nach kopiert werden ` /apps/<yourProject>/`, dann an dem neuen Speicherort angepasst.
 
 #### Erstellen der Konfiguration im Repository {#creating-the-configuration-in-the-repository}
 
@@ -220,7 +220,7 @@ Um die neue Konfiguration zum Repository hinzuzufügen, gehen Sie folgendermaße
 
    ` /apps/<yourProject>`
 
-1. Wenn noch nicht vorhanden, erstellen Sie den Ordner `config` ( `sling:Folder`):
+1. Falls noch nicht vorhanden, erstellen Sie die `config` Ordner ( `sling:Folder`):
 
    * `config` – anwendbar auf alle Ausführungsmodi
    * `config.<run-mode>` - spezifisch für einen bestimmten Ausführungsmodus
@@ -230,20 +230,20 @@ Um die neue Konfiguration zum Repository hinzuzufügen, gehen Sie folgendermaße
    * Typ: `sling:OsgiConfig`
    * Name: die persistente Identität (PID);
 
-      Verwenden Sie beispielsweise AEM WCM-Versionsmanager `com.day.cq.wcm.core.impl.VersionManagerImpl`
+      Beispiel für AEM Verwendung des WCM-Versionsmanagers `com.day.cq.wcm.core.impl.VersionManagerImpl`
    >[!NOTE]
    >
-   >Hängen Sie beim Erstellen einer Werkskonfiguration `-<identifier>` an den Namen an.
+   >Wenn Sie eine Factory-Konfiguration anhängen `-<identifier>` zum Namen.
    >
    >Wie in: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
    >
-   >wobei `<identifier>` durch freien Text ersetzt wird, den Sie eingeben (müssen), um die Instanz zu identifizieren (diese Information darf nicht weggelassen werden); Beispiel:
+   >Wo `<identifier>` wird durch freien Text ersetzt, den Sie eingeben (müssen), um die Instanz zu identifizieren (diese Information darf nicht weggelassen werden); Beispiel:
    >
    >`org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
 1. Erstellen Sie für jeden Parameter, den Sie konfigurieren möchten, eine Eigenschaft auf diesem Knoten:
 
-   * Name: der Parametername, wie er in der Web-Konsole gezeigt wird. Der Name erscheint in Klammern am Ende der Feldbeschreibung. Verwenden Sie beispielsweise für `Create Version on Activation` `versionmanager.createVersionOnActivation`
+   * Name: der Parametername, wie er in der Web-Konsole gezeigt wird. Der Name erscheint in Klammern am Ende der Feldbeschreibung. Beispiel: für `Create Version on Activation` use `versionmanager.createVersionOnActivation`
    * Typ: entsprechend 
    * Wert: nach Bedarf
 
@@ -261,7 +261,7 @@ Um die neue Konfiguration zum Repository hinzuzufügen, gehen Sie folgendermaße
 >
 >Der vollständige Pfad einer Konfiguration muss korrekt sein, damit er beim Start gelesen werden kann.
 
-## Konfigurationsdetails  {#configuration-details}
+## Konfigurationsdetails {#configuration-details}
 
 ### Auflösungsreihenfolge beim Start {#resolution-order-at-startup}
 
@@ -269,11 +269,11 @@ Die folgende Reihenfolge wird verwendet:
 
 1. Repository-Knoten unter `/apps/*/config...`.entweder mit Typ `sling:OsgiConfig` oder Eigenschaftendateien.
 
-1. Repository-Knoten mit Typ `sling:OsgiConfig` unter `/libs/*/config...`. (vorgefertigte Definitionen).
+1. Repository-Knoten mit Typ `sling:OsgiConfig` under `/libs/*/config...`. (vorgefertigte Definitionen).
 
-1. Alle `.config`-Dateien von `<*cq-installation-dir*>/crx-quickstart/launchpad/config/...`. im lokalen Dateisystem.
+1. Alle `.config` Dateien aus `<*cq-installation-dir*>/crx-quickstart/launchpad/config/...`. im lokalen Dateisystem.
 
-Dies bedeutet, dass eine generische Konfiguration in `/libs` durch eine projektspezifische Konfiguration in `/apps` maskiert werden kann.
+Dies bedeutet, dass eine generische Konfiguration in `/libs` kann durch eine projektspezifische Konfiguration in maskiert werden `/apps`.
 
 ### Auflösungsreihenfolge während der Laufzeit {#resolution-order-at-runtime}
 
@@ -282,8 +282,8 @@ Konfigurationsänderungen, die während der Laufzeit des Systems vorgenommen wer
 Anschließend wird die folgende Reihenfolge angewendet:
 
 1. Die Änderung einer Konfiguration in der Web-Konsole wird sofort angewendet, da sie während der Laufzeit Vorrang hat.
-1. Die Änderung einer Konfiguration in `/apps` wird sofort wirksam.
-1. Die Änderung einer Konfiguration in `/libs` wird sofort wirksam, es sei denn, sie wird durch eine Konfiguration in `/apps` verdeckt.
+1. Ändern einer Konfiguration in `/apps` sofort in Kraft treten.
+1. Ändern einer Konfiguration in `/libs` wird sofort wirksam, es sei denn, sie wird durch eine Konfiguration in `/apps`.
 
 ### Auflösung mehrerer Ausführungsmodi {#resolution-of-multiple-run-modes}
 
@@ -293,15 +293,15 @@ Für Ausführungsmodus-spezifische Konfigurationen können mehrere Ausführungsm
 
 Konfigurationen in derartigen Ordnern werden angewendet, wenn alle Ausführungsmodi mit einem beim Start definierten Ausführungsmodus übereinstimmen.
 
-Wenn beispielsweise eine Instanz mit den Ausführungsmodi `author,dev,emea` gestartet wurde, werden Konfigurationsknoten in `/apps/*/config.emea`, `/apps/*/config.author.dev/` und `/apps/*/config.author.emea.dev/` angewendet, während Konfigurationsknoten in `/apps/*/config.author.asean/` und `/config/author.dev.emea.noldap/` nicht angewendet werden.
+Wenn beispielsweise eine Instanz mit den Ausführungsmodi gestartet wurde `author,dev,emea`, Konfigurationsknoten in `/apps/*/config.emea`, `/apps/*/config.author.dev/` und `/apps/*/config.author.emea.dev/` wird angewendet, während Konfigurationsknoten in `/apps/*/config.author.asean/` und `/config/author.dev.emea.noldap/` wird nicht angewendet.
 
 Wenn mehrere Konfigurationen für dieselbe PID anwendbar sind, wird die Konfiguration mit der höchsten Anzahl an passenden Ausführungsmodi angewendet.
 
-Wenn beispielsweise eine Instanz mit den Ausführungsmodi `author,dev,emea` gestartet wurde und sowohl `/apps/*/config.author/` als auch `/apps/*/config.emea.author/` eine Konfiguration für
-`com.day.cq.wcm.core.impl.VersionManagerImpl` wird die Konfiguration in `/apps/*/config.emea.author/` angewendet.
+Wenn beispielsweise eine Instanz mit den Ausführungsmodi gestartet wurde `author,dev,emea`, und beide `/apps/*/config.author/` und `/apps/*/config.emea.author/` Konfiguration für
+`com.day.cq.wcm.core.impl.VersionManagerImpl`, die Konfiguration in `/apps/*/config.emea.author/` angewendet werden.
 
 Die Granularität dieser Regel liegt auf PID-Ebene.
-Es ist nicht möglich, einige Eigenschaften für dieselbe PID in `/apps/*/config.author/` und spezifischere in `/apps/*/config.emea.author/` für dieselbe PID zu definieren.
+Es ist nicht möglich, einige Eigenschaften für dieselbe PID in `/apps/*/config.author/` und spezifischeren `/apps/*/config.emea.author/` für dieselbe PID.
 Die Konfiguration mit der höchsten Anzahl von übereinstimmenden Ausführungsmodi tritt für die gesamte PID in Kraft. 
 
 ### Standardkonfigurationen {#standard-configurations}
@@ -322,7 +322,7 @@ In der folgenden Liste finden Sie eine kleine Auswahl an verfügbaren Konfigurat
 
 >[!NOTE]
 >
->Da sich diese Konfigurationen in `/libs` befinden, dürfen sie nicht direkt bearbeitet, sondern vor der Anpassung in den Anwendungsbereich ( `/apps`) kopiert werden.
+>Da sich diese Konfigurationen in `/libs` Sie dürfen nicht direkt bearbeitet, sondern in Ihren Anwendungsbereich kopiert werden ( `/apps`) vor der Anpassung.
 
 Um alle Konfigurationsknoten in Ihrer Instanz aufzulisten, senden Sie über die **Abfrage**-Funktion in CRXDE Lite die folgende SQL-Abfrage:
 
@@ -334,7 +334,7 @@ Um alle Konfigurationsknoten in Ihrer Instanz aufzulisten, senden Sie über die 
 
    `/apps/{somewhere}`
 
-   * Standardmäßig ist `{somewhere}` `system/config` , sodass die Konfiguration in
+   * Standardmäßig `{somewhere}` is `system/config` sodass die Konfiguration in
 
       `/apps/system/config`
 
@@ -346,7 +346,7 @@ Um alle Konfigurationsknoten in Ihrer Instanz aufzulisten, senden Sie über die 
 
       `/apps/foo/config/someconfig`
 
-* Einstellungen, die von `admin` geändert werden, werden in `*.config` Dateien unter folgendem Pfad gespeichert:
+* Einstellungen, die durch `admin` gespeichert in `*.config` Dateien unter:
 
    ```
       /crx-quickstart/launchpad/config

@@ -1,8 +1,8 @@
 ---
 title: Versionsbereinigung
-seo-title: Versionsbereinigung
+seo-title: Version Purging
 description: In diesem Artikel werden die verfügbaren Optionen für die Versionsbereinigung beschrieben.
-seo-description: In diesem Artikel werden die verfügbaren Optionen für die Versionsbereinigung beschrieben.
+seo-description: This article describes the available options for version purging.
 uuid: a9fa25c7-e60e-4665-a726-99af9aac8f70
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,12 +10,12 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: fb4d7337-7b94-430b-80d2-f1754f823c2b
 docset: aem65
-feature: Konfiguration
+feature: Configuring
 exl-id: 6f0b1951-bdda-475f-b6c0-bc18de082b7c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 69%
+source-wordcount: '728'
+ht-degree: 68%
 
 ---
 
@@ -44,7 +44,7 @@ Wird dieser Wert überschritten, wird die älteste Version entfernt.
    * Das Höchstalter einer im Repository gespeicherten Version.
 Wenn das Alter einer Version diesen Wert überschreitet, wird sie aus dem Repository gelöscht.
 
-* die Wartungsaufgabe [Versionsbereinigung](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Sie können die Wartungsaufgabe zur Versionsbereinigung planen, um alte Versionen automatisch zu löschen. Dadurch wird die Notwendigkeit minimiert, die Tools zur Versionsbereinigung manuell zu verwenden.
+* die [Wartungsaufgabe für Versionsbereinigung](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Sie können die Wartungsaufgabe zur Versionsbereinigung planen, um alte Versionen automatisch zu löschen. Dadurch wird die Notwendigkeit minimiert, die Tools zur Versionsbereinigung manuell zu verwenden.
 
 >[!CAUTION]
 >
@@ -54,7 +54,7 @@ Wenn das Alter einer Version diesen Wert überschreitet, wird sie aus dem Reposi
 
 Zusätzlich zur expliziten Bereinigung mit dem Bereinigungs-Tool kann der Versions-Manager so konfiguriert werden, dass alte Versionen bei der Erstellung von neuen Versionen entfernt werden.
 
-Um den Versionsmanager zu konfigurieren, erstellen Sie [eine Konfiguration](/help/sites-deploying/configuring-osgi.md) für:
+So konfigurieren Sie den Versionsmanager: [Konfiguration erstellen](/help/sites-deploying/configuring-osgi.md) für:
 
 `PID com.day.cq.wcm.core.impl.VersionManagerImpl`
 
@@ -62,9 +62,9 @@ Die folgenden Optionen sind verfügbar:
 
 * `versionmanager.createVersionOnActivation` (Boolesch, Standard: true) Gibt an, ob eine Version erstellt werden soll, wenn Seiten aktiviert werden.
 Eine Version wird erstellt, es sei denn, der Replikationsagent ist so konfiguriert, dass er die Erstellung von Versionen unterdrückt, was vom Versions-Manager berücksichtigt wird.
-Eine Version wird nur erstellt, wenn die Aktivierung auf einem Pfad erfolgt, der in `versionmanager.ivPaths` enthalten ist (siehe unten).
+Eine Version wird nur erstellt, wenn die Aktivierung auf einem Pfad erfolgt, der in `versionmanager.ivPaths` (siehe unten).
 
-* `versionmanager.ivPaths`(String[], Standard:  `{"/"}`) Gibt die Pfade an, auf denen Versionen bei Aktivierung implizit erstellt werden, wenn auf &quot;true&quot;gesetzt  `versionmanager.createVersionOnActivation` ist.
+* `versionmanager.ivPaths`(String[], Standard: `{"/"}`) Gibt die Pfade an, auf denen Versionen bei der Aktivierung implizit erstellt werden, wenn `versionmanager.createVersionOnActivation` auf &quot;true&quot;gesetzt ist.
 
 * `versionmanager.purgingEnabled` (Boolesch, Standard: false) Definiert, ob die Bereinigung aktiviert werden soll, wenn neue Versionen erstellt werden.
 
@@ -82,7 +82,7 @@ Eine Version wird nur erstellt, wenn die Aktivierung auf einem Pfad erfolgt, der
 
 ### Kombinieren von Aufbewahrungsoptionen {#combining-retention-options}
 
-Die Optionen, die definieren, wie welche Versionen beibehalten werden sollen ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`), können je nach Ihren Anforderungen kombiniert werden.
+Die Optionen, die festlegen, wie welche Versionen beibehalten werden sollen ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`), kann je nach Ihren Anforderungen kombiniert werden.
 
 Wenn Sie z. B. die Anzahl der Versionen, die maximal aufbewahrt werden, UND die älteste aufzubewahrende Version definieren:
 
@@ -117,6 +117,6 @@ Wenn Sie z. B. die maximale UND die minimale Anzahl von Versionen, die aufbewahr
 
    * 3 Versionen aufbewahrt werden.
 
-## Tool „Versionen bereinigen“{#purge-versions-tool}
+## Tool „Versionen bereinigen“ {#purge-versions-tool}
 
 Das Tool [Versionen bereinigen](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) dient zum Bereinigen der Versionen eines Knotens oder einer Hierarchie von Knoten in Ihrem Repository. Der Hauptzweck ist die Verkleinerung des Repositorys durch Löschen alter Knotenversionen.

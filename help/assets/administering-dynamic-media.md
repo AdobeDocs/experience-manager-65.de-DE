@@ -30,7 +30,7 @@ Wenn Sie Dynamic Media verwalten, sind für Sie die folgenden Themen interessant
 * [Konfigurieren des Dynamic Media-/Scene7-Modus](config-dms7.md) - Verwenden Sie diese Konfiguration, wenn Sie ein neuer Dynamic Media-Kunde sind.
 * [Konfigurieren von Dynamic Media - Hybridmodus](config-dynamic.md) - Verwenden Sie diese Konfiguration, wenn Sie bereits ein Dynamic Media-Kunde sind und Experience Manager zum Aktualisieren sind.
 * [Verwalten von Bildvorgaben](managing-image-presets.md)
-* [Viewer-Vorgaben verwalten](managing-viewer-presets.md)
+* [Verwalten von Viewer-Vorgaben](managing-viewer-presets.md)
 * [Fehlerbehebung bei Dynamic Media - Scene7-Modus](troubleshoot-dms7.md)
 
 Weitere Informationen finden Sie in den folgenden Themen:

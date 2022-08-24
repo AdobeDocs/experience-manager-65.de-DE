@@ -243,7 +243,7 @@ Um MSSL zu aktivieren, konfigurieren Sie die Eigenschaften auf der Registerkarte
    <td>Kein Wert</td>
   </tr>
   <tr>
-   <td>Passwort</td>
+   <td>Kennwort</td>
    <td>Kein Wert</td>
   </tr>
   <tr>

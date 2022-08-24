@@ -1,8 +1,8 @@
 ---
 title: Forumsgrundlagen
-seo-title: Forumsgrundlagen
+seo-title: Forum Essentials
 description: Forumsübersicht
-seo-description: Forumsübersicht
+seo-description: Forum overview
 uuid: 68849582-8742-40be-9e7e-0b574ae38815
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,7 +12,7 @@ discoiquuid: 059c5bbe-07eb-4873-8157-2196df887b27
 exl-id: 622cf6ca-f119-4310-ad14-537576bd6f6d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '253'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Diese Seite enthält die wichtigsten Informationen für die Arbeit mit der Forumsfunktion.
 
-## Grundlagen für Client-seitige {#essentials-for-client-side}
+## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -47,14 +47,14 @@ Diese Seite enthält die wichtigsten Informationen für die Arbeit mit der Forum
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Siehe <a href="forum.md">Forum Feature</a></td>
+   <td>Siehe <a href="forum.md">Forumsfunktion</a></td>
   </tr>
  </tbody>
 </table>
 
 * [Clientseitige Anpassungen](client-customize.md)
 
-## Grundlagen für serverseitige {#essentials-for-server-side}
+## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
 
 * [Forum-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/forum/client/api/package-summary.html)
 
@@ -64,20 +64,20 @@ Diese Seite enthält die wichtigsten Informationen für die Arbeit mit der Forum
 
 ### Forumsfunktion {#forum-function}
 
-Eine Community-Site-Struktur, die die [Forumsfunktion](functions.md#forum-function) enthält, enthält eine konfigurierte `forum`-Komponente sowie Einstellungen, die sich auf Moderation, Tagging und Übersetzung auswirken.
+Eine Community-Site-Struktur mit [Forumsfunktion](functions.md#forum-function)enthält eine konfigurierte `forum` sowie Einstellungen, die sich auf Moderation, Tagging und Übersetzung auswirken.
 
 ### Zugriff auf Forumbeiträge (UGC) {#accessing-forum-posts-ugc}
 
 UGC sollte mit einer der Standardmethoden für die Moderation moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Stores](working-with-srp.md) für UGC den programmatischen Zugriff auf UGC, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities: Verwendung einer [gemeinsamer Speicher](working-with-srp.md) für UGC umfasst den programmatischen Zugriff auf UGC, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
 
-**Speicherort und Format der UGC im Repository können sich ohne Warnung** ändern.
+**Speicherort und Format der UGC im Repository können ohne Warnung geändert werden**.
 
 Siehe:
 
-* [Übersicht über den Speicheranbieter](srp.md)  - Einführung und Übersicht über die Repository-Nutzung.
-* [SRP und UGC Essentials](srp-and-ugc.md)  - SRP-Dienstprogrammmethoden und Beispiele.
-* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md)  - Coding Guidelines.
-* [SocialUtils-Refaktorierung](socialutils.md)  - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
+* [Übersicht über den Speicheranbieter](srp.md) - Einführung und Übersicht über die Repository-Nutzung.
+* [Grundlagen zu SRP und UGC](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und -beispiele.
+* [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Kodierungsrichtlinien.
+* [SocialUtils-Refaktorierung](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.

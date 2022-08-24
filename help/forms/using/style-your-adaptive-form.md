@@ -10,7 +10,7 @@ discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2037'
 ht-degree: 100%
 
@@ -283,7 +283,7 @@ Sie können ein benutzerdefiniertes Design verwenden, um allen Schaltflächen de
      <tr> 
       <td>Text</td> 
       <td>Schriftgrad</td> 
-      <td>18px</td> 
+      <td>18 px</td> 
      </tr> 
     </tbody> 
    </table>
@@ -387,7 +387,7 @@ Einige Stile gelten nur für eine bestimmte Komponente. Solche Komponenten werde
      <tr> 
       <td>Text</td> 
       <td>Schriftgrad</td> 
-      <td>18px</td> 
+      <td>18 px</td> 
      </tr> 
      <tr> 
       <td>Text</td> 

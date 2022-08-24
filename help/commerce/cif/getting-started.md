@@ -7,7 +7,7 @@ exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '715'
-ht-degree: 39%
+ht-degree: 43%
 
 ---
 
@@ -19,7 +19,7 @@ Um mit AEM Content and Commerce zu beginnen, müssen Sie das AEM Content and Com
 
 [AEM 6.5 Service Pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 7 oder höher ist erforderlich.
 
-## Einstieg  {#onboarding}
+## Onboarding {#onboarding}
 
 Das Onboarding für AEM Content and Commerce erfolgt in zwei Schritten:
 
@@ -68,7 +68,7 @@ Diese Konfiguration kann mithilfe der CIF-Cloud Service-Konfiguration wie folgt 
 Die folgenden Eigenschaften können konfiguriert werden:
 
 - GraphQL-Client – Wählen Sie den konfigurierten GraphQL-Client für die Commerce-Backend-Kommunikation aus. Dies sollte normalerweise auf der Standardeinstellung bleiben.
-- Store View - die Kennung der Store-Ansicht. Wenn leer, wird die standardmäßige Shop-Ansicht verwendet.
+- Shop-Ansicht – die Kennung der Shop-Ansicht. Wenn leer, wird die standardmäßige Shop-Ansicht verwendet.
 - GraphQL-Proxy-Pfad – der URL-Pfad des GraphQL-Proxy in AEM, der als Proxy für Anfragen an den Commerce-Backend-GraphQL-Endpunkt verwendet wird.
    >[!NOTE]
    >
@@ -76,7 +76,7 @@ Die folgenden Eigenschaften können konfiguriert werden:
 - Unterstützung der Catalog-UID aktivieren – aktiviert die Unterstützung für UID anstelle von ID in den Commerce-Backend-GraphQL-Aufrufen.
    >[!NOTE]
    >
-   > Unterstützung für UIDs wurde in Adobe Commerce 2.4.2 eingeführt. Aktivieren Sie dies nur, wenn Ihr Commerce-Backend ein GraphQL-Schema der Version 2.4.2 oder höher unterstützt.
+   > Die Unterstützung für UIDs wurde in Adobe Commerce 2.4.2 eingeführt. Aktivieren Sie diese nur, wenn Ihr Commerce-Backend ein GraphQL-Schema der Version 2.4.2 oder höher unterstützt.
 - Kennung der Stammkategorie des Katalogs – die Kennung (UID oder ID) des Stammverzeichnisses des Shops
    >[!CAUTION]
    >

@@ -1,8 +1,8 @@
 ---
 title: Wartungsaufgaben vor einer Aktualisierung
-seo-title: Wartungsaufgaben vor einer Aktualisierung
+seo-title: Pre-Upgrade Maintenance Tasks
 description: Erfahren Sie mehr über die Aufgaben im Vorfeld der AEM-Aktualisierung.
-seo-description: Erfahren Sie mehr über die Aufgaben im Vorfeld der AEM-Aktualisierung.
+seo-description: Learn about the pre-upgrade tasks in AEM.
 uuid: 5da1cfc7-8a10-47b1-aafb-2cd112e3f818
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,12 +10,12 @@ content-type: reference
 topic-tags: upgrading
 discoiquuid: 291c91e5-65ff-473d-ac11-3da480239e76
 docset: aem65
-feature: Aktualisieren
+feature: Upgrading
 exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2159'
-ht-degree: 79%
+source-wordcount: '2148'
+ht-degree: 78%
 
 ---
 
@@ -44,25 +44,25 @@ Bevor Sie mit der Aktualisierung beginnen, ist es wichtig, die folgenden Wartung
 
 Wenn Sie die Aktualisierung durchführen, ist zusätzlich zur Aktualisierung von Inhalt und Code auch eine Migration des Repositorys erforderlich. Bei der Migration wird eine Kopie des Repositorys im Segment-TAR-Format erstellt. Daher benötigen Sie ausreichend Festplattenspeicher, um eine zweite (möglicherweise größere) Version des Repositorys zu speichern.
 
-## Vollständige Sicherung von AEM  {#fully-back-up-aem}
+## Vollständige Sicherung von AEM {#fully-back-up-aem}
 
 Bevor Sie mit der Aktualisierung beginnen, sollten Sie eine vollständige Sicherungskopie von AEM erstellen. Erstellen Sie Sicherungskopien des Repositorys, der Anwendungsinstallation, des Datenspeichers und der Mongo-Instanzen, falls zutreffend. Weitere Informationen zum Sichern und Wiederherstellen einer AEM-Instanz finden Sie unter[ Sicherung und Wiederherstellung](/help/sites-administering/backup-and-restore.md).
 
-## Sicherung von Änderungen unter /etc  {#backup-changes-etc}
+## Sicherung von Änderungen unter /etc {#backup-changes-etc}
 
-Der Aktualisierungsprozess bietet eine gute Möglichkeit, vorhandenen Inhalt und Konfigurationen unter den Pfaden `/apps` und `/libs` im Repository zu verwalten und zusammenzuführen. Für Änderungen am Pfad `/etc`, einschließlich ContextHub-Konfigurationen, ist es häufig erforderlich, diese Änderungen nach der Aktualisierung erneut anzuwenden. Während das Upgrade eine Sicherungskopie aller Änderungen erstellt, die unter `/var` nicht zusammengeführt werden können, empfehlen wir, diese Änderungen vor Beginn des Upgrades manuell zu sichern.
+Der Aktualisierungsprozess bietet eine gute Möglichkeit, bestehende Inhalte und Konfigurationen unter dem `/apps` und `/libs` Pfade im Repository. Für Änderungen, die an der `/etc` Pfad, einschließlich ContextHub-Konfigurationen, häufig müssen diese Änderungen nach der Aktualisierung erneut angewendet werden. Während das Upgrade eine Sicherungskopie aller Änderungen erstellt, die nicht zusammengeführt werden können unter `/var`, empfehlen wir, diese Änderungen vor Beginn des Upgrades manuell zu sichern.
 
 ## Erstellen der quickstart.properties-Datei {#generate-quickstart-properties}
 
 Wenn Sie AEM von einer JAR-Datei aus starten, wird eine `quickstart.properties`-Datei unter `crx-quickstart/conf` erstellt. Falls AEM bisher nur mit dem Startskript gestartet wurde, ist diese Datei nicht vorhanden und die Aktualisierung schlägt fehl. Überprüfen Sie daher, dass diese Datei vorhanden ist, und starten Sie AEM andernfalls von der JAR-Datei aus neu.
 
-## Konfigurieren von Workflow- und Auditprotokoll-Löschung  {#configure-wf-audit-purging}
+## Konfigurieren von Workflow- und Auditprotokoll-Löschung {#configure-wf-audit-purging}
 
 Für die Aufgaben `WorkflowPurgeTask` und `com.day.cq.audit.impl.AuditLogMaintenanceTask` sind separate OSGi-Konfigurationen erforderlich, sonst werden diese nicht ausgeführt. Falls diese Aufgaben beim Ausführen von Aufgaben vor der Aktualisierung fehlschlagen, sind die Ursache dafür wahrscheinlich fehlende Konfigurationen. Daher müssen Sie die OSGi-Konfigurationen für diese Aufgaben hinzufügen oder diese Aufgaben vollständig aus der Liste der Optimierungsaufgaben vor der Aktualisierung löschen, falls Sie diese nicht ausführen möchten. Dokumentation zum Konfigurieren von Workflow-Löschaufgaben finden Sie unter [Verwalten von Workflow-Instanzen](/help/sites-administering/workflows-administering.md). Informationen zur Konfiguration von Wartungsaufgaben für Auditprotokolle finden Sie unter [Wartung von Auditprotokollen in AEM 6](/help/sites-administering/operations-audit-log.md).
 
 Informationen zum Workflow und zum Löschen von Auditprotokollen in CQ 5.6 und AEM 6.0 finden Sie unter [Löschen von Workflow- und Auditknoten](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html).
 
-## Installieren, Konfigurieren und Ausführen der Aufgaben vor der Aktualisierung  {#install-configure-run-pre-upgrade-tasks}
+## Installieren, Konfigurieren und Ausführen der Aufgaben vor der Aktualisierung {#install-configure-run-pre-upgrade-tasks}
 
 Da AEM ein hohes Maß an Anpassung erlaubt, gibt es in der Regel keine einheitliche Vorgehensweise für die Durchführung von Aktualisierungen. Es ist deshalb schwierig, ein standardisiertes Verfahren für Aktualisierungen zu entwickeln.
 
@@ -74,7 +74,7 @@ Die Wartungsaufgaben vor einer Aktualisierung sind derzeit auf verschiedene Benu
 
 Sämtliche Aufgaben, die zum Optimierungsschritt vor der Aktualisierung gehören, sind mit allen Versionen (ab Version 6.0) kompatibel.
 
-### Einrichtung  {#how-to-set-it-up}
+### Einrichtung {#how-to-set-it-up}
 
 In AEM 6.3 und höher ist die Optimierung der Wartungsaufgaben vor einer Aktualisierung Teil der quickstart-Datei. Bei einer Aktualisierung von älteren AEM 6-Versionen ist sie über separate Pakete verfügbar, die Sie von Package Manager herunterladen können.
 
@@ -90,7 +90,7 @@ Sie finden die Pakete hier:
 
 Die OSGi-Komponente `PreUpgradeTasksMBean` ist mit einer Liste von Wartungsaufgaben vor der Aktualisierung vorkonfiguriert, die gleichzeitig ausgeführt werden können. Sie können die Aufgaben mit den nachfolgenden Schritten konfigurieren:
 
-1. Navigieren Sie zur Web-Konsole, indem Sie zu *https://serveraddress:serverport/system/console/configMgr* navigieren.
+1. Navigieren Sie zur Web-Konsole , indem Sie zu *https://serveraddress:serverport/system/console/configMgr*
 
 1. Suchen Sie nach **preupgradetasks** und klicken Sie auf die erste übereinstimmende Komponente. Der vollständige Name der Komponenten lautet `com.adobe.aem.upgrade.prechecks.mbean.impl.PreUpgradeTasksMBeanImpl`.
 
@@ -105,7 +105,7 @@ Die Aufgabenliste unterscheidet sich je nach dem verwendeten Ausführungsmodus z
   <tr>
    <td><strong>Aufgabe</strong></td>
    <td><strong>Ausführungsmodus</strong></td>
-   <td><strong>Hinweise</strong></td>
+   <td><strong>Anmerkungen</strong></td>
   </tr>
   <tr>
    <td><code>TarIndexMergeTask</code></td>
@@ -149,7 +149,7 @@ Die Aufgabenliste unterscheidet sich je nach dem verwendeten Ausführungsmodus z
 >
 >Die Aufgabe `DataStoreGarbageCollectionTask` ruft einen Vorgang zur Datenspeicherbereinigung mit der Mark- und Sweep-Phase auf, falls sie verwendet wird. Bei Bereitstellungen mit einem freigegebenen Datenspeicher muss dieser entweder neu konfiguriert oder die Instanz ordnungsgemäß vorbereitet werden, um das Löschen von Elementen, auf die andere Instanzen verweisen, zu vermeiden. Hierzu muss die Mark-Phase möglicherweise auf allen Instanzen manuell ausgeführt werden, bevor diese Aufgabe vor einer Aktualisierung ausgelöst wird.
 
-### Standardkonfiguration der Konsistenzprüfungen vor einer Aktualisierung  {#default-configuration-of-the-pre-upgrade-health-checks}
+### Standardkonfiguration der Konsistenzprüfungen vor einer Aktualisierung {#default-configuration-of-the-pre-upgrade-health-checks}
 
 Die OSGi-Komponente `PreUpgradeTasksMBeanImpl` umfasst eine vorkonfigurierte Liste von Tags für Konsistenzprüfungen vor einer Aktualisierung, die ausgeführt werden sollen, wenn die Methode `runAllPreUpgradeHealthChecks` aufgerufen wird:
 
@@ -191,7 +191,7 @@ Nachfolgend finden Sie eine Liste aller verfügbaren Methoden, die von `PreUpgra
   </tr>
   <tr>
    <td><code>runAllPreUpgradeTasks()</code></td>
-   <td>AKTION</td>
+   <td>ACTION</td>
    <td>Führt alle in der Liste genannten Wartungsaufgaben vor der Aktualisierung aus.</td>
   </tr>
   <tr>
@@ -202,7 +202,7 @@ Nachfolgend finden Sie eine Liste aller verfügbaren Methoden, die von `PreUpgra
   <tr>
    <td><code>isRunAllPreUpgradeTaskRunning()</code></td>
    <td>ACTION_INFO</td>
-   <td>Überprüft, ob die <code>runAllPreUpgradeTasksmaintenance</code>-Aufgabe derzeit ausgeführt wird.</td>
+   <td>Prüft, ob die <code>runAllPreUpgradeTasksmaintenance</code> -Aufgabe wird derzeit ausgeführt.</td>
   </tr>
   <tr>
    <td><code>getAnyPreUpgradeTaskRunning()</code></td>
@@ -222,7 +222,7 @@ Nachfolgend finden Sie eine Liste aller verfügbaren Methoden, die von `PreUpgra
   <tr>
    <td><code>runAllPreUpgradeHealthChecks(shutDownOnSuccess)</code></td>
    <td>AKTION</td>
-   <td><p>Führt alle Konsistenzprüfungen vor der Aktualisierung aus und speichert ihren Status in einer Datei mit dem Namen <code>preUpgradeHCStatus.properties</code>, die sich im Sling-Startpfad befindet. Wenn der Parameter <code>shutDownOnSuccess</code> auf <code>true</code> gesetzt ist, wird die AEM-Instanz heruntergefahren, jedoch nur, wenn alle Konsistenzprüfungen vor der Aktualisierung den Status "OK"aufweisen.</p> <p>Die Eigenschaftendatei wird als Vorbedingung für zukünftige Aktualisierungen verwendet<br /> und der Aktualisierungsvorgang wird angehalten, wenn die Konsistenzprüfungen vor einer Aktualisierung<br /> fehlgeschlagen sind. Wenn Sie das Ergebnis der Konsistenzprüfungen <br />vor einer Aktualisierung ignorieren und die Aktualisierung trotzdem starten möchten, können Sie die Datei löschen.</p> </td>
+   <td><p>Führt alle Konsistenzprüfungen vor der Aktualisierung aus und speichert ihren Status in einer Datei mit dem Namen <code>preUpgradeHCStatus.properties</code> , der sich im Sling-Startpfad befindet. Wenn die Variable <code>shutDownOnSuccess</code> -Parameter auf <code>true</code>, wird die AEM-Instanz heruntergefahren, jedoch nur, wenn alle Konsistenzprüfungen vor der Aktualisierung den Status OK aufweisen.</p> <p>Die Eigenschaftendatei wird als Vorbedingung für zukünftige Aktualisierungen verwendet<br /> und der Aktualisierungsvorgang wird angehalten, wenn die Konsistenzprüfungen vor einer Aktualisierung<br /> fehlgeschlagen sind. Wenn Sie das Ergebnis der Konsistenzprüfungen <br />vor einer Aktualisierung ignorieren und die Aktualisierung trotzdem starten möchten, können Sie die Datei löschen.</p> </td>
   </tr>
   <tr>
    <td><code>detectUsageOfUnavailableAPI(aemVersion)</code></td>
@@ -239,12 +239,10 @@ Nachfolgend finden Sie eine Liste aller verfügbaren Methoden, die von `PreUpgra
 >* Die JMX-Konsole
 >* Eine beliebige externe Anwendung, die eine Verbindung mit JMX herstellt
 >* cURL
-
 >
 
 
-
-## Deaktivieren von benutzerdefinierten Anmeldemodulen  {#disable-custom-login-modules}
+## Deaktivieren von benutzerdefinierten Anmeldemodulen {#disable-custom-login-modules}
 
 >[!NOTE]
 >
@@ -289,15 +287,15 @@ Zum Deaktivieren der in der JAAS-Konfiguration von `repository.xml` definierten 
 
 Entfernen Sie alle Service Packs, Feature Packs oder Hotfixes, die im lokalen Dateisystem im Verzeichnis `crx-quickstart/install` bereitgestellt sind. Dadurch wird die unbeabsichtigte Installation alter Hotfixes und Service Packs auf der neuen AEM-Version nach der Aktualisierung verhindert.
 
-## Beenden aller Cold-Standby-Instanzen  {#stop-tarmk-coldstandby-instance}
+## Beenden aller Cold-Standby-Instanzen {#stop-tarmk-coldstandby-instance}
 
 Falls Sie TarMK Cold Standby verwenden, stoppen Sie alle Cold-Standby-Instanzen, falls erforderlich. Dies stellt sicher, dass das System problemlos in den Online-Modus wechseln kann, falls bei der Aktualisierung Probleme aufgetreten sind. Nach der erfolgreichen Aktualisierung müssen die Cold-Standby-Instanzen auf Basis der aktualisierten primären Instanzen neu erstellt werden.
 
-## Deaktivieren von benutzerdefinierten geplanten Aufträgen  {#disable-custom-scheduled-jobs}
+## Deaktivieren von benutzerdefinierten geplanten Aufträgen {#disable-custom-scheduled-jobs}
 
 Deaktivieren Sie in OSGi geplante Aufträge, die im Anwendungscode enthalten sind.
 
-## Durchführen der Offline-Revisionsbereinigung  {#execute-offline-revision-cleanup}
+## Durchführen der Offline-Revisionsbereinigung {#execute-offline-revision-cleanup}
 
 >[!NOTE]
 >
@@ -305,7 +303,7 @@ Deaktivieren Sie in OSGi geplante Aufträge, die im Anwendungscode enthalten sin
 
 Falls Sie TarMK verwenden, sollten Sie vor der Aktualisierung eine Offline-Revisionsbereinigung durchführen. Dadurch werden die Repository-Migration und die nachfolgenden Aktualisierungsaufgaben viel schneller ausgeführt. Dies wiederum unterstützt die erfolgreiche Online-Revisionsbereinigung nach der Aktualisierung. Weitere Informationen zum Durchführen einer Offline-Revisionsbereinigung finden Sie unter [Durchführen einer Offline-Revisionsbereinigung](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup).
 
-## Durchführen der Datenspeicherbereinigung  {#execute-datastore-garbage-collection}
+## Durchführen der Datenspeicherbereinigung {#execute-datastore-garbage-collection}
 
 >[!NOTE]
 >
@@ -313,7 +311,7 @@ Falls Sie TarMK verwenden, sollten Sie vor der Aktualisierung eine Offline-Revis
 
 Nach der Revisionsbereinigung auf CRX3-Instanzen sollten Sie die Datenspeicherbereinigung ausführen, um nicht referenzierte BLOB-Objekte aus dem Datenspeicher zu löschen. Eine Anleitung finden Sie in der Dokumentation zur [Datenspeicherbereinigung](/help/sites-administering/data-store-garbage-collection.md).
 
-## Aktualisieren Sie bei Bedarf {#upgrade-the-database-schema-if-needed} das Datenbankschema.
+## Aktualisieren Sie bei Bedarf das Datenbankschema. {#upgrade-the-database-schema-if-needed}
 
 Normalerweise übernimmt der zugrunde liegende Apache Oak-Stapel, den AEM für die Persistenz verwendet, bei Bedarf die Aktualisierung des Datenbankschemas.
 
@@ -324,11 +322,11 @@ Um dies zu verhindern, müssen Sie das Schema wie folgt aktualisieren:
 1. Beenden Sie die AEM Instanz, die aktualisiert werden muss.
 1. Aktualisieren Sie das Datenbankschema. Lesen Sie die Dokumentation für Ihren Datenbanktyp , um zu erfahren, welche Tools Sie dazu benötigen.
 
-   Weitere Informationen dazu, wie Oak mit Schemaaktualisierungen umgeht, finden Sie auf dieser Seite auf der Apache-Website](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade).[
+   Weitere Informationen dazu, wie Oak mit Schemakodierungen umgeht, finden Sie unter [diese Seite auf der Apache-Website](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade).
 
 1. Fahren Sie mit der AEM fort.
 
-## Löschen Sie Benutzer, die die Aktualisierung behindern {#delete-users-that-might-hinder-the-upgrade}
+## Löschen von Benutzern, die die Aktualisierung behindern könnten {#delete-users-that-might-hinder-the-upgrade}
 
 >[!NOTE]
 >
@@ -336,9 +334,7 @@ Um dies zu verhindern, müssen Sie das Schema wie folgt aktualisieren:
 >
 >* Sie aktualisieren von AEM Versionen, die älter als AEM 6.3 sind
 >* Während des Upgrades werden alle unten aufgeführten Fehler angezeigt.
-
 >
-
 
 
 Es gibt Ausnahmefälle, in denen Dienstbenutzer in älteren AEM-Versionen landen, die nicht ordnungsgemäß als normale Benutzer getaggt sind.

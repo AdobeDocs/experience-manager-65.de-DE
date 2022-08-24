@@ -1,8 +1,8 @@
 ---
 title: Erstellen und Zuweisen von Aktivierungsressourcen
-seo-title: Erstellen und Zuweisen von Aktivierungsressourcen
+seo-title: Create and Assign Enablement Resources
 description: Aktivierungsressourcen hinzufügen
-seo-description: Aktivierungsressourcen hinzufügen
+seo-description: Add enablement resources
 uuid: da940242-0c9b-4ad8-8880-61fd41461c3b
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,7 +12,7 @@ discoiquuid: 8fe97181-600e-42ac-af25-d5d4db248740
 exl-id: 78908a9c-a260-44ff-ad1e-baa6d78ae399
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '711'
 ht-degree: 7%
 
 ---
@@ -25,15 +25,15 @@ So fügen Sie der neuen Community-Site eine Aktivierungsressource hinzu:
 
 * Melden Sie sich als Systemadministrator auf der Autoreninstanz an:
    * Beispiel: [http://localhost:4502/](http://localhost:4503/)
-* Wählen Sie in der globalen Navigation **[!UICONTROL Communities]** > **[!UICONTROL Ressourcen]** aus.
+* Wählen Sie in der globalen Navigation die Option **[!UICONTROL Communities]** > **[!UICONTROL Ressourcen]**
 
    ![resources](assets/resources.png)
 
    ![enable-resource](assets/enablement-resource.png)
 * Wählen Sie die Community-Site aus, zu der Aktivierungsressourcen hinzugefügt werden:
-   * Wählen Sie **[!UICONTROL Aktivierungs-Tutorial]** aus.
-* Wählen Sie im Menü **[!UICONTROL Erstellen]** aus.
-* Wählen Sie **[!UICONTROL Resource]** aus.
+   * Auswählen **[!UICONTROL Tutorial zur Aktivierung]**.
+* Wählen Sie im Menü die Option **[!UICONTROL Erstellen]**.
+* Auswählen **[!UICONTROL Ressource]**.
 
 ![create-resource](assets/create-enablement-resource.png)
 
@@ -55,7 +55,7 @@ Füllen Sie die grundlegenden Informationen für die Ressource aus:
 
 * **[!UICONTROL Im Katalog anzeigen]**
 
-   Setzen Sie es auf **On**.
+   Legen Sie **on**.
 
 * **[!UICONTROL Beschreibung]**
 
@@ -73,7 +73,7 @@ Füllen Sie die grundlegenden Informationen für die Ressource aus:
 
 Es wird zwar so angezeigt, als ob mehrere Ressourcen ausgewählt sein könnten, aber nur eine ist zulässig.
 
-Wählen Sie `'+' icon` in der oberen rechten Ecke aus, um mit der Auswahl der Ressource zu beginnen, indem Sie die Quelle identifizieren.
+Wählen Sie die `'+' icon`, um mit der Auswahl der Ressource zu beginnen, indem Sie die Quelle identifizieren.
 
 ![add-content](assets/add-content.png)
 
@@ -97,17 +97,17 @@ Eine Ressource hochladen. Wenn eine Videoressource vorhanden ist, laden Sie entw
 
 * **[!UICONTROL Ressourcen-Autor]**
 
-   *(Optional)* Lassen Sie das Feld leer.
+   *(Optional)* Leer lassen.
 
 * **[!UICONTROL Resource Contact&amp;ast;]**
 
-   *(Erforderlich)* Wählen Sie über das Pulldown-Menü ein Mitglied aus  `Quinn Harper`.
+   *(Erforderlich)* Wählen Sie über das Pulldown-Menü ein Mitglied aus `Quinn Harper`.
 
 * **[!UICONTROL Ressourcen-Experte]**
 
-   *(Optional)* Lassen Sie das Feld leer.
+   *(Optional)* Leer lassen.
 
-   **Hinweis**: Wenn Benutzer oder Gruppen nicht sichtbar sind, vergewissern Sie sich, dass sie zur  `Community Enable Members` Gruppe hinzugefügt und in der Veröffentlichungsinstanz  ** gespeichert wurden.
+   **Hinweis**: Wenn Benutzer oder Gruppen nicht sichtbar sind, überprüfen Sie, ob sie zum `Community Enable Members` und *Gespeichert* in der Veröffentlichungsinstanz.
 
    ![enable-settings](assets/enablement-settings.png)
 
@@ -129,23 +129,23 @@ Die erfolgreiche Erstellung der Ressource kehrt zur Ressourcenkonsole zurück, w
 
 Um eine neue Version der Aktivierungsressource hochzuladen, wird empfohlen, eine neue Ressource zu erstellen, dann die Registrierung für Mitglieder aus der alten Version aufzuheben und sie in der neuen Version zu registrieren.
 
-### Ressource {#publish-the-resource} veröffentlichen
+### Ressource veröffentlichen {#publish-the-resource}
 
 Damit die Teilnehmer die zugewiesenen Ressourcen sehen können, müssen sie veröffentlicht werden:
 
-* Wählen Sie das Welt-Symbol `Publish` aus.
+* Welt auswählen `Publish` icon
 
 Die Aktivierung wird mit einer Erfolgsmeldung bestätigt:
 
 ![publish-resource](assets/publish-resource.png)
 
-## Eine zweite Aktivierungsressource {#add-a-second-enablement-resource} hinzufügen
+## Eine zweite Aktivierungsressource hinzufügen {#add-a-second-enablement-resource}
 
 Wiederholen Sie die obigen Schritte, um eine zweite zugehörige Aktivierungsressource zu erstellen und zu veröffentlichen, aus der ein Lernpfad erstellt wird.
 
 ![add-resource](assets/add-resource.png)
 
-**** Veröffentlichen Sie die zweite Ressource.
+**Veröffentlichen** die zweite Ressource.
 
 Kehren Sie zur Liste des Tutorials zur Aktivierung der Ressourcen zurück.
 
@@ -157,12 +157,12 @@ Kehren Sie zur Liste des Tutorials zur Aktivierung der Ressourcen zurück.
 
 Ein Lernpfad ist eine logische Gruppierung der Aktivierungsressourcen, die einen Kurs bilden.
 
-* Wählen Sie in der Ressourcenkonsole `+ Create` aus.
-* Wählen Sie **[!UICONTROL Lernpfad]**
+* Wählen Sie in der Ressourcenkonsole die Option `+ Create`
+* Auswählen **[!UICONTROL Lernpfad]**
 
 ![add-learning-path](assets/add-learning-path.png)
 
-Fügen Sie die **[!UICONTROL Basic Info]** hinzu:
+Fügen Sie die **[!UICONTROL Basisinformationen]**:
 
 * **[!UICONTROL Lernpfad-Name]**
 
@@ -190,9 +190,9 @@ Fügen Sie die **[!UICONTROL Basic Info]** hinzu:
 
 Im Bereich Ressourcen hinzufügen :
 
-* Wählen Sie `+ Add Resources` aus, um die 2 Ressourcen für Ski-Läsionen auszuwählen, die zum Lernpfad hinzugefügt werden sollen.
+* Auswählen `+ Add Resources` , um die 2 Skilesenressourcen auszuwählen, die dem Lernpfad hinzugefügt werden sollen.
 
-   Hinweis: Es können nur **veröffentlichte** Ressourcen ausgewählt werden.
+   Hinweis: Nur **veröffentlicht** Ressourcen können ausgewählt werden.
 
 >[!NOTE]
 >
@@ -210,11 +210,11 @@ Im Bereich Ressourcen hinzufügen :
 
 * **[!UICONTROL Bevollmächtigte hinzufügen]**
 
-   Wählen Sie im Pulldown-Menü die Gruppe `Community Ski Class` aus, der die Mitglieder `Riley Taylor` und `Sidney Croft.` angehören sollen
+   Wählen Sie über das Pulldown-Menü die `Community Ski Class` -Gruppe, der auch Mitglieder angehören sollten `Riley Taylor` und `Sidney Croft.`
 
 * **[!UICONTROL Lernpfad Kontakt&amp;ast;]**
 
-   *(Erforderlich)* Wählen Sie über das Pulldown-Menü ein Mitglied aus  `Quinn Harper`.
+   *(Erforderlich)* Wählen Sie über das Pulldown-Menü ein Mitglied aus `Quinn Harper`.
 
 * Wählen Sie **[!UICONTROL Erstellen]**.
 
@@ -222,4 +222,4 @@ Im Bereich Ressourcen hinzufügen :
 
 Bei erfolgreicher Erstellung des Lernpfads wird die Konsole Ressourcen mit dem neu erstellten Lernpfad ausgewählt. In dieser Konsole können Sie Inhalte veröffentlichen, Lernende hinzufügen und andere Einstellungen ändern.
 
-**** Veröffentlichen Sie den Lernpfad.
+**Veröffentlichen** Lernpfad.

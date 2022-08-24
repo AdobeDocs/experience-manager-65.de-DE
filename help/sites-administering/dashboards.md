@@ -2,7 +2,7 @@
 title: Dashboards
 seo-title: Dashboards
 description: Erfahren Sie, wie Sie neue AEM-Dashboards erstellen, konfigurieren und entwickeln können.
-seo-description: Erfahren Sie, wie Sie neue AEM-Dashboards erstellen, konfigurieren und entwickeln können.
+seo-description: Learn how to create, configure and develop new AEM dashboards.
 uuid: 3eadbba2-0ce1-41be-a9f8-e6cafa109893
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 exl-id: 5b934e3a-f554-46ec-a913-8d570abb1503
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '835'
 ht-degree: 71%
 
 ---
@@ -41,7 +41,7 @@ Um ein neues Dashboard zu erstellen, gehen Sie wie folgt vor:
 1. Geben Sie den **Titel** (z. B. „Mein Dashboard“) und den **Namen** ein.
 1. Klicken Sie auf **Erstellen**.
 
-### Klonen eines Dashboards  {#cloning-a-dashboard}
+### Klonen eines Dashboards {#cloning-a-dashboard}
 
 Möglicherweise möchten Sie mehrere Dashboards, um die Informationen zu Ihrem Inhalt aus verschiedenen Perspektiven zu betrachten. Zur Unterstützung der Erstellung eines neuen Dashboards stellt AEM eine Klonfunktion bereit, die Sie zum Duplizieren eines vorhandenen Dashboards verwenden können. Um ein Dashboard zu klonen, gehen Sie wie folgt vor:
 
@@ -54,24 +54,24 @@ Möglicherweise möchten Sie mehrere Dashboards, um die Informationen zu Ihrem I
 
 1. Geben Sie den **Namen** des neuen Dashboards ein.
 
-### Entfernen von Dashboards  {#removing-a-dashboard}
+### Entfernen von Dashboards {#removing-a-dashboard}
 
 1. Klicken Sie im Bereich **Tools** auf **Konfigurationskonsole**.
 
 1. Klicken Sie im Baum auf **Dashboard**.
 1. Klicken Sie auf das Dashboard, das Sie löschen möchten.
 
-1. Klicken Sie auf **Entfernen**
+1. Klicken Sie auf **Entfernen**.
 
-1. Klicken Sie auf **Ja**, um den Vorgang zu bestätigen.
+1. Klicken Sie zur Bestätigung auf **Ja**.
 
-## Dashboard-Komponenten  {#dashboard-components}
+## Dashboard-Komponenten {#dashboard-components}
 
-### Überblick {#overview}
+### Übersicht {#overview}
 
 Dashboard-Komponenten sind nichts anderes als reguläre [AEM-Komponenten](/help/sites-developing/developing-components-samples.md). Dieser Abschnitt beschreibt die Berichtskomponenten, die im Lieferumfang von AEM enthalten sind.
 
-### Berichtskomponenten für die Webanalyse  {#web-analytics-reporting-components}
+### Berichterstellungskomponenten zur Webanalyse {#web-analytics-reporting-components}
 
 AEM enthält eine Reihe von Komponenten, die mehrere Metriken Ihrer [SiteCatalyst](/help/sites-administering/adobeanalytics.md)-Daten rendern. Diese Komponenten sind im Sidekick im Bereich **Dashboard** aufgeführt.
 
@@ -82,19 +82,19 @@ Jede Berichtskomponente enthält mindestens drei Registerkarten:
 * **Bericht:** Enthält die spezifische Konfiguration des jeweiligen Berichts.
 * **Stil**: enthält Stilkonfigurationen wie Diagrammgröße und Rand.
 
-Die Berichterstellungskomponenten werden mit einer Standardkonfiguration initialisiert, die Sie bei der schnellen Einrichtung Ihres Dashboards unterstützt.
+Die Berichtskomponenten werden mit einer Standardkonfiguration initialisiert, mit der Sie Ihr Dashboard schnell einrichten können.
 
-#### Grundkonfiguration {#basic-configuration}
+#### Konfiguration „Allgemein“ {#basic-configuration}
 
 Auf der Registerkarte **Allgemein** wird der Zugriff auf die folgenden Konfigurationseinträge bereitgestellt:
 
-**** TitelDer im Dashboard angezeigte Titel.
+**Titel** Der im Dashboard angezeigte Titel.
 
-**Anforderungstyp** Die Art und Weise, wie Daten angefordert werden.
+**Anfragetyp** Die Art und Weise, wie Daten angefordert werden.
 
 **SiteCatalyst-Konfiguration (optional)** Die Konfiguration, mit der Sie eine Verbindung zu SiteCatalyst herstellen möchten. falls nicht näher erläutert, wird von einer Konfiguration auf der Dashboardseite (über die Seiteneigenschaften) ausgegangen
 
-**Report Suite-ID (optional)** Die SiteCatalyst Report Suite, die Sie zum Generieren des Diagramms verwenden möchten.
+**Report Suite-ID (optional)** Die SiteCatalyst-Report Suite, die Sie zum Generieren des Diagramms verwenden möchten.
 
 #### Berichtskonfiguration {#report-configuration}
 
@@ -104,39 +104,39 @@ Zur Anzeige der Web-Statistiken müssen Sie den Datenbereich der Daten definiere
 >
 >Wenn Sie einen großen Datumsbereich festlegen, reagiert das Dashboard unter Umständen nicht mehr so schnell.
 
-**Datum** FromAbsolute oder relatives Datum, ab dem die Daten abgerufen werden.
+**Datum ab** Das absolute oder relative Datum, ab dem die Daten abgerufen werden.
 
-**Datum** ToAbsolute oder relatives Datum, an dem die Daten abgerufen werden.
+**Datum bis** Absolutes oder relatives Datum, bis zu dem die Daten abgerufen werden.
 
 Jede Komponente definiert außerdem bestimmte Einstellungen.
 
-#### Überstunden-Bericht  {#overtime-report}
+#### Überstunden-Bericht {#overtime-report}
 
 ![chlimage_1-26](assets/chlimage_1-26a.png)
 
-**Datums-** GranularitätZeiteinheit der X-Achse (z. B. Tag, Stunde).
+**Datumsgranularität** Zeiteinheit der X-Achse (z. B. Tag, Stunde).
 
-**** MetrikenDie Liste der Ereignisse, die angezeigt werden sollen.
+**Metriken** Die Liste der Ereignisse, die angezeigt werden sollen.
 
-**** ElementeDie Liste der Elemente, die die Metrikdaten im Diagramm aufschlüsseln.
+**Elemente** Die Liste der Elemente, die die Metrikdaten im Diagramm aufschlüsseln.
 
 #### Bewerteter Listenbericht {#ranked-list-report}
 
 ![chlimage_1-27](assets/chlimage_1-27a.png)
 
-**** ElementeDas Element, das die Metrikdaten im Diagramm aufschlüsselt.
+**Elemente** Das Element, das die Metrikdaten im Diagramm aufschlüsselt.
 
-**** MetrikenDas Ereignis, das angezeigt werden soll.
+**Metriken** Das Ereignis, das angezeigt werden soll.
 
-**Nein. der obersten Elemente** Anzahl der vom Bericht angezeigten Elemente.
+**Nein. der obersten Elemente** Anzahl der im Bericht angezeigten Elemente.
 
 #### Rangbericht {#ranked-report}
 
 ![chlimage_1-28](assets/chlimage_1-28a.png)
 
-**** MetrikenDas Ereignis, das angezeigt werden soll.
+**Metriken** Das Ereignis, das angezeigt werden soll.
 
-**** ElementeDas Element, das die Metrikdaten im Diagramm aufschlüsselt.
+**Elemente** Das Element, das die Metrikdaten im Diagramm aufschlüsselt.
 
 #### Bericht zu oberem Site-Bereich {#top-site-section-report}
 
@@ -150,37 +150,37 @@ Diese Komponente zeigt ein Diagramm an, das den laut folgender Konfiguration hä
 
 ![chlimage_1-30](assets/chlimage_1-30a.png)
 
-**Datums-** GranularitätZeiteinheit der X-Achse (z. B. Tag, Stunde).
+**Datumsgranularität** Zeiteinheit der X-Achse (z. B. Tag, Stunde).
 
-**** MetrikenDas Ereignis, das angezeigt werden soll.
+**Metriken** Das Ereignis, das angezeigt werden soll.
 
-**** ElementeDas Element, das die Metrikdaten im Diagramm aufschlüsselt.
+**Elemente** Das Element, das die Metrikdaten im Diagramm aufschlüsselt.
 
 ## Erweitern des Dashboards {#extending-dashboard}
 
-### Überblick {#overview-1}
+### Übersicht {#overview-1}
 
 Dashboards sind normale Seiten (`cq:Page`), deshalb können zum Zusammenstellen von Dashboards beliebige Komponenten verwendet werden.
 
-Es gibt eine standardmäßige Komponentengruppe `Dashboard`, die Analyseberichtskomponenten enthält, die standardmäßig in der Vorlage aktiviert sind.
+Es gibt eine standardmäßige Komponentengruppe `Dashboard` enthalten Analytics-Reporting-Komponenten, die standardmäßig in der Vorlage aktiviert sind.
 
 ### Erstellen einer Dashboard-Vorlage {#creating-a-dashboard-template}
 
 Eine Vorlage definiert den Standardinhalt eines neuen Dashboards. Sie können mehrere Vorlagen für die Erstellung verschiedener Arten von Dashboards verwenden.
 
-Dashboard-Vorlagen werden wie andere Seitenvorlagen erstellt, allerdings unter `/libs/cq/dashboards/templates/` gespeichert. Weitere Informationen finden Sie im Abschnitt [Erstellen einer contentpage-Vorlage](/help/sites-developing/website.md#creating-the-contentpage-template).
+Dashboard-Vorlagen werden wie andere Seitenvorlagen erstellt, allerdings unter `/libs/cq/dashboards/templates/`. Weitere Informationen finden Sie im Abschnitt [Erstellen einer contentpage-Vorlage](/help/sites-developing/website.md#creating-the-contentpage-template).
 
 >[!NOTE]
 >
 >Dashboard-Vorlagen werden von mehreren Benutzern verwendet.
 
-### Entwickeln einer Dashboard-Komponente  {#developing-a-dashboard-component}
+### Entwickeln einer Dashboard-Komponente {#developing-a-dashboard-component}
 
 Die Entwicklung einer Dashboard-Komponente besteht aus der Erstellung einer regulären AEM-Komponente. In diesem Abschnitt ist ein Beispiel für eine Komponente beschrieben, die die Top 10 der Mitwirkenden anzeigt.
 
 ![chlimage_1-31](assets/chlimage_1-31a.png)
 
-Die wichtigsten Autorenkomponenten werden im Repository unter `/apps/geometrixx-outdoors/components/reporting` gespeichert und bestehen aus :
+Die wichtigsten Autorenkomponenten werden im Repository unter `/apps/geometrixx-outdoors/components/reporting` und setzt sich aus Folgendem zusammen:
 
 1. einer `jsp`-Datei, die jcr-Daten liest und den `html`-Platzhalter definiert
 
@@ -237,7 +237,7 @@ $.ajax({
 });
 ```
 
-Das `JSP` umfasst sowohl `global.jsp` als auch `clientlib`.
+Die `JSP` enthält beide `global.jsp` und `clientlib`.
 
 #### top_authors.jsp {#top-authors-jsp}
 

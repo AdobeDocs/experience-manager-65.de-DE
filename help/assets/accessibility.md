@@ -85,7 +85,7 @@ Die folgenden Aktionen in [!DNL Assets] funktionieren mit den aufgelisteten Tast
 | Spaltenansicht in der [!DNL Assets]-Benutzeroberfläche | Nach-oben- und Nach-unten-Taste | Navigieren Sie zu Dateien und Ordnern in derselben Hierarchie. |
 | Spaltenansicht in der [!DNL Assets]-Benutzeroberfläche | Pfeiltasten nach links und rechts | Navigieren Sie zu Dateien und Ordnern über oder unter dem aktuellen Ordner. |
 | Durchsuchen von Ordnern in [!DNL Assets] | `/` | Rufen Sie die Suche auf, indem Sie das Omnisearch-Feld öffnen. |
-| [!DNL Assets]-Konsole | &amp;grave; | Seitenleisten umschalten |
+| [!DNL Assets]-Konsole | &grave; | Seitenleisten umschalten |
 | [!DNL Assets]-Konsole | `Alt + 1` | Öffnen Sie die Inhaltsstruktur. |
 | [!DNL Assets]-Konsole | `Alt + 2` | Öffnen Sie die linke Leiste [!UICONTROL Navigation]. |
 | [!DNL Assets]-Konsole | `Alt + 3` | Zeigen Sie die [!UICONTROL Zeitleiste] eines ausgewählten Assets an. |

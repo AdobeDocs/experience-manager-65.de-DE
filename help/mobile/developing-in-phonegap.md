@@ -1,8 +1,8 @@
 ---
 title: PhoneGap
-seo-title: Inhaltserstellung für Adobe PhoneGap Enterprise
+seo-title: Authoring Content for Adobe PhoneGap Enterprise
 description: Diese Seite dient als Ausgangspunkt für die Entwicklung von Apps mit PhoneGap Enterprise mit AEM. AEM kann mit PhoneGap integriert werden, damit Sie mithilfe der AEM-Seiten problemlos Apps erstellen können. PhoneGap ermöglicht dem Benutzer das Erstellen von Dienstprogramm-Apps, mit denen der Benutzer mit dem Inhalt arbeiten kann.
-seo-description: Diese Seite dient als Ausgangspunkt für die Entwicklung von Apps mit PhoneGap Enterprise mit AEM. AEM kann mit PhoneGap integriert werden, damit Sie mithilfe der AEM-Seiten problemlos Apps erstellen können. PhoneGap ermöglicht dem Benutzer das Erstellen von Dienstprogramm-Apps, mit denen der Benutzer mit dem Inhalt arbeiten kann.
+seo-description: This page serves as starting point for developing apps using PhoneGap Enterprise with AEM. AEM integrates with PhoneGap so that you can easily create apps using AEM pages. PhoneGap allows the user to create utility apps that lets user to work with the content.
 uuid: c6ac02fa-d41c-4b57-95d8-171a96540dd6
 contentOwner: User
 content-type: reference
@@ -11,7 +11,7 @@ discoiquuid: bc61e495-b53b-49c5-99e5-c2e35873e6bd
 exl-id: 9a97e11b-a683-490a-ab7b-158de32984ef
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '251'
 ht-degree: 28%
 
 ---
@@ -26,7 +26,7 @@ AEM kann mit PhoneGap integriert werden, damit Sie mithilfe der AEM-Seiten probl
 
 >[!NOTE]
 >
->Bevor Sie mit AEM Mobile mit Adobe PhoneGap beginnen, stellen Sie sicher, dass Sie Ihre Umgebung eingerichtet haben und beginnen Sie mit dem [AEM Mobile Application Dashboard](/help/mobile/phonegap-authoring-apps.md).
+>Bevor Sie mit AEM Mobile mit Adobe PhoneGap beginnen, müssen Sie sicherstellen, dass Sie Ihre Umgebung einrichten und mit der [AEM Mobile Application Dashboard](/help/mobile/phonegap-authoring-apps.md).
 
 Die folgenden Ressourcen helfen Ihnen bei den ersten Schritten mit AEM Mobile mit Adobe PhoneGap:
 
@@ -37,8 +37,8 @@ Die folgenden Ressourcen helfen Ihnen bei den ersten Schritten mit AEM Mobile mi
 * [AEM Mobile Content Services: Eine Übersicht](/help/mobile/develop-content-as-a-service.md)
 
    * Informationen zum Aktivieren von Content Services und Datenmodellen finden Sie unter [Verwalten von Content Services](/help/mobile/developing-content-services.md)
-   * Weitere Informationen zum Erstellen von Modellen finden Sie unter [Entwicklungsmodelle](/help/mobile/administer-mobile-apps.md)
-   * Weitere Informationen zu Rendering und Bereitstellung finden Sie unter [Rendering und Bereitstellung von Content Services](/help/mobile/rendering-and-delivery.md)
+   * Weitere Informationen zum Erstellen von Modellen finden Sie unter [Entwicklung von Modellen](/help/mobile/administer-mobile-apps.md)
+   * Informationen zu Rendering und Versand finden Sie unter [Wiedergabe und Bereitstellung von Content Services](/help/mobile/rendering-and-delivery.md)
 
 >[!NOTE]
 >

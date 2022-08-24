@@ -109,7 +109,7 @@ Einfache Inhaltsfragmente (basierend auf Vorlagen) werden einem Composite aus Ha
    * Der Hauptinhalt dieser zusätzlichen Elemente wird dem ursprünglichen Ausgabeformat des jeweiligen Unter-Assets zugeordnet.
    * Andere Varianten (falls zutreffend) zusätzlicher Elemente werden anderen Ausgabeformaten der jeweiligen Unter-Assets zugeordnet.
 
-#### Asset-Speicherort     {#asset-location}
+#### Asset-Speicherort {#asset-location}
 
 Wie bei Standard-Assets wird das Inhaltsfragment gespeichert in:
 
@@ -198,7 +198,7 @@ Inhaltsfragmente können mit folgenden Frameworks integriert werden:
 
 * **Übersetzungen**
 
-   Inhaltsfragmente sind vollständig in die [AEM Übersetzungs-Workflow](/help/sites-administering/tc-manage.md). Auf Architekturebene bedeutet dies:
+   Inhaltsfragmente sind vollständig mit dem [AEM-Übersetzungs-Workflow](/help/sites-administering/tc-manage.md) integriert. Auf Architekturebene bedeutet dies:
 
    * Die einzelnen Übersetzungen eines Inhaltsfragments sind separate Fragmente, z. B.:
 

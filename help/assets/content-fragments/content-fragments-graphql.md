@@ -3,7 +3,8 @@ title: Headless-Bereitstellung von Inhalten mithilfe von Inhaltsfragmenten mit G
 description: Erfahren Sie, wie Sie AEM-Inhaltsfragmente mit GraphQL für die Headless-Bereitstellung von Inhalten verwenden.
 feature: Content Fragments
 role: User
-source-git-commit: 819df6d6123575b378676dda200064725de47b84
+exl-id: 2debd678-2d73-41f2-b33c-c29d661f6a6b
+source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 91%
@@ -42,7 +43,7 @@ In Bezug auf das Erstellen von Inhaltsfragmenten in AEM bedeutet dies Folgendes:
 
 * Der Inhalt Ihrer Inhaltsfragmente wird in einer vorgegebenen Art und Weise strukturiert – entsprechend den Inhaltsfragmentmodellen. Dies vereinfacht den Zugriff für Ihre Programme, die Ihre Inhalte weiterverarbeiten werden.
 
-## Ein Überblick über GraphQL {#graphql-overview}
+## Ein Übersicht über GraphQL {#graphql-overview}
 
 GraphQL ist:
 

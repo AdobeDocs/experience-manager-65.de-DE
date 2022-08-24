@@ -10,9 +10,9 @@ discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1224'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -203,7 +203,7 @@ AEM Forms kann mit einer beliebigen Kombination von unterstützten Betriebssyste
  </tbody>
 </table>
 
-* Kontaktieren Sie den Adobe-Support für Informationen zur Migration auf eine andere Plattform.
+&#42; Support kontaktieren für Informationen zur Migration auf eine andere Adobe
 
 #### Neue HTML5-basierte Benutzeroberflächen {#new-html-based-uis}
 

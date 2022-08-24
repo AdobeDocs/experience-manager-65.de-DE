@@ -1,24 +1,24 @@
 ---
-title: Integrieren von [!DNL Assets] in Aktivitäts-Stream
-description: Beschreibt die Aufzeichnungsfunktionen von [!DNL Experience Manager] und wie sie zum Aufzeichnen bestimmter Ereignisse konfiguriert werden.
+title: Integrieren [!DNL Assets] mit Aktivitäts-Stream
+description: Beschreibt die Aufzeichnungsfunktionen von [!DNL Experience Manager] und wie Sie es so konfigurieren, dass bestimmte Ereignisse aufgezeichnet werden.
 contentOwner: AG
 role: Developer
-feature: Asset-Verwaltung
+feature: Asset Management
 exl-id: 2a08a7c1-8be9-42d1-9983-f9c8b12ea4e8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '267'
 ht-degree: 53%
 
 ---
 
-# Integrieren von [!DNL Assets] in Aktivitäts-Stream {#integrating-assets-with-activity-stream}
+# Integrieren [!DNL Assets] mit Aktivitäts-Stream {#integrating-assets-with-activity-stream}
 
-[!DNL Adobe Experience Manager Assets] -Benutzer führen viele Aktionen durch, z. B. das Erstellen, Hochladen und Löschen von Assets. Diese Aktionen können aufgezeichnet werden, sodass Sie einen Benutzeraktivitätenverlauf erstellen können. In diesem Abschnitt werden die Aufzeichnungsfunktionen von [!DNL Experience Manager] und die Konfiguration von [!DNL Experience Manager] zum Aufzeichnen bestimmter Ereignisse beschrieben.
+[!DNL Adobe Experience Manager Assets] -Benutzer führen viele Aktionen durch, z. B. das Erstellen, Hochladen und Löschen von Assets. Diese Aktionen können aufgezeichnet werden, sodass Sie einen Benutzeraktivitätenverlauf erstellen können. In diesem Abschnitt werden die Aufzeichnungsfunktionen von [!DNL Experience Manager] und wie Sie [!DNL Experience Manager] , um bestimmte Ereignisse aufzuzeichnen.
 
 ## Leistungsaspekte und Standardverhalten {#performance-considerations-and-default-behavior}
 
-Diese Integration kann CPU- und Speicherplatz-intensiv sein, beispielsweise beim Massenimport. Aus diesen Gründen ist die Integration von [!DNL Assets] in den Aktivitäts-Stream standardmäßig deaktiviert.
+Diese Integration kann CPU- und Speicherplatz-intensiv sein, beispielsweise beim Massenimport. Aus diesen Gründen [!DNL Assets] Die Integration mit dem Aktivitäts-Stream ist standardmäßig deaktiviert.
 
 ## Unterstützte Aktionsereignisse {#supported-action-events}
 
@@ -40,11 +40,11 @@ Die folgenden Ereignisse können zur Aufzeichnung konfiguriert werden:
 * Unter-Asset aktualisiert (SUBASSET_UPDATED)
 * Unter-Asset entfernt (SUBASSET_REMOVED)
 
-## [!DNL Assets]-Ereignisse konfigurieren, die {#configuring-aem-assets-events-recording} aufzeichnen
+## Konfigurieren [!DNL Assets] Ereignisaufzeichnung {#configuring-aem-assets-events-recording}
 
-Die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) bietet Zugriff auf die Optimierung der Asset-Ereignisaufzeichnung. Gehen Sie wie folgt vor, um die Ereignisaufzeichnung &quot;Assets&quot;zu konfigurieren:
+Die [Webkonsole](/help/sites-deploying/configuring-osgi.md) bietet Zugriff auf die Optimierung der Asset-Ereignisaufzeichnung. Gehen Sie wie folgt vor, um die Ereignisaufzeichnung &quot;Assets&quot;zu konfigurieren:
 
-1. Navigieren Sie zur **[!UICONTROL Web-Konsole]**
+1. Navigieren Sie zum **[!UICONTROL Web-Konsole]**
 
 1. Klicken Sie auf **[!UICONTROL Konfiguration]**.
 
@@ -56,6 +56,6 @@ Die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) bietet Zugriff auf 
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-## Gelesene Ereignisse {#reading-recorded-events}
+## Gelesene Ereignisse lesen {#reading-recorded-events}
 
-Die aufgezeichneten Ereignisse werden als Aktivitäten gespeichert. Sie können sie programmatisch mit der [ActivityManager-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html) lesen.
+Die aufgezeichneten Ereignisse werden als Aktivitäten gespeichert. Sie können sie programmgesteuert mit der [ActivityManager-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).

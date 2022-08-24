@@ -3,7 +3,8 @@ title: Zugehörige Inhalte
 description: Erfahren Sie, wie die AEM-Funktion für zugehörige Inhalte eine Verbindung herstellt, sodass Assets optional mit dem Fragment verwendet werden können, wenn es zu einer Inhaltsseite hinzugefügt wird, was zusätzliche Flexibilität für die Headless-Bereitstellung von Inhalten bietet.
 feature: Content Fragments
 role: User
-source-git-commit: 94145c6428f61e31f6784a3d6ea67aa8d81cedd6
+exl-id: 8b93fd6e-47d1-46fd-901b-621caa25be7b
+source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 100%

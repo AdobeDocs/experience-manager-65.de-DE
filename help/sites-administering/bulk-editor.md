@@ -1,8 +1,8 @@
 ---
 title: Der Bulk Editor
-seo-title: Der Bulk Editor
+seo-title: The Bulk Editor
 description: Erfahren Sie, wie Sie den Bulk Editor verwenden.
-seo-description: Erfahren Sie, wie Sie den Bulk Editor verwenden.
+seo-description: Learn how to use the Bulk Editor.
 uuid: 5f5e4190-d9b2-40a6-8cf4-4b7aebe35ad3
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 80%
+source-wordcount: '1143'
+ht-degree: 79%
 
 ---
 
@@ -73,7 +73,7 @@ So bearbeiten Sie mit dem Bulk Editor mehrere Elemente gleichzeitig:
  <tbody>
   <tr>
    <td>Feld</td>
-   <td>Property</td>
+   <td>Eigenschaft</td>
   </tr>
   <tr>
    <td>Stammverzeichnis</td>
@@ -81,11 +81,11 @@ So bearbeiten Sie mit dem Bulk Editor mehrere Elemente gleichzeitig:
   </tr>
   <tr>
    <td>Abfrage-Parameter</td>
-   <td>Geben Sie mithilfe von GQL-Parametern die Suchzeichenfolge ein, nach der der Bulk Editor im Repository suchen soll. <code>type:Page</code> sucht beispielsweise nach allen Seiten im Stammverzeichnis, <code>text:professional</code> sucht nach allen Seiten, die das Wort "professionell"enthalten, und <code>"jcr:title":English</code> sucht nach allen Seiten, die "Englisch"als Titel haben. Sie können nur nach Zeichenfolgen suchen.</td>
+   <td>Geben Sie mithilfe von GQL-Parametern die Suchzeichenfolge ein, nach der der Bulk Editor im Repository suchen soll. Beispiel: <code>type:Page</code> sucht nach allen Seiten im Stammpfad, <code>text:professional</code> sucht nach allen Seiten, die das Wort "professionell"enthalten, und <code>"jcr:title":English</code> sucht nach allen Seiten, die "Englisch"als Titel haben. Sie können nur nach Zeichenfolgen suchen.</td>
   </tr>
   <tr>
    <td>Kontrollkästchen "Inhaltsmodus"</td>
-   <td>Aktivieren Sie dieses Kontrollkästchen, um Eigenschaften im Unterknoten <code>jcr:content</code> der Suchergebnisse zu lesen, sofern vorhanden. Diese Option ist nur für Seiten nutzbar. Eigenschaftsnamen erhalten das Präfix <code>"jcr:content/"</code></td>
+   <td>Aktivieren Sie dieses Kontrollkästchen, um die Eigenschaften in <code>jcr:content</code> untergeordneten Knoten der Suchergebnisse, sofern vorhanden. Diese Option ist nur für Seiten nutzbar. Eigenschaftsnamen erhalten das Präfix <code>"jcr:content/"</code></td>
   </tr>
   <tr>
    <td>Eigenschaften/Spalten</td>
@@ -93,7 +93,7 @@ So bearbeiten Sie mit dem Bulk Editor mehrere Elemente gleichzeitig:
   </tr>
   <tr>
    <td>Benutzerdefinierte Eigenschaften/Spalten</td>
-   <td>Geben Sie alle anderen Eigenschaften ein, die nicht im Feld <strong>Eigenschaften/Spalten</strong> aufgeführt sind. Diese benutzerdefinierten Eigenschaften werden im Ergebnisbereich angezeigt. Sie können mehrere Eigenschaften hinzufügen, indem Sie sie mit Kommas voneinander trennen. <i>Hinweis:</i> Wenn Sie eine benutzerdefinierte Eigenschaft hinzufügen, die noch nicht vorhanden ist, zeigt AEM WCM eine leere Zelle an. Wenn Sie die leere Zelle bearbeiten und speichern, wird die Eigenschaft zum Knoten hinzugefügt. Die neu erstellte Eigenschaft muss die Einschränkungen des Knotentyps und Eigenschafts-Namespaces einhalten.</td>
+   <td>Geben Sie alle anderen Eigenschaften ein, die nicht im <strong>Eigenschaften/Spalten</strong> -Feld. Diese benutzerdefinierten Eigenschaften werden im Ergebnisbereich angezeigt. Sie können mehrere Eigenschaften hinzufügen, indem Sie sie mit Kommas voneinander trennen. <i>Hinweis:</i> Wenn Sie eine benutzerdefinierte Eigenschaft hinzufügen, die noch nicht vorhanden ist, zeigt AEM WCM eine leere Zelle an. Wenn Sie die leere Zelle bearbeiten und speichern, wird die Eigenschaft zum Knoten hinzugefügt. Die neu erstellte Eigenschaft muss die Einschränkungen des Knotentyps und Eigenschafts-Namespaces einhalten.</td>
   </tr>
  </tbody>
 </table>
@@ -119,10 +119,10 @@ Im Beispiel oben werden alle Seiten, die Ihren Suchkriterien entsprechen, zurüc
 
 #### Weitere GQL-Abfrageparameter {#additional-gql-query-parameters}
 
-* **path:** sucht nur Knoten unter diesem Pfad. Wenn Sie mehr als einen Begriff mit einem Pfadpräfix festlegen, wird nur der letzte berücksichtigt.
-* **type:** gibt nur Knoten der angegebenen Knotentypen zurück. Das schließt primäre und Mixin-Typen ein. Sie können mehrere Knotentypen durch Kommas voneinander getrennt festlegen. GQL gibt Knoten zurück, die einen der festgelegten Typen aufweisen.
-* **order:** sortiert das Ergebnis nach den angegebenen Eigenschaften. Sie können mehrere Eigenschaftsnamen durch Kommas voneinander getrennt festlegen. Um das Ergebnis in absteigender Reihenfolge zu sortieren, stellen Sie dem Eigenschaftsnamen ein Minuszeichen voran. Beispiel: order:-name. Ein Pluszeichen gibt das Ergebnis in aufsteigender Reihenfolge zurück. Dies ist die Standardeinstellung.
-* **limit:** begrenzt die Anzahl der Ergebnisse mithilfe eines Intervalls. Beispiel: limit:10..20 Bitte beachten Sie, dass das Intervall auf null basiert, der Beginn inklusiv ist und das Ende exklusiv ist. Sie können auch eine offene Intervallbegrenzung festlegen: limit:10.. oder limit:..20 Wenn die Punkte weggelassen werden und nur ein Wert angegeben ist, gibt GQL höchstens diese Anzahl an Ergebnissen zurück. Beispiel: limit:10 (gibt die ersten 10 Ergebnisse zurück)
+* **path:** Suchknoten unter diesem Pfad. Wenn Sie mehr als einen Begriff mit einem Pfadpräfix festlegen, wird nur der letzte berücksichtigt.
+* **Typ:** gibt nur Knoten der angegebenen Knotentypen zurück. Das schließt primäre und Mixin-Typen ein. Sie können mehrere Knotentypen durch Kommas voneinander getrennt festlegen. GQL gibt Knoten zurück, die einen der festgelegten Typen aufweisen.
+* **order:** ordnen Sie das Ergebnis anhand der angegebenen Eigenschaften an. Sie können mehrere Eigenschaftsnamen durch Kommas voneinander getrennt festlegen. Um das Ergebnis in absteigender Reihenfolge zu sortieren, stellen Sie dem Eigenschaftsnamen ein Minuszeichen voran. Beispiel: order:-name. Ein Pluszeichen gibt das Ergebnis in aufsteigender Reihenfolge zurück. Dies ist die Standardeinstellung.
+* **limit:** begrenzt die Anzahl der Ergebnisse mithilfe eines Intervalls. Beispiel: limit:10..20 Bitte beachten Sie, dass das Intervall auf null basiert, der Beginn inklusiv ist und das Ende exklusiv ist. Sie können auch ein Öffnungsintervall angeben:limit:10. oder limit:..20 Wenn die Punkte weggelassen werden und nur ein Wert angegeben ist, gibt GQL höchstens diese Anzahl an Ergebnissen zurück. Beispiel: limit:10 (gibt die ersten 10 Ergebnisse zurück)
 
 ### Exportieren von Inhalten {#exporting-content}
 
@@ -144,9 +144,9 @@ So exportieren Sie Inhalte:
 
    ![](assets/exportinexcel.png)
 
-### Importieren von Inhalten  {#importing-content}
+### Importieren von Inhalten {#importing-content}
 
-Standardmäßig ist die Importfunktion ausgeblendet, wenn Sie den Bulk Editor öffnen. Wenn Sie den Parameter `hib=false` zur URL hinzufügen, wird die Schaltfläche **Importieren** auf der Bulk Editor-Seite angezeigt. Sie können Inhalte aus jeder tabulatorgetrennten Datei ( `.tsv`) importieren. Damit der Importvorgang ordnungsgemäß funktioniert, müssen die Spaltenüberschriften (die erste Reihe an Zellen) mit den Spaltenüberschriften der zu importierenden Tabelle übereinstimmen.
+Standardmäßig ist die Importfunktion ausgeblendet, wenn Sie den Bulk Editor öffnen. Wenn Sie den Parameter `hib=false` zur URL hinzufügen, wird die Schaltfläche **Importieren** auf der Bulk Editor-Seite angezeigt. Sie können Inhalte aus einem beliebigen Tabulator ( `.tsv`). Damit der Importvorgang ordnungsgemäß funktioniert, müssen die Spaltenüberschriften (die erste Reihe an Zellen) mit den Spaltenüberschriften der zu importierenden Tabelle übereinstimmen.
 
 >[!NOTE]
 >
@@ -155,7 +155,7 @@ Standardmäßig ist die Importfunktion ausgeblendet, wenn Sie den Bulk Editor ö
 So importieren Sie Inhalte:
 
 1. Öffnen Sie den Bulk Editor.
-1. Fügen Sie `?hib=false` zur URL hinzu, z. B.:
+1. Hinzufügen `?hib=false` zur URL, z. B.:
    `https://localhost:4502/etc/importers/bulkeditor.html?hib=false`
 1. Wählen Sie **Importieren**.
-1. Wählen Sie die Datei `.tsv` aus. Die Daten werden in das Repository importiert.
+1. Wählen Sie die `.tsv` -Datei. Die Daten werden in das Repository importiert.

@@ -1,8 +1,8 @@
 ---
 title: Die Checkliste - Weitere Referenzen
-seo-title: Die Checkliste - Weitere Referenzen
+seo-title: The Checklist - Further Reference
 description: Informieren Sie sich über weitere Details, die die Dokumente und Prinzipien der Checkliste „Verwalten von Projekten - Checkliste mit Best Practices“ erläutern und/oder ergänzen.
-seo-description: Informieren Sie sich über weitere Details, die die Dokumente und Prinzipien der Checkliste „Verwalten von Projekten - Checkliste mit Best Practices“ erläutern und/oder ergänzen.
+seo-description: Learn about further details that elaborate on and/or augment the documents and principles covered by the Managing Projects - Best Practices Checklist.
 uuid: 58a8b4ab-e447-4a12-b9e9-4cd3db11e06a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
@@ -12,7 +12,7 @@ discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '3783'
+source-wordcount: '3757'
 ht-degree: 88%
 
 ---
@@ -27,18 +27,18 @@ Auf dieser Seite finden Sie weitere Details, um die Dokumente und Prinzipien von
 >
 >Die Listen in diesem Unterabschnitt sind nicht erschöpfend, sondern als Einführung gedacht.
 
-### Funktionen innerhalb von AEM  {#features-within-aem}
+### Funktionen innerhalb von AEM {#features-within-aem}
 
-Bei der Implementierung von AEM (insbesondere zum ersten Mal) müssen Sie die [Funktionen und Workflows von AEM](https://www.adobe.com/de/marketing/experience-manager.html) überprüfen, um sicherzustellen, welche Bereiche Sie benötigen.
+Bei der Implementierung von AEM (insbesondere zum ersten Mal) müssen Sie die [Funktionen und Workflows von AEM](https://www.adobe.com/de/marketing/experience-manager.html) um sicherzustellen, welche Bereiche Sie benötigen.
 
 Beachten Sie die Funktionen von AEM, die Sie verwenden werden, und die Auswirkungen auf Ihr Design, zum Beispiel:
 
-* [Commerce](/help/commerce/cif-classic/administering/ecommerce.md)
-* [Screens](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [Commerce ](/help/commerce/cif-classic/administering/ecommerce.md)
+* [Screens](https://docs.adobe.com/content/help/de/experience-manager-screens/user-guide/aem-screens-introduction.html)
 * [Assets](/help/assets/assets.md)
 * [Tags](/help/sites-administering/tags.md)
 * [Multi-Site-Management und Übersetzung](/help/sites-administering/msm-and-translation.md)
-* [Formulare](/help/forms/home.md)
+* [Forms](/help/forms/home.md)
 * [Communities](/help/communities/deploy-communities.md)
 * [Livefyre](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
 
@@ -50,7 +50,7 @@ AEM kann mit anderen Adobe-Produkten und/oder Dienstleistungen von Drittanbieter
 
 Siehe [Lösungsintegration](/help/sites-administering/integration.md) für ausführliche Informationen.
 
-## Migration oder Upgrade?  {#migrate-or-upgrade}
+## Migration oder Upgrade? {#migrate-or-upgrade}
 
 Es ist wichtig, dass Sie sich klar machen welche der beiden Alternativen Sie nutzen möchten:
 
@@ -62,13 +62,13 @@ Beim Wechsel von einer Vorgängerversion zur aktuellen Version gibt es zwei Mög
 * Verwenden Sie den [Package Manager](/help/sites-administering/package-manager.md), um alle Inhalte und Anwendungscodes aus dem alten System in das neue System zu exportieren.
 * [Upgrade](/help/sites-deploying/upgrade.md) des aktuellen Systems. Dies ist in den meisten Fällen die empfohlene Wahl.
 
-## Grundregeln  {#basic-ground-rules}
+## Grundregeln {#basic-ground-rules}
 
 Wie bei jedem Projekt ist es wichtig, so schnell wie möglich Grundregeln festzulegen. Dazu gehören:
 
 >[!NOTE]
 >
->Diese Punkte sind allgemein gehalten, die [Checkliste mit Best Practices](/help/managing/best-practices.md) behandelt Details zu AEM.
+>Diese Punkte sind allgemein, die [Checkliste mit Best Practices](/help/managing/best-practices.md) behandelt Besonderheiten in Bezug auf AEM.
 
 * **Rollen**
 
@@ -115,7 +115,7 @@ Wie bei jedem Projekt ist es wichtig, so schnell wie möglich Grundregeln festzu
    * das gesamte Projekt, einschließlich der Software von Drittanbietern, deren Auswirkungen auf Tests, organisatorische Fragen und viele andere.
    * Für bestimmte Aspekte kann es auch sinnvoll sein anzugeben, was *nicht* im Umfang des Projekts liegt. Dies kann dazu beitragen, Verwirrung und falsche Annahmen zu vermeiden, sollte sich aber auf das Wesentliche beschränken.
 
-* **Berichterstellung**
+* **Reporting**
 
    Definieren Sie klar, welche Informationen Sie in welcher Form, wie oft und an wen melden werden.
 
@@ -133,7 +133,7 @@ Diese Informationen können in einem Projekthandbuch definiert werden; die Verwe
 * Die Informationen werden klar und deutlich an alle Beteiligten kommuniziert. Obwohl Standard-Projektmanagement-Praxis, kann es nicht oft genug wiederholt werden, dass eine klare Rollendefinition und gute Kommunikation entscheidend für den Erfolg eines Projekts sind.
 * Von allen Informationen, die verfolgt werden, wird nur eine Version gespeichert, z. B. Bug-Verfolgung, Problem-Tracking usw.
 
-## Leistungsindikatoren und Zielmetriken  {#key-performance-indicators-and-target-metrics}
+## Leistungsindikatoren und Zielmetriken {#key-performance-indicators-and-target-metrics}
 
 Unternehmen verwenden Key Performance Indicators (KPIs), um ihren Erfolg bei der Erreichung von Zielen zu bewerten. Diese Indikatoren sind messbare Werte, die zeigen, wie effektiv bestimmte Ziele erreicht werden.
 
@@ -188,7 +188,7 @@ Bei richtiger Anwendung können diese Metriken ein nützliches Werkzeug sein; be
 >
 >In diesem Abschnitt werden die Grundprinzipien und Fragen behandelt, die zu berücksichtigen sind. Jede Installation ist anders beschaffen, sodass sich die tatsächlich zu messenden Werte unterscheiden
 
-### Alles dies beruht auf Ihrem Projektdesign  {#everything-rests-on-your-project-design}
+### Alles dies beruht auf Ihrem Projektdesign {#everything-rests-on-your-project-design}
 
 Alle zu messenden Metriken werden auf irgendeine Weise durch den Entwurf des Projekts beeinflusst. Umgekehrt lassen sich viele Probleme am besten durch Entwurfsänderungen lösen.
 
@@ -231,7 +231,7 @@ Es gibt mehrere Leistungsfaktoren, die ausgewertet werden können:
 
 * Antwortzeiten für Suchanfragen
 
-Dieser Abschnitt kann in Verbindung mit [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) gelesen werden, die die technischen Details zur tatsächlichen Leistungsmessung erweitert.
+Dieser Abschnitt kann in Verbindung mit [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) die die technischen Details der tatsächlichen Leistungsmessung erweitert.
 
 #### Antwortzeiten für einzelne Seiten {#response-times-for-individual-pages}
 
@@ -260,7 +260,7 @@ Die Antwortzeiten, die Sie anstreben, sind je nach Autoren- und Veröffentlichun
       * Der Inhalt wird zwischengespeichert
       * Lastausgleich wird angewendet
 
-#### Zielvorgabe für Antwortzeiten festlegen  {#setting-target-response-times}
+#### Zielvorgabe für Antwortzeiten festlegen {#setting-target-response-times}
 
 Wie können Sie die erreichbaren (durchschnittlichen) Antwortzeiten bestimmen? Dies ist häufig eine Frage der Erfahrung:
 
@@ -341,7 +341,7 @@ Ziele für die Anzahl der gleichzeitigen Benutzer sind abhängig von der Art der
    * Dies ist schwieriger vorherzusagen, es sollte daher ein Zielwert ausgewählt werden. Auch dies sollte auf der Erfahrung Ihrer aktuellen Website zusammen mit realistischen Erwartungen an Ihre neue Website basieren.
    * Spezielle Veranstaltungen (z. B. wenn Sie neue, sehr beliebte Inhalte veröffentlichen) können die Erwartungen übertreffen - oder sogar die Möglichkeiten (wie manchmal in der Presse berichtet wird, wenn Tickets für bestimmte Veranstaltungen zum Verkauf angeboten werden).
 
-### Kapazität und Volumen  {#capacity-and-volume}
+### Kapazität und Volumen {#capacity-and-volume}
 
 Bevor wir die entsprechenden Metriken besprechen, eine schnelle Definition der Begriffe:
 
@@ -378,7 +378,7 @@ Es ist jedoch besser, einen kleinen Satz von genauen, zentralen Metriken zu habe
 
 Sicherheit ist entscheidend und eine immer größere Herausforderung. Sie ***muss*** von Anfang an berücksichtigt und geplant werden.
 
-Die [Sicherheits-Checkliste](/help/sites-administering/security-checklist.md) beschreibt die Schritte, die Sie unternehmen sollten, um sicherzustellen, dass Ihre AEM-Installation bei der Bereitstellung sicher ist. Weitere Sicherheitsaspekte werden unter [Sicherheit (bei der Entwicklung)](/help/sites-developing/security.md) und [Benutzerverwaltung und Sicherheit](/help/sites-administering/security.md) behandelt.
+Die [Sicherheits-Checkliste](/help/sites-administering/security-checklist.md) beschreibt die Schritte, die Sie unternehmen sollten, um sicherzustellen, dass Ihre AEM-Installation bei der Bereitstellung sicher ist. Weitere Sicherheitsaspekte werden unter [Sicherheit (bei der Entwicklung)](/help/sites-developing/security.md) und [Benutzerverwaltung und Sicherheit](/help/sites-administering/security.md).
 
 ## Parallele und iterative Aufgaben {#parallel-and-iterative-tasks}
 
@@ -386,12 +386,10 @@ Die [Sicherheits-Checkliste](/help/sites-administering/security-checklist.md) be
 >
 >Das Folgende:
 >
->* Bietet einen Überblick über die *first*-Implementierung eines AEM Projekts.
+>* Bietet einen Überblick über die *first* Implementierung eines AEM Projekts.
 >* Ist als abstrakte Übersicht gedacht; siehe [Projekt-Checkliste](/help/managing/best-practices.md) für bestimmte Phasen/Milestones/Aufgaben.
 >* Jede Zeitskala ist theoretisch.
-
 >
-
 
 
 Für eine Neuimplementierung eines Standard-AEM-Projekts müssen Sie u.a. folgende Aufgaben berücksichtigen:
@@ -472,7 +470,7 @@ Einige Punkte, die für jede Kategorie zu beachten sind:
    * Planen Sie „In-Sprint-Migration“ nach der Überarbeitung.
    * Planen Sie „Inhalts-Burndown“ (Sitemap für Go-Live-Inhalte).
 
-## Schätzung von Zeit und Aufwand  {#estimating-time-and-effort}
+## Schätzung von Zeit und Aufwand {#estimating-time-and-effort}
 
 Abhängig von Ihrer resultierenden Aufgabenliste können Sie dann erste Schätzungen des Aufwands für (hochrangige) Aufgabendefinitionen vornehmen. Diese sollten einen Hinweis enthalten, wer (Kunde oder Partner) was und wann tun wird.
 
@@ -482,7 +480,7 @@ Die folgende Liste zeigt Standardannäherungen und Zusammenhänge des Aufwands u
 >
 >Diese Zahlen können nur für erste Schätzungen verwendet werden. Ein erfahrener AEM-Entwickler muss die detaillierte Analyse durchführen.
 
-| Schritt | Aufwand |
+| Phase | Aufwand |
 |---|---|
 | Entwicklung | Eine grobe Schätzung von 2-4 Stunden für jeden Komponentenknoten deckt alle Entwicklungsanforderungen ab. |
 | Entwicklertests | 15 % der Entwicklung |
@@ -543,31 +541,31 @@ Die folgende Liste informiert Sie über die verwendbaren Werkzeuge. Sie ist als 
   </tr>
   <tr>
    <td>Selenium</td>
-   <td><a href="https://docs.seleniumhq.org/"></a> Selenium ist ein Open-Source-Test-Tool. Die Tests laufen direkt im Browser ab und emulieren, wie Ihre Benutzer arbeiten.</td>
+   <td><a href="https://docs.seleniumhq.org/">Selenium</a> ist ein Open Source-Test-Tool. Die Tests laufen direkt im Browser ab und emulieren, wie Ihre Benutzer arbeiten.</td>
   </tr>
   <tr>
-   <td>Microsoft Project</td>
+   <td>Microsoft-Projekt</td>
    <td>Ein häufig verwendetes Projektmanagement-Tool.</td>
   </tr>
   <tr>
    <td>Jira</td>
-   <td><a href="https://www.atlassian.com/software/jira"></a> Jirais ist ein Open Source-Tool zum Verfolgen und Verwalten von Details Ihrer Softwarefehler. Arbeitsabläufe können bei Bedarf auf die Fehlerdetails angewendet werden.</td>
+   <td><a href="https://www.atlassian.com/software/jira">Jira</a> ist ein Open Source-Tool zur Verfolgung und Verwaltung von Details Ihrer Softwarefehler. Arbeitsabläufe können bei Bedarf auf die Fehlerdetails angewendet werden.</td>
   </tr>
   <tr>
    <td>Git</td>
-   <td><a href="https://git-scm.com/"></a> Gibt eine Revisionskontrollsoftware an.</td>
+   <td><a href="https://git-scm.com/">Git</a> ist eine Revisionskontrollsoftware.</td>
   </tr>
   <tr>
    <td>Eclipse</td>
-   <td><p>Eclipse ist eine Open Source IDE, die aus verschiedenen Projekten besteht. Diese konzentrieren sich auf den Aufbau einer offenen Entwicklungsplattform, die aus erweiterbaren Frameworks, Tools und Laufzeiten für die Erstellung, Bereitstellung und Verwaltung von Software über den gesamten Lebenszyklus besteht.</p> <p>Weitere Informationen finden Sie unter <a href="/help/sites-developing/howto-projects-eclipse.md">AEM mit Eclipse entwickeln</a> .</p> </td>
+   <td><p>Eclipse ist eine Open Source IDE, die aus verschiedenen Projekten besteht. Diese konzentrieren sich auf den Aufbau einer offenen Entwicklungsplattform, die aus erweiterbaren Frameworks, Tools und Laufzeiten für die Erstellung, Bereitstellung und Verwaltung von Software über den gesamten Lebenszyklus besteht.</p> <p>Siehe <a href="/help/sites-developing/howto-projects-eclipse.md">Entwickeln AEM Projekte mit Eclipse</a> für weitere Informationen.</p> </td>
   </tr>
   <tr>
    <td>IntelliJ</td>
-   <td><p>Eine professionelle (und damit lizenzkostenpflichtige) IDE mit einer umfassenden Palette von Funktionen. </p> <p>Weitere Informationen finden Sie unter <a href="/help/sites-developing/ht-intellij.md">AEM mit IntelliJ IDEA</a> entwickeln .</p> </td>
+   <td><p>Eine professionelle (und damit lizenzkostenpflichtige) IDE mit einer umfassenden Palette von Funktionen. </p> <p>Siehe <a href="/help/sites-developing/ht-intellij.md">Entwickeln AEM Projekte mit IntelliJ IDEA</a> für weitere Informationen.</p> </td>
   </tr>
   <tr>
    <td>Maven</td>
-   <td><a href="https://maven.apache.org/"></a> Mavenis ist ein Software-Projekt-Management- und Verständniswerkzeug, das den Build-Prozess eines Projekts (Software und Dokumentation) verwalten kann.</td>
+   <td><a href="https://maven.apache.org/">Maven</a> ist ein Software-Projekt-Management- und Verständniswerkzeug, das den Build-Prozess (Software und Dokumentation) eines Projekts verwalten kann.</td>
   </tr>
  </tbody>
 </table>
@@ -585,7 +583,7 @@ Darüber hinaus sind die folgenden Abschnitte von besonderem Interesse:
 Adobe bietet weitere Best Practices für alle Phasen und Zielgruppen:
 
 * [Bereitstellen](/help/sites-deploying/best-practices.md)
-* [Authoring – ](/help/sites-authoring/best-practices.md)
+* [Authoring –](/help/sites-authoring/best-practices.md)
 * [Verwalten](/help/sites-administering/administer-best-practices.md)
 * [Entwickeln](/help/sites-developing/best-practices.md)
 * [Projektmanagement](/help/managing/best-practices.md)

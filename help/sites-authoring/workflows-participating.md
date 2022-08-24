@@ -1,8 +1,8 @@
 ---
 title: Teilnehmen an Workflows
-seo-title: Teilnehmen an Workflows
+seo-title: Participating in Workflows
 description: Workflows enthalten normalerweise Schritte, bei denen eine Person eine Aktivität auf einer Seite oder in einem Asset ausführen muss.
-seo-description: Workflows enthalten normalerweise Schritte, bei denen eine Person eine Aktivität auf einer Seite oder in einem Asset ausführen muss.
+seo-description: Workflows typically include steps that require a person to perform an activity on a page or asset.
 uuid: 15d56bcc-1e84-4cc0-8b71-7fb906cd7ff7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: e47270e8-bace-4d0f-a088-7269b6356315
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1525'
 ht-degree: 98%
 
 ---
@@ -23,15 +23,15 @@ ht-degree: 98%
 Workflows enthalten normalerweise Schritte, bei denen eine Person eine Aktivität auf einer Seite oder in einem Asset ausführen muss. Der Workflow wählt einen Benutzer oder eine Gruppe zum Durchführen der Aktivität aus und weist dieser Person oder Gruppe ein Arbeitselement zu. Der Benutzer erhält eine Benachrichtigung und kann dann die entsprechende Aktion ausführen:
 
 * [Ansehen der Benachrichtigungen](#notifications-of-available-workflow-actions)
-* [Fertigstellen eines Teilnehmerschritts ](#completing-a-participant-step)
-* [Delegieren eines Teilnehmerschritts ](#delegating-a-participant-step)
-* [Wechseln zu einem vorherigen Teilnehmerschritt: ](#performing-step-back-on-a-participant-step)
-* [Öffnen eines Workflow-Elements, um Details anzuzeigen (und Maßnahmen zu ergreifen) ](#opening-a-workflow-item-to-view-details-and-take-actions)
-* [Anzeigen der Workflow-Nutzlast (mehrere Ressourcen) ](#viewing-the-workflow-payload-multiple-resources)
+* [Fertigstellen eines Teilnehmerschritts](#completing-a-participant-step)
+* [Delegieren eines Teilnehmerschritts](#delegating-a-participant-step)
+* [Wechseln zu einem vorherigen Teilnehmerschritt](#performing-step-back-on-a-participant-step)
+* [Öffnen eines Workflow-Elements, um Details anzuzeigen (und Maßnahmen zu ergreifen)](#opening-a-workflow-item-to-view-details-and-take-actions)
+* [Anzeigen der Workflow-Nutzlast (mehrere Ressourcen)](#viewing-the-workflow-payload-multiple-resources)
 
-## Benachrichtigungen über verfügbare Workflow-Aktionen    {#notifications-of-available-workflow-actions}
+## Benachrichtigungen über verfügbare Workflow-Aktionen {#notifications-of-available-workflow-actions}
 
-Wenn Ihnen ein Arbeitselement zugewiesen wird (z. B. **Inhalte genehmigen**), werden verschiedene Warnungen und/oder Benachrichtigungen angezeigt:
+Wenn Ihnen ein Arbeitselement zugewiesen wird (z. B. **Inhalte genehmigen**), werden verschiedene Warnungen und/oder Benachrichtigungen angezeigt:
 
 * In der [Benachrichtigungsanzeige](/help/sites-authoring/inbox.md) (Symbolleiste) werden weitere Elemente angezeigt:
 
@@ -116,7 +116,7 @@ Sie können auch die Timeline verwenden, um einen Schritt abzuschließen und zum
 
 1. Wählen Sie **Voranbringen**, um die Aktion zu bestätigen.
 
-### Delegieren eines Teilnehmerschritts    {#delegating-a-participant-step}
+### Delegieren eines Teilnehmerschritts {#delegating-a-participant-step}
 
 Wenn Ihnen ein Schritt zugewiesen wurde, Sie aber aus irgendeinem Grund keine entsprechende Maßnahme ergreifen können, können Sie den Schritt an einen anderen Benutzer oder eine Gruppe delegieren.
 

@@ -2,7 +2,7 @@
 title: Best Practices
 seo-title: Best Practices
 description: Wie AEM am effizientesten und effektivsten verwendet wird
-seo-description: Wie AEM am effizientesten und effektivsten verwendet wird
+seo-description: How to use AEM in the most efficient and most effective way possible
 uuid: b3044cdf-8ca4-4012-b290-11f73c0cb1bf
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
 exl-id: 9994c63b-65ca-4974-a48d-992f5f8f3f01
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 73%
+source-wordcount: '287'
+ht-degree: 72%
 
 ---
 
@@ -25,7 +25,7 @@ Die folgenden Bereiche enthalten Hinweise zu bewährten Vorgehensweisen:
 
 * [Assets](#assets)
 * [Sites](#sites)
-* [Formulare](#forms)
+* [Forms](#forms)
 
 Best Practices für die Verwaltung, Bereitstellung, Pflege und Entwicklung finden Sie unter folgenden Themen:
 
@@ -73,7 +73,7 @@ Zur Verwaltung und Bearbeitung Ihrer Website-Inhalte wurden einige Best Practice
 | Authoring-Tools | [Autorenumgebung und Tools](/help/sites-authoring/author-environment-tools.md)  | Bietet einen Überblick über die Tools, die zum Erstellen von Seiten verwendet werden. |
 | Organisieren von Seiten | [Erstellen und Organisieren von Seiten](/help/sites-authoring/managing-pages.md) | Bietet einen Überblick darüber, wie Sie Ihre Seiten am besten organisieren können, einschließlich Namenskonventionen. |
 
-## Formulare {#forms}
+## Forms {#forms}
 
 |  |  |  |
 |---|---|---|

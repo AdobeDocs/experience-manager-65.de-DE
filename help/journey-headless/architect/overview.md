@@ -1,16 +1,17 @@
 ---
-title: Journey AEM Headless Content Architect
-description: Beginnen Sie hier mit einer geführten Journey durch die leistungsstarken und flexiblen Headless-Features von AEM, deren Funktionen und wie Sie Ihre Inhalte in Ihrem ersten Headless-Projekt modellieren können.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+title: AEM Headless-Inhaltsarchitekten-Tour
+description: Diese angeleitete Tour bietet Ihnen eine Einführung zu den leistungsstarken und flexiblen Headless-Funktionen von AEM und deren Möglichkeiten. Sie veranschaulicht, wie Sie sie bei Ihrem ersten Headless-Projekt Inhalte modellieren können.
+exl-id: 44c58ece-225e-4361-929c-faa110fe2842
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '786'
-ht-degree: 26%
+ht-degree: 100%
 
 ---
 
-# Journey AEM Headless Content Architect {#aem-headless-content-architect-journey}
+# AEM Headless-Inhaltsarchitekten-Tour {#aem-headless-content-architect-journey}
 
-Beginnen Sie hier für eine geführte Journey durch die leistungsstarken und flexiblen Headless-Features von AEM, deren Funktionen und wie Sie sie auf Ihrem ersten Headless-Projekt nutzen können.
+Diese angeleitete Tour bietet Ihnen eine Einführung zu den effektiven und flexiblen Headless-Features von AEM und deren Funktionen. Sie veranschaulicht, wie Sie sie bei Ihrem ersten Headless-Projekt nutzen können.
 
 ## Einführung {#introduction}
 
@@ -20,51 +21,51 @@ Die Headless-Implementierung verzichtet auf das Seiten- und Komponenten-Manageme
 
 Dieser Leitfaden führt Sie durch die wichtigsten Themen, sodass Sie nach Abschluss:
 
-* Erfahren Sie, was die Headless-Content-Bereitstellung und ihre Vorteile ist.
-* Erfahren Sie, wie Sie Ihren Inhalt für AEM Headless-Funktionen modellieren.
-* Sie können die ersten Schritte zur Modellierung Ihres Inhalts für Ihr erstes AEM Headless-Projekt ausführen.
+* verstehen, was die Bereitstellung von Headless-Inhalten ist und was ihre Vorteile sind.
+* verstehen, wie Sie Ihre Inhalte für AEM Headless-Funktionen modellieren.
+* In der Lage sind, die ersten Schritte zur Implementierung Ihres ersten AEM Headless-Projekts auszuführen.
 
-## Journey AEM Dokumentation {#documentation-journeys}
+## AEM-Dokumentations-Touren {#documentation-journeys}
 
-[Eine Journey der Dokumentation](/help/journey-documentation/home.md) verbindet viele verschiedene und vielleicht komplizierte Themen und Funktionen, indem eine Erzählung bereitgestellt wird, die dem Leser hilft, der neu zu AEM sein kann, ein Geschäftsproblem von Anfang bis Ende zu verstehen und zu lösen, während er von Anfang bis Ende nur ein minimales vorheriges Thema oder AEM Wissen angeht.
+[Eine Dokumentations-Tour](/help/journey-documentation/home.md) verbindet viele verschiedene und möglicherweise komplizierte Themen und Funktionen durch eine Erzählung, die dem nicht mit AEM vertrauten Leser hilft, ein geschäftliches Problem von Anfang bis Ende zu verstehen und zu lösen, wobei nur minimale Vorkenntnisse zum Thema oder zu AEM vorausgesetzt werden.
 
-Die Journey der Dokumentation basieren auf Best-Practice-Prinzipien, die durch aktuelle Forschungsarbeiten der Adobe, bewährte Implementierungserfahrungen von Adobe-Beratern und Rückmeldungen von Kundenprojekten informiert werden.
+Dokumentations-Touren werden auf der Grundlage von Best-Practice-Prinzipien entwickelt, die auf Informationen aus den neuesten Forschungsergebnissen von Adobe, bewährten Implementierungserfahrungen der Adobe-Berater und dem Feedback aus Kundenprojekten basieren.
 
-Wenn Sie wissen möchten, wie Adobe empfiehlt, Headless-Geschäftsfälle mit AEM zu lösen, [AEM Headless-Journey](/help/journey-headless/home.md) sind, wo sie beginnen sollen.
+Wenn Sie wissen möchten, wie Adobe empfiehlt, Headless-Geschäftsfälle mit AEM zu lösen, sollten Sie mit den [AEM Headless-Touren](/help/journey-headless/home.md) beginnen.
 
 ## Zielgruppe {#audience}
 
-Diese Journey wurde für die Inhaltsarchitektin entwickelt. Als Inhaltsarchitektin definieren Sie die Struktur des Inhalts. Diese Definitionen werden dann von den Inhaltsautoren verwendet, wenn sie den tatsächlichen Inhalt erstellen.
+Diese Journey richtet sich an die Rolle des Inhaltsarchitekten. Als Inhaltsarchitekt definieren Sie die Struktur der Inhalte. Diese Definitionen werden dann von den Inhaltsautoren verwendet, wenn sie die eigentlichen Inhalte erstellen.
 
-Die Journey beschreibt die Anforderungen, Schritte und den Ansatz eines AEM Headless-Projekts aus der Sicht eines Inhaltsarchitekten. Die Journey definiert zusätzliche Personas, mit denen der Inhaltsarchitekt für ein erfolgreiches Projekt interagieren muss, aber der Blickwinkel für die Journey ist der des Inhaltsarchitekten.
+Die Tour beschreibt die Anforderungen, Schritte und den Ansatz eines AEM Headless-Projekts aus der Sicht eines Inhaltsarchitekten. Sie definiert weitere Rollen, mit denen Inhaltsarchitekten interagieren müssen, um zum Gelingen von Projekten beizutragen. Zugeschnitten ist die Tour jedoch auf Inhaltsarchitekten.
 
 Die Informationen in diesem Leitfaden können natürlich auch für andere Rollen nützlich sein, aber einige Hinweise sind für bestimmte Rollen nicht relevant. Freuen Sie sich auf neue Touren, mit denen wir künftig auf weitere Rollen eingehen.
 
-## Journey zur Headless-Content-Architektur {#the-journey}
+## Headless-Inhaltsarchitekten-Tour {#the-journey}
 
 Im Rahmen dieser Tour werden Sie sich mit zahlreichen Themen befassen. Die folgenden Artikel vermitteln Ihnen Grundkenntnisse über Headless-Funktionen in AEM und bieten Links zu detaillierten technischen Dokumentationen.
 
-Obwohl Sie direkt zu einem bestimmten Teil der Tour gehen können, beachten Sie, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Einsteigern empfiehlt sich daher, von vorn zu beginnen und schrittweise vorzugehen.
+Sie können direkt zu einem bestimmten Teil der Tour gehen. Beachten Sie jedoch, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Einsteigern empfiehlt sich daher, von vorn zu beginnen und schrittweise vorzugehen.
 
 | Nummer | Artikel | Beschreibung |
 |---|---|---|
-| 0 | Journey AEM Headless Content Architect | Dieses Dokument |
-| 1 | [Modellierung für Headless mit AEM - Einführung](introduction.md) | Erfahren Sie mehr über Headless-Technologie und was sie für die Modellierung bedeutet. |
-| 2 | [Grundlagen zur Schulungsmodellierung](basics.md) | Lernen Sie die Grundlagen der Modellierung mit AEM kennen |
-| 3 | [So erstellen Sie Modellstrukturen](model-structure.md) | Erfahren Sie, wie Sie Strukturen mit mehreren Ebenen für Headless modellieren. |
+| 0 | AEM Headless-Inhaltsarchitekten-Tour | Dieses Dokument |
+| 1 | [Modellierung für Headless mit AEM – Einführung](introduction.md) | Erfahren Sie mehr über die Headless-Technologie und darüber, was sie für die Modellierung bedeutet. |
+| 2 | [Kennenlernen der Modellierungsgrundlagen](basics.md) | Lernen Sie die Grundlagen der Modellierung mit AEM kennen |
+| 3 | [So erstellen Sie Modellstrukturen](model-structure.md) | Erfahren Sie, wie Sie Strukturen mit mehreren Ebenen für Headless modellieren |
 
 ## Wie geht es weiter {#what-is-next}
 
-Jetzt sind Sie bereit, mit Ihrer Adobe Headless-Tour zu beginnen. Wir empfehlen Ihnen, mit dem nächsten Teil der Journey fortzufahren und den Artikel zu lesen [Inhaltsmodellierung für Headless mit AEM - Einführung](introduction.md).
+Jetzt sind Sie bereit, mit Ihrer Adobe Headless-Tour zu beginnen. Wir empfehlen Ihnen, mit dem nächsten Teil der Tour fortzufahren und den Artikel [Inhaltsmodellierung für Headless in AEM – Einführung](introduction.md) zu lesen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Die Journey der Dokumentation zeigen Ihnen, wie AEM ein Geschäftsproblem löst, indem sie eine Erzählung bereitstellen, die Sie durch komplexe, miteinander verknüpfte Prozesse und Funktionen führt. Eine Journey veranschaulicht, wie mehrere Funktionen zusammenarbeiten, um eine einzige Geschäftsanforderung zu erfüllen.
+Dokumentations-Touren zeigen Ihnen, wie AEM ein Geschäftsproblem löst, indem es eine Erzählung bereitstellt, die Sie durch komplexe, miteinander verknüpfte Prozesse und Funktionen führt. Eine Tour veranschaulicht, wie mehrere Funktionen zusammenarbeiten, um eine einzige Geschäftsanforderung zu erfüllen.
 
-Journey sind so konzipiert, dass sie auf sich allein gestellt stehen. Einige davon können jedoch miteinander verbunden werden. Weitere Informationen dazu, wie AEM leistungsstarken Funktionen zusammenarbeiten, finden Sie in diesen zusätzlichen Journey .
+Diese Touren sind so konzipiert, dass sie für sich allein stehen können. Einige davon können jedoch miteinander verbunden werden. In diesen zusätzlichen Touren finden Sie weitere Informationen darüber, wie die leistungsstarken Funktionen von AEM zusammenarbeiten.
 
-* [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md) - Diese Journey-Dokumentation vermittelt Ihnen ein umfassendes Verständnis der Headless-Technologie, wie AEM Headless Content bereitstellen und wie Sie ihn übersetzen können.
-* [Headless-Authoring-Journey](/help/journey-headless/author/overview.md) - Beginnen Sie hier für eine geführte Journey durch die leistungsstarken und flexiblen Headless-Features von AEM, deren Funktionen und wie Sie Ihre Inhalte in Ihrem ersten Headless-Projekt modellieren können.
-* [AEM Headless-Entwickler-Journey](/help/journey-headless/developer/overview.md) - Beginnen Sie hier für eine geführte Journey durch die leistungsstarken und flexiblen Headless-Features von AEM, deren Funktionen und wie Sie sie bei Ihrem ersten Entwicklungsprojekt nutzen können.
-* [AEM technische Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=de) - Wenn Sie bereits über ein festes Verständnis von AEM und Headless-Technologien verfügen, können Sie unsere ausführlichen technischen Dokumente direkt konsultieren.
-* [AEM Headless-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de) - Wenn Sie lieber lernen möchten, indem Sie tun und technisch geneigt sind, nehmen Sie unsere praxisorientierten Tutorials organisiert von API und Framework, die die Erstellung und Verwendung von Anwendungen, die auf AEM Headless aufbauen.
+* [AEM Headless Übersetzungs-Tour](/help/journey-headless/translation/overview.md) – Diese Dokumentations-Tour vermittelt Ihnen ein umfassendes Verständnis der Headless-Technologie sowie davon, wie AEM Headless Inhalte bereitstellt und wie Sie sie übersetzen können.
+* [Headless-Autoren-Tour](/help/journey-headless/author/overview.md) – Diese angeleitete Tour bietet Ihnen eine Einführung zu den leistungsstarken und flexiblen Headless-Funktionen von AEM und deren Möglichkeiten. Sie veranschaulicht, wie Sie sie bei Ihrem ersten Headless-Projekt Inhalte modellieren können.
+* [AEM Headless-Entwickler-Tour](/help/journey-headless/developer/overview.md) – Diese angeleitete Tour bietet Ihnen eine Einführung zu den leistungsstarken und flexiblen Headless-Funktionen von AEM und deren Möglichkeiten. Sie veranschaulicht, wie Sie sie bei Ihrem ersten Headless-Entwicklungsprojekt nutzen können.
+* [AEM  – Technische Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=de) – Wenn Sie bereits über ein solides Verständnis von AEM und Headless-Technologien verfügen, können Sie direkt unsere ausführlichen technischen Dokumente hinzuziehen.
+* [AEM Headless-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de) – Wenn Sie es vorziehen, durch praktisches Arbeiten zu lernen und technisch versiert sind, können Sie unsere nach API und Framework geordneten praktischen Tutorials nutzen, in denen die Erstellung und Verwendung von Programmen auf der Grundlage von AEM Headless behandelt wird.

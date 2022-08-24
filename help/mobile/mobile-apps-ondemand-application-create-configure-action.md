@@ -1,8 +1,8 @@
 ---
 title: Erstellen und Konfigurieren von Anwendungen
-seo-title: Erstellen und Konfigurieren von Anwendungen
+seo-title: Application Create and Configuration Actions
 description: Das Erstellen einer App ist häufig der erste Schritt zur Erstellung und Verwaltung von AEM Mobile-On-Demand-Inhalten. Auf dieser Seite erfahren Sie mehr.
-seo-description: Das Erstellen einer App ist häufig der erste Schritt zur Erstellung und Verwaltung von AEM Mobile-On-Demand-Inhalten. Auf dieser Seite erfahren Sie mehr.
+seo-description: Creating an app is often the first step towards creating and managing AEM Mobile On-Demand content. Follow this page to learn more.
 uuid: f6b41d9a-d896-479e-9f6c-e91a88f3e74d
 contentOwner: User
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: ccafd49a-5c8a-44eb-9b0c-37070560bb52
 exl-id: dbe81ead-dfaa-4af0-9b66-a14917a1bcc7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 8%
+source-wordcount: '442'
+ht-degree: 7%
 
 ---
 
-# Aktionen zum Erstellen und Konfigurieren von Anwendungen{#application-create-and-configuration-actions}
+# Erstellen und Konfigurieren von Anwendungen{#application-create-and-configuration-actions}
 
 >[!NOTE]
 >
@@ -33,18 +33,18 @@ Die Details Ihrer App können im Dashboard oder im AEM Mobile Control Center ein
 >
 >Das Dashboard ist eine Reihe nützlicher Kacheln, die einen Überblick über den App-Inhalt, die Metadaten und den AEM Mobile On-Demand-Verbindungsstatus bieten.
 >
->Weitere Informationen finden Sie unter [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) .
+>Siehe [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) für Details.
 
 **So erstellen Sie eine On-Demand-App:**
 
-1. Wählen Sie in der Seitenleiste **Mobile** aus.
-1. Wählen Sie **Apps** aus der Navigation aus.
-1. Klicken Sie auf **Erstellen** und wählen Sie **App** aus der Dropdown-Liste aus.
-1. Wählen Sie die Vorlage Mobile App aus und klicken Sie auf **Weiter**.
-1. Geben Sie App-Eigenschaften wie **Titel**, **Name**, **Beschreibung** ein.
+1. Auswählen **Mobile** über die Seitenleiste aus.
+1. Auswählen **Apps** aus der Navigation.
+1. Klicken **Erstellen** und wählen Sie **App** aus der Dropdown-Liste aus.
+1. Wählen Sie die Vorlage Mobile App aus und klicken Sie auf **Nächste**.
+1. Geben Sie App-Eigenschaften ein, z. B. **Titel**, **Name**, **Beschreibung**.
 1. Klicken Sie auf **Weiter**.
-1. Geben Sie, falls bekannt, Cloud-Konfigurationsdetails ein, klicken Sie andernfalls auf **Erstellen**.
-1. Klicken Sie auf **Fertig** , um Ihre neue AEM Mobile-App im Katalog anzuzeigen.
+1. Wenn bekannt, geben Sie Details zur Cloud-Konfiguration ein, klicken Sie andernfalls auf **Erstellen**.
+1. Klicken **Fertig** , um Ihre neue AEM Mobile-App im Katalog anzuzeigen.
 
 ![chlimage_1](assets/chlimage_1.gif)
 
@@ -65,13 +65,13 @@ Sie müssen über eine vorhandene Vorlage für mobile Apps (oder eine installier
 
 Nachdem Sie eine On-Demand-App über das Anwendungs-Dashboard erstellt haben, besteht der nächste Schritt darin, Ihre App mit der Cloud-Konfiguration zu verknüpfen.
 
-Weitere Informationen finden Sie unter [Verknüpfen Ihrer App mit der Cloud-Konfiguration](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) .
+Siehe [Verknüpfen Ihrer App mit der Cloud-Konfiguration](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) für weitere Details.
 
 ### Erste Schritte {#getting-ahead}
 
 Sobald Sie mit dem Erstellen einer On-Demand-Anwendung und dem Verknüpfen dieser App mit einer Cloud-Konfiguration vertraut sind, finden Sie weitere Informationen unter [Content Management-Aktionen](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
-**Content Management-** Aktionen beinhalten die Erstellung und Verwaltung von folgenden Inhalten:
+**Content Management-Aktionen** umfasst die Erstellung und Verwaltung folgender Inhalte:
 
 * [Verwalten von Artikeln](/help/mobile/mobile-on-demand-managing-articles.md)
 * [Verwalten von Bannern](/help/mobile/mobile-on-demand-managing-banners.md)

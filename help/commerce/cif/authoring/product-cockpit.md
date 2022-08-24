@@ -1,10 +1,11 @@
 ---
 title: Produkt-Cockpit
 description: Arbeiten mit dem Produkt-Cockpit
-source-git-commit: f3e286c7b5404812655f3b257de17be7bfde7487
+exl-id: 05ef2604-1d52-4397-a696-0b64717cc3cc
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -18,33 +19,33 @@ Staging-Produktdaten beinhalten zukünftig jede Mutation wie neue Kategorien, Pr
 
 >[!NOTE]
 >
->Der Begriff &quot;Produktkatalog&quot;ist mit Commerce Store-, Store-Ansicht- und ähnlichen Ausdrücken austauschbar.
+>Der Begriff „Produktkatalog“ ist mit „Handels-Shop“, „Shop-Ansicht“ und ähnlichen Ausdrücken austauschbar.
 
 ## Konfiguration {#configuration}
 
-Produktkataloge müssen in AEM konfiguriert werden. Siehe [Konfigurieren von Speichern und Katalogen](/help/commerce/cif/getting-started.md#catalog) für weitere Informationen.
+Produktkataloge müssen in AEM konfiguriert werden. Siehe [Konfigurieren von Shops und Katalogen](/help/commerce/cif/getting-started.md#catalog) für weitere Informationen.
 
-Die Aktivierung von Stage-Katalogfunktionen erfordert Authentifizierung. Siehe [Erste Schritte](/help/commerce/cif/getting-started.md) für weitere Informationen.
+Das Aktivieren von gestaffelten Katalogfunktionen erfordert eine Authentifizierung. Siehe [Erste Schritte](/help/commerce/cif/getting-started.md) für weitere Informationen.
 
 >[!NOTE]
 >
->Staging-Katalogfunktionen sind nur bei Adobe Commerce- und Drittanbieter-Connectoren verfügbar, die Token-basierte Authentifizierung unterstützen.
+>Gestaffelte Katalogfunktionen sind nur mit Adobe Commerce und Connectoren von Drittanbietern verfügbar, die eine Token-basierte Authentifizierung unterstützen.
 
 ## Öffnen des Produkt-Cockpits {#opening-product-cockpit}
 
-Der einfachste Weg, auf das Produkt-Cockpit zuzugreifen, ist über das &#39;Commerce&#39;-Menü in AEM Hauptmenü. Es ist auch möglich, Omnisearch (Suche nach Commerce) oder das Öffnen von `https://<yourAEMInstance>/commerce.html`.
+Der einfachste Weg, auf das Produkt-Cockpit zuzugreifen, ist über das Menü „Commerce“ im AEM-Hauptmenü. Es ist auch möglich, Omnisearch (Suche nach „Commerce“) zu verwenden oder `https://<yourAEMInstance>/commerce.html` zu öffnen.
 
-![Menü AEM](/help/commerce/cif/assets/aem-menu.png)
+![AEM-Menü](/help/commerce/cif/assets/aem-menu.png)
 
 ## Durchsuchen von Produktkatalogen {#browsing-product-catalogs}
 
-Das Produkt-Cockpit ist hierarchisch nach der Produktkatalogstruktur organisiert. Die erste Ebene zeigt die Katalogstammebene aller konfigurierten Produktkataloge einschließlich Metadaten des Commerce-Backend.
+Das Produkt-Cockpit ist hierarchisch nach der Produktkatalogstruktur organisiert. Die erste Ebene zeigt die Katalogstammebene aller konfigurierten Produktkataloge einschließlich Metadaten des Commerce-Backends.
 
 ![Konfigurierte Kataloge](/help/commerce/cif/assets/catalog-overview.png)
 
 Durch Klicken auf eine Kategorie werden die untergeordneten Elemente der angeklickten Kategorie geladen.
 
-![Kategorienunterkinder](/help/commerce/cif/assets/catalog-category-children.png)
+![Untergeordnete Elemente einer Kategorie](/help/commerce/cif/assets/catalog-category-children.png)
 
 Wenn Sie auf ein Produkt klicken, werden Produktvarianten geladen, sofern verfügbar.
 
@@ -54,30 +55,30 @@ Wenn Sie auf ein Produkt klicken, werden Produktvarianten geladen, sofern verfü
 >
 >Produktkatalogdaten in AEM sind Daten, die in Echtzeit über den konfigurierten Commerce-Endpunkt abgerufen werden. In AEM werden keine Produktkatalogdaten gespeichert.
 
-## Suchen von Produktkatalogen {#searching-product-catalog}
+## Durchsuchen von Produktkatalogen {#searching-product-catalog}
 
-Eine Volltextsuche über den vollständigen Produktkatalog finden Sie auf der Registerkarte mit dem linken Filter , um Produkte schnell zu finden.
+Eine Volltextsuche über den gesamten Produktkatalog wird auf der linken Filter-Registerkarte angeboten, um Produkte schnell zu finden.
 
-![Suchen](/help/commerce/cif/assets/search-cockpit.png)
+![Durchsuchen](/help/commerce/cif/assets/search-cockpit.png)
 
-## Staging-Produktkatalog durchsuchen {#staged-product-catalogs}
+## Durchsuchen des gestaffelten Produktkatalogs {#staged-product-catalogs}
 
-Standardmäßig zeigt das Produkt-Cockpit Live-Produktkatalogdaten an. Mithilfe des &quot;STAGED CATALOG&quot;-Tabs auf der linken Filterseite wird der Produktkatalog für jedes ausgewählte Datum geladen.
+Standardmäßig zeigt das Produkt-Cockpit Live-Produktkatalogdaten an. Mithilfe von „STAGED CATALOG“ auf der linken Filterseite wird der Produktkatalog für jedes ausgewählte Datum geladen.
 
 ![gestaffelter Katalog](/help/commerce/cif/assets/staged-cockpit.png)
 
 ## Eigenschaften des Produktkatalogs {#catalog-properties}
 
-Durch Klicken auf das Eigenschaftensymbol eines Produkts oder einer Kategorie wird die Eigenschaftenansicht des ausgewählten Objekts geöffnet. Die offenen Eigenschaften einer Produktvariante entsprechen dem Öffnen der Hauptprodukteigenschaften.
+Durch Klicken auf das Eigenschaftensymbol eines Produkts oder einer Kategorie wird die Eigenschaftenansicht des ausgewählten Objekts geöffnet. Das Öffnen der Eigenschaften einer Produktvariante ist gleichbedeutend mit dem Öffnen der Haupteigenschaften des Produkts.
 
-### Commerce-Registerkarten {#tabs}
+### Registerkarten „Commerce“ {#tabs}
 
-Die Registerkarten Allgemein und Variante zeigen vordefinierte Commerce-Eigenschaften, die aus dem Commerce-Backend stammen. Diese Daten (einschl. -Varianten) sind schreibgeschützte Daten in AEM, da das Aufzeichnungssystem das Commerce-Backend ist. Der Tab Variante wird nur für Produkte mit Varianten angezeigt und enthält eine Liste aller Varianten.
+Die Registerkarten „Allgemein“ und „Varianten“ zeigen vordefinierte Commerce-Eigenschaften, die aus dem Commerce-Backend stammen. Diese Daten (einschl. Varianten) sind schreibgeschützte Daten in AEM, da das Aufzeichnungssystem das Commerce-Backend ist. Die Registerkarte „Varianten“ wird nur für Produkte mit Varianten angezeigt und enthält eine Liste aller Varianten.
 
-![Katalogeigenschaften](/help/commerce/cif/assets/catalog-properties.png)
+![Katalog-Eigenschaften](/help/commerce/cif/assets/catalog-properties.png)
 
-### AEM Inhaltsregisterkarten {#content-tabs}
+### AEM-Inhaltsregisterkarten {#content-tabs}
 
-Diese Registerkarten, gruppiert nach AEM Inhaltstypen (Erlebnisfragmente, Inhaltsfragmente, zugehörige Assets), zeigen AEM Inhalt an, der mit dem Commerce-Objekt verknüpft ist. Mit der Aktion &quot;Details anzeigen&quot;wird eine neue Browser-Registerkarte mit dem ausgewählten Inhalt geöffnet.
+Diese Registerkarten, gruppiert nach AEM Inhaltstypen (Erlebnisfragmente, Inhaltsfragmente, zugehörige Assets), zeigen AEM-Inhalte an, die mit dem Commerce-Objekt verknüpft sind. Durch die Aktion „Details anzeigen“ wird eine neue Browser-Registerkarte mit dem ausgewählten Inhalt geöffnet.
 
 ![Inhaltseigenschaften](/help/commerce/cif/assets/content-properties.png)

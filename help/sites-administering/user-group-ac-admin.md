@@ -52,7 +52,7 @@ In CRX verfügt eine Gruppe über die folgenden Eigenschaften:
 * Eine hierarchische Gruppierung kann mithilfe von Mitgliedsbeziehungen erzielt werden. Sie können eine Gruppe nicht direkt unter einer anderen Gruppe im Repository platzieren.
 * Sie können die Zugriffsrechte für alle Gruppenmitglieder definieren.
 
-**Access** RightsCRX verwendet Zugriffsrechte, um den Zugriff auf bestimmte Bereiche des Repositorys zu steuern.
+**Zugriffsberechtigungen** CRX verwendet Zugriffsrechte, um den Zugriff auf bestimmte Bereiche des Repositorys zu steuern.
 
 Dies erfolgt über die Zuweisung von Berechtigungen, um den Zugriff auf eine Ressource (Knoten oder Pfad) im Repository zuzulassen oder abzulehnen. Da zahlreiche Berechtigungen zugewiesen werden können, müssen sie ausgewertet werden, um festzustellen, welche Kombination für die aktuelle Anfrage relevant ist.
 
@@ -109,7 +109,6 @@ Die Liste der Zugriffsrechte, die für das Objekt relevant sind, wird erstellt a
 >* CRX berücksichtigt keine Benutzerhierarchie bei der Kompilierung der Liste.
 >* CRX verwendet nur dann eine Gruppenhierarchie, wenn Sie eine Gruppe als Mitglied einer anderen Gruppe einfügen. Es gibt keine automatische Vererbung (Übernahme) von Gruppenberechtigungen.
 >* Die Reihenfolge, in der Sie die Gruppen festlegen, hat keinen Einfluss auf die Zugriffsrechte.
-
 >
 
 
@@ -117,7 +116,7 @@ Die Liste der Zugriffsrechte, die für das Objekt relevant sind, wird erstellt a
 
 Wenn CRX die Anfrage verarbeitet, vergleicht es die Zugriffsanfrage des Objekts mit der Liste der Zugriffssteuerung im Repository-Knoten:
 
-Wenn Linda also eine Aktualisierung des Knotens `/features` in der folgenden Repository-Struktur anfordert:
+Wenn Linda also eine Aktualisierung der `/features` Knoten in der folgenden Repository-Struktur:
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
@@ -150,7 +149,7 @@ Nachfolgend sehen Sie zwei Beispiele, in denen der Benutzer `aUser` Mitglied der
 
 Im obigen Fall:
 
-* `aUser` keine Schreibberechtigung für  `grandChildNode`.
+* `aUser` keine Schreibberechtigung für `grandChildNode`.
 
 ```xml
    + parentNode
@@ -165,7 +164,7 @@ Im obigen Fall:
 
 In diesem Fall:
 
-* `aUser` keine Schreibberechtigung für  `grandChildNode`.
+* `aUser` keine Schreibberechtigung für `grandChildNode`.
 * Der zweite ACE-Eintrag für den Benutzer `aUser` ist redundant.
 
 Zugriffsrechte von mehreren Gruppenprinzipalen werden basierend auf ihrer Reihenfolge innerhalb der Hierarchie und innerhalb einer einzigen Zugriffssteuerungsliste bewertet.
@@ -280,7 +279,6 @@ Wenn ein Konto stellvertretend für ein anderes agiert, ist dies sehr schwierig 
 >
 >* Benutzer
 >* Gruppen mit vielen Mitgliedern
-
 >
 
 
@@ -376,7 +374,7 @@ Die Spalte **Übernommen** zeigt Mitgliedschaften an, die durch eine Mitgliedsch
 
 >[!NOTE]
 >
->Wenn die Eigentümer-, Bearbeiter- oder Betrachterrolle einem Benutzer in einem beliebigen Asset-Ordner zugewiesen wird, wird eine neue Gruppe erstellt. Der Gruppenname hat das Format `mac-default-<foldername>` für jeden Ordner, für den die Rollen definiert sind.
+>Wenn die Eigentümer-, Bearbeiter- oder Betrachterrolle einem Benutzer in einem beliebigen Asset-Ordner zugewiesen wird, wird eine neue Gruppe erstellt. Der Gruppenname entspricht dem Format `mac-default-<foldername>` für jeden Ordner, für den die Rollen definiert sind.
 
 ### Erstellen von Gruppenkonten {#creating-a-group-account}
 
@@ -442,7 +440,7 @@ Alternativ können Sie ein vorhandenes Mitglied über das Papierkorb-Symbol lös
 
 ## Verwalten von Zugriffsrechten {#access-right-management}
 
-Im Tab **Zugriffssteuerung** der CRXDE Lite können Sie die Zugriffskontrollrichtlinien definieren und die zugehörigen Berechtigungen zuweisen.
+Mit dem **Zugriffssteuerung** -Registerkarte der CRXDE Lite können Sie die Zugriffssteuerungsrichtlinien definieren und die entsprechenden Berechtigungen zuweisen.
 
 Wählen Sie beispielsweise auf der Registerkarte „Zugangssteuerung“ im unteren rechten Bereich für die Option **Aktueller Pfad** die gewünschte Ressource im linken Bereich aus:
 

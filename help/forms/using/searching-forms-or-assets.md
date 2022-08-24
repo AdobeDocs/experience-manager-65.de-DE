@@ -12,9 +12,9 @@ docset: aem65
 role: Admin
 exl-id: 1f4f49b7-5f32-47dd-9dc7-a6974faf2bdf
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '692'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ Klicken Sie auf ![aem6forms_search](assets/aem6forms_search.png), um das Suchfel
 
 Bei einer einfachen Suche handelt es sich um die Standardsuche, die ohne Angabe von Filtern ausgeführt wird. Eine Volltextsuche in Metadateneigenschaften wird von AEM Forms durchgeführt.
 
-Um eine einfache Suche durchzuführen, geben Sie in das Textfeld die Suchanfrage ein drücken Sie die Enter-Taste. Für eine Übereinstimmung mit einer beliebigen Anzahl an Zeichen können Sie auch das Platzhalterzeichen (*) eingeben.
+Um eine einfache Suche durchzuführen, geben Sie in das Textfeld die Suchanfrage ein drücken Sie die Enter-Taste. Sie können auch das Platzhalterzeichen (&#42;), um eine Übereinstimmung mit einer beliebigen Anzahl von Zeichen zu erhalten.
 
 Adobe Experience Manager sucht in den Metadateneigenschaften nach dem eingegebenen Text und gibt die entsprechenden Ergebnisse wieder. Wenn Sie mehr als ein Wort eingeben, wird beim Suchvorgang für den gesamten Text nach Übereinstimmungen gesucht. 
 
@@ -40,7 +40,7 @@ Beachten Sie bei der einfachen Suche die folgenden Punkte:
 * Wenn Sie mehr als ein Wort eingeben, wird beim Suchvorgang für den gesamten Text nach Übereinstimmungen gesucht. 
 * Bei der Suche wird die Groß-/Kleinschreibung nicht beachtet. Wenn Sie z. B. `geometrixx` eingeben, werden Assets mit den Titeln `Geometrixx`, `GEOMETRIXX` und `GeoMetRixx` in den Suchergebnissen angezeigt.
 
-* Unvollständige Übereinstimmungen mit einem Wort werden nicht unterstützt. Wenn Sie nach unvollständigen Zeichenfolgen suchen möchten, verwenden Sie den Platzhalter (*). Wenn bei der Suchanfrage jedoch eine Übereinstimmung mit einem vollständigen Wort vorliegt, wird das entsprechende Formular bzw. Asset angezeigt.
+* Unvollständige Übereinstimmungen mit einem Wort werden nicht unterstützt. Verwenden Sie zum Suchen mithilfe von partiellen Zeichenfolgen &#42; Platzhalter. Wenn bei der Suchanfrage jedoch eine Übereinstimmung mit einem vollständigen Wort vorliegt, wird das entsprechende Formular bzw. Asset angezeigt.
 * Zusätzliche Leerzeichen werden berücksichtigt und während der Suche nicht entfernt. Zum Beispiel ist `My form` nicht die gleiche Suchanfrage wie `My form`.
 
 * Wenn sich die Daten von den Anzeigewerten der Felder in den Metadateneigenschaften abweichen, können Sie Anzeigewerte als Suchparameter nicht verwenden. Beispielsweise können Sie keine Suche auf Basis eines Status, z. B. geändert oder veröffentlicht, durchführen, da diese Eigenschaften in einem anderen Format gespeichert werden.

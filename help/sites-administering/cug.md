@@ -1,8 +1,8 @@
 ---
 title: Erstellen von geschlossenen Benutzergruppen
-seo-title: Erstellen von geschlossenen Benutzergruppen
+seo-title: Creating a Closed User Group
 description: Erfahren Sie, wie Sie eine geschlossene Benutzergruppe erstellen.
-seo-description: Erfahren Sie, wie Sie eine geschlossene Benutzergruppe erstellen.
+seo-description: Learn how to create a Closed User Group.
 uuid: dc3c7dbd-2e86-43f9-9377-3b75053203b3
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
 source-git-commit: cb4b0cb60b8709beea3da70495a15edc8c4831b8
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 80%
+source-wordcount: '795'
+ht-degree: 82%
 
 ---
 
@@ -39,7 +39,7 @@ So konfigurieren Sie einen solchen Bereich innerhalb Ihrer Website:
 >
 >Die Auswirkungen der CUGs sollten bei Leistungstests immer berücksichtigt werden.
 
-## Erstellen der zu verwendenden Benutzergruppe  {#creating-the-user-group-to-be-used}
+## Erstellen der zu verwendenden Benutzergruppe {#creating-the-user-group-to-be-used}
 
 So erstellen Sie eine geschlossene Benutzergruppe:
 
@@ -54,7 +54,7 @@ So erstellen Sie eine geschlossene Benutzergruppe:
    ![screen_shot_2018-10-30at145502](assets/screenshot_2018-10-30at145502.png)
 
 1. Klicken Sie auf die Schaltfläche **Erstellen** oben rechts, um eine neue Gruppe zu erstellen.
-1. Benennen Sie Ihre neue Gruppe. z. B. `cug_access`.
+1. Benennen Sie Ihre neue Gruppe. Beispiel: `cug_access`.
 
    ![screen_shot_2018-10-30at151459](assets/screenshot_2018-10-30at151459.png)
 
@@ -84,13 +84,13 @@ So wenden Sie die CUG auf eine Seite an:
 
    >[HINWEIS!]
    >
-   > Beachten Sie, dass CUGs auf der Registerkarte &quot;Berechtigungen&quot;nicht für Live Copies aus Blueprints bereitgestellt werden können. Planen Sie dies ein, wenn Sie eine Live Copy konfigurieren.
+   > Beachten Sie, dass CUGs auf der Registerkarte „Berechtigungen“ aus Blueprints nicht zu Live Copies ausgerollt werden können. Planen Sie dies ein, wenn Sie eine Live Copy konfigurieren.
    >
    > Weitere Informationen finden Sie auf [dieser Seite](closed-user-groups.md#aem-livecopy).
 
 1. Suchen Sie nach Ihrer CUG im folgenden Fenster und fügen Sie in diesem Fenster die Gruppe **cug_access** hinzu. Klicken Sie abschließend **Speichern**.
 1. Klicken Sie auf **Aktiviert**, um festzulegen, dass diese Seite (und alle untergeordneten Seiten) zu einer CUG gehören.
-1. Geben Sie die **Anmeldeseite** an, die von Mitgliedern der Gruppe verwendet werden soll. Beispiel:
+1. Geben Sie die **Anmeldeseite** die Mitglieder der Gruppe verwenden; Beispiel:
 
    `/content/geometrixx/en/toolbar/login.html`
 
@@ -102,13 +102,13 @@ So wenden Sie die CUG auf eine Seite an:
 
 Informationen zu Profilen in der Publishing-Umgebung und der Bereitstellung von Formularen zum An- und Abmelden finden Sie in [Identitätsmanagement](/help/sites-administering/identity-management.md).
 
-## Erstellen eines Links zum Bereich  {#linking-to-the-realm}
+## Erstellen eines Links zum Bereich {#linking-to-the-realm}
 
 Da das Ziel von Links zum CUG-Bereich für anonyme Benutzer nicht sichtbar ist, entfernt der Linkchecker solche Links.
 
 Um dies zu vermeiden, empfiehlt es sich, nicht-geschützte Umleitungsseiten zu erstellen, die auf Seiten innerhalb des CUG-Bereichs verweisen. Die Navigationseinträge werden gerendert, ohne dass der Linkchecker Probleme verursacht. Nur wenn tatsächlich auf die Umleitungsseiten zugegriffen wird, wird der Benutzer in den CUG-Bereich umgeleitet – nachdem er seine Anmeldedaten erfolgreich bereitgestellt hat.
 
-## Konfigurieren des Dispatchers für CUGs  {#configure-dispatcher-for-cugs}
+## Konfigurieren des Dispatchers für CUGs {#configure-dispatcher-for-cugs}
 
 Falls Sie den Dispatcher verwenden, müssen Sie eine Dispatcher-Farm mit den folgenden Eigenschaften definieren:
 
@@ -116,9 +116,9 @@ Falls Sie den Dispatcher verwenden, müssen Sie eine Dispatcher-Farm mit den fol
 * \sessionmanagement: siehe unten
 * [cache](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache): Ein Zwischenspeicher-Verzeichnis, das für die Dateien vorgesehen ist, auf die die CUG angewendet wird
 
-### Konfigurieren des Dispatcher-Sitzungsmanagements für CUGs  {#configuring-dispatcher-session-management-for-cugs}
+### Konfigurieren des Dispatcher-Sitzungsmanagements für CUGs {#configuring-dispatcher-session-management-for-cugs}
 
-Konfigurieren Sie die [Sitzungsverwaltung in der Datei &quot;dispatcher.any](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement)&quot;für die CUG. Der Authentifizierungs-Handler, der verwendet wird, wenn der Zugriff für CUG-Seiten angefordert wird, bestimmt, wie Sie die Sitzungsverwaltung konfigurieren.
+Konfigurieren [Sitzungsverwaltung in der Datei &quot;dispatcher.any&quot;](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) für die CUG. Der Authentifizierungs-Handler, der verwendet wird, wenn der Zugriff für CUG-Seiten angefordert wird, bestimmt, wie Sie die Sitzungsverwaltung konfigurieren.
 
 ```xml
 /sessionmanagement
@@ -132,7 +132,7 @@ Konfigurieren Sie die [Sitzungsverwaltung in der Datei &quot;dispatcher.any](htt
 >Wenn für eine Dispatcher-Farm das Sitzungsmanagement aktiviert ist, werden alle von der Farm verarbeiteten Seiten nicht zwischengespeichert. Um Seiten zwischenzuspeichern, die sich außerhalb der CUG befinden, erstellen Sie eine zweite Farm in dispatcher.any
 >, der die Nicht-CUG-Seiten verarbeitet.
 
-1. Konfigurieren Sie [/sessionmanagement](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) durch Definition von `/directory`. Beispiel:
+1. Konfigurieren [/sessionmanagement](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) durch Definition `/directory`; Beispiel:
 
    ```xml
    /sessionmanagement

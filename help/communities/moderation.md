@@ -189,7 +189,7 @@ So fügen Sie zusätzliche Ressourcen zum Filtern hinzu:
       `Voting=social/tally/components/hbs/voting`
    ![additional-contenttype](assets/additional-contenttype.png)
 
-* Klicken Sie auf Speichern.
+* Wählen Sie Speichern aus.
 * Aktualisieren Sie die Konsole Communities - Moderation .
 
 Das Ergebnis ist ein neuer, auswählbarer Filter für `Voting` unter `Content Type` Filtergruppe.

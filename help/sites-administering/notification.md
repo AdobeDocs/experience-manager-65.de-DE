@@ -13,7 +13,7 @@ exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 source-git-commit: ea5abbbe8f928a63b7d3d6f96f3007a3c82706e0
 workflow-type: tm+mt
 source-wordcount: '2116'
-ht-degree: 42%
+ht-degree: 51%
 
 ---
 
@@ -146,7 +146,7 @@ Dabei kann &lt;text_x> ein Mix von statischem Text und dynamischen Stringvariabl
 
    &lt;page event=&quot;&quot; type=&quot;&quot;> => &lt;page path=&quot;&quot;>
 
-   Zum Beispiel:
+   Beispiel:
 
    PageModified => /content/geometrixx/en/products
 
@@ -390,16 +390,16 @@ Bestätigen Sie abschließend die Konfiguration durch:
 
 ### Microsoft Outlook {#microsoft-outlook}
 
-1. Navigieren Sie zu [https://portal.azure.com/](https://portal.azure.com/) und melden Sie sich an.
-1. Suchen Sie nach **Azure Active Directory** in der Suchleiste und klicken Sie auf das Ergebnis. Sie können auch direkt zu [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
-1. Klicken Sie auf **App-Registrierung** - **Neue Registrierung**
+1. Gehen Sie zu [https://portal.azure.com/](https://portal.azure.com/) und melden Sie sich an.
+1. Suchen Sie in der Suchleiste nach **Azure Active Directory** und klicken Sie auf das Ergebnis. Alternativ können Sie direkt zu [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) gehen.
+1. Klicken Sie auf **Registrierung einer Anwendung** – **Neue Registrierung**
 
    ![](assets/oauth-outlook1.png)
 
-1. Füllen Sie die Informationen entsprechend Ihren Anforderungen aus und klicken Sie auf **registrieren**
-1. Wechseln Sie zur neu erstellten App und wählen Sie **API-Berechtigungen**
-1. Navigieren Sie zu **Berechtigung hinzufügen** - **Diagrammberechtigungen** - **Delegierte Berechtigungen**
-1. Wählen Sie die folgenden Berechtigungen für Ihre App aus und klicken Sie auf **Berechtigung hinzufügen**:
+1. Füllen Sie die Informationen entsprechend Ihren Anforderungen aus und klicken Sie dann auf **Registrieren**
+1. Wechseln Sie zur neu erstellten Anwendung und wählen Sie **API-Berechtigungen** aus.
+1. Gehen Sie zu **Berechtigung hinzufügen** – **Diagrammberechtigungen** – **Zugewiesene Berechtigungen**.
+1. Wählen Sie die folgenden Berechtigungen für Ihre Anwendung aus und klicken Sie dann auf **Berechtigung hinzufügen**:
    * `SMTP.Send`
    * `Mail.Read`
    * `Mail.Send`
@@ -409,16 +409,16 @@ Bestätigen Sie abschließend die Konfiguration durch:
    * `http://localhost:4503/services/mailer/oauth2/token`
 1. Wiederholen Sie die obigen Schritte für jede Veröffentlichungsinstanz
 1. Konfigurieren Sie die Einstellungen entsprechend Ihren Anforderungen.
-1. Navigieren Sie als Nächstes zu **Zertifikate und Geheimnisse** klicken Sie auf **Neues Client-Geheimnis** und führen Sie die Schritte auf dem Bildschirm aus, um ein Geheimnis zu erstellen. Notieren Sie sich dieses Geheimnis für die spätere Verwendung
-1. Presse **Übersicht** im linken Bereich und kopieren Sie die Werte für **Anwendungs-ID (client)** und **Verzeichnis-ID (Mandanten-ID)** zur späteren Verwendung
+1. Gehen Sie dann zu **Zertifikate und Geheimnisse**, klicken Sie auf **Neues Client-Geheimnis** und führen Sie die Schritte auf dem Bildschirm aus, um ein Geheimnis zu erstellen. Notieren Sie sich dieses Geheimnis für die spätere Verwendung.
+1. Klicken Sie auf **Überblick** im linken Bereich und kopieren Sie die Werte für **Anwendungs (Client) ID** und **Directory (Mandant) ID** zur späteren Verwendung.
 
 Um eine Neukodifizierung vorzunehmen, müssen Sie die folgenden Informationen eingeben, um OAuth2 für den Mailer-Dienst auf der AEM zu konfigurieren:
 
-* Die Auth-URL, die mit der Mandanten-ID erstellt wird. Sie hat folgendes Formular: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
-* Die Token-URL, die mit der Mandanten-ID erstellt wird. Sie hat folgendes Formular: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
-* Die Aktualisieren-URL, die mit der Mandanten-ID erstellt wird. Sie hat folgendes Formular: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* Die Auth-URL, die mit der Mandanten-ID erstellt wird. Sie hat folgendes Format: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
+* Die Token-URL, die mit der Mandanten-ID erstellt wird. Sie hat folgendes Format: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* Die Aktualisierungs-URL, die mit der Mandanten-ID erstellt wird. Sie hat folgendes Format: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
 * Die Client-ID
-* Client Secret
+* Das Client-Geheimnis
 
 **AEM Seitenkonfigurationen**
 
@@ -437,7 +437,7 @@ Integrieren Sie anschließend Ihre OAuth2-Einstellungen in AEM:
 1. Füllen Sie die erforderlichen Informationen wie folgt aus:
    * Füllen Sie die URL für Autorisierungs-URL, Token-URL und Aktualisierungstoken aus, indem Sie sie wie unter [Ende dieses Verfahrens](#microsoft-outlook)
    * Client-ID und Client-Geheimnis: konfigurieren Sie diese Felder mit den Werten, die Sie wie oben beschrieben abgerufen haben.
-   * Fügen Sie der Konfiguration die folgenden Perimeter hinzu:
+   * Fügen Sie der Konfiguration die folgenden Umfänge hinzu:
       * openid
       * offline_access
       * `https://outlook.office365.com/Mail.Send`

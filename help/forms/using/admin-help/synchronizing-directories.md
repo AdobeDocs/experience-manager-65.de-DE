@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7ec0698a-9e6e-48d4-bba2-5a6eee313900
 exl-id: cb642289-4137-4ba7-8bde-0e458c8c94fe
 source-git-commit: 2a2f8538b6554540b546f4d345c0b3c0d3e706f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 100%
 
@@ -61,14 +61,14 @@ User Management führt folgende Schritte aus, wenn Delta-Ordnersynchronisierung 
 
 Standardmäßig protokolliert User Management während des Synchronisierungsprozesses detaillierte Statistiken.
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Konfiguration“ > „Erweiterte Systemattribute konfigurieren“.
+1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „User Management“ > „Konfiguration“ > „Erweiterte Systemattribute konfigurieren“.
 1. Deaktivieren Sie unter „Protokollierung der Synchronisationsstatistiken“ das Kontrollkästchen, um die detaillierte Protokollierung zu deaktivieren, oder aktivieren Sie das Kontrollkästchen, um die detaillierte Protokollierung zu aktivieren. Klicken Sie dann auf „Speichern“.
 
 ## Die Wiederholungsoptionen für die Ordnersynchronisierung konfigurieren {#configure-the-directory-synchronization-retry-option}
 
 Sie können User Management so konfigurieren, dass regelmäßige Prüfungen auf fehlgeschlagene Versuche zur Ordnersynchronisierung erfolgen. User Management versucht dann, die fehlgeschlagenen Synchronisierungen fertigzustellen.
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Konfiguration“ > „Erweiterte Systemattribute konfigurieren“.
+1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „User Management“ > „Konfiguration“ > „Erweiterte Systemattribute konfigurieren“.
 1. Geben Sie unter „Synchronisations-Finisher Cron Expression“ einen Cron-Ausdruck ein, der das Intervall, in dem User Management die fehlgeschlagenen Synchronisierungen erneut auszuführen versucht, angibt. Die Verwendung des Cron-Ausdrucks basiert auf dem Open-Source-Auftragsplanungssystem Quartz, Version 1.4.0.
 
    Der Standardwert ist 0 0/13 &amp;ast; ? &amp;ast;, was bedeutet, dass die Prüfung alle 13 Minuten durchgeführt wird.

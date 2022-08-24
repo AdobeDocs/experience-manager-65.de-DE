@@ -12,7 +12,7 @@ discoiquuid: 9e8db506-9ace-4e1f-8a7b-c4e9b15dde7e
 role: Developer
 exl-id: 6af148eb-427a-4b54-9c5f-8750736882d8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3926'
 ht-degree: 100%
 
@@ -162,18 +162,18 @@ So wenden Sie mithilfe der API für Acrobat Reader DC-Erweiterungen (Webservice)
 
    >[!NOTE]
    >
-   >Ersetzen Sie `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie `localhost` mit der IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
 
 1. Erstellen Sie ein Client-Objekt für Acrobat Reader DC-Erweiterungen.
 
-   * Erstellen Sie ein `ReaderExtensionsServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
-   * Erstellen Sie ein `ReaderExtensionsServiceClient.Endpoint.Address`-Objekt, indem Sie den `System.ServiceModel.EndpointAddress`-Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der dem AEM Forms-Service die WSDL angibt (z. B. `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`). Stellen Sie sicher, dass Sie `?blob=mtom` angeben.)
-   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des Feldes `ReaderExtensionsServiceClient.Endpoint.Binding` abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Setzen Sie das Feld `MessageEncoding` des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Erstellen Sie ein `ReaderExtensionsServiceClient`-Objekt, indem Sie seinen standardmäßigen Konstruktor verwenden.
+   * Erstellen Sie ein `ReaderExtensionsServiceClient.Endpoint.Address`-Objekt, indem Sie den `System.ServiceModel.EndpointAddress`-Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL zu dem AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`). Stellen Sie sicher, dass Sie `?blob=mtom` angeben.)
+   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts im `ReaderExtensionsServiceClient.Endpoint.Binding`-Feld. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
+   * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
-      * Weisen Sie dem Feld `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password` den entsprechenden Kennwortwert zu.
+      * Weisen Sie dem Feld `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
@@ -181,7 +181,7 @@ So wenden Sie mithilfe der API für Acrobat Reader DC-Erweiterungen (Webservice)
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern eines PDF-Dokuments verwendet, auf das Verwendungsrechte angewendet werden.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die Eigenschaft `Length` des `System.IO.FileStream`-Objekts abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seiner `MTOM`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
 
@@ -207,7 +207,7 @@ So wenden Sie mithilfe der API für Acrobat Reader DC-Erweiterungen (Webservice)
 1. Speichern Sie das berechtigungsaktivierte PDF-Dokument.
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Dateispeicherort des berechtigungsaktivierten PDF-Dokuments darstellt.
-   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `applyUsageRights` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `MTOM` des `BLOB`-Objekts abrufen.
+   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `applyUsageRights` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des `MTOM`-Datenelements des `BLOB`-Objekts abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
    * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
@@ -243,7 +243,7 @@ Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn S
 
 **Erstellen eines Client-Objekts für Acrobat Reader DC-Erweiterungen**
 
-Bevor Sie einen Service-Vorgang für Acrobat Reader DC-Erweiterungen programmgesteuert ausführen können, müssen Sie ein Service-Client-Objekt für Acrobat Reader DC-Erweiterungen erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `ReaderExtensionsServiceClient`-Objekt. Wenn Sie die Webservice-API für Acrobat Reader DC-Erweiterungen verwenden, erstellen Sie ein `ReaderExtensionsServiceService`-Objekt.
+Bevor Sie einen Service-Vorgang für Acrobat Reader DC-Erweiterungen programmgesteuert ausführen können, müssen Sie ein Service-Client-Objekt für Acrobat Reader DC-Erweiterungen erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `ReaderExtensionsServiceClient`-Objekt. Wenn Sie die Web-Service-API für Acrobat Reader DC-Erweiterungen verwenden, erstellen Sie ein `ReaderExtensionsServiceService`-Objekt.
 
 **Abrufen eines berechtigungsaktivierten PDF-Dokuments**
 
@@ -324,30 +324,30 @@ Entfernen der Verwendungsrechte aus einem PDF-Dokument mit aktivierten Rechten a
    * Erstellen Sie ein `ReaderExtensionsServiceClient`-Objekt, indem Sie seinen standardmäßigen Konstruktor verwenden.
    * Erstellen Sie ein `ReaderExtensionsServiceClient.Endpoint.Address`-Objekt, indem Sie den `System.ServiceModel.EndpointAddress`-Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL zu dem AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`). Stellen Sie sicher, dass Sie `?blob=mtom` angeben.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts im `ReaderExtensionsServiceClient.Endpoint.Binding`-Feld. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Stellen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
-      * Weisen Sie dem `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`-Feld den AEM Forms-Benutzernamen zu.
-      * Weisen Sie dem `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`-Feld das entsprechende Passwort zu.
-      * Weisen Sie den Konstantenwert `HttpClientCredentialType.Basic` dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` zu.
-      * Weisen Sie den Konstantenwert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
+      * Weisen Sie dem Feld `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+      * Weisen Sie dem Feld `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
+      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
+      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
 1. Rufen Sie ein PDF-Dokument ab.
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des PDF-Dokuments verwendet, aus dem die Verwendungsrechte entfernt werden sollen.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments und den Modus enthält, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts aufrufen.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `Read` -Methode des `System.IO.FileStream`-Objekts anwenden und dabei das Byte-Array, die Startposition und die Länge des zu lesenden Streams übergeben.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
+   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `Read`-Methode des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
    * Füllen Sie das `BLOB`-Objekt mit den Inhalten des Byte-Arrays, indem Sie diese der `MTOM`-Eigenschaft des Objekts zuweisen.
 
 1. Entfernen der Verwendungsrechte aus dem PDF-Dokument.
 
-   Entfernen Sie Verwendungsrechte aus dem PDF-Dokument, indem Sie die `removeUsageRights`-Methode des `ReaderExtensionsServiceClient`-Objekts aufrufen und dabei das `BLOB`-Objekt übergeben, das das PDF-Dokument mit aktivierten Rechten enthält. Diese Methode gibt ein `BLOB`-Objekt zurück, das ein PDF-Dokument ohne Verwendungsrechte enthält.
+   Entfernen Sie die Verwendungsrechte aus dem PDF-Dokument, indem Sie die `removeUsageRights`-Methode des `ReaderExtensionsServiceClient`-Objekts aufrufen und das `BLOB`-Objekt übergeben, das das PDF-Dokument mit aktivierten Berechtigungen enthält. Diese Methode gibt ein `BLOB`-Objekt zurück, das ein PDF-Dokument ohne Verwendungsrechte enthält.
 
 1. Wenden Sie Verwendungsrechte auf das PDF-Dokument an.
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie dessen Konstruktor aufrufen und eine Zeichenfolge übergeben, die den Speicherort der PDF-Datei darstellt.
-   * Erstellen Sie ein Byte-Array, das den Dateninhalt des von der Methode `removeUsageRights` zurückgegebenen `BLOB`-Objekts enthält. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `MTOM` des `BLOB`-Objekts abrufen.
+   * Erstellen Sie ein Byte-Array, das den Dateninhalt des von der Methode `removeUsageRights` zurückgegebenen `BLOB`-Objekts enthält. Füllen Sie das Byte-Array, indem Sie den Wert des `MTOM`-Datenelements des `BLOB`-Objekts abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie dessen Konstruktor verwenden und das `System.IO.FileStream`-Objekt übergeben.
 
 **Siehe auch**
@@ -419,7 +419,7 @@ Abrufen von Berechtigungen mithilfe der API für Acrobat Reader DC-Erweiterungen
 
 1. Erstellen Sie ein Client-Objekt für Acrobat Reader DC-Erweiterungen.
 
-   Erstellen Sie mithilfe des Konstruktors ein `ReaderExtensionsServiceClient`-Objekt und übergeben Sie ein `ServiceClientFactory`-Objekt, das Verbindungseigenschaften enthält.
+   Erstellen Sie ein `ReaderExtensionsServiceClient`-Objekt, indem Sie seinen Konstruktor verwenden und ein `ServiceClientFactory`-Objekt übergeben, das Verbindungseigenschaften enthält.
 
 1. Rufen Sie ein PDF-Dokument ab.
 
@@ -452,18 +452,18 @@ Abrufen von Informationen zu Berechtigungen mithilfe der API für Acrobat Reader
 
    >[!NOTE]
    >
-   >Ersetzen Sie `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie `localhost` mit der IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
 
 1. Erstellen Sie ein Client-Objekt für Acrobat Reader DC-Erweiterungen.
 
    * Erstellen Sie ein `ReaderExtensionsServiceClient`-Objekt mithilfe seines Standardkonstruktors.
-   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `ReaderExtensionsServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`). Stellen Sie sicher, dass Sie `?blob=mtom` angeben.
-   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des Felds `ReaderExtensionsServiceClient.Endpoint.Binding` abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
+   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `ReaderExtensionsServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL zu dem AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`). Stellen Sie sicher, dass Sie `?blob=mtom` angeben.)
+   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts im `ReaderExtensionsServiceClient.Endpoint.Binding`-Feld. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
-      * Weisen Sie den AEM Forms-Benutzernamen dem Feld `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName` zu.
-      * Weisen Sie dem Feld `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password` den zugehörigen Kennwortwert zu.
+      * Weisen Sie dem Feld `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+      * Weisen Sie dem Feld `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
@@ -472,8 +472,8 @@ Abrufen von Informationen zu Berechtigungen mithilfe der API für Acrobat Reader
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern eines PDF-Dokuments mit aktivierten Berechtigungen verwendet.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments mit aktivierten Berechtigungen und den Ausführungsmodus zum Öffnen der Datei darstellt.
    * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
-   * Füllen Sie das Byte-Array mit Datenstromdaten, indem Sie die `Read`-Methode des `System.IO.FileStream`-Objekts aufrufen und ihr das Byte-Array, die Startposition und die zu lesende Datenstromlänge übergeben.
-   * Füllen Sie das `BLOB`-Objekt, indem Sie seiner `MTOM`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
+   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `Read`-Methode des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
+   * Füllen Sie das `BLOB`-Objekt mit den Inhalten des Byte-Arrays, indem Sie diese der `MTOM`-Eigenschaft des Objekts zuweisen.
 
 1. Entfernen der Verwendungsrechte aus dem PDF-Dokument.
 

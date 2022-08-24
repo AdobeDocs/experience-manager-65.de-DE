@@ -1,8 +1,8 @@
 ---
 title: Einbinden von Tagging in eine AEM-Anwendung
-seo-title: Einbinden von Tagging in eine AEM-Anwendung
+seo-title: Building Tagging into an AEM Application
 description: Programmatisch mit Tags oder erweiterten Tags innerhalb eines benutzerdefinierten AEM-Programms arbeiten
-seo-description: Programmatisch mit Tags oder erweiterten Tags innerhalb eines benutzerdefinierten AEM-Programms arbeiten
+seo-description: Programmatically work with tags or extending tags within a custom AEM application
 uuid: 0549552e-0d51-4162-b418-babf4ceee046
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ feature: Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 75%
+source-wordcount: '875'
+ht-degree: 74%
 
 ---
 
@@ -30,20 +30,20 @@ die mit dem
 
 Weitere Informationen zum Tagging finden Sie unter:
 
-* [Verwalten von ](/help/sites-administering/tags.md) Tags für Informationen zum Erstellen und Verwalten von Tags sowie dazu, auf welche Inhalts-Tags angewendet wurden.
+* [Verwalten von Tags](/help/sites-administering/tags.md) Informationen zum Erstellen und Verwalten von Tags sowie dazu, auf welche Inhalts-Tags angewendet wurden.
 * [Verwendung von Tags](/help/sites-authoring/tags.md) für Informationen zum Markieren von Inhalt.
 
 ## Übersicht über die Tagging-API {#overview-of-the-tagging-api}
 
-Die Implementierung des [Tagging-Frameworks](/help/sites-developing/framework.md) in AEM ermöglicht die Verwaltung von Tags und Tag-Inhalten mithilfe der JCR-API . Der TagManager stellt sicher, dass Tags, die als Werte in der String-Array-Eigenschaft `cq:tags` eingegeben wurden, nicht dupliziert werden. Er entfernt TagIDs, die auf nicht vorhandene Tags verweisen, und aktualisiert TagIDs für verschobene oder zusammengeführte Tags. TagManager verwendet einen JCR Observation Listener, der alle falschen Änderungen zurückgesetzt. Die wichtigsten Klassen befinden sich im Paket [com.day.cq.tagging](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html):
+Die Implementierung des [Tagging-Frameworks](/help/sites-developing/framework.md) in AEM ermöglicht die Verwaltung von Tags und Tag-Inhalten mithilfe der JCR-API . Der TagManager stellt sicher, dass Tags, die als Werte in die `cq:tags` String-Array-Eigenschaft nicht dupliziert wird, entfernt sie Tag-IDs, die auf nicht vorhandene Tags verweisen, und aktualisiert Tag-IDs für verschobene oder zusammengeführte Tags. TagManager verwendet einen JCR Observation Listener, der alle falschen Änderungen zurückgesetzt. Die wichtigsten Klassen befinden sich im Paket [com.day.cq.tagging](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html):
 
-* JcrTagManagerFactory - gibt eine JCR-basierte Implementierung einer `TagManager` zurück. Es ist die Referenzimplementierung der Tagging-API.
+* JcrTagManagerFactory - gibt eine JCR-basierte Implementierung einer `TagManager`. Es ist die Referenzimplementierung der Tagging-API.
 * `TagManager` – ermöglicht das Auflösen und Erstellen von Tags nach Pfaden und Namen.
 * `Tag` - definiert das Tag-Objekt.
 
 ### Abrufen eines JCR-basierten TagManagers {#getting-a-jcr-based-tagmanager}
 
-Um eine TagManager-Instanz abzurufen, benötigen Sie ein JCR `Session` und müssen `getTagManager(Session)` aufrufen:
+Um eine TagManager-Instanz abzurufen, benötigen Sie ein JCR `Session` und `getTagManager(Session)`:
 
 ```java
 @Reference
@@ -134,7 +134,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## Der Tag Garbage Collector {#the-tag-garbage-collector}
 
-Der Tag Garbage Collector ist ein Hintergrund-Service, der die ausgeblendeten und nicht verwendeten Tags bereinigt. Ausgeblendete und nicht verwendete Tags sind Tags unterhalb von `/content/cq:tags`, die eine `cq:movedTo` -Eigenschaft aufweisen und nicht auf einem Inhaltsknoten verwendet werden - sie haben eine Anzahl von null. Durch Verwenden dieses Lazy-Deletion-Prozesses muss der Inhaltsknoten (d. h. die Eigenschaft `cq:tags`) nicht als Teil der Verschiebung oder dem Zusammenführungsvorgang aktualisiert werden. Die Verweise in der Eigenschaft `cq:tags` werden automatisch aktualisiert, wenn die Eigenschaft `cq:tags` aktualisiert wird, z. B. durch das Seiteneigenschaften-Dialogfeld.
+Der Tag Garbage Collector ist ein Hintergrund-Service, der die ausgeblendeten und nicht verwendeten Tags bereinigt. Ausgeblendete und nicht verwendete Tags sind Tags unter `/content/cq:tags` die `cq:movedTo` -Eigenschaft und nicht in einem Inhaltsknoten verwendet werden - sie haben eine Anzahl von null. Durch Verwenden dieses Lazy-Deletion-Prozesses muss der Inhaltsknoten (d. h. die Eigenschaft `cq:tags`) nicht als Teil der Verschiebung oder dem Zusammenführungsvorgang aktualisiert werden. Die Verweise in der Eigenschaft `cq:tags` werden automatisch aktualisiert, wenn die Eigenschaft `cq:tags` aktualisiert wird, z. B. durch das Seiteneigenschaften-Dialogfeld.
 
 Das Garbage Collector Tag wird standardmäßig einmal am Tag ausgeführt. Dies kann konfiguriert werden unter:
 
@@ -146,15 +146,15 @@ http://localhost:4502/system/console/configMgr/com.day.cq.tagging.impl.TagGarbag
 
 Die Tag-Suche und die Tag-Auflistung funktionieren folgendermaßen:
 
-* Die Suche nach TagID sucht nach den Tags, für die die Eigenschaft `cq:movedTo` auf TagID gesetzt ist und die `cq:movedTo` TagIDs folgen.
+* Die Suche nach TagID sucht nach den Tags mit der -Eigenschaft `cq:movedTo` auf TagID gesetzt ist und durch die `cq:movedTo` Tag-IDs.
 
-* Die Suche nach Tag-Titel durchsucht nur die Tags, die keine `cq:movedTo` -Eigenschaft haben.
+* Die Suche nach Tag-Titel durchsucht nur die Tags, die keine `cq:movedTo` -Eigenschaft.
 
 ## Tags in verschiedenen Sprachen {#tags-in-different-languages}
 
-Wie in der Dokumentation zur Verwaltung von Tags beschrieben, kann im Abschnitt [Verwalten von Tags in verschiedenen Sprachen](/help/sites-administering/tags.md#managing-tags-in-different-languages) ein Tag `title`in verschiedenen Sprachen definiert werden. Eine sprachempfindliche Eigenschaft wird dann dem Tag-Knoten hinzugefügt. Diese Eigenschaft weist das Format `jcr:title.<locale>` auf, beispielsweise `jcr:title.fr` für die französische Übersetzung. `<locale>` muss eine ISO-Gebietsschema-Zeichenfolge in Kleinbuchstaben sein und &quot;_&quot;anstelle von &quot;-&quot;verwenden, z. B.:  `de_ch`.
+Wie in der Dokumentation zur Verwaltung von Tags beschrieben, finden Sie im Abschnitt [Verwalten von Tags in verschiedenen Sprachen](/help/sites-administering/tags.md#managing-tags-in-different-languages), ein Tag `title`kann in verschiedenen Sprachen definiert werden. Eine sprachempfindliche Eigenschaft wird dann dem Tag-Knoten hinzugefügt. Diese Eigenschaft weist das Format `jcr:title.<locale>` auf, beispielsweise `jcr:title.fr` für die französische Übersetzung. `<locale>` muss eine ISO-Gebietsschema-Zeichenfolge in Kleinbuchstaben sein und &quot;_&quot;anstelle von &quot;-&quot;verwenden, z. B.: `de_ch`.
 
-Wenn das Tag **Animals** der Seite **Products** hinzugefügt wird, wird der Wert `stockphotography:animals` der Eigenschaft `cq:tags` des Knotens /content/geometrixx/en/products/jcr:content hinzugefügt. Die Übersetzung wird vom Tag-Knoten referenziert.
+Wenn die **Tiere** -Tag wird dem **Produkte** Seite, der Wert `stockphotography:animals` wird der Eigenschaft hinzugefügt `cq:tags` des Knotens /content/geometrixx/en/products/jcr:content. Die Übersetzung wird vom Tag-Knoten referenziert.
 
 Die Server-seitige API verfügt über lokalisierte `title`-bezogene Methoden:
 

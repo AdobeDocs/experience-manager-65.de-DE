@@ -1,8 +1,8 @@
 ---
 title: Entwickeln von AEM-Projekten mit Eclipse
-seo-title: Entwickeln von AEM-Projekten mit Eclipse
+seo-title: How to Develop AEM Projects Using Eclipse
 description: In dieser Anleitung erfahren Sie, wie Sie Eclipse zur Entwicklung von AEM-basierten Projekten verwenden
-seo-description: In dieser Anleitung erfahren Sie, wie Sie Eclipse zur Entwicklung von AEM-basierten Projekten verwenden
+seo-description: This guide describes how to use Eclipse for developing AEM based projects
 uuid: 79fee76f-6bcc-498f-af46-530816b41bbe
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: aa58cfb8-ec15-4698-a8f0-97683b0de51c
 exl-id: 9d421599-0417-4329-a528-9cda4e3716f5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 76%
+source-wordcount: '435'
+ht-degree: 75%
 
 ---
 
@@ -25,7 +25,7 @@ In dieser Anleitung erfahren Sie, wie Sie Eclipse zur Entwicklung von AEM-basier
 >
 >Adobe stellt nun die [AEM-Entwicklungs-Tools für Eclipse](/help/sites-developing/aem-eclipse.md) bereit, die Sie dabei unterstützen, AEM-Lösungen mit Eclipse zu entwickeln.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Die folgenden Schritte sind erforderlich, um mit der AEM-Entwicklung unter Eclipse zu beginnen.
 
@@ -46,9 +46,9 @@ Laden Sie „Eclipse IDE for Java EE Developers“ von der [Eclipse-Downloadseit
 
 Installieren Sie Eclipse anhand der [Installationsanweisungen](https://wiki.eclipse.org/Eclipse/Installation).
 
-## Einrichten Ihres AEM-Projekts auf Grundlage von Maven  {#set-up-your-aem-project-based-on-maven}
+## Einrichten Ihres AEM-Projekts auf Grundlage von Maven {#set-up-your-aem-project-based-on-maven}
 
-Richten Sie anschließend Ihr Projekt mithilfe von Maven ein, wie unter [So erstellen Sie AEM Projekte mit Apache Maven](/help/sites-developing/ht-projects-maven.md) beschrieben.
+Richten Sie Ihr Projekt dann wie in beschrieben mit Maven ein. [So erstellen Sie AEM Projekte mit Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
 ## Vorbereiten der JSP-Unterstützung für Eclipse {#prepare-jsp-support-for-eclipse}
 
@@ -59,12 +59,12 @@ Eclipse bietet darüber hinaus Unterstützung für die Arbeit mit JSP, z. B.
 
 Damit das funktioniert:
 
-1. Befolgen Sie die Anweisungen unter [So arbeiten Sie mit JSPs](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) in [So erstellen Sie AEM Projekte mit Apache Maven](/help/sites-developing/ht-projects-maven.md).
+1. Befolgen Sie die Anweisungen unter [Arbeiten mit JSPs](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) in [So erstellen Sie AEM Projekte mit Apache Maven](/help/sites-developing/ht-projects-maven.md).
 1. Fügen Sie Folgendes zum &lt;build />-Abschnitt im POM Ihres Inhaltsmoduls hinzu.
 
    Das Eclipse-Plug-in zur Unterstützung von Maven, m2e, bietet keine Unterstützung für das Plug-in maven-jspc und diese Konfiguration weist m2e an, das Plug-in und die zugehörige Aufgabe zur Bereinigung der temporären Kompilierungsergebnisse zu ignorieren.
 
-   Dies ist kein Problem: Wie in [So arbeiten Sie mit JSPs](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) beschrieben, wird das maven-jspc-Plug-in in dieser Einrichtung nur verwendet, um zu überprüfen, ob JSPs im Rahmen des Build-Prozesses kompiliert werden. Eclipse meldet sämtliche Probleme in JSPs bereits und ist dazu nicht von diesem Maven-Plug-in abhängig.
+   Dies ist kein Problem: wie angegeben [Arbeiten mit JSPs](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps), wird das maven-jspc-Plug-in in diesem Setup nur verwendet, um zu überprüfen, ob JSPs im Rahmen des Build-Prozesses kompiliert werden. Eclipse meldet sämtliche Probleme in JSPs bereits und ist dazu nicht von diesem Maven-Plug-in abhängig.
 
    **myproject/content/pom.xml**
 
@@ -133,4 +133,4 @@ Damit das funktioniert:
 
    >[!NOTE]
    >
-   >Wenn Sie `/libs/foundation/global.jsp` oder andere JSPs in `/libs` einbeziehen, müssen Sie dies in Ihr Projekt kopieren, damit Eclipse die Einbindung auflösen kann. Zudem müssen Sie darauf achten, dass sie nicht von Maven in Ihr Inhaltspaket mit eingeschlossen werden. Wie Sie dies erreichen, wird unter [So erstellen Sie AEM Projekte mit Apache Maven](/help/sites-developing/ht-projects-maven.md) beschrieben.
+   >Wenn Sie `/libs/foundation/global.jsp` oder anderen JSPs in `/libs`müssen Sie dies in Ihr Projekt kopieren, damit Eclipse die Einbindung auflösen kann. Zudem müssen Sie darauf achten, dass sie nicht von Maven in Ihr Inhaltspaket mit eingeschlossen werden. Wie Sie dies erreichen, wird unter [So erstellen Sie AEM Projekte mit Apache Maven](/help/sites-developing/ht-projects-maven.md).

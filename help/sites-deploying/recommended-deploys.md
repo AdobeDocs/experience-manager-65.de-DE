@@ -1,8 +1,8 @@
 ---
 title: Empfohlene Bereitstellungen
-seo-title: Empfohlene Bereitstellungen
+seo-title: Recommended Deployments
 description: Dieser Artikel beschreibt die empfohlenen Topologien für AEM.
-seo-description: Dieser Artikel beschreibt die empfohlenen Topologien für AEM.
+seo-description: This article describes the recommended topologies for AEM.
 uuid: bc638121-c531-43eb-9ec6-3283a33519f8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1802'
+source-wordcount: '1792'
 ht-degree: 90%
 
 ---
@@ -28,7 +28,7 @@ MicroKernels dienen als Persistenzmanager ab AEM 6.2. Die Auswahl eines Persiste
 
 Die nachfolgenden Beispiele sollen ihre empfohlene Verwendung in den gängigsten AEM-Konfigurationen veranschaulichen.
 
-## Bereitstellungsszenarien  {#deployment-scenarios}
+## Bereitstellungsszenarien {#deployment-scenarios}
 
 ### Einzelne TarMK-Instanz {#single-tarmk-instance}
 
@@ -76,7 +76,7 @@ Die Nachteile:
 
 >[!NOTE]
 >
->Für die Cold-Standby-Bereitstellung in diesem TarMK-Beispiel müssen die primäre und die Standby-Instanz separat lizenziert werden, da eine konstante Replikation auf dem Failover-Server stattfindet. Weitere Informationen zur Lizenzierung finden Sie unter [Allgemeine Lizenzbedingungen für Adoben](https://www.adobe.com/de/legal/terms/enterprise-licensing.html).
+>Für die Cold-Standby-Bereitstellung in diesem TarMK-Beispiel müssen die primäre und die Standby-Instanz separat lizenziert werden, da eine konstante Replikation auf dem Failover-Server stattfindet. Weitere Informationen zur Lizenzierung finden Sie im [Allgemeine Lizenzbedingungen für Adoben](https://www.adobe.com/de/legal/terms/enterprise-licensing.html).
 
 ### TarMK-Farm {#tarmk-farm}
 
@@ -96,7 +96,7 @@ Die Vorteile:
 * Skalierbarkeit für Lesezugriff
 * Failover
 
-### Oak-Cluster mit MongMK-Failover für hohe Verfügbarkeit in einem einzelnen Rechenzentrum  {#oak-cluster-with-mongomk-failover-for-high-availability-in-a-single-datacenter}
+### Oak-Cluster mit MongMK-Failover für hohe Verfügbarkeit in einem einzelnen Rechenzentrum {#oak-cluster-with-mongomk-failover-for-high-availability-in-a-single-datacenter}
 
 Dieser Ansatz bedeutet, dass mehrere Oak-Instanzen auf ein MongoDB-Replikat in einem einzigen Rechenzentrum zugreifen und so einen aktiv-aktiven Cluster für die AEM-Autorenumgebung erstellen. In MongoDB dienen Replikatgruppen dazu, bei Hardware- oder Netzwerkausfällen für hohe Verfügbarkeit und Redundanz zu sorgen.
 
@@ -124,7 +124,7 @@ Die Vorteile:
 
 >[!NOTE]
 >
->Im obigen Diagramm werden AEM Server 3 und AEM Server 4 mit einem inaktiven Status dargestellt, vorausgesetzt, dass zwischen den AEM Server in Rechenzentrum 2 und dem primären MongoDB-Knoten in Rechenzentrum 1 eine Netzwerklatenz besteht, die höher ist als die Anforderung, die hier [hier](/help/sites-deploying/aem-with-mongodb.md#checklists) beschrieben ist. Wenn die maximale Latenzzeit mit den Anforderungen vereinbar ist, z. B. durch die Verwendung von Verfügbarkeitszonen, können auch die AEM-Server im Rechenzentrum 2 aktiv sein und einen aktiv-aktiven AEM-Cluster über mehrere Rechenzentren hinweg bilden.
+>Im obigen Diagramm werden AEM Server 3 und AEM Server 4 mit einem inaktiven Status dargestellt, vorausgesetzt, die Netzwerklatenz zwischen den AEM-Servern in Rechenzentrum 2 und dem primären MongoDB-Knoten in Rechenzentrum 1 ist höher als die dokumentierte Anforderung [here](/help/sites-deploying/aem-with-mongodb.md#checklists). Wenn die maximale Latenzzeit mit den Anforderungen vereinbar ist, z. B. durch die Verwendung von Verfügbarkeitszonen, können auch die AEM-Server im Rechenzentrum 2 aktiv sein und einen aktiv-aktiven AEM-Cluster über mehrere Rechenzentren hinweg bilden.
 
 >[!NOTE]
 >
@@ -138,7 +138,7 @@ Mit diesen Entscheidungshilfen können Sie den optimalen Bereitstellungstyp für
 
 Adobe empfiehlt Kunden dringend, TarMK als Standard-Persistenztechnologie in allen Bereitstellungsszenarien zu verwenden, sowohl für AEM-Autoren- als auch Veröffentlichungsinstanzen, mit Ausnahme der unten beschriebenen Nutzungsszenarien.
 
-### Gründe für den Einsatz von AEM-MongoMK anstatt TarMK auf Autoreninstanzen  {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-author-instances}
+### Gründe für den Einsatz von AEM-MongoMK anstatt TarMK auf Autoreninstanzen {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-author-instances}
 
 Der Hauptgrund dafür, warum anstatt des TarMK der MongoMK als Persistenz-Backend ausgewählt werden sollte, liegt in der horizontalen Skalierung der Instanzen. Das bedeutet, dass immer mindestens zwei aktive Autoreninstanzen ausgeführt werden und MongoDB als Persistenzspeichersystem verwendet wird. Der Grund, warum mehr als eine Autoreninstanz ausgeführt werden muss, besteht im Allgemeinen darin, dass die CPU- und Speicherkapazität eines einzelnen Servers, der alle simultanen Bearbeitungsaktivitäten unterstützt, nicht mehr ausreichend ist.
 
@@ -165,11 +165,11 @@ Ein weiterer Vorteil, der sich durch die Bereitstellung einer MongoDB-Replikatgr
 
 Werden die obigen Kriterien in den ersten achtzehn Monaten der Bereitstellung voraussichtlich nicht erfüllt, sollte AEM zuerst mithilfe von TarMK bereitgestellt werden. Die Konfiguration sollte dann zu einem späteren Zeitpunkt neu bewertet werden, wenn die obigen Kriterien erfüllt werden, und schließlich sollte bestimmt werden, ob die TarMK-basierte Bereitstellung beibehalten oder eine Migration auf eine MongoMK-basierte Bereitstellung durchgeführt werden soll.
 
-### Gründe für den Einsatz von AEM-MongoMK anstatt -TarMK auf Veröffentlichungsinstanzen  {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-publish-instances}
+### Gründe für den Einsatz von AEM-MongoMK anstatt -TarMK auf Veröffentlichungsinstanzen {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-publish-instances}
 
 Die Bereitstellung von MongoMK für Veröffentlichungsinstanzen wird nicht empfohlen. Die Veröffentlichungsschicht der Bereitstellung wird fast immer als Farm mit unabhängigen Veröffentlichungsinstanzen bereitgestellt, auf denen TarMK ausgeführt wird und die durch das Replizieren von Inhalten von den Autoreninstanzen synchronisiert werden. Diese für Veröffentlichnungsinstanzen geeignete Shared-Nothing-Architektur ermöglicht die horizontale, lineare Skalierung der bereitgestellten Veröffentlichungsschicht. Die Farm-Topologie bietet zudem dem Vorteil, dass Aktualisierungen fortlaufend auf Veröffentlichungsinstanzen angewendet werden können, sodass keine Ausfallzeiten bei Änderungen an der Veröffentlichungsschicht anfallen.
 
-Dies gilt nicht für AEM Communities, das MongoMK-Cluster auf der Veröffentlichungsschicht verwendet, wenn mehr als ein Publisher vorhanden ist. Bei Auswahl von JSRP (siehe [Community-Inhaltsspeicher](/help/communities/working-with-srp.md)) wäre ein MongoMK-Cluster angemessen, ebenso wie jeder veröffentlichungsseitige Cluster unabhängig vom ausgewählten MK, z. B. MongoDB oder RDB.
+Dies gilt nicht für AEM Communities, das MongoMK-Cluster auf der Veröffentlichungsschicht verwendet, wenn mehr als ein Publisher vorhanden ist. Bei Auswahl von JSRP (siehe [Community-Inhaltsspeicherung](/help/communities/working-with-srp.md)), dann wäre ein MongoMK-Cluster angemessen, ebenso wie jeder veröffentlichungsseitige Cluster, unabhängig vom ausgewählten MK, wie MongoDB oder RDB.
 
 ### Voraussetzungen und Empfehlungen für die Bereitstellung von AEM mit MongoMK {#prerequisites-and-recommendations-when-deploying-aem-with-mongomk}
 
@@ -193,7 +193,7 @@ Falls Sie eine MongoMK-Bereitstellung für AEM in Betracht ziehen, liegt eine Re
 >
 >Wenn Sie weitere Fragen zu diesen Richtlinien, Voraussetzungen und Empfehlungen haben, wenden Sie sich an den [Kundendienst von Adobe](https://helpx.adobe.com/de/marketing-cloud/contact-support.html).
 
-### Faktoren für AEM Communities  {#considerations-for-aem-communities}
+### Faktoren für AEM Communities {#considerations-for-aem-communities}
 
 Bei Sites, bei denen die Bereitstellung von [AEM Communities](/help/communities/overview.md) geplant ist, wird empfohlen, [eine Bereitstellung auszuwählen](/help/communities/working-with-srp.md#characteristicsofstorageoptions), die für die Verarbeitung von benutzergenerierten Inhalten optimiert ist, welche von Community-Mitgliedern von der Veröffentlichungsumgebung aus veröffentlicht werden.
 

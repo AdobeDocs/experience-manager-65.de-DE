@@ -28,7 +28,7 @@ Der SPA-Editor bietet eine umfassende Lösung zur Unterstützung von SPAs in AEM
 >
 >Der SPA Editor ist die empfohlene Lösung für Projekte, die SPA Framework-basiertes Client-seitiges Rendering erfordern (z. B. React oder Angular).
 
-## Einführung {#introduction}
+## Einführung    {#introduction}
 
 ### Ziel des Artikels {#article-objective}
 
@@ -104,7 +104,6 @@ Wenn ein SPA erstellt wurde, um den AEM-SPA-Editor zu nutzen, merkt der Inhaltsa
 >
 >* [AEM Version 6.4 mit Service Pack 2](/help/release-notes/release-notes.md)
 >* [Installieren Sie hier die Beispielanwendung &quot;We.Retail Journal&quot;, die auf GitHub verfügbar ist.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
-
 >
 
 

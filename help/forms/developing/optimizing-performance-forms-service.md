@@ -13,7 +13,7 @@ discoiquuid: 9f883483-b81e-42c6-a4a1-eb499dd112e7
 role: Developer
 exl-id: 5a746c6c-bf6e-4b25-ba7c-a35edb1f55f3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 100%
 
@@ -41,13 +41,13 @@ Führen Sie die folgenden Aufgaben aus, um die Leistung des Forms-Service beim R
 1. Geben Sie das Formular wieder.
 1. Schreiben Sie den Formular-Datenstrom in den Client-Webbrowser.
 
-**Projektdateien einbeziehen**
+**Projektdateien einschließen**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Webdienste verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
-**Erstellen eines Objekts für die Forms Client API**
+**Erstellen eines Forms-Client-API-Objekts**
 
-Bevor Sie einen Client-API-Vorgang für den Forms-Service programmgesteuert durchführen können, müssen Sie einen Client für den Forms-Service erstellen. Wenn Sie die Java API verwenden, erstellen Sie ein `FormsServiceClient`-Objekt. Wenn Sie die Web-Service-API für Forms verwenden, erstellen Sie ein `FormsService`-Objekt.
+Bevor Sie einen Client-API-Vorgang für den Forms-Service programmgesteuert durchführen können, müssen Sie einen Client für den Forms-Service erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `FormsServiceClient`-Objekt. Wenn Sie die Web-Service-API für Forms verwenden, erstellen Sie ein `FormsService`-Objekt.
 
 **Festlegen von leistungsbezogenen Laufzeitoptionen**
 
@@ -110,17 +110,17 @@ Rendern eines Formulars mit optimierter Leistung mithilfe der Forms API (Java):
    * Ein `com.adobe.idp.Document`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie ein leeres `com.adobe.idp.Document`-Objekt.
    * Ein Objekt vom Typ `PDFFormRenderSpec`, das Laufzeitoptionen speichert, um die Leistung zu verbessern.
    * Ein Objekt vom Typ `URLSpec`, das URI-Werte enthält, die für den Forms-Service erforderlich sind.
-   * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Hierbei handelt es sich um einen optionalen Parameter, und Sie können `null` vorgeben, wenn Sie keine Dateien an das Formular anhängen möchten.
+   * Ein `java.util.HashMap`-Objekt, in dem Dateianlagen gespeichert werden. Dies ist ein optionaler Parameter, für den Sie `null` angeben können, wenn Sie keine Dateien an das Formular anhängen möchten.
 
-   Die `renderPDFForm`-Methode gibt ein `FormsResult`-Objekt zurück, das einen Formulardatenstrom enthält, der in den Client-Webbrowser geschrieben werden muss.
+   Die Methode `renderPDFForm` gibt ein `FormsResult`-Objekt zurück, das einen Formulardaten-Stream enthält, der in den Client-Webbrowser geschrieben werden muss.
 
 1. Schreiben des Formulardaten-Streams in den Client-Webbrowser
 
    * Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Senden eines Formulardatenstroms an den Client-Webbrowser verwendet wird.
-   * Erstellen Sie ein `com.adobe.idp.Document`-Objekt durch Aufrufen der `getOutputContent`-Methode des `FormsResult`-Objekts.
+   * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie die Methode `getOutputContent` des `FormsResult`-Objekts aufrufen.
    * Erstellen Sie ein `java.io.InputStream`-Objekt durch Aufrufen der `getInputStream`-Methode des `com.adobe.idp.Document`-Objekts.
    * Erstellen Sie ein Byte-Array und befüllen Sie es mit dem Formulardatenstrom, indem Sie die `read`-Methode des `InputStream`-Objekts aufrufen und das Byte-Array als Argument übergeben.
-   * Um den Formulardatenstrom an den Client-Webbrowser zu senden, rufen Sie die `write`-Methode des `javax.servlet.ServletOutputStream`-Objekts auf. Übergeben Sie das Byte-Array an die `write`-Methode.
+   * Um den Formulardatenstrom an den Client-Webbrowser zu senden, rufen Sie die `write`-Methode des `javax.servlet.ServletOutputStream`-Objekts auf. Übergeben Sie das Byte-Array an die Methode `write`.
 
 **Siehe auch**
 
@@ -158,21 +158,21 @@ Wiedergeben eines Formulars mit optimierter Leistung mithilfe der Forms-API (Web
    * Ein `BLOB`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie `null`.
    * Ein `PDFFormRenderSpecc`-Objekt, das Laufzeitoptionen speichert.
    * Ein `URLSpec`-Objekt, das URI-Werte enthält, die für den Forms-Service erforderlich sind.
-   * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Hierbei handelt es sich um einen optionalen Parameter, und Sie können `null` vorgeben, wenn Sie keine Dateien an das Formular anhängen möchten.
-   * Ein leeres `com.adobe.idp.services.holders.BLOBHolder`-Objekt, das durch die Methode befüllt wird. Damit wird das wiedergegebene PDF-Formular gespeichert.
-   * Ein leeres `javax.xml.rpc.holders.LongHolder`-Objekt, das durch die Methode befüllt wird. (Dieses Argument speichert die Anzahl der Seiten im Formular).
-   * Ein leeres `javax.xml.rpc.holders.StringHolder`-Objekt, das durch die Methode befüllt wird. (Dieses Argument speichert den Gebietsschemawert).
-   * Ein leeres `com.adobe.idp.services.holders.FormsResultHolder`-Objekt, das die Ergebnisse dieses Vorgangs enthalten wird.
+   * Ein `java.util.HashMap`-Objekt, in dem Dateianlagen gespeichert werden. Dies ist ein optionaler Parameter. Sie können `null` festlegen, wenn Sie keine Dateien an das Formular anhängen möchten.
+   * Ein leeres `com.adobe.idp.services.holders.BLOBHolder`-Objekt, das von der Methode gefüllt wird. Damit wird das wiedergegebene PDF-Formular gespeichert.
+   * Ein leeres `javax.xml.rpc.holders.LongHolder`-Objekt, das von der Methode gefüllt wird. (Dieses Argument speichert die Anzahl der Seiten im Formular).
+   * Ein leeres `javax.xml.rpc.holders.StringHolder`-Objekt, das von der Methode gefüllt wird. (Dieses Argument speichert den Gebietsschemawert).
+   * Ein leeres `com.adobe.idp.services.holders.FormsResultHolder`-Objekt, das die Ergebnisse dieses Vorgangs enthält.
 
-   Durch die `renderPDFForm`-Methode wird das `com.adobe.idp.services.holders.FormsResultHolder`-Objekt befüllt, das als letzter Argumentwert mit einem Formulardatenstrom übergeben wird, der in den Client-Webbrowser geschrieben werden muss.
+   Die Methode `renderPDFForm` füllt das `com.adobe.idp.services.holders.FormsResultHolder`-Objekt, das als letzter Argumentwert übergeben wird, mit einem Formulardaten-Stream, der in den Client-Webbrowser geschrieben werden muss.
 
 1. Schreiben des Formulardaten-Streams in den Client-Webbrowser
 
    * Erstellen Sie ein `FormResult`-Objekt durch Abrufen des Werts des `value`-Daten-Members des `com.adobe.idp.services.holders.FormsResultHolder`-Objekts.
    * Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Senden eines Formulardatenstroms an den Client-Webbrowser verwendet wird.
-   * Erstellen Sie ein `BLOB`-Objekt, das Formulardaten enthält, durch Aufrufen der `getOutputContent`-Methode des `FormsResult`-Objekts.
-   * Erstellen Sie ein Byte-Array und befüllen Sie es durch Aufrufen der `getBinaryData`-Methode des `BLOB`-Objekts. Diese Aufgabe weist den Inhalt des `FormsResult`-Objekts dem Byte-Array zu.
-   * Um den Formulardatenstrom an den Client-Webbrowser zu senden, rufen Sie die `write`-Methode des `javax.servlet.http.HttpServletResponse`-Objekts auf. Übergeben Sie das Byte-Array an die `write`-Methode.
+   * Erstellen Sie ein `BLOB`-Objekt, das Formulardaten enthält, indem Sie die Methode `getOutputContent` des `FormsResult`-Objekts aufrufen.
+   * Erstellen Sie ein Byte-Array und füllen Sie es auf, indem Sie die Methode `getBinaryData` des `BLOB`-Objekts aufrufen. Mit dieser Aufgabe wird dem Byte-Array der Inhalt des `FormsResult`-Objekts zugewiesen.
+   * Rufen Sie die Methode `write` des `javax.servlet.http.HttpServletResponse`-Objekts auf, um den Formulardaten-Stream an den Client-Webbrowser zu senden. Übergeben Sie das Byte-Array an die Methode `write`.
 
 **Siehe auch**
 

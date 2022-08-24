@@ -11,7 +11,7 @@ discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 role: Developer
 exl-id: 434ac316-8a01-43a6-844b-1b792f60fa21
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ Die folgende Abbildung zeigt ein Beispiel für einen kurzlebigen Prozess mit dem
 
 >[!NOTE]
 >
->Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um den Code-Beispielen zum Aufrufen dieses Prozesses zu folgen, erstellen Sie mithilfe von Workbench einen Prozess namens `MyApplication/EncryptDocument`. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_de).)
+>Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um den Code-Beispielen zum Aufrufen dieses Prozesses zu folgen, erstellen Sie mithilfe von Workbench einen Prozess namens `MyApplication/EncryptDocument`. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 Wenn dieser kurzlebige Prozess aufgerufen wird, führt er die folgenden Aktionen durch:
 
@@ -59,7 +59,7 @@ Wenn dieser kurzlebige Prozess aufgerufen wird, führt er die folgenden Aktionen
 
    >[!NOTE]
    >
-   >In der Regel besteht ein kurzlebiger Prozess aus mehr als drei Aktionen. Sie erstellen einen Prozess mithilfe von Workbench. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_de).)
+   >In der Regel besteht ein kurzlebiger Prozess aus mehr als drei Aktionen. Sie erstellen einen Prozess mithilfe von Workbench. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
    *Programmieren mit AEM Forms* beschreibt die folgenden Methoden, mit denen Sie diesen kurzlebigen Prozess programmgesteuert aufrufen können:
 

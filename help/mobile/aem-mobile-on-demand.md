@@ -2,7 +2,7 @@
 title: AEM Mobile On-Demand
 seo-title: AEM Mobile On-Demand
 description: Auf dieser Seite erhalten Sie Informationen zur Entwicklung der On-Demand Services-App mit AEM (Adobe Experience Manager). Auf der Seite werden die Themen behandelt, die für Entwickler einer App relevant sind.
-seo-description: Auf dieser Seite erhalten Sie Informationen zur Entwicklung der On-Demand Services-App mit AEM (Adobe Experience Manager). Auf der Seite werden die Themen behandelt, die für Entwickler einer App relevant sind.
+seo-description: Follow this page as a starting point for developing On-Demand Services app with AEM (Adobe Experience Manager). The page covers the topics that are relevant to a developer of an app.
 uuid: 35b64823-9451-44bf-b254-3b6767f0d109
 contentOwner: JYOTIKA SYAL
 content-type: reference
@@ -11,8 +11,8 @@ discoiquuid: cc97a926-d893-46a9-8aea-b56cbee5df01
 exl-id: a2134afd-4c0e-4a93-ac58-013b98fd9a09
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 6%
+source-wordcount: '310'
+ht-degree: 7%
 
 ---
 
@@ -24,15 +24,15 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->Wenn Sie AEM nicht als Inhaltsverwaltungsquelle verwenden, finden Sie weitere Informationen unter [AEM Mobile On-demand Services Help](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Wenn Sie AEM nicht als Quelle für das Content Management verwenden, lesen Sie [Hilfe zu AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 >[!NOTE]
 >
->Bevor Sie mit AEM Mobile arbeiten und die Schritte in diesem Erste-Schritte-Handbuch befolgen, sollten Benutzer mit [AEM](/help/sites-deploying/deploy.md) vertraut sein.
+>Bevor Sie mit AEM Mobile arbeiten und die Schritte in diesem Erste-Schritte-Handbuch befolgen, sollten Benutzer mit [AEM](/help/sites-deploying/deploy.md).
 >
->Informationen zum Einrichten Ihrer Umgebung für AEM Mobile On-demand Services finden Sie unter [AEM Mobile Application Dashboard oder im Control Center](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
+>Informationen zum Einrichten Ihrer Umgebung für AEM Mobile On-demand Services finden Sie unter [AEM Mobile Application Dashboard oder Control Center](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
-Ein **AEM-Entwickler** erweitert und erstellt benutzerdefinierte Webvorlagen und Komponenten, damit der *AEM-Autor* schöne und ansprechende mobile Erlebnisse erstellen kann. Diese Vorlagen und Komponenten sind nicht nur für die App-Welt optimiert. kommunizieren jedoch sowohl mit dem Gerät als auch mit dem AEM-Server (einem beliebigen Remote-Server) mit kanalübergreifenden Service-Endpunkten. AEM integrierte Inhaltseditor wird von *AEM-Autoren* verwendet, um umfangreiche und relevante Erlebnisse innerhalb der App zu erstellen, einschließlich der Integration in den Rest der Adobe Marketing Cloud.
+Ein **AEM** erweitert und erstellt benutzerdefinierte Webvorlagen und -komponenten, um *AEM-Autor* um schöne und ansprechende mobile Erlebnisse zu schaffen. Diese Vorlagen und Komponenten sind nicht nur für die App-Welt optimiert. kommunizieren jedoch sowohl mit dem Gerät als auch mit dem AEM-Server (einem beliebigen Remote-Server) mit kanalübergreifenden Service-Endpunkten. AEM integrierte Inhaltseditor wird von *AEM-Autoren* , um umfangreiche und relevante Erlebnisse innerhalb der App zu erstellen, einschließlich der Integration in die restliche Adobe Marketing Cloud.
 
 Ein AEM-Entwickler ist für die folgenden Aufgaben beim Erstellen einer App mit AEM Mobile On-demand Services verantwortlich:
 
@@ -44,7 +44,7 @@ Siehe [Entwickeln von AEM Mobile Content Services](/help/mobile/developing-conte
 
 >[!NOTE]
 >
->Die Rolle *AEM Entwickler* beginnt und endet nicht mit der Entwicklung von Vorlagen und Komponenten. Ein *AEM-Entwickler* kann eine völlig neue App erstellen, anstatt einfach das native Beispiel für die Referenzimplementierung zu erweitern.
+>Ein *AEM Entwickler* -Rolle beginnt und endet nicht mit der Entwicklung von Vorlagen und Komponenten. Ein *AEM* Sie können eine völlig neue App erstellen, anstatt einfach das native Beispiel für die Referenzimplementierung zu erweitern.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

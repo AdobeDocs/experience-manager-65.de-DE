@@ -11,7 +11,7 @@ discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 feature: Adaptive Forms
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1147'
 ht-degree: 100%
 
@@ -61,7 +61,7 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 |---|---|---|
 | Eigenschaftenbrowser für die ausgewählte Komponente in einem Design öffnen | Alt+Eingabe | Alt+Eingabe |
 | Eigenschaftenbrowser für die ausgewählte Komponente in einem Design schließen | Strg+Alt+W | Befehl+Alt+W |
-| Letzte Änderung rückgängig machen | Strg+Z | Strg+Z&amp;ast; |
+| Letzte Änderung rückgängig machen | Strg+Z | Strg+Z |
 | Letzte Änderung wiederholen | Strg+Y | Strg+Y&amp;ast; |
 | Speichern von Änderungen im Eigenschaften-Browser für die ausgewählte Komponente in einem Design | Strg+S | Strg+S&amp;ast; |
 

@@ -13,7 +13,7 @@ exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
 source-git-commit: 813441a61baa560c9d317a5519b9e0c0d1da7a6e
 workflow-type: tm+mt
 source-wordcount: '2209'
-ht-degree: 74%
+ht-degree: 80%
 
 ---
 
@@ -76,7 +76,7 @@ Sie können Adobe Target so konfigurieren, dass Adobe Analytics als Quelle für 
 Hierfür müssen Sie angeben, mit welcher A4T-Cloud-Konfiguration Ihre Adobe Target-Cloud-Konfiguration verbunden werden soll:
 
 1. Navigieren Sie zu **Cloud Services** über die **AEM** > **Instrumente** > **Implementierung** > **Cloud Services**.
-1. Im **Adobe Target** Abschnitt, klicken Sie auf **Jetzt konfigurieren**.
+1. Klicken Sie im Abschnitt **Adobe Target** auf **Jetzt konfigurieren**.
 1. Stellen Sie erneut eine Verbindung mit Ihrer Adobe Target-Konfiguration her.
 1. Wählen Sie im Dropdown-Menü **A4T-Analyse-Cloud-Konfiguration** das Framework aus.
 
@@ -107,7 +107,7 @@ Klicken Sie auf **OK**. Beim Verwenden von Adobe Target für Inhalte können Sie
 Sie können das Integrieren mit Adobe Target auch manuell durchführen, anstatt den Opt-in-Assistenten zu verwenden.
 
 >[!NOTE]
-die Target-Bibliotheksdatei, [AT.JS](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-download.html)ist eine neue Implementierungsbibliothek für Adobe Target, die sowohl für typische Webimplementierungen als auch für Einzelseitenanwendungen entwickelt wurde. Adobe empfiehlt, anstelle von „mbox.js“ die Datei „AT.js“ als Client-Bibliothek zu verwenden.
+Die Target-Bibliotheksdatei [AT.js](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-download.html) ist die neue Implementierungsbibliothek für Adobe Target. Sie ist sowohl auf typische Web-Implementierungen als auch auf Einzelseitenanwendungen ausgelegt. Adobe empfiehlt, anstelle von „mbox.js“ die Datei „AT.js“ als Client-Bibliothek zu verwenden.
 „AT.js“ bietet im Vergleich zur Bibliothek „mbox.js“ viele Verbesserungen, z. B.:
 * Verbesserte Seitenladezeiten für Web-Implementierungen
 * Verbesserte Sicherheit
@@ -130,11 +130,11 @@ Verwenden Sie das folgende Verfahren, um eine Target-Cloud-Konfiguration in AEM 
 
    Die **Adobe Marketing Cloud** Die Übersichtsseite wird geöffnet.
 
-1. Im **Adobe Target** Abschnitt, klicken Sie auf **Jetzt konfigurieren**.
-1. Im **Konfiguration erstellen** dialog:
+1. Klicken Sie im Abschnitt **Adobe Target** auf **Jetzt konfigurieren**.
+1. Im Dialogfeld **Konfiguration erstellen**:
 
-   1. Geben Sie der Konfiguration eine **Titel**.
-   1. Wählen Sie die **Adobe Target-Konfiguration** Vorlage.
+   1. Geben Sie der Konfiguration einen **Titel**.
+   1. Wählen Sie die Vorlage **Adobe Target-Konfiguration** aus.
    1. Klicken Sie auf **Erstellen**.
 
    Das Dialogfeld „Bearbeiten“ wird geöffnet.
@@ -151,14 +151,14 @@ Verwenden Sie das folgende Verfahren, um eine Target-Cloud-Konfiguration in AEM 
 
 1. Geben Sie im Dialogfeld Werte für diese Eigenschaften an.
 
-   * **Client-Code**: Der Client-Code des Target-Kontos.
+   * **Client-Code**: Der Client-Code des Target-Kontos
    * **E-Mail**: Die E-Mail-Adresse des Target-Kontos.
    * **Kennwort**: Das Kennwort des Target-Kontos.
    * **API-Typ**: Entweder „REST“ oder „XML“.
-   * **A4T-Analyse-Cloud-Konfiguration**: Wählen Sie die Analyse-Cloud-Konfiguration aus, die für Target-Aktivitätsziele und -metriken verwendet wird. Sie benötigen sie, wenn Sie Adobe Analytics als Quelle für die Berichterstellung für bestimmte Inhalte verwenden. Wenn Ihre Cloud-Konfiguration nicht angezeigt wird, finden Sie weitere Informationen unter [Konfigurieren der A4T-Analytics Cloud-Konfiguration](#configuring-a-t-analytics-cloud-configuration).
+   * **A4T-Analytics-Cloud-Konfiguration**: Wählen Sie die Analyse-Cloud-Konfiguration aus, die für Target-Aktivitätsziele und -metriken verwendet wird. Sie benötigen sie, wenn Sie Adobe Analytics als Quelle für die Berichterstellung für bestimmte Inhalte verwenden. Wenn Ihre Cloud-Konfiguration nicht angezeigt wird, finden Sie weitere Informationen unter [Konfigurieren der A4T-Analytics Cloud-Konfiguration](#configuring-a-t-analytics-cloud-configuration).
 
-   * **Verwenden Sie genaues Targeting:** Standardmäßig ist dieses Kontrollkästchen aktiviert. Bei Aktivierung dieser Option wird für die Cloud Service-Konfiguration gewartet, bis das Laden des Kontexts erfolgt ist, bevor der Inhalt geladen wird. Siehe Hinweis unten.
-   * **Segmente aus Adobe Target synchronisieren:** Wählen Sie diese Option aus, um in Target definierte Segmente herunterzuladen und in AEM zu verwenden. Sie müssen diese Option auswählen, wenn die Eigenschaft „API-Typ“ auf „REST“ festgelegt ist, da Inline-Segmente nicht unterstützt werden und Sie immer Segmente aus Target verwenden müssen. (Beachten Sie, dass der AEM-Begriff „Segment“ hier dem Target-Begriff „Zielgruppe“ entspricht.)
+   * **Präzises Targeting verwenden**: Dieses Kontrollkästchen ist standardmäßig aktiviert. Bei Aktivierung dieser Option wird für die Cloud Service-Konfiguration gewartet, bis das Laden des Kontexts erfolgt ist, bevor der Inhalt geladen wird. Siehe Hinweis unten.
+   * **Segmente aus Adobe Target synchronisieren**: Aktivieren Sie diese Option, um in Target definierte Segmente herunterzuladen und in AEM zu verwenden. Sie müssen diese Option auswählen, wenn die Eigenschaft „API-Typ“ auf „REST“ festgelegt ist, da Inline-Segmente nicht unterstützt werden und Sie immer Segmente aus Target verwenden müssen. (Beachten Sie, dass der AEM-Begriff „Segment“ hier dem Target-Begriff „Zielgruppe“ entspricht.)
    * **Client-Bibliothek:** Wählen Sie aus, ob die mbox.js- oder AT.js-Client-Bibliothek verwendet werden soll.
    * **Verwenden von DTM zur Bereitstellung der Client-Bibliothek** - Wählen Sie diese Option, um entweder AT.js oder mbox.js aus DTM oder einem anderen Tag-Management-System zu verwenden. Sie müssen [Konfigurieren der DTM-Integration](/help/sites-administering/dtm.md) , um diese Option zu verwenden. Adobe empfiehlt zum Bereitstellen der Bibliothek die Verwendung von DTM anstelle von AEM.
    * **Benutzerdefinierte mbox.js**: Lassen Sie dieses Feld leer, wenn Sie das Feld „DTM“ aktiviert haben oder die standardmäßige Datei „mbox.js“ verwenden möchten. Alternativ hierzu können Sie Ihre benutzerdefinierte Datei „mbox.js“ hochladen. Sie wird nur angezeigt, wenn Sie „mbox.js“ ausgewählt haben.
@@ -170,7 +170,7 @@ Verwenden Sie das folgende Verfahren, um eine Target-Cloud-Konfiguration in AEM 
    Die präzise Zielgruppenerfassung ist auf der Autoreninstanz immer aktiviert. Auf der Veröffentlichungsinstanz können Sie die präzise Zielgruppenerfassung aber global deaktivieren, indem Sie in der Cloud Service-Konfiguration das Häkchen neben „Präzise Zielgruppenerfassung“ entfernen (**http://localhost:4502/etc/cloudservices.html**). Außerdem können Sie die präzise Zielgruppenerfassung unabhängig von Ihrer Einstellung in der Cloud Service-Konfiguration auch für einzelne Komponenten ein- oder ausschalten.
    Wenn Sie Komponenten als Ziel ***bereits*** angegeben haben und diese Einstellung dann ändern, wirken sich Ihre Änderungen nicht auf diese Komponenten aus. Sie müssen alle Änderungen an dieser Komponente direkt vornehmen.
 
-1. Klicken Sie auf **Mit Target verbinden**, um die Verbindung mit Target zu initialisieren. Wenn die Verbindung erfolgreich hergestellt wurde, wird die Meldung **Verbindung erfolgreich** angezeigt. Klicken Sie auf **OK** und dann auf **OK.**
+1. Klicken Sie auf **Mit Target verbinden**, um die Verbindung mit Target zu initialisieren. Wenn die Verbindungsherstellung erfolgreich war, wird die Meldung **Die Verbindung wurde hergestellt** angezeigt. Klicken Sie auf **OK** und dann auf **OK.**
 
    Falls Sie keine Verbindung mit Target herstellen können, helfen Ihnen die Informationen im Abschnitt zur [Fehlerbehebung](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems) weiter.
 
@@ -181,7 +181,7 @@ Nachdem Sie die Target-Cloud-Konfiguration konfiguriert haben, können Sie ein T
 Sie können für eine Target-Konfiguration mehrere Frameworks erstellen. Mehrere Frameworks sind nützlich, wenn Sie für unterschiedliche Abschnitte Ihrer Website jeweils einen anderen Parametersatz an Target senden müssen. Erstellen Sie ein Framework für jeden Parametersatz, der gesendet werden muss. Ordnen Sie die einzelnen Abschnitte Ihrer Website jeweils dem passenden Framework zu. Beachten Sie, dass für eine Webseite nur jeweils ein Framework verwendet werden kann.
 
 1. Klicken Sie auf der Target-Konfigurationsseite auf die **+** (Pluszeichen) neben Verfügbare Frameworks.
-1. Geben Sie im Dialogfeld Framework erstellen eine **Titel**, wählen Sie die **Adobe Target Framework** und klicken Sie auf **Erstellen**.
+1. Geben Sie im Dialogfeld „Framework erstellen“ einen **Titel** an, wählen Sie die Option **Adobe Target-Framework** und klicken Sie auf **Erstellen**.
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
@@ -194,7 +194,7 @@ Sie können für eine Target-Konfiguration mehrere Frameworks erstellen. Mehrere
    >[!NOTE]
    Bei der Zuordnung werden Parameter über einfache Zeichenfolgen an mbox übergeben. Es ist nicht möglich, Arrays aus ContextHub zuzuordnen.
 
-   Verwenden Sie beispielsweise **Profildaten** über Ihre Sitebesucher, um Ihre Target-Kampagne zu steuern, ziehen Sie die **Profildaten** -Komponente auf der Seite. Es werden die Profildatenvariablen angezeigt, die für die Zuordnung zu Target-Parametern verfügbar sind.
+   Ziehen Sie beispielsweise die Komponente **Profildaten** auf die Seite, um **Profildaten** zu Ihren Websitebesuchern zum Steuern Ihrer Target-Kampagne zu verwenden. Es werden die Profildatenvariablen angezeigt, die für die Zuordnung zu Target-Parametern verfügbar sind.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 

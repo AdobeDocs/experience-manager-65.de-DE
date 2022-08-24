@@ -1,8 +1,8 @@
 ---
 title: Aktualisierungsverfahren
-seo-title: Aktualisierungsverfahren
+seo-title: Upgrade Procedure
 description: Erfahren Sie mehr über das Verfahren, das Sie anwenden müssen, um AEM zu aktualisieren.
-seo-description: Erfahren Sie mehr über das Verfahren, das Sie anwenden müssen, um AEM zu aktualisieren.
+seo-description: Learn about the procedure you need to follow in order to upgrade AEM.
 uuid: 81126a70-c082-4f01-a1ad-7152182da88b
 contentOwner: sarchiz
 topic-tags: upgrading
@@ -11,11 +11,11 @@ content-type: reference
 discoiquuid: 5c035d4c-6e03-48b6-8404-800b52d659b8
 docset: aem65
 targetaudience: target-audience upgrader
-feature: Aktualisieren
+feature: Upgrading
 exl-id: 5242600c-2281-46f9-a347-d985b4e319b3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '820'
 ht-degree: 94%
 
 ---
@@ -34,7 +34,7 @@ Wenn Sie die AEM-Umgebungen aktualisieren, müssen Sie sich die Unterschiede bei
 >The downtime during the upgrade can be significally reduced by indexing the repository before performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)
 -->
 
-## Autorenschicht auf TarMK  {#tarmk-author-tier}
+## Autorenschicht auf TarMK {#tarmk-author-tier}
 
 ### Starten der Topologie {#starting-topology}
 
@@ -54,7 +54,7 @@ In diesem Abschnitt wird von einer Topologie mit einem Autorenserver ausgegangen
 
 1. Führen Sie die [Wartungsaufgaben vor der Aktualisierung](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) aus.
 
-### Ausführen der Aktualisierung  {#upgrade-execution}
+### Ausführen der Aktualisierung {#upgrade-execution}
 
 ![execute_upgrade](assets/execute_upgrade.jpg)
 
@@ -99,7 +99,7 @@ In diesem Abschnitt wird von einer Topologie mit einem MongoMK-Autoren-Cluster m
 1. Erstellen Sie einen Klon des Datenspeichers als Backup.
 1. Beenden Sie alle AEM-Autoreninstanzen bis auf eine, die als primäre Autoreninstanz fungiert.
 1. Entfernen Sie alle bis auf einen MongoDB-Knoten aus der Replikatgruppe, Ihrer primären Mongo-Instanz.
-1. Aktualisieren Sie die Datei `DocumentNodeStoreService.cfg` auf der primären Autoreninstanz, um die Replikatgruppe Ihrer einzelnen Mitglieder widerzuspiegeln.
+1. Aktualisieren Sie die `DocumentNodeStoreService.cfg` -Datei im primären Autor, um Ihre Replikatgruppe mit einem einzelnen Mitglied wiederzugeben
 1. Starten Sie die primäre Autoreninstanz neu, um sicherzustellen, dass diese richtig ausgeführt wird.
 1. Deaktivieren Sie die Replikationsagenten auf der primären Autoreninstanz.
 1. Führen Sie die [Wartungsaufgaben vor einer Aktualisierung](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) auf der primären Autoreninstanz aus.
@@ -145,7 +145,7 @@ In diesem Abschnitt wird von einer Topologie mit einem MongoMK-Autoren-Cluster m
 
 1. Bereinigen Sie die aktualisierten Autoreninstanzen, den Mongo-Knoten und den Datenspeicher.
 
-## TarMK-Veröffentlichungsfarm  {#tarmk-publish-farm}
+## TarMK-Veröffentlichungsfarm {#tarmk-publish-farm}
 
 ### TarMK-Veröffentlichungsfarm {#tarmk-publish-farm-1}
 

@@ -1,6 +1,6 @@
 ---
 title: Best Practices zur Verarbeitung der unterstützten Dateiformate
-description: Best Practices zur Verarbeitung der verschiedenen unterstützten Dateitypen mithilfe von  [!DNL Experience Manager Assets].
+description: Best Practices für die Verarbeitung der verschiedenen unterstützten Dateitypen mithilfe von [!DNL Experience Manager Assets].
 contentOwner: AG
 role: Admin
 feature: Asset Management,Developer Tools
@@ -14,17 +14,17 @@ ht-degree: 47%
 
 # Best Practices für Dateiformate in Assets {#assets-file-format-best-practices}
 
-[!DNL Adobe Experience Manager Assets] unterstützt viele proprietäre und Drittanbieter-Dateiformatbibliotheken, um benutzerseitigen Bedarf an Dateiunterstützung zu decken. Zu den unterstützten Adobe-Bibliotheken gehören [!DNL Adobe Camera Raw], Gibson, Adobe PDF Rasterizer und [!DNL Adobe InDesign Server]. Darüber hinaus unterstützt [!DNL Experience Manager Assets] Drittanbieterbibliotheken, einschließlich [!DNL ImageMagick], [!DNL TwelveMonkeys] usw.
+[!DNL Adobe Experience Manager Assets] unterstützt viele proprietäre und Drittanbieter-Dateiformatbibliotheken, um benutzerseitigen Bedarf an Dateiunterstützung zu decken. Die unterstützten Adobe-Bibliotheken umfassen: [!DNL Adobe Camera Raw], Gibson, Adobe PDF Rasterizer und [!DNL Adobe InDesign Server]. Darüber hinaus [!DNL Experience Manager Assets] unterstützt Bibliotheken von Drittanbietern, einschließlich [!DNL ImageMagick], [!DNL TwelveMonkeys]usw.
 
 Eine vollständige Liste der unterstützten Dateiformate finden Sie unter [Von Assets unterstützte Formate](/help/assets/assets-formats.md).
 
 >[!TIP]
 >
->Wenn Sie [!DNL Experience Manager] in Adobe Managed Services (AMS) verwenden, wenden Sie sich an den Support von Adobe, wenn Sie eine Vielzahl großer PSD- oder PSB-Dateien verarbeiten möchten. Wenden Sie sich an den Support-Mitarbeiter von Adobe, um diese Best Practices für Ihre AMS-Bereitstellung zu implementieren und die bestmöglichen Tools und Modelle für die proprietären Formate von Adobe auszuwählen. [!DNL Experience Manager] kann keine sehr hochauflösenden PSB-Dateien verarbeiten, die mehr als 30000 x 23000 Pixel sind.
+>Wenn Sie [!DNL Experience Manager] Wenden Sie sich in Adobe Managed Services (AMS) an den Kundensupport von Adobe, wenn Sie eine Vielzahl großer PSD- oder PSB-Dateien verarbeiten möchten. Wenden Sie sich an den Support-Mitarbeiter von Adobe, um diese Best Practices für Ihre AMS-Bereitstellung zu implementieren und die bestmöglichen Tools und Modelle für die proprietären Formate von Adobe auszuwählen. [!DNL Experience Manager] kann keine sehr hochauflösenden PSB-Dateien verarbeiten, die mehr als 30000 x 23000 Pixel sind.
 
 ## [!DNL Adobe Camera Raw] Bibliothek {#adobe-camera-raw-library}
 
-Für optimale Leistung empfiehlt Adobe die Verwendung der [!DNL Adobe Camera Raw]-Bibliothek für RAW- und DNG-Dateien.
+Zur Leistungsoptimierung empfiehlt Adobe die Verwendung von [!DNL Adobe Camera Raw] -Bibliothek für RAW- und DNG-Dateien.
 
 [!DNL Adobe Camera Raw] -Bibliothek unterstützt das CMYK-Farbprofil als Eingabe. Sie generiert die Ausgabe jedoch im RGB-Farbraum und unterstützt nur Darstellungen im JPEG-Format. Sie behält nicht den Quelldatei-Farbraum (z. B. CMYK) in den Miniaturen bei.
 
@@ -42,13 +42,13 @@ Die Miniaturbilder und Vorschauen, die mit PDF-Rasterizer generiert werden, habe
 
 ## [!DNL Adobe InDesign Server] {#adobe-indesign-server}
 
-Adobe empfiehlt die Verwendung von [!DNL Adobe InDesign Server] zum Extrahieren von [!DNL Adobe InDesign]-spezifischen Ausgabeformaten wie IDML und HTML. Weitere Informationen finden Sie unter [Hinzufügen von Experience Manager-Assets als Referenzen in Adobe InDesign](/help/assets/managing-linked-subassets.md#refai).
+Adobe empfiehlt die Verwendung von [!DNL Adobe InDesign Server] zu extrahieren [!DNL Adobe InDesign]-spezifische Ausgabedarstellungen wie IDML und HTML. Weitere Informationen finden Sie unter [Hinzufügen von Experience Manager-Assets als Referenzen in Adobe InDesign](/help/assets/managing-linked-subassets.md#refai).
 
 ## [!DNL Dynamic Media] {#dynamic-media}
 
-[!DNL Dynamic Media] generiert und stellt mehrere Varianten von anspruchsvollem Inhalt über sein globales, skalierbares und leistungsoptimiertes Netzwerk bereit. Es dient der Bereitstellung interaktiver Erlebnisse und optimiert die Verwaltung digitaler Kampagnen. Weitere Informationen zur Aktivierung von [!DNL Dynamic Media] finden Sie unter [Konfigurieren von Dynamic Media](/help/assets/config-dynamic.md).
+[!DNL Dynamic Media] generiert und stellt mehrere Varianten von anspruchsvollem Inhalt über sein globales, skalierbares und leistungsoptimiertes Netzwerk bereit. Es dient der Bereitstellung interaktiver Erlebnisse und optimiert die Verwaltung digitaler Kampagnen. Details zur Aktivierung [!DNL Dynamic Media], siehe [Konfigurieren von Dynamic Media](/help/assets/config-dynamic.md).
 
-Derzeit kann [!DNL Dynamic Media] Videos mit bis zu 15 GB Inhalt pro Datei unterstützen.
+Zurzeit [!DNL Dynamic Media] unterstützt Videos mit bis zu 15 GB Inhalt pro Datei.
 
 ## ImageMagick-Bibliothek {#imagemagick-library}
 
@@ -59,7 +59,7 @@ Adobe empfiehlt, die ImageMagick-Bibliothek für folgende Zwecke zu verwenden:
 * Beibehaltung von Transparenz.
 * Verarbeitung von PSD- und PSB-Dateien.
 
-Informationen zum Einrichten der [!DNL ImageMagick]-Bibliothek in [!DNL Experience Manager] finden Sie unter [Verwenden von ImageMagick](/help/assets/media-handlers.md#an-example-using-imagemagick). Hinweise zur optimalen Verwendung finden Sie unter [Best Practices zur Konfiguration von ImageMagick](/help/assets/best-practices-for-imagemagick.md).
+Informationen zum Einrichten der [!DNL ImageMagick] Bibliothek in [!DNL Experience Manager], siehe [Verwenden von ImageMagick](/help/assets/media-handlers.md#an-example-using-imagemagick). Hinweise zur optimalen Verwendung finden Sie unter [Best Practices zur Konfiguration von ImageMagick](/help/assets/best-practices-for-imagemagick.md).
 
 ## Imaging Transcoding Library {#image-transcoding-library}
 

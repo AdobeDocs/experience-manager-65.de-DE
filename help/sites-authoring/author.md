@@ -1,8 +1,8 @@
 ---
-title: 'Authoring – '
-seo-title: 'Authoring – '
+title: Authoring –
+seo-title: Authoring
 description: Konzepte der Bearbeitung (Authoring) in AEM
-seo-description: Konzepte der Bearbeitung (Authoring) in AEM
+seo-description: Concepts of authoring in AEM
 uuid: eaa5f613-a138-4215-8f84-dfc962fe7fa7
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,14 +13,14 @@ docset: aem65
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '538'
 ht-degree: 88%
 
 ---
 
-# Bearbeiten{#authoring}
+# Authoring – {#authoring}
 
-## Die Begriffe des Authoring und Publishing (Bearbeiten und Veröffentlichen)  {#concept-of-authoring-and-publishing}
+## Die Begriffe des Authoring und Publishing (Bearbeiten und Veröffentlichen) {#concept-of-authoring-and-publishing}
 
 AEM bietet Ihnen zwei Umgebungen:
 
@@ -68,7 +68,7 @@ Außerdem gibt es administrative Aufgaben, die Sie beim Verwalten des Inhalts un
 
 #### Veröffentlichungsumgebung {#publish-environment}
 
-Wenn der Inhalt der AEM Site fertig ist, wird er in der **Veröffentlichungsumgebung** veröffentlicht. Hier werden die Seiten der Website in Übereinstimmung mit dem Aussehen der entworfenen Oberfläche der vorgesehenen Zielgruppe bereitgestellt.
+Wenn die Inhalte der AEM Site fertig sind, werden sie im **Veröffentlichungsumgebung**. Hier werden die Seiten der Website in Übereinstimmung mit dem Aussehen der entworfenen Oberfläche der vorgesehenen Zielgruppe bereitgestellt.
 
 Normalerweise befindet sich die Veröffentlichungsumgebung innerhalb der DMZ, d. h. es besteht die Möglichkeit des Zugriffs vom Internet aus und der vollständige Schutz durch das eigene Netzwerk ist nicht mehr gewährleistet.
 
@@ -79,17 +79,14 @@ Handelt es sich bei der AEM-Site um eine [Community-Site](/help/communities/over
 >Leider gibt es bei der verwendeten Terminologie gelegentlich Überschneidungen. Dies ist bei folgenden Begriffen möglich:
 >
 >* **Veröffentlichen/Veröffentlichung rückgängig machen**
-   >  Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Publishing-Umgebung verfügbar machen (oder dies rückgängig machen).
-   >
-   >
-* **Aktivieren/Deaktivieren**
+   >  Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Veröffentlichungsumgebung verfügbar machen (oder dies rückgängig machen).
+>
+>* **Aktivieren/Deaktivieren**
    >  Diese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung.
-   >
-   >
-* **Replizieren/Replikation**
+>
+>* **Replizieren/Replikation**
    >  Hierbei handelt es sich um technische Begriffe, die die Verschiebung von Daten (z. B. Seiteninhalt, Dateien, Code, Benutzerkommentare) von einer Umgebung zur anderen anzeigen. d. h. beim Veröffentlichen oder bei der umgekehrten Replizierung von Benutzerkommentaren.
 >
-
 
 
 #### Dispatcher {#dispatcher}

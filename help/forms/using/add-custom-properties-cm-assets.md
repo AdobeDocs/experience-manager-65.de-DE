@@ -12,7 +12,7 @@ docset: aem65
 feature: Correspondence Management
 exl-id: ba2e145d-51ee-4844-a9e1-9927971d25a1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '4443'
 ht-degree: 100%
 
@@ -204,7 +204,7 @@ Mithilfe des folgenden Verfahrens können Sie eine Registerkarte mit einem Feld 
 
       **Speicherort**: /apps/
 
-      **Knotentypen abgleichen**: Ausgewählt
+      **Übereinstimmende Knotentypen:** Ausgewählt
 
    1. Klicken Sie auf **OK**. Die Ordnerstruktur wird im Apps-Ordner erstellt.
 
@@ -252,7 +252,7 @@ Mithilfe des folgenden Verfahrens können Sie eine Registerkarte mit einem Feld 
 1. Für den Registerkartenknoten, den Sie im vorherigen Schritt erstellt haben (hier commontab) erstellen Sie zunächst einen Knoten, der „item“ heißt, indem Sie folgende Schritte ausführen:
 
    1. Klicken Sie auf den entsprechenden Knoten (hier: commontab) mit der rechten Maustaste und wählen Sie **Erstellen** > **Knoten erstellen**.
-   1. Stellen Sie sicher, dass das Dialogfeld „Knoten erstellen“ folgende Werte aufweist und klicken Sie auf **OK:**
+   1. Stellen Sie sicher, dass das Dialogfeld „Knoten erstellen“ folgende Werte aufweist und klicken Sie auf **OK**:
 
       **Name:** items
 
@@ -333,7 +333,7 @@ Mithilfe des folgenden Verfahrens können Sie eine Registerkarte mit einem Feld 
 
       **Speicherort:** /apps/
 
-      **Knotentypen abgleichen:** Ausgewählte
+      **Übereinstimmende Knotentypen:** Ausgewählt
 
    1. Klicken Sie auf **OK**. Der Ordner wird erstellt. Klicken Sie auf **Alle speichern**.
 
@@ -419,7 +419,7 @@ Um eine Eigenschaft einem Assettyp hinzuzufügen, führen Sie die folgenden Schr
 
       **Speicherort**: /apps/
 
-      **Knotentypen abgleichen**: Ausgewählt
+      **Übereinstimmende Knotentypen:** Ausgewählt
 
    1. Klicken Sie auf **OK**. Die Ordnerstruktur wird im Apps-Ordner erstellt.
 
@@ -859,7 +859,7 @@ Um die Indexerstellung von benutzerdefinierten Eigenschaften zu ermöglichen, f�
 
       **Speicherort:** /apps/
 
-      **Knotentypen abgleichen:** Ausgewählt
+      **Übereinstimmende Knotentypen:** Ausgewählt
 
    1. Klicken Sie auf **OK**. Die Ordnerstruktur wird im Apps-Ordner erstellt.
 
@@ -905,7 +905,7 @@ Um die Indexerstellung von benutzerdefinierten Eigenschaften zu ermöglichen, f�
 
       **Speicherort:** /apps/
 
-      **Knotentypen abgleichen:** Ausgewählt
+      **Übereinstimmende Knotentypen:** Ausgewählt
 
    1. Klicken Sie auf **OK**. Die Ordnerstruktur wird im Apps-Ordner erstellt.
 
@@ -923,7 +923,7 @@ Um die Indexerstellung von benutzerdefinierten Eigenschaften zu ermöglichen, f�
    <tr>
       <td>sling:orderBefore<br /> </td>
       <td>Zeichenfolge</td>
-      <td>card</td>
+      <td>Karte</td>
    </tr>
    </tbody>
    </table>

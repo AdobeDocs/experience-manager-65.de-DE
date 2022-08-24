@@ -1,8 +1,8 @@
 ---
 title: Entwickeln von Apps mit PhoneGap CLI
-seo-title: Entwickeln von Apps mit PhoneGap CLI
+seo-title: Developing Apps with PhoneGap CLI
 description: Auf dieser Seite erfahren Sie mehr über die Entwicklung von Apps mit PhoneGap CLI.
-seo-description: Auf dieser Seite erfahren Sie mehr über die Entwicklung von Apps mit PhoneGap CLI.
+seo-description: Follow this page to learn about developing apps with PhoneGap CLI.
 uuid: 9a66171d-19af-40db-9c07-f5dd9561e1b5
 contentOwner: User
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 4%
+source-wordcount: '696'
+ht-degree: 5%
 
 ---
 
@@ -33,12 +33,12 @@ Um die folgenden Beispiele auszuführen, benötigen Sie ein System, das OSx (Mac
 
 Für iOS: Für die Entwicklung für iPhones und iPads benötigen Sie die Xcode-IDE von Apple.
 
-* Laden Sie es kostenlos [hier](https://developer.apple.com/xcode/downloads/) herunter.
+* kostenlos herunterladen [here](https://developer.apple.com/xcode/downloads/).
 * [Handbuch zur PhoneGap iOS-Plattform](https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide)
 
 Für Android: Für die Entwicklung für iPhones und iPads benötigen Sie die Android Stuido IDE von Google.
 
-* Laden Sie es kostenlos [hier](https://developer.android.com/sdk/index.html) herunter.
+* kostenlos herunterladen [here](https://developer.android.com/sdk/index.html).
 * [Handbuch zur PhoneGap Android-Plattform](https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide)
 
 ## Quelle herunterladen {#download-the-source}
@@ -58,18 +58,18 @@ Nachdem Sie die Entwicklungsumgebung erfolgreich gebootet haben, laden Sie die Q
 >
 >Die Entwicklungsquelle enthält den neuesten Status Ihrer App, einschließlich nicht gestaffelter Änderungen. Verwenden Sie die Staging-Quelle zum Erstellen von Release-Kandidaten für das Senden an Appstore-Anbieter.
 >
->Wenn Sie Ihre App nie testen, wird durch die Auswahl von Staging der Staging-Workflow Trigger (Tipp: wird als gestaffelte App in der PhoneGap Enterprise Viewer App angezeigt, die im AppStore und im Google Play Store verfügbar ist.
+>Wenn Sie Ihre App nie testen, wird durch die Auswahl von Staging der Staging-Workflow Trigger (Tipp: Dies wird als gestaffelte App in der PhoneGap Enterprise Viewer App angezeigt, die im AppStore und im Google PlayStore verfügbar ist.
 
 * Klicken Sie auf Herunterladen und speichern Sie die ZIP auf Ihrem Computer.
 * Extrahieren Sie die heruntergeladene ZIP-Datei in Ihren Arbeitsbereich.
 
-## Erstellen und laden Sie die App (aus der Quelle) {#build-and-load-the-app-from-source}
+## Erstellen und Laden der App (aus der Quelle) {#build-and-load-the-app-from-source}
 
 Die PhoneGap-CLI kann ein Plattformprojekt erstellen, die Quelle kompilieren und die App in einem einzelnen Befehl bereitstellen.
 
 >[!NOTE]
 >
->Sie können alle diese Schritte separat ausführen, siehe [PhoneGap CLI docs](https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/).
+>Sie können alle diese Schritte separat ausführen, siehe [PhoneGap-CLI-Dokumente](https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/).
 
 1. Stellen Sie sicher, dass Sie PhoneGap CLI installiert haben (siehe oben).
 1. Navigieren Sie in einem Konsolenfenster (oder Terminalfenster) zum Stammverzeichnis der extrahierten Quelle.
@@ -95,14 +95,13 @@ phonegap run ios
 >1. Emulator öffnet die neu erstellte PhoneGap-App mit der Meldung &quot;Device Ready&quot;, wenn die JavaScript-Verbindung zum nativen Gerät betriebsbereit ist.
 
 >
->
-Dadurch wird sichergestellt, dass die PhoneGap-CLI-Entwicklungsumgebung ordnungsgemäß ausgeführt wird.
+>Dadurch wird sichergestellt, dass die PhoneGap-CLI-Entwicklungsumgebung ordnungsgemäß ausgeführt wird.
 
-## Debuggen von Javascripts mit Safari und IOS-Debugging {#debug-javascripts-with-safari-and-ios-debug}
+## Debuggen von JavaScript-Dateien mit Safari und IOS-Debugging {#debug-javascripts-with-safari-and-ios-debug}
 
 Sie können die JavaScripts Ihrer App mit den Entwicklertools von Safari debuggen, so wie bei einer Webanwendung.
 
-## Aktivieren Sie Safari Developer Tools {#enable-safari-developer-tools}
+## Aktivieren der Safari-Entwicklertools {#enable-safari-developer-tools}
 
 So aktivieren Sie die Entwicklertools:
 
@@ -118,9 +117,9 @@ So aktivieren Sie die Entwicklertools:
 * Aktivieren Sie &quot;Menü &quot;Entwickeln&quot;in der Menüleiste anzeigen&quot;.
 * Fenster &quot;Voreinstellung&quot;schließen
 
-## Verbinden von Safari mit iOS {#connect-safari-to-ios}
+## Safari mit iOS verbinden {#connect-safari-to-ios}
 
-Sie können Safari entweder mit einem iOS-Gerät oder Emulator verbinden.
+Sie können Safari entweder mit einem iOS-Gerät oder -Emulator verbinden.
 
 * Navigieren Sie in einem Konsolenfenster zum Stammverzeichnis der extrahierten Quelle.
 * Geben Sie den folgenden Befehl ein, um Ihre App auf Ihrem Gerät oder Emulator zu starten.
@@ -161,4 +160,4 @@ Sie können Haltepunkte an einer beliebigen Stelle in Ihrer Quelle festlegen. We
 
 ## Die nächsten Schritte {#the-next-steps}
 
-Nachdem Sie sich mit der Entwicklung von Apps mit PhoneGap CLI vertraut gemacht haben, lesen Sie [Zugriff auf Gerätefunktionen](/help/mobile/phonegap-access-device-features.md).
+Nachdem Sie sich mit der Entwicklung von Apps mit PhoneGap CLI vertraut gemacht haben, lesen Sie [Zugreifen auf Gerätefunktionen](/help/mobile/phonegap-access-device-features.md).

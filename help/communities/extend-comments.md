@@ -1,8 +1,8 @@
 ---
 title: Erweitern der Kommentarkomponente
-seo-title: Erweitern der Kommentarkomponente
+seo-title: Extend Comments Component
 description: Erweitern Sie die Komponente Kommentare , um ihr Erscheinungsbild oder Verhalten für bestimmte Verwendungen zu ändern.
-seo-description: Erweitern Sie die Komponente Kommentare , um ihr Erscheinungsbild oder Verhalten für bestimmte Verwendungen zu ändern.
+seo-description: Extend the Comments component to alter its appearance or behavior for specific uses
 uuid: 6f439097-b1d0-4e7d-afcf-01d8f43aa866
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,20 +12,20 @@ discoiquuid: a07a4690-0e47-4a76-84cb-96abdc70b835
 exl-id: e57198cb-8fd9-43e2-b416-e40e462561c8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
 
-# Kommentarkomponente erweitern {#extend-comments-component}
+# Erweitern der Kommentarkomponente  {#extend-comments-component}
 
-Die Absicht von [Erweiterung](client-customize.md#extensions) einer Standardkomponente besteht darin, das Erscheinungsbild oder Verhalten einer Komponente für bestimmte Verwendungen zu ändern.
+Die Absicht von [Erweiterung](client-customize.md#extensions) Eine Standardkomponente besteht darin, das Erscheinungsbild oder Verhalten einer Komponente für bestimmte Verwendungen zu ändern.
 
 Der Pfad zur Komponente ist eindeutig und verweist auf die Standardkomponente als Superressourcentyp. Das Risiko ist geringer, da der Umfang im Vergleich zum globalen Umfang einer Komponentenüberlagerung begrenzt ist.
 
 >[!NOTE]
 >
->Das Erweitern einer [überlagerten](client-customize.md#overlays)-Komponente wird nicht unterstützt.
+>Erweitern einer [überlagert](client-customize.md#overlays) -Komponente wird nicht unterstützt.
 
 ## Beispiel {#example}
 
@@ -33,7 +33,7 @@ Angenommen, die Kopfzeile für die Kommentarkomponente muss auf einer Site der A
 
 Um diese Lösung zu implementieren, erstellen Sie eine neue Komponente, die die vorhandene Komponente erweitert (überschreibt) und das Handlebars-Skript ändert. Der Bereich der Site, der die neuen Kommentare verwendet, kann den erweiterten Bereich verwenden, während die Sites, die das standardmäßige Erscheinungsbild verwenden, davon nicht betroffen sind.
 
-Die Kommentarkomponente ist tatsächlich eine von zwei Komponenten, die das Kommentarsystem enthalten. Daher müssen zwei Komponenten erweitert werden: *comments* und *comment*. Das zu bearbeitende Skript befindet sich in der Datei *comment* der Komponente `header.hbs`, während die übergeordnete Komponente *comments* (das Kommentarsystem) das ist, was ein Autor der Seite tatsächlich hinzufügt.
+Die Kommentarkomponente ist tatsächlich eine von zwei Komponenten, die das Kommentarsystem enthalten. Daher müssen zwei Komponenten erweitert werden: *Kommentare* und *comment*. Das zu bearbeitende Skript befindet sich im *comment* Komponenten `header.hbs` -Datei, während die übergeordnete *Kommentare* -Komponente (das Kommentarsystem) ist, was ein Autor der Seite tatsächlich hinzufügt.
 
 Um Kommentare zu erweitern, müssen Sie:
 

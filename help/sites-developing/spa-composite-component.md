@@ -1,49 +1,49 @@
 ---
-title: Composite-Komponenten in SPA
-description: Erfahren Sie, wie Sie eigene Composite-Komponenten erstellen, Komponenten aus anderen Komponenten, die mit dem AEM Single Page Application (SPA) Editor funktionieren.
+title: Zusammengesetzte Komponenten in SPA
+description: Erfahren Sie, wie Sie eigene zusammengesetzte Komponenten erstellen. Das sind Komponenten aus anderen Komponenten, die mit dem AEM-SPA-Editor funktionieren.
 exl-id: 02b6c698-d169-467a-9168-9fa6181bed6c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '783'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Composite-Komponenten in SPA {#composite-components-in-spas}
+# Zusammengesetzte Komponenten in SPA {#composite-components-in-spas}
 
-Composite-Komponenten nutzen den modularen Charakter AEM Komponenten, indem sie mehrere Basiskomponenten zu einer Komponente kombinieren. Ein gängiges Anwendungsbeispiel für Composite-Komponenten ist die Kartenkomponente, die aus einer Kombination aus Bild- und Textkomponenten besteht.
+Zusammengesetzte Komponenten nutzen den modularen Charakter von AEM-Komponenten, indem sie mehrere Basiskomponenten zu einer einzelnen Komponente kombinieren. Ein gängiges Anwendungsbeispiel für zusammengesetzte Komponenten ist die Kartenkomponente, die aus einer Kombination aus Bild- und Textkomponenten besteht.
 
-Wenn Composite-Komponenten ordnungsgemäß im Editor-Framework für AEM Einzelseiten-Apps (SPA) implementiert sind, können die Inhaltsautoren solche Komponenten wie jede andere Komponente per Drag-and-Drop verschieben, aber dennoch die Möglichkeit haben, jede Komponente, aus der die Composite-Komponente besteht, einzeln zu bearbeiten.
+Wenn zusammengesetzte Komponenten ordnungsgemäß im Editor-Framework für AEM-Single-Page-Applications (SPA) implementiert sind, können die Inhaltsautoren solche Komponenten wie jede andere Komponente per Drag-and-Drop verschieben, haben aber dennoch die Möglichkeit, jede Komponente, aus der die zusammengesetzte Komponente besteht, einzeln zu bearbeiten.
 
-In diesem Artikel wird gezeigt, wie Sie Ihrer Einzelseiten-App eine Composite-Komponente hinzufügen können, um nahtlos mit dem AEM-SPA-Editor zu arbeiten.
+In diesem Artikel wird gezeigt, wie Sie Ihrer Single Page Application eine zusammengesetzte Komponente hinzufügen können, um nahtlos mit dem AEM SPA Editor zu arbeiten.
 
-## Nutzungsszenario   {#use-case}
+## Nutzungsszenario {#use-case}
 
-In diesem Artikel wird die typische Kartenkomponente als Anwendungsbeispiel verwendet. Karten sind für viele digitale Erlebnisse ein gemeinsames UI-Element und bestehen normalerweise aus einem Bild und zugehörigen Text oder einer Beschriftung. Ein Autor möchte die gesamte Karte per Drag-and-Drop verschieben, aber in der Lage sein, das Kartenbild individuell zu bearbeiten und den zugehörigen Text anzupassen.
+In diesem Artikel wird die typische Kartenkomponente als Anwendungsbeispiel verwendet. Karten sind ein gängiges Element in Benutzerobeflächen für viele digitale Erlebnisse und bestehen in der Regel aus einem Bild und einem zugehörigen Text oder einer Beschriftung. Ein Autor möchte die gesamte Karte per Drag-and-Drop verschieben, aber in der Lage sein, sowohl das Kartenbild individuell zu bearbeiten als auch den zugehörigen Text anzupassen.
 
 ## Voraussetzungen {#prerequisites}
 
-Die folgenden Modelle zur Unterstützung der Anwendungsfälle der Composite-Komponente erfordern die folgenden Voraussetzungen.
+Die folgenden Modelle zur Unterstützung der Anwendungsfälle der zusammengesetzten Komponente haben die folgenden Voraussetzungen.
 
-* Ihre AEM Entwicklungsinstanz wird lokal an Port 4502 mit einem Beispielprojekt ausgeführt.
-* Sie haben die funktionierende externe React-App [aktiviert, die in AEM bearbeitet werden kann.](spa-edit-external.md)
+* Ihre AEM-Entwicklungsinstanz wird lokal an Port 4502 mit einem Beispielprojekt ausgeführt.
+* Sie haben eine funktionierende externe React-App [für die Bearbeitung in AEM aktiviert.](spa-edit-external.md)
 * Die React-App wird im AEM-Editor [mit der RemotePage-Komponente geladen.](spa-remote-page.md)
 
-## Hinzufügen von Composite-Komponenten zu einem SPA {#adding-composite-components}
+## Hinzufügen von zusammengesetzten Komponenten zu einer SPA {#adding-composite-components}
 
-Je nach SPA Implementierung in AEM gibt es drei verschiedene Modelle für die Implementierung Ihrer Composite-Komponente.
+Je nach SPA-Implementierung in AEM gibt es drei verschiedene Modelle für die Implementierung Ihrer zusammengesetzten Komponente.
 
-* [Die Komponente ist nicht in Ihrem AEM Projekt vorhanden.](#component-does-not-exist)
-* [Die Komponente ist in Ihrem AEM Projekt vorhanden, die erforderlichen Inhalte jedoch nicht.](#content-does-not-exist)
-* [Die Komponente und der erforderliche Inhalt sind beide in Ihrem AEM Projekt vorhanden.](#both-exist)
+* [Die Komponente ist nicht in Ihrem AEM-Projekt vorhanden.](#component-does-not-exist)
+* [Die Komponente ist in Ihrem AEM-Projekt vorhanden, die erforderlichen Inhalte jedoch nicht.](#content-does-not-exist)
+* [Die Komponente und die erforderlichen Inhalte sind beide in Ihrem AEM-Projekt vorhanden.](#both-exist)
 
 In den folgenden Abschnitten finden Sie Beispiele für die Implementierung der einzelnen Fälle mit der Kartenkomponente als Beispiel.
 
-### Die Komponente ist nicht in Ihrem AEM Projekt vorhanden. {#component-does-not-exist}
+### Die Komponente ist nicht in Ihrem AEM-Projekt vorhanden. {#component-does-not-exist}
 
-Erstellen Sie zunächst die Komponenten, aus denen die Composite-Komponente besteht, d. h. Komponenten für das Bild und dessen Text.
+Erstellen Sie zunächst die Komponenten, aus denen die zusammengesetzte Komponente besteht, d. h. Komponenten für das Bild und dessen Text.
 
-1. Erstellen Sie die Textkomponente in Ihrem AEM Projekt.
+1. Erstellen Sie die Textkomponente in Ihrem AEM-Projekt.
 1. Fügen Sie den entsprechenden `resourceType` aus dem Projekt im Knoten `editConfig` der Komponente hinzu.
 
    ```text
@@ -56,7 +56,7 @@ Erstellen Sie zunächst die Komponenten, aus denen die Composite-Komponente best
    export const AEMText = withMappable(Text, TextEditConfig); 
    ```
 
-Die Textkomponente ähnelt der folgenden.
+Die Textkomponente sieht ähnlich wie die folgende aus.
 
 ```javascript
 import React from 'react';
@@ -104,7 +104,7 @@ export const AEMCard = ({ pagePath, itemPath}) => (
 );
 ```
 
-Diese resultierende Composite-Komponente kann jetzt an einer beliebigen Stelle in der App platziert werden. Der fügt Platzhalter für einen Text und eine Bildkomponente im SPA Editor hinzu. Im folgenden Beispiel wird die Kartenkomponente zur Startseite unter dem Titel hinzugefügt.
+Diese resultierende zusammengesetzte Komponente kann jetzt an einer beliebigen Stelle in der App platziert werden. Der Autor fügt Platzhalter für einen Text und eine Bildkomponente im SPA-Editor hinzu. Im folgenden Beispiel wird die Kartenkomponente zur Startseitenkomponente unter dem Titel hinzugefügt.
 
 ```javascript
 function Home() {
@@ -118,19 +118,19 @@ function Home() {
 }
 ```
 
-Dadurch wird ein leerer Platzhalter für einen Text und ein Bild im Editor angezeigt. Bei der Eingabe von Werten für diese mithilfe des Editors werden sie im angegebenen Seitenpfad gespeichert, d. h. `/content/wknd-spa/home` auf der Stammebene mit den in `itemPath` angegebenen Namen.
+Dadurch wird im Editor ein leerer Platzhalter für einen Text und ein Bild angezeigt. Bei der Eingabe von Werten für diese mithilfe des Editors werden sie im angegebenen Seitenpfad gespeichert, d. h. `/content/wknd-spa/home` auf der Stammebene mit den in `itemPath` angegebenen Namen.
 
-![Composite-Kartenkomponente im Editor](assets/composite-card.png)
+![Zusammengesetzte Kartenkomponente im Editor](assets/composite-card.png)
 
-### Die Komponente ist in Ihrem AEM Projekt vorhanden, die erforderlichen Inhalte jedoch nicht. {#content-does-not-exist}
+### Die Komponente ist in Ihrem AEM-Projekt vorhanden, die erforderlichen Inhalte jedoch nicht. {#content-does-not-exist}
 
-In diesem Fall wird die Kartenkomponente bereits in Ihrem AEM-Projekt mit Titel- und Bildknoten erstellt. Die untergeordneten Knoten (Text und Bild) verfügen über die entsprechenden Ressourcentypen.
+In diesem Fall wird die Kartenkomponente bereits in Ihrem AEM-Projekt mit Titel- und Bildknoten erstellt. Die untergeordneten Knoten (Text und Bild) haben die entsprechenden Ressourcentypen.
 
 ![Knotenstruktur der Kartenkomponente](assets/composite-node-structure.png)
 
-Anschließend können Sie es zu Ihrer SPA hinzufügen und den Inhalt abrufen.
+Anschließend können Sie es zu Ihrer SPA hinzufügen und die Inhalte abrufen.
 
-1. Erstellen Sie hierfür eine entsprechende Komponente im SPA. Stellen Sie sicher, dass die untergeordneten Komponenten den entsprechenden AEM Ressourcentypen im SPA Projekt zugeordnet sind. In diesem Beispiel verwenden wir dieselben `AEMText`- und `AEMImage`-Komponenten wie im vorherigen Fall [detailliert.](#component-does-not-exist)
+1. Erstellen Sie hierfür eine entsprechende Komponente in der SPA. Stellen Sie sicher, dass die untergeordneten Komponenten den entsprechenden AEM-Ressourcentypen im SPA-Projekt zugeordnet sind. In diesem Beispiel verwenden wir dieselben `AEMText`- und `AEMImage`-Komponenten wie im vorherigen Fall [detailliert](#component-does-not-exist).
 
    ```javascript
    import React from 'react';
@@ -147,8 +147,8 @@ Anschließend können Sie es zu Ihrer SPA hinzufügen und den Inhalt abrufen.
    ```
 
 1. Da für die Komponente `imagecard` kein Inhalt vorhanden ist, fügen Sie die Karte zur Seite hinzu. Schließen Sie den vorhandenen Container aus AEM in die SPA ein.
-   * Wenn bereits ein Container im AEM Projekt vorhanden ist, können wir ihn stattdessen in die SPA aufnehmen und die Komponente stattdessen aus AEM zum Container hinzufügen.
-   * Stellen Sie sicher, dass die Kartenkomponente dem entsprechenden Ressourcentyp im SPA zugeordnet ist.
+   * Wenn bereits ein Container im AEM-Projekt vorhanden ist, können wir ihn stattdessen in die SPA aufnehmen und die Komponente stattdessen aus AEM zum Container hinzufügen.
+   * Stellen Sie sicher, dass die Kartenkomponente dem entsprechenden Ressourcentyp in der SPA zugeordnet ist.
 
    ```javascript
    <ResponsiveGrid
@@ -156,13 +156,13 @@ Anschließend können Sie es zu Ihrer SPA hinzufügen und den Inhalt abrufen.
     itemPath='root/responsivegrid' />
    ```
 
-1. Fügen Sie die erstellte Komponente `wknd-spa/components/imagecard` den zulässigen Komponenten für die Container-Komponente [in der Seitenvorlage hinzu.](/help/sites-authoring/templates.md)
+1. Fügen Sie die erstellte Komponente `wknd-spa/components/imagecard` den zulässigen Komponenten für die Container-Komponente [in der Seitenvorlage hinzu](/help/sites-authoring/templates.md).
 
 Jetzt kann die Komponente `imagecard` direkt zum Container im AEM-Editor hinzugefügt werden.
 
-![Composite-Karte im Editor](assets/composite-card.gif)
+![Zusammengesetzte Karte im Editor](assets/composite-card.gif)
 
-### Die Komponente und der erforderliche Inhalt sind beide in Ihrem AEM Projekt vorhanden. {#both-exist}
+### Die Komponente und die erforderlichen Inhalte sind beide in Ihrem AEM-Projekt vorhanden. {#both-exist}
 
 Wenn der Inhalt in AEM vorhanden ist, kann er direkt in die SPA eingefügt werden, indem der Pfad zum Inhalt angegeben wird.
 
@@ -172,6 +172,6 @@ Wenn der Inhalt in AEM vorhanden ist, kann er direkt in die SPA eingefügt werde
     itemPath='root/responsivegrid/imagecard' />
 ```
 
-![Composite-Pfad in Knotenstruktur](assets/composite-path.png)
+![Pfad für zusammengesetzte Komponente in Knotenstruktur](assets/composite-path.png)
 
-Die Komponente `AEMCard` entspricht der Definition [im vorherigen Anwendungsfall.](#content-does-not-exist) Hier ist der am oben definierten Speicherort im AEM-Projekt definierte Inhalt im SPA enthalten.
+Die Komponente `AEMCard` entspricht der Definition [im vorherigen Anwendungsfall.](#content-does-not-exist) Hier wird der Inhalt, der am oben genannten Speicherort im AEM-Projekt definiert ist, in die SPA aufgenommen.

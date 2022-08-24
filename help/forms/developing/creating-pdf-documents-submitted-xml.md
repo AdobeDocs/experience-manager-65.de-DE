@@ -13,7 +13,7 @@ discoiquuid: 62490230-a24e-419d-95bb-c0bb04a03f96
 role: Developer
 exl-id: d9d5b94a-9d10-4d90-9e10-5142f30ba4a3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1320'
 ht-degree: 100%
 
@@ -108,15 +108,15 @@ So erstellen Sie mithilfe der Forms-, Ausgabe- und Document Management-API (Java
       * Ein Zeichenfolgenwert, der den Wert der `HTTP_USER_AGENT`-Kopfzeile angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * A `RenderOptionsSpec` -Objekt, das Laufzeitoptionen speichert.
 
-      Die `processFormSubmission`-Methode gibt ein `FormsResult`-Objekt zurück, das die Ergebnisse der Formularübermittlung enthält.
+      Die `processFormSubmission`-Methode gibt ein `FormsResult`-Objekt aus, das die Ergebnisse der Formularübermittlung enthält.
 
    * Stellen Sie fest, ob der Forms-Dienst die Verarbeitung der Formulardaten abgeschlossen hat, indem Sie die `getAction`-Methode des `FormsResult`-Objekts aufrufen. Wenn diese Methode den Wert `0` zurückgibt, können die Daten verarbeitet werden.
    * Abrufen von Formulardaten durch Erstellen eines `com.adobe.idp.Document`-Objekts durch Aufrufen der `getOutputContent`-Methode des `FormsResult`-Objekts. (Dieses Objekt enthält Formulardaten, die an den Output-Dienst gesendet werden können.)
    * Erstellen Sie ein `java.io.InputStream`-Objekt durch Aufrufen des `java.io.DataInputStream`-Konstruktor und Übergabe des `com.adobe.idp.Document`-Objekts.
-   * Erstellen Sie ein `org.w3c.dom.DocumentBuilderFactory`-Objekt durch Aufrufen der `newInstance`-Methode des statischen `org.w3c.dom.DocumentBuilderFactory`-Objekts.
-   * Erstellen Sie ein `org.w3c.dom.DocumentBuilder`-Objekt durch Aufrufen der `newDocumentBuilder`-Methode des `org.w3c.dom.DocumentBuilderFactory`-Objekts.
-   * Erstellen Sie ein `org.w3c.dom.Document`-Objekt, indem Sie die Methode `parse` des `org.w3c.dom.DocumentBuilder`-Objekts aufrufen und das `java.io.InputStream`-Objekt übergeben.
-   * Rufen Sie den Wert jedes Knotens im XML-Dokument ab. Eine Möglichkeit, diese Aufgabe durchzuführen, besteht darin, eine benutzerdefinierte Methode zu erstellen, die zwei Parameter akzeptiert: das `org.w3c.dom.Document`-Objekt und den Namen des Knotens, dessen Wert Sie abrufen möchten. Diese Methode gibt einen Zeichenfolgewert aus, der den Wert des Knotens darstellt. Im Code-Beispiel, das diesem Prozess folgt, wird diese benutzerdefinierte Methode `getNodeText` genannt. Der Hauptteil dieser Methode wird angezeigt.
+   * Erstellen Sie ein `org.w3c.dom.DocumentBuilderFactory`-Objekt, indem Sie die `newInstance`-Methode des statischen `org.w3c.dom.DocumentBuilderFactory`-Objekts aufrufen.
+   * Erstellen Sie ein `org.w3c.dom.DocumentBuilder`-Objekt, indem Sie die `newDocumentBuilder`-Methode des `org.w3c.dom.DocumentBuilderFactory`-Objekts aufrufen.
+   * Erstellen Sie ein `org.w3c.dom.Document`-Objekt, indem Sie die `parse`-Methode des `org.w3c.dom.DocumentBuilder`-Objekts aufrufen und das `java.io.InputStream`-Objekt übergeben.
+   * Rufen Sie den Wert jedes Knotens im XML-Dokument ab. Eine Möglichkeit, diese Aufgabe durchzuführen, besteht darin, eine benutzerdefinierte Methode zu erstellen, die zwei Parameter akzeptiert: das `org.w3c.dom.Document`-Objekt und den Namen des Knotens, dessen Wert Sie abrufen möchten. Diese Methode gibt einen Zeichenfolgewert aus, der den Wert des Knotens darstellt. Im folgenden Code-Beispiel wird diese benutzerdefinierte Methode `getNodeText` genannt. Der Hauptteil dieser Methode wird angezeigt.
 
 
 1. Erstellen Sie ein nicht interaktives PDF-Dokument mit dem Output-Dienst.
@@ -136,7 +136,7 @@ So erstellen Sie mithilfe der Forms-, Ausgabe- und Document Management-API (Java
 
    Fügen Sie den Inhalt hinzu, indem Sie die Methode `storeContent` des Objekts `DocumentManagementServiceClientImpl` verwenden und die folgenden Werte übergeben:
 
-   * Ein Zeichenfolgewert, der den Speicher angibt, dem der Inhalt hinzugefügt wird. Die Standardeinstellung ist `SpacesStore`. Dieser Wert ist ein obligatorischer Parameter.
+   * Ein Zeichenfolgewert, der den Speicher angibt, dem der Inhalt hinzugefügt wird. Der Standardspeicherort ist `SpacesStore`. Dieser Wert ist ein obligatorischer Parameter.
    * Ein Zeichenfolge-Wert, der den vollständig qualifizierten Pfad des Bereichs angibt, in dem der Inhalt hinzugefügt wird (z. B. `/Company Home/Test Directory`). Dieser Wert ist ein obligatorischer Parameter.
    * Der Knotenname, der den neuen Inhalt darstellt (z. B. `MortgageForm.pdf`). Dieser Wert ist ein obligatorischer Parameter.
    * Ein Zeichenfolge-Wert, der den Knotentyp angibt. Um neuen Inhalt hinzuzufügen, z. B. eine PDF-Datei, legen Sie `{https://www.alfresco.org/model/content/1.0}content` fest. Dieser Wert ist ein obligatorischer Parameter.

@@ -1,8 +1,8 @@
 ---
 title: Kataloggrundlagen
-seo-title: Kataloggrundlagen
+seo-title: Catalog Essentials
 description: Katalogübersicht
-seo-description: Katalogübersicht
+seo-description: Catalog overview
 uuid: 788512bb-fa38-48fb-a769-1eaae6bb95a1
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,8 +12,8 @@ discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
 exl-id: 4ca76b50-d56d-4f4d-be92-bf8929c5d754
 source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 4%
+source-wordcount: '358'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +23,7 @@ Auf dieser Seite finden Sie die wichtigsten Informationen zum Arbeiten mit der K
 
 Mit der Katalogfunktion können Community-Mitglieder, die in einer Community-Site enthalten sind, die in einem Katalog aufgelisteten Aktivierungsressourcen durchsuchen und auswählen.
 
-Die Komponente [ `enablement catalog`](catalog.md) ermöglicht Community-Mitgliedern den Zugriff auf einen Katalog von [Aktivierungsressourcen](resources.md). Die Verwendung AEM Tags ist ein wichtiger Bestandteil der Verwaltung des Erscheinungsbilds von Aktivierungsressourcen in einem Katalog.
+Die [ `enablement catalog` component](catalog.md) ermöglicht es Community-Mitgliedern, auf einen Katalog von [Aktivierungsressourcen](resources.md). Die Verwendung AEM Tags ist ein wichtiger Bestandteil der Verwaltung des Erscheinungsbilds von Aktivierungsressourcen in einem Katalog.
 
 Siehe [Tagging von Aktivierungsressourcen](tag-resources.md).
 
@@ -62,18 +62,18 @@ Siehe [Tagging von Aktivierungsressourcen](tag-resources.md).
 
 ### Katalogfunktion {#catalog-function}
 
-Eine Community-Site-Struktur, die die [Katalogfunktion](functions.md#catalog-function) enthält, enthält eine konfigurierte `enablement catalog`-Komponente.
+Eine Community-Site-Struktur mit [Katalogfunktion](functions.md#catalog-function)enthält eine konfigurierte `enablement catalog` -Komponente.
 
 ### Vorfilter {#pre-filters}
 
 Wenn einer Community-Site eine Katalogfunktion hinzugefügt wurde, können Sie die Aktivierungsressourcen und Lernpfade, die im Katalog angezeigt werden, einschränken, indem Sie einen Vorfilter angeben. Dies geschieht durch Festlegen von Eigenschaften in der Instanz der Katalogressource für die Site.
 
-Verwenden Sie das Beispiel des [Aktivierungs-Tutorials](getting-started-enablement.md):
+Verwenden des Beispiels der [Tutorial zur Aktivierung](getting-started-enablement.md):
 
 * Beim Autor
-* Verwenden von [CRXDE](../../help/sites-developing/developing-with-crxde-lite.md)
+* Verwenden [CRXDE](../../help/sites-developing/developing-with-crxde-lite.md)
 
-   * Beispiel: [https://&lt;server>:&lt;port>/crx/de](http://localhost:4502/crx/de)
+   * z. B. [https://&lt;server>:&lt;port>/crx/de](http://localhost:4502/crx/de)
 
 * Navigieren Sie zur Katalogressource auf der Katalogseite.
 
@@ -81,25 +81,25 @@ Verwenden Sie das Beispiel des [Aktivierungs-Tutorials](getting-started-enableme
 
 * Knoten für untergeordnete Filter hinzufügen
 
-   * Wählen Sie den Knoten `catalog`aus
-   * Wählen Sie **[!UICONTROL Knoten erstellen]**
+   * Wählen Sie die `catalog`Knoten
+   * Auswählen **[!UICONTROL Knoten erstellen]**
 
       * Name: `filters`
       * Typ: `nt:unstructured`
-      * Wählen Sie **[!UICONTROL Alle speichern]**
+      * Wählen Sie **[!UICONTROL Alle speichern]** aus
 
-* Fügen Sie die Eigenschaft `se_resource-tags` zum Knoten `filters` hinzu.
+* Hinzufügen `se_resource-tags` -Eigenschaft auf `filters` Knoten
 
-   * Wählen Sie den Knoten `filters` aus.
+   * Wählen Sie die `filters` Knoten
    * Hinzufügen einer Eigenschaft &quot;Multi&quot;
 
       * Name: `se_resource-tags`
       * Typ: String
-      * Wert: *&lt;enter a [TagID](#pre-filter-tagids)*
-         * Wählen Sie **[!UICONTROL Multi]**
-         * Wählen Sie **[!UICONTROL Hinzufügen]**
+      * Wert: *&lt;enter a=&quot;&quot; span=&quot;&quot; id=&quot;1&quot; translate=&quot;no&quot; />TagID](#pre-filter-tagids)>*[
+         * Auswählen **[!UICONTROL Multi]**
+         * Klicken Sie auf **[!UICONTROL Hinzufügen]**
 
-            * Wählen Sie im Popup-Dialogfeld `+` aus, um zusätzliche Tag-IDs vor dem Filter hinzuzufügen.
+            * Wählen Sie im Popup-Dialogfeld `+` um zusätzliche Tag-IDs vor dem Filter hinzuzufügen
 
 * Veröffentlichen Sie die Community-Site erneut.
 
@@ -107,7 +107,7 @@ Verwenden Sie das Beispiel des [Aktivierungs-Tutorials](getting-started-enableme
 
 #### Tag-IDs vor dem Filter {#pre-filter-tagids}
 
-Der Vorfilter [TagIDs](../../help/sites-developing/framework.md#tagid) muss genau mit den Tags übereinstimmen, die auf die Aktivierungsressourcen angewendet werden. Diese sind im Ordner `resources` der Site als Werte der Eigenschaft `se_resource-tags` sichtbar.
+Der Vorfilter [TagIDs](../../help/sites-developing/framework.md#tagid) muss genau mit den Tags übereinstimmen, die auf die Aktivierungsressourcen angewendet werden. Diese sind im `resources` Ordner für die Site als Werte der Eigenschaft `se_resource-tags`.
 
 ![configure-filters](assets/configure-catalog1.png)
 

@@ -1,7 +1,7 @@
 ---
-title: Experience Fragments
+title: 'Experience Fragments '
 seo-title: Experience Fragments
-description: Experience Fragments
+description: 'Experience Fragments '
 seo-description: null
 uuid: 9a1d12ef-5690-4a2e-8635-a710775efa39
 contentOwner: User
@@ -14,11 +14,11 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 source-git-commit: ab6fd8ca02d2a24e5973b5d78bc75288b5cc26c0
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 92%
+ht-degree: 96%
 
 ---
 
-# Experience Fragments{#experience-fragments}
+# Experience Fragments {#experience-fragments}
 
 Ein Experience Fragment ist eine Gruppe aus einer oder mehreren Komponenten (einschließlich Inhalt und Layout), die innerhalb von Seiten referenziert werden können. Diese Gruppen können jede beliebige Komponente enthalten.
 
@@ -27,7 +27,7 @@ Ein Experience Fragment:
 * ist Teil eines Erlebnisses (Seite).
 * kann übergreifend für mehrere Seiten verwendet werden.
 * basiert auf einer (bearbeitbaren) Vorlage, die seine Struktur und Komponenten definiert.
-* Diese Vorlage wird verwendet, um die *Stammseite* des Experience Fragments.
+* Diese Vorlage wird verwendet, um die *Stammseite* des Experience Fragments zu erstellen.
 * besteht aus einer oder mehreren Komponenten mit Layout innerhalb eines Absatzsystems.
 * kann Experience Fragments enthalten.
 * kann mit anderen Komponenten (einschließlich anderen Experience Fragments) zu einer vollständigen Seite (Erlebnis) kombiniert werden.
@@ -151,7 +151,7 @@ Verwenden Sie diesen Dialog nur zu Informationszwecken.
    >[!NOTE]
    Weitere Informationen finden Sie unter [Vorlagen für Experience Fragments](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments).
 
-1. Wählen Sie **Speichern** aus.
+1. Klicken Sie auf **Speichern**.
 
 ## Erstellen eines Experience Fragment {#creating-an-experience-fragment}
 
@@ -285,7 +285,7 @@ So erstellen Sie einen neuen Baustein:
 
 Der Baustein wird auf der Registerkarte **Bausteine** angezeigt. Für jeden Baustein sind die folgenden Aktionen verfügbar:
 
-* Gehen Sie zu Übergeordnet: die Stammseitenvariante in einer neuen Registerkarte öffnen
+* Zur Hauptvariante wechseln: zum Öffnen der Stammseiten-Variante in einer neuen Registerkarte
 * Umbenennen
 * Löschen
 
@@ -343,7 +343,7 @@ Details zu Ihrem Fragment können wie folgt angezeigt werden:
 
 
 
-## Einfache HTML-Ausgabe {#the-plain-html-rendition}
+## Einfache HTML-Ausgabedarstellung {#the-plain-html-rendition}
 
 Mit dem `.plain.`-Selektor in der URL können Sie auf die einfache HTML-Ausgabe des Browsers zugreifen.
 

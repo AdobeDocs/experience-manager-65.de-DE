@@ -10,9 +10,9 @@ discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1421'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -75,12 +75,12 @@ Gehen Sie folgendermaßen vor, um Ihre [!DNL MySQL]-Datenbank zu konfigurieren:
       * **JDBC-Verbindungs-URI**: Geben Sie die Verbindungs-URL der Datenbank an. Für eine [!DNL MySQL]-Datenbank, die auf Port 3306 und nach dem Schema WeRetail ausgeführt wird, lautet die URL: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
       * **Benutzername:** Benutzername der Datenbank. Es ist erforderlich, den JDBC-Treiber zu aktivieren, um eine Verbindung mit der Datenbank herzustellen.
       * **Kennwort:** Kennwort für die Datenbank. Es ist erforderlich, den JDBC-Treiber zu aktivieren, um eine Verbindung mit der Datenbank herzustellen.
-      * **Test beim Ausleihen:** Aktivieren Sie die Option **[!UICONTROL Test on Borrow]**.
+      * **Test on Borrow**: Aktivieren Sie die Option **[!UICONTROL Test on Borrow]**.
       * **Test on Return:** Aktivieren Sie die Option **[!UICONTROL Test on Return.]**
-      * **Validation Query:** Geben Sie eine SQL SELECT-Abfrage ein, damit Verbindungen aus dem Pool validiert werden. Die Abfrage muss mindestens eine Zeile zurückgeben. Beispiel: **Wählen Sie * aus Kundendaten**.
+      * **Validation Query:** Geben Sie eine SQL SELECT-Abfrage ein, damit Verbindungen aus dem Pool validiert werden. Die Abfrage muss mindestens eine Zeile zurückgeben. Beispiel: **select &#42; von Kundendetails**.
       * **Transaktions-Isolierung**: Setzen Sie den Wert auf **READ_COMMITTED**.
 
-         Belassen Sie für andere Eigenschaften die standardmäßigen [Werte](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) und tippen Sie auf **[!UICONTROL Speichern]**.
+         Belassen Sie die anderen Eigenschaften auf den [Standardwerten](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) und tippen Sie auf **[!UICONTROL Speichern]**.
 
          Eine Konfiguration ähnlich der folgenden wird erstellt.
 
@@ -193,7 +193,7 @@ Gehen Sie folgendermaßen vor, um das Formulardatenmodell zu konfigurieren:
 
       * **Eingabemodellobjekt**: Wählen Sie ein Schema mit Kundendaten. Beispiel:
 
-         customerdetail schema
+         customerdetail-Schema
 
       * **Ausgabetyp**: Wählen Sie **BOOLEAN**.
 

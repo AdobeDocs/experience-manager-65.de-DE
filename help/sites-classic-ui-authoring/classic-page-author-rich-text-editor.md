@@ -54,9 +54,9 @@ Derzeit ist die Bearbeitung im Kontext für Seitenelemente möglich, die durch d
 >
 >Die [!UICONTROL Titel]-Komponente wurde konzipiert, um kurzen Text ohne Zeilenumbrüche zu enthalten. Wenn Sie einen Titel im kontextbasierten Bearbeitungsmodus bearbeiten, wird durch Einfügen eines Zeilenumbruchs eine neue **Text**-Komponente unter dem Titel geöffnet.
 
-## Funktionen des Rich-Text-Editors  {#features-of-the-rich-text-editor}
+## Funktionen des Rich-Text-Editors {#features-of-the-rich-text-editor}
 
-Der Rich-Text-Editor bietet eine Reihe von Funktionen, diese [hängen von der Konfiguration](/help/sites-administering/rich-text-editor.md) der einzelnen Komponente ab. Die Funktionen sind sowohl für die Touch-optimierte als auch für die klassische Benutzeroberfläche verfügbar.
+Der Rich-Text-Editor bietet eine Reihe von Funktionen, diese [von der Konfiguration abhängig](/help/sites-administering/rich-text-editor.md) der einzelnen Komponente. Die Funktionen sind sowohl für die Touch-optimierte als auch für die klassische Benutzeroberfläche verfügbar.
 
 ### Grundlegende Zeichenformate {#basic-character-formats}
 
@@ -74,7 +74,7 @@ Hier können Sie Formatierungen auf ausgewählte (markierte) Zeichen anwenden, f
 
 Alle Funktionen arbeiten als Schalter, wenn Sie also erneut darauf klicken, wird die Formatierung wieder entfernt.
 
-### Vordefinierte Stile und Formate  {#predefined-styles-and-formats}
+### Vordefinierte Stile und Formate {#predefined-styles-and-formats}
 
 ![cq55_rte_stylesparagraph](assets/cq55_rte_stylesparagraph.png)
 
@@ -96,7 +96,7 @@ Ein Stil kann entfernt werden. Platzieren Sie dafür den Cursor innerhalb des Te
 >
 >Markieren Sie keine Textbereiche in dem Text, auf den der Stil angewendet wurde, da ansonsten das Symbol nicht verfügbar ist.
 
-### Ausschneiden, Kopieren, Einfügen  {#cut-copy-paste}
+### Ausschneiden, Kopieren, Einfügen {#cut-copy-paste}
 
 ![](do-not-localize/cq55_rte_cutcopypaste.png)
 
@@ -104,8 +104,7 @@ Die Standardfunktionen **[!UICONTROL Ausschneiden]** und **[!UICONTROL Kopieren]
 
 * Ausschneiden (Strg+X)
 * Kopieren (Strg-C)
-* Einfügen
-Dies ist der standardmäßige Einfügemechanismus (Strg+V) für die Komponente. Wenn Sie vorkonfiguriert installiert haben, ist dies auf [!UICONTROL Aus Word einfügen] konfiguriert.
+* Einfügen Dies ist der standardmäßige Einfügemechanismus (Strg+V) für die Komponente. bei der nativen Installation ist dies so konfiguriert, dass [!UICONTROL Aus Word einfügen].
 
 * Als Text einfügen: Entfernt alle Stile und Formatierungen, um nur den Nur-Text einzufügen.
 
@@ -175,7 +174,7 @@ Sie haben folgende Möglichkeiten:
 
 >[!NOTE]
 >
->Der URI kann jedes der Protokolle vorangestellt werden, die für die jeweilige Installation konfiguriert sind. In einer Standardinstallation sind dies `https://`, `ftp://` und `mailto:`. Protokolle, die nicht für die jeweilige Installation konfiguriert sind, werden zurückgewiesen und als ungültig markiert.
+>Der URI kann jedes der Protokolle vorangestellt werden, die für die jeweilige Installation konfiguriert sind. In einer Standardinstallation sind dies `https://`, `ftp://`und `mailto:`. Protokolle, die nicht für die jeweilige Installation konfiguriert sind, werden zurückgewiesen und als ungültig markiert.
 
 Um den Hyperlink zu entfernen, klicken Sie auf eine beliebige Stelle innerhalb des Link-Texts und klicken Sie auf das Symbol[!UICONTROL Verknüpfung aufheben]:
 
@@ -249,7 +248,7 @@ Tabellen können auf zwei Arten eingefügt werden:
 
    >[!NOTE]
    >
-   >Obwohl Tabellen im RTE verfügbar sind, wird empfohlen, beim Erstellen von Tabellen die Komponente **Tabelle** zu verwenden.
+   >Obwohl Tabellen im RTE verfügbar sind, wird empfohlen, die Variable **Verzeichnis** -Komponente beim Erstellen von Tabellen.
 
 Sowohl in der Komponente **Text** als auch in der Komponente **Tabelle** sind die Tabellenoptionen über das Kontextmenü verfügbar, das in der Regel durch Klicken mit der rechten Maustaste auf die Tabelle aufgerufen wird. Beispiel:
 
@@ -271,7 +270,7 @@ Dies sind die tabellenspezifischen Funktionen:
 * [Verschachtelte Tabellen](#creating-nested-tables)
 * [Tabelle entfernen](#remove-table)
 
-#### Table Properties {#table-properties}
+#### Tabelleneigenschaften {#table-properties}
 
 ![cq55_rte_tableproperties_icon](assets/cq55_rte_tableproperties_icon.png)
 
@@ -307,9 +306,9 @@ Die Eigenschaften einer Zelle bzw. einer Reihe von Zellen können konfiguriert w
 
 * **Breite**
 * **Höhe**
-* **Horizontale Ausrichtung**  - Links, Mitte oder Rechts
-* **Vertikale Ausrichtung**  - oben, Mitte, unten oder Grundlinie
-* **Zellentyp** - Daten oder Kopfzeile
+* **Horizontale Ausrichtung** - links, zentriert oder rechts
+* **Vertikale Ausrichtung** - Oben, Mitte, Unten oder Grundlinie
+* **Zellentyp**- Daten oder Kopfzeile
 * **Anwenden auf:** Einzelne Zelle, gesamte Zeile, gesamte Spalte
 
 #### Zeilen hinzufügen oder löschen {#add-or-delete-rows}
@@ -320,7 +319,7 @@ Zeilen können entweder über oder unter der aktuellen Zeile eingefügt werden.
 
 Die aktuelle Zeile kann außerdem gelöscht werden.
 
-#### Spalten hinzufügen oder löschen  {#add-or-delete-columns}
+#### Spalten hinzufügen oder löschen {#add-or-delete-columns}
 
 ![cq55_rte_columns](assets/cq55_rte_columns.png)
 
@@ -328,7 +327,7 @@ Spalten können entweder links oder rechts von der aktuellen Spalte eingefügt w
 
 Die aktuelle Spalte kann außerdem gelöscht werden.
 
-#### Ganze Zeilen oder Spalten auswählen  {#selecting-entire-rows-or-columns}
+#### Ganze Zeilen oder Spalten auswählen {#selecting-entire-rows-or-columns}
 
 ![chlimage_1-106](assets/chlimage_1-106.png)
 
@@ -336,12 +335,12 @@ Dadurch wird die gesamte Zeile bzw. Spalte ausgewählt. Dann sind bestimmte Akti
 
 #### Zellen verbinden {#merge-cells}
 
-![cq55_rte_](assets/cq55_rte_cellmerge.png) ![cellmergecq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
+![cq55_rte_cellmerge](assets/cq55_rte_cellmerge.png) ![cq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
 
 * Wenn Sie eine Gruppe von Zellen ausgewählt haben, können Sie sie zu einer einzigen Zelle zusammenführen.
 * Wenn Sie nur eine Zelle ausgewählt haben, können Sie diese Zelle mit der Zelle rechts davon oder der Zelle unterhalb davon zusammenführen.
 
-#### Zellen teilen  {#split-cells}
+#### Zellen teilen {#split-cells}
 
 ![cq55_rte_cellsplit](assets/cq55_rte_cellsplit.png)
 
@@ -350,7 +349,7 @@ Einzelne Zelle auswählen und teilen
 * Durch die horizontale Teilung einer Zelle wird eine neue Zelle rechts von der aktuellen Zelle und innerhalb der aktuellen Spalte eingefügt.
 * Durch die vertikale Teilung einer Zelle wird eine neue Zelle unterhalb der aktuellen Zelle und innerhalb der aktuellen Zeile eingefügt.
 
-#### Erstellen verschachtelter Tabellen  {#creating-nested-tables}
+#### Erstellen verschachtelter Tabellen {#creating-nested-tables}
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
@@ -364,11 +363,11 @@ Durch Erstellen einer verschachtelten Tabelle wird eine neue separate Tabelle in
 >* Firefox: Ziehen Sie den Mauszeiger, um einen Zellenbereich auszuwählen.
 
 
-#### Remove Table {#remove-table}
+#### Tabelle entfernen {#remove-table}
 
 ![cq55_rte_removtable](assets/cq55_rte_removetable.png)
 
-Verwenden Sie die Option, um die Tabelle aus der Komponente **[!UICONTROL Text]** zu entfernen.
+Verwenden Sie die Option , um die Tabelle aus dem **[!UICONTROL Text]** -Komponente.
 
 ### Sonderzeichen {#special-characters}
 
@@ -380,7 +379,7 @@ Je nach Installation können in Ihrem Rich-Text-Editor auch Sonderzeichen verfü
 
 Halten Sie den Mauszieger über ein bestimmtes Zeichen, um eine vergrößerte Vorschau anzuzeigen, und klicken Sie dann darauf, um es an der aktuellen Position in den Text einzufügen.
 
-### Quellbearbeitungsmodus  {#source-editing-mode}
+### Quellbearbeitungsmodus {#source-editing-mode}
 
 ![](do-not-localize/cq55_rte_sourceedit.png)
 

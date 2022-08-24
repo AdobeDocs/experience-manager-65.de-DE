@@ -9,12 +9,12 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 role: User, Admin
-feature: Workflow,Asset-Management,Ausgabedarstellungen
+feature: Workflow,Asset Management,Renditions
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
 source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '1379'
-ht-degree: 67%
+source-wordcount: '1375'
+ht-degree: 81%
 
 ---
 
@@ -32,8 +32,8 @@ Um Metadaten-, Bild- oder Videoprofile erstellen, bearbeiten oder löschen zu k�
 
 Nachdem Sie Ihr Metadaten-, Bild- oder Videoprofil erstellt haben, weisen Sie es mindestens einem Ordner zu, den Sie als Ziel für neu hochgeladene Assets verwenden.
 
-Ein wichtiges Konzept für die Verwendung von Profilen in Experience Manager Assets besteht darin, dass sie Ordnern zugewiesen werden. In einem Profil sind Einstellungen in Form von Metadatenprofilen zusammen mit Videoprofilen oder Bildprofilen enthalten. Mit diesen Einstellungen wird der Inhalt eines Ordners und seiner zugehörigen Unterordner verarbeitet. Wie Sie Dateien und Ordner benennen, wie Sie Unterordner anordnen und wie Sie die Dateien in diesen Ordnern verarbeiten, hat daher erhebliche Auswirkungen darauf, wie diese Assets von einem Profil verarbeitet werden.
-Durch die Verwendung konsistenter und angemessener Strategien zur Datei- und Ordnernamen sowie einer guten Metadatenpraxis können Sie die digitale Asset-Sammlung optimal nutzen und sicherstellen, dass die richtigen Dateien vom richtigen Profil verarbeitet werden.
+Ein wichtiges Konzept zur Verwendung von Profilen in Experience Manager Assets ist deren Zuweisung zu Ordnern. In einem Profil sind Einstellungen in Form von Metadatenprofilen zusammen mit Videoprofilen oder Bildprofilen enthalten. Mit diesen Einstellungen wird der Inhalt eines Ordners und seiner zugehörigen Unterordner verarbeitet. Wie Sie Ihre Dateien und Ordner benennen, wie Sie Unterordner anordnen und wie Sie die Dateien in diesen Ordnern verarbeiten, hat daher eine erhebliche Auswirkung darauf, wie diese Assets durch ein Profil verarbeitet werden.
+Indem Sie konsistente und geeignete Datei- und Ordnernamensstrategien zusammen mit angemessenen Metadatenpraktiken einsetzen, können Sie die Sammlung Ihrer digitalen Assets optimal nutzen und sicherstellen, dass die richtigen Dateien vom richtigen Profil verarbeitet werden.
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Durch die Verwendung konsistenter und angemessener Strategien zur Datei- und Ord
 
 >[!NOTE]
 >
->Gilt nur für den Modus *Dynamic Media - Scene7* nur in Experience Manager 6.4.6.0 oder höher.
+>Gilt für *Dynamic Media - Scene7-Modus* nur in Experience Manager 6.4.6.0 oder höher.
 
 Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vorhandenes Verarbeitungsprofil verfügt, das Sie nachträglich geändert haben.
 
@@ -67,7 +67,7 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
 
 **Neuverarbeitung von Assets in einem Ordner:**
 
-1. Navigieren Sie in Experience Manager auf der Seite &quot;Assets&quot;zu einem Ordner mit Assets, dem ein Verarbeitungsprofil zugewiesen ist und für den Sie die Scene7 **[!UICONTROL anwenden möchten: Workflow Asset]** erneut verarbeiten,
+1. Navigieren Sie in Experience Manager auf der Seite &quot;Assets&quot;zu einem Ordner mit Assets, dem ein Verarbeitungsprofil zugewiesen ist und für den Sie die **[!UICONTROL Scene7: Asset erneut verarbeiten]** Workflow,
 
    Bei Ordnern, denen bereits ein Verarbeitungsprofil zugewiesen wurde, wird der Name des Profils direkt unter dem Ordnernamen in der Kartenansicht angezeigt.
 
@@ -77,8 +77,8 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
    * Wenn sich im ausgewählten Hauptordner ein oder mehrere Unterordner mit Assets befinden, verarbeitet der Workflow jedes Asset in der Ordnerhierarchie neu.
    * Es empfiehlt sich, diesen Workflow nicht in einer Ordnerhierarchie mit mehr als 1.000 Assets auszuführen.
 
-1. Wählen Sie links oben auf der Seite aus der Dropdownliste **[!UICONTROL Timeline]** aus.
-1. Wählen Sie links unten auf der Seite rechts neben dem Feld Kommentar das Karussymbol ( **^** ) aus.
+1. Wählen Sie links oben auf der Seite aus dem Dropdown-Menü die Option **[!UICONTROL Zeitleiste]**.
+1. Klicken Sie unten links auf der Seite rechts neben dem Kommentarfeld auf das Caret-Symbol (**^**).
 
    ![Workflow zur Neuverarbeitung von Assets 1](/help/assets/assets/reprocess-assets1.png)
 
@@ -90,7 +90,7 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
 
 1. Wählen Sie **[!UICONTROL Start]** und dann **[!UICONTROL Bestätigen]** aus.
 
-   Um den Workflow zu überwachen oder seinen Fortschritt zu überprüfen, wählen Sie auf der Hauptseite der Experience Manager-Konsole **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** aus. Wählen Sie auf der Seite „Workflow-Instanzen“ einen Workflow aus. Wählen Sie in der Menüleiste **[!UICONTROL Offener Verlauf]** aus. Sie können einen ausgewählten Workflow auch auf derselben Seite „Workflow-Instanzen“ beenden, aussetzen oder umbenennen.
+   Um den Workflow zu überwachen oder seinen Fortschritt zu überprüfen, wählen Sie auf der Hauptseite der Experience Manager-Konsole die Option **[!UICONTROL Instrumente]** > **[!UICONTROL Workflow]**. Wählen Sie auf der Seite „Workflow-Instanzen“ einen Workflow aus. Klicken Sie in der Menüleiste auf **[!UICONTROL Offener Verlauf]**. Sie können einen ausgewählten Workflow auch auf derselben Seite „Workflow-Instanzen“ beenden, aussetzen oder umbenennen.
 
 ### Anpassen der Batch-Größe des Neuverarbeitungs-Workflows {#adjusting-load}
 
@@ -98,18 +98,18 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
 
 **Anpassen der Batch-Größe des Neuverarbeitungs-Workflows:**
 
-1. Wählen Sie in Experience Manager **[!UICONTROL Adobe Experience Manager]** aus, um auf die globale Navigationskonsole zuzugreifen. Wählen Sie dann das Symbol **[!UICONTROL Tools]** (Hammer) > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]** aus.
+1. Wählen Sie in Experience Manager **[!UICONTROL Adobe Experience Manager]** , um auf die globale Navigationskonsole zuzugreifen, und wählen Sie dann die **[!UICONTROL Instrumente]** (Hammersymbol) > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**.
 1. Wählen Sie auf der Seite „Workflow-Modelle“ in der Karten- oder Listenansicht **[!UICONTROL Scene7: Assets erneut verarbeiten]** aus.
 
    ![Seite „Workflow-Modelle“ mit „Scene7: Assets erneut verarbeiten“ in der Kartenansicht ausgewählt](/help/assets/assets-dm/reprocess-assets7.png)
 
-1. Wählen Sie in der Symbolleiste **[!UICONTROL Bearbeiten]** aus. Eine neue Browser-Registerkarte öffnet die Workflow-Modellseite „Scene7: Assets erneut verarbeiten“.
-1. Auf der Scene7: Workflow-Seite &quot;Assets erneut verarbeiten&quot;in der Nähe der oberen rechten Ecke wählen Sie **[!UICONTROL Bearbeiten]** aus, um den Workflow zu &quot;entsperren&quot;.
-1. Wählen Sie im Workflow die Komponente Scene7 Batch-Upload aus, um die Symbolleiste zu öffnen, und wählen Sie dann **[!UICONTROL Konfigurieren]** in der Symbolleiste aus.
+1. Wählen Sie in der Symbolleiste **[!UICONTROL Bearbeiten]**. Eine neue Browser-Registerkarte öffnet die Workflow-Modellseite „Scene7: Assets erneut verarbeiten“.
+1. Klicken Sie oben rechts auf der Workflow-Seite „Scene7: Assets erneut verarbeiten“ auf **[!UICONTROL Bearbeiten]**, um den Workflow zu entsperren.
+1. Wählen Sie im Workflow die Komponente Scene7 Batch-Upload aus, um die Symbolleiste zu öffnen, und wählen Sie dann **[!UICONTROL Konfigurieren]** in der Symbolleiste.
 
    ![Komponente „Massen-Upload in Scene7“](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. Legen Sie im Dialogfeld **[!UICONTROL Massen-Upload zu Scene7 - Schritt-Eigenschaften]** Folgendes fest:
+1. Im **[!UICONTROL Batch-Upload in Scene7 - Schritteigenschaften]** festzulegen, legen Sie Folgendes fest:
    * Geben Sie in die Textfelder **[!UICONTROL Titel]** und **[!UICONTROL Beschreibung]** einen neuen Titel und eine neue Beschreibung für den Auftrag ein, falls gewünscht.
    * Wählen Sie **[!UICONTROL Handler-Modus]** aus, wenn der Handler mit dem nächsten Schritt fortfahren soll.
    * Geben Sie im Feld **[!UICONTROL Timeout]** den externen Prozess-Timeout (Sekunden) ein.
@@ -119,9 +119,9 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
 
    ![Dialogfeld „Eigenschaften“](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. Wählen Sie oben rechts im Dialogfeld **[!UICONTROL Massen-Upload zu Scene7 - Schritteigenschaften]** die Option **[!UICONTROL Fertig]**.
+1. Klicken Sie oben rechts im Dialogfeld **[!UICONTROL Massen-Upload in Scene7 – Schritt-Eigenschaften]** auf **[!UICONTROL Fertig]**.
 
-1. In der oberen rechten Ecke der Scene7: Neuverarbeitung der Workflow-Modellseite für Assets, wählen Sie **[!UICONTROL Sync]** aus. Wenn Sie **[!UICONTROL Synchronisiert]** sehen, ist das Workflow-Laufzeitmodell erfolgreich synchronisiert und bereit, Assets in einem Ordner erneut zu verarbeiten.
+1. Klicken Sie oben rechts auf der Workflow-Modellseite „Scene7: Assets erneut verarbeiten“ auf **[!UICONTROL Synchronisieren]**. Wenn Sie **[!UICONTROL Synchronisiert]** sehen, ist das Workflow-Laufzeitmodell erfolgreich synchronisiert und bereit, Assets in einem Ordner erneut zu verarbeiten.
 
    ![Synchronisieren des Workflow-Modells](/help/assets/assets-dm/reprocess-assets1.png)
 

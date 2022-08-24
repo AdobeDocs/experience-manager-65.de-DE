@@ -1,8 +1,8 @@
 ---
 title: Grundlagen der quantitativen Lockerung
-seo-title: Grundlagen der quantitativen Lockerung
+seo-title: QnA Essentials
 description: Forumsfunktion für Fragen und Antworten
-seo-description: Forumsfunktion für Fragen und Antworten
+seo-description: Questions and answers forum feature
 uuid: c718a8e3-b3bd-4db9-8c0f-6dd973d40583
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,7 +12,7 @@ discoiquuid: ceace3aa-78a5-485e-b519-630479e087d8
 exl-id: a7b295c1-cc9d-4881-8016-804b21fc1098
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '249'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 Diese Seite enthält die wichtigsten Informationen für die Arbeit mit der Forumsfunktion Fragen und Antworten (QnA).
 
-## Grundlagen für Client-seitige {#essentials-for-client-side}
+## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -47,14 +47,14 @@ Diese Seite enthält die wichtigsten Informationen für die Arbeit mit der Forum
   </tr>
   <tr>
    <td> properties</td>
-   <td>Siehe <a href="working-with-qna.md">Fragen und Antworten Forum-Funktion</a></td>
+   <td>Siehe <a href="working-with-qna.md">Frage- und Forumsfunktion</a></td>
   </tr>
  </tbody>
 </table>
 
 * [Clientseitige Anpassungen](client-customize.md)
 
-## Grundlagen für serverseitige {#essentials-for-server-side}
+## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
 
 * [QnA-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
 
@@ -64,20 +64,20 @@ Diese Seite enthält die wichtigsten Informationen für die Arbeit mit der Forum
 
 ### Fragen/Antworten-Funktion {#qna-function}
 
-Eine Community-Site-Struktur, die die [QnA-Funktion](functions.md#qna-function) enthält, verfügt über eine konfigurierte `QnA`-Komponente sowie Einstellungen, die sich auf die Moderation und das Tagging auswirken. Die Funktion QnA unterstützt die Identifizierung einer [berechtigten Mitgliederbenutzergruppe](users.md#privileged-members-group).
+Eine Community-Site-Struktur mit [QnA-Funktion](functions.md#qna-function) verfügt über eine konfigurierte `QnA` sowie Einstellungen, die sich auf die Moderation und das Tagging auswirken. Die Funktion &quot;Fragen und Antworten&quot;unterstützt die Identifizierung einer [Berechtigte Mitgliederbenutzergruppe](users.md#privileged-members-group).
 
-### Aufrufen von QnA-Forumsposten (UGC) {#accessing-qna-forum-posts-ugc}
+### Zugreifen auf QnA-Forumbeiträge (UGC) {#accessing-qna-forum-posts-ugc}
 
 UGC sollte mit einer der Standardmethoden für die Moderation moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Stores](working-with-srp.md) für UGC den programmatischen Zugriff auf UGC, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities: Verwendung einer [gemeinsamer Speicher](working-with-srp.md) für UGC umfasst den programmatischen Zugriff auf UGC, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
 
-**Speicherort und Format der UGC im Repository können sich ohne Warnung** ändern.
+**Speicherort und Format der UGC im Repository können ohne Warnung geändert werden**.
 
 Siehe:
 
-* [Übersicht über den Speicheranbieter](srp.md)  - Einführung und Übersicht über die Repository-Nutzung.
-* [SRP und UGC Essentials](srp-and-ugc.md)  - SRP-Dienstprogrammmethoden und Beispiele.
-* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md)  - Codierungsrichtlinien.
-* [SocialUtils-Refaktorierung](socialutils.md)  - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
+* [Übersicht über den Speicheranbieter](srp.md) - Einführung und Übersicht über die Repository-Nutzung.
+* [Grundlagen zu SRP und UGC](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und -beispiele.
+* [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Codierungsrichtlinien.
+* [SocialUtils-Refaktorierung](socialutils.md) - Zuordnung veralteter Methoden für Dienstprogramme zu aktuellen SRP-Dienstprogrammmethoden.

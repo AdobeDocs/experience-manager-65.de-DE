@@ -3,10 +3,11 @@ title: Varianten – Erstellen von Fragmentinhalten
 description: Erfahren Sie, wie Varianten Ihre Headless-Inhalte in AEM noch flexibler gestalten können, indem Sie Inhalte für das Fragment erstellen und dann entsprechend dem Zweck Varianten dieses Inhalts erstellen können.
 feature: Content Fragments
 role: User
-source-git-commit: 251bf0ac672d516dd6b2018fc9cc804822f48e4c
+exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
+source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
 workflow-type: tm+mt
 source-wordcount: '2256'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -165,7 +166,7 @@ Wenn das Inhaltsfragmentmodell Fragmentreferenzen enthält, stehen Ihren Fragmen
 
 #### Inhaltsfragment bearbeiten {#fragment-references-edit-content-fragment}
 
-Mit der Option **Inhaltsfragment bearbeiten** wird dieses Fragment in einer neuen Fensterregisterkarte geöffnet.
+Die Option **Inhaltsfragment bearbeiten** öffnet dieses Fragment in einer neuen Fensterregisterkarte.
 
 <!--
 The option **Edit Content Fragment** will open that fragment in a new editor tab (within the same browser tab).
@@ -189,7 +190,7 @@ Anschließend können Sie wie folgt ein neues Fragment erstellen:
    1. Mit **Fertig** kehren Sie (zum ursprünglichen Fragment) zurück und verweisen auf das neue Fragment.
    1. **Öffnen** referenziert das neue Fragment und öffnet das neue Fragment zur Bearbeitung in einer neuen Browser-Registerkarte.
 
-### Anzeigen von Schlüsselstatistiken {#viewing-key-statistics}
+### Anzeigen von wichtigen Statistiken {#viewing-key-statistics}
 
 Wenn der Vollbild-Editor geöffnet ist, zeigt die Aktion **Textstatistik** eine Reihe von Informationen über den Text an.
 
@@ -220,10 +221,11 @@ Mithilfe der Zusammenfassung von Text können Benutzer die Länge des Textes auf
 >[!CAUTION]
 Englisch ist standardmäßig verfügbar.
 Andere Sprachen sind als Sprachmodellpakete über Package Share verfügbar:
-* [Französisch (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
-* [Deutsch (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [Italienisch (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
-* [Spanisch (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+* [Französisch (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+* [Deutsch (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+* [Italienisch (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+* [Spanisch (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>
 
 
 1. Wählen Sie **Primäre Version** oder die erforderliche Variante aus.
@@ -278,7 +280,7 @@ So fügen Sie Anmerkungen zu Fragmenten hinzu:
 
 1. Schließen Sie den Editor für den Vollbildmodus. Die Anmerkungen sind weiterhin hervorgehoben. Wenn diese Option aktiviert ist, wird ein Dialogfeld geöffnet, in dem Sie die Anmerkung weiter bearbeiten können.
 
-1. Wählen Sie **Speichern** aus.
+1. Klicken Sie auf **Speichern**.
 
 1. Schließen Sie den Editor für den Vollbildmodus. Die Anmerkungen sind weiterhin hervorgehoben. Wenn diese Option aktiviert ist, wird ein Dialogfeld geöffnet, in dem Sie die Anmerkung weiter bearbeiten können.
 
@@ -324,7 +326,7 @@ Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/conten
    * Navigieren zum gewünschten Asset in DAM
    * Suchen nach dem Asset in DAM
 
-   Nachdem Sie das gewünschte Asset gefunden haben, wählen Sie es aus, indem Sie auf die Miniaturansicht klicken.
+   Nachdem Sie das gewünschte Asset gefunden haben, wählen Sie es aus, indem Sie auf die Miniatur klicken.
 
 1. Verwenden Sie **Auswahl**, um das Asset dem Absatzsystem Ihres Content Fragments am aktuellen Speicherort hinzuzufügen.
 
@@ -334,7 +336,7 @@ Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/conten
    * **Markdown:** Das Asset wird nicht angezeigt, ist aber immer noch vorhanden, wenn Sie zu **Rich Text** zurückkehren.
 
 
-### Einfügen eines Inhaltsfragments in Ihr Fragment {#inserting-content-fragment-into-your-fragment}
+### Einfügen eines Inhaltsfragments in ein Fragment {#inserting-content-fragment-into-your-fragment}
 
 Um die Erstellung von Inhaltsfragmenten zu vereinfachen, können Sie Ihrem Fragment auch ein anderes Inhaltsfragment hinzufügen.
 
@@ -360,7 +362,7 @@ Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/conten
    * Navigieren zum gewünschten Fragment im Assets-Ordner,
    * Suchen nach dem Fragment,
 
-   Nachdem Sie das gewünschte Fragment gefunden haben, klicken Sie auf die Miniaturansicht, um es auszuwählen.
+   Nachdem Sie das gewünschte Fragment gefunden haben, klicken Sie auf die Miniatur, um es auszuwählen.
 
 1. Verwenden Sie **Auswahl**, um dem aktuellen Inhaltsfragment (an der aktuellen Position) eine Referenz zum ausgewählten Inhaltsfragment hinzuzufügen.
 
@@ -372,7 +374,7 @@ Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/conten
 
 ## Verwalten von Varianten {#managing-variations}
 
-### Variante erstellen {#creating-a-variation}
+### Erstellen einer Variante {#creating-a-variation}
 
 Varianten ermöglichen die Abänderung von **primärem** Inhalt für einen bestimmten Zweck (sofern notwendig).
 

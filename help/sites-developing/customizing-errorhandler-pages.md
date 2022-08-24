@@ -1,8 +1,8 @@
 ---
 title: Anpassen der vom Fehler-Handler angezeigten Seiten
-seo-title: Anpassen der vom Fehler-Handler angezeigten Seiten
+seo-title: Customizing Pages shown by the Error Handler
 description: AEM enthält einen Standard-Fehler-Handler für die Verarbeitung von HTTP-Fehlern.
-seo-description: AEM enthält einen Standard-Fehler-Handler für die Verarbeitung von HTTP-Fehlern.
+seo-description: AEM comes with a standard error handler for handling HTTP errors
 uuid: aaf940fd-e428-4c7c-af7f-88b1d02c17c6
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 63c94c82-ed96-4d10-b645-227fa3c09f4b
 exl-id: d6745baa-44da-45dd-b5d5-a9b218e7e8cf
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '518'
 ht-degree: 83%
 
 ---
@@ -23,14 +23,14 @@ AEM enthält einen Standard-Fehler-Handler für die Verarbeitung von HTTP-Fehler
 
 ![chlimage_1-67](assets/chlimage_1-67a.png)
 
-Systembereitgestellte Skripte sind (unter `/libs/sling/servlet/errorhandler`) vorhanden, um auf Fehlercodes zu reagieren. Standardmäßig sind bei einer Standard-CQ-Instanz folgende Skripte verfügbar:
+Systembereitgestellte Skripte sind vorhanden (unter `/libs/sling/servlet/errorhandler`), um auf Fehler-Codes zu reagieren, sind in einer Standard-CQ-Instanz standardmäßig die folgenden verfügbar:
 
 * 403.jsp
 * 404.jsp
 
 >[!NOTE]
 >
->AEM basiert auf Apache Sling, daher finden Sie unter [https://sling.apache.org/site/errorhandling.html](https://sling.apache.org/site/errorhandling.html) detaillierte Informationen zur Sling-Fehlerbehandlung.
+>AEM basiert auf Apache Sling, siehe [https://sling.apache.org/site/errorhandling.html](https://sling.apache.org/site/errorhandling.html) für detaillierte Informationen zur Sling-Fehlerbehandlung.
 
 >[!NOTE]
 >
@@ -38,9 +38,9 @@ Systembereitgestellte Skripte sind (unter `/libs/sling/servlet/errorhandler`) vo
 >
 >In Veröffentlichungsinstanzen ist CQ WCM Debug Filter *immer* deaktiviert (selbst wenn er als aktiviert konfiguriert ist).
 
-## Anpassung der vom Fehler-Handler angezeigten Seiten  {#how-to-customize-pages-shown-by-the-error-handler}
+## Anpassung der vom Fehler-Handler angezeigten Seiten {#how-to-customize-pages-shown-by-the-error-handler}
 
-Sie können Ihre eigenen Skripte erstellen, um die Seiten anzupassen, die der Fehler-Handler anzeigt, wenn ein Fehler auftritt. Ihre angepassten Seiten werden unter `/apps` erstellt und überlagern die Standardseiten (die sich unter `/libs` befinden).
+Sie können Ihre eigenen Skripte erstellen, um die Seiten anzupassen, die der Fehler-Handler anzeigt, wenn ein Fehler auftritt. Ihre angepassten Seiten werden unter `/apps` und überlagern die Standardseiten (die unter `/libs`).
 
 >[!NOTE]
 >
@@ -86,7 +86,7 @@ Indem Sie [die Seiten anpassen, die der Fehler-Handler zeigt](#how-to-customize-
 
 Andernfalls wird der Antwort-Code auf „500“ gesetzt, aber das `500.jsp`-Skript wird nicht ausgeführt.
 
-Um 500-Fehler zu verarbeiten, muss der Dateiname des Fehler-Handler-Skripts identisch mit der Ausnahmeklasse (oder der übergeordneten Klasse) sein. Um alle diese Ausnahmen zu handhaben, können Sie ein Skript `/apps/sling/servlet/errorhandler/Throwable.js`p oder `/apps/sling/servlet/errorhandler/Exception.jsp` erstellen.
+Um 500-Fehler zu verarbeiten, muss der Dateiname des Fehler-Handler-Skripts identisch mit der Ausnahmeklasse (oder der übergeordneten Klasse) sein. Um alle diese Ausnahmen zu handhaben, können Sie ein Skript erstellen `/apps/sling/servlet/errorhandler/Throwable.js`p oder `/apps/sling/servlet/errorhandler/Exception.jsp`.
 
 >[!CAUTION]
 >

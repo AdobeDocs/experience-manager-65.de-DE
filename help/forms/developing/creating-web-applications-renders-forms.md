@@ -13,7 +13,7 @@ discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 role: Developer
 exl-id: 85e00003-8c8b-463a-b728-66af174be295
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1874'
 ht-degree: 100%
 
@@ -98,19 +98,19 @@ Informationen zum Speicherort dieser JAR-Dateien finden Sie unter [Einbeziehen v
 **So erstellen Sie ein Web-Projekt:**
 
 1. Starten Sie Eclipse und klicken Sie auf **Datei** > **Neues Projekt**.
-1. Wählen Sie im Dialogfeld **Neues Projekt** die Option **Web** > **Dynamisches Web-Projekt**.
+1. Wählen Sie im Dialogfeld **Neues Projekt** die Optionen **Web** > **Dynamisches Webprojekt**.
 1. Geben Sie `FragmentsWebApplication` für den Namen Ihres Projekts ein, und klicken Sie dann auf **Beenden**.
 
 **So fügen Sie erforderliche JAR-Dateien zu Ihrem Projekt hinzu:**
 
 1. Klicken Sie im Projekt-Explorer-Fenster mit der rechten Maustaste auf das Projekt `FragmentsWebApplication` und wählen Sie **Eigenschaften**.
-1. Klicken Sie auf **Java-Build-Pfad** und dann auf die Registerkarte **Bibliotheken**.
+1. Klicken Sie auf **Java-Build-Pfad** und anschließend auf die Registerkarte **Bibliotheken**.
 1. Klicken Sie auf die Schaltfläche **Externe JARs hinzufügen** und navigieren Sie zu den einzuschließenden JAR-Dateien.
 
 **So fügen Sie ein Java-Servlet zu Ihrem Projekt hinzu:**
 
 1. Klicken Sie im Projekt-Explorer-Fenster mit der rechten Maustaste auf das Projekt `FragmentsWebApplication` und wählen Sie **Neu** > **Sonstige**.
-1. Erweitern Sie den Ordner **Web**, wählen Sie **Servlet** und klicken Sie auf **Weiter**.
+1. Erweitern Sie den Ordner **Web**, wählen Sie **Servlet** aus und klicken Sie anschließend auf **Weiter**.
 1. Geben Sie im Dialogfeld „Servlet erstellen“ `RenderFormFragment` für den Namen des Servlets ein und klicken Sie dann auf **Beenden**.
 
 **So fügen Sie eine HTML-Seite zu Ihrem Projekt hinzu:**
@@ -150,7 +150,7 @@ Führen Sie die folgenden Aufgaben aus, um ein auf Fragmenten basierendes Formul
 1. Erstellen Sie ein `FormsServiceClient`-Objekt, indem Sie seinen Konstruktor verwenden und das `ServiceClientFactory`-Objekt übergeben.
 1. Erstellen Sie ein `URLSpec`-Objekt, das URI-Werte mithilfe seines Konstruktors speichert.
 1. Rufen Sie die Methode `setApplicationWebRoot` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Web-Stamm des Programms darstellt.
-1. Rufen Sie die Methode `setContentRootURI` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den URI-Wert des Inhaltsstamms angibt. Stellen Sie sicher, dass sich der Formularentwurf und die Fragmente im URI des Inhaltsstamms befinden. Andernfalls löst der Forms-Service eine Ausnahme aus. Um auf das AEM Forms-Repository zu verweisen, geben Sie `repository://` an.
+1. Rufen Sie die `setContentRootURI`-Methode des `URLSpec`-Objekts auf und übergeben Sie ihr einen Zeichenfolgenwert, der den Inhaltsstamm-URI angibt. Stellen Sie sicher, dass sich der Formularentwurf und die Fragmente im URI des Inhaltsstamms befinden. Andernfalls löst der Forms-Service eine Ausnahme aus. Um auf das AEM Forms-Repository zu verweisen, geben Sie `repository://` an.
 1. Rufen Sie die Methode `setTargetURL` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Wert der Ziel-URL angibt, an die die Formulardaten gesendet werden. Wenn Sie die Ziel-URL im Formularentwurf definieren, können Sie auch eine leere Zeichenfolge übergeben. Sie können auch die URL angeben, an die ein Formular gesendet wird, um Berechnungen durchzuführen.
 1. Rufen Sie die Methode `renderPDFForm` des `FormsServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
 
@@ -158,17 +158,17 @@ Führen Sie die folgenden Aufgaben aus, um ein auf Fragmenten basierendes Formul
    * Ein `com.adobe.idp.Document`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen (erstellt in Schritt 2).
    * Ein `PDFFormRenderSpec`-Objekt, das Laufzeitoptionen speichert. Weitere Informationen finden Sie unter [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Ein `URLSpec`-Objekt, das URI-Werte enthält, die der Forms-Service benötigt, um ein Formular basierend auf Fragmenten rendern zu können.
-   * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter, den Sie als `null` angeben können, wenn Sie keine Dateien an das Formular anhängen möchten.
+   * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter, für den Sie `null` angeben können, wenn Sie keine Dateien an das Formular anhängen möchten.
 
    Die `renderPDFForm`-Methode gibt ein `FormsResult`-Objekt zurück, das einen Formulardatenstrom enthält, der in den Client-Webbrowser geschrieben werden muss.
 
 1. Erstellen Sie ein `com.adobe.idp.Document`-Objekt durch Aufrufen der `getOutputContent`-Methode des `FormsResult`-Objekts.
-1. Rufen Sie den Inhaltstyps des `com.adobe.idp.Document`-Objekts durch Aufrufen seiner `getContentType`-Methode ab.
-1. Legen Sie den Inhaltstyp des `javax.servlet.http.HttpServletResponse`-Objekts fest, indem Sie seine `setContentType`-Methode aufrufen und den Inhaltstyps des `com.adobe.idp.Document`-Objekts übergeben.
-1. Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Schreiben des Formulardatenstroms in den Client-Webbrowser verwendet wird, indem Sie die `getOutputStream`-Methode des `javax.servlet.http.HttpServletResponse`-Objekts aufrufen.
-1. Erstellen Sie ein `java.io.InputStream`-Objekt durch Aufrufen der `getInputStream`-Methode des `com.adobe.idp.Document`-Objekts.
+1. Ermitteln Sie den Content-Typ des `com.adobe.idp.Document`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
+1. Legen Sie den Content-Typ des `javax.servlet.http.HttpServletResponse`-Objekts fest, indem Sie seine Methode `setContentType` aufrufen und den Content-Typ des `com.adobe.idp.Document`-Objekts übergeben.
+1. Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Schreiben des Formulardaten-Streams in den Client-Webbrowser verwendet wird, indem Sie die Methode `getOutputStream` des `javax.servlet.http.HttpServletResponse`-Objekts aufrufen.
+1. Erstellen Sie ein `java.io.InputStream`-Objekt, indem Sie die `getInputStream`-Methode des `com.adobe.idp.Document`-Objekts aufrufen.
 1. Erstellen Sie ein Byte-Array, das mit dem Formulardatenstrom gefüllt wird, indem Sie die `read`-Methode des `InputStream`-Objekts aufrufen und ihr das Byte-Array als Argument übergeben.
-1. Rufen Sie die `write`-Methode des `javax.servlet.ServletOutputStream`-Objekts auf, um Formulardatenströme an den Client-Webbrowser zu senden. Übergeben Sie das Byte-Array der `write`-Methode.
+1. Rufen Sie die `write`-Methode des `javax.servlet.ServletOutputStream`-Objekts auf, um den Formulardatenstrom an den Client-Webbrowser zu senden. Übergeben Sie das Byte-Array der `write`-Methode.
 
 Das folgende Code-Beispiel stellt das Java-Servlet dar, das den Forms-Service aufruft und ein Formular basierend auf Fragmenten rendert.
 

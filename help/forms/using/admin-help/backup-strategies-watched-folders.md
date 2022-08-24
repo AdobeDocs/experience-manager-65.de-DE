@@ -11,8 +11,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f775933-e989-4456-ad01-9bdf5dee3dad
 exl-id: 0d36160a-29fa-4cc4-a0ff-fc681d3e040e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1092'
+workflow-type: tm+mt
+source-wordcount: '1090'
 ht-degree: 100%
 
 ---
@@ -88,7 +88,7 @@ In der folgenden Tabelle wird die Dateiverarbeitung von fünf Beispieldateien (D
    <td><p>Datei1_out, Datei2_out, Datei4_out</p></td>
   </tr>
   <tr>
-   <td><p>Failure</p></td>
+   <td><p>Fehlgeschlagen</p></td>
    <td><p>leer</p></td>
    <td><p>leer</p></td>
    <td><p>leer</p></td>

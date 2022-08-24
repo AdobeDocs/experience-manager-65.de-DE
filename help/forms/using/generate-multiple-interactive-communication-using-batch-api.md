@@ -8,7 +8,7 @@ topic-tags: interactive-communication
 feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
 source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2234'
 ht-degree: 100%
 
@@ -141,13 +141,13 @@ Sie kombinieren in einer externen Datenquelle gespeicherte Daten (Datensätze) m
 
    1. Speichern und schließen Sie die Datei.
 
-1. Erstellen Sie einen [überwachten Ordner](https://docs.adobe.com/content/help/de/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) und konfigurieren Sie ihn für die Verwendung des Batch-API-Services:
+1. Erstellen Sie einen [überwachten Ordner](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) und konfigurieren Sie ihn für die Verwendung des Batch-API-Services:
    1. Melden Sie sich bei der AEM Forms-Autoreninstanz an.
    1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Formulare]** > **[!UICONTROL Überwachten Ordner konfigurieren]**. Tippen Sie auf **[!UICONTROL Neu]**.
    1. Geben Sie die den **[!UICONTROL Namen]** und den physischen **[!UICONTROL Pfad]** des Ordners an. Beispiel: `c:\batchprocessing`.
    1. Wählen Sie die Option **[!UICONTROL Service]** im Feld **[!UICONTROL Datei verarbeiten mit]**.
    1. Wählen Sie den Service **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** im Feld **[!UICONTROL Service-Name]**.
-   1. Geben Sie ein **[!UICONTROL Ausgabedateimuster]** an. Beispiel: %F/ [pattern](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) gibt an, dass der überwachte Ordner Eingabedateien in einem Unterordner des Ordners „Watched Folder\input“ finden kann.
+   1. Geben Sie ein **[!UICONTROL Ausgabedateimuster]** an. Beispiel: %F/ [pattern](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) gibt an, dass der überwachte Ordner Eingabedateien in einem Unterordner des Ordners „Watched Folder\input“ finden kann.
 1. So konfigurieren Sie die erweiterten Parameter:
    1. Öffnen Sie die Registerkarte **[!UICONTROL Erweitert]** und fügen Sie die folgenden benutzerdefinierten Eigenschaften hinzu:
 

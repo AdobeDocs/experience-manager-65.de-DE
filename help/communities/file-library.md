@@ -1,8 +1,8 @@
 ---
 title: Dateibibliothek
-seo-title: Dateibibliothek
+seo-title: File Library Feature
 description: Mit der Funktion "Dateibibliothek"können angemeldete Site-Besucher Dateien hochladen, verwalten und herunterladen
-seo-description: Mit der Funktion "Dateibibliothek"können angemeldete Site-Besucher Dateien hochladen, verwalten und herunterladen
+seo-description: The File Library feature lets signed-in site visitors upload, manage, and download files
 uuid: e78a90bd-f1d3-44f8-98eb-1498a55e8217
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,45 +13,45 @@ docset: aem65
 exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 38%
+source-wordcount: '735'
+ht-degree: 39%
 
 ---
 
 # Dateibibliothek{#file-library-feature}
 
-## Einführung {#introduction}
+## Einführung    {#introduction}
 
 Mithilfe der Dateibibliothek können angemeldete Besucher der Site (Community-Mitglieder) Dateien auf die Community-Site hochladen, sie dort verwalten oder von dort herunterladen.
 
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben::
 
 * Hinzufügen der Dateibibliotheksfunktion zu einer AEM Site.
-* Konfigurationseinstellungen für die Komponente `File Library` .
+* Konfigurationseinstellungen für `File Library` -Komponente.
 
 ### Hinzufügen einer Dateibibliothek zu einer Seite {#adding-a-file-library-to-a-page}
 
-Um eine `File Library`-Komponente zu einer Seite im Autorenmodus hinzuzufügen, suchen Sie die Komponente:
+So fügen Sie eine `File Library` -Komponente auf einer Seite im Autorenmodus zu finden, die Komponente:
 
 * `Communities / File Library`
 
 und ziehen Sie die Komponente an die gewünschte Stelle auf der Seite.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](/help/communities/basics.md).
+Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die [erforderlichen clientseitigen Bibliotheken](/help/communities/essentials-file-library.md#essentials-for-client-side) eingeschlossen sind, wird die Komponente `File Library` so angezeigt:
+Wenn die [erforderliche clientseitige Bibliotheken](/help/communities/essentials-file-library.md#essentials-for-client-side) eingeschlossen sind, wird die `File Library` wird angezeigt:
 
 ![file-library1](assets/file-library1.png)
 
 ### Konfigurieren der Dateibibliothek {#configuring-file-library}
 
-Wählen Sie die platzierte Komponente `File Library` aus, um auf das Symbol `Configure` zuzugreifen, mit dem das Bearbeitungsdialogfeld geöffnet wird.
+Wählen Sie die platzierte `File Library` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
 ![configure-new](assets/configure-new.png)
 
 ![file-library2](assets/file-library2.png)
 
-#### Registerkarte &quot;Kommentare&quot;{#comments-tab}
+#### Registerkarte &quot;Kommentare&quot; {#comments-tab}
 
 Legen Sie auf der Registerkarte **Kommentare** fest, ob und wie Kommentare zu hochgeladenen Dateien angezeigt werden:
 
@@ -101,7 +101,7 @@ Legen Sie auf der Registerkarte **Kommentare** fest, ob und wie Kommentare zu ho
 
 * **Folgende zulassen**
 
-   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Blog-Artikel hinzu, mit der Mitglieder [benachrichtigt](/help/communities/notifications.md) über neue Beiträge werden können. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Blog-Artikel hinzu, mit der Mitglieder [benachrichtigt](/help/communities/notifications.md) von neuen Stellen. Diese Option ist standardmäßig deaktiviert.
 
 * **Erwähnung aktivieren**
 
@@ -113,13 +113,13 @@ Legen Sie auf der Registerkarte **Kommentare** fest, ob und wie Kommentare zu ho
 
 * **UI-Erwähnungsmuster**
 
-   Geben Sie die zulässige Musterzeichenfolge an, um den registrierten Benutzer in einem Beitrag mit Tags zu versehen (@mention). Beispiel: ~{{familyName}{{givenName}}.
+   Geben Sie die zulässige Musterzeichenfolge an, um den registrierten Benutzer in einem Beitrag mit Tags zu versehen (@mention). Beispiel ~{{familyName}}{{givenName}}.
 
 * **Antworten mit Diskussionsfaden zulassen**
 
    Ist diese Option aktiviert, können Antworten auf gepostete Kommentare zugelassen werden. Diese Option ist standardmäßig deaktiviert.
 
-#### Registerkarte Benutzermoderation {#user-moderation-tab}
+#### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
 Legen Sie auf der Registerkarte **Benutzermoderation** fest, wie Kommentare moderiert werden sollen, falls diese zugelassen sind:
 
@@ -159,7 +159,7 @@ Legen Sie auf der Registerkarte **Benutzermoderation** fest, wie Kommentare mode
 
    Geben Sie an, wie oft ein Kommentar gekennzeichnet werden muss, bevor er aus der öffentlichen Ansicht ausgeblendet wird. Dieser Wert muss größer als der oder gleich dem **Schwellenwert für Moderation** sein. Der Standardwert ist 5.
 
-### Registerkarte &quot;Sortiereinstellungen&quot;{#sort-settings-tab}
+### Registerkarte &quot;Sortiereinstellungen&quot; {#sort-settings-tab}
 
 Sortierfolge
 
@@ -167,7 +167,7 @@ Als Standard festlegen
 
 ### Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie auf der Seite [Dateibibliothek-Grundlagen](/help/communities/essentials-file-library.md) für Entwickler.
+Weitere Informationen finden Sie unter [Grundlagen zur Dateibibliothek](/help/communities/essentials-file-library.md) für Entwickler.
 
 Informationen zur Moderation von veröffentlichten Themen und Kommentaren finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 

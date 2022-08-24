@@ -9,7 +9,7 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 100%
 
@@ -98,7 +98,7 @@ Vermeiden Sie das Erstellen von Benutzernamen, die mit einem Nummernzeichen begi
 
 ## Details zu Benutzern anzeigen {#view-details-about-a-user}
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Benutzer und Gruppen“.
+1. Klicken Sie in Administration Console auf Einstellungen > Benutzerverwaltung > Benutzer und Gruppen.
 1. Geben Sie Informationen zum Eingrenzen der Suche ein, wählen Sie in der Liste „in“ die Option „Benutzer“ aus und klicken Sie dann auf „Suchen“. Die Suchergebnisse werden im unteren Seitenbereich angezeigt. Sie können die Liste durch Klicken auf die Spaltenüberschriften sortieren.
 1. Klicken Sie auf den Namen des Benutzers, zu dem Details angezeigt werden sollen. Auf der Seite „Benutzer bearbeiten“ werden Details zum Benutzer wie die folgenden angezeigt:
 

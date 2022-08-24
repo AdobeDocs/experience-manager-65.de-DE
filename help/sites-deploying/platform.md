@@ -1,8 +1,8 @@
 ---
 title: Einführung in die AEM-Plattform
-seo-title: Einführung in die AEM-Plattform
+seo-title: Introduction to the AEM Platform
 description: In diesem Artikel erhalten Sie einen allgemeinen Überblick über die AEM-Plattform und ihre wichtigste Komponenten.
-seo-description: In diesem Artikel erhalten Sie einen allgemeinen Überblick über die AEM-Plattform und ihre wichtigste Komponenten.
+seo-description: This article provides a general overview of the AEM platform and its most important components.
 uuid: 214d4c49-1f5c-432c-a2c0-c1fbdceee716
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ legacypath: /content/docs/en/aem/6-0/deploy/upgrade/introduction-to-oak
 exl-id: 8ee5f4ff-648d-45ea-a51e-894cd4385e62
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '769'
 ht-degree: 94%
 
 ---
@@ -47,15 +47,15 @@ Die Speicherschicht erfüllt folgende Zwecke:
 * Austauschfähigkeit des Speichers
 * Bereitstellung eines Clustering-Mechanismus
 
-### Oak-Kern  {#oak-core}
+### Oak-Kern {#oak-core}
 
 Der Oak-Kern fügt mehrere Ebenen zur Speicherschicht hinzu:
 
 * Zugriffssteuerungselemente
 * Suche und Indizierung
-* Überwachung
+* Beobachrung
 
-### Oak-JCR  {#oak-jcr}
+### Oak-JCR {#oak-jcr}
 
 Das Hauptziel des Oak-JCR besteht darin, die JCR-Semantik in Strukturvorgängen zu transformieren. Darüber hinaus erfüllt es folgende Zwecke:
 
@@ -68,7 +68,7 @@ Darüber hinaus sind jetzt nicht-Java-basierte Implementierungen möglich, die T
 
 Die Oak-Speicherschicht stellt eine Abstraktionsschicht für die tatsächliche Speicherung der Inhalte bereit.
 
-Zurzeit sind in AEM6 zwei Speicherimplementierungen verfügbar: **Tar Storage** und **MongoDB Storage**.
+Zurzeit sind in AEM6 zwei Speicherimplementierungen verfügbar: **Tar-Speicher** und **MongoDB Storage**.
 
 ### TAR-Speicher {#tar-storage}
 
@@ -90,7 +90,7 @@ Verwandte Datensätze wie etwa ein Knoten und dessen unmittelbare, untergeordnet
 
 Die Formatierung der Datensätze wurde bezüglich der Größe optimiert, um die I/O-Kosten zu senken und möglichst viele Inhalte in Caches zwischenzuspeichern.
 
-### Mongo-Speicher  {#mongo-storage}
+### Mongo-Speicher {#mongo-storage}
 
 Der MongoDB-Speicher nutzt MongoDB für Sharding und Clustering. Die Repository-Struktur wird in einer MongoDB-Datenbank gespeichert, wobei jeder Knoten ein separates Dokument ist.
 
@@ -120,7 +120,7 @@ Eine typische AEM-Clusterkonfiguration mit MongoDB-Speicher:
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
-## Was unterscheidet sich von Jackrabbit 2? {#what-is-different-from-jackrabbit}
+## Unterschiede zu Jackrabbit 2 {#what-is-different-from-jackrabbit}
 
 Da Oak für Abwärtskompatibilität mit dem JCR 1.0-Standard entwickelt wurde, gibt es auf Benutzerebene so gut wie keine Änderungen. Beim Konfigurieren einer Oak-basierten AEM-Installation muss jedoch eine Reihe wichtiger Änderungen berücksichtigt werden:
 

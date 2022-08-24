@@ -1,8 +1,8 @@
 ---
 title: Konfigurieren von LDAP mit AEM 6
-seo-title: Konfigurieren von LDAP mit AEM 6
+seo-title: Configuring LDAP with AEM 6
 description: Erfahren Sie, wie Sie LDAP mit AEM konfigurieren.
-seo-description: Erfahren Sie, wie Sie LDAP mit AEM konfigurieren.
+seo-description: Learn how to configure LDAP with AEM.
 uuid: 0007def4-86f0-401d-aa37-c8d49d5acea1
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ discoiquuid: 5faf6ee5-9242-48f4-87a8-ada887a3be1e
 exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1661'
+source-wordcount: '1648'
 ht-degree: 68%
 
 ---
 
-# Konfigurieren von LDAP mit AEM 6  {#configuring-ldap-with-aem}
+# Konfigurieren von LDAP mit AEM 6 {#configuring-ldap-with-aem}
 
 LDAP (**L** ightweight **D** irectory **A** ccess **P** rotocol) dient dem Zugriff auf zentrale Verzeichnisdienste. Hierdurch wird der Verwaltungsaufwand für Benutzerkonten reduziert, da auf sie über mehrere Anwendungen zugegriffen werden kann. Ein solcher LDAP-Server ist Active Directory. LDAP wird häufig für Single-Sign-On-Szenarien eingesetzt, durch die ein Benutzer mit einer Anmeldung auf mehrere Anwendungen zugreifen kann.
 
@@ -114,7 +114,7 @@ Die folgenden Konfigurationsoptionen sind für den LDAP-Identitäts-Provider ver
   </tr>
   <tr>
    <td><strong>Zusätzlicher Filter für Benutzer</strong></td>
-   <td>Zusätzlicher LDAP-Filter zur Verwendung bei der Suche nach Benutzern. Der endgültige Filter ist wie folgt formatiert: '(&amp;(&lt;idAttr&gt;=&lt;userId&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)' (user.extraFilter)</td>
+   <td>Zusätzlicher LDAP-Filter zur Verwendung bei der Suche nach Benutzern. Der endgültige Filter ist wie folgt formatiert: '(&amp;(&lt;idattr&gt;=&lt;userid&gt;)(objectclass=&lt;objectclass&gt;)&lt;extrafilter&gt;)' (user.extraFilter)</td>
   </tr>
   <tr>
    <td><strong>Benutzer-DN-Pfade</strong></td>
@@ -134,7 +134,7 @@ Die folgenden Konfigurationsoptionen sind für den LDAP-Identitäts-Provider ver
   </tr>
   <tr>
    <td><strong>Zusätzlichen Filter gruppieren</strong></td>
-   <td>Zusätzlicher LDAP-Filter zur Verwendung bei der Suche nach Gruppen. Der endgültige Filter ist wie folgt formatiert: '(&amp;(&lt;nameAttr&gt;=&lt;groupName&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)'</td>
+   <td>Zusätzlicher LDAP-Filter zur Verwendung bei der Suche nach Gruppen. Der endgültige Filter ist wie folgt formatiert: '(&amp;(&lt;nameattr&gt;=&lt;groupname&gt;)(objectclass=&lt;objectclass&gt;)&lt;extrafilter&gt;)'</td>
   </tr>
   <tr>
    <td><strong>Gruppen-DN-Pfade</strong></td>
@@ -179,7 +179,7 @@ Die folgenden Konfigurationsoptionen sind für den Synchronisierungshandler verf
   </tr>
   <tr>
    <td><strong>Ablauf der Benutzermitgliedschaft</strong></td>
-   <td>Zeitpunkt, nach dem die Mitgliedschaft abläuft.<br /> </td>
+   <td>Zeitraum, nach dem die Mitgliedschaft abläuft.<br /> </td>
   </tr>
   <tr>
    <td><strong>User membership nesting depth</strong></td>
@@ -239,7 +239,7 @@ AEM 6 kann so konfiguriert werden, dass eine LDAP-Authentifizierung über SSL e
 
 1. Testen Sie die Verbindung zum LDAP-Server.
 
-### Erstellen von SSL-Zertifikaten  {#creating-ssl-certificates}
+### Erstellen von SSL-Zertifikaten {#creating-ssl-certificates}
 
 Über selbstsignierte Zertifikate kann AEM so konfiguriert werden, dass eine LDAP-Authentifizierung über SSL erfolgt. Im Folgenden finden Sie ein Beispielverfahren zum Generieren von Zertifikaten für AEM.
 
@@ -270,7 +270,7 @@ AEM 6 kann so konfiguriert werden, dass eine LDAP-Authentifizierung über SSL e
 
 1. Fügen Sie schließlich dem Java-Keystore das Zertifikat hinzu.
 
-## Aktivieren der Debug-Protokollierung  {#enabling-debug-logging}
+## Aktivieren der Debug-Protokollierung {#enabling-debug-logging}
 
 Die Debug-Protokollierung kann sowohl für den LDAP-Identitäts-Provider als auch das externe Anmeldemodul aktiviert werden, um Verbindungsprobleme zu beheben.
 

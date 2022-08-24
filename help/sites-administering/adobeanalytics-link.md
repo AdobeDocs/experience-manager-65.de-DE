@@ -1,8 +1,8 @@
 ---
 title: Konfigurieren des Linktrackings für Adobe Analytics
-seo-title: Konfigurieren des Linktrackings für Adobe Analytics
+seo-title: Configuring Link Tracking for Adobe Analytics
 description: Erfahren Sie mehr über die Konfiguration der Link-Überwachung für SiteCatalyst.
-seo-description: Erfahren Sie mehr über die Konfiguration der Link-Überwachung für SiteCatalyst.
+seo-description: Learn about configuring link tracking for SiteCatalyst.
 uuid: b6d5bd1c-f91a-4d38-9e9e-dc2bcb271dae
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: fe6ba6af-f500-4c0d-b984-fb617d4bf48a
 exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1615'
+source-wordcount: '1602'
 ht-degree: 75%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 75%
 
 Wenn Benutzer auf Links auf Seiten Ihrer Website klicken, können Sie zugehörige Informationen in Adobe Analytics erfassen. Verwenden Sie beispielsweise die Link-Überwachung, um zu erfahren, wie Benutzer mit Ihrer Site interagieren, und Dateidownloads sowie Ausstiegs-Links nachzuverfolgen.
 
-## Konfigurieren der Link-Überwachung für ein Adobe Analytics-Framework  {#configuring-link-tracking-for-an-adobe-analytics-framework}
+## Konfigurieren der Link-Überwachung für ein Adobe Analytics-Framework {#configuring-link-tracking-for-an-adobe-analytics-framework}
 
 1. Gehen Sie unter **Navigation** über **Bereitstellung** > **Cloud-Services** zum Abschnitt **Adobe Analytics.**
 
@@ -63,7 +63,7 @@ So aktivieren Sie das Download-Tracking für Ihr Adobe Analytics-Framework:
 1. Aktivieren Sie **Downloads nachverfolgen**.
 1. Geben Sie im Feld **Download-Dateitypen** die Dateinamenerweiterungen für die nachzuverfolgenden Dateitypen ein.
 
-## Nachverfolgen externer Links  {#tracking-external-links}
+## Nachverfolgen externer Links {#tracking-external-links}
 
 Sie können das Klicken auf externe Links (Ausstiegs-Links) auf Ihren Seiten nachverfolgen.
 
@@ -92,8 +92,8 @@ Eigenschaften zum Nachverfolgen beim Klicken auf externe Links:
 
 Die Eigenschaften für die Nachverfolgung externer Links werden als Code in der für eine Seite erstellten Datei `analytics.sitecatalyst.js` implementiert. Der folgende Beispielcode wird für eine Seite mit einem Framework generiert, für das die Nachverfolgung externer Links aktiviert ist – mit folgender Konfiguration:
 
-* Der externe Filter ist `'google.com'`
-* Interner Filter ist der Standardwert von `'javascript:,'+window.location.hostname`
+* Externer Filter `'google.com'`
+* Der interne Filter ist der Standardwert von `'javascript:,'+window.location.hostname`
 * Suchbegriffe sind nicht beim Bewerten des Link-Ziels gegenüber den Filtern eingeschlossen.
 
 ```
@@ -105,7 +105,7 @@ s.linkLeaveQueryString= false;
 
 ## Senden von Variablendaten bei Link-Klicks {#sending-variable-data-with-link-clicks}
 
-Sie können AEM so konfigurieren, dass Ereignis- und Variablendaten an Adobe Analytics gesendet werden, wenn ein Benutzer auf einen Link klickt. Mit den Eigenschaften **Linktracking-Konfiguration** können Sie die Adobe Analytics-Ereignisse und -Variablen angeben, die verfolgt werden sollen, wenn auf einen Link geklickt wird.
+Sie können AEM so konfigurieren, dass Ereignis- und Variablendaten an Adobe Analytics gesendet werden, wenn ein Benutzer auf einen Link klickt. Die **Linktracking-Konfiguration** Mit -Eigenschaften können Sie die Adobe Analytics-Ereignisse und -Variablen angeben, die verfolgt werden sollen, wenn auf einen Link geklickt wird.
 
 Die Framework-Zuordnungen bestimmen die Ereignis- und Variablenwerte. Sie können Adobe Analytics-Variablen den Variablen Ihrer Inhaltskomponenten zuordnen, die die Daten speichern, die verfolgt werden sollen, wenn auf Links geklickt wird.
 
@@ -116,15 +116,15 @@ So senden Sie Variablendaten bei Link-Klicks:
 
 Eigenschaften zum Senden von Variablendaten bei Link-Klicks:
 
-* **Linktracking-**
-EreignisseGeben Sie die Adobe Analytics-Ereignisvariablen ein, die Sie zur Zählung von Link-Klicks verwenden möchten.
+* **Linktracking-Ereignisse**
+Geben Sie die Adobe Analytics-Ereignisvariablen ein, die Sie zur Zählung von Link-Klicks verwenden möchten.
 
    Trennen Sie mehrere Variablennamen durch Kommas.
 
    Beim Standardwert `None` werden keine Ereignisse nachverfolgt.
 
-* **Linktracking-**
-Vars Geben Sie die Adobe Analytics-Variablen ein, die Sie beim Klicken auf Links an Adobe Analytics senden möchten. Trennen Sie mehrere Variablennamen durch Kommas.
+* **Linktracking-Variablen**
+Geben Sie die Adobe Analytics-Variablen ein, die Sie beim Klicken auf Links an Adobe Analytics senden möchten. Trennen Sie mehrere Variablennamen durch Kommas.
 
    Beim Standardwert `None` werden keine Variablendaten gesendet.
 
@@ -139,12 +139,12 @@ s.linkTrackVars= 'prop4';
 
 Führen Sie die folgenden Schritte aus, um das Linktracking-Verhalten der Adobe Analytics-Integration zu untersuchen. Die Vorgehensweisen enthalten Ergebnisse von [Adobe Marketing Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
 
-### Allgemeine Konfiguration  {#general-configuration}
+### Allgemeine Konfiguration {#general-configuration}
 
 Dieses Beispiel zeigt, wie die Zuordnung im Zusammenhang mit der Überwachung und dem Debugger erfolgt:
 
 1. Öffnen Sie das mit einer Webseite verknüpfte Framework.
-1. Ziehen Sie die **Seitenkomponente** in den Zuordnungsbereich des Frameworks. Die Komponente **Seite** gehört zur Komponentengruppe **Allgemein** im Sidekick.
+1. Ziehen Sie die **Seitenkomponente** in den Zuordnungsbereich des Frameworks. Die **Seite** Komponente gehört zu **Allgemein** Komponentengruppe im Sidekick.
 
    >[!NOTE]
    >
@@ -208,23 +208,23 @@ Dieses Beispiel zeigt, wie die Zuordnung im Zusammenhang mit der Überwachung un
 
 1. Wählen Sie **Externe nachverfolgen** aus.
 1. Heben Sie die Auswahl für **Suchbegriff belassen** auf.
-1. Verwenden Sie den folgenden Wert für die Liste **Externe Filter** , um sie als externe URL zu identifizieren:
+1. Verwenden Sie den folgenden Wert für die **Externe Filter** Liste, um sie als externe URL zu identifizieren:
 
    `‘yahoo.com’`
 
-1. Fügen Sie dem Feld **Link Track Events** den folgenden Wert hinzu:
+1. Fügen Sie den folgenden Wert zum **Linktracking-Ereignisse** -Feld:
 
    ```
        event1,event2
    ```
 
-1. Fügen Sie dem Feld **Link-Verfolgungsvars** den folgenden Wert hinzu:
+1. Fügen Sie den folgenden Wert zum **Link-Verfolgungsvars** -Feld:
 
    ```
        eVar1,eVar2
    ```
 
-1. Fügen Sie auf der mit dem Framework verknüpften Seite eine **Textkomponente** hinzu. Fügen Sie innerhalb der Komponente **Text** einen Hyperlink hinzu, der auf die folgende Adresse verweist:
+1. Fügen Sie auf der mit dem Framework verknüpften Seite eine **Textkomponente** hinzu. Innerhalb des **Text** -Komponente einen Hyperlink hinzufügen, der auf die folgende Adresse verweist:
 
    `https://search.yahoo.com/?p=this`
 
@@ -331,16 +331,16 @@ Gehen Sie wie folgt vor, um die Link-Überwachung für eine **Textkomponente** z
 
    ![aa-17](assets/aa-17.png)
 
-1. Aktivieren Sie **Benutzerspezifisches Linktracking**, um die Linktracking-Konfiguration des Adobe Analytics-Frameworks zu überschreiben und das Linktracking für den aktuellen Link zu aktivieren.
+1. Aktivieren **Benutzerspezifische Linktracking** , um die Linktracking-Konfiguration des Adobe Analytics-Frameworks zu überschreiben und das Linktracking für den aktuellen Link zu aktivieren.
 
-1. (Optional) Um Ereignisse mit dem Link-Klick zu verfolgen, fügen Sie Adobe Analytics-Ereignisnamen in das Feld **Adobe Analytics-Variablen einschließen** ein. Trennen Sie mehrere Ereignisnamen durch Kommas, beispielsweise
+1. (Optional) Um Ereignisse mit dem Link-Klick zu verfolgen, fügen Sie Adobe Analytics-Ereignisnamen in die **Adobe Analytics-Variablen einschließen** -Feld. Trennen Sie mehrere Ereignisnamen durch Kommas, beispielsweise
 
    `event1, event22`.
 
-1. (Optional) Um Variablendaten mit dem Link-Klick zu verfolgen, fügen Sie Adobe Analytics-Variablen zum Feld **Adobe Analytics-Variablen einschließen** hinzu. Verwenden Sie eines der folgenden Formate:
+1. (Optional) Um Variablendaten mit dem Link-Klick zu verfolgen, fügen Sie Adobe Analytics-Variablen in die **Adobe Analytics-Variablen einschließen** -Feld. Verwenden Sie eines der folgenden Formate:
 
    * *`<Variable-name>`*: *`<Dynamic Value>`*
-   * *`<Variable-name>`*:  *`‘CONSTANT'`*
+   * *`<Variable-name>`*: *`‘CONSTANT'`*
 
    Beispiele für das jeweilige Format:
 
@@ -349,4 +349,4 @@ Gehen Sie wie folgt vor, um die Link-Überwachung für eine **Textkomponente** z
 
    Trennen Sie mehrere Werte durch Kommas.
 
-1. Wählen Sie **OK** aus.
+1. Klicken Sie auf **OK**.

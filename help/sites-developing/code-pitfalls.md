@@ -1,8 +1,8 @@
 ---
 title: Fallstricke beim Programmieren
-seo-title: Fallstricke beim Programmieren
+seo-title: Code pitfalls
 description: Allgemeine Fallstricke beim Programmieren, die Sie bei der Entwicklung für AEM vermeiden sollten
-seo-description: Allgemeine Fallstricke beim Programmieren, die Sie bei der Entwicklung für AEM vermeiden sollten
+seo-description: Common coding pitfalls to avoid when developing for AEM
 uuid: e7413bdc-4889-45ff-bdcb-b0893d33a3b7
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 01362026-a696-4a5d-94e9-ea784eaa6e4b
 exl-id: c448c5d5-def8-4c1a-8db4-41eb49d0cd20
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '99'
+source-wordcount: '88'
 ht-degree: 94%
 
 ---
@@ -27,6 +27,6 @@ Sling-Bindungen sind in 90 Prozent der Fälle keine gute Möglichkeit, auf eine
 
 *Thread.interrupt* ist riskant, da es Dateien (darunter auch Lucene-Dateien und persistente Cache-Dateien) schließen kann, wenn es zum falschen Zeitpunkt aufgerufen wird.
 
-## Mischen von Java-Synchronisierung mit ReadWriteLocks vermeiden  {#avoid-mixing-java-synchronization-with-readwritelocks}
+## Mischen von Java-Synchronisierung mit ReadWriteLocks vermeiden {#avoid-mixing-java-synchronization-with-readwritelocks}
 
 Dies kann zu Überschneidungen führen, bei denen der Code irgendwann zum Stillstand kommt.

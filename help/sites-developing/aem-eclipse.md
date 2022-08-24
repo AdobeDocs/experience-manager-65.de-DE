@@ -1,8 +1,8 @@
 ---
 title: AEM Developer Tools for Eclipse
-seo-title: AEM Entwicklertools für Eclipse
+seo-title: AEM Developer Tools for Eclipse
 description: AEM Entwicklertools für Eclipse
-seo-description: 'null'
+seo-description: null
 uuid: 566e49f2-6f28-4aa7-bfe0-b5f9675310bf
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,16 +12,16 @@ discoiquuid: a2ae76a8-50b0-4e43-b791-ad3be25b8582
 exl-id: 00473769-c447-4966-a71e-117c669e0151
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '808'
 ht-degree: 93%
 
 ---
 
-# AEM Developer Tools for Eclipse{#aem-developer-tools-for-eclipse}
+# AEM Entwicklertools für Eclipse{#aem-developer-tools-for-eclipse}
 
 ![](do-not-localize/chlimage_1-9.png)
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 AEM Developer Tools for Eclipse ist ein Eclipse-Plug-in, das auf dem [Eclipse-Plug-in für Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html) basiert, das unter der Apache-Lizenz 2 veröffentlicht wurde.
 
@@ -44,7 +44,7 @@ Bevor Sie die AEM Developer Tools verwenden, müssen Sie Folgendes tun:
 
 >[!NOTE]
 >
->Unter Mac OS X müssen Sie mit der rechten Maustaste auf **Eclipse.app** klicken und dann **Paketinhalt anzeigen** auswählen, um Ihre `eclipse.ini`**zu finden.**
+>Unter macOS müssen Sie mit der rechten Maustaste auf **Eclipse.app** klicken und dann **Paketinhalt anzeigen** auswählen, um Ihre `eclipse.ini`**zu finden.**
 
 ## So installieren Sie die AEM Developer Tools for Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
@@ -72,7 +72,7 @@ Sobald Sie die oben genannten [Voraussetzungen](#requirements) erfüllt haben, k
 
 >[!NOTE]
 >
->Siehe [Arbeiten mit einem Bundle in Eclipse, wenn es von AEM](https://stackoverflow.com/questions/29699726/how-to-work-with-a-bundle-in-eclipse-when-it-was-downloaded-from-aem/29705407#29705407) heruntergeladen wurde.
+>Siehe [Arbeiten mit einem Bundle in Eclipse, wenn es von AEM heruntergeladen wurde](https://stackoverflow.com/questions/29699726/how-to-work-with-a-bundle-in-eclipse-when-it-was-downloaded-from-aem/29705407#29705407).
 
 ## Die AEM-Perspektive {#the-aem-perspective}
 

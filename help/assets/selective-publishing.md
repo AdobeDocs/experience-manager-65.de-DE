@@ -12,7 +12,7 @@ feature: Publishing
 source-git-commit: 664e22cc4c6acd74f285a4ec1a0dbd7d301240b7
 workflow-type: tm+mt
 source-wordcount: '3000'
-ht-degree: 80%
+ht-degree: 81%
 
 ---
 
@@ -81,7 +81,7 @@ Nachdem Sie selektive Veröffentlichung in einem Ordner konfiguriert haben, habe
 
 1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Speichern und schließen]** und dann auf **[!UICONTROL OK]**, um zu Experience Manager Assets zurückzukehren.
 
-## Assets mithilfe von &quot;Veröffentlichung verwalten&quot;selektiv in Dynamic Media oder Experience Manager veröffentlichen{#selective-publish-manage-publication}
+## Assets mithilfe von „Veröffentlichung verwalten“ für Dynamic Media oder Experience Manager selektiv veröffentlichen{#selective-publish-manage-publication}
 
 Bevor Sie **[!UICONTROL Veröffentlichung verwalten]** Um Assets selektiv in Dynamic Media oder Experience Manager zu veröffentlichen, stellen Sie sicher, dass Sie eine der folgenden Einstellungen festgelegt haben:
 

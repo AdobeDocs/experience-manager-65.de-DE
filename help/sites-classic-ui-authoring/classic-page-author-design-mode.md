@@ -1,8 +1,8 @@
 ---
 title: Konfigurieren von Komponenten im Designmodus
-seo-title: Konfigurieren von Komponenten im Designmodus
+seo-title: Configuring Components in Design Mode
 description: Wenn die AEM-Instanz direkt installiert wird, steht im Sidekick umgehend eine Auswahl von Komponenten zur Verfügung. Darüber hinaus sind auch verschiedene weitere Komponenten verfügbar. Mit dem Designmodus können Sie diese Komponenten aktivieren/deaktivieren.
-seo-description: Wenn die AEM-Instanz direkt installiert wird, steht im Sidekick umgehend eine Auswahl von Komponenten zur Verfügung. Darüber hinaus sind auch verschiedene weitere Komponenten verfügbar. Mit dem Designmodus können Sie diese Komponenten aktivieren/deaktivieren.
+seo-description: When AEM instance is installed out-of-the-box, a selection of components are immediately available in the sidekick. In addition to these, various other components are also available. You can use Design mode to Enable/disable such components.
 uuid: 2cd5dad0-2f9c-4f34-aae8-1638d1445eb3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '500'
 ht-degree: 94%
 
 ---
@@ -49,7 +49,7 @@ Im Designmodus ist der Sidekick minimiert dargestellt und Sie haben die Möglich
 
    ![](do-not-localize/chlimage_1.png)
 
-1. Klicken Sie im Absatzsystem (**Design von par**) auf **Bearbeiten**.
+1. Klicken **Bearbeiten** über das Absatzsystem (**Gestaltung von par**).
 
    ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
@@ -63,7 +63,7 @@ Im Designmodus ist der Sidekick minimiert dargestellt und Sie haben die Möglich
 
    ![](do-not-localize/sidekick-collapsed.png)
 
-## Konfigurieren des Designs von Komponenten  {#configuring-the-design-of-a-component}
+## Konfigurieren des Designs von Komponenten {#configuring-the-design-of-a-component}
 
 Im Designmodus können Sie auch Attribute für die einzelnen Komponenten konfigurieren. Jede Komponente verfügt über eigene Parameter. Im folgenden Beispiel wird die **Bildkomponente** gezeigt:
 
@@ -73,7 +73,7 @@ Im Designmodus können Sie auch Attribute für die einzelnen Komponenten konfigu
 
 1. Sie können das Design von Komponenten konfigurieren.
 
-   Wenn Sie beispielsweise auf **Bearbeiten** in der Bildkomponente (**Bilddesign**) klicken, können Sie die komponentenspezifischen Parameter konfigurieren:
+   Wenn Sie beispielsweise auf **Bearbeiten** auf der Bildkomponente (**Bilddesign**) können Sie komponentenspezifische Parameter konfigurieren:
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
 

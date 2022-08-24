@@ -12,7 +12,7 @@ discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '9117'
 ht-degree: 100%
 
@@ -235,7 +235,7 @@ Um eine Ressource zu schreiben, führen Sie die folgenden Schritte aus:
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, schließen Sie die Proxy-Dateien ein.
 
-**Den Service-Client erstellen**
+**Dienstclient erstellen**
 
 Bevor Sie eine Ressource programmgesteuert lesen können, müssen Sie eine Verbindung herstellen und Anmeldeinformationen angeben. Dies wird durch das Erstellen eines Service-Clients erreicht.
 
@@ -329,7 +329,7 @@ Schreiben Sie eine Ressource mithilfe der Repository Service-API (Web-Dienst):
 
 1. Erstellen des Service-Clients
 
-   Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `RepositoryServiceService`-Objekt durch Aufrufen des Standardkonstruktors. Legen Sie die `Credentials`-Eigenschaft mithilfe eines `System.Net.NetworkCredential`-Objekts fest, das den Benutzernamen und das Kennwort enthält.
+   Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `RepositoryServiceService`-Objekt, indem Sie seinen Standardkonstruktor aufrufen. Legen Sie die `Credentials`-Eigenschaft mithilfe eines `System.Net.NetworkCredential`-Objekts fest, das den Benutzernamen und das Kennwort enthält.
 
 1. Die URI des Zielordners für die Ressource angeben
 
@@ -455,7 +455,7 @@ Auflisten von Ressourcen mithilfe der Repository Service-API (Web Service):
 
 1. Erstellen des Service-Clients
 
-   Erstellen Sie mithilfe der Microsoft .NET Client-Assembly ein `RepositoryServiceService`-Objekt durch Aufrufen des Standardkonstruktors. Legen Sie die `Credentials`-Eigenschaft mithilfe eines `System.Net.NetworkCredential`-Objekts fest, das den Benutzernamen und das Kennwort enthält.
+   Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `RepositoryServiceService`-Objekt, indem Sie seinen Standardkonstruktor aufrufen. Legen Sie die `Credentials`-Eigenschaft mithilfe eines `System.Net.NetworkCredential`-Objekts fest, das den Benutzernamen und das Kennwort enthält.
 
 1. Geben Sie den Ordnerpfad an
 
@@ -505,7 +505,7 @@ Gehen Sie wie folgt vor, um eine Ressource zu lesen:
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, schließen Sie die Proxy-Dateien ein.
 
-**Erstellen des Service-Clients**
+**Dienstclient erstellen**
 
 Bevor Sie eine Ressource programmgesteuert lesen können, müssen Sie eine Verbindung herstellen und Anmeldeinformationen angeben. Dies wird durch das Erstellen eines Service-Clients erreicht.
 
@@ -686,7 +686,7 @@ Aktualisieren einer Ressource mithilfe der Repository-API (Webdienst):
 
 1. Erstellen des Service-Clients
 
-   Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `RepositoryServiceService`-Objekt durch Aufrufen des Standardkonstruktors. Legen Sie seine `Credentials`-Eigenschaft mit einem `System.Net.NetworkCredential`-Objekt fest, das den Benutzernamen und das Kennwort enthält.
+   Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `RepositoryServiceService`-Objekt, indem Sie seinen Standardkonstruktor aufrufen. Legen Sie seine `Credentials`-Eigenschaft mit einem `System.Net.NetworkCredential`-Objekt fest, das den Benutzernamen und das Kennwort enthält.
 
 1. Zu aktualisierende Ressource abrufen
 
@@ -748,7 +748,7 @@ Gehen Sie folgendermaßen vor, um nach Ressourcen zu suchen:
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, schließen Sie die Proxy-Dateien ein.
 
-**Dienst-Client erstellen**
+**Dienstclient erstellen**
 
 Bevor Sie eine Ressource programmgesteuert lesen können, müssen Sie eine Verbindung herstellen und Anmeldeinformationen angeben. Dies wird durch das Erstellen eines Service-Clients erreicht.
 
@@ -884,7 +884,7 @@ Gehen Sie wie folgt vor, um eine Beziehung zwischen zwei Ressourcen anzugeben:
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, schließen Sie die Proxy-Dateien ein.
 
-**Service-Client erstellen**
+**Dienstclient erstellen**
 
 Bevor Sie eine Ressource programmgesteuert lesen können, müssen Sie eine Verbindung herstellen und Anmeldeinformationen angeben. Dies wird durch das Erstellen eines Service-Clients erreicht.
 
@@ -970,7 +970,7 @@ Erstellen Sie Beziehungsressourcen mithilfe der Repository-API (Webdienst):
 
 1. Erstellen Sie die Beziehung
 
-   Rufen Sie die `createRelationship`-Methode des `RepositoryServiceService`-Objekts auf und übergeben Sie die folgenden Parameter:
+   Rufen Sie die Methode `createRelationship` des `RepositoryServiceService`-Objekts auf und übergeben Sie ihr die folgenden Parameter:
 
    * Der URI der Quellressource.
    * Der URI der Zielressource.
@@ -982,7 +982,7 @@ Erstellen Sie Beziehungsressourcen mithilfe der Repository-API (Webdienst):
 
    Sie können auch eine Liste verwandter Ressourcen für eine bestimmte Ressource abrufen, indem Sie die `getRelated`-Methode des `RepositoryServiceService`-Objekts aufrufen und die folgenden Parameter übergeben:
 
-   * Der URI der Ressource, für die verwandte Ressourcen abgerufen werden sollen. In diesem Beispiel wird die Quellressource (`"/testFolder/testResource1"`) angegeben.
+   * Der URI der Ressource, für die verwandte Ressourcen abgerufen werden sollen. In diesem Beispiel wird die Quellressource ( `"/testFolder/testResource1"`) angegeben.
    * Ein `boolean`-Wert, der angibt, ob die angegebene Ressource die Quellressource in der Beziehung ist. In diesem Beispiel wird der Wert `true` festgelegt, da dies der Fall ist.
    * Ein `boolean`-Wert, der angibt, ob die Quellressource angegeben wurde. In diesem Beispiel wird der Wert `true` bereitgestellt.
    * Ein Array von Ganzzahlen, das die Beziehungstypen enthält. In diesem Beispiel wird eine Abhängigkeitsbeziehung durch die Verwendung desselben Wertes im Array, der bereits zuvor verwendet wurde, angegeben: `3`.
@@ -1078,7 +1078,7 @@ Sperren von Ressourcen mit der Repository-Service-API (Java):
    Rufen Sie die `lockResource`-Methode des `ResourceRepositoryClient`-Objekts auf und übergeben Sie die folgenden Parameter:
 
    * Der URI der Ressource.
-   * Der Sperrbereich. Da in diesem Beispiel die Ressource für den exklusiven Gebrauch gesperrt werden soll, wird der Sperrbereich als `com.adobe.repository.infomodel.bean.Lock.SCOPE_EXCLUSIVE` angegeben.
+   * Der Sperrbereich. Da in diesem Beispiel die Ressource für die ausschließliche Verwendung gesperrt wird, wird der Sperrbereich als `com.adobe.repository.infomodel.bean.Lock.SCOPE_EXCLUSIVE` angegeben.
    * Die Sperrtiefe. In diesem Beispiel wird die Sperrtiefe mit `Lock.DEPTH_ZERO` angegeben, da die Sperre nur für die betreffende Ressource und nicht für ihre Mitglieder oder Unterelemente gelten soll.
 
    >[!NOTE]
@@ -1175,7 +1175,7 @@ Um eine Ressource zu löschen, gehen Sie folgendermaßen vor:
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, schließen Sie die Proxy-Dateien ein.
 
-**Dienst-Client erstellen**
+**Dienstclient erstellen**
 
 Bevor Sie eine Ressource programmgesteuert lesen können, müssen Sie eine Verbindung herstellen und Anmeldeinformationen angeben. Dies wird durch das Erstellen eines Service-Clients erreicht.
 

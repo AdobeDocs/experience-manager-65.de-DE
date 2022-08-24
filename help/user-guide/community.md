@@ -1,13 +1,13 @@
 ---
 title: Die AEM-Community
-seo-title: Die AEM-Community
+seo-title: The AEM Community
 description: Die AEM-Community
-seo-description: Die AEM-Community
+seo-description: The AEM Community
 exl-id: 2e73572c-78de-4c20-ada8-d95f7fd16dc9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 40%
+source-wordcount: '324'
+ht-degree: 39%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 40%
 
 Die AEM Gemeinschaft hat Tausende von Mitgliedern auf der ganzen Welt. Darunter sind Einsteiger, erfahrene Nutzer von Experience Manager und Administratoren.  Wir möchten Ihnen bei allen Fragen rund um AEM-Funktionen und die Entwicklung für AEM weiterhelfen. Wir veranstalten regelmäßig Expertensitzungen mit internen und externen Profi-Benutzern und erstellen Beispiele, Artikel und Übungen für Sie.
 
-[Treten Sie noch heute der Community bei, um Zugang zu Inhalten, Personen und Wissen zu erhalten.](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager) Es steht jedem offen. Wenn du dich für AEM interessierst, dann bist du gern gesehen. Komm heute vorbei!
+[Treten Sie noch heute der Community bei, um Zugang zu Inhalten, Personen und Wissen zu erhalten.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=de) Es steht jedem offen. Wenn du dich für AEM interessierst, dann bist du gern gesehen. Komm heute vorbei!
 
 ## Welche Veranstaltungen gibt es für AEM Mitglieder der Gemeinschaft? {#events}
 
-Es gibt eine ganze Reihe von Veranstaltungen für Mitglieder! Jeden Monat veranstalten wir Sitzungen, in denen Sie den Experten zu bestimmten AEM Fragen befragen können. Außerdem informieren wir Sie über wichtige Veranstaltungen wie [Immerse](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__fb7p-the_immerseagendai.html) oder [Adobe Summit](http://summit.adobe.com/na/?promoid=6JMR7JQY&amp;mv=other) oder sogar über Benutzergruppenereignisse in Ihrer Region.
+Es gibt eine ganze Reihe von Veranstaltungen für Mitglieder! Jeden Monat veranstalten wir Sitzungen, in denen Sie den Experten zu bestimmten AEM Fragen befragen können. Wir informieren Sie auch über wichtige Ereignisse wie [Immerse](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__fb7p-the_immerseagendai.html) oder [Adobe Summit](http://summit.adobe.com/na/?promoid=6JMR7JQY&amp;mv=other)oder sogar Benutzergruppenereignisse in Ihrer Region.
 
-Das Beste, was Sie tun sollten, ist [Besuchen Sie die AEM Community heute und sehen Sie, was los ist.](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
+Am besten ist es, [Besuchen Sie die AEM Community heute und sehen Sie, was los ist.](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
 
 ## Kann ich Code-Beispiele erhalten, um mir zu helfen? {#code-samples}
 

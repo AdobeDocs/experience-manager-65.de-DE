@@ -1,16 +1,16 @@
 ---
-title: Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen
+title: Verwenden von GraphQL mit AEM – Beispielinhalt und Abfragen
 description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
 source-git-commit: 1a3d5a6b3b4f7af67d6a62cdaab484daa536cb63
 workflow-type: tm+mt
 source-wordcount: '1416'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen {#learn-graphql-with-aem-sample-content-queries}
+# Verwenden von GraphQL mit AEM – Beispielinhalt und Abfragen {#learn-graphql-with-aem-sample-content-queries}
 
 Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
 
@@ -38,7 +38,7 @@ In diesen Beispielabfragen wird das Erstellen von Abfragen zusammen mit Beispiel
 
 >[!NOTE]
 >
->Je nach Instanz können Sie direkt auf die [Die mit AEM GraphQL-API enthaltene GraphQL-Oberfläche](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) zum Senden und Testen von Abfragen.
+>Abhängig von Ihrer Instanz können Sie direkt auf die in der [AEM-GraphQL-API enthaltene GraphiQL-Schnittstelle](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) zugreifen, um Abfragen zu senden und zu testen.
 >
 >Beispiel: `http://localhost:4502/content/graphiql.html`
 
@@ -46,7 +46,7 @@ In diesen Beispielabfragen wird das Erstellen von Abfragen zusammen mit Beispiel
 >
 >Die Beispielabfragen basieren auf der [Beispielstruktur für Inhaltsfragmente zur Verwendung mit GraphQL](#content-fragment-structure-graphql).
 
-### Beispielabfrage – Alle verfügbaren Schemas und Datentypen {#sample-all-schemes-datatypes}
+### Beispielabfrage – Alle verfügbaren Schemata und Datentypen {#sample-all-schemes-datatypes}
 
 Dadurch werden alle `types` für alle verfügbaren Schemas zurückgegeben.
 
@@ -224,7 +224,7 @@ Bei der Ausführung erweitert das System die Abfrage automatisch um alle Felder:
 
 ### Beispielabfrage – Namen aller Städte {#sample-names-all-cities}
 
-Dies ist eine unkomplizierte Abfrage, um den `name` aller Einträge im `city`-Schema zurückzugeben.
+Dies ist eine unkomplizierte Abfrage, um den `name`aller Einträge im `city`-Schema zurückzugeben.
 
 **Beispielabfrage**
 
@@ -356,7 +356,7 @@ Wenn Sie eine neue Variante mit dem Namen „Berlin Centre“ (`berlin_centre`) 
 }
 ```
 
-### Beispielabfrage – Vollständige Details des CEO und der Mitarbeiter eines Unternehmens {#sample-full-details-company-ceos-employees}
+### Beispielabfrage – Vollständige Details des CEO und der Mitarbeiter einer Firma {#sample-full-details-company-ceos-employees}
 
 Unter Verwendung der Struktur der verschachtelten Fragmente gibt diese Abfrage die vollständigen Details des CEO eines Unternehmens und aller seiner Mitarbeiter zurück.
 
@@ -484,7 +484,7 @@ query {
 }
 ```
 
-### Beispielabfrage – - Alle Personen mit dem Namen „Jobs“ oder „Smith“  {#sample-all-persons-jobs-smith}
+### Beispielabfrage – Alle Personen mit dem Namen „Jobs“ oder „Smith“ {#sample-all-persons-jobs-smith}
 
 Dadurch werden alle `persons` mit dem Namen `Jobs`oder `Smith` gefiltert.
 
@@ -605,7 +605,7 @@ query {
 }
 ```
 
-### Beispielabfrage – Alle Abenteuer, deren `_path` mit einem bestimmten Präfix  beginnt {#sample-wknd-all-adventures-cycling-path-filter}
+### Beispielabfrage – Alle Abenteuer, deren `_path` mit einem bestimmten Präfix beginnt {#sample-wknd-all-adventures-cycling-path-filter}
 
 Alle `adventures`, bei denen `_path` mit einem bestimmten Präfix (`/content/dam/wknd/en/adventures/cycling`) beginnt.
 
@@ -650,7 +650,7 @@ query {
 }
 ```
 
-### Beispielabfrage – Alle Städte in Deutschland oder der Schweiz mit einer Einwohnerzahl zwischen 400000 und 999999 {#sample-all-cities-d-ch-population}
+### Beispielabfrage – Alle Städte in Deutschland oder der Schweiz mit einer Einwohnerzahl zwischen 400.000 und 999.999 {#sample-all-cities-d-ch-population}
 
 Hier wird eine Kombination von Feldern gefiltert. Ein `AND` (implizit) wird verwendet, um den `population`-Bereich auszuwählen, während ein `OR` (explizit) zur Auswahl der erforderlichen Städte verwendet wird.
 
@@ -1241,7 +1241,7 @@ Diese Beispielabfrage untersucht:
 }
 ```
 
-### Beispielabfrage für ein verschachteltes Inhaltsfragment – Typ mit einem Modell {#sample-wknd-nested-fragment-single-model}
+### Beispielabfrage für ein verschachteltes Inhaltsfragment – Typ mit einem einzigen Modell {#sample-wknd-nested-fragment-single-model}
 
 Diese Abfrage untersucht:
 
@@ -1516,13 +1516,13 @@ Die Abfragen basieren auf der folgenden Struktur, die Folgendes verwendet:
 
 * [Beispielinhaltsfragmente](#sample-content-fragments) basierend auf den oben genannten Modellen
 
-### Beispielmodelle für Inhaltsfragmente (Schemas) {#sample-content-fragment-models-schemas}
+### Beispielmodelle für Inhaltsfragmente (Schemata) {#sample-content-fragment-models-schemas}
 
 Für die Beispielabfragen verwenden wir die folgenden Inhaltsmodelle und ihre Wechselbeziehungen (Verweise ->):
 
 * [Unternehmen](#model-company)
--> [Person](#model-person)
-    -> [Auszeichnung](#model-award)
+> [Person](#model-person)
+> [Auszeichnung](#model-award)
 
 * [Stadt](#model-city)
 

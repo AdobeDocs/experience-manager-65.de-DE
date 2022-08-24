@@ -1,8 +1,8 @@
 ---
 title: E-Mail-Marketing
-seo-title: E-Mail-Marketing
+seo-title: E-mail Marketing
 description: E-Mail-Marketing (z. B. Newsletter) ist ein wichtiger Bestandteil jeder Marketingkampagne, da Sie auf diese Weise Ihren Leads Inhalte zukommen lassen können. In AEM können Sie Newsletter aus bestehendem AEM-Inhalt erstellen und neue für die Newsletter spezifische Inhalte hinzufügen.
-seo-description: E-Mail-Marketing (z. B. Newsletter) ist ein wichtiger Bestandteil jeder Marketingkampagne, da Sie auf diese Weise Ihren Leads Inhalte zukommen lassen können. In AEM können Sie Newsletter aus bestehendem AEM-Inhalt erstellen und neue für die Newsletter spezifische Inhalte hinzufügen.
+seo-description: E-mail marketing (for example, newsletters) are an important part of any marketing campaign as you use them to push content to your leads. In AEM, you can create newsletters from existing AEM content as well as add new content, specific to the newsletters.
 uuid: 565943bf-fe37-4d5c-98c3-7c629c4ba264
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1758'
 ht-degree: 96%
 
 ---
@@ -46,7 +46,7 @@ In diesem Dokument werden die Grundlagen der Newslettererstellung in AEM erläut
 >
 >Sollten Sie E-Mail-Dienste aktualisieren, einen Testlauf durchführen oder einen Newsletter verschicken wollen, schlagen diese Aktionen fehl, wenn der Newsletter nicht zunächst in der Veröffentlichungsinstanz veröffentlicht wurde oder wenn diese Instanz nicht verfügbar ist. Stellen Sie sicher, dass Sie Ihren Newsletter veröffentlichen und die Veröffentlichungsinstanz ordnungsgemäß funktioniert.
 
-## Erstellen eines Newsletter-Erlebnisses  {#creating-a-newsletter-experience}
+## Erstellen eines Newsletter-Erlebnisses {#creating-a-newsletter-experience}
 
 >[!NOTE]
 >
@@ -255,7 +255,7 @@ So versenden Sie einen Newsletter aus einer Kampagne:
    >
    >Stellen Sie sicher, dass Sie einer der Empfänger sind, um auf diese Weise sicherzustellen, dass der Newsletter versandt wurde.
 
-### Senden von Newslettern aus einer Liste heraus  {#sending-newsletters-from-a-list}
+### Senden von Newslettern aus einer Liste heraus {#sending-newsletters-from-a-list}
 
 So versenden Sie einen Newsletter aus einer Liste:
 
@@ -285,7 +285,7 @@ So versenden Sie einen Newsletter aus einer Liste:
 
 In diesem Abschnitt wird beschrieben, wie Sie einen Newsletter abonnieren können.
 
-### Abonnieren von Newslettern  {#subscribing-to-a-newsletter-1}
+### Abonnieren von Newslettern {#subscribing-to-a-newsletter-1}
 
 Gehen Sie folgendermaßen vor, um einen Newsletter zu abonnieren (als Beispiel wird die Geometrixx-Website verwendet):
 

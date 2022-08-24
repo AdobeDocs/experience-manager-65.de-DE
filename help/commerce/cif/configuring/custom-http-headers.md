@@ -5,7 +5,7 @@ exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '270'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -35,5 +35,5 @@ Die Komponenten, die die obige Cloud Service-Konfiguration verwenden, senden die
 
 Der Service ermöglicht zwar die Definition von Kopfzeilennamen, einschließlich der standardmäßigen Namen, aber sie stehen nicht zur Konfiguration zur Verfügung. Mit anderen Worten: Sie können die standardmäßigen HTTP-Kopfzeilen nicht mit dieser Funktion überschreiben. Eine Liste mit eingeschränkten Kopfzeilennamen finden Sie [hier](https://developer.mozilla.org/de-DE/docs/Web/HTTP/Headers). Darüber hinaus gibt es zwei weitere Kopfzeilen, die nicht verwendet werden können:
 
-* &quot;Store&quot;- wird von CIF verwendet, um den Adobe Commerce Store zu identifizieren.
+* „Store“ – wird von CIF verwendet, um den Adobe Commerce-Store zu identifizieren.
 * „Preview-Version“ – wird von CIF zum Abrufen von Staging-Produkten verwendet.

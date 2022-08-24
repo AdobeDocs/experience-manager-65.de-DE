@@ -10,9 +10,9 @@ topic-tags: document_services
 discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
 exl-id: 9bf090db-2c14-439e-ad78-6832678a309d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '6430'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,7 @@ Die Beispiele in diesem Dokument sind hilfreich für das Verständnis und die Ve
 
 * [Konfigurieren Sie den DocAssurance-Dienst](/help/forms/using/install-configure-document-services.md), bevor Sie die DocAssurance-Dienst-APIs verwenden.
 
-* Herunterladen und Konfigurieren des [AEM Forms Client-SDK](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) für Ihr AEM Maven-Projekt. Die Client-Klassen, die zum Erstellen von Maven-Projekten mit AEM Document Services erforderlich sind, sind im [AEM Forms Client-SDK](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) verfügbar
+* Herunterladen und Konfigurieren des [AEM Forms Client-SDK](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) für Ihr AEM Maven-Projekt. Die Client-Klassen, die zum Erstellen von Maven-Projekten mit AEM Document Services erforderlich sind, sind im [AEM Forms Client-SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) verfügbar
 
 * Erfahren Sie, wie Sie [Ihr AEM-Projekt mit Maven erstellen](/help/sites-developing/ht-projects-maven.md)
 
@@ -76,7 +76,7 @@ Sie können mithilfe des DocAssurance-Dienstes folgende Vorgänge durchführen:
 
 ### Unsichtbares Signaturfeld hinzufügen {#adding-an-invisible-signature-field}
 
-Digitale Signaturen werden in Signaturfeldern angezeigt, die eine grafische Darstellung der Signatur enthaltende Formularfelder sind. Signaturfelder können sichtbar oder unsichtbar sein. Unterzeichnende können ein bereits vorhandenes Signaturfeld verwenden, oder ein Signaturfeld kann programmgesteuert hinzugefügt werden. In beiden Fällen muss das Signaturfeld vorhanden sein, bevor ein PDF-Dokument signiert werden kann. Sie können ein Signaturfeld programmgesteuert hinzufügen, indem Sie die Signature-Dienst-Java-API oder die Signature-Webdienst-API verwenden. Sie können einem PDF-Dokument mehr als eine Signatur hinzufügen. Jeder der Signaturfeldnamen muss jedoch eindeutig sein.
+Digitale Signaturen werden in Signaturfeldern angezeigt, die eine grafische Darstellung der Signatur enthaltende Formularfelder sind. Signaturfelder können sichtbar oder unsichtbar sein. Unterzeichnende können ein bereits vorhandenes Signaturfeld verwenden, oder ein Signaturfeld kann programmgesteuert hinzugefügt werden. In beiden Fällen muss das Signaturfeld vorhanden sein, bevor ein PDF-Dokument signiert werden kann. Sie können ein Signaturfeld programmgesteuert hinzufügen, indem Sie die Signature-Dienst-Java-API oder die Signature-Webdienst-API verwenden. Sie können einem PDF-Dokument mehr als ein Signaturfeld hinzufügen. Jeder Signaturfeldname muss jedoch eindeutig sein.
 
 **Syntax**: `addInvisibleSignatureField(Document inDoc, String signatureFieldName, FieldMDPOptionSpec fieldMDPOptionsSpec, PDFSeedValueOptionSpec seedValueOptionsSpec, UnlockOptions unlockOptions)`
 
@@ -238,7 +238,7 @@ public class AddInvisibleSignatureField {
 }
 ```
 
-Sie können auch [CAdES](https://de.wikipedia.org/wiki/CAdES)-Spezifikation für das Signieren von Dokumenten verwenden. Verwenden Sie den folgenden Beispielcode, um als Signaturformat [CAdES](https://de.wikipedia.org/wiki/CAdES) festzulegen.
+Sie können auch [CAdES](https://de.wikipedia.org/wiki/CAdES)-Spezifikation für das Signieren von Dokumenten verwenden. Verwenden Sie den folgenden Beispielcode, um als Signaturformat [CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29) festzulegen.
 
 ```java
 SigningFormat signingFormat = SigningFormat.CAdES;
@@ -428,7 +428,7 @@ public class AddSignatureField {
 
 ### Dokumenten-Zeitstempel anwenden {#apply-document-timestamp}
 
-Sie können ein Dokument programmatisch mit einem Zeitstempel gemäß [PAdES 4](https://de.wikipedia.org/wiki/PAdES) -Spezifikationen versehen. Sie können auch [CAdES](https://de.wikipedia.org/wiki/CAdES)-Spezifikationen für transaktionsbezogene Dokumente verwenden.
+Sie können ein Dokument programmatisch mit einem Zeitstempel gemäß [PAdES 4](https://de.wikipedia.org/wiki/PAdES) -Spezifikationen versehen. Sie können auch [CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)-Spezifikationen für transaktionsbezogene Dokumente verwenden.
 
 **Syntax**: `applyDocumentTimeStamp(Document doc, VerificationTime verificationTime, ValidationPreferences dssPrefs, ResourceResolver resourceResolver, UnlockOptions unlockOptions)`
 
@@ -463,7 +463,7 @@ Sie können ein Dokument programmatisch mit einem Zeitstempel gemäß [PAdES 4](
  </tbody>
 </table>
 
-Die folgenden Codebeispiele fügen einem Dokument einen Zeitstempel gemäß [PAdES 4](https://de.wikipedia.org/wiki/PAdES) hinzu.
+Die folgenden Codebeispiele fügen einem Dokument einen Zeitstempel gemäß [PAdES 4](https://en.wikipedia.org/wiki/PAdES) hinzu.
 
 ```java
 package com.adobe.signatures.test;
@@ -876,7 +876,7 @@ public class GetSignatureFields {
 
 Sie können Signaturfelder in einem PDF-Dokument ändern. Das Ändern eines Signaturfelds umfasst das Manipulieren seiner Signaturfeldsperre- oder Seed-Wert-Lexikonwerte.
 
-Ein Feldsperre-Lexikon gibt eine Liste von Feldern an, die gesperrt werden, wenn das Signaturfeld signiert wird. Ein gesperrtes Feld verhindert, dass Benutzer das Feld bearbeiten. Ein Seed-Wert-Lexikon enthält Einschränkungsinformationen, die zum Zeitpunkt der Anwendung der Signatur verwendet werden. Beispiel: Sie können die Berechtigungen ändern, die Aktionen steuern, die auftreten können, ohne dass eine Signatur ungültig wird.
+Ein Feldsperre-Wörterbuch gibt eine Liste von Feldern an, die gesperrt werden, wenn das Signaturfeld signiert wird. Ein gesperrtes Feld verhindert, dass Benutzer das Feld bearbeiten. Ein Seed-Wert-Wörterbuch enthält Einschränkungsinformationen, die zum Zeitpunkt der Anwendung der Signatur verwendet werden. Beispiel: Sie können die Berechtigungen ändern, die Aktionen steuern, die auftreten können, ohne dass eine Signatur ungültig wird.
 
 Durch Ändern eines vorhandenen Signaturfelds können Sie das PDF-Dokument so bearbeiten, dass es die sich ändernden Geschäftsanforderungen anzeigt. Beispiel: Eine neue Geschäftsanforderung erfordert das Sperren aller Felder eines Dokuments nach dem es signiert wurde.
 
@@ -1395,7 +1395,7 @@ Der öffentliche Schlüssel wird im Zertifikat eines Benutzers gespeichert, das 
 
 >[!NOTE]
 >
->AEM Forms unterstützt auch *[CAdES](https://de.wikipedia.org/wiki/CAdES)*-Spezifikationen für das digitale Signieren von PDF-Dokumenten.
+>AEM Forms unterstützt auch *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)*-Spezifikationen für das digitale Signieren von PDF-Dokumenten.
 
 **PDF-Dokumente zertifizieren**
 
@@ -1409,7 +1409,7 @@ Nach dem Zertifizieren eines PDF-Dokuments können Sie weitere Signaturfelder di
 
 Der Autor oder Ersteller des Dokuments kann festlegen, dass das Dokument auf bestimmte Arten modifiziert werden kann, ohne dass die zertifizierte Signatur ungültig wird.
 
-Beispiel: Das Ausfüllen von Formularen oder Einfügen von Kommentaren im Dokument kann zulässig sein. Wenn der Autor festlegt, dass eine bestimmte Änderung nicht zulässig ist,
+Beispiel: Das Ausfüllen von Formularen oder Einfügen von Kommentaren im Dokument kann zulässig sein. Wenn der Autor festlegt, dass eine bestimmte Änderung nicht zulässig ist, 
 
 Acrobat verhindert, dass Benutzer das Dokument auf diese Weise ändern. Wenn solche Änderungen vorgenommen werden, etwa durch Verwenden einer anderen Anwendung, wird die zertifizierte Signatur ungültig und Acrobat gibt eine Warnung aus, wenn ein Benutzer das Dokument öffnet. (Bei nicht zertifizierten Signaturen werden Änderungen nicht verhindert und Bearbeitungsvorgänge führen nicht dazu, dass die ursprüngliche Signatur ungültig wird.)
 
@@ -4090,7 +4090,7 @@ Generiert eine PCL-, PostScript- und ZPL-Ausgabe aus einem Formularentwurf und e
   </tr>
   <tr>
    <td>data</td>
-   <td>Eine XML-Datei, die Daten enthält, die mit PDF-Dokumenten zusammengeführt wurden.<br /> </td>
+   <td>Eine XML-Datei, die Daten enthält, die mit PDF-Dokumenten zusammengeführt wurden.<br /> </td>
   </tr>
   <tr>
    <td>options</td>

@@ -5,7 +5,7 @@ exl-id: c6c0c2fc-6cfa-4c64-b3d8-7e428b2a4b2e
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '265'
-ht-degree: 44%
+ht-degree: 46%
 
 ---
 
@@ -27,7 +27,7 @@ Der Import von Produktkatalogdaten wird vom CIF-Add-on nicht unterstützt. Mithi
 
 >[!TIP]
 >
->Wenn keine Echtzeit-APIs verfügbar sind, sollte für die Integration ein externer Produkt-Cache mit APIs verwendet werden. Beispiel: [Magento Open Source](https://business.adobe.com/products/magento/open-source.html).
+>Wenn keine Echtzeit-APIs verfügbar sind, sollte für die Integration ein externer Produkt-Cache mit APIs verwendet werden. Beispiel: [Magento Open Source](https://business.adobe.com/de/products/magento/open-source.html).
 
 ## Produktkatalog-Erlebnisse mit AEM Rendering
 

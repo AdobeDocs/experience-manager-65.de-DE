@@ -1,8 +1,8 @@
 ---
 title: Zuweisungsgrundlagen
-seo-title: Zuweisungsgrundlagen
+seo-title: Assignments Essentials
 description: Übersicht über Zuweisungsfunktionen für Aktivierungs-Communities
-seo-description: Übersicht über Zuweisungsfunktionen für Aktivierungs-Communities
+seo-description: Assignments feature overview for enablement communities
 uuid: e49fce26-1091-4f37-93e8-c4ec85371811
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,14 +13,14 @@ docset: aem65
 exl-id: 75cef5da-4f93-4721-99c0-ad44c8ab76d4
 source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 13%
+source-wordcount: '214'
+ht-degree: 14%
 
 ---
 
 # Zuweisungsgrundlagen {#assignments-essentials}
 
-Lesen Sie weiter, um mehr über die wesentlichen Informationen für die Arbeit mit der Zuweisungsfunktion von [Aktivierungs-Community](/help/communities/overview.md#enablement-community)-Sites zu erfahren.
+Lesen Sie weiter, um mehr über die wesentlichen Informationen für die Arbeit mit der Zuweisungsfunktion von zu erfahren. [Aktivierungs-Community](/help/communities/overview.md#enablement-community) Sites.
 
 Die Zuweisungsfunktion ist die Möglichkeit, Aktivierungsressourcen und Lernpfade Mitgliedern von Aktivierungsgemeinschaften zuzuweisen.
 
@@ -85,7 +85,7 @@ Die einzigen möglichen Kombinationen aus Abschluss und Erfolgsstatus sind:
 
 ### Zuweisungsfunktion {#assignments-function}
 
-Eine Community-Site-Struktur, die die [Zuweisungsfunktion](/help/communities/functions.md#assignments-function) enthält, enthält eine konfigurierte ` [assignments](/help/communities/assignments.md)`-Komponente.
+Eine Community-Site-Struktur mit [Zuweisungsfunktion](/help/communities/functions.md#assignments-function)enthält eine konfigurierte ` [assignments](/help/communities/assignments.md)` -Komponente.
 
 ### Referenz-APIs {#reference-apis}
 

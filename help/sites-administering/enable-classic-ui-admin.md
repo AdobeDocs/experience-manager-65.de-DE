@@ -1,8 +1,8 @@
 ---
 title: Admin Consoles
-seo-title: Admin Consolen
+seo-title: Admin Consoles
 description: Es wird beschrieben, wie Sie die in AEM verfügbaren Admin Consoles verwenden.
-seo-description: Es wird beschrieben, wie Sie die in AEM verfügbaren Admin Consoles verwenden.
+seo-description: Lear how to use the Admin Consoles available in AEM.
 uuid: 82ab5267-2f2a-4772-85d5-678d883a0294
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: d4de517e-50bc-4ca5-89b1-295d259fd5bb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 69%
+source-wordcount: '222'
+ht-degree: 68%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 69%
 
 In der Standardeinstellung ist die Option zum Wechseln zur klassischen Benutzeroberfläche über die Admin Consoles nun deaktiviert. Aus diesem Grund werden die Pop-up-Symbole, die beim Bewegen des Mauszeigers auf bestimmte Konsolensymbole angezeigt wurden, um den Zugriff auf die klassische Benutzeroberfläche zu ermöglichen, nicht mehr eingeblendet.
 
-Jede Konsole, die über eine klassische Benutzeroberflächenversion in `/libs/cq/core/content/nav` verfügt, kann einzeln wieder aktiviert werden, sodass die Option **Klassische Benutzeroberfläche** erneut über das Konsolensymbol angezeigt wird, wenn die Maus darauf bewegt wird.
+Jede Konsole mit einer klassischen UI-Version in `/libs/cq/core/content/nav` kann einzeln wieder aktiviert werden, sodass die **Klassische Benutzeroberfläche** wird das Konsolensymbol erneut angezeigt, wenn der Mauszeiger darüber bewegt wird.
 
 In diesem Beispiel aktivieren wir die klassische Benutzeroberfläche wieder für die Sites-Konsole.
 
@@ -38,7 +38,7 @@ In diesem Beispiel aktivieren wir die klassische Benutzeroberfläche wieder für
 
    `/libs/cq/core/content/nav/sites`
 
-1. Erstellen Sie eine Überlagerung mit der Option **Überlagerungsknoten** . Beispiel:
+1. Erstellen Sie eine Überlagerung mit der **Überlagerungsknoten** Option; Beispiel:
 
    * **Pfad**: `/apps/cq/core/content/nav/sites`
    * **Pfad für Überlagerung**: `/apps/`

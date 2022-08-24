@@ -1,19 +1,19 @@
 ---
 title: MSM-Rollout-Konflikte
-seo-title: MSM-Rollout-Konflikte
+seo-title: MSM Rollout Conflicts
 description: Erfahren Sie, wie Sie Multi Site Manager-Rolloutkonflikte lösen.
-seo-description: Erfahren Sie, wie Sie Multi Site Manager-Rolloutkonflikte lösen.
+seo-description: Learn how to deal with Multi Site Manager rollout conflicts.
 uuid: 7a640905-aae2-498e-b95c-2c73008fa1cd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 16db5334-604f-44e2-9993-10d683dee5bb
-feature: Multi-Site-Manager
+feature: Multi Site Manager
 exl-id: e145e79a-c363-4a33-b9f9-99502ed20563
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '910'
 ht-degree: 62%
 
 ---
@@ -24,7 +24,7 @@ Konflikte können auftreten, wenn neue Seiten mit demselben Seitennamen sowohl i
 
 Solche Konflikte müssen nach dem Rollout gehandhabt und aufgelöst werden.
 
-## Konfliktbehandlung  {#conflict-handling}
+## Konfliktbehandlung {#conflict-handling}
 
 Wenn Konfliktseiten (in den Blueprint- und Live Copy-Zweigen) vorhanden sind, gestattet Ihnen MSM die Definition, wie (oder sogar ob) dieser Konflikt behoben werden soll.
 
@@ -69,7 +69,7 @@ In den folgenden Abschnitten werden wir zum Veranschaulichen der verschiedenen V
   <tr>
    <td><code> /bp-level-1</code></td>
    <td><code> /lc-level-1</code> <br /> (manuell im Live Copy-Zweig erstellt)<br /> </td>
-   <td><code> /lc-level-1</code> <br /> (enthält den Inhalt der Seite<br /> der untergeordneten Ebene-1, die manuell im Live Copy-Zweig erstellt wurde)</td>
+   <td><code> /lc-level-1</code> <br /> (enthält den Inhalt der Seite<br /> untergeordnete Ebene 1, die manuell im Live Copy-Zweig erstellt wurde)</td>
   </tr>
  </tbody>
 </table>
@@ -80,7 +80,7 @@ Mit dem Rollout-Manager können Sie das Konflikt-Management aktivieren oder deak
 
 Dies erfolgt mithilfe der [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) von **Day CQ WCM Rollout Manager**:
 
-* **Konflikt mit manuell erstellten Seiten** beheben:
+* **Konflikt mit manuell erstellten Seiten beheben**:
 
    ( `rolloutmgr.conflicthandling.enabled`)
 
@@ -105,22 +105,22 @@ AEM stellt Folgendes bereit:
 
 Der Standard-Konflikt-Handler:
 
-* Wird genannt `ResourceNameRolloutConflictHandler`
+* Wird aufgerufen `ResourceNameRolloutConflictHandler`
 
 * Mit diesem Handler hat die Blueprint-Seite Vorrang.
-* Der Service-Rang für diesen Handler ist niedrig (&quot;d. h. unter dem Standardwert für die Eigenschaft `service.ranking`), da davon ausgegangen wird, dass benutzerdefinierte Handler einen höheren Rang benötigen. Allerdings ist das Ranking nicht das absolute Minimum, um bei Bedarf Flexibilität zu gewährleisten.
+* Der Service-Rang für diesen Handler ist niedrig (&quot;d. h. unter dem Standardwert für `service.ranking` -Eigenschaft), da davon ausgegangen wird, dass benutzerdefinierte Handler einen höheren Rang benötigen. Allerdings ist das Ranking nicht das absolute Minimum, um bei Bedarf Flexibilität zu gewährleisten.
 
-Dieser Konflikt-Handler gibt dem Blueprint Vorrang. Die Live Copy-Seite `/b` wird (innerhalb des Live Copy-Zweigs) nach `/b_msm_moved` verschoben.
+Dieser Konflikt-Handler gibt dem Blueprint Vorrang. Die Live Copy-Seite `/b` wird (innerhalb des Live Copy-Zweigs) nach `/b_msm_moved`.
 
 * Live Copy: `/b`
 
-   Wird (innerhalb der Live Copy) nach `/b_msm_moved` verschoben. Dies dient als Sicherung und stellt sicher, dass keine Inhalte verloren gehen.
+   wird (innerhalb der Live Copy) nach `/b_msm_moved`. Dies dient als Sicherung und stellt sicher, dass keine Inhalte verloren gehen.
 
    * `lc-level-1` wird nicht verschoben.
 
 * Blueprint: `/b`
 
-   Wird auf die Live Copy-Seite `/b` übertragen.
+   Wird auf die Live Copy-Seite übertragen `/b`.
 
    * `bp-level-1` wird beim Rollout auf die Live Copy-Seite verschoben.
 
@@ -209,6 +209,6 @@ In diesem Fall hat die Live Copy effektiv Vorrang. Die Blueprint-Seite `/b` wird
  </tbody>
 </table>
 
-### Service-Rankings {#service-rankings}
+### Service-Rangfolge {#service-rankings}
 
-Das [OSGi](https://www.osgi.org/)-Service-Ranking kann zum Definieren der Priorität von einzelnen Konflikt-Handlern verwendet werden.
+Die [OSGi](https://www.osgi.org/)-Service-Rangfolge kann zum Definieren der Priorität von einzelnen Konflikt-Handlern verwendet werden.

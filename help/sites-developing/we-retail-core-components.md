@@ -1,8 +1,8 @@
 ---
 title: Testen von Kernkomponenten in We.Retail
-seo-title: Testen von Kernkomponenten in We.Retail
+seo-title: Trying out Core Components in We.Retail
 description: Testen von Kernkomponenten in We.Retail
-seo-description: 'null'
+seo-description: null
 uuid: 8d1cea0b-99d9-49b2-b275-41f14864b1ff
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: af3cd818-61cf-4da1-bfb5-87540911ddd5
 exl-id: b5f2be67-c93c-4dbc-acc0-3edd8f1a282f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 83%
+source-wordcount: '537'
+ht-degree: 82%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 83%
 
 Die Kernkomponenten sind moderne, flexible Komponenten, die sich problemlos erweitern und in Ihre Projekte integrieren lassen. Sie basieren auf mehreren wichtigen Designprinzipien wie HTL, unmittelbarer Nutzbarkeit, Konfigurierbarkeit, Versionierung und Erweiterbarkeit. We.Retail baut auf Kernkomponenten auf.
 
-## Testen  {#trying-it-out}
+## Testen {#trying-it-out}
 
 1. Starten Sie AEM mit den We.Retail-Beispielinhalten und öffnen Sie die [Komponentenkonsole](/help/sites-authoring/default-components-console.md).
 
@@ -39,7 +39,7 @@ Die Kernkomponenten sind moderne, flexible Komponenten, die sich problemlos erwe
 1. Beachten Sie, dass alle Kernkomponenten mit **v1** benannt sind, was bedeutet, dass dies die erste Version dieser Kernkomponente ist. Künftig werden regelmäßig Versionen veröffentlicht, die mit AEM kompatibel sind und ein einfaches Upgrade ermöglichen, sodass Sie die neuesten Funktionen nutzen können.
 1. Klicken Sie auf **Text (v1)**.
 
-   Beachten Sie, dass der **Ressourcentyp** der Komponente `/apps/core/wcm/components/text/v1/text` ist. Kernkomponenten befinden sich unter `/apps/core/wcm/components` und sind pro Komponente versioniert.
+   Beachten Sie, dass **Ressourcentyp** der Komponente `/apps/core/wcm/components/text/v1/text`. Kernkomponenten finden Sie unter `/apps/core/wcm/components` und werden pro Komponente versioniert.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
@@ -48,11 +48,11 @@ Die Kernkomponenten sind moderne, flexible Komponenten, die sich problemlos erwe
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
 1. Wechseln Sie zur Komponentenkonsole zurück. Filtern Sie nach der Gruppe **We.Retail** und wählen Sie die **Textkomponente** aus.
-1. Beachten Sie, dass der **Ressourcentyp** wie unter `/apps/weretail` erwartet auf eine Komponente verweist, der **Resource Super Type** jedoch zurück auf die Kernkomponente `/apps/core/wcm/components/text/v1/text` verweist.
+1. Beachten Sie, dass **Ressourcentyp** auf eine Komponente verweist, wie unter `/apps/weretail` aber die **Resource Super Type** verweist zurück zur Kernkomponente `/apps/core/wcm/components/text/v1/text`.
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
-1. Klicken Sie auf die Registerkarte **Live-Nutzung** , um zu sehen, auf welchen Seiten diese Komponente derzeit verwendet wird. Klicken Sie auf die erste **Dankeseite**, um die Seite zu bearbeiten.
+1. Klicken Sie auf **Live-Nutzung** Registerkarte, um zu sehen, auf welchen Seiten diese Komponente derzeit verwendet wird. Klicken Sie auf die erste **Dankeseite**, um die Seite zu bearbeiten.
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
@@ -89,4 +89,4 @@ Die Kernkomponenten sind moderne, flexible Komponenten, die sich problemlos erwe
 
 Weitere Informationen zu den Kernkomponenten finden Sie im Dokument [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) für Autoren. Dies enthält einen Überblick über die Kernkomponenten. Im Dokument [Entwickeln von Kernkomponenten](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) für Entwickler finden Sie einen technischen Überblick.
 
-Sie können sich darüber hinaus eingehender mit [bearbeitbaren Vorlagen](/help/sites-developing/we-retail-editable-templates.md) befassen. Ausführliche Informationen zu bearbeitbaren Vorlagen finden Sie im Authoring-Dokument [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) oder im Entwicklerdokument Seite [Vorlagen - Bearbeitbar](/help/sites-developing/page-templates-editable.md) .
+Sie können sich darüber hinaus eingehender mit [bearbeitbaren Vorlagen](/help/sites-developing/we-retail-editable-templates.md) befassen. Siehe Authoring-Dokument . [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) oder der Seite mit dem Entwicklerdokument [Vorlagen - bearbeitbar](/help/sites-developing/page-templates-editable.md) für vollständige Details zu bearbeitbaren Vorlagen.

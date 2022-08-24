@@ -93,7 +93,7 @@ Wenn die MySQL Workbench zum ersten Mal gestartet wird, sofern sie nicht bereits
    * Verbindungsmethode: `Standard (TCP/IP)`
    * Hostname: `127.0.0.1`
    * Benutzername: `root`
-   * Passwort: `no password by default`
+   * Kennwort: `no password by default`
    * Standardschema: `leave blank`
 
 1. Auswählen `Test Connection` Überprüfen der Verbindung zum ausgeführten MySQL-Dienst
@@ -200,4 +200,4 @@ Wenn MySQL auf einem Server ausgeführt wird, der sich von AEM unterscheidet, mu
 
    * **[!UICONTROL Datenquellenname]**: für den [MySQL-Verbindung](#new-connection-settings), beispielsweise &quot;communities&quot;.
 
-* Klicken Sie auf **[!UICONTROL Speichern]**
+* Wählen Sie **[!UICONTROL Speichern]** aus

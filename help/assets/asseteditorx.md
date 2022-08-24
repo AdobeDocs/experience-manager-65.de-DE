@@ -3,11 +3,11 @@ title: Erweitern des Asset-Editors
 description: Erfahren Sie, wie sich die Funktionen des Asset-Editors mithilfe von benutzerdefinierten Komponenten erweitern lassen.
 contentOwner: AG
 role: User, Admin
-feature: Entwickler-Tools
+feature: Developer Tools
 exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '688'
 ht-degree: 85%
 
 ---
@@ -18,7 +18,7 @@ Beim Asset-Editor handelt es sich um die Seite, die geöffnet wird, wenn auf ein
 
 Die Konfiguration des Editors mit den vordefinierten Bearbeitungskomponenten wird in [Erstellen und Konfigurieren einer Asset-Editor-Seite](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page) behandelt.
 
-Neben der Verwendung bereits vorhandener Editor-Komponenten können [!DNL Adobe Experience Manager]-Entwickler auch eigene Komponenten erstellen.
+Zusätzlich zur Verwendung bereits vorhandener Editor-Komponenten [!DNL Adobe Experience Manager] -Entwickler können auch eigene Komponenten erstellen.
 
 ## Erstellen einer Asset-Editor-Vorlage {#creating-an-asset-editor-template}
 
@@ -32,7 +32,7 @@ Die folgenden Beispielseiten sind in Geometrixx enthalten:
 
 [!DNL Assets] -Komponenten verwenden eine Erweiterung der WCM-clientlib zum Bearbeiten. Die clientlibs werden normalerweise in `init.jsp` geladen.
 
-Im Vergleich zum standardmäßigen Laden der clientlib (im Kernelement `init.jsp`) muss eine [!DNL Assets] -Vorlage Folgendes aufweisen:
+Im Vergleich zum standardmäßigen Laden der clientlib (im `init.jsp`), ein [!DNL Assets] -Vorlage muss Folgendes aufweisen:
 
 * Die Vorlage muss die clientlib `cq.dam.edit` (anstelle von `cq.wcm.edit`) enthalten.
 
@@ -42,7 +42,7 @@ In den meisten Fällen sollten diese Erfordernisse erfüllt sein, wenn das vorha
 
 ### JS-Aktionen konfigurieren {#configuring-js-actions}
 
-Einige der [!DNL Assets]-Komponenten erfordern JS-Funktionen, die in `component.js` definiert sind. Kopieren Sie diese Datei in Ihr Komponentenverzeichnis und verknüpfen Sie sie.
+Einige der [!DNL Assets] Komponenten erfordern JS-Funktionen, die in `component.js`. Kopieren Sie diese Datei in Ihr Komponentenverzeichnis und verknüpfen Sie sie.
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>

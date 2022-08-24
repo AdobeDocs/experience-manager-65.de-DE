@@ -1,8 +1,8 @@
 ---
 title: Kachel „App verwalten“
-seo-title: Kachel „App verwalten“
+seo-title: Manage App Tile
 description: Auf dieser Seite erfahren Sie mehr über die Kachel App verwalten im App-Dashboard, in der Details zur Anwendung geändert werden können.
-seo-description: Auf dieser Seite erfahren Sie mehr über die Kachel App verwalten im App-Dashboard, in der Details zur Anwendung geändert werden können.
+seo-description: Follow this page to learn about the Manage App Tile on the app dashboard that provides the ability to modify details about the Application.
 uuid: bde75ecd-8694-427c-9b16-2c4ab2fd4d8b
 contentOwner: User
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: a87834c9-247c-49fa-9978-a969230db91c
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 44%
+source-wordcount: '1263'
+ht-degree: 45%
 
 ---
 
@@ -27,17 +27,17 @@ In der Kachel **App verwalten** im App-Dashboard können Sie die Details der Anw
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
-## Grundlegendes zum Bereich App verwalten {#understanding-the-manage-app-tile}
+## Grundlegendes zur Kachel &quot;App verwalten&quot; {#understanding-the-manage-app-tile}
 
-Sie können einen Drilldown für jede Kachel im Bereich **App verwalten** durchführen, um Details anzuzeigen oder zu bearbeiten, indem Sie auf &quot;..&quot;klicken. in der unteren rechten Ecke.
+Sie können einen Drilldown für jede Kachel im **App verwalten** Kachel zum Anzeigen oder Bearbeiten von Details durch Klicken auf das Symbol &quot;...&quot; in der unteren rechten Ecke.
 
-### Die Registerkarte Allgemein {#the-basic-tab}
+### Registerkarte &quot;Standard&quot; {#the-basic-tab}
 
-Sie können die **Name**, **Autor**, **Kurzbeschreibung** und die **Beschreibung** für Ihre App von dieser Registerkarte aus bearbeiten.
+Sie können die **Name**, **Autor**, **Kurzbeschreibung** und die **Beschreibung** für Ihre App von dieser Registerkarte aus.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 
-### Die Registerkarte Erweitert {#the-advanced-tab}
+### Der Tab Erweitert {#the-advanced-tab}
 
 Jede Mobile App-Plattform beschreibt, welche Daten erfasst werden, wobei jeder App Store speziell ausgewählt wird.
 
@@ -56,15 +56,15 @@ Jeder Appstore von Anbietern, z. B. Apple App Store oder Google Play Store, ben�
 >
 >Die AEM Verify-App bietet die Möglichkeit, Screenshots in AEM direkt an Ihre App-Details zu senden.
 >
->Weitere Informationen finden Sie unter [Mobile Quickstart für AEM Verifizierung](/help/mobile/phonegap-mobile-quickstart.md).
+>Siehe [Mobil-Schnellstart für AEM Verifizierung](/help/mobile/phonegap-mobile-quickstart.md) für weitere Details.
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
-### Metadaten   {#metadata}
+### Metadaten {#metadata}
 
 >[!NOTE]
 >
->Sobald Sie mit der Kachel **App verwalten** vertraut sind, finden Sie unter [Bearbeiten von App-Metadaten](/help/mobile/phonegap-editmetadata.md) Informationen zum Anzeigen und Bearbeiten der Metadaten.
+>Sobald Sie mit dem **App verwalten** Kachel, siehe [Bearbeiten von App-Metadaten](/help/mobile/phonegap-editmetadata.md) um die Metadaten anzuzeigen und zu bearbeiten.
 
 #### Allgemeine Metadaten {#common-metadata}
 
@@ -74,11 +74,11 @@ Es gibt allgemeine Konfigurationen und Metadaten für alle Plattformen.
 
 In diesem Abschnitt definieren Sie die Server-URL für Inhaltsaktualisierungen, die Einstiegsseite für Ihre mobile Anwendung, die PhoneGap-Version für die Kompilierung, die Version, den Namen und die Beschreibung Ihrer Anwendung und mehr.
 
-**App-** Version ist die funktionierende Version Ihrer Anwendung. Eine bewährte Vorgehensweise ist die aus 3 Stellen bestehende Nummerierung, wobei vor dem ersten Release unter 1.0.0 begonnen werden sollte.
+**App-Version** ist die funktionierende Version Ihrer Anwendung. Eine bewährte Vorgehensweise ist die aus 3 Stellen bestehende Nummerierung, wobei vor dem ersten Release unter 1.0.0 begonnen werden sollte.
 
-**PhoneGap-** Version ist die Version, in der Sie Ihre Anwendung mit PhoneGap kompilieren möchten. Es ist eine bewährte Vorgehensweise, die jeweils aktuelle Version zu verwenden, damit alle neuen und vorteilhaften Funktionen und Fehlerbehebungen genutzt werden können.
+**PhoneGap-Version** ist die Version, in der Sie Ihre Anwendung mit PhoneGap kompilieren möchten. Es ist eine bewährte Vorgehensweise, die jeweils aktuelle Version zu verwenden, damit alle neuen und vorteilhaften Funktionen und Fehlerbehebungen genutzt werden können.
 
-**Die** URL des Inhaltsaktualisierungs-Servers ist die URL, die Ihre Anwendung zum Aufrufen von ContentSync-Aktualisierungen verwendet. Sie muss auf die URL des Dispatchers festgelegt werden oder, wenn Sie keinen Dispatcher verwenden, auf eine der Veröffentlichungsinstanzen, die zum Einbinden von Aktualisierungen über die Inhaltssynchronisierung in Ihre Anwendung verwendet wird.
+**URL des Inhaltsaktualisierungs-Servers** ist die URL, die Ihre Anwendung zum Aufrufen von ContentSync-Updates verwendet. Sie muss auf die URL des Dispatchers festgelegt werden oder, wenn Sie keinen Dispatcher verwenden, auf eine der Veröffentlichungsinstanzen, die zum Einbinden von Aktualisierungen über die Inhaltssynchronisierung in Ihre Anwendung verwendet wird.
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -104,7 +104,7 @@ Bei Plattformen, die nicht von AEM interpretiert werden können, können die AEM
 
 Der Apple App Store erfordert zusätzliche Metadaten für die Veröffentlichung Ihrer App. Im Abschnitt „iOS-Metadaten“ werden die erforderlichen Informationen gesammelt, die dann vom iTMSTransporter-Tool von Apple für die Veröffentlichung von Metadaten im verknüpften Konto des Apple-Entwicklers verwendet werden können.
 
-Um die Apple-spezifischen Metadaten zu erhalten, müssen Sie zunächst Ihre Anwendung auf [https://itunesconnect.apple.com](https://itunesconnect.apple.com/) erstellen. Nach dem Erstellen Ihrer Anwendung generiert Apple Metadaten, die im Abschnitt „iOS-Metadaten“ erforderlich sind, wenn Sie das Apple-Tool iTMSTransporter zum Validieren und Hochladen der Metadaten in itunesconnect.apple.com verwenden möchten. Wenn Sie nur die zu erfassenden Metadaten abrufen möchten, müssen Sie nicht unbedingt die iOS-spezifischen Metadaten ausfüllen. Sie können weiterhin die Metadaten exportieren, die die iOS- und allgemeinen Metadaten zusammenführen, und alle Screenshots in eine ZIP-Datei erfassen, die jederzeit heruntergeladen werden kann.
+Um die Apple-spezifischen Metadaten abzurufen, müssen Sie zunächst Ihre Anwendung in [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). Nach dem Erstellen Ihrer Anwendung generiert Apple Metadaten, die im Abschnitt „iOS-Metadaten“ erforderlich sind, wenn Sie das Apple-Tool iTMSTransporter zum Validieren und Hochladen der Metadaten in itunesconnect.apple.com verwenden möchten. Wenn Sie nur die zu erfassenden Metadaten abrufen möchten, müssen Sie nicht unbedingt die iOS-spezifischen Metadaten ausfüllen. Sie können weiterhin die Metadaten exportieren, die die iOS und die gängigen Metadaten zusammenführen, und alle Screenshots in eine ZIP-Datei erfassen, die jederzeit heruntergeladen werden kann.
 
 Die heruntergeladene Zip-Datei enthält eine itmsp-Datei, in der die metadata.xml zu finden ist. Die itmsp-Datei enthält die exportierten Metadaten (innerhalb der Datei &quot;metadata.xml&quot;) sowie alle zugehörigen Screenshots.
 
@@ -132,15 +132,15 @@ Die Eigenschaft &quot;Content Update Server URL&quot;ist die URL, die auf eine V
 >
 >Wenn von Ihrer Autorserverinstanz auf mehrere Veröffentlichungsserverinstanzen repliziert wird (gängige Architektur bei AEM), verfügt jeder Veröffentlichungsserver über denselben Aktualisierungsinhalt, da die Aktualisierung auf der Autorinstanz erstellt wird und von da aus auf alle Veröffentlichungsinstanzen repliziert wird. Grundsätzlich werden Lastenausgleich und Failover vollständig unterstützt.
 
-### Registerkarte &quot;Plug-ins&quot;{#the-plugins-tab}
+### Registerkarte &quot;Plug-ins&quot; {#the-plugins-tab}
 
-Auf der Registerkarte **Plugins** werden die Plug-ins beschrieben, die mit Ihrer App verknüpft sind. Diese Informationen werden verwendet, um das entsprechende Plug-in während eines Builds abzurufen.
+Die **Plugins** -Tab beschreibt die mit Ihrer App verknüpften Plug-ins. Diese Informationen werden verwendet, um das entsprechende Plug-in während eines Builds abzurufen.
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 
-### Registerkarte &quot;Screenshots&quot;{#the-screenshots-tab}
+### Registerkarte &quot;Screenshots&quot; {#the-screenshots-tab}
 
-Auf der Registerkarte **Screenshots** werden die unterstützten Screenshot-Auflösungen für verschiedene Plattformen angezeigt.
+Die **Screenshots** -Tab zeigt die unterstützten Screenshot-Auflösungen auf verschiedenen Plattformen an.
 
 ![chlimage_1-123](assets/chlimage_1-123.png)
 
@@ -148,9 +148,9 @@ Auf der Registerkarte **Screenshots** werden die unterstützten Screenshot-Aufl�
 >
 >Informationen zum Hinzufügen und Entfernen von Screenshots finden Sie unter [Bearbeiten von App-Metadaten](/help/mobile/phonegap-editmetadata.md).
 
-### Registerkarte &quot;Authentifizierung&quot;{#the-authentication-tab}
+### Registerkarte &quot;Authentifizierung&quot; {#the-authentication-tab}
 
-Auf der Registerkarte **Authentifizierung** können Sie einen OAuth-Client auswählen, der mit Ihrer Anwendung verknüpft werden soll, und einem Entwickler die Verwendung der OAuth-Authentifizierung von Adobe Experience Manager ermöglichen.
+Die **Authentifizierung** -Registerkarte können Sie einen OAuth-Client auswählen, der mit Ihrer Anwendung verknüpft werden soll, und einem Entwickler die Verwendung der OAuth-Authentifizierung von Adobe Experience Manager ermöglichen.
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 

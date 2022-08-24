@@ -145,7 +145,7 @@ Gehen Sie wie folgt vor, um RESTful-Services zu konfigurieren:
 Das Formulardatenmodell von [!DNL Experience Manager Forms] bei der Integration mit RESTful-Web-Services als Datenquelle umfasst HTTP-Client-Konfigurationen zur Leistungsoptimierung.
 Führen Sie die folgenden Schritte aus, um den HTTP-Client des Formulardatenmodells zu konfigurieren:
 
-1. Melden Sie sich bei der Autoreninstanz von [!DNL Experience Manager Forms] als Administrator an und wechseln Sie zu den [!DNL Experience Manager]-Web-Konsolen-Bundles. Die Standard-URL lautet [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+1. Melden Sie sich bei der [!DNL Experience Manager Forms]-Autoreninstanz als Administrator an und wechseln Sie zu den [!DNL Experience Manager]-Webkonsolen-Paketen. Die Standard-URL lautet [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 
 1. Tippen Sie auf **[!UICONTROL HTTP-Client-Konfiguration des Formulardatenmodells für REST-Datenquelle]**.
 
@@ -153,13 +153,13 @@ Führen Sie die folgenden Schritte aus, um den HTTP-Client des Formulardatenmode
 
    * Geben Sie im Feld **[!UICONTROL Verbindungsgrenze insgesamt]** die maximal zulässige Anzahl von Verbindungen zwischen dem Formulardatenmodell und RESTful-Web-Services ein. Der Standardwert ist 20 Verbindungen.
 
-   * Geben Sie im Feld **[!UICONTROL Verbindungsgrenze pro Route]** die maximal zulässige Anzahl von Verbindungen für jede Route ein. Der Standardwert ist 2 Verbindungen.
+   * Geben Sie die maximal zulässige Anzahl von Verbindungen für jede Route im Feld **[!UICONTROL Verbindungslimit pro Route]** an. Der Standardwert ist 2 Verbindungen.
 
-   * Geben Sie im Feld **[!UICONTROL Aufrechterhalten]** die Dauer an, für die eine persistente HTTP-Verbindung aufrechterhalten wird. Der Standardwert ist 15 Sekunden.
+   * Geben Sie die Dauer, für die eine persistente HTTP-Verbindung aufrechterhalten wird, im Feld **[!UICONTROL Aufrechterhalten]** an. Der Standardwert ist 15 Sekunden.
 
-   * Geben Sie im Feld **[!UICONTROL Verbindungs-Zeitüberschreitung]** die Dauer an, für die der [!DNL Experience Manager Forms]-Server auf den Aufbau einer Verbindung warten soll. Der Standardwert ist 10 Sekunden.
+   * Geben Sie im Feld **[!UICONTROL Verbindungs-Zeitüberschreitung]** die Dauer an, für die der [!DNL Experience Manager Forms]-Server auf eine Verbindung wartet. Der Standardwert ist 10 Sekunden.
 
-   * Geben Sie im Feld **[!UICONTROL Socket-Zeitüberschreitung]** die maximale Zeitspanne für Inaktivität zwischen zwei Datenpaketen an. Der Standardwert ist 30 Sekunden.
+   * Geben Sie im Feld **[!UICONTROL Socket-Zeitüberschreitung]** den maximalen Zeitraum für die Inaktivität zwischen zwei Datenpaketen an. Der Standardwert ist 30 Sekunden.
 
 
 ## SOAP-Webservices konfigurieren {#configure-soap-web-services}
@@ -190,7 +190,7 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Stellen Si
 
 >[!NOTE]
 >
-> Formulardatenmodell unterstützt [OData Version 4](https://www.odata.org/documentation/).
+> Das Formulardatenmodell unterstützt [OData Version 4](https://www.odata.org/documentation/).
 >Eine schrittweise Anleitung zum Konfigurieren von Microsoft Dynamics 365, online oder On-Premise, finden Sie unter [Microsoft Dynamics OData-Konfiguration](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Datenquellen]**. Tippen Sie, um den Ordner auszuwählen, in dem Sie eine Cloud-Konfiguration erstellen möchten.

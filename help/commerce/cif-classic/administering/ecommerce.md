@@ -61,7 +61,7 @@ Adobe bietet zwei Versionen des Commerce-Integrations-Frameworks:
    <td>
     <ul>
      <li>Kein Produktimport</li>
-     <li>Allgemeine Vorlagen</li>
+     <li>Generische Vorlagen</li>
      <li>On-Demand-Daten über Connector</li>
     </ul> </td>
   </tr>
@@ -190,7 +190,7 @@ Im Abschnitt [Konzepte](/help/commerce/cif-classic/administering/concepts.md) fi
 * Das Framework ist erweiterbar.
 * Das Framework stellt keine vorkonfigurierte, sofort verwendbare Website bereit. Ein gewisses Maß an Entwicklungsarbeit ist immer erforderlich, um das Framework an Ihre Vorgaben anzupassen.
 
-### Vorteile {#why}
+### Warum? {#why}
 
 * Bereitstellung der grundlegenden Mechanismen, die für die rasche Realisierung einer angepassten eCommerce-Site erforderlich sind.
 * Flexibilität, die für die Entwicklung einer echten eCommerce-Website nötig ist

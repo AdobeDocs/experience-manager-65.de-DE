@@ -10,7 +10,7 @@ exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
 source-git-commit: 01de1d5064f5ebf00acd2fe9f138d852f41f7273
 workflow-type: tm+mt
 source-wordcount: '610'
-ht-degree: 64%
+ht-degree: 72%
 
 ---
 
@@ -58,13 +58,13 @@ Weitere Informationen finden Sie unter [Tastaturbedienung und Navigation](https:
 ## Unterstützung der Technologie in [!DNL Dynamic Media] Viewer {#assistive-technology-support-for-dm-viewers}
 
 Alle [!DNL Dynamic Media] Viewer-Komponenten unterstützen ARIA (Accessible Rich Internet Applications)-Rollen und -Attribute, um die Integration mit Hilfstechnologien wie Bildschirmlesehilfen zu verbessern.
-Weitere Informationen finden Sie im Hilfethema **Unterstützung für Hilfstechnologien** im Dynamic Media Viewers-Referenzhandbuch. Sehen Sie beispielsweise [Unterstützung für Hilfstechnologien](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=de) für den Video-Viewer oder [Unterstützung für Hilfstechnologien](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) für den interaktiven Bild-Viewer.
+Weitere Informationen finden Sie im Hilfethema **Unterstützung für Hilfstechnologien** im Dynamic Media Viewers-Referenzhandbuch. Sehen Sie beispielsweise [Unterstützung für Hilfstechnologien](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=de) für den Video-Viewer oder [Unterstützung für Hilfstechnologien](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=de#viewers-for-aem-assets-only) für den interaktiven Bild-Viewer.
 
 ## Unterstützung für geschlossene Untertitel in Dynamic Media {#closed-caption-support}
 
-Dynamic Media unterstützt die Bereitstellung von Videos und adaptiven Videosets mit verdeckten Untertiteln. Die Untertitel müssen über dem Videoinhalt angezeigt werden.
+Dynamic Media unterstützt die Bereitstellung von Videos und adaptiven Videosätzen mit Untertiteln. Die Untertitel müssen über dem Videoinhalt angezeigt werden.
 
-Siehe [Video in Dynamic Media - Hinzufügen von Untertiteln oder Untertiteln zu Videos](/help/assets/video.md#adding-captions-to-video).
+Siehe [Video in Dynamic Media – Hinzufügen von Untertiteln zu Videos](/help/assets/video.md#adding-captions-to-video).
 
 >[!MORELIKETHIS]
 >

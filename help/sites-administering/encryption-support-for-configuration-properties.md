@@ -1,8 +1,8 @@
 ---
 title: Verschlüsselungsunterstützung für Konfigurationseigenschaften
-seo-title: Verschlüsselungsunterstützung für Konfigurationseigenschaften
+seo-title: Encryption Support for Configuration Properties
 description: Verschlüsselungsunterstützung für Konfigurationseigenschaften
-seo-description: 'null'
+seo-description: null
 uuid: 26dc5e46-9332-4d9b-8874-895b90391e8c
 contentOwner: User
 content-type: reference
@@ -12,14 +12,14 @@ discoiquuid: 4e08c297-aa4b-44cf-84c8-1e11582d9ebb
 exl-id: 3c3db1c8-5b22-45dd-aeaf-5cf830a9486b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '277'
 ht-degree: 87%
 
 ---
 
 # Verschlüsselungsunterstützung für Konfigurationseigenschaften{#encryption-support-for-configuration-properties}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Unterstützung für die Speicherung aller OSGi-Konfigurationseigenschaften in sicherer, verschlüsselter Form anstatt als Klartext. Das Formular in der Web Console-Benutzeroberfläche wird verwendet, um verschlüsselten Text aus Klartext mithilfe des systemweiten Übergeordneten Verschlüsselungsschlüssels zu erstellen.
 
@@ -29,11 +29,11 @@ Die Unterstützung für das OSGi-Konfigurations-Plug-in wurde hinzugefügt, um d
 >
 >Dienste, die einen verschlüsselten Wert erwarten, müssen die isProtected-Prüfung verwenden, um zu sehen, ob der Wert verschlüsselt ist, bevor die Entschlüsselung begonnen werden kann, da dieser bereits zuvor entschlüsselt worden sein könnte.
 
-## Aktivieren von Verschlüsselungsunterstützung  {#enabling-encryption-support}
+## Aktivieren von Verschlüsselungsunterstützung {#enabling-encryption-support}
 
 Diese Schritte zeigen, wie das SMTP-Kennwort für den Mail-Dienst verschlüsselt wird. Sie können diese Schritte für eine OSGI-Eigenschaft ausführen, die verschlüsselt werden soll.
 
-1. Wechseln Sie zur AEM Web-Konsole unter *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
+1. Navigieren Sie zur AEM Web-Konsole unter *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
 1. Gehen Sie in der oberen linken Ecke zu **Main - Crypto-Unterstützung.**
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
@@ -53,6 +53,6 @@ Diese Schritte zeigen, wie das SMTP-Kennwort für den Mail-Dienst verschlüsselt
 
 1. Speichern Sie die Eigenschaften von „Day CQ Mail Service“. Das SMTP-Kennwort wird jetzt als verschlüsselter Wert gesendet.
 
-## Entschlüsselungsunterstützung  {#decryption-support}
+## Entschlüsselungsunterstützung {#decryption-support}
 
 AEM bietet jetzt ein Konfigurations-Plug-in zur Entschlüsselung von Konfigurationseigenschaften. Dieses AEM-Plug-in entschlüsselt automatisch und ruft die Klartext-Eigenschaften ab.

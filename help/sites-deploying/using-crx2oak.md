@@ -20,7 +20,7 @@ ht-degree: 67%
 
 # Verwendung des CRX2OAK-Migrationstools{#using-the-crx-oak-migration-tool}
 
-## Einführung {#introduction}
+## Einführung    {#introduction}
 
 CRX2Oak ist ein Tool für die Migration von Daten zwischen verschiedenen Repositorys.
 

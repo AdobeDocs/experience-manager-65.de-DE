@@ -1,8 +1,8 @@
 ---
 title: Granite-Vorgänge – Benutzer- und Gruppenverwaltung
-seo-title: Granite-Vorgänge – Benutzer- und Gruppenverwaltung
+seo-title: Granite Operations - User and Group Administration
 description: Erfahren Sie mehr über die Benutzer- und Gruppenverwaltung.
-seo-description: Erfahren Sie mehr über die Benutzer- und Gruppenverwaltung.
+seo-description: Learn about Granite user and group administration.
 uuid: 7b6b7767-712c-4cc8-8d90-36f26280d6e3
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
-feature: Sicherheit
+feature: Security
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '923'
 ht-degree: 84%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 84%
 
 Da Granite die CRX-Repository-Implementierung der JCR-API-Spezifikation umfasst, verfügt es über eine eigene Benutzer- und Gruppenverwaltung.
 
-Diese Konten bilden die Grundlage für die [AEM Konten](/help/sites-administering/security.md) und alle mit der Granite-Verwaltung vorgenommenen Kontoänderungen werden angezeigt, wenn/wenn auf die Konten über die [AEM Benutzerkonsole](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) zugegriffen wird (z. B. `http://localhost:4502/useradmin`). Über die AEM-Benutzerkonsole können Sie auch Rechte und andere AEM-Eigenschaften verwalten.
+Diese Konten bilden die Grundlage der [AEM](/help/sites-administering/security.md) und alle Kontoänderungen, die mit der Granite-Verwaltung vorgenommen werden, werden angezeigt, wenn/wenn der Zugriff auf die Konten über die [AEM-Benutzerkonsole](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (z. B. `http://localhost:4502/useradmin`). Über die AEM-Benutzerkonsole können Sie auch Rechte und andere AEM-Eigenschaften verwalten.
 
 Die Konsolen für die Benutzer- und Gruppenverwaltung sind jeweils über die **[Tools-Konsole](/help/sites-administering/tools-consoles.md)** der Touch-optimierten Benutzeroberfläche verfügbar:
 
@@ -86,15 +86,15 @@ Durch Auswahl von **Benutzer** oder **Gruppen** in der Tools-Konsole wird die en
    * **Stadt**
    * **PLZ**
    * **Land**
-   * **Bundesland/Kanton**
+   * **Status**
    * **Titel**
    * **Geschlecht**
    * **Info**
    * **Kontoeinstellungen**
 
-      * ****
-StatusSie können das Konto entweder als 
-**** aktiviert oder  **inaktiv**.
+      * **Status**
+Sie können das Konto als 
+**active** oder **inactive**.
    * **Foto**
 
       Hier können Sie ein Foto hochladen, um es als Avatar zu verwenden.

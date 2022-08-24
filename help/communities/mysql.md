@@ -80,7 +80,7 @@ Wenn die MySQL Workbench zum ersten Mal gestartet wird, sofern sie nicht bereits
    * Verbindungsmethode: `Standard (TCP/IP)`
    * Hostname: `127.0.0.1`
    * Benutzername: `root`
-   * Passwort: `no password by default`
+   * Kennwort: `no password by default`
    * Standardschema: `leave blank`
 1. Auswählen `Test Connection` , um die Verbindung zum ausgeführten MySQL-Dienst zu überprüfen.
 
@@ -196,7 +196,7 @@ Wenn MySQL auf einem Server ausgeführt wird, der sich von AEM unterscheidet, mu
    * **[!UICONTROL Benutzername]**: Stamm oder geben Sie den konfigurierten Benutzernamen für den MySQL-Server ein, falls nicht &quot;root&quot;.
    * **[!UICONTROL Passwort]**: Löschen Sie dieses Feld, wenn kein Kennwort für MySQL festgelegt wurde. Geben Sie andernfalls das konfigurierte Kennwort für den MySQL-Benutzernamen ein.
    * **[!UICONTROL Datenquellenname]**: Der für die [MySQL-Verbindung](#new-connection-settings), beispielsweise &quot;Aktivierung&quot;.
-* Klicken Sie auf **[!UICONTROL Speichern]**.
+* Wählen Sie **[!UICONTROL Speichern]** aus.
 
 ## Scorm konfigurieren {#configure-scorm}
 
@@ -227,7 +227,7 @@ Wenn MySQL auf einem Server ausgeführt wird, der sich von AEM unterscheidet, mu
    * **[!UICONTROL Scorm-Benutzerkennwort]**: NICHT BEARBEITEN
 
       Nur zur internen Verwendung: Es ist für einen speziellen Dienstbenutzer bestimmt, der von AEM Communities zur Kommunikation mit der Scorm-Engine verwendet wird.
-* Klicken Sie auf **[!UICONTROL Speichern]**
+* Wählen Sie **[!UICONTROL Speichern]** aus
 
 ### Adobe Granite CSRF-Filter {#adobe-granite-csrf-filter}
 
@@ -243,4 +243,4 @@ Um sicherzustellen, dass Aktivierungskurse in allen Browsern ordnungsgemäß fun
 
 * Wählen Sie die `[+]` -Symbol, um einen sicheren Benutzeragenten hinzuzufügen.
 * Geben Sie ein `Mozilla/*`.
-* Klicken Sie auf **[!UICONTROL Speichern]**.
+* Wählen Sie **[!UICONTROL Speichern]** aus.

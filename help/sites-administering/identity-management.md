@@ -1,8 +1,8 @@
 ---
-title: Identitäts-Management
-seo-title: Identitäts-Management
+title: Identity Management
+seo-title: Identity Management
 description: Erfahren Sie mehr über Identitätsverwaltung in AEM.
-seo-description: Erfahren Sie mehr über Identitätsverwaltung in AEM.
+seo-description: Learn about identity management in AEM.
 uuid: d9b83cd7-c47a-41a5-baa4-bbf385d13bfd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,12 +13,12 @@ docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1230'
-ht-degree: 79%
+source-wordcount: '1222'
+ht-degree: 78%
 
 ---
 
-# Identitäts-Management{#identity-management}
+# Identity Management{#identity-management}
 
 Die einzelnen Besucher Ihrer Website können nur identifiziert werden, wenn Sie ihnen die Möglichkeit zum Anmelden bieten. Es gibt verschiedene Gründe, warum Sie eine Anmeldemöglichkeit bieten sollten:
 
@@ -27,13 +27,13 @@ Die einzelnen Besucher Ihrer Website können nur identifiziert werden, wenn Sie 
 
    Möglicherweise müssen Sie den Zugriff auf Ihre Website (oder Abschnitte davon) auf bestimmte Besucher beschränken.
 
-* [](/help/sites-administering/personalization.md) Personalisierung Ermöglicht Besuchern, bestimmte Aspekte des Zugriffs auf Ihre Website zu konfigurieren.
+* [Personalisierung](/help/sites-administering/personalization.md) Ermöglicht Besuchern, bestimmte Aspekte des Zugriffs auf Ihre Website zu konfigurieren.
 
 Die Anmelde (und Abmelde)-Funktion wird von einem [Konto mit einem **Profil**](#profiles-and-user-accounts) bereitgestellt, das zusätzliche Informationen über den registrierten Besucher (Benutzer) enthält. Die tatsächlichen Prozesse für die Registrierung und Autorisierung können abweichen:
 
 * Selbstregistrierung von der Website
 
-   Eine [Community-Site](/help/communities/sites-console.md) kann so konfiguriert werden, dass sich Besucher selbst registrieren oder sich bei ihren Facebook- oder Twitter-Konten anmelden können.
+   A [Community-Site](/help/communities/sites-console.md) kann so konfiguriert werden, dass sich Besucher selbst registrieren oder sich bei ihren Facebook- oder Twitter-Konten anmelden können.
 
 * Antrag auf Registrierung von der Website
 
@@ -54,7 +54,7 @@ Zusätzliche Funktionalität kann konfiguriert oder entwickelt werden:
 >
 >Die im Profil angegebenen Informationen können auch verwendet werden, um dem Benutzer über [Segmente](/help/sites-administering/campaign-segmentation.md) und [Kampagnen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) zielgruppengerechte Inhalte bereitzustellen.
 
-## Registrierungsformulare  {#registration-forms}
+## Registrierungsformulare {#registration-forms}
 
 Ein [Formular](/help/sites-authoring/default-components.md#form-component) kann verwendet werden, um die Registrierungsinformationen zu erfassen und dann das neue Konto und das Profil anzulegen.
 
@@ -85,7 +85,7 @@ Benutzer können sich beispielsweise entweder anmelden oder mithilfe der Option 
 
 Da ein Anmeldemechanismus vorhanden ist, ist auch ein Abmeldemechanismus erforderlich. Dieser ist als Option **Abmelden** in Geometrixx verfügbar.
 
-## Anzeigen und Aktualisieren eines Profils  {#viewing-and-updating-a-profile}
+## Anzeigen und Aktualisieren eines Profils {#viewing-and-updating-a-profile}
 
 Je nach Ihrem Registrierungsformular kann der Benutzer die registrierten Informationen in seinem Profil haben. Sie sollten in der Lage sein, diese Informationen zu einem späteren Zeitpunkt anzuzeigen und/oder zu aktualisieren. Dies kann mit einem ähnlichen Formular erfolgen. Beispiel in Geometrixx:
 
@@ -93,7 +93,7 @@ Je nach Ihrem Registrierungsformular kann der Benutzer die registrierten Informa
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 ```
 
-Um die Details Ihres Profils anzuzeigen, klicken Sie auf **Mein Profil** in der oberen rechten Ecke einer beliebigen Seite. zum Beispiel mit dem `admin`-Konto:
+Um die Details Ihres Profils anzuzeigen, klicken Sie auf **Mein Profil** in der oberen rechten Ecke einer beliebigen Seite; zum Beispiel mit dem `admin` Konto:
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
 Sie können mit dem [ClientContext](/help/sites-administering/client-context.md) (in der Autorenumgebung und mit ausreichend Berechtigungen) ein anderes Profil anzeigen:
@@ -116,7 +116,7 @@ Sie können mit dem [ClientContext](/help/sites-administering/client-context.md)
 
 1. Sie können die Daten nun mit der Option **Profil bearbeiten** oder **Kennwort ändern** aktualisieren.
 
-## Hinzufügen von Feldern zur Profildefinition  {#adding-fields-to-the-profile-definition}
+## Hinzufügen von Feldern zur Profildefinition {#adding-fields-to-the-profile-definition}
 
 Sie können der Profildefinition Felder hinzufügen. Beispielsweise zum Hinzufügen eines Felds „Lieblingsfarbe“ zum Geometrixx-Profil:
 
@@ -144,7 +144,7 @@ Sie können der Profildefinition Felder hinzufügen. Beispielsweise zum Hinzufü
 
 ## Profilstatus {#profile-states}
 
-Es gibt eine Reihe von Anwendungsfällen, bei denen es erforderlich ist zu wissen, ob sich ein Benutzer (oder besser sein Profil) in einem *spezifischen Status* befindet.
+Es gibt eine Reihe von Anwendungsfällen, in denen Sie wissen müssen, ob sich ein Benutzer (oder eher sein Profil) in einem *spezifischer Status* oder nicht.
 
 Dazu müssen Sie eine geeignete Eigenschaft im Benutzerprofil in einer Weise definieren, die:
 
@@ -184,9 +184,9 @@ Ein Workflow ist erforderlich, um die statusbezogenen Aktionen zu implementieren
 
 ## Profile und Benutzerkonten {#profiles-and-user-accounts}
 
-Profile werden im Inhalts-Repository als Teil des Benutzerkontos[a1/> gespeichert.](/help/sites-administering/user-group-ac-admin.md)
+Profile werden im Inhalts-Repository als Teil der[Benutzerkonto](/help/sites-administering/user-group-ac-admin.md).
 
-Das Profil befindet sich unter `/home/users/geometrixx`:
+Das Profil finden Sie unter `/home/users/geometrixx`:
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 
@@ -194,7 +194,7 @@ Bei einer Standardinstallation (Autor oder Veröffentlichen), hat jeder Lesezugr
 
 Diese Zugriffsrechte werden durch die folgende Platzhalter-ACL definiert:
 
-/home everyone allow jcr:read rep:glob = */profile*
+/home everyone allow jcr:read rep:glob = &#42;/profile&#42;
 
 Dadurch ist Folgendes möglich:
 
@@ -203,7 +203,7 @@ Dadurch ist Folgendes möglich:
 
 Wenn ein solcher Zugriff für Ihre Installation nicht geeignet ist, können Sie diese Standardeinstellungen ändern.
 
-Dies kann über die Registerkarte **[Zugriffssteuerung](/help/sites-administering/user-group-ac-admin.md#access-right-management)** erfolgen:
+Dies kann mithilfe der **[Zugriffssteuerung](/help/sites-administering/user-group-ac-admin.md#access-right-management)** tab:
 
 ![aclmanager](assets/aclmanager.png)
 
@@ -211,7 +211,7 @@ Dies kann über die Registerkarte **[Zugriffssteuerung](/help/sites-administerin
 
 Ein Bereich von Profilkomponenten zum Definieren der Profilanforderungen für Ihre Website ist ebenfalls vorhanden.
 
-### Geprüftes Kennwort-Feld  {#checked-password-field}
+### Geprüftes Kennwort-Feld {#checked-password-field}
 
 Diese Komponente bietet Ihnen zwei Felder für:
 

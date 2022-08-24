@@ -16,9 +16,9 @@ ht-degree: 53%
 
 | Version | Artikellink |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=en) |
+| AEM as a Cloud Service | [Klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=en) |
 | AEM 6.5 | Dieser Artikel |
-| AEM 6.4 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/enhanced-smart-tags.html?lang=en) |
+| AEM 6.4 | [Klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/enhanced-smart-tags.html?lang=en) |
 
 Organisationen, die mit digitalen Assets arbeiten, verwenden zunehmend taxonomiegesteuertes Vokabular in Asset-Metadaten. Im Grunde umfasst dieses eine Liste von Schlüsselbegriffen, die Mitarbeiter, Partner und Kunden häufig verwenden, um sich auf digitale Assets einer bestimmten Klasse zu beziehen und nach diesen zu suchen. Das Tagging von Assets mit einem taxonomiegesteuerten Vokabular stellt sicher, dass Assets leicht identifiziert und abgerufen werden können.
 
@@ -36,7 +36,7 @@ Smart Content Service ist ein Cloud-Service, der auf gehostet wird. [!DNL Adobe 
 
 Die wichtigsten Schritte beim Verwenden des Smart Content Service sind:
 
-* Einstieg 
+* Onboarding
 * Überprüfung von Assets und Tags (Taxonomiedefinition)
 * Training des Smart Content Service
 * Automatisches Tagging
@@ -78,7 +78,7 @@ Der Dienst wendet Smart-Tags auf Asset-Ausgabedarstellungen der folgenden MIME-T
 * `image/pjpeg`
 * `image/png`
 
-## Einstieg  {#onboarding}
+## Onboarding {#onboarding}
 
 Der Smart Content Service kann als Add-on zu [!DNL Experience Manager]. Nach dem Kauf wird eine E-Mail an den Administrator Ihres Unternehmens mit einem Link zu [!DNL Adobe I/O].
 

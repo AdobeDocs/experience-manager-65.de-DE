@@ -59,7 +59,7 @@ Die verfügbaren Standardkonfigurationen sind:
 
    Diese Konfiguration definiert die Optionen, die bei der Suche nach Produkten im Asset-Browser (beim Bearbeiten einer Seite) verfügbar sind.
 
-* **Seiten-Editor (Dynamic Media Classic  [früher Scene7] -Suche)**:
+* **Seiten-Editor (Dynamic Media Classic) [früher Scene7] search)**:
 
    Diese Konfiguration definiert die Optionen, die bei der Suche nach Scene7-Ressourcen im Asset-Browser (beim Bearbeiten einer Seite) verfügbar sind.
 
@@ -135,7 +135,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Datum  </td>
+   <td>Datum   </td>
    <td>Reglerbasierte Suche nach Assets basierend auf einer Datumseigenschaft.</td>
    <td>
     <ul>
@@ -145,7 +145,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Datum  Bereich </td>
+   <td>Datum   Bereich </td>
    <td>Suchen Sie Assets, die innerhalb eines bestimmten Bereichs für eine Datumseigenschaft erstellt wurden. Im Suchbereich können Sie das Start- und das Enddatum angeben.</td>
    <td>
     <ul>
@@ -179,7 +179,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Ausgeblendet  Filter</td>
+   <td>Ausgeblendet Filter</td>
    <td>Ein Filter für Eigenschaft und Wert, der für den Benutzer nicht sichtbar ist.</td>
    <td>
     <ul>
@@ -202,7 +202,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Optionen  Eigenschaft </td>
+   <td>Optionen Eigenschaft </td>
    <td>Suchen Sie nach einer Eigenschaft der Option.</td>
    <td>
     <ul>
@@ -214,7 +214,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Seite  Status </td>
+   <td>Seite Status </td>
    <td>Suchseiten nach ihrem Status.</td>
    <td>
     <ul>
@@ -225,7 +225,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Pfad </td>
+   <td>Pfad   </td>
    <td>Suchen Sie nach Assets, die sich unter einem bestimmten Pfad befinden.</td>
    <td>
     <ul>
@@ -260,7 +260,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Bereich Optionen </td>
+   <td>Bereichsoptionen </td>
    <td>Ein spezifisches Suchprädikat für Assets und dasselbe wie das allgemeine Reglerprädikat. Ist aufgrund von Problemen mit der Abwärtskompatibilität noch verfügbar.</td>
    <td>
     <ul>
@@ -330,17 +330,13 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
 >
 >* Die allgemeinen Suchprädikate sind hier definiert:
    >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
-   >
-   >
-   >
-
-* Sucheigenschaften, die nur mit siteadmin (klassische Benutzeroberfläche) verbunden sind, befinden sich unter:
+>
+>
+>* Sucheigenschaften, die nur mit siteadmin (klassische Benutzeroberfläche) verbunden sind, befinden sich unter:
    > `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
    >   * Diese sind veraltet und nur aus Gründen der Abwärtskompatibilität verfügbar.
-
 >
->
-Diese Angaben dienen nur als Referenz. Sie dürfen `/libs` nicht verändern.
+>Diese Angaben dienen nur als Referenz. Sie dürfen `/libs` nicht verändern.
 
 ### Prädikateinstellungen {#predicate-settings}
 
@@ -394,7 +390,7 @@ Identisch mit dem
 
 * **Veröffentlichungs- und Live Copy-Eigenschaftsname(n)** Die Bezeichnungen für die Veröffentlichungs- und Live Copy-Kontrollkästchen für das Sites-spezifische Prädikat.
 
-* &amp;ast; auf den Feldbezeichnungen auf der Registerkarte **Einstellungen** bedeutet, dass die Felder erforderlich sind. Wenn Sie das Feld leer lassen, wird eine Fehlermeldung angezeigt
+* &amp;ast; auf den Feldtiteln im **Einstellungen** tab bedeutet, dass die Felder erforderlich sind und, wenn leer gelassen, eine Fehlermeldung angezeigt wird
 
 ## Konfigurieren Ihrer Suchformulare {#configuring-your-search-forms}
 
@@ -451,7 +447,7 @@ Sie können Felder hinzufügen oder bearbeiten und ihre Einstellungen definieren
 
 1. **Schließen** Sie die Vorschau, um zur Konfiguration zurückzukehren und sie fertigzustellen.
 
-### Löschen eines Prädikatfelds   {#deleting-a-predicate-field}
+### Löschen eines Prädikatfelds {#deleting-a-predicate-field}
 
 1. [Öffnen Sie die angepasste Konfiguration](#creating-opening-a-customized-configuration) für die Aktualisierung.
 1. Wählen Sie das Prädikatsfeld (rechts) aus, öffnen Sie die Registerkarte **Einstellungen** und wählen Sie dann das Symbol **Löschen** (unten links) aus.
@@ -478,7 +474,7 @@ Das Löschen einer angepassten Konfiguration erfolgt über die Konsole:
 
 1. Die angepasste Konfiguration wird gelöscht und die Standardkonfiguration wird erneut aktiviert. (Sie erkennen dies am Vorhängeschlosssymbol, das wieder in der Konsole angezeigt wird.)
 
-### Hinzufügen von Optionsprädikaten   {#adding-options-predicates}
+### Hinzufügen von Optionsprädikaten {#adding-options-predicates}
 
 Mit Optionsprädikaten (Optionen, Optionseigenschaft) können Sie ein Element konfigurieren, nach dem gesucht werden soll. Sie werden normalerweise genutzt, um etwas direkt unter der Seite zu suchen, z. B. eine Eigenschaft auf dem Seitenknoten.
 

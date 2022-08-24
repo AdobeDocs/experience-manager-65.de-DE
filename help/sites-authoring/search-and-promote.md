@@ -24,8 +24,8 @@ Um Search&amp;Promote-Funktionen in Ihre Website zu integrieren, verwenden Sie d
 * Präzisierung der Suche
 * Banner
 
-Sie können Search&amp;Promote-Funktionen nur verwenden, wenn sie von Ihrem Adobe Experience Manager-Administrator aktiviert wurden. Siehe [Integration in Adobe Search&amp;Promote](/help/sites-administering/search-and-promote.md).
+Sie können Search&amp;Promote-Funktionen nur verwenden, wenn sie von Ihrem Adobe Experience Manager-Administrator aktiviert wurden. Siehe [Integration mit Adobe Search&amp;Promote](/help/sites-administering/search-and-promote.md).
 
 >[!NOTE]
 >
->Details zum Hinzufügen von Search&amp;Promote-Funktionen zu Ihrer Seite finden Sie in der klassischen Dokumentation zum Authoring der Benutzeroberfläche. Weitere Informationen finden Sie unter [Hinzufügen von Search &amp; Promote-Funktionen zu Ihrer Seite](/help/sites-classic-ui-authoring/classic-feature-search-promote.md) .
+>Details zum Hinzufügen von Search&amp;Promote-Funktionen zu Ihrer Seite finden Sie in der klassischen Dokumentation zum Authoring der Benutzeroberfläche. Siehe [Hinzufügen von Search &amp; Promote-Funktionen zu Ihrer Seite](/help/sites-classic-ui-authoring/classic-feature-search-promote.md) für weitere Informationen.

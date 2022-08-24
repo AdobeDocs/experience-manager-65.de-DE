@@ -1,8 +1,8 @@
 ---
 title: Bearbeiten von Launches
-seo-title: Bearbeiten von Launches
+seo-title: Editing Launches
 description: 'Wenn ein Launch für eine Seite (oder eine Reihe von Seiten) erstellt wurde, können Sie den Inhalt in der Launch Copy der Seiten bearbeiten. '
-seo-description: 'Wenn ein Launch für eine Seite (oder eine Reihe von Seiten) erstellt wurde, können Sie den Inhalt in der Launch Copy der Seiten bearbeiten. '
+seo-description: After creating a launch for your page (or set of pages) you can edit the content in the launch copy of the page(s).
 uuid: 1f2c2e53-73a3-4bd7-b2c7-425491bc0118
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -14,7 +14,7 @@ legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '525'
 ht-degree: 99%
 
 ---
@@ -35,7 +35,7 @@ Wenn ein Launch für eine Seite (oder eine Reihe von Seiten) erstellt wurde, kö
 >* Warnung: Bei dieser Seite handelt es sich um die Quellseite eines Launches. Das Verschieben der Seite ist nicht zulässig.
 
 
-### Bearbeiten von Launch-Seiten auf der Basis einer Live Copy  {#editing-launch-pages-subject-to-a-live-copy}
+### Bearbeiten von Launch-Seiten auf der Basis einer Live Copy {#editing-launch-pages-subject-to-a-live-copy}
 
 Wenn Ihr Launch auf einer [Live Copy](/help/sites-administering/msm.md) basiert, sehen Sie Folgendes:
 
@@ -71,7 +71,7 @@ Sie können jederzeit Seiten zum Bereich der Quellseiten für einen Launch hinzu
 
 1. Sie können auf den Launch wie folgt zugreifen und ihn auswählen:
 
-   * die [Konsole „Launches“](/help/sites-authoring/launches.md#the-launches-console):
+   * über die [Konsole „Launches“](/help/sites-authoring/launches.md#the-launches-console):
 
       * Wählen Sie **Bearbeiten** aus.
    * [Verweise (Sites-Konsole)](/help/sites-authoring/launches.md#launches-in-references-sites-console) zum Anzeigen verfügbarer Aktionen:
@@ -86,13 +86,13 @@ Sie können jederzeit Seiten zum Bereich der Quellseiten für einen Launch hinzu
    >
    >Damit Seiten zu einem Launch hinzugefügt werden können, müssen sich diese unter einem gemeinsamen Sprachstamm befinden, d. h. innerhalb einer einzelnen Website.
 
-## Bearbeiten einer Launch-Konfiguration  {#editing-a-launch-configuration}
+## Bearbeiten einer Launch-Konfiguration {#editing-a-launch-configuration}
 
 Sie können die Eigenschaften für einen Launch jederzeit bearbeiten:
 
 1. Sie können auf den Launch wie folgt zugreifen und ihn auswählen:
 
-   * die [Konsole „Launches“](/help/sites-authoring/launches.md#the-launches-console):
+   * über die [Konsole „Launches“](/help/sites-authoring/launches.md#the-launches-console):
 
       * Wählen Sie **Eigenschaften** aus.
    * [Verweise (Sites-Konsole)](/help/sites-authoring/launches.md#launches-in-references-sites-console) zum Anzeigen verfügbarer Aktionen:
@@ -105,7 +105,7 @@ Sie können die Eigenschaften für einen Launch jederzeit bearbeiten:
 
    Unter [Launches – Reihenfolge der Ereignisse](/help/sites-authoring/launches.md#launches-the-order-of-events) finden Sie Informationen zum Zweck und zur Interaktion der Felder **Launch-Datum** und **Bereit für Produktion**.
 
-## Ermitteln des Launch-Status einer Seite  {#discovering-the-launch-status-of-a-page}
+## Ermitteln des Launch-Status einer Seite {#discovering-the-launch-status-of-a-page}
 
 Der Status wird angezeigt, wenn Sie einen bestimmten Launch auf der Registerkarte „Verweise“ auswählen (siehe [Launches in Verweisen (Sites-Konsole))](/help/sites-authoring/launches.md#launches-in-references-sites-console).
 

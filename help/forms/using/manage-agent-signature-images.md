@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Agentsignaturbildern
+title: Verwalten von Agentenunterschriftbildern
 seo-title: Manage agent signature images
 description: Nachdem Sie eine Briefvorlage erstellt haben, können Sie diese verwenden, um Korrespondenz in AEM Forms zu erstellen, indem Sie Daten, Inhalte und Anhänge verwalten.
 seo-description: After you have created a letter template, you can use it to create correspondence in AEM Forms by managing data, content, and attachments.
@@ -12,13 +12,13 @@ docset: aem65
 feature: Correspondence Management
 exl-id: f044ed75-bb72-4be1-aef6-2fb3b2a2697b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 100%
 
 ---
 
-# Verwalten von Agentsignaturbildern{#manage-agent-signature-images}
+# Verwalten von Agentenunterschriftbildern{#manage-agent-signature-images}
 
 ## Übersicht {#overview}
 

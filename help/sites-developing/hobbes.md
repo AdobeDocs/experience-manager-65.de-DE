@@ -1,8 +1,8 @@
 ---
 title: Testen der Benutzeroberfläche
-seo-title: Testen der Benutzeroberfläche
+seo-title: Testing Your UI
 description: AEM stellt ein Framework bereit, mit dem Sie das Testen Ihrer AEM-Benutzeroberfläche automatisieren können.
-seo-description: AEM stellt ein Framework bereit, mit dem Sie das Testen Ihrer AEM-Benutzeroberfläche automatisieren können.
+seo-description: AEM provides a framework for automating tests for your AEM UI
 uuid: 408a60b5-cba9-4c9f-abd3-5c1fb5be1c50
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '737'
 ht-degree: 73%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 73%
 >
 >Ab AEM 6.5 wird das UI-Test-Framework hobbes.js nicht mehr unterstützt. Adobe plant keine weiteren Verbesserungen und empfiehlt Kunden die Verwendung der Selenium-Automatisierung.
 >
->Siehe [Veraltete und entfernte Funktionen](/help/release-notes/deprecated-removed-features.md).
+>Siehe [Eingestellte und entfernte Funktionen](/help/release-notes/deprecated-removed-features.md).
 
 AEM stellt ein Framework bereit, mit dem Sie das Testen Ihrer AEM-Benutzeroberfläche automatisieren können. Mit diesem Framework können Sie Tests der Benutzeroberfläche direkt in einem Webbrowser schreiben und ausführen. Das Framework stellt eine JavaScript-API zum Erstellen von Tests bereit.
 
@@ -32,16 +32,16 @@ Das AEM-Test-Framework verwendet Hobbes.js, eine in JavaScript geschriebene Test
 
 >[!NOTE]
 >
->Ausführliche Informationen zur API finden Sie in der Dokumentation zu Hobbes.js [Dokumentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html) .
+>Siehe Hobbes.js [Dokumentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html) für ausführliche Informationen zur API.
 
 ## Die Struktur von Tests {#structure-of-tests}
 
 Wenn Sie automatisierte Tests in AEM verwenden, sollten Sie die folgenden Begriffe kennen:
 
-| Aktion | Eine **Aktion** ist eine bestimmte Aktivität auf einer Webseite, z. B. das Klicken auf einen Link oder eine Schaltfläche. |
+| Aktion | Ein **Aktion** ist eine bestimmte Aktivität auf einer Webseite, z. B. das Klicken auf einen Link oder eine Schaltfläche. |
 |---|---|
-| Testfall | Ein **Testfall** ist eine bestimmte Situation, die aus einer oder mehreren **Aktionen** bestehen kann. |
-| Testsuite | Eine **Test Suite** ist eine Gruppe verwandter **Testfälle**, die gemeinsam einen bestimmten Anwendungsfall testen. |
+| Testfall | A **Testfall** ist eine bestimmte Situation, die aus einer oder mehreren **Aktionen**. |
+| Testsuite | A **Test Suite** ist eine Gruppe verwandter **Testfälle** die zusammen einen bestimmten Anwendungsfall testen. |
 
 ## Ausführen von Tests {#executing-tests}
 
@@ -61,11 +61,11 @@ Wenn Sie die Konsole öffnen, werden die Test-Suites links aufgeführt, zusammen
 
 Test-Suites können einzeln ausgeführt werden. Wenn Sie eine Test-Suite ausführen, ändert sich die Seite, während die Testfälle und ihre Aktion ausgeführt werden, und die Ergebnisse werden nach dem Abschluss des Tests angezeigt. Symbole zeigen die Ergebnisse an.
 
-Das Häkchen-Symbol kennzeichnet einen erfolgreichen Test:
+Das Häkchen-Symbol kennzeichnet einen erfolgreichen Test: 
 
 ![](do-not-localize/chlimage_1-2.png)
 
-Das X-Symbol steht für einen gescheiterten Test:
+Eine X-Symbol zeigt einen fehlgeschlagenen Test an:
 
 ![](do-not-localize/chlimage_1-3.png)
 
@@ -97,19 +97,19 @@ Test-Suites werden nacheinander in der Reihenfolge ausgeführt, in der sie in de
 
    ![](do-not-localize/chlimage_1-5.png)
 
-1. Um die Ergebnisse jedes Testfalls anzuzeigen, tippen oder klicken Sie auf den Titel des Testfalls. Durch Tippen oder Klicken auf den Namen Ihres Tests im Bedienfeld **Ergebnis** werden alle Details angezeigt.
+1. Um die Ergebnisse jedes Testfalls anzuzeigen, tippen oder klicken Sie auf den Titel des Testfalls. Tippen oder klicken Sie auf den Namen Ihres Tests im **Ergebnis** -Bedienfeld werden alle Details angezeigt.
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
 ## Erstellen und Verwenden einer einfachen Test-Suite {#creating-and-using-a-simple-test-suite}
 
-Das folgende Verfahren führt Sie durch die Erstellung und Ausführung einer Test Suite mit [We.Retail-Inhalt](/help/sites-developing/we-retail.md). Sie können den Test jedoch einfach ändern, um eine andere Webseite zu verwenden.
+Das folgende Verfahren führt Sie durch die Erstellung und Ausführung einer Test Suite mithilfe von [We.Retail-Inhalt](/help/sites-developing/we-retail.md), Sie können den Test jedoch einfach ändern, um eine andere Webseite zu verwenden.
 
 Vollständige Informationen zum Erstellen eigener Test-Suites finden Sie in der [Dokumentation zur Hobbes.js-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html).
 
 1. Öffnen Sie CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
-1. Klicken Sie mit der rechten Maustaste auf den Ordner `/etc/clientlibs` und klicken Sie auf **Erstellen > Ordner erstellen**. Geben Sie als Namen `myTests` ein und klicken Sie auf **OK**.
-1. Klicken Sie mit der rechten Maustaste auf den Ordner `/etc/clientlibs/myTests` und klicken Sie auf **Erstellen > Knoten erstellen**. Geben Sie die folgenden Eigenschaftswerte ein und klicken Sie dann auf **OK**:
+1. Klicken Sie mit der rechten Maustaste auf die `/etc/clientlibs` Ordner und klicken Sie auf **Erstellen > Ordner erstellen**. Geben Sie als Namen `myTests` ein und klicken Sie auf **OK**.
+1. Klicken Sie mit der rechten Maustaste auf die `/etc/clientlibs/myTests` Ordner und klicken Sie auf **Erstellen > Knoten erstellen**. Geben Sie die folgenden Eigenschaftswerte ein und klicken Sie dann auf **OK**:
 
    * Name: `myFirstTest`
    * Typ: `cq:ClientLibraryFolder`
@@ -129,10 +129,10 @@ Vollständige Informationen zum Erstellen eigener Test-Suites finden Sie in der 
    >Um adaptive Formulare zu testen, fügen Sie die folgenden Werte den Kategorien (categories) und Abhängigkeiten (dependencies) hinzu. Beispiel:
    >
    >
-   >**categories**:  `granite.testing.hobbes.tests, granite.testing.hobbes.af.commons`
+   >**categories**: `granite.testing.hobbes.tests, granite.testing.hobbes.af.commons`
    >
    >
-   >**dependencies**:  `granite.testing.hobbes.testrunner, granite.testing.hobbes.af`
+   >**dependencies**: `granite.testing.hobbes.testrunner, granite.testing.hobbes.af`
 
 1. Klicken Sie auf **Alle speichern**.
 1. Klicken Sie mit der rechten Maustaste auf den Knoten `myFirstTest` und klicken Sie auf **Erstellen > Datei erstellen**. Nennen Sie die Datei `js.txt` und klicken Sie auf **OK**.
@@ -143,7 +143,7 @@ Vollständige Informationen zum Erstellen eigener Test-Suites finden Sie in der 
    myTestSuite.js
    ```
 
-1. Klicken Sie auf **Alle speichern** und schließen Sie dann die Datei `js.txt`.
+1. Klicken Sie auf **Alle speichern** und schließen Sie dann die Datei `js.txt`
 1. Klicken Sie mit der rechten Maustaste auf den Knoten `myFirstTest` und klicken Sie auf **Erstellen > Datei erstellen**. Nennen Sie die Datei `myTestSuite.js` und klicken Sie auf **OK**.
 1. Kopieren Sie den folgenden Code in die Datei `myTestSuite.js` und speichern Sie die Datei anschließend:
 

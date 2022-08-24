@@ -60,7 +60,7 @@ ht-degree: 84%
    + [Erstellen von Launches](classic-launches-creating.md)
    + [Bearbeiten von Launches](classic-launches-editing.md)
    + [Weiterleiten von Launches](classic-launches-promoting.md)
-+ Personalisierung {#personalization}
++ Personalisierung    {#personalization}
    + [Grundlegendes zur Segmentierung](classic-personalization-campaigns-segmentation.md)
    + [Kampagnenmanagement](classic-personalization-campaigns.md)
    + [Landing Pages](classic-personalization-campaigns-landingpage.md)
@@ -84,6 +84,6 @@ ht-degree: 84%
    + [Bereitstellen von Dynamic Media-Assets](dynamic-media-assets-delivering.md)
    + [Hinzufügen von Dynamic Media-Assets zu Seiten](dynamic-media-assets-adding-to-page.md)
    + [Hinzufügen von Scene7-Features zu Ihrer Seite](manage-assets-classic-s7.md)
-   + [Video](manage-assets-classic-s7-video.md)
+   + [Video   ](manage-assets-classic-s7-video.md)
    + [Arbeiten mit Dynamic Media](dynamic-media-assets.md)
    + [Benennungskonventionen für Assets-Tests](asset-naming-conventions.md)

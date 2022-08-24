@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 598a9a03-3773-4620-8867-1f754d8ca031
 exl-id: c5905272-7d09-47e4-8b35-4cc25a148477
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ Weitere Informationen und Anweisungen zu Acrobat Reader DC Extensions finden Sie
 
 ## Berechtigung importieren {#import-a-credential}
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
+1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
 1. Klicken Sie auf „Importieren“. Wählen Sie unter „Trust Store-Typ“ eine der folgenden Optionen:
 
    * **Berechtigung für die Dokumentsignierung:** Eine Berechtigung, die zum Hinzufügen einer digitalen Signatur zu einem Dokument dient.
@@ -52,7 +52,7 @@ Weitere Informationen und Anweisungen zu Acrobat Reader DC Extensions finden Sie
 
 Berechtigungen werden als P12-Dateien im PKCS#12-Format exportiert.
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
+1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
 1. Klicken Sie auf den Aliasnamen der Berechtigung, die exportiert werden soll, und anschließend auf „Exportieren“.
 1. Geben Sie in das Feld „Kennwort“ das Kennwort ein. Dieses Kennwort ist neu und dient zum Verschlüsseln der exportierten Berechtigung.
 1. Klicken Sie auf „Exportieren“, befolgen Sie die Anweisungen zum Exportieren der Berechtigung und klicken Sie anschließend auf „OK“.
@@ -61,13 +61,13 @@ Berechtigungen werden als P12-Dateien im PKCS#12-Format exportiert.
 
 Nachdem eine Berechtigung importiert wurde, können der Aliasname und der Trust Store-Typ bearbeitet werden.
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
+1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
 1. Klicken Sie auf den Aliasnamen der Berechtigung, die bearbeitet werden soll.
 1. Klicken Sie auf „Berechtigung aktualisieren“.
 1. Bearbeiten Sie den Aliasnamen und den Trust Store-Typ nach Bedarf und klicken Sie auf „OK“.
 
 ## Berechtigung löschen {#delete-a-credential}
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
+1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
 1. Aktivieren Sie die Kontrollkästchen der Berechtigungen, die gelöscht werden sollen.
 1. Klicken Sie auf „Löschen“ und dann auf „OK“.

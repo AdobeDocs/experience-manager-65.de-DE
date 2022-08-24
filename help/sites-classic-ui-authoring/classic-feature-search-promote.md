@@ -1,8 +1,8 @@
 ---
 title: Hinzufügen von Search&Promote-Funktionen zu Ihrer Seite
-seo-title: Hinzufügen von Search&Promote-Funktionen zu Ihrer Seite
+seo-title: Adding Search&Promote Features To Your Page
 description: Wenn Sie Search&Promote-Funktionen in Ihre Seite integrieren, können Sie mit den Search&Promote-Komponenten Funktionen, wie die Keyword-Suche, eine erweiterte Suchfunktion auf der Seite mit den Suchergebnissen sowie Banner, zu Ihren Seiten hinzufügen.
-seo-description: Wenn Sie Search&Promote-Funktionen in Ihre Seite integrieren, können Sie mit den Search&Promote-Komponenten Funktionen, wie die Keyword-Suche, eine erweiterte Suchfunktion auf der Seite mit den Suchergebnissen sowie Banner, zu Ihren Seiten hinzufügen.
+seo-description: Integrating Search&Promote capabilities in your web site, you can use the Search&Promote components to add features to your pages such as keyword search, search results page search refinement, and banners.
 uuid: 8cd3c143-cb0b-4eb0-931d-9d447ea3c950
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: cf5849c7-1c6a-46d8-9cc4-f1f20a507a0c
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '1255'
-ht-degree: 75%
+source-wordcount: '1216'
+ht-degree: 74%
 
 ---
 
@@ -27,7 +27,7 @@ Um Search&amp;Promote-Funktionen in Ihre Website zu integrieren, verwenden Sie d
 * Präzisierung der Suche
 * Banner
 
-Sie können Search&amp;Promote-Funktionen nur verwenden, wenn sie von Ihrem Adobe Experience Manager-Administrator aktiviert wurden. Siehe [Integration in Adobe Search&amp;Promote](/help/sites-administering/search-and-promote.md).
+Sie können Search&amp;Promote-Funktionen nur verwenden, wenn sie von Ihrem Adobe Experience Manager-Administrator aktiviert wurden. Siehe [Integration mit Adobe Search&amp;Promote](/help/sites-administering/search-and-promote.md).
 
 Facetten werden auf dem Search&amp;Promote-Server konfiguriert, genau wie die von jeder Komponente bereitgestellten Informationen. Die folgende Tabelle enthält eine kurze Beschreibung der einzelnen Komponenten. Die nachfolgenden Abschnitte enthalten ausführliche Informationen zu deren Verwendung.
 
@@ -93,9 +93,9 @@ Sie können die folgenden Komponenteneigenschaften im Bearbeitungsmodus konfigur
 
 ### Aktivieren der Filterung der Ergebnisse nach Facetten {#enabling-the-filtering-of-results-by-facets}
 
-Sie können Benutzern die Filterung von Suchergebnissen durch Facetten ermöglichen. Die Komponenten **[!UICONTROL Checkbox List Facet]**, **[!UICONTROL Dropdown-Facette]** und **[!UICONTROL Link List Facet]** ermöglichen es Benutzern, eine oder mehrere Facetten für die Filterung auszuwählen. Bei Verwendung dieser Komponenten sollten Sie auch die Komponente **Breadcrumbs** einschließen. Breadcrumbs zeigen die aktuell verwendeten Filter an.
+Sie können Benutzern die Filterung von Suchergebnissen durch Facetten ermöglichen. Die **[!UICONTROL Facette der Kontrollkästchen-Liste]**, **[!UICONTROL Dropdown-Facette]** und **[!UICONTROL Facette der Link-Liste]** -Komponenten ermöglichen es Benutzern, eine oder mehrere Facetten zum Filtern auszuwählen. Bei Verwendung dieser Komponenten sollten Sie auch die Komponente **Breadcrumbs** einschließen. Breadcrumbs zeigen die aktuell verwendeten Filter an.
 
-Die Komponenten **[!UICONTROL Checkbox List Facet]**, **[!UICONTROL Dropdown Facet]** und **[!UICONTROL Link List Facet]** verfügen jeweils über die folgenden Eigenschaften, die Sie im Modus **Bearbeiten** konfigurieren:
+Die **[!UICONTROL Facette der Kontrollkästchen-Liste]**, **[!UICONTROL Dropdown-Facette]** und **[!UICONTROL Facette der Link-Liste]** Komponenten verfügen jeweils über die folgenden Eigenschaften, die Sie in **Bearbeiten** mode:
 
 * **Facettenname**: Der Name der zur Filterung verwendeten Facette.
 
@@ -125,12 +125,12 @@ Die Komponente **[!UICONTROL Breadcrumbs]** ermöglicht es Kunden, die aktuell a
 
 Sie können die folgenden Eigenschaften für Breadcrumbs im Bearbeitungsmodus konfigurieren, um das Erscheinungsbild der Komponente anzupassen:
 
-* Trennzeichen: Definieren Sie das Zeichen oder die Zeichenfolge für die Verwendung als Trennzeichen zwischen den einzelnen Breadcrumbs. Das Feld **[!UICONTROL Trennzeichen]** akzeptiert jede Zeichenkette als Eingabe. Die Standardeinstellung ist: „>“ (ohne die Anführungszeichen)
-* Nachfolgende Trennzeichen: Definieren Sie ein Zeichen oder eine Zeichenfolge für die Anzeige am Ende der Breadcrumbs. Das Feld **[!UICONTROL Nachfolgende Trennzeichen]** akzeptiert jede Zeichenkette als Eingabe. Die Standardeinstellung für dieses Feld ist *leer* (d. h. am Ende der Breadcrumb-Zeile wird nichts angezeigt).
+* Trennzeichen: Definieren Sie das Zeichen oder die Zeichenfolge für die Verwendung als Trennzeichen zwischen den einzelnen Breadcrumbs. Die **[!UICONTROL Trennzeichen]** -Feld akzeptiert eine beliebige Zeichenfolge als Eingabe. Die Standardeinstellung ist: „>“ (ohne die Anführungszeichen)
+* Nachfolgende Trennzeichen: Definieren Sie ein Zeichen oder eine Zeichenfolge für die Anzeige am Ende der Breadcrumbs. Die **[!UICONTROL Nachfolgende Trennzeichen]** -Feld akzeptiert eine beliebige Zeichenfolge als Eingabe. Die Standardeinstellung für dieses Feld ist &#42;blank&#42; (d. h. am Ende der Breadcrumb-Linie wird nichts angezeigt)
 
 ### Suchfelder hinzufügen {#adding-search-boxes}
 
-Die Komponente **[!UICONTROL Suche]** ermöglicht Kunden die Durchführung von Suchbegriffsuchen. Fügen Sie **[!UICONTROL Search]**-Komponenten zu jeder Seite hinzu, auf der Sie Zugriff auf die Suche gewähren möchten.
+Die **[!UICONTROL Suche]** -Komponente können Kunden Suchbegriffe suchen. Hinzufügen **[!UICONTROL Suche]** Komponenten zu jeder Seite hinzufügen, auf der Sie Zugriff auf die Suche gewähren möchten.
 
 Konfigurieren Sie die folgenden Eigenschaften im Bearbeitungsmodus, damit Sie das Laufzeitverhalten steuern können:
 
@@ -141,9 +141,9 @@ Konfigurieren Sie die folgenden Eigenschaften im Bearbeitungsmodus, damit Sie da
 
 ### Hinzufügen von Bannern {#adding-banners}
 
-Die Komponente **[!UICONTROL Banner]** zeigt Bannerwerbung entsprechend den Search&amp;Promote des Kunden an. Logik auf dem Search&amp;Replace-Server ermittelt, welches Banner angezeigt wird. Beispielsweise könnte bei einer Suche nach Jeans ein Banner angezeigt werden, das mit Mode zu tun hat. Durch Filtern auf die Herrenabteilung könnte die Auswahl des Banners noch weiter verfeinert werden.
+Die **[!UICONTROL Banner]** -Komponente zeigt Banneranzeigen entsprechend den Search&amp;Promote des Kunden an. Logik auf dem Search&amp;Replace-Server ermittelt, welches Banner angezeigt wird. Beispielsweise könnte bei einer Suche nach Jeans ein Banner angezeigt werden, das mit Mode zu tun hat. Durch Filtern auf die Herrenabteilung könnte die Auswahl des Banners noch weiter verfeinert werden.
 
-Die Komponente **[!UICONTROL Banner]** bietet eine konfigurierbare Eigenschaft namens &quot;Bannerbereich&quot;. Klicken Sie im Bearbeitungsmodus auf einen der Eigenschaftswerte, um die Darstellungsweise des Banners festzulegen. Der Search&amp;Promote-Service legt die Liste der Werte fest, aus denen Sie auswählen können.
+Die **[!UICONTROL Banner]** -Komponente bietet eine konfigurierbare Eigenschaft mit dem Namen Bannerbereich. Klicken Sie im Bearbeitungsmodus auf einen der Eigenschaftswerte, um die Darstellungsweise des Banners festzulegen. Der Search&amp;Promote-Service legt die Liste der Werte fest, aus denen Sie auswählen können.
 
 ### Beispiel für Search&amp;Promote-Suchseite {#example-search-promote-search-page}
 

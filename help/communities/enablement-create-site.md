@@ -248,7 +248,7 @@ In diesem Beispiel wird die Gruppe `Community Ski Class` wird als Mitglied der G
 * Geben Sie &#39;quinn&#39; in das Suchfeld ein
 * Auswählen *Quinn Harper* (Kontakt für Aktivierungsressource)
 
-* Klicken Sie auf **Speichern**
+* Wählen Sie **Speichern** aus
 
 ![edit-group-settings](assets/edit-group-settings.png)
 
@@ -358,7 +358,7 @@ Wählen Sie das Bedienfeld STRUKTUR aus, um einen Katalog hinzuzufügen oder ein
 
 * **Alle Namespaces auswählen**: Behalten Sie die Standardeinstellung bei.
 
-* Klicken Sie auf **Speichern**.
+* Wählen Sie **Speichern** aus.
 
 ![modify-site-structure](assets/modify-site-structure.png)
 

@@ -1,8 +1,8 @@
 ---
 title: Konfigurieren von Rückgängig-Vorgängen zur Seitenbearbeitung
-seo-title: Konfigurieren von Rückgängig-Vorgängen zur Seitenbearbeitung
+seo-title: Configuring Undo for Page Editing
 description: Erfahren Sie, wie Sie die Unterstützung für Rückgängig-Vorgänge zur Seitenbearbeitung in AEM konfigurieren können.
-seo-description: Erfahren Sie, wie Sie die Unterstützung für Rückgängig-Vorgänge zur Seitenbearbeitung in AEM konfigurieren können.
+seo-description: Learn how to configure Undo support for page editing in AEM.
 uuid: e5a49587-a2a6-41d5-b449-f7a8f7e4cee6
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 3cc7efc5-bcb2-41c9-b78b-308f6b7a298e
 exl-id: 2cf3ac3f-ee17-480d-a32a-c57631502693
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '702'
 ht-degree: 67%
 
 ---
@@ -23,7 +23,7 @@ Der [OSGi-Dienst](/help/sites-deploying/configuring-osgi.md) **Day CQ WCM Undo C
 
 ## Standardkonfiguration {#default-configuration}
 
-In einer Standardinstallation werden die Standardeinstellungen als Eigenschaften auf dem Knoten `sling:OsgiConfig`definiert:
+In einer Standardinstallation werden die Standardeinstellungen als Eigenschaften für die `sling:OsgiConfig`node:
 
 `/libs/wcm/core/config.author/com.day.cq.wcm.undo.UndoConfig`
 
@@ -63,7 +63,7 @@ Im Folgenden werden die Eigenschaften aufgelistet, die in der Web-Konsole angeze
 
    >[!NOTE]
    >
-   >Standardmäßig können nur Administratoren auf den Knoten `/var/undo` zugreifen. Autoren können nur Rückgängig- und Wiederherstellen-Vorgänge für Binärdaten durchführen, wenn ihnen Zugriffsberechtigungen für die Rückgängig-Binärdaten gewährt wurden.
+   >Standardmäßig können nur Administratoren auf die `/var/undo` Knoten. Autoren können nur Rückgängig- und Wiederherstellen-Vorgänge für Binärdaten durchführen, wenn ihnen Zugriffsberechtigungen für die Rückgängig-Binärdaten gewährt wurden.
 
 * **Min. validity**
 ( 
@@ -104,7 +104,7 @@ Im Folgenden werden die Eigenschaften aufgelistet, die in der Web-Konsole angeze
    * **Standard**: `Selected`
    * **Typ**: `Boolean`
 
-* **Marker mode**
+* **Markierungsmodus**
 ( 
 `cq.wcm.undo.markermode`)
 
@@ -117,7 +117,7 @@ Im Folgenden werden die Eigenschaften aufgelistet, die in der Web-Konsole angeze
 
 
 * **Gute Komponenten**
- ( 
+( 
 `cq.wcm.undo.whitelist`)
 
    * **Beschreibung**: Eine Liste von Komponenten, für die die Befehle „Rückgängig“ und „Wiederherstellen“ angewendet werden sollen. Fügen Sie dieser Liste Komponentenpfade hinzu, wenn sie korrekt mit „Rückgängig“/„Wiederherstellen“ funktionieren. Hängen Sie ein Sternchen (&amp;ast;) an, um eine Gruppe von Komponenten anzugeben:
@@ -136,7 +136,7 @@ Im Folgenden werden die Eigenschaften aufgelistet, die in der Web-Konsole angeze
 
 
 * **Ungültige Komponenten**
- ( 
+( 
 `cq.wcm.undo.blacklist`)
 
    * **Beschreibung**: Eine Liste von Komponenten und/oder Komponentenvorgängen, die vom Befehl &quot;Rückgängig&quot;nicht betroffen sein sollen. Fügen Sie Komponenten und Komponentenvorgänge hinzu, die sich beim Anwenden des Befehls „Rückgängig“ nicht ordnungsgemäß verhalten:

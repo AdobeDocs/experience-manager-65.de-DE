@@ -1,8 +1,8 @@
 ---
 title: Berichte-Konsole
-seo-title: Berichte-Konsole
+seo-title: Reports Console
 description: Erfahren Sie, wie Sie auf Berichte zugreifen können
-seo-description: Erfahren Sie, wie Sie auf Berichte zugreifen können
+seo-description: Learn how to access reports
 uuid: 7bb15a15-077b-4bfb-aaf4-50fddc67f237
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -14,7 +14,7 @@ role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '618'
 ht-degree: 8%
 
 ---
@@ -29,7 +29,7 @@ Die verschiedenen Berichte sind im Allgemeinen:
 
 * [Zuweisungsbericht](#assignments-report)
 
-   Für eine [Aktivierungs-Community](/help/communities/overview.md#enablement-community) bietet eine Übersicht über den Fortschritt der Lernenden bei ihrer Zuweisung, einschließlich eines zugehörigen Punkts bei der Implementierung des SCORM-Standards.
+   Für [Aktivierungs-Community](/help/communities/overview.md#enablement-community)bietet einen Überblick über den Fortschritt der Lernenden bei ihrer Zuweisung, einschließlich eines zugehörigen Punkts bei der Implementierung des SCORM-Standards.
 
 * [Ansichtsbericht](#views-report)
 
@@ -39,7 +39,7 @@ Die verschiedenen Berichte sind im Allgemeinen:
 
    Bietet eine Grafik verschiedener Arten von Beiträgen von Community-Mitgliedern zu jeder Community-Site.
 
-Wenn [Adobe Analytics aktiviert ist](/help/communities/sites-console.md#analytics), enthalten Berichte die Anzahl der Ansichten, Wiedergaben, Kommentare und Bewertungen für jede Aktivierungsressource im Zeitverlauf.
+Wann [Adobe Analytics ist aktiviert](/help/communities/sites-console.md#analytics)enthalten, enthalten Berichte die Anzahl der Ansichten, Wiedergaben, Kommentare und Bewertungen für jede Aktivierungsressource im Zeitverlauf.
 
 Tabellarische Berichte können zur nachfolgenden Verarbeitung im CSV-Format exportiert werden.
 
@@ -47,7 +47,7 @@ Tabellarische Berichte können zur nachfolgenden Verarbeitung im CSV-Format expo
 
 ### Berichte für Community-Sites {#reports-for-community-sites}
 
-* Über die globale Navigation: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** > **[!UICONTROL Berichte]**
+* Über die globale Navigation: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** >  **[!UICONTROL Berichte]**
 
 * Wählen Sie aus:
 
@@ -67,13 +67,13 @@ Tabellarische Berichte können zur nachfolgenden Verarbeitung im CSV-Format expo
 
 ### Berichte für Aktivierungsressourcen und Lernpfade {#reports-for-enablement-resources-and-learning-paths}
 
-* Über die globale Navigation: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** > **[!UICONTROL Ressourcen]**
+* Über die globale Navigation: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** >  **[!UICONTROL Ressourcen]**
 
 * Wählen Sie eine vorhandene Aktivierungs-Community-Site aus:
 
-   * Wählen Sie das Symbol **Bericht** aus, um Berichte zu erstellen, die alle Aktivierungsressourcen abdecken.
+   * Auswählen **Bericht** zum Generieren von Berichten, die alle Aktivierungsressourcen abdecken.
    * Wählen Sie einen Lernpfad für die Aktivierung aus.
-   * Wählen Sie das Symbol **Bericht** aus, um Berichte für Folgendes zu generieren:
+   * Auswählen **Bericht** -Symbol zum Generieren von Berichten für:
 
       * Die enthaltenen Aktivierungsressourcen.
       * Die dem Lernpfad zugewiesenen Lernenden.
@@ -88,7 +88,7 @@ Tabellarische Berichte können zur nachfolgenden Verarbeitung im CSV-Format expo
       * Anzahl der abgegebenen Kommentare
       * Sternbewertung
 
-Weitere Informationen finden Sie im Abschnitt [Berichte](/help/communities/resources.md#report) der Ressourcenkonsole.
+Weitere Informationen finden Sie unter [Berichtabschnitt](/help/communities/resources.md#report) in der Ressourcenkonsole.
 
 ## Zuweisungsbericht {#assignments-report}
 
@@ -100,7 +100,7 @@ Der Bericht enthält Informationen über ihren Fortschritt sowie etwaige Komment
 
 Wählen Sie die Kriterien für den Bericht aus:
 
-* **Website**
+* **Site**
 
    Wählen Sie eine Aktivierungs-Community-Site aus.
 
@@ -114,7 +114,7 @@ Wählen Sie die Kriterien für den Bericht aus:
 
    Wählen Sie aus den Aktivierungsressourcen, die den ausgewählten Lernenden zugewiesen sind.
 
-Wählen Sie **Generate** aus, um den Bericht zu erstellen:
+Auswählen **Erzeugen** , um den Bericht zu erstellen:
 
 ![generate-report](assets/generate-assignment-report.png)
 
@@ -126,7 +126,7 @@ Mit der Konsole &quot;Ansichten&quot;können Berichte zu Seitenansichten von Com
 
 Wählen Sie die Kriterien für den Bericht aus:
 
-* **[!UICONTROL Website]**
+* **[!UICONTROL Site]**
 
    Wählen Sie eine Community-Site aus.
 
@@ -143,7 +143,7 @@ Wählen Sie die Kriterien für den Bericht aus:
    * Letzte 90 Tage
    * Letztes Jahr
 
-Wählen Sie **[!UICONTROL Generate]** aus, um den Bericht zu erstellen.
+Auswählen **[!UICONTROL Erzeugen]** , um den Bericht zu erstellen.
 
 ![generate-views](assets/generate-views.png)
 
@@ -155,7 +155,7 @@ Die Konsole Beiträge ermöglicht die Erstellung von Berichten über die Anzahl 
 
 Wählen Sie die Kriterien für den Bericht aus:
 
-* **[!UICONTROL Website]**
+* **[!UICONTROL Site]**
 
    Wählen Sie eine Community-Site aus.
 
@@ -172,7 +172,7 @@ Wählen Sie die Kriterien für den Bericht aus:
    * Letzte 90 Tage
    * Letztes Jahr
 
-Wählen Sie **[!UICONTROL Generate]** aus, um den Bericht zu erstellen.
+Auswählen **[!UICONTROL Erzeugen]** , um den Bericht zu erstellen.
 
 ![generate-report](assets/generate-posts-report.png)
 
@@ -184,6 +184,6 @@ Wenn keine Community-Sites aufgelistet sind, stellen Sie sicher, dass Adobe Anal
 
 ### Berichte werden nicht in der AEM-Autoreninstanz angezeigt {#reports-do-not-show-in-aem-author-instance}
 
-Wenn Berichte nicht in der AEM-Autoreninstanz angezeigt werden, suchen Sie nach den Anpassungen, z. B. nach der URL-Zuordnung in der Veröffentlichungsinstanz. Wenn die URL-Zuordnung nur auf der AEM-Veröffentlichungsinstanz der Communities-Site erfolgt, stellen Sie sicher, dass dasselbe in der AEM-Autoreninstanz in der Konfiguration **Site Trend Report Social Component Factory** konfiguriert wurde.
+Wenn Berichte nicht in der AEM-Autoreninstanz angezeigt werden, suchen Sie nach den Anpassungen, z. B. nach der URL-Zuordnung in der Veröffentlichungsinstanz. Wenn die URL-Zuordnung nur auf der AEM-Veröffentlichungsinstanz der Communities-Site erfolgt, stellen Sie sicher, dass dasselbe in der AEM-Autoreninstanz in **Site-Trend-Bericht - Social-KomponentenFactory** Konfiguration.
 
 ![URL-Zuordnung in der AEM-Autoreninstanz](assets/sitetrend.png)

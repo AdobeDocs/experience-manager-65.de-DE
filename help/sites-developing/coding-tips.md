@@ -1,8 +1,8 @@
 ---
 title: Tipps zum Programmieren
-seo-title: Tipps zum Programmieren
+seo-title: Coding Tips
 description: Tipps zum Programmieren für AEM
-seo-description: Tipps zum Programmieren für AEM
+seo-description: Tips for coding for AEM
 uuid: 1bb1cc6a-3606-4ef4-a8dd-7c08a7cf5189
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 4adce3b4-f209-4a01-b116-a5e01c4cc123
 exl-id: 85ca35e5-6e2b-447a-9711-b12601beacdd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 53%
+source-wordcount: '867'
+ht-degree: 52%
 
 ---
 
@@ -35,9 +35,9 @@ Für AEM-Codes gelten die folgenden Konventionen:
 
 
 * Eine einzelne Implementierung einer Schnittstelle heißt `<Interface>Impl`, d. h. `ReaderImpl`.
-* Mehrere Implementierungen einer Schnittstelle werden `<Variant><Interface>` genannt, d. h. `JcrReader` und `FileSystemReader`.
-* Abstrakte Basisklassen werden `Abstract<Interface>` oder `Abstract<Variant><Interface>` genannt.
-* Pakete werden `com.adobe.product.module` genannt.  Jedes Maven-Artefakt oder OSGi-Bundle muss über ein eigenes Paket verfügen.
+* Mehrere Implementierungen einer Schnittstelle werden `<Variant><Interface>`, d. h. `JcrReader` und `FileSystemReader`.
+* Abstrakte Basisklassen werden `Abstract<Interface>` oder `Abstract<Variant><Interface>`.
+* Pakete werden `com.adobe.product.module`.  Jedes Maven-Artefakt oder OSGi-Bundle muss über ein eigenes Paket verfügen.
 * Java-Implementierungen werden in einem impl-Paket unter ihrer API platziert.
 
 
@@ -62,13 +62,13 @@ Idealerweise sollten Namen den Zweck beschreiben. Ein gängiger Codetest für de
  </tbody>
 </table>
 
-### Wiederholungen vermeiden   {#don-t-repeat-yourself}
+### Wiederholungen vermeiden  {#don-t-repeat-yourself}
 
 Dieses Prinzip sieht vor, dass derselbe Codesatz niemals dupliziert werden sollte. Dies gilt auch für Dinge wie Zeichenfolgenliterale. Code-Duplizierung öffnet die Tür für Fehler, wann immer sich etwas ändern muss und gesucht und beseitigt werden sollte.
 
 ### Blanke CSS-Regeln vermeiden {#avoid-naked-css-rules}
 
-CSS-Regeln sollten speziell auf das Zielelement im Kontext Ihrer Anwendung ausgerichtet sein. Eine CSS-Regel, die auf *.content.center* angewendet wird, wäre beispielsweise zu breit angelegt und könnte sich letztendlich auf viele Inhalte in Ihrem System auswirken, sodass andere diesen Stil in Zukunft überschreiben müssen. *.myapp-* centertext wäre eine spezifischere Regel, da sie zentrierte  ** Texte im Kontext Ihrer Anwendung angibt.
+CSS-Regeln sollten speziell auf das Zielelement im Kontext Ihrer Anwendung ausgerichtet sein. Beispiel: eine CSS-Regel, die auf *.content .center* würde übermäßig breit angelegt sein und potenziell viele Inhalte in Ihrem System beeinflussen, sodass andere diesen Stil in Zukunft überschreiben müssen. *.myapp-centertext* wäre eine spezifischere Regel, da sie die Zentrierung angibt. *text* im Kontext Ihrer Anwendung.
 
 ### Verwendung veralteter APIs vermeiden {#eliminate-usage-of-deprecated-apis}
 
@@ -80,24 +80,24 @@ Alle Strings, die nicht von einem Autor bereitgestellt werden, sollten in einem 
 
 ### Ressourcenpfade zur Sicherheit maskieren {#escape-resource-paths-for-safety}
 
-Zwar sollten Pfade im JCR keine Leerzeichen enthalten, aber der Code sollte nicht fehlschlagen, wenn Leerzeichen vorhanden sind. Jackrabbit stellt eine Text-Hilfsklasse mit den Methoden *escape()* und *escapePath()* bereit. Für JSPs stellt die Granite-Benutzeroberfläche eine *granite:encodeURIPath() EL*-Funktion bereit.
+Zwar sollten Pfade im JCR keine Leerzeichen enthalten, aber der Code sollte nicht fehlschlagen, wenn Leerzeichen vorhanden sind. Jackrabbit stellt eine Text-Hilfsklasse mit den Methoden *escape()* und *escapePath()* bereit. Für JSPs stellt die Granite-Benutzeroberfläche eine *granite:encodeURIPath() EL* -Funktion.
 
 ### Zur Absicherung vor Cross-Site-Scripting-Angriffen die XSS-API und/oder HTL nutzen {#use-the-xss-api-and-or-htl-to-protect-against-cross-site-scripting-attacks}
 
-AEM stellt eine XSS-API bereit, mit der Sie Parameter einfach bereinigen und die Absicherung vor Cross-Site-Scripting-Angriffen gewährleisten können. Darüber hinaus sind diese Schutzmaßnahmen in HTL direkt in die Vorlagensprache integriert. Ein API-Cheatsheet kann unter [Entwicklung - Richtlinien und Best Practices](/help/sites-developing/dev-guidelines-bestpractices.md) heruntergeladen werden.
+AEM stellt eine XSS-API bereit, mit der Sie Parameter einfach bereinigen und die Absicherung vor Cross-Site-Scripting-Angriffen gewährleisten können. Darüber hinaus sind diese Schutzmaßnahmen in HTL direkt in die Vorlagensprache integriert. Ein API-Infoblatt kann hier heruntergeladen werden: [Entwicklung - Richtlinien und Best Practices](/help/sites-developing/dev-guidelines-bestpractices.md).
 
 ### Angemessene Protokollierung implementieren {#implement-appropriate-logging}
 
 Für Java-Code unterstützt AEM slf4j als Standard-API für die Protokollierung von Meldungen. Für eine konsistente Administration sollte die API in Verbindung mit den Konfigurationen genutzt werden, die über die OSGi-Konsole verfügbar sind. Slf4j umfasst fünf verschiedene Protokollierungsebenen. Wir empfehlen, bei der Auswahl der Ebene, auf der eine Meldung protokolliert werden soll, die folgenden Richtlinien anzuwenden:
 
 * ERROR: Wenn etwas im Code nicht funktioniert und die Verarbeitung nicht fortgesetzt werden kann. Dies geschieht oft aufgrund einer unerwarteten Ausnahme. In der Regel ist es hilfreich, Stacktraces in diese Szenarien aufzunehmen.
-* WARN: Wenn etwas nicht richtig funktioniert hat, aber die Verarbeitung fortgesetzt werden kann. Dies ist häufig das Ergebnis einer von uns erwarteten Ausnahme, z. B. einer *PathNotFoundException*.
+* WARN: Wenn etwas nicht richtig funktioniert hat, aber die Verarbeitung fortgesetzt werden kann. Dies ist häufig das Ergebnis einer von uns erwarteten Ausnahme, wie z. B. *PathNotFoundException*.
 * INFO: Informationen, die bei der Überwachung eines Systems hilfreich sein dürften. Beachten Sie, dass dies die Standardeinstellung ist und die meisten Kunden dies in ihren Umgebungen beibehalten. Verwenden Sie diese Ebene daher nicht zu häufig.
 * DEBUG: Informationen der unteren Ebene zur Verarbeitung. Hilfreich, wenn ein Problem zusammen mit dem Support behoben wird.
 * TRACE: Die niedrigste Ebene von Informationen, z. B. das Aufrufen/Beenden von Methoden. Dies wird in der Regel nur von Entwicklern verwendet.
 
 Bei JavaScript sollte *console.log* nur während der Entwicklung genutzt werden und alle Protokollaussagen sollten vor der Veröffentlichung entfernt werden.
 
-### Nicht durchdachte Programmierung vermeiden  {#avoid-cargo-cult-programming}
+### Nicht durchdachte Programmierung vermeiden {#avoid-cargo-cult-programming}
 
 Vermeiden Sie es, Code zu kopieren, ohne zu wissen, was er tut. Im Zweifelsfall ist es immer am besten, jemanden zu fragen, der über mehr Erfahrung mit dem -Modul oder der -API verfügt, über die Sie nicht genau Bescheid wissen.

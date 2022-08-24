@@ -7,13 +7,13 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
-feature: Viewer
+feature: Viewers
 role: User, Admin
 exl-id: 203ea349-ef4c-421c-b4b6-76ee9d46ec34
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 64%
+source-wordcount: '380'
+ht-degree: 87%
 
 ---
 
@@ -23,7 +23,7 @@ Verwenden Sie die Funktion **[!UICONTROL Einbettungs-Code]**, wenn Sie ein Video
 
 Betten Sie URLs nur dann ein, wenn Sie Adobe Experience Manager *nicht* als Ihr WCM verwenden. Wenn Sie Experience Manager als Ihr WCM verwenden, [fügen Sie die Assets direkt zu Ihrer Seite hinzu](adding-dynamic-media-assets-to-pages.md).
 
-Siehe [Verknüpfen von URLs mit einer Webanwendung](linking-urls-to-yourwebapplication.md).
+Siehe [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwebapplication.md).
 
 Siehe [Bereitstellen von optimierten Bildern für eine responsive Site](responsive-site.md).
 
@@ -49,10 +49,10 @@ Siehe [Bereitstellen von optimierten Bildern für eine responsive Site](responsi
 
    Siehe [Veröffentlichen von Bildvorgaben](managing-image-presets.md#publishing-image-presets).
 
-1. Wählen Sie in der linken Leiste das Dropdown-Menü aus und wählen Sie **[!UICONTROL Viewer]** aus.
-1. Wählen Sie in der linken Leiste einen Viewer-Vorgabennamen aus. Die Viewer-Vorgabe wird auf das Asset angewendet.
-1. Wählen Sie **[!UICONTROL Einbetten]** aus.
-1. Kopieren Sie im Dialogfeld **[!UICONTROL Einbettungscode]** den gesamten Code in die Zwischenablage und wählen Sie **[!UICONTROL Schließen]** aus.
+1. Wählen Sie in der linken Leiste das Dropdown-Menü aus und wählen Sie **[!UICONTROL Viewer]**.
+1. Wählen Sie in der linken Leiste den Namen einer Viewer-Vorgabe aus. Die Viewer-Vorgabe wird auf das Asset angewendet.
+1. Klicken Sie auf **[!UICONTROL Einbetten]**.
+1. Kopieren Sie im Dialogfeld **[!UICONTROL Einbettungs-Code]** den gesamten Code in die Zwischenablage und klicken Sie dann auf **[!UICONTROL Schließen]**.
 1. Fügen Sie den Integrations-Code in die Web-Seiten ein.
 
 ## Verwenden von HTTP/2 zur Bereitstellung von Dynamic Media-Assets   {#using-http-to-deliver-your-dynamic-media-assets}

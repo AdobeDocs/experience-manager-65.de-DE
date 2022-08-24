@@ -8,13 +8,13 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: aac3c850-ae84-4bff-80de-d370e150f675
 docset: aem65
-feature: 360-Grad-VR-Video
+feature: 360 VR Video
 role: User, Admin
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
 source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 62%
+source-wordcount: '1052'
+ht-degree: 77%
 
 ---
 
@@ -32,7 +32,7 @@ Informationen hierzu finden Sie in [Verwalten von Viewer-Vorgaben](/help/assets/
 
 ## 360-Grad-Video in Aktion {#video-in-action}
 
-Wählen Sie [Space Station 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) aus, um ein Browserfenster zu öffnen und ein 360-Grad-Video anzuzeigen. Ziehen Sie während der Videowiedergabe den Mauszeiger an eine neue Position, um den Anzeigewinkel zu ändern.
+Wählen Sie [Space Station 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS), um ein Browser-Fenster zu öffnen und ein 360-Grad-Video anzusehen. Ziehen Sie während der Videowiedergabe den Mauszeiger an eine neue Position, um den Anzeigewinkel zu ändern.
 
 ![360-Grad-Video-Beispiel](assets/6_5_360videoiss_simplified.png)-*Videoframe aus Space Station 360*
 
@@ -42,14 +42,14 @@ Sie können 360-Grad-/VR-Videos mit Adobe Premiere Pro anzeigen und bearbeiten. 
 
 Weitere Informationen finden Sie unter [Bearbeiten von 360-Grad-/VR-Videos](https://helpx.adobe.com/de/premiere-pro/how-to/edit-360-vr-video.html).
 
-## Hochladen von Assets zur Verwendung mit dem 360-Grad-Video-Viewer {#uploading-assets-for-use-with-the-video-viewer}
+## Hochladen von Assets für die Verwendung mit dem 360-Grad-Video-Viewer {#uploading-assets-for-use-with-the-video-viewer}
 
-360 Video-Assets, die in Adobe Experience Manager hochgeladen werden, werden auf einer Asset-Seite wie normale Video-Assets als **Multimedia** gekennzeichnet.
+360-Grad-Video-Assets, die in Adobe Experience Manager hochgeladen werden, werden als **Multimedia** auf einer Asset-Seite, ähnlich wie bei normalen Video-Assets.
 
 ![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
 *Ein hochgeladenes 360-Grad-Video-Asset in der Kartenansicht. Das Asset wird als „Multimedia“ gekennzeichnet.*
 
-**Hochladen von Assets zur Verwendung mit dem 360-Grad-Video-Viewer:**
+**Hochladen von Assets für die Verwendung mit dem 360-Grad-Video-Viewer:**
 
 1. Erstellen Sie einen Ordner für Ihr 360-Grad-Video-Asset.
 1. [Wenden Sie ein adaptives Videoprofil auf den Ordner an](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
@@ -61,7 +61,7 @@ Weitere Informationen finden Sie unter [Bearbeiten von 360-Grad-/VR-Videos](http
    * Idealerweise sollten Sie Ihren ursprünglichen 360-Grad-Videoinhalt mit einer der folgenden Auflösungen verwenden:
 
       * 1080p – 1920 x 1080 (Full HD- oder FHD-Auflösung) oder
-      * 2160p - 3840 x 2160, auch als 4k-, UHD- oder Ultra HD-Auflösung bezeichnet. Diese hohe Auflösung ist häufig auf Premium-Fernsehgeräten und Computermonitoren verfügbar. Die 2160p-Auflösung wird oft als &quot;4k&quot;bezeichnet, da die Breite nahe 4000 Pixel liegt. Das heißt, sie bietet viermal so viele Pixel wie 1080p.
+      * 2160p – 3840 x 2160 (4K-, UHD- oder Ultra HD-Auflösung). Diese hohe Auflösung ist häufig auf Premium-Fernsehgeräten und Computer-Monitoren verfügbar. Die 2160p-Auflösung wird häufig als „4K“ bezeichnet, da die Breite fast 4000 Pixel beträgt. Das heißt, sie bietet viermal so viele Pixel wie 1080p.
    * [Erstellen Sie ein benutzerdefiniertes adaptives Videoprofil](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) mit hochwertigeren Ausgabedarstellungen. Erstellen Sie beispielsweise ein adaptives Videoprofil, das die folgenden drei Einstellungen enthält:
 
       * width=auto; height=720; bitrate=2500 kbps
@@ -77,12 +77,12 @@ Weitere Informationen finden Sie unter [Bearbeiten von 360-Grad-/VR-Videos](http
 
 Hochgeladene Assets sind als 360-Grad-Videos und für die Verwendung mit dem 360-Grad-Video-Viewer geeignet, wenn sie ein Seitenverhältnis von 2 aufweisen.
 
-Standardmäßig erkennt Experience Manager das Video als &quot;360&quot;, wenn das Seitenverhältnis (Breite/Höhe) 2,0 beträgt. Wenn Sie Administrator sind, können Sie die standardmäßige Seitenverhältniseinstellung von 2 überschreiben, indem Sie die optionale Eigenschaft `s7video360AR` in CRXDE Lite wie folgt festlegen:
+Standardmäßig erkennt Experience Manager das Video als &quot;360&quot;, wenn das Seitenverhältnis (Breite/Höhe) 2,0 beträgt. Wenn Sie Administrator sind, können Sie die standardmäßige Seitenverhältniseinstellung von 2 überschreiben, indem Sie die optionale Einstellung `s7video360AR` -Eigenschaft in CRXDE Lite unter:
 
 * `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
-   * **Eigenschaftstyp**  - Double
-   * **Wert**  - Gleitkommaseitenverhältnis, Standardwert 2.0.
+   * **Eigenschaftstyp** - Double
+   * **Wert** - Gleitkomma-Seitenverhältnis, Standard 2.0.
 
 Wenn Sie diese Eigenschaft festlegen, wird sie umgehend auf vorhandene und neu hochgeladene Videos angewendet.
 
@@ -90,7 +90,7 @@ Das Seitenverhältnis gilt für 360-Grad-Video-Assets für die Asset-Detailseite
 
 Laden Sie zunächst 360-Grad-Videos hoch.
 
-## Vorschau 360-Grad-Video {#previewing-video}
+## Vorschau eines 360-Grad-Videos {#previewing-video}
 
 Mit der Vorschau können Sie prüfen, wie das 360-Grad-Video bei Ihren Kunden aussieht, und sicherstellen, dass es sich wie erwartet verhält.
 
@@ -99,41 +99,41 @@ Siehe auch [Viewer-Vorgaben bearbeiten](/help/assets/managing-viewer-presets.md#
 Wenn das 360-Grad-Video Ihren Vorstellungen entspricht, können Sie es veröffentlichen.
 
 Siehe [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](/help/assets/embed-code.md).
-Siehe [Verknüpfen von URLs mit einer Webanwendung](/help/assets/linking-urls-to-yourwebapplication.md). Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
-Siehe [Hinzufügen von Dynamic Media Assets zu Seiten](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Siehe [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/linking-urls-to-yourwebapplication.md). Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
+Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 **Vorschau von 360-Grad-Videos:**
 
-1. Navigieren Sie in **[!UICONTROL Assets]** zu einem von Ihnen erstellten 360-Grad-Video. Wählen Sie das 360-Grad-Video-Asset aus, damit Sie es im Vorschaumodus öffnen können.
+1. Gehen Sie in **[!UICONTROL Assets]** zu einem von Ihnen erstellten 360-Grad-Video. Wählen Sie das 360-Grad-Video-Asset aus, damit Sie es im Vorschaumodus öffnen können.
 
    ![6_5_360video-selecttopreview-1](assets/6_5_360video-selecttopreview-1.png)
 
    Wählen Sie das 360-Grad-Video-Asset aus, damit Sie eine Vorschau des Videos anzeigen können.
 
-1. Wählen Sie auf der Vorschauseite links oben auf der Seite die Dropdown-Liste aus und klicken Sie dann auf **[!UICONTROL Viewer]**.
+1. Klicken Sie links oben auf der Vorschauseite auf die Dropdown-Liste und wählen Sie **[!UICONTROL Viewer]** aus.
 
    ![6_5_360video-preview-viewers](assets/6_5_360video-preview-viewers.png)
 
-   Wählen Sie in der Viewer-Liste **[!UICONTROL Video360_social]** aus und führen Sie dann einen der folgenden Schritte aus:
+   Wählen Sie in der Viewer-Liste **[!UICONTROL Video360_social]** aus und führen Sie einen der folgenden Schritte aus:
 
    * Ziehen Sie den Mauszeiger über das Video, wenn Sie den Anzeigewinkel der statischen Szene ändern möchten.
-   * Wählen Sie die Schaltfläche **[!UICONTROL Wiedergabe]** des Videos aus, wenn Sie die Wiedergabe starten möchten. Ziehen Sie bei der Wiedergabe des Videos den Mauszeiger über das Video, um den Anzeigewinkel zu ändern.
+   * Wählen Sie die **[!UICONTROL Play]** -Schaltfläche, wenn Sie die Wiedergabe starten möchten. Ziehen Sie bei der Wiedergabe des Videos den Mauszeiger über das Video, um den Anzeigewinkel zu ändern.
 
    ![6_5_360video-preview-video360-social ](assets/6_5_360video-preview-video360-social.png)*Screenshot eines 360-Grad-Videos.*
 
    * Wählen Sie in der Viewer-Liste **[!UICONTROL Video360VR]** aus.
 
-      Virtual Reality (VR)-Videos sind interaktive Videoinhalte, die über Virtual Reality-Headsets angezeigt werden. Wie bei herkömmlichen Videos erstellen Sie VR-Videos zu Beginn, wenn ein Video mit 360-Grad-Videokameras aufgezeichnet oder erfasst wird.
+      Virtual Reality (VR)-Videos sind interaktive Videoinhalte, die über Virtual-Reality-Headsets angezeigt werden. Wie bei herkömmlichen Videos erstellen Sie VR-Videos zu Beginn, wenn ein Video mit 360-Grad-Videokameras aufgezeichnet oder erfasst wird.
    ![6_5_360video-preview-video360vr](assets/6_5_360video-preview-video360vr.png)
    *Screenshot eines 360-Grad-VR-Videos.*
 
-1. Wählen Sie rechts oben auf der Vorschauseite **[!UICONTROL Close]** aus.
+1. Klicken Sie oben rechts auf der Vorschauseite auf **[!UICONTROL Schließen]**.
 
 ## Veröffentlichen von 360-Grad-Videos {#publishing-video}
 
 Veröffentlichen Sie das 360-Grad-Video, damit Sie es verwenden können. Die Veröffentlichung eines 360-Grad-Videos aktiviert die URL und den Einbettungs-Code. Außerdem wird das 360-Grad-Video in der Dynamic Media-Cloud veröffentlicht, die für eine skalierbare und leistungsfähige Bereitstellung mit einem CDN integriert ist.
 
-Weitere Informationen zum Veröffentlichen von 360-Grad-Videos finden Sie unter [Veröffentlichen von Dynamic Media-Assets](/help/assets/publishing-dynamicmedia-assets.md) .
+Siehe [Veröffentlichen von Dynamic Media-Assets](/help/assets/publishing-dynamicmedia-assets.md) für Details zum Veröffentlichen von 360-Grad-Videos.
 Siehe auch [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](/help/assets/embed-code.md).
-Siehe auch [Verknüpfen von URLs mit einer Webanwendung](/help/assets/linking-urls-to-yourwebapplication.md). Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
-Siehe auch [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/linking-urls-to-yourwebapplication.md). Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
+Siehe [Hinzufügen von Dynamic Media Assets zu Seiten](/help/assets/adding-dynamic-media-assets-to-pages.md).

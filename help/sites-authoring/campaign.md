@@ -1,8 +1,8 @@
 ---
 title: Arbeiten mit Adobe Campaign Classic und Adobe Campaign Standard
-seo-title: Arbeiten mit Adobe Campaign 6.1 und Adobe Campaign Standard
+seo-title: Working with Adobe Campaign 6.1 and Adobe Campaign Standard
 description: Sie können E-Mail-Inhalte in AEM erstellen und diese in Adobe Campaign-E-Mails verarbeiten
-seo-description: Sie können E-Mail-Inhalte in AEM erstellen und diese in Adobe Campaign-E-Mails verarbeiten
+seo-description: You can create email content in AEM and process it in Adobe Campaign emails
 uuid: 23195f0b-71c0-4554-8c8b-b0e7704d71d7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 2fd0047d-d0f6-4289-98cf-454486f9cd61
 exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2780'
-ht-degree: 76%
+source-wordcount: '2758'
+ht-degree: 75%
 
 ---
 
@@ -34,7 +34,7 @@ Weitere Informationen finden Sie unter [Erstellen von Adobe Campaign-Formularen
 >
 >Bevor Sie diese Funktion verwenden können, müssen Sie AEM so konfigurieren, dass es sich entweder mit [Adobe Campaign](/help/sites-administering/campaignonpremise.md) oder [Adobe Campaign Standard](/help/sites-administering/campaignstandard.md) integrieren lässt.
 
-## Versenden von E-Mail-Inhalten mit Adobe Campaign  {#sending-email-content-via-adobe-campaign}
+## Versenden von E-Mail-Inhalten mit Adobe Campaign {#sending-email-content-via-adobe-campaign}
 
 Nach der Konfiguration von AEM und Adobe Campaign können Sie E-Mail-Inhalte direkt in AEM erstellen und sie anschließend in Adobe Campaign verarbeiten.
 
@@ -47,15 +47,15 @@ Es gibt zwei mögliche Fälle:
 
 Eine ausführliche Anleitung finden Sie in diesem Dokument.
 
-### Erstellen neuer E-Mail-Inhalte  {#creating-new-email-content}
+### Erstellen neuer E-Mail-Inhalte {#creating-new-email-content}
 
 >[!NOTE]
 >
->Stellen Sie beim Hinzufügen von E-Mail-Vorlagen sicher, dass Sie sie unter **/content/campaigns** hinzufügen, um sie verfügbar zu machen.
+>Stellen Sie beim Hinzufügen von E-Mail-Vorlagen sicher, dass Sie sie unter hinzufügen **/content/campaigns** , um sie verfügbar zu machen.
 
 #### Erstellen neuer E-Mail-Inhalte {#creating-new-email-content-1}
 
-1. Wählen Sie AEM **Sites**, dann **Kampagnen** und navigieren Sie dann zu dem Ort, an dem Ihre E-Mail-Kampagnen verwaltet werden. Im folgenden Beispiel lautet der Pfad **Sites** > **Kampagnen** > **Geometrixx Outdoors** > **E-Mail-Kampagnen**.
+1. Wählen Sie AEM aus. **Sites** then **Kampagnen** und navigieren Sie dann zu dem Ort, an dem Ihre E-Mail-Kampagnen verwaltet werden. Im folgenden Beispiel lautet der Pfad **Sites** > **Kampagnen** > **Geometrixx Outdoors** > **E-Mail-Kampagnen**.
 
    >[!NOTE]
    >
@@ -69,7 +69,7 @@ Eine ausführliche Anleitung finden Sie in diesem Dokument.
    * **Adobe Campaign Classic Email**: fügt Inhalte zu einer vordefinierten Vorlage (zwei Spalten) hinzu, bevor sie zur Bereitstellung an Adobe Campaign Classic gesendet wird.
    * **Adobe Campaign Standard Email**: fügt Inhalte zu einer vordefinierten Vorlage (zwei Spalten) hinzu, bevor sie zur Bereitstellung an Adobe Campaign Standard gesendet wird.
 
-1. Füllen Sie den **Titel** und optional den **Beschreibung** aus und klicken Sie auf **Erstellen**. Der Titel wird als Betreff des Newsletters/der E-Mail verwendet, falls er beim Bearbeiten der E-Mail nicht überschrieben wird.
+1. Füllen Sie die **Titel** und optional die **Beschreibung** und klicken Sie auf **Erstellen**. Der Titel wird als Betreff des Newsletters/der E-Mail verwendet, falls er beim Bearbeiten der E-Mail nicht überschrieben wird.
 
 ### Auswählen von Adobe Campaign-Cloud-Service und Vorlagen {#selecting-the-adobe-campaign-cloud-service-and-template}
 
@@ -87,14 +87,14 @@ Auf der Seite **Sites**:
 
    ![chlimage_1-16](assets/chlimage_1-16a.png)
 
-1. Wählen Sie **Bearbeiten** und dann die Registerkarte **Cloud-Services** aus, blättern Sie nach unten und klicken Sie auf das Pluszeichen (+), um eine Konfiguration hinzuzufügen. Wählen Sie dann **Adobe Campaign** aus.
+1. Auswählen **Bearbeiten** und dann **Cloud Services** und scrollen Sie nach unten und klicken Sie auf das Pluszeichen (+), um eine Konfiguration hinzuzufügen. Wählen Sie dann **Adobe Campaign**.
 
    ![chlimage_1-17](assets/chlimage_1-17a.png)
 
 1. Wählen Sie aus einer Dropdown-Liste die Konfiguration aus, die Ihrer Adobe Campaign-Konfiguration entspricht, und bestätigen Sie Ihre Auswahl durch einen Klick auf **Speichern**.
 1. Sie können die auf die E-Mail angewendete Vorlage anzeigen, indem Sie auf die Registerkarte **Adobe Campaign** klicken. Möchten Sie die Vorlage wechseln, können Sie diese während der Bearbeitung in der E-Mail selbst ändern.
 
-   Wenn Sie eine andere als die Standard-E-Mail-Versandvorlage (aus Adobe Campaign) anwenden möchten, wählen Sie in **Eigenschaften** den Tab **Adobe Campaign** aus. Geben Sie den internen Namen der E-Mail-Vorlage in die jeweilige Adobe Campaign-Instanz ein.
+   Wenn Sie eine bestimmte E-Mail-Versandvorlage (aus Adobe Campaign) anwenden möchten, die nicht die standardmäßige E-Mail-Vorlage ist, lesen Sie **Eigenschaften**, wählen Sie die **Adobe Campaign** Registerkarte. Geben Sie den internen Namen der E-Mail-Vorlage in die jeweilige Adobe Campaign-Instanz ein.
 
    Welche Vorlage Sie wählen bestimmt, welche Personalisierungsfelder in Adobe Campaign verfügbar sind.
 
@@ -106,7 +106,7 @@ Möglicherweise können Sie bei der Bearbeitung des Newsletters/der E-Mail aufgr
 
    ![chlimage_1-19](assets/chlimage_1-19a.png)
 
-1. Wählen Sie **Cloud Services** und klicken Sie auf **+** , um eine Konfiguration hinzuzufügen. Wählen Sie eine sichtbare Konfiguration aus (es spielt keine Rolle welche). Klicken oder tippen Sie auf das **+**, um eine weitere Konfiguration hinzuzufügen, und wählen Sie dann **Adobe Campaign** aus.
+1. Auswählen **Cloud Services** und klicken Sie auf **+** , um eine Konfiguration hinzuzufügen. Wählen Sie eine sichtbare Konfiguration aus (es spielt keine Rolle welche). Klicken oder tippen Sie auf das **+**, um eine weitere Konfiguration hinzuzufügen, und wählen Sie dann **Adobe Campaign** aus.
 
    >[!NOTE]
    >
@@ -123,7 +123,7 @@ So bearbeiten Sie E-Mail-Inhalte:
 
    ![chlimage_1-20](assets/chlimage_1-20a.png)
 
-1. Wenn Sie den Betreff der E-Mail ändern oder Text für Benutzer hinzufügen möchten, die die E-Mail nicht im HTML-Format ansehen, wählen Sie **E-Mail** aus und fügen Sie einen Betreff und Text hinzu. Wählen Sie das Seitensymbol aus, um automatisch aus der HTML-Version eine Version mit einfachem Text zu generieren. Klicken Sie zum Abschluss auf das Häkchen.
+1. Wenn Sie den Betreff der E-Mail ändern oder Text für Benutzer hinzufügen möchten, die die E-Mail nicht im HTML anzeigen, wählen Sie **Email** und fügen Sie einen Betreff und Text hinzu. Wählen Sie das Seitensymbol aus, um automatisch aus der HTML-Version eine Version mit einfachem Text zu generieren. Klicken Sie zum Abschluss auf das Häkchen.
 
    Sie können den Newsletter mithilfe der Personalisierungsfelder von Adobe Campaign individueller gestalten. Möchten Sie ein Personalisierungsfeld hinzufügen, klicken Sie auf die Schaltfläche mit dem Adobe Campaign-Logo, um die Auswahl für Personalisierungsfelder zu öffnen. Sie können aus allen Feldern auswählen, die für diese Newsletter verfügbar sind.
 
@@ -133,7 +133,7 @@ So bearbeiten Sie E-Mail-Inhalte:
 
    ![chlimage_1-21](assets/chlimage_1-21a.png)
 
-1. Öffnen Sie das Komponentenbedienfeld auf der linken Bildschirmseite und wählen Sie **Adobe Campaign Newsletter** aus dem Dropdown-Menü aus, um diese Komponenten zu finden.
+1. Öffnen Sie das Komponentenbedienfeld auf der linken Bildschirmseite und wählen Sie **Adobe Campaign Newsletter** aus dem Dropdown-Menü, um diese Komponenten zu finden.
 
    ![chlimage_1-22](assets/chlimage_1-22a.png)
 
@@ -141,7 +141,7 @@ So bearbeiten Sie E-Mail-Inhalte:
 
    ![chlimage_1-23](assets/chlimage_1-23a.png)
 
-   Eine detaillierte Beschreibung der einzelnen Komponenten finden Sie unter [Adobe Campaign Components](/help/sites-authoring/adobe-campaign-components.md) .
+   Siehe [Adobe Campaign-Komponenten](/help/sites-authoring/adobe-campaign-components.md) für eine detaillierte Beschreibung der einzelnen Komponenten.
 
    ![chlimage_1-24](assets/chlimage_1-24a.png)
 
@@ -150,19 +150,19 @@ So bearbeiten Sie E-Mail-Inhalte:
 Beim Bearbeiten Ihres Inhalts können Sie Folgendes einfügen:
 
 * Adobe Campaign-Kontextfelder. Hierbei handelt es sich um Felder, die Sie in Ihren Text einfügen können und die entsprechend den Empfängerdaten angepasst werden (z. B. Vorname, Nachname oder beliebige Daten der Zieldimension).
-* Adobe Campaign-Personalisierungsblöcke. Hierbei handelt es sich um Blöcke vordefinierter Inhalte, die nicht mit den Empfängerdaten in Zusammenhang stehen, wie z. B. ein Markenlogo oder ein Link zu einer Mirrorseite.
+* Adobe Campaign-Personalisierungsblöcke. Hierbei handelt es sich um vordefinierte Inhaltsbausteine, die nicht mit den Empfängerdaten in Zusammenhang stehen, wie z. B. ein Markenlogo oder ein Link zu einer Mirrorseite.
 
 Detaillierte Beschreibungen der Komponenten von Adobe Campaign finden Sie unter [Adobe Campaign-Komponenten](/help/sites-authoring/adobe-campaign-components.md).
 
 >[!NOTE]
 >
 >* Es werden nur die Felder der Adobe Campaign-**Profile** der Targeting-Dimension berücksichtigt.
->* Beim Anzeigen von Eigenschaften über **Sites** haben Sie keinen Zugriff auf die Adobe Campaign-Kontextfelder. Sie können bei deren Bearbeitung direkt aus E-Mails darauf zugreifen.
+>* Beim Anzeigen von Eigenschaften aus **Sites**, haben Sie keinen Zugriff auf die Adobe Campaign-Kontextfelder. Sie können bei deren Bearbeitung direkt aus E-Mails darauf zugreifen.
 
 
 So fügen Sie Personalisierung ein:
 
-1. Fügen Sie eine neue Komponente **Newsletter** > **Text und Personalisierung (Kampagne)** ein, indem Sie sie auf die Seite ziehen.
+1. Neue einfügen **Newsletter** > **Text und Personalisierung (Kampagne)** auf die Seite ziehen.
 
    ![chlimage_1-25](assets/chlimage_1-25a.png)
 
@@ -175,15 +175,14 @@ So fügen Sie Personalisierung ein:
    >**Adobe Campaign Standard:**
    >
    >* Die verfügbaren Kontextfelder entsprechen den **Profilen** der Targeting-Dimension in Adobe Campaign.
-   >* Siehe [Verknüpfen einer AEM Seite mit einer Adobe Campaign-E-Mail](#linking-an-aem-page-to-an-adobe-campaign-email-adobe-campaign-standard).
+   >* Siehe [Verknüpfen einer AEM mit einer Adobe Campaign-E-Mail](#linking-an-aem-page-to-an-adobe-campaign-email-adobe-campaign-standard).
 
    >
    >**Adobe Campaign Standard:**
    >
-   >* Verfügbare Kontextfelder werden dynamisch aus dem Adobe Campaign-Schema **nms:seedMember** abgerufen. Target-Erweiterungsdaten werden dynamisch aus dem Workflow abgerufen, der die mit dem Inhalt synchronisierte Bereitstellung enthält. (Siehe Abschnitt [Synchronisieren von in AEM erstellten Inhalten mit einem Versand von Adobe Campaign](#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic) ).
-      >
-      >
-   * Informationen zum Hinzufügen oder Ausblenden von Personalisierungselementen finden Sie unter [Verwalten von Personalisierungsfeldern und -blöcken](/help/sites-administering/campaignonpremise.md#managing-personalization-fields-and-blocks).
+   >* Verfügbare Kontextfelder werden dynamisch aus Adobe Campaign abgerufen **nms:seedMember** Schema. Target-Erweiterungsdaten werden dynamisch aus dem Workflow abgerufen, der die mit dem Inhalt synchronisierte Bereitstellung enthält. (Siehe [Synchronisieren von in AEM erstellten Inhalten mit einem Versand von Adobe Campaign](#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic) Abschnitt).
+   >
+   >* Informationen zum Hinzufügen oder Ausblenden von Personalisierungselementen finden Sie unter [Verwalten von Personalisierungsfeldern und -bausteinen](/help/sites-administering/campaignonpremise.md#managing-personalization-fields-and-blocks).
    >* **Wichtig**: Sämtliche Tabellenfelder müssen sich auch in der Empfängertabelle (oder der entsprechenden Kontakttabelle) befinden.
 
 
@@ -191,7 +190,7 @@ So fügen Sie Personalisierung ein:
 
    ![chlimage_1-27](assets/chlimage_1-27a.png)
 
-   Nach dem Einfügen der Kontextfelder und Personalisierungsblöcke können Sie eine Vorschau des Newsletters anzeigen und die Felder prüfen. Siehe [Vorschau eines Newsletters](#previewing-a-newsletter).
+   Nach dem Einfügen der Kontextfelder und Personalisierungsblöcke können Sie eine Vorschau des Newsletters anzeigen und die Felder prüfen. Siehe [Newsletter-Vorschau](#previewing-a-newsletter).
 
 ### Newslettervorschau {#previewing-a-newsletter}
 
@@ -215,13 +214,13 @@ Sie können sich eine Vorschau des Newsletters und der Personalisierung anzeigen
 
 ### Genehmigen von Inhalten in AEM {#approving-content-in-aem}
 
-Nach der Bearbeitung der Inhalte kann mit deren Genehmigung begonnen werden. Gehen Sie zur Registerkarte **Workflow** der Toolbox und wählen Sie den Workflow **Für Adobe Campaign genehmigen** aus.
+Nach der Bearbeitung der Inhalte kann mit deren Genehmigung begonnen werden. Navigieren Sie zu **Workflow** Registerkarte der Toolbox und wählen Sie die **Für Adobe Campaign genehmigen** Arbeitsablauf.
 
 Dieser Standardarbeitsablauf besteht aus zwei Schritten: Prüfung und Genehmigung oder Prüfung und Ablehnung. Der Arbeitsablauf kann jedoch auch ausgeweitet oder an komplexere Prozesse angepasst werden.
 
 ![chlimage_1-31](assets/chlimage_1-31a.png)
 
-Um Inhalte für Adobe Campaign zu genehmigen, wenden Sie den Workflow an, indem Sie **Workflow** auswählen und **Für Adobe Campaign genehmigen** auswählen und auf **Workflow starten** klicken. Führen Sie die vorgegebenen Schritte aus und genehmigen Sie den Inhalt. Sie können Inhalte auch ablehnen, indem Sie im letzten Schritt des Arbeitsablaufs statt **Genehmigen** die Option **Ablehnen** wählen.
+Um Inhalte für Adobe Campaign zu validieren, wenden Sie den Workflow an, indem Sie **Workflow** und auswählen **Für Adobe Campaign genehmigen** und klicken Sie auf **Workflow starten**. Führen Sie die vorgegebenen Schritte aus und genehmigen Sie den Inhalt. Sie können Inhalte auch ablehnen, indem Sie im letzten Schritt des Arbeitsablaufs statt **Genehmigen** die Option **Ablehnen** wählen.
 
 ![chlimage_1-32](assets/chlimage_1-32a.png)
 
@@ -238,7 +237,7 @@ Adobe Campaign Classic:
 >[!NOTE]
 Nicht genehmigte Inhalte können in Adobe Campaign mit einer Bereitstellung synchronisiert werden, diese Bereitstellung lässt sich jedoch nicht durchführen. Mit Campaign-Bereitstellungen lassen sich nur genehmigte Inhalte versenden.
 
-## Verknüpfen von AEM mit Adobe Campaign Standard und Adobe Campaign Classic  {#linking-aem-with-adobe-campaign-standard-and-adobe-campaign-classic}
+## Verknüpfen von AEM mit Adobe Campaign Standard und Adobe Campaign Classic {#linking-aem-with-adobe-campaign-standard-and-adobe-campaign-classic}
 
 Wie Sie AEM mit Adobe Campaign verknüpfen oder synchronisieren hängt davon ab, ob Sie das Adobe Campaign Standard-Abonnement oder die On-Premise-Version von Adobe Campaign Classic verwenden.
 
@@ -263,7 +262,7 @@ Wenn ein Newsletter mit mehreren Sendungen verknüpft ist, wird die Anzahl der v
 
 So verknüpfen Sie in AEM erstellte Seiten mit Adobe Campaign-E-Mails:
 
-1. Erstellen Sie eine neue E-Mail, die auf einer AEM-spezifischen E-Mail-Vorlage beruht. Weitere Informationen finden Sie unter [Erstellen von E-Mails in Adobe Campaign Standard](https://helpx.adobe.com/campaign/standard/channels/using/creating-an-email.html) .
+1. Erstellen Sie eine neue E-Mail, die auf einer AEM-spezifischen E-Mail-Vorlage beruht. Siehe [E-Mails in Adobe Campaign Standard erstellen](https://helpx.adobe.com/campaign/standard/channels/using/creating-an-email.html) für weitere Informationen.
 
    ![chlimage_1-36](assets/chlimage_1-36a.png)
 
@@ -271,10 +270,10 @@ So verknüpfen Sie in AEM erstellte Seiten mit Adobe Campaign-E-Mails:
 
    ![chlimage_1-37](assets/chlimage_1-37a.png)
 
-1. Wählen Sie **Link mit Adobe Experience Manager-Inhalt** in der Symbolleiste aus, um auf die in AEM verfügbare Inhaltsliste zuzugreifen.
+1. Auswählen **Link mit Adobe Experience Manager-Inhalt** in der Symbolleiste, um auf die in AEM verfügbare Inhaltsliste zuzugreifen.
 
    >[!NOTE]
-   Wenn die Option **Link mit einer Adobe Experience Manager** nicht in der Aktionsleiste angezeigt wird, überprüfen Sie, ob der **Inhaltsbearbeitungsmodus** in den E-Mail-Eigenschaften korrekt auf **Adobe Experience Manager** konfiguriert ist.
+   Wenn die Variable **Link zu einer Adobe Experience Manager** nicht in der Aktionsleiste angezeigt wird, überprüfen Sie, ob die **Inhaltsbearbeitungsmodus** korrekt konfiguriert ist, auf **Adobe Experience Manager** in den E-Mail-Eigenschaften.
 
    ![chlimage_1-38](assets/chlimage_1-38a.png)
 
@@ -300,7 +299,7 @@ So verknüpfen Sie in AEM erstellte Seiten mit Adobe Campaign-E-Mails:
    Sie können die Verknüpfung einer E-Mail mit AEM-Inhalten löschen, indem Sie **Verknüpfung mit Adobe Experience Manager-Inhalt löschen** aus der Inhaltsaktionsleiste auswählen. Diese Schaltfläche steht nur zur Verfügung, wenn der Inhalt bereits mit der Bereitstellung verknüpft ist. Soll anderer Inhalt mit einer Bereitstellung verknüpft werden, müssen Sie zunächst den aktuellen Inhaltslink löschen, bevor Sie eine neue Verknüpfung erstellen.
    Ist die Verknüpfung gelöscht, werden lokale Inhalte beibehalten und diese können in Adobe Campaign bearbeitet werden. Wird der Inhalt nach vorgenommenen Änderungen wieder verknüpft, gehen sämtliche Änderungen verloren.
 
-### Synchronisieren von in AEM erstelltem Inhalt mit einer Bereitstellung von Adobe Campaign Classic  {#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic}
+### Synchronisieren von in AEM erstelltem Inhalt mit einer Bereitstellung von Adobe Campaign Classic {#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic}
 
 In Adobe Campaign können Sie in AEM erstellte Inhalte mithilfe der folgenden Optionen synchronisieren und wiederherstellen:
 
@@ -322,14 +321,14 @@ Der Arbeitsablaufschritt **In Adobe Campaign veröffentlichen** ist veraltet un
 
 So synchronisieren Sie in AEM erstellte Inhalte mit Bereitstellungen in Adobe Campaign:
 
-1. Erstellen Sie einen Versand oder fügen Sie einem Kampagnen-Workflow eine Versandaktivität hinzu, indem Sie die Versandvorlage **E-Mail-Versand mit AEM Inhalt (mailAEMContent)** auswählen.
+1. Erstellen Sie einen Versand oder fügen Sie einem Kampagnen-Workflow eine Versandaktivität hinzu, indem Sie die **E-Mail-Versand mit AEM Inhalt (mailAEMContent)** Versandvorlage.
 
    ![chlimage_1-40](assets/chlimage_1-40a.png)
 
-1. Wählen Sie **Synchronisieren** in der Symbolleiste aus, um auf die in AEM verfügbare Inhaltsliste zuzugreifen.
+1. Auswählen **Synchronisieren** in der Symbolleiste, um auf die in AEM verfügbare Inhaltsliste zuzugreifen.
 
    >[!NOTE]
-   Wenn die Option **Synchronisieren** nicht in der Symbolleiste des Versands angezeigt wird, überprüfen Sie, ob das Feld **Inhaltsbearbeitungsmodus** in **AEM** korrekt konfiguriert ist, indem Sie **Eigenschaften** > **Erweitert** auswählen.
+   Wenn die Variable **Synchronisieren** nicht in der Symbolleiste des Versands angezeigt wird, überprüfen Sie, ob die **Inhaltsbearbeitungsmodus** -Feld korrekt konfiguriert wurde in **AEM** durch Auswahl **Eigenschaften** > **Erweitert**.
 
    ![chlimage_1-41](assets/chlimage_1-41a.png)
 
@@ -353,8 +352,8 @@ So synchronisieren Sie in AEM erstellte Inhalte mit Bereitstellungen in Adobe C
 
    >[!NOTE]
    * Nach der Synchronisierung von Bereitstellung und Inhalten können die Inhalte in Adobe Campaign nur noch gelesen werden. Betreff und Inhalt der E-Mail lassen sich nicht länger bearbeiten.
-   * Wenn der Inhalt in AEM bearbeitet wird, während eine Verknüpfung mit einer Bereitstellung in Adobe Campaign besteht, wird dieser während der Analyse mit der Bereitstellung aktualisiert. Die Synchronisation kann auch manuell über die Schaltfläche **Inhalt jetzt aktualisieren** ausgeführt werden.
-   * Sie können die Synchronisation zwischen einem Versand und AEM Inhalt mithilfe der Schaltfläche **Synchronisation aufheben** abbrechen. Diese Schaltfläche steht nur zur Verfügung, wenn der Inhalt bereits mit der Bereitstellung synchronisiert wurde. Soll anderer Inhalt mit einer Bereitstellung synchronisiert werden, müssen Sie zunächst die aktuelle Synchronisierung abbrechen, bevor eine neue eingerichtet wird.
+   * Wenn der Inhalt in AEM bearbeitet wird, während eine Verknüpfung mit einer Bereitstellung in Adobe Campaign besteht, wird dieser während der Analyse mit der Bereitstellung aktualisiert. Die Synchronisation kann auch manuell mithilfe der **Inhalt jetzt aktualisieren** Schaltfläche.
+   * Sie können die Synchronisation zwischen einem Versand und AEM Inhalt mithilfe der **Synchronisierung aufheben** Schaltfläche. Diese Schaltfläche steht nur zur Verfügung, wenn der Inhalt bereits mit der Bereitstellung synchronisiert wurde. Soll anderer Inhalt mit einer Bereitstellung synchronisiert werden, müssen Sie zunächst die aktuelle Synchronisierung abbrechen, bevor eine neue eingerichtet wird.
    * Wurde die Synchronisierung der Bereitstellung aufgehoben, werden die Inhalte lokal gespeichert und lassen sich in Adobe Campaign bearbeiten. Wird der Inhalt nach einer Bearbeitung wieder synchronisiert, gehen sämtliche Änderungen verloren.
    * Bei wiederholten oder permanenten Bereitstellungen wird die Synchronisierung mit AEM-Inhalten jeweils bei der Durchführung der Bereitstellung unterbrochen.
 

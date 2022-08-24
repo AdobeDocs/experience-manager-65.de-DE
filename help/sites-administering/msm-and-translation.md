@@ -1,8 +1,8 @@
 ---
 title: Website-Administration
-seo-title: Website-Administration
+seo-title: Website Administration
 description: Erfahren Sie, wie mehrsprachige Websites in AEM verwaltet werden.
-seo-description: Erfahren Sie, wie mehrsprachige Websites in AEM verwaltet werden.
+seo-description: Learn how to manage multilingual websites in AEM.
 uuid: a32d458b-a5ad-46ef-a68c-4717c63b4bdd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '341'
 ht-degree: 99%
 
 ---
@@ -31,9 +31,9 @@ Die folgenden Administrationstools sind für die Verwaltung von Websites und Sei
 
 * Diese beiden Funktionen können kombiniert und für [internationale, mehrsprachige](#multinational-and-multilingual-sites) Websites eingesetzt werden.
 
-## Internationale, mehrsprachige Sites {#multinational-and-multilingual-sites}
+## Internationale, mehrsprachige Websites {#multinational-and-multilingual-sites}
 
-Sie können durch den kombinierten Einsatz von Multi Site Manager und Übersetzungs-Workflow auf effiziente Weise Inhalte für internationale, mehrsprachige Sites erstellen. Erstellen Sie eine Master-Website in einer Sprache und für ein bestimmtes Land und verwenden Sie diese Inhalte als Grundlage für die anderen Sites, wobei Sie bei Bedarf Übersetzungen einsetzen:
+Sie können durch den kombinierten Einsatz von Multi Site Manager und Übersetzungs-Workflow auf effiziente Weise Inhalte für internationale, mehrsprachige Websites erstellen. Erstellen Sie eine Master-Website in einer Sprache und für ein bestimmtes Land und verwenden Sie diese Inhalte als Grundlage für die anderen Sites, wobei Sie bei Bedarf Übersetzungen einsetzen:
 
 * [Übersetzen](/help/sites-administering/translation.md) Sie die primäre Website in verschiedene Sprachen.
 
@@ -61,8 +61,9 @@ Das folgende Diagramm veranschaulicht, wie sich die Hauptkonzepte überschneiden
 >Bei allen Nutzungsszenarien wird empfohlen, die folgenden Best Practices zu lesen:
 >
 >* [Best Practices für MSM](/help/sites-administering/msm-best-practices.md); insbesondere:
+   >
+   >   * [Erstellen einer Website](/help/sites-administering/msm-best-practices.md#create-site)
+   >   * [MSM und mehrsprachige Websites](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
 >
->   * [Erstellen einer Website](/help/sites-administering/msm-best-practices.md#create-site)
->   * [MSM und mehrsprachige Websites](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
 >* [Best Practices für die Übersetzung](/help/sites-administering/tc-bp.md)
 

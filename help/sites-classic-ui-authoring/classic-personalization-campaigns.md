@@ -1,8 +1,8 @@
 ---
-title: Kampagnen-Management
-seo-title: Kampagnen-Management
+title: Kampagnenmanagement
+seo-title: Campaign Management
 description: Das Kampagnenmanagement bietet E-Marketing-Experten die Möglichkeit, personalisierte Inhalte bereitzustellen und so individuelle Erlebnisse für Besucher zu schaffen. Es bietet Ihnen die Möglichkeit, Marketing-Kampagnen für Internet, E-Mail und Mobilgeräte zu erstellen und so Benutzerinteraktionen auszulösen.
-seo-description: Das Kampagnenmanagement bietet E-Marketing-Experten die Möglichkeit, personalisierte Inhalte bereitzustellen und so individuelle Erlebnisse für Besucher zu schaffen. Es bietet Ihnen die Möglichkeit, Marketing-Kampagnen für Internet, E-Mail und Mobilgeräte zu erstellen und so Benutzerinteraktionen auszulösen.
+seo-description: Campaign management provides digital marketers the opportunity to deliver personalized content and so create dedicated experiences for visitors. It allows you to orchestrate your marketing campaigns across the web, email and mobile services and so engage your visitors.
 uuid: 202d614b-a607-45de-8c24-1ee66b230315
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
 exl-id: d1741525-a475-4a76-bd16-55318023495e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '628'
 ht-degree: 92%
 
 ---
 
-# Kampagnen-Management{#campaign-management}
+# Kampagnenmanagement{#campaign-management}
 
 Das Kampagnenmanagement bietet E-Marketing-Experten die Möglichkeit, personalisierte Inhalte bereitzustellen und so individuelle Erlebnisse für Besucher zu schaffen.
 
@@ -39,12 +39,12 @@ Das Kampagnenmanagement umfasst verschiedene Elemente:
 In AEM bilden Marken die oberste Ebene und bilden eine Sammlung von 
 **Kampagnen**.
 
-* ****
-KampagnenEine Kampagne ist eine Kollektion einzelner Kampagnen 
+* **Kampagnen**
+Eine Kampagne ist eine Kollektion einzelner 
 **Erlebnisse**.
 
-* ****
-ErlebnisseDer fokussierte Inhalt bildet die verschiedenen Erlebnisse, die dem Besucher unter 
+* **Erlebnisse**
+Der fokussierte Inhalt bildet die verschiedenen Erlebnisse, die dem Besucher unter 
 **Touchpoints**. Es gibt verschiedene Erlebnistypen:
 
    * **Teasers**
@@ -59,7 +59,7 @@ ErlebnisseDer fokussierte Inhalt bildet die verschiedenen Erlebnisse, die dem Be
 
    * **Newsletter**
 
-      [E-Mail-](#emailmarketing) Kommunikation wird verwendet, um Benutzer dazu anzuregen, Ihre Website zu besuchen. Im Allgemeinen haben sie die Form eines Newsletters, der an die **Leads** gesendet wird (die im Allgemeinen in **Listen** unterteilt sind). **Hinweis:** Adobe plant nicht, diese Funktion weiter auszubauen.  Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
+      [E-Mail-Kommunikation](#emailmarketing) werden verwendet, um Benutzer zu binden und sie zu ermutigen, Ihre Website zu besuchen. Im Allgemeinen haben sie die Form eines Newsletters, der an die **Leads** gesendet wird (die im Allgemeinen in **Listen** unterteilt sind). **Hinweis:** Adobe plant nicht, diese Funktion weiter auszubauen.  Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
 
    * **Adobe Target**
 

@@ -8,9 +8,10 @@ audience: marketer
 feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 09e986c4-16b9-4ef5-a0b3-8d65b17a7f2c
+source-git-commit: 78359fb8ecbcc0227ab5a3910175aed73d823902
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '100'
 ht-degree: 88%
 
 ---
@@ -23,4 +24,4 @@ ht-degree: 88%
 
 Weitere Informationen zu diesem Thema finden Sie in der folgenden Ressource:
 
-- [AEM CIF-Kernkomponenten – Konfiguration mehrere Katalogseiten](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
+- [AEM-CIF-Kernkomponenten – Konfiguration mehrerer Katalogseiten](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)

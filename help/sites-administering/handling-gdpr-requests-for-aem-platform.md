@@ -1,16 +1,16 @@
 ---
 title: Handhabung von DSGVO-bezogenen Anfragen in AEM Foundation
-seo-title: Handhabung von DSGVO-bezogenen Anfragen in AEM Foundation
+seo-title: Handling GDPR Requests for the AEM Foundation
 description: Handhabung von DSGVO-bezogenen Anfragen in AEM Foundation
-seo-description: 'null'
+seo-description: null
 uuid: d470061c-bbcf-4d86-9ce3-6f24a764ca39
 contentOwner: sarchiz
 discoiquuid: 8ee843b6-8cea-45fc-be6c-99c043f075d4
 exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 57%
+source-wordcount: '435'
+ht-degree: 71%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 57%
 >
 >Die DSGVO wird in den folgenden Abschnitten als Beispiel verwendet, die betroffenen Informationen gelten jedoch für alle Datenschutz- und Datenschutzbestimmungen. wie DSGVO, CCPA usw.
 
-## AEM Foundation-DSGVO-Unterstützung {#aem-foundation-gdpr-support}
+## AEM DSGVO-Unterstützung von Foundation {#aem-foundation-gdpr-support}
 
 Auf AEM Foundation-Ebene sind die gespeicherten personenbezogenen Daten das Benutzerprofil. Dementsprechend wird in diesem Artikel in erster Linie erläutert, wie der Zugriff auf und das Löschen von Benutzerprofilen erfolgt, um DSGVO-bezogene Anfragen zum Datenzugriff bzw. zur Datenlöschung handzuhaben.
 
@@ -28,7 +28,7 @@ Auf AEM Foundation-Ebene sind die gespeicherten personenbezogenen Daten das Benu
 
 ### Manuelle Schritte {#manual-steps}
 
-1. Öffnen Sie die Konsole Benutzerverwaltung , indem Sie zu **[!UICONTROL Einstellungen - Sicherheit - Benutzer]** navigieren oder direkt zu `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html` navigieren.
+1. Öffnen Sie die Konsole Benutzerverwaltung , indem Sie zu **[!UICONTROL Einstellungen - Sicherheit - Benutzer]** oder direkt zu `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
 
    ![useradmin2](assets/useradmin2.png)
 
@@ -44,7 +44,7 @@ Auf AEM Foundation-Ebene sind die gespeicherten personenbezogenen Daten das Benu
 
 Wie bereits ausgeführt, bietet Adobe APIs, mit denen der Zugriff auf Benutzerdaten automatisiert werden kann. Es stehen verschiedene Arten von APIs zur Verfügung:
 
-**UserProperties API**
+**UserProperties-API**
 
 ```shell
 curl -u user:password http://localhost:4502/libs/granite/security/search/profile.userproperties.json\?authId\=cavery
@@ -61,7 +61,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 *Abrufen von Benutzerdaten*
 
-Verwenden des Knotenpfads aus der Starteigenschaft der JSON-Payload, der vom obigen Befehl zurückgegeben wird:
+Verwenden Sie dazu den Knotenpfad der über den vorangegangenen Befehl ausgegebenen Home-Eigenschaft der JSON-Payload:
 
 ```shell
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile.-1.json'
@@ -73,12 +73,12 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ## Deaktivieren von Benutzern und Löschen der zugehörigen Profile {#disabling-a-user-and-deleting-the-associated-profiles}
 
-### Benutzer deaktivieren {#disable-user}
+### Deaktivieren von Benutzern {#disable-user}
 
 1. Öffnen Sie die Konsole für die Benutzerverwaltung und suchen Sie nach dem entsprechenden Benutzer, wie oben beschrieben.
 1. Bewegen Sie den Mauszeiger über den Benutzer und klicken Sie auf das Auswahlsymbol. Das ausgewählte Profil wird nun in grau angezeigt.
 
-1. Klicken Sie auf die Schaltfläche „Deaktivieren“ im oberen Menü, um den Benutzer zu deaktivieren:
+1. Klicken Sie auf die Schaltfläche Deaktivieren im oberen Menü, um den Benutzer zu deaktivieren:
 
    ![userdisable](assets/userdisable.png)
 
@@ -90,13 +90,13 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![disableduser](assets/disableduser.png)
 
-### Benutzerprofilinformationen löschen {#delete-user-profile-information}
+### Löschen von Benutzerprofilinformationen {#delete-user-profile-information}
 
-1. Melden Sie sich bei CRXDE Lite an und suchen Sie dann nach `[!UICONTROL userId]`:
+1. Melden Sie sich bei CRXDE Lite an und suchen Sie dann nach der `[!UICONTROL userId]`:
 
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 
-1. Öffnen Sie den Benutzerknoten, der sich standardmäßig unter `[!UICONTROL /home/users]` befindet:
+1. Öffnen Sie den Benutzerknoten, der sich unter `[!UICONTROL /home/users]` standardmäßig:
 
    ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
 
@@ -109,7 +109,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### -HTTP-API {#http-api-1}
 
-Die folgenden Verfahren verwenden das `curl` Befehlszeilenwerkzeug, um zu veranschaulichen, wie Benutzer mit der **[!UICONTROL Aufnahme]** deaktiviert und die entsprechenden Profile am Standardspeicherort gelöscht werden können `userId`.
+Die folgenden Verfahren verwenden das Befehlszeilen-Tool `curl`, um zu veranschaulichen, wie die Benutzerin mit der `userId` **[!UICONTROL cavery]** deaktiviert und ihre Profile am Standardspeicherort gelöscht werden können.
 
 * *Ermitteln der Benutzerstartseite*
 
@@ -120,7 +120,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 * *Deaktivieren des Benutzers*
 
-Verwenden des Knotenpfads aus der Starteigenschaft der JSON-Payload, der vom obigen Befehl zurückgegeben wird:
+Verwenden Sie dazu den Knotenpfad der über den vorangegangenen Befehl ausgegebenen Home-Eigenschaft der JSON-Payload:
 
 ```shell
 curl -X POST -u user:password -FdisableUser="describe the reasons for disabling this user (GDPR in this case)" 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN.rw.userprops.html'
@@ -128,7 +128,7 @@ curl -X POST -u user:password -FdisableUser="describe the reasons for disabling 
 
 * *Löschen von Benutzerprofilen*
 
-Verwenden Sie den Knotenpfad der Starteigenschaft der JSON-Payload, der vom Konto-Erkennungsbefehl zurückgegeben wird, und die bekannten Out-of-the-box-Knoten-Speicherorte:
+Verwenden Sie dazu den Knotenpfad der Home-Eigenschaft der JSON-Payload, der über den Befehl zur Ermittlung der Benutzerstartseite ausgegeben wurde, sowie die bekannten vorkonfigurierten Speicherorte des Profilknotens:
 
 ```shell
 curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'

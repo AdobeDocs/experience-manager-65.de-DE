@@ -38,7 +38,6 @@ Bei der Verwaltung von Workflows können Sie sie mit unterschiedlichen Methoden 
 >* [Anwenden von Workflows auf DAM-Assets](/help/assets/assets-workflow.md)
 >* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [Übersetzungsprojekte](/help/sites-administering/tc-manage.md)
-
 >
 
 
@@ -50,7 +49,7 @@ Sie können einen Workflow [basierend auf einem der Modelle](/help/sites-adminis
 
 Der Workflow-Starter überwacht Änderungen im Inhalts-Repository, um Workflows abhängig vom Speicherort und Ressourcentyp des geänderten Knotens zu starten.
 
-Mit dem **Starter** haben Sie folgende Möglichkeiten:
+Verwenden der **Starter** Sie können:
 
 * die Workflows anzeigen, die bereits für spezifische Knoten gestartet wurden
 * einen Workflow auswählen, der gestartet werden soll, wenn ein bestimmter Knoten/Knotentyp erstellt, bearbeitet oder gelöscht wurde
@@ -59,7 +58,7 @@ Mit dem **Starter** haben Sie folgende Möglichkeiten:
 Ein Starter kann für jeden beliebigen Knoten erstellt werden. Bei Änderungen an bestimmten Knoten werden jedoch keine Workflows gestartet. Änderungen an Knoten unter den folgenden Pfaden führen nicht zum Start von Workflows:
 
 * `/var/workflow/instances`
-* Jeder Workflow-Posteingangsknoten, der sich an einer beliebigen Stelle im Zweig `/home/users` befindet
+* Jeder Workflow-Posteingangsknoten, der sich an einer beliebigen Stelle im `/home/users` Verzweigung
 * `/tmp`
 * `/var/audit`
 * `/var/classes`
@@ -68,7 +67,7 @@ Ein Starter kann für jeden beliebigen Knoten erstellt werden. Bei Änderungen a
 * `/var/mobile`
 * `/var/statistics`
 
-   * Ausnahme: Änderungen an Knoten unter `/var/statistics/tracking` *do* führen dazu, dass Workflows gestartet werden.
+   * Ausnahme: Änderungen an Knoten unter `/var/statistics/tracking` *do* Workflows starten.
 
 In der Standardinstallation sind verschiedene Definitionen enthalten. Sie werden für Aufgaben aus den Bereichen Digital Asset Management und Social Collaboration verwendet:
 
@@ -88,14 +87,14 @@ Ein Workflow-Paket:
 
 ## Starten eines Workflows über die Modelle-Konsole {#starting-a-workflow-from-the-models-console}
 
-1. Navigieren Sie zur Konsole **Modelle** mit **Tools**, **Workflow** und dann **Modelle**.
+1. Navigieren Sie zum **Modelle** Konsole verwenden **Instrumente**, **Workflow**, dann **Modelle**.
 1. Wählen Sie den Workflow aus (entsprechend der Konsolenansicht). Bei Bedarf können Sie auch die Suche (links oben) verwenden:
 
    ![wf-103](assets/wf-103.png)
 
    >[!NOTE]
    >
-   >Der Indikator **[Übergang](/help/sites-developing/workflows.md#transient-workflows)** zeigt Workflows an, für die der Workflow-Verlauf nicht beibehalten wird.
+   >Die **[Übergangs](/help/sites-developing/workflows.md#transient-workflows)** zeigt Workflows an, für die der Workflow-Verlauf nicht beibehalten wird.
 
 1. Wählen Sie in der Symbolleiste **Workflow starten** aus.
 1. Das Dialogfeld „Workflow ausführen“ wird geöffnet. Darin können Sie Folgendes festlegen:
@@ -115,8 +114,8 @@ Ein Workflow-Paket:
 
 ## Erstellen einer Starter-Konfiguration {#creating-a-launcher-configuration}
 
-1. Navigieren Sie zur Konsole **Workflow-Starter** mit **Tools**, **Workflow** und **Starter**.
-1. Wählen Sie **Create** und dann **Add Launcher** aus, um das Dialogfeld zu öffnen:
+1. Navigieren Sie zum **Workflow-Starter** Konsole verwenden **Instrumente**, **Workflow**, dann **Starter**.
+1. Auswählen **Erstellen**, dann **Launcher hinzufügen** , um das Dialogfeld zu öffnen:
 
    ![wf-105](assets/wf-105.png)
 
@@ -174,9 +173,9 @@ Ein Workflow-Paket:
       Bei dieser Startereigenschaft handelt es sich um eine Reihe von kommagetrennten Elementen: ``
 
       * `property-name` ignoriert alle `jcr`-Ereignisse, die beim festgelegten Eigenschaftsnamen ausgelöst werden. ``
-      * `event-user-data:<*someValue*>` ignoriert alle Ereignisse, die das  `*<someValue*`>- `user-data` Set über die  [ `ObservationManager` API] enthalten (https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+      * `event-user-data:<*someValue*>` ignoriert alle Ereignisse, die die `*<someValue*`> `user-data` über die [ `ObservationManager` API](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String.
 
-      Zum Beispiel:
+      Beispiel:
 
       `jcr:lastModified,dc:modified,dc:format,jcr:lastModifiedBy,imageMap,event-user-data:changedByWorkflowProcess`
 
@@ -194,4 +193,4 @@ Ein Workflow-Paket:
 
 ## Verwalten einer Starter-Konfiguration {#managing-a-launcher-configuration}
 
-Nachdem Sie Ihre Starter-Konfiguration erstellt haben, können Sie dieselbe Konsole verwenden, um die Instanz auszuwählen, dann **Eigenschaften anzeigen** (und sie bearbeiten) oder **Löschen**.
+Nachdem Sie Ihre Starter-Konfiguration erstellt haben, können Sie dieselbe Konsole verwenden, um die Instanz auszuwählen, und dann **Eigenschaften anzeigen** (und bearbeiten Sie sie) oder **Löschen**.

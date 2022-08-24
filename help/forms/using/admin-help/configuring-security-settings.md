@@ -12,7 +12,7 @@ discoiquuid: a89ab508-173f-4b1c-88d9-ef944af4d9ae
 feature: PDF Generator
 exl-id: be076477-2681-4570-953d-6c44d3c30843
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1367'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ Auf der Seite „Sicherheitseinstellungen“ können Sie die folgenden Aufgaben 
 
 Eine *Sicherheitseinstellung* steuert die Sicherheit und Berechtigungen für Dateien, die mit dieser Sicherheitseinstellung konvertiert werden.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „PDF Generator“ > „Sicherheitseinstellungen“.
+1. Klicken Sie in der Administration Console auf Services > PDF-Generator > Sicherheitseinstellungen.
 1. Klicken Sie auf „Neu“ oder auf den Namen einer Sicherheitseinstellung.
 1. Geben Sie auf der Seite „Sicherheitseinstellung“ im Bereich „Neu/Bearbeiten“ die erforderlichen Informationen für die Sicherheitseinstellung ein. (Siehe [Sicherheitseinstellungen](/help/forms/using/admin-help/configuring-file-type-settings.md#configuring-file-type-settings).)
 1. Klicken Sie auf „Speichern“, geben Sie in dem eingeblendeten Dialogfeld einen Namen für die Einstellung ein und klicken Sie auf „OK“.
@@ -47,7 +47,7 @@ Mit diesen Einstellungen werden die Kompatibilität und Verschlüsselung konfigu
 
 **Acrobat 7.0 und höher:** Verwendet hohe Verschlüsselung (128-Bit AES). Diese Option ermöglicht die Aktivierung von Metadaten für Suchfunktionen und die ausschließliche Verschlüsselung von Dateianlagen.
 
-**Acrobat 9.0 und höher:** Verwendet hohe Verschlüsselung (256-Bit AES). Diese Option ermöglicht die Aktivierung von Metadaten für Suchfunktionen und die ausschließliche Verschlüsselung von Dateianlagen. 
+**Acrobat 9.0 und höher:** Verwendet hohe Verschlüsselung (256-Bit AES). Diese Option ermöglicht die Aktivierung von Metadaten für Suchfunktionen und die ausschließliche Verschlüsselung von Dateianlagen.
 
 Mit einer früheren Version von Acrobat können keine PDF-Dokumente mit einer höheren Kompatibilitätseinstellung geöffnet werden. Wenn Sie beispielsweise die Option „Acrobat 7.0 und höher“ auswählen, kann das Dokument nicht in Acrobat 6.0 oder niedriger geöffnet werden. 
 
@@ -81,7 +81,7 @@ Mit diesen Einstellungen wird der Kennwortschutz konfiguriert:
 
 **Kennwort zum Öffnen der Dateianlage:** Stellt sicher, dass zum Öffnen eines Dateianhangs ein Kennwort erforderlich ist. Benutzer können das Dokument nicht ohne Kennwortangabe öffnen. Diese Option ist nur verfügbar, wenn die Option „Kompatibilität“ auf „Acrobat 7.0 und höher“ oder „Acrobat 9.0 und höher“ und die Option „Dokumenteinschränkung“ auf „Nur Dateianlagen verschlüsseln“ festgelegt ist.
 
-**Kennwort zum Öffnen der Dataianlage erneut eingeben:** Stellt sicher, dass das Kennwort korrekt ist. Diese Option ist nur verfügbar, wenn die Option „Kompatibilität“ auf „Acrobat 7.0 und höher“ oder „Acrobat 9.0 und höher“ und die Option „Dokumenteinschränkung“ auf „Nur Dateianlagen verschlüsseln“ festgelegt ist. 
+**Kennwort zum Öffnen der Dataianlage erneut eingeben:** Stellt sicher, dass das Kennwort korrekt ist. Diese Option ist nur verfügbar, wenn die Option „Kompatibilität“ auf „Acrobat 7.0 und höher“ oder „Acrobat 9.0 und höher“ und die Option „Dokumenteinschränkung“ auf „Nur Dateianlagen verschlüsseln“ festgelegt ist.
 
 Mit diesen Optionen werden Berechtigungen konfiguriert:
 

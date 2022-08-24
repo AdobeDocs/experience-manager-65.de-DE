@@ -2,19 +2,19 @@
 title: Content Services
 seo-title: Content Services
 description: Content Services
-seo-description: 'null'
+seo-description: null
 uuid: 7bd09c91-3931-400b-bdfc-b064b9ca9668
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 955ffb1c-4fa9-43bb-8e5b-2df7f2d17951
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 10%
+source-wordcount: '299'
+ht-degree: 9%
 
 ---
-
 
 # Content Services{#content-services}
 
@@ -34,7 +34,7 @@ Content Services führt mehrere neue AEM-Konstrukte ein, mit denen Entwickler au
 
 Diese Konstrukte sind erforderlich, um Flexibilität zu gewährleisten und eine künftige Erweiterung zu ermöglichen, indem eine Abstraktionsebene zwischen den AEM verwalteten Inhalten und den Apps, die den Inhalt konsumieren, bereitgestellt wird. Dadurch kann AEM Content Services als Abstraktionsebene zwischen den Inhaltsanforderungen der nativen Anwendung und dem AEM Content Repository funktionieren.
 
-Content Services kann den Inhalt als Assets, verpacktes HTML (HTML/CSS/JS) oder als kanalunabhängigen Inhalt bereitstellen.
+Content Services kann die Inhalte als Assets, verpackte HTML (HTML/CSS/JS) oder als kanalunabhängige Inhalte bereitstellen.
 
 >[!CAUTION]
 >
@@ -42,7 +42,7 @@ Content Services kann den Inhalt als Assets, verpacktes HTML (HTML/CSS/JS) oder 
 >
 >Stellen Sie vor dem Einstieg in Content Services sicher, dass Sie das Flag Content Services aktivieren. Um die Erstellung und Verwaltung von Modellen in Ihrer App zu aktivieren, müssen Sie Datenmodelle im Konfigurationsbrowser aktivieren.
 >
->Weitere Informationen finden Sie unter **[Verwalten von Content Services](/help/mobile/developing-content-services.md)** und in der Dokumentation [Konfigurationsbrowser](/help/sites-administering/configurations.md) .
+>Siehe **[Verwalten von Content Services](/help/mobile/developing-content-services.md)** und [Konfigurationsbrowser](/help/sites-administering/configurations.md) Dokumentation finden Sie weitere Informationen.
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 

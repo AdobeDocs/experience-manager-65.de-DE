@@ -134,7 +134,6 @@ Wenden Sie sich an Ihren Kundenbetreuer, wenn Sie Fragen zu den Communities-Vari
 >* **`evar1`** bis **`evar11`**
 >
 >* **`event1`** bis **`event7`**
-
 >
 >**Bevor die Community-Site veröffentlicht wird,** Es ist wichtig, die bereits vorhandene Zuordnung wiederherzustellen, indem die AEM Variablen verschoben werden, die automatisch Analytics-Variablen zugeordnet waren, als Analytics für eine Community-Site aktiviert wurde.
 >
@@ -578,7 +577,6 @@ Siehe Abschnitte:
 >* **`evar1`** bis **`evar11`**
 >
 >* **`event1`** bis **`event7`**
-
 >
 >**Bevor die Community-Site veröffentlicht wird,** Es ist wichtig, die bereits vorhandene Zuordnung wiederherzustellen und die Communities AEM Variablen, die automatisch zugeordnet wurden (als Analytics für die Community-Site aktiviert wurde), in andere Analytics-Variablen zu verschieben. Diese Neuzuordnung sollte für alle Communities-Komponenten einheitlich sein.
 >
@@ -642,7 +640,7 @@ Das Forenthema ist derzeit das einzige Beispiel für diese Anpassung:
 * Gehen Sie zu [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Beispiel: [https://localhost:4503/crx/de](https://localhost:4503/crx/de).
 
 * Unter dem Knoten jcr:content des Sprachstamms (z. B. `/content/sites/engage/en/jcr:content),`Navigieren Sie zur für die Analytics-Berichterstellung konfigurierten Komponente.
-Zum Beispiel: **`analytics/reportConfigs/social_forum_components_hbs_topic`**
+Beispiel: **`analytics/reportConfigs/social_forum_components_hbs_topic`**
 
 * Beachten Sie die erstellten Zeiträume:
 

@@ -52,7 +52,7 @@ Sie können diese Zahlen in der Tabelle zur Netzwerkdimensionierung angeben, um 
 
 Die in das Tool aufgefüllten Beispieldaten zeigen, wie wichtig die Ausführung der genannten Schritte ist. Wenn Sie den Datenspeicher allein basierend auf dem Ladevorgang der Rohbilder (1 TB) bemessen, ist eine Unterbewertung der Repositorygröße um dem Faktor 15 möglich.
 
-[Datei laden](assets/disk_sizing_tool.xlsx)
+[Datei herunterladen](assets/disk_sizing_tool.xlsx)
 
 ### Freigegebene Datenspeicher {#shared-datastores}
 
@@ -99,7 +99,7 @@ Binärdateien in einem Datenspeicher aufzubewahren bedeutet, dass entsprechender
 
 Verwenden Sie für das Repository SSDs oder Festplatten mit einem IOPS-Level größer als 3000. Damit im Zuge der IOPS keine Leistungsengpässe entstehen, überwachen Sie die CPU-I/O-Wartelevel auf frühe Problemanzeichen.
 
-[Datei laden](assets/aem_environment_sizingtool.xlsx)
+[Datei herunterladen](assets/aem_environment_sizingtool.xlsx)
 
 ## Netzwerk {#network}
 

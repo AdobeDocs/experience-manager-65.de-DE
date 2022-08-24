@@ -1,8 +1,8 @@
 ---
 title: Erstellen von Seitenvorlagen
-seo-title: Erstellen von Seitenvorlagen
+seo-title: Creating Page Templates
 description: Eine Vorlage definiert die Struktur einer erstellten Seite und mit dem Vorlageneditor ist die Erstellung und Verwaltung von Vorlagen nicht mehr nur Entwicklern vorbehalten.
-seo-description: Eine Vorlage definiert die Struktur einer erstellten Seite und mit dem Vorlageneditor ist die Erstellung und Verwaltung von Vorlagen nicht mehr nur Entwicklern vorbehalten.
+seo-description: The template defines the structure of the resultant page and with the template editor, creating and maintaining templates is no longer a developer-only task
 uuid: e14cd298-289f-43f0-aacb-314ed5d56c12
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
 source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '4901'
+source-wordcount: '4874'
 ht-degree: 97%
 
 ---
@@ -45,7 +45,7 @@ Ausführliche Informationen zur Funktionsweise von bearbeitbaren Vorlagen auf te
 
 >[!CAUTION]
 >
->Seiten und Vorlagen, die mit der **Vorlagenkonsole** erstellt wurden, sind nicht für die Verwendung mit der klassischen Benutzeroberfläche vorgesehen und eine solche Verwendung wird nicht unterstützt.
+>Seiten und Vorlagen, die mit der **Vorlagenkonsole** sind nicht für die Verwendung mit der klassischen Benutzeroberfläche vorgesehen und eine solche Verwendung wird nicht unterstützt.
 
 ## Bevor Sie beginnen {#before-you-start}
 
@@ -110,7 +110,7 @@ AEM bietet jetzt zwei grundlegende Arten von Vorlagen:
    * Sie werden [von Ihren Entwicklern bereitgestellt](/help/sites-developing/page-templates-static.md) und können somit nicht von Autoren erstellt oder bearbeitet werden.
    * Sie werden kopiert, um die neue Seite zu erstellen, wobei danach keine dynamische Verbindung besteht (obwohl der Name der Vorlage zu Informationszwecken registriert ist).
    * Verwenden Sie den [Designmodus](/help/sites-authoring/default-components-designmode.md), um Designeigenschaften beizubehalten.
-   * Da die Bearbeitung statischer Vorlagen die ausschließliche Aufgabe eines Entwicklers ist, finden Sie im Entwicklerdokument [Seitenvorlagen - Statisch](/help/sites-developing/page-templates-static.md) weitere Informationen.
+   * Da die Bearbeitung statischer Vorlagen die ausschließliche Aufgabe eines Entwicklers ist, lesen Sie das Entwicklerdokument [Seitenvorlagen - Statisch](/help/sites-developing/page-templates-static.md) für weitere Informationen.
 
 Laut Definition ermöglichen die Vorlagenkonsole und der Vorlagen-Editor nur das Erstellen und Bearbeiten von bearbeitbaren Vorlagen. Das vorliegende Dokument beschäftigt sich daher nur mit bearbeitbaren Vorlagen.
 
@@ -189,7 +189,7 @@ Eine Vorlage kann die folgenden Eigenschaften haben:
 
 * Bild
 
-   * Bild, das als [Miniaturansicht der Vorlage verwendet wird](/help/sites-authoring/templates.md#template-thumbnail-image), um die Auswahl zu vereinfachen, beispielsweise im Seitenerstellungsassistenten.
+   * Bild, das als [Miniatur der Vorlage verwendet wird](/help/sites-authoring/templates.md#template-thumbnail-image), um die Auswahl zu vereinfachen, beispielsweise im Seitenerstellungsassistenten.
 
       * Kann hochgeladen werden
       * Kann auf der Grundlage des Vorlageninhalts generiert werden
@@ -622,7 +622,7 @@ Der Seitenentwurf, einschließlich der erforderlichen Client-seitigen Bibliothek
 
 So greifen Sie auf das Dialogfeld **Seitendesign** zu:
 
-1. Wählen Sie im **Vorlagen-Editor** **Seiteninformationen** aus der Symbolleiste und dann **Seitendesign** aus, um das Dialogfeld zu öffnen.
+1. Aus dem **Vorlagen-Editor** auswählen **Seiteninformationen** aus der Symbolleiste und **Seitendesign** , um das Dialogfeld zu öffnen.
 1. Das Dialogfeld **Seitendesign** wird geöffnet. Es ist in zwei Abschnitte unterteilt:
 
    * Die linke Hälfte definiert die [Seitenrichtlinien](/help/sites-authoring/templates.md#page-policies).

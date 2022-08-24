@@ -4,7 +4,7 @@ description: 'Definieren Sie die Position von Komponenten mithilfe des responsiv
 feature: Interactive Communication
 exl-id: 9534fcb2-4260-4dd0-9f7e-779b10fd3a22
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 100%
 
@@ -96,7 +96,7 @@ Sie können den Layout-Modus für Formulare mit altem responsivem Layout deaktiv
 Gehen Sie wie folgt vor, um den Layout-Modus zu deaktivieren:
 
 1. Wählen Sie **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Vorlagen]** und öffnen Sie die Vorlage, die im Formular im Modus **[!UICONTROL Bearbeiten]** verwendet wird.
-1. Wählen Sie den Dokumentcontainer im linken Fenster aus und tippen Sie auf **[!UICONTROL Richtlinie.]**
+1. Wählen Sie den Dokument-Container im linken Fensterbereich aus und tippen Sie auf **[!UICONTROL Richtlinie]**.
 
    ![Deaktivieren des Layout-Modus](assets/policy_disable_layout_mode.png)
 

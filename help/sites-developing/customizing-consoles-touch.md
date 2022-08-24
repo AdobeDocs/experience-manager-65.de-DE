@@ -1,8 +1,8 @@
 ---
 title: Anpassen der Konsolen
-seo-title: Anpassen der Konsolen
+seo-title: Customizing the Consoles
 description: AEM bietet verschiedene Methoden zum Anpassen der Konsolen Ihrer Autoreninstanz.
-seo-description: AEM bietet verschiedene Methoden zum Anpassen der Konsolen Ihrer Autoreninstanz.
+seo-description: AEM provides various mechanisms to enable you to customize the consoles of your authoring instance
 uuid: 8ecce9ff-5907-41e1-af3b-a8646352d633
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,12 +13,12 @@ docset: aem65
 exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '699'
 ht-degree: 77%
 
 ---
 
-# Anpassen der Konsolen  {#customizing-the-consoles}
+# Anpassen der Konsolen {#customizing-the-consoles}
 
 >[!CAUTION]
 >
@@ -26,10 +26,9 @@ ht-degree: 77%
 
 AEM bietet verschiedene Methoden zum Anpassen von Konsolen (und der [Seitenbearbeitungsfunktionen](/help/sites-developing/customizing-page-authoring-touch.md)) Ihrer Autoreninstanz.
 
-* Clientbibliotheken Mit Clientbibliotheken können Sie die Standardimplementierung um neue Funktionen erweitern und gleichzeitig Standardfunktionen, -objekte und -methoden weiterhin verwenden. Bei der Anpassung können Sie Ihre eigene Client-Bibliothek unter `/apps.` erstellen. Beispielsweise kann sie den Code enthalten, der für Ihre benutzerdefinierte Komponente erforderlich ist.
+* Clientbibliotheken Mit Clientbibliotheken können Sie die Standardimplementierung um neue Funktionen erweitern und gleichzeitig Standardfunktionen, -objekte und -methoden weiterhin verwenden. Bei der Anpassung können Sie Ihre eigene clientlib unter erstellen. `/apps.` Beispielsweise kann er den Code enthalten, der für Ihre benutzerdefinierte Komponente erforderlich ist.
 
-* Überlagerungen
-Überlagerungen basieren auf Knotendefinitionen und ermöglichen es Ihnen, die Standardfunktionalität (in `/libs`) mit Ihrer eigenen benutzerdefinierten Funktionalität (in `/apps`) zu überlagern. Wenn Sie eine Überlagerung erstellen, ist keine 1:1-Kopie des Originals erforderlich, da die Sling-Ressourcenzusammenführung das Vererben zulässt.
+* Überlagerungen Überlagerungen basieren auf Knotendefinitionen und ermöglichen die Überlagerung der Standardfunktionen (in `/libs`) mit Ihrer eigenen benutzerdefinierten Funktionalität (in `/apps`). Wenn Sie eine Überlagerung erstellen, ist keine 1:1-Kopie des Originals erforderlich, da die Sling-Ressourcenzusammenführung das Vererben zulässt.
 
 Überlagerungen können vielseitig zum Erweitern von AEM-Konsolen verwendet werden. Einige davon sind nachstehend (allgemein) beschrieben.
 
@@ -40,10 +39,8 @@ AEM bietet verschiedene Methoden zum Anpassen von Konsolen (und der [Seitenbearb
 >* Verwenden und Erstellen von [Clientbibliotheken](/help/sites-developing/clientlibs.md).
 >* Verwenden und Erstellen von [Überlagerungen](/help/sites-developing/overlays.md).
 >* [Granite](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
-
 >
->
-Dieses Thema wird auch in der [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html)-Sitzung [Anpassung der Benutzeroberfläche für AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html) behandelt.
+>Dieses Thema wird auch in der [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html)-Sitzung [Anpassung der Benutzeroberfläche für AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html) behandelt.
 
 >[!CAUTION]
 >
@@ -53,16 +50,14 @@ Dieses Thema wird auch in der [AEM Gems](https://docs.adobe.com/content/ddc/en/g
 >
 >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
 >
->1. Erstellen Sie das erforderliche Element (d. h. wie es in `/libs` vorhanden ist) unter `/apps` neu.
-   >
-   >
-1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
+>1. Erstellen Sie das erforderliche Element (d. h. wie es in vorhanden ist) neu. `/libs`) unter `/apps`
+>
+>1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 
 >
 
 
-
-Beispielsweise kann der folgende Speicherort innerhalb der `/libs`-Struktur überlagert werden:
+Beispielsweise die folgende Position innerhalb der `/libs` -Struktur kann überlagert werden:
 
 * Konsolen (alle Konsolen basierend auf Seiten der Granite-Benutzeroberfläche); zum Beispiel:
 
@@ -132,13 +127,13 @@ Sie können die Standardansicht (Spalte, Karte, Liste) für eine Konsole anpasse
 
    `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-   Mithilfe der Eigenschaften dieses Knotens können Sie die `groups` definieren, die für die Ausführung der spezifischen Aktion zulässig ist. Beispiel: `administrators`
+   Mithilfe der Eigenschaften dieses Knotens können Sie die `groups` die spezifische Aktion ausführen dürfen; Beispiel: `administrators`
 
 ### Anpassen von Spalten in der Listenansicht {#customizing-columns-in-the-list-view}
 
 >[!NOTE]
 >
->Diese Funktion ist für Spalten von Textfeldern optimiert. Bei anderen Datentypen ist es möglich, `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps` zu überlagern.
+>Diese Funktion ist für Spalten von Textfeldern optimiert. Bei anderen Datentypen ist es möglich, Überlagerungen vorzunehmen `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
 
 Anpassen von Spalten in der Listenansicht:
 
@@ -155,14 +150,14 @@ Anpassen von Spalten in der Listenansicht:
 
 1. Optional:
 
-   * Wenn Sie zusätzliche Daten einbinden möchten, müssen Sie einen [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) mit einer
-      `pageInfoProviderType` property.
+   * Wenn Sie zusätzliche Daten einbinden möchten, müssen Sie eine [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) mit
+      `pageInfoProviderType`.
 
    Ein Beispiel sehen Sie im unten (aus GitHub) angehängten Class-Bundle.
 
 1. Sie können jetzt die Spalte im Spaltenkonfigurator der Listenansicht auswählen.
 
-### Filtern von Ressourcen  {#filtering-resources}
+### Filtern von Ressourcen {#filtering-resources}
 
 Ein häufiges Nutzungsszenario beim Verwenden der Konsole ist die Auswahl von Ressourcen (z. B. Seiten, Komponenten, Assets usw.) durch den Benutzer. Dabei kann beispielsweise eine Liste verwendet werden, aus der der Autor ein Element auswählen muss.
 

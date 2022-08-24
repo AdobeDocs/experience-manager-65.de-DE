@@ -1,14 +1,14 @@
 ---
 title: Benutzerdefinierte Standalone-Installation
-seo-title: Benutzerdefinierte Standalone-Installation
+seo-title: Custom Standalone Install
 description: Erfahren Sie mehr über die verfügbaren Optionen beim Installieren einer AEM-Standalone-Instanz.
-seo-description: Erfahren Sie mehr über die verfügbaren Optionen beim Installieren einer AEM-Standalone-Instanz.
+seo-description: Learn about the options available when installing a standalone AEM instance.
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
 source-git-commit: 3e18eed63d676e22e12483a1ee68e7e0148d8083
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1609'
 ht-degree: 78%
 
 ---
@@ -17,15 +17,15 @@ ht-degree: 78%
 
 In diesem Abschnitt wird beschrieben, welche Optionen bei der Installation einer AEM-Standalone-Instanz verfügbar sind. Weitere Informationen zur Auswahl des Backend-Speichertyps nach erfolgter Neuinstallation von AEM 6 finden Sie unter [Speicherelemente](/help/sites-deploying/storage-elements-in-aem-6.md).
 
-## Ändern der Portnummer durch Umbenennung der Datei  {#changing-the-port-number-by-renaming-the-file}
+## Ändern der Portnummer durch Umbenennung der Datei {#changing-the-port-number-by-renaming-the-file}
 
 Der Standardport für AEM lautet 4502. Wenn dieser Anschluss nicht verfügbar ist oder bereits verwendet wird, konfiguriert sich Quickstart automatisch selbst, um die erste verfügbare Anschlussnummer wie folgt zu verwenden: 4502, 8080, 8081, 8082, 8083, 8084, 8085, 888, 9362, `<*random*>`.
 
-Sie können die Portnummer auch festlegen, indem Sie die JAR-Datei &quot;quickstart&quot;umbenennen, sodass der Dateiname die Portnummer enthält. z. B. `cq5-publish-p4503.jar` oder `cq5-author-p6754.jar`.
+Sie können die Portnummer auch festlegen, indem Sie die JAR-Datei &quot;quickstart&quot;umbenennen, sodass der Dateiname die Portnummer enthält. Beispiel: `cq5-publish-p4503.jar` oder `cq5-author-p6754.jar`.
 
 Beachten Sie beim Umbenennen der Quickstart-JAR-Datei die folgenden Regeln:
 
-* Wenn Sie die Datei umbenennen, muss sie mit `cq;` beginnen, wie in `cq5-publish-p4503.jar`.
+* Wenn Sie die Datei umbenennen, muss sie mit `cq;` wie in `cq5-publish-p4503.jar`.
 
 * Es wird empfohlen, die Portnummer *immer* mit dem Präfix „-p“ zu versehen, wie zum Beispiel in „cq5-publish-p4503.jar“ oder „cq5-author-p6754.jar“.
 
@@ -35,28 +35,26 @@ Beachten Sie beim Umbenennen der Quickstart-JAR-Datei die folgenden Regeln:
 >
 >* Die Portnummer muss aus 4 bis 5 Ziffern bestehen.
 >* Diese Ziffern müssen nach dem Bindestrich stehen.
->* Wenn der Dateiname eine andere Ziffer enthält, muss der Portnummer `-p` vorangestellt werden.
+>* Wenn der Dateiname eine andere Ziffer enthält, muss der Anschlussnummer das Präfix vorangestellt werden. `-p`
 >* Das Präfix „cq5“ am Anfang des Dateinamens wird ignoriert.
-
 >
-
 
 
 >[!NOTE]
 >
->Sie können die Portnummer auch ändern, indem Sie die Option `-port` im Startbefehl verwenden.
+>Sie können die Portnummer auch ändern, indem Sie die `-port` im Startbefehl.
 
 ### Besonderheiten von Java 11 {#java-considerations}
 
 Wenn Sie Oracle Java 11 ausführen (oder generell Java-Versionen aktueller als 8), werden zusätzliche Parameter zu Ihrer Befehlszeile hinzugefügt, sobald AEM gestartet wird.
 
-* Die folgenden - `-add-opens` -Switches müssen hinzugefügt werden, um entsprechende Reflektionszugriffswarnungen in `stdout.log` zu verhindern
+* Folgendes - `-add-opens` Switches müssen hinzugefügt werden, um den entsprechenden Reflektionszugriff auf WARNING-Meldungen in der `stdout.log`
 
 ```shell
 --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning
 ```
 
-* Außerdem müssen Sie den `-XX:+UseParallelGC`-Switch verwenden, um potenzielle Leistungsprobleme zu vermeiden.
+* Darüber hinaus müssen Sie die `-XX:+UseParallelGC` umschalten, um potenzielle Leistungsprobleme zu vermeiden.
 
 Nachfolgend finden Sie ein Beispiel dafür, wie die zusätzlichen JVM-Parameter aussehen sollten, wenn Sie AEM auf Java 11 starten:
 
@@ -76,7 +74,7 @@ Mit **Ausführungsmodi** können Sie Ihre AEM-Instanz auf einen bestimmten Zweck
 
 ## Hinzufügen eines Dateiinstallationsanbieters {#adding-a-file-install-provider}
 
-Standardmäßig wird der Ordner `crx-quickstart/install` auf Dateien überwacht.
+Standardmäßig ist der Ordner `crx-quickstart/install` auf Dateien überwacht wird.
 Dieser Ordner existiert nicht, kann jedoch einfach beim Ausführen erstellt werden.
 
 Wenn Bundles, Konfigurationen oder Inhaltspakete in diesem Verzeichnis abgelegt werden, werden diese automatisch registriert und installiert. Wenn sie entfernt werden, erfolgt die Deinstallation.
@@ -90,7 +88,7 @@ Dies kann für viele Anwendungsfälle besonders interessant sein:
 
 >[!NOTE]
 >
->Beispiele finden Sie auch unter [So installieren Sie CRX-Pakete automatisch beim Serverstart](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html).
+>Siehe auch [So installieren Sie CRX-Pakete automatisch beim Serverstart](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html) für Beispiele.
 
 ## Installieren und Starten von Adobe Experience Manager als Windows-Dienst {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
 
@@ -110,7 +108,7 @@ So installieren und starten Sie AEM als Windows-Dienst:
 
    Dieser Befehl ruft das entsprechende Skript auf, das den Windows-Dienst-Daemon in 64-Bit Java statt in 32-Bit Java startet.
 
-1. Verhindern Sie, dass der Vorgang sich in mehr als einen Prozess aufspaltet, indem Sie die maximale Heap-Größe und die PermGen-JVM-Parameter erhöhen. Suchen Sie den Befehl `set jvm_options` und legen Sie den Wert wie folgt fest:
+1. Verhindern Sie, dass der Vorgang sich in mehr als einen Prozess aufspaltet, indem Sie die maximale Heap-Größe und die PermGen-JVM-Parameter erhöhen. Suchen Sie die `set jvm_options` und legen Sie den Wert wie folgt fest:
 
    `set jvm_options=-XX:MaxPermSize=256M;-Xmx1792m`
 
@@ -140,7 +138,7 @@ So installieren und starten Sie AEM als Windows-Dienst:
 
 >[!NOTE]
 >
->Bei der Installation von AEM als Dienst müssen Sie den absoluten Pfad für den Protokollordner in `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` aus Configuration Manager angeben.
+>Bei der Installation von AEM als Dienst müssen Sie den absoluten Pfad für den Protokollordner in `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` von Configuration Manager aus.
 
 Deinstallieren Sie den Dienst, indem Sie entweder in der Systemsteuerung unter **Dienste** auf **Beenden** klicken oder in einer Befehlszeile zum Ordner navigieren und `instsrv.bat -uninstall cq5` eingeben. Der Dienst wird in der Systemsteuerung unter **Dienste** aus der Liste entfernt oder verschwindet in der Eingabeaufforderung aus der Liste, wenn Sie `net start` eingeben.
 
@@ -148,7 +146,7 @@ Deinstallieren Sie den Dienst, indem Sie entweder in der Systemsteuerung unter *
 
 Der Standardpfad für den temporären Ordner des Java-Computers ist `/tmp`. AEM greift ebenfalls auf diesen Ordner zurück, etwa beim Erstellen von Paketen.
 
-Wenn Sie den Speicherort des temporären Ordners ändern möchten (z. B. wenn Sie einen Ordner mit mehr freiem Speicherplatz benötigen), definieren Sie einen * `<new-tmp-path>`*, indem Sie den JVM-Parameter hinzufügen:
+Wenn Sie den Speicherort des temporären Ordners ändern möchten (z. B. wenn Sie ein Verzeichnis mit mehr freiem Speicherplatz benötigen), definieren Sie ein * `<new-tmp-path>`* durch Hinzufügen des JVM-Parameters:
 
 `-Djava.io.tmpdir="/<*new-tmp-path*>"`
 
@@ -157,7 +155,7 @@ entweder zu:
 * der Befehlszeile zum Serverstart oder
 * dem „CQ_JVM_OPTS“-Umgebungsparameter im „serverctl“- oder „start“-Skript hinzufügen.
 
-## Weitere Optionen sind in der Schnellstartdatei verfügbar.  {#further-options-available-from-the-quickstart-file}
+## Weitere Optionen sind in der Schnellstartdatei verfügbar. {#further-options-available-from-the-quickstart-file}
 
 Weitere Optionen und Umbenennungskonventionen werden in der Schnellstart-Hilfedatei beschrieben, die über die Option -help verfügbar ist. Geben Sie Folgendes ein, um auf die Hilfe zuzugreifen:
 
@@ -294,7 +292,7 @@ Treffen Sie die folgenden Vorkehrungen, bevor Sie die Veröffentlichungsinstanz 
 
 1. Beenden Sie die Instanz und starten Sie sie neu, indem Sie das **start**-Skript ausführen.
 
-## Überprüfen der Installation  {#verifying-the-installation}
+## Überprüfen der Installation {#verifying-the-installation}
 
 Mit den folgenden Links können Sie die Funktionsfähigkeit Ihrer Installation überprüfen (in sämtlichen Beispielen wird davon ausgegangen, dass die Instanz über Port 8080 von „localhost“ ausgeführt wird und dass CRX unter „/crx“ und Launchpad unter „/“ installiert ist):
 
@@ -308,19 +306,19 @@ Die Web-Konsole.
 
 Es bestehen zwar verschiedene Möglichkeiten, AEM WCM zu konfigurieren, bestimmte Aktionen sollten jedoch durchgeführt oder zumindest direkt nach der Installation überprüft werden:
 
-* Wenden Sie sich an die [Sicherheits-Checkliste](/help/sites-administering/security-checklist.md), wenn Sie Aufgaben benötigen, um sicherzustellen, dass Ihr System sicher bleibt.
+* Lesen Sie die [Sicherheitscheckliste](/help/sites-administering/security-checklist.md) für Aufgaben, die erforderlich sind, um sicherzustellen, dass Ihr System sicher bleibt.
 * Überprüfen Sie die Liste der Standardbenutzer und -gruppen, die mit AEM WCM installiert werden. Überprüfen Sie, ob Maßnahmen im Hinblick auf andere Konten getroffen werden sollten. Weitere Informationen erhalten Sie unter [Sicherheits- und Benutzerverwaltung](/help/sites-administering/security.md).
 
-## Zugreifen auf CRXDE Lite und die Web-Konsole  {#accessing-crxde-lite-and-the-web-console}
+## Zugreifen auf CRXDE Lite und die Web-Konsole {#accessing-crxde-lite-and-the-web-console}
 
 Nachdem AEM WCM gestartet wurde, haben Sie zudem auf Folgendes Zugriff:
 
 * [CRXDE Lite](#accessing-crxde-lite) – für den Zugriff und die Verwaltung des Repositorys
 * [Web-Konsole](#accessing-the-web-console) – für die Verwaltung oder Konfiguration von OSGi-Bundles (auch als OSGi-Konsole bekannt)
 
-### Zugreifen auf CRXDE Lite  {#accessing-crxde-lite}
+### Zugreifen auf CRXDE Lite {#accessing-crxde-lite}
 
-Um die CRXDE Lite zu öffnen, können Sie **CRXDE Lite** im Begrüßungsbildschirm auswählen oder Ihren Browser verwenden, um zu
+Zum Öffnen der CRXDE Lite können Sie **CRXDE Lite** über den Willkommensbildschirm aus oder navigieren Sie mit Ihrem Browser zu
 
 ```
  https://<<i>host</i>>:<<i>port</i>>/crx/de/index.jsp
@@ -333,7 +331,7 @@ Beispiel:
 
 #### Zugreifen auf die Web-Konsole {#accessing-the-web-console}
 
-Um auf die Adobe CQ-Web-Konsole zuzugreifen, können Sie die **OSGi-Konsole** im Begrüßungsbildschirm auswählen oder Ihren Browser verwenden, um zu
+Um auf die Adobe CQ-Webkonsole zuzugreifen, können Sie **OSGi-Konsole** über den Willkommensbildschirm aus oder navigieren Sie mit Ihrem Browser zu
 
 ```
  https://<host>:<port>/system/console

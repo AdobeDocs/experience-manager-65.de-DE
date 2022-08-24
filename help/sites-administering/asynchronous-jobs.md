@@ -143,9 +143,9 @@ Wenn die Anzahl der Verweise auf die zu verschiebende(n) Seite(n) den Schwellenw
 >[!MORELIKETHIS]
 >
 >* [Erstellen und Organisieren von Seiten](/help/sites-authoring/managing-pages.md)
-* [Erstellen und Synchronisieren von Live Copies](/help/sites-administering/msm-livecopy.md)
-* [E-Mail in Experience Manager konfigurieren](/help/sites-administering/notification.md).
-* [Importieren von Asset-Metadaten](/help/assets/metadata.md#import-metadata).
-* [Exportieren von Asset-Metadaten](/help/assets/metadata.md#export-metadata).
-* [Verwenden Sie verbundene Assets, um DAM-Assets aus Remote-Implementierungen freizugeben](/help/assets/use-assets-across-connected-assets-instances.md).
+>* [Erstellen und Synchronisieren von Live Copies](/help/sites-administering/msm-livecopy.md)
+>* [E-Mail in Experience Manager konfigurieren](/help/sites-administering/notification.md).
+>* [Importieren von Asset-Metadaten](/help/assets/metadata.md#import-metadata).
+>* [Exportieren von Asset-Metadaten](/help/assets/metadata.md#export-metadata).
+>* [Verwenden Sie verbundene Assets, um DAM-Assets aus Remote-Implementierungen freizugeben](/help/assets/use-assets-across-connected-assets-instances.md).
 

@@ -46,7 +46,7 @@ Anschließend müssen Sie, abhängig vom Typ des Erlebnisses, das Sie erstellen,
 * Bei Erstellung eines Adobe Target-Angebots (ehemals Test&amp;Target):
 
    1. [Erstellen Sie ein Adobe Target-Angebot](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
-   1. [Integrieren Sie es mit Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
+   1. [Integrieren mit Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ Nachdem Sie das Grundgerüst für Ihr Erlebnis erstellt haben, müssen Sie jetzt
 
 * [Adobe Target-Angebot](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#testtargetoffers):
 
-   * [Integrieren Sie es mit Adobe Target](/help/sites-administering/target.md)
+   * [Integrieren mit Adobe Target](/help/sites-administering/target.md)
 
 ### Hinzufügen eines neuen Touchpoints {#adding-a-new-touchpoint}
 

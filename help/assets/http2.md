@@ -13,7 +13,7 @@ feature: Publishing,Configuration
 source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 58%
+ht-degree: 61%
 
 ---
 
@@ -72,7 +72,7 @@ Sie initiieren die Anfrage zum Umschalten auf HTTP/2. wird nicht automatisch fü
       1. Vergewissern Sie sich, dass Sie das CDN über Adobe verwenden und nicht mit einer direkten Beziehung verwaltet werden.
       1. Stellen Sie sicher, dass Sie eine dedizierte Domäne verwenden. Wenn Sie Dynamic Media verwenden, verwenden Sie eine dedizierte Domäne.
    1. Der Support fügt Sie zur HTTP/2-Kundenwarteschlange hinzu, die auf der Reihenfolge basiert, in der die Anfragen gesendet wurden.
-   1. Wenn Adobe zur Bearbeitung Ihrer Anfrage bereit ist, kontaktiert der Support Sie, um die Umstellung zu koordinieren und ein Zieldatum festzulegen.
+   1. Wenn Adobe für die Bearbeitung Ihrer Anfrage bereit ist, setzt sich der Support mit Ihnen in Verbindung, um die Umstellung zu koordinieren und ein Zieldatum festzulegen.
    1. Sie werden nach Abschluss benachrichtigt und können den erfolgreichen Übergang zu HTTP2 überprüfen.
 
       Da der Browser nicht auf diese Tatsache hinweist, muss eine Erweiterung heruntergeladen werden.
@@ -98,4 +98,4 @@ Der nicht zwischengespeicherte Inhalt wird direkt an die ursprünglichen Server 
 
 Da der Browser nicht auf diese Tatsache hinweist, muss eine Erweiterung heruntergeladen werden.
 
-Für Firefox und Chrome gibt es eine Erweiterung namens &quot;HTTP/2 and SPDY Indicator&quot;. Da Browser HTTP/2 nur bei sicheren Verbindungen unterstützen, muss für die Verifizierung eine URL mit https aufgerufen werden. Wenn http/2 unterstützt wird, wird dies durch die Erweiterung in Form eines blauen Flash-Symbols und einer Kopfzeile `X-Firefox-Spdy` angezeigt: `h2`.
+Für Firefox und Chrome gibt es eine Erweiterung namens &quot;HTTP/2 and SPDY Indicator&quot;. Da Browser HTTP/2 nur bei sicheren Verbindungen unterstützen, muss für die Verifizierung eine URL mit https aufgerufen werden. Wenn http/2 unterstützt wird, wird dies durch die Erweiterung in Form eines blauen Flash-Symbols und einer Kopfzeile angezeigt `X-Firefox-Spdy` : `h2`.

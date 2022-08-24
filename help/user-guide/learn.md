@@ -23,7 +23,7 @@ Mit AEM Assets kann Ihr Unternehmen auf einfache Weise digitale Assets über ein
 
 * [Arbeiten mit AEM Assets](/help/assets/manage-assets.md)
 * [Arbeiten mit Dynamic Media](/help/assets/dynamic-media.md)
-* [AEM-Versionshinweise](/help/release-notes/release-notes.md)
+* [Versionshinweise zu AEM ](/help/release-notes/release-notes.md)
 
 ## AEM Forms {#aem-forms}
 
@@ -38,7 +38,7 @@ Mit AEM Forms lassen sich Funktionen zum Erstellen, Verwalten und Veröffentlich
 
 ## AEM Screens {#aem-screens}
 
-Screens ist eine Adobe Experience Manager-Funktion, mit der Sie dynamische und interaktive digitale Erlebnisse und Interaktionen mit verschiedenen Bildschirmtypen in Verbindung mit einer umfassenden digitalen Marketingplattform veröffentlichen können.  [Weitere Informationen](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html)
+Screens ist eine Adobe Experience Manager-Funktion, mit der Sie dynamische und interaktive digitale Erlebnisse und Interaktionen mit verschiedenen Bildschirmtypen in Verbindung mit einer umfassenden digitalen Marketingplattform veröffentlichen können.  [Weitere Informationen](https://docs.adobe.com/content/help/de/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## AEM Communities {#aem-communities}
 

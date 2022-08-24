@@ -12,7 +12,7 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 1333c6cb-15cc-429b-a13e-5d23afdee69a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ Nehmen wir ein Fallbeispiel, bei dem Sie für ein Formular eine Sequenz der Schr
    * **E-sign**: Enthält die Komponente **Sign**, die in einem XFA-basierten adaptiven Formular verwendet werden kann. Es werden die folgenden Dienste zum Signieren bereitgestellt:
 
       * Adobe Document Cloud eSignature-Services
-      * Scribble-Signatur
+      * Freihändige Unterschrift
    * **Bestätigung**: Enthält die Komponente **Zusammenfassung**, in der die Übermittlung in einer Meldung bestätigt wird, nachdem der Benutzer das Formular signiert hat und in der Sequenz den Bestätigungsschritt (Zusammenfassung) erreicht hat. Autoren können den Text der Komponente Zusammenfassung konfigurieren, eine Dankesmeldung oder einen Link zur erstellten PDF-Datei anzeigen usw.
 
 

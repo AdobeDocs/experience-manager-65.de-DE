@@ -1,26 +1,26 @@
 ---
 title: Repository-Neustrukturierung in AEM 6.5
-seo-title: Repository-Neustrukturierung in AEM 6.5
+seo-title: Repository Restructuring in AEM 6.5
 description: Informieren Sie sich über die Grundlagen und die Logik hinter der Repository-Neustrukturierung in AEM 6.5
-seo-description: Informieren Sie sich über die Grundlagen und die Logik hinter der Repository-Neustrukturierung in AEM 6.5
+seo-description: Learn about the basics and reasoning behind the repository restructuring in AEM 6.5
 uuid: e9cd3e88-e352-44a8-9b97-69488d3267cb
 contentOwner: chaikels
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
-feature: Aktualisieren
+feature: Upgrading
 exl-id: 2572aa8d-2a3a-4e5b-ae5f-07e1017ea0f4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '534'
 ht-degree: 61%
 
 ---
 
 # Repository-Neustrukturierung in AEM 6.5{#repository-restructuring-in-aem}
 
-## Einführung {#introduction}
+## Einführung    {#introduction}
 
 Vor AEM 6.4 wurde Kundencode in unvorhersehbaren Bereichen des JCR bereitgestellt, die bei Upgrades geändert werden konnten. Aus diesem Grund wurde es häufig bei offiziellen AEM-Versionen verwendet, benutzerdefinierten Code, Konfigurationen oder Inhalt zu überschreiben. Darüber hinaus kam es vor, dass durch Kunden vorgenommene Änderungen den AEM-Produktcode oder AEM-Inhalte überschrieben und dadurch die Produktfunktionen beeinträchtigten.
 
@@ -38,7 +38,7 @@ Beim Aktualisieren auf AEM 6.5 wird eine große Teilmenge des Inhalts unter /etc
 * Mit der Aktualisierung auf 6.5: Einige der Neustrukturierungsänderungen für /etc sind nicht abwärtskompatibel und entsprechend sollten Änderungen im Rahmen der Aktualisierung auf AEM 6.5 geplant und umgesetzt werden.
 * Vor der künftigen Aktualisierung - die überwiegende Mehrheit der Änderungen der /etc-Umstrukturierung kann bis zu einem späteren Zeitpunkt nach der Aktualisierung verschoben werden. Wie bereits erwähnt, verweist der AEM 6.5-Code weiterhin auf die alten Speicherorte, bis die Änderungen im Rahmen eines Kundenrelease implementiert werden. Es gibt zwar keinen erzwungenen Zeitrahmen, für den die Änderungen vorgenommen werden sollten, es wird jedoch empfohlen, sie vor der künftigen Aktualisierung vorzunehmen, da zukünftige Funktionen darauf angewiesen sein können, auf die neuen Speicherorte verwiesen wird. Auch veweist die Dokumentation für ein bestimmtes Merkmal standardmäßig auf die neuen Speicherorte, weswegen die Verwendung alter Speicherorte verwirrend sein könnte.
 
-### Umstrukturierungsleitlinien {#restructuring-guidance}
+### Leitfaden für die Neustrukturierung {#restructuring-guidance}
 
 Bei der Planung einer Aktualisierung auf AEM 6.5 sollten die folgenden Seiten zur Abschätzung des Arbeitsaufwands herangezogen werden:
 

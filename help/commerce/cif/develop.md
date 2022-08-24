@@ -6,13 +6,13 @@ feature: Commerce Integration Framework
 doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+exl-id: 48479725-8b52-4ff2-a599-d20958b26ee6
+source-git-commit: 78359fb8ecbcc0227ab5a3910175aed73d823902
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 37%
+source-wordcount: '871'
+ht-degree: 40%
 
 ---
-
 
 # Entwicklung AEM Commerce {#develop}
 
@@ -29,9 +29,9 @@ Für die Arbeit mit CIF-Projekten wird eine lokale Entwicklungsumgebung empfohle
 
 >[!NOTE]
 >
->Die folgenden Anweisungen helfen Ihnen beim Einrichten einer lokalen AEM-Entwicklungsumgebung für AEM Commerce mithilfe von CIF mit Schwerpunkt für AEM 6.5). Wenn Sie AEM als Cloud Service verwenden, lesen Sie die [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) -Dokumentation.
+>Die folgenden Anweisungen helfen Ihnen beim Einrichten einer lokalen AEM-Entwicklungsumgebung für AEM Commerce mithilfe von CIF mit Schwerpunkt für AEM 6.5). Wenn Sie AEM as a Cloud Service verwenden, lesen Sie bitte den Abschnitt [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=de) Dokumentation.
 
-Das AEM Commerce-Add-on für AEM 6.5 alias. Das CIF-Add-on steht auch für die lokale Entwicklung zur Verfügung und wird als AEM Paket bereitgestellt. Sie können sie als Feature Pack vom [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) herunterladen.
+Das AEM Commerce-Add-on für AEM 6.5 alias. Das CIF-Add-on steht auch für die lokale Entwicklung zur Verfügung und wird als AEM Paket bereitgestellt. Sie können sie über die [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) als Feature Pack.
 
 ### Erforderliche Software
 
@@ -47,7 +47,7 @@ Folgendes sollte lokal installiert werden:
 
 ### Zugreifen auf das CIF-Add-on
 
-Das CIF-Add-on kann vom [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) heruntergeladen werden. Suchen Sie nach &quot;AEM Commerce-Add-on&quot;.
+Das CIF-Add-on kann über das [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html), suchen Sie nach &quot;AEM Commerce-Add-on&quot;.
 
 >[!TIP]
 >
@@ -67,7 +67,7 @@ Für die lokale CIF-Projektentwicklung mit dem AEM und dem CIF-Add-on gehen Sie 
 
 1. Erstellen Sie einen `crx-quickstart/install`-Ordner.
 
-1. Kopieren Sie das vom Software Distribution-Portal heruntergeladene CIF-Add-on für alle Pakete in den Ordner `crx-quickstart/install` .
+1. Kopieren Sie das vom Software Distribution-Portal heruntergeladene CIF-Add-on für alle Pakete in die `crx-quickstart/install` Ordner.
 
 >[!TIP]
 >
@@ -106,7 +106,7 @@ mvn -B archetype:generate \
  -D includeCommerce=y
 ```
 
-CIF-Kernkomponenten können in jedem Projekt verwendet werden, indem entweder das bereitgestellte `all`-Paket oder eine Einzelperson mit dem CIF-Inhaltspaket und den zugehörigen OSGI-Bundles eingeschlossen wird. Verwenden Sie die folgenden Abhängigkeiten, um einem Projekt manuell CIF-Kernkomponenten hinzuzufügen:
+CIF-Kernkomponenten können in jedem Projekt verwendet werden, indem Sie entweder die bereitgestellte `all` -Paket oder Einzelperson, die das CIF-Inhaltspaket und die zugehörigen OSGI-Bundles verwendet. Verwenden Sie die folgenden Abhängigkeiten, um einem Projekt manuell CIF-Kernkomponenten hinzuzufügen:
 
 ```java
 <dependency>
@@ -140,27 +140,27 @@ CIF-Kernkomponenten können in jedem Projekt verwendet werden, indem entweder da
 
 ### Verwenden des AEM Venia Reference Store
 
-Eine zweite Möglichkeit, ein CIF-Projekt zu starten, besteht darin, den [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) zu klonen und zu verwenden. Der AEM Venia Reference Store ist ein Beispiel-Referenz-Storefront-Programm, das die Verwendung von CIF-Kernkomponenten für AEM demonstriert. Es ist als Best-Practice-Satz von Beispielen und als möglicher Ausgangspunkt für die Entwicklung Ihrer eigenen Funktionalität gedacht.
+Eine zweite Möglichkeit, ein CIF-Projekt zu starten, besteht darin, den [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) zu klonen und zu verwenden. Der AEM Venia Reference Store ist ein Beispiel-Referenz-Storefront-Programm, das die Verwendung von CIF-Kernkomponenten für AEM demonstriert. Sie ist sowohl als Satz von Best Practice-Beispielen als auch als möglicher Ausgangspunkt für die Entwicklung Ihrer eigenen Funktionalität gedacht.
 
-Um mit dem Venia Reference Store zu beginnen, klonen Sie einfach das [Git-Repository](https://github.com/adobe/aem-cif-guides-venia) und beginnen Sie mit der Anpassung des Projekts an Ihre Anforderungen.
+Um mit dem Venia Reference Store zu beginnen, klonen Sie einfach die [Git-Repository](https://github.com/adobe/aem-cif-guides-venia) und beginnen Sie mit der Anpassung des Projekts an Ihre Anforderungen.
 
 >[!NOTE]
 >
->Das Venia Reference Store-Projekt enthält zwei Build-Profile für AEM as a Cloud Service und AEM 6.5. Schauen Sie sich die Datei [readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) des Projekts an, um zu sehen, wie sie verwendet werden. Verwenden Sie für AEM 6.5 das Profil `classic` .
+>Das Venia Reference Store-Projekt enthält zwei Build-Profile für AEM as a Cloud Service und AEM 6.5. Schauen Sie sich die Datei [readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) des Projekts an, um zu sehen, wie sie verwendet werden. Für AEM 6.5 verwenden Sie die Variable `classic` Profil.
 
 ### AEM mit dem Commerce-System verbinden
 
 Um Ihr Projekt mit dem Commerce-System zu verbinden, muss AEM mit dem GraphQL-Endpunkt Ihres Commerce-Systems konfiguriert werden.
 
-Beide Projekte, die vom [AEM Projektarchetyp](https://github.com/adobe/aem-project-archetype) oder vom [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) generiert wurden, enthalten bereits eine [standardmäßige Konfiguration](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json), die angepasst werden muss.
+Beide Projekte werden von der [AEM Projektarchetyp](https://github.com/adobe/aem-project-archetype) oder [Venia-Referenzspeicher AEM](https://github.com/adobe/aem-cif-guides-venia)enthalten bereits eine [Standardkonfiguration](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json) die angepasst werden müssen.
 
-Ersetzen Sie den Wert von `url` in `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` durch den GraphQL-Endpunkt Ihres vom Projekt verwendeten Commerce-Systems.
+Ersetzen Sie den Wert der `url` in `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` mit dem GraphQL-Endpunkt Ihres vom Projekt verwendeten Commerce-Systems.
 
 Die AEM Commerce-Add-On- und CIF-Kernkomponenten stellen über den AEM-Server und direkt über den Browser eine Verbindung zum Commerce-GraphQL-Endpunkt her. Clientseitige CIF-Kernkomponenten und CIF-Add-On-Authoring-Tools verbinden standardmäßig `/api/graphql`. Bei Bedarf kann dies über die CIF-Cloud Service-Konfiguration angepasst werden (siehe unten).
 
-Das CIF-Add-on stellt ein GraphQL-Proxy-Servlet unter `/api/graphql` bereit. Wenn Sie nicht planen, einen lokalen AEM Dispatcher zu verwenden, wird empfohlen, auch das GraphQL-Proxy-Servlet zu konfigurieren.
+Das CIF-Add-on stellt ein GraphQL-Proxy-Servlet unter `/api/graphql`. Wenn Sie nicht planen, einen lokalen AEM Dispatcher zu verwenden, wird empfohlen, auch das GraphQL-Proxy-Servlet zu konfigurieren.
 
-Navigieren Sie zu http://localhost:4502/system/console/configMgr und erstellen Sie eine OSGi-Konfiguration für den Dienst `Adobe CIF GraphQL Proxy Configuration` . Verwenden Sie denselben GraphQL-Endpunkt Ihres Commerce-Systems wie für den GraphQL-Client oben.
+Navigieren Sie zu http://localhost:4502/system/console/configMgr und erstellen Sie eine OSGi-Konfiguration für die `Adobe CIF GraphQL Proxy Configuration` Dienst. Verwenden Sie denselben GraphQL-Endpunkt Ihres Commerce-Systems wie für den GraphQL-Client oben.
 
 ## Zusätzliche Ressourcen
 

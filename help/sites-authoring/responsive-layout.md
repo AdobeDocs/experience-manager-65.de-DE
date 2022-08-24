@@ -1,8 +1,8 @@
 ---
-title: 'Responsives Layout  '
-seo-title: 'Responsives Layout  '
+title: Responsives Layout
+seo-title: Responsive Layout
 description: AEM bietet Ihnen die Möglichkeit, Ihre Seiten mit einem responsiven Layout zu gestalten.
-seo-description: AEM bietet Ihnen die Möglichkeit, Ihre Seiten mit einem responsiven Layout zu gestalten.
+seo-description: AEM allows you to realize a responsive layout for your pages
 uuid: 4db45d78-9fca-4251-b504-ae3481fd9a8b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,16 +12,16 @@ discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1795'
-ht-degree: 92%
+source-wordcount: '1782'
+ht-degree: 93%
 
 ---
 
-# Responsives Layout  {#responsive-layout}
+# Responsives Layout{#responsive-layout}
 
 AEM ermöglicht das Erstellen eines responsiven Layouts für Ihre Seiten mithilfe der Komponente **Layout-Container**.
 
-Dieses liefert ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können. Dieses Raster kann das Layout abhängig von der Größe des Geräts/Fensters und des Formats neu anordnen. Die Komponente wird zusammen mit dem [**Layout**-Modus ](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode) verwendet, in dem Sie Ihr responsives Layout geräteabhängig erstellen und bearbeiten können.
+Dieses liefert ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können. Dieses Raster kann das Layout abhängig von der Größe des Geräts/Fensters und des Formats neu anordnen. Die Komponente wird zusammen mit dem [**Layout**-Modus](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode) verwendet, in dem Sie Ihr responsives Layout geräteabhängig erstellen und bearbeiten können.
 
 Der Layout-Container:
 
@@ -67,7 +67,7 @@ Je nach Projekt kann der Layout-Container als standardmäßiges Absatzsystem fü
 
 >[!NOTE]
 >
->Die Verwendung des obigen Mechanismus wird durch die Konfiguration der Vorlage aktiviert. Weitere Informationen finden Sie unter [Konfigurieren des responsiven Layouts](/help/sites-administering/configuring-responsive-layout.md) .
+>Die Verwendung des obigen Mechanismus wird durch die Konfiguration der Vorlage aktiviert. Siehe [Konfigurieren des responsiven Layouts](/help/sites-administering/configuring-responsive-layout.md) für weitere Informationen.
 
 ## Layout-Definitionen, Geräteemulation und Breakpoints {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -172,7 +172,7 @@ Einen Layout-Container können Sie wie andere Komponenten im **Bearbeitungsmodus
 
    ![screen_shot_2018-03-23at085357](assets/screen_shot_2018-03-23at085357.png)
 
-   Wählen Sie daraufhin die Option  **Übergeordnetes Element** aus.
+   Wählen Sie daraufhin die Option **Übergeordnetes Element** aus.
 
    ![](do-not-localize/screen_shot_2018-03-23at085417.png)
 
@@ -243,7 +243,7 @@ Im Layout-Modus können Sie verschiedene Aktionen für ein Raster durchführen:
 
    ![](do-not-localize/screen_shot_2018-03-23at090823.png)
 
-   * **Verborgene Komponenten anzeigen**  - Alle oder einzelne Komponenten einblenden. Die Zahl gibt an, wie viele ausgeblendete Komponenten es derzeit gibt. Der Zähler zeigt an, wie viele Komponenten ausgeblendet sind.
+   * **Verborgene Komponenten anzeigen** - Alle oder einzelne Komponenten einblenden. Die Zahl gibt an, wie viele ausgeblendete Komponenten es derzeit gibt. Der Zähler zeigt an, wie viele Komponenten ausgeblendet sind.
 
    ![](do-not-localize/screen_shot_2018-03-23at091007.png)
 
@@ -263,9 +263,9 @@ Im Layout-Modus können Sie verschiedene Aktionen für ein Raster durchführen:
    >
    >Im obigen Beispiel sind die Aktionen zum Verschieben und Ausblenden verfügbar, weil dieser Layout-Container in einem übergeordneten Layout-Container verschachtelt ist.
 
-   * **Einblenden von**
-KomponentenWählen Sie die übergeordneten Komponenten aus, um die Aktionssymbolleiste mit der 
-**Option &quot;Verborgene** Komponenten anzeigen&quot;. In diesem Beispiel gibt es zwei ausgeblendete Komponenten.
+   * **Komponenten einblenden**
+Wählen Sie die übergeordneten Komponenten aus, um die Aktionssymbolleiste mit der 
+Option **Ausgeblendete Komponenten anzeigen** anzuzeigen. In diesem Beispiel gibt es zwei ausgeblendete Komponenten.
    ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
    Bei Auswahl der Option **Verborgene Komponenten einblenden** werden die jeweils ausgeblendeten Komponenten in Blau an ihren ursprünglichen Positionen angezeigt.

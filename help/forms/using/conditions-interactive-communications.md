@@ -11,7 +11,7 @@ docset: aem65
 feature: Interactive Communication
 exl-id: 0c0dc6a2-b889-4516-8e08-1e9d31be2cce
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1497'
 ht-degree: 100%
 
@@ -132,7 +132,7 @@ Wenn Sie den Regeleditor in einer Bedingung verwenden, können Sie Regeln zum An
 
 1. Tippen Sie beim Erstellen oder Bearbeiten einer Bedingung auf das Symbol ![ruleeditoricon](assets/ruleeditoricon.png) (Regel-Editor) für das betreffende Asset.
 
-   Das Dialogfeld zum Erstellen der Regel wird angezeigt. Zusätzlich zu Zeichenfolge, Zahl, mathematischem Ausdruck und Datum stehen im Regeleditor folgende Regeln zum Erstellen von Anweisungen der Regeln zur Verfügung:
+   Das Dialogfeld „Regel erstellen“ wird angezeigt. Zusätzlich zu Zeichenfolge, Zahl, mathematischem Ausdruck und Datum stehen im Regeleditor folgende Regeln zum Erstellen von Anweisungen der Regeln zur Verfügung:
 
    * Eigenschaft des zugeordneten Formulardatenmodells
    * Beliebige [Variablen](#variables), die Sie erstellt haben.

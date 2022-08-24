@@ -13,7 +13,7 @@ feature: Configuration,Scene7 Mode
 source-git-commit: b14cbc4cad15b06754db8b8c992a596d4d64c096
 workflow-type: tm+mt
 source-wordcount: '6037'
-ht-degree: 45%
+ht-degree: 46%
 
 ---
 
@@ -134,7 +134,7 @@ Um einen ausgewählten Ordner für die Synchronisierung mit Dynamic Media zu mar
    Wenn ein Asset aktiviert wurde, werden alle Aktualisierungen automatisch live in der S7-Bereitstellung übernommen.
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
-1. Um Dynamic Media-Inhalte sicher in der Vorschau anzuzeigen, bevor sie veröffentlicht werden, verwendet der Experience Manager-Autor eine Token-basierte Validierung und daher sieht der Experience Manager-Autor Dynamic Media-Inhalte standardmäßig in der Vorschau an. Sie können jedoch weitere IP-Adressen in Zulassungslisten einfügen, um Benutzern den Zugriff auf eine sichere Vorschau von Inhalten zu ermöglichen. Informationen zum Einrichten dieser Aktion in Experience Manager finden Sie unter [Dynamic Media-Veröffentlichungseinstellungen für Image-Server konfigurieren - Registerkarte &quot;Sicherheit&quot;](/help/assets/dm-publish-settings.md#security-tab).
+1. Um Dynamic Media-Inhalte sicher in der Vorschau anzuzeigen, bevor sie veröffentlicht werden, verwendet der Experience Manager-Autor eine Token-basierte Validierung und daher sieht der Experience Manager-Autor Dynamic Media-Inhalte standardmäßig in der Vorschau an. Sie können jedoch auch weitere IP-Adressen auf die Zulassungsliste setzen, um Benutzern Zugriff auf eine sichere Vorschau von Inhalten zu ermöglichen. Informationen zum Einrichten dieser Aktion in Experience Manager finden Sie unter [Dynamic Media-Veröffentlichungseinstellungen für Image-Server konfigurieren - Registerkarte &quot;Sicherheit&quot;](/help/assets/dm-publish-settings.md#security-tab).
 
 <!-- 1. To securely preview Dynamic Media content before it gets published, Experience Manager uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).     * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
     * In the left rail, select the **[!UICONTROL Tools]** icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
@@ -182,7 +182,7 @@ Wenn Sie diese Funktion verwenden möchten, beachten Sie die folgenden Vorausset
 
 **So konfigurieren Sie den Dynamic Media-Scene7-Modus für das Hochladen von Assets mit mehr als 2 GB:**
 
-1. Wählen Sie in Experience Manager das Experience Manager-Logo aus, um auf die globale Navigationskonsole zuzugreifen, und navigieren Sie dann zu **[!UICONTROL Instrumente]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
+1. Klicken Sie in Experience Manager auf das Adobe Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen, und dann auf **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
 
 1. Führen Sie im Fenster CRXDE Lite einen der folgenden Schritte aus:
 
@@ -291,7 +291,7 @@ Informationen hierzu finden Sie unter [Hochladen von Assets](/help/assets/manage
 
 **Gehen Sie folgendermaßen vor, um MIME-Typen für unterstützte Formate zu bearbeiten:**
 
-1. Wählen Sie in Experience Manager das Experience Manager-Logo aus, um auf die globale Navigationskonsole zuzugreifen, und navigieren Sie dann zu **[!UICONTROL Instrumente]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
+1. Klicken Sie in Experience Manager auf das Adobe Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen, und dann auf **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
 1. Navigieren Sie in der linken Leiste zu:
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -582,7 +582,7 @@ Die Transit-Workflow-Warteschlange von Granite wird für den Workflow **[!UICON
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
-1. Wählen Sie **[!UICONTROL Speichern]** aus.
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 #### Aktualisieren der Granite-Workflow-Warteschlange {#updating-the-granite-workflow-queue}
 

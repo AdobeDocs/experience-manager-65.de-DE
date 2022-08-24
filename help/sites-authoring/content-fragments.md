@@ -1,8 +1,8 @@
 ---
 title: Seitenbearbeitung mit Inhaltsfragmenten
-seo-title: Seitenbearbeitung mit Inhaltsfragmenten
+seo-title: Page Authoring with Content Fragments
 description: Inhaltsfragmente in AEM ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Verwenden von seitenunabhängigen Inhalten.
-seo-description: Inhaltsfragmente in AEM ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Verwenden von seitenunabhängigen Inhalten.
+seo-description: AEM Content Fragments allow you to design, create, curate, and use page-independent content
 uuid: 987de428-8354-4b23-a552-3ea415122184
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1140'
 ht-degree: 100%
 
 ---
@@ -41,11 +41,11 @@ In Verbindung mit dem aktualisierten JSON Exporter können strukturierte Inhalts
 
 Inhaltsfragmente ermöglichen:
 
-* **Marketing- und Kampagnenstrategie** 
+* **Marketing- und Kampagnenstrategie**
 
    * Überprüfen Sie Inhalte über zentral verwaltete Inhaltsfragmente.
 
-* **Creative Pro** 
+* **Creative Pro**
 
    * Verfolgen Sie kreative Assets über Sammlungen, die mit Inhaltsfragmenten verbunden sind.
 
@@ -58,14 +58,14 @@ Inhaltsfragmente ermöglichen:
    * Kann Inhaltsfragmente freigeben.
    * Kann Übersetzungen zentral verwalten.
 
-* **Produzenten und Journey-Manager** 
+* **Produzenten und Journey-Manager**
 
    * Wählen Sie bei der Erstellung in AEM aus vordefinierten Fragmenten und Varianten aus.
    * Kann darauf vertrauen, dass Fragment- und zugehörige Inhalte immer auf dem neuesten Stand sind, da Copy Writer und Kreative ihre Aktualisierungen in zentral verwalteten Fragmenten und Assets vornehmen.
    * Kann darauf vertrauen, dass zugehörige Medieninhalte auf Relevanz geprüft werden.
    * Kann Ad-hoc-Inhaltsvarianten direkt vornehmen und gleichzeitig sicherstellen, dass diese Varianten im Fragment weiter zentral verwaltet werden.
 
-## Hinzufügen eines Inhaltsfragments zu Ihrer Seite          {#adding-a-content-fragment-to-your-page}
+## Hinzufügen eines Inhaltsfragments zu Ihrer Seite {#adding-a-content-fragment-to-your-page}
 
 1. Öffnen Sie Ihre Seite zum Bearbeiten.
 
@@ -76,12 +76,11 @@ Inhaltsfragmente ermöglichen:
    * Öffnen Sie den **Assets**-Browser und filtern Sie nach der Option **Inhaltsfragmente** (die Standardeinstellung ist „Bilder“). Ziehen Sie dann das gewünschte Fragment in die Komponenteninstanz.
 
    * Wählen Sie die Inhaltsfragment-Komponente und dann **Konfigurieren** in der Symbolleiste. Im daraufhin angezeigten Dialogfeld können Sie das Auswahldialogfeld zum Durchsuchen und Auswählen des gewünschten **Inhaltsfragments** öffnen.
-
    >[!NOTE]
    >
    >Eine alternative Methode besteht darin, ein bestimmtes Inhaltsfragment direkt auf die Seite zu ziehen. Dabei wird automatisch die zugehörige Komponente (Inhaltsfragment) erstellt.
 
-1. Anfangs wird der Inhalt aus den Elementen **Allgemein** und **Master** (Variante) angezeigt. Sie können nach Bedarf aber [auch andere Elemente und/oder Varianten auswählen](#selecting-the-element-or-variation).
+1. Anfangs wird der Inhalt aus den Elementen **Allgemein** und **Primär** (Variante) angezeigt. Sie können nach Bedarf aber [auch andere Elemente und/oder Varianten auswählen](#selecting-the-element-or-variation).
 
    ![cfm-6420-01](assets/cfm-6420-01.png)
 
@@ -91,8 +90,8 @@ Inhaltsfragmente ermöglichen:
    >
    >
    >
-   >    * [Responsives Layout  ](/help/sites-authoring/responsive-layout.md)
-   >* [Bearbeiten des Seiteninhalts](/help/sites-authoring/editing-content.md)
+   >    * [Responsives Layout](/help/sites-authoring/responsive-layout.md)
+   >    * [Bearbeiten des Seiteninhalts](/help/sites-authoring/editing-content.md)
 
 
 ### Auswählen des Elements oder der Variante {#selecting-the-element-or-variation}
@@ -122,8 +121,8 @@ Im entsprechenden Konfigurationsdialog können Sie die verfügbaren Parameter au
 
 * **Variante**
 
-   * Der Standard-**Master** ist immer verfügbar.
-   * Eine Auswahl ist verfügbar, wenn Varianten für das Fragment erstellt wurden. 
+   * Die Standardversion **Primär** ist immer verfügbar.
+   * Eine Auswahl ist verfügbar, wenn Varianten für das Fragment erstellt wurden.
 
 * **Absätze**: Geben Sie den Bereich der einzubeziehenden Absätze an:
 
@@ -134,7 +133,7 @@ Im entsprechenden Konfigurationsdialog können Sie die verfügbaren Parameter au
 
 * **Überschriften als separate Absätze behandeln**
 
-### Schnelle Verbindung zum Fragmenteditor      {#quick-connection-to-fragment-editor}
+### Schnelle Verbindung zum Fragmenteditor     {#quick-connection-to-fragment-editor}
 
 Sie können die Fragmentquelle zur Bearbeitung (das Asset) mithilfe des Symbols **Bearbeiten** in der Komponenten-Symbolleiste öffnen. Auf diese Weise können Sie [das Inhaltsfragment bearbeiten und verwalten](/help/assets/content-fragments/content-fragments.md).
 
@@ -142,7 +141,7 @@ Sie können die Fragmentquelle zur Bearbeitung (das Asset) mithilfe des Symbols 
 >
 >Wie immer hat die Bearbeitung der Fragmentquelle Auswirkungen auf alle Seiten, auf die diese Inhaltsfragmente verweisen.
 
-### Hinzufügen von Zwischeninhalten          {#adding-in-between-content}
+### Hinzufügen von Zwischeninhalten {#adding-in-between-content}
 
 Wenn ein bestimmtes Inhaltsfragment der Seite hinzugefügt wird, wird der Platzhalter **Komponenten hierher ziehen** zwischen allen HTML-Absätzen des Fragments (und oberhalb/unterhalb) eingefügt.
 
@@ -163,20 +162,23 @@ Bei Zwischeninhalten können Sie:
 >[!NOTE]
 >
 >Sie können auch [visuelle Assets (Bilder) zum Fragment hinzufügen](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+>
 >Die in das Fragment eingefügten visuellen Assets werden mit dem vorangehenden Absatz im Fragment verbunden. Deshalb können Zwischeninhalte nicht zwischen einem visuellen Asset und dem vorangehenden Absatz platziert werden.
 
 >[!CAUTION]
 >
 >Wenn Sie Zwischeninhalte zu einem Inhaltsfragment auf Ihrer Seite hinzugefügt haben, kann das Ändern der Struktur des zugrunde liegenden Inhaltsfragments (im Fragment-Editor) zu fehlerhaften/unerwarteten Ergebnissen führen.
+>
 >Wenn dies eintritt, wird der Zwischeninhalt unverändert beibehalten:
+>
 >* Zwischenkomponenten besitzen innerhalb der Abfolge der Komponenten im Fragmentfluss eine absolute Position. Diese Position ändert sich nicht, selbst wenn der Inhalt in den Absätzen des Fragments geändert wird.
+>
+>  Dies kann den Eindruck erwecken, als hätte sich die relative Position geändert, da Zwischenabsätze keinen kontextuellen Bezug zu den Absätzen (des Fragments) haben, neben denen sie sich befinden.
+>* Wenn zwischen zwei Absatzstrukturen ein Konflikt besteht, wird der Zwischeninhalt nicht angezeigt (obwohl er intern noch vorhanden ist).
+>
 
-Dies kann den Eindruck erwecken, als hätte sich die relative Position geändert, da Zwischenabsätze keinen kontextuellen Bezug zu den Absätzen (des Fragments) haben, neben denen sie sich befinden.
-* Wenn zwischen zwei Absatzstrukturen ein Konflikt besteht, wird der Zwischeninhalt nicht angezeigt (obwohl er intern noch vorhanden ist).
 
-
-
-### Verwenden von zugehörigen Inhalten          {#using-associated-content}
+### Verwenden von zugehörigen Inhalten {#using-associated-content}
 
 Wenn Sie [verknüpften Inhalt](/help/assets/content-fragments/content-fragments-assoc-content.md) für das [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) haben, stehen diese Elemente im Seitenbedienfeld zur Verfügung (nachdem Sie das Fragment auf der Inhaltsseite platziert haben). Verknüpfte Inhalte sind im Grunde eine besondere Inhaltsquelle für [dazwischen liegende Inhalte](#adding-in-between-content).
 
@@ -196,7 +198,7 @@ Von hier aus können Sie die Assets an die gewünschte Position ziehen (entweder
 
 ### In das Fragment eingefügte Assets {#assets-inserted-into-the-fragment}
 
-Wenn Assets (z. B. Bilder) in das Fragment eingefügt wurden, sind die Optionen zur Bearbeitung dieser Assets im Seiten-Editor eingeschränkt.  <!-- Removed link as it was a 404 on helpx -->
+Wenn Assets (z. B. Bilder) in das Fragment eingefügt wurden, sind die Optionen zur Bearbeitung dieser Assets im Seiten-Editor eingeschränkt. <!-- Removed link as it was a 404 on helpx -->
 
 Beispielsweise haben Sie zur Bearbeitung eines Bildes folgende Möglichkeiten:
 

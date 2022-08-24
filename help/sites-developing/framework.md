@@ -183,7 +183,6 @@ Das Mixin `cq:OwnerTaggable`, das von `cq:Taggable` übernimmt, soll anzeigen, d
 >* Seiten ( `cq:Page`), wobei die `jcr:content`node is type `cq:PageContent` , der Folgendes umfasst: `cq:Taggable` Mixin.
 >
 >* Assets ( `cq:Asset`), wobei die `jcr:content/metadata` Knoten hat immer die `cq:Taggable` Mixin.
-
 >
 
 

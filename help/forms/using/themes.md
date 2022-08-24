@@ -12,7 +12,7 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '6026'
 ht-degree: 100%
 
@@ -68,7 +68,7 @@ Sie können Designs als Zip-Datei exportieren und diese in anderen Projekten ode
 >
 >Wenn Sie ein Design herunterladen, dem eine adaptive Form zugeordnet ist und das zugehörige adaptive Formular auf einer benutzerdefinierten Vorlage basiert, laden Sie diese Vorlage herunter. Wenn Sie das heruntergeladene Design und adaptive Formular auf einen AEM Forms-Server hochladen, laden Sie die zugehörige benutzerdefinierte Vorlage auch hoch.
 
-### Upload eines Designs {#uploading-a-theme}
+### Hochladen eines Designs {#uploading-a-theme}
 
 Sie können erstellte Designs mit Formatierungsvorgaben für Ihr Projekt verwenden. Sie können von Anderen erstellte Design-Pakete importieren, indem Sie diese in Ihr Projekt hochladen.
 

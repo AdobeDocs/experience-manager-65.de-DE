@@ -1,8 +1,8 @@
 ---
 title: Aktivitäts-Streams-Funktion
-seo-title: Aktivitäts-Streams-Funktion
+seo-title: Activity Streams Feature
 description: Aktivitäten eines angemeldeten Community-Mitglieds
-seo-description: Aktivitäten eines angemeldeten Community-Mitglieds
+seo-description: Activities of a signed-in community member
 uuid: decd2d6c-4d4b-4698-a92c-2b5b441458cf
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,16 +13,16 @@ docset: aem65
 exl-id: 2b2a5de0-e7c7-4417-a217-4b929bc7dcfb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '455'
 ht-degree: 25%
 
 ---
 
 # Aktivitäts-Streams-Funktion {#activity-streams-feature}
 
-## Einführung {#introduction}
+## Einführung    {#introduction}
 
-Die Aktivitäten eines angemeldeten Community-Mitglieds, z. B. das Posten in einem Forum oder Blog, werden in einem Stream erfasst, der durch die Konfiguration der `Activity Streams`-Komponente auf verschiedene Weise gefiltert und angezeigt werden kann.
+Die Aktivitäten eines angemeldeten Community-Mitglieds, wie das Posten in einem Forum oder Blog, werden in einem Stream erfasst, der durch die Konfiguration der `Activity Streams` -Komponente.
 
 Diese Verfolgungsmöglichkeit bietet eine zusätzliche Art der Aktivitätenansicht, mit der Community-Mitglieder interessanten Beiträgen oder den Aktivitäten anderer Mitglieder folgen können.
 
@@ -33,21 +33,21 @@ Das Dokument beschreibt:
 
 ### Hinzufügen von Aktivitäts-Streams zu einer Seite {#adding-activity-streams-to-a-page}
 
-Wenn Sie im Autorenmodus eine `Activity Streams`-Komponente zu einer Seite hinzufügen möchten, suchen Sie mit dem Komponenten-Browser nach
+Wenn Sie eine `Activity Streams` -Komponente auf einer Seite im Autorenmodus verwenden Sie den Komponenten-Browser, um
 
 * `Communities / Activity Streams`
 
 und ziehen Sie die Komponente an die gewünschte Stelle auf einer Seite, auf der Aktivitäts-Streams angezeigt werden sollen.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](/help/communities/basics.md).
+Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die [erforderlichen clientseitigen Bibliotheken](/help/communities/essentials-activities.md#essentials-for-client-side) enthalten sind, wird die Komponente `Activity Streams` wie folgt angezeigt:
+Wenn die [erforderliche clientseitige Bibliotheken](/help/communities/essentials-activities.md#essentials-for-client-side) eingeschlossen sind, wird die `Activity Streams` -Komponente wird angezeigt:
 
 ![activity-streams](assets/activity-component.png)
 
 ### Konfigurieren von Aktivitäts-Streams {#configuring-activity-streams}
 
-Wählen Sie die platzierte Komponente `Activity Streams` aus, um auf das Symbol `Configure` zuzugreifen, mit dem das Bearbeitungsdialogfeld geöffnet wird.
+Wählen Sie die platzierte `Activity Streams` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
 ![konfigurieren](assets/configure-new.png)
 
@@ -75,17 +75,17 @@ Auf der Registerkarte **Benutzeraktivitäten** können Sie festlegen, welche Akt
 
    Wenn diese Option aktiviert ist, enthält die Aktivitätsseite einen Tab, der Aktivitäten nach denen filtert, denen das aktuelle Mitglied folgt. Diese Option ist standardmäßig aktiviert.
 
-### Nach Ansicht {#following-view}
+### Folgende Ansicht {#following-view}
 
-Komponenten müssen konfiguriert werden, um Folgendes zu aktivieren. Folgende Funktionen sind möglich: [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md), [filelibrary](/help/communities/file-library.md) und [comments](/help/communities/comments.md).
+Komponenten müssen konfiguriert werden, um Folgendes zu aktivieren. Funktionen, die Folgendes ermöglichen [blog](/help/communities/blog-feature.md), [Forum](/help/communities/forum.md), [Fragen und Antworten](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md), [fileLibrary](/help/communities/file-library.md)und [Kommentare](/help/communities/comments.md).
 
 ![folgende Ansicht](assets/following-activities.png)
 
-Die Schaltfläche **Folgen** bietet eine Möglichkeit, Einträgen als Aktivitäten, [Benachrichtigungen](/help/communities/notifications.md) oder [Abonnements](/help/communities/subscriptions.md) zu folgen. Jedes Mal, wenn die Schaltfläche **Folgen** ausgewählt wird, können Sie eine Auswahl ein- oder ausschalten. Die Auswahl `Email Subscriptions` ist nur bei Konfiguration vorhanden.
+Die **Folgen** -Schaltfläche bietet die Möglichkeit, Einträgen als Aktivitäten zu folgen. [Benachrichtigungen](/help/communities/notifications.md)oder [subscriptions](/help/communities/subscriptions.md). Jedes Mal, wenn **Folgen** ausgewählt ist, können Sie die Auswahl ein- oder ausschalten. Die `Email Subscriptions` Die Auswahl ist nur bei der Konfiguration vorhanden.
 
-Wenn eine der folgenden Methoden ausgewählt ist, ändert sich der Text der Schaltfläche in **Nach**. Zur Vereinfachung können Sie `Unfollow All` auswählen, um alle Methoden zu deaktivieren.
+Wenn eine der folgenden Methoden ausgewählt ist, ändert sich der Text der Schaltfläche in **Folgende**. Zur Vereinfachung können Sie `Unfollow All` , um alle Methoden auszuschalten.
 
-Die Schaltfläche **Folgen** wird angezeigt:
+Die **Folgen** wird angezeigt:
 
 * Beim Anzeigen des Profils eines anderen Mitglieds.
 * Auf einer Hauptseite mit Funktionen wie Foren, Fragen und Antworten und Blogs.

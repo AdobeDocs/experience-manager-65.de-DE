@@ -1,8 +1,8 @@
 ---
 title: Konfigurieren der Kontoumgebung
-seo-title: Konfigurieren der Kontoumgebung
+seo-title: Configuring Your Account Environment
 description: AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren
-seo-description: AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren
+seo-description: AEM provides you with the capability to configure your account and certain aspects of the author environment
 uuid: ef31be29-5c18-4dc9-ad51-fb001588b31e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,12 +13,12 @@ docset: aem65
 exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '517'
 ht-degree: 99%
 
 ---
 
-# Konfigurieren der Kontoumgebung {#configuring-your-account-environment}
+# Konfigurieren der Kontoumgebung{#configuring-your-account-environment}
 
 AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren.
 
@@ -44,7 +44,7 @@ Im Dialogfeld **Benutzereinstellungen** haben Sie Zugriff auf folgende Optionen:
 
 ![screen_shot_2018-03-20at103808](assets/screen_shot_2018-03-20at103808.png)
 
-### Benutzereinstellungen{#my-preferences}
+### Benutzereinstellungen {#my-preferences}
 
 Auf das Dialogfeld **Benutzereinstellungen** kann über die Option [Benutzer](/help/sites-authoring/user-properties.md#user-settings) in der Kopfzeile zugegriffen werden.
 

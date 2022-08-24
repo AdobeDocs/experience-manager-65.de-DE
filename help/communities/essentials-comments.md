@@ -1,8 +1,8 @@
 ---
 title: Grundlagen zu Kommentaren
-seo-title: Grundlagen zu Kommentaren
+seo-title: Comments Essentials
 description: Komponentenübersicht Kommentare
-seo-description: Komponentenübersicht Kommentare
+seo-description: Comments component overview
 uuid: 58b7bb58-f598-4bcb-93ae-b7795cab51cd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,18 +12,18 @@ discoiquuid: 18f54a1c-52aa-414d-b494-1f19b5c10345
 exl-id: 8b4034f7-2f97-45ad-96d4-51cfbeae5991
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '344'
 ht-degree: 5%
 
 ---
 
-# Kommentare Grundlagen {#comments-essentials}
+# Grundlagen zu Kommentaren {#comments-essentials}
 
 Auf dieser Seite finden Sie die Grundlagen zum Arbeiten mit dem Kommentarsystem (Kommentarkomponente) und Optionen zum Verwalten des benutzergenerierten Inhalts (UGC), der erstellt wird, wenn Mitglieder Kommentare oder Antworten posten.
 
 Die Kommentarkomponente erstellt ein Kommentarsystem, bei dem jeder einzelne Beitrag durch eine Kommentarkomponente (Singular) dargestellt wird. Es ist das Kommentarsystem, das auf der Seite enthalten ist. Das Kommentarsystem erstellt die einzelnen Kommentare beim Aufrufen.
 
-## Grundlagen für Client-seitige {#essentials-for-client-side}
+## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -33,7 +33,7 @@ Die Kommentarkomponente erstellt ein Kommentarsystem, bei dem jeder einzelne Bei
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließen</strong></a></td>
-   <td>Ja - Eigenschaften können im <i>design </i>mode bearbeitet werden</td>
+   <td>Ja - Eigenschaften können bearbeitet werden in <i>Design </i>mode</td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
@@ -77,7 +77,7 @@ Die Liste der Kennzeichnungsgründe kann angepasst werden, indem Sie Ihrer App f
 
 Dies gilt für alle Komponenten, die ein Kommentarsystem erweitern.
 
-## Grundlagen für serverseitige {#essentials-for-server-side}
+## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
 
 * [Kommentar-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
 
@@ -90,13 +90,13 @@ Dies gilt für alle Komponenten, die ein Kommentarsystem erweitern.
 UGC sollte mit einer der Standardmethoden für die Moderation moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Stores](working-with-srp.md) für UGC den programmatischen Zugriff auf UGC, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities: Verwendung einer [gemeinsamer Speicher](working-with-srp.md) für UGC umfasst den programmatischen Zugriff auf UGC, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
 
-**Speicherort und Format der UGC im Repository können sich ohne Warnung** ändern.
+**Speicherort und Format der UGC im Repository können ohne Warnung geändert werden**.
 
 Siehe:
 
-* [Übersicht über den Speicheranbieter](srp.md)  - Einführung und Übersicht über die Repository-Nutzung.
-* [SRP und UGC Essentials](srp-and-ugc.md)  - SRP-Dienstprogrammmethoden und Beispiele.
-* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md)  - Coding Guidelines.
-* [SocialUtils-Refaktorierung](socialutils.md)  - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
+* [Übersicht über den Speicheranbieter](srp.md) - Einführung und Übersicht über die Repository-Nutzung.
+* [Grundlagen zu SRP und UGC](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und -beispiele.
+* [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Kodierungsrichtlinien.
+* [SocialUtils-Refaktorierung](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.

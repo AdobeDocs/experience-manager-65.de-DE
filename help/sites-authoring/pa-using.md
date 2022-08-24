@@ -1,8 +1,8 @@
 ---
 title: Anzeigen von Seitenanalysedaten
-seo-title: Anzeigen von Seitenanalysedaten
+seo-title: Seeing Page Analytics Data
 description: Verwenden Sie Seitenanalysedaten, um die Wirkung des Seiteninhalts zu messen.
-seo-description: Verwenden Sie Seitenanalysedaten, um die Wirkung des Seiteninhalts zu messen.
+seo-description: Use page analytics data to gauge the effectiveness of their page content
 uuid: 8dda89be-13e3-4a13-9a44-0213ca66ed9c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
 exl-id: 554b10c2-6157-4821-a6a7-f2fb6666cdff
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '628'
 ht-degree: 93%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 93%
 
 Verwenden Sie Seitenanalysedaten, um die Wirkung des Seiteninhalts zu messen.
 
-## In der Konsole sichtbare Analysedaten  {#analytics-visible-from-the-console}
+## In der Konsole sichtbare Analysedaten {#analytics-visible-from-the-console}
 
 ![aa-10](assets/aa-10.png)
 
@@ -63,7 +63,7 @@ Mitglieder der Analyse-Administratorbenutzergruppe können die Konsole „Sites�
 >
 >Wenn eine Struktur von Seiten untergeordnete Elemente enthält, die mit verschiedenen Adobe Analytics-Cloudkonfigurationen verbunden sind, können Sie die verfügbaren Datenspalten für die Seiten nicht konfigurieren.
 
-1. Verwenden Sie in der Listenansicht die Ansichtsauswahl (rechts neben der Symbolleiste), wählen Sie **Ansichtseinstellungen** und dann **Benutzerdefinierte Analytics-Daten hinzufügen**.
+1. Verwenden Sie in der Listenansicht die Ansichtsauswahl (rechts neben der Symbolleiste) und wählen Sie **Anzeigeeinstellungen** und dann **Hinzufügen benutzerdefinierter Analytics-Daten**.
 
    ![aa-15](assets/aa-15.png)
 
@@ -75,14 +75,14 @@ Mitglieder der Analyse-Administratorbenutzergruppe können die Konsole „Sites�
 
 ### Öffnen von Inhaltseinblicken mithilfe von Sites {#opening-content-insights-from-sites}
 
-Öffnen Sie [Content Insight](/help/sites-authoring/content-insights.md) in der Sites-Konsole, um die Seiteneffektivität weiter zu untersuchen.
+Öffnen [Content Insight](/help/sites-authoring/content-insights.md) über die Sites-Konsole, um die Seiteneffektivität weiter zu untersuchen.
 
 1. Wählen Sie in der Konsole „Sites“ die Seite aus, für die Sie Inhaltseinblicke sehen möchten.
 1. Klicken Sie in der Symbolleiste auf das Symbol „Analyse und Empfehlungen“.
 
    ![](do-not-localize/chlimage_1-16a.png)
 
-## Im Seiteneditor sichtbare Analysedaten (Activity Map)  {#analytics-visible-from-the-page-editor-activity-map}
+## Im Seiteneditor sichtbare Analysedaten (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!NOTE]
 >

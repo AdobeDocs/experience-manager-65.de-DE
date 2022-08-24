@@ -1,8 +1,8 @@
 ---
 title: Verwalten von Inhalten
-seo-title: Verwalten von Inhalten
+seo-title: Managing Content
 description: Inhaltsverwaltungsaktionen sind die Bausteine, mit denen Inhalte in einer Anwendung erstellt und verwaltet werden können. Auf dieser Seite erfahren Sie mehr.
-seo-description: Inhaltsverwaltungsaktionen sind die Bausteine, mit denen Inhalte in einer Anwendung erstellt und verwaltet werden können. Auf dieser Seite erfahren Sie mehr.
+seo-description: Content Management actions are the building blocks that help to create and manage content within an application. Follow this page to learn more.
 uuid: ab680836-133b-45b9-913c-e721b7e9fc04
 contentOwner: User
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: 89fc3701-0472-4629-95d3-da577581a0f0
 exl-id: 4e37e814-ceb6-4dfa-a4d3-754f15ca4edf
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 11%
+source-wordcount: '279'
+ht-degree: 10%
 
 ---
 
@@ -31,9 +31,9 @@ Wenn Sie an eine Online-Zeitschrift denken, enthält der Hauptinhalt Artikel, An
 
 * **Artikel**: Text basiert zusammen mit Kunst zum Vermitteln von Informationen
 * **Banner:** normalerweise grafische Werbe-Links
-* **Sammlungen:** stellen einen klar definierten  ** Bucketgefüllt mit Inhalten dar, wie z. B. Artikeln oder Bannern, die zum Titelthema passen
+* **Sammlungen:** eine genau definierte *Behälter* mit Inhalten wie Artikeln oder Bannern gefüllt, die dem Titelthema entsprechen
 
-* **Gemeinsame Ressourcen:** ermöglicht die Wiederverwendung oder Freigabe von gemeinsamen Artikeln
+* **Freigegebene Ressourcen:** ermöglicht die Wiederverwendung oder Freigabe von gemeinsamen Artikeln
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ In den folgenden Themen wird die Erstellung und Verwaltung von Inhalten beschrie
 
 >[!NOTE]
 >
->Im Allgemeinen sollten Sie Preflight vor der Veröffentlichung von Inhalten verwenden. Weitere Informationen finden Sie unter [Vorschau mit Preflight](/help/mobile/aem-mobile-manage-ondemand-services.md) .
+>Im Allgemeinen sollten Sie Preflight vor der Veröffentlichung von Inhalten verwenden. Siehe [Vorschau mit Preflight](/help/mobile/aem-mobile-manage-ondemand-services.md) für weitere Details.
 
 ### Zusätzliche Ressourcen {#additional-resources}
 

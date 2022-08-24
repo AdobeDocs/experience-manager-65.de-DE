@@ -12,7 +12,7 @@ discoiquuid: 01d5677f-5c87-4a6e-987b-8eda9acc0b27
 role: Developer
 exl-id: cff65f74-ba95-438e-88a4-5ec7d22aafba
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1405'
 ht-degree: 100%
 
@@ -130,7 +130,7 @@ Gehen Sie wie folgt vor, um XMP Metadaten in ein PDF-Dokument zu importieren:
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Webdienste verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
-**Erstellen Sie einen XMPUtilityService-Client**
+**Erstellen eines XMPUtilityService-Clients**
 
 Bevor Sie einen Vorgang für XMP-Dienstprogramme programmgesteuert durchführen können, müssen Sie einen XMPUtilityService-Client erstellen. Mit der Java-API wird dies erreicht, indem ein `XMPUtilityServiceClient`-Objekt erstellt wird. Mit der Web-Service-API wird dies durch die Verwendung eines `XMPUtilityServiceService`-Objekts erreicht.
 
@@ -162,7 +162,7 @@ Importieren Sie XMP-Metadaten mithilfe der XMP Utilities-API (Java):
 
 1. Erstellen Sie einen XMP-Utilities-Dienst-Clienten
 
-   Erstellen Sie ein `XMPUtilityServiceClient`-Objekt durch Verwenden seines Konstruktors und Übergeben eines `ServiceClientFactory`-Objekts, das Verbindungseigenschaften enthält.
+   Erstellen Sie ein `XMPUtilityServiceClient`-Objekt, indem Sie seinen Konstruktor verwenden und dabei ein `ServiceClientFactory`-Objekt übergeben, das Verbindungseigenschaften enthält.
 
 1. Rufen Sie den Importvorgang der XMP-Metadaten auf
 
@@ -199,18 +199,18 @@ Führen Sie die folgenden Aufgaben aus, um XMP-Metadaten mithilfe der XMP-Utilit
 
 1. Erstellen Sie einen XMP-Utilities-Dienst-Clienten
 
-   Erstellen Sie ein `XMPUtilityServiceService`-Objekt mithilfe des Konstruktors Ihrer Proxy-Klasse.
+   Erstellen Sie ein `XMPUtilityServiceService`-Objekt mithilfe des Klassenkonstruktors der Proxy.
 
 1. Rufen Sie den Importvorgang der XMP-Metadaten auf
 
-   Um die XMP-Metadaten zu ändern, rufen Sie entweder die Methode `importMetadata` oder die Methode `importXMP` des `XMPUtilityServiceService`-Objekts auf.
+   Um die XMP-Metadaten zu ändern, rufen Sie entweder die `importMetadata`-Methode oder die `importXMP`-Methode des `XMPUtilityServiceService`-Objekts auf.
 
-   Wenn Sie die Methode `importMetadata` verwenden, übergeben Sie die folgenden Werte:
+   Wenn Sie `importMetadata`-Methode verwenden, geben Sie die folgenden Werte ein:
 
    * Ein `BLOB`-Objekt, das die PDF-Datei darstellt.
    * Ein `XMPUtilityMetadata`-Objekt, das die zu importierenden Metadaten enthält.
 
-   Wenn Sie die Methode `importXMP` verwenden, übergeben Sie die folgenden Werte:
+   Wenn Sie die `importXMP`-Methode verwenden, geben Sie die folgenden Werte ein:
 
    * Ein `BLOB`-Objekt, das die PDF-Datei darstellt.
    * Ein `BLOB`-Objekt, das eine XML-Datei mit den zu importierenden Metadaten darstellt.
@@ -310,7 +310,7 @@ Exportieren von XMP-Metadaten anhand der XMP Utilities-API (Web-Service):
 
 1. Rufen Sie den Importvorgang der XMP-Metadaten auf
 
-   Rufen Sie zum Überprüfen der XMP-Metadaten die `exportMetadata`-Methode des `XMPUtilityServiceClient`-Objekts auf und übergeben Sie dabei ein `BLOB`-Objekt, das die PDF-Datei darstellt. Die Methode gibt ein `XMPUtilityMetadata`-Objekt zurück, das die abgerufenen Metadaten enthält.
+   Rufen Sie zum Überprüfen der XMP-Metadaten die `exportMetadata`-Methode des `XMPUtilityServiceClient`-Objekts auf und übergeben Sie ein `BLOB`-Objekt, das die PDF-Datei darstellt. Die Methode gibt ein `XMPUtilityMetadata`-Objekt zurück, das die abgerufenen Metadaten enthält.
 
    Rufen Sie zum Abrufen und Speichern der XMP-Metadaten die `exportXMP`-Methode des `XMPUtilityServiceClient`-Objekts auf und übergeben Sie dabei ein `BLOB`-Objekt, das die PDF-Datei darstellt. Die Methode gibt ein `BLOB`-Objekt zurück, das die abgerufenen Metadaten enthält, die Sie anschließend als XML-Datei auf der Festplatte speichern können.
 

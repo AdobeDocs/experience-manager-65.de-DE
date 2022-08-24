@@ -10,8 +10,8 @@ feature: Deploying
 role: Architect
 source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '327'
+ht-degree: 92%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 0%
    + [Ablauf statischer Objekte](expiration-static-objects.md)
    + [Versionsbereinigung](version-purging.md)
    + [Überwachung und Wartung der AEM-Instanz](monitoring-and-maintaining.md)
-   + [Abladen von Aufträgen](offloading.md)
+   + [Abladung von Aufträgen](offloading.md)
    + [Single Sign-On](single-sign-on.md)
    + [Ressourcenzuordnung](resource-mapping.md)
    + [Aktivieren von HTTP über SSL](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/ssl-by-default.html)

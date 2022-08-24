@@ -1,8 +1,8 @@
 ---
 title: Ordnerfreigabe mit Adobe Creative Cloud
-seo-title: Ordnerfreigabe mit Adobe Creative Cloud
+seo-title: Folder sharing with Adobe Creative Cloud
 description: Hier erfahren Sie mehr über das Freigeben von Ordnern mit Adobe Creative Cloud.
-seo-description: Hier erfahren Sie mehr über das Freigeben von Ordnern mit Adobe Creative Cloud.
+seo-description: Learn about sharing folder with Adobe Creative Cloud
 uuid: 4d93df7d-36da-43bb-a069-42993c607b2b
 contentOwner: asgupta
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,17 +12,17 @@ discoiquuid: 7699c08b-a5b8-4f8b-8856-113d09349f49
 docset: aem65
 source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 80%
+source-wordcount: '66'
+ht-degree: 75%
 
 ---
 
 
-# Ordnerfreigabe mit Adobe Creative Cloud  {#folder-sharing-with-adobe-creative-cloud}
+# Ordnerfreigabe mit Adobe Creative Cloud {#folder-sharing-with-adobe-creative-cloud}
 
 >[!CAUTION]
 >
->Die Ordnerfreigabe von AEM in Creative Cloud wird nicht mehr unterstützt. Kunden wird dringend empfohlen, neuere Funktionen wie [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) oder [AEM Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de) zu verwenden. Weitere Informationen finden Sie unter [Best Practices für die Integration von AEM und Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>Die Ordnerfreigabe von AEM in Creative Cloud wird nicht mehr unterstützt. Kunden wird dringend empfohlen, neuere Funktionen wie [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) oder [AEM Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de). Weitere Informationen finden Sie unter [Best Practices für die Integration von AEM und Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 <!-- TBD: This article is removed from TOC and is not published. The functionality does not exist.
 

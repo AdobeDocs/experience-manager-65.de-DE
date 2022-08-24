@@ -1,8 +1,8 @@
 ---
 title: Entwicklermodus
-seo-title: Entwicklermodus
+seo-title: Developer Mode
 description: Der Entwicklermodus öffnet einen Seitenbereich mit mehreren Registerkarten mit Informationen für Entwickler zur aktuellen Seite.
-seo-description: Der Entwicklermodus öffnet einen Seitenbereich mit mehreren Registerkarten mit Informationen für Entwickler zur aktuellen Seite.
+seo-description: Developer mode opens a side panel with several tabs that provide a developer with infomation about the current page
 uuid: 8301ab51-93d6-44f9-a813-ba7f03f54485
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 88%
+source-wordcount: '687'
+ht-degree: 91%
 
 ---
 
@@ -29,7 +29,7 @@ Beim Bearbeiten von Seiten in AEM sind diverse [Modi](/help/sites-authoring/auth
 Diese Informationen unterstützen Entwickler bei Folgendem:
 
 * Identifizieren, welche Komponenten Seiten beinhalten.
-* Debuggen, was an welcher Stelle und zu welchem Zeitpunkt geschieht und wie Probleme gelöst werden können. 
+* Debuggen Sie, was an welcher Stelle und zu welchem Zeitpunkt geschieht und wie Probleme gelöst werden können.
 * Testen, ob sich die Anwendung wie erwartet verhält.
 
 >[!CAUTION]
@@ -38,10 +38,8 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 >
 >* Der Modus ist nur in der Touch-optimierten Oberfläche (beim Bearbeiten von Seiten) verfügbar.
 >* Der Modus ist (aufgrund von Größenbeschränkungen) nicht auf mobilen Geräten oder in kleinen Desktop-Fenstern verfügbar.
-
    >
-   >   
-   * Dies gilt bei einer Breite von weniger als 1024 Pixel.
+   >   * Dies gilt bei einer Breite von weniger als 1024 Pixel.
 >* Ist nur für Benutzer verfügbar, die Mitglieder der Gruppe `administrators` sind.
 
 
@@ -53,10 +51,8 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 >
 >* auf einer Autoreninstanz im Ausführungsmodus nosamplecontent
 >* auf einer Veröffentlichungsinstanz
-
 >
->
-Der Modus sollte nach der Verwendung wieder deaktiviert werden.
+>Der Modus sollte nach der Verwendung wieder deaktiviert werden.
 
 >[!NOTE]
 >
@@ -64,12 +60,10 @@ Der Modus sollte nach der Verwendung wieder deaktiviert werden.
 >
 >* im Knowledge-Base-Artikel [Beheben von Fehlern in der Touch-optimierten AEM-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html).
 >* in der AEM-Gems-Sitzung zum [AEM 6.0-Entwicklermodus](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html).
-
 >
 
 
-
-## Öffnen des Entwicklermodus  {#opening-developer-mode}
+## Öffnen des Entwicklermodus {#opening-developer-mode}
 
 Der Entwicklermodus ist als Seitenbereich im Seiten-Editor implementiert. Um den Bereich zu öffnen, wählen Sie in der Symbolleiste des Seiten-Editors aus der Modusauswahl die Option **Entwickler** aus:
 
@@ -77,18 +71,18 @@ Der Entwicklermodus ist als Seitenbereich im Seiten-Editor implementiert. Um den
 
 Der Bereich ist in zwei Registerkarten unterteilt:
 
-* **[Komponenten](/help/sites-developing/developer-mode.md#components)**  - Zeigt eine Komponentenstruktur an, ähnlich der  [Inhaltsstruktur ](/help/sites-authoring/author-environment-tools.md#content-tree) für Autoren
+* **[Komponenten](/help/sites-developing/developer-mode.md#components)** – Hier sehen Sie die Komponentenstruktur, die der [Inhaltsstruktur](/help/sites-authoring/author-environment-tools.md#content-tree) für Autoren ähnelt.
 
 * **[Fehler](/help/sites-developing/developer-mode.md#errors)** – Wenn ein Problem auftritt, werden hier die Details für die jeweilige Komponente angezeigt.
 
-### Komponenten  {#components}
+### Komponenten {#components}
 
 ![chlimage_1-12](assets/chlimage_1-12.png)
 
 Diese Registerkarte enthält eine Komponentenstruktur mit folgenden Attributen:
 
 * Zeigt die Kette der Komponenten und Vorlagen, die auf dieser Seite gerendert wurden (SLY, JSP usw.). Die Struktur kann erweitert werden, sodass sie Kontext innerhalb der Hierarchie anzeigt.
-* Zeigt die serverseitige Verarbeitungszeit, die zum Rendern der Komponente benötigt wird.
+* Zeigt die Server-seitige Verarbeitungszeit, die zum Rendern der Komponente benötigt wird.
 * Sie können die Struktur erweitern und spezifische Komponenten innerhalb der Struktur auswählen. Die Auswahl bietet Zugriff auf Komponentendetails, z. B.:
 
    * Repository-Pfad
@@ -120,13 +114,13 @@ Jeder Komponenteneintrag kann (z. B.) Folgendes beinhalten:
 * Wenn Sie einen Komponenteneintrag erweitern, wird u. U. außerdem Folgendes angezeigt:
 
    * Die Hierarchie innerhalb der ausgewählten Komponente.
-   * Die Render-Zeiten nur für die ausgewählte Komponente, für einzelne darin verschachtelte Komponenten und für alle Komponenten insgesamt. 
+   * Die Render-Zeiten nur für die ausgewählte Komponente, für einzelne darin verschachtelte Komponenten und für alle Komponenten insgesamt.
 
    ![chlimage_1-15](assets/chlimage_1-15.png)
 
 >[!CAUTION]
 >
->Einige Links zeigen auf das Skript unter `/libs`. Diese dienen jedoch nur als Referenz. Sie dürfen **keine** Elemente unter `/libs` bearbeiten, da Ihre Änderungen möglicherweise verloren gehen. Grund dafür ist, dass diese Verzweigung jedes Mal geändert wird, wenn Sie ein Upgrade durchführen oder ein Hotfix/Feature Pack anwenden. Alle erforderlichen Änderungen sollten unter `/apps` vorgenommen werden, siehe [Überlagerungen und Überschreibungen](/help/sites-developing/overlays.md).
+>Einige Links zeigen auf das Skript unter `/libs`. Diese dienen jedoch nur als Referenz. **darf nicht** Alles bearbeiten unter `/libs`, da alle Änderungen, die Sie vornehmen, verloren gehen können. Grund dafür ist, dass diese Verzweigung jedes Mal geändert wird, wenn Sie ein Upgrade durchführen oder ein Hotfix/Feature Pack anwenden. Alle erforderlichen Änderungen sollten unter `/apps`, siehe [Überlagerungen und Überschreibungen](/help/sites-developing/overlays.md).
 
 ### Fehler {#errors}
 

@@ -1,8 +1,8 @@
 ---
-title: 'Konfigurieren von ContextHub '
-seo-title: 'Konfigurieren von ContextHub '
+title: Konfigurieren von ContextHub
+seo-title: Configuring ContextHub
 description: Es wird beschrieben, wie Sie ContextHub konfigurieren.
-seo-description: Es wird beschrieben, wie Sie ContextHub konfigurieren.
+seo-description: Learn how to configure Context Hub.
 uuid: f2988bb9-6878-42a2-bb51-c3f8683248c5
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1850'
+source-wordcount: '1842'
 ht-degree: 90%
 
 ---
 
-# Konfigurieren von ContextHub   {#configuring-contexthub}
+# Konfigurieren von ContextHub {#configuring-contexthub}
 
 ContextHub ist ein Framework zum Speichern, Ändern und Darstellen von Kontextdaten. Ausführlichere Informationen zu ContextHub finden Sie in der [Entwicklerdokumentation](/help/sites-developing/contexthub.md). ContextHub ersetzt [ClientContext](/help/sites-administering/client-context.md) auf der Touch-Benutzeroberfläche.
 
@@ -39,7 +39,7 @@ oder
 
 >[!NOTE]
 >
->[Aufgrund der Repository-Umstrukturierung in AEM 6.4 wurde ](/help/sites-deploying/repository-restructuring.md) der Speicherort von ContextHub-Konfigurationen von  `/etc/cloudsettings` zu:
+>[Aufgrund der Repository-Umstrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md) Der Speicherort der ContextHub-Konfigurationen wurde von `/etc/cloudsettings` an:
 >
 > * `/libs/settings/cloudsettings`
 > * `/conf/global/settings/cloudsettings`
@@ -57,7 +57,7 @@ Der Service kann entweder mithilfe der [Web-Konsole](/help/sites-deploying/confi
 
 Wenn die ContextHub-Benutzeroberfläche angezeigt wird, erscheint sie nur auf den Seiten von AEM-Autoreninstanzen. Auf Seiten von Veröffentlichungsinstanzen wird die Benutzeroberfläche nicht angezeigt.
 
-## Hinzufügen von ContextHub-UI-Modi und -Modulen   {#adding-contexthub-ui-modes-and-modules}
+## Hinzufügen von ContextHub-UI-Modi und -Modulen {#adding-contexthub-ui-modes-and-modules}
 
 Konfigurieren Sie die UI-Modi und -Module, die auf der ContextHub-Symbolleiste im Vorschaumodus angezeigt werden:
 
@@ -70,7 +70,7 @@ UI-Modi werden als Symbole auf der linken Seite der Symbolleiste angezeigt. Wenn
 
 Bei Symbolen handelt es sich um Verweise aus der [Coral-Bibliothek mit Benutzeroberflächensymbolen](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons).
 
-### Hinzufügen eines UI-Modus   {#adding-a-ui-mode}
+### Hinzufügen eines UI-Modus {#adding-a-ui-mode}
 
 Fügen Sie einer Gruppe mit verwandten ContextHub-Modulen einen UI-Modus hinzu. Beim Erstellen des UI-Modus geben Sie den Titel und das Symbol an, der bzw. das in der ContextHub-Symbolleiste angezeigt werden soll.
 
@@ -89,7 +89,7 @@ Fügen Sie einer Gruppe mit verwandten ContextHub-Modulen einen UI-Modus hinzu. 
 
 1. Klicken oder tippen Sie auf „Speichern“.
 
-### Hinzufügen eines UI-Moduls   {#adding-a-ui-module}
+### Hinzufügen eines UI-Moduls {#adding-a-ui-module}
 
 Fügen Sie ein ContextHub-UI-Modul einem UI-Modus hinzu, damit es in der ContextHub-Symbolleiste zum Einblenden einer Vorschau für Seiteninhalte angezeigt wird. Beim Hinzufügen eines UI-Moduls erstellen Sie eine Instanz eines Modultyps, der für ContextHub registriert ist. Sie müssen den Namen des zugeordneten Modultyps kennen, um ein UI-Modul hinzufügen zu können.
 
@@ -103,7 +103,7 @@ Die Eigenschaften von UI-Modulen enthalten eine Detailkonfiguration, in der Sie 
 | [contexthub.browserinfo](/help/sites-developing/ch-samplemodules.md#contexthub-browserinfo-ui-module-type) | Zeigt Informationen zum Browser an | surferinfo |
 | [contexthub.datetime](/help/sites-developing/ch-samplemodules.md#contexthub-datetime-ui-module-type) | Zeigt Informationen zu Datum und Uhrzeit an | datetime |
 | [contexthub.device](/help/sites-developing/ch-samplemodules.md#contexthub-device-ui-module-type) | Client-Gerät anzeigen | emulators |
-| [contexthub.location](/help/sites-developing/ch-samplemodules.md#contexthub-location-ui-module-type) | Zeigt den Breiten- und Längengrad des Clients sowie den Standort auf einer Karte an. Sie können den Standort ändern. | Geolocation |
+| [contexthub.location](/help/sites-developing/ch-samplemodules.md#contexthub-location-ui-module-type) | Zeigt den Breiten- und Längengrad des Clients sowie den Standort auf einer Karte an. Sie können den Standort ändern. | geolocation |
 | [contexthub.screen-orientation](/help/sites-developing/ch-samplemodules.md#contexthub-screen-orientation-ui-module-type) | Zeigt die Bildschirmausrichtung des Geräts (Querformat oder Hochformat) an | emulators |
 | [contexthub.tagcloud](/help/sites-developing/ch-samplemodules.md#contexthub-tagcloud-ui-module-type) | Zeigt Statistiken zu Seiten-Tags an | tagcloud |
 | [granite.profile](/help/sites-developing/ch-samplemodules.md#granite-profile-ui-module-type) | Zeigt die Profilinformationen für den aktuellen Benutzer an, einschließlich authorizableID, displayName und familyName. Sie können den Wert von displayName und familyName ändern. | Profil |
@@ -125,11 +125,11 @@ Die Eigenschaften von UI-Modulen enthalten eine Detailkonfiguration, in der Sie 
 1. (Optional) Geben Sie ein JSON-Objekt ein, um das UI-Modul zu konfigurieren und so die Standardkonfiguration für den Store außer Kraft zu setzen.
 1. Klicken oder tippen Sie auf „Speichern“.
 
-## Erstellen eines ContextHub-Store   {#creating-a-contexthub-store}
+## Erstellen eines ContextHub-Store {#creating-a-contexthub-store}
 
 Erstellen Sie einen ContextHub-Store, in dem Benutzerdaten dauerhaft gespeichert werden können und bei Bedarf zugänglich sind. ContextHub-Stores basieren auf registrierten Store-Kandidaten. Beim Erstellen des Stores benötigen Sie den Wert von storeType, unter dem der Store-Kandidat registriert wurde. (Siehe [Erstellen von benutzerdefinierten Store-Kandidaten](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).)
 
-### Store-Detailkonfiguration   {#detailed-store-configuration}
+### Store-Detailkonfiguration {#detailed-store-configuration}
 
 Beim Konfigurieren eines Stores können Sie über die Eigenschaft „Detailkonfiguration“ Werte für Store-spezifische Eigenschaften angeben. Der Wert basiert auf dem Parameter `config` der Store-Funktion `init`. Es hängt daher vom Store ab, ob dieser Wert angegeben werden muss und welches Format der Wert haben muss.
 
@@ -168,7 +168,7 @@ In AEM werden die folgenden Beispiele für Store-Kandidaten bereitgestellt, die 
 1. (Optional) Geben Sie im Feld „Detailkonfiguration (JSON)“ ein JSON-Objekt ein, um die Standardkonfiguration für den Store außer Kraft zu setzen.
 1. Klicken oder tippen Sie auf „Speichern“.
 
-## Beispiel: Verwenden eines JSONP-Service    {#example-using-a-jsonp-service}
+## Beispiel: Verwenden eines JSONP-Service  {#example-using-a-jsonp-service}
 
 In diesem Beispiel wird veranschaulicht, wie Sie einen Store konfigurieren und die Daten in einem UI-Modul anzeigen. In diesem Beispiel wird der MD5-Service der Website „jsontest.com“ als Datenquelle für einen Store verwendet. Der Service gibt den MD5-Hashcode einer bestimmten Zeichenfolge im JSON-Format zurück.
 
@@ -181,7 +181,7 @@ Der Store „contexthub.generic-jsonp“ wird so konfiguriert, dass Daten für d
 }
 ```
 
-### Erstellen des Stores „contexthub.generic-jsonp“   {#creating-a-contexthub-generic-jsonp-store}
+### Erstellen des Stores „contexthub.generic-jsonp“ {#creating-a-contexthub-generic-jsonp-store}
 
 Mit dem Store-Beispielkandidaten „contexthub.generic-jsonp“ können Sie Daten aus einem JSONP-Dienst oder einem Webdienst abrufen, der JSON-Daten zurückgibt. Verwenden Sie für diesen Store-Kandidaten die Store-Konfiguration, um Details zu dem JSONP-Service anzugeben, der genutzt werden soll.
 
@@ -217,7 +217,7 @@ Fügen Sie der ContextHub-Symbolleiste ein UI-Modul hinzu, um die Daten anzuzeig
 
 ![chlimage_1-323](assets/chlimage_1-323.png)
 
-Verwenden Sie das Verfahren unter [Hinzufügen eines UI-Moduls](#adding-a-ui-module), um das UI-Modul einem vorhandenen UI-Modus hinzuzufügen, z. B. dem Perona-UI-Beispielmodus. Verwenden Sie für das UI-Modul die folgenden Eigenschaftswerte:
+Gehen Sie wie folgt vor: [Hinzufügen eines UI-Moduls](#adding-a-ui-module) , um das UI-Modul einem vorhandenen UI-Modus hinzuzufügen, z. B. dem Perona-UI-Beispielmodus. Verwenden Sie für das UI-Modul die folgenden Eigenschaftswerte:
 
 * **UI-Modultitel:** MD5
 * **Modultyp:** contexthub.base
@@ -237,7 +237,7 @@ Verwenden Sie das Verfahren unter [Hinzufügen eines UI-Moduls](#adding-a-ui-mod
 
 Ein Debugmodus für ContextHub kann aktiviert werden, um die Fehlerbehebung zuzulassen. Der Debugmodus kann entweder über die ContextHub-Konfiguration oder per CRXDE aktiviert werden.
 
-### Per Konfiguration   {#via-the-configuration}
+### Per Konfiguration {#via-the-configuration}
 
 Bearbeiten Sie die Konfiguration von ContextHub und aktivieren Sie die Option **Debuggen**.
 
@@ -255,7 +255,7 @@ Verwenden Sie CRXDE Lite, um die Eigenschaft `debug` unter auf **true** festzule
 
 >[!NOTE]
 >
->Für ContextHub-Konfigurationen, die sich noch unter ihren alten Pfaden befinden, lautet der Speicherort für `debug property` `/libs/settings/cloudsettings/legacy/contexthub` .
+>Bei ContextHub-Konfigurationen, die sich noch unter ihren veralteten Pfaden befinden, muss der Speicherort `debug property` is `/libs/settings/cloudsettings/legacy/contexthub`.
 
 ### Unbeaufsichtigter Modus {#silent-mode}
 
@@ -266,25 +266,25 @@ Dies ist für Ihre Veröffentlichungsinstanz hilfreich, für die Sie keine Debug
 1. Öffnen Sie die **Konfiguration der Adobe Experience Manager-Web-Konsole** unter `http://<host>:<port>/system/console/configMgr`.
 1. Suchen Sie nach **Adobe Granite ContextHub**.
 1. Klicken Sie auf die Konfiguration **Adobe Granite ContextHub**, um die Eigenschaften zu bearbeiten.
-1. Aktivieren Sie die Option für den **unbeaufsichtigten Modus** (Silent Mode) und klicken Sie auf **Speichern**.
+1. Aktivieren Sie die Option für den **unbeaufsichtigten Modus** und klicken Sie auf **Speichern**.
 
-## Wiederherstellen von ContextHub-Konfigurationen nach einem Upgrade  {#recovering-contexthub-configurations-after-upgrading}
+## Wiederherstellen von ContextHub-Konfigurationen nach einem Upgrade {#recovering-contexthub-configurations-after-upgrading}
 
 Wenn ein [Upgrade für AEM](/help/sites-deploying/upgrade.md) durchgeführt wird, werden die ContextHub-Konfigurationen gesichert und an einem sicheren Ort gespeichert. Während des Upgrades werden die ContextHub-Standardkonfigurationen installiert, um die vorhandenen Konfigurationen zu ersetzen. Die Sicherung ist erforderlich, um alle von Ihnen vorgenommenen Änderungen oder Hinzufügungen beizubehalten.
 
-ContextHub-Konfigurationen werden in einem Ordner mit dem Namen `contexthub` unter den folgenden Knoten gespeichert:
+ContextHub-Konfigurationen werden in einem Ordner mit dem Namen `contexthub` unter den folgenden Knoten:
 
 * `/conf/global/settings/cloudsettings`
 * `/conf/<tenant>/settings/cloudsettings`
 
-Nach einem Upgrade wird die Sicherung in einem Ordner mit dem Namen `contexthub` unter einem Knoten mit dem Namen gespeichert:
+Nach einem Upgrade wird die Sicherung in einem Ordner mit dem Namen `contexthub` unterhalb eines Knotens mit dem Namen:
 
 `/conf/global/settings/cloudsettings/default-pre-upgrade_yyyymmdd_xxxxxxx` oder
 `/conf/<tenant>/settings/cloudsettings/default-pre-upgrade_yyyymmdd_xxxxxxx`
 
-Der `yyyymmdd`-Teil des Knotennamens ist das Datum, an dem die Aktualisierung durchgeführt wurde.
+Die `yyyymmdd` -Teil des Knotennamens ist das Datum, an dem die Aktualisierung durchgeführt wurde.
 
-Um Ihre ContextHub-Konfigurationen wiederherzustellen, kopieren Sie mithilfe der CRXDE Lite die Knoten, die Ihre Stores, Benutzeroberflächenmodi und Benutzeroberflächenmodule darstellen, von unterhalb des Knotens `default-pre-upgrade_yyyymmdd_xxxxxx` nach unten:
+Um Ihre ContextHub-Konfigurationen wiederherzustellen, kopieren Sie mithilfe der CRXDE Lite die Knoten, die Ihre Stores, Benutzeroberflächenmodi und Benutzeroberflächenmodule darstellen, von unten `default-pre-upgrade_yyyymmdd_xxxxxx` Knoten zu unten:
 
 * `/conf/global/settings/cloudsettings` oder
 * `/conf/<tenant>/settings/cloudsettings`

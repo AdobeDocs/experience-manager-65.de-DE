@@ -106,17 +106,17 @@ können wir sie in ihre zusammengesetzten Teile zerlegen:
 |---|---|---|---|---|---|---|---|---|
 | https:// | myhost | tools/spy | .printable.a4. | html | / | a/b | ? | x=12 |
 
-**** protocolHTTP
+**protocol** HTTP
 
-**** hostName der Website.
+**Host** Name der Website.
 
-**content** pathPath, der den zu rendernden Inhalt angibt. Wird in Kombination mit der Erweiterung verwendet. In diesem Beispiel werden sie in tools/spy.html übersetzt.
+**Inhaltspfad** Pfad, der den zu rendernden Inhalt angibt. Wird in Kombination mit der Erweiterung verwendet. In diesem Beispiel werden sie in tools/spy.html übersetzt.
 
-**Auswahl(en)** , die für alternative Methoden zum Rendern des Inhalts verwendet werden; in diesem Beispiel eine druckerfreundliche Version im A4-Format.
+**selector(s)** Wird für alternative Methoden zum Rendern des Inhalts verwendet; in diesem Beispiel eine druckerfreundliche Version im A4-Format.
 
-**** extensionContent-Format; gibt auch das Skript an, das für die Wiedergabe verwendet werden soll.
+**Erweiterung** Inhaltsformat; gibt auch das Skript an, das für die Wiedergabe verwendet werden soll.
 
-**** suffixKann verwendet werden, um zusätzliche Informationen anzugeben.
+**Suffix** Kann verwendet werden, um zusätzliche Informationen anzugeben.
 
 **param(s)** Alle für dynamischen Inhalt erforderlichen Parameter.
 
@@ -154,7 +154,7 @@ Der vom `sling:resourceType` angegebene Pfad kann wie folgt sein:
 
    Relative Pfade werden von der Adobe empfohlen, da sie die Portabilität erhöhen.
 
-Alle Sling-Skripte werden in Unterordnern von `/apps` oder `/libs` gespeichert, die in dieser Reihenfolge durchsucht werden (siehe [Anpassen von Komponenten und anderen Elementen](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
+Alle Sling-Skripte werden in Unterordnern von `/apps` oder `/libs`, die in dieser Reihenfolge durchsucht werden (siehe [Anpassen von Komponenten und anderen Elementen](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 Einige andere zu beachtende Punkte sind:
 
@@ -171,7 +171,7 @@ Die Liste der von der angegebenen Instanz von AEM unterstützten Skript-Engines 
 
 Darüber hinaus unterstützt Apache Sling die Integration mit anderen gängigen Skript-Engines (z. B. Groovy, JRuby, Freemarker) und bietet eine Möglichkeit zur Integration neuer Skript-Engines.
 
-Wenn das `sling:resourceType` `hr/jobs` im obigen Beispiel  ist, dann für:
+Wenn die Variable `sling:resourceType` is `hr/jobs` dann für:
 
 * GET/HEAD-Anfragen und URLs, die auf .html enden (Standardanfragetypen, Standardformat)
 
@@ -193,7 +193,7 @@ Wenn das `sling:resourceType` `hr/jobs` im obigen Beispiel  ist, dann für:
 
    Selektoren können verwendet werden, um denselben Inhalt in einem alternativen Format anzuzeigen. Zum Beispiel eine druckerfreundliche Version, einen RSS-Feed oder eine Zusammenfassung.
 
-   Wenn wir uns eine druckerfreundliche Version ansehen, in der der Selektor *print* sein könnte; wie in `../content/corporate/jobs/developer.print.html`
+   Wenn wir uns eine druckerfreundliche Version ansehen, in der der Selektor *print*; wie in `../content/corporate/jobs/developer.print.html`
 
    Das Skript wäre `/apps/hr/jobs/jobs.print.esp`. Der Selektor wird zum Skriptnamen hinzugefügt.
 
@@ -244,7 +244,7 @@ Beispiel:
 
 * /
 
-   * a
+   * eine
    * b
 
       * sling:resourceSuperType = a
@@ -267,7 +267,7 @@ Die Typhierarchie von:
 * `/x`
    * das `[ c, b, a, <default>]`
 * while für `/y`
-   * die Hierarchie ist `[ c, a, <default>]`
+   * die Hierarchie `[ c, a, <default>]`
 
 Grund hierfür ist, dass `/y` die Eigenschaft `sling:resourceSuperType` aufweist, während `/x` sie nicht aufweist und daher der Obertyp vom Ressourcentyp übernommen wird.
 
@@ -280,13 +280,13 @@ Wenn Sie die Repräsentation (das Skript) direkt aufrufen, blenden Sie die Resso
 * automatische Handhabung von HTTP-Methoden außer GET, einschließlich:
 
    * POST, PUT, DELETE, die mit einer Sling-Standardimplementierung behandelt werden
-   * das Skript `POST.jsp` in Ihrem sling:resourceType-Speicherort
+   * die `POST.jsp` Skript in Ihrem sling:resourceType -Speicherort
 
 * Ihre Code-Architektur ist nicht mehr so sauber oder so klar strukturiert wie sie es sein sollte; von größter Bedeutung für die großmaßstäbliche Entwicklung
 
 ### Sling-API {#sling-api}
 
-Diese verwendet das Sling-API-Paket org.apache.sling.&amp;ast; und Tag-Bibliotheken.
+Diese verwendet das Sling-API-Paket org.apache.sling.-, - und -Tag-Bibliotheken.
 
 ### Referenzieren von vorhandenen Elementen mithilfe von sling:include {#referencing-existing-elements-using-sling-include}
 
@@ -294,7 +294,7 @@ Eine letzte Überlegung ist die Notwendigkeit, auf vorhandene Elemente innerhalb
 
 Komplexere Skripte (aggregierende Skripte) müssen möglicherweise auf mehrere Ressourcen zugreifen (z. B. Navigation, Seitenleiste, Fußzeile, Elemente einer Liste) und tun dies durch Einbeziehen der *Ressource*.
 
-Dazu können Sie den Befehl sling:include(&quot;/&lt;path>/&lt;resource>&quot;) verwenden. Dies umfasst effektiv die Definition der referenzierten Ressource, wie in der folgenden Anweisung, die auf eine vorhandene Definition für das Rendern von Bildern verweist:
+Dazu können Sie sling:include(&quot;/&lt;path>/&lt;resource>&quot;). Dies umfasst effektiv die Definition der referenzierten Ressource, wie in der folgenden Anweisung, die auf eine vorhandene Definition für das Rendern von Bildern verweist:
 
 ```xml
 %><sling:include resourceType="geometrixx/components/image/img"/><%
@@ -335,7 +335,7 @@ Weitere Informationen finden Sie unter [Web-Konsole](/help/sites-deploying/web-c
 
 Folgendes ist für die Entwicklung von Interesse:
 
-**** ItemEin Element ist entweder ein Knoten oder eine Eigenschaft.
+**Posten** Ein Element ist entweder ein Knoten oder eine Eigenschaft.
 
 Ausführliche Informationen zum Bearbeiten von Item-Objekten finden Sie in den [Javadocs](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) der Schnittstelle javax.jcr.Item
 
@@ -355,19 +355,19 @@ wobei currentNode das aktuelle Knotenobjekt ist.
 
 Weitere Informationen zum Bearbeiten von Knotenobjekten finden Sie in den [Javadocs](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
-**** WidgetAEM alle Benutzereingaben werden von Widgets verwaltet. Diese werden oft verwendet, um die Bearbeitung eines Inhalts zu steuern.
+**Widget** In AEM werden alle Benutzereingaben von Widgets verwaltet. Diese werden oft verwendet, um die Bearbeitung eines Inhalts zu steuern.
 
 Dialogfelder werden durch die Kombination von Widgets erstellt.
 
 AEM wurde mit der Widgets-Bibliothek ExtJS entwickelt.
 
-**** DialogEin Dialogfeld ist ein spezieller Typ von Widget.
+**Dialogfeld** Ein Dialogfeld ist ein spezieller Widget-Typ.
 
 Um Inhalte zu bearbeiten, verwendet AEM Dialogfelder, die vom Anwendungsentwickler definiert wurden. Diese kombinieren eine Reihe von Widgets, um dem Benutzer alle Felder und Aktionen zu präsentieren, die zum Bearbeiten des zugehörigen Inhalts erforderlich sind.
 
 Dialogfelder werden auch zum Bearbeiten von Metadaten und von verschiedenen Verwaltungstools verwendet.
 
-**** ComponentEine Softwarekomponente ist ein Systemelement, das einen vordefinierten Dienst oder ein vordefiniertes Ereignis anbietet und mit anderen Komponenten kommunizieren kann.
+**Komponente** Eine Softwarekomponente ist ein Systemelement, das einen vordefinierten Dienst oder ein vordefiniertes Ereignis anbietet und mit anderen Komponenten kommunizieren kann.
 
 Innerhalb von AEM wird häufig eine Komponente zum Rendern des Inhalts einer Ressource verwendet. Wenn es sich bei der Ressource um eine Seite handelt, wird die Komponente, die sie rendert, als Top-Level-Komponente oder als Seitenkomponente bezeichnet. Allerdings muss eine Komponente weder Inhalte darstellen noch mit einer bestimmten Ressource verknüpft sein. Zum Beispiel zeigt eine Navigationskomponente Informationen über mehrere Ressourcen an.
 
@@ -376,15 +376,15 @@ Die Definition einer Komponente umfasst:
 * den Code, der zum Rendern des Inhalts verwendet wird
 * ein Dialogfeld für die Benutzereingabe und die Konfiguration des resultierenden Inhalts.
 
-**** TemplateEine Vorlage ist die Basis für einen bestimmten Seitentyp. Beim Erstellen einer Seite auf der Registerkarte „Websites“ muss der Benutzer eine Vorlage auswählen. Die neue Seite wird dann durch Kopieren dieser Vorlage erstellt.
+**Vorlage** Eine Vorlage ist die Basis für einen bestimmten Seitentyp. Beim Erstellen einer Seite auf der Registerkarte „Websites“ muss der Benutzer eine Vorlage auswählen. Die neue Seite wird dann durch Kopieren dieser Vorlage erstellt.
 
 Eine Vorlage ist eine Hierarchie von Knoten, die dieselbe Struktur aufweist wie die zu erstellende Seite, aber keine Inhalte.
 
 Sie definiert die Seitenkomponente, die zum Rendern der Seite verwendet wird, und den Standardinhalt (primären Top-Level-Inhalt). Der Inhalt definiert die Art des Renderns, da AEM inhaltsorientiert ist.
 
-**Seitenkomponente (Komponente der obersten Ebene)** Die Komponente, die zum Rendern der Seite verwendet werden soll.
+**Seitenkomponente (Komponente auf oberster Ebene)** Die Komponente, die zum Rendern der Seite verwendet werden soll.
 
-**** Seite: Eine Seite ist eine &quot;Instanz&quot;einer Vorlage.
+**Seite** Eine Seite ist eine &quot;Instanz&quot;einer Vorlage.
 
 Eine Seite hat einen Hierarchieknoten vom Typ cq:Page und einen Inhaltsknoten vom Typ cq:PageContent. Die Eigenschaft „sling:resourceType“ des Inhaltsknotens verweist auf die Seitenkomponente, die zum Rendern der Seite verwendet wird.
 
@@ -392,9 +392,9 @@ Um beispielsweise den Namen der aktuellen Seite zu erhalten, können Sie folgend
 
 S`tring pageName = currentPage.getName();`
 
-wobei currentPage das aktuelle Seitenobjekt ist. Weitere Informationen zum Bearbeiten von Seitenobjekten finden Sie in den [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html).
+wobei currentPage das aktuelle Seitenobjekt ist. Weitere Informationen zum Bearbeiten von Seitenobjekten finden Sie in den [Javadocs](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html).
 
-**Seiten-** Manager Der Seiten-Manager ist eine Schnittstelle, die Methoden für Vorgänge auf Seitenebene bereitstellt.
+**Seiten-Manager** Der Seitenmanager ist eine Schnittstelle, die Methoden für Vorgänge auf Seitenebene bereitstellt.
 
 Um beispielsweise die übergeordnete Seite einer Ressource zu erhalten, können Sie folgenden Code in Ihrem Skript verwenden:
 
@@ -432,7 +432,7 @@ Die folgende Liste gibt einen Überblick über die Struktur, die Sie im Reposito
 
 * `/libs`
 
-    Bibliotheken und Definitionen, die zum Kern von AEM gehören. Die Unterordner in `/libs` stellen die vordefinierten AEM Funktionen dar, wie z. B. Suche oder Replikation. Der Inhalt in `/libs` sollte nicht geändert werden, da er die Funktionsweise AEM beeinflusst. Website-spezifische Funktionen sollten unter `/apps` entwickelt werden (siehe [Anpassen von Komponenten und anderen Elementen](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
+    Bibliotheken und Definitionen, die zum Kern von AEM gehören. Die Unterordner in `/libs` stellen die vordefinierten AEM Funktionen dar, wie z. B. Suche oder Replikation. Der Inhalt in `/libs` sollten nicht geändert werden, da dies die Funktionsweise AEM beeinflusst. Spezifische Funktionen für Ihre Website sollten unter `/apps` (siehe [Anpassen von Komponenten und anderen Elementen](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 * `/tmp`
 

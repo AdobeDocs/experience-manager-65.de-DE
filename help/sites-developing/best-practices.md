@@ -1,8 +1,8 @@
 ---
 title: Best Practices
 seo-title: Best Practices
-description: Die Entwicklungs- und Beratungsteams von Adobe haben einen umfassenden Satz an Best Practices für AEM-Entwickler zusammengestellt
-seo-description: Die Entwicklungs- und Beratungsteams von Adobe haben einen umfassenden Satz an Best Practices für AEM-Entwickler zusammengestellt
+description: Die Entwicklungs- und Beratungs-Teams von Adobe haben einen umfassenden Satz an Best Practices für AEM-Entwickler zusammengestellt
+seo-description: Adobe Engineering and Consulting teams have developed a comprehensive set of best practices for AEM developers
 uuid: f962c31f-8140-482f-b189-16376e23bfed
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 80%
+source-wordcount: '467'
+ht-degree: 79%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 80%
 
 ## Best Practices für Entwickler – Erste Schritte {#best-practices-for-developers-getting-started}
 
-Die Entwicklungs- und Beratungsteams von Adobe haben einen umfassenden Satz an Best Practices für AEM-Entwickler zusammengestellt. Sie werden von den Entwicklern von Adobe eingehalten, wenn sie zentrale AEM-Produktaktualisierungen und Code für Kundenimplementierungen entwickeln.
+Die Entwicklungs- und Beratungs-Teams von Adobe haben einen umfassenden Satz an Best Practices für AEM-Entwickler zusammengestellt. Sie werden von den Entwicklern von Adobe eingehalten, wenn sie zentrale AEM-Produktaktualisierungen und Code für Kundenimplementierungen entwickeln.
 
 Bevor Sie mit Ihrem AEM-Entwicklungsprojekt beginnen, machen Sie sich zunächst mit diesen Best Practices vertraut:
 
@@ -81,13 +81,13 @@ Zur Verwaltung und Bearbeitung Ihrer Website-Inhalte wurden einige Best Practice
 
 ## Communities {#communities}
 
-[AEM ](/help/communities/overview.md) Communities vereinfacht die Erstellung und Verwaltung von On-Premise-Communities.
+[AEM Communities](/help/communities/overview.md) vereinfacht die Erstellung und Verwaltung von On-Premise-Communities.
 
 Einige Best Practices für Communities sind hier beschrieben:
 
 |  |  |  |
 |---|---|---|
-| Best Practices für die Arbeit mit benutzergenerierten Inhalten (UGC) | [Kodierungsrichtlinien ](/help/communities/code-guide.md) | Richtlinien für die Entwicklung von flexiblem, portablen Code für das [Social Component Framework](/help/communities/scf.md) (SCF). |
+| Best Practices für die Arbeit mit benutzergenerierten Inhalten (UGC) | [Kodierungsrichtlinien ](/help/communities/code-guide.md) | Richtlinien für die Entwicklung von flexiblem, tragbarem Code für die [Social-Komponenten-Framework](/help/communities/scf.md) (SCF). |
 | Beispielverwendung von Communities-Komponenten | [Handbuch der Community-Komponenten](/help/communities/components-guide.md) | Ein interaktives Entwicklungstool. |
 
 ## Tools/HTL {#tooling-htl}

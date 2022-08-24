@@ -5,7 +5,7 @@ exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 source-git-commit: 2f400d209148278f0695f7b9523b58bba6845cfb
 workflow-type: tm+mt
 source-wordcount: '301'
-ht-degree: 68%
+ht-degree: 81%
 
 ---
 
@@ -21,9 +21,9 @@ Die Leitfäden für Headless-Einstieg bieten einen einfachen Weg zum Erstellen, 
 
 >[!TIP]
 >
->In diesem Erste-Schritte-Handbuch werden Kenntnisse über AEM und Headless-Technologien vorausgesetzt.
+>In diesem Erste-Schritte-Leitfaden werden Kenntnisse über AEM und Headless-Technologien vorausgesetzt.
 >
->Wenn Sie neu AEM oder Headless sind, lesen Sie bitte unsere [Headless Documentation Journey](/help/journey-headless/home.md) für eine durchgängige Einführung in Headless und wie AEM sie unterstützt.
+>Wenn Sie AEM oder Headless noch nicht kennen, finden Sie in unseren [Headless-Dokumentations-Touren](/help/journey-headless/home.md) eine umfassende Einführung in Headless und in die Unterstützung durch AEM.
 
 ## Zielgruppe {#audience}
 

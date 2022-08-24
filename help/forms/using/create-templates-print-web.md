@@ -11,7 +11,7 @@ docset: aem65
 feature: Interactive Communication
 exl-id: bef1f05e-aea2-433e-b3d5-0b7ad8163fa7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1796'
 ht-degree: 100%
 
@@ -131,7 +131,7 @@ Um ein Layoutfragment für den Druckkanal der interaktiven Kommunikation zu erst
    Stellen Sie sicher, dass die **Objektbibliothek** und die Option **Objekt** im Menü **Fenster** ausgewählt werden.
 
 1. Ziehen Sie die Komponente **Tabelle** per Drag-and-Drop aus der **Objektbibliothek** auf das Formular.
-1. Gehen Sie im Dialogfeld „Tabelle“ folgendermaßen vor:
+1. Im Dialogfeld Tabelle einfügen:
 
    1. Geben Sie die Anzahl der Spalten als **5** an.
    1. Spezifizieren Sie die Anzahl von Zeilen im Hauptteil als **1**.

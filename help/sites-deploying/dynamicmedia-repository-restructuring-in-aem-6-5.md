@@ -6,18 +6,18 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
-feature: Aktualisieren
+feature: Upgrading
 exl-id: 4e736924-74ea-431a-be19-1c4ff022f464
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '413'
 ht-degree: 33%
 
 ---
 
 # Dynamic Media-Repository-Umstrukturierung in Adobe Experience Manager 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
-Wie auf der übergeordneten Seite [Repository-Neustrukturierung in Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md) beschrieben, sollten Kunden, die auf Experience Manager 6.5 aktualisieren, diese Seite verwenden, um den Arbeitsaufwand im Zusammenhang mit Repository-Änderungen zu bewerten, die sich auf Dynamic Media auswirken. Einige Änderungen erfordern während des Aktualisierungsprozesses von Experience Manager 6.5 Arbeitsaufwand, während andere auf eine zukünftige Aktualisierung verschoben werden können.
+Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md) -Seite verwenden, sollten Kunden, die auf Experience Manager 6.5 aktualisieren, diese Seite verwenden, um den Arbeitsaufwand im Zusammenhang mit Repository-Änderungen zu bewerten, die sich auf Dynamic Media auswirken. Einige Änderungen erfordern während des Aktualisierungsprozesses von Experience Manager 6.5 Arbeitsaufwand, während andere auf eine zukünftige Aktualisierung verschoben werden können.
 
 **Vor der künftigen Aktualisierung**
 
@@ -116,7 +116,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in Adobe Experie
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
-   <td><p>1. Rückgängigmachen der Veröffentlichung aller Videos von YouTube<br /> 2. Erstellen Sie die YouTube-Konfiguration mithilfe der neuen TouchUI (von <code>/conf</code>), einschließlich des Kopierens aller Kanäle vom alten Speicherort<br /> 3. Veröffentlichen Sie alle Videos neu auf YouTube.</p> <p>Dieser Workflow führt zu neuen YouTube-URLs. Wenn Sie die Veröffentlichung nicht vor der Erstellung einer YouTube-Konfiguration für die TouchUI rückgängig machen, werden unter "Eigenschaften"mehrere YouTube-URLs aufgelistet, da die neu erstellten Kanäle erneut veröffentlicht werden, sofern Sie die Möglichkeit dazu haben. Diese Funktion bedeutet, dass Sie nutzlose URLs haben, die unter Eigenschaften aufgelistet sind.</p> </td>
+   <td><p>1. Rückgängigmachen der Veröffentlichung aller Videos von YouTube<br /> 2. Erstellen Sie die YouTube-Konfiguration mithilfe der neuen Touch-optimierten Benutzeroberfläche (aus <code>/conf</code>), einschließlich des Kopierens aller Kanäle aus dem alten Speicherort<br /> 3. Veröffentlichen Sie alle Videos neu auf YouTube.</p> <p>Dieser Workflow führt zu neuen YouTube-URLs. Wenn Sie die Veröffentlichung nicht vor der Erstellung einer YouTube-Konfiguration für die TouchUI rückgängig machen, werden unter "Eigenschaften"mehrere YouTube-URLs aufgelistet, da die neu erstellten Kanäle erneut veröffentlicht werden, sofern Sie die Möglichkeit dazu haben. Diese Funktion bedeutet, dass Sie nutzlose URLs haben, die unter Eigenschaften aufgelistet sind.</p> </td>
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td>

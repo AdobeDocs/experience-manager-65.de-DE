@@ -1,8 +1,8 @@
 ---
 title: Erstellen von Gerätegruppenfiltern
-seo-title: Erstellen von Gerätegruppenfiltern
+seo-title: Creating Device Group Filters
 description: Erstellen Sie einen Gerätegruppenfilter, um eine Reihe von Gerätefunktionsanforderungen zu definieren
-seo-description: Erstellen Sie einen Gerätegruppenfilter, um eine Reihe von Gerätefunktionsanforderungen zu definieren
+seo-description: Create a device group filter to define a set of device capability requirements
 uuid: 30c0699d-2388-41b5-a062-f5ea9d6f08bc
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -14,7 +14,7 @@ legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
 exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '799'
 ht-degree: 86%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 86%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md).
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Erstellen Sie einen Gerätegruppenfilter, um eine Reihe von Gerätefunktionsanforderungen zu definieren. Erstellen Sie so viele Filter, wie Sie benötigen, um auf die erforderlichen Gruppen von Gerätefunktionen zu zielen.
 
@@ -31,11 +31,11 @@ Entwerfen Sie Ihre Filter so, dass Sie Kombinationen von ihnen verwenden können
 
 Nachdem Sie einen Filter erstellt haben, können Sie ihn in der [Gruppenkonfiguration](/help/sites-developing/mobile.md#creating-a-device-group) verwenden.
 
-## Die Filter-Java-Klasse  {#the-filter-java-class}
+## Die Filter-Java-Klasse {#the-filter-java-class}
 
 Ein Gerätegruppenfilter ist eine OSGi-Komponente, die die Schnittstelle [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) implementiert. Bei der Bereitstellung stellt die Implementierungsklasse einen Filterservice bereit, der für Gerätegruppenkonfigurationen verfügbar ist.
 
-Die in diesem Artikel beschriebene Lösung verwendet das Apache Felix Maven-SCR-Plug-in, um die Entwicklung von Komponenten und Diensten zu erleichtern. Daher verwendet die Java-Beispielklasse die Anmerkungen `@Component`und `@Service` . Die Klasse hat die folgende Struktur:
+Die in diesem Artikel beschriebene Lösung verwendet das Apache Felix Maven-SCR-Plug-in, um die Entwicklung von Komponenten und Diensten zu erleichtern. Daher verwendet die Beispiel-Java-Klasse die `@Component`und `@Service` Anmerkungen. Die Klasse hat die folgende Struktur:
 
 ```java
 package com.adobe.example.myapp;
@@ -89,7 +89,7 @@ public String getTitle() {
 
 Feste Programmierung des Namens und des Beschreibungtextes ist ausreichend für einsprachige Authoring-Umgebungen. Ziehen Sie in Betracht, die Strings für mehrsprachige Verwendung zu externalisieren oder das Ändern von Strings zu aktivieren, ohne den Quellcode erneut zu kompilieren.
 
-### Bewertung gegen Filterkriterien  {#evaluating-against-filter-criteria}
+### Bewertung gegen Filterkriterien {#evaluating-against-filter-criteria}
 
 Die `matches`-Funktion gibt `true` zurück, wenn die Gerätefunktionen alle Filterkriterien erfüllen. Werten Sie die in den Methodenargumenten bereitgestellten Informationen aus, um festzustellen, ob das Gerät zur Gruppe gehört. Die folgenden Werte werden als Argumente bereitgestellt:
 
@@ -106,7 +106,7 @@ boolean cssSupport = true;
 cssSupport = NumberUtils.toInt(capabilities.get(DeviceSpecsConstants.DSPEC_XHTML_SUPPORT_LEVEL)) > 1;
 ```
 
-Das Paket `org.apache.commons.lang.math` stellt die Klasse `NumberUtils` bereit.
+Die `org.apache.commons.lang.math` -Paket bietet die `NumberUtils` -Klasse.
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ Das Paket `org.apache.commons.lang.math` stellt die Klasse `NumberUtils` bereit.
 
 Die folgende Beispiel-Implementierung von DeviceGroupFilter bestimmt, ob die physische Größe des Geräts die Mindestanforderungen erfüllt. Dieser Filter soll der Touch-Gerätegruppe Granularität verleihen. Die Größe der Schaltflächen in der Anwendungsoberfläche sollte unabhängig von der physischen Bildschirmgröße gleich sein. Die Größe von anderen Elementen, z. B. Text, kann variieren. Der Filter ermöglicht die dynamische Auswahl eines bestimmten CSS, das die Größe der Benutzeroberflächenelemente steuert.
 
-Dieser Filter wendet Größenkriterien auf die Namen der WURFL™-Eigenschaften `physical_screen_height` und `physical_screen_width` an.
+Dieser Filter wendet Größenkriterien auf die `physical_screen_height` und `physical_screen_width` WURFL™-Eigenschaftsnamen.
 
 ```java
 package com.adobe.example.myapp;

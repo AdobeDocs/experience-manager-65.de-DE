@@ -23,7 +23,7 @@ Erstellung barrierefreier Websites und Inhalte mit AEM Auswirkungen:
 
 * Entwickler von Vorlagen sollten sich ebenfalls dieser Thematiken bei der Umsetzung des Webdesigns bewusst sein.
 
-Adobe Experience Manager arbeitet mit den [guidelines](#wcag-accessibility-guidelines), die vom [World Wide Web Consortium](#world-wide-web-consortium) bereitgestellt werden.
+Adobe Experience Manager arbeitet mit dem [Richtlinien](#wcag-accessibility-guidelines) von [World Wide Web Consortium](#world-wide-web-consortium).
 
 >[!NOTE]
 >
@@ -55,6 +55,6 @@ Mit Adobe Experience Manager können Inhaltsautoren und/oder Website-Betreiber W
 >
 >Bei der Erstellung der Site sollten Sie festlegen, welchen Level Ihre Site insgesamt erfüllen soll.
 
-## Barrierefreiheit bei Adobe         {#accessibility-at-adobe}
+## Barrierefreiheit bei Adobe {#accessibility-at-adobe}
 
 Weitere Informationen finden Sie im [Adobe Accessibility Resource Center](https://www.adobe.com/accessibility/).

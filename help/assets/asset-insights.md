@@ -8,7 +8,7 @@ exl-id: 0130ac40-a72b-4caf-a10f-3c7d76eaa1e6
 source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
 workflow-type: tm+mt
 source-wordcount: '791'
-ht-degree: 63%
+ht-degree: 64%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 63%
 
 | Version | Artikellink |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=en) |
+| AEM as a Cloud Service | [Klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=en) |
 | AEM 6.5 | Dieser Artikel |
-| AEM 6.4 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/touch-ui-configuring-asset-insights.html?lang=en) |
+| AEM 6.4 | [Klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/touch-ui-configuring-asset-insights.html?lang=en) |
 
 Mit der Funktion Assets Insights können Sie Benutzerbewertungen und Nutzungsstatistiken von Bildern verfolgen, die auf Drittanbieter-Websites, in Marketingkampagnen und den Kreativlösungen der Adobe verwendet werden. Sie hilft, Erkenntnisse über ihre Leistung und Beliebtheit abzuleiten.
 
@@ -26,7 +26,7 @@ Mit der Funktion Assets Insights können Sie Benutzerbewertungen und Nutzungssta
 
 Für [!DNL Assets] Einblicke zur Erfassung von Nutzungsstatistiken für Bilder von einer Website müssen Sie den Einbettungscode für das Bild in den Website-Code aufnehmen.
 
-Damit Assets Insights Nutzungsstatistiken für Assets anzeigen kann, konfigurieren Sie zunächst die Funktion, um Berichtsdaten aus Adobe Analytics abzurufen. Weitere Details finden Sie unter [Asset Insights konfigurieren](/help/assets/configure-asset-insights.md). Um diese Funktion in einer On-Premise-Installation zu verwenden, kaufen Sie [!DNL Adobe Analytics] -Lizenz getrennt. Kunden mit [!DNL Managed Services] receive [!DNL Analytics] Lizenz im Paket mit [!DNL Experience Manager]. Siehe [Managed Services-Produktbeschreibung](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
+Damit Assets Insights Nutzungsstatistiken für Assets anzeigen kann, konfigurieren Sie zunächst die Funktion, um Berichtsdaten aus Adobe Analytics abzurufen. Weitere Details finden Sie unter [Asset Insights konfigurieren](/help/assets/configure-asset-insights.md). Um diese Funktion in einer On-Premise-Installation zu verwenden, kaufen Sie [!DNL Adobe Analytics] -Lizenz getrennt. Kunden mit [!DNL Managed Services] receive [!DNL Analytics] Lizenz im Paket mit [!DNL Experience Manager]. Siehe [Managed Services-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >

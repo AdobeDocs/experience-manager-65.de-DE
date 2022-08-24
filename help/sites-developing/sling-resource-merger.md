@@ -1,5 +1,5 @@
 ---
-title: Verwenden des Sling Resource Merger in AEM
+title: 'Verwenden des Sling Resource Merger in AEM  '
 seo-title: Using the Sling Resource Merger in AEM
 description: Der Sling Resource Merger bietet Dienste für den Zugriff auf Ressourcen und für das Zusammenführen von Ressourcen.
 seo-description: The Sling Resource Merger provides services to access and merge resources
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 ---
 
-# Verwenden des Sling Resource Merger in AEM{#using-the-sling-resource-merger-in-aem}
+# Verwenden des Sling Resource Merger in AEM  {#using-the-sling-resource-merger-in-aem}
 
 ## Zweck {#purpose}
 
@@ -268,6 +268,6 @@ Einige Beispiele sind enthalten:
    * [Anpassen der Konsolen](/help/sites-developing/customizing-consoles-touch.md)
    * [Anpassung des Seiten-Authorings](/help/sites-developing/customizing-page-authoring-touch.md)
 
-* Überschreiben:
+* Überschreibung:
 
    * [Konfiguration von Seiteneigenschaften](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)

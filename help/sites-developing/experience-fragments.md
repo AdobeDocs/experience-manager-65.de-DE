@@ -1,5 +1,5 @@
 ---
-title: Experience Fragments
+title: 'Experience Fragments '
 seo-title: Experience Fragments
 description: Erfahren Sie mehr über das Anpassen von Experience Fragments.
 seo-description: Learn about customizing Experience Fragments.
@@ -32,7 +32,7 @@ Da es kein `/libs/cq/experience-fragments/components/xfpage/xfpage.html` gibt, w
 
 * `sling:resourceSuperType` : `wcm/foundation/components/page`
 
-## Einfache HTML-Ausgabe {#the-plain-html-rendition}
+## Einfache HTML-Ausgabedarstellung {#the-plain-html-rendition}
 
 Mit dem `.plain.`-Selektor in der URL können Sie auf die einfache HTML-Ausgabe zugreifen.
 

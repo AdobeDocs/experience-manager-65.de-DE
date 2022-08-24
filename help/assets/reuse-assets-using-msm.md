@@ -17,9 +17,9 @@ ht-degree: 95%
 
 | Version | Artikellink |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=en) |
+| AEM as a Cloud Service | [Klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=en) |
 | AEM 6.5 | Dieser Artikel |
-| AEM 6.4 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/reuse-assets-using-msm.html?lang=en) |
+| AEM 6.4 | [Klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/reuse-assets-using-msm.html?lang=en) |
 
 Funktionen für Multi-Site-Manager (MSM) in [!DNL Adobe Experience Manager] ermöglicht Benutzern die Wiederverwendung von einmalig erstellten und über mehrere Webspeicherorte hinweg wiederverwendeten Inhalten. Dasselbe gilt für digitale Assets wie MSM für [!DNL Assets] Funktionalität. Mit MSM für [!DNL Assets] können Sie:
 

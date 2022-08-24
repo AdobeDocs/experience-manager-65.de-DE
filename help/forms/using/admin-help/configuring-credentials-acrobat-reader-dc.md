@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5bb32fb1-4b6e-412f-aa16-f60db9dcaba1
 exl-id: e8015d59-7587-46dc-a672-e0f1108102ad
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 100%
 
@@ -53,11 +53,11 @@ Der Trust Store enthält möglicherweise mehr als eine Acrobat Reader DCExtensio
 
 ## Acrobat Reader DC Extensions-Berechtigungen entfernen {#remove-a-acrobat-reader-dc-extensions-credential}
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
+1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
 1. Wählen Sie die Berechtigung und klicken Sie auf „Löschen“.
 
 ## Acrobat Reader DC Extensions-Berechtigungen ersetzen {#replace-a-acrobat-reader-dc-extensions-credential}
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
+1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
 1. Notieren Sie sich den Alias der vorhandenen Berechtigung, wählen Sie ihn aus und klicken Sie auf „Löschen“.
 1. Importieren Sie die neue Berechtigung unter Verwendung von exakt demselben Aliasnamen.

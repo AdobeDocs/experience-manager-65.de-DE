@@ -113,7 +113,7 @@ Scrollen Sie nach unten zu `Add User to Groups`:
    * Wählen Sie nun eine der folgenden Optionen aus `Community Administrators`
    * Wählen Sie nun eine der folgenden Optionen aus `Community Enablement Managers`
 
-* Klicken Sie auf **[!UICONTROL Speichern]**.
+* Wählen Sie **[!UICONTROL Speichern]** aus.
 
 ![create-user](assets/create-user.png)
 

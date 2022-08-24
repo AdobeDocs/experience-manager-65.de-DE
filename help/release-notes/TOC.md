@@ -29,7 +29,7 @@ ht-degree: 49%
    + [6,5,6](previous/6.5.6.md)
    + [6,5,5](previous/6.5.5.md)
    + [6,5,4](previous/6.5.4.md)
-   + [6,5,3](previous/6.5.3.md)
+   + [6.5.3](previous/6.5.3.md)
    + [6,5,2](previous/6.5.2.md)
    + [6,5,1](previous/6.5.1.md)
    + [6.5.0](previous/ga.md)

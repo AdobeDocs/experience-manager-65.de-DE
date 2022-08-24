@@ -1,8 +1,8 @@
 ---
 title: Verwenden von Inhaltseigenschaften zum Exportieren von Inhalten
-seo-title: Verwenden von Inhaltseigenschaften zum Exportieren von Inhalten
+seo-title: Using Content Properties to Export Content
 description: Auf der folgenden Seite finden Sie App-Eigenschaften und -Knoten.
-seo-description: Auf der folgenden Seite finden Sie App-Eigenschaften und -Knoten.
+seo-description: The following page shows App Properties and Nodes.
 uuid: 73f1832f-e457-47d0-a0e1-80af90897d31
 contentOwner: User
 content-type: reference
@@ -12,24 +12,24 @@ discoiquuid: a3006835-b1d2-47d6-959a-cdb692e34e1e
 exl-id: db1c33c9-8539-436d-b4d0-3d5e6fd688ed
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '330'
 ht-degree: 10%
 
 ---
 
-# Verwenden von Inhaltseigenschaften zum Exportieren von Inhalt{#using-content-properties-to-export-content}
+# Verwenden von Inhaltseigenschaften zum Exportieren von Inhalten{#using-content-properties-to-export-content}
 
 >[!NOTE]
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Apps werden in AEM als *cq:Pages* dargestellt.
+Apps werden als *cq:Pages* in AEM.
 
-Sie verwenden dieselben allgemeinen Eigenschaften, die in jedem *cq:Page* vorhanden sind, zusätzlich zu anderen, die unten angezeigt werden und die unterstützende Eigenschaften der Integration darstellen.
+Sie verwenden dieselben allgemeinen Eigenschaften, die in allen *cq:Page* zusätzlich zu anderen unten aufgeführten Elementen, die integrationsunterstützende Eigenschaften darstellen.
 
 ## App-Eigenschaften {#app-properties}
 
-Die folgende Tabelle zeigt **App-Eigenschaften und -Knoten**.
+Die folgende Tabelle zeigt **Eigenschaften und Knoten der App**.
 
 <table>
  <tbody>
@@ -81,12 +81,12 @@ Die folgende Tabelle zeigt **App-Eigenschaften und -Knoten**.
   <tr>
    <td>sling:resourceType</td>
    <td>Zeichenfolge:Pfad</td>
-   <td><p>Pfad zu einer cq:Component , die <i>mobileapps/core/components/instance ist oder erweitert.</i></p> <p>Dadurch erhalten Sie die Präsenz und das Rendering im Apps-Katalog.</p> </td>
+   <td><p>Pfad zu einer cq:Component , die <i>mobileapps/core/components/instance.</i></p> <p>Dadurch erhalten Sie die Präsenz und das Rendering im Apps-Katalog.</p> </td>
   </tr>
  </tbody>
 </table>
 
-Sie können ***Inhaltseigenschaften*** verwenden, um Inhalte zu erstellen. Siehe die folgenden Ressourcen zum Erstellen und Exportieren von Artikeln und freigegebenen Ressourcen:
+Sie können ***Inhaltseigenschaften*** , um Inhalte zu erstellen. Siehe die folgenden Ressourcen zum Erstellen und Exportieren von Artikeln und freigegebenen Ressourcen:
 
 * [Inhaltseigenschaften](/help/mobile/content-properties.md)
 * [Erstellen der Konfiguration von Artikelexporten](/help/mobile/creating-article-export-configuration.md)

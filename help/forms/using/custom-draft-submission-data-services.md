@@ -10,7 +10,7 @@ topic-tags: customization
 discoiquuid: 602fd6a9-9a65-411c-8475-a4082a3fdee0
 exl-id: ed10ef8c-7b9c-43cf-bea8-7cf9742a8cac
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 100%
 
@@ -32,8 +32,8 @@ Um die Speicherung von Benutzerdaten anzupassen, müssen Sie die Dienste für [E
 
 * Aktivieren von [Formularportalkomponenten](/help/forms/using/enabling-forms-portal-components.md)
 * Erstellen einer [Formularportalseite](/help/forms/using/creating-form-portal-page.md)
-* Aktivieren [adaptiver Formulare für das Formularportal](/help/forms/using/draft-submission-component.md)
-* Informieren über [Implementierungsdetails für benutzerdefinierten Speicher](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Aktivieren von [adaptiven Formularen für das Formularportal](/help/forms/using/draft-submission-component.md)
+* Erfahren Sie mehr über [Implementierungsdetails für benutzerdefiniertes Speichern](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Entwurfsdaten-Service {#draft-data-service}
 

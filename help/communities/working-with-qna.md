@@ -1,8 +1,8 @@
 ---
 title: Funktion „Fragen-und-Antworten-Forum“
-seo-title: Funktion „Fragen-und-Antworten-Forum“
+seo-title: Q&A Forum Feature
 description: Hinzufügen der Funktion "Fragen und Antworten"zu einer Seite
-seo-description: Hinzufügen der Funktion "Fragen und Antworten"zu einer Seite
+seo-description: Adding the QnA forum feature to a page
 uuid: e0d95009-0d04-4fa7-8d05-5948c4e37f08
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,14 +13,14 @@ docset: aem65
 exl-id: 17081710-35e0-4f5b-9485-1f85c065fd70
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1368'
 ht-degree: 21%
 
 ---
 
 # Funktion „Fragen-und-Antworten-Forum“{#q-a-forum-feature}
 
-## Einführung {#introduction}
+## Einführung    {#introduction}
 
 Das Forum-Feature Fragen und Antworten bietet Community-Mitgliedern die Möglichkeit, Fragen zu stellen und zu beantworten. Mitglieder können:
 
@@ -35,27 +35,27 @@ Das Forum-Feature Fragen und Antworten bietet Community-Mitgliedern die Möglich
 Die Dokumentation beschreibt:
 
 * Hinzufügen der Funktion &quot;Fragen und Antworten&quot;zu einer AEM Site.
-* Konfigurationseinstellungen für die Komponente `QnA`.
+* Konfigurationseinstellungen für `QnA`-Komponente.
 
 ## Hinzufügen eines Fragen-und-Antworten-Forums zu einer Seite {#adding-a-q-a-forum-to-a-page}
 
-Um eine `QnA`-Komponente im Autorenmodus zu einer Seite hinzuzufügen, suchen Sie im Komponenten-Browser nach `Communities / QnA` und ziehen Sie sie an die gewünschte Stelle auf einer Seite, auf der das QnA-Forum angezeigt werden soll.
+So fügen Sie eine `QnA` -Komponente auf einer Seite im Autorenmodus verwenden Sie den Komponenten-Browser, um `Communities / QnA` und ziehen Sie sie an die gewünschte Stelle auf einer Seite, auf der das Forum zur Frage der Antworten erscheinen soll.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](/help/communities/basics.md).
+Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die [erforderlichen clientseitigen Bibliotheken](/help/communities/qna-essentials.md#essentials-for-client-side) enthalten sind, wird die Komponente `QnA` wie folgt angezeigt:
+Wenn die [erforderliche clientseitige Bibliotheken](/help/communities/qna-essentials.md#essentials-for-client-side) eingeschlossen sind, wird die `QnA` -Komponente angezeigt:
 
 ![qna-component](assets/qna-component.png)
 
 ### Konfigurieren von Fragen und Antworten {#configuring-qna}
 
-Wählen Sie die platzierte Komponente `QnA` aus, um auf das Symbol `Configure` zuzugreifen, mit dem das Bearbeitungsdialogfeld geöffnet wird.
+Wählen Sie die platzierte `QnA` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
 ![konfigurieren](assets/configure-new.png)
 
 ![qna-config](assets/qna-config.png)
 
-#### Registerkarte „Settings“{#settings-tab}
+#### Registerkarte „Settings“ {#settings-tab}
 
 Legen Sie auf der Registerkarte **Einstellungen** die Einstellungen für Themen (Fragen) und Antworten fest:
 
@@ -93,7 +93,7 @@ Legen Sie auf der Registerkarte **Einstellungen** die Einstellungen für Themen 
 
 * **Tagging zulassen**
 
-   Wenn diese Option aktiviert ist, können Mitglieder ihrem Beitrag Tag-Beschriftungen hinzufügen (siehe Registerkarte **Tag-Feld** ). Die Option Standard ist deaktiviert.
+   Wenn diese Option aktiviert ist, können Mitglieder ihrem Beitrag Tag-Beschriftungen hinzufügen (siehe **Tag-Feld** Registerkarte). Die Option Standard ist deaktiviert.
 
 * **Datei-Uploads zulassen**
 
@@ -101,7 +101,7 @@ Legen Sie auf der Registerkarte **Einstellungen** die Einstellungen für Themen 
 
 * **Folgende zulassen**
 
-   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Forumsbeiträge hinzu, mit der Mitglieder [benachrichtigt](/help/communities/notifications.md) über neue Beiträge werden können. Die Option Standard ist deaktiviert.
+   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Forumsbeiträge hinzu, mit der Mitglieder [benachrichtigt](/help/communities/notifications.md) von neuen Stellen. Die Option Standard ist deaktiviert.
 
 * **Fixierung zulassen**
 
@@ -109,7 +109,7 @@ Legen Sie auf der Registerkarte **Einstellungen** die Einstellungen für Themen 
 
 * **E-Mail-Abonnements zulassen**
 
-   Wenn diese Option aktiviert ist, können Mitglieder per E-Mail über neue Beiträge benachrichtigt werden ([subscription](/help/communities/subscriptions.md)). Erfordert die Aktivierung von &quot;Folgende zulassen&quot;und [E-Mail-Konfiguration](/help/communities/email.md). Die Option Standard ist deaktiviert.
+   Wenn diese Option aktiviert ist, können Mitglieder per E-Mail über neue Beiträge informiert werden ([Abonnement](/help/communities/subscriptions.md)). Erfordert, dass Folgendes aktiviert wird und [E-Mail konfiguriert](/help/communities/email.md). Die Option Standard ist deaktiviert.
 
 * **Max. Dateigröße**
 
@@ -148,11 +148,11 @@ Legen Sie auf der Registerkarte **Einstellungen** die Einstellungen für Themen 
    Wenn diese Option aktiviert ist, ist die erste angezeigte Antwort eine ausgewählte Antwort. Die Option Standard ist deaktiviert.
 * **Abzeichen anzeigen**
 
-   Wenn diese Option aktiviert ist, zeigen Sie verdiente und zugewiesene [Badges](/help/communities/implementing-scoring.md) mit dem Blogeintrag eines Mitglieds an. Die Option Standard ist deaktiviert.
+   Wenn diese Option aktiviert ist, zeigen Sie Earned und Assored [Badges](/help/communities/implementing-scoring.md) mit dem Blogeintrag eines Mitglieds. Die Option Standard ist deaktiviert.
 
 * **Feature-Inhalt zulassen**
 
-   Wenn diese Option aktiviert ist, kann die Idee als [spezieller Inhalt](/help/communities/featured.md) identifiziert werden. Die Option Standard ist deaktiviert.
+   Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](/help/communities/featured.md). Die Option Standard ist deaktiviert.
 
 * **Erwähnung aktivieren**
 
@@ -166,20 +166,20 @@ Legen Sie auf der Registerkarte **Einstellungen** die Einstellungen für Themen 
 
    Geben Sie die zulässige Musterzeichenfolge an, um den registrierten Benutzer in einem Beitrag mit Tags zu versehen (@mention). Beispiel: `~{{familyName}}{{givenName}}`.
 
-#### Registerkarte Benutzermoderation {#user-moderation-tab}
+#### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
-Geben Sie auf der Registerkarte **Benutzermoderation** an, wie die veröffentlichten Themen (Fragen) und Antworten (benutzergenerierte Inhalte) verwaltet werden. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
+Unter dem **Benutzermoderation** festlegen, wie die veröffentlichten Themen (Fragen) und Antworten (benutzergenerierte Inhalte) verwaltet werden. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
 * **Antworten verweigern**
 
-   Wenn diese Option aktiviert ist, können Moderatoren von vertrauenswürdigen Mitgliedern gepostete Antworten ablehnen und verhindern, dass die Antwort im öffentlichen Frage- und beantwortet-Forum erscheint. Die Option Standard ist deaktiviert.
+   Wenn diese Option aktiviert ist, dürfen Moderatoren von vertrauenswürdigen Mitgliedern gepostete Antworten ablehnen und verhindern, dass die Antwort im öffentlichen Frage- und beantwortet-Forum erscheint. Die Option Standard ist deaktiviert.
 
 * **Themen schließen/erneut öffnen**
 
    Wenn diese Option aktiviert ist, können Moderatoren vertrauenswürdiger Mitglieder eine Frage (Thema) schließen, um weitere Bearbeitungen und Antworten vorzunehmen, und eine Frage erneut öffnen. Die Option Standard ist deaktiviert.
 
-* **Themen verschiebenIst diese Option aktiviert, können Moderatoren auf Veröffentlichungsseite Fragen verschieben.**
-Die Option Standard ist deaktiviert.
+* **Verschieben von Themen**
+Wenn diese Option aktiviert ist, können Moderatoren auf Veröffentlichungsseite Fragen verschieben. Die Option Standard ist deaktiviert.
 
 * **Posts kennzeichnen**
 
@@ -201,21 +201,21 @@ Die Option Standard ist deaktiviert.
 
    Geben Sie an, wie oft eine Frage oder Antwort gekennzeichnet werden muss, bevor sie aus der öffentlichen Ansicht ausgeblendet wird. Bei einem Wert von -1 wird die gekennzeichnete Frage oder Antwort nie ausgeblendet. In allen anderen Fällen muss der Wert größer als der oder gleich dem „Schwellenwert für Moderation“ sein. Der Standardwert ist 5.
 
-#### Registerkarte &quot;Tag-Feld&quot;{#tag-field-tab}
+#### Registerkarte &quot;Tag-Feld&quot; {#tag-field-tab}
 
-Auf der Registerkarte **Tag-Feld** sind die Tags, die angewendet werden können, sofern sie auf der Registerkarte **Einstellungen** zulässig sind, entsprechend den ausgewählten Namespaces beschränkt.
+Unter dem **Tag-Feld** Registerkarte die Tags, die angewendet werden können, sofern dies unter der Variablen **Einstellungen** Registerkarte, sind entsprechend den ausgewählten Namespaces begrenzt.
 
 * **Zulässige Namespaces**
 
-   Relevant, wenn `Allow Tagging` auf der Registerkarte **Einstellungen** aktiviert ist. Die Tags, die angewendet werden können, beschränken sich auf die Tags innerhalb der aktivierten Namespace-Kategorien. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) und &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
+   Relevant, wenn `Allow Tagging` wird unter dem **Einstellungen** Registerkarte. Die Tags, die angewendet werden können, beschränken sich auf die Tags innerhalb der aktivierten Namespace-Kategorien. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) und &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
 
 * **Empfehlungsgrenze**
 
    Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht wird. Der Wert **-**1 bedeutet keine Beschränkungen. Der Standardwert ist 0.
 
-#### Registerkarte &quot;Sortiereinstellungen&quot;{#sort-settings-tab}
+#### Registerkarte &quot;Sortiereinstellungen&quot; {#sort-settings-tab}
 
-Geben Sie auf der Registerkarte **Sortiereinstellungen** an, wie die veröffentlichten Kommentare sortiert werden sollen, wenn sie angezeigt werden.
+Unter dem **Sortiereinstellungen** festlegen, wie die veröffentlichten Kommentare sortiert werden, wenn sie angezeigt werden.
 
 * **Sortierfolge**
 
@@ -227,17 +227,17 @@ Geben Sie auf der Registerkarte **Sortiereinstellungen** an, wie die veröffentl
 
 * **Zeitoptionen für Analytics-Sortierung auswählen**
 
-   Wählen Sie im Dropdown-Menü einen von `All, Last 24 Hours, Last 7 Days, Last 30 Days` aus. Der Standardwert ist `All`.
+   Dropdown, um eines von `All, Last 24 Hours, Last 7 Days, Last 30 Days`. Der Standardwert ist `All`.
 
 ## Site-Besuchererlebnis {#site-visitor-experience}
 
 ### Identifizieren von Antworten {#identifying-answers}
 
-Eine Antwort kann mithilfe der Schaltfläche `Select Answer` als richtige oder nützliche Antwort markiert werden. Nachdem eine Frage als beantwortet markiert wurde, kann erst eine andere Antwort ausgewählt werden, nachdem die erste über die Schaltfläche `Unmark Chosen Answer` deaktiviert wurde.
+Eine Antwort kann mit der Variablen `Select Answer` Schaltfläche. Nachdem eine Frage als beantwortet markiert wurde, kann eine andere Antwort erst ausgewählt werden, nachdem die erste mit der Funktion `Unmark Chosen Answer` Schaltfläche.
 
-Nach Auswahl als praktikable Antwort kann die Auswahl mithilfe der Schaltfläche `Unmark Chosen Answer` aufgehoben werden.
+Nach Auswahl als praktikable Antwort kann die Auswahl mithilfe der Variablen `Unmark Chosen Answer` Schaltfläche.
 
-Nachdem eine Antwort als praktikable Antwort ausgewählt wurde, wird neben dem Fragethema auf der Hauptseite der Fragen ein Hinweis darauf angezeigt, dass die Frage `Answered` war.
+Sobald eine Antwort als praktikable Antwort ausgewählt wurde, ein Hinweis darauf, dass die Frage `Answered` wird neben dem Fragethema auf der Hauptseite der Fragen angezeigt.
 
 #### Moderatoren und Administratoren {#moderators-and-administrators}
 
@@ -260,7 +260,7 @@ Besucher der Website, die nicht angemeldet sind, können nur veröffentlichte Fr
 
 ## Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie auf der Seite [QnA Essentials](/help/communities/qna-essentials.md) für Entwickler.
+Weitere Informationen finden Sie im [Grundlagen der quantitativen Lockerung](/help/communities/qna-essentials.md) für Entwickler.
 
 Informationen zur Moderation von veröffentlichten Themen und Kommentaren finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 

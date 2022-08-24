@@ -1,8 +1,8 @@
 ---
 title: Tagging von Aktivierungsressourcen
-seo-title: Tagging von Aktivierungsressourcen
+seo-title: Tagging Enablement Resources
 description: Das Tagging von Aktivierungsressourcen ermöglicht das Filtern von Ressourcen und Lernpfaden beim Durchsuchen von Katalogen durch Mitglieder.
-seo-description: Das Tagging von Aktivierungsressourcen ermöglicht das Filtern von Ressourcen und Lernpfaden beim Durchsuchen von Katalogen durch Mitglieder.
+seo-description: Tagging of enablement resources allows for filtering of resources and learning paths as members browse catalogs
 uuid: daf8a4f4-486b-498c-99e9-d1533a830e64
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,8 +13,8 @@ role: Admin
 exl-id: ce58c8e9-8b4a-43fb-a108-ed2ac40268c7
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 2%
+source-wordcount: '618'
+ht-degree: 1%
 
 ---
 
@@ -22,19 +22,19 @@ ht-degree: 2%
 
 ## Übersicht {#overview}
 
-Das Tagging von Aktivierungsressourcen ermöglicht das Filtern von Ressourcen und Lernpfaden beim Durchsuchen von [Katalogen](functions.md#catalog-function) durch Mitglieder.
+Das Tagging von Aktivierungsressourcen ermöglicht das Filtern von Ressourcen und Lernpfaden beim Durchsuchen von Mitgliedern. [Kataloge](functions.md#catalog-function).
 
 Im Wesentlichen:
 
-* [Tag-](../../help/sites-administering/tags.md#creating-a-namespace) Namespaces für jeden Katalog erstellen
+* [Tag-Namespace erstellen](../../help/sites-administering/tags.md#creating-a-namespace) für jeden Katalog
 
    * [Festlegen von Tag-Berechtigungen](../../help/sites-administering/tags.md#setting-tag-permissions)
    * Nur für Community-Mitglieder (geschlossene Community)
 
-      * Lesezugriff für die Mitgliedergruppe der [Community-Site](users.md#publish-group-roles) zulassen
+      * Lesezugriff für [Mitgliedergruppe der Community-Site](users.md#publish-group-roles)
    * Für alle Besucher der Site, ob angemeldet oder anonym (offene Community)
 
-      * Lesezugriff für die Gruppe `Everyone` zulassen
+      * Lesezugriff für `Everyone` Gruppe
    * [Veröffentlichen der Tags](../../help/sites-administering/tags.md#publishing-tags)
 
 
@@ -44,15 +44,15 @@ Im Wesentlichen:
    * [Konfigurieren von Katalogen, die in der Site-Struktur vorhanden sind](functions.md#catalog-function)
 
       * Kann Tags zur Kataloginstanz hinzufügen, um die Liste der Tags zu steuern, die in den Benutzeroberflächenfiltern angezeigt werden.
-      * Kann [Vorfilter](catalog-developer-essentials.md#pre-filters) hinzufügen, um die in einem Katalog enthaltenen Ressourcen zu beschränken.
+      * Kann hinzufügen [Vorfilter](catalog-developer-essentials.md#pre-filters), um die im Katalog enthaltenen Ressourcen zu beschränken.
 
 * [Veröffentlichen der Community-Site](sites-console.md#publishing-the-site)
-* [Tags auf Aktivierungsressourcen anwenden, ](resources.md#create-a-resource) damit sie kategorisch gefiltert werden können
+* [Anwenden von Tags auf Aktivierungsressourcen](resources.md#create-a-resource) sodass sie kategorisiert werden können
 * [Ressourcen zur Aktivierung veröffentlichen](resources.md#publish)
 
 ## Community-Site-Tags {#community-site-tags}
 
-Beim Erstellen oder Bearbeiten einer Community-Site legt die Einstellung [Tagging](sites-console.md#tagging) den Umfang der Tags fest, die für Funktionen der Site verfügbar sind, indem eine Untergruppe der vorhandenen Tag-Namespaces ausgewählt wird.
+Wenn Sie eine Community-Site erstellen oder bearbeiten, wird die [Tagging-Einstellung](sites-console.md#tagging) legt den Umfang der Tags fest, die für Funktionen der Site verfügbar sind, indem Sie eine Untergruppe der vorhandenen Tag-Namespaces auswählen.
 
 Auch wenn Tags jederzeit erstellt und der Community-Site hinzugefügt werden können, wird empfohlen, zuvor eine Taxonomie zu entwickeln, die dem Aufbau einer Datenbank ähnelt. Weitere Informationen finden Sie unter [Verwenden von Tags](../../help/sites-authoring/tags.md).
 
@@ -60,7 +60,7 @@ Wenn Sie später Tags zu einer vorhandenen Community-Site hinzufügen, müssen S
 
 Für eine Community-Site ist es nach der Veröffentlichung der Site und der Veröffentlichung der Tags erforderlich, den Mitgliedern der Community Lesezugriff zu ermöglichen. Siehe [Festlegen von Tag-Berechtigungen](../../help/sites-administering/tags.md#setting-tag-permissions).
 
-Im Folgenden sehen Sie, wie es in CRXDE angezeigt wird, wenn ein Administrator Leseberechtigungen für `/etc/tags/ski-catalog` für die Gruppe `Community Enable Members` auf  anwendet.
+Folgendes wird in CRXDE angezeigt, wenn ein Administrator Leseberechtigungen auf `/etc/tags/ski-catalog` für die Gruppe `Community Enable Members`.
 
 ![site-tags](assets/site-tags.png)
 
@@ -76,20 +76,20 @@ Die Katalogfunktion enthält eine Tag-Einstellung, die die in der Filter-Benutze
 
 Aktivierungsressourcen und Lernpfade werden im gesamten Katalog angezeigt, wenn `Show in Catalog` aktiviert ist. Das Hinzufügen von Tags zu Ressourcen und Lernpfaden ermöglicht das Vorab-Filtern in bestimmte Kataloge sowie das Filtern in der Katalogbenutzeroberfläche.
 
-Die Beschränkung von Aktivierungsressourcen und Lernpfaden auf bestimmte Kataloge erfolgt durch Erstellen von [Vorfiltern](catalog-developer-essentials.md#pre-filters).
+Die Beschränkung von Aktivierungsressourcen und Lernpfaden auf bestimmte Kataloge wird durch Erstellen von [Vorfilter](catalog-developer-essentials.md#pre-filters).
 
 Die Katalogbenutzeroberfläche ermöglicht es Besuchern, einen Tag-Filter auf die Liste der Ressourcen und Lernpfade anzuwenden, die in diesem Katalog angezeigt werden.
 
 Der Administrator, der die Tags zur Aktivierung von Ressourcen anwendet, muss sich der mit den Katalogen verknüpften Tag-Namespaces sowie der Taxonomie bewusst sein, um ein Untertag für eine präzisere Kategorisierung auszuwählen.
 
-Wenn beispielsweise ein `ski-catalog`-Namespace erstellt und in einem Katalog mit dem Namen `Ski Catalog` festgelegt wurde, könnte er zwei untergeordnete Tags haben: `lesson-1` und `lesson-2`.
+Wenn beispielsweise eine `ski-catalog` -Namespace erstellt und in einem Katalog mit dem Namen `Ski Catalog`kann es zwei untergeordnete Tags haben: `lesson-1` und `lesson-2`.
 
 Daher ist jede Aktivierungsressource mit einem der folgenden Tags versehen:
 
 * ski-catalog:less-1
 * Ski-Katalog:Lektion-2
 
-wird in `Ski Catalog` angezeigt, nachdem die Aktivierungsressource veröffentlicht wurde.
+wird angezeigt in `Ski Catalog` nachdem die Aktivierungsressource veröffentlicht wurde.
 
 ![basic-info](assets/applytags-basicinfo.png)
 

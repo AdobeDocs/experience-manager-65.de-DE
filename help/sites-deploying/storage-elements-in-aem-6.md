@@ -1,8 +1,8 @@
 ---
 title: Speicherelemente in AEM 6.5
-seo-title: Speicherelemente in AEM 6.5
+seo-title: Storage Elements in AEM 6.5
 description: Erfahren Sie mehr über die in AEM 6.5 verfügbaren Implementierungen von Knotenspeicher und über die Wartung des Repositorys.
-seo-description: Erfahren Sie mehr über die in AEM 6.5 verfügbaren Implementierungen von Knotenspeicher und über die Wartung des Repositorys.
+seo-description: Learn about the node storage implementations available in AEM 6.5 and how to maintain the repository.
 uuid: 3b018830-c42e-48e0-9b6f-cd230b02d914
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ legacypath: /content/docs/en/aem/6-0/deploy/upgrade/microkernels-in-aem-6-0
 exl-id: 52437eb5-f9fb-4945-9950-5a1562fe878d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 81%
+source-wordcount: '714'
+ht-degree: 80%
 
 ---
 
@@ -31,7 +31,7 @@ Eine der wichtigsten Änderungen in AEM 6 sind die Innovationen auf Repository-E
 
 Derzeit sind in AEM 6 zwei Implementierungen von Knotenspeicher verfügbar: TAR-Speicher und MongoDB-Speicher.
 
-### TAR-Speicher  {#tar-storage}
+### TAR-Speicher {#tar-storage}
 
 #### Ausführen einer neu installierten AEM-Instanz mit TAR-Speicher {#running-a-freshly-installed-aem-instance-with-tar-storage}
 
@@ -68,7 +68,7 @@ AEM 6 kann für die Ausführung mit MongoDB-Speicher konfiguriert werden, wie na
 
    `java -jar cq-quickstart-6.jar -unpack`
 
-1. Stellen Sie sicher, dass MongoDB installiert ist und eine Instanz von `mongod` ausgeführt wird. Weitere Informationen finden Sie unter [Installieren von MongoDB](https://docs.mongodb.org/manual/installation/).
+1. Stellen Sie sicher, dass MongoDB und eine Instanz von `mongod` läuft. Weitere Informationen finden Sie unter [Installieren von MongoDB](https://docs.mongodb.org/manual/installation/).
 1. Erstellen Sie einen Ordner mit dem Namen `crx-quickstart\install` im Installationsverzeichnis.
 1. Konfigurieren Sie den Knotenspeicher. Erstellen Sie dazu eine Konfigurationsdatei mit dem Namen der Konfiguration, die Sie im Verzeichnis `crx-quickstart\install` verwenden möchten.
 
@@ -78,8 +78,8 @@ AEM 6 kann für die Ausführung mit MongoDB-Speicher konfiguriert werden, wie na
 
    * `mongouri`: Die für die Verbindung zur Mongo-Datenbank erforderliche [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/). Standard: `mongodb://localhost:27017`
    * `db` : Name der Mongo-Datenbank. Standardmäßig wird bei AEM 6-Installationen **aem-author** als Datenbankname verwendet.
-   * `cache`: Cache-Größe in MB. Dieser Wert verteilt sich auf die verschiedenen in DocumentNodeStore verwendeten Caches. Standard: 256.
-   * `changesSize`: Größe (in MB) der begrenzten Sammlung, die in Mongo zum Zwischenspeichern unterschiedlicher Ausgaben verwendet wird. Standard: 256.
+   * `cache`: Cache-Größe in MB. Dieser Wert verteilt sich auf die verschiedenen in DocumentNodeStore verwendeten Caches. Der Standardwert lautet 256.
+   * `changesSize`: Größe (in MB) der begrenzten Sammlung, die in Mongo zum Zwischenspeichern unterschiedlicher Ausgaben verwendet wird. Der Standardwert lautet 256.
    * `customBlobStore`: Boolescher Wert, der angibt, dass ein benutzerdefinierter Datenspeicher verwendet wird. Der Standardwert lautet „false“.
 
 1. Erstellen Sie eine Konfigurationsdatei mit der PID des Datenspeichers, in dem Sie die Datei verwenden und bearbeiten möchten, um die Konfigurationsoptionen festzulegen. Weitere Informationen finden Sie unter [Konfigurieren von Knotenspeichern und Datenspeichern](/help/sites-deploying/data-store-config.md).
@@ -90,14 +90,14 @@ AEM 6 kann für die Ausführung mit MongoDB-Speicher konfiguriert werden, wie na
    java -jar cq-quickstart-6.jar -r crx3,crx3mongo
    ```
 
-   Dabei ist **`-r`** der Backend-Ausführungsmodus. In diesem Beispiel beginnt dieser mit MongoDB-Unterstützung.
+   Wo **`-r`** ist der Backend-Ausführungsmodus. In diesem Beispiel beginnt dieser mit MongoDB-Unterstützung.
 
-#### Deaktivieren von Transparent Huge Pages  {#disabling-transparent-huge-pages}
+#### Deaktivieren von Transparent Huge Pages {#disabling-transparent-huge-pages}
 
 Red Hat Linux nutzt einen Speicherverwaltungsalgorithmus mit der Bezeichnung THP (Transparent Huge Pages). Während AEM feinkörnige Lese- und Schreibvorgänge durchführt, ist THP für große Operationen optimiert. Aus diesem Grund wird empfohlen, dass Sie THP auf Tar- und Mongospeicher deaktivieren. Um den Algorithmus zu deaktivieren, führen Sie die folgenden Schritte aus:
 
-1. Öffnen Sie die Datei `/etc/grub.conf` im Texteditor Ihrer Wahl.
-1. Fügen Sie der Datei **grub.conf** die folgende Zeile hinzu:
+1. Öffnen Sie die `/etc/grub.conf` im Texteditor Ihrer Wahl.
+1. Fügen Sie die folgende Zeile zur **grub.conf** Datei:
 
    ```
    transparent_hugepage=never
@@ -121,9 +121,7 @@ Red Hat Linux nutzt einen Speicherverwaltungsalgorithmus mit der Bezeichnung THP
 >
 >* Weitere Informationen zu Transparent Huge Pages unter Red Hat Linux finden Sie in diesem [Artikel](https://access.redhat.com/solutions/46111).
 >* Tipps zur Linux-Optimierung finden Sie in diesem [Artikel](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html).
-
 >
-
 
 
 ## Wartung von Repositorys {#maintaining-the-repository}

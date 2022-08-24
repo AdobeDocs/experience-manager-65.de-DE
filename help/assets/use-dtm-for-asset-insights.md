@@ -8,7 +8,7 @@ exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
 source-git-commit: afc72fb6b324cf2e0ad8168f783d9c1a6f96c614
 workflow-type: tm+mt
 source-wordcount: '647'
-ht-degree: 30%
+ht-degree: 31%
 
 ---
 
@@ -18,54 +18,54 @@ Adobe Dynamic Tag Management ist ein Tool, mit dem Sie Ihre digitalen Marketingt
 
 >[!CAUTION]
 >
->Adobe DTM wird nicht mehr zugunsten von [!DNL Adobe Experience Platform] unterstützt und wird bald [Ende des Lebenszyklus](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f) erreichen. Adobe empfiehlt, [ [!DNL Adobe Experience Platform] für Asset-Einblicke](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html) zu verwenden.
+>Adobe DTM wird nicht mehr zugunsten von [!DNL Adobe Experience Platform] und in Kürze [Lebensende](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe empfiehlt, dass Sie [use [!DNL Adobe Experience Platform] für Asset-Einblicke](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
 Führen Sie diese Schritte aus, um Assets Insights über DTM zu aktivieren.
 
-1. Klicken Sie auf das Experience Manager-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights-Konfiguration]**.
+1. Klicken Sie auf das Experience Manager-Logo und navigieren Sie zu **[!UICONTROL Instrumente]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights-Konfiguration]**.
 1. [Konfigurieren der Experience Manager-Bereitstellung mit DTM Cloud Service](/help/sites-administering/dtm.md)
 
-   Das API-Token sollte verfügbar sein, sobald Sie sich bei [https://dtm.adobe.com](https://dtm.adobe.com/) anmelden und **[!UICONTROL Kontoeinstellungen]** im Benutzerprofil aufrufen. Dieser Schritt ist aus Sicht von Assets Insights nicht erforderlich, da die Integration von Experience Manager Sites mit Assets Insights noch in Arbeit ist.
+   Das API-Token sollte verfügbar sein, sobald Sie sich bei [https://dtm.adobe.com](https://dtm.adobe.com/) und Besuch **[!UICONTROL Kontoeinstellungen]** im Benutzerprofil. Dieser Schritt ist aus Sicht von Assets Insights nicht erforderlich, da die Integration von Experience Manager Sites mit Assets Insights noch in Arbeit ist.
 
-1. Melden Sie sich bei [https://dtm.adobe.com](https://dtm.adobe.com/) an und wählen Sie ggf. ein Unternehmen aus.
+1. Anmelden bei [https://dtm.adobe.com](https://dtm.adobe.com/)und wählen Sie gegebenenfalls ein Unternehmen aus.
 1. Erstellen oder Öffnen einer vorhandenen Webeigenschaft
 
-   * Wählen Sie die Registerkarte **[!UICONTROL Webeigenschaften]** und klicken Sie dann auf **[!UICONTROL Eigenschaft hinzufügen]**.
+   * Wählen Sie die **[!UICONTROL Webeigenschaften]** und klicken Sie auf **[!UICONTROL Eigenschaft hinzufügen]**.
 
-   * Aktualisieren Sie die Felder entsprechend und klicken Sie auf **[!UICONTROL Eigenschaft erstellen]**. Siehe [Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
+   * Aktualisieren Sie die Felder entsprechend und klicken Sie auf **[!UICONTROL Eigenschaft erstellen]**. Siehe [Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de).
 
    ![Webeigenschaft &quot;Bearbeiten&quot;erstellen](assets/Create-edit-web-property.png)
 
-1. Wählen Sie auf der Registerkarte **[!UICONTROL Regeln]** die Option **[!UICONTROL Seitenladeregeln]** aus dem Navigationsbereich und klicken Sie auf **[!UICONTROL Neue Regel erstellen]**.
+1. Im **[!UICONTROL Regeln]** Registerkarte, wählen Sie **[!UICONTROL Seitenladeregeln]** aus dem Navigationsfenster und klicken Sie auf **[!UICONTROL Neue Regel erstellen]**.
 
    ![chlimage_1-58](assets/chlimage_1-194.png)
 
-1. Erweitern Sie **[!UICONTROL JavaScript/Drittanbieter-Tags]**. Klicken Sie dann auf der Registerkarte **[!UICONTROL Sequenzielles HTML]** auf Neues Skript hinzufügen ]**, um das Dialogfeld &quot;Skript&quot;zu öffnen.**[!UICONTROL 
+1. Erweitern **[!UICONTROL JavaScript/Drittanbieter-Tags]**. Klicken Sie anschließend auf **[!UICONTROL Neues Skript hinzufügen]** im **[!UICONTROL Sequenzielles HTML]** -Registerkarte, um das Dialogfeld &quot;Skript&quot;zu öffnen.
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
-1. Klicken Sie auf das Experience Manager-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
-1. Klicken Sie auf **[!UICONTROL Insights Page Tracker]**, kopieren Sie den Tracker-Code und fügen Sie ihn dann in das Dialogfeld &quot;Skript&quot;ein, das Sie in Schritt 6 geöffnet haben. Speichern Sie die Änderungen.
+1. Klicken Sie auf das Experience Manager-Logo und navigieren Sie zu **[!UICONTROL Instrumente]** > **[!UICONTROL Assets]**.
+1. Klicken **[!UICONTROL Insights-Seitenverfolgung]**, kopieren Sie den Tracker-Code und fügen Sie ihn dann in das Dialogfeld &quot;Skript&quot;ein, das Sie in Schritt 6 geöffnet haben. Speichern Sie die Änderungen.
 
    >[!NOTE]
    >
    >* `AppMeasurement.js` entfernt. Es wird erwartet, dass es über das Adobe Analytics-Tool von DTM verfügbar ist.
-   >* Der Aufruf von `assetAnalytics.dispatcher.init()` wird entfernt. Es wird erwartet, dass die Funktion erneut aufgerufen wird, sobald das Adobe Analytics-Tool von DTM vollständig geladen ist.
+   >* Der Aufruf an `assetAnalytics.dispatcher.init()` entfernt. Es wird erwartet, dass die Funktion erneut aufgerufen wird, sobald das Adobe Analytics-Tool von DTM vollständig geladen ist.
    >* Je nachdem, wo der Asset Insights-Seitenverfolgung gehostet wird (z. B. Experience Manager, CDN usw.), muss der Ursprung der Skriptquelle möglicherweise geändert werden.
    >* Bei vom Experience Manager gehosteter Seitenverfolgung sollte die Quelle mit dem Hostnamen der Dispatcher-Instanz auf eine Veröffentlichungsinstanz verweisen.
 
 
-1. Greife Sie auf `https://dtm.adobe.com` zu. Klicken Sie in der Web-Eigenschaft auf **[!UICONTROL Übersicht]** und dann auf **[!UICONTROL Tool hinzufügen]** oder öffnen Sie ein vorhandenes Adobe Analytics-Tool. Beim Erstellen des Tools können Sie **[!UICONTROL Konfigurationsmethode]** auf **[!UICONTROL Automatisch]** setzen.
+1. Greife Sie auf `https://dtm.adobe.com` zu. Klicken Sie in der Web-Eigenschaft auf **[!UICONTROL Übersicht]** und dann auf **[!UICONTROL Tool hinzufügen]** oder öffnen Sie ein vorhandenes Adobe Analytics-Tool. Beim Erstellen des Tools können Sie **[!UICONTROL Konfigurationsmethode]** nach **[!UICONTROL Automatisch]**.
 
    ![Adobe Analytics-Tool hinzufügen](assets/Add-Adobe-Analytics-Tool.png)
 
    Wählen Sie die Report Suites „Bereitstellung/Produktion“ nach Bedarf.
 
-1. Erweitern Sie **[!UICONTROL Bibliotheksverwaltung]** und stellen Sie sicher, dass **[!UICONTROL Bibliothek laden unter]** auf **[!UICONTROL Seitenanfang]** eingestellt ist.
+1. Erweitern **[!UICONTROL Bibliotheksverwaltung]** und stellen sicher, dass **[!UICONTROL Bibliothek laden unter]** auf **[!UICONTROL Seitenanfang]**.
 
    ![chlimage_1-61](assets/chlimage_1-197.png)
 
-1. Erweitern Sie **[!UICONTROL Seiten-Code anpassen]** und klicken Sie auf **[!UICONTROL Editor öffnen]**.
+1. Erweitern **[!UICONTROL Seiten-Code anpassen]** und klicken Sie auf **[!UICONTROL Editor öffnen]**.
 
    ![chlimage_1-62](assets/chlimage_1-198.png)
 
@@ -107,11 +107,11 @@ Führen Sie diese Schritte aus, um Assets Insights über DTM zu aktivieren.
    })();
    ```
 
-   * Die Seitenladeregel in DTM enthält nur den Code `pagetracker.js`. Alle `assetAnalytics`-Felder überschreiben die Standardwerte. Sie sind nicht standardmäßig erforderlich.
-   * Der Code ruft `assetAnalytics.dispatcher.init()` auf, nachdem sichergestellt wurde, dass `_satellite.getToolsByType('sc')[0].getS()` initialisiert und `assetAnalytics,dispatcher.init` verfügbar ist. Daher müssen Sie sie in Schritt 11 nicht notwendigerweise hinzufügen.
-   * Wie in Kommentaren im Insights-Seitenverfolgungs-Code (**[!UICONTROL Tools > Assets > Insights-Seitenverfolgung]**) angegeben, sind die ersten drei Argumente (RSID, Tracking Server und Besucher-Namespace) irrelevant, wenn der Seitenverfolgung kein `AppMeasurement`-Objekt erstellt. Leere Zeichenfolgen werden stattdessen übergeben, um dies hervorzuheben.\
+   * Die Seitenladeregel in DTM enthält nur die `pagetracker.js` Code. Alle `assetAnalytics`-Felder überschreiben die Standardwerte. Sie sind nicht standardmäßig erforderlich.
+   * Der Code ruft auf `assetAnalytics.dispatcher.init()` nach `_satellite.getToolsByType('sc')[0].getS()` initialisiert wird und `assetAnalytics,dispatcher.init` ist verfügbar. Daher müssen Sie sie in Schritt 11 nicht notwendigerweise hinzufügen.
+   * Wie in Kommentaren im Insights Page Tracker Code (**[!UICONTROL Tools > Assets > Insights-Seitenverfolgung]**), wenn der Seitenverfolgung keine `AppMeasurement` -Objekt, sind die ersten drei Argumente (RSID, Tracking Server und Besucher-Namespace) irrelevant. Leere Zeichenfolgen werden stattdessen übergeben, um dies hervorzuheben.\
       Die restlichen Argumente entsprechen dem, was in der Statistiken-Konfigurationsseite konfiguriert ist (**[!UICONTROL Tools > Assets > Statistiken-Konfiguration]**).
    * Das AppMeasurement-Objekt wird abgerufen, indem `satelliteLib` für alle verfügbaren SiteCatalyst-Engines abgefragt wird. Wenn mehrere Tags konfiguriert sind, ändern Sie den Index des Array-Selektors entsprechend. Einträge im Array werden gemäß der SiteCatalyst-Tools geordnet, die in der DTM-Benutzeroberfläche verfügbar sind.
 
 1. Speichern und schließen Sie das Fenster des Code-Editors und speichern Sie dann die Änderungen in der Tool-Konfiguration.
-1. Genehmigen Sie auf der Registerkarte **[!UICONTROL Validierungen]** die beiden ausstehenden Genehmigungen. Das DTM-Tag ist für das Einfügen auf Ihrer Webseite bereit.
+1. Im **[!UICONTROL Genehmigungen]** validieren Sie beide ausstehenden Genehmigungen. Das DTM-Tag ist für das Einfügen auf Ihrer Webseite bereit.

@@ -5,7 +5,7 @@ exl-id: 25236af4-405a-4152-8308-34d983977e9a
 source-git-commit: 237de641ba02705f8171b1526946a4dc1b60b6a3
 workflow-type: tm+mt
 source-wordcount: '2392'
-ht-degree: 88%
+ht-degree: 99%
 
 ---
 
@@ -260,39 +260,39 @@ Es gibt eine Reihe von Anforderungen beim Hinzufügen von Komponenten für virtu
 
 ### Virtuelle Container {#virtual-containers}
 
-Die Möglichkeit zum Hinzufügen von Containern wird unterstützt, auch wenn der entsprechende Container noch nicht in AEM erstellt wurde. Konzept und Ansatz ähneln dem [virtuelle Blattkomponenten.](#virtual-leaf-components)
+Die Möglichkeit, Container hinzuzufügen, auch wenn der entsprechende Container noch nicht in AEM erstellt wurde, wird unterstützt. Konzept und Ansatz ähneln den [virtuellen Blattkomponenten.](#virtual-leaf-components)
 
-Der Frontend-Entwickler kann die Container-Komponenten an geeigneten Stellen innerhalb des SPA hinzufügen. Diese Komponenten zeigen Platzhalter an, wenn sie im Editor in AEM geöffnet werden. Der Autor kann dann Komponenten und deren Inhalt zum Container hinzufügen, wodurch die erforderlichen Knoten in der JCR-Struktur erstellt werden.
+Der Front-End-Entwickler kann die Container-Komponenten an den entsprechenden Stellen innerhalb der SPA hinzufügen. Diese Komponenten zeigen Platzhalter an, wenn sie im Editor in AEM geöffnet werden. Der Autor kann dann Komponenten und deren Inhalte in den Container einfügen, wodurch die erforderlichen Knoten in der JCR-Struktur erstellt werden.
 
-Wenn beispielsweise ein Container bereits unter `/root/responsivegrid` und der Entwickler einen neuen untergeordneten Container hinzufügen möchte:
+Wenn zum Beispiel ein Container unter `/root/responsivegrid` bereits existiert und der Entwickler einen neuen untergeordneten Container hinzufügen möchte:
 
 ![Container-Speicherort](assets/container-location.png)
 
-`newContainer` existiert noch nicht in der AEM.
+`newContainer` existiert noch nicht in AEM.
 
-Wenn Sie die Seite bearbeiten, die diese Komponente in AEM enthält, wird ein leerer Platzhalter für einen Container angezeigt, dem der Autor Inhalte hinzufügen kann.
+Bei der Bearbeitung der Seite, die diese Komponente in AEM enthält, wird ein leerer Platzhalter für einen Container angezeigt, in den der Autor Inhalte hinzufügen kann.
 
 ![Container-Platzhalter](assets/container-placeholder.png)
 
 ![Container-Speicherort in JCR](assets/container-jcr-structure.png)
 
-Nachdem der Autor eine untergeordnete Komponente zum Container hinzugefügt hat, wird der neue Container-Knoten mit dem entsprechenden Namen in der JCR-Struktur erstellt.
+Sobald der Autor dem Container eine untergeordnete Komponente hinzufügt, wird der neue Container-Knoten mit dem entsprechenden Namen in der JCR-Struktur angelegt.
 
-![Container mit Inhalt](assets/container-with-content.png)
+![Container mit Inhalten](assets/container-with-content.png)
 
-![Container mit Inhalt in JCR](assets/container-with-content-jcr.png)
+![Container mit Inhalten in JCR](assets/container-with-content-jcr.png)
 
-Dem Container können jetzt mehr Komponenten und Inhalte hinzugefügt werden, da der Autor dies benötigt und die Änderungen beibehalten werden.
+Je nach Bedarf des Autors können nun weitere Komponenten und Inhalte in den Container eingefügt werden, und die Änderungen werden beibehalten.
 
 #### Anforderungen und Einschränkungen {#container-limitations}
 
-Es gibt eine Reihe von Anforderungen zum Hinzufügen virtueller Container sowie einige Einschränkungen.
+Es gibt eine Reihe von Anforderungen beim Hinzufügen von virtuellen Containern sowie einige Einschränkungen.
 
 * Die Richtlinie, die bestimmt, welche Komponenten hinzugefügt werden können, wird vom übergeordneten Container übernommen.
-* Das unmittelbare übergeordnete Element des zu erstellenden Containers muss bereits in AEM vorhanden sein.
-   * Wenn der Container `root/responsivegrid` bereits im AEM-Container vorhanden ist, kann ein neuer Container durch Angabe des Pfads erstellt werden `root/responsivegrid/newContainer`.
-   * Jedoch `root/responsivegrid/newContainer/secondNewContainer` ist nicht möglich.
-* Nur eine neue Komponentenebene kann virtuell erstellt werden.
+* Das unmittelbar übergeordnete Element des zu erstellenden Containers muss bereits in AEM vorhanden sein.
+   * Wenn der Container `root/responsivegrid` bereits im AEM-Container vorhanden ist, kann ein neuer Container durch Angabe des Pfads `root/responsivegrid/newContainer` erstellt werden.
+   * `root/responsivegrid/newContainer/secondNewContainer` ist jedoch nicht möglich.
+* Es kann jeweils nur eine neue Komponentenebene virtuell erstellt werden.
 
 ## Zusätzliche Anpassungen {#additional-customizations}
 

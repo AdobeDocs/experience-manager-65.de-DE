@@ -1,8 +1,8 @@
 ---
 title: Fehlerbehebung
-seo-title: Fehlerbehebung
+seo-title: Troubleshooting
 description: Fehlerbehebung in der Community einschließlich bekannter Probleme
-seo-description: Fehlerbehebung in der Community einschließlich bekannter Probleme
+seo-description: Troubleshooting Community including Known Issues
 uuid: 99225430-fa2a-4393-ae5a-18b19541c358
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,7 +12,7 @@ discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 exl-id: ef4f4108-c485-4e2e-a58f-ff64eee9937e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '354'
 ht-degree: 1%
 
 ---
@@ -29,12 +29,11 @@ Bei Verwendung von Dispatcher 4.1.5 mit einer neueren Version von Jetty kann ein
 
 Durch die Verwendung von Dispatcher 4.1.6 oder höher wird dieses Problem behoben.
 
-### Zugriff auf Forumpost nach der Aktualisierung von CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq} nicht möglich
+### Nach der Aktualisierung von CQ 5.4 kann nicht auf Forumsbeiträge zugegriffen werden {#cannot-access-forum-post-after-upgrading-from-cq}
 
 Wenn ein Forum in CQ 5.4 erstellt wurde und Themen veröffentlicht wurden und die Site dann auf AEM 5.6.1 oder höher aktualisiert wurde, kann der Versuch, die vorhandenen Beiträge anzuzeigen, zu einem Fehler auf der Seite führen:
 
-Unzulässiges Musterzeichen &#39;a&#39;
-Anfrage kann nicht an `/content/demoforums/forum-test.html` auf diesem Server gesendet werden und die Protokolle enthalten Folgendes:
+Unzulässiges Musterzeichen &#39;a&#39; Kann Anfrage nicht an senden `/content/demoforums/forum-test.html` auf diesem Server und die Protokolle enthalten Folgendes:
 
 ```xml
 20.03.2014 22:49:35.805 ERROR [10.177.45.32 [1395380975744] GET /content/demoforums/forum-test.html HTTP/1.1] com.day.cq.wcm.tags.IncludeTag Error while executing script content.jsp
@@ -45,24 +44,24 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 Das Problem besteht darin, dass die Formatzeichenfolge für com.day.cq.commons.date.RelativeTimeFormat zwischen 5.4 und 5.5 geändert wurde, sodass das &quot;a&quot;für &quot;ago&quot;nicht mehr akzeptiert wird.
 
-Daher muss jeder Code, der die RelativeTimeFormat() -API verwendet, Folgendes ändern:
+Daher muss jeder Code, der die RelativeTimeFormat()-API verwendet, Folgendes ändern:
 
 * Von: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
-* An: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
+* To: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
 Der Fehler unterscheidet sich bei der Autoren- und Veröffentlichungsinstanz. Beim Autor schlägt es still fehl und zeigt die Forenthemen einfach nicht an. Beim Veröffentlichen wird der Fehler auf der Seite ausgegeben.
 
-Weitere Informationen finden Sie in der API [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) .
+Siehe [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API für weitere Informationen.
 
 ## Häufige Bedenken {#common-concerns}
 
-### Warnung in Protokollen: Handlebars Veraltet {#warning-in-logs-handlebars-deprecated}
+### Warnung in Protokollen: Handlebars - veraltet {#warning-in-logs-handlebars-deprecated}
 
 Während des Starts (nicht der 1., sondern alle darauf folgenden) kann die folgende Warnung in den Protokollen angezeigt werden:
 
-* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` ersetzt durch  `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
+* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` ersetzt durch `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
 
-Diese Warnung kann ignoriert werden, da `jknack.handlebars.Handlebars`, verwendet von [SCF](scf.md#handlebarsjavascripttemplatinglanguage), mit einem eigenen i18n-Hilfsprogramm geliefert wird. Beim Start wird er durch einen AEM spezifischen [i18n-Helfer](handlebars-helpers.md#i-n) ersetzt. Diese Warnung wird von der Bibliothek eines Drittanbieters generiert, um das Außerkraftsetzen eines vorhandenen Helfers zu bestätigen.
+Diese Warnung kann sicher ignoriert werden als `jknack.handlebars.Handlebars`verwendet von [SCF](scf.md#handlebarsjavascripttemplatinglanguage), ist mit einem eigenen i18n Helper-Dienstprogramm ausgestattet. Beim Start wird er durch eine AEM spezifische [i18n Helper](handlebars-helpers.md#i-n). Diese Warnung wird von der Bibliothek eines Drittanbieters generiert, um das Außerkraftsetzen eines vorhandenen Helfers zu bestätigen.
 
 ### Warnung in Protokollen: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 

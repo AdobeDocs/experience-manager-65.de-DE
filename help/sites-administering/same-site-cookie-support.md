@@ -6,7 +6,7 @@ exl-id: e1616385-0855-4f70-b787-b01701929bbc
 source-git-commit: f7a4907ca6ce8ecaff9ef1fdf99ec0951ff497e0
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 55%
+ht-degree: 74%
 
 ---
 
@@ -20,7 +20,7 @@ Um dies zu umgehen, müssen Sie die `SameSite` Cookie-Attribut zu `None` für da
 
 >[!CAUTION]
 >
->Die `SameSite=None` wird nur angewendet, wenn das Protokoll sicher ist (HTTPS).
+>Die Einstellung `SameSite=None` wird nur angewendet, wenn das Protokoll sicher ist (HTTPS).
 >
 >Wenn das Protokoll nicht sicher (HTTP) ist, wird die Einstellung ignoriert und der Server zeigt diese WARN-Meldung:
 >

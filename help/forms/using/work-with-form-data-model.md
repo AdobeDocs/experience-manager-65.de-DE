@@ -11,7 +11,7 @@ docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '4128'
 ht-degree: 100%
 
@@ -200,9 +200,9 @@ Verwenden Sie das Anforderungsattribut, um die verknüpften Eigenschaften aus de
    >[!NOTE]
    >
    > * Wenn Sie eine statische Vorlage verwenden, überlagern Sie head.jsp unter:
-   >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+      >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
    > * Wenn Sie eine bearbeitbare Vorlage verwenden, überlagern Sie die Datei aftemplatedpage.jsp unter:
-   >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
+      >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 
 1. Legen Sie [!DNL paramMap] für das Anforderungsattribut fest. Fügen Sie beispielsweise folgenden Code in die JSP-Datei im Ordner „Apps“ ein:

@@ -11,9 +11,9 @@ docset: aem65
 feature: Interactive Communication
 exl-id: c8a6037c-46bd-4058-8314-61cb925ba5a8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2733'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -115,7 +115,7 @@ Die Tabelle **bills** enthält die Rechnungsdetails wie Rechnungsdatum, Rechnung
 
 ## Schritt 2: Konfigurieren der MySQL-Datenbank als Datenquelle {#step-configure-mysql-database-as-data-source}
 
-Sie können verschiedene Arten von Datenquellen konfigurieren, um ein Formulardatenmodell zu erstellen. Für dieses Tutorial werden wir die MySQL-Datenbank, die Sie konfiguriert und mit Beispieldaten befüllt haben, konfigurieren. Informationen zu anderen unterstützten Datenquellen und deren Konfiguration finden Sie unter [AEM Forms-Datenintegration](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/data-integration.html).
+Sie können verschiedene Arten von Datenquellen konfigurieren, um ein Formulardatenmodell zu erstellen. Für dieses Tutorial werden wir die MySQL-Datenbank, die Sie konfiguriert und mit Beispieldaten befüllt haben, konfigurieren. Informationen zu anderen unterstützten Datenquellen und deren Konfiguration finden Sie unter [AEM Forms-Datenintegration](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html).
 
 Gehen Sie folgendermaßen vor, um Ihre MySQL-Datenbank zu konfigurieren:
 
@@ -145,7 +145,7 @@ Gehen Sie folgendermaßen vor, um Ihre MySQL-Datenbank zu konfigurieren:
 
       * **Test on Return:** Aktivieren Sie die Option **Test on Return.**
 
-      * **Validation Query:** Geben Sie eine SQL SELECT-Abfrage ein, damit Verbindungen aus dem Pool validiert werden. Die Abfrage muss mindestens eine Zeile zurückgeben. Beispiel: **Wählen Sie * aus den Kundendaten**.
+      * **Validation Query:** Geben Sie eine SQL SELECT-Abfrage ein, damit Verbindungen aus dem Pool validiert werden. Die Abfrage muss mindestens eine Zeile zurückgeben. Beispiel: **select &#42; vom Kunden**.
 
       * **Transaktions-Isolierung**: Setzen Sie den Wert auf **READ_COMMITTED**.
    Belassen Sie die anderen Eigenschaften auf den [Standardwerten](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) und tippen Sie auf **Speichern**.
@@ -266,7 +266,7 @@ Führen Sie die folgenden Schritte aus, um Verknüpfungen zwischen Datenmodellob
 
    * Wählen Sie **Anrufe** aus der Dropdown-Liste **Modellobjekt**.
 
-   * Wählen Sie **get** aus der Dropdown-Liste **Service**.
+   * Wählen Sie **get** aus der Dropdown-Liste **Service.**
 
    * Tippen Sie auf **Hinzufügen**, um das Datenmodellobjekt **customer** mit dem Datenmodellobjekt **calls** mithilfe einer Eigenschaft zu verknüpfen. Basierend auf dem Anwendungsfall muss das Datenmodellobjekt „call“ mit der Eigenschaft der Mobilfunknummer im Datenmodellobjekt „customer“ verknüpft sein. Das Dialogfeld **Argument hinzufügen** wird geöffnet.
 

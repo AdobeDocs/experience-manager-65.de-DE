@@ -1,8 +1,8 @@
 ---
 title: Best Practices für E-Mail-Vorlagen
-seo-title: Best Practices für E-Mail-Vorlagen
+seo-title: Best Practices for Email Templates
 description: Finden Sie Best Practices zur Erstellung von E-Mail-Vorlagen in AEM.
-seo-description: Finden Sie Best Practices zur Erstellung von E-Mail-Vorlagen in AEM.
+seo-description: Find best practices on creating email templates in AEM.
 uuid: 07417a63-7ca6-484c-b55d-57b319428329
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,12 +13,12 @@ docset: aem65
 exl-id: 6666eddc-dc17-4bd4-9d55-e6522f40a680
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1116'
 ht-degree: 43%
 
 ---
 
-# Best Practices für E-Mail-Vorlagen  {#best-practices-for-email-templates}
+# Best Practices für E-Mail-Vorlagen {#best-practices-for-email-templates}
 
 >[!CAUTION]
 >
@@ -34,19 +34,19 @@ Verwenden Sie diese Best Practices bei der Erstellung Ihres eigenen Newsletters.
 
 >[!NOTE]
 >
->Alle Kampagneninhalte sollten unter einer `master`-Seite vom Typ `cq/personalization/components/ambitpage` erstellt werden.
+>Alle Kampagneninhalte sollten unter einer `master` Seite des Typs `cq/personalization/components/ambitpage`.
 >
 >Wenn Ihre geplante Kampagnenstruktur beispielsweise etwa so aussieht:
 >
 >`/content/campaigns/teasers/en/campaign-promotion-global`
 >
->Sie sollten sicherstellen, dass sie sich unter einer `master`-Seite befindet.
+>Sie sollten sicherstellen, dass sie sich unter einem `master` page
 >
 >`/content/campaigns/teasers/master/en/campaign-promotion-global`
 
 >[!NOTE]
 >
->Beim Erstellen einer E-Mail-Vorlage für Adobe Campaign müssen Sie die Eigenschaft **acMapping** mit dem Wert **mapRecipient** im Knoten **jcr:content** der Vorlage einbeziehen oder Sie können die Adobe Campaign-Vorlage nicht im Knoten **Seiteneigenschaften** der AEM auswählen (Feld ist deaktiviert).
+>Beim Erstellen einer E-Mail-Vorlage für Adobe Campaign müssen Sie die -Eigenschaft einbeziehen **acMapping** mit dem Wert **mapRecipient** im **jcr:content** -Knoten der Vorlage verwenden, oder Sie können die Adobe Campaign-Vorlage nicht in **Seiteneigenschaften** von AEM (Feld ist deaktiviert).
 
 ## Vorlage/Seitenkomponente {#template-page-component}
 
@@ -60,19 +60,19 @@ Verwenden Sie diese Best Practices bei der Erstellung Ihres eigenen Newsletters.
   </tr>
   <tr>
    <td><p>Geben Sie den Dokumenttyp an, um eine konsistente Wiedergabe sicherzustellen.</p> <p>Hinzufügen von DOCTYPE am Anfang (HTML oder XHTML)</p> </td>
-   <td><p>Ist konfigurierbar, indem die <i>cq:doctype</i>-Eigenschaft in<i>"/etc/designs/default/jcr:content/campaign_newsletterpage"</i> geändert wird.</p> <p>Der Standardwert ist "XHTML":</p> <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Kann in "HTML_5"geändert werden:</p> <p>&lt;!DOCTYPE HTML&gt;</p> </td>
+   <td><p>Ist durch Änderung des Designs des <i>cq:doctype</i> -Eigenschaft in<i>"/etc/designs/default/jcr:content/campaign_newsletterpage"</i></p> <p>Der Standardwert ist "XHTML":</p> <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Kann in "HTML_5"geändert werden:</p> <p>&lt;!DOCTYPE HTML&gt;</p> </td>
   </tr>
   <tr>
-   <td><p>Geben Sie die Zeichendefinition an, um die korrekte Darstellung von Sonderzeichen sicherzustellen.</p> <p>Fügen Sie die CHARSET-Deklaration (z. B. iso-8859-15, UTF-8) zu &lt;head&gt; hinzu.</p> </td>
+   <td><p>Geben Sie die Zeichendefinition an, um die korrekte Darstellung von Sonderzeichen sicherzustellen.</p> <p>Fügen Sie die CHARSET-Deklaration (z. B. ISO-8859-15, UTF-8) zu &lt;head&gt;</p> </td>
    <td><p>Ist auf UTF-8 festgelegt.</p> <p>&lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt;</p> </td>
   </tr>
   <tr>
-   <td><p>Codieren Sie die gesamte Struktur mithilfe des Elements &lt;table&gt;. Bei komplizierteren Layouts sollten Sie Tabellen zur Erstellung komplexer Strukturen verschachteln.</p> <p>E-Mail sollte auch ohne CSS gut aussehen.</p> </td>
+   <td><p>Coden Sie die gesamte Struktur mithilfe der &lt;table&gt;-Element. Bei komplizierteren Layouts sollten Sie Tabellen zur Erstellung komplexer Strukturen verschachteln.</p> <p>E-Mail sollte auch ohne CSS gut aussehen.</p> </td>
    <td><p>Tabellen werden in der gesamten Vorlage zur Strukturierung von Inhalten verwendet. Aktuell werden maximal vier verschachtelte Tabellen (1 Basistabelle + max. 3 Verschachtelungsebenen)</p> <p>&lt;div&gt; -Tags werden nur im Autorenmodus verwendet, um eine ordnungsgemäße Komponentenbearbeitung sicherzustellen.</p> </td>
   </tr>
   <tr>
    <td>Verwenden Sie Elementattribute (z. B. cellpadding, valign und width), um Tabellendimensionen festzulegen. Dies erzwingt eine Verschachtelungsmodellstruktur.</td>
-   <td><p>Alle Tabellen enthalten die erforderlichen Attribute wie <i>border</i>, <i>cellpadding</i>, <i>cellspacing</i> und <i>width</i>.</p> <p>Um die Elementpositionierung in Tabellen zu harmonisieren, wird für alle Tabellenzellen das Attribut <i>valign="top"</i> festgelegt.</p> </td>
+   <td><p>Alle Tabellen enthalten die erforderlichen Attribute wie <i>border</i>, <i>cellpadding</i>, <i>cellspacing</i> und <i>width</i>.</p> <p>Um die Elementpositionierung in Tabellen zu harmonisieren, haben alle Tabellenzellen das Attribut <i>valign="top"</i> gesetzt werden.</p> </td>
   </tr>
   <tr>
    <td><p>Berücksichtigen Sie nach Möglichkeit die Mobilfreundlichkeit. Verwenden Sie Medienabfragen zur Erhöhung der Textgrößen auf kleinen Bildschirmen und stellen Sie zu Links Trefferbereiche im Miniaturformat bereit.</p> <p>Erstellen Sie falls möglich ein responsives E-Mail-Design.</p> </td>
@@ -80,7 +80,7 @@ Verwenden Sie diese Best Practices bei der Erstellung Ihres eigenen Newsletters.
   </tr>
   <tr>
    <td>Inline-CSS ist besser, als alle CSS am Anfang zu platzieren.</td>
-   <td><p>Um die zugrunde liegende HTML-Struktur besser zu demonstrieren und die Möglichkeit zur Anpassung der Newsletterstruktur zu erleichtern, erfolgen nur einige CSS-Definitionen inline.</p> <p>Basisstile und Vorlagenvarianten wurden in einen Stilblock im &lt;head&gt; der Seite extrahiert. Bei der finalen Übermittlung des Newsletters sollten diese CSS-Definitionen inline in HTML vorhanden sein. Ein automatischer Inlining-Mechanismus ist geplant, aktuell jedoch noch nicht verfügbar.</p> </td>
+   <td><p>Um die zugrunde liegende HTML-Struktur besser zu demonstrieren und die Möglichkeit zur Anpassung der Newsletterstruktur zu erleichtern, erfolgen nur einige CSS-Definitionen inline.</p> <p>Basisstile und Vorlagenvarianten wurden in einen Stilblock im &lt;head&gt; der Seite. Bei der finalen Übermittlung des Newsletters sollten diese CSS-Definitionen inline in HTML vorhanden sein. Ein automatischer Inlining-Mechanismus ist geplant, aktuell jedoch noch nicht verfügbar.</p> </td>
   </tr>
   <tr>
    <td>Halten Sie CSS einfach. Vermeiden Sie zusammengesetzte Stildeklarationen, Kompaktcode, CSS-Layouteigenschaften, komplexe Selektoren und Pseudoelemente.</td>
@@ -88,7 +88,7 @@ Verwenden Sie diese Best Practices bei der Erstellung Ihres eigenen Newsletters.
   </tr>
   <tr>
    <td>Die maximale Breite von E-Mails sollte 600-800 Pixel betragen. Dies sorgt dafür, dass diese in der von vielen Clients bereitgestellten Vorschaufenstergröße besser funktionieren.</td>
-   <td>Die <i>Breite</i> der Inhaltstabelle ist im Demodesign auf 600 px beschränkt.</td>
+   <td>Die <i>width</i> der Inhaltstabelle ist im Demodesign auf 600 px beschränkt.</td>
   </tr>
  </tbody>
 </table>
@@ -99,10 +99,10 @@ Verwenden Sie diese Best Practices bei der Erstellung Ihres eigenen Newsletters.
 
 | **Best Practice** | **Implementierung** |
 |---|---|
-| Hinzufügen von Attributen *alt* zu Bildern | Das Attribut *alt* wurde für die Bildkomponente als obligatorisch definiert. |
-| Verwenden Sie das Format *jpg* anstelle des Formats *png* für Bilder. | Bilder werden von der Bildkomponente immer als JPG bereitgestellt. |
-| Verwenden Sie in einer Tabelle das Element `<img>` anstelle von Hintergrundbildern. | In den Vorlagen werden keine Hintergrundbilddaten verwendet. |
-| Fügen Sie den Bildern das Attribut style=&quot;display block&quot; hinzu. Dies ermöglicht eine gute Anzeige in Gmail. | Alle Bilder enthalten standardmäßig das Attribut *style=&quot;display block&quot;* . |
+| Hinzufügen *alt* -Attributen für Bilder | Die *alt* wurde als obligatorisch für die Bildkomponente definiert. |
+| Verwendung *jpg* anstelle von *png* Bildformat | Bilder werden von der Bildkomponente immer als JPG bereitgestellt. |
+| Verwendung `<img>` -Element anstelle von Hintergrundbildern in einer Tabelle. | In den Vorlagen werden keine Hintergrundbilddaten verwendet. |
+| Fügen Sie den Bildern das Attribut style=&quot;display block&quot; hinzu. Dies ermöglicht eine gute Anzeige in Gmail. | Alle Bilder enthalten standardmäßig die Variable *style=&quot;display block&quot;* -Attribut. |
 
 ### Text und Links {#text-and-links}
 
@@ -115,11 +115,11 @@ Verwenden Sie diese Best Practices bei der Erstellung Ihres eigenen Newsletters.
    <td><strong>Implementierung</strong></td>
   </tr>
   <tr>
-   <td>Verwenden Sie HTML &lt;font&gt; anstelle von Stil in CSS (Schriftfamilie)</td>
-   <td>Der RichTextEditor (z. B. in der textimage-Komponente) unterstützt jetzt die Auswahl und Anwendung von Schriftfamilien und Schriftgrößen für ausgewählte Texte. Sie werden als &lt;font&gt;-Tags gerendert.</td>
+   <td>Verwenden Sie HTML anstelle von Stil in CSS (Schriftfamilie)</td>
+   <td>Der RichTextEditor (z. B. in der textimage-Komponente) unterstützt jetzt die Auswahl und Anwendung von Schriftfamilien und Schriftgrößen für ausgewählte Texte. Sie werden als Tags gerendert.</td>
   </tr>
   <tr>
-   <td>Verwenden Sie einfache, plattformübergreifende Schriftarten wie <i>Arial, Verdana, Georgia</i> und <i>Times New Roman</i>.</td>
+   <td>Verwenden Sie einfache, plattformübergreifende Schriftarten wie <i>Arial, Verdana, Georgien</i> und <i>Times New Roman</i>.</td>
    <td><p>Hängt vom Newsletter-Design ab.</p> <p>Für das Demodesign wird die Schrift "Helvetica"verwendet, wird jedoch auf die allgemeine sans-serif-Schrift zurückgesetzt, falls nicht vorhanden.</p> </td>
   </tr>
  </tbody>
@@ -129,7 +129,7 @@ Verwenden Sie diese Best Practices bei der Erstellung Ihres eigenen Newsletters.
 
 | **Best Practice** | **Implementierung** |
 |---|---|
-| Verwenden Sie den W3C-Validator, um den HTML-Code zu korrigieren. Stellen Sie sicher, dass alle offenen Tags ordnungsgemäß geschlossen werden. | Der Code wurde validiert. Für XHTML-Übergangsdokumentation fehlt nur das fehlende xmlns-Attribut für das Element `<html>` . |
+| Verwenden Sie den W3C-Validator, um den HTML-Code zu korrigieren. Stellen Sie sicher, dass alle offenen Tags ordnungsgemäß geschlossen werden. | Der Code wurde validiert. Für XHTML-Übergangsdokumentation nur das fehlende xmlns-Attribut für die `<html>` -Element fehlt. |
 | Verwenden Sie weder JavaScript noch Flash - diese Technologien werden von E-Mail-Clients größtenteils nicht unterstützt. | In der Newslettervorlage werden weder JavaScript noch Flash verwendet. |
 | Fügen Sie eine Textversion für mehrteilige Sendungen hinzu. | Es wurde ein neues Widget in die Seiteneigenschaften integriert, mit dem im Handumdrehen eine Nur-Text-Version aus den Seiteninhalten extrahiert werden kann. Dies kann als Ausgangspunkt für die finale Nur-Text-Version verwendet werden. |
 
@@ -141,11 +141,11 @@ AEM bietet Ihnen standardmäßig mehrere Vorlagen und Komponenten zur Erstellung
 
 Um eine solide Grundlage zu schaffen und die Vielfalt der Möglichkeiten für den Inhaltsfluss zu erweitern, stehen standardmäßig drei leicht voneinander abweichende Vorlagentypen zur Verfügung. Sie können diese einfach verwenden, um einen benutzerdefinierten Newsletter zu erstellen.
 
-Alle haben einen **header**, eine **Fußzeile** und einen **body** -Abschnitt. Unter dem Hauptteil unterscheidet sich jede Vorlage in **Spaltendesign** (1, 2 oder 3 Spalten).
+Alle haben eine **header**, **Fußzeile** und **body** Abschnitt. Unter dem Abschnitt &quot;Text&quot;unterscheidet sich jede Vorlage in **Spaltendesign** (1, 2 oder 3 Spalten).
 
 ![](assets/chlimage_1-69.png)
 
-### Komponenten  {#components}
+### Komponenten {#components}
 
 Es stehen aktuell [sieben Komponenten zur Verfügung, die innerhalb von Kampagnenvorlagen verwendet werden können](/help/sites-authoring/adobe-campaign-components.md). Diese Komponenten basieren alle auf der Adobe-Markup-Sprache **HTL**.
 
@@ -156,7 +156,7 @@ Es stehen aktuell [sieben Komponenten zur Verfügung, die innerhalb von Kampagne
 | Text und Personalisierung | /libs/mcm/campaign/components/personalization |
 | Textimage | /libs/mcm/campaign/components/textimage |
 | Verknüpfung | /libs/mcm/campaign/components/reference |
-| Dynamic Media Classic (früher Scene7)-Bildvorlage | /libs/mcm/campaign/s7image |
+| Dynamic Media Classic-Bildvorlage (früher Scene7) | /libs/mcm/campaign/s7image |
 | Zielgerichteter Verweis | /libs/mcm/campaign/components/reference |
 
 >[!NOTE]

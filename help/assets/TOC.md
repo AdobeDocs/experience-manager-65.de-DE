@@ -8,8 +8,8 @@ breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, verarbeiten und verteilen Sie digitale Assets.
 source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '675'
+ht-degree: 59%
 
 ---
 
@@ -56,8 +56,8 @@ ht-degree: 0%
    + [Dynamic Media-Videoprofile](video-profiles.md)
    + [Dynamic Media-Bildprofile](image-profiles.md)
    + [Intelligente Bildbearbeitung](imaging-faq.md)
-   + [Intelligente Bildbearbeitung mit clientseitigem Gerätepixelverhältnis](client-side-dpr.md)
-   + [Video ](s7-video.md)
+   + [Intelligente Bildbearbeitung mit Client-seitigem Gerätepixelverhältnis](client-side-dpr.md)
+   + [Video   ](s7-video.md)
    + [Bereitstellung von Inhalten per HTTP/2](http2.md)
    + [Bereitstellen von Dynamic Media-Assets](delivering-dynamic-media-assets.md)
    + [Aktivieren des Hotlink-Schutzes in Dynamic Media](hotlink-protection.md)
@@ -65,9 +65,9 @@ ht-degree: 0%
    + [Einschränkungen bei Dynamic Media](limitations.md)
    + [Bildsets](image-sets.md)
    + [Panoramabilder](panoramic-images.md)
-   + [Gemischte Mediensets](mixed-media-sets.md)
+   + [Sets mit gemischten Medien](mixed-media-sets.md)
    + [Rotationssets](spin-sets.md)
-   + [Video  in Dynamic Media](video.md)
+   + [Video    in Dynamic Media](video.md)
    + [Karussellbanner](carousel-banners.md)
    + [Interaktive Bilder](interactive-images.md)
    + [Interaktive Videos](interactive-videos.md)

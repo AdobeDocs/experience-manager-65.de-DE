@@ -1,8 +1,8 @@
 ---
 title: AEM Sites – Einhaltung der Datenschutz-Grundverordnung
-seo-title: AEM Sites – Einhaltung der Datenschutz-Grundverordnung
+seo-title: AEM Sites - GDPR Readiness
 description: Hier erfahren Sie, wie AEM Sites die Anforderungen der Datenschutz-Grundverordnung erfüllt.
-seo-description: Hier erfahren Sie, wie AEM Sites die Anforderungen der Datenschutz-Grundverordnung erfüllt.
+seo-description: Learn about the details of GDPR Readiness for AEM Sites.
 uuid: 00d1fdce-ef9a-4902-a7a5-7225728e8ffc
 contentOwner: aheimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
 exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 91%
+source-wordcount: '836'
+ht-degree: 92%
 
 ---
 
@@ -41,11 +41,11 @@ Auf dem Autorenserver gespeicherte Benutzerkonten und benutzergenerierte Inhalte
 
 Die für die Authentifizierung von Besuchern verwendeten Benutzerkonten und die UGC-Inhalte, die auf dem Publish-Server gespeichert werden, werden in der [DSGVO-Dokumentation für die Plattform](/help/managing/data-protection-and-privacy.md) erläutert.
 
-Standardmäßig speichern die Komponenten von AEM Sites keine von Besuchern eingegebenen Daten auf dem  Veröffentlichungs-Server. Es wird empfohlen, diese Daten zur weiteren Verarbeitung an ein Drittanbietersystem oder an Adobe Campaign zu übermitteln.
+Standardmäßig speichern die Komponenten von AEM Sites keine von Besuchern auf dem Publishing-Server eingegebenen Daten. Es wird empfohlen, diese Daten zur weiteren Verarbeitung an ein Drittanbietersystem oder an Adobe Campaign zu übermitteln.
 
 ## Opt-in/Opt-out {#opt-in-opt-out}
 
-AEM verfügt über einen [Cookie-Opt-out-Dienst](/help/sites-developing/cookie-optout.md) , der für die Verwaltung des Opt-in/Opt-outs für Benutzer verwendet werden kann.
+AEM hat eine [Cookie-Abmeldedienst](/help/sites-developing/cookie-optout.md) die für die Verwaltung des Opt-in/Opt-outs für Benutzer verwendet werden kann.
 
 ## Enhanced Insights by Analytics {#enhanced-insights-by-analytics}
 
@@ -53,11 +53,11 @@ AEM Sites bietet eine optionale Integration mit Enhanced Insights by Analytics, 
 
 Weitere Informationen zur Verwaltung von DSGVO-Anfragen von Datensubjekten in Adobe Analytics finden Sie unter [Adobe Analytics und die DSGVO](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html).
 
-## Verbesserte Personalisierung durch Target  {#enhanced-personalization-by-target}
+## Verbesserte Personalisierung durch Target {#enhanced-personalization-by-target}
 
 AEM Sites bietet eine optionale Integration mit verbesserter Personalisierung durch Target, das Funktionen innerhalb des On-Demand-Service von Adobe Analytics verwendet.
 
-Weitere Informationen zur Verwaltung von DSGVO-Anfragen von Datensubjekten in Adobe Target finden Sie unter [Adobe Target – Datenschutz und die DSGVO](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+Weitere Informationen zur Verwaltung von DSGVO-Anfragen von Datensubjekten in Adobe Target finden Sie unter [Adobe Target – Datenschutz und die DSGVO](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=de).
 
 ## ContextHub {#contexthub}
 
@@ -71,7 +71,7 @@ Standardmäßig werden diese Besucherdaten nicht in AEM gespeichert. AEM übermi
 >
 >Adobe CQ 5.5 und frühere Versionen wurden mittlerweile eingestellt und werden in dieser Dokumentation nicht behandelt.
 
-### Implementieren von Opt-in-/Opt-out-Komponenten  {#implementing-opt-in-opt-out}
+### Implementieren von Opt-in-/Opt-out-Komponenten {#implementing-opt-in-opt-out}
 
 Der Website-Inhaber muss eine Opt-out-Komponente gemäß den folgenden Richtlinien implementieren.
 
@@ -103,7 +103,7 @@ Diese Richtlinien sehen eine standardmäßige Opt-in-Implementierung vor. Deshal
    // if isOptedOut is true, ContextHub is running in opt-out mode
    ```
 
-### Vorschau der ContextHub-Persistenz  {#previewing-persistence-of-contexthub}
+### Vorschau der ContextHub-Persistenz {#previewing-persistence-of-contexthub}
 
 Zum Anzeigen der von ContextHub verwendeten Persistenz bestehen folgende Möglichkeiten:
 
@@ -191,7 +191,7 @@ var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persiste
 console.log(storage.getTree());
 ```
 
-### Löschen der ContextHub-Persistenz  {#clearing-persistence-of-contexthub}
+### Löschen der ContextHub-Persistenz {#clearing-persistence-of-contexthub}
 
 So löschen Sie die ContextHub-Persistenz:
 

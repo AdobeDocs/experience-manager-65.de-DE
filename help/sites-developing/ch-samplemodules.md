@@ -1,8 +1,8 @@
 ---
 title: Mustertypen von ContextHub-UI-Modulen
-seo-title: Mustertypen von ContextHub-UI-Modulen
+seo-title: Sample ContextHub UI Module Types
 description: ContextHub bietet mehrere Muster-UI-Module, die Sie in Ihren Lösungen verwenden können
-seo-description: ContextHub bietet mehrere Muster-UI-Module, die Sie in Ihren Lösungen verwenden können
+seo-description: ContextHub provides several sample UI modules that you can use in your solutions
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -10,12 +10,12 @@ content-type: reference
 exl-id: df28180f-7af4-437d-8e91-bfd305f73113
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1176'
 ht-degree: 91%
 
 ---
 
-# Mustertypen von ContextHub-UI-Modulen   {#sample-contexthub-ui-module-types}
+# Mustertypen von ContextHub-UI-Modulen {#sample-contexthub-ui-module-types}
 
 ContextHub bietet mehrere Muster-UI-Module, die Sie in Ihren Lösungen verwenden können. Die folgenden Informationen werden bereitgestellt:
 
@@ -25,7 +25,7 @@ ContextHub bietet mehrere Muster-UI-Module, die Sie in Ihren Lösungen verwenden
 
 Informationen zum Hinzufügen von UI-Modulen zu ContextHub finden Sie unter [Hinzufügen eines UI-Moduls](ch-configuring.md#adding-a-ui-module). Informationen zum Entwickeln von UI-Modulen finden Sie unter [Erstellen von ContextHub-UI-Modultypen](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types).
 
-## UI-Modultyp contexthub.base   {#contexthub-base-ui-module-type}
+## UI-Modultyp contexthub.base {#contexthub-base-ui-module-type}
 
 Der UI-Modultyp contexthub.base ist der Basistyp für alle anderen UI-Modultypen. Als solches stellt er allgemeine Funktionen zum Rendern von Storedaten bereit.
 
@@ -105,7 +105,7 @@ Instanzen des UI-Moduls contexthub.browserinfo benötigen keinen Wert für die D
 }
 ```
 
-## UI-Modultyp contexthub.datetime   {#contexthub-datetime-ui-module-type}
+## UI-Modultyp contexthub.datetime {#contexthub-datetime-ui-module-type}
 
 Das Benutzeroberflächenmodul contexthub.datetime zeigt das Datum und die Uhrzeit an, die in einem Store mit dem Namen datetime gespeichert sind, der auf dem Storekandidaten [contexhub.datetime](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate) basiert.
 
@@ -173,7 +173,7 @@ Instanzen des UI-Moduls contexthub.location erfordern keinen Wert für die Detai
 }
 ```
 
-## UI-Modultyp contexthub.screen-orientation   {#contexthub-screen-orientation-ui-module-type}
+## UI-Modultyp contexthub.screen-orientation {#contexthub-screen-orientation-ui-module-type}
 
 Das Benutzeroberflächenmodul contexthub.screen-orientation zeigt die aktuelle Bildschirmausrichtung des Clients an. Obwohl standardmäßig deaktiviert, bietet das Modul ein Popover, mit dem Sie eine Ausrichtung auswählen können. Das Modul erhält Informationen von einem ContextHub-Store namens „emulators“, der auf dem Store-Kandidaten [granite.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) basiert.
 
@@ -221,7 +221,7 @@ Für Instanzen des Benutzeroberflächenmoduls contexthub.tagcloud ist kein Wert 
 }
 ```
 
-## UI-Modultyp granite.profile   {#granite-profile-ui-module-type}
+## UI-Modultyp granite.profile {#granite-profile-ui-module-type}
 
 Das ContextHub-Benutzeroberflächenmodul granite.profile zeigt den Anzeigenamen des aktuellen Benutzers an. Das Popupmenü zeigt den Anmeldenamen des Benutzers auf, was Ihnen ermöglicht, den Wert der Anzeigename zu ändern. Das UI-Modul erhält Informationen von einem ContextHub-Store namens Profile, der auf dem Store-Kandidaten [granite.profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) basiert.
 

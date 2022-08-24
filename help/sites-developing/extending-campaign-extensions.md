@@ -1,8 +1,8 @@
 ---
 title: Erstellen benutzerspezifischer Erweiterungen
-seo-title: Erstellen benutzerspezifischer Erweiterungen
+seo-title: Creating Custom Extensions
 description: Sie können Ihren benutzerdefinierten Code in Adobe Campaign aus AEM oder aus AEM nach Adobe Campaign aufrufen
-seo-description: Sie können Ihren benutzerdefinierten Code in Adobe Campaign aus AEM oder aus AEM nach Adobe Campaign aufrufen
+seo-description: You can call your custom code in Adobe Campaign from AEM or from AEM to Adobe Campaign
 uuid: 8392aa0d-06cd-4b37-bb20-f67e6a0550b1
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: f536bcc1-7744-4f05-ac6a-4cec94a1ffb6
 exl-id: 0702858e-5e46-451f-9ac3-40a4fec68ca0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '518'
 ht-degree: 81%
 
 ---
@@ -38,15 +38,15 @@ Die Standardintegration zwischen AEM und Campaign basiert auf JSON und JSSP (Jav
 
 >[!NOTE]
 >
->[Für dieses Beispiel lesen Sie bitte Geometrixx](/help/sites-developing/we-retail.md), das in Package Share verfügbar ist.
+>[Für dieses Beispiel lesen Sie bitte Geometrixx](/help/sites-developing/we-retail.md), der in Package Share verfügbar ist.
 
 In diesem Beispiel erstellen wir eine neue benutzerdefinierte JSSP-Datei und rufen diese in AEM ab, um das Ergebnis zu erhalten. So können Sie beispielsweise Daten von Adobe Campaign abrufen oder Daten in Adobe Campaign speichern.
 
-1. Um in Adobe Campaign eine neue JSSP-Datei zu erstellen, klicken Sie auf das Symbol **Neu**.
+1. Um in Adobe Campaign eine neue JSSP-Datei zu erstellen, klicken Sie auf das **Neu** Symbol.
 
    ![](do-not-localize/chlimage_1-4a.png)
 
-1. Geben Sie den Namen dieser JSSP-Datei ein. In diesem Beispiel verwenden wir **cus:custom.jssp** (d. h. es befindet sich im Namespace **cus** ).
+1. Geben Sie den Namen dieser JSSP-Datei ein. In diesem Beispiel verwenden wir **cus:custom.jssp** (d. h., es wird im **cus** Namespace).
 
    ![chlimage_1-16](assets/chlimage_1-16a.png)
 
@@ -65,7 +65,7 @@ In diesem Beispiel erstellen wir eine neue benutzerdefinierte JSSP-Datei und ruf
    * Sie haben eine funktionierende Verbindung zwischen AEM und Campaign
    * Der Campaign-Cloud-Service ist auf **/content/geometrixx-outdoor** konfiguriert
 
-   Das wichtigste Objekt in diesem Beispiel ist der **GenericCampaignConnector**, mit dem Sie JSSP-Dateien auf der Adobe Campaign-Seite aufrufen (abrufen und posten) können.
+   Das wichtigste Objekt in diesem Beispiel ist die **GenericCampaignConnector**, mit dem Sie JSSP-Dateien auf Adobe Campaign-Seite aufrufen (abrufen und posten) können.
 
    Es folgt ein kleines Code-Snippet:
 
@@ -162,7 +162,7 @@ public class CustomServlet extends SlingSafeMethodsServlet {
 }
 ```
 
-## Beispiel 2: Adobe Campaign nach AEM  {#example-adobe-campaign-to-aem}
+## Beispiel 2: Adobe Campaign nach AEM {#example-adobe-campaign-to-aem}
 
 AEM bietet betriebsbereite APIs zum Abrufen der Objekte, die in der siteadmin-Exploreransicht verfügbar sind.
 
@@ -170,7 +170,7 @@ AEM bietet betriebsbereite APIs zum Abrufen der Objekte, die in der siteadmin-Ex
 
 >[!NOTE]
 >
->[Für dieses Beispiel lesen Sie bitte Geometrixx](/help/sites-developing/we-retail.md), das in Package Share verfügbar ist.
+>[Für dieses Beispiel lesen Sie bitte Geometrixx](/help/sites-developing/we-retail.md), der in Package Share verfügbar ist.
 
 Für jeden Knoten im Explorer gibt es eine API, die mit ihm verknüpft ist. Beispiel für den Knoten :
 
@@ -188,7 +188,7 @@ Um die API zu nutzen, müssen wir wissen, dass AEM standardmäßig die Standarda
 
 Eine JS-Bibliothek mit dem Namen **amcIntegration.js** ist in 6.1.1 (Build 8624 und höher) verfügbar und implementiert diese Logik unter mehreren anderen.
 
-### AEM-API-Aufruf  {#aem-api-call}
+### AEM-API-Aufruf {#aem-api-call}
 
 ```java
 loadLibrary("nms:amcIntegration.js");

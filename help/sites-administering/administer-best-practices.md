@@ -2,7 +2,7 @@
 title: Best Practices
 seo-title: Best Practices
 description: Erhalten Sie Informationen zu Best Practices, die von den Entwicklungs- und Beratungsteams von Adobe zusammengestellt wurden, um Administratoren einen schnellen Einstieg zu ermöglichen.
-seo-description: Erhalten Sie Informationen zu Best Practices, die von den Entwicklungs- und Beratungsteams von Adobe zusammengestellt wurden, um Administratoren einen schnellen Einstieg zu ermöglichen.
+seo-description: Find best practices compiled by Adobe engineering and consulting teams to help administrators get up and running.
 uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '524'
 ht-degree: 89%
 
 ---
@@ -36,7 +36,7 @@ Spezielle Dokumente werden in den folgenden Tabellen beschrieben und verknüpft.
 
 ## Assets {#assets}
 
-Best Practices für Assets, einschließlich der Dynamic Media-Funktion und der Dynamic Media Classic-Integration, werden in den folgenden Themen beschrieben:
+Best Practices rund um Assets, einschließlich der Dynamic Media-Funktion und der Dynamic Media Classic-Integration, werden in den folgenden Themen beschrieben:
 
 <table>
  <tbody>

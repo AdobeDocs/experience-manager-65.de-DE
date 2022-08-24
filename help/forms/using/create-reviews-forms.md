@@ -1,7 +1,7 @@
 ---
-title: Erstellen und Verwalten von Assetüberprüfungen in Formularen
+title: 'Erstellen und Verwalten von Assetüberprüfungen in Formularen '
 seo-title: Creating and managing reviews for assets in forms
-description: 'Bei einer Überprüfung handelt es sich um einen Mechanismus, bei dem mindestens ein Reviewer Kommentare zu einem Asset machen kann, das in einem Formular verfügbar ist. '
+description: 'Bei einer Überprüfung handelt es sich um einen Mechanismus, bei dem mindestens ein Prüfer Assets kommentieren kann, die in einem Formular verfügbar sind. '
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
 uuid: 45c7ff56-3fa8-4a0f-8597-05404e547282
 content-type: reference
@@ -12,13 +12,13 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 9ca4fcd6-3eb0-4fc1-a09c-e4ad532bbed0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 100%
 
 ---
 
-# Erstellen und Verwalten von Assetüberprüfungen in Formularen{#creating-and-managing-reviews-for-assets-in-forms}
+# Erstellen und Verwalten von Assetüberprüfungen in Formularen {#creating-and-managing-reviews-for-assets-in-forms}
 
 ## Überprüfung {#review}
 

@@ -12,7 +12,7 @@ noindex: true
 feature: Document Security
 exl-id: 91cbd1f1-d53d-455b-8d2c-6918b521db81
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '643'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ Führen Sie die folgenden Schritte aus, um AEM die Suche in sicherheitsgeschütz
 
 ## Erstellen Sie eine sichere Verbindung AEM Forms Workflow (AEM Forms on JEE) {#establish-a-secure-connection-within-aem-forms-workflow-aem-forms-on-jee}
 
-Eine sichere Verbindung ermöglicht einen   nahtlosen Informationsfluss zwischen AEM Forms auf JEE und den OSGi-Services, die auf demselben Server ausgeführt werden. Verwenden Sie eine der folgenden Methoden, um eine sichere Verbindung herzustellen:
+Eine sichere Verbindung ermöglicht einen  nahtlosen Informationsfluss zwischen AEM Forms auf JEE und den OSGi-Services, die auf demselben Server ausgeführt werden. Verwenden Sie eine der folgenden Methoden, um eine sichere Verbindung herzustellen:
 
 * Konfigurieren des AEM Forms Client SDK Bundle mit AEM Forms on JEE-Administratorberechtigungen
 * Konfigurieren von AEM Forms Client SDK Bundle mit gegenseitiger Authentifizierung 

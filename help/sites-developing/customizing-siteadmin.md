@@ -1,8 +1,8 @@
 ---
 title: Anpassen der Websites-Konsole (klassische Benutzeroberfläche)
-seo-title: Anpassen der Websites-Konsole (klassische Benutzeroberfläche)
+seo-title: Customizing the Websites Console (Classic UI)
 description: Die Websites-Administrationskonsole kann zum Anzeigen benutzerdefinierter Spalten erweitert werden.
-seo-description: Die Websites-Administrationskonsole kann zum Anzeigen benutzerdefinierter Spalten erweitert werden.
+seo-description: The Websites Administration console can be extended to display custom columns
 uuid: 9163fdff-5351-477d-b91c-8a74f8b41d34
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,14 +13,14 @@ docset: aem65
 exl-id: 2b9b4857-821c-4f2f-9ed9-78a1c9f5ac67
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 64%
+source-wordcount: '781'
+ht-degree: 63%
 
 ---
 
 # Anpassen der Websites-Konsole (klassische Benutzeroberfläche){#customizing-the-websites-console-classic-ui}
 
-## Hinzufügen benutzerdefinierter Spalten zur Websites-Konsole (SiteAdmin){#adding-a-custom-column-to-the-websites-siteadmin-console}
+## Hinzufügen benutzerdefinierter Spalten zur Websites-Konsole (SiteAdmin) {#adding-a-custom-column-to-the-websites-siteadmin-console}
 
 Die Websites-Administrationskonsole kann zum Anzeigen benutzerdefinierter Spalten erweitert werden. Die Konsole basiert auf einem JSON-Objekt, das erweitert werden kann, indem ein OSGi-Dienst erstellt wird, der die Schnittstelle `ListInfoProvider` implementiert. Ein solcher Dienst modifiziert das JSON-Objekt, das an den Client gesendet wird, um die Konsole zu erstellen.
 
@@ -36,9 +36,7 @@ In diesem Schritt-für-Schritt-Tutorial wird erläutert, wie Sie eine neue Spalt
 >
 >* die Konsole für digitale Assets
 >* die Community-Konsole
-
 >
-
 
 
 ### Erstellen von OSGi-Diensten {#creating-the-osgi-service}
@@ -112,14 +110,12 @@ public class StarredListInfoProvider implements ListInfoProvider {
 >
 >* Ihre Implementierung sollte anhand der bereitgestellten Anforderung und/oder Ressource bestimmen, ob die Informationen zum JSON-Objekt hinzugefügt werden sollen.
 >* Wenn Ihre `ListInfoProvider`-Implementierung eine Eigenschaft definiert, die bereits im Antwortobjekt vorhanden ist, wird deren Wert durch den von Ihnen angegebenen Wert überschrieben.
-
 >
->  
-Sie können [service ranking](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) verwenden, um die Ausführungsreihenfolge mehrerer `ListInfoProvider` Implementierungen zu verwalten.
+>  Sie können [service ranking](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) verwenden, um die Ausführungsreihenfolge mehrerer `ListInfoProvider` Implementierungen zu verwalten.
 
 ### Testen neuer Dienste {#testing-the-new-service}
 
-Wenn Sie die Website-Administrationskonsole öffnen und durch Ihre Website navigieren, gibt der Browser einen AJAX-Aufruf aus, um das JSON-Objekt zu erhalten, das zum Erstellen der Konsole verwendet wird. Wenn Sie beispielsweise zum Ordner `/content/geometrixx` navigieren, wird die folgende Anfrage an den AEM-Server gesendet, um die Konsole zu erstellen:
+Wenn Sie die Website-Administrationskonsole öffnen und durch Ihre Website navigieren, gibt der Browser einen AJAX-Aufruf aus, um das JSON-Objekt zu erhalten, das zum Erstellen der Konsole verwendet wird. Wenn Sie beispielsweise zum `/content/geometrixx` -Ordner, wird die folgende Anfrage an den AEM-Server gesendet, um die Konsole zu erstellen:
 
 [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
@@ -134,41 +130,41 @@ Gehen Sie wie folgt vor, um sicherzustellen, dass der neue Dienst nach der Berei
 
 ### Anzeigen neuer Spalten {#displaying-the-new-column}
 
-Der letzte Schritt besteht darin, die Knotenstruktur der Websites-Administrationskonsole anzupassen, um die neue Eigenschaft für alle Geometrixx anzuzeigen, indem `/libs/wcm/core/content/siteadmin` überlagert wird. Gehen Sie wie folgt vor:
+Der letzte Schritt besteht darin, die Knotenstruktur der Websites-Administrationskonsole so anzupassen, dass die neue Eigenschaft für alle Geometrixx durch Überlagern angezeigt wird. `/libs/wcm/core/content/siteadmin`. Gehen Sie wie folgt vor:
 
-1. Erstellen Sie in CRXDE Lite die Knotenstruktur `/apps/wcm/core/content` mit Knoten des Typs `sling:Folder`, um die Struktur `/libs/wcm/core/content` widerzuspiegeln.
+1. Erstellen Sie in CRXDE Lite die Knotenstruktur. `/apps/wcm/core/content` mit Knoten des Typs `sling:Folder` um die Struktur widerzuspiegeln `/libs/wcm/core/content`.
 
-1. Kopieren Sie den Knoten `/libs/wcm/core/content/siteadmin` und fügen Sie ihn unter `/apps/wcm/core/content` ein.
+1. Kopieren Sie den Knoten . `/libs/wcm/core/content/siteadmin` und fügen Sie sie unten ein `/apps/wcm/core/content`.
 
-1. Kopieren Sie den Knoten `/apps/wcm/core/content/siteadmin/grid/assets` in `/apps/wcm/core/content/siteadmin/grid/geometrixx` und ändern Sie seine Eigenschaften:
+1. Kopieren Sie den Knoten . `/apps/wcm/core/content/siteadmin/grid/assets` nach `/apps/wcm/core/content/siteadmin/grid/geometrixx` und ändert seine Eigenschaften:
 
    * Entfernen Sie **pageText**.
 
-   * Setzen Sie **pathRegex** auf `/content/geometrixx(/.*)?`
+   * Satz **pathRegex** nach `/content/geometrixx(/.*)?`
 Dadurch wird die Rasterkonfiguration für alle Geometrixx-Websites aktiv.
 
-   * Setzen Sie **storeProxySuffix** auf `.pages.json`
+   * Satz **storeProxySuffix** nach `.pages.json`
 
    * Bearbeiten Sie die mehrwertige Eigenschaft **storeReaderFields** und fügen Sie den Wert `starred` hinzu.
 
-   * Um die MSM-Funktion zu aktivieren, fügen Sie die folgenden MSM-Parameter zur Eigenschaft mit mehreren Zeichenfolgen **storeReaderFields** hinzu:
+   * Um die MSM-Funktion zu aktivieren, fügen Sie die folgenden MSM-Parameter zur Eigenschaft &quot;multiString&quot;hinzu **storeReaderFields**:
 
       * **msm:isSource**
       * **msm:isInBlueprint**
       * **msm:isLiveCopy**
 
-1. Fügen Sie einen `starred` -Knoten (vom Typ **nt:unstructured**) unterhalb von `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` mit den folgenden Eigenschaften hinzu:
+1. Hinzufügen einer `starred` node (of type **nt:unstructured**) unten `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` mit den folgenden Eigenschaften:
 
-   * **dataIndex**:  `starred` vom Typ String
+   * **dataIndex**: `starred` vom Typ String
 
-   * **header**:  `Starred` vom Typ String
+   * **header**: `Starred` vom Typ String
 
-   * **xtype**:  `gridcolumn` vom Typ String
+   * **xtype**: `gridcolumn` vom Typ String
 
-1. (optional) Legen Sie die Spalten ab, die nicht unter `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` angezeigt werden sollen.
+1. (optional) Legen Sie die Spalten ab, die nicht angezeigt werden sollen unter `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
 
-1. `/siteadmin` ist ein Vanity-Pfad, der standardmäßig auf  `/libs/wcm/core/content/siteadmin`verweist.
-Um dies zu Ihrer Version von siteadmin auf `/apps/wcm/core/content/siteadmin` umzuleiten, definieren Sie die Eigenschaft `sling:vanityOrder`, damit sie einen höheren Wert hat als der, der für `/libs/wcm/core/content/siteadmin` definiert ist. Der Standardwert lautet 300, also sind alle höheren Werte geeignet.
+1. `/siteadmin` ist ein Vanity-Pfad, der standardmäßig auf `/libs/wcm/core/content/siteadmin`.
+So leiten Sie dies zu Ihrer Version von siteadmin auf `/apps/wcm/core/content/siteadmin` Eigenschaft definieren `sling:vanityOrder` , um einen höheren Wert als den für definierten zu haben. `/libs/wcm/core/content/siteadmin`. Der Standardwert lautet 300, also sind alle höheren Werte geeignet.
 
 1. Navigieren Sie zur Websites-Administrationskonsole und navigieren Sie zur Geometrixx-Site:
    [https://localhost:4502/siteadmin#/content/geometrixx](https://localhost:4502/siteadmin#/content/geometrixx).
@@ -181,6 +177,6 @@ Um dies zu Ihrer Version von siteadmin auf `/apps/wcm/core/content/siteadmin` um
 >
 >Wenn mehrere Rasterkonfigurationen mit dem durch die Eigenschaft **pathRegex** definierten Pfad übereinstimmen, wird die erste und nicht die spezifischste Eigenschaft verwendet, was bedeutet, dass die Reihenfolge der Konfigurationen wichtig ist.
 
-### Beispielpaket  {#sample-package}
+### Beispielpaket {#sample-package}
 
-Das Ergebnis dieses Tutorials finden Sie im Paket [Anpassen der Websites-Administrationskonsole](https://localhost:4502/crx/packageshare/index.html/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/helper/customizing-siteadmin) in Package Share.
+Das Ergebnis dieses Tutorials finden Sie im Abschnitt [Anpassen der Websites-Administrationskonsole](https://localhost:4502/crx/packageshare/index.html/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/helper/customizing-siteadmin) Paket auf Package Share.

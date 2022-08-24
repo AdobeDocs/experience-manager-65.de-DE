@@ -1,8 +1,8 @@
 ---
 title: Serverseitige Anpassung
-seo-title: Serverseitige Anpassung
+seo-title: Server-side Customization
 description: Serverseitige Anpassung in AEM Communities
-seo-description: Serverseitige Anpassung in AEM Communities
+seo-description: Customizing server-side in AEM Communities
 uuid: 5e9bc6bf-69dc-414c-a4bd-74a104d7bd8f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,7 +12,7 @@ discoiquuid: df5416ec-5c63-481b-99ed-9e5a91df2432
 exl-id: 190735bc-1909-4b92-ba4f-a221c0cd5be7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '889'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,9 @@ ht-degree: 0%
 
 SocialComponents sind POJOs, die eine Ressource für eine AEM Communities-Funktion darstellen. Idealerweise stellt jede SocialComponent einen bestimmten resourceType mit offen gelegten GETters dar, die dem Client Daten bereitstellen, damit die Ressource korrekt dargestellt wird. Alle Geschäftslogik und Ansichtslogik sind in der SocialComponent eingeschlossen, einschließlich der Sitzungsinformationen des Site-Besuchers, sofern erforderlich.
 
-Die Schnittstelle definiert einen grundlegenden Satz von GETters, die zur Darstellung einer Ressource erforderlich sind. Wichtig ist, dass die Schnittstelle die Methoden Map&lt;String, Object> getAsMap() und String toJSONString() vorschreibt, die zum Rendern von Handlebars-Vorlagen und zum Bereitstellen von GET JSON-Endpunkten für Ressourcen erforderlich sind.
+Die Schnittstelle definiert einen grundlegenden Satz von GETters, die zur Darstellung einer Ressource erforderlich sind. Wichtig ist, dass die Oberfläche Map festlegt&lt;string object=&quot;&quot;> getAsMap() - und String toJSONString() -Methoden, die erforderlich sind, um Handlebars-Vorlagen zu rendern und GET JSON-Endpunkte für Ressourcen verfügbar zu machen.
 
-Alle SocialComponent-Klassen müssen die Schnittstelle `com.adobe.cq.social.scf.SocialComponent` implementieren
+Alle SocialComponent-Klassen müssen die Schnittstelle implementieren `com.adobe.cq.social.scf.SocialComponent`
 
 ### SocialCollectionComponent-Schnittstelle {#socialcollectioncomponent-interface}
 
@@ -51,7 +51,7 @@ Eine SocialComponentFactory ist für das Erstellen einer Instanz der ausgewählt
 
 Eine SocialComponentFactory ist ein OSGi-Dienst und hat Zugriff auf andere OSGi-Dienste, die über einen Konstruktor an die SocialComponent übergeben werden können.
 
-Alle SocialComponentFactory-Klassen müssen die Schnittstelle `com.adobe.cq.social.scf.SocialComponentFactory` implementieren
+Alle SocialComponentFactory-Klassen müssen die Schnittstelle implementieren `com.adobe.cq.social.scf.SocialComponentFactory`
 
 Eine Implementierung der Methode SocialComponentFactory.getPriority() sollte den höchsten Wert zurückgeben, damit die Factory für den angegebenen resourceType verwendet wird, wie von getResourceType() zurückgegeben.
 
@@ -61,33 +61,33 @@ Der SocialComponentFactoryManager (manager) verwaltet alle im Framework registri
 
 Ein SocialComponentFactoryManager ist ein OSGi-Dienst und hat Zugriff auf andere OSGi-Dienste, die über einen Konstruktor an die SocialComponent übergeben werden können.
 
-Ein Handle für den OSGi-Dienst wird durch Aufrufen von `com.adobe.cq.social.scf.SocialComponentFactoryManager` abgerufen
+Ein Handle für den OSGi-Dienst wird durch Aufrufen von abgerufen `com.adobe.cq.social.scf.SocialComponentFactoryManager`
 
-### HTTP-API - POST Requests {#http-api-post-requests}
+### HTTP-API - POST-Anfragen {#http-api-post-requests}
 
 #### PostOperation-Klasse {#postoperation-class}
 
-Die HTTP-API-POST-Endpunkte sind PostOperation-Klassen, die durch Implementierung der `SlingPostOperation`-Schnittstelle (package `org.apache.sling.servlets.post`) definiert werden.
+Die Endpunkte der HTTP-API-POST sind PostOperation-Klassen, die durch Implementierung der `SlingPostOperation` Schnittstelle (package) `org.apache.sling.servlets.post`).
 
-Die `PostOperation` -Endpunkt-Implementierung setzt `sling.post.operation` auf einen Wert, auf den der Vorgang reagieren soll. Alle POST-Anfragen mit einem:operation -Parameter, der auf diesen Wert gesetzt ist, werden dieser Implementierungsklasse zugewiesen.
+Die `PostOperation` Endpunkt-Implementierungssätze `sling.post.operation` auf einen Wert, auf den der Vorgang reagieren soll. Alle POST-Anfragen mit einem:operation -Parameter, der auf diesen Wert gesetzt ist, werden dieser Implementierungsklasse zugewiesen.
 
-`PostOperation` ruft die `SocialOperation` auf, die die für den Vorgang erforderlichen Aktionen ausführt.
+Die `PostOperation` ruft die `SocialOperation` , der die für den Vorgang erforderlichen Aktionen durchführt.
 
-`PostOperation` empfängt das Ergebnis von `SocialOperation` und gibt die entsprechende Antwort an den Client zurück.
+Die `PostOperation` erhält das Ergebnis von `SocialOperation` und gibt die entsprechende Antwort an den Client zurück.
 
 #### SocialOperation-Klasse {#socialoperation-class}
 
-Jeder `SocialOperation`-Endpunkt erweitert die Klasse AbstractSocialOperation und überschreibt die Methode `performOperation()`. Diese Methode führt alle Aktionen aus, die zum Abschließen des Vorgangs und zum Zurückgeben eines `SocialOperationResult` oder zum Ausgeben eines `OperationException`-Werts erforderlich sind. In diesem Fall wird anstelle des normalen JSON-Antwort- oder Erfolgs-HTTP-Status-Codes ein HTTP-Fehlerstatus mit einer Meldung zurückgegeben, sofern verfügbar.
+Jeder `SocialOperation` endpoint erweitert die Klasse AbstractSocialOperation und überschreibt die Methode `performOperation()`. Diese Methode führt alle erforderlichen Aktionen aus, um den Vorgang abzuschließen und eine `SocialOperationResult` oder andernfalls `OperationException`: In diesem Fall wird anstelle des normalen JSON-Antwort- oder Erfolgs-HTTP-Status-Codes ein HTTP-Fehlerstatus mit einer Nachricht zurückgegeben, sofern verfügbar.
 
-Die Erweiterung `AbstractSocialOperation` ermöglicht die Wiederverwendung von `SocialComponents` zum Senden von JSON-Antworten.
+Erweitern `AbstractSocialOperation` ermöglicht die Wiederverwendung von `SocialComponents` , um JSON-Antworten zu senden.
 
-#### SocialOperationResult Class {#socialoperationresult-class}
+#### SocialOperationResult-Klasse {#socialoperationresult-class}
 
-Die `SocialOperationResult`-Klasse wird als Ergebnis von `SocialOperation` zurückgegeben und besteht aus einer `SocialComponent`-, HTTP-Status-Code- und HTTP-Statusmeldung.
+Die `SocialOperationResult` -Klasse wird als Ergebnis der `SocialOperation` und besteht aus einer `SocialComponent`, HTTP-Statuscode und HTTP-Statusmeldung.
 
-`SocialComponent` stellt die Ressource dar, die vom Vorgang betroffen war.
+Die `SocialComponent` stellt die Ressource dar, die vom Vorgang betroffen war.
 
-Bei einem Vorgang vom Typ Erstellen steht das im `SocialOperationResult` enthaltene `SocialComponent` für die soeben erstellte Ressource und bei einem Vorgang vom Typ Aktualisieren für die Ressource, die durch den Vorgang verändert wurde. Für einen Löschvorgang wird kein `SocialComponent` zurückgegeben.
+Bei einem Erstellen -Vorgang wird die `SocialComponent` im `SocialOperationResult` die soeben erstellte Ressource darstellt und für einen Aktualisierungsvorgang die Ressource darstellt, die durch den Vorgang verändert wurde. Nein `SocialComponent` wird für einen Löschvorgang zurückgegeben.
 
 Folgende Erfolgs-HTTP-Status-Codes werden verwendet:
 
@@ -97,13 +97,13 @@ Folgende Erfolgs-HTTP-Status-Codes werden verwendet:
 
 #### OperationException-Klasse {#operationexception-class}
 
-Bei Ausführung eines Vorgangs kann ein `OperationExcepton` -Wert ausgegeben werden, wenn die Anfrage ungültig ist oder ein anderer Fehler auftritt, z. B. interne Fehler, ungültige Parameterwerte, falsche Berechtigungen usw. Ein `OperationException` besteht aus einem HTTP-Statuscode und einer Fehlermeldung, die als Antwort auf `PostOperatoin` an den Client zurückgegeben werden.
+Ein `OperationExcepton` kann bei der Ausführung eines Vorgangs ausgelöst werden, wenn die Anfrage ungültig ist oder ein anderer Fehler auftritt, z. B. interne Fehler, ungültige Parameterwerte, falsche Berechtigungen usw. Ein `OperationException` besteht aus einem HTTP-Status-Code und einer Fehlermeldung, die an den Client als Antwort auf die `PostOperatoin`.
 
 #### OperationService-Klasse {#operationservice-class}
 
-Das Social-Komponenten-Framework empfiehlt, dass die für die Ausführung des Vorgangs verantwortliche Geschäftslogik nicht innerhalb der `SocialOperation`-Klasse implementiert, sondern stattdessen an einen OSGi-Dienst delegiert wird. Durch die Verwendung eines OSGi-Diensts für Geschäftslogik kann ein `SocialComponent` -Endpunkt, auf den von einem `SocialOperation` -Endpunkt reagiert wird, in anderen Code integriert werden und unterschiedliche Geschäftslogik angewendet werden.
+Das Social-Komponenten-Framework empfiehlt, dass die Geschäftslogik, die für die Durchführung des Vorgangs verantwortlich ist, nicht im `SocialOperation` -Klasse, sondern stattdessen an einen OSGi-Dienst delegiert. Wenn Sie einen OSGi-Dienst für Geschäftslogik verwenden, wird eine `SocialComponent`, auf die sich ein `SocialOperation` -Endpunkt, der in anderen Code integriert werden soll und unterschiedliche Geschäftslogik angewendet wird.
 
-Alle `OperationService`-Klassen erweitern `AbstractOperationService`, wodurch zusätzliche Erweiterungen möglich sind, die in den ausgeführten Vorgang eingebunden werden können. Jeder Vorgang im Dienst wird durch eine `SocialOperation`-Klasse dargestellt. Die Klasse `OperationExtensions` kann während der Ausführung des Vorgangs durch Aufruf der Methoden aufgerufen werden
+Alle `OperationService` Klassen erweitern `AbstractOperationService`, wodurch zusätzliche Erweiterungen möglich sind, die mit dem ausgeführten Vorgang verbunden werden können. Jeder Vorgang im Dienst wird durch eine `SocialOperation` -Klasse. Die `OperationExtensions` -Klasse kann während der Vorgangsausführung durch Aufruf der -Methoden aufgerufen werden
 
 * `performBeforeActions()`
 
@@ -118,13 +118,13 @@ Alle `OperationService`-Klassen erweitern `AbstractOperationService`, wodurch zu
 
 ## Beispielcode {#sample-code}
 
-Beispielcode ist im Repository [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) verfügbar. Suchen Sie nach Projekten mit dem Präfix `aem-communities` oder `aem-scf`.
+Beispielcode ist im Abschnitt [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) Repository. Suchen Sie nach Projekten mit dem Präfix `aem-communities` oder `aem-scf`.
 
 ## Best Practices {#best-practices}
 
-Im Abschnitt [Coding Guidelines](code-guide.md) finden Sie verschiedene Codierungsrichtlinien und Best Practices für AEM Communities-Entwickler.
+Anzeigen der [Kodierungsrichtlinien](code-guide.md) für verschiedene Codierungsrichtlinien und Best Practices für AEM Communities-Entwickler.
 
-Weitere Informationen zum Zugriff auf benutzergenerierte Inhalte finden Sie unter [Storage Resource Provider (SRP) for UGC](srp.md) .
+Siehe auch [Storage Resource Provider (SRP) für UGC](srp.md) , um mehr über den Zugriff auf benutzergenerierte Inhalte zu erfahren.
 
 | **[⇐ Funktionsgrundlagen](essentials.md)** | **[Client-seitige Anpassung imetall](client-customize.md)** |
 |---|---|

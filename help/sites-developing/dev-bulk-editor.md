@@ -1,8 +1,8 @@
 ---
 title: Entwickeln des Bulk Editors
-seo-title: Entwickeln des Bulk Editors
+seo-title: Developing the Bulk Editor
 description: Tagging ermöglicht die Kategorisierung und Organisation von Inhalten
-seo-description: Tagging ermöglicht die Kategorisierung und Organisation von Inhalten.
+seo-description: Tagging allows content to be categorized and organized
 uuid: 3cd04c52-5bdb-47f6-9fa3-d7a4937e8e20
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: e9a1ff95-e88e-41f0-9731-9a59159b4653
 exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1837'
 ht-degree: 65%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 65%
 
 In diesem Abschnitt wird erläutert, wie Sie das Bulk Editor-Tool entwickeln und die Produktlisten-Komponente erweitern, die auf dem Bulk Editor basiert.
 
-## Abfrageparameter für den Bulk Editor  {#bulk-editor-query-parameters}
+## Abfrageparameter für den Bulk Editor {#bulk-editor-query-parameters}
 
 Wenn Sie den Bulk Editor verwenden, können Sie einige Abfrageparameter zur URL hinzufügen, um den Bulk Editor mit einer bestimmten Konfiguration aufzurufen. Wenn Sie den Bulk Editor immer mit einer bestimmten Konfiguration nutzen möchten, beispielsweise in der Produktlisten-Komponente, müssen Sie die Datei bulkeditor.jsp (zu finden unter /libs/wcm/core/components/bulkeditor) ändern oder eine Komponente mit der spezifischen Konfiguration erstellen. Änderungen, die über Abfrageparameter erfolgen, sind nicht dauerhaft.
 
@@ -50,22 +50,22 @@ Nachstehend finden Sie eine Liste der Abfrageparameter für den Bulk Editor:
    <td> Beschreibung <br /> </td>
   </tr>
   <tr>
-   <td> rootPath / rp<br /> </td>
+   <td> rootPath/rp<br /> </td>
    <td> Zeichenfolge </td>
    <td> Suchstammpfad</td>
   </tr>
   <tr>
-   <td> queryParams / qp<br /> </td>
+   <td> queryParams/qp<br /> </td>
    <td> Zeichenfolge</td>
    <td> Suchabfrage</td>
   </tr>
   <tr>
-   <td> contentMode / cm<br /> </td>
+   <td> contentMode/cm<br /> </td>
    <td> Boolesch</td>
-   <td> Wenn "true", wird der Inhaltsmodus aktiviert<br /> </td>
+   <td> Wenn "true", ist der Inhaltsmodus aktiviert.<br /> </td>
   </tr>
   <tr>
-   <td> colsValue / cv<br /> </td>
+   <td> colsValue/cv<br /> </td>
    <td> Zeichenfolge[]</td>
    <td> durchsuchte Eigenschaften (angekreuzte Werte aus colsSelection werden als Kontrollkästchen angezeigt)</td>
   </tr>
@@ -80,14 +80,14 @@ Nachstehend finden Sie eine Liste der Abfrageparameter für den Bulk Editor:
    <td> Wenn "true", wird die Abfrage beim Laden der Seite ausgeführt<br /> </td>
   </tr>
   <tr>
-   <td> colsSelection / cs<br /> </td>
+   <td> colsSelection/cs<br /> </td>
    <td> Zeichenfolge[]</td>
    <td> Auswahl durchsuchter Eigenschaften (angezeigt als Kontrollkästchen)</td>
   </tr>
   <tr>
-   <td> showGridOnly / sgo<br /> </td>
+   <td> showGridOnly/sgo<br /> </td>
    <td> Boolesch</td>
-   <td> wenn "true", zeigt nur das Raster und nicht das Suchfeld <br /> an </td>
+   <td> Wenn "true", wird nur das Raster und nicht das Suchfeld angezeigt <br /> </td>
   </tr>
   <tr>
    <td> searchPanelCollapsed/spc</td>
@@ -266,7 +266,7 @@ Hier sehen Sie eine XML-Darstellung der untergeordneten Knoten des Dialogfelds:
         </editor>
 ```
 
-### Konfigurationseigenschaften des Bulk Editors  {#bulk-editor-configuration-properties}
+### Konfigurationseigenschaften des Bulk Editors {#bulk-editor-configuration-properties}
 
 Jeder Teil des Bulk Editors kann konfiguriert werden. In der folgenden Tabelle sind alle Konfigurationseigenschaften für den Bulk Editor aufgeführt.
 
@@ -522,7 +522,7 @@ Mit forcedPosition, den Metadaten für die erzwungene Position, können Sie fest
 
 Im vorhergehenden Beispiel ist die Auswahlspalte die erste Spalte mit forcedPosition = &quot;0&quot;.
 
-### Abfrage-Servlet  {#query-servlet}
+### Abfrage-Servlet {#query-servlet}
 
 Standardmäßig befindet sich das Abfrage-Servlet unter `/libs/wcm/core/components/bulkeditor/json.java`. Sie können einen anderen Pfad konfigurieren, um die Daten abzurufen.
 
@@ -562,16 +562,16 @@ Beim Speichern-Servlet werden die Änderungen nicht direkt an jeden Knoten über
 
 Jede aktualisierte Eigenschaft wird im folgenden Format an das Servlet gesendet:
 
-* Parametername: &lt;jcr path>/&lt;property name>
+* Parametername: &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>
 
    Beispiel: /content/geometrixx/en/products/jcr:content/par/productlist/1258674859000/SellingSku
 
-* Wert: &lt;Wert>
+* Wert: &lt;value>
 
    Beispiel: 12123
 
 Das Servlet muss wissen, wo die Eigenschaft catalogCode gespeichert ist.
 
-Eine standardmäßige Save-Servlet-Implementierung ist unter /libs/wcm/bulkeditor/save/POST.jsp verfügbar und wird in der Produktlisten-Komponente verwendet. Es nimmt alle Parameter aus der Anfrage (mit dem Format &lt;jcr path>/&lt;property name> ) und schreibt Eigenschaften mithilfe der JCR-API auf Knoten. Außerdem erstellt das Servlet Knoten, wenn sie nicht vorhanden sind (in das Raster eingefügte Zeilen).
+Eine standardmäßige Save-Servlet-Implementierung ist unter /libs/wcm/bulkeditor/save/POST.jsp verfügbar und wird in der Produktlisten-Komponente verwendet. Es nimmt alle Parameter aus der Anfrage (mit einer &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;> -Format) und schreibt Eigenschaften mithilfe der JCR-API auf Knoten. Außerdem erstellt das Servlet Knoten, wenn sie nicht vorhanden sind (in das Raster eingefügte Zeilen).
 
-Der Standardcode sollte nicht so verwendet werden, wie es ist, da er das, was der Server nativ tut (eine POST auf &lt;jcr path>/&lt;property name>), neu implementiert und daher nur ein guter Ausgangspunkt für die Erstellung eines Save-Servlets ist, das ein Eigenschaftsvererbungsmodell verwaltet.
+Der Standardcode sollte nicht so verwendet werden, wie er ist, da er die nativen Aufgaben des Servers (eine POST auf &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>) und ist daher nur ein guter Ausgangspunkt zum Erstellen eines Servlets zum Speichern, das ein Eigenschaftsvererbungsmodell verwaltet.

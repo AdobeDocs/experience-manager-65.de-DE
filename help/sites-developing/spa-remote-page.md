@@ -5,7 +5,7 @@ exl-id: 3f015997-0d42-4241-a890-0f16a19c5e34
 source-git-commit: a92358d187aa78e05dd9b5a7bd4ae14bf0972f62
 workflow-type: tm+mt
 source-wordcount: '354'
-ht-degree: 73%
+ht-degree: 85%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 73%
 
 Wenn Sie entscheiden, welchen Grad der Integration Sie zwischen Ihrer externen SPA und AEM haben möchten, wird oft klar, dass Sie die SPA in AEM anzeigen und bearbeiten können müssen. Die RemotePage-Komponente ist eine benutzerdefinierte Seitenkomponente genau für diesen Zweck.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Die RemotePage-Komponente ruft alle erforderlichen Assets aus dem generierten `asset-manifest.json` des Programms ab und verwendet diese zum Rendern der SPA in AEM.
 
@@ -35,7 +35,7 @@ Weitere Informationen zu bearbeitbaren externen SPAs in AEM finden Sie im Artike
 
    ![Einstiegspunkte](assets/asset-manifest-entrypoints.png)
 
-* Die Anwendung muss in der Lage sein, unter dem Body-Element `<div id="root"></div>` zu initialisieren. Wenn für die Instanziierung der App ein anderes Markup erwartet wird, muss dies in den HTL-Skripten der Proxy-Komponente mit dem Wert `sling:resourceSuperType="spa-project-core/components/remotepage` entsprechend angepasst werden.
+* Die Anwendung muss in der Lage sein, in einer `<div id="root"></div>` unter dem Textelement. Wenn für die Instanziierung der App ein anderes Markup erwartet wird, muss dies in den HTL-Skripten der Proxy-Komponente mit dem Wert `sling:resourceSuperType="spa-project-core/components/remotepage` entsprechend angepasst werden.
 
 ## Beschränkungen {#limitations}
 
