@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: 44f866e1435bd98f7dbe3f4ba8500830075db001
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '7149'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -590,7 +590,7 @@ Der Pfad zum Ergebnisordner kann beispielsweise „C:\Adobe\Adobe LiveCycle ES4\
 * %F = Quelldateiname
 * %E = Quelldateinamenerweiterung
 
-Wenn das Muster der Zuordnung von Ausgabeparametern mit „File.separator“ (dem Pfadtrennzeichen) endet, wird ein Ordner erstellt und der Inhalt in diesen Ordner kopiert. Endet das Muster nicht mit „File.separator“, wird der Inhalt (Ergebnisdatei oder -ordner) mit diesem Namen erstellt.
+Wenn das Zuordnungsmuster der Ausgabeparameter mit &quot;File.separator&quot;(dem Pfadtrennzeichen) endet, wird ein Ordner erstellt und der Inhalt in diesen Ordner kopiert. Wenn das Muster nicht mit &quot;File.separator&quot;endet, wird der Inhalt (Ergebnisdatei oder -ordner) mit diesem Namen erstellt.
 
 ## Verwendung von PDF Generator für einen überwachten Ordner {#using-pdf-generator-with-a-watched-folder}
 

@@ -10,8 +10,8 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 exl-id: 8eb4f691-a66b-498e-8114-307221f63718
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 100%
 
@@ -77,7 +77,7 @@ In diesem Verfahren gilt:
 
 1. Importieren Sie das Zertifikat durch Eingabe des folgenden Befehls:
 
-   `keytool -import -alias “AEMForms Cert” -file`*AEMForms_cert* `.cer -keystore`*JAVA_HOME* `\jre\lib\security\cacerts`
+   `keytool -import -alias "AEMForms Cert" -file`*AEMForms_cert* `.cer -keystore`*JAVA_HOME* `\jre\lib\security\cacerts`
 
 1. Geben Sie `changeit` als Passwort ein. Dieses Kennwort ist das Standardkennwort für Java-Installationen. Eventuell wurde es von Ihrem Systemadministrator geändert.
 1. Wenn Sie dazu aufgefordert werden, `Trust this certificate? [no]` einzugeben, geben Sie Folgendes ein: `yes`. Daraufhin wird die Bestätigung „Certificate was added to keystore“ angezeigt.
@@ -90,7 +90,7 @@ In diesem Verfahren gilt:
 
    * Servercluster – `[appserver root]`/domain/configuration/domain_&lt;dbname>.xml
 
-1. &#x200B;
+1. 
    * **Für Einzelserver** Fügen Sie in der Datei „lc_&lt;dbaname/tunkey>.xml“ Folgendes nach dem Abschnitt „&lt;security-realms>“ ein:
 
    ```xml
@@ -136,7 +136,7 @@ In diesem Verfahren gilt:
    ```
 
 1. Ändern Sie die Werte für die Attribute `keystoreFile` und `keystorePass` in das Keystore-Kennwort, das Sie beim Erstellen des Keystore festgelegt haben.
-1. Starten Sie den Anwendungsserver neu.
+1. Starten Sie den Anwendungsserver neu:
 
    * Für Turnkey-Installationen:
 

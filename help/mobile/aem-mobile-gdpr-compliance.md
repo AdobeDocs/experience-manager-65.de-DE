@@ -1,15 +1,15 @@
 ---
 title: AEM Mobile – Einhaltung der Datenschutz-Grundverordnung
-seo-title: AEM Mobile – Einhaltung der Datenschutz-Grundverordnung
+seo-title: AEM Mobile - GDPR Readiness
 description: '"AEM Mobile – Einhaltung der Datenschutz-Grundverordnung"'
-seo-description: 'null'
+seo-description: null
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
 exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '692'
 ht-degree: 89%
 
 ---
@@ -32,7 +32,7 @@ Das Produkt von Adobe für digitales Publishing (Vorgänger von AEM Mobile) unte
 
 Um sicherzustellen, dass Sie AEM Mobile nicht mit dem älteren Produkt Digital Publishing Suite verwechseln, können Sie sich hier bei Digital Publishing Suite anmelden:
 
-[https://digitalpublishing.acrobat.com/de/welcome.html](https://digitalpublishing.acrobat.com/de/welcome.html)
+[https://digitalpublishing.acrobat.com/welcome.html](https://digitalpublishing.acrobat.com/welcome.html)
 
 ### Initiieren von DSGVO-Anfragen {#initiating-a-gdpr-request}
 
@@ -70,7 +70,7 @@ Adobe verfügt nur über sehr wenige Informationen, die direkt mit einem bestimm
 
 **Welche personenbezogenen Daten werden mit Analytics verfolgt?**
 
-Kein. Es werden Daten zurückverfolgt. Dabei handelt es sich jedoch um Daten auf App-Ebene (und nicht um personenbezogene Daten). Hierzu gehören Ereignisse wie Starts, Abstürze, Schließvorgänge, Aktivitäten, Käufe oder Folio-Überlagerungen. Geografische Orte, Namen, Geräte-IDs oder IP-Adressen werden nicht zurückverfolgt.
+Ohne. Es werden Daten zurückverfolgt. Dabei handelt es sich jedoch um Daten auf App-Ebene (und nicht um personenbezogene Daten). Hierzu gehören Ereignisse wie Starts, Abstürze, Schließvorgänge, Aktivitäten, Käufe oder Folio-Überlagerungen. Geografische Orte, Namen, Geräte-IDs oder IP-Adressen werden nicht zurückverfolgt.
 
 **Der Endbenutzer hat Informationen bereitgestellt, es wurde jedoch nichts gefunden. Warum nicht?**
 
@@ -85,10 +85,10 @@ Hier finden Sie ein Beispiel der Eingaben und der sich daraus ergebenden Ausgabe
 #### Eingaben: {#inputs}
 
 ```
-dpsc-contractId = “12345-1234-12416234” 
-directEntitlementId = “1234-1234-1234” 
-windowsAppStoreId = “testWinAppStoreId” 
-email = “test@what.com”
+dpsc-contractId = "12345-1234-12416234" 
+directEntitlementId = "1234-1234-1234" 
+windowsAppStoreId = "testWinAppStoreId" 
+email = "test@what.com"
 ```
 
 #### Ausgaben: {#outputs}

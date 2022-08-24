@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a3cbffb7-c1d1-47c2-bcfd-70f1e2d81ac9
 exl-id: e17fc114-eba5-4e1b-8e70-ad6af7008018
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: tm+mt
 source-wordcount: '971'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -37,9 +37,9 @@ Angenommen, Sie sind in einem Browser bei Administration Console angemeldet. Sie
 * Beliebige Desktop-Clients, die eine HTTP-Anforderung an auf einem SOAP- oder REST-Endpunkt von AEM Forms durchführen
 * Wenn ein neues Browserfenster geöffnet wird und die URL für die Anmeldeseite einer AEM Forms-Webanwendung eingegeben wird
 
-Lassen Sie eine Null-Referenz auf SOAP- und REST-Endpunkten zu. Lassen Sie außerdem eine Null-Referenz auf allen URI-Anmeldeseiten, wie „/adminui“ und „/contentspace“, und den entsprechenden zugeordneten Ressourcen zu. Beispielsweise ist das zugeordnete Servlet für „/contentspace“ „/contentspace/faces/jsp/login.jsp“, was eine Null-Referenzausnahme darstellt. Diese Ausnahme ist nur erforderlich, wenn Sie GET-Filterung für die Webanwendung aktivieren. Die Anwendungen können angeben, ob Null-Referenzen zulässig sind. Siehe „Schutz vor Cross-Site Request Forgery-Angriffen“ in [Härtung und Sicherheit für AEM Forms](https://help.adobe.com/de_DE/livecycle/11.0/HardeningSecurity/index.html).
+Lassen Sie eine Null-Referenz auf SOAP- und REST-Endpunkten zu. Lassen Sie außerdem eine Null-Referenz auf allen URI-Anmeldeseiten, wie „/adminui“ und „/contentspace“, und den entsprechenden zugeordneten Ressourcen zu. Beispielsweise ist das zugeordnete Servlet für „/contentspace“ „/contentspace/faces/jsp/login.jsp“, was eine Null-Referenzausnahme darstellt. Diese Ausnahme ist nur erforderlich, wenn Sie GET-Filterung für die Webanwendung aktivieren. Die Anwendungen können angeben, ob Null-Referenzen zulässig sind. Siehe &quot;Schutz vor Cross-Site Request Forgery-Angriffen&quot; in [Härtung und Sicherheit für AEM Formulare](https://help.adobe.com/de_DE/livecycle/11.0/HardeningSecurity/index.html).
 
-**Erlaubte Referer-Ausnahme:** Erlaubte Referer-Ausnahme ist eine Unterliste der Liste der erlaubten Referer, von denen Anfragen blockiert werden. Zulässige Referenzauausnahmen beziehen sich insbesondere auf eine Webanwendung. Wenn eine Teilmenge der erlaubten Referer eine bestimmte Webanwendung nicht aufrufen darf, können Sie die Referer über Erlaubte Referer-Ausnahmen auf eine Blockierungsliste setzen. Zulässige Referenzausnahmen werden in der Datei „web.xml“ für Ihre Anwendung angegeben. (Siehe den Abschnitt zum Schutz vor Cross-Site Request Forgery-Angriffen in Härtung und Sicherheit für AEM Forms on Hilfe und Tutorials.)
+**Erlaubte Referer-Ausnahme:** Erlaubte Referer-Ausnahme ist eine Unterliste der Liste der erlaubten Referer, von denen Anfragen blockiert werden. Zulässige Referenzauausnahmen beziehen sich insbesondere auf eine Webanwendung. Wenn eine Teilmenge der erlaubten Referer eine bestimmte Webanwendung nicht aufrufen darf, können Sie die Referer über Erlaubte Referer-Ausnahmen auf eine Blockierungsliste setzen. Zulässige Referenzausnahmen werden in der Datei „web.xml“ für Ihre Anwendung angegeben. (Siehe &quot;Schutz vor Cross-Site Request Forgery-Angriffen&quot;in Härtung und Sicherheit für AEM Formulare auf der Hilfe- und Tutorials-Seite.)
 
 ## Funktionsweise von zulässigen Referenzen {#how-allowed-referers-work}
 
@@ -48,7 +48,7 @@ AEM Forms bietet Referenzfilterung, die CSRF-Angriffe verhindern kann. Im Folgen
 1. Der Formularserver prüft die für den Aufruf verwendete HTTP-Methode:
 
    * Bei POST prüft der Formularserver den Referrer-Header.
-   * Bei GET umgeht der Formularserver die Referrer-Prüfung, es sei denn, CSRF_CHECK_GETS ist auf „true“ festgelegt. In diesem Fall wird der Referrer-Header überprüft. CSRF_CHECK_GETS wird in der Datei „web.xml“ für Ihre Anwendung angegeben. (Siehe den Abschnitt zum Schutz vor Cross-Site Request Forgery-Angriffen[ in der Unix-Systembibliothek](https://help.adobe.com/de_DE/livecycle/11.0/HardeningSecurity/index.html).) und Sicherheit
+   * Bei GET umgeht der Formularserver die Referrer-Prüfung, es sei denn, CSRF_CHECK_GETS ist auf „true“ festgelegt. In diesem Fall wird der Referrer-Header überprüft. CSRF_CHECK_GETS ist in der Datei web.xml für Ihre Anwendung festgelegt. (Siehe &quot;Schutz vor Cross-Site Request Forgery-Angriffen&quot; in [Handbuch zur Härtung und Sicherheit](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).
 
 1. Der Formular-Server prüft, ob die angeforderten URI auf die Zulassungsliste gesetzt ist:
 

@@ -8,10 +8,10 @@ topic-tags: publish
 discoiquuid: d48b5137-c866-43cd-925b-7a6a8eac8c0b
 docset: aem65
 exl-id: 18cfc4be-676d-4f08-afc1-4f11bb48dab6
-source-git-commit: 9cf4a68a2b3312fe53282e2fd4ec81988f2fd453
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '897'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ Sie können Metadaten in einer E-Mail-Vorlage verwenden, um Informationen in ein
 
 ![Standard-E-Mail-Vorlage](assets/default_email_template_metadata_new.png)
 
-Metadaten werden in Schlüssel-Wert-Paaren gespeichert. Sie können den Schlüssel in der E-Mail-Vorlage angeben und er wird zur Laufzeit durch einen Wert ersetzt (wenn eine E-Mail-Benachrichtigung erstellt wird). Im folgenden Codebeispiel ist beispielsweise „$ {workitem_title}“ ein Schlüssel. Er wird zur Laufzeit durch den Wert „Loan-Request“ ersetzt.
+Metadaten werden in Schlüssel-Wert-Paaren gespeichert. Sie können den Schlüssel in der E-Mail-Vorlage angeben und er wird zur Laufzeit durch einen Wert ersetzt (wenn eine E-Mail-Benachrichtigung erstellt wird). Im folgenden Codebeispiel ist beispielsweise „$ {workitem_title}“ ein Schlüssel. Sie wird zur Laufzeit durch den Wert &quot;Loan-Request&quot;ersetzt.
 
 ```html
 subject=Task Assigned - ${workitem_title}

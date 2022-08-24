@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 761e7909-43ba-4642-bcfc-8d76f139b9a3
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '7163'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -271,7 +271,7 @@ Der Pfad zum Ergebnisordner kann beispielsweise `C:\Adobe\Adobe_Experience_Manag
 * %F = Quelldateiname
 * %E = Quelldateinamenerweiterung
 
-Wenn das Muster der Zuordnung von Ausgabeparametern mit „File.separator“ (dem Pfadtrennzeichen) endet, wird ein Ordner erstellt und der Inhalt in diesen Ordner kopiert. Endet das Muster nicht mit „File.separator“, wird der Inhalt (Ergebnisdatei oder -ordner) mit diesem Namen erstellt. Weitere Informationen zu Zuordnungen von Ausgabeparametern finden Sie unter [Tipps und Tricks für überwachte Ordner](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
+Wenn das Zuordnungsmuster der Ausgabeparameter mit &quot;File.separator&quot;(dem Pfadtrennzeichen) endet, wird ein Ordner erstellt und der Inhalt in diesen Ordner kopiert. Wenn das Muster nicht mit &quot;File.separator&quot;endet, wird der Inhalt (Ergebnisdatei oder -ordner) mit diesem Namen erstellt. Weitere Informationen zu Zuordnungen von Ausgabeparametern finden Sie unter [Tipps und Tricks für überwachte Ordner](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
 
 ## Informationen zu Einschränkungen {#about-throttling}
 

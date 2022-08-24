@@ -3,10 +3,11 @@ title: Metadaten – Fragmenteigenschaften
 description: Erfahren Sie, wie Sie die Metadateneigenschaften für Inhaltsfragmente in AEM anzeigen und bearbeiten können, um Ihren Headless-Content anzupassen.
 feature: Content Fragments
 role: User
-source-git-commit: 251bf0ac672d516dd6b2018fc9cc804822f48e4c
+exl-id: 6316ef72-7647-4e85-b8cf-152557b26540
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '206'
-ht-degree: 67%
+ht-degree: 84%
 
 ---
 
@@ -28,12 +29,12 @@ Sie können die Metadaten (Eigenschaften) für das Inhaltsfragment anzeigen und 
 
 3. Auf der Registerkarte **Allgemein** können Sie die folgenden Optionen anzeigen oder bearbeiten:
 
-   * Miniaturansicht, für die Sie ein **Bild hochladen** können
+   * Miniatur, für die Sie ein **Bild hochladen** können
    * **Inhaltsfragmentmodell**, womit das zum Erstellen des aktuellen Fragments verwendete Modell angegeben wird
    * **Titel**
    * **Beschreibung**
    * **Tags**
-      * [](/help/sites-authoring/tags.md) Tags sind besonders leistungsstark bei der Organisation Ihrer Fragmente, da sie für die Inhaltsklassifizierung und Taxonomie verwendet werden können. Tags können zum Suchen von Inhalten (nach Tags) und zum Anwenden von Massenvorgängen verwendet werden.
+      * [Tags](/help/sites-authoring/tags.md) sind besonders leistungsstark bei der Organisation Ihrer Fragmente, da sie für die Inhaltsklassifizierung und -taxonomie verwendet werden können. Tags können zum Suchen von Inhalten (nach Tags) und zum Anwenden von Massenvorgängen verwendet werden.
 Beispielsweise können Sie relevante Fragmente als &quot;Weihnachtsstart&quot;taggen, um nur diese als Teilmenge durchsuchen zu können oder sie für einen anderen zukünftigen Launch in einen neuen Ordner zu kopieren.
    * Erstellt (nur Anzeige)
    ![Metadaten](assets/cfm-metadata-02.png)

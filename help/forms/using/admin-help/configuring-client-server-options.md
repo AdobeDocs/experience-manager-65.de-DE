@@ -11,10 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: ht
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: tm+mt
 source-wordcount: '10242'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -408,7 +408,7 @@ Zum Anzeigen der verfolgten Ereignisse können Sie den Filter „Dokumentereigni
 
 Diese Einstellungen steuern den Text in der Anmeldeaufforderung, die angezeigt wird, wenn sich ein Benutzer über eine Clientanwendung bei Document Security anmeldet.
 
-**Begrüßungstext:** Der Willkommenstext, zum Beispiel „Melden Sie sich mit Ihrem Benutzernamen und Kennwort an“. Der Begrüßungstext sollte Informationen dazu enthalten, wie die Anmeldung bei Document Security erfolgen soll und wie ein Administrator oder anderer Support-Mitarbeiter in Ihrem Unternehmen kontaktiert werden kann, falls Hilfe benötigt wird. Externe Benutzer müssen ggf. einen Administrator kontaktieren, wenn sie ihr Kennwort vergessen haben oder Hilfe bei der Registrierung oder Anmeldung benötigen. Die maximale Länge des Begrüßungstexts ist 512 Zeichen.
+**Willkommenstext:** Der Begrüßungstext, z. B. &quot;Melden Sie sich mit Ihrem Benutzernamen und Kennwort an&quot;. Der Begrüßungstext sollte Informationen dazu enthalten, wie die Anmeldung bei Document Security erfolgen soll und wie ein Administrator oder anderer Support-Mitarbeiter in Ihrem Unternehmen kontaktiert werden kann, falls Hilfe benötigt wird. Externe Benutzer müssen ggf. einen Administrator kontaktieren, wenn sie ihr Kennwort vergessen haben oder Hilfe bei der Registrierung oder Anmeldung benötigen. Die maximale Länge des Begrüßungstexts ist 512 Zeichen.
 
 **Benutzernamentext:** Die Textbeschriftung für das Feld Benutzername.
 
@@ -447,7 +447,7 @@ Sie können dynamische Wasserzeichen mit mehreren Wasserzeichenelementen erstell
 
 Wenn Sie ein textbasiertes Wasserzeichen auswählen, können Sie mehrere Elemente innerhalb des Wasserzeichens mit mehreren Texteinträgen angeben und die Position jedes Elements festlegen. Ordnen Sie diesen Elementen aussagekräftige Namen zu, z. B. Kopf- und Fußzeilen usw.
 
-Wenn Sie beispielsweise unterschiedlichen Text in Kopf- und Fußzeilen, an den Rändern und im gesamten Dokument als Wasserzeichen angeben möchten, erstellen Sie mehrere Wasserzeichenelemente und legen Sie ihre Position fest. Wenn Sie möchten, dass die ID des Benutzers und das aktuelle Datum des Zugriffs auf das Dokument in der Kopfzeile, der Richtlinienname am rechten Rand und der benutzerdefinierte Text VERTRAULICH diagonal über das gesamte Dokument angezeigt werden, definieren Sie separate Wasserzeichenelemente des Typs „Text“ und geben Sie jeweils die Formatierung und Position an. Wenn das Wasserzeichen auf ein Dokument angewendet wird, werden alle Elemente im Wasserzeichen gleichzeitig auf das Dokument angewendet, und zwar in der Reihenfolge, in der sie dem Wasserzeichen hinzugefügt werden.
+Wenn Sie beispielsweise unterschiedlichen Text in Kopf- und Fußzeilen, an den Rändern und im gesamten Dokument als Wasserzeichen angeben möchten, erstellen Sie mehrere Wasserzeichenelemente und legen Sie ihre Position fest. Wenn die Benutzer-ID des Benutzers und das aktuelle Datum des Zugriffs auf das Dokument in der Kopfzeile, der Richtlinienname am rechten Rand und ein benutzerdefinierter Text &quot;CONFIDENTIAL&quot;diagonal im Dokument angezeigt werden sollen, definieren Sie separate Wasserzeichenelemente mit Text als Typ und geben Sie die Formatierung und Positionierung an. Wenn das Wasserzeichen auf ein Dokument angewendet wird, werden alle Elemente im Wasserzeichen gleichzeitig auf das Dokument angewendet, und zwar in der Reihenfolge, in der sie dem Wasserzeichen hinzugefügt werden.
 
 In der Regel verwenden Sie PDF-basierte Wasserzeichen, damit grafische Inhalte wie Logos oder Sonderzeichen wie Copyright oder eingetragene Marke eingefügt werden können.
 
@@ -560,7 +560,7 @@ Document Security generiert automatisch eine Einladungs-E-Mail zur Registrierung
 
 Die Registrierungs-E-Mail enthält einen Hyperlink zu einer Registrierungsseite sowie Informationen zur Registrierung. Nachdem sich der eingeladene Benutzer registriert hat, sendet Document Security eine Aktivierungs-E-Mail mit einem Link zu einer Aktivierungsseite. Nach der Aktivierung bleibt das Konto gültig, bis es deaktiviert oder gelöscht wird.
 
-Durch Aktivieren von „Integrierte Registrierung“ geben Sie den SMTP-Server, die Details der Registrierungs-E-Mail, die Zugriffsmöglichkeiten und den Text der E-Mail-Nachricht zum Zurücksetzen des Kennworts nur einmal an. Stellen Sie vor der Aktivierung der Option „Integrierte Registrierung“ sicher, dass Sie in User Management eine lokale Domain erstellt und den entsprechenden Benutzern und Gruppen im Unternehmen die Rolle „Document Security – Benutzer einladen“ zugewiesen haben. (Siehe [Lokale Domain hinzufügen](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) und [Rollen erstellen und konfigurieren](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Wenn Sie „Integrierte Registrierung“ nicht verwenden, müssen Sie über ein eigenes mit dem AEM Forms-SDK erstelltes Benutzerregistrierungssystem verfügen. Weitere Informationen finden Sie in der LiveCycle-SDK-Hilfe unter „Entwickeln von SPIs für AEM Forms“ in [Programmieren mit AEM Forms. ](/help/forms/developing/introducing-java-api-soap-quick.md) Wenn Sie die Option „Integrierte Registrierung“ nicht verwenden, ist es ratsam, eine Meldung in der Aktivierungs-E-Mail sowie auf dem Clientanmeldebildschirm zu konfigurieren, um die Benutzer zu informieren, wie sie den Administrator für ein neues Kennwort oder andere Informationen kontaktieren können.
+Durch Aktivieren von „Integrierte Registrierung“ geben Sie den SMTP-Server, die Details der Registrierungs-E-Mail, die Zugriffsmöglichkeiten und den Text der E-Mail-Nachricht zum Zurücksetzen des Kennworts nur einmal an. Bevor Sie die integrierte Registrierung aktivieren, stellen Sie sicher, dass Sie in User Management eine lokale Domäne erstellt haben, dass Sie den entsprechenden Benutzern und Gruppen in Ihrer Organisation die Rolle &quot;Document Security - Benutzer einladen&quot;zugewiesen haben. (Siehe [Lokale Domain hinzufügen](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) und [Rollen erstellen und konfigurieren](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Wenn Sie „Integrierte Registrierung“ nicht verwenden, müssen Sie über ein eigenes mit dem AEM Forms-SDK erstelltes Benutzerregistrierungssystem verfügen. Weitere Informationen finden Sie in der Hilfe zum Entwickeln von SPIs für AEM Formulare in [Programmieren mit AEM Formularen](/help/forms/developing/introducing-java-api-soap-quick.md). Wenn Sie die Option „Integrierte Registrierung“ nicht verwenden, ist es ratsam, eine Meldung in der Aktivierungs-E-Mail sowie auf dem Clientanmeldebildschirm zu konfigurieren, um die Benutzer zu informieren, wie sie den Administrator für ein neues Kennwort oder andere Informationen kontaktieren können.
 
 **Registrierung für eingeladene Benutzer aktivieren und deaktivieren**
 
@@ -907,7 +907,7 @@ In diesem Beispiel wird „Meine Anwendung Version 3.0“ und „Meine andere An
 ```xml
  <node name="ClientVersionRules">
      <map>
-         <entry key="infoURL" value=”https://get.a.new/version.html”/>
+         <entry key="infoURL" value="https://get.a.new/version.html"/>
      </map>
      <node name="Denials">
          <map/>
@@ -932,7 +932,7 @@ In diesem Beispiel werden alle Anforderungen von einer Microsoft PowerPoint 2007
 ```xml
  <node name="ClientVersionRules">
      <map>
-         <entry key="infoURL" value=”https://get.a.new/version.html”/>
+         <entry key="infoURL" value="https://get.a.new/version.html"/>
      </map>
      <node name="Denials">
          <map/>

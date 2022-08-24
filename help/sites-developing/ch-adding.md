@@ -1,15 +1,15 @@
 ---
-title: 'Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher '
+title: Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher
 description: Fügen Sie Ihren Seiten ContextHub hinzu, um die ContextHub-Funktionen zu aktivieren und eine Verknüpfung mit den ContextHub-JavaScript-Bibliotheken herzustellen
 exl-id: ae745af9-b49f-46b9-ab48-2fd256e9a681
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '927'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
-# Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher   {#adding-contexthub-to-pages-and-accessing-stores}
+# Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher {#adding-contexthub-to-pages-and-accessing-stores}
 
 Fügen Sie Ihren Seiten ContextHub hinzu, um die ContextHub-Funktionen zu aktivieren und eine Verknüpfung mit den ContextHub-JavaScript-Bibliotheken herzustellen.
 
@@ -25,7 +25,7 @@ Schließen Sie die `contexthub`-Komponente in den Bereich `head` Ihrer Seite ein
 
 Beachten Sie, dass Sie auch konfigurieren müssen, ob die ContextHub-Symbolleiste im Vorschaumodus angezeigt werden soll. Siehe [Ein- und Ausblenden der ContextHub-Benutzeroberfläche](ch-configuring.md#showing-and-hiding-the-contexthub-ui).
 
-## Informationen zu ContextHub-Speichern   {#about-contexthub-stores}
+## Informationen zu ContextHub-Speichern {#about-contexthub-stores}
 
 Verwenden Sie ContextHub-Speicher, um Kontextdaten beizubehalten. ContextHub bietet folgende Arten von Speichern, die die Grundlage für alle Speichertypen bilden:
 
@@ -36,7 +36,7 @@ Verwenden Sie ContextHub-Speicher, um Kontextdaten beizubehalten. ContextHub bie
 
 Alle Speichertypen sind Erweiterungen der Klasse [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core). Weitere Informationen zur Erstellung eines neuen Speichertyps finden Sie unter [Erstellen benutzerdefinierter Speicher](ch-extend.md#creating-custom-store-candidates). Weitere Informationen zu Beispielspeichertypen finden Sie unter [Beispielkandidaten für ContextHub-Speicher](ch-samplestores.md).
 
-### Beibehaltungsmodi   {#persistence-modes}
+### Beibehaltungsmodi {#persistence-modes}
 
 ContextHub-Speicher verwenden einen der folgenden Beibehaltungsmodi:
 
@@ -107,7 +107,7 @@ Beachten Sie, dass benutzerdefinierte Speicherkandidaten weitere Funktionen defi
 
 >[!NOTE]
 >
->Standardmäßig sind ContextHub die derzeit bei Veröffentlichungsservern angemeldeten Benutzer nicht bekannt und solche Benutzer werden von ContextHub als anonyme Benutzer betrachtet.
+>ContextHub kennt nicht standardmäßig die aktuell angemeldeten Benutzer, die auf Veröffentlichungs-Servern verwendet werden, und diese Benutzer werden von ContextHub als &quot;Anonym&quot;betrachtet.
 >
 >Sie können ContextHub über angemeldete Benutzer informieren, indem Sie den Profil-Store laden. Den Beispiel-Code finden Sie [auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 

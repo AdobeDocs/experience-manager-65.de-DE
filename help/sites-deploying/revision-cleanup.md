@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '5904'
 ht-degree: 66%
@@ -387,7 +387,7 @@ In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständi
   </tr>
   <tr>
    <td><strong>Wo finden wir die Statistiken der letzten Online-Revisionsbereinigungen?</strong></td>
-   <td><p>Status, Fortschritt und Statistiken werden über JMX (<code>SegmentRevisionGarbageCollection</code> MBean). Weitere Informationen zum <code>SegmentRevisionGarbageCollection</code> MBean, lesen Sie die <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">nachstehender Absatz</a>.</p> <p>Der Fortschritt kann über die <code>EstimatedRevisionGCCompletion</code> -Attribut <code>SegmentRevisionGarbageCollection MBean.</code></p> <p>Sie können eine Referenz des MBean mit der <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection”</code>.</p> <p>Beachten Sie, dass Statistiken nur ab dem letzten Systemstart verfügbar sind. Sie können externe Überwachungstools verwenden, um Daten über die AEM-Laufzeit hinaus aufzubewahren. Siehe <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">die AEM-Dokumentation für das Anhängen von Konsistenzprüfungen an Nagios als Beispiel für ein externes Überwachungstool</a>.</p> </td>
+   <td><p>Status, Fortschritt und Statistiken werden über JMX (<code>SegmentRevisionGarbageCollection</code> MBean). Weitere Informationen zum <code>SegmentRevisionGarbageCollection</code> MBean, lesen Sie die <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">nachstehender Absatz</a>.</p> <p>Der Fortschritt kann über die <code>EstimatedRevisionGCCompletion</code> -Attribut <code>SegmentRevisionGarbageCollection MBean.</code></p> <p>Sie können eine Referenz des MBean mit der <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code>.</p> <p>Beachten Sie, dass Statistiken nur ab dem letzten Systemstart verfügbar sind. Sie können externe Überwachungstools verwenden, um Daten über die AEM-Laufzeit hinaus aufzubewahren. Siehe <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">die AEM-Dokumentation für das Anhängen von Konsistenzprüfungen an Nagios als Beispiel für ein externes Überwachungstool</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -400,7 +400,7 @@ In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständi
       </ul> </li>
      <li>Durch die Revisionsbereinigung gesammelter Speicherplatz
       <ul>
-       <li>Der Speicherplatz wird erst nach Abschluss der Bereinigungsphase zurückgewonnen. Der Abschluss der Bereinigungsphase wird durch die Protokollmeldung "T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". Post cleanup size is {} ({} bytes) and space reclaimed {} ({} bytes). Compaction map weight/depth is {}/{} ({} bytes/{}).&amp;quot;.</li>
+       <li>Der Speicherplatz wird erst nach Abschluss der Bereinigungsphase zurückgewonnen. Der Abschluss der Bereinigungsphase wird durch die Protokollmeldung "T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". Post cleanup size is {} ({} bytes) and space reclaimed {} ({} bytes). Die Gewichtung/Tiefe der Komprimierungszuordnung ist {}/{} ({} bytes/{}).".</li>
       </ul> </li>
      <li>Während der Revisionsbereinigung ist ein Problem aufgetreten
       <ul>
@@ -435,7 +435,7 @@ In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständi
   </tr>
   <tr>
    <td><p><strong>Wie überwacht man die automatische Bereinigung auf einer Standby-Instanz?</strong></p> </td>
-   <td><p>Status, Fortschritt und Statistiken werden über JMX mithilfe der Variablen <code>SegmentRevisionGarbageCollection</code> MBean. Siehe auch: <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">Oak-Dokumentation</a>. </p> <p>Sie können eine Referenz des MBean abrufen, indem Sie die <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection”</code>.</p> <p>Beachten Sie, dass die Statistiken nur seit dem letzten Systemstart verfügbar sind. Sie können externe Überwachungstools verwenden, um Daten über die AEM-Laufzeit hinaus aufzubewahren. Siehe auch <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">die AEM-Dokumentation für das Anhängen von Konsistenzprüfungen an Nagios als Beispiel für ein externes Überwachungstool</a>.</p> <p>Anhand der Protokolldateien können Sie auch den Status, den Fortschritt und die Statistiken der automatischen Bereinigung überprüfen.</p> </td>
+   <td><p>Status, Fortschritt und Statistiken werden über JMX mithilfe der Variablen <code>SegmentRevisionGarbageCollection</code> MBean. Siehe auch: <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">Oak-Dokumentation</a>. </p> <p>Sie können eine Referenz des MBean abrufen, indem Sie die <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code>.</p> <p>Beachten Sie, dass die Statistiken nur seit dem letzten Systemstart verfügbar sind. Sie können externe Überwachungstools verwenden, um Daten über die AEM-Laufzeit hinaus aufzubewahren. Siehe auch <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">die AEM-Dokumentation für das Anhängen von Konsistenzprüfungen an Nagios als Beispiel für ein externes Überwachungstool</a>.</p> <p>Anhand der Protokolldateien können Sie auch den Status, den Fortschritt und die Statistiken der automatischen Bereinigung überprüfen.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -472,7 +472,7 @@ In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständi
      <li>Analysieren Sie zunächst die Protokolleinträge.<br />  </li>
      <li>Führen Sie je nach den in den Protokollen angezeigten Informationen folgende Schritte aus:
       <ul>
-       <li>Wenn die Protokolle fünf ausgelassene kompakte Zyklen und eine Zeitüberschreitung auf der <code>forceCompact</code> -Zyklus, planen Sie das Wartungsfenster auf eine ruhige Zeit, wenn die Menge an Repository-Schreibvorgängen gering ist. Sie können Repository-Schreibvorgänge im Tool zur Überwachung der Repository-Metriken unter überprüfen. <em>https://serveraddress:serverport/libs/granite/operations/content/monitoring/page.html</em></li>
+       <li>Wenn die Protokolle fünf ausgelassene kompakte Zyklen und eine Zeitüberschreitung auf der <code>forceCompact</code> -Zyklus, planen Sie das Wartungsfenster auf eine ruhige Zeit, wenn die Menge an Repository-Schreibvorgängen gering ist. Sie können Repository-Schreibvorgänge im Tool zur Überwachung von Repository-Metriken unter überprüfen. <em>https://serveraddress:serverport/libs/granite/operations/content/monitoring/page.html</em></li>
        <li>Falls die Bereinigung am Ende des Wartungsfenster angehalten wurde, überprüfen Sie auf der Benutzeroberfläche für Wartungsaufgaben, ob das Wartungsfenster ausreichend lange konfiguriert ist.</li>
        <li>Falls der verfügbare Heap-Speicher nicht ausreicht, stellen Sie sicher, dass die Instanz genügend Speicher hat.</li>
        <li>Im Fall einer langsamen Reaktion wächst der Segmentspeicher möglicherweise zu schnell, sodass die Online-Revisionsbereinigung auch in einem längeren Wartungsfenster nicht abgeschlossen werden kann. Falls beispielsweise die Online-Revisionsbereinigung in der letzten Woche nicht erfolgreich abgeschlossen wurde, wird empfohlen, eine Offline-Wartung zu planen und eine Offline-Revisionsbereinigung auszuführen, um die Größe des Segmentspeichers zu beschränken.</li>

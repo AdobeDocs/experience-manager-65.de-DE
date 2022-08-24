@@ -1,20 +1,20 @@
 ---
-title: Best Practices zur Überwachung der [!DNL Assets] Bereitstellung
-description: Best Practices zur Überwachung der Umgebung und Leistung Ihrer [!DNL Adobe Experience Manager] Bereitstellung nach deren Bereitstellung.
+title: Best Practices zur Überwachung [!DNL Assets] Implementierung
+description: Best Practices zur Überwachung der Umgebung und Leistung Ihrer [!DNL Adobe Experience Manager] Bereitstellung nach der Bereitstellung.
 contentOwner: AG
 role: Admin, Architect
 feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
-source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '1668'
 ht-degree: 69%
 
 ---
 
-# Best Practices zur Überwachung der [!DNL Adobe Experience Manager Assets]-Implementierung {#assets-monitoring-best-practices}
+# Best Practices zur Überwachung [!DNL Adobe Experience Manager Assets] Implementierung {#assets-monitoring-best-practices}
 
-Aus der Sicht von [!DNL Experience Manager Assets] sollte die Überwachung die Beobachtung und Berichterstattung über die folgenden Prozesse und Technologien umfassen:
+Aus dem [!DNL Experience Manager Assets] Aus Sicht sollte die Überwachung die Beobachtung und Berichterstattung über die folgenden Prozesse und Technologien umfassen:
 
 * System-CPU
 * Systemspeicherauslastung
@@ -23,7 +23,7 @@ Aus der Sicht von [!DNL Experience Manager Assets] sollte die Überwachung die B
 * JMX MBeans für Heap-Nutzung und asynchrone Prozesse, wie Workflows
 * Integritätsprüfungen der OSGi-Konsole
 
-In der Regel kann [!DNL Experience Manager Assets] auf zwei Arten überwacht werden: Live-Überwachung und Langzeitüberwachung.
+In der Regel [!DNL Experience Manager Assets] kann auf zwei Arten überwacht werden: Live-Überwachung und Langzeitüberwachung.
 
 ## Live-Überwachung {#live-monitoring}
 
@@ -31,17 +31,17 @@ Es ist ratsam, die Live-Überwachung während der Leistungstestphase Ihres Entwi
 
 * [Visual VM](https://visualvm.github.io/): Mit Visual VM können Sie detaillierte Java-VM-Informationen anzeigen, einschließlich CPU-Auslastung und Java-Speicherbelegung. Darüber hinaus können Sie Code testen und auswerten, der in einer Implementierung ausgeführt wird.
 * [Top](https://man7.org/linux/man-pages/man1/top.1.html): „Top“ ist ein Linux-Befehl zum Öffnen eines Dashboards, in dem Auslastungsstatistiken angezeigt werden, z. B. zur CPU-, Arbeitsspeicher- und I/O-Auslastung. Darin können Sie sich einen allgemeinen Überblick über die Vorgänge auf einer Instanz verschaffen.
-* [Htop](https://hisham.hm/htop/): „Htop“ ist ein interaktives Anzeigeprogramm für Prozesse. Es enthält ausführliche Informationen zur Auslastung von CPU und Arbeitsspeicher, die über die Informationen von „Top“ hinausgehen. Htop kann auf den meisten Linux-Systemen mit `yum install htop` oder `apt-get install htop` installiert werden.
+* [Htop](https://hisham.hm/htop/): „Htop“ ist ein interaktives Anzeigeprogramm für Prozesse. Es enthält ausführliche Informationen zur Auslastung von CPU und Arbeitsspeicher, die über die Informationen von „Top“ hinausgehen. Htop kann auf den meisten Linux-Systemen mit `yum install htop` oder `apt-get install htop`.
 
-* Iotop: „Iotop“ ist ein ausführliches Dashboard für die I/O-Auslastung von Datenträgern. Darin werden anhand von Balken und Anzeigen die Prozesse, für die Datenträger-I/O-Vorgänge genutzt werden, sowie die verwendete Menge dargestellt. Iotop kann auf den meisten Linux-Systemen mit `yum install iotop` oder `apt-get install iotop` installiert werden.
+* Iotop: „Iotop“ ist ein ausführliches Dashboard für die I/O-Auslastung von Datenträgern. Darin werden anhand von Balken und Anzeigen die Prozesse, für die Datenträger-I/O-Vorgänge genutzt werden, sowie die verwendete Menge dargestellt. Iotop kann auf den meisten Linux-Systemen mit `yum install iotop` oder `apt-get install iotop`.
 
-* [Iftop](https://www.ex-parrot.com/pdw/iftop/): Mit „Iftop“ werden ausführliche Informationen zur Ethernet-/Netzwerkauslastung angezeigt. Es werden Statistiken pro Kommunikationskanal auf den Entitäten zur Ethernet-Verwendung und zur genutzten Bandbreite angegeben. Iftop kann auf den meisten Linux-Systemen mit `yum install iftop` oder `apt-get install iftop` installiert werden.
+* [Iftop](https://www.ex-parrot.com/pdw/iftop/): Mit „Iftop“ werden ausführliche Informationen zur Ethernet-/Netzwerkauslastung angezeigt. Es werden Statistiken pro Kommunikationskanal auf den Entitäten zur Ethernet-Verwendung und zur genutzten Bandbreite angegeben. Iftop kann auf den meisten Linux-Systemen mit `yum install iftop` oder `apt-get install iftop`.
 
-* Java Flight Recorder (JFR): Ein kommerzielles Tool von Oracle, das Sie in Umgebungen, die nicht für die Produktion bestimmt sind, kostenlos nutzen können. Weitere Informationen finden Sie unter [Verwendung von Java-Flugrekorder zum Diagnostizieren von CQ-Laufzeitproblemen](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
-* [!DNL Experience Manager] `error.log` Datei: Sie können die  [!DNL Experience Manager] `error.log` Datei auf Details zu im System protokollierten Fehlern untersuchen. Verwenden Sie den Befehl `tail -F quickstart/logs/error.log`, um Fehler zu identifizieren, die untersucht werden sollen.
+* Java Flight Recorder (JFR): Ein kommerzielles Tool von Oracle, das Sie in Umgebungen, die nicht für die Produktion bestimmt sind, kostenlos nutzen können. Weitere Informationen finden Sie unter [Verwenden von Java Flight Recorder zur Diagnose von CQ-Laufzeitproblemen](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
+* [!DNL Experience Manager] `error.log` Datei: Sie können die [!DNL Experience Manager] `error.log` -Datei für Details zu den im System protokollierten Fehlern. Verwenden Sie den Befehl `tail -F quickstart/logs/error.log` um Fehler zu identifizieren, die untersucht werden müssen.
 * [Workflow-Konsole](/help/sites-administering/workflows.md): Nutzen Sie die Workflow-Konsole, um Workflows zu überwachen, die Verzögerungen aufweisen oder hängen.
 
-Normalerweise verwenden Sie diese Tools zusammen, um eine umfassende Vorstellung von der Leistung Ihrer [!DNL Experience Manager]-Implementierung zu erhalten.
+Normalerweise verwenden Sie diese Tools zusammen, um eine umfassende Vorstellung von der Leistung Ihrer [!DNL Experience Manager] Implementierung.
 
 >[!NOTE]
 >
@@ -55,11 +55,11 @@ Normalerweise verwenden Sie diese Tools zusammen, um eine umfassende Vorstellung
 
 ## Langfristige Überwachung {#long-term-monitoring}
 
-Die langfristige Überwachung einer [!DNL Experience Manager]-Implementierung beinhaltet die Überwachung der gleichen Live-Überwachung für eine längere Dauer. Außerdem werden Warnungen definiert, die speziell auf Ihre Umgebung zugeschnitten sind.
+Langfristige Überwachung einer [!DNL Experience Manager] Die Implementierung umfasst die Überwachung der gleichen Live-Übertragungen für einen längeren Zeitraum. Außerdem werden Warnungen definiert, die speziell auf Ihre Umgebung zugeschnitten sind.
 
 ### Protokollaggregation und Berichterstellung {#log-aggregation-and-reporting}
 
-Es gibt verschiedene Tools zum Aggregieren von Protokollen, z. B. Splunk(TM) und Elastic Search, Logstash und Kabana (ELK). Um die Produktionszeit Ihrer [!DNL Experience Manager]-Bereitstellung zu bewerten, müssen Sie die für Ihr System spezifischen Protokollereignisse verstehen und Warnhinweise erstellen, die auf ihnen basieren. Ein gutes Wissen über Ihre Entwicklungs- und Betriebspraktiken kann Ihnen dabei helfen, besser zu verstehen, wie Sie Ihren Protokollaggregationsprozess so einstellen können, dass er kritische Warnhinweise generiert.
+Es gibt verschiedene Tools zum Aggregieren von Protokollen, z. B. Splunk(TM) und Elastic Search, Logstash und Kabana (ELK). So beurteilen Sie die Betriebszeit Ihrer [!DNL Experience Manager] -Implementierung ist es wichtig, dass Sie die für Ihr System spezifischen Protokollereignisse verstehen und Warnhinweise erstellen, die auf ihnen basieren. Ein gutes Wissen über Ihre Entwicklungs- und Betriebspraktiken kann Ihnen dabei helfen, besser zu verstehen, wie Sie Ihren Protokollaggregationsprozess so einstellen können, dass er kritische Warnhinweise generiert.
 
 ### Umgebungsüberwachung {#environment-monitoring}
 
@@ -76,7 +76,7 @@ Sie benötigen externe Tools, z. B. NewRelic(TM) und AppDynamics(TM), um die ei
 
 #### Interne Anwendungsüberwachung {#internal-application-monitoring}
 
-Die interne Anwendungsüberwachung umfasst die Überwachung der Anwendungskomponenten, aus denen der [!DNL Experience Manager]-Stapel besteht, einschließlich JVM, des Inhalts-Repositorys und die Überwachung durch benutzerdefinierten Anwendungscode, der auf der Plattform erstellt wurde. Im Allgemeinen wird dies mithilfe von JMX MBeans durchgeführt, die mit vielen beliebten Überwachungslösungen, z. B. SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) und anderen, direkt überwacht werden können. Für Systeme, für die keine direkte Verbindung mit JMX unterstützt wird, können Sie Shell-Skripte schreiben, um die JMX-Daten zu extrahieren und für diese Systeme in einem Format verfügbar zu machen, das nativ verstanden wird.
+Die interne Anwendungsüberwachung umfasst die Überwachung der Anwendungskomponenten, aus denen die [!DNL Experience Manager] stapeln, einschließlich JVM, des Inhalts-Repositorys und Überwachung durch benutzerdefinierten Anwendungscode, der auf der Plattform erstellt wurde. Im Allgemeinen wird dies mithilfe von JMX MBeans durchgeführt, die mit vielen beliebten Überwachungslösungen, z. B. SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) und anderen, direkt überwacht werden können. Für Systeme, für die keine direkte Verbindung mit JMX unterstützt wird, können Sie Shell-Skripte schreiben, um die JMX-Daten zu extrahieren und für diese Systeme in einem Format verfügbar zu machen, das nativ verstanden wird.
 
 Der Remotezugriff auf die JMX MBeans ist standardmäßig nicht aktiviert. Weitere Informationen zur Überwachung per JMX finden Sie unter [Überwachung und Verwaltung per JMX-Technologie](https://docs.oracle.com/javase/7/docs/technotes/guides/management/agent.html).
 
@@ -84,7 +84,7 @@ In vielen Fällen ist für das effektive Überwachen eines statistischen Werts e
 
 **JVM-Überwachung**
 
-Wie bei jedem Java-basierten Anwendungsstapel hängt [!DNL Experience Manager] von den Ressourcen ab, die über die zugrunde liegende Java Virtual Machine bereitgestellt werden. Sie können den Status von vielen dieser Ressourcen über Platform MXBeans überwachen, die per JVM verfügbar gemacht werden. Weitere Informationen zu MXBeans finden Sie unter [Verwenden von Platform MBean Server und Platform MXBeans](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html).
+Wie bei jedem Java-basierten Anwendungsstapel [!DNL Experience Manager] hängt von den Ressourcen ab, die über die zugrunde liegende Java Virtual Machine bereitgestellt werden. Sie können den Status von vielen dieser Ressourcen über Platform MXBeans überwachen, die per JVM verfügbar gemacht werden. Weitere Informationen zu MXBeans finden Sie unter [Verwenden von Platform MBean Server und Platform MXBeans](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html).
 
 Hier sind einige Baselineparameter angegeben, die Sie für JVM überwachen können:
 
@@ -112,12 +112,12 @@ Threads
 
 [!DNL Experience Manager] stellt über JMX auch einen Satz mit Statistiken und Vorgängen bereit. Diese Daten können dazu beitragen, die Systemintegrität zu bewerten und potenzielle Probleme zu identifizieren, bevor sie für Benutzer eine Beeinträchtigung darstellen. Weitere Informationen finden Sie in der [Dokumentation](/help/sites-administering/jmx-console.md) zu JMX MBeans.[!DNL Experience Manager]
 
-Im Folgenden finden Sie einige Grundlinienparameter, die Sie für [!DNL Experience Manager] überwachen können:
+Im Folgenden finden Sie einige Ausgangsparameter, die Sie überwachen können [!DNL Experience Manager]:
 
 Replikationsagenten
 
-* MBean: `com.adobe.granite.replication:type=agent,id=”<AGENT_NAME>”`
-* URL: `/system/console/jmx/com.adobe.granite.replication:type=agent,id=”<AGENT_NAME>"`
+* MBean: `com.adobe.granite.replication:type=agent,id="<AGENT_NAME>"`
+* URL: `/system/console/jmx/com.adobe.granite.replication:type=agent,id="<AGENT_NAME>"`
 * Instanzen: Eine Autoren- und alle Veröffentlichungsinstanzen (für Flush-Agenten)
 * Alarmschwellenwert: Wenn der Wert von `QueueBlocked``true` „“ lautet oder der Wert von `QueueNumEntries` größer als 150 % der Baseline ist.
 
@@ -125,7 +125,7 @@ Replikationsagenten
 
 >[!NOTE]
 >
->Ersetzen Sie für die MBean- und URL-Parameter `<AGENT_NAME>` durch den Namen des Replikationsagenten, den Sie überwachen möchten.
+>Ersetzen Sie für die Parameter MBean und URL `<AGENT_NAME>` mit dem Namen des Replikationsagenten, den Sie überwachen möchten.
 
 Sitzungszähler
 
@@ -190,14 +190,14 @@ Hier sind einige im Lieferumfang enthaltene Konsistenzprüfungen aufgeführt, di
 
 ## Gemeinsame Themen und Entschließungen  {#common-issues-and-resolutions}
 
-Im Rahmen der Überwachung finden Sie bei Problemen folgende Fehlerbehebungsaufgaben, die Sie ausführen können, um häufige Probleme mit [!DNL Experience Manager] -Bereitstellungen zu beheben:
+Im Rahmen der Überwachung können Sie, wenn Sie auf Probleme stoßen, einige Fehlerbehebungsaufgaben ausführen, um häufige Probleme mit [!DNL Experience Manager] Bereitstellungen:
 
 * Führen Sie die Tar-Komprimierung häufig durch, falls Sie TarMK nutzen. Weitere Informationen finden Sie unter [Repository verwalten](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
-* Überprüfen Sie die `OutOfMemoryError`-Protokolle. Weitere Informationen finden Sie unter [Analysieren von Speicherproblemen](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeMemoryProblems.html).
+* Überprüfen `OutOfMemoryError` Protokolle. Weitere Informationen finden Sie unter [Analysieren von Speicherproblemen](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeMemoryProblems.html).
 
 * Prüfen Sie die Protokolle auf Verweise auf nicht indizierte Abfragen, Baumstrukturdurchläufe oder Indexdurchläufe. Dies deutet auf nicht indizierte bzw. fehlerhaft indizierte Abfragen hin. Best Practices zur Optimierung der Abfrage- und Indizierungsleistung finden Sie unter [Best Practices für Abfragen und Indizierung](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Verwenden Sie die Workflow-Konsole, um sicherzustellen, dass Ihre Workflows erwartungsgemäß durchgeführt werden. Fassen Sie mehrere Workflows nach Möglichkeit zu einem einzelnen Workflow zusammen.
 * Suchen Sie über die Live-Überwachung nach weiteren Engpässen oder einem hohen Verbrauch bestimmter Ressourcen.
-* Untersuchen Sie die Ausspeisepunkte aus dem Client-Netzwerk und die Eingangspunkte auf das [!DNL Experience Manager]-Bereitstellungsnetzwerk, einschließlich des Dispatchers. Häufig sind dies Bereiche, in denen es zu Engpässen kommt. Weitere Informationen finden Sie unter [Überlegungen zum Assets-Netzwerk](/help/assets/assets-network-considerations.md).
-* Vergrößern Sie den [!DNL Experience Manager]-Server. Möglicherweise haben Sie eine unzureichende Größe Ihrer [!DNL Experience Manager]-Implementierung. Der Kundensupport von Adobe kann Ihnen dabei helfen, festzustellen, ob Ihr Server zu groß ist.
+* Untersuchen Sie die Ausspeisepunkte aus dem Client-Netzwerk und die Einspeisung verweist auf die [!DNL Experience Manager] Bereitstellungsnetzwerk, einschließlich Dispatcher. Häufig sind dies Bereiche, in denen es zu Engpässen kommt. Weitere Informationen finden Sie unter [Überlegungen zum Assets-Netzwerk](/help/assets/assets-network-considerations.md).
+* Größe der [!DNL Experience Manager] Server. Möglicherweise haben Sie eine unzureichende Größe [!DNL Experience Manager] Implementierung. Der Kundensupport von Adobe kann Ihnen dabei helfen, festzustellen, ob Ihr Server zu groß ist.
 * Untersuchen Sie die Dateien `access.log` und `error.log` auf Einträge, die zu Fehlerzeitpunkten erstellt wurden. Suchen Sie nach Mustern, die ggf. auf Anomalien im benutzerdefinierten Code hinweisen. Fügen Sie diese der Liste mit den zu überwachenden Ereignissen hinzu.

@@ -11,10 +11,10 @@ discoiquuid: 9f26565c-a7ba-4e9e-bf77-a95eb8e351f2
 docset: aem65
 feature: Correspondence Management
 exl-id: 3e978c3e-12f2-4dc6-801d-8ab4c5df6700
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -28,7 +28,7 @@ Sie können beispielsweise die folgenden Sonderzeichen einfügen:
 
 * Währungssymbole wie €,￥ und £
 * Mathematische Symbole wie ∑, √, ∂ und ^
-* Interpunktionssymbole wie ‟ und ”
+* Interpunktionssymbole wie ‟ und &quot;
 
 Sie können Sonderzeichen in Briefe einfügen:
 
@@ -98,7 +98,7 @@ Führen Sie die folgenden Schritte aus, um Unterstützung für benutzerdefiniert
    <td>Fügen Sie ein benutzerdefiniertes Sonderzeichen hinzu</td>
    <td>
     <ol>
-     <li>Fügen Sie einen untergeordneten Knoten unter „/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters“ mit obligatorischen Eigenschaften hinzu.</li>
+     <li>Fügen Sie einen untergeordneten Knoten unter "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters"mit obligatorischen Eigenschaften hinzu.</li>
      <li>Klicken Sie auf Alle speichern</li>
      <li>Aktualisieren Sie den Texteditor/Benutzeroberfläche „Korrespondenz erstellen“, um die Änderungen anzuzeigen.</li>
     </ol> </td>
@@ -117,7 +117,7 @@ Führen Sie die folgenden Schritte aus, um Unterstützung für benutzerdefiniert
    <td>Ausblenden von Sonderzeichen</td>
    <td>
     <ol>
-     <li>Überlagern Sie den Knoten, der unter „/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters“ ausgeblendet werden soll</li>
+     <li>Überlagern Sie den Knoten, der unter "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters"ausgeblendet werden soll.</li>
      <li>Fügen Sie die Eigenschaft sling:hideResource (boolesch) zum Knoten (unter Apps) hinzu, der ausgeblendet werden soll. </li>
      <li>Klicken Sie auf Alle speichern. </li>
      <li>Aktualisieren Sie den Texteditor/Benutzeroberfläche „Korrespondenz erstellen“, um die Änderungen anzuzeigen.<br /> </li>
@@ -127,17 +127,17 @@ Führen Sie die folgenden Schritte aus, um Unterstützung für benutzerdefiniert
    <td>Ausblenden mehrerer Sonderzeichen</td>
    <td>
     <ol>
-     <li>Fügen Sie der Eigenschaft „sling:hideChildren (String oder String[])“ zu „/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters” hinzu. </li>
+     <li>Fügen Sie die Eigenschaft "sling:hideChildren (String oder String[])"zu "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters"hinzu. </li>
      <li>Fügen Sie Knotennamen (Sonderzeichen, die ausgeblendet werden sollen) als Werte für die Eigenschaft „sling:hideChildren“ hinzu. </li>
      <li>Klicken Sie auf Alle speichern. </li>
-     <li>Aktualisieren Sie den Texteditor/Benutzeroberfläche „Korrespondenz erstellen“, um die Änderungen anzuzeigen.<br />  </li>
+     <li>Aktualisieren Sie den Texteditor/Benutzeroberfläche „Korrespondenz erstellen“, um die Änderungen anzuzeigen.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
    <td>Sonderzeichen anordnen</td>
    <td>
     <ol>
-     <li>Fügen Sie einen untergeordneten Knoten unter „/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters“ mit obligatorischen Eigenschaften hinzu. </li>
+     <li>Fügen Sie einen untergeordneten Knoten unter "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters"mit obligatorischen Eigenschaften hinzu. </li>
      <li>Fügen Sie die Eigenschaft „sling:orderBefore (String)“ zum neu erstellten untergeordneten Knoten hinzu. </li>
      <li>Fügen Sie den Knotennamen als Wert vor dem neu hinzugefügten Sonderzeichen hinzu, das angezeigt werden soll. </li>
      <li>Klicken Sie auf Alle speichern. </li>

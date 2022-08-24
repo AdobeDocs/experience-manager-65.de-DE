@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e80c3f98-baa1-45bc-b713-51a2eb5ec165
 exl-id: 7bde0a09-192a-44a8-83d0-c18e335e9afa
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -88,7 +88,7 @@ public Boolean assign(User user);
 
 ### Erstellen einer Just-in-time-Domain {#create-a-just-in-time-enabled-domain}
 
-1. Schreiben Sie ein DSC, das die API im Abschnitt „API für Just-in-time-Bereitstellung“ implementiert.
+1. Schreiben Sie einen DSC, der die APIs im Abschnitt &quot;APIs für Just-in-time-Bereitstellung&quot;implementiert.
 1. Stellen Sie das DSC auf dem Formularserver bereit.
 1. Erstellen Sie eine Just-in-time-Domain:
 

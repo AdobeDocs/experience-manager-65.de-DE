@@ -11,7 +11,7 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 378bc33d-ab6c-4651-9688-102c961561fc
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '9211'
 ht-degree: 95%
@@ -592,9 +592,9 @@ Wenn Farbe als Hinweis für Informationen verwendet wird, sollten Sie für einen
 
 * [Erfolgskriterien 1.4.1 verstehen](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
 * [Erfolgskriterien 1.4.1 erfüllen](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
-* [Anleitung für das Erzielen eines Kontrastverhältnisses von 3:1 mit einer Liste Web-sicherer Farben](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
+* [Anleitung zum Erzielen eines Kontrastverhältnisses von 3:1 mit einer Liste Web-sicherer Farben](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
 
-### Kontrast (Minimum) (1.4.3)     {#contrast-minimum}
+### Kontrast (Minimum) (1.4.3) {#contrast-minimum}
 
 * Erfolgskriterium 1.4.3
 * Level AA
@@ -837,11 +837,11 @@ Um dieses Erfolgskriterium zu erfüllen, kann die Standardsprache einer Web-Seit
 
 * Wenn eine Seite z. B. in britischem Englisch verfasst ist, sollte das Element `<html>` wie folgt angegeben werden:
 
-   `<html lang = “en-gb”>`
+   `<html lang = "en-gb">`
 
 * Wenn eine Seite hingegen als Seite in US-Englisch gerendert werden soll, ist folgende Angabe erforderlich:
 
-   `<html lang = “en-us”>`
+   `<html lang = "en-us">`
 
 In AEM wird die Standardsprache einer Seite bei ihrer Erstellung festgelegt, kann aber auch bei ihrer Bearbeitung geändert werden. Öffnen Sie dazu den **Sidekick** > Registerkarte **Seite** > **Seiteneigenschaften…** > Registerkarte **Erweitert**.
 
@@ -869,7 +869,7 @@ Seiten, die dieses Erfolgskriterium erfüllen, bieten folgende Möglichkeiten:
 
 #### Erfüllen - Sprache von Teilen (3.1.2) {#how-to-meet-language-of-parts}
 
-Mit dem Attribut `lang` können Änderungen der Sprache des Inhalts ermittelt werden. Ein deutschsprachiges Zitat (ISO 639-1-Code „de“) kann z. B. wie folgt angezeigt werden:
+Mit dem Attribut `lang` können Änderungen der Sprache des Inhalts ermittelt werden. Beispielsweise kann ein deutschsprachiges Zitat (ISO 639-1-Code &quot;de&quot;) wie folgt angezeigt werden:
 
 ```xml
 <blockquote cite = "John F. Kennedy" lang = "de">
@@ -883,7 +883,7 @@ Blockzitate werden in standardmäßigen Instanzen nicht unterstützt. Sie könne
 Auf ähnliche Weise kann der Browser ein wenig geläufiges Lehnwort oder eine Redewendung korrekt rendern, wenn das Element `span` wie folgt verwendet wird:
 
 ```xml
-<p>The only French phrase I know is <span lang = “fr”>je ne sais quoi</span>.</p>
+<p>The only French phrase I know is <span lang = "fr">je ne sais quoi</span>.</p>
 ```
 
 >[!NOTE]

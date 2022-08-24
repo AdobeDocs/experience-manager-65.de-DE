@@ -12,7 +12,7 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 83383d46a4200eb3d21deee15c71032314694860
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '5866'
 ht-degree: 82%
@@ -528,7 +528,7 @@ Nachfolgend finden Sie eine Liste mit häufigen Leistungsproblemen und Vorschlä
 |  | Die lokale Suche auf dem Server ist (vergleichsweise) schnell. | Vergrößern Sie die Netzwerkbandbreite. | Verringern Sie das „Gewicht“ Ihrer Website (z. B. weniger Bilder, optimiertes HTML). |
 | Webserver | Die CPU-Auslastung auf dem Webserver ist hoch. | Erstellen Sie Webserver-Cluster. | Reduzieren Sie die Treffer pro Seite (Aufruf). |
 |  |  | Verwenden Sie einen Hardware Load Balancer. |  |
-| Anwendung | Die CPU-Auslastung des Servers ist hoch. | Erstellen Sie Cluster Ihrer AEM-Instanzen. | Suchen Sie nach und beseitigen Sie CPU- und Arbeitsspeicherverschwendung (durch Überprüfung von Code, zeitliche Planung von Ausgaben usw.). |
+| Programm | Die CPU-Auslastung des Servers ist hoch. | Erstellen Sie Cluster Ihrer AEM-Instanzen. | Suchen Sie nach und beseitigen Sie CPU- und Arbeitsspeicherverschwendung (durch Überprüfung von Code, zeitliche Planung von Ausgaben usw.). |
 |  | Hoher Speicherverbrauch. |  | Verbessern Sie das Zwischenspeichern auf allen Ebenen. |
 |  | Kurze Antwortzeiten. |  | Optimieren Sie Vorlagen und Komponenten (z. B. Struktur, Logik). |
 | Repository |  |  |  |
@@ -694,7 +694,7 @@ Dieses Protokoll enthält eine Zeile pro Anforderung oder Antwort mit:
 
 * Bei Antworten enthält die Zeile: 
 
-   * den Statuscode (200 steht für „Erfolg“, 404 steht für „Seite nicht gefunden“);
+   * Status-Code (200 bedeutet &quot;Erfolg&quot;, 404 bedeutet &quot;Seite nicht gefunden&quot;
    * den MIME-Typ;
    * die Antwortzeit.
 

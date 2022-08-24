@@ -1,8 +1,8 @@
 ---
 title: Foundation-Komponenten
-seo-title: Foundation-Komponenten
+seo-title: Foundation Components
 description: Foundation-Komponenten
-seo-description: 'null'
+seo-description: null
 uuid: 3caf9123-ae58-4590-af2f-57ef076daf7f
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,9 +13,9 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '7365'
+source-wordcount: '7362'
 ht-degree: 88%
 
 ---
@@ -24,15 +24,15 @@ ht-degree: 88%
 
 >[!CAUTION]
 >
->Die meisten Foundation-Komponenten werden ab AEM 6.5 nicht mehr unterstützt. Weitere Informationen finden Sie in den [Versionshinweisen](/help/release-notes/deprecated-removed-features.md) .
+>Die meisten Foundation-Komponenten sind ab sofort in AEM 6.5 veraltet. Siehe [Versionshinweise](/help/release-notes/deprecated-removed-features.md) für weitere Informationen.
 >
->Adobe empfiehlt die Nutzung der modern und erweiterbaren [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) in AEM-Projekten. Diese sind Teil des Beispielinhalts [We.Retail](/help/sites-developing/we-retail.md) und können auch von Ihrem Administrator [separat installiert und für die Entwicklung](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/get-started/using.html) verwendet werden.
+>Adobe empfiehlt die Nutzung der modern und erweiterbaren [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) in AEM-Projekten. Diese sind Teil der [We.Retail-Beispielinhalt](/help/sites-developing/we-retail.md) und kann auch [separat installiert und für die Entwicklung verwendet](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/get-started/using.html) durch Ihren Administrator.
 >
->Sie können die [AEM Tools-Suite modernisieren](https://opensource.adobe.com/aem-modernize-tools/) verwenden, um Ihre auf Foundation-Komponenten basierende Website für die Verwendung von Kernkomponenten umzugestalten.
+>Sie können die [AEM Modernisierung der Tools Suite](https://opensource.adobe.com/aem-modernize-tools/) , um Ihre auf Foundation-Komponenten basierende Site für die Verwendung von Kernkomponenten umzugestalten.
 
 Die Foundation-Komponenten wurden für die Verwendung beim Bearbeiten von Inhalten für eine Standardwebseite entworfen. Sie bilden eine Teilmenge der für eine Standardinstallation von AEM verfügbaren Komponenten.
 
-Einige sind sofort über den Komponenten-Browser verfügbar, andere sind auch über [Designmodus](/help/sites-authoring/default-components-designmode.md) verfügbar (wenn die Seite auf einer statischen Vorlage basiert) oder durch [Bearbeiten der Vorlage](/help/sites-authoring/templates.md) (wenn die Seite auf einer bearbeitbaren Vorlage basiert).
+Einige sind sofort über den Komponenten-Browser verfügbar, andere sind auch verfügbar, indem Sie [Designmodus](/help/sites-authoring/default-components-designmode.md) (wenn die Seite auf einer statischen Vorlage basiert) oder von [Bearbeiten der Vorlage](/help/sites-authoring/templates.md) (wenn die Seite auf einer bearbeitbaren Vorlage basiert).
 
 Die Verwendung von Foundation-Komponenten wird unterstützt, sie sind jedoch mehrheitlich nicht mehr in AEM enthalten und wurden durch die Kernkomponenten ersetzt, die mehr Erweiterbarkeit und Flexibilität bieten.
 
@@ -49,7 +49,7 @@ Sie können eine Komponente auswählen und an die gewünschte Stelle auf Ihrer S
 * [Eigenschaften konfigurieren](/help/sites-authoring/editing-page-properties.md)
 * [Inhalt bearbeiten](/help/sites-authoring/editing-content.md)
 
-* [Inhalt bearbeiten - Vollbildmodus](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
+* [Inhalt bearbeiten – Vollbildmodus](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
 Die Komponenten sind nach verschiedenen Kategorien (Komponentengruppen) sortiert. Diese umfassen:
 
@@ -61,7 +61,7 @@ Die Komponenten sind nach verschiedenen Kategorien (Komponentengruppen) sortiert
 
 Die allgemeinen Komponenten sind die grundlegenden Komponenten, mit denen Sie Inhalte erstellen.
 
-### Kontoelement  {#account-item}
+### Kontoelement {#account-item}
 
 >[!CAUTION]
 >
@@ -93,7 +93,7 @@ Sie können Bilddateien mit den folgenden Dateinamenerweiterungen mit der Adapti
 * .jpg
 * .jpeg
 * .png
-* .gif **
+* .gif &#42;&#42;
 
 >[!CAUTION]
 >
@@ -198,8 +198,8 @@ Abhängig von dem von Ihnen ausgewählten Element wird ein neues Fenster geöffn
 Geben Sie den Pfad entweder manuell oder mithilfe der Auswahl an. Wenn Sie nichts angeben, wird die aktuelle Seite als übergeordnete Seite verwendet.
       * **Optionen für Liste fester Werte**
 
-         * ****
-SeitenWählen Sie eine Liste von Seiten aus. Verwendung 
+         * **Seiten**
+Wählen Sie eine Liste von Seiten aus. Verwendung 
 `+` um weitere Einträge und die Nach-oben-/Nach-unten-Schaltflächen hinzuzufügen, um die Reihenfolge anzupassen.
       * **Optionen für die Suche**
 
@@ -213,9 +213,9 @@ Sie können eine Textsuchanfrage eingeben.
          * **Querybuilder-Eigenschafts-Notation**
 Geben Sie mit der Querybuilder-Eigenschafts-Notation eine Suchanfrage ein. Sie können beispielsweise „fulltext=Marketing“ eingeben, um alle Seiten, deren Inhalt das Wort „Marketing“ enthält, in Ihrem Karussell anzuzeigen.
 Unter [QueryBuilder API](/help/sites-developing/querybuilder-api.md) finden Sie eine umfassende Übersicht über Abfrageausdrücke sowie weitere Beispiele.
-   * **Sortieren**
-nach Auswahl 
-`jcr:title`,  `jcr:created`,  `cq:lastModified`oder  `cq:template` aus dem Dropdown-Menü aus.
+   * **Sortierreihenfolge**
+Auswählen 
+`jcr:title`, `jcr:created`, `cq:lastModified`oder `cq:template` aus dem Dropdown-Menü aus.
 
    * **Begrenzung**
 Die maximale Anzahl der Elemente, die Sie im Karussell verwenden möchten (optional).
@@ -236,10 +236,10 @@ Die maximale Anzahl der Elemente, die Sie im Karussell verwenden möchten (optio
 
 Mit der Komponente „Diagramm“ können Sie ein Balken-, Linien- oder Tortendiagramm hinzufügen. AEM erstellt aus den von Ihnen zur Verfügung gestellten Daten ein Diagramm. Die Daten geben Sie direkt auf der Registerkarte „Daten“ ein oder fügen sie durch Kopieren aus einer Tabelle ein.
 
-* **Daten**
+* **letzten 30 Tage**
 
    * **Diagrammdaten**
-Geben Sie die Diagrammdaten im CSV-Format ein; das CSV-Format (kommagetrennte Werte) verwendet ein Komma (,) als Feldtrennzeichen.
+Geben Sie Ihre Diagrammdaten im CSV-Format ein. Das Format &quot;Kommagetrennte Werte&quot;verwendet Kommas (&quot;,&quot;) als Feldtrennzeichen.
 
 * **Erweitert**
 
@@ -267,7 +267,7 @@ Im Folgenden sehen Sie ein Beispiel für Diagrammdaten und das daraus resultiere
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Fragment“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/content-fragment-component.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Fragment“](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/content-fragment-component.html). 
 
 [Inhaltsfragmente](/help/sites-authoring/content-fragments.md) werden als seitenunabhängige Assets erstellt und verwaltet. Sie können diese Fragmente und ihre Varianten bei der Erstellung Ihrer Inhaltsseiten verwenden.
 
@@ -319,8 +319,7 @@ Geben Sie die URL der zu integrierenden Webanwendung an. Beispiel:
    * **Parameter weiterleiten**
 Aktivieren Sie das Kontrollkästchen für das Weiterleiten von Parametern an die Anwendung.
 
-   * **Breite und Höhe
-**Definieren Sie die Größe des iframe
+   * **Breite und Höhe **Definieren Sie die Größe des iframe
 
 Die externe Anwendung wird in das Absatzsystem der AEM-Seite integriert. Beispiel: Wenn Sie als Zielanwendung `https://en.wikipedia.org/wiki/Main_Page` verwenden:
 
@@ -412,7 +411,7 @@ Im Vollbildbearbeitungsmodus stehen verschiedene zusätzliche Optionen zur Verf�
 >
 >Benutzer von Internet Explorer müssen das Bild hochladen und auf **OK** klicken und anschließend das Bild erneut öffnen, um die hochgeladene Datei in der Vorschau sehen und Änderungen (z. B. Zuschneiden) vornehmen zu können.
 >
->Weitere Informationen zu den von AEM verwendeten HTML5-Funktionen finden Sie im Abschnitt [Zertifizierte Plattformen](/help/release-notes/release-notes.md#certifiedplatforms) .
+>Siehe [Zertifizierte Plattformen](/help/release-notes/release-notes.md#certifiedplatforms) für weitere Informationen über von AEM verwendete HTML5-Funktionen.
 
 Wenn ein Bild geladen wird, können folgende Konfigurationen durchgeführt werden:
 
@@ -474,7 +473,7 @@ Diese Komponente liefert ein Rasterabsatzsystem, mit dem Sie Komponenten in eine
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Liste“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/list.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Liste“](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/list.html). 
 
 Mit der Komponente „Liste“ können Sie Suchkriterien zur Anzeige einer Liste konfigurieren:
 
@@ -488,7 +487,7 @@ Mit der Komponente „Liste“ können Sie Suchkriterien zur Anzeige einer Liste
 
       * **Optionen für untergeordnete Seiten**
 
-         * **Untergeordnete Elemente von**  (übergeordnete Seite)
+         * **Kinder von** (Übergeordnete Seite)
 
             Geben Sie einen Pfad entweder manuell oder mithilfe des Selektors an. Wenn Sie nichts angeben, wird die aktuelle Seite als übergeordnete Seite verwendet.
       * **Optionen für Liste fester Werte**
@@ -611,7 +610,7 @@ Geben Sie die Seite (das Produkt) an, für das der Auftragsstatus angezeigt werd
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
-### Verweis  {#reference}
+### Verweis {#reference}
 
 >[!CAUTION]
 >
@@ -659,7 +658,7 @@ Sie können Folgendes konfigurieren:
 
    * **Knotentypen**
 
-      Wenn die Suche auf bestimmte Knotentypen beschränkt werden soll, können Sie sie hier auflisten. z. B. `cq:Page`.
+      Wenn die Suche auf bestimmte Knotentypen beschränkt werden soll, können Sie sie hier auflisten. Beispiel: `cq:Page`.
 
    * **Suchpfad**
 
@@ -718,7 +717,7 @@ Das folgende Beispiel zeigt einen falsch geschriebenen und nicht verfügbaren Su
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung von [Navigation](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/navigation.html), [Sprachnavigation](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/language-navigation.html) und [Breadcrumb-Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/breadcrumb.html).
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt, die [Navigation](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/navigation.html), [Sprachnavigation](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/language-navigation.html)und [Breadcrumb-Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/breadcrumb.html) anstatt.
 
 Eine automatische Sitemap-Auflistung, in der (bei Standardeinstellungen) alle Seiten (als aktive Links) in der aktuellen Website aufgeführt werden: Beispiel:
 
@@ -736,7 +735,7 @@ Sie können bei Bedarf Folgendes konfigurieren:
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Karussell“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Karussell“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=de). 
 
 >[!CAUTION]
 >
@@ -750,7 +749,7 @@ Sie können Folgendes konfigurieren:
 
    * **Neue Folie**
 
-      Mithilfe der Schaltflächen **Hinzufügen** (und **Entfernen**) können Sie eine Auswahl an Folien angeben.
+      Sie können eine Auswahl an Folien mithilfe der Variablen **Hinzufügen** und **Entfernen**).
 
    * **Titel**
 
@@ -805,7 +804,7 @@ Beim Konfigurieren der Tag-Cloud-Komponente können Sie Folgendes festlegen:
 
    Ort, aus dem die anzuzeigenden Tags erfasst werden sollen. Wählen Sie dafür eine Seite, eine Seite mit allen untergeordneten Seiten oder alle Tags aus.
 
-* **Seite**
+* **Page**
 
    Wählen Sie die Seite aus, auf die verwiesen werden soll.
 
@@ -829,7 +828,7 @@ Mit der Text-Komponente können Sie über einen WYSIWYG-Editor einen Textblock e
 
 ![chlimage_1-98](assets/chlimage_1-98.png)
 
-Wenn Sie das Dialogfeld **Konfigurieren** öffnen, können Sie auch Folgendes festlegen:
+Wenn Sie die **Konfigurieren** können Sie auch Folgendes festlegen:
 
 * **Abstand**
 * **Textformat**
@@ -856,11 +855,11 @@ Mit der Komponente „Text und Bild“ werden ein Textblock und ein Bild hinzuge
 
 Sie können Folgendes konfigurieren:
 
-* **Komponentenstile**  (**Stile**)
+* **Komponentenstile** (**Stile**)
 
    Mit dieser Option können Sie das Bild rechts- oder linksbündig ausrichten. Standardmäßig wird das Bild **linksbündig** ausgerichtet.
 
-* **Bildeigenschaften**  (**Erweiterte Bildeigenschaften**)
+* **Bildeigenschaften** (**Erweiterte Bildeigenschaften**)
 
    Dies ermöglicht die Festlegung des Folgenden:
 
@@ -921,11 +920,11 @@ Das folgende Beispiel zeigt eine angezeigte **Titel**-Komponente; das Design wir
 
 ![dc_title_use](assets/dc_title_use.png)
 
-### Video {#video}
+### Video    {#video}
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten-Einbettungskomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/embed.html) .
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt, die [Einbettungskomponente der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/embed.html) anstatt.
 
 >[!CAUTION]
 >
@@ -937,7 +936,7 @@ Sie können auch HTML5-Elemente verwenden. Einzelheiten hierzu finden Sie unter 
 
 Nachdem Sie eine Instanz der Komponente auf Ihrer Seite platziert haben, können Sie Folgendes konfigurieren:
 
-* Video
+* Video   
 
    * **Video-Asset**
 
@@ -968,7 +967,7 @@ Das folgende Beispiel zeigt die Verwendung der 2-Spalten-Komponente. Sie können
 
 Eine Spalten-Steuerung-Komponente mit standardmäßig 2 gleich großen Spalten.
 
-### 3 Spalten  {#columns-2}
+### 3 Spalten {#columns-2}
 
 Eine Spalten-Steuerung-Komponente mit standardmäßig 3 gleich großen Spalten.
 
@@ -996,7 +995,7 @@ Mit Formular-Komponenten können Sie Formulare erstellen, damit Besucher Eingabe
 
 Formulare bestehen aus mehreren verschiedenen Komponenten:
 
-* **Form**
+* **Formular**
 
    Die Formular-Komponente definiert den Beginn und das Ende eines neuen Formulars auf einer Seite. Andere Komponenten können dann zwischen diesen Elementen eingefügt werden, z.&amp;nbsp;B. Tabellen, Downloads usw.
 
@@ -1030,7 +1029,7 @@ Wenn Sie eine beliebige Formular-Komponente konfigurieren, sind im Dialogfeld di
 
    Ermöglicht Ihnen das Festlegen eines Standardwerts.
 
-* **Beschränkungen**
+* **Begrenzungen**
 
    Hier können Sie angeben, ob ein Feld erforderlich ist, und diese Beschränkungen für dieses Feld platzieren (z.&amp;nbsp;B. ob nur numerische Werte zulässig sind).
 
@@ -1072,7 +1071,7 @@ Dies ist ein erforderliches Feld und sollte nur die folgenden Zeichen enthalten:
 
       Die beim Öffnen des Formulars im Feld angezeigten Werte, also bevor der Benutzer seine Eingabe vornimmt.
 
-* **Beschränkungen**
+* **Begrenzungen**
 
    * **Erforderlich**
 
@@ -1102,7 +1101,7 @@ Dies ist ein erforderliches Feld und sollte nur die folgenden Zeichen enthalten:
 
    * **CSS**
 
-### Formular (Komponente)  {#form-component}
+### Formular (Komponente) {#form-component}
 
 >[!CAUTION]
 >
@@ -1191,7 +1190,7 @@ Einige Aktionstypen sind in einer Standard-AEM-Installation enthalten:
          `/apps/<*myApp*>/form/<*myValidation*>/formservervalidation.jsp`
    * **Aktionskonfiguration**
 
-      Die in **Aktionskonfiguration** verfügbaren Optionen hängen vom ausgewählten **Aktionstyp** ab:
+      Die in **Aktionskonfiguration** hängt von der **Aktionstyp** selected:
 
       * **Kontoabfrage**
 
@@ -1202,7 +1201,7 @@ Einige Aktionstypen sind in einer Standard-AEM-Installation enthalten:
 
          * Inhalts-Pfad
 
-            Der Inhaltspfad zu Inhalten, die aus dem Formular ausgegeben werden. Geben Sie einen Pfad ein, der mit einem Schrägstrich `/` endet. Der Schrägstrich zeigt an, dass für jeden Formular-Port ein neuer Knoten unter dem angegebenen Verzeichnis erstellt wird. Beispiel:
+            Der Inhaltspfad zu Inhalten, die aus dem Formular ausgegeben werden. Pfad eingeben, der mit einem Schrägstrich endet `/`. Der Schrägstrich zeigt an, dass für jeden Formular-Port ein neuer Knoten unter dem angegebenen Verzeichnis erstellt wird. Beispiel:
 
             `/forms/feedback/`
 
@@ -1220,7 +1219,7 @@ Einige Aktionstypen sind in einer Standard-AEM-Installation enthalten:
 
          * **Ressourcentyp**
 
-            Wenn festgelegt, wird dies zu jedem Kommentar als `sling:resourceType` hinzugefügt.
+            Wenn festgelegt, wird dies zu jedem Kommentar als `sling:resourceType`
 
          * **Ansichtselektor**
       * **Lead erstellen**
@@ -1244,10 +1243,10 @@ Einige Aktionstypen sind in einer Standard-AEM-Installation enthalten:
 
          * **Daten anzeigen...**
 
-            Klicken Sie auf diese Schaltfläche, um in der Massenbearbeitung auf die Informationen zu den Formularergebnissen zuzugreifen. Von hier aus können Sie die Informationen in eine `.tsv` (tabulatorgetrennte) Datei exportieren (z. B. in eine Excel-Tabelle).
+            Klicken Sie auf diese Schaltfläche, um in der Massenbearbeitung auf die Informationen zu den Formularergebnissen zuzugreifen. Von hier aus können Sie die Informationen in eine `.tsv` (tabulatorgetrennte) Datei (z. B. zur Verwendung in einer Excel-Tabelle).
       * **E-Mail**
 
-         * **From**
+         * **Von**
 
             Geben Sie die E-Mail-Adresse ein, von der aus die E-Mail gesendet werden soll.
 
@@ -1275,7 +1274,7 @@ Einige Aktionstypen sind in einer Standard-AEM-Installation enthalten:
 
          * **Inhalts-Pfad**
 
-            Der Inhaltspfad zu Inhalten, die aus dem Formular ausgegeben werden. Geben Sie einen Pfad ein, der mit einem Schrägstrich `/` endet. Der Schrägstrich zeigt an, dass für jeden Formular-Port ein neuer Knoten unter dem angegebenen Verzeichnis erstellt wird. Beispiel:
+            Der Inhaltspfad zu Inhalten, die aus dem Formular ausgegeben werden. Pfad eingeben, der mit einem Schrägstrich endet `/`. Der Schrägstrich zeigt an, dass für jeden Formular-Port ein neuer Knoten unter dem angegebenen Verzeichnis erstellt wird. Beispiel:
             `/forms/feedback/`
 
          * **Daten anzeigen...**
@@ -1283,7 +1282,7 @@ Einige Aktionstypen sind in einer Standard-AEM-Installation enthalten:
             Klicken Sie auf diese Schaltfläche, um in der Massenbearbeitung auf die Informationen zu den Formularergebnissen zuzugreifen. Von hier aus können Sie die Informationen in eine TSV-Datei (durch Tabulatoren getrennt) exportieren, die Sie z. B. in einer Excel-Tabelle öffnen können.
       * **Inhalt mit Uploads speichern**
 
-         Dies hat dieselben Optionen wie **Inhalt speichern**.
+         Dies hat die gleichen Optionen wie **Inhalt speichern**.
 
       * **Abonnenten löschen**
 
@@ -1368,7 +1367,7 @@ Bei der Captcha-Komponente muss der Benutzer eine alphanumerische Zeichenfolge e
 
 Sie können verschiedene Parameter für diese Komponente konfigurieren, darunter eine Meldung, die bei einer ungültigen Captcha-Zeichenfolge angezeigt wird.
 
-### Kontrollkästchen-Gruppe  {#checkbox-group}
+### Kontrollkästchen-Gruppe {#checkbox-group}
 
 >[!CAUTION]
 >
@@ -1444,7 +1443,7 @@ Mit dieser Komponente können Sie ein verstecktes Feld erstellen. Dieses Feld ka
 >
 >Siehe [Einblenden und Ausblenden von Formularkomponenten](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
 
-### Bild-Schaltfläche  {#image-button}
+### Bild-Schaltfläche {#image-button}
 
 >[!CAUTION]
 >
@@ -1476,7 +1475,7 @@ Im Link-Feld können Benutzer eine URL angeben:
 
 Dies wird am häufigsten für das Kalenderereignis-Formular verwendet, wo es für das URL/Link-Feld eines Ereignisses verwendet wird.
 
-### Kennwort-Feld {#password-field}
+### Kennwortfeld {#password-field}
 
 >[!CAUTION]
 >
@@ -1519,7 +1518,7 @@ Sie können den Elementnamen zusammen mit einem Titel und einer Beschreibung fes
 >
 >Siehe [Vorabladen von Formularfeldern mit mehreren Werten](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
-### Schaltfläche „Übermitteln“{#submit-button}
+### Senden-Schaltfläche {#submit-button}
 
 >[!CAUTION]
 >
@@ -1533,7 +1532,7 @@ Oder Sie können Ihren eigenen Text eingeben:
 
 ![dc_form_submit_buttonuse](assets/dc_form_submitbuttonuse.png)
 
-### Feld „Tags“{#tags-field}
+### Feld „Tags“ {#tags-field}
 
 >[!CAUTION]
 >

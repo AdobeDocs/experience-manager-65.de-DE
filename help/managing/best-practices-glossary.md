@@ -1,8 +1,8 @@
 ---
 title: Glossar
-seo-title: Glossar
+seo-title: Glossary
 description: Dieses Glossar listet (alphabetisch) alle lieferbaren Dokumente aus der Projektcheckliste auf.
-seo-description: Dieses Glossar listet (alphabetisch) alle lieferbaren Dokumente aus der Projektcheckliste auf.
+seo-description: This glossary lists (alphabetically) details of all Deliverable documents from the Project Checklist.
 uuid: 5f919b05-3ec5-4b18-b966-5dcf706407f4
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: cca21688-40b1-433d-93dc-cd62e5558507
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '7050'
+source-wordcount: '7036'
 ht-degree: 97%
 
 ---
 
 # Glossar{#glossary}
 
-Dieses Glossar listet (alphabetisch) alle lieferbaren Dokumente aus der [Projekt-Checkliste](/help/managing/best-practices-checklist.md) auf.
+Dieses Glossar listet (alphabetisch) Details aller lieferbaren Dokumente aus dem [Projektprüfliste](/help/managing/best-practices-checklist.md).
 
 ## Akzeptanz der Projektbeteiligten aus den Geschäftsbereichen {#acceptance-from-business-stakeholders}
 
@@ -207,8 +207,7 @@ Geschäfts-KPIs definieren messbare Werte, die aufzeigen, wie effektiv ein Unter
 
 Ein Geschäftsanforderungsdokument beschreibt die Geschäftslösung für ein Projekt und liefert eine klare Präzisierung der Geschäftsanforderungen und -erwartungen des Kunden. Es unterscheidet auch zwischen der geschäftlichen und der technischen Lösung.
 
-Bei der Prüfung der Geschäftslösung sollte die BRD die Frage beantworten:
-&quot;Was will das Unternehmen tun?&quot;
+Bei der Prüfung der Geschäftslösung sollte die BRD die Frage beantworten: &quot;Was will das Unternehmen tun?&quot;
 
 ### Genehmigung durch die Geschäftsführung bei allen erforderlichen Anpassungen der Lösung oder Architektur entsprechend den ermittelten ROI- und KPI-Erwartungen {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -1065,7 +1064,7 @@ Definieren und dokumentieren Sie Details der Sicherheitskonfiguration, die für 
 Ein allgemeiner Überblick über die Sicherheitsstruktur der folgenden Elemente:
 
 * Anwendung
-* -Architektur
+* Architektur
 * Infrastruktur
 
 ### Erfasste und eingestufte Sicherheitsprobleme {#security-issues-listed-and-assessed}

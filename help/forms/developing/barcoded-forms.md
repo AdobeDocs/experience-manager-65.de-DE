@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 role: Developer
 exl-id: dd32808e-b773-48a2-90e1-7a277d349493
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+workflow-type: tm+mt
 source-wordcount: '1920'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -179,7 +179,7 @@ Dekodieren Sie Formulardaten mithilfe der Barcode-Formulare-API (Web-Service):
 1. Projektdateien einschließen
 
    * Erstellen Sie eine Microsoft .NET-Client-Assembly, die die Barcode-Fomulare-Service-WSDL verwendet. Weitere Informationen finden Sie unter [Aufrufen von AEM Forms mithilfe von Base64-Codierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).
-   * Referenzieren Sie die Microsoft .NET-Client-Assembly. Weitere Informationen finden Sie unter „Referenzieren der .NET-Client-Assembly“ in [Aufrufen von AEM Forms mithilfe von Base64-Codierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).
+   * Referenzieren Sie die Microsoft .NET-Client-Assembly. Weitere Informationen finden Sie unter &quot;Referenzieren der .NET-Clientassembly&quot;in [Aufrufen von AEM Forms mit Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).
 
 1. Erstellen eines Client-API-Objekts für Barcode-Formulare
 
@@ -189,8 +189,8 @@ Dekodieren Sie Formulardaten mithilfe der Barcode-Formulare-API (Web-Service):
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern eines PDF-Dokuments verwendet, das einen Barcode enthält.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die Länge des zu lesenden Streams übergeben.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
+   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `Read`-Methode des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seiner `binaryData`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
 
 1. Decodieren der Daten aus dem PDF-Formular
@@ -199,7 +199,7 @@ Dekodieren Sie Formulardaten mithilfe der Barcode-Formulare-API (Web-Service):
 
    * Das `BLOB`-Objekt, das das PDF-Formular enthält.
    * Ein `Boolean`-Objekt, das angibt, ob ein PDF417-Barcode decodiert werden soll.
-   * Ein `Boolean`-Objekt, das angibt, ob ein Datenmatrix-Barcode decodiert werden soll.
+   * Ein `Boolean`-Objekt, das, das angibt, ob ein Datenmatrix-Barcode decodiert werden soll.
    * Ein `Boolean`-Objekt, das angibt, ob ein QR-Code-Barcode decodiert werden soll.
    * Ein `Boolean`-Objekt, das angibt, ob ein Codabar-Barcode decodiert werden soll.
    * Ein `Boolean`-Objekt, das angibt, ob ein Code-128-Barcode decodiert werden soll.
@@ -217,7 +217,7 @@ Dekodieren Sie Formulardaten mithilfe der Barcode-Formulare-API (Web-Service):
    * Ein Zeichenfolgenwert, der decodierte Daten enthält (stellen Sie sicher, dass Sie den Rückgabewert der Methode `decode` verwenden).
    * Ein `Delimiter`-Auflistungswert, der das Trennzeichen für die Zeile angibt. Es wird empfohlen, `Delimiter.Carriage_Return` anzugeben.
    * Ein `Delimiter`-Auflistungswert, der das Feldtrennzeichen angibt. Geben Sie zum Beispiel `Delimiter.Tab` an.
-   * Ein `XMLFormat`-Auflistungswert, der angibt, ob die Barcode-Daten in XDP- oder in XFDF-XML-Daten konvertiert werden sollen. Geben Sie beispielsweise `XMLFormat.XDP` an, um die Daten in XDP-Daten zu konvertieren.
+   * Ein `XMLFormat`-Auflistungswert, der angibt, ob die Barcode-Daten in XDP- oder XFDF-XML-Daten konvertiert werden sollen. Geben Sie beispielsweise `XMLFormat.XDP` an, um die Daten in XDP-Daten zu konvertieren.
 
    >[!NOTE]
    >
@@ -228,7 +228,7 @@ Dekodieren Sie Formulardaten mithilfe der Barcode-Formulare-API (Web-Service):
 1. Verarbeiten der decodierten Daten
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des gesicherten PDF-Dokuments darstellt.
-   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `encryptPDFUsingPassword` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `binaryData` des `BLOB`-Objekts abrufen.
+   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `encryptPDFUsingPassword` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des `binaryData`-Datenelements des `BLOB`-Objekts abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
    * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 

@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: e02f5484-fbc2-40dc-8d06-ddb53fd9afc2
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '3503'
-ht-degree: 77%
+ht-degree: 75%
 
 ---
 
@@ -28,13 +28,13 @@ Nutzen Sie die folgenden logischen Schritte, um Ihre benutzerdefinierte Komponen
 
 1. Erstellen eines Taghandlers
 
-   * Ein Taghandler ist ein POJO, das HTML-Tags eines bestimmten Typs handelt. Welche HTML-Tags Ihr Taghandler handeln kann, wird über die OSGi-Eigenschaft „tagpattern.name“ in der TagHandlerFactory definiert. Im Grunde handelt es sich bei der OSGi-Eigenschaft um einen RegEx, der dem Eingabe-HTML-Tag entsprechen sollte, das Sie handeln möchten. Alle verschachtelten Tags würden zum Handling an den Taghandler übergeben werden. Wenn Sie sich z. B. für ein div registrieren, das ein verschachteltes &lt;p>-Tag enthält, wird das &lt;p>-Tag ebenfalls an den Taghandler übermittelt und Sie können entscheiden, wie Sie damit umgehen möchten.
+   * Ein Taghandler ist ein POJO, das HTML-Tags eines bestimmten Typs handelt. Die &quot;Art&quot;von HTML-Tags, die Ihr TagHandler verarbeiten kann, wird über die OSGi-Eigenschaft &quot;tagpattern.name&quot;von TagHandlerFactory definiert. Im Grunde handelt es sich bei der OSGi-Eigenschaft um einen RegEx, der dem Eingabe-HTML-Tag entsprechen sollte, das Sie handeln möchten. Alle verschachtelten Tags würden zum Handling an den Taghandler übergeben werden. Wenn Sie sich z. B. für ein div registrieren, das ein verschachteltes &lt;p>-Tag enthält, wird das &lt;p>-Tag ebenfalls an den Taghandler übermittelt und Sie können entscheiden, wie Sie damit umgehen möchten.
    * Die Oberfläche des Taghandlers ähnelt der Oberfläche eines SAX-Inhaltshandlers. Sie erhält für jedes HTML-Tag SAX-Ereignisse. Als Anbieter eines Taghandlers müssen Sie bestimmte Lebenszyklusmethoden implementieren, die automatisch vom Design-Importer-Framework abgerufen werden.
 
 1. Erstellen Sie die entsprechende TagHandlerFactory.
 
    * Bei der TagHandlerFactory handelt es sich um eine OSGi-Komponente (Singleton), die dafür verantwortlich ist, Instanzen des Taghandlers zu erzeugen.
-   * Ihre TagHandlerFactory muss eine OSGi-Eigenschaft mit dem Namen „tagpattern.name“ bereitstellen, deren Wert mit dem Eingabe-HTML-Tag abgeglichen wird.
+   * Ihre Tag-Handler-Factory muss eine OSGi-Eigenschaft namens &quot;tagpattern.name&quot;verfügbar machen, deren Wert mit dem Eingabe-HTML-Tag übereinstimmt.
    * Wenn mehrere Taghandler mit dem Eingabe-HTML-Tag übereinstimmen, wird jener mit dem höheren Rang gewählt. Der Rang selbst wird als OSGi-Eigenschaft bereitgestellt **service.ranking**.
    * Die TagHandlerFactory ist eine OSGi-Komponente. Sämtliche Verweise auf den Taghandler müssen über diese Factory erfolgen.
 
@@ -326,7 +326,7 @@ Ein Lead-Formular ist ein Formular, das dazu verwendet wird, die Informationen e
 * Mithilfe dieser Komponenten kann der Autor ein eigenständiges Formular entwerfen. Diese Felder entsprechen den Lead-Formular-Feldern. In eigenständigen oder importierten Zip-Anwendungen kann der Benutzer mit den Formularfeldern „cq:form“ oder „cta lead“ weitere Felder hinzufügen und diese seinen Anforderungen entsprechend benennen und entwerfen.
 * Weisen Sie Lead-Formular-Felder mithilfe bestimmter vordefinierter Namen des CTA-Lead-Formulars zu, z. B. - firstName für Vorname im Lead-Formular usw.
 * Felder, die nicht dem Lead-Formular zugewiesen sind, werden cq:form-Komponenten zugewiesen: Text, Optionsschalter, Kontrollkästchen, Dropdown, Verborgen, Kennwort.
-* Benutzer können den Titel mit dem Tag „label“ und Stile mit dem Stilattribut „class“ angeben (nur für CTA-Lead-Formular-Komponenten verfügbar).
+* Der Benutzer kann den Titel mithilfe des Tags &quot;label&quot;angeben und die Formatierung mithilfe des Stilattributs &quot;class&quot;bereitstellen (nur für CTA-Lead-Formular-Komponenten verfügbar).
 * Die Dankeseite und die Abonnementliste können als ausgeblendeter Parameter des Formulars (in der index.htm) bereitgestellt oder über die Bearbeitungsleiste von &quot;Start des Lead-Formulars&quot;hinzugefügt/bearbeitet werden.
 
    &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/en/user/register/thank_you&quot;/>
@@ -470,7 +470,7 @@ Die Verwendung von CSS-Auswahlen, die den folgenden ähneln, wird bei der Verwen
 Dies liegt daran, dass dem generierten HTML nach dem Import zusätzliche HTML-Elemente wie das &lt;div>-Tag hinzugefügt werden.
 
 * Skripts, die auf einer ähnlichen Struktur basieren, werden ebenfalls nicht für die Verwendung mit Elementen empfohlen, die für die Konvertierung in AEM-Komponenten vorgesehen sind.
-* Verwendung von Stilen auf den Markup-Tags für die Komponentenkonvertierung wie &lt;div data-cq-component=&quot;”&amp;ast;”&quot;> wird nicht empfohlen.
+* Verwendung von Stilen auf den Markup-Tags für die Komponentenkonvertierung wie &lt;div data-cq-component=&quot;&amp;ast;&quot;> wird nicht empfohlen.
 * Beim Designlayout sollten die Best Practices für das HTML5-Boilerplate befolgt werden. Mehr dazu unter: [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Konfigurieren von OSGi-Modulen {#configuring-osgi-modules}

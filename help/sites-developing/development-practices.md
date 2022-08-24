@@ -1,8 +1,8 @@
 ---
 title: Entwicklungspraktiken
-seo-title: Entwicklungspraktiken
+seo-title: Development Practices
 description: Best Practices für die Entwicklung in AEM
-seo-description: Best Practices für die Entwicklung in AEM
+seo-description: Best practices for developing on AEM
 uuid: 27a75f7f-6e2c-4113-9e9f-c5013a4594c2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,18 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 8b0297a1-d922-410f-9aaf-3a6b87e11dc0
 exl-id: 65b2029e-03c9-4df4-8579-2b15dbee1035
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 100%
+source-wordcount: '629'
+ht-degree: 93%
 
 ---
 
 # Entwicklungspraktiken{#development-practices}
 
-## Arbeit anhand einer Definition von „Fertig“{#work-according-to-a-definition-of-done}
+## Arbeit anhand einer Definition von „Fertig“ {#work-according-to-a-definition-of-done}
 
-Jedes Team hat ein eigenes Verständnis davon, was „fertig“ bedeutet, aber es ist wichtig, eines zu haben und sicherzustellen, dass eine Story die definierten Kriterien erfüllt, bevor sie akzeptiert wird.
+Jedes Team hat eine andere Definition, was &quot;getan&quot;bedeutet, aber es ist wichtig, eine zu haben und sicherzustellen, dass eine Geschichte die definierten Kriterien erfüllt, bevor sie akzeptiert wird.
 
 Einige häufig von Teams angegebene Kriterien sind:
 
@@ -34,7 +34,7 @@ Einige häufig von Teams angegebene Kriterien sind:
 
 Ohne eine entsprechende Definition treten häufig Situationen auf, in denen vieles halbfertig, aber nichts abgeschlossen ist.
 
-### Programmier- und Formatierungskonventionen definieren und einhalten  {#define-and-adhere-to-coding-and-formatting-conventions}
+### Programmier- und Formatierungskonventionen definieren und einhalten {#define-and-adhere-to-coding-and-formatting-conventions}
 
 Dinge wie Einzüge und Leerräume erscheinen möglicherweise nicht wichtig, aber korrekt formatierter Code trägt erheblich zur Lesbarkeit und Pflegeleichtigkeit bei. Konventionen sollten im Team abgesprochen und beim Programmieren befolgt werden.
 
@@ -46,7 +46,7 @@ Entwickler sollten TDD praktizieren und fehlschlagende Einheitstests vor dem Pro
 
 Es gibt benutzerdefinierte Frameworks, z. B. Jackalope und Prosper, um die Imitation von JCR-APIs zu vereinfachen und so die Produktivität der Entwickler beim Schreiben von Einheitstests zu gewährleisten.
 
-### Immer bereit für Demos sein  {#stay-demo-ready}
+### Immer bereit für Demos sein {#stay-demo-ready}
 
 Das System sollte am Ende jeder Iteration für Demos im Unternehmen zur Verfügung stehen. Indem das System immer bereit für Demos gehalten wird, ist das Team immer nur eine Iteration von Produktionsbereitschaft entfernt und technische Rückstände werden auf ein vertretbares Maß beschränkt.
 
@@ -58,13 +58,13 @@ Das Implementieren einer kontinuierlichen Integrationsumgebung ermöglicht das e
 
 Wenn Einheitstests zu viel Zeit beanspruchen, lassen Entwickler sie aus, wodurch sie ihren Wert verlieren. Wenn es viel Zeit in Anspruch nimmt, den Code zu erstellen und bereitzustellen, werden diese Aufgaben seltener durchgeführt. Indem Sie kurze Erstellungszeiten zur Priorität machen, wird sichergestellt, dass die Zeit, die wir in unsere Testabdeckung und CI-Infrastruktur investiert haben, weiterhin der Produktivität des Teams zugutekommt.
 
-### „Sonar“ sowie andere statische Codeanalysewerkzeuge optimieren und ihre Berichte verwerten{#fine-tune-sonar-and-other-static-code-analysis-tools-and-act-on-their-reports}
+### „Sonar“ sowie andere statische Codeanalysewerkzeuge optimieren und ihre Berichte verwerten {#fine-tune-sonar-and-other-static-code-analysis-tools-and-act-on-their-reports}
 
 Codeanalysewerkzeuge haben nur dann einen Wert, wenn ihre Berichte vom Entwicklerteam verwertet werden. Ohne die Optimierung der Analysen, die diese Tools bieten, sind die generierten Empfehlungen nicht relevant und verlieren ihren Wert.
 
 ### Der Pfadfinderregel folgen {#follow-the-boy-scout-rule}
 
-Pfadfinder haben eine Regel: „Hinterlass es besser, als du es gefunden hast.“ Sofern sich alle Mitglieder des Entwicklerteams an diese Regel halten und eine Verbesserung vornehmen, wenn sie einen Fehler sehen, wird der Code konstant verbessert.
+Für die Scouts &quot;Boy&quot;gilt eine Regel: &quot;Lass es besser, als du es gefunden hast.&quot; Sofern sich alle Mitglieder des Entwicklerteams an diese Regel halten und eine Verbesserung vornehmen, wenn sie einen Fehler sehen, wird der Code konstant verbessert.
 
 ### Implementierung von YAGNI-Funktionen vermeiden {#avoid-implementing-yagni-features}
 

@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_je
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bd648c38-731b-420e-973d-a4728b69868e
 exl-id: e1519477-b5a8-4947-8597-26b945a3b819
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: tm+mt
 source-wordcount: '1713'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -117,6 +117,6 @@ Aktivieren Sie diese Option in Entwicklungsumgebungen, in denen Entwickler mithi
 
 **Nicht gesicherte RDS-Anfrage zulassen**: Wenn diese Option ausgewählt ist, müssen RDS-Anfragen keine HTTPS verwenden. Standardmäßig ist diese Option nicht ausgewählt und die Kommunikation mit Data Services muss über „https“-Anforderungen ausgeführt werden.
 
-**Nicht gesichertes Hochladen von Dokumenten aus Flex-Programmen zulassen**: Das Datei-Upload-Servlet für das Hochladen von Dokumenten aus Adobe Flex®-Programmen in AEM Forms erfordert, dass Benutzer authentifiziert und autorisiert werden, bevor sie Dokumente hochladen können. Dem Benutzer muss die Rolle „Document Upload Application User“ oder eine andere Rolle, die die Berechtigung zum Hochladen von Dokumenten enthält, zugewiesen sein. Dadurch wird verhindert, dass nicht autorisierte Benutzer Dokumente auf den AEM Forms-Server hochladen. Wählen Sie diese Option, wenn Sie diese Sicherheitsfunktion in einer Entwicklungsumgebung oder für die Abwärtskompatibilität mit vorherigen Versionen von AEM Forms deaktivieren wollen. Standardmäßig ist diese Option nicht aktiviert. Weitere Informationen finden Sie unter „AEM Forms mithilfe von AEM Forms Remoting aufrufen“, Programmieren mit AEM Forms.
+**Nicht gesichertes Hochladen von Dokumenten aus Flex-Programmen zulassen**: Das Datei-Upload-Servlet für das Hochladen von Dokumenten aus Adobe Flex®-Programmen in AEM Forms erfordert, dass Benutzer authentifiziert und autorisiert werden, bevor sie Dokumente hochladen können. Dem Benutzer muss die Rolle „Document Upload Application User“ oder eine andere Rolle, die die Berechtigung zum Hochladen von Dokumenten enthält, zugewiesen sein. Dadurch wird verhindert, dass nicht autorisierte Benutzer Dokumente auf den AEM Forms-Server hochladen. Wählen Sie diese Option, wenn Sie diese Sicherheitsfunktion in einer Entwicklungsumgebung oder für die Abwärtskompatibilität mit vorherigen Versionen von AEM Forms deaktivieren wollen. Standardmäßig ist diese Option nicht aktiviert. Weitere Informationen finden Sie unter &quot;AEM Formulare mithilfe von AEM Forms Remoting aufrufen&quot;in Programmieren mit AEM Formularen.
 
-**Nicht gesichertes Hochladen von Dokumenten von Java SDK-Programmen zulassen**: Hochladevorgänge mit HTTP DocumentManager müssen gesichert sein. HTTP-Uploads erfordern standardmäßig, dass Benutzer authentifiziert und dazu berechtigt sind, bevor sie Dokumente hochladen können. Dem Benutzer muss die Rolle „Dienstbenutzer“ oder eine andere Rolle, die die Berechtigung zum Aufrufen von Diensten enthält, zugewiesen sein. Dadurch wird verhindert, dass nicht autorisierte Benutzer Dokumente auf den Formularserver hochladen. Wählen Sie diese Option, wenn Sie diese Sicherheitsfunktion in einer Entwicklungsumgebung oder für die Abwärtskompatibilität mit vorherigen Versionen von AEM Forms oder basierend auf Ihrer Firewall-Einrichtung deaktivieren möchten. Standardmäßig ist diese Option nicht aktiviert. Weitere Informationen finden Sie unter „AEM Forms mithilfe der Java-API aufrufen“, Programmieren mit AEM Forms.
+**Nicht gesichertes Hochladen von Dokumenten von Java SDK-Programmen zulassen**: Hochladevorgänge mit HTTP DocumentManager müssen gesichert sein. HTTP-Uploads erfordern standardmäßig, dass Benutzer authentifiziert und dazu berechtigt sind, bevor sie Dokumente hochladen können. Dem Benutzer muss die Rolle „Dienstbenutzer“ oder eine andere Rolle, die die Berechtigung zum Aufrufen von Diensten enthält, zugewiesen sein. Dadurch wird verhindert, dass nicht autorisierte Benutzer Dokumente auf den Formularserver hochladen. Wählen Sie diese Option, wenn Sie diese Sicherheitsfunktion in einer Entwicklungsumgebung oder für die Abwärtskompatibilität mit vorherigen Versionen von AEM Forms oder basierend auf Ihrer Firewall-Einrichtung deaktivieren möchten. Standardmäßig ist diese Option nicht aktiviert. Weitere Informationen finden Sie unter &quot;AEM Formulare mithilfe der Java-API aufrufen&quot;in Programmieren mit AEM Formularen.

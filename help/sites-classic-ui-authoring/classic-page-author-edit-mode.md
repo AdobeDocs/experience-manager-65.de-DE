@@ -1,8 +1,8 @@
 ---
 title: Komponenten für die Seitenbearbeitung
-seo-title: Komponenten für die Seitenbearbeitung
+seo-title: Components for Page Authoring
 description: Die Komponenten stehen beim Bearbeiten einer Seite über die Registerkarte „Komponenten“ des Sidekicks und die Auswahl „Neue Komponente einfügen“ zur Verfügung (wenn Sie im Bereich „Komponenten oder Assets hierhin ziehen“ doppelklicken).
-seo-description: Die Komponenten stehen beim Bearbeiten einer Seite über die Registerkarte „Komponenten“ des Sidekicks und die Auswahl „Neue Komponente einfügen“ zur Verfügung (wenn Sie im Bereich „Komponenten oder Assets hierhin ziehen“ doppelklicken).
+seo-description: The components are available when editing a page from the Components tab of the sidekick and the Insert New Component selector (when you double-click in the Drag components or assets here area).
 uuid: c353073d-d4d1-4529-b8bd-d0ca302cc9a0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 9aa0521f-f321-42e9-b022-7ff968a36212
 docset: aem65
 exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '6169'
+source-wordcount: '6133'
 ht-degree: 89%
 
 ---
@@ -30,7 +30,7 @@ Einige sind direkt im Sidekick verfügbar, viele andere können außerdem im [De
 >
 >Abhängig von Ihrer Instanz besitzen Sie möglicherweise benutzerdefinierte Komponenten, die speziell für Ihre Anforderungen entwickelt wurden. Möglicherweise haben diese sogar denselben Namen wie die hier behandelten Komponenten.
 
-Die Komponenten sind verfügbar, wenn Sie [eine Seite](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) auf der Registerkarte **Komponenten** des Sidekicks und der Auswahl **Neue Komponente einfügen** bearbeiten (wenn Sie auf den Bereich **Komponenten oder Assets hierher ziehen** doppelklicken).
+Die Komponenten sind verfügbar, wenn [Bearbeiten einer Seite](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) von **Komponenten** Registerkarte des Sidekicks und **Neue Komponente einfügen** Selektor (wenn Sie auf die **Komponenten oder Assets hierher ziehen** Bereich).
 
 Sie können eine Komponente auswählen und an die gewünschte Position auf Ihrer Seite ziehen und dann [Inhalt und Eigenschaften bearbeiten](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties).
 
@@ -44,13 +44,13 @@ Komponenten werden nach verschiedenen Kategorien (Komponentengruppen) sortiert, 
 
 Die allgemeinen Komponenten sind die grundlegenden Komponenten, mit denen Sie Inhalte erstellen.
 
-### Kontoelement  {#account-item}
+### Kontoelement {#account-item}
 
 Sie können einen Link mit Titel und Beschreibung definieren.
 
 ![](do-not-localize/chlimage_1-2.png)
 
-### Adaptives Bild  {#adaptive-image}
+### Adaptives Bild {#adaptive-image}
 
 Die Komponente der Adaptive Image Foundation erzeugt Bilder, die in das Fenster eingepasst werden, in dem die Webseite geöffnet wird. Um die Komponente zu verwenden, geben Sie eine Bildressource entweder im Dateisystem oder im DAM an. Wenn die Webseite geöffnet wird, lädt der Webbrowser eine Kopie des Bildes herunter, die so in der Größe angepasst wurde, dass sie in das aktuelle Fenster passt.
 
@@ -68,11 +68,11 @@ Sie können Bilddateien mit den folgenden Dateinamenerweiterungen mit der Adapti
 * .jpg
 * .jpeg
 * .png
-* .gif **
+* .gif &#42;&#42;
 
 >[!CAUTION]
 >
->** Animierte .gif-Dateien werden in AEM nicht für adaptive Darstellungen unterstützt.
+>&#42;&#42; Animierte GIF-Dateien werden in AEM für adaptive Darstellungen nicht unterstützt.
 
 #### Bildgrößen und Qualität {#images-sizes-and-quality}
 
@@ -168,8 +168,8 @@ Abhängig von dem von Ihnen ausgewählten Element wird ein neues Fenster geöffn
 Geben Sie den Pfad entweder manuell oder mithilfe der Auswahl an. Wenn Sie nichts angeben, wird die aktuelle Seite als übergeordnete Seite verwendet.
       * **Optionen für Liste fester Werte**
 
-         * ****
-SeitenWählen Sie eine Liste von Seiten aus. Verwendung 
+         * **Seiten**
+Wählen Sie eine Liste von Seiten aus. Verwendung 
 `+` um weitere Einträge und die Nach-oben-/Nach-unten-Schaltflächen hinzuzufügen, um die Reihenfolge anzupassen.
       * **Optionen für die Suche**
 
@@ -183,9 +183,9 @@ Sie können eine Textsuchanfrage eingeben.
          * **Querybuilder-Eigenschafts-Notation**
 Geben Sie mit der Querybuilder-Eigenschafts-Notation eine Suchanfrage ein. Sie können beispielsweise „fulltext=Marketing“ eingeben, um alle Seiten, deren Inhalt das Wort „Marketing“ enthält, in Ihrem Karussell anzuzeigen.
 Unter [QueryBuilder API](/help/sites-developing/querybuilder-api.md) finden Sie eine umfassende Übersicht über Abfrageausdrücke sowie weitere Beispiele.
-   * **Sortieren**
-nach Auswahl 
-`jcr:title`,  `jcr:created`,  `cq:lastModified`oder  `cq:template` aus dem Dropdown-Menü aus.
+   * **Sortierreihenfolge**
+Auswählen 
+`jcr:title`, `jcr:created`, `cq:lastModified`oder `cq:template` aus dem Dropdown-Menü aus.
 
    * **Begrenzung**
 Die maximale Anzahl der Elemente, die Sie im Karussell verwenden möchten (optional).
@@ -195,16 +195,17 @@ Die maximale Anzahl der Elemente, die Sie im Karussell verwenden möchten (optio
 
 
 >[!NOTE]
-Sie können eine individuelle Karussell-Komponente für Adobe Experience Manager erstellen, in der die im AEM DAM vorhandenen digitalen Assets angezeigt werden. Weitere Informationen finden Sie im Beitrag zum [Erstellen von benutzerdefinierten Karussellkomponenten für Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/custom-carousel-components.html).
+>
+>Sie können eine individuelle Karussell-Komponente für Adobe Experience Manager erstellen, in der die im AEM DAM vorhandenen digitalen Assets angezeigt werden. Weitere Informationen finden Sie im Beitrag zum [Erstellen von benutzerdefinierten Karussellkomponenten für Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/custom-carousel-components.html).
 
 ### Diagramm {#chart}
 
 Mit der Komponente „Diagramm“ können Sie ein Balken-, Linien- oder Tortendiagramm hinzufügen. AEM erstellt aus den von Ihnen zur Verfügung gestellten Daten ein Diagramm. Die Daten geben Sie direkt auf der Registerkarte „Daten“ ein oder fügen sie durch Kopieren aus einer Tabelle ein.
 
-* **Daten**
+* **letzten 30 Tage**
 
    * **Diagrammdaten**
-Geben Sie die Diagrammdaten im CSV-Format ein; das CSV-Format (kommagetrennte Werte) verwendet ein Komma (,) als Feldtrennzeichen.
+Geben Sie Ihre Diagrammdaten im CSV-Format ein. Das Format &quot;Kommagetrennte Werte&quot;verwendet Kommas (&quot;,&quot;) als Feldtrennzeichen.
 
 * **Erweitert**
 
@@ -225,13 +226,16 @@ Im Folgenden sehen Sie ein Beispiel für Diagrammdaten und das daraus resultiere
 ![chlimage_1-6](assets/chlimage_1-6.png) ![dc_chart_use](assets/dc_chart_use.png)
 
 >[!NOTE]
-Sie können eine benutzerdefinierte Diagrammsteuerung für AEM erstellen, in der Daten aus dem AEM JCR angezeigt werden. Weitere Informationen finden Sie im Beitrag zum [Anzeigen von Adobe Experience Manager-Daten in einem Diagramm](https://helpx.adobe.com/experience-manager/using/displaying-experience-manager-data-chart.html).
+>
+>Sie können eine benutzerdefinierte Diagrammsteuerung für AEM erstellen, in der Daten aus dem AEM JCR angezeigt werden. Weitere Informationen finden Sie im Beitrag zum [Anzeigen von Adobe Experience Manager-Daten in einem Diagramm](https://helpx.adobe.com/experience-manager/using/displaying-experience-manager-data-chart.html).
 
 ### Inhaltsfragment {#content-fragment}
 
 >[!CAUTION]
-Die volle Funktionalität der Inhaltsfragmentverwaltung ist nur in der Touch-optimierten Benutzeroberfläche verfügbar.
-Die Inhaltsfragment-Komponente wird im Sidekick der klassischen Benutzeroberfläche angezeigt, weitere Funktionen sind jedoch nicht verfügbar.
+>
+>Die volle Funktionalität der Inhaltsfragmentverwaltung ist nur in der Touch-optimierten Benutzeroberfläche verfügbar.
+>
+>Die Inhaltsfragment-Komponente wird im Sidekick der klassischen Benutzeroberfläche angezeigt, weitere Funktionen sind jedoch nicht verfügbar.
 
 [Inhaltsfragmente](/help/sites-classic-ui-authoring/classic-page-author-content-fragments.md) werden als seitenunabhängige Assets erstellt und verwaltet. Sie können diese Fragmente und ihre Varianten bei der Erstellung Ihrer Inhaltsseiten verwenden.
 
@@ -282,7 +286,8 @@ Die externe Anwendung wird in das Absatzsystem der AEM-Seite integriert. Beispie
 ![chlimage_1-7](assets/chlimage_1-7.png)
 
 >[!NOTE]
-Abhängig von Ihrem Nutzungsszenario sind weitere Optionen für die Integration externer Anwendungen verfügbar, z. B.: die [Integration von Portlets](/help/sites-administering/aem-as-portal.md).
+>
+>Abhängig von Ihrem Nutzungsszenario sind weitere Optionen für die Integration externer Anwendungen verfügbar, z. B.: die [Integration von Portlets](/help/sites-administering/aem-as-portal.md).
 
 ### Flash  {#flash}
 
@@ -335,9 +340,12 @@ Sie können ein Bild aus dem [Content Finder](/help/sites-classic-ui-authoring/c
 ![dc_image](assets/dc_image.png)
 
 >[!NOTE]
-Der Upload-Fortschritt kann in Internet Explorer nicht verfolgt werden.
-Benutzer von Internet Explorer müssen das Bild hochladen und auf **OK** klicken und anschließend das Bild erneut öffnen, um die hochgeladene Datei in der Vorschau sehen und Änderungen (z. B. Zuschneiden) vornehmen zu können.
-Weitere Informationen zu den von AEM verwendeten HTML5-Funktionen finden Sie im Abschnitt [Zertifizierte Plattformen](/help/release-notes/release-notes.md#certifiedplatforms) .
+>
+>Der Upload-Fortschritt kann in Internet Explorer nicht verfolgt werden.
+>
+>Benutzer von Internet Explorer müssen das Bild hochladen und auf **OK** klicken und anschließend das Bild erneut öffnen, um die hochgeladene Datei in der Vorschau sehen und Änderungen (z. B. Zuschneiden) vornehmen zu können.
+>
+>Siehe [Zertifizierte Plattformen](/help/release-notes/release-notes.md#certifiedplatforms) für weitere Informationen über von AEM verwendete HTML5-Funktionen.
 
 Wenn ein Bild geladen wird, können folgende Konfigurationen durchgeführt werden:
 
@@ -388,7 +396,8 @@ Das endgültige Bild (mit **Titel** und **Beschreibung**) sieht beispielsweise w
 ### Layout-Container {#layout-container}
 
 >[!CAUTION]
-Auch wenn die Layout-Container-Komponente in der klassischen Benutzeroberfläche verfügbar ist, steht der vollständige Funktionsumfang nur in der Touch-optimierten Benutzeroberfläche zur Verfügung. Weitere Informationen finden Sie unter [Responsives Layout](/help/sites-classic-ui-authoring/classic-page-author-responsive-layout.md).
+>
+>Auch wenn die Layout-Container-Komponente in der klassischen Benutzeroberfläche verfügbar ist, steht der vollständige Funktionsumfang nur in der Touch-optimierten Benutzeroberfläche zur Verfügung. Weitere Informationen finden Sie unter [Responsives Layout](/help/sites-classic-ui-authoring/classic-page-author-responsive-layout.md).
 
 ### Liste {#list}
 
@@ -514,7 +523,7 @@ Geben Sie die Seite (das Produkt) an, für das der Auftragsstatus angezeigt werd
 
 ![chlimage_1-10](assets/chlimage_1-10.png)
 
-### Verweis  {#reference}
+### Verweis {#reference}
 
 Mit der Komponente **Verweis** können Sie auf Text in einem anderen Teil einer AEM-basierten Website (innerhalb der aktuellen Instanz) verweisen. Der Inhalt des referenzierten Absatzes wird dann so angezeigt, als wäre er auf der aktuellen Seite. Der Inhalt wird aktualisiert, wenn sich der Quellabsatz ändert (u. U. ist eine Seitenaktualisierung erforderlich).
 
@@ -554,7 +563,7 @@ Sie können Folgendes konfigurieren:
 
    * **Knotentypen**
 
-      Wenn die Suche auf bestimmte Knotentypen beschränkt werden soll, können Sie sie hier auflisten. z. B. `cq:Page`.
+      Wenn die Suche auf bestimmte Knotentypen beschränkt werden soll, können Sie sie hier auflisten. Beispiel: `cq:Page`.
 
    * **Suchpfad**
 
@@ -633,7 +642,7 @@ Sie können Folgendes konfigurieren:
 
    * **Neue Folie**
 
-      Mithilfe der Schaltflächen **Hinzufügen** (und **Entfernen**) können Sie eine Auswahl an Folien angeben.
+      Sie können eine Auswahl an Folien mithilfe der Variablen **Hinzufügen** und **Entfernen**).
 
    * **Titel**
 
@@ -652,8 +661,10 @@ Die Bildschirmpräsentation-Komponente zeigt dann wiederholt die einzelnen Fotos
 ### Tabelle {#table}
 
 >[!NOTE]
-Die Komponente **Tabelle** basiert auf dem [Rich-Text-Editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md) - genau wie die Komponente **[Text.](#text)**
-Die Komponente **Tabelle** sollte für Tabellen verwendet werden, auch wenn diese ebenso mit der Komponente **Text** erstellt werden können.
+>
+>Die Komponente **Tabelle** basiert auf dem [Rich-Text-Editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md) - genau wie die Komponente **[Text.](#text)**
+>
+>Die Komponente **Tabelle** sollte für Tabellen verwendet werden, auch wenn diese ebenso mit der Komponente **Text** erstellt werden können.
 
 Die Komponente **Tabelle** ist so vorkonfiguriert, dass Sie damit eine Tabelle erstellen, ausfüllen und formatieren können. Im Dialogfeld können Sie Ihre Tabelle konfigurieren und die Inhalte wie folgt erstellen:
 
@@ -688,8 +699,10 @@ Weitere Informationen zur Verwendung von Tags finden Sie im Beitrag zum [Verwend
 ### Text {#text}
 
 >[!NOTE]
-Die Komponente **Text** basiert auf dem [Rich-Text-Editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md) - genau wie die Komponente **[Tabelle](#table)**.
-Die Komponente **Tabelle** sollte für Tabellen verwendet werden, auch wenn diese ebenso mit der Komponente **Text** erstellt werden können.
+>
+>Die Komponente **Text** basiert auf dem [Rich-Text-Editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md) - genau wie die Komponente **[Tabelle](#table)**.
+>
+>Die Komponente **Tabelle** sollte für Tabellen verwendet werden, auch wenn diese ebenso mit der Komponente **Text** erstellt werden können.
 
 Mit der Text-Komponente können Sie über einen WYSIWYG-Editor einen Textblock eingeben und die Funktionen nutzen, die der [Rich-Text-Editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md) bereitstellt. Über mehrere Symbole können Sie den Text formatieren, darunter Schriftmerkmale, Ausrichtung, Links, Listen und Einzüge:
 
@@ -718,11 +731,11 @@ Mit der Komponente „Text und Bild“ werden ein Textblock und ein Bild hinzuge
 
 Sie können Folgendes konfigurieren:
 
-* **Komponentenstile**  (**Stile**)
+* **Komponentenstile** (**Stile**)
 
    Mit dieser Option können Sie das Bild rechts- oder linksbündig ausrichten. Standardmäßig wird das Bild **linksbündig** ausgerichtet.
 
-* **Bildeigenschaften**  (**Erweiterte Bildeigenschaften**)
+* **Bildeigenschaften** (**Erweiterte Bildeigenschaften**)
 
    Dies ermöglicht die Festlegung des Folgenden:
 
@@ -779,7 +792,7 @@ Das folgende Beispiel zeigt eine angezeigte **Titel**-Komponente; das Design wir
 
 ![dc_title_use](assets/dc_title_use.png)
 
-### Video {#video}
+### Video    {#video}
 
 Mit der **Video-Komponente** können Sie ein vordefiniertes und vorgefertigtes Videoelement auf einer Seite platzieren.
 
@@ -787,7 +800,7 @@ Sie können auch HTML5-Elemente verwenden. Einzelheiten hierzu finden Sie unter 
 
 Nachdem Sie eine Instanz der Komponente auf Ihrer Seite platziert haben, können Sie Folgendes konfigurieren:
 
-* Video
+* Video   
 
    * **Video-Asset**
 
@@ -798,11 +811,13 @@ Nachdem Sie eine Instanz der Komponente auf Ihrer Seite platziert haben, können
       Die systemeigene Größe des Videos (Breite x Höhe in Pixel) wird in den Feldern neben der Größe angezeigt (siehe oben). Geben Sie die Breite und Höhe hier manuell ein, wenn Sie die systemeigenen Abmessungen des Videos überschreiben möchten. Klicken Sie auf **OK**, um das Dialogfeld zu schließen.
 
 >[!NOTE]
-Unterstützte Formate:
-* `.mp4`
-* `Ogg`
-* `FLV` (Flash video)
-
+>
+>Unterstützte Formate:
+>
+>* `.mp4`
+>* `Ogg`
+>* `FLV` (Flash video)
+>
 
 
 ## Spalten {#columns}
@@ -817,7 +832,7 @@ Das folgende Beispiel zeigt die Komponenten für zwei und drei Spalten im Einsat
 
 Eine Spalten-Steuerung-Komponente mit standardmäßig 2 gleich großen Spalten.
 
-### 3 Spalten  {#columns-2}
+### 3 Spalten {#columns-2}
 
 Eine Spalten-Steuerung-Komponente mit standardmäßig 3 gleich großen Spalten.
 
@@ -836,11 +851,12 @@ Mit der Spalten-Steuerung-Komponente können Benutzer auswählen, wie sie den In
 Mit Formular-Komponenten können Sie Formulare erstellen, damit Besucher Eingaben vornehmen können. Formulare und Formular-Komponenten können dazu genutzt werden, Informationen, einschließlich Benutzer-Feedback (z. B. ein Fragebogen zur Kundenzufriedenheit), und Benutzerinformationen (z. B. Benutzerregistrierung) zu sammeln.
 
 >[!NOTE]
-Weitere Informationen zu AEM Forms finden Sie in der [AEM Forms-Hilfe](/help/forms/home.md).
+>
+>Weitere Informationen zu AEM Forms finden Sie in der [AEM Forms-Hilfe](/help/forms/home.md).
 
 Formulare bestehen aus mehreren verschiedenen Komponenten:
 
-* **Form**
+* **Formular**
 
    Die Formular-Komponente definiert den Beginn und das Ende eines neuen Formulars auf einer Seite. Andere Komponenten können dann zwischen diesen Elementen eingefügt werden, z.&amp;nbsp;B. Tabellen, Downloads usw.
 
@@ -857,7 +873,8 @@ Das folgende Beispiel zeigt ein Beispielformular. Es besteht aus der **Formular*
 ![dc_form](assets/dc_form.png)
 
 >[!NOTE]
-Informationen dazu, wie Sie Ihre Formulare weiter entwickeln und anpassen können, finden Sie auf der Seite zum [Entwickeln von Formularen](/help/sites-developing/developing-forms.md). Dies betrifft das Hinzufügen von Aktionen und Beschränkungen, das Vorabladen von Feldern und die Verwendung von Scripts, um z. B. einen Service aufzurufen, der eine Aktion ausführt.
+>
+>Informationen dazu, wie Sie Ihre Formulare weiter entwickeln und anpassen können, finden Sie auf der Seite zum [Entwickeln von Formularen](/help/sites-developing/developing-forms.md). Dies betrifft das Hinzufügen von Aktionen und Beschränkungen, das Vorabladen von Feldern und die Verwendung von Scripts, um z. B. einen Service aufzurufen, der eine Aktion ausführt.
 
 ### Gemeinsame Einstellungen vieler Formular-Komponenten {#settings-common-to-many-form-components}
 
@@ -873,7 +890,7 @@ Wenn Sie eine beliebige Formular-Komponente konfigurieren, sind im Dialogfeld di
 
    Ermöglicht Ihnen das Festlegen eines Standardwerts.
 
-* **Beschränkungen**
+* **Begrenzungen**
 
    Hier können Sie angeben, ob ein Feld erforderlich ist, und diese Beschränkungen für dieses Feld platzieren (z.&amp;nbsp;B. ob nur numerische Werte zulässig sind).
 
@@ -882,7 +899,8 @@ Wenn Sie eine beliebige Formular-Komponente konfigurieren, sind im Dialogfeld di
    Gibt die Größe und den Stil der Felder an.
 
 >[!NOTE]
-Die angezeigten Felder können je nach Komponente sehr unterschiedlich sein.
+>
+>Die angezeigten Felder können je nach Komponente sehr unterschiedlich sein.
 
 Diese Registerkarten stellen die erforderlichen Parameter bereit. Diese können vom Typ der einzelnen Komponenten abhängen, können jedoch Folgendes enthalten:
 
@@ -914,7 +932,7 @@ Dies ist ein erforderliches Feld und sollte nur die folgenden Zeichen enthalten:
 
       Die beim Öffnen des Formulars im Feld angezeigten Werte, also bevor der Benutzer seine Eingabe vornimmt.
 
-* **Beschränkungen**
+* **Begrenzungen**
 
    * **Erforderlich**
 
@@ -944,7 +962,7 @@ Dies ist ein erforderliches Feld und sollte nur die folgenden Zeichen enthalten:
 
    * **CSS**
 
-### Formular (Komponente)  {#form-component}
+### Formular (Komponente) {#form-component}
 
 Die Formular-Komponente definiert den Beginn und das Ende eines Formulars mithilfe der Elemente **Formular-Start** und **Formular-Ende**. Diese treten immer gemeinsam auf, damit das Formular ordnungsgemäß definiert wird.
 
@@ -952,7 +970,7 @@ Die Formular-Komponente definiert den Beginn und das Ende eines Formulars mithil
 
 Zwischen dem Start und dem Ende eines Formulars können Sie Formular-Komponenten hinzufügen, die die eigentlichen Eingabefelder für die Benutzer definieren.
 
-#### Beginn des Formulars  {#start-of-form}
+#### Beginn des Formulars {#start-of-form}
 
 Diese Komponente ist erforderlich, um den Beginn eines neuen Formulars auf einer Seite zu definieren. Sie können Folgendes konfigurieren:
 
@@ -1024,7 +1042,7 @@ Mit **Ladepfad** können Sie das Formular mit Werten in den erforderlichen Felde
          `/apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
    * **Aktionskonfiguration**
 
-      Die in **Aktionskonfiguration** verfügbaren Optionen hängen vom ausgewählten **Aktionstyp** ab:
+      Die in **Aktionskonfiguration** hängt von der **Aktionstyp** selected:
 
       * **Kontoabfrage**
 
@@ -1032,8 +1050,7 @@ Mit **Ladepfad** können Sie das Formular mit Werten in den erforderlichen Felde
 Die Seite, die beim Erstellen eines neuen Kontos verwendet wird.
       * **Inhalt erstellen**
 
-         * Inhaltspfad
-Der Inhaltspfad für alle Inhalte, die im Formular ausgegeben werden. Geben Sie einen Pfad ein, der mit einem Schrägstrich `/` endet. Der Schrägstrich bedeutet, dass für jeden Formular-Port ein neuer Knoten an dem angegebenen Speicherort erstellt wird. Beispiel:
+         * Inhaltspfad Der Inhaltspfad für alle Inhalte, die im Formular ausgegeben werden. Pfad eingeben, der mit einem Schrägstrich endet `/`. Der Schrägstrich bedeutet, dass für jeden Formular-Port ein neuer Knoten an dem angegebenen Speicherort erstellt wird. Beispiel:
             `/forms/feedback/`
 
          * **Typ**
@@ -1050,7 +1067,7 @@ Der Inhaltspfad für alle Inhalte, die im Formular ausgegeben werden. Geben Sie 
 
          * **Ressourcentyp**
 
-            Wenn festgelegt, wird dies zu jedem Kommentar als `sling:resourceType` hinzugefügt.
+            Wenn festgelegt, wird dies zu jedem Kommentar als `sling:resourceType`
 
          * **Ansichtselektor**
       * **Lead erstellen**
@@ -1073,10 +1090,10 @@ Geben Sie die erforderliche Lead-Liste an.
 
          * **Daten anzeigen...**
 
-            Klicken Sie auf diese Schaltfläche, um in der Massenbearbeitung auf die Informationen zu den Formularergebnissen zuzugreifen. Von hier aus können Sie die Informationen in eine `.tsv` (tabulatorgetrennte) Datei exportieren (z. B. in eine Excel-Tabelle).
+            Klicken Sie auf diese Schaltfläche, um in der Massenbearbeitung auf die Informationen zu den Formularergebnissen zuzugreifen. Von hier aus können Sie die Informationen in eine `.tsv` (tabulatorgetrennte) Datei (z. B. zur Verwendung in einer Excel-Tabelle).
       * **E-Mail**
 
-         * **From**
+         * **Von**
 
             Geben Sie die E-Mail-Adresse ein, von der aus die E-Mail gesendet werden soll.
 
@@ -1104,7 +1121,7 @@ Geben Sie die erforderliche Lead-Liste an.
 
          * **Inhalts-Pfad**
 
-            Der Inhaltspfad zu Inhalten, die aus dem Formular ausgegeben werden. Geben Sie einen Pfad ein, der mit einem Schrägstrich `/` endet. Der Schrägstrich zeigt an, dass für jeden Formular-Port ein neuer Knoten unter dem angegebenen Verzeichnis erstellt wird. Beispiel:
+            Der Inhaltspfad zu Inhalten, die aus dem Formular ausgegeben werden. Pfad eingeben, der mit einem Schrägstrich endet `/`. Der Schrägstrich zeigt an, dass für jeden Formular-Port ein neuer Knoten unter dem angegebenen Verzeichnis erstellt wird. Beispiel:
             `/forms/feedback/`
 
          * **Daten anzeigen...**
@@ -1112,7 +1129,7 @@ Geben Sie die erforderliche Lead-Liste an.
             Klicken Sie auf diese Schaltfläche, um in der Massenbearbeitung auf die Informationen zu den Formularergebnissen zuzugreifen. Von hier aus können Sie die Informationen in eine TSV-Datei (durch Tabulatoren getrennt) exportieren, die Sie z. B. in einer Excel-Tabelle öffnen können.
       * **Inhalt mit Uploads speichern**
 
-         Dies hat dieselben Optionen wie **Inhalt speichern**.
+         Dies hat die gleichen Optionen wie **Inhalt speichern**.
 
       * **Abonnenten löschen**
 
@@ -1181,7 +1198,7 @@ Bei der Captcha-Komponente muss der Benutzer eine alphanumerische Zeichenfolge e
 
 Sie können verschiedene Parameter für diese Komponente konfigurieren, darunter eine Meldung, die bei einer ungültigen Captcha-Zeichenfolge angezeigt wird.
 
-### Kontrollkästchen-Gruppe  {#checkbox-group}
+### Kontrollkästchen-Gruppe {#checkbox-group}
 
 Mit einem Kontrollkästchen können Sie eine Liste aus einem oder mehreren Kontrollkästchen erstellen, von denen mehrere gleichzeitig aktiviert werden können.
 
@@ -1190,8 +1207,10 @@ Mit einem Kontrollkästchen können Sie eine Liste aus einem oder mehreren Kontr
 Sie können verschiedene Parameter festlegen wie einen Titel, eine Beschreibung und einen Elementnamen. Mit den Schaltflächen „+“ und „–“ können Sie Elemente hinzufügen oder entfernen und sie dann mit den Nach-oben- und Nach-unten-Pfeilen positionieren.
 
 >[!NOTE]
-Mit **Element-Ladepfad** können Sie die Kontrollkästchengruppen-Liste vorab mit Werten laden.
-Siehe [Vorabladen von Formularfeldern mit mehreren Werten](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+>
+>Mit **Element-Ladepfad** können Sie die Kontrollkästchengruppen-Liste vorab mit Werten laden.
+>
+>Siehe [Vorabladen von Formularfeldern mit mehreren Werten](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Kreditkartendetails {#credit-card-details}
 
@@ -1208,17 +1227,20 @@ Eine Dropdown-Liste kann mit Ihren Werten konfiguriert werden, die der Benutzer 
 Sie können einen Titel und Elemente angeben, die in der Liste angezeigt werden. Mit den Schaltflächen „+“ und „-“ können Sie Listenelemente hinzufügen oder entfernen und sie dann mit den Nach-oben- und Nach-unten-Tasten positionieren. Sie können festlegen, ob Benutzer mehrere Elemente aus der Liste auswählen können, sowie alle Elemente, die automatisch ausgewählt werden sollen, wenn ein Benutzer die Liste zum ersten mal öffnet (Anfangswerte).
 
 >[!NOTE]
-Mit dem **Element-Ladepfad** können Sie die Dropdown-Liste vorab mit Werten laden.
-Siehe [Vorabladen von Formularfeldern mit mehreren Werten](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+>
+>Mit dem **Element-Ladepfad** können Sie die Dropdown-Liste vorab mit Werten laden.
+>
+>Siehe [Vorabladen von Formularfeldern mit mehreren Werten](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Datei-Upload {#file-upload}
 
-Die Komponente „Datei-Upload“ bietet Benutzern die Möglichkeit, eine Datei auszuwählen und hochzuladen.
+Die Datei-Upload-Komponente bietet Benutzern die Möglichkeit, eine Datei auszuwählen und hochzuladen.
 
 ![dc_form_fileupload](assets/dc_form_fileupload.png)
 
 >[!NOTE]
-Sie können eine individuelle Upload-Komponente erstellen, um Dateien in ein Sling Servlet hochzuladen. Weitere Informationen finden Sie unter [Hochladen von Dateien in Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/uploading-files-aem1.html).
+>
+>Sie können eine individuelle Upload-Komponente erstellen, um Dateien in ein Sling Servlet hochzuladen. Weitere Informationen finden Sie unter [Hochladen von Dateien in Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/uploading-files-aem1.html).
 
 ### Ausgeblendetes Feld {#hidden-field}
 
@@ -1227,10 +1249,12 @@ Mit dieser Komponente können Sie ein verstecktes Feld erstellen. Dieses Feld ka
 ![dc_form_hidenfield](assets/dc_form_hiddenfield.png)
 
 >[!NOTE]
-Sie können das Formular auch so anpassen, dass bestimmte Formular-Komponenten abhängig vom Wert anderer auf dem Formular befindlichen Felder ein- oder ausgeblendet werden. Das Ändern der Sichtbarkeit eines Formularfelds ist nützlich, wenn das Feld nur unter besonderen Bedingungen erforderlich ist.
-Siehe [Einblenden und Ausblenden von Formularkomponenten](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
+>
+>Sie können das Formular auch so anpassen, dass bestimmte Formular-Komponenten abhängig vom Wert anderer auf dem Formular befindlichen Felder ein- oder ausgeblendet werden. Das Ändern der Sichtbarkeit eines Formularfelds ist nützlich, wenn das Feld nur unter besonderen Bedingungen erforderlich ist.
+>
+>Siehe [Einblenden und Ausblenden von Formularkomponenten](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
 
-### Bild-Schaltfläche  {#image-button}
+### Bild-Schaltfläche {#image-button}
 
 Mit einer Bild-Schaltfläche können Sie eine Schaltfläche mit Ihrem eigenem Bild und Text erstellen:
 
@@ -1250,7 +1274,7 @@ Im Link-Feld können Benutzer eine URL angeben:
 
 Dies wird am häufigsten für das Kalenderereignis-Formular verwendet, wo es für das URL/Link-Feld eines Ereignisses verwendet wird.
 
-### Kennwort-Feld {#password-field}
+### Kennwortfeld {#password-field}
 
 Dieses Feld ermöglicht dem Benutzer die Eingabe seines Kennworts:
 
@@ -1276,10 +1300,12 @@ Sie können den Elementnamen zusammen mit einem Titel und einer Beschreibung fes
 ![dc_form_radiogroupuse](assets/dc_form_radiogroupuse.png)
 
 >[!NOTE]
-Mit dem **Element-Ladepfad** können Sie die Optionsfeld-Gruppe vorab mit Werten laden.
-Siehe [Vorabladen von Formularfeldern mit mehreren Werten](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+>
+>Mit dem **Element-Ladepfad** können Sie die Optionsfeld-Gruppe vorab mit Werten laden.
+>
+>Siehe [Vorabladen von Formularfeldern mit mehreren Werten](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
-### Schaltfläche „Übermitteln“{#submit-button}
+### Senden-Schaltfläche {#submit-button}
 
 Mit dieser Komponente können Sie eine Schaltfläche „Übermitteln“ mit Standardtext erstellen:
 
@@ -1289,7 +1315,7 @@ Oder Sie können Ihren eigenen Text eingeben:
 
 ![dc_form_submit_buttonuse](assets/dc_form_submitbuttonuse.png)
 
-### Feld „Tags“{#tags-field}
+### Feld „Tags“ {#tags-field}
 
 Über dieses Feld können Sie Tags auswählen:
 

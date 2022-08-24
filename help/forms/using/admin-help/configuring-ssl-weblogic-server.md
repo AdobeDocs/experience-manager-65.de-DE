@@ -9,10 +9,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
-workflow-type: ht
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: tm+mt
 source-wordcount: '1049'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -121,7 +121,7 @@ Weitere Informationen zum Verwenden des Keytool-Befehls finden Sie in der Datei 
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -genkey -v -alias ads-credentials -keyalg RSA -keystore "ads-credentials.jks" -validity 3650 -storepass P@ssw0rd -keypass P@ssw0rd -dname "CN=wasnode01, OU=LC, O=Adobe, L=Noida, S=UP,C=91
    ```
 
-   Die benutzerdefinierte Identitäts-Keystore-Datei „ads-credentials.jks“ wird im Verzeichnis [appserverdomain]/adobe/[Server-Name] erstellt.
+   Die Custom Identity Keystore-Datei mit dem Namen &quot;ads-credentials.jks&quot;wird im [appserverdomain]/adobe/[Servername] Verzeichnis.
 
 1. Extrahieren Sie das Zertifikat aus dem Keystore „ads-credentials“, indem Sie den folgenden Befehl eingeben:
 
@@ -141,7 +141,7 @@ Weitere Informationen zum Verwenden des Keytool-Befehls finden Sie in der Datei 
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -export -v -alias ads-credentials -file "ads-ca.cer" -keystore "ads-credentials.jks" -storepass P@ssw0rd
    ```
 
-   Die Zertifikatsdatei mit dem Namen „ads-ca.cer“ wird im Verzeichnis [appserverdomain]/adobe/[*Server-Name*] erstellt.
+   Die Zertifikatdatei &quot;ads-ca.cer&quot;wird im [appserverdomain]/adobe/[*Servername*] Verzeichnis.
 
 1. Kopieren Sie die Datei „ads-ca.cer“ auf alle Hostcomputer, für die eine sichere Kommunikation mit dem Anwendungsserver erforderlich ist.
 1. Fügen Sie das Zertifikat mit dem folgenden Befehl in eine neue Keystore-Datei ein (d. h. in den benutzerdefinierten Trust-Keystore):
@@ -168,7 +168,7 @@ Konfigurieren Sie WebLogic so, dass Ihr benutzerdefinierter Identitäts-Keystore
 1. Wählen Sie unter „Umgebung“ in „Domain-Konfigurationen“ die Option **Server > [Server] > Konfiguration > Allgemein**.
 1. Vergewissern Sie sich, dass unter „General“ im Bereich „Configuration“die Optionen **Listen Port Enabled** und **SSL Listen Port Enabled** ausgewählt sind. Ist es nicht aktiviert, führen Sie folgende Schritte aus:
 
-   1. Klicken Sie im Change Center auf **Lock &amp; Edit**, um Auswahlen und Werte zu ändern.
+   1. Klicken Sie im Change Center auf **Sperren und bearbeiten**, um Auswahlen und Werte zu ändern.
    1. Vergewissern Sie sich, dass die Kontrollkästchen **Listen Port Enabled** und **SSL Listen Port Enabled** aktiviert sind.
 
 1. Wenn es sich hierbei um einen Managed Server handelt, ändern Sie den Wert für „Listen Port“ in einen nicht verwendeten Anschlusswert (z. B. 8001) und „SSL Listen Port“ in einen nicht verwendeten Anschlusswert (z. B. 8002). Bei einem eigenständigen Server ist der standardmäßige SSL-Anschluss 7002.

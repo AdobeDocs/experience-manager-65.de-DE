@@ -10,8 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
 role: Admin
 exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: ht
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 100%
 
@@ -123,7 +123,7 @@ Endbenutzer von AEM Forms können sich über Workbench, Web-Anwendungen für AEM
 1. Klicken Sie auf **Exportieren**, um eine „config.xml“-Datei mit den vorhandenen AEM Forms-Einstellungen zu erstellen.
 1. Öffnen Sie die XML-Datei in einem Editor und suchen Sie folgenden Eintrag:
 
-   `<entry key=”assertionValidityInMinutes” value=”120”/>`
+   `<entry key="assertionValidityInMinutes" value="120"/>`
 
 1. Ändern Sie den Wert in eine Zahl größer gleich 5 (Minuten) und speichern Sie die Datei.
 1. Wechseln Sie in Administration Console zur Seite „Konfigurationsdateien importieren und exportieren“.

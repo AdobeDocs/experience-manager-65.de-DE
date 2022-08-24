@@ -11,10 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab018b6d-0233-4439-bb75-58c5421d769a
 feature: PDF Generator
 exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '7265'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -439,7 +439,7 @@ Für das Arbeiten mit den erweiterten Optionen ist es hilfreich, mit der Sprache
 
 ## Optionen für „Standards - Berichterstellung und Kompatibilität“ {#standards-reporting-and-compliance-options}
 
-PDF Generator kann den Dokumentinhalt in einer PostScript-Datei überprüfen, um sicherzustellen, dass diese vor dem Erstellen der PDF-Datei die PDF/X-1a-, PDF/X-3 oder PDF/A-Standardkriterien erfüllen. Für PDF/X-kompatible Dateien können Sie auch festlegen, dass die PostScript-Datei zusätzliche Kriterien erfüllt, indem Sie andere Optionen unter „Standards – Berichterstellung und Kompatibilität“ auswählen. Die Verfügbarkeit der Optionen hängt vom ausgewählten Standard ab.
+PDF Generator kann den Dokumentinhalt in einer PostScript-Datei überprüfen, um sicherzustellen, dass diese vor dem Erstellen der PDF-Datei die PDF/X-1a-, PDF/X-3 oder PDF/A-Standardkriterien erfüllen. Bei PDF/X-kompatiblen Dateien können Sie auch verlangen, dass die PostScript-Datei zusätzliche Kriterien erfüllt, indem Sie unter &quot;Standardberichte und -konformität&quot;andere Optionen auswählen. Die Verfügbarkeit der Optionen hängt vom ausgewählten Standard ab.
 
 PDF/X-konforme Dateien werden hauptsächlich als standardisiertes Format für den Austausch von PDF-Dateien verwendet, die mit hoher Auflösung gedruckt werden sollen. Wenn Sie ein PDF-Dokument erstellen, das nicht als Druckerzeugnis gedacht ist, können Sie die PDF/X-Standards ignorieren.
 
@@ -501,7 +501,7 @@ Diese Optionen sind aktiviert, wenn „Kompatibilität“ (im Bereich „Allgeme
 
 **Auftrag abbrechen**: Erstellt eine PDF-Datei nur, wenn die PostScript-Datei PDF/A-Anforderungen erfüllt und ansonsten gültig ist.
 
-**Profilname der Ausgabebedingung**: Gibt die gekennzeichnete Druckbedingung, für die das Dokument vorbereitet wurde, an und ist für PDF/A-Kompatibilität erforderlich. Wenn Ihr Workflow es erfordert, dass das Dokument die Ausgabebedingung angibt, wählen Sie „Ohne“ aus. Das Dokument wird bei der Kompatibilitätsüberprüfung fehlschlagen, wenn diese Informationen nicht bereitgestellt werden.
+**Profilname der Ausgabebedingung**: Gibt die gekennzeichnete Druckbedingung, für die das Dokument vorbereitet wurde, an und ist für PDF/A-Kompatibilität erforderlich. Wenn Ihr Workflow erfordert, dass das Dokument Informationen zum Ausgabeabsichten angibt, wählen Sie &quot;Keine&quot;. Das Dokument wird bei der Kompatibilitätsüberprüfung fehlschlagen, wenn diese Informationen nicht bereitgestellt werden.
 
 **Ausgabebedingung**: Beschreibt die beabsichtigte Druckbedingung. Dieser Eintrag ist nicht erforderlich, kann aber verwendet werden, um nützliche Informationen für den vorgesehenen Empfänger der PDF-Datei bereitzustellen.
 

@@ -10,13 +10,13 @@ topic-tags: customization
 discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 feature: Forms Portal
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
-workflow-type: ht
+exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: tm+mt
 source-wordcount: '1225'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
-
 
 # Anpassen von Vorlagen für Forms Portal-Komponenten{#customizing-templates-for-forms-portal-components}
 
@@ -108,7 +108,7 @@ Verschiedene Forms Portal-Komponenten bieten exklusive OOTB-Metadatensätze, die
 * **pdfUrl**: URL zur Ausgabe des Formulars als PDF
 * **assetType**: Typ des Assets. Gültige Werte sind unter anderem **Form**,**PDF Form**,**Print Form** und **Adaptive Form**
 
-* **htmlStyle**&amp; **pdfStyle**: Anzeigestil für HTML- bzw. PDF-Symbole für die Ausgabe. Gültige Werte sind **__FP_display_none** oder Leerlassen.
+* **htmlStyle**&amp; **pdfStyle**: Anzeigestil für HTML- bzw. PDF-Symbole für die Ausgabe. Gültige Werte sind &quot;**__FP_display_none**&quot; oder leer.
 
 >[!NOTE]
 >
@@ -130,7 +130,7 @@ So ist z. B. im Header „Title“ in der Rasteransicht der Wert für den Header
 
 * **Title**: Titel des Formulars
 * **formUrl**: URL zur Ausgabe des Formulars als HTML
-* **target**: Zielattribut des Links. Gültige Werte sind „_blank“ und „_self“.
+* **target**: Zielattribut des Links. Gültige Werte sind &quot;_blank&quot;und &quot;_self&quot;.
 * **linkText**: Beschriftung des Links
 
 ### Komponente „Drafts &amp; Submissions“ {#drafts-amp-submissions-component}

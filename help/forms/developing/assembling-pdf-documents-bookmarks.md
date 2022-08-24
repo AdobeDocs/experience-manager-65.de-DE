@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 role: Developer
 exl-id: 2b938410-f51b-420b-b5d4-2ed13ec29c5a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
 workflow-type: tm+mt
 source-wordcount: '2558'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -164,7 +164,7 @@ Verwenden Sie zum Zusammenführen eines PDF-Dokuments, das neue Lesezeichen enth
 
 **Speichern des PDF-Dokuments, das Lesezeichen enthält**
 
-Sie müssen die Ergebnisse aus dem zurückgegebenen Zuordnungssammlungsobjekt extrahieren und das entsprechende PDF-Dokument speichern. (Siehe „Extrahieren der Ergebnisse“ in [Programmgesteuertes Zusammenstellen von PDF-Dokumenten](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
+Sie müssen die Ergebnisse aus dem zurückgegebenen Zuordnungssammlungsobjekt extrahieren und das entsprechende PDF-Dokument speichern. (Siehe &quot;Ergebnisse extrahieren&quot;in [Programmgesteuertes Zusammenstellen von PDF-Dokumenten](/help/forms/developing/programmatically-assembling-pdf-documents.md).
 
 **Siehe auch**
 

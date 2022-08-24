@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: ht
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: tm+mt
 source-wordcount: '7665'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -108,7 +108,7 @@ In der folgenden Tabelle werden mögliche Ansätze zum Verringern von Sicherheit
  </tbody> 
 </table>
 
-Weitere Informationen zur Sicherheit für Ihr Betriebssystem finden Sie unter [Informationen zur Betriebssystemsicherheit](https://helpx.adobe.com/de/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information).
+Weitere Sicherheitsinformationen für Ihr Betriebssystem finden Sie unter [&quot;Informationen zur Betriebssystemsicherheit&quot;](https://helpx.adobe.com/de/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information).
 
 ## Installation {#installation}
 
@@ -172,7 +172,7 @@ Um den Anwendungsserver, auf dem AEM Forms on JEE bereitgestellt wird, mit einem
 1. Erstellen Sie in der Microsoft Management Console (MMC) einen lokalen Benutzer für den Formularserverdienst, der für die Anmeldung verwendet werden soll:
 
    * Wählen Sie **Benutzer kann Kennwort nicht ändern aus**.
-   * Stellen Sie sicher, dass auf der Registerkarte **Mitglied von** die Gruppe **Benutzer** aufgelistet wird.
+   * Stellen Sie sicher, dass auf der Registerkarte **Mitglied von** die Gruppe „Benutzer“ aufgeführt ist.****
 
    >[!NOTE]
    >
@@ -189,9 +189,9 @@ Um den Anwendungsserver, auf dem AEM Forms on JEE bereitgestellt wird, mit einem
    * Als Dienst anmelden (sollte bereits festgelegt sein)
 
 1. Weisen Sie dem neuen Benutzerkonto Berechtigungen zum Ändern der folgenden Verzeichnisse zu:
-   * **Ordner des globalen Dokumentenspeichers (GDS)**: Der Speicherort des Ordners des globalen Dokumentenspeichers wird während des AEM Forms-Installationsprozesses manuell konfiguriert. Wenn die Speicherorteinstellung bei der Installation leer bleibt, wird als Speicherort standardmäßig ein Ordner in `[JBoss root]/server/[type]/svcnative/DocumentStorage` unter dem Installationsordner des Programm-Servers gewählt (siehe unten)
+   * **Verzeichnis des globalen Dokumentenspeichers (GDS)**: Der Speicherort des GDS-Verzeichnisses wird während der Installation von AEM Forms manuell konfiguriert. Wenn die Speicherorteinstellung bei der Installation leer bleibt, wird als Speicherort standardmäßig ein Verzeichnis unter dem Installationsverzeichnis des Anwendungsservers gewählt: `[JBoss root]/server/[type]/svcnative/DocumentStorage`
    * **CRX-Repository-Verzeichnis**: Der Standardspeicherort lautet `[AEM-Forms-installation-location]\crx-repository`
-   * **Temporäre AEM Forms-Ordner**:
+   * **Temporäre Verzeichnisse von AEM Forms**:
       * (Windows) TMP oder TEMP gemäß Einstellung in den Umgebungsvariablen
       * (AIX, Linux oder Solaris) Basisordner des angemeldeten Benutzers
 
@@ -199,14 +199,14 @@ Benutzer, die bei UNIX-basierten Systemen nicht als Root-Benutzer angemeldet sin
       * (Linux) /var/tmp oder /usr/tmp
       * (AIX) /tmp oder /usr/tmp
       * (Solaris) /var/tmp oder /usr/tmp
-1. Weisen Sie dem neuen Benutzerkonto Schreibberechtigungen für die folgenden Ordner zu:
+1. Weisen Sie dem neuen Benutzerkonto Schreibberechtigungen für die folgenden Verzeichnisse zu:
    * [JBoss-directory]\standalone\deployment
    * [JBoss-directory]\standalone\
    * [JBoss-directory]\bin\
 
    >[!NOTE]
    >
-   > Der standardmäßige Installationsspeicherort von JBoss Application Server:
+   > Der standardmäßige Installationsspeicherort von JBoss Application Server ist folgender:
    > * Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
    > * Linux: /opt/jboss/
 
@@ -410,7 +410,7 @@ Als zusätzliche Sicherheitsmaßnahme sollten Sie überlegen, spezifische Werkze
 * PIN-Verschlüsselungsschlüssel für HSM-Geräte im Trust Store
 * Hashes für lokale Benutzerkennwörter
 
-Informationen zu herstellerspezifischen Tools finden Sie unter [Informationen zur Datenbanksicherheit](https://helpx.adobe.com/de/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information).
+Informationen zu herstellerspezifischen Tools finden Sie unter [&quot;Informationen zur Datenbanksicherheit&quot;](https://helpx.adobe.com/de/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information).
 
 ### LDAP-Sicherheit {#ldap-security}
 
@@ -956,7 +956,7 @@ Informationen zu WebSphere-Anschlüssen, die für AEM Forms auf JEE erforderlich
 
 Bezüglich der physischen Architektur, die im Abschnitt [Physische Architektur von AEM Forms auf JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture) beschrieben wird, sollten Sie SSL für alle Verbindungen konfigurieren, die Sie verwenden möchten. Besonders alle SOAP-Verbindungen müssen über SSL erfolgen, um die Offenlegung von Benutzerberechtigungen im Netzwerk zu verhindern.
 
-Anleitungen für die Konfiguration von SSL unter JBoss, WebLogic und WebSphere finden Sie unter „Konfigurieren von SSL“ in der [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_64_de).
+Anweisungen zum Konfigurieren von SSL unter JBoss, WebLogic und WebSphere finden Sie unter &quot;Konfigurieren von SSL&quot;in der [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_64_de).
 
 Anweisungen zum Importieren von Zertifikaten in JVM (Java Virtual Machine), die für einen AEM Forms-Server konfiguriert sind, finden Sie im Abschnitt „Gegenseitige Authentifizierung“ in der [Hilfe zu AEM Forms Workbench](http://www.adobe.com/go/learn_aemforms_workbench_65_de).
 

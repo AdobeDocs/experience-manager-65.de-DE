@@ -11,14 +11,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 85d655bb-1b6b-4b4d-ae39-eca3ef9b7fd7
 feature: PDF Generator
 exl-id: 402c1fd4-c6c8-494e-b452-b56a91c4a397
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: tm+mt
 source-wordcount: '869'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
-# Mehrprozessgestützte Dateikonvertierungen aktivieren {#enabling-multi-threaded-file-conversions}
+# Aktivieren mehrprozessgestützter Dateikonvertierungen {#enabling-multi-threaded-file-conversions}
 
 In PDF Generator haben Sie die Möglichkeit, mehrprozessgestützte Dateikonvertierungen für bestimmte Dateitypen zu aktivieren. Mehrprozessgestützte Dateikonvertierungen verbessern die Leistung von PDF Generator, indem sie es ermöglichen, mehrere Konvertierungen gleichzeitig auszuführen.
 
@@ -53,7 +53,7 @@ Unter Windows-Betriebssystemen benötigen die Administrator-Benutzerkonten, die 
 Wenn Sie OpenOffice, Microsoft Word oder Microsoft PowerPoint auf einem System unter Windows Server 2008 ausführen, deaktivieren Sie die Benutzerkontensteuerung (User Account Control, UAC) für jeden hinzugefügten Benutzer.
 
 1. Klicken Sie auf „Systemsteuerung“ > „Benutzerkonten“ > „Benutzerkontensteuerung aktivieren oder deaktivieren“.
-1. Deaktivieren Sie das Kontrollkästchen „Benutzerkontensteuerung (UAC) zum Schutz des Computers verwenden“ und klicken Sie auf „OK“.
+1. Deaktivieren Sie das Kontrollkästchen &quot;Use User Account Control (UAC) to help protect your computer&quot;und klicken Sie auf &quot;OK&quot;.
 1. Starten Sie den Computer neu, um die Einstellungen zu übernehmen.
 
 ### Weitere für OpenOffice unter Linux oder Solaris erforderliche Konfigurationen {#additional-configuration-required-for-openoffice-on-linux-or-solaris}

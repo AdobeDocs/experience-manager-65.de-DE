@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: ht
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: tm+mt
 source-wordcount: '10683'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ Sie können die Dienstverwaltungsseite verwenden, um Einstellungen für jeden de
 
    >[!NOTE]
    >
-   >Nicht alle Dienste, die auf der Seite „Dienstverwaltung“ aufgelistet sind, verfügen über die Registerkarte „Konfiguration“. Für von Ihnen erstellte Prozesse wird die Registerkarte „Konfiguration“ nur angezeigt, wenn Sie dem Prozess in Workbench einen Konfigurationsparameter hinzugefügt haben. (Siehe „Konfigurationsparameter“ in der[ Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63_de).) 
+   >Nicht alle Dienste, die auf der Seite „Dienstverwaltung“ aufgelistet sind, verfügen über die Registerkarte „Konfiguration“. Für von Ihnen erstellte Prozesse wird die Registerkarte „Konfiguration“ nur angezeigt, wenn Sie dem Prozess in Workbench einen Konfigurationsparameter hinzugefügt haben. (Siehe &quot;Konfigurationsparameter&quot;im [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63_de) .
 
 
 1. Klicken Sie auf die Registerkarte „Sicherheit“ und legen Sie die Sicherheitseinstellungen für den Dienst fest. Siehe [Ändern von Sicherheitseinstellungen für einen Dienst](configure-service-settings.md#modifying-security-settings-for-a-service).
@@ -39,7 +39,7 @@ Sie können die Dienstverwaltungsseite verwenden, um Einstellungen für jeden de
 
 ## Einstellungen des Audit Workflow-Dienstes {#audit-workflow-service-settings}
 
-Workbench gibt Ihnen die Möglichkeit, Prozessinstanzen während der Ausführung zur Laufzeit aufzuzeichnen und anschließend wiederzugeben, um das Verhalten des Prozesses zu untersuchen. (Siehe [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63_de).) Zum Einsparen von Speicherplatz auf dem Dateisystem des Formularservers können Sie die Menge der zu speichernden Prozessaufzeichnungsdaten begrenzen. Sie können die folgenden Eigenschaften des Audit Workflow-Dienstes (`AuditWorkflowService`) konfigurieren:
+Workbench gibt Ihnen die Möglichkeit, Prozessinstanzen während der Ausführung zur Laufzeit aufzuzeichnen und anschließend wiederzugeben, um das Verhalten des Prozesses zu untersuchen. (Siehe [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63).) Zum Einsparen von Speicherplatz auf dem Dateisystem des Formularservers können Sie die Menge der zu speichernden Prozessaufzeichnungsdaten begrenzen. Sie können die folgenden Eigenschaften des Audit Workflow-Dienstes (`AuditWorkflowService`) konfigurieren:
 
 **maxNumberOfRecordingInstances**: Die maximale Anzahl von zu speichernden Aufzeichnungen. Wenn die maximale Anzahl gespeichert ist, wird beim Erstellen einer neuen Aufzeichnung die älteste Aufzeichnung aus dem Dateisystem gelöscht. Diese Eigenschaft ist nützlich, wenn Sie dazu neigen, viele Aufzeichnungen zu erstellen, und alte Aufzeichnungen automatisch löschen möchten. Der Standardwert ist 50.
 
@@ -123,7 +123,7 @@ Folgende Einstellungen sind für den Convert PDF-Dienst verfügbar:
 
 **Transaktionszeitlimit (in Sek.)**: Die Anzahl der Sekunden, die ein zugrunde liegender Transaktionsanbieter wartet, bevor eine Transaktion rückgängig gemacht wird, die diesen Vorgang beinhaltet. Dieser Wert wird ignoriert, wenn ein vorhandener Transaktionskontext weitergegeben wird. Der Standardwert ist 180.
 
-**Schwellenwert-Auflösung für Glättung (in dpi)**: Die Bildauflösung, unterhalb derer Glättung (bzw. Anti-Aliasing) auf Text, Strichgrafiken und Bilder angewendet wird, wenn Sie die Optionen zum Anwenden der Glättung für diese Elemente ausgewählt haben.
+**Schwellenwert-Auflösung für Glättung (in dpi):** Die Bildauflösung, unter der die Ausgleichung (oder Anti-Aliasing) auf Text, Strichgrafiken und Bilder angewendet wird, wenn Sie für diese Elemente die Option &quot;Ausgleichung anwenden auf&quot;ausgewählt haben.
 
 **Glätten auf Text anwenden**: Steuert das Anti-Aliasing von Text. Um die Glättung von Text zu deaktivieren und Text schärfer und mit einer Vergrößerungssoftware leichter lesbar zu machen, deaktivieren Sie dieses Kontrollkästchen.
 

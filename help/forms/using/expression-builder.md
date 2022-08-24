@@ -11,10 +11,10 @@ discoiquuid: 68e3071e-7ce6-4bdc-8561-14bcaeae2b6c
 docset: aem65
 feature: Correspondence Management
 exl-id: b41af9fe-c698-44b3-9ac6-97d42cdc02d4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: tm+mt
 source-wordcount: '786'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -69,7 +69,7 @@ Weitere Informationen finden Sie in der [JSP-EL-Spezifikation](https://download.
 
 ### Remote-Funktion {#remote-function}
 
-Remote-Funktionen ermöglichen die Nutzung von benutzerdefinierter Logik in Ausdrücken. Sie können benutzerdefinierte Logik schreiben, die in Ausdrücken als Methode in Java verwendet wird. Dieselbe Funktion kann innerhalb von Ausdrücken verwendet werden. Verfügbare Remote-Funktionen werden unter der Registerkarte „Remote-Funktionen“ im Ausdruckseditor links aufgelistet.
+Remote-Funktionen ermöglichen die Nutzung von benutzerdefinierter Logik in Ausdrücken. Sie können benutzerdefinierte Logik schreiben, die in Ausdrücken als Methode in Java verwendet wird. Dieselbe Funktion kann innerhalb von Ausdrücken verwendet werden. Die verfügbaren Remote-Funktionen sind auf der Registerkarte &quot;Remote-Funktionen&quot;auf der linken Seite des Ausdruckseditors aufgeführt.
 
 ![Remote-Funktion](assets/remotefunction.png)
 
@@ -112,7 +112,7 @@ Sie können ein benutzerdefiniertes Bundle erstellen, um Ihre eigenen Remote-Fun
    * java.lang.Double
    * Double
    * java.lang.Long
-   * Long
+   * Lang
    * java.lang.Float
    * Float
    * java.util.Calendar

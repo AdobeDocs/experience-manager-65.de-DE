@@ -1,19 +1,19 @@
 ---
 title: Aktualisieren abgelaufener Readererweiterungs-Dienstzertifikate
-description: 'Readererweiterte Dokumente funktionieren nicht, Zertifikate aktualisieren '
-source-git-commit: a26e4fb53458beae9b259e5ee5dc74a95264f9e1
-workflow-type: ht
+description: Readererweiterte Dokumente funktionieren nicht, Zertifikate aktualisieren
+exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: tm+mt
 source-wordcount: '1581'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
-
 
 # Aktualisieren abgelaufener Readererweiterungs-Dienstzertifikate {#Updating-expired-Reader-Extension-service-certificates}
 
 Adobe Experience Manager Forms (AEM Forms)-Kunden mit Adobe Managed Services- oder On-Premise-Enterprise-Basislizenzen sind berechtigt, den Readererweiterungs-Dienst zu verwenden. Der Readererweiterungs-Dienst ermöglicht Unternehmen die einfache Freigabe interaktiver PDF-Dokumente durch Erweitern der Funktionalität von Adobe Reader durch zusätzliche Verwendungsrechte. Der Dienst fügt zusätzliche Verwendungsrechte zu einem PDF-Dokument hinzu und aktiviert Funktionen, die normalerweise nicht verfügbar sind, wenn ein PDF-Dokument in Adobe Acrobat Reader DC geöffnet wird, z. B. das Hinzufügen von Kommentaren zu einem Dokument, das Ausfüllen von Formularen und das Speichern des Dokuments. Externe Benutzer benötigen keine zusätzliche Software oder Plug-Ins für das Verwenden von Dokumenten mit aktivierten Benutzerrechten. PDF-Dokumente, für die zusätzlich Nutzungsrechte gelten, werden als Dokumente mit aktivierten Nutzungsrechten bezeichnet. Benutzer, die ein PDF-Dokument mit aktivierten Nutzungsrechten in Adobe Reader öffnen, können Vorgänge durchführen, die für dieses Dokument aktiviert sind.
 
-Adobe nutzt eine PKI (Public-Key-Infrastruktur), um digitale Zertifikate für die Lizenzierung und Aktivierung von Funktionen auszustellen. Adobe hat Zertifikate unter der Zertifizierungsstelle „Adobe Root CA“ ausgestellt, die am 7. Januar 2023 ablaufen soll. Dies führt zum Ablauf der Gültigkeit aller Zertifikate, die im Rahmen dieser Zertifizierungsstelle ausgestellt werden. Nach Ablauf des Zertifikats funktionieren alle von den Zertifikaten abhängigen Funktionen nicht mehr. Beispielsweise funktioniert ein Reader-erweitertes PDF-Dokument, das das Hinzufügen von Kommentaren mit Adobe Acrobat Reader ermöglicht, nach dem 7. Januar 2023 nicht mehr für Kunden. Um dieses Problem zu beheben, sollte der Administrator des Readererweiterungs-Dienstes unter Verwendung alter Zertifikate neue Zertifikate der neuen Adobe Root CA G2 auf ihre PDF-Dokumente abrufen und erneut anwenden (die PDF-Dokumente mit neuen Zertifikaten Reader-erweitern).
+Adobe nutzt eine PKI (Public-Key-Infrastruktur), um digitale Zertifikate für die Lizenzierung und Aktivierung von Funktionen auszustellen. Adobe hat Zertifikate unter der Zertifizierungsstelle &quot;Adobe Root CA&quot; ausgestellt, die am 7. Januar 2023 ablaufen soll. Dies führt zum Ablauf der Gültigkeit aller Zertifikate, die im Rahmen dieser Zertifizierungsstelle ausgestellt werden. Nach Ablauf des Zertifikats funktionieren alle von den Zertifikaten abhängigen Funktionen nicht mehr. Beispielsweise funktioniert ein Reader-erweitertes PDF-Dokument, das das Hinzufügen von Kommentaren mit Adobe Acrobat Reader ermöglicht, nach dem 7. Januar 2023 nicht mehr für Kunden. Um dieses Problem zu beheben, sollte der Administrator des Readererweiterungs-Dienstes unter Verwendung alter Zertifikate neue Zertifikate der neuen Adobe Root CA G2 auf ihre PDF-Dokumente abrufen und erneut anwenden (die PDF-Dokumente mit neuen Zertifikaten Reader-erweitern).
 
 Der Ablauf von Zertifikaten wirkt sich sowohl auf AEM Forms auf JEE als auch AEM Forms auf OSGi-Stacks aus. Beide Stacks verfügen über unterschiedliche Anweisungen. Nach dem Erfüllen der [Voraussetzungen](#Pre-requisites) und [Einholen neuer Zertifikate](#obtain-the-certificates) wählen Sie je nach Ihrem Stack einen der folgenden Pfade aus:
 

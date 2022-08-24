@@ -4,7 +4,7 @@ description: Konfigurieren von [!DNL Workfront for Experience Manager enhanced c
 role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
-source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '1749'
 ht-degree: 96%
@@ -15,9 +15,9 @@ ht-degree: 96%
 
 | Version | Artikellink |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=en) |
+| AEM as a Cloud Service | [Klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=en) |
 | AEM 6.5 | Dieser Artikel |
-| AEM 6.4 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-64/assets/integrations/workfront-connector-configure.html?lang=en) |
+| AEM 6.4 | [Klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-64/assets/integrations/workfront-connector-configure.html?lang=en) |
 
 Ein Benutzer mit Administratorzugriff in [!DNL Adobe Experience Manager]  konfiguriert den erweiterten Connector nach der Installation. Anweisungen zur Installation finden Sie unter [Installieren des Connectors](/help/assets/workfront-integrations.md).
 
@@ -130,14 +130,14 @@ Mit diesem Workflow-Schritt kann ein Benutzer eine Eigenschaft einem benutzerdef
    * Eine AEM-Eigenschaft. Diese Referenz sollte relativ zur Payload des Workflows sein.
    * Ein benannter Wert. Diese sollten von Klammern umgeben sein.
    * Eine Verkettung der drei oben genannten Elemente. Geben Sie dies mithilfe von `{+}` an.
-   * Eine Abwandlung der drei oben genannten Elemente, indem der Wert mit `{replace(<value>,”old-char”,”new-char”)}` umschlossen wird.
+   * Eine Abwandlung der drei oben genannten Elemente, indem der Wert mit `{replace(<value>,"old-char","new-char")}` umschlossen wird.
 
 * Einige Beispiele:
 
    * `status="INP"`
    * `DE:Asset Type=jcr:content/metadata/assetType`
    * `DE:Path={path}`
-   * `URL=”https://my-aem-author/assets.html”{+}{path}`
+   * `URL="https://my-aem-author/assets.html"{+}{path}`
 
 ![Konfiguration für Zuordnungseigenschaft](/help/assets/assets/wf-map-property-config.png)
 

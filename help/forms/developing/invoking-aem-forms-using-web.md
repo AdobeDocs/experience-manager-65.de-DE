@@ -11,10 +11,10 @@ topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: ht
+source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+workflow-type: tm+mt
 source-wordcount: '9905'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -477,7 +477,7 @@ Sie können Java-Bibliotheksdateien für Axis generieren, indem Sie die folgende
 
 1. Installieren Sie Apache Axis 1.4 auf dem Client-Computer. Es ist unter [https://ws.apache.org/axis/](https://ws.apache.org/axis/) verfügbar.
 1. Richten Sie den Klassenpfad so ein, dass er die Axis-JAR-Dateien in Ihrem Webservice-Client zu verwendet, wie in den Installationsanweisungen zu Axis unter [https://ws.apache.org/axis/java/install.html](https://ws.apache.org/axis/java/install.html) beschrieben.
-1. Verwenden Sie das Apache WSDL2Java-Tool in Axis, um Java-Proxy-Klassen zu generieren. Erstellen Sie ein Ant-Build-Skript, um diese Aufgabe durchzuführen. Das folgende Skript ist ein Beispiel für ein Ant-Build-Skript namens „build.xml“:
+1. Verwenden Sie das Apache WSDL2Java-Tool in Axis, um Java-Proxy-Klassen zu generieren. Erstellen Sie ein Ant-Build-Skript, um diese Aufgabe durchzuführen. Das folgende Skript ist ein Beispiel für ein Ant-Build-Skript mit dem Namen „build.xml“:
 
    ```java
     <?xml version="1.0"?>
@@ -636,7 +636,7 @@ Erstellen Sie ein Visual Studio-Klassenbibliotheksprojekt, das eine .NET-Client-
 
 Platzieren Sie die neu erstellte .NET-Client-Assembly auf dem Computer, auf dem Sie Ihr Client-Programm entwickeln. Nachdem Sie die .NET-Client-Assembly in einem Verzeichnis platziert haben, können Sie sie von einem Projekt aus referenzieren. Verweisen Sie auch auf die `System.Web.Services`-Bibliothek aus Ihrem Projekt. Wenn Sie diese Bibliothek nicht referenzieren, können Sie die .NET-Client-Assembly nicht zum Aufrufen eines Dienstes verwenden.
 
-1. Wählen Sie im Menü **Projekt** die Option **Verweis hinzufügen**.
+1. Wählen Sie im **Projekt**-Menü **Verweis hinzufügen**.
 1. Klicken Sie auf die Registerkarte **.NET**.
 1. Klicken Sie auf **Durchsuchen** und suchen Sie die Datei „DocumentService.dll“.
 1. Klicken Sie auf **Auswählen** und dann auf **OK**.
@@ -648,11 +648,11 @@ Sie können den Service `MyApplication/EncryptDocument` (der in Workbench erstel
 1. Erstellen Sie eine Microsoft .NET-Client-Assembly, die die WSDL des Services `MyApplication/EncryptDocument` verwendet.
 1. Erstellen Sie ein Microsoft .NET-Client-Projekt. Verweisen Sie im Client-Projekt auf die Microsoft .NET-Client-Assembly. Verweisen Sie auch auf `System.Web.Services`.
 1. Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `MyApplication_EncryptDocumentService`-Objekt, indem Sie seinen Standardkonstruktor aufrufen.
-1. Legen Sie die `Credentials`-Eigenschaft des `MyApplication_EncryptDocumentService`-Objekts mit einem `System.Net.NetworkCredential`-Objekt fest. Geben Sie im `System.Net.NetworkCredential`-Konstruktor einen AEM Forms-Benutzernamen und das entsprechende Kennwort an. Legen Sie Authentifizierungswerte fest, damit Ihre .NET-Client-Anwendung erfolgreich SOAP-Nachrichten mit AEM Forms austauschen kann.
+1. Setzen Sie die `Credentials`-Eigenschaft des `MyApplication_EncryptDocumentService`-Objekts mit einem `System.Net.NetworkCredential`-Objekt. Geben Sie im `System.Net.NetworkCredential`-Konstruktor einen AEM Forms-Benutzernamen und das entsprechende Kennwort an. Legen Sie Authentifizierungswerte fest, damit Ihre .NET-Client-Anwendung erfolgreich SOAP-Nachrichten mit AEM Forms austauschen kann.
 1. Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird verwendet, um ein PDF-Dokument zu speichern, das an den Prozess `MyApplication/EncryptDocument` übergeben wird.
 1. Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Dateispeicherort des PDF-Dokuments und den Modus angibt, in dem die Datei geöffnet werden soll.
-1. Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
-1. Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `Read`-Methode des `System.IO.FileStream`-Objekts aufrufen. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
+1. Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die Eigenschaft `Length` des `System.IO.FileStream`-Objekts abrufen.
+1. Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
 1. Füllen Sie das `BLOB`-Objekt durch Zuweisen von dessen `binaryData`-Eigenschaft zum Inhalt des Byte-Arrays.
 1. Rufen Sie den `MyApplication/EncryptDocument`-Prozess durch Aufrufen der `invoke`-Methode des `MyApplication_EncryptDocumentService`-Objekts und Übergeben des `BLOB`-Objekts auf, das das PDF-Dokument enthält. Dieser Prozess gibt ein verschlüsseltes PDF-Dokument innerhalb eines `BLOB`-Objekts zurück.
 1. Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie dessen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des kennwortverschlüsselten Dokuments darstellt.
@@ -664,7 +664,7 @@ Sie können den Service `MyApplication/EncryptDocument` (der in Workbench erstel
 
 Sie können einen AEM Forms-Service mithilfe von Java-Proxy-Klassen und Base64 aufrufen. Um den `MyApplication/EncryptDocument`-Service mit Java-Proxy-Klassen aufzurufen, führen Sie die folgenden Schritte aus:
 
-1. Erstellen Sie Java-Proxy-Klassen mit JAX-WS zur Nutzung durch die `MyApplication/EncryptDocument`-Service-WSDL. Verwenden Sie den folgenden WSDL-Endpunkt:
+1. Erstellen Sie Java-Proxy-Klassen mit JAX-WS, welche die WSDL des `MyApplication/EncryptDocument`-Dienstes verwenden. Verwenden Sie den folgenden WSDL-Endpunkt:
 
    `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1`
 
@@ -680,7 +680,7 @@ Sie können einen AEM Forms-Service mithilfe von Java-Proxy-Klassen und Base64 a
    in den Klassenpfad Ihres Java-Client-Projekts ein.
 
 1. Erstellen Sie ein Objekt `MyApplicationEncryptDocumentService`, indem Sie den Konstruktor verwenden.
-1. Erstellen Sie ein `MyApplicationEncryptDocument`-Objekt durch Aufrufen der `getEncryptDocument`-Methode des `MyApplicationEncryptDocumentService`-Objekts.
+1. Erstellen Sie ein `MyApplicationEncryptDocument`-Objekt, indem Sie die `getEncryptDocument`-Methode des `MyApplicationEncryptDocumentService`-Objekts aufrufen.
 1. Legen Sie die zum Aufrufen von AEM Forms erforderlichen Verbindungswerte fest, indem Sie den folgenden Datenelementen Werte zuweisen:
 
    * Weisen Sie den WSDL-Endpunkt und den Codierungstyp zum `ENDPOINT_ADDRESS_PROPERTY`-Feld des `javax.xml.ws.BindingProvider`-Objekts zu. Um den `MyApplication/EncryptDocument`-Service mit Base64-Codierung aufzurufen, geben Sie den folgenden URL-Wert an:
@@ -688,7 +688,7 @@ Sie können einen AEM Forms-Service mithilfe von Java-Proxy-Klassen und Base64 a
       `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=base64`
 
    * Weisen Sie den AEM Forms-Benutzer zum `USERNAME_PROPERTY`-Feld des `javax.xml.ws.BindingProvider`-Objekts zu.
-   * Weisen Sie den entsprechenden Kennwortwert zum `PASSWORD_PROPERTY`-Feld des `javax.xml.ws.BindingProvider`-Objekts zu.
+   * Weisen Sie dem Feld `PASSWORD_PROPERTY` des Objekts `javax.xml.ws.BindingProvider` den entsprechenden Kennwortwert zu.
 
    Das folgende Code-Beispiel zeigt diese Programmlogik:
 
@@ -702,7 +702,7 @@ Sie können einen AEM Forms-Service mithilfe von Java-Proxy-Klassen und Base64 a
     ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.PASSWORD_PROPERTY, password);
    ```
 
-1. Rufen Sie das PDF-Dokument ab, das an den `MyApplication/EncryptDocument`-Prozess gesendet werden soll, indem Sie ein `java.io.FileInputStream`-Objekt durch Verwendung des Konstruktors erstellen. Übergeben Sie einen Zeichenfolgenwert, der den Speicherort des PDF-Dokuments angibt.
+1. Rufen Sie das PDF-Dokument ab, das an den `MyApplication/EncryptDocument`-Prozess gesendet werden soll, indem Sie ein `java.io.FileInputStream`-Objekt mithilfe seines Konstruktors erstellen. Übergeben Sie einen Zeichenfolgenwert, der den Speicherort des PDF-Dokuments angibt.
 1. Erstellen Sie ein Byte-Array und füllen Sie es mit dem Inhalt des `java.io.FileInputStream`-Objekts.
 1. Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden.
 1. Füllen Sie das `BLOB`-Objekt durch Aufrufen von dessen `setBinaryData`-Methode und Übergeben des Byte-Arrays. `setBinaryData` des `BLOB`-Objekts ist die Methode, die bei Verwendung der Base64-Codierung aufgerufen wird. Siehe „Bereitstellen von BLOB-Objekten in Service-Anforderungen“.
@@ -724,7 +724,7 @@ In dieser Diskussion geht es um die Verwendung von MTOM, um den folgenden kurzle
 
 >[!NOTE]
 >
->Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um dem Codebeispiel zu folgen, erstellen Sie einen Prozess mit dem Namen `MyApplication/EncryptDocument` in Workbench. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_de).)
+>Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um dem Codebeispiel zu folgen, erstellen Sie einen Prozess mit dem Namen `MyApplication/EncryptDocument` in Workbench. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 Wenn dieser Prozess aufgerufen wird, führt er die folgenden Aktionen aus:
 
@@ -809,13 +809,13 @@ Beachten Sie den `MyApplication/EncryptDocument`-Prozess, der ein ungesichertes 
 
 1. Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird verwendet, um ein PDF-Dokument zu speichern, das an den Prozess `MyApplication/EncryptDocument` übergeben wird.
 1. Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der den Dateispeicherort des PDF-Dokuments und den Modus angibt, in dem die Datei geöffnet werden soll.
-1. Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
-1. Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `Read`-Methode des `System.IO.FileStream`-Objekts aufrufen. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
+1. Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die Eigenschaft `Length` des `System.IO.FileStream`-Objekts abrufen.
+1. Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
 1. Füllen Sie das `BLOB`-Objekt, indem Sie seinem `MTOM`-Datenelement den Inhalt des Byte-Arrays zuweisen.
 1. Rufen Sie den `MyApplication/EncryptDocument`-Prozess auf, indem Sie die `invoke`-Methode des `MyApplication_EncryptDocumentClient`-Objekts aufrufen. Übergeben Sie das `BLOB`-Objekt, welches das PDF-Dokument enthält. Dieser Prozess gibt ein verschlüsseltes PDF-Dokument innerhalb eines `BLOB`-Objekts zurück.
 1. Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgewert übergeben, der den Dateispeicherort des gesicherten PDF-Dokuments darstellt.
-1. Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `invoke` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des `MTOM`-Datenelement des `BLOB`-Objekts abrufen.
-1. Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor verwenden und das `System.IO.FileStream`-Objekt übergeben.
+1. Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `invoke` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des `MTOM`-Datenelements des `BLOB`-Objekts abrufen.
+1. Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
 1. Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `Write`-Methode des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 >[!NOTE]
@@ -838,7 +838,7 @@ Hier geht es um den Aufruf des folgenden kurzlebigen Forms-Prozesses namens `MyA
 
 >[!NOTE]
 >
->Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um dem Codebeispiel zu folgen, erstellen Sie einen Prozess mit dem Namen `MyApplication/EncryptDocument` in Workbench. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_de).)
+>Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um dem Codebeispiel zu folgen, erstellen Sie einen Prozess mit dem Namen `MyApplication/EncryptDocument` in Workbench. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 Wenn dieser Prozess aufgerufen wird, führt er die folgenden Aktionen aus:
 
@@ -923,7 +923,7 @@ Sie können AEM Forms-Dienste über Webdienste aufrufen und BLOB-Daten über HTT
 
 >[!NOTE]
 >
->Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um dem Codebeispiel zu folgen, erstellen Sie einen Prozess mit dem Namen `MyApplication/EncryptDocument` in Workbench. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_de).)
+>Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um dem Codebeispiel zu folgen, erstellen Sie einen Prozess mit dem Namen `MyApplication/EncryptDocument` in Workbench. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 Wenn dieser Prozess aufgerufen wird, führt er die folgenden Aktionen aus:
 
@@ -984,11 +984,11 @@ Sie können einen AEM Forms-Dienst mit Java-Proxy-Klassen und BLOB-Daten über H
     https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1
    ```
 
-   Weitere Informationen finden Sie unter [Erstellen von Java-Proxy-Klassen mit JAX-WS](#creating-java-proxy-classes-using-jax-ws).
+   Weitere Informationen finden Sie unter [Erstellen von Java-Proxy-Klassen mit von JAX-WS](#creating-java-proxy-classes-using-jax-ws).
 
    >[!NOTE]
    >
-   >Ersetzen Sie `hiro-xp` *mit der IP-Adresse des J2EE-Anwendungsservers, auf dem AEM Forms gehostet wird.*
+   >Ersetzen `hiro-xp` *mit der IP-Adresse des J2EE-Anwendungsservers, auf dem AEM Forms gehostet wird.*
 
 1. Verpacken Sie die mit JAX-WS erstellten Java-Proxy-Klassen in einer JAR-Datei.
 1. Schließen Sie die Java-Proxy-JAR-Datei und die JAR-Dateien im Pfad
@@ -1006,7 +1006,7 @@ Sie können einen AEM Forms-Dienst mit Java-Proxy-Klassen und BLOB-Daten über H
       `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=http`
 
    * Weisen Sie den AEM Forms-Benutzer dem `USERNAME_PROPERTY`-Feld des `javax.xml.ws.BindingProvider`-Objekts zu.
-   * Weisen Sie den entsprechenden Kennwortwert dem `PASSWORD_PROPERTY`-Feld des `javax.xml.ws.BindingProvider`-Objekts zu.
+   * Weisen Sie dem Feld `PASSWORD_PROPERTY` des Objekts `javax.xml.ws.BindingProvider` den entsprechenden Kennwortwert zu.
 
    Das folgende Code-Beispiel zeigt diese Programmlogik:
 
@@ -1037,7 +1037,7 @@ Wenn dieser Prozess aufgerufen wird, führt er die folgenden Aktionen aus:
 1. Ruft das ungesicherte PDF-Dokument ab, das an den Prozess übergeben wird. Diese Aktion basiert auf dem Vorgang `SetValue`. Der Eingangsparameter für diesen Prozess ist eine `document`-Prozessvariable mit dem Namen `inDoc`.
 1. Sie verschlüsselt das PDF-Dokument mit einem Kennwort. Diese Aktion basiert auf dem Vorgang `PasswordEncryptPDF`. Das kennwortverschlüsselte PDF-Dokument wird in einer Prozessvariablen namens `outDoc` zurückgegeben.
 
-Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um den Code-Beispielen folgen zu können, erstellen Sie mithilfe von Workbench einen Prozess mit dem Namen `MyApplication/EncryptDocument`. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_de).)
+Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um den Code-Beispielen folgen zu können, erstellen Sie mithilfe von Workbench einen Prozess mit dem Namen `MyApplication/EncryptDocument`. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 >[!NOTE]
 >
@@ -1072,7 +1072,7 @@ Nachdem Sie einen Web-Verweis erstellt haben, stehen Ihnen die beiden folgenden 
 
 >[!NOTE]
 >
->Bevor Sie einen Web-Verweis für den Forms-Service erstellen, vergewissern Sie sich, dass Sie in Ihrem Projekt auf Web Services Enhancements 2.0 verweisen. (Siehe „Installation von Web Services Enhancements 2.0“.)
+>Bevor Sie einen Web-Verweis für den Forms-Service erstellen, vergewissern Sie sich, dass Sie in Ihrem Projekt auf Web Services Enhancements 2.0 verweisen. (Siehe &quot;Web Services-Verbesserungen installieren 2.0&quot;.)
 
 **Referenzieren der WSE-Bibliothek**
 

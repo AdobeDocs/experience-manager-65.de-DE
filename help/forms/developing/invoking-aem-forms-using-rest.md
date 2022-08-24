@@ -11,10 +11,10 @@ topic-tags: coding
 discoiquuid: df7b60bb-4897-479e-a05e-1b1e9429ed87
 role: Developer
 exl-id: 991fbc56-f144-4ae6-b010-8d02f780d347
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+workflow-type: tm+mt
 source-wordcount: '2506'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
 
-In Workbench erstellte Prozesse können so konfiguriert werden, dass Sie sie mithilfe von Representational State Transfer (REST)-Anforderungen aufrufen können. REST-Anforderungen werden von HTML-Seiten aus gesendet. Das heißt, Sie können mithilfe einer REST-Anforderung einen Forms-Prozess direkt von einer Web-Seite aufrufen. Sie können beispielsweise eine neue Instanz einer Web-Seite öffnen. Anschließend können Sie einen Forms-Prozess aufrufen und ein gerendertes PDF-Dokument mit Daten laden, die in einer HTTP-POST-Anfrage gesendet wurden.
+In Workbench erstellte Prozesse können so konfiguriert werden, dass sie über Representational State Transfer-Anforderungen (REST) aufgerufen werden können. REST-Anforderungen werden von HTML-Seiten aus gesendet. Das heißt, Sie können mithilfe einer REST-Anforderung einen Forms-Prozess direkt von einer Web-Seite aufrufen. Sie können beispielsweise eine neue Instanz einer Web-Seite öffnen. Anschließend können Sie einen Forms-Prozess aufrufen und ein gerendertes PDF-Dokument mit Daten laden, die in einer HTTP-POST-Anfrage gesendet wurden.
 
 Es gibt zwei Arten von HTML-Clients. Der erste HTML-Client ist ein AJAX Client, der in JavaScript geschrieben ist. Der zweite Client ist ein HTML-Formular mit einer Senden-Schaltfläche. Ein HTML-basiertes Client-Programm ist nicht der einzige mögliche REST-Client. Jedes Client-Programm, das HTTP-Anforderungen unterstützt, kann einen Service mithilfe eines REST-Aufrufs aufrufen. Beispielsweise können Sie einen Service aufrufen, indem Sie einen REST-Aufruf aus einem PDF-Formular verwenden. (Siehe [Aufrufen des Prozesses MyApplication/EncryptDocument aus Acrobat](#rest-invocation-examples).)
 
@@ -30,7 +30,7 @@ Bei der Verwendung von REST-Anfragen wird empfohlen, Forms-Services nicht direkt
 
 Wenn Sie einen Service mithilfe von REST aufrufen, werden Sie nach einem Benutzernamen und Kennwort für AEM Forms aufgefordert. Wenn Sie jedoch keinen Benutzernamen und kein Kennwort angeben möchten, können Sie für den Service die Sicherheit deaktivieren.
 
-Um einen Forms-Service (ein Prozess wird zu einem Service, wenn der Prozess aktiviert wird) mithilfe von REST aufzurufen, konfigurieren Sie einen REST-Endpunkt. (Siehe „Verwalten von Endpunkten“ in der [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_63_de).)
+Um einen Forms-Service (ein Prozess wird zu einem Service, wenn der Prozess aktiviert wird) mithilfe von REST aufzurufen, konfigurieren Sie einen REST-Endpunkt. (Siehe &quot;Verwalten von Endpunkten&quot;in [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_63_de).
 
 Nachdem ein REST-Endpunkt konfiguriert wurde, können Sie einen Forms-Service mithilfe einer HTTP-GET-Methode oder einer POST-Methode aufrufen.
 
@@ -99,7 +99,7 @@ Ein AEM Forms-Service kann auf asynchrone Weise aufgerufen werden, indem in der 
  http://localhost:8080/rest/async_invoke/SomeService. SomeOperation?integer_input_variable=123&string_input_variable=abc
 ```
 
-Diese URL gibt den Kennungswert (im Format „text/plain“) des für diesen Aufruf verantwortlichen Auftrags zurück.
+Diese URL gibt den Bezeichnerwert (im Format &quot;text/plain&quot;) des für diesen Aufruf verantwortlichen Auftrags zurück.
 
 Mithilfe einer Aufruf-URL, bei der `services` durch `async_status` ersetzt ist, kann der Status des asynchronen Aufrufs abgerufen werden. Die URL muss einen `job_id`-Parameter enthalten, der den Kennungswert des mit diesem Aufruf verknüpften Auftrags angibt. Beispiel:
 
@@ -107,7 +107,7 @@ Mithilfe einer Aufruf-URL, bei der `services` durch `async_status` ersetzt ist, 
  http://localhost:8080/rest/async_status/SomeService.SomeOperation?job_id=2345353443366564
 ```
 
-Diese URL gibt einen ganzzahligen Wert (im Format „text/plain“) zurück, der den Auftragsstatus gemäß der Spezifikation des Auftrags- Managers kodiert (beispielsweise bedeutet 2 „wird ausgeführt, 3 bedeutet „abgeschlossen“, 4 bedeutet „fehlgeschlagen“ usw.).
+Diese URL gibt einen ganzzahligen Wert (im Format &quot;text/plain&quot;) zurück, der den Auftragsstatus gemäß der Spezifikation von Job Manager kodiert (z. B. 2 bedeutet &quot;Ausführen&quot;, 3 bedeutet &quot;Abgeschlossen&quot;, 4 bedeutet &quot;Fehlgeschlagen&quot; usw.).
 
 Wenn der Auftrag abgeschlossen ist, gibt die URL das gleiche Ergebnis zurück, wie wenn der Service synchron aufgerufen worden wäre.
 
@@ -291,7 +291,7 @@ Sie können einen kurzlebigen AEM Forms-Prozess namens *MyApplication/EncryptDoc
 
 >[!NOTE]
 >
->Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um dem Code-Beispiel zu folgen, erstellen Sie mithilfe von Workbench einen Prozess mit dem Namen `MyApplication/EncryptDocument`. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_de).)
+>Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um dem Code-Beispiel zu folgen, erstellen Sie mithilfe von Workbench einen Prozess mit dem Namen `MyApplication/EncryptDocument`. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 Wenn dieser Prozess aufgerufen wird, führt er die folgenden Aktionen aus:
 

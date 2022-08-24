@@ -10,10 +10,10 @@ discoiquuid: a1a0ad6b-023a-4822-9cce-0618657c3f9d
 docset: aem65
 feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '3838'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -487,8 +487,8 @@ Der Datenwörterbucheditor erzwingt folgende Überprüfungen beim Erstellen oder
 * Alle DDEs müssen über einen Elementtyp „nicht null“ verfügen.
 * Alle Verweisnamen des DDE dürfen nicht null sein.
 * Alle Verweisnamen des DDE müssen eindeutig sein.
-* Alle DDE-Verweise dürfen nur alphanumerische Zeichen und „_“ enthalten.
-* Alle DDE-Anzeigenamen dürfen nur alphanumerische Zeichen und „_“ enthalten.
+* Alle DDE-Verweise dürfen nur alphanumerische Zeichen und &quot;_&quot;enthalten.
+* Alle DDE-Anzeigenamen dürfen nur alphanumerische Zeichen und &quot;_&quot;enthalten.
 * Composite- und Collection-Elemente sind auf Blattebene nicht zulässig. Nur Primitive-Elemente (String, Date, Number, Boolean) sind auf Blattebene zulässig. Diese Überprüfung stellt sicher, dass es keine Composite- oder Collection-Elemente ohne untergeordnetes DDE gibt.
 * Ein übergeordnetes Composite-DDE darf nicht zwei untergeordnete Elemente mit demselben Namen enthalten.
 * Der ENUM-Subtyp wird nur für String- und Number-Elemente verwendet.
@@ -591,7 +591,7 @@ Beim Zuordnen eines Collection DDE zu einem XML-Schema muss Folgendes beachtet w
 
 * Die Bindung für alle untergeordneten DDEs muss relativ zum übergeordneten Collection-Element sein.
 
-Im folgenden XML-Schema wird ein Element mit den Namen „Tokens“ und ein Attribut „maxOccurs“ mit „unbounded“ gezeigt. Daher ist „Tokens“ ein Collection-Element.
+Das nachstehende XML-Schema deklariert ein Element mit dem Namen Tokens und dem Attribut maxOccurs mit dem Namen &quot;unbound&quot;. Daher ist „Tokens“ ein Collection-Element.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

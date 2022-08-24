@@ -9,10 +9,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: adbe8416-c8d7-4581-940b-df62eadf0e26
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
-workflow-type: ht
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: tm+mt
 source-wordcount: '6167'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -27,7 +27,7 @@ Auf der Seite „Dateitypeinstellungen“ können Sie die folgenden Aufgaben aus
 * Geben Sie an, welche Dateitypeinstellungen standardmäßig verwendet werden sollen (siehe [PDF Generator-Konfigurationsdateien importieren und exportieren](https://helpx.adobe.com/de/aem-forms/6-2/admin-help/importing-exporting-pdf-generator-configuration.html))
 * [Standardeinstellungen ändern](/help/forms/using/admin-help/configuring-file-type-settings2.md#change-the-default-settings)
 * [PDF/A-Unterstützung aktivieren](https://helpx.adobe.com/de/aem-forms/6-2/admin-help/enable-pdf-a-support.html)
-* [Eine Dateitypeinstellung löschen](https://helpx.adobe.com/de/aem-forms/6-2/admin-help/enable-pdf-a-support.html)
+* [Einstellung „Dateityp löschen“](https://helpx.adobe.com/aem-forms/6-2/admin-help/enable-pdf-a-support.html)
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Sie erstellen oder bearbeiten eine Dateitypeinstellung, um anzugeben, wie die An
 
 1. Geben Sie in den folgenden Abschnitten die benötigten Informationen ein:
 
-   [PDF Generator-Konfigurationsdateien importieren und exportieren](https://helpx.adobe.com/de/aem-forms/6-2/admin-help/importing-exporting-pdf-generator-configuration.html)
+   [PDF Generator-Konfigurationsdateien importieren und exportieren](https://helpx.adobe.com/aem-forms/6-2/admin-help/importing-exporting-pdf-generator-configuration.html)
 
 [Adobe PDF-Exporteinstellungen (nur Windows)](#adobe-pdf-export-settings-windows-only)
 
@@ -257,7 +257,7 @@ Weitere Informationen zum Zugriff auf diese Einstellung finden Sie unter [Dateit
 
    >[!NOTE]
    >
-   >*Wenn Sie die Einbettung für einige Schriftarten aufheben möchten, deren Untergruppen im Dokument eingebettet sind, setzen Sie das Symbol „+“ vor den Namen der Schriftart. Beispiel: „+Helvetica“.*
+   >*Wenn Sie die Einbettung für einige Schriftarten aufheben möchten, deren Untergruppen im Dokument eingebettet sind, setzen Sie das Symbol „+“ vor den Namen der Schriftart. Beispiel: &quot;+Helvetica&quot;.*
 
 1. Wenn Sie lediglich die verwendeten Untergruppen der eingebetteten Schriftarten einbetten möchten, wählen Sie **Alle eingebetteten Schriftarten in Untergruppe zusammenfassen**.
 
@@ -519,7 +519,7 @@ Diese Optionen bestimmen, wie Microsoft Word-Dateien konvertiert werden. Informa
 
 styleName1=level1[,styleName2=level2...]
 
-Wenn der Name eines Microsoft Word-Stils ein Komma (,) oder Gleichheitszeichen (=) enthält, müssen Sie den Sonderzeichen ein Escape-Zeichen („\_) voranstellen. So müssten Sie z. B. für einen Stil mit dem Namen „Überschrift, 1“ den Wert Überschrift\, 1 angeben.
+Wenn ein Microsoft Word-Stilname ein Komma (,) oder Gleichheitszeichen (=) enthält, müssen Sie den Sonderzeichen das Escape-Zeichen (&quot;\_) voranstellen. Geben Sie beispielsweise einen Stil mit dem Namen &quot;Überschrift, 1&quot;als Überschrift\, 1 an.
 
 ## Microsoft Visio-Einstellungen (nur Windows) {#visio}
 
@@ -623,6 +623,6 @@ Sie können die Einstellungen für andere Anwendungen nicht mithilfe von Adminis
 * Adobe FrameMaker: `fm`
 * Adobe Photoshop: `psd`
 
-Die Unterstützung dieser Dateitypen muss ggf. angepasst werden. Weitere Informationen finden Sie unter „Hinzufügen der Unterstützung für weitere native Dateiformate“ in [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_62).
+Die Unterstützung dieser Dateitypen muss ggf. angepasst werden. Weitere Informationen finden Sie unter &quot;Hinzufügen der Unterstützung für weitere native Dateiformate&quot;in [Programmieren mit AEM Formularen](https://www.adobe.com/go/learn_aemforms_programming_62).
 
 Wenn Sie Hilfe bei der Konfiguration eines PDFG-Netzdruckers benötigen, finden Sie weiter Informationen unter[ Einrichten eines PDFG-Netzdruckers (nur Windows)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md).

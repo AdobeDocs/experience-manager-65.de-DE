@@ -10,10 +10,10 @@ discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 feature: Interactive Communication
 exl-id: b8e84c5d-2ec8-4575-9eed-6b37b04e5d66
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: tm+mt
 source-wordcount: '2477'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -161,7 +161,7 @@ Mit Regeleditor in einem Text können Sie Regeln erstellen, um Textzeichenfolgen
 
 1. Tippen Sie auf **[!UICONTROL Regel erstellen]**.
 
-   Das Dialogfeld zum Erstellen der Regel wird angezeigt. Zusätzlich zu Zeichenfolge, Zahl, mathematischem Ausdruck und Datum stehen im Regeleditor folgende Regeln zum Erstellen von Anweisungen der Regeln zur Verfügung:
+   Das Dialogfeld „Regel erstellen“ wird angezeigt. Zusätzlich zu Zeichenfolge, Zahl, mathematischem Ausdruck und Datum stehen im Regeleditor folgende Regeln zum Erstellen von Anweisungen der Regeln zur Verfügung:
 
    * Eigenschaft des zugeordneten Formulardatenmodells
    * Beliebige Variablen, die Sie erstellt haben.
@@ -250,7 +250,7 @@ Fügen Sie ggf. Sonderzeichen in das Dokumentfragment ein. Beispielsweise könne
 
 * Währungssymbole wie €,￥ und £
 * Mathematische Symbole wie ∑, √, ∂ und ^
-* Satzzeichen wie „ und “
+* Satzzeichen wie ‟ und &quot;
 
 ![specialcharacters-2](assets/specialcharacters-2.png)
 

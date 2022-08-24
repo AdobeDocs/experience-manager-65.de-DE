@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: ad450124-49a5-4afb-aac3-ed3733d6504b
 docset: aem65
 exl-id: b6ded6ac-4fb1-49f9-b272-16774c3e89a3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '741'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -37,9 +37,9 @@ Das Szenario für den Antrag auf Kfz-Versicherung von We.Finance ist eine visuel
 
 ### Gloria sendet eine Mitteilung zur Erneuerung der Versicherungspolice von We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Gloria meldet sich bei der AEM-Instanz an, klickt auf **Erneuerung der Kfz-Versicherung** und dann auf **Agent-Benutzeroberfläche öffnen.** Durch das Klicken wird das Versicherungsdokument mit den Vertragsdetails von Sarah Rose vorausgefüllt. Gloria klickt auf **Senden**, woraufhin auf dem Bildschirm die Meldung „Submission Initiated (Absenden eingeleitet)“ und dann wenige Sekunden danach „Submitted Successfully (Erfolgreich abgesendet)“ erscheint.
+Gloria meldet sich bei der AEM-Instanz an, klickt auf **Erneuerung der Kfz-Versicherung** und dann auf **Agent-Benutzeroberfläche öffnen.** Durch das Klicken wird das Versicherungsdokument mit den Vertragsdetails von Sarah Rose vorausgefüllt. Gloria-Klicks **Einsenden** und eine Meldung auf dem Bildschirm &quot;Sendung initiiert&quot;und dann in wenigen Sekunden &quot;Gesendet erfolgreich&quot; angezeigt.
 
-Sarah erhält eine E-Mail mit dem Betreff „Die Erneuerung Ihrer Kfz-Versicherung“.
+Sarah erhält eine E-Mail mit dem Betreff &quot;Erneuerung Ihrer Kfz-Versicherung&quot;.
 
 ![Agent-Benutzeroberfläche](assets/agent_ui_email_new.png)
 

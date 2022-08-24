@@ -12,10 +12,10 @@ discoiquuid: 17a86543-30d3-4e16-a373-67b46d551da9
 docset: aem65
 feature: Mobile Forms
 exl-id: 76bd1e2d-9e65-452c-8cef-123d28886a62
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -95,13 +95,13 @@ Die Widget-Konfiguration wird als JSON-Objekt bereitgestellt (eine Sammlung von 
 ```
 *{*
 
-*“identifier1” : “customwidgetname”,
-“identifier2” : “customwidgetname2”,
+*"identifier1" : "customwidgetname",
+"identifier2" : "customwidgetname2",
 ..
 }*
 ```
 
-Hierbei ist „identifier“ ein jQuery CSS-Selektor, der für ein bestimmtes Feld, eine Gruppe von Feldern eines bestimmten Typs oder alle Felder steht. Im Folgenden ist der Wert des Bezeichners in verschiedenen Fällen aufgeführt:
+wobei &quot;identifier&quot;ein jQuery-CSS-Selektor ist, der ein bestimmtes Feld, eine Reihe von Feldern eines bestimmten Typs oder alle Felder darstellt. Im Folgenden ist der Wert des Bezeichners in verschiedenen Fällen aufgeführt:
 
 | Typ des Bezeichners | ID | Beschreibung |
 |---|---|---|

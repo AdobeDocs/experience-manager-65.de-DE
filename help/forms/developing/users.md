@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 role: Developer
 exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+workflow-type: tm+mt
 source-wordcount: '6228'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -226,14 +226,14 @@ Fügen Sie Benutzer mithilfe der Directory Manager-Service-API (Webservice) hinz
 1. Erstellen Sie einen DirectoryManagerService-Client.
 
    * Erstellen Sie ein `DirectoryManagerServiceClient`-Objekt, indem Sie dessen Standardkonstruktor verwenden.
-   * Erstellen Sie ein `DirectoryManagerServiceClient.Endpoint.Address`-Objekt, indem Sie den `System.ServiceModel.EndpointAddress`-Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/DirectoryManagerService?blob=mtom`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Servicereferenz erstellen. Stellen Sie sicher, dass Sie `?blob=mtom` angeben.
+   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `DirectoryManagerServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/DirectoryManagerService?blob=mtom`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Servicereferenz erstellen. Stellen Sie sicher, dass Sie `?blob=mtom` angeben.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `DirectoryManagerServiceClient.Endpoint.Binding`-Feldes abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
-      * Weisen Sie dem `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`-Feld den AEM Forms-Benutzernamen zu.
-      * Weisen Sie dem `DirectoryManagerServiceClient.ClientCredentials.UserName.Password`-Feld den entsprechenden Kennwortwert zu.
-      * Weisen Sie dem `BasicHttpBindingSecurity.Transport.ClientCredentialType`-Feld den Konstantenwert `HttpClientCredentialType.Basic` zu.
+      * Weisen Sie dem Feld `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+      * Weisen Sie dem Feld `DirectoryManagerServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
+      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
       * Weisen Sie dem `BasicHttpBindingSecurity.Security.Mode`-Feld den Konstantenwert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
 1. Definieren Sie Benutzerinformationen.
@@ -248,12 +248,12 @@ Fügen Sie Benutzer mithilfe der Directory Manager-Service-API (Webservice) hinz
 
 1. Fügen Sie den Benutzer zu AEM Forms hinzu.
 
-   Rufen Sie die Methode `createLocalUser` des `DirectoryManagerServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
+   Rufen Sie die `createLocalUser`-Methode des `DirectoryManagerServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
 
    * Das `UserImpl`-Objekt, das den neuen Benutzer darstellt
    * Einen Zeichenfolgenwert, der das Kennwort des Benutzers darstellt
 
-   Die Methode `createLocalUser` gibt einen Zeichenfolgenwert zurück, der den Wert der lokalen Benutzerkennung angibt.
+   Die `createLocalUser`-Methode gibt einen Zeichenfolgenwert zurück, der den Wert der lokalen Benutzerkennung angibt.
 
 1. Stellen Sie sicher, dass der Benutzer hinzugefügt wurde.
 
@@ -326,7 +326,7 @@ So löschen Sie Benutzer mithilfe der Directory Manager Service-API (Java):
 
    * Erstellen Sie ein Objekt `PrincipalSearchFilter`, indem Sie den Konstruktor verwenden.
    * Legen Sie den Wert der Benutzerkennung fest, indem Sie die `setUserId`-Methode des `PrincipalSearchFilter`-Objekts aufrufen. Ein Zeichenfolgenwert, der den Wert der Benutzerkennung darstellt.
-   * Rufen Sie die `findPrincipals`-Methode des `DirectoryManagerServiceClient`-Objekts auf und übergeben Sie das `PrincipalSearchFilter`-Objekt. Diese Methode gibt eine `java.util.List`-Instanz zurück, bei der jedes Element ein `User`-Objekt ist. Iterieren Sie durch die `java.util.List`-Instanz, um den zu löschenden Benutzer zu suchen.
+   * Rufen Sie die `findPrincipals`-Methode des `DirectoryManagerServiceClient`-Objekts auf, und übergeben Sie das `PrincipalSearchFilter`-Objekt. Diese Methode gibt eine `java.util.List`-Instanz zurück, bei der jedes Element ein `User`-Objekt ist. Iterieren Sie durch die `java.util.List`-Instanz, um den zu löschenden Benutzer zu suchen.
 
 1. Löschen Sie den Benutzer aus AEM Forms.
 
@@ -355,14 +355,14 @@ Löschen Sie Benutzer mithilfe der Directory Manager-Service-API (Webservice):
 1. Erstellen Sie einen DirectoryManagerService-Client.
 
    * Erstellen Sie ein `DirectoryManagerServiceClient`-Objekt, indem Sie dessen Standardkonstruktor verwenden.
-   * Erstellen Sie ein `DirectoryManagerServiceClient.Endpoint.Address`-Objekt, indem Sie den `System.ServiceModel.EndpointAddress`-Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/DirectoryManagerService?blob=mtom`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Servicereferenz erstellen. Stellen Sie sicher, dass Sie `blob=mtom.` angeben
+   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `DirectoryManagerServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/DirectoryManagerService?blob=mtom`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Servicereferenz erstellen. Stellen Sie sicher, dass Sie `blob=mtom.` angeben
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `DirectoryManagerServiceClient.Endpoint.Binding`-Feldes abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
-      * Weisen Sie dem `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`-Feld den AEM Forms-Benutzernamen zu.
-      * Weisen Sie dem `DirectoryManagerServiceClient.ClientCredentials.UserName.Password`-Feld den entsprechenden Kennwortwert zu.
-      * Weisen Sie dem `BasicHttpBindingSecurity.Transport.ClientCredentialType`-Feld den Konstantenwert `HttpClientCredentialType.Basic` zu.
+      * Weisen Sie dem Feld `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+      * Weisen Sie dem Feld `DirectoryManagerServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
+      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
       * Weisen Sie dem `BasicHttpBindingSecurity.Security.Mode`-Feld den Konstantenwert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
 1. Geben Sie den zu löschenden Benutzer an.
@@ -474,8 +474,8 @@ So erstellen Sie eine Gruppe mithilfe der Directory Manager Service-API (Java):
 1. Führen Sie eine Aktion mit der Gruppe aus.
 
    * Erstellen Sie ein Objekt `PrincipalSearchFilter`, indem Sie den Konstruktor verwenden.
-   * Legen Sie den Wert der Benutzerkennung fest, indem Sie die Methode `setUserId` des `PrincipalSearchFilter`-Objekts aufrufen. Ein Zeichenfolgenwert, der den Wert der Benutzerkennung darstellt.
-   * Rufen Sie die Methode `findPrincipals` des `DirectoryManagerServiceClient`-Objekts auf und übergeben Sie das `PrincipalSearchFilter`-Objekt. Diese Methode gibt eine `java.util.List`-Instanz zurück, bei der jedes Element ein `User`-Objekt ist. Iterieren Sie durch die `java.util.List`-Instanz, um den Benutzer zu suchen.
+   * Legen Sie den Wert der Benutzerkennung fest, indem Sie die `setUserId`-Methode des `PrincipalSearchFilter`-Objekts aufrufen. Ein Zeichenfolgenwert, der den Wert der Benutzerkennung darstellt.
+   * Rufen Sie die `findPrincipals`-Methode des `DirectoryManagerServiceClient`-Objekts auf, und übergeben Sie das `PrincipalSearchFilter`-Objekt. Diese Methode gibt eine `java.util.List`-Instanz zurück, bei der jedes Element ein `User`-Objekt ist. Iterieren Sie durch die `java.util.List`-Instanz, um den Benutzer zu suchen.
    * Fügen Sie einen Benutzer zur Gruppe hinzu, indem Sie die Methode `addPrincipalToLocalGroup` des `DirectoryManagerServiceClient`-Objekts aufrufen. Übergeben Sie den Rückgabewert der Methode `getOid` des `User`-Objekts. Übergeben Sie den Rückgabewert der Methode `getOid` des `Group`-Objekts (verwenden Sie die `Group`-Instanz, die die neue Gruppe darstellt).
 
 **Siehe auch**
@@ -692,26 +692,26 @@ Verwalten Sie Rollen und Berechtigungen mithilfe der Authorization Manager Servi
 1. Erstellen Sie einen AuthorizationManagerService-Client.
 
    * Erstellen Sie mithilfe des Standardkonstruktors ein `AuthorizationManagerServiceClient`-Objekt.
-   * Erstellen Sie mithilfe des Konstruktors `System.ServiceModel.EndpointAddress` ein `AuthorizationManagerServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/AuthorizationManagerService?blob=mtom`). Sie müssen das Attribut `lc_version` nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.
+   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `AuthorizationManagerServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/AuthorizationManagerService?blob=mtom`). Sie müssen das Attribut `lc_version` nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekr, indem Sie den Wert des Felds `AuthorizationManagerServiceClient.Endpoint.Binding` abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie das Feld `MessageEncoding` des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
-      * Weisen Sie den AEM Forms-Benutzernamen dem Feld `AuthorizationManagerServiceClient.ClientCredentials.UserName.UserName` zu.
-      * Weisen Sie dem Feld `AuthorizationManagerServiceClient.ClientCredentials.UserName.Password` den zugehörigen Kennwortwert zu.
+      * Weisen Sie dem Feld `AuthorizationManagerServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+      * Weisen Sie dem Feld `AuthorizationManagerServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
 1. Rufen Sie die entsprechenden Rollen- oder Berechtigungsvorgänge auf.
 
-   Um einem Prinzipal eine Rolle zuzuweisen, rufen Sie die Methode `assignRole` des `AuthorizationManagerServiceClient`-Objekts auf und übergeben ihr die folgenden Werte:
+   Um einem Prinzipal eine Rolle zuzuweisen, rufen Sie die `assignRole`-Methode des `AuthorizationManagerServiceClient`-Objekts auf und übergeben ihr die folgenden Werte:
 
    * Ein `string`-Objekt, das die Rollenkennung enthält
    * Ein `MyArrayOf_xsd_string`-Objekt, das die Prinzipalkennungen enthält.
 
    Um eine Rolle aus einem Prinzipal zu entfernen, rufen Sie die Methode `unassignRole` des `AuthorizationManagerServiceService`-Objekts auf und übergeben ihr die folgenden Werte:
 
-   * Ein `string`-Objekt, das die Rollenkennung enthält.
+   * ein `string`-Objekt, das die Rollenkennung enthält.
    * Ein Array von `string`-Objekten, die die Prinzipalkennungen enthalten.
 
 
@@ -833,7 +833,7 @@ Authentifizieren Sie einen Benutzer mit der Authentication Manager Service API (
 1. Schließen Sie Projektdateien ein.
 
    * Erstellen Sie eine Microsoft .NET-Client-Assembly, welche die Authentication Manager-WSDL verwendet. (Weitere Informationen finden Sie unter [Aufrufen von AEM Forms mit Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
-   * Referenzieren Sie die Microsoft .NET-Client-Assembly. (Weitere Informationen finden Sie unter „“Verweisen auf die .NET-Clientassembly“ in [Aufrufen von AEM Forms mit Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)).
+   * Referenzieren Sie die Microsoft .NET-Client-Assembly. (Siehe &quot;Verweisen auf die .NET-Clientassembly&quot;in [Aufrufen von AEM Forms mit Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).
 
 1. Erstellen Sie einen AuthenticationManagerService-Client.
 

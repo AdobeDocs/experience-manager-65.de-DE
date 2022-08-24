@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9fd531c0-5206-4be0-a450-13e0dc806068
 exl-id: 1fe0e7b4-6109-4f7a-8858-8237a1c5c93b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: tm+mt
 source-wordcount: '641'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ Nur X509v3-Zertifikate werden unterstützt. Dieser Zertifikattyp kann in einer b
 
 Bei Zertifikaten, die zum Abschließen der Signaturüberprüfung erforderlich sind, müssen sich diese Dateien im selben Speicher (HSM oder Datenbank) befinden.
 
-Sie können Zertifikate mit der Trust Manager-API auch importieren und löschen. Weitere Informationen finden Sie in den Kapiteln zum Importieren von Zertifikaten mit der Trust Manager-API und Löschen von Zertifikaten mit der Trust Manager-API unter [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_de).
+Sie können Zertifikate mit der Trust Manager-API auch importieren und löschen. Weitere Informationen finden Sie unter &quot;Importieren von Zertifikaten mit der Trust Manager-API&quot;und unter &quot;Löschen von Zertifikaten mit der Trust Manager-API&quot;in [Programmieren mit AEM Formularen](https://www.adobe.com/go/learn_aemforms_programming_63_de).
 
 ## Zertifikat importieren {#import-a-certificate}
 

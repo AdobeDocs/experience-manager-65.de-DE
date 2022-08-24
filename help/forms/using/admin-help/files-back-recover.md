@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: ht
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: tm+mt
 source-wordcount: '2072'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -56,7 +56,7 @@ Der Speicherort des globalen Dokumentenspeichers muss ggf. während einer Wieder
 
 Sie können mithilfe von Administration Console in der AEM Forms-Datenbank AEM Forms-Dokumentenspeicher aktivieren. Obwohl bei dieser Option alle permanenten Dokumente in der Datenbank erhalten bleiben, erfordert AEM Forms den dateisystembasierten GDS-Ordner, da dieser zum Speichern permanenter und temporärer Dateien und Ressourcen, die mit AEM Forms-Sitzungen und -Aufrufen zusammenhängen, verwendet wird.
 
-Wenn Sie die Option „Dokumentspeicher in der Datenbank aktivieren“ in den Core-Systemeinstellungen in Administration Console wählen oder Configuration Manager verwenden, sind in AEM Forms der Snapshot-Sicherungsmodus und der kontinuierliche Sicherungsmodus nicht zulässig. Daher ist keine Verwaltung von Sicherungsmodi erforderlich, wenn Sie AEM Forms verwenden. Wenn Sie diese Option verwenden, sollten Sie den globalen Dokumentenspeicher nur sichern, nachdem Sie die Option aktiviert haben. Wenn Sie AEM Forms aus einer Sicherung wiederherstellen, müssen Sie den Sicherungsordner für den GDS nicht umbenennen oder wiederherzustellen.
+Wenn Sie in den Core-Systemeinstellungen der Administration Console die Option &quot;Dokumentenspeicher in der Datenbank aktivieren&quot;auswählen oder Configuration Manager verwenden, sind AEM Forms nicht für den Snapshot-Sicherungsmodus und den kontinuierlichen Sicherungsmodus geeignet. Daher ist keine Verwaltung von Sicherungsmodi erforderlich, wenn Sie AEM Forms verwenden. Wenn Sie diese Option verwenden, sollten Sie den globalen Dokumentenspeicher nur sichern, nachdem Sie die Option aktiviert haben. Wenn Sie AEM Forms aus einer Sicherung wiederherstellen, müssen Sie den Sicherungsordner für den GDS nicht umbenennen oder wiederherzustellen.
 
 ## AEM-Repository {#aem-repository}
 

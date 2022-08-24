@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: 8a75c201-bd88-4809-be08-69de94656489
 role: Developer
 exl-id: 4677b9e5-3811-4de3-b4f4-9574b5898486
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
 workflow-type: tm+mt
 source-wordcount: '1775'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -154,9 +154,9 @@ Assemblieren eines nicht interaktiven PDF-Dokuments mithilfe der Assembler-Diens
 1. Speichern Sie das nicht interaktive PDF-Dokument.
 
    * Erstellen Sie ein `java.io.File`-Objekt und stellen Sie sicher, dass die Dateierweiterung .pdf lautet.
-   * Rufen Sie die Methode `copyToFile` des `Document`-Objekts auf, um den Inhalt des `Document`-Objekts in die Datei zu kopieren. Stellen Sie sicher, dass Sie das `Document`-Objekt verwenden, das von der `invokeOneDocument`-Methode zurückgegeben wurde.
+   * Rufen Sie die Methode `copyToFile` des `Document`-Objekts auf, um den Inhalt des `Document`-Objekts in die Datei zu kopieren. Stellen Sie sicher, dass Sie das `Document`-Objekt verwenden, das die Methode `invokeOneDocument` zurückgegeben hat.
 
-* „Schnellstart (SOAP-Modus): Assemblieren eines nicht interaktiven PDF-Dokuments mit der Java-API“
+* &quot;Schnellstart (SOAP-Modus): Zusammenstellen eines nicht interaktiven PDF-Dokuments mithilfe der Java-API&quot;
 
 ## Zusammenführen eines nicht interaktiven PDF-Dokuments mithilfe der Webservice-API {#assemble-a-non-interactive-pdf-document-using-the-web-service-api}
 
@@ -219,9 +219,9 @@ Assemblieren eines nicht interaktiven PDF-Dokuments mithilfe der Assembler-Servi
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des nicht interaktiven PDF-Dokuments und den Modus zum Öffnen der Datei darstellt.
    * Erstellen Sie ein Byte-Array, in dem der Inhalt des von der `invokeOneDocument`-Methode zurückgegebenen `BLOB`-Objekts gespeichert wird. Füllen Sie das Byte-Array, indem Sie den Wert aus dem `MTOM`-Feld des `BLOB`-Objekts abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor verwenden und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `Write`-Methode des `System.IO.BinaryWriter`-Objekts aufrufen und ihr das Byte-Array übergeben.
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
-* „Schnellstart (MTOM): Assemblieren eines nicht interaktiven PDF-Dokuments mithilfe der Web-Service-API“.
+* &quot;Schnellstart (MTOM): Assemblieren eines nicht interaktiven PDF-Dokuments mithilfe der Webdienst-API&quot;.
 
 **Siehe auch**
 
