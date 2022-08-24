@@ -5,10 +5,10 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: 6c6ddaba0e42df4b4701670e8abfdabe5205879c
+source-git-commit: 495b9a006f5288ad6579e13aaea82ace6d6f0e91
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 33%
+source-wordcount: '522'
+ht-degree: 34%
 
 ---
 
@@ -53,17 +53,15 @@ Navigieren Sie zum entsprechenden Ordner und geben Sie an einer Eingabeaufforder
 1. Wenn die Installation abgeschlossen ist, klicken Sie auf **[!UICONTROL Weiter]**, um die Schnellkorrektur-Updates auf Ihre installierten Dateien anzuwenden.
 
 1. **[Nur für Windows]:** Führen Sie einen der folgenden Schritte aus:
-   * Deaktivieren Sie die **Configuration Manager starten** Option vor dem Klicken **[!UICONTROL Fertig]**. Ausführen **Configuration Manager** durch Verwendung von **ConfigurationManager.bat** Datei in `[aem-forms root]\configurationManager\bin`.
+   * Deaktivieren Sie entweder die **Configuration Manager starten** Option vor dem Klicken **[!UICONTROL Fertig]**. Ausführen **Configuration Manager** durch Verwendung von **ConfigurationManager.bat** Datei in `[aem-forms root]\configurationManager\bin`.
 
-   * Deaktivieren Sie die **Configuration Manager starten** Option vor dem Klicken **[!UICONTROL Fertig]**. Vor der Ausführung **Configuration Manager** using **ConfigurationManager.exe** oder **ConfigurationManager_IPv6.exe**, navigieren Sie zu *`<AEMForms_Install_Dir>\configurationManager\bin`* Verzeichnis und ersetzen [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) und [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) Dateien.
+   * Oder deaktivieren Sie die **Configuration Manager starten** Option vor dem Klicken **[!UICONTROL Fertig]**. Vor der Ausführung **Configuration Manager** using **ConfigurationManager.exe** oder **ConfigurationManager_IPv6.exe**, navigieren Sie zu *`<AEMForms_Install_Dir>\configurationManager\bin`* Verzeichnis und ersetzen [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) und [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) Dateien.
    >[!NOTE]
    >Verwenden **ConfigurationManager.bat** hilft Ihnen dabei, die Namensänderung von .lax-Dateien manuell zu vermeiden.
 
-1. **[Nur für Unix-basierte]:** Führen Sie einen der folgenden Schritte aus:
+1. **[Nur für Unix-basierte]:**
 
-   * Die **Configuration Manager starten** ist standardmäßig aktiviert. Klicken **[!UICONTROL Fertig]** , um Configuration Manager sofort auszuführen.
-
-   * Zum Ausführen **Configuration Manager** Heben Sie später die Auswahl der **Configuration Manager starten** Option vor dem Klicken **[!UICONTROL Fertig]**. Sie können **Configuration Manager** später mithilfe des entsprechenden Skripts in der `[AEM_forms_root]/configurationManager/bin` Verzeichnis.
+   * Die **Configuration Manager starten** ist standardmäßig aktiviert. Klicken **[!UICONTROL Fertig]** , um Configuration Manager sofort auszuführen oder **Configuration Manager** Heben Sie später die Auswahl der **Configuration Manager starten** Option vor dem Klicken **[!UICONTROL Fertig]**. Sie können **Configuration Manager** später mithilfe des entsprechenden Skripts in der `[AEM_forms_root]/configurationManager/bin` Verzeichnis.
 
 1. Wählen Sie je nach Anwendungsserver eines der folgenden Dokumente aus und befolgen Sie die Anweisungen im Bereich *Konfigurieren und Bereitstellen von AEM Forms*.
 
