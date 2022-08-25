@@ -12,10 +12,10 @@ discoiquuid: a2bd7045-970f-4245-ad5d-a272a654df0a
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '6872'
-ht-degree: 61%
+ht-degree: 60%
 
 ---
 
@@ -661,7 +661,7 @@ Die folgenden beiden OSGi-Komponenten wurden hinzugefügt, um Authentifizierungs
 
 Die Teile der CUG-Umschreibung, die für Authentifizierung relevant sind, umfassen nur eine einzelne Konfigurationsoption, die „Adobe Granite Authentication Requirement and Login Path Handler“ zugehörig ist:
 
-**„Authentication Requirement and Login Path Handler“**
+**&quot;Authentication Requirement and Login Path Handler&quot;**
 
 <table>
  <tbody>
@@ -682,7 +682,7 @@ Die Teile der CUG-Umschreibung, die für Authentifizierung relevant sind, umfass
 
 ## Standardkonfiguration seit Einführung von AEM 6.3 {#default-configuration-since-aem}
 
-Neue Installationen von AEM verwenden standardmäßig die neuen Implementierungen für die autorisierungs- und authentifizierungsrelevanten Teile des CUG-Features. Die alte Implementierung „Adobe Granite Closed User Group (CUG) Support“ ist veraltet und wird standardmäßig in allen Installationen von AEM deaktiviert. Stattdessen werden die neuen Implementierungen wie folgt aktiviert:
+Neue Installationen von AEM verwenden standardmäßig die neuen Implementierungen für die autorisierungs- und authentifizierungsrelevanten Teile des CUG-Features. Die alte Implementierung &quot;Adobe Granite Closed User Group (CUG) Support&quot; ist veraltet und wird standardmäßig in allen AEM Installationen deaktiviert. Stattdessen werden die neuen Implementierungen wie folgt aktiviert:
 
 ### Autoreninstanzen {#author-instances}
 
@@ -761,7 +761,7 @@ Dies wurde angepasst, um den Verweis auf `CugSupport` optional zu machen, um die
 
 >[!NOTE]
 >
->Standardmäßig ist **Adobe Granite HTTP Header Authentication Handler** nur im Veröffentlichungsausführungsmodus konfiguriert, wobei die Option „Anmeldeseite deaktivieren“ (`auth.http.nologin`) aktiviert ist.
+>Standardmäßig wird die **Adobe Granite HTTP Header Authentication Handler** wird nur im Veröffentlichungsausführungsmodus mit &quot;Anmeldeseite deaktivieren&quot;konfiguriert ( `auth.http.nologin`) aktiviert ist.
 
 ### AEM-Live Copy {#aem-livecopy}
 
