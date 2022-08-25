@@ -10,10 +10,10 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: b14cbc4cad15b06754db8b8c992a596d4d64c096
+source-git-commit: 6c6f67929b774492d8caa052598b8c33e9a41710
 workflow-type: tm+mt
-source-wordcount: '6037'
-ht-degree: 46%
+source-wordcount: '6253'
+ht-degree: 49%
 
 ---
 
@@ -86,11 +86,11 @@ Siehe [Feature Pack 18912 für Massenmigration von Assets installieren](/help/as
 
 ## Erstellen einer Dynamic Media-Konfiguration in Cloud Services {#configuring-dynamic-media-cloud-services}
 
-**Vor der Konfiguration von Dynamic Media** - Nachdem Sie Ihre Bereitstellungs-E-Mail mit Dynamic Media-Anmeldeinformationen erhalten haben, müssen Sie die [Dynamic Media Classic-Desktop-Applikation](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started), dann melden Sie sich bei Ihrem Konto an, um Ihr Kennwort zu ändern. Das Kennwort aus der Bereitstellungs-E-Mail wird systemseitig erstellt und ist nur als temporäres Kennwort vorgesehen. Sie müssen das Kennwort aktualisieren, damit Dynamic Media Cloud Service mit den richtigen Anmeldedaten eingerichtet wird.
+<!-- **Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
-![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
+   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
-**So erstellen Sie eine Dynamic Media-Konfiguration in Cloud Services:**
+**To create a Dynamic Media Configuration in Cloud Services:** -->
 
 1. Wählen Sie im Experience Manager-Autorenmodus das Experience Manager-Logo aus, um auf die globale Navigationskonsole zuzugreifen. Wählen Sie dann das Werkzeugsymbol aus und navigieren Sie zu **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media-Konfiguration]**.
 1. Wählen Sie auf der Seite &quot;Dynamic Media Configuration Browser&quot;im linken Bereich die Option **[!UICONTROL global]** (Wählen Sie nicht das Ordnersymbol links neben **[!UICONTROL global]**), wählen Sie **[!UICONTROL Erstellen]**.
@@ -98,8 +98,24 @@ Siehe [Feature Pack 18912 für Massenmigration von Assets installieren](/help/as
 
    Wählen Sie **[!UICONTROL Mit Dynamic Media verbinden]** aus.
 
-   >[!NOTE]
-   Nachdem Sie Ihre Bereitstellungs-E-Mail mit Dynamic Media-Anmeldeinformationen erhalten haben, öffnen Sie die [Dynamic Media Classic-Desktop-Applikation](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), dann melden Sie sich bei Ihrem Konto an, um Ihr Kennwort zu ändern. Das Kennwort aus der Bereitstellungs-E-Mail wird systemseitig erstellt und ist nur als temporäres Kennwort vorgesehen. Sie müssen das Kennwort aktualisieren, damit Dynamic Media Cloud Service mit den richtigen Anmeldedaten eingerichtet wird.
+1. Geben Sie im Dialogfeld **[!UICONTROL Kennwort ändern]** im Feld **[!UICONTROL Neues Kennwort]** ein neues Kennwort ein, das aus 8-25 Zeichen besteht. Das Kennwort muss je mindestens eines der folgenden Elemente enthalten:
+
+   * Großbuchstabe
+   * Kleinbuchstabe
+   * Zahl
+   * Sonderzeichen: `# $ & . - _ : { }`
+
+   Das Feld **[!UICONTROL Aktuelles Kennwort]** wird absichtlich vorab ausgefüllt und ausgeblendet.
+
+   Bei Bedarf können Sie die Schreibweise eines von Ihnen eingegebenen oder erneut eingegebenen Kennworts überprüfen, indem Sie das Augensymbol auswählen, um das Kennwort anzuzeigen. Wählen Sie das Symbol erneut aus, um das Kennwort auszublenden.
+
+1. Geben Sie im Feld **[!UICONTROL Kennwort wiederholen]** das neue Kennwort erneut ein und wählen Sie dann **[!UICONTROL Fertig]** aus.
+
+   Das neue Kennwort wird gespeichert, wenn Sie oben rechts auf der Seite **[!UICONTROL Dynamic Media-Konfiguration erstellen]** die Option **[!UICONTROL Speichern]** auswählen.
+
+   Wenn Sie im Dialogfeld **[!UICONTROL Kennwort ändern]** die Option **[!UICONTROL Abbrechen]** ausgewählt haben, müssen Sie dennoch ein neues Kennwort eingeben, wenn Sie die neu erstellte Dynamic Media-Konfiguration speichern.
+
+   Weitere Informationen finden Sie unter [Ändern des Kennworts für Dynamic Media](#change-dm-password).
 
 1. Nachdem die Verbindung erfolgreich hergestellt wurde, richten Sie Folgendes ein. Überschriften mit einem Sternchen (*) sind erforderlich:
 
@@ -148,7 +164,38 @@ Sie haben nun die Grundkonfiguration abgeschlossen und können Dynamic Media im 
 
 Wenn Sie Ihre Konfiguration weiter anpassen möchten, können Sie optional eine der Aufgaben unter [(Optional) Konfigurieren Sie die erweiterten Einstellungen im Modus Dynamic Media - Scene7 .](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
-## (Optional) Konfigurieren Sie die erweiterten Einstellungen im Modus Dynamic Media - Scene7 . {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
+### Ändern des Kennworts für Dynamic Media {#change-dm-password}
+
+Das Ablaufdatum des Kennworts wird in Dynamic Media auf 100 Jahre ab dem aktuellen Systemdatum gesetzt.
+
+Das Kennwort muss je mindestens eines der folgenden Elemente enthalten:
+
+* Großbuchstabe
+* Kleinbuchstabe
+* Zahl
+* Sonderzeichen: `# $ & . - _ : { }`
+
+Bei Bedarf können Sie die Schreibweise eines von Ihnen eingegebenen oder erneut eingegebenen Kennworts überprüfen, indem Sie das Augensymbol auswählen, um das Kennwort anzuzeigen. Wählen Sie das Symbol erneut aus, um das Kennwort auszublenden.
+
+Das geänderte Kennwort wird gespeichert, wenn Sie **[!UICONTROL Speichern]** oben rechts auf der Seite **[!UICONTROL Dynamic Media-Konfiguration bearbeiten]** auswählen.
+
+**So ändern Sie das Kennwort in Dynamic Media:**
+
+1. Klicken Sie im Autorenmodus in Experience Manager auf das Experience Manager-Logo, um auf die Konsole für die globale Navigation zuzugreifen.
+1. Wählen Sie links in der Konsole das Symbol Tools und navigieren Sie zu **[!UICONTROL Cloud Services] > [!UICONTROL Dynamic Media-Konfiguration]**.
+1. Wählen Sie im Browser für die Dynamic Media-Konfiguration im Bedienfeld links **[!UICONTROL global]**. Wählen Sie nicht das Ordnersymbol links neben **[!UICONTROL global]** aus. Wählen Sie dann **[!UICONTROL Bearbeiten]** aus.
+1. Wählen Sie auf der Seite **[!UICONTROL Dynamic Media-Konfiguration bearbeiten]** direkt unter dem Feld **[!UICONTROL Kennwort]** die Option **[!UICONTROL Kennwort ändern]** aus.
+1. Gehen Sie im Dialogfeld **[!UICONTROL Kennwort ändern]** wie folgt vor:
+
+   * Geben Sie im Feld **[!UICONTROL Neues Kennwort]** ein neues Kennwort ein.
+
+      Das Feld **[!UICONTROL Aktuelles Kennwort]** wird absichtlich vorab ausgefüllt und ausgeblendet.
+
+   * Geben Sie im Feld **[!UICONTROL Kennwort wiederholen]** das neue Kennwort erneut ein und wählen Sie dann **[!UICONTROL Fertig]** aus.
+
+1. Wählen Sie oben rechts auf der Seite **[!UICONTROL Dynamic Media-Konfiguration bearbeiten]** die Option **[!UICONTROL Speichern]** und dann **[!UICONTROL OK]** aus.
+
+## (Optional) Konfigurieren der erweiterten Einstellungen in Dynamic Media - Scene7-Modus {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
 Wenn Sie die Konfiguration weiter anpassen und Dynamic Media – Scene7-Modus einrichten oder die Leistung optimieren möchten, können Sie eine oder mehrere der folgenden *optionalen* Aufgaben durchführen:
 
@@ -384,7 +431,7 @@ Zwei Elemente sind zur Definition verfügbar: Übereinstimmung und Basisname. Mi
 
 **So konfigurieren Sie die Standardbenennung:**
 
-1. Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) und melden Sie sich bei Ihrem Konto an.
+1. Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started) und melden Sie sich bei Ihrem Konto an.
 
    Ihre Benutzer- und Anmeldedaten haben Sie zum Zeitpunkt der Bereitstellung von Adobe erhalten. Wenn Sie nicht über diese Informationen verfügen, wenden Sie sich an den Support von Adobe.
 

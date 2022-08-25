@@ -12,10 +12,10 @@ discoiquuid: b7777dc5-a867-4799-9e2c-a1f4bb5dd96a
 docset: aem65
 pagetitle: Components for Content Fragments
 exl-id: f2edd9b2-f231-42f3-a25e-428cd1d96c2a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: de774bec7440805273928267ea6c09669720ea24
 workflow-type: tm+mt
-source-wordcount: '946'
-ht-degree: 79%
+source-wordcount: '962'
+ht-degree: 77%
 
 ---
 
@@ -114,6 +114,17 @@ Um die gebrauchsfertige Inhaltsfragmentkomponente als Blueprint für die Erweite
 Die Inhaltsfragmentverwaltung verwendet einen internen Renderprozess, um die endgültige HTML-Ausgabe für eine Seite zu generieren. Dieser wird intern von der Inhaltsfragmentkomponente verwendet, aber auch vom Hintergrundprozess, der referenzierte Fragmente auf referenzierenden Seiten aktualisiert.
 
 Intern wird der Sling Rewriter für dieses Rendering verwendet. Die entsprechende Konfiguration finden Sie unter `/libs/dam/config/rewriter/cfm` und kann bei Bedarf angepasst werden. Siehe [Apache Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) für weitere Informationen.
+
+>[!CAUTION]
+>
+>Wenn Sie die Konfiguration des Rewriters anpassen/überlagern:
+>
+>* `/libs/dam/config/rewriter/cfm`
+>
+>dann die `serializerType` **must** aktualisiert auf:
+>
+>* `serializerType="html5-serializer"`
+
 
 Die Standardkonfiguration verwendet folgende Transformatoren:
 
