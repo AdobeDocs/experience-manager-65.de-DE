@@ -11,10 +11,10 @@ discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 feature: Adaptive Forms, Adobe Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
-source-git-commit: 51801dfae47e82f31042f48b113332783464bafb
+source-git-commit: e46d77caf831324f077315df43b8f3a0267bef9a
 workflow-type: tm+mt
-source-wordcount: '951'
-ht-degree: 100%
+source-wordcount: '1091'
+ht-degree: 92%
 
 ---
 
@@ -59,6 +59,23 @@ Nachdem die Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte au
 
 1. Kopieren Sie die URL im aktuellen Browser-Fenster in einen Texteditor. Es ist erforderlich, das Programm [!DNL Adobe Sign] mit AEM [!DNL Forms] zu konfigurieren.
 
+1. Im **[!UICONTROL Einstellungen]** Registerkarte, die **[!UICONTROL OAuth-URL]** enthält die Standard-URL. Das Format der URL ist:
+
+   `https://<shard>/public/oAuth/v2`
+
+   Beispiel:
+   `https://secure.na1.echosign.com/public/oauth/v2`
+
+   Hierbei gilt:
+
+   **na1** bezieht sich auf die Standarddatenbank-Shard. Sie können den Wert für die Datenbank-Shard ändern. Stellen Sie sicher, dass die [!DNL  Adobe Sign]-Cloud-Konfigurationen auf die [korrekte Shard](https://helpx.adobe.com/de/sign/using/identify-account-shard.html) verweisen.
+
+   Wenn Sie eine weitere [!DNL Adobe Sign]-Konfiguration für eine Funktion oder Komponente von Adobe Experience Manager erstellen, vergewissern Sie sich, dass alle [!DNL Adobe Sign]-Cloud-Konfigurationen auf dieselbe Shard verweisen.
+
+   >[!NOTE]
+   Behalten Sie die **Adobe Sign-Konfiguration erstellen** Seite öffnen. Mach es nicht zu. Sie können **Client-ID** und **Client Secret** nach dem Konfigurieren der OAuth-Einstellungen für die [!DNL Adobe Sign] wie in den nächsten Schritten beschrieben.
+
+
 1. Konfigurieren Sie OAuth-Einstellungen für das [!DNL Adobe Sign]-Programm:
 
    1. Öffnen Sie ein Browser-Fenster und melden Sie sich beim [!DNL Adobe Sign]-Entwicklerkonto an.
@@ -92,11 +109,13 @@ Nachdem die Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte au
    >[!NOTE]
    Stellen Sie sicher, dass die Konfigurationen der Autoren- und Veröffentlichungsinstanz auf dieselbe Shard verweisen. Wenn Sie mehrere Adobe Sign-Konfigurationen für eine Organisation erstellen, stellen Sie sicher, dass alle Konfigurationen dieselbe Shard verwenden.
 
-1. Geben Sie die **Client-ID** (auch als Anwendungs-ID bezeichnet) und das in Schritt 8 kopierte **Client-Geheimnis** an. Wählen Sie die Option **[!UICONTROL auch für Anhänge aktivieren]**, um Dateien, die an einem adaptiven Formular angehängt sind, an ein entsprechendes Adobe Sign-Dokument, das zum Signiren geschickt wurde, anzuhängen.[!DNL Adobe Sign]
+1. Kehren Sie zur Seite **[!UICONTROL Adobe Sign-Konfiguration erstellen]** zurück. Im **[!UICONTROL Einstellungen]** Registerkarte, geben Sie die **Client-ID** (auch als Anwendungs-ID bezeichnet) und **Client Secret**. Verwenden Sie die [Client-ID und Client-Geheimnis der Adobe Sign-Anwendung](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) erstellt für AEM Forms.
 
-   Tippen Sie auf **[!UICONTROL Verbindung zu Adobe Sign herstellen]**. Geben Sie bei Aufforderung zur Eingabe der Anmeldeinformationen den Benutzernamen und das Kennwort des Kontos an, die bei der Erstellung des [!DNL Adobe Sign]-Programms verwendet wurden.
+1. Wählen Sie die Option **[!UICONTROL auch für Anhänge aktivieren]**, um Dateien, die an einem adaptiven Formular angehängt sind, an ein entsprechendes Adobe Sign-Dokument, das zum Signiren geschickt wurde, anzuhängen.[!DNL Adobe Sign]
 
-   Tippen Sie auf **[!UICONTROL Erstellen]**, um die [!DNL Adobe Sign]-Konfiguration zu erstellen.
+1. Tippen Sie auf **[!UICONTROL Verbindung zu Adobe Sign herstellen]**. Geben Sie bei Aufforderung zur Eingabe der Anmeldeinformationen den Benutzernamen und das Kennwort des Kontos an, die bei der Erstellung des [!DNL Adobe Sign]-Programms verwendet wurden.
+
+1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die [!DNL Adobe Sign]-Konfiguration zu erstellen.
 
 1. Öffnen Sie die AEM Web-Konsole. Die URL lautet `https://'[server]:[port]'/system/console/configMgr`.
 1. Öffnen Sie **[!UICONTROL Forms Common-Konfigurations-Service].**
