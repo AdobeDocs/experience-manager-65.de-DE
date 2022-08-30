@@ -5,7 +5,7 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: 495b9a006f5288ad6579e13aaea82ace6d6f0e91
+source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 34%
@@ -65,8 +65,8 @@ Navigieren Sie zum entsprechenden Ordner und geben Sie an einer Eingabeaufforder
 
 1. Wählen Sie je nach Anwendungsserver eines der folgenden Dokumente aus und befolgen Sie die Anweisungen im Bereich *Konfigurieren und Bereitstellen von AEM Forms*.
 
-   * [Installieren und Bereitstellen von AEM Forms für JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_65_de) 
-   * [Installieren und Bereitstellen von AEM Forms für WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_65_de)
+   * [Installieren und Bereitstellen von AEM Forms für JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_65_de) 
+   * [Installieren und Bereitstellen von AEM Forms für WebSphere](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_de)
 
 1. (Nur JBoss) Löschen Sie nach der Installation des Patches und der Konfiguration des Servers die Ordner tmp und work des JBoss-Anwendungsservers.
 
