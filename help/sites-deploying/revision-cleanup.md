@@ -11,10 +11,10 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 550e7993f88367ec4b5c1d024dc742c087c1a9eb
 workflow-type: tm+mt
-source-wordcount: '5904'
-ht-degree: 66%
+source-wordcount: '5912'
+ht-degree: 65%
 
 ---
 
@@ -128,7 +128,7 @@ In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständi
 
 ### Aspekte der AEM 6.5-Aktualisierung {#aem-upgrade-considerations}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td>Fragen </td>
@@ -143,7 +143,7 @@ In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständi
 
 ### Migrieren zum Oak-Segment-TAR {#migrating-to-oak-segment-tar}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Fragen</strong></td>
@@ -205,7 +205,7 @@ In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständi
 
 ### Ausführen der Online-Revisionsbereinigung {#running-online-revision-cleanup}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Fragen</strong></td>
@@ -368,7 +368,7 @@ In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständi
 
 ### Überwachen der Online-Revisionsbereinigung {#monitoring-online-revision-cleanup}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Was muss während der Online-Revisionsbereinigung überwacht werden?</strong></td>
@@ -453,7 +453,7 @@ In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständi
 
 ### Fehlerbehebung bei der Online-Revisionsbereinigung {#troubleshooting-online-revision-cleanup}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Was kann schlimmstenfalls passieren, falls die Online-Revisionsbereinigung nicht ausgeführt wird?</strong></td>
@@ -507,15 +507,68 @@ In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständi
 
 Die Datei error.log ist ausführlich, wenn es während der Online-Revisionsbereinigung zu Vorfällen kommt. In der folgenden Matrix werden die häufigsten Fehlermeldungen und mögliche Lösungen erläutert:
 
-| **Schritt** | **Protokollmeldungen** | **Erklärung** | **Nächste Schritte** |
+<!---| **Phase** |**Log Messages** |**Explanation** |**Next Steps** |
 |---|---|---|---|
-|  |  |  |  |
-| Schätzung | TarMK GC #2: Schätzung übersprungen, weil die Komprimierung angehalten wurde | Die Schätzungsphase wird übersprungen, wenn die Komprimierung im System durch Konfiguration deaktiviert ist. | Aktivieren der Online-Revisionsbereinigung. |
-|  | TarMK GC #2: Schätzung unterbrochen: ${GRUND}. Skipping compaction. | Die Schätzungsphase wurde vorzeitig beendet. Beispiele für Ereignisse, die die Schätzungsphase unterbrechen können: ungenügender Arbeitsspeicher oder Festplattenspeicher auf dem Hostsystem | Hängt vom angegebenen Grund ab. |
-| Komprimierung | TarMK GC #2: Komprimierung angehalten | Solange die Komprimierungsphase durch die Konfiguration angehalten wird, werden weder die Schätzungsphase noch die Komprimierungsphase ausgeführt. | Aktivieren Sie die Online-Revisionsbereinigung. |
-|  | TarMK GC #2: Komprimierung abgebrochen: ${GRUND}. | Die Komprimierungsphase wurde vorzeitig beendet. Beispiele für Ereignisse, die die Komprimierungsphase unterbrechen können: ungenügender Arbeitsspeicher oder Festplattenspeicher auf dem Hostsystem. Eine Komprimierung kann auch abgebrochen werden, wenn das System heruntergefahren wird, oder explizit über eine administrative Schnittstelle wie das Wartungsfenster im Vorgangs-Dashboard. | Hängt vom angegebenen Grund ab. |
-|  | TarMK GC #2: Komprimierung fehlgeschlagen in 32.902 Min. (1974140 ms), nach 5 Zyklen | Diese Meldung bedeutet nicht, dass ein nicht behebbarer Fehler aufgetreten ist, sondern nur, dass die Komprimierung nach einer bestimmten Anzahl von Versuchen beendet wurde. Lesen Sie auch den Abschnitt [nachstehender Absatz](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes). | Lesen Sie Folgendes [Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes)und die letzte Frage der [Ausführen der Online-Revisionsbereinigung](/help/sites-deploying/revision-cleanup.md#running-online-revision-cleanup) Abschnitt. |
-| Bereinigen | TarMK GC #2: Bereinigung unterbrochen | Die Bereinigung wurde durch Herunterfahren des Repositorys abgebrochen. Es sind keinerlei Auswirkungen auf die Konsistenz zu erwarten. Außerdem wird wahrscheinlich nicht der ganze Festplattenspeicher zurückgewonnen. Dieser wird beim nächsten Revisionsbereinigungszyklus zurückgewonnen. | Finden Sie heraus, warum das Repository heruntergefahren wurde; versuchen Sie in Zukunft, das Repository nicht während eines Wartungsfensters herunterzufahren. |
+|   |  |  |  |
+| Estimation |TarMK GC #2: estimation skipped because compaction is paused |The estimation phase is skipped when compaction is disabled on the system by configuration. |Enable Online Revision Cleanup. |
+|   |TarMK GC #2: estimation interrupted: ${REASON}. Skipping compaction. |The estimation phase terminated prematurely. Some examples of events that could interrupt the estimation phase: not enough memory or disk space on the host system. |Depends on the given reason. |
+| Compaction |TarMK GC #2: compaction paused |As long as the compaction phase is paused by configuration, neither the estimation phase nor the compaction phase will be executed. |Enable online revision cleanup. |
+|   |TarMK GC #2: compaction cancelled: ${REASON}. |The compaction phase terminated prematurely. Some examples of events that could interrupt the compaction phase: not enough memory or disk space on the host system. Moreover, compaction can also be cancelled by shutting down the system or by explicitly cancelling it via administrative interfaces such as the Maintenance Window within the Operations Dashobard. |Depends on the given reason. |
+|   |TarMK GC #2: compaction failed in 32.902 min (1974140 ms), after 5 cycles |This message doesn’t mean that there was an unrecoverable error, but only that compaction was terminated after a certain amount of attempts. Also, read the [following paragraph](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes). |Read the following [Oak documentation](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes), and the last question of the [Running Online Revision Cleanup](/help/sites-deploying/revision-cleanup.md#running-online-revision-cleanup) section. |
+| Cleanup |TarMK GC #2: cleanup interrupted |Cleanup has been cancelled by shutting down the repository. No impact on consistency is expected. Also, disk space is most likely not reclaimed to full extent. It will be reclaimed during next revision cleanup cycle. |Investigate why repository has been shut down and going forward try to avoid shutting down the repository during maintenance windows. |-->
+
+<table style="table-layout:auto">
+ <tbody>
+  <tr>
+    <th>Phase</th>
+    <th>Protokollmeldungen</th>
+    <th>Erklärung</th>
+    <th>Nächste Schritte</th>
+  </tr>  
+  <tr>
+    <td>Schätzung</td>
+    <td>TarMK GC #2: Schätzung übersprungen, da die Komprimierung angehalten wurde.</td>
+    <td>Die Schätzungsphase wird übersprungen, wenn die Komprimierung im System durch Konfiguration deaktiviert ist.</td>
+    <td>Aktivieren der Online-Revisionsbereinigung.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>Nicht zutreffend</td>
+    <td>TarMK GC #2: Schätzung unterbrochen: ${GRUND}. Skipping compaction.</td>
+    <td>Die Schätzungsphase wurde vorzeitig beendet. Beispiele für Ereignisse, die die Schätzungsphase unterbrechen können: ungenügender Arbeitsspeicher oder Festplattenspeicher auf dem Hostsystem</td>
+    <td>Hängt vom angegebenen Grund ab.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>Komprimierung</td>
+    <td>TarMK GC #2: Komprimierung angehalten.</td>
+    <td>Solange die Komprimierungsphase durch die Konfiguration angehalten wird, werden weder die Schätzungsphase noch die Komprimierungsphase ausgeführt.</td>
+    <td>Aktivieren Sie die Online-Revisionsbereinigung.</td>
+  </td>
+  </tr>
+   <tr>
+    <td>Nicht zutreffend</td>
+    <td>TarMK GC #2: Komprimierung abgebrochen: ${GRUND}.</td>
+    <td>Die Komprimierungsphase wurde vorzeitig beendet. Beispiele für Ereignisse, die die Komprimierungsphase unterbrechen können: ungenügender Arbeitsspeicher oder Festplattenspeicher auf dem Hostsystem. Darüber hinaus kann die Komprimierung auch abgebrochen werden, indem das System heruntergefahren oder explizit über Verwaltungsschnittstellen wie das Wartungsfenster im Vorgangs-Dashboard abgebrochen wird.</td>
+    <td>Hängt vom angegebenen Grund ab.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>Nicht zutreffend</td>
+    <td>TarMK GC #2: Die Komprimierung schlug in 32,902 Minuten (1974140 ms) nach 5 Zyklen fehl.</td>
+    <td>Diese Meldung bedeutet nicht, dass ein nicht behebbarer Fehler aufgetreten ist, sondern nur, dass die Komprimierung nach einer bestimmten Anzahl von Versuchen beendet wurde. Lesen Sie auch den Abschnitt <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">nach Absatz 1.</a></td>
+    <td>Lesen Sie Folgendes <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">Oak-Dokumentation</a>und die letzte Frage des Abschnitts "Ausführen der Online-Revisionsbereinigung".</a></td>
+  </td>
+  </tr>
+  <tr>
+    <td>Bereinigen</td>
+    <td>TarMK GC #2: Bereinigung unterbrochen.</td>
+    <td>Die Bereinigung wurde durch Herunterfahren des Repositorys abgebrochen. Es sind keinerlei Auswirkungen auf die Konsistenz zu erwarten. Außerdem wird der Speicherplatz höchstwahrscheinlich nicht vollständig zurückgewonnen. Dieser wird beim nächsten Revisionsbereinigungszyklus zurückgewonnen.</td>
+    <td>Untersuchen Sie, warum das Repository heruntergefahren wurde, und versuchen Sie in Zukunft, zu vermeiden, dass das Repository während des Wartungsfensters heruntergefahren wird.</td>
+  </td>
+  </tr>
+  </tbody>
+</table>
 
 ## Ausführen der Offline-Revisionsbereinigung {#how-to-run-offline-revision-cleanup}
 
@@ -601,7 +654,7 @@ Zusätzlich zu den oben genannten Methoden können Sie die Revisionsbereinigung 
 
 ### Häufig gestellte Fragen zur Offline-Revisionsbereinigung {#offline-revision-cleanup-frequently-asked-questions}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Welche Faktoren bestimmen die Dauer der Offline-Revisionsbereinigung? </strong></td>
