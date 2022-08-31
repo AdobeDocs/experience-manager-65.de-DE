@@ -6,7 +6,7 @@ role: User
 feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '9980'
 ht-degree: 59%
@@ -583,7 +583,7 @@ So löschen Sie ein Asset oder einen Ordner mit einem Asset:
 >
 >Wenn Sie einen Ordner mit der oben genannten Methode aus der Benutzeroberfläche löschen, werden auch die zugehörigen Benutzergruppen gelöscht.
 >
->Vorhandene redundante, nicht verwendete und automatisch generierte Benutzergruppen können jedoch mithilfe von aus dem Repository bereinigt werden `clean` -Methode in JMX in Ihrer Autoreninstanz (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
+>Vorhandene redundante, nicht verwendete und automatisch generierte Benutzergruppen können jedoch mithilfe von aus dem Repository bereinigt werden `clean` -Methode in JMX in Ihrer Autoreninstanz (`https://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
 
 ## Herunterladen von Medienelementen {#downloading-assets}
 

@@ -11,7 +11,7 @@ topic-tags: Security
 discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
-source-git-commit: 4ea49fe6745b23f01f46edfe07ff3dd8c8299729
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 85%
@@ -88,7 +88,7 @@ Zusätzlich zur Liste der Berechtigungen und dem Berechtigungstyp für einen bes
 
 >[!NOTE]
 >
->Weitere Informationen zu den einzelnen Beschränkungen finden Sie unter [Jackrabbit Oak-Dokumentation](http://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
+>Weitere Informationen zu den einzelnen Beschränkungen finden Sie unter [Jackrabbit Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
 
 Einschränkungen können wie unten dargestellt hinzugefügt werden, indem Sie den Einschränkungstyp auswählen, den Wert eingeben und auf das **Pluszeichen** klicken.
 

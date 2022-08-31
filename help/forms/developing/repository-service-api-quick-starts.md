@@ -11,7 +11,7 @@ topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 role: Developer
 exl-id: 703b6798-d40f-4769-96fc-e440090ca983
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 100%
@@ -62,7 +62,7 @@ Der Pfad zu einer Ressource im AEM Forms-Repository lautet:
 
 >[!NOTE]
 >
->Anwendungen/FormsApplication ist standardmäßig nicht vorhanden. Um den Kurzanleitungen folgen zu können, erstellen Sie dieses Programm mithilfe von Workbench. Informationen zum Erstellen eines Programms mit Workbench finden Sie unter [Erste Schritte mit dem Erstellen von Prozessen](http://www.adobe.com/go/learn_aemforms_workbench_65_de).
+>Anwendungen/FormsApplication ist standardmäßig nicht vorhanden. Um den Kurzanleitungen folgen zu können, erstellen Sie dieses Programm mithilfe von Workbench. Informationen zum Erstellen eines Programms mit Workbench finden Sie unter [Erste Schritte mit dem Erstellen von Prozessen](https://www.adobe.com/go/learn_aemforms_workbench_65_de).
 
 ## Kurzanleitung (SOAP-Modus): Erstellen eines Ordners mithilfe der Java-API {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
 

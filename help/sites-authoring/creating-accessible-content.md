@@ -2,7 +2,7 @@
 title: Erstellen barrierefreier Inhalte für Adobe Experience Manager (in Übereinstimmung mit WCAG 2.1)
 description: Verwenden Sie AEM, um Web-Inhalte für Menschen mit Behinderungen barrierefrei und nutzbar zu machen.
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '13956'
 ht-degree: 99%
@@ -559,7 +559,7 @@ Stellen Sie sicher, dass zwischen dem Text und der Hintergrundfarbe ausreichend 
 >
 >* [Px-zu-Em-Umrechner – Omni](https://www.omnicalculator.com/conversion/px-to-em)
 >* [Schriftgrößenkonvertierung: pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
->* [PMtoEM.com: PX-to-EM-Konvertierung einfach gemacht](http://pxtoem.com)
+>* [PMtoEM.com: PX-to-EM-Konvertierung einfach gemacht](https://pxtoem.com)
 
 
 Verwenden Sie ein Farbkontrast-Tool, um das Kontrastverhältnis zu prüfen, z. B. den [Color Contrast Analyser von Paciello Group](https://www.paciellogroup.com/resources/contrast-analyser.html) oder den [Color Contrast Checker von WebAIM](https://www.webaim.org/resources/contrastchecker/). Mit diesen Tools können Sie Farbpaare prüfen und erkennen mögliche Kontrastprobleme.

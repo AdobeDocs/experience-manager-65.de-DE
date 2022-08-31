@@ -4,10 +4,10 @@ seo-title: Resources for New AEM Users
 description: Fragen, Antworten und Ressourcen für neue AEM
 seo-description: Questions, answers, and resources for users new to AEM
 exl-id: a238954f-011c-416b-81af-6cdf78ddaf85
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 36%
+ht-degree: 34%
 
 ---
 
@@ -22,7 +22,7 @@ Adobe Experience Manager (AEM) ist ein webbasiertes Client-Server-System zum Ers
 
 ## Wo kann ich AEM Software herunterladen? {#download}
 
-Kunden mit einem gültigen Wartungs- und Supportvertrag sollten eine E-Mail-Benachrichtigung mit einem Code erhalten und in der Lage sein, AEM von der [Adobe Licensing-Website](http://licensing.adobe.com/).
+Kunden mit einem gültigen Wartungs- und Supportvertrag sollten eine E-Mail-Benachrichtigung mit einem Code erhalten und in der Lage sein, AEM von der [Adobe Licensing-Website](https://licensing.adobe.com/).
 
 [Weitere Informationen zur Bereitstellung der AEM.](/help/sites-deploying/home.md)
 
@@ -59,4 +59,4 @@ Sie können alle Versionshinweise für AEM hier finden:
 * [Versionshinweise zu AEM 6.5](/help/release-notes/home.md)
 * [Liste der entfernten und veralteten Funktionen in AEM 6.5](/help/release-notes/deprecated-removed-features.md)
 
-Bei Fragen können Sie sich an unsere [AEM Community-Team](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) oder fragen Sie uns nach Twitter [@AdobeExpCare](https://twitter.com/adobeexpcare).
+Bei Fragen können Sie sich an unsere [AEM Community-Team](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) oder fragen Sie uns nach Twitter [@AdobeExpCare](https://twitter.com/adobeexpcare).

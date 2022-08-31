@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '2244'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -36,11 +36,11 @@ Die Ressourcen in dieser Tabelle können Ihnen dabei helfen, mehr über AEM Form
   </tr>
   <tr>
    <td><p>Allgemeine Informationen zu AEM Forms und dessen Integration in anderen Adobe-Produkten</p> </td>
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65_de">Übersicht über AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://adobe.com/go/learn_aemforms_introduction_65">Übersicht über AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Die gesamte Dokumentation, die für AEM Forms verfügbar ist</p> </td>
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">AEM Forms-Dokumentation</a><br /> <br /> </p> </td>
+   <td><p><a href="https://adobe.com/go/learn_aemforms_introduction_65">AEM Forms-Dokumentation</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Patch-Updates, technische Hinweise und zusätzliche Informationen zu dieser Produktversion</p> </td>
@@ -99,7 +99,7 @@ Speicherplatz für die Installation:
 
 ### Unterstützte Plattformen {#supported-platforms}
 
-Die vollständige Liste der unterstützten Plattformen für Workbench finden Sie unter [Von AEM Forms unterstützte Plattformen](http://adobe.com/go/learn_aemforms_supportedplatforms_65_de).
+Die vollständige Liste der unterstützten Plattformen für Workbench finden Sie unter [Von AEM Forms unterstützte Plattformen](https://adobe.com/go/learn_aemforms_supportedplatforms_65_de).
 
 ## Überlegungen zur Installation von Designer {#designer-installation-considerations}
 
@@ -174,7 +174,7 @@ Stellen Sie vor der Installation von Workbench sicher, dass die Umgebung über d
 1. Jetzt sind die folgenden Elemente auf Ihrem Computer installiert:
    * **Workbench**: Um Workbench im Menü „Start“ auszuführen, wählen Sie „Alle Programme“ > „AEM Forms“ > „Workbench“, falls Sie den Verknüpfungsordner dort gespeichert haben. Weitere Informationen finden Sie in der Dokumentation <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Verwenden von Workbench</a>.
    * **Designer**: Sie können von Workbench aus auf Designer zugreifen. Weitere Informationen finden Sie im Thema „Erste Schritte“ in der <a href="https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/using-designer.pdf">Designer-Hilfe</a>.
-   * **AEM Forms SDK**: Weitere Informationen zur Verwendung des SDK finden Sie unter <a href="http://www.adobe.com/go/learn_aemforms_programming_65">Programmieren mit AEM Forms</a>.
+   * **AEM Forms SDK**: Weitere Informationen zur Verwendung des SDK finden Sie unter <a href="https://www.adobe.com/go/learn_aemforms_programming_65">Programmieren mit AEM Forms</a>.
 
 ## Aktualisieren von Prozessen {#upgrading-processes}
 
@@ -233,7 +233,7 @@ Wenn der Formularersteller oder die Formularausgabe im Cache nach Einträgen fü
 * **Vorlage-UUID**: Designer fügt in die jeweilige Vorlage eine eindeutige Kennung (UUID) für das Formular und seine Version ein. Immer wenn das Formular aktualisiert wird, wird die eingebettete UUID aktualisiert. Die XDP-Vorlage könnte zum Beispiel den folgenden Inhalt anzeigen:
 
    `<?xml version="1.0" encoding="UTF-8"?>`
-   `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=http://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="http://www.xfa.org/schema/xfa-template/2.6/">`
+   `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=https://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="https://www.xfa.org/schema/xfa-template/2.6/">`
 
 * **Wiedergabeoptionen**: Im Formularwiedergabecache werden die Cache-Inhalte für jeden Satz von eindeutigen Wiedergabeoptionen separat gespeichert.
 

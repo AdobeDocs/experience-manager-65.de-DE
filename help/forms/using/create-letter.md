@@ -9,7 +9,7 @@ topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '3982'
 ht-degree: 99%
@@ -230,7 +230,7 @@ Sie müssen zunächst Folgendes einrichten, um eine Korrespondenz zu erstellen:
 
 * [Kompatibilitätspaket](compatibility-package.md). Installieren Sie das Kompatibilitätspaket, um die Option **Briefe** auf der Seite **Formulare** anzuzeigen.
 * Die XDP-Datei des Briefs ([Layout](/help/forms/using/document-fragments.md)).
-* Andere XDP-Dateien ([Layoutfragmente](document-fragments.md#document-fragments)), die Bestandteile des Briefs bilden. Die XDP-Dateien/Layouts werden in [Designer](http://www.adobe.com/go/learn_aemforms_designer_65_de) erstellt.
+* Andere XDP-Dateien ([Layoutfragmente](document-fragments.md#document-fragments)), die Bestandteile des Briefs bilden. Die XDP-Dateien/Layouts werden in [Designer](https://www.adobe.com/go/learn_aemforms_designer_65_de) erstellt.
 * Das relevante [Datenwörterbuch](/help/forms/using/data-dictionary.md) (optional).
 * Die [Datenmodule](/help/forms/using/document-fragments.md), die Sie in der Korrespondenz verwenden möchten.
 * [Test-Daten](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) bestehen aus der XML-Datei, in die die Testdaten portiert wurden. Testdaten sind erforderlich, wenn Sie ein Datenwörterbuch verwenden.

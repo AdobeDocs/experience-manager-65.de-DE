@@ -10,10 +10,10 @@ discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 role: Admin
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '1870'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -238,5 +238,5 @@ AEM forms kann mit der Adobe Marketing Cloud-Lösung Adobe Target integriert wer
 Sie haben eine Umgebung für die Verwendung der AEM Forms-Datenerfassungsfunktionen konfiguriert. Die nächsten Schritte zur Verwendung der Funktionen, sind Folgende:
 
 * [Erstellen Sie Ihr erstes adaptives Formular](/help/forms/using/create-your-first-adaptive-form.md)
-* [Erstellen Sie Ihr erstes PDF Formular](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65_de)
+* [Erstellen Sie Ihr erstes PDF Formular](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
 * [Einführung in HTML5-Formulare](/help/forms/using/introduction.md)

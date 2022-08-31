@@ -3,7 +3,7 @@ title: Erstellen eines Handlers zum Einladen externer Benutzer
 description: Erstellen eines Handlers zum Einladen externer Benutzer
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 100%
@@ -177,7 +177,7 @@ Die folgende `component.xml`-Datei wird für den Handler zum Einladen externer B
 ### Definieren der XML-Komponentendatei für den Handler zum Einladen externer Benutzer {#component-xml-invite-external-users-handler}
 
 ```as3
-<component xmlns="http://adobe.com/idp/dsc/component/document"> 
+<component xmlns="https://adobe.com/idp/dsc/component/document"> 
 <component-id>com.adobe.livecycle.samples.inviteexternalusers</component-id> 
 <version>1.0</version> 
 <bootstrap-class>com.adobe.livecycle.samples.inviteexternalusers.provider.BootstrapImpl</bootstrap-class> 

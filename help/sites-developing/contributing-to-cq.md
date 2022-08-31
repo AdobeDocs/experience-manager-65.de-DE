@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f52402df-f6dc-4c62-82bc-cbce489b2b74
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 66%
@@ -143,7 +143,7 @@ Im Wesentlichen ist JCR ein System von Knoten und Eigenschaften, in dem Knoten v
 
 JCR verfügt über eine Reihe vordefinierter Knotentypen und Eigenschaftstypen, aber im Allgemeinen ist das Typisierungssystem ziemlich flexibel und tatsächlich besteht eine der Stärken von JCR darin, dass sowohl strukturierter als auch unstrukturierter Inhalt mit Leichtigkeit gespeichert/verwaltet werden kann. Das heißt, JCR kann stark strukturierte Daten aufnehmen, aber es kann auch beliebige dynamische Datenstrukturen ohne Schemaeinschränkungen aufnehmen.
 
-Die JavaDoc für die JCR-Java-API finden Sie [hier](http://jackrabbit.apache.org/jcr/jcr-api.html).
+Die JavaDoc für die JCR-Java-API finden Sie [hier](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 Bevor Sie versuchen, die JavaDoc- oder die JCR-Spezifikation selbst zu lesen, sollten Sie sich diese [High-Level-Erklärung](/help/sites-developing/the-basics.md#java-content-repository) von JCR ansehen, die von Adobe Experience Services implementiert wird.
 

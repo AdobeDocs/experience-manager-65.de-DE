@@ -4,10 +4,10 @@ seo-title: The AEM Community
 description: Die AEM-Community
 seo-description: The AEM Community
 exl-id: 2e73572c-78de-4c20-ada8-d95f7fd16dc9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 39%
+ht-degree: 31%
 
 ---
 
@@ -21,9 +21,9 @@ Die AEM Gemeinschaft hat Tausende von Mitgliedern auf der ganzen Welt. Darunter 
 
 ## Welche Veranstaltungen gibt es für AEM Mitglieder der Gemeinschaft? {#events}
 
-Es gibt eine ganze Reihe von Veranstaltungen für Mitglieder! Jeden Monat veranstalten wir Sitzungen, in denen Sie den Experten zu bestimmten AEM Fragen befragen können. Wir informieren Sie auch über wichtige Ereignisse wie [Immerse](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__fb7p-the_immerseagendai.html) oder [Adobe Summit](http://summit.adobe.com/na/?promoid=6JMR7JQY&amp;mv=other)oder sogar Benutzergruppenereignisse in Ihrer Region.
+Es gibt eine ganze Reihe von Veranstaltungen für Mitglieder! Jeden Monat veranstalten wir Sitzungen, in denen Sie den Experten zu bestimmten AEM Fragen befragen können. Wir informieren Sie auch über wichtige Ereignisse wie [Immerse](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__fb7p-the_immerseagendai.html) oder [Adobe Summit](https://summit.adobe.com/na/?promoid=6JMR7JQY&amp;mv=other)oder sogar Benutzergruppenereignisse in Ihrer Region.
 
-Am besten ist es, [Besuchen Sie die AEM Community heute und sehen Sie, was los ist.](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
+Am besten ist es, [Besuchen Sie die AEM Community heute und sehen Sie, was los ist.](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
 
 ## Kann ich Code-Beispiele erhalten, um mir zu helfen? {#code-samples}
 

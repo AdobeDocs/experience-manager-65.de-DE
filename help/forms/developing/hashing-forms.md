@@ -2,7 +2,7 @@
 title: Wie lassen sich Hashes in dynamischen PDF-Formularen erzeugen und verwenden?
 description: Erzeugen und Verwenden von Hashes in dynamischen PDF-Formularen
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '1256'
 ht-degree: 98%
@@ -120,5 +120,5 @@ Ich empfehle Ihnen, die beiden PDF-Beispieldateien weiter zu studieren.  Sie kö
 * [NIST](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines)
 * [Hash-Kollision](https://en.wikipedia.org/wiki/Hash_collision)
 * [Regenbogentabelle](https://en.wikipedia.org/wiki/Rainbow_table)
-* [Startseite des JavaScript-MD5-Projekts](http://pajhome.org.uk/crypt/md5/)
+* [Startseite des JavaScript-MD5-Projekts](https://pajhome.org.uk/crypt/md5/)
 * [jsSHA2-Projekt-Startseite](https://anmar.eu.org/projects/jssha2/)

@@ -2,10 +2,10 @@
 title: Erweitern [!DNL Adobe Experience Manager] 6.5 mit Adobe Developer App Builder verwenden.
 description: Erweitern [!DNL Adobe Experience Manager] 6.5 mit Adobe Developer App Builder verwenden.
 exl-id: 8221c2db-82d4-43df-ad38-e8e7831541ac
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '577'
-ht-degree: 89%
+ht-degree: 88%
 
 ---
 
@@ -23,7 +23,7 @@ Der App Builder bietet Kunden eine Möglichkeit, Adobe Experience Manager in ver
 * Erweiterbarkeit der Hauptdienste: Erweiterung der Kernanwendungsfunktionen durch Erweiterung des Standardverhaltens um benutzerdefinierte Funktionen und Geschäftslogik.
 * Benutzererlebnis-Erweiterbarkeit: Erweitern Sie das Kernerlebnis, um Geschäftsanforderungen zu unterstützen oder kundenspezifische digitale Eigenschaften, Storefronts und Back-Office-Apps zu erstellen.
 
-Der App Builder (ehemals Project Firefly) steht seit Sommer 2020 für Unternehmenskunden und -partner über unsere Entwicklervorschau zur Verfügung. Die allgemeine Verfügbarkeit des App Builders ist für Dezember 2021 geplant. Wir freuen uns, dass Entwickler den App Builder über unsere [Testprogramm](http://adobe.ly/appbuilder-trial) ausprobieren können.
+Der App Builder (ehemals Project Firefly) steht seit Sommer 2020 für Unternehmenskunden und -partner über unsere Entwicklervorschau zur Verfügung. Die allgemeine Verfügbarkeit des App Builders ist für Dezember 2021 geplant. Wir freuen uns, dass Entwickler den App Builder über unsere [Testprogramm](https://adobe.ly/appbuilder-trial) ausprobieren können.
 
 >[!NOTE]
 >

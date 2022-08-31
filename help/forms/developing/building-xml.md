@@ -2,10 +2,10 @@
 title: Wie kann der Service „execute script“ aus der Workbench von AEM Forms on JEE zum Erstellen von XML-Daten verwendet werden?
 description: Verwenden des Service „execute script“ aus der Workbench von AEM Forms on JEE zum Erstellen von XML-Daten
 exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
-source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '1003'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -55,7 +55,7 @@ Die Java-Klassen, die zum Speichern von XML-Variablen verwendet werden, sind:
 
 * org.apache.xerces.dom.DocumentImpl
 
-DocumentImpl ist eine Unterklasse von NodeImpl. Daher kann angenommen werden, dass jede XML-Prozessvariable eine NodeImpl-Ableitung ist. Die Dokumentation für NodeImpl finden Sie [hier](http://xerces.apache.org/xerces-j/apiDocs/org/apache/xerces/dom/NodeImpl.html).
+DocumentImpl ist eine Unterklasse von NodeImpl. Daher kann angenommen werden, dass jede XML-Prozessvariable eine NodeImpl-Ableitung ist. Die Dokumentation für NodeImpl finden Sie [hier](https://xerces.apache.org/xerces-j/apiDocs/org/apache/xerces/dom/NodeImpl.html).
 
 **Beispiel für die XML-Erstellung mit dem Service „Execute Script“**
 
