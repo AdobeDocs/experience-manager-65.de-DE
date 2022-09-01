@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5, Forms-Anleitung
 breadcrumb-title: Forms-Anleitung
 user-guide-description: Digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren.
 role: User
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
 workflow-type: tm+mt
-source-wordcount: '3778'
+source-wordcount: '3801'
 ht-degree: 97%
 
 ---
@@ -122,6 +122,7 @@ ht-degree: 97%
       + [Allgemeine Überlegungen zur Sicherheit von AEM Forms on JEE](using/general-security-considerations.md)
       + [Härtung Ihrer AEM Forms on JEE-Umgebung](using/hardening-aem-forms-jee-environment.md)
       + [Konfigurieren sicherer Verwaltungseinstellungen für AEM Forms on JEE](using/configuring-secure-administration-settings-aem.md)
+      + [OAuth2-Unterstützung für den E-Mail-Service](using/oauth2-support-for-mail-service.md)
 + Formulardatenmodell {#form-data-model}
    + [Einführung in die AEM Forms-Datenintegration](using/data-integration.md)
    + [Konfigurieren von Datenquellen](using/configure-data-sources.md)
@@ -332,6 +333,7 @@ ht-degree: 97%
    + [Konfigurieren von Analytics und Berichten](using/configure-analytics-forms-documents.md)
    + [Anzeigen und Verstehen der Analytics-Berichte in AEM Forms](using/view-understand-aem-forms-analytics-reports.md)
    + [Erstellen und Verwalten von A/B-Test für adaptive Formulare](using/ab-testing-adaptive-forms.md)
+   + [Integration mit Adobe Analytics](using/integrate-aem-forms-with-adobe-analytics.md)
 + Veröffentlichen und Verarbeiten von AEM Forms {#publish-process-aem-forms}
    + [Einführung in das Veröffentlichen von Formularen in einem Portal](using/introduction-publishing-forms.md)
    + [Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung in die Datenbank](using/integrate-draft-submission-database.md)
@@ -681,6 +683,7 @@ ht-degree: 97%
          + [Validieren eines DDX-Dokuments mithilfe der Webservice-API](developing/validate-ddx-document-using-web.md)
 + Fehlerbehebung {#troubleshooting}
    + [Einige Formularfunktionen können nicht mit bestimmten Versionen von Oracle JDK verwendet werden](using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
+   + [Zusätzliche Schritte zum Abrufen einer E-Mail mit Anhang für die adaptive Forms on JEE-Version](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
 + Alte Dokumentation {#legacy-documentation}
    + [Verwenden des Service „execute script“ in AEM Forms on JEE Workbench zum Erstellen von XML-Daten](developing/building-xml.md)
    + [Komprimieren und Dekomprimieren von Dateien mithilfe eines benutzerdefinierten DSC von AEM Forms auf JEE](developing/compressing-decompressing-custom-dsc.md)

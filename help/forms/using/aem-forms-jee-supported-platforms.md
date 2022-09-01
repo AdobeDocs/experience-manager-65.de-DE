@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
 workflow-type: tm+mt
-source-wordcount: '3550'
+source-wordcount: '3584'
 ht-degree: 94%
 
 ---
@@ -91,9 +91,9 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
    <th><p><strong>Unterstützte Patch-Definitionen</strong></p> </th>
   </tr>
   <tr>
-   <td><p>Oracle Java™ SE 11 (64 Bit)</p> </td>
-   <td><p>Z: Nicht unterstützt</p> </td>
-   <td><p> </p> </td>
+   <td><p>Oracle Java™ SE 11 (64 Bit) <sup> [8] </sup> </p>  </td>
+   <td><p>A: Unterstützt</p> </td>
+   <td><p>Nebenversionen und Updates </p> </td>
   </tr>
   <tr>
    <td>Azul Zulu OpenJDK 11 - 64 Bit</td>
@@ -361,6 +361,7 @@ Beachten Sie die folgenden Ausnahmen, wenn Sie eine Plattform auswählen, auf de
 1. CRX-Repository unterstützt Persistenz des Typs TarMK, MongoDB und relationale Datenbanken (RDBMK). Sie dürfen nicht zwei verschiedene Datenbanksysteme zwischen dem Anwendungsserver und dem CRX-Repository haben. In einer AEM Forms on JEE-Umgebung können Sie MongoMK jedoch mit dem CRX-Repository und einer unterstützten relationalen Datenbank mit Anwendungsserver verwenden.
 1. AEM Forms on JEE unterstützt keinen WebSphere-Anwendungsserver unter CentOS.
 1. AEM Forms on JEE unterstützt keine rollenbasierte JBoss-Zugriffskontrolle (RBAC).
+1. AEM Forms on JEE unterstützt nur Oracle Java™ SE 11 (64 Bit) SDK für Anwendungsserver JBoss EAP 7.4.
 
 Außerdem sollten Sie die folgenden Punkte beachten, wenn Sie die Software für Implementierungen von Adobe AEM Forms on JEE auswählen:
 
@@ -794,6 +795,10 @@ Die folgenden Plattformen werden mit der AEM Forms-Version 6.5.10.0 vom 7. Septe
 > Die Plattformen, die als [veraltet auf AEM Forms 6.5.12.0 und 6.5.10.0 bleibt bis AEM Forms 6.5 Service Pack 18 (6.5.18.0) verfügbar](https://helpx.adobe.com/support/programs/eol-matrix.html).
 
 ## Revisionsverlauf {#revision-history}
+
+- 01. September 2022
+
+   - Unterstützung für Oracle Java™ SE 11 (64 Bit) SDK für Anwendungsserver JBoss EAP 7.4 hinzugefügt.
 
 - 03.03.2022
 

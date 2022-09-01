@@ -10,10 +10,10 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 feature: Adaptive Forms
 exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
 workflow-type: tm+mt
-source-wordcount: '497'
-ht-degree: 100%
+source-wordcount: '638'
+ht-degree: 73%
 
 ---
 
@@ -21,9 +21,28 @@ ht-degree: 100%
 
 Sie können die Komponente **Freihandsignatur** und die Komponente **Signaturschritt** verwenden, um eine Signatur in ein adaptives Formular zu zeichnen. Die Signaturschritt-Komponente zeigt eine PDF-Version des adaptiven Formulars an. Sie benötigen ein Formular mit aktivierter Option „Datensatzdokument“ oder auf Vorlagen basierende adaptive Formulare, um die Signaturschritt-Komponente zu verwenden.
 
-Wie unten dargestellt stellen beide Komponenten ein Fenster zum Signieren eines Formulars bereit. Sie können auch auf das Geolocation-Symbol ![aem_6_3_geolocation](assets/aem_6_3_geolocation.png) klicken, um der Signatur Geolocation-Informationen hinzuzufügen.
+![Dialogfeld für Freihandsignatur](/help/forms/using/assets/scribble-signature.png)
 
-![Dialogfeld für Freihandsignatur](assets/scribble-signature.png)
+## Verschiedene Optionen im Signaturfenster verfügbar
+
+* **A:** Klicken Sie auf **Pinsel** -Symbol, um Ihre Signatur auf der Arbeitsfläche zu zeichnen.
+* **B:** Klicken Sie auf **Löschen** -Symbol, um die Signatur auf der Arbeitsfläche zu löschen.
+* **C:** Klicken Sie auf **Geolocation** -Symbol, um die Geolocation zusammen mit der Signatur hinzuzufügen.
+* **D:** Klicken Sie auf **Tastatur** -Symbol, um Ihren Namen auf der Arbeitsfläche einzugeben.
+
+Sobald Sie auf Fertig tippen![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) im Scribble-Signaturfenster angezeigt, können Sie die Signatur nicht bearbeiten. Wenn Sie die Signatur bearbeiten möchten, müssen Sie die aktuelle Signatur ignorieren und mit der obigen Option &quot;Paint Brush/Keyboard&quot;erneut signieren.
+
+Sie können auf die **Konfigurieren** ![konfigurieren](assets/configure.png) -Symbol, um das Seitenverhältnis der Arbeitsfläche für Scribble-Signaturen festzulegen.
+* Wenn das Seitenverhältnis der Arbeitsfläche für Scribble-Signaturen kleiner als 1 ist, werden die Geolocation-Informationen am unteren Rand der Arbeitsfläche für Scribble-Signatur hinzugefügt.
+
+* Wenn das Seitenverhältnis der Arbeitsfläche für Scribble-Signaturen größer als 1 ist, werden die Geolocation-Informationen auf der rechten Seite der Arbeitsfläche für Scribble-Signaturen hinzugefügt.
+
+![Scribble signature-bottom](/help/forms/using/assets/scribble-signature-aspectratio.PNG)
+
+
+>[!NOTE]
+>
+>Signaturen werden immer im PNG-Format gespeichert.
 
 ## Adaptives Formular konfigurieren, um Freihandsignatur zu verwenden {#configure-an-adaptive-form-to-use-scribble-signature}
 
@@ -60,14 +79,14 @@ Wie unten dargestellt stellen beide Komponenten ein Fenster zum Signieren eines 
 
 1. Wenn Sie ein adaptives Formular ausgefüllt und die Signaturschritt-Seite erreichen, wird der Signaturbildschirm angezeigt.
 
-   ![Signaturbildschirm für EchoSign-Seite](assets/esignscribblesign.jpg)
+   ![Dialogfeld für Freihandsignatur](/help/forms/using/assets/esignscribblesign.jpg)
 
 1. Klicken Sie auf **[!UICONTROL Signieren]**. Das Dialogfeld „Freihandsignatur“ wird angezeigt. Signieren Sie das Formular und klicken Sie auf das Symbol „Fertig“ ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), um die Signatur zu speichern.
 
-   ![Dialogfeld für Freihandsignatur](assets/scribblewidget.jpg)
+   ![Dialogfeld für Freihandsignatur](/help/forms/using/assets/scribblewidget.png)
 
 1. Klicken Sie auf „Abschließen“, um den Signiervorgang abzuschließen.
 
-   ![Signiervorgang abschließen](assets/scribblecomplete.jpg)
+   ![Signiervorgang abschließen](/help/forms/using/assets/scribblecomplete.jpg)
 
 Die Signaturen werden dem Formular hinzugefügt und die Formularsteuerung wechselt zum nächsten Bereich.

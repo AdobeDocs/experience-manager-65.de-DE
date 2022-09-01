@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
 workflow-type: tm+mt
-source-wordcount: '10683'
-ht-degree: 99%
+source-wordcount: '10769'
+ht-degree: 98%
 
 ---
 
@@ -186,6 +186,16 @@ Folgende Einstellungen sind für den E-Mail-Dienst verfügbar:
 **SMTP-Benutzer**: Der Benutzername des Benutzerkontos, das zum Anmelden beim SMTP-Server verwendet wird.
 
 **SMTP-Kennwort**: Das dem SMTP-Benutzerkonto zugeordnete Kennwort.
+
+**0Auth2.0-Authentifizierung:** Der Authentifizierungsdienst von Auth2.0 bietet Unterstützung für seinen integrierten Mail-Dienst, damit Unternehmen die sicheren E-Mail-Anforderungen erfüllen können.
+
+**Client-ID:** Azure Portal generiert eine Anwendungs-ID, die für die Authentifizierung verwendet wird.
+
+**Client Secret:** Azure Portal generiert einen geheimen Schlüssel, der für die Authentifizierung verwendet wird.
+
+**Aktualisierungstoken:**  Der OAuth-Client verwendet eine Zeichenfolge, um ein neues Zugriffstoken ohne Benutzerinteraktion zu erhalten.
+
+Weitere Informationen zum Abrufen und Verwenden der Client-ID, des Client-Geheimnisses und des Aktualisierungstokens finden Sie unter [OAuth2.0-Authentifizierungsunterstützung für E-Mail-Dienste](/help/forms/using/oauth2-support-for-mail-service.md).
 
 **SMTP-Transportsicherheit**: Das Sicherheitsprotokoll, das zum Herstellen einer Verbindung mit dem SMTP-Server verwendet wird.
 
