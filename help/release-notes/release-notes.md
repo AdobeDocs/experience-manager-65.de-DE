@@ -1,10 +1,11 @@
 ---
 title: Versionshinweise für [!DNL Adobe Experience Manager] 6,5
-description: '"Suchen Sie nach Versionsinformationen, Neuigkeiten, Installationsanleitungen und einer detaillierten Änderungsliste für [!DNL Adobe Experience Manager] 6.5."'
+description: Suchen Sie nach Versionsinformationen, Neuigkeiten, Installationsanleitungen und einer detaillierten Änderungsliste für [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: 783edcdf0f96426008b6f824a7aa0aa0deb5c613
+exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
+source-git-commit: 0bd7c444bf0424b60c11b7171b7ea7ae9d7f3926
 workflow-type: tm+mt
-source-wordcount: '2623'
+source-wordcount: '2624'
 ht-degree: 6%
 
 ---
@@ -52,7 +53,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->Smart Content Services stehen neuen On-Premise-Kunden von Experience Manager Assets ab dem 1. September 2022 nicht mehr zur Verfügung. Keine Auswirkungen auf bestehende On-Premise- und Adobe Managed Services-Kunden, die diese Funktion bereits aktiviert haben.
+>Smart Content Services stehen neuen On-Premise-Kunden von Experience Manager Assets ab dem 1. September 2022 nicht mehr zur Verfügung. Keine Auswirkungen auf bestehende On-Premise- und Adobe Managed Services-Kunden, für die diese Funktion bereits aktiviert ist.
 
 ### [!DNL Dynamic Media] {#dynamic-media-6514}
 

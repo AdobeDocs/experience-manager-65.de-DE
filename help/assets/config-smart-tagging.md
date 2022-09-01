@@ -5,16 +5,23 @@ contentOwner: AG
 role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 83e9ab570fac686fd53c9c2594cbfb2c05a89a0c
 workflow-type: tm+mt
-source-wordcount: '2170'
-ht-degree: 59%
+source-wordcount: '2262'
+ht-degree: 56%
 
 ---
 
 # Vorbereiten [!DNL Assets] für Smart-Tagging {#configure-asset-tagging-using-the-smart-content-service}
 
 Bevor Sie mit dem Tagging Ihrer Assets mit Smart Content Services beginnen können, integrieren Sie [!DNL Experience Manager Assets] mit der Adobe Developer Console, um den Smart-Service von [!DNL Adobe Sensei]. Nach der Konfiguration trainieren Sie den Dienst mit einigen Bildern und einem -Tag.
+
+>[!NOTE]
+>
+>* Smart Content Services ist nicht mehr für neue [!DNL Experience Manager Assets] On-Premise-Kunden. Vorhandene On-Premise-Kunden, für die diese Funktion bereits aktiviert ist, können weiterhin Smart Content Services verwenden.
+>* Smart Content Services ist für bestehende verfügbar [!DNL Experience Manager Assets] Managed Services-Kunden, für die diese Funktion bereits aktiviert ist.
+>* Neu [!DNL Experience Manager Assets] Managed Services-Kunden können die in diesem Artikel beschriebenen Anweisungen zum Einrichten von Smart Content Services befolgen.
+
 
 Bevor Sie den Smart Content Service verwenden, stellen Sie Folgendes sicher:
 
@@ -51,7 +58,14 @@ Ein öffentliches Zertifikat ermöglicht Ihnen die Authentifizierung Ihres Profi
 
 1. Verwenden Sie im Dialogfeld **[!UICONTROL AEM Smart Content Service]** die folgenden Werte:
 
-   **[!UICONTROL Service-URL]**: `https://mc.adobe.io/marketingcloud/smartcontent`
+   **[!UICONTROL Service-URL]**: `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
+
+   Beispiel: `https://smartcontent.adobe.io/apac`. Sie können `na`, `emea`oder `apac` als die Regionen, in denen Ihre Experience Manager-Autoreninstanz gehostet wird.
+
+   >[!NOTE]
+   >
+   >Wenn der Experience Manager Managed Service vor dem 1. September 2022 bereitgestellt wurde, verwenden Sie die folgende Dienst-URL:
+   >`https://mc.adobe.io/marketingcloud/smartcontent`
 
    **[!UICONTROL Autorisierungsserver]**: `https://ims-na1.adobelogin.com`
 
