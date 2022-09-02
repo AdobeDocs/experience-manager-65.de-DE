@@ -2,9 +2,9 @@
 title: Link-Checker
 description: Der Link-Prüfer hilft bei der Validierung sowohl interner als auch externer Links und ermöglicht das Neuschreiben von Links.
 exl-id: 8ec4c399-b192-46fd-be77-3f49b83ce711
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 0b9de3261d8747f3e7107962b6aea1dbdf9d6773
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '987'
 ht-degree: 2%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 Inhaltsautoren sollten sich nicht mit der Validierung aller Links befassen müssen, die sie in ihre Inhaltsseiten aufnehmen.
 
-Der Link Checker wird automatisch ausgeführt, um Autoren von Inhalten bei ihren Links zu unterstützen, darunter:
+Der Link-Checker wird automatisch ausgeführt, um Inhaltsautoren bei ihren Links zu unterstützen, darunter:
 
 * Validieren von Links beim Hinzufügen zu Inhalten
 * Liste aller externen Links im Inhalt anzeigen
