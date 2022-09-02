@@ -3,10 +3,10 @@ title: Versionshinweise für [!DNL Adobe Experience Manager] 6,5
 description: Suchen Sie nach Versionsinformationen, Neuigkeiten, Installationsanleitungen und einer detaillierten Änderungsliste für [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 21cbb1df659c8ff82170bb953b05260219dc4970
+source-git-commit: 966a3ea6b8cb9b42e21f8e3eb3fee1c7ca93cf51
 workflow-type: tm+mt
-source-wordcount: '3237'
-ht-degree: 5%
+source-wordcount: '2603'
+ht-degree: 6%
 
 ---
 
@@ -76,40 +76,13 @@ ht-degree: 5%
 
 * Commerce-Produkte werden nicht mithilfe der Spaltenüberschrift sortiert und werden verwendet _remote_ Sortiermodus; Stattdessen sollten Commerce-Produkte mithilfe von Spaltenüberschriften mit _lokal_ Sortiermodus. (CQ-4343750, NPR-38498)
 
+
+
 ## [!DNL Forms] {#forms-6514}
 
-* Wenn eine Datei an ein adaptives Formular mit mehreren Bereichen angehängt und ein Entwurf des adaptiven Formulars gespeichert wird, tritt ein Fehler auf. (NPR-38978)
-* Wenn ein RGB-Profil mithilfe der Java-API createPDF2 mit AdobePDF-Einstellungen in ein CMYK-Profil konvertiert wird, funktioniert die Option nicht mit der Java-API. Die Option funktioniert problemlos mit der eigenständigen DistillerClient-Anwendung. (NPR-38858, CQ-4346181)
-* Nach der Installation von AEM 6.5 Forms Service Pack 12 (6.5.12.0) sind alle Optionen außer zum Schließen der Aufgabe im Schritt &quot;Aufgabe zuweisen&quot;von AEM Workflows nicht mehr verfügbar. (NPR-38743)
-* In Datensatzdokumenten (DoR) werden einige Werte in einer Tabelle abgeschnitten. (NPR-38657)
-* Bei der Vorschau von FormSet mit Daten-XML werden bei XDP-Dateien mit schwebenden Feldern bei der Vorschau eines Formularsatzes keine Daten angezeigt, aber bei Verwendung der Option Vorschau-PDF werden Daten angezeigt.
-* In Adaptive Forms befinden sich Optionsfelder und Kontrollkästchen nicht in der Tab-Reihenfolge. (NPR-38645)
-* Wenn Sie `Summary Step` zum Generieren des Datensatzdokuments (DoR) für ein übersetztes adaptives Formular nach der Übermittlung wird nicht in die lokalisierte Sprache übersetzt. (NPR-38567)
-* Die Option Neuversuch deaktivieren in AEM Workflow-Schritten funktioniert nicht erwartungsgemäß. Das Problem tritt gelegentlich auf. (NPR-38547)
-* Wenn das adaptive Formular mit dem Feld Rich-Text gesendet wird, wird die `an Internal Error while Submitting a Form` Fehler auftreten. Wenn der Benutzer den Fokus auf das Rich-Text-Feld legt, tritt der Fehler nicht vor der Übermittlung des Formulars auf. (NPR-38542)
-* Fehler `sling-default-3-AdobeSignRefreshTokenScheduleJob com.adobe.forms.foundation.oauth.model.OAuthConfigSlingModel Refresh Token not present for: /conf/gws-eform/cashlite/settings/cloudconfigs/fdm/cashlite/jcr:content occurs` wird protokolliert. (NPR-38541)
-* Wenn ein Benutzer eine PDF in ein adaptives Formular hochlädt, reagiert der AEM Forms-Server nicht mehr. (NPR-38398)
-* Wenn Sie auf einem AEM Forms on OSGi-Server die Document Service-API zum Zertifizieren von PDF verwenden, schlägt der Fehler fehl: com.adobe.fd.signatures.truststore.errors.exception.CredentialRetrievalException: AEM-DSS-311. (CQ-4346252)
-* Bei der Übermittlung der Briefentwürfe muss die `Could not upload asset from xml input` Fehler auftritt. Dies hat keine Auswirkungen auf die Funktionalität. Wenn Sie einen Entwurf öffnen, wird der Brief korrekt gerendert. (CQ-4345979, CQ-4344418)
-* Wenn ein Datum im deutschen Format eingegeben wird und die Variable `Preview with Data` für einen Brief verwendet wird, wird das Datumsfeld nicht gerendert. (CQ-4345783)
-* Beim Erstellen eines Webportals und Generieren der datenbasierten Barcodes werden einige Barcodes nicht korrekt dekodiert. (CQ-4345743)
-* Die Postscript-Konvertierung in die PDF gibt kein Ausgabedokument mit erwarteten Farben wieder. (CQ-4345074)
-* Der Ressourcen-Resolver verursacht zeitweise Fehler bei der Übermittlung und führt dazu, dass dieselbe Stacktrace mehrmals für eine einzelne Übermittlung angezeigt wird. (CQ-4344764)
-* Benutzer können die geänderten Entwurfsbriefe, die die `cmDataUrl` Parameter. Die Entwürfe werden zum ersten Mal in Ordnung gebracht. Die Probleme treten in nachfolgenden Versuchen auf. (CQ-4344418)
-* Wenn der Benutzer `&` -Symbol in einer interaktiven Kommunikation (IC), kann der Entwurf der entsprechenden IC nicht geladen werden. (CQ-4343969)
-* Wenn Sie Stiloptionen in AEM Forms Designer zum Generieren von PCL-Dateien verwenden, wird der angegebene Stil nicht auf die generierten Dateien angewendet. (CQ-4339573)
-* Wenn die Seitenzahl größer als 15 ist, schlägt die automatische Konvertierung dynamischer XDP-Formulare in adaptive Formulare fehl. Dies funktioniert einwandfrei, wenn die Seitenzahl kleiner als 15 ist. (NPR-35337)
-* Wenn die Option Zu Favoriten hinzufügen verwendet wird, zeigt sie nicht den Status des Umschalters zur Bildschirmlesehilfe an. (NPR-37137)
-* Im Formulardatenmodell werden die Werte nach der Dezimalzahl im datenbankgestützten Formulardatenmodell für Geld und Kleingeld gekürzt. . (CQDOC-19509)
-* Wenn Sie einen Navigationslink für einen Workflow in HTML Workspace auswählen, wird nicht angegeben, dass der Navigationslink ausgewählt ist. (NPR-37138)
-* Die Funktion für Scribble-Signaturen ist nicht mit den Richtlinien für Barrierefreiheit kompatibel. (NPR-37596)
-* AEM Forms verwendet log4j 1.x. Die Unterstützung für log4j 1.x wurde eingestellt. (NPR-38273)
-* Wenn Sie die MSSQL-Datenbank als Datenquelle in einem Formulardatenmodell verwenden und Werte abrufen, werden die Zahlen nach der Dezimalzahl in den Abrufwerten verdreht. (CQ-4346190)
-* Wenn Sie in Forms 6.5 Designer ein mit Forms 6.1 Designer erstelltes Formular öffnen und ein Textfeld bearbeiten, überschreitet der Absatzabstand den angegebenen Platz. Alle vorherigen Einstellungen des Bereichs werden entfernt und eine manuelle Neuformatierung des Textfelds ist erforderlich. (CQ-4341899)
-* Für den Barcode SSCC-18 wird ein falscher Wert angezeigt. Auf Forms-Servern wird der Wert im rechten Teil des Barcodes weggelassen. (CQ-4342400)
-* Bei statischen PDF forms, die mit Forms 6.5 Designer erstellt wurden, schlägt die PDF-Barrierefreiheit mit einem Fehler fehl `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
-* Es wurde die Möglichkeit hinzugefügt, in Forms Designer &quot;Reader für Hyperlinks&quot;festzulegen.(NPR-36221)
-
+>[!NOTE]
+>
+> Fehlerbehebungen in [!DNL Experience Manager] Forms wird eine Woche nach der geplanten Bereitstellung über ein separates Add-On-Paket bereitgestellt [!DNL Experience Manager] Service Pack-Version.
 
 ## Integrationen {#integrations-6514}
 
@@ -242,7 +215,7 @@ Informationen zu den Plattformen, die für diese Version zertifiziert sind, find
 >
 >Überspringen, wenn Sie [!DNL Experience Manager] Forms.
 
-<!-- Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release. -->
+Fehlerbehebungen in [!DNL Experience Manager] Forms wird eine Woche nach der geplanten Bereitstellung über ein separates Add-On-Paket bereitgestellt [!DNL Experience Manager] Service Pack-Version.
 
 1. Stellen Sie sicher, dass Sie die [!DNL Experience Manager] Service Pack.
 1. Wählen Sie unter den aufgeführten [AEM Forms-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) das für Ihr Betriebssystem passende Forms-Add-on-Paket aus und laden Sie es herunter.
