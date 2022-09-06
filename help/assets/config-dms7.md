@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: 74e3d4204166280e8624298098042b8cb222c034
+source-git-commit: b33c42edb44617d26ead0df3a9de7bdb39c2e9f4
 workflow-type: tm+mt
-source-wordcount: '6253'
+source-wordcount: '6282'
 ht-degree: 49%
 
 ---
@@ -119,7 +119,11 @@ Siehe [Feature Pack 18912 für Massenmigration von Assets installieren](/help/as
 
 1. Nachdem die Verbindung erfolgreich hergestellt wurde, richten Sie Folgendes ein. Überschriften mit einem Sternchen (*) sind erforderlich:
 
-   * **[!UICONTROL Unternehmen]** – der Name des Dynamic Media-Kontos. Sie können über ein Dynamic Media-Konto in Experience Manager verfügen. <!-- CQDOC-19579 and CQDOC-19612 -->
+   * **[!UICONTROL Unternehmen]** – der Name des Dynamic Media-Kontos.
+      >[!IMPORTANT]
+      In einer Instanz von Experience Manager wird nur eine Dynamic Media-Konfiguration in Cloud Services unterstützt. nicht mehr als eine Konfiguration hinzufügen. Mehrere Dynamic Media-Konfigurationen auf einer Experience Manager-Instanz sind _not_ unterstützt oder von Adobe empfohlen wird.
+
+      <!-- CQDOC-19579 and CQDOC-19612 -->
 
       Siehe auch [Dynamic Media-Firmenalias-Konto konfigurieren](/help/assets/dm-alias-account.md).
 
