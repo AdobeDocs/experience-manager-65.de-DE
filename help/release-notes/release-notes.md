@@ -3,9 +3,9 @@ title: Versionshinweise für [!DNL Adobe Experience Manager] 6,5
 description: Suchen Sie nach Versionsinformationen, Neuigkeiten, Installationsanleitungen und einer detaillierten Änderungsliste für [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 381ab110ccf5605b17382b9c77693c819e31e3b6
+source-git-commit: 935698e6c8caabccb7bbe0aa9f45012d07163660
 workflow-type: tm+mt
-source-wordcount: '3224'
+source-wordcount: '3257'
 ht-degree: 5%
 
 ---
@@ -123,6 +123,7 @@ ht-degree: 5%
 * Für den Barcode SSCC-18 wird ein falscher Wert angezeigt. Auf Forms-Servern wird der Wert im rechten Teil des Barcodes weggelassen. (CQ-4342400)
 * Bei statischen PDF forms, die mit Forms 6.5 Designer erstellt wurden, schlägt die PDF-Barrierefreiheit mit einem Fehler fehl `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
 * Es wurde die Möglichkeit hinzugefügt, in Forms Designer &quot;Reader für Hyperlinks&quot;festzulegen.(NPR-36221)
+* Wenn Sie einem adaptiven Formular ohne XFA wiederholbare Bereiche hinzufügen und die Anzahl der wiederholbaren Bereiche in einem Nicht-XFA-Formular mehr als 15 beträgt, kann das Hinzufügen einer neuen Instanz bis zu 7-8 Sekunden dauern. (NPR-37346)
 
 ## Integrationen {#integrations-6514}
 
