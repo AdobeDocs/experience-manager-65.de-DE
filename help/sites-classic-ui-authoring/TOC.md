@@ -7,9 +7,9 @@ user-guide-title: AEM 6.5 Classic UI Authoring-Benutzerhandbuch
 user-guide-description: In diesem Handbuch werden die Konzepte des Authoring in AEM klassischen Benutzeroberfläche behandelt.
 feature: Authoring
 role: User
-source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '264'
 ht-degree: 84%
 
 ---
@@ -49,7 +49,6 @@ ht-degree: 84%
    + [Verwenden von Tags](classic-feature-tags.md)
    + [Strukturvorlage](classic-feature-scaffolding.md)
    + [Konfigurieren von Komponenten im Designmodus](classic-page-author-design-mode.md)
-   + [Hinzufügen von Search&amp;Promote-Funktionen zu Ihrer Seite](classic-feature-search-promote.md)
    + [Komponenten](classic-page-author-default-components.md)
 + Workflows {#workflows}
    + [Teilnehmen an Workflows](classic-workflows-participating.md)

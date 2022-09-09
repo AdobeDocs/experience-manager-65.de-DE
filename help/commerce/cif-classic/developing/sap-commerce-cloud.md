@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
-source-git-commit: 78359fb8ecbcc0227ab5a3910175aed73d823902
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '2311'
-ht-degree: 85%
+source-wordcount: '2308'
+ht-degree: 84%
 
 ---
 
@@ -40,7 +40,7 @@ Für die Verwendung der Integrationsschicht stehen eine Reihe vordefinierter AEM
 * Warenkorb
 * Kasse
 
-Für Suchen ist ein Integrations-Hook verfügbar, mit dem Sie die Suchfunktion von AEM, des eCommerce-Systems oder eines Drittanbieters (z. B. Search&amp;Promote) separat oder in Kombination verwenden können.
+Für die Suche wird ein Integrations-Hook bereitgestellt, mit dem Sie die AEM, die Suche nach dem E-Commerce-System, eine Suche nach einem Drittanbieter oder eine Kombination daraus verwenden können.
 
 ## Auswählen der eCommerce-Engine {#ecommerce-engine-selection}
 

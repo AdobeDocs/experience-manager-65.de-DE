@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6c1f8869-62d9-4fac-aa0d-b99bb0e86d6b
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
-source-git-commit: 085e77b7b831d6be626a46d3de215aedb50f6178
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '1457'
-ht-degree: 54%
+source-wordcount: '1445'
+ht-degree: 53%
 
 ---
 
@@ -43,7 +43,7 @@ Gehen Sie wie folgt vor, um CQ-Komponentenvariablen den Adobe Analytics-Berichts
 
    ![aa-13](assets/aa-13.png)
 
-   Es gibt mehrere standardmäßige Komponentengruppen: **Allgemein**, **Commerce**, **Communities**, **Search&amp;Promote** und **Sonstige**. Je nach Konfiguration zeigt Ihre AEM-Instanz möglicherweise andere Gruppen und Komponenten an.
+   Es gibt mehrere standardmäßige Komponentengruppen: **Allgemein**, **Handel**, **Communities** und **Sonstiges**. Je nach Konfiguration zeigt Ihre AEM-Instanz möglicherweise andere Gruppen und Komponenten an.
 
 1. Um Adobe Analytics-Variablen Variablen Variablen zuzuordnen, die in der Komponente definiert sind, ziehen Sie eine **Analytics-Variable** aus der Inhaltssuche in ein Feld der Tracking-Komponente. Ziehen Sie beispielsweise `Page Name (pageName)` nach `pagedata.title`.
 
@@ -121,10 +121,6 @@ Sie können mit der Liste wie folgt arbeiten:
    >[!NOTE]
    >
    >Sie können immer nur eine Filterschaltfläche aktivieren.
-
-   >[!NOTE]
-   >
-   >Auch Search&amp;Promote-Variablen gehören zum Abschnitt &quot;Konversion&quot;.
 
    1. Die Liste bietet auch eine Suchfunktion, die die Elemente entsprechend dem im Suchfeld eingegebenen Text filtert.
    1. Wenn bei der Suche nach Elementen in der Liste eine Filteroption aktiviert ist, werden auch die angezeigten Ergebnisse gemäß der aktivierten Schaltfläche gefiltert.

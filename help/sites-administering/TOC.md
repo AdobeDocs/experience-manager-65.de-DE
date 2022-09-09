@@ -8,9 +8,9 @@ breadcrumb-title: Administratorenanleitung
 user-guide-description: Erfahren Sie mehr über die Verwaltung von AEM.
 feature: Administering
 role: Admin
-source-git-commit: 8e8c829779e172441605a8abd2ef73623b95462d
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '630'
 ht-degree: 91%
 
 ---
@@ -128,7 +128,6 @@ ht-degree: 91%
    + [Verwandte Community-Artikel](related-community-articles.md)
    + [Integrieren mit Adobe Campaign Standard](campaignstandard.md)
    + [Hinweis zum End of Life von Flash-Viewern](flash-viewers-eol.md)
-   + [Produkt-Feed](product-feed.md)
    + [Integrieren mit Adobe Dynamic Tag Management](dtm.md)
    + [Opt-in für Adobe Analytics und Adobe Target](opt-in.md)
    + [AEM-Portale und Portlets](aem-as-portal.md)
@@ -146,7 +145,6 @@ ht-degree: 91%
    + [Voraussetzungen für die Integration mit Adobe Target](target-requirements.md)
    + [Integration mit Adobe Target mithilfe von IMS](integration-target-ims.md)
    + [Adobe Classifications](adobeanalytics-classifications.md)
-   + [Integrieren mit Adobe Search&amp;Promote](search-and-promote.md)
    + [Lösungsintegration](integration.md)
    + [Exportieren von Experience Fragments nach Adobe Target](experience-fragments-target.md)
    + [Best Practices für E-Mail-Vorlagen](best-practices-for-email-templates.md)
