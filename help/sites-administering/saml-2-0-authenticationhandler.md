@@ -10,10 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: ffabf5a9e3b08f60394cecfe540692b161437362
+source-git-commit: c73d39a1c88c914cd63bc08fe8daf0ff37b4bf7c
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 58%
+source-wordcount: '831'
+ht-degree: 57%
 
 ---
 
@@ -42,7 +42,7 @@ Die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) bietet Zugriff auf 
 >
 >Der SAML 2.0-Authentifizierungs-Handler ist standardmäßig deaktiviert. Sie müssen mindestens eine der folgenden Eigenschaften festlegen, um den Handler zu aktivieren:
 >
->* POST-URL des Identitätsanbieters
+>* Die ID-Provider-POST-URL oder IDP-URL.
 >* Entitäts-ID des Dienstleisters
 >
 
@@ -57,7 +57,7 @@ Die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) bietet Zugriff auf 
 
 **IDP-Zertifikatalias** Der Alias des IdP-Zertifikats im globalen TrustStore. Wenn diese Eigenschaft nicht angegeben wird, ist der Authentifizierungs-Handler deaktiviert. Im Kapitel „Identitätsanbieterzertifikat zum AEM-TrustStore hinzufügen“ weiter unten finden Sie Informationen dazu, wie Sie dies einrichten.
 
-**Identitäts-Provider-URL** URL des IDP, an den die SAML-Authentifizierungsanforderung gesendet werden soll. Wenn diese Eigenschaft nicht angegeben wird, ist der Authentifizierungs-Handler deaktiviert.
+**IDP-URL** URL des IDP, an den die SAML-Authentifizierungsanforderung gesendet werden soll. Wenn diese Eigenschaft nicht angegeben wird, ist der Authentifizierungs-Handler deaktiviert.
 
 >[!CAUTION]
 >
