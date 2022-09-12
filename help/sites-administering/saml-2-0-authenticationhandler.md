@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: ffabf5a9e3b08f60394cecfe540692b161437362
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '829'
 ht-degree: 58%
 
 ---
@@ -31,8 +31,6 @@ Folgendes wird unterstützt:
 Dieser Handler speichert die verschlüsselte SAML-Antwortnachricht im Benutzerknoten (`usernode/samlResponse`), um die Kommunikation mit dritten Dienstleistern zu erleichtern.
 
 >[!NOTE]
->
->[Hier](https://helpx.adobe.com/experience-manager/kb/simple-saml-demo.html) finden Sie eine Demonstration zur Integration von AEM und SAML.
 >
 >Einen End-to-End-Community-Artikel finden Sie [hier](https://helpx.adobe.com/de/experience-manager/using/aem63_saml.html): Integrieren von SAML mit „Adobe Experience Manager“.
 
