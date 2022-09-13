@@ -8,10 +8,10 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 2d12f1652a3b8ec4e6ca9c737dc844d1f53f7d08
+source-git-commit: 2bad64ebc94cf5b09149a8216648de763a6e30d0
 workflow-type: tm+mt
-source-wordcount: '5365'
-ht-degree: 68%
+source-wordcount: '5369'
+ht-degree: 67%
 
 ---
 
@@ -654,7 +654,7 @@ Stellen Sie vor Durchführung der folgenden Kontrollen sicher, dass [Systemberei
 
 **Microsoft® Windows**
 
-* Stellen Sie sicher, dass [unterstützte Version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) von Microsoft Office installiert ist und das Öffnen von Dialogfeldern für alle Anwendungen abgebrochen wird.
+* Stellen Sie sicher, dass 32-Bit [unterstützte Version ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) von Microsoft Office installiert ist und das Öffnen von Dialogfeldern für alle Anwendungen abgebrochen wird.
 * Stellen Sie sicher, dass in der PDF-Konfigurationsoberfläche ein PDF Generator-Benutzer hinzugefügt wird.
 * Stellen Sie sicher, dass der PDF Generator-Benutzer Mitglied der Administratorgruppe ist, und [Ersetzen eines Tokens auf Prozessebene](#grant-the-replace-a-process-level-token-privilege) -Berechtigung für den Benutzer festgelegt ist.
 * Stellen Sie sicher, dass der Benutzer in der Benutzeroberfläche von PDF Generator konfiguriert ist, und führen Sie die folgenden Schritte aus:
@@ -668,7 +668,7 @@ Stellen Sie vor Durchführung der folgenden Kontrollen sicher, dass [Systemberei
 
 **Linux®**
 
-* Stellen Sie sicher, dass [unterstützte Version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) von Open Office installiert ist, werden die Dialogfelder zum Öffnen für alle Anwendungen abgebrochen und Office-Anwendungen werden erfolgreich gestartet.
+* Stellen Sie sicher, dass 32-Bit oder 64-Bit [unterstützte Version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) von Open Office installiert ist, werden die Dialogfelder zum Öffnen für alle Anwendungen abgebrochen und Office-Anwendungen werden erfolgreich gestartet.
 * Umgebungsvariable erstellen `OpenOffice_PATH` und legen Sie sie so fest, dass sie auf die OpenOffice-Installation verweist, die in der [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) oder das dt-Profil (Gerätestruktur).
 * Wenn bei der Installation von OpenOffice Probleme auftreten, stellen Sie sicher, dass [32-Bit-Bibliotheken](#extrarequirements) für die OpenOffice-Installation erforderlich sind, sind verfügbar.
 
