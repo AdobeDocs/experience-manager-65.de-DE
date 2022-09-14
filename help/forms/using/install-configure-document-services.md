@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 32b97aeff398a19556d46ff6c905dc3019988bc1
+source-git-commit: e5b78a6f84fa0f9de746ca4ae69a8df4f474e305
 workflow-type: tm+mt
-source-wordcount: '5389'
+source-wordcount: '5388'
 ht-degree: 67%
 
 ---
@@ -659,7 +659,7 @@ Stellen Sie vor Durchführung der folgenden Kontrollen sicher, dass [Systemberei
 * Stellen Sie sicher, dass der PDF Generator-Benutzer Mitglied der Administratorgruppe ist, und [Ersetzen eines Tokens auf Prozessebene](#grant-the-replace-a-process-level-token-privilege) -Berechtigung für den Benutzer festgelegt ist.
 * Stellen Sie sicher, dass der Benutzer in der Benutzeroberfläche von PDF Generator konfiguriert ist, und führen Sie die folgenden Schritte aus:
    1. Melden Sie sich mit dem PDF Generator-Benutzer bei Microsoft® Windows an.
-   1. Öffnen Sie Microsoft® Office- oder Open Office-Anwendungen und brechen Sie alle Dialogfelder ab.
+   1. Öffnen Sie Microsoft® Office- oder OpenOffice-Anwendungen und brechen Sie alle Dialogfelder ab.
    1. Legen Sie AdobePDF als Standarddrucker fest.
    1. Legen Sie Acrobat als Standardprogramm für PDF-Dateien fest.
    1. Führen Sie eine manuelle Konvertierung mit den Optionen Datei > Drucken und Acrobat-Band in Microsoft Office-Anwendungen durch und brechen Sie alle Dialogfelder ab.
