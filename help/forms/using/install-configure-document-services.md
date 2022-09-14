@@ -8,7 +8,7 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: a0612d10c91cf096403dad1c50b0884feeb10ec2
+source-git-commit: 26fbf8629715c983ccae9dcdee1defb279849107
 workflow-type: tm+mt
 source-wordcount: '5461'
 ht-degree: 66%
@@ -605,11 +605,12 @@ Das Systembereitschaftstool prüft, ob der Computer ordnungsgemäß für die Aus
    >
    > * Sie können die Datei srt_config.yaml verwenden, um verschiedene Einstellungen von zu konfigurieren. Das Format der Datei lautet:
 
-       #=========================================================================================================================================================================================================================================================
        # SRT-Konfiguration
-       #=========================================================================================================================================================================================================================================================
-       #Hinweis - befolgen Sie das richtige Format, um Parsing-Fehler zu vermeiden
-       #z. B. &lt;param name=&quot;&quot;>:&lt;space>&lt;param value=&quot;&quot;>
+       
+       # Hinweis - Verwenden Sie das richtige Format, um Parsing-Fehler zu vermeiden
+       
+       # z. B. &lt;param name=&quot;&quot;>:&lt;space>&lt;param value=&quot;&quot;>
+       
        #locale: (Pflichtfeld) Gebietsschema für SRT. Unterstützte Gebietsschemata [en/fr/de/ja].
        locale: en
        
