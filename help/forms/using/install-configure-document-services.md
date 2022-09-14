@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 2bad64ebc94cf5b09149a8216648de763a6e30d0
+source-git-commit: 32b97aeff398a19556d46ff6c905dc3019988bc1
 workflow-type: tm+mt
-source-wordcount: '5369'
+source-wordcount: '5389'
 ht-degree: 67%
 
 ---
@@ -650,7 +650,7 @@ Stellen Sie vor Durchführung der folgenden Kontrollen sicher, dass [Systemberei
 
 +++
 
-+++Office öffnen
++++OpenOffice
 
 **Microsoft® Windows**
 
@@ -668,7 +668,8 @@ Stellen Sie vor Durchführung der folgenden Kontrollen sicher, dass [Systemberei
 
 **Linux®**
 
-* Stellen Sie sicher, dass 32-Bit oder 64-Bit [unterstützte Version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) von Open Office installiert ist, werden die Dialogfelder zum Öffnen für alle Anwendungen abgebrochen und Office-Anwendungen werden erfolgreich gestartet.
+* Installieren Sie die [unterstützte Version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) von OpenOffice. AEM Forms unterstützt sowohl 32-Bit- als auch 64-Bit-Versionen. Öffnen Sie nach der Installation alle OpenOffice-Anwendungen, brechen Sie alle Dialogfelder ab und schließen Sie die Anwendungen. Öffnen Sie die Anwendungen erneut und stellen Sie sicher, dass beim Öffnen einer OpenOffice-Anwendung kein Dialogfeld angezeigt wird.
+
 * Umgebungsvariable erstellen `OpenOffice_PATH` und legen Sie sie so fest, dass sie auf die OpenOffice-Installation verweist, die in der [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) oder das dt-Profil (Gerätestruktur).
 * Wenn bei der Installation von OpenOffice Probleme auftreten, stellen Sie sicher, dass [32-Bit-Bibliotheken](#extrarequirements) für die OpenOffice-Installation erforderlich sind, sind verfügbar.
 
