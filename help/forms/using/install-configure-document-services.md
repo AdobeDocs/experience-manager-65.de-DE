@@ -8,10 +8,10 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 477e3d6d7e64a86726a71a8c554593441c94d5bc
+source-git-commit: a0612d10c91cf096403dad1c50b0884feeb10ec2
 workflow-type: tm+mt
-source-wordcount: '5388'
-ht-degree: 67%
+source-wordcount: '5461'
+ht-degree: 66%
 
 ---
 
@@ -605,32 +605,29 @@ Das Systembereitschaftstool prüft, ob der Computer ordnungsgemäß für die Aus
    >
    > * Sie können die Datei srt_config.yaml verwenden, um verschiedene Einstellungen von zu konfigurieren. Das Format der Datei lautet:
 
-
-   ```
-      # =================================================================
-      # SRT Configuration
-      # =================================================================
-      #Note - follow correct format to avoid parsing failures
-      #e.g. <param name>:<space><param value> 
-      #locale: (mandatory field)Locale to be used for SRT. Supported locales [en/fr/de/ja].
-      locale: en
-   
-      #aemTempDir: AEM Temp direcotry
-      aemTempDir:
-   
-      #users: provide PDFG converting users list
-      #users:
-      # - user1
-      # - user2
-      users:
-   
-      #profile: select profile to run specific checks. Choose from [LCM], more will be added soon 
-      profile:
-   
-      #outputDir: directory where output files will be saved
-      outputDir:
-   ```
-
+       #=========================================================================================================================================================================================================================================================
+       # SRT-Konfiguration
+       #=========================================================================================================================================================================================================================================================
+       #Hinweis - befolgen Sie das richtige Format, um Parsing-Fehler zu vermeiden
+       #z. B. &lt;param name=&quot;&quot;>:&lt;space>&lt;param value=&quot;&quot;>
+       #locale: (Pflichtfeld) Gebietsschema für SRT. Unterstützte Gebietsschemata [en/fr/de/ja].
+       locale: en
+       
+       #aemTempDir: AEM temporärer Ordner
+       aemTempDir:
+       
+       #users: Benutzerliste für die PDFG-Konvertierung bereitstellen
+       #users:
+       # - user1
+       # - user2
+       Benutzer:
+       
+       #profile: Profil auswählen, um spezifische Prüfungen durchzuführen. Wählen Sie unter [LCM] aus. Bald werden weitere hinzugefügt.
+       profile:
+       
+       #outputDir: Verzeichnis, in dem die Ausgabedateien gespeichert werden
+       outputDir:
+   >
 1. Navigieren Sie zu `[Path_of_reports_folder]`. Öffnen Sie die Datei SystemReadinessTool.html. Überprüfen Sie den Bericht und beheben Sie die erwähnten Probleme.
 
 ## Fehlerbehebung
