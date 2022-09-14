@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 060bfb2ed3288b0ef9fbb5ba7f6b06ee027062b6
+source-git-commit: bc9168eb22f2ebe7ae5408d5e033e085e47c7438
 workflow-type: tm+mt
-source-wordcount: '3625'
+source-wordcount: '3637'
 ht-degree: 93%
 
 ---
@@ -831,6 +831,12 @@ Die folgenden Plattformen werden mit der AEM Forms-Version 6.5.10.0 vom 7. Septe
       - [!DNL Microsoft Office 2019]
       - [!DNL Microsoft Windows Server 2019]
       - [!DNL RHEL8]
-   - 09. September 2020
 
-      - Die unterstützte Version von iOS für die Mobile App von AEM Forms wurde in iOS 12 geändert. Die vorherige Version war iOS 11.
+- 03. Dezember 2020
+   - Unterstützung mit AEM Forms 6.5.7.0 oder höher für die folgende Plattform hinzugefügt:
+      - [!DNL Microsoft SQL Server 2019]
+
+- 09. September 2020
+
+   - Die unterstützte Version von iOS für die Mobile App von AEM Forms wurde in iOS 12 geändert. Die vorherige Version war iOS 11.
+
