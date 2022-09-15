@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 4789b2b5105e5a883ab816c82c9ff07ea76978ff
+source-git-commit: 684474d764ac2a2c187827382e0180e6c0d5259b
 workflow-type: tm+mt
-source-wordcount: '2848'
-ht-degree: 77%
+source-wordcount: '2861'
+ht-degree: 75%
 
 ---
 
@@ -224,7 +224,7 @@ Das Einbetten von Code ist nützlich, um Zugriff auf Bibliotheken zu ermögliche
 
 #### Anwendungsspezifische Client-Bibliotheksordner {#app-specific-client-library-folders}
 
-Es gilt als Best Practice, alle Dateien, die zu einer Anwendung gehören, im Anwendungsordner unter `/app` abzulegen. Außerdem sollten Sie Website-Besuchern den Zugriff auf den Ordner `/app`verweigern. Um beide Best Practices einzuhalten, erstellen Sie einen Client-Bibliotheksordner unter dem Ordner `/etc`, der die Client-Bibliothek unter `/app` einbettet.
+Es gilt als Best Practice, alle Dateien, die zu einer Anwendung gehören, im Anwendungsordner unter `/apps` abzulegen. Außerdem sollten Sie Website-Besuchern den Zugriff auf den Ordner `/app`verweigern. Um beide Best Practices einzuhalten, erstellen Sie unten einen Client-Bibliotheksordner `/apps`, und machen Sie darauf über das Proxy-Servlet wie unter [Suchen eines Client-Bibliotheksordners und Verwenden des Proxy-Servlets für Client-Bibliotheken](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet).
 
 Legen Sie mit der categories-Eigenschaft den Client-Bibliotheksordner fest, den Sie einbetten möchten. Um die Bibliothek einzubetten, fügen Sie dem eingebetteten `cq:ClientLibraryFolder`-Knoten eine Eigenschaft mit den folgenden Eigenschaftsattributen hinzu:
 
