@@ -3,9 +3,9 @@ title: Versionshinweise für [!DNL Adobe Experience Manager] 6,5
 description: Suchen Sie nach Versionsinformationen, Neuigkeiten, Installationsanleitungen und einer detaillierten Änderungsliste für [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 935698e6c8caabccb7bbe0aa9f45012d07163660
+source-git-commit: 48f898a774d2ddd6d2c31f6a4107c71e4032cfc2
 workflow-type: tm+mt
-source-wordcount: '3257'
+source-wordcount: '3281'
 ht-degree: 5%
 
 ---
@@ -118,7 +118,7 @@ ht-degree: 5%
 * Wenn Sie einen Navigationslink für einen Workflow in HTML Workspace auswählen, wird nicht angegeben, dass der Navigationslink ausgewählt ist. (NPR-37138)
 * Die Funktion für Scribble-Signaturen ist nicht mit den Richtlinien für Barrierefreiheit kompatibel. (NPR-37596)
 * AEM Forms verwendet log4j 1.x. Die Unterstützung für log4j 1.x wurde eingestellt. (NPR-38273)
-* Wenn Sie die MSSQL-Datenbank als Datenquelle in einem Formulardatenmodell verwenden und Werte abrufen, werden die Zahlen nach der Dezimalzahl in den Abrufwerten verdreht. (CQ-4346190)
+* Wenn Sie die MSSQL-Datenbank als Datenquelle in einem Formulardatenmodell verwenden und Werte abrufen, werden die Zahlen nach der Dezimalzahl in den Abrufwerten abgeschnitten. (CQ-4346190)
 * Wenn Sie in Forms 6.5 Designer ein mit Forms 6.1 Designer erstelltes Formular öffnen und ein Textfeld bearbeiten, überschreitet der Absatzabstand den angegebenen Platz. Alle vorherigen Einstellungen des Bereichs werden entfernt und eine manuelle Neuformatierung des Textfelds ist erforderlich. (CQ-4341899)
 * Für den Barcode SSCC-18 wird ein falscher Wert angezeigt. Auf Forms-Servern wird der Wert im rechten Teil des Barcodes weggelassen. (CQ-4342400)
 * Bei statischen PDF forms, die mit Forms 6.5 Designer erstellt wurden, schlägt die PDF-Barrierefreiheit mit einem Fehler fehl `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
@@ -317,7 +317,8 @@ Im Folgenden finden Sie eine Liste der Funktionen, die als veraltet gekennzeichn
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THE LIST.
  -->
 
-* [AEM Inhaltsfragment mit GraphQL-Indexpaket 1.0.3](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.3.zip)
+* [AEM Inhaltsfragment mit GraphQL-Indexpaket 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
+Dieses Paket ist für Kunden erforderlich, die GraphQL verwenden. Dadurch können sie die erforderliche Indexdefinition hinzufügen, die auf den tatsächlich verwendeten Funktionen basiert.
 
 * As [!DNL Microsoft® Windows Server 2019] unterstützt nicht [!DNL MySQL 5.7] und [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] unterstützt keine Turnkey-Installationen für [!DNL AEM Forms 6.5.10.0].
 
