@@ -10,10 +10,10 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 11bad847558d295d1cf38aa9e8f246fc6fc3877b
 workflow-type: tm+mt
-source-wordcount: '3695'
-ht-degree: 99%
+source-wordcount: '3826'
+ht-degree: 96%
 
 ---
 
@@ -288,6 +288,22 @@ Solche Instanzen können nur gespeichert werden, wenn der Brief in der öffentli
 1. Öffnen Sie in AEM die Adobe Experience Manager Web Console-Konfiguration für Ihren Server mit der folgenden URL: https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
 1. Suchen Sie nach **[!UICONTROL Correspondence Management-Konfigurationen]** und klicken Sie darauf.
 1. Überprüfen Sie die Konfiguration **[!UICONTROL Briefinstanzen im Veröffentlichungsmodus verwalten]** und klicken Sie dann auf **[!UICONTROL Speichern]**.
+
+### Funktion zum Speichern von Entwürfen aktivieren {#enable-save-draft-feature}
+
+Führen Sie vor dem Veröffentlichen von Briefen oder Speichern von Entwürfen in der Veröffentlichungsinstanz die folgenden Schritte aus, um die Funktion &quot;Als Entwurf speichern&quot;zu aktivieren:
+
+1. Öffnen Sie die Web-Konsolenkonfiguration für Ihren Server mithilfe der folgenden URL: https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr.
+
+1. Klicken Sie auf **Bearbeiten** neben der Einstellung *com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name*.
+
+1. Im *Autoren-URL für VersionRestoreManager* Geben Sie die URL für die entsprechende Autoreninstanz an.
+
+1. Klicken Sie auf Speichern .
+
+Die *cq:lastReplicationAction*, *cq:lastreplicated* und *cq:lastReplicatedBy* -Eigenschaften werden nicht standardmäßig in die Veröffentlichungsinstanz übertragen. Um das erneute Laden von Entwürfen in der Veröffentlichungsinstanz zu aktivieren, sind diese Eigenschaften in der Veröffentlichungsinstanz erforderlich.
+
+Übertragung *cq:lastReplicationAction*, *cq:lastreplicated* und *cq:lastReplicatedBy* Eigenschaften für die Veröffentlichungsinstanz verwenden, deaktivieren Sie die Komponente als *com.day.cq.replication.impl.ReplicationPropertiesFilterFactory* in der -Autoreninstanz mithilfe der URL:`http://server:port/system/console/components`
 
 Wenn das Speichern von Briefinstanzen gespeichert ist, können Sie wählen, wo Sie die Briefinstanzen speichern möchten. Zum Speichern der Briefinstanzen gibt es zwei Optionen: „Lokal speichern“ oder „Remote speichern“.
 
