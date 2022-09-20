@@ -10,10 +10,10 @@ discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 role: Admin
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 126d5309fe3c3b6474e180d21f5c7d1697d9e08a
 workflow-type: tm+mt
-source-wordcount: '1870'
-ht-degree: 99%
+source-wordcount: '1884'
+ht-degree: 97%
 
 ---
 
@@ -105,6 +105,9 @@ Bevor Sie mit der Installation und Konfiguration der Datenerfassungsfunktion von
 
    * libicu
 
+* Installieren [Microsoft Visual Studio 2019 - 32-Bit-Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
+
+
 ## Installieren des AEM Forms-Add-on-Pakets {#install-aem-forms-add-on-package}
 
 AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das Paket enthält AEM Forms bildet Datenerfassung und andere Funktionen. Führen Sie die folgenden Schritte aus, um das Add-On-Paket zu installieren:
@@ -124,7 +127,7 @@ AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das 
 
 ### (Nur Windows) Automatische Installation von verteilbaren Visual Studio-Dateien {#automatic-installation-visual-studio-redistributables}
 
-Wenn Sie eine AEM-Instanz im erhöhten Modus installieren, werden die fehlenden verteilbaren Visual Studio-Dateien während der Installation des AEM Forms-Add-on-Pakets automatisch installiert.
+Wenn Sie eine AEM-Instanz im erhöhten Modus installieren, werden die 32-Bit-Visual Studio-Redistributables während der Installation des AEM Forms Add-On-Pakets automatisch installiert.
 
 Um zu prüfen, ob die verteilbaren Visual Studio-Dateien automatisch installiert wurden, öffnen Sie die Datei `error.log` im Verzeichnis `/crx-repository/logs/`. Die Protokolle enthalten die folgende Meldung:
 
