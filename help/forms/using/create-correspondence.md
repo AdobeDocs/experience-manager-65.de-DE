@@ -10,10 +10,10 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 11bad847558d295d1cf38aa9e8f246fc6fc3877b
+source-git-commit: 1a6881b29024799c44b2068ea82750c983a012e5
 workflow-type: tm+mt
-source-wordcount: '3826'
-ht-degree: 96%
+source-wordcount: '3867'
+ht-degree: 95%
 
 ---
 
@@ -291,19 +291,29 @@ Solche Instanzen können nur gespeichert werden, wenn der Brief in der öffentli
 
 ### Funktion zum Speichern von Entwürfen aktivieren {#enable-save-draft-feature}
 
-Führen Sie vor dem Veröffentlichen von Briefen oder Speichern von Entwürfen in der Veröffentlichungsinstanz die folgenden Schritte aus, um die Funktion &quot;Als Entwurf speichern&quot;zu aktivieren:
+Führen Sie vor dem Veröffentlichen von Briefen oder Speichern von Entwürfen in der Veröffentlichungsinstanz die folgenden Schritte in der Autoren- und Veröffentlichungsinstanz aus, um die Funktion Als Entwurf speichern zu aktivieren:
 
-1. Öffnen Sie die Web-Konsolenkonfiguration für Ihren Server mithilfe der folgenden URL: https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr.
+Die *cq:lastReplicationAction*, *cq:lastreplicated* und *cq:lastReplicatedBy* -Eigenschaften werden nicht standardmäßig in die Veröffentlichungsinstanz übertragen. Übertragung *cq:lastReplicationAction*, *cq:lastreplicated* und *cq:lastReplicatedBy* Eigenschaften für die Veröffentlichungsinstanz, deaktivieren Sie die [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] -Komponente. So deaktivieren Sie die Komponente:
 
-1. Klicken Sie auf **Bearbeiten** neben der Einstellung *com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name*.
+1. Öffnen Sie in der Autoreninstanz die Adobe Experience Manager Web Console Components Console-Konsole. Die Standardeinstellung ist `http://author-server:port/system/console/components`
 
-1. Im *Autoren-URL für VersionRestoreManager* Geben Sie die URL für die entsprechende Autoreninstanz an.
+1. Suchen Sie nach **[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]** -Komponente.
 
-1. Klicken Sie auf Speichern .
+1. Klicken ![Schaltfläche deaktivieren](/help/forms/using/assets/enablebutton.png) Symbol zum Deaktivieren des [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] -Komponente.
 
-Die *cq:lastReplicationAction*, *cq:lastreplicated* und *cq:lastReplicatedBy* -Eigenschaften werden nicht standardmäßig in die Veröffentlichungsinstanz übertragen. Um das erneute Laden von Entwürfen in der Veröffentlichungsinstanz zu aktivieren, sind diese Eigenschaften in der Veröffentlichungsinstanz erforderlich.
+![Autoreninstanz](/help/forms/using/assets/replicationproperties.png)
 
-Übertragung *cq:lastReplicationAction*, *cq:lastreplicated* und *cq:lastReplicatedBy* Eigenschaften für die Veröffentlichungsinstanz verwenden, deaktivieren Sie die Komponente als *com.day.cq.replication.impl.ReplicationPropertiesFilterFactory* in der -Autoreninstanz mithilfe der URL:`http://server:port/system/console/components`
+Um die Funktion &quot;Als Entwurf speichern&quot;zu aktivieren, ersetzen Sie die vorhandene URL unter [!UICONTROL Autoren-URL für VersionRestoreManager] mit der URL Ihrer Autoreninstanz. So ersetzen Sie die URL:
+
+1. Öffnen Sie in der Veröffentlichungsinstanz [!UICONTROL Konfiguration der Adobe Manager-Web-Konsole]. Die Standardeinstellung ist `https://publish-server:port/system/console/configMgr`
+
+1. Suchen und öffnen Sie die **[!UICONTROL Correspondence Management - Konfigurationen der Versionswiederherstellung der Autoreninstanz]** -Komponente.
+
+1. Suchen Sie die **[!UICONTROL Autoren-URL für VersionRestoreManager]** und geben Sie die URL für die Autoreninstanz an.
+
+1. Klicken Sie auf Speichern.
+
+![Veröffentlichungsinstanz](/help/forms/using/assets/correspondencemanagement.png)
 
 Wenn das Speichern von Briefinstanzen gespeichert ist, können Sie wählen, wo Sie die Briefinstanzen speichern möchten. Zum Speichern der Briefinstanzen gibt es zwei Optionen: „Lokal speichern“ oder „Remote speichern“.
 
@@ -323,7 +333,7 @@ Diese Option ist für Personen vorgesehen, die bezüglich des Speicherns von Dat
 
 #### Angeben der Einstellungen für Prozessautor {#specify-processing-author-settings}
 
-1. Öffnen Sie in AEM die Adobe Experience Manager Web Console-Konfiguration für Ihren Server mit der folgenden URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. Öffnen Sie in AEM die Adobe Experience Manager Web Console-Konfiguration für Ihren Server mit der folgenden URL: `https://<server>:<port>/system/console/configMgr`
 
    ![Konfiguration der Adobe Experience Manager-Web-Konsole](assets/2configmanager.png)
 
