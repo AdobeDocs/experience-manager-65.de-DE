@@ -8,10 +8,10 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 26fbf8629715c983ccae9dcdee1defb279849107
+source-git-commit: 652f2f9b55857b8962f5bfd4edb85f3700866485
 workflow-type: tm+mt
-source-wordcount: '5461'
-ht-degree: 66%
+source-wordcount: '5535'
+ht-degree: 65%
 
 ---
 
@@ -786,6 +786,15 @@ Konvertierungsprobleme beim +++ HTML in PDF
 * Sie können innerhalb von 7 Tagen nach dem ersten Start Ihres Adobe-Produkts online gehen, um eine Online-Aktivierung und -Registrierung abzuschließen, oder Sie verwenden ein internetfähiges Gerät und die Seriennummer Ihres Produkts, um diesen Vorgang abzuschließen. Detaillierte Anweisungen finden Sie unter [Offline-Aktivierung](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en).
 
 +++
+
++++ Konvertieren von Word- oder Excel-Dateien in PDF unter Windows Server nicht möglich
+
+Wenn der Benutzer versucht, Word- oder Excel-Dateien auf Microsoft Windows Server in PDF zu konvertieren, tritt folgender Fehler auf:
+
+*Fehlermeldung des primären Konverters: ALC-PDG-015-003-Das System kann die Eingabedatei nicht öffnen. Senden Sie Ihre Datei erneut oder kontaktieren Sie Ihren Systemadministrator.*
+
+Informationen zum Beheben des Problems finden Sie unter [Konvertieren von Word- oder Excel-Dateien in PDF unter Windows Server nicht möglich](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
+
 
 ## Nächste Schritte {#next-steps}
 

@@ -8,10 +8,10 @@ user-guide-title: Adobe Experience Manager 6.5, Forms-Anleitung
 breadcrumb-title: Forms-Anleitung
 user-guide-description: Digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren.
 role: User
-source-git-commit: 081b0c70ceca0502cb84d7e1b68b0b12dc45a4e7
+source-git-commit: 633a9b6d972cf8b0bb102a7efd5eeb8e0b71a19e
 workflow-type: tm+mt
-source-wordcount: '3797'
-ht-degree: 97%
+source-wordcount: '3814'
+ht-degree: 96%
 
 ---
 
@@ -330,7 +330,8 @@ ht-degree: 97%
 + Integrieren von AEM Forms mit Experience Cloud-Lösungen {#integrate-aem-forms-with-experience-cloud-solutions}
    + [Erstellen zielgerichteter Erlebnisse in AEM Forms](/help/forms/using/experience-targeting-forms.md)
    + [Messen und Verbessern der Effektivität und Konvertierung von Formularen](using/measure-improve-performance-forms-documents.md)
-   + [Konfigurieren von Analytics und Berichten](using/configure-analytics-forms-documents.md)
+   + [Analytics mithilfe von Cloud Service Framework](using/configure-analytics-forms-documents.md)
+   + [Analytics mit Adobe Launch](using/integrate-aem-forms-with-adobe-analytics.md)
    + [Anzeigen und Verstehen der Analytics-Berichte in AEM Forms](using/view-understand-aem-forms-analytics-reports.md)
    + [Erstellen und Verwalten von A/B-Test für adaptive Formulare](using/ab-testing-adaptive-forms.md)
 + Veröffentlichen und Verarbeiten von AEM Forms {#publish-process-aem-forms}
@@ -683,6 +684,7 @@ ht-degree: 97%
 + Fehlerbehebung {#troubleshooting}
    + [Einige Formularfunktionen können nicht mit bestimmten Versionen von Oracle JDK verwendet werden](using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
    + [Zusätzliche Schritte zum Abrufen einer E-Mail mit Anhang für die adaptive Forms on JEE-Version](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
+   + [Konvertieren von Word- oder Excel-Dateien in PDF unter Windows Server nicht möglich](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
 + Alte Dokumentation {#legacy-documentation}
    + [Verwenden des Service „execute script“ in AEM Forms on JEE Workbench zum Erstellen von XML-Daten](developing/building-xml.md)
    + [Komprimieren und Dekomprimieren von Dateien mithilfe eines benutzerdefinierten DSC von AEM Forms auf JEE](developing/compressing-decompressing-custom-dsc.md)

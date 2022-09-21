@@ -10,22 +10,24 @@ topic-tags: integrations
 discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 66631fd0813f623f3321072fc00fd90f7fa33d21
 workflow-type: tm+mt
-source-wordcount: '1506'
-ht-degree: 100%
+source-wordcount: '1531'
+ht-degree: 98%
 
 ---
 
-# Konfigurieren von Analytics und Berichten{#configuring-analytics-and-reports}
+# Analytics mithilfe von Cloud Service Framework {#analyticsusingcloudframework}
 
-AEM Forms ermöglicht die Integration mit Adobe Analytics, sodass Sie Leistungsmetriken für Ihre veröffentlichten Formulare und Dokumente erfassen und verfolgen können. Ziel dieser Analyse ist es, informierte, auf Daten basierende Entscheidungen zu erforderlichen Formularänderungen treffen zu können, durch die Formulare oder Dokumente benutzerfreundlicher werden.
+AEM Forms ermöglicht die Integration mit Analytics, sodass Sie Leistungsmetriken für Ihre veröffentlichten Formulare und Dokumente erfassen und verfolgen können. Ziel dieser Analyse ist es, informierte, auf Daten basierende Entscheidungen zu erforderlichen Formularänderungen treffen zu können, durch die Formulare oder Dokumente benutzerfreundlicher werden.
 
 >[!NOTE]
 >
 >Die Analysefunktion in AEM Forms ist als Teil des AEM Forms-Add-On-Pakets verfügbar. Weitere Informationen zum Installieren des Add-On-Pakets finden Sie unter [Installieren und Konfigurieren von AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
 >
 >Zusätzlich zum Add-On-Paket benötigen Sie ein Adobe Analytics-Konto und Administratorrechte auf der AEM-Instanz. Informationen zur Lösung finden Sie unter [Adobe Analytics](https://www.adobe.com/de/solutions/digital-analytics.html).
+
+Sie können auch Analysen mit Adobe Launch durchführen. Weitere Informationen zur Integration von AEM Forms in Adobe Launch finden Sie unter [Analytics mit Adobe Launch](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md).
 
 ## Übersicht {#overview}
 
@@ -186,4 +188,4 @@ Jetzt können Sie Analysen für Formulare aktivieren und einen Analysebericht er
 
    **A.** Schaltfläche; „Analytics aktivieren“ **B.** Ausgewähltes Formular
 
-   Ausführliche Informationen zur Anzeige von Formularanalyseberichten finden Sie unter [Anzeigen und Verstehen der Analyseberichte in AEM Forms](../../forms/using/view-understand-aem-forms-analytics-reports.md).
+   Ausführliche Informationen zur Anzeige von Formularanalyseberichten finden Sie unter [Anzeigen und Verstehen der Analyseberichte in AEM Forms](../../forms/using/view-understand-aem-forms-analytics-reports.md)..
