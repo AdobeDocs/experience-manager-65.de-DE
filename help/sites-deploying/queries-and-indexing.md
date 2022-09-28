@@ -12,10 +12,10 @@ discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: 7cd4b6918a8b0de68f9f5c6a79ab3b49e8ef6fc1
+source-git-commit: b27a7a1cc2295b1640520dcb56be4f3eb4851499
 workflow-type: tm+mt
-source-wordcount: '2868'
-ht-degree: 85%
+source-wordcount: '2674'
+ht-degree: 84%
 
 ---
 
@@ -288,36 +288,7 @@ Der Solr-Index dient der Volltextsuche. Er kann jedoch auch für die Index-Suche
 
 Die Integration in AEM erfolgt auf Repository-Ebene, damit Solr als möglicher Index in Oak, der neuen mit AEM ausgelieferten Repository-Implementierung, verwendet werden kann.
 
-Die Konfiguration als in die AEM-Instanz eingebetteter Server oder als Remote-Server ist möglich.
-
-### Konfigurieren von AEM mit einem eingebetteten Solr-Server {#configuring-aem-with-an-embedded-solr-server}
-
->[!CAUTION]
->
->Verwenden Sie in einer Produktionsumgebung keinen eingebetteten Solr-Server. Dieser sollte nur in einer Entwicklungsumgebung verwendet werden.
-
-AEM kann mit einem eingebetteten, über die Web-Konsole konfigurierten Solr-Server verwendet werden. In diesem Fall wird der Solr-Server in derselben JVM ausgeführt wie die AEM-Instanz, in die er eingebettet ist.
-
-Sie können den eingebetteten Solr-Server wie folgt konfigurieren:
-
-1. Wechseln Sie zur Web-Konsole unter `https://serveraddress:4502/system/console/configMgr`
-1. Suchen Sie nach **Oak Solr server provider**.
-1. Klicken Sie auf die Schaltfläche zum Bearbeiten und legen Sie im nächsten Fenster in der Dropdown-Liste den Servertyp als **Embedded Solr** fest.
-
-1. Bearbeiten Sie dann **Oak Solr embedded server configuration** und erstellen Sie eine Konfiguration. Weitere Informationen zu den Konfigurationsoptionen finden Sie auf der [Apache Solr-Website](https://lucene.apache.org/solr/documentation.html).
-
-   >[!NOTE]
-   >
-   >Die Konfiguration des Solr-Basisverzeichnisses (solr.home.path) sucht nach einem Ordner mit demselben Namen im AEM-Installationsordner.
-
-1. Öffnen Sie CRXDE und melden Sie sich mit „Admin“ an.
-1. Fügen Sie einen Knoten **solrlndex** vom Typ **oak:QueryIndexDefinition** unter **oak:index** mit folgenden Eigenschaften hinzu:
-
-   * **Typ:** `solr`(vom Typ String)
-   * **async:** `async`(vom Typ String)
-   * **reindex:** `true`(vom Typ Boolesch)
-
-1. Speichern Sie die Änderungen.
+Es kann so konfiguriert werden, dass es als Remote-Server mit der AEM-Instanz funktioniert.
 
 ### Konfigurieren von AEM mit einem einzelnen Remote-Solr-Server {#configuring-aem-with-a-single-remote-solr-server}
 

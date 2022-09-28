@@ -12,10 +12,10 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: e8320b1dac681fd2c9e749344e8c126487d840ba
+source-git-commit: 4c3cc888a7590fdbee9b7d7e441602e4ae3f54b0
 workflow-type: tm+mt
-source-wordcount: '3557'
-ht-degree: 62%
+source-wordcount: '3511'
+ht-degree: 63%
 
 ---
 
@@ -59,8 +59,6 @@ Die folgenden OSGi-Konfigurationseinstellungen (nach Bundle aufgelistet) sind f�
 
 * Die **Administratorkennwort** nach der Installation geändert werden, um sicherzustellen, dass die [security](/help/sites-administering/security-checklist.md) Ihrer Instanz.
 * Andere Änderungen sollten nicht erforderlich sein und müssen mit Vorsicht erfolgen, da sie den Zugriff auf das Repository beeinträchtigen können.
-
-**Wiki Mail Service** Konfigurieren Sie die E-Mail-Einstellungen für E-Mails, die von einem Wiki gesendet werden.
 
 **Apache Felix OSGi Management Console** Konfigurieren:
 
@@ -440,10 +438,6 @@ Steuert den HTML-Parser für den CQ-Rewriter.
 **Day Commons JDBC Connections Pool** Konfigurieren Sie den Zugriff auf eine externe Datenbank, die als Quelle für Inhalte verwendet wird.
 
 Dies ist eine Factory-Konfiguration, sodass mehrere Instanzen konfiguriert werden. 
-
-**Adobe CQ Media DPS-Sitzungsdienst** Verwalten von DPS-Sitzungen zur Verwendung mit Veröffentlichungen.
-
-Insbesondere können Sie `dps.session.service.url.name` konfigurieren. Die Standardeinstellung ist [https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions](https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions)
 
 **CDN Rewriter** Die Kommunikation zwischen AEM und einem CDN muss sichergestellt sein, damit Assets/Binärdateien auf sichere Weise an den Endbenutzer bereitgestellt werden. Dies beinhaltet zwei Aufgaben:
 
