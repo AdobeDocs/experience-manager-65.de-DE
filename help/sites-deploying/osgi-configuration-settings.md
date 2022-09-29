@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 4c3cc888a7590fdbee9b7d7e441602e4ae3f54b0
+source-git-commit: 71c318e59f39b091f52650853be2d472354c2f1c
 workflow-type: tm+mt
-source-wordcount: '3511'
+source-wordcount: '3474'
 ht-degree: 63%
 
 ---
@@ -243,11 +243,6 @@ Falls ein konfigurierter Pfadwert mit einem Schrägstrich endet, wird die gesamt
 * **Script User**: Mit dieser optionalen Eigenschaft kann das Repository-Benutzerkonto angegeben werden, das zum Lesen der Skripts verwendet wird. Falls kein Konto angegeben ist, wird standardmäßig das `admin`-Benutzerkonto verwendet.
 
 * **Default Extensions**: Die Liste der Erweiterungen, für die das Standardverhalten verwendet wird. Dies bedeutet, dass das letzte Pfadsegment des Ressourcentyps als Skriptname verwendet werden kann.
-
-**Day Commons GFX Font Helper** Beim Rendern von Grafiken können Sie DrawText verwenden, um Text einzubetten. Dazu können Sie auch Ihre eigenen Schriftarten installieren:
-
-* Definieren Sie die **Schriftpfad** , um nach projektspezifischen Schriftarten zu suchen.
-Beispiel: `/apps/myapp/fonts`.
 
 **Apache HTTP Components Proxy Configuration** Proxy-Konfiguration für sämtlichen Code, der den Apache-HTTP-Client verwendet, der beim Erstellen eines HTTP verwendet wird; z. B. bei der Replikation.
 
