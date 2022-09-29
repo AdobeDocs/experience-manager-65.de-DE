@@ -12,10 +12,10 @@ discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 feature: Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
-source-git-commit: 1e301f3991a18a594ac10a6548a0a645327dd4dd
+source-git-commit: f39102c938107b8ce01325499f29f00e287b5bcc
 workflow-type: tm+mt
 source-wordcount: '1995'
-ht-degree: 95%
+ht-degree: 91%
 
 ---
 
@@ -99,7 +99,7 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
 1. Warum werden einige Schriften im HTML-Formular in anderer Form angezeigt als beim Entwerfen des Formulars?
 
-   Antwort: In HTML5-Formularen werden keine Schriften eingebettet (im Gegensatz zu PDF-Formularen, in denen Schriften in das Formular eingebettet sind). Damit die HTML-Version eines Formulars erwartungsgemäß dargestellt wird, stellen Sie sicher, dass Die in der XDP angegebenen Schriftarten auf dem Server und dem Clientcomputer verfügbar sind. Wenn die erforderlichen Schriftarten nicht auf dem Server verfügbar sind, werden Ersatzschriftarten verwendet. Wenn Sie darüber hinaus in der Formularvorlage Schriftarten verwenden, die auf dem Client-Gerät nicht verfügbar sind, werden zur Darstellung von diesem Text die Standardschriftarten des Browsers verwendet.
+   Antwort: HTML5 Forms lässt das Einbetten von Schriftarten nicht zu (im Gegensatz zu PDF forms, in die Schriftarten in das Formular eingebettet sind). Damit die HTML-Version eines Formulars erwartungsgemäß wiedergegeben werden kann, stellen Sie sicher, dass die Schriftarten im CRX-Repository (AEM Content Repository) Ihres AEM Forms-Servers und auf dem Computer verfügbar sind, auf dem AEM Designer installiert ist. Wenn die Schriftarten nicht im CRX-Repository Ihres AEM Forms-Servers oder an dem Speicherort verfügbar sind, an dem AEM Designer installiert ist, wird das Formular mit Fallback-Schriftarten wiedergegeben.
 
 1. Werden die Attribute „vAlign“ und „hAlign“ in HTML-Formularen unterstützt?
 
