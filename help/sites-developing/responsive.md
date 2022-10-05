@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4472da2e9aa0b45e0d5f03bfdc53a2748d82cdb3
 workflow-type: tm+mt
-source-wordcount: '5317'
+source-wordcount: '5351'
 ht-degree: 68%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 68%
 >[!NOTE]
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering für Einzelseiten-Apps erfordern (z. B. _React_). [Weitere Informationen](/help/sites-developing/spa-overview.md)
+
+>[!NOTE]
+>
+>Verschiedene Beispiele basieren auf dem Geometrixx-Beispielinhalt, der nicht mehr mit AEM geliefert wird und durch We.Retail ersetzt wurde. Siehe Dokument . [We.Retail-Referenzimplementierung](/help/sites-developing/we-retail.md#we-retail-geometrixx) für Informationen zum Herunterladen und Installieren von Geometrixx.
 
 Gestalten Sie Ihre Webseiten so, dass sie sich dem Client-Darstellungsfeld anpassen, auf dem sie angezeigt werden. Responsives Design ermöglicht die effektive Darstellung derselben Web-Seiten auf verschiedenen Geräten in beiden Ausrichtungen. Die folgende Grafik zeigt eine Reihe von Möglichkeiten, wie eine Seite auf Änderungen der Fenstergröße reagieren kann:
 
