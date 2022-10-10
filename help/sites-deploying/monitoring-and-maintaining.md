@@ -12,9 +12,9 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: fd9661ee94edf8f88a93ae35ba2563b3021add4d
+source-git-commit: 85987222e8b216f22ae1fec4e080488d01f23063
 workflow-type: tm+mt
-source-wordcount: '5901'
+source-wordcount: '5905'
 ht-degree: 78%
 
 ---
@@ -128,14 +128,14 @@ Um Versionen einer Website zu löschen, gehen Sie folgendermaßen vor:
    ![Konfiguration der Versionsbereinigung](assets/version-purge-configuration.png)
 
    * **Pfade bereinigen**
-Legen Sie den Startpfad des zu löschenden Inhalts fest (z. B. 
-`/content/wknd`).
+Legen Sie den Startpfad des zu löschenden Inhalts fest. Beispiel: 
+`/content/wknd`.
 
       >[!CAUTION]
       >
-      >Es wird dringend empfohlen, mehrere Pfade für jede Ihrer Websites zu definieren.
+      >Es wird dringend empfohlen, für jede Ihrer Websites mehrere Pfade zu definieren.
       >
-      >Wenn Sie einen Pfad mit zu vielen untergeordneten Elementen definieren, wird die Zeit für die Durchführung der Bereinigung verlängert.
+      >Wenn Sie einen Pfad mit zu vielen untergeordneten Elementen definieren, kann die für die Durchführung der Bereinigung benötigte Zeit erheblich verlängert werden.
 
    * **Versionen rekursiv bereinigen**
 
