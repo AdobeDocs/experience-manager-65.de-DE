@@ -12,10 +12,10 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: ad0f5f536657a90a8b2476b43576060f3dc85868
 workflow-type: tm+mt
-source-wordcount: '5866'
-ht-degree: 82%
+source-wordcount: '5868'
+ht-degree: 78%
 
 ---
 
@@ -100,48 +100,68 @@ In diesem Abschnitt werden die Wartungsaufgaben im Zusammenhang mit der Versions
 
 ### Übersicht {#overview}
 
-Das Tool **Versionsbereinigung** ist in der **[Tools](/help/sites-administering/tools-consoles.md)-Konsole** unter **„Versionsverwaltung“** oder direkt unter folgender URL verfügbar:
-
-`https://<server>:<port>/etc/versioning/purge.html`
-
-![screen_shot_2012-03-15at14418pm](assets/screen_shot_2012-03-15at14418pm.png)
-
-**Startpfad** Ein absoluter Pfad, auf dem die Bereinigung durchgeführt werden muss. Sie können den Startpfadauswählen, indem Sie auf den Navigatorbaum im Repository klicken.
-
-**Rekursiv** Beim Bereinigen von Daten können Sie zwischen der Ausführung des Vorgangs auf einem Knoten oder auf einer ganzen Hierarchie wählen, indem Sie Rekursiv auswählen. Im letzteren Fall definiert der angegebene Pfad den Stammknoten der Hierarchie.
-
-**Maximale Anzahl an beizubehaltenden Versionen** Die maximale Anzahl von Versionen, die für einen Knoten beibehalten werden sollen. Wenn die Anzahl diesen Wert überschreitet, werden die ältesten Versionen gelöscht.
-
-**Maximales Versionsalter** Das maximale Alter der Version eines Knotens. Wenn das Alter einer Version diesen Wert überschreitet, wird sie gelöscht.
-
-**Trockenlauf** Da das Entfernen von Versionen Ihres Inhalts eindeutig ist und nicht ohne Wiederherstellen eines Backups rückgängig gemacht werden kann, bietet das Tool Versionen bereinigen einen Trockenlaufmodus, mit dem Sie die bereinigten Versionen in der Vorschau anzeigen können. Klicken Sie auf Probelauf, um einen Probelauf des Bereinigungsvorgangs zu starten.
-
-**Bereinigung** Starten Sie die Bereinigung der Versionen auf dem Knoten, der durch den Startpfad definiert wird.
+Die **Versionen bereinigen** -Tool ist als wöchentliche Wartungsaufgabe verfügbar. Vor der erstmaligen Verwendung muss sie hinzugefügt und dann konfiguriert werden. Danach kann er auf Anfrage oder wöchentlich ausgeführt werden.
 
 ### Bereinigen von Versionen einer Website {#purging-versions-of-a-web-site}
 
 Um Versionen einer Website zu löschen, gehen Sie folgendermaßen vor:
 
-1. Navigieren Sie zur **[Tools](/help/sites-administering/tools-consoles.md)****-Konsole**, wählen Sie **„Versionsverwaltung“** aus und doppelklicken Sie auf **„Versionen bereinigen“**.
-1. Legen Sie den Startpfad für den zu löschenden Inhalt fest (z. B. `/content/geometrixx-outdoors`).
+1. Navigieren Sie zum **[Instrumente](/help/sites-administering/tools-consoles.md)** **console** auswählen **Vorgang**, **Wartung**, dann **Wöchentliches Wartungsfenster**.
 
-   * Falls Sie nur den durch den Pfad definierten Knoten löschen möchten, deaktivieren Sie die Option **„Rekursiv“**.
-   * Falls Sie den durch den Pfad definierten Knoten und alle untergeordneten Knoten bereinigen möchten, aktivieren Sie die Option **„Rekursiv“**.
+1. Auswählen **+ Hinzufügen** aus der oberen Symbolleiste.
 
-1. Legen Sie die maximale Anzahl von Versionen (für jeden Knoten) fest, die Sie beibehalten möchten. Lassen Sie das Feld frei, falls diese Einstellung nicht verwendet werden soll.
+   ![Versionsbereinigung hinzufügen](assets/version-purge-add.png)
 
-1. Legen Sie das maximale Versionsalter in Tagen (für jeden Knoten) fest, den Sie beibehalten möchten. Lassen Sie das Feld frei, falls diese Einstellung nicht verwendet werden soll.
+1. Auswählen **Versionsbereinigung** aus der Dropdown-Liste im **Neue Aufgabe hinzufügen** angezeigt. Dann **Speichern**.
 
-1. Klicken Sie auf **Probelauf**, um eine Vorschau des Bereinigungsvorgangs anzuzeigen.
-1. Klicken Sie auf **Löschen**, um den Vorgang zu starten.
+   ![Versionsbereinigung hinzufügen](assets/version-purge-add-new-task.png)
+
+1. Die **Versionsbereinigung** -Aufgabe hinzugefügt. Verwenden Sie die Kartenaktionen, um:
+   * Auswählen - zeigt zusätzliche Aktionen in der oberen Symbolleiste an
+   * Ausführen - um die konfigurierte Bereinigung sofort auszuführen
+   * Konfigurieren - zum Konfigurieren der wöchentlichen Bereinigungsaufgabe
+
+   ![Aktionen zur Versionsbereinigung](assets/version-purge-actions.png)
+
+1. Wählen Sie die **Konfigurieren** Aktion zum Öffnen der Web-Konsole für **Day CQ WCM-Versionsbereinigungsaufgabe**, wo Sie Folgendes konfigurieren können:
+
+   ![Konfiguration der Versionsbereinigung](assets/version-purge-configuration.png)
+
+   * **Pfade bereinigen**
+Legen Sie den Startpfad des zu löschenden Inhalts fest (z. B. 
+`/content/geometrixx-outdoors`).
+
+   * **Versionen rekursiv bereinigen**
+
+      * Heben Sie die Auswahl auf, wenn Sie nur den durch Ihren Pfad definierten Knoten bereinigen möchten.
+      * Wählen Sie aus, ob Sie den durch Ihren Pfad und dessen untergeordnete Elemente definierten Knoten bereinigen möchten.
+   * **Maximale Versionsanzahl**
+Legen Sie die maximale Anzahl von Versionen (für jeden Knoten) fest, die Sie beibehalten möchten. Lassen Sie das Feld frei, falls diese Einstellung nicht verwendet werden soll.
+
+   * **Mindestanzahl Versionen**
+Legen Sie die Mindestanzahl von Versionen (für jeden Knoten) fest, die Sie beibehalten möchten. Lassen Sie das Feld frei, falls diese Einstellung nicht verwendet werden soll.
+
+   * **Maximales Versionsalter**
+Legen Sie das maximale Versionsalter in Tagen fest (für jeden Knoten, den Sie beibehalten möchten. Lassen Sie das Feld frei, falls diese Einstellung nicht verwendet werden soll.
+   Dann **Speichern**.
+
+1. Navigieren Sie zum **Wöchentliches Wartungsfenster** Fenster und wählen Sie **Ausführen** , um den Prozess sofort zu starten.
 
 >[!CAUTION]
 >
+>Sie können das Dialogfeld &quot;Klassische Benutzeroberfläche&quot;verwenden, um eine [Trockenlauf](#analyzing-the-console) Ihrer Konfiguration:
+>
+>* http://localhost:4502/etc/versioning/purge.html
+>
 >Bereinigte Knoten können ohne Wiederherstellung des Repository nicht zurückgesetzt werden. Da eine fehlerfreie Konfiguration sehr wichtig ist, empfiehlt es sich, vor einer Bereinigung immer einen Probelauf durchzuführen.
 
-### Analysieren der Konsole {#analyzing-the-console}
+#### Trockenlauf - Analyse der Konsole {#analyzing-the-console}
 
-Beim den Vorgängen **Probelauf** und **Löschen** werden alle Knoten aufgelistet, die verarbeitet werden. Während des Vorgangs kann ein Knoten einen der folgenden Statuswerte haben: 
+Die klassische Benutzeroberfläche bietet eine **Trockenlauf** Option aus:
+
+* http://localhost:4502/etc/versioning/purge.html
+
+Der Prozess listet alle Knoten auf, die verarbeitet wurden. Während des Vorgangs kann ein Knoten einen der folgenden Statuswerte haben: 
 
 * `ignore (not versionnable)`: Der Knoten unterstützt keine Versionierung und wird während des Prozesses ignoriert.
 
@@ -649,7 +669,7 @@ Einige von diesen sind von Ihrem Betriebssystem abhängig.
 
 ### Interpretieren von request.log {#interpreting-the-request-log}
 
-In dieser Datei werden grundlegende Informationen zu allen Anforderungen an AEM registriert. Sie können daraus wertvolle Schlüsse ziehen.
+In dieser Datei werden grundlegende Informationen zu allen Anforderungen an AEM registriert. Daraus lassen sich wertvolle Schlussfolgerungen ziehen.
 
 `request.log` ist eine integrierte Möglichkeit, herauszufinden, wie lange Anforderungen brauchen. Zu Entwicklungszwecken ist es hilfreich, den Befehl `tail -f` auf `request.log` anzuwenden und nach langen Systemreaktionen zu suchen. Für das Analysieren einer größeren `request.log` empfiehlt sich die [Verwendung von `rlog.jar`, damit Sie nach Systemreaktionszeiten filtern und diese sortieren können](#using-rlog-jar-to-find-requests-with-long-duration-times).
 
@@ -664,7 +684,7 @@ Im Anforderungsprotokoll werden alle Anfragen zusammen mit der jeweiligen Antwor
 09:43:41 [66] <- 200 text/html 797ms
 ```
 
-Durch Addieren aller GET-Einträge über einen bestimmten Zeitraum (z. B. über mehrere 24-Stunden-Zeiträume) erhalten Sie aussagekräftige Informationen zum durchschnittlichen Traffic auf Ihrer Website.
+Indem Sie alle Einträge innerhalb bestimmter Zeiträume (z. B. über verschiedene Zeiträume von 24 Stunden) auflisten, können Sie Aussagen zum durchschnittlichen Traffic auf Ihrer Website machen.
 
 #### Überwachung der Antwortzeiten mit request.log {#monitoring-response-times-with-the-request-log}
 
