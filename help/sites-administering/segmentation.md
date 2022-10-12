@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d546462b4b78a743e047dcfea5fc2dc92d131bb5
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 97%
+source-wordcount: '1787'
+ht-degree: 94%
 
 ---
 
@@ -35,9 +35,13 @@ AEM ermöglicht Ihnen die einfache Personalisierung Ihres Benutzererlebnisses. A
 
 Die [Zielgruppen-Konsole](/help/sites-authoring/managing-audiences.md) wird verwendet, um Segmente für ContextHub oder ClientContext sowie Zielgruppen für Ihr Adobe Target-Konto zu verwalten. Diese Dokumentation befasst sich mit der Verwaltung von Segmenten für ContextHub. Weitere Informationen zu [ClientContext-Segmenten](/help/sites-administering/campaign-segmentation.md) und Adobe Target-Segmenten finden Sie in der entsprechenden Dokumentation.
 
-Zum Zugriff auf Ihre Segmente wählen Sie in der globalen Navigation die Optionen **Navigation > Personalisierung > Zielgruppen** aus.
+Um auf Ihre Segmente zuzugreifen, müssen Sie Ihre Konfiguration auswählen. Wählen Sie in der globalen Navigation **Navigation > Personalisierung > Zielgruppen**. Ihnen werden die verfügbaren Konfigurationen angezeigt:
 
-![chlimage_1-310](assets/chlimage_1-310.png)
+![Zielgruppen - Konfigurationen](assets/segmentation-access-confs.png)
+
+Wählen Sie Ihre Konfiguration aus, um die Segmente anzuzeigen, z. B. WKND Site:
+
+![Zielgruppen - Segmente](assets/segmentation-access-segments.png)
 
 ## Segmenteditor {#segment-editor}
 
@@ -130,7 +134,7 @@ Die folgenden Verweise sind standardmäßig für die direkte Verknüpfung eines 
 
 So legen Sie Ihr neues Segment fest:
 
-1. Navigieren Sie nach dem [Zugriff auf die Segmente](/help/sites-administering/segmentation.md#accessing-segments) [zu dem Ordner](#organizing-segments), in dem Sie das Segment erstellen möchten, oder belassen Sie es im Stammverzeichnis.
+1. Nachher [Zugriff auf Segmente](/help/sites-administering/segmentation.md#accessing-segments), [Navigieren zum Ordner](#organizing-segments) wo Sie das Segment erstellen möchten.
 
 1. Klicken oder tippen Sie auf die Schaltfläche Erstellen und wählen Sie **Erstellen eines ContextHub-Segments**.
 
