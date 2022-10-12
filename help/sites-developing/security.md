@@ -3,17 +3,11 @@ title: Sicherheit
 seo-title: Security
 description: Anwendungssicherheit beginnt während der Entwicklung
 seo-description: Application Security starts during the development phase
-uuid: efd5f3bc-da07-4fc8-a6ce-f1e6f5084c9e
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
-discoiquuid: d2267663-6c1d-413c-9862-e82e21ae6906
 exl-id: c4f7f45f-224b-4fc3-b4b0-f5b21b8a466f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c55b70ec11842d3f7d82adbf552b2624c1dcc599
 workflow-type: tm+mt
 source-wordcount: '426'
-ht-degree: 75%
+ht-degree: 69%
 
 ---
 
@@ -23,7 +17,7 @@ Anwendungssicherheit beginnt während der Entwicklung. Adobe empfiehlt die folge
 
 ## Verwenden Sie Sitzungsanfragen {#use-request-session}
 
-Gemäß dem Grundsatz der geringsten Berechtigungen empfiehlt Adobe, dass jeder Repository-Zugriff über die mit der Benutzeranfrage verknüpfte Sitzung und eine ordnungsgemäße Zugriffskontrolle erfolgt.
+Gemäß dem Grundsatz der geringsten Berechtigung empfiehlt Adobe, dass jeder Repository-Zugriff über die mit der Benutzeranfrage verknüpfte Sitzung und eine ordnungsgemäße Zugriffskontrolle erfolgt.
 
 ## Schutz vor Cross-Site Scripting (XSS) {#protect-against-cross-site-scripting-xss}
 
@@ -63,4 +57,4 @@ Mit den Standardberechtigungen:
 
 ## Schützen Sie sich vor Cross-Site Request Forgery-Angriffen {#protect-against-cross-site-request-forgery-attacks}
 
-Im [Sling Referrer Filter](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery)-Abschnitt der Sicherheits-Checkliste und in der [Dokumentation zum CSRF-Schutz-Framework](/help/sites-developing/csrf-protection.md) finden Sie ausführliche Informationen zu den Sicherheitsmechanismen, die AEM nutzt, um CSRF-Angriffe abzuwehren.
+Weitere Informationen zu den Sicherheitsmechanismen, die AEM zur Minderung von CSRF-Angriffen einsetzen, finden Sie in der [Sling Referrer Filter](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) der Sicherheitscheckliste und der [Dokumentation zum CSRF Protection Framework](/help/sites-developing/csrf-protection.md).
