@@ -10,10 +10,10 @@ content-type: reference
 discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e13953bed73481738832a00a7563a07149c2d3bd
 workflow-type: tm+mt
-source-wordcount: '2088'
-ht-degree: 93%
+source-wordcount: '2079'
+ht-degree: 94%
 
 ---
 
@@ -108,7 +108,7 @@ NPM-Modul: [@adobe/aem-response-editable-components](https://www.npmjs.com/packa
 
 #### Angular {#angular}
 
-npm-Modul: bald
+NPM-Modul: [@adobe/aem-angular-editable-components](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 ## Haupt-Services und -komponenten {#main-services-and-components}
 
@@ -166,8 +166,6 @@ Die Komponente „Responsives Raster“ sollte vorab ihrem AEM-Gegenstück zugeo
 
 * `gridClassNames:` stellt Klassennamen für das responsive Raster bereit
 * `columnClassNames:` stellt Klassennamen für die responsive Spalte bereit
-
-Siehe auch npm-Ressource [@adobe/aem-response-editable-components#srccomponentsresponsivegridjsx](https://www.npmjs.com/package/@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx)
 
 #### Platzhalter des responsiven Rasters {#placeholder-of-the-reponsive-grid}
 
