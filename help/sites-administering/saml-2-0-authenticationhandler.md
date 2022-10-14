@@ -10,10 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: 5df1579a341f70c93a3c4b43a278bc99794a4652
+source-git-commit: 2a889134943d75d147af6d06ea67397f75158d40
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 58%
+source-wordcount: '825'
+ht-degree: 57%
 
 ---
 
@@ -33,8 +33,6 @@ Dieser Handler speichert die verschlüsselte SAML-Antwortnachricht im Benutzerkn
 >[!NOTE]
 >
 >[Hier](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html?lang=de) finden Sie eine Demonstration zur Integration von AEM und SAML.
->
->Einen End-to-End-Community-Artikel finden Sie [hier](https://helpx.adobe.com/de/experience-manager/using/aem63_saml.html): Integrieren von SAML mit „Adobe Experience Manager“.
 
 ## Konfigurieren des SAML 2.0-Authentifizierungs-Handlers {#configuring-the-saml-authentication-handler}
 
