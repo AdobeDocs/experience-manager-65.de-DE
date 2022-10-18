@@ -11,9 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: 51e36e874fe84eab8558271b5c84b1c2e2f58ef0
+source-git-commit: e961ce67e5b1a71e3af6dded304d99cd9e6896bc
 workflow-type: tm+mt
-source-wordcount: '4034'
+source-wordcount: '4033'
 ht-degree: 99%
 
 ---
@@ -40,16 +40,16 @@ Sie können bestimmte Aktionen durchführen, ohne die Aufgabe zu öffnen, indem 
 
 Welche Werkzeuge Ihnen beim Öffnen und Bearbeiten von Aufgaben zur Verfügung stehen, hängt von der jeweiligen Aufgabe ab. Für unterschiedliche Aufgaben müssen Sie unterschiedliche Aktionen durchführen. Aus diesem Grund steht Ihnen eine entsprechende Auswahl von Werkzeuge zur Verfügung. Im Folgenden sind die typischen Aufgaben, die Sie möglicherweise erhalten können, beschrieben.
 
-**Informationen bereitstellen:** Sie erhalten eine Aufgabe, bei der Sie ein Formular ausfüllen und senden müssen.
+* **Informationen bereitstellen:** Sie erhalten eine Aufgabe, bei der Sie ein Formular ausfüllen und senden müssen.
 
-**Informationen überprüfen:** Sie erhalten eine Aufgabe, bei der Sie die Informationen überprüfen und den Inhalt abzeichnen müssen.
+* **Informationen überprüfen:** Sie erhalten eine Aufgabe, bei der Sie die Informationen überprüfen und den Inhalt abzeichnen müssen.
 
-**Überprüfung durch mehrere Benutzer:** Sie erhalten eine Aufgabe gleichzeitig mit anderen Benutzern. Sie und die anderen Benutzer müssen Informationen eingeben, den Inhalt überprüfen oder beides. Für diesen Aufgabentyp stehen die folgenden Werkzeuge zur Verfügung:
+* **Überprüfung durch mehrere Benutzer:** Sie erhalten eine Aufgabe gleichzeitig mit anderen Benutzern. Sie und die anderen Benutzer müssen Informationen eingeben, den Inhalt überprüfen oder beides. Für diesen Aufgabentyp stehen die folgenden Werkzeuge zur Verfügung:
 
-* Anzeigen der Aufgabenanweisungen
-* Anzeigen des Fertigstellungsstatus aller Benutzer, denen die Aufgabe zugewiesen wurde
-* Anzeigen der Kommentare aller Benutzer, denen die Aufgabe zugewiesen wurde
-* Hinzufügen eigener Kommentare zu der Aufgabe
+   * Anzeigen der Aufgabenanweisungen
+   * Anzeigen des Fertigstellungsstatus aller Benutzer, denen die Aufgabe zugewiesen wurde
+   * Anzeigen der Kommentare aller Benutzer, denen die Aufgabe zugewiesen wurde
+   * Hinzufügen eigener Kommentare zu der Aufgabe
 
 Weitere Werkzeuge, die bei den oben angegebenen Aufgaben verfügbar sind:
 
@@ -106,17 +106,17 @@ Wenn Sie eine Aufgabe von einer Gruppenliste oder freigegebenen Liste anfordern,
 
 Nach dem Öffnen einer Aufgabe hängt es von der Aufgabe ab, welche Registerkarten im Hauptbereich angezeigt werden und welche Werkzeuge Ihnen zur Verfügung stehen. Die entsprechenden Registerkarten werden unten beschrieben:
 
-**Aufgabenzusammenfassung**: Wenn eine Aufgabe geöffnet wird, können Sie im Bereich „Aufgabenzusammenfassung“ Informationen zur Aufgabe, falls vorhanden, über eine URL anzeigen, die im Prozess im Vorgang zum Zuweisen einer Aufgabe angegeben wurde. Mithilfe dieser Aufgabenzusammenfassung können zusätzliche und wichtige Informationen zu einer Aufgabe angezeigt werden, die für den Endbenutzer von AEM Forms Workspace nützlich sind. Diese Registerkarte ist nicht verfügbar, wenn die Aufgabenzusammenfassungs-URL nicht vorhanden ist.
+* **Aufgabenzusammenfassung**: Wenn eine Aufgabe geöffnet wird, können Sie im Bereich „Aufgabenzusammenfassung“ Informationen zur Aufgabe, falls vorhanden, über eine URL anzeigen, die im Prozess im Vorgang zum Zuweisen einer Aufgabe angegeben wurde. Mithilfe dieser Aufgabenzusammenfassung können zusätzliche und wichtige Informationen zu einer Aufgabe angezeigt werden, die für den Endbenutzer von AEM Forms Workspace nützlich sind. Diese Registerkarte ist nicht verfügbar, wenn die Aufgabenzusammenfassungs-URL nicht vorhanden ist.
 
-**Details**: Bietet einige Informationen zur aktuellen Aufgabe und dem Prozess, zu dem sie gehört.
+* **Details**: Bietet einige Informationen zur aktuellen Aufgabe und dem Prozess, zu dem sie gehört.
 
-**Formular**: Zeigt das der Aufgabe zugeordnete Formular an. Formulare können in vielen verschiedenen Dateiformaten wie PDF, HTML, Guide und SWF vorliegen. Das Formular kann wie ein normales druckbares oder webbasiertes Formular aussehen oder Sie durch eine Folge von Bildschirmen im Assistentenformat begleiten, um Informationen zu erfassen.
+* **Formular**: Zeigt das der Aufgabe zugeordnete Formular an. Formulare können in vielen verschiedenen Dateiformaten wie PDF, HTML, Guide und SWF vorliegen. Das Formular kann wie ein normales druckbares oder webbasiertes Formular aussehen oder Sie durch eine Folge von Bildschirmen im Assistentenformat begleiten, um Informationen zu erfassen.
 
-**Verlauf**: Listet die Aufgaben, die Teil der Prozessinstanz sind, sowie das zugeordnete Formular und die Zuweisungen und Anlagen für jede Aufgabe auf.
+* **Verlauf**: Listet die Aufgaben, die Teil der Prozessinstanz sind, sowie das zugeordnete Formular und die Zuweisungen und Anlagen für jede Aufgabe auf.
 
-**Anlagen**: Zeigt vorhandene Anlagen, die der Aufgabe zugeordnet sind, an und fügt ggf. Anlagen hinzu.
+* **Anlagen**: Zeigt vorhandene Anlagen, die der Aufgabe zugeordnet sind, an und fügt ggf. Anlagen hinzu.
 
-**Notizen**: Zeigt die vorhandenen Notizen, die der Aufgabe zugeordnet sind, an und fügt ggf. Notizen hinzu.
+* **Notizen**: Zeigt die vorhandenen Notizen, die der Aufgabe zugeordnet sind, an und fügt ggf. Notizen hinzu.
 
 Die Werkzeuge, die Ihnen angezeigt werden, und die Aktionen, die sie ausführen können, wenn Sie an einer Aufgabe arbeiten, werden unten beschrieben.
 
@@ -283,7 +283,7 @@ Die E-Mail-Nachrichten können einen Link enthalten, über den die Aufgabe in AE
 >
 >* Informationen zum Konfigurieren des Arbeitsbereichs für die Verwendung der entsprechenden E-Mail-Vorlagen finden Sie im [Administratorhandbuch zu AEM Forms JEE](https://help.adobe.com/de-DE/AEMForms/6.1/AdminHelp/).
 >
->* Wenn Entwürfe nach dem Senden der Aufgabe im AEM Forms-Arbeitsbereich weitergeleitet werden, werden E-Mail-Benachrichtigungen gesendet. Wenn die Entwürfe vom Startpunkt des AEM Forms Workspace weitergeleitet werden, werden keine E-Mail-Benachrichtigungen gesendet.
+>* Wenn Entwürfe nach dem Senden der Aufgabe im AEM Forms-Arbeitsbereich weitergeleitet werden, werden E-Mail-Benachrichtigungen gesendet. Wenn Entwürfe vom Startpunkt des AEM Forms Workspace weitergeleitet werden, werden keine E-Mail-Benachrichtigungen gesendet.
 
 
 Wenn Sie eine Aufgabe per E-Mail abschließen, wird die Aufgabe aus Ihrer Aufgabenliste in AEM Forms Workspace entfernt.
