@@ -11,10 +11,10 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 51e36e874fe84eab8558271b5c84b1c2e2f58ef0
 workflow-type: tm+mt
-source-wordcount: '3999'
-ht-degree: 100%
+source-wordcount: '4034'
+ht-degree: 99%
 
 ---
 
@@ -281,7 +281,10 @@ Die E-Mail-Nachrichten können einen Link enthalten, über den die Aufgabe in AE
 
 >[!NOTE]
 >
->Informationen zum Konfigurieren des Arbeitsbereichs für die Verwendung der entsprechenden E-Mail-Vorlagen finden Sie im [Administratorhandbuch zu AEM Forms JEE](https://help.adobe.com/de-DE/AEMForms/6.1/AdminHelp/).
+>* Informationen zum Konfigurieren des Arbeitsbereichs für die Verwendung der entsprechenden E-Mail-Vorlagen finden Sie im [Administratorhandbuch zu AEM Forms JEE](https://help.adobe.com/de-DE/AEMForms/6.1/AdminHelp/).
+>
+>* Wenn Entwürfe nach dem Senden der Aufgabe im AEM Forms-Arbeitsbereich weitergeleitet werden, werden E-Mail-Benachrichtigungen gesendet. Wenn die Entwürfe vom Startpunkt des AEM Forms Workspace weitergeleitet werden, werden keine E-Mail-Benachrichtigungen gesendet.
+
 
 Wenn Sie eine Aufgabe per E-Mail abschließen, wird die Aufgabe aus Ihrer Aufgabenliste in AEM Forms Workspace entfernt.
 
