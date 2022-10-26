@@ -10,7 +10,7 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: d303a374fd4ab8e398fd909dec4ce6155a2163f5
+source-git-commit: b48b7631c501cea7e4ef1133a452fb6984e4547f
 workflow-type: tm+mt
 source-wordcount: '3573'
 ht-degree: 93%
@@ -489,6 +489,16 @@ Beim Hochladen eines Pakets wird nur der Paketinhalt zum Repository hinzugefügt
 
 Vor der Installation Ihres Pakets erstellt Package Manager automatisch ein Snapshot-Paket, das den Inhalt enthält, der überschrieben wird. Dieser Snapshot wird wieder installiert, wenn Sie das Paket deinstallieren.
 
+>[!CAUTION]
+>
+>* Wenn Sie digitale Assets installieren, müssen Sie:
+   >  als Erstes den WorkflowLauncher deaktivieren.
+   >  Verwenden Sie die Menüoption „Komponenten“ der OSGi-Konsole zur Deaktivierung der Option
+   >  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
+>* als Nächstes den WorkflowLauncher reaktivieren, wenn die Installation abgeschlossen ist.
+>
+>Die Deaktivierung des WorkflowLauncher gewährleistet, dass die Assets nach der Installation nicht (versehentlich) vom Asset-Importer-Framework verändert werden.
+
 1. [Greifen Sie auf Package Manager zu.](#accessing)
 
 1. Öffnen Sie in der Paketliste die Paketdetails des Pakets, das Sie installieren möchten, indem Sie auf den Paketnamen klicken.
@@ -506,16 +516,6 @@ Vor der Installation Ihres Pakets erstellt Package Manager automatisch ein Snaps
 1. Klicken Sie auf **Installieren**.
 
 1. Im Aktivitätsprotokoll wird der Fortschritt der Installation beschrieben.
-
->[!CAUTION]
->
->* Wenn Sie digitale Assets installieren, müssen Sie:
-   >  als Erstes den WorkflowLauncher deaktivieren.
-   >  Verwenden Sie die Menüoption „Komponenten“ der OSGi-Konsole zur Deaktivierung der Option
-   >  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
->* als Nächstes den WorkflowLauncher reaktivieren, wenn die Installation abgeschlossen ist.
->
->Die Deaktivierung des WorkflowLauncher gewährleistet, dass die Assets nach der Installation nicht (versehentlich) vom Asset-Importer-Framework verändert werden.
 
 Sobald die Installation abgeschlossen und erfolgreich war, wird die Paketliste aktualisiert und das Wort **Installiert** im Paketstatus angezeigt.
 
