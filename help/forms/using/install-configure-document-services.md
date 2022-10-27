@@ -8,12 +8,13 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 652f2f9b55857b8962f5bfd4edb85f3700866485
+source-git-commit: b80886f1e45e0ed65ce2309ef6ea43bfa373a52b
 workflow-type: tm+mt
-source-wordcount: '5535'
+source-wordcount: '5529'
 ht-degree: 65%
 
 ---
+
 
 # Installieren und Konfiguration von Document Services {#installing-and-configuring-document-services}
 
@@ -286,14 +287,6 @@ Führen Sie die folgenden Schritte aus, um den IBM® SSL-Socketanbieter zu konfi
 
    `-Djava.security.properties= [path of newly created Java.security file].`
 
-### (Nur Windows) Konfigurieren der Installation des Freihand- und Handschrift-Service {#configure-install-ink-and-handwriting-service}
-
-Wenn Sie Microsoft® Windows Server ausführen, konfigurieren Sie den Freihand- und Handschrift-Dienst. Der Dienst ist erforderlich, um Microsoft® PowerPoint-Dateien zu öffnen, die die Verknüpfungsfunktionen von Microsoft® Office verwenden:
-
-1. Öffnen Sie den Server-Manager. Klicken Sie in der Schnellstartleiste auf das Symbol **[!UICONTROL Server-Manager]**.
-1. Klicken Sie im Menü **[!UICONTROL Funktionen]** auf **[!UICONTROL Funktionen hinzufügen]**. Aktivieren Sie das Kontrollkästchen **[!UICONTROL Freihand- und Handschrift-Dienst.]**
-1. Dialogfeld **[!UICONTROL Funktionen wählen]** mit **[!UICONTROL Freihand- und Handschrift-Dienst]** ausgewählt. Klicken Sie auf **[!UICONTROL Installieren]** und der Dienst wird installiert.
-
 ### (Nur Windows) Konfigurieren Sie die Dateiblockeinstellungen für Microsoft® Office {#configure-the-file-block-settings-for-microsoft-office}
 
 Ändern Sie die Einstellungen für das Microsoft® Office Trust Center, damit der PDF Generator-Dienst Dateien konvertieren kann, die mit älteren Versionen von Microsoft® Office erstellt wurden.
@@ -479,7 +472,9 @@ Unter Microsoft® Windows verwendet der PDF Generator-Dienst Adobe Acrobat, um u
 
    1. Öffnen [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp) und laden Sie die `adobe-aemfd-pdfg-common-pkg-[version].zip` aus dem Package Manager.
    1. Entpacken Sie die heruntergeladene .zip-Datei. Öffnen Sie die Eingabeaufforderung mit Administratorrechten.
-   1. Navigieren Sie zum [extracted-zip-file]`\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\adobe-aemfd-pdfg-common-pkg-[version]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]` Verzeichnis. Führen Sie die folgende Stapelverarbeitungsdatei aus:
+   1. Navigieren Sie zum `[extracted-zip-file]\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\`
+   1. Entpacken Sie die `adobe-aemfd-pdfg-common-pkg-[version]`.
+   1. Navigieren Sie zum Verzeichnis `[downloaded-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]`. Führen Sie die folgende Stapelverarbeitungsdatei aus:
 
       `Acrobat_for_PDFG_Configuration.bat`
 
@@ -589,7 +584,7 @@ Der Assembler-Dienst hängt vom Reader Extension-Dienst, vom Signature-Dienst, v
 
 ## System Readiness Tool (SRT) {#SRT}
 
-Das Systembereitschaftstool prüft, ob der Computer ordnungsgemäß für die Ausführung von PDF Generator-Konvertierungen konfiguriert ist. Das Tool generiert einen Bericht unter dem angegebenen Pfad. So führen Sie das Tool aus:
+Die [Systembereitschaftstool](#srt-configuration) überprüft, ob der Computer ordnungsgemäß für die Ausführung von PDF Generator-Konvertierungen konfiguriert ist. Das Tool generiert einen Bericht unter dem angegebenen Pfad. So führen Sie das Tool aus:
 
 1. Öffnen Sie die Eingabeaufforderung und navigieren Sie zum Ordner `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools`. 
 
@@ -597,45 +592,53 @@ Das Systembereitschaftstool prüft, ob der Computer ordnungsgemäß für die Aus
 
    `java -jar forms-srt-[version].jar [Path_of_reports_folder] en`
 
-   Der Befehl generiert einen Bericht und erstellt auch die Datei &quot;srt_config.yaml&quot;.
+   Der Befehl generiert einen Bericht und erstellt auch die Datei &quot;srt_config.yaml&quot;. Sie können damit Optionen für das SRT-Tool konfigurieren. Es ist optional, Optionen für das SRT-Tool zu konfigurieren.
 
    >[!NOTE]
    >
    > * Wenn das Systembereitschaftswerkzeug meldet, dass die pdfgen.api-Datei nicht im Acrobat-Plug-in-Ordner verfügbar ist, kopieren Sie die pdfgen.api-Datei aus dem Ordner `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` Verzeichnis in `[Acrobat_root]\Acrobat\plug_ins` Verzeichnis.
-   >
-   > * Sie können die Datei srt_config.yaml verwenden, um verschiedene Einstellungen von zu konfigurieren. Das Format der Datei lautet:
 
-       # SRT-Konfiguration
-       
-       # Hinweis - Verwenden Sie das richtige Format, um Parsing-Fehler zu vermeiden
-       
-       # z. B. &lt;param name=&quot;&quot;>:&lt;space>&lt;param value=&quot;&quot;>
-       
-       #locale: (Pflichtfeld) Gebietsschema für SRT. Unterstützte Gebietsschemata [en/fr/de/ja].
-       locale: en
-       
-       #aemTempDir: AEM temporärer Ordner
-       aemTempDir:
-       
-       #users: Benutzerliste für die PDFG-Konvertierung bereitstellen
-       #users:
-       # - user1
-       # - user2
-       Benutzer:
-       
-       #profile: Profil auswählen, um spezifische Prüfungen durchzuführen. Wählen Sie unter [LCM] aus. Bald werden weitere hinzugefügt.
-       profile:
-       
-       #outputDir: Verzeichnis, in dem die Ausgabedateien gespeichert werden
-       outputDir:
-   >
 1. Navigieren Sie zu `[Path_of_reports_folder]`. Öffnen Sie die Datei SystemReadinessTool.html. Überprüfen Sie den Bericht und beheben Sie die erwähnten Probleme.
+
+### Konfigurieren von Optionen für das SRT-Tool {#srt-configuration}
+
+Sie können die Datei srt_config.yaml verwenden, um verschiedene Einstellungen für das SRT-Tool zu konfigurieren. Das Format der Datei lautet:
+
+```shell
+   # =================================================================
+   # SRT Configuration
+   # =================================================================
+   #Note - follow correct format to avoid parsing failures
+   #e.g. <param name>:<space><param value> 
+   #locale: (mandatory field)Locale to be used for SRT. Supported locales [en/fr/de/ja].
+   locale: en
+   
+   #aemTempDir: AEM Temp direcotry
+   aemTempDir:
+   
+   #users: provide PDFG converting users list
+   #users:
+   # - user1
+   # - user2
+   users:
+   
+   #profile: select profile to run specific checks. Choose from [LCM], more will be added soon 
+   profile:
+   
+   #outputDir: directory where output files will be saved
+   outputDir:
+```
+
+* **Gebietsschema:** Dies ist ein obligatorischer Parameter. Es unterstützt Englisch(en), Deutsch (de), Französisch (fr) und Japanisch(ja). Der Standardwert ist en. Dies hat keine Auswirkungen auf PDF Generator-Dienste, die auf AEM Forms unter OSGi ausgeführt werden.
+* **aemTempDir:** Dies ist ein optionaler Parameter. Sie gibt den temporären Speicherort von Adobe Experience Manager an.
+* **Benutzer:** Dies ist ein optionaler Parameter. Sie können einen Benutzer angeben, um zu überprüfen, ob der Benutzer über die erforderlichen Berechtigungen und Lese-/Schreibzugriff für Ordner verfügt, die zum Ausführen von PDF Generator erforderlich sind. Wenn kein Benutzer angegeben ist, werden benutzerspezifische Prüfungen übersprungen und im Bericht als fehlgeschlagen angezeigt.
+* **outputDir:** Geben Sie den Speicherort für den SRT-Bericht an. Der Standardspeicherort ist das aktuelle Arbeitsverzeichnis des SRT-Tools.
 
 ## Fehlerbehebung
 
 Wenn Probleme auftreten, auch wenn alle vom SRT-Tool gemeldeten Probleme behoben wurden, führen Sie die folgenden Prüfungen durch:
 
-Stellen Sie vor Durchführung der folgenden Kontrollen sicher, dass [Systembereitschaftswerkzeug](#SRT) meldet keinen Fehler.
+Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass [Systembereitschaftswerkzeug](#SRT) meldet keinen Fehler.
 
 +++ Adobe Acrobat
 
@@ -655,7 +658,7 @@ Stellen Sie vor Durchführung der folgenden Kontrollen sicher, dass [Systemberei
 * Stellen Sie sicher, dass 32-Bit [unterstützte Version ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) von Microsoft Office installiert ist und das Öffnen von Dialogfeldern für alle Anwendungen abgebrochen wird.
 * Stellen Sie sicher, dass in der PDF-Konfigurationsoberfläche ein PDF Generator-Benutzer hinzugefügt wird.
 * Stellen Sie sicher, dass der PDF Generator-Benutzer Mitglied der Administratorgruppe ist, und [Ersetzen eines Tokens auf Prozessebene](#grant-the-replace-a-process-level-token-privilege) -Berechtigung für den Benutzer festgelegt ist.
-* Stellen Sie sicher, dass der Benutzer in der Benutzeroberfläche von PDF Generator konfiguriert ist, und führen Sie die folgenden Schritte aus:
+* Stellen Sie sicher, dass der Benutzer in der Benutzeroberfläche von PDF Generator konfiguriert ist, und führen Sie die folgenden Aktionen aus:
    1. Melden Sie sich mit dem PDF Generator-Benutzer bei Microsoft® Windows an.
    1. Öffnen Sie Microsoft® Office- oder OpenOffice-Anwendungen und brechen Sie alle Dialogfelder ab.
    1. Legen Sie AdobePDF als Standarddrucker fest.
@@ -668,7 +671,7 @@ Stellen Sie vor Durchführung der folgenden Kontrollen sicher, dass [Systemberei
 
 * Installieren Sie die [unterstützte Version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) von OpenOffice. AEM Forms unterstützt sowohl 32-Bit- als auch 64-Bit-Versionen. Öffnen Sie nach der Installation alle OpenOffice-Anwendungen, brechen Sie alle Dialogfelder ab und schließen Sie die Anwendungen. Öffnen Sie die Anwendungen erneut und stellen Sie sicher, dass beim Öffnen einer OpenOffice-Anwendung kein Dialogfeld angezeigt wird.
 
-* Umgebungsvariable erstellen `OpenOffice_PATH` und legen Sie sie so fest, dass sie auf die OpenOffice-Installation verweist, die in der [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) oder das dt-Profil (Gerätestruktur).
+* Umgebungsvariable erstellen `OpenOffice_PATH` und legen Sie sie so fest, dass sie auf die OpenOffice-Installation verweist. [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) oder das dt-Profil (Gerätestruktur).
 * Wenn bei der Installation von OpenOffice Probleme auftreten, stellen Sie sicher, dass [32-Bit-Bibliotheken](#extrarequirements) für die OpenOffice-Installation erforderlich sind, sind verfügbar.
 
 +++
@@ -762,7 +765,7 @@ Konvertierungsprobleme beim +++ HTML in PDF
 
 * Wenn Sie bereits über eine Adobe Acrobat-Lizenz verfügen und diese abgelaufen ist, [Neueste Version von Adobe Application Manager herunterladen](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html), und migrieren Sie Ihre Seriennummer. Vorher [Seriennummer migrieren](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
-   * Verwenden Sie die folgenden Befehle, um prov.xml zu generieren und die vorhandene Installation mithilfe der Datei prov.xml neu zu serialisieren, anstatt die in [Seriennummer migrieren](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) Zahlenartikel.
+   * Verwenden Sie die folgenden Befehle, um prov.xml zu generieren und die vorhandene Installation mithilfe der Datei prov.xml erneut zu erialisieren, anstatt die in [Seriennummer migrieren](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) Zahlenartikel.
 
           &quot;
           
