@@ -12,10 +12,10 @@ discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: 891cb5bb8cc9b7114d23617c9164fd428718b302
+source-git-commit: ee45113daee495d9b56a0f6e2c463d9cca006540
 workflow-type: tm+mt
-source-wordcount: '6200'
-ht-degree: 78%
+source-wordcount: '6230'
+ht-degree: 77%
 
 ---
 
@@ -324,6 +324,12 @@ Die Aufgabe einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle
   </tr>
  </tbody>
 </table>
+
+### Konsistenzprüfungskonfiguration {#health-check-configuration}
+
+Standardmäßig werden bei einer vordefinierten AEM alle 60 Sekunden Konsistenzprüfungen ausgeführt.
+
+Sie können die **Zeitraum** mit dem [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) **Konfiguration der Konsistenzprüfung der Abfrage** (com.adobe.granite.queries.impl.hc.QueryHealthCheckMetrics).
 
 ## Überwachung mit Nagios {#monitoring-with-nagios}
 
