@@ -6,7 +6,7 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 1a741ff01fcf17dfdcc8c1cebcd858052d07361c
+source-git-commit: bb8dbb9069c4575af62a4d0b21195cee75944fea
 workflow-type: tm+mt
 source-wordcount: '3583'
 ht-degree: 66%
@@ -353,7 +353,7 @@ Um nicht binäre Replikationen mit S3 zu konfigurieren, sind die folgenden Schri
 1. Stellen Sie sicher, dass MongoDB installiert ist und eine `mongod`-Instanz ausgeführt wird.
 1. Starten Sie AEM mit dem folgenden Befehl:
 
-   `java -Xmx1024m -XX:MaxPermSize=256M -jar cq-quickstart.jar -r crx3,crx3mongo`
+   `java -Xmx1024m -jar cq-quickstart.jar -r crx3,crx3mongo`
 
 1. Wiederholen Sie die Schritte 1 bis 4 für die zweite AEM-Instanz.
 1. Starten Sie die zweite AEM-Instanz.

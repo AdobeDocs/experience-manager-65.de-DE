@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: e48cc0ed-688c-44c8-b6d6-5f3c8593a295
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: bb8dbb9069c4575af62a4d0b21195cee75944fea
 workflow-type: tm+mt
-source-wordcount: '1821'
+source-wordcount: '1808'
 ht-degree: 82%
 
 ---
@@ -177,16 +177,10 @@ Im folgenden Abschnitt wird die **eigenständige Installation**. Details über d
 
 1. Um die Instanz in einer GUI-Umgebung zu starten, doppelklicken Sie einfach auf die **`cq-quickstart-6.5.0.jar`** -Datei.
 
-   Alternativ können Sie AEM an der Befehlszeile starten. Geben Sie bei einem virtuellen 32-Bit-Java-Computer Folgendes ein:
+   Alternativ können Sie AEM an der Befehlszeile starten:
 
    ```shell
        java -Xmx1024M -jar cq-quickstart-6.5.0.jar
-   ```
-
-   Geben Sie bei einem virtuellen 64-Bit-Computer Folgendes ein:
-
-   ```shell
-       java -XX:MaxPermSize=256m -Xmx1024M -jar cq-quickstart-6.5.0.jar
    ```
 
 AEM braucht einige Minuten, um die JAR-Datei zu entpacken, sich selbst zu installieren und zu starten. Die obige Prozedur führt zu Folgendem:
