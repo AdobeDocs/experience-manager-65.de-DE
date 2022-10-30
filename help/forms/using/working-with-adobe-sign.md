@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
-feature: Adaptive Forms, Adobe Sign
+feature: Adaptive Forms, Acrobat Sign
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 28d092a7713438c27213766f0bb702b699305b88
 workflow-type: tm+mt
 source-wordcount: '3826'
 ht-degree: 100%
@@ -298,7 +298,7 @@ Führen Sie die folgenden Schritte aus, um die Signaturschritt-Komponente zu kon
    > * Wenn Sie die Komponente **[!UICONTROL Unterschriftsschritt]** in das Formular ziehen und dort ablegen, wird für die Option **[!UICONTROL Wird das Formular von derselben Person ausgefüllt und unterzeichnet?]** automatisch **Ja** festgelegt. Dies ist für die Funktionsfähigkeit des Formulars erforderlich.
    >
    > * Um ein optimales Erlebnis zu erzielen, verwenden Sie nach der Signaturschrittkomponente die Komponente „Zusammenfassungsschritt“. Der „Zusammenfassungsschritt“ übermittelt das Formular automatisch und sofort, nachdem Sie das Unterzeichnen eines Formulars in der Signaturschrittkomponente abgeschlossen haben. Wenn Sie den „Zusammenfassungsschritt“ nicht verwenden, wird eine automatische Übermittlung erst nach dem Zeitintervall ausgelöst, das Sie unter Verwendung des [Adobe Sign-Konfigurationsservice](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status) festgelegt haben.
-   > Einige Best Practices sind:
+      > Einige Best Practices sind:
    > * Das Bedienfeld des adaptiven Formulars, das den Signaturschritt enthält, ist immer das letzte oder vorletzte Bedienfeld eines adaptiven Formulars. Es kann sich dabei nur dann um das vorletzte Bedienfeld handeln, wenn das letzte Bedienfeld den „Zusammenfassungsschritt“ enthält.
    > * Das Bedienfeld, das die Komponente „Signaturschritt“ oder die Komponente „Zusammenfassungsschritt“ enthält, darf keine andere Komponente enthalten.
    > * Adaptive Formulare, die den Signaturschritt enthalten, können nicht über die Schaltfläche „Senden“ verfügen.
