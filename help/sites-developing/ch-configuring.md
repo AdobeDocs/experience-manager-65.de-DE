@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '1842'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -39,18 +39,18 @@ oder
 
 >[!NOTE]
 >
->[Aufgrund der Repository-Umstrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md) Der Speicherort der ContextHub-Konfigurationen wurde von `/etc/cloudsettings` an:
+>[Aufgrund der Repository-Umstrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md) wurde der Speicherort der ContextHub-Konfigurationen von `/etc/cloudsettings` wie folgt geändert:
 >
-> * `/libs/settings/cloudsettings`
-> * `/conf/global/settings/cloudsettings`
-> * `/conf/<tenant>/settings/cloudsettings`
+>* `/libs/settings/cloudsettings`
+>* `/conf/global/settings/cloudsettings`
+>* `/conf/<tenant>/settings/cloudsettings`
 
 
 ## Ein- und Ausblenden der ContextHub-Benutzeroberfläche {#showing-and-hiding-the-contexthub-ui}
 
 Konfigurieren Sie den Adobe Granite ContextHub-OSGi-Service, um die [ContextHub-Benutzeroberfläche](/help/sites-authoring/ch-previewing.md) auf Ihren Seiten ein- oder auszublenden. Die PID dieses Service lautet `com.adobe.granite.contexthub.impl.ContextHubImpl.`.
 
-Der Service kann entweder mithilfe der [Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)[ oder mit einem JCR-Knoten im Repository konfiguriert werden](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository):
+Der Service kann entweder mithilfe der [Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) oder mit einem [JCR-Knoten im Repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) konfiguriert werden:
 
 * **Web-Konsole:** Aktivieren Sie die Eigenschaft „Show UI“, um die Benutzeroberfläche anzuzeigen. Verwenden Sie die Eigenschaft „Hide UI“, um die Benutzeroberfläche auszublenden.
 * **JCR-Knoten:** Legen Sie die boolesche Eigenschaft `com.adobe.granite.contexthub.show_ui` auf `true` fest, um die Benutzeroberfläche anzuzeigen. Legen Sie die Eigenschaft auf `false` fest, um die Benutzeroberfläche auszublenden.
@@ -102,11 +102,11 @@ Die Eigenschaften von UI-Modulen enthalten eine Detailkonfiguration, in der Sie 
 | [contexthub.base](/help/sites-developing/ch-samplemodules.md#contexthub-base-ui-module-type) | Ein generischer UI-Modultyp | In den Eigenschaften des UI-Modusl konfiguriert |
 | [contexthub.browserinfo](/help/sites-developing/ch-samplemodules.md#contexthub-browserinfo-ui-module-type) | Zeigt Informationen zum Browser an | surferinfo |
 | [contexthub.datetime](/help/sites-developing/ch-samplemodules.md#contexthub-datetime-ui-module-type) | Zeigt Informationen zu Datum und Uhrzeit an | datetime |
-| [contexthub.device](/help/sites-developing/ch-samplemodules.md#contexthub-device-ui-module-type) | Client-Gerät anzeigen | emulators |
+| [contexthub.device](/help/sites-developing/ch-samplemodules.md#contexthub-device-ui-module-type) | Zeigt das Client-Gerät an | emulators |
 | [contexthub.location](/help/sites-developing/ch-samplemodules.md#contexthub-location-ui-module-type) | Zeigt den Breiten- und Längengrad des Clients sowie den Standort auf einer Karte an. Sie können den Standort ändern. | geolocation |
 | [contexthub.screen-orientation](/help/sites-developing/ch-samplemodules.md#contexthub-screen-orientation-ui-module-type) | Zeigt die Bildschirmausrichtung des Geräts (Querformat oder Hochformat) an | emulators |
 | [contexthub.tagcloud](/help/sites-developing/ch-samplemodules.md#contexthub-tagcloud-ui-module-type) | Zeigt Statistiken zu Seiten-Tags an | tagcloud |
-| [granite.profile](/help/sites-developing/ch-samplemodules.md#granite-profile-ui-module-type) | Zeigt die Profilinformationen für den aktuellen Benutzer an, einschließlich authorizableID, displayName und familyName. Sie können den Wert von displayName und familyName ändern. | Profil |
+| [granite.profile](/help/sites-developing/ch-samplemodules.md#granite-profile-ui-module-type) | Zeigt Informationen zum Profil des aktuellen Benutzers an, einschließlich authorizableID, displayName und familyName. Sie können den Wert von displayName und familyName ändern. | Profil |
 
 1. Klicken oder tippen Sie auf der Experience Manager-Leiste auf „Tools“ > „Sites“ > „ContextHub“.
 1. Klicken oder tippen Sie auf den Konfigurations-Container, dem Sie ein UI-Modul hinzufügen möchten.
@@ -142,14 +142,14 @@ In AEM werden die folgenden Beispiele für Store-Kandidaten bereitgestellt, die 
 | Filialtyp | Beschreibung |
 |---|---|
 | [aem.segmentation](/help/sites-developing/ch-samplestores.md#aem-segmentation-sample-store-candidate) | Store für gelöste und ungelöste ContextHub-Segmente. Ruft automatisch Segmente aus dem ContextHub SegmentManager zurück |
-| [aem.resolvedsegments](/help/sites-developing/ch-samplestores.md#aem-resolvedsegments-sample-store-candidate) | Speichert die aktuell gelösten Segmente. Hört auf den ContextHub SegmentManager-Dienst automatisch, um den Store automatisch zu aktualisieren |
+| [aem.resolvedsegments](/help/sites-developing/ch-samplestores.md#aem-resolvedsegments-sample-store-candidate) | Speichert die aktuell aufgelösten Segmente. Hört automatisch auf den ContextHub SegmentManager-Dienst, um den Store automatisch zu aktualisieren |
 | [contexthub.geolocation](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) | Speichert den Breiten- und Längengrad des Browser-Standorts. |
-| [contexthub.datetime](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate) | Speichert das aktuelle Datum, die aktuelle Uhrzeit und die aktuelle Saison für den Browser-Standort |
+| [contexthub.datetime](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate) | Speichert das aktuelle Datum, die aktuelle Uhrzeit und die aktuelle Jahreszeit für den Browser-Standort |
 | [granite.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) | Definiert Eigenschaften und Funktionen für eine Reihe von Geräten und erkennt das aktuelle Client-Gerät. |
 | [contexthub.generic-jsonp](/help/sites-developing/ch-samplestores.md#contexthub-generic-jsonp-sample-store-candidate) | Ruft Daten von einem JSONP-Dienst ab und speichert sie |
 | [granite.profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) | Speichert die Profildaten für den aktuellen Benutzer. |
 | [contexthub.surferinfo](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) | Speichert die Informationen zum Client, z. B. Geräteinformationen, Browser-Typ und Fensterausrichtung. |
-| [contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) | Speichert Seiten-Tags und Tag-Zählungen |
+| [contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) | Speichert Seiten-Tags und die Tag-Anzahl |
 
 1. Klicken oder tippen Sie auf der Experience Manager-Leiste auf „Tools“ > „Sites“ > „ContextHub“.
 1. Klicken oder tippen Sie auf den standardmäßigen Konfigurations-Container.
@@ -211,13 +211,13 @@ Verwenden Sie zum Speichern von Daten aus dem MD5-Service der Website „jsontes
     }
    ```
 
-### Hinzufügen eines UI-Moduls für die md5-Daten {#adding-a-ui-module-for-the-md-data}
+### Hinzufügen eines Benutzeroberflächenmoduls für die md5-Daten {#adding-a-ui-module-for-the-md-data}
 
 Fügen Sie der ContextHub-Symbolleiste ein UI-Modul hinzu, um die Daten anzuzeigen, die im md5-Beispiel-Store gespeichert sind. In diesem Beispiel wird das Modul „contexthub.base“ verwendet, um das folgende UI-Modul zu erstellen:
 
 ![chlimage_1-323](assets/chlimage_1-323.png)
 
-Gehen Sie wie folgt vor: [Hinzufügen eines UI-Moduls](#adding-a-ui-module) , um das UI-Modul einem vorhandenen UI-Modus hinzuzufügen, z. B. dem Perona-UI-Beispielmodus. Verwenden Sie für das UI-Modul die folgenden Eigenschaftswerte:
+Nutzen Sie das Verfahren unter [Hinzufügen eines Benutzeroberflächenmoduls](#adding-a-ui-module), um das Benutzeroberflächenmodul einem vorhandenen Benutzeroberflächenmodus hinzuzufügen, z. B. dem Beispiel-Benutzeroberflächenmodus „Perona“. Verwenden Sie für das UI-Modul die folgenden Eigenschaftswerte:
 
 * **UI-Modultitel:** MD5
 * **Modultyp:** contexthub.base
@@ -255,7 +255,7 @@ Verwenden Sie CRXDE Lite, um die Eigenschaft `debug` unter auf **true** festzule
 
 >[!NOTE]
 >
->Bei ContextHub-Konfigurationen, die sich noch unter ihren veralteten Pfaden befinden, muss der Speicherort `debug property` is `/libs/settings/cloudsettings/legacy/contexthub`.
+>Bei ContextHub-Konfigurationen, die sich noch unter ihren veralteten Pfaden befinden, muss der Speicherort für `debug property` auf `/libs/settings/cloudsettings/legacy/contexthub` festgelegt werden.
 
 ### Unbeaufsichtigter Modus {#silent-mode}
 
@@ -272,19 +272,19 @@ Dies ist für Ihre Veröffentlichungsinstanz hilfreich, für die Sie keine Debug
 
 Wenn ein [Upgrade für AEM](/help/sites-deploying/upgrade.md) durchgeführt wird, werden die ContextHub-Konfigurationen gesichert und an einem sicheren Ort gespeichert. Während des Upgrades werden die ContextHub-Standardkonfigurationen installiert, um die vorhandenen Konfigurationen zu ersetzen. Die Sicherung ist erforderlich, um alle von Ihnen vorgenommenen Änderungen oder Hinzufügungen beizubehalten.
 
-ContextHub-Konfigurationen werden in einem Ordner mit dem Namen `contexthub` unter den folgenden Knoten:
+ContextHub-Konfigurationen werden in einem Ordner mit dem Namen `contexthub` unter den folgenden Knoten gespeichert:
 
 * `/conf/global/settings/cloudsettings`
 * `/conf/<tenant>/settings/cloudsettings`
 
-Nach einem Upgrade wird die Sicherung in einem Ordner mit dem Namen `contexthub` unterhalb eines Knotens mit dem Namen:
+Nach einem Upgrade wird die Sicherung in einem Ordner mit dem Namen `contexthub` unter einem Knoten mit dem folgenden Namen gespeichert:
 
 `/conf/global/settings/cloudsettings/default-pre-upgrade_yyyymmdd_xxxxxxx` oder
 `/conf/<tenant>/settings/cloudsettings/default-pre-upgrade_yyyymmdd_xxxxxxx`
 
-Die `yyyymmdd` -Teil des Knotennamens ist das Datum, an dem die Aktualisierung durchgeführt wurde.
+Der Teil `yyyymmdd` des Knotennamens ist das Datum, an dem das Upgrade durchgeführt wurde.
 
-Um Ihre ContextHub-Konfigurationen wiederherzustellen, kopieren Sie mithilfe der CRXDE Lite die Knoten, die Ihre Stores, Benutzeroberflächenmodi und Benutzeroberflächenmodule darstellen, von unten `default-pre-upgrade_yyyymmdd_xxxxxx` Knoten zu unten:
+Verwenden Sie zum Wiederherstellen Ihrer ContextHub-Konfigurationen CRXDE Lite, um die Knoten mit Ihren Stores, Benutzeroberflächenmodi und Benutzeroberflächenmodulen von `default-pre-upgrade_yyyymmdd_xxxxxx` unter den folgenden Knoten zu kopieren:
 
 * `/conf/global/settings/cloudsettings` oder
 * `/conf/<tenant>/settings/cloudsettings`

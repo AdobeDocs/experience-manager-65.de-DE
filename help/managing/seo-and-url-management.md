@@ -7,16 +7,16 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: b138f6d1-0870-4071-b96e-4a759ad9a76e
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '3802'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
 # Best Practices für SEO und URL-Verwaltung{#seo-and-url-management-best-practices}
 
-Suchmaschinenoptimierung (SEO) ist zu einem wichtigen Thema für viele Marketer geworden. Deshalb müssen SEO-Thematiken bei vielen AEM-Projekten berücksichtigt werden.
+Suchmaschinen-Optimierung (SEO) ist zu einem wichtigen Thema für viele Marketing-Fachleute geworden. Deshalb müssen SEO-Thematiken bei vielen AEM-Projekten berücksichtigt werden.
 
 Dieses Dokument beschreibt zunächst einige [Best Practices für SEO](#seo-best-practices) und Empfehlungen zu deren Erreichung bei einer AEM-Implementierung. Anschließend beschäftigt sich das Dokument intensiver mit einigen der [komplexeren Implementierungsschritte](#aem-configurations) aus dem ersten Abschnitt.
 
@@ -366,9 +366,9 @@ AEM verwendet das [Apache Sling Sitemap-Modul](https://github.com/apache/sling-o
 
 >[!NOTE]
 >
-> Diese Funktion ist seit Adobe Experience Manager-Version 6.5.11.0 als Produktfunktion verfügbar.
+>Diese Funktion ist seit Version 6.5.11.0 von Adobe Experience Manager als Produktfunktion verfügbar.
 > 
-> Bei älteren Versionen können Sie selbst ein Sling-Servlet registrieren, um auf eine `sitemap.xml` Rufen Sie die über die Servlet-API bereitgestellte Ressource auf und verwenden Sie sie, um die aktuelle Seite und ihre untergeordneten Elemente zu suchen und eine sitemap.xml -Datei auszugeben.
+>Bei älteren Versionen können Sie selbst ein Sling-Servlet registrieren. Um auf eine `sitemap.xml` zu überwachen, rufen Sie die über die Servlet-API bereitgestellte Ressource auf und verwenden Sie sie, um die aktuelle Seite und ihre untergeordneten Elemente zu suchen und eine sitemap.xml-Datei auszugeben.
 
 Das Apache Sling Sitemap-Modul unterscheidet zwischen einer Top-Level-Sitemap und einer verschachtelten Sitemap, die beide für jede Ressource erzeugt werden, bei der die Eigenschaft `sling:sitemapRoot` auf `true` gesetzt ist. Im Allgemeinen werden Sitemaps mithilfe von Selektoren im Pfad der Top-Level-Sitemap der Baumstruktur gerendert, bei der es sich um die Ressource handelt, die keinen anderen Sitemap-Stamm-Vorgänger hat. Dieser Top-Level-Sitemap-Stammordner legt auch den Sitemap-Index offen, der normalerweise von einem Website-Verantwortlichen im Konfigurationsportal der Suchmaschine konfiguriert oder zum `robots.txt` der Website hinzugefügt wird.
 
@@ -380,7 +380,7 @@ Nehmen wir zum Beispiel eine Website, die einen Top-Level-Sitemap-Stammordner be
 
 >[!NOTE]
 >
-> Die Selektoren `sitemap` und `sitemap-index` können bei benutzerdefinierten Implementierungen zu Problemen führen. Wenn Sie die Produktfunktion nicht verwenden möchten, konfigurieren Sie Ihr eigenes Servlet, das diese Selektoren mit einem `service.ranking` größer als 0 bedient.
+>Die Selektoren `sitemap` und `sitemap-index` können bei benutzerdefinierten Implementierungen zu Problemen führen. Wenn Sie die Produktfunktion nicht verwenden möchten, konfigurieren Sie Ihr eigenes Servlet, das diese Selektoren mit einem `service.ranking` größer als 0 bedient.
 
 In der Standardkonfiguration bietet das Dialogfeld Seiteneigenschaften die Option, eine Seite als Sitemap-Stammordner zu markieren und so wie oben beschrieben, eine Sitemap für sich selbst und die untergeordneten Elemente zu generieren. Dieses Verhalten wird durch Implementierungen der `SitemapGenerator`-Schnittstelle implementiert und kann durch Hinzufügen alternativer Implementierungen erweitert werden. Da die Häufigkeit, mit der die XML-Sitemaps neu erzeugt werden müssen, jedoch stark von den Authoring-Workflows und der Arbeitslast abhängt, wird das Produkt ohne `SitemapScheduler`-Konfiguration ausgeliefert. Dadurch wird die Funktion tatsächlich zum Opt-in.
 
@@ -472,7 +472,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-Darüber hinaus kann die für XML-Sitemaps implementierte Funktionalität auch für verschiedene Anwendungsfälle verwendet werden, z. B. um den kanonischen Link hinzuzufügen oder die Sprache wechselt zum Kopf einer Seite. Weitere Informationen finden Sie in der [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html)-Oberfläche.
+Darüber hinaus kann die für XML-Sitemaps implementierte Funktionalität auch in verschiedenen Nutzungsszenarien verwendet werden, z. B. um den kanonischen Link oder die Sprachalternativen zum Seiten-Header hinzuzufügen. Weitere Informationen finden Sie in der [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html)-Oberfläche.
 
 ### Erstellen von 301-Weiterleitungen für veraltete URLs {#creating-redirects-for-legacy-urls}
 

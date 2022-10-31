@@ -9,14 +9,14 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '385'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
-# Commerce  Multi-Store-Setup {#multi-store}
+# Commerce    Multi-Store-Setup {#multi-store}
 
 Die AEM-CIF-Kernkomponenten können auf mehreren AEM Site-Strukturen verwendet werden und die zugrunde liegende GraphQL-Client-Implementierung kann mit verschiedenen Adobe Commerce-Stores/Store-Ansichten verbunden werden. Dadurch können Projekte komplexe Multi-Store-/Multi-Site-Setups implementieren.
 
@@ -28,7 +28,7 @@ AEM-Funktionen zur Verwaltung mehrerer Websites von Live Copy und Sprachkopie we
 
 Es empfiehlt sich, eine 1:1-Beziehung zwischen einer AEM-Site und einer Adobe Commerce Store-Ansicht zu verwenden.
 
-Gehen Sie wie folgt vor, um eine AEM Site zu verbinden und CIF-Kernkomponenten so zu einer dedizierten Store-Ansicht AEM:
+Gehen Sie wie folgt vor, um eine AEM-Site und die AEM-CIF-Kernkomponenten zu einer dedizierten Store-Ansicht zu verbinden:
 
 ## Konfiguration {#configuration}
 
@@ -46,12 +46,12 @@ Gehen Sie wie folgt vor, um eine AEM Site zu verbinden und CIF-Kernkomponenten s
 
    >[!TIP]
    >
-   > Commerce-Kataloge können mit IDs oder UIDs adressiert werden. Die Unterstützung für UIDs wurde in Adobe Commerce 2.4.2 eingeführt. Aktivieren Sie dies nur, wenn Ihr Commerce-Backend ein GraphQL-Schema der Version 2.4.2 oder höher unterstützt.
+   >Commerce-Kataloge können mit IDs oder UIDs adressiert werden. Die Unterstützung für UIDs wurde in Adobe Commerce 2.4.2 eingeführt. Aktivieren Sie dies nur, wenn Ihr Commerce-Backend ein GraphQL-Schema der Version 2.4.2 oder höher unterstützt.
 
 4. Weisen Sie die untergeordnete Konfiguration zu einer AEM-Site zu.
 
    * Wechseln Sie zur AEM Sites-Konsole.
-   * Navigieren Sie zum Regions- oder zum Sprachstamm Ihrer Site-Struktur, z. B. /content/venia/us _oder_ /content/venia/us/en für die Venia-Beispielseite
+   * Navigieren Sie zum Regions- oder Sprachstamm Ihrer Site-Struktur, z. B. „/content/venia/us“ _oder_ „/content/venia/us/en“ für die Venia-Beispielseite.
    * Wählen Sie die Seiten aus und öffnen Sie die Seiteneigenschaften.
    * Wählen Sie die Registerkarte „Erweitert“ aus.
    * Wählen Sie im Abschnitt `Configuration` die zuvor erstellte Konfiguration aus.

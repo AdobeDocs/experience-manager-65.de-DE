@@ -12,10 +12,10 @@ discoiquuid: f69db472-9f5c-4c0d-9292-2920ef69feeb
 docset: aem65
 feature: Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
-source-git-commit: 4db9279f2d15f2e08939ba453ae8ddbbc3c3d69f
+source-git-commit: efb4f9f8a97baf8d3d02160226e4f4d3f8f64c89
 workflow-type: tm+mt
 source-wordcount: '1883'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Versehen Sie Inhalte mit Tags und nutzen Sie die AEM-Tagging-Infrastruktur wie f
 * Das Tag muss unterhalb des ` [cq:Tag](#tags-cq-tag-node-type)`Stammknotens der Taxonomie[ als Knoten vom Typ ](#taxonomy-root-node) vorhanden sein
 
 * Der NodeType des mit Tags versehenen Inhaltsknotens muss das Mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin) beinhalten.
-* Die [TagID](#tagid) wird zum Inhaltsknoten hinzugefügt [ `cq:tags`](#tagged-content-cq-tags-property) -Eigenschaft und wird in einen Knoten des Typs aufgelöst. ` [cq:Tag](#tags-cq-tag-node-type)`
+* Die [TagID](#tagid) wird der Eigenschaft [ `cq:tags`](#tagged-content-cq-tags-property) des Inhaltsknotens hinzugefügt und zu einem Knoten vom Typ ` [cq:Tag](#tags-cq-tag-node-type)` aufgelöst.
 
 ## Tags: cq:Tag-Knotentyp  {#tags-cq-tag-node-type}
 
@@ -42,13 +42,13 @@ Das Tagging-Framework bietet außerdem die Möglichkeit, Autoren und Website-Bes
 
 ### Tag-Eigenschaften {#tag-characteristics}
 
-* node type is `cq:Tag`
+* Knotentyp ist `cq:Tag`
 * Knotenname ist eine Komponente der ` [TagID](#tagid)`
-* die ` [TagID](#tagid)` enthält immer [namespace](#tag-namespace)
+* Die ` [TagID](#tagid)` umfasst immer einen [Namespace](#tag-namespace)
 
-* optional `jcr:title` -Eigenschaft (der Titel, der in der Benutzeroberfläche angezeigt werden soll)
+* optionale `jcr:title`-Eigenschaft (der auf der Benutzeroberfläche anzuzeigende Titel)
 
-* optional `jcr:description` property
+* optionale `jcr:description`-Eigenschaft
 
 * wird als Container-Tag bezeichnet, wenn [untergeordnete Knoten](#container-tags) enthalten sind
 * wird im Repository unterhalb eines Basispfads gespeichert, der als [Stammknoten der Taxonomie](#taxonomy-root-node) bezeichnet wird
@@ -57,11 +57,11 @@ Das Tagging-Framework bietet außerdem die Möglichkeit, Autoren und Website-Bes
 
 Eine Tag-ID identifiziert einen Pfad, der einen Tag-Knoten im Repository ergibt.
 
-Normalerweise ist die TagID eine kurze Tag-ID, die mit dem Namespace beginnt, oder es kann sich um eine absolute TagID handeln, die von der [Stammknoten der Taxonomie](#taxonomy-root-node).
+Normalerweise ist die Tag-ID eine kurze Tag-ID, die mit dem Namespace beginnt. Sie kann auch eine absolute Tag-ID sein, die mit dem [Stammknoten der Taxonomie](#taxonomy-root-node) beginnt.
 
 Wenn Inhalte mit Tags versehen werden, aber noch nicht vorhanden sind, wird dem Inhaltsknoten die Eigenschaft ` [cq:tags](#tagged-content-cq-tags-property)` und dem String-Array-Wert die Tag-ID hinzugefügt.
 
-Die Tag-ID besteht aus einem [Namespace](#tag-namespace) gefolgt von der lokalen Tag-ID. [Container-Tags](#container-tags) weisen untergeordnete Tags auf, die eine hierarchische Reihenfolge in der Taxonomie darstellen. Unter-Tags können verwendet werden, um Tags zu referenzieren, die mit jeder lokalen Tag-ID übereinstimmen. Beispielsweise ist das Tagging von Inhalten mit &quot;Frucht&quot;zulässig, selbst wenn es sich um ein Container-Tag mit Untertags wie &quot;Frucht/Apfel&quot;und &quot;Frucht/Banane&quot;handelt.
+Die Tag-ID besteht aus einem [Namespace](#tag-namespace) gefolgt von der lokalen Tag-ID. [Container-Tags](#container-tags) weisen untergeordnete Tags auf, die eine hierarchische Reihenfolge in der Taxonomie darstellen. Untergeordnete Tags können dazu verwendet werden, auf Tags genau wie auf andere lokale Tag-IDs zu verweisen. Beispielsweise ist es erlaubt, Inhalte mit dem Tag „Frucht“ zu versehen, auch wenn es sich um ein Container-Tag mit untergeordneten Tags handelt, z. B. „Frucht/Apfel“ oder „Frucht/Banane“.
 
 ### Stammknoten der Taxonomie {#taxonomy-root-node}
 
@@ -71,11 +71,11 @@ In AEM ist der Basispfad `/content/  cq   :tags` und der Stammknoten ist vom Typ
 
 ### Tag-Namespace {#tag-namespace}
 
-Namespaces ermöglichen das Gruppieren von Elementen. Der häufigste Anwendungsfall besteht darin, einen Namespace pro (Website)-Site (z. B. öffentlich, intern und portal) oder pro größerer Anwendung (z. B. WCM, Assets, Communities) zu haben, jedoch können Namespaces für verschiedene andere Anforderungen verwendet werden. Namespaces werden in der Benutzeroberfläche verwendet, um nur die Untergruppe von Tags (d. h. die Tags eines bestimmten Namespace) anzuzeigen, die auf den aktuellen Inhalt anwendbar sind.
+Namespaces ermöglichen das Gruppieren von Elementen. Der vorherrschende Anwendungsfall besteht darin, einen Namespace pro Website (z. B. öffentlich, intern, Portal) oder pro größerer Anwendung (z. B. WCM, Assets, Communities) zu verwenden, aber Namespaces können auch anderweitig eingesetzt werden. Namespaces werden in der Benutzeroberfläche verwendet, um nur die Untergruppe von Tags (d. h. die Tags eines bestimmten Namespace) anzuzeigen, die auf den aktuellen Inhalt anwendbar sind.
 
 Der Namespace des Tags ist die erste Ebene im Teilbaum der Taxonomie, der den Knoten direkt unterhalb des [Stammknotens der Taxonomie darstellt](#taxonomy-root-node). Ein Namespace ist ein Knoten vom Typ `cq:Tag`, dessen übergeordnetes Element nicht vom Knotentyp `cq:Tag` ist.
 
-Alle Tags haben einen Namespace. Wenn kein Namespace angegeben ist, wird das Tag dem standardmäßigen Namespace TagID zugewiesen. `default` (Titel ist `Standard Tags),`, `/content/cq:tags/default.`
+Alle Tags haben einen Namespace. Wenn kein Namespace angegeben ist, wird das Tag dem standardmäßigen Namespace zugeordnet, der Tag-ID `default` lautet (Titell ist `Standard Tags),`, d. h `/content/cq:tags/default.`)
 
 ### Container-Tags {#container-tags}
 
@@ -89,7 +89,7 @@ Wenn die Tag-ID einen Doppelpunkt enthält, trennt der Doppelpunkt den Namespace
 
 Der standardmäßige und einzige Speicherort von Tags befindet sich unter /content/cq:tags.
 
-Tags, die auf nicht vorhandene Pfade oder Pfade verweisen, die nicht auf einen cq:Tag-Knoten verweisen, werden als ungültig betrachtet und ignoriert.
+Tags, die auf nicht vorhandene Pfade oder auf Pfade verweisen, an deren Ende sich kein cq:Tag-Knoten befindet, werden als ungültig betrachtet und werden ignoriert.
 
 Die folgende Tabelle zeigt einige Beispiel-Tag-IDs, ihre Elemente und wie die Tag-ID einen absoluten Pfad im Repository ergibt:
 
@@ -101,17 +101,17 @@ Die folgende Tabelle zeigt einige Beispiel-Tag-IDs, ihre Elemente und wie die Ta
    <td><strong>TagID (Tag-ID)<br /> </strong></td>
    <td><strong>Namespace</strong></td>
    <td><strong>Lokale ID</strong></td>
-   <td><strong>Container-Tag(e)</strong></td>
+   <td><strong>Container-Tag(s)</strong></td>
    <td><strong>Leaf-Tag</strong></td>
-   <td><strong>Repository<br /> Absoluter Tag-Pfad</strong></td>
+   <td><strong>Absoluter Tag-Pfad im Repository<br /></strong></td>
   </tr>
   <tr>
-   <td>dam:frucht/apple/braeburn</td>
+   <td>dam:fruit/apple/braeburn</td>
    <td>dam</td>
-   <td>Obst/Apfel/Braeburn</td>
+   <td>fruit/apple/braeburn</td>
    <td>Obst, Apfel</td>
    <td>Braeburn</td>
-   <td>/content/cq:tags/dam/frucht/apple/braeburn</td>
+   <td>/content/cq:tags/dam/fruit/apple/braeburn</td>
   </tr>
   <tr>
    <td>color/red</td>
@@ -122,25 +122,25 @@ Die folgende Tabelle zeigt einige Beispiel-Tag-IDs, ihre Elemente und wie die Ta
    <td>/content/cq:tags/default/color/red</td>
   </tr>
   <tr>
-   <td>Himmel</td>
+   <td>sky</td>
    <td>default</td>
    <td>Himmel</td>
-   <td>(keine)</td>
+   <td>(keins)</td>
    <td>Himmel</td>
    <td>/content/cq:tags/default/sky</td>
   </tr>
   <tr>
    <td>dam:</td>
    <td>dam</td>
-   <td>(keine)</td>
-   <td>(keine)</td>
-   <td>(keines, der Namespace)</td>
+   <td>(keins)</td>
+   <td>(keins)</td>
+   <td>(keins, der Namespace)</td>
    <td>/content/cq:tags/dam</td>
   </tr>
   <tr>
    <td>/content/cq:tags/category/car</td>
    <td>category</td>
-   <td>Auto</td>
+   <td>car</td>
    <td>Auto</td>
    <td>Auto</td>
    <td>/content/cq:tags/category/car</td>
@@ -168,7 +168,7 @@ Eine typische Vorgehensweise umfasst Folgendes:
 * Gewähren von Schreibzugriff auf alle Namespaces für die Gruppe/Rolle `tag-administrators` (unter `/content/cq:tags` hinzufügen/ändern). Diese Gruppe enthält AEM standardmäßig.
 
 * Gewähren von Lesezugriff für Benutzer/Autoren auf alle Namespaces, die sie lesen können müssen (meist alle).
-* Ermöglicht Benutzern/Autoren das Schreiben von Zugriff auf die Namespaces, in denen Tags von Benutzern/Autoren frei definiert werden sollen (add_node unter `/content/cq:tags/some_namespace`)
+* Gewähren von Schreibzugriff für Benutzer/Autoren auf die Namespaces, bei denen Tags durch Benutzer/Autoren frei definierbar sein müssen (add_node unter `/content/cq:tags/some_namespace`).
 
 ## Tag-barer Inhalt: cq:Taggable-Mixin {#taggable-content-cq-taggable-mixin}
 
@@ -180,9 +180,9 @@ Das Mixin `cq:OwnerTaggable`, das von `cq:Taggable` übernimmt, soll anzeigen, d
 >
 >Es wird empfohlen, Tags nur auf dem Knoten der obersten Ebene eines aggregierten Inhaltselements (oder dessen jcr:content-Knoten) zu aktivieren. Beispiele dafür sind:
 >
->* Seiten ( `cq:Page`), wobei die `jcr:content`node is type `cq:PageContent` , der Folgendes umfasst: `cq:Taggable` Mixin.
+>* Seiten (`cq:Page`), deren Knoten `jcr:content` vom Typ `cq:PageContent` sind, der das Mixin `cq:Taggable` umfasst
 >
->* Assets ( `cq:Asset`), wobei die `jcr:content/metadata` Knoten hat immer die `cq:Taggable` Mixin.
+>* Assets (`cq:Asset`), deren Knoten `jcr:content/metadata` immer das Mixin `cq:Taggable` umfassen
 >
 
 
@@ -219,19 +219,21 @@ Die Eigenschaft `cq:tags` ist ein String-Array, das zum Speichern mindestens ein
 
 Im Folgenden finden Sie eine Beschreibung der Auswirkungen, die im Repository auftreten, wenn Sie Tags mit der [Tagging-Konsole](/help/sites-administering/tags.md) verschieben oder zusammenführen:
 
-* Wenn ein Tag A verschoben oder mit Tag B zusammengeführt wird unter `/content/cq:tags`:
+* Wenn ein Tag A verschoben oder mit Tag B unter `/content/cq:tags` zusammengeführt wird:
 
-   * Tag A wird nicht gelöscht und erhält eine `cq:movedTo` -Eigenschaft.
+   * Tag A wird nicht gelöscht und erhält eine `cq:movedTo`-Eigenschaft.
    * Tag B wird erstellt (im Falle einer Verschiebung) und erhält eine `cq:backlinks`-Eigenschaft.
 
-* `cq:movedTo` verweist auf Tag B. Diese Eigenschaft bedeutet, dass Tag A verschoben oder mit Tag B zusammengeführt wurde. Durch Verschieben von Tag B wird diese Eigenschaft entsprechend aktualisiert. Tag A ist somit ausgeblendet und wird nur im Repository behalten, um Tag-IDs in Inhaltsknoten aufzulösen, die auf Tag A verweisen. Der Garbage Collector für Tags entfernt Tags wie Tag A, sobald keine Inhaltsknoten mehr darauf verweisen.
-Ein spezieller Wert für `cq:movedTo` Eigenschaft ist `nirvana`: wird angewendet, wenn das Tag gelöscht wird, aber nicht aus dem Repository entfernt werden kann, da es Untertags mit einer `cq:movedTo` die gehalten werden müssen.
+* `cq:movedTo` verweist auf Tag B.
+Diese Eigenschaft bedeutet, dass Tag A verschoben oder mit Tag B zusammengeführt wurde. Wird Tag B verschoben, wird diese Eigenschaft entsprechend aktualisiert. Tag A ist somit ausgeblendet und wird nur im Repository behalten, um Tag-IDs in Inhaltsknoten aufzulösen, die auf Tag A verweisen. Der Garbage Collector für Tags entfernt Tags wie Tag A, sobald keine Inhaltsknoten mehr darauf verweisen.
+Ein spezieller Wert für die Eigenschaft `cq:movedTo` ist `nirvana`: Er wird angewendet, wenn das Tag gelöscht wird, aber nicht aus dem Repository entfernt werden kann, weil untergeordnete Tags mit `cq:movedTo` vorhanden sind, die nicht entfernt werden dürfen.
 
    >[!NOTE]
    >
    >Die `cq:movedTo`-Eigenschaft wird dem verschobenen oder zusammengeführten Tag nur hinzugefügt, wenn eine der folgenden Bedingungen erfüllt ist:
-   > 1. Tag wird im Inhalt verwendet (d. h. es hat einen Verweis) ODER
-   > 1. Tag enthält untergeordnete Elemente, die bereits verschoben wurden.
+   >
+   >1. Das Tag wird im Inhalt verwendet (d. h. es wird darauf verwiesen) ODER
+   >1. Das Tag enthält bereits verschobene untergeordnete Elemente.
 
 
 * `cq:backlinks` speichert Verweise in die andere Richtung, d. h. sie enthält eine Liste aller Tags, die verschoben oder mit Tag B zusammengeführt wurden. Dies ist hauptsächlich erforderlich, um `cq:movedTo`-Eigenschaften auf dem aktuellen Stand zu halten, wenn Tag B auch verschoben/zusammengeführt/gelöscht oder aktiviert wird. In diesem Fall müssen all seine backlinks-Tags ebenso aktiviert werden.
@@ -240,8 +242,8 @@ Ein spezieller Wert für `cq:movedTo` Eigenschaft ist `nirvana`: wird angewendet
    >
    >Die `cq:backlinks`-Eigenschaft wird dem verschobenen oder zusammengeführten Tag nur hinzugefügt, wenn eine der folgenden Bedingungen erfüllt ist:
    >
-   > 1. Tag wird im Inhalt verwendet (d. h. es hat einen Verweis) ODER >
-   > 1. Tag enthält untergeordnete Elemente, die bereits verschoben wurden.
+   >1. Das Tag wird im Inhalt verwendet (d. h. es wird darauf verwiesen) ODER
+   >1. Das Tag enthält bereits verschobene untergeordnete Elemente.
 
 
 * Das Lesen einer `cq:tags`-Eigenschaft eines Inhaltsknotens umfasst die folgenden Auflösungen:
@@ -262,23 +264,23 @@ Dieser Schritt wird so lange wiederholt, wie das angehängte Tag eine `cq:movedT
 
 ## Migration von Tags {#tags-migration}
 
-Ab Experience Manager 6.4 werden Tags unter `/content/cq:tags`, die zuvor unter `/etc/tags`. In Fällen, in denen Adobe Experience Manager von der vorherigen Version aktualisiert wurde, sind die Tags jedoch immer noch unter dem alten Speicherort vorhanden `/etc/tags`. In aktualisierten Systemen müssen Tags unter migriert werden. `/content/cq:tags`.
+Ab Experience Manager 6.4 werden Tags, die zuvor unter `/etc/tags` gespeichert wurden, unter `/content/cq:tags` gespeichert. In Fällen, in denen Adobe Experience Manager ein Upgrade von der vorherigen Version erhielt, sind die Tags jedoch immer noch unter dem alten Speicherort `/etc/tags` vorhanden. In Systemen mit Upgrade müssen Tags unter `/content/cq:tags` migriert werden.
 
 >[!NOTE]
 >
->Auf der Seite Seiteneigenschaften der Tags wird empfohlen, Tag-ID (`geometrixx-outdoors:activity/biking`) anstatt den Tag-Basispfad fest zu kodieren (z. B. `/etc/tags/geometrixx-outdoors/activity/biking`).
+>Auf der Seite „Seiteneigenschaften der Tags“ wird empfohlen, Tag-ID (`geometrixx-outdoors:activity/biking`) anstatt des festen Kodierens des Tag-Basispfads (z. B. `/etc/tags/geometrixx-outdoors/activity/biking`) zu verwenden.
 >
->So listen Sie Tags auf: `com.day.cq.tagging.servlets.TagListServlet` verwendet werden.
+>Zum Auflisten von Tags kann `com.day.cq.tagging.servlets.TagListServlet` verwendet werden.
 
 >[!NOTE]
 >
 >Es wird empfohlen, die Tag-Manager-API als Ressource zu verwenden.
 
-### Wenn die aktualisierte AEM-Instanz die TagManager-API unterstützt {#upgraded-instance-support-tagmanager-api}
+### Wenn die upgegradete AEM-Instanz die TagManager-API unterstützt {#upgraded-instance-support-tagmanager-api}
 
-1. Zu Beginn der Komponente erkennt die TagManager-API, ob es sich um eine aktualisierte AEM handelt. In einem aktualisierten System werden Tags unter `/etc/tags`.
+1. Beim Start der Komponente erkennt die TagManager-API, ob es sich um eine upgegradete AEM-Instanz handelt. In einem System mit Upgrade werden Tags unter `/etc/tags` gespeichert.
 
-1. Die TagManager-API wird dann im Abwärtskompatibilitätsmodus ausgeführt, d. h. die API verwendet `/etc/tags` als Basispfad. Wenn nicht, wird ein neuer Speicherort verwendet `/content/cq:tags`.
+1. Die TagManager-API wird dann im Abwärtskompatibilitätsmodus ausgeführt, d. h. die API verwendet `/etc/tags` als Basispfad. Wenn nicht, wird ein neuer Speicherort `/content/cq:tags` verwendet.
 
 1. Aktualisieren Sie den Tag-Speicherort.
 
@@ -334,16 +336,16 @@ session.save();
 println "---------------------------------Success-------------------------------------"
 ```
 
-Das Skript ruft alle Tags ab, die `/etc/tags` im Wert von `cq:movedTo/cq:backLinks` -Eigenschaft. Anschließend wird der abgerufene Ergebnissatz durchlaufen und der `cq:movedTo` und `cq:backlinks` Eigenschaftswerte in `/content/cq:tags` Pfade (in dem Fall, dass `/etc/tags` im Wert erkannt wird).
+Das Skript ruft alle Tags ab, die `/etc/tags` im Wert der `cq:movedTo/cq:backLinks`-Eigenschaft haben. Anschließend wird der abgerufene Ergebnissatz schrittweise durchlaufen und die Eigenschaftswerte `cq:movedTo` und `cq:backlinks` werden in `/content/cq:tags` Pfade aufgelöst (in dem Fall, dass `/etc/tags` im Wert erkannt wird).
 
-### Wenn die aktualisierte AEM-Instanz auf der klassischen Benutzeroberfläche ausgeführt wird {#upgraded-instance-runs-classic-ui}
+### Wenn die upgegradete AEM-Instanz auf der klassischen Benutzeroberfläche ausgeführt wird {#upgraded-instance-runs-classic-ui}
 
 >[!NOTE]
 >
->Die klassische Benutzeroberfläche ist nicht mit Ausfallzeiten kompatibel und unterstützt keinen neuen Tag-Basispfad. Wenn Sie die klassische Benutzeroberfläche als `/etc/tags` muss erstellt werden, gefolgt von `cq-tagging` Komponenten neu starten.
+>Die klassische Benutzeroberfläche ist nicht kompatibel mit dem Konzept von null Ausfallzeiten und unterstützt keinen neuen Tag-Basispfad. Wenn Sie die klassische Benutzeroberfläche verwenden möchten, muss `/etc/tags` erstellt werden, gefolgt von einem Neustart der Komponente `cq-tagging`.
 
-Bei aktualisierten AEM von TagManager-API unterstützten Instanzen, die in der klassischen Benutzeroberfläche ausgeführt werden:
+Im Falle von upgegradeten AEM-Instanzen, die von der TagManager-API unterstützt werden und in der klassischen Benutzeroberfläche ausgeführt werden:
 
-1. Einmal verweist auf alten Tag-Basispfad `/etc/tags` werden durch TagId oder den neuen Tag-Speicherort ersetzt. `/content/cq:tags`, können Sie Tags an den neuen Speicherort migrieren `/content/cq:tags` in CRX gefolgt vom Komponenten-Neustart.
+1. Sobald Verweise auf den alten Tag-Basispfad `/etc/tags` durch die Verwendung von tagId oder den neuen Tag-Speicherort `/content/cq:tags` ersetzt wurden, können Sie Tags an den neuen Speicherort `/content/cq:tags` in CRX migrieren und anschließend die Komponente neu starten.
 
 1. Nachdem Sie Tags an den neuen Speicherort migriert haben, führen Sie das oben genannte Skript aus.

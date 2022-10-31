@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: d546462b4b78a743e047dcfea5fc2dc92d131bb5
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '1787'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -51,7 +51,7 @@ Der **Segmenteditor** ermöglicht Ihnen die einfache Veränderung eines Segment
 
 Mithilfe des Komponenten-Browsers können Sie **UND**- und **ODER**-Container zur Festlegung der Segmentlogik und anschließend zusätzliche Komponenten zum Vergleich von Eigenschaften und Werten oder Referenzskripts oder anderen Segmenten zur Definition der Auswahlkriterien (siehe [Erstellen eines neuen Segments](#creating-a-new-segment)) hinzufügen, um das genaue Szenario für die Auswahl des Segments festzulegen.
 
-Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird das Segment aufgelöst. Falls mehrere Segmente zutreffen, wird außerdem der Faktor **Verstärken** verwendet. Siehe [Erstellen eines neuen Segments](#creating-a-new-segment) Einzelheiten zu den [Verstärkungsfaktor.](/help/sites-administering/campaign-segmentation.md#boost-factor)
+Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird das Segment aufgelöst. Falls mehrere Segmente zutreffen, wird außerdem der Faktor **Verstärken** verwendet. Unter [Erstellen eines neuen Segments](#creating-a-new-segment) finden Sie weitere Details zum [Faktor „Verstärken“](/help/sites-administering/campaign-segmentation.md#boost-factor).
 
 >[!CAUTION]
 >
@@ -132,11 +132,11 @@ Die folgenden Verweise sind standardmäßig für die direkte Verknüpfung eines 
 
 ## Erstellen eines neuen Segments {#creating-a-new-segment}
 
-So legen Sie Ihr neues Segment fest:
+Festlegen eines neuen Segments
 
 1. Nachher [Zugriff auf Segmente](/help/sites-administering/segmentation.md#accessing-segments), [Navigieren zum Ordner](#organizing-segments) wo Sie das Segment erstellen möchten.
 
-1. Klicken oder tippen Sie auf die Schaltfläche Erstellen und wählen Sie **Erstellen eines ContextHub-Segments**.
+1. Klicken oder tippen Sie auf die Schaltfläche „Erstellen“ und wählen Sie **ContextHub-Segment erstellen** aus.
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
@@ -174,7 +174,7 @@ ODER
 
 Weiblich und zwischen 30 und 59
 
-Beginnen Sie damit, eine ODER-Container-Komponente innerhalb des standardmäßigen UND-Containers zu platzieren. Innerhalb des ODER-Containers fügen Sie zwei UND-Container hinzu. In beiden können Sie die Eigenschaften- oder Referenzkomponenten hinzufügen.
+Beginnen Sie damit, eine ODER-Container-Komponente innerhalb des standardmäßigen UND-Containers zu platzieren. Fügen Sie innerhalb des ODER-Containers zwei UND-Container hinzu und in diesen wiederum die Eigenschafts- oder Verweiskomponenten.
 
 ![screen_shot_2012-02-02at105145am](assets/screen_shot_2012-02-02at105145ama.png)
 
@@ -297,7 +297,7 @@ Wenn Sie viele Segmente haben, kann es schwierig werden, sie als flache Liste zu
 
 >[!NOTE]
 >
-> Es ist nicht möglich, ein Segment von einem Ordner in einen anderen zu verschieben.
+>Es ist nicht möglich, ein Segment von einem Ordner in einen anderen zu verschieben.
 
 ## Testen der Anwendung eines Segments {#testing-the-application-of-a-segment}
 

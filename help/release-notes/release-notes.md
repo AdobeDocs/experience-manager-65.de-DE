@@ -1,16 +1,16 @@
 ---
-title: Versionshinweise für [!DNL Adobe Experience Manager] 6,5
+title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Suchen Sie nach Versionsinformationen, Neuigkeiten, Installationsanleitungen und einer detaillierten Änderungsliste für [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 48f898a774d2ddd6d2c31f6a4107c71e4032cfc2
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '3281'
-ht-degree: 5%
+ht-degree: 41%
 
 ---
 
-# [!DNL Adobe Experience Manager] 6.5 Neueste Service Pack - Versionshinweise {#aem-service-pack-release-notes}
+# Versionshinweise zum neuesten [!DNL Adobe Experience Manager] 6.5 Service Pack {#aem-service-pack-release-notes}
 
 <!-- For an itemized list of all issues found in these release notes, see the following spreadsheet: https://adobe-my.sharepoint.com/:x:/r/personal/anujkapo_adobe_com/_layouts/15/Doc.aspx?sourcedoc=%7B3ea81ae4-e605-4153-b132-f2698c86f84e%7D&action=edit&wdinitialsession=d8c7b903-87fc-4f2d-9ef2-542a82169570&wdrldsc=3&wdrldc=1&wdrldr=SessionMemoryQuotaExceededDuringSession&cid=a915e87c-369a-480c-9daf-d13efc766798 -->
 
@@ -21,11 +21,11 @@ ht-degree: 5%
 | Version | 6.5.14.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Typ | Service Pack-Version |
 | Datum | 25. August 2022 <!-- UPDATE FOR EACH NEW RELEASE --> |
-| Download-URL | [Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.14.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Download-URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.14.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
-## Was ist enthalten in [!DNL Experience Manager] 6.5.14.0 {#what-is-included-in-aem-6514}
+## Was in [!DNL Experience Manager] 6.5.14.0 enthalten ist {#what-is-included-in-aem-6514}
 
-[!DNL Experience Manager] 6.5.14.0 umfasst neue Funktionen, wichtige von Kunden angeforderte Verbesserungen, Fehlerbehebungen sowie Leistungs-, Stabilitäts- und Sicherheitsverbesserungen, die seit der ersten Verfügbarkeit von 6.5 im April 2019 veröffentlicht wurden. [Dieses Service Pack installieren](#install) on [!DNL Experience Manager] 6.5. <!-- UPDATE FOR EACH NEW RELEASE -->
+[!DNL Experience Manager] 6.5.14.0 umfasst neue Funktionen, wichtige von Kunden angeforderte Verbesserungen, Fehlerbehebungen sowie Leistungs-, Stabilitäts- und Sicherheitsverbesserungen, die seit der ersten Verfügbarkeit von 6.5 im April 2019 veröffentlicht wurden. [Installieren Sie dieses Service Pack](#install) auf [!DNL Experience Manager] 6.5. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 <!-- Some of the key features and improvements are the following:
 
@@ -84,7 +84,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
-> Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
+>Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
 
 >[!NOTE]
 >
@@ -119,10 +119,10 @@ ht-degree: 5%
 * Die Funktion für Scribble-Signaturen ist nicht mit den Richtlinien für Barrierefreiheit kompatibel. (NPR-37596)
 * AEM Forms verwendet log4j 1.x. Die Unterstützung für log4j 1.x wurde eingestellt. (NPR-38273)
 * Wenn Sie die MSSQL-Datenbank als Datenquelle in einem Formulardatenmodell verwenden und Werte abrufen, werden die Zahlen nach der Dezimalzahl in den Abrufwerten abgeschnitten. (CQ-4346190)
-* Wenn Sie in Forms 6.5 Designer ein mit Forms 6.1 Designer erstelltes Formular öffnen und ein Textfeld bearbeiten, überschreitet der Absatzabstand den angegebenen Platz. Alle vorherigen Einstellungen des Bereichs werden entfernt und eine manuelle Neuformatierung des Textfelds ist erforderlich. (CQ-4341899)
+* Wenn in Forms 6.5 Designer ein mit Forms 6.1 Designer erstelltes Formular geöffnet und ein Textfeld bearbeitet wird, überschreitet der Absatzabstand den angegebenen Abstand. Alle früheren Einstellungen für den Abstand werden entfernt und das Textfeld muss manuell neu formatiert werden. (CQ-4341899)
 * Für den Barcode SSCC-18 wird ein falscher Wert angezeigt. Auf Forms-Servern wird der Wert im rechten Teil des Barcodes weggelassen. (CQ-4342400)
-* Bei statischen PDF forms, die mit Forms 6.5 Designer erstellt wurden, schlägt die PDF-Barrierefreiheit mit einem Fehler fehl `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
-* Es wurde die Möglichkeit hinzugefügt, in Forms Designer &quot;Reader für Hyperlinks&quot;festzulegen.(NPR-36221)
+* Bei statischen PDF-Formularen, die mit Forms 6.5 Designer erstellt wurden, schlägt die Barrierefreiheit von PDF mit dem Fehler `Tab order entry in page with annotations not set to "S"` fehl. (CQ-4343117)
+* Es wurde die Möglichkeit hinzugefügt, in Forms Designer „Screen Reader für Hyperlinks“ festzulegen.(NPR-36221)
 * Wenn Sie einem adaptiven Formular ohne XFA wiederholbare Bereiche hinzufügen und die Anzahl der wiederholbaren Bereiche in einem Nicht-XFA-Formular mehr als 15 beträgt, kann das Hinzufügen einer neuen Instanz bis zu 7-8 Sekunden dauern. (NPR-37346)
 
 ## Integrationen {#integrations-6514}
@@ -131,7 +131,7 @@ ht-degree: 5%
 * JavaScript ES6 (ESMAScript6-Modus oder höher)-Kompilierungsunterstützung für die Minimierung der `/libs/cq/testandtarget/clientlibs/testandtarget/util.js` -Bibliothek. (NPR-38435)
 * Je mehr Inhalt es in `/content/campaigns`, je länger der Aufruf von `targeteditor.html` (`/libs/cq/personalization/touch-ui/content/targeteditor.html`) wird beim Öffnen des Seiteneditors ausgeführt. (NPR-38663)
 
-## Plattform {#platform-6514}
+## Platform {#platform-6514}
 
 * Die Anmeldung bei Package Manager zur Bereitstellung von Updates ist nicht möglich. (NPR-38646)
 * In der Benutzeroberfläche der Asset-Tag-Auswahl werden Tags in der Reihenfolge angezeigt, in der sie erstellt wurden. Wenn jedoch viele Tags vorhanden sind, ist es schwierig, die Tags anzuzeigen und zu verwalten, da sie nicht sortiert werden können. (CQ-4344279)
@@ -148,9 +148,9 @@ ht-degree: 5%
 
 * Wenn Sie in Experience Manager Sites die **[!UICONTROL Anzeigeformat wechseln und Anzeigeeinstellung anpassen]** Schaltfläche und wählen Sie **[!UICONTROL Listenansicht]**, die **[!UICONTROL Drag &amp; Drop]** -Schaltfläche fehlt ein zugänglicher Name. (SITES-2863, NPR-38760)
 * Die Bildschirmlesehilfe muss den zugänglichen Namen ankündigen, z. B. `Show description for Archive` oder `Show description for mini shopping cart`. Der aktuelle barrierefreie Name wird jedoch als `Info Circle button show description` für _all_ die Schaltflächen für QuickInfo-Informationen. (SITES-3104)
-* Verbessern Sie die Rückgängigmachung für Komponenten, die nicht über die Funktion inlineEditing oder dropTarget verfügen in `cq:editConfig`. (NPR-38361) <!-- version 2 (old) of the description above * When out of the box components that don't have inlineEditing or dropTarget feature in the _cq_editConfig file (navigation, breadcrumb, embed) are deleted > undeleted (by way of Undo), all configurations are lost and empty placeholder reappears. Component must be reconfigured from scratch. (NPR-38361) -->
+* Verbesserung des Rückgängigmachens für Komponenten, die keine inlineEditing- oder dropTarget-Funktion in `cq:editConfig` haben. (NPR-38361) <!-- version 2 (old) of the description above * When out of the box components that don't have inlineEditing or dropTarget feature in the _cq_editConfig file (navigation, breadcrumb, embed) are deleted > undeleted (by way of Undo), all configurations are lost and empty placeholder reappears. Component must be reconfigured from scratch. (NPR-38361) -->
 * Die Dropdown-Liste &quot;Stilsystem&quot;wurde möglicherweise oben auf der Seite anstelle der Komponente im Kontext positioniert - für Komponenten, die `cq:editConfig` &quot;afteredit: REFRESH_PAGE&quot;. (NPR-38384) <!-- version 2 (old) of description above* When selecting a style option on a component, the Styles box shifts to the upper left corner of the screen, rather than staying put below the style icon. Happens for components that have  cq:editConfig "afteredit: REFRESH_PAGE". (NPR-38384) -->
-* Die Textkomponente ist beim Hinzufügen zu verschachtelten Layout-Containern falsch ausgerichtet. (NPR-38193)
+* Die Textkomponente ist falsch ausgerichtet, wenn sie zu verschachtelten Layout-Containern hinzugefügt wird. (NPR-38193)
 * Es wurde eine leere Stilregisterkarte angezeigt, wenn keine Stilsystemkonfiguration für eine Komponente vorhanden war. Die Registerkarte ist jetzt ausgeblendet, wenn keine Konfiguration vorhanden ist. (NPR-38218) <!-- version 2 (old) of description above * Style tab is blank on components without styles/policies. (NPR-38218) -->
 * Die Eigenschaft `useLegacyResponsiveBehaviour` funktioniert nur bei der Authentifizierung. (NPR-37996)
 
@@ -198,62 +198,62 @@ ht-degree: 5%
 * JavaScript ES6 (ESMAScript6-Modus oder höher)-Kompilierungsunterstützung für die Minimierung der `/libs/cq/inbox/gui/components/inbox/clientlibs/commons.js` -Bibliothek. (NPR-38304)
 * Nachdem der Workflow ausgeführt und die Prozessschritte abgeschlossen sind, wird derselbe Kommentar mehrmals wiederholt. (NPR-38364)
 
-## Installieren [!DNL Experience Manager] 6.5.14.0 {#install}
+## Installieren von [!DNL Experience Manager] 6.5.14.0 {#install}
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
 * [!DNL Experience Manager] 6.5.14.0 erfordert [!DNL Experience Manager] 6.5. Siehe [Upgrade-Dokumentation](/help/sites-deploying/upgrade.md) für detaillierte Anweisungen. <!-- UPDATE FOR EACH NEW RELEASE -->
-* Der Service Pack-Download ist auf Adobe verfügbar. [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
-* Installieren Sie bei einer Bereitstellung mit MongoDB und mehreren Instanzen [!DNL Experience Manager] 6.5.14.0 auf einer der Autoreninstanzen, die Package Manager verwenden.<!-- UPDATE FOR EACH NEW RELEASE -->
+* Der Download des Service Packs ist über die Adobe [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) verfügbar.
+* Bei einer Bereitstellung mit MongoDB und mehreren Instanzen installieren Sie [!DNL Experience Manager] 6.5.14.0 mit dem Package Manager auf einer der Authoreninstanzen.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!NOTE]
 >
->Adobe rät davon ab, die [!DNL Experience Manager] 6.5.14.0-Paket. <!-- UPDATE FOR EACH NEW RELEASE -->
+>Adobe rät davon ab, das [!DNL Experience Manager] 6.5.14.0-Paket zu entfernen oder zu deinstallieren. <!-- UPDATE FOR EACH NEW RELEASE -->
 
-### Installieren Sie das Service Pack auf [!DNL Experience Manager] 6,5 {#install-service-pack}
+### Installieren des Service Packs auf [!DNL Experience Manager] 6.5 {#install-service-pack}
 
-1. Starten Sie die Instanz vor der Installation neu, wenn sich die Instanz im Aktualisierungsmodus befindet (wenn die Instanz von einer früheren Version aktualisiert wurde). Adobe empfiehlt einen Neustart, wenn die aktuelle Betriebszeit für eine Instanz hoch ist.
+1. Starten Sie die Instanz vor der Installation neu, wenn sich die Instanz im Update-Modus befindet (wenn die Instanz von einer früheren Version aktualisiert wurde). Adobe empfiehlt einen Neustart, wenn die aktuelle Betriebszeit für eine Instanz hoch ist.
 
-1. Erstellen Sie vor der Installation einen Schnappschuss oder eine neue Sicherung Ihrer [!DNL Experience Manager] -Instanz.
+1. Erstellen Sie vor der Installation eine Momentaufnahme oder ein neues Backup Ihrer [!DNL Experience Manager]-Instanz.
 
-1. Laden Sie das Service Pack herunter von [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.14.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
+1. Laden Sie das Service Pack von [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.14.0.zip) herunter. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. Öffnen Sie Package Manager und wählen Sie **[!UICONTROL Paket hochladen]** , um das Paket hochzuladen. Weitere Informationen finden Sie unter [Package Manager](/help/sites-administering/package-manager.md).
 
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
-1. Um den S3-Connector zu aktualisieren, beenden Sie die Instanz nach der Installation des Service Packs, ersetzen Sie den vorhandenen Connector durch eine neue Binärdatei, die im Installationsordner bereitgestellt wird, und starten Sie die Instanz neu. Siehe [Amazon S3-Datenspeicher](/help/sites-deploying/data-store-config.md#upgrading-to-a-new-version-of-the-s-connector).
+1. Um den S3-Connector zu aktualisieren, stoppen Sie die Instanz nach der Installation des Service Packs, ersetzen Sie den vorhandenen Connector durch eine neue Binärdatei, die im Installationsordner bereitgestellt wird, und starten Sie die Instanz neu. Weitere Informationen finden Sie unter [Amazon S3-Datenspeicher](/help/sites-deploying/data-store-config.md#upgrading-to-a-new-version-of-the-s-connector).
 
 >[!NOTE]
 >
->Das Dialogfeld auf der Benutzeroberfläche von Package Manager wird manchmal während der Installation des Service Packs beendet. Adobe empfiehlt, auf die Stabilisierung von Fehlerprotokollen zu warten, bevor auf die Bereitstellung zugegriffen wird. Warten Sie auf die spezifischen Protokolle im Zusammenhang mit der Deinstallation des Aktualisierungs-Bundles, bevor Sie sicherstellen, dass die Installationen erfolgreich sind. Normalerweise tritt dieses Problem in [!DNL Safari] -Browser, kann jedoch gelegentlich in jedem Browser auftreten.
+>Der Dialog auf der Package Manager-Benutzeroberfläche wird manchmal während der Installation des Service Packs beendet. Adobe empfiehlt, auf die Stabilisierung von Fehlerprotokollen zu warten, bevor auf die Bereitstellung zugegriffen wird. Warten Sie auf die spezifischen Protokolle für die Deinstallation des Aktualisierungspakets, bevor Sie sich vergewissern, dass die Installation erfolgreich war. Normalerweise tritt dieses Problem im [!DNL Safari]-Browser auf, kann jedoch gelegentlich in jedem Browser auftreten.
 
 **Automatische Installation**
 
-Es gibt zwei verschiedene Methoden, mit denen Sie automatisch installieren können [!DNL Experience Manager] 6.5.14.0.<!-- UPDATE FOR EACH NEW RELEASE -->
+Es gibt zwei verschiedene Methoden, mit denen Sie [!DNL Experience Manager] 6.5.14.0 automatisch installieren können.<!-- UPDATE FOR EACH NEW RELEASE -->
 
-* Platzieren Sie das Paket in `../crx-quickstart/install` Ordner, wenn der Server online verfügbar ist. Das Paket wird automatisch installiert.
-* Verwenden Sie die [HTTP-API von Package Manager](/help/sites-administering/package-manager.md#package-share). Verwendung `cmd=install&recursive=true` damit die verschachtelten Pakete installiert werden.
-
->[!NOTE]
->
->Experience Manager 6.5.14.0 unterstützt nicht die Installation von Bootstraps. <!-- UPDATE FOR EACH NEW RELEASE -->
-
-**Installation überprüfen**
-
-Informationen zu den Plattformen, die für diese Version zertifiziert sind, finden Sie in der [technische Anforderungen](/help/sites-deploying/technical-requirements.md).
-
-1. Die Seite mit den Produktinformationen (`/system/console/productinfo`) zeigt die aktualisierte Versionszeichenfolge an `Adobe Experience Manager (6.5.14.0)` under [!UICONTROL Installierte Produkte]. <!-- UPDATE FOR EACH NEW RELEASE -->
-
-1. Alle OSGi-Bundles sind entweder **[!UICONTROL AKTIV]** oder **[!UICONTROL FRAGMENT]** in der OSGi-Konsole (Webkonsole verwenden: `/system/console/bundles`).
-
-1. Das OSGi-Bundle `org.apache.jackrabbit.oak-core` ist Version 1.22.12 oder höher (Webkonsole verwenden: `/system/console/bundles`). <!-- NPR-38747 -->
-
-### Installieren [!DNL Experience Manager] Forms Add-On-Paket {#install-aem-forms-add-on-package}
+* Platzieren Sie das Paket in den Ordner `../crx-quickstart/install`, wenn der Server online verfügbar ist. Das Paket wird automatisch installiert.
+* Verwenden Sie die [HTTP-API von Package Manager](/help/sites-administering/package-manager.md#package-share). Verwenden Sie `cmd=install&recursive=true`, damit die verschachtelten Pakete installiert werden.
 
 >[!NOTE]
 >
->Überspringen, wenn Sie [!DNL Experience Manager] Forms.
+>Experience Manager 6.5.14.0 unterstützt keine Bootstrap-Installation. <!-- UPDATE FOR EACH NEW RELEASE -->
+
+**Validierung der Installation**
+
+Informationen zu den Plattformen, die für diese Version zertifiziert sind, finden Sie in den [technischen Anforderungen](/help/sites-deploying/technical-requirements.md).
+
+1. Die Seite mit den Produktinformationen (`/system/console/productinfo`) zeigt die aktualisierte Versionszeichenfolge `Adobe Experience Manager (6.5.14.0)` unter [!UICONTROL Installierte Produkte] an. <!-- UPDATE FOR EACH NEW RELEASE -->
+
+1. Alle OSGi-Bundles sind in der OSGi-Konsole entweder **[!UICONTROL AKTIV]** oder **[!UICONTROL FRAGMENT]** (Zu verwendende Web-Konsole: `/system/console/bundles`).
+
+1. Das OSGi-Paket `org.apache.jackrabbit.oak-core` ist Version 1.22.12 oder höher (Zu verwendende Webkonsole: `/system/console/bundles`). <!-- NPR-38747 -->
+
+### Installieren des [!DNL Experience Manager] Forms Add-On-Pakets {#install-aem-forms-add-on-package}
+
+>[!NOTE]
+>
+>Überspringen Sie diesen Schritt, wenn Sie [!DNL Experience Manager] Forms nicht verwenden.
 
 <!-- 
 
@@ -261,22 +261,22 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 -->
 
-1. Stellen Sie sicher, dass Sie die [!DNL Experience Manager] Service Pack.
-1. Wählen Sie unter den aufgeführten [AEM Forms-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) das für Ihr Betriebssystem passende Forms-Add-on-Paket aus und laden Sie es herunter.
-1. Installieren Sie das Forms-Add-On-Paket wie unter [Installieren von Add-On-Paketen für AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
-1. Wenn Sie Briefe in Experience Manager 6.5 Forms verwenden, installieren Sie die [neuestes AEMFD-Kompatibilitätspaket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates).
+1. Installieren sie unbedingt das [!DNL Experience Manager] Service Pack.
+1. Wählen Sie unter den aufgeführten [AEM Forms-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de#forms-updates) das für Ihr Betriebssystem passende Forms-Add-on-Paket aus und laden Sie es herunter.
+1. Installieren Sie das Forms-Add-on-Paket wie unter [Installieren des AEM Forms-Add-on-Pakets](/help/forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package) beschrieben.
+1. Wenn Sie in Experience Manager 6.5 Forms Briefe verwenden, installieren Sie das [neueste AEMFD-Kompatibilitätspaket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates).
 
-### Installieren [!DNL Experience Manager] Forms on JEE {#install-aem-forms-jee-installer}
-
->[!NOTE]
->
->Überspringen Sie diesen Schritt, wenn Sie AEM Forms JEE nicht verwenden. Fehlerbehebungen in [!DNL Experience Manager] Forms on JEE wird über ein separates Installationsprogramm bereitgestellt.
-
-Informationen zum Installieren des kumulativen Installationsprogramms für [!DNL Experience Manager] Informationen zur Konfiguration von Forms on JEE und nach der Bereitstellung finden Sie unter [Versionshinweise](jee-patch-installer-65.md).
+### Installieren von [!DNL Experience Manager] Forms on JEE {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
->Nach der Installation des kumulativen Installationsprogramms für [!DNL Experience Manager] Forms on JEE, installieren Sie das neueste Add-On-Paket für Forms, löschen Sie das Add-On-Paket für Forms aus dem `crx-repository\install` und starten Sie den Server neu.
+>Überspringen Sie diesen Schritt, wenn Sie AEM Forms JEE nicht verwenden. Fehlerbehebungen in [!DNL Experience Manager] Forms on JEE werden über ein separates Installationsprogramm bereitgestellt.
+
+Informationen zum Installieren des kumulativen Installationsprogramms für [!DNL Experience Manager] Forms on JEE und zur Konfiguration nach der Implementierung finden Sie in den [Versionshinweisen ](jee-patch-installer-65.md).
+
+>[!NOTE]
+>
+>Nachdem Sie das kumulative Installationsprogramm für [!DNL Experience Manager] Forms on JEE installiert haben, installieren Sie das neueste Forms-Add-on-Paket, löschen das Forms-Add-on-Paket aus dem Ordner `crx-repository\install` und starten Sie den Server neu.
 
 ### UberJar {#uber-jar}
 
@@ -286,7 +286,7 @@ Das UberJar für [!DNL Experience Manager] 6.5.13.0 ist im [Maven Central Reposi
 >
 >Beachten Sie in Experience Manager 6.5.14.0, dass die UberJar-Version (6.5.13.0) mit der vorherigen Version identisch bleibt.
 
-Informationen zur Verwendung von UberJar in einem Maven-Projekt finden Sie unter [Verwendung von UberJar](/help/sites-developing/ht-projects-maven.md) und fügen Sie die folgende Abhängigkeit in Ihr Projekt-POM ein: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+Um UberJar in einem Maven-Projekt zu verwenden, lesen Sie bitte [Verwendung von UberJar](/help/sites-developing/ht-projects-maven.md) und nehmen Sie die folgende Abhängigkeit in Ihr Projekt-POM auf: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
 ```shell
 <dependency>
@@ -299,18 +299,18 @@ Informationen zur Verwendung von UberJar in einem Maven-Projekt finden Sie unter
 
 >[!NOTE]
 >
->UberJar und die anderen zugehörigen Artefakte sind im Maven Central Repository anstatt im Adobe Public Maven Repository verfügbar (`repo.adobe.com`). Die UberJar-Hauptdatei wird in `uber-jar-<version>.jar`. Es gibt also keine `classifier`, mit `apis` als Wert für die `dependency` -Tag.
+>UberJar und die anderen zugehörigen Artefakte sind im Maven Central Repository anstatt im Adobe Public Maven Repository (`repo.adobe.com`) verfügbar. Die UberJar-Hauptdatei wird in `uber-jar-<version>.jar` umbenannt. Es gibt also keinen `classifier` mit `apis` als Wert für den `dependency`-Tag.
 
 ## Veraltete Funktionen {#removed-deprecated-features}
 
-Im Folgenden finden Sie eine Liste der Funktionen, die als veraltet gekennzeichnet sind mit [!DNL Experience Manager] 6.5.7.0. Funktionen werden als veraltet markiert und später in einer zukünftigen Version entfernt. Eine alternative Option wird bereitgestellt.
+Im Folgenden finden Sie eine Liste der Funktionen, die ab [!DNL Experience Manager] 6.5.7.0 als veraltet gekennzeichnet sind. Funktionen werden als veraltet markiert und später in einer zukünftigen Version entfernt. Eine alternative Option wird bereitgestellt.
 
-Überprüfen Sie, ob Sie eine Funktion oder Funktion in einer Bereitstellung verwenden. Planen Sie außerdem, die Implementierung zu ändern, um eine alternative Option zu verwenden.
+Überprüfen Sie, ob Sie ein Feature oder eine Funktion in einer Bereitstellung verwenden. Planen Sie außerdem, die Implementierung zu ändern, sodass sie eine alternative Option verwendet.
 
 | Bereich | Funktion | Ersatz |
 |---|---|---|
-| Integrationen | Die **[!UICONTROL AEM Cloud Services-Opt-in]** Der Bildschirm wird nicht mehr unterstützt, da die Variable [!DNL Experience Manager] und [!DNL Adobe Target] -Integration aktualisiert in [!DNL Experience Manager] 6.5. Die Integration unterstützt die Adobe Target Standard-API. Die API verwendet die Authentifizierung über Adobe IMS und [!DNL Adobe I/O Runtime]. Es unterstützt die wachsende Rolle von Adobe Launch bei der Instrumentierung [!DNL Experience Manager] Seiten für Analysen und Personalisierung verwenden, ist der Opt-in-Assistent funktionell irrelevant. | Konfigurieren von Systemverbindungen, Adobe IMS-Authentifizierung und [!DNL Adobe I/O Runtime] Integrationen über die entsprechenden [!DNL Experience Manager] Cloud-Services. |
-| Connectoren | Der Adobe JCR Connector für Microsoft® SharePoint 2010 und Microsoft® SharePoint 2013 wird nicht mehr unterstützt für [!DNL Experience Manager] 6.5. | Nicht zutreffend |
+| Integrationen | Der **[!UICONTROL AEM Cloud Services-Anmeldebildschirm]** ist veraltet, da die [!DNL Experience Manager]- und [!DNL Adobe Target]-Integration in [!DNL Experience Manager] 6.5 aktualisiert wurde. Die Integration unterstützt die Adobe Target Standard-API. Die API verwendet die Authentifizierung über Adobe IMS und [!DNL Adobe I/O Runtime]. Sie unterstützt die wachsende Rolle von Adobe Launch, um [!DNL Experience Manager]-Seiten für Analysen und Personalisierung zu instrumentieren, der Assistent für die Anmeldung ist funktionell irrelevant. | Konfigurieren Sie Systemverbindungen, Adobe IMS-Authentifizierung und [!DNL Adobe I/O Runtime]-Integrationen über die jeweiligen [!DNL Experience Manager]-Cloud-Services. |
+| Connectoren | Der Adobe JCR-Connector für Microsoft® SharePoint 2010 und Microsoft® SharePoint 2013 wird für [!DNL Experience Manager] 6.5 nicht mehr unterstützt. | Nicht zutreffend |
 
 ## Bekannte Probleme {#known-issues}
 
@@ -320,27 +320,27 @@ Im Folgenden finden Sie eine Liste der Funktionen, die als veraltet gekennzeichn
 * [AEM Inhaltsfragment mit GraphQL-Indexpaket 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
 Dieses Paket ist für Kunden erforderlich, die GraphQL verwenden. Dadurch können sie die erforderliche Indexdefinition hinzufügen, die auf den tatsächlich verwendeten Funktionen basiert.
 
-* As [!DNL Microsoft® Windows Server 2019] unterstützt nicht [!DNL MySQL 5.7] und [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] unterstützt keine Turnkey-Installationen für [!DNL AEM Forms 6.5.10.0].
+* Da [!DNL Microsoft® Windows Server 2019] [!DNL MySQL 5.7] und [!DNL JBoss® EAP 7.1] nicht unterstützt, unterstützt [!DNL Microsoft® Windows Server 2019] keine Turnkey-Installationen für [!DNL AEM Forms 6.5.10.0].
 
-* Wenn Sie ein Upgrade [!DNL Experience Manager] -Instanz von 6.5 bis 6.5.10.0, können Sie `RRD4JReporter` Ausnahmen `error.log` -Datei. Um das Problem zu beheben, starten Sie die Instanz neu.
+* Wenn Sie für Ihre [!DNL Experience Manager]-Instanz ein Upgrade von der Version 6.5 auf 6.5.10.0 durchführen, können Sie `RRD4JReporter`-Ausnahmefehler in der Datei `error.log` anzeigen. Um dieses Problem zu beheben, starten Sie die Instanz neu.
 
-* Wenn Sie [!DNL Experience Manager] 6.5 Service Pack 10 oder ein vorheriges Service Pack auf [!DNL Experience Manager] 6.5, die Laufzeitkopie Ihres benutzerdefinierten Asset-Workflow-Modells (erstellt in `/var/workflow/models/dam`) gelöscht.
-Um Ihre Laufzeitkopie abzurufen, empfiehlt Adobe, die Entwurfszeitkopie des benutzerdefinierten Workflow-Modells mit der Laufzeitkopie mithilfe der HTTP-API zu synchronisieren:
+* Wenn Sie [!DNL Experience Manager] 6.5 Service Pack 10 oder ein früheres Service Pack auf [!DNL Experience Manager] 6.5 installieren, wird die Laufzeitkopie des benutzerdefinierten Asset-Workflow-Modells (erstellt in `/var/workflow/models/dam`) gelöscht.
+Um Ihre Laufzeitkopie abzurufen, empfiehlt Adobe, die Entwurfszeitkopie des benutzerdefinierten Workflow-Modells mithilfe der HTTP-API mit der Laufzeitkopie zu synchronisieren:
    `<designModelPath>/jcr:content.generate.json`.
 
-* Benutzer können einen Ordner in einer Hierarchie in [!DNL Assets] und veröffentlichen Sie einen verschachtelten Ordner in [!DNL Brand Portal]. Der Titel des Ordners wird jedoch nicht aktualisiert in [!DNL Brand Portal] bis die Veröffentlichung des Stammordners erfolgt ist.
+* Benutzer können einen Ordner in einer Hierarchie in [!DNL Assets] umbenennen und einen verschachtelten Ordner in [!DNL Brand Portal] veröffentlichen. Der Titel des Ordners wird jedoch erst dann in [!DNL Brand Portal] aktualisiert, wenn der Stammordner erneut veröffentlicht wird.
 
-* Wenn ein Benutzer ein Feld zum ersten Mal in einem adaptiven Formular konfigurieren möchte, wird die Option zum Speichern einer Konfiguration nicht im Eigenschaftenbrowser angezeigt. Wenn Sie im selben Editor ein anderes Feld des adaptiven Formulars konfigurieren, wird das Problem behoben.
+* Wenn ein Benutzer ein Feld zum ersten Mal in einem adaptiven Formular konfiguriert, wird die Option zum Speichern einer Konfiguration nicht im Eigenschaften-Browser angezeigt. Das Konfigurieren eines anderen Feldes des adaptiven Formulars im selben Editor behebt das Problem.
 
-* Die folgenden Fehler und Warnmeldungen können während der Installation von [!DNL Experience Manager] 6.5.x.x:
+* Die folgenden Fehler und Warnmeldungen können während der Installation von [!DNL Experience Manager] 6.5.x.x angezeigt werden:
    * &quot;Wenn die Adobe Target-Integration in [!DNL Experience Manager] über die Target Standard-API (IMS-Authentifizierung) und dann über den Export von Experience Fragments in Target werden falsche Angebotstypen erstellt. Anstelle des Typs &quot;Experience Fragment&quot;bzw. der Quelle &quot;Adobe Experience Manager&quot;erstellt Target mehrere Angebote mit dem Typ &quot;HTML&quot;bzw. der Quelle &quot;Adobe Target Classic&quot;.
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: Keine Wartungsfenster unter granite/operations/maintenance gefunden.
-   * Die serverseitige Validierung des adaptiven Formulars schlägt fehl, wenn Aggregatfunktionen wie SUM, MAX und MIN verwendet werden. (CQ-4274424)
-   * `com.adobe.granite.maintenance.impl.TaskScheduler` - Keine Wartungsfenster unter granite/operations/maintenance gefunden.
-   * Hotspot in einem interaktiven Dynamic Media-Bild ist bei der Vorschau des Assets über den Viewer für Shop-fähige Banner nicht sichtbar.
+   * Die Server-seitige Validierung des adaptiven Formulars schlägt fehl, wenn Aggregatfunktionen wie SUM, MAX und MIN verwendet werden. (CQ-4274424)
+   * `com.adobe.granite.maintenance.impl.TaskScheduler` – Keine Wartungsfenster unter granite/operations/maintenance gefunden.
+   * Der Hotspot in einem interaktiven Dynamic Media-Bild ist nicht sichtbar, wenn Sie eine Vorschau des Assets mit dem Viewer für Banner mit Shopping-Funktion anzeigen.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Zeitüberschreitung, die darauf wartet, dass die Registrierungsänderung abgeschlossen wird, um die Registrierung abzuschließen.
 
-* Beim Versuch, Inhaltsfragmente oder Sites/Seiten zu verschieben/zu löschen/zu veröffentlichen, tritt ein Problem beim Abrufen von Inhaltsfragmentverweisen auf, da die Hintergrundabfrage fehlschlägt. d. h. die Funktionalität funktioniert nicht.
+* Wenn Sie versuchen, entweder Inhaltsfragmente oder Websites/Seiten zu verschieben/löschen/veröffentlichen, gibt es ein Problem, wenn Inhaltsfragmentreferenzen abgerufen werden, da die Hintergrundabfrage fehlschlägt; d. h. die Funktionalität ist nicht verfügbar.
 Um den korrekten Vorgang sicherzustellen, müssen Sie die folgenden Eigenschaften zum Indexdefinitionsknoten hinzufügen `/oak:index/damAssetLucene` (keine Neuindizierung erforderlich):
 
    ```xml
@@ -350,23 +350,23 @@ Um den korrekten Vorgang sicherzustellen, müssen Sie die folgenden Eigenschafte
    "refresh": true
    ```
 
-## OSGi-Bundles und Inhaltspakete enthalten {#osgi-bundles-and-content-packages-included}
+## Enthaltene OSGI-Pakete und Inhaltspakete {#osgi-bundles-and-content-packages-included}
 
-In den folgenden Textdokumenten werden die in [!DNL Experience Manager] 6.5.14.0: <!-- UPDATE FOR EACH NEW RELEASE -->
+In den nachfolgenden Textdokumenten sind die in [!DNL Experience Manager] 6.5.14.0 enthaltenen OSGi-Bundles und Inhaltspakete aufgeführt: <!-- UPDATE FOR EACH NEW RELEASE -->
 
-* [Liste der in Experience Manager 6.5.14.0 enthaltenen OSGi-Bundles](/help/release-notes/assets/65140_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [Liste der in Experience Manager 6.5.14.0 enthaltenen OSGi-Pakete](/help/release-notes/assets/65140_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 * [Liste der in Experience Manager 6.5.14.0 enthaltenen Inhaltspakete](/help/release-notes/assets/65140_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Eingeschränkte Websites {#restricted-sites}
 
-Diese Websites stehen nur Kunden zur Verfügung. Wenn Sie Kunde sind und Zugriff benötigen, wenden Sie sich an Ihren Adobe Account Manager.
+Diese Websites sind nur für Kunden verfügbar. Wenn Sie Kunde sind und Zugriff benötigen, wenden Sie sich an Ihren Adobe Account Manager.
 
 * [Produktdownload unter licensing.adobe.com](https://licensing.adobe.com/)
-* [Support für Adobe kontaktieren](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
+* [Wenden Sie sich an den Adobe-Kundendienst](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=de).
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] Produktseite](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] 6.5 Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=de)
+>* [[!DNL Experience Manager] Produktseite](https://business.adobe.com/de/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] Dokumentation zu 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=de)
 >* [Abonnieren von Adobe-Prioritäts-Produkt-Updates](https://www.adobe.com/subscription/priority-product-update.html)
 

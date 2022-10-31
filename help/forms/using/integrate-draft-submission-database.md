@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '1467'
 ht-degree: 100%
@@ -122,7 +122,7 @@ unter https://[*host*]:[*port*]/system/console/configMgr.
   </tr>
   <tr>
    <td>Max. aktive Verbindungen</td>
-   <td>1000</td>
+   <td>1.000</td>
   </tr>
   <tr>
    <td>Max. inaktive Verbindungen</td>
@@ -161,9 +161,8 @@ unter https://[*host*]:[*port*]/system/console/configMgr.
 
 >[!NOTE]
 >
-> * Der JDBC-Treiber für MySQL wird nicht mit dem Beispiel geliefert. Stellen Sie sicher, dass Sie ihn bereitgestellt haben, und geben Sie die erforderlichen Informationen ein, um den JDBC-Verbindungspool zu konfigurieren.
-> * Zeigen Sie mit Ihren Autor- und Veröffentlichungsinstanzen, um dieselbe Datenbank zu verwenden. Der Wert des URI-Feldes für die JDBC-Verbindung muss für alle Autoren- und Veröffentlichungsinstanzen gleich sein.
->
+>* Der JDBC-Treiber für MySQL wird nicht mit dem Beispiel geliefert. Stellen Sie sicher, dass Sie ihn bereitgestellt haben, und geben Sie die erforderlichen Informationen ein, um den JDBC-Verbindungspool zu konfigurieren.
+>* Zeigen Sie mit Ihren Autor- und Veröffentlichungsinstanzen, um dieselbe Datenbank zu verwenden. Der Wert des URI-Feldes für die JDBC-Verbindung muss für alle Autoren- und Veröffentlichungsinstanzen gleich sein.
 
 
 1. Belassen Sie die anderen Konfigurationen und klicken Sie auf **[!UICONTROL Speichern]**.

@@ -6,16 +6,16 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: bb8dbb9069c4575af62a4d0b21195cee75944fea
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '3583'
-ht-degree: 66%
+ht-degree: 90%
 
 ---
 
 # Konfigurieren von Knotenspeichern und Datenspeichern in AEM 6{#configuring-node-stores-and-data-stores-in-aem}
 
-## Einführung    {#introduction}
+## Einführung {#introduction}
 
 In Adobe Experience Manager (AEM) können Binärdaten unabhängig von den Inhaltsknoten gespeichert werden. Die Binärdaten werden in einem Datenspeicher abgelegt, Inhaltsknoten in einem Knotenspeicher.
 
@@ -26,7 +26,7 @@ Sowohl Daten- als auch Knotenspeicher können mithilfe der OSGi-Konfiguration ei
 Um sowohl Knoten- als auch Datenspeicher zu konfigurieren, führen Sie diese Schritte aus:
 
 1. Kopieren Sie die AEM-Schnellstart-JAR-Datei in das Installationsverzeichnis.
-1. Ordner erstellen `crx-quickstart/install` im Installationsverzeichnis.
+1. Erstellen Sie einen Ordner `crx-quickstart/install` im Installationsverzeichnis.
 1. Konfigurieren Sie zunächst den Knotenspeicher, indem Sie eine Konfigurationsdatei mit dem Namen der zu verwendenden Knotenspeicher-Option im Verzeichnis `crx-quickstart/install` erstellen.
 
    Der Knotenspeicher „Dokument“ (die Basis der AEM-MongoMK-Implementierung) nutzt etwa die Datei `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`.
@@ -46,26 +46,26 @@ Um sowohl Knoten- als auch Datenspeicher zu konfigurieren, führen Sie diese Sch
 >
 >Neuere Versionen von Oak nutzen ein neues Benennungsschema und Format für OSGi-Konfigurationsdateien. Das neue Benennungsschema setzt voraus, dass die Konfigurationsdatei mit **.config** benannt wird. Das neue Format erfordert die Eingabe von Werten und ist [hier dokumentiert](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
 >
->Wenn Sie von einer älteren Oak-Version aktualisieren, stellen Sie sicher, dass Sie zunächst den Ordner `crx-quickstart/install`/  sichern. Stellen Sie nach dem Upgrade den Inhalt des Ordners in der aktualisierten Installation wieder her und ändern Sie die Erweiterung der Konfigurationsdateien von **.cfg** zu **.config**.
+>Wenn Sie von einer älteren Oak-Version aktualisieren, stellen Sie sicher, dass Sie zunächst den Ordner `crx-quickstart/install` sichern. Stellen Sie nach dem Upgrade den Inhalt des Ordners in der aktualisierten Installation wieder her und ändern Sie die Erweiterung der Konfigurationsdateien von **.cfg** zu **.config**.
 >
 >Sollten Sie diesen Artikel zur Vorbereitung auf ein Upgrade von einer **AEM 5.x**-Installation lesen, denken Sie daran, sich zuerst mit der Dokumentation zu [Upgrades](https://docs.adobe.com/content/docs/de/aem/6-0/deploy/upgrade.html) vertraut zu machen.
 
 ### Knotenspeicher „Segment“ {#segment-node-store}
 
-Der Knotenspeicher „Segment“ ist die Basis der Adobe-TarMK-Implementierung in AEM 6. Sie verwendet die `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` PID zur Konfiguration.
+Der Knotenspeicher „Segment“ ist die Basis der Adobe-TarMK-Implementierung in AEM 6. Zur Konfiguration wird die PID `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` verwendet.
 
 >[!CAUTION]
 >
->Die PID für den Segment-Knotenspeicher hat sich von `org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions` AEM 6 bis `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` in AEM 6.3. Stellen Sie sicher, dass Sie die erforderlichen Konfigurationsanpassungen vornehmen, um diese Änderung widerzuspiegeln.
+>Die PID für den Segment-Knotenspeicher hat sich von `org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions` in AEM 6 zu `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` in AEM 6.3 geändert. Stellen Sie sicher, dass Sie die erforderlichen Konfigurationsanpassungen vornehmen, um diese Änderung widerzuspiegeln.
 
 Sie können die folgenden Optionen konfigurieren:
 
 * `repository.home`: Pfad zum Repository-Stammverzeichnis, in dem Repository-bezogene Daten gespeichert werden. Standardmäßig werden Segmentdateien im Verzeichnis `crx-quickstart/segmentstore` gespeichert.
 
 * `tarmk.size` : Maximale Größe eines Segments in MB. Der standardmäßige Maximalwert lautet 256 MB.
-* `customBlobStore`: Boolescher Wert, der angibt, dass ein benutzerdefinierter Datenspeicher verwendet wird. Der Standardwert gilt für AEM 6.3 und neuere Versionen. Vor AEM 6.3 war die Standardeinstellung „false“.
+* `customBlobStore`: Boolescher Wert, der angibt, dass ein benutzerdefinierter Datenspeicher verwendet wird. Der Standardwert ist „true“ für AEM 6.3 und höhere Versionen. Vor AEM 6.3 war die Standardeinstellung „false“.
 
-Im Folgenden finden Sie ein Beispiel `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` Datei:
+Es folgt eine Beispieldatei für `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`:
 
 ```shell
 #Path to repo
@@ -80,11 +80,11 @@ customBlobStore=B"true"
 
 #### Knotenspeicher „Dokument“ {#document-node-store}
 
-Der Knotenspeicher „Dokument“ ist die Basis der AEM-MongoMK-Implementierung. Sie verwendet die `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService`* *PID. Folgende Konfigurationsoptionen sind verfügbar:
+Der Knotenspeicher „Dokument“ ist die Basis der AEM-MongoMK-Implementierung. Verwendet wird dabei die PID* *`org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService`. Folgende Konfigurationsoptionen sind verfügbar:
 
 * `mongouri`: Die für die Verbindung zur Mongo-Datenbank erforderliche [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/). Standard: `mongodb://localhost:27017`
 
-* `db` : Name der Mongo-Datenbank. Der Standardwert ist **Oak** ``. However, new AEM 6 installations use **aem-author** ``als standardmäßigen Datenbanknamen.
+* `db` : Name der Mongo-Datenbank. Der Standardwert ist **Oak** ``. However, new AEM 6 installations use **aem-author** `` als standardmäßigen Datenbanknamen.
 
 * `cache`: Cache-Größe in MB. Dieser Wert verteilt sich auf die verschiedenen in DocumentNodeStore verwendeten Caches. Standard: `256`
 
@@ -92,7 +92,7 @@ Der Knotenspeicher „Dokument“ ist die Basis der AEM-MongoMK-Implementierung.
 
 * `customBlobStore`: Boolescher Wert, der angibt, dass ein benutzerdefinierter Datenspeicher verwendet wird. Der Standardwert lautet `false`.
 
-Im Folgenden finden Sie ein Beispiel `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config` Datei:
+Es folgt eine Beispieldatei für `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`:
 
 ```shell
 #Mongo server details
@@ -121,11 +121,11 @@ Die verschiedenen Datenspeicher und Konfigurationen werden nachfolgend beschrieb
 
 ### Dateidatenspeicher {#file-data-store}
 
-Hierbei handelt es sich um die [FileDataStore](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/core/data/FileDataStore.html)-Implementierung in Jackrabbit 2, die es ermöglicht, dass Binärdaten wie normale Dateien im Dateisystem gespeichert werden. Sie verwendet die `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore` PID.
+Hierbei handelt es sich um die [FileDataStore](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/core/data/FileDataStore.html)-Implementierung in Jackrabbit 2, die es ermöglicht, dass Binärdaten wie normale Dateien im Dateisystem gespeichert werden. Verwendet wird dabei die PID `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore`.
 
 Die folgenden Konfigurationsoptionen sind verfügbar:
 
-* `repository.home`: Pfad zum Repository-Stammverzeichnis, in dem diverse Repository-bezogene Daten gespeichert werden. Standardmäßig werden Binärdateien unter `crx-quickstart/repository/datastore` directory
+* `repository.home`: Pfad zum Repository-Stammverzeichnis, in dem diverse Repository-bezogene Daten gespeichert werden. Standardmäßig werden Binärdateien im Verzeichnis `crx-quickstart/repository/datastore` gespeichert.
 
 * `path`: Pfad zum Verzeichnis, unter dem Dateien gespeichert werden. Sofern angegeben, hat dieser Wert Vorrang gegenüber `repository.home`.
 
@@ -137,13 +137,13 @@ Die folgenden Konfigurationsoptionen sind verfügbar:
 
 ## Amazon S3-Datenspeicher {#amazon-s-data-store}
 
-AEM kann so konfiguriert werden, dass Daten in Amazon Simple Storage Service (S3) gespeichert werden. Sie verwendet die `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` PID zur Konfiguration.
+AEM kann so konfiguriert werden, dass Daten in Amazon Simple Storage Service (S3) gespeichert werden. Zur Konfiguration wird die PID `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` verwendet.
 
-Zur Aktivierung der S3-Datenspeicherfunktionalität muss ein Feature Pack mit dem S3-Datenspeicher-Connector heruntergeladen und installiert werden. Gehen Sie zum [Adobe-Repository](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) und laden Sie die neueste Version der 1.10.x-Versionen des Feature Packs herunter (z. B. com.adobe.granite.oak.s3connector-1.10.0.zip). Darüber hinaus müssen Sie auch das neueste AEM Service Pack herunterladen und installieren, wie im Abschnitt [AEM 6.5 - Versionshinweise](/help/release-notes/release-notes.md) Seite.
+Zur Aktivierung der S3-Datenspeicherfunktionalität muss ein Feature Pack mit dem S3-Datenspeicher-Connector heruntergeladen und installiert werden. Gehen Sie zum [Adobe-Repository](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) und laden Sie die neueste Version der 1.10.x-Versionen des Feature Packs herunter (z. B. com.adobe.granite.oak.s3connector-1.10.0.zip). Darüber hinaus müssen Sie auch das neueste AEM Service Pack herunterladen und installieren, das auf der Seite [Versionshinweise zu AEM 6.5](/help/release-notes/release-notes.md) aufgeführt ist.
 
 >[!NOTE]
 >
->Bei Verwendung von AEM  mit TarMK werden die Binärdateien standardmäßig im `FileDataStore` gespeichert. Um TarMK mit dem S3-Datenspeicher zu verwenden, müssen Sie AEM die `crx3tar-nofds` runmode, z. B.:
+>Bei Verwendung von AEM mit TarMK werden die Binärdateien standardmäßig im `FileDataStore` gespeichert. Um TarMK mit dem S3-Datenspeicher nutzen zu können, müssen Sie AEM mithilfe des `crx3tar-nofds`-Ausführungsmodus starten, z. B.:
 
 ```shell
 java -jar <aem-jar-file>.jar -r crx3tar-nofds
@@ -159,9 +159,9 @@ Nach dem Download können Sie den S3-Connector wie folgt installieren und konfig
    jcr_root/libs/system/install
    ```
 
-   Kopieren Sie alle Inhalte von der obigen Position in `<aem-install>/crx-quickstart/install.`
+   Kopieren Sie alle Inhalte vom oben genannten Speicherort nach `<aem-install>/crx-quickstart/install.`
 
-1. Wenn AEM bereits für die Verwendung mit dem Tar- oder MongoDB-Speicher konfiguriert ist, entfernen Sie alle vorhandenen Konfigurationsdateien aus dem ***&lt;aem-install>***/*crx-quickstart*/*install* Ordner, bevor Sie fortfahren. Die folgenden Dateien müssen entfernt werden:
+1. Wenn AEM bereits für Tar- oder MongoDB-Speicher konfiguriert ist, entfernen Sie etwaig vorhandene Konfigurationsdateien aus dem Ordner ***&lt;aem-install>*/crx-quickstart*/*install*, bevor Sie fortfahren. Die folgenden Dateien müssen entfernt werden:
 
    * `For MongoMK: org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
    * `For TarMK: org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
@@ -189,8 +189,8 @@ Wenn Sie auf eine neue Version des 1.10.x S3-Connectors aktualisieren müssen (z
 
 1. Halten Sie die AEM-Instanz an.
 
-1. Navigieren Sie zu `<aem-install>/crx-quickstart/install/15` im AEM Installationsordner und erstellen Sie eine Sicherungskopie des Inhalts.
-1. Löschen Sie nach der Sicherung die alte Version des S3 Connector und seine Abhängigkeiten, indem Sie alle JAR-Dateien im `<aem-install>/crx-quickstart/install/15` Ordner, z. B.:
+1. Navigieren Sie im AEM-Installationsordner zu `<aem-install>/crx-quickstart/install/15` und sichern Sie die dort vorhandenen Inhalte.
+1. Löschen Sie nach der Sicherung die alte Version des S3-Connectors und die entsprechenden abhängigen Elemente, indem Sie die JAR-Dateien aus dem Ordner `<aem-install>/crx-quickstart/install/15` entfernen, z. B.:
 
    * **oak-blob-cloud-1.6.1.jar**
    * **aws-java-sdk-osgi-1.10.76.jar**
@@ -200,7 +200,7 @@ Wenn Sie auf eine neue Version des 1.10.x S3-Connectors aktualisieren müssen (z
    >Die oben aufgeführten Dateinamen dienen nur zu Veranschaulichungszwecken.
 
 1. Laden Sie die neueste Version des Feature Packs 1.10.x aus dem [Adobe-Repository](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) herunter.
-1. Dekomprimieren Sie den Inhalt in einen separaten Ordner und navigieren Sie dann zu `jcr_root/libs/system/install/15`.
+1. Entpacken Sie den Inhalt in einen anderen Ordner und navigieren Sie dann zu `jcr_root/libs/system/install/15`.
 1. Kopieren Sie die JAR-Dateien nach **&lt;aem-install>**/crx-quickstart/install/15 im AEM-Installationsverzeichnis.
 1. Starten Sie AEM und überprüfen Sie die Funktionsweise des Connectors.
 
@@ -296,13 +296,13 @@ Sie können die Konfigurationsdatei mit den unten beschriebenen Optionen verwend
 
 >[!NOTE]
 >
->Die DataStore-Implementierungen von `S3DataStore`, `CachingFileDataStore` und `AzureDataStore` unterstützt die Zwischenspeicherung im lokalen Dateisystem. Die `CachingFileDataStore` -Implementierung ist nützlich, wenn sich der DataStore auf NFS (Network File System) befindet.
+>Die Datenspeicher-Implementierungen von `S3DataStore`, `CachingFileDataStore` und `AzureDataStore` unterstützen das Caching lokaler Dateisysteme. Die `CachingFileDataStore`-Implementierung ist nützlich, wenn sich der Datenspeicher auf NFS (Network File System) befindet.
 
 Beim Upgrade von einer älteren Cache-Implementierung (vor Oak 1.6) gibt es einen strukturellen Unterschied in Bezug auf das Cacheverzeichnis des lokalen Dateisystems. In der alten Cachestruktur wurden heruntergeladene und hochgeladene Dateien direkt unter dem Cachepfad abgelegt. In der neuen Struktur werden Downloads und Uploads voneinander getrennt und in zwei Verzeichnissen namens `upload` und `download` unter dem Cachepfad gespeichert. Der Upgradeprozess sollte nahtlos sein und etwaige ausstehende Uploads sollten zum Hochladen geplant werden; etwaige zuvor heruntergeladene Dateien werden bei Initialisierung im Cache abgelegt.
 
-Sie können den Cache auch offline aktualisieren, indem Sie die `datastorecacheupgrade` -Befehl von oak-run. Weitere Einzelheiten zum Ausführen des Befehls finden Sie in der [Readme](https://svn.apache.org/repos/asf/jackrabbit/oak/trunk/oak-run/README.md)-Datei für das oak-run-Modul.
+Sie können den Cache auch offline upgraden, indem Sie den Befehl `datastorecacheupgrade` von oak-run ausführen. Weitere Einzelheiten zum Ausführen des Befehls finden Sie in der [Readme](https://svn.apache.org/repos/asf/jackrabbit/oak/trunk/oak-run/README.md)-Datei für das oak-run-Modul.
 
-Der Cache hat eine Größenbeschränkung und kann mithilfe des Parameters cacheSize konfiguriert werden.
+Der Cache hat eine Größenbeschränkung und kann mithilfe des cacheSize-Parameters konfiguriert werden.
 
 #### Downloads {#downloads}
 
@@ -314,20 +314,20 @@ Der Cache unterstützt asynchrone Uploads in den Datenspeicher. Die Dateien werd
 
 Asynchrone Uploads verlaufen in mehreren Threads und die Anzahl der Threads wird mithilfe des `uploadThreads`-Parameters konfiguriert.
 
-Die Dateien werden nach Abschluss der Uploads in den Haupt-Downloadcache verschoben. Wenn die Größe des Staging-Cache das Limit überschreitet, werden die Dateien synchron in den Datenspeicher hochgeladen, bis die vorherigen asynchronen Uploads abgeschlossen sind und wieder Speicherplatz im Staging-Cache verfügbar ist. Die hochgeladenen Dateien werden von einem periodischen Auftrag aus dem Staging-Bereich entfernt, dessen Intervall von der `stagingPurgeInterval` Parameter.
+Die Dateien werden nach Abschluss der Uploads in den Haupt-Downloadcache verschoben. Wenn die Größe des Staging-Cache das Limit überschreitet, werden die Dateien synchron in den Datenspeicher hochgeladen, bis die vorherigen asynchronen Uploads abgeschlossen sind und wieder Speicherplatz im Staging-Cache verfügbar ist. Die hochgeladenen Dateien werden aus dem Staging-Bereich durch einen periodischen Auftrag entfernt, dessen Intervall durch den `stagingPurgeInterval`-Parameter konfiguriert ist.
 
-Fehlgeschlagene Uploads (etwa aufgrund von Netzwerkstörungen) werden in eine Warteschlange gestellt und regelmäßig wiederholt. Das Wiederholungsintervall wird mithilfe des `stagingRetryInterval parameter`.
+Fehlgeschlagene Uploads (etwa aufgrund von Netzwerkstörungen) werden in eine Warteschlange gestellt und regelmäßig wiederholt. Das Wiederholungsintervall wird mithilfe des `stagingRetryInterval parameter` konfiguriert.
 
 #### Konfigurieren von nicht binären Replikationen mit Amazon S3 {#configuring-binaryless-replication-with-amazon-s}
 
 Um nicht binäre Replikationen mit S3 zu konfigurieren, sind die folgenden Schritte erforderlich:
 
 1. Installieren Sie die Autor- und Veröffentlichungsinstanzen und stellen Sie sicher, dass diese ordnungsgemäß gestartet werden.
-1. Wechseln Sie zu den Einstellungen des Replikationsagenten, indem Sie eine Seite öffnen, um *https://localhost:4502/etc/replication/agents.author/publish.html*.
+1. Gehen Sie zu den Einstellungen für den Replikationsagenten, indem Sie eine Seite in *https://localhost:4502/etc/replication/agents.author/publish.html* öffnen.
 1. Wählen Sie im Abschnitt **Einstellungen** die Schaltfläche **Bearbeiten**.
 1. Ändern Sie die Option für den **Serialisierungs** typ in **Nicht binär**.
 
-1. Parameter hinzufügen &quot; `binaryless`= `true`&quot;im Transport-URI. Nach dieser Änderung sollte der URI ungefähr wie folgt aussehen:
+1. Fügen Sie den Parameter `binaryless` = `true` dem Transport-URI hinzu. Nach dieser Änderung sollte der URI ungefähr wie folgt aussehen:
 
    *https://localhost:4503/bin/receive?sling:authRequestLogin=1&amp;binaryless=true*
 
@@ -362,9 +362,9 @@ Um nicht binäre Replikationen mit S3 zu konfigurieren, sind die folgenden Schri
 
 1. Erstellen Sie zunächst die Datenspeicher-Konfigurationsdatei in jeder Instanz, die zum Freigeben des Datenspeichers erforderlich ist:
 
-   * Wenn Sie eine `FileDataStore`erstellen Sie eine Datei mit dem Namen `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config` und platzieren Sie sie im `<aem-install>/crx-quickstart/install` Ordner.
+   * Wenn Sie einen `FileDataStore` verwenden, erstellen Sie eine Datei mit dem Namen `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config` und legen Sie diese im Ordner `<aem-install>/crx-quickstart/install` ab.
 
-   * Wenn Sie S3 als Datenspeicher verwenden, erstellen Sie eine Datei mit dem Namen `rg.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` im `<aem-install>/crx-quickstart/install` Ordner wie oben beschrieben.
+   * Wird S3 als Datenspeicher verwendet, erstellen Sie eine Datei mit dem Namen `rg.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` im Ordner `<aem-install>/crx-quickstart/install`, wie oben erläutert.
 
 1. Ändern Sie die Datenspeicher-Konfigurationsdateien in jeder Instanz so, dass auf denselben Datenspeicher verwiesen wird. Weitere Informationen finden Sie in [diesem Artikel](/help/sites-deploying/data-store-config.md#data-store-configurations).
 1. Wenn die Instanz von einem vorhandenen Server geklont wurde, müssen Sie die `clusterId` der neuen Instanz mit dem neuesten oak-run-Tool entfernen, während das Repository offline ist. Hierzu muss der folgende Befehl ausgeführt werden:
@@ -375,7 +375,7 @@ Um nicht binäre Replikationen mit S3 zu konfigurieren, sind die folgenden Schri
 
    >[!NOTE]
    >
-   >Wenn ein Knotenspeicher „Segment“ konfiguriert ist, muss der Repositorypfad angegeben werden. Standardmäßig lautet der Pfad `<aem-install-folder>/crx-quickstart/repository/segmentstore.` Wenn ein Knotenspeicher &quot;Dokument&quot;konfiguriert ist, können Sie eine [Mongo Connection String URI](https://docs.mongodb.org/manual/reference/connection-string/).
+   >Wenn ein Knotenspeicher „Segment“ konfiguriert ist, muss der Repositorypfad angegeben werden. Standardmäßig lautet der Pfad `<aem-install-folder>/crx-quickstart/repository/segmentstore.`. Ist ein Knotenspeicher „Dokument“ konfiguriert, können Sie einen [URI im Format einer Mongo-Verbindungszeichenfolge](https://docs.mongodb.org/manual/reference/connection-string/) verwenden.
 
    >[!NOTE]
    >
@@ -393,24 +393,24 @@ Um nicht binäre Replikationen mit S3 zu konfigurieren, sind die folgenden Schri
    >    * Für **neuere** Oak-Versionen verwenden Sie die oak-run-Version, die dem Oak-Core der AEM-Installation entspricht.
 
 
-1. Überprüfen Sie schließlich die Konfiguration. Hierzu müssen Sie nach einer eindeutigen Datei suchen, die dem Datenspeicher von jedem Repository, das denselben Datenspeicher nutzt, hinzugefügt wird. Das Format der Dateien lautet `repository-[UUID]`, wobei die UUID eine eindeutige Kennung jedes einzelnen Repositorys ist.
+1. Überprüfen Sie schließlich die Konfiguration. Hierzu müssen Sie nach einer eindeutigen Datei suchen, die dem Datenspeicher von jedem Repository, das denselben Datenspeicher nutzt, hinzugefügt wird. Das Format der Dateien ist `repository-[UUID]`, wobei die UUID für eine eindeutige Kennung jedes Repositorys steht.
 
    Daher sollte in einer ordnungsgemäßen Konfiguration die Anzahl an eindeutigen Dateien und Repositorys mit gemeinsam genutztem Datenspeicher übereinstimmen.
 
    Die Dateien werden je nach Datenspeicher an unterschiedlichen Speicherorten abgelegt:
 
    * Für den `FileDataStore` werden die Dateien unter dem Stammverzeichnis des Datenspeicherordners erstellt.
-   * Für `S3DataStore` die Dateien werden im konfigurierten S3-Bucket unter dem `META` Ordner.
+   * Für den `S3DataStore` werden die Dateien im konfigurierten S3-Bucket unter dem `META`-Ordner erstellt.
 
 ## Azure-Datenspeicher {#azure-data-store}
 
-AEM kann so konfiguriert werden, dass Daten im Azure-Speicherdienst von Microsoft gespeichert werden. Sie verwendet die `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` PID zur Konfiguration.
+AEM kann so konfiguriert werden, dass Daten im Azure-Speicherdienst von Microsoft gespeichert werden. Zur Konfiguration wird die PID `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` verwendet.
 
-Zur Aktivierung der Azure-Datenspeicherfunktionalität muss ein Feature Pack mit dem Azure-Datenspeicher-Connector heruntergeladen und installiert werden. Navigieren Sie zu [Adoben-Repository](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) und laden Sie die neueste Version der 1.6.x-Versionen des Feature Packs herunter (z. B. com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
+Zur Aktivierung der Azure-Datenspeicherfunktionalität muss ein Feature Pack mit dem Azure-Datenspeicher-Connector heruntergeladen und installiert werden. Gehen Sie zum [Adobe-Repository](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) und laden Sie die neueste Version der 1.6.x-Versionen des Feature Packs herunter (z. B. com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
 
 >[!NOTE]
 >
->Bei Verwendung von AEM  mit TarMK werden die Binärdateien standardmäßig im FileDataStore gespeichert. Um TarMK mit dem Azure DataStore zu verwenden, müssen Sie beginnen, AEM `crx3tar-nofds` runmode, z. B.:
+>Bei Verwendung von AEM mit TarMK werden die Binärdateien standardmäßig im FileDataStore gespeichert. Um TarMK mit dem Azure-Datenspeicher nutzen zu können, müssen Sie AEM mithilfe des `crx3tar-nofds`-Ausführungsmodus starten, z. B.:
 
 ```shell
 java -jar <aem-jar-file>.jar -r crx3tar-nofds
@@ -420,8 +420,8 @@ Nach dem Download können Sie den Azure-Connector wie folgt installieren und kon
 
 1. Extrahieren Sie den Inhalt der ZIP-Datei des Feature Packs in einen temporären Ordner.
 
-1. Wechseln Sie zum temporären Ordner und kopieren Sie den Inhalt von `jcr_root/libs/system/install` der `<aem-install>crx-quickstart/install` Ordner.
-1. Wenn AEM bereits für die Verwendung mit dem Tar- oder MongoDB-Speicher konfiguriert ist, entfernen Sie alle vorhandenen Konfigurationsdateien aus dem `/crx-quickstart/install` Ordner, bevor Sie fortfahren. Die folgenden Dateien müssen entfernt werden:
+1. Gehen Sie zum temporären Ordner und kopieren Sie den Inhalt von `jcr_root/libs/system/install` in den Ordner `<aem-install>crx-quickstart/install`.
+1. Wenn AEM bereits für Tar- oder MongoDB-Speicher konfiguriert ist, entfernen Sie etwaig vorhandene Konfigurationsdateien aus dem Ordner `/crx-quickstart/install`, bevor Sie fortfahren. Die folgenden Dateien müssen entfernt werden:
 
    Für MongoMK:
 
@@ -431,38 +431,38 @@ Nach dem Download können Sie den Azure-Connector wie folgt installieren und kon
 
    `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
 
-1. Kehren Sie zum temporären Speicherort zurück, an den das Feature Pack extrahiert wurde, und kopieren Sie den Inhalt von `jcr_root/libs/system/config` der `<aem-install>/crx-quickstart/install` Ordner.
+1. Kehren Sie zu dem temporären Verzeichnis mit dem extrahierten Feature Pack zurück und kopieren Sie den Inhalt von `jcr_root/libs/system/config` in den Ordner `<aem-install>/crx-quickstart/install`.
 1. Bearbeiten Sie die Konfigurationsdatei und fügen Sie die für Ihre Einrichtung erforderlichen Konfigurationsoptionen hinzu.
 1. Starten Sie AEM.
 
 Sie können die Konfigurationsdatei mit den folgenden Optionen verwenden:
 
-* azureSas=&quot;&quot;: In Version 1.6.3 des Connectors wurde die Unterstützung für Azure Shared Access Signature (SAS) hinzugefügt. **Wenn in der Konfigurationsdatei sowohl SAS als auch Speicheranmeldeinformationen vorhanden sind, hat SAS Priorität.** Weitere Informationen zu SAS finden Sie in der [offiziellen Dokumentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-dotnet-shared-access-signature-part-1). Stellen Sie sicher, dass das Zeichen &#39;=&#39; wie &#39;\=&#39; mit Escape-Zeichen versehen ist.
+* azureSas=&quot;&quot;: In der Connector-Version 1.6.3 wurde Unterstützung für Azure Shared Access Signature (SAS) hinzugefügt. **Wenn in der Konfigurationsdatei sowohl SAS als auch Speicheranmeldeinformationen vorhanden sind, hat SAS Priorität.** Weitere Informationen zu SAS finden Sie in der [offiziellen Dokumentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-dotnet-shared-access-signature-part-1). Stellen Sie sicher, dass &#39;=&#39; wie folgt mit Escapezeichen versehen ist &#39;\=&#39;.
 
-* azureBlobEndpoint=&quot;&quot;: Der Azure-Blob-Endpunkt, Beispiel: https://&lt;storage-account>.blob.core.windows.net.
+* azureBlobEndpoint=&quot;&quot;: Der Azure-Blob-Endpunkt, z. B. https://&lt;Speicherkonto>.blob.core.windows.net.
 * accessKey=&quot;&quot;: Der Speicherkontoname. Weitere Informationen zu den von Microsoft Azure-Anmeldeinformationen für die Authentifizierung finden Sie in der [offiziellen Dokumentation](https://azure.microsoft.com/en-us/documentation/articles/storage-create-storage-account).
 
-* secretKey=&quot;&quot;: Der Speicherzugriffsschlüssel. Stellen Sie sicher, dass das Zeichen &#39;=&#39; wie &#39;\=&#39; mit Escape-Zeichen versehen ist.
+* secretKey=&quot;&quot;: Der Speicherzugriffsschlüssel. Stellen Sie sicher, dass &#39;=&#39; wie folgt mit Escapezeichen versehen ist &#39;\=&#39;.
 * container=&quot;&quot;: Der Name des Blob-Speichercontainers von Microsoft Azure. Der Container stellt eine Gruppierung mehrerer Blobs dar. Zusätzliche Details finden Sie in der [offiziellen Dokumentation](https://msdn.microsoft.com/en-us/library/dd135715.aspx).
-* maxConnections=&quot;&quot;: Die gleichzeitige Anzahl gleichzeitiger Anforderungen pro Vorgang. Der Standardwert ist 1.
-* maxErrorRetry=&quot;&quot;: Anzahl weiterer Versuche pro Anfrage. Der Standardwert ist 3.
-* socketTimeout=&quot;&quot;: Das Zeitüberschreitungsintervall (in Millisekunden), das für die Anfrage verwendet wird. Der Standardwert ist 5 Minuten.
+* maxConnections=&quot;&quot;: Die gleichzeitige Anzahl gleichzeitiger Anforderungen pro Vorgang. Der Standardwert lautet 1.
+* maxErrorRetry=&quot;&quot;: Die Anzahl der Wiederholungen pro Anfrage. Der Standardwert lautet 3.
+* socketTimeout=&quot;&quot;: Das Zeitüberschreitungsintervall, in Millisekunden, für die Anfrage. Der Standardwert lautet 5 Minuten.
 
 Neben den oben aufgeführten Einstellungen können auch die folgenden Einstellungen konfiguriert werden:
 
-* path: Der Pfad des Datenspeichers. Standard: `<aem-install>/repository/datastore.`
-* RecordLength: Die Mindestgröße eines Objekts, das im Datenspeicher gespeichert werden soll. Der Standardwert ist 16 KB.
-* maxCachedBinarySize: Binärdateien, deren Größe kleiner oder gleich dieser Größe ist, werden im Arbeitsspeichercache gespeichert. Die Größe wird in Byte angegeben. Der Standardwert ist 17408 (17 KB).
-* cacheSize: Die Größe des Caches. Der Wert wird in Byte angegeben. Der Standardwert ist 64 GB.
-* secret: Nur bei Verwendung der Binärdatei-losen Replikation für die Einrichtung des gemeinsamen Datenspeichers zu verwenden.
-* stagingSplitPercentage: Der Prozentsatz der Cachegröße, der für das Staging asynchroner Uploads konfiguriert ist. Der Standardwert ist 10.
-* uploadThreads: Die Anzahl der Upload-Threads, die für asynchrone Uploads verwendet werden. Der Standardwert ist 10.
-* stagingPurgeInterval: Das Intervall in Sekunden zum Bereinigen der fertigen Uploads aus dem Staging-Cache. Der Standardwert ist 300 Sekunden (5 Minuten).
-* stagingRetryInterval: Das Wiederholungsintervall in Sekunden für fehlgeschlagene Uploads. Der Standardwert ist 600 Sekunden (10 Minuten).
+* path: Der Pfad des Datenspeichers. Standard: `<aem-install>/repository/datastore.`
+* RecordLength: Die Mindestgröße eines Objekts, das im Datenspeicher gespeichert werden soll. Der Standardwert lautet 16 KB.
+* maxCachedBinarySize: Binärdateien, die kleiner als oder gleich diesem Wert sind, werden im Speichercache gespeichert. Die Größe wird in Byte angegeben. Der Standardwert lautet 17408 (17 KB).
+* cacheSize: Die Größe des Cache. Der Wert wird in Byte angegeben. Der Standardwert lautet 64 GB.
+* secret: Darf nur bei einer nicht binären Replikation für freigegebene Datenspeicher verwendet werden.
+* stagingSplitPercentage: Der Prozentsatz der Cachegröße, der zum Staging asynchroner Uploads konfiguriert ist. Der Standardwert lautet 10.
+* uploadThreads: Die Anzahl der Uploadthreads für asynchrone Uploads. Der Standardwert lautet 10.
+* stagingPurgeInterval: Das Intervall in Sekunden zum endgültigen Löschen abgeschlossener Uploads aus dem Staging-Cache. Der Standardwert lautet 300 Sekunden (5 Minuten).
+* stagingRetryInterval: Das Wiederholungsintervall in Sekunden für fehlgeschlagene Uploads. Der Standardwert lautet 600 Sekunden (10 Minuten).
 
 >[!NOTE]
 >
->Alle Einstellungen sollten in Anführungszeichen gesetzt werden, z. B.:
+>Alle Einstellungen sollten in Anführungszeichen gesetzt werden, z. B.:
 
 ```shell
 accessKey="ASDASDERFAERAER"
@@ -475,7 +475,7 @@ Im Rahmen der automatischen Datenspeicherbereinigung werden nicht verwendete Dat
 
 Sie können die automatische Datenspeicherbereinigung wie folgt ausführen:
 
-1. Wechseln Sie zur JMX-Konsole unter *https://&lt;serveraddress:port>/system/console/jmx*
+1. Rufen Sie die JMX-Konsole unter der folgenden Adresse auf: *http://&lt;Server-Adresse:Port>/system/console/jmx*
 1. Suchen Sie nach **RepositoryManagement.** Wenn Sie das MBean „Repository Manager“ gefunden haben, klicken Sie darauf, um die verfügbaren Optionen aufzurufen.
 1. Führen Sie einen Bildlauf bis zum Ende der Seite durch und klicken Sie auf den Link **startDataStoreGC(boolean markOnly)**.
 1. Geben Sie im folgenden Dialogfeld für den Parameter `false` den Wert `markOnly` ein und klicken Sie auf **Invoke**:
@@ -490,14 +490,15 @@ Sie können die automatische Datenspeicherbereinigung wie folgt ausführen:
 
 >[!NOTE]
 >
->Wenn Sie die automatische Bereinigung für einen eingerichteten Cluster- oder freigegebenen Speicher (mit Mongo oder Segment-Tar) durchführen, werden im Protokoll möglicherweise Warnungen angezeigt, wonach bestimmte Blob-IDs nicht gelöscht werden können. Dies geschieht, weil Blob-IDs, die in einer vorherigen Speicherbereinigung gelöscht wurden, fälschlicherweise von anderen Cluster- oder freigegebenen Knoten referenziert werden, die keine Informationen über die ID-Löschungen haben. Daher wird bei der automatischen Bereinigung eine Warnung protokolliert, wenn versucht wird, eine bereits im vorherigen Durchgang gelöschte ID zu entfernen. Dieses Verhalten wirkt sich weder auf die Leistung noch auf die Funktionalität aus.
+>Wenn Sie die automatische Bereinigung für einen eingerichteten Cluster- oder freigegebenen Speicher (mit Mongo oder Segment-Tar) durchführen, werden im Protokoll möglicherweise Warnungen angezeigt, wonach bestimmte Blob-IDs nicht gelöscht werden können. Dies geschieht, weil während einer vorherigen automatischen Bereinigung gelöschte Blob-IDs fälschlicherweise erneut von anderen Cluster- oder Freigabeknoten referenziert werden, denen die Informationen zu den ID-Löschungen fehlen. Daher wird bei der automatischen Bereinigung eine Warnung protokolliert, wenn versucht wird, eine bereits im vorherigen Durchgang gelöschte ID zu entfernen. Dieses Verhalten wirkt sich weder auf die Leistung noch auf die Funktionalität aus.
 
 >[!NOTE]
-> Wenn Sie ein freigegebenes Datenspeicher-Setup verwenden und die Speicherbereinigung deaktiviert ist, kann das Ausführen der Aufgabe Lucene-Binärdatei-Bereinigung plötzlich den verwendeten Speicherplatz erhöhen. Um dies zu vermeiden, müssen Sie BlobTracker für alle Autoren- und Veröffentlichungsinstanzen wie folgt deaktivieren:
 >
-> 1. Beenden Sie die AEM Instanz.
-> 2. Fügen Sie die `blobTrackSnapshotIntervalInSecs=L"0"` -Parameter in der `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` -Datei. Für diesen Parameter ist Oak 1.12.0, 1.10.2 oder höher erforderlich.
-> 3. Starten Sie die AEM-Instanz neu.
+>Wenn Sie ein freigegebenes Datenspeicher-Setup verwenden und die automatische Speicherbereinigung deaktiviert ist, kann das Ausführen der Aufgabe „Lucene-Binärdatei-Bereinigung“ plötzlich den verwendeten Speicherplatz erhöhen. Um dies zu vermeiden, müssen Sie BlobTracker für alle Autoren- und Veröffentlichungsinstanzen wie folgt deaktivieren:
+>
+>1. Halten Sie die AEM-Instanz an.
+>2. Fügen Sie den `blobTrackSnapshotIntervalInSecs=L"0"`-Parameter in der Datei `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` hinzu. Für diesen Parameter ist Oak 1.12.0, 1.10.2 oder höher erforderlich.
+>3. Starten Sie die AEM-Instanz neu.
 
 
 In neueren AEM-Versionen kann die automatische Datenspeicherbereinigung auch in einem Datenspeicher durchgeführt werden, der von mehreren Repositorys genutzt wird. Für eine automatische Datenspeicherbereinigung in einem freigegebenen Datenspeicher führen Sie die folgenden Schritte aus:
@@ -511,5 +512,5 @@ In neueren AEM-Versionen kann die automatische Datenspeicherbereinigung auch in 
 
    1. Rufen Sie die JMX-Konsole auf und wählen Sie das MBean „Repository Manager“ aus.
    1. Klicken Sie auf den Link **Click startDataStoreGC(boolean markOnly)**.
-   1. Geben Sie im folgenden Dialogfeld `false` für `markOnly` erneut.
+   1. Geben Sie im folgenden Dialogfeld für den Parameter `false` erneut den Wert `markOnly` ein.
    Hierdurch werden alle in der zuvor verwendeten Markierungsphase gefundenen Dateien ausgeblendet und die restlichen nicht verwendeten Dateien werden aus dem Datenspeicher gelöscht.

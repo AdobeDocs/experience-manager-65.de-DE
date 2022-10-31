@@ -1,17 +1,17 @@
 ---
-title: Erweitern [!DNL Adobe Experience Manager] 6.5 mit Adobe Developer App Builder verwenden.
-description: Erweitern [!DNL Adobe Experience Manager] 6.5 mit Adobe Developer App Builder verwenden.
+title: Erweitern von [!DNL Adobe Experience Manager] 6.5 mit dem Adobe Developer App Builder.
+description: Erweitern von [!DNL Adobe Experience Manager] 6.5 mit dem Adobe Developer App Builder.
 exl-id: 8221c2db-82d4-43df-ad38-e8e7831541ac
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '577'
-ht-degree: 88%
+ht-degree: 99%
 
 ---
 
-# Erweitern [!DNL Adobe Experience Manager] Verwenden von Adobe Developer App Builder {#extend-using-app-builder}
+# Erweitern von [!DNL Adobe Experience Manager] mit dem Adobe Developer App Builder {#extend-using-app-builder}
 
-## Was ist App Builder für AEM {#project-firefly}
+## Was ist der App Builder für AEM? {#project-firefly}
 
 Der neue Adobe Developer App Builder bietet ein Erweiterbarkeits-Framework, mit dem Entwickler Funktionen von AEM einfach erweitern können.
 
@@ -27,7 +27,7 @@ Der App Builder (ehemals Project Firefly) steht seit Sommer 2020 für Unternehme
 
 >[!NOTE]
 >
-> Für AEM as a Cloud Service Kunden, die den App Builder nutzen möchten, gehen Sie zu [Erweitern von Adobe Experience Manager as a Cloud Service mit Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/app-builder.html).
+>AEM as a Cloud Service-Kundschaft, die App Builder nutzen möchte, liest [Erweitern von Adobe Experience Manager as a Cloud Service mit dem Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/app-builder.html?lang=de).
 
 ## Architektur {#architecture}
 

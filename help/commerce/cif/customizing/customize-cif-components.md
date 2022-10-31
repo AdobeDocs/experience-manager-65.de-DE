@@ -11,10 +11,10 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '2604'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Das [CIF-Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) ist eine 
 
 >[!TIP]
 >
-> Verwenden Sie den [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype), wenn Sie Ihre eigene Commerce-Implementierung starten.
+>Verwenden Sie den [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype), wenn Sie Ihre eigene Commerce-Implementierung starten.
 
 ## Was Sie erstellen werden
 
@@ -34,7 +34,7 @@ Die Marke Venia hat vor kurzem begonnen, Produkte mit nachhaltigen Materialien z
 
 ## Voraussetzungen {#prerequisites}
 
-Zum Absolvieren dieses Tutorials ist eine lokale Entwicklungsumgebung erforderlich. Dazu gehört eine laufende Instanz von AEM, die konfiguriert und mit einer Adobe Commerce-Instanz verbunden ist. Überprüfen Sie die Anforderungen und Schritte für [Einrichten einer lokalen Entwicklung mit AEM](../develop.md). Zum Absolvieren des ganzen Tutorials benötigen Sie Berechtigungen, um in Adobe Commerce [Attribute einem Produkt](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) hinzufügen zu können.
+Zum Absolvieren dieses Tutorials ist eine lokale Entwicklungsumgebung erforderlich. Dazu gehört eine laufende Instanz von AEM, die konfiguriert und mit einer Adobe Commerce-Instanz verbunden ist. Überprüfen Sie die Anforderungen und Schritte zum [Einrichten einer lokalen Entwicklungsumgebung mit AEM](../develop.md). Zum Absolvieren des ganzen Tutorials benötigen Sie Berechtigungen, um in Adobe Commerce [Attribute einem Produkt](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) hinzufügen zu können.
 
 Außerdem benötigen Sie eine GraphQL-IDE wie [GraphiQL](https://github.com/graphql/graphiql) oder eine Browser-Erweiterung, um die Code-Beispiele und Tutorials ausführen zu können. Stellen Sie beim Installieren einer Browser-Erweiterung sicher, dass diese die Möglichkeit hat, Anfragekopfzeilen festzulegen. In Google Chrome ist der [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) eine Erweiterung, die dazu geeignet ist.
 
@@ -44,7 +44,7 @@ Wir werden das [Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) kl
 
 >[!NOTE]
 >
-> **Sie können auch ein vorhandenes Projekt** nutzen (basierend auf dem AEM-Projektarchetyp mit enthaltenem CIF) und diesen Abschnitt überspringen.
+>**Sie können auch ein vorhandenes Projekt** nutzen (basierend auf dem AEM-Projektarchetyp mit enthaltenem CIF) und diesen Abschnitt überspringen.
 
 1. Führen Sie folgenden git-Befehl aus, um das Projekt zu klonen:
 
@@ -61,7 +61,7 @@ Wir werden das [Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) kl
 
 1. Fügen Sie die erforderlichen OSGi-Konfigurationen hinzu, um Ihre AEM-Instanz mit einer Adobe Commerce-Instanz zu verbinden, oder fügen Sie die Konfigurationen dem neu erstellten Projekt hinzu.
 
-1. An dieser Stelle sollten Sie über eine funktionierende Version einer Storefront verfügen, die mit einer Adobe Commerce-Instanz verbunden ist. Navigieren Sie zur Seite `US` > `Home` unter: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. An diesem Punkt sollten Sie über eine funktionierende Version einer Storefront verfügen, die mit einer Adobe Commerce-Instanz verbunden ist. Navigieren Sie zur Seite `US` > `Home` unter: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
    Sie sollten sehen, dass die Storefront derzeit im Venia-Design erscheint. Wenn Sie das Hauptmenü der Storefront erweitern, sollten verschiedene Kategorien angezeigt werden, was darauf hinweist, dass die Verbindung mit Adobe Commerce funktioniert.
 
@@ -83,7 +83,7 @@ Die Komponente Produkt-Teaser wird im Laufe dieses Tutorials erweitert. Als erst
 
    >[!NOTE]
    >
-   > Beachten Sie, dass Sie das angezeigte Produkt auch konfigurieren können, indem Sie die Komponente mithilfe des Dialogfelds konfigurieren (durch Klicken auf das _Schraubenschlüsselsymbol_).
+   >Beachten Sie, dass Sie das angezeigte Produkt auch konfigurieren können, indem Sie die Komponente mithilfe des Dialogfelds konfigurieren (durch Klicken auf das _Schraubenschlüsselsymbol_).
 
 4. Sie sollten nun sehen, dass der Produkt-Teaser ein Produkt anzeigt. Name und Preis des Produkts sind standardmäßig angezeigte Attribute.
 
@@ -95,7 +95,7 @@ Die in AEM angezeigten Produkte und Produktdaten werden in Adobe Commerce gespei
 
 >[!TIP]
 >
-> Sie verfügen bereits über ein benutzerdefiniertes **Ja/Nein**-Attribut als Teil Ihres Produktattributs? Dann können Sie es gerne nutzen und diesen Abschnitt überspringen.
+>Sie verfügen bereits über ein benutzerdefiniertes **Ja/Nein**-Attribut als Teil Ihres Produktattributs? Dann können Sie es gerne nutzen und diesen Abschnitt überspringen.
 
 1. Melden Sie sich bei Ihrer Adobe Commerce-Instanz an.
 1. Navigieren Sie zu **Katalog** > **Produkte**.
@@ -124,7 +124,7 @@ Die in AEM angezeigten Produkte und Produktdaten werden in Adobe Commerce gespei
 
    >[!TIP]
    >
-   > Weitere Informationen zur Verwaltung von [Produktattributen finden Sie im Adobe Commerce-Benutzerhandbuch](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html).
+   >Weitere Informationen zur Verwaltung von [Produktattributen finden Sie im Adobe Commerce-Benutzerhandbuch](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html).
 
 1. Navigieren Sie zu **System** > **Tools** > **Cache-Verwaltung**. Da das Datenschema aktualisiert wurde, müssen wir einige der Cache-Typen in Adobe Commerce ungültig machen.
 1. Aktivieren Sie das Kontrollkästchen neben **Konfiguration** und senden Sie den Cache-Typ zum **Aktualisieren**.
@@ -133,11 +133,11 @@ Die in AEM angezeigten Produkte und Produktdaten werden in Adobe Commerce gespei
 
    >[!TIP]
    >
-   > Weitere Informationen zur [Cache-Verwaltung finden Sie im Adobe Commerce-Benutzerhandbuch](https://docs.magento.com/user-guide/system/cache-management.html).
+   >Weitere Informationen zur [Cache-Verwaltung finden Sie im Adobe Commerce-Benutzerhandbuch](https://docs.magento.com/user-guide/system/cache-management.html).
 
 ## GraphQL-IDE zur Überprüfung von Attributen verwenden {#use-graphql-ide}
 
-Bevor Sie in AEM Code springen, sollten Sie die [Adobe Commerce GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) Verwendung einer GraphQL-IDE. Die Adobe Commerce-Integration mit AEM erfolgt hauptsächlich über eine Reihe von GraphQL-Abfragen. Das Verstehen und Ändern der GraphQL-Abfragen ist eine der wichtigsten Methoden zum Erweitern der CIF-Kernkomponenten.
+Bevor Sie mit dem AEM-Code anfangen, sollten Sie [Adobe Commerce GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) mithilfe einer GraphQL-IDE erkunden. Die Adobe Commerce-Integration mit AEM erfolgt hauptsächlich über eine Reihe von GraphQL-Abfragen. Das Verstehen und Ändern der GraphQL-Abfragen ist eine der wichtigsten Methoden zum Erweitern der CIF-Kernkomponenten.
 
 Verwenden Sie anschließend eine GraphQL-IDE, um zu prüfen, ob das `eco_friendly`-Attribut dem Produktattributsatz hinzugefügt wurde. Screenshots in diesem Tutorial stellen den [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) dar.
 
@@ -182,7 +182,7 @@ Verwenden Sie anschließend eine GraphQL-IDE, um zu prüfen, ob das `eco_friendl
 
    >[!TIP]
    >
-   > Eine detailliertere Dokumentation zu [Adobe Commerce GraphQL finden Sie hier](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
+   >Eine detailliertere Dokumentation zu [Adobe Commerce GraphQL finden Sie hier](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
 ## Sling-Modell für den Produkt-Teaser aktualisieren {#updating-sling-model-product-teaser}
 
@@ -196,7 +196,7 @@ Verwenden Sie [eine IDE Ihrer Wahl](https://docs.adobe.com/content/help/de-DE/ex
 
    ![Kern-Speicherort-IDE](../assets/customize-cif-components/core-location-ide.png)
 
-   `MyProductTeaser.java` ist eine Java-Schnittstelle, die den CIF erweitert [ProductTeaser](https://github.com/adobe/aem-core-cif-components/blob/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/models/productteaser/ProductTeaser.java) -Schnittstelle.
+   `MyProductTeaser.java` ist eine Java-Schnittstelle, die die CIF-[ProductTeaser](https://github.com/adobe/aem-core-cif-components/blob/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/models/productteaser/ProductTeaser.java)-Schnittstelle erweitert.
 
    Es wurde bereits eine neue Methode mit dem Namen `isShowBadge()` zur Anzeige eines Abzeichens hinzugefügt, wenn das Produkt als „Neu“ gilt.
 
@@ -261,7 +261,7 @@ Verwenden Sie [eine IDE Ihrer Wahl](https://docs.adobe.com/content/help/de-DE/ex
 
    Die `@PostConstruct`-Anmerkung stellt sicher, dass diese Methode aufgerufen wird, sobald das Sling-Modell initialisiert wurde.
 
-   Beachten Sie, dass die GraphQL-Abfrage des Produkts bereits mit der `extendProductQueryWith` -Methode zum Abrufen des zusätzlichen `created_at` -Attribut. Dieses Attribut wird später als Teil der `isShowBadge()`-Methode verwendet.
+   Beachten Sie, dass das Produkt „GraphQL-Abfrage“ bereits mit der `extendProductQueryWith`-Methode erweitert wurde, um das zusätzliche `created_at`-Attribut abzurufen. Dieses Attribut wird später als Teil der `isShowBadge()`-Methode verwendet.
 
 1. Aktualisieren Sie die GraphQL-Abfrage, um das `eco_friendly`-Attribut in die partielle Abfrage einzuschließen:
 
@@ -285,11 +285,11 @@ Verwenden Sie [eine IDE Ihrer Wahl](https://docs.adobe.com/content/help/de-DE/ex
 
    Das Hinzufügen zur `extendProductQueryWith`-Methode ist eine effektive Möglichkeit, um sicherzustellen, dass dem Rest des Modells zusätzliche Produktattribute zur Verfügung stehen. Außerdem wird die Anzahl der ausgeführten Abfragen minimiert.
 
-   Im obigen Code wird die`addCustomSimpleField` wird zum Abrufen der `eco_friendly` -Attribut. Dadurch wird deutlich, wie Sie Abfragen für beliebige benutzerdefinierte Attribute durchführen können, die Teil des Adobe Commerce-Schemas sind.
+   Im obigen Code wird das `addCustomSimpleField` zum Abrufen des `eco_friendly`-Attributs verwendet. Dadurch wird deutlich, wie Sie Abfragen für beliebige benutzerdefinierte Attribute durchführen können, die Teil des Adobe Commerce-Schemas sind.
 
    >[!NOTE]
    >
-   > Die `createdAt()`-Methode wurde tatsächlich als Teil der [Produktschnittstelle](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java) implementiert. Die meisten häufig gefundenen Schemaattribute wurden implementiert. Verwenden Sie daher das `addCustomSimpleField` nur für echte benutzerdefinierte Attribute.
+   >Die `createdAt()`-Methode wurde tatsächlich als Teil der [Produktschnittstelle](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java) implementiert. Die meisten häufig gefundenen Schemaattribute wurden implementiert. Verwenden Sie daher das `addCustomSimpleField` nur für echte benutzerdefinierte Attribute.
 
 1. Fügen Sie eine Protokollierung hinzu, um das Debugging des Java-Codes zu erleichtern:
 
@@ -324,7 +324,7 @@ Verwenden Sie [eine IDE Ihrer Wahl](https://docs.adobe.com/content/help/de-DE/ex
    }
    ```
 
-   In der obigen Methode wird die `productRetriever` wird zum Abrufen des Produkts und der `getAsInteger()` -Methode verwendet wird, um den Wert der `eco_friendly` -Attribut. Dank der GraphQL-Abfragen, die wir zuvor ausgeführt haben, wissen wir, dass der erwartete Wert, wenn das `eco_friendly`-Attribut auf „**Ja**“ gesetzt ist, eigentlich eine Ganzzahl von **1** ist.
+   Bei der obigen Methode wird der `productRetriever` genutzt, um das Produkt abzurufen, während die `getAsInteger()`-Methode dazu dient, den Wert des `eco_friendly`-Attributs abzurufen. Dank der GraphQL-Abfragen, die wir zuvor ausgeführt haben, wissen wir, dass der erwartete Wert, wenn das `eco_friendly`-Attribut auf „**Ja**“ gesetzt ist, eigentlich eine Ganzzahl von **1** ist.
 
    Nachdem das Sling-Modell aktualisiert wurde, muss das Komponenten-Markup aktualisiert werden, um basierend auf dem Sling-Modell ein Zeichen für **Umweltfreundlich** anzuzeigen.
 
@@ -336,7 +336,7 @@ In unserem Fall möchten wir ein Banner auf dem Teaser rendern, um anhand eines 
 
 >[!NOTE]
 >
-> Wenn Sie eine Komponente wie diesen Produkt-Teaser oder die CIF-Seitenkomponente mit den CIF-Produkt- und Kategorieauswahlen anpassen, stellen Sie sicher, dass Sie die erforderliche `cif.shell.picker`-clientlib für die Komponentendialogfelder einschließen. Weitere Informationen finden Sie unter [Verwenden der CIF-Produkt- und Kategorieauswahl](use-cif-pickers.md).
+>Wenn Sie eine Komponente wie diesen Produkt-Teaser oder die CIF-Seitenkomponente mit den CIF-Produkt- und Kategorieauswahlen anpassen, stellen Sie sicher, dass Sie die erforderliche `cif.shell.picker`-clientlib für die Komponentendialogfelder einschließen. Weitere Informationen finden Sie unter [Verwenden der CIF-Produkt- und Kategorieauswahl](use-cif-pickers.md).
 
 1. Navigieren Sie in der IDE zum `ui.apps`-Modul und erweitern Sie es. Erweitern Sie dann die Ordnerhierarchie zu `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` und überprüfen Sie die `.content.xml`-Datei.
 
@@ -430,7 +430,7 @@ In unserem Fall möchten wir ein Banner auf dem Teaser rendern, um anhand eines 
 
    >[!CAUTION]
    >
-   > Es können auch Stapelspuren angezeigt werden, wenn das im Teaser verwendete Produkt als Teil seines Attributsatzes nicht über das `eco_friendly`-Attribut verfügt.
+   >Es können auch Stapelspuren angezeigt werden, wenn das im Teaser verwendete Produkt als Teil seines Attributsatzes nicht über das `eco_friendly`-Attribut verfügt.
 
 ## Stile für das Zeichen „Umweltfreundlich“ hinzufügen {#add-styles}
 
@@ -471,7 +471,7 @@ An diesem Punkt funktioniert die Logik dafür, wann das Zeichen **Umweltfreundli
 
    >[!NOTE]
    >
-   > Weitere Informationen zu Frontend-Workflows finden Sie unter [Festlegung des Stils von CIF-Kernkomponenten](./style-cif-component.md).
+   >Weitere Informationen zu Frontend-Workflows finden Sie unter [Festlegung des Stils von CIF-Kernkomponenten](./style-cif-component.md).
 
 1. Speichern Sie die Änderungen und stellen Sie die Aktualisierungen mithilfe Ihrer Maven-Kenntnisse über ein Befehlszeilen-Terminal in AEM bereit:
 
@@ -490,7 +490,7 @@ Sie haben gerade Ihre erste AEM CIF-Komponente angepasst. Laden Sie die [fertige
 
 ## Bonusaufgabe {#bonus-challenge}
 
-Überprüfen Sie die Funktionalität der **Neu** -Zeichen, das bereits im Produkt-Teaser implementiert wurde. Versuchen Sie, ein zusätzliches Kontrollkästchen hinzuzufügen, damit Autoren steuern können, wann das **Umweltfreundlich**-Zeichen angezeigt werden soll. Sie müssen das Komponentendialogfeld unter `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml` aktualisieren.
+Überprüfen Sie die Funktionalität des Abzeichens **Neu**, das bereits im Produkt-Teaser implementiert wurde. Versuchen Sie, ein zusätzliches Kontrollkästchen hinzuzufügen, damit Autoren steuern können, wann das **Umweltfreundlich**-Zeichen angezeigt werden soll. Sie müssen das Komponentendialogfeld unter `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml` aktualisieren.
 
 ![Aufgabe zur Implementierung neuer Abzeichen](../assets/customize-cif-components/new-badge-implementation-challenge.png)
 

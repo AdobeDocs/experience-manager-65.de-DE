@@ -10,7 +10,7 @@ discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: 98854fa3b852f511cf95adc13b945c06b1afff96
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '2011'
 ht-degree: 98%
@@ -190,7 +190,7 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Stellen Si
 
 >[!NOTE]
 >
-> Das Formulardatenmodell unterstützt [OData Version 4](https://www.odata.org/documentation/).
+>Das Formulardatenmodell unterstützt [OData Version 4](https://www.odata.org/documentation/).
 >Eine schrittweise Anleitung zum Konfigurieren von Microsoft Dynamics 365, online oder On-Premise, finden Sie unter [Microsoft Dynamics OData-Konfiguration](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Datenquellen]**. Tippen Sie, um den Ordner auszuwählen, in dem Sie eine Cloud-Konfiguration erstellen möchten.

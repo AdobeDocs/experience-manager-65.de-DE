@@ -9,10 +9,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 0125021a-1c00-4ea3-b7fb-1533b7b9f4f2
-source-git-commit: 014731aa9c5c4d7d419ff8b037142b47e7b7da01
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '910'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 92%
 
 >[!NOTE]
 >
-> Suchmaschinenoptimierung (SEO) ist zu einem wichtigen Thema für viele Marketer geworden. Deshalb müssen SEO-Thematiken bei vielen AEM-Projekten berücksichtigt werden. Weitere Informationen finden Sie unter [Best Practices für SEO und URL-Verwaltung](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html).
+>Suchmaschinenoptimierung (SEO) ist zu einem wichtigen Thema für viele Marketer geworden. Deshalb müssen SEO-Thematiken bei vielen AEM-Projekten berücksichtigt werden. Weitere Informationen finden Sie unter [Best Practices für SEO und URL-Verwaltung](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html?lang=de).
 
 Die [AEM-CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) ermöglichen erweiterte Konfigurationen zum Anpassen der URLs für Produkt- und Kategorieseiten. Viele Implementierungen passen diese URLs für die Suchmaschinenoptimierung (SEO) an. Im folgenden Video wird beschrieben, wie Sie den `UrlProvider`-Service und die Funktionen der [Sling-Zuordnung](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) konfigurieren können, um die URLs für Produkt- und Kategorieseiten anzupassen.
 
@@ -32,7 +32,7 @@ Um den Service `UrlProvider` gemäß den SEO-Anforderungen zu konfigurieren, mus
 
 >[!NOTE]
 >
-> Seit Version 2.0.0 der AEM CIF-Kernkomponenten bietet die URL-Provider-Konfiguration nur vordefinierte URL-Formate anstelle der von 1.x-Versionen bekannten Freitext-konfigurierbaren Formate. Darüber hinaus wurde die Verwendung von Selektoren zur Übergabe von Daten in URLs durch Suffixe ersetzt.
+>Seit Version 2.0.0 der AEM CIF-Kernkomponenten bietet die URL-Provider-Konfiguration nur vordefinierte URL-Formate anstelle der von 1.x-Versionen bekannten Freitext-konfigurierbaren Formate. Darüber hinaus wurde die Verwendung von Selektoren zur Übergabe von Daten in URLs durch Suffixe ersetzt.
 
 ### URL-Format von Produktseiten {#product}
 
@@ -73,15 +73,15 @@ Mit den obigen Beispieldaten sieht eine Kategorieseiten-URL, die mit dem Standar
 
 >[!NOTE]
 > 
-> Der `url_path` ist eine Verkettung aus dem `url_keys` der Vorgänger eines Produkts oder einer Kategorie und dem `url_key` des Produkts oder der Kategorie, getrennt durch `/`-Schrägstrich.
+>Der `url_path` ist eine Verkettung aus dem `url_keys` der Vorgänger eines Produkts oder einer Kategorie und dem `url_key` des Produkts oder der Kategorie, getrennt durch `/`-Schrägstrich.
 
 ### Spezifische Kategorie-/Produktseiten {#specific-pages}
 
 Es ist möglich, [mehrere Kategorie- und Produktseiten](multi-template-usage.md) für nur eine bestimmte Untermenge von Kategorien oder Produkten eines Katalogs zu erstellen.
 
-Die `UrlProvider` ist vorkonfiguriert, um Deep-Links zu solchen Seiten in Autorenebeneninstanzen zu generieren. Dies ist für Editoren nützlich, die eine Site im Vorschaumodus durchsuchen, zu einer bestimmten Produkt- oder Kategorieseite navigieren und zurück in den Bearbeitungsmodus wechseln, um die Seite zu bearbeiten.
+`UrlProvider` ist so vorkonfiguriert, dass Deep-Links zu bestimmten Kategorie- und Produktseiten in Instanzen der Autorenebene zu erzeugt werden. Dies ist für Editoren nützlich, die eine Site im Vorschaumodus durchsuchen, zu einer bestimmten Produkt- oder Kategorieseite navigieren und zurück in den Bearbeitungsmodus wechseln, um die Seite zu bearbeiten.
 
-Auf Veröffentlichungsebeneninstanzen hingegen sollten Katalogseiten-URLs stabil gehalten werden, um beispielsweise Gewinne bei Suchmaschinenrankings nicht zu verlieren. Deshalb rendern Instanzen der Veröffentlichungsebene standardmäßig keine Deep-Links von bestimmten Katalogseiten. Um dieses Verhalten zu ändern, muss die Variable _CIF-URL-Provider-spezifische Seitenstrategie_ kann so konfiguriert werden, dass immer bestimmte Seiten-URLs generiert werden.
+Auf Instanzen der Veröffentlichungsebene hingegen sollten Katalogseiten-URLs stabil bleiben, um beispielsweise Verbesserungen bei Suchmaschinen-Rankings nicht zu verlieren. Deshalb rendern Instanzen der Veröffentlichungsebene standardmäßig keine Deep-Links von bestimmten Katalogseiten. Um dieses Verhalten zu ändern, kann die Variable für die _spezifische Seitenstrategie des CIF-URL-Providers_ so konfiguriert werden, dass immer bestimmte Seiten-URLs erzeugt werden.
 
 ## Benutzerdefinierte URL-Formate {#custom-url-format}
 

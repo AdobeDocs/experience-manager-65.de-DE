@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6ae57874-a9a1-4208-9001-7f44a1f57cbe
 docset: aem65
 exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
-source-git-commit: cb4b0cb60b8709beea3da70495a15edc8c4831b8
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 82%
+source-wordcount: '794'
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ So erstellen Sie eine geschlossene Benutzergruppe:
    ![screen_shot_2018-10-30at145502](assets/screenshot_2018-10-30at145502.png)
 
 1. Klicken Sie auf die Schaltfläche **Erstellen** oben rechts, um eine neue Gruppe zu erstellen.
-1. Benennen Sie Ihre neue Gruppe. Beispiel: `cug_access`.
+1. Benennen Sie Ihre neue Gruppe, z. B. `cug_access`.
 
    ![screen_shot_2018-10-30at151459](assets/screenshot_2018-10-30at151459.png)
 
@@ -77,20 +77,20 @@ So wenden Sie die CUG auf eine Seite an:
 1. Rufen Sie im folgenden Fenster die Registerkarte **Erweitert** auf.
 1. Blättern Sie nach unten und aktivieren Sie das Kontrollkästchen im Bereich **Authentifizierungsanforderungen**.
 
-1. Fügen Sie unten Ihren Konfigurationspfad hinzu und klicken Sie auf Speichern .
+1. Fügen Sie unten den Kofigurationspfad hinzu und klicken Sie dann auf „Speichern“.
 1. Rufen Sie dann die Registerkarte **Berechtigungen** auf und klicken Sie auf die Schaltfläche **Geschlossene Benutzergruppe bearbeiten**.
 
    ![screen_shot_2018-10-30at163003](assets/screenshot_2018-10-30at163003.png)
 
-   >[HINWEIS!]
+   >[!NOTE]
    >
-   > Beachten Sie, dass CUGs auf der Registerkarte „Berechtigungen“ aus Blueprints nicht zu Live Copies ausgerollt werden können. Planen Sie dies ein, wenn Sie eine Live Copy konfigurieren.
+   >Beachten Sie, dass CUGs auf der Registerkarte „Berechtigungen“ aus Blueprints nicht zu Live Copies ausgerollt werden können. Planen Sie dies ein, wenn Sie eine Live Copy konfigurieren.
    >
-   > Weitere Informationen finden Sie auf [dieser Seite](closed-user-groups.md#aem-livecopy).
+   >Weitere Informationen finden Sie auf [dieser Seite](closed-user-groups.md#aem-livecopy).
 
 1. Suchen Sie nach Ihrer CUG im folgenden Fenster und fügen Sie in diesem Fenster die Gruppe **cug_access** hinzu. Klicken Sie abschließend **Speichern**.
 1. Klicken Sie auf **Aktiviert**, um festzulegen, dass diese Seite (und alle untergeordneten Seiten) zu einer CUG gehören.
-1. Geben Sie die **Anmeldeseite** die Mitglieder der Gruppe verwenden; Beispiel:
+1. Geben Sie die **Anmeldeseite** an, die Mitglieder der Gruppe verwenden; Beispiel:
 
    `/content/geometrixx/en/toolbar/login.html`
 
@@ -112,13 +112,13 @@ Um dies zu vermeiden, empfiehlt es sich, nicht-geschützte Umleitungsseiten zu e
 
 Falls Sie den Dispatcher verwenden, müssen Sie eine Dispatcher-Farm mit den folgenden Eigenschaften definieren:
 
-* [virtualhosts](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts): Entspricht dem Pfad zu den Seiten, auf die die CUG angewendet wird
+* [virtualhosts](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts): Entspricht dem Pfad zu den Seiten, auf die die CUG angewendet wird
 * \sessionmanagement: siehe unten
-* [cache](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache): Ein Zwischenspeicher-Verzeichnis, das für die Dateien vorgesehen ist, auf die die CUG angewendet wird
+* [cache](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache): Ein Zwischenspeicher-Verzeichnis, das für die Dateien vorgesehen ist, auf die die CUG angewendet wird
 
 ### Konfigurieren des Dispatcher-Sitzungsmanagements für CUGs {#configuring-dispatcher-session-management-for-cugs}
 
-Konfigurieren [Sitzungsverwaltung in der Datei &quot;dispatcher.any&quot;](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) für die CUG. Der Authentifizierungs-Handler, der verwendet wird, wenn der Zugriff für CUG-Seiten angefordert wird, bestimmt, wie Sie die Sitzungsverwaltung konfigurieren.
+Konfigurieren Sie das [Sitzungsmanagement in der Datei dispatcher.any](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) für die CUG. Der Authentifizierungs-Handler, der verwendet wird, wenn der Zugriff auf CUG-Seiten angefordert wird, bestimmt, wie Sie das Sitzungsmanagement konfigurieren.
 
 ```xml
 /sessionmanagement
@@ -129,10 +129,10 @@ Konfigurieren [Sitzungsverwaltung in der Datei &quot;dispatcher.any&quot;](https
 
 >[!NOTE]
 >
->Wenn für eine Dispatcher-Farm das Sitzungsmanagement aktiviert ist, werden alle von der Farm verarbeiteten Seiten nicht zwischengespeichert. Um Seiten zwischenzuspeichern, die sich außerhalb der CUG befinden, erstellen Sie eine zweite Farm in dispatcher.any
->, der die Nicht-CUG-Seiten verarbeitet.
+>Wenn für eine Dispatcher-Farm das Sitzungsmanagement aktiviert ist, werden alle von der Farm verarbeiteten Seiten nicht zwischengespeichert. Um Seiten zwischenzuspeichern, die sich außerhalb der CUG befinden, erstellen Sie eine zweite Farm in der Datei dispatcher.any
+>, die die Nicht-CUG-Seiten verarbeitet.
 
-1. Konfigurieren [/sessionmanagement](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) durch Definition `/directory`; Beispiel:
+1. Konfigurieren Sie [/sessionmanagement](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement), indem Sie `/directory` festlegen, zum Beispiel:
 
    ```xml
    /sessionmanagement
@@ -142,4 +142,4 @@ Konfigurieren [Sitzungsverwaltung in der Datei &quot;dispatcher.any&quot;](https
      }
    ```
 
-1. Legen Sie [/allowAuthorized](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#caching-when-authentication-is-used) auf `0` fest.
+1. Legen Sie [/allowAuthorized](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html#caching-when-authentication-is-used) auf `0` fest.
