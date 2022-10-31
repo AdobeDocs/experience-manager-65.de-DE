@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: df94dd1b-1b65-478b-a28d-81807a8084b1
 exl-id: a7281ca0-461f-4762-a631-6bb539596200
-source-git-commit: 7fed5ce55f6ee7638d2578ee7ef2d84deb24277f
+source-git-commit: 4712f57808ae769646b00d1098648686815121b6
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 71%
+source-wordcount: '1556'
+ht-degree: 70%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 71%
 
 Durch die Integration von AEM mit Adobe Campaign können Sie E-Mail-Versand, Inhalt und Formulare direkt in AEM verwalten. Zur bidirektionalen Kommunikation zwischen Lösungen sind Konfigurationsschritte sowohl in Adobe Campaign Classic als auch AEM erforderlich.
 
-Durch diese Integration können AEM und Adobe Campaign Classic unabhängig verwendet werden. Marketingexperten können Kampagnen erstellen und Targeting in Adobe Campaign verwenden, während Ersteller von Inhalten parallel an der Inhaltserstellung in AEM arbeiten können. Durch die Integration können Inhalt und Design der Kampagne in AEM zielgerichtet und von Adobe Campaign bereitgestellt werden.
+Durch diese Integration können AEM und Adobe Campaign Classic unabhängig verwendet werden. Marketingexperten können Kampagnen erstellen und Targeting in Adobe Campaign verwenden, während Ersteller von Inhalten parallel an der Inhaltserstellung in AEM arbeiten können. Mithilfe der Integration können Inhalt und Design der in AEM erstellten Kampagne zielgerichtet und von Adobe Campaign bereitgestellt werden.
 
 ## Integrationsschritte {#integration-steps}
 
@@ -44,7 +44,7 @@ Dieses Dokument führt Sie im Detail durch die einzelnen Schritte.
    * Weitere Informationen zum Einrichten und Konfigurieren von Adobe Campaign Classic finden Sie in der [Adobe Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=de), insbesondere im Handbuch zur Installation und Konfiguration.
 * Administratorzugriff auf AEM
 
-## Installieren des AEM-Integrationspakets in Campaign {#install-package}
+## Installieren Sie das AEM Integrationspaket in Campaign {#install-package}
 
 Das **AEM-Integrationspaket** in Adobe Campaign enthält eine Reihe von Standardkonfigurationen, die für die Verbindung mit AEM erforderlich sind.
 
@@ -68,7 +68,7 @@ Das **AEM-Integrationspaket** in Adobe Campaign enthält eine Reihe von Standard
 
 Das Integrationspaket ist jetzt installiert.
 
-## Erstellen des Benutzers für AEM in Campaign {#create-operator}
+## Erstellen des Operators für AEM in Campaign {#create-operator}
 
 Das Integrationspaket erstellt automatisch den `aemserver`-Benutzer, den AEM verwendet, um eine Verbindung mit Adobe Campaign herzustellen. Sie müssen eine Sicherheitszone für diesen Benutzer definieren und sein Kennwort festlegen.
 
@@ -122,7 +122,7 @@ Das Integrationspaket erstellt automatisch den `aemserver`-Benutzer, den AEM ver
 
 1. Klicken Sie auf **OK**, um das Kennwort für den `aemserver`-Operator zu speichern.
 
-## Campaign-Integration in AEM konfigurieren {#campaign-integration}
+## Konfigurieren der Campaign-Integration in AEM {#campaign-integration}
 
 AEM verwendet [den Operator, den Sie bereits in Campaign eingerichtet haben](#create-operator), zur Kommunikation mit Campaign
 
@@ -152,7 +152,7 @@ AEM kann jetzt mit Adobe Campaign kommunizieren.
 >
 >Stellen Sie sicher, dass Ihr Adobe Campaign-Server über das Internet erreichbar ist. AEM können nicht auf private Netzwerke zugreifen.
 
-## Konfigurieren der Replikation auf der AEM-Veröffentlichungsinstanz {#replication}
+## Konfigurieren der Replikation für die AEM-Veröffentlichungsinstanz {#replication}
 
 Kampagneninhalte werden von Inhaltsautoren in der AEM-Autoreninstanz erstellt. Diese Instanz ist in der Regel nur intern in Ihrem Unternehmen verfügbar. Damit die Empfänger Ihrer Kampagne auf Inhalte wie Bilder und Assets zugreifen können, müssen Sie diese Inhalte veröffentlichen.
 
@@ -166,7 +166,7 @@ So konfigurieren Sie die Replikation von Ihrer AEM-Autoreninstanz zur Veröffent
 
    ![Konfigurieren des Replikationsagenten](assets/acc-replication-config.png)
 
-1. Tippen oder klicken Sie auf **Bearbeiten** und wählen Sie dann **Verkehr** Registerkarte.
+1. Tippen oder klicken Sie auf **Bearbeiten** und wählen Sie dann die Registerkarte **Transport** aus.
 
 1. Konfigurieren Sie die **URI** -Feld durch Ersetzen der Standardeinstellung `localhost` -Wert mit der IP-Adresse der AEM Veröffentlichungsinstanz.
 
@@ -194,7 +194,7 @@ Sie haben die Replikation zur AEM Veröffentlichungsinstanz konfiguriert, damit 
 
 1. Tippen oder klicken Sie auf **Speichern**.
 
-Sie haben den Externalizer konfiguriert und Adobe Campaign kann nicht auf Ihre Inhalte zugreifen.
+Sie haben den Externalizer konfiguriert und Adobe Campaign kann jetzt auf Ihre Inhalte zugreifen.
 
 >[!NOTE]
 Die Veröffentlichungsinstanz muss vom Adobe Campaign-Server aus erreichbar sein. Wenn `localhost:4503` oder einem anderen Server, auf den Adobe Campaign nicht zugreifen kann, werden keine Bilder von AEM in der Adobe Campaign-Konsole angezeigt.
@@ -213,7 +213,7 @@ Damit Campaign mit AEM kommunizieren kann, müssen Sie ein Kennwort für den `ca
 1. Klicken Sie auf **Speichern**, um die Kennwortänderung zu speichern.
 1. Klicken Sie auf **Speichern und schließen**, um die Änderungen am `campaign-remote`-Benutzer zu speichern.
 
-## Konfigurieren des externen AEM-Kontos in Campaign {#acc-setup}
+## Konfigurieren des AEM externen Kontos in Campaign {#acc-setup}
 
 Bei der [Installation des **AEM-Integrationspakets** in Campaign](#install-package) wird ein externes Konto für AEM erstellt. Durch die Konfiguration dieses externen Kontos kann Adobe Campaign eine Verbindung zu AEM herstellen, wodurch eine bidirektionale Kommunikation zwischen den Lösungen ermöglicht wird.
 
@@ -228,7 +228,7 @@ Bei der [Installation des **AEM-Integrationspakets** in Campaign](#install-packa
 1. Suchen Sie das externe AEM-Konto. Standardmäßig hat es die folgenden Werte:
 
    * **Typ** - `AEM`
-   * **Titel** - `AEM Instance`
+   * **Bezeichnung** - `AEM Instance`
    * **Interner Name** - `aemInstance`
 
 1. Geben Sie auf der Registerkarte **Allgemein** dieses Kontos die Benutzerinformationen ein, die Sie im Schritt [Festlegen des Kennworts für den Benutzer „campaign-remote“](#set-campaign-remote-password) definiert haben.
