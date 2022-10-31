@@ -1,6 +1,6 @@
 ---
-title: Fehlerbehebung bei Dynamic Media - Scene7-Modus
-description: Führen Sie eine Fehlerbehebung für Dynamic Media durch, wenn es im Scene7-Modus ausgeführt wird.
+title: Fehlerbehebung bei Dynamic Media   – Scene7-Modus
+description: Durchführen einer Fehlerbehebung bei Dynamic Media im Scene7-Modus.
 uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -12,14 +12,14 @@ role: User, Admin
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: Troubleshooting
 mini-toc-levels: 3
-source-git-commit: d5824078ca3e1ff2b48874446aaebe3fdd60cfdc
+source-git-commit: 9c3df2491f99fe31e4b64b47442dd583af06974e
 workflow-type: tm+mt
-source-wordcount: '1386'
-ht-degree: 90%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Fehlerbehebung bei Dynamic Media - Scene7-Modus{#troubleshooting-dynamic-media-scene-mode}
+# Fehlerbehebung bei Dynamic Media – Scene7-Modus{#troubleshooting-dynamic-media-scene-mode}
 
 Das folgende Dokument beschreibt das Beheben von Fehlern mit Dynamic Media im Ausführungsmodus **dynamicmedia_scene7**.
 
@@ -27,14 +27,14 @@ Das folgende Dokument beschreibt das Beheben von Fehlern mit Dynamic Media im Au
 
 Stellen Sie sicher, dass Dynamic Media korrekt eingerichtet wurde, indem Sie folgende Schritte ausführen:
 
-* Der Befehl &quot;Start&quot;enthält `-r dynamicmedia_scene7` Ausführungsmodus-Argument.
-* Alle Cumulative Fix Packs (CFPs) von Adobe Experience Manager 6.4 wurden zuerst installiert *before* alle verfügbaren Dynamic Media Feature Packs.
+* Der Befehl „Start“ enthält das `-r dynamicmedia_scene7`-Ausführungsmodus-Argument.
+* Alle Cumulative Fix Packs (CFPs) für Adobe Experience Manager 6.4 wurden *vor* den verfügbaren Feature Packs für Dynamic Media installiert.
 * Das optionale Feature Pack 18912 wurde installiert.
 
-   Dieses optionale Feature Pack ist für die FTP-Unterstützung oder für die Migration von Assets von Dynamic Media Classic zu Dynamic Media vorgesehen.
+   Dieses optionale Feature Pack bietet FTP-Unterstützung und Hilfe bei der Migration von Assets aus Dynamic Media Classic nach Dynamic Media.
 
 * Navigieren Sie zur Cloud Services-Benutzeroberfläche und vergewissern Sie sich, dass das angegebene Konto unter **[!UICONTROL Verfügbare Konfigurationen]** aufgeführt wird.
-* Stellen Sie sicher, dass `Dynamic Media Asset Activation (scene7)` Replikationsagent ist aktiviert.
+* Stellen Sie sicher, dass der `Dynamic Media Asset Activation (scene7)`-Replikationsagent aktiviert ist.
 
    Diesen Replizierungsagent finden Sie unter „Agenten für Autor“.
 
@@ -48,7 +48,7 @@ Anhand der folgenden Asset-Eigenschaften können Sie in CRXDE Lite prüfen, ob A
 
 | **Eigenschaft** | **Beispiel** | **Beschreibung** |
 |---|---|---|
-| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | Allgemeiner Indikator dafür, dass der Knoten mit Dynamic Media verknüpft ist. |
+| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a\|364266`** | Allgemeiner Indikator dafür, dass der Knoten mit Dynamic Media verknüpft ist. |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** oder Fehlertext | Status des Hochladens der Assets in Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Muss angegeben werden, um URLs zu Remote-Assets von Dynamic Media zu generieren. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **Erfolg** oder **fehlgeschlagen:`<error text>`** | Synchronisierungsstatus für Sets (Rotationssets, Bildsets usw.), Bildvorgaben, Viewer-Vorgaben oder Imagemap-Updates für ein Asset oder Bilder, die bearbeitet wurden. |
@@ -63,7 +63,7 @@ Führen Sie folgende Schritte aus, bevor Sie einen Verschiebe-, Kopier- oder Lö
 
 * Prüfen Sie für Bilder und Videos, ob der Wert `<object_node>/jcr:content/metadata/dam:scene7ID` vorhanden ist, bevor Sie Verschiebe-, Kopier- oder Löschvorgänge ausführen.
 * Prüfen Sie für Bild- und Viewer-Vorgaben, ob der Wert `https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata` vorhanden ist, bevor Sie Verschiebe-, Kopier- oder Löschvorgänge ausführen.
-* Wenn der obige Metadatenwert fehlt, müssen Sie Assets vor dem Verschieben, Kopieren oder Löschen erneut hochladen.
+* Wenn der obige Metadatenwert fehlt, müssen Sie Assets erneut hochladen, bevor Sie Verschiebe-, Kopier- oder Löschvorgänge ausführen.
 
 ### Versionskontrolle {#version-control}
 
@@ -81,7 +81,7 @@ Falls Sie Probleme mit Bildern und Sets haben, sehen Sie sich die folgende Anlei
  <tbody>
   <tr>
    <td><strong>Problem</strong></td>
-   <td><strong>Debugging</strong></td>
+   <td><strong>Vorgehensweise beim Debugging</strong></td>
    <td><strong>Lösung</strong></td>
   </tr>
   <tr>
@@ -108,7 +108,7 @@ Falls Sie Probleme mit Bildern und Sets haben, sehen Sie sich die folgende Anlei
   <tr>
    <td>Schaltfläche <strong>Auswählen</strong> ist nicht aktiv, nachdem ein Asset beim Bearbeiten eines Sets ausgewählt wurde</td>
    <td><p> </p> <p>Bekanntes Problem, das in 6.4 behoben wird</p> <p> </p> </td>
-   <td><p>Wählen Sie zuerst in der Asset-Auswahl einen anderen Ordner aus und gehen Sie zurück, um das Asset auszuwählen.</p> </td>
+   <td><p>Klicken Sie in der Asset-Auswahl zuerst auf einen anderen Ordner und kehren Sie dann zurück, um das Asset auszuwählen.</p> </td>
   </tr>
   <tr>
    <td>Karussell-Hotspot verschiebt sich nach dem Wechsel zwischen Folien</td>
@@ -146,7 +146,7 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
  <tbody>
   <tr>
    <td><strong>Problem</strong></td>
-   <td><strong>Debugging</strong></td>
+   <td><strong>Vorgehensweise beim Debugging</strong></td>
    <td><strong>Lösung</strong></td>
   </tr>
   <tr>
@@ -162,7 +162,7 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
      <li>Weisen Sie dem Ordner ein Videoprofil zu.</li>
      <li>Bearbeiten Sie das Videoprofil, damit es mehr als eine Kodierungsvorgabe enthält.</li>
      <li>Warten Sie, bis die Verarbeitung des Videos abgeschlossen ist.</li>
-     <li>Stellen Sie sicher, dass der Workflow Dynamic Media-Videokodierung nicht ausgeführt wird, bevor Sie das Video erneut laden.<br /> </li>
+     <li>Stellen Sie sicher, dass der Workflow für die Dynamic Media-Videokodierung nicht ausgeführt wird, bevor Sie das Video erneut laden.<br /> </li>
      <li>Laden Sie das Video erneut hoch.</li>
     </ol> </td>
   </tr>
@@ -170,7 +170,7 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
    <td>Video ist nicht kodiert</td>
    <td>
     <ul>
-     <li>Überprüfen, ob der Ausführungsmodus <code>dynamicmedia_scene7</code>.</li>
+     <li>Prüfen Sie, ob der Ausführungsmodus <code>dynamicmedia_scene7</code> ist.</li>
      <li>Prüfen Sie, ob der Dynamic Media-Cloud-Service konfiguriert ist.</li>
      <li>Prüfen Sie, ob dem Upload-Ordner ein Videoprofil zugeordnet ist.</li>
     </ul> </td>
@@ -225,20 +225,20 @@ Falls Sie Probleme mit einem Viewer haben, sehen Sie sich die folgende Anleitung
 
 **Lösung**
 
-1. Navigieren Sie in den Admin Tools zur Viewer-Vorgabeliste: `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`
+1. Navigieren Sie in den Admin Tools zur Liste der Viewer-Vorgaben: `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`
 1. Wählen Sie alle Viewer-Vorgaben aus und klicken Sie auf **Veröffentlichen**.
 1. Navigieren Sie zurück zum Beispiel-Manager und prüfen Sie, ob die Anzahl der nicht aktivierten Assets jetzt mit null angegeben wird.
 
-### Problem: Für das Bildmaterial der Viewer-Vorgabe wird für eine Vorschau in den Asset-Details oder für „URL kopieren“/„Code einbetten“ der Code 404 zurückgegeben {#viewer-preset-404}
+### Problem: Für das Bildmaterial der Viewer-Vorgabe wird für eine Vorschau in den Asset-Details oder für „URL kopieren“/„Code einbetten“ der Fehler 404 zurückgegeben {#viewer-preset-404}
 
 **Vorgehensweise beim Debugging**
 
 Gehen Sie in CRXDE Lite wie folgt vor:
 
-1. Gehen Sie zum `<sync-folder>/_CSS/_OOTB`-Ordner im Synchronisierungsordner für Dynamic Media (z. B. `/content/dam/_CSS/_OOTB`).
+1. Navigieren Sie zum `<sync-folder>/_CSS/_OOTB`-Ordner im Synchronisierungsordner für Dynamic Media (z. B. `/content/dam/_CSS/_OOTB`).
 1. Suchen Sie den Metadaten-Knoten des problematischen Assets (z. B. `<sync-folder>/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/`).
 1. Prüfen Sie, ob die Eigenschaften `dam:scene7*` vorhanden sind. Wenn das Asset erfolgreich synchronisiert und veröffentlicht wurde, sehen Sie, dass für `dam:scene7FileStatus` der Wert **PublishComplete** festgelegt ist.
-1. Versuchen Sie, das Bildmaterial direkt aus Dynamic Media anzufordern, indem Sie die Werte der folgenden Eigenschaften und Zeichenketten verketten:
+1. Versuchen Sie, das Bildmaterial direkt aus Dynamic Media anzufragen, indem Sie die Werte der folgenden Eigenschaften und Zeichenfolgen verketten:
 
    * `dam:scene7Domain`
    * `"is/content"`
@@ -253,28 +253,28 @@ Wenn die Beispiel-Assets oder das Bildmaterial der Viewer-Vorgabe nicht synchron
 
 1. Gehen Sie zu CRXDE Lite.
 1. Löschen Sie `<sync-folder>/_CSS/_OOTB`.
-1. Gehen Sie zum CRX Package Manager: `https://localhost:4502/crx/packmgr/`.
+1. Navigieren Sie zum CRX Package Manager: `https://localhost:4502/crx/packmgr/`.
 1. Suchen Sie das Viewer-Paket in der Liste; es beginnt mit `cq-dam-scene7-viewers-content`.
 1. Wählen Sie **Neu installieren** aus.
 1. Navigieren Sie zur Seite für die Dynamic Media-Konfiguration und klicken Sie auf „Bearbeiten“, um das Konfigurationsdialogfeld für Ihre Dynamic Media S7-Konfiguration zu öffnen.
 1. Nehmen Sie keine Änderungen vor und klicken Sie auf **Speichern**.
-Durch diese Speicherungsaktion wird die Logik zum Erstellen und Synchronisieren von Beispiel-Assets, Viewer-Vorgabe-CSS und Bildmaterial ausgelöst.
+Dadurch wird die Logik zum Erstellen und Synchronisieren von Beispiel-Assets, Viewer-Vorgabe-CSS und Bildmaterial erneut ausgelöst.
 
 ### Problem: Die Bildvorschau wird beim Bearbeiten von Viewer-Vorgaben nicht geladen {#image-preview-not-loading}
 
 **Lösung**
 
 1. Klicken Sie in Experience Manager auf das Adobe Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen, und dann auf **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
-1. Gehen Sie in der linken Leiste zum Ordner mit Beispielinhalten am folgenden Speicherort:
+1. Navigieren Sie in der linken Leiste zum Ordner mit Beispielinhalten am folgenden Speicherort:
 
    `/content/dam/_DMSAMPLE`
 
 1. Löschen Sie den Ordner `_DMSAMPLE`.
-1. Gehen Sie in der linken Leiste zum Ordner „Vorgaben“ am folgenden Speicherort:
+1. Navigieren Sie in der linken Leiste zum Ordner „Vorgaben“ am folgenden Speicherort:
 
    `/conf/global/settings/dam/dm/presets/viewer`
 
 1. Löschen Sie den Ordner `viewer`.
 1. Wählen Sie in der oberen linken Ecke der Seite „CRXDE Lite“ die Option **[!UICONTROL Alle speichern]** aus.
 1. Klicken Sie links oben auf der Seite „CRXDE Lite“ auf das Symbol **Zurück zur Startseite**.
-1. Erstellen Sie eine [Dynamic Media-Konfiguration in Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) neu.
+1. Erstellen Sie erneut eine [Dynamic Media-Konfiguration in Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
