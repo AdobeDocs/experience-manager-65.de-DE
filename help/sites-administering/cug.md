@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6ae57874-a9a1-4208-9001-7f44a1f57cbe
 docset: aem65
 exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 64d174cc824c8bf200cece4e29f60f946ee5560e
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 100%
+source-wordcount: '753'
+ht-degree: 66%
 
 ---
 
@@ -22,13 +22,14 @@ ht-degree: 100%
 
 Geschlossene Benutzergruppen (CUGs, Closed User Groups) werden zum Beschränken des Zugriffs auf bestimmte Seiten verwendet, die sich innerhalb einer veröffentlichten Website befinden. Bei diesen Seiten ist es erforderlich, dass sich die zugewiesenen Mitglieder anmelden und sie sicherheitsspezifische Anmeldedaten bereitstellen.
 
-So konfigurieren Sie einen solchen Bereich innerhalb Ihrer Website:
+So konfigurieren Sie einen solchen Bereich auf Ihrer Website:
 
 * [Erstellen Sie die tatsächliche geschlossene Benutzergruppe und weisen Sie ihr Mitglieder zu](#creating-the-user-group-to-be-used).
 
 * [Wenden Sie diese Gruppe auf die erforderlichen Seiten an](#applying-your-closed-user-group-to-content-pages) und wählen (oder erstellen) Sie die Anmeldeseite, die von den Mitgliedern der CUG verwendet werden soll. Dies wird auch festgelegt, wenn eine CUG auf eine Inhalts-Seite angewendet wird.
 
-* [Erstellen Sie irgendeine Form von Link zu mindestens einer Seite innerhalb des geschützten Bereichs.](#linking-to-the-realm) Andernfalls wird dieser nicht angezeigt.
+* [Erstellen Sie irgendeine Form von Link zu mindestens einer Seite innerhalb des geschützten Bereichs.](#linking-to-the-cug-pages) Andernfalls wird dieser nicht angezeigt.
+
 * [Konfigurieren Sie den Dispatcher,](#configure-dispatcher-for-cugs) wenn er verwendet wird.
 
 >[!CAUTION]
@@ -67,58 +68,63 @@ So erstellen Sie eine geschlossene Benutzergruppe:
 
 ## Anwenden der geschlossenen Benutzergruppe auf die Inhalts-Seiten {#applying-your-closed-user-group-to-content-pages}
 
-So wenden Sie die CUG auf eine Seite an:
+So wenden Sie die CUG auf eine oder mehrere Seiten an:
 
 1. Navigieren Sie zur Stammseite des eingeschränkten Bereichs, dem Sie die CUG zuweisen möchten.
-1. Wählen Sie die Seite aus, indem Sie auf die Miniaturansicht klicken und dann in der oberen Leiste auf **Eigenschaften** klicken.
+1. Wählen Sie die Seite aus, indem Sie auf die Miniaturansicht klicken und dann **Eigenschaften** in der oberen Symbolleiste.
 
    ![screen_shot_2018-10-30at162632](assets/screenshot_2018-10-30at162632.png)
 
-1. Rufen Sie im folgenden Fenster die Registerkarte **Erweitert** auf.
-1. Blättern Sie nach unten und aktivieren Sie das Kontrollkästchen im Bereich **Authentifizierungsanforderungen**.
+1. Öffnen Sie im folgenden Fenster die **Erweitert** Registerkarte.
 
-1. Fügen Sie unten den Kofigurationspfad hinzu und klicken Sie dann auf „Speichern“.
-1. Rufen Sie dann die Registerkarte **Berechtigungen** auf und klicken Sie auf die Schaltfläche **Geschlossene Benutzergruppe bearbeiten**.
+1. Scrollen Sie nach unten zum **Authentifizierungspflicht** Abschnitt.
+
+   1. Aktivieren Sie die **Aktivieren** Tickbox.
+
+   1. Fügen Sie den Pfad zu Ihrem **Anmeldeseite**.
+Dies ist optional. Wenn Sie das Feld leer lassen, wird die standardmäßige Anmeldeseite verwendet.
+
+   ![CUG hinzugefügt](assets/cug-authentication-requirement.png)
+
+1. Navigieren Sie als Nächstes zum **Berechtigungen** Registerkarte und wählen Sie **Geschlossene Benutzergruppe bearbeiten**.
 
    ![screen_shot_2018-10-30at163003](assets/screenshot_2018-10-30at163003.png)
 
    >[!NOTE]
    >
-   >Beachten Sie, dass CUGs auf der Registerkarte „Berechtigungen“ aus Blueprints nicht zu Live Copies ausgerollt werden können. Planen Sie dies ein, wenn Sie eine Live Copy konfigurieren.
+   >CUGs auf der Registerkarte &quot;Berechtigungen&quot;können nicht für Live Copies aus Blueprints bereitgestellt werden. Planen Sie dies ein, wenn Sie eine Live Copy konfigurieren.
    >
    >Weitere Informationen finden Sie auf [dieser Seite](closed-user-groups.md#aem-livecopy).
 
-1. Suchen Sie nach Ihrer CUG im folgenden Fenster und fügen Sie in diesem Fenster die Gruppe **cug_access** hinzu. Klicken Sie abschließend **Speichern**.
-1. Klicken Sie auf **Aktiviert**, um festzulegen, dass diese Seite (und alle untergeordneten Seiten) zu einer CUG gehören.
-1. Geben Sie die **Anmeldeseite** an, die Mitglieder der Gruppe verwenden; Beispiel:
+1. Die **Geschlossene Benutzergruppe bearbeiten** wird geöffnet. Hier können Sie nach Ihrer CUG suchen und diese auswählen und dann die Gruppenauswahl mit **Speichern**.
 
-   `/content/geometrixx/en/toolbar/login.html`
+   Die Gruppe wird der Liste hinzugefügt. Beispielsweise die Gruppe **cug_access**.
 
-   Dies ist optional. Wenn Sie das Feld leer lassen, wird die standardmäßige Anmeldeseite verwendet.
+   ![CUG hinzugefügt](assets/cug-added.png)
 
-1. Fügen Sie die zugelassenen Gruppen unter **Zugelassene Gruppen** hinzu. Fügen Sie mit dem Plussymbol (+) Gruppen hinzu bzw. entfernen Sie Gruppen mit dem Minussymbol (-). Nur Mitglieder dieser Gruppen können sich bei diesen Seiten anmelden und darauf zugreifen.
-1. Weisen Sie bei Bedarf einen **Bereich** zu (d. h. einen Namen für die Gruppen von Seiten). Frei lassen, um den Seitentitel zu verwenden.
-1. Klicken Sie auf **OK**, um die Spezifikationen zu speichern.
+1. Bestätigen Sie die Änderungen mit **Speichern und schließen**.
 
-Informationen zu Profilen in der Publishing-Umgebung und der Bereitstellung von Formularen zum An- und Abmelden finden Sie in [Identitätsmanagement](/help/sites-administering/identity-management.md).
+>[!NOTE]
+>
+>Informationen zu Profilen in der Publishing-Umgebung und der Bereitstellung von Formularen zum An- und Abmelden finden Sie in [Identitätsmanagement](/help/sites-administering/identity-management.md).
 
-## Erstellen eines Links zum Bereich {#linking-to-the-realm}
+## Verknüpfen mit den CUG-Seiten {#linking-to-the-cug-pages}
 
-Da das Ziel von Links zum CUG-Bereich für anonyme Benutzer nicht sichtbar ist, entfernt der Linkchecker solche Links.
+Da das Ziel von Links zu den CUG-Seiten für den anonymen Benutzer nicht sichtbar ist, entfernt der Linkprüfer solche Links.
 
-Um dies zu vermeiden, empfiehlt es sich, nicht-geschützte Umleitungsseiten zu erstellen, die auf Seiten innerhalb des CUG-Bereichs verweisen. Die Navigationseinträge werden gerendert, ohne dass der Linkchecker Probleme verursacht. Nur wenn tatsächlich auf die Umleitungsseiten zugegriffen wird, wird der Benutzer in den CUG-Bereich umgeleitet – nachdem er seine Anmeldedaten erfolgreich bereitgestellt hat.
+Um dies zu vermeiden, ist es ratsam, nicht geschützte Umleitungsseiten zu erstellen, die auf Seiten innerhalb des CUG-Bereichs verweisen. Die Navigationseinträge werden gerendert, ohne dass der Linkchecker Probleme verursacht. Nur wenn der Benutzer tatsächlich auf die Umleitungsseite zugreift, wird er in den CUG-Bereich umgeleitet, nachdem er seine Anmeldedaten erfolgreich bereitgestellt hat.
 
 ## Konfigurieren des Dispatchers für CUGs {#configure-dispatcher-for-cugs}
 
 Falls Sie den Dispatcher verwenden, müssen Sie eine Dispatcher-Farm mit den folgenden Eigenschaften definieren:
 
-* [virtualhosts](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts): Entspricht dem Pfad zu den Seiten, auf die die CUG angewendet wird
+* [virtualhosts](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#identifying-virtual-hosts-virtualhosts): Entspricht dem Pfad zu den Seiten, auf die die CUG angewendet wird
 * \sessionmanagement: siehe unten
-* [cache](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache): Ein Zwischenspeicher-Verzeichnis, das für die Dateien vorgesehen ist, auf die die CUG angewendet wird
+* [cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache): Ein Zwischenspeicher-Verzeichnis, das für die Dateien vorgesehen ist, auf die die CUG angewendet wird
 
 ### Konfigurieren des Dispatcher-Sitzungsmanagements für CUGs {#configuring-dispatcher-session-management-for-cugs}
 
-Konfigurieren Sie das [Sitzungsmanagement in der Datei dispatcher.any](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) für die CUG. Der Authentifizierungs-Handler, der verwendet wird, wenn der Zugriff auf CUG-Seiten angefordert wird, bestimmt, wie Sie das Sitzungsmanagement konfigurieren.
+Konfigurieren Sie das [Sitzungsmanagement in der Datei dispatcher.any](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#enabling-secure-sessions-sessionmanagement) für die CUG. Der Authentifizierungs-Handler, der verwendet wird, wenn der Zugriff auf CUG-Seiten angefordert wird, bestimmt, wie Sie das Sitzungsmanagement konfigurieren.
 
 ```xml
 /sessionmanagement
@@ -132,7 +138,7 @@ Konfigurieren Sie das [Sitzungsmanagement in der Datei dispatcher.any](https://h
 >Wenn für eine Dispatcher-Farm das Sitzungsmanagement aktiviert ist, werden alle von der Farm verarbeiteten Seiten nicht zwischengespeichert. Um Seiten zwischenzuspeichern, die sich außerhalb der CUG befinden, erstellen Sie eine zweite Farm in der Datei dispatcher.any
 >, die die Nicht-CUG-Seiten verarbeitet.
 
-1. Konfigurieren Sie [/sessionmanagement](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement), indem Sie `/directory` festlegen, zum Beispiel:
+1. Konfigurieren Sie [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#enabling-secure-sessions-sessionmanagement), indem Sie `/directory` festlegen, zum Beispiel:
 
    ```xml
    /sessionmanagement
@@ -142,4 +148,4 @@ Konfigurieren Sie das [Sitzungsmanagement in der Datei dispatcher.any](https://h
      }
    ```
 
-1. Legen Sie [/allowAuthorized](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html#caching-when-authentication-is-used) auf `0` fest.
+1. Legen Sie [/allowAuthorized](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-when-authentication-is-used) auf `0` fest.
