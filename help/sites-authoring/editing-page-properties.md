@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
-source-git-commit: 9946bfd3c2701a37d13e6eb6b4c19562ef77d24c
+source-git-commit: 1cd63d2ce5c5caf408b11eb6bac9b1a54dae0b25
 workflow-type: tm+mt
-source-wordcount: '1898'
-ht-degree: 90%
+source-wordcount: '1886'
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Sie können die erforderlichen Eigenschaften für eine Seite definieren. Diese k
 
 Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
-### Allgemein {#basic}
+### Einfach {#basic}
 
 * **Titel**
 
@@ -92,7 +92,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    Ermöglicht die Eingabe einer Vanity-URL für diese Seite, sodass Sie eine kürzere bzw. aussagekräftigere URL verwenden können.
 
-   Wenn die Vanity-URL beispielsweise auf `welcome`zur Seite, die durch den Pfad identifiziert wird `/v1.0/startpage`für die Website `http://example.com,` then `http://example.com/welcome`wäre die Vanity-URL von `http://example.com/content/v1.0/startpage`
+   Wenn z. B. die Vanity-URL `welcome` auf die Seite gesetzt wird, die durch den Pfad `/v1.0/startpage` für die Website `http://example.com,` identifiziert wird, wäre `http://example.com/welcome` die Vanity-URL von `http://example.com/content/v1.0/startpage`.
 
    >[!CAUTION]
    >
@@ -103,7 +103,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
    >* sollten nicht auf eine vorhandene Seite eingestellt sein.
 
 
-   Außerdem müssen Sie den Dispatcher konfigurieren, um den Zugriff auf Vanity-URLs zu ermöglichen. Siehe [Zugriff auf Vanity-URLs aktivieren](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) für weitere Details.
+   Außerdem müssen Sie den Dispatcher konfigurieren, um den Zugriff auf Vanity-URLs zu ermöglichen. Weitere Einzelheiten finden Sie unter [Aktivieren des Zugriffs auf Vanity-URLs](https://docs.adobe.com/content/help/de/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls).
 
 * **Vanity-URL umleiten**
 
@@ -134,9 +134,9 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
    * Beispiel: Wenn Sie einen Alias `private` für die Seite `/content/wknd/us/en/magazine/members-only` definieren, kann auf diese Seite über `/content/wknd/us/en/magazine/private` zugegriffen werden.
    * Durch die Erstellung eines Alias wird die Eigenschaft `sling:alias`, die sich nur auf die Ressource und nicht auf den Repository-Pfad auswirkt, auf dem Seitenknoten festgelegt.
    * Seiten, auf die im Editor über Aliasnamen zugegriffen wird, können nicht veröffentlicht werden. [Veröffentlichungsoptionen](/help/sites-authoring/publishing-pages.md) im Editor sind nur für Seiten verfügbar, auf die über ihre tatsächlichen Pfade zugegriffen wird.
-   * Weitere Informationen finden Sie unter [Lokalisierte Seitennamen unter Best Practices für SEO und URL-Verwaltung](/help/managing/seo-and-url-management.md#localized-page-names).
+   * Weitere Informationen finden Sie in [„Lokalisierte Seitennamen“ unter „Best Practices für SEO- und URL-Verwaltung“](/help/managing/seo-and-url-management.md#localized-page-names).
 
-* **Vererbt von &lt;*Pfad*>**
+* **Vererbt von &lt;*path*>**
 
    Gibt an, ob die Seite vererbt wurde und von wo.
 
@@ -158,7 +158,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    >[!CAUTION]
    >
-   >Die **[Berechtigungen](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** -Registerkarte ermöglicht die Bearbeitung von CUG-Konfigurationen basierend auf dem Vorhandensein der `granite:AuthenticationRequired` Mixin. Wenn Seitenberechtigungen mit veralteten CUG-Konfigurationen konfiguriert werden, die auf dem Vorhandensein von `cq:cugEnabled` -Eigenschaft verwenden, wird eine Warnmeldung unter **Authentifizierungspflicht** und die Option nicht bearbeitbar ist, wird die [Berechtigungen](/help/sites-authoring/editing-page-properties.md#permissions) bearbeitbar sein.
+   >Auf der Registerkarte **[Berechtigungen](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** können Sie CUG-Konfigurationen abhängig vom Vorhandensein des Mixins `granite:AuthenticationRequired` konfigurieren. Wenn Seitenberechtigungen mit veralteten CUG-Konfigurationen konfiguriert werden, die auf dem Vorhandensein der Eigenschaft `cq:cugEnabled` basieren, wird unter **Authentifizierungspflicht** eine Warnmeldung angezeigt und die Option ist nicht bearbeitbar, ebenso wenig wie die [Berechtigungen](/help/sites-authoring/editing-page-properties.md#permissions).
    >
    >
    >In diesem Fall müssen die CUG-Berechtigungen in der [klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) bearbeitet werden.
@@ -195,7 +195,7 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
 
 * **Freigabe in Social Media**
 
-   Definiert die auf der Seite verfügbaren Freigabeoptionen. Zeigt die Optionen an, die für die zentrale Komponente für die [Freigabe](https://helpx.adobe.com/experience-manager/core-components/using/sharing.html) zur Verfügung stehen.
+   Definiert die auf der Seite verfügbaren Freigabeoptionen. Zeigt die Optionen an, die für die zentrale Komponente für die [Freigabe](https://helpx.adobe.com/de/experience-manager/core-components/using/sharing.html) zur Verfügung stehen.
 
    * **Benutzerfreigabe aktivieren für Facebook**
    * **Benutzerfreigabe aktivieren für Pinterest**
@@ -207,7 +207,7 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
 
    Legen Sie Eigenschaften für [Cloud-Services](/help/sites-developing/extending-cloud-config.md) fest.
 
-### Personalisierung    {#personalization}
+### Personalisierung {#personalization}
 
 * **ContextHub-Konfigurationen**
 
@@ -232,14 +232,14 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
    * [Effektive Berechtigungen](/help/sites-administering/user-group-ac-admin.md) anzeigen 
    >[!CAUTION]
    >
-   >Die **Berechtigungen** -Registerkarte ermöglicht die Bearbeitung von CUG-Konfigurationen basierend auf dem Vorhandensein der `granite:AuthenticationRequired` Mixin. Wenn Seitenberechtigungen mit veralteten CUG-Konfigurationen konfiguriert werden, die auf dem Vorhandensein der Eigenschaft `cq:cugEnabled` basieren, wird eine Warnmeldung angezeigt und die CUG-Berechtigungen sind nicht bearbeitbar, ebenso wenig wie die Authentifizierungspflicht auf der Registerkarte [Erweitert](/help/sites-authoring/editing-page-properties.md#advanced).
+   >Auf der Registerkarte **Berechtigungen** können Sie CUG-Konfigurationen abhängig vom Vorhandensein des Mixins `granite:AuthenticationRequired` konfigurieren. Wenn Seitenberechtigungen mit veralteten CUG-Konfigurationen konfiguriert werden, die auf dem Vorhandensein der Eigenschaft `cq:cugEnabled` basieren, wird eine Warnmeldung angezeigt und die CUG-Berechtigungen sind nicht bearbeitbar, ebenso wenig wie die Authentifizierungspflicht auf der Registerkarte [Erweitert](/help/sites-authoring/editing-page-properties.md#advanced).
    >
    >
    >In diesem Fall müssen die CUG-Berechtigungen in der [klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) bearbeitet werden.
 
    >[!NOTE]
    >
-   >Die Registerkarte „Berechtigungen“ gestattet es nicht, leere CUG-Gruppen zu erstellen, was allerdings nützlich sein kann, um allen Benutzern den Zugriff zu verwehren. Verwenden Sie dazu stattdessen den CRX-Explorer. Siehe Dokument . [Administration von Benutzern, Gruppen und Zugriffsberechtigungen](/help/sites-administering/user-group-ac-admin.md) für weitere Informationen.
+   >Die Registerkarte „Berechtigungen“ gestattet es nicht, leere CUG-Gruppen zu erstellen, was allerdings nützlich sein kann, um allen Benutzern den Zugriff zu verwehren. Verwenden Sie dazu stattdessen den CRX-Explorer. Weitere Informationen finden Sie im Dokument [Verwalten von Benutzer-, Gruppen- und Zugriffsrechten](/help/sites-administering/user-group-ac-admin.md).
 
 ### Blueprint {#blueprint}
 
@@ -301,7 +301,7 @@ Beim Bearbeiten einer Seite können Sie mithilfe von **Seiteninformationen** die
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. Auswählen **Eigenschaften öffnen** und ein Dialogfeld wird geöffnet, in dem Sie die Eigenschaften bearbeiten können, sortiert nach der entsprechenden Registerkarte. Die folgenden Schaltflächen stehen rechts in der Symbolleiste zur Verfügung:
+1. Wählen Sie **Eigenschaften öffnen** aus. Daraufhin wird ein Dialogfeld geöffnet, in dem Sie die Eigenschaften – geordnet nach der jeweiligen Registerkarte – bearbeiten können. Die folgenden Schaltflächen stehen rechts in der Symbolleiste zur Verfügung:
 
    * **Abbrechen**
    * **Speichern und schließen**
@@ -367,7 +367,7 @@ Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
 
       * Die neuen Werte werden auf alle gewählten Seiten angewendet, wenn Sie **Fertig** wählen.
       * Wenn das Feld mehrwertig ist (z. B. Tags), können Sie einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
-   * Gemeinsame Felder, die unterschiedliche Werte auf den verschiedenen Seiten aufweisen, werden durch einen speziellen Wert angegeben, beispielsweise `<Mixed Entries>`. Bei der Bearbeitung dieser Felder ist Vorsicht geboten, um Datenverluste zu vermeiden.
+   * Gemeinsame Felder, die unterschiedliche Werte auf den verschiedenen Seiten aufweisen, werden durch einen speziellen Wert angegeben, beispielsweise `<Mixed Entries>`.
 
 
 >[!NOTE]
