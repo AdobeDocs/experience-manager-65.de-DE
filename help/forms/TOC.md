@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5, Forms-Anleitung
 breadcrumb-title: Forms-Anleitung
 user-guide-description: Digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren.
 role: User
-source-git-commit: 40434fc8f2e0fd4b66102cdd5779dc578330d7b4
+source-git-commit: 99c9eddad7a2ec7eb23b3c374a1c0e65e141da20
 workflow-type: tm+mt
-source-wordcount: '3808'
+source-wordcount: '3811'
 ht-degree: 97%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 97%
 + Versionshinweise {#release-notes-new-features}
    + [Versionshinweise](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=de)
    + [Übersicht über die neuen Funktionen](using/whats-new.md)
+   + [Häufig gestellte Fragen](/help/forms/using/frequently-asked-questions-faq.md)
    + [Veraltete Funktionen](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html?lang=de)
 + Erste Schritte {#getting-started}
    + [Einführung in AEM Forms](using/introduction-aem-forms.md)
