@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6612f89d-c518-4e5a-8df1-6487cc330a9a
 docset: aem65
 exl-id: b07134b2-074a-4d52-8d0c-7e7abe51fc3a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85895215904b8706830d20f7714de5512b2c3ec2
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 92%
+source-wordcount: '375'
+ht-degree: 96%
 
 ---
 
@@ -40,7 +40,7 @@ Es wird automatisch eine Bereinigungsaufgabe ausgeführt, um diesen temporären 
 
 ## Berechtigungen {#permissions}
 
-Zuvor musste in der klassischen Benutzeroberfläche bei der Entwicklung besondere Aufmerksamkeit geschenkt werden, um die AEM (z. B. `cq:text` Tag-Bibliothek oder benutzerdefinierte Integration der `DiffService` OSGi-Dienst in Komponenten). Für die neue Vergleichsfunktion ist dies nicht mehr notwendig, da sie clientseitig durch DOM-Vergleich ausgeführt wird.
+Früher in der klassischen Benutzeroberfläche musste bei der Entwicklung besondere Rücksicht genommen werden, um die AEM-Vergleichsfunktion zu unterstützen (z. B. die Verwendung der Tag-Bibliothek `cq:text` oder eine individuelle Integration des OSGi-Dienstes `DiffService` in Komponenten). Für die neue Vergleichsfunktion ist dies nicht mehr notwendig, da sie Client-seitig durch DOM-Vergleich ausgeführt wird.
 
 Es gibt jedoch einige Einschränkungen, die der Entwickler beachten muss.
 
@@ -58,3 +58,7 @@ Es gibt jedoch einige Einschränkungen, die der Entwickler beachten muss.
    * Komponenten, die AJAX verwenden, um Inhalte einzubeziehen
    * Single Page Applications
    * JavaScript-basierte Komponenten, die den DOM bei Benutzerinteraktionen manipulieren.
+
+>[!NOTE]
+>
+>Der Seitenvergleich funktioniert nur für Komponenten mit gültigen cq:editConfig -Knoten.
