@@ -6,10 +6,10 @@ seo-description: Learn about the options available when installing a standalone 
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
-source-git-commit: bb8dbb9069c4575af62a4d0b21195cee75944fea
+source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
 workflow-type: tm+mt
 source-wordcount: '1622'
-ht-degree: 76%
+ht-degree: 97%
 
 ---
 
@@ -19,13 +19,13 @@ In diesem Abschnitt wird beschrieben, welche Optionen bei der Installation einer
 
 ## Ändern der Portnummer durch Umbenennung der Datei {#changing-the-port-number-by-renaming-the-file}
 
-Der Standardport für AEM lautet 4502. Wenn dieser Anschluss nicht verfügbar ist oder bereits verwendet wird, konfiguriert sich Quickstart automatisch selbst, um die erste verfügbare Anschlussnummer wie folgt zu verwenden: 4502, 8080, 8081, 8082, 8083, 8084, 8085, 888, 9362, `<*random*>`.
+Der Standardport für AEM lautet 4502. Wenn dieser Port nicht verfügbar ist oder bereits verwendet wird, wird Quickstart automatisch so konfiguriert, dass die erste der folgenden verfügbaren Portnummern verwendet wird: 4502, 8080, 8081, 8082, 8083, 8084, 8085, 8888, 9362, `<*random*>`.
 
-Sie können die Portnummer auch festlegen, indem Sie die JAR-Datei &quot;quickstart&quot;umbenennen, sodass der Dateiname die Portnummer enthält. Beispiel: `cq5-publish-p4503.jar` oder `cq5-author-p6754.jar`.
+Sie können die Portnummer auch festlegen, indem Sie die Quickstart-JAR-Datei umbenennen, sodass der Dateiname die Portnummer enthält. Beispiel: `cq5-publish-p4503.jar` oder `cq5-author-p6754.jar`.
 
 Beachten Sie beim Umbenennen der Quickstart-JAR-Datei die folgenden Regeln:
 
-* Wenn Sie die Datei umbenennen, muss sie mit `cq;` wie in `cq5-publish-p4503.jar`.
+* Wenn Sie die Datei umbenennen, muss sie mit `cq;` beginnen, wie in `cq5-publish-p4503.jar`.
 
 * Es wird empfohlen, die Portnummer *immer* mit dem Präfix „-p“ zu versehen, wie zum Beispiel in „cq5-publish-p4503.jar“ oder „cq5-author-p6754.jar“.
 
@@ -35,26 +35,26 @@ Beachten Sie beim Umbenennen der Quickstart-JAR-Datei die folgenden Regeln:
 >
 >* Die Portnummer muss aus 4 bis 5 Ziffern bestehen.
 >* Diese Ziffern müssen nach dem Bindestrich stehen.
->* Wenn der Dateiname eine andere Ziffer enthält, muss der Anschlussnummer das Präfix vorangestellt werden. `-p`
+>* Sollten sich andere Ziffern im Dateinamen befinden, muss die Portnummer mit dem Präfix `-p` versehen werden.
 >* Das Präfix „cq5“ am Anfang des Dateinamens wird ignoriert.
 >
 
 
 >[!NOTE]
 >
->Sie können die Portnummer auch ändern, indem Sie die `-port` im Startbefehl.
+>Sie können die Portnummer auch ändern, indem Sie die Option `-port` im Startbefehl verwenden.
 
 ### Besonderheiten von Java 11 {#java-considerations}
 
 Wenn Sie Oracle Java 11 ausführen (oder generell Java-Versionen aktueller als 8), werden zusätzliche Parameter zu Ihrer Befehlszeile hinzugefügt, sobald AEM gestartet wird.
 
-* Folgendes - `-add-opens` Switches müssen hinzugefügt werden, um den entsprechenden Reflektionszugriff auf WARNING-Meldungen in der `stdout.log`
+* Die folgenden `-add-opens`-Schalter müssen hinzugefügt werden, um entsprechende Reflexions-Warnmeldungen beim Zugriff auf `stdout.log` zu verhindern
 
 ```shell
 --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning
 ```
 
-* Darüber hinaus müssen Sie die `-XX:+UseParallelGC` umschalten, um potenzielle Leistungsprobleme zu vermeiden.
+* Darüber hinaus müssen Sie den Schalter `-XX:+UseParallelGC` verwenden, um potenzielle Leistungsprobleme zu minimieren.
 
 Nachfolgend finden Sie ein Beispiel dafür, wie die zusätzlichen JVM-Parameter aussehen sollten, wenn Sie AEM auf Java 11 starten:
 
@@ -74,7 +74,7 @@ Mit **Ausführungsmodi** können Sie Ihre AEM-Instanz auf einen bestimmten Zweck
 
 ## Hinzufügen eines Dateiinstallationsanbieters {#adding-a-file-install-provider}
 
-Standardmäßig ist der Ordner `crx-quickstart/install` auf Dateien überwacht wird.
+Standardmäßig wird der Ordner `crx-quickstart/install` auf Dateien überwacht.
 Dieser Ordner existiert nicht, kann jedoch einfach beim Ausführen erstellt werden.
 
 Wenn Bundles, Konfigurationen oder Inhaltspakete in diesem Verzeichnis abgelegt werden, werden diese automatisch registriert und installiert. Wenn sie entfernt werden, erfolgt die Deinstallation.
@@ -88,7 +88,7 @@ Dies kann für viele Anwendungsfälle besonders interessant sein:
 
 >[!NOTE]
 >
->Siehe auch [So installieren Sie CRX-Pakete automatisch beim Serverstart](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html) für Beispiele.
+>Weitere Informationen und Beispiele finden Sie in [So installieren Sie CRX-Pakete automatisch beim Serverstart](https://helpx.adobe.com/de/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html).
 
 ## Installieren und Starten von Adobe Experience Manager als Windows-Dienst {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
 
@@ -96,19 +96,19 @@ Dies kann für viele Anwendungsfälle besonders interessant sein:
 >
 >Führen Sie die folgenden Schritte durch, während Sie als Administrator angemeldet sind, oder starten Sie sie über den Kontextmenüeintrag **Als Administrator ausführen** bzw. führen Sie diese darüber aus.
 >
->**Es reicht nicht aus**, als Benutzer mit Administratorrechten angemeldet zu sein. Wenn Sie beim Durchführen dieser Schritte nicht als Administrator angemeldet sind, erhalten Sie Fehler des Typs **Zugriff verweigert**.
+>**Es reicht nicht aus**, als Benutzer mit Administratorrechten angemeldet zu sein. Wenn Sie beim Durchführen dieser Schritte nicht als Admin angemeldet sind, erhalten Sie Fehler des Typs **Zugriff verweigert**.
 
 So installieren und starten Sie AEM als Windows-Dienst:
 
 1. Öffnen Sie die Datei „crx-quickstart\opt\helpers\instsrv.bat“ in einem Texteditor.
-1. Wenn Sie einen 64-Bit-Windows-Server konfigurieren, ersetzen Sie alle Instanzen von prunsrv durch einen der folgenden Befehle, je nach Betriebssystem:
+1. Wenn Sie einen Windows-Server mit 64 Bit konfigurieren, ersetzen Sie, abhängig vom verwendeten Betriebssystem, alle Instanzen von „prunsrv“ durch einen der folgenden Befehle:
 
    * prunsrv_amd64
    * prunsrv_ia64
 
-   Dieser Befehl ruft das entsprechende Skript auf, das den Windows-Dienst-Daemon in 64-Bit Java statt in 32-Bit Java startet.
+   Dieser Befehl ruft das passende Skript auf, das den Windows-Service-Daemon in der 64-Bit-Version von Java statt der 32-Bit-Variante startet.
 
-1. Erhöhen Sie den PermGen-JVM-Parameter, um zu verhindern, dass der Prozess in mehrere Prozesse übergeht. Suchen Sie die `set jvm_options` und legen Sie den Wert wie folgt fest:
+1. Erhöhen Sie den PermGen-JVM-Parameter, um zu verhindern, dass der Prozess in mehrere Prozesse übergeht. Suchen Sie nach dem Befehl `set jvm_options` und legen Sie den Wert wie folgt fest:
 
    `set jvm_options=-Xmx1792m`
 
@@ -138,7 +138,7 @@ So installieren und starten Sie AEM als Windows-Dienst:
 
 >[!NOTE]
 >
->Bei der Installation von AEM als Dienst müssen Sie den absoluten Pfad für den Protokollordner in `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` von Configuration Manager aus.
+>Wird AEM als Service installiert, müssen Sie über den Configuration Manager den absoluten Pfad für das Protokollverzeichnis unter `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` angegeben.
 
 Deinstallieren Sie den Dienst, indem Sie entweder in der Systemsteuerung unter **Dienste** auf **Beenden** klicken oder in einer Befehlszeile zum Ordner navigieren und `instsrv.bat -uninstall cq5` eingeben. Der Dienst wird in der Systemsteuerung unter **Dienste** aus der Liste entfernt oder verschwindet in der Eingabeaufforderung aus der Liste, wenn Sie `net start` eingeben.
 
@@ -146,7 +146,7 @@ Deinstallieren Sie den Dienst, indem Sie entweder in der Systemsteuerung unter *
 
 Der Standardpfad für den temporären Ordner des Java-Computers ist `/tmp`. AEM greift ebenfalls auf diesen Ordner zurück, etwa beim Erstellen von Paketen.
 
-Wenn Sie den Speicherort des temporären Ordners ändern möchten (z. B. wenn Sie ein Verzeichnis mit mehr freiem Speicherplatz benötigen), definieren Sie ein * `<new-tmp-path>`* durch Hinzufügen des JVM-Parameters:
+Wenn Sie den Pfad des temporären Ordners ändern möchten (wenn Sie zum Beispiel ein Verzeichnis mit mehr freiem Speicherplatz benötigen), definieren Sie einen *`<new-tmp-path>`*, indem Sie den JVM-Parameter:
 
 `-Djava.io.tmpdir="/<*new-tmp-path*>"`
 
@@ -157,7 +157,7 @@ entweder zu:
 
 ## Weitere Optionen sind in der Schnellstartdatei verfügbar. {#further-options-available-from-the-quickstart-file}
 
-Weitere Optionen und Umbenennungskonventionen werden in der Schnellstart-Hilfedatei beschrieben, die über die Option -help verfügbar ist. Geben Sie Folgendes ein, um auf die Hilfe zuzugreifen:
+Weitere Optionen und Konventionen zur Umbenennung sind in der Schnellstart-Hilfedatei beschrieben, die über die Option „-help“ aufgerufen werden kann. Geben Sie Folgendes ein, um auf die Hilfe zuzugreifen:
 
 * `java -jar cq-quickstart-6.5.0.jar -help`
 
@@ -268,13 +268,13 @@ The license.properties file
 Log files
 --------------------------------------------------------------------------------
   Once Quickstart has been unpacked and started, log files can be found under   
-  /Users/aheimoz/CQInstallationKits/AEM-65150-L8/crx-quickstart/logs.           
+  /Users/aemdocs/CQInstallationKits/AEM-65150-L8/crx-quickstart/logs.           
 --------------------------------------------------------------------------------
 ```
 
 ## Installieren von AEM in der Amazon EC2-Umgebung {#installing-aem-in-the-amazon-ec-environment}
 
-Wenn Sie AEM in einer Amazon Elastic Compute Cloud (EC2)-Instanz installieren und sowohl die Erstellungs- als auch Veröffentlichungsinstanz installieren möchten, wird die Erstellungsinstanz richtig installiert, indem Sie der Anleitung [Installieren von AEM-Instanzen](#installinginstancesofaemmanager) folgen. Die Veröffentlichungsinstanz wird jedoch zur Erstellungsinstanz.
+Wenn Sie bei der Installation von AEM auf einer Amazon Elastic Compute Cloud (EC2)-Instanz sowohl die Autoren- als auch die Veröffentlichungsinstanz auf der EC2-Instanz installieren, wird die Autoreninstanz korrekt installiert, indem Sie der Anleitung [Installieren von AEM Manager-Instanzen](#installinginstancesofaemmanager) folgen. Die Veröffentlichungsinstanz wird jedoch zur Autoreninstanz.
 
 Treffen Sie die folgenden Vorkehrungen, bevor Sie die Veröffentlichungsinstanz in Ihrer EC2-Umgebung installieren:
 
@@ -332,7 +332,7 @@ Die Web-Konsole.
 
 Es bestehen zwar verschiedene Möglichkeiten, AEM WCM zu konfigurieren, bestimmte Aktionen sollten jedoch durchgeführt oder zumindest direkt nach der Installation überprüft werden:
 
-* Lesen Sie die [Sicherheitscheckliste](/help/sites-administering/security-checklist.md) für Aufgaben, die erforderlich sind, um sicherzustellen, dass Ihr System sicher bleibt.
+* Orientieren Sie sich bezüglich Maßnahmen zur Gewährleistung der Sicherheit Ihres Systems an der [Sicherheits-Checkliste](/help/sites-administering/security-checklist.md).
 * Überprüfen Sie die Liste der Standardbenutzer und -gruppen, die mit AEM WCM installiert werden. Überprüfen Sie, ob Maßnahmen im Hinblick auf andere Konten getroffen werden sollten. Weitere Informationen erhalten Sie unter [Sicherheits- und Benutzerverwaltung](/help/sites-administering/security.md).
 
 ## Zugreifen auf CRXDE Lite und die Web-Konsole {#accessing-crxde-lite-and-the-web-console}
@@ -344,7 +344,7 @@ Nachdem AEM WCM gestartet wurde, haben Sie zudem auf Folgendes Zugriff:
 
 ### Zugreifen auf CRXDE Lite {#accessing-crxde-lite}
 
-Zum Öffnen der CRXDE Lite können Sie **CRXDE Lite** über den Willkommensbildschirm aus oder navigieren Sie mit Ihrem Browser zu
+Öffnen Sie CRXDE Lite, indem Sie **CRXDE Lite** auf dem Willkommensbildschirm auswählen oder Ihren Browser öffnen und zu diesem Ziel navigieren.
 
 ```
  https://<<i>host</i>>:<<i>port</i>>/crx/de/index.jsp
@@ -357,7 +357,7 @@ Beispiel:
 
 #### Zugreifen auf die Web-Konsole {#accessing-the-web-console}
 
-Um auf die Adobe CQ-Webkonsole zuzugreifen, können Sie **OSGi-Konsole** über den Willkommensbildschirm aus oder navigieren Sie mit Ihrem Browser zu
+Greifen Sie auf die Adobe CQ-Webkonsole zu, indem Sie auf dem Willkommensbildschirm **OSGi-Konsole** auswählen oder Ihren Browser öffnen und zu diesem Ziel navigieren.
 
 ```
  https://<host>:<port>/system/console
@@ -365,7 +365,7 @@ Um auf die Adobe CQ-Webkonsole zuzugreifen, können Sie **OSGi-Konsole** über d
 
 Beispiel:
 `https://localhost:4502/system/console`
-oder für die Seite &quot;Bundles&quot;
+oder für die Seite „Bundles“
 `https://localhost:4502/system/console/bundles`
 
 ![chlimage_1-14](assets/chlimage_1-14.png)
@@ -386,6 +386,6 @@ Falls beständiger Speicher in das Installationsverzeichnis integriert ist, beis
 
 >[!NOTE]
 >
->Adobe empfiehlt dringend, Ihr Repository zu sichern, bevor Sie AEM löschen. Wenn Sie das gesamte CQ-Installationsverzeichnis löschen, wird dabei auch das Repository gelöscht. Sichern Sie die Repository-Daten vor dem Löschen, indem Sie den Ordner „&lt;CQ-Installationsverzeichnis>/crx-quickstart/repository“ an einen anderen Speicherort verschieben oder kopieren, bevor Sie die anderen Ordner löschen.
+>Adobe empfiehlt dringend, Ihr Repository zu sichern, bevor Sie AEM löschen. Wenn Sie das gesamte &lt;cq-installation-directory>, wird dabei auch das Repository gelöscht. Sichern Sie die Repository-Daten vor dem Löschen, indem Sie den Ordner „&lt;cq-installation-directory>/crx-quickstart/repository“ an einen anderen Speicherort verschieben oder kopieren, bevor Sie die anderen Ordner löschen.
 
 Falls Ihre AEM-Installation externen Speicher nutzt, etwa einen Datenbankserver, werden beim Entfernen der Ordner nicht automatisch auch die Daten entfernt. Allerdings wird dabei die Speicherkonfiguration entfernt, wodurch die Wiederherstellung der JCR-Inhalte schwierig wird.

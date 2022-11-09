@@ -1,20 +1,20 @@
 ---
-title: 'Experience Fragments '
+title: Experience Fragments
 seo-title: Experience Fragments
 description: Erfahren Sie mehr über das Anpassen von Experience Fragments.
 seo-description: Learn about customizing Experience Fragments.
 uuid: fc9f7e59-bd7c-437a-8c63-de8559b5768d
-contentOwner: aheimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: c02e713e-15f3-408b-879a-d5eb014aef02
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
 workflow-type: tm+mt
 source-wordcount: '1660'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ Komponenten, die diese Konvention nicht verwenden, werden nicht berücksichtigt.
 >
 >Für Experience Fragments werden ***nur***[ bearbeitbare Vorlagen unterstützt.](/help/sites-developing/page-templates-editable.md)
 
-Beim Entwickeln einer neuen Vorlage für Experience Fragments können Sie die Standardpraktiken für ein [bearbeitbare Vorlage](/help/sites-developing/page-templates-editable.md).
+Beim Entwickeln einer neuen Vorlage für Experience Fragments folgen Sie den Standardverfahren für eine [bearbeitbare Vorlage](/help/sites-developing/page-templates-editable.md).
 
 Um eine Experience Fragment-Vorlage zu erstellen, die vom **Experience Fragment**-Assistenten erstellt wird, müssen Sie einen dieser Regelsätze verfolgen:
 
@@ -116,7 +116,7 @@ die `cq:allowedTemplates`-Eigenschaft dieses Ordners alle Vorlagen umfasst, dere
 
 [Die Entwicklung von Komponenten für die Verwendung mit/in Experience Fragments erfolgt gemäß den üblichen Verfahren.](/help/sites-developing/components.md)
 
-Die einzige zusätzliche Konfiguration besteht darin sicherzustellen, dass die Komponenten [in der Vorlage erlaubt ist, wird dies mit der Inhaltsrichtlinie erreicht](/help/sites-developing/page-templates-editable.md#content-policies).
+Die einzige zusätzliche Konfiguration besteht darin, sicherzustellen, dass die Komponenten [in der Vorlage zulässig sind. Dies wird mit der Inhaltsrichtlinie erreicht](/help/sites-developing/page-templates-editable.md#content-policies).
 
 ## Der Experience Fragment Link Rewriter Provider – HTML {#the-experience-fragment-link-rewriter-provider-html}
 
@@ -129,13 +129,13 @@ Einer der Anwendungsfälle für solche Gruppen ist das Einbetten von Inhalten in
 
 ### Standardmäßige Link-Umschreibung {#default-link-rewriting}
 
-Verwenden der [Export in Target](/help/sites-administering/experience-fragments-target.md) können Sie:
+Mit der Funktion [Nach Target exportieren](/help/sites-administering/experience-fragments-target.md) können Sie:
 
 * ein Experience Fragment erstellen,
 * Komponenten hinzufügen,
 * und es dann als Adobe Target-Angebot entweder im HTML- oder JSON-Format exportieren.
 
-Diese Funktion kann [in einer Autoreninstanz aktiviert AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). Sie erfordert eine gültige Adobe Target-Konfiguration und Konfigurationen für den Link Externalizer.
+Diese Funktion kann [in einer Autoreninstanz von AEM aktiviert werden](/help/sites-administering/experience-fragments-target.md#Prerequisites). Sie erfordert eine gültige Adobe Target-Konfiguration und Konfigurationen für den Link Externalizer.
 
 Der Link Externalizer wird verwendet, um die richtigen URLs zu ermitteln, die beim Erstellen der HTML-Version des Target-Angebots erforderlich sind, die anschließend an Adobe Target gesendet wird. Dies ist erforderlich, da Adobe Target erfordert, dass alle Links im Target-HTML-Angebot öffentlich zugänglich sind. Dies bedeutet, dass alle Ressourcen, auf die die Links verweisen, und das Experience Fragment selbst veröffentlicht werden müssen, bevor sie verwendet werden können.
 
@@ -173,7 +173,7 @@ Für diese Anwendungsfälle stellt AEM die Link Rewriter Provider-Schnittstelle 
 
 >[!NOTE]
 >
->Diese Benutzeroberfläche wurde in [AEM 6.5 SP1 (6.5.1.0)](/help/release-notes/previous/6.5.1.md).
+>Diese Benutzeroberfläche wurde in [AEM 6.5 SP1 (6.5.1.0)](/help/release-notes/previous/6.5.1.md) eingeführt.
 
 Für kompliziertere Fälle, die nicht vom [Standard](#default-link-rewriting) abgedeckt werden, bietet AEM die Link Rewriter Provider-Schnittstelle. Dies ist eine `ConsumerType`-Schnittstelle, die Sie als Service in Ihren Bundles implementieren können. Sie umgeht die Änderungen, die AEM an internen Links eines HTML-Angebots vornimmt, die aus einem Experience Fragment gerendert wurden. Diese Schnittstelle ermöglicht es Ihnen, den Prozess des Umschreibens interner HTML-Links an Ihre geschäftlichen Anforderungen anzupassen.
 
@@ -310,7 +310,7 @@ In unserem Beispiel möchten wir den `/etc.clientlibs`-Teil der URL entfernen un
 
 >[!NOTE]
 >
->Weitere Informationen dazu, wie Sie einen Ressourcen-Resolver über einen Dienstbenutzer erhalten, finden Sie unter [Dienstbenutzer in AEM](/help/sites-administering/security-service-users.md).
+>Weitere Informationen zum Abrufen eines Ressource Resolver über einen Service-Benutzer finden Sie unter [Service-Benutzer in AEM](/help/sites-administering/security-service-users.md).
 
 ```java
 private ResourceResolver resolver;

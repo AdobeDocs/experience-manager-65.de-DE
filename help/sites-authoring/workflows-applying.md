@@ -4,17 +4,17 @@ seo-title: Applying Workflows to Pages
 description: Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten Aktionen auszuführen. Es ist auch möglich, mehrere Workflows anzuwenden.
 seo-description: When authoring, you can invoke workflows to take action on your pages; it is also possible to apply more than one workflow..
 uuid: 652d9a23-907d-43ad-9eef-7ab1d07918cd
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 6472dc94-96e0-4286-8f86-d85726cc843c
 docset: aem65
 exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
 workflow-type: tm+mt
 source-wordcount: '648'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Wenn Sie den Workflow anwenden, geben Sie die folgenden Informationen an:
 * Der anzuwendende Workflow.
 Sie können jeden beliebigen Workflow anwenden (auf den Sie Zugriff haben, wie von Ihrem AEM-Administrator zugewiesen).
 * Optional: Ein Titel, der dabei hilft, die Workflow-Instanz im Posteingang eines Benutzers zu erkennen.
-* Die Workflow-Nutzlast. Hierbei kann es sich um eine oder mehrere Seiten handeln.
+* Die Workflow-Payload. Hierbei kann es sich um eine oder mehrere Seiten handeln.
 
 Workflows können wie folgt gestartet werden:
 
@@ -52,7 +52,7 @@ Workflows können wie folgt gestartet werden:
 Sie können einen Workflow wie folgt starten:
 
 * [die Option Erstellen der Sites-Symbolleiste.](#starting-a-workflow-from-the-sites-toolbar)
-* [die Timeline-Leiste der Sites-Konsole](#starting-a-workflow-from-the-timeline).
+* [die Zeitleiste der Sites-Konsole](#starting-a-workflow-from-the-timeline).
 
 In beiden Fällen ist Folgendes zu tun:
 
@@ -70,11 +70,11 @@ Sie können einen Workflow von der Symbolleiste der **Sites**-Konsole aus starte
 
 1. Der Assistent **Workflow erstellen** hilft Ihnen, [die Workflow-Details anzugeben](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Starten eines Workflows aus der Timeline {#starting-a-workflow-from-the-timeline}
+### Starten eines Workflows aus der Zeitleiste {#starting-a-workflow-from-the-timeline}
 
-Aus der **Timeline** können Sie einen Workflow starten, der auf Ihre ausgewählte Ressource angewendet werden soll.
+Aus der **Zeitleiste** können Sie einen Workflow starten, der auf Ihre ausgewählte Ressource angewendet werden soll.
 
-1. [Wählen Sie die Ressource aus](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) und öffnen Sie die [Timeline](/help/sites-authoring/basic-handling.md#timeline) (oder öffnen Sie die Timeline und wählen Sie dann die Ressource aus).
+1. [Wählen Sie die Ressource aus](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) und öffnen Sie die [Zeitleiste](/help/sites-authoring/basic-handling.md#timeline) (oder öffnen Sie die Zeitleiste und wählen Sie dann die Ressource aus).
 1. Der Pfeil neben dem Kommentarfeld kann verwendet werden, um **Workflow starten** anzuzeigen:
 
    ![screen-shot_2019-03-05at120026](assets/screen-shot_2019-03-05at120026.png)
@@ -88,7 +88,7 @@ Der Assistent **Workflow erstellen** hilft Ihnen, den Workflow auszuwählen und 
 Öffnen Sie den Assistenten **Workflow erstellen** über
 
 * [die Option Erstellen der Sites-Symbolleiste.](#starting-a-workflow-from-the-sites-toolbar)
-* [die Timeline-Leiste der Sites-Konsole](#starting-a-workflow-from-the-timeline).
+* [die Zeitleiste der Sites-Konsole](#starting-a-workflow-from-the-timeline).
 
 Anschließend können Sie Details angeben:
 

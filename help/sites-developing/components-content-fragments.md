@@ -4,7 +4,7 @@ seo-title: Components for Content Fragments
 description: AEM-Inhaltsfragmente werden als seitenunabhängige Assets erstellt und verwaltet.
 seo-description: AEM content fragments are created and managed as page-independent assets
 uuid: 81a9e0fe-ed45-4880-b36c-4f49e2598389
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
@@ -12,10 +12,10 @@ discoiquuid: b7777dc5-a867-4799-9e2c-a1f4bb5dd96a
 docset: aem65
 pagetitle: Components for Content Fragments
 exl-id: f2edd9b2-f231-42f3-a25e-428cd1d96c2a
-source-git-commit: de774bec7440805273928267ea6c09669720ea24
+source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
 workflow-type: tm+mt
 source-wordcount: '962'
-ht-degree: 77%
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 77%
 
 >[!CAUTION]
 >
->Es wird nicht empfohlen, die tatsächlichen Komponenten zu erweitern oder zu ändern, die im Fragmenteditor verwendet werden, da sie noch geändert werden können.
+>Es wird nicht empfohlen, die im Fragmenteditor tatsächlich verwendeten Komponenten zu erweitern oder zu ändern, da sie sich noch ändern können.
 
 Siehe [Client-seitige API für die Inhaltsfragmentverwaltung](/help/sites-developing/customizing-content-fragments.md#the-content-fragment-management-api-client-side).
 
@@ -33,15 +33,15 @@ Siehe [Client-seitige API für die Inhaltsfragmentverwaltung](/help/sites-develo
 
 >[!CAUTION]
 >
->Derzeit wird die [Kernkomponente für Inhaltsfragmente](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) dafür empfohlen. Weitere Informationen finden Sie unter [Entwickeln von Kernkomponenten](https://helpx.adobe.com/experience-manager/core-components/using/developing.html).
+>Derzeit wird die [Kernkomponente für Inhaltsfragmente](https://helpx.adobe.com/de/experience-manager/core-components/using/content-fragment-component.html) dafür empfohlen. Weitere Informationen finden Sie unter [Entwickeln von Kernkomponenten](https://helpx.adobe.com/de/experience-manager/core-components/using/developing.html).
 >
 >In diesem Abschnitt wird die ursprüngliche Komponente, die zur Verwendung mit Inhaltsfragmenten geliefert wird (**Inhaltsfragment** in der Gruppe **Allgemein**), beschrieben.
 
 >[!NOTE]
 >
->Siehe auch [Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren](/help/sites-developing/content-fragments-config-components-rendering.md) für weitere Informationen.
+>Weitere Informationen finden Sie unter [Inhaltsfragmente – Konfigurieren von Komponenten für das Rendering](/help/sites-developing/content-fragments-config-components-rendering.md).
 
-Content Fragments für Adobe Experience Manager (AEM) werden [als seitenunabhängige Assets erstellt und verwaltet](/help/assets/content-fragments/content-fragments.md). Sie ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen. [Sie können diese Fragmente und ihre Varianten bei der Erstellung Ihrer Inhaltsseiten verwenden](/help/sites-authoring/content-fragments.md). Sie können auch ein vorhandenes Inhaltsfragment-Asset verwenden, indem Sie [Ziehen des Assets aus dem Asset-Browser auf die Seite](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (wie bei anderen Asset-basierten Komponenten, z. B. der Foundation-Komponente Bild). Die vorkonfigurierte Inhaltsfragmentkomponente zeigt nur ein [Element](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) des referenzierten Inhaltsfragments an. Im Komponentendialogfeld können Sie die [Element, Variante und Bereich von Fragmentabsätzen](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) die Sie auf der Seite anzeigen möchten.
+Inhaltsfragmente für Adobe Experience Manager (AEM) werden [als seitenunabhängige Assets erstellt und verwaltet](/help/assets/content-fragments/content-fragments.md). Sie ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen. [Sie können diese Fragmente und ihre Varianten bei der Erstellung Ihrer Inhaltsseiten verwenden](/help/sites-authoring/content-fragments.md). Sie können auch ein vorhandenes Inhaltsfragment-Asset verwenden, indem Sie es vom [Asset-Browser auf die Seite ziehen](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (wie bei anderen Asset-basierten Komponenten, z. B. der Foundation-Komponente „Image“). Die vorkonfigurierte Inhaltsfragmentkomponente zeigt nur ein [Element](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) des referenzierten Inhaltsfragments an. Unter Verwendung des Komponentendialogfelds können Sie das [Element, die Variante und den Bereich der Fragmentabsätze](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) definieren, die auf der Seite angezeigt werden sollen.
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ Diese Bibliothek fügt dem Editor spezielle Funktionen für Inhaltsfragmente hin
 
 Mit der **Inhaltsfragmentkomponente** können Sie zusätzliche Komponenten zwischen den verschiedenen Absätzen des angezeigten [Elements](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) einfügen. Grundsätzlich besteht das angezeigte Element aus verschiedenen Absätzen (jeder Absatz ist durch einen Wagenrücklauf gekennzeichnet). Zwischen jedem dieser Absätze können Sie Inhalte mit anderen Komponenten einfügen.
 
-Aus technischer Sicht lebt jeder Absatz des angezeigten Elements* in seinem eigenen Parsys, und jede Komponente, die Sie zwischen den Absätzen einfügen, wird (im Hintergrund) in das Parsys eingefügt.
+Aus technischer Sicht wird jeder Absatz des angezeigten Elements in seinem eigenen Parsys ausgeführt, und jede Komponente, die Sie zwischen den Absätzen einfügen, wird (im Verborgenen) im Parsys eingefügt.
 
 Mit anderen Worten, wenn die Instanz der Inhaltsfragmentkomponente aus drei Absätzen besteht, hat die Komponente drei verschiedene Absatzsysteme im Repository. Der gesamte Übergangsinhalt, der dem Inhaltsfragment hinzugefügt wird, befindet sich tatsächlich innerhalb dieser Absatzsysteme.
 
@@ -105,7 +105,7 @@ Um die gebrauchsfertige Inhaltsfragmentkomponente als Blueprint für die Erweite
 * Verwenden Sie das HTL-Wiedergabeskript und das zugehörige POJO erneut, um zu sehen, wie die Funktion für Übergangsinhalte implementiert wird.
 * Verwenden Sie den Inhaltsfragmentknoten erneut: `cq:editConfig`
 
-   * Die `afterinsert`/ `afteredit`/ `afterdelete` Listener werden zum Trigger von JS-Ereignissen verwendet. Diese Ereignisse werden in der Client-Bibliothek `cq.authoring.editor.plugin.cfm` behandelt, um den zugehörigen Inhalt im Seitenbereich anzuzeigen.
+   * Die Listener `afterinsert`/ `afteredit`/ `afterdelete` werden zum Auslösen von JS-Ereignissen verwendet. Diese Ereignisse werden in der Client-Bibliothek `cq.authoring.editor.plugin.cfm` behandelt, um den zugehörigen Inhalt im Seitenbereich anzuzeigen.
    * Die `cq:dropTargets` sind so konfiguriert, dass das Ziehen von Inhaltsfragment-Assets unterstützt wird.
    * `cq:inplaceEditing` wurde konfiguriert, um das Erstellen eines Inhaltsfragments im Seiteneditor zu unterstützen. Der Editor für die Bearbeitung im Kontext für Fragmente ist in der Client-Bibliothek `cq.authoring.editor.plugin.cfm` definiert und ermöglicht eine schnelle Verknüpfung zum Öffnen [des aktuellen Elements/der aktuellen Variante](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) im [Fragmenteditor](/help/assets/content-fragments/content-fragments-variations.md).
 
@@ -113,7 +113,7 @@ Um die gebrauchsfertige Inhaltsfragmentkomponente als Blueprint für die Erweite
 
 Die Inhaltsfragmentverwaltung verwendet einen internen Renderprozess, um die endgültige HTML-Ausgabe für eine Seite zu generieren. Dieser wird intern von der Inhaltsfragmentkomponente verwendet, aber auch vom Hintergrundprozess, der referenzierte Fragmente auf referenzierenden Seiten aktualisiert.
 
-Intern wird der Sling Rewriter für dieses Rendering verwendet. Die entsprechende Konfiguration finden Sie unter `/libs/dam/config/rewriter/cfm` und kann bei Bedarf angepasst werden. Siehe [Apache Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) für weitere Informationen.
+Intern wird der Sling Rewriter für dieses Rendering verwendet. Die entsprechende Konfiguration kann unter `/libs/dam/config/rewriter/cfm` gefunden und bei Bedarf angepasst werden. Weitere Informationen finden Sie unter [Apache Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html).
 
 >[!CAUTION]
 >
@@ -128,9 +128,9 @@ Intern wird der Sling Rewriter für dieses Rendering verwendet. Die entsprechend
 
 Die Standardkonfiguration verwendet folgende Transformatoren:
 
-* `transformer-cfm-payloadfilter` - zum Abrufen der `body` Teil ( `<body>...</body>`) der HTML des Fragments
+* `transformer-cfm-payloadfilter` – nur für das Abrufen des `body`-Teils (`<body>...</body>`) der HTML des Fragments
 
-* `transformer-cfm-parfilter` - filtert unerwünschte Absätze heraus, wenn ein Absatzbereich angegeben wurde (wie bei der Inhaltsfragmentkomponente möglich)
-* `transformer-cfm-assetprocessor` - wird intern zum Abrufen einer Liste der Assets verwendet, die im Fragment eingebettet sind
+* `transformer-cfm-parfilter` – filtert unerwünschte Absätze heraus, wenn ein Absatzbereich angegeben wurde (wie bei der Inhaltsfragmentkomponente möglich)
+* `transformer-cfm-assetprocessor` – wird intern zum Abrufen einer Liste der Assets verwendet, die im Fragment eingebettet sind
 
-Der Rendervorgang wird über [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) verfügbar gemacht und kann bei Bedarf (zum Beispiel) von benutzerdefinierten Komponenten genutzt werden.
+Der Rendervorgang wird über [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) verfügbar gemacht und kann bei Bedarf (zum Beispiel) von benutzerdefinierten Komponenten genutzt werden.
