@@ -8,10 +8,10 @@ user-guide-title: Adobe Experience Manager 6.5, Forms-Anleitung
 breadcrumb-title: Forms-Anleitung
 user-guide-description: Digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren.
 role: User
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 55e9344c088a38bc4c9f916a13c310a029b3b2f4
 workflow-type: tm+mt
-source-wordcount: '3801'
-ht-degree: 96%
+source-wordcount: '3819'
+ht-degree: 95%
 
 ---
 
@@ -685,6 +685,7 @@ ht-degree: 96%
    + [Einige Formularfunktionen können nicht mit bestimmten Versionen von Oracle JDK verwendet werden](using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
    + [Zusätzliche Schritte zum Abrufen einer E-Mail mit Anhang für die adaptive Forms on JEE-Version](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
    + [Konvertieren von Word- oder Excel-Dateien in PDF unter Windows Server nicht möglich](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
+   + [XFA-basierte PDF forms können nicht in Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer oder Apple Safari geöffnet werden.](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
 + Alte Dokumentation {#legacy-documentation}
    + [Verwenden des Service „execute script“ in AEM Forms on JEE Workbench zum Erstellen von XML-Daten](developing/building-xml.md)
    + [Komprimieren und Dekomprimieren von Dateien mithilfe eines benutzerdefinierten DSC von AEM Forms auf JEE](developing/compressing-decompressing-custom-dsc.md)
